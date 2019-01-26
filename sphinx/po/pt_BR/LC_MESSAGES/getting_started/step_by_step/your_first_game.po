@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -180,19 +180,17 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:84
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr ""
-"Para esse projeto, nós vamos seguir as convenções de nomenclatura da Godot."
+msgstr "Para esse projeto, vamos seguir as convenções de nomeação Godot."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:86
-#, fuzzy
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"Para este projeto, nós adotaremos a convenção de nomes do Godot. Classes "
-"(nós) usam o estilo ``PascalCase`` (IniciaisMaiúsculas), variáveis e funções "
-"usam ``snake_case`` (minúsculas_separadas_por_sublinha), e constantes usam "
-"``ALL_CAPS`` (TODAS_MAIÚSCULAS)."
+"**GDScript**: Classes (nós) usam o estilo ``PascalCase`` "
+"(IniciaisMaiúsculas), variáveis e funções usam ``snake_case`` "
+"(minúsculas_separadas_por_sublinha), e constantes usam ``ALL_CAPS`` "
+"(TODAS_MAIÚSCULAS) (Veja mais em :ref:`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:90
 msgid ""
@@ -260,7 +258,6 @@ msgstr ""
 "no Inspetor na seção ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:125
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -274,7 +271,8 @@ msgstr ""
 "pancada\" do jogador, ou seja, os limites da sua área de colisão. Para este "
 "personagem, um nó ``CapsuleShape2D`` (forma cápsula 2D) é o que melhor se "
 "encaixa. Então, ao lado de \"Shape\" (forma) no Inspetor, clique em  \"<null>"
-"\" -> \"Novo CapsuleShape2D\". Redimensione a forma para cobrir o sprite:"
+"\" -> \"Novo CapsuleShape2D\". Utilizando os dois manipuladores, "
+"redimensione a forma para cobrir o sprite:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid "When you're finished, your ``Player`` scene should look like this:"
@@ -324,7 +322,6 @@ msgid "Start by declaring the member variables this object will need:"
 msgstr "Comece declarando as variáveis membro que este objeto irá precisar:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:179
-#, fuzzy
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
@@ -337,7 +334,9 @@ msgstr ""
 "(velocidade), nos permite definir seu valor pelo Inspetor. Isto pode ser "
 "útil para os valores que você deseja ser capaz de ajustar do mesmo jeito que "
 "se faz com as propriedades internas de um nó. Clique no nó ``Jogador`` e "
-"defina a propriedade velocidade para ``400``."
+"você verá que a propriedade agora aparece na seção  \"Variáveis de Scrip\" "
+"do Inspetor. Lembre-se, se você modificar o valor aqui, ele irá sobrepor o "
+"valor que está definido no script."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:186
 msgid ""
@@ -361,7 +360,6 @@ msgstr ""
 "uma boa hora para descobrir o tamanho da janela do jogo:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:210
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
@@ -371,7 +369,7 @@ msgstr ""
 "Agora podemos usar a função ``_process()`` para definir o que o jogador "
 "fará. ``_process()`` é chamada a cada quadro, então usaremos isso para "
 "atualizar os elementos de nosso jogo que esperamos que mudem frequentemente. "
-"Aqui, faremos isto:"
+"Para o jogador, precisamos fazer o seguinte:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:215
 msgid "Check for input."
@@ -412,7 +410,6 @@ msgstr ""
 "``false`` (falso) em caso contrário."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:288
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -421,12 +418,13 @@ msgid ""
 "``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
-"Nós verificamos cada entrada e adicionamos/subtraímos a ``velocidade`` para "
-"obter a direção resultante. Por exemplo, se você segurar ``direita``  e "
-"``baixo`` ao mesmo tempo, o vetor resultante ``velocidade`` será ``(1, 1)``. "
-"Neste caso, já que estamos adicionando um movimento vertical e uma "
-"horizontal, o jogador iria se mover *mais rápido* do que se apenas se "
-"movesse horizontalmente."
+"Iniciamos definindo a ``velocidade`` como sendo ``(0, 0)`` - por padrão o "
+"jogador não deve estar se movendo. Então nós verificamos cada entrada e "
+"adicionamos/subtraímos a ``velocidade`` para obter a direção resultante. Por "
+"exemplo, se você segurar ``direita``  e ``baixo`` ao mesmo tempo, o vetor "
+"resultante ``velocidade`` será ``(1, 1)``. Neste caso, já que estamos "
+"adicionando um movimento vertical e uma horizontal, o jogador iria se mover "
+"*mais rápido* do que se apenas se movesse horizontalmente."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:295
 msgid ""
@@ -459,15 +457,14 @@ msgstr ""
 "iniciar ou parar a animação do AnimatedSprite."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:306
-#, fuzzy
 msgid ""
 "In GDScript, ``$`` returns the node at the relative path from the current "
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
-"``$`` retorna o nó no caminho relativo a partir deste nó, ou retorna "
-"``null`` (nulo) se o nó não for encontrado. Já que AnimatedSprite é um filho "
-"do nó atual, podemos usar ``$AnimatedSprite``."
+"Em GDScript, ``$`` retorna o nó no caminho relativo a partir deste nó, ou "
+"retorna ``null`` (nulo) se o nó não for encontrado. Já que AnimatedSprite é "
+"um filho do nó atual, podemos usar ``$AnimatedSprite``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid ""
@@ -596,7 +593,6 @@ msgstr ""
 "que o jogador pode emitir:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:441
-#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered( Object "
@@ -612,7 +608,8 @@ msgstr ""
 "contato com o jogador. Clique em \"Conectar..\" e depois em \"Conectar\" "
 "novamente na janela \"Conectando Sinal\". Nós não precisamos alterar nenhuma "
 "destas configurações – o Godot criará automaticamente uma função chamada "
-"``_on_Jogador_body_entered`` no roteiro do jogador."
+"``_on_Jogador_body_entered`` no script do jogador.  Esta função será chamada "
+"sempre que o sinal for emitido - ela *trata* do sinal."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:450
 msgid ""
@@ -634,6 +631,9 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"Cada vez que um inimigo atinge o jogador, o sinal será emitido. Precisamos "
+"desativar a colisão do jogador para que não acione o sinal ``hit`` mais de "
+"uma vez."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
 msgid ""
@@ -641,6 +641,10 @@ msgid ""
 "middle of the engine's collision processing. Using ``call_deferred()`` "
 "allows us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"Desativar o formato de colisão da área pode causar um erro se ocorrer no "
+"meio do processamento de colisão do mecanismo. Usando ``call_deferred ()`` "
+"nos permite que Godot aguarde para desabilitar a forma até que seja seguro "
+"fazê-lo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -780,7 +784,6 @@ msgstr ""
 "membros:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:581
-#, fuzzy
 msgid ""
 "When we spawn a mob, we'll pick a random value between ``min_speed`` and "
 "``max_speed`` for how fast each mob will move (it would be boring if they "
@@ -789,12 +792,13 @@ msgid ""
 "sure you've spelled these the same in the script and in the SpriteFrames "
 "resource."
 msgstr ""
-"Vamos escolher um valor aleatório entre ``min_speed`` (velocidade mínima) e "
-"``max_speed`` (velocidade máxima) para definir a velocidade com que cada MOB "
-"irá se mover (seria bem entediante se todos eles se movessem na mesma "
-"velocidade). Configure-os como ``150`` e ``250`` no Inspetor. Também temos "
-"uma lista contendo o nome das três animações, que utilizaremos para "
-"selecionar uma aleatoriamente."
+"Quando gerarmos um mob, vamos escolher um valor aleatório entre "
+"``min_speed`` (velocidade mínima) e ``max_speed`` (velocidade máxima) para "
+"definir a velocidade com que cada mob irá se mover (seria bem entediante se "
+"todos eles se movessem na mesma velocidade). Também temos um array contendo "
+"o nome das três animações, que usaremos para selecionar uma delas "
+"aleatóriamente. Certifique-se que eles estejam soletrados da mesma forma no "
+"script e no recurso SpriteFrames."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid ""
@@ -919,9 +923,8 @@ msgstr ""
 "``(240, 450)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:661
-#, fuzzy
 msgid "Spawning mobs"
-msgstr "Gerando a Turba"
+msgstr "Gerando monstros"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:663
 msgid ""
@@ -1226,13 +1229,14 @@ msgid "*Text* : ``0``"
 msgstr "Text: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
+#, fuzzy
 msgid "*Layout* : \"Top Wide\""
-msgstr ""
+msgstr "*Layout* : \"Top Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
 msgid "*Align* : \"Center\""
-msgstr ""
+msgstr "*Alinhamento* : \"Centralizado\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "MessageLabel"
@@ -1313,6 +1317,10 @@ msgid ""
 "useful to delay, such as in the above code, where we want to wait a little "
 "bit of time before showing the \"Start\" button."
 msgstr ""
+"Quando você precisa pausar por um breve tempo, uma alternativa para usar um "
+"nó Timer é usar a função ``create_timer()`` do SceneTree. Isso pode ser "
+"muito útil para atrasar, como no código acima, onde queremos esperar um "
+"pouco de tempo antes de mostrar o botão \"Iniciar\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
 #, fuzzy
@@ -1474,7 +1482,7 @@ msgstr "Por fim, adicione ``$SomDeMorte.play()`` na função ``game_over()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
 msgid "Keyboard Shortcut"
-msgstr ""
+msgstr "Atalho de teclado"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
 msgid ""
@@ -1482,6 +1490,9 @@ msgid ""
 "we could also start the game by pressing a key on the keyboard. One way to "
 "do this is using the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
+"Como o jogo é jogado com controles de teclado, seria conveniente se "
+"pudéssemos iniciar o jogo pressionando uma tecla no teclado. Uma maneira de "
+"fazer isso é usando a propriedade \"Atalho\" do nó ``Button``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid ""
@@ -1492,12 +1503,20 @@ msgid ""
 "_Action_ property, type the name \"ui_select\". This is the default input "
 "event associated with the spacebar."
 msgstr ""
+"Na cena ``HUD``, selecione o ``StartButton`` e encontre sua propriedade "
+"_Atalho_ no Inspetor. Selecione \"Novo atalho\" e clique no item \"Atalho\". "
+"Uma segunda propriedade _Atalho_ aparecerá. Selecione \"New InputEventAction"
+"\" e clique no novo \"InputEvent\". Finalmente, na propriedade _Action_, "
+"digite o nome \"ui_select\". Este é o evento de entrada padrão associado à "
+"barra de espaço."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
 msgid ""
 "Now when the start button appears, you can either click it or press the "
 "spacebar to start the game."
 msgstr ""
+"Agora, quando o botão iniciar aparecer, você pode clicar nele ou pressionar "
+"a barra de espaço para iniciar o jogo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid "Project files"

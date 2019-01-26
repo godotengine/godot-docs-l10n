@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,6 @@ msgstr ""
 "Esta es una lista (incompleta) de diferencias de la API de C# y GDScript."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:9
-#, fuzzy
 msgid "General differences"
 msgstr "Diferencias generales"
 
@@ -40,7 +39,6 @@ msgstr ""
 "en lugar de ``snake_case`` en GDScript y C++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
-#, fuzzy
 msgid "Global scope"
 msgstr "Ámbito Global"
 
@@ -145,12 +143,10 @@ msgstr ""
 "Ejemplo:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:77
-#, fuzzy
 msgid "There are a few differences, though:"
 msgstr "Sin embargo, hay algunas diferencias:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:79
-#, fuzzy
 msgid ""
 "``erase``: Strings are immutable in C#, so we cannot modify the string "
 "passed to the extension method. For this reason, ``Erase`` was added as an "
@@ -163,7 +159,6 @@ msgstr ""
 "También puedes usar ``string.Remove``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:83
-#, fuzzy
 msgid ""
 "``IsSubsequenceOf``/``IsSubsequenceOfi``: An additional method is provided, "
 "which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
@@ -174,7 +169,6 @@ msgstr ""
 "explícitamente la sensibilidad a mayúsculas y minúsculas:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:94
-#, fuzzy
 msgid ""
 "``Match``/``Matchn``/``ExprMatch``: An additional method is provided besides "
 "``Match`` and ``Matchn``, which allows you to explicitly specify case "
@@ -189,7 +183,6 @@ msgid "Basis"
 msgstr "Basis"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:107
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Basis()`` initializes all primitive members to their default value. Use "
@@ -202,7 +195,6 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:111
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:158
-#, fuzzy
 msgid "The following method was converted to a property with a different name:"
 msgstr ""
 "Los siguientes métodos fueron convertidos a propiedades con sus respectivos "
@@ -243,7 +235,6 @@ msgid "Transform2D"
 msgstr "Transform2D"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:122
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Transform2D()`` initializes all primitive members to their default value. "
@@ -332,7 +323,6 @@ msgid "Quat"
 msgstr "Quat"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:169
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Quat()`` initializes all primitive members to their default value. Please "
@@ -419,7 +409,6 @@ msgid "Vector3[]"
 msgstr "Vector3[]"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:192
-#, fuzzy
 msgid ""
 "In some exceptional cases, a raw array (``type[]``) may be required instead "
 "of a ``List``."
@@ -448,7 +437,6 @@ msgid "Variant"
 msgstr "Variant"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:204
-#, fuzzy
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
 msgstr "``System.Object`` (``object``) es usado en lugar de ``Variant``."
 
@@ -473,7 +461,6 @@ msgid "Other differences"
 msgstr "Otras diferencias"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
-#, fuzzy
 msgid ""
 "``preload``, ``assert`` and ``yield``, as they work in GDScript, are "
 "currently not available in C#."
@@ -527,6 +514,5 @@ msgid "load"
 msgstr "cargar"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:230
-#, fuzzy
 msgid "GD.load, which is the same as ResourceLoader.load"
 msgstr "GD.load es lo mismo que ResourceLoader.load"

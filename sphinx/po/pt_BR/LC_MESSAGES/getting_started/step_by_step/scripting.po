@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,6 @@ msgstr ""
 "a habilidade de adicionar linguagens de roteirização extras dinamicamente!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
@@ -45,7 +44,6 @@ msgstr ""
 "mas também dificulta nosso trabalho de dar suporte a linguagens."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
-#, fuzzy
 msgid ""
 "The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
@@ -54,11 +52,11 @@ msgid ""
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
 "As linguagens \"principais\" no Godot, entretanto, são a GDScript e a "
-"VisualScript. O motivo crucial de escolhê-las é seu nível de integração com "
-"o Godot, já que isso torna a experiência mais suave: ambas têm uma "
+"VisualScript. O motivo principal de escolhê-las é seu nível de integração "
+"com o Godot, já que isso torna a experiência mais suave; ambas têm uma "
 "integração boa com o editor, enquanto que C# e C++ precisam ser editadas em "
-"uma IDE separada. Se você é fã de linguagens tipadas estaticamente, vá de C# "
-"ou C++."
+"uma IDE separada. Se você é fã de linguagens digitadas estaticamente, vá de "
+"C# ou C++."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
@@ -353,7 +351,6 @@ msgstr ""
 "relevantes."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
-#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
@@ -387,15 +384,14 @@ msgstr ""
 "Script no Inspetor:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
-#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
-"Para editar o roteiro, selecione um desses botões, ambos destacados na "
-"imagem acima. Isso lhe levará ao editor de roteiros, onde um modelo padrão "
-"será incluído:"
+"Para editar o script, selecione um desses botões, ambos destacados na imagem "
+"acima. Isso lhe levará ao editor de scripts, onde um modelo padrão será "
+"incluído:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -491,7 +487,6 @@ msgstr ""
 "método a ser disparado."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
-#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
@@ -500,8 +495,9 @@ msgid ""
 msgstr ""
 "A seção superior esquerda mostra uma lista com nós da sua cena, com o nome "
 "do nó emissor destacado em vermelho. Selecione o nó \"Painel\" aqui. Quando "
-"selecionar um nó, o \"Caminho para o nó\" será atualizado automaticamente "
-"para descrever um caminho relativo do nó emissor para o selecionado."
+"selecionar um nó, o \"Caminho para o nó\" na parte de baixo será atualizado "
+"automaticamente para descrever um caminho relativo do nó emissor para o "
+"selecionado."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:210
 msgid ""
@@ -516,18 +512,16 @@ msgstr ""
 "para você antes de configurar a conexão."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
 "E isso conclui o guia sobre como usar a interface visual. Entretanto, isso é "
-"um tutorial de roteirização, então, em nome do aprendizado, vamos mergulhar "
-"no processo manual!"
+"um tutorial de script, então, em nome do aprendizado, vamos mergulhar no "
+"processo manual!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
-#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
@@ -564,13 +558,12 @@ msgstr ""
 "pressionado:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:259
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"Finalmente, conecte o sinal \"pressed\" (pressionado) do botão à função "
-"``_ready()`` usando :ref:`Object.connect() <class_Object_method_connect>`."
+"Finalmente, conecte o sinal \"pressionado\" do botão à função ``_ready()`` "
+"usando :ref:`Object.connect() <class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:275
 msgid "The final script should look like this:"

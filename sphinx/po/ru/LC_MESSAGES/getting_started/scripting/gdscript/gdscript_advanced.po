@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:4
 msgid "GDScript: An introduction to dynamic languages"
-msgstr ""
+msgstr "GDScript: Введение в динамически типизированные языки"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 msgid "About"
@@ -31,66 +31,82 @@ msgid ""
 "efficiently. It focuses on common cases specific to the language, but also "
 "covers a lot of information on dynamically typed languages."
 msgstr ""
+"Это руководство призвано стать кратким руководством по более эффективному "
+"использованию GDScript. Он фокусируется на общих случаях, характерных для "
+"языка, но также охватывает много информации о динамически типизированных "
+"языках."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:13
 msgid ""
 "It's meant to be especially useful for programmers with little or no "
 "previous experience with dynamically typed languages."
 msgstr ""
+"Она должна быть особенно полезна для программистов с небольшим опытом работы "
+"с динамически типизированными языками или вообще без него."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:17
 msgid "Dynamic nature"
-msgstr ""
+msgstr "Динамический характер"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:20
 msgid "Pros & cons of dynamic typing"
-msgstr ""
+msgstr "Плюсы и минусы динамической типизации"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:22
 msgid ""
 "GDScript is a Dynamically Typed language. As such, its main advantages are "
 "that:"
 msgstr ""
+"GDScript-это динамически типизированный язык. Его главным преимуществом "
+"является то, что:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:25
 msgid "The language is simple and easy to learn."
-msgstr ""
+msgstr "Язык прост и легок в изучении."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:26
 msgid "Most code can be written and changed quickly and without hassle."
 msgstr ""
+"Большую часть кода можно написать и изменить быстро и без лишних хлопот."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:27
+#, fuzzy
 msgid "Less code written means less errors & mistakes to fix."
 msgstr ""
+"Меньше написанного кода означает меньше ошибок и опечаток, которые нужно "
+"исправить."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:28
 msgid "Easier to read the code (less clutter)."
-msgstr ""
+msgstr "Упрощает чтение кода (меньше беспорядка)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:29
 msgid "No compilation is required to test."
-msgstr ""
+msgstr "Для проверки не требуется компиляция."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:30
 msgid "Runtime is tiny."
-msgstr ""
+msgstr "Время выполнения очень мало."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:31
+#, fuzzy
 msgid "Duck-typing and polymorphism by nature."
-msgstr ""
+msgstr "Duck-typing и полиморфизм в своём изначальном виде."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:33
 msgid "While the main disadvantages are:"
-msgstr ""
+msgstr "В то время как основными недостатками являются:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:35
 msgid "Less performance than statically typed languages."
 msgstr ""
+"Менее высокая производительность по сравнению со статически типизированными "
+"языками."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:36
+#, fuzzy
 msgid "More difficult to refactor (symbols can't be traced)"
-msgstr ""
+msgstr "Сложнее рефакторить (символы не могут быть прослежены)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:37
 msgid ""
@@ -98,12 +114,18 @@ msgid ""
 "typed languages only appear while running the code (because expression "
 "parsing is more strict)."
 msgstr ""
+"Некоторые ошибки, которые обычно обнаруживаются во время компиляции на "
+"статически напечатанных языках, появляются только при запуске кода "
+"(поскольку происходит более строгая синтаксическая проверка)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:40
+#, fuzzy
 msgid ""
 "Less flexibility for code-completion (some variable types are only known at "
 "run-time)."
 msgstr ""
+"Менее гибкое завершение кода (некоторые типы переменных известны только во "
+"время выполнения)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
 msgid ""

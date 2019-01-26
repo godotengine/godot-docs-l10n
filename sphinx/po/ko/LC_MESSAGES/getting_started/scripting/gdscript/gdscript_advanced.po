@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,7 +104,7 @@ msgid ""
 "parsing is more strict)."
 msgstr ""
 "정적 타입 언어에서 컴파일 시간에 감지되는 오류가 오직 코드를 실행할 때만 나타"
-"납니다 (표현 구문 분석이 더 엄격하기 때문입니다)."
+"납니다 (표현 문법 분석이 더 엄격하기 때문입니다)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:40
 msgid ""
@@ -113,7 +113,6 @@ msgid ""
 msgstr "코드 완성에 덜 유연함 (일부 변수 타입은 런타임에만 알려짐)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
-#, fuzzy
 msgid ""
 "This, translated to reality, means that Godot+GDScript are a combination "
 "designed to create games quickly and efficiently. For games that are very "
@@ -123,11 +122,11 @@ msgid ""
 "most of the game in GDScript and add small bits of C++ in the areas that "
 "need a performance boost."
 msgstr ""
-"현실로 번역된 이 말은 Godot + GDScript가 게임을 빠르고 효율적으로 만들 수 있"
-"는 조합임을 의미합니다. 매우 계산 집약적이고 엔진 내장 도구 (벡터 타입, 물리 "
-"엔진, 수학 라이브러리 등)의 이점을 누릴 수 없는 게임의 경우, C++를 사용하는 "
-"경우의 수도 존재합니다. 이걸로 GDScript에서 전체적인 게임을, 그리고 퍼포먼스 "
-"가속이 필요한 영역에 약간의 C++를 첨가하는 것이 가능합니다."
+"현실로 번역된 이 말은 Godot+GDScript가 게임을 빠르고 효율적으로 만들 수 있는 "
+"조합임을 의미합니다. 매우 계산 집약적이고 엔진 내장 도구 (벡터 타입, 물리 엔"
+"진, 수학 라이브러리 등)의 이점을 누릴 수 없는 게임의 경우, C++를 사용하는 경"
+"우의 수도 존재합니다. 이걸로 GDScript에서 전체적인 게임을, 그리고 퍼포먼스 가"
+"속이 필요한 영역에 약간의 C++를 첨가하는 것이 가능합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
@@ -169,7 +168,6 @@ msgid "Pointers & referencing:"
 msgstr "포인터(Pointer) & 참조:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:109
-#, fuzzy
 msgid ""
 "In static languages, such as C or C++ (and to some extent Java and C#), "
 "there is a distinction between a variable and a pointer/reference to a "
@@ -181,7 +179,6 @@ msgstr ""
 "객체가 수정되도록 할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:114
-#, fuzzy
 msgid ""
 "In C# or Java, everything not a built-in type (int, float, sometimes String) "
 "is always a pointer or a reference. References are also garbage-collected "
@@ -189,9 +186,9 @@ msgid ""
 "typed languages tend to use this memory model, too. Some Examples:"
 msgstr ""
 "C#이나 Java에서, 모든 것이 내장 타입 (정수, 실수, 때때로 문자열)이 아닌 포인"
-"터나 참조입니다. 참조는 또한 자동으로 가비지 수집하고, 더 이상 사용되지 않으"
-"면 삭제됩니다. 동적 타입 언어 역시 이런 메모리 모델을 사용하는 경향이 있습니"
-"다. 몇 가지 예제:"
+"터나 참조입니다. 참조는 또한 자동으로 가비지를 모으는데, 더 이상 사용되지 않"
+"으면 삭제됩니다. 동적 타입 언어 역시 이런 메모리 모델을 사용하는 경향이 있습"
+"니다. 몇 가지 예제:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:120
 msgid "C++:"
@@ -255,7 +252,6 @@ msgid "Dictionaries"
 msgstr "딕셔너리"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
-#, fuzzy
 msgid ""
 "Dictionaries are a powerful tool in dynamically typed languages. Most "
 "programmers that come from statically typed languages (such as C++ or C#) "
@@ -302,7 +298,6 @@ msgstr ""
 "기 간단한 전함 게임 예제가 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
-#, fuzzy
 msgid ""
 "Dictionaries can also be used as data markup or quick structures. While "
 "GDScript's dictionaries resemble python dictionaries, it also supports Lua "
@@ -311,7 +306,7 @@ msgid ""
 msgstr ""
 "딕셔너리는 또한 데이터 마크업이나 빠른 구조에도 사용될 수 있습니다. GDScript "
 "딕셔너리가 python 딕셔너리와 닮은 한편, GDScript는 초기 상태와 빠른 구조체를 "
-"작성하는 데 유용한 Lua 스타일 구문과 인덱싱도 지원합니다:"
+"작성하는 데 유용한 Lua 스타일 문법과 인덱싱도 지원합니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:318
 msgid "For & while"
@@ -342,9 +337,8 @@ msgid "The range() function can take 3 arguments:"
 msgstr "range() 함수는 3개의 인수를 가질 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:371
-#, fuzzy
 msgid "Some statically typed programming language examples:"
-msgstr "일부 정적 타입 언어에서 반복은 꽤 복잡해질 수 있습니다:"
+msgstr "일부 정적 타입 프로그래밍 언어 예제:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:381
 msgid "Translate to:"
@@ -479,7 +473,6 @@ msgid "Yes, we should call it Hulk typing instead."
 msgstr "예, 우리는 이를 대신 헐크 타이핑이라 불러야겠네요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
-#, fuzzy
 msgid ""
 "It's possible that the object being hit doesn't have a smash() function. "
 "Some dynamically typed languages simply ignore a method call when it doesn't "

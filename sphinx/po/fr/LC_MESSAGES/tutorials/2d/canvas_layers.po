@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,16 +41,14 @@ msgstr ""
 "enfants seront également déplacés."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
-#, fuzzy
 msgid ""
 "These nodes are placed as direct or indirect children of a :ref:`Viewport "
 "<class_Viewport>`, and will be displayed through it."
 msgstr ""
 "Ces nœuds sont placés en tant qu'enfants directs ou indirects dans une :ref:"
-"`Fenêtre d'affichage <class_Viewport>`, et seront affichés par ce biais."
+"`Fenêtre d'affichage <class_Viewport>`, et seront affichés à travers elle."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
-#, fuzzy
 msgid ""
 "Viewport has the property :ref:`Viewport.canvas_transform "
 "<class_Viewport_property_canvas_transform>`, which allows to transform all "
@@ -174,7 +172,6 @@ msgid "Performance"
 msgstr "Performance"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:72
-#, fuzzy
 msgid ""
 "Even though there shouldn't be any performance limitation, it is not advised "
 "to use excessive amount of layers to arrange drawing order of nodes. The "
@@ -186,5 +183,5 @@ msgstr ""
 "déconseillé d'utiliser un nombre excessif de couches pour organiser l'ordre "
 "d'affichage des nœuds. Le moyen le plus optimal sera toujours de les "
 "organiser selon l'ordre de l'arborescence. Les nœuds 2D ont également une "
-"propriété pour contrôler l'ordre de leur réalisation (voir :ref:`Node2D."
+"propriété pour contrôler leur ordre de dessin (voir :ref:`Node2D."
 "z_index<class_Node2D_property_z_index>`)."

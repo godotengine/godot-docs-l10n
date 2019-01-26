@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
-#, fuzzy
 msgid ""
 "Tilemaps are a simple and quick way to make 2D game levels. Basically, you "
 "start with a bunch of reference tiles (or pieces) that can be put on a grid, "
@@ -137,7 +136,6 @@ msgstr ""
 "actualizado correctamente**. El nombre debe ser único."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
-#, fuzzy
 msgid ""
 "Sounds like quite a few requirements, so here's a screenshot that shows "
 "where everything of relevance is:"
@@ -288,13 +286,12 @@ msgstr ""
 "forma de candado:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:151
-#, fuzzy
 msgid ""
 "If you accidentally place a tile somewhere you don't want it to be, you can "
 "delete it with ``RMB`` (the right mouse button) while in the tilemap editor."
 msgstr ""
 "Si se coloca accidentalmente un tile en un lugar no deseado, se puede "
-"eliminar con ``click derecho`` mientras se está editando."
+"eliminar con ``click derecho`` mientras se está editando el tilemap."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:154
 msgid ""
@@ -331,7 +328,6 @@ msgstr ""
 "visuales o artefactos:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:172
-#, fuzzy
 msgid ""
 "This is unavoidable, as it is the way the hardware bilinear filter works. To "
 "avoid this situation, there are a few workarounds. Try the one that looks "
@@ -360,7 +356,6 @@ msgstr ""
 "``Pixel Snap`` en la barra de búsqueda para localizarlo rápidamente."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
-#, fuzzy
 msgid ""
 "Viewport Scaling can often help with shrinking the map (see the :ref:"
 "`doc_viewports` tutorial). Simply adding a camera, setting it to ``Current`` "
@@ -372,7 +367,6 @@ msgstr ""
 "de partida."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:182
-#, fuzzy
 msgid ""
 "You can use a single, separate image for each tile. This will remove all "
 "artifacts, but can be more cumbersome to implement and is less optimized."

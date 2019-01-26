@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2162,9 +2162,10 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1448
 msgid "Memory management"
-msgstr ""
+msgstr "Управление памятью"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1450
+#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2174,13 +2175,23 @@ msgid ""
 "cycles that can't be freed, a ``weakref`` function is provided for creating "
 "weak references."
 msgstr ""
+"Если класс наследует от :ref:`class_Reference`, то экземпляры будут "
+"освобождены, когда они больше не будут использоваться. Вместо сборщика "
+"мусора, происходит подсчет ссылок. По умолчанию, все классы, которые не "
+"определяют наследование, расширяются **Reference**. Если это нежелательно, "
+"то класс должен наследовать :ref:`class_Object` вручную и вызывать instance."
+"free(). Чтобы избежать циклов ссылок, которые не могут быть освобождены, для "
+"создания слабых ссылок предусмотрена функция ``слабых ссылок``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1458
+#, fuzzy
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
 "freed."
 msgstr ""
+"Или же, если ссылки не используются, `is_instance_valid(instance)` может "
+"быть использован для проверки того, был ли освобожден объект."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1465
 msgid "Signals"
@@ -2192,6 +2203,10 @@ msgid ""
 "instance. GDScript supports creation of built-in Godot signals. Declaring a "
 "signal in GDScript is easy using the `signal` keyword."
 msgstr ""
+"Часто бывает желательно отправить уведомление о том, что что-то случилось в "
+"экземпляре. GDScript поддерживает создание встроенных сигналов Godot. "
+"Объявление сигнала в GDScript очень просто с помощью ключевого слова \"Signal"
+"\"."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1478
 msgid ""
@@ -2199,30 +2214,42 @@ msgid ""
 "signals. Take the instance of a class where the signal was declared and "
 "connect it to the method of another instance:"
 msgstr ""
+"Эти сигналы могут быть подключены в редакторе или из кода как обычные "
+"сигналы. Возьмем пример экземпляра класса, в котором был объявлен сигнал, и "
+"подключим его к методу другого экземпляра:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1494
+#, fuzzy
 msgid ""
 "It is also possible to bind arguments to a signal that lacks them with your "
 "custom values:"
 msgstr ""
+"Также можно привязать аргументы к сигналу, который не соответствует вашим "
+"собственным значениям:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1502
 msgid ""
 "This is useful when a signal from many objects is connected to a single "
 "callback and the sender must be identified:"
 msgstr ""
+"Это полезно, когда сигнал от многих объектов подключен к одному обратному "
+"вызову и отправитель должен быть идентифицирован:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1514
 msgid ""
 "Finally, emitting a custom signal is done by using the Object.emit_signal "
 "method:"
 msgstr ""
+"Наконец, излучение пользовательского сигнала осуществляется с помощью метода "
+"Object.emit_signal:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1525
+#, fuzzy
 msgid "Coroutines with yield"
-msgstr ""
+msgstr "Coroutines с yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1527
+#, fuzzy
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
@@ -2231,20 +2258,28 @@ msgid ""
 "resulting object will continue execution and return whatever the function "
 "returns. Once resumed, the state object becomes invalid. Here is an example:"
 msgstr ""
+"GDScript предлагает поддержку `Coroutines <https://en.wikipedia.org/wiki/"
+"Coroutine>`_ через встроенную функцию ``yield``. Вызов функции ``yield()`` "
+"будет немедленно возвращаться из текущей функции с текущим замороженным "
+"состоянием той же функции, что и возвращаемое значение. Вызов ``resume`` на "
+"этом результирующем объекте продолжит выполнение и вернет то, что возвращает "
+"функция. Однажды вернувшись, состояние объекта становится недействительным. "
+"Вот пример:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1549
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1573
 msgid "Will print:"
-msgstr ""
+msgstr "Выведет:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1557
 msgid ""
 "It is also possible to pass values between yield() and resume(), for example:"
 msgstr ""
+"Также можно передавать значения между функциями yield() и resume(), например:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1582
 msgid "Coroutines & signals"
-msgstr ""
+msgstr "Корутины и сигналы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1584
 msgid ""
@@ -2252,29 +2287,39 @@ msgid ""
 "``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples:"
 msgstr ""
+"Реальная сила использования ``yield`` заключается в их сочетании с "
+"сигналами. ``yield`` может принимать два аргумента, объект и сигнал. Когда "
+"сигнал будет получен, выполнение будет возобновлено. Вот несколько примеров:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1599
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example:"
 msgstr ""
+"Сами корутины используют сигнал ``completed`` при переходе в "
+"недействительное состояние, например:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1612
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
-msgstr ""
+msgstr "``my_func`` будет продолжаться только после нажатия обеих кнопок."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1615
 msgid "Onready keyword"
-msgstr ""
+msgstr "Ключевое слово Onready"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1617
+#, fuzzy
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
 "entering the active scene tree, the sub-nodes can only be obtained when a "
 "call to Node._ready() is made."
 msgstr ""
+"При использовании узлов часто возникает желание сохранить ссылки на части "
+"сцены в переменной. Поскольку конфигурирование сцен гарантировано только при "
+"входе в активное дерево сцен, суб-узлы могут быть получены только при вызове "
+"функции Node._ready()."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1629
 msgid ""
@@ -2283,13 +2328,19 @@ msgid ""
 "defers initialization of a member variable until _ready is called. It can "
 "replace the above code with a single line:"
 msgstr ""
+"Это может стать немного громоздким, особенно когда узлы и внешние ссылки "
+"накапливаются. Для этого в GDScript есть ключевое слово ``onready``, которое "
+"откладывает инициализацию входящей переменной до вызова _ready. Он может "
+"заменить приведенный выше код одной строкой:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1639
 msgid "Assert keyword"
-msgstr ""
+msgstr "Ключевое слово Assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1641
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds."
 msgstr ""
+"Ключевое слово ``assert`` может быть использовано для проверки состояний в "
+"отладочных сборках. Эти утверждения игнорируются в не отладочных сборках."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Importing assets in Godot 3.0+"
 msgstr "Importando recursos en Godot 3.0+"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
-#, fuzzy
 msgid ""
 "Previously, importing assets in Godot 2.x required manual maintenance of a "
 "separate directory with source assets. Without doing this, it was impossible "
@@ -39,7 +38,6 @@ msgstr ""
 "escenas, etc."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-#, fuzzy
 msgid ""
 "In Godot 3.0, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -47,10 +45,10 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
-"En Godot 3.0, podemos usar un enfoque más moderno para importar: Simplemente "
-"suelta tus recursos (archivos de imágenes, escenas, audios, fuentes, etc.) "
-"directamente en la carpeta del proyecto (cópialos manualmente desde el "
-"explorador de archivos de tu SO). Godot importará esos archivos "
+"En Godot 3.0 podemos usar un enfoque más moderno para importar: Simplemente "
+"arrastra y suelta tus recursos (archivos de imágenes, escenas, audios, "
+"fuentes, etc.) directamente en la carpeta del proyecto (cópialos manualmente "
+"desde el explorador de archivos de tu SO). Godot importará esos archivos "
 "automáticamente y mantendrá los recursos importados oculto en la carpeta "
 "res://.import ."
 
@@ -74,7 +72,6 @@ msgstr ""
 "correspondiente en el panel del Sistema de Archivos:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:31
-#, fuzzy
 msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
@@ -84,16 +81,14 @@ msgstr ""
 "futuras reimportaciones."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:34
-#, fuzzy
 msgid ""
 "Changing the import parameters of several assets at the same time is also "
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
 "También es posible modificar los parámetros de importación de varios "
-"recursos al mismo tiempo. Simplemente selecciona todos ellos al mismo tiempo "
-"en el panel de recursos y los parámetros indicados se aplicarán a todos "
-"ellos al reimportar."
+"recursos al mismo tiempo. Simplemente seleccionalos a todos en el panel de "
+"recursos y los parámetros indicados se aplicarán a todos al reimportar."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
 msgid "Automatic reimport"
@@ -130,7 +125,6 @@ msgstr ""
 "res://.import:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:57
-#, fuzzy
 msgid ""
 "If any of the files present in this folder is erased (or the whole folder), "
 "the asset or assets will be reimported automatically. As such, committing "
@@ -138,12 +132,12 @@ msgid ""
 "reimporting time when checking out on another computer, but it takes "
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
-"Si alguno de los archivos presentes en esta carpeta se borra (o toda la "
+"Si alguno de los archivos presentes en esta carpeta es borrado (o toda la "
 "carpeta), el recurso o recursos se reimportarán automáticamente. Como tal, "
 "la confirmación de esta carpeta al sistema de control de versiones es "
 "opcional. Puedes ahorrar tiempo en la reimportación al realizar el proceso "
 "en otra computadora, pero ocupa mucho más espacio y tiempo de transferencia. "
-"¡Escoge tu veneno!"
+"Elige lo que más te convenga."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid "Changing import resource type"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Intro"
 msgstr "Introduction"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:9
-#, fuzzy
 msgid ""
 "A simple (but flexible enough for most uses) particle system is provided. "
 "Particle systems are used to simulate complex physical effects, such as "
@@ -38,7 +37,6 @@ msgstr ""
 "particules magiques, de la fumée, de la brume, de la magie, etc."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:13
-#, fuzzy
 msgid ""
 "The idea is that a \"particle\" is emitted at a fixed interval and with a "
 "fixed lifetime. During its lifetime, every particle will have the same base "
@@ -47,12 +45,12 @@ msgid ""
 "essence, creating a particle system means setting base physics parameters "
 "and then adding randomness to them."
 msgstr ""
-"L'idée est qu'une \"particule\" soit émise à un intervalle et avec une durée "
-"de vie fixes. Au cours de sa vie, chaque particule aura le même comportement "
-"de base. Ce qui rend chaque particule différente et donne un aspect plus "
-"organique, c'est le \"caractère aléatoire\" associé à chaque paramètre. En "
-"substance, créer un système de particules signifie définir les paramètres de "
-"base de la physique, puis leur ajouter un caractère aléatoire."
+"L'idée est qu'une \"particule\" soit émise à un intervalle fixe et avec une "
+"durée de vie fixe. Au cours de sa vie, chaque particule aura le même "
+"comportement de base. Ce qui rend chaque particule différente et donne un "
+"aspect plus organique, c'est le \"caractère aléatoire\" associé à chaque "
+"paramètre. En substance, créer un système de particules signifie définir les "
+"paramètres de base de la physique, puis leur ajouter un caractère aléatoire."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:21
 msgid "Particles2D"
@@ -85,9 +83,9 @@ msgid ""
 "dropdown menu select ``New ParticlesMaterial``."
 msgstr ""
 "Pour ajouter un matériau de processus à votre nœud de particules, accédez à "
-"Processus dans votre panneau d’inspecteur. Cliquez sur la case en regard de "
-"l'article, puis sélectionnez Nouveau matériau des particules dans le menu "
-"déroulant."
+"``Process Material`` dans votre panneau d’inspecteur. Cliquez sur la case à "
+"côté de ``Material``, puis sélectionnez ``New ParticlesMaterial`` dans le "
+"menu déroulant."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:38
 msgid "Your Particles2D node should now be emitting white points downward."
@@ -256,16 +254,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:137
-#, fuzzy
 msgid ""
 "The rectangle's ``W`` and ``H`` properties respectively control its Width "
 "and its Height. The ``X`` and ``Y`` properties control the position of the "
 "upper-left corner of the rectangle, relative to the particle emitter."
 msgstr ""
-"Les valeurs ``W`` et ``H`` contrôlent la largeur et la hauteur du rectangle "
-"de visibilité. Les valeurs ``X`` et ``Y`` contrôlent la position du coin "
-"supérieur gauche du rectangle de visibilité par rapport à l'émetteur de "
-"particules."
+"Les propriétés ``W`` et ``H`` du rectangle contrôlent respectivement sa "
+"Largeur et sa Hauteur. Les propriétés ``X`` et ``Y`` contrôlent la position "
+"du coin supérieur gauche du rectangle par rapport à l'émetteur de particules."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
 msgid ""
@@ -474,12 +470,11 @@ msgid "Hue variation"
 msgstr "Variation de teinte"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:285
-#, fuzzy
 msgid ""
 "The ``Variation`` value sets the initial hue variation applied to each "
 "particle. The ``Variation Random`` value controls the hue variation "
 "randomness ratio."
 msgstr ""
-"La valeur Variation définit la variation de teinte initiale appliquée à "
-"chaque particule. La valeur Variation Rand contrôle le niveau aléatoire de "
-"la variation de teinte."
+"La valeur ``Variation`` définit la variation de teinte initiale appliquée à "
+"chaque particule. La valeur ``Variation Random``contrôle le ratio de la "
+"variation aléatoire de teinte."

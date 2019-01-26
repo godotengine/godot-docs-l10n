@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
-#, fuzzy
 msgid "GDScript basics"
-msgstr "GDScript"
+msgstr "GDScript 기초"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:7
 msgid "Introduction"
@@ -37,7 +36,7 @@ msgid ""
 msgstr ""
 "*GDScript* 는 내용물을 생성하는데 사용되는, 하이 레벨인 동적 언어 프로그래밍 "
 "언어입니다. `Python <https://en.wikipedia.org/wiki/Python_"
-"%28programming_language%29>`_ 과 비슷한 구문을 사용합니다(블록은 들여쓰기 기"
+"%28programming_language%29>`_ 과 비슷한 문법을 사용합니다(블록은 들여쓰기 기"
 "반이고 많은 키워드가 유사합니다). 목적은 Godot 엔진에 최적화되고 긴밀하게 통"
 "합하도록 조직하여 콘텐츠 창작과 통합에 뛰어난 유연성을 주도록 하는 것입니다."
 
@@ -131,7 +130,7 @@ msgid ""
 "Some people can learn better by taking a look at the syntax, so here's a "
 "simple example of how GDScript looks."
 msgstr ""
-"어떤 사람들은 구문을 보고 더 잘 배울 수도 있습니다, 그래서 여기 GDScript가 어"
+"어떤 사람들은 문법을 보고 더 잘 배울 수도 있습니다, 그래서 여기 GDScript가 어"
 "떻게 보이는 지에 대한 간단한 예제가 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:129
@@ -1071,7 +1070,6 @@ msgstr ""
 "위해, Python처럼 인덱스가 음수일 수도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:491
-#, fuzzy
 msgid ""
 "GDScript arrays are allocated linearly in memory for speed. Large arrays "
 "(more than tens of thousands of elements) may however cause memory "
@@ -1082,10 +1080,10 @@ msgid ""
 msgstr ""
 "GDScript 배열은 속도를 위해 선형적으로 메모리에 할당됩니다. (수 만개보다 더) "
 "많은 배열은 메모리 조각화를 발생할 수 있습니다. 이것이 염려된다면 특수 타입"
-"의 배열을 사용하실 수 있습니다. 이것들은 하나의 데이터 타입만을 허용합니다. "
-"메모리 조각화를 방지할 뿐더러 더 적은 메모리를 사용하지만 원자적이고 기본 배"
-"열보다 더 느리게 실행됩니다. 따라서 오직 많은 데이터 집합을 사용할 때만 추천"
-"합니다:"
+"의 배열을 이용할 수 있습니다. 이것들은 하나의 데이터 타입만을 허용합니다. 메"
+"모리 조각화를 방지할 뿐더러 더 적은 메모리를 사용하지만 원자적이고 기본 배열"
+"보다 더 느리게 실행됩니다. 따라서 오직 많은 데이터 집합을 사용할 때만 추천합"
+"니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:498
 msgid ""
@@ -1146,7 +1144,7 @@ msgid ""
 "write). Note however that like any GDScript identifier, keys written in this "
 "form cannot start with a digit."
 msgstr ""
-"Lua 스타일의 테이블 구문 역시 지원됩니다. Lua 스타일은 ``:`` 대신 ``=`` 를 사"
+"Lua 스타일의 테이블 문법 역시 지원됩니다. Lua 스타일은 ``:`` 대신 ``=`` 를 사"
 "용하고 (쓰는 것을 적게 만들기 위해) 문자열 키를 표시하기 위해 따옴표를 사용하"
 "지 않습니다.\n"
 "하지만 모든 GDScript 식별자와 마찬가지로, 이 양식으로 작성된 키는 숫자로 시작"
@@ -1196,13 +1194,12 @@ msgstr ""
 "니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:573
-#, fuzzy
 msgid ""
 "If the variable is initialized within the declaration, the type can be "
 "inferred, so it's possible to omit the type name::"
 msgstr ""
 "변수가 선언 내에 초기화된다면 타입을 유추할 수 있습니다, 따라서 타입 이름을 "
-"생략할 수 있습니다:"
+"생략할 수 있습니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:579
 msgid ""
@@ -1261,7 +1258,6 @@ msgstr ""
 "\\ 를 사용할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:597
-#, fuzzy
 msgid ""
 "Casting between object types results in the same object if the value is of "
 "the same type or a subtype of the cast type."
@@ -1304,7 +1300,6 @@ msgstr ""
 "되어야 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:647
-#, fuzzy
 msgid ""
 "Although the type of constants is inferred from the assigned value, it's "
 "also possible to add explicit type specification::"
@@ -1393,7 +1388,6 @@ msgstr ""
 "는 ``return`` 키워드로 일찍 반환할 수 있지만 어떤 값도 반환할 수 없습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:725
-#, fuzzy
 msgid ""
 "Non-void functions must **always** return a value, so if your code has "
 "branching statements (such as an ``if``/``else`` construct), all the "
@@ -1401,11 +1395,11 @@ msgid ""
 "``if`` block but not after it, the editor will raise an error because if the "
 "block is not executed, the function won't have a valid value to return."
 msgstr ""
-"Void가 아닌 함수는 반드시 **항상** 값을 반환해야 하므로, 코드가 (``if``/"
+"무효가 아닌 함수는 반드시 **항상** 값을 반환해야 하므로, 코드가 (``if``/"
 "``else`` 구조와 같은) 명령문을 뻗고 있다면, 모든 가능한 경로가 반환을 가져야 "
-"합니다. 예를 들어, ``if`` 블록 안에 ``return`` 을 갖지만 그 뒤가 없는 경우, "
-"블록이 실행되지 않으면 반환할 유효한 값을 함수가 가질 수 없기 때문에, 에디터"
-"는 오류를 발생합니다."
+"합니다. 예를 들어, ``if`` 블록 안에 ``return``\\ 을 갖지만 그 뒤가 없는 경"
+"우, 블록이 실행되지 않으면 반환할 유효한 값을 함수가 가질 수 없기 때문에, 에"
+"디터는 오류를 발생합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:733
 msgid "Referencing Functions"
@@ -1433,14 +1427,13 @@ msgstr ""
 "야 합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:752
-#, fuzzy
 msgid ""
 "Remember that default functions, like  ``_init``, and most notifications, "
 "such as ``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, "
 "etc. are called in all base classes automatically. So there is only a need "
 "to call the function explicitly when overloading them in some way."
 msgstr ""
-"``_init`` 과 같은 기본 함수와, ``_enter_tree``, ``_exit_tree``, "
+"``_init``\\ 과 같은 기본 함수와, ``_enter_tree``, ``_exit_tree``, "
 "``_process``, ``_physics_process`` 등과 같은 대부분의 알림은 모든 기본 클래스"
 "에서 자동으로 호출된다는 것을 기억하세요. 그래서 어떤 방법이든 함수를 오버로"
 "딩 할 때 명시적으로 함수를 호출할 필요가 있습니다."
@@ -1450,15 +1443,14 @@ msgid "Static functions"
 msgstr "정적 함수"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:762
-#, fuzzy
 msgid ""
 "A function can be declared static. When a function is static, it has no "
 "access to the instance member variables or ``self``. This is mainly useful "
 "to make libraries of helper functions:"
 msgstr ""
 "함수는 정적으로 선언될 수 있습니다. 함수가 정적일 때 인스턴스 멤버 변수나 "
-"``self`` 로 접근할 수 없습니다. 주로 도우미 함수의 라이브러리를 만드는 데 유"
-"용합니다:"
+"``self``\\ 로 접근할 수 없습니다. 주로 도우미 함수의 라이브러리를 만드는 데 "
+"유용합니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:773
 msgid "Statements and control flow"
@@ -1484,7 +1476,7 @@ msgid ""
 "nature of the tab-based indentation, ``elif`` can be used instead of "
 "``else``/``if`` to maintain a level of indentation."
 msgstr ""
-"간단한 조건은 ``if``/``else``/``elif`` 구문을 사용해 만들 수 있습니다. 조건 "
+"간단한 조건은 ``if``/``else``/``elif`` 문법을 사용해 만들 수 있습니다. 조건 "
 "주변의 괄호를 써도 되지만 필수는 아닙니다. 탭 기반 들여쓰기의 특성을 감안하"
 "여, ``elif`` 는 ``else``/``if`` 대신 사용하여 들여쓰기 수준을 유지할 수 있습"
 "니다."
@@ -1494,7 +1486,6 @@ msgid "Short statements can be written on the same line as the condition::"
 msgstr "간단한 명령문은 조건처럼 같은 줄에 적을 수 있습니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:803
-#, fuzzy
 msgid ""
 "Sometimes you might want to assign a different initial value based on a "
 "boolean expression. In this case, ternary-if expressions come in handy::"
@@ -1507,7 +1498,7 @@ msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
 msgstr ""
-"간단한 루프는 ``while`` 구문을 사용하여 만들 수 있습니다. 루프는 ``break`` "
+"간단한 루프는 ``while`` 문법을 사용하여 만들 수 있습니다. 루프는 ``break`` "
 "를 사용하여 끊거나 ``continue`` 를 사용하여 진행할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:823
@@ -1522,7 +1513,6 @@ msgstr ""
 "덱스* 는 루프 변수에 저장됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:852
-#, fuzzy
 msgid ""
 "A ``match`` statement is used to branch execution of a program. It's the "
 "equivalent of the ``switch`` statement found in many other languages, but "
@@ -1534,10 +1524,9 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:855
 msgid "Basic syntax:"
-msgstr "기본 구문:"
+msgstr "기본 문법:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:868
-#, fuzzy
 msgid "**Crash-course for people who are familiar with switch statements**:"
 msgstr "**switch 명령문에 익숙한 사람들을 위한 집중 강좌**:"
 
@@ -1550,13 +1539,12 @@ msgid "Remove ``case``"
 msgstr "``case`` 를 제거하십시오"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:872
-#, fuzzy
 msgid ""
 "Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
-"모든 ``break`` 를 제거하십시오. 기본적으로 ``break`` 가 되지 않도록 하고 싶다"
-"면 fallthrough를 위해 ``continue`` 를 사용하실 수 있습니다."
+"모든 ``break``\\ 를 제거하세요. 기본적으로 ``break``\\ 가 되지 않도록 하고 싶"
+"다면 fallthrough를 위해 ``continue``\\ 를 사용하실 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:873
 msgid "Change ``default`` to a single underscore."
@@ -1567,7 +1555,6 @@ msgid "**Control flow**:"
 msgstr "**제어 흐름**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:878
-#, fuzzy
 msgid ""
 "The patterns are matched from top to bottom. If a pattern matches, the "
 "corresponding block will be executed. After that, the execution continues "
@@ -1575,10 +1562,10 @@ msgid ""
 "use ``continue`` to stop execution in the current block and check the ones "
 "below it."
 msgstr ""
-"패턴은 위에서 아래로 대조됩니다. 패턴이 일치하면, 해당 블록이 실행됩니다. 그"
+"패턴은 위에서 아래로 맞춰집니다. 패턴이 일치하면, 해당 블록이 실행됩니다. 그"
 "런 후, 실행은 ``match`` 명령문 아래에서 계속됩니다. fallthrough를 원한다면 "
-"``continue`` 를 사용하여 해당 블록의 실행을 멈추고 그 아래에 있는 것을 확인하"
-"게 할 수 있습니다."
+"``continue``\\ 를 사용하여 해당 블록의 실행을 멈추고 그 아래에 있는 것을 확인"
+"하게 할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:882
 msgid "There are 6 pattern types:"
@@ -1635,16 +1622,14 @@ msgid "array pattern"
 msgstr "배열 패턴"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:936
-#, fuzzy
 msgid ""
 "matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
 msgstr ""
-"배열을 대조합니다. 배열 패턴의 모든 단일 요소는 패턴 그 자체이므로 그들을 중"
-"첩 할 수 있습니다."
+"배열을 맞춰봅니다. 배열 패턴의 모든 단일 요소는 패턴 그 자체이므로 그들을 중"
+"첩할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:938
-#, fuzzy
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
 "pattern, otherwise the pattern doesn't match."
@@ -1676,7 +1661,6 @@ msgstr ""
 "배열 패턴과 같은 방식으로 작동합니다. 모든 키는 일정한 패턴이어야 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
-#, fuzzy
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
 "the pattern, otherwise the pattern doesn't match."
@@ -1756,7 +1740,7 @@ msgid ""
 "of thread safety, since scripts can be initialized in separate threads "
 "without the user knowing."
 msgstr ""
-"Godot의 클래스 구문은 간결합니다: 오직 멤버 변수나 함수만을 가질 수 있습니"
+"Godot의 클래스 문법은 간결합니다: 오직 멤버 변수나 함수만을 가질 수 있습니"
 "다. 정적 함수를 사용할 수 있지만, 정적 멤버 변수는 사용할 수 없습니다. 같은 "
 "방식으로, 엔진은 매 시간 인스턴스를 만들 때마다 변수를 초기화합니다, 이것에"
 "는 배열과 딕셔너리도 포함됩니다. 이것은 스레드 안정성의 정신에 있습니다, 스크"
@@ -1791,7 +1775,6 @@ msgid "Inheritance uses the ``extends`` keyword:"
 msgstr "상속은 ``extends`` 키워드를 사용합니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1074
-#, fuzzy
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used:"
@@ -1833,13 +1816,12 @@ msgstr ""
 "다. 그래서 보통 ``._init()`` 을 명시적으로 호출할 필요는 없습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1111
-#, fuzzy
 msgid ""
 "Unlike the call of a regular function, like in the above example with ``."
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this:"
 msgstr ""
-"앞의 예제와 같은 ``.some_func`` 을 사용한 규칙적인 함수의 호출과 달리, 상속"
+"앞의 예제와 같이 ``.some_func``\\ 을 사용한 규칙적인 함수의 호출과 달리, 상속"
 "된 클래스로부터 생성자가 인수를 갖게 되면, 그들은 다음과 같이 전달됩니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1119
@@ -1852,16 +1834,16 @@ msgid "There are a few things to keep in mind here:"
 msgstr "유의해야 할 몇 가지 사항이 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
-#, fuzzy
 msgid ""
 "if the inherited class (``State.gd``) defines a ``_init`` constructor that "
 "takes arguments (``e`` in this case), then the inheriting class (``Idle."
 "gd``) *has* to define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``"
 msgstr ""
-"상속된 클래스 (``State.gd``)가 인수를 갖는 (이 경우에는 ``e``) ``_init`` 생성"
-"자를 정의한다면 상속하는 클래스 (``Idle.gd``)는 ``State.gd`` 에서 적절한 매"
-"개 변수를 ``_init`` 에게 전달하고 ``_init`` 정의 *해야* 만 합니다"
+"상속된 클래스 (``State.gd``)가 인수를 갖는 (이 경우에는 ``e``\\ 를 갖는) "
+"``_init`` 생성자를 정의한다면 상속하는 클래스 (``Idle.gd``)는 ``State.gd`` 에"
+"서 적절한 매개 변수를 ``_init`` 에게 전달하고 ``_init`` *정의해야*\\ 만 합니"
+"다"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
 msgid ""
@@ -1872,26 +1854,23 @@ msgstr ""
 "다"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1147
-#, fuzzy
 msgid ""
 "in the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``"
 msgstr ""
-"위의 예제에서 ``State.gd`` 생성자에 전달된 ``e`` 는 ``Idle.gd`` 로 전달된 "
-"``e`` 와 같습니다"
+"위의 예제에서 ``State.gd`` 생성자에 전달된 ``e``\\ 는 ``Idle.gd``\\ 로 전달"
+"된 ``e``\\ 와 같습니다"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1149
-#, fuzzy
 msgid ""
 "if ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` base class even if it does nothing. "
 "Which brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables. Eg.:"
 msgstr ""
-"``Idle.gd`` 의 ``_init`` 생성자가 0개의 인수를 갖는다면 심지어 아무것도 하지 "
-"않아도 ``State.gd`` 기본 클래스에 어떤 값을 전달해야 합니다. 이를 통해 우리"
-"는 기본 생성자에 변수 뿐만 아니라 리터럴을 전달할 수 있음을 알 수 있습니다. "
-"예:"
+"``Idle.gd``\\ 의 ``_init`` 생성자가 0개의 인수를 갖는다면, 아무것도 하지 않더"
+"라도 ``State.gd`` 기본 클래스에 어떤 값을 전달해야 합니다. 이를 통해 우리는 "
+"기본 생성자에 변수 뿐만 아니라 리터럴을 전달할 수 있음을 알 수 있습니다. 예:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1161
 msgid "Inner classes"
@@ -1946,7 +1925,6 @@ msgstr ""
 "인수의 형태로 가져야 합니다 (하단을 참고하세요)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1217
-#, fuzzy
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
 "them visible and editable in the editor. This way, artists and game "
@@ -1955,7 +1933,7 @@ msgid ""
 msgstr ""
 "멤버 변수 내보내기의 기본적인 이점은 에디터에서 보이고 편집할 수 있는 것입니"
 "다. 이 방법으로 아티스트와 게임 디자이너가 프로그램이 실행 방법에 영향을 주"
-"는 값을 수정할 수 있습니다. 이를 위해, 특수 내보내기 구문이 제공됩니다."
+"는 값을 수정할 수 있습니다. 이를 위해, 특수 내보내기 문법이 제공됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1303
 msgid ""
@@ -1984,7 +1962,7 @@ msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax:"
 msgstr ""
-"플래그를 특정 수의 명명된 플래그로 제한하는 것도 가능합니다. 구문은 열거 구문"
+"플래그를 특정 수의 명명된 플래그로 제한하는 것도 가능합니다. 문법은 열거 문법"
 "과 비슷합니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1327
@@ -2010,7 +1988,6 @@ msgid "Exporting arrays"
 msgstr "배열 내보내기"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1338
-#, fuzzy
 msgid ""
 "Exporting arrays works, but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -2042,11 +2019,10 @@ msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
 msgstr ""
-"이를 위해, GDScript는 ``setget`` 키워드를 사용하는 *setter/getter* 구문을 제"
+"이를 위해, GDScript는 ``setget`` 키워드를 사용하는 *setter/getter* 문법을 제"
 "공합니다. 변수 정의 바로 뒤에 사용됩니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1387
-#, fuzzy
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -2055,12 +2031,12 @@ msgid ""
 "``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
 "``return`` the desired value. Below is an example:"
 msgstr ""
-"*외부* 소스에 의해 (즉, 클래스에서의 로컬 사용이 아닌) ``variable`` 의 값이 "
-"수정될 때는, 언제나 *setter* 함수 (위의 ``setterfunc``)는 호출됩니다. 이것은 "
-"값이 변경되기 *전에* 발생합니다. *setter* 는 새로운 값으로 무엇을 해야 할 지 "
-"결정해야 합니다. 반대로, ``variable``이 액세스될 때, *getter* 함수 (위의 "
-"``getterfunc``)는 원하는 값을 ``return`` 해야 합니다. 아래에 있는 것은 예제입"
-"니다:"
+"*외부* 소스에 의해 (즉, 클래스에서의 로컬 사용이 아닌) ``variable``\\ 의 값"
+"이 수정될 때는, 언제나 *setter* 함수 (위의 ``setterfunc``)는 호출됩니다. 이것"
+"은 값이 변경되기 *전에* 발생합니다. *setter*\\ 는 새로운 값으로 무엇을 해야 "
+"할 지 결정해야 합니다. 반대로, ``variable``\\ 이 액세스될 때, *getter* 함수 "
+"(위의 ``getterfunc``)는 원하는 값을 ``return``\\ 해야 합니다. 아래에 있는 것"
+"은 예제입니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
 msgid "Either of the *setter* or *getter* functions can be omitted:"
@@ -2075,12 +2051,11 @@ msgstr ""
 "로 변수를 내보낼 때 특히 유용합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1416
-#, fuzzy
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
-"말한 대로 *로컬* 액세스는 setter와 getter를 트리거 하지 않을 것입니다. 여기"
+"말한 대로 *로컬* 액세스는 setter와 getter를 작동시키지 *않을* 것입니다. 여기"
 "에 그 예가 나와 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1431
@@ -2088,7 +2063,6 @@ msgid "Tool mode"
 msgstr "툴 모드"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1433
-#, fuzzy
 msgid ""
 "Scripts, by default, don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
@@ -2097,9 +2071,9 @@ msgid ""
 "top of the file:"
 msgstr ""
 "기본적으로, 스크립트는 에디터 내에서 실행되지 않고 내보낸 속성만 변경할 수 있"
-"습니다. 경우에 따라 에디터 내에서 실행하는 것이 바람직합니다 (게임코드를 실행"
-"하지 않거나 수동으로 실행하려 하지 않는 한). 이를 위해 ``tool`` 키워드가 존재"
-"하며 파일의 맨 위에 배치해야 합니다:"
+"습니다. 경우에 따라 에디터 내에서 실행하는 것이 바람직합니다 (게임 코드를 실"
+"행하지 않거나 수동으로 실행하려 하지 않는 한). 이를 위해 ``tool`` 키워드가 존"
+"재하며 파일의 맨 위에 배치해야 합니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1448
 msgid "Memory management"
@@ -2180,7 +2154,6 @@ msgid "Coroutines with yield"
 msgstr "yield를 가진 코루틴(Coroutine)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1527
-#, fuzzy
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
@@ -2189,11 +2162,11 @@ msgid ""
 "resulting object will continue execution and return whatever the function "
 "returns. Once resumed, the state object becomes invalid. Here is an example:"
 msgstr ""
-"GDScript ``yield`` 내장 함수를 통해 `coroutines <https://en.wikipedia.org/"
-"wiki/Coroutine>`_ 을 지원합니다. ``yield()`` 를 호출하면 반환 값과 같은 함수"
-"의 고정 상태로 현재 함수에서 즉시 반환됩니다. 이 결과 ``resume`` 을 호출하면 "
-"실행이 계속되고 함수가 반환하는 값을 반환합니다. 다시 시작하면 상태 객체는 무"
-"효화됩니다. 여기 예제가 있습니다:"
+"GDScript ``yield`` 내장 함수를 통해 `코루틴(coroutines) <https://en."
+"wikipedia.org/wiki/Coroutine>`_\\ 을 지원합니다. ``yield()``\\ 를 호출하면 반"
+"환 값과 같은 함수가 고정 상태가 되면서, 현재 함수에서 즉시 반환됩니다. 이 결"
+"과 ``resume``\\ 을 호출하면 실행이 계속되고 함수가 반환하는 값을 반환합니다. "
+"다시 시작하면 상태 객체는 무효화됩니다. 여기 예제가 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1549
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1573
@@ -2210,15 +2183,14 @@ msgid "Coroutines & signals"
 msgstr "코루틴 & 시그널"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1584
-#, fuzzy
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples:"
 msgstr ""
-"``yield`` 를 사용하는 진정한 힘은 시그널과 결합될 때 나타납니다. ``yield`` "
-"는 두 개의 매개 변수를 받아 들일 수 있는데, 객체와 시그널 입니다. 시그널이 수"
-"신되면, 실행이 다시 시작됩니다. 여기 몇 가지 예제가 있습니다:"
+"``yield``\\ 를 사용하는 진정한 힘은 시그널과 결합될 때 나타납니다. ``yield``"
+"\\ 는 두 개의 매개 변수를 받아 들일 수 있는데, 객체와 시그널 입니다. 시그널"
+"을 받게되면, 실행이 다시 시작됩니다. 여기 몇 가지 예제가 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1599
 msgid ""
@@ -2229,10 +2201,9 @@ msgstr ""
 "어:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1612
-#, fuzzy
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
-msgstr "``my_func`` 오직 두 버튼이 한번에 눌릴 때 계속 실행됩니다."
+msgstr "``my_func``\\ 은 오직 두 버튼이 한번에 눌릴 때 계속 실행됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1615
 msgid "Onready keyword"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -241,19 +241,16 @@ msgid "Freeing resources"
 msgstr "Libérer des ressources"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:146
-#, fuzzy
 msgid ""
 "When a ``Resource`` is no longer in use, it will automatically free itself. "
 "Since, in most cases, Resources are contained in Nodes, when you free a "
 "node, the engine frees all the resources it owns as well if no other node "
 "uses them."
 msgstr ""
-"Les ressources héritent de la classe :ref:`Reference <class_Reference>`. "
-"Ainsi, lorsqu'une ressource n'est plus utilisée, elle se libère "
-"automatiquement. Puisque, dans la plupart des cas, les ressources sont "
-"contenues dans des Nœuds, des scripts ou d'autres ressources, quand un nœud "
-"est supprimé ou libéré, toutes les ressources enfants de ce nœud sont "
-"libérées également."
+"Lorsqu'une ressource n'est plus utilisée, elle se libère automatiquement. "
+"Puisque, dans la plupart des cas, les ressources sont contenues dans des "
+"Nœuds, quand un nœud est libéré, le moteur libère également toutes les "
+"ressources de ce nœud si aucun autres nœuds ne les utilisent."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:151
 msgid "Creating your own resources"
@@ -273,7 +270,6 @@ msgstr ""
 "mémoire de comptage de références du type Référence."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
-#, fuzzy
 msgid ""
 "This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
@@ -426,7 +422,6 @@ msgstr ""
 "\"Enregistrer sous ...\"."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
-#, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -434,12 +429,11 @@ msgid ""
 "creation dialog. This will auto-add your script to the Resource object you "
 "create."
 msgstr ""
-"Si le langage du script prend en charge `les classes de script <https://"
-"godot.readthedocs.io/fr/latest/getting_started/step_by_step/"
-"scripting_continued.html#register-scripts-as-classes>` __, cela simplifie le "
-"processus. Définir un nom pour votre script seul l'ajoutera à la boîte de "
-"dialogue de création de l'inspecteur. Cela ajoutera automatiquement votre "
-"script à l'objet Ressource que vous créez."
+"Si le langage du script prend en charge ` :ref:`les classes de script "
+"<doc_scripting_continued_class_name>`, cela simplifie le processus. Définir "
+"un nom pour votre script seul l'ajoutera à la boîte de dialogue de création "
+"de l'inspecteur. Cela ajoutera automatiquement votre script à l'objet "
+"Ressource que vous créez."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:230
 msgid "Let's see some examples."

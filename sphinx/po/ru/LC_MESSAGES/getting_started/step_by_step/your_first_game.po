@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -192,7 +192,6 @@ msgstr ""
 "snake_case, константы - ALL_CAPS (см. :ref:`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:90
-#, fuzzy
 msgid ""
 "**C#**: Classes, export variables and methods use PascalCase, private fields "
 "use _camelCase, local variables and parameters use camelCase (See :ref:"
@@ -200,7 +199,7 @@ msgid ""
 "when connecting signals."
 msgstr ""
 "**C#**: Классы, экспортируемые переменные и методы используют PascalCase, "
-"приватные поля - _camelCase, локальные переменные и параметры - CamelCase "
+"приватные поля - _camelCase, локальные переменные и параметры - сamelCase "
 "(см. :ref:`doc_c_sharp_styleguide`).  Будьте осторожны, набирайте имена "
 "методов точно при подключении сигналов."
 
@@ -209,7 +208,6 @@ msgid "Sprite animation"
 msgstr "Анимация Спрайтов"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -258,7 +256,6 @@ msgstr ""
 "``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:125
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -268,7 +265,7 @@ msgid ""
 "sprite:"
 msgstr ""
 "Наконец, добавьте :ref:`CollisionShape2D <class_CollisionShape2D>` в "
-"качестве потомка в ``Player``. Это позволит задать игроку \"хитбокс\" или, "
+"качестве потомка в ``Player``. Это позволит задать игроку \"hitbox\" или, "
 "иначе говоря, границы зоны определения столкновений. Для этого персонажа "
 "лучше всего подходит узел ``CapsuleShape2D``, поэтому далее идем в "
 "Инспектор, и в разделе \"Shape\" щелкаем \"<null>\"\" -> \"New CapsuleShape2D"
@@ -630,6 +627,9 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"Каждый раз, когда противник атакует игрока, будет выпускаться сигнал. Мы "
+"должны отключить столкновение игрока, чтобы не вызывать сигнал ``hit``  по "
+"нескольку раз."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
 msgid ""
@@ -637,6 +637,10 @@ msgid ""
 "middle of the engine's collision processing. Using ``call_deferred()`` "
 "allows us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"Отключение зоны столкновения может привести к ошибке, если это произойдет во "
+"время обработки столкновений движка. Использование ``call_deferred()`` "
+"позволяет нам заставить Godot ждать, пока фигура не будет отключена и это не "
+"приведет к ошибке."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -1206,12 +1210,12 @@ msgstr "Text: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid "*Layout* : \"Top Wide\""
-msgstr ""
+msgstr "*Макет* : \"Top Wide (Вверху вшырь)\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
 msgid "*Align* : \"Center\""
-msgstr ""
+msgstr "*Выравнивание* : \"Центр\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "MessageLabel"
@@ -1248,11 +1252,11 @@ msgstr "Поле"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Top: ``-200``"
-msgstr "Top: ``-200``"
+msgstr "Cверху: ``- 200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:947
 msgid "Bottom: ``-100``"
-msgstr "Bottom: ``-100``"
+msgstr "Внизу: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:949
 msgid "Now add this script to ``HUD``:"
@@ -1292,6 +1296,11 @@ msgid ""
 "useful to delay, such as in the above code, where we want to wait a little "
 "bit of time before showing the \"Start\" button."
 msgstr ""
+"Если вам нужно сделать паузу на короткое время, то альтернативой "
+"использованию узла Timer является использование функции SceneTree's "
+"```create_timer()```. Это может быть очень полезно для задержки, как, "
+"например, в вышеприведенном коде, где мы хотим подождать немного времени, "
+"прежде чем показать кнопку \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
 #, fuzzy
@@ -1450,7 +1459,7 @@ msgstr "Наконец, добавить ``$DeathSound.play()`` в ``game_over()
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
 msgid "Keyboard Shortcut"
-msgstr ""
+msgstr "Сочетание клавиш"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
 msgid ""
@@ -1458,6 +1467,9 @@ msgid ""
 "we could also start the game by pressing a key on the keyboard. One way to "
 "do this is using the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
+"Поскольку в игру играют с помощью клавиатуры, было бы удобно, если бы мы "
+"могли начать игру, нажав любую клавишу. Одним из способов сделать это "
+"является использование свойства \"Shortcut\" узла ``Button``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid ""
@@ -1468,12 +1480,19 @@ msgid ""
 "_Action_ property, type the name \"ui_select\". This is the default input "
 "event associated with the spacebar."
 msgstr ""
+"В сцене ``HUD`` выберите ``StartButton`` и найдите его свойство _Shortcut_ в "
+"инспекторе. Выберите \"New Shortcut\" и нажмите на пункт \"Shortcut\". "
+"Появится второе свойство _Shortcut_. Выберите \"New InputEventAction\" и "
+"нажмите на новый \"InputEvent\". Наконец, в свойстве _Action_ введите имя "
+"\"ui_select\". Это событие ввода по умолчанию, связанное с пробелом."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
 msgid ""
 "Now when the start button appears, you can either click it or press the "
 "spacebar to start the game."
 msgstr ""
+"Теперь, когда появится кнопка запуска, вы можете нажать на неё или на "
+"пробел, чтобы начать игру."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid "Project files"

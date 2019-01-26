@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,10 +52,11 @@ msgid "Supported texture compression algorithms on the platform."
 msgstr "Algorithme de compression de texture supportée par la plateforme."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
-#, fuzzy
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
-msgstr "S'il s'agit d'une compilation de débogage ou de production."
+msgstr ""
+"Qu'il s'agisse d'une compilation de débogage ``debug`` ou de production "
+"``release`` (``debug'' inclut l'éditeur)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
@@ -69,7 +70,6 @@ msgid "Many more things."
 msgstr "Et bien d'autres choses."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:20
-#, fuzzy
 msgid "Features can be queried at run-time from the singleton API by calling:"
 msgstr ""
 "Les fonctionnalités peuvent être interrogées à l’exécution auprès du "
@@ -80,7 +80,6 @@ msgid "Default features"
 msgstr "Fonctionnalités par défaut"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:30
-#, fuzzy
 msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are **case-"
 "sensitive**:"
@@ -89,7 +88,6 @@ msgstr ""
 "l'esprit qu'ils sont *sensibles à la casse* :"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
-#, fuzzy
 msgid "**Feature tag**"
 msgstr "**Tag de fonctionnalité**"
 
@@ -162,9 +160,8 @@ msgid "Running on X11 (Linux/BSD desktop)"
 msgstr "Fonctionnant sur X11 (bureau Linux / BSD)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
-#, fuzzy
 msgid "**Server**"
-msgstr "**centré**"
+msgstr "**Server**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "Running on the headless server platform"
@@ -175,9 +172,8 @@ msgid "**debug**"
 msgstr "**debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
-#, fuzzy
 msgid "Running on a debug build (including the editor)"
-msgstr "Éxécution sur un binaire de déboguage"
+msgstr "Exécution sur un binaire de débogage"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
@@ -188,47 +184,42 @@ msgid "Running on a release build"
 msgstr "Éxécution sur un binaire de déploiement"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
-#, fuzzy
 msgid "**editor**"
-msgstr "**Opérateur**"
+msgstr "**editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 #, fuzzy
 msgid "Running on an editor build"
-msgstr "Éxécution sur un binaire 32-bit"
+msgstr "Exécuter sur une compilation éditeur"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
-#, fuzzy
 msgid "**standalone**"
-msgstr "**souligné**"
+msgstr "**standalone**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 #, fuzzy
 msgid "Running on a non-editor build"
-msgstr "Éxécution sur un binaire 32-bit"
+msgstr "Exécuter sur une compilation non-éditeur"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
 msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
-#, fuzzy
 msgid "Running on a 64-bit build (any architecture)"
-msgstr "Éxécution sur un binaire 64-bit"
+msgstr "Exécution sur une version 64-bits (toutes architectures)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
 msgstr "**32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
-#, fuzzy
 msgid "Running on a 32-bit build (any architecture)"
-msgstr "Éxécution sur un binaire 32-bit"
+msgstr "Éxécution sur une version 32-bits (toutes architectures)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
-#, fuzzy
 msgid "**x86_64**"
-msgstr "**64**"
+msgstr "**x86_64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 #, fuzzy
@@ -245,9 +236,8 @@ msgid "Running on a 32-bit x86 build"
 msgstr "Éxécution sur un binaire 32-bit"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
-#, fuzzy
 msgid "**arm64**"
-msgstr "**64**"
+msgstr "**arm64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 #, fuzzy
@@ -324,40 +314,37 @@ msgid "Custom features"
 msgstr "Fonctionnalités personnalisées"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:92
-#, fuzzy
 msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
-"Il est possible d'ajouter des fonctionnalités personnalisées à un build, il "
-"suffit d'utiliser le champ correspondant dans le *préréglage d'exportation* "
-"utilisé pour le générer :"
+"Il est possible d'ajouter des fonctionnalités personnalisées à une "
+"compilation, il suffit d'utiliser le champ correspondant dans le *préréglage "
+"d'exportation* utilisé pour le générer :"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Overriding project settings"
 msgstr "Écraser les paramètres du projet"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
-#, fuzzy
 msgid ""
 "Features can be used to override specific configuration values in the "
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
-"Les fonctionnalités peuvent être utilisées pour remplacer des valeurs de "
-"configuration spécifiques des *réglages du projet*. Cela permet de mieux "
-"personnaliser n'importe quelle configuration lors d'une compilation."
+"Des fonctionnalités peuvent être utilisées pour remplacer des valeurs de "
+"configuration spécifiques dans les *paramètres du projet*. Cela permet de "
+"mieux personnaliser n'importe quelle configuration lors d'une compilation."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
-#, fuzzy
 msgid ""
 "In the following example, a different icon is added for the demo build of "
 "the game (which was customized in a special export preset, which, in turn, "
 "includes only demo levels)."
 msgstr ""
-"Dans l'exemple suivant, une icône différente est ajoutée pour la "
-"construction du jeu de démo (qui a été personnalisé dans un préréglage "
-"d'exportation spécial qui, à son tour, n'inclut que des niveaux de démo)."
+"Dans l'exemple suivant, une icône différente est ajoutée pour la compilation "
+"de la démo du jeu (qui a été personnalisé dans un préréglage d'exportation "
+"spécial, qui, à son tour, n'inclut que des niveaux de démo)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid "After overriding, a new field is added for this specific configuration:"
@@ -380,12 +367,10 @@ msgstr ""
 "paramètres du projet."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:121
-#, fuzzy
 msgid "Customizing the build"
 msgstr "Personnalisation de la compilation"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:123
-#, fuzzy
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
 "custom **ExportPlugin**. They are also used to specify which shared library "

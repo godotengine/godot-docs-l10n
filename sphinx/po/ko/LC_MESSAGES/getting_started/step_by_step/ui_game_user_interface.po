@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,12 @@ msgid "Design the GUI"
 msgstr "GUI 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
+#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
-"energy bar, and bomb and rupee counters. By the end of this tutorial, you'll "
-"have a game GUI, ready to control with GDscript or VisualScript:"
+"energy bar, and bomb and emerald counters. By the end of this tutorial, "
+"you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
 "이제 기초를 갖췄으니, 재 사용 가능한 UI 구성 요소를 가지고 어떻게 게임 사용"
 "자 인터페이스 (GUI)를 만드는지 알아봅시다: 체력 막대, 에너지 막대, 그리고 폭"
@@ -96,7 +97,8 @@ msgstr "체력과 에너지 막대"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-msgid "The bomb and rupee counters on the right"
+#, fuzzy
+msgid "The bomb and emerald counters on the right"
 msgstr "오른쪽에서 폭탄과 루피 카운터"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
@@ -112,12 +114,13 @@ msgid "The life and energy bars on the left"
 msgstr "왼쪽에 체력과 에너지 막대"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
+#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
 "``HBoxContainer`` to manage our two columns. The two bars stack on top of "
 "one another inside a ``VBoxContainer``. And we'll need a last "
-"``HBoxContainer`` in the right column to place the bomb and rupee counters "
+"``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
 "이것은 컨테이너를 중첩시키기 더 쉽게 만듭니다: 우리는 ``MarginContainer`` 로 "
@@ -515,12 +518,14 @@ msgstr ""
 "지 않나요? 강력한 컨테이너 설정 덕분입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
-msgid "Design the bomb and rupee counters"
+#, fuzzy
+msgid "Design the bomb and emerald counters"
 msgstr "폭탄과 루피 카운터를 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
+#, fuzzy
 msgid ""
-"The bomb and rupee counters are like the bar's ``Count`` node. So we'll "
+"The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
 "폭탄과 루피 카운터는 바의 ``Count`` 노드와 비슷합니다. 따라서 복사해서 템플릿"
@@ -684,13 +689,14 @@ msgstr ""
 "면 멋질 것입니다. Godot는 상속된 씬으로 이를 제공합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
+#, fuzzy
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
-"``BombCounter``, and the ``RupeeCounter``. Select the ``Bar`` HBoxContainer. "
-"Right click on it and click on ``Save Branch as Scene``. Save the scene as "
-"``Bar.tscn``. You should see the node branch turn it to a single ``Bar`` "
-"node."
+"``BombCounter``, and the ``EmeraldCounter``. Select the ``Bar`` "
+"HBoxContainer. Right click on it and click on ``Save Branch as Scene``. Save "
+"the scene as ``Bar.tscn``. You should see the node branch turn it to a "
+"single ``Bar`` node."
 msgstr ""
 "``Counter`` 와 ``Bar`` 분기를 각각의 씬으로 저장해서 ``LifeBar``, "
 "``EnergyBar``, ``BombCounter``, 그리고 ``RupeeCounter`` 를 만들 겁니다. "
@@ -1005,7 +1011,8 @@ msgstr ""
 "100 픽셀 너비이기 때문에, 이 방법으로 두 게이지는 완벽하게 정렬할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-msgid "Prepare the bomb and rupee counters"
+#, fuzzy
+msgid "Prepare the bomb and emerald counters"
 msgstr "폭탄과 루피 카운터 준비하기"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
@@ -1024,16 +1031,17 @@ msgid "The bomb counter is the same as the original Counter scene"
 msgstr "폭탄 카운터는 원래 카운터 씬과 같습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
+#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
-"once more. Rename the root node ``RupeeCounter`` and save the scene as "
-"``RupeeCounter.tscn``. For this one, we mainly need to replace the bomb icon "
-"with the rupee icon. In the FileSystem tab, drag the ``rupees_icon.png`` "
-"onto the ``Icon`` node's ``Texture`` slot. ``Icon`` already anchors to the "
-"right edge of the ``Background`` node so we can change its position and it "
-"will scale and reposition with the ``RupeeCounter`` container. Shift the "
-"rupee icon a little bit to the right and down. Use the Arrow Keys on the "
-"keyboard to nudge its position. Save, and we're done with all the UI "
+"once more. Rename the root node ``EmeraldCounter`` and save the scene as "
+"``EmeraldCounter.tscn``. For this one, we mainly need to replace the bomb "
+"icon with the emerald icon. In the FileSystem tab, drag the ``emeralds_icon."
+"png`` onto the ``Icon`` node's ``Texture`` slot. ``Icon`` already anchors to "
+"the right edge of the ``Background`` node so we can change its position and "
+"it will scale and reposition with the ``EmeraldCounter`` container. Shift "
+"the emerald icon a little bit to the right and down. Use the Arrow Keys on "
+"the keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
 "다시 ``씬 -> 새 상속 씬`` 으로 가서 ``Counter.tscn`` 을 다시 선택합니다. 루"
@@ -1047,7 +1055,8 @@ msgstr ""
 "니다. 저장하면, 이제 모든 UI 요소가 끝났습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-msgid "The rupee counter should look something like this"
+#, fuzzy
+msgid "The emerald counter should look something like this"
 msgstr "루피 카운터는 이와 같이 보여야 합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
@@ -1072,9 +1081,10 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "자동으로 LifeBar와 EnergyBar가 정렬됨"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
+#, fuzzy
 msgid ""
-"Now, drag and drop the ``BombCounter.tscn`` and ``RupeeCounter.tscn`` scenes "
-"onto the ``Counters`` node. They'll resize automatically."
+"Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
+"scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
 "이제 ``BombCounter.tscn`` 와 ``RupeeCounter.tscn`` 씬을 ``Counters`` 노드에 "
 "드래그 앤 드랍 합니다. 이들은 자동으로 크기가 조정될 것입니다."
@@ -1084,8 +1094,9 @@ msgid "The nodes resize to take all the available vertical space"
 msgstr "가능한 모든 수직 공간을 차지하기 위해 크기가 조절된 노드들"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
+#, fuzzy
 msgid ""
-"To let the ``RupeeCounter`` and ``BombCounter`` use the size we defined in "
+"To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
 "container. Select the ``Counters`` node and unfold the ``Size Flags`` "
 "section in the Inspector. Uncheck the ``Fill`` tag for the ``Vertical`` "

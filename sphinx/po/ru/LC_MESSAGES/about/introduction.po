@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,36 +29,34 @@ msgid ""
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
 "Добро пожаловать в официальную документацию Godot Engine - свободного и "
-"открытого 2D и 3D игрового движка создаваемого сообществом! Godot - это "
+"открытого 2D и 3D игрового движка, создаваемого сообществом! Godot - это "
 "весьма развитый и дружелюбный к пользователю инструмент, который вы сможете "
 "использовать для создания игры любого жанра, для любой платформы, без каких-"
 "либо ограничений."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"Далее мы кратко рассмотрим основные возможности движка и содержимое этой "
-"документации, чтобы Вы знали, с чего начать, если Вы - новичок, или где "
-"искать подробную информацию о какой-то конкретной возможности движка."
+"Далее мы рассмотрим основные возможности движка и содержимое данной "
+"документации, таким образом вы узнаете с чего начать, если Вы - новичок, или "
+"где искать подробную информацию о какой-то конкретной возможности."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
 msgstr "О Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"Игровой движок это сложный инструмент, и очень сложно описать Godot в двух "
-"словах. Здесь содержится наша PR-документация, которую можно свободно "
-"использовать, если вам нужно описание движка Godot."
+"Игровой движок - это сложный инструмент, и поэтому довольно сложно описать "
+"его несколькими словами. Это небольшой конспект, который можно использовать "
+"как краткое описание Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
 #, fuzzy
@@ -86,12 +84,12 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot полностью бесплатен и имеет открытый исходный код под не строгой MIT "
-"лицензией. Никаких условий, выплат, ничего. Игры пользователей принадлежат "
-"им до последней строчки кода движка. Разработка Godot полностью независима и "
-"управляется сообществом, давая возможность пользователям формировать движок "
-"согласно своим намерениям. При поддержке `Software Freedom Conservancy "
-"<https://sfconservancy.org>`_ not-for-profit."
+"Godot полностью бесплатен и его исходный код открыт под лицензией MIT. "
+"Никаких обязательств или выплат - ничего. Игры пользователей принадлежат им "
+"до последней строчки кода движка. Разработка Godot полностью независима и "
+"контролируется сообществом, давая пользователям возможность изменять движок "
+"в соответствиями с их пожеланиями. При поддержке `Software Freedom "
+"Conservancy <https://sfconservancy.org>`_ not-for-profit."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -108,7 +106,6 @@ msgid "About the documentation"
 msgstr "О документации"
 
 #: ../../docs/about/introduction.rst:48
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -117,12 +114,12 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"Сообщество движка Godot постоянно дописывает, исправляет, редактирует  и "
-"перекраивает данную документацию. Процесс выглядит так: текстовые файлы на "
-"языке разметки`reStructuredText <http://www.sphinx-doc.org/en/stable/rest."
-"html>`_ редактируются, а потом, с помощью инструментов `Sphinx <http://www."
-"sphinx-doc.org>`_ и `ReadTheDocs <https://readthedocs.org/>`_ преобразуются "
-"в статический вебсайт или отдельный документ."
+"Сообщество постоянно дорабатывает, исправляет, редактирует и переделывает "
+"эту документацию. Процесс выглядит так: текстовые файлы на языке "
+"разметки`reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_ "
+"редактируются, а потом, с помощью инструментов `Sphinx <http://www.sphinx-"
+"doc.org>`_ и `ReadTheDocs <https://readthedocs.org/>`_ преобразуются в "
+"статический веб-сайт или отдельный документ."
 
 #: ../../docs/about/introduction.rst:55
 msgid ""
@@ -207,7 +204,6 @@ msgstr ""
 "компилировать движок, разрабатывать модули на C++ или плагины для редактора."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -218,7 +214,7 @@ msgstr ""
 "Секция :ref:`sec-community` даёт информацию относительно участия в "
 "разработке движка и жизни его сообщества, к примеру как сообщать об ошибках, "
 "помогать писать документацию, и прочее. Она также направляет на различные "
-"каналы сообщества такие как IRC и Discord и содержит лист рекомендованных "
+"каналы сообщества такие как IRC и Discord и содержит список рекомендованных "
 "руководств от третьих лиц вне основной документации."
 
 #: ../../docs/about/introduction.rst:90

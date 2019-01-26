@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,18 +40,16 @@ msgstr ""
 "3D, que son casi idénticos a sus homólogos 2D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:14
-#, fuzzy
 msgid ""
 "In 3D, math is a little more complex than in 2D, so also checking the :ref:"
 "`doc_vector_math` entry in the wiki (which was especially created for game "
 "developers, not mathematicians or engineers) will help pave the way for you "
 "to develop 3D games efficiently."
 msgstr ""
-"En 3D, las matemáticas son un poco más complejas que en 2D, así que también "
-"revisar el :ref:`doc_vector_math` en el wiki (que fueron creados "
-"especialmente para desarrolladores de juegos, no para matemáticos o "
-"ingenieros) ayudará a allanar el camino hacia el desarrollo eficiente de "
-"juegos 3D."
+"En 3D las matemáticas son un poco más complejas que en 2D, así que revisar "
+"la sección :ref:`doc_vector_math` de la wiki (que fue creada especialmente "
+"para desarrolladores de juegos, no para matemáticos o ingenieros) ayudará a "
+"allanar el camino hacia el desarrollo eficiente de juegos 3D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
@@ -70,7 +68,6 @@ msgstr ""
 "para todo lo que es 3D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
-#, fuzzy
 msgid ""
 "Spatial nodes have a local transform, which is relative to the parent node "
 "(as long as the parent node is also of **or inherits** from the type "
@@ -80,16 +77,16 @@ msgid ""
 msgstr ""
 "Los nodos Spatial tienen una transformación local, que es relativa al nodo "
 "padre (siempre y cuando el nodo padre sea también **heredado** del tipo "
-"Spatial). Se puede acceder a esta transformación como un 4x3 :ref:`Transform "
-"<class_Transform>`, o como 3 :ref:`Vector3 <class_Vector3>` miembros que "
-"representan la ubicación, la rotación de Euler (ángulos x,y y z) y la escala."
+"Spatial). Se puede acceder a esta transformación como una matriz 4x3 :ref:"
+"`Transform <class_Transform>`, o como 3 vectores :ref:`Vector3 "
+"<class_Vector3>` miembros que representan la ubicación, la rotación en "
+"ángulos de Euler (ángulos x,y y z) y la escala."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
 msgstr "Contenido 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:41
-#, fuzzy
 msgid ""
 "Unlike 2D, where loading image content and drawing is straightforward, 3D is "
 "a little more difficult. The content needs to be created with special 3D "
@@ -108,7 +105,6 @@ msgid "DCC-created models"
 msgstr "Modelos creados por DCC"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:53
-#, fuzzy
 msgid ""
 "There are two pipelines to import 3D models in Godot. The first and most "
 "common one is by :ref:`doc_importing_3d_scenes`, which allows you to import "
@@ -121,15 +117,13 @@ msgstr ""
 "rigs esqueléticos, blend shapes, etc."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:58
-#, fuzzy
 msgid ""
 "The second pipeline is by importing simple .OBJ files as mesh resources, "
 "which can be then put inside a :ref:`MeshInstance <class_MeshInstance>` node "
 "for display."
 msgstr ""
-"La segunda vía es a través del importador :ref:`doc_importing_3d_meshes`. "
-"Este segundo método permite importar archivos.OBJ simples como recursos de "
-"malla, que pueden ser colocados dentro de un nodo :ref:`MeshInstance "
+"El segundo modo es importando archivos .OBJ como Resources para mallas "
+"(mesh), las que pueden ser colocadas dentro de un nodo :ref:`MeshInstance "
 "<class_MeshInstance>` para su visualización."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
@@ -137,7 +131,6 @@ msgid "Generated geometry"
 msgstr "Geometría generada"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:65
-#, fuzzy
 msgid ""
 "It is possible to create custom geometry by using the :ref:`ArrayMesh "
 "<class_ArrayMesh>` resource directly. Simply create your arrays and use the :"
@@ -147,10 +140,11 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
-"Es posible crear geometría personalizada usando el recurso :ref:`Mesh "
-"<class_Mesh>` directamente. Simplemente crea tus arrays y usa la función :"
-"ref:`Mesh.add_surface() <class_Mesh_method_add_surface>`. También está "
-"disponible una clase helper, :ref:`SurfaceTool <class_SurfaceTool>`, que "
+"Es posible crear geometría personalizada usando el recurso :ref:`ArrayMesh "
+"<class_ArrayMesh>` directamente. Simplemente crea tus arrays y usa la "
+"función :ref:`ArrayMesh.add_surface_from_arrays() "
+"<class_ArrayMesh_method_add_surface_from_arrays>`. También está disponible "
+"una clase de utilidad, :ref:`SurfaceTool <class_SurfaceTool>`, que "
 "proporciona una API más sencilla y ayuda para indexar, generar normales, "
 "tangentes, etc."
 
@@ -170,7 +164,6 @@ msgid "Immediate geometry"
 msgstr "Geometría inmediata"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:79
-#, fuzzy
 msgid ""
 "If, instead, there is a requirement to generate simple geometry that will be "
 "updated often, Godot provides a special node, :ref:`ImmediateGeometry "
@@ -179,7 +172,7 @@ msgid ""
 msgstr ""
 "En cambio, si se requiere generar una geometría simple que se actualice con "
 "frecuencia, Godot proporciona un nodo especial, :ref:`ImmediateGeometry "
-"<class_ImmediateGeometry>` que proporciona una API de modo inmediato estilo "
+"<class_ImmediateGeometry>`, que proporciona una API de modo inmediato estilo "
 "OpenGL 1.x para crear puntos, líneas, triángulos, etc."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
@@ -244,7 +237,6 @@ msgstr ""
 "seleccione un nodo Spatial (espacial)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:118
-#, fuzzy
 msgid ""
 "Default 3D scene navigation controls are similar to Blender (aiming to have "
 "some sort of consistency in the free software pipeline..), but options are "
@@ -252,10 +244,10 @@ msgid ""
 "tools in the Editor Settings:"
 msgstr ""
 "Los controles de navegación de escena 3D predeterminados son similares a "
-"Blender (con el objetivo de tener algún tipo de consistencia en el conducto "
-"de software libre ...), pero se incluyen opciones para personalizar los "
-"botones y el comportamiento del mouse para que sean similares a otras "
-"herramientas en Ajustes del Editor:"
+"Blender (con el objetivo de tener algún tipo de consistencia entre software "
+"libre usado para el desarrollo...), pero se incluyen opciones para "
+"personalizar los botones y el comportamiento del mouse para que sean "
+"similares a otras herramientas en Ajustes del Editor:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid "Coordinate system"
@@ -274,7 +266,6 @@ msgstr ""
 "ser una mala idea (a menos que sepas lo que estás haciendo)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:133
-#, fuzzy
 msgid ""
 "When working with 3D assets, it's always best to work in the correct scale "
 "(set your DCC to metric). Godot allows scaling post-import and, while this "
@@ -337,7 +328,6 @@ msgid "Some useful keybindings:"
 msgstr "Algunos keybindings útiles:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
-#, fuzzy
 msgid ""
 "To snap placement or rotation, press the \"s\" key while moving, scaling or "
 "rotating."
@@ -355,14 +345,12 @@ msgid "View menu"
 msgstr "Menú Ver"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:169
-#, fuzzy
 msgid ""
 "The view options are controlled by the \"View\" menu in the viewport's "
 "toolbar."
 msgstr ""
-"Las opciones de visualización se controlan mediante el menú \"[ ver ]\". "
-"¡Presta atención a este pequeño menú dentro de la ventana porque a menudo se "
-"pasa por alto!"
+"Las opciones de visualización se controlan mediante el menú \"Ver\" en la "
+"barra de herramientas la vista 3D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:173
 msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
@@ -400,18 +388,16 @@ msgid "Cameras"
 msgstr "Cámaras"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:195
-#, fuzzy
 msgid ""
 "No matter how many objects are placed in the 3D space, nothing will be "
 "displayed unless a :ref:`Camera <class_Camera>` is also added to the scene. "
 "Cameras can work in either orthogonal or perspective projections:"
 msgstr ""
 "No importa cuántos objetos se coloquen en el espacio 3D, no se mostrará nada "
-"a menos que se añada una :ref: `Cámara <class_Camera>` a la escena. Las "
+"a menos que se añada un nodo :ref: `Camera <class_Camera>` a la escena. Las "
 "cámaras pueden trabajar en proyecciones ortogonales o en perspectiva:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:202
-#, fuzzy
 msgid ""
 "Cameras are associated with (and only display to) a parent or grandparent "
 "viewport. Since the root of the scene tree is a viewport, cameras will "
@@ -419,14 +405,13 @@ msgid ""
 "picture-in-picture) are desired, they need their own children cameras to "
 "display."
 msgstr ""
-"Las cámaras están asociadas y sólo se muestran en la vista de un padre o "
+"Las cámaras están asociadas y sólo se muestran en el Viewport de un padre o "
 "abuelo. Dado que la raíz del árbol de escenas es un viewport, las cámaras se "
 "mostrarán en él de forma predeterminada, pero si se desean sub-viewports (ya "
-"sea como objetivo de render o como imagen-en-imagen), necesitan las cámaras "
-"de sus propios hijos para que se muestren."
+"sea como objetivo de render o como imagen-en-imagen), estos necesitan sus "
+"propias cámaras hijas para que se muestre su contenido."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:210
-#, fuzzy
 msgid ""
 "When dealing with multiple cameras, the following rules are enforced for "
 "each viewport:"
@@ -467,7 +452,6 @@ msgid "Lights"
 msgstr "Luces"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:225
-#, fuzzy
 msgid ""
 "There is no limitation on the number of lights, nor of types of lights, in "
 "Godot. As many as desired can be added (as long as performance allows)."

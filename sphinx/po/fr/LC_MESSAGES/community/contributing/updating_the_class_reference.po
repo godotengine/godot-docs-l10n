@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -389,7 +389,6 @@ msgid "[Class]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
-#, fuzzy
 msgid "Link a class"
 msgstr "Lier une classe"
 
@@ -415,18 +414,16 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
-#, fuzzy
 msgid "See :ref:`hide <class_spatial_method_hide>`."
-msgstr ":ref:`String <class_String>`"
+msgstr "Voir :ref:`hide <class_spatial_method_hide>`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "[method Class.methodname]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
-#, fuzzy
 msgid "Link to another class's method"
-msgstr "Lien vers une autre méthode de la classe"
+msgstr "Lien vers la méthode d'une autre classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Call [method Spatial.hide]."
@@ -454,9 +451,8 @@ msgid "[member Class.membername]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
-#, fuzzy
 msgid "Link to another class's member"
-msgstr "Lien vers un autre membre de la classe"
+msgstr "Lien vers un membre d'une autre classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Get [member Node2D.scale]."
@@ -484,9 +480,8 @@ msgid "[signal Class.signalname]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
-#, fuzzy
 msgid "Link to another class's signal"
-msgstr "Lien vers un autre signal de la classe"
+msgstr "Lien vers le signal d'une autre classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "Emit [signal Node.renamed]."
@@ -498,7 +493,6 @@ msgid "[b] [/b]"
 msgstr "[b] [/b]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
-#, fuzzy
 msgid "Bold"
 msgstr "Gras"
 
@@ -508,7 +502,6 @@ msgid "Some [b]bold[/b] text."
 msgstr "Du texte en [b]gras[/b]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
-#, fuzzy
 msgid "Some **bold** text."
 msgstr "Du texte en **gras**."
 
@@ -569,7 +562,7 @@ msgid ""
 "Example:"
 msgstr ""
 "Utiliser``[codeblock]`` pour des blocs de code préformatés. À l'intérieur de "
-"``[codeblock]``, utiliser toujours des espaces pour l'indentation "
+"``[codeblock]``, utiliser toujours **quatre espaces** pour l'indentation "
 "(l'analyseur supprimera les tabulations). Par exemple :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:262

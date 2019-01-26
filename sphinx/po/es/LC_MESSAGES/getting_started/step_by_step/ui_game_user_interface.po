@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,12 @@ msgid "Design the GUI"
 msgstr "Diseñando la GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
+#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
-"energy bar, and bomb and rupee counters. By the end of this tutorial, you'll "
-"have a game GUI, ready to control with GDscript or VisualScript:"
+"energy bar, and bomb and emerald counters. By the end of this tutorial, "
+"you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
 "Ahora que has aprendido lo básico, vamos a ver cómo construir una Interfaz "
 "de Usuario de Juego (GUI) con componentes de UI reutilizables: una barra de "
@@ -98,7 +99,8 @@ msgstr "Las barras de vida y energía"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-msgid "The bomb and rupee counters on the right"
+#, fuzzy
+msgid "The bomb and emerald counters on the right"
 msgstr "Los contadores de bombas y rupias a la derecha"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
@@ -114,12 +116,13 @@ msgid "The life and energy bars on the left"
 msgstr "Las barras de vida y energía a la izquierda"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
+#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
 "``HBoxContainer`` to manage our two columns. The two bars stack on top of "
 "one another inside a ``VBoxContainer``. And we'll need a last "
-"``HBoxContainer`` in the right column to place the bomb and rupee counters "
+"``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
 "Esto hace que sea más fácil anidar los containers: tenemos algunos márgenes "
@@ -542,12 +545,14 @@ msgstr ""
 "Esto es gracias a nuestra robusta configuración de container."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
-msgid "Design the bomb and rupee counters"
+#, fuzzy
+msgid "Design the bomb and emerald counters"
 msgstr "Diseña los contadores de bombas y rupias"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
+#, fuzzy
 msgid ""
-"The bomb and rupee counters are like the bar's ``Count`` node. So we'll "
+"The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
 "Los contadores de bombas y rupias son como el nodo ``Count`` de la barra. "
@@ -726,13 +731,14 @@ msgstr ""
 "Heredadas."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
+#, fuzzy
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
-"``BombCounter``, and the ``RupeeCounter``. Select the ``Bar`` HBoxContainer. "
-"Right click on it and click on ``Save Branch as Scene``. Save the scene as "
-"``Bar.tscn``. You should see the node branch turn it to a single ``Bar`` "
-"node."
+"``BombCounter``, and the ``EmeraldCounter``. Select the ``Bar`` "
+"HBoxContainer. Right click on it and click on ``Save Branch as Scene``. Save "
+"the scene as ``Bar.tscn``. You should see the node branch turn it to a "
+"single ``Bar`` node."
 msgstr ""
 "Guardemos las ramas ``Counter`` y ``Bar`` como escenas separadas que "
 "reduciremos para crear el ``LifeBar``, el ``EnergyBar``, el ``BombCounter``, "
@@ -1069,7 +1075,8 @@ msgstr ""
 "alinearán perfectamente."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-msgid "Prepare the bomb and rupee counters"
+#, fuzzy
+msgid "Prepare the bomb and emerald counters"
 msgstr "Prepara los contadores de bombas y rupias"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
@@ -1089,16 +1096,17 @@ msgid "The bomb counter is the same as the original Counter scene"
 msgstr "El contador de bombas es el mismo que la escena original Counter"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
+#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
-"once more. Rename the root node ``RupeeCounter`` and save the scene as "
-"``RupeeCounter.tscn``. For this one, we mainly need to replace the bomb icon "
-"with the rupee icon. In the FileSystem tab, drag the ``rupees_icon.png`` "
-"onto the ``Icon`` node's ``Texture`` slot. ``Icon`` already anchors to the "
-"right edge of the ``Background`` node so we can change its position and it "
-"will scale and reposition with the ``RupeeCounter`` container. Shift the "
-"rupee icon a little bit to the right and down. Use the Arrow Keys on the "
-"keyboard to nudge its position. Save, and we're done with all the UI "
+"once more. Rename the root node ``EmeraldCounter`` and save the scene as "
+"``EmeraldCounter.tscn``. For this one, we mainly need to replace the bomb "
+"icon with the emerald icon. In the FileSystem tab, drag the ``emeralds_icon."
+"png`` onto the ``Icon`` node's ``Texture`` slot. ``Icon`` already anchors to "
+"the right edge of the ``Background`` node so we can change its position and "
+"it will scale and reposition with the ``EmeraldCounter`` container. Shift "
+"the emerald icon a little bit to the right and down. Use the Arrow Keys on "
+"the keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
 "Vuelve a ``Escena -> Nueva escena heredada`` y selecciona ``Counter.tscn`` "
@@ -1114,7 +1122,8 @@ msgstr ""
 "con todos los elementos de la UI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-msgid "The rupee counter should look something like this"
+#, fuzzy
+msgid "The emerald counter should look something like this"
 msgstr "El contador de rupias debería verse así"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
@@ -1141,9 +1150,10 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "LifeBar y EnergyBar se alinean automáticamente"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
+#, fuzzy
 msgid ""
-"Now, drag and drop the ``BombCounter.tscn`` and ``RupeeCounter.tscn`` scenes "
-"onto the ``Counters`` node. They'll resize automatically."
+"Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
+"scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
 "Ahora, arrastra y suelta las escenas ``BombCounter.tscn`` y ``RupeeCounter."
 "tscn`` en el nodo ``Counters``. Cambiarán de tamaño automáticamente."
@@ -1154,8 +1164,9 @@ msgstr ""
 "Los nodos se redimensionan para ocupar todo el espacio vertical disponible"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
+#, fuzzy
 msgid ""
-"To let the ``RupeeCounter`` and ``BombCounter`` use the size we defined in "
+"To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
 "container. Select the ``Counters`` node and unfold the ``Size Flags`` "
 "section in the Inspector. Uncheck the ``Fill`` tag for the ``Vertical`` "

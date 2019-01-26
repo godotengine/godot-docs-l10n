@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:4
 #, fuzzy
 msgid "Particle shaders"
-msgstr "ParticlesMaterial"
+msgstr "Particules shaders"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:6
 msgid ""
@@ -56,12 +56,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:27
-#, fuzzy
 msgid "Render modes"
 msgstr "Mode de rendu"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:30
-#, fuzzy
 msgid "Render mode"
 msgstr "Mode de rendu"
 
@@ -91,14 +89,13 @@ msgid "**disable_velocity**"
 msgstr "**disable_velocity**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:36
-#, fuzzy
 msgid "Ignore **VELOCITY** value."
-msgstr "out vec3 **VELOCITY**"
+msgstr "Ignorer la valeur de **VELOCITY**."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
 #, fuzzy
 msgid "Vertex built-ins"
-msgstr "Types intégrés vectoriels"
+msgstr "Sommets intégrés"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:42
 msgid ""
@@ -120,9 +117,8 @@ msgid "Built-in"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
-#, fuzzy
 msgid "inout vec4 **COLOR**"
-msgstr "in vec4 **COLOR**"
+msgstr "inout vec4 **COLOR**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
 msgid ""
@@ -130,9 +126,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
-#, fuzzy
 msgid "inout vec3 **VELOCITY**"
-msgstr "out vec3 **VELOCITY**"
+msgstr "inout vec3 **VELOCITY**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
 msgid "Particle velocity, can be modified."
@@ -147,9 +142,8 @@ msgid "Particle mass, use for attractors (not implemented in 3.1)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
-#, fuzzy
 msgid "inout bool **ACTIVE**"
-msgstr "out bool **ACTIVE**"
+msgstr "inout bool **ACTIVE**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
 msgid "True when Particle is active, can be set to false."
@@ -164,9 +158,8 @@ msgid "True when particle must restart (lifetime cycled)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:63
-#, fuzzy
 msgid "inout vec4 **CUSTOM**"
-msgstr "out vec4 **CUSTOM**"
+msgstr "inout vec4 **CUSTOM**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:63
 msgid ""
@@ -174,9 +167,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
-#, fuzzy
 msgid "inout mat4 **TRANSFORM**"
-msgstr "out mat4 **TRANSFORM**"
+msgstr "inout mat4 **TRANSFORM**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
 msgid "Particle transform."

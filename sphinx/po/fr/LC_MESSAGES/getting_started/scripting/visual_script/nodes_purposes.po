@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,7 +56,6 @@ msgstr ""
 "nœuds de contrôles éditables dans un but de lisibilité."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:20
-#, fuzzy
 msgid ""
 "Nodes still display the required information as text, but editing is done "
 "via the *Inspector*. To edit them, select any node and edit its properties "
@@ -362,14 +361,13 @@ msgstr ""
 "personnaliser ses arguments :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
-#, fuzzy
 msgid ""
 "The signal you have created will appear in the Inspector, along with the "
 "built-in node signals. This allows you to connect it from another script "
 "from another *Scene Node*:"
 msgstr ""
 "Le signal que vous venez de créer apparaîtra dans l'inspecteur avec les "
-"signaux des nœuds intégrés. Ceci vous permet de le connecter à partir d'un "
+"signaux intégrés au nœud. Ceci vous permet de le connecter à partir d'un "
 "autre script d'un autre *Nœud de scène* :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:181
@@ -515,14 +513,13 @@ msgid "Engine Singleton"
 msgstr "Singleton moteur"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
-#, fuzzy
 msgid ""
 "Engine singletons are global interfaces (meaning they can be accessed "
 "without a reference; unlike Scene Nodes, they are always available). They "
 "have several purposes, but in general, they are useful for low-level access "
 "or OS-related access."
 msgstr ""
-"Les singletons de moteur sont des interfaces globales (ce qui signifie qu'on "
+"Les singletons du moteur sont des interfaces globales (ce qui signifie qu'on "
 "peut y accéder sans référence, contrairement aux nœuds de scène, ils sont "
 "toujours disponibles). Ils ont plusieurs buts, mais en général ils sont "
 "utiles pour l'accès de bas niveau ou l'accès lié à l'OS."
@@ -564,14 +561,13 @@ msgid "Scene Node"
 msgstr "Nœud de scène"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:276
-#, fuzzy
 msgid ""
 "This is just a reference to a node in the tree, but it's easier to use this "
 "node by dragging the actual node from the scene tree to the canvas (this "
 "will create it and configure it)."
 msgstr ""
 "Ceci est seulement une référence à un nœud dans l'arbre, mais il est plus "
-"facile d'utiliser ce nœud en glissant le nœud actuel de l'arbre de la scène "
+"facile d'utiliser ce nœud en glissant le nœud actuel de l'arbre de scène "
 "vers le canevas (cela va le créer et le configurer)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
@@ -586,10 +582,10 @@ msgid ""
 "nodes (or event the node itself that has the script) from the Scene Tree to "
 "the canvas for this."
 msgstr ""
-"À quelques rares occasions, vous pouvez vouloir passer ce nœud de scène "
+"En quelques rares occasions, vous pouvez vouloir passer ce nœud de scène "
 "comme argument. Cela peut être utilisé pour appeler des fonctions et "
 "paramétrer/obtenir des propriétés, ou glisser simplement les nœuds (ou même "
-"le nœud lui-même qui a le script) à partir de l'arbre des scènes vers le "
+"le nœud lui-même qui a le script) à partir de l'arbre de scène vers le "
 "canevas pour cela."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
@@ -610,23 +606,21 @@ msgstr ""
 "accéder résultera en une erreur."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
-#, fuzzy
 msgid ""
 "SceneTree allows for many low-level things, like setting stretch options, "
 "calling groups, make timers, or even load another scene. It's a good class "
 "to get familiar with."
 msgstr ""
 "SceneTree permet nombreuses choses de bas niveau, de régler des options "
-"d'étirement, d'appeler des groupes, de créer des minuteries ou même de "
-"charger une autre scène. C'est une classe qu'il est bon de se familiariser "
-"avec."
+"d'étirement, d'appeler des groupes, de créer des minuteurs ou même de "
+"charger une autre scène. C'est une classe avec qui il est bon de se "
+"familiariser."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
 msgstr "Précharger"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
-#, fuzzy
 msgid ""
 "This does the same function as preload() in GDScript. It maintains this "
 "resource loaded and ready to use. Rather than instancing the node, it's "
@@ -936,7 +930,6 @@ msgstr ""
 "fonction une valeur qui peut être utilisée pour reprendre l'exécution."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
-#, fuzzy
 msgid "Yield Signal"
 msgstr "Yield Signal"
 
@@ -962,7 +955,6 @@ msgid "Operators"
 msgstr "Opérateurs"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
-#, fuzzy
 msgid ""
 "These are mostly generic operators, such as addition, multiplication, "
 "comparison, etc. By default, these mostly accept any datatype (and will "
@@ -970,7 +962,7 @@ msgid ""
 "the operator). It is always recommended to set the right type for operators "
 "to catch errors faster and make the graph easier to read."
 msgstr ""
-"Il s'agit le plus souvent d'opérateurs génériques tels que l'addition, la "
+"Il s'agit principalement d'opérateurs génériques tels que l'addition, la "
 "multiplication, la comparaison, etc. Par défaut, la plupart d'entre eux "
 "acceptent n'importe quel type de données (et généreront des erreurs pendant "
 "l'exécution si les types fournis ne correspondent pas à l'opérateur). Il est "
@@ -982,13 +974,12 @@ msgid "Expression Node"
 msgstr "Nœud d'expression"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:485
-#, fuzzy
 msgid ""
 "Among the operators, the *Expression* node is the most powerful. If well "
 "used, it allows you to enormously simplify visual scripts that are math or "
 "logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
-"Parmi les opérateurs, le noeud *Expression* est le plus puissant. S'il est "
+"Parmi les opérateurs, le nœud *Expression* est le plus puissant. S'il est "
 "bien utilisé, il vous permet de simplifier énormément les scripts visuels "
 "qui sont lourds en mathématiques ou en logique. Il suffit de taper n'importe "
 "quelle expression et elle sera exécutée en temps réel."

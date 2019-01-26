@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,6 @@ msgstr ""
 "para saber cómo configurar un proyecto y utilizar el editor."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
-#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
@@ -104,7 +103,6 @@ msgid "Organizing the project"
 msgstr "Organizando el proyecto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
-#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -114,7 +112,7 @@ msgid ""
 "can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
 "En este proyecto, haremos 3 escenas independientes: ``Player`` (jugador), "
-"``Mob`` (enemigo), and ``HUD`` (visualización del estado del juego), los que "
+"``Mob`` (enemigo), y ``HUD`` (visualización del estado del juego), los que "
 "se combinarán en la escena ``Main`` (principal). En un proyecto grande, "
 "puede ser útil crear carpetas que contengan las escenas y sus scripts, pero "
 "para este juego relativamente pequeño se pueden grabar las escenas y scripts "
@@ -211,7 +209,6 @@ msgid "Sprite animation"
 msgstr "Animación del sprite"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -230,7 +227,7 @@ msgstr ""
 "`SpriteFrames <class_SpriteFrames>`, que es una lista de las animaciones que "
 "puede mostrar. Para crear uno, busca la propiedad ``Frames`` en el Inspector "
 "y haz clic en \"<null>\" -> \"New SpriteFrames\". A continuación, en la "
-"misma ubicación, haz clic en ```<SpriteFrames>`` para abrir el panel "
+"misma ubicación, haz clic en ``<SpriteFrames>`` para abrir el panel "
 "\"SpriteFrames\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:111
@@ -259,7 +256,6 @@ msgstr ""
 "Inspector bajo el título ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:125
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -271,9 +267,10 @@ msgstr ""
 "Finalmente, añade un :ref:`CollisionShape2D <class_CollisionShape2D>` como "
 "hijo de ``Player``. Esto determinará el \"hitbox\" del jugador, o los "
 "límites de su área de colisión. Para este personaje, un nodo "
-"``CapsuleShape2D`` te ofrece el mejor resultado, así que, junto a \"Shape\" "
-"en el Inspector, haz clic en \"<null>\" -> \"New CapsuleShape2D\".  Ahora "
-"hay que redimensionar la forma para cubrir el sprite:"
+"``CapsuleShape2D`` ya que se ajusta mejor a la imagen, así que junto a "
+"\"Shape\" en el Inspector, haz clic en \"<null>\" -> \"New CapsuleShape2D"
+"\".  Ahora usa los dos manejadores de tamaño y redimensiona la figura para "
+"cubrir el sprite:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid "When you're finished, your ``Player`` scene should look like this:"
@@ -322,7 +319,6 @@ msgid "Start by declaring the member variables this object will need:"
 msgstr "Comienza declarando las variables miembro que este objeto necesitará:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:179
-#, fuzzy
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
@@ -331,11 +327,13 @@ msgid ""
 "Variables\" section of the Inspector. Remember, if you change the value "
 "here, it will override the value written in the script."
 msgstr ""
-"Utilizar la palabra clave ``export`` en la primera variable ``SPEED`` nos "
+"Utilizar la palabra clave ``export`` en la primera variable ``speed`` nos "
 "permite asignar su valor desde el Inspector. Esto puede ser útil para "
-"valores que quieres ajustar como ajustas las propiedades de un nodo "
-"integrado. Selecciona el nodo ``Player`` y asignale el valor ``400`` a la "
-"propiedad speed."
+"valores que quieres ajustar como ajustas las propiedades de los nodos "
+"comunes. Selecciona el nodo ``Player`` y verás que en la sección \"Script "
+"Variables\" del Inspector aparece la nueva propiedad. Recuerda que si "
+"cambias el valor aquí, sobreescribirá el valor asignado en el script al "
+"ejecutar el juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:186
 msgid ""
@@ -359,17 +357,16 @@ msgstr ""
 "un buen momento para averiguar el tamaño de la ventana de juego:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:210
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
 "of our game, which we expect will change often. For the player, we need to "
 "do the following:"
 msgstr ""
-"Ahora podemos utilizar la función ``_process()`` para definir lo que el "
-"jugador hará. En cada frame se llama a ``_process()``, así que la usaremos "
-"para actualizar elementos del juego que esperamos que cambien a menudo. Aquí "
-"la haremos:"
+"Ahora podemos utilizar la función ``_process()`` para definir lo que hará el "
+"jugador.  ``_process()`` se llama en cada frame, así que la usaremos para "
+"actualizar elementos del juego que esperamos que cambien a menudo. Para el "
+"jugador haremos lo siguiente:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:215
 msgid "Check for input."
@@ -384,7 +381,6 @@ msgid "Play the appropriate animation."
 msgstr "Reproducir la animación apropiada."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:219
-#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -411,7 +407,6 @@ msgstr ""
 "``false`` en caso contrario."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:288
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -420,12 +415,13 @@ msgid ""
 "``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
-"Revisaremos cada entrada y sumaremos o restaremos de la ``velocity`` "
-"(velocidad) para obtener la dirección total. Por ejemplo, si mantienes "
-"``right`` (derecha) y ``down`` (abajo) al mismo tiempo, el resultado del "
-"vector ``velocity`` será ``(1,1)``. En este caso, como estamos agregando un "
-"movimiento horizontal y vertical, el jugador podrá moverse *más rápido* que "
-"si solo se estuviese moviendo horizontalmente."
+"Comenzaremos colocando ``velocity`` en ``(0,0)`` - por defecto, el jugador "
+"no se debería estar moviendo. Luego revisamos cada entrada y sumamos o "
+"restamos de ``velocity`` para obtener la dirección. Por ejemplo, si "
+"mantienes ``right`` (derecha) y ``down`` (abajo) al mismo tiempo, el "
+"resultado del vector ``velocity`` será ``(1,1)``. En este caso, como estamos "
+"agregando un movimiento horizontal y vertical, el jugador podrá moverse *más "
+"rápido* que si solo se estuviese moviendo horizontalmente."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:295
 msgid ""
@@ -457,15 +453,14 @@ msgstr ""
 "comenzar o detener la animación de AnimatedSprite."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:306
-#, fuzzy
 msgid ""
 "In GDScript, ``$`` returns the node at the relative path from the current "
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
-"``$`` retorna el nodo acorde a la ruta relativa al nodo actual, o ``null`` "
-"si no se encuentra el nodo. Como AnimatedSprite es hijo del nodo actual, "
-"podemos utilizar ``$AnimatedSprite``."
+"En GDScript, ``$`` retorna el nodo acorde a la ruta relativa al nodo actual, "
+"o ``null`` si no se encuentra el nodo. Como AnimatedSprite es hijo del nodo "
+"actual, podemos utilizar ``$AnimatedSprite``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid ""
@@ -478,7 +473,6 @@ msgstr ""
 "play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:312
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position "
 "and use ``clamp()`` to prevent it from leaving the screen by adding the "
@@ -595,7 +589,6 @@ msgstr ""
 "puede emitir:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:441
-#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered( Object "
@@ -606,7 +599,7 @@ msgid ""
 "be called whenever the signal is emitted - it *handles* the signal."
 msgstr ""
 "Observa que nuestra señal personalizada \"hit\" está allí también. Como "
-"nuestros enemigos serán nodos ``RigidBody2D``, queremos usar la señal "
+"nuestros enemigos serán nodos ``RigidBody2D``, usaremos la señal "
 "``body_entered( Object body )``; esta se emitirá cuando un cuerpo (body) "
 "haga contacto con Player. Click en \"Conectar..\" y luego \"Conectar\" "
 "nuevamente en la ventana \"Confirmar Decisión\" de configuración de señales. "
@@ -775,7 +768,6 @@ msgstr ""
 "miembro:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:581
-#, fuzzy
 msgid ""
 "When we spawn a mob, we'll pick a random value between ``min_speed`` and "
 "``max_speed`` for how fast each mob will move (it would be boring if they "
@@ -784,11 +776,12 @@ msgid ""
 "sure you've spelled these the same in the script and in the SpriteFrames "
 "resource."
 msgstr ""
-"Tomaremos un número al azar entre ``min_speed`` y ``max_speed`` para decidir "
-"cuán rápido se debe mover cada enemigo (sería aburrido si todos se moviesen "
-"igual). Asignaremos ``150`` y ``250`` en el Inspector. También tendremos un "
-"array que contendrá las tres animaciones, el cual usaremos para tomar una al "
-"azar."
+"Cuando creamos un \"mob\", tomaremos un número al azar entre ``min_speed`` y "
+"``max_speed`` para decidir cuán rápido se debe mover cada uno (sería "
+"aburrido si todos se moviesen igual). Asignaremos ``150`` y ``250`` en el "
+"Inspector. También tendremos un arreglo que contendrá las tres animaciones, "
+"el cual usaremos para tomar una al azar. Asegúrate de que los nombres en el "
+"script son los mismos que en SpriteFrames."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid ""
@@ -1007,7 +1000,6 @@ msgstr ""
 "para un nuevo juego:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``) to the main script. "
@@ -1015,8 +1007,9 @@ msgid ""
 "increment the score by 1."
 msgstr ""
 "Ahora conecta la señal ``timeout()`` de cada uno de los nodos Timer "
-"(``StartTimer``, ``ScoreTimer`` y ``MobTimer``). ``StartTimer`` iniciará los "
-"otros dos temporizadores. ``ScoreTimer`` incrementará la puntuación en 1."
+"(``StartTimer``, ``ScoreTimer`` y ``MobTimer``) al script de Main. "
+"``StartTimer`` iniciará los otros dos temporizadores. ``ScoreTimer`` "
+"incrementará la puntuación en 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:799
 msgid ""
@@ -1137,7 +1130,6 @@ msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` llamado ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:894
-#, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the _Text_ field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -1145,20 +1137,17 @@ msgid ""
 "Regular.ttf\". To use this font, do the following for each of the three "
 "``Control`` nodes:"
 msgstr ""
-"Para hacer que el texto de ``MessageLabel`` entre en la ventana del juego, "
-"pulsa en el ícono pequeño al costado la propiedad de texto. Esto abrirá una "
-"nueva ventana donde puedes agregar una línea nueva entre las palabras. La "
-"fuente por defecto de los nodos ``Control`` es pequeña y no escala bien. "
-"Entre los recursos del juego hay una fuente incluida, llamada \"Xolonium-"
-"Regular.ttf\". Para usar esta fuente, haz lo siguiente en los tres nodos "
-"``Control``:"
+"Haz click en ``ScoreLabel`` y escribe un número en el campo _Text_ del "
+"Inspector. La fuente por defecto de los nodos ``Control`` es pequeña y no "
+"escala bien. Entre los recursos del juego hay una fuente incluida, llamada "
+"\"Xolonium-Regular.ttf\". Para usar esta fuente, haz lo siguiente en los "
+"tres nodos ``Control``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:900
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr "Dentro de \"Custom Fonts\", seleccionar \"New DynamicFont\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:904
-#, fuzzy
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -1206,9 +1195,8 @@ msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
-#, fuzzy
 msgid "*Text* : ``0``"
-msgstr "Text: ``0``"
+msgstr "*Text* : ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid "*Layout* : \"Top Wide\""
@@ -1224,33 +1212,28 @@ msgid "MessageLabel"
 msgstr "MessageLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:935
-#, fuzzy
 msgid "*Text* : ``Dodge the Creeps!``"
-msgstr "Text: ``Dodge the Creeps!``"
+msgstr "*Text* :  ``Dodge the Creeps!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
-#, fuzzy
 msgid "*Layout* : \"HCenter Wide\""
-msgstr "``Disposición``: \"Centro\""
+msgstr "*Disposición* : \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:940
 msgid "StartButton"
 msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:942
-#, fuzzy
 msgid "*Text* : ``Start``"
-msgstr "Text: ``Start``"
+msgstr "*Text* : ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:943
-#, fuzzy
 msgid "*Layout* : \"Center Bottom\""
-msgstr "``Disposición``: \"Centro Abajo\""
+msgstr "*Disposición* : \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:944
-#, fuzzy
 msgid "*Margin* :"
-msgstr "Margin"
+msgstr "*Margin* :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Top: ``-200``"
@@ -1282,14 +1265,13 @@ msgstr ""
 "``2`` y la propiedad ``One Shot`` en \"Activado\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
-#, fuzzy
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
 "show the \"Start\" button."
 msgstr ""
-"Esta función se llamará cuando el jugador pierde. Esta mostrará \"Game Over"
-"\" durante 2 segundos, luego volverá a la pantalla de título y mostrará el "
+"Esta función se llamará cuando el jugador pierde. Mostrará \"Game Over\" "
+"durante 2 segundos, luego volverá a la pantalla de título y revelará el "
 "botón \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1025
@@ -1407,7 +1389,6 @@ msgstr ""
 "quieras y arrastra el borde del ``ColorRect`` para que cubra la pantalla."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
-#, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."

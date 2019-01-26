@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -343,14 +343,12 @@ msgstr ""
 "à condition d'utiliser une police à largeur fixe."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
-#, fuzzy
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
 msgstr ""
 "Pour remplir une chaîne jusqu'à une longueur minimale, ajoutez un entier au "
 "spécificateur :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
-#, fuzzy
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
@@ -383,7 +381,6 @@ msgid "Dynamic padding"
 msgstr "Rembourrage dynamique"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
-#, fuzzy
 msgid ""
 "By using the ``*`` (*asterisk*) character, the padding or precision can be "
 "set without modifying the format string. It is used in place of an integer "
@@ -393,16 +390,15 @@ msgstr ""
 "En utilisant le caractère ``*`` (*astérisque*), le remplissage ou la "
 "précision peuvent être réglés sans modifier la chaîne de format. Il est "
 "utilisé à la place d'un entier dans le spécificateur de format. Les valeurs "
-"pour le remplissage et la précision sont alors passées lors du formatage::"
+"pour le remplissage et la précision sont alors passées lors du formatage :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
-#, fuzzy
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
 msgstr ""
 "Il est toujours possible de remplir avec des zéros dans les spécificateurs "
-"de nombre entiers en ajoutant  ``0`` avant ``*``::"
+"de nombre entiers en ajoutant  ``0`` avant ``*`` :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
@@ -524,9 +520,8 @@ msgid "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
 msgstr "``\"Salut, {nom} v{0} !\".format([3.0, [\"nom\":\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
-#, fuzzy
 msgid "no index"
-msgstr "index"
+msgstr "pas d'index"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"

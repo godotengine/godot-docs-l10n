@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:4
-#, fuzzy
 msgid "Binding to external libraries"
-msgstr "Relier une librairie externe à Godot (comme PhysX, FMOD, etc)."
+msgstr "Liaison à des bibliothèques externes"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
@@ -45,32 +44,28 @@ msgid "Next, you will create a header file with a simple TTS class:"
 msgstr ""
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:44
-#, fuzzy
 msgid "And then you'll add the cpp file."
-msgstr "Et dans le fichier source (cpp)."
+msgstr "Et puis vous ajouterez le fichier cpp."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:68
-#, fuzzy
 msgid ""
 "Just as before, the new class needs to be registered somehow, so two more "
 "files need to be created:"
 msgstr ""
-"Il faut maintenant enregistrer cette nouvelle classe pour qu'elle soit "
-"accessible par Godot, avec deux nouveaux fichiers :"
+"Tout comme avant, la nouvelle classe doit être enregistrée d'une manière ou "
+"d'une autre, deux fichiers supplémentaires doivent être créés :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:76
-#, fuzzy
 msgid "With the following contents:"
 msgstr "Avec les éléments suivants :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:104
-#, fuzzy
 msgid ""
 "Next, you need to create a ``SCsub`` file so the build system compiles this "
 "module:"
 msgstr ""
-"Ensuite, il faut créer un fichier ``SCsub`` pour que SCons compile ce "
-"module :"
+"Ensuite, vous devez créer un fichier ``SCsub`` pour que le système de "
+"compilation compile ce module :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:115
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
-#, fuzzy
 msgid ""
 "Tilemaps are a simple and quick way to make 2D game levels. Basically, you "
 "start with a bunch of reference tiles (or pieces) that can be put on a grid, "
@@ -34,8 +33,8 @@ msgid ""
 msgstr ""
 "Les palettes de tuiles sont un moyen simple et rapide de créer des niveaux "
 "de jeu 2D. Fondamentalement, vous commencez avec une quantité de tuiles de "
-"référence (ou morceaux) qui peuvent être placés sur une grille, autant de "
-"fois que vous le souhaitez - pensez à cela comme un éditeur de cartes :"
+"référence (ou pièces) qui peuvent être placés sur une grille, autant de fois "
+"que vous le souhaitez - pensez à cela comme un éditeur de cartes :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:15
 msgid ""
@@ -63,7 +62,6 @@ msgstr ""
 "en tant qu'images séparées fonctionne également."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
-#, fuzzy
 msgid ""
 "Create a new project and move the above PNG image into the directory. Next, "
 "go into the image's import settings and turn off ``Filter``, keeping it on "
@@ -88,7 +86,6 @@ msgstr ""
 "ressemblerait de modifier manuellement la ressource :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:40
-#, fuzzy
 msgid ""
 "There are enough properties to get by. With some effort, editing this way "
 "can work. But the easiest way to edit and maintain a tileset is exporting it "
@@ -104,7 +101,6 @@ msgid "TileSet scene"
 msgstr "Scène de jeu de tuiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:47
-#, fuzzy
 msgid ""
 "Create a new scene with a regular Node or Node2D as root. For each tile you "
 "want to define, add a sprite node as a child. Since tiles here are 50x50, "
@@ -112,13 +108,13 @@ msgid ""
 "snap (``Use Snap`` icon or ``S`` key). Moving tiles with the mouse might "
 "still be a bit inaccurate, so use your arrow keys as well."
 msgstr ""
-"Créez une nouvelle scène avec un nœud normal ou Node2D en tant que racine. "
+"Créez une nouvelle scène avec un nœud Node ou Node2D en tant que racine. "
 "Pour chaque tuile que vous souhaitez définir, ajoutez un nœud sprite en tant "
 "qu'enfant. Puisque les tuiles ici sont 50x50, vous devez activer la grille "
 "(``Affichage -> Afficher la grille``, ou la touche ``G``) ainsi que la "
 "capture (icône ``Utiliser Capture``, ou la touche ``S``). Déplacer les "
-"tuiles avec la souris peut toujours être inapproprié, ainsi utilisez tout "
-"autant les touches fléchées."
+"tuiles avec la souris peut toujours être imprécis, ainsi utilisez aussi les "
+"touches fléchées."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:53
 msgid ""
@@ -131,7 +127,6 @@ msgstr ""
 "utiliser."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:57
-#, fuzzy
 msgid ""
 "Finally, make sure to name your sprite node correctly. This will ensure "
 "that, in subsequent edits to the tileset (for example, if you've added "
@@ -139,9 +134,10 @@ msgid ""
 "correctly and updated**. This name should be unique."
 msgstr ""
 "Enfin, assurez-vous de nommer votre nœud sprite correctement. Cela garantira "
-"que, lors des éditions ultérieures sur le jeu de tuiles (par exemple, en cas "
-"de collision, de modification de la région, etc.), la vignette sera toujours "
-"identifiée **correctement et mise à jour**. Ce nom devrait être unique."
+"que, lors des éditions ultérieures sur le jeu de tuiles (par exemple, si "
+"vous ajoutez des collisions, changez la région, etc.), la vignette sera "
+"toujours **identifiée correctement et mise à jour**. Ce nom devrait être "
+"unique."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
 msgid ""
@@ -178,7 +174,6 @@ msgstr ""
 "CollisionPolygon est recommandé car il est plus facile à éditer."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:83
-#, fuzzy
 msgid ""
 "Finally, edit the polygon; this will give the tile a collision and fix the "
 "warning icon next to the CollisionPolygon node. **Remember to use snap!** "
@@ -194,7 +189,7 @@ msgstr ""
 "permettant à un personnage de se déplacer de manière transparente d'une "
 "tuile à l'autre. De plus, **ne pas mettre à l'échelle ni déplacer** les "
 "nœuds de polygones de collision et/ou de collision. Laissez-les à l'offset "
-"0,0, avec l'échelle 1,1 et la rotation 0 par rapport à l'image-objet parente."
+"0,0, avec l'échelle 1,1 et la rotation 0 par rapport au sprite parent."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
@@ -281,7 +276,6 @@ msgid "Painting your world"
 msgstr "Décorer votre monde"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:139
-#, fuzzy
 msgid ""
 "With all set, make sure the TileMap node is selected. A red grid will appear "
 "on the screen, allowing you to paint on it with the selected tile on the "
@@ -303,13 +297,13 @@ msgstr ""
 "verrouillage :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:151
-#, fuzzy
 msgid ""
 "If you accidentally place a tile somewhere you don't want it to be, you can "
 "delete it with ``RMB`` (the right mouse button) while in the tilemap editor."
 msgstr ""
 "Si vous placez accidentellement une tuile à un endroit que vous ne souhaitez "
-"pas, vous pouvez la supprimer avec ``RMB`` dans l'éditeur de plans de tuiles."
+"pas, vous pouvez la supprimer avec ``RMB`` (le bouton droit de la souris) "
+"dans l'éditeur de plans de tuiles."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:154
 msgid ""
@@ -349,7 +343,6 @@ msgstr ""
 "artefacts, comme suit :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:172
-#, fuzzy
 msgid ""
 "This is unavoidable, as it is the way the hardware bilinear filter works. To "
 "avoid this situation, there are a few workarounds. Try the one that looks "
@@ -371,7 +364,6 @@ msgstr ""
 "ressources)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:178
-#, fuzzy
 msgid ""
 "Enable pixel snap (Set ``Project > Project Settings > Rendering > Quality > "
 "2d > Use Pixel Snap`` to true; you can also search for ``Pixel Snap``)."
@@ -393,7 +385,6 @@ msgstr ""
 "point de départ."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:182
-#, fuzzy
 msgid ""
 "You can use a single, separate image for each tile. This will remove all "
 "artifacts, but can be more cumbersome to implement and is less optimized."

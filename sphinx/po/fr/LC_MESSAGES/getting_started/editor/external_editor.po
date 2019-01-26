@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Using an external text editor"
 msgstr "Utiliser un éditeur de texte externe"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
-#, fuzzy
 msgid ""
 "While Godot has an inbuilt text editor, some developers have a tendency to "
 "want to use a text editor they are familiar with. Godot provides this option "
@@ -41,10 +40,10 @@ msgid ""
 "allow you to better integrate the editor with Godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
-"Il y a deux champs: le chemin de l’exécutable et les lignes de commandes "
+"Il y a deux champs : le chemin de l’exécutable et les lignes de commandes "
 "d’exécution. Les lignes de commandes avec les drapeaux permettront de mieux "
 "intégrer l'éditeur avec Godot. Godot remplacera par les champs suivant les "
-"drapeaux:"
+"drapeaux :"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 #, fuzzy
@@ -103,37 +102,33 @@ msgid "Exec Flags"
 msgstr "Ligne de commande"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
-#, fuzzy
 msgid "Geany/Kate"
-msgstr "geany/kate"
+msgstr "Geany/Kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "{file} --line {line} --column {col}"
 msgstr "{file} --line {line} --column {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
-#, fuzzy
 msgid "Atom/Sublime Text"
-msgstr "atom/sublime text"
+msgstr "Atom/Sublime Text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "{file}:{line}"
 msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-#, fuzzy
 msgid "JetBrains Rider"
-msgstr "jetbrains rider"
+msgstr "JetBrains Rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "--line {line} {file}"
 msgstr "--line {line} {file}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
-#, fuzzy
 msgid "Visual Studio Code"
-msgstr "Visual Studio ou VS Code"
+msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "{project} --goto {file}:{line}:{col}"
-msgstr ""
+msgstr "{project} --goto {file}:{line}:{col}"

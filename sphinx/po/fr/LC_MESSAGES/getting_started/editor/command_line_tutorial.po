@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,26 +22,24 @@ msgid "Command line tutorial"
 msgstr "Tutoriel de ligne de commande"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
-#, fuzzy
 msgid ""
 "Some developers like using the command line extensively. Godot is designed "
 "to be friendly to them, so here are the steps for working entirely from the "
 "command line. Given the engine relies on almost no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
-"Certains développeurs aiment utiliser complémentairement la ligne de "
-"commande. Godot est conçu pour leur être agréable, alors voici les étapes "
-"pour travailler entièrement à partir de la ligne de commande. Étant donné "
-"que le moteur ne nécessite que peu ou pas de bibliothèques externes, les "
-"temps d’initialisation sont assez rapides, ce qui le rend adapté à cette "
-"méthode de travail."
+"Certains développeurs aiment beaucoup utiliser la ligne de commande. Godot "
+"est conçu pour leur être agréable, alors voici les étapes pour travailler "
+"entièrement à partir de la ligne de commande. Étant donné que le moteur ne "
+"nécessite que peu ou pas de bibliothèques externes, les temps "
+"d’initialisation sont assez rapides, ce qui le rend adapté à cette méthode "
+"de travail."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
 msgstr "Chemin"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
-#, fuzzy
 msgid ""
 "It is recommended that your Godot binary be in your PATH environment "
 "variable, so it can be executed easily from any place by typing ``godot``. "
@@ -110,13 +108,12 @@ msgid "Running the editor"
 msgstr "Exécution de l'éditeur"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:69
-#, fuzzy
 msgid ""
 "Running the editor is done by executing Godot with the ``-e`` flag. This "
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
-"L'exécution de l'éditeur se fait en exécutant godot avec le paramètre ``-"
+"L'exécution de l'éditeur se fait en exécutant Godot avec le paramètre ``-"
 "e``. Cela doit être fait depuis le répertoire du projet ou un sous-"
 "répertoire, sinon la commande est ignorée et le gestionnaire de projet "
 "apparaît."
@@ -169,7 +166,6 @@ msgid "Debugging"
 msgstr "Débogage"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:115
-#, fuzzy
 msgid ""
 "Catching errors in the command line can be a difficult task because they "
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,6 @@ msgstr ""
 "<doc_scripting <doc_scripting>` du tutoriel pas-à-pas."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:16
-#, fuzzy
 msgid ""
 "C# is a high-level programming language developed by Microsoft. In Godot, it "
 "is implemented with the Mono 5.x .NET framework, including full support for "
@@ -65,7 +64,7 @@ msgid ""
 "documentation."
 msgstr ""
 "C# est un langage de programmation de haut niveau développé par Microsoft. "
-"Dans Godot il est implémenté avec le framework Mono 5.2.NET incluant le "
+"Dans Godot il est implémenté avec le framework Mono 5.x.NET incluant le "
 "support complet pour C# 7.0. Mono est une implémentation open source du "
 "Framework.NET de Microsoft basé sur les standards ECMA pour C# et le Common "
 "Language Runtime. Un bon point de départ pour vérifier ses capacités est la "
@@ -90,12 +89,11 @@ msgid "Setup C# for Godot"
 msgstr "Configurer C# pour Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:27
-#, fuzzy
 msgid ""
 "Download and install the `Mono <http://www.mono-project.com/download/>`_ SDK."
 msgstr ""
-"Téléchargez et installez le SDK Android à partir de http://developer.android."
-"com/sdk/index.html"
+"Téléchargez et installez le SDK `Mono <http://www.mono-project.com/download/"
+">`_ ."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:29
 msgid "If you are using Godot 3.0.2, you must use Mono 5.4."
@@ -126,7 +124,6 @@ msgstr ""
 "accompagner l'installation de Mono."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:37
-#, fuzzy
 msgid ""
 "For instructions on installing older versions of Mono on Linux, see `this "
 "page <http://www.mono-project.com/docs/getting-started/install/linux/"
@@ -232,7 +229,6 @@ msgid "Project setup and workflow"
 msgstr "Mise en place du projet et flux de travail"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:73
-#, fuzzy
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
 "for your Godot project. This includes generating a C# solution (``.sln``) "
@@ -253,7 +249,6 @@ msgstr ""
 "laisser se régénérer."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:78
-#, fuzzy
 msgid ""
 "Note that currently, there are some issues where Godot and the C# project "
 "don't stay in sync; if you delete, rename or move things, like scripts or "
@@ -267,7 +262,6 @@ msgstr ""
 "la solution."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:81
-#, fuzzy
 msgid ""
 "Example: If you created a script (e.g. ``Test.cs``) and delete it in Godot, "
 "the compilation will fail because now the missing file is still expected to "
@@ -279,7 +273,7 @@ msgstr ""
 "le supprimez dans Godot, la compilation échouera parce que le fichier "
 "manquant est toujours attendu par le projet CS. Vous pouvez pour l'instant "
 "simplement ouvrir le ``.csproj`` et chercher ``ItemGroup``, il devrait y "
-"avoir une ligne incluse comme suit :"
+"avoir une ligne incluse comme ce qui suit :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
 msgid ""
@@ -417,19 +411,17 @@ msgstr ""
 "Selon quelques `benchmarks préliminaires <https://github.com/cart/godot3-"
 "bunnymark>`_, la performance du C# en Godot - bien que généralement du même "
 "ordre de grandeur - est approximativement **~4x** celle du GDScript dans "
-"certains cas naïfs. Pour des performances au top, le C++ est encore un peu "
+"certains cas naïfs. Pour des performances maximums, le C++ est encore un peu "
 "plus rapide ; les spécificités vont varier en fonction de votre cas "
 "d'utilisation. GDScript est probablement assez rapide pour la plupart des "
 "charges de travail des script en général. C# est plus rapide, mais nécessite "
 "une transformation des objets coûteuse lorsqu'on parle à Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:159
-#, fuzzy
 msgid "Using Nuget packages in Godot"
-msgstr "Utilisation de transformation 3D dans Godot"
+msgstr "Utilisation des packages Nuget dans Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:161
-#, fuzzy
 msgid ""
 "`Nuget <https://www.nuget.org/>`_ Packages can be installed and used with "
 "Godot, as with any project. Many IDEs (such as vs code) can add packages "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,6 @@ msgid "Animation Mode"
 msgstr "Modo Animación"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:57
-#, fuzzy
 msgid ""
 "Godot and Blender have different structure to store animation data. In Godot "
 "animation data is stored in an AnimationPlayer node, instead of in each "
@@ -122,7 +121,9 @@ msgid ""
 msgstr ""
 "Godot y Blender tienen una estructura diferente para almacenar datos de "
 "animación. En Godot los datos de animación se almacenan en un nodo "
-"AnimationPlayer, en lugar de en cada nodo animado."
+"AnimationPlayer, en lugar de en cada nodo animado. Para corregir esta "
+"inconsistencia y hacer que las animaciones sigan versátiles, este add-on "
+"tiene tres modos de exportar animaciones."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:64
 msgid "**Mode 'Animation as Actions'**"

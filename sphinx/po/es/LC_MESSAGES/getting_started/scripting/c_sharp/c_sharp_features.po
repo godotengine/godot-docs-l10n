@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Features"
 msgstr "Características"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
-#, fuzzy
 msgid ""
 "This page provides an overview of the commonly used features of both C# and "
 "Godot and how they are used together."
@@ -31,12 +30,10 @@ msgstr ""
 "utilizadas en C# y Godot y cómo son usadas."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:10
-#, fuzzy
 msgid "Type conversion and casting"
 msgstr "Conversión de tipo y casting"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
-#, fuzzy
 msgid ""
 "C# is a statically typed language. Therefore, you can't do the following:"
 msgstr ""
@@ -60,7 +57,6 @@ msgid "**Casting and Type Checking**"
 msgstr "**Casting & Chequeo de Tipo**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
-#, fuzzy
 msgid ""
 "Throws ``InvalidCastException`` if the returned node cannot be cast to "
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
@@ -75,7 +71,6 @@ msgid "**Using the AS operator**"
 msgstr "**Utilizando el operador AS**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
-#, fuzzy
 msgid ""
 "The ``as`` operator returns null if the node cannot be cast to Sprite, and "
 "for that reason, it cannot be used with value types."
@@ -116,14 +111,13 @@ msgid "**Type checking using the IS operator**"
 msgstr "**Chequeo de tipo usando el operador IS**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
-#, fuzzy
 msgid ""
 "To check if the node can be cast to Sprite, you can use the ``is`` operator. "
 "The ``is`` operator returns false if the node cannot be cast to Sprite, "
 "otherwise it returns true."
 msgstr ""
 "Para comprobar si un nodo puede ser convertido a Sprite, puedes usar el "
-"operador ``is``. El operador ``is`` retorna false si el nodo no puede ser "
+"operador ``is``. Este operador retorna false si el nodo no puede ser "
 "convertido a Sprite, de otro modo, retorna true."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:77
@@ -135,7 +129,6 @@ msgstr ""
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:82
-#, fuzzy
 msgid "C# signals"
 msgstr "Señales en C#"
 
@@ -183,7 +176,6 @@ msgstr ""
 "array."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:148
-#, fuzzy
 msgid ""
 "Signals support parameters and bound values of all the `built-in types "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,21 +26,19 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "File systems are yet another hot topic in engine development. The file "
 "system manages how the assets are stored and how they are accessed. A well-"
 "designed file system also allows multiple developers to edit the same source "
 "files and assets while collaborating."
 msgstr ""
-"Le système de fichier est également un des derniers sujets du développement "
-"du moteur. Le système de fichier gère la façon dont les assets sont stockés "
-"et comment ils sont accessibles. Un système bien prévu permet à plusieurs "
-"développeurs d'éditer les mêmes fichiers et assets lorsqu'ils collaborent "
-"ensembles."
+"Le système de fichier est également un des sujets importants du "
+"développement du moteur. Le système de fichier gère la façon dont les assets "
+"sont stockés et comment elles sont accessibles. Un système bien conçu permet "
+"à plusieurs développeurs d'éditer les mêmes fichiers et assets lorsqu'ils "
+"collaborent ensembles."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:14
-#, fuzzy
 msgid ""
 "Initial versions of the Godot engine (and previous iterations before it was "
 "named Godot) used a database. Assets were stored in it and assigned an ID. "
@@ -49,7 +47,7 @@ msgid ""
 "assets as files in the file system."
 msgstr ""
 "La version initiale du moteur de Godot (avant qu'il soit appelé Godot) "
-"utilisait une base de donnée. Les assets étaient stockés dedans et assigné à "
+"utilisait une base de donnée. Le assets étaient stockés dedans et assigné à "
 "un identifiant (ID). D'autres approches ont été essayées, comme des bases de "
 "données locales, des fichiers avec des métadonnées, etc. L'approche la plus "
 "simple l'a remporté et maintenant Godot stock ses assets sous formes de "
@@ -78,7 +76,6 @@ msgstr ""
 "de police est souvent comprise avec une police de caractère."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:30
-#, fuzzy
 msgid ""
 "In general, the Godot file system avoids using metadata files. The reason "
 "for this is simple, existing asset managers and VCSs are simply much better "
@@ -100,7 +97,6 @@ msgid "project.godot"
 msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:48
-#, fuzzy
 msgid ""
 "The project.godot file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
@@ -108,8 +104,8 @@ msgid ""
 msgstr ""
 "Le fichier project.godot est un fichier de description de projet, et il se "
 "trouve toujours à la racine du projet. En faite la localisation définie où "
-"la racine se situe. C'est le premier fichier que Godot va regarder pour "
-"ouvrir le projet."
+"la racine se situe. C'est le premier fichier que Godot va regarder quand il "
+"ouvre un projet."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
 msgid ""
@@ -236,7 +232,6 @@ msgstr ""
 "chemin compliqué ?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:108
-#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -247,14 +242,13 @@ msgid ""
 msgstr ""
 "Le second est que sous Windows et macOS, les fichiers et les chemins d'accès "
 "ne sont pas sensible à la casse. Si un développeur travaille dans un "
-"environnement non sensible à la casse et sauvegarde un asset \"MonFichier.PNG"
+"environnement non sensible à la casse et sauvegarde un asset \"monfichier.PNG"
 "\", mais le référence à \"monfichier.png\", cela marchera sur sa plateforme, "
 "mais pas sur d'autres plateforme tel que Linux, Android, etc. Cela peut "
 "également s'appliquer sur les fichiers binaires exportés, qui utilisent un "
 "paquet compressé pour stocker tous les fichiers."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:114
-#, fuzzy
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot! One simple fool-proof convention is to only "

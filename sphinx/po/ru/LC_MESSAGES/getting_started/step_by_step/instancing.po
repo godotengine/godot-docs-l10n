@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr "Инстанцирование (создание экземпляра)"
+msgstr "Instancing"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:7
 msgid "Introduction"
@@ -33,11 +33,11 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
-"Создание отдельной сцены и добавление узлов в нее может работать для "
-"небольших проектов, но по мере роста размера и сложности проекта количество "
-"узлов может быстро стать неуправляемым. Чтобы решить эту проблему, Godot "
-"позволяет разделить проект на любое количество сцен. Это дает вам мощный "
-"инструмент, который поможет вам организовать различные компоненты вашей игры."
+"Создание одной сцены и добавление узлов в нее может работать в небольших "
+"проектах, но по мере роста сложности проекта количество узлов может быстро "
+"стать огромным. Чтобы решить эту проблему, Godot позволяет разделить проект "
+"на любое количество сцен. Это дает вам мощный инструмент, который поможет "
+"вам организовать различные компоненты вашей игры."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
@@ -54,8 +54,8 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
-"Вы можете создать сколько угодно сцен и сохранить их на диск. Сцены, "
-"сохраненные таким образом, называются \"Упакованные Сцены\" и имеют "
+"Вы можете создать столько сцен, сколько хотите, и сохранить их на диск. "
+"Сцены, сохраненные таким образом, называются \"Packed Scenes и имеют "
 "расширение ``.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
@@ -69,8 +69,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
 msgstr ""
-"На вышеприведенной картинке Сцена B была добавлена в Сцену А в качестве "
-"экземпляра."
+"На вышеприведенном рисунке сцена В была добавлена в сцену А в качестве узла."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"

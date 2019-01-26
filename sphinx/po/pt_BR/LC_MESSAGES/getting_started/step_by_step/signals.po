@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,17 +139,16 @@ msgstr ""
 "de erro."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Method In Node\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"Em baixo da janela há um campo rotulado \"Method In Node\". Esse é o nome da "
-"função no nó script do nó alvo que você quer usar. Por padrão, Godot vai "
-"criar essa função usando a convenção de nomenclatura "
-"``_on_<nome_do_nó>_<nome_do_sinal>`` mas você pode mudá-lo se desejar."
+"Em baixo da janela há um campo rotulado \"Método no nó\". Esse é o nome da "
+"função no roteiro do nó alvo que você quer usar. Por padrão, Godot vai criar "
+"essa função usando a convenção de nomenclatura "
+"``_on_<node_name>_<signal_name>`` mas você pode mudá-lo se desejar."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:64
 msgid ""
@@ -174,20 +173,18 @@ msgstr ""
 "Você pode mudar a propriedade *Wait Time* do temporizador para alterar isso."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
-#, fuzzy
 msgid "Connecting signals in code"
 msgstr "Conectando sinais por código"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:112
-#, fuzzy
 msgid ""
 "You can also make the signal connection in code rather than with the editor. "
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
-"Você pode também pode fazer a conexão do sinal tanto em código quanto no "
-"editor. Isso é geralmente necessário quando você está instanciando nós via "
-"código e não pode usar o editor para fazer a conexão."
+"Você também pode fazer a conexão do sinal em código ao invés do editor. Isso "
+"é geralmente necessário quando você está instanciando nós via código e por "
+"isso não pode usar o editor para fazer a conexão."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid ""
@@ -198,7 +195,6 @@ msgstr ""
 "clicando em desconectar."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
-#, fuzzy
 msgid ""
 "To make the connection in code, we can use the ``connect`` function. We'll "
 "put it in ``_ready()`` so that the connection will be made on run. The "
@@ -207,14 +203,14 @@ msgid ""
 "connection:"
 msgstr ""
 "Para fazer a conexão por código, nós podemos usar a função ``connect``. Nós "
-"iremos colocá-la em ``_ready()`` então a conexão será feita ao rodar. A "
-"sintaxe da função é ``<nó_fonte>.connect(<nome_do_sinal>, <nó_alvo>, "
-"<nome_da_função_alvo>)``."
+"iremos colocá-la em ``_ready()`` para que a conexão sejá feita ao rodar. A "
+"sintaxe da função é ``<source_node>.connect(<signal_name>, <target_node>, "
+"<target_function_name>)``. Aqui está o código para nossa conexão com o "
+"Temporizador:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
-#, fuzzy
 msgid "Custom signals"
-msgstr "Iteradores personalizados"
+msgstr "Sinais personalizados"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
@@ -233,9 +229,8 @@ msgid "To emit a signal via code, use the ``emit`` function:"
 msgstr "Para emitir um sinal por código, use a função ``emit``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
-#, fuzzy
 msgid "Shooting example"
-msgstr "Alguns exemplos:"
+msgstr "Exemplo de Disparo"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:205
 msgid ""
@@ -258,7 +253,6 @@ msgstr ""
 "\"anexadas\" ao jogador enquanto ele gira:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
-#, fuzzy
 msgid ""
 "Instead, we need the bullets to be independent of the player's movement - "
 "once fired, they should continue traveling in a straight line and the player "
@@ -268,18 +262,17 @@ msgid ""
 "tree."
 msgstr ""
 "Ao contrário disso, nós precisamos que as balas sejam independentes do "
-"movimento do jogador - uma vez disparadas, elas devem continuar se "
-"movimentando em linha reta e o jogador não pode mais afetá-las. Invés de "
-"serem adicionadas a árvore da cena como anexo do jogador, faz mais sentido "
-"adicionar as balas como anexado da cena \"principal\" do jogo, que na qual o "
-"jogador pode ser anexo da mesma ou em uma hierarquia mais alta."
+"movimento do jogador - uma vez disparadas, elas devem continuar se movendo "
+"em linha reta e o jogador não pode mais afetá-las. Invés de serem "
+"adicionadas a árvore da cena como filha do jogador, faz mais sentido "
+"adicionar as balas como filha da cena \"principal\" do jogo, a qual deve ser "
+"o nó pai do jogador ou em uma hierarquia mais alta."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
 msgid "You could do this by adding the bullet directly:"
 msgstr "Você pode fazer isso adicionando a bala diretamente:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:234
-#, fuzzy
 msgid ""
 "However, this will lead to a different problem. Now if you try and test your "
 "\"Player\" scene independently, it will crash on shooting, because there is "
@@ -292,8 +285,8 @@ msgstr ""
 "isolada a cena \"Jogador\", haverá um crash ao atirar, pois não há um nó pai "
 "para acessar. Isso faz ficar muito mais difícil testar o seu código do "
 "player de forma isolada e isso também significa que se você quiser mudar a "
-"estrutura da sua cena principal, o pai do jogador não será mais um nó capaz "
-"de receber as balas."
+"estrutura da sua cena principal, o pai do jogador poderá não ser mais um nó "
+"capaz de receber as balas."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:241
 msgid ""

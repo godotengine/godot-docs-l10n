@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:4
-#, fuzzy
 msgid "Using 3D transforms"
-msgstr "Usando transformaciones 3D en Godot"
+msgstr "Usando transformaciones 3D"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:7
 msgid "Introduction"
@@ -76,7 +75,6 @@ msgstr ""
 "hacer frente a las transformaciones en la programación de juegos 3D."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:28
-#, fuzzy
 msgid "Problems of Euler angles"
 msgstr "Problemas de los ángulos de Euler"
 
@@ -89,7 +87,6 @@ msgstr ""
 "es que no resulta práctico."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:33
-#, fuzzy
 msgid "Axis order"
 msgstr "Orden de los ejes"
 
@@ -140,13 +137,12 @@ msgstr ""
 "Puede que te preguntes cómo te afecta esto. Veamos un ejemplo práctico:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:49
-#, fuzzy
 msgid ""
 "Imagine you are working on a first-person controller (e.g. an FPS game). "
 "Moving the mouse left and right controls your view angle parallel to the "
 "ground, while moving it up and down moves the player's view up and down."
 msgstr ""
-"Imagina que estás trabajando en un juego de control en primera persona "
+"Imagina que estás trabajando en el control de un juego en primera persona "
 "(FPS). Mover el ratón a la izquierda y a la derecha controla el ángulo de "
 "visión paralelo al suelo, mientras que moverlo hacia arriba y hacia abajo "
 "mueve la vista del jugador hacia arriba y hacia abajo."
@@ -235,7 +231,6 @@ msgstr ""
 "de este problema."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:80
-#, fuzzy
 msgid "Say no to Euler angles"
 msgstr "Di no a los ángulos de Euler"
 
@@ -259,7 +254,6 @@ msgstr ""
 "En cambio, hay una mejor manera de resolver estos problemas de rotación."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:87
-#, fuzzy
 msgid "Introducing transforms"
 msgstr "Introducción a Transforms"
 
@@ -282,7 +276,6 @@ msgstr ""
 "través de la propiedad ``global_transform``."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:93
-#, fuzzy
 msgid ""
 "A transform has a :ref:`class_Basis` (transform.basis sub-property), which "
 "consists of three :ref:`class_Vector3` vectors. These are accessed via the "
@@ -293,22 +286,22 @@ msgid ""
 "also be inferred from the length of the axes. A *basis* can also be "
 "interpreted as a 3x3 matrix and used as ``transform.basis[x][y]``."
 msgstr ""
-"Un transform tiene una :ref:`class_Basis` (sub-propiedad transform.basis), "
-"que consiste en tres vectores :ref:`class_Vector3`. Se accede a ellos a "
-"través de la propiedad ``transform.basis`` y se puede acceder a ellos "
-"directamente a través de ``transform.basis.x``, ``transform.basis.y ``, y "
-"``transformar.basis.z``. Cada vector apunta en la dirección en la que se ha "
-"girado cada eje, por lo que describe eficazmente la rotación total del nodo. "
-"La escala (siempre que sea uniforme) también se puede calcular a partir de "
-"la longitud de los ejes. Una *base* también puede ser interpretada como una "
-"matriz 3x3 y usada como ``transform.basis[x][y]``."
+"Un transform (o matriz de transformación) tiene una :ref:`class_Basis` (sub-"
+"propiedad transform.basis), que consiste en tres vectores :ref:"
+"`class_Vector3`. Se accede a ellos a través de la propiedad ``transform."
+"basis`` y se puede acceder a ellos directamente a través de ``transform."
+"basis.x``, ``transform.basis.y ``, y ``transformar.basis.z``. Cada vector "
+"apunta en la dirección en la que se ha girado cada eje, por lo que describe "
+"eficazmente la rotación total del nodo. La escala (siempre que sea uniforme) "
+"también se puede calcular a partir de la longitud de los ejes. Una *basis* "
+"también puede ser interpretada como una matriz 3x3 y usada como ``transform."
+"basis[x][y]``."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:95
 msgid "A default basis (unmodified) is akin to:"
 msgstr "Una base por defecto (sin modificar) es similar a:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:123
-#, fuzzy
 msgid "This is also an analog of a 3x3 identity matrix."
 msgstr "Esto también es similar a una matriz de identidad 3x3."
 
@@ -342,14 +335,13 @@ msgstr ""
 "mientras está en modo \"espacio local\"."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:136
-#, fuzzy
 msgid ""
 "The gizmo's arrows show the ``X``, ``Y``, and ``Z`` axes (in red, green, and "
 "blue respectively) of the basis, while the gizmo's center is at the object's "
 "origin."
 msgstr ""
 "Las flechas del Gizmo muestran los ejes ``X``. ``Y`` y ``Z`` (En rojo, "
-"verde, y azul respectivamente) de la base, mientras que el centro del Gizmo "
+"verde, y azul respectivamente) de la basis, mientras que el centro del Gizmo "
 "está en el origen del objeto."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:140
@@ -361,9 +353,8 @@ msgstr ""
 "por favor lee los tutoriales :ref:`doc_vector_math`."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:143
-#, fuzzy
 msgid "Manipulating transforms"
-msgstr "Manipular Transforms"
+msgstr "Manipulando Transforms"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:145
 msgid ""
@@ -390,7 +381,6 @@ msgid "This rotates the node relative to the parent node."
 msgstr "Esto rota el nodo relativo al nodo padre."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:183
-#, fuzzy
 msgid ""
 "To rotate relative to object space (the node's own transform), use the "
 "following:"
@@ -399,7 +389,6 @@ msgstr ""
 "del nodo) se utiliza lo siguiente:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:197
-#, fuzzy
 msgid "Precision errors"
 msgstr "Errores de precisión"
 
@@ -443,20 +432,18 @@ msgstr ""
 "transformación se perderá."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:216
-#, fuzzy
 msgid ""
 "It is recommended you not scale nodes that are going to be manipulated; "
 "scale their children nodes instead (such as MeshInstance). If you absolutely "
 "must scale the node, then re-apply it at the end:"
 msgstr ""
-"Se recomienda no escalar los nodos que van a ser manipulados. Escale los "
+"Se recomienda no escalar los nodos que van a ser manipulados. Escala los "
 "nodos hijos en su lugar (como MeshInstance). Si es absolutamente necesario "
 "escalar el nodo, se debe volver a aplicar al final:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:230
-#, fuzzy
 msgid "Obtaining information"
-msgstr "Obtener información"
+msgstr "Obteniendo información"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:232
 msgid ""
@@ -501,9 +488,8 @@ msgstr ""
 "vectores."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:306
-#, fuzzy
 msgid "Setting information"
-msgstr "Información de ajustes"
+msgstr "Asignando valores"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:308
 msgid ""
@@ -518,7 +504,6 @@ msgstr ""
 "que las transformaciones ocurran en un orden específico."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:310
-#, fuzzy
 msgid ""
 "For such cases, keep the angles and rotations *outside* the transform and "
 "set them every frame. Don't try to retrieve and re-use them because the "
@@ -541,9 +526,8 @@ msgstr ""
 "fuera, y luego usar el transform como orientación *final*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:358
-#, fuzzy
 msgid "Interpolating with quaternions"
-msgstr "Interpolación con Quaternions"
+msgstr "Interpolando con quaternions"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:360
 msgid ""
@@ -566,7 +550,6 @@ msgid "Converting a rotation to quaternion is straightforward."
 msgstr "Convertir una rotación a quaternion es sencillo."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:385
-#, fuzzy
 msgid ""
 "The :ref:`class_Quat` type reference has more information on the datatype "
 "(it can also do transform accumulation, transform points, etc., though this "
@@ -574,20 +557,19 @@ msgid ""
 "many times, keep in mind they need to be eventually normalized or they also "
 "may suffer from numerical precision errors."
 msgstr ""
-"La referencia de tipo :ref:`class_Quat` tiene más información sobre el tipo "
-"de datos (también es posible realizar acumulación de transformaciones, "
-"puntos de transformación, etc. aunque se utiliza con menos frecuencia). Si "
+"La referencia de :ref:`class_Quat` tiene más información sobre el tipo de "
+"datos (este tambien puede realizar acumulación de transformaciones, "
+"transformar puntos, etc. aunque se utiliza con menos frecuencia). Si "
 "interpolas o aplicas operaciones a quaternions muchas veces, ten en cuenta "
-"que necesitan ser eventualmente normalizadas o también pueden sufrir errores "
-"de precisión numérica."
+"que necesitarán ser normalizadas  eventualmente o también pueden sufrir "
+"errores de precisión numérica."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:387
-#, fuzzy
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
 msgstr ""
-"Los quaternions son útiles cuando se realizan interpolaciones cámara/"
+"Los quaternions son útiles cuando se realizan interpolaciones de cámara/"
 "trayectoria/etc., ya que el resultado será siempre correcto y suave."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:390

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,13 +201,12 @@ msgstr ""
 "leur texture à la scène."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:75
-#, fuzzy
 msgid ""
 ":ref:`Lights <class_Light2D>` have four ``Modes``: ``Add``, ``Sub``, "
 "``Mix``, and ``Mask``."
 msgstr ""
-":ref:`Lumières <class_Light2D>` ont quatre ``modes``: ``add``, ``sub``, "
-"``mix``, et ``mask``."
+":ref:`Lumières <class_Light2D>` ont quatre ``Modes``: ``Add``, ``Sub``, "
+"``Mix``, et ``Mask``."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:77
 msgid ""
@@ -360,7 +359,6 @@ msgstr ""
 "ref:`Éclairage <class_Light2D>`."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:133
-#, fuzzy
 msgid ""
 "At the time of writing, 3.0 is the stable release version. The 3.1 "
 "development branch contains many changes to the animation system, so the "
@@ -369,9 +367,8 @@ msgid ""
 msgstr ""
 "Au moment de la rédaction, 3.0 est la version stable. La branche de "
 "développement 3.1 contient de nombreuses modifications du système "
-"d’animation, Dès lors les animations de la démo ne seront pas traitées ici. "
-"Voir :ref:Introduction à l'Animation 2D. <doc_introduction_2d>  pour plus "
-"d'informations."
+"d’animation, dès lors les animations de la démo ne seront pas traitées ici. "
+"Voir :ref:`doc_introduction_2d_animation` pour plus d'informations."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:137
 msgid ""
@@ -460,7 +457,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:173
-#, fuzzy
 msgid ""
 "To illustrate the difference, here is an image of a :ref:`LightOccluder2D "
 "<class_LightOccluder2D>` with ``Closed`` set to ``off`` in the "
@@ -468,9 +464,9 @@ msgid ""
 "the lines of the polygon can be seen:"
 msgstr ""
 "Pour illustrer la différence, voici une image d'un :ref:`LightOccluder2D "
-"<class_LightOccluder2D>` avec ``Fermé`` défini sur ``Éteint`` dans le :ref:"
-"`OccluderPolygon2D <class_OccluderPolygon2D>` correspondant, de sorte que "
-"les lignes du polygone peuvent être vues :"
+"<class_LightOccluder2D>` avec ``Closed`` défini sur ``désactivé`` dans le :"
+"ref:`OccluderPolygon2D <class_OccluderPolygon2D>` correspondant, de sorte "
+"que les lignes du polygone peuvent être vues :"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:179
 msgid "``Cull Mode`` is set to ``Disabled``. All three lines cast shadows."
@@ -542,7 +538,6 @@ msgstr ""
 "``filtre lisse``."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:214
-#, fuzzy
 msgid ""
 "In order to make use of filtering you need to set the ``filter smooth`` "
 "variable. This dictates how far apart the samples are. If you want the soft "
@@ -553,7 +548,7 @@ msgstr ""
 "Pour utiliser le filtrage, vous devez définir la variable ``filtre lisse``. "
 "Cela dicte la distance qui sépare les échantillons. Si vous voulez que la "
 "zone souple s'étende assez loin, vous pouvez augmenter la taille de ``filtre "
-"lisse``. Cependant, avec des échantillons bas et un grand filtre lisse, vous "
+"lisse``. Cependant, avec peu d'échantillons et un grand filtre lisse, vous "
 "pouvez voir des lignes se former entre les échantillons."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:221

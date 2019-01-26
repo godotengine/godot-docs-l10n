@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -665,7 +665,7 @@ msgid ""
 "and RPC will work great! Here is an example:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:302
 msgid ""
 "Depending on when you execute pre_configure_game(), you may need to change "
 "any calls to ``add_child()`` to be deferred via ``call_deferred()``, as the "
@@ -673,11 +673,11 @@ msgid ""
 "is being called)."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:305
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:306
 msgid "Synchronizing game start"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:307
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:308
 msgid ""
 "Setting up players might take different amounts of time for every peer due "
 "to lag, different hardware, or other reasons. To make sure the game will "
@@ -685,17 +685,17 @@ msgid ""
 "are ready can be useful:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:316
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:317
 msgid ""
 "When the server gets the OK from all the peers, it can tell them to start, "
 "as for example:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:337
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:338
 msgid "Synchronizing the game"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:340
 msgid ""
 "In most games, the goal of multiplayer networking is that the game runs "
 "synchronized on all the peers playing it. Besides supplying an RPC and "
@@ -703,24 +703,24 @@ msgid ""
 "masters."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:344
 msgid "Network master"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:346
 msgid ""
 "The network master of a node is the peer that has the ultimate authority "
 "over it."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:348
 msgid ""
 "When not explicitly set, the network master is inherited from the parent "
 "node, which if not changed, is always going to be the server (ID 1). Thus "
 "the server has authority over all nodes by default."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:350
 msgid ""
 "The network master can be set with the function :ref:`Node."
 "set_network_master(id, recursive) <class_Node_method_set_network_master>` "
@@ -728,7 +728,7 @@ msgid ""
 "set on all child nodes of the node as well)."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:352
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:353
 msgid ""
 "Checking that a specific node instance on a peer is the network master for "
 "this node for all connected peers is done by calling :ref:`Node."
@@ -736,61 +736,61 @@ msgid ""
 "true when executed on the server and false on all client peers."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:354
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:355
 msgid ""
 "If you have paid attention to the previous example, it's possible you "
-"noticed that the local peer is set to have network master authority for "
-"their own player instead of the server:"
+"noticed that each peer was set to have network master authority for their "
+"own player (Node) instead of the server:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:373
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:375
 msgid ""
 "Each time this piece of code is executed on each peer, the peer makes itself "
 "master on the node it controls, and all other nodes remain as puppets with "
 "the server being their network master."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:375
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:377
 msgid ""
 "To clarify, here is an example of how this looks in the `bomber demo "
 "<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
 "multiplayer_bomber>`_:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:382
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:384
 msgid "Master and puppet keywords"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:388
 msgid ""
 "The real advantage of this model is when used with the `master`/`puppet` "
 "keywords in GDScript (or their equivalent in C# and Visual Script). "
 "Similarly to the `remote` keyword, functions can also be tagged with them:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:389
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:391
 msgid "Example bomb code:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:397
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:399
 msgid "Example player code:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:411
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:413
 msgid ""
 "In the above example, a bomb explodes somewhere (likely managed by whoever "
 "is master). The bomb knows the bodies in the area, so it checks them and "
 "checks that they contain an `exploded` function."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:414
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:416
 msgid ""
 "If they do, the bomb calls `exploded` on it. However, the `exploded` method "
 "in the player has a `master` keyword. This means that only the player who is "
 "master for that instance will actually get the function."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:419
 msgid ""
 "This instance, then, calls the `stun` method in the same instances of that "
 "same player (but in different peers), and only those which are set as "
@@ -798,7 +798,7 @@ msgid ""
 "current, master one)."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:420
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:422
 msgid ""
 "Note that you could also send the stun() message only to a specific player "
 "by using rpc_id(<id>, \"exploded\", bomb_owner). This may not make much "

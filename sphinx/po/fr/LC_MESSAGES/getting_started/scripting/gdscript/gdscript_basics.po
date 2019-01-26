@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
-#, fuzzy
 msgid "GDScript basics"
-msgstr "GDScript"
+msgstr "GDScript basics"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:7
 msgid "Introduction"
@@ -191,7 +190,6 @@ msgid "Keywords"
 msgstr "Mots-clés"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
-#, fuzzy
 msgid ""
 "The following is the list of keywords supported by the language. Since "
 "keywords are reserved words (tokens), they can't be used as identifiers. "
@@ -200,7 +198,9 @@ msgid ""
 msgstr ""
 "Ce qui suit est une liste de mots-clés supportés par le langage. Étant donné "
 "que les mots-clés sont des mots (symboles) réservés, il ne peuvent êtres "
-"utilisés comme identifiants."
+"utilisés comme identifiants. Les opérateurs (comme \" in \", \" not \", \" "
+"not \", \" and \" ou \" or \") et les noms des types intégrés énumérés dans "
+"les sections suivantes sont également réservés."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:156
 msgid ""
@@ -346,11 +346,12 @@ msgid "is"
 msgstr "is"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
-#, fuzzy
 msgid ""
 "Tests whether a variable extends a given class, or is of a given built-in "
 "type."
-msgstr "Teste si une variable étend une classe donnée."
+msgstr ""
+"Teste si une variable est du type d'une classe donnée, ou si elle est d'un "
+"type intégré donnée."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "as"
@@ -571,10 +572,9 @@ msgid "Operators"
 msgstr "Opérateurs"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:250
-#, fuzzy
 msgid "The following is the list of supported operators and their precedence."
 msgstr ""
-"Ce qui est suit est la liste des opérateurs supportés et leur précédence."
+"Ce qui est suit est la liste des opérateurs supportés et leur priorité."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
 msgid "**Operator**"
@@ -647,18 +647,16 @@ msgid "``+``"
 msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:273
-#, fuzzy
 msgid "Addition / Concatenation of Arrays"
-msgstr "Addition / Soustraction"
+msgstr "Addition / Concaténation de Tableaux"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:275
 msgid "``-``"
 msgstr "``-``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:275
-#, fuzzy
 msgid "Subtraction"
-msgstr "Addition / Soustraction"
+msgstr "Soustraction"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:277
 msgid "``<<`` ``>>``"
@@ -809,9 +807,8 @@ msgid "NodePath or StringName"
 msgstr "Chemin du nœud (NodePath) ou nom (StringName)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:318
-#, fuzzy
 msgid "``$NodePath``"
-msgstr "Chemin de la ressource"
+msgstr "``$NodePath``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:318
 msgid "Shorthand for ``get_node(\"NodePath\")``"
@@ -1107,7 +1104,6 @@ msgstr ""
 "Python, pour compter à partir de la fin."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:491
-#, fuzzy
 msgid ""
 "GDScript arrays are allocated linearly in memory for speed. Large arrays "
 "(more than tens of thousands of elements) may however cause memory "
@@ -1336,7 +1332,7 @@ msgid ""
 "with tree::"
 msgstr ""
 "La conversion de type est également utile pour avoir de meilleures variables "
-"de types sûrs en interagissant avec des arbres ::"
+"de types sûrs en interagissant avec des arbres :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:631
 msgid "Constants"
@@ -1357,7 +1353,7 @@ msgid ""
 msgstr ""
 "Même si le type des constantes est implicitement spécifié par la valeur "
 "assignée, il est également possible d'ajouter une spécification explicite du "
-"type::"
+"type :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:653
 msgid "Assigning a value of an incompatible type will raise an error."
@@ -1411,22 +1407,21 @@ msgstr ""
 "défaut est ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:699
-#, fuzzy
 msgid ""
 "Functions can also have type specification for the arguments and for the "
 "return value. Types for arguments can be added in a similar way to "
 "variables::"
 msgstr ""
 "Les fonctions peuvent également avoir une spécification de type pour les "
-"arguments et pour les valeurs de retour. Les types peuvent être ajoutés aux "
-"arguments de la même manière que pour les variables::"
+"arguments et pour les valeurs retournées. Les types peuvent être ajoutés aux "
+"arguments de la même manière que pour les variables :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:705
 msgid ""
 "If a function argument has a default value, it's possible to infer the type::"
 msgstr ""
 "Si l'argument d'une fonction a une valeur par défaut, il est possible "
-"d'inférer le type::"
+"d'inférer le type :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:710
 msgid ""
@@ -1434,7 +1429,7 @@ msgid ""
 "using the arrow token (``->``)::"
 msgstr ""
 "Le type de retour de la fonction peut être spécifié après la liste "
-"d'arguments en utilisant le jeton de flèche (``->``)::"
+"d'arguments en utilisant le jeton de flèche (``->``) :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:716
 msgid ""
@@ -1457,6 +1452,12 @@ msgid ""
 "``if`` block but not after it, the editor will raise an error because if the "
 "block is not executed, the function won't have a valid value to return."
 msgstr ""
+"Les fonctions non-vides doivent **toujours** retourner une valeur, donc si "
+"votre code a des instructions de branchement (comme une construction ``if`/"
+"`else```), tous les chemins possibles doivent avoir un retour. Par exemple, "
+"si vous avez un ``retour'' à l'intérieur d'un bloc ``si'' mais pas après, "
+"l'éditeur affichera une erreur car si le bloc n'est pas exécuté, la fonction "
+"n'aura pas de valeur valide à retourner."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:733
 msgid "Referencing Functions"
@@ -1485,7 +1486,6 @@ msgstr ""
 "en argument), il faut utiliser les aides ``call`` ou ``funcref``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:752
-#, fuzzy
 msgid ""
 "Remember that default functions, like  ``_init``, and most notifications, "
 "such as ``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, "
@@ -1494,17 +1494,16 @@ msgid ""
 msgstr ""
 "Rappelez-vous que les fonctions par défaut telles que ``_init``, et la "
 "plupart des notifications telles que ``_enter_tree``, ``_exit_tree``, "
-"``_process``, ``process``, ``_physics_process``, etc. sont appelées "
-"automatiquement dans toutes les classes de base. Il est donc uniquement "
-"nécessaire d'appeler la fonction explicitement lorsqu'elle est surchargée "
-"d'une manière ou d'une autre."
+"``_process``, ``_physics_process``, etc. sont appelées automatiquement dans "
+"toutes les classes de base. Il est donc uniquement nécessaire d'appeler la "
+"fonction explicitement lorsqu'elle est surchargée d'une manière ou d'une "
+"autre."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:760
 msgid "Static functions"
 msgstr "Fonctions statiques"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:762
-#, fuzzy
 msgid ""
 "A function can be declared static. When a function is static, it has no "
 "access to the instance member variables or ``self``. This is mainly useful "
@@ -1867,7 +1866,6 @@ msgid "Inheritance uses the ``extends`` keyword:"
 msgstr "L'héritage utilise le mot-clé ``extends`` :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1074
-#, fuzzy
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used:"
@@ -1931,7 +1929,6 @@ msgid "There are a few things to keep in mind here:"
 msgstr "Il y a plusieurs choses à garder à l'esprit ici :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
-#, fuzzy
 msgid ""
 "if the inherited class (``State.gd``) defines a ``_init`` constructor that "
 "takes arguments (``e`` in this case), then the inheriting class (``Idle."
@@ -2032,7 +2029,6 @@ msgstr ""
 "d'exportation (voir ci-dessous)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1217
-#, fuzzy
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
 "them visible and editable in the editor. This way, artists and game "
@@ -2041,7 +2037,7 @@ msgid ""
 msgstr ""
 "L'un des avantages fondamentaux de l'exportation des variables membres est "
 "de les rendre visibles et modifiables dans l'éditeur. De cette façon, les "
-"artistes et les concepteurs de jeux peuvent modifier les valeurs qui "
+"artistes et les game designers peuvent modifier les valeurs qui "
 "influenceront plus tard le fonctionnement du programme. Pour cela, une "
 "syntaxe spéciale d'exportation est fournie."
 
@@ -2102,7 +2098,6 @@ msgid "Exporting arrays"
 msgstr "Exportation de tableaux"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1338
-#, fuzzy
 msgid ""
 "Exporting arrays works, but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -2141,7 +2136,6 @@ msgstr ""
 "clé ``setget``. Il est utilisé directement après une définition de variable :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1387
-#, fuzzy
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -2184,7 +2178,6 @@ msgid "Tool mode"
 msgstr "Mode outil"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1433
-#, fuzzy
 msgid ""
 "Scripts, by default, don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
@@ -2248,7 +2241,6 @@ msgstr ""
 "`signal`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1478
-#, fuzzy
 msgid ""
 "These signals can be connected in the editor or from code like regular "
 "signals. Take the instance of a class where the signal was declared and "
@@ -2285,9 +2277,8 @@ msgstr ""
 "Object.emit_signal :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1525
-#, fuzzy
 msgid "Coroutines with yield"
-msgstr "Coroutines et signaux"
+msgstr "Coroutines avec yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1527
 #, fuzzy
@@ -2324,13 +2315,12 @@ msgid "Coroutines & signals"
 msgstr "Coroutines et signaux"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1584
-#, fuzzy
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples:"
 msgstr ""
-"La force réelle de l'utilisation du ``yield`` est lorsqu'il est combiné avec "
+"La force réelle de l'utilisation de ``yield`` est lorsqu'il est combiné avec "
 "des signaux. ``yield`` peut accepter deux paramètres, un objet et un signal. "
 "Lorsque le signal est reçu, l'exécution reprend. Voici quelques exemples :"
 

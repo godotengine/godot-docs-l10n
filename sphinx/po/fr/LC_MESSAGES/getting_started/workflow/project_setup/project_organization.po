@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,8 +38,9 @@ msgstr ""
 "Ce tutoriel a pour but de proposer une méthode simple d'organisation pour "
 "vos projets. Depuis que Godot permet au programmeur d'utiliser le système de "
 "fichier, trouver une façon d'organiser nos projets en tant que débutant peut "
-"être compliquée. Pour vous accompagner, une méthode simple et fonctionnelle "
-"est proposé."
+"être compliquée. Pour cette raison, le tutoriel décrit une méthode de "
+"travail simple, qui devrait fonctionner comme point de départ, qu'elle soit "
+"utilisé ou non."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
 #, fuzzy
@@ -55,7 +56,6 @@ msgid "Organization"
 msgstr "Organisation"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
-#, fuzzy
 msgid ""
 "Godot is scene-based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
@@ -73,14 +73,13 @@ msgstr ""
 "soit considérablement réduite."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:28
-#, fuzzy
 msgid ""
 "Considering that, the most common approach is to group assets as close to "
 "scenes as possible; when a project grows, it makes it more maintainable."
 msgstr ""
 "Compte tenu de cela, l'approche la plus courante consiste à regrouper les "
-"ressources à proximité des scènes car lorsqu'un projet se développe, il "
-"devient plus facile à gérer."
+"ressources à proximité des scènes, car lorsqu'un projet se développe, cette "
+"approche le rend plus facile à gérer."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:32
 #, fuzzy
@@ -99,7 +98,6 @@ msgid "Importing"
 msgstr "Importation"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:55
-#, fuzzy
 msgid ""
 "Godot versions prior to 3.0 did the import process from files outside the "
 "project. While this can be useful in large projects, it resulted in an "

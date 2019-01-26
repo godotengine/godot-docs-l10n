@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,7 +91,6 @@ msgstr ""
 "(Data)*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:40
-#, fuzzy
 msgid ""
 "*Sequence Ports* indicate the order in which operations are executed. "
 "Typically when a *Node* is done processing, it will go to the next node from "
@@ -154,7 +153,6 @@ msgstr ""
 "을 드래그 하는 것으로 이루어집니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:71
-#, fuzzy
 msgid ""
 "This may seem strange at first, but it happens because *Data Ports* are 1:N "
 "(A single output port can connect to many inputs), while *Sequence Ports* "
@@ -292,7 +290,6 @@ msgid "Right-clicking the variable allows you to configure its properties:"
 msgstr "우클릭으로 변수의 속성을 구성할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:147
-#, fuzzy
 msgid ""
 "As it can be seen above, the type and initial value of the variable can be "
 "changed, as well as some property hints. Ticking the \"Export\" option makes "
@@ -333,14 +330,12 @@ msgstr ""
 "다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:171
-#, fuzzy
 msgid ""
 "A signal can also be edited via the right-click menu to customize its "
 "arguments:"
 msgstr "우클릭 메뉴를 통해 시그널의 인수를 정의하도록 편집할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
-#, fuzzy
 msgid ""
 "The signal you have created will appear in the Inspector, along with the "
 "built-in node signals. This allows you to connect it from another script "
@@ -414,7 +409,6 @@ msgstr ""
 "로 유용합니다. 대부분 정수 또는 실수입니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:219
-#, fuzzy
 msgid ""
 "The first one is \"Constant\", which allows you to select any value of any "
 "type as constant, from an integer (42) to a String (\"Hello!\"). In general, "
@@ -436,7 +430,6 @@ msgstr ""
 "한 상수를 볼 수 있습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:224
-#, fuzzy
 msgid ""
 "The third one is MathConstant, which provides typical mathematical "
 "constants, such as PI, E, etc."
@@ -486,7 +479,6 @@ msgid "Engine Singleton"
 msgstr "엔진 싱글톤(Engine Singleton)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
-#, fuzzy
 msgid ""
 "Engine singletons are global interfaces (meaning they can be accessed "
 "without a reference; unlike Scene Nodes, they are always available). They "
@@ -537,6 +529,8 @@ msgid ""
 "node by dragging the actual node from the scene tree to the canvas (this "
 "will create it and configure it)."
 msgstr ""
+"단순히 트리에서 노드의 참조이지만, 씬 트리에서 실제 노드를 캔버스로 드래그 하"
+"여 그 노드를 더 쉽게 사용할 수 있습니다 (노드가 만들어지고 구성될 것입니다)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
@@ -549,10 +543,13 @@ msgid ""
 "nodes (or event the node itself that has the script) from the Scene Tree to "
 "the canvas for this."
 msgstr ""
+"드물긴 하지만, 씬 노드를 인수로 전달하고 싶을지도 모릅니다. 함수와 set/get 속"
+"성을 호출할 때, 혹은 이를 위해 씬 트리에서 캔버스로 노드를 드래그 할 때 (아니"
+"면 스크립트를 갖고 있는 노드에 이벤트를 줄 때) 사용될 수 있습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
-msgstr "SceneTree"
+msgstr "SceneTree(씬트리)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
 msgid ""
@@ -561,6 +558,9 @@ msgid ""
 "when the node is sitting in the scene and active, otherwise accessing it "
 "will return an error."
 msgstr ""
+"이 노드는 활성화된 씬을 갖고 있는 SceneTree를 참조한다는 점에서 싱글톤 노드"
+"와 비슷하지만, 오직 노드가 씬에 있고 활성화된 상태이어야만 작동합니다, 그렇"
+"지 않고 액세스하면 오류를 반환합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
 msgid ""
@@ -568,10 +568,12 @@ msgid ""
 "calling groups, make timers, or even load another scene. It's a good class "
 "to get familiar with."
 msgstr ""
+"SceneTree는 많은 로우 레벨 것들, 늘이기 설정, 그룹 호출, 타이머 만들기, 혹은 "
+"다른 씬 불러오기와 같은 것을 할 수 있습니다. 익숙해지기 좋은 클래스입니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
-msgstr ""
+msgstr "Preload(미리 불러오기)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
 msgid ""
@@ -579,6 +581,9 @@ msgid ""
 "resource loaded and ready to use. Rather than instancing the node, it's "
 "simpler to drag the desired resource from the filesystem dock to the canvas."
 msgstr ""
+"이것은 GDScript에서 preload()와 같은 함수입니다. 이 리소스가 불러와지고 사용"
+"할 준비인 상태를 유지합니다. 노드를 인스턴스 하는 대신, 더 쉽게 파일 시스템 "
+"독에서 원하는 리소스를 캔버스로 드래그 하면 됩니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
@@ -589,10 +594,12 @@ msgid ""
 "This node is a simple helper to get a string with a path to a resource you "
 "can pick. It's useful in functions that load things from disk."
 msgstr ""
+"이 노드는 선택할 수 있는 리소스에 대한 경로를 문자열로 가질 수 있게 하는 도우"
+"미입니다. 함수에서 디스크에서 리소스를 불러올 떄 유용합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
 msgid "Comment"
-msgstr ""
+msgstr "주석(Comment)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:315
 msgid ""
@@ -600,20 +607,25 @@ msgid ""
 "will not try to get focus or be brought to top when selecting it. It can "
 "also be used to write text on it."
 msgstr ""
+"주석 노드는 크기 조절을 할 수 있는 노드로 다른 노드 주변에 놓을 수 있습니다. "
+"그것은 눈에 띄지 않고 선택할 때 최상단으로 올라가지 않습니다. 또한 글자를 쓸 "
+"때 사용할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:322
 msgid "Flow Control"
-msgstr ""
+msgstr "Flow Control(흐름 제어)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:324
 msgid ""
 "Flow control nodes allow the execution to take different branches, usually "
 "depending on a given condition."
 msgstr ""
+"Flow Control 노드는 다른 지점으로 데려가 실행할 수 있게 하며, 보통은 주어진 "
+"조건에 따라 다릅니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
 msgid "Condition"
-msgstr "조건"
+msgstr "Condition(조건)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
 msgid ""
@@ -622,16 +634,22 @@ msgid ""
 "them, it goes via the \"done\" port. Leaving sequence ports disconnected is "
 "fine if not all of them are used."
 msgstr ""
+"불 포트를 확인하는 간단한 노드입니다. 참이라면, \"true\" 시퀀스 포트를 통해 "
+"갑니다. 거짓이라면, 두 번째로 갑니다. 둘 중 하나로 간 후, \"done\" 포트를 통"
+"해 갑니다. 모든 시퀀스 포트를 사용하지 않는다면 연결을 끊어 두는 것이 좋습니"
+"다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
-msgstr "반복자"
+msgstr "Iterator(반복자)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:341
 msgid ""
 "Some data types in Godot (ie, arrays, dictionaries) are iterable. This means "
 "that a bit of code can run for each element that it has."
 msgstr ""
+"Godot에서 일부 데이터 타입 (즉, 배열, 딕셔너리)은 반복이 가능합니다. 이는 약"
+"간의 코드로도 가지고 있는 각 요소를 실행할 수 있다는 것을 뜻합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:344
 msgid ""
@@ -639,34 +657,40 @@ msgid ""
 "via the \"each\" sequence port, making the element available in the \"elem\" "
 "data port."
 msgstr ""
+"Iterator 노드는 모든 요소를 거치면서, 그들 각각을 \"each\" 시퀀스 포트를 통"
+"해 갑니다, 그리고 \"elem\" 데이터 포트에서 요소를 사용할 수 있게 만듭니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:347
 msgid "When done, it goes via the \"exit\" sequence port."
-msgstr ""
+msgstr "끝나면, \"exit\" 시퀀스 포트를 통해 갑니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:351
 msgid "Return"
-msgstr "리턴"
+msgstr "Return(반환)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:353
 msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
 "add the Return node for you. A return node forces the function to end."
 msgstr ""
+"일부 함수는 값을 반환할 수 있습니다. 일반적으로 가상의 경우, Godot는 Return "
+"노드를 추가할 것입니다. Return 노드는 함수를 강제 종료합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
 msgid "Sequence"
-msgstr "시퀀스"
+msgstr "Sequence(시퀀스)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:360
 msgid ""
 "This node is useful mostly for organizing your graph. It calls its sequence "
 "ports in order."
 msgstr ""
+"이 노드는 그래프를 조직하는 대부분에 유용합니다. 이것은 시퀀스 포트를 순서대"
+"로 호출합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:364
 msgid "TypeCast"
-msgstr ""
+msgstr "TypeCast(타입캐스트)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:366
 msgid ""
@@ -674,22 +698,28 @@ msgid ""
 "other objects to the type you desire. Afterwards, you can even drag the "
 "object output to get full completion."
 msgstr ""
+"이것은 유용하며 일반적으로 사용되는 노드입니다. 인수나 다른 객체를 원하는 타"
+"입으로 캐스트할 때 이것을 사용할 수 있습니다. 나중에 객체 출력을 드래그 하여 "
+"완전 완료를 얻을 수 있습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:372
 msgid ""
 "It is also possible to cast to a script, which will allow complete script "
 "properties and functions:"
 msgstr ""
+"스크립트를 캐스트하는 것도 가능하여, 완전한 스크립트 속성과 함수를 갖게 합니"
+"다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:378
 msgid "Switch"
-msgstr "스위치"
+msgstr "Switch(스위치)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:380
 msgid ""
 "The Switch node is similar to the Condition node, but it matches many values "
 "at the same time."
 msgstr ""
+"Switch 노드는 Condition 노드와 비슷하지만, 많은 값을 동시에 맞춰봅니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
@@ -700,6 +730,8 @@ msgid ""
 "This is a more primitive form of iteration. \"repeat\" sequence output will "
 "be called as long as the condition in the \"cond\" data port is met."
 msgstr ""
+"반복의 더 원시적인 형태입니다. \"repeat\" 시퀀스 출력은 \"cond\" 데이터 포트"
+"가 충족되면 호출됩니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 msgid "Functions"
@@ -710,10 +742,12 @@ msgid ""
 "Functions are simple helpers, most of the time deterministic. They take some "
 "arguments as input and return an output. They are almost never sequenced."
 msgstr ""
+"함수는 단순한 도우미로 대부분은 결정론적 입니다. 몇 가지 인수를 입력으로 받아"
+"서 출력으로 반환합니다. 시퀀스는 거의 일어나지 않습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:398
 msgid "Built-In"
-msgstr ""
+msgstr "Built-In(내장)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
 msgid ""
@@ -722,10 +756,13 @@ msgid ""
 "mathematical functions, but others can be useful helpers. Make sure to take "
 "a look at the list at some point."
 msgstr ""
+"내장 도우미 목록입니다. GDScript와 거의 동일합니다 (@TODO, GDScript 메서드 링"
+"크?). 대부분은 수학적 함수지만, 어떤 것은 유용한 도우미입니다. 여러 시점으로 "
+"목록들을 살펴보세요."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
 msgid "By Type"
-msgstr ""
+msgstr "By Type(타입 별)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:408
 msgid ""
@@ -733,20 +770,25 @@ msgid ""
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
 "most cases just search the list of nodes, it should be faster."
 msgstr ""
+"기본 타입에서 이용할 수 있는 메서드들 입니다. 예를 들어, 내적을 원한다면, "
+"Vector3 카테고리 대신 \"dot\"을 검색할 수 있습니다. 대부분의 경우는 노드 목록"
+"을 검색하는 것이 더 빠릅니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid "Call"
-msgstr "호출"
+msgstr "Call(호출)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:415
 msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
 msgstr ""
+"일반적인 호출 노드입니다. 직접적으로 쓰이는 일은 거의 없고 이미 구성된 노드"
+"의 빈 공간으로 드래그 하여 사용됩니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid "Constructors"
-msgstr ""
+msgstr "Constructors(생성자)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:421
 msgid ""
@@ -754,40 +796,48 @@ msgid ""
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
 "be used."
 msgstr ""
+"Godot 기본 데이터 타입을 생성하는 데 필요한 모든 함수들 입니다. 예를 들어, 3"
+"개의 실수가 있는 Vector3를 생성한다면, Constructor가 사용되어야 합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid "Destructor"
-msgstr ""
+msgstr "Destructor(분해자)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:429
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
 msgstr ""
+"Constructor의 반대 성격으로, (Vector3와 같은) 기본 타입을 하위 원소로 분리합"
+"니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid "Emit Signal"
-msgstr ""
+msgstr "Emit Signal(시그널 방출)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:437
 msgid ""
 "Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
+"객체로부터 시그널을 방출합니다. 일반적으로 유용하지는 않고, 시그널을 캔버스"
+"로 드래그 하는 것이 더 잘 작동합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
 msgid "Get/Set"
-msgstr ""
+msgstr "Get/Set"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:443
 msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
+"일반적인 Getter/Setter 노드. 인스펙터에서 속성을 드래그 하고 드롭하면 잘 구성"
+"되면 더 잘 작동합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid "Wait"
-msgstr ""
+msgstr "Wait(기다림)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:449
 msgid ""
@@ -796,34 +846,40 @@ msgid ""
 "you to wait for a frame to pass, a fixed frame or a given amount of time "
 "until execution is resumed."
 msgstr ""
+"Wait 노드는 무슨 일이 발생할 때 까지 함수의 실행을 중지합니다 (사실 다시 시작"
+"할 때까지 많은 프레임이 지나갈 수 있습니다). 기본 노드는 실행이 재개될 때까"
+"지 1 프레임, 혹은 고정된 프레임, 아니면 고정된 시간을 기다릴 수 있습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid "Yield"
-msgstr ""
+msgstr "Yield"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:456
 msgid ""
 "This node completely suspends the execution of the script, and it will make "
 "the function return a value that can be used to resume execution."
 msgstr ""
+"이 노드는 스크립트의 실행을 완전히 중지하고, 함수가 실행을 재개하는 값을 반환"
+"하게 만듭니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Yield Signal"
-msgstr ""
+msgstr "Yield Signal(Yield 시그널)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:462
 msgid "Same as Yield, but will wait until a given signal is emitted."
-msgstr ""
+msgstr "Yield와 같지만, 주어진 시그널이 방출될 때까지 기다립니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
 msgid "Index"
-msgstr ""
+msgstr "Index(인덱스)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:468
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
 msgstr ""
+"일반적인 인덱스 연산자로, 자주 쓰이진 않지만 있다는 것은 좋은 일입니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
 msgid "Operators"
@@ -837,10 +893,14 @@ msgid ""
 "the operator). It is always recommended to set the right type for operators "
 "to catch errors faster and make the graph easier to read."
 msgstr ""
+"대개 일반적인 연산자들로, 덧셈, 곱셈, 비교 등이 있습니다. 기본적으로 이들은 "
+"대부분 모든 데이터 타입을 받아들입니다 (그리고 연산자가 예측한 타입이 입력한 "
+"타입과 맞지 않으면 런타임 시 오류가 발생합니다). 항상 오류를 빠르게 잡고 그래"
+"프를 읽기 쉽게 하기 위해 연산자에 맞는 타입을 설정하기를 추천합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid "Expression Node"
-msgstr ""
+msgstr "Expression Node(표현식 노드)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:485
 msgid ""
@@ -848,20 +908,25 @@ msgid ""
 "used, it allows you to enormously simplify visual scripts that are math or "
 "logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
+"연산자들 사이에서, *Expression* 노드는 가장 강력합니다. 잘만 쓴다면, 수학이"
+"나 논리로 무거워진 비주얼 스크립트를 엄청 간단하게 만들 수 있습니다. 표현식"
+"을 입력하면 실시간으로 실행됩니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid "Expression nodes can:"
-msgstr ""
+msgstr "Expression 노드는 가능합니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:490
 msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
 msgstr ""
+"커스텀 입력에 따라 수학 및 논리 표현식을 실행 (예:  \"a*5+b\"에서, a와 b는 커"
+"스텀 입력입니다):"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:495
 msgid "Access local variables or properties:"
-msgstr ""
+msgstr "로컬 변수나 속성을 액세스:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:500
 msgid ""
@@ -869,13 +934,15 @@ msgid ""
 "such as sin(),cos(),print(), as well as constructors, such as Vector3(x,y,z),"
 "Rect2(..), etc.:"
 msgstr ""
+"Vector3(x,y,z),Rect2(..) 등과 같은 Constructor나 sin(),cos(),print()와 같은 "
+"GDScript에서 사용할 수 있는 존재하는 내장 함수 대부분을 사용:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:505
 msgid "Call API functions:"
-msgstr ""
+msgstr "API 함수를 호출:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:510
 msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"
-msgstr ""
+msgstr "처리 순서를 따르는 경우에 더 적합한 시퀀스 모드를 사용:"

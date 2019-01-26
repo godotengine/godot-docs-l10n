@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,9 @@ msgid "To compile export templates for the Web, the following is required:"
 msgstr "要编译Web的导出模板，需要以下内容:"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:13
+#, fuzzy
 msgid ""
-"`Emscripten 1.37.9+ <http://kripken.github.io/emscripten-site>`__: If the "
+"`Emscripten 1.38.22+ <http://kripken.github.io/emscripten-site>`__: If the "
 "version available per package manager is not recent enough, the best "
 "alternative is to install using the `Emscripten SDK <http://kripken.github."
 "io/emscripten-site/docs/getting_started/downloads.html>`__"
@@ -77,6 +78,13 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:32
 msgid ""
+"On Windows, make sure to escape backslashes of paths within the Emscripten "
+"configuration file as double backslashes ``\\\\`` or use Unix-style paths "
+"with a single forward slash ``/``."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:36
+msgid ""
 "Open a terminal and navigate to the root directory of the engine source "
 "code. Then instruct SCons to build the JavaScript platform. Specify "
 "``target`` as either ``release`` for a release build or ``release_debug`` "
@@ -85,7 +93,7 @@ msgstr ""
 "打开终端并导航到引擎源代码的根目录。 然后指示SCons构建JavaScript平台。 将 "
 "``target`` 指定为发布版本的 ``release`` 或调试版本的``release_debug`` ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:39
+#: ../../docs/development/compiling/compiling_for_web.rst:43
 msgid ""
 "By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be "
 "built into the engine. Since ``eval()`` calls can be a security concern, the "
@@ -95,7 +103,7 @@ msgstr ""
 "于 ``eval()`` 调用可能是一个安全问题， ``javascript_eval`` 选项可用于构建而不"
 "需要单例::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:46
+#: ../../docs/development/compiling/compiling_for_web.rst:50
 msgid ""
 "The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
 "the resulting file will be placed in the ``bin`` subdirectory. Its name is "
@@ -106,21 +114,21 @@ msgstr ""
 "子目录中。 它的名字是``godot.javascript.opt.zip`` for release或``godot."
 "javascript.opt.debug.zip`` for debug。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:51
+#: ../../docs/development/compiling/compiling_for_web.rst:55
 msgid ""
 "Finally, rename the zip archive to ``webassembly_release.zip`` for the "
 "release template::"
 msgstr "最后，将zip存档重命名为 ``webassembly_release.zip`` 以获取发布模板::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:56
+#: ../../docs/development/compiling/compiling_for_web.rst:60
 msgid "And ``webassembly_debug.zip`` for the debug template::"
 msgstr "调试模板的``webassembly_debug.zip`` ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:61
+#: ../../docs/development/compiling/compiling_for_web.rst:65
 msgid "Building per asm.js translation or LLVM backend"
 msgstr "根据asm.js转换或LLVM后端构建"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:63
+#: ../../docs/development/compiling/compiling_for_web.rst:67
 msgid ""
 "WebAssembly can be compiled in two ways: The default is to first compile to "
 "asm.js, a highly optimizable subset of JavaScript, using Emscripten's "
@@ -133,30 +141,22 @@ msgstr ""
 "的工具将此代码转换为WebAssembly。 Emscripten会自动处理这两个进程，我们只需运"
 "行SCons。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:69
+#: ../../docs/development/compiling/compiling_for_web.rst:73
 msgid ""
-"The other method uses LLVM's WebAssembly backend. This backend is not yet "
-"available in release versions of LLVM, only in development builds built with "
-"``LLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly``. Compiling with this "
-"backend outputs files in LLVM's ``.s`` format, which is translated into "
-"actual WebAssembly using a tool called ``s2wasm``. Emscripten manages these "
-"processes as well, so we just invoke SCons."
+"The other method uses LLVM's WebAssembly backend. This backend is available "
+"starting with LLVM 8 or in development builds. Emscripten manages this "
+"process as well, so we just invoke SCons."
 msgstr ""
-"另一种方法使用LLVM的WebAssembly后端。 LLVM的发行版本中尚未提供此后端，仅在使"
-"用``LLVM_EXPERIMENTAL_TARGETS_TO_BUILD = WebAssembly``构建的开发版本中。 使用"
-"此后端进行编译以LLVM的 ``.s`` 格式输出文件，使用名为 ``s2wasm`` 的工具将其转"
-"换为实际的WebAssembly。 Emscripten也管理这些进程，因此我们只调用SCons。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:76
+#: ../../docs/development/compiling/compiling_for_web.rst:77
+#, fuzzy
 msgid ""
 "In order to choose one of the two methods, the ``LLVM_ROOT`` variable in the "
 "Emscripten configuration file is used. If it points to a directory "
 "containing binaries of Emscripten's *fastcomp* fork of clang, ``asm2wasm`` "
 "is used. This is the default in a normal Emscripten installation. Otherwise, "
-"LLVM binaries built with the WebAssembly backend will be expected and "
-"``s2wasm`` is used. On Windows, make sure to escape backslashes of paths "
-"within this file as double backslashes ``\\\\`` or use Unix-style paths with "
-"a single forward slash ``/``."
+"LLVM binaries built with the WebAssembly backend will be expected and the "
+"LLVM's WebAssembly backend is used."
 msgstr ""
 "为了选择两种方法中的一种，使用Emscripten配置文件中的``LLVM_ROOT``变量。 如果"
 "它指向包含Emscripten的* fastcomp * fork of clang的二进制文件的目录，则使用"

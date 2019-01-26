@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,21 +26,19 @@ msgid "Modules"
 msgstr "Modules"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
-#, fuzzy
 msgid ""
 "Godot allows extending the engine in a modular way. New modules can be "
 "created and then enabled/disabled. This allows for adding new engine "
 "functionality at every level without modifying the core, which can be split "
 "for use and reuse in different modules."
 msgstr ""
-"Godot permets d'étendre le moteur de façon modulaire. Les nouveaux modules "
-"peuvent être créer et être ensuite activer ou désactiver. Cela permets "
+"Godot permet d'étendre le moteur de façon modulaire. Les nouveaux modules "
+"peuvent être créés et être ensuite activés ou désactivés. Cela permet "
 "d'ajouter de nouvelles fonctionnalités au moteur à chaque niveau sans "
-"modifier le cœur du moteur , qui peuvent être découpé pour l’utilisation et "
-"la réutilisation dans d'autres modules."
+"modifier le cœur du moteur , qui peuvent être découpées pour l’utilisation "
+"et la réutilisation dans d'autres modules."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:14
-#, fuzzy
 msgid ""
 "Modules are located in the ``modules/`` subdirectory of the build system. By "
 "default, many different modules exist, such as GDScript (which, yes, is not "
@@ -60,7 +58,6 @@ msgid "What for?"
 msgstr "Pourquoi ?"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:24
-#, fuzzy
 msgid ""
 "While it's recommended that most of a game is written in scripting (as it is "
 "an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
@@ -104,7 +101,6 @@ msgstr ""
 "sujet."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:40
-#, fuzzy
 msgid ""
 "To create a new module, the first step is creating a directory inside "
 "``modules/``. If you want to maintain the module separately, you can "
@@ -115,47 +111,42 @@ msgstr ""
 "mettre en place un système de gestion de versions dans modules."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:44
-#, fuzzy
 msgid ""
 "The example module will be called \"summator\", and is placed inside the "
 "Godot source tree (``C:\\godot`` refers to wherever the Godot sources are "
 "located):"
 msgstr ""
-"Le module d'exemple sera nommée \"summator\", et placé dans le répertoire du "
-"code source."
+"Le module d'exemple sera appelé \"summator\", et est placé à l'intérieur de "
+"l'arbre des sources Godot (``C:\\godot`` fait référence à l'endroit où les "
+"sources Godot sont situées) :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:55
-#, fuzzy
 msgid "Inside we will create a simple summator class:"
-msgstr "On va créer dans le fichier en-tête (h) une classe summator :"
+msgstr "À l'intérieur, nous allons créer une classe simple de summator :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:83
-#, fuzzy
 msgid "And then the cpp file."
-msgstr "Et dans le fichier source (cpp)."
+msgstr "Et puis le fichier cpp."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:117
-#, fuzzy
 msgid ""
 "Then, the new class needs to be registered somehow, so two more files need "
 "to be created:"
 msgstr ""
-"Il faut maintenant enregistrer cette nouvelle classe pour qu'elle soit "
-"accessible par Godot, avec deux nouveaux fichiers :"
+"Ensuite, la nouvelle classe doit être enregistrée d'une manière ou d'une "
+"autre, deux fichiers supplémentaires doivent être créés :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:125
-#, fuzzy
 msgid "With the following contents:"
 msgstr "Avec les éléments suivants :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:153
-#, fuzzy
 msgid ""
 "Next, we need to create a ``SCsub`` file so the build system compiles this "
 "module:"
 msgstr ""
-"Ensuite, il faut créer un fichier ``SCsub`` pour que SCons compile ce "
-"module :"
+"Ensuite, nous devons créer un fichier ``SCsub`` pour que le système de "
+"compilation compile ce module :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:163
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,12 +35,11 @@ msgid "Type conversion and casting"
 msgstr "Conversion de type et Casting"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
-#, fuzzy
 msgid ""
 "C# is a statically typed language. Therefore, you can't do the following:"
 msgstr ""
-"C# est un langage à typage statique. Par conséquent, ce qui suit n'est pas "
-"possible :"
+"C# est un langage à typage statique. Par conséquent, vous ne pouvez pas "
+"faire ce qui suit :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:19
 msgid ""
@@ -85,9 +84,8 @@ msgstr ""
 "valeurs."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:45
-#, fuzzy
 msgid "**Using the generic methods**"
-msgstr "**Utilisation de l'opérateur AS**"
+msgstr "**Utilisation des méthodes génériques**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid ""
@@ -105,14 +103,12 @@ msgstr ""
 "``InvalidCastException`` si le nœud ne peut pas être converti au type désiré."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:56
-#, fuzzy
 msgid ""
 "``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
 "the node cannot be cast to the desired type."
 msgstr ""
-"L'opérateur ``as`` retourne null si le nœud ne peut pas être casté en "
-"Sprite, et pour cette raison il ne peut pas être utilisé avec les types de "
-"valeurs."
+"GetNodeOrNull<T>T>()`` utilise l'opérateur ``as`` et retourne ``null`` si le "
+"nœud ne peut pas être converti au type désiré."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:64
 msgid "**Type checking using the IS operator**"

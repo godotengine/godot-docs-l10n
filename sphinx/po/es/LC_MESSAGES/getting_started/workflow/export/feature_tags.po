@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
-#, fuzzy
 msgid "Feature tags"
 msgstr "Etiquetas de características"
 
@@ -27,7 +26,6 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:9
-#, fuzzy
 msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
 "is represented as a string, which can refer to many of the following:"
@@ -79,7 +77,6 @@ msgid "Default features"
 msgstr "Características por defecto"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:30
-#, fuzzy
 msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are **case-"
 "sensitive**:"
@@ -88,7 +85,6 @@ msgstr ""
 "Godot. Tenga en cuenta que son *sensibles a mayúsculas y minúsculas*:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
-#, fuzzy
 msgid "**Feature tag**"
 msgstr "**Etiquetas de características**"
 
@@ -321,18 +317,16 @@ msgid "Overriding project settings"
 msgstr "Sobrescribir los ajustes del proyecto"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
-#, fuzzy
 msgid ""
 "Features can be used to override specific configuration values in the "
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
-"Las funciones se pueden utilizar para sobrescribir valores de configuración "
-"específicos en los\" Ajustes del proyecto\". Esto permite personalizar mejor "
-"cualquier configuración al hacer una compilación."
+"Las características se pueden utilizar para sobrescribir valores de "
+"configuración específicos en los\" Ajustes del proyecto\". Esto permite "
+"personalizar mejor cualquier configuración al hacer una compilación."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
-#, fuzzy
 msgid ""
 "In the following example, a different icon is added for the demo build of "
 "the game (which was customized in a special export preset, which, in turn, "
@@ -353,21 +347,18 @@ msgid "Default overrides"
 msgstr "Sobreescritura de valores por defecto"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:115
-#, fuzzy
 msgid ""
 "There are already a lot of settings that come with overrides by default; "
 "they can be found in many sections of the project settings."
 msgstr ""
 "Ya hay muchos ajustes que vienen con sobreescrituras por defecto, se pueden "
-"encontrar en muchas secciones de los ajustes del proyecto."
+"encontrar en las secciones de los ajustes del proyecto."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:121
-#, fuzzy
 msgid "Customizing the build"
 msgstr "Personalización de la Compilación"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:123
-#, fuzzy
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
 "custom **ExportPlugin**. They are also used to specify which shared library "

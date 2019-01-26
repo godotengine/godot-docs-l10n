@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,18 +45,17 @@ msgstr ""
 "actives une fois entrée dans *l'arbre de scène*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
-#, fuzzy
 msgid ""
 "This concept deserves going into a little more detail. In fact, the scene "
 "system is not even a core component of Godot as it is possible to skip it "
 "and write a script (or C++ code) that talks directly to the servers, but "
 "making a game that way would be a lot of work."
 msgstr ""
-"Ce concept nécessite de se pencher dessus dans le détail. En fait, le "
-"système de gestion de scènes ne fait même pas partie des composants de base "
-"de Godot car il est possible de ne pas s'en occuper et d'écrire un script "
+"Ce concept mérite de se pencher dessus dans le détail. En fait, le système "
+"de gestion de scènes ne fait même pas partie des composants de base de Godot "
+"car il est possible de ne pas s'en occuper et d'écrire un script "
 "(éventuellement du code C++) qui discute directement avec les serveurs, mais "
-"fabriquer un jeu de cette façon demandrait beaucoup de travail."
+"fabriquer un jeu de cette façon demanderait beaucoup de travail."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:22
 msgid "MainLoop"
@@ -107,8 +106,9 @@ msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
-"Le fonctionnement de Godot peut être décrit comme un moteur de jeu haut "
-"niveau par dessus un middleware bas-niveau."
+"L'un des manières d'expliquer comment Godot fonctionne est qu'il est un "
+"moteur de jeu de haut niveau, construit par-dessus un middleware de bas "
+"niveau."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
@@ -147,8 +147,8 @@ msgid ""
 msgstr ""
 "Elle contient la racine :ref:`Viewport <class_Viewport>`, à laquelle une "
 "scène est ajoutée en tant qu'enfant lorsqu'elle est ouverte pour la première "
-"fois, afin d'appartenir à l'arborescence de scène (*Scene Tree*) (plus "
-"d'informations sur ça par la suite)"
+"fois, afin de faire partie de l'arborescence de scène (*Scene Tree*) (plus "
+"d'informations là-dessus par la suite)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:60
 msgid ""
@@ -167,7 +167,6 @@ msgstr ""
 "mode pause ou l'abandon du processus."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
-#, fuzzy
 msgid ""
 "When a node is part of the Scene Tree, the :ref:`SceneTree "
 "<class_SceneTree>` singleton can be obtained by simply calling :ref:`Node."
@@ -190,7 +189,6 @@ msgstr ""
 "A partir d'un nœud, elle peut être obtenu de deux manières différentes :"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
-#, fuzzy
 msgid ""
 "This node contains the main viewport, anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
@@ -226,7 +224,6 @@ msgstr ""
 "il fait partie de l'arborescence des scènes."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:103
-#, fuzzy
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
@@ -252,7 +249,6 @@ msgid "Tree order"
 msgstr "Ordre de l'arborescence"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
-#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
@@ -274,7 +270,6 @@ msgid "A scene is loaded from disk or created by scripting."
 msgstr "Une scène est chargée à partir du disque ou créée par un script."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:127
-#, fuzzy
 msgid ""
 "The root node of that scene (only one root, remember?) is added as either a "
 "child of the \"root\" Viewport (from SceneTree), or to any child or "

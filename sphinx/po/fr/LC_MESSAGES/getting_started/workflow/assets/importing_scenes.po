@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,6 @@ msgid "Why not FBX?"
 msgstr "Pourquoi pas FBX ?"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:25
-#, fuzzy
 msgid ""
 "Most game engines use the FBX format for importing 3D scenes, which is "
 "definitely one of the most standardized in the industry. However, this "
@@ -87,10 +86,10 @@ msgid ""
 "distributed with more restrictive licensing terms than Godot."
 msgstr ""
 "La plupart des moteurs de jeu utilisent le format FBX pour importer des "
-"scènes 3D, ce qui est sans aucun doute l'un des plus standardisés du "
-"secteur. Cependant, ce format nécessite l'utilisation d'une bibliothèque "
-"fermée d'Autodesk qui est distribuée avec des termes de licence plus "
-"restrictifs que ceux de Godot."
+"scènes 3D, qui est sans aucun doute l'un des plus standardisés du secteur. "
+"Cependant, ce format nécessite l'utilisation d'une bibliothèque fermée "
+"d'Autodesk qui est distribuée avec des termes de licence plus restrictifs "
+"que ceux de Godot."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:30
 msgid ""
@@ -105,7 +104,6 @@ msgid "Exporting DAE files from Maya and 3DS Max"
 msgstr "Exportation de fichiers DAE de Maya et de 3DS Max"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:35
-#, fuzzy
 msgid ""
 "Autodesk added built-in COLLADA support to Maya and 3DS Max, but it's broken "
 "by default and should not be used. The best way to export this format is by "
@@ -113,7 +111,7 @@ msgid ""
 "OpenCOLLADA-Tools>`__ plugins. They work well, although they are not always "
 "up-to date with the latest version of the software."
 msgstr ""
-"Autodesk a ajouté le support collada intégré à Maya et 3DS Max, mais il est "
+"Autodesk a ajouté le support COLLADA intégré à Maya et 3DS Max, mais il est "
 "inopérant par défaut et ne doit pas être utilisé. La meilleure façon "
 "d'exporter ce format est d'utiliser les extensions `OpenCollada <https://"
 "github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`__. Elles "
@@ -141,12 +139,10 @@ msgstr ""
 "exporter>`__ qui fera un bien meilleur travail d'exportation des scènes."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:53
-#, fuzzy
 msgid "Exporting ESCN files from Blender"
-msgstr "Exportation de fichiers DAE de Blender"
+msgstr "Exportation de fichiers ESCN depuis Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
-#, fuzzy
 msgid ""
 "The most powerful one, called `godot-blender-exporter <https://github.com/"
 "godotengine/godot-blender-exporter>`__. It uses a .escn file, which is kind "
@@ -159,7 +155,6 @@ msgstr ""
 "conserve autant d'informations que possible à partir d'une scène Blender."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
-#, fuzzy
 msgid ""
 "The ESCN exporter has a detailed `document <escn_exporter/index.html>`__ "
 "describing its functionality and usage."
@@ -273,20 +268,18 @@ msgstr ""
 "les choses amusantes avec la géométrie, etc."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
-#, fuzzy
 msgid "Create a script like this:"
 msgstr "Créez un script comme celui-ci :"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:117
-#, fuzzy
 msgid ""
 "The ``post_import`` function takes the imported scene as argument (the "
 "parameter is actually the root node of the scene). The scene that will "
 "finally be used must be returned. It can be a different one."
 msgstr ""
-"La fonction post-importation prend la scène importée comme argument (le "
+"La fonction ``post_import`` prend la scène importée comme argument (le "
 "paramètre est en fait le nœud racine de la scène). La scène qui sera "
-"finalement utilisée doit être retournée. Ça peut être une différente."
+"finalement utilisée doit être retournée. Cela peut en être une différente."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:122
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:141
@@ -350,7 +343,6 @@ msgstr ""
 "scène source sera modifiée et réimportée."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:151
-#, fuzzy
 msgid "Keep On Reimport"
 msgstr "Continuer à réimporter"
 
@@ -486,7 +478,6 @@ msgstr ""
 "tableaux ci-dessus, ç-à-d. qu’il numérote les vertex et les normales."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:182
-#, fuzzy
 msgid ""
 "In some cases, this might lead to loss of precision, so disabling this "
 "option may be needed. For instance, if a mesh is very big or there are "
@@ -496,7 +487,7 @@ msgid ""
 msgstr ""
 "Dans certains cas, cela peut entraîner une perte de précision. Il peut donc "
 "être nécessaire de désactiver cette option. Par exemple, si un maillage est "
-"très grand ou que plusieurs maillages sont importés et couvrent une grande "
+"très grand ou que plusieurs maillages sont importés couvrant une grande "
 "surface, la compression de l’importation de ce maillage risque d’entraîner "
 "des lacunes dans la géométrie ou des sommets qui ne se trouvent pas "
 "exactement où ils devraient être."
@@ -561,11 +552,11 @@ msgid ""
 "Others, such as 3DS Max or Maya, need many animations put into the same "
 "timeline or, at worst, put each animation in a separate file."
 msgstr ""
-"Godot fournit de nombreuses options relativement à la manière dont les "
-"données d'animation sont traitées. Certains exportateurs (tels que Blender), "
-"peuvent générer de nombreuses animations dans un seul fichier. D'autres, "
-"tels que 3DS Max ou Maya, nécessitent de nombreuses animations placées dans "
-"la même ligne de temps ou, au pire, placent chaque animation dans un fichier "
+"Godot fournit de nombreuses options relatives à la manière dont les données "
+"d'animation sont traitées. Certains exportateurs (tels que Blender), peuvent "
+"générer de nombreuses animations dans un seul fichier. D'autres, tels que "
+"3DS Max ou Maya, nécessitent de nombreuses animations placées dans la même "
+"ligne de temps ou, au pire, placent chaque animation dans un fichier "
 "distinct."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:220
@@ -620,7 +611,6 @@ msgid "Optimizer"
 msgstr "Optimiseur"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
-#, fuzzy
 msgid ""
 "When animations are imported, an optimizer is run, which reduces the size of "
 "the animation considerably. In general, this should always be turned on "
@@ -652,7 +642,6 @@ msgid "Scene inheritance"
 msgstr "Héritage de scène"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:256
-#, fuzzy
 msgid ""
 "In many cases, it may be desired to make modifications to the imported "
 "scene. By default, this is not possible because if the source asset changes "
@@ -665,7 +654,6 @@ msgstr ""
 "d'une application de modélisation 3D), Godot réimporte la scène entière."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:259
-#, fuzzy
 msgid ""
 "It is possible, however, to make local modifications by using *Scene "
 "Inheritance*. Try to open the imported scene and the following dialog will "
@@ -792,7 +780,6 @@ msgstr ""
 "d'une :ref:`class_concavepolygonshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
-#, fuzzy
 msgid ""
 "Option \"-colonly\" can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
@@ -801,8 +788,8 @@ msgid ""
 msgstr ""
 "L'option \"-colonly\" peut également être utilisée avec les objets vides de "
 "Blender. Lors de l'importation, il créera un :ref:`class_staticbody` avec un "
-"noeud de collision en tant qu'enfant. Le noeud Collision aura une des formes "
-"prédéfinies, en fonction du type de dessin vide du Blender :"
+"nœud collision en tant qu'enfant. Le nœud collision aura une des formes "
+"prédéfinies, en fonction du type de dessin vide de Blender :"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:312
 #, fuzzy
@@ -814,12 +801,10 @@ msgid "Cube will create a :ref:`class_boxshape`"
 msgstr "Un cube créera une :ref:`class_boxshape`"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:314
-#, fuzzy
 msgid "Image will create a :ref:`class_planeshape`"
 msgstr "Une image créera une :ref:`class_planeshape`"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:315
-#, fuzzy
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`"
 msgstr "Sphère (et autres non listés) va créer :ref:`class_sphereshape`"

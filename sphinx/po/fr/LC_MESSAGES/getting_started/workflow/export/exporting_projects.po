@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,19 +51,16 @@ msgid "On PC"
 msgstr "Sur PC"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:22
-#, fuzzy
 msgid ""
 "Distributing a game project on PC with Godot is rather easy. Drop the Godot "
 "binary in the same directory as the ``project.godot`` file, then compress "
 "the project directory and you are done."
 msgstr ""
-"Distribuer un projet de jeu sur PC avec Godot est assez facile. Il suffit de "
-"déposer le binaire godot.exe (ou godot) au même endroit que le fichier "
-"engine.cfg, de le zipper et c'est terminé. Ceci peut être utilisé pour faire "
-"des installateurs personnalisés."
+"Distribuer un projet de jeu sur PC avec Godot est assez facile. Déposez le "
+"binaire Godot dans le même répertoire que le fichier ``project.godot``, puis "
+"compressez le répertoire du projet et vous avez terminé."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:26
-#, fuzzy
 msgid ""
 "It sounds simple, but there are probably a few reasons why the developer may "
 "not want to do this. The first one is that it may not be desirable to "
@@ -78,7 +75,10 @@ msgstr ""
 "qu'il peut ne pas être souhaitable de distribuer des quantités de fichiers. "
 "Certains développeurs peuvent ne pas aimer que les utilisateurs curieux "
 "jettent un coup d'œil à la façon dont le jeu a été créé, d'autres peuvent "
-"simplement le trouver inélégant, etc."
+"simplement le trouver inélégant, etc. Une autre raison est que le "
+"développeur peut préférer un binaire spécialement compilé, qui est de taille "
+"plus petite, plus optimisé et n'inclut pas d'outils comme l'éditeur et le "
+"débogueur."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:34
 msgid ""
@@ -99,9 +99,10 @@ msgid ""
 "project on those devices, a binary for each of those platforms is built, "
 "then added to a native project together with the game data."
 msgstr ""
-"Le même scénario dans le mobile est légèrement pire. Pour distribuer un "
-"projet dans ces appareils, un binaire pour chacune de ces plates-formes est "
-"construit, puis ajouté à un projet natif avec les données du jeu."
+"Le même scénario sur les plates-formes mobiles est légèrement pire. Pour "
+"distribuer un projet sur ces appareils, un binaire pour chacune de ces "
+"plates-formes est construit, puis ajouté à un projet natif avec les données "
+"du jeu."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid ""
@@ -116,7 +117,6 @@ msgstr ""
 "peut être frustrant d'être forcé de le faire à un moment non désiré."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:50
-#, fuzzy
 msgid ""
 "There is also another problem with this approach: different devices prefer "
 "some data in different formats to run. The main example of this is texture "
@@ -147,32 +147,29 @@ msgstr ""
 "plates-formes prises en charge continuent de croître."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
-#, fuzzy
 msgid "To open the export menu, click the **Export** button:"
 msgstr ""
 "Pour ouvrir le menu d'exportation, cliquez sur le bouton \"Exporter\" :"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
-#, fuzzy
 msgid ""
 "The export menu will open. However, it will be completely empty. This is "
 "because we need to add an export preset."
-msgstr "Le menu d'exportation s'ouvrira, mais il sera complètement vide."
+msgstr ""
+"Le menu d'exportation s'ouvrira, mais il sera complètement vide. C'est parce "
+"que nous avons besoin d'ajouter un préréglage d'exportation."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:73
-#, fuzzy
 msgid ""
 "To create an export preset, click the **Add…** button at the top of the "
 "export menu. This will open a drop-down list of platforms to choose from for "
 "an export preset."
 msgstr ""
-"C'est parce que nous devons ajouter un préréglage d'exportation. Pour ce "
-"faire, cliquez sur le bouton `Ajouter...` en haut du menu d'exportation. "
-"Cela ouvrira une liste déroulante de plates-formes pour lesquelles choisir "
-"un préréglage d'exportation."
+"Pour créer un préréglage d'exportation, cliquez sur le bouton **Ajouter...** "
+"en haut du menu d'exportation. Cela ouvrira une liste déroulante de plates-"
+"formes parmi lesquelles choisir pour un préréglage d'exportation."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:79
-#, fuzzy
 msgid ""
 "The default options are often enough to export, so tweaking them is usually "
 "not necessary. However, many platforms require additional tools (SDKs) to be "
@@ -182,13 +179,12 @@ msgid ""
 "they resolve it:"
 msgstr ""
 "Les options par défaut sont souvent suffisantes pour l'exportation, il n'est "
-"donc pas nécessaire de les modifier, mais fournissent un contrôle "
-"supplémentaire. Cependant, de nombreuses plates-formes nécessitent "
-"l'installation d'outils supplémentaires (SDK) pour pouvoir exporter. De "
-"plus, Godot a besoin de modèles d'exportation installés pour créer des "
-"paquets. Le menu d'exportation se plaindra lorsqu'il manque quelque chose et "
-"ne permettra pas à l'utilisateur d'exporter pour cette plate-forme tant "
-"qu'il ne l'aura pas résolu :"
+"donc pas nécessaire de les modifier. Cependant, de nombreuses plates-formes "
+"nécessitent l'installation d'outils supplémentaires (SDK) pour pouvoir "
+"exporter. De plus, Godot a besoin de modèles d'exportation installés pour "
+"créer des paquets. Le menu d'exportation se plaindra lorsqu'il manque "
+"quelque chose et ne permettra pas à l'utilisateur d'exporter pour cette "
+"plate-forme tant que cela ne sera pas résolu :"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:88
 msgid ""
@@ -203,20 +199,19 @@ msgid "Export templates"
 msgstr "Exporter des modèles"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:94
-#, fuzzy
 msgid ""
 "Apart from setting up the platform, the export templates must be installed "
 "to be able to export projects. They can be obtained as a TPZ file (which is "
 "a renamed ZIP archive) from the `download page of the website <https://www."
 "godotengine.org/download>`_."
 msgstr ""
-"Outre la mise en place de la plate-forme, les modèles d'exportation doivent "
-"être installés pour pouvoir exporter des projets. Ils peuvent être obtenus "
-"sous la forme d'un fichier .tpz (un fichier .zip renommé) à partir de la "
-"`page de téléchargement du site Web <https://www.godotengine.org/download>`_."
+"En dehors de la configuration de la plate-forme, les modèles d'exportation "
+"doivent être installés pour pouvoir exporter des projets. Ils peuvent être "
+"obtenus sous la forme d'un fichier .tpz (un fichier .zip renommé) à partir "
+"de la `page de téléchargement du site Web <https://www.godotengine.org/"
+"download>`_."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
-#, fuzzy
 msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
@@ -252,7 +247,6 @@ msgstr ""
 "Exporter uniquement les ressources sélectionnées (+ filtre personnalisé)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
-#, fuzzy
 msgid ""
 "**Export every single file** - This mode exports every single file in the "
 "project. This is good to test if something is being forgotten, but "
@@ -265,7 +259,6 @@ msgstr ""
 "de dev, ce qui en fait une mauvaise idée."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
-#, fuzzy
 msgid ""
 "**Export only resources** - Only resources are exported. For most projects, "
 "this is enough. However many developers like to use custom datafiles in "
@@ -276,10 +269,9 @@ msgstr ""
 "exportées. Pour la plupart des projets, c'est suffisant. Cependant, de "
 "nombreux développeurs aiment utiliser des fichiers de données personnalisés "
 "dans leurs jeux. Pour compenser cela, des filtres peuvent être ajoutés pour "
-"des extensions supplémentaires (comme *.txt,*.csv,*.csv, etc.)."
+"des extensions supplémentaires (comme *.txt,*.csv, etc.)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
-#, fuzzy
 msgid ""
 "**Export only selected resources** - Only select resources from a list are "
 "exported. This is probably overkill for most projects, but in some cases it "
@@ -293,9 +285,7 @@ msgstr ""
 "des projets de grande envergure). Ce mode offre un contrôle total de ce qui "
 "est exporté. Les ressources individuelles peuvent être sélectionnées et la "
 "détection des dépendances est effectuée pour s'assurer que tout ce qui est "
-"nécessaire est ajouté. De plus, ce mode permet de regrouper les scènes et "
-"les dépendances dans un seul fichier, ce qui est *vraiment* utile pour les "
-"jeux distribués sur support optique."
+"nécessaire est ajouté."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
 msgid "Exporting from the command line"
@@ -330,7 +320,6 @@ msgstr ""
 "respecte pas le répertoire à partir duquel la commande a été invoquée."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
-#, fuzzy
 msgid ""
 "You can also configure it to export only the PCK or ZIP file (allowing a "
 "single export to be used with multiple Godot executables). This takes place "
@@ -341,7 +330,6 @@ msgstr ""
 "exécutables Godot). Cela se produit si :"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
-#, fuzzy
 msgid "the export preset is not marked as runnable,"
 msgstr "Le préréglage d'exportation n'est pas marqué comme exécutable"
 

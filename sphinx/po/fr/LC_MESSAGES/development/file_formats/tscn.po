@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "TSCN file format"
 msgstr "Le Format de Fichier TSCN"
 
 #: ../../docs/development/file_formats/tscn.rst:4
-#, fuzzy
 msgid ""
 "A :code:`.tscn` File format is the \"Text SCeNe\" file format and represents "
 "a single scene-tree inside Godot. TSCN files have the advantage of being "
@@ -30,15 +29,14 @@ msgid ""
 "import the TSCN files are compiled into binary :code:`.scn` files stored "
 "inside the .import folder. This reduces the data size and speed up loading."
 msgstr ""
-"Le format de fichier :code:`.tscn` est  le format \"Text SCeNe\" et "
-"représente un seul arbre des scènes dans Godot. Les fichiers TSCN ont "
-"l'avantage d'être lisible par et facilite les systèmes de  gestion de "
-"version. Durant l'import, les fichiers TSCN sont compilés en fichiers "
-"binaires :code:`.scn` enregistrés dans le dossier ``.import``. Ceci réduit "
-"l'espace occupé et accélère le chargement."
+"Le format de fichier :code:`.tscn` est le format de fichier \"Text SCeNe\" "
+"et représente un seul arbre de scène dans Godot. Les fichiers TSCN ont "
+"l'avantage presque lisible par l'humain et facilite la gestion par les "
+"systèmes de contrôle de version. Durant l'import, les fichiers TSCN sont "
+"compilés en fichiers binaires :code:`.scn` enregistrés dans le dossier ."
+"import. Ceci réduit l'espace occupé et accélère le chargement."
 
 #: ../../docs/development/file_formats/tscn.rst:10
-#, fuzzy
 msgid ""
 "The :code:`.escn` file format is identical to the TSCN file format, but is "
 "used to indicate to Godot that the file has been exported from another "
@@ -49,17 +47,16 @@ msgstr ""
 "et qu'il ne doit pas être édité par l'utilisateur dans Godot."
 
 #: ../../docs/development/file_formats/tscn.rst:14
-#, fuzzy
 msgid ""
 "For those looking for a complete description, the parsing is handled in the "
 "file `scene_format_text.cpp <https://github.com/godotengine/godot/blob/"
 "master/scene/resources/scene_format_text.cpp>`_ in the class :code:"
 "`ResourceFormatLoaderText`"
 msgstr ""
-"Pour ceux à la recherche d'une description plus complète, le parsing est "
-"effectué dans le fichier `scene_format_text.cpp <https://github.com/"
-"godotengine/godot/blob/master/scene/resources/scene_format_text.cpp>`_ dans "
-"la classe :code:`ResourceFormatLoaderText`"
+"Pour ceux à la recherche d'une description complète, le parsing est effectué "
+"dans le fichier `scene_format_text.cpp <https://github.com/godotengine/godot/"
+"blob/master/scene/resources/scene_format_text.cpp>`_ dans la classe :code:"
+"`ResourceFormatLoaderText`"
 
 #: ../../docs/development/file_formats/tscn.rst:19
 msgid "File structure"
@@ -286,9 +283,8 @@ msgid "An example of one MeshInstance parented to a bone in Skeleton:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:229
-#, fuzzy
 msgid "AnimationPlayer"
-msgstr "Animation"
+msgstr "AnimationPlayer"
 
 #: ../../docs/development/file_formats/tscn.rst:231
 msgid ""
@@ -379,9 +375,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:312
-#, fuzzy
 msgid "ArrayMesh"
-msgstr "Les tableaux"
+msgstr "ArrayMesh"
 
 #: ../../docs/development/file_formats/tscn.rst:314
 msgid ""
@@ -404,7 +399,7 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:322
 #, fuzzy
 msgid "arrays"
-msgstr "Les tableaux"
+msgstr "arrays"
 
 #: ../../docs/development/file_formats/tscn.rst:323
 msgid "morph_arrays"
@@ -505,9 +500,8 @@ msgid "path"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:381
-#, fuzzy
 msgid "interp"
-msgstr "Center"
+msgstr "interp"
 
 #: ../../docs/development/file_formats/tscn.rst:382
 msgid "keys"
@@ -518,9 +512,8 @@ msgid "loop_wrap"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:384
-#, fuzzy
 msgid "imported"
-msgstr "Import CSV"
+msgstr "imported"
 
 #: ../../docs/development/file_formats/tscn.rst:387
 msgid ""
@@ -529,14 +522,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:390
-#, fuzzy
 msgid "'transform'"
-msgstr "Transformation"
+msgstr "'transform'"
 
 #: ../../docs/development/file_formats/tscn.rst:391
-#, fuzzy
 msgid "'value'"
-msgstr "Valeur"
+msgstr "'value'"
 
 #: ../../docs/development/file_formats/tscn.rst:392
 msgid "'method'"
@@ -556,9 +547,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:401
-#, fuzzy
 msgid "0 (constant)"
-msgstr "Constante PI."
+msgstr "0 (constant)"
 
 #: ../../docs/development/file_formats/tscn.rst:402
 msgid "1 (linear)"

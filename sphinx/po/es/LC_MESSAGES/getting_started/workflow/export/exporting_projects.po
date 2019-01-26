@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,7 +208,6 @@ msgstr ""
 "<https://www.godotengine.org/download>`_."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
-#, fuzzy
 msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
@@ -233,19 +232,16 @@ msgid "Export every single file in the project"
 msgstr "Exportar todos los archivos del proyecto"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
-#, fuzzy
 msgid "Export only resources (+ custom filter), this is the default."
 msgstr ""
 "Exportar solo los recursos (+filtro personalizado), esta es la opción por "
 "defecto."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
-#, fuzzy
 msgid "Export only selected resources (+ custom filter)"
 msgstr "Exportar solo los recursos seleccionados (+filtro personalizado)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
-#, fuzzy
 msgid ""
 "**Export every single file** - This mode exports every single file in the "
 "project. This is good to test if something is being forgotten, but "
@@ -259,7 +255,6 @@ msgstr ""
 "mala idea."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
-#, fuzzy
 msgid ""
 "**Export only resources** - Only resources are exported. For most projects, "
 "this is enough. However many developers like to use custom datafiles in "
@@ -273,7 +268,6 @@ msgstr ""
 "adicionales (como . *.txt, *.csv, etc.)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
-#, fuzzy
 msgid ""
 "**Export only selected resources** - Only select resources from a list are "
 "exported. This is probably overkill for most projects, but in some cases it "
@@ -286,32 +280,26 @@ msgstr ""
 "algunos casos está justificado (usualmente en proyectos enormes). Este modo "
 "ofrece un control total de lo que se exporta. Hay que seleccionar cada "
 "recurso individualmente y la detección de dependencias se ejecuta para "
-"asegurarnos de que se añade todo lo necesario. Como algo adicional, este "
-"modo permite \"Empaquetar\" escenas y dependencias en un archivo único, lo "
-"que es **verdaderamente** útil para los juegos que se distribuyan en "
-"dispositivos ópticos."
+"asegurarnos de que se añade todo lo necesario."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
 msgid "Exporting from the command line"
 msgstr "Exportando desde la línea de comandos"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
-#, fuzzy
 msgid ""
 "In production, it is useful to automate builds, and Godot supports this with "
 "the ``--export`` and ``--export-debug`` command line parameters. Exporting "
 "from the command line still requires an export preset to define the export "
 "parameters. A basic invocation of the command would be:"
 msgstr ""
-"En producción es útil automatizar las compilaciones, y Godot ofrece soporte "
-"a esto con los parámetros de línea de commandos ``--export`` y ``--export-"
+"En producción es útil automatizar las compilaciones, Godot ofrece soporte a "
+"esto con los parámetros de línea de commandos ``--export`` y ``--export-"
 "debug``. Exportar desde la línea de comandos aún requiere una plantilla de "
 "exportación para definir los parámetros de exportación. Una invocación "
-"básica de exportación podría se ``godot --export \"Windows Desktop\" "
-"some_name``"
+"básica comandos podría ser:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
-#, fuzzy
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. The output path is "
@@ -321,10 +309,9 @@ msgstr ""
 "Asumiendo que hay un preset llamado \"Windows Desktop\" y que la plantilla "
 "se puede encontrar, se exportará a ``some_name.exe``. La ruta de salida es "
 "relativa a la ruta del proyecto o absoluta. No se respeta el directorio "
-"desde el que el comando fue invocado."
+"desde el cual el comando fue invocado."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
-#, fuzzy
 msgid ""
 "You can also configure it to export only the PCK or ZIP file (allowing a "
 "single export to be used with multiple Godot executables). This takes place "
@@ -335,21 +322,18 @@ msgstr ""
 "Godot). Esto sucede si:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
-#, fuzzy
 msgid "the export preset is not marked as runnable,"
-msgstr "El preset de exportación no está marcado como ejecutable"
+msgstr "el preset de exportación no está marcado como ejecutable,"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:157
-#, fuzzy
 msgid "the target name ends with ``.pck`` or ``.zip``."
-msgstr "El nombre elegido acaba con `.pck`o con `.zip`"
+msgstr "el nombre elegido acaba con `.pck`o con `.zip`."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:159
-#, fuzzy
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
 msgstr ""
 "A menudo es útil combinar el flag ``--export`` con el flag ``--path``, y "
 "crear una plantilla de exportación dedicada a exportar de manera "
-"automatizada: ``godot --path path/to/project --export \"pck\" game_name.pck``"
+"automatizada:"

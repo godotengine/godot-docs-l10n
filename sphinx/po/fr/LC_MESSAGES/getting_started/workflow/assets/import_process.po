@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,6 @@ msgstr ""
 "une configuration d’importation pour les textures, l’audio, les scènes, etc."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-#, fuzzy
 msgid ""
 "In Godot 3.0, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -48,11 +47,11 @@ msgid ""
 "hidden in a res://.import folder."
 msgstr ""
 "Dans Godot 3.0, nous utilisons une approche plus moderne pour importer : "
-"déposez simplement vos ressources (fichiers images, scènes, audios, polices, "
-"etc.) directement dans le répertoire du projet (copiez les manuellement avec "
-"l’explorateur de fichier de système d’exploitation). Godot importera "
-"automatiquement ces fichiers en interne et garder les ressources importées "
-"cachées dans un répertoire res://.import."
+"déposez simplement vos ressources (fichiers images, scènes, fichiers audios, "
+"polices, etc.) directement dans le répertoire du projet (copiez les "
+"manuellement avec l’explorateur de fichier de  votre système "
+"d’exploitation). Godot importera automatiquement ces fichiers en interne et "
+"gardera les ressources importées cachées dans un répertoire res://.import."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid "This allows changing all the import parameters transparently."
@@ -65,7 +64,6 @@ msgid "Changing import parameters"
 msgstr "Changer les paramètres d’importation"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:25
-#, fuzzy
 msgid ""
 "Changing the import parameters of an asset in Godot (again, keep in mind "
 "import parameters are only present in non-native Godot resource types) is "
@@ -74,7 +72,7 @@ msgstr ""
 "Changer les paramètres d’importation d’une ressource dans Godot est facile "
 "(encore une fois, gardez à l’esprit que les paramètres d’importation sont "
 "seulement présents pour les types de ressources non-natifs de Godot). "
-"Sélectionnez une ressource donnée dans l’onglet du système de ficher :"
+"Sélectionnez la ressource appropriée dans le dock du système de fichiers :"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:31
 msgid ""
@@ -93,9 +91,9 @@ msgid ""
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
 "Changer les paramètres d’importation pour plusieurs ressources en même temps "
-"est possible également. Sélectionnez-les tous ensemble dans l’onglet "
-"ressources et les paramètres exposés seront appliqués à chacun d’entre entre "
-"lors de leur réimportation."
+"est possible également. Sélectionnez-les toutes ensemble dans l’onglet "
+"ressources et les paramètres exposés seront appliqués à chacune d’entre "
+"elles lors de leur réimportation."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
 msgid "Automatic reimport"
@@ -132,7 +130,6 @@ msgstr ""
 "caché  res://.import :"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:57
-#, fuzzy
 msgid ""
 "If any of the files present in this folder is erased (or the whole folder), "
 "the asset or assets will be reimported automatically. As such, committing "
@@ -152,14 +149,13 @@ msgid "Changing import resource type"
 msgstr "Changer le type d’importation de ressource"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:66
-#, fuzzy
 msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
 msgstr ""
-"Certaines fichers sources peuvent être importés comme différent types de "
-"ressources. Pour ceci, sélectionnez le type de ressource approprié désiré et "
-"appuyez sur \"Réimporter\" :"
+"Certaines fichiers sources peuvent être importés comme différent types de "
+"ressources. Pour cela, sélectionnez le type de ressource désiré et appuyez "
+"sur \"Réimporter\" :"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:74
 msgid "Changing default import parameters"

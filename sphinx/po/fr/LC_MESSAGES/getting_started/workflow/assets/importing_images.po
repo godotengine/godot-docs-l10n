@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -306,10 +306,9 @@ msgid ""
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
 "\"loop\"."
 msgstr ""
-"Ce paramètre est plus généralement utilisé en 3D qu'en 2D (il est donc "
-"généralement désactivé en 2D). Cela fait que les coordonnées UV vont au-delà "
-"de l'intervalle 0,0 - 1,1 pour \"boucler\". La répétition peut "
-"éventuellement être définie sur le mode miroir."
+"Ce paramètre est plus généralement utilisé en 3D , il est donc généralement "
+"désactivé en 2D. Cela fait que les coordonnées UV vont au-delà de "
+"l'intervalle 0,0 - 1,1 pour \"boucler\"."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "Repeating can optionally be set to mirrored mode."
@@ -320,7 +319,6 @@ msgid "Filter"
 msgstr "Filtre"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:100
-#, fuzzy
 msgid ""
 "When pixels become larger than the screen pixels, this option enables linear "
 "interpolation for them. The result is a smoother (less blocky) texture. This "
@@ -329,8 +327,8 @@ msgid ""
 msgstr ""
 "Lorsque les pixels deviennent plus grands que les pixels de l'écran, ces "
 "options permettent leur interpolation linéaire. Le résultat est une texture "
-"plus lisse (moins de blocs). Ce paramètre peut être couramment utilisé en 2D "
-"et 3D, mais il est généralement désactivé lors de la création de jeux en "
+"plus lisse (moins pixelisée). Ce paramètre peut être couramment utilisé en "
+"2D et 3D, mais il est généralement désactivé lors de la création de jeux "
 "pixel perfect."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:103
@@ -368,7 +366,6 @@ msgstr ""
 "totale, et que vous avez besoin des mipmaps."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:113
-#, fuzzy
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
@@ -428,9 +425,9 @@ msgid ""
 "transparency to non transparency. It helps mitigate the outline effect when "
 "exporting images from Photoshop and the like."
 msgstr ""
-"Cela place les pixels de la même couleur environnante en transition de la "
-"transparence à la non-transparence. Il aide à atténuer l'effet de contour "
-"lors de l'exportation d'images à partir de Photoshop et autres."
+"Les pixels de la même couleur environnante passent de la transparence à la "
+"non-transparence. Cela aide à atténuer l'effet de contour lors de "
+"l'exportation d'images à partir de Photoshop et autres."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:139
 msgid ""
@@ -462,20 +459,18 @@ msgid "HDR as sRGB"
 msgstr "HDR en tant que SRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
-#, fuzzy
 msgid ""
 "A few HDR files are broken and contain sRGB color data. It is advised not to "
 "use them, but, in the worst-case scenario, toggling this option on will make "
 "them look right."
 msgstr ""
 "Quelques fichiers HDR sont cassés et contiennent des données de couleur "
-"SRGB. Il est conseillé de ne pas les utiliser mais, dans le pire des cas, "
-"activer cette option les fera apparaître correctement."
+"sRGB. Il est conseillé de ne pas les utiliser, mais, dans le pire des cas, "
+"activer cette option les fera paraître corrects."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:153
-#, fuzzy
 msgid "Invert Color"
-msgstr "Couleur de vertex"
+msgstr "Inverser la couleur"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:155
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -645,6 +645,9 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"Jedes mal wenn ein Gegner den Spieler trifft, wird ein Signal ermittelt. Wir "
+"müssen die Spielerkollision deaktivieren, damit das \"Hit\" Signal nicht "
+"mehr ausgelößt wird."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
 msgid ""
@@ -783,7 +786,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:553
 msgid "Enemy script"
-msgstr "Fein-Skript"
+msgstr "Feind-Skript"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:555
 msgid "Add a script to the ``Mob`` and add the following member variables:"

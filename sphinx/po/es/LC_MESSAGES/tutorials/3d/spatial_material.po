@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,23 +26,22 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:9
-#, fuzzy
 msgid ""
 "``SpatialMaterial`` is a default 3D material that aims to provide most of "
 "the features artists look for in a material, without the need for writing "
 "shader code. However, it can be converted to shader code if additional "
 "functionality is needed."
 msgstr ""
-"SpatialMaterial es un material 3D y su objetivo es que los artistas busquen "
-"la mayoría de las características en un material. Además, puede convertirse "
-"a código de shader y modificarse si se desea."
+"``SpatialMaterial`` es un material 3D y su objetivo es que los artistas "
+"busquen la mayoría de las características en un material. Además, puede "
+"convertirse a código de shader y modificarse si se necesita agregar "
+"funcionalidades adicionales."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:13
-#, fuzzy
 msgid "This tutorial explains most parameters present in ``SpatialMaterial``."
 msgstr ""
 "Este tutorial intentará cubrir la mayoría de los parámetros presentes en "
-"SpatialMaterial."
+"``SpatialMaterial``."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:15
 msgid ""
@@ -67,20 +66,18 @@ msgid "Transparent"
 msgstr "Transparente"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:28
-#, fuzzy
 msgid ""
 "In Godot, materials are not transparent unless specifically configured to "
 "be. The main reason behind this is that transparent materials are rendered "
 "using a different technique (sorted from back to front and rendered in "
 "order)."
 msgstr ""
-"En Godot, los materiales no son transparentes a menos que se ajusten "
+"En Godot, los materiales no son transparentes a menos que se configuren "
 "específicamente de esta forma. La razón principal es que los materiales "
 "transparentes son renderizados usando una técnica diferente (ordenados de "
 "atrás hacia adelante y renderizados en orden)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:32
-#, fuzzy
 msgid ""
 "This technique is less efficient (many state changes happen) and makes the "
 "materials unusable with many mid- and post-processing effects (such as SSAO, "
@@ -105,9 +102,8 @@ msgid "Transparent flag (this one)"
 msgstr "Opción Transparent (esta)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:40
-#, fuzzy
 msgid "Blend mode set to other than \"Mix\""
-msgstr "Modo de mezcla configurado en otro que no sea Mix"
+msgstr "Modo de mezcla (blend mode) configurado en otro que no sea \"Mix\""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:41
 msgid "Enabling distance or proximity fade"
@@ -118,7 +114,6 @@ msgid "Unshaded"
 msgstr "Unshaded (Sin sombra)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:46
-#, fuzzy
 msgid ""
 "In most cases it is common for materials to be affected by lighting (shaded)."
 msgstr ""
@@ -126,33 +121,30 @@ msgstr ""
 "por la iluminación (shaded)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:48
-#, fuzzy
 msgid ""
 "However, in some cases you might want to show just the albedo (color) and "
 "ignore the rest. Toggling this flag on will remove all shading and display "
 "pure, unlit color."
 msgstr ""
-"A veces, sin embargo, uno puede querer mostrar sólo el albedo (color) e "
-"ignorar el resto. Al activar esta opción, se eliminarán todas las sombras y "
-"se mostrará el color puro, sin iluminación."
+"Algunas veces, uno puede querer mostrar sólo el albedo (color) e ignorar el "
+"resto. Al activar esta opción, se eliminarán todo el shading y se mostrará "
+"el color puro, sin iluminación."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:55
 msgid "Vertex Lighting"
 msgstr "Vertex Lighting (Iluminación de vértices)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:57
-#, fuzzy
 msgid ""
 "Godot has a more or less uniform cost per pixel thanks to depth pre-pass. "
 "All lighting calculations are made by running the lighting shader on every "
 "pixel."
 msgstr ""
 "Godot tiene un coste por píxel más o menos constante (gracias al paso previo "
-"de profundidad). Todos los cálculos de iluminación se realizan ejecutando el "
-"shader de iluminación en cada píxel."
+"de profundidad o depth pre-pass). Todos los cálculos de iluminación se "
+"realizan ejecutando el shader de iluminación en cada píxel."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:60
-#, fuzzy
 msgid ""
 "As these calculations are costly, performance can be brought down "
 "considerably in some corner cases such as drawing several layers of "
@@ -160,9 +152,9 @@ msgid ""
 "lighting may help in these cases."
 msgstr ""
 "Dado que estos cálculos son costosos, el rendimiento puede reducirse "
-"considerablemente en algunos casos de esquinas, como el dibujo de varias "
+"considerablemente en algunos casos particulares, como el dibujo de varias "
 "capas de transparencia (común en los sistemas de partículas). Cambiar a "
-"iluminación por vértice puede ayudar en estos casos."
+"iluminación por vértice (per-vertex) puede ayudar en estos casos."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:65
 msgid ""
@@ -196,28 +188,26 @@ msgstr ""
 "objetos aparezcan por encima (o por debajo) de todo lo demás."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:80
-#, fuzzy
 msgid ""
 "Disabling this makes the most sense for drawing indicators in world space, "
 "and works very well with the *Render Priority* property of Material (see the "
 "bottom of this page)."
 msgstr ""
 "Desactivar esto tiene más sentido para dibujar indicadores en el espacio del "
-"mundo, y funciona muy bien con la propiedad \"render priority\" de Material "
-"(ver abajo)."
+"mundo (world space), y funciona muy bien con la propiedad \"Render Priority"
+"\" de Material (ver abajo)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:87
 msgid "Use Point Size"
 msgstr "Usar Point Size (Tamaño de punto)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:89
-#, fuzzy
 msgid ""
 "This option is only effective when the geometry rendered is made of points "
 "(generally it's made of triangles when imported from 3D DCCs). If so, then "
 "those points can be resized (see below)."
 msgstr ""
-"Esta opción sólo está activa cuando la geometría representada está hecha por "
+"Esta opción sólo es efectiva cuando la geometría representada está hecha de "
 "puntos (generalmente sólo está hecha de triángulos cuando se importa desde "
 "DCCs 3D). Si es así, entonces los puntos pueden ser dimensionados (ver "
 "abajo)."
@@ -227,31 +217,28 @@ msgid "World Triplanar"
 msgstr "World Triplanar (Mundo Triplanar)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:96
-#, fuzzy
 msgid ""
 "When using triplanar mapping (see below, in the UV1 and UV2 settings), "
 "triplanar is computed in object local space. This option makes triplanar "
 "work in world space."
 msgstr ""
 "Cuando se utiliza el mapeo triplanar (ver abajo, en los ajustes UV1 y UV2), "
-"el triplanar se calcula en el espacio local del objeto. Esta opción hace que "
-"los triplanares trabajen en el espacio del mundo."
+"el triplanar se calcula en el espacio local del objeto (local space). Esta "
+"opción hace que los triplanares trabajen en el espacio del mundo."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:101
 msgid "Fixed Size"
 msgstr "Fixed Size (Tamaño fijo)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:103
-#, fuzzy
 msgid ""
 "This causes the object to be rendered at the same size no matter the "
 "distance. This is useful mostly for indicators (no depth test and high "
 "render priority) and some types of billboards."
 msgstr ""
-"Hace que el objeto renderizado tenga el mismo tamaño sin importar la "
-"distancia. Esto es, una vez más, especialmente útil para indicadores (sin "
-"prueba de profundidad y alta prioridad de renderizado) y algunos tipos de "
-"anuncios publicitarios."
+"Esto hace que el objeto renderizado tenga el mismo tamaño sin importar la "
+"distancia. Es especialmente útil para indicadores (sin prueba de profundidad "
+"y alta prioridad de renderizado) y algunos tipos de billboards."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:108
 msgid "Do Not Receive Shadows"
@@ -266,25 +253,22 @@ msgstr ""
 "proyectada sobre él."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:114
-#, fuzzy
 msgid "Disable Ambient Light"
-msgstr "Desactiva testing de depth."
+msgstr "Disable Ambient Light"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:116
-#, fuzzy
 msgid ""
 "Makes the object not receive any kind of ambient lighting that would "
 "otherwise light it."
 msgstr ""
-"Hace que el objeto no reciba ningún tipo de sombra que de otro modo sería "
-"proyectada sobre él."
+"Hace que el objeto no reciba ningún tipo de luz ambiental que de otro modo "
+"sería lo iluminaría."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:120
 msgid "Vertex Color"
 msgstr "Vertex Color (Color de vértice)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:122
-#, fuzzy
 msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
 "come from your 3D modelling application. By default they are ignored."
@@ -298,22 +282,21 @@ msgid "Use as Albedo"
 msgstr "Use as Albedo (Usar como Albedo)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:130
-#, fuzzy
 msgid "Choosing this option means vertex color is used as albedo color."
-msgstr "El color del vértice se utiliza como color del albedo."
+msgstr ""
+"Esta opción hace que el color del vértice se utiliza como color del albedo."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:133
 msgid "Is sRGB"
-msgstr ""
+msgstr "Is sRGB"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:135
-#, fuzzy
 msgid ""
 "Most 3D DCCs will likely export vertex colors as sRGB, so toggling this "
 "option on will help them look correct."
 msgstr ""
 "La mayoría de los DCCs 3D probablemente exportarán los colores de los "
-"vértices como SRGB, por lo que activar esta opción ayudará a que se vean "
+"vértices como sRGB, por lo que activar esta opción ayudará a que se vean "
 "correctamente."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:139
@@ -321,13 +304,12 @@ msgid "Parameters"
 msgstr "Parámetros"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:141
-#, fuzzy
 msgid ""
 "``SpatialMaterial`` also has several configurable parameters to tweak many "
 "aspects of the rendering:"
 msgstr ""
-"SpatialMaterial también tiene varios parámetros que pueden configurarse para "
-"ajustar muchos aspectos del renderizado:"
+"``SpatialMaterial`` también tiene varios parámetros que pueden configurarse "
+"para ajustar muchos aspectos del renderizado:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:147
 msgid "Diffuse Mode"
