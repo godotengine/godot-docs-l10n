@@ -11,16 +11,18 @@
 # Laurent Windels <laurentwindels@yahoo.com>, 2018.
 # Melvin Louwerse <aterlamia@gmail.com>, 2018.
 # Peter <pshijma@gmail.com>, 2018.
+# Stijn Hinlopen <f.a.hinlopen@gmail.com>, 2019.
 # Tahar Meijs <tntmeijs@gmail.com>, 2018.
 # Willem <studiebolmail@gmail.com>, 2018.
+# Wouter Buckens <wou.buc@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-20 10:29+0100\n"
-"PO-Revision-Date: 2018-12-31 12:10+0000\n"
-"Last-Translator: Bas van Schoubroeck <basvanschoubroeck@hotmail.com>\n"
+"PO-Revision-Date: 2019-01-26 20:52+0000\n"
+"Last-Translator: Stijn Hinlopen <f.a.hinlopen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/nl/>\n"
 "Language: nl\n"
@@ -28,7 +30,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.4-dev\n"
+"X-Generator: Weblate 3.5-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -39,16 +41,17 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"De Godot documentatie is beschikbaar in verschillende talen en versies. Klap "
+"het \"Read the Docs\" paneel onderaan de zijbalk uit om de lijst te bekijken."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the development (master) branch. Looking for "
 "the documentation of the current **stable** branch? `Have a look here "
 "<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
-"Dit is de documentatie van de onstabiele (master) branch. Op zoek naar de "
-"documentatie voor de huidige **stabiele ** branch? `Kijk dan hier: <http://"
+"Dit is de documentatie van de instabiele (master) branch. Op zoek naar de "
+"documentatie voor de huidige **stabiele** branch? `Kijk dan hier: <http://"
 "docs.godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:16
@@ -57,6 +60,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
+"Deze documentatie is vertaald van de `originele Engelse tekst<https://docs."
+"godotengine.org/en/latest>`_ door leden van de community op `Weblate "
+"<https://hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -65,6 +71,10 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
+"Afhankelijk van de volledigheid van de vertaling, kan het zijn dat "
+"paragrafen of zelfs volledige pagina's nog steeds in het Engels zijn. Je "
+"kunt de community helpen door nieuwe vertalingen bij te dragen of bestaande "
+"vertalingen te verbeteren op Weblate."
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -72,6 +82,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"Op dit moment is de vertaalde documentatie enkel beschikbaar voor de \"latest"
+"\" (ontwikkeling) branch, maar het zou voldoende moeten zijn om stabiele "
+"versies van Godot te leren gebruiken."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -154,7 +167,7 @@ msgstr "Ontwikkeling"
 
 #: ../../docs/index.rst:115
 msgid "Creating Content"
-msgstr ""
+msgstr "Inhoud creëren"
 
 #: ../../docs/index.rst:123 ../../docs/community/index.rst:2
 msgid "Community"
@@ -247,7 +260,6 @@ msgstr ""
 "gebruiksbeperkingen."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
@@ -255,27 +267,25 @@ msgid ""
 msgstr ""
 "Het doel van deze pagina is om u een breed overzicht te geven van de engine "
 "en de inhoud van de documentatie, dan weet u waar u moet starten mocht u een "
-"beginner zijn, of waar u specifieke informatie over kunt vinden over "
-"bepaalde onderdelen."
+"beginner zijn, of waar u specifieke informatie kunt vinden over bepaalde "
+"onderdelen."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
 msgstr "Over Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"Een game engine is complex gereedschap. Hierdoor is het lastig om Godot te "
-"beschrijven in een paar woorden. Hier is echter onze PR presentatie. U bent "
-"vrij deze te gebruiken in het geval u een snelle samenvatting over de Godot "
-"Engine nodig hebt."
+"Een game engine is een complex gereedschap. Hierdoor is het lastig om Godot "
+"te beschrijven in een paar woorden. Hier is echter een korte samenvatting, "
+"het staat u vrij deze te gebruiken in het geval dat u een beschrijving van "
+"Godot Engine nodig hebt."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -284,13 +294,13 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot Engine is een uitgebreide, cross-platform game engine waarmee 2D en 3D "
-"games gemaakt kunnen in een gecombineerde interface. Het beschikt over een "
-"uitgebreide verzameling veelgebruikte tools, zodat gebruikers zich kunnen "
-"focussen op het maken van games zonder het wiel opnieuw te hoeven uitvinden. "
-"Games kunnen met één klik geëxporteerd worden naar verschillende platformen, "
-"waaronder de grote desktopplatformen (Linux, macOS, Windows) als ook mobiel "
-"(Android, iOS) en web-based (HTML) platformen."
+"Godot Engine is een uitgebreide, platformonafhankelijke game engine waarmee "
+"2D en 3D games gemaakt kunnen worden in een gecombineerde interface. Het "
+"beschikt over een uitgebreide verzameling veelgebruikte tools, zodat "
+"gebruikers zich kunnen focussen op het maken van spellen zonder het wiel "
+"opnieuw te hoeven uitvinden. Games kunnen met één klik geëxporteerd worden "
+"naar verschillende platformen, waaronder de grote desktopplatformen (Linux, "
+"macOS, Windows) als ook mobiel (Android, iOS) en web-based (HTML) platformen."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -324,7 +334,6 @@ msgid "About the documentation"
 msgstr "Over de documentatie"
 
 #: ../../docs/about/introduction.rst:48
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -335,8 +344,8 @@ msgid ""
 msgstr ""
 "Deze documentatie wordt continu geschreven, gecorrigeerd, bewerkt en "
 "verbeterd door leden van de Godot Engine community. Het is gemaakt met "
-"textbestanden in de `reStructuredText <http://www.sphinx-doc.org/en/stable/"
-"rest.html>`_ markup language en vervolgens gecompileerd naar een statisch "
+"tekstbestanden in de `reStructuredText <http://www.sphinx-doc.org/en/stable/"
+"rest.html>`_ markup taal en vervolgens gecompileerd naar een statische "
 "website/offline-document met behulp van de open source `Sphinx <http://www."
 "sphinx-doc.org>`_ en `ReadTheDocs <https://readthedocs.org/>`_ tools."
 
@@ -499,6 +508,8 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"Je bent vrij om Godot te downloaden en gebruiken voor eender welk doeleinde, "
+"persoonlijk, non-profit, commercieel of anders;"
 
 #: ../../docs/about/faq.rst:14
 #, fuzzy
@@ -635,8 +646,12 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"De officieel ondersteunde talen voor Godot zijn GDScript, Visual Scripting, "
+"C# en C++. Zie de subcategorieën voor elke taal in de :ref:`scripting <toc-"
+"learn-scripting>` sectie."
 
 #: ../../docs/about/faq.rst:68
+#, fuzzy
 msgid ""
 "If you are just starting out with either Godot or game development in "
 "general, GDScript is the recommended language to learn and use since it is "
@@ -645,6 +660,11 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"Als je net begint met Godot of game ontwikkeling, is GDScript de aanbevolen "
+"taal om te leren en te gebruiken, aangezien het ingebouwd is in Godot. "
+"Hoewel scripting talen vaak minder performant zijn dan talen op een lager "
+"niveau, biedt GDScript een snelle, gebruiksvriendelijk en capabele manier om "
+"games te ontwikkelen voor prototypes en minimaal vatbare producten (MVP's)."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -656,6 +676,13 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"Houd er rekening mee dat C# ondersteuning nog relatief nieuw is, en dat je "
+"dus nog enkele problemen kan tegenkomen. Onze vriendelijke en hardwerkende "
+"ontwikkelaarscommunity is altijd klaar om nieuwe problemen aan te pakken "
+"wanneer die zich voordoen, maar aangezien dit een open-source project is "
+"wordt er wel enige inspanning van je verwacht. Discussies doorzoeken in de "
+"`open issues <https://github.com/godotengine/godot/issues>`_ is een goede "
+"manier om je problemen te beginnen oplossen."
 
 #: ../../docs/about/faq.rst:82
 msgid ""
@@ -668,7 +695,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "Wat is GDScript en waarom zou ik het gebruiken?"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -680,6 +707,13 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the "
 "`GDScript scripting guide <gdscript_basics>`_."
 msgstr ""
+"GDScript is de ingebouwde scripting taal van Godot. Het is ontwikkeld om het "
+"potentieel van Godot te maximaliseren met zo weinig mogelijk code, zodat "
+"zowel nieuwe als ervaren ontwikkelaars zo snel mogelijk gebruik kunnen maken "
+"van de sterktes van Godot. Als je al ooit iets geschreven hebt in een taal "
+"als Python, dan zul je je snel thuis voelen. Bekijk de `GDScript scripting "
+"gids <gdscript_basics>`_ voor voorbeelden, geschiedenis, en een volledig "
+"overzicht van de kracht van GDScript."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -688,6 +722,9 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"Er zijn verschillende redenen om GDScript te gebruiken -- zeker wanneer je "
+"werkt aan prototypes of aan alpha/beta projecten -- maar de voornaamste "
+"reden is de **vermindering van complexiteit.**"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -1528,8 +1565,9 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 #: ../../docs/getting_started/editor/external_editor.rst:32
 #: ../../docs/development/compiling/compiling_with_mono.rst:143
+#, fuzzy
 msgid "Editor"
-msgstr ""
+msgstr "Verwerker"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:96
 msgid ""
@@ -1620,7 +1658,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
-msgstr ""
+msgstr "Geslaagd!"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Configuring the project"
@@ -2495,7 +2533,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Groups"
-msgstr ""
+msgstr "Groepen"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:87
 msgid ""
@@ -2685,7 +2723,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:682
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
-msgstr ""
+msgstr "Signalen"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:9
 msgid ""
@@ -8393,7 +8431,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/unity_to_godot.rst:19
 #: ../../docs/community/contributing/documentation_guidelines.rst:102
 msgid "License"
-msgstr ""
+msgstr "Licentie"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:19
 msgid ""
@@ -8993,7 +9031,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
-msgstr ""
+msgstr "Pad"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
 msgid ""
@@ -10449,7 +10487,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:71
 #: ../../docs/development/cpp/object_class.rst:94
 msgid "Constants"
-msgstr ""
+msgstr "Constanten"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:633
 msgid ""
@@ -14254,7 +14292,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
 msgid "End"
-msgstr ""
+msgstr "Einde"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:163
 msgid "get_area()"
@@ -15200,7 +15238,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:279
 #: ../../docs/development/file_formats/tscn.rst:365
 msgid "Animation"
-msgstr ""
+msgstr "Animatie"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
 msgid "Animation supported:"
@@ -16796,7 +16834,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
-msgstr ""
+msgstr "Exporteren"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:4
 msgid "Exporting projects"
@@ -20806,7 +20844,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:468
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:133
 msgid "Tools"
-msgstr ""
+msgstr "Gereedschappen"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:470
 msgid ""
@@ -22478,7 +22516,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:382
 msgid "Depth"
-msgstr ""
+msgstr "Diepte"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:384
 msgid ""
@@ -32559,7 +32597,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/index.rst:2
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:4
 #: ../../docs/tutorials/audio/audio_buses.rst:43
@@ -42203,7 +42241,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:112
 #: ../../docs/tutorials/viewports/viewports.rst:38
 msgid "Input"
-msgstr ""
+msgstr "Invoer"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:114
 msgid ""
@@ -44277,7 +44315,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:184
 msgid "Class"
-msgstr ""
+msgstr "Klasse"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:184
 msgid "Operator"
@@ -51901,7 +51939,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #: ../../docs/tutorials/plugins/editor/index.rst:2
 msgid "Editor plugins"
@@ -53927,7 +53965,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:121
 msgid "Testing"
-msgstr ""
+msgstr "Testen"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:123
 msgid ""
@@ -55818,7 +55856,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid "Visible Navigation"
-msgstr ""
+msgstr "Navigatie zichtbaar"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -55826,7 +55864,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:43
 msgid "Sync Scene Changes"
-msgstr ""
+msgstr "Sceneveranderingen synchroniseren"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:45
 msgid ""
@@ -55837,7 +55875,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
 msgid "Sync Script Changes"
-msgstr ""
+msgstr "Scriptveranderingen synchroniseren"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:51
 msgid ""
@@ -59212,7 +59250,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
-msgstr ""
+msgstr "Zet"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
@@ -61014,7 +61052,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:347
 msgid "Future"
-msgstr ""
+msgstr "Toekomst"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:349
 msgid ""

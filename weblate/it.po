@@ -6,11 +6,13 @@
 # Alessio Corridori <alessiocorridori@hotmail.com>, 2018.
 # Andrea Brunato <andrewlloys@gmail.com>, 2018.
 # cento <a.cento@icloud.com>, 2018.
+# Christian Biffi <creixx@virgilio.it>, 2019.
 # Daniele Tolomelli <daniel.tolomelli@gmail.com>, 2018.
 # Dario D'Ambra <legione0@ymail.com>, 2018.
 # Davide Cristini <davcri91@gmail.com>, 2018.
 # Davide Wayan Mores <moresdavidewayan@gmail.com>, 2018.
 # Giacomo Bella <foliestere@gmail.com>, 2018.
+# Giuseppe Guerra <me@nyodev.xyz>, 2019.
 # Hairic95 <hairic95@gmail.com>, 2019.
 # Luana Pau <ezhael@gmail.com>, 2018.
 # Marabese Fabio <marabesefabio@outlook.it>, 2019.
@@ -31,7 +33,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-20 10:29+0100\n"
-"PO-Revision-Date: 2019-01-20 08:53+0000\n"
+"PO-Revision-Date: 2019-01-26 20:53+0000\n"
 "Last-Translator: Marabese Fabio <marabesefabio@outlook.it>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
@@ -40,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.4-dev\n"
+"X-Generator: Weblate 3.5-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -51,9 +53,11 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"La documentazione di Godot è disponibile in diverse lingue e versioni. "
+"Espandi il pannello \"Read the Docs\" in fondo alla sidebar per vedere la "
+"lista."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the development (master) branch. Looking for "
 "the documentation of the current **stable** branch? `Have a look here "
@@ -69,6 +73,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
+"Questa documentazione è tradotta da `quella originale in inglese <https://"
+"docs.godotengine.org/en/latest>`_ da membri della community su `Weblate "
+"<https://hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -84,6 +91,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"Al momento, le traduzioni localizzate sono disponibili solo per il ramo "
+"\"latest\" (development), ma dovrebbero essere adatte per imparare come "
+"usare le versioni stabili di Godot."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -2759,7 +2769,7 @@ msgstr "Etichetta"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr ""
+msgstr "Bottone"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"
@@ -2813,6 +2823,10 @@ msgid ""
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
+"Il nodo al quale stiamo attaccando lo script è un pannello, quindi il campo "
+"Eredita si riempirà automaticamente con \"Pannello\". Questo è quello che "
+"vogliamo, dato che l'obiettivo dello script è quello di estendere le "
+"funzionalità del nostro nodo."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:146
 msgid "Finally, enter a path name for the script and select Create:"
@@ -2824,6 +2838,9 @@ msgid ""
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
 "script property under Inspector:"
 msgstr ""
+"Lo script verrà quindi creato e aggiunto al nodo. Puoi vederlo rappresentato "
+"come un'icona \"Apri Script\" affianco al nodo nella tab \"Scene\", così "
+"come nelle proprietà dello script in Inspector:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
 msgid ""
@@ -2831,6 +2848,9 @@ msgid ""
 "highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
+"Per modificare lo script, seleziona uno dei pulsanti evidenziati "
+"nell'immagine qua sopra. Questo ti porterà all'Editor dello Script, che "
+"includerà un modello predefinito:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -43424,7 +43444,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:128
 msgid "Capture"
-msgstr ""
+msgstr "Cattura"
 
 #: ../../docs/tutorials/viewports/viewports.rst:130
 msgid ""
@@ -44913,7 +44933,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:184
 msgid "Class"
-msgstr ""
+msgstr "Classe"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:184
 msgid "Operator"

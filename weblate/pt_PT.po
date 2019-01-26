@@ -8,14 +8,14 @@
 # João Lopes <linux-man@hotmail.com>, 2018.
 # Miguel Mendes <miguelgamendes@gmail.com>, 2018.
 # Nuno Lopes <n.triguinho@gmail.com>, 2018.
-# ssantos <ssantos@web.de>, 2018.
+# ssantos <ssantos@web.de>, 2018-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-20 10:29+0100\n"
-"PO-Revision-Date: 2018-12-31 12:11+0000\n"
+"PO-Revision-Date: 2019-01-26 20:53+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_PT/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.4-dev\n"
+"X-Generator: Weblate 3.5-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -35,6 +35,9 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"A documentação do Godot está disponível em vários idiomas e versões. Expanda "
+"o painel \"ler os documentos\" na parte inferior da barra lateral para ver a "
+"lista."
 
 #: ../../docs/index.rst:10
 #, fuzzy
@@ -53,6 +56,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
+"Esta documentação é traduzida do original em Inglês <https://docs."
+"godotengine.org/en/latest>`_ por membros da comunidade em `Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -61,6 +67,9 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
+"Dependendo do nível de conclusão do esforço de tradução, você pode encontrar "
+"parágrafos ou páginas inteiras que ainda estão em inglês. Você pode ajudar a "
+"comunidade fornecendo novas traduções ou revendo as já existentes no Weblate."
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -68,6 +77,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"Por enquanto, traduções localizadas estão disponíveis apenas para o ramo "
+"\"mais recente\" (desenvolvimento), mas devem ser adequadas para aprender "
+"como usar versões estáveis do Godot."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -2242,6 +2254,8 @@ msgstr "A habilidade de subdividir cenas e torná-las mais fáceis de gerenciar.
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
 msgstr ""
+"Uma ferramenta para gerenciar e editar várias instâncias de nós ao mesmo "
+"tempo."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:13
 msgid ""
@@ -4351,6 +4365,9 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"Cada vez que um inimigo atinge o jogador, o sinal será emitido. Precisamos "
+"de desactivar a colisão do jogador para não activarmos o sinal de ``hit`` "
+"mais de uma vez."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
 msgid ""
@@ -4358,6 +4375,9 @@ msgid ""
 "middle of the engine's collision processing. Using ``call_deferred()`` "
 "allows us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"Desactivar a forma da área de colisão pode causar um erro se ocorrer no meio "
+"do processamento de colisão do motor. Usando ``call_deferred()`` nos permite "
+"ter o Godot esperando para desativar a forma até que seja seguro faze-lo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -4945,12 +4965,12 @@ msgstr "Text: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid "*Layout* : \"Top Wide\""
-msgstr ""
+msgstr "*Layout* : \"Top Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
 msgid "*Align* : \"Center\""
-msgstr ""
+msgstr "*Align* : \"Center\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "MessageLabel"
@@ -5031,6 +5051,10 @@ msgid ""
 "useful to delay, such as in the above code, where we want to wait a little "
 "bit of time before showing the \"Start\" button."
 msgstr ""
+"Quando você precisa pausar por breve, uma alternativa para usar um nó Timer "
+"é usar a função ``create_timer()`` do SceneTree. Isto pode ser muito útil "
+"para atrasar, como no código acima, onde queremos esperar um pouco de tempo "
+"antes de mostrar o botão \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
 #, fuzzy
@@ -5193,7 +5217,7 @@ msgstr "Por fim, adicione ``$SomDeMorte.play()`` na função ``game_over()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
 msgid "Keyboard Shortcut"
-msgstr ""
+msgstr "Atalho de teclado"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
 msgid ""
@@ -5201,6 +5225,9 @@ msgid ""
 "we could also start the game by pressing a key on the keyboard. One way to "
 "do this is using the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
+"Uma vez que o jogo é jogado com controlos de teclado, seria conveniente se "
+"também pudéssemos começar o jogo premindo uma tecla no teclado. Uma maneira "
+"de fazer isso é usar a propriedade \"Shortcut\" do nó ``Button``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid ""
