@@ -57,7 +57,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: 2019-01-24 05:19+0000\n"
 "Last-Translator: ws00010203 <ws00010203@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -556,11 +556,12 @@ msgstr "Godot支持哪些平台？"
 msgid "**For the editor:**"
 msgstr "**编辑器:**"
 
-#: ../../docs/about/faq.rst:35
+#: ../../docs/about/faq.rst:35 ../../docs/tutorials/misc/jitter_stutter.rst:53
 msgid "Windows"
 msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
+#: ../../docs/tutorials/misc/jitter_stutter.rst:78
 msgid "macOS"
 msgstr "macOS系统"
 
@@ -578,11 +579,13 @@ msgstr "Windows (包括 UWP)"
 
 #: ../../docs/about/faq.rst:44
 #: ../../docs/getting_started/step_by_step/exporting.rst:185
+#: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "Android"
 msgstr "Android"
 
 #: ../../docs/about/faq.rst:45
 #: ../../docs/getting_started/step_by_step/exporting.rst:237
+#: ../../docs/tutorials/misc/jitter_stutter.rst:90
 msgid "iOS"
 msgstr "iOS"
 
@@ -6637,8 +6640,8 @@ msgstr "设计GUI"
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
-"energy bar, and bomb and rupee counters. By the end of this tutorial, you'll "
-"have a game GUI, ready to control with GDscript or VisualScript:"
+"energy bar, and bomb and emerald counters. By the end of this tutorial, "
+"you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
 "既然您已经掌握了基本知识, 我们将看到如何利用可复用的 UI 组件构建游戏用户界面 "
 "(GUI): 生命条、能量条、炸弹和卢比计数器。直到本教程结束时, 您将拥有一个游戏 "
@@ -6705,7 +6708,8 @@ msgstr "生命和能量条"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-msgid "The bomb and rupee counters on the right"
+#, fuzzy
+msgid "The bomb and emerald counters on the right"
 msgstr "炸弹和卢比计数器在右边"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
@@ -6720,12 +6724,13 @@ msgid "The life and energy bars on the left"
 msgstr "左边是生命和能量条"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
+#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
 "``HBoxContainer`` to manage our two columns. The two bars stack on top of "
 "one another inside a ``VBoxContainer``. And we'll need a last "
-"``HBoxContainer`` in the right column to place the bomb and rupee counters "
+"``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
 "这使得嵌套容器变得更加容易:我们在屏幕的边界周围使用了一个`MarginContainer`，"
@@ -7091,12 +7096,14 @@ msgstr ""
 "设置。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
-msgid "Design the bomb and rupee counters"
+#, fuzzy
+msgid "Design the bomb and emerald counters"
 msgstr "设计炸弹和卢比计数器"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
+#, fuzzy
 msgid ""
-"The bomb and rupee counters are like the bar's ``Count`` node. So we'll "
+"The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
 "炸弹和卢比计数器就像条形栏的`Count 计数`节点。我们将复制它并将其用作模板。"
@@ -7249,13 +7256,14 @@ msgstr ""
 "变量，那就太好了。Godot让我们用继承的场景来做这个。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
+#, fuzzy
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
-"``BombCounter``, and the ``RupeeCounter``. Select the ``Bar`` HBoxContainer. "
-"Right click on it and click on ``Save Branch as Scene``. Save the scene as "
-"``Bar.tscn``. You should see the node branch turn it to a single ``Bar`` "
-"node."
+"``BombCounter``, and the ``EmeraldCounter``. Select the ``Bar`` "
+"HBoxContainer. Right click on it and click on ``Save Branch as Scene``. Save "
+"the scene as ``Bar.tscn``. You should see the node branch turn it to a "
+"single ``Bar`` node."
 msgstr ""
 "让我们将`Counter`和`Bar`两个分支都保存为单独的场景，我们将减少它们，以创建"
 "`LifeBar`、`EnergyBar`、`BombCounter`和`smashing - ounter`。选择"
@@ -7545,7 +7553,8 @@ msgstr ""
 "LifeBar的计数节点都是100像素宽，因此两种量规都可以完美地对齐。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-msgid "Prepare the bomb and rupee counters"
+#, fuzzy
+msgid "Prepare the bomb and emerald counters"
 msgstr "准备炸弹和卢比计数器"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
@@ -7564,16 +7573,17 @@ msgid "The bomb counter is the same as the original Counter scene"
 msgstr "炸弹计数器与原计数器场景相同"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
+#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
-"once more. Rename the root node ``RupeeCounter`` and save the scene as "
-"``RupeeCounter.tscn``. For this one, we mainly need to replace the bomb icon "
-"with the rupee icon. In the FileSystem tab, drag the ``rupees_icon.png`` "
-"onto the ``Icon`` node's ``Texture`` slot. ``Icon`` already anchors to the "
-"right edge of the ``Background`` node so we can change its position and it "
-"will scale and reposition with the ``RupeeCounter`` container. Shift the "
-"rupee icon a little bit to the right and down. Use the Arrow Keys on the "
-"keyboard to nudge its position. Save, and we're done with all the UI "
+"once more. Rename the root node ``EmeraldCounter`` and save the scene as "
+"``EmeraldCounter.tscn``. For this one, we mainly need to replace the bomb "
+"icon with the emerald icon. In the FileSystem tab, drag the ``emeralds_icon."
+"png`` onto the ``Icon`` node's ``Texture`` slot. ``Icon`` already anchors to "
+"the right edge of the ``Background`` node so we can change its position and "
+"it will scale and reposition with the ``EmeraldCounter`` container. Shift "
+"the emerald icon a little bit to the right and down. Use the Arrow Keys on "
+"the keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
 "转到`Scene -> New Inherited Scene`，再次选择`Counter.tscn`。将根节点重命名为"
@@ -7585,7 +7595,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
 #, fuzzy
-msgid "The rupee counter should look something like this"
+msgid "The emerald counter should look something like this"
 msgstr "卢比计数器应该是这样的"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
@@ -7609,9 +7619,10 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "生命条和能量条自动对齐"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
+#, fuzzy
 msgid ""
-"Now, drag and drop the ``BombCounter.tscn`` and ``RupeeCounter.tscn`` scenes "
-"onto the ``Counters`` node. They'll resize automatically."
+"Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
+"scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
 "现在，将`BombCounter.tscn`和`RupeeCounter.tscn`场景拖放到`Counters`节点上。它"
 "们会自动调整大小。"
@@ -7621,8 +7632,9 @@ msgid "The nodes resize to take all the available vertical space"
 msgstr "节点调整大小以获取所有可用的垂直空间"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
+#, fuzzy
 msgid ""
-"To let the ``RupeeCounter`` and ``BombCounter`` use the size we defined in "
+"To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
 "container. Select the ``Counters`` node and unfold the ``Size Flags`` "
 "section in the Inspector. Uncheck the ``Fill`` tag for the ``Vertical`` "
@@ -11291,13 +11303,13 @@ msgstr "关键字"
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:366
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:431
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:15
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:115
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:166
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:262
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:175
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:17
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:70
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:95
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:144
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:193
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:30
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:92
@@ -16023,6 +16035,7 @@ msgstr "使用顺序模式，在遵守处理顺序的情况下更有意义:"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:161
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:180
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 msgid "C#"
 msgstr "C#"
 
@@ -21121,14 +21134,11 @@ msgid "Exporting for the Web"
 msgstr "导出到Web"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:6
+#, fuzzy
 msgid ""
 "HTML5 export allows publishing games made in Godot Engine to the browser. "
-"This requires support for the recent technologies `WebAssembly <https://"
-"webassembly.org/>`__ and `WebGL 2.0 <https://www.khronos.org/webgl/>`__ in "
-"the user's browser. **Firefox** and **Chromium** (Chrome, Opera) are the "
-"most popular supported browsers, **Safari** and **Edge** do not work yet. On "
-"**iOS**, all browsers must be based on WebKit (i.e. Safari), so they will "
-"also not work."
+"This requires support for `WebAssembly <https://webassembly.org/>`__ and "
+"`WebGL <https://www.khronos.org/webgl/>`__ in the user's browser."
 msgstr ""
 "HTML5导出允许将在Godot Engine中制作的游戏发布到浏览器。 这需要在用户的浏览器"
 "中支持最近的技术 `WebAssembly <https://webassembly.org/>`__ 和 `WebGL 2.0 "
@@ -21136,11 +21146,78 @@ msgstr ""
 "(Chrome，Opera)是最受欢迎的支持浏览器， **Safari** 和 **Edge** 尚不起作用。 "
 "在 **iOS** 上，所有浏览器必须基于WebKit(即Safari)，因此它们也不起作用。"
 
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:11
+msgid ""
+"Use the browser-integrated developer console, usually opened with :kbd:"
+"`F12`, to view **debug information** like JavaScript, engine, and WebGL "
+"errors."
+msgstr ""
+
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
+msgid ""
+"Many browsers, Chromium-based browsers specifically, will not load exported "
+"projects when **opened locally** per ``file://`` protocol. To get around "
+"this, use a local server."
+msgstr ""
+"许多浏览器，特别是基于Chromium的浏览器，在 **本地打开** 时不会加载导出的项目"
+"的每个 ``file://`` 协议。 要解决此问题，请使用本地服务器。"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
+msgid ""
+"Python offers an easy method to start a local server. Use ``python -m "
+"SimpleHTTPServer`` with Python 2 or"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:21
+#, fuzzy
+msgid ""
+"``python -m http.server`` with Python 3 to serve the current working "
+"directory at ``http://localhost:8000``."
+msgstr ""
+"Python提供了一个简单的方法，使用Python2中的 ``python -m SimpleHTTPServer`` 或"
+"Python 3的 ``python -m http.server`` 将在 ``http://localhost:8000`` 上提供当"
+"前的工作目录。"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:25
+msgid "WebGL 2"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
+msgid ""
+"Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
+"HTML5 export uses *WebGL 2* when the *GLES3* option selected."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
+msgid ""
+"Usage of WebGL 2 is not recommended due to its expected removal from Godot "
+"without replacement."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:33
+#, fuzzy
+msgid ""
+"WebGL 2 is not supported in all browsers. **Firefox** and **Chromium** "
+"(Chrome, Opera) are the most popular supported browsers, **Safari** and "
+"**Edge** do not work. On **iOS**, all browsers are based on WebKit (i.e. "
+"Safari), so they will also not work."
+msgstr ""
+"HTML5导出允许将在Godot Engine中制作的游戏发布到浏览器。 这需要在用户的浏览器"
+"中支持最近的技术 `WebAssembly <https://webassembly.org/>`__ 和 `WebGL 2.0 "
+"<https://www.khronos.org/webgl/>`__ 。 ** Firefox ** 和 **Chromium** "
+"(Chrome，Opera)是最受欢迎的支持浏览器， **Safari** 和 **Edge** 尚不起作用。 "
+"在 **iOS** 上，所有浏览器必须基于WebKit(即Safari)，因此它们也不起作用。"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
+msgid ""
+"Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
 msgid "Limitations"
 msgstr "限制"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:17
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
 msgid ""
 "For security and privacy reasons, many features that work effortlessly on "
 "native platforms are more complicated on the web platform. Following is a "
@@ -21150,24 +21227,11 @@ msgstr ""
 "出于安全和隐私的原因，许多在本机平台上轻松工作的功能在Web平台上更加复杂。 以"
 "下列出了将Godot游戏移植到网络时应注意的限制。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:22
-msgid "Exported ``.html`` file must not be reused"
-msgstr "导出的 ``.html`` 文件不得重复使用"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:24
-msgid ""
-"On export, several text placeholders are replaced in the **generated HTML "
-"file** specifically for the given export options. It must not be reused in "
-"further exports."
-msgstr ""
-"在导出时，几个文本占位符将替换为 **生成的HTML文件** ，专门用于给定的导出选"
-"项。 它不得在进一步的出口中重复使用。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:29
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
 msgid "Using cookies for data persistence"
 msgstr "使用cookie进行数据持久化"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:31
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:50
 msgid ""
 "Users must **allow cookies** (specifically IndexedDB) if persistence of the "
 "``user://`` file system is desired. When playing a game presented in an "
@@ -21178,7 +21242,7 @@ msgstr ""
 "IndexedDB)。 当玩“iframe”中呈现的游戏时，还必须启用 **第三方** cookie。 隐身/"
 "隐私浏览模式也可以防止持久性。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:36
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
 msgid ""
 "The method ``OS.is_userfs_persistent()`` can be used to check if the "
 "``user://`` file system is persistent, but can give false positives in some "
@@ -21187,131 +21251,158 @@ msgstr ""
 "方法 ``OS.is_userfs_persistent()`` 可用于检查 ``user://`` 文件系统是否持久，"
 "但在某些情况下会给出误报。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
 msgid "Full screen and mouse capture"
 msgstr "全屏和鼠标捕获"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
+#, fuzzy
 msgid ""
-"Browsers do not allow arbitrarily **entering full screen** at any time. The "
-"same goes for **capturing the cursor**. Instead, these actions have to occur "
-"as a response to a JavaScript input event. In Godot, this is most easily "
-"done by entering full screen from within an input callback such as "
-"``_input`` or ``_unhandled_input``."
+"Browsers do not allow arbitrarily **entering full screen**. The same goes "
+"for **capturing the cursor**. Instead, these actions have to occur as a "
+"response to a JavaScript input event. In Godot, this means entering full "
+"screen from within a pressed input event callback such as ``_input`` or "
+"``_unhandled_input``. Querying the :ref:`class_Input` singleton is not "
+"sufficient, the relevant input event must currently be active."
 msgstr ""
 "浏览器不允许任意 **随意进入全屏** 。 **捕获光标** 也是如此。 相反，这些操作必"
 "须作为对JavaScript输入事件的响应而发生。 在Godot中，通过在输入回调中输入全"
 "屏，例如 ``_input`` 或 ``_unhandled_input`` ，最容易做到这一点。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:49
-msgid "For the same reason, the full screen project setting is ignored."
-msgstr "出于同样的原因，将忽略全屏项目设置。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:52
-msgid "HTTPClient"
-msgstr "HTTPClient"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:54
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:69
 msgid ""
-"The ``HTTPClient`` implementation for the HTML5 platform has several "
-"restrictions:"
-msgstr "HTML5平台的 ``HTTPClient`` 实现有几个限制:"
+"For the same reason, the full screen project setting doesn't work unless the "
+"engine is started from within a valid input event handler. This requires :"
+"ref:`customization of the HTML page <doc_customizing_html5_shell>`."
+msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:57
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
+msgid "Audio autoplay"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:76
+msgid ""
+"Chrome restricts how websites may play audio. It may be necessary for the "
+"player to click or tap or press a key to enable audio."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
+msgid ""
+"Google offers additional information about their `Web Audio autoplay "
+"policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
+"autoplay>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
+msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
+msgid "The HTTP classes have several restrictions on the HTML5 platform:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
 msgstr "无法访问或更改 ``StreamPeer``"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:58
-msgid "Blocking mode is not available"
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
+#, fuzzy
+msgid "Threaded/Blocking mode is not available"
 msgstr "阻止模式不可用"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:59
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:89
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr "每帧不能进行多次，因此循环中的轮询将冻结"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
 msgid "No chunked responses"
 msgstr "没有重复的回应"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:61
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
 msgid "Host verification cannot be disabled"
 msgstr "无法禁用主机验证"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
+#, fuzzy
 msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
-"Security/Same-origin_policy>`_"
+"Security/Same-origin_policy>`__"
 msgstr ""
 "遵循 `同源政策 <https://developer.mozilla.org/en-US/docs/Web/Security/Same-"
 "origin_policy>`_"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:65
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
+msgid "Exported ``.html`` file must not be reused"
+msgstr "导出的 ``.html`` 文件不得重复使用"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
+msgid ""
+"On export, several text placeholders are replaced in the **generated HTML "
+"file** specifically for the given export options. It must not be reused in "
+"further exports."
+msgstr ""
+"在导出时，几个文本占位符将替换为 **生成的HTML文件** ，专门用于给定的导出选"
+"项。 它不得在进一步的出口中重复使用。"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
+msgid "Boot splash is not displayed"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:104
+msgid ""
+"The default HTML page does not display the boot splash while loading. "
+"However, the image is exported as a PNG file, so :ref:`custom HTML pages "
+"<doc_customizing_html5_shell>` can display it."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
 msgid "Unimplemented functionality"
 msgstr "未实现的功能"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:67
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:111
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
 msgstr "HTML5平台上目前无法使用以下功能:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:69
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:7
 msgid "Threads"
 msgstr "线程"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
 msgid "GDNative"
 msgstr "GDNative"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:71
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
 msgid "Clipboard synchronisation between engine and operating system"
 msgstr "引擎和操作系统之间的剪贴板同步"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:72
-msgid "Networking other than ``HTTPClient``"
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
+#, fuzzy
+msgid ""
+"Networking other than :ref:`class_HTTPClient` and :ref:"
+"`class_WebSocketClient`"
 msgstr "除了 ``HTTPClient`` 之外的网络"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
+#, fuzzy
 msgid ""
 "Check the `list of open HTML5 issues on Github <https://github.com/"
-"godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`_ to see "
-"if functionality you're interested in has an issue yet. If not, open one to "
-"communicate your interest."
+"godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`__ to see "
+"if the functionality you're interested in has an issue yet. If not, open one "
+"to communicate your interest."
 msgstr ""
 "检查 `Github上的HTML5问题列表 <https://github.com/godotengine/godot/issues?"
 "q=is:open+is:issue+label:platform:html5>`_ 看看您是否有感兴趣的功能或则问"
 "题。 如果没有，请打开一个来表达您的兴趣。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
-msgid "Starting exported games from the local file system"
-msgstr "从本地文件系统启动导出的游戏"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:81
-msgid ""
-"Many browsers, Chromium-based browsers specifically, will not load exported "
-"projects when **opened locally** per ``file://`` protocol. To get around "
-"this, use a local server."
-msgstr ""
-"许多浏览器，特别是基于Chromium的浏览器，在 **本地打开** 时不会加载导出的项目"
-"的每个 ``file://`` 协议。 要解决此问题，请使用本地服务器。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
-msgid ""
-"Python offers an easy method for this; using ``python -m SimpleHTTPServer`` "
-"with Python 2 or ``python -m http.server`` with Python 3 will serve the "
-"current working directory on ``http://localhost:8000``."
-msgstr ""
-"Python提供了一个简单的方法，使用Python2中的 ``python -m SimpleHTTPServer`` 或"
-"Python 3的 ``python -m http.server`` 将在 ``http://localhost:8000`` 上提供当"
-"前的工作目录。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 msgid "Serving the files"
 msgstr "提供文件"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:127
 msgid ""
 "Exporting for the web generates several files to be served from a web "
 "server, including a default HTML page for presentation. A custom HTML file "
@@ -21320,7 +21411,7 @@ msgstr ""
 "导出为Web生成多个要从Web服务器提供的文件，包括用于演示的默认HTML页面。 可以使"
 "用自定义HTML文件，请参阅 :ref:`doc_customizing_html5_shell` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:131
 msgid ""
 "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache "
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
@@ -21329,18 +21420,18 @@ msgstr ""
 "生成的 ``.html`` 文件可以在Apache服务器中用作 ``DirectoryIndex`` ，并且可以重"
 "命名为例如 ``index.html`` 在任何时候，默认情况下它的名称永远不会依赖。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:100
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:135
+#, fuzzy
 msgid ""
-"The HTML page is designed to fit the game perfectly without cutting off "
-"parts of the canvas when the browser window is scaled to the game's "
-"dimensions. This way it can be inserted into an ``<iframe>`` with the game's "
-"size, as is common on most web game hosting sites."
+"The HTML page draws the game at maximum size within the browser window. This "
+"way it can be inserted into an ``<iframe>`` with the game's size, as is "
+"common on most web game hosting sites."
 msgstr ""
 "HTML页面旨在完美地适应游戏，而不会在浏览器窗口缩放到游戏大小时切断画布的某些"
 "部分。 通过这种方式，它可以插入到游戏大小的 ``<iframe>`` 中，这在大多数网页游"
 "戏托管网站上都很常见。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:105
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:139
 msgid ""
 "The other exported files are served as they are, next to the ``.html`` file, "
 "names unchanged. The ``.wasm`` file is a binary WebAssembly module "
@@ -21356,16 +21447,23 @@ msgstr ""
 "引导启动图像。 它不在默认的HTML页面中使用，但包括在 :ref:`custom HTML pages "
 "<doc_customizing_html5_shell>`。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:147
+#, fuzzy
 msgid ""
-"The ``.pck`` file is binary, usually delivered with the MIME-type "
-"``application/octet-stream``. The ``.wasm`` file is delivered as "
-"``application/wasm``."
+"The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
+"`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
+"`application/wasm`."
 msgstr ""
 "``.pck`` 文件是二进制文件，通常与MIME类型 ``application / octet-stream`` 一起"
 "提供。 ``.wasm`` 文件以 ``application / wasm`` 形式提供。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:151
+msgid ""
+"Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
+"mimetype:`application/wasm` can prevent some start-up optimizations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:155
 msgid ""
 "Delivering the files with server-side compression is recommended especially "
 "for the ``.pck`` and ``.wasm`` files, which are usually large in size. The "
@@ -21375,11 +21473,11 @@ msgstr ""
 "建议使用服务器端压缩来提供文件，尤其是 ``.pck`` 和 ``.wasm`` 文件，这些文件通"
 "常很大。 WebAssembly模块压缩特别好，通过gzip压缩缩小到原始大小的四分之一。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
 msgid "Export options"
 msgstr "导出选项"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:163
 msgid ""
 "If a runnable web export template is available, a button appears between the "
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
@@ -21388,7 +21486,7 @@ msgstr ""
 "如果可以使用可运行的Web导出模板，则编辑器中的 *停止场景* 和 *播放编辑的场景* "
 "按钮之间会出现一个按钮，可以在默认浏览器中快速打开游戏进行测试。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:129
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:167
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
@@ -21396,7 +21494,7 @@ msgstr ""
 "如果给出了 **Custom HTML shell** 文件的路径，则将使用它来代替默认的HTML页"
 "面。 请参阅 :ref:`doc_customizing_html5_shell`。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:132
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
 msgid ""
 "**Head Include** is appended into the ``<head>`` element of the generated "
 "HTML page. This allows to, for example, load webfonts and third-party "
@@ -21405,26 +21503,14 @@ msgstr ""
 "**Head Include** 被附加到生成的HTML页面的 ``<head>`` 元素中。 例如，这允许加"
 "载webfonts和第三方JavaScript API，包括CSS或运行JavaScript代码。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:136
-msgid ""
-"Turning on **Export with Debug** when exporting will, in addition to "
-"enabling various debug features of the engine, display a debug output below "
-"the canvas when using the default HTML page, displaying JavaScript and "
-"engine errors. You can also use the browser-integrated developer console, "
-"usually opened with the F12 key, which often shows more information, "
-"including WebGL errors."
-msgstr ""
-"在导出时启用 **导出和调试** 除了启用引擎的各种调试功能外，在使用默认HTML页面"
-"时显示画布下方的调试输出，显示JavaScript和引擎错误。 您还可以使用浏览器集成的"
-"开发人员控制台，通常使用F12键打开，这通常会显示更多信息，包括WebGL错误。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:145
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:177
 msgid "Calling JavaScript from script"
 msgstr "从脚本调用JavaScript"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:147
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
+#, fuzzy
 msgid ""
-"In web builds, the ``JavaScript`` singleton is implemented. If offers a "
+"In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
 "function of the same name. It takes a string as an argument and executes it "
 "as JavaScript code. This allows interacting with the browser in ways not "
@@ -21435,26 +21521,26 @@ msgstr ""
 "JavaScript代码执行。 这允许以与集成到Godot中的脚本语言不可能的方式与浏览器交"
 "互。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:158
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:190
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
 msgstr ""
 "最后一个JavaScript语句的值转换为GDScript值，并在某些情况下由 ``eval()`` 返回:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr "JavaScript ``number`` 作为GDScript的 :ref:`class_float` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:162
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr "JavaScript ``boolean`` 作为GDScript的 :ref:`class_bool` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:163
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:195
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr "JavaScript ``string`` 作为GDScript的 :ref:`class_String` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
@@ -21462,11 +21548,11 @@ msgstr ""
 "JavaScript ``RellBuffer``， ``TypedArray`` 和 ``DataView`` 作为GDScript的 :"
 "ref:`class_PoolByteArray` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr "任何其他JavaScript值都返回为 ``null`` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:175
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:207
 msgid ""
 "HTML5 export templates may be built without support for the singleton. With "
 "such templates, and on platforms other than HTML5, calling ``JavaScript."
@@ -21477,7 +21563,13 @@ msgstr ""
 "上，调用 ``JavaScript.eval`` 也会返回 ``null`` 。 可以使用 ``JavaScript`` 来"
 "检查单例的可用性 :ref:`feature tag <doc_feature_tags>`::"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:186
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:220
+msgid ""
+"GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
+"``my_func3()`` above, are useful to keep JavaScript code readable."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:223
 msgid ""
 "The ``eval`` method also accepts a second, optional Boolean argument, which "
 "specifies whether to execute the code in the global execution context, "
@@ -21485,454 +21577,6 @@ msgid ""
 msgstr ""
 "``eval`` 方法也接受第二个可选的布尔参数，它指定是否在全局执行上下文中执行代"
 "码，默认为 ``false`` 以防止污染全局命名空间::"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:4
-msgid "Customizing the Web export HTML page"
-msgstr "自定义Web导出HTML页面"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:6
-msgid ""
-"Rather than the default HTML page that comes with the export templates, it "
-"is also possible to use a custom HTML page. This allows drastic "
-"customization of the final web presentation and behavior. The path to the "
-"custom HTML page is specified in the export options as ``Html/Custom Html "
-"Shell``."
-msgstr ""
-"除了导出模板附带的默认HTML页面之外，还可以使用自定义HTML页面。 这允许对最终的"
-"Web表示和行为进行大量定制。 自定义HTML页面的路径在导出选项中指定为 ``Html/"
-"Custom Html Shell`` 。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:11
-msgid ""
-"The default HTML page is available in the Godot Engine repository at `/misc/"
-"dist/html/default.html <https://github.com/godotengine/godot/blob/master/"
-"misc/dist/html/default.html>`_. Some simple use-cases where customizing the "
-"default page is useful include:"
-msgstr ""
-"Godot Engine存储库中提供了默认的HTML页面 `/mist/dist/html/default.html "
-"<https://github.com/godotengine/godot/blob/master/misc/dist/html/default."
-"html>`_ 。 一些简单的用例，其中自定义默认页面很有用包括:"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:15
-msgid "Loading files from a different directory"
-msgstr "从其他目录加载文件"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:16
-msgid "Loading a ``.zip`` file instead of a ``.pck`` file as main pack"
-msgstr "加载 ``.zip`` 文件而不是 ``.pck`` 文件作为主包"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:17
-msgid "Loading engine files from a different directory than the main pack file"
-msgstr "从主包文件以外的目录中加载引擎文件"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:18
-msgid ""
-"Loading some extra files before the engine starts, so they are available in "
-"the file system later"
-msgstr "在引擎启动之前加载一些额外的文件，以便稍后在文件系统中可用"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:20
-msgid ""
-"Passing custom \"command line\" arguments, e.g. ``-s`` to start a MainLoop "
-"script"
-msgstr "传递自定义“命令行”参数，例如 ``-s`` 启动MainLoop脚本"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:23
-msgid "Placeholder substitution"
-msgstr "占位符替换"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:25
-msgid ""
-"When exporting the game, several placeholders in the HTML page are replaced "
-"with values depending on the export:"
-msgstr "导出游戏时，HTML页面中的多个占位符将替换为值，具体取决于导出:"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:29
-msgid "Placeholder"
-msgstr "占位符"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:29
-msgid "substituted by"
-msgstr "替代"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:31
-msgid "``$GODOT_BASENAME``"
-msgstr "``$GODOT_BASENAME``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:31
-msgid ""
-"Basename of exported files without suffixes, e.g. ``game`` when exporting "
-"``game.html``"
-msgstr "没有后缀的导出文件的基本名称，例如 ``game`` 在导出 ``game.html`` 时"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:34
-msgid "``$GODOT_DEBUG_ENABLED``"
-msgstr "``$GODOT_DEBUG_ENABLED``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:34
-msgid "``true`` if debugging, ``false`` otherwise"
-msgstr "如果调试就是 ``true`` ，否则是 ``false``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:36
-msgid "``$GODOT_HEAD_INCLUDE``"
-msgstr "``$GODOT_HEAD_INCLUDE``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:36
-msgid ""
-"Custom string to include just before the end of the HTML ``<head>`` element"
-msgstr "自定义字符串，包含在HTML `` <head>`` 元素的结尾之前"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:40
-msgid ""
-"The HTML file must evaluate the JavaScript file ``$GODOT_BASENAME.js``. This "
-"file defines a global ``Engine`` object used to start the engine, :ref:`see "
-"below <doc_javascript_engine_object>` for details."
-msgstr ""
-"HTML文件必须评估JavaScript文件 ``$ GODOT_BASENAME.js`` 。 这个文件定义了一个"
-"用于启动引擎的全局 ``Engine`` 对象，参见 :ref:`see below "
-"<doc_javascript_engine_object>` 了解详细信息。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:44
-msgid ""
-"The boot splash image is exported as ``$GODOT_BASENAME.png`` and can be used "
-"e.g. in ``<img />`` elements."
-msgstr ""
-"引导启动图像被导出为 ``$ GODOT_BASENAME.png`` 并且可以用于例如 在 ``<img /"
-">`` 元素中。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:47
-msgid ""
-"``$GODOT_DEBUG_ENABLED`` can be useful to optionally display e.g. an output "
-"console or other debug tools."
-msgstr ""
-"``$ GODOT_DEBUG_ENABLED`` 可用于可选地显示，例如 输出控制台或其他调试工具。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:50
-msgid ""
-"``$GODOT_HEAD_INCLUDE`` is replaced with the string specified by the export "
-"option ``Html/Head Include``."
-msgstr ""
-"``$GODOT_HEAD_INCLUDE`` 被导出选项 ``Html / Head Include`` 指定的字符串替换。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:56
-msgid "The ``Engine`` object"
-msgstr "``Engine`` 对象"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:58
-msgid ""
-"The JavaScript global object ``Engine`` is defined by ``$GODOT_BASENAME.js`` "
-"and serves as an interface to the engine start-up process."
-msgstr ""
-"JavaScript全局对象 ``Engine`` 由 ``$GODOT_BASENAME.js`` 定义，并作为引擎启动"
-"过程的接口。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:61
-msgid "The object itself has only two methods, ``load()`` and ``unload()``."
-msgstr "对象本身只有两个方法， ``load()`` 和 ``unload()`` 。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:64
-msgid "``Engine.load(basePath)``"
-msgstr "``Engine.load(basePath)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:66
-msgid "Loads the engine from the passed base path."
-msgstr "从传递的基本路径加载引擎。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:68
-msgid "Returns a promise that resolves once the engine is loaded."
-msgstr "返回一旦加载引擎就解析的承诺。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:71
-msgid "``Engine.unload()``"
-msgstr "``Engine.unload()``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:73
-msgid ""
-"Unloads the module to free memory. This is called automatically once the "
-"module is instantiated unless explicitly disabled."
-msgstr ""
-"卸载模块以释放内存。 除非明确禁用，否则在实例化模块后会自动调用此方法。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:77
-msgid "``Engine.isWebGLAvailable(majorVersion = 1)``"
-msgstr "``Engine.isWebGLAvailable(majorVersion = 1)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:79
-msgid ""
-"Returns ``true`` if the given major version of WebGL is available, ``false`` "
-"otherwise. Defaults to ``1`` for WebGL 1.0."
-msgstr ""
-"如果给定的主要版本的WebGL可用，则返回 ``true`` ，否则返回 ``false`` 。 对于"
-"WebGL 1.0，默认为 ``1`` 。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:83
-msgid "Starting an ``Engine`` instance"
-msgstr "启动 ``Engine`` 实例"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:85
-msgid ""
-"The more interesting interface is accessed by instantiating ``Engine`` using "
-"the ``new`` operator:"
-msgstr "通过使用 ``new`` 运算符实例化 ``Engine`` 来访问更有趣的接口:"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:92
-msgid ""
-"This ``Engine`` instance, referred to as ``engine`` with a lower-case ``e`` "
-"from here, is a startable instance of the engine, usually a game. To start "
-"such an instance, the global ``Engine`` object must be loaded, then the "
-"``engine`` instance must be initialized and started."
-msgstr ""
-"这个 ``Engine`` 实例，在这里被称为 ``engine`` ，带有小写的 ``e`` ，是引擎的可"
-"启动实例，通常是游戏。 要启动这样的实例，必须加载全局 ``Engine`` 对象，然后必"
-"须初始化并启动 ``engine`` 实例。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:98
-msgid "``engine.init(basePath)``"
-msgstr "``engine.init(basePath)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:100
-msgid ""
-"Initializes the instance. If the engine wasn't loaded yet, a base path must "
-"be passed from which the engine will be loaded."
-msgstr "初始化实例。 如果尚未加载引擎，则必须传递将从中加载引擎的基本路径。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:103
-msgid ""
-"Returns a promise that resolves once the engine is loaded and initialized. "
-"It can then be started with ``engine.startGame()``"
-msgstr ""
-"返回一旦加载并初始化引擎就解析的承诺。 然后可以用 ``engine.startGame()`` 开始"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:107
-msgid "``engine.preloadFile(file, path)``"
-msgstr "``engine.preloadFile(file, path)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:109
-msgid ""
-"This loads a file so it is available in the file system once the instance is "
-"started. This must be called **before** starting the instance."
-msgstr ""
-"这会加载一个文件，以便在启动实例后在文件系统中可用。 必须在 **启动实例之前调"
-"用** 。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:112
-msgid ""
-"If ``file`` is a string, the file will be loaded from that URL. If ``file`` "
-"is an ``ArrayBuffer`` or a view on one, the buffer will used as the content "
-"of the file."
-msgstr ""
-"如果 ``file`` 是一个字符串，那么该文件将从该URL加载。 如果 ``file`` 是一个 "
-"``ArrayBuffer`` 或一个视图，缓冲区将用作文件的内容。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:116
-msgid ""
-"If ``path`` is a string, it specifies the path by which the file will be "
-"available. This is mandatory if ``file`` is not a string. Otherwise, the "
-"path is derived from the URL of the loaded file."
-msgstr ""
-"如果 ``path`` 是一个字符串，它指定文件可用的路径。 如果 ``file`` 不是字符串，"
-"这是必需的。 否则，路径是从加载的文件的URL派生的。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:120
-msgid "Returns a promise that resolves once the file is preloaded."
-msgstr "返回一个预先加载文件后解析的promise。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:123
-msgid "``engine.start(arg1, arg2, …)``"
-msgstr "``engine.start(arg1, arg2, …)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:125
-msgid ""
-"Starts the instance of the engine, handing the passed strings as arguments "
-"to the ``main()`` function. This allows great control over how the engine is "
-"used, but usually the other methods whose names start with ``engine.start`` "
-"are simpler to use."
-msgstr ""
-"启动引擎实例，将传递的字符串作为参数传递给 ``main()`` 函数。 这样可以很好地控"
-"制引擎的使用方式，但通常名称以 ``engine.start`` 开头的其他方法更易于使用。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:130
-msgid "Returns a promise that resolves once the engine started."
-msgstr "返回引擎启动后解析的承诺。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:133
-msgid "``engine.startGame(mainPack)``"
-msgstr "``engine.startGame(mainPack)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:135
-msgid ""
-"Starts the game with the main pack loaded from the passed URL string and "
-"starts the engine with it."
-msgstr "使用从传递的URL字符串加载的主包启动游戏，并使用它启动引擎。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:138
-msgid ""
-"If the engine isn't loaded yet, the base path of the passed URL will be used "
-"to load the engine."
-msgstr "如果尚未加载引擎，则将使用传递的URL的基本路径来加载引擎。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:141
-msgid "Returns a promise that resolves once the game started."
-msgstr "返回游戏开始后解析的承诺。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:144
-msgid "Configuring start-up behaviour"
-msgstr "配置启动行为"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:146
-msgid ""
-"Beside starting the engine, other methods of the engine instance allow "
-"configuring the behavior:"
-msgstr "除启动引擎外，引擎实例的其他方法还允许配置行为:"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:150
-msgid "``engine.setUnloadAfterInit(enabled)``"
-msgstr "``engine.setUnloadAfterInit(enabled)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:152
-msgid ""
-"Sets whether the Engine will be unloaded automatically after the instance is "
-"initialized. This frees browser memory by unloading files that are no longer "
-"needed once the instance is initialized. However, if more instances of the "
-"engine will be started, the Engine will have to be loaded again."
-msgstr ""
-"设置是否在初始化实例后自动卸载Engine。 这通过卸载初始化实例后不再需要的文件来"
-"释放浏览器内存。 但是，如果将启动更多引擎实例，则必须再次加载引擎。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:157
-msgid "Defaults to ``true``."
-msgstr "默认为 ``true`` 。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:160
-msgid "``engine.setCanvas(canvasElem)``"
-msgstr "``engine.setCanvas(canvasElem)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:162
-msgid ""
-"By default, the first canvas element on the page is used for rendering. By "
-"calling this method, another canvas can be specified."
-msgstr ""
-"默认情况下，页面上的第一个canvas元素用于呈现。 通过调用此方法，可以指定另一个"
-"画布。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:166
-msgid "``engine.setCanvasResizedOnStart(enabled)``"
-msgstr "``engine.setCanvasResizedOnStart(enabled)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:168
-msgid ""
-"Sets whether the canvas will be resized to the width and height specified in "
-"the project settings on start. Defaults to ``true``."
-msgstr ""
-"设置是否将画布调整为启动时项目设置中指定的宽度和高度。 默认为 ``true`` 。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:172
-msgid "``engine.setLocale(locale)``"
-msgstr "``engine.setLocale(locale)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:174
-msgid ""
-"By default, the engine will try to guess the locale to use from the "
-"JavaScript environment. It is usually preferable to use a server-side user-"
-"specified locale, or at least use the locale requested in the HTTP ``Accept-"
-"Language`` header. This method allows specifying such a custom locale string."
-msgstr ""
-"默认情况下，引擎将尝试从JavaScript环境猜测要使用的语言环境。通常最好使用服务"
-"器端用户指定的区域设置，或者至少使用HTTP ``Accept-Language`` header中请求的区"
-"域设置。该方法允许指定这样的自定义区域设置字符串。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:181
-msgid "``engine.setExecutableName(execName)``"
-msgstr "``engine.setExecutableName(execName)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:183
-msgid ""
-"By default, the base name of the loaded engine files is used for the "
-"executable name. This method allows specifying another name."
-msgstr ""
-"默认情况下，已加载的引擎文件的基本名称用于可执行文件名。 此方法允许指定其他名"
-"称。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:187
-msgid "Customizing the presentation"
-msgstr "自定义演示文稿"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:189
-msgid "The following methods are used to implement the presentation:"
-msgstr "以下方法用于实现演示:"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:192
-msgid "``engine.setProgressFunc(func)``"
-msgstr "``engine.setProgressFunc(func)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:194
-msgid ""
-"This method is used to display download progress. The passed callback "
-"function is called with two number arguments, the first argument specifies "
-"bytes loaded so far, the second argument specifies the total number of bytes "
-"to load."
-msgstr ""
-"此方法用于显示下载进度。 使用两个数字参数调用传递的回调函数，第一个参数指定到"
-"目前为止加载的字节，第二个参数指定要加载的总字节数。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:206
-msgid "If the total is 0, it couldn't be calculated. Possible reasons include:"
-msgstr "如果总数为0，则无法计算。 可能的原因包括:"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:209
-msgid "Files are delivered with server-side chunked compression"
-msgstr "文件随服务器端分块压缩一起提供"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:210
-msgid "Files are delivered with server-side compression on Chromium"
-msgstr "文件在Chromium上通过服务器端压缩提供"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:211
-msgid ""
-"Not all file downloads have started yet (usually on servers without multi-"
-"threading)"
-msgstr "并非所有文件下载都已开始(通常在没有多线程的服务器上)"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:214
-msgid "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
-msgstr "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:216
-msgid ""
-"These methods allow implementing custom behavior for the ``stdout`` and "
-"``stderr`` streams. The functions passed in will be called with one string "
-"argument specifying the string to print."
-msgstr ""
-"这些方法允许实现 ``stdout`` 和 ``stderr`` 流的自定义行为。 传入的函数将使用一"
-"个字符串参数调用，该参数指定要打印的字符串。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:227
-msgid ""
-"These methods should usually only be used in debug pages. The ``"
-"$GODOT_DEBUG_ENABLED`` placeholder can be used to check for this."
-msgstr ""
-"这些方法通常只应在调试页面中使用。 可以使用 ``$GODOT_DEBUG_ENABLED`` 占位符来"
-"检查这一点。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:230
-msgid ""
-"By default, ``console.log()`` and ``console.warn()`` are used respectively."
-msgstr "默认情况下，分别使用 ``console.log()`` 和 ``console.warn()`` 。"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:233
-msgid "Accessing the Emscripten ``Module``"
-msgstr "访问Emscripten ``Module``"
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:235
-msgid ""
-"If you know what you're doing, you can access the runtime environment "
-"(Emscripten's ``Module``) as ``engine.rtenv``. Check the official Emscripten "
-"documentation for information on how to use it: https://kripken.github.io/"
-"emscripten-site/docs/api_reference/module.html"
-msgstr ""
-"如果您知道您在做什么，您可以访问运行时环境(Emscripten的 ``Module`` )作为 "
-"``engine.rtenv`` 。 查看官方Emscripten文档以获取有关如何使用它的信息:https://"
-"kripken.github.io/emscripten-site/docs/api_reference/module.html"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:4
 msgid "One-click deploy"
@@ -54044,12 +53688,12 @@ msgid "Culling disabled (double sided)."
 msgstr "剔除禁用(双面)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:41
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:31
 msgid "**unshaded**"
 msgstr "**unshaded**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:41
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:31
 msgid "Result is just albedo. No lighting/shading happens in material."
 msgstr "结果只是反照率。 材质中不会发生照明/阴影。"
 
@@ -54134,7 +53778,7 @@ msgid "Disable specular."
 msgstr "禁用镜面反射。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:63
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:33
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:35
 msgid "**skip_vertex_transform**"
 msgstr "**skip_vertex_transform**"
 
@@ -54153,22 +53797,48 @@ msgid "VERTEX/NORMAL/etc. are modified in world coordinates instead of local."
 msgstr "VERTEX / NORMAL / etc在世界坐标中而不是在本地坐标中进行修改。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:67
+msgid "**ensure_correct_normals**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:67
+msgid "Use when non-uniform scale is applied to mesh."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:69
 msgid "**vertex_lighting**"
 msgstr "**vertex_lighting**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:67
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:69
 msgid "Use vertex-based lighting."
 msgstr "使用基于顶点的照明。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:71
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:37
+#, fuzzy
+msgid "**shadows_disabled**"
+msgstr "**specular_disabled**"
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:71
+msgid "Disable computing shaders in shader."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:73
+#, fuzzy
+msgid "**ambient_light_disabled**"
+msgstr "**depth_test_disable**"
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:73
+msgid "Disable contribution from ambient light and radiance map."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:77
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
 #, fuzzy
 msgid "Vertex built-ins"
 msgstr "顶点内置"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:73
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:79
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:41
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:42
 #, fuzzy
 msgid ""
@@ -54180,7 +53850,7 @@ msgstr ""
 "标记为“in”的值是只读的。 标记为“out”的值用于可选写入。 取样器不是书写对象，也"
 "没有标记。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:78
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:84
 #, fuzzy
 msgid ""
 "Vertex data (``VERTEX``, ``NORMAL``, ``TANGENT``, ``BITANGENT``) are "
@@ -54190,7 +53860,7 @@ msgstr ""
 "顶点数据(VERTEX，NORMAL，TANGENT，BITANGENT)显示在本地模型空间中。 如果没有写"
 "入，这些值将不会被修改并在它们到来时传递。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:82
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:88
 #, fuzzy
 msgid ""
 "They can optionally be presented in world space by using the "
@@ -54199,7 +53869,7 @@ msgstr ""
 "通过添加* world_vertex_coords *渲染模式，可以选择将它们设置为在世界空间中呈现"
 "(在被世界变换之后)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:84
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:90
 #, fuzzy
 msgid ""
 "Users can disable the built-in modelview transform (projection will still "
@@ -54208,14 +53878,14 @@ msgstr ""
 "可以使用以下代码完全禁用内置模型视图变换(投影仍将在稍后进行)，因此可以手动完"
 "成:"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:98
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:104
 #, fuzzy
 msgid ""
 "Other built-ins, such as UV, UV2 and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr "如果不修改，其他内置函数(如UV，UV2和COLOR)也会传递给片段函数。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:100
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:106
 msgid ""
 "Users can override the modelview and projection transforms using the "
 "``POSITION`` built-in. When ``POSITION`` is used, the value from ``VERTEX`` "
@@ -54223,30 +53893,30 @@ msgid ""
 "fragment shader still comes from ``VERTEX``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:104
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:62
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:110
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:87
 msgid ""
 "For instancing, the INSTANCE_CUSTOM variable contains the instance custom "
 "data. When using particles, this information is usually:"
 msgstr ""
 "对于实例化，INSTANCE_CUSTOM变量包含实例自定义数据。 使用粒子时，此信息通常是:"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:107
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:65
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:113
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:90
 msgid "**x**: Rotation angle in radians."
 msgstr "** x**: 以弧度表示的旋转角度。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:108
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:66
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:114
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:91
 msgid "**y**: Phase during lifetime (0 to 1)."
 msgstr "** y**: 寿命期间的相位(0到1)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:109
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:67
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:115
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:92
 msgid "**z**: Animation frame."
 msgstr "** z**: 动画帧。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:111
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:117
 #, fuzzy
 msgid ""
 "This allows you to easily adjust the shader to a particle system using "
@@ -54256,215 +53926,235 @@ msgstr ""
 "这允许使用默认粒子材质轻松地将着色器调整到粒子系统。 编写自定义粒子着色器时，"
 "可以根据需要使用此值。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:115
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:166
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:262
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:70
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:175
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:95
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:144
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:193
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
 msgid "Built-in"
 msgstr "内建的"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:117
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
 msgid "out mat4 **WORLD_MATRIX**"
 msgstr "out mat4 **WORLD_MATRIX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:117
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:170
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:282
 msgid "Model space to world space transform."
 msgstr "模型空间到世界空间变换。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:119
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:172
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:268
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:181
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:284
 msgid "in mat4 **INV_CAMERA_MATRIX**"
 msgstr "in mat4 **INV_CAMERA_MATRIX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:119
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:172
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:268
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:181
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:284
 msgid "World space to view space transform."
 msgstr "观看空间变换的世界空间。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
 msgid "out mat4 **PROJECTION_MATRIX**"
 msgstr "out mat4 **PROJECTION_MATRIX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:174
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:270
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:101
 msgid "View space to clip space transform."
 msgstr "查看空间以剪切空间变换。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:183
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:286
 msgid "in mat4 **CAMERA_MATRIX**"
 msgstr "in mat4 **CAMERA_MATRIX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:183
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:286
 msgid "View space to world space transform."
 msgstr "查看空间到世界空间变换。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
 msgid "out mat4 **MODELVIEW_MATRIX**"
 msgstr "out mat4 **MODELVIEW_MATRIX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
 msgid "Model space to view space transform (use if possible)."
 msgstr "用于查看空间变换的模型空间(如果可能，请使用)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
 msgid "out mat4 **INV_PROJECTION_MATRIX**"
 msgstr "out mat4 **INV_PROJECTION_MATRIX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:176
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:272
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
 msgid "Clip space to view space transform."
 msgstr "用于查看空间变换的剪辑空间。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:178
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:274
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:78
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:145
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:189
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:103
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid "in float **TIME**"
 msgstr "in float **TIME**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:178
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:274
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:189
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
 msgid "Elapsed total time in seconds."
 msgstr "经过的总时间(秒)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:180
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:276
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr "in vec2 **VIEWPORT_SIZE**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:180
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:276
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
 msgid "Size of viewport (in pixels)."
 msgstr "视区大小(以像素为单位)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
 msgid "out vec3 **VERTEX**"
 msgstr "out vec3 **VERTEX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
 #, fuzzy
 msgid "Vertex in local coordinates."
 msgstr "切线在当地的坐标。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
 msgid "out vec3 **NORMAL**"
 msgstr "out vec3 **NORMAL**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
 #, fuzzy
 msgid "Normal in local coordinates."
 msgstr "局部坐标正常。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:188
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
 msgid "out vec3 **TANGENT**"
 msgstr "out vec3 **TANGENT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
 #, fuzzy
 msgid "Tangent in local coordinates."
 msgstr "切线在当地的坐标。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:190
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
 msgid "out vec3 **BINORMAL**"
 msgstr "out vec3 **BINORMAL**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
 #, fuzzy
 msgid "Binormal in local coordinates."
 msgstr "本地坐标中的正常。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
 msgid "out vec2 **UV**"
 msgstr "out vec2 **UV**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
 msgid "UV main channel."
 msgstr "紫外线主通道。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
 msgid "out vec2 **UV2**"
 msgstr "out vec2 **UV2**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
 msgid "UV secondary channel."
 msgstr "紫外辅助通道。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
 msgid "out vec4 **COLOR**"
 msgstr "out vec4 **COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
 msgid "Color from vertices."
 msgstr "顶点颜色。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
 msgid "out float **POINT_SIZE**"
 msgstr "out float **POINT_SIZE**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
 msgid "Point size for point rendering."
 msgstr "点渲染的点大小。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:155
 #, fuzzy
 msgid "out vec4  **POSITION**"
 msgstr "out vec4 **COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:155
 msgid "If written to, overrides final vertex position."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:157
 msgid "in int **INSTANCE_ID**"
 msgstr "in int **INSTANCE_ID**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:157
 msgid "Instance ID for instancing."
 msgstr "实例化的实例ID。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:80
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:159
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:105
 msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr "in vec4 **INSTANCE_CUSTOM**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:159
 msgid "Instance custom data (for particles, mostly)."
 msgstr "实例自定义数据(主要用于粒子)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:155
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:210
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:223
 msgid "out float **ROUGHNESS**"
 msgstr "out float **ROUGHNESS**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:155
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
 msgid "Roughness for vertex lighting."
 msgstr "顶点照明的粗糙度。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:159
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:94
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:316
+#, fuzzy
+msgid "in float **OUTPUT_IS_SRGB**"
+msgstr "in float **ROUGHNESS**"
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:316
+msgid ""
+"True when calculations happen in sRGB color space (true in GLES2, false in "
+"GLES3)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:123
 #, fuzzy
 msgid "Fragment built-ins"
 msgstr "片段内置"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:170
 msgid ""
 "The default use of a Godot fragment processor function is to set up the "
 "material properties of your object and to let the built-in renderer handle "
@@ -54473,313 +54163,323 @@ msgid ""
 "corresponding functionality."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:168
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:166
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:146
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
 msgid "in vec4 **FRAGCOORD**"
 msgstr "在vec4 ** FRAGCOORD **"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
 #, fuzzy
 msgid "Fragment coordinate, pixel adjusted. In screen space."
 msgstr "片段坐标，像素调整。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:170
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:282
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:97
 msgid "in mat4 **WORLD_MATRIX**"
 msgstr "在mat4 ** WORLD_MATRIX **"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:174
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:270
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:76
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:101
 msgid "in mat4 **PROJECTION_MATRIX**"
 msgstr "in mat4 **PROJECTION_MATRIX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:176
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:272
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
 msgstr "in mat4 **INV_PROJECTION_MATRIX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
 msgid "in vec3 **VERTEX**"
 msgstr "in vec3 **VERTEX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
 #, fuzzy
 msgid "Vertex that comes from vertex function (default, in view space)."
 msgstr "来自顶点函数的顶点，在视图空间中。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:298
+msgid "in vec3 **VIEW**"
+msgstr "in vec3 **VIEW**"
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
+#, fuzzy
+msgid "Vector from camera to fragment position (in view space)."
+msgstr "来自顶点函数的顶点，在视图空间中。"
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
 msgid "in bool **FRONT_FACING**"
 msgstr "in bool **FRONT_FACING**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
 #, fuzzy
 msgid "True if current face is front face."
 msgstr "当前面是否是正面是真的。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
 #, fuzzy
 msgid "Normal that comes from vertex function (default, in view space)."
 msgstr "来自顶点函数的正常，在视图空间中。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:188
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
 msgid "Tangent that comes from vertex function."
 msgstr "来自顶点函数的切线。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:190
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
 msgid "Binormal that comes from vertex function."
 msgstr "来自顶点函数的Binormal。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:192
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:121
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:205
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:150
 msgid "out vec3 **NORMALMAP**"
 msgstr "out vec3 **NORMALMAP**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:192
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:205
 #, fuzzy
 msgid "Set normal here if reading normal from a texture instead of NORMAL."
 msgstr "如果从纹理而不是NORMAL读取法线，则输出此值。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:194
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:207
 msgid "out float **NORMALMAP_DEPTH**"
 msgstr "out float **NORMALMAP_DEPTH**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:194
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:207
 msgid "Depth from variable above. Defaults to 1.0."
 msgstr "从变量上方深度。 默认为1.0。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:196
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:126
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:171
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:209
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:200
 msgid "in vec2 **UV**"
 msgstr "in vec2 **UV**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:196
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:209
 msgid "UV that comes from vertex function."
 msgstr "来自顶点功能的UV。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:211
 msgid "in vec2 **UV2**"
 msgstr "in vec2 **UV2**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:211
 msgid "UV2 that comes from vertex function."
 msgstr "来自顶点功能的UV2。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:173
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:213
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:202
 msgid "in vec4 **COLOR**"
 msgstr "in vec4 **COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:213
 msgid "COLOR that comes from vertex function."
 msgstr "来自顶点功能的颜色。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:215
 msgid "out vec3 **ALBEDO**"
 msgstr "out vec3 **ALBEDO**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:215
 msgid "Albedo (default white)."
 msgstr "反照率(默认为白色)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:217
 msgid "out float **ALPHA**"
 msgstr "out float **ALPHA**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:217
 #, fuzzy
 msgid ""
 "Alpha (0..1); if written to, the material will go to the transparent "
 "pipeline."
 msgstr "Alpha(0..1)，如果写入材质将转到透明管道。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:219
 msgid "out float **METALLIC**"
 msgstr "out float **METALLIC**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:219
 msgid "Metallic (0..1)."
 msgstr "Metallic (0..1)."
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:208
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:221
 msgid "out float **SPECULAR**"
 msgstr "out float **SPECULAR**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:208
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:221
 #, fuzzy
 msgid ""
 "Specular. Defaults to 0.5, best not to modify unless you want to change IOR."
 msgstr "镜面。 默认为0.5，除非您想要更改IOR，否则最好不要修改。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:210
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:223
 msgid "Roughness (0..1)."
 msgstr "粗糙度(0..1)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:212
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:225
 msgid "out float **RIM**"
 msgstr "out float **RIM**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:212
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:225
 msgid "Rim (0..1). If used, Godot calculates rim lighting."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:227
 msgid "out float **RIM_TINT**"
 msgstr "out float **RIM_TINT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:227
 #, fuzzy
 msgid ""
 "Rim Tint, goes from 0 (white) to 1 (albedo). If used, Godot calculates rim "
 "lighting."
 msgstr "Rim Tint，从0(白色)变为1(反照率)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:216
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:229
 msgid "out float **CLEARCOAT**"
 msgstr "out float **CLEARCOAT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:216
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:229
 msgid "Small added specular blob. If used, Godot calculates Clearcoat."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:218
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
 msgid "out float **CLEARCOAT_GLOSS**"
 msgstr "out float **CLEARCOAT_GLOSS**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:218
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
 msgid "Gloss of Clearcoat. If used, Godot calculates Clearcoat."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:233
 msgid "out float **ANISOTROPY**"
 msgstr "out float **ANISOTROPY**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:233
 msgid "For distorting the specular blob according to tangent space."
 msgstr "用于根据切线空间扭曲镜面斑点。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:222
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:235
 msgid "out vec2 **ANISOTROPY_FLOW**"
 msgstr "out vec2 **ANISOTROPY_FLOW**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:222
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:235
 msgid "Distortion direction, use with flowmaps."
 msgstr "失真方向，与流程图一起使用。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:237
 msgid "out float **SSS_STRENGTH**"
 msgstr "out float **SSS_STRENGTH**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:237
 msgid ""
 "Strength of Subsurface Scattering. If used, Subsurface Scattering will be "
 "applied to object."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:226
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:239
 msgid "out vec3 **TRANSMISSION**"
 msgstr "out vec3 **TRANSMISSION**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:226
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:239
 msgid ""
 "Transmission mask (default 0,0,0). Allows light to pass through object. Only "
 "applied if used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:228
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:241
 msgid "out float **AO**"
 msgstr "out float **AO**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:228
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:241
 #, fuzzy
 msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
 msgstr "环境遮挡(预烘焙)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:230
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
 msgid "out float **AO_LIGHT_AFFECT**"
 msgstr "out float **AO_LIGHT_AFFECT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:230
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
 #, fuzzy
 msgid "How much AO affects lights (0..1; default 0)."
 msgstr "AO对灯光的影响程度(0..1。默认为0，无)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:232
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:245
 msgid "out vec3 **EMISSION**"
 msgstr "out vec3 **EMISSION**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:232
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:245
 msgid "Emission color (can go over 1,1,1 for HDR)."
 msgstr "发射颜色(HDR可以超过1,1,1)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:234
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:247
 msgid "sampler2D **SCREEN_TEXTURE**"
 msgstr "sampler2D **SCREEN_TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:234
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:247
 msgid ""
 "Built-in Texture for reading from the screen. Mipmaps contain increasingly "
 "blurred copies."
 msgstr "内置纹理，用于从屏幕上读取。 Mipmap包含越来越模糊的副本。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:236
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:249
 msgid "sampler2D **DEPTH_TEXTURE**"
 msgstr "sampler2D **DEPTH_TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:236
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:249
 msgid ""
 "Built-in Texture for reading depth from the screen. Must convert to linear "
 "using INV_PROJECTION."
 msgstr "内置纹理，用于从屏幕读取深度。 必须使用INV_PROJECTION转换为线性。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:238
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:251
 msgid "out float **DEPTH**"
 msgstr "out float **DEPTH**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:238
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:251
 msgid "Custom depth value (0..1)."
 msgstr "自定义深度值(0..1)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:240
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:139
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:253
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:240
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:253
 msgid "Screen UV coordinate for current pixel."
 msgstr "屏幕当前像素的UV坐标。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:242
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:143
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:255
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:213
 msgid "in vec2 **POINT_COORD**"
 msgstr "in vec2 **POINT_COORD**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:242
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:255
 #, fuzzy
 msgid "Point Coordinate for drawing points with POINT_SIZE."
 msgstr "使用POINT_SIZE绘制点的点坐标。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:244
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:257
 msgid "out float **ALPHA_SCISSOR**"
 msgstr "out float **ALPHA_SCISSOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:244
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:257
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr "如果写入，则丢弃低于一定量alpha的值。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:248
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:153
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
 #, fuzzy
 msgid "Light built-ins"
 msgstr "轻型内置"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:250
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
 msgid ""
 "Writing light processor functions is completely optional. You can skip the "
 "light function by setting render_mode to ``unshaded``. If no light function "
@@ -54788,7 +54488,7 @@ msgid ""
 "render_mode)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:255
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:271
 #, fuzzy
 msgid ""
 "To write a light function, assign something to DIFFUSE_LIGHT or "
@@ -54797,98 +54497,94 @@ msgstr ""
 "要编写灯光着色器，只需确保将某些内容分配给DIFFUSE_LIGHT或SPECULAR_LIGHT即"
 "可。 无任何分配意味着不处理光。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:258
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:274
 msgid ""
 "The light function is called for every light in every pixel. It is called "
 "within a loop for each light type."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:146
 msgid "Fragment coordinate, pixel adjusted."
 msgstr "片段坐标，像素调整。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
 #, fuzzy
 msgid "Normal vector, in view space."
 msgstr "来自顶点函数的正常，在视图空间中。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
-msgid "in vec3 **VIEW**"
-msgstr "in vec3 **VIEW**"
-
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:298
 #, fuzzy
 msgid "View vector, in view space."
 msgstr "图像空间中的顶点。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:282
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:300
 msgid "in vec3 **LIGHT**"
 msgstr "in vec3 **LIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:282
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:300
 #, fuzzy
 msgid "Light Vector, in view space."
 msgstr "图像空间中的顶点。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:284
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:302
 msgid "in vec3 **LIGHT_COLOR**"
 msgstr "in vec3 **LIGHT_COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:284
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:302
 msgid "Color of light multiplied by energy."
 msgstr "光的颜色乘以能量。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:286
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:304
 msgid "in vec3 **ATTENUATION**"
 msgstr "in vec3 **ATTENUATION**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:286
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:304
 msgid "Attenuation based on distance or shadow."
 msgstr "基于距离或阴影的衰减。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
 msgid "in vec3 **ALBEDO**"
 msgstr "in vec3 **ALBEDO**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
 msgid "Base albedo."
 msgstr "基地反照率。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
 msgid "in vec3 **TRANSMISSION**"
 msgstr "in vec3 **TRANSMISSION**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
 msgid "Transmission mask."
 msgstr "传输掩模。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
 msgid "in float **ROUGHNESS**"
 msgstr "in float **ROUGHNESS**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
 msgid "Roughness."
 msgstr "粗糙度。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:312
 msgid "out vec3 **DIFFUSE_LIGHT**"
 msgstr "out vec3 **DIFFUSE_LIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:312
 msgid "Diffuse light result."
 msgstr "漫射光效果。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:314
 msgid "out vec3 **SPECULAR_LIGHT**"
 msgstr "out vec3 **SPECULAR_LIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:314
 msgid "Specular light result."
 msgstr "镜面光效果。"
 
@@ -54919,21 +54615,30 @@ msgstr "**blend_premul_alpha**"
 msgid "Pre-multiplied alpha blend mode."
 msgstr "预乘alpha混合模式。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:31
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
+#, fuzzy
+msgid "**blend_disabled**"
+msgstr "**cull_disabled**"
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
+msgid "Disable blending, values (including alpha) are written as-is."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:33
 msgid "**light_only**"
 msgstr "**light_only**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:31
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:33
 #, fuzzy
 msgid "Only draw on light pass."
 msgstr "仅绘制光通过(使用多通道时)。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:33
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:35
 #, fuzzy
 msgid "VERTEX/NORMAL/etc need to be transformed manually in vertex function."
 msgstr "VERTEX / NORMAL / etc需要在VS中手动转换。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:44
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:46
 #, fuzzy
 msgid ""
 "Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
@@ -54943,7 +54648,7 @@ msgstr ""
 "顶点数据(VERTEX)显示在本地空间中。 如果没有写入，这些值将不会被修改并在它们到"
 "来时传递。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:47
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:49
 #, fuzzy
 msgid ""
 "The user can disable the built-in modelview transform (projection will still "
@@ -54952,88 +54657,124 @@ msgstr ""
 "可以使用以下代码完全禁用内置模型视图变换(投影仍将在稍后进行)，因此可以手动完"
 "成:"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:60
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:62
+msgid ""
+"``WORLD_MATRIX`` is actually a modelview matrix. It takes input in local "
+"space and transforms it into view space."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:65
+msgid ""
+"In order to get the world space coordinates of a vertex, you have to pass in "
+"a custom uniform like so:"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
+#, fuzzy
+msgid "Then, in your vertex shader:"
+msgstr "我们像这样定义顶点着色器:"
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:83
+msgid ""
+"``world_position`` can then be used in either the vertex or fragment "
+"functions."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:85
 #, fuzzy
 msgid ""
 "Other built-ins, such as UV and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr "如果不修改，其他内置函数(如UV和COLOR)也会传递给片段函数。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
-msgid "Image to World transform."
-msgstr "图像到世界变换。"
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:97
+#, fuzzy
+msgid "Image space to view space transform."
+msgstr "用于查看空间变换的剪辑空间。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:74
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:99
 msgid "in mat4 **EXTRA_MATRIX**"
 msgstr "in mat4 **EXTRA_MATRIX**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:74
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:99
 msgid "Extra transform."
 msgstr "额外的转变。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:76
-msgid "World to view transform."
-msgstr "世界观看变革。"
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:78
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:103
 msgid "Global time, in seconds."
 msgstr "全球时间，以秒为单位。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:80
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:105
 msgid "Instance custom data."
 msgstr "实例自定义数据。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:82
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:147
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
 msgid "in bool **AT_LIGHT_PASS**"
 msgstr "in bool **AT_LIGHT_PASS**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:82
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:147
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
 #, fuzzy
 msgid "True if this is a light pass."
 msgstr "如果这是光通过则为真(对于多次通过光渲染)。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:84
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
 #, fuzzy
 msgid "inout vec2 **VERTEX**"
 msgstr "out vec2 **VERTEX**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:84
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
 #, fuzzy
 msgid "Vertex, in image space."
 msgstr "图像空间中的顶点。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:86
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:207
+msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
+msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:207
+msgid ""
+"Normalized pixel size of default 2D texture. For a Sprite with a texture of "
+"size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
+msgstr ""
+"默认2D纹理的标准化像素大小。 对于纹理大小为64x32px的Sprite，** "
+"TEXTURE_PIXEL_SIZE ** =:code:`vec2(1 / 64,1 / 32)`"
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
 #, fuzzy
 msgid "inout vec2 **UV**"
 msgstr "out vec2 **UV**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:86
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
 msgid "UV."
 msgstr "UV."
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:88
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
 #, fuzzy
 msgid "inout vec4 **COLOR**"
 msgstr "out vec4 **COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:88
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
 msgid "Color from vertex primitive."
 msgstr "来自顶点原语的颜色。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:90
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
 #, fuzzy
 msgid "inout float **POINT_SIZE**"
 msgstr "out float **POINT_SIZE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:90
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
 msgid "Point size for point drawing."
 msgstr "点绘图的点大小。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:96
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:125
 msgid ""
 "Certain Nodes (for example, :ref:`Sprites <class_Sprite>`) display a texture "
 "by default. However, when a custom fragment function is attached to these "
@@ -55042,7 +54783,7 @@ msgid ""
 "color for such nodes, use:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:105
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:134
 msgid ""
 "This differs from the behaviour of the built-in normal map. If a normal map "
 "is attached, Godot uses it by default and assigns its value to the built-in "
@@ -55052,106 +54793,92 @@ msgid ""
 "and overwriting ``NORMAL``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:148
 #, fuzzy
 msgid "inout vec3 **NORMAL**"
 msgstr "out vec3 **NORMAL**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:148
 #, fuzzy
 msgid "Normal read from **NORMAL_TEXTURE**. Writable."
 msgstr "sampler2D **NORMAL_TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:121
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:150
 msgid ""
 "Configures normal maps meant for 3D for use in 2D. If used, overwrites "
 "**NORMAL**."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:124
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:153
 #, fuzzy
 msgid "inout float **NORMALMAP_DEPTH**"
 msgstr "out float **NORMALMAP_DEPTH**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:124
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:153
 msgid "Normalmap depth for scaling."
 msgstr "用于缩放的法线贴图深度。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:126
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
 msgid "UV from vertex function."
 msgstr "来自顶点功能的UV。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
 msgid ""
 "Color from vertex function and output fragment color. If unused, will be set "
 "to **TEXTURE** color."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:131
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:160
 #, fuzzy
 msgid "in sampler2D **TEXTURE**"
 msgstr "sampler2D **TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:131
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:160
 msgid "Default 2D texture."
 msgstr "默认的2D纹理。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:133
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
 #, fuzzy
 msgid "in sampler2D **NORMAL_TEXTURE**"
 msgstr "sampler2D **NORMAL_TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:133
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
 msgid "Default 2D normal texture."
 msgstr "默认2D普通纹理。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:135
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
-msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
-msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:135
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
-msgid ""
-"Normalized pixel size of default 2D texture. For a Sprite with a texture of "
-"size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
-msgstr ""
-"默认2D纹理的标准化像素大小。 对于纹理大小为64x32px的Sprite，** "
-"TEXTURE_PIXEL_SIZE ** =:code:`vec2(1 / 64,1 / 32)`"
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:139
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
 #, fuzzy
 msgid "Screen UV for use with **SCREEN_TEXTURE**."
 msgstr "屏幕UV用于SCREEN_TEXTURE。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:141
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:170
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:141
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:170
 msgid "Size of individual pixels. Equal to inverse of resolution."
 msgstr "单个像素的大小。 等于分辨率的倒数。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:143
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
 msgid "Coordinate for drawing points."
 msgstr "协调绘图点。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:145
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid "Global time in seconds."
 msgstr "全球时间以秒为单位。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:149
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
 #, fuzzy
 msgid "in sampler2D **SCREEN_TEXTURE**"
 msgstr "sampler2D **SCREEN_TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:149
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
 msgid "Screen texture, mipmaps contain gaussian blurred versions."
 msgstr "屏幕纹理，mipmap包含高斯模糊版本。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
 msgid ""
 "Light processor functions work differently in 2D than they do in 3D. In "
 "CanvasItem shaders, the shader is called once for the object being drawn, "
@@ -55162,102 +54889,102 @@ msgid ""
 "visible where it is covered by light."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:161
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:190
 msgid ""
 "When the shader is on a light pass, the ``AT_LIGHT_PASS`` variable will be "
 "``true``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:166
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
 #, fuzzy
 msgid "Fragment coordinate of pixel center. Origin at lower left."
 msgstr "片段坐标，像素调整。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
 msgid ""
 "Input Normal. Although this value is passed in, **normal calculation still "
 "happens outside of this function**."
 msgstr "输入正常。 虽然传入了这个值，但 **正常计算仍然发生在此函数之外** 。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:171
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:200
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
 msgstr "来自顶点函数的UV，相当于片段函数中的UV。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:173
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:202
 msgid ""
 "Input Color. This is the output of the fragment function with final "
 "modulation applied."
 msgstr "输入颜色。 这是应用了最终调制的片段函数的输出。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:205
 msgid "sampler2D **TEXTURE**"
 msgstr "sampler2D **TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:205
 msgid "Current texture in use for CanvasItem."
 msgstr "CanvasItem使用的当前纹理。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
 #, fuzzy
 msgid "**SCREEN_TEXTURE** Coordinate (for using with screen texture)."
 msgstr "屏幕纹理坐标(用于屏幕纹理)。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:213
 #, fuzzy
 msgid "UV for Point Sprite."
 msgstr "Point Sprite的当前UV。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:188
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
 #, fuzzy
 msgid "inout vec2 **LIGHT_VEC**"
 msgstr "out vec2 **LIGHT_VEC**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:188
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
 msgid ""
 "Vector from light to fragment, can be modified to alter shadow computation."
 msgstr "向量从光到片段，可以修改以改变阴影计算。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:190
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
 #, fuzzy
 msgid "inout float **LIGHT_HEIGHT**"
 msgstr "out float **LIGHT_HEIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:190
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
 msgid "Height of Light. Only effective when normals are used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:192
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
 #, fuzzy
 msgid "inout vec4 **LIGHT_COLOR**"
 msgstr "out vec4 **LIGHT_COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:192
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
 msgid "Color of Light."
 msgstr "光的颜色。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:194
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
 #, fuzzy
 msgid "in vec2 **LIGHT_UV**"
 msgstr "out vec2 **LIGHT_UV**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:194
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
 msgid "UV for Light texture."
 msgstr "紫外线对质地轻。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:196
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
 msgid "out vec4 **SHADOW_COLOR**"
 msgstr "out vec4 **SHADOW_COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:196
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
 msgid "Shadow Color of Light. **(not yet implemented)**"
 msgstr "光的阴影颜色。 **(尚未实现)**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:198
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 #, fuzzy
 msgid "inout vec4 **LIGHT**"
 msgstr "out vec4 **LIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:198
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid ""
 "Value from the Light texture and output color. Can be modified. If not used, "
 "the light function is ignored."
@@ -57915,7 +57642,7 @@ msgstr ""
 "解决方案是简单地将 *实例化后的游戏角色场景的根节点命名为它的网络ID* 。这样，"
 "它们在每一个客户端中都是一样的，RPC调用也会很容易！下面是一个示例:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:302
 #, fuzzy
 msgid ""
 "Depending on when you execute pre_configure_game(), you may need to change "
@@ -57927,11 +57654,11 @@ msgstr ""
 "``add_child()`` ，以便通过 ``call_deferred()`` 推迟，因为SceneTree在场景创建"
 "时被锁定(例如，当 ``_ready()`` 被调用时)。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:305
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:306
 msgid "Synchronizing game start"
 msgstr "同步游戏开始"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:307
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:308
 #, fuzzy
 msgid ""
 "Setting up players might take different amounts of time for every peer due "
@@ -57943,17 +57670,17 @@ msgstr ""
 "同。为了确保游戏会在每个人都准备好的时候真正开始，有必要暂停游戏直到所有的游"
 "戏角色都准备好:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:316
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:317
 msgid ""
 "When the server gets the OK from all the peers, it can tell them to start, "
 "as for example:"
 msgstr "当服务器从所有客户端获得OK时，它才告诉他们开始游戏，例如:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:337
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:338
 msgid "Synchronizing the game"
 msgstr "同步游戏"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:340
 #, fuzzy
 msgid ""
 "In most games, the goal of multiplayer networking is that the game runs "
@@ -57964,17 +57691,17 @@ msgstr ""
 "在多数游戏中，多人联网的目标是确保游戏在所有正在玩游戏的客户端上同步运行。除"
 "了提供RPC和远程成员变量集之外，Godot还添加了网络主人的概念。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:344
 msgid "Network master"
 msgstr "网络主人"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:346
 msgid ""
 "The network master of a node is the peer that has the ultimate authority "
 "over it."
 msgstr "一个节点的网络主人是对该节点具有终极权限的客户端。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:348
 #, fuzzy
 msgid ""
 "When not explicitly set, the network master is inherited from the parent "
@@ -57984,7 +57711,7 @@ msgstr ""
 "当未显式设置时，网络主人从父节点继承，这个父节点如果未更改，则始终是服务器"
 "(ID 1)。因此，默认情况下，服务器拥有所有节点的权限。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:350
 #, fuzzy
 msgid ""
 "The network master can be set with the function :ref:`Node."
@@ -57996,7 +57723,7 @@ msgstr ""
 "<class_Node_method_set_network_master>` 来设置网络主人(默认情况下recursive为"
 "true，这意味着在节点的所有子节点上也递归地设置了网络主人)。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:352
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:353
 #, fuzzy
 msgid ""
 "Checking that a specific node instance on a peer is the network master for "
@@ -58009,16 +57736,17 @@ msgstr ""
 "点用于所有连接的客户端的网络主人。这在服务器上执行时将返回true，在所有客户端"
 "上将返回false。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:354
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:355
+#, fuzzy
 msgid ""
 "If you have paid attention to the previous example, it's possible you "
-"noticed that the local peer is set to have network master authority for "
-"their own player instead of the server:"
+"noticed that each peer was set to have network master authority for their "
+"own player (Node) instead of the server:"
 msgstr ""
 "如果您已经注意了前面的示例，则可能注意到本地客户端拥有针对它自己的游戏角色的"
 "网络主人权限，而不是服务器:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:373
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:375
 msgid ""
 "Each time this piece of code is executed on each peer, the peer makes itself "
 "master on the node it controls, and all other nodes remain as puppets with "
@@ -58027,7 +57755,7 @@ msgstr ""
 "每当在客户端上执行这段代码时，客户端就使得它控制的节点上成为主人，同时其他所"
 "有节点仍然保持为傀儡(服务器是它们的网络主人)。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:375
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:377
 msgid ""
 "To clarify, here is an example of how this looks in the `bomber demo "
 "<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
@@ -58036,11 +57764,11 @@ msgstr ""
 "为了阐明这点，可以看看这个 `轰炸机演示 <https://github.com/godotengine/godot-"
 "demo-projects/tree/master/networking/multiplayer_bomber>`_ :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:382
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:384
 msgid "Master and puppet keywords"
 msgstr "主人和傀儡关键词"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:388
 msgid ""
 "The real advantage of this model is when used with the `master`/`puppet` "
 "keywords in GDScript (or their equivalent in C# and Visual Script). "
@@ -58050,15 +57778,15 @@ msgstr ""
 "Visual Script中的等价关键词)时。与 `remote` 关键字相似，可以将它们放在函数名"
 "前面标记:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:389
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:391
 msgid "Example bomb code:"
 msgstr "炸弹代码的示例:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:397
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:399
 msgid "Example player code:"
 msgstr "游戏角色代码的示例:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:411
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:413
 msgid ""
 "In the above example, a bomb explodes somewhere (likely managed by whoever "
 "is master). The bomb knows the bodies in the area, so it checks them and "
@@ -58067,7 +57795,7 @@ msgstr ""
 "在上面的示例中，炸弹在某个地方爆炸(可能由主人来确定)。炸弹知道该地区的物体，"
 "因此它检查物体并检查它们是否具有 `exploded` 函数。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:414
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:416
 msgid ""
 "If they do, the bomb calls `exploded` on it. However, the `exploded` method "
 "in the player has a `master` keyword. This means that only the player who is "
@@ -58077,7 +57805,7 @@ msgstr ""
 "函数上有一个 `master` 关键字。这意味着，只有当游戏角色是该实例的主人时, 才能"
 "实际上获得该函数。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:419
 #, fuzzy
 msgid ""
 "This instance, then, calls the `stun` method in the same instances of that "
@@ -58089,7 +57817,7 @@ msgstr ""
 "`stun` 函数，并且只调用那些设置为傀儡的函数，使得该游戏角色在所有客户端(以及"
 "当前的主人)中看起来被击晕。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:420
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:422
 #, fuzzy
 msgid ""
 "Note that you could also send the stun() message only to a specific player "
@@ -64756,6 +64484,625 @@ msgstr ""
 "块中需要的内容，还需要将它们定义为有效标识符(局部变量或类成员)。 这是一个如何"
 "在类中解决此问题的示例:"
 
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:4
+msgid "Customizing the Web export HTML page"
+msgstr "自定义Web导出HTML页面"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:6
+msgid ""
+"Rather than the default HTML page that comes with the export templates, it "
+"is also possible to use a custom HTML page. This allows drastic "
+"customization of the final web presentation and behavior. The path to the "
+"custom HTML page is specified in the export options as ``Html/Custom Html "
+"Shell``."
+msgstr ""
+"除了导出模板附带的默认HTML页面之外，还可以使用自定义HTML页面。 这允许对最终的"
+"Web表示和行为进行大量定制。 自定义HTML页面的路径在导出选项中指定为 ``Html/"
+"Custom Html Shell`` 。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:11
+#, fuzzy
+msgid ""
+"The default HTML page is available in the Godot Engine repository at `/misc/"
+"dist/html/full-size.html <https://github.com/godotengine/godot/blob/master/"
+"misc/dist/html/full-size.html>`__. Some simple use-cases where customizing "
+"the default page is useful include:"
+msgstr ""
+"Godot Engine存储库中提供了默认的HTML页面 `/mist/dist/html/default.html "
+"<https://github.com/godotengine/godot/blob/master/misc/dist/html/default."
+"html>`_ 。 一些简单的用例，其中自定义默认页面很有用包括:"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:15
+msgid "Loading files from a different directory"
+msgstr "从其他目录加载文件"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:16
+msgid "Loading a ``.zip`` file instead of a ``.pck`` file as main pack"
+msgstr "加载 ``.zip`` 文件而不是 ``.pck`` 文件作为主包"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:17
+msgid "Loading engine files from a different directory than the main pack file"
+msgstr "从主包文件以外的目录中加载引擎文件"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:18
+msgid ""
+"Adding a click-to-play button so games can be started in full-screen mode"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:19
+msgid ""
+"Loading some extra files before the engine starts, so they are available in "
+"the file system later"
+msgstr "在引擎启动之前加载一些额外的文件，以便稍后在文件系统中可用"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:21
+msgid ""
+"Passing custom \"command line\" arguments, e.g. ``-s`` to start a MainLoop "
+"script"
+msgstr "传递自定义“命令行”参数，例如 ``-s`` 启动MainLoop脚本"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:23
+msgid ""
+"Another sample HTML page is avilable at `/misc/dist/html/fixed-size.html "
+"<https://github.com/godotengine/godot/blob/master/misc/dist/html/fixed-size."
+"html>`__. This page uses a fixed size canvas with an output widget below. "
+"However, the F12 browser console should be preferred as it can display "
+"additional information, such as WebGL errors."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:29
+msgid "Placeholder substitution"
+msgstr "占位符替换"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:31
+msgid ""
+"When exporting the game, several placeholders in the HTML page are replaced "
+"with values depending on the export:"
+msgstr "导出游戏时，HTML页面中的多个占位符将替换为值，具体取决于导出:"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
+msgid "Placeholder"
+msgstr "占位符"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
+#, fuzzy
+msgid "Substituted by"
+msgstr "替代"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:37
+msgid "``$GODOT_BASENAME``"
+msgstr "``$GODOT_BASENAME``"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:37
+msgid ""
+"Basename of exported files without suffixes, e.g. ``game`` when exporting "
+"``game.html``"
+msgstr "没有后缀的导出文件的基本名称，例如 ``game`` 在导出 ``game.html`` 时"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
+msgid "``$GODOT_DEBUG_ENABLED``"
+msgstr "``$GODOT_DEBUG_ENABLED``"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
+msgid "``true`` if debugging, ``false`` otherwise"
+msgstr "如果调试就是 ``true`` ，否则是 ``false``"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
+msgid "``$GODOT_HEAD_INCLUDE``"
+msgstr "``$GODOT_HEAD_INCLUDE``"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
+msgid ""
+"Custom string to include just before the end of the HTML ``<head>`` element"
+msgstr "自定义字符串，包含在HTML `` <head>`` 元素的结尾之前"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:46
+msgid ""
+"The HTML file must evaluate the JavaScript file ``$GODOT_BASENAME.js``. This "
+"file defines a global ``Engine`` object used to start the engine, :ref:`see "
+"below <doc_javascript_engine_object>` for details."
+msgstr ""
+"HTML文件必须评估JavaScript文件 ``$ GODOT_BASENAME.js`` 。 这个文件定义了一个"
+"用于启动引擎的全局 ``Engine`` 对象，参见 :ref:`see below "
+"<doc_javascript_engine_object>` 了解详细信息。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:50
+msgid ""
+"The boot splash image is exported as ``$GODOT_BASENAME.png`` and can be used "
+"e.g. in ``<img />`` elements."
+msgstr ""
+"引导启动图像被导出为 ``$ GODOT_BASENAME.png`` 并且可以用于例如 在 ``<img /"
+">`` 元素中。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:53
+msgid ""
+"``$GODOT_DEBUG_ENABLED`` can be useful to optionally display e.g. an output "
+"console or other debug tools."
+msgstr ""
+"``$ GODOT_DEBUG_ENABLED`` 可用于可选地显示，例如 输出控制台或其他调试工具。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:56
+msgid ""
+"``$GODOT_HEAD_INCLUDE`` is replaced with the string specified by the export "
+"option ``Html/Head Include``."
+msgstr ""
+"``$GODOT_HEAD_INCLUDE`` 被导出选项 ``Html / Head Include`` 指定的字符串替换。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:62
+msgid "The ``Engine`` object"
+msgstr "``Engine`` 对象"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:64
+msgid ""
+"The JavaScript global object ``Engine`` is defined by ``$GODOT_BASENAME.js`` "
+"and serves as an interface to the engine start-up process."
+msgstr ""
+"JavaScript全局对象 ``Engine`` 由 ``$GODOT_BASENAME.js`` 定义，并作为引擎启动"
+"过程的接口。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:67
+#, fuzzy
+msgid ""
+"The API is based on and requires basic understanding of `Promises <https://"
+"developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises>`__."
+msgstr ""
+"遵循 `同源政策 <https://developer.mozilla.org/en-US/docs/Web/Security/Same-"
+"origin_policy>`_"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:69
+#, fuzzy
+msgid "The object itself has only the following methods:"
+msgstr "Mob场景将会使用如下节点:"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:73
+#, fuzzy
+msgid "Load the engine from the passed base path."
+msgstr "从传递的基本路径加载引擎。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:0
+#, fuzzy
+msgid "Arguments"
+msgstr "调整"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:75
+msgid "Base path of the engine to load."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:0
+#, fuzzy
+msgid "Returns"
+msgstr "Return"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:76
+#, fuzzy
+msgid "Promise which resolves once the engine is loaded."
+msgstr "返回一旦加载引擎就解析的承诺。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:80
+msgid "Unload the engine to free memory."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:82
+#, fuzzy
+msgid ""
+"This is called automatically once the engine is started unless explicitly "
+"disabled using :js:func:`engine.setUnloadAfterInit`."
+msgstr ""
+"卸载模块以释放内存。 除非明确禁用，否则在实例化模块后会自动调用此方法。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:87
+msgid "Check whether WebGL is available."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:89
+msgid "The major WebGL version to check for. Defaults to 1 for *WebGL 1.0*."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:92
+#, fuzzy
+msgid ""
+"``true`` if the given major version of WebGL is available, ``false`` "
+"otherwise."
+msgstr ""
+"如果给定的主要版本的WebGL可用，则返回 ``true`` ，否则返回 ``false`` 。 对于"
+"WebGL 1.0，默认为 ``1`` 。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:98
+msgid ""
+"When loading the engine, the filename extension of the WebAssembly module is "
+"assumed to be ``wasm``. This function allows usage of an alternate extension."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:108
+msgid ""
+"This is useful for outdated hosts that only accept uploads of files with "
+"certain filename extensions."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:111
+msgid "Filename extension without preceding dot."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:115
+msgid ""
+"Depending on the host, using an alternate filename extension can prevent "
+"some start-up optimizations. This occurs when the file is delivered with a "
+"MIME-type other than :mimetype:`application/wasm`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:120
+msgid "Starting an ``Engine`` instance"
+msgstr "启动 ``Engine`` 实例"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:122
+msgid ":js:class:`Engine` also acts a class:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:126
+msgid "An instance of the engine that can be started, usually a game."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:128
+msgid "Instantiate the class using the ``new`` operator:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:134
+msgid ""
+"This yields an :js:class:`Engine` instance, referred to as ``engine`` with a "
+"lower-case ``e`` from here."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:137
+#, fuzzy
+msgid ""
+"To start such an instance, the global ``Engine`` object must be loaded, then "
+"the ``engine`` instance must be initialized and finally started."
+msgstr ""
+"这个 ``Engine`` 实例，在这里被称为 ``engine`` ，带有小写的 ``e`` ，是引擎的可"
+"启动实例，通常是游戏。 要启动这样的实例，必须加载全局 ``Engine`` 对象，然后必"
+"须初始化并启动 ``engine`` 实例。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:142
+msgid ""
+"Initialize the instance. The instance can then be started with one of the "
+"``start`` functions, usually :js:func:`engine.startGame`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:145
+msgid ""
+"The base path to the engine, same as in :js:func:`Engine.load`. Must be "
+"passed only if the engine hasn't been loaded yet."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:149
+#, fuzzy
+msgid "Promise that resolves once the engine is loaded and initialized."
+msgstr "返回一旦加载引擎就解析的承诺。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:153
+#, fuzzy
+msgid ""
+"Load a file so it is available in the file system once the instance runs. "
+"Must be called **before** starting the instance."
+msgstr ""
+"这会加载一个文件，以便在启动实例后在文件系统中可用。 必须在 **启动实例之前调"
+"用** 。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:156
+#, fuzzy
+msgid ""
+"If type is string, the file will be loaded from that path.  If type is "
+"``ArrayBuffer`` or a view on one, the buffer will used as the content of the "
+"file."
+msgstr ""
+"如果 ``file`` 是一个字符串，那么该文件将从该URL加载。 如果 ``file`` 是一个 "
+"``ArrayBuffer`` 或一个视图，缓冲区将用作文件的内容。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:157
+msgid "If type is string, the file will be loaded from that path."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:159
+#, fuzzy
+msgid ""
+"If type is ``ArrayBuffer`` or a view on one, the buffer will used as the "
+"content of the file."
+msgstr ""
+"如果 ``file`` 是一个字符串，那么该文件将从该URL加载。 如果 ``file`` 是一个 "
+"``ArrayBuffer`` 或一个视图，缓冲区将用作文件的内容。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:162
+#, fuzzy
+msgid ""
+"Path by which the file will be available. Mandatory if ``file`` is not a "
+"string. If not passed, the path is derived from the URL of the loaded file."
+msgstr ""
+"如果 ``path`` 是一个字符串，它指定文件可用的路径。 如果 ``file`` 不是字符串，"
+"这是必需的。 否则，路径是从加载的文件的URL派生的。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:167
+#, fuzzy
+msgid "Promise that resolves once the file is preloaded."
+msgstr "返回一个预先加载文件后解析的promise。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:171
+#, fuzzy
+msgid ""
+"Starts the instance of the engine, using the passed strings as command line "
+"arguments. This allows great control over how the engine is started, but "
+"usually the other methods starting with ``engine.start`` are simpler and "
+"should be used instead."
+msgstr ""
+"启动引擎实例，将传递的字符串作为参数传递给 ``main()`` 函数。 这样可以很好地控"
+"制引擎的使用方式，但通常名称以 ``engine.start`` 开头的其他方法更易于使用。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:176
+msgid ""
+"If the instance has not yet been initialized with :js:func:`engine.init`, it "
+"will be."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:179
+msgid "The engine must be loaded beforehand."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:181
+msgid ""
+"Requires that the engine has been loaded, and that a canvas can be found on "
+"the page."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:184
+#, fuzzy
+msgid "Command line arguments."
+msgstr "添加命令行目标(Command Line Target):"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:186
+#, fuzzy
+msgid "Promise that resolves once the engine started."
+msgstr "返回引擎启动后解析的承诺。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
+msgid ""
+"Initializes the engine if not yet initialized and starts the game with the "
+"main pack loaded from the passed URL."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:193
+msgid ""
+"If the engine isn't loaded yet, the base path of the passed URL will be used "
+"to load the engine."
+msgstr "如果尚未加载引擎，则将使用传递的URL的基本路径来加载引擎。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:196
+msgid ""
+"This function ignores overrides of filenames and their extensions to start "
+"only the main pack passed as argument."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:199
+msgid ""
+"Path to the main pack to start. Also used as base path to load the engine if "
+"not loaded already."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:203
+#, fuzzy
+msgid "Promise that resolves once the game started."
+msgstr "返回游戏开始后解析的承诺。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:206
+msgid "Configuring start-up behaviour"
+msgstr "配置启动行为"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:208
+msgid ""
+"Beside starting the engine, other methods of the engine instance allow "
+"configuring the behavior:"
+msgstr "除启动引擎外，引擎实例的其他方法还允许配置行为:"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:213
+msgid ""
+"Specify whether the Engine will be unloaded automatically after the instance "
+"is initialized."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:216
+#, fuzzy
+msgid ""
+"This frees browser memory by unloading files that are no longer needed once "
+"the instance is initialized. However, if more instances of the engine will "
+"be started, the Engine will have to be loaded again."
+msgstr ""
+"设置是否在初始化实例后自动卸载Engine。 这通过卸载初始化实例后不再需要的文件来"
+"释放浏览器内存。 但是，如果将启动更多引擎实例，则必须再次加载引擎。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:220
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:239
+msgid "Enabled by default."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:222
+#, fuzzy
+msgid ""
+"``true`` if the engine shall be unloaded after initializing, ``false`` "
+"otherwise."
+msgstr "如果调试就是 ``true`` ，否则是 ``false``"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:228
+msgid "Specify a canvas to use."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:230
+#, fuzzy
+msgid "By default, the first canvas element on the page is used for rendering."
+msgstr ""
+"默认情况下，页面上的第一个canvas元素用于呈现。 通过调用此方法，可以指定另一个"
+"画布。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:232
+msgid "The canvas to use."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:236
+#, fuzzy
+msgid ""
+"Specifies whether the canvas will be resized to the width and height "
+"specified in the project settings on start."
+msgstr ""
+"设置是否将画布调整为启动时项目设置中指定的宽度和高度。 默认为 ``true`` 。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:241
+#, fuzzy
+msgid "``true`` if the canvas shall be resized on start, ``false`` otherwise."
+msgstr "如果调试就是 ``true`` ，否则是 ``false``"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:246
+msgid ""
+"By default, the engine will try to guess the locale to use from the "
+"JavaScript environment. It is usually preferable to use a server-side user-"
+"specified locale, or at least use the locale requested in the HTTP ``Accept-"
+"Language`` header. This method allows specifying such a custom locale string."
+msgstr ""
+"默认情况下，引擎将尝试从JavaScript环境猜测要使用的语言环境。通常最好使用服务"
+"器端用户指定的区域设置，或者至少使用HTTP ``Accept-Language`` header中请求的区"
+"域设置。该方法允许指定这样的自定义区域设置字符串。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:252
+#, fuzzy
+msgid "For example, with PHP:"
+msgstr "例如:"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:258
+#, fuzzy
+msgid "Locale."
+msgstr "区域"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:261
+msgid "List of :ref:`locales <doc_locales>`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:265
+msgid "Specify the virtual filename of the executable."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:267
+msgid ""
+"A real executable file doesn't exist for the HTML5 platform. However, a "
+"virtual filename is stored by the engine for compatibility with other "
+"platforms."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:271
+#, fuzzy
+msgid ""
+"By default, the base name of the loaded engine files is used. This method "
+"allows specifying another name."
+msgstr ""
+"默认情况下，已加载的引擎文件的基本名称用于可执行文件名。 此方法允许指定其他名"
+"称。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:274
+msgid ""
+"This affects the output of :ref:`OS.get_executable_path() "
+"<class_OS_method_get_executable_path>` and the automatically started main "
+"pack, :file:`{ExecutableName}.pck`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:277
+msgid "Executable name."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:280
+msgid "Customizing the presentation"
+msgstr "自定义演示文稿"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:282
+msgid "The following methods are used to implement the presentation:"
+msgstr "以下方法用于实现演示:"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:286
+msgid "Set the callback for displaying download progress."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:288
+msgid ""
+"Callback called once per frame with two number arguments: bytes loaded so "
+"far, and total bytes to load."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:299
+msgid "If the total is 0, it couldn't be calculated. Possible reasons include:"
+msgstr "如果总数为0，则无法计算。 可能的原因包括:"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:302
+msgid "Files are delivered with server-side chunked compression"
+msgstr "文件随服务器端分块压缩一起提供"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:303
+msgid "Files are delivered with server-side compression on Chromium"
+msgstr "文件在Chromium上通过服务器端压缩提供"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:304
+msgid ""
+"Not all file downloads have started yet (usually on servers without multi-"
+"threading)"
+msgstr "并非所有文件下载都已开始(通常在没有多线程的服务器上)"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:308
+msgid ""
+"For ease of use, the callback is only called once per frame, so that usage "
+"of ``requestAnimationFrame()`` is not necessary."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:313
+msgid "Specify the standard output stream callback."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:315
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:334
+msgid "Callback function called with one argument, the string to print."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:325
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:344
+#, fuzzy
+msgid ""
+"This method should usually only be used in debug pages. The ``"
+"$GODOT_DEBUG_ENABLED`` placeholder can be used to check for this."
+msgstr ""
+"这些方法通常只应在调试页面中使用。 可以使用 ``$GODOT_DEBUG_ENABLED`` 占位符来"
+"检查这一点。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:328
+#, fuzzy
+msgid "By default, ``console.log()`` is used."
+msgstr "默认情况下，分别使用 ``console.log()`` 和 ``console.warn()`` 。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:332
+msgid "Specify the standard error stream callback."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:347
+#, fuzzy
+msgid "By default, ``console.warn()`` is used."
+msgstr "默认情况下，分别使用 ``console.log()`` 和 ``console.warn()`` 。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:350
+msgid "Accessing the Emscripten ``Module``"
+msgstr "访问Emscripten ``Module``"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:352
+msgid ""
+"If you know what you're doing, you can access the runtime environment "
+"(Emscripten's ``Module``) as ``engine.rtenv``. Check the official Emscripten "
+"documentation for information on how to use it: https://kripken.github.io/"
+"emscripten-site/docs/api_reference/module.html"
+msgstr ""
+"如果您知道您在做什么，您可以访问运行时环境(Emscripten的 ``Module`` )作为 "
+"``engine.rtenv`` 。 查看官方Emscripten文档以获取有关如何使用它的信息:https://"
+"kripken.github.io/emscripten-site/docs/api_reference/module.html"
+
 #: ../../docs/tutorials/platform/consoles.rst:4
 msgid "Console support in Godot"
 msgstr "Godot支持的游戏机"
@@ -64913,6 +65260,175 @@ msgstr ""
 #: ../../docs/tutorials/misc/index.rst:2
 msgid "Miscellaneous"
 msgstr "杂项"
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:4
+msgid "Fixing jitter and stutter"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:7
+msgid "What are jitter and stutter?"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:9
+msgid ""
+"*Jitter* and *stutter* are two different alterations to visible motion of "
+"objects on screen that may affect a game, even when running at full speed. "
+"These effects are mostly visible in games where the world moves at a "
+"constant speed in a fixed direction, like runners or platformers."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:14
+#, fuzzy
+msgid "Distinguishing between them"
+msgstr "完成重生系统"
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:16
+msgid ""
+"A game running at a normal framerate without exhibiting any effect will "
+"appear smooth:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:20
+msgid "A game exhibiting *jitter* will shake constantly in a very subtle way:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:24
+msgid ""
+"Finally, a game exhibiting *stutter* will appear smooth, but appear to "
+"*stop* or *roll back a frame* every few seconds:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:30
+msgid "Jitter"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:32
+msgid ""
+"There can be many causes of jitter, the most typical one happens when the "
+"game *physics frequency* (usually 60 Hz) runs at a different resolution than "
+"the monitor refresh rate. Check whether your monitor refresh rate is "
+"different from 60 Hz."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:35
+msgid ""
+"This is generally not a problem, given that refresh rates higher than 60 Hz "
+"are barely visible to the human eye, and starting with Godot 3.1, a frame "
+"timer was introduced that tries to synchronize with refresh as best as "
+"possible."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:38
+msgid ""
+"Sometimes only some objects appear to jitter (character or background). This "
+"happens when they are processed in different time sources (one is processed "
+"in the physics step while another is processed in the idle step). Godot 3.1 "
+"does some improvements to this, from allowing kinematic bodies to be "
+"animated in the regular _process loop, to further fixes in the frame timer."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:44
+msgid "Stutter"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:46
+msgid ""
+"Stutter may happen due to two different reasons. The first, and most obvious "
+"one, is the game not being able to keep full framerate performance. Solving "
+"this is game specific and will require optimization."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:49
+msgid ""
+"The second is more complicated, because it is often not associated to the "
+"engine or game but the underlying operating system. Here is some information "
+"regarding stutter on different OSs."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:55
+msgid ""
+"Windows is known to cause stutter in windowed games. This mostly depends on "
+"the hardware installed, drivers version and processes running in parallel (e."
+"g. having many browser tabs open may cause stutter in a running game). To "
+"avoid this, starting with 3.1, Godot raises the game priority to \"Above "
+"Normal\". This helps considerably but may not completely eliminate stutter."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:60
+msgid ""
+"Eliminating this completely requires giving your game full privileges to "
+"become \"time critical\", which is not advised. Some games may do it, but it "
+"is advised to learn to live with this problem, as it is common for Windows "
+"games and most users won't play games windowed (games that are played in a "
+"window, e.g. puzzle games, will usaully not exhibit this problem anyway)."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:64
+msgid ""
+"For fullscreen, Windows gives special priority to the game so stutter is no "
+"longer visible and very rare. This is how most games are played."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:68
+msgid "Linux (X11)"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:70
+msgid ""
+"Stutter may be visible on Desktop Linux, but this is usually associated with "
+"different video drivers and compositors. Nouveau drivers often exhibit this, "
+"while AMD or NVidia proprietary don't. Some compositors may also trigger "
+"this problem (e.g. KWin), so it is advised to try using a different one to "
+"rule it out as the cause."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:74
+msgid ""
+"There is no workaround for driver or compositor stuttering other than "
+"reporting it as an issue to the driver or compositor developers."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:80
+msgid ""
+"Generally, macOS is stutter-free, although recently some bugs were reported "
+"when running on fullscreen (this is a macOS bug). If you have a machine "
+"exhibiting this behavior, please let us know."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:86
+msgid ""
+"Generally, Android is stutter and jitter-free because the running activity "
+"gets all the priority. That said, there may be problematic devices (older "
+"Kindle Fire is known to be one). If you see this problem on Android, please "
+"let us know."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:92
+msgid ""
+"iOS devices are generally stutter-free, but older devices running newer "
+"versions of the operating system may exhibit problems. This is generally "
+"unavoidable."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:96
+msgid "Reporting stutter or jitter problems"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:98
+msgid ""
+"If you are reporting a stutter or jitter problem (opening an issue) not "
+"caused by any of the above reasons, please specify very clearly all the "
+"information possible about device, operating system, driver versions, etc. "
+"This may help to better troubleshoot it."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:101
+msgid ""
+"Also make sure to use the correct term (jitter or stutter) based on the "
+"exhibited behavior. This will help understand your issue much faster. "
+"Provide a project that can be used to reproduce the issue, and if possible a "
+"screen capture demonstrating the bug."
+msgstr ""
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:4
 msgid "Handling quit requests"
@@ -68801,8 +69317,9 @@ msgid "To compile export templates for the Web, the following is required:"
 msgstr "要编译Web的导出模板，需要以下内容:"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:13
+#, fuzzy
 msgid ""
-"`Emscripten 1.37.9+ <http://kripken.github.io/emscripten-site>`__: If the "
+"`Emscripten 1.38.22+ <http://kripken.github.io/emscripten-site>`__: If the "
 "version available per package manager is not recent enough, the best "
 "alternative is to install using the `Emscripten SDK <http://kripken.github."
 "io/emscripten-site/docs/getting_started/downloads.html>`__"
@@ -68836,6 +69353,13 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:32
 msgid ""
+"On Windows, make sure to escape backslashes of paths within the Emscripten "
+"configuration file as double backslashes ``\\\\`` or use Unix-style paths "
+"with a single forward slash ``/``."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:36
+msgid ""
 "Open a terminal and navigate to the root directory of the engine source "
 "code. Then instruct SCons to build the JavaScript platform. Specify "
 "``target`` as either ``release`` for a release build or ``release_debug`` "
@@ -68844,7 +69368,7 @@ msgstr ""
 "打开终端并导航到引擎源代码的根目录。 然后指示SCons构建JavaScript平台。 将 "
 "``target`` 指定为发布版本的 ``release`` 或调试版本的``release_debug`` ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:39
+#: ../../docs/development/compiling/compiling_for_web.rst:43
 msgid ""
 "By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be "
 "built into the engine. Since ``eval()`` calls can be a security concern, the "
@@ -68854,7 +69378,7 @@ msgstr ""
 "于 ``eval()`` 调用可能是一个安全问题， ``javascript_eval`` 选项可用于构建而不"
 "需要单例::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:46
+#: ../../docs/development/compiling/compiling_for_web.rst:50
 msgid ""
 "The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
 "the resulting file will be placed in the ``bin`` subdirectory. Its name is "
@@ -68865,21 +69389,21 @@ msgstr ""
 "子目录中。 它的名字是``godot.javascript.opt.zip`` for release或``godot."
 "javascript.opt.debug.zip`` for debug。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:51
+#: ../../docs/development/compiling/compiling_for_web.rst:55
 msgid ""
 "Finally, rename the zip archive to ``webassembly_release.zip`` for the "
 "release template::"
 msgstr "最后，将zip存档重命名为 ``webassembly_release.zip`` 以获取发布模板::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:56
+#: ../../docs/development/compiling/compiling_for_web.rst:60
 msgid "And ``webassembly_debug.zip`` for the debug template::"
 msgstr "调试模板的``webassembly_debug.zip`` ::"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:61
+#: ../../docs/development/compiling/compiling_for_web.rst:65
 msgid "Building per asm.js translation or LLVM backend"
 msgstr "根据asm.js转换或LLVM后端构建"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:63
+#: ../../docs/development/compiling/compiling_for_web.rst:67
 msgid ""
 "WebAssembly can be compiled in two ways: The default is to first compile to "
 "asm.js, a highly optimizable subset of JavaScript, using Emscripten's "
@@ -68892,30 +69416,22 @@ msgstr ""
 "的工具将此代码转换为WebAssembly。 Emscripten会自动处理这两个进程，我们只需运"
 "行SCons。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:69
+#: ../../docs/development/compiling/compiling_for_web.rst:73
 msgid ""
-"The other method uses LLVM's WebAssembly backend. This backend is not yet "
-"available in release versions of LLVM, only in development builds built with "
-"``LLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly``. Compiling with this "
-"backend outputs files in LLVM's ``.s`` format, which is translated into "
-"actual WebAssembly using a tool called ``s2wasm``. Emscripten manages these "
-"processes as well, so we just invoke SCons."
+"The other method uses LLVM's WebAssembly backend. This backend is available "
+"starting with LLVM 8 or in development builds. Emscripten manages this "
+"process as well, so we just invoke SCons."
 msgstr ""
-"另一种方法使用LLVM的WebAssembly后端。 LLVM的发行版本中尚未提供此后端，仅在使"
-"用``LLVM_EXPERIMENTAL_TARGETS_TO_BUILD = WebAssembly``构建的开发版本中。 使用"
-"此后端进行编译以LLVM的 ``.s`` 格式输出文件，使用名为 ``s2wasm`` 的工具将其转"
-"换为实际的WebAssembly。 Emscripten也管理这些进程，因此我们只调用SCons。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:76
+#: ../../docs/development/compiling/compiling_for_web.rst:77
+#, fuzzy
 msgid ""
 "In order to choose one of the two methods, the ``LLVM_ROOT`` variable in the "
 "Emscripten configuration file is used. If it points to a directory "
 "containing binaries of Emscripten's *fastcomp* fork of clang, ``asm2wasm`` "
 "is used. This is the default in a normal Emscripten installation. Otherwise, "
-"LLVM binaries built with the WebAssembly backend will be expected and "
-"``s2wasm`` is used. On Windows, make sure to escape backslashes of paths "
-"within this file as double backslashes ``\\\\`` or use Unix-style paths with "
-"a single forward slash ``/``."
+"LLVM binaries built with the WebAssembly backend will be expected and the "
+"LLVM's WebAssembly backend is used."
 msgstr ""
 "为了选择两种方法中的一种，使用Emscripten配置文件中的``LLVM_ROOT``变量。 如果"
 "它指向包含Emscripten的* fastcomp * fork of clang的二进制文件的目录，则使用"
@@ -76628,6 +77144,140 @@ msgid ""
 "`KidsCanCode: An ongoing tutorial series <http://kidscancode.org/blog/tags/"
 "godot/>`_"
 msgstr ""
+
+#~ msgid "For the same reason, the full screen project setting is ignored."
+#~ msgstr "出于同样的原因，将忽略全屏项目设置。"
+
+#~ msgid "HTTPClient"
+#~ msgstr "HTTPClient"
+
+#~ msgid ""
+#~ "The ``HTTPClient`` implementation for the HTML5 platform has several "
+#~ "restrictions:"
+#~ msgstr "HTML5平台的 ``HTTPClient`` 实现有几个限制:"
+
+#~ msgid "Starting exported games from the local file system"
+#~ msgstr "从本地文件系统启动导出的游戏"
+
+#~ msgid ""
+#~ "Turning on **Export with Debug** when exporting will, in addition to "
+#~ "enabling various debug features of the engine, display a debug output "
+#~ "below the canvas when using the default HTML page, displaying JavaScript "
+#~ "and engine errors. You can also use the browser-integrated developer "
+#~ "console, usually opened with the F12 key, which often shows more "
+#~ "information, including WebGL errors."
+#~ msgstr ""
+#~ "在导出时启用 **导出和调试** 除了启用引擎的各种调试功能外，在使用默认HTML页"
+#~ "面时显示画布下方的调试输出，显示JavaScript和引擎错误。 您还可以使用浏览器"
+#~ "集成的开发人员控制台，通常使用F12键打开，这通常会显示更多信息，包括WebGL错"
+#~ "误。"
+
+#~ msgid "The object itself has only two methods, ``load()`` and ``unload()``."
+#~ msgstr "对象本身只有两个方法， ``load()`` 和 ``unload()`` 。"
+
+#~ msgid "``Engine.load(basePath)``"
+#~ msgstr "``Engine.load(basePath)``"
+
+#~ msgid "``Engine.unload()``"
+#~ msgstr "``Engine.unload()``"
+
+#~ msgid "``Engine.isWebGLAvailable(majorVersion = 1)``"
+#~ msgstr "``Engine.isWebGLAvailable(majorVersion = 1)``"
+
+#~ msgid ""
+#~ "The more interesting interface is accessed by instantiating ``Engine`` "
+#~ "using the ``new`` operator:"
+#~ msgstr "通过使用 ``new`` 运算符实例化 ``Engine`` 来访问更有趣的接口:"
+
+#~ msgid "``engine.init(basePath)``"
+#~ msgstr "``engine.init(basePath)``"
+
+#~ msgid ""
+#~ "Initializes the instance. If the engine wasn't loaded yet, a base path "
+#~ "must be passed from which the engine will be loaded."
+#~ msgstr "初始化实例。 如果尚未加载引擎，则必须传递将从中加载引擎的基本路径。"
+
+#~ msgid ""
+#~ "Returns a promise that resolves once the engine is loaded and "
+#~ "initialized. It can then be started with ``engine.startGame()``"
+#~ msgstr ""
+#~ "返回一旦加载并初始化引擎就解析的承诺。 然后可以用 ``engine.startGame()`` "
+#~ "开始"
+
+#~ msgid "``engine.preloadFile(file, path)``"
+#~ msgstr "``engine.preloadFile(file, path)``"
+
+#~ msgid "``engine.start(arg1, arg2, …)``"
+#~ msgstr "``engine.start(arg1, arg2, …)``"
+
+#~ msgid "``engine.startGame(mainPack)``"
+#~ msgstr "``engine.startGame(mainPack)``"
+
+#~ msgid ""
+#~ "Starts the game with the main pack loaded from the passed URL string and "
+#~ "starts the engine with it."
+#~ msgstr "使用从传递的URL字符串加载的主包启动游戏，并使用它启动引擎。"
+
+#~ msgid "``engine.setUnloadAfterInit(enabled)``"
+#~ msgstr "``engine.setUnloadAfterInit(enabled)``"
+
+#~ msgid "Defaults to ``true``."
+#~ msgstr "默认为 ``true`` 。"
+
+#~ msgid "``engine.setCanvas(canvasElem)``"
+#~ msgstr "``engine.setCanvas(canvasElem)``"
+
+#~ msgid "``engine.setCanvasResizedOnStart(enabled)``"
+#~ msgstr "``engine.setCanvasResizedOnStart(enabled)``"
+
+#~ msgid "``engine.setLocale(locale)``"
+#~ msgstr "``engine.setLocale(locale)``"
+
+#~ msgid "``engine.setExecutableName(execName)``"
+#~ msgstr "``engine.setExecutableName(execName)``"
+
+#~ msgid "``engine.setProgressFunc(func)``"
+#~ msgstr "``engine.setProgressFunc(func)``"
+
+#~ msgid ""
+#~ "This method is used to display download progress. The passed callback "
+#~ "function is called with two number arguments, the first argument "
+#~ "specifies bytes loaded so far, the second argument specifies the total "
+#~ "number of bytes to load."
+#~ msgstr ""
+#~ "此方法用于显示下载进度。 使用两个数字参数调用传递的回调函数，第一个参数指"
+#~ "定到目前为止加载的字节，第二个参数指定要加载的总字节数。"
+
+#~ msgid "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
+#~ msgstr "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
+
+#~ msgid ""
+#~ "These methods allow implementing custom behavior for the ``stdout`` and "
+#~ "``stderr`` streams. The functions passed in will be called with one "
+#~ "string argument specifying the string to print."
+#~ msgstr ""
+#~ "这些方法允许实现 ``stdout`` 和 ``stderr`` 流的自定义行为。 传入的函数将使"
+#~ "用一个字符串参数调用，该参数指定要打印的字符串。"
+
+#~ msgid "Image to World transform."
+#~ msgstr "图像到世界变换。"
+
+#~ msgid "World to view transform."
+#~ msgstr "世界观看变革。"
+
+#~ msgid ""
+#~ "The other method uses LLVM's WebAssembly backend. This backend is not yet "
+#~ "available in release versions of LLVM, only in development builds built "
+#~ "with ``LLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly``. Compiling with "
+#~ "this backend outputs files in LLVM's ``.s`` format, which is translated "
+#~ "into actual WebAssembly using a tool called ``s2wasm``. Emscripten "
+#~ "manages these processes as well, so we just invoke SCons."
+#~ msgstr ""
+#~ "另一种方法使用LLVM的WebAssembly后端。 LLVM的发行版本中尚未提供此后端，仅在"
+#~ "使用``LLVM_EXPERIMENTAL_TARGETS_TO_BUILD = WebAssembly``构建的开发版本"
+#~ "中。 使用此后端进行编译以LLVM的 ``.s`` 格式输出文件，使用名为 ``s2wasm`` "
+#~ "的工具将其转换为实际的WebAssembly。 Emscripten也管理这些进程，因此我们只调"
+#~ "用SCons。"
 
 #~ msgid ""
 #~ "Don't scale the shape's outline! Only use the size handles (circled in "

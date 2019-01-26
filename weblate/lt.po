@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2019-01-20 10:29+0100\n"
+"POT-Creation-Date: 2019-01-26 22:13+0100\n"
 "PO-Revision-Date: 2018-06-12 09:40+0000\n"
 "Last-Translator: Kornelijus <kornelijus.github@gmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/godot-engine/"
@@ -437,11 +437,12 @@ msgstr ""
 msgid "**For the editor:**"
 msgstr ""
 
-#: ../../docs/about/faq.rst:35
+#: ../../docs/about/faq.rst:35 ../../docs/tutorials/misc/jitter_stutter.rst:53
 msgid "Windows"
 msgstr ""
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
+#: ../../docs/tutorials/misc/jitter_stutter.rst:78
 msgid "macOS"
 msgstr ""
 
@@ -459,11 +460,13 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:44
 #: ../../docs/getting_started/step_by_step/exporting.rst:185
+#: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "Android"
 msgstr ""
 
 #: ../../docs/about/faq.rst:45
 #: ../../docs/getting_started/step_by_step/exporting.rst:237
+#: ../../docs/tutorials/misc/jitter_stutter.rst:90
 msgid "iOS"
 msgstr ""
 
@@ -5467,8 +5470,8 @@ msgstr ""
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
-"energy bar, and bomb and rupee counters. By the end of this tutorial, you'll "
-"have a game GUI, ready to control with GDscript or VisualScript:"
+"energy bar, and bomb and emerald counters. By the end of this tutorial, "
+"you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
@@ -5526,7 +5529,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-msgid "The bomb and rupee counters on the right"
+msgid "The bomb and emerald counters on the right"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
@@ -5545,7 +5548,7 @@ msgid ""
 "border of the screen using a ``MarginContainer``, followed by an "
 "``HBoxContainer`` to manage our two columns. The two bars stack on top of "
 "one another inside a ``VBoxContainer``. And we'll need a last "
-"``HBoxContainer`` in the right column to place the bomb and rupee counters "
+"``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
 
@@ -5827,12 +5830,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
-msgid "Design the bomb and rupee counters"
+msgid "Design the bomb and emerald counters"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
 msgid ""
-"The bomb and rupee counters are like the bar's ``Count`` node. So we'll "
+"The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
 
@@ -5951,10 +5954,10 @@ msgstr ""
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
-"``BombCounter``, and the ``RupeeCounter``. Select the ``Bar`` HBoxContainer. "
-"Right click on it and click on ``Save Branch as Scene``. Save the scene as "
-"``Bar.tscn``. You should see the node branch turn it to a single ``Bar`` "
-"node."
+"``BombCounter``, and the ``EmeraldCounter``. Select the ``Bar`` "
+"HBoxContainer. Right click on it and click on ``Save Branch as Scene``. Save "
+"the scene as ``Bar.tscn``. You should see the node branch turn it to a "
+"single ``Bar`` node."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
@@ -6175,7 +6178,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-msgid "Prepare the bomb and rupee counters"
+msgid "Prepare the bomb and emerald counters"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
@@ -6193,19 +6196,19 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
-"once more. Rename the root node ``RupeeCounter`` and save the scene as "
-"``RupeeCounter.tscn``. For this one, we mainly need to replace the bomb icon "
-"with the rupee icon. In the FileSystem tab, drag the ``rupees_icon.png`` "
-"onto the ``Icon`` node's ``Texture`` slot. ``Icon`` already anchors to the "
-"right edge of the ``Background`` node so we can change its position and it "
-"will scale and reposition with the ``RupeeCounter`` container. Shift the "
-"rupee icon a little bit to the right and down. Use the Arrow Keys on the "
-"keyboard to nudge its position. Save, and we're done with all the UI "
+"once more. Rename the root node ``EmeraldCounter`` and save the scene as "
+"``EmeraldCounter.tscn``. For this one, we mainly need to replace the bomb "
+"icon with the emerald icon. In the FileSystem tab, drag the ``emeralds_icon."
+"png`` onto the ``Icon`` node's ``Texture`` slot. ``Icon`` already anchors to "
+"the right edge of the ``Background`` node so we can change its position and "
+"it will scale and reposition with the ``EmeraldCounter`` container. Shift "
+"the emerald icon a little bit to the right and down. Use the Arrow Keys on "
+"the keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-msgid "The rupee counter should look something like this"
+msgid "The emerald counter should look something like this"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
@@ -6227,8 +6230,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
 msgid ""
-"Now, drag and drop the ``BombCounter.tscn`` and ``RupeeCounter.tscn`` scenes "
-"onto the ``Counters`` node. They'll resize automatically."
+"Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
+"scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
@@ -6237,7 +6240,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
 msgid ""
-"To let the ``RupeeCounter`` and ``BombCounter`` use the size we defined in "
+"To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
 "container. Select the ``Counters`` node and unfold the ``Size Flags`` "
 "section in the Inspector. Uncheck the ``Fill`` tag for the ``Vertical`` "
@@ -9244,13 +9247,13 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:366
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:431
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:15
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:115
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:166
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:262
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:175
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:17
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:70
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:95
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:144
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:193
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:30
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:92
@@ -13428,6 +13431,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:161
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:180
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 msgid "C#"
 msgstr ""
 
@@ -17902,19 +17906,70 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:6
 msgid ""
 "HTML5 export allows publishing games made in Godot Engine to the browser. "
-"This requires support for the recent technologies `WebAssembly <https://"
-"webassembly.org/>`__ and `WebGL 2.0 <https://www.khronos.org/webgl/>`__ in "
-"the user's browser. **Firefox** and **Chromium** (Chrome, Opera) are the "
-"most popular supported browsers, **Safari** and **Edge** do not work yet. On "
-"**iOS**, all browsers must be based on WebKit (i.e. Safari), so they will "
-"also not work."
+"This requires support for `WebAssembly <https://webassembly.org/>`__ and "
+"`WebGL <https://www.khronos.org/webgl/>`__ in the user's browser."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:11
+msgid ""
+"Use the browser-integrated developer console, usually opened with :kbd:"
+"`F12`, to view **debug information** like JavaScript, engine, and WebGL "
+"errors."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
+msgid ""
+"Many browsers, Chromium-based browsers specifically, will not load exported "
+"projects when **opened locally** per ``file://`` protocol. To get around "
+"this, use a local server."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
+msgid ""
+"Python offers an easy method to start a local server. Use ``python -m "
+"SimpleHTTPServer`` with Python 2 or"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:21
+msgid ""
+"``python -m http.server`` with Python 3 to serve the current working "
+"directory at ``http://localhost:8000``."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:25
+msgid "WebGL 2"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
+msgid ""
+"Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
+"HTML5 export uses *WebGL 2* when the *GLES3* option selected."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
+msgid ""
+"Usage of WebGL 2 is not recommended due to its expected removal from Godot "
+"without replacement."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:33
+msgid ""
+"WebGL 2 is not supported in all browsers. **Firefox** and **Chromium** "
+"(Chrome, Opera) are the most popular supported browsers, **Safari** and "
+"**Edge** do not work. On **iOS**, all browsers are based on WebKit (i.e. "
+"Safari), so they will also not work."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
+msgid ""
+"Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
 msgid "Limitations"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:17
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
 msgid ""
 "For security and privacy reasons, many features that work effortlessly on "
 "native platforms are more complicated on the web platform. Following is a "
@@ -17922,22 +17977,11 @@ msgid ""
 "web."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:22
-msgid "Exported ``.html`` file must not be reused"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:24
-msgid ""
-"On export, several text placeholders are replaced in the **generated HTML "
-"file** specifically for the given export options. It must not be reused in "
-"further exports."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:29
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
 msgid "Using cookies for data persistence"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:31
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:50
 msgid ""
 "Users must **allow cookies** (specifically IndexedDB) if persistence of the "
 "``user://`` file system is desired. When playing a game presented in an "
@@ -17945,147 +17989,171 @@ msgid ""
 "browsing mode also prevents persistence."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:36
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
 msgid ""
 "The method ``OS.is_userfs_persistent()`` can be used to check if the "
 "``user://`` file system is persistent, but can give false positives in some "
 "cases."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
-msgid "Full screen and mouse capture"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
-msgid ""
-"Browsers do not allow arbitrarily **entering full screen** at any time. The "
-"same goes for **capturing the cursor**. Instead, these actions have to occur "
-"as a response to a JavaScript input event. In Godot, this is most easily "
-"done by entering full screen from within an input callback such as "
-"``_input`` or ``_unhandled_input``."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:49
-msgid "For the same reason, the full screen project setting is ignored."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:52
-msgid "HTTPClient"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:54
-msgid ""
-"The ``HTTPClient`` implementation for the HTML5 platform has several "
-"restrictions:"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:57
-msgid "Accessing or changing the ``StreamPeer`` is not possible"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:58
-msgid "Blocking mode is not available"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:59
-msgid ""
-"Cannot progress more than once per frame, so polling in a loop will freeze"
-msgstr ""
-
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
-msgid "No chunked responses"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:61
-msgid "Host verification cannot be disabled"
+msgid "Full screen and mouse capture"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
 msgid ""
-"Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
-"Security/Same-origin_policy>`_"
+"Browsers do not allow arbitrarily **entering full screen**. The same goes "
+"for **capturing the cursor**. Instead, these actions have to occur as a "
+"response to a JavaScript input event. In Godot, this means entering full "
+"screen from within a pressed input event callback such as ``_input`` or "
+"``_unhandled_input``. Querying the :ref:`class_Input` singleton is not "
+"sufficient, the relevant input event must currently be active."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:65
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:69
+msgid ""
+"For the same reason, the full screen project setting doesn't work unless the "
+"engine is started from within a valid input event handler. This requires :"
+"ref:`customization of the HTML page <doc_customizing_html5_shell>`."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
+msgid "Audio autoplay"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:76
+msgid ""
+"Chrome restricts how websites may play audio. It may be necessary for the "
+"player to click or tap or press a key to enable audio."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
+msgid ""
+"Google offers additional information about their `Web Audio autoplay "
+"policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
+"autoplay>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
+msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
+msgid "The HTTP classes have several restrictions on the HTML5 platform:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
+msgid "Accessing or changing the ``StreamPeer`` is not possible"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
+msgid "Threaded/Blocking mode is not available"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:89
+msgid ""
+"Cannot progress more than once per frame, so polling in a loop will freeze"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
+msgid "No chunked responses"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
+msgid "Host verification cannot be disabled"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
+msgid ""
+"Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
+"Security/Same-origin_policy>`__"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
+msgid "Exported ``.html`` file must not be reused"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
+msgid ""
+"On export, several text placeholders are replaced in the **generated HTML "
+"file** specifically for the given export options. It must not be reused in "
+"further exports."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
+msgid "Boot splash is not displayed"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:104
+msgid ""
+"The default HTML page does not display the boot splash while loading. "
+"However, the image is exported as a PNG file, so :ref:`custom HTML pages "
+"<doc_customizing_html5_shell>` can display it."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
 msgid "Unimplemented functionality"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:67
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:111
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:69
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:7
 msgid "Threads"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
 msgid "GDNative"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:71
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
 msgid "Clipboard synchronisation between engine and operating system"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:72
-msgid "Networking other than ``HTTPClient``"
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
+msgid ""
+"Networking other than :ref:`class_HTTPClient` and :ref:"
+"`class_WebSocketClient`"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
 msgid ""
 "Check the `list of open HTML5 issues on Github <https://github.com/"
-"godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`_ to see "
-"if functionality you're interested in has an issue yet. If not, open one to "
-"communicate your interest."
+"godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`__ to see "
+"if the functionality you're interested in has an issue yet. If not, open one "
+"to communicate your interest."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
-msgid "Starting exported games from the local file system"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:81
-msgid ""
-"Many browsers, Chromium-based browsers specifically, will not load exported "
-"projects when **opened locally** per ``file://`` protocol. To get around "
-"this, use a local server."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
-msgid ""
-"Python offers an easy method for this; using ``python -m SimpleHTTPServer`` "
-"with Python 2 or ``python -m http.server`` with Python 3 will serve the "
-"current working directory on ``http://localhost:8000``."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 msgid "Serving the files"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:127
 msgid ""
 "Exporting for the web generates several files to be served from a web "
 "server, including a default HTML page for presentation. A custom HTML file "
 "can be used, see :ref:`doc_customizing_html5_shell`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:131
 msgid ""
 "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache "
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
 "never depended on by default."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:100
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:135
 msgid ""
-"The HTML page is designed to fit the game perfectly without cutting off "
-"parts of the canvas when the browser window is scaled to the game's "
-"dimensions. This way it can be inserted into an ``<iframe>`` with the game's "
-"size, as is common on most web game hosting sites."
+"The HTML page draws the game at maximum size within the browser window. This "
+"way it can be inserted into an ``<iframe>`` with the game's size, as is "
+"common on most web game hosting sites."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:105
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:139
 msgid ""
 "The other exported files are served as they are, next to the ``.html`` file, "
 "names unchanged. The ``.wasm`` file is a binary WebAssembly module "
@@ -18096,14 +18164,20 @@ msgid ""
 "`custom HTML pages <doc_customizing_html5_shell>`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:147
 msgid ""
-"The ``.pck`` file is binary, usually delivered with the MIME-type "
-"``application/octet-stream``. The ``.wasm`` file is delivered as "
-"``application/wasm``."
+"The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
+"`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
+"`application/wasm`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:151
+msgid ""
+"Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
+"mimetype:`application/wasm` can prevent some start-up optimizations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:155
 msgid ""
 "Delivering the files with server-side compression is recommended especially "
 "for the ``.pck`` and ``.wasm`` files, which are usually large in size. The "
@@ -18111,82 +18185,72 @@ msgid ""
 "its original size with gzip compression."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
 msgid "Export options"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:163
 msgid ""
 "If a runnable web export template is available, a button appears between the "
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
 "the game in the default browser for testing."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:129
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:167
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:132
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
 msgid ""
 "**Head Include** is appended into the ``<head>`` element of the generated "
 "HTML page. This allows to, for example, load webfonts and third-party "
 "JavaScript APIs, include CSS, or run JavaScript code."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:136
-msgid ""
-"Turning on **Export with Debug** when exporting will, in addition to "
-"enabling various debug features of the engine, display a debug output below "
-"the canvas when using the default HTML page, displaying JavaScript and "
-"engine errors. You can also use the browser-integrated developer console, "
-"usually opened with the F12 key, which often shows more information, "
-"including WebGL errors."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:145
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:177
 msgid "Calling JavaScript from script"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:147
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
 msgid ""
-"In web builds, the ``JavaScript`` singleton is implemented. If offers a "
+"In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
 "function of the same name. It takes a string as an argument and executes it "
 "as JavaScript code. This allows interacting with the browser in ways not "
 "possible with script languages integrated into Godot."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:158
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:190
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:162
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:163
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:195
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:175
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:207
 msgid ""
 "HTML5 export templates may be built without support for the singleton. With "
 "such templates, and on platforms other than HTML5, calling ``JavaScript."
@@ -18194,410 +18258,17 @@ msgid ""
 "checked with the ``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:186
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:220
+msgid ""
+"GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
+"``my_func3()`` above, are useful to keep JavaScript code readable."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:223
 msgid ""
 "The ``eval`` method also accepts a second, optional Boolean argument, which "
 "specifies whether to execute the code in the global execution context, "
 "defaulting to ``false`` to prevent polluting the global namespace::"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:4
-msgid "Customizing the Web export HTML page"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:6
-msgid ""
-"Rather than the default HTML page that comes with the export templates, it "
-"is also possible to use a custom HTML page. This allows drastic "
-"customization of the final web presentation and behavior. The path to the "
-"custom HTML page is specified in the export options as ``Html/Custom Html "
-"Shell``."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:11
-msgid ""
-"The default HTML page is available in the Godot Engine repository at `/misc/"
-"dist/html/default.html <https://github.com/godotengine/godot/blob/master/"
-"misc/dist/html/default.html>`_. Some simple use-cases where customizing the "
-"default page is useful include:"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:15
-msgid "Loading files from a different directory"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:16
-msgid "Loading a ``.zip`` file instead of a ``.pck`` file as main pack"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:17
-msgid "Loading engine files from a different directory than the main pack file"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:18
-msgid ""
-"Loading some extra files before the engine starts, so they are available in "
-"the file system later"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:20
-msgid ""
-"Passing custom \"command line\" arguments, e.g. ``-s`` to start a MainLoop "
-"script"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:23
-msgid "Placeholder substitution"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:25
-msgid ""
-"When exporting the game, several placeholders in the HTML page are replaced "
-"with values depending on the export:"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:29
-msgid "Placeholder"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:29
-msgid "substituted by"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:31
-msgid "``$GODOT_BASENAME``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:31
-msgid ""
-"Basename of exported files without suffixes, e.g. ``game`` when exporting "
-"``game.html``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:34
-msgid "``$GODOT_DEBUG_ENABLED``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:34
-msgid "``true`` if debugging, ``false`` otherwise"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:36
-msgid "``$GODOT_HEAD_INCLUDE``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:36
-msgid ""
-"Custom string to include just before the end of the HTML ``<head>`` element"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:40
-msgid ""
-"The HTML file must evaluate the JavaScript file ``$GODOT_BASENAME.js``. This "
-"file defines a global ``Engine`` object used to start the engine, :ref:`see "
-"below <doc_javascript_engine_object>` for details."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:44
-msgid ""
-"The boot splash image is exported as ``$GODOT_BASENAME.png`` and can be used "
-"e.g. in ``<img />`` elements."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:47
-msgid ""
-"``$GODOT_DEBUG_ENABLED`` can be useful to optionally display e.g. an output "
-"console or other debug tools."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:50
-msgid ""
-"``$GODOT_HEAD_INCLUDE`` is replaced with the string specified by the export "
-"option ``Html/Head Include``."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:56
-msgid "The ``Engine`` object"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:58
-msgid ""
-"The JavaScript global object ``Engine`` is defined by ``$GODOT_BASENAME.js`` "
-"and serves as an interface to the engine start-up process."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:61
-msgid "The object itself has only two methods, ``load()`` and ``unload()``."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:64
-msgid "``Engine.load(basePath)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:66
-msgid "Loads the engine from the passed base path."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:68
-msgid "Returns a promise that resolves once the engine is loaded."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:71
-msgid "``Engine.unload()``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:73
-msgid ""
-"Unloads the module to free memory. This is called automatically once the "
-"module is instantiated unless explicitly disabled."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:77
-msgid "``Engine.isWebGLAvailable(majorVersion = 1)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:79
-msgid ""
-"Returns ``true`` if the given major version of WebGL is available, ``false`` "
-"otherwise. Defaults to ``1`` for WebGL 1.0."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:83
-msgid "Starting an ``Engine`` instance"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:85
-msgid ""
-"The more interesting interface is accessed by instantiating ``Engine`` using "
-"the ``new`` operator:"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:92
-msgid ""
-"This ``Engine`` instance, referred to as ``engine`` with a lower-case ``e`` "
-"from here, is a startable instance of the engine, usually a game. To start "
-"such an instance, the global ``Engine`` object must be loaded, then the "
-"``engine`` instance must be initialized and started."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:98
-msgid "``engine.init(basePath)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:100
-msgid ""
-"Initializes the instance. If the engine wasn't loaded yet, a base path must "
-"be passed from which the engine will be loaded."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:103
-msgid ""
-"Returns a promise that resolves once the engine is loaded and initialized. "
-"It can then be started with ``engine.startGame()``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:107
-msgid "``engine.preloadFile(file, path)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:109
-msgid ""
-"This loads a file so it is available in the file system once the instance is "
-"started. This must be called **before** starting the instance."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:112
-msgid ""
-"If ``file`` is a string, the file will be loaded from that URL. If ``file`` "
-"is an ``ArrayBuffer`` or a view on one, the buffer will used as the content "
-"of the file."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:116
-msgid ""
-"If ``path`` is a string, it specifies the path by which the file will be "
-"available. This is mandatory if ``file`` is not a string. Otherwise, the "
-"path is derived from the URL of the loaded file."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:120
-msgid "Returns a promise that resolves once the file is preloaded."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:123
-msgid "``engine.start(arg1, arg2, …)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:125
-msgid ""
-"Starts the instance of the engine, handing the passed strings as arguments "
-"to the ``main()`` function. This allows great control over how the engine is "
-"used, but usually the other methods whose names start with ``engine.start`` "
-"are simpler to use."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:130
-msgid "Returns a promise that resolves once the engine started."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:133
-msgid "``engine.startGame(mainPack)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:135
-msgid ""
-"Starts the game with the main pack loaded from the passed URL string and "
-"starts the engine with it."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:138
-msgid ""
-"If the engine isn't loaded yet, the base path of the passed URL will be used "
-"to load the engine."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:141
-msgid "Returns a promise that resolves once the game started."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:144
-msgid "Configuring start-up behaviour"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:146
-msgid ""
-"Beside starting the engine, other methods of the engine instance allow "
-"configuring the behavior:"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:150
-msgid "``engine.setUnloadAfterInit(enabled)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:152
-msgid ""
-"Sets whether the Engine will be unloaded automatically after the instance is "
-"initialized. This frees browser memory by unloading files that are no longer "
-"needed once the instance is initialized. However, if more instances of the "
-"engine will be started, the Engine will have to be loaded again."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:157
-msgid "Defaults to ``true``."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:160
-msgid "``engine.setCanvas(canvasElem)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:162
-msgid ""
-"By default, the first canvas element on the page is used for rendering. By "
-"calling this method, another canvas can be specified."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:166
-msgid "``engine.setCanvasResizedOnStart(enabled)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:168
-msgid ""
-"Sets whether the canvas will be resized to the width and height specified in "
-"the project settings on start. Defaults to ``true``."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:172
-msgid "``engine.setLocale(locale)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:174
-msgid ""
-"By default, the engine will try to guess the locale to use from the "
-"JavaScript environment. It is usually preferable to use a server-side user-"
-"specified locale, or at least use the locale requested in the HTTP ``Accept-"
-"Language`` header. This method allows specifying such a custom locale string."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:181
-msgid "``engine.setExecutableName(execName)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:183
-msgid ""
-"By default, the base name of the loaded engine files is used for the "
-"executable name. This method allows specifying another name."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:187
-msgid "Customizing the presentation"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:189
-msgid "The following methods are used to implement the presentation:"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:192
-msgid "``engine.setProgressFunc(func)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:194
-msgid ""
-"This method is used to display download progress. The passed callback "
-"function is called with two number arguments, the first argument specifies "
-"bytes loaded so far, the second argument specifies the total number of bytes "
-"to load."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:206
-msgid "If the total is 0, it couldn't be calculated. Possible reasons include:"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:209
-msgid "Files are delivered with server-side chunked compression"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:210
-msgid "Files are delivered with server-side compression on Chromium"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:211
-msgid ""
-"Not all file downloads have started yet (usually on servers without multi-"
-"threading)"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:214
-msgid "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:216
-msgid ""
-"These methods allow implementing custom behavior for the ``stdout`` and "
-"``stderr`` streams. The functions passed in will be called with one string "
-"argument specifying the string to print."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:227
-msgid ""
-"These methods should usually only be used in debug pages. The ``"
-"$GODOT_DEBUG_ENABLED`` placeholder can be used to check for this."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:230
-msgid ""
-"By default, ``console.log()`` and ``console.warn()`` are used respectively."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:233
-msgid "Accessing the Emscripten ``Module``"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:235
-msgid ""
-"If you know what you're doing, you can access the runtime environment "
-"(Emscripten's ``Module``) as ``engine.rtenv``. Check the official Emscripten "
-"documentation for information on how to use it: https://kripken.github.io/"
-"emscripten-site/docs/api_reference/module.html"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:4
@@ -45476,12 +45147,12 @@ msgid "Culling disabled (double sided)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:41
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:31
 msgid "**unshaded**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:41
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:31
 msgid "Result is just albedo. No lighting/shading happens in material."
 msgstr ""
 
@@ -45566,7 +45237,7 @@ msgid "Disable specular."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:63
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:33
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:35
 msgid "**skip_vertex_transform**"
 msgstr ""
 
@@ -45583,21 +45254,45 @@ msgid "VERTEX/NORMAL/etc. are modified in world coordinates instead of local."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:67
-msgid "**vertex_lighting**"
+msgid "**ensure_correct_normals**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:67
+msgid "Use when non-uniform scale is applied to mesh."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:69
+msgid "**vertex_lighting**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:69
 msgid "Use vertex-based lighting."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:71
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:37
+msgid "**shadows_disabled**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:71
+msgid "Disable computing shaders in shader."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:73
+msgid "**ambient_light_disabled**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:73
+msgid "Disable contribution from ambient light and radiance map."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:77
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
 msgid "Vertex built-ins"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:73
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:79
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:41
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:42
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
@@ -45606,32 +45301,32 @@ msgid ""
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:78
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:84
 msgid ""
 "Vertex data (``VERTEX``, ``NORMAL``, ``TANGENT``, ``BITANGENT``) are "
 "presented in local model space. If not written to, these values will not be "
 "modified and be passed through as they came."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:82
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:88
 msgid ""
 "They can optionally be presented in world space by using the "
 "*world_vertex_coords* render mode."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:84
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:90
 msgid ""
 "Users can disable the built-in modelview transform (projection will still "
 "happen later) and do it manually with the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:98
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:104
 msgid ""
 "Other built-ins, such as UV, UV2 and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:100
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:106
 msgid ""
 "Users can override the modelview and projection transforms using the "
 "``POSITION`` built-in. When ``POSITION`` is used, the value from ``VERTEX`` "
@@ -45639,238 +45334,257 @@ msgid ""
 "fragment shader still comes from ``VERTEX``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:104
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:62
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:110
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:87
 msgid ""
 "For instancing, the INSTANCE_CUSTOM variable contains the instance custom "
 "data. When using particles, this information is usually:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:107
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:65
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:113
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:90
 msgid "**x**: Rotation angle in radians."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:108
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:66
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:114
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:91
 msgid "**y**: Phase during lifetime (0 to 1)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:109
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:67
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:115
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:92
 msgid "**z**: Animation frame."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:111
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:117
 msgid ""
 "This allows you to easily adjust the shader to a particle system using "
 "default particles material. When writing a custom particles shader, this "
 "value can be used as desired."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:115
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:166
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:262
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:70
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:175
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:95
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:144
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:193
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
 msgid "Built-in"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:117
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
 msgid "out mat4 **WORLD_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:117
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:170
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:282
 msgid "Model space to world space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:119
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:172
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:268
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:181
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:284
 msgid "in mat4 **INV_CAMERA_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:119
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:172
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:268
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:181
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:284
 msgid "World space to view space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
 msgid "out mat4 **PROJECTION_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:174
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:270
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:101
 msgid "View space to clip space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:183
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:286
 msgid "in mat4 **CAMERA_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:183
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:286
 msgid "View space to world space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
 msgid "out mat4 **MODELVIEW_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
 msgid "Model space to view space transform (use if possible)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
 msgid "out mat4 **INV_PROJECTION_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:176
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:272
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
 msgid "Clip space to view space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:178
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:274
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:78
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:145
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:189
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:103
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid "in float **TIME**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:178
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:274
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:189
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
 msgid "Elapsed total time in seconds."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:180
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:276
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:180
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:276
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
 msgid "Size of viewport (in pixels)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
 msgid "out vec3 **VERTEX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
 msgid "Vertex in local coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
 msgid "out vec3 **NORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
 msgid "Normal in local coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:188
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
 msgid "out vec3 **TANGENT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
 msgid "Tangent in local coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:190
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
 msgid "out vec3 **BINORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
 msgid "Binormal in local coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
 msgid "out vec2 **UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
 msgid "UV main channel."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
 msgid "out vec2 **UV2**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
 msgid "UV secondary channel."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
 msgid "out vec4 **COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
 msgid "Color from vertices."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
 msgid "out float **POINT_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
 msgid "Point size for point rendering."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:155
 msgid "out vec4  **POSITION**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:155
 msgid "If written to, overrides final vertex position."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:157
 msgid "in int **INSTANCE_ID**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:157
 msgid "Instance ID for instancing."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:80
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:159
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:105
 msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:159
 msgid "Instance custom data (for particles, mostly)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:155
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:210
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:223
 msgid "out float **ROUGHNESS**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:155
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
 msgid "Roughness for vertex lighting."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:159
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:94
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:316
+msgid "in float **OUTPUT_IS_SRGB**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:316
+msgid ""
+"True when calculations happen in sRGB color space (true in GLES2, false in "
+"GLES3)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:123
 msgid "Fragment built-ins"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:170
 msgid ""
 "The default use of a Godot fragment processor function is to set up the "
 "material properties of your object and to let the built-in renderer handle "
@@ -45879,301 +45593,310 @@ msgid ""
 "corresponding functionality."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:168
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:166
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:146
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
 msgid "in vec4 **FRAGCOORD**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
 msgid "Fragment coordinate, pixel adjusted. In screen space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:170
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:282
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:97
 msgid "in mat4 **WORLD_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:174
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:270
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:76
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:101
 msgid "in mat4 **PROJECTION_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:176
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:272
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
 msgid "in vec3 **VERTEX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
 msgid "Vertex that comes from vertex function (default, in view space)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:298
+msgid "in vec3 **VIEW**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
+msgid "Vector from camera to fragment position (in view space)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
 msgid "in bool **FRONT_FACING**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
 msgid "True if current face is front face."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
 msgid "Normal that comes from vertex function (default, in view space)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:188
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
 msgid "Tangent that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:190
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
 msgid "Binormal that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:192
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:121
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:205
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:150
 msgid "out vec3 **NORMALMAP**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:192
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:205
 msgid "Set normal here if reading normal from a texture instead of NORMAL."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:194
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:207
 msgid "out float **NORMALMAP_DEPTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:194
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:207
 msgid "Depth from variable above. Defaults to 1.0."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:196
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:126
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:171
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:209
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:200
 msgid "in vec2 **UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:196
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:209
 msgid "UV that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:211
 msgid "in vec2 **UV2**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:211
 msgid "UV2 that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:173
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:213
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:202
 msgid "in vec4 **COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:213
 msgid "COLOR that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:215
 msgid "out vec3 **ALBEDO**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:215
 msgid "Albedo (default white)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:217
 msgid "out float **ALPHA**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:217
 msgid ""
 "Alpha (0..1); if written to, the material will go to the transparent "
 "pipeline."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:219
 msgid "out float **METALLIC**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:219
 msgid "Metallic (0..1)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:208
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:221
 msgid "out float **SPECULAR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:208
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:221
 msgid ""
 "Specular. Defaults to 0.5, best not to modify unless you want to change IOR."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:210
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:223
 msgid "Roughness (0..1)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:212
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:225
 msgid "out float **RIM**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:212
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:225
 msgid "Rim (0..1). If used, Godot calculates rim lighting."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:227
 msgid "out float **RIM_TINT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:227
 msgid ""
 "Rim Tint, goes from 0 (white) to 1 (albedo). If used, Godot calculates rim "
 "lighting."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:216
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:229
 msgid "out float **CLEARCOAT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:216
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:229
 msgid "Small added specular blob. If used, Godot calculates Clearcoat."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:218
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
 msgid "out float **CLEARCOAT_GLOSS**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:218
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
 msgid "Gloss of Clearcoat. If used, Godot calculates Clearcoat."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:233
 msgid "out float **ANISOTROPY**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:233
 msgid "For distorting the specular blob according to tangent space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:222
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:235
 msgid "out vec2 **ANISOTROPY_FLOW**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:222
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:235
 msgid "Distortion direction, use with flowmaps."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:237
 msgid "out float **SSS_STRENGTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:237
 msgid ""
 "Strength of Subsurface Scattering. If used, Subsurface Scattering will be "
 "applied to object."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:226
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:239
 msgid "out vec3 **TRANSMISSION**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:226
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:239
 msgid ""
 "Transmission mask (default 0,0,0). Allows light to pass through object. Only "
 "applied if used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:228
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:241
 msgid "out float **AO**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:228
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:241
 msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:230
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
 msgid "out float **AO_LIGHT_AFFECT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:230
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
 msgid "How much AO affects lights (0..1; default 0)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:232
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:245
 msgid "out vec3 **EMISSION**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:232
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:245
 msgid "Emission color (can go over 1,1,1 for HDR)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:234
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:247
 msgid "sampler2D **SCREEN_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:234
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:247
 msgid ""
 "Built-in Texture for reading from the screen. Mipmaps contain increasingly "
 "blurred copies."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:236
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:249
 msgid "sampler2D **DEPTH_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:236
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:249
 msgid ""
 "Built-in Texture for reading depth from the screen. Must convert to linear "
 "using INV_PROJECTION."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:238
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:251
 msgid "out float **DEPTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:238
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:251
 msgid "Custom depth value (0..1)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:240
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:139
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:253
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
 msgid "in vec2 **SCREEN_UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:240
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:253
 msgid "Screen UV coordinate for current pixel."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:242
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:143
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:255
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:213
 msgid "in vec2 **POINT_COORD**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:242
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:255
 msgid "Point Coordinate for drawing points with POINT_SIZE."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:244
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:257
 msgid "out float **ALPHA_SCISSOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:244
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:257
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:248
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:153
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
 msgid "Light built-ins"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:250
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
 msgid ""
 "Writing light processor functions is completely optional. You can skip the "
 "light function by setting render_mode to ``unshaded``. If no light function "
@@ -46182,101 +45905,97 @@ msgid ""
 "render_mode)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:255
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:271
 msgid ""
 "To write a light function, assign something to DIFFUSE_LIGHT or "
 "SPECULAR_LIGHT. Assigning nothing means no light is processed."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:258
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:274
 msgid ""
 "The light function is called for every light in every pixel. It is called "
 "within a loop for each light type."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:146
 msgid "Fragment coordinate, pixel adjusted."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
 msgid "in vec3 **NORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
 msgid "Normal vector, in view space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
-msgid "in vec3 **VIEW**"
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:298
 msgid "View vector, in view space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:282
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:300
 msgid "in vec3 **LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:282
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:300
 msgid "Light Vector, in view space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:284
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:302
 msgid "in vec3 **LIGHT_COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:284
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:302
 msgid "Color of light multiplied by energy."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:286
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:304
 msgid "in vec3 **ATTENUATION**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:286
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:304
 msgid "Attenuation based on distance or shadow."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
 msgid "in vec3 **ALBEDO**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
 msgid "Base albedo."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
 msgid "in vec3 **TRANSMISSION**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
 msgid "Transmission mask."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
 msgid "in float **ROUGHNESS**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
 msgid "Roughness."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:312
 msgid "out vec3 **DIFFUSE_LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:312
 msgid "Diffuse light result."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:314
 msgid "out vec3 **SPECULAR_LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:314
 msgid "Specular light result."
 msgstr ""
 
@@ -46305,106 +46024,146 @@ msgstr ""
 msgid "Pre-multiplied alpha blend mode."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:31
-msgid "**light_only**"
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
+msgid "**blend_disabled**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:31
-msgid "Only draw on light pass."
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
+msgid "Disable blending, values (including alpha) are written as-is."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:33
+msgid "**light_only**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:33
+msgid "Only draw on light pass."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:35
 msgid "VERTEX/NORMAL/etc need to be transformed manually in vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:44
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:46
 msgid ""
 "Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
 "relative to the camera). If not written to, these values will not be "
 "modified and be passed through as they came."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:47
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:49
 msgid ""
 "The user can disable the built-in modelview transform (projection will still "
 "happen later) and do it manually with the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:60
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:62
+msgid ""
+"``WORLD_MATRIX`` is actually a modelview matrix. It takes input in local "
+"space and transforms it into view space."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:65
+msgid ""
+"In order to get the world space coordinates of a vertex, you have to pass in "
+"a custom uniform like so:"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
+msgid "Then, in your vertex shader:"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:83
+msgid ""
+"``world_position`` can then be used in either the vertex or fragment "
+"functions."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:85
 msgid ""
 "Other built-ins, such as UV and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
-msgid "Image to World transform."
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:97
+msgid "Image space to view space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:74
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:99
 msgid "in mat4 **EXTRA_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:74
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:99
 msgid "Extra transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:76
-msgid "World to view transform."
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:78
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:103
 msgid "Global time, in seconds."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:80
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:105
 msgid "Instance custom data."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:82
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:147
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
 msgid "in bool **AT_LIGHT_PASS**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:82
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:147
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
 msgid "True if this is a light pass."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:84
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
 msgid "inout vec2 **VERTEX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:84
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
 msgid "Vertex, in image space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:86
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:207
+msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:207
+msgid ""
+"Normalized pixel size of default 2D texture. For a Sprite with a texture of "
+"size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
 msgid "inout vec2 **UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:86
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
 msgid "UV."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:88
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
 msgid "inout vec4 **COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:88
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
 msgid "Color from vertex primitive."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:90
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
 msgid "inout float **POINT_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:90
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
 msgid "Point size for point drawing."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:96
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:125
 msgid ""
 "Certain Nodes (for example, :ref:`Sprites <class_Sprite>`) display a texture "
 "by default. However, when a custom fragment function is attached to these "
@@ -46413,7 +46172,7 @@ msgid ""
 "color for such nodes, use:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:105
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:134
 msgid ""
 "This differs from the behaviour of the built-in normal map. If a normal map "
 "is attached, Godot uses it by default and assigns its value to the built-in "
@@ -46423,97 +46182,85 @@ msgid ""
 "and overwriting ``NORMAL``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:148
 msgid "inout vec3 **NORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:148
 msgid "Normal read from **NORMAL_TEXTURE**. Writable."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:121
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:150
 msgid ""
 "Configures normal maps meant for 3D for use in 2D. If used, overwrites "
 "**NORMAL**."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:124
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:153
 msgid "inout float **NORMALMAP_DEPTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:124
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:153
 msgid "Normalmap depth for scaling."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:126
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
 msgid "UV from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
 msgid ""
 "Color from vertex function and output fragment color. If unused, will be set "
 "to **TEXTURE** color."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:131
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:160
 msgid "in sampler2D **TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:131
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:160
 msgid "Default 2D texture."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:133
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
 msgid "in sampler2D **NORMAL_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:133
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
 msgid "Default 2D normal texture."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:135
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
-msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:135
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
-msgid ""
-"Normalized pixel size of default 2D texture. For a Sprite with a texture of "
-"size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:139
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
 msgid "Screen UV for use with **SCREEN_TEXTURE**."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:141
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:170
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:141
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:170
 msgid "Size of individual pixels. Equal to inverse of resolution."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:143
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
 msgid "Coordinate for drawing points."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:145
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid "Global time in seconds."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:149
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
 msgid "in sampler2D **SCREEN_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:149
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
 msgid "Screen texture, mipmaps contain gaussian blurred versions."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
 msgid ""
 "Light processor functions work differently in 2D than they do in 3D. In "
 "CanvasItem shaders, the shader is called once for the object being drawn, "
@@ -46524,94 +46271,94 @@ msgid ""
 "visible where it is covered by light."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:161
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:190
 msgid ""
 "When the shader is on a light pass, the ``AT_LIGHT_PASS`` variable will be "
 "``true``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:166
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
 msgid "Fragment coordinate of pixel center. Origin at lower left."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
 msgid ""
 "Input Normal. Although this value is passed in, **normal calculation still "
 "happens outside of this function**."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:171
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:200
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:173
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:202
 msgid ""
 "Input Color. This is the output of the fragment function with final "
 "modulation applied."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:205
 msgid "sampler2D **TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:205
 msgid "Current texture in use for CanvasItem."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
 msgid "**SCREEN_TEXTURE** Coordinate (for using with screen texture)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:213
 msgid "UV for Point Sprite."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:188
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
 msgid "inout vec2 **LIGHT_VEC**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:188
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
 msgid ""
 "Vector from light to fragment, can be modified to alter shadow computation."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:190
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
 msgid "inout float **LIGHT_HEIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:190
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
 msgid "Height of Light. Only effective when normals are used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:192
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
 msgid "inout vec4 **LIGHT_COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:192
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
 msgid "Color of Light."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:194
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
 msgid "in vec2 **LIGHT_UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:194
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
 msgid "UV for Light texture."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:196
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
 msgid "out vec4 **SHADOW_COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:196
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
 msgid "Shadow Color of Light. **(not yet implemented)**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:198
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid "inout vec4 **LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:198
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid ""
 "Value from the Light texture and output color. Can be modified. If not used, "
 "the light function is ignored."
@@ -48748,7 +48495,7 @@ msgid ""
 "and RPC will work great! Here is an example:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:302
 msgid ""
 "Depending on when you execute pre_configure_game(), you may need to change "
 "any calls to ``add_child()`` to be deferred via ``call_deferred()``, as the "
@@ -48756,11 +48503,11 @@ msgid ""
 "is being called)."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:305
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:306
 msgid "Synchronizing game start"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:307
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:308
 msgid ""
 "Setting up players might take different amounts of time for every peer due "
 "to lag, different hardware, or other reasons. To make sure the game will "
@@ -48768,17 +48515,17 @@ msgid ""
 "are ready can be useful:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:316
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:317
 msgid ""
 "When the server gets the OK from all the peers, it can tell them to start, "
 "as for example:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:337
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:338
 msgid "Synchronizing the game"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:340
 msgid ""
 "In most games, the goal of multiplayer networking is that the game runs "
 "synchronized on all the peers playing it. Besides supplying an RPC and "
@@ -48786,24 +48533,24 @@ msgid ""
 "masters."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:344
 msgid "Network master"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:346
 msgid ""
 "The network master of a node is the peer that has the ultimate authority "
 "over it."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:348
 msgid ""
 "When not explicitly set, the network master is inherited from the parent "
 "node, which if not changed, is always going to be the server (ID 1). Thus "
 "the server has authority over all nodes by default."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:350
 msgid ""
 "The network master can be set with the function :ref:`Node."
 "set_network_master(id, recursive) <class_Node_method_set_network_master>` "
@@ -48811,7 +48558,7 @@ msgid ""
 "set on all child nodes of the node as well)."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:352
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:353
 msgid ""
 "Checking that a specific node instance on a peer is the network master for "
 "this node for all connected peers is done by calling :ref:`Node."
@@ -48819,61 +48566,61 @@ msgid ""
 "true when executed on the server and false on all client peers."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:354
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:355
 msgid ""
 "If you have paid attention to the previous example, it's possible you "
-"noticed that the local peer is set to have network master authority for "
-"their own player instead of the server:"
+"noticed that each peer was set to have network master authority for their "
+"own player (Node) instead of the server:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:373
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:375
 msgid ""
 "Each time this piece of code is executed on each peer, the peer makes itself "
 "master on the node it controls, and all other nodes remain as puppets with "
 "the server being their network master."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:375
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:377
 msgid ""
 "To clarify, here is an example of how this looks in the `bomber demo "
 "<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
 "multiplayer_bomber>`_:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:382
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:384
 msgid "Master and puppet keywords"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:388
 msgid ""
 "The real advantage of this model is when used with the `master`/`puppet` "
 "keywords in GDScript (or their equivalent in C# and Visual Script). "
 "Similarly to the `remote` keyword, functions can also be tagged with them:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:389
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:391
 msgid "Example bomb code:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:397
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:399
 msgid "Example player code:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:411
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:413
 msgid ""
 "In the above example, a bomb explodes somewhere (likely managed by whoever "
 "is master). The bomb knows the bodies in the area, so it checks them and "
 "checks that they contain an `exploded` function."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:414
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:416
 msgid ""
 "If they do, the bomb calls `exploded` on it. However, the `exploded` method "
 "in the player has a `master` keyword. This means that only the player who is "
 "master for that instance will actually get the function."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:419
 msgid ""
 "This instance, then, calls the `stun` method in the same instances of that "
 "same player (but in different peers), and only those which are set as "
@@ -48881,7 +48628,7 @@ msgid ""
 "current, master one)."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:420
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:422
 msgid ""
 "Note that you could also send the stun() message only to a specific player "
 "by using rpc_id(<id>, \"exploded\", bomb_owner). This may not make much "
@@ -54139,6 +53886,545 @@ msgid ""
 "class member). This is an example of how to work around this in a class:"
 msgstr ""
 
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:4
+msgid "Customizing the Web export HTML page"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:6
+msgid ""
+"Rather than the default HTML page that comes with the export templates, it "
+"is also possible to use a custom HTML page. This allows drastic "
+"customization of the final web presentation and behavior. The path to the "
+"custom HTML page is specified in the export options as ``Html/Custom Html "
+"Shell``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:11
+msgid ""
+"The default HTML page is available in the Godot Engine repository at `/misc/"
+"dist/html/full-size.html <https://github.com/godotengine/godot/blob/master/"
+"misc/dist/html/full-size.html>`__. Some simple use-cases where customizing "
+"the default page is useful include:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:15
+msgid "Loading files from a different directory"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:16
+msgid "Loading a ``.zip`` file instead of a ``.pck`` file as main pack"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:17
+msgid "Loading engine files from a different directory than the main pack file"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:18
+msgid ""
+"Adding a click-to-play button so games can be started in full-screen mode"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:19
+msgid ""
+"Loading some extra files before the engine starts, so they are available in "
+"the file system later"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:21
+msgid ""
+"Passing custom \"command line\" arguments, e.g. ``-s`` to start a MainLoop "
+"script"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:23
+msgid ""
+"Another sample HTML page is avilable at `/misc/dist/html/fixed-size.html "
+"<https://github.com/godotengine/godot/blob/master/misc/dist/html/fixed-size."
+"html>`__. This page uses a fixed size canvas with an output widget below. "
+"However, the F12 browser console should be preferred as it can display "
+"additional information, such as WebGL errors."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:29
+msgid "Placeholder substitution"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:31
+msgid ""
+"When exporting the game, several placeholders in the HTML page are replaced "
+"with values depending on the export:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
+msgid "Placeholder"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
+msgid "Substituted by"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:37
+msgid "``$GODOT_BASENAME``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:37
+msgid ""
+"Basename of exported files without suffixes, e.g. ``game`` when exporting "
+"``game.html``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
+msgid "``$GODOT_DEBUG_ENABLED``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
+msgid "``true`` if debugging, ``false`` otherwise"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
+msgid "``$GODOT_HEAD_INCLUDE``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
+msgid ""
+"Custom string to include just before the end of the HTML ``<head>`` element"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:46
+msgid ""
+"The HTML file must evaluate the JavaScript file ``$GODOT_BASENAME.js``. This "
+"file defines a global ``Engine`` object used to start the engine, :ref:`see "
+"below <doc_javascript_engine_object>` for details."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:50
+msgid ""
+"The boot splash image is exported as ``$GODOT_BASENAME.png`` and can be used "
+"e.g. in ``<img />`` elements."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:53
+msgid ""
+"``$GODOT_DEBUG_ENABLED`` can be useful to optionally display e.g. an output "
+"console or other debug tools."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:56
+msgid ""
+"``$GODOT_HEAD_INCLUDE`` is replaced with the string specified by the export "
+"option ``Html/Head Include``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:62
+msgid "The ``Engine`` object"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:64
+msgid ""
+"The JavaScript global object ``Engine`` is defined by ``$GODOT_BASENAME.js`` "
+"and serves as an interface to the engine start-up process."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:67
+msgid ""
+"The API is based on and requires basic understanding of `Promises <https://"
+"developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises>`__."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:69
+msgid "The object itself has only the following methods:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:73
+msgid "Load the engine from the passed base path."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:0
+msgid "Arguments"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:75
+msgid "Base path of the engine to load."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:76
+msgid "Promise which resolves once the engine is loaded."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:80
+msgid "Unload the engine to free memory."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:82
+msgid ""
+"This is called automatically once the engine is started unless explicitly "
+"disabled using :js:func:`engine.setUnloadAfterInit`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:87
+msgid "Check whether WebGL is available."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:89
+msgid "The major WebGL version to check for. Defaults to 1 for *WebGL 1.0*."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:92
+msgid ""
+"``true`` if the given major version of WebGL is available, ``false`` "
+"otherwise."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:98
+msgid ""
+"When loading the engine, the filename extension of the WebAssembly module is "
+"assumed to be ``wasm``. This function allows usage of an alternate extension."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:108
+msgid ""
+"This is useful for outdated hosts that only accept uploads of files with "
+"certain filename extensions."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:111
+msgid "Filename extension without preceding dot."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:115
+msgid ""
+"Depending on the host, using an alternate filename extension can prevent "
+"some start-up optimizations. This occurs when the file is delivered with a "
+"MIME-type other than :mimetype:`application/wasm`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:120
+msgid "Starting an ``Engine`` instance"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:122
+msgid ":js:class:`Engine` also acts a class:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:126
+msgid "An instance of the engine that can be started, usually a game."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:128
+msgid "Instantiate the class using the ``new`` operator:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:134
+msgid ""
+"This yields an :js:class:`Engine` instance, referred to as ``engine`` with a "
+"lower-case ``e`` from here."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:137
+msgid ""
+"To start such an instance, the global ``Engine`` object must be loaded, then "
+"the ``engine`` instance must be initialized and finally started."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:142
+msgid ""
+"Initialize the instance. The instance can then be started with one of the "
+"``start`` functions, usually :js:func:`engine.startGame`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:145
+msgid ""
+"The base path to the engine, same as in :js:func:`Engine.load`. Must be "
+"passed only if the engine hasn't been loaded yet."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:149
+msgid "Promise that resolves once the engine is loaded and initialized."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:153
+msgid ""
+"Load a file so it is available in the file system once the instance runs. "
+"Must be called **before** starting the instance."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:156
+msgid ""
+"If type is string, the file will be loaded from that path.  If type is "
+"``ArrayBuffer`` or a view on one, the buffer will used as the content of the "
+"file."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:157
+msgid "If type is string, the file will be loaded from that path."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:159
+msgid ""
+"If type is ``ArrayBuffer`` or a view on one, the buffer will used as the "
+"content of the file."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:162
+msgid ""
+"Path by which the file will be available. Mandatory if ``file`` is not a "
+"string. If not passed, the path is derived from the URL of the loaded file."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:167
+msgid "Promise that resolves once the file is preloaded."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:171
+msgid ""
+"Starts the instance of the engine, using the passed strings as command line "
+"arguments. This allows great control over how the engine is started, but "
+"usually the other methods starting with ``engine.start`` are simpler and "
+"should be used instead."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:176
+msgid ""
+"If the instance has not yet been initialized with :js:func:`engine.init`, it "
+"will be."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:179
+msgid "The engine must be loaded beforehand."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:181
+msgid ""
+"Requires that the engine has been loaded, and that a canvas can be found on "
+"the page."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:184
+msgid "Command line arguments."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:186
+msgid "Promise that resolves once the engine started."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
+msgid ""
+"Initializes the engine if not yet initialized and starts the game with the "
+"main pack loaded from the passed URL."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:193
+msgid ""
+"If the engine isn't loaded yet, the base path of the passed URL will be used "
+"to load the engine."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:196
+msgid ""
+"This function ignores overrides of filenames and their extensions to start "
+"only the main pack passed as argument."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:199
+msgid ""
+"Path to the main pack to start. Also used as base path to load the engine if "
+"not loaded already."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:203
+msgid "Promise that resolves once the game started."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:206
+msgid "Configuring start-up behaviour"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:208
+msgid ""
+"Beside starting the engine, other methods of the engine instance allow "
+"configuring the behavior:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:213
+msgid ""
+"Specify whether the Engine will be unloaded automatically after the instance "
+"is initialized."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:216
+msgid ""
+"This frees browser memory by unloading files that are no longer needed once "
+"the instance is initialized. However, if more instances of the engine will "
+"be started, the Engine will have to be loaded again."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:220
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:239
+msgid "Enabled by default."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:222
+msgid ""
+"``true`` if the engine shall be unloaded after initializing, ``false`` "
+"otherwise."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:228
+msgid "Specify a canvas to use."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:230
+msgid "By default, the first canvas element on the page is used for rendering."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:232
+msgid "The canvas to use."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:236
+msgid ""
+"Specifies whether the canvas will be resized to the width and height "
+"specified in the project settings on start."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:241
+msgid "``true`` if the canvas shall be resized on start, ``false`` otherwise."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:246
+msgid ""
+"By default, the engine will try to guess the locale to use from the "
+"JavaScript environment. It is usually preferable to use a server-side user-"
+"specified locale, or at least use the locale requested in the HTTP ``Accept-"
+"Language`` header. This method allows specifying such a custom locale string."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:252
+msgid "For example, with PHP:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:258
+msgid "Locale."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:261
+msgid "List of :ref:`locales <doc_locales>`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:265
+msgid "Specify the virtual filename of the executable."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:267
+msgid ""
+"A real executable file doesn't exist for the HTML5 platform. However, a "
+"virtual filename is stored by the engine for compatibility with other "
+"platforms."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:271
+msgid ""
+"By default, the base name of the loaded engine files is used. This method "
+"allows specifying another name."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:274
+msgid ""
+"This affects the output of :ref:`OS.get_executable_path() "
+"<class_OS_method_get_executable_path>` and the automatically started main "
+"pack, :file:`{ExecutableName}.pck`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:277
+msgid "Executable name."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:280
+msgid "Customizing the presentation"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:282
+msgid "The following methods are used to implement the presentation:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:286
+msgid "Set the callback for displaying download progress."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:288
+msgid ""
+"Callback called once per frame with two number arguments: bytes loaded so "
+"far, and total bytes to load."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:299
+msgid "If the total is 0, it couldn't be calculated. Possible reasons include:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:302
+msgid "Files are delivered with server-side chunked compression"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:303
+msgid "Files are delivered with server-side compression on Chromium"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:304
+msgid ""
+"Not all file downloads have started yet (usually on servers without multi-"
+"threading)"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:308
+msgid ""
+"For ease of use, the callback is only called once per frame, so that usage "
+"of ``requestAnimationFrame()`` is not necessary."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:313
+msgid "Specify the standard output stream callback."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:315
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:334
+msgid "Callback function called with one argument, the string to print."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:325
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:344
+msgid ""
+"This method should usually only be used in debug pages. The ``"
+"$GODOT_DEBUG_ENABLED`` placeholder can be used to check for this."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:328
+msgid "By default, ``console.log()`` is used."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:332
+msgid "Specify the standard error stream callback."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:347
+msgid "By default, ``console.warn()`` is used."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:350
+msgid "Accessing the Emscripten ``Module``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:352
+msgid ""
+"If you know what you're doing, you can access the runtime environment "
+"(Emscripten's ``Module``) as ``engine.rtenv``. Check the official Emscripten "
+"documentation for information on how to use it: https://kripken.github.io/"
+"emscripten-site/docs/api_reference/module.html"
+msgstr ""
+
 #: ../../docs/tutorials/platform/consoles.rst:4
 msgid "Console support in Godot"
 msgstr ""
@@ -54272,6 +54558,174 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/index.rst:2
 msgid "Miscellaneous"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:4
+msgid "Fixing jitter and stutter"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:7
+msgid "What are jitter and stutter?"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:9
+msgid ""
+"*Jitter* and *stutter* are two different alterations to visible motion of "
+"objects on screen that may affect a game, even when running at full speed. "
+"These effects are mostly visible in games where the world moves at a "
+"constant speed in a fixed direction, like runners or platformers."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:14
+msgid "Distinguishing between them"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:16
+msgid ""
+"A game running at a normal framerate without exhibiting any effect will "
+"appear smooth:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:20
+msgid "A game exhibiting *jitter* will shake constantly in a very subtle way:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:24
+msgid ""
+"Finally, a game exhibiting *stutter* will appear smooth, but appear to "
+"*stop* or *roll back a frame* every few seconds:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:30
+msgid "Jitter"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:32
+msgid ""
+"There can be many causes of jitter, the most typical one happens when the "
+"game *physics frequency* (usually 60 Hz) runs at a different resolution than "
+"the monitor refresh rate. Check whether your monitor refresh rate is "
+"different from 60 Hz."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:35
+msgid ""
+"This is generally not a problem, given that refresh rates higher than 60 Hz "
+"are barely visible to the human eye, and starting with Godot 3.1, a frame "
+"timer was introduced that tries to synchronize with refresh as best as "
+"possible."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:38
+msgid ""
+"Sometimes only some objects appear to jitter (character or background). This "
+"happens when they are processed in different time sources (one is processed "
+"in the physics step while another is processed in the idle step). Godot 3.1 "
+"does some improvements to this, from allowing kinematic bodies to be "
+"animated in the regular _process loop, to further fixes in the frame timer."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:44
+msgid "Stutter"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:46
+msgid ""
+"Stutter may happen due to two different reasons. The first, and most obvious "
+"one, is the game not being able to keep full framerate performance. Solving "
+"this is game specific and will require optimization."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:49
+msgid ""
+"The second is more complicated, because it is often not associated to the "
+"engine or game but the underlying operating system. Here is some information "
+"regarding stutter on different OSs."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:55
+msgid ""
+"Windows is known to cause stutter in windowed games. This mostly depends on "
+"the hardware installed, drivers version and processes running in parallel (e."
+"g. having many browser tabs open may cause stutter in a running game). To "
+"avoid this, starting with 3.1, Godot raises the game priority to \"Above "
+"Normal\". This helps considerably but may not completely eliminate stutter."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:60
+msgid ""
+"Eliminating this completely requires giving your game full privileges to "
+"become \"time critical\", which is not advised. Some games may do it, but it "
+"is advised to learn to live with this problem, as it is common for Windows "
+"games and most users won't play games windowed (games that are played in a "
+"window, e.g. puzzle games, will usaully not exhibit this problem anyway)."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:64
+msgid ""
+"For fullscreen, Windows gives special priority to the game so stutter is no "
+"longer visible and very rare. This is how most games are played."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:68
+msgid "Linux (X11)"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:70
+msgid ""
+"Stutter may be visible on Desktop Linux, but this is usually associated with "
+"different video drivers and compositors. Nouveau drivers often exhibit this, "
+"while AMD or NVidia proprietary don't. Some compositors may also trigger "
+"this problem (e.g. KWin), so it is advised to try using a different one to "
+"rule it out as the cause."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:74
+msgid ""
+"There is no workaround for driver or compositor stuttering other than "
+"reporting it as an issue to the driver or compositor developers."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:80
+msgid ""
+"Generally, macOS is stutter-free, although recently some bugs were reported "
+"when running on fullscreen (this is a macOS bug). If you have a machine "
+"exhibiting this behavior, please let us know."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:86
+msgid ""
+"Generally, Android is stutter and jitter-free because the running activity "
+"gets all the priority. That said, there may be problematic devices (older "
+"Kindle Fire is known to be one). If you see this problem on Android, please "
+"let us know."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:92
+msgid ""
+"iOS devices are generally stutter-free, but older devices running newer "
+"versions of the operating system may exhibit problems. This is generally "
+"unavoidable."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:96
+msgid "Reporting stutter or jitter problems"
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:98
+msgid ""
+"If you are reporting a stutter or jitter problem (opening an issue) not "
+"caused by any of the above reasons, please specify very clearly all the "
+"information possible about device, operating system, driver versions, etc. "
+"This may help to better troubleshoot it."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:101
+msgid ""
+"Also make sure to use the correct term (jitter or stutter) based on the "
+"exhibited behavior. This will help understand your issue much faster. "
+"Provide a project that can be used to reproduce the issue, and if possible a "
+"screen capture demonstrating the bug."
 msgstr ""
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:4
@@ -57663,7 +58117,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:13
 msgid ""
-"`Emscripten 1.37.9+ <http://kripken.github.io/emscripten-site>`__: If the "
+"`Emscripten 1.38.22+ <http://kripken.github.io/emscripten-site>`__: If the "
 "version available per package manager is not recent enough, the best "
 "alternative is to install using the `Emscripten SDK <http://kripken.github."
 "io/emscripten-site/docs/getting_started/downloads.html>`__"
@@ -57689,20 +58143,27 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:32
 msgid ""
+"On Windows, make sure to escape backslashes of paths within the Emscripten "
+"configuration file as double backslashes ``\\\\`` or use Unix-style paths "
+"with a single forward slash ``/``."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:36
+msgid ""
 "Open a terminal and navigate to the root directory of the engine source "
 "code. Then instruct SCons to build the JavaScript platform. Specify "
 "``target`` as either ``release`` for a release build or ``release_debug`` "
 "for a debug build::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:39
+#: ../../docs/development/compiling/compiling_for_web.rst:43
 msgid ""
 "By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be "
 "built into the engine. Since ``eval()`` calls can be a security concern, the "
 "``javascript_eval`` option can be used to build without the singleton::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:46
+#: ../../docs/development/compiling/compiling_for_web.rst:50
 msgid ""
 "The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
 "the resulting file will be placed in the ``bin`` subdirectory. Its name is "
@@ -57710,21 +58171,21 @@ msgid ""
 "zip`` for debug."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:51
+#: ../../docs/development/compiling/compiling_for_web.rst:55
 msgid ""
 "Finally, rename the zip archive to ``webassembly_release.zip`` for the "
 "release template::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:56
+#: ../../docs/development/compiling/compiling_for_web.rst:60
 msgid "And ``webassembly_debug.zip`` for the debug template::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:61
+#: ../../docs/development/compiling/compiling_for_web.rst:65
 msgid "Building per asm.js translation or LLVM backend"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:63
+#: ../../docs/development/compiling/compiling_for_web.rst:67
 msgid ""
 "WebAssembly can be compiled in two ways: The default is to first compile to "
 "asm.js, a highly optimizable subset of JavaScript, using Emscripten's "
@@ -57733,26 +58194,21 @@ msgid ""
 "processes, we simply run SCons."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:69
+#: ../../docs/development/compiling/compiling_for_web.rst:73
 msgid ""
-"The other method uses LLVM's WebAssembly backend. This backend is not yet "
-"available in release versions of LLVM, only in development builds built with "
-"``LLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly``. Compiling with this "
-"backend outputs files in LLVM's ``.s`` format, which is translated into "
-"actual WebAssembly using a tool called ``s2wasm``. Emscripten manages these "
-"processes as well, so we just invoke SCons."
+"The other method uses LLVM's WebAssembly backend. This backend is available "
+"starting with LLVM 8 or in development builds. Emscripten manages this "
+"process as well, so we just invoke SCons."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:76
+#: ../../docs/development/compiling/compiling_for_web.rst:77
 msgid ""
 "In order to choose one of the two methods, the ``LLVM_ROOT`` variable in the "
 "Emscripten configuration file is used. If it points to a directory "
 "containing binaries of Emscripten's *fastcomp* fork of clang, ``asm2wasm`` "
 "is used. This is the default in a normal Emscripten installation. Otherwise, "
-"LLVM binaries built with the WebAssembly backend will be expected and "
-"``s2wasm`` is used. On Windows, make sure to escape backslashes of paths "
-"within this file as double backslashes ``\\\\`` or use Unix-style paths with "
-"a single forward slash ``/``."
+"LLVM binaries built with the WebAssembly backend will be expected and the "
+"LLVM's WebAssembly backend is used."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:4
