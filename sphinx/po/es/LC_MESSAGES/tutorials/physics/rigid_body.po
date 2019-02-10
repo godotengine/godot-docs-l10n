@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:4
-#, fuzzy
 msgid "RigidBody"
 msgstr "RigidBody"
 
@@ -36,17 +35,15 @@ msgid ""
 msgstr ""
 "RigidBody representa un cuerpo rígido que es un cuerpo que es controlado "
 "directamente por el motor de física para simular el comportamiento de "
-"objetos físicos. Para definir la figura del cuerpo se debe usar uno o más "
+"objetos físicos. Para definir la forma del cuerpo se debe usar uno o más "
 "recursos derivados de :ref:`Shape <class_Shape>`. Tener en cuenta que la "
-"posición de las figuras de colisión afectarán el centro de masa del cuerpo."
+"posición de las formas de colisión afectarán el centro de masa del cuerpo."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:13
-#, fuzzy
 msgid "How to control a rigid body"
 msgstr "Cómo controlar un cuerpo rígido"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:15
-#, fuzzy
 msgid ""
 "A rigid body's behavior can be altered by setting its properties, such as "
 "friction, mass, bounce, etc. These properties can be set in the Inspector or "
@@ -68,7 +65,6 @@ msgstr ""
 "dependiendo de la aplicación deseada."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:19
-#, fuzzy
 msgid ""
 "If you only need to place a rigid body once, for example to set its initial "
 "location, you can use the methods provided by the :ref:`Spatial "
@@ -92,7 +88,6 @@ msgstr ""
 "implementar esto correctamente."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:22
-#, fuzzy
 msgid ""
 "The fact that you can't use ``set_global_transform()`` or ``look_at()`` "
 "methods doesn't mean that you can't have full control of a rigid body. "
@@ -111,7 +106,6 @@ msgid "The \"look at\" method"
 msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:27
-#, fuzzy
 msgid ""
 "As described above, using the Spatial node's ``look_at()`` method can't be "
 "used each frame to follow a target. Here is a custom ``look_at()`` method "
@@ -124,7 +118,6 @@ msgstr ""
 "cuerpos rígidos:"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:69
-#, fuzzy
 msgid ""
 "This method uses the rigid body's ``set_angular_velocity()`` method to "
 "rotate the body. It first calculates the difference between the current and "
@@ -137,7 +130,6 @@ msgstr ""
 "necesaria para rotar esa cantidad en el tiempo del frame."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:71
-#, fuzzy
 msgid ""
 "This script will not work with rigid bodies in *character mode* because "
 "then, the body's rotation is locked. In that case, you would have to rotate "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,11 @@ msgid ""
 "the resources used in the final demo and then describes how to make a scene "
 "like the demo step by step."
 msgstr ""
+"Ce tutoriel explique comment fonctionne l'éclairage 2D dans le projet démo "
+"`lights and shadows <https://github.com/godotengine/godot-demo-projects/tree/"
+"master/2d/lights_and_shadows>`_ . Il commence par une brève description des "
+"ressources utilisées dans la démo finale et décrit ensuite comment faire une "
+"scène comme la démo étape par étape."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:16
 msgid ""
@@ -286,6 +291,12 @@ msgid ""
 "`LightOccluder2D <class_LightOccluder2D>` looks like a dark spot and in this "
 "demo the :ref:`Sprite <class_Sprite>` is just a black square."
 msgstr ""
+"Dans la démo nous utilisons un :ref:`Sprite <class_Sprite_Sprite>` avec une "
+"texture pour faire les \"Shadow Casters\", mais en réalité tout ce dont vous "
+"avez besoin est un couple de :ref:`LightOccluder2Ds "
+"<class_LightOccluder2D>`. Par lui-même le :ref:`LightOccluder2D "
+"<class_LightOccluder2D>` ressemble à un point sombre et dans cette démo le :"
+"ref:`Sprite <class_Sprite>` est juste un carré noir."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
 msgid "Step by step"
@@ -397,7 +408,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:146
 msgid "Now we add the shadow casters."
-msgstr ""
+msgstr "Ajoutons maintenant les projecteurs d'ombres."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:148
 msgid ""
@@ -406,6 +417,10 @@ msgid ""
 "used to group all the shadow casters together. This way we can show and hide "
 "them all at the same time."
 msgstr ""
+"La démo utilise un :ref:`Node <class_Node2D>` nommé \"casters\" pour "
+"organiser les projecteurs d'ombres. Ajouter un :ref:`Node2D <class_Node2D>` "
+"à la scène. Il sera utilisé pour regrouper tous les projecteurs d'ombres. De "
+"cette façon, nous pouvons tous les afficher et les cacher en même temps."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:152
 msgid ""
@@ -419,6 +434,15 @@ msgid ""
 "could be an image of whatever object is casting the shadow: a wall, a "
 "magical chest, or anything else."
 msgstr ""
+"Chaque projecteur d'ombres est composé d'un :ref:`Sprite <class_Sprite>`, "
+"avec un :ref:`LightOccluder2D <class_LightOccluder2D>` enfant. Pour la démo, "
+"le :ref:`Sprite <class_Sprite>` a une texture définie sur `caster image "
+"<https://raw.githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
+"lights_and_shadows/caster.png>`_ et rien d'autre. L'enfant :ref:"
+"`LightOccluder2D <class_LightOccluder2D>` est là où toute la magie se "
+"produit. Dans un jeu, le :ref:`Sprite <class_Sprite>>` pourrait être plus "
+"qu'une boîte noire ; ce pourrait être une image de n'importe quel objet "
+"projetant l'ombre : un mur, un coffre magique, ou autre chose."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:160
 #, fuzzy
@@ -455,6 +479,14 @@ msgid ""
 "winding order is used to determine which side of the line is inside the "
 "polygon. Only outward facing lines cast shadows."
 msgstr ""
+"Le ``Cull Mode`` vous permet de choisir la direction dans laquelle vous "
+"souhaitez que l'on procède à l'abattage. La valeur par défaut est \"Désactivé"
+"\", ce qui signifie que l'occulteur projette une ombre quel que soit le côté "
+"où la lumière est allumée. Les deux autres réglages \"Sens horaire\" et "
+"\"Sens anti-horaire\" font référence à l'ordre d'enroulement des sommets du "
+"polygone. L'ordre d'enroulement est utilisé pour déterminer quel côté de la "
+"ligne se trouve à l'intérieur du polygone. Seules les lignes orientées vers "
+"l'extérieur projettent des ombres."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:173
 msgid ""
@@ -516,6 +548,14 @@ msgid ""
 "will run. That is why Godot provides 3-13 samples by default and allows you "
 "to choose. The demo uses PCF7."
 msgstr ""
+"Pour donner aux ombres cet aspect doux et agréable, nous réglons les "
+"variables ``filter``, ``filter smooth`` et ``gradient length``. Godot prend "
+"en charge le `Percentage Closer Filtering <https://developer.nvidia.com/"
+"gpugems/GPUGems/gpugems_ch11.html>`_ (PCF), qui prend plusieurs échantillons "
+"de la carte des ombres autour d'un pixel et les estompe pour créer un effet "
+"d'ombre adoucit. Plus le nombre d'échantillons est élevé, plus l'ombre "
+"paraîtra douce, mais plus ce sera lent. C'est pourquoi Godot fournit 3-13 "
+"échantillons par défaut et vous permet de choisir. La démo utilise PCF7."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:206
 msgid ""
@@ -553,17 +593,20 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:221
 msgid "``filter smooth`` is set to ``30``."
-msgstr ""
+msgstr "``filter smooth``` est réglé sur ``30``."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:223
 msgid ""
 "The different :ref:`Light <class_Light2D>` nodes in the demo use different "
 "values for filter smooth. Play around with it and see what you like."
 msgstr ""
+"Les différents nœuds :ref:`Light <class_Light2D>` dans la démo utilisent des "
+"valeurs différentes pour le filtre doux. Jouez avec et voyez ce que vous "
+"aimez."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:228
 msgid "``filter smooth`` is set to ``0``."
-msgstr ""
+msgstr "``filter smooth``` est réglé sur ``0``."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:230
 msgid ""
@@ -572,14 +615,18 @@ msgid ""
 "this produces a hard edge. The gradient length variable creates a smooth "
 "gradient to begin the shadow to reduce the effect of the hard edge."
 msgstr ""
+"Enfin, il y a la variable \"gradient length\". Pour certaines ombres douces, "
+"il est préférable que l'ombre ne commence pas immédiatement sur l'objet, car "
+"cela produit un bord dur. La variable de longueur du dégradé crée un dégradé "
+"doux pour commencer l'ombre afin de réduire l'effet du bord dur."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:236
 msgid "``gradient length`` is set to ``0``."
-msgstr ""
+msgstr "\"gradient length\" est réglé sur \"0\"."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:240
 msgid "``gradient length`` is set to ``10``."
-msgstr ""
+msgstr "\"gradient length\" est réglé sur \"10\"."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:242
 msgid ""
@@ -588,3 +635,8 @@ msgid ""
 "Godot provides so much flexibility. Just keep in mind that the higher "
 "``filter`` set the more expensive the shadows will be."
 msgstr ""
+"Vous devrez jouer un peu avec les options pour trouver les paramètres qui "
+"conviennent à votre projet. Il n'y a pas de bonne solution pour tout le "
+"monde, c'est pourquoi Godot offre tant de flexibilité. Gardez simplement à "
+"l'esprit que plus le ``filtre`` est élevé, plus les ombres seront chères à "
+"générer."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
-msgstr "Dein Erstes Spiel"
+msgstr "Dein erstes Spiel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 msgid "Overview"
@@ -31,9 +31,9 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
-"Dieses Tutorial wird dich dabei anleiten, dein erstes Godot Projekt "
-"umzusetzen. Dabei wirst du lernen wie der Godot Editor funktioniert, wie ein "
-"Projekt zu strukturieren ist und wie man ein 2D Spiel erstellt."
+"Dieses Tutorial wird Dich dabei anleiten, Dein erstes Godot-Projekt "
+"umzusetzen. Du wirst lernen, wie der Godot-Editor funktioniert, wie ein "
+"Projekt zu strukturieren ist und man ein 2D-Spiel erstellt."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -134,10 +134,9 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
-"Die erste erstellte Szene definiert das ``Player`` Objekt. Einer der "
-"Vorteile, eine separate Spieler-Szene zu erstellen ist, dass diese "
-"unabhängig vom Rest des Spiels getestet werden kann, der Rest des Spiels "
-"muss noch nicht einmal existieren."
+"Die erste erstellte Szene definiert das ``Player``-Objekt. Einer der "
+"Vorteile einer separaten Spieler-Szene ist, dass diese unabhängig vom Rest "
+"des Spiels getestet werden kann, dieser muss noch nicht einmal existieren."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 msgid "Node structure"
@@ -393,7 +392,6 @@ msgid "Play the appropriate animation."
 msgstr "Die entsprechende Animation abspielen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:219
-#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -404,8 +402,8 @@ msgid ""
 msgstr ""
 "Zuerst müssen wir auf Eingaben prüfen - drückt der Spieler eine Taste? Für "
 "dieses Spiel haben wir 4 Richtungseingaben zu überprüfen. Eingabeaktionen "
-"werden in den Projekteinstellungen unter \"Eingabe-Zuordnung\" definiert. "
-"Sie können benutzerdefinierte Ereignisse definieren und ihnen verschiedene "
+"werden in den Projekteinstellungen unter \"Eingabe-Zuordnung\" definiert. Du "
+"kannst benutzerdefinierte Ereignisse definieren und ihnen verschiedene "
 "Tasten, Mausereignisse oder andere Eingaben zuweisen. Für diese Demo werden "
 "wir die Standardereignisse verwenden, die den Pfeiltasten auf der Tastatur "
 "zugeordnet sind."
@@ -420,7 +418,6 @@ msgstr ""
 "wird oder ``false``, wenn nicht."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:288
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -433,7 +430,7 @@ msgstr ""
 "um eine Gesamtrichtung zu erhalten. Wenn Du beispielsweise ``rechts`` und "
 "``runter`` gleichzeitig hältst, ist der resultierende "
 "``Geschwindigkeitsvektor`` ``(1, 1)``. In diesem Fall, da wir eine "
-"horizontale und eine vertikale Bewegung addieren, würde sich der Spieler "
+"horizontale und vertikale Bewegung addieren, würde sich der Spieler "
 "*schneller* bewegen, als wenn er sich nur horizontal bewegen würde."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:295
@@ -532,7 +529,6 @@ msgstr ""
 "übereinstimmen, den Du im Szenenbaum siehst."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:344
-#, fuzzy
 msgid "Choosing animations"
 msgstr "Animationen"
 
@@ -655,6 +651,9 @@ msgid ""
 "middle of the engine's collision processing. Using ``call_deferred()`` "
 "allows us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"Deaktivieren der Collision Shape während der Kollisionsberechnung der Engine "
+"kann einen Fehler auslösen. Der Gebrauch von ``call_deferred()`` erlaubt es "
+"Godot, die Collision Shape zu einem sicheren Zeitpunkt zu deaktivieren."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -691,9 +690,8 @@ msgstr ""
 "um beliebig viele unabhängige Mobs im Spiel erstellen können."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:514
-#, fuzzy
 msgid "Node setup"
-msgstr "Eine Szene aufsetzen"
+msgstr "Node einrichten"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:516
 msgid "Click Scene -> New Scene and we'll create the Mob."
@@ -720,7 +718,7 @@ msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
 msgstr ""
-"ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (genannt "
+":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (genannt "
 "``Visibility``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:526
@@ -738,7 +736,7 @@ msgid ""
 "``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
-"Stelle in den `ref:`RigidBody2D <class_RigidBody2D>` Eigenschaften ``Gravity "
+"Stelle in den :ref:`RigidBody2D <class_RigidBody2D>` Eigenschaften ``Gravity "
 "Scale`` auf ``0``, damit der Mob nicht nach unten fällt. Klicke außerdem "
 "unter dem Abschnitt ``PhysicsBody2D`` auf die Eigenschaft ``Mask`` und "
 "deaktiviere das erste Kontrollkästchen. Dadurch wird sichergestellt, dass "
@@ -795,7 +793,6 @@ msgstr ""
 "hinzu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:581
-#, fuzzy
 msgid ""
 "When we spawn a mob, we'll pick a random value between ``min_speed`` and "
 "``max_speed`` for how fast each mob will move (it would be boring if they "
@@ -804,7 +801,7 @@ msgid ""
 "sure you've spelled these the same in the script and in the SpriteFrames "
 "resource."
 msgstr ""
-"Wir wählen mit einen Zufallswert zwischen ``min_speed`` und ``max_speed``, "
+"Wir wählen mit einem Zufallswert zwischen ``min_speed`` und ``max_speed``, "
 "wie schnell sich jeder Mob bewegen wird (es wäre langweilig, wenn sie sich "
 "alle mit der gleichen Geschwindigkeit bewegen würden). Stelle sie im "
 "Inspektor auf ``150`` und ``250``. Wir haben auch ein Array mit den Namen "
@@ -987,7 +984,7 @@ msgid ""
 "will automatically rotate and follow the path as it moves, so we can use it "
 "to select a random position and direction along the path."
 msgstr ""
-"Nachdem der Pfad definiert ist, füge einen ref:`PathFollow2D "
+"Nachdem der Pfad definiert ist, füge einen :ref:`PathFollow2D "
 "<class_PathFollow2D>` Node als Unterobjekt von ``MobPath`` hinzu und nenne "
 "ihn ``MobSpawnLocation``. Dieser Node dreht sich automatisch und folgt dem "
 "Pfad, während er sich bewegt, so dass wir damit eine beliebige Position und "
@@ -998,14 +995,13 @@ msgid "Main script"
 msgstr "Main Skript"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:692
-#, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
 "Füge ein Skript zu ``Main`` hinzu. Am Anfang des Skripts verwenden wir "
 "``export (PackedScene)``, damit wir die Mob-Szene auswählen können, die wir "
-"instanziieren möchten."
+"als Instanz verwenden wollen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:732
 msgid ""
@@ -1031,7 +1027,6 @@ msgstr ""
 "neues Spiel einzurichten:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``) to the main script. "
@@ -1039,22 +1034,22 @@ msgid ""
 "increment the score by 1."
 msgstr ""
 "Verbinde nun das Signal ``Timeout()`` von jedem der Timer-Nodes "
-"(``StartTimer``, ``ScoreTimer`` ` und ``MobTimer``). ``StartTimer`` startet "
-"die anderen beiden Timer. ``ScoreTimer`` erhöht die Punktzahl um 1."
+"(``StartTimer``, ``ScoreTimer`` ` und ``MobTimer``) mit dem Main-Skript. "
+"``StartTimer`` startet die anderen beiden Timer. ``ScoreTimer`` erhöht die "
+"Punktzahl um 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:799
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
-"In ``_on_MobTimer_timeout()`` erstellen wir eine Mob-Instanz, wählen einen "
-"zufälligen Startpunkt entlang des ``Path2D`` und setzen den Mob in Bewegung. "
-"Der ``PathFollow2D`` Node wird sich automatisch drehen, wenn er dem Pfad "
-"folgt, also werden wir ihn verwenden, um die Richtung des Mobs sowie seine "
-"Position auszuwählen."
+"In ``_on_MobTimer_timeout ()``erstellen wir eine Mob-Instanz, wähle einen "
+"zufälligen Startpunkt entlang des ``Path2D`` aus und setze den Mob in "
+"Bewegung. Der ``PathFollow2D``-Node dreht sich automatisch, wenn er dem Pfad "
+"folgt. Wir verwenden diesen, um die Richtung des Mobs sowie dessen Position "
+"auszuwählen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:805
 msgid ""
@@ -1243,7 +1238,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
 msgid "*Align* : \"Center\""
-msgstr ""
+msgstr "*Ausrichtung* : \"zentriert\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 #, fuzzy

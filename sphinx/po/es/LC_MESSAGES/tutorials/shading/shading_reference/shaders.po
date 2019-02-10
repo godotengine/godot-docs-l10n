@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
-#, fuzzy
 msgid "Shaders"
-msgstr "Unshaded (Sin sombra)"
+msgstr "Shaders"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:7
 msgid "Introduction"
@@ -57,30 +56,27 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:27
-#, fuzzy
 msgid "Shader types"
 msgstr "Tipos de Shaders"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:29
-#, fuzzy
 msgid ""
 "Instead of supplying a general purpose configuration for all uses (2D, 3D, "
 "particles), Godot shaders must specify what they are intended for. Different "
 "types support different render modes, built-in variables, and processing "
 "functions."
 msgstr ""
-"En lugar de ofrecer una configuración de propósito general, el lenguaje de "
-"Shading de Godot debe especificar el propósito del shader. Dependiendo del "
-"tipo, estarán disponibles diferentes modos, variables y funciones para "
-"procesamiento."
+"En lugar de ofrecer una configuración de propósito general (2D, 3D, "
+"partículas), los shaders de Godot deben especificar para qué serán usadas. "
+"Diferentes tipos soportan distintos modos de renderizado, variables "
+"integradas y funciones de procesamiento."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:33
-#, fuzzy
 msgid ""
 "All shaders need to specify their type in the first line, in the following "
 "format:"
 msgstr ""
-"Todos los shaders necesitan especificar el tipo en la primera línea, en el "
+"Todos los shaders deben especificar el tipo en la primera línea, en el "
 "siguiente formato:"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:39
@@ -88,19 +84,16 @@ msgid "Valid types are:"
 msgstr "Los tipos válidos son:"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:41
-#, fuzzy
 msgid ":ref:`spatial <doc_spatial_shader>`: For 3D rendering."
-msgstr "\"spatial\": Para rendering 3D."
+msgstr ":ref:`spatial <doc_spatial_shader>`: Para rendering 3D."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:42
-#, fuzzy
 msgid ":ref:`canvas_item <doc_canvas_item_shader>`: For 2D rendering."
-msgstr "\"canvas_item\": Para rendering 2D."
+msgstr ":ref:`canvas_item <doc_canvas_item_shader>`: Para rendering 2D."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:43
-#, fuzzy
 msgid ":ref:`particles <doc_particle_shader>`: For particle systems."
-msgstr "\"particles\": Para sistemas de partículas."
+msgstr ":ref:`particles <doc_particle_shader>`: Para sistemas de partículas."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:45
 msgid ""
@@ -109,12 +102,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:48
-#, fuzzy
 msgid "Render modes"
-msgstr "Modos de Render"
+msgstr "Modos de renderizado"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:50
-#, fuzzy
 msgid ""
 "Different shader types support different render modes. They are optional "
 "and, if specified, must be after the *shader_type*. Render modes are used to "
@@ -122,9 +113,11 @@ msgid ""
 "to use the render mode ``unshaded`` to skip the built-in light processor "
 "function."
 msgstr ""
-"Los distintos tipos de shaders soportan diferentes modos de render. Son "
+"Los distintos tipos de shaders soportan diferentes modos de renderizado. Son "
 "opcionales pero, si se especifican, debe hacerse después del *shader_type*. "
-"Un ejemplo de la sintaxis es:"
+"Estos modos son usados para alterar la forma en que la funcionalidad "
+"integrada es manejada. Por ejemplo, es común usar el modo ``unshaded`` para "
+"saltearse la función de procesamiento de iluminación (light)."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:55
 msgid "Render modes are specified underneath the shader type:"
@@ -137,37 +130,34 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:66
-#, fuzzy
 msgid "Processor functions"
-msgstr "Funciones de procesador"
+msgstr "Funciones de procesamiento"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:68
-#, fuzzy
 msgid ""
 "Depending on the shader type, different processor functions may be "
 "optionally overridden. For \"spatial\" and \"canvas_item\", it is possible "
 "to override ``vertex``, ``fragment``, and ``light``. For \"particles\", only "
 "``vertex`` can be overridden."
 msgstr ""
-"Dependiendo del tipo de shader, distintas funciones de procesador estarán "
+"Dependiendo del tipo de shader, distintas funciones de procesamiento estarán "
 "disponibles para sobreescribir. Para \"spatial\" y \"canvas_item\", es "
-"posible utilizar \"vertex\", \"fragment\" y \"light\". Para \"particles\" "
-"sólo está disponible \"vertex\"."
+"posible utilizar ``vertex``, ``fragment`` y ``light``. Para \"particles\" "
+"sólo está disponible ``vertex``."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:73
-#, fuzzy
 msgid "Vertex processor"
 msgstr "Procesador Vertex"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:75
-#, fuzzy
 msgid ""
 "The ``vertex`` processing function is called once for every vertex in "
 "\"spatial\" and \"canvas_item\" shaders. For \"particles\" shaders, it is "
 "called once for every particle."
 msgstr ""
-"La función de procesamiento \"vertex\" es llamada por cada vértice, 2D o 3D. "
-"Para partículas, es llamada por cada partícula."
+"La función de procesamiento ``vertex`` es llamada por cada vértice en "
+"shaders \"spatial\" y \"canvas_item\". Para \"particles\", es llamada por "
+"cada partícula."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:78
 msgid ""
@@ -186,21 +176,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:87
-#, fuzzy
 msgid "Fragment processor"
 msgstr "Procesador Fragment"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:89
-#, fuzzy
 msgid ""
 "The ``fragment`` processing function is used to set up the Godot material "
 "parameters per pixel. This code runs on every visible pixel the object or "
 "primitive draws. It is only available in \"spatial\" and \"canvas_item\" "
 "shaders."
 msgstr ""
-"El procesador \"fragment\" es usado para asignar parámetros de materiales "
+"El procesador ``fragment`` es usado para asignar parámetros de materiales "
 "por pixel. Este código es ejecutado por cada pixel visible que es dibujado "
-"en el objeto o primitiva."
+"en el objeto o primitiva. Sólo está disponible en shaders \"spatial\" y "
+"\"canvas_item\"."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:93
 msgid ""
@@ -218,12 +207,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:103
-#, fuzzy
 msgid "Light processor"
 msgstr "Procesador Light"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:105
-#, fuzzy
 msgid ""
 "The ``light`` processor runs per pixel too, but also runs for every light "
 "that affects the object (and does not run if no lights affect the object). "
@@ -231,9 +218,11 @@ msgid ""
 "typically operates on the material properties setup inside the ``fragment`` "
 "function."
 msgstr ""
-"El procesador \"light\" se ejecuta también por pixel, pero también es "
+"El procesador \"light\" se ejecuta también por pixel, pero además es "
 "ejecutado por cada luz que afecta el objeto (y no es ejecutada si no hay "
-"luces afectando el objeto)."
+"luces afectando el objeto). Existe como una función llamada dentro de "
+"``fragment`` y típicamente opera sobre las propiedades de los materiales "
+"configuradas dentro de la función ``fragment``."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:110
 msgid ""

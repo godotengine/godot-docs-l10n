@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,19 +34,16 @@ msgstr ""
 "> Paramètres de l'éditeur -> Éditeur de texte -> Externe``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
-#, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
 "allow you to better integrate the editor with Godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
-"Il y a deux champs : le chemin de l’exécutable et les lignes de commandes "
-"d’exécution. Les lignes de commandes avec les drapeaux permettront de mieux "
-"intégrer l'éditeur avec Godot. Godot remplacera par les champs suivant les "
-"drapeaux :"
+"Il y a deux champs : le chemin de l’exécutable et les options de ligne de "
+"commandes. Ces options ou drapeaux permettront de mieux intégrer l'éditeur "
+"avec Godot. Godot remplacera par les champs suivant les drapeaux :"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
-#, fuzzy
 msgid "Field in Exec Flags"
 msgstr "Drapeaux dans la ligne de commande d’exécution"
 
@@ -87,10 +84,10 @@ msgid "The line number of the error"
 msgstr "Le numéro de ligne de l’erreur"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
-#, fuzzy
 msgid "Some example Exec Flags for various editors include:"
 msgstr ""
-"Quelques exemples de ligne de commande pour différents éditeur de texte:"
+"Quelques exemples de ligne de commande avec drapeaux pour différents éditeur "
+"de texte :"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Editor"

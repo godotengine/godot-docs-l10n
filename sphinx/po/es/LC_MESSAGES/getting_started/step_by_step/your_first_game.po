@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -269,8 +269,8 @@ msgstr ""
 "límites de su área de colisión. Para este personaje, un nodo "
 "``CapsuleShape2D`` ya que se ajusta mejor a la imagen, así que junto a "
 "\"Shape\" en el Inspector, haz clic en \"<null>\" -> \"New CapsuleShape2D"
-"\".  Ahora usa los dos manejadores de tamaño y redimensiona la figura para "
-"cubrir el sprite:"
+"\".  Ahora usa los dos manejadores de tamaño y redimensiona la forma de "
+"colisión para cubrir el sprite:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid "When you're finished, your ``Player`` scene should look like this:"
@@ -626,6 +626,9 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"Cada vez que un enemigo golpea al jugador, la señal será emitida. "
+"Necesitamos deshabilitar la colisión del jugador para que no activemos la "
+"señal de ``hit`` más de una vez."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
 msgid ""
@@ -633,6 +636,10 @@ msgid ""
 "middle of the engine's collision processing. Using ``call_deferred()`` "
 "allows us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"Desactivar la forma de colisión del área puede causar un error si ocurre en "
+"medio del proceso de colisión del motor. El uso de ``call_deferred()`` nos "
+"permite hacer que Godot espere para desactivar la forma hasta que sea seguro "
+"hacerlo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -754,8 +761,8 @@ msgid ""
 "property to ``90`` under ``Node2D``."
 msgstr ""
 "Como en la escena ``Player``, añade una ``CapsuleShape2D`` para las "
-"colisiones. Para alinear la figura de colisión con la imágen, deberás "
-"ajustar la propiedad ``Rotation Degrees`` a ``90`` en la sección ``Node2D``."
+"colisiones. Para alinear la forma de colisión con la imágen, deberás ajustar "
+"la propiedad ``Rotation Degrees`` a ``90`` en la sección ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:553
 msgid "Enemy script"
@@ -1200,12 +1207,12 @@ msgstr "*Text* : ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid "*Layout* : \"Top Wide\""
-msgstr ""
+msgstr "*Layout*: \"Top Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
 msgid "*Align* : \"Center\""
-msgstr ""
+msgstr "*Align*: \"Center\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "MessageLabel"
@@ -1233,7 +1240,7 @@ msgstr "*Disposición* : \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:944
 msgid "*Margin* :"
-msgstr "*Margin* :"
+msgstr "*Margin*:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Top: ``-200``"
@@ -1281,6 +1288,10 @@ msgid ""
 "useful to delay, such as in the above code, where we want to wait a little "
 "bit of time before showing the \"Start\" button."
 msgstr ""
+"Cuando necesite hacer una pausa por un breve tiempo, una alternativa al uso "
+"de un nodo temporizador es usar la función ``create_timer()`` del arbol de "
+"escena. Esto puede ser muy útil para retrasar, como en el código anterior, "
+"donde queremos esperar un poco de tiempo antes de mostrar el botón \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
 msgid "This function is called by ``Main`` whenever the score changes."
@@ -1439,7 +1450,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
 msgid "Keyboard Shortcut"
-msgstr ""
+msgstr "Atajo del teclado"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
 msgid ""
@@ -1447,6 +1458,9 @@ msgid ""
 "we could also start the game by pressing a key on the keyboard. One way to "
 "do this is using the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
+"Dado que el juego se juega con los controles del teclado, sería conveniente "
+"si también pudiéramos iniciar el juego presionando una tecla en el teclado. "
+"Una forma de hacerlo es usando la propiedad \"Shortcut\" del nodo ``Button``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid ""
@@ -1457,12 +1471,20 @@ msgid ""
 "_Action_ property, type the name \"ui_select\". This is the default input "
 "event associated with the spacebar."
 msgstr ""
+"En la escena ``HUD``, seleccione  ``StartButton`` y encuentre su propiedad "
+"_Shortcut_ en el Inspector. Seleccione \"New Shortcut\" y haga clic en el "
+"elemento \"Shortcut\". Aparecerá una segunda propiedad _Shortcut_. "
+"Seleccione \"New InputEventAction\" y haga clic en el nuevo \"InputEvent\". "
+"Finalmente, en la propiedad _Action_, escriba el nombre \"ui_select\". Este "
+"es el evento de entrada predeterminado asociado con la barra espaciadora."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
 msgid ""
 "Now when the start button appears, you can either click it or press the "
 "spacebar to start the game."
 msgstr ""
+"Ahora, cuando aparezca el botón de inicio, puedes hacer clic en él o "
+"presionar la barra espaciadora para iniciar el juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid "Project files"

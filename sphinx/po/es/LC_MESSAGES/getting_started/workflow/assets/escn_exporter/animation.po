@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,46 +55,53 @@ msgid ""
 "This add-on has support for exporting multiple actions all at once into a "
 "single AnimationPlayer and makes it easy to switch actions."
 msgstr ""
+"En la mayoría de los juegos, un objeto tendría varias animaciones entre las "
+"que cambiar. Este complemento es compatible con la exportación de múltiples "
+"acciones a la vez a un solo AnimationPlayer y facilita el cambio de acciones."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
 msgid ""
 "This workflow makes use of blender nla_tracks. Here is a brief guide on how "
 "to use this feature:"
 msgstr ""
+"Este flujo de trabajo hace uso de blender nla_tracks. Aquí hay una breve "
+"guía sobre cómo usar esta función:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
 msgid "**1. Switch workspace to 'Dope Sheet'**"
-msgstr ""
+msgstr "**1. Cambiar el espacio de trabajo a 'Dope Sheet''**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:23
 msgid "**2. Stash the active action**"
-msgstr ""
+msgstr "**2. Ocultar la acción activa.**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:25
 msgid "The stashed action, while not active, will still be exported."
-msgstr ""
+msgstr "La acción oculta, aunque no está activa, todavía se exportará."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:29
 msgid "**3. Check stashed actions in 'NLA Editor' [optional]**"
-msgstr ""
+msgstr "**3. Verificar las acciones ocultas en 'NLA Editor' [opcional]**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:31
 msgid "Switch workspace to 'NLA Editor'."
-msgstr ""
+msgstr "Cambar el espacio de trabajo al 'NLA Editor'."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid "Make sure all stashed actions are muted."
-msgstr ""
+msgstr "Asegúrate de que todas las acciones ocultas estén silenciadas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
 msgid "**4. Export the scene**"
-msgstr ""
+msgstr "**4. Exportar la escena**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 msgid ""
 "All the stashed actions, as well as the active action, are exported to an "
 "AnimationPlayer."
 msgstr ""
+"Todas las acciones ocultas, así como la acción activa, se exportan a un "
+"AnimationPlayer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:48
 msgid "Constraints"
@@ -107,6 +114,11 @@ msgid ""
 "object has some constraint; if it does, all the constraints are baked into "
 "every action the object has and then exported."
 msgstr ""
+"La animación a veces complicada se construye con restricción de objetos; Un "
+"ejemplo habitual es la cinemática inversa. El complemento verificará "
+"automáticamente si un objeto tiene alguna restricción; si la tiene, todas "
+"las restricciones se incorporan a cada acción que tiene el objeto y luego se "
+"exportan."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:56
 msgid "Animation Mode"
@@ -134,10 +146,13 @@ msgid ""
 "Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
 msgstr ""
+"Trate todas las animaciones como acciones del objeto, por lo que en la "
+"escena exportada, cada objeto tendrá su propio AnimationPlayer y mantendrá "
+"sus acciones."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Scene Animation'**"
-msgstr ""
+msgstr "**Modo 'Scene Animation'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid ""
@@ -145,10 +160,14 @@ msgid ""
 "Blender's timeline, this is what you want. In this mode, all the animations "
 "in the scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
+"Si quieres que tu animación genere el mismo resultado que se reproduce en la "
+"línea de tiempo de Blender, esto es lo que quieres. En este modo, todas las "
+"animaciones en la escena se colocan en un solo AnimationPlayer en la raíz de "
+"la escena."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Animation as Action with Squash'**"
-msgstr ""
+msgstr "**Modo 'Animation as Action with Squash'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid ""
@@ -158,3 +177,8 @@ msgid ""
 "and each Skeleton and Mesh has actions; then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
+"Este modo tiene un comportamiento muy similar al modo 'Animation as Action', "
+"pero puede generar menos AnimationPlayers; Los objetos en la relación padre-"
+"hijo compartirían su AnimationPlayer. Es útil cuando tienes varias "
+"plataformas, y cada Esqueleto y Malla tiene acciones; entonces una "
+"plataforma tendría solo un AnimationPlayer."

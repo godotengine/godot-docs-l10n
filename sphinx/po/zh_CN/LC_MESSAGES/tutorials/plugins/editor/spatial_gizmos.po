@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:4
+#, fuzzy
+msgid "Spatial gizmo plugins"
+msgstr "制作插件"
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:7
+msgid "Introduction"
+msgstr "简介"
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:9
+msgid ""
+"Spatial gizmo plugins are used by the editor and custom plugins to define "
+"the gizmos attached to any kind of Spatial node."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:12
+msgid ""
+"This tutorial will show you the two main approaches to defining your own "
+"custom gizmos. The first option works well for simple gizmos and creates "
+"less clutter in your plugin structure, while the second one will let you "
+"store some per-gizmo data."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:16
+#, fuzzy
+msgid ""
+"This tutorial assumes you already know how to make generic plugins. If in "
+"doubt, refer to the :ref:`doc_making_plugins` page."
+msgstr ""
+"本教程假设您已经知道如何制作通用插件。 如有疑问，请参阅 :ref:"
+"`doc_making_plugins` 页面。 这也假设您熟悉Godot的导入系统。"
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:20
+#, fuzzy
+msgid "The EditorSpatialGizmoPlugin"
+msgstr "EditorImportPlugin类"
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:22
+msgid ""
+"Regardless of the approach we choose, we will need to create a new :ref:"
+"`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>`. This will allow "
+"us to set a name for the new gizmo type and define other behaviors such as "
+"whether the gizmo can be hidden or not."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:27
+msgid "This would be a basic setup:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:57
+msgid ""
+"For simple gizmos, just inheriting :ref:`EditorSpatialGizmoPlugin "
+"<class_EditorSpatialGizmoPlugin>` is enough. If you want to store some per-"
+"gizmo data or you are porting a Godot 3.0 gizmo to 3.1+, you should go with "
+"the second approach."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:63
+#, fuzzy
+msgid "Simple approach"
+msgstr "简单购买"
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
+msgid ""
+"The first step is to, in our custom gizmo plugin, override the :ref:"
+"`has_gizmo()<class_EditorSpatialGizmoPlugin_method_has_gizmo>` method so "
+"that it returns ``true`` when the spatial parameter is of our target type."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:76
+msgid ""
+"Then we can override methods like :ref:"
+"`redraw()<class_EditorSpatialGizmoPlugin_method_redraw>` or all the handle "
+"related ones."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:107
+msgid ""
+"Note that we created a material in the `_init` method, and retrieved it in "
+"the `redraw` method using :ref:"
+"`get_material()<class_EditorSpatialGizmoPlugin_method_get_material>`. This "
+"method retrieves one of the material's variants depending on the state of "
+"the gizmo (selected and/or editable)."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:112
+#, fuzzy
+msgid "So the final plugin would look somewhat like this:"
+msgstr "您最后的场景应该是这样的。"
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:148
+msgid ""
+"Note that we just added some handles in the redraw method, but we still need "
+"to implement the rest of handle-related callbacks in :ref:"
+"`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>` to get properly "
+"working handles."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:153
+#, fuzzy
+msgid "Alternative approach"
+msgstr "或者，您可以运行"
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:155
+msgid ""
+"In some cases we want to provide our own implementation of :ref:"
+"`EditorSpatialGizmo<class_EditorSpatialGizmo>`, maybe because we want to "
+"have some state stored in each gizmo or because we are porting an old gizmo "
+"plugin and we don't want to go through the rewriting process."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:159
+msgid ""
+"In these cases all we need to do is, in our new gizmo plugin, override :ref:"
+"`create_gizmo()<class_EditorSpatialGizmoPlugin_method_create_gizmo>`, so it "
+"returns our custom gizmo implementation for the Spatial nodes we want to "
+"target."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:181
+msgid ""
+"This way all the gizmo logic and drawing methods can be implemented in a new "
+"clas extending :ref:`EditorSpatialGizmo<class_EditorSpatialGizmo>`, like so:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:217
+msgid ""
+"Note that we just added some handles in the redraw method, but we still need "
+"to implement the rest of handle-related callbacks in :ref:"
+"`EditorSpatialGizmo<class_EditorSpatialGizmo>` to get properly working "
+"handles."
+msgstr ""

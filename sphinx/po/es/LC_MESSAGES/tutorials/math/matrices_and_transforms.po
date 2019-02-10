@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -366,13 +366,12 @@ msgid "This will always work in global coordinates."
 msgstr "Esto siempre funcionará en coordenadas globales."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:265
-#, fuzzy
 msgid ""
 "If instead, translation is desired in *local* coordinates of the matrix "
 "(towards where the *basis* is oriented), there is the :ref:`Transform2D."
 "translated() <class_Transform2D_method_translated>` method:"
 msgstr ""
-"En cambio, si se desea realizar el traslado en coordenadas *locales* de la "
+"En cambio, si se desea realizar la traslación en coordenadas *locales* de la "
 "matriz (hacia donde se orienta la *base*), está el método :ref:`Transform2D."
 "translated() <class_Transform2D_method_translated>`:"
 
@@ -403,14 +402,13 @@ msgstr ""
 "Hay métodos helper para convertir entre coordenadas locales y globales."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:305
-#, fuzzy
 msgid ""
 "There are :ref:`Node2D.to_local() <class_Node2D_method_to_local>` and :ref:"
 "`Node2D.to_global() <class_Node2D_method_to_global>` for 2D as well as :ref:"
 "`Spatial.to_local() <class_Spatial_method_to_local>` and :ref:`Spatial."
 "to_global() <class_Spatial_method_to_global>` for 3D."
 msgstr ""
-"Hay :ref:`Node2D.to_local() <class_Node2D_to_local>` y :ref:`Node2D."
+"Existen :ref:`Node2D.to_local() <class_Node2D_to_local>` y :ref:`Node2D."
 "to_global() <class_Node2D_method_to_global>` tanto para 2D como para :ref:"
 "`Spatial.to_local() <class_Spatial_to_local>` y :ref:`Spatial.to_global() "
 "<class_Spatial_method_to_global>`para 3D."
@@ -641,7 +639,6 @@ msgstr ""
 "origen."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:616
-#, fuzzy
 msgid ""
 "Godot has a special type for a 3x3 matrix, named :ref:`Basis <class_Basis>`. "
 "It can be used to represent a 3D rotation and scale. Sub vectors can be "
@@ -649,7 +646,7 @@ msgid ""
 msgstr ""
 "Godot tiene un tipo especial para una matriz 3x3, llamado :ref:`Basis "
 "<class_basis>`. Se puede utilizar para representar una rotación y escala 3D. "
-"Se puede acceder a los subvectores como:"
+"Los subvectores se acceden así:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:635
 msgid "Or, alternatively as:"

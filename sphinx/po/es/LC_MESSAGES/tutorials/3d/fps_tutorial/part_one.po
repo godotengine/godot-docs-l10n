@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,24 +149,22 @@ msgstr ""
 "en el desarrollo de juegos **antes de** pasar por esta serie de tutoriales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:43
-#, fuzzy
 msgid ""
 "Remember: Making 3D games is much harder than making 2D games. If you do not "
 "know how to make 2D games, you will likely struggle making 3D games."
 msgstr ""
 "Recuerda: Hacer juegos 3D es mucho más difícil que hacer juegos 2D. Si no "
-"sabes cómo hacer juegos 2D es probable que tengas dificultades para hacer "
-"juegos 3D."
+"sabes cómo crear juegos 2D es probable que tengas dificultades para "
+"desarrollar juegos 3D."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:46
-#, fuzzy
 msgid ""
 "This tutorial assumes you have experience working with the Godot editor, "
 "basic programming experience in GDScript, and basic experience in game "
 "development."
 msgstr ""
 "Este tutorial asume que tienes experiencia trabajando con el editor de "
-"Godot, tienes experiencia básica de programación en GDScript, y tienes "
+"Godot, que tienes experiencia básica de programación en GDScript y "
 "experiencia básica en el desarrollo de juegos."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:49
@@ -233,9 +231,8 @@ msgstr ""
 "de la página de cada parte"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:67
-#, fuzzy
 msgid "Part overview"
-msgstr "Resumen de la Parte"
+msgstr "Resumen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:69
 msgid ""
@@ -246,16 +243,15 @@ msgstr ""
 "alrededor del entorno."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:74
-#, fuzzy
 msgid ""
 "By the end of this part, you will have a working first-person character who "
 "can move around the game environment, sprint, look around with a mouse based "
 "first person camera, jump into the air, and turn a flash light on and off."
 msgstr ""
-"Al final de esta parte tendrás un funcional personaje en primera persona que "
-"puede moverse por el entorno del juego, mirar a su alrededor con una cámara "
-"en primera persona basada en el ratón, que puede saltar en el aire, encender "
-"y apagar una linterna y correr."
+"Al final de esta parte tendrás personaje en primera persona un funcional, "
+"que puede moverse por el entorno del juego, correr, mirar a su alrededor con "
+"una cámara en primera persona basada en el ratón, que puede saltar, encender "
+"y apagar una linterna."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:78
 msgid "Getting everything ready"
@@ -266,7 +262,6 @@ msgid "Launch Godot and open up the project included in the starter assets."
 msgstr "Inicia Godot y abre el proyecto incluido en los recursos iniciales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:82
-#, fuzzy
 msgid ""
 "While these assets are not necessarily required to use the scripts provided "
 "in this tutorial, they will make the tutorial much easier to follow, as "
@@ -279,7 +274,6 @@ msgstr ""
 "lo largo de la serie de tutoriales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:86
-#, fuzzy
 msgid ""
 "First, open the project settings and go to the \"Input Map\" tab. You'll "
 "find several actions have already been defined. We will be using these "
@@ -1007,12 +1001,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:562
-#, fuzzy
 msgid ""
 "This gets the ``Flashlight`` node and assigns it to the ``flashlight`` "
 "variable."
 msgstr ""
-"Esto obtiene el nodo flash light y lo asigna a la variable ``flashlight``."
+"Esto obtiene el nodo ``Flashlight`` (linterna) y lo asigna a la variable "
+"``flashlight``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:566
 msgid ""

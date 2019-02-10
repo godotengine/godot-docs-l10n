@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,17 +23,19 @@ msgstr "Mesh"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
-msgstr ""
+msgstr "모디파이어(Modifiers)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:6
 msgid ""
 "There is an exporting option :code:`Apply Modifiers` to control whether mesh "
 "modifiers are applied to the exported mesh."
 msgstr ""
+"내보내는 설정 :code:`Apply Modifiers`\\ 로 어떤 메시 모디파이어를 내보낸 메시"
+"에 적용할 지 제어할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:11
 msgid "Shape Key"
-msgstr ""
+msgstr "셰이프 키(Shape Key)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:12
 msgid ""
@@ -41,6 +43,9 @@ msgid ""
 "almost like exporting the mesh again, so don't be surprised it takes a "
 "relatively long time."
 msgstr ""
+"메시 셰이프 키 내보내기도 지원하지만, 각 셰이프 키를 내보내는 것은 메시를 다"
+"시 내보내는 것과 거의 같기 때문에, 상대적으로 오랜 시간이 걸리는 것에 놀라지 "
+"마세요."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:17
 msgid ""
@@ -51,3 +56,9 @@ msgid ""
 "github.com/godotengine/godot-blender-exporter/issues>`__, which helps to "
 "develop the exporter to have a more precise check of modifiers."
 msgstr ""
+"많은 모디파이어가 셰이프 키와 호환하지 않습니다 (예: 서브서페이스 모디파이"
+"어), 그래서 맞지 않은 셰이프 키가 내보내진 것을 발견했다면, :code:`Apply "
+"Modifiers`\\ 를 비활성화하고 다시 내보내보세요. 그 밖에, 호환하지 않은 모디파"
+"이어를 `issue list <https://github.com/godotengine/godot-blender-exporter/"
+"issues>`__\\ 에 보고하여 모디파이어를 더 정확하게 확인하는 내보내기를 개발하"
+"도록 도울 수 있습니다."

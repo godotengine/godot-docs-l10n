@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,9 +22,8 @@ msgid "Part 4"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:7
-#, fuzzy
 msgid "Part overview"
-msgstr "Resumen de la Parte"
+msgstr "Resumen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:9
 msgid ""
@@ -121,9 +120,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:56
-#, fuzzy
 msgid "Let's go over what each of these does:"
-msgstr "Repasemos lo que hace este script:"
+msgstr "Veamos lo que hace cada uno de estos:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:58
 msgid ""
@@ -416,9 +414,8 @@ msgid "Now you can change weapons using the scroll wheel! Go give it a whirl!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:329
-#, fuzzy
 msgid "Adding the health pickups"
-msgstr "Añadir munición y recuperadores de salud"
+msgstr "Agregando los items de salud"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:331
 msgid ""
@@ -456,13 +453,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:344
-#, fuzzy
 msgid ""
 "The last thing to note is how we have an :ref:`AnimationPlayer "
 "<class_AnimationPlayer>` node so the health kit bobs and spins around slowly."
 msgstr ""
-"Primero agregaremos un nodo :ref:`AnimationPlayer <class_AnimationPlayer>` a "
-"la escena, como hijo de \"background\" (el nodo raíz):"
+"Lo primero que notamos es que tenemos un nodo :ref:`AnimationPlayer "
+"<class_AnimationPlayer>` para que el kit de salud se mueva y rote lentamente."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:346
 msgid ""
@@ -495,13 +491,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:410
-#, fuzzy
 msgid ""
 "``respawn_timer``: A variable used to track how long the health pickup has "
 "been waiting to respawn."
 msgstr ""
-"``fuse_timer``: Una variable para rastrear cuánto tiempo ha estado encendido "
-"el detonador."
+"``respawn_timer``: Una variable usada para rastrear cuánto tiempo ha estado "
+"el item de salud esperando para reaparecer."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:411
 msgid ""
@@ -691,9 +686,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:507
-#, fuzzy
 msgid "Adding the ammo pickups"
-msgstr "Añadir una pistola"
+msgstr "Agregando los items de municiones"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:509
 msgid ""

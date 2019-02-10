@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,6 @@ msgid "What is a kinematic body?"
 msgstr "¿Qué es un KinematicBody2D?"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:22
-#, fuzzy
 msgid ""
 "``KinematicBody2D`` is for implementing bodies that are to be controlled via "
 "code. They detect collisions with other bodies when moving, but are not "
@@ -80,7 +79,6 @@ msgstr ""
 "`KinematicBody2D`."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:33
-#, fuzzy
 msgid "Movement and collision"
 msgstr "Movimiento y Colisión"
 
@@ -110,7 +108,6 @@ msgstr ""
 "interna ``_physics_process()``."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:43
-#, fuzzy
 msgid ""
 "The two movement methods serve different purposes, and later in this "
 "tutorial, you'll see examples of how they work."
@@ -139,7 +136,6 @@ msgstr ""
 "retorna un objeto :ref:`KinematicCollision2D <class_KinematicCollision2D>`."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:55
-#, fuzzy
 msgid ""
 "``KinematicCollision2D`` is an object containing data about the collision "
 "and the colliding object. Using this data, you can calculate your collision "
@@ -244,9 +240,8 @@ msgstr ""
 "\"suelo\"."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:95
-#, fuzzy
 msgid "``move_and_slide_with_snap``"
-msgstr "``move_and_slide``"
+msgstr "``move_and_slide_with_snap``"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:97
 msgid ""
@@ -263,7 +258,6 @@ msgid "Which movement method to use?"
 msgstr "¿Cuál método de movimiento hay que usar?"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:106
-#, fuzzy
 msgid ""
 "A common question from new Godot users is: \"How do you decide which "
 "movement function to use?\" Often, the response is to use "
@@ -273,7 +267,7 @@ msgid ""
 "two code snippets result in the same collision response:"
 msgstr ""
 "Una pregunta común de usuarios nuevos de Godot es: \"¿Cómo decidir qué "
-"función utilizar para movimiento?\". La respuesta común es de usar "
+"función utilizar para movimiento?\". La respuesta usual es de usar "
 "``move_and_slide()`` porque es más \"simple\", pero esto no quiere decir que "
 "siempre sea así. Un modo de verlo es que ``move_and_slide()`` es un caso "
 "especial, y ``move_and_collide()`` es más general. Para poner un ejemplo, "
@@ -308,7 +302,6 @@ msgid "Movement and walls"
 msgstr "Movimiento y paredes"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:150
-#, fuzzy
 msgid ""
 "If you've downloaded the sample project, this example is in \"BasicMovement."
 "tscn\"."
@@ -317,7 +310,6 @@ msgstr ""
 "\"BasicMovement.tscn\"."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:152
-#, fuzzy
 msgid ""
 "For this example, add a ``KinematicBody2D`` with two children: a ``Sprite`` "
 "and a ``CollisionShape2D``. Use the Godot \"icon.png\" as the Sprite's "
@@ -328,8 +320,8 @@ msgstr ""
 "Para este ejemplo, añade un ``KinematicBody2D`` con dos hijos: un ``Sprite`` "
 "y un ``CollisionShape2D``. Usa el \"icon.png\" de Godot como textura del "
 "Sprite (arrástralo desde el panel de Sistema de Archivos a la propiedad "
-"*Texture* del ``Sprite``). En la propiedad ``CollisionShape2D``'s *Shape*`, "
-"selecciona \"New RectangleShape2D\" y redimensiona el rectángulo para que "
+"*Texture* del ``Sprite``). En la propiedad  *Shape* de ``CollisionShape2D``, "
+"selecciona \"Nuevo RectangleShape2D\" y redimensiona el rectángulo para que "
 "quepa sobre la imagen del sprite."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:158
@@ -439,7 +431,6 @@ msgid "And the code for the Bullet:"
 msgstr "Y el código para Bullet:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:407
-#, fuzzy
 msgid ""
 "The action happens in ``_physics_process()``. After using "
 "``move_and_collide()``, if a collision occurs, a ``KinematicCollision2D`` "
@@ -499,7 +490,6 @@ msgid "Here's the code for the player body:"
 msgstr "Este es el código para el jugador:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:517
-#, fuzzy
 msgid ""
 "When using ``move_and_slide()``, the function returns a vector representing "
 "the movement that remained after the slide collision occurred. Setting that "
@@ -538,10 +528,9 @@ msgstr ""
 "piso (esto puede ajustarse mediante el parámetro ``floor_max_angle``)."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:531
-#, fuzzy
 msgid ""
 "This also allows you to implement other features (like wall jumps) using "
 "``is_on_wall()``, for example."
 msgstr ""
 "Esto permite implementar otras características como salto contra paredes "
-"utilizando ``is_on_wall()``."
+"utilizando por ejemplo ``is_on_wall()``."

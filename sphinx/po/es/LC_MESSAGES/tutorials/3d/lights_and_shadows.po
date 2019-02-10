@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:4
-#, fuzzy
 msgid "Lights and shadows"
 msgstr "Luces y sombras"
 
@@ -27,14 +26,12 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:9
-#, fuzzy
 msgid ""
 "Light sources emit light that mixes with the materials and produces a "
 "visible result. Light can come from several types of sources in a scene:"
 msgstr ""
 "Las luces emiten luz que se mezcla con los materiales produciendo un "
-"resultado visible. La luz puede proceder de varios tipos de fuentes en una "
-"escena:"
+"resultado visible. La luz puede proceder de varias fuentes en una escena:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:12
 msgid ""
@@ -129,7 +126,6 @@ msgstr ""
 "serán afectadas por esta luz."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:42
-#, fuzzy
 msgid "Shadow mapping"
 msgstr "Shadow Mapping"
 
@@ -183,13 +179,12 @@ msgstr ""
 "sombras se representa con el face-culling invertido."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:54
-#, fuzzy
 msgid ""
 "Below is an image of what tweaking bias looks like. Default values work for "
 "most cases, but in general it depends on the size and complexity of geometry."
 msgstr ""
-"A continuación se muestra una imagen de cómo se ve el ajuste de inclinación. "
-"Los valores predeterminados funcionan para la mayoría de los casos, pero en "
+"A continuación se muestra una imagen de cómo se ve el ajuste de bias. Los "
+"valores predeterminados funcionan para la mayoría de los casos, pero en "
 "general depende del tamaño y la complejidad de la geometría."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:59
@@ -238,19 +233,17 @@ msgstr ""
 "cualquier lugar de la escena."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:80
-#, fuzzy
 msgid ""
 "Every face whose front-side is hit by the light rays is lit, while the "
 "others stay dark. Most light types have specific parameters, but directional "
 "lights are pretty simple in nature, so they don't."
 msgstr ""
-"Cada rostro, cuyo lado frontal es golpeado por los rayos de luz, se enciende "
-"mientras los otros permanecen oscuros. La mayoría de los tipos de luz tienen "
-"parámetros específicos, pero las luces direccionales son de naturaleza "
-"bastante simple, por lo que no lo son."
+"Cada cara, cuyo lado frontal es golpeado por los rayos de luz, se ilumina "
+"mientras las otras permanecen oscuras. La mayoría de los tipos de luces "
+"tienen parámetros específicos, pero las luces direccionales son de "
+"naturaleza bastante simple y no los tienen."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:84
-#, fuzzy
 msgid "Directional shadow mapping"
 msgstr "Mapeo de sombras direccional"
 
@@ -302,25 +295,23 @@ msgstr ""
 "cercanos (como un personaje en un juego en tercera persona)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:111
-#, fuzzy
 msgid ""
 "Always make sure to set a shadow *Max Distance* according to what the scene "
 "needs. A lower maximum distance will result in better-looking shadows."
 msgstr ""
 "Asegúrate de indicar una *Max Distance* de sombra de acuerdo con las "
-"necesidades de la escena. Cuanto más cerca se encuentre la distancia máxima, "
-"mayor será la calidad de las sombras."
+"necesidades de la escena. Una distancia máxima baja obtendrá mejor calidad "
+"de sombras."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:114
-#, fuzzy
 msgid ""
 "Sometimes, the transition between a split and the next can look bad. To fix "
 "this, the **\"Blend Splits\"** option can be turned on, which sacrifices "
 "detail in exchange for smoother transitions:"
 msgstr ""
 "A veces, la transición entre una división y la siguiente puede verse mal. "
-"Para solucionar esto, la opción **\"Blend Splits\"** sacrifica detalles a "
-"cambio de transiciones más suaves:"
+"Para solucionar esto se puede activar la opción **\"Blend Splits\"**, la que "
+"sacrifica detalles a cambio de transiciones más suaves:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:120
 msgid ""
@@ -386,13 +377,13 @@ msgstr ""
 "Project Settings -> Rendering -> Quality:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:140
-#, fuzzy
 msgid ""
 "Increasing it can solve bias problems, but decrease performance. Shadow "
 "mapping is an art of tweaking."
 msgstr ""
-"Aumentarlo puede arreglar problemas de inclinaciñon pero reduce el "
-"rendimiento. El mapeo de sombras es un elemento que requiere muchos ajustes."
+"Aumentarlo puede arreglar problemas de inclinación pero reduce el "
+"rendimiento. El mapeo de sombras es un elemento que requiere mucho ajuste "
+"fino."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:143
 msgid "Omni light"
@@ -407,7 +398,6 @@ msgstr ""
 "direcciones hasta un radio dado."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:150
-#, fuzzy
 msgid ""
 "In real life, light attenuation is an inverse function, which means omni "
 "lights don't have a radius. This is a problem because it means computing "
@@ -434,9 +424,8 @@ msgstr ""
 "encontrar resultados estéticamente agradables."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:163
-#, fuzzy
 msgid "Omni shadow mapping"
-msgstr "Omni Shadow Mapping"
+msgstr "Omni shadow mapping"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:165
 msgid ""
@@ -488,9 +477,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:194
-#, fuzzy
 msgid "Spot shadow mapping"
-msgstr "Shadow Mapping"
+msgstr "Spot shadow mapping"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:196
 msgid ""
@@ -500,9 +488,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:200
-#, fuzzy
 msgid "Shadow atlas"
-msgstr "Shadow Mapping"
+msgstr "Shadow atlas"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:202
 msgid ""

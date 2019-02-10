@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,6 @@ msgid "Space"
 msgstr "Espacio"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:27
-#, fuzzy
 msgid ""
 "In the physics world, Godot stores all the low level collision and physics "
 "information in a *space*. The current 2d space (for 2D Physics) can be "
@@ -73,9 +72,9 @@ msgid ""
 "<class_CanvasItem_method_get_world_2d>`. For 3D, it's :ref:`Spatial."
 "get_world().space <class_Spatial_method_get_world>`."
 msgstr ""
-"En el mundo de las físicas, Godot almacena toda la información de bajo nivel "
-"sobre colisiones y física en un *espacio*. El espacio 2d actual (para Física "
-"2D) se puede obtener accediendo a :ref:`CanvasItem.get_world_2d().space "
+"En el mundo físico, Godot almacena toda la información de bajo nivel sobre "
+"colisiones y física en un *espacio*. El espacio 2d actual (para Física 2D) "
+"se puede obtener accediendo a :ref:`CanvasItem.get_world_2d().space "
 "<class_CanvasItem_method_get_world_2d>`. Para 3D, accediendo a :ref:`Spatial."
 "get_world().space <class_Spatial_method_get_world>`."
 
@@ -94,7 +93,6 @@ msgid "Accessing space"
 msgstr "Accediendo al espacio"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:40
-#, fuzzy
 msgid ""
 "Godot physics runs by default in the same thread as game logic, but may be "
 "set to run on a separate thread to work more efficiently. Due to this, the "
@@ -138,7 +136,6 @@ msgid "Raycast query"
 msgstr "Consulta de Raycast"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:102
-#, fuzzy
 msgid ""
 "For performing a 2D raycast query, the method :ref:"
 "`Physics2DDirectSpaceState.intersect_ray() "
@@ -150,7 +147,6 @@ msgstr ""
 "<class_Physics2DDirectSpaceState_method_intersect_ray>`. Por ejemplo:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:123
-#, fuzzy
 msgid ""
 "The result is a dictionary. If the ray didn't hit anything, the dictionary "
 "will be empty. If it did hit something, it will contain collision "
@@ -222,22 +218,20 @@ msgstr ""
 "máscaras/capas de colisión."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:198
-#, fuzzy
 msgid ""
 "The optional fourth argument for ``intersect_ray()`` is a collision mask. "
 "For example, to use the same mask as the parent body, use the "
 "``collision_mask`` member variable:"
 msgstr ""
 "El cuarto argumento opcional para ``intersect_ray()`` es una máscara de "
-"colisión. Por ejemplo, para usar la misma máscara que el cuerpo padre, use "
-"la variable miembro ``collision_mask``:"
+"colisión. Por ejemplo, para usar la misma máscara que el cuerpo padre, usa "
+"la variable ``collision_mask``:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:226
 msgid "3D ray casting from screen"
 msgstr "Ray casting 3D desde la pantalla"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:228
-#, fuzzy
 msgid ""
 "Casting a ray from screen to 3D physics space is useful for object picking. "
 "There is not much need to do this because :ref:`CollisionObject "

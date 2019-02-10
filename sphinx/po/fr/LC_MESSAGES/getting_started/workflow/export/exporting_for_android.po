@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,32 +148,48 @@ msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
 msgstr ""
+"Le téléchargement d'un APK sur le Play Store de Google nécessite que vous "
+"vous connectiez en utilisant un fichier keystore non débogué ; un tel "
+"fichier peut être généré comme ceci :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
+#, fuzzy
 msgid ""
 "This keystore and key are used to verify your developer identity, remember "
 "the password and keep it in a safe place! Use Google's Android Developer "
 "guides to learn more about `APK signing <https://developer.android.com/"
 "studio/publish/app-signing>`__."
 msgstr ""
+"Ce keystore et cette clé sont utilisés pour vérifier votre identité de "
+"développeur, mémorisez le mot de passe et le conserver dans un endroit sûr ! "
+"Utilisez les guides de développement Android de Google pour en savoir plus "
+"sur `la signature APK <https://developer.android.com/studio/publish/app-"
+"signing>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
 msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr ""
+"Remplissez maintenant les formulaires suivants dans vos préréglages "
+"d'exportation Android :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
+#, fuzzy
 msgid "Release: Enter the path to the keystore file you just generated."
 msgstr ""
+"Release : Entrez le chemin d'accès au fichier keystore que vous venez de "
+"générer."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
 msgid "Release User: Replace with the key alias."
-msgstr ""
+msgstr "Release User : Remplacer par l'alias de la clé."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 msgid ""
 "Release Password: Key password. Note that the keystore password and the key "
 "password currently have to be the same."
 msgstr ""
+"Release Password : Mot de passe de la clé. Notez que le mot de passe du "
+"keystore et le mot de passe de la clé doivent actuellement être les mêmes."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
 msgid ""
@@ -181,9 +197,14 @@ msgid ""
 "Version Control System, it is a good idea to remove it from public "
 "repositories."
 msgstr ""
+"**Maintenant votre fichier export_presets.cfg contient des informations "
+"sensibles;** si vous utilisez un système de contrôle de version, c'est une "
+"bonne idée de le supprimer des dépôts publics."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
 msgid ""
 "Don't forget to disable the ``Export With Debug`` button while choosing the "
 "APK's name."
 msgstr ""
+"N'oubliez pas de désactiver le bouton \"Exporter avec débogage\" lorsque "
+"vous choisissez le nom de l'APK."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,6 @@ msgid "Sizing"
 msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:71
-#, fuzzy
 msgid ""
 "As mentioned before, size is important to controls. This allows them to lay "
 "out properly, when set into grids, containers, or anchored. Controls, most "
@@ -88,14 +87,13 @@ msgid ""
 "`VBoxContainer <class_VBoxContainer>`, the minimum size will make sure your "
 "custom control is not squished by the other controls in the container."
 msgstr ""
-"Como se mencionó anteriormente, el tamaño es importante para los controles. "
+"Como se mencionó anteriormente, el tamaño es importante para los Control. "
 "Esto les permite colocarse correctamente, cuando se colocan en rejillas, "
-"containers o anclados. La mayoría de las veces, los controles proporcionan "
-"un *tamaño mínimo* para ayudar a colocarlos correctamente. Por ejemplo, si "
-"los controles se colocan verticalmente uno encima del otro usando un :ref:"
-"`VBoxContainer <class_VBoxContainer>`, el tamaño mínimo se asegurará de que "
-"su control personalizado no sea aplastado por los otros controles en el "
-"container."
+"contenedores o cuando están anclados. La mayoría de las veces, proporcionan "
+"un *tamaño mínimo* para ayudar a colocarlos correctamente. Por ejemplo, se "
+"colocan verticalmente uno encima del otro usando un :ref:`VBoxContainer "
+"<class_VBoxContainer>`, el tamaño mínimo se asegurará de que su control "
+"personalizado no sea aplastado por los otros controles en el contenedor."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:79
 msgid ""
@@ -144,14 +142,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:130
-#, fuzzy
 msgid ""
 "This function is :ref:`Control._gui_input() "
 "<class_Control_method__gui_input>`. Simply override it in your control. No "
 "processing needs to be set."
 msgstr ""
 "Esta función es is :ref:`Control._gui_input() "
-"<class_Control_method__gui_input>`. Simplemente sobrescríbelo en tu control. "
+"<class_Control_method__gui_input>`. Simplemente sobrescríbelo en tu Control. "
 "No es necesario establecer ningún procesamiento."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:167
@@ -167,11 +164,10 @@ msgid "Notifications"
 msgstr "Notificaciones"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:173
-#, fuzzy
 msgid ""
 "Controls also have many useful notifications for which no dedicated callback "
 "exists, but which can be checked with the _notification callback:"
 msgstr ""
-"Los controles también tienen muchos avisos útiles para los que no existe "
-"ninguna llamada de retorno, pero que se pueden verificar con la llamada de "
-"retorno _notification:"
+"Los nodos Control también tienen muchas notificaciones útiles para los que "
+"no existe ninguna llamada de retorno, pero que se pueden verificar con la "
+"llamada de retorno _notification:"

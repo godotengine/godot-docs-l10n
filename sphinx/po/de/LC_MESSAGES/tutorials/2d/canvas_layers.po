@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
-msgstr ""
+msgstr "Canvas-Ebenen"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:7
 msgid "Viewport and Canvas items"
-msgstr ""
+msgstr "Viewport und CanvasItem"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
 msgid ""
@@ -33,12 +33,21 @@ msgid ""
 "they will inherit their transform. This means that when moving the parent, "
 "the children will be moved too."
 msgstr ""
+"Reguläre 2D-Nodes wie :ref:`Node2D <class_Node2D>` und :ref:`Control "
+"<class_Control>` sind abgeleitet von :ref:`CanvasItem <class_CanvasItem>` "
+"auf dem auch sämtliche andere 2D-Nodes basieren. CanvasItems können in einer "
+"Baumhierarchie strukturiert werden und kopieren ihre Transformation "
+"dementsprechend. Das heißt, wird ein übergeordneter Node bewegt, bewegen "
+"sich alle untergeordneten Nodes in gleicher Weise."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
 msgid ""
 "These nodes are placed as direct or indirect children of a :ref:`Viewport "
 "<class_Viewport>`, and will be displayed through it."
 msgstr ""
+"Diese Nodes in der Hierarchie sind stets direkte oder indirekte Unterobjekte "
+"einer :ref:`Viewport <class_Viewport>`-Instanz und werden über diese "
+"dargestellt."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
 msgid ""
@@ -48,6 +57,11 @@ msgid ""
 "transform. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
+"Viewport enthält die Eigenschaft :ref:`Viewport.canvas_transform "
+"<class_Viewport_property_canvas_transform>`, die es erlaubt, die gesamte "
+"CanvasItem-Hierarchie durch ein eigenes :ref:`Transform2D "
+"<class_Transform2D>` zu beeinflussen. Bestehende Nodes wie :ref:`Camera2D "
+"<class_Camera2D>` passen auf diese Weise ihre Sicht an."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:25
 msgid ""
@@ -56,10 +70,15 @@ msgid ""
 "transform is a simple matrix that offsets the whole 2D drawing, so it's the "
 "most efficient way to do scrolling."
 msgstr ""
+"Es ist sinnvoll, die Canvas-Transformation zu ändern, da es deutlich "
+"effizienter ist als die übergeordnete CanvasItem-Instanz direkt zu bewegen "
+"(und somit die Szene als Ganzes). Die Canvas-Transformation besteht aus "
+"einer simplen Matrix, die lediglich die gesamte 2D-Ansicht versetzt und so "
+"den schnellsten Weg für einen Scrolling-Effekt bereitet."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid "Not enough..."
-msgstr ""
+msgstr "Noch mehr..."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:33
 msgid ""
@@ -67,32 +86,44 @@ msgid ""
 "application may not want *everything* transformed by the canvas transform. "
 "Examples of this are:"
 msgstr ""
+"Doch das ist noch nicht alles. Oft gibt es Situationen, in denen in einem "
+"Spiel oder einer Anwendung nicht *alles* durch Canvas Transform beeinflusst "
+"werden soll. Dazu zählen beispielsweise:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:37
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
 msgstr ""
+"**Parallax Backgrounds**: Sich langsamer bewegende Hintergründe im Gegensatz "
+"zum Rest des Geschehens."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid ""
 "**HUD**: Heads-up display, or user interface. If the world moves, the life "
 "counter, score, etc. must stay static."
 msgstr ""
+"**HUD**: \"Heads-up display\" oder Benutzeroberfläche. Wenn sich die "
+"Umgebung ändert, sollen Lebensanzeige, Punktestand, etc. eine feste "
+"Bildschirmposition beibehalten."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:41
 msgid ""
 "**Transitions**: Effects used for transitions (fades, blends) may also want "
 "it to remain at a fixed location."
 msgstr ""
+"**Übergänge**: Übergangseffekte (Ein-/Ausblendungen, Bildüberlagerungen) "
+"bleiben üblicherweise ebenso auf einer festen Position."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:44
 msgid "How can these problems be solved in a single scene tree?"
 msgstr ""
+"Wie können diese Umstände innerhalb eines einzelnen Szenenbaums "
+"berücksichtigt werden?"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:47
 msgid "CanvasLayers"
-msgstr ""
+msgstr "CanvasLayers"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:49
 msgid ""
@@ -104,6 +135,14 @@ msgid ""
 "transform and do not depend on the transform of other layers. This allows "
 "the UI to be fixed in-place while the world moves."
 msgstr ""
+"Die Antwort ist :ref:`CanvasLayer <class_CanvasLayer>`, ein Node, der eine "
+"separate 2D-Ebene zum Zeichnen seiner untergeordneten Nodes bietet. Nodes "
+"unter dem (Haupt-)Viewport werden grundsätzlich auf Ebene \"0\" gezeichnet, "
+"wohingegen ein CanvasLayer auf jeder beliebigen Ebene sein kann. Ebenen mit "
+"einer höheren Nummer liegen über jenen mit einer kleineren. CanvasLayers "
+"besitzen jeweils eigene Transformationsanpassungen und sind nicht von denen "
+"der anderen Ebenen abhängig. Dies erlaubt es, UI-Elemente auf einer "
+"bestimmten Stelle zu fixieren während sich die Umgebung verändert."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:58
 msgid ""
@@ -111,16 +150,23 @@ msgid ""
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
 "pause button can also be created at layer \"1\"."
 msgstr ""
+"Ein Beispiel dazu ist ein Parallax-Hintergrund. So kann dieser in einem "
+"CanvasLayer auf Ebene \"-1\" dargestellt werden. Die Ansicht mit "
+"Punktestand, Lebensanzeige und der Schaltfläche zum Pausieren dagegen werden "
+"auf Ebene \"1\" angelegt."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:62
 msgid "Here's a diagram of how it looks:"
-msgstr ""
+msgstr "Zur Veranschaulichung, hier ein Diagramm:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:66
 msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
 "layer number, so they can be instantiated when needed."
 msgstr ""
+"CanvasLayers funktionieren unabhängig von der Anordnung der Baumhierarchie, "
+"sie hängen einzig von der Ebenennummer ab, die für die Instanzierung "
+"benötigt wird."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:70
 msgid "Performance"
@@ -134,3 +180,10 @@ msgid ""
 "have a property for controlling their drawing order (see :ref:`Node2D."
 "z_index <class_Node2D_property_z_index>`)."
 msgstr ""
+"Obwohl es keine ernsten Performanceeinbußen geben sollte, ist es nicht "
+"ratsam, mit einem exzessiven Gebrauch von Ebenen die Reihenfolge der Nodes "
+"zu kontrollieren. Der optimalste Weg bleibt weiterhin das gewissenhafte "
+"Anordnen innerhalb der vorhandenen Node-/Baumstruktur. 2D-Nodes verfügen "
+"außerdem über eine Eigenschaft, mit der individuell ihre Reihenfolge in der "
+"Darstellung auf der Leinwand bestimmt werden kann (siehe :ref:`Node2D."
+"z_index <class_Node2D_property_z_index>`)."

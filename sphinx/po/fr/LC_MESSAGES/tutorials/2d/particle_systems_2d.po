@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,6 +155,12 @@ msgid ""
 "the system process a given number of seconds before it is actually drawn the "
 "first time."
 msgstr ""
+"Les systèmes de particules commencent avec zéro particule émise, puis "
+"commencent à émettre. Cela peut être un inconvénient lors du chargement "
+"d'une scène et des systèmes comme une torche, une brume, etc. commencent à "
+"émettre dès que vous entrez. Le prétraitement est utilisé pour permettre au "
+"système de traiter un nombre donné de secondes avant qu'il ne soit "
+"réellement dessiné la première fois."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:85
 msgid "Speed Scale"
@@ -244,7 +250,7 @@ msgstr "Paramètres de dessin"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:132
 msgid "Visibility Rect"
-msgstr "Rectangle de visualisation"
+msgstr "Rectangle de visibilité"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:135
 msgid ""
@@ -252,6 +258,9 @@ msgid ""
 "If this rectangle is outside of the viewport, the engine will not render the "
 "particles on screen."
 msgstr ""
+"Le rectangle de visibilité contrôle la visibilité des particules à l'écran. "
+"Si ce rectangle est à l'extérieur de la fenêtre, le moteur ne rendra pas les "
+"particules à l'écran."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:137
 msgid ""
@@ -271,6 +280,12 @@ msgid ""
 "Particles2D node emitting particles for a few seconds and set the rectangle "
 "to fit the surface the particles take."
 msgstr ""
+"Vous pouvez demander à Godot de générer un rectangle de visibilité "
+"automatiquement à l’aide de la barre d’outils au-dessus de la vue 2d. Pour "
+"ce faire, sélectionnez le nœud Particles2D et cliquez sur ``Particles > "
+"Generate Visibility Rect``. Godot va simuler le nœud Particles2D émettant "
+"des particules pendant quelques secondes et réglera le rectangle pour "
+"s’adapter à la surface que prennent les particules."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:143
 msgid ""
@@ -279,6 +294,10 @@ msgid ""
 "move around, you can temporarily change the ``preprocess`` duration on the "
 "Particles2D node."
 msgstr ""
+"Vous pouvez contrôler la durée d'émission avec l'option ``Generation Time "
+"(sec)``. La valeur maximale est de 25 secondes. Si vous avez besoin de plus "
+"de temps pour que vos particules se déplacent, vous pouvez changer "
+"temporairement la durée du ``preprocessus'' sur le noeud Particules2D."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:146
 msgid "Local Coords"
@@ -320,7 +339,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:167
 msgid "ParticlesMaterial settings"
-msgstr ""
+msgstr "Paramètres de ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:169
 msgid "Particles2D > Process Material > Material > drop-down menu > Edit:"
@@ -428,7 +447,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:254
 msgid "Damping"
-msgstr ""
+msgstr "Amortissement"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:256
 msgid ""
@@ -436,6 +455,10 @@ msgid ""
 "especially useful for sparks or explosions, which usually begin with a high "
 "linear velocity and then stop as they fade."
 msgstr ""
+"L'amortissement applique un frottement aux particules, les forçant à "
+"s'arrêter. Il est particulièrement utile pour les étincelles ou les "
+"explosions, qui commencent généralement avec une vitesse linéaire élevée et "
+"s'arrêtent ensuite lorsqu'elles s'estompent."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:263
 msgid "Angle"

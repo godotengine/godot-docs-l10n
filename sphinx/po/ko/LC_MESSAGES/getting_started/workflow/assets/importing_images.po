@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "이미지 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
 msgid "Why import them?"
-msgstr ""
+msgstr "왜 이미지를 가져오나요?"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
 msgid ""
@@ -31,16 +31,21 @@ msgid ""
 "imported. The reason behind this is the large amount of configuration "
 "parameters that image files can be imported with."
 msgstr ""
+"Godot 3+에서, 이미지 파일은 더 이상 고유 리소스가 아니고 반드시 가져와야 합니"
+"다. 그 이유는 이것이 가져올 수 있는 이미지 파일의 많은 양의 구성 매개변수 때"
+"문입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:13
 msgid ""
 "This small tutorial will explain what these parameters are and how to best "
 "make use of them."
 msgstr ""
+"이 간단한 튜토리얼에서는 매개변수가 무엇이며 어떻게 사용하는 것이 최선인지를 "
+"설명하겠습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:17
 msgid "Importing textures"
-msgstr ""
+msgstr "텍스쳐 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:19
 msgid ""
@@ -48,10 +53,13 @@ msgid ""
 "stored in video memory and can't be accessed directly. This is what makes "
 "drawing them efficient."
 msgstr ""
+"Godot에서 기본 값 행동은 이미지를 텍스쳐로 가져오는 것입니다. 텍스쳐는 비디"
+"오 메모리에 저장되며 직접 액세스 할 수 없습니다. 이것이 효율적으로 그리는 것"
+"입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:23
 msgid "Import options are vast:"
-msgstr ""
+msgstr "가져오기 설정은 거대합니다:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:28
 msgid "Compression"
@@ -63,10 +71,13 @@ msgid ""
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
+"이미지는 게임의 거대한 에셋들 중 하나 입니다. 이를 효율적으로 다루기 위해, 압"
+"축이 필요합니다. Godot는 여러 압축 방식을 제공하며, 사용 사례에 따라 다릅니"
+"다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
 msgid "Compress Mode"
-msgstr ""
+msgstr "압축 모드"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:36
 msgid ""
@@ -74,6 +85,9 @@ msgid ""
 "File on disk is reduced and video memory usage is also reduced considerably. "
 "For 3D, it may present unwanted artifacts, though."
 msgstr ""
+"VRAM 압축: 이것은 3D 에셋을 위한 가장 일반적인 압축 모드입니다. 디스크의 파일"
+"은 줄어들고 비디오 메모리 사용량도 상당히 줄어듭니다. 3D의 경우, 원치 않은 결"
+"과물이 나올 수 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
 msgid ""
@@ -82,6 +96,9 @@ msgid ""
 "decent. It will use considerably more amount of video memory than VRAM, "
 "though."
 msgstr ""
+"무손실 압축: 이것은 2D 에셋을 위한 가장 일반적인 압축입니다. 어떤 인위적 처리"
+"없이 에셋을 보여주고, 디스크 압축은 괜찮습니다. VRAM보다 상당히 많은 양의 비"
+"디오 메모리를 사용할 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:40
 msgid ""
@@ -89,34 +106,39 @@ msgid ""
 "can be a great choice. It has some artifacting, but less than VRAM and the "
 "file size is almost a tenth of Lossless."
 msgstr ""
+"손실 압축: 많은 양의 2D 에셋을 가진 게임에게, 손실 압축은 좋은 선택일 수 있습"
+"니다. 인위적 처리를 갖지만, VRAM보다 더 약하면서 파일 크기는 거의 무손실의 10"
+"분의 1이 됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
 msgid ""
 "Uncompressed: Only useful for formats that can't be compressed (like, raw "
 "float)."
-msgstr ""
+msgstr "압축하지 않음: (raw float와 같이) 압축할 수 없는 형식에만 유용합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages ( |good| = Best, |bad| =Worst ):"
 msgstr ""
+"이 표에서, 4개의 설정 각각은 이점과 손실을 설명합니다 ( |good| = 좋음, |bad| "
+"= 나쁨):"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid "Uncompressed"
-msgstr ""
+msgstr "압축하지 않음"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid "Compress Lossless (PNG)"
-msgstr ""
+msgstr "무손실 압축 (PNG)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid "Compress Lossy (WebP)"
-msgstr ""
+msgstr "손실 압축 (WebP)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid "Compress VRAM"
-msgstr ""
+msgstr "VRAM 압축"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Description"
@@ -124,86 +146,86 @@ msgstr "설명"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Stored as raw pixels"
-msgstr ""
+msgstr "순수 화소로 저장됨"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Stored as PNG"
-msgstr ""
+msgstr "PNG로 저장됨"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Stored as WebP"
-msgstr ""
+msgstr "WebP로 저장됨"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Stored as S3TC/BC,PVRTC/ETC, depending on platform"
-msgstr ""
+msgstr "플랫폼에 따라, S3TC/BC,PVRTC/ETC로 저장됨"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 msgid "Size on Disk"
-msgstr ""
+msgstr "디스크에 저장됨"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "|bad| Large"
-msgstr ""
+msgstr "|bad| 거대함"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 msgid "|regular| Small"
-msgstr ""
+msgstr "|regular| 작음"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 msgid "|good| Very Small"
-msgstr ""
+msgstr "|good| 매우 작음"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Memory Usage"
-msgstr ""
+msgstr "메모리 사용량"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "|good| Small"
-msgstr ""
+msgstr "|good| 작음"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 msgid "Performance"
-msgstr ""
+msgstr "성능"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|regular| Normal"
-msgstr ""
+msgstr "|regular| 보통"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|good| Fast"
-msgstr ""
+msgstr "|good| 빠름"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "Quality Loss"
-msgstr ""
+msgstr "품질 손실"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|good| None"
-msgstr ""
+msgstr "|good| 없음"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|regular| Slight"
-msgstr ""
+msgstr "|regular| 약간 있음"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|bad| Moderate"
-msgstr ""
+msgstr "|bad| 보통"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "Load Time"
-msgstr ""
+msgstr "불러오기 시간"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|bad| Slow"
-msgstr ""
+msgstr "|bad| 느림"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:70
 msgid "HDR Mode"
-msgstr ""
+msgstr "HDR 모드"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:72
 msgid ""
@@ -213,16 +235,22 @@ msgid ""
 "2.x. Modern PCs support the BC6H VRAM format, but there are still plenty "
 "that do not."
 msgstr ""
+"Godot는 높은 동적 범위 텍스쳐 (.HDR 또는 .EXR)를 지원합니다. 대개 높은 동적 "
+"범위 equirectangular 파노라마 하늘에 유용하며 Godot 2.x의 큐브맵을 대신하기"
+"도 합니다 (검색해보면 쉽게 찾을 수 있습니다). 최신 PC는 BC6H VRAM 형식을 지원"
+"하지만, 지원하지 않는 형식도 많이 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:75
 msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
 "textures, enable the \"Force RGBE\" option."
 msgstr ""
+"Godot가 텍스쳐의 종류와의 완전한 호환성을 보장하고 싶다면, \"Force RGBE\" 설"
+"정을 활성화하세요."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:78
 msgid "Normal Map"
-msgstr ""
+msgstr "노말맵"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
 msgid ""
@@ -234,20 +262,28 @@ msgid ""
 "which means that if the texture is ever used as a normal map, it will be "
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
+"텍스쳐를 노말맵으로 사용할 때, 빨강과 초록 채널만 필요합니다. 주어진 표준 텍"
+"스쳐 압축 알고리즘은 인위 구조를 만드는데 노말맵에서는 좋게 보이지는 않습니"
+"다, RGTC 압축 형식이 이 데이터에 가장 적합합니다. 이 설정을 \"Enabled\"로 하"
+"면 Godot는 이미지를 RGTC 압축 형식으로 가져올 것입니다. 기본적으로, \"Detect"
+"\"로 설정하는데, 텍스쳐가 노말맵으로 사용된다면 자동으로 \"Enabled\"로 바뀌"
+"며 다시 가져온다는 것을 뜻합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "Flags"
-msgstr ""
+msgstr "플래그"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
 msgstr ""
+"사용 사례에 따라, 이미지를 텍스쳐로 가져올 때 쓸 수 있는 많은 설정이 있습니"
+"다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid "Repeat"
-msgstr ""
+msgstr "Repeat(반복)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:93
 msgid ""
@@ -255,14 +291,16 @@ msgid ""
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
 "\"loop\"."
 msgstr ""
+"이 설정은 3D에 가장 일반적으로 사용하며, 그렇기에 기본적으로 2D에서는 꺼져있"
+"습니다. 0,0 - 1,1 범위를 넘는 UV 좌표를 \"loop\"로 설정합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "Repeating can optionally be set to mirrored mode."
-msgstr ""
+msgstr "반복은 선택에 따라 거울 모드로 설정할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:98
 msgid "Filter"
-msgstr ""
+msgstr "Filter(필터)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:100
 msgid ""
@@ -271,10 +309,13 @@ msgid ""
 "setting can be commonly used in 2D and 3D, but it's usually disabled when "
 "making pixel perfect games."
 msgstr ""
+"픽셀이 화면 화소보다 커지게 되면, 이 설정은 선형 보간을 활성화합니다. 그 결과"
+"는 더 부드러운 (덜 각진) 텍스쳐가 됩니다. 이 설정은 보통은 2D와 3D에 사용될 "
+"수 있지만, 픽셀 퍼펙트 게임을 만들 때는 보통 비활성화합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "Mipmaps"
-msgstr ""
+msgstr "Mipmaps(밉맵)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:105
 msgid ""
@@ -283,40 +324,49 @@ msgid ""
 "older hardware (GLES2, mainly mobile), there are some requirements to use "
 "mipmaps:"
 msgstr ""
+"픽셀이 화면보다 더 작아질 때, 밉맵이 등장합니다. 텍스쳐가 줄어들 때, 거친 효"
+"과를 줄여줍니다. 명심하세요, 오래된 하드웨어 (GLES2, 주로 모바일)에서, 밉맵"
+"을 사용하려면 몇 가지 요구 사항이 있습니다:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:108
 msgid "Texture width and height must be powers of 2"
-msgstr ""
+msgstr "텍스쳐 가로와 세로는 반드시 2의 제곱이어야 합니다"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:109
 msgid "Repeat must be enabled"
-msgstr ""
+msgstr "Repeat가 활성화되어 있어야 합니다"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:111
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
+"스마트폰 게임과 애플리케이션을 만들 때, 완전한 호환성과 밉맵이 필요하다면 위"
+"의 내용을 명심하세요."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:113
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
+"3D 작업에서, 밉맵은 켜져 있어야 성능이 향상됩니다 (더 작은 버전의 텍스쳐는 멀"
+"리 있는 객체에 사용됩니다)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:116
 msgid "Anisotropic"
-msgstr ""
+msgstr "Anisotropic(비등방성)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:118
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
 msgstr ""
+"텍스쳐가 (바닥과 같이) 화면과 거의 평행할 때, 이 설정은 흐려지는 것을 줄여서 "
+"더 세세하게 표현하도록 만듭니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:121
 msgid "SRGB"
-msgstr ""
+msgstr "SRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:123
 msgid ""
@@ -325,19 +375,23 @@ msgid ""
 "look correct. When set to \"Detect\" mode, the texture will be marked as "
 "SRGB when used in albedo channels."
 msgstr ""
+"Godot는 3D를 렌더링 할 때 선형 colorspace를 사용합니다. 반사율(albedo)이나 세"
+"부 채널에 맵핑된 텍스쳐는 색상이 올바르게 보이기 위해 이 설정을 켜져 있어야 "
+"합니다. \"Detect\" 모드로 설정할 때, 텍스쳐는 반사율 채널을 사용할 때 SRGB로 "
+"표시될 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:127
 msgid "Process"
-msgstr ""
+msgstr "Process(가공)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:129
 msgid ""
 "Some special processes can be applied to images when imported as textures."
-msgstr ""
+msgstr "이미지를 텍스쳐로 가져올 때, 일부 특수 가공을 적용할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:132
 msgid "Fix Alpha Border"
-msgstr ""
+msgstr "Fix Alpha Border(알파 테두리 수정)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:134
 msgid ""
@@ -345,16 +399,19 @@ msgid ""
 "transparency to non transparency. It helps mitigate the outline effect when "
 "exporting images from Photoshop and the like."
 msgstr ""
+"이렇게 하면 같은 주변 색상의 픽셀을 넣어서 테두리를 투명에서 불투명으로 만듭"
+"니다. 포토샵 등에서 이미지를 가져올 때 테두리 효과를 완화하는데 도움을 줍니"
+"다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:139
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
-msgstr ""
+msgstr "특정한 값이 필요하지 않다면, 기본 값으로 두는 것이 좋습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:142
 msgid "Premultiplied Alpha"
-msgstr ""
+msgstr "Premultiplied Alpha(미리 곱하기 알파)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:144
 msgid ""
@@ -363,10 +420,13 @@ msgid ""
 "mind that a material will need to be created that uses the PREMULT ALPHA "
 "blend mode on canvas items that need it."
 msgstr ""
+"어두워진 테두리를 고치는 법으로 Premultiplied Alpha를 사용하는 것입니다. 이 "
+"설정을 키면, 텍스쳐는 이 형식으로 변환될 것입니다. 이 텍스쳐가 필요한 캔버스 "
+"항목에 PREMULT ALPHA 블렌드 모드를 사용하는 머티리얼을 만들어야 합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:148
 msgid "HDR as sRGB"
-msgstr ""
+msgstr "HDR as sRGB(sRGB로서의 HDR)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid ""
@@ -374,10 +434,12 @@ msgid ""
 "use them, but, in the worst-case scenario, toggling this option on will make "
 "them look right."
 msgstr ""
+"몇 몇 HDR 파일은 손상되고 sRGB 색상 데이터를 갖고 있습니다. 사용하지 않는 것"
+"이 좋지만, 최악의 경우에서, 이 설정을 켜면 좋게 보이게 만듭니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:153
 msgid "Invert Color"
-msgstr ""
+msgstr "Invert Color(색상 반전)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:155
 msgid ""
@@ -385,10 +447,13 @@ msgid ""
 "map generated by external programs to depth map to use with :ref:"
 "`doc_spatial_material`."
 msgstr ""
+"이미지의 색상을 거꾸로합니다. 예를 들어, 외부 프로그램으로 생성된 높이 맵을 :"
+"ref:`doc_spatial_material`\\ 에 사용하기 위해 깊이 맵으로 변환할 때 유용하게 "
+"쓸 수 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 msgid "Detect 3D"
-msgstr ""
+msgstr "Detect 3D(3D 감지)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:160
 msgid ""
@@ -398,3 +463,7 @@ msgid ""
 "enabled and compression is changed to VRAM). Texture is also reimported "
 "automatically."
 msgstr ""
+"이 설정은 Godot가 (기본 값에 따라 2D로 가져온) 텍스쳐를 3D에 사용한다는 것을 "
+"인식하도록 만듭니다. 이 경우, 설정이 변경되고 텍스쳐 플래그는 3D에 맞게 변합"
+"니다 (mipmaps, filter 그리고 repeat가 활성화되고 compression은 VRAM으로 변합"
+"니다). 텍스쳐도 자동으로 다시 가져옵니다."

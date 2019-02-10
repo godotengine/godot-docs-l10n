@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,15 +26,14 @@ msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
 msgstr "Теперь, когда вы \"набили руку\", давайте поговорим о дизайне Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
-#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
 "they offer a range of features, but the design of each engine is unique. "
 "This leads to different workflows and different ways to form your games’ "
 "structures. This all stems from their respective design philosophies."
 msgstr ""
-"**Каждый игровой движок отличается и соответствует различным потребностям.** "
-"Мало того, что они предлагают ряд функций, дизайн каждого движка уникален. "
+"**Каждый игровой движок отличается и соответствует различным потребностям."
+"**Они не только предлагают ряд функций,но и дизайн каждого движка уникален. "
 "Это приводит к разным рабочим процессам и различным способам формирования "
 "структур ваших игр. Все это вытекает из их соответствующих концепций дизайна."
 
@@ -93,17 +92,16 @@ msgid "On top of that, you can **inherit** from any scene."
 msgstr "Более того, вы можете **наследовать** от любой сцены."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
-#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
 "of a level… anything you’d like. It works like a class in pure code, except "
 "you’re free to design it by using the editor, using only the code, or mixing "
 "and matching the two."
 msgstr ""
-"Сценой в Godot может являться Оружие, Персонаж, Элемент, Дверь, Уровень, "
-"часть уровня....всё, что пожелаете. Это работает как классы в коде, за "
+"Сценой в Godot может являться Оружие, Персонаж, Предмет, Дверь, Уровень, "
+"часть уровня... всё, что пожелаете. Это работает как классы в коде, за "
 "исключением лишь того, что вы сами создаёте всё сами, используя Редактор, "
-"только код или и то, и другое одновременно."
+"либо только код, либо то и другое одновременно."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
 #, fuzzy
@@ -197,14 +195,13 @@ msgstr ""
 "редактор."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
-#, fuzzy
 msgid ""
 "GDscript lets you write simple code using Python-like syntax, yet it detects "
 "types and offers a static language's quality of auto-completion. It is also "
 "optimized for gameplay code with built-in types like Vectors and Colors."
 msgstr ""
 "GDscript позволяет писать простой код, используя Python-подобный синтаксис, "
-"он обнаруживает типы и предлагает качественное  автоматическое завершение "
+"он обнаруживает типы и предлагает качественное автоматическое завершение "
 "статического языка. Он также оптимизирован для игрового кода со встроенными "
 "типами, такими как векторы и цвета."
 
@@ -265,7 +262,6 @@ msgid "Open source"
 msgstr "Открытый исходный код"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
-#, fuzzy
 msgid ""
 "Godot offers a fully open source codebase under the **MIT license**. This "
 "means all the technologies that ship with it have to be Free (as in freedom) "
@@ -274,7 +270,7 @@ msgid ""
 msgstr ""
 "Godot предлагает полностью открытую кодовую базу под лицензией **MIT.** Это "
 "означает, что все технологии, которые поставляются с ней, должны быть "
-"бесплатными. По большей части, они кодируются авторами с нуля."
+"бесплатными. По большей части, они разрабатываются авторами с нуля."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
 msgid ""

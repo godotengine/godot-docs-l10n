@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/viewports/viewports.rst:9
-#, fuzzy
 msgid ""
 "Think of a :ref:`Viewport <class_Viewport>` as a screen onto which the game "
 "is projected. In order to see the game, we need to have a surface on which "
@@ -34,11 +33,10 @@ msgid ""
 msgstr ""
 "Piensa en las :ref:`Viewports <class_Viewport>` como una pantalla en la que "
 "se proyecta el juego. Para ver el juego necesitamos tener una superficie "
-"sobre la que dibujarlo, esta superficie es la Root :ref:`Viewport "
-"<class_Viewport>`(Ventana Raíz)."
+"sobre la que dibujarlo, esta superficie es el Root :ref:`Viewport "
+"<class_Viewport>`(nodo raíz)."
 
 #: ../../docs/tutorials/viewports/viewports.rst:16
-#, fuzzy
 msgid ""
 ":ref:`Viewports <class_Viewport>` can also be added to the scene so that "
 "there are multiple surfaces to draw on. When we are drawing to a :ref:"
@@ -54,14 +52,13 @@ msgstr ""
 "para que haya múltiples superficies sobre las que dibujar. Cuando estamos "
 "dibujando a un :ref:`Viewport <class_Viewport>` que no es el Root lo "
 "llamamos un render target(objetivo de renderizado). Podemos acceder al "
-"contenido de un render target accediendo a su correspondiente :ref:`textura "
+"contenido de un render target accediendo a su correspondiente :ref:`Texture "
 "<class_ViewportTexture>`. Usando un :ref:`Viewport <class_Viewport>` como "
 "objetivo de render podemos renderizar múltiples escenas simultáneamente o "
-"podemos renderizar a una :ref:`textura <class_ViewportTexture>` que se "
+"podemos renderizar a una :ref:`Texture <class_ViewportTexture>` que se "
 "aplica a un objeto de la escena, por ejemplo un skybox dinámico."
 
 #: ../../docs/tutorials/viewports/viewports.rst:25
-#, fuzzy
 msgid ""
 ":ref:`Viewports <class_Viewport>` have a variety of use cases, including:"
 msgstr ""
@@ -89,14 +86,13 @@ msgid "Rendering multiple cameras in the same scene"
 msgstr "Renderizado de varias cámaras en la misma escena"
 
 #: ../../docs/tutorials/viewports/viewports.rst:33
-#, fuzzy
 msgid ""
 "What all these use cases have in common is that you are given the ability to "
 "draw objects to a texture as if it were another screen and can then choose "
 "what to do with the resulting texture."
 msgstr ""
-"Lo que todos estos casos de uso tienen en común es que se te da la capacidad "
-"de dibujar objetos a una textura como si fuera otra pantalla y luego puedes "
+"Lo que todos estos casos de uso tienen en común es que se da la capacidad de "
+"dibujar objetos a una textura como si fuera otra pantalla y luego puedes "
 "elegir qué hacer con la textura resultante."
 
 #: ../../docs/tutorials/viewports/viewports.rst:38
@@ -104,7 +100,6 @@ msgid "Input"
 msgstr "Entrada"
 
 #: ../../docs/tutorials/viewports/viewports.rst:40
-#, fuzzy
 msgid ""
 ":ref:`Viewports <class_Viewport>` are also responsible for delivering "
 "properly adjusted and scaled input events to all their children nodes. "
@@ -116,13 +111,12 @@ msgstr ""
 "Los :ref:`Viewports <class_Viewport>` son también responsables de entregar "
 "eventos de entrada correctamente ajustados y escalados a todos sus nodos "
 "hijos. Típicamente la entrada es recibida por el :ref:`Viewport "
-"<class_Viewport>` más cercano en el árbol, pero puede establecer :ref:"
+"<class_Viewport>` más cercano en el árbol, pero puedes establecer :ref:"
 "`Viewports <class_Viewport>` para que no reciba entradas al marcar 'Disable "
-"Input' en `on', esto permitirá que el siguiente :ref:`Viewport "
+"Input' en `activado`, esto permitirá que el siguiente :ref:`Viewport "
 "<class_Viewport>` más cercano en el árbol capture la entrada."
 
 #: ../../docs/tutorials/viewports/viewports.rst:48
-#, fuzzy
 msgid ""
 "For more information on how Godot handles input, please read the :ref:`Input "
 "Event Tutorial<doc_inputevent>`."
@@ -179,7 +173,6 @@ msgid "Scale & stretching"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:86
-#, fuzzy
 msgid ""
 ":ref:`Viewports <class_Viewport>` have a \"size\" property, which represents "
 "the size of the :ref:`Viewport <class_Viewport>` in pixels. For :ref:"
@@ -187,11 +180,11 @@ msgid ""
 "<class_viewportcontainer>`, these values are overridden, but for all others, "
 "this sets their resolution."
 msgstr ""
-"El :ref:`Viewport <class_Viewport>` abarcará completamente el área de su "
-"padre :ref:`ViewportContainer <class_viewportcontainer>` si stretch está "
-"ajustado a true en :ref:`ViewportContainer <class_viewportcontainer>`. Nota: "
-"El tamaño del :ref:`ViewportContainer <class_viewportcontainer>` no puede "
-"ser menor que el tamaño del :ref:`Viewport <class_Viewport>`."
+"El :ref:`Viewport <class_Viewport>` tiene una propiedad \"size\", la que "
+"representa el tamaño del  :ref:`Viewport <class_Viewport>` en pixeles. "
+"Para  :ref:`Viewport <class_Viewport>`  que son hijos de un ref:"
+"`ViewportContainer <class_viewportcontainer>`, esos valores son "
+"sobreescritos pero esto define su resolución."
 
 #: ../../docs/tutorials/viewports/viewports.rst:90
 msgid ""

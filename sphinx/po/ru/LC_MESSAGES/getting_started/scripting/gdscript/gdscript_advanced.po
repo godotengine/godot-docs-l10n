@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,10 +137,17 @@ msgid ""
 "most of the game in GDScript and add small bits of C++ in the areas that "
 "need a performance boost."
 msgstr ""
+"Это означает, что Godot+GDScript - это комбинация, разработанная для "
+"быстрого и эффективного создания игр. Для игр, требующих большой "
+"вычислительной мощности и не использующих встроенные инструменты движка "
+"(такие как Vector type, Physics Engine, Math library и т.д.), также "
+"предусмотрена возможность использования языка Си++. Это позволяет вам "
+"создавать большую часть игры в GDScript и добавлять небольшие кусочки C++ в "
+"области, которые нуждаются в повышении производительности."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
-msgstr ""
+msgstr "Переменные и присваивание"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:54
 msgid ""
@@ -148,30 +155,35 @@ msgid ""
 "means that their type is not fixed, and is only modified through assignment. "
 "Example:"
 msgstr ""
+"Все переменные в динамически типизированном языке являются \"вариантными\" "
+"типами. Это означает, что их тип не является фиксированным, а модифицируется "
+"только через присваивание. Пример:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:58
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:80
 msgid "Static:"
-msgstr ""
+msgstr "Статическая типизация:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:66
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:94
 msgid "Dynamic:"
-msgstr ""
+msgstr "Динамическая типизация:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:75
 msgid "As function arguments:"
-msgstr ""
+msgstr "В качестве аргументов функции:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:77
 msgid ""
 "Functions are of dynamic nature too, which means they can be called with "
 "different arguments, for example:"
 msgstr ""
+"Функции носят динамичный характер, что означает, что их можно вызывать, "
+"например, с помощью различных аргументов:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:107
 msgid "Pointers & referencing:"
-msgstr ""
+msgstr "Указатели и ссылки:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:109
 msgid ""
@@ -180,6 +192,10 @@ msgid ""
 "variable. The latter allows the object to be modified by other functions by "
 "passing a reference to the original one."
 msgstr ""
+"В статически типизированных языках, таких как C или C++ (а также в некоторых "
+"расширениях Java и C#), различают переменные и указатели/ссылки на "
+"переменные. Последние позволяют модифицировать исходный объект по ссылке, "
+"передаваемой в другие функции."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:114
 msgid ""
@@ -188,18 +204,23 @@ msgid ""
 "automatically, which means they are erased when no longer used. Dynamically "
 "typed languages tend to use this memory model, too. Some Examples:"
 msgstr ""
+"В C# или Java все типы, кроме встроенных (int, float, частично String), "
+"всегда являются указателями или ссылками. Ссылки автоматически удаляются "
+"сборщиком мусора, когда они становятся больше ненужными. Динамически "
+"типизированные языки также стремятся использовать эту модель. Несколько "
+"примеров:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:120
 msgid "C++:"
-msgstr ""
+msgstr "C++:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:136
 msgid "Java:"
-msgstr ""
+msgstr "Java:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:154
 msgid "GDScript:"
-msgstr ""
+msgstr "GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:166
 msgid ""
@@ -210,10 +231,17 @@ msgid ""
 "not used, but manual memory management is allowed too if inheriting manually "
 "from :ref:`class_Object`."
 msgstr ""
+"В GDScript только базовые типы (int, float, string и vector) передаются в "
+"аргументы в виде значений (данные копируются). Во всех других случаях "
+"(экземпляры объектов, массивы, словари и т.д.) передаются лишь ссылки. "
+"Объекты классов, которые наследуются от :ref:`class_Reference` "
+"(устанавливается по-умолчанию) будут автоматически удалены сборщиком мусора "
+"при отсутствии ссылок. Ручное управление памятью также возможно, если класс "
+"будет наследоваться от :ref:`class_Object`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:174
 msgid "Arrays"
-msgstr ""
+msgstr "Массивы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:176
 msgid ""
@@ -221,24 +249,30 @@ msgid ""
 "datatypes inside and are always dynamic (can be resized at any time). "
 "Compare for example arrays in statically typed languages:"
 msgstr ""
+"Массивы в динамически типизированных языках могут содержать элементы разных "
+"типов данных; массивы всегда являются динамическими (т. е. их размер может "
+"быть изменён в любой момент). Сравните с примерами массивов в статически "
+"типизированных языках:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:203
 msgid "And in GDScript:"
-msgstr ""
+msgstr "И в GDScript:\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:212
 msgid ""
 "In dynamically typed languages, arrays can also double as other datatypes, "
 "such as lists:"
 msgstr ""
+"В динамически типизированных языках массивы могут быть заменены другими "
+"типами, такими как списки:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:222
 msgid "Or unordered sets:"
-msgstr ""
+msgstr "Или неупорядоченные множества:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:231
 msgid "Dictionaries"
-msgstr ""
+msgstr "Словари (Dictionaries)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
 msgid ""
@@ -248,6 +282,11 @@ msgid ""
 "This datatype is generally not present in such languages (or only in limited "
 "form)."
 msgstr ""
+"Словари являются мощным инструментом в динамически типизированных языках. "
+"Большинство программистов из статически типизированных языков (таких как C++ "
+"или C#) игнорируют существование словарей и усложняют этим себе жизнь. Этот "
+"тип данных обычно отсутствует в таких языках (или присутствует лишь в "
+"ограниченной форме)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:239
 msgid ""
@@ -257,22 +296,32 @@ msgid ""
 "are, in fact, so efficient that some languages will go as far as "
 "implementing arrays as dictionaries."
 msgstr ""
+"Словари могут сопоставлять любое значение с любым другим значением, "
+"полностью игнорируя тип данных, используемый в качестве ключа или значения. "
+"Вопреки распространенному мнению, они эффективны, потому что могут быть "
+"реализованы с помощью хэш-таблиц. Они, фактически, настолько эффективны, что "
+"в некоторых языках массивы реализуют как словари."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:245
 msgid "Example of Dictionary:"
-msgstr ""
+msgstr "Пример словаря:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:252
 msgid ""
 "Dictionaries are also dynamic, keys can be added or removed at any point at "
 "little cost:"
 msgstr ""
+"Словари также являются динамическими, ключи могут добавляться или удаляться "
+"в любой момент при небольших затратах:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:261
 msgid ""
 "In most cases, two-dimensional arrays can often be implemented more easily "
 "with dictionaries. Here's a simple battleship game example:"
 msgstr ""
+"В большинстве случаев двумерные массивы могут быть реализованы с помощью "
+"словарей.\n"
+"Вот пример игры \"морской бой\":"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
 msgid ""
@@ -284,7 +333,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:318
 msgid "For & while"
-msgstr ""
+msgstr "Циклы for и while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:320
 msgid "Iterating in some statically typed languages can be quite complex:"
@@ -330,7 +379,7 @@ msgstr "Пока"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
-msgstr ""
+msgstr "Циклы while() везде одинаковые:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:421
 msgid "Custom iterators"

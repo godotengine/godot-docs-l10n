@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:2
 msgid "Materials"
-msgstr ""
+msgstr "머티리얼(Materials)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:5
 msgid "Using existing Godot materials"
-msgstr ""
+msgstr "존재하는 Godot 머티리얼 사용하기"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:6
 msgid ""
@@ -33,6 +33,10 @@ msgid ""
 "means that you cannot see your model with the material applied inside "
 "Blender."
 msgstr ""
+"내보내기가 머티리얼을 다룰 수 있는 하나의 방법으로 블렌더 머티리얼과 존재하"
+"는 Godot 머티리얼을 맞춰보는 것입니다. Godot의 모든 머티리얼 시스템을 사용할 "
+"수 있는 이점이 있지만, 블렌더 내부에 적용된 머티리얼로 모델을 볼 수 없다는 것"
+"이기도 합니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:11
 msgid ""
@@ -43,16 +47,24 @@ msgid ""
 "is not a ``SpatialMaterial`` or ``ShaderMaterial`` or if it cannot be found, "
 "then the exporter will fall back to exporting the material from Blender."
 msgstr ""
+"하기 위해, 내보내기는 블렌더에서 머티리얼 이름과 일치하는 이름의 Godot 머티리"
+"얼을 찾아야 합니다. 즉, 블렌더에서 ``PurpleDots``\\ 이라는 이름의 머티리얼 이"
+"름을 가진 객체를 내보낸다면, 내보내기는 ``PurpleDots.tres`` 파일을 찾을 것이"
+"고 그것을 객체에 지정할 것입니다. 이 파일이 ``SpatialMaterial``\\ 이나 "
+"``ShaderMaterial``\\ 이 아니거나, 찾을 수 없다면, 내보내기는 블렌더에서 머티"
+"리얼을 다시 내보내기 위해 돌아올 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:19
 msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
 msgstr ""
+"내보내기가 ``.tres`` 파일을 찾는 위치는 \"Material Search Paths\" 설정에서 결"
+"정합니다:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
 msgid "This can take the value of:"
-msgstr ""
+msgstr "다음 값을 사용할 수 있습니다:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:25
 msgid ""
@@ -61,6 +73,9 @@ msgid ""
 "will throw an error. This is useful for most projects where naming conflicts "
 "are unlikely."
 msgstr ""
+"Project Directory - ``project.Godot``\\ 을 찾고 재귀적으로 하위 디렉토리로 검"
+"색합니다. ``project.Godot``\\ 을 찾을 수 없다면 오류를 발생합니다. 이름 충돌"
+"이 거의 없는 대부분의 프로젝트에서 유용합니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:29
 msgid ""
@@ -68,14 +83,18 @@ msgid ""
 "location. This is useful for projects where you may have duplicate material "
 "names and need more control over what material gets assigned."
 msgstr ""
+"Export Directory - 내보내기 위치의 하위 디렉토리에서 머티리얼을 봅니다. 머티"
+"리얼 이름을 복사해서 어떤 머티리얼이 지정되었는지 좀 더 제어가 필요한 프로젝"
+"트에서 유용합니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:32
 msgid "None - Do not search for materials. Export them from the Blender file."
 msgstr ""
+"None - 머티리얼을 찾지 않습니다. 머티리얼을 블렌더 파일에서 내보냅니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:36
 msgid "Export of Blender materials"
-msgstr ""
+msgstr "블렌더 머티리얼의 내보내기"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:38
 msgid ""
@@ -83,12 +102,16 @@ msgid ""
 "Blender. Currently only the diffuse color and a few flags (e.g. unshaded) "
 "are exported."
 msgstr ""
+"머티리얼을 다루는 다른 방법은 블렌더에서 내보내기로 내보내는 것입니다. 현재로"
+"는 오직 디퓨즈 색상과 일부 플래그만 내보내집니다 (예: 쉐이더 없음)."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid ""
 "Export of Blender materials is currently very primitive. However, it is the "
 "focus of a current GSoC project"
 msgstr ""
+"블렌더 머티리얼의 내보내기는 현재는 매우 원시적입니다. 하지만 현재 GSoC 프로"
+"젝트의 초점입니다"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:47
 msgid ""
@@ -96,3 +119,6 @@ msgid ""
 "When Blender 2.8 is released, this will be removed and this part of the "
 "exporter will change."
 msgstr ""
+"머티리얼은 현재 \"Blender Render(블렌더 렌더)\" 설정을 사용하는 동안 내보낼 "
+"수 있습니다. 블렌더 2.8이 출시될 때, 이것은 제거되고 내보내기의 이 부분이 바"
+"뀔 것입니다."

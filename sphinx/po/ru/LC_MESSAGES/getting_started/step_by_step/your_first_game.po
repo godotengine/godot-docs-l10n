@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,13 +87,12 @@ msgstr ""
 "настройки проекта и использования редактора."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
-#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
-"В данной игре будет использоваться портретный режим, поэтому нам нужно "
+"В данной игре будет использоваться портретный вид, поэтому нам нужно "
 "настроить размер игрового окна. Нажмите \"Проект\" -> \"Настройки проекта\" -"
 "> \"Дисплей\" -> \"Окно\" и установите значения полей \"Ширина\" - 480 и "
 "\"Высота\" - 720."
@@ -103,7 +102,6 @@ msgid "Organizing the project"
 msgstr "Организация Проекта"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
-#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -113,12 +111,11 @@ msgid ""
 "can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
 "В этом проекте мы создадим 3 независимые сцены: ``Player``, ``Mob`` и "
-"``HUD``, которые мы будем комбинировать со сценой игры ``Main``. В более "
-"крупном проекте было бы полезно сделать папки для хранения различных сцен и "
-"их скриптов, но для этой относительно небольшой игры вы можете сохранять "
-"свои сцены и скрипты в корневой папке, называемой ``res://``. Вы можете "
-"видеть папки проекта в доке FileSystem (Файловая Система) в верхнем левом "
-"углу:"
+"``HUD``, которые мы будем комбинировать со сценой ``Main``. В более крупном "
+"проекте было бы полезно сделать папки для хранения различных сцен и их "
+"скриптов, но для этой, относительно небольшой игры, вы можете сохранять свои "
+"сцены и скрипты в корневой папке, называемой ``res://``. Вы можете видеть "
+"папки проекта в доке FileSystem (Файловая Система) в верхнем левом углу:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
@@ -315,7 +312,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:158
 msgid "Start by declaring the member variables this object will need:"
-msgstr "Чтобы начать объявлять переменные объекта понадобится:"
+msgstr ""
+"Начните с объявления переменных - членов, которые понадобятся этому объекту:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:179
 #, fuzzy
@@ -329,9 +327,10 @@ msgid ""
 msgstr ""
 "Использование ключевого слова ``export`` у первой переменной ``speed`` "
 "позволяет устанавливать ее значение в Инспекторе. Это может быть полезно, "
-"если вы хотите изменять значения точно так же как и встроенные в узел "
-"свойства. Щелкните на узел ``Player`` и установите значение скорости равным "
-"``400``."
+"если вы хотите изменять значения точно так же как и встроенные свойства "
+"узла. Щелкните на узел ``Player`` и вы увидите, что свойство теперь вилось в "
+"разделе \"Script Variables\" в Инспекторе. Помните, что если изменить "
+"значение здесь, то оно перезапишет значение, установленное в скрипте."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:186
 msgid ""
@@ -355,7 +354,6 @@ msgstr ""
 "является хорошим моментом для определения размера игрового окна:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:210
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
@@ -364,8 +362,8 @@ msgid ""
 msgstr ""
 "Теперь мы можем использовать функцию ``_process()`` для определения того, "
 "что игрок будет делать. ``_process()`` вызывается каждый кадр, поэтому мы "
-"будем использовать ее для обновления состояния объектов нашей игры. Сделаем "
-"следующее:"
+"будем использовать ее для обновления состояния тех элементов нашей игры, "
+"которые будут часто изменяться. Для игрока, сделаем следующее:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:215
 msgid "Check for input."
@@ -380,7 +378,6 @@ msgid "Play the appropriate animation."
 msgstr "Воспроизведение соответствующей анимации."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:219
-#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -389,12 +386,13 @@ msgid ""
 "we will use the default events that are assigned to the arrow keys on the "
 "keyboard."
 msgstr ""
-"Во-первых, нам нужно проверить ввод - игрок нажимает клавишу? Для этой игры "
-"у нас есть 4 направления для проверки ввода. Вводные действия определяются в "
-"настройках проекта в разделе \"Карта ввода\". Вы можете определить "
-"пользовательские события и назначить для них разные клавиши, события мыши "
-"или другие варианты ввода. Для данной демонстрации мы будем использовать "
-"события по умолчанию, назначенные клавишам со стрелками на клавиатуре."
+"Во-первых, нам нужно обрабатывать ввод с клавиатуры (нажимает ли игрок "
+"клавишу?). В этой игре у нас есть 4 направления движения, соответственно "
+"кнопок управляющих движением тоже будет 4. Назначить действия на "
+"определённые клавиши можно в настройках проекта в разделе \"Список действий"
+"\". Для данной демонстрации назначать клавиши не понадобится, потому что мы "
+"будем использовать действия назначенные по-умолчанию (стрелками на "
+"клавиатуре)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:226
 msgid ""
@@ -406,7 +404,6 @@ msgstr ""
 "или ``false``, если нет."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:288
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -415,12 +412,13 @@ msgid ""
 "``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
-"Мы проверяем каждый ввод и добавляем/вычитаем значение из ``velocity``, "
-"чтобы получить общее направление. Например, если вы одновременно удерживаете "
-"``right`` и ``down``, полученный вектор ``velocity`` будет ``(1, 1) ``. В "
-"этом случае, поскольку мы добавляем горизонтальное и вертикальное движение, "
-"игрок будет двигаться *быстрее*, чем если бы он просто перемещался по "
-"горизонтали."
+"Начнём с того, что установим значение ``velocity`` в``(0, 0)`` - по "
+"умолчанию игрок двигаться не должен. Затем, мы проверяем каждый ввод и "
+"добавляем/вычитаем значение из ``velocity``, чтобы получить общее "
+"направление. Например, если вы одновременно удерживаете ``right`` и "
+"``down``, полученный вектор ``velocity`` будет ``(1, 1) ``. В этом случае, "
+"поскольку мы добавляем горизонтальное и вертикальное движение, игрок будет "
+"двигаться *быстрее*, чем если бы он перемещался  только по горизонтали."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:295
 msgid ""
@@ -452,15 +450,15 @@ msgstr ""
 "остановить анимацию AnimatedSprite."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:306
-#, fuzzy
 msgid ""
 "In GDScript, ``$`` returns the node at the relative path from the current "
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
-"``$`` возвращает узел по относительному пути от текущего узла или возвращает "
-"``null``, если узел не найден. Поскольку AnimatedSprite является дочерним "
-"элементом текущего узла, мы можем использовать ``$AnimatedSprite``."
+"В GDScript, ``$`` возвращает узел по относительному пути от текущего узла "
+"или возвращает ``null``, если узел не найден. Поскольку AnimatedSprite "
+"является дочерним элементом текущего узла, мы можем использовать ``"
+"$AnimatedSprite``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid ""
@@ -1279,15 +1277,14 @@ msgstr ""
 "``2`` и измените ``One Shot`` установить на  \"On\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
-#, fuzzy
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
 "show the \"Start\" button."
 msgstr ""
-"Эта функция вызывается, когда игрок проигрывает. Она будет показывать \"Game "
-"Over\" на 2 секунды, затем вернуться к экрану названия и появится кнопка "
-"\"Start\"."
+"Эта функция вызывается, когда игрок проигрывает. Она будет показывать "
+"надпись \"Game Over\" на 2 секунды, затем будет происходить возврат к "
+"основному экрану и появится кнопка \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1025
 msgid ""
@@ -1303,9 +1300,10 @@ msgstr ""
 "прежде чем показать кнопку \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
-#, fuzzy
 msgid "This function is called by ``Main`` whenever the score changes."
-msgstr "Эта функция вызывается в ``Main`` всякий раз, когда изменяется оценка."
+msgstr ""
+"Эта функция вызывается из ``Main`` каждый раз, когда изменяется количество "
+"очков."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1045
 msgid ""
@@ -1409,13 +1407,12 @@ msgstr ""
 "``ColorRect``, так чтобы он покрывал экран."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
-#, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."
 msgstr ""
-"Вы также можете добавить фоновое изображение, если у вас оно есть, с помощью "
-"``Sprite``узла."
+"Вы можете добавить фоновое изображение (если у вас оно есть), с помощью узла "
+"``Sprite``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid "Sound effects"
@@ -1499,18 +1496,12 @@ msgid "Project files"
 msgstr "Файлы проекта"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
-#, fuzzy
 msgid "You can find a completed version of this project at these locations:"
-msgstr ""
-"Вы можете найти полную версию этого проекта здесь: https://github.com/"
-"kidscancode/Godot3_dodge/releases"
+msgstr "Вы можете загрузить завершённую версию этого проекта по этим ссылкам:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
-#, fuzzy
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
-"Вы можете найти полную версию этого проекта здесь: https://github.com/"
-"kidscancode/Godot3_dodge/releases"
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1189
 msgid "https://github.com/godotengine/godot-demo-projects"

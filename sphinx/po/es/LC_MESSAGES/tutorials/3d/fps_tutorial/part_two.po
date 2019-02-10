@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,9 +22,8 @@ msgid "Part 2"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:7
-#, fuzzy
 msgid "Part overview"
-msgstr "Resumen de la Parte"
+msgstr "Resumen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:9
 msgid "In this part we will be giving our player weapons to play with."
@@ -87,13 +86,12 @@ msgstr ""
 "(Explanación más extensa abajo)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:159
-#, fuzzy
 msgid ""
 "``animation_speeds``: A dictionary for holding all the speeds at which we "
 "want to play our animations."
 msgstr ""
-"``animation_speeds``: Un diccionario para contener todas las velocidades de "
-"nuestras animaciones."
+"``animation_speeds``: Un diccionario para contener todas las velocidades a "
+"las que ejecutaremos nuestras animaciones."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:160
 msgid ""
@@ -757,9 +755,8 @@ msgid "Here's the script that will control our bullet:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:493
-#, fuzzy
 msgid "Let's go through the script:"
-msgstr "Vamos a repasar cada una de las variables de clase:"
+msgstr "Analicemos el script:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:497
 msgid "First we define a few class variables:"
@@ -1361,9 +1358,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:935
-#, fuzzy
 msgid "Let's go over what these new variables will do:"
-msgstr "Repasemos lo que hace este script:"
+msgstr "Veamos lo que harán las nuevas variables:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:937
 msgid ""
@@ -1493,11 +1489,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1060
-#, fuzzy
 msgid "Let's go over the additions, starting with how we're changing weapons."
-msgstr ""
-"Vamos a repasar cómo funciona este script, empezando por las clases de "
-"variables."
+msgstr "Repasemos lo agregado, comenzando sobre cómo cambiamos las armas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1062
 msgid ""
@@ -1655,9 +1648,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1171
-#, fuzzy
 msgid "Let's go over what this function does:"
-msgstr "Repasemos lo que hace este script:"
+msgstr "Veamos lo que hace esta función:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1173
 msgid ""
@@ -1754,13 +1746,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1235
-#, fuzzy
 msgid ""
 "Now we need to attach this script to all of the :ref:`RigidBody "
 "<class_RigidBody>` nodes we want to affect."
 msgstr ""
-"Añadir la habilidad de agarrar y lanzar nodos :ref:`RigidBody "
-"<class_RigidBody>`"
+"Ahora necesitamos anexar este script a todos los :ref:`RigidBody "
+"<class_RigidBody>` que queremos afectar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1237
 msgid ""

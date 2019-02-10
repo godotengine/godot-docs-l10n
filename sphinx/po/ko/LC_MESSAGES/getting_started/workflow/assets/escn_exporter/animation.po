@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,23 +19,23 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:2
 msgid "Animation"
-msgstr "애니메이션"
+msgstr "애니메이션(Animation)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
 msgid "Animation supported:"
-msgstr "애니메이션 지원:"
+msgstr "애니메이션 지원됨:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
-msgstr ""
+msgstr "모든 타입 객체의 변형 애니메이션"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
 msgid "transform animation of pose bones"
-msgstr ""
+msgstr "포즈 본의 변형 애니메이션"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
 msgid "shape key animation"
-msgstr "모양 키 애니메이션"
+msgstr "셰이프 키 애니메이션"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
 msgid "light animation"
@@ -47,7 +47,7 @@ msgstr "카메라 애니메이션"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
-msgstr ""
+msgstr "한 객체에 대한 여러 동작"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
 msgid ""
@@ -55,50 +55,55 @@ msgid ""
 "This add-on has support for exporting multiple actions all at once into a "
 "single AnimationPlayer and makes it easy to switch actions."
 msgstr ""
+"대부분의 게임은, 하나의 객체가 여러 애니메이션을 가져 번갈아가며 씁니다. 이 "
+"애드온은 여러 동작 모두를 하나의 AnimationPlayer로 내보내서 쉽게 동작을 바꿀 "
+"수 있도록 합니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
 msgid ""
 "This workflow makes use of blender nla_tracks. Here is a brief guide on how "
 "to use this feature:"
 msgstr ""
+"이 워크플로우는 블렌더 nla_tracks를 사용합니다. 다음은 이 기능을 사용하는 간"
+"단한 가이드입니다:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
 msgid "**1. Switch workspace to 'Dope Sheet'**"
-msgstr ""
+msgstr "**1. 작업 공간을 'Dope Sheet(도프시트)'로 바꾸기**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:23
 msgid "**2. Stash the active action**"
-msgstr ""
+msgstr "**2. 활성화 동작 숨기기(Stash)**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:25
 msgid "The stashed action, while not active, will still be exported."
-msgstr ""
+msgstr "숨겨진 동작은 활성화되지 않지만, 내보내집니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:29
 msgid "**3. Check stashed actions in 'NLA Editor' [optional]**"
-msgstr ""
+msgstr "**3. 'NLA Editor(NLA 에디터)'에서 숨겨진 동작 확인하기 [선택]**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:31
 msgid "Switch workspace to 'NLA Editor'."
-msgstr ""
+msgstr "작업 공간을 'NLA Editor'로 바꿉니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid "Make sure all stashed actions are muted."
-msgstr ""
+msgstr "모든 숨겨진 동작이 음소거인지 확인하세요."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
 msgid "**4. Export the scene**"
-msgstr ""
+msgstr "**4. 씬 내보내기**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 msgid ""
 "All the stashed actions, as well as the active action, are exported to an "
 "AnimationPlayer."
-msgstr ""
+msgstr "모든 숨겨진 동작, 활성화 동작을 AnimationPlayer로 내보냅니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:48
 msgid "Constraints"
-msgstr "제약(Constraints)"
+msgstr "제한(Constraints)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:49
 msgid ""
@@ -107,6 +112,10 @@ msgid ""
 "object has some constraint; if it does, all the constraints are baked into "
 "every action the object has and then exported."
 msgstr ""
+"때로 복잡한 애니메이션은 객체 제한으로 만들어집니다; 보통 예시로는 역운동학"
+"(inverse kinematics)이 있습니다. 애드온은 객체가 제한이 있는지 자동으로 확인"
+"할 것입니다; 있다면 모든 제약은 객체가 가지고 있고 내보내진 모든 동작으로 베"
+"이크합니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:56
 msgid "Animation Mode"
@@ -119,20 +128,26 @@ msgid ""
 "animated node. In order to fix this inconsistence and still make the "
 "animation play versatile, this add-on has three animation exporting modes."
 msgstr ""
+"Godot와 블렌더는 애니메이션 데이터를 저장하는 다른 구조를 갖고 있습니다. "
+"Godot에서 애니메이션은 각각의 움직이는 노드 대신 AnimationPlayer 노드에 저장"
+"됩니다.이 불일치를 고치고 그럼에도 애니메이션을 다용도로 재생하도록 하기 위"
+"해, 이 애드온은 세 개의 애니메이션 내보내기 모드를 갖고 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:64
 msgid "**Mode 'Animation as Actions'**"
-msgstr ""
+msgstr "**'Animation as Actions' 모드**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:66
 msgid ""
 "Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
 msgstr ""
+"모든 애니메이션을 객체의 동작으로 취급합니다, 따라서 내보낸 씬에서 모든 객체"
+"는 고유의 AnimationPlayer를 가지며 동작을 갖고 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Scene Animation'**"
-msgstr ""
+msgstr "**'Scene Animation' 모드**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid ""
@@ -140,10 +155,13 @@ msgid ""
 "Blender's timeline, this is what you want. In this mode, all the animations "
 "in the scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
+"블렌더의 타임라인에서 재생한 것과 같은 결과를 만들고 싶다면, 이것을 써야 합니"
+"다. 이 모드에서, 씬의 모든 애니메이션은 씬 루트의 한 AnimationPlayer에 배치됩"
+"니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Animation as Action with Squash'**"
-msgstr ""
+msgstr "**'Animation as Action with Squash' 모드**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid ""
@@ -153,3 +171,7 @@ msgid ""
 "and each Skeleton and Mesh has actions; then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
+"이 모드는  'Animation as Action' 모드와 비슷한 작업을 하지만, 더 적은 "
+"AnimationPlayers를 만듭니다; 객체는 부모 자식 관계에서 AnimationPlayer를 공유"
+"합니다. 여러 리깅을 해야할 때나, 각 Skeleton과 Mesh가 동작을 가질 때 유용합니"
+"다; 하나의 리깅은 하나의 AnimationPlayer만 있으면 됩니다."

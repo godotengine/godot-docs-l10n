@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
 msgid "Importing translations"
-msgstr ""
+msgstr "번역 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:7
 msgid "Games and internationalization"
-msgstr ""
+msgstr "게임과 현지화"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
 msgid ""
@@ -31,6 +31,9 @@ msgid ""
 "profits™, nowadays games are released in several languages. To solve this, "
 "internationalized text must be supported in any modern game engine."
 msgstr ""
+"세상은 다른 시장과 문화로 가득하며, 이익™을 극대화하기 위해 오늘날의 게임은 "
+"여러 언어로 출시됩니다. 이를 해결하기 위해, 모든 최신 게임 엔진은 현지화된 문"
+"자를 반드시 지원해야 합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:14
 msgid ""
@@ -39,6 +42,10 @@ msgid ""
 "use several orders of magnitude more text than applications, so they must "
 "support efficient methods for dealing with loads of multilingual text."
 msgstr ""
+"표준 데스크톱이나 모바일 애플리케이션에서, 현지화된 문자는 보통 리소스 파일"
+"에 위치합니다 (혹은 GNU 물건을 위한 .po 파일). 하지만, 게임은 응용 프로그램보"
+"다 몇 배나 더 많은 문자를 사용할 수 있습니다, 따라서 다국어 문자를 불러오는"
+"데 효율적인 방법을 지원해야 합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
 msgid ""
@@ -49,6 +56,12 @@ msgid ""
 "if a game is released first in English, later in other languages, but a "
 "complete nightmare if working with many languages at the same time."
 msgstr ""
+"다국어 언어 게임과 응용 프로그램을 만들기 위한 두 가지 접근법이 있습니다. 두 "
+"가지 모두 키:값 시스템을 기반으로 이루어집니다. 첫 번째는 하나의 언어를 키로 "
+"사용하는 것이고 (보통은 영어), 두 번째는 특정 식별자를 사용하는 것입니다. 첫 "
+"번째 접근은 게임을 영어로 먼저 출시하고, 이후 다른 언어로 출시한다면 더 쉬울 "
+"수도 있습니다, 하지만 동시에 다른 언어를 작업한다면, 이는 완벽한 악몽이 될 것"
+"입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:28
 msgid ""
@@ -57,14 +70,18 @@ msgid ""
 "other languages. The unique ID can be a number, a string, or a string with a "
 "number (it's just a unique string anyway)."
 msgstr ""
+"일반적으로, 게임은 두 번째 접근법을 사용하고 고유 ID는 각 문자열에 사용됩니"
+"다. 이를 통해 다른 언어로 번역되는 동안 문자를 개정할 수 있습니다. 고유 ID는 "
+"숫자, 문자열, 혹은 숫자가 있는 문자열이 될 수 있습니다 (아무튼 고유한 문자열"
+"이라는 것입니다)."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
 msgid "Translators also usually prefer to work with spreadsheets."
-msgstr ""
+msgstr "번역가는 보통 스프레드시트로 작업하는 것을 선호합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:36
 msgid "Translation format"
-msgstr ""
+msgstr "번역 형식"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 msgid ""
@@ -75,36 +92,41 @@ msgid ""
 "arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
 "as follows:"
 msgstr ""
+"작품을 완성하고 번역에 효율적인 지원을 하기 위해, Godot는 CSV 파일을 읽을 수 "
+"있는 특수 가져오기를 갖고 있습니다. 모든 스프레드시트 에디터는 (Libreoffice, "
+"Microsoft Office, Google Docs 등이 있죠) 이 형식으로 내보낼 수 있습니다, 따라"
+"서 필요한 것은 파일이 특별한 배열로 되어야 하는 것입니다. CSV 파일은 UTP-8 인"
+"코딩으로 저장되어야 하며 다음과 같은 형식이어야 합니다:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
 msgid "<lang1>"
-msgstr ""
+msgstr "<lang1>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
 msgid "<lang2>"
-msgstr ""
+msgstr "<lang2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
 msgid "<langN>"
-msgstr ""
+msgstr "<langN>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid "KEY1"
-msgstr ""
+msgstr "KEY1"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 msgid "string"
-msgstr ""
+msgstr "문자열"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 msgid "KEY2"
-msgstr ""
+msgstr "KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 msgid "KEYN"
-msgstr ""
+msgstr "KEYN"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
 msgid ""
@@ -113,80 +135,86 @@ msgid ""
 "be unique and represent a string universally (they are usually in uppercase, "
 "to differentiate from other strings). Here's an example:"
 msgstr ""
+"\"lang\" 태그는 언어를 표현해야 하는데, 엔진이 지원하는 :ref:`valid locales "
+"<doc_locales>` 중 하나로 표현해야 합니다. \"KEY\" 태그는 고유해야 하고 보편적"
+"으로 문자열을 표현해야 합니다 (보통은 대문자로, 다른 문자열과 구분됩니다). 예"
+"제입니다:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "id"
-msgstr ""
+msgstr "id"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "en"
-msgstr ""
+msgstr "en"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "es"
-msgstr ""
+msgstr "es"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "ja"
-msgstr ""
+msgstr "ja"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "GREET"
-msgstr ""
+msgstr "GREET(인사)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "Hello, friend!"
-msgstr ""
+msgstr "Hello, friend!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "Hola, Amigo!"
-msgstr ""
+msgstr "Hola, Amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "こんにちは"
-msgstr ""
+msgstr "こんにちは"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "ASK"
-msgstr ""
+msgstr "ASK(질문)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "How are you?"
-msgstr ""
+msgstr "How are you?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "Cómo está?"
-msgstr ""
+msgstr "Cómo está?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "元気ですか"
-msgstr ""
+msgstr "元気ですか"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "BYE"
-msgstr ""
+msgstr "BYE(헤어짐)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "Good Bye"
-msgstr ""
+msgstr "Good Bye"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "Adiós"
-msgstr ""
+msgstr "Adiós"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "さようなら"
-msgstr ""
+msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
 msgid "CSV importer"
-msgstr ""
+msgstr "CSV 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
+"Godot은 CSV 파일을 기본적으로 번역을 취급합니다. 파일을 가져오고 옆에 하나 이"
+"상의 압축된 번역 리소스 파일을 생성합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 msgid ""
@@ -194,3 +222,6 @@ msgid ""
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
+"가져오기는 또한 게임을 실행할 때 불러올 번역 목록에 번역을 추가할 것입니다, "
+"project.godot (혹은 프로젝트 설정)에서 지정됩니다. Godot는 런타임에 번역을 불"
+"러오거나 삭제할 수 있도록 합니다."

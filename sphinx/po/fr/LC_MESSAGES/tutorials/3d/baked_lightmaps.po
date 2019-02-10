@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:4
 msgid "Baked lightmaps"
-msgstr ""
+msgstr "Baked lightmaps"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:7
 msgid "Introduction"
@@ -32,6 +32,11 @@ msgid ""
 "lightmaps work fine on low-end PCs and mobile devices, as they consume "
 "almost no resources at run-time."
 msgstr ""
+"Les Baked lightmaps sont un flux de travail alternatif pour ajouter un "
+"éclairage indirect (ou préparé) à une scène. Contrairement à l'approche :ref:"
+"`doc_gi_probes`, les Baked lightmaps fonctionnent très bien sur les PC et "
+"les appareils mobiles bas de gamme, car elles ne consomment pratiquement pas "
+"de ressources en temps réel."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:14
 msgid ""
@@ -40,6 +45,11 @@ msgid ""
 "reflections, so using :ref:`doc_reflection_probes` together with it on "
 "interiors (or using a Sky on exteriors) is a requirement to get good quality."
 msgstr ""
+"Contrairement aux \"GIProbe\", les Baked lightmaps sont complètement "
+"statiques. Une fois préparées, elles ne peuvent pas être modifiées du tout. "
+"Elles ne fournissent pas non plus de reflets à la scène, donc l'utilisation "
+"de :ref:`doc_reflection_probes` avec elle à l'intérieur (ou l'utilisation "
+"d'un Sky à l'extérieur) est une condition pour obtenir une bonne qualité."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:19
 msgid ""
@@ -47,6 +57,10 @@ msgid ""
 "bleeding, and indirect light can look better if using Raytrace mode on high "
 "quality setting (but baking can take a while)."
 msgstr ""
+"Comme elles sont préparées, elles ont moins de problèmes que ``GIProbe`` en "
+"ce qui concerne le saignement de la lumière, et la lumière indirecte peut "
+"sembler meilleure si on utilise le mode Raytrace sur un réglage de haute "
+"qualité (mais la préparation peut prendre un certain temps)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:23
 msgid ""
@@ -55,12 +69,18 @@ msgid ""
 "up. For mobile or low-end compatibility, though, Baked Lightmaps are your "
 "only choice."
 msgstr ""
+"En fin de compte, le choix de l'approche d'éclairage indirect qui convient "
+"le mieux dépend de votre cas d'utilisation. En général, GIProbe est plus "
+"esthétique et beaucoup plus facile à mettre ne place. Pour une compatibilité "
+"mobile ou bas de gamme, cependant, les cartes de lumières préparées sont "
+"votre seul choix."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:29
 msgid "Visual comparison"
 msgstr "Comparaison visuelle"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:31
+#, fuzzy
 msgid ""
 "Here are some comparisons of how Baked Lightmaps vs. GIProbe look. Notice "
 "that lightmaps are more accurate, but also suffer from the fact that "
@@ -68,6 +88,11 @@ msgid ""
 "be that good. GIProbe looks less accurate (as it's an approximation), but "
 "smoother overall."
 msgstr ""
+"Voici quelques comparaisons entre Baked Lightmaps et GIProbe. Notez que les "
+"cartes lumineuses sont plus précises, mais souffrent aussi du fait que "
+"l'éclairage est sur une texture non enveloppée, donc les transitions et la "
+"résolution peuvent ne pas être aussi bonnes. GIProbe semble moins précis "
+"(car c'est une approximation), mais globalement plus lisse."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:40
 msgid "Setting up"

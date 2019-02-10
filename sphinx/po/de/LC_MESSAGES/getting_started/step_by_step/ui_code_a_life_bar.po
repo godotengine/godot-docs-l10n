@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,6 +77,14 @@ msgid ""
 "manageable, and allows different team members to work on different parts of "
 "the game."
 msgstr ""
+"Wenn du mit der Entwicklung beginnst, kümmerst Du Dich zunächst um die "
+"Kernaspekte des Spiels: die Grundmechaniken, Eingabesteuerung, Sieg- und "
+"Verlustbedingungen. Die UI kommt etwas später nach. Halte sämtliche Elemente "
+"des Projekts soweit es geht modular. Jeder Charakter sollte in einer eigenen "
+"Szene mit dazugehörigen Skripten untergebracht werden. Gleiches gilt für UI-"
+"Elemente. Dies beugt potenziellen Bugs vor und hält das Projekt überschaubar "
+"und erlaubt es Teammitgliedern, gemeinsam an unterschiedlichen Teilen des "
+"Spiels zu arbeiten."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:40
 msgid ""
@@ -88,7 +96,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:45
 msgid "To do this, we will use **signals**."
-msgstr ""
+msgstr "Dafür benutzt man **Signale**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
 msgid ""
@@ -101,10 +109,21 @@ msgid ""
 "information, check out the `signals video tutorial <https://youtu.be/"
 "l0BkQxF7X3E>`_ on GDquest."
 msgstr ""
+"Signale sind die Implementierung des Beobachter-Entwurfsmusters (Observer) "
+"in Godot. Sie erlauben das Absenden von Nachrichten, die von einem anderen "
+"Objekt empfangen werden kann. Dazu wird ein Node mit dem Objekt verbunden, "
+"welches das Signal **emittiert** und erhält so die Informationen des "
+"Signals. Ein mächtiges Werkzeug, vor allem bei der Umsetzung von "
+"Benutzeroberflächen und Errungenschaften. Da das Verbinden zweier Nodes "
+"gleichzeitig eine gewisse Abhängigkeit voneinander erzeugt, sollten sie "
+"allerdings stets mit Bedacht verwendet werden, bei zuvielen Verbindungen "
+"kann es schwierig werden, den Überblick zu behalten. Für mehr Informationen, "
+"schau Dir das `signals video tutorial <https://youtu.be/l0BkQxF7X3E>`_ von "
+"GDquest an."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:53
 msgid "Download and explore the start project"
-msgstr ""
+msgstr "Lade und sieh dir das Startprojekt an"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:55
 msgid ""
@@ -112,6 +131,10 @@ msgid ""
 "ui_code_life_bar.zip>`. It contains all the assets and scripts you need to "
 "get started. Extract the .zip archive to get two folders: `start` and `end`."
 msgstr ""
+"Lade Dir das Godot-Projekt herunter: :download:`ui_code_life_bar.zip <files/"
+"ui_code_life_bar.zip>`. Es enthält sämtliche Nutzerinhalte und Skripte, die "
+"Du benötigst, um loszulegen. Entpacke das Zip-Archiv, um die beiden Ordner "
+"zu erhalten: `start` und `end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
 msgid ""
@@ -122,6 +145,13 @@ msgid ""
 "game: the basic combat mechanics already work. But as the character isn't "
 "connected to the life bar, the ``GUI`` doesn't do anything."
 msgstr ""
+"Lade das ``start``-Projekt in Godot. Im ``Dateisystem``-Fenster, "
+"doppelklicke auf LevelMockup.tscn, um es zu öffnen. Es ist ein RPG-Mock-up "
+"in dem sich zwei Charaktere gegenüberstehen. Der rosafarbene Gegner greift "
+"das grüne Viereck an und fügt ihm regelmäßig Schaden zu, bis es stirbt. "
+"Probier das Spiel aus: eine grundlegende Kampfmechnik ist bereits enthalten. "
+"Allerdings funktioniert die ``GUI`` noch nicht, da der Spieler bisher nicht "
+"mit der Lebensanzeige verbunden ist."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:68
 msgid ""
@@ -132,10 +162,17 @@ msgid ""
 "prototype and test the gameplay, chances are it won't work well and you'll "
 "have to re-create it from scratch."
 msgstr ""
+"Das ist typisch für jedes Spiel: Als Erstes implementierst Du die Mechanik, "
+"die mit der GUI interagiert, in diesem Fall den Lebensverlust des Spielers, "
+"und erst dann fügst du die Benutzeroberfläche hinzu. Das liegt daran, dass "
+"die UI darauf reagiert, was im Spiel geschieht. Somit kann sie nicht korrekt "
+"funktionieren, solange der Spielablauf nicht integriert ist und muss unter "
+"Umständen von neuem erstellt werden."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:71
 msgid "The scene contains a background sprite, a GUI, and two characters."
 msgstr ""
+"Die Szene enthält einen Hintergrund-Sprite, eine GUI sowie zwei Charaktere."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
 msgid "The scene tree, with the GUI scene set to display its children"
@@ -155,7 +192,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
-msgstr ""
+msgstr "``bar`` ist die Lebensanzeige, ein ``TextureProgress``-Node"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
 msgid ""
@@ -168,6 +205,8 @@ msgid ""
 "The project uses a simple organisation that works for game jams and tiny "
 "games."
 msgstr ""
+"Das Projekt ist organisatorisch einfach gestaltet, geeignet für Game Jams "
+"und kleinere Spiele."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 msgid ""
@@ -178,6 +217,12 @@ msgid ""
 "In the `scripts/` folder you will find the enemy, the player, and the GUI "
 "controller scripts."
 msgstr ""
+"Auf der Wurzelebene des Projekts, im `res://`-Verzeichnis, findest Du "
+"`LevelMockup`. Das ist die Hauptszene des Spiels, mit der wir auch arbeiten "
+"werden. Sämtliche Komponenten, aus denen das Spiel besteht, befinden sich im "
+"`scenes/`-Ordner. Der `assets/`-Ordner enthält alle Sprites und die "
+"Schriftart (Font) für die HP-Anzeige. Unter `scripts/` findest du die "
+"Objekte für Spieler und Gegner sowie die Controller-Skripte der GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:117
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,23 +32,33 @@ msgid ""
 "thinking is along the lines of *\"Oh, it's just like rotating in 2D, except "
 "now rotations happen in X, Y and Z\"*."
 msgstr ""
+"Si vous n'avez jamais fait de jeux 3D auparavant, travailler avec des "
+"rotations en trois dimensions peut être déroutant au début. Venant de la 2D, "
+"la façon naturelle de penser est du genre *\"Oh, c'est comme tourner en 2D, "
+"sauf que maintenant les rotations se produisent en X, Y et Z \"*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:12
 msgid ""
 "At first this seems easy and for simple games, this way of thinking may even "
 "be enough. Unfortunately, it's often incorrect."
 msgstr ""
+"Au premier abord, cela semble facile et pour les jeux simples, cette façon "
+"de penser peut même suffire. Malheureusement, c'est souvent incorrect."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:14
 msgid ""
 "Angles in three dimensions are most commonly referred to as \"Euler Angles\"."
 msgstr ""
+"Les angles en trois dimensions sont le plus souvent appelés \"angles d'Euler"
+"\"."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:18
 msgid ""
 "Euler angles were introduced by mathematician Leonhard Euler in the early "
 "1700s."
 msgstr ""
+"Les angles d'Euler ont été introduits par le mathématicien Leonhard Euler au "
+"début des années 1700."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:22
 msgid ""
@@ -58,6 +68,12 @@ msgid ""
 "explain why, as well as outlining best practices for dealing with transforms "
 "when programming 3D games."
 msgstr ""
+"Cette façon de représenter les rotations 3D était révolutionnaire à "
+"l'époque, mais elle a plusieurs défauts lorsqu'elle est utilisée dans le "
+"développement de jeux (ce qui est à attendre d'un gars avec un chapeau "
+"amusant). L'idée de ce document est d'expliquer pourquoi, ainsi que de "
+"présenter les meilleures pratiques pour gérer les transformations lors de la "
+"programmation de jeux 3D."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:28
 msgid "Problems of Euler angles"
@@ -68,6 +84,8 @@ msgid ""
 "While it may seem intuitive that each axis has a rotation, the truth is that "
 "it's just not practical."
 msgstr ""
+"Bien qu'il puisse sembler intuitif que chaque axe ait une rotation, la "
+"vérité est que ce n'est tout simplement pas pratique."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:33
 msgid "Axis order"
@@ -81,6 +99,11 @@ msgid ""
 "only way an orientation can be produced from angles is to rotate the object "
 "angle by angle, in an *arbitrary order*."
 msgstr ""
+"La raison principale est qu'il n'y a pas de façon unique de construire une "
+"orientation à partir des angles. Il n'existe pas de fonction mathématique "
+"standard qui prend tous les angles ensemble et produit une rotation 3D. La "
+"seule façon de produire une orientation à partir des angles est de faire "
+"tourner l'objet angle par angle, dans un ordre *arbitraire*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:39
 msgid ""
@@ -91,6 +114,12 @@ msgid ""
 "are several ways to construct an orientation from 3 different angles, "
 "depending on *the order of the rotations*."
 msgstr ""
+"Ceci pourrait être fait en tournant d'abord dans *X*, puis dans *Y* et "
+"ensuite dans *Z*. Alternativement, vous pouvez d'abord tourner en *Y*, puis "
+"en *Z* et enfin en *X*. Tout fonctionne, mais selon l'ordre, l'orientation "
+"finale de l'objet ne sera *pas nécessairement la même*. En effet, cela "
+"signifie qu'il y a plusieurs façons de construire une orientation à partir "
+"de 3 angles différents, selon *l'ordre des rotations*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:43
 msgid ""
@@ -98,11 +127,16 @@ msgid ""
 "(from Wikipedia). As you can see, the orientation of each axis depends on "
 "the rotation of the previous one:"
 msgstr ""
+"Voici une visualisation des axes de rotation (dans l'ordre X,Y,Z) dans un "
+"cardan (de Wikipedia). Comme vous pouvez le voir, l'orientation de chaque "
+"axe dépend de la rotation du précédent :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:47
 msgid ""
 "You may be wondering how this affects you. Let's look at a practical example:"
 msgstr ""
+"Vous vous demandez peut-être comment cela vous affecte. Prenons un exemple "
+"pratique :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:49
 msgid ""
@@ -110,6 +144,10 @@ msgid ""
 "Moving the mouse left and right controls your view angle parallel to the "
 "ground, while moving it up and down moves the player's view up and down."
 msgstr ""
+"Imaginez que vous travaillez sur un contrôleur à la première personne (par "
+"exemple, un jeu FPS). Déplacer la souris vers la gauche et vers la droite "
+"contrôle votre angle de vue parallèle au sol, tout en le déplaçant vers le "
+"haut et vers le bas déplace la vue du joueur vers le haut et vers le bas."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:51
 msgid ""
@@ -117,12 +155,17 @@ msgid ""
 "in the *Y* axis (\"up\" in this case, since Godot uses a \"Y-Up\" "
 "orientation), followed by rotation in the *X* axis."
 msgstr ""
+"Dans ce cas, pour obtenir l'effet désiré, la rotation doit d'abord être "
+"appliquée sur l'axe *Y* (dans ce cas, Godot utilise une orientation \"Y-Up"
+"\"), puis sur l'axe *X*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:55
 msgid ""
 "If we were to apply rotation in the *X* axis first, and then in *Y*, the "
 "effect would be undesired:"
 msgstr ""
+"Si nous devions appliquer la rotation dans l'axe *X* d'abord, puis dans *Y*, "
+"l'effet serait undésirable :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:59
 msgid ""
@@ -130,6 +173,10 @@ msgid ""
 "axis rotations to be applied may differ. Therefore, applying rotations in X, "
 "Y, and Z is not enough: you also need a *rotation order*."
 msgstr ""
+"Selon le type de jeu ou d'effet désiré, l'ordre dans lequel vous voulez que "
+"les rotations des axes soient appliquées peut varier. Par conséquent, il ne "
+"suffit pas d'appliquer des rotations en X, Y et Z : il vous faut également "
+"un *ordre de rotation*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:62
 msgid "Interpolation"
@@ -142,18 +189,24 @@ msgid ""
 "rotations). One logical way to approach this is to interpolate the angles "
 "from one position to the next. One would expect it to look like this:"
 msgstr ""
+"Un autre problème avec l'utilisation des angles d'Euler est l'interpolation. "
+"Imaginez que vous voulez faire la transition entre deux caméras différentes "
+"ou entre deux positions ennemies (y compris les rotations). Une façon "
+"logique d'y parvenir est d'interpoler les angles d'une position à l'autre. "
+"On pourrait s'attendre à ce que ça ressemble à ça :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:68
 msgid "But this does not always have the expected effect when using angles:"
 msgstr ""
+"Mais cela n'a pas toujours l'effet escompté lorsque l'on utilise les angles :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:72
 msgid "The camera actually rotated the opposite direction!"
-msgstr ""
+msgstr "La caméra a en fait tourné dans la direction opposée !"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:74
 msgid "There are a few reasons this may happen:"
-msgstr ""
+msgstr "Il y a plusieurs raisons à cela :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:76
 msgid ""
@@ -162,6 +215,10 @@ msgid ""
 "degrees is not the same as going from ``270`` to ``360``, even though the "
 "angles are equivalent)."
 msgstr ""
+"Les rotations ne correspondent pas linéairement à l'orientation, donc les "
+"interpoler n'aboutit pas toujours au chemin le plus court (passer de "
+"``270``` à ``0` degrés n'est pas la même chose que passer de ``270`` à "
+"``360``, même si les angles sont équivalents)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:77
 msgid ""
@@ -169,6 +226,10 @@ msgid ""
 "freedom is lost). See `Wikipedia's page on Gimbal Lock <https://en.wikipedia."
 "org/wiki/Gimbal_lock>`_ for a detailed explanation of this problem."
 msgstr ""
+"Le blocage de cardan est en jeu (le premier et le dernier axe de rotation "
+"s'alignent, ce qui entraîne une perte de liberté). Voir la page `Wikipedia "
+"sur le blocage de cardan <https://fr.wikipedia.org/wiki/Blocage_de_cardan>`_ "
+"pour une explication détaillée de ce problème."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:80
 msgid "Say no to Euler angles"
@@ -182,10 +243,15 @@ msgid ""
 "rotations (generally just one axis, or even two in limited cases). As much "
 "as you may be tempted, don't use it."
 msgstr ""
+"Le résultat de tout ceci est que vous ne devriez pas utiliser la propriété "
+"``rotation`` des nœuds :ref:`class_Spatial' de Godot pour les jeux. C'est là "
+"pour être utilisé principalement dans l'éditeur, pour la cohérence avec le "
+"moteur 2D, et pour des rotations simples (généralement un seul axe, ou même "
+"deux dans des cas limités). Même si vous êtes tenté, ne l'utilisez pas."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:84
 msgid "Instead, there is a better way to solve your rotation problems."
-msgstr ""
+msgstr "Il existe une meilleure façon de résoudre vos problèmes de rotation."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:87
 msgid "Introducing transforms"
@@ -197,12 +263,18 @@ msgid ""
 "`class_Spatial` node contains a ``transform`` property which is relative to "
 "the parent's transform, if the parent is a Spatial-derived type."
 msgstr ""
+"Godot utilise le type de données :ref:`class_Transform` pour les "
+"orientations. Chaque nœud :ref:`class_Spatial' contient une propriété "
+"``transform`` qui est relative à la transformation du parent, si le parent "
+"est un type dérivé de spatial."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:91
 msgid ""
 "It is also possible to access the world coordinate transform via the "
 "``global_transform`` property."
 msgstr ""
+"Il est également possible d'accéder à la transformation des coordonnées du "
+"monde via la propriété ``global_transform``."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:93
 msgid ""
@@ -215,20 +287,32 @@ msgid ""
 "also be inferred from the length of the axes. A *basis* can also be "
 "interpreted as a 3x3 matrix and used as ``transform.basis[x][y]``."
 msgstr ""
+"Une transformation a un :ref:`class_Basis` (transform.basis sub-property), "
+"qui se compose de trois vecteurs :ref:`class_Vector3`. Ceux-ci sont "
+"accessibles via la propriété ``transform.basis`` et peuvent être accédés "
+"directement par ``transform.basis.x``, ``transform.basis.y``, et ``transform."
+"basis.z``. Chaque vecteur pointe dans la direction dans laquelle son axe a "
+"été tourné, de sorte qu'ils décrivent efficacement la rotation totale du "
+"nœud. L'échelle (tant qu'elle est uniforme) peut également être déduite de "
+"la longueur des axes. Une *base* peut aussi être interprétée comme une "
+"matrice 3x3 et utilisée comme ``transform.basis[x][y]``."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:95
 msgid "A default basis (unmodified) is akin to:"
-msgstr ""
+msgstr "Une base par défaut (non modifiée) s'apparente à :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:123
+#, fuzzy
 msgid "This is also an analog of a 3x3 identity matrix."
-msgstr ""
+msgstr "C’est aussi un analogue d’une matrice d’identité 3 x 3."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:125
 msgid ""
 "Following the OpenGL convention, ``X`` is the *Right* axis, ``Y`` is the "
 "*Up* axis and ``Z`` is the *Forward* axis."
 msgstr ""
+"Selon la convention OpenGL, ``X`` est l'axe *Droite*, ``Y`` est l'axe *Haut* "
+"et ``Z`` est l'axe *Avant*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:127
 msgid ""
@@ -237,12 +321,19 @@ msgid ""
 "transform is. Combining the *basis* with the *origin*, a *transform* "
 "efficiently represents a unique translation, rotation, and scale in space."
 msgstr ""
+"Ensemble avec la *base*, une transformation a aussi une *origine*. Il s'agit "
+"d'un *Vector3* spécifiant à quelle distance de l'origine réelle ``(0, 0, 0, "
+"0)``` cette transformation est. Combinant la *base* avec l'*origine*, une "
+"*transformation* représente efficacement une translation, une rotation et "
+"une mise à l'échelle dans l'espace."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:132
 msgid ""
 "One way to visualize a transform is to look at an object's 3D gizmo while in "
 "\"local space\" mode."
 msgstr ""
+"Une façon de visualiser une transformation est de regarder le gadget 3D d'un "
+"objet en mode \"local space\"."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:136
 msgid ""
@@ -250,12 +341,17 @@ msgid ""
 "blue respectively) of the basis, while the gizmo's center is at the object's "
 "origin."
 msgstr ""
+"Les flèches du gadget indiquent les axes ``X``, ``Y`` et ``Z`` (en rouge, "
+"vert et bleu respectivement) de la base, tandis que le centre du gadget est "
+"à l'origine de l'objet."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:140
 msgid ""
 "For more information on the mathematics of vectors and transforms, please "
 "read the :ref:`doc_vector_math` tutorials."
 msgstr ""
+"Pour plus d'informations sur les mathématiques des vecteurs et des "
+"transformations, veuillez lire les tutoriels :ref:`doc_vector_math`."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:143
 msgid "Manipulating transforms"
@@ -266,30 +362,38 @@ msgid ""
 "Of course, transforms are not as straightforward to manipulate as angles and "
 "have problems of their own."
 msgstr ""
+"Bien sûr, les transformations ne sont pas aussi simple à manipuler comme "
+"angles et ont leurs propres problèmes."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:147
 msgid ""
 "It is possible to rotate a transform, either by multiplying its basis by "
 "another (this is called accumulation), or by using the rotation methods."
 msgstr ""
+"Il est possible de faire tourner une transformation, soit en multipliant sa "
+"base par une autre (c'est ce qu'on appelle l'accumulation), soit en "
+"utilisant les méthodes de rotation."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:164
 msgid "A method in Spatial simplifies this:"
-msgstr ""
+msgstr "Une méthode dans Spatial simplifie cela :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:181
 msgid "This rotates the node relative to the parent node."
-msgstr ""
+msgstr "Ceci permet de faire pivoter le nœud par rapport au nœud parent."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:183
+#, fuzzy
 msgid ""
 "To rotate relative to object space (the node's own transform), use the "
 "following:"
 msgstr ""
+"Pour faire pivoter par rapport à l'espace objet (la propre transformation du "
+"nœud), utilisez ce qui suit :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:197
 msgid "Precision errors"
-msgstr ""
+msgstr "Erreurs de précision"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:199
 msgid ""
@@ -298,12 +402,18 @@ msgid ""
 "be exactly ``1.0``, and they may not be exactly ``90`` degrees from each "
 "other."
 msgstr ""
+"Effectuer des opérations successives sur les transformations entraînera une "
+"perte de précision due à une erreur à virgule flottante. Cela signifie que "
+"l'échelle de chaque axe peut ne plus être exactement \"1,0\" et qu'ils "
+"peuvent ne plus être exactement à \"90\" degrés les uns des autres."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:201
 msgid ""
 "If a transform is rotated every frame, it will eventually start deforming "
 "over time. This is unavoidable."
 msgstr ""
+"Si une transformation est tournée à chaque image, elle finira par se "
+"déformer avec le temps. C'est inévitable."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:203
 msgid ""
@@ -311,12 +421,18 @@ msgid ""
 "*orthonormalize* the transform after some time (maybe once per frame if you "
 "modify it every frame):"
 msgstr ""
+"Il y a deux façons différentes de gérer cela. La première est de "
+"*orthonormaliser* la transformation après un certain temps (peut-être une "
+"fois par image si vous la modifiez à chaque image) :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:214
 msgid ""
 "This will make all axes have ``1.0`` length again and be ``90`` degrees from "
 "each other. However, any scale applied to the transform will be lost."
 msgstr ""
+"Tous les axes auront à nouveau une longueur de 1,0 et seront à 90 degrés les "
+"uns des autres. Cependant, toute mise à l'échelle appliquée à la "
+"transformation sera perdue."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:216
 msgid ""
@@ -324,10 +440,14 @@ msgid ""
 "scale their children nodes instead (such as MeshInstance). If you absolutely "
 "must scale the node, then re-apply it at the end:"
 msgstr ""
+"Il est recommandé de ne pas mettre à l'échelle les nœuds qui vont être "
+"manipulés ; mettez plutôt à l'échelle leurs nœuds enfants (tels que "
+"MeshInstance). Si vous devez absolument mettre à l'échelle le nœud, "
+"réappliquez-la à la fin :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:230
 msgid "Obtaining information"
-msgstr ""
+msgstr "Obtenir l'information"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:232
 msgid ""
@@ -335,18 +455,28 @@ msgid ""
 "transform?\"**. The answer again is: you don't. You must do your best to "
 "stop thinking in angles."
 msgstr ""
+"Vous pensez peut-être qu'à ce stade : **\"D'accord, mais comment obtenir des "
+"angles à partir d'une transformation ?\"** Encore une fois, la réponse est : "
+"vous ne le faites pas. Vous devez faire de votre mieux pour arrêter de "
+"penser en angles."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:234
 msgid ""
 "Imagine you need to shoot a bullet in the direction your player is facing. "
 "Just use the forward axis (commonly ``Z`` or ``-Z``)."
 msgstr ""
+"Imaginez que vous avez besoin de tirer une balle dans la direction faisant "
+"face à votre joueur . Utilisez simplement l'axe avant (communément ``Z`` ou "
+"``-Z``)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:247
 msgid ""
 "Is the enemy looking at the player? Use the dot product for this (see the :"
 "ref:`doc_vector_math` tutorial for an explanation of the dot product):"
 msgstr ""
+"L'ennemi regarde-t-il le joueur ? Utilisez le produit scalaire pour cela "
+"(voir le tutoriel :ref:`doc_vector_math` pour une explication du produit "
+"scalaire) :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:266
 msgid "Strafe left:"
@@ -354,11 +484,13 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:283
 msgid "Jump:"
-msgstr ""
+msgstr "Sauter :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:303
 msgid "All common behaviors and logic can be done with just vectors."
 msgstr ""
+"Tous les comportements communs et logique peuvent être faits avec juste des "
+"vecteurs."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:306
 #, fuzzy
@@ -366,12 +498,18 @@ msgid "Setting information"
 msgstr "Créer l'animation"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:308
+#, fuzzy
 msgid ""
 "There are, of course, cases where you want to set information to a "
 "transform. Imagine a first person controller or orbiting camera. Those are "
 "definitely done using angles, because you *do want* the transforms to happen "
 "in a specific order."
 msgstr ""
+"Il y a, bien sûr, des cas où vous voulez régler l'information sur une "
+"transformation. Imaginez une vue à la première personne ou une caméra "
+"orbitale. Celles-ci sont certainement faites en utilisant des angles, parce "
+"que vous *voulez* que les transformations se produisent dans un ordre "
+"spécifique."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:310
 msgid ""
@@ -379,22 +517,30 @@ msgid ""
 "set them every frame. Don't try to retrieve and re-use them because the "
 "transform is not meant to be used this way."
 msgstr ""
+"Pour de tels cas, gardez les angles et les rotations *à l'extérieur* de la "
+"transformation et réglez-les à chaque image. N'essayez pas de les récupérer "
+"et de les réutiliser car la transformation n'est pas destinée à être "
+"utilisée de cette façon."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:312
 msgid "Example of looking around, FPS style:"
-msgstr ""
+msgstr "Exemple de regarder autour, dans le style FPS :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:355
 msgid ""
 "As you can see, in such cases it's even simpler to keep the rotation "
 "outside, then use the transform as the *final* orientation."
 msgstr ""
+"Comme vous pouvez le voir, dans de tels cas, il est encore plus simple de "
+"garder la rotation à l'extérieur, puis d'utiliser la transformation comme "
+"orientation *finale*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:358
 msgid "Interpolating with quaternions"
 msgstr "Interpoler avec des quaternions"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:360
+#, fuzzy
 msgid ""
 "Interpolating between two transforms can efficiently be done with "
 "quaternions. More information about how quaternions work can be found in "
@@ -403,10 +549,17 @@ msgid ""
 "interpolation. As in, if you have two rotations, a quaternion will smoothly "
 "allow interpolation between them using the closest axis."
 msgstr ""
+"L'interpolation entre deux transformations peut se faire efficacement avec "
+"des quaternions. Plus d'informations sur le fonctionnement des quaternions "
+"peuvent être trouvées à d'autres endroits sur Internet. Pour l'usage "
+"pratique, il suffit de comprendre que leur utilisation principale est de "
+"faire une interpolation de la trajectoire la plus proche possible. Si vous "
+"avez deux rotations, un quaternion permettra l'interpolation entre elles en "
+"utilisant l'axe le plus proche."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:362
 msgid "Converting a rotation to quaternion is straightforward."
-msgstr ""
+msgstr "Convertir une rotation en quaternion est très simple."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:385
 msgid ""
@@ -418,14 +571,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:387
+#, fuzzy
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
 msgstr ""
+"Les quaternions sont utiles pour les interpolations caméra/chemin/etc. car "
+"le résultat sera toujours correct et lisse."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:390
 msgid "Transforms are your friend"
-msgstr ""
+msgstr "Les transformations sont vos amies"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid ""
@@ -433,6 +589,9 @@ msgid ""
 "time. However, once you get used to them, you will appreciate their "
 "simplicity and power."
 msgstr ""
+"Pour la plupart des débutants, s'habituer à travailler avec des "
+"transformations peut prendre un certain temps. Cependant, une fois que vous "
+"vous y serez habitué, vous apprécierez leur simplicité et leur puissance."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:394
 msgid ""
@@ -440,3 +599,7 @@ msgid ""
 "communities <https://godotengine.org/community>`_ and, once you become "
 "confident enough, please help others!"
 msgstr ""
+"N'hésitez pas à demander de l'aide à ce sujet dans n'importe laquelle des \" "
+"communautés en ligne \" de Godot <https://godotengine.org/community>`_ et, "
+"une fois que vous aurez suffisamment confiance en vous, s'il vous plaît "
+"aider les autres !"

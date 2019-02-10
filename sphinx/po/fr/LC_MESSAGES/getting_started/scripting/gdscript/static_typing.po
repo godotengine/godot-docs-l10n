@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -318,6 +318,7 @@ msgid "Safe lines"
 msgstr "Lignes sécurisées"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
+#, fuzzy
 msgid ""
 "You can also use casting to ensure safe lines. Safe lines are a new tool in "
 "Godot 3.1 to tell you when ambiguous lines of code are type-safe. As you can "
@@ -325,6 +326,12 @@ msgid ""
 "information to know if an instruction will trigger an error or not at "
 "runtime."
 msgstr ""
+"Vous pouvez également utiliser la conversion de type pour assurer la "
+"sécurité des lignes. Les lignes de sécurisées sont un nouvel outil dans "
+"Godot 3.1 pour vous avertir lorsque des lignes de code ambiguës sont type-"
+"sûr. Comme vous pouvez mélanger et faire correspondre du code typé et du "
+"code dynamique, Godot n'a parfois pas assez d'informations pour savoir si "
+"une instruction va déclencher une erreur ou non au moment de l'exécution."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:188
 msgid ""
@@ -344,12 +351,18 @@ msgstr ""
 "type du nœud tant qu'il possède les méthodes que vous avez besoin d'appeler."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:196
+#, fuzzy
 msgid ""
 "You can use casting to tell Godot the type you expect when you get a node: "
 "``($Timer as Timer)``, ``($Player as KinematicBody2D)``, etc. Godot will "
 "ensure the type works and if so, the line number will turn green at the left "
 "of the script editor."
 msgstr ""
+"Vous pouvez utiliser la conversion de type pour dire à Godot le type que "
+"vous attendez lorsque vous obtenez un nœud : ($Timer comme Timer)``, "
+"``($Player comme KinematicBody2D)``, etc. Godot s'assurera que le type "
+"fonctionne et si c'est le cas, le numéro de ligne deviendra vert à gauche de "
+"l'éditeur de script."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:204
 msgid "Safe vs Unsafe Line"
@@ -443,12 +456,18 @@ msgstr ""
 "propre type, pour cast les paramètres automatiquement :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:301
+#, fuzzy
 msgid ""
 "The ``bullet`` variable could hold any ``CollisionObject2D`` here, but we "
 "make sure it is our ``Bullet``, a node we created for our project. If it’s "
 "anything else, like an ``Area2D``, or any node that doesn’t extend "
 "``Bullet``, the ``bullet`` variable will be ``null``."
 msgstr ""
+"La variable \"Bullet\" pourrait contenir n'importe quel \"CollisionObject2D"
+"\" ici, mais nous nous assurons que c'est notre \"Bullet\", un nœud que nous "
+"avons créé pour notre projet. Si c'est autre chose, comme un ``Area2D``, ou "
+"n'importe quel nœud qui n'hérite pas ``Bullet```, la variable ``bullet`` "
+"sera ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:307
 msgid "Warning system"
@@ -497,6 +516,11 @@ msgid ""
 "corresponding line and the code won’t trigger the corresponding warning "
 "anymore:"
 msgstr ""
+"Pour ignorer des avertissements spécifiques dans un fichier, insérez un "
+"commentaire spécial de la forme ``#warning-ignore:warning-id```, ou cliquez "
+"sur le lien ignorer à droite de la description de l'avertissement. Godot "
+"ajoutera un commentaire au-dessus de la ligne correspondante et le code ne "
+"déclenchera plus l'avertissement correspondant :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
 msgid "warning system ignore example"
@@ -510,10 +534,16 @@ msgid ""
 "on this option. Here’s the same file as the previous example with warnings "
 "as errors turned on:"
 msgstr ""
+"Les avertissements n'empêcheront pas le jeu de fonctionner, mais vous pouvez "
+"les transformer en erreurs si vous le souhaitez. De cette façon, votre jeu "
+"ne sera pas compilé à moins que vous ne corrigiez tous les avertissements. "
+"Allez à la section ``GDScript`` de la section Paramètres du projet pour "
+"activer cette option. Voici le même fichier que l'exemple précédent avec les "
+"avertissements d'erreurs activées :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:349
 msgid "warnings as errors"
-msgstr ""
+msgstr "les avertissements en tant qu'erreurs"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:352
 msgid "Cases where you can’t specify types"
@@ -524,10 +554,14 @@ msgid ""
 "To wrap up this introduction, let’s cover a few cases where you can’t use "
 "type hints. All the examples below **will trigger errors**."
 msgstr ""
+"Pour conclure cette introduction, couvrons quelques cas où vous ne pouvez "
+"pas utiliser d'indices de type. Tous les exemples ci-dessous **déclenchent "
+"des erreurs**."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:357
+#, fuzzy
 msgid "You can’t use Enums as types:"
-msgstr ""
+msgstr "Vous ne pouvez pas utiliser les Enums comme types :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:364
 msgid ""
@@ -550,6 +584,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
 msgid "Two scripts can’t depend on each other in a cyclic fashion:"
 msgstr ""
+"Deux scripts ne peuvent pas dépendre l'un de l'autre de manière cyclique :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:400
 msgid "Summary"

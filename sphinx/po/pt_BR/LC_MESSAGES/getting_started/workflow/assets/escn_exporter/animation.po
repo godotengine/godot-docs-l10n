@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,17 +22,16 @@ msgid "Animation"
 msgstr "Animação"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "Animation supported:"
-msgstr "Animações"
+msgstr "Animações suportadas:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
-msgstr ""
+msgstr "transformar animação de todos os tipos de objetos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
 msgid "transform animation of pose bones"
-msgstr ""
+msgstr "transformar animação de ossos de pose"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
 #, fuzzy
@@ -40,18 +39,16 @@ msgid "shape key animation"
 msgstr "Animação por Sprites"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
-#, fuzzy
 msgid "light animation"
-msgstr "Animação por Sprites"
+msgstr "Animação de luzes"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "camera animation"
-msgstr "Animação por Sprites"
+msgstr "Animação da câmera"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
-msgstr ""
+msgstr "Múltiplas ações para um único objeto"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
 msgid ""
@@ -59,16 +56,21 @@ msgid ""
 "This add-on has support for exporting multiple actions all at once into a "
 "single AnimationPlayer and makes it easy to switch actions."
 msgstr ""
+"Na maior parte dos jogos, um objeto teria animações para as quais alternar. "
+"Esta extensão tem suporte para exportar múltiplas ações, todas de uma vez, "
+"em apenas um AnimationPlayer o que torna fácil a mudança de ações."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
 msgid ""
 "This workflow makes use of blender nla_tracks. Here is a brief guide on how "
 "to use this feature:"
 msgstr ""
+"Esse fluxo de trabalho faz uso de nla_tracks do Blender. Segue um breve guia "
+"de como utilizar esta funcionalidade:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
 msgid "**1. Switch workspace to 'Dope Sheet'**"
-msgstr ""
+msgstr "**1. Mude o espaço de trabalho para 'Dope Sheet'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:23
 msgid "**2. Stash the active action**"
@@ -139,10 +141,12 @@ msgid ""
 "Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
 msgstr ""
+"Tratar todas as animações como ações de objeto, então na cena exportada, "
+"cada objeto teria seu próprio AnimationPlayer mantendo suas ações."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Scene Animation'**"
-msgstr ""
+msgstr "**Modo 'Animação de Cena'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid ""
@@ -150,10 +154,13 @@ msgid ""
 "Blender's timeline, this is what you want. In this mode, all the animations "
 "in the scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
+"Se você quer sua animação gere o mesmo resultado que o da linha do tempo do "
+"Blender, isto é o que você quer. Neste modo, todas as animações na cena são "
+"colocadas em apenas um AnimationPlayer na raiz da cena."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Animation as Action with Squash'**"
-msgstr ""
+msgstr "Animações suportadas:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid ""

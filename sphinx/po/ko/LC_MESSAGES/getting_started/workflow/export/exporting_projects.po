@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,12 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:4
 msgid "Exporting projects"
-msgstr ""
+msgstr "프로젝트 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:9
-#, fuzzy
 msgid "Why export?"
-msgstr "export"
+msgstr "왜 내보내나요?"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:11
 msgid ""
@@ -32,6 +31,8 @@ msgid ""
 "would compile the proper binaries and build the packages for each platform "
 "manually."
 msgstr ""
+"원래, Godot는 프로젝트를 내보내는 수단이 없었습니다. 개발자는 적절한 바이너리"
+"를 컴파일하고 각 플랫폼으로 패키지를 수동으로 만들었습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:15
 msgid ""
@@ -39,10 +40,13 @@ msgid ""
 "our company started taking more projects at the same time, it became evident "
 "that this was a bottleneck."
 msgstr ""
+"더 많은 개발자가 (그리고 심지어 비프로그래머까지) Godot를 사용하기 시작했고, "
+"우리 회사가 동시에 더 많은 프로젝트를 시작하면서, 이것이 병목 현상인 것이 분"
+"명해 졌습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:20
 msgid "On PC"
-msgstr ""
+msgstr "PC에서"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:22
 msgid ""
@@ -50,6 +54,9 @@ msgid ""
 "binary in the same directory as the ``project.godot`` file, then compress "
 "the project directory and you are done."
 msgstr ""
+"Godot로 PC에서 게임 프로젝트를 배포하는 것은 비교적 쉽습니다. Godot 바이너리"
+"를 ``project.godot`` 파일의 형태로 같은 디렉토리에 드롭하고, 프로젝트 디렉토"
+"리를 압축하면 끝입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:26
 msgid ""
@@ -61,16 +68,25 @@ msgid ""
 "binary, which is smaller in size, more optimized and does not include tools "
 "like the editor and debugger."
 msgstr ""
+"간단해 보이지만, 개발자들이 이 방식을 원하지 않는 몇 가지 이유가 있을 것입니"
+"다. 첫 째로 많은 파일을 배포하는 것은 바람직하지 않을 수 있습니다. 일부 개발"
+"자들은 호기심 많은 사용자가 게임이 만들어진 방법을 알아내는 것을 좋아하지 않"
+"을 수도 있고, 다른 개발자들이 게임이 잘 만들어지지 않은 것을 발견할 수도 있습"
+"니다. 또 다른 이유는 개발자가 특별히 컴파일된 바이너리를 선호하기 때문인데, "
+"크기 면에서 더 작지만 더 많이 최적화되어 있으면서, 에디터와 디버거같은 도구들"
+"을 갖지 않기 때문입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:34
 msgid ""
 "Finally, Godot has a simple but efficient system for creating DLCs as extra "
 "package files."
 msgstr ""
+"마침내, Godot는 추가 패키지 파일로 DLC를 만드는 간단하면서도 효율적인 시스템"
+"을 갖고 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:38
 msgid "On mobile"
-msgstr ""
+msgstr "모바일에서"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:40
 msgid ""
@@ -78,6 +94,9 @@ msgid ""
 "project on those devices, a binary for each of those platforms is built, "
 "then added to a native project together with the game data."
 msgstr ""
+"모바일 플랫폼에서의 같은 시나리오는 좀 더 나쁩니다. 이 기기로 프로젝트를 배포"
+"하기 위해, 각 플랫폼을 위한 바이너리가 지어지고, 네이티브 프로젝트에 게임 데"
+"이터와 함께 추가됩니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid ""
@@ -86,6 +105,9 @@ msgid ""
 "While learning each SDK is always encouraged, it can be frustrating to be "
 "forced to do it at an undesired time."
 msgstr ""
+"이것은 개발자가 각 플랫폼의 SDK에 익숙해져야 내보낼 수 있음을 의미하기 때문"
+"에 번거로울 수 있습니다. 각 SDK를 배우는 것을 항상 권장하는 반면, 바람직하지 "
+"않은 시간에 SDK를 강제 실행하는 것은 방해가 될 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:50
 msgid ""
@@ -95,10 +117,14 @@ msgid ""
 "standardized for more than a decade, but mobile devices use different "
 "formats for texture compression, such as PVRTC (iOS) or ETC (Android)."
 msgstr ""
+"이 접근법에는 다른 문제가 있습니다: 기기들은 실행하기 위한 각기 다른 형식의 "
+"데이터를 선호합니다. 주요 예시로 텍스쳐 압축이 있습니다. 모든 PC 하드웨어는 "
+"S3TC (BC) 압축을 사용하고 10년 이상 표준화 되어 왔습니다, 하지만 모바일 기기"
+"는 텍스쳐 압축에  PVRTC (iOS)나 ETC (Android)와 같이 다른 형식을 사용합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
 msgid "Export menu"
-msgstr ""
+msgstr "내보내기 메뉴"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:60
 msgid ""
@@ -106,16 +132,21 @@ msgid ""
 "proven to work the best. At the time of this writing, not all platforms are "
 "supported yet, but the supported platforms continue to grow."
 msgstr ""
+"다른 내보내기 워크플로우에서 여러번 시도한 끝에, 현재의 것이 작업에 가장 좋다"
+"는 것을 증명했습니다. 이 글을 쓰는 시점에는, 모든 플랫폼을 지원하고 있지는 않"
+"겠지만, 지원되는 플랫폼이 계속 커져 갈 것입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
 msgid "To open the export menu, click the **Export** button:"
-msgstr ""
+msgstr "내보내기 메뉴를 열려면, **내보내기** 버튼을 클릭하세요:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
 msgid ""
 "The export menu will open. However, it will be completely empty. This is "
 "because we need to add an export preset."
 msgstr ""
+"내보내기 메뉴가 열릴 것입니다. 하지만 완전히 비어있죠. 내보내기 프리셋을 추가"
+"해야 되기 때문입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:73
 msgid ""
@@ -123,6 +154,8 @@ msgid ""
 "export menu. This will open a drop-down list of platforms to choose from for "
 "an export preset."
 msgstr ""
+"내보내기 프리셋을 만들기 위해, 내보내기 메뉴 위에 **추가…** 버튼을 클릭합니"
+"다. 그러면 내보내기 프리셋을 고를 수 있는 플랫폼의 드롭 다운 목록이 열립니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:79
 msgid ""
@@ -133,12 +166,19 @@ msgid ""
 "is missing and will not allow the user to export for that platform until "
 "they resolve it:"
 msgstr ""
+"기본 설정은 대개 내보내기에 충분합니다, 그래서 내보내기를 만져보는 것은 보통"
+"은 필수적이지 않습니다. 하지만 많은 플랫폼에서는 내보낼 수 있도록 추가 도구 "
+"(SDKs)가 설치되어 있어야 합니다. 또한, Godot는 패키지를 만들기 위해 설치된 내"
+"보내기 템플릿이 필요합니다. 메뉴가 없으면 내보내기 메뉴가 불평하고 사용자가 "
+"문제를 해결할 때까지 해당 플랫폼으로 내보낼 수 없습니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:88
 msgid ""
 "At that time, the user is expected to come back to the documentation and "
 "follow instructions on how to properly set up that platform."
 msgstr ""
+"그 순간, 사용자는 문서를 다시 읽고 플랫폼을 어떻게 정확히 설정하는 지에 대한 "
+"설명서를 따라야 한다는 것을 직감합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
 msgid "Export templates"
@@ -151,34 +191,42 @@ msgid ""
 "a renamed ZIP archive) from the `download page of the website <https://www."
 "godotengine.org/download>`_."
 msgstr ""
+"플랫폼 설정 외에도, 내보내기 템플릿은 프로젝트를 내보내기 위해 반드시 설치되"
+"어 있어야 합니다. 이들은 `웹사이트의 다룬로드 페이지 <https://www."
+"godotengine.org/download>`_\\ 에서 (ZIP 아카이브에서 이름을 바꾼) TPZ 파일에 "
+"들어있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
 msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
 msgstr ""
+"다운로드 했다면, 에디터에서 **내보내기 템플릿 관리** 설정으로 설치할 수 있습"
+"니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:105
 msgid "Export mode"
-msgstr ""
+msgstr "내보내기 모드"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:107
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
 msgstr ""
+"내보낼 때, Godot는 내보내고 패키지를 만들기 위한 모든 파일의 목록을 만듭니"
+"다. 내보내기 위한 3가지 다른 모드가 있습니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
 msgid "Export every single file in the project"
-msgstr ""
+msgstr "프로젝트에 모든 단일 파일을 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
 msgid "Export only resources (+ custom filter), this is the default."
-msgstr ""
+msgstr "리소스 (+ 커스텀 필터)만 내보내기, 기본 값입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
 msgid "Export only selected resources (+ custom filter)"
-msgstr ""
+msgstr "선택된 리소스 (+ 커스텀 필더)만 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
 msgid ""
@@ -187,6 +235,9 @@ msgid ""
 "developers often have a lot of unrelated stuff around in the project "
 "directory, which makes it a bad idea."
 msgstr ""
+"**모든 단일 파일 내보내기** - 이 모드는 프로젝트에서 모든 단일 파일을 내보냅"
+"니다. 잊어버린 것이 있는지 테스트하기는 좋지만, 개발자는 프로젝트 디렉토리에 "
+"종종 많은 관련은 없으므로, 나쁜 생각입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
 msgid ""
@@ -195,6 +246,10 @@ msgid ""
 "their games. To compensate for this, filters can be added for extra "
 "extensions (for instance, ``*.txt,*.csv``)."
 msgstr ""
+"**리소스만 내보내기** - 리소스만 내보냅니다. 대부분의 프로젝트에는 충분합니"
+"다. 하지만 많은 개발자가 게임에 커스텀 데이터 파일을 사용하기를 좋아합니다. "
+"이를 보완하기 위해, 추가 확장을 위한 필터가 추가될 수 있습니다 (예를 들어, "
+"``*.txt,*.csv``\\ 가 있습니다)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid ""
@@ -204,10 +259,14 @@ msgid ""
 "is exported. Individual resources can be selected and dependency detection "
 "is performed to ensure that everything needed is added."
 msgstr ""
+"**선택된 리소스만 내보내기** - 목록에서 선택된 리소스만 내보냅니다. 이것도 대"
+"부분의 프로젝트에는 과분할 정도일지 몰라도, 몇몇 경우에는 이것이 합당하다 (보"
+"통 거대한 프로젝트). 이 모드로 내보내는 것을 전부다 관리할 수 있습니다. 개별 "
+"리소스를 선택하고 필요한 모든 것을 추가하도록 종속 감지 여부를 확인합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
 msgid "Exporting from the command line"
-msgstr ""
+msgstr "명령 행에서 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
 msgid ""

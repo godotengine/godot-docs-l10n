@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,12 +32,19 @@ msgid ""
 "it can't really display 3D meshes directly (although it can be done via "
 "``Viewport`` and ``ViewportTexture``)."
 msgstr ""
+"En 3D, les maillages sont utilisés pour afficher le monde. En 2D, elles sont "
+"rares car les images sont plus souvent utilisées. Le moteur 2D de Godot est "
+"un moteur bidimensionnel pur, donc il ne peut pas vraiment afficher les "
+"maillages 3D directement (bien que cela puisse être fait via ``Viewport`` et "
+"``ViewportTexture``)."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:13
 msgid ""
 "If you are interested in displaying 3D meshes on a 2D viewport, see the :ref:"
 "`doc_viewport_as_texture` tutorial."
 msgstr ""
+"Si vous êtes intéressé par l'affichage de maillages 3D sur une vue 2D, "
+"consultez le tutoriel :ref:`doc_viewport_as_texture`."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:15
 msgid ""
@@ -45,23 +52,35 @@ msgid ""
 "or ignored) instead of 3D. You can experiment creating them yourself using "
 "``SurfaceTool`` from code and displaying them in a ``MeshInstance2D`` node."
 msgstr ""
+"Les maillages 2D sont des maillages qui contiennent une géométrie "
+"bidimensionnelle (Z peut être omis ou ignoré) au lieu de 3D. Vous pouvez "
+"expérimenter de les créer vous-même en utilisant ``SurfaceTool`` à partir du "
+"code et les afficher dans un nœud ``MeshInstance2D``."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:18
 msgid ""
 "Currently, the only way to generate a 2D mesh within the editor is by either "
 "importing an OBJ file as a mesh, or converting it from a Sprite."
 msgstr ""
+"Actuellement, la seule façon de générer un maillage 2D dans l'éditeur est "
+"soit d'importer un fichier OBJ en tant que maillage, soit de le convertir "
+"depuis un Sprite."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:21
 msgid "Optimizing pixels drawn"
-msgstr ""
+msgstr "Optimisation le dessin de pixels"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:23
+#, fuzzy
 msgid ""
 "This workflow is useful for optimizing 2D drawing in some situations. When "
 "drawing large images with transparency, Godot will draw the whole quad to "
 "the screen. The large transparent areas will still be drawn."
 msgstr ""
+"Ce flux de travail est utile pour optimiser le dessin 2D dans certaines "
+"situations. Lorsque vous dessinez de grandes images avec transparence, Godot "
+"va dessiner tout le quadrant à l'écran. Les grandes surfaces transparentes "
+"seront toujours dessinées."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:25
 msgid ""
@@ -70,16 +89,23 @@ msgid ""
 "each other with large transparent areas (for example, when using "
 "``ParallaxBackground``)."
 msgstr ""
+"Cela peut affecter les performances, en particulier sur les appareils "
+"mobiles, lorsque vous dessinez de très grandes images (généralement de la "
+"taille d'un écran) ou lorsque vous superposez plusieurs images les unes sur "
+"les autres avec de grandes zones transparentes (par exemple, lorsque vous "
+"utilisez \"ParallaxBackground\")."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:28
 msgid ""
 "Converting to a mesh will ensure that only the opaque parts will be drawn "
 "and the rest will be ignored."
 msgstr ""
+"La conversion en maillage garantit que seules les parties opaques seront "
+"dessinées et que le reste sera ignoré."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:31
 msgid "Converting Sprites to 2D meshes"
-msgstr ""
+msgstr "Conversion de Sprites en maillages 2D"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:33
 msgid ""
@@ -87,24 +113,36 @@ msgid ""
 "``MeshInstance2D``. Start with an image that contains large amounts of "
 "transparency on the edges, like this tree:"
 msgstr ""
+"Vous pouvez profiter de cette optimisation en convertissant un ``Sprite'' en "
+"``MeshInstance2D```. Commencez par une image qui contient beaucoup de "
+"transparence sur les bords, comme cet arbre :"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:38
 msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
 msgstr ""
+"Mettez-le dans un \"Sprite\" et sélectionnez \"Convert to 2D Mesh\" dans le "
+"menu :"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:42
 msgid ""
 "A dialog will appear, showing a preview of how the 2D mesh will be created:"
 msgstr ""
+"Une boîte de dialogue apparaîtra, montrant un aperçu de la façon dont le "
+"maillage 2D sera créé :"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:46
 msgid ""
 "The default values are good enough for many cases, but you can change growth "
 "and simplification according to your needs:"
 msgstr ""
+"Les valeurs par défaut sont suffisantes dans de nombreux cas, mais vous "
+"pouvez modifier la croissance et la simplification en fonction de vos "
+"besoins :"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:50
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
 "replaced:"
 msgstr ""
+"Finalement, appuyez sur le bouton \"Convert 2D Mesh\" et votre Sprite sera "
+"remplacé :"

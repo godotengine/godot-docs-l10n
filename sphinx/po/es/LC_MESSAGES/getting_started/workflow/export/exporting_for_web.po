@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Exporting for the Web"
 msgstr "Exportar para la Web"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:6
-#, fuzzy
 msgid ""
 "HTML5 export allows publishing games made in Godot Engine to the browser. "
 "This requires support for `WebAssembly <https://webassembly.org/>`__ and "
@@ -31,10 +30,7 @@ msgstr ""
 "La exportación a HTML5 permite publicar juegos hechos en Godot Engine en el "
 "navegador. Esto requiere soporte para las tecnologías recientes `WebAssembly "
 "<https://webassembly.org/>`__ y `WebGL 2.0 <https://www.khronos.org/webgl/"
-">`__ en el navegador del usuario. **Firefox** y **Chromium** (Chrome, Opera) "
-"son los navegadores compatibles más populares, **Safari** y **Edge** aún no "
-"funcionan. En **iOS**, todos los navegadores deben estar basados en WebKit "
-"(es decir, Safari), por lo que tampoco funcionarán."
+">`__ en el navegador del usuario."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:11
 msgid ""
@@ -54,21 +50,14 @@ msgstr ""
 "``file://``. Para evitar esto, utiliza un servidor local."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
-msgid ""
-"Python offers an easy method to start a local server. Use ``python -m "
-"SimpleHTTPServer`` with Python 2 or"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:21
 #, fuzzy
 msgid ""
-"``python -m http.server`` with Python 3 to serve the current working "
-"directory at ``http://localhost:8000``."
+"Python offers an easy method to start a local server. Use ``python -m "
+"SimpleHTTPServer`` with Python 2 or ``python -m http.server`` with Python 3 "
+"to serve the current working directory at ``http://localhost:8000``."
 msgstr ""
-"Python ofrece un método fácil para esto, usando ``python -m "
-"SimpleHTTPServer`` con Python 2 o ``python -m http.server`` con Python 3, "
-"ejecutará el servidor en el directorio de trabajo actual, accesible en "
-"``http://localhost:8000``."
+"``python -m http.server`` con Python 3, ejecutará el servidor en el "
+"directorio de trabajo actual, accesible en ``http://localhost:8000``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:25
 msgid "WebGL 2"
@@ -87,20 +76,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:33
-#, fuzzy
 msgid ""
 "WebGL 2 is not supported in all browsers. **Firefox** and **Chromium** "
 "(Chrome, Opera) are the most popular supported browsers, **Safari** and "
 "**Edge** do not work. On **iOS**, all browsers are based on WebKit (i.e. "
 "Safari), so they will also not work."
 msgstr ""
-"La exportación a HTML5 permite publicar juegos hechos en Godot Engine en el "
-"navegador. Esto requiere soporte para las tecnologías recientes `WebAssembly "
-"<https://webassembly.org/>`__ y `WebGL 2.0 <https://www.khronos.org/webgl/"
-">`__ en el navegador del usuario. **Firefox** y **Chromium** (Chrome, Opera) "
-"son los navegadores compatibles más populares, **Safari** y **Edge** aún no "
-"funcionan. En **iOS**, todos los navegadores deben estar basados en WebKit "
-"(es decir, Safari), por lo que tampoco funcionarán."
+"WebGL2 no está soportado en todos los navegadores. **Firefox** y "
+"**Chromium** (Chrome, Opera) son los navegadores compatibles más populares, "
+"**Safari** y **Edge** aún no funcionan. En **iOS**, todos los navegadores "
+"están basados en WebKit (ej. Safari), por lo que tampoco funcionarán."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
 msgid ""
@@ -155,7 +140,6 @@ msgid "Full screen and mouse capture"
 msgstr "Captura de pantalla completa y ratón"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
-#, fuzzy
 msgid ""
 "Browsers do not allow arbitrarily **entering full screen**. The same goes "
 "for **capturing the cursor**. Instead, these actions have to occur as a "
@@ -164,11 +148,13 @@ msgid ""
 "``_unhandled_input``. Querying the :ref:`class_Input` singleton is not "
 "sufficient, the relevant input event must currently be active."
 msgstr ""
-"Los navegadores no permiten **ingresar a pantalla completa** arbitrariamente "
-"en ningún momento. Lo mismo ocurre con **capturar el cursor**. En su lugar, "
+"Los navegadores no permiten **ingresar a pantalla completa** "
+"arbitrariamente. Lo mismo ocurre con **capturar el cursor**. En su lugar, "
 "estas acciones tienen que ocurrir como respuesta a un evento de entrada de "
-"JavaScript. En Godot, esto se hace más fácilmente entrando a pantalla "
-"completa desde una llamada de entrada como ``_input`` o ``_unhandled_input``."
+"JavaScript. En Godot, implica que se debe cambiar pantalla completa desde "
+"una llamada de entrada como ``_input`` o ``_unhandled_input``. Consultando "
+"el singleton :ref:`class_Input` no será suficiente, el evento "
+"correspondiente debe estar actualmente activo."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:69
 msgid ""
@@ -207,9 +193,8 @@ msgid "Accessing or changing the ``StreamPeer`` is not possible"
 msgstr "No es posible acceder o cambiar el ``StreamPeer``"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
-#, fuzzy
 msgid "Threaded/Blocking mode is not available"
-msgstr "El modo de bloqueo no está disponible"
+msgstr "El modo de hilos/bloqueo no está disponible"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:89
 msgid ""
@@ -227,13 +212,12 @@ msgid "Host verification cannot be disabled"
 msgstr "La verificación del host no se puede deshabilitar"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
-#, fuzzy
 msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`__"
 msgstr ""
 "Sujeto a la `política de mismo origen <https://developer.mozilla.org/en-US/"
-"docs/Web/Security/Same-origin_policy>`_"
+"docs/Web/Security/Same-origin_policy>`__"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid "Exported ``.html`` file must not be reused"
@@ -288,24 +272,23 @@ msgid "Clipboard synchronisation between engine and operating system"
 msgstr "Sincronización del portapapeles entre el motor y el sistema operativo"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
-#, fuzzy
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
-msgstr "Redes distintas de ``HTTPClient``"
+msgstr ""
+"Conexiones de red fuera de ``HTTPClient`` y :ref:`class_WebSocketClient`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
-#, fuzzy
 msgid ""
 "Check the `list of open HTML5 issues on Github <https://github.com/"
 "godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`__ to see "
 "if the functionality you're interested in has an issue yet. If not, open one "
 "to communicate your interest."
 msgstr ""
-"Compruebe la `lista de asuntos HTML5 abiertos en Github <https://github.com/"
-"godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`_ para ver "
-"si la funcionalidad que te interesa ya tiene un asunto. Si no, inicia uno "
-"para comunicar hacernos llegar tu interés."
+"Revisa la `lista de issues abiertos sobre HTML5 en Github <https://github."
+"com/godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`__ "
+"para ver si la funcionalidad que te interesa ya tiene uno abierto. Si no, "
+"inicia uno para hacernos llegar tu interés."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 msgid "Serving the files"
@@ -333,16 +316,14 @@ msgstr ""
 "momento, nunca dependerá de su nombre por defecto."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:135
-#, fuzzy
 msgid ""
 "The HTML page draws the game at maximum size within the browser window. This "
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
 "common on most web game hosting sites."
 msgstr ""
-"La página HTML está diseñada para encajar perfectamente en el juego sin "
-"cortar partes del canvas cuando la ventana del navegador es escalada a las "
-"dimensiones del juego. De esta manera se puede insertar en un ``<iframe>`` "
-"con el tamaño del juego, como es común en la mayoría de los sitios web de "
+"La página HTML dibujará el juego en el tamaño máximo dentro de la ventana "
+"del navegador. De esta manera se puede insertar en un ``<iframe>`` con el "
+"tamaño del juego, como es común en la mayoría de los sitios web de "
 "alojamiento de juegos."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:139
@@ -365,15 +346,14 @@ msgstr ""
 "HTML personalizadas <doc_customizing_html5_shell>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:147
-#, fuzzy
 msgid ""
 "The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
 "`application/wasm`."
 msgstr ""
-"El archivo ``.pck`` es binario, normalmente se entrega con el MIME-type "
-"``application/octet-stream``. El archivo ``.wasm`` se entrega como "
-"``application/wasm``."
+"El archivo ``.pck`` es binario, normalmente se entrega con el MIME-type :"
+"mimetype:`application/octet-stream`. El archivo ``.wasm`` se entrega como :"
+"mimetype:`application/wasm`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:151
 msgid ""
@@ -432,7 +412,6 @@ msgid "Calling JavaScript from script"
 msgstr "Llamada a JavaScript desde script"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
-#, fuzzy
 msgid ""
 "In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
@@ -440,8 +419,8 @@ msgid ""
 "as JavaScript code. This allows interacting with the browser in ways not "
 "possible with script languages integrated into Godot."
 msgstr ""
-"En las construcciones web, se implementa el singleton ``JavaScript``. Ofrece "
-"un único método llamado ``eval`` que funciona de forma similar a la función "
+"En las desarrollos web, se implementa el singleton ``JavaScript``. Ofrece un "
+"único método llamado ``eval`` que funciona de forma similar a la función "
 "JavaScript del mismo nombre. Toma una cadena como argumento y la ejecuta "
 "como código JavaScript. Esto permite interactuar con el navegador de formas "
 "que no son posibles con lenguajes de script integrados en Godot."

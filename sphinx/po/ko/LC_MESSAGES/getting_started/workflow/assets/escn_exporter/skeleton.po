@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,19 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
 msgid "Skeleton"
-msgstr "스켈레톤"
+msgstr "스켈레톤(Skeleton)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
-msgstr ""
+msgstr "휴식 본"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:9
 msgid ""
 "Armature object in Blender is exported as a Skeleton node along with rest "
 "position (transform in Godot) of bones."
 msgstr ""
+"블렌더에서 뼈대 객체는 본의 휴식 위치 (Godot에서 변형)와 함께 Skeleton 노드"
+"로 내보내집니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:13
 msgid ""
@@ -38,10 +40,13 @@ msgid ""
 "Blender, so that the exported bone transform be consistent between Blender "
 "and Godot"
 msgstr ""
+"세 개의 체크 박스, :code:`Inherit Rotation`, :code:`Inherit Scale`, :code:"
+"`Local Location` (붉게 색칠됨)은 블렌더에서 뼈대를 만들 때 반드시 체크해야 하"
+"고, 이를 통해 내보낸 본은 Godot와 블렌더 간 일정하게 변형됩니다"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:19
 msgid "Bone Weights"
-msgstr ""
+msgstr "본 무게값"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
 msgid ""
@@ -50,10 +55,14 @@ msgid ""
 "the mesh deformed. Therefore, the exporter would raise an error for any "
 "vertex with no bone weights detected in a rigged mesh."
 msgstr ""
+"블렌더는 원래 위치에서 본 무게값이 없는 리깅된 메시 꼭짓점을 넣었습니다, 하지"
+"만 이 꼭짓점은 Godot에서 (0, 0, 0)에 위치하게 되고, 메시가 변형되도록 만듭니"
+"다. 그러므로, 내보내기는 리깅된 메시에서 본 무게값이 없는 꼭짓점이 감지되면 "
+"오류를 내보낼 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:27
 msgid "Non-Deform Bone"
-msgstr ""
+msgstr "비 변형 본"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:29
 msgid ""
@@ -61,13 +70,17 @@ msgid ""
 "the :code:`Exclude Control Bones`; the deform bone checkbox is shown in the "
 "picture."
 msgstr ""
+":code:`Exclude Control Bones`\\ 를 활성화해서 비 변형 본을 내보내지 않은 것으"
+"로 설정할 수 있습니다; 변형 본 체크 박스는 사진에 보입니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:35
 msgid "Bone Attachment"
-msgstr ""
+msgstr "본 부착(Bone Attachment)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:36
 msgid ""
 "A bone can be the parent of an object in Blender; this relation is exported "
 "as a BoneAttachment node in the Godot scene."
 msgstr ""
+"본은 블렌더에서 객체의 부모가 될 수 있습니다; 이 관계는 Godot 씬에서 "
+"BoneAttachment 노드로 내보내집니다."

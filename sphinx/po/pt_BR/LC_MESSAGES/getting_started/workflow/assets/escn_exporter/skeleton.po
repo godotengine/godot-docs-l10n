@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,12 +52,18 @@ msgid "Bone Weights"
 msgstr "Peso dos ossos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
+#, fuzzy
 msgid ""
 "Blender put rigged mesh vertices which has no bone weights at its original "
 "position, but these vertices would be placed at (0, 0, 0) in Godot, making "
 "the mesh deformed. Therefore, the exporter would raise an error for any "
 "vertex with no bone weights detected in a rigged mesh."
 msgstr ""
+"Blender (Programa usado para criação de modelos 3D) colocou o modelo "
+"manimulado que não tem pessos ósseos na posição original, porém os vértices "
+"teriam que serem colocados na posição (0, 0, 0) no Godot, tornando o modelo "
+"deformado. Portanto, o exportador mostraria um erro para qualquer vértice "
+"sem pesos ósseos detectados no modelo manipulado."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:27
 msgid "Non-Deform Bone"

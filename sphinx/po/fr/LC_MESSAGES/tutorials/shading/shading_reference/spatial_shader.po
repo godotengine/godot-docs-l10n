@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -357,8 +357,9 @@ msgid "Built-in"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
-msgid "out mat4 **WORLD_MATRIX**"
-msgstr ""
+#, fuzzy
+msgid "inout mat4 **WORLD_MATRIX**"
+msgstr "in mat4 **WORLD_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
@@ -379,8 +380,9 @@ msgid "World space to view space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
-msgid "out mat4 **PROJECTION_MATRIX**"
-msgstr ""
+#, fuzzy
+msgid "inout mat4 **PROJECTION_MATRIX**"
+msgstr "in mat4 **PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
@@ -401,16 +403,18 @@ msgid "View space to world space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
-msgid "out mat4 **MODELVIEW_MATRIX**"
-msgstr ""
+#, fuzzy
+msgid "inout mat4 **MODELVIEW_MATRIX**"
+msgstr "in mat4 **WORLD_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
 msgid "Model space to view space transform (use if possible)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
-msgid "out mat4 **INV_PROJECTION_MATRIX**"
-msgstr ""
+#, fuzzy
+msgid "inout mat4 **INV_PROJECTION_MATRIX**"
+msgstr "in mat4 **INV_PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
@@ -443,8 +447,9 @@ msgid "Size of viewport (in pixels)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
-msgid "out vec3 **VERTEX**"
-msgstr ""
+#, fuzzy
+msgid "inout vec3 **VERTEX**"
+msgstr "inout vec2 **VERTEX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
 msgid "Vertex in local coordinates."
@@ -452,8 +457,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
-msgid "out vec3 **NORMAL**"
-msgstr ""
+msgid "inout vec3 **NORMAL**"
+msgstr "inout vec3 **NORMAL**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
 msgid "Normal in local coordinates."
@@ -461,8 +466,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
-msgid "out vec3 **TANGENT**"
-msgstr ""
+#, fuzzy
+msgid "inout vec3 **TANGENT**"
+msgstr "inout vec4 **LIGHT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
 msgid "Tangent in local coordinates."
@@ -470,40 +476,42 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
-msgid "out vec3 **BINORMAL**"
-msgstr ""
+#, fuzzy
+msgid "inout vec3 **BINORMAL**"
+msgstr "inout vec3 **NORMAL**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
 msgid "Binormal in local coordinates."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
-msgid "out vec2 **UV**"
-msgstr ""
+msgid "inout vec2 **UV**"
+msgstr "inout vec2 **UV**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
 msgid "UV main channel."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
-msgid "out vec2 **UV2**"
-msgstr ""
+#, fuzzy
+msgid "inout vec2 **UV2**"
+msgstr "inout vec2 **UV**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
 msgid "UV secondary channel."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
-msgid "out vec4 **COLOR**"
-msgstr ""
+msgid "inout vec4 **COLOR**"
+msgstr "inout vec4 **COLOR**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
 msgid "Color from vertices."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
-msgid "out float **POINT_SIZE**"
-msgstr ""
+msgid "inout float **POINT_SIZE**"
+msgstr "inout float **POINT_SIZE**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
 msgid "Point size for point rendering."
@@ -546,7 +554,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:316
 #, fuzzy
-msgid "in float **OUTPUT_IS_SRGB**"
+msgid "in bool **OUTPUT_IS_SRGB**"
 msgstr "in float **ROUGHNESS**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,15 +195,14 @@ msgid "TextureRect"
 msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
-#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
 "**TextureRect** отображает текстуру или изображение внутри пользовательского "
-"интерфейса. Он похож на узел Sprite, но он дает множество режимов "
-"растяжения. Установите режим Stretch для изменения поведения:"
+"интерфейса. Он похож на узел Sprite, но имеет множество режимов растяжения. "
+"Изменить режим растяжения можно с помощью свойства Stretch Mode."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
 msgid ""
@@ -363,7 +362,6 @@ msgid "Label"
 msgstr "Ярлык"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
-#, fuzzy
 msgid ""
 "**Label** prints text to the screen. You'll find all its properties in the "
 "Label section, in the Inspector. Write the text in the ``Text`` property, "
@@ -372,10 +370,10 @@ msgid ""
 "horizontally and vertically with Align and Valign, respectively."
 msgstr ""
 "**Label** выводит текст на экран. Его свойства находятся в разделе Label, в "
-"инспекторе. Напишите текст в поле ``Text``, и проверьте Autowrap если вы не "
-"хотите нарушить размер текстового поля. Если Autowrap выключен, вы не "
-"сможете изменять масштаб узла. Вы можете выровнять текст горизонтально и "
-"вертикально при помощи Align и Valing соответственно."
+"инспекторе. Напишите текст в поле ``Text``, и проверьте значение свойства "
+"Autowrap если вы не хотите нарушить размер текстового поля. Если Autowrap "
+"выключен, вы не сможете изменять масштаб узла. Вы можете выровнять текст "
+"горизонтально и вертикально при помощи свойств Align и Valing соответственно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:152
 msgid "Picture of a Label"
@@ -386,15 +384,14 @@ msgid "NinePatchRect"
 msgstr "\"NinePatchRect\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
-#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
-"** NinePatchRect ** разделяет текстуры на 3 строки и 3 столбца. Центральная "
-"и боковая стороны масштабируются, но углы нет. Полезно создавать панели, "
+"**NinePatchRect ** разделяет текстуры на 3 строки и 3 столбца. Центральная и "
+"боковая стороны масштабируются, но углы нет. Полезно создавать панели, "
 "диалоговые окна и масштабируемые фоны для вашего пользовательского "
 "интерфейса."
 

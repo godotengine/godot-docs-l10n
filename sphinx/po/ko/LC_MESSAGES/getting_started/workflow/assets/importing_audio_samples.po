@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,19 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:4
 msgid "Importing audio samples"
-msgstr ""
+msgstr "오디오 샘플 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
 msgid "Why import?"
-msgstr ""
+msgstr "왜 가져오나요?"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
 msgid ""
 "Raw audio data in general is large and undesired. Godot provides two main "
 "options to import your audio data: WAV and OGG Vorbis."
 msgstr ""
+"순수 오디오 데이터는 일반적으로 크고 바람직하지 않습니다. Godot는 오디오 데이"
+"터를 가져오기 위해 두 가지 주요 설정을 제공합니다: WAV와 OGG Vorbis입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid ""
@@ -39,10 +41,15 @@ msgid ""
 "* Ogg Vorbis files use a stronger compression that results in much smaller "
 "file size, but require significantly more processing power to play back."
 msgstr ""
+"각각은 다른 이점을 갖습니다. * Wav 파일은 순수 데이터나 가벼운 압축을 사용합"
+"니다, 재생을 위한 CPU의 요구가 거의 없습니다 (수 백 개의 동시 목소리는 이 형"
+"식에 맞습니다), 하지만 상당한 공간을 차지합니다. * Ogg Vorbis 파일은 더 강한 "
+"압축으로 파일 크기를 훨씬 더 작게 만듭니다, 하지만 재생하기 위해 상당한 처리 "
+"능력이 필요합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:19
 msgid "Here is a comparative chart."
-msgstr ""
+msgstr "이것이 비교하는 차트입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:22
 msgid "Format"
@@ -50,47 +57,47 @@ msgstr "형식"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:22
 msgid "1 Second of Audio"
-msgstr ""
+msgstr "오디오의 1초"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:24
 msgid "WAV 24 bits, 96 kHz, Stereo"
-msgstr ""
+msgstr "WAV 24 bits, 96 kHz, 스테레오"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:24
 msgid "576kb"
-msgstr ""
+msgstr "576kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:26
 msgid "WAV 16 bits, 44 kHz, Mono"
-msgstr ""
+msgstr "WAV 16 bits, 44 kHz, 모노"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:26
 msgid "88kb"
-msgstr ""
+msgstr "88kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:28
 msgid "WAV 16 bits, IMA-ADPCM, Mono"
-msgstr ""
+msgstr "WAV 16 bits, IMA-ADPCM, 모노"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:28
 msgid "22kb"
-msgstr ""
+msgstr "22kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:30
 msgid "OGG 128kbps, Stereo"
-msgstr ""
+msgstr "OGG 128kbps, 스테레오"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:30
 msgid "16kb"
-msgstr ""
+msgstr "16kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:32
 msgid "OGG Vorbis 96kbps, Stereo"
-msgstr ""
+msgstr "OGG Vorbis 96kbps, 스테레오"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:32
 msgid "12kb"
-msgstr ""
+msgstr "12kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:35
 msgid ""
@@ -98,10 +105,13 @@ msgid ""
 "especially those that are short and repetitive, and OGG for music, voice and "
 "long sound effects."
 msgstr ""
+"일반적으로 추천하는 것으로, 대부분의 음향 효과에는, 특히 그것이 짧고 반복된다"
+"면 WAV를 사용하고, OGG는 음악, 목소리, 그리고 긴 음향 효과에 사용하는 것입니"
+"다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:38
 msgid "Best practices"
-msgstr ""
+msgstr "모범 사례"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:40
 msgid ""
@@ -109,14 +119,18 @@ msgid ""
 "artists the need to add reverb to the sound effects, reducing their size "
 "greatly and ensuring correct trimming. Say no to SFX with baked reverb!"
 msgstr ""
+"Godot 3+는 내장 효과가 있는 놀라운 버스 시스템을 갖고 있습니다. 이걸로 SFX 아"
+"티스트가 음향 효과에 울림(reverb)을 추가하는 번거로움을 줄여주며, 파일 크기"
+"를 크게 줄이고 올바른 트리밍을 보장합니다. 베이크된 reverb인 SFX에 아니라고 "
+"말해봐요!"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:47
 msgid "As you can see above, sound effects become huge with reverb added."
-msgstr ""
+msgstr "위에서 볼 수 있듯이, reverb가 추가되면서 음향 효과는 거대해졌습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:50
 msgid "Trimming"
-msgstr ""
+msgstr "트리밍(Trimming)"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
 msgid ""
@@ -125,14 +139,17 @@ msgid ""
 "saving to a waveform, increase their size unnecessarily and add latency to "
 "the moment they are played back."
 msgstr ""
+"종종 발생하는 문제로 파형을 가져올 때 시작과 끝에 긴 묵음이 있는 것입니다. 이"
+"것은 파형을 저장할 때 DAW에 의해 삽입되며, 불필요하게 파일 크기를 키우면서 재"
+"생하는 순간 대기 시간이 추가됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:57
 msgid "Importing as WAV with the Trimming option enabled solves this."
-msgstr ""
+msgstr "Trimming 설정이 활성화된 상태로 WAV로 가져오면 이를 해결합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:61
 msgid "Looping"
-msgstr ""
+msgstr "루핑(Looping)"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
 msgid ""
@@ -140,9 +157,14 @@ msgid ""
 "can add loop points to wav files). This is useful for sound effects, such as "
 "engines, machine guns etc. Ping-pong looping is also supported."
 msgstr ""
+"Godot는 샘플로 루핑을 지원합니다 (Sound Forge나 Audition와 같이 wav 파일에 반"
+"복 포인트를 추가할 수 있는 도구). 이것은 엔진, 머신 건과 같은 음향 효과에 유"
+"용합니다. 핑퐁 루핑 역시 지원합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:68
 msgid ""
 "As an alternative, the import screen has a \"loop\" option that enables "
 "looping for the entire sample when importing."
 msgstr ""
+"대안으로, 가져오기 화면은 \"loop\" 설정을 갖고 있고 이걸로 가져올 때 전체 샘"
+"플에 루핑을 활성화할 수 있습니다."

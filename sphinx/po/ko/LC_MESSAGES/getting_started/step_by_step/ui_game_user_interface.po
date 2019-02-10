@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design the GUI"
 msgstr "GUI 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
@@ -31,8 +30,8 @@ msgid ""
 msgstr ""
 "이제 기초를 갖췄으니, 재 사용 가능한 UI 구성 요소를 가지고 어떻게 게임 사용"
 "자 인터페이스 (GUI)를 만드는지 알아봅시다: 체력 막대, 에너지 막대, 그리고 폭"
-"탄과 루피 카운터입니다. 이 튜토리얼이 끝나면, GDscript나 VisualScript를 가지"
-"고 제어할 수 있는 게임 GUI를 가지게 될 것입니다:"
+"탄과 에메랄드 카운터입니다. 이 튜토리얼이 끝나면, GDscript나 VisualScript를 "
+"가지고 제어할 수 있는 게임 GUI를 가지게 될 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
@@ -97,9 +96,8 @@ msgstr "체력과 에너지 막대"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-#, fuzzy
 msgid "The bomb and emerald counters on the right"
-msgstr "오른쪽에서 폭탄과 루피 카운터"
+msgstr "오른쪽에서 폭탄과 에메랄드 카운터"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
@@ -114,7 +112,6 @@ msgid "The life and energy bars on the left"
 msgstr "왼쪽에 체력과 에너지 막대"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
-#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -123,11 +120,11 @@ msgid ""
 "``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
-"이것은 컨테이너를 중첩시키기 더 쉽게 만듭니다: 우리는 ``MarginContainer`` 로 "
-"화면 가장자리에 여백을 갖습니다, 그런 뒤 ``HBoxContainer`` 로 두 개의 열을 만"
-"드는 것입니다. 두 개의 막대는 ``VBoxContainer`` 안에 이 층으로 쌓여있습니다. "
-"그리고 오른쪽 열에 마지막 ``HBoxContainer`` 로 폭탄과 루피 카운터를 나란히 위"
-"치시킵니다."
+"이것은 컨테이너를 중첩시키기 더 쉽게 만듭니다: 우리는 ``MarginContainer``\\ "
+"로 화면 가장자리에 여백을 갖습니다, 그런 뒤 ``HBoxContainer``\\ 로 두 개의 열"
+"을 만드는 것입니다. 두 개의 막대는 ``VBoxContainer``\\ 안에 이 층으로 쌓여있"
+"습니다. 그리고 오른쪽 열에 마지막 ``HBoxContainer``\\ 로 폭탄과 에메랄드 카운"
+"터를 나란히 위치시킵니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
@@ -518,18 +515,16 @@ msgstr ""
 "지 않나요? 강력한 컨테이너 설정 덕분입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
-#, fuzzy
 msgid "Design the bomb and emerald counters"
-msgstr "폭탄과 루피 카운터를 설계하기"
+msgstr "폭탄과 에메랄드 카운터를 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
-#, fuzzy
 msgid ""
 "The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
-"폭탄과 루피 카운터는 바의 ``Count`` 노드와 비슷합니다. 따라서 복사해서 템플릿"
-"으로 사용해서 만들어 보도록 하죠."
+"폭탄과 에메랄드 카운터는 바의 ``Count`` 노드와 비슷합니다. 복사해서 템플릿으"
+"로 사용해서 만들어 보는 겁니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
 msgid ""
@@ -689,7 +684,6 @@ msgstr ""
 "면 멋질 것입니다. Godot는 상속된 씬으로 이를 제공합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
-#, fuzzy
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
@@ -698,10 +692,10 @@ msgid ""
 "the scene as ``Bar.tscn``. You should see the node branch turn it to a "
 "single ``Bar`` node."
 msgstr ""
-"``Counter`` 와 ``Bar`` 분기를 각각의 씬으로 저장해서 ``LifeBar``, "
-"``EnergyBar``, ``BombCounter``, 그리고 ``RupeeCounter`` 를 만들 겁니다. "
+"``Counter``\\ 와 ``Bar`` 분기를 각각의 씬으로 저장해서 ``LifeBar``, "
+"``EnergyBar``, ``BombCounter``, 그리고 ``EmeraldCounter``\\ 를 만들 겁니다. "
 "``Bar`` HBoxContainer를 선택합니다. 우클릭을 한 후 ``선택 노드를 다른 씬으로 "
-"저장`` 을 클릭합니다. 씬을 ``Bar.tscn`` 이란 이름으로 저장합니다. 노드 분기"
+"저장``\\ 을 클릭합니다. 씬을 ``Bar.tscn`` 이란 이름으로 저장합니다. 노드 분기"
 "가 이제 하나의 ``Bar`` 노드로 된 것을 보실 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
@@ -1011,9 +1005,8 @@ msgstr ""
 "100 픽셀 너비이기 때문에, 이 방법으로 두 게이지는 완벽하게 정렬할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-#, fuzzy
 msgid "Prepare the bomb and emerald counters"
-msgstr "폭탄과 루피 카운터 준비하기"
+msgstr "폭탄과 에메랄드 카운터 준비하기"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
 msgid ""
@@ -1031,7 +1024,6 @@ msgid "The bomb counter is the same as the original Counter scene"
 msgstr "폭탄 카운터는 원래 카운터 씬과 같습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``EmeraldCounter`` and save the scene as "
@@ -1044,20 +1036,20 @@ msgid ""
 "the keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
-"다시 ``씬 -> 새 상속 씬`` 으로 가서 ``Counter.tscn`` 을 다시 선택합니다. 루"
-"트 노드 이름을 ``RupeeCounter`` 로 하고 씬을 ``RupeeCounter.tscn`` 로 저장합"
-"니다. 여기에, 우리는 주로 폭탄 아이콘과 루피 아이콘을 재배치 할 필요가 있습니"
-"다. 파일 시스템 탭에서, ``rupees_icon.png`` 를 ``Icon`` 노드의 ``Texture`` 슬"
-"롯으로 드래그 합니다. ``Icon`` 은 이미 ``Background`` 의 오른쪽 모서리에 앵"
-"커 되었으므로 우리는 아이콘의 위치를 바꿀 수 있고 ``RupeeCounter`` 의 크기와 "
-"위치를 조정해서 아이콘의 크기를 조정할 수 있습니다.  루피 아이콘을 조금 오른"
-"쪽 아래로 옮깁니다. 키보드의 화살표 키를 사용하여 위치를 조금씩 옮길 수 있습"
-"니다. 저장하면, 이제 모든 UI 요소가 끝났습니다."
+"다시 ``씬 -> 새 상속 씬``\\ 으로 가서 ``Counter.tscn``\\ 을 다시 선택합니다. "
+"루트 노드 이름을 ``EmeraldCounter``\\ 로 하고 씬을 ``EmeraldCounter.tscn``\\ "
+"로 저장합니다. 여기에, 우리는 주로 폭탄 아이콘과 에메랄드 아이콘을 재배치 할 "
+"필요가 있습니다. 파일 시스템 탭에서, ``Emeralds_icon.png``\\ 를 ``Icon`` 노드"
+"의 ``Texture`` 슬롯으로 드래그 합니다. ``Icon``\\ 은 이미 ``Background`` 의 "
+"오른쪽 모서리에 앵커 되었으므로, 아이콘의 위치를 바꿀 수 있고, "
+"``EmeraldCounter``\\ 의 크기와 위치를 조정해서 아이콘의 크기를 조정할 수 있습"
+"니다.  에메랄드 아이콘을 조금 오른쪽 아래로 옮깁니다. 키보드의 화살표 키를 사"
+"용하여 위치를 조금씩 옮길 수 있습니다. 저장하면, 이제 모든 UI 요소가 끝났습니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The emerald counter should look something like this"
-msgstr "루피 카운터는 이와 같이 보여야 합니다"
+msgstr "에메랄드 카운터는 이와 같이 보여야 합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
@@ -1081,20 +1073,18 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "자동으로 LifeBar와 EnergyBar가 정렬됨"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
-#, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
 "scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
-"이제 ``BombCounter.tscn`` 와 ``RupeeCounter.tscn`` 씬을 ``Counters`` 노드에 "
-"드래그 앤 드랍 합니다. 이들은 자동으로 크기가 조정될 것입니다."
+"이제 ``BombCounter.tscn``\\ 와 ``EmeraldCounter.tscn`` 씬을 ``Counters`` 노드"
+"에 드래그 앤 드랍 합니다. 이들은 자동으로 크기가 조정될 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
 msgid "The nodes resize to take all the available vertical space"
 msgstr "가능한 모든 수직 공간을 차지하기 위해 크기가 조절된 노드들"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
-#, fuzzy
 msgid ""
 "To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -1103,11 +1093,11 @@ msgid ""
 "property, and check ``Shrink Center`` so the container centers inside the "
 "``HBoxContainer``."
 msgstr ""
-"``RupeeCounter`` 와 ``BombCounter`` 가 ``Counter.tscn`` 에 정의한 크기를 사용"
-"할 수 있도록, 우리는 ``Counters`` 컨테이너의 ``Size Flags`` 를 바꿔야 합니"
-"다. ``Counters`` 노드를 선택하고 인스펙터에서 ``Size Flags`` 섹션을 펼칩니"
-"다.  ``Vertical`` 속성에서 ``Fill`` 태그를 해제하고 ``Shrink Center`` 를 체크"
-"하여 컨테이너가  ``HBoxContainer`` 에서 중앙에 있도록 합니다."
+"``EmeraldCounter``\\ 와 ``BombCounter``\\ 가 ``Counter.tscn``\\ 에 정의한 크"
+"기를 사용할 수 있도록, 우리는 ``Counters`` 컨테이너의 ``Size Flags``\\ 를 바"
+"꿔야 합니다. ``Counters`` 노드를 선택하고 인스펙터에서 ``Size Flags`` 섹션을 "
+"펼칩니다.  ``Vertical`` 속성에서 ``Fill`` 태그를 해제하고 ``Shrink Center``"
+"\\ 를 체크하여 컨테이너가  ``HBoxContainer``\\ 에서 중앙에 있도록 합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
 msgid "Now both counters have a decent size"

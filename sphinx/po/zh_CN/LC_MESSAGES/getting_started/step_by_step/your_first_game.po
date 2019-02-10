@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1321,7 +1321,7 @@ msgstr "最后， 在 ``game_over()`` 函数中添加 ``$DeathSound.play()`` 。
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
 msgid "Keyboard Shortcut"
-msgstr ""
+msgstr "键盘快捷键"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
 msgid ""
@@ -1329,6 +1329,9 @@ msgid ""
 "we could also start the game by pressing a key on the keyboard. One way to "
 "do this is using the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
+"因为游戏是用键盘控制的，如果我们也能按下键盘上的一个键来开始游戏就会很方"
+"便。\n"
+"一种方法是使用`Button`节点的“快捷方式”属性。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid ""
@@ -1339,12 +1342,18 @@ msgid ""
 "_Action_ property, type the name \"ui_select\". This is the default input "
 "event associated with the spacebar."
 msgstr ""
+"在`HUD`场景中，选择`StartButton`并在Inspector中找到它的_Shortcut_属性。\n"
+"选择“新建快捷方式”，点击“快捷方式”项。\n"
+"第二个_Shortcut_属性将出现。\n"
+"选择“New InputEventAction”并单击新的“InputEvent”。\n"
+"最后，在_Action_属性中输入名称“ui_select”。\n"
+"这是与空格键关联的默认输入事件。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
 msgid ""
 "Now when the start button appears, you can either click it or press the "
 "spacebar to start the game."
-msgstr ""
+msgstr "现在，当开始按钮出现时，您可以单击它或按空格键来启动游戏。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid "Project files"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,9 +22,8 @@ msgid "Part 6"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:7
-#, fuzzy
 msgid "Part overview"
-msgstr "Resumen de la Parte"
+msgstr "Resumen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:9
 msgid ""
@@ -150,13 +149,12 @@ msgid "Now let's go over ``_ready``"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:142
-#, fuzzy
 msgid ""
 "Firstly, we get all the :ref:`Panel <class_Panel>` nodes and assign them to "
 "the proper variables."
 msgstr ""
-"Primero obtenemos todos los nodos que necesitaremos y los asignamos a las "
-"variables de clase apropiadas."
+"Primero, obtenemos todos los nodos :ref:`Panel <class_Panel>` y los "
+"asignamos a las variables correspondientes."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:144
 msgid ""
@@ -213,7 +211,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:165
-#, fuzzy
 msgid ""
 "If one of the scene changing buttons is pressed, we fist call "
 "``set_mouse_and_joypad_sensitivity`` so the singleton (``Globals.gd``) has "
@@ -221,7 +218,7 @@ msgid ""
 "singleton to change nodes using its ``load_new_scene`` function, passing in "
 "the file path of the scene the player has selected."
 msgstr ""
-"Si se pulsa uno de los botones de cambio de escena, llamaremos "
+"Si se pulsa uno de los botones de cambio de escena, llamaremos primero a "
 "``set_mouse_and_joypad_sensitivity`` para que el singleton (``Globals.gd``) "
 "tenga los valores de los nodos :ref:`HSlider <class_HSlider>`. Luego le "
 "decimos al singleton que cambie los nodos usando su función "
@@ -255,7 +252,6 @@ msgid "Finally, lets take a look at ``set_mouse_and_joypad_sensitivity``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:185
-#, fuzzy
 msgid ""
 "Firstly, we get the ``Globals`` singleton and assign it to a local variable."
 msgstr ""
@@ -274,7 +270,6 @@ msgid "Making the ``Globals`` singleton"
 msgstr "Haciendo el singleton ``Globals``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:192
-#, fuzzy
 msgid ""
 "Now, for all this to work, we need to create the ``Globals`` singleton. Make "
 "a new script in the ``Script`` tab and call it ``Globals.gd``."
@@ -458,7 +453,6 @@ msgid "to this instead:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:296
-#, fuzzy
 msgid ""
 "This will call a new function called ``set_debug_display`` in our singleton, "
 "so let's add that next!"
@@ -513,7 +507,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:334
-#, fuzzy
 msgid ""
 "When adding nodes to a singleton/autoload, you have to be careful not to "
 "lose reference to any of the child nodes. This is because nodes will not be "
@@ -1003,26 +996,23 @@ msgid "And add the following to ``Weapon_Knife.gd``:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:728
-#, fuzzy
 msgid "Now all the weapons will reset when the player dies."
 msgstr "Ahora todas las armas se resetearán cuando el jugador muera."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:732
-#, fuzzy
 msgid ""
 "Now we need to add a few things to ``Globals.gd``. Firstly, add the "
 "following class variable:"
 msgstr ""
-"Ahora tenemos que añadir recarga al rifle. Abre ``Weapon_Rifle.gd`` y añade "
-"las siguientes variables de clase:"
+"Ahora tenemos que agregar unas cosas más a ``Globals.gd``. Primero agrega la "
+"siguiente variable de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:738
-#, fuzzy
 msgid ""
 "``respawn_points``: A variable to hold all the respawn points in a level"
 msgstr ""
-"``debug_display``: Una variable para mantener la pantalla de depuración "
-"cuando/si la hay."
+"``respawn_points``: Una variable para mantener todos los puntos de respawn "
+"en el nivel"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:740
 msgid ""
@@ -1130,10 +1120,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:815
-#, fuzzy
 msgid ""
 "Firstly, open up ``SimpleAudioPlayer.gd`` and change it to the following:"
-msgstr "Abre ``Player.gd`` y añade la siguiente variable de clase:"
+msgstr "Primero, abre ``SimpleAudioPlayer.gd`` y cambia lo siguiente:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:859
 msgid ""
@@ -1190,13 +1179,12 @@ msgstr ""
 "el singleton ``Globals.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:877
-#, fuzzy
 msgid ""
 "The only change in ``_ready`` is now audio player is getting the ``Globals."
 "gd`` singleton and assigning it to ``globals``."
 msgstr ""
-"El único cambio en ``_ready`` es que ahora el reproductor de audio recupera "
-"el singleton ``Globals.gd`` y lo asigna a ``globals``"
+"El único cambio en ``_ready`` es que ahora el reproductor de audio obtiene "
+"el singleton ``Globals.gd`` y lo asigna a ``globals``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:879
 msgid ""
@@ -1239,31 +1227,28 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:905
-#, fuzzy
 msgid "Let's go over these global variables."
-msgstr "Vamos a repasar cada una de las variables de clase:"
+msgstr "Veamos esas variables globales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:907
-#, fuzzy
 msgid ""
 "``audio_clips``: A dictionary holding all the audio clips ``Globals.gd`` can "
 "play."
 msgstr ""
 "``audio_clips``: Un diccionario que contiene todos los clips de audio que "
-"``Global.gd`` puede reproducir."
+"``Globals.gd`` puede reproducir."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:908
 msgid "``SIMPLE_AUDIO_PLAYER_SCENE``: The simple audio player scene."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:909
-#, fuzzy
 msgid ""
 "``created_audio``: A list to hold all the simple audio players ``Globals."
 "gd`` has created."
 msgstr ""
-"``audio_clips``: Un diccionario que contiene todos los clips de audio que "
-"``Global.gd`` puede reproducir."
+"``created_audio``: Una lista que tiene referencias a todos los audio player "
+"que ``Global.gd`` ha creado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:911
 msgid ""
@@ -1368,7 +1353,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:985
-#, fuzzy
 msgid ""
 "Now all the sounds in our FPS can be played from anywhere. All we have to do "
 "is get the ``Globals.gd`` singleton, and call ``play_sound``, pass in the "
@@ -1382,7 +1366,6 @@ msgstr ""
 "el sonido."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:988
-#, fuzzy
 msgid ""
 "For example, if you want to play an explosion sound when the grenade "
 "explodes you'd need to add a new sound to ``audio_clips`` in ``Globals.gd``, "
@@ -1395,7 +1378,6 @@ msgstr ""
 "granadas explotan necesitarás añadir un nuevo sonido a ``audio_clips`` en "
 "``Globals.gd``, ve al singleton ``Globals.gd``, y luego sólo necesitas "
 "añadir algo como ``globals.play_sound(\"explosion\", false, global_transform."
-"origin)`` en la funciónplay_sound(\"explosion\", false, global_transform."
 "origin)`` en la función ``_process`` de la granada, justo después de que la "
 "granada dañe todos los cuerpos dentro de su radio de explosión."
 
@@ -1461,13 +1443,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1022
-#, fuzzy
 msgid ""
 "You can download all the ``.blend`` files used in this tutorial here: :"
 "download:`Godot_FPS_BlenderFiles.zip <files/Godot_FPS_BlenderFiles.zip>`"
 msgstr ""
-"Puedes encontrar los recursos de inicio para este tutorial aquí: :download:"
-"`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
+"Puedes encontrar los archivos ``.blend`` usados en este tutorial aquí: :"
+"download:`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1024
 msgid ""

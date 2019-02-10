@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
-#, fuzzy
 msgid "Kinematic character (2D)"
 msgstr "Personaje cinemático (2D)"
 
@@ -27,7 +26,6 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:9
-#, fuzzy
 msgid ""
 "Yes, the name sounds strange. \"Kinematic Character\". What is that? The "
 "reason for the name is that, when physics engines came out, they were called "
@@ -43,14 +41,13 @@ msgstr ""
 "es que cuando aparecieron los motores de físicas, fueron llamados motores de "
 "\"Dinámicas\" (porque tratan principalmente con respuestas de colisiones). "
 "Se llevaron a cabo muchos intentos para crear un controlador de personajes "
-"utilizando los motores de dinámicas, pero no era tan fácil como parecía. "
+"utilizando los motores de dinámicas, pero no fue tan fácil como parecía. "
 "Godot tiene una de las mejores implementaciones de controlador de personajes "
 "dinámicos (como puede verse en la demo 2d/plataformas), pero usarlo requiere "
 "un considerable nivel de habilidad y conocimiento de motores de físicas (o "
 "mucha paciencia con el ensayo y error)."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:19
-#, fuzzy
 msgid ""
 "Some physics engines, such as Havok seem to swear by dynamic character "
 "controllers as the best option, while others (PhysX) would rather promote "
@@ -65,7 +62,6 @@ msgid "So, what is the difference?:"
 msgstr "Entonces, ¿cuál es la diferencia?:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:25
-#, fuzzy
 msgid ""
 "A **dynamic character controller** uses a rigid body with an infinite "
 "inertia tensor. Basically, it's a rigid body that can't rotate. Physics "
@@ -76,11 +72,11 @@ msgid ""
 "than one frame to be solved, so a few collisions may seem to displace a tiny "
 "bit. Those problems can be fixed, but require a certain amount of skill."
 msgstr ""
-"A **controlador de personaje dinámico** utiliza un cuerpo rígido con tensor "
+"Un **controlador de personaje dinámico** utiliza un cuerpo rígido con tensor "
 "de inercia infinita. Básicamente, es un cuerpo rígido que no puede rotar. "
-"Los motores de físicas siempre dejan a lo objetos chocar, y entonces "
-"resuelven sus colisiones todas juntas. Esto hace los controladores de "
-"personaje dinámico capaces de interactuar con otros objetos con físicas "
+"Los motores de física siempre dejan chocar a lo objetos y entonces resuelven "
+"sus colisiones todas juntas. Esto hace que los controladores de personaje "
+"dinámico sean capaces de interactuar con otros objetos con físicas "
 "perfectamente (como se ve en la demo del juego de plataformas), sin embargo "
 "estas interacciones no siempre son predecibles. Las colisiones también "
 "pueden tardar más de un fotograma en ser resueltas, así que unas pocas "
@@ -142,20 +138,18 @@ msgstr ""
 "para el personaje. Usa el sprite robot y crea una escena como esta:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:88
-#, fuzzy
 msgid ""
 "You'll notice that there's a warning icon next to our CollisionShape2D node; "
 "that's because we haven't defined a shape for it. Create a new CircleShape2D "
 "in the shape property of CollisionShape2D. Click on <CircleShape2D> to go to "
 "the options for it, and set the radius to 30:"
 msgstr ""
-"Notarás que hay un icono de advertencia junto al nodo CollisionShape2D, "
-"porque no hemos definido una forma para él. Crea un nuevo CircleShape2D en "
-"la propiedad shape de CollisionShape2D. Haz clic en <CircleShape2D> para ir "
-"a las opciones correspondientes, y establece el radio en 30:"
+"Notarás que hay un icono de advertencia junto al nodo CollisionShape2D, esto "
+"es porque no hemos definido una forma para él. Crea un nuevo CircleShape2D "
+"en la propiedad shape de CollisionShape2D. Haz clic en <CircleShape2D> para "
+"ir a las opciones correspondientes, y establece el radio en 30:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:95
-#, fuzzy
 msgid ""
 "**Note: As mentioned before in the physics tutorial, the physics engine "
 "can't handle scale on most types of shapes (only collision polygons, planes "
@@ -171,7 +165,6 @@ msgstr ""
 "afecta a la escala de la forma.**"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:102
-#, fuzzy
 msgid ""
 "Now, create a script for the character, the one used as an example above "
 "should work as a base."
@@ -188,12 +181,10 @@ msgstr ""
 "escena del mapa sea la principal, para que se ejecute al presionar play."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:111
-#, fuzzy
 msgid "Moving the kinematic character"
-msgstr "Movimiento del personaje cinemático"
+msgstr "Moviendo el personaje cinemático"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:113
-#, fuzzy
 msgid ""
 "Go back to the character scene, and open the script, the magic begins now! "
 "Kinematic body will do nothing by default, but it has a useful function "
@@ -224,7 +215,6 @@ msgstr ""
 "golpee el suelo. Bastante genial, ¿no?"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:149
-#, fuzzy
 msgid ""
 "The next step will be adding gravity to the mix, this way it behaves a "
 "little more like a regular game character:"
@@ -233,14 +223,13 @@ msgstr ""
 "comporta de una manera más parecida a la de un personaje real de un juego:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:185
-#, fuzzy
 msgid ""
 "Now the character falls smoothly. Let's make it walk to the sides, left and "
 "right when touching the directional keys. Remember that the values being "
 "used (for speed at least) are pixels/second."
 msgstr ""
 "Ahora el personaje cae suavemente. Hagamos que camine hacia los lados, "
-"izquierda y derecha cuando se presionen las teclas de dirección. Recuerda "
+"izquierda y derecha, cuando se presionen las teclas de dirección. Recuerda "
 "que los valores utilizados (al menos para la velocidad) son píxeles/segundo."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:189
