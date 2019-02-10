@@ -2,8 +2,10 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Abraao C. S. Filho <acsf09@gmail.com>, 2019.
 # Accácio <raccacio@poli.ufrj.br>, 2018.
 # Alan Araújo <alan.r.araujo@gmail.com>, 2018.
+# Alan Valmorbida <alanvalmorbida@gmail.com>, 2019.
 # Alisson Damasceno <damascenoalisson@gmail.com>, 2018.
 # Anderson Araujo <anderson.araujoprog@gmail.com>, 2018.
 # Anderson Jonas <lambosanm.d@gmail.com>, 2018.
@@ -20,12 +22,13 @@
 # Dimenicius <vinicius.costa.92@gmail.com>, 2018.
 # Douglas Fiedler <dognew@gmail.com>, 2018.
 # douglas neumeister <douglas.neumeister@gmail.com>, 2019.
-# Eduardo Abreu <eduo.abreu@gmail.com>, 2018.
+# Eduardo Abreu <eduo.abreu@gmail.com>, 2018-2019.
 # Emerson Guerra <guerraemerson@gmail.com>, 2018.
 # Fathos Law <fathos23@gmail.com>, 2018.
 # Filipe Dias <filipediascontato@gmail.com>, 2018.
 # Flávio Henrique <flavio.pessini@outlook.com>, 2018.
 # Gabriel Carvalho <billlmaster@gmail.com>, 2018-2019.
+# Gabriel Henrique Pereira Soare <ghsoares99795@gmail.com>, 2019.
 # George Marques <georgemjesus@gmail.com>, 2018.
 # Gilberto Lopes <gilbertolopes@ufrj.br>, 2018.
 # Guilherme Felipe C G Silva <guilhermefelipecgs@gmail.com>, 2018.
@@ -37,10 +40,11 @@
 # João Victor Lima <victordevtb@outlook.com>, 2018.
 # Joaquim Ferreira <joaquimferreira1996@bol.com.br>, 2018.
 # Joel Landgraf Filho <joel.landgraf@gmail.com>, 2019.
-# Julio Yagami <juliohenrique31501234@hotmail.com>, 2018.
+# Julio Yagami <juliohenrique31501234@hotmail.com>, 2018-2019.
 # ieleny filgueira <ielenyfilgueira@hotmail.com>, 2018.
 # Klaus Dellano <klaus.dd.sa@gmail.com>, 2018.
 # Leandro <xupisco@gmail.com>, 2018.
+# Leonardo Ramos <ranyor@gmail.com>, 2019.
 # Lucas Prado <lucade238oficial@gmail.com>, 2018.
 # LucasSouza6 <lucasosouza66@gmail.com>, 2018.
 # Lucas Vitor <lucasvitorifg@gmail.com>, 2018.
@@ -67,6 +71,7 @@
 # ShallZ <vzinbr@gmail.com>, 2018.
 # Stephann Vasconcelos <stephann@protonmail.com>, 2019.
 # suxuf@2odem.com <suxuf@2odem.com>, 2018.
+# Thiago Amendola <amendolathiago@gmail.com>, 2019.
 # Thiago R. Silvestrini <thiagorossi.s@gmail.com>, 2018.
 # Tiago Almeida <thyagoeap@gmail.com>, 2019.
 # Tiago A. Reul <tiago@reul.space>, 2018.
@@ -79,8 +84,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-26 22:13+0100\n"
-"PO-Revision-Date: 2019-01-26 06:06+0000\n"
-"Last-Translator: Renne Sampaio <rennesampaio97@gmail.com>\n"
+"PO-Revision-Date: 2019-02-10 12:39+0000\n"
+"Last-Translator: Julio Yagami <juliohenrique31501234@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -3754,14 +3759,12 @@ msgstr ""
 "permitindo você saber quando o jogador coletou ela."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:327
-#, fuzzy
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
-"Na próxima seção, :ref:`doc_your_first_game`, você construirá um jogo "
-"completo, incluindo vários usos de sinais para conectar diferentes "
-"componentes do jogo."
+"Na próxima seção, :ref:`doc_your_first_game`, você criará um jogo completo "
+"contendo vários usos de sinais para conectar diferentes componentes do jogo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
@@ -3839,13 +3842,12 @@ msgstr ""
 "explicação de configuração de um projeto e de uso do editor."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
-#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
-"Este jogo usa o modo retrato, então precisamos ajustar as dimensões da "
+"Este jogo usará o modo retrato, então precisamos ajustar as dimensões da "
 "janela de jogo. Clique em Projeto -> Configurações do Projeto -> Display "
 "(Exibição) -> Window (Janela) e configure \"Width\" (\"Largura\") para 480 e "
 "\"Height\" (Altura) para 720."
@@ -18604,14 +18606,23 @@ msgid ""
 "(`#18364 comment <https://github.com/godotengine/godot/"
 "issues/18364#issuecomment-406222102>`_)"
 msgstr ""
+"A exportação de projetos Mono é suportada apenas para plataformas desktop "
+"(Linux, Windows e macOS). HTML5, Android, iOS e UWP não são suportados "
+"atualmente (`#18364 comment <https://github.com/godotengine/godot/"
+"issues/18364#issuecomment-406222102>`_)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
+#, fuzzy
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name and is unique within the project assembly (`#7402 "
 "comment <https://github.com/godotengine/godot/"
 "issues/7402#issuecomment-269910926>`_)"
 msgstr ""
+"Script C# anexado deve se referir à uma classe que tem o nome de classe que "
+"combina com o nome do arquivo e é único dentro da montagem do projeto "
+"(`#7402 comment <https://github.com/godotengine/godot/"
+"issues/7402#issuecomment-269910926>`_)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:152
 msgid "Performance of C# in Godot"
@@ -18751,6 +18762,9 @@ msgid ""
 "``GetNode<T>()`` casts the node before returning it. It will throw an "
 "``InvalidCastException`` if the node cannot be cast to the desired type."
 msgstr ""
+"``GetNode<T>()`` faz a conversão do nó antes de retorná-lo. Um erro do tipo "
+"``InvalidCastException`` será retornado caso o nó não possa ser convertido "
+"para o tipo desejado."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:56
 #, fuzzy
@@ -19905,13 +19919,20 @@ msgid ""
 "\", which can be downloaded here: https://github.com/godotengine/godot-"
 "blender-exporter"
 msgstr ""
+"Esse capítulo se refere ao plugin do Blender chamado \"Godot Blender Exporter"
+"\", que pode ser feito o download aqui: https://github.com/godotengine/godot-"
+"blender-exporter"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:7
+#, fuzzy
 msgid ""
 "This plugin can be used to export Blender scenes in a Godot-specific scene "
 "format called ESCN, which is similar to TSCN (text format) but will be "
 "imported as binary SCN for performance."
 msgstr ""
+"Este plugin pode ser utilizado para exportar cenas do Blender para um "
+"formato específico de cena do Godot chamado de ESCN, que é similar ao TSCN "
+"(formato de texto), mas será importado como binário SCN pela perfomance."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:12
 msgid "Details on exporting"
@@ -20357,12 +20378,18 @@ msgid "Bone Weights"
 msgstr "Peso dos ossos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
+#, fuzzy
 msgid ""
 "Blender put rigged mesh vertices which has no bone weights at its original "
 "position, but these vertices would be placed at (0, 0, 0) in Godot, making "
 "the mesh deformed. Therefore, the exporter would raise an error for any "
 "vertex with no bone weights detected in a rigged mesh."
 msgstr ""
+"Blender (Programa usado para criação de modelos 3D) colocou o modelo "
+"manimulado que não tem pessos ósseos na posição original, porém os vértices "
+"teriam que serem colocados na posição (0, 0, 0) no Godot, tornando o modelo "
+"deformado. Portanto, o exportador mostraria um erro para qualquer vértice "
+"sem pesos ósseos detectados no modelo manipulado."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:27
 msgid "Non-Deform Bone"
@@ -20400,17 +20427,16 @@ msgid "Animation"
 msgstr "Animação"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "Animation supported:"
-msgstr "Animações"
+msgstr "Animações suportadas:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
-msgstr ""
+msgstr "transformar animação de todos os tipos de objetos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
 msgid "transform animation of pose bones"
-msgstr ""
+msgstr "transformar animação de ossos de pose"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
 #, fuzzy
@@ -20418,18 +20444,16 @@ msgid "shape key animation"
 msgstr "Animação por Sprites"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
-#, fuzzy
 msgid "light animation"
-msgstr "Animação por Sprites"
+msgstr "Animação de luzes"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "camera animation"
-msgstr "Animação por Sprites"
+msgstr "Animação da câmera"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
-msgstr ""
+msgstr "Múltiplas ações para um único objeto"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
 msgid ""
@@ -20437,16 +20461,21 @@ msgid ""
 "This add-on has support for exporting multiple actions all at once into a "
 "single AnimationPlayer and makes it easy to switch actions."
 msgstr ""
+"Na maior parte dos jogos, um objeto teria animações para as quais alternar. "
+"Esta extensão tem suporte para exportar múltiplas ações, todas de uma vez, "
+"em apenas um AnimationPlayer o que torna fácil a mudança de ações."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
 msgid ""
 "This workflow makes use of blender nla_tracks. Here is a brief guide on how "
 "to use this feature:"
 msgstr ""
+"Esse fluxo de trabalho faz uso de nla_tracks do Blender. Segue um breve guia "
+"de como utilizar esta funcionalidade:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
 msgid "**1. Switch workspace to 'Dope Sheet'**"
-msgstr ""
+msgstr "**1. Mude o espaço de trabalho para 'Dope Sheet'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:23
 msgid "**2. Stash the active action**"
@@ -20517,10 +20546,12 @@ msgid ""
 "Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
 msgstr ""
+"Tratar todas as animações como ações de objeto, então na cena exportada, "
+"cada objeto teria seu próprio AnimationPlayer mantendo suas ações."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Scene Animation'**"
-msgstr ""
+msgstr "**Modo 'Animação de Cena'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid ""
@@ -20528,10 +20559,13 @@ msgid ""
 "Blender's timeline, this is what you want. In this mode, all the animations "
 "in the scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
+"Se você quer sua animação gere o mesmo resultado que o da linha do tempo do "
+"Blender, isto é o que você quer. Neste modo, todas as animações na cena são "
+"colocadas em apenas um AnimationPlayer na raiz da cena."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Animation as Action with Squash'**"
-msgstr ""
+msgstr "Animações suportadas:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid ""

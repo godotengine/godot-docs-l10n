@@ -3,7 +3,8 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Aleksey Terentyev <terentjew.alexey@ya.ru>, 2018.
-# Alex Afterlife <main-site-maker@yandex.ru>, 2018.
+# Alex Afterlife <main-site-maker@yandex.ru>, 2018-2019.
+# Alexander Danilov <modos189@protonmail.com>, 2019.
 # Alexander Pushkar <alexanderpushkar86@gmail.com>, 2018.
 # Alexandr Eremeev <ae125529@gmail.com>, 2019.
 # Alex <snimalovo@gmail.com>, 2018.
@@ -32,7 +33,7 @@
 # JackLite <jackkdlite@gmail.com>, 2018.
 # Kenta Akiyama <kentaakiyamagd@gmail.com>, 2018.
 # LAT_Rio <AlSenya@yandex.ru>, 2018.
-# luckyuk <im-kerber@mail.ru>, 2018.
+# luckyuk <im-kerber@mail.ru>, 2018-2019.
 # Mintormo <adenos@mail.ru>, 2018.
 # mirrorrim <hieronymus1100@gmail.com>, 2019.
 # Neo6666666 <Neo6666666@gmail.com>, 2018.
@@ -40,7 +41,7 @@
 # Nikita Nigmatullin <nnigmat@gmail.com>, 2018.
 # Novikov Vladimir <valdemar.const@gmail.com>, 2018.
 # Omicron <omicron666.dev@gmail.com>, 2018.
-# Petr Kustov <zcaliptium@gmail.com>, 2018.
+# Petr Kustov <zcaliptium@gmail.com>, 2018-2019.
 # Roman <Steel_hawk@list.ru>, 2018-2019.
 # Ruaguzov Michael <miha890r@gmail.com>, 2019.
 # sample text <sampletext32@bk.ru>, 2018.
@@ -54,6 +55,7 @@
 # Yan <uvokinuvokines@gmail.com>, 2018.
 # Азиз Ганиев <ajganiev@gmail.com>, 2018.
 # Александр <ol-vin@mail.ru>, 2018-2019.
+# Александр <sashnos98@gmail.com>, 2019.
 # Анатолий Горбунов <afgorbunov@gmail.com>, 2018.
 # Аркадий Авас <savvot@gmail.com>, 2018.
 # Аслан Снупов <aslan170505@gmail.com>, 2018.
@@ -66,6 +68,7 @@
 # Лошаденко Максим Юриевич <vidos4all@gmail.com>, 2018.
 # Михаил <gagaran480@gmail.com>, 2018.
 # Озвучивает R2 <magabumbum@gmail.com>, 2018.
+# Олег Бених <xlegioner@gmail.com>, 2019.
 # Семён Рассохин <forzcross@gmail.com>, 2018.
 #
 msgid ""
@@ -73,8 +76,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-26 22:13+0100\n"
-"PO-Revision-Date: 2019-01-26 20:53+0000\n"
-"Last-Translator: Roman <Steel_hawk@list.ru>\n"
+"PO-Revision-Date: 2019-02-08 15:04+0000\n"
+"Last-Translator: Олег Бених <xlegioner@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -332,7 +335,6 @@ msgstr ""
 "как краткое описание Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -341,12 +343,12 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot это полный возможностей, кросс-платформенный движок для создания 2D и "
-"3D игр из удобной среды разработки. Он предоставляет внушительный набор "
-"необходимых инструментов, чтобы пользователи могли сосредоточиться на "
-"создании игр без изобретения велосипедов. Игры могут быть экспортированы "
-"одним нажатием на множество платформ, включая главные десктопные (Linux, "
-"macOS, Windows), мобильные (Android, iOS) и веб-платформы(HTML5)."
+"Godot — это полнофункциональный, кросс-платформенный движок для создания 2D "
+"и 3D игр в удобной среде разработки. Он предоставляет внушительный набор "
+"необходимых инструментов, позволяющих сосредоточиться на создании игр без "
+"изобретения «велосипедов». Игры могут быть экспортированы в один клик на "
+"множество платформ, включая основные настольные (Linux, macOS, Windows), "
+"мобильные (Android, iOS) и веб-платформы(HTML5)."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -457,14 +459,12 @@ msgstr ""
 "всех новых пользователей."
 
 #: ../../docs/about/introduction.rst:80
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-"В отличие от предыдущей, секцию :ref:`sec-tutorials` можно читать в любом "
-"порядке по мере необходимости. Там находятся руководства и документация по "
-"отдельным возможностям движка."
+"При необходимости, секцию :ref:`sec-tutorials` можно читать в любом порядке. "
+"Она содержит руководства и документацию по конкретным возможностям движка."
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -472,7 +472,7 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
-"Секция :ref:`sec-devel предназначена для продвинутых пользователей и "
+"Секция :ref:`sec-devel` предназначена для продвинутых пользователей и "
 "участников разработки движка, и включает в себя информацию о том, как "
 "компилировать движок, разрабатывать модули на C++ или плагины для редактора."
 
@@ -537,9 +537,9 @@ msgid ""
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
 "Godot - это `Свободное и открытое программное обеспечение <https://en."
-"wikipedia.org/wiki/Free_and_open-source_software>`_, которое  доступное под "
+"wikipedia.org/wiki/Free_and_open-source_software>`_, которое  доступно под "
 "`OSI-утвержденной <https://opensource.org/licenses/MIT>`_ MIT лицензией. Это "
-"означает что он свободен как \"свобода слова\" равно как и \"свобода "
+"означает, что он свободен как \"свобода слова\" равно как и \"свобода "
 "действий.\""
 
 #: ../../docs/about/faq.rst:11
@@ -777,9 +777,9 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
-"Есть несколько причин использовать GDScript--особенно когда вы "
+"Есть несколько причин использовать GDScript -- особенно когда вы "
 "прототипируете, в альфа/бета состояниях вашего проекта или создании игры не "
-"AAA класса--но наиболее существенной причиной является общее **снижение "
+"AAA класса -- но наиболее существенной причиной является общее **снижение "
 "сложности.**"
 
 #: ../../docs/about/faq.rst:101
@@ -1547,7 +1547,6 @@ msgstr ""
 "и AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
-#, fuzzy
 msgid ""
 "You’ll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press F1 to "
@@ -1555,7 +1554,7 @@ msgid ""
 msgstr ""
 "Вы будете использовать **2D рабочее пространство** для всех типов игр. В "
 "дополнение к 2D-играм, там вы будете создавать свои интерфейсы. Нажмите F1 "
-"для доступа к нему. |Image15|"
+"для доступа к нему."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
 msgid "|image15|"
@@ -1700,7 +1699,7 @@ msgid ""
 "full of fresh ingredients with which to cook."
 msgstr ""
 "Создание игр в Godot очень похоже на то, что делают на кухне. На этой кухне "
-"* узлы * похожи на холодильник, полный свежих ингредиентов, из которых можно "
+"*узлы* похожи на холодильник, полный свежих ингредиентов, из которых можно "
 "готовить блюдо."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
@@ -1736,7 +1735,7 @@ msgstr "У него есть имя."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr "Это его редактируемые свойства."
+msgstr "Он имеет редактируемые свойства."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
@@ -1775,8 +1774,9 @@ msgid ""
 "nodes exist and can be arranged this way."
 msgstr ""
 "Не беспокойтесь, если не разобрались в этом. Мы продолжим изучение этого в "
-"следующих нескольких разделах. Самое важное что, нужно запомнить на данный "
-"момент, это то, что узлы существуют и могут быть организованы таким образом."
+"следующих нескольких разделах. Самое важное, что нужно запомнить на данный "
+"момент - это то, что узлы существуют и могут быть организованы таким вот "
+"образом."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
@@ -1800,7 +1800,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has one root node."
-msgstr "всегда есть только один корневой нод."
+msgstr "всегда имеет только один корневой нод."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
@@ -1808,7 +1808,7 @@ msgstr "могут быть сохранены на диск и загружен
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr "могут быть * инстанцированы * (подробнее об этом позже)."
+msgstr "могут быть *инстанцированы* (подробнее об этом позже)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
@@ -2077,7 +2077,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr "Instancing"
+msgstr "Instancing (создание экземпляра)"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:9
 msgid ""
@@ -2109,8 +2109,8 @@ msgid ""
 "filename extension."
 msgstr ""
 "Вы можете создать столько сцен, сколько хотите, и сохранить их на диск. "
-"Сцены, сохраненные таким образом, называются \"Packed Scenes и имеют "
-"расширение ``.tscn``."
+"Сцены, сохраненные таким образом, называются \"Упакованные сцены\" (Packed "
+"Scenes) и имеют расширение ``.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
@@ -2266,15 +2266,15 @@ msgid "Conclusion"
 msgstr "Вывод"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:114
-#, fuzzy
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_instancing_continued`."
 msgstr ""
-"Создавать экземпляры может быть полезно, если вы хотите создать много копий "
-"одного и того же объекта. Также возможно создать экземпляр используя "
-"GDScript, см :ref:`doc_scripting_continued`."
+"Создавать экземпляры может быть полезно, если вы хотите создать множество "
+"копий одного и того же объекта. Также возможно создать экземпляр "
+"непосредственно в коде, используя GDScript, см :ref:"
+"`doc_scripting_continued`."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
@@ -3365,7 +3365,6 @@ msgstr ""
 "парсинга (только для GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
-#, fuzzy
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
@@ -3373,7 +3372,7 @@ msgid ""
 "must be called. This will return the tree of nodes that can be added to the "
 "active scene:"
 msgstr ""
-"Но ``scene`` еще не является узлом. Она упакована в специальный ресурс, "
+"Но ``scene`` еще не является узлом. Она упакована в специальный пакет, "
 "называемый :ref:`PackedScene <class_PackedScene>`. Чтобы создать настоящий "
 "узел, необходимо вызвать функцию :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>`. Это вернет дерево узлов, которое можно "
@@ -3841,13 +3840,12 @@ msgstr ""
 "настройки проекта и использования редактора."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
-#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
-"В данной игре будет использоваться портретный режим, поэтому нам нужно "
+"В данной игре будет использоваться портретный вид, поэтому нам нужно "
 "настроить размер игрового окна. Нажмите \"Проект\" -> \"Настройки проекта\" -"
 "> \"Дисплей\" -> \"Окно\" и установите значения полей \"Ширина\" - 480 и "
 "\"Высота\" - 720."
@@ -3857,7 +3855,6 @@ msgid "Organizing the project"
 msgstr "Организация Проекта"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
-#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -3867,12 +3864,11 @@ msgid ""
 "can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
 "В этом проекте мы создадим 3 независимые сцены: ``Player``, ``Mob`` и "
-"``HUD``, которые мы будем комбинировать со сценой игры ``Main``. В более "
-"крупном проекте было бы полезно сделать папки для хранения различных сцен и "
-"их скриптов, но для этой относительно небольшой игры вы можете сохранять "
-"свои сцены и скрипты в корневой папке, называемой ``res://``. Вы можете "
-"видеть папки проекта в доке FileSystem (Файловая Система) в верхнем левом "
-"углу:"
+"``HUD``, которые мы будем комбинировать со сценой ``Main``. В более крупном "
+"проекте было бы полезно сделать папки для хранения различных сцен и их "
+"скриптов, но для этой, относительно небольшой игры, вы можете сохранять свои "
+"сцены и скрипты в корневой папке, называемой ``res://``. Вы можете видеть "
+"папки проекта в доке FileSystem (Файловая Система) в верхнем левом углу:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
@@ -4069,7 +4065,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:158
 msgid "Start by declaring the member variables this object will need:"
-msgstr "Чтобы начать объявлять переменные объекта понадобится:"
+msgstr ""
+"Начните с объявления переменных - членов, которые понадобятся этому объекту:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:179
 #, fuzzy
@@ -4083,9 +4080,10 @@ msgid ""
 msgstr ""
 "Использование ключевого слова ``export`` у первой переменной ``speed`` "
 "позволяет устанавливать ее значение в Инспекторе. Это может быть полезно, "
-"если вы хотите изменять значения точно так же как и встроенные в узел "
-"свойства. Щелкните на узел ``Player`` и установите значение скорости равным "
-"``400``."
+"если вы хотите изменять значения точно так же как и встроенные свойства "
+"узла. Щелкните на узел ``Player`` и вы увидите, что свойство теперь вилось в "
+"разделе \"Script Variables\" в Инспекторе. Помните, что если изменить "
+"значение здесь, то оно перезапишет значение, установленное в скрипте."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:186
 msgid ""
@@ -4109,7 +4107,6 @@ msgstr ""
 "является хорошим моментом для определения размера игрового окна:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:210
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
@@ -4118,8 +4115,8 @@ msgid ""
 msgstr ""
 "Теперь мы можем использовать функцию ``_process()`` для определения того, "
 "что игрок будет делать. ``_process()`` вызывается каждый кадр, поэтому мы "
-"будем использовать ее для обновления состояния объектов нашей игры. Сделаем "
-"следующее:"
+"будем использовать ее для обновления состояния тех элементов нашей игры, "
+"которые будут часто изменяться. Для игрока, сделаем следующее:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:215
 msgid "Check for input."
@@ -4134,7 +4131,6 @@ msgid "Play the appropriate animation."
 msgstr "Воспроизведение соответствующей анимации."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:219
-#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -4143,12 +4139,13 @@ msgid ""
 "we will use the default events that are assigned to the arrow keys on the "
 "keyboard."
 msgstr ""
-"Во-первых, нам нужно проверить ввод - игрок нажимает клавишу? Для этой игры "
-"у нас есть 4 направления для проверки ввода. Вводные действия определяются в "
-"настройках проекта в разделе \"Карта ввода\". Вы можете определить "
-"пользовательские события и назначить для них разные клавиши, события мыши "
-"или другие варианты ввода. Для данной демонстрации мы будем использовать "
-"события по умолчанию, назначенные клавишам со стрелками на клавиатуре."
+"Во-первых, нам нужно обрабатывать ввод с клавиатуры (нажимает ли игрок "
+"клавишу?). В этой игре у нас есть 4 направления движения, соответственно "
+"кнопок управляющих движением тоже будет 4. Назначить действия на "
+"определённые клавиши можно в настройках проекта в разделе \"Список действий"
+"\". Для данной демонстрации назначать клавиши не понадобится, потому что мы "
+"будем использовать действия назначенные по-умолчанию (стрелками на "
+"клавиатуре)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:226
 msgid ""
@@ -4160,7 +4157,6 @@ msgstr ""
 "или ``false``, если нет."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:288
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -4169,12 +4165,13 @@ msgid ""
 "``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
-"Мы проверяем каждый ввод и добавляем/вычитаем значение из ``velocity``, "
-"чтобы получить общее направление. Например, если вы одновременно удерживаете "
-"``right`` и ``down``, полученный вектор ``velocity`` будет ``(1, 1) ``. В "
-"этом случае, поскольку мы добавляем горизонтальное и вертикальное движение, "
-"игрок будет двигаться *быстрее*, чем если бы он просто перемещался по "
-"горизонтали."
+"Начнём с того, что установим значение ``velocity`` в``(0, 0)`` - по "
+"умолчанию игрок двигаться не должен. Затем, мы проверяем каждый ввод и "
+"добавляем/вычитаем значение из ``velocity``, чтобы получить общее "
+"направление. Например, если вы одновременно удерживаете ``right`` и "
+"``down``, полученный вектор ``velocity`` будет ``(1, 1) ``. В этом случае, "
+"поскольку мы добавляем горизонтальное и вертикальное движение, игрок будет "
+"двигаться *быстрее*, чем если бы он перемещался  только по горизонтали."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:295
 msgid ""
@@ -4206,15 +4203,15 @@ msgstr ""
 "остановить анимацию AnimatedSprite."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:306
-#, fuzzy
 msgid ""
 "In GDScript, ``$`` returns the node at the relative path from the current "
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
-"``$`` возвращает узел по относительному пути от текущего узла или возвращает "
-"``null``, если узел не найден. Поскольку AnimatedSprite является дочерним "
-"элементом текущего узла, мы можем использовать ``$AnimatedSprite``."
+"В GDScript, ``$`` возвращает узел по относительному пути от текущего узла "
+"или возвращает ``null``, если узел не найден. Поскольку AnimatedSprite "
+"является дочерним элементом текущего узла, мы можем использовать ``"
+"$AnimatedSprite``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid ""
@@ -5034,15 +5031,14 @@ msgstr ""
 "``2`` и измените ``One Shot`` установить на  \"On\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
-#, fuzzy
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
 "show the \"Start\" button."
 msgstr ""
-"Эта функция вызывается, когда игрок проигрывает. Она будет показывать \"Game "
-"Over\" на 2 секунды, затем вернуться к экрану названия и появится кнопка "
-"\"Start\"."
+"Эта функция вызывается, когда игрок проигрывает. Она будет показывать "
+"надпись \"Game Over\" на 2 секунды, затем будет происходить возврат к "
+"основному экрану и появится кнопка \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1025
 msgid ""
@@ -5058,9 +5054,10 @@ msgstr ""
 "прежде чем показать кнопку \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
-#, fuzzy
 msgid "This function is called by ``Main`` whenever the score changes."
-msgstr "Эта функция вызывается в ``Main`` всякий раз, когда изменяется оценка."
+msgstr ""
+"Эта функция вызывается из ``Main`` каждый раз, когда изменяется количество "
+"очков."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1045
 msgid ""
@@ -5165,13 +5162,12 @@ msgstr ""
 "``ColorRect``, так чтобы он покрывал экран."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
-#, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."
 msgstr ""
-"Вы также можете добавить фоновое изображение, если у вас оно есть, с помощью "
-"``Sprite``узла."
+"Вы можете добавить фоновое изображение (если у вас оно есть), с помощью узла "
+"``Sprite``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid "Sound effects"
@@ -5255,18 +5251,12 @@ msgid "Project files"
 msgstr "Файлы проекта"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
-#, fuzzy
 msgid "You can find a completed version of this project at these locations:"
-msgstr ""
-"Вы можете найти полную версию этого проекта здесь: https://github.com/"
-"kidscancode/Godot3_dodge/releases"
+msgstr "Вы можете загрузить завершённую версию этого проекта по этим ссылкам:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
-#, fuzzy
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
-"Вы можете найти полную версию этого проекта здесь: https://github.com/"
-"kidscancode/Godot3_dodge/releases"
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1189
 msgid "https://github.com/godotengine/godot-demo-projects"
@@ -5441,12 +5431,11 @@ msgstr ""
 "проекта, на подобию `.apk`на Android или `.exe`на Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
-#, fuzzy
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
-"На вкладках \"Ресурсы\" и \"Особенности\" вы можете настроить экспорт игры "
+"Во вкладках \"Ресурсы\" и \"Особенности\" вы можете настроить экспорт игры "
 "для каждой платформы. Эти настройки пока оставим."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
@@ -5680,18 +5669,16 @@ msgstr ""
 "файлы:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
-#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
 "you don't have one set up on your computer, you can use Google to find "
 "suggestions for your specific OS."
 msgstr ""
-"Просмотр файла `.html` в браузере позволяет вам воспроизводить игру. Не "
-"смотря на это, вы не можете открыть файл напрямую, т.к. он должен "
-"обслуживаться веб-сервером. Если у вас на компьютере нет такого сервера, вы "
-"можете использовать Google, чтобы найти варианты для вашей операционной "
-"системы."
+"Просмотр файла `.html` в браузере позволяет вам воспроизводить игру. Однако, "
+"вы не сможете открыть файл напрямую, т.к. он должен обслуживаться веб-"
+"сервером. Если у вас на компьютере нет такого сервера, вы можете "
+"использовать Google, чтобы найти варианты для вашей операционной системы."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:278
 msgid ""
@@ -5736,15 +5723,14 @@ msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
 msgstr "Теперь, когда вы \"набили руку\", давайте поговорим о дизайне Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
-#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
 "they offer a range of features, but the design of each engine is unique. "
 "This leads to different workflows and different ways to form your games’ "
 "structures. This all stems from their respective design philosophies."
 msgstr ""
-"**Каждый игровой движок отличается и соответствует различным потребностям.** "
-"Мало того, что они предлагают ряд функций, дизайн каждого движка уникален. "
+"**Каждый игровой движок отличается и соответствует различным потребностям."
+"**Они не только предлагают ряд функций,но и дизайн каждого движка уникален. "
 "Это приводит к разным рабочим процессам и различным способам формирования "
 "структур ваших игр. Все это вытекает из их соответствующих концепций дизайна."
 
@@ -5803,17 +5789,16 @@ msgid "On top of that, you can **inherit** from any scene."
 msgstr "Более того, вы можете **наследовать** от любой сцены."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
-#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
 "of a level… anything you’d like. It works like a class in pure code, except "
 "you’re free to design it by using the editor, using only the code, or mixing "
 "and matching the two."
 msgstr ""
-"Сценой в Godot может являться Оружие, Персонаж, Элемент, Дверь, Уровень, "
-"часть уровня....всё, что пожелаете. Это работает как классы в коде, за "
+"Сценой в Godot может являться Оружие, Персонаж, Предмет, Дверь, Уровень, "
+"часть уровня... всё, что пожелаете. Это работает как классы в коде, за "
 "исключением лишь того, что вы сами создаёте всё сами, используя Редактор, "
-"только код или и то, и другое одновременно."
+"либо только код, либо то и другое одновременно."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
 #, fuzzy
@@ -5895,14 +5880,13 @@ msgstr ""
 "редактор."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
-#, fuzzy
 msgid ""
 "GDscript lets you write simple code using Python-like syntax, yet it detects "
 "types and offers a static language's quality of auto-completion. It is also "
 "optimized for gameplay code with built-in types like Vectors and Colors."
 msgstr ""
 "GDscript позволяет писать простой код, используя Python-подобный синтаксис, "
-"он обнаруживает типы и предлагает качественное  автоматическое завершение "
+"он обнаруживает типы и предлагает качественное автоматическое завершение "
 "статического языка. Он также оптимизирован для игрового кода со встроенными "
 "типами, такими как векторы и цвета."
 
@@ -5955,7 +5939,6 @@ msgid "Open source"
 msgstr "Открытый исходный код"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
-#, fuzzy
 msgid ""
 "Godot offers a fully open source codebase under the **MIT license**. This "
 "means all the technologies that ship with it have to be Free (as in freedom) "
@@ -5964,7 +5947,7 @@ msgid ""
 msgstr ""
 "Godot предлагает полностью открытую кодовую базу под лицензией **MIT.** Это "
 "означает, что все технологии, которые поставляются с ней, должны быть "
-"бесплатными. По большей части, они кодируются авторами с нуля."
+"бесплатными. По большей части, они разрабатываются авторами с нуля."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
 msgid ""
@@ -6272,15 +6255,14 @@ msgid "TextureRect"
 msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
-#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
 "**TextureRect** отображает текстуру или изображение внутри пользовательского "
-"интерфейса. Он похож на узел Sprite, но он дает множество режимов "
-"растяжения. Установите режим Stretch для изменения поведения:"
+"интерфейса. Он похож на узел Sprite, но имеет множество режимов растяжения. "
+"Изменить режим растяжения можно с помощью свойства Stretch Mode."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
 msgid ""
@@ -6436,7 +6418,6 @@ msgid "TextureProgress bar, two thirds filled"
 msgstr "TextureProgress шкала, две трети заполнены"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
-#, fuzzy
 msgid ""
 "**Label** prints text to the screen. You'll find all its properties in the "
 "Label section, in the Inspector. Write the text in the ``Text`` property, "
@@ -6445,10 +6426,10 @@ msgid ""
 "horizontally and vertically with Align and Valign, respectively."
 msgstr ""
 "**Label** выводит текст на экран. Его свойства находятся в разделе Label, в "
-"инспекторе. Напишите текст в поле ``Text``, и проверьте Autowrap если вы не "
-"хотите нарушить размер текстового поля. Если Autowrap выключен, вы не "
-"сможете изменять масштаб узла. Вы можете выровнять текст горизонтально и "
-"вертикально при помощи Align и Valing соответственно."
+"инспекторе. Напишите текст в поле ``Text``, и проверьте значение свойства "
+"Autowrap если вы не хотите нарушить размер текстового поля. Если Autowrap "
+"выключен, вы не сможете изменять масштаб узла. Вы можете выровнять текст "
+"горизонтально и вертикально при помощи свойств Align и Valing соответственно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:152
 msgid "Picture of a Label"
@@ -6459,15 +6440,14 @@ msgid "NinePatchRect"
 msgstr "\"NinePatchRect\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
-#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
-"** NinePatchRect ** разделяет текстуры на 3 строки и 3 столбца. Центральная "
-"и боковая стороны масштабируются, но углы нет. Полезно создавать панели, "
+"**NinePatchRect ** разделяет текстуры на 3 строки и 3 столбца. Центральная и "
+"боковая стороны масштабируются, но углы нет. Полезно создавать панели, "
 "диалоговые окна и масштабируемые фоны для вашего пользовательского "
 "интерфейса."
 
@@ -7530,17 +7510,17 @@ msgid "Design the GUI"
 msgstr "Разработка графического интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
 "energy bar, and bomb and emerald counters. By the end of this tutorial, "
 "you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
-"Теперь, когда Вы знаете основы, мы рассмотрим, как построить "
-"пользовательский интерфейс игры (GUI) с многоразовыми компоненты: шкала "
-"здоровья, энергии, и счетчики бомб и кристаллов. К концу этого урока, у вас "
-"будет GUI, готовый к управлению из GDscript или VisualScript:"
+"Теперь, когда вы освоили основы, мы рассмотрим, как построить "
+"пользовательский интерфейс игры (GUI) с многократно используемыми "
+"компонентами: шкала здоровья, энергии, и счетчики бомб и кристаллов. К концу "
+"этого урока у вас будет GUI, готовый к управлению с помощью GDscript или "
+"VisualScript:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
@@ -7586,15 +7566,14 @@ msgid "Breaking down the UI"
 msgstr "Разбивка UI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:30
-#, fuzzy
 msgid ""
 "Let's break down the final UI and plan the containers we'll use. As in the :"
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
 "up to three columns:"
 msgstr ""
-"Время разбить UI подумать какие контейнеры мы будем использовать. Как и в: :"
-"doc:`ui_main_menu`, он начинается с ``MarginContainer``. Теперь мы видим три "
-"столбца:"
+"Давайте разберём окончательный UI спланируем, какие контейнеры мы будем "
+"использовать. Как и в: :doc:`ui_main_menu`, начнём с ``MarginContainer``. "
+"Затем мы видим три столбца:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
 msgid "The life and energy counters on the left"
@@ -7606,25 +7585,22 @@ msgstr "Шкалы здоровья и энергии"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-#, fuzzy
 msgid "The bomb and emerald counters on the right"
-msgstr "Справа счетчики бомб и кристаллов"
+msgstr "Справа счётчики бомб и кристаллов"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
-#, fuzzy
 msgid ""
 "But the bar's label and the gauge are two parts of the same UI element. If "
 "we think of them this way, we're left with two columns:"
 msgstr ""
-"Но шкала ярлыка и датчик являются частями одного и того же элемента UI. "
-"Таким образом, у нас остались две колонки:"
+"Но счётчики и шкалы являются частями одного и того же элемента UI. Таким "
+"образом, у нас остались две колонки:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:41
 msgid "The life and energy bars on the left"
-msgstr "Слева шкалы жизни и энергии"
+msgstr "Слева шкалы здоровья и энергии"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
-#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -7644,15 +7620,14 @@ msgid "We get a clean UI layout with only 4 containers"
 msgstr "Мы получаем чистую компоновку UI только с 4 контейнерами"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:55
-#, fuzzy
 msgid ""
 "We will need extra containers inside the individual UI components, but this "
 "gives us the main GUI scene's structure. With this plan in place, we can "
 "jump into Godot and create our GUI."
 msgstr ""
 "Нам понадобятся дополнительные контейнеры внутри некоторых компонентов UI, "
-"но это дает нам структуру основной сцены GUI. С этим планом, мы можем "
-"прыгнуть в Godot и создать наш GUI."
+"но это дает нам структуру основной сцены GUI. С этим планом мы можем перейти "
+"в Godot и создать наш GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:60
 msgid "Create the base GUI"
@@ -7680,14 +7655,12 @@ msgid "For now, let's start with a few containers."
 msgstr "Сейчас давайте начнем с нескольких контейнеров."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
-#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
 "Создайте новую сцену и добавьте ``MarginContainer``. Выберите узел и "
-"назовите его ``GUI``. Затем сохраните сцену как ``GUI.tscn``. Он будет "
-"содержать весь GUI."
+"назовите его ``GUI``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
 msgid ""
@@ -7706,7 +7679,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
-msgstr "Сохраните сцену как ``GUI.tscn`. Мы оставим весь GUI в нем."
+msgstr "Сохраните сцену как ``GUI.tscn``. Мы оставим весь GUI в нём."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
 msgid ""
@@ -7802,24 +7775,23 @@ msgstr "``NinePatchRect`` с именем ``Background``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:125
 msgid "A ``TextureRect`` named ``Title``"
-msgstr "``TextureRect`` с именем``Title``"
+msgstr "``TextureRect`` с именем ``Title``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
 msgid "And a ``Label`` named ``Number``"
-msgstr "И ``Label`` с именем``Number``"
+msgstr "И ``Label`` с именем ``Number``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:128
 msgid "To add the nodes as siblings, always select the ``Count`` node first."
 msgstr ""
-"Чтобы добавить узлы как братьев и сестер, всегда, сначала выберайте узел '' "
-"Count''."
+"Чтобы добавлять узлы на один и тот же уровень, всегда сначала выбирайте узел "
+"``Count``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:132
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
 msgstr ""
-"Дерево сцен должно выглядеть так. Мы готовы закинуть внутрь какие-нибудь "
-"текстуры"
+"Ваше дерево сцены должно выглядеть так. Мы готовы добавить несколько текстур"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
 msgid ""
@@ -7847,14 +7819,14 @@ msgid ""
 "Inspector, scroll down to the Rect section. Set ``Min Size`` to (100, 40). "
 "You should see the ``Background`` resize along with its parent containers."
 msgstr ""
-"Выберите ``Background``. В Инспекторе вы найдите свойство ``Texture``. Из "
-"вкладки Файловая Система перетащите ``label_HP_bg.png`` на слот ``Texture``. "
-"Он станет раздавленным. Родительский MarginContainer будет менять его размер "
-"на ноль, пока мы принудительно не изменим элементы внутри контейнера, чтобы "
-"получить минимальный размер. Выберите узел ``Background``. В инспекторе "
-"прокрутите вниз до раздела Rect. Установите ``Min Size`` на (100, 40). Вы "
-"должны увидеть как ``Background`` поменяет размер вместе с его родительскими "
-"контейнерами."
+"Выберите ``Background`` в панели сцены. В инспекторе вы найдите свойство "
+"``Texture``. Из вкладки Файловая система перетащите ``label_HP_bg.png`` на "
+"параметр ``Texture``. Картинка будет сжата. Родительский MarginContainer "
+"будет уменьшать его размер до нуля, пока мы принудительно не изменим "
+"элементы внутри контейнера, чтобы получить минимальный размер. Выберите узел "
+"``Background``. В инспекторе прокрутите вниз до раздела Rect. Установите "
+"``Min Size`` на (100, 40). Вы должны увидеть изменение размера "
+"``Background`` вместе с его родительскими контейнерами."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:153
 #, fuzzy
@@ -9934,7 +9906,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
 msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
-msgstr ":Скачать:`robisplash_assets.zip <files/robisplash_assets.zip>`."
+msgstr ""
+"Скачать: :download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:21
 #: ../../docs/tutorials/3d/reflection_probes.rst:21
@@ -10006,7 +9979,7 @@ msgid ""
 msgstr ""
 "Для начала воспользуемся сценой из предыдущего урока (:ref:"
 "`doc_splash_screen`). Цель заключается в добавлении \"появляющейся\" "
-"анимации к заставке. Вот копия на всякий случай: :скачать:`robisplash.zip "
+"анимации к заставке. Вот копия на всякий случай: :download:`robisplash.zip "
 "<files/robisplash.zip>`."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:16
@@ -10019,8 +9992,8 @@ msgid ""
 "First of all, add an :ref:`AnimationPlayer <class_AnimationPlayer>` node to "
 "the scene as a child of \"background\" (the root node):"
 msgstr ""
-"Прежде всего, добавьте :ref:`AnimationPlayer <class_AnimationPlayer>`в сцену "
-"как дочерний узел \"background\" (корневой узел):"
+"Прежде всего, добавьте :ref:`AnimationPlayer <class_AnimationPlayer>` в "
+"сцену как дочерний узел \"background\" (корневой узел):"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:23
 msgid ""
@@ -10280,9 +10253,9 @@ msgid ""
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
-"Вы также можете ``preload``(предварительно загрузить) ресурсы. В отличие от  "
-"``load``, эта функция будет читать файл с диска и загружать его во время "
-"компиляции. В результате, вы не можете вызвать ``preload`` с путем к ресурсу "
+"Вы также можете ``preload`` (предварительно загрузить) ресурсы. В отличие "
+"от  ``load``, эта функция будет читать файл с диска и загружать его во время "
+"компиляции. В результате, вы не можете вызвать ``preload`` с путём к ресурсу "
 "в переменной: вам нужно использовать постоянную строку."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
@@ -15152,10 +15125,17 @@ msgid ""
 "most of the game in GDScript and add small bits of C++ in the areas that "
 "need a performance boost."
 msgstr ""
+"Это означает, что Godot+GDScript - это комбинация, разработанная для "
+"быстрого и эффективного создания игр. Для игр, требующих большой "
+"вычислительной мощности и не использующих встроенные инструменты движка "
+"(такие как Vector type, Physics Engine, Math library и т.д.), также "
+"предусмотрена возможность использования языка Си++. Это позволяет вам "
+"создавать большую часть игры в GDScript и добавлять небольшие кусочки C++ в "
+"области, которые нуждаются в повышении производительности."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
-msgstr ""
+msgstr "Переменные и присваивание"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:54
 msgid ""
@@ -15163,30 +15143,35 @@ msgid ""
 "means that their type is not fixed, and is only modified through assignment. "
 "Example:"
 msgstr ""
+"Все переменные в динамически типизированном языке являются \"вариантными\" "
+"типами. Это означает, что их тип не является фиксированным, а модифицируется "
+"только через присваивание. Пример:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:58
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:80
 msgid "Static:"
-msgstr ""
+msgstr "Статическая типизация:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:66
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:94
 msgid "Dynamic:"
-msgstr ""
+msgstr "Динамическая типизация:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:75
 msgid "As function arguments:"
-msgstr ""
+msgstr "В качестве аргументов функции:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:77
 msgid ""
 "Functions are of dynamic nature too, which means they can be called with "
 "different arguments, for example:"
 msgstr ""
+"Функции носят динамичный характер, что означает, что их можно вызывать, "
+"например, с помощью различных аргументов:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:107
 msgid "Pointers & referencing:"
-msgstr ""
+msgstr "Указатели и ссылки:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:109
 msgid ""
@@ -15195,6 +15180,10 @@ msgid ""
 "variable. The latter allows the object to be modified by other functions by "
 "passing a reference to the original one."
 msgstr ""
+"В статически типизированных языках, таких как C или C++ (а также в некоторых "
+"расширениях Java и C#), различают переменные и указатели/ссылки на "
+"переменные. Последние позволяют модифицировать исходный объект по ссылке, "
+"передаваемой в другие функции."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:114
 msgid ""
@@ -15203,18 +15192,23 @@ msgid ""
 "automatically, which means they are erased when no longer used. Dynamically "
 "typed languages tend to use this memory model, too. Some Examples:"
 msgstr ""
+"В C# или Java все типы, кроме встроенных (int, float, частично String), "
+"всегда являются указателями или ссылками. Ссылки автоматически удаляются "
+"сборщиком мусора, когда они становятся больше ненужными. Динамически "
+"типизированные языки также стремятся использовать эту модель. Несколько "
+"примеров:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:120
 msgid "C++:"
-msgstr ""
+msgstr "C++:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:136
 msgid "Java:"
-msgstr ""
+msgstr "Java:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:154
 msgid "GDScript:"
-msgstr ""
+msgstr "GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:166
 msgid ""
@@ -15225,10 +15219,17 @@ msgid ""
 "not used, but manual memory management is allowed too if inheriting manually "
 "from :ref:`class_Object`."
 msgstr ""
+"В GDScript только базовые типы (int, float, string и vector) передаются в "
+"аргументы в виде значений (данные копируются). Во всех других случаях "
+"(экземпляры объектов, массивы, словари и т.д.) передаются лишь ссылки. "
+"Объекты классов, которые наследуются от :ref:`class_Reference` "
+"(устанавливается по-умолчанию) будут автоматически удалены сборщиком мусора "
+"при отсутствии ссылок. Ручное управление памятью также возможно, если класс "
+"будет наследоваться от :ref:`class_Object`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:174
 msgid "Arrays"
-msgstr ""
+msgstr "Массивы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:176
 msgid ""
@@ -15236,24 +15237,30 @@ msgid ""
 "datatypes inside and are always dynamic (can be resized at any time). "
 "Compare for example arrays in statically typed languages:"
 msgstr ""
+"Массивы в динамически типизированных языках могут содержать элементы разных "
+"типов данных; массивы всегда являются динамическими (т. е. их размер может "
+"быть изменён в любой момент). Сравните с примерами массивов в статически "
+"типизированных языках:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:203
 msgid "And in GDScript:"
-msgstr ""
+msgstr "И в GDScript:\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:212
 msgid ""
 "In dynamically typed languages, arrays can also double as other datatypes, "
 "such as lists:"
 msgstr ""
+"В динамически типизированных языках массивы могут быть заменены другими "
+"типами, такими как списки:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:222
 msgid "Or unordered sets:"
-msgstr ""
+msgstr "Или неупорядоченные множества:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:231
 msgid "Dictionaries"
-msgstr ""
+msgstr "Словари (Dictionaries)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
 msgid ""
@@ -15263,6 +15270,11 @@ msgid ""
 "This datatype is generally not present in such languages (or only in limited "
 "form)."
 msgstr ""
+"Словари являются мощным инструментом в динамически типизированных языках. "
+"Большинство программистов из статически типизированных языков (таких как C++ "
+"или C#) игнорируют существование словарей и усложняют этим себе жизнь. Этот "
+"тип данных обычно отсутствует в таких языках (или присутствует лишь в "
+"ограниченной форме)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:239
 msgid ""
@@ -15272,22 +15284,32 @@ msgid ""
 "are, in fact, so efficient that some languages will go as far as "
 "implementing arrays as dictionaries."
 msgstr ""
+"Словари могут сопоставлять любое значение с любым другим значением, "
+"полностью игнорируя тип данных, используемый в качестве ключа или значения. "
+"Вопреки распространенному мнению, они эффективны, потому что могут быть "
+"реализованы с помощью хэш-таблиц. Они, фактически, настолько эффективны, что "
+"в некоторых языках массивы реализуют как словари."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:245
 msgid "Example of Dictionary:"
-msgstr ""
+msgstr "Пример словаря:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:252
 msgid ""
 "Dictionaries are also dynamic, keys can be added or removed at any point at "
 "little cost:"
 msgstr ""
+"Словари также являются динамическими, ключи могут добавляться или удаляться "
+"в любой момент при небольших затратах:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:261
 msgid ""
 "In most cases, two-dimensional arrays can often be implemented more easily "
 "with dictionaries. Here's a simple battleship game example:"
 msgstr ""
+"В большинстве случаев двумерные массивы могут быть реализованы с помощью "
+"словарей.\n"
+"Вот пример игры \"морской бой\":"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
 msgid ""
@@ -15299,7 +15321,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:318
 msgid "For & while"
-msgstr ""
+msgstr "Циклы for и while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:320
 msgid "Iterating in some statically typed languages can be quite complex:"
@@ -15346,7 +15368,7 @@ msgstr "Пока"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
-msgstr ""
+msgstr "Циклы while() везде одинаковые:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:421
 msgid "Custom iterators"
@@ -32120,6 +32142,9 @@ msgid ""
 "with how much ammo the player has in the weapon and how much spare ammo the "
 "player has for that weapon."
 msgstr ""
+"Затем мы изменяем текст `` UI_status_label``, чтобы показать здоровье "
+"игрока, а также количество боеприпасов, имеющихся у игрока в оружии, и "
+"количество запасных боеприпасов, имеющихся у игрока для этого оружия."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:182
 msgid "Now we can see how much ammo the player has through the HUD."
@@ -69563,6 +69588,8 @@ msgid ""
 "`KidsCanCode: An ongoing tutorial series <http://kidscancode.org/blog/tags/"
 "godot/>`_"
 msgstr ""
+"`KidsCanCode: Постоянно дополняемая серия уроков <http://kidscancode.org/"
+"blog/tags/godot/>`_"
 
 #~ msgid ""
 #~ "Don't scale the shape's outline! Only use the size handles (circled in "

@@ -43,6 +43,7 @@
 # mutergfp <lucas.desnoue@free.fr>, 2018.
 # Nathan Lovato <nathan.lovato.art@gmail.com>, 2018.
 # Nathan Vallet <nathanvalletmarseille@gmail.com>, 2018.
+# Nicolas Lapointe <nixcocpp@gmail.com>, 2019.
 # Nocta Senestra <nocta@net-c.com>, 2018.
 # Omicron <omicron666.dev@gmail.com>, 2018.
 # Perrier Mathis <mathis.perrier73@gmail.com>, 2018.
@@ -69,7 +70,7 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-26 22:13+0100\n"
-"PO-Revision-Date: 2019-01-26 20:53+0000\n"
+"PO-Revision-Date: 2019-02-09 17:07+0000\n"
 "Last-Translator: Caye Pierre <pierrecaye@laposte.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
@@ -85,7 +86,6 @@ msgid "Godot Docs – *master* branch"
 msgstr "Documentation de Godot – Branche *master*"
 
 #: ../../docs/index.rst:6
-#, fuzzy
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
@@ -1257,7 +1257,6 @@ msgstr ""
 "documentation n'était pas à la hauteur."
 
 #: ../../docs/about/faq.rst:271
-#, fuzzy
 msgid ""
 "Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
 "reformulate them as a problem first, so developers and the community have a "
@@ -1266,8 +1265,7 @@ msgstr ""
 "Ne pensez surtout pas que vos idées pour Godot ne sont pas les bienvenues. "
 "Essayez plutôt de les reformuler en mettant l'accent sur le problème auquel "
 "vos idées tenteraient de répondre, afin que les développeurs et la "
-"communauté aient un terrain de discussion sur lequel s'appuyer pour en "
-"débattre."
+"communauté aient des arguments sur lesquels s'appuyer pour en débattre."
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -7662,7 +7660,6 @@ msgid "Design the GUI"
 msgstr "Créer la GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
@@ -7672,7 +7669,7 @@ msgstr ""
 "Maintenant que vous avez acquis les bases, nous allons voir comment "
 "construire une interface graphique utilisateur ( ou GUI) avec des composants "
 "d'interface réutilisables : une jauge de vie, une jauge d'énergie et des "
-"compteurs de bombes et de rubis. A la fin de ce tutoriel, vous aurez une "
+"compteurs de bombes et d'émeraudes. A la fin de ce tutoriel, vous aurez une "
 "interface graphique utilisateur prête à utiliser avec GDscript ou "
 "Visualscript :"
 
@@ -7739,9 +7736,8 @@ msgstr "Les barres de vie et d’énergie"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-#, fuzzy
 msgid "The bomb and emerald counters on the right"
-msgstr "Le compteur de bombes et de rubis sur la droite"
+msgstr "Le compteur de bombes et d'émeraudes sur la droite"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
@@ -7757,7 +7753,6 @@ msgid "The life and energy bars on the left"
 msgstr "Les barres de vie et d'énergie à gauche"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
-#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -7771,7 +7766,7 @@ msgstr ""
 "``HBoxContainer`` pour gérer nos deux colonnes. Les deux barres s'empilent "
 "l'une sur l'autre à l'intérieur d'un ``VBoxContainer``. Et nous aurons "
 "besoin d'un dernier \"HBoxContainer\" dans la colonne de droite pour placer "
-"les compteurs de bombes et de rubis côte à côte."
+"les compteurs de bombes et de d'émeraudes côte à côte."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
@@ -8202,17 +8197,15 @@ msgstr ""
 "rapide, n'est-ce pas ? C'est grâce à la robustesse de nos conteneurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
-#, fuzzy
 msgid "Design the bomb and emerald counters"
-msgstr "Créer un compteur de bombe et de rubis"
+msgstr "Créer les compteurs de bombes et d'émeraudes"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
-#, fuzzy
 msgid ""
 "The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
-"Les compteurs de bombes et de rubis sont comme le nœud ``Count`` de la "
+"Les compteurs de bombes et d'émeraudes sont comme le nœud ``Count`` de la "
 "barre. Nous allons donc le dupliquer et l'utiliser comme modèle."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
@@ -8394,7 +8387,6 @@ msgstr ""
 "faire cela avec les scènes héritées."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
-#, fuzzy
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
@@ -8405,7 +8397,7 @@ msgid ""
 msgstr ""
 "Sauvegardons le ``Counter`` et la ``Bar`` en scènes séparées  que nous "
 "allons réduire à créer la ``LifeBar``, la``EnergyBar``, le``BombCounter``, "
-"et le ``RupeeCounter``. Sélectionner le HBoxContainer ``Bar``. Faites un "
+"et le ``EmeraldCounter``. Sélectionner le HBoxContainer ``Bar``. Faites un "
 "clic droit dessus et cliquer sur ``Save Branch as Scene``. Sauvergarder la "
 "scène en tant que ``Bar.tscn``. Vous devriez voir la branche de nœud se "
 "transformer en un seul nœud ``Bar``."
@@ -8750,9 +8742,8 @@ msgstr ""
 "parfaitement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-#, fuzzy
 msgid "Prepare the bomb and emerald counters"
-msgstr "Préparer les compteurs de bombes et de rubis"
+msgstr "Préparer les compteurs de bombes et d'émeraudes"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
 msgid ""
@@ -8771,7 +8762,6 @@ msgid "The bomb counter is the same as the original Counter scene"
 msgstr "Le compteur de bombes est le même que celui de la scène originale"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``EmeraldCounter`` and save the scene as "
@@ -8785,22 +8775,21 @@ msgid ""
 "elements."
 msgstr ""
 "Allez à nouveau dans ``Scène -> Nouvelle scène héritée`` et sélectionnez "
-"``Counter.tscn`` une fois de plus. Renommez le nœud racine ``RupeeCounter`` "
-"et enregistrez la scène sous ``RupeeCounter.tscn``. Pour celui-ci, nous "
-"avons principalement besoin de remplacer l'icône de la bombe par l'icône du "
-"rubis. Dans l'onglet Système de fichiers, faites glisser le fichier "
-"``rupees_icon.png`` sur l'emplacement ``Texture`` du nœud  ``Icon`` . Celui-"
-"ci s'ancre déjà sur le bord droit du nœud \"Background\" afin que nous "
-"puissions changer sa position et qu'il se repositionne avec le conteneur "
-"\"RupeeCounter\". Déplacez un peu l'icône du rubis vers la droite et vers le "
-"bas. Utilisez les touches flèches du clavier pour rectifier sa position. "
-"Sauvegardez, et nous en avons fini avec tous les éléments de l'interface "
-"utilisateur."
+"``Counter.tscn`` une fois de plus. Renommez le nœud racine "
+"``EmeraldCounter`` et enregistrez la scène sous ``EmeraldCounter.tscn``. "
+"Pour celui-ci, nous avons principalement besoin de remplacer l'icône de la "
+"bombe par l'icône de l'émeraude. Dans l'onglet Système de fichiers, faites "
+"glisser le fichier ``emeralds_icon.png`` sur l'emplacement ``Texture`` du "
+"nœud  ``Icon`` . Celui-ci s'ancre déjà sur le bord droit du nœud \"Background"
+"\" afin que nous puissions changer sa position et qu'il se repositionne avec "
+"le conteneur \"EmeraldCounter\". Déplacez un peu l'icône de l'émeraude vers "
+"la droite et vers le bas. Utilisez les touches flèches du clavier pour "
+"rectifier sa position. Sauvegardez, et nous en avons fini avec tous les "
+"éléments de l'interface utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The emerald counter should look something like this"
-msgstr "Le compteur de rubis devrait ressembler à ceci"
+msgstr "Le compteur d'émeraudes devrait ressembler à ceci"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
@@ -8828,13 +8817,12 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "La barre de vie et la barre d'énergie sont automatiquement alignées"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
-#, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
 "scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
 "Maintenant, faites glissez et déposez les scènes ``BombCounter.tscn``et "
-"``RupeeCounter.tscn``sur le nœud ``Counters``. Ils se redimensionneront "
+"``EmeraldCounter.tscn``sur le nœud ``Counters``. Ils se redimensionneront "
 "automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
@@ -8843,7 +8831,6 @@ msgstr ""
 "Les nœuds se redimensionnent pour prendre tout l'espace vertical disponible"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
-#, fuzzy
 msgid ""
 "To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -8852,7 +8839,7 @@ msgid ""
 "property, and check ``Shrink Center`` so the container centers inside the "
 "``HBoxContainer``."
 msgstr ""
-"Pour que ``RupeeCounter`` et ``BombCounter`` utilisent la taille que nous "
+"Pour que ``EmeraldCounter`` et ``BombCounter`` utilisent la taille que nous "
 "avons définie dans ``Counter.tscn``, nous devons changer ``Size Flags`` du "
 "conteneur ``Counters``. Sélectionnez le  nœud ``Counters`` et déroulez la "
 "section ``Size Flags`` dans l'Inspecteur. Décochez la case ``Fill`` pour la "
@@ -11173,7 +11160,6 @@ msgstr ""
 "utilisations importantes :"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
 "added as a child when it's first opened to become part of the *Scene Tree* "
@@ -11472,11 +11458,8 @@ msgstr ""
 "globales du fait de sa conception"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
-#, fuzzy
 msgid "Autoloading nodes and scripts caters to this need."
-msgstr ""
-"Les nœuds à chargement automatique (Autoloading nodes) et les scripts "
-"répondent à ce besoin."
+msgstr "Les nœuds Autoloading et les scripts répondent à ce besoin."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
@@ -12304,7 +12287,6 @@ msgid "Glossary correspondence"
 msgstr "Correspondance de glossaire"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
-#, fuzzy
 msgid "GameObject -> Node"
 msgstr "GameObject -> Node"
 
@@ -12462,7 +12444,6 @@ msgstr ""
 "l'attribut ``[SerializeField]``."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:250
-#, fuzzy
 msgid ""
 "Godot also has a built-in script serialization system, but it works only "
 "explicitly. You can serialize any serializable type (:ref:`built-in and "
@@ -12764,19 +12745,16 @@ msgstr ""
 "> Paramètres de l'éditeur -> Éditeur de texte -> Externe``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
-#, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
 "allow you to better integrate the editor with Godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
-"Il y a deux champs : le chemin de l’exécutable et les lignes de commandes "
-"d’exécution. Les lignes de commandes avec les drapeaux permettront de mieux "
-"intégrer l'éditeur avec Godot. Godot remplacera par les champs suivant les "
-"drapeaux :"
+"Il y a deux champs : le chemin de l’exécutable et les options de ligne de "
+"commandes. Ces options ou drapeaux permettront de mieux intégrer l'éditeur "
+"avec Godot. Godot remplacera par les champs suivant les drapeaux :"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
-#, fuzzy
 msgid "Field in Exec Flags"
 msgstr "Drapeaux dans la ligne de commande d’exécution"
 
@@ -12817,10 +12795,10 @@ msgid "The line number of the error"
 msgstr "Le numéro de ligne de l’erreur"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
-#, fuzzy
 msgid "Some example Exec Flags for various editors include:"
 msgstr ""
-"Quelques exemples de ligne de commande pour différents éditeur de texte:"
+"Quelques exemples de ligne de commande avec drapeaux pour différents éditeur "
+"de texte :"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 #, fuzzy
@@ -16308,6 +16286,7 @@ msgid "Safe lines"
 msgstr "Lignes sécurisées"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
+#, fuzzy
 msgid ""
 "You can also use casting to ensure safe lines. Safe lines are a new tool in "
 "Godot 3.1 to tell you when ambiguous lines of code are type-safe. As you can "
@@ -16315,6 +16294,12 @@ msgid ""
 "information to know if an instruction will trigger an error or not at "
 "runtime."
 msgstr ""
+"Vous pouvez également utiliser la conversion de type pour assurer la "
+"sécurité des lignes. Les lignes de sécurisées sont un nouvel outil dans "
+"Godot 3.1 pour vous avertir lorsque des lignes de code ambiguës sont type-"
+"sûr. Comme vous pouvez mélanger et faire correspondre du code typé et du "
+"code dynamique, Godot n'a parfois pas assez d'informations pour savoir si "
+"une instruction va déclencher une erreur ou non au moment de l'exécution."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:188
 msgid ""
@@ -16334,12 +16319,18 @@ msgstr ""
 "type du nœud tant qu'il possède les méthodes que vous avez besoin d'appeler."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:196
+#, fuzzy
 msgid ""
 "You can use casting to tell Godot the type you expect when you get a node: "
 "``($Timer as Timer)``, ``($Player as KinematicBody2D)``, etc. Godot will "
 "ensure the type works and if so, the line number will turn green at the left "
 "of the script editor."
 msgstr ""
+"Vous pouvez utiliser la conversion de type pour dire à Godot le type que "
+"vous attendez lorsque vous obtenez un nœud : ($Timer comme Timer)``, "
+"``($Player comme KinematicBody2D)``, etc. Godot s'assurera que le type "
+"fonctionne et si c'est le cas, le numéro de ligne deviendra vert à gauche de "
+"l'éditeur de script."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:204
 msgid "Safe vs Unsafe Line"
@@ -16433,12 +16424,18 @@ msgstr ""
 "propre type, pour cast les paramètres automatiquement :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:301
+#, fuzzy
 msgid ""
 "The ``bullet`` variable could hold any ``CollisionObject2D`` here, but we "
 "make sure it is our ``Bullet``, a node we created for our project. If it’s "
 "anything else, like an ``Area2D``, or any node that doesn’t extend "
 "``Bullet``, the ``bullet`` variable will be ``null``."
 msgstr ""
+"La variable \"Bullet\" pourrait contenir n'importe quel \"CollisionObject2D"
+"\" ici, mais nous nous assurons que c'est notre \"Bullet\", un nœud que nous "
+"avons créé pour notre projet. Si c'est autre chose, comme un ``Area2D``, ou "
+"n'importe quel nœud qui n'hérite pas ``Bullet```, la variable ``bullet`` "
+"sera ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:307
 msgid "Warning system"
@@ -16487,6 +16484,11 @@ msgid ""
 "corresponding line and the code won’t trigger the corresponding warning "
 "anymore:"
 msgstr ""
+"Pour ignorer des avertissements spécifiques dans un fichier, insérez un "
+"commentaire spécial de la forme ``#warning-ignore:warning-id```, ou cliquez "
+"sur le lien ignorer à droite de la description de l'avertissement. Godot "
+"ajoutera un commentaire au-dessus de la ligne correspondante et le code ne "
+"déclenchera plus l'avertissement correspondant :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
 msgid "warning system ignore example"
@@ -16500,10 +16502,16 @@ msgid ""
 "on this option. Here’s the same file as the previous example with warnings "
 "as errors turned on:"
 msgstr ""
+"Les avertissements n'empêcheront pas le jeu de fonctionner, mais vous pouvez "
+"les transformer en erreurs si vous le souhaitez. De cette façon, votre jeu "
+"ne sera pas compilé à moins que vous ne corrigiez tous les avertissements. "
+"Allez à la section ``GDScript`` de la section Paramètres du projet pour "
+"activer cette option. Voici le même fichier que l'exemple précédent avec les "
+"avertissements d'erreurs activées :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:349
 msgid "warnings as errors"
-msgstr ""
+msgstr "les avertissements en tant qu'erreurs"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:352
 msgid "Cases where you can’t specify types"
@@ -16514,10 +16522,14 @@ msgid ""
 "To wrap up this introduction, let’s cover a few cases where you can’t use "
 "type hints. All the examples below **will trigger errors**."
 msgstr ""
+"Pour conclure cette introduction, couvrons quelques cas où vous ne pouvez "
+"pas utiliser d'indices de type. Tous les exemples ci-dessous **déclenchent "
+"des erreurs**."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:357
+#, fuzzy
 msgid "You can’t use Enums as types:"
-msgstr ""
+msgstr "Vous ne pouvez pas utiliser les Enums comme types :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:364
 msgid ""
@@ -16540,6 +16552,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
 msgid "Two scripts can’t depend on each other in a cyclic fashion:"
 msgstr ""
+"Deux scripts ne peuvent pas dépendre l'un de l'autre de manière cyclique :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:400
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:124
@@ -18804,14 +18817,23 @@ msgid ""
 "(`#18364 comment <https://github.com/godotengine/godot/"
 "issues/18364#issuecomment-406222102>`_)"
 msgstr ""
+"L'exportation de projets Mono n'est prise en charge que pour les plates-"
+"formes de bureau (Linux, Windows et macOS). HTML5, Android, iOS et UWP ne "
+"sont pas actuellement supportés (`#18364 comment <https://github.com/"
+"godotengine/godot/issues/18364#issuecomment-406222102>`_)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
+#, fuzzy
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name and is unique within the project assembly (`#7402 "
 "comment <https://github.com/godotengine/godot/"
 "issues/7402#issuecomment-269910926>`_)"
 msgstr ""
+"Les scripts C# joints doivent se référer à une classe dont le nom de classe "
+"correspond au nom du fichier et est unique dans l'assemblage du projet "
+"(`#7402 commentaire <https://github.com/godotengine/godot/"
+"issues/7402#issuecomment-269910926>`_)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:152
 msgid "Performance of C# in Godot"
@@ -20094,6 +20116,9 @@ msgid ""
 "format called ESCN, which is similar to TSCN (text format) but will be "
 "imported as binary SCN for performance."
 msgstr ""
+"Ce plugin peut être utilisé pour exporter des scènes Blender dans un format "
+"de scène spécifique à Godot appelé ESCN, qui est similaire au TSCN (format "
+"texte) mais sera importé en tant que SCN binaire pour la performance."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:12
 msgid "Details on exporting"
@@ -21230,7 +21255,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "Repeating can optionally be set to mirrored mode."
-msgstr ""
+msgstr "La répétition peut être réglée optionnellement en mode miroir."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:98
 msgid "Filter"
@@ -21396,6 +21421,9 @@ msgid ""
 "map generated by external programs to depth map to use with :ref:"
 "`doc_spatial_material`."
 msgstr ""
+"Inverse la couleur de l'image. Ceci est utile, par exemple, pour convertir "
+"une carte de hauteur générée par des programmes externes en carte de "
+"profondeur à utiliser avec :ref:`doc_spatial_material`."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 msgid "Detect 3D"
@@ -22589,11 +22617,15 @@ msgid ""
 msgstr "Sphère (et autres non listés) va créer :ref:`class_sphereshape`"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:317
+#, fuzzy
 msgid ""
 "For better visibility in Blender's editor, the user can set \"X-Ray\" option "
 "on collision empties and set some distinct color for them in User "
 "Preferences / Themes / 3D View / Empty."
 msgstr ""
+"Pour une meilleure visibilité dans l'éditeur de Blender, l'utilisateur peut "
+"définir l'option \"X-Ray\" sur les vides de collision et définir une couleur "
+"distincte pour eux dans User Preferences / Themes / 3D View / Empty."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:321
 msgid "Create navigation (-navmesh)"
@@ -22625,12 +22657,18 @@ msgid ""
 "\"loop\" or \"cycle\" will be imported as a Godot Animation with the loop "
 "flag set. This is case-sensitive and does not require a hyphen."
 msgstr ""
+"Les clips d'animation dans le document COLLADA qui commencent ou se "
+"terminent par le jeton \"loop\" ou \"cycle\" seront importés sous forme "
+"d'animation Godot avec le drapeau loop activé. Ceci est sensible à la casse "
+"et ne nécessite pas de trait d'union."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:338
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the \"loop\" or \"cycle\" prefix or suffix."
 msgstr ""
+"Dans Blender, cela nécessite d'utiliser l'éditeur NLA et de nommer l'action "
+"avec le préfixe ou le suffixe \"loop\" ou \"cycle\"."
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
@@ -23181,6 +23219,12 @@ msgid ""
 "file in the directory of the games executable. The PCK file contains a "
 "“mod_scene.tscn” test scene in its root."
 msgstr ""
+"Pour importer un fichier PCK, on utilise une ligne unique. Gardez à l'esprit "
+"qu'il n'y a pas d'erreur ou d'exception si l'importation échoue. Au lieu de "
+"cela, on pourrait avoir à créer un code de validation comme un calque "
+"dessus. L'exemple suivant attend un fichier \"mod.pck\" dans le répertoire "
+"de l'exécutable du jeu. Le fichier PCK contient une scène de test "
+"\"mod_scene.tscn\" à la racine."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:117
 msgid ""
@@ -23191,6 +23235,13 @@ msgid ""
 "for one's own game. A PCK file of this kind can fix the content of a "
 "previously loaded PCK."
 msgstr ""
+"Si vous importez un fichier avec le même chemin d'accès/nom de fichier que "
+"celui que vous avez déjà dans votre projet, le fichier importé le "
+"remplacera. C'est quelque chose à surveiller lors de la création de DLC ou "
+"de mods (résolu facilement avec un outil isolant les mods vers un sous-"
+"dossier mods spécifique). Cependant, c'est aussi un moyen de créer des "
+"patches pour son propre jeu. Un fichier PCK de ce type peut fixer le contenu "
+"d'un PCK déjà chargé."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:126
 msgid ""
@@ -23200,6 +23251,11 @@ msgid ""
 "that purpose. Godot should make that process smooth regardless of which "
 "route a developer pursues."
 msgstr ""
+"Ce tutoriel devrait illustrer à quel point il est facile d'ajouter des mods, "
+"patches ou DLC à un jeu. La chose la plus importante est d'identifier "
+"comment on prévoit de distribuer le contenu futur de son jeu et de "
+"développer un flux de travail personnalisé à cette fin. Godot devrait "
+"faciliter ce processus, quelle que soit la voie empruntée par un développeur."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
 #, fuzzy
@@ -24142,32 +24198,48 @@ msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
 msgstr ""
+"Le téléchargement d'un APK sur le Play Store de Google nécessite que vous "
+"vous connectiez en utilisant un fichier keystore non débogué ; un tel "
+"fichier peut être généré comme ceci :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
+#, fuzzy
 msgid ""
 "This keystore and key are used to verify your developer identity, remember "
 "the password and keep it in a safe place! Use Google's Android Developer "
 "guides to learn more about `APK signing <https://developer.android.com/"
 "studio/publish/app-signing>`__."
 msgstr ""
+"Ce keystore et cette clé sont utilisés pour vérifier votre identité de "
+"développeur, mémorisez le mot de passe et le conserver dans un endroit sûr ! "
+"Utilisez les guides de développement Android de Google pour en savoir plus "
+"sur `la signature APK <https://developer.android.com/studio/publish/app-"
+"signing>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
 msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr ""
+"Remplissez maintenant les formulaires suivants dans vos préréglages "
+"d'exportation Android :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
+#, fuzzy
 msgid "Release: Enter the path to the keystore file you just generated."
 msgstr ""
+"Release : Entrez le chemin d'accès au fichier keystore que vous venez de "
+"générer."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
 msgid "Release User: Replace with the key alias."
-msgstr ""
+msgstr "Release User : Remplacer par l'alias de la clé."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 msgid ""
 "Release Password: Key password. Note that the keystore password and the key "
 "password currently have to be the same."
 msgstr ""
+"Release Password : Mot de passe de la clé. Notez que le mot de passe du "
+"keystore et le mot de passe de la clé doivent actuellement être les mêmes."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
 msgid ""
@@ -24175,12 +24247,17 @@ msgid ""
 "Version Control System, it is a good idea to remove it from public "
 "repositories."
 msgstr ""
+"**Maintenant votre fichier export_presets.cfg contient des informations "
+"sensibles;** si vous utilisez un système de contrôle de version, c'est une "
+"bonne idée de le supprimer des dépôts publics."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
 msgid ""
 "Don't forget to disable the ``Export With Debug`` button while choosing the "
 "APK's name."
 msgstr ""
+"N'oubliez pas de désactiver le bouton \"Exporter avec débogage\" lorsque "
+"vous choisissez le nom de l'APK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:4
 msgid "Exporting for the Web"
@@ -24208,6 +24285,9 @@ msgid ""
 "`F12`, to view **debug information** like JavaScript, engine, and WebGL "
 "errors."
 msgstr ""
+"Utilisez la console de développement intégrée au navigateur, généralement "
+"ouverte avec :kbd:`F12`, pour afficher **les informations de débogage** "
+"comme les erreurs JavaScript, moteur et WebGL."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
 msgid ""
@@ -24224,6 +24304,8 @@ msgid ""
 "Python offers an easy method to start a local server. Use ``python -m "
 "SimpleHTTPServer`` with Python 2 or"
 msgstr ""
+"Python offre une méthode simple pour démarrer un serveur local. Utiliser "
+"``python -m SimpleHTTPServer`` avec Python 2 ou"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:21
 #, fuzzy
@@ -24237,19 +24319,24 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:25
 msgid "WebGL 2"
-msgstr ""
+msgstr "WebGL 2"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option selected."
 msgstr ""
+"Jusqu'à ce que le rendu *OpenGL ES 3* soit supprimé de Godot en faveur de "
+"*Vulkan*, l'export HTML5 utilise *WebGL 2* lorsque l'option *GLES3* est "
+"sélectionnée."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
 msgid ""
 "Usage of WebGL 2 is not recommended due to its expected removal from Godot "
 "without replacement."
 msgstr ""
+"L'utilisation de WebGL 2 n'est pas recommandée en raison de son retrait "
+"prévu de Godot sans remplacement."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:33
 #, fuzzy
@@ -24272,6 +24359,8 @@ msgstr ""
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
 msgstr ""
+"Le moteur de rendu WebGL 2 de Godot a des problèmes avec la 3D et n'est plus "
+"maintenu."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
 msgid "Limitations"
@@ -24338,21 +24427,29 @@ msgstr ""
 "``_unhandled_input``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:69
+#, fuzzy
 msgid ""
 "For the same reason, the full screen project setting doesn't work unless the "
 "engine is started from within a valid input event handler. This requires :"
 "ref:`customization of the HTML page <doc_customizing_html5_shell>`."
 msgstr ""
+"Pour la même raison, le réglage du projet en plein écran ne fonctionne pas à "
+"moins que le moteur ne soit démarré à partir d'un gestionnaire d'événements "
+"d'entrée valide. Cela nécessite :ref:`customization of the HTML page "
+"<doc_customizing_html5_shell>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid "Audio autoplay"
-msgstr ""
+msgstr "Lecture audio automatique"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:76
 msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
 msgstr ""
+"Chrome restreint la façon dont les sites Web peuvent jouer de l'audio. Il "
+"peut être nécessaire pour le joueur de cliquer ou de toucher ou d'appuyer "
+"sur une touche pour activer l'audio."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
 msgid ""
@@ -24360,14 +24457,17 @@ msgid ""
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
 "autoplay>`__."
 msgstr ""
+"Google offre des informations supplémentaires sur leur `Web Audio autoplay "
+"politiques <https://sites.google.com/a/chromium.org/dev/audio-video/"
+"autoplay>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
-msgstr ""
+msgstr ":ref:`class_HTTPClient` et :ref:`class_HTTPRequest`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
-msgstr ""
+msgstr "Les classes HTTP ont plusieurs restrictions sur la plate-forme HTML5 :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
@@ -24419,7 +24519,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
 msgid "Boot splash is not displayed"
-msgstr ""
+msgstr "Le boot splash n'est pas affiché"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:104
 msgid ""
@@ -24427,6 +24527,9 @@ msgid ""
 "However, the image is exported as a PNG file, so :ref:`custom HTML pages "
 "<doc_customizing_html5_shell>` can display it."
 msgstr ""
+"La page HTML par défaut n'affiche pas le boot splash pendant le chargement. "
+"Cependant, l'image est exportée au format PNG, donc :ref:`pages HTML "
+"personnalisées <doc_customizing_html5_shell>` peut l'afficher."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
 msgid "Unimplemented functionality"
@@ -24546,6 +24649,9 @@ msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
 msgstr ""
+"La livraison du module WebAssembly (``.wasm``) avec un type MIME autre que :"
+"mimetype:`application/wasm` peut empêcher certaines optimisations de "
+"démarrage."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:155
 msgid ""
@@ -24669,6 +24775,9 @@ msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
 msgstr ""
+"Les chaînes multi-lignes de GDScript, entourées de 3 guillemets ``\"\"\"`` "
+"comme dans ``my_func3()`` ci-dessus, sont utiles pour garder le code "
+"JavaScript lisible."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:223
 msgid ""
@@ -25831,6 +25940,12 @@ msgid ""
 "the system process a given number of seconds before it is actually drawn the "
 "first time."
 msgstr ""
+"Les systèmes de particules commencent avec zéro particule émise, puis "
+"commencent à émettre. Cela peut être un inconvénient lors du chargement "
+"d'une scène et des systèmes comme une torche, une brume, etc. commencent à "
+"émettre dès que vous entrez. Le prétraitement est utilisé pour permettre au "
+"système de traiter un nombre donné de secondes avant qu'il ne soit "
+"réellement dessiné la première fois."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:85
 msgid "Speed Scale"
@@ -25920,7 +26035,7 @@ msgstr "Paramètres de dessin"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:132
 msgid "Visibility Rect"
-msgstr "Rectangle de visualisation"
+msgstr "Rectangle de visibilité"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:135
 msgid ""
@@ -25928,6 +26043,9 @@ msgid ""
 "If this rectangle is outside of the viewport, the engine will not render the "
 "particles on screen."
 msgstr ""
+"Le rectangle de visibilité contrôle la visibilité des particules à l'écran. "
+"Si ce rectangle est à l'extérieur de la fenêtre, le moteur ne rendra pas les "
+"particules à l'écran."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:137
 msgid ""
@@ -25947,6 +26065,12 @@ msgid ""
 "Particles2D node emitting particles for a few seconds and set the rectangle "
 "to fit the surface the particles take."
 msgstr ""
+"Vous pouvez demander à Godot de générer un rectangle de visibilité "
+"automatiquement à l’aide de la barre d’outils au-dessus de la vue 2d. Pour "
+"ce faire, sélectionnez le nœud Particles2D et cliquez sur ``Particles > "
+"Generate Visibility Rect``. Godot va simuler le nœud Particles2D émettant "
+"des particules pendant quelques secondes et réglera le rectangle pour "
+"s’adapter à la surface que prennent les particules."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:143
 msgid ""
@@ -25955,6 +26079,10 @@ msgid ""
 "move around, you can temporarily change the ``preprocess`` duration on the "
 "Particles2D node."
 msgstr ""
+"Vous pouvez contrôler la durée d'émission avec l'option ``Generation Time "
+"(sec)``. La valeur maximale est de 25 secondes. Si vous avez besoin de plus "
+"de temps pour que vos particules se déplacent, vous pouvez changer "
+"temporairement la durée du ``preprocessus'' sur le noeud Particules2D."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:146
 msgid "Local Coords"
@@ -25996,7 +26124,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:167
 msgid "ParticlesMaterial settings"
-msgstr ""
+msgstr "Paramètres de ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:169
 msgid "Particles2D > Process Material > Material > drop-down menu > Edit:"
@@ -26104,7 +26232,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:254
 msgid "Damping"
-msgstr ""
+msgstr "Amortissement"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:256
 msgid ""
@@ -26112,6 +26240,10 @@ msgid ""
 "especially useful for sparks or explosions, which usually begin with a high "
 "linear velocity and then stop as they fade."
 msgstr ""
+"L'amortissement applique un frottement aux particules, les forçant à "
+"s'arrêter. Il est particulièrement utile pour les étincelles ou les "
+"explosions, qui commencent généralement avec une vitesse linéaire élevée et "
+"s'arrêtent ensuite lorsqu'elles s'estompent."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:263
 msgid "Angle"
@@ -26294,6 +26426,11 @@ msgid ""
 "function that you can use in many circumstances where you would otherwise "
 "need to apply trigonometric functions."
 msgstr ""
+"Pour définir la vitesse, nous utilisons la méthode ``Vector2.rotated()``, de "
+"sorte qu'elle pointe dans la même direction que le corps. rotated()`` est "
+"une fonction vectorielle utile que vous pouvez utiliser dans de nombreuses "
+"circonstances où vous auriez autrement besoin d'appliquer des fonctions "
+"trigonométriques."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:206
 msgid "Rotation + movement (mouse)"
@@ -26341,6 +26478,10 @@ msgid ""
 "slightly past the position and tries to move back, only to move too far and "
 "repeat."
 msgstr ""
+"Notez la vérification ``length()`` que nous faisons avant le mouvement. Sans "
+"ce test, le corps \"gigoterait\" lorsqu'il atteindrait la position cible, "
+"car il se déplace légèrement au-delà de la position et essaie de reculer, se "
+"déplace trop loin et répète ce schéma encore et encore."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:347
 msgid ""
@@ -26389,6 +26530,11 @@ msgid ""
 "the resources used in the final demo and then describes how to make a scene "
 "like the demo step by step."
 msgstr ""
+"Ce tutoriel explique comment fonctionne l'éclairage 2D dans le projet démo "
+"`lights and shadows <https://github.com/godotengine/godot-demo-projects/tree/"
+"master/2d/lights_and_shadows>`_ . Il commence par une brève description des "
+"ressources utilisées dans la démo finale et décrit ensuite comment faire une "
+"scène comme la démo étape par étape."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:16
 msgid ""
@@ -26630,6 +26776,12 @@ msgid ""
 "`LightOccluder2D <class_LightOccluder2D>` looks like a dark spot and in this "
 "demo the :ref:`Sprite <class_Sprite>` is just a black square."
 msgstr ""
+"Dans la démo nous utilisons un :ref:`Sprite <class_Sprite_Sprite>` avec une "
+"texture pour faire les \"Shadow Casters\", mais en réalité tout ce dont vous "
+"avez besoin est un couple de :ref:`LightOccluder2Ds "
+"<class_LightOccluder2D>`. Par lui-même le :ref:`LightOccluder2D "
+"<class_LightOccluder2D>` ressemble à un point sombre et dans cette démo le :"
+"ref:`Sprite <class_Sprite>` est juste un carré noir."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:110
 msgid ""
@@ -26737,7 +26889,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:146
 msgid "Now we add the shadow casters."
-msgstr ""
+msgstr "Ajoutons maintenant les projecteurs d'ombres."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:148
 msgid ""
@@ -26746,6 +26898,10 @@ msgid ""
 "used to group all the shadow casters together. This way we can show and hide "
 "them all at the same time."
 msgstr ""
+"La démo utilise un :ref:`Node <class_Node2D>` nommé \"casters\" pour "
+"organiser les projecteurs d'ombres. Ajouter un :ref:`Node2D <class_Node2D>` "
+"à la scène. Il sera utilisé pour regrouper tous les projecteurs d'ombres. De "
+"cette façon, nous pouvons tous les afficher et les cacher en même temps."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:152
 msgid ""
@@ -26759,6 +26915,15 @@ msgid ""
 "could be an image of whatever object is casting the shadow: a wall, a "
 "magical chest, or anything else."
 msgstr ""
+"Chaque projecteur d'ombres est composé d'un :ref:`Sprite <class_Sprite>`, "
+"avec un :ref:`LightOccluder2D <class_LightOccluder2D>` enfant. Pour la démo, "
+"le :ref:`Sprite <class_Sprite>` a une texture définie sur `caster image "
+"<https://raw.githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
+"lights_and_shadows/caster.png>`_ et rien d'autre. L'enfant :ref:"
+"`LightOccluder2D <class_LightOccluder2D>` est là où toute la magie se "
+"produit. Dans un jeu, le :ref:`Sprite <class_Sprite>>` pourrait être plus "
+"qu'une boîte noire ; ce pourrait être une image de n'importe quel objet "
+"projetant l'ombre : un mur, un coffre magique, ou autre chose."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:160
 #, fuzzy
@@ -26795,6 +26960,14 @@ msgid ""
 "winding order is used to determine which side of the line is inside the "
 "polygon. Only outward facing lines cast shadows."
 msgstr ""
+"Le ``Cull Mode`` vous permet de choisir la direction dans laquelle vous "
+"souhaitez que l'on procède à l'abattage. La valeur par défaut est \"Désactivé"
+"\", ce qui signifie que l'occulteur projette une ombre quel que soit le côté "
+"où la lumière est allumée. Les deux autres réglages \"Sens horaire\" et "
+"\"Sens anti-horaire\" font référence à l'ordre d'enroulement des sommets du "
+"polygone. L'ordre d'enroulement est utilisé pour déterminer quel côté de la "
+"ligne se trouve à l'intérieur du polygone. Seules les lignes orientées vers "
+"l'extérieur projettent des ombres."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:173
 msgid ""
@@ -26856,6 +27029,14 @@ msgid ""
 "will run. That is why Godot provides 3-13 samples by default and allows you "
 "to choose. The demo uses PCF7."
 msgstr ""
+"Pour donner aux ombres cet aspect doux et agréable, nous réglons les "
+"variables ``filter``, ``filter smooth`` et ``gradient length``. Godot prend "
+"en charge le `Percentage Closer Filtering <https://developer.nvidia.com/"
+"gpugems/GPUGems/gpugems_ch11.html>`_ (PCF), qui prend plusieurs échantillons "
+"de la carte des ombres autour d'un pixel et les estompe pour créer un effet "
+"d'ombre adoucit. Plus le nombre d'échantillons est élevé, plus l'ombre "
+"paraîtra douce, mais plus ce sera lent. C'est pourquoi Godot fournit 3-13 "
+"échantillons par défaut et vous permet de choisir. La démo utilise PCF7."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:206
 msgid ""
@@ -26893,17 +27074,20 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:221
 msgid "``filter smooth`` is set to ``30``."
-msgstr ""
+msgstr "``filter smooth``` est réglé sur ``30``."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:223
 msgid ""
 "The different :ref:`Light <class_Light2D>` nodes in the demo use different "
 "values for filter smooth. Play around with it and see what you like."
 msgstr ""
+"Les différents nœuds :ref:`Light <class_Light2D>` dans la démo utilisent des "
+"valeurs différentes pour le filtre doux. Jouez avec et voyez ce que vous "
+"aimez."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:228
 msgid "``filter smooth`` is set to ``0``."
-msgstr ""
+msgstr "``filter smooth``` est réglé sur ``0``."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:230
 msgid ""
@@ -26912,14 +27096,18 @@ msgid ""
 "this produces a hard edge. The gradient length variable creates a smooth "
 "gradient to begin the shadow to reduce the effect of the hard edge."
 msgstr ""
+"Enfin, il y a la variable \"gradient length\". Pour certaines ombres douces, "
+"il est préférable que l'ombre ne commence pas immédiatement sur l'objet, car "
+"cela produit un bord dur. La variable de longueur du dégradé crée un dégradé "
+"doux pour commencer l'ombre afin de réduire l'effet du bord dur."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:236
 msgid "``gradient length`` is set to ``0``."
-msgstr ""
+msgstr "\"gradient length\" est réglé sur \"0\"."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:240
 msgid "``gradient length`` is set to ``10``."
-msgstr ""
+msgstr "\"gradient length\" est réglé sur \"10\"."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:242
 msgid ""
@@ -26928,6 +27116,11 @@ msgid ""
 "Godot provides so much flexibility. Just keep in mind that the higher "
 "``filter`` set the more expensive the shadows will be."
 msgstr ""
+"Vous devrez jouer un peu avec les options pour trouver les paramètres qui "
+"conviennent à votre projet. Il n'y a pas de bonne solution pour tout le "
+"monde, c'est pourquoi Godot offre tant de flexibilité. Gardez simplement à "
+"l'esprit que plus le ``filtre`` est élevé, plus les ombres seront chères à "
+"générer."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:4
 msgid "2D meshes"
@@ -26940,12 +27133,19 @@ msgid ""
 "it can't really display 3D meshes directly (although it can be done via "
 "``Viewport`` and ``ViewportTexture``)."
 msgstr ""
+"En 3D, les maillages sont utilisés pour afficher le monde. En 2D, elles sont "
+"rares car les images sont plus souvent utilisées. Le moteur 2D de Godot est "
+"un moteur bidimensionnel pur, donc il ne peut pas vraiment afficher les "
+"maillages 3D directement (bien que cela puisse être fait via ``Viewport`` et "
+"``ViewportTexture``)."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:13
 msgid ""
 "If you are interested in displaying 3D meshes on a 2D viewport, see the :ref:"
 "`doc_viewport_as_texture` tutorial."
 msgstr ""
+"Si vous êtes intéressé par l'affichage de maillages 3D sur une vue 2D, "
+"consultez le tutoriel :ref:`doc_viewport_as_texture`."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:15
 msgid ""
@@ -26953,23 +27153,35 @@ msgid ""
 "or ignored) instead of 3D. You can experiment creating them yourself using "
 "``SurfaceTool`` from code and displaying them in a ``MeshInstance2D`` node."
 msgstr ""
+"Les maillages 2D sont des maillages qui contiennent une géométrie "
+"bidimensionnelle (Z peut être omis ou ignoré) au lieu de 3D. Vous pouvez "
+"expérimenter de les créer vous-même en utilisant ``SurfaceTool`` à partir du "
+"code et les afficher dans un nœud ``MeshInstance2D``."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:18
 msgid ""
 "Currently, the only way to generate a 2D mesh within the editor is by either "
 "importing an OBJ file as a mesh, or converting it from a Sprite."
 msgstr ""
+"Actuellement, la seule façon de générer un maillage 2D dans l'éditeur est "
+"soit d'importer un fichier OBJ en tant que maillage, soit de le convertir "
+"depuis un Sprite."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:21
 msgid "Optimizing pixels drawn"
-msgstr ""
+msgstr "Optimisation le dessin de pixels"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:23
+#, fuzzy
 msgid ""
 "This workflow is useful for optimizing 2D drawing in some situations. When "
 "drawing large images with transparency, Godot will draw the whole quad to "
 "the screen. The large transparent areas will still be drawn."
 msgstr ""
+"Ce flux de travail est utile pour optimiser le dessin 2D dans certaines "
+"situations. Lorsque vous dessinez de grandes images avec transparence, Godot "
+"va dessiner tout le quadrant à l'écran. Les grandes surfaces transparentes "
+"seront toujours dessinées."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:25
 msgid ""
@@ -26978,16 +27190,23 @@ msgid ""
 "each other with large transparent areas (for example, when using "
 "``ParallaxBackground``)."
 msgstr ""
+"Cela peut affecter les performances, en particulier sur les appareils "
+"mobiles, lorsque vous dessinez de très grandes images (généralement de la "
+"taille d'un écran) ou lorsque vous superposez plusieurs images les unes sur "
+"les autres avec de grandes zones transparentes (par exemple, lorsque vous "
+"utilisez \"ParallaxBackground\")."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:28
 msgid ""
 "Converting to a mesh will ensure that only the opaque parts will be drawn "
 "and the rest will be ignored."
 msgstr ""
+"La conversion en maillage garantit que seules les parties opaques seront "
+"dessinées et que le reste sera ignoré."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:31
 msgid "Converting Sprites to 2D meshes"
-msgstr ""
+msgstr "Conversion de Sprites en maillages 2D"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:33
 msgid ""
@@ -26995,27 +27214,39 @@ msgid ""
 "``MeshInstance2D``. Start with an image that contains large amounts of "
 "transparency on the edges, like this tree:"
 msgstr ""
+"Vous pouvez profiter de cette optimisation en convertissant un ``Sprite'' en "
+"``MeshInstance2D```. Commencez par une image qui contient beaucoup de "
+"transparence sur les bords, comme cet arbre :"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:38
 msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
 msgstr ""
+"Mettez-le dans un \"Sprite\" et sélectionnez \"Convert to 2D Mesh\" dans le "
+"menu :"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:42
 msgid ""
 "A dialog will appear, showing a preview of how the 2D mesh will be created:"
 msgstr ""
+"Une boîte de dialogue apparaîtra, montrant un aperçu de la façon dont le "
+"maillage 2D sera créé :"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:46
 msgid ""
 "The default values are good enough for many cases, but you can change growth "
 "and simplification according to your needs:"
 msgstr ""
+"Les valeurs par défaut sont suffisantes dans de nombreux cas, mais vous "
+"pouvez modifier la croissance et la simplification en fonction de vos "
+"besoins :"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:50
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
 "replaced:"
 msgstr ""
+"Finalement, appuyez sur le bouton \"Convert 2D Mesh\" et votre Sprite sera "
+"remplacé :"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:4
 msgid "Custom drawing in 2D"
@@ -27081,6 +27312,9 @@ msgid ""
 "Drawing a large number of simple objects. Custom drawing avoids the overhead "
 "of using nodes which makes it less memory intensive and potentially faster."
 msgstr ""
+"Dessiner un grand nombre d'objets simples. Le dessin personnalisé permet "
+"d'éviter l'utilisation de nœuds, ce qui réduit l'utilisation de la mémoire "
+"et est potentiellement plus rapide."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
 msgid ""
@@ -27380,6 +27614,15 @@ msgid ""
 "unexpected behavior. Since Godot doesn't provide a ``wrap()`` function, "
 "we'll create it here, as it is relatively simple."
 msgstr ""
+"Nous incrémentons également nos valeurs angle_from et angle_to ici. "
+"Cependant, il ne faut pas oublier de ``wrap()`` les valeurs résultantes "
+"entre 0 et 360° ! Autrement dit, si l'angle est de 361°, il est en fait de "
+"1°. Si vous n'enveloppez pas ces valeurs, le script fonctionnera "
+"correctement, mais les valeurs d'angle deviendront de plus en plus grandes "
+"avec le temps jusqu'à atteindre la valeur entière maximale que Godot peut "
+"gérer (``2^31 - 1``). Lorsque cela se produit, Godot peut planter ou "
+"produire un comportement inattendu. Puisque Godot ne fournit pas de fonction "
+"``wrap()``, nous allons la créer ici, car elle est relativement simple."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:351
 msgid ""
@@ -27451,6 +27694,9 @@ msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
 msgstr ""
+"Dessiner vos propres nœuds peut également être désiré lors de leur exécution "
+"dans l'éditeur pour les utiliser comme prévisualisation ou visualisation de "
+"certaines fonctionnalités ou comportements."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:474
 msgid ""
@@ -27478,6 +27724,14 @@ msgid ""
 "3D kinematic character tutorials, which are almost identical to their 2D "
 "counterparts."
 msgstr ""
+"La création d'un jeu en 3D peut s'avérer difficile. Cette coordonnée Z "
+"supplémentaire fait que beaucoup des techniques courantes qui ont contribué "
+"à rendre les jeux 2D simples ne fonctionnent plus. Pour faciliter cette "
+"transition, il convient de mentionner que Godot utilise des API similaires "
+"pour la 2D et la 3D. La plupart des nœuds sont les mêmes et sont présents "
+"dans les versions 2D et 3D. En fait, cela vaut la peine de consulter le "
+"tutoriel sur le plateformer 3D, ou les tutoriels sur les personnages "
+"cinématiques 3D , qui sont presque identiques à leurs équivalents 2D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:14
 msgid ""
@@ -27486,10 +27740,14 @@ msgid ""
 "developers, not mathematicians or engineers) will help pave the way for you "
 "to develop 3D games efficiently."
 msgstr ""
+"En 3D, les mathématiques sont un peu plus complexes qu'en 2D, consulter "
+"l'entrée :ref:`doc_vector_math` dans le wiki (qui a été spécialement créé "
+"pour les développeurs de jeux, pas pour les mathématiciens ou les "
+"ingénieurs) vous aidera à développer des jeux 3D efficacement."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
-msgstr ""
+msgstr "Nœud spatial"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 msgid ""
@@ -27498,6 +27756,10 @@ msgid ""
 "reasoning, the 3D engine uses the :ref:`Spatial <class_Spatial>` node for "
 "everything 3D."
 msgstr ""
+"ref:`Node2D <class_Node2D>` est le nœud de base pour la 2D. ref:`Control "
+"<class_Control>` est le nœud de base pour tout ce qui est GUI. Suivant ce "
+"raisonnement, le moteur 3D utilise le nœud :ref:`Spatial <class_Spatial>` "
+"pour tout ce qui est 3D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 msgid ""
@@ -27507,6 +27769,12 @@ msgid ""
 "<class_Transform>`, or as 3 :ref:`Vector3 <class_Vector3>` members "
 "representing location, Euler rotation (x,y and z angles) and scale."
 msgstr ""
+"Les nœuds spatiaux ont une transformation locale, qui est relative au nœud "
+"parent (tant que le nœud parent est également de **ou hérite** du type "
+"Spatial). Cette transformation est accessible sous la forme d'une "
+"transformation 4x3 :ref:`Transform <class_Transform>`, ou 3 :ref:`Vector3 "
+"<class_Vector3>` membres représentant la position, la rotation d'Euler "
+"(angles x,y et z) et l'échelle."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
@@ -27520,18 +27788,28 @@ msgid ""
 "in order to be imported in Godot (3D formats are not as standardized as "
 "images)."
 msgstr ""
+"Contrairement à la 2D, où le chargement du contenu de l'image et le dessin "
+"est simple, la 3D est un peu plus difficile. Le contenu doit être créé avec "
+"des outils 3D spéciaux (généralement appelés DCC) et exporté vers un format "
+"de fichier d'échange afin d'être importé dans Godot (les formats 3D ne sont "
+"pas aussi standardisés que les images)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:48
 msgid "DCC-created models"
-msgstr ""
+msgstr "Modèles créés par DCC"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:53
+#, fuzzy
 msgid ""
 "There are two pipelines to import 3D models in Godot. The first and most "
 "common one is by :ref:`doc_importing_3d_scenes`, which allows you to import "
 "entire scenes (just as they look in the DCC), including animation, skeletal "
 "rigs, blend shapes, etc."
 msgstr ""
+"Il y a deux façons pour importer des modèles 3D dans Godot. La première et "
+"la plus courante est par :ref:`doc_importing_3d_scenes`, qui vous permet "
+"d'importer des scènes entières (telles qu'elles apparaissent dans le DCC), y "
+"compris des animations, des squelettages, des formes de mélange, etc."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:58
 msgid ""
@@ -27539,10 +27817,13 @@ msgid ""
 "which can be then put inside a :ref:`MeshInstance <class_MeshInstance>` node "
 "for display."
 msgstr ""
+"La seconde façon est l'importation de fichiers.OBJ simples comme ressources "
+"de maillage, qui peuvent ensuite être placés dans un nœud :ref:`MeshInstance "
+"<class_MeshInstance>` pour affichage."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid "Generated geometry"
-msgstr ""
+msgstr "Géométrie générée"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:65
 msgid ""
@@ -27554,6 +27835,13 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
+"Il est possible de créer une géométrie personnalisée en utilisant "
+"directement la ressource :ref:`ArrayMesh <class_ArrayMesh>`. Créez "
+"simplement vos tableaux et utilisez la fonction :ref:`ArrayMesh."
+"add_surface_from_arrays() <class_ArrayMesh_method_add_surface_from_arrays>`. "
+"Une classe d'aide est également disponible, :ref:`SurfaceTool "
+"<class_SurfaceTool>`, qui fournit une API et des aides plus simples pour "
+"indexer, générer des normales, des tangentes, etc."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:72
 msgid ""
@@ -27561,10 +27849,14 @@ msgid ""
 "that will not be updated often), as creating vertex arrays and submitting "
 "them to the 3D API has a significant performance cost."
 msgstr ""
+"Dans tous les cas, cette méthode est destinée à générer de la géométrie "
+"statique (modèles qui ne seront pas souvent mis à jour), car la création de "
+"tableaux de vertex et leur soumission à l'API 3D a un coût de performance "
+"significatif."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
-msgstr ""
+msgstr "Géométrie immédiate"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:79
 msgid ""
@@ -27573,6 +27865,10 @@ msgid ""
 "<class_ImmediateGeometry>`, which provides an OpenGL 1.x style immediate-"
 "mode API to create points, lines, triangles, etc."
 msgstr ""
+"Si, à la place, il est nécessaire de générer une géométrie simple qui sera "
+"souvent mise à jour, Godot fournit un nœud spécial, :ref:`ImmediateGeometry "
+"<class_ImmediateGeometry>`, qui fournit une API de style OpenGL 1.x en mode "
+"immédiat pour créer des points, lignes, triangles, etc."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
@@ -27587,13 +27883,24 @@ msgid ""
 "that take advantage of mixing with 3D backgrounds, more realistic parallax, "
 "lighting/shadow effects, etc."
 msgstr ""
+"Alors que Godot dispose d'un puissant moteur 2D, de nombreux types de jeux "
+"utilisent la 2D dans un environnement 3D. En utilisant une caméra fixe "
+"(orthogonale ou en perspective) qui ne tourne pas, des nœuds tels que :ref:"
+"`Sprite3D <class_Sprite3D>` et :ref:`AnimatedSprite3D "
+"<class_AnimatedSprite3D3D>` peuvent être utilisés pour créer des jeux 2D qui "
+"tirent avantage du mélange avec des fonds 3D, d'une parallaxe plus réaliste, "
+"des effets de lumière / d'ombre, etc."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:96
+#, fuzzy
 msgid ""
 "The disadvantage is, of course, that added complexity and reduced "
 "performance in comparison to plain 2D, as well as the lack of reference of "
 "working in pixels."
 msgstr ""
+"L'inconvénient est, bien sûr, la complexité et les performances réduites par "
+"rapport à la 2D simple, ainsi que le manque de référence de travail en "
+"pixels."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:10
@@ -27601,6 +27908,7 @@ msgid "Environment"
 msgstr "Environnement"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:103
+#, fuzzy
 msgid ""
 "Besides editing a scene, it is often common to edit the environment. Godot "
 "provides a :ref:`WorldEnvironment <class_WorldEnvironment>` node that allows "
@@ -27608,16 +27916,25 @@ msgid ""
 "several types of built-in post-processing effects. Environments can also be "
 "overridden in the Camera."
 msgstr ""
+"Outre l'édition d'une scène, il est souvent fréquent d'éditer "
+"l'environnement. Godot fournit un nœud :ref:`WorldEnvironment "
+"<class_WorldEnvironment>` qui permet de changer la couleur de fond, le mode "
+"(comme dans, mettre une skybox), et appliquer plusieurs types d'effets post-"
+"traitement intégrés. Les environnements peuvent également être ignorés dans "
+"la caméra."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:110
 msgid "3D viewport"
-msgstr ""
+msgstr "Fenêtre d'affichage 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:112
 msgid ""
 "Editing 3D scenes is done in the 3D tab. This tab can be selected manually, "
 "but it will be automatically enabled when a Spatial node is selected."
 msgstr ""
+"L'édition des scènes 3D se fait dans l'onglet 3D. Cet onglet peut être "
+"sélectionné manuellement, mais il sera automatiquement activé lorsqu'un nœud "
+"spatial est sélectionné."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:118
 msgid ""
@@ -27626,10 +27943,15 @@ msgid ""
 "included to customize mouse buttons and behavior to be similar to other "
 "tools in the Editor Settings:"
 msgstr ""
+"Les contrôles de navigation de scène 3D par défaut sont similaires à ceux de "
+"Blender (visant à avoir une certaine cohérence dans le pipeline du logiciel "
+"libre...), mais des options sont incluses pour personnaliser les boutons de "
+"la souris et le comportement pour être similaire aux autres outils dans les "
+"paramètres de l'éditeur :"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid "Coordinate system"
-msgstr ""
+msgstr "Système de coordonnées"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:128
 msgid ""
@@ -27638,6 +27960,11 @@ msgid ""
 "attempting to use a different scale is usually a bad idea (unless you know "
 "what you are doing)."
 msgstr ""
+"Godot utilise le système `métrique <https://fr.wikipedia.org/wiki/Syst"
+"%C3%A8me_international_d%27unit%C3%A9s>`__ pour tout. La physique 3D et "
+"d'autres domaines sont réglés pour cela, donc essayer d'utiliser une échelle "
+"différente est généralement une mauvaise idée (sauf si vous savez ce que "
+"vous faites)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:133
 msgid ""
@@ -27648,6 +27975,13 @@ msgid ""
 "as rendering or physics, so make sure your artists always work in the right "
 "scale!"
 msgstr ""
+"Lorsque vous travaillez avec des ressources 3D, il est toujours préférable "
+"de travailler à la bonne échelle (réglez votre DCC sur métrique). Godot "
+"permet la mise à l'échelle post-importation et, bien que cela fonctionne "
+"dans la plupart des cas, dans de rares cas, il peut introduire des problèmes "
+"de précision en virgule flottante (et donc, des défauts ou artefacts) dans "
+"des zones délicates, comme le rendu ou la physique, alors assurez-vous que "
+"vos artistes travaillent toujours dans la bonne échelle !"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:140
 msgid ""
@@ -27656,64 +27990,83 @@ msgid ""
 "axis is used as a \"pointing towards\" direction. This convention roughly "
 "means that:"
 msgstr ""
+"La coordonnée Y est utilisée pour \"haut\", bien que pour la plupart des "
+"objets qui ont besoin d'être alignés (comme les lumières, les caméras, le "
+"collisionneur de capsules, les véhicules, etc.), l'axe Z est utilisé comme "
+"une direction \"pointant vers\". Cette convention signifie en gros :"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:145
 msgid "**X** is sides"
-msgstr ""
+msgstr "**X** est les côtés"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:146
 msgid "**Y** is up/down"
-msgstr ""
+msgstr "**Y** est haut/bas"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:147
 msgid "**Z** is front/back"
-msgstr ""
+msgstr "**Z** est avant/arrière"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:150
 msgid "Space and manipulation gizmos"
-msgstr ""
+msgstr "Espace et gadgets de manipulation"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:152
+#, fuzzy
 msgid ""
 "Moving objects in the 3D view is done through the manipulator gizmos. Each "
 "axis is represented by a color: Red, Green, Blue represent X,Y,Z "
 "respectively. This convention applies to the grid and other gizmos too (and "
 "also to the shader language, ordering of components for Vector3,Color,etc.)."
 msgstr ""
+"Le déplacement des objets dans la vue 3D se fait à l'aide des gadgets de "
+"manipulation. Chaque axe est représenté par une couleur : Rouge, Vert, Bleu "
+"représentent X,Y,Z respectivement. Cette convention s'applique également à "
+"la grille et aux autres gadgets (ainsi qu'au langage shader, à l'ordre des "
+"composants pour Vector3, Color, etc.)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:160
 msgid "Some useful keybindings:"
-msgstr ""
+msgstr "Quelques raccourcis clavier utiles :"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
+#, fuzzy
 msgid ""
 "To snap placement or rotation, press the \"s\" key while moving, scaling or "
 "rotating."
 msgstr ""
+"Pour enclencher le placement ou la rotation, appuyez sur la touche \"s\" "
+"pendant le déplacement, la mise à l'échelle ou la rotation."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:164
 msgid "To center the view on the selected object, press the \"f\" key."
 msgstr ""
+"Pour centrer la vue sur l'objet sélectionné, appuyez sur la touche \"f\"."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid "View menu"
-msgstr ""
+msgstr "Menu affichage"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:169
 msgid ""
 "The view options are controlled by the \"View\" menu in the viewport's "
 "toolbar."
 msgstr ""
+"Les options d'affichage sont contrôlées par le menu \"Affichage\" dans la "
+"barre d'outils de la fenêtre d'affichage."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:173
 msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
 msgstr ""
+"Vous pouvez masquer les gadgets dans la vue 3D de l'éditeur via ce menu :"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:177
 msgid ""
 "To hide a specific type of gizmos, you can toggle them off in the \"View\" "
 "menu."
 msgstr ""
+"Pour masquer un type spécifique de gadgets, vous pouvez les désactiver dans "
+"le menu \"Affichage\"."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:182
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:40
@@ -27724,6 +28077,8 @@ msgstr "Environnement par défaut"
 msgid ""
 "When created from the Project Manager, the 3D environment has a default sky."
 msgstr ""
+"Lorsqu'il est créé à partir du gestionnaire de projet, l'environnement 3D "
+"possède un ciel par défaut."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:188
 msgid ""
@@ -27731,6 +28086,9 @@ msgid ""
 "work with a default environment in order to provide indirect and reflected "
 "light to your objects."
 msgstr ""
+"Étant donné le fonctionnement du rendu physique, il est conseillé de "
+"toujours essayer de travailler avec un environnement par défaut afin de "
+"fournir une lumière indirecte et réfléchie à vos objets."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 msgid "Cameras"
@@ -27742,6 +28100,10 @@ msgid ""
 "displayed unless a :ref:`Camera <class_Camera>` is also added to the scene. "
 "Cameras can work in either orthogonal or perspective projections:"
 msgstr ""
+"Quel que soit le nombre d'objets placés dans l'espace 3D, rien ne sera "
+"affiché à moins qu'une :ref:`Camera <class_Camera>` ne soit également "
+"ajoutée à la scène. Les caméras peuvent fonctionner dans des projections "
+"orthogonales ou perspective :"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:202
 msgid ""
@@ -27751,12 +28113,20 @@ msgid ""
 "picture-in-picture) are desired, they need their own children cameras to "
 "display."
 msgstr ""
+"Les caméras sont associées à une vue parent ou grand-parent (et ne "
+"s'affichent que dans cette vue). Comme la racine de l'arborescence de la "
+"scène est une fenêtre d'affichage, les caméras s'y affichent par défaut, "
+"mais si des fenêtres secondaires (en tant que cible de rendu ou image dans "
+"l'image) sont souhaitées, elles ont besoin de leurs propres caméras enfants "
+"pour les afficher."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:210
 msgid ""
 "When dealing with multiple cameras, the following rules are enforced for "
 "each viewport:"
 msgstr ""
+"Lorsque vous avez affaire à plusieurs caméras, les règles suivantes "
+"s'appliquent à chaque fenêtre d'affichage :"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:213
 msgid ""
@@ -27764,6 +28134,9 @@ msgid ""
 "will become the active camera. Further cameras entering the scene will be "
 "ignored (unless they are set as *current*)."
 msgstr ""
+"Si aucune caméra n'est présente dans l'arbre de scène, la première qui y "
+"entre deviendra la caméra active. Les autres caméras entrant dans la scène "
+"seront ignorées (à moins qu'elles ne soient réglées sur *current*)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:216
 msgid ""
@@ -27771,18 +28144,26 @@ msgid ""
 "of any other camera in the scene. If the property is set, it will become "
 "active, replacing the previous camera."
 msgstr ""
+"Si une caméra possède la propriété \"*current*\", elle sera utilisée "
+"indépendamment de toute autre caméra de la scène. Si la propriété est "
+"définie, elle devient active et remplace la caméra précédente."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:219
 msgid ""
 "If an active camera leaves the scene tree, the first camera in tree-order "
 "will take its place."
 msgstr ""
+"Si une caméra active quitte l'arbre de scène, la première caméra en ordre "
+"arborescent prendra sa place."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:225
 msgid ""
 "There is no limitation on the number of lights, nor of types of lights, in "
 "Godot. As many as desired can be added (as long as performance allows)."
 msgstr ""
+"Il n'y a pas de limitation sur le nombre de lumières, ni sur les types de "
+"lumières, dans Godot. On peut en ajouter autant qu'on le souhaite (tant que "
+"les performances le permettent)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:4
 msgid "Using 3D transforms"
@@ -27795,23 +28176,33 @@ msgid ""
 "thinking is along the lines of *\"Oh, it's just like rotating in 2D, except "
 "now rotations happen in X, Y and Z\"*."
 msgstr ""
+"Si vous n'avez jamais fait de jeux 3D auparavant, travailler avec des "
+"rotations en trois dimensions peut être déroutant au début. Venant de la 2D, "
+"la façon naturelle de penser est du genre *\"Oh, c'est comme tourner en 2D, "
+"sauf que maintenant les rotations se produisent en X, Y et Z \"*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:12
 msgid ""
 "At first this seems easy and for simple games, this way of thinking may even "
 "be enough. Unfortunately, it's often incorrect."
 msgstr ""
+"Au premier abord, cela semble facile et pour les jeux simples, cette façon "
+"de penser peut même suffire. Malheureusement, c'est souvent incorrect."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:14
 msgid ""
 "Angles in three dimensions are most commonly referred to as \"Euler Angles\"."
 msgstr ""
+"Les angles en trois dimensions sont le plus souvent appelés \"angles d'Euler"
+"\"."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:18
 msgid ""
 "Euler angles were introduced by mathematician Leonhard Euler in the early "
 "1700s."
 msgstr ""
+"Les angles d'Euler ont été introduits par le mathématicien Leonhard Euler au "
+"début des années 1700."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:22
 msgid ""
@@ -27821,6 +28212,12 @@ msgid ""
 "explain why, as well as outlining best practices for dealing with transforms "
 "when programming 3D games."
 msgstr ""
+"Cette façon de représenter les rotations 3D était révolutionnaire à "
+"l'époque, mais elle a plusieurs défauts lorsqu'elle est utilisée dans le "
+"développement de jeux (ce qui est à attendre d'un gars avec un chapeau "
+"amusant). L'idée de ce document est d'expliquer pourquoi, ainsi que de "
+"présenter les meilleures pratiques pour gérer les transformations lors de la "
+"programmation de jeux 3D."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:28
 msgid "Problems of Euler angles"
@@ -27831,6 +28228,8 @@ msgid ""
 "While it may seem intuitive that each axis has a rotation, the truth is that "
 "it's just not practical."
 msgstr ""
+"Bien qu'il puisse sembler intuitif que chaque axe ait une rotation, la "
+"vérité est que ce n'est tout simplement pas pratique."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:33
 msgid "Axis order"
@@ -27844,6 +28243,11 @@ msgid ""
 "only way an orientation can be produced from angles is to rotate the object "
 "angle by angle, in an *arbitrary order*."
 msgstr ""
+"La raison principale est qu'il n'y a pas de façon unique de construire une "
+"orientation à partir des angles. Il n'existe pas de fonction mathématique "
+"standard qui prend tous les angles ensemble et produit une rotation 3D. La "
+"seule façon de produire une orientation à partir des angles est de faire "
+"tourner l'objet angle par angle, dans un ordre *arbitraire*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:39
 msgid ""
@@ -27854,6 +28258,12 @@ msgid ""
 "are several ways to construct an orientation from 3 different angles, "
 "depending on *the order of the rotations*."
 msgstr ""
+"Ceci pourrait être fait en tournant d'abord dans *X*, puis dans *Y* et "
+"ensuite dans *Z*. Alternativement, vous pouvez d'abord tourner en *Y*, puis "
+"en *Z* et enfin en *X*. Tout fonctionne, mais selon l'ordre, l'orientation "
+"finale de l'objet ne sera *pas nécessairement la même*. En effet, cela "
+"signifie qu'il y a plusieurs façons de construire une orientation à partir "
+"de 3 angles différents, selon *l'ordre des rotations*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:43
 msgid ""
@@ -27861,11 +28271,16 @@ msgid ""
 "(from Wikipedia). As you can see, the orientation of each axis depends on "
 "the rotation of the previous one:"
 msgstr ""
+"Voici une visualisation des axes de rotation (dans l'ordre X,Y,Z) dans un "
+"cardan (de Wikipedia). Comme vous pouvez le voir, l'orientation de chaque "
+"axe dépend de la rotation du précédent :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:47
 msgid ""
 "You may be wondering how this affects you. Let's look at a practical example:"
 msgstr ""
+"Vous vous demandez peut-être comment cela vous affecte. Prenons un exemple "
+"pratique :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:49
 msgid ""
@@ -27873,6 +28288,10 @@ msgid ""
 "Moving the mouse left and right controls your view angle parallel to the "
 "ground, while moving it up and down moves the player's view up and down."
 msgstr ""
+"Imaginez que vous travaillez sur un contrôleur à la première personne (par "
+"exemple, un jeu FPS). Déplacer la souris vers la gauche et vers la droite "
+"contrôle votre angle de vue parallèle au sol, tout en le déplaçant vers le "
+"haut et vers le bas déplace la vue du joueur vers le haut et vers le bas."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:51
 msgid ""
@@ -27880,12 +28299,17 @@ msgid ""
 "in the *Y* axis (\"up\" in this case, since Godot uses a \"Y-Up\" "
 "orientation), followed by rotation in the *X* axis."
 msgstr ""
+"Dans ce cas, pour obtenir l'effet désiré, la rotation doit d'abord être "
+"appliquée sur l'axe *Y* (dans ce cas, Godot utilise une orientation \"Y-Up"
+"\"), puis sur l'axe *X*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:55
 msgid ""
 "If we were to apply rotation in the *X* axis first, and then in *Y*, the "
 "effect would be undesired:"
 msgstr ""
+"Si nous devions appliquer la rotation dans l'axe *X* d'abord, puis dans *Y*, "
+"l'effet serait undésirable :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:59
 msgid ""
@@ -27893,6 +28317,10 @@ msgid ""
 "axis rotations to be applied may differ. Therefore, applying rotations in X, "
 "Y, and Z is not enough: you also need a *rotation order*."
 msgstr ""
+"Selon le type de jeu ou d'effet désiré, l'ordre dans lequel vous voulez que "
+"les rotations des axes soient appliquées peut varier. Par conséquent, il ne "
+"suffit pas d'appliquer des rotations en X, Y et Z : il vous faut également "
+"un *ordre de rotation*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:62
 msgid "Interpolation"
@@ -27905,18 +28333,24 @@ msgid ""
 "rotations). One logical way to approach this is to interpolate the angles "
 "from one position to the next. One would expect it to look like this:"
 msgstr ""
+"Un autre problème avec l'utilisation des angles d'Euler est l'interpolation. "
+"Imaginez que vous voulez faire la transition entre deux caméras différentes "
+"ou entre deux positions ennemies (y compris les rotations). Une façon "
+"logique d'y parvenir est d'interpoler les angles d'une position à l'autre. "
+"On pourrait s'attendre à ce que ça ressemble à ça :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:68
 msgid "But this does not always have the expected effect when using angles:"
 msgstr ""
+"Mais cela n'a pas toujours l'effet escompté lorsque l'on utilise les angles :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:72
 msgid "The camera actually rotated the opposite direction!"
-msgstr ""
+msgstr "La caméra a en fait tourné dans la direction opposée !"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:74
 msgid "There are a few reasons this may happen:"
-msgstr ""
+msgstr "Il y a plusieurs raisons à cela :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:76
 msgid ""
@@ -27925,6 +28359,10 @@ msgid ""
 "degrees is not the same as going from ``270`` to ``360``, even though the "
 "angles are equivalent)."
 msgstr ""
+"Les rotations ne correspondent pas linéairement à l'orientation, donc les "
+"interpoler n'aboutit pas toujours au chemin le plus court (passer de "
+"``270``` à ``0` degrés n'est pas la même chose que passer de ``270`` à "
+"``360``, même si les angles sont équivalents)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:77
 msgid ""
@@ -27932,6 +28370,10 @@ msgid ""
 "freedom is lost). See `Wikipedia's page on Gimbal Lock <https://en.wikipedia."
 "org/wiki/Gimbal_lock>`_ for a detailed explanation of this problem."
 msgstr ""
+"Le blocage de cardan est en jeu (le premier et le dernier axe de rotation "
+"s'alignent, ce qui entraîne une perte de liberté). Voir la page `Wikipedia "
+"sur le blocage de cardan <https://fr.wikipedia.org/wiki/Blocage_de_cardan>`_ "
+"pour une explication détaillée de ce problème."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:80
 msgid "Say no to Euler angles"
@@ -27945,10 +28387,15 @@ msgid ""
 "rotations (generally just one axis, or even two in limited cases). As much "
 "as you may be tempted, don't use it."
 msgstr ""
+"Le résultat de tout ceci est que vous ne devriez pas utiliser la propriété "
+"``rotation`` des nœuds :ref:`class_Spatial' de Godot pour les jeux. C'est là "
+"pour être utilisé principalement dans l'éditeur, pour la cohérence avec le "
+"moteur 2D, et pour des rotations simples (généralement un seul axe, ou même "
+"deux dans des cas limités). Même si vous êtes tenté, ne l'utilisez pas."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:84
 msgid "Instead, there is a better way to solve your rotation problems."
-msgstr ""
+msgstr "Il existe une meilleure façon de résoudre vos problèmes de rotation."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:87
 msgid "Introducing transforms"
@@ -27960,12 +28407,18 @@ msgid ""
 "`class_Spatial` node contains a ``transform`` property which is relative to "
 "the parent's transform, if the parent is a Spatial-derived type."
 msgstr ""
+"Godot utilise le type de données :ref:`class_Transform` pour les "
+"orientations. Chaque nœud :ref:`class_Spatial' contient une propriété "
+"``transform`` qui est relative à la transformation du parent, si le parent "
+"est un type dérivé de spatial."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:91
 msgid ""
 "It is also possible to access the world coordinate transform via the "
 "``global_transform`` property."
 msgstr ""
+"Il est également possible d'accéder à la transformation des coordonnées du "
+"monde via la propriété ``global_transform``."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:93
 msgid ""
@@ -27978,20 +28431,32 @@ msgid ""
 "also be inferred from the length of the axes. A *basis* can also be "
 "interpreted as a 3x3 matrix and used as ``transform.basis[x][y]``."
 msgstr ""
+"Une transformation a un :ref:`class_Basis` (transform.basis sub-property), "
+"qui se compose de trois vecteurs :ref:`class_Vector3`. Ceux-ci sont "
+"accessibles via la propriété ``transform.basis`` et peuvent être accédés "
+"directement par ``transform.basis.x``, ``transform.basis.y``, et ``transform."
+"basis.z``. Chaque vecteur pointe dans la direction dans laquelle son axe a "
+"été tourné, de sorte qu'ils décrivent efficacement la rotation totale du "
+"nœud. L'échelle (tant qu'elle est uniforme) peut également être déduite de "
+"la longueur des axes. Une *base* peut aussi être interprétée comme une "
+"matrice 3x3 et utilisée comme ``transform.basis[x][y]``."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:95
 msgid "A default basis (unmodified) is akin to:"
-msgstr ""
+msgstr "Une base par défaut (non modifiée) s'apparente à :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:123
+#, fuzzy
 msgid "This is also an analog of a 3x3 identity matrix."
-msgstr ""
+msgstr "C’est aussi un analogue d’une matrice d’identité 3 x 3."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:125
 msgid ""
 "Following the OpenGL convention, ``X`` is the *Right* axis, ``Y`` is the "
 "*Up* axis and ``Z`` is the *Forward* axis."
 msgstr ""
+"Selon la convention OpenGL, ``X`` est l'axe *Droite*, ``Y`` est l'axe *Haut* "
+"et ``Z`` est l'axe *Avant*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:127
 msgid ""
@@ -28000,12 +28465,19 @@ msgid ""
 "transform is. Combining the *basis* with the *origin*, a *transform* "
 "efficiently represents a unique translation, rotation, and scale in space."
 msgstr ""
+"Ensemble avec la *base*, une transformation a aussi une *origine*. Il s'agit "
+"d'un *Vector3* spécifiant à quelle distance de l'origine réelle ``(0, 0, 0, "
+"0)``` cette transformation est. Combinant la *base* avec l'*origine*, une "
+"*transformation* représente efficacement une translation, une rotation et "
+"une mise à l'échelle dans l'espace."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:132
 msgid ""
 "One way to visualize a transform is to look at an object's 3D gizmo while in "
 "\"local space\" mode."
 msgstr ""
+"Une façon de visualiser une transformation est de regarder le gadget 3D d'un "
+"objet en mode \"local space\"."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:136
 msgid ""
@@ -28013,12 +28485,17 @@ msgid ""
 "blue respectively) of the basis, while the gizmo's center is at the object's "
 "origin."
 msgstr ""
+"Les flèches du gadget indiquent les axes ``X``, ``Y`` et ``Z`` (en rouge, "
+"vert et bleu respectivement) de la base, tandis que le centre du gadget est "
+"à l'origine de l'objet."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:140
 msgid ""
 "For more information on the mathematics of vectors and transforms, please "
 "read the :ref:`doc_vector_math` tutorials."
 msgstr ""
+"Pour plus d'informations sur les mathématiques des vecteurs et des "
+"transformations, veuillez lire les tutoriels :ref:`doc_vector_math`."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:143
 msgid "Manipulating transforms"
@@ -28029,30 +28506,38 @@ msgid ""
 "Of course, transforms are not as straightforward to manipulate as angles and "
 "have problems of their own."
 msgstr ""
+"Bien sûr, les transformations ne sont pas aussi simple à manipuler comme "
+"angles et ont leurs propres problèmes."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:147
 msgid ""
 "It is possible to rotate a transform, either by multiplying its basis by "
 "another (this is called accumulation), or by using the rotation methods."
 msgstr ""
+"Il est possible de faire tourner une transformation, soit en multipliant sa "
+"base par une autre (c'est ce qu'on appelle l'accumulation), soit en "
+"utilisant les méthodes de rotation."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:164
 msgid "A method in Spatial simplifies this:"
-msgstr ""
+msgstr "Une méthode dans Spatial simplifie cela :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:181
 msgid "This rotates the node relative to the parent node."
-msgstr ""
+msgstr "Ceci permet de faire pivoter le nœud par rapport au nœud parent."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:183
+#, fuzzy
 msgid ""
 "To rotate relative to object space (the node's own transform), use the "
 "following:"
 msgstr ""
+"Pour faire pivoter par rapport à l'espace objet (la propre transformation du "
+"nœud), utilisez ce qui suit :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:197
 msgid "Precision errors"
-msgstr ""
+msgstr "Erreurs de précision"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:199
 msgid ""
@@ -28061,12 +28546,18 @@ msgid ""
 "be exactly ``1.0``, and they may not be exactly ``90`` degrees from each "
 "other."
 msgstr ""
+"Effectuer des opérations successives sur les transformations entraînera une "
+"perte de précision due à une erreur à virgule flottante. Cela signifie que "
+"l'échelle de chaque axe peut ne plus être exactement \"1,0\" et qu'ils "
+"peuvent ne plus être exactement à \"90\" degrés les uns des autres."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:201
 msgid ""
 "If a transform is rotated every frame, it will eventually start deforming "
 "over time. This is unavoidable."
 msgstr ""
+"Si une transformation est tournée à chaque image, elle finira par se "
+"déformer avec le temps. C'est inévitable."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:203
 msgid ""
@@ -28074,12 +28565,18 @@ msgid ""
 "*orthonormalize* the transform after some time (maybe once per frame if you "
 "modify it every frame):"
 msgstr ""
+"Il y a deux façons différentes de gérer cela. La première est de "
+"*orthonormaliser* la transformation après un certain temps (peut-être une "
+"fois par image si vous la modifiez à chaque image) :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:214
 msgid ""
 "This will make all axes have ``1.0`` length again and be ``90`` degrees from "
 "each other. However, any scale applied to the transform will be lost."
 msgstr ""
+"Tous les axes auront à nouveau une longueur de 1,0 et seront à 90 degrés les "
+"uns des autres. Cependant, toute mise à l'échelle appliquée à la "
+"transformation sera perdue."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:216
 msgid ""
@@ -28087,10 +28584,14 @@ msgid ""
 "scale their children nodes instead (such as MeshInstance). If you absolutely "
 "must scale the node, then re-apply it at the end:"
 msgstr ""
+"Il est recommandé de ne pas mettre à l'échelle les nœuds qui vont être "
+"manipulés ; mettez plutôt à l'échelle leurs nœuds enfants (tels que "
+"MeshInstance). Si vous devez absolument mettre à l'échelle le nœud, "
+"réappliquez-la à la fin :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:230
 msgid "Obtaining information"
-msgstr ""
+msgstr "Obtenir l'information"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:232
 msgid ""
@@ -28098,18 +28599,28 @@ msgid ""
 "transform?\"**. The answer again is: you don't. You must do your best to "
 "stop thinking in angles."
 msgstr ""
+"Vous pensez peut-être qu'à ce stade : **\"D'accord, mais comment obtenir des "
+"angles à partir d'une transformation ?\"** Encore une fois, la réponse est : "
+"vous ne le faites pas. Vous devez faire de votre mieux pour arrêter de "
+"penser en angles."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:234
 msgid ""
 "Imagine you need to shoot a bullet in the direction your player is facing. "
 "Just use the forward axis (commonly ``Z`` or ``-Z``)."
 msgstr ""
+"Imaginez que vous avez besoin de tirer une balle dans la direction faisant "
+"face à votre joueur . Utilisez simplement l'axe avant (communément ``Z`` ou "
+"``-Z``)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:247
 msgid ""
 "Is the enemy looking at the player? Use the dot product for this (see the :"
 "ref:`doc_vector_math` tutorial for an explanation of the dot product):"
 msgstr ""
+"L'ennemi regarde-t-il le joueur ? Utilisez le produit scalaire pour cela "
+"(voir le tutoriel :ref:`doc_vector_math` pour une explication du produit "
+"scalaire) :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:266
 msgid "Strafe left:"
@@ -28117,11 +28628,13 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:283
 msgid "Jump:"
-msgstr ""
+msgstr "Sauter :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:303
 msgid "All common behaviors and logic can be done with just vectors."
 msgstr ""
+"Tous les comportements communs et logique peuvent être faits avec juste des "
+"vecteurs."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:306
 #, fuzzy
@@ -28129,12 +28642,18 @@ msgid "Setting information"
 msgstr "Créer l'animation"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:308
+#, fuzzy
 msgid ""
 "There are, of course, cases where you want to set information to a "
 "transform. Imagine a first person controller or orbiting camera. Those are "
 "definitely done using angles, because you *do want* the transforms to happen "
 "in a specific order."
 msgstr ""
+"Il y a, bien sûr, des cas où vous voulez régler l'information sur une "
+"transformation. Imaginez une vue à la première personne ou une caméra "
+"orbitale. Celles-ci sont certainement faites en utilisant des angles, parce "
+"que vous *voulez* que les transformations se produisent dans un ordre "
+"spécifique."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:310
 msgid ""
@@ -28142,22 +28661,30 @@ msgid ""
 "set them every frame. Don't try to retrieve and re-use them because the "
 "transform is not meant to be used this way."
 msgstr ""
+"Pour de tels cas, gardez les angles et les rotations *à l'extérieur* de la "
+"transformation et réglez-les à chaque image. N'essayez pas de les récupérer "
+"et de les réutiliser car la transformation n'est pas destinée à être "
+"utilisée de cette façon."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:312
 msgid "Example of looking around, FPS style:"
-msgstr ""
+msgstr "Exemple de regarder autour, dans le style FPS :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:355
 msgid ""
 "As you can see, in such cases it's even simpler to keep the rotation "
 "outside, then use the transform as the *final* orientation."
 msgstr ""
+"Comme vous pouvez le voir, dans de tels cas, il est encore plus simple de "
+"garder la rotation à l'extérieur, puis d'utiliser la transformation comme "
+"orientation *finale*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:358
 msgid "Interpolating with quaternions"
 msgstr "Interpoler avec des quaternions"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:360
+#, fuzzy
 msgid ""
 "Interpolating between two transforms can efficiently be done with "
 "quaternions. More information about how quaternions work can be found in "
@@ -28166,10 +28693,17 @@ msgid ""
 "interpolation. As in, if you have two rotations, a quaternion will smoothly "
 "allow interpolation between them using the closest axis."
 msgstr ""
+"L'interpolation entre deux transformations peut se faire efficacement avec "
+"des quaternions. Plus d'informations sur le fonctionnement des quaternions "
+"peuvent être trouvées à d'autres endroits sur Internet. Pour l'usage "
+"pratique, il suffit de comprendre que leur utilisation principale est de "
+"faire une interpolation de la trajectoire la plus proche possible. Si vous "
+"avez deux rotations, un quaternion permettra l'interpolation entre elles en "
+"utilisant l'axe le plus proche."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:362
 msgid "Converting a rotation to quaternion is straightforward."
-msgstr ""
+msgstr "Convertir une rotation en quaternion est très simple."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:385
 msgid ""
@@ -28181,14 +28715,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:387
+#, fuzzy
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
 msgstr ""
+"Les quaternions sont utiles pour les interpolations caméra/chemin/etc. car "
+"le résultat sera toujours correct et lisse."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:390
 msgid "Transforms are your friend"
-msgstr ""
+msgstr "Les transformations sont vos amies"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid ""
@@ -28196,6 +28733,9 @@ msgid ""
 "time. However, once you get used to them, you will appreciate their "
 "simplicity and power."
 msgstr ""
+"Pour la plupart des débutants, s'habituer à travailler avec des "
+"transformations peut prendre un certain temps. Cependant, une fois que vous "
+"vous y serez habitué, vous apprécierez leur simplicité et leur puissance."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:394
 msgid ""
@@ -28203,10 +28743,14 @@ msgid ""
 "communities <https://godotengine.org/community>`_ and, once you become "
 "confident enough, please help others!"
 msgstr ""
+"N'hésitez pas à demander de l'aide à ce sujet dans n'importe laquelle des \" "
+"communautés en ligne \" de Godot <https://godotengine.org/community>`_ et, "
+"une fois que vous aurez suffisamment confiance en vous, s'il vous plaît "
+"aider les autres !"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:4
 msgid "3D performance and limitations"
-msgstr ""
+msgstr "Performances et limitions de la 3D"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:9
 msgid ""
@@ -28214,6 +28758,10 @@ msgid ""
 "there are always trade-offs, which consist of trading speed for usability "
 "and flexibility. Some practical examples of this are:"
 msgstr ""
+"Godot suit une philosophie de performance équilibrée. Dans le monde de la "
+"performance, il y a toujours des compromis à faire, qui consistent à troquer "
+"la vitesse contre la facilité d'utilisation et la flexibilité. En voici "
+"quelques exemples pratiques :"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:13
 msgid ""
@@ -28223,6 +28771,11 @@ msgid ""
 "efficient, but, at the same time, fewer objects are rendered, so efficiency "
 "overall improves."
 msgstr ""
+"Rendre efficacement des objets en grandes quantités est facile, mais "
+"lorsqu'une scène de grande taille doit être rendue, cela peut devenir "
+"inefficace. Pour résoudre ce problème, le calcul de visibilité doit être "
+"ajouté au rendu, ce qui rend le rendu moins efficace, mais, en même temps, "
+"moins d'objets sont rendus, ce qui améliore l'efficacité globale."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:18
 msgid ""
@@ -28230,8 +28783,13 @@ msgid ""
 "be rendered is also slow. To solve this, objects are sorted by material to "
 "reduce the costs, but at the same time sorting has a cost."
 msgstr ""
+"La configuration des propriétés de chaque matériaux pour chaque objet qui "
+"doit être rendu est également lente. Pour résoudre ce problème, les objets "
+"sont triés par matériaux afin de réduire les coûts, mais le tri a également "
+"un coût."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:22
+#, fuzzy
 msgid ""
 "In 3D physics a similar situation happens. The best algorithms to handle "
 "large amounts of physics objects (such as SAP) are slow at insertion/removal "
@@ -28239,6 +28797,11 @@ msgid ""
 "removal, as well as ray-casting, will not be able to handle as many active "
 "objects."
 msgstr ""
+"En physique 3D, une situation similaire se produit. Les meilleurs "
+"algorithmes pour manipuler de grandes quantités d'objets physiques (tels que "
+"SAP) sont lents à l'insertion/retrait d'objets et au ray-casting. Les "
+"algorithmes qui permettent une insertion, un retrait et un ray-casting plus "
+"rapides, ne seront pas en mesure de traiter autant d'objets actifs."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:28
 msgid ""
@@ -28247,37 +28810,52 @@ msgid ""
 "that might be fast in some situations and slow in others.. or algorithms "
 "that are fast but make usability more difficult."
 msgstr ""
+"Et il y a bien d'autres exemples ! Les moteurs de jeu s'efforcent d'être "
+"généraliste par nature, donc les algorithmes équilibrés sont toujours "
+"préférés aux algorithmes qui peuvent être rapides dans certaines situations "
+"et lents dans d'autres... ou aux algorithmes qui sont rapides mais rendent "
+"l'utilisation plus difficile."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:33
+#, fuzzy
 msgid ""
 "Godot is not an exception and, while it is designed to have backends "
 "swappable for different algorithms, the default ones (or more like, the only "
 "ones that are there for now) prioritize balance and flexibility over "
 "performance."
 msgstr ""
+"Godot n'est pas une exception et, bien qu'il soit conçu pour avoir des "
+"backends interchangeables pour différents algorithmes, ceux par défaut (ou "
+"plutôt les seuls qui sont là pour le moment) privilégient l'équilibre et la "
+"flexibilité sur la performance."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:38
 msgid ""
 "With this clear, the aim of this tutorial is to explain how to get the "
 "maximum performance out of Godot."
 msgstr ""
+"Le but de ce tutoriel est d'expliquer comment tirer le maximum de "
+"performances de Godot."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:42
 #: ../../docs/tutorials/viewports/viewports.rst:174
 msgid "Rendering"
-msgstr ""
+msgstr "Rendu"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:44
 msgid ""
 "3D rendering is one of the most difficult areas to get performance from, so "
 "this section will have a list of tips."
 msgstr ""
+"Le rendu 3D est l'un des domaines les plus difficiles pour obtenir des "
+"performances, c'est pourquoi cette section contient une liste de conseils."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:48
 msgid "Reuse shaders and materials"
-msgstr ""
+msgstr "Réutilisation des shaders et des matériaux"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:50
+#, fuzzy
 msgid ""
 "The Godot renderer is a little different to what is out there. It's designed "
 "to minimize GPU state changes as much as possible. :ref:"
@@ -28285,6 +28863,12 @@ msgid ""
 "similar shaders but, if custom shaders are used, make sure to reuse them as "
 "much as possible. Godot's priorities will be like this:"
 msgstr ""
+"Le moteur de rendu Godot est un peu différent de ce qu'y existe ailleurs. Il "
+"est conçu pour minimiser autant que possible les changements d'état du GPU. :"
+"ref:`class_SpatialMaterial' fait un bon travail pour réutiliser les "
+"matériaux qui nécessitent des shaders similaires mais, si des shaders "
+"personnalisés sont utilisés, assurez-vous de les réutiliser autant que "
+"possible. Les priorités de Godot seront comme ça :"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:57
 msgid ""
@@ -28293,13 +28877,21 @@ msgid ""
 "the hundreds or thousands) try reusing the materials or in the worst case "
 "use atlases."
 msgstr ""
+"**Réutilisation des matériaux** : Moins il y a de matériaux différents dans "
+"la scène, plus le rendu sera rapide. Si une scène a une quantité énorme "
+"d'objets (des centaines ou des milliers), essayez de réutiliser les "
+"matériaux ou dans le pire des cas, utilisez des atlas."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:61
+#, fuzzy
 msgid ""
 "**Reusing Shaders**: If materials can't be reused, at least try to re-use "
 "shaders (or SpatialMaterials with different parameters but the same "
 "configuration)."
 msgstr ""
+"**Reusing Shaders** : Si les matériaux ne peuvent pas être réutilisés, "
+"essayez au moins de réutiliser les shaders (ou des SpatialMaterials avec des "
+"paramètres différents mais avec la même configuration)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:65
 msgid ""
@@ -28307,6 +28899,9 @@ msgid ""
 "each, rendering will be slow. If the same scene has 20.000 objects, but only "
 "uses 100 materials, rendering will be blazingly fast."
 msgstr ""
+"Si une scène a, par exemple, 20.000 objets avec 20.000 matériaux différents "
+"chacun, le rendu sera lent. Si la même scène contient 20.000 objets, mais "
+"n'utilise que 100 matériaux, le rendu sera d'une rapidité fulgurante."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:71
 msgid "Pixel cost vs vertex cost"
@@ -28318,22 +28913,29 @@ msgid ""
 "faster it will be rendered. This is *really* relative and depends on many "
 "factors."
 msgstr ""
+"Il est communément admis que plus le nombre de polygones d'un modèle est "
+"faible, plus il sera rendu rapidement. Ceci est *vraiment* relatif et dépend "
+"de nombreux facteurs."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:77
 msgid ""
 "On a modern PC and console, vertex cost is low. GPUs originally only "
 "rendered triangles, so all the vertices:"
 msgstr ""
+"Sur un PC et une console modernes, le coût du sommet est faible. A "
+"l'origine, les GPU ne rendaient que des triangles, donc tous les sommets :"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:80
+#, fuzzy
 msgid "Had to be transformed by the CPU (including clipping)."
-msgstr ""
+msgstr "Doivent être transformés par le CPU (y compris le clipping)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:82
 msgid "Had to be sent to the GPU memory from the main RAM."
-msgstr ""
+msgstr "Doit être envoyé à la mémoire du GPU depuis la RAM principale."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:84
+#, fuzzy
 msgid ""
 "Nowadays, all this is handled inside the GPU, so the performance is "
 "extremely high. 3D artists usually have the wrong feeling about polycount "
@@ -28342,6 +28944,13 @@ msgid ""
 "performance. Truth is, a model rendered by a 3D engine is much more optimal "
 "than how 3D DCCs display them."
 msgstr ""
+"De nos jours, tout cela est géré à l'intérieur du GPU, donc les performances "
+"sont extrêmement élevées. Les artistes 3D ont généralement le mauvais "
+"sentiment au sujet de la performance polycount parce que les DCC 3D (tels "
+"que Blender, Max, etc.) ont besoin de garder la géométrie dans la mémoire "
+"CPU pour qu'elle puisse être éditée, réduisant ainsi la performance réelle. "
+"La vérité est qu'un modèle rendu par un moteur 3D est beaucoup plus optimal "
+"que la façon dont les DCC 3D les affichent."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:91
 msgid ""
@@ -28350,8 +28959,14 @@ msgid ""
 "grid. Mobile GPUs are limited to a tiny battery, so they need to be a lot "
 "more power efficient."
 msgstr ""
+"Sur les appareils mobiles, l'histoire est différente. Les GPU PC et Console "
+"sont des monstres de force brute qui peuvent tirer autant d'électricité "
+"qu'ils en ont besoin du réseau électrique. Les GPU mobiles sont limités à "
+"une minuscule batterie, ils doivent donc être beaucoup plus économes en "
+"énergie."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:96
+#, fuzzy
 msgid ""
 "To be more efficient, mobile GPUs attempt to avoid *overdraw*. This means, "
 "the same pixel on the screen being rendered (as in, with lighting "
@@ -28362,8 +28977,18 @@ msgid ""
 "this and just throw more pixel processors to the hardware to increase "
 "performance (but this also increases power consumption)."
 msgstr ""
+"Pour être plus efficaces, les GPU mobiles tentent d'éviter les *overdraw*. "
+"Cela signifie que le même pixel à l'écran est rendu plus d'une fois (comme "
+"avec le calcul de l'éclairage, etc.). Imaginez une ville avec plusieurs "
+"bâtiments, les GPU ne savent pas ce qui est visible et ce qui est caché "
+"jusqu'à ce qu'ils le dessinent. Une maison peut être dessinée, puis une "
+"autre maison devant elle (le rendu a eu lieu deux fois pour le même "
+"pixel !). Les GPU PC ne s'en soucient normalement pas beaucoup et se "
+"contentent d'ajouter des processeurs de pixels au hardware pour augmenter "
+"les performances (mais cela augmente aussi la consommation d'énergie)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:106
+#, fuzzy
 msgid ""
 "On mobile, pulling more power is not an option, so a technique called \"Tile "
 "Based Rendering\" is used (almost every mobile hardware uses a variant of "
@@ -28373,6 +28998,14 @@ msgid ""
 "toll on vertex performance. As a result, fewer vertices and triangles can be "
 "processed for drawing."
 msgstr ""
+"Sur mobile, tirer plus de puissance n'est pas une option, donc une technique "
+"appelée \"Tile Based Rendering\" est utilisée (presque chaque hardware "
+"mobile en utilise une variante), qui divise l'écran en grille. Chaque "
+"cellule conserve la liste des triangles qui y sont dessinés et les trie par "
+"profondeur pour minimiser l'*overdraw*. Cette technique améliore les "
+"performances et réduit la consommation d'énergie, mais a un impact sur les "
+"performances des sommets. Par conséquent, moins de sommets et de triangles "
+"peuvent être traités pour le dessin."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:114
 msgid ""
@@ -28383,6 +29016,12 @@ msgid ""
 "all the other cells must wait for it to complete in order to display the "
 "frame)."
 msgstr ""
+"Généralement, ce n'est pas si mal, mais il y a un cas important sur mobile "
+"qui doit être évité, qui est d'avoir de petits objets avec beaucoup de "
+"géométrie dans une petite partie de l'écran. Cela oblige les GPU mobiles à "
+"mettre beaucoup de pression sur une seule cellule de l'écran, ce qui diminue "
+"considérablement les performances (car toutes les autres cellules doivent "
+"attendre qu'elle soit terminée pour pouvoir afficher la trame)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:121
 msgid ""
@@ -28391,12 +29030,20 @@ msgid ""
 "example, a character, NPC, vehicle, etc. is far away (so it looks tiny), use "
 "a smaller level of detail (LOD) model instead."
 msgstr ""
+"Pour faire court, ne vous inquiétez pas trop des sommets sur mobile, mais "
+"évitez de concentrer les sommets sur de petites parties de l'écran. Si, par "
+"exemple, un personnage, un PNJ, un véhicule, etc. est éloigné (donc il "
+"semble minuscule), utilisez plutôt un modèle à plus petit niveau de détail "
+"(LOD)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:126
 msgid ""
 "An extra situation where vertex cost must be considered is objects that have "
 "extra processing per vertex, such as:"
 msgstr ""
+"Une situation supplémentaire où le coût du vertex doit être pris en compte "
+"est celle des objets qui ont un traitement supplémentaire par vertex, tels "
+"que :"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:129
 msgid "Skinning (skeletal animation)"
@@ -28407,12 +29054,13 @@ msgid "Morphs (shape keys)"
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:131
+#, fuzzy
 msgid "Vertex Lit Objects (common on mobile)"
-msgstr ""
+msgstr "Objets éclairés par les sommets (communs sur mobile)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:134
 msgid "Texture compression"
-msgstr ""
+msgstr "Compression de texture"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:136
 msgid ""
@@ -28420,12 +29068,18 @@ msgid ""
 "compression). Video RAM compression is not as efficient in size as PNG or "
 "JPG when stored, but increases performance enormously when drawing."
 msgstr ""
+"Godot propose de compresser les textures des modèles 3D lors de "
+"l'importation (compression VRAM). La compression de la RAM vidéo n'est pas "
+"aussi efficace en taille que le PNG ou le JPG lorsqu'elle est stockée, mais "
+"augmente considérablement les performances lors du dessin."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:140
 msgid ""
 "This is because the main goal of texture compression is bandwidth reduction "
 "between memory and the GPU."
 msgstr ""
+"En effet, l'objectif principal de la compression de texture est la réduction "
+"de la bande passante entre la mémoire et le GPU."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:143
 msgid ""
@@ -28434,18 +29088,26 @@ msgid ""
 "on shapes inside the textures, so the artifacts resulting from 2D "
 "compression are more noticeable."
 msgstr ""
+"En 3D, les formes des objets dépendent plus de la géométrie que de la "
+"texture, la compression n'est donc généralement pas perceptible. En 2D, la "
+"compression dépend davantage des formes à l'intérieur des textures, de sorte "
+"que les artefacts résultant de la compression 2D sont plus visibles."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:148
 msgid ""
 "As a warning, most Android devices do not support texture compression of "
 "textures with transparency (only opaque), so keep this in mind."
 msgstr ""
+"En guise d'avertissement, la plupart des appareils Android ne prennent pas "
+"en charge la compression de texture des textures avec transparence "
+"(seulement opaque), gardez ceci à l'esprit."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:152
 msgid "Transparent objects"
-msgstr ""
+msgstr "Objets transparents"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:154
+#, fuzzy
 msgid ""
 "As mentioned before, Godot sorts objects by material and shader to improve "
 "performance. This, however, can not be done on transparent objects. "
@@ -28454,10 +29116,17 @@ msgid ""
 "a minimum! If an object has a small section with transparency, try to make "
 "that section a separate material."
 msgstr ""
+"Comme mentionné précédemment, Godot trie les objets par matériau et par "
+"shader pour améliorer les performances. Toutefois, cela ne peut pas être "
+"fait sur des objets transparents. Les objets transparents sont rendus de "
+"l'arrière vers l'avant pour se fondre avec ce qui se trouve derrièrel. Par "
+"conséquent, essayez de réduire au minimum les objets transparents ! Si un "
+"objet a une petite section avec transparence, essayez de faire de cette "
+"section un matériau séparé."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:162
 msgid "Level of detail (LOD)"
-msgstr ""
+msgstr "Niveau de détail (LOD)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:164
 msgid ""
@@ -28467,10 +29136,16 @@ msgid ""
 "a visibility range that can be defined. Having several GeometryInstance "
 "objects in different ranges works as LOD."
 msgstr ""
+"Comme mentionné précédemment, l'utilisation d'objets avec moins de sommets "
+"peut améliorer les performances dans certains cas. Godot a un système simple "
+"pour changer le niveau de détail, :ref:`GeometryInstance "
+"<class_GeometryInstance <class_GeometryInstance>` les objets basés ont une "
+"plage de visibilité qui peut être définie. Avoir plusieurs objets "
+"GeometryInstance dans différentes plages fonctionne comme LOD."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:172
 msgid "Use instancing (MultiMesh)"
-msgstr ""
+msgstr "Utiliser l'instanciation (MultiMesh)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:174
 msgid ""
@@ -28479,10 +29154,15 @@ msgid ""
 "drawing of dozens of thousands of objects at very little performance cost, "
 "making it ideal for flocks, grass, particles, etc."
 msgstr ""
+"Si plusieurs objets identiques doivent être dessinés au même endroit ou à "
+"proximité, essayez d'utiliser :ref:`MultiMesh <class_MultiMesh>`. MultiMesh "
+"permet de dessiner des dizaines de milliers d'objets à très faible coût de "
+"performance, ce qui le rend idéal pour les troupeaux, l'herbe, les "
+"particules, etc."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:181
 msgid "Bake lighting"
-msgstr ""
+msgstr "Préparation de l’éclairage"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:183
 msgid ""
@@ -28491,44 +29171,65 @@ msgid ""
 "ref:`doc_baked_lightmaps`). Baking can also improve the scene quality by "
 "adding indirect light bounces."
 msgstr ""
+"Les petites lumières ne sont généralement pas un problème de performance. "
+"Les ombres un peu plus. En général, si plusieurs lumières doivent affecter "
+"une scène, il est idéal de les préparer (:ref:`doc_baked_lightmaps`). La "
+"préparation peut également améliorer la qualité de la scène en ajoutant des "
+"rebonds de lumière indirecte."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:188
+#, fuzzy
 msgid ""
 "If working on mobile, baking to texture is recommended, since this method is "
 "even faster."
 msgstr ""
+"Si vous travaillez sur mobile, il est recommandé de préparer  jusqu'à la "
+"texture, car cette méthode est encore plus rapide."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:4
+#, fuzzy
 msgid "Spatial Material"
-msgstr ""
+msgstr "Spatial Material"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:9
+#, fuzzy
 msgid ""
 "``SpatialMaterial`` is a default 3D material that aims to provide most of "
 "the features artists look for in a material, without the need for writing "
 "shader code. However, it can be converted to shader code if additional "
 "functionality is needed."
 msgstr ""
+"Le \" SpatialMaterial \" est un matériau 3D par défaut qui vise à fournir la "
+"plupart des caractéristiques que les artistes recherchent dans un matériau, "
+"sans qu'il soit nécessaire d'écrire du code de shader. Cependant, il peut "
+"être converti en code shader si des fonctionnalités supplémentaires sont "
+"nécessaires."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:13
 msgid "This tutorial explains most parameters present in ``SpatialMaterial``."
 msgstr ""
+"Ce tutoriel explique la plupart des paramètres présents dans "
+"``SpatialMaterial``."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:15
 msgid ""
 "You can add a ``SpatialMaterial`` to an object by choosing \"New "
 "SpatialMaterial\" in the *Material* property of the Inspector."
 msgstr ""
+"Vous pouvez ajouter un ``SpatialMaterial`` à un objet en choisissant \"New "
+"SpatialMaterial\" dans la propriété *Material* de l'Inspecteur."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:21
 msgid ""
 "Spatial materials have many flags determining the general usage of a "
 "material."
 msgstr ""
+"Les SpatialMaterial ont de nombreuses options qui déterminent l'utilisation "
+"générale d'un matériau."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:26
 msgid "Transparent"
-msgstr ""
+msgstr "Transparent"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:28
 msgid ""
@@ -28537,40 +29238,56 @@ msgid ""
 "using a different technique (sorted from back to front and rendered in "
 "order)."
 msgstr ""
+"Dans Godot, les matériaux ne sont pas transparents à moins qu'ils ne soient "
+"spécifiquement configurés pour l'être. La raison principale en est que les "
+"matériaux transparents sont rendus selon une technique différente (triés de "
+"l'arrière vers l'avant et rendus dans l'ordre)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:32
+#, fuzzy
 msgid ""
 "This technique is less efficient (many state changes happen) and makes the "
 "materials unusable with many mid- and post-processing effects (such as SSAO, "
 "SSR, etc.) that require perfectly opaque geometry."
 msgstr ""
+"Cette technique est moins efficace (de nombreux changements d'état se "
+"produisent) et rend les matériaux inutilisables avec de nombreux effets mi "
+"et post-traitement (tels que SSAO, SSR, etc.) qui nécessitent une géométrie "
+"parfaitement opaque."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:36
 msgid ""
 "For this reason, materials in Godot are assumed opaque unless specified "
 "otherwise. The main settings that enable transparency are:"
 msgstr ""
+"Pour cette raison, les matériaux dans Godot sont supposés opaques, sauf "
+"indication contraire. Les principaux paramètres qui permettent la "
+"transparence sont :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:39
+#, fuzzy
 msgid "Transparent flag (this one)"
-msgstr ""
+msgstr "L'option Transparent (celle-ci)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:40
 msgid "Blend mode set to other than \"Mix\""
-msgstr ""
+msgstr "Mode de mélange réglé sur un mode autre que \"Mix\""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:41
 msgid "Enabling distance or proximity fade"
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:44
+#, fuzzy
 msgid "Unshaded"
-msgstr ""
+msgstr "Sans ombre"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:46
 msgid ""
 "In most cases it is common for materials to be affected by lighting (shaded)."
 msgstr ""
+"Dans la plupart des cas, il est courant que les matériaux soient affectés "
+"par l'éclairage (ombre)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:48
 msgid ""
@@ -28578,41 +29295,59 @@ msgid ""
 "ignore the rest. Toggling this flag on will remove all shading and display "
 "pure, unlit color."
 msgstr ""
+"Cependant, dans certains cas, vous pouvez afficher uniquement l'albédo "
+"(couleur) et ignorer le reste. L'activation de cette option supprimera "
+"toutes les ombres et affichera les couleurs pures et non éclairées."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:55
 msgid "Vertex Lighting"
-msgstr ""
+msgstr "Éclairage de sommet"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:57
+#, fuzzy
 msgid ""
 "Godot has a more or less uniform cost per pixel thanks to depth pre-pass. "
 "All lighting calculations are made by running the lighting shader on every "
 "pixel."
 msgstr ""
+"Godot a un coût par pixel plus ou moins uniforme grâce au pré-passage de "
+"profondeur. Tous les calculs d'éclairage sont effectués en exécutant le "
+"shader d'éclairage sur chaque pixel."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:60
+#, fuzzy
 msgid ""
 "As these calculations are costly, performance can be brought down "
 "considerably in some corner cases such as drawing several layers of "
 "transparency (which is common in particle systems). Switching to per-vertex "
 "lighting may help in these cases."
 msgstr ""
+"Comme ces calculs sont coûteux, les performances peuvent être "
+"considérablement réduites dans certains cas particuliers, comme le dessin de "
+"plusieurs couches de transparence (ce qui est courant dans les systèmes de "
+"particules). Dans ces cas, il peut être utile de passer à l'éclairage par "
+"sommet."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:65
 msgid ""
 "Additionally, on low-end or mobile devices, switching to vertex lighting can "
 "considerably increase rendering performance."
 msgstr ""
+"De plus, sur les appareils bas de gamme ou mobiles, le passage à l'éclairage "
+"de sommet peut considérablement augmenter les performances de rendu."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:70
 msgid ""
 "Keep in mind that when vertex lighting is enabled, only directional lighting "
 "can produce shadows (for performance reasons)."
 msgstr ""
+"Gardez à l'esprit que lorsque l'éclairage de sommet est activé, seul "
+"l'éclairage directionnel peut produire des ombres (pour des raisons de "
+"performance)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:74
 msgid "No Depth Test"
-msgstr ""
+msgstr "Aucun test de profondeur"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:76
 msgid ""
@@ -28620,6 +29355,9 @@ msgid ""
 "performed. Disabling it has the result of objects appearing over (or under) "
 "everything else."
 msgstr ""
+"Pour que des objets proches apparaissent au-dessus d'objets éloignés, des "
+"tests de profondeur sont effectués. Sa désactivation a pour conséquence "
+"l'apparition d'objets au-dessus (ou au-dessous) de tout le reste."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:80
 msgid ""
@@ -28627,10 +29365,14 @@ msgid ""
 "and works very well with the *Render Priority* property of Material (see the "
 "bottom of this page)."
 msgstr ""
+"Désactiver cette option est utile pour dessiner des indicateurs dans "
+"l'espace du monde et fonctionne très bien avec la propriété *Render "
+"Priority* du matériel (voir le bas de cette page)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:87
+#, fuzzy
 msgid "Use Point Size"
-msgstr ""
+msgstr "Utiliser la taille des points"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:89
 msgid ""
@@ -28638,58 +29380,76 @@ msgid ""
 "(generally it's made of triangles when imported from 3D DCCs). If so, then "
 "those points can be resized (see below)."
 msgstr ""
+"Cette option n'est efficace que lorsque la géométrie rendue est constituée "
+"de points (en général, elle est constituée de triangles lorsqu'elle est "
+"importée d'un DCC 3D). Si c'est le cas, ces points peuvent être "
+"redimensionnés (voir ci-dessous)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:94
 msgid "World Triplanar"
-msgstr ""
+msgstr "Monde Triplanaire"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:96
+#, fuzzy
 msgid ""
 "When using triplanar mapping (see below, in the UV1 and UV2 settings), "
 "triplanar is computed in object local space. This option makes triplanar "
 "work in world space."
 msgstr ""
+"Lors de l'utilisation de la cartographie triplanaire (voir ci-dessous, dans "
+"les réglages UV1 et UV2), le triplanaire est calculé dans l'espace local de "
+"l'objet. Cette option permet de faire fonctionner le triplanaire dans "
+"l'espace du monde."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:101
 msgid "Fixed Size"
 msgstr "Taille fixe"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:103
+#, fuzzy
 msgid ""
 "This causes the object to be rendered at the same size no matter the "
 "distance. This is useful mostly for indicators (no depth test and high "
 "render priority) and some types of billboards."
 msgstr ""
+"L'objet est ainsi rendu à la même taille quelle que soit la distance. Ceci "
+"est surtout utile pour les indicateurs (pas de test de profondeur et "
+"priorité de rendu élevée) et certains types de panneaux d’affichage."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:108
 msgid "Do Not Receive Shadows"
-msgstr ""
+msgstr "Ne pas recevoir d'ombres"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:110
 msgid ""
 "Makes the object not receive any kind of shadow that would otherwise be cast "
 "onto it."
 msgstr ""
+"L'objet ne reçoit pas l'ombre qui aurait autrement été projetée sur lui."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:114
 msgid "Disable Ambient Light"
-msgstr ""
+msgstr "Désactiver la lumière ambiante"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:116
 msgid ""
 "Makes the object not receive any kind of ambient lighting that would "
 "otherwise light it."
-msgstr ""
+msgstr "L'objet ne reçoit aucun éclairage ambiant qui autrement l'éclairerait."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:120
 msgid "Vertex Color"
 msgstr "Couleur de vertex"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:122
+#, fuzzy
 msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
 "come from your 3D modelling application. By default they are ignored."
 msgstr ""
+"Ce paramètre permet de choisir ce qui est fait par défaut pour les couleurs "
+"de sommet qui proviennent de votre application de modélisation 3D. Par "
+"défaut, elles sont ignorées."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:128
 msgid "Use as Albedo"
@@ -28698,16 +29458,20 @@ msgstr "Utiliser comme albedo"
 #: ../../docs/tutorials/3d/spatial_material.rst:130
 msgid "Choosing this option means vertex color is used as albedo color."
 msgstr ""
+"Choisir cette option signifie que la couleur du sommet est utilisée comme "
+"couleur albédo."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:133
 msgid "Is sRGB"
-msgstr ""
+msgstr "Est sRGB"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:135
 msgid ""
 "Most 3D DCCs will likely export vertex colors as sRGB, so toggling this "
 "option on will help them look correct."
 msgstr ""
+"La plupart des DCC 3D exporteront probablement les couleurs de vertex comme "
+"sRVB, donc activer cette option les aidera à paraître corrects."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:139
 #: ../../docs/tutorials/platform/services_for_ios.rst:87
@@ -28716,13 +29480,15 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:240
 #: ../../docs/tutorials/platform/services_for_ios.rst:385
 msgid "Parameters"
-msgstr ""
+msgstr "Paramètres"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:141
 msgid ""
 "``SpatialMaterial`` also has several configurable parameters to tweak many "
 "aspects of the rendering:"
 msgstr ""
+"``SpatialMaterial'' possède également plusieurs paramètres configurables "
+"pour modifier de nombreux aspects du rendu :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:147
 msgid "Diffuse Mode"
@@ -28733,99 +29499,136 @@ msgid ""
 "Specifies the algorithm used by diffuse scattering of light when hitting the "
 "object. The default is *Burley*. Other modes are also available:"
 msgstr ""
+"Spécifie l'algorithme utilisé pour la diffusion de la lumière lorsqu'elle "
+"frappe l'objet. La valeur par défaut est *Burley*. D'autres modes sont "
+"également disponibles :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:152
+#, fuzzy
 msgid ""
 "**Burley:** Default mode, the original Disney Principled PBS diffuse "
 "algorithm."
 msgstr ""
+"**Burley:** Mode par défaut, l'algorithme de diffusion original Disney "
+"Principled PBS."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:153
 msgid "**Lambert:** Is not affected by roughness."
 msgstr "**Lambert :** n’est pas affecté par la dureté."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:154
+#, fuzzy
 msgid ""
 "**Lambert Wrap:** Extends Lambert to cover more than 90 degrees when "
 "roughness increases. Works great for hair and simulating cheap subsurface "
 "scattering. This implementation is energy conserving."
 msgstr ""
+"**Lambert Wrap:** Élargit Lambert pour couvrir plus de 90 degrés lorsque la "
+"rugosité augmente. Idéal pour les cheveux et pour simuler la diffusion sous-"
+"surface à bas prix. Cette mise en œuvre permet d'économiser l'énergie."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:157
 msgid ""
 "**Oren Nayar:** This implementation aims to take microsurfacing into account "
 "(via roughness). Works well for clay-like materials and some types of cloth."
 msgstr ""
+"**Oren Nayar:** Cette implémentation vise à prendre en compte le "
+"microrevêtement (via la rugosité). Convient bien aux matériaux argileux et à "
+"certains types de tissus."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:159
+#, fuzzy
 msgid ""
 "**Toon:** Provides a hard cut for lighting, with smoothing affected by "
 "roughness. It is recommended you disable sky contribution from your "
 "environment's ambient light settings or disable ambient light in the spatial "
 "material to achieve a better effect."
 msgstr ""
+"Toon:**Toon:** Fournit une coupe dure pour l'éclairage, avec un lissage "
+"affecté par la rugosité. Il est recommandé de désactiver la contribution du "
+"ciel en fonction des réglages de la lumière ambiante de votre environnement "
+"ou de désactiver la lumière ambiante dans le SpatialMaterial pour obtenir un "
+"meilleur effet."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:167
 msgid "Specular Mode"
 msgstr "Mode spéculaire"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:169
+#, fuzzy
 msgid ""
 "Specifies how the specular blob will be rendered. The specular blob "
 "represents the shape of a light source reflected in the object."
 msgstr ""
+"Spécifie comment la tâche spéculaire sera rendue. La tâche spéculaire "
+"représente la forme d'une source lumineuse réfléchie dans l'objet."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:172
+#, fuzzy
 msgid "**ShlickGGX:** The most common blob used by PBR 3D engines nowadays."
 msgstr ""
+"**ShlickGGGX:** La tâche la plus communément utilisée par les moteurs 3D PBR "
+"de nos jours."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:173
 msgid ""
 "**Blinn:** Common in previous-generation engines. Not worth using nowadays, "
 "but left here for the sake of compatibility."
 msgstr ""
+"**Blinn:**Commun dans les moteurs des générations précédentes. Ne vaut pas "
+"la peine d'être utilisé de nos jours, mais laissé ici pour des raisons de "
+"compatibilité."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:175
 msgid "**Phong:** Same as above."
-msgstr ""
+msgstr "**Phong:** Comme au-dessus."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:176
+#, fuzzy
 msgid ""
 "**Toon:** Creates a toon blob, which changes size depending on roughness."
 msgstr ""
+"**Toon:** Crée une tâche toon, qui change de taille en fonction de la "
+"rugosité."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:177
 msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
-msgstr ""
+msgstr "**Disabled:** Parfois, la tâche est en travers du chemin. Va-t'en !"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:182
 msgid "Blend Mode"
 msgstr "Mode de fusion"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:184
+#, fuzzy
 msgid ""
 "Controls the blend mode for the material. Keep in mind that any mode other "
 "than *Mix* forces the object to go through the transparent pipeline."
 msgstr ""
+"Contrôle le mode de mélange du matériau. Gardez à l'esprit que tout mode "
+"autre que *Mix* force l'objet à passer par le pipeline transparent."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:187
 msgid ""
 "**Mix:** Default blend mode, alpha controls how much the object is visible."
 msgstr ""
+"**Mix:** Mode de mélange par défaut, alpha contrôle la visibilité de l'objet."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:188
 msgid ""
 "**Add:** Object is blended additively, nice for flares or some fire-like "
 "effects."
 msgstr ""
+"**Add:** L'objet est mélangé de façon additive, agréable pour les fusées "
+"éclairantes ou pour certains effets de type feu."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:190
 msgid "**Sub:** Object is subtracted."
-msgstr ""
+msgstr "** Sub : ** objet est soustrait."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:191
 msgid "**Mul:** Object is multiplied."
-msgstr ""
+msgstr "** Mul : ** objet est multiplié."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:196
 msgid "Cull Mode"
@@ -28835,43 +29638,58 @@ msgstr ""
 msgid ""
 "Determines which side of the object is not drawn when backfaces are rendered:"
 msgstr ""
+"Détermine quel côté de l'objet n'est pas dessiné lorsque les faces arrière "
+"sont rendues :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:200
 msgid "**Back:** The back of the object is culled when not visible (default)."
 msgstr ""
+"**Retour:** L’arrière de l'objet est éliminé lorsqu'il n'est pas visible "
+"(par défaut)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:201
 msgid "**Front:** The front of the object is culled when not visible."
 msgstr ""
+"**Face avant:** La face avant de l'objet est éliminée lorsqu'elle n'est pas "
+"visible."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:202
 msgid ""
 "**Disabled:** Used for objects that are double-sided (no culling is "
 "performed)."
 msgstr ""
+"**Désactivé:** Utilisé pour les objets qui sont recto-verso (aucune "
+"élimination n'est effectuée)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:205
+#, fuzzy
 msgid "Depth Draw Mode"
-msgstr ""
+msgstr "Mode de dessin en profondeur"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:207
 msgid "Specifies when depth rendering must take place."
-msgstr ""
+msgstr "Indique quand le rendu de profondeur doit avoir lieu."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:209
 msgid "**Opaque Only (default):** Depth is only drawn for opaque objects."
 msgstr ""
+"**Opaque Only(par défaut):** La profondeur n'est dessinée que pour les "
+"objets opaques."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:210
 msgid ""
 "**Always:** Depth draw is drawn for both opaque and transparent objects."
 msgstr ""
+"**Always:** Le dessin en profondeur est dessiné pour les objets opaques et "
+"transparents."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:211
 msgid ""
 "**Never:** No depth draw takes place (do not confuse this with the No Depth "
 "Test option above)."
 msgstr ""
+"**Never:** Aucun dessin en profondeur n'a lieu (ne pas confondre avec "
+"l'option Aucun test de profondeur ci-dessus)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:213
 msgid ""
@@ -28882,21 +29700,24 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:220
 msgid "Line Width"
-msgstr ""
+msgstr "Largeur de ligne"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:222
 msgid ""
 "When drawing lines, specify the width of the lines being drawn. This option "
 "is not available on most modern hardware."
 msgstr ""
+"Lorsque vous tracez des lignes, indiquez la largeur des lignes à tracer. "
+"Cette option n'est pas disponible sur la plupart des hardware modernes."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:226
 msgid "Point Size"
-msgstr ""
+msgstr "Taille de point"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:228
 msgid "When drawing points, specify the point size in pixels."
 msgstr ""
+"Lorsque vous dessinez des points, spécifie la taille des points en pixels."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:231
 msgid "Billboard Mode"
@@ -28928,6 +29749,8 @@ msgid ""
 "**Particles:** Most suited for particle systems, because it allows "
 "specifying animation options."
 msgstr ""
+"**Particules:** Plus adapté aux systèmes de particules, car il permet de "
+"spécifier des options d'animation."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:245
 msgid "The above options are only enabled for Particle Billboard."
@@ -28940,6 +29763,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:250
 msgid "Grows the object vertices in the direction pointed by their normals:"
 msgstr ""
+"Pousse les sommets de l’objet dans le sens indiqué par leurs normales :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:254
 msgid ""
@@ -28949,23 +29773,29 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:261
 msgid "Use Alpha Scissor"
-msgstr ""
+msgstr "Utiliser Alpha Scissor"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:263
 msgid ""
 "When transparency other than ``0`` or ``1`` is not needed, it's possible to "
 "set a threshold to prevent the object from rendering semi-transparent pixels."
 msgstr ""
+"Lorsque la transparence autre que \" 0 \" ou \" 1 \" n'est pas nécessaire, "
+"il est possible de définir un seuil pour empêcher l'objet de rendre des "
+"pixels semi-transparents."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:268
+#, fuzzy
 msgid ""
 "This renders the object via the opaque pipeline, which is faster and allows "
 "it to use mid- and post-process effects such as SSAO, SSR, etc."
 msgstr ""
+"L'objet est ainsi rendu via le pipeline opaque, qui est plus rapide et lui "
+"permet d'utiliser des effets mi et post-processus tels que SSAO, SSR, etc."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:272
 msgid "Material colors, maps and channels"
-msgstr ""
+msgstr "Couleurs des matériaux, cartes et canaux"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:274
 msgid ""
@@ -28973,6 +29803,9 @@ msgid ""
 "textures, and channels. Godot supports an extensive list of them. They are "
 "described in detail below:"
 msgstr ""
+"Outre les paramètres, ce qui définit les matériaux eux-mêmes sont les "
+"couleurs, les textures et les canaux. Godot en soutient une longue liste. "
+"Ils sont décrits en détail ci-dessous :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:279
 msgid "Albedo"
@@ -28986,6 +29819,12 @@ msgid ""
 "name mainly happened because, in PBR (Physically Based Rendering), this "
 "color affects many more calculations than just the diffuse lighting path."
 msgstr ""
+"*Albedo* est la couleur de base du matériau, sur laquelle tous les autres "
+"réglages fonctionnent. Lorsqu'il est réglé sur *Unshaded*, c'est la seule "
+"couleur qui est visible. Dans les versions précédentes de Godot, ce canal "
+"s'appelait *Diffuse*. Le changement de nom s'est produit principalement "
+"parce que, dans le PBR (Physically Based Rendering), cette couleur affecte "
+"beaucoup plus de calculs que seulement le chemin d'éclairage diffus."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:287
 msgid "Albedo color and texture can be used together as they are multiplied."
@@ -29009,6 +29848,11 @@ msgid ""
 "the less diffuse/ambient light affects the material and the more light is "
 "reflected. This model is called \"energy-conserving\"."
 msgstr ""
+"Godot utilise un modèle métallique par rapport aux modèles concurrents en "
+"raison de sa simplicité. Ce paramètre définit le degré de réflexion du "
+"matériau. Plus il est réfléchissant, moins la lumière diffuse/ambiante "
+"affecte le matériau et plus la lumière est réfléchie. Ce modèle est appelé "
+"\"économie d'énergie\"."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:301
 msgid ""
@@ -29016,16 +29860,21 @@ msgid ""
 "*Metallic*, this is not energy-conserving, so leave it at ``0.5`` and don't "
 "touch it unless you need to)."
 msgstr ""
+"Le paramètre *Specular* est une valeur générale pour la réflectivité "
+"(contrairement à *Metallic*, ce paramètre n'est pas économe en énergie, donc "
+"laissez-le à ``0.5`` et n'y touchez que si vous en avez besoin)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:305
 msgid ""
 "The minimum internal reflectivity is ``0.04``, so it's impossible to make a "
 "material completely unreflective, just like in real life."
 msgstr ""
+"La réflectivité interne minimale est de \"0,04\", il est donc impossible de "
+"rendre un matériau complètement non-réfléchissant, comme dans la vraie vie."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:311
 msgid "Roughness"
-msgstr "Dureté"
+msgstr "Rugosité"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:313
 msgid ""
@@ -29034,6 +29883,11 @@ msgid ""
 "(simulating natural microsurfacing). Most common types of materials can be "
 "achieved with the right combination of *Metallic* and *Roughness*."
 msgstr ""
+"*La rugosité affecte la façon dont la réflexion se produit. Une valeur de "
+"``0`` en fait un miroir parfait tandis qu'une valeur de ``1`` brouille "
+"complètement la réflexion (simulant la surface naturelle au niveau "
+"microscopique). La plupart des types de matériaux courants peuvent être "
+"obtenus avec la bonne combinaison de *Métallique* et *Rugosité*."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:321
 msgid "Emission"
@@ -29046,10 +29900,15 @@ msgid ""
 "are used). This value is added to the resulting final image and is not "
 "affected by other lighting in the scene."
 msgstr ""
+"*Emission* spécifie la quantité de lumière émise par le matériau (gardez à "
+"l'esprit que ceci n'inclut pas la géométrie de la lumière environnante sauf "
+"si :ref:`doc_gi_probes` sont utilisés). Cette valeur est ajoutée à l'image "
+"finale résultante et n'est pas affectée par les autres éclairages de la "
+"scène."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:331
 msgid "Normalmap"
-msgstr ""
+msgstr "Normalmap"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:333
 msgid ""
@@ -29061,9 +29920,10 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:340
 msgid "Rim"
-msgstr ""
+msgstr "Rim"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:342
+#, fuzzy
 msgid ""
 "Some fabrics have small micro-fur that causes light to scatter around it. "
 "Godot emulates this with the *Rim* parameter. Unlike other rim lighting "
@@ -29071,14 +29931,25 @@ msgid ""
 "takes light into account (no light means no rim). This makes the effect "
 "considerably more believable."
 msgstr ""
+"Certains tissus ont de petites micro fourrures qui diffusent la lumière "
+"autour d'eux. Godot l'émule avec le paramètre *Rim*. Contrairement à "
+"d'autres systèmes d'éclairage Rim, qui n'utilisent que le canal d'émission, "
+"celui-ci prend en compte la lumière (pas de lumière signifie pas de Rim). "
+"Cela rend l'effet beaucoup plus crédible."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:349
+#, fuzzy
 msgid ""
 "Rim size depends on roughness, and there is a special parameter to specify "
 "how it must be colored. If *Tint* is ``0``, the color of the light is used "
 "for the rim. If *Tint* is ``1``, then the albedo of the material is used. "
 "Using intermediate values generally works best."
 msgstr ""
+"La taille de Rim dépend de la rugosité, et il existe un paramètre spécial "
+"pour spécifier comment elle doit être colorée. Si *Tint* est ``0``, la "
+"couleur de la lumière est utilisée pour le bord. Si *Tint* est ``1``, alors "
+"l'albédo du matériau est utilisé. L'utilisation de valeurs intermédiaires "
+"fonctionne généralement mieux."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:355
 msgid "Clearcoat"
@@ -29090,6 +29961,10 @@ msgid ""
 "coat to the material. This is common in car paint and toys. In practice, "
 "it's a smaller specular blob added on top of the existing material."
 msgstr ""
+"Le paramètre *Clearcoat* permet d'ajouter un second passage de couche "
+"transparente au matériau. C'est courant dans la peinture automobile et les "
+"jouets. En pratique, il s'agit d'une goutte spéculaire plus petite ajoutée "
+"sur le matériau existant."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:362
 msgid "Anisotropy"
@@ -29102,6 +29977,10 @@ msgid ""
 "aluminum more realistic. It works especially well when combined with "
 "flowmaps."
 msgstr ""
+"Cela change la forme de la goutte spéculaire et l'aligne sur l'espace "
+"tangent. L'anisotropie est couramment utilisée avec les cheveux, ou pour "
+"rendre des matériaux comme l'aluminium brossé plus réalistes. Il fonctionne "
+"particulièrement bien lorsqu'il est combiné avec des cartes de flux."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:371
 msgid "Ambient Occlusion"
@@ -29116,6 +29995,13 @@ msgid ""
 "quality of a well-baked AO map. It is recommended to bake ambient occlusion "
 "whenever possible."
 msgstr ""
+"Il est possible de spécifier une carte d'occlusion ambiante préparer. Cette "
+"carte affecte la quantité de lumière ambiante qui atteint chaque surface de "
+"l'objet (elle n'affecte pas la lumière directe par défaut). Bien qu'il soit "
+"possible d'utiliser Screen-Space Ambient Occlusion (SSAO) pour générer "
+"l'occlusion ambiante, rien ne vaut la qualité d'une carte d'AO bien faite. "
+"Il est recommandé de préparer l'occlusion ambiante dans la mesure du "
+"possible."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:382
 msgid "Depth"
@@ -29132,7 +30018,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:393
 msgid "Subsurface Scattering"
-msgstr ""
+msgstr "Diffusion souterraine"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:395
 msgid ""
@@ -29140,6 +30026,9 @@ msgid ""
 "scattered, and then comes out. It is useful to create realistic skin, "
 "marble, colored liquids, etc."
 msgstr ""
+"Cet effet émule la lumière qui pénètre la surface d'un objet, est diffusée, "
+"puis sort. Il est utile pour créer une peau réaliste, du marbre, des "
+"liquides colorés, etc."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:402
 msgid "Transmission"
@@ -29151,6 +30040,10 @@ msgid ""
 "transferred to the dark side (opposite from the light). This works well for "
 "thin objects such as plant leaves, grass, human ears, etc."
 msgstr ""
+"Contrôle la quantité de lumière du côté éclairé (visible à la lumière) qui "
+"est transférée vers le côté obscur (opposé à la lumière). Cela fonctionne "
+"bien pour les objets minces tels que les feuilles de plantes, l'herbe, les "
+"oreilles humaines, etc."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:411
 msgid "Refraction"
@@ -29163,6 +30056,10 @@ msgid ""
 "allows distorting the transparency in a way similar to refraction in real "
 "life."
 msgstr ""
+"Lorsque la réfraction est activée, elle remplace le mélange alpha, et Godot "
+"tente de récupérer les informations derrière l'objet rendu. Cela permet de "
+"déformer la transparence d'une manière similaire à la réfraction dans la vie "
+"réelle."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:420
 msgid "Detail"
@@ -29174,21 +30071,30 @@ msgid ""
 "texture, which can be blended in many ways. By combining this with secondary "
 "UV or triplanar modes, many interesting textures can be achieved."
 msgstr ""
+"Godot permet d'utiliser l'albédo secondaire et les cartes normales pour "
+"générer une texture détaillée, qui peut être mélangée de plusieurs façons. "
+"En combinant cela avec des modes UV secondaires ou triplanaires, de "
+"nombreuses textures intéressantes peuvent être obtenues."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:429
 msgid "UV1 and UV2"
 msgstr "UV1 et UV2"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:431
+#, fuzzy
 msgid ""
 "Godot supports two UV channels per material. Secondary UV is often useful "
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
 "offset, which is useful when using repeating textures."
 msgstr ""
+"Godot supporte deux canaux UV par matériau. Les UV secondaires sont souvent "
+"utiles pour l'occlusion ou l'émission ambiante (lumière préparée). Les UV "
+"peuvent être mis à l'échelle et décalés, ce qui est utile lors de "
+"l'utilisation de textures répétitives."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:436
 msgid "Triplanar Mapping"
-msgstr ""
+msgstr "Cartographie triplanaire"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:438
 msgid ""
@@ -29206,7 +30112,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:449
 msgid "Proximity and distance fade"
-msgstr ""
+msgstr "Fondu de proximité et distance"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:451
 msgid ""
@@ -29216,12 +30122,20 @@ msgid ""
 "the shores. Distance fade is useful for light shafts or indicators that are "
 "only present after a given distance."
 msgstr ""
+"Godot permet aux matériaux de s'estomper par proximité les uns des autres "
+"ainsi que selon la distance par rapport au spectateur. Le fondu de proximité "
+"est utile pour des effets tels que des particules molles ou une masse d'eau "
+"avec un mélange lisse jusqu'aux rivages. Le fondu à distance est utile pour "
+"les puits de lumière ou les indicateurs qui ne sont visibles qu'après une "
+"distance donnée."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:457
 msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for an "
 "entire scene is usually not a good idea."
 msgstr ""
+"Gardez à l'esprit que l'activation de ces options permet le mélange alpha, "
+"donc en abuser pour une scène entière n'est généralement pas une bonne idée."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:463
 msgid "Render priority"
@@ -29233,6 +30147,9 @@ msgid ""
 "useful for transparent objects (or opaque objects that perform depth draw "
 "but no color draw, such as cracks on the floor)."
 msgstr ""
+"L'ordre de rendu des objets peut être modifié, bien que cela soit surtout "
+"utile pour les objets transparents (ou les objets opaques qui dessinent en "
+"profondeur mais pas en couleur, comme les fissures sur le sol)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:4
 msgid "Lights and shadows"
@@ -29243,34 +30160,41 @@ msgid ""
 "Light sources emit light that mixes with the materials and produces a "
 "visible result. Light can come from several types of sources in a scene:"
 msgstr ""
+"Les sources lumineuses émettent une lumière qui se mélange aux matériaux et "
+"produit un résultat visible. La lumière peut provenir de plusieurs types de "
+"sources dans une scène :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:12
 msgid ""
 "From the Material itself in the form of the emission color (though it does "
 "not affect nearby objects unless baked)."
 msgstr ""
+"De la matière elle-même sous la forme de la couleur d'émission (bien qu'elle "
+"n'affecte pas les objets proches à moins qu'elle ne soit préparée)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:14
 msgid "Light Nodes: Directional, Omni and Spot."
-msgstr ""
+msgstr "Nœuds de lumière : Directional, Omni and Spot."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:15
 msgid "Ambient Light in the :ref:`Environment <class_Environment>`."
-msgstr ""
+msgstr "Lumière ambiante dans l':ref:`Environnement <class_Environment>`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:17
 msgid "Baked Light (read :ref:`doc_baked_lightmaps`)."
-msgstr ""
+msgstr "Lumière préparée (read :ref:`doc_baked_lightmaps`)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:19
 msgid ""
 "The emission color is a material property. You can read more about it in "
 "the :ref:`doc_spatial_material` tutorial."
 msgstr ""
+"La couleur d'émission est une propriété matérielle. Vous pouvez en savoir "
+"plus dans le tutoriel :ref:`doc_spatial_material`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:23
 msgid "Light nodes"
-msgstr ""
+msgstr "Nœuds de lumière"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:25
 msgid ""
@@ -29278,6 +30202,10 @@ msgid ""
 "and Spot. Each has different uses and will be described in detail below, but "
 "first let's take a look at the common parameters for lights:"
 msgstr ""
+"Comme mentionné précédemment, il existe trois types de nœuds lumineux : "
+"Directional, Omni et Spot. Chacun a des utilisations différentes et sera "
+"décrit en détail ci-dessous, mais examinons d'abord les paramètres communs "
+"pour les lumières :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:32
 msgid "Each one has a specific function:"
@@ -29292,35 +30220,46 @@ msgid ""
 "**Energy**: Energy multiplier. This is useful for saturating lights or "
 "working with :ref:`doc_high_dynamic_range`."
 msgstr ""
+"**Energy** : Multiplicateur d'énergie. Ceci est utile pour saturer les "
+"lumières ou travailler avec :ref:`doc_high_dynamic_range`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:36
 msgid ""
 "**Indirect Energy**: Secondary multiplier used with indirect light (light "
 "bounces). This works in baked light or GIProbe."
 msgstr ""
+"**Indirect Energy** : Multiplicateur secondaire utilisé avec la lumière "
+"indirecte (rebond de la lumière). Cela fonctionne en lumière préparée ou en "
+"GIProbe."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:37
 msgid ""
 "**Negative**: Light becomes subtractive instead of additive. It's sometimes "
 "useful to manually compensate some dark corners."
 msgstr ""
+"**Negative** : La lumière devient soustractive au lieu d'être additive. Il "
+"est parfois utile de compenser manuellement certains coins sombres."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:38
 msgid ""
 "**Specular**: Affects the intensity of the specular blob in objects affected "
 "by this light. At zero, this light becomes a pure diffuse light."
 msgstr ""
+"**Specular** : Affecte l'intensité de la tache spéculaire dans les objets "
+"affectés par cette lumière. A zéro, cette lumière devient une lumière pure "
+"et diffuse."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:39
 msgid ""
 "**Cull Mask**: Objects that are in the selected layers below will be "
 "affected by this light."
 msgstr ""
+"**Cull Mask** : Les objets qui se trouvent dans les calques sélectionnés ci-"
+"dessous seront affectés par cette lumière."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:42
-#, fuzzy
 msgid "Shadow mapping"
-msgstr "Shaders"
+msgstr "Cartographie des ombres"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:44
 msgid ""
@@ -29329,16 +30268,26 @@ msgid ""
 "There is a list of generic shadow parameters, each also has a specific "
 "function:"
 msgstr ""
+"Les lumières peuvent optionnellement projeter des ombres. Cela leur donne "
+"plus de réalisme (la lumière n'atteint pas les zones occultées), mais cela "
+"peut entraîner un coût de performance plus élevé. Il existe une liste de "
+"paramètres d'ombre génériques, chacun ayant également une fonction "
+"spécifique :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:48
+#, fuzzy
 msgid "**Enabled**: Check to enable shadow mapping in this light."
 msgstr ""
+"**Enabled** : Cochez cette case pour activer la carte des ombres dans cette "
+"lumière."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:49
 msgid ""
 "**Color**: Areas occluded are multiplied by this color. It is black by "
 "default, but it can be changed to tint shadows."
 msgstr ""
+"**Color** : Les zones occultées sont multipliées par cette couleur. elle est "
+"noire par défaut, mais elle peut être changée pour teinter les ombres."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:50
 msgid ""
@@ -29347,37 +30296,52 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:51
+#, fuzzy
 msgid ""
 "**Contact**: Performs a short screen-space raycast to reduce the gap "
 "generated by the bias."
 msgstr ""
+"**Contact** : Effectue un raycast court dans l'espace de l'écran pour "
+"réduire l'espace généré par le biais."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:52
+#, fuzzy
 msgid ""
 "**Reverse Cull Faces**: Some scenes work better when shadow mapping is "
 "rendered with face-culling inverted."
 msgstr ""
+"**Reverse Cull Faces** : Certaines scènes fonctionnent mieux lorsque la "
+"carte des ombres est rendue avec le face-culling inversé."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:54
 msgid ""
 "Below is an image of what tweaking bias looks like. Default values work for "
 "most cases, but in general it depends on the size and complexity of geometry."
 msgstr ""
+"Ci-dessous se trouve une image de ce à quoi ressemble un biais d'ajustement. "
+"Les valeurs par défaut fonctionnent dans la plupart des cas, mais en général "
+"cela dépend de la taille et de la complexité de la géométrie."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:59
 msgid "Finally, if gaps can't be solved, the **Contact** option can help:"
 msgstr ""
+"Enfin, si les lacunes ne peuvent être résolues, l'option **Contact** peut "
+"vous aider :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:63
+#, fuzzy
 msgid ""
 "Any sort of bias issues can always be fixed by increasing the shadow map "
 "resolution, although that may lead to decreased performance on low-end "
 "hardware."
 msgstr ""
+"Toutes sortes de problèmes de biais peuvent toujours être corrigés en "
+"augmentant la résolution de la carte des ombres, bien que cela puisse "
+"conduire à une diminution des performances sur le hardware bas de gamme."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:67
 msgid "Directional light"
-msgstr "Lumière directionnelle"
+msgstr "Directional light"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:69
 msgid ""
@@ -29386,6 +30350,11 @@ msgid ""
 "be used whenever possible (although it's not the cheapest shadow-map to "
 "compute, but more on that later)."
 msgstr ""
+"C'est le type de lumière le plus courant et représente une source lumineuse "
+"très éloignée (comme le soleil). C'est aussi la lumière la moins chère à "
+"calculer et devrait être utilisée chaque fois que c'est possible (bien que "
+"ce ne soit pas la carte des ombres la moins chère à calculer, mais plus à ce "
+"sujet ultérieurement)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:73
 msgid ""
@@ -29394,6 +30363,11 @@ msgid ""
 "which indicates the direction of the light rays. However, the position of "
 "the node does not affect the lighting at all and can be anywhere."
 msgstr ""
+"Directional light modélise un nombre infini de rayons lumineux parallèles "
+"couvrant l'ensemble de la scène. Le nœud Directional light est représenté "
+"par une grande flèche qui indique la direction des rayons lumineux. "
+"Cependant, la position du nœud n'affecte pas du tout l'éclairage et peut "
+"être n'importe où."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:80
 msgid ""
@@ -29401,35 +30375,50 @@ msgid ""
 "others stay dark. Most light types have specific parameters, but directional "
 "lights are pretty simple in nature, so they don't."
 msgstr ""
+"Chaque face dont l'avant est frappé par les rayons lumineux est éclairée, "
+"tandis que les autres restent sombres. La plupart des types d'éclairage ont "
+"des paramètres spécifiques, mais les Directional light sont assez simples "
+"par nature, donc ils n'en ont pas."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:84
-#, fuzzy
 msgid "Directional shadow mapping"
-msgstr "Lumière directionnelle"
+msgstr "Cartographie des ombres directionnelles"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:86
+#, fuzzy
 msgid ""
 "To compute shadow maps, the scene is rendered (only depth) from an "
 "orthogonal point of view that covers the whole scene (or up to the max "
 "distance). There is, however, a problem with this approach because objects "
 "closer to the camera receive blocky shadows."
 msgstr ""
+"Pour calculer les cartes des ombres, la scène est rendue (uniquement en "
+"profondeur) d'un point de vue orthogonal qui couvre toute la scène (ou "
+"jusqu'à la distance maximale). Il y a cependant un problème avec cette "
+"approche car les objets plus proches de la caméra reçoivent des ombres "
+"trapues."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:92
+#, fuzzy
 msgid ""
 "To fix this, a technique named \"Parallel Split Shadow Maps\" (or PSSM) is "
 "used. This splits the view frustum in 2 or 4 areas. Each area gets its own "
 "shadow map. This allows small areas close to the viewer to have the same "
 "shadow resolution as a huge, far-away area."
 msgstr ""
+"Pour résoudre ce problème, une technique appelée \"Parallel Split Shadow Maps"
+"\" (ou PSSM) est utilisée. Ceci divise le tronc de la vue en 2 ou 4 zones. "
+"Chaque région a sa propre carte de ombres. Cela permet à de petites zones "
+"proches du spectateur d'avoir la même résolution d'ombre qu'une grande zone "
+"éloignée."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:97
 msgid "With this, shadows become more detailed:"
-msgstr ""
+msgstr "Avec cela, les ombres deviennent plus détaillées :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:101
 msgid "To control PSSM, a number of parameters are exposed:"
-msgstr ""
+msgstr "Pour contrôler le PSSM, un certain nombre de paramètres sont exposés :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:105
 msgid ""
@@ -29439,12 +30428,21 @@ msgid ""
 "values generally work well, but tweaking the first split a bit is common to "
 "give more detail to close objects (like a character in a third person game)."
 msgstr ""
+"Chaque distance divisée est contrôlée par rapport à la distance de la caméra "
+"(ou l'ombre **Max Distance** si supérieure à zéro), donc *0,0* est la "
+"position de l'œil et *1,0* est la position où l'ombre se termine à une "
+"distance. Les divisions sont entre les deux. Les valeurs par défaut "
+"fonctionnent généralement bien, mais il est courant d'ajuster un peu le "
+"premier fractionnement pour donner plus de détails aux objets proches (comme "
+"un personnage dans un jeu à la troisième personne)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:111
 msgid ""
 "Always make sure to set a shadow *Max Distance* according to what the scene "
 "needs. A lower maximum distance will result in better-looking shadows."
 msgstr ""
+"Veillez toujours à définir une ombre *Max Distance* en fonction des besoins "
+"de la scène. Une distance maximale plus faible donnera de meilleures ombres."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:114
 msgid ""
@@ -29452,6 +30450,10 @@ msgid ""
 "this, the **\"Blend Splits\"** option can be turned on, which sacrifices "
 "detail in exchange for smoother transitions:"
 msgstr ""
+"Parfois, la transition entre une séparation et la suivante peut sembler "
+"mauvaise. Pour résoudre ce problème, l'option **\"Blend Splits \"** peut "
+"être activée, ce qui sacrifie les détails en échange de transitions plus "
+"fluides :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:120
 msgid ""
@@ -29459,6 +30461,10 @@ msgid ""
 "shadowing when objects are perpendicular to the light. The only downside is "
 "that it makes the shadow a bit thinner."
 msgstr ""
+"Le paramètre **\"Normal Bias \"** peut être utilisé pour fixer des cas "
+"particuliers d'ombrage automatique lorsque les objets sont perpendiculaires "
+"à la lumière. Le seul inconvénient est que cela rend l'ombre un peu plus "
+"mince."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:126
 msgid ""
@@ -29466,10 +30472,13 @@ msgid ""
 "that are far away. If self shadowing occurs only on the splits far away, "
 "this value can fix them."
 msgstr ""
+"Le paramètre **\"Bias Split Scale \"** permet de contrôler le biais "
+"supplémentaire pour les divisions éloignées. Si l'ombrage automatique ne se "
+"produit que sur les fentes éloignées, cette valeur peut arranger ça."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:129
 msgid "Finally, the **\"Depth Range\"** has two settings:"
-msgstr ""
+msgstr "Enfin, la **\"Depth Range \"** a deux réglages :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:131
 msgid ""
@@ -29478,6 +30487,10 @@ msgid ""
 "This is the default and generally desired, but it reduces the effective "
 "shadow resolution."
 msgstr ""
+"**Stable** : Garde l'ombre stable pendant que la caméra se déplace, et les "
+"blocs qui apparaissent dans le contour à proximité des bords de l'ombre "
+"restent en place. C'est le réglage par défaut et généralement souhaité, mais "
+"il réduit la résolution effective de l'ombre."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:132
 msgid ""
@@ -29486,32 +30499,42 @@ msgid ""
 "at the same time the shadow looks more detailed (so this effect may be "
 "subtle enough to be forgiven)."
 msgstr ""
+"**Optimisé** : Essaie d'atteindre la résolution maximale disponible à tout "
+"moment. Il peut en résulter un effet de \"scie en mouvement\" sur les bords "
+"de l'ombre, mais en même temps l'ombre semble plus détaillée (donc cet effet "
+"peut être assez subtil pour être pardonné)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:134
 msgid "Just experiment which setting works better for your scene."
-msgstr ""
+msgstr "Expérimentez simplement quel réglage convient le mieux à votre scène."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:136
 msgid ""
 "Shadowmap size for directional lights can be changed in Project Settings -> "
 "Rendering -> Quality:"
 msgstr ""
+"La taille de la carte des ombres pour les éclairages directionnels peut être "
+"modifiée dans Paramètres du projet -> Rendering -> Quality :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:140
 msgid ""
 "Increasing it can solve bias problems, but decrease performance. Shadow "
 "mapping is an art of tweaking."
 msgstr ""
+"L'augmenter peut résoudre des problèmes de biais, mais diminue la "
+"performance. La cartographie des ombres est l'art de l'ajustement."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:143
 msgid "Omni light"
-msgstr ""
+msgstr "Omni light"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:145
 msgid ""
 "Omni light is a point source that emits light spherically in all directions "
 "up to a given radius."
 msgstr ""
+"Omni light est une source ponctuelle qui émet une lumière sphérique dans "
+"toutes les directions jusqu'à un rayon donné."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:150
 msgid ""
@@ -29519,34 +30542,48 @@ msgid ""
 "lights don't have a radius. This is a problem because it means computing "
 "several omni lights would become demanding."
 msgstr ""
+"Dans la vie réelle, l'atténuation de la lumière est une fonction inverse, ce "
+"qui signifie que les lumières omnidirectionnelles n'ont pas de rayon. C'est "
+"un problème car cela signifie que le calcul de plusieurs Omni light "
+"deviendrait exigeant."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:153
 msgid ""
 "To solve this, a *Range* is introduced together with an attenuation function."
 msgstr ""
+"Pour résoudre ce problème, une *Range* est introduite avec une fonction "
+"d'atténuation."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:157
 msgid ""
 "These two parameters allow tweaking how this works visually in order to find "
 "aesthetically pleasing results."
 msgstr ""
+"Ces deux paramètres permettent d'ajuster visuellement le fonctionnement afin "
+"d'obtenir des résultats esthétiques."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:163
 msgid "Omni shadow mapping"
-msgstr ""
+msgstr "Cartographie des ombres de Omni lights"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:165
 msgid ""
 "Omni light shadow mapping is relatively straightforward. The main issue that "
 "needs to be considered is the algorithm used to render it."
 msgstr ""
+"La cartographie des ombres dû à un Omni light est relativement simple. Le "
+"principal problème à considérer est l'algorithme utilisé pour le rendu."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:168
+#, fuzzy
 msgid ""
 "Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube Mapped"
 "\"**. The former renders quickly, but can cause deformations, while the "
 "later is more correct, but costlier."
 msgstr ""
+"Les ombres omnidirectionnelles peuvent être rendues comme **\"Dual Paraboloid"
+"\" ou \"Cube Mapped \"**. Le premier rend rapidement, mais peut causer des "
+"déformations, tandis que le second est plus correct, mais plus coûteux."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:174
 msgid ""
@@ -29555,10 +30592,14 @@ msgid ""
 "(more on that at the end), it may not make a difference in performance for "
 "most scenes."
 msgstr ""
+"Si les objets rendus sont le plus souvent irréguliers, Dual Paraboloid est "
+"généralement suffisant. Quoi qu'il en soit, comme ces ombres sont cachées "
+"dans un atlas d'ombres (plus de détails à la fin), cela peut ne pas faire de "
+"différence de performance pour la plupart des scènes."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:179
 msgid "Spot light"
-msgstr ""
+msgstr "Spot light"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:181
 msgid ""
@@ -29567,12 +30608,19 @@ msgid ""
 "reflectors, spots, etc. This type of light is also attenuated towards the "
 "opposite direction it points to."
 msgstr ""
+"Les Spot lights sont semblables aux omni lights, sauf qu'elles émettent de "
+"la lumière uniquement dans un cône. elles sont utiles pour simuler des "
+"lampes de poche, des feux de voiture, des réflecteurs, des spots, etc. Ce "
+"type de lumière est également atténué dans la direction opposée vers "
+"laquelle elle pointe."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:188
 msgid ""
 "Spot lights share the same **Range** and **Attenuation** as **OmniLight**, "
 "and add two extra parameters:"
 msgstr ""
+"Les Spot lights partagent les mêmes **Range** et **Attenuation** que les "
+"**OmniLight**, et ajoutent deux paramètres supplémentaires :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:190
 msgid "**Angle**: The aperture angle of the light"
@@ -29588,7 +30636,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:194
 msgid "Spot shadow mapping"
-msgstr ""
+msgstr "Cartographie des ombres de Spot lights"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:196
 msgid ""
@@ -29596,10 +30644,14 @@ msgid ""
 "more than 89 degrees of aperture, shadows stop functioning for spots, and "
 "you should consider using an Omni light instead."
 msgstr ""
+"Les Spot lights n'ont pas besoin de paramètres pour la cartographie des "
+"ombres. Gardez à l'esprit qu'à plus de 89 degrés d'ouverture, les ombres "
+"cessent de fonctionner pour les Spot lights, et vous devriez envisager "
+"d'utiliser un Omni light à la place."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:200
 msgid "Shadow atlas"
-msgstr ""
+msgstr "Atlas d'ombre"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:202
 msgid ""
@@ -29607,18 +30659,27 @@ msgid ""
 "Spot lights are assigned to slots of a shadow atlas. This atlas can be "
 "configured in Project Settings -> Rendering -> Quality -> Shadow Atlas."
 msgstr ""
+"Contrairement aux Directional lights, qui ont leur propre texture d'ombre, "
+"les Omni lights et Spot lights sont assignées aux emplacements d'un atlas "
+"d'ombre. Cet atlas peut être configuré dans Paramètres du projet -> "
+"Rendering -> Quality -> Shadow Atlas."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:207
 msgid ""
 "The resolution applies to the whole Shadow Atlas. This atlas is divided into "
 "four quadrants:"
 msgstr ""
+"La résolution s'applique à l'ensemble de l'Atlas d'ombres. Cet atlas est "
+"divisé en quatre quadrants :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:211
+#, fuzzy
 msgid ""
 "Each quadrant can be subdivided to allocate any number of shadow maps; the "
 "following is the default subdivision:"
 msgstr ""
+"Chaque quadrant peut être subdivisé pour attribuer un nombre quelconque de "
+"cartes des ombres ; la subdivision par défaut est la suivante :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:215
 msgid ""
@@ -29627,45 +30688,67 @@ msgid ""
 "Subdivisions (smaller maps) represent shadows for lights that are further "
 "away from view and proportionally smaller."
 msgstr ""
+"La logique d'allocation est simple. La plus grande taille de carte d'ombres "
+"(lorsqu'aucune subdivision n'est utilisée) représente une lumière de la "
+"taille de l'écran (ou plus grande). Les subdivisions (cartes plus petites) "
+"représentent les ombres pour les lumières qui sont plus éloignées de la vue "
+"et proportionnellement plus petites."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:220
 msgid "Every frame, the following procedure is performed for all lights:"
 msgstr ""
+"Pour chaque image, la procédure suivante est exécutée pour toutes les "
+"lumières :"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:222
 msgid ""
 "Check if the light is on a slot of the right size. If not, re-render it and "
 "move it to a larger/smaller slot."
 msgstr ""
+"Vérifiez si la lumière est sur un emplacement de la bonne taille. Si ce "
+"n'est pas le cas, re-rendez-le et déplacez-le dans un emplacement plus grand "
+"ou plus petit."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:223
+#, fuzzy
 msgid ""
 "Check if any object affecting the shadow map has changed. If it did, re-"
 "render the light."
 msgstr ""
+"Vérifiez si un objet affectant la carte des ombres a changé. Si c'est le "
+"cas, re-rendez la lumière."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:224
 msgid ""
 "If neither of the above has happened, nothing is done, and the shadow is "
 "left untouched."
 msgstr ""
+"Si rien de ce qui précède ne s'est produit, rien n'est fait et l'ombre n'est "
+"pas touchée."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:226
 msgid ""
 "If the slots in a quadrant are full, lights are pushed back to smaller "
 "slots, depending on size and distance."
 msgstr ""
+"Si les emplacements d'un quadrant sont pleins, les lumières sont repoussées "
+"vers des emplacements plus petits, selon la taille et la distance."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:228
+#, fuzzy
 msgid ""
 "This allocation strategy works for most games, but you may want to use a "
 "separate one in some cases (for example, a top-down game where all lights "
 "are around the same size and quadrants may all have the same subdivision)."
 msgstr ""
+"Cette stratégie d'allocation fonctionne pour la plupart des jeux, mais vous "
+"pouvez en utiliser une autre dans certains cas (par exemple, un jeu de haut "
+"en bas où toutes les lumières sont de la même taille et où les quadrants "
+"peuvent avoir la même subdivision)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:232
 msgid "Shadow filter quality"
-msgstr ""
+msgstr "Qualité du filtre d'ombre"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:234
 msgid ""
@@ -29673,14 +30756,17 @@ msgid ""
 "Settings -> Rendering -> Quality -> Shadows. Godot supports no filter, PCF5 "
 "and PCF13."
 msgstr ""
+"La qualité du filtre des ombres peut être modifiée. Cela se trouve dans "
+"Paramètres du projet -> Rendering -> Quality -> Shadows. Godot supporte : "
+"aucun filtre, PCF5 et PCF13."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:240
 msgid "It affects the blockyness of the shadow outline:"
-msgstr ""
+msgstr "Il affecte l'aspect de bloc du contour de l'ombre :"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:4
 msgid "Reflection probes"
-msgstr ""
+msgstr "Reflection probes"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:9
 msgid ""
@@ -29688,6 +30774,10 @@ msgid ""
 "diffuse light. Reflection probes are used as a source of reflected and "
 "ambient light for objects inside their area of influence."
 msgstr ""
+"Comme indiqué dans le :ref:`doc_spatial_material`, les objets peuvent "
+"montrer une lumière réfléchie ou diffuse. Les Reflection probes sont "
+"utilisées comme source de lumière réfléchie et ambiante pour les objets à "
+"l'intérieur de leur zone d'influence."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:12
 msgid ""
@@ -29695,36 +30785,51 @@ msgid ""
 "image), and stores versions of it with increasing levels of *blur*. This is "
 "used to simulate roughness in materials, as well as ambient lighting."
 msgstr ""
+"Une sonde de ce type capture l'environnement (sous la forme d'une sorte "
+"d'image à 360 degrés), et en stocke des versions avec des niveaux croissants "
+"de *flou*. Ceci est utilisé pour simuler la rugosité des matériaux, ainsi "
+"que l'éclairage ambiant."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:15
 msgid ""
 "While these probes are an efficient way of storing reflections, they have a "
 "few shortcomings:"
 msgstr ""
+"Bien que ces sondes soient un moyen efficace de stocker les réflexions, "
+"elles présentent quelques inconvénients :"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:17
 msgid ""
 "They are efficient to render, but expensive to compute. This leads to a "
 "default behavior where they only capture on scene load."
 msgstr ""
+"Elles sont efficaces à rendre, mais coûteuses à calculer. Cela conduit à un "
+"comportement par défaut où elles ne capturent qu'au chargement de la scène."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:18
 msgid ""
 "They work best for rectangular shaped rooms or places, otherwise the "
 "reflections shown are not as faithful (especially when roughness is 0)."
 msgstr ""
+"Elles fonctionnent mieux dans des pièces ou des endroits de forme "
+"rectangulaire, sinon les reflets montrés ne sont pas aussi fidèles (surtout "
+"lorsque la rugosité est de 0)."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:23
 msgid ""
 "Create a ReflectionProbe node and wrap it around the area where you want to "
 "have reflections:"
 msgstr ""
+"Créez un nœud ReflectionProbe et faîtes le englober la zone où vous voulez "
+"avoir des réflexions :"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:27
 msgid ""
 "This should result in immediate local reflections. If you are using a Sky "
 "texture, reflections are by default blended with it."
 msgstr ""
+"Cela devrait donner lieu à des réflexions locales immédiates. Si vous "
+"utilisez une texture Sky, les reflets sont par défaut mélangés avec elle."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:30
 msgid ""
@@ -29732,18 +30837,25 @@ msgid ""
 "consistence. In this scenario, make sure to tick the *\"Box Correct\"* "
 "property."
 msgstr ""
+"Par défaut, à l'intérieur, les reflets peuvent sembler peu consistants. Dans "
+"ce scénario, assurez-vous de cocher la propriété *\"Box Correct \"*."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:36
 msgid ""
 "This setting changes the reflection from an infinite skybox to reflecting a "
 "box the size of the probe:"
 msgstr ""
+"Ce réglage change la réflexion d'une boîte infinie à une boîte "
+"réfléchissante de la taille de la sonde :"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:41
 msgid ""
 "Adjusting the box walls may help improve the reflection a bit, but it will "
 "always look best in box shaped rooms."
 msgstr ""
+"L'ajustement des parois de la boîte peut aider à améliorer un peu la "
+"réflexion, mais elle sera toujours plus belle dans les pièces en forme de "
+"boîte."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:44
 msgid ""
@@ -29751,6 +30863,9 @@ msgid ""
 "some reason, the room shape or contents occlude the center, it can be "
 "displaced to an empty place by moving the handles in the center:"
 msgstr ""
+"La sonde capture l'environnement à partir du centre du gadget. Si, pour une "
+"raison quelconque, la forme ou le contenu de la pièce occulte le centre, il "
+"peut être déplacé vers un endroit vide en déplaçant les poignées au centre :"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:50
 msgid ""
@@ -29759,6 +30874,11 @@ msgid ""
 "to save on performance and memory. If you want shadows in the probe, they "
 "can be toggled on/off with the *Enable Shadow* setting:"
 msgstr ""
+"Par défaut, la cartographie des ombres est désactivée lors du rendu des "
+"sondes (uniquement dans l'image rendue à l'intérieur de la sonde, pas dans "
+"la scène réelle). C'est un moyen simple d'économiser sur les performances et "
+"la mémoire. Si vous voulez des ombres dans la sonde, vous pouvez les activer/"
+"désactiver avec le réglage *Enable Shadow* :"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:57
 msgid ""
@@ -29767,11 +30887,16 @@ msgid ""
 "around. To keep objects from being rendered in the reflections, use the "
 "*Cull Mask* setting:"
 msgstr ""
+"Enfin, gardez à l'esprit que vous ne voulez peut-être pas que la sonde de "
+"réflexion rende certains objets. Un scénario typique est celui d'un ennemi à "
+"l'intérieur de la pièce qui va se déplacer. Pour éviter que les objets ne "
+"soient rendus dans les réflexions, utilisez le paramètre *Cull Mask* :"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:65
 #: ../../docs/tutorials/3d/gi_probes.rst:84
+#, fuzzy
 msgid "Interior vs exterior"
-msgstr ""
+msgstr "Intérieur ou extérieur"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:67
 msgid ""
@@ -29779,12 +30904,19 @@ msgid ""
 "that the **Interior** property be enabled. This stops the probe from "
 "rendering the sky and also allows custom ambient lighting settings."
 msgstr ""
+"Si vous utilisez des reflection probes dans un environnement intérieur, il "
+"est recommandé d'activer la propriété **Interior**. Cela empêche la sonde de "
+"rendre le ciel et permet également des réglages personnalisés de l'éclairage "
+"ambiant."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:73
 msgid ""
 "When probes are set to **Interior**, custom constant ambient lighting can be "
 "specified per probe. Just choose a color and an energy."
 msgstr ""
+"Lorsque les sondes sont réglées sur **Interior**, un éclairage ambiant "
+"constant personnalisé peut être spécifié par sonde. Il suffit de choisir une "
+"couleur et une énergie."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:76
 msgid ""
@@ -29792,16 +30924,22 @@ msgid ""
 "by tweaking the **Ambient Contribution** property (0.0 means pure ambient "
 "color, while 1.0 means pure diffuse capture)."
 msgstr ""
+"En option, vous pouvez combiner cette lumière ambiante avec la capture "
+"diffuse de la sonde en ajustant la propriété **Ambient Contribution** (0.0 "
+"signifie couleur ambiante pure, tandis que 1.0 signifie capture diffuse "
+"pure)."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:81
 msgid "Blending"
-msgstr ""
+msgstr "Mélange"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:83
 msgid ""
 "Multiple reflection probes can be used, and Godot will blend them where they "
 "overlap using a smart algorithm:"
 msgstr ""
+"De multiples sondes à réflexion peuvent être utilisées, et Godot les "
+"mélangera là où elles se chevauchent à l'aide d'un algorithme intelligent :"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:87
 msgid ""
@@ -29810,6 +30948,11 @@ msgid ""
 "when using perfectly mirrored reflections. Normally, scenes have normal "
 "mapping and varying levels of roughness, which can hide this."
 msgstr ""
+"Comme vous pouvez le voir, ce mélange n'est jamais parfait (après tout, ce "
+"sont des reflets de boîtes, pas de vrais reflets), mais ces artefacts ne "
+"sont visibles qu'avec des reflets parfaitement réfléchis. Normalement, les "
+"scènes ont un mappage normal et des niveaux de rugosité variables, ce qui "
+"peut cacher cela."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:93
 msgid ""
@@ -29818,6 +30961,10 @@ msgid ""
 "reflections appear more faithful, while probes are only used as a fallback "
 "when no screen-space information is found:"
 msgstr ""
+"Sinon, les Reflection Probes fonctionnent bien mélangés ensemble avec Screen "
+"Space Reflections pour résoudre ces problèmes. En les combinant, les "
+"réflexions semblent plus fidèles, tandis que les sondes ne sont utilisés que "
+"comme un secours pour le cas où aucun screen-space information est trouvé :"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:99
 msgid ""
@@ -29826,6 +30973,11 @@ msgid ""
 "a probe can be marked as *exterior* (so it will get sky reflections) while "
 "on the inside, it can be interior."
 msgstr ""
+"Enfin, le mélange des sondes intérieures et extérieures est l'approche "
+"recommandée pour réaliser des niveaux qui combinent à la fois l'intérieur et "
+"l'extérieur. Près de la porte, une sonde peut être marquée comme "
+"*extérieure* (pour obtenir des reflets du ciel) tandis qu'à l'intérieur, "
+"elle peut être intérieure."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:104
 msgid "Reflection atlas"
@@ -29837,10 +30989,14 @@ msgid ""
 "fit into a Reflection Atlas. The size and amount of probes can be customized "
 "in Project Settings -> Quality -> Reflections"
 msgstr ""
+"Dans l'implémentation actuelle du moteur de rendu, toutes les sondes sont de "
+"la même taille et s'insèrent dans un Atlas Reflection. La taille et le "
+"nombre de sondes peuvent être personnalisés dans Paramètres du projet -> "
+"Quality -> Reflections"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:4
 msgid "GI Probes"
-msgstr ""
+msgstr "GI Probes"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:9
 msgid ""
@@ -29849,6 +31005,11 @@ msgid ""
 "Probes are similar to Reflection Probes, but they use a different and more "
 "complex technique to produce indirect light and reflections."
 msgstr ""
+"Tout comme avec les :ref:`doc_reflection_probes`, et comme indiqué dans le :"
+"ref:`doc_spatial_material`, les objets peuvent montrer une lumière réfléchie "
+"ou diffuse. Les GI Probes  sont similaires aux Reflection Probes, mais elles "
+"utilisent une technique différente et plus complexe pour produire de la "
+"lumière indirecte et des réflexions."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:14
 msgid ""
@@ -29858,6 +31019,12 @@ msgid ""
 "time. Dynamic objects that move within one of these probes will also receive "
 "indirect lighting from the scene automatically."
 msgstr ""
+"La force des GI Probes est la lumière indirecte en temps réel de haute "
+"qualité. Alors que la scène a besoin d'une pré-préparation rapide pour les "
+"objets statiques qui seront utilisés, les lumières peuvent être ajoutées, "
+"modifiées ou supprimées, et ceci sera mis à jour en temps réel. Les objets "
+"dynamiques qui se déplacent à l'intérieur d'une de ces sondes recevront "
+"également un éclairage indirect de la scène automatiquement."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:20
 msgid ""
@@ -29865,22 +31032,31 @@ msgid ""
 "more limited way), so it is possible to provide full real-time lighting for "
 "a stage without having to resort to lightmaps."
 msgstr ""
+"Tout comme avec ``ReflectionProbe``, ``GIProbe`` peut être mélangé (d'une "
+"manière un peu plus limitée), il est donc possible de fournir un éclairage "
+"complet en temps réel pour une scène sans avoir à recourir à des cartes de "
+"lumières."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:24
 msgid "The main downsides of ``GIProbe`` are:"
-msgstr "Les principaux inconvénients de ``GIProbe`` sont :"
+msgstr "Les principaux inconvénients des ``GIProbe`` sont :"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:26
 msgid ""
 "A small amount of light leaking can occur if the level is not carefully "
 "designed. This must be artist-tweaked."
 msgstr ""
+"Une petite quantité de lumière peut s'échapper si le niveau n'est pas conçu "
+"avec soin. Ceci doit-être peaufiné par l'artiste."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:27
 msgid ""
 "Performance requirements are higher than for lightmaps, so it may not run "
 "properly in low-end integrated GPUs (may need to reduce resolution)."
 msgstr ""
+"Les exigences de performance sont plus élevées que pour les cartes de "
+"lumière, il se peut donc qu'il ne fonctionne pas correctement avec les GPU "
+"intégrés bas de gamme (il peut être nécessaire de réduire la résolution)."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:28
 msgid ""
@@ -29889,18 +31065,27 @@ msgid ""
 "size or shape works for them. Mixing them with Screen Space Reflection also "
 "works well."
 msgstr ""
+"Les reflets sont voxélisés, donc ils ne sont pas aussi nets qu'avec "
+"\"ReflectionProbe\". Cependant, en échange, ils sont volumétriques, donc "
+"n'importe quelle taille ou forme de pièce peut leur convenir. Les mélanger "
+"avec Screen Space Reflection fonctionne également bien."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:29
 msgid ""
 "They consume considerably more video memory than Reflection Probes, so they "
 "must be used with care in the right subdivision sizes."
 msgstr ""
+"Ils consomment considérablement plus de mémoire vidéo que les sondes de "
+"réflexion, ils doivent donc être utilisés avec précaution dans les bonnes "
+"tailles de subdivision."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:34
 msgid ""
 "Just like a ``ReflectionProbe``, simply set up the ``GIProbe`` by wrapping "
 "it around the geometry that will be affected."
 msgstr ""
+"Tout comme un ``ReflectionProbe``, configurez simplement le ``GIProbe`` en "
+"le faisant englober la géométrie qui sera affectée."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:39
 msgid ""
@@ -29908,12 +31093,17 @@ msgid ""
 "important in order for ``GIProbe`` to recognize objects, otherwise they will "
 "be ignored:"
 msgstr ""
+"Ensuite, assurez-vous que la géométrie sera préparée. C'est important pour "
+"que \"GIProbe\" reconnaisse les objets, sinon ils seront ignorés :"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:44
 msgid ""
 "Once the geometry is set up, push the Bake button that appears on the 3D "
 "editor toolbar to begin the pre-baking process:"
 msgstr ""
+"Une fois la géométrie configurée, appuyez sur le bouton Bake (préparation) "
+"qui apparaît dans la barre d'outils de l'éditeur 3D pour commencer le "
+"processus de pré-préparation :"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:50
 msgid "Adding lights"
@@ -29924,23 +31114,33 @@ msgid ""
 "Unless there are materials with emission, ``GIProbe`` does nothing by "
 "default. Lights need to be added to the scene to have an effect."
 msgstr ""
+"À moins qu'il n'y ait des matériaux avec émission, \"GIProbe\" ne fait rien "
+"par défaut. Des lumières doivent être ajoutées à la scène pour avoir un "
+"effet."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:55
 msgid ""
 "The effect of indirect light can be viewed quickly (it is recommended you "
 "turn off all ambient/sky lighting to tweak this, though, as shown below):"
 msgstr ""
+"L'effet de la lumière indirecte peut être visualisé rapidement (il est "
+"recommandé d'éteindre tous les éclairages d'ambiance/ciel pour régler cette "
+"fonction, comme indiqué ci-dessous) :"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:60
 msgid ""
 "In some situations, though, indirect light may be too weak. Lights have an "
 "indirect multiplier to tweak this:"
 msgstr ""
+"Dans certaines situations, cependant, la lumière indirecte peut être trop "
+"faible. Les lumières ont un multiplicateur indirect pour régler cela :"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:65
 msgid ""
 "And, as ``GIProbe`` lighting updates in real-time, this effect is immediate:"
 msgstr ""
+"Et comme l'éclairage de ``GIProbe`` est mis à jour en temps réel, cet effet "
+"est immédiat :"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:70
 msgid "Reflections"
@@ -29953,6 +31153,10 @@ msgid ""
 "Reflection Probes or Screen Space Reflections, but fully reflect "
 "volumetrically."
 msgstr ""
+"Pour les matériaux très métalliques à faible rugosité, il est possible "
+"d'apprécier des reflets de voxel. Gardez à l'esprit que celles-ci ont "
+"beaucoup moins de détails que les sondes de réflexion ou Screen Space "
+"Reflections, mais qu'elles reflètent pleinement le volume."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:78
 msgid ""
@@ -29960,24 +31164,35 @@ msgid ""
 "Reflections, as a full 3-stage fallback-chain. This allows to have precise "
 "reflections where needed:"
 msgstr ""
+"Les sondes ``GIProbe`` peuvent être facilement mélangées à des sondes de "
+"réflexion et à Screen Space Reflections, comme une chaîne de repli complète "
+"à 3 étapes. Cela permet d'avoir des réflexions précises là où c'est "
+"nécessaire :"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:86
 msgid ""
 "GI Probes normally allow mixing with lighting from the sky. This can be "
 "disabled when turning on the *Interior* setting."
 msgstr ""
+"Les GI Probes permettent normalement de mélanger avec l'éclairage du ciel. "
+"Cette fonction peut être désactivée lorsque vous activez le réglage "
+"*Interior*."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:91
 msgid ""
 "The difference becomes clear in the image below, where light from the sky "
 "goes from spreading inside to being ignored."
 msgstr ""
+"La différence devient claire dans l'image ci-dessous, où la lumière du ciel "
+"est diffuser à l'intérieur puis est ignorer."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:96
 msgid ""
 "As complex buildings may mix interiors with exteriors, combining GIProbes "
 "for both parts works well."
 msgstr ""
+"Comme les bâtiments complexes peuvent mélanger l'intérieur et l'extérieur, "
+"la combinaison de GIProbes pour les deux parties fonctionne bien."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:100
 msgid "Tweaking"
@@ -29986,44 +31201,60 @@ msgstr "Ajustement"
 #: ../../docs/tutorials/3d/gi_probes.rst:102
 msgid "GI Probes support a few parameters for tweaking:"
 msgstr ""
+"Les GI Probes prennent en charge quelques paramètres pour l'ajustement :"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:106
 msgid ""
 "**Subdiv** Subdivision used for the probe. The default (128) is generally "
 "good for small- to medium-sized areas. Bigger subdivisions use more memory."
 msgstr ""
+"**Subdiv** Subdivision utilisée pour la sonde. La valeur par défaut (128) "
+"est généralement bonne pour les petites et moyennes régions. Les plus "
+"grandes subdivisions utilisent plus de mémoire."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:107
 msgid "**Extents** Size of the probe. Can be tweaked from the gizmo."
-msgstr ""
+msgstr "**Extents** Taille de la sonde. Peut être modifié à partir du gadget."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:108
 msgid ""
 "**Dynamic Range** Maximum light energy the probe can absorb. Higher values "
 "allow brighter light, but with less color detail."
 msgstr ""
+"**Dynamic Range** Énergie lumineuse maximale que la sonde peut absorber. Des "
+"valeurs plus élevées permettent d'obtenir une lumière plus brillante, mais "
+"avec moins de détails de couleur."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:109
 msgid ""
 "**Energy** Multiplier for all the probe. Can be used to make the indirect "
 "light brighter (although it's better to tweak this from the light itself)."
 msgstr ""
+"**Energy** Multiplicateur pour toute la sonde. Peut être utilisé pour rendre "
+"la lumière indirecte plus brillante (bien qu'il soit préférable de l'ajuster "
+"à partir de la lumière elle-même)."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:110
 msgid "**Propagation** How much light propagates through the probe internally."
 msgstr ""
+"**Propagation** La quantité de lumière qui se propage à l'intérieur de la "
+"sonde."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:111
 msgid ""
 "**Bias** Value used to avoid self-occlusion when doing voxel cone tracing, "
 "should generally be above 1.0 (1==voxel size)."
 msgstr ""
+"**Bias** La valeur utilisée pour éviter l'auto-occlusion lors du traçage du "
+"cône de voxel doit généralement être supérieure à 1,0 (1== taille de voxel)."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:112
 msgid ""
 "**Normal Bias** Alternative type of bias useful for some scenes. Experiment "
 "with this one if regular bias does not work."
 msgstr ""
+"**Normal Bias** Autre type de biais utile pour certaines scènes. "
+"Expérimentez avec celui-ci si un biais régulier ne fonctionne pas."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:115
 msgid "Quality"
@@ -30034,10 +31265,12 @@ msgid ""
 "``GIProbe``\\ s are quite demanding. It is possible to use lower quality "
 "voxel cone tracing in exchange for more performance."
 msgstr ""
+"Les \"GIProbe\" sont très couteux. Il est possible d'utiliser un tracé de "
+"cône de voxel de qualité inférieure en échange d'une meilleure performance."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:4
 msgid "Baked lightmaps"
-msgstr ""
+msgstr "Baked lightmaps"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:9
 msgid ""
@@ -30046,6 +31279,11 @@ msgid ""
 "lightmaps work fine on low-end PCs and mobile devices, as they consume "
 "almost no resources at run-time."
 msgstr ""
+"Les Baked lightmaps sont un flux de travail alternatif pour ajouter un "
+"éclairage indirect (ou préparé) à une scène. Contrairement à l'approche :ref:"
+"`doc_gi_probes`, les Baked lightmaps fonctionnent très bien sur les PC et "
+"les appareils mobiles bas de gamme, car elles ne consomment pratiquement pas "
+"de ressources en temps réel."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:14
 msgid ""
@@ -30054,6 +31292,11 @@ msgid ""
 "reflections, so using :ref:`doc_reflection_probes` together with it on "
 "interiors (or using a Sky on exteriors) is a requirement to get good quality."
 msgstr ""
+"Contrairement aux \"GIProbe\", les Baked lightmaps sont complètement "
+"statiques. Une fois préparées, elles ne peuvent pas être modifiées du tout. "
+"Elles ne fournissent pas non plus de reflets à la scène, donc l'utilisation "
+"de :ref:`doc_reflection_probes` avec elle à l'intérieur (ou l'utilisation "
+"d'un Sky à l'extérieur) est une condition pour obtenir une bonne qualité."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:19
 msgid ""
@@ -30061,6 +31304,10 @@ msgid ""
 "bleeding, and indirect light can look better if using Raytrace mode on high "
 "quality setting (but baking can take a while)."
 msgstr ""
+"Comme elles sont préparées, elles ont moins de problèmes que ``GIProbe`` en "
+"ce qui concerne le saignement de la lumière, et la lumière indirecte peut "
+"sembler meilleure si on utilise le mode Raytrace sur un réglage de haute "
+"qualité (mais la préparation peut prendre un certain temps)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:23
 msgid ""
@@ -30069,12 +31316,18 @@ msgid ""
 "up. For mobile or low-end compatibility, though, Baked Lightmaps are your "
 "only choice."
 msgstr ""
+"En fin de compte, le choix de l'approche d'éclairage indirect qui convient "
+"le mieux dépend de votre cas d'utilisation. En général, GIProbe est plus "
+"esthétique et beaucoup plus facile à mettre ne place. Pour une compatibilité "
+"mobile ou bas de gamme, cependant, les cartes de lumières préparées sont "
+"votre seul choix."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:29
 msgid "Visual comparison"
 msgstr "Comparaison visuelle"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:31
+#, fuzzy
 msgid ""
 "Here are some comparisons of how Baked Lightmaps vs. GIProbe look. Notice "
 "that lightmaps are more accurate, but also suffer from the fact that "
@@ -30082,6 +31335,11 @@ msgid ""
 "be that good. GIProbe looks less accurate (as it's an approximation), but "
 "smoother overall."
 msgstr ""
+"Voici quelques comparaisons entre Baked Lightmaps et GIProbe. Notez que les "
+"cartes lumineuses sont plus précises, mais souffrent aussi du fait que "
+"l'éclairage est sur une texture non enveloppée, donc les transitions et la "
+"résolution peuvent ne pas être aussi bonnes. GIProbe semble moins précis "
+"(car c'est une approximation), mais globalement plus lisse."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:42
 msgid ""

@@ -2,8 +2,8 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
-#
 # Cliffs Dover <bottle@dancingbottle.com>, 2018.
+# Eric K <eric900601@gmail.com>, 2019.
 # ken l <macauhome@gmail.com>, 2018.
 # Kisaragi Hiu <mail@kisaragi-hiu.com>, 2018.
 # Matt <chchwy@gmail.com>, 2018.
@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-26 22:13+0100\n"
-"PO-Revision-Date: 2019-01-04 04:03+0000\n"
-"Last-Translator: Otis Kao <momoslim@gmail.com>\n"
+"PO-Revision-Date: 2019-01-31 15:08+0000\n"
+"Last-Translator: Eric K <eric900601@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -24,27 +24,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.4-dev\n"
+"X-Generator: Weblate 3.5-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
-msgstr "Godot 文件 - *master* 分支"
+msgstr "Godot 文件 - *主要* 分支(branch)"
 
 #: ../../docs/index.rst:6
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"Godot 備有多種語言/版本的幫助文件。請在側欄的底部「獲得幫助」查看列表。"
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the development (master) branch. Looking for "
 "the documentation of the current **stable** branch? `Have a look here "
 "<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
-"這是未穩定(主要)分支的文件。想要看當前**穩定**分支的文件? `請查看這裡 "
-"<http://docs.godotengine.org/en/stable>`_。"
+"此文件是關於不穩定的主要分支(branch)。想查看最新的**穩定**分支文件？`點選此"
+"處 <http://docs.godotengine.org/en/stable>`_。"
 
 #: ../../docs/index.rst:16
 msgid ""
@@ -52,6 +52,8 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
+"您可以於我們的 `Weblate <https://hosted.weblate.org/projects/godot-engine/"
+"godot-docs>`_ 上，協助 Godot 文本的翻譯與校對。"
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -60,6 +62,8 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
+"因翻譯進度不一定完整，您也許會發現未被翻譯的英文用句。您可以在 Weblate 上協助"
+"翻譯或校對，使我們變得更好。"
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -67,6 +71,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"目前，翻譯資料僅支援最新的分支(branch)，但您仍應試著去學習使用穩定版本的 "
+"Godot。"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -76,9 +82,9 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
-"歡迎來到Godot遊戲引擎的官方文件，Godot引擎是一款免費，開源社區驅動的2D和3D遊"
-"戲引擎！如果您是第一次看這個文件，我們建議您先閲讀 :ref:`簡介 "
-"<doc_about_intro>` 以便對本文件所提供的內容做一個概覽。"
+"歡迎來到 Godot 的官方文件，Godot 是一款免費、由開源社區所驅動的 2D/3D 遊戲引"
+"擎！假使您是第一次閱讀此文件，建議閲讀 :ref:`簡介 <doc_about_intro>` 以便對本"
+"文件所提供的內容做一個概覽。"
 
 #: ../../docs/index.rst:34
 msgid ""
@@ -217,7 +223,7 @@ msgstr "關於"
 #: ../../docs/development/cpp/custom_godot_servers.rst:7
 #: ../../docs/development/cpp/creating_android_modules.rst:7
 msgid "Introduction"
-msgstr "序言"
+msgstr "簡介"
 
 #: ../../docs/about/introduction.rst:11
 msgid ""
@@ -231,19 +237,17 @@ msgstr ""
 "具，讓你能夠開發任何種類的遊戲、發佈到任何平臺，並且毫無使用上的限制。"
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"本頁旨在提供本引擎、以及本文件內容之泛覽，讓初學者知道從何開始，也為查找某特"
-"定功能的資訊時提供指引。"
+"本頁旨在提供本引擎、及文件內容之總覽。讓初學者知道從何開始，也為查找特定功能"
+"的資訊時提供指引。"
 
 #: ../../docs/about/introduction.rst:21
-#, fuzzy
 msgid "About Godot Engine"
-msgstr "關於 Godot 遊戲引擎"
+msgstr "關於 Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
 #, fuzzy
@@ -257,7 +261,6 @@ msgstr ""
 "用。"
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -266,10 +269,10 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot 遊戲引擎是一個有豐富功能的跨平臺遊戲引擎，用以從一個統一的介面創造 2D "
-"與 3D 的遊戲。它提供了一套完整的通用工具，讓使用者能專注於遊戲製作上，不用又"
-"再重新造一次輪子。遊戲能一鍵輸出至數個平臺上，包含主要的桌面平臺（Linux、"
-"macOS、Windows）以及行動（Android、iOS）與線上（HTML5）的平臺。"
+"Godot Engine 是一個有豐富功能的跨平台遊戲引擎，用以從一個統一的介面創造 2D "
+"與 3D 的遊戲。它提供了一套完整的通用工具，讓使用者能專注於遊戲製作，不必浪費"
+"時間在繁瑣雜事上。成品能輸出至數個平台上，包含主要的電腦平台（Linux、macOS、"
+"Windows）、行動平台（Android、iOS）及線上平台（HTML5）。"
 
 #: ../../docs/about/introduction.rst:34
 #, fuzzy
@@ -298,10 +301,9 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:46
 msgid "About the documentation"
-msgstr "關於這份文件"
+msgstr "關於此文件"
 
 #: ../../docs/about/introduction.rst:48
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -310,7 +312,7 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"這份文件是不斷的由 Godot 引擎社群所撰寫、改正、編輯、改進的。它是使用 "
+"這份文件是不斷地由 Godot 引擎社群所撰寫、改正、編輯、改進。它是使用 "
 "`reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_ 標記語言"
 "的純文字檔所編輯後，利用開源的 `Sphinx <http://www.sphinx-doc.org>`_ 與 "
 "`ReadTheDocs <https://readthedocs.org/>`_ 工具所編譯成的靜態網站 / 線下文件。"
@@ -323,13 +325,12 @@ msgid ""
 "on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`_."
 msgstr ""
-"要貢獻到 Godot 的說明文件，你可以在 GitHub `源碼倉庫 <https://github.com/"
-"godotengine/godot-docs>`_ 上開 issue 或 pull request，或者是在 `Hosted "
+"想協助撰寫 Godot 的說明文件，您可以在 GitHub `源碼倉庫 <https://github.com/"
+"godotengine/godot-docs>`_ 上提起 issue 或 pull request，亦或是在 `Hosted "
 "Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs/>`_ 上將"
 "它翻譯成你的語言。"
 
 #: ../../docs/about/introduction.rst:61
-#, fuzzy
 msgid ""
 "All the contents are under the permissive Creative Commons Attribution 3.0 "
 "(`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_) license, with "
@@ -337,7 +338,7 @@ msgid ""
 "\"."
 msgstr ""
 "這份文件的所有內容都是以創用CC—姓名標示（`CC-BY 3.0 <https://creativecommons."
-"org/licenses/by/3.0>`_）釋出，作者請標示「Juan Linietsky, Ariel Manzur, 以及 "
+"org/licenses/by/3.0>`_）釋出，作者請標示「Juan Linietsky, Ariel Manzur 及 "
 "Godot Engine 社群」。"
 
 #: ../../docs/about/introduction.rst:66
@@ -351,8 +352,7 @@ msgid ""
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
-"這份文件有五個章節，其中內容不平均的令人驚歎——但章節分開的方法應該是符合直覺"
-"的:"
+"此文件有五個章節，雖然內容佔比不太均衡—— 但這些章節仍是以直觀方法分類的："
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -1547,7 +1547,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/external_editor.rst:32
 #: ../../docs/development/compiling/compiling_with_mono.rst:143
 msgid "Editor"
-msgstr ""
+msgstr "編輯器"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:96
 msgid ""
@@ -56261,7 +56261,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
-msgstr ""
+msgstr "偵錯"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -56291,7 +56291,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:22
 msgid "Deploy with Remote Debug"
-msgstr ""
+msgstr "使用遠端偵錯"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
 msgid ""
@@ -56301,7 +56301,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
 msgid "Small Deploy with Network FS"
-msgstr ""
+msgstr "小型部屬 & 網路文件系統(NFS)"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid ""
@@ -56313,7 +56313,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Visible Collision Shapes"
-msgstr ""
+msgstr "碰撞區域的顯示"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
 msgid ""
@@ -56323,7 +56323,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid "Visible Navigation"
-msgstr ""
+msgstr "導航的顯示"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -56331,7 +56331,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:43
 msgid "Sync Scene Changes"
-msgstr ""
+msgstr "同步場景的變更"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:45
 msgid ""
@@ -56342,7 +56342,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
 msgid "Sync Script Changes"
-msgstr ""
+msgstr "同步腳本的變更"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:51
 msgid ""
