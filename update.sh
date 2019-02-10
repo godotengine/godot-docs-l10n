@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -euo pipefail
+IFS=$'\n\t'
+
 # Defines
 SOURCE_DIR="docs"
 SPHINX_TEMPLATES_DIR="sphinx/templates"
@@ -100,7 +103,7 @@ if [ "$update_weblate_pot" = true ]; then
   if [ ! -d "$WEBLATE_DIR" ]; then
     mkdir $WEBLATE_DIR
   fi
-  msgcat -o $WEBLATE_TEMPLATE $SPHINX_TEMPLATES
+  msgcat -o $WEBLATE_TEMPLATE "$SPHINX_TEMPLATES"
   sed -i 's@Report-Msgid-Bugs-To: [^"]*@Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\\n@' $WEBLATE_TEMPLATE
 fi
 
@@ -109,8 +112,8 @@ if [ "$update_weblate_po" = true ]; then
   echo "=== Merging Weblate PO files with Weblate template ==="
   for po in $WEBLATE_POFILES; do
     echo "Merging $po..."
-    msgmerge -w 79 $po $WEBLATE_TEMPLATE > "$po".new
-    mv -f "$po".new $po
+    msgmerge -w 79 "$po" $WEBLATE_TEMPLATE > "$po".new
+    mv -f "$po".new "$po"
   done
 fi
 
@@ -131,16 +134,16 @@ if [ "$update_sphinx_po" = true ]; then
   rm -rf $SPHINX_PO_DIR
   mkdir $SPHINX_PO_DIR
   for lang in $SPHINX_BUILD_LANGS; do
-    po=$WEBLATE_DIR"/"$lang".po"
+    po=$WEBLATE_DIR"/$lang.po"
     echo "Merging $po..."
     langdir="$SPHINX_PO_DIR/$lang/LC_MESSAGES"
     mkdir -p "$langdir"
     for template in $SPHINX_TEMPLATES; do
       page=$(basename "$template" .pot)
-      dirpath=$(dirname "$template" | sed -e 's@'$SPHINX_TEMPLATES_DIR'@'$langdir'@')
+      dirpath=$(dirname "$template" | sed -e 's@'$SPHINX_TEMPLATES_DIR'@'"$langdir"'@')
       mkdir -p "$dirpath"
       output="$dirpath/$page.po"
-      msgmerge --lang=$lang -C "$po" "$template" "$template" -o "$output"
+      msgmerge --lang="$lang" -C "$po" "$template" "$template" -o "$output"
     done
   done
 fi
