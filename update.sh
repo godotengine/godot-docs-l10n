@@ -103,7 +103,7 @@ if [ "$update_weblate_pot" = true ]; then
   if [ ! -d "$WEBLATE_DIR" ]; then
     mkdir $WEBLATE_DIR
   fi
-  msgcat -o $WEBLATE_TEMPLATE "$SPHINX_TEMPLATES"
+  msgcat -o $WEBLATE_TEMPLATE $SPHINX_TEMPLATES
   sed -i 's@Report-Msgid-Bugs-To: [^"]*@Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\\n@' $WEBLATE_TEMPLATE
 fi
 
