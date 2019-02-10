@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2019-01-26 22:13+0100\n"
+"POT-Creation-Date: 2019-02-10 13:55+0100\n"
 "PO-Revision-Date: 2019-01-26 20:52+0000\n"
 "Last-Translator: Stijn Hinlopen <f.a.hinlopen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
@@ -193,6 +193,7 @@ msgstr "Over"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:4
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:7
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:7
+#: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:4
 #: ../../docs/tutorials/2d/2d_transforms.rst:7
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
 #: ../../docs/tutorials/2d/2d_movement.rst:7
@@ -235,6 +236,7 @@ msgstr "Over"
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:7
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:7
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:7
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:7
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:7
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:7
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:7
@@ -1861,6 +1863,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:112
 #: ../../docs/getting_started/step_by_step/signals.rst:320
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
 msgid "Conclusion"
 msgstr ""
 
@@ -2720,7 +2723,7 @@ msgid "Only GDScript creates global variables for each named script."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:4
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1465
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1467
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:682
@@ -9499,7 +9502,7 @@ msgid "else"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:821
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:823
 msgid "for"
 msgstr ""
 
@@ -9512,11 +9515,11 @@ msgid "do"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
-msgid "Reserved for future implementation of do...while loops."
+msgid "Reserved for future implementation of ``do... while`` loops."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:810
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:812
 msgid "while"
 msgstr ""
 
@@ -9525,7 +9528,7 @@ msgid "See while_."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:850
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:852
 msgid "match"
 msgstr ""
 
@@ -9539,7 +9542,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
-msgid "Reserved for future implementation."
+msgid "Reserved for future implementation. See match_."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
@@ -10520,17 +10523,17 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:661
 msgid ""
-"If you pass a name to the enum, it would also put all the values inside a "
-"constant dictionary of that name."
+"If you pass a name to the enum, it will put all the keys inside a constant "
+"dictionary of that name."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:682
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:684
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:245
 msgid "Functions"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:684
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:686
 msgid ""
 "Functions always belong to a `class <Classes_>`_. The scope priority for "
 "variable look-up is: local → class member → global. The ``self`` variable is "
@@ -10539,30 +10542,30 @@ msgid ""
 "argument, unlike Python)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:697
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:699
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:699
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:701
 msgid ""
 "Functions can also have type specification for the arguments and for the "
 "return value. Types for arguments can be added in a similar way to "
 "variables::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:705
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:707
 msgid ""
 "If a function argument has a default value, it's possible to infer the type::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:710
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:712
 msgid ""
 "The return type of the function can be specified after the arguments list "
 "using the arrow token (``->``)::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:716
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:718
 msgid ""
 "Functions that have a return type **must** return a proper value. Setting "
 "the type as ``void`` means the function doesn't return anything. Void "
@@ -10570,7 +10573,7 @@ msgid ""
 "return any value."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:725
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:727
 msgid ""
 "Non-void functions must **always** return a value, so if your code has "
 "branching statements (such as an ``if``/``else`` construct), all the "
@@ -10579,11 +10582,11 @@ msgid ""
 "block is not executed, the function won't have a valid value to return."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:733
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:735
 msgid "Referencing Functions"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:735
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:737
 msgid ""
 "Contrary to Python, functions are *not* first class objects in GDScript. "
 "This means they cannot be stored in variables, passed as an argument to "
@@ -10591,14 +10594,14 @@ msgid ""
 "performance reasons."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:739
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:741
 msgid ""
 "To reference a function by name at runtime, (e.g. to store it in a variable, "
 "or pass it to another function as an argument) one must use the ``call`` or "
 "``funcref`` helpers::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:752
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:754
 msgid ""
 "Remember that default functions, like  ``_init``, and most notifications, "
 "such as ``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, "
@@ -10606,33 +10609,33 @@ msgid ""
 "to call the function explicitly when overloading them in some way."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:760
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:762
 msgid "Static functions"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:762
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:764
 msgid ""
 "A function can be declared static. When a function is static, it has no "
 "access to the instance member variables or ``self``. This is mainly useful "
 "to make libraries of helper functions:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:773
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:775
 msgid "Statements and control flow"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:775
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:777
 msgid ""
 "Statements are standard and can be assignments, function calls, control flow "
 "structures, etc (see below). ``;`` as a statement separator is entirely "
 "optional."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:780
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:782
 msgid "if/else/elif"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:782
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:784
 msgid ""
 "Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
 "Parenthesis around conditions are allowed, but not required. Given the "
@@ -10640,23 +10643,23 @@ msgid ""
 "``else``/``if`` to maintain a level of indentation."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:796
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:798
 msgid "Short statements can be written on the same line as the condition::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:803
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:805
 msgid ""
 "Sometimes you might want to assign a different initial value based on a "
 "boolean expression. In this case, ternary-if expressions come in handy::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:812
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:814
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:823
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:825
 msgid ""
 "To iterate through a range, such as an array or table, a *for* loop is used. "
 "When iterating over an array, the current array element is stored in the "
@@ -10664,44 +10667,44 @@ msgid ""
 "the loop variable."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:852
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:854
 msgid ""
 "A ``match`` statement is used to branch execution of a program. It's the "
 "equivalent of the ``switch`` statement found in many other languages, but "
 "offers some additional features."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:855
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:857
 msgid "Basic syntax:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:868
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:870
 msgid "**Crash-course for people who are familiar with switch statements**:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:870
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:872
 msgid "Replace ``switch`` with ``match``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:871
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:873
 msgid "Remove ``case``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:872
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:874
 msgid ""
 "Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:873
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:875
 msgid "Change ``default`` to a single underscore."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:876
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:878
 msgid "**Control flow**:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:878
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:880
 msgid ""
 "The patterns are matched from top to bottom. If a pattern matches, the "
 "corresponding block will be executed. After that, the execution continues "
@@ -10710,134 +10713,134 @@ msgid ""
 "below it."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:882
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:884
 msgid "There are 6 pattern types:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:894
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:896
 msgid "constant pattern"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:885
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:887
 msgid "constant primitives, like numbers and strings ::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:906
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:908
 msgid "variable pattern"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:897
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:899
 msgid "matches the contents of a variable/enum ::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:920
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:922
 msgid "wildcard pattern"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:909
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:911
 msgid "This pattern matches everything. It's written as a single underscore."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:911
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:913
 msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages. ::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:933
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:935
 msgid "binding pattern"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:923
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
 msgid ""
 "A binding pattern introduces a new variable. Like the wildcard pattern, it "
 "matches everything - and also gives that value a name. It's especially "
 "useful in array and dictionary patterns. ::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:952
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:954
 msgid "array pattern"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:936
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:938
 msgid ""
 "matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:938
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
 "pattern, otherwise the pattern doesn't match."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:942
 msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:942
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:944
 msgid "Every subpattern has to be comma separated. ::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:977
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
 msgid "dictionary pattern"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:955
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
 msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:959
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
 "the pattern, otherwise the pattern doesn't match."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:959
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:961
 msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:961
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:963
 msgid "Every subpattern has to be comma separated."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:963
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:965
 msgid ""
 "If you don't specify a value, then only the existence of the key is checked."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:965
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:967
 msgid "A value pattern is separated from the key pattern with a ``:`` ::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:988
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:990
 msgid "Multipatterns:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:980
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:982
 msgid ""
 "You can also specify multiple patterns separated by a comma. These patterns "
 "aren't allowed to have any bindings in them. ::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:991
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:993
 msgid "Classes"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:993
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
 msgid ""
 "By default, all script files are unnamed classes. In this case, you can only "
 "reference them using the file's path, using either a relative or an absolute "
 "path. For example, if you name a script file ``character.gd``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1008
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1010
 msgid ""
 "Instead, you can give your class a name to register it as a new type in "
 "Godot's editor. For that, you use the 'class_name' keyword. You can add an "
@@ -10845,11 +10848,11 @@ msgid ""
 "class will then appear with its new icon in the editor:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1023
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1025
 msgid "Here's a class file example:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1042
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1044
 msgid ""
 "Godot's class syntax is compact: it can only contain member variables or "
 "functions. You can use static functions, but not static member variables. In "
@@ -10859,58 +10862,58 @@ msgid ""
 "without the user knowing."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1050
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1052
 msgid "Inheritance"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1052
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1054
 msgid "A class (stored as a file) can inherit from"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1054
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1056
 msgid "A global class"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1055
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1057
 msgid "Another class file"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1056
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1058
 msgid "An inner class inside another class file."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1058
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1060
 msgid "Multiple inheritance is not allowed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1060
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1062
 msgid "Inheritance uses the ``extends`` keyword:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1074
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1076
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1088
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1090
 msgid ""
 "To call a function in a *base class* (i.e. one ``extend``-ed in your current "
 "class), prepend ``.`` to the function name:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1095
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1097
 msgid ""
 "This is especially useful because functions in extending classes replace "
 "functions with the same name in their base classes. So if you still want to "
 "call them, you can use ``.`` like the ``super`` keyword in other languages:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1105
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1107
 msgid "Class Constructor"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1107
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1109
 msgid ""
 "The class constructor, called on class instantiation, is named ``_init``. As "
 "mentioned earlier, the constructors of parent classes are called "
@@ -10918,22 +10921,22 @@ msgid ""
 "``._init()`` explicitly."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1111
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1113
 msgid ""
 "Unlike the call of a regular function, like in the above example with ``."
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1119
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1121
 msgid "This is better explained through examples. Say we have this scenario:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1141
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
 msgid "There are a few things to keep in mind here:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1145
 msgid ""
 "if the inherited class (``State.gd``) defines a ``_init`` constructor that "
 "takes arguments (``e`` in this case), then the inheriting class (``Idle."
@@ -10941,19 +10944,19 @@ msgid ""
 "``_init`` from ``State.gd``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the base class "
 "``State.gd``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1147
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1149
 msgid ""
 "in the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1149
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1151
 msgid ""
 "if ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` base class even if it does nothing. "
@@ -10961,21 +10964,21 @@ msgid ""
 "constructor as well, not just variables. Eg.:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1161
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1163
 msgid "Inner classes"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1163
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1165
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1183
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1185
 msgid "Classes as resources"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1185
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1187
 msgid ""
 "Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
 "They must be loaded from disk to access them in other classes. This is done "
@@ -10984,11 +10987,11 @@ msgid ""
 "class object::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1203
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1205
 msgid "Exports"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1205
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1207
 msgid ""
 "Class members can be exported. This means their value gets saved along with "
 "the resource (e.g. the :ref:`scene <class_PackedScene>`) they're attached "
@@ -10996,13 +10999,13 @@ msgid ""
 "Exporting is done by using the ``export`` keyword::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1214
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1216
 msgid ""
 "An exported variable must be initialized to a constant expression or have an "
 "export hint in the form of an argument to the export keyword (see below)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1217
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1219
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
 "them visible and editable in the editor. This way, artists and game "
@@ -11010,47 +11013,47 @@ msgid ""
 "this, a special export syntax is provided."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1303
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1305
 msgid ""
 "It must be noted that even if the script is not being run while at the "
 "editor, the exported properties are still editable (see below for \"tool\")."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1308
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1310
 msgid "Exporting bit flags"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1310
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1312
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
 "set from the editor:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1321
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1327
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1329
 msgid ""
 "In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
 "defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1332
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1334
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1336
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1338
 msgid "Exporting arrays"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1338
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1340
 msgid ""
 "Exporting arrays works, but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -11059,24 +11062,24 @@ msgid ""
 "initializers, but they must be constant expressions."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1375
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1377
 msgid "Setters/getters"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1377
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1379
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
 "way."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1380
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1387
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1389
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -11086,27 +11089,27 @@ msgid ""
 "``return`` the desired value. Below is an example:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1406
 msgid "Either of the *setter* or *getter* functions can be omitted:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1413
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1415
 msgid ""
 "Get/Setters are especially useful when exporting variables to editor in tool "
 "scripts or plugins, for validating input."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1416
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1418
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1431
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1433
 msgid "Tool mode"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1433
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1435
 msgid ""
 "Scripts, by default, don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
@@ -11115,11 +11118,11 @@ msgid ""
 "top of the file:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1448
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1450
 msgid "Memory management"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1450
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1452
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -11130,50 +11133,67 @@ msgid ""
 "weak references."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1458
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1460
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
 "freed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1467
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1469
 msgid ""
-"It is often desired to send a notification that something happened in an "
-"instance. GDScript supports creation of built-in Godot signals. Declaring a "
-"signal in GDScript is easy using the `signal` keyword."
+"Signals are a way to send notification messages from an object that other "
+"objects can listen to in a generic way. Create custom signals for a class "
+"using the ``signal`` keyword."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1478
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
 msgid ""
-"These signals can be connected in the editor or from code like regular "
-"signals. Take the instance of a class where the signal was declared and "
-"connect it to the method of another instance:"
+"These signals may be connected to methods in the same manner as you connect "
+"built-in signals of nodes such as :ref:`class_Button` or :ref:"
+"`class_RigidBody`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1494
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
 msgid ""
-"It is also possible to bind arguments to a signal that lacks them with your "
-"custom values:"
+"Here's an example that creates a custom signal in one script and connects "
+"the custom signal to a method in a separate script, using the :ref:`Object."
+"connect() <class_Object_method_connect>` method:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1502
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1513
 msgid ""
-"This is useful when a signal from many objects is connected to a single "
-"callback and the sender must be identified:"
+"GDScript can bind arguments to connections between a signal and a method. "
+"When the signal is emitted, calling the connected method, the bound argument "
+"is given to the method. These bound arguments are specific to the connection "
+"rather than the signal or the method, meaning that each connection has "
+"unique bindings."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1514
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1519
 msgid ""
-"Finally, emitting a custom signal is done by using the Object.emit_signal "
-"method:"
+"Here is an example that creates a connection between a button's ``pressed`` "
+"signal and a method, binding the button instance to the connection. The "
+"handler uses the bound argument to print which button instance was pressed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1525
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
+msgid ""
+"Signals are generated by the :ref:`Object.emit_signal() "
+"<class_Object_method_emit_signal>` method which broadcasts the signal and "
+"arguments."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1537
+msgid ""
+"Extending a previous example to use all the features of GDScript signals:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1569
 msgid "Coroutines with yield"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1527
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1571
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
@@ -11183,43 +11203,43 @@ msgid ""
 "returns. Once resumed, the state object becomes invalid. Here is an example:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1549
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1573
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1593
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1617
 msgid "Will print:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1557
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1601
 msgid ""
 "It is also possible to pass values between yield() and resume(), for example:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1582
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1626
 msgid "Coroutines & signals"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1584
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1628
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1599
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1643
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1612
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1656
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1615
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid "Onready keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1617
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1661
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -11227,7 +11247,7 @@ msgid ""
 "call to Node._ready() is made."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1629
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1673
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -11235,11 +11255,11 @@ msgid ""
 "replace the above code with a single line:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1639
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1683
 msgid "Assert keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1685
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds."
@@ -15970,6 +15990,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:38
+#: ../../docs/getting_started/workflow/best_practices/index.rst:2
 msgid "Best practices"
 msgstr ""
 
@@ -18116,13 +18137,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
 msgid ""
 "Python offers an easy method to start a local server. Use ``python -m "
-"SimpleHTTPServer`` with Python 2 or"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:21
-msgid ""
-"``python -m http.server`` with Python 3 to serve the current working "
-"directory at ``http://localhost:8000``."
+"SimpleHTTPServer`` with Python 2 or ``python -m http.server`` with Python 3 "
+"to serve the current working directory at ``http://localhost:8000``."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:25
@@ -18633,6 +18649,2259 @@ msgstr ""
 msgid ""
 "It is also possible to convert a PNG image to an hiDPI-friendly ICO file "
 "using this `ImageMagick <https://www.imagemagick.org/>`_ command:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:6
+msgid ""
+"This tutorial series aims to illustrate intended Godot workflows, i.e. the "
+"\"best practices\" of defining one's game API. Godot allows for a great "
+"amount of flexibility in how one designs a project's code and scene "
+"structure. Each method will have its own advantages and disadvantages, so "
+"outlining the best practices should help users feel less confused as they "
+"further explore Godot's depth."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:13
+msgid ""
+"This series is also designed to help get users thinking about the best way "
+"to reason about best practices. It would be impossible to give a "
+"comprehensive overview of what one should do for any arbitrary design "
+"decision. As such, each article breaks problems down into the fundamental "
+"questions they pose, suggests the available solutions, analyzes the "
+"advantages and disadvantages of each option, and then highlights the best "
+"course of action depending on the circumstances."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:21
+msgid ""
+"While the articles in this series are largely topic-directed, it is "
+"recommended that users begin with the :ref:`doc_what_are_godot_classes` "
+"article. It is from there that the \"best practices\" for the rest of the "
+"engine become more clear, based on established OOP practices."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
+msgid "What are Godot classes really?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
+msgid ""
+"Godot offers two main means of creating types: scripts and scenes. Both of "
+"these represent a \"class\" since Godot revolves around Object-Oriented "
+"design. *How* they do this may not be clear to beginner or intermediate "
+"users though."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:11
+msgid ""
+"Godot Engine provides classes out-of-the-box (like :ref:`Node "
+"<class_Node>`), but user-created types are not actually classes. Instead "
+"they are resources that tell the engine a sequence of initializations to "
+"perform on an engine class."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:16
+msgid ""
+"Godot's internal classes have methods that register a class's data with a :"
+"ref:`ClassDB <class_ClassDB>`. This database provides runtime access to "
+"class information (also called \"reflection\"). Things stored in the ClassDB "
+"include, among other things..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:21
+msgid "properties"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:23
+msgid "methods"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:25
+#, fuzzy
+msgid "constants"
+msgstr "Constanten"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
+#, fuzzy
+msgid "signals"
+msgstr "Signalen"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:29
+msgid ""
+"Furthermore, this ClassDB is what Objects actually check against when "
+"performing any operation. Access a property? Call a method? Emit a signal? "
+"It will check the database's records (and the records of the Object's base "
+"types) to see if the Object supports the operation. Every C++ Object defines "
+"a static `_bind_methods()` function that describes what C++ content it "
+"registers to the database and how."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
+msgid ""
+"So, if the engine provides all of this data at startup, then how does a user "
+"define their own data? It'd be nice if users could define a custom set of "
+"data to be appended to an object's data. That way, users could inject their "
+"own properties and methods into the engine's Object query requests."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
+msgid ""
+"*This* is what a :ref:`Script <class_Script>` is. Objects check their "
+"attached script before the database, so scripts can even override methods. "
+"If a script defines a `_get_property_list()` method, that data is appended "
+"to the list of properties the Object fetches from the ClassDB. The same "
+"holds true for other declarative code."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:47
+msgid ""
+"This can lead to some users' confusion when they see a script as being a "
+"class unto itself. In reality, the engine just auto-instantiates the base "
+"engine class and then adds the script to that object. This then allows the "
+"Object to defer to the Script's content where the engine logic deems "
+"appropriate."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:53
+msgid ""
+"A problem does present itself though. As the size of Objects increases, the "
+"scripts' necessary size to create them grows much, much larger. Creating "
+"node hierarchies demonstrates this. Each individual Node's logic could be "
+"several hundred lines of code in length."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
+msgid "let's see a simple example of creating a single Node as a child."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:97
+msgid ""
+"Notice that only two pieces of declarative code are involved in the creation "
+"of this child node: the variable declaration and the constructor "
+"declaration. Everything else about the child must be setup using imperative "
+"code. However, script code is much slower than engine C++ code. Each change "
+"must make a separate call to the scripting API which means a lot of C++ "
+"\"lookups\" within data structures to find the corresponding logic to "
+"execute."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:105
+msgid ""
+"To help offload the work, it would be convenient if one could batch up all "
+"operations involved in creating and setting up node hierarchies. The engine "
+"could then handle the construction using its fast C++ code, and the script "
+"code would be free from the perils of imperative code."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:110
+msgid ""
+"*This* is what a scene (:ref:`PackedScene <class_PackedScene>`) is: a "
+"resource that provides an advanced \"constructor\" serialization which is "
+"offloaded to the engine for batch processing."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:114
+msgid ""
+"Now, why is any of this important to scene organization? Because one must "
+"understand that scenes *are* objects. One often pairs a scene with a "
+"scripted root node that makes use of the sub-nodes. This means that the "
+"scene is often an extension of the script's declarative code."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
+msgid "It helps to define..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
+msgid "what objects are available to the script?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:123
+msgid "how are they organized?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:125
+msgid "how are they initialized?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:127
+msgid "what connections to each other do they have, if any?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
+msgid ""
+"As such, many Object-Oriented principles which apply to \"programming\", i."
+"e. scripts, *also* apply to scenes. Some scripts are designed to only work "
+"in one scene (which are often bundled into the scene itself). Other scripts "
+"are meant to be re-used between scenes."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:134
+msgid ""
+"**Regardless, the scene is always an extension of the root script, and can "
+"therefore be interpreted as a part of the class.** Most of the points "
+"covered in this series will build on this point, so keep it in mind."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
+msgid "Scene organization"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:6
+msgid ""
+"This article covers topics related to the effective organization of scene "
+"content. Which nodes should one use? Where should one place them? How should "
+"they interact?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:11
+msgid "How to build relationships effectively"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:13
+msgid ""
+"When Godot users begin crafting their own scenes, they often run into the "
+"following problem:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:16
+msgid ""
+"They create their first scene and fill it with content before the creeping "
+"sense that they need to split it up into re-usable pieces haunts them. They "
+"save branches of their scene into their own scene. However, they then notice "
+"that the hard references they were able to rely on before are no longer "
+"possible. Re-using the scene in multiple places creates issues because the "
+"node paths do not find their targets. Signal connections established in the "
+"editor break."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
+msgid ""
+"To fix these problems, one must instantiate the sub-scenes without them "
+"requiring details about their environment. One needs to be able to trust "
+"that the sub-scene will create itself without being picky about how one uses "
+"it."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:29
+msgid ""
+"One of the biggest things to consider in OOP is maintaining focused, "
+"singular-purpose classes with `loose coupling <https://en.wikipedia.org/wiki/"
+"Loose_coupling>`_ to other parts of the codebase. This keeps the size of "
+"objects small (for maintainability) and improves their reusability so that "
+"re-writing completed logic is unnecessary."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:36
+msgid ""
+"These OOP best practices have *several* ramifications for the best practices "
+"in scene structure and script usage."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:39
+msgid ""
+"**If at all possible, one should design scenes to have no dependencies.** "
+"That is, one should create scenes that keep everything they need within "
+"themselves."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:43
+msgid ""
+"If a scene must interact with an external context, experienced developers "
+"recommend the use of `Dependency Injection <https://en.wikipedia.org/wiki/"
+"Dependency_injection>`_. This technique involves having a high-level API "
+"provide the dependencies of the low-level API. Why do this? Because classes "
+"which rely on their external environment can inadvertantly trigger bugs and "
+"unexpected behavior."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:50
+msgid ""
+"To do this, one must expose data and then rely on a parent context to "
+"initialize it:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:53
+msgid ""
+"Connect to a signal. Extremely safe, but should use only to \"respond\" to "
+"behavior, not start it. Note that signal names are usually past-tense verbs "
+"like \"entered\", \"skill_activated\", or \"item_collected\"."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:74
+msgid "Call a method. Used to start behavior."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:93
+msgid ""
+"Initialize a :ref:`FuncRef <class_FuncRef>` property. Safer than a method as "
+"ownership of the method is unnecessary. Used to start behavior."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:113
+msgid "Initialize a Node or other Object reference."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:132
+msgid "Initialize a NodePath."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:151
+msgid ""
+"These options hide the source of accesses from the child node. This in turn "
+"keeps the child **loosely coupled** to its environment. One can re-use it in "
+"another context without any extra changes to its API."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:157
+msgid ""
+"Although the examples above illustrate parent-child relationships, the same "
+"principles apply towards all object relations. Nodes which are siblings "
+"should only be aware of their hierarchies while an ancestor mediates their "
+"communications and references."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:200
+msgid ""
+"The same principles also apply to non-Node objects that maintain "
+"dependencies on other objects. Whichever object actually owns the objects "
+"should manage the relationships between them."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:206
+msgid ""
+"One should favor keeping data in-house (internal to a scene) though as "
+"placing a dependency on an external context, even a loosely coupled one, "
+"still means that the node will expect something in its environment to be "
+"true. The project's design philosophies should prevent this from happening. "
+"If not, the code's inherent liabilities will force developers to use "
+"documentation to keep track of object relations on a microscopic scale; this "
+"is otherwise known as development hell. Writing code that relies on external "
+"documentation for one to use it safely is error-prone by default."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:215
+msgid ""
+"To avoid creating and maintaining such documentation, one converts the "
+"dependent node (\"child\" above) into a tool script that implements :ref:"
+"`_get_configuration_warning() "
+"<class_Node_method__get_configuration_warning>`. Returning a non-empty "
+"string from it will make the Scene dock generate a warning icon with the "
+"string as a tooltip by the node. This is the same icon that appears for "
+"nodes such as the :ref:`Area2D <class_Area2D>` node when it has no child :"
+"ref:`CollisionShape2D <class_CollisionShape2D>` nodes defined. The editor "
+"then self-documents the scene through the script code. No content "
+"duplication via documentation is necessary."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:226
+msgid ""
+"A GUI like this can better inform project users of critical information "
+"about a Node. Does it have external dependencies? Have those dependencies "
+"been satisfied? Other programmers, and especially designers and writers, "
+"will need clear instructions in the messages telling them what to do to "
+"configure it."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:231
+msgid ""
+"So, why do all this complex switcharoo work? Well, because scenes operate "
+"best when they operate alone. If unable to work alone, then working with "
+"others anonymously (with minimal hard dependencies, i.e. loose coupling). If "
+"the inevitable changes made to a class cause it to interact with other "
+"scenes in unforeseen ways, then things break down. A change to one class "
+"could result in damaging effects to other classes."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:238
+msgid ""
+"Scripts and scenes, as extensions of engine classes should abide by *all* "
+"OOP principles. Examples include..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:241
+msgid "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:242
+msgid "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:243
+msgid "`KISS <https://en.wikipedia.org/wiki/KISS_principle>`_"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:244
+msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:247
+msgid "Choosing a node tree structure"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:249
+msgid ""
+"So, a developer starts work on a game only to stop at the vast possibilities "
+"before them. They might know what they want to do, what systems they want to "
+"have, but *where* to put them all? Well, how one goes about making their "
+"game is always up to them. One can construct node trees in a myriad of ways. "
+"But, for those who are unsure, this helpful guide can give them a sample of "
+"a decent structure to start with."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:256
+msgid ""
+"A game should always have a sort of \"entry point\"; somewhere the developer "
+"can definitively track where things begin so that they can follow the logic "
+"as it continues elsewhere. This place also serves as a bird's eye view to "
+"all of the other data and logic in the program. For traditional "
+"applications, this would be the \"main\" function. In this case, it would be "
+"a Main node."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:262
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:273
+msgid "Node \"Main\" (main.gd)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:264
+msgid ""
+"The ``main.gd`` script would then serve as the primary controller of one's "
+"game."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:267
+msgid ""
+"Then one has their actual in-game \"World\" (a 2D or 3D one). This can be a "
+"child of Main. In addition, one will need a primary GUI for their game that "
+"manages the various menus and widgets the project needs."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:272
+msgid "Node2D/Spatial \"World\" (game_world.gd)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:273
+msgid "Control \"GUI\" (gui.gd)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:275
+msgid ""
+"When changing levels, one can then swap out the children of the \"World\" "
+"node. :ref:`Changing scenes manually <doc_change_scenes_manually>` gives "
+"users full control over how their game world transitions."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:279
+msgid ""
+"The next step is to consider what gameplay systems one's project requires. "
+"If one has a system that..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:282
+msgid "tracks all of its data internally"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:283
+msgid "should be globally accessible"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:284
+msgid "should exist in isolation"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:286
+msgid ""
+"... then one should create an :ref:`autoload 'singleton' node "
+"<doc_singletons_autoload>`."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:290
+msgid ""
+"For smaller games, a simpler alternative with less control would be to have "
+"a \"Game\" singleton that simply calls the :ref:`SceneTree.change_scene() "
+"<class_SceneTree_method_change_scene>` method to swap out the main scene's "
+"content. This structure more or less keeps the \"World\" as the main game "
+"node."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:296
+msgid ""
+"Any GUI would need to also be a singleton, be transitory parts of the \"World"
+"\", or be manually added as a direct child of the root. Otherwise, the GUI "
+"nodes would also delete themselves during scene transitions."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:301
+msgid ""
+"If one has systems that modify other systems' data, one should define those "
+"as their own scripts or scenes rather than autoloads. For more information "
+"on the reasons, please see the :ref:`'Autoloads vs. Internal Nodes' "
+"<doc_autoloads_versus_internal_nodes>` documentation."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:307
+msgid ""
+"Each subsystem within one's game should have its own section within the "
+"SceneTree. One should use parent-child relationships only in cases where "
+"nodes are effectively elements of their parents. Does removing the parent "
+"reasonably mean that one should also remove the children? If not, then it "
+"should have its own place in the hierachy as a sibling or some other "
+"relation."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:315
+msgid ""
+"In some cases, one needs these separated nodes to *also* position themselves "
+"relative to each other. One can use the :ref:`RemoteTransform "
+"<class_RemoteTransform>` / :ref:`RemoteTransform2D "
+"<class_RemoteTransform2D>` nodes for this purpose. They will allow a target "
+"node to conditionally inherit selected transform elements from the Remote\\* "
+"node. To assign the ``target`` :ref:`NodePath <class_NodePath>`, use one of "
+"the following:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:323
+msgid ""
+"A reliable third party, likely a parent node, to mediate the assignment."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:324
+msgid ""
+"A group, to easily pull a reference to the desired node (assuming there will "
+"only ever be one of the targets)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:327
+msgid ""
+"When should one do this? Well, it's up to them to decide. The dilemma arises "
+"when one must micro-manage when a node must move around the SceneTree to "
+"preserve itself. For example..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:331
+msgid "Add a \"player\" node to a \"room\"."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:332
+msgid "Need to change rooms, so one must delete the current room."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:333
+msgid ""
+"Before the room can be deleted, one must preserve and/or move the player."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:335
+msgid "Is memory a concern?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:337
+msgid ""
+"If not, one can just create the two rooms, move the player and delete the "
+"old one. No problem."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:340
+msgid "If so, one will need to..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:342
+msgid "Move the player somewhere else in the tree."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:343
+msgid "Delete the room."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:344
+msgid "Instantiate and add the new room."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:345
+msgid "Re-add the player."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:347
+msgid ""
+"The issue is that the player here is a \"special case\", one where the "
+"developers must *know* that they need to handle the player this way for the "
+"project. As such, the only way to reliably share this information as a team "
+"is to *document* it. Keeping implementation details in documentation however "
+"is dangerous. It's a maintenance burden, strains code readability, and "
+"bloats the intellectual content of a project unnecessarily."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:354
+msgid ""
+"In a more complex game with larger assets, it can be a better idea to simply "
+"keep the player somewhere else in the SceneTree entirely. This involves..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:357
+msgid "More consistency."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:358
+msgid "No \"special cases\" that must be documented and maintained somewhere."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:359
+msgid ""
+"No opportunity for errors to occur because these details are not accounted "
+"for."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
+msgid ""
+"In contrast, if one ever needs to have a child node that does *not* inherit "
+"the transform of their parent, one has the following options:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:365
+msgid ""
+"The **declarative** solution: place a :ref:`Node <class_Node>` in between "
+"them. As nodes with no transform, Nodes will not pass along such information "
+"to their children."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:368
+msgid ""
+"The **imperative** solution: Use the ``set_as_toplevel`` setter for the :ref:"
+"`CanvasItem <class_CanvasItem_method_set_as_toplevel>` or :ref:`Spatial "
+"<class_Spatial_method_set_as_toplevel>` node. This will make the node ignore "
+"its inherited transform."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:375
+msgid ""
+"If building a networked game, keep in mind which nodes and gameplay systems "
+"are relevant to all players versus those just pertinent to the authoritative "
+"server. For example, users do not all need to have a copy of every players' "
+"\"PlayerController\" logic. Instead, they need only their own. As such, "
+"keeping these in a separate branch from the \"world\" can help simplify the "
+"management of game connections and the like."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:382
+msgid ""
+"The key to scene organization is to consider the SceneTree in relational "
+"terms rather than spatial terms. Do the nodes need to be dependent on their "
+"parent's existence? If not, then they can thrive all by themselves somewhere "
+"else. If so, then it stands to reason they should be children of that parent "
+"(and likely part of that parent's scene if they aren't already)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:388
+msgid ""
+"Does this mean nodes themselves are components? Not at all. Godot's node "
+"trees form an aggregation relationship, not one of composition. But while "
+"one still has the flexibility to move nodes around, it is still best when "
+"such moves are unnecessary by default."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:4
+msgid "When to use scenes versus scripts"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:6
+msgid ""
+"We've already covered how scenes and scripts are different. Scripts define "
+"an engine class extension with imperative code, scenes with declarative code."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:10
+msgid ""
+"Each system's capabilities are different as a result. Scenes can define how "
+"an extended class initializes, but not what its behavior actually is. Scenes "
+"are often used in conjunction with a script so that the scene acts as an "
+"extension of the scripts declarative code."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
+msgid "Anonymous types"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:18
+msgid ""
+"It *is* possible to completely define a scenes' contents using a script "
+"alone. This is, in essence, what the Godot Editor does, only in the C++ "
+"constructor of its objects."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
+msgid ""
+"But, choosing which one to use can be a dilemma. Creating script instances "
+"is identical to creating in-engine classes whereas handling scenes requires "
+"a change in API:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:59
+msgid ""
+"Also, scripts will operate a little slower than scenes due to the speed "
+"differences between engine and script code. The larger and more complex the "
+"node, the more reason there is to build it as a scene."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
+msgid "Named types"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:66
+msgid ""
+"In some cases, a user can register a script as a new type within the editor "
+"itself. This displays it as a new type in the node or resource creation "
+"dialog with an optional icon. In these cases, the user's ability to use the "
+"script is much more streamlined. Rather than having to..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:71
+msgid "Know the base type of the script they would like to use."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
+msgid "Create an instance of that base type."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:75
+msgid "Add the script to the node."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
+msgid "(Drag-n-drop method)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
+msgid "Find the script in the FileSystem dock."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:81
+msgid "Drag and drop the script onto the node in the Scene dock."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
+msgid "(Property method)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:85
+msgid ""
+"Scroll down to the bottom of the Inspector to find the ``script`` property "
+"and select it."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:87
+msgid "Select \"Load\" from the dropdown."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:89
+msgid "Select the script from the file dialog."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:91
+msgid ""
+"With a registered script, the scripted type instead becomes a creation "
+"option like the other nodes and resources in the system. One need not do any "
+"of the above work. The creation dialog even has a search bar to look up the "
+"type by name."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:96
+msgid "There are two systems for registering types..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:98
+msgid "`Custom Types <doc_making_plugins>`"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:100
+msgid "Editor-only. Typenames are not accessible at runtime."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:102
+msgid "Does not support inherited custom types."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:104
+msgid "An initializer tool. Creates the node with the script. Nothing more."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:106
+msgid ""
+"Editor has no type-awareness of the script or its relationship to other "
+"engine types or scripts."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:109
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:127
+msgid "Allows users to define an icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:111
+msgid ""
+"Works for all scripting languages because it deals with Script resources in "
+"abstract."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:113
+msgid ""
+"Set up using :ref:`EditorPlugin.add_custom_type "
+"<class_EditorPlugin_method_add_custom_type>`."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:115
+msgid ""
+"`Script Classes <https://godot.readthedocs.io/en/latest/getting_started/"
+"step_by_step/scripting_continued.html#register-scripts-as-classes>`_"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
+msgid "Editor and runtime accessible."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:119
+msgid "Displays inheritance relationships in full."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:121
+msgid ""
+"Creates the node with the script, but can also change types or extend the "
+"type from the editor."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:124
+msgid ""
+"Editor is aware of inheritance relationships between scripts, script "
+"classes, and engine C++ classes."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:129
+msgid ""
+"Engine developers must add support for languages manually (both name "
+"exposure and runtime accessibility)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
+msgid "Godot 3.1+ only."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
+msgid ""
+"The Editor scans project folders and registers any exposed names for all "
+"scripting languages. Each scripting language must implement its own support "
+"for exposing this information."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:138
+msgid ""
+"Both methodologies add names to the creation dialog, but script classes, in "
+"particular, also allow for users to access the typename without loading the "
+"script resource. Creating instances and accessing constants or static "
+"methods is viable from anywhere."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:143
+msgid ""
+"With features like these, one may wish their type to be a script without a "
+"scene due to the ease of use it grants users. Those developing plugins or "
+"creating in-house tools for designers to use will find an easier time of "
+"things this way."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:148
+msgid ""
+"On the downside, it also means having to use largely imperative programming."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
+msgid "In the end, the best approach is to consider the following:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
+msgid ""
+"If one wishes to create a basic tool that is going to be re-used in several "
+"different projects and which people of all skill levels will likely use "
+"(including those who don't label themselves as \"programmers\"), then "
+"chances are that it should probably be a script, likely one with a custom "
+"name/icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:160
+msgid ""
+"If one wishes to create a concept that is particular to their game, then it "
+"should always be a scene. Scenes are easier to track/edit and provide more "
+"security than scripts."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:164
+msgid ""
+"If one would like to give a name to a scene, then they can still sort of do "
+"this in 3.1 by declaring a script class and giving it a scene as a constant. "
+"The script becomes, in effect, a namespace:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:4
+msgid "Autoloads versus internal nodes"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:6
+msgid ""
+"Other engines might encourage the use of creating \"manager\" classes that "
+"organize lots of functionality into a globally accessible entity. Godot "
+"thrives by supporting ways to cut down the size of such objects. Instead it "
+"shifts content into individual nodes as much as possible."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:11
+msgid ""
+"For example, what if a developer is building a platformer and they want to "
+"collect coins that play a sound effect? Well, there's a node for that: the :"
+"ref:`AudioStreamPlayer <class_AudioStreamPlayer>`. But they notice during "
+"their testing that if they \"play\" an AudioStreamPlayer while it is already "
+"playing the sound, then the new sound interrupts the first sound, "
+"terminating it before it can play."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:18
+msgid ""
+"Users tend to think the best solution is to make the whole system smarter by "
+"making a SoundManager autoload node. It generates a pool of "
+"AudioStreamPlayers that cycle through as each new request for sound effects "
+"comes in. They then make this SoundManager an autoload so that they can "
+"access it from anywhere with `SFX.play(\"coin_pickup.ogg\")`. Little do they "
+"know, they've invited a great many complications into their code."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:25
+msgid ""
+"**global state**: One object is now responsible for all objects' data. If "
+"SFX has errors or doesn't have an AudioStreamPlayer available, everything "
+"will break."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:29
+msgid ""
+"**global access**: Now that any object can call `SFX.play(sound_path)` from "
+"anywhere, there's no longer an easy way to track where an SFX bug began."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:33
+msgid ""
+"**global resource allocation**: If all objects' data and processing is "
+"centralized from the start, then one must either..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:36
+msgid "risk under-allocating resources which might lead to faulty behavior."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:38
+msgid ""
+"Ex: Have too few AudioStreamPlayers in the object pool. Sound doesn't play "
+"or it interrupts another sound."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:41
+msgid "over-allocate resources and use more memory/processing than it needs."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:43
+msgid ""
+"Ex: Have an arbitrarily large number of AudioStreamPlayers, with many of "
+"them idling away and not doing anything."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:46
+msgid ""
+"have each object that needs an AudioStreamPlayer register exactly how many "
+"it needs and for which sounds. This defeats the purpose of using a 3rd party "
+"though; it is now coupled to each object, just as a child node would have "
+"been. One has added an unnecessary middleman to the equation."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:52
+msgid ""
+"Contrast this with each scene keeping as many AudioStreamPlayer nodes as it "
+"needs within itself and all these problems go away."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:55
+msgid ""
+"Each scene manages its own state information. If there is a problem with the "
+"data, it will only cause issues in that one scene."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:58
+msgid ""
+"Each scene accesses only its own nodes. Now, if there is a bug, tracing "
+"which node is responsible (probably the root node of the scene), and where "
+"in the code it's making the problematic call (locate where the code "
+"references the given node) is going to be much easier."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:63
+msgid ""
+"Each scene knows exactly how many resources it needs for the task it "
+"performs. No waste of memory or processing due to a lack of information."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:66
+msgid ""
+"The typical justifications for the Autoload include, \"I have common Xs that "
+"involve many nodes across many scenes, and I want each scene to have X.\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:69
+msgid ""
+"If X is a function, then the solution is to create a new type of :ref:`Node "
+"<class_Node>` that deals with providing that feature for an individual scene "
+"or node subtree."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:73
+msgid ""
+"If X is data, then the solution is either 1) to create a new type of :ref:"
+"`Resource <class_Resource>` to share the data, or 2) to store the data in an "
+"object to which each node has access (nodes within a scene can use "
+"`get_owner()` to fetch the scene root for example)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:78
+msgid "So when *should* one use an autoload?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:80
+msgid ""
+"**Static Data**: if you need static data, i.e. data that should be "
+"associated with a class (so there is only ever one copy of the data), then "
+"autoloads are good opportunities for that. Static data doesn't exist in "
+"Godot's scripting API, so autoload singletons are the next best thing. If "
+"one creates a class as an autoload, and never creates another copy of that "
+"class within a scene, then it will function in place of a formal singleton "
+"API."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:88
+msgid ""
+"**Convenience**: autoloaded nodes have a global variable for their name "
+"generated in GDScript. This can be very convenient for defining objects that "
+"should always exist, but which need object instance information. The "
+"alternative is to create a namespace script: a script that's purpose is only "
+"to load and create constants to access other Script or PackedScene "
+"resources, resulting in something like ``MyAutoload.MyNode.new()``."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:95
+msgid ""
+"Note that the introduction of script classes in Godot 3.1 questions the "
+"validity of this reason. With them, one can access scripts using an explicit "
+"name from GDScript. Using an autoload to get to a namespace script becomes "
+"unnecessary, e.g. ``MyScriptClass.MyPreloadedScript.new()``."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:100
+msgid ""
+"If the singleton is managing its own information and not invading the data "
+"of other objects, then it's a great way to create a \"system\" class that "
+"handles a broad-scoped task. For example a targeting system, quest system, "
+"or dialogue system would be great use cases of singleton implementations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:4
+msgid "When and how to avoid using nodes for everything"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:7
+msgid ""
+"Nodes are cheap to produce, but even they have their limits. A project may "
+"have tens of thousands of nodes all doing things. The more complex their "
+"behavior though, the larger the strain each one adds to a project's "
+"performance."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:12
+msgid ""
+"Godot provides more lightweight objects for creating APIs which nodes use. "
+"Be sure to keep these in mind as options when designing how you wish to "
+"build your project's features."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:16
+msgid ""
+":ref:`Object <class_Object>`: The ultimate lightweight object, the original "
+"Object must use manual memory management. With that said, it isn't too "
+"difficult to create one's own custom data structures, even node structures, "
+"that are also lighter than the :ref:`Node <class_Node>` class."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:21
+msgid ""
+"**Example:** See the :ref:`Tree <class_Tree>` node. It supports a high level "
+"of customization for a table of content with an arbitrary number of rows and "
+"columns. The data that it uses to generate its visualization though is "
+"actually a tree of :ref:`TreeItem <class_TreeItem>` Objects."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:26
+msgid ""
+"**Advantages:** Simplifying one's API to smaller scoped objects helps "
+"improve its accessibility improve iteration time. Rather than working with "
+"the entire Node library, one creates an abbreviated set of Objects from "
+"which a node can generate and manage the appropriate sub-nodes."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:31
+msgid ""
+"One should be careful when handling them. One can store an Object into a "
+"variable, but these references can become invalid without warning. For "
+"example, if the object's creator decides to delete it out of nowhere, this "
+"would trigger an error state when one next accesses it."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:36
+msgid ""
+":ref:`Reference <class_Reference>`: Only a little more complex than Object. "
+"They track references to themselves, only deleting loaded memory when no "
+"further references to themselves exist. These are useful in the majority of "
+"cases where one needs data in a custom class."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:41
+msgid ""
+"**Example:** See the :ref:`File <class_File>` object. It functions just like "
+"a regular Object except that one need not delete it themselves."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:44
+msgid "**Advantages:** same as the Object."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:46
+msgid ""
+":ref:`Resource <class_Resource>`: Only slightly more complex than Reference. "
+"They have the innate ability to serialize/deserialize (i.e. save and load) "
+"their object properties to/from Godot resource files."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:50
+msgid ""
+"**Example:** Scripts, PackedScene (for scene files), and other types like "
+"each of the :ref:`AudioEffect <class_AudioEffect>` classes. Each of these "
+"can be save and loaded, therefore they extend from Resource."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:54
+msgid ""
+"**Advantages:** Much has :ref:`already been said <doc_resources>` on :ref:"
+"`Resource <class_Resource>`'s advantages over traditional data storage "
+"methods. In the context of using Resources over Nodes though, their main "
+"advantage is in Inspector-compatibility. While nearly as lightweight as "
+"Object/Reference, they can still display and export properties in the "
+"Inspector. This allows them to fulfill a purpose much like sub-Nodes on the "
+"usability front, but also improve performance if one plans to have many such "
+"Resources/Nodes in their scenes."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:4
+msgid "Godot interfaces"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:6
+msgid ""
+"Often one needs scripts that rely on other objects for features. There are 2 "
+"parts to this process:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:9
+msgid "Acquiring a reference to the object that presumably has the features."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:11
+msgid "Accessing the data or logic from the object."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:13
+msgid "The rest of this tutorial outlines the various ways of doing all this."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:16
+msgid "Acquiring object references"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:18
+msgid ""
+"For all :ref:`Object <class_Object>`\\s, the most basic way of referencing "
+"them is to get a reference to an existing object from another acquired "
+"instance."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:32
+msgid ""
+"The same principle applies for :ref:`Reference <class_Reference>` objects. "
+"While users often access :ref:`Node <class_Node>` and :ref:`Resource "
+"<class_Resource>` this way, alternative measures are available."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:36
+msgid ""
+"Instead of property or method access, one can get Resources by load access."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:114
+msgid "Note the following:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:116
+msgid "There are many ways in which a language can load such resources."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:118
+msgid ""
+"When designing how objects will access data, don't forget that one can pass "
+"resources around as references as well."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:121
+msgid ""
+"Keep in mind that loading a resource fetches the cached resource instance "
+"maintained by the engine. To get a new object, one must :ref:`duplicate "
+"<class_Resource_method_duplicate>` an existing reference or instantiate one "
+"from scratch with ``new()``."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:126
+msgid "Nodes likewise have an alternative access point: the SceneTree."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:240
+msgid "Accessing data or logic from an object"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:242
+msgid ""
+"Godot's scripting API is duck-typed. This means that if a script executes an "
+"operation, Godot doesn't validate that it supports the operation by "
+"**type**. It instead checks that the object **implements** the individual "
+"method."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:246
+msgid ""
+"For example, the :ref:`CanvasItem <class_CanvasItem>` class has a "
+"``visible`` property. All properties exposed to the scripting API are in "
+"fact a setter and getter pair bound to a name. If one tried to access :ref:"
+"`CanvasItem.visible <class_CanvasItem_property_visible>`, then Godot would "
+"do the following checks, in order:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:252
+msgid ""
+"If the object has a script attached, it will attempt to set the property "
+"through the script. This leaves open the opportunity for scripts to override "
+"a property defined on a base object by overriding the setter method for the "
+"property."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:257
+msgid ""
+"If the script does not have the property, it performs a HashMap lookup in "
+"the ClassDB for the \"visible\" property against the CanvasItem class and "
+"all of its inherited types. If found, it will call the bound setter or "
+"getter. For more information about HashMaps, see the :ref:`data preferences "
+"<doc_data_preferences>` docs."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:263
+msgid ""
+"If not found, it does an explicit check to see if the user wants to access "
+"the \"script\" or \"meta\" properties."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:266
+msgid ""
+"If not, it checks for a ``_set``/``_get`` implementation (depending on type "
+"of access) in the CanvasItem and its inherited types. These methods can "
+"execute logic that gives the impression that the Object has a property. This "
+"is also the case with the ``_get_property_list`` method."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:271
+msgid ""
+"Note that this happens even for non-legal symbol names such as in the case "
+"of :ref:`TileSet <class_TileSet>`'s \"1/tile_name\" property. This refers to "
+"the name of the tile with ID 1, i.e. :ref:`TileSet.tile_get_name(1) "
+"<class_TileSet_method_tile_get_name>`."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:276
+msgid ""
+"As a result, this duck-typed system can locate a property either in the "
+"script, the object's class, or any class that object inherits, but only for "
+"things which extend Object."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:280
+msgid ""
+"Godot provides a variety of options for performing runtime checks on these "
+"accesses:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:283
+msgid ""
+"A duck-typed property access. These will property check (as described "
+"above). If the operation isn't supported by the object, execution will halt."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:311
+msgid ""
+"A method check. In the case of :ref:`CanvasItem.visible "
+"<class_CanvasItem_property_visible>`, one can access the methods, "
+"``set_visible`` and ``is_visible`` like any other method."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:443
+msgid ""
+"Outsource the access to a :ref:`FuncRef <class_FuncRef>`. These may be "
+"useful in cases where one needs the max level of freedom from dependencies. "
+"In this case, one relies on an external context to setup the method."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:502
+msgid ""
+"These strategies contribute to Godot's flexible design. Between them, users "
+"have a breadth of tools to meet their specific needs."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:4
+msgid "Godot notifications"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:6
+msgid ""
+"Every Object in Godot implements a :ref:`_notification "
+"<class_Object_method__notification>` method. Its purpose is to allow the "
+"Object to respond to a variety of engine-level callbacks that may relate to "
+"it. For example, if the engine tells a :ref:`CanvasItem <class_CanvasItem>` "
+"to \"draw\", it will call ``_notification(NOTIFICATION_DRAW)``."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:13
+msgid ""
+"Some of these notifications, like draw, are useful to override in scripts. "
+"So much so that Godot exposes many of them with dedicated functions:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:16
+msgid "``_ready()`` : NOTIFICATION_READY"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:18
+msgid "``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:20
+msgid "``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:22
+msgid "``_process(delta)`` : NOTIFICATION_PROCESS"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:24
+msgid "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:26
+msgid "``_input()`` : NOTIFICATION_INPUT"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:28
+msgid "``_unhandled_input()`` : NOTIFICATION_UNHANDLED_INPUT"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:30
+msgid "``_draw()`` : NOTIFICATION_DRAW"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:32
+msgid ""
+"What users might *not* realize is that notifications exist for types other "
+"than Node alone:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:35
+msgid ""
+":ref:`Object::NOTIFICATION_POSTINITIALIZE "
+"<class_Object_constant_NOTIFICATION_POSTINITIALIZE>`: a callback that "
+"triggers during object initialization. Not accessible to scripts."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:38
+msgid ""
+":ref:`Object::NOTIFICATION_PREDELETE "
+"<class_Object_constant_NOTIFICATION_PREDELETE>`: a callback that triggers "
+"before the engine deletes an Object, i.e. a 'destructor'."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:42
+msgid ""
+":ref:`MainLoop::NOTIFICATION_WM_MOUSE_ENTER "
+"<class_MainLoop_constant_NOTIFICATION_WM_MOUSE_ENTER>`: a callback that "
+"triggers when the mouse enters the window in the operating system that "
+"displays the game content."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:46
+msgid ""
+"And many of the callbacks that *do* exist in Nodes don't have any dedicated "
+"methods, but are still quite useful."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:49
+msgid ""
+":ref:`Node::NOTIFICATION_PARENTED "
+"<class_Node_constant_NOTIFICATION_PARENTED>`: a callback that triggers "
+"anytime one adds a child node to another node."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:52
+msgid ""
+":ref:`Node::NOTIFICATION_UNPARENTED "
+"<class_Node_constant_NOTIFICATION_UNPARENTED>`: a callback that triggers "
+"anytime one removes a child node from another node."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:56
+msgid ""
+":ref:`Popup::NOTIFICATION_POST_POPUP "
+"<class_Popup_constant_NOTIFICATION_POST_POPUP>`: a callback that triggers "
+"after a Popup node completes any ``popup*`` method. Note the difference from "
+"its ``about_to_show`` signal which triggers *before* its appearance."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:61
+msgid ""
+"One can access all these custom notifications from the universal "
+"``_notification`` method."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:65
+msgid ""
+"Methods in the documentation labeled as \"virtual\" are also intended to be "
+"overridden by scripts."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:68
+msgid ""
+"A classic example is the :ref:`_init <class_Object_method__init>` method in "
+"Object. While it has no NOTIFICATION_* equivalent, the engine still calls "
+"the method. Most languages (except C#) rely on it as a constructor."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:73
+msgid ""
+"So, in which situation should one use each of these notifications or virtual "
+"functions?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:77
+msgid "_process vs. _physics_process vs. \\*_input"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:79
+msgid ""
+"Use ``_process`` when one needs a framerate-dependent deltatime between "
+"frames. If code that updates object data needs to update as often as "
+"possible, this is the right place. Recurring logic checks and data caching "
+"often execute here, but it comes down to the frequency at which one needs "
+"the evaluations to update. If they don't need to execute every frame, then "
+"implementing a Timer-yield-timeout loop is another option."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:97
+msgid ""
+"Use ``_physics_process`` when one needs a framerate-independent deltatime "
+"between frames. If code needs consistent updates over time, regardless of "
+"how fast or slow time advances, this is the right place. Recurring kinematic "
+"and object transform operations should execute here."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:102
+msgid ""
+"While it is possible, to achieve the best performance, one should avoid "
+"making input checks during these callbacks. ``_process`` and "
+"``_physics_process`` will trigger at every opportunity (they do not \"rest\" "
+"by default). In contrast, ``*_input`` callbacks will trigger only on frames "
+"in which the engine has actually detected the input."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:108
+msgid ""
+"One can check for input actions within the input callbacks just the same. If "
+"one wants to use delta time, one can fetch it from the :ref:`Performance "
+"<class_Performance>` singleton as needed."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:152
+msgid "_init vs. initialization vs. export"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:154
+msgid ""
+"If the script initializes its own node subtree, without a scene, that code "
+"should execute here. Other property or SceneTree-independent initializations "
+"should also run here. This triggers before ``_ready`` or ``_enter_tree``, "
+"but after a script creates and initializes its properties."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:159
+msgid ""
+"Scripts have three types of property assignments that can occur during "
+"instantiation:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:203
+msgid ""
+"When instantiating a scene, property values will set up according to the "
+"following sequence:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:206
+msgid ""
+"**Initial value assignment:** instantiation will assign either the "
+"initialization value or the init assignment value. Init assignments take "
+"priority over initialization values."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:210
+msgid ""
+"**Exported value assignment:** If instancing from a scene rather than a "
+"script, Godot will assign the exported value to replace the initial value "
+"defined in the script."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:214
+msgid ""
+"As a result, instantiating a script versus a scene will affect both the "
+"initialization *and* the number of times the engine calls the setter."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:218
+msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:220
+msgid ""
+"When instantiating a scene connected to the first executed scene, Godot will "
+"instantiate nodes down the tree (making ``_init`` calls) and build the tree "
+"going downwards from the root. This causes ``_enter_tree`` calls to cascade "
+"down the tree. Once the tree is complete, leaf nodes call ``_ready``. A node "
+"will call this method once all child nodes have finished calling theirs. "
+"This then causes a reverse cascade going up back to the tree's root."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:227
+msgid ""
+"When instantiating a script or a standalone scene, nodes are not added to "
+"the SceneTree upon creation, so no ``_enter_tree`` callbacks trigger. "
+"Instead, only the ``_init`` and later ``_ready`` calls occur."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:231
+msgid ""
+"If one needs to trigger behavior that occurs as nodes parent to another, "
+"regardless of whether it occurs as part of the main/active scene or not, one "
+"can use the :ref:`PARENTED <class_Node_constant_NOTIFICATION_PARENTED>` "
+"notification. For example, here is a snippet that connects a node's method "
+"to a custom signal on the parent node without failing. Useful on data-"
+"centric nodes that one might create at runtime."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:4
+msgid "Data preferences"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:6
+msgid ""
+"Ever wondered whether one should approach problem X with data structure Y or "
+"Z? This article covers a variety of topics related to these dilemmas."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:11
+msgid ""
+"This article makes references to \"[something]-time\" operations. This "
+"terminology comes from algorithm analysis' `Big O Notation <https://rob-bell."
+"net/2009/06/a-beginners-guide-to-big-o-notation/>`_."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:15
+msgid ""
+"Long-story short, it describes the worst-case scenario of runtime length. In "
+"laymen's terms:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:18
+msgid ""
+"\"As the size of a problem domain increases, the runtime length of the "
+"algorithm...\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:21
+msgid "Constant-time, ``O(1)``: \"...does not increase.\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:22
+msgid "Logarithmic-time, ``O(log n)``: \"...increases at a slow rate.\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:23
+msgid "Linear-time, ``O(n)``: \"...increases at the same rate.\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:24
+msgid "Etc."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:26
+msgid ""
+"Imagine if one had to process 3 million data points within a single frame. "
+"It would be impossible to craft the feature with a linear-time algorithm "
+"since the sheer size of the data would increase the runtime far beyond the "
+"time alotted. In comparison, using a constant-time algorithm could handle "
+"the operation without issue."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:32
+msgid ""
+"By and large, developers want to avoid engaging in linear-time operations as "
+"much as possible. But, if one keeps the scale of a linear-time operation "
+"small, and if one does not need to perform the operation often, then it may "
+"be acceptable. Balancing these requirements and choosing the right "
+"algorithm / data structure for the job is part of what makes programmers' "
+"skills valuable."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:40
+msgid "Array vs. Dictionary vs. Object"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:42
+msgid ""
+"Godot stores all variables in the scripting API in the `Variant <https://"
+"docs.godotengine.org/en/latest/development/cpp/variant_class.html>`_ class. "
+"Variants can store Variant-compatible data structures such as :ref:`Array "
+"<class_Array>` and :ref:`Dictionary <class_Dictionary>` as well as :ref:"
+"`Object <class_Object>` s."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:48
+msgid ""
+"Godot implements Array as a ``Vector<Variant>``. The engine stores the Array "
+"contents in a contiguous section of memory, i.e. they are in a row adjacent "
+"to each other."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:53
+msgid ""
+"For those unfamiliar with C++, a Vector is the name of the array object in "
+"traditional C++ libraries. It is a \"templated\" type, meaning that its "
+"records can only contain a particular type (denoted by angled brackets). So, "
+"for example, a :ref:`PoolStringArray <class_PoolStringArray>` would be "
+"something like a ``Vector<String>``."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:60
+msgid "Contiguous memory stores imply the following operation performance:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:62
+msgid "**Iterate:** Fastest. Great for loops."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:64
+msgid "Op: All it does is increment a counter to get to the next record."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:66
+msgid "**Insert, Erase, Move:** Position-dependent. Generally slow."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:68
+msgid ""
+"Op: Adding/removing/moving content involves moving the adjacent records over "
+"(to make room / fill space)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:71
+msgid "Fast add/remove *from the end*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:73
+msgid "Slow add/remove *from an arbitrary position*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:75
+msgid "Slowest add/remove *from the front*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:77
+msgid "If doing many inserts/removals *from the front*, then..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:79
+msgid "invert the array."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:81
+msgid "do a loop which executes the Array changes *at the end*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:83
+msgid "re-invert the array."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:85
+msgid ""
+"This makes only 2 copies of the array (still constant time, but slow) versus "
+"copying roughly 1/2 of the array, on average, N times (linear time)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:88
+msgid ""
+"**Get, Set:** Fastest *by position*. Ex. can request 0th, 2nd, 10th record, "
+"etc. but cannot specify which record you want."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:91
+msgid "Op: 1 addition operation from array start position up to desired index."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:93
+msgid "**Find:** Slowest. Identifies the index/position of a value."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:95
+msgid ""
+"Op: Must iterate through array and compare values until one finds a match."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:97
+msgid ""
+"Performance is also dependent on whether one needs an exhaustive search."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:100
+msgid ""
+"If kept ordered, custom search operations can bring it to logarithmic time "
+"(relatively fast). Laymen users won't be comfortable with this though. Done "
+"by re-sorting the Array after every edit and writing an ordered-aware search "
+"algorithm."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
+msgid ""
+"Godot implements Dictionary as an ``OrderedHashMap<Variant, Variant>``. The "
+"engine stores a giant array (initialized to 1000 records) of key-value "
+"pairs. When one attempts to access a value, they provide it a key. It then "
+"*hashes* the key, i.e. converts it into a number. The \"hash\" becomes the "
+"index into the array, giving the OHM a quick lookup for the value within the "
+"conceptual \"table\" of keys mapped to values."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:112
+msgid ""
+"Hashes are to reduce the chance of a key collision. If one occurs, the table "
+"must recalculate another index for the value that takes the previous "
+"position into account. In all, this results in constant-time access to all "
+"records at the expense of memory and some minor operational efficiency."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:117
+msgid "Hashing every key an arbitrary number of times."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:119
+msgid ""
+"Hash operations are constant-time, so even if an algorithm must do more than "
+"one, as long as the number of hash calculations doesn't become too dependent "
+"on the density of the table, things will stay fast. Which leads to..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:124
+msgid "Maintaining a huge size for the table."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:126
+msgid ""
+"The reason it starts with 1000 records, and the reason it forces large gaps "
+"of unused memory interspersed in the table is to minimize hash collisions "
+"and maintain the speed of the accesses."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:130
+msgid ""
+"As one might be able to tell, Dictionaries specialize in tasks that Arrays "
+"aren't. An overview of their operational details is as follows:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:133
+msgid "**Iterate:** Fast."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
+msgid ""
+"Op: Iterate over the map's internal vector of hashes. Return each key. "
+"Afterwards, users then use the key to jump to and return the desired value."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:139
+msgid "**Insert, Erase, Move:** Fastest."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
+msgid ""
+"Op: Hash the given key. Do 1 addition operation to look up the appropriate "
+"value (array start + offset). Move is two of these (one insert, one erase). "
+"The map must do some maintenance to preserve its capabilities:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:146
+msgid "update ordered List of records."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
+msgid "determine if table density mandates a need to expand table capacity."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
+msgid ""
+"The Dictionary remembers in what order users inserted its keys. This enables "
+"it to execute reliable iterations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:153
+msgid "**Get, Set:** Fastest. Same as a lookup *by key*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
+msgid "Op: Same as insert/erase/move."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
+msgid "**Find:** Slowest. Identifies the key of a value."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
+msgid ""
+"Op: Must iterate through records and compare the value until a match is "
+"found."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:162
+msgid ""
+"Note that Godot does not provide this feature out-of-the-box (because they "
+"aren't meant for this task)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:165
+msgid ""
+"Godot implements Objects as stupid, but dynamic containers of data content. "
+"Objects query data sources when posed questions. For example, to answer the "
+"question, \"do you have a property called, 'position'?\", it might ask its :"
+"ref:`script <class_Script>` or the :ref:`ClassDB <class_ClassDB>`. One can "
+"find more information about what objects are and how they work in the :ref:"
+"`doc_what_are_godot_classes` article."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:172
+msgid ""
+"The important detail here is the complexity of the Object's task. Every time "
+"it performs one of these multi-source queries, it runs through *several* "
+"iteration loops and HashMap lookups. What's more, the queries are linear-"
+"time operations dependent on the Object's inheritance hierarchy size. If the "
+"class the Object queries (it's current class) doesn't find anything, the "
+"request defers to the next base class, all the way up until the original "
+"Object class. While these are each fast operations in isolation, the fact "
+"that it must make so many checks is what makes them slower than both of the "
+"alternatives for looking up data."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:184
+msgid ""
+"When developers mention how slow the scripting API is, it is this chain of "
+"queries they refer to. Compared to compiled C++ code where the application "
+"knows exactly where to go to find anything, it is inevitable that scripting "
+"API operations will take much longer. They must locate the source of any "
+"relevant data before they can attempt to access it."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:190
+msgid ""
+"The reason GDScript is slow is because every operation it performs passes "
+"through this system."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:193
+msgid ""
+"C# can process some content at higher speeds via more optimized bytecode. "
+"But, if the C# script calls into an engine class' content or if the script "
+"tries to access something external to it, it will go through this pipeline."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:198
+msgid ""
+"NativeScript C++ goes even further and keeps everything internal by default. "
+"Calls into external structures will go through the scripting API. In "
+"NativeScript C++, registering methods to expose them to the scripting API is "
+"a manual task. It is at this point that external, non-C++ classes will use "
+"the API to locate them."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:204
+msgid ""
+"So, assuming one extends from Reference to create a data structure, like an "
+"Array or Dictionary, why choose an Object over the other two options?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:207
+msgid ""
+"**Control:** With objects comes the ability to create more sophisticated "
+"structures. One can layer abstractions over the data to ensure the external "
+"API doesn't change in response to internal data structure changes. What's "
+"more, Objects can have signals, allowing for reactive behavior."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:212
+msgid ""
+"**Clarity:** Objects are a reliable data source when it comes to the data "
+"that scripts and engine classes define for them. Properties may not hold the "
+"values one expects, but one doesn't need to worry about whether the property "
+"exists in the first place."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:217
+msgid ""
+"**Convenience:** If one already has a similar data structure in mind, then "
+"extending from an existing class makes the task of building the data "
+"structure much easier. In comparison, Arrays and Dictionaries don't fulfill "
+"all use cases one might have."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:222
+msgid ""
+"Objects also give users the opportunity to create even more specialized data "
+"structures. With it, one can design their own List, Binary Search Tree, "
+"Heap, Splay Tree, Graph, Disjoint Set, and any host of other options."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:226
+msgid ""
+"\"Why not use Node for tree structures?\" one might ask. Well, the Node "
+"class contains things that won't be relevant to one's custom data structure. "
+"As such, it can be helpful to construct one's own node type when building "
+"tree structures."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:267
+msgid ""
+"From here, one can then create their own structures with specific features, "
+"limited only by their imagination."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:271
+msgid "Enumerations: int vs. string"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:273
+msgid ""
+"Most languages offer an enumeration type option. GDScript is no different, "
+"but unlike most other languages, it allows one to use either integers or "
+"strings for the enum values. The question then arises, \"which should one "
+"use?\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:278
+msgid ""
+"The short answer is, \"whichever you are more comfortable with.\" This is a "
+"feature specific to GDScript and not Godot scripting in general; The "
+"languages prioritizes usability over performance."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:282
+msgid ""
+"On a technical level, integer comparisons (constant-time) will happen faster "
+"than string comparisons (linear-time). If one wants to keep up other "
+"languages' conventions though, then one should use integers."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:286
+msgid ""
+"The primary issue with using integers comes up when one wants to *print* an "
+"enum value. As integers, attempting to print MY_ENUM will print ``5`` or "
+"what-have-you, rather than something like ``\"MyEnum\"``. To print an "
+"integer enum, one would have to write a Dictionary that maps the "
+"corresponding string value for each enum."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:292
+msgid ""
+"If the primary purpose of using an enum is for printing values and one "
+"wishes to group them together as related concepts, then it makes sense to "
+"use them as strings. That way, a separate data structure to execute on the "
+"printing is unnecessary."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:298
+msgid ""
+"AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:300
+msgid ""
+"Under what circumstances should one use each of Godot's animation classes? "
+"The answer may not be immediately clear to new Godot users."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
+msgid ""
+":ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that the engine "
+"draws as an animated loop rather than a static image. Users can manipulate..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:307
+msgid "the rate at which it moves across each section of the texture (fps)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:309
+msgid "the number of regions contained within the texture (frames)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:311
+msgid ""
+"Godot's :ref:`VisualServer <class_VisualServer>` then draws the regions in "
+"sequence at the prescribed rate. The good news is that this involves no "
+"extra logic on the part of the engine. The bad news is that users have very "
+"little control."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:316
+msgid ""
+"Also note that AnimatedTexture is a :ref:`Resource <class_Resource>` unlike "
+"the other :ref:`Node <class_Node>` objects discussed here. One might create "
+"a :ref:`Sprite <class_Sprite>` node that uses AnimatedTexture as its "
+"texture. Or (something the others can't do) one could add AnimatedTextures "
+"as tiles in a :ref:`TileSet <class_TileSet>` and integrate it with a :ref:"
+"`TileMap <class_TileMap>` for many auto-animating backgrounds that all "
+"render in a single batched draw call."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:324
+msgid ""
+"The AnimatedSprite node, in combination with the :ref:`SpriteFrames "
+"<class_SpriteFrames>` resource, allows one to create a variety of animation "
+"sequences through spritesheets, flip between animations, and control their "
+"speed, regional offset, and orientation. This makes them well-suited to "
+"controlling 2D frame-based animations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:330
+msgid ""
+"If one needs trigger other effects in relation to animation changes (for "
+"example, create particle effects, call functions, or manipulate other "
+"peripheral elements besides the frame-based animation), then will need to "
+"use an :ref:`AnimationPlayer <class_AnimationPlayer>` node in conjunction "
+"with the AnimatedSprite."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:336
+msgid ""
+"AnimationPlayers are also the tool one will need to use if they wish to "
+"design more complex 2D animation systems, such as..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
+msgid "**Cut-Out animations:** editing sprites' transforms at runtime."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:341
+msgid ""
+"**2D Mesh animations:** defining a region for the sprite's texture and "
+"rigging a skeleton to it. Then one animates the bones which stretch and bend "
+"the texture in proportion to the bones' relationships to each other."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:346
+msgid "A mix of the above."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:348
+msgid ""
+"While one needs an AnimationPlayer to design each of the individual "
+"animation sequences for a game, it can also be useful to combine animations "
+"for blending, i.e. enabling smooth transitions between these animations. "
+"There may also be a hierarchical structure between animations that one plans "
+"out for their object. These are the cases where the :ref:`AnimationTree "
+"<class_AnimationTree>` shines. One can find an in-depth guide on using the "
+"AnimationTree :ref:`here <doc_animation_tree>`."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:4
+msgid "Logic preferences"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:6
+msgid ""
+"Ever wondered whether one should approach problem X with strategy Y or Z? "
+"This article covers a variety of topics related to these dilemmas."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:10
+msgid "Loading vs. preloading"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:12
+msgid ""
+"In GDScript, there exists the global :ref:`preload "
+"<class_@GDScript_method_preload>` method. It loads resources as early as "
+"possible to front-load the \"loading\" operations and avoid loading "
+"resources while in the middle of performance-sensitive code."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:17
+msgid ""
+"Its counterpart, the :ref:`load <class_@GDScript_method_load>` method, loads "
+"a resource only when it reaches the load statement. That is, it will load a "
+"resource in-place which can cause slowdowns then it occurs in the middle of "
+"sensitive processes. The ``load`` function is also an alias for :ref:"
+"`ResourceLoader.load(path) <class_ResourceLoader_method_load>` which is "
+"accessible to *all* scripting languages."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:24
+msgid ""
+"So, when exactly does preloading occur versus loading, and when should one "
+"use either? Let's see an example:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:87
+msgid ""
+"Preloading allows the script to handle all the loading the moment one loads "
+"the script. Preloading is useful, but there are also times when one doesn't "
+"wish for it. To distinguish these situations, there are a few things one can "
+"consider:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:92
+msgid ""
+"If one cannot determine when the script might load, then preloading a "
+"resource, especially a scene or script, could result in further loads one "
+"does not expect. This could lead to unintentional, variable-length load "
+"times on top of the original script's load operations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:97
+msgid ""
+"If something else could replace the value (like a scene's exported "
+"initialization), then preloading the value has no meaning. This point isn't "
+"a significant factor if one intends to always create the script on its own."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:101
+msgid ""
+"If one wishes only to 'import' another class resource (script or scene), "
+"then using a preloaded constant is often the best course of action. However, "
+"in exceptional cases, one my wish not to do this:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:105
+msgid ""
+"If the 'imported' class is liable to change, then it should be a property "
+"instead, initialized either using an ``export`` or a ``load`` (and perhaps "
+"not even initialized until later)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:109
+msgid ""
+"If the script requires a great many dependencies, and one does not wish to "
+"consume so much memory, then one may wish to, load and unload various "
+"dependencies at runtime as circumstances change. If one preloads resources "
+"into constants, then the only way to unload these resources would be to "
+"unload the entire script. If they are instead loaded properties, then one "
+"can set them to ``null`` and remove all references to the resource entirely "
+"(which, as a :ref:`Reference <class_Reference>`-extending type, will cause "
+"the resources to delete themselves from memory)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:120
+msgid "Large levels: static vs. dynamic"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:122
+msgid ""
+"If one is creating a large level, which circumstances are most appropriate? "
+"Should they create the level as one static space? Or should they load the "
+"level in pieces and shift the world's content as needed?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:126
+msgid ""
+"Well, the simple answer is , \"when the performance requires it.\" The "
+"dilemma associated with the two options is one of the age-old programming "
+"choices: does one optimize memory over speed, or vice versa?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:130
+msgid ""
+"The naive answer is to use a static level that loads everything at once. "
+"But, depending on the project, this could consume a large amount of memory. "
+"Wasting users' RAM leads to programs running slow or outright crashing from "
+"everything else the computer tries to do at the same time."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:135
+msgid ""
+"No matter what, one should break larger scenes into smaller ones (to aid in "
+"reusability of assets). Developers can then design a node that manages the "
+"creation/loading and deletion/unloading of resources and nodes in real-time. "
+"Games with large and varied environments or procedurally generated elements "
+"often implement these strategies to avoid wasting memory."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:141
+msgid ""
+"On the flip side, coding a dynamic system is more complex, i.e. uses more "
+"programmed logic, which results in opportunities for errors and bugs. If one "
+"isn't careful, they can develop a system that bloats the technical debt of "
+"the application."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:146
+msgid "As such, the best options would be..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:148
+msgid "To use a static level for smaller games."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:150
+msgid ""
+"If one has the time/resources on a medium/large game, create a library or "
+"plugin that can code the management of nodes and resources. If refined over "
+"time, so as to improve usability and stability, then it could evolve into a "
+"reliable tool across projects."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:155
+msgid ""
+"Code the dynamic logic for a medium/large game because one has the coding "
+"skills, but not the time or resources to refine the code (game's gotta get "
+"done). Could potentially refactor later to outsource the code into a plugin."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:160
+msgid ""
+"For an example of the various ways one can swap scenes around at runtime, "
+"please see the :ref:`\"Change scenes manually\" "
+"<doc_change_scenes_manually>` documentation."
 msgstr ""
 
 #: ../../docs/tutorials/2d/index.rst:2
@@ -38039,6 +40308,14 @@ msgid ""
 "Alternatively, it's possible to ask the viewport for the mouse position:"
 msgstr ""
 
+#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:66
+msgid ""
+"When the mouse mode is set to ``Input.MOUSE_MODE_CAPTURED``, the ``event."
+"position`` value from ``InputEventMouseMotion`` is the center of the screen. "
+"Use ``event.relative`` instead of ``event.position`` to process mouse "
+"movement and position changes."
+msgstr ""
+
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
 msgid "Customizing mouse cursor"
 msgstr ""
@@ -45564,7 +47841,7 @@ msgid "Built-in"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
-msgid "out mat4 **WORLD_MATRIX**"
+msgid "inout mat4 **WORLD_MATRIX**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
@@ -45586,7 +47863,7 @@ msgid "World space to view space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
-msgid "out mat4 **PROJECTION_MATRIX**"
+msgid "inout mat4 **PROJECTION_MATRIX**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
@@ -45609,7 +47886,7 @@ msgid "View space to world space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
-msgid "out mat4 **MODELVIEW_MATRIX**"
+msgid "inout mat4 **MODELVIEW_MATRIX**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
@@ -45617,7 +47894,7 @@ msgid "Model space to view space transform (use if possible)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
-msgid "out mat4 **INV_PROJECTION_MATRIX**"
+msgid "inout mat4 **INV_PROJECTION_MATRIX**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
@@ -45655,7 +47932,7 @@ msgid "Size of viewport (in pixels)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
-msgid "out vec3 **VERTEX**"
+msgid "inout vec3 **VERTEX**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
@@ -45664,7 +47941,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
-msgid "out vec3 **NORMAL**"
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:148
+msgid "inout vec3 **NORMAL**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
@@ -45673,7 +47951,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
-msgid "out vec3 **TANGENT**"
+msgid "inout vec3 **TANGENT**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
@@ -45682,7 +47960,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
-msgid "out vec3 **BINORMAL**"
+msgid "inout vec3 **BINORMAL**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
@@ -45690,7 +47968,8 @@ msgid "Binormal in local coordinates."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
-msgid "out vec2 **UV**"
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
+msgid "inout vec2 **UV**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
@@ -45698,7 +47977,7 @@ msgid "UV main channel."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
-msgid "out vec2 **UV2**"
+msgid "inout vec2 **UV2**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
@@ -45706,7 +47985,10 @@ msgid "UV secondary channel."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
-msgid "out vec4 **COLOR**"
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
+msgid "inout vec4 **COLOR**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
@@ -45714,7 +47996,8 @@ msgid "Color from vertices."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
-msgid "out float **POINT_SIZE**"
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
+msgid "inout float **POINT_SIZE**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
@@ -45758,7 +48041,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:316
-msgid "in float **OUTPUT_IS_SRGB**"
+msgid "in bool **OUTPUT_IS_SRGB**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
@@ -46328,25 +48611,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
-msgid "inout vec2 **UV**"
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
 msgid "UV."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
-msgid "inout vec4 **COLOR**"
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
 msgid "Color from vertex primitive."
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
-msgid "inout float **POINT_SIZE**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
@@ -46370,10 +48639,6 @@ msgid ""
 "will appear inverted. In order to use it in your shader, you must assign it "
 "to the ``NORMALMAP`` property. Godot will handle converting it for use in 2D "
 "and overwriting ``NORMAL``."
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:148
-msgid "inout vec3 **NORMAL**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:148
@@ -52432,6 +54697,127 @@ msgid ""
 "plugins for your own beloved formats. This can be quite useful to write your "
 "data in a custom format and then use it in Godot as if they were native "
 "resources. This shows how the import system is powerful and extendable."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:4
+msgid "Spatial gizmo plugins"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:9
+msgid ""
+"Spatial gizmo plugins are used by the editor and custom plugins to define "
+"the gizmos attached to any kind of Spatial node."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:12
+msgid ""
+"This tutorial will show you the two main approaches to defining your own "
+"custom gizmos. The first option works well for simple gizmos and creates "
+"less clutter in your plugin structure, while the second one will let you "
+"store some per-gizmo data."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:16
+msgid ""
+"This tutorial assumes you already know how to make generic plugins. If in "
+"doubt, refer to the :ref:`doc_making_plugins` page."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:20
+msgid "The EditorSpatialGizmoPlugin"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:22
+msgid ""
+"Regardless of the approach we choose, we will need to create a new :ref:"
+"`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>`. This will allow "
+"us to set a name for the new gizmo type and define other behaviors such as "
+"whether the gizmo can be hidden or not."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:27
+msgid "This would be a basic setup:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:57
+msgid ""
+"For simple gizmos, just inheriting :ref:`EditorSpatialGizmoPlugin "
+"<class_EditorSpatialGizmoPlugin>` is enough. If you want to store some per-"
+"gizmo data or you are porting a Godot 3.0 gizmo to 3.1+, you should go with "
+"the second approach."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:63
+msgid "Simple approach"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
+msgid ""
+"The first step is to, in our custom gizmo plugin, override the :ref:"
+"`has_gizmo()<class_EditorSpatialGizmoPlugin_method_has_gizmo>` method so "
+"that it returns ``true`` when the spatial parameter is of our target type."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:76
+msgid ""
+"Then we can override methods like :ref:"
+"`redraw()<class_EditorSpatialGizmoPlugin_method_redraw>` or all the handle "
+"related ones."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:107
+msgid ""
+"Note that we created a material in the `_init` method, and retrieved it in "
+"the `redraw` method using :ref:"
+"`get_material()<class_EditorSpatialGizmoPlugin_method_get_material>`. This "
+"method retrieves one of the material's variants depending on the state of "
+"the gizmo (selected and/or editable)."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:112
+msgid "So the final plugin would look somewhat like this:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:148
+msgid ""
+"Note that we just added some handles in the redraw method, but we still need "
+"to implement the rest of handle-related callbacks in :ref:"
+"`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>` to get properly "
+"working handles."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:153
+msgid "Alternative approach"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:155
+msgid ""
+"In some cases we want to provide our own implementation of :ref:"
+"`EditorSpatialGizmo<class_EditorSpatialGizmo>`, maybe because we want to "
+"have some state stored in each gizmo or because we are porting an old gizmo "
+"plugin and we don't want to go through the rewriting process."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:159
+msgid ""
+"In these cases all we need to do is, in our new gizmo plugin, override :ref:"
+"`create_gizmo()<class_EditorSpatialGizmoPlugin_method_create_gizmo>`, so it "
+"returns our custom gizmo implementation for the Spatial nodes we want to "
+"target."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:181
+msgid ""
+"This way all the gizmo logic and drawing methods can be implemented in a new "
+"clas extending :ref:`EditorSpatialGizmo<class_EditorSpatialGizmo>`, like so:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:217
+msgid ""
+"Note that we just added some handles in the redraw method, but we still need "
+"to implement the rest of handle-related callbacks in :ref:"
+"`EditorSpatialGizmo<class_EditorSpatialGizmo>` to get properly working "
+"handles."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:4
