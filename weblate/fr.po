@@ -14,10 +14,14 @@
 # Brice Lobet <tempo.data@gmail.com>, 2018-2019.
 # Carl Schwan <schwancarl@protonmail.com>, 2018.
 # Caye Pierre <pierrecaye@laposte.net>, 2018-2019.
+# Chadrack Tamukwa Besongo <chadrack@scadhsong.com>, 2019.
+# Christophe FOUBET <foubetc@gmail.com>, 2019.
 # Cindy Dallaire <c.dallaire93@gmail.com>, 2018-2019.
 # Darck Crystale <vraken@live.fr>, 2018.
 # David Partouche <david.partouche@gmail.com>, 2018.
+# David Seeeber <tech.davidseeber@gmail.com>, 2019.
 # didier-v <didierv@mac.com>, 2018.
+# Dorian Wouters <perso@elementw.net>, 2019.
 # Dupuis Alexis <dupuis.alexis@yahoo.fr>, 2018.
 # Eric Chirnside <echirnside@gmail.com>, 2018.
 # EricRogerGarcia <ericgarcia@netc.fr>, 2018.
@@ -34,10 +38,12 @@
 # Kanabenki <lucien.menassol@gmail.com>, 2018.
 # keltwookie <keltwookie@protonmail.com>, 2018.
 # Kevin Bouancheau <kevin.bouancheau@gmail.com>, 2018-2019.
+# Le Poisson Libre <services@spika.xyz>, 2019.
 # LittleWhite <lw.demoscene@googlemail.com>, 2018.
 # Luc Stepniewski <lior@gradstein.info>, 2018.
 # Ludovic Moge <ludovic.moge@gmail.com>, 2018.
 # Marc THIBAUDET <marcthibaudet@gmail.com>, 2018.
+# Mathieu H <wiiu3dsxl13127@gmail.com>, 2019.
 # Michel Durand <ledragonseveille@gmail.com>, 2018.
 # Mohamed Ali Salman Meftah <momosmarty@yahoo.fr>, 2018.
 # mutergfp <lucas.desnoue@free.fr>, 2018.
@@ -70,7 +76,7 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-02-10 13:55+0100\n"
-"PO-Revision-Date: 2019-02-09 17:07+0000\n"
+"PO-Revision-Date: 2019-02-18 08:22+0000\n"
 "Last-Translator: Caye Pierre <pierrecaye@laposte.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
@@ -11111,7 +11117,6 @@ msgstr ""
 "intéressé de voir comment cela fonctionne en interne)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
-#, fuzzy
 msgid ""
 "The user program, or game, starts in the MainLoop. This class has a few "
 "methods, for initialization, idle (frame-synchronized callback), fixed "
@@ -12800,13 +12805,11 @@ msgstr "Le numéro de ligne de l’erreur"
 #: ../../docs/getting_started/editor/external_editor.rst:29
 msgid "Some example Exec Flags for various editors include:"
 msgstr ""
-"Quelques exemples de ligne de commande avec drapeaux pour différents éditeur "
-"de texte :"
+"Quelques exemples de drapeaux exécutifs pour différents éditeurs de texte :"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
-#, fuzzy
 msgid "Exec Flags"
-msgstr "Ligne de commande"
+msgstr "Drapeaux exécutifs"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "Geany/Kate"
@@ -12867,7 +12870,6 @@ msgid "History"
 msgstr "Histoire"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:19
-#, fuzzy
 msgid ""
 "In the early days, the engine used the `Lua <http://www.lua.org>`__ "
 "scripting language. Lua is fast, but creating bindings to an object oriented "
@@ -12875,12 +12877,11 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
-"Ses premiers jours, le moteur utilisait le langage de scripts `Lua <http://"
-"www.lua.org>`__ . Lua est rapide, mais créer des bindings (ou liaisons) vers "
-"un système orienté objet (en utilisant des fallbacks) était complexe, lent "
-"et demandait une énorme quantité de code. Après quelques expérimentations "
-"avec `Python <http://www.python.org>`__, il s’avéra aussi difficile a "
-"intégrer."
+"Au début, le moteur utilisait le langage de scripts `Lua <http://www.lua."
+"org>`__ . Lua est rapide, mais créer des bindings (ou liaisons) vers un "
+"système orienté objet (en utilisant des fallbacks) était complexe, lent et "
+"demandait une énorme quantité de code. Après quelques expérimentations avec "
+"`Python <http://www.python.org>`__, il s’avéra aussi difficile a intégrer."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:25
 msgid ""
@@ -13122,9 +13123,8 @@ msgid "do"
 msgstr "do"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
-#, fuzzy
 msgid "Reserved for future implementation of ``do... while`` loops."
-msgstr "Reservé pour la future implémentation des boucles do...while."
+msgstr "Reservé pour l'implémentation future des boucles ``do...while``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:812
@@ -13150,9 +13150,8 @@ msgstr "switch"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
-#, fuzzy
 msgid "Reserved for future implementation. See match_."
-msgstr "Réservé pour une future implémentation."
+msgstr "Réservé pour une implémentation future."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid "case"
@@ -13722,7 +13721,6 @@ msgid "Built-in types"
 msgstr "Types intégrés"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:347
-#, fuzzy
 msgid ""
 "Built-in types are stack-allocated. They are passed as values. This means a "
 "copy is created on each assignment or when passing them as arguments to "
@@ -13731,13 +13729,13 @@ msgid ""
 "``PoolByteArray`` though, those are passed as values too, so consider this "
 "when deciding which to use!)"
 msgstr ""
-"Les types intégrés sont alloués sur la pile. Ils sont transmis par valeurs. "
-"Cela signifie qu'une copie est créée à chaque affectation ou lors en les "
-"passant comme arguments à des fonctions. Les seules exceptions sont les "
-"``tableaux`` et les ``dictionnaires``, qui sont passés par référence de "
-"sorte qu'ils sont partagés. (Pas les ``PoolArray``s comme ``PoolByteArray`` "
-"cependant, ceux-ci sont passés par valeurs aussi, prenez donc ceci en "
-"considération lorsque vous décidez lesquels utiliser !)"
+"Les types intégrés sont alloués sur la pile. Ils sont transmis comme "
+"valeurs. Cela signifie qu'une copie est créée à chaque affectation ou quand "
+"elles sont passées comme arguments aux fonctions. Les seules exceptions sont "
+"les ``tableaux`` et les ``dictionnaires``, qui sont passés par référence de "
+"sorte qu'ils sont partagés. (Cependant, pas les ``PoolArray``s comme "
+"``PoolByteArray``, ceux-ci sont passés par valeurs aussi, prenez donc ceci "
+"en considération lorsque vous décidez lesquels utiliser !)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:354
 msgid "Basic built-in types"
@@ -14274,7 +14272,6 @@ msgstr ""
 "consécutifs à certaines constantes."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:661
-#, fuzzy
 msgid ""
 "If you pass a name to the enum, it will put all the keys inside a constant "
 "dictionary of that name."
@@ -14455,14 +14452,13 @@ msgstr ""
 "condition::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:805
-#, fuzzy
 msgid ""
 "Sometimes you might want to assign a different initial value based on a "
 "boolean expression. In this case, ternary-if expressions come in handy::"
 msgstr ""
-"Parfois, il peut-être nécessaire d'affecter une valeur initiale différente "
-"dans une expression booléenne. Dans ce cas, les conditions ternaires peuvent "
-"être utiles::"
+"Parfois, il peut être nécessaire d'affecter une valeur initiale différente, "
+"basée sur une expression booléenne. Dans ce cas, les conditions ternaires "
+"peuvent être utiles ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:814
 msgid ""
@@ -14486,16 +14482,15 @@ msgstr ""
 "l'*index* qui est stocké dans la variable de boucle."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:854
-#, fuzzy
 msgid ""
 "A ``match`` statement is used to branch execution of a program. It's the "
 "equivalent of the ``switch`` statement found in many other languages, but "
 "offers some additional features."
 msgstr ""
 "L'instruction ``match`` est utilisée pour réaliser un branchement de "
-"l’exécution d'un programme. Il s'agit de l’équivalent de l'instruction "
-"``switch`` présente dans beaucoup d'autres langages mais procure cependant "
-"quelques fonctionnalités supplémentaires."
+"l’exécution d'un programme. Elle est semblable à l'instruction ``switch`` "
+"présente en beaucoup d'autres langages mais elle procure cependant quelques "
+"fonctionnalités supplémentaires."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:857
 msgid "Basic syntax:"
@@ -14515,7 +14510,6 @@ msgid "Remove ``case``"
 msgstr "Enlever ``case``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:874
-#, fuzzy
 msgid ""
 "Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
@@ -14532,7 +14526,6 @@ msgid "**Control flow**:"
 msgstr "**Contrôle du flux d’exécution** :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:880
-#, fuzzy
 msgid ""
 "The patterns are matched from top to bottom. If a pattern matches, the "
 "corresponding block will be executed. After that, the execution continues "
@@ -14541,11 +14534,10 @@ msgid ""
 "below it."
 msgstr ""
 "Les expressions sont comparées du haut vers le bas. Si une expression "
-"correspond, le bloc de code correspondant sera exécute. Après cela, "
-"l’exécution continuera après le bloc d'instructions ``match``, ignorant les "
-"comparaisons suivantes. Si vous voulez tout de même poursuivre l’exécution "
-"de ``match`` et passer à la comparaison suivante, vous pouvez utiliser "
-"``continue``."
+"correspond, le bloc de code correspondant sera exécuté. Ensuite, l’exécution "
+"continuera après le bloc d'instructions ``match``, ignorant les comparaisons "
+"suivantes. Si vous voulez tout de même poursuivre l’exécution de ``match`` "
+"et passer à la comparaison suivante, vous pouvez utiliser ``continue``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:884
 msgid "There are 6 pattern types:"
@@ -14607,22 +14599,20 @@ msgid "array pattern"
 msgstr "Expression de tableaux"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:938
-#, fuzzy
 msgid ""
 "matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
 msgstr ""
 "Elle correspond à un tableau. Chaque élément de l'expression de tableau est "
-"une expression en soi, de sorte que vous pouvez les imbriquer."
+"lui-même une expression, de sorte que vous pouvez les imbriquer."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
-#, fuzzy
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
 "pattern, otherwise the pattern doesn't match."
 msgstr ""
 "La longueur du tableau est d'abord testée, elle doit être de la même taille "
-"que l'expression, sinon cette dernière ne correspond pas."
+"que l'expression, sinon cette dernière ne correspondra pas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:942
 msgid ""
@@ -14649,13 +14639,12 @@ msgstr ""
 "une expression constante."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:959
-#, fuzzy
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
 "the pattern, otherwise the pattern doesn't match."
 msgstr ""
 "La taille du dictionnaire est d'abord testée, elle doit être de la même "
-"taille que l'expression, sinon l'expression ne correspond pas."
+"taille que l'expression, sinon l'expression ne correspondra pas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:961
 msgid ""
@@ -14861,17 +14850,16 @@ msgstr ""
 "même ``e`` passé à ``Idle.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1151
-#, fuzzy
 msgid ""
 "if ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` base class even if it does nothing. "
 "Which brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables. Eg.:"
 msgstr ""
-"Si le constructeur ``_init`` de ``Idle.gd`` prend 0 arguments, il doit quand "
-"même transmettre une valeur à la classe de base ``State.gd``, même si elle "
-"ne fait rien. Ce qui nous amène au fait que vous pouvez aussi passer des "
-"littéraux dans le constructeur de base, pas seulement des variables. Par "
+"Si le constructeur ``_init`` de ``Idle.gd`` prend 0 arguments, il doit tout "
+"de même transmettre une valeur à la classe de base ``State.gd``, même si "
+"elle ne fait rien. Ce qui nous amène au fait que vous pouvez aussi passer "
+"des littéraux dans le constructeur de base, pas seulement des variables. Par "
 "exemple :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1163
@@ -15100,7 +15088,6 @@ msgid "Memory management"
 msgstr "Gestion de la mémoire"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1452
-#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -15111,13 +15098,13 @@ msgid ""
 "weak references."
 msgstr ""
 "Si une classe hérite de :ref:`class_Reference`, les instances seront "
-"libérées lorsqu'elles ne seront plus utilisées. Il n'y a pas de ramasseur "
-"d'ordures, il suffit de compter les références. Par défaut, toutes les "
-"classes qui ne définissent pas l'héritage s'étendent **Référence**. Si cela "
-"n'est pas désiré, alors une classe doit hériter :ref:`class_Object` "
-"manuellement et doit appeler ``instance.free()``. Pour éviter les cycles de "
-"référence qui ne peuvent pas être libérés, une fonction ``weakref`` est "
-"fournie pour créer des références faibles."
+"libérées lorsqu'elles ne seront plus utilisées. Il n'y a pas de Garbage "
+"Collector, uniquement un comptage des références. Par défaut, toutes les "
+"classes qui ne définissent un héritage étendu **Reference**. Si cela n'est "
+"pas désiré, alors une classe doit hériter :ref:`class_Object` manuellement "
+"et doit appeler instance.free(). Pour éviter les cycles de référence qui ne "
+"peuvent pas être libérés, une fonction ``weakref`` est fournie pour créer "
+"des références faibles."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1460
 msgid ""
@@ -15135,6 +15122,10 @@ msgid ""
 "objects can listen to in a generic way. Create custom signals for a class "
 "using the ``signal`` keyword."
 msgstr ""
+"Les signaux sont un moyen d'envoyer des messages de notification depuis un "
+"objet pour lequel les autres objets peuvent écouter de façon générique. "
+"Créez des signaux personnalisés pour une classe en utilisant le mot-clé "
+"``signal``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
 msgid ""
@@ -15142,6 +15133,9 @@ msgid ""
 "built-in signals of nodes such as :ref:`class_Button` or :ref:"
 "`class_RigidBody`."
 msgstr ""
+"Ces signaux peuvent être connectés à des méthodes de la même manière que "
+"vous pouvez connecter les signaux de base des nœuds tels que :ref: "
+"`class_Button` or :ref: `class_RigidBody`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
 msgid ""
@@ -15149,6 +15143,9 @@ msgid ""
 "the custom signal to a method in a separate script, using the :ref:`Object."
 "connect() <class_Object_method_connect>` method:"
 msgstr ""
+"Voici un exemple qui créé un signal personnalisé dans un script et le "
+"connecte à une méthode dans un autre script, en utilisant la méthode :ref:"
+"`Object.connect() <class_Object_method_connect>` :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1513
 msgid ""
@@ -15158,6 +15155,11 @@ msgid ""
 "rather than the signal or the method, meaning that each connection has "
 "unique bindings."
 msgstr ""
+"GDScript peut lier des arguments à des connexions entre un signal et une "
+"méthode. Lorsque le signal est émis, en appelant la méthode connectée, "
+"l'argument lié est donné à la méthode. Ces arguments liés sont plus "
+"spécifiques a la connexion qu'au signal ou a la méthode, signifiant que "
+"chaque connexion a un lien unique."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1519
 msgid ""
@@ -15165,6 +15167,10 @@ msgid ""
 "signal and a method, binding the button instance to the connection. The "
 "handler uses the bound argument to print which button instance was pressed."
 msgstr ""
+"Voici un exemple qui créé une connexion entre le signal ``pressed`` d'un "
+"bouton et une méthode, en attachant l'instance du bouton à la connexion. Le "
+"gestionnaire utilise l'argument attaché pour afficher quelle est l'instance "
+"de bouton qui a été appuyée."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
 msgid ""
@@ -15172,18 +15178,21 @@ msgid ""
 "<class_Object_method_emit_signal>` method which broadcasts the signal and "
 "arguments."
 msgstr ""
+"Les signaux sont générés par la méthode :ref:`Object.emit_signal() "
+"<class_Object_method_emit_signal>`, qui diffuse le signal et les arguments."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1537
 msgid ""
 "Extending a previous example to use all the features of GDScript signals:"
 msgstr ""
+"Extension d'un exemple précédent pour qu'il utilise toutes les "
+"fonctionnalités des signaux de GDScript :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1569
 msgid "Coroutines with yield"
 msgstr "Coroutines avec yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1571
-#, fuzzy
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
@@ -15196,9 +15205,9 @@ msgstr ""
 "wiki/Coroutine>`_ via la fonction intégrée ``yield``. L'appel de ``yield()`` "
 "retournera immédiatement de la fonction courante, avec l'état gelé courant "
 "de cette même fonction comme valeur de retour. L'appel de ``resume`` sur cet "
-"objet résultant reprendra l'exécution et retournera quoi que ce soit que la "
-"fonction retourne. Une fois repris, l'objet d'état devient invalide. Voici "
-"un exemple :"
+"objet résultant reprendra l'exécution et retournera tout ce que la fonction "
+"retourne. Une fois repris, l'objet d'état devient invalide. Voici un "
+"exemple :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1593
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1617
@@ -15246,7 +15255,6 @@ msgid "Onready keyword"
 msgstr "Mot-clé onready"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1661
-#, fuzzy
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -15584,7 +15592,6 @@ msgstr ""
 "de bataille navale simple :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
-#, fuzzy
 msgid ""
 "Dictionaries can also be used as data markup or quick structures. While "
 "GDScript's dictionaries resemble python dictionaries, it also supports Lua "
@@ -15593,9 +15600,9 @@ msgid ""
 msgstr ""
 "Les dictionnaires peuvent également être utilisés comme balises de données "
 "ou comme structures rapides. Bien que les dictionnaires GDScript ressemblent "
-"aux dictionnaires python, il supporte également la syntaxe et l'indexation "
-"de style Lua, ce qui le rend très utile pour écrire des états initiaux et "
-"des structures rapides :"
+"aux dictionnaires python, ils supportent également la syntaxe et "
+"l'indexation de style Lua, ce qui le rend très utile pour écrire des états "
+"initiaux et des structures rapides :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:318
 msgid "For & while"
@@ -15778,7 +15785,6 @@ msgid "Yes, we should call it Hulk typing instead."
 msgstr "Oui, on devrait plutôt l'appeler le typage à la Hulk."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
-#, fuzzy
 msgid ""
 "It's possible that the object being hit doesn't have a smash() function. "
 "Some dynamically typed languages simply ignore a method call when it doesn't "
@@ -15788,7 +15794,7 @@ msgstr ""
 "Il est possible que l'objet touché n'ait pas de fonction smash(). Certains "
 "langages à typage dynamique ignorent simplement un appel de méthode "
 "lorsqu'il n'existe pas (comme Objective C), mais GDScript est plus strict, "
-"donc vérifier si la fonction existe est souhaitable :"
+"il est donc souhaitable de vérifier si la fonction existe :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:527
 msgid ""
@@ -16076,7 +16082,6 @@ msgstr ""
 "plus dans un instant."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:54
-#, fuzzy
 msgid ""
 "Static types also give you better code completion options. Below, you can "
 "see the difference between a dynamic and a static typed completion options "
@@ -16084,7 +16089,7 @@ msgid ""
 msgstr ""
 "Les types statiques vous offrent également de meilleures options de "
 "complétion du code. Ci-dessous, vous pouvez voir la différence entre les "
-"options de complétion de type dynamique et type statique pour une classe "
+"options de complétion de type dynamique et de type statique pour une classe "
 "appelée ``PlayerController``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:58
@@ -23205,6 +23210,7 @@ msgstr ""
 "fichier PCK, comme décrit plus haut."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:80
+#, fuzzy
 msgid ""
 "The developer uses Godot to build a GUI tool for adding their exact API "
 "content to a project. This Godot tool must either run on a tools-enabled "
@@ -23215,6 +23221,8 @@ msgid ""
 "a tool-build though (for security) and for the modding tools to *do* use a "
 "tool-enabled engine build."
 msgstr ""
+"Le développeur utilise Gobot pour construire un outil GUI permettant "
+"d'ajouter leur contenu d'API à un projet"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:90
 msgid "Opening PCK files at runtime"
@@ -25040,6 +25048,13 @@ msgid ""
 "outlining the best practices should help users feel less confused as they "
 "further explore Godot's depth."
 msgstr ""
+"Cette série de tutoriels vise à illustrer les workflows prévu par Godot, "
+"c'est à dire les \"meilleures pratiques\" pour définir l'API de son jeu. "
+"Godot permet une grand flexibilité dans la façon de concevoir le code et la "
+"structure de scène d'un projet. Chaque méthode aura ses propres avantages et "
+"inconvénients, de sorte que la description des meilleures pratiques devrait "
+"aider les utilisateurs à se sentir moins confus au fur et à mesure qu'ils "
+"approfondissent l'exploration de la profondeur de Godot."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:13
 msgid ""
@@ -25051,6 +25066,14 @@ msgid ""
 "advantages and disadvantages of each option, and then highlights the best "
 "course of action depending on the circumstances."
 msgstr ""
+"Cette série est également conçu pour aider les utilisateurs a pensé au "
+"meilleur façon de raisonner sur les meilleures pratiques. Il serait "
+"impossible de donner un aperçu complet de ce qu'il faut faire pour toute "
+"décision de conception arbitraire. Ainsi, chaque article décompose les "
+"problèmes en questions fondamentales qu'ils posent, suggère les solutions "
+"disponibles, analyse les avantages et les inconvénients de chaque option, "
+"puis souligne la meilleure ligne de conduite à adopter en fonction des "
+"circonstances."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:21
 msgid ""
@@ -25059,10 +25082,15 @@ msgid ""
 "article. It is from there that the \"best practices\" for the rest of the "
 "engine become more clear, based on established OOP practices."
 msgstr ""
+"Bien que les articles de cette série soient en grande partie thématiques, il "
+"est recommandé aux utilisateurs de commencer par l'article :ref:"
+"`doc_what_are_godot_classes`. C'est à partir de là que les \"meilleures "
+"pratiques\" pour le reste du moteur deviendront plus claires, basées sur les "
+"pratiques établies en matière de POO."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
 msgid "What are Godot classes really?"
-msgstr ""
+msgstr "Mais que sont les classes Godot ?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
@@ -25071,6 +25099,10 @@ msgid ""
 "design. *How* they do this may not be clear to beginner or intermediate "
 "users though."
 msgstr ""
+"Godot propose deux moyens principaux pour créer des types : les scripts et "
+"les scènes. Tous deux représentent une \"classe\" puisque Godot s'articule "
+"autour du design orienté objet. La façon dont ils le font n'est pas toujours "
+"claire pour les utilisateurs débutants ou intermédiaires."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:11
 msgid ""
@@ -25079,6 +25111,10 @@ msgid ""
 "they are resources that tell the engine a sequence of initializations to "
 "perform on an engine class."
 msgstr ""
+"Le moteur Godot fournit des classes prêtes à l'emploi (comme :ref:`Node "
+"<class_Node>`), mais les types créés par l'utilisateur ne sont pas "
+"réellement des classes. Ce sont plutôt des ressources qui indiquent au "
+"moteur une séquence d'initialisation à effectuer sur une classe de moteur."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:16
 msgid ""
@@ -25087,25 +25123,28 @@ msgid ""
 "class information (also called \"reflection\"). Things stored in the ClassDB "
 "include, among other things..."
 msgstr ""
+"Les classes internes de Godot ont des méthodes qui enregistrent les données "
+"d'une classe avec un :ref:`ClassDB <class_ClassDB>`. Cette base de données "
+"permet d'accéder en temps réel aux informations de la classe (aussi appelée "
+"\"reflection\"). Les choses stockées dans la ClassDB incluent, entre autres "
+"choses....."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:21
 #, fuzzy
 msgid "properties"
-msgstr "Propriétés d’un nœud"
+msgstr "les propriétés des nœuds"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:23
 msgid "methods"
-msgstr ""
+msgstr "les méthodes"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:25
-#, fuzzy
 msgid "constants"
-msgstr "Constantes"
+msgstr "les constantes"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
-#, fuzzy
 msgid "signals"
-msgstr "signal"
+msgstr "les signaux"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:29
 msgid ""
@@ -25116,6 +25155,13 @@ msgid ""
 "a static `_bind_methods()` function that describes what C++ content it "
 "registers to the database and how."
 msgstr ""
+"En outre, cette ClassDB est ce que les Objects vérifient lorsqu'ils "
+"exécutent n'importe quelle opération. Accéder à une propriété ? Appeler une "
+"méthode ? Émettre un signal ? Il vérifiera les enregistrements de la base de "
+"données (ainsi que les enregistrements du type de base de l'objet) afin de "
+"voir si l'Object supporte l'opération. Chaque Object C++ défini une fonction "
+"statique `_bind_methods()` qui décrit quel contenu C++ il enregistre dans la "
+"base de donnée et comment."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
 msgid ""
@@ -25124,6 +25170,11 @@ msgid ""
 "data to be appended to an object's data. That way, users could inject their "
 "own properties and methods into the engine's Object query requests."
 msgstr ""
+"Donc, si le moteur fournit toutes ces données au démarrage, alors comment un "
+"utilisateur défini ses propres données ? Ce serait pratique si les "
+"utilisateurs pouvaient définir un jeu personnalisé de données à ajouter aux "
+"données d'un objet. De cette façon, les utilisateurs pourraient injecter "
+"leurs propres propriétés et méthodes dans les requêtes d'Object du moteur."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
 msgid ""
@@ -25133,6 +25184,12 @@ msgid ""
 "to the list of properties the Object fetches from the ClassDB. The same "
 "holds true for other declarative code."
 msgstr ""
+"*Ceci* est ce qu'est un :ref:`Script <class_Script>`. Les Objects vérifient "
+"d'abord leur script avant la base de donnée, donc les scripts peuvent même "
+"redéfinir des méthodes. Si un script défini une méthode "
+"`_get_property_list()`, la donnée est ajoutée à la liste des propriétés que "
+"l'Object récupère de la base de données. Cela est aussi vrai pour les autres "
+"codes déclaratifs."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:47
 msgid ""
@@ -25142,6 +25199,11 @@ msgid ""
 "Object to defer to the Script's content where the engine logic deems "
 "appropriate."
 msgstr ""
+"Cela peut être source de confusion pour certains utilisateurs lorsqu'ils "
+"considèrent un script comme une classe à part entière. En réalité, le moteur "
+"se contente d'auto-instancier la classe de base du moteur et ajoute ensuite "
+"le script à cet objet. Ceci permet alors à l'Objet de s'en remettre au "
+"contenu du Script lorsque la logique du moteur le juge approprié."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:53
 msgid ""
@@ -25150,12 +25212,19 @@ msgid ""
 "node hierarchies demonstrates this. Each individual Node's logic could be "
 "several hundred lines of code in length."
 msgstr ""
+"Un problème se présente cependant. Au fur et à mesure que la taille des "
+"objets augmente, la taille nécessaire aux scripts pour les créer devient "
+"beaucoup, beaucoup plus grande. La création de hiérarchies de nœuds en est "
+"la preuve. La logique de chaque Nœud individuel peut être longue de "
+"plusieurs centaines de lignes de code."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid "let's see a simple example of creating a single Node as a child."
 msgstr ""
+"voyons un exemple simple de création d'un Nœud unique en tant qu'enfant."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:97
+#, fuzzy
 msgid ""
 "Notice that only two pieces of declarative code are involved in the creation "
 "of this child node: the variable declaration and the constructor "
@@ -25165,6 +25234,13 @@ msgid ""
 "\"lookups\" within data structures to find the corresponding logic to "
 "execute."
 msgstr ""
+"Remarquons que seulement deux morceaux de code déclaratif sont impliqués "
+"dans la création de ce nœud enfant : la déclaration de variable et la "
+"déclaration de constructeur. Les autres caractéristiques doivent être mises "
+"en place dans le code impératif. En revanche, le code de script est bien "
+"plus lent que le code C++ du moteur. Chaque changement doit effectuer un "
+"appel à l'API de script, ce qui correspond à beaucoup de recherches dans les "
+"structures de données pour trouver la logique a exécuter à chaque fois."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:105
 msgid ""
@@ -25173,6 +25249,11 @@ msgid ""
 "could then handle the construction using its fast C++ code, and the script "
 "code would be free from the perils of imperative code."
 msgstr ""
+"Pour aider à décharger le travail, il serait pratique si on pouvait "
+"regrouper toutes les opérations impliquées dans la création et la mise en "
+"place des hiérarchies de nœuds. Le moteur pourrait alors gérer la "
+"construction en utilisant son code C++ rapide, et le code du script serait "
+"libre des périls du code impératif."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:110
 msgid ""
@@ -25180,6 +25261,9 @@ msgid ""
 "resource that provides an advanced \"constructor\" serialization which is "
 "offloaded to the engine for batch processing."
 msgstr ""
+"*Ceci* est ce qu'est une scène (:ref:`PackedScene <class_PackedScene>`) : "
+"une ressource qui fournit une sérialisation \"constructeur\" avancée qui est "
+"transférée au moteur pour traitement par lots."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:114
 msgid ""
@@ -25188,27 +25272,30 @@ msgid ""
 "scripted root node that makes use of the sub-nodes. This means that the "
 "scene is often an extension of the script's declarative code."
 msgstr ""
+"Pourquoi tout cela est-il important pour l'organisation de scène ? Parce "
+"qu'il faut comprendre que les scènes *sont* des objets. On associe souvent "
+"une scène à un nœud racine scripté qui utilise les nœuds inférieurs. Cela "
+"signifie que la scène est souvent une extension du code déclaratif du script."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
 msgid "It helps to define..."
-msgstr ""
+msgstr "Il aide à définir...."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
-#, fuzzy
 msgid "what objects are available to the script?"
-msgstr "Le rôle du script"
+msgstr "quels objets sont accessibles par le script ?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:123
 msgid "how are they organized?"
-msgstr ""
+msgstr "comment sont-ils organisés ?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:125
 msgid "how are they initialized?"
-msgstr ""
+msgstr "comment sont-ils initialisés ?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:127
 msgid "what connections to each other do they have, if any?"
-msgstr ""
+msgstr "quelles connexions ont-ils entre eux, s'ils en ont ?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
 msgid ""
@@ -25217,6 +25304,11 @@ msgid ""
 "in one scene (which are often bundled into the scene itself). Other scripts "
 "are meant to be re-used between scenes."
 msgstr ""
+"De ce fait, beaucoup de principes d'orientation objet qui s'appliquent à la "
+"\"programmation\", c'est-à-dire aux scripts, s'appliquent *aussi* aux "
+"scènes. Certains scripts sont conçus pour ne fonctionner que dans une unique "
+"scène (et sont souvent inclus dans la scène elle-même). D'autres scripts "
+"sont conçus pour être réutilisés entre les scènes."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:134
 msgid ""
@@ -25224,11 +25316,14 @@ msgid ""
 "therefore be interpreted as a part of the class.** Most of the points "
 "covered in this series will build on this point, so keep it in mind."
 msgstr ""
+"**Quoi qu'il en soit, la scène est toujours une extension du script racine, "
+"et peut par conséquent être considéré comme faisant partie de la classe.** "
+"La majorité des points couverts dans cette série se baseront sur ce "
+"principe, donc retenez-le bien."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
-#, fuzzy
 msgid "Scene organization"
-msgstr "Organisation du projet"
+msgstr "Organisation de la scène"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:6
 msgid ""
@@ -25236,16 +25331,21 @@ msgid ""
 "content. Which nodes should one use? Where should one place them? How should "
 "they interact?"
 msgstr ""
+"Cet article traite de sujets liés à l'organisation efficace du contenu des "
+"scènes. Quels nœuds utiliser ? Où doit-on les placer ? Comment devraient-ils "
+"interagir ?"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:11
 msgid "How to build relationships effectively"
-msgstr ""
+msgstr "Comment établir des relations efficacement"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:13
 msgid ""
 "When Godot users begin crafting their own scenes, they often run into the "
 "following problem:"
 msgstr ""
+"Lorsque les utilisateurs de Godot commencent à créer leurs propres scènes, "
+"ils se heurtent souvent au problème suivant :"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:16
 msgid ""
@@ -25257,6 +25357,14 @@ msgid ""
 "node paths do not find their targets. Signal connections established in the "
 "editor break."
 msgstr ""
+"Ils créent leur première scène et la remplissent de contenu avant que le "
+"sentiment rampant qu'ils ont besoin de la diviser en morceaux réutilisables "
+"ne les hante. Ils sauvegardent des branches de leur scène dans leur propre "
+"scène. Cependant, ils constatent alors que les références dures sur "
+"lesquelles ils pouvaient compter auparavant ne sont plus possibles. La "
+"réutilisation de la scène à plusieurs endroits crée des problèmes car les "
+"chemins de nœuds ne trouvent pas leurs cibles. Les connexions de signal "
+"établies dans l'éditeur sont rompues."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
 msgid ""
@@ -25265,6 +25373,10 @@ msgid ""
 "that the sub-scene will create itself without being picky about how one uses "
 "it."
 msgstr ""
+"Pour résoudre ces problèmes, il faut instancier les sous-scènes sans "
+"qu'elles ne nécessitent de détails sur leur environnement. Il faut pouvoir "
+"être sûr que la sous-scène se créera d'elle-même sans être pointilleuse sur "
+"la façon dont on l'utilise."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:29
 msgid ""
@@ -25274,12 +25386,21 @@ msgid ""
 "objects small (for maintainability) and improves their reusability so that "
 "re-writing completed logic is unnecessary."
 msgstr ""
+"L'une des choses les plus importantes à prendre en compte dans la POO est le "
+"maintien de classes ciblées et à but unique avec un couplage lâche <https://"
+"en.wikipedia.org/wiki/Loose_coupling>`_ à d'autres parties du code de base. "
+"La taille des objets reste ainsi réduite (pour des raisons de "
+"maintenabilité) et leur ré-utilisabilité est améliorée, de sorte qu'il n'est "
+"pas nécessaire de réécrire la logique compléte."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:36
 msgid ""
 "These OOP best practices have *several* ramifications for the best practices "
 "in scene structure and script usage."
 msgstr ""
+"Ces meilleures pratiques OOP ont *plusieurs* ramifications pour les "
+"meilleures pratiques en matière de structure de scène et d'utilisation de "
+"script."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:39
 msgid ""
@@ -25287,6 +25408,9 @@ msgid ""
 "That is, one should create scenes that keep everything they need within "
 "themselves."
 msgstr ""
+"**Si c'est possible, il faut concevoir des scènes sans dépendance.** C'est-à-"
+"dire qu'il faut créer des scènes qui gardent tout ce dont elles ont besoin à "
+"l'intérieur d'elles-mêmes."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:43
 msgid ""
@@ -25297,12 +25421,21 @@ msgid ""
 "which rely on their external environment can inadvertantly trigger bugs and "
 "unexpected behavior."
 msgstr ""
+"Si une scène doit interagir avec un contexte externe, les développeurs "
+"expérimentés recommandent l'utilisation de `Dependency Injection <https://en."
+"wikipedia.org/wiki/Dependency_injection>`_. Cette technique implique qu'une "
+"API de haut niveau fournisse les dépendances de l'API de bas niveau. "
+"Pourquoi faire cela ? Parce que les classes qui dépendent de leur "
+"environnement externe peuvent déclencher par inadvertance des bogues et des "
+"comportements inattendus."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:50
 msgid ""
 "To do this, one must expose data and then rely on a parent context to "
 "initialize it:"
 msgstr ""
+"Pour ce faire, il faut exposer les données, puis s'appuyer sur un contexte "
+"parent pour les initialiser :"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:53
 msgid ""
@@ -25310,24 +25443,31 @@ msgid ""
 "behavior, not start it. Note that signal names are usually past-tense verbs "
 "like \"entered\", \"skill_activated\", or \"item_collected\"."
 msgstr ""
+"Connecter à un signal. Extrêmement sûr, mais ne doit être utilisé que pour "
+"\"répondre\" au comportement, pas pour le démarrer. Notez que les noms de "
+"signaux sont généralement des verbes au passé comme \"entered\", "
+"\"skill_activated\", ou \"item_collected\"."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:74
 msgid "Call a method. Used to start behavior."
-msgstr ""
+msgstr "Appeler une méthode. Utilisé pour démarrer le comportement."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:93
 msgid ""
 "Initialize a :ref:`FuncRef <class_FuncRef>` property. Safer than a method as "
 "ownership of the method is unnecessary. Used to start behavior."
 msgstr ""
+"Initialiser une propriété :ref:`FuncRef <class_FuncRef>`. Plus sûr qu'une "
+"méthode car la propriété de la méthode n'est pas nécessaire. Utilisé pour "
+"démarrer le comportement."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:113
 msgid "Initialize a Node or other Object reference."
-msgstr ""
+msgstr "Initialiser un nœud ou une autre référence d'objet."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:132
 msgid "Initialize a NodePath."
-msgstr ""
+msgstr "Initialiser un NodePath."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:151
 msgid ""
@@ -25335,6 +25475,10 @@ msgid ""
 "keeps the child **loosely coupled** to its environment. One can re-use it in "
 "another context without any extra changes to its API."
 msgstr ""
+"Ces options cachent la source des accès au nœud enfant. Cela permet à "
+"l'enfant **d'être couplé de façon lâche** à son environnement. On peut le "
+"réutiliser dans un autre contexte sans aucune modification supplémentaire de "
+"son API."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:157
 msgid ""
@@ -25343,6 +25487,11 @@ msgid ""
 "should only be aware of their hierarchies while an ancestor mediates their "
 "communications and references."
 msgstr ""
+"Bien que les exemples ci-dessus illustrent les relations parent-enfant, les "
+"mêmes principes s'appliquent à toutes les relations objet. Les nœuds qui "
+"sont des frères et sœurs ne devraient connaître que leur hiérarchie pendant "
+"qu'un ancêtre assure la médiation de leurs communications et de leurs "
+"références."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:200
 msgid ""
@@ -25350,8 +25499,12 @@ msgid ""
 "dependencies on other objects. Whichever object actually owns the objects "
 "should manage the relationships between them."
 msgstr ""
+"Les mêmes principes s'appliquent également aux objets non nœuds qui "
+"dépendent d'autres objets. Quel que soit l'objet qui possède réellement les "
+"objets, il doit gérer les relations entre eux."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:206
+#, fuzzy
 msgid ""
 "One should favor keeping data in-house (internal to a scene) though as "
 "placing a dependency on an external context, even a loosely coupled one, "
@@ -25362,6 +25515,16 @@ msgid ""
 "is otherwise known as development hell. Writing code that relies on external "
 "documentation for one to use it safely is error-prone by default."
 msgstr ""
+"Il faut privilégier la conservation des données en interne (interne à une "
+"scène), placer une dépendance sur un contexte externe, même faiblement "
+"couplé, signifie que le nœud s'attendra à ce que quelque chose soit vrai "
+"dans son environnement. Les philosophies de conception du projet devraient "
+"empêcher que cela ne se produise. Sinon, les responsabilités inhérentes au "
+"code obligeront les développeurs à utiliser de la documentation pour suivre "
+"les relations entre objets à une échelle microscopique ; c'est ce qu'on "
+"appelle l'enfer du développement. L'écriture d'un code qui s'appuie sur une "
+"documentation externe pour l'utiliser en toute sécurité est sujette à des "
+"erreurs par défaut."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:215
 msgid ""
@@ -25376,6 +25539,17 @@ msgid ""
 "then self-documents the scene through the script code. No content "
 "duplication via documentation is necessary."
 msgstr ""
+"Pour éviter de créer et de maintenir une telle documentation, on convertit "
+"le noeud dépendant (\" enfant \" ci-dessus) en un script outil qui "
+"implémente :ref:`_get_configuration_warning() "
+"<class_Node_method__get_configuration_warning >`. Retourner une chaîne non "
+"vide à partir de celle-ci fera en sorte que le dock Scène génère une icône "
+"d'avertissement avec la chaîne sous forme d'info-bulle par le nœud. C'est la "
+"même icône qui apparaît pour les nœuds tels que le nœud :ref:`Area2D "
+"<class_Area2D>` quand il n'a pas d'enfant :ref:`CollisionShape2D "
+"<class_CollisionShape2D <Nœuds définis. L'éditeur documente ensuite lui-même "
+"la scène à l'aide du code du script. Aucune duplication de contenu via la "
+"documentation n'est nécessaire."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:226
 msgid ""
@@ -25385,8 +25559,15 @@ msgid ""
 "will need clear instructions in the messages telling them what to do to "
 "configure it."
 msgstr ""
+"Une interface graphique comme celle-ci peut mieux informer les utilisateurs "
+"d'informations critiques sur un nœud. A-t-il des dépendances externes ? Ces "
+"dépendances ont-elles été satisfaites ? D'autres programmeurs, et en "
+"particulier les designers et les écrivains, auront besoin d'instructions "
+"claires dans les messages leur indiquant ce qu'ils doivent faire pour le "
+"configurer."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:231
+#, fuzzy
 msgid ""
 "So, why do all this complex switcharoo work? Well, because scenes operate "
 "best when they operate alone. If unable to work alone, then working with "
@@ -25395,28 +25576,38 @@ msgid ""
 "scenes in unforeseen ways, then things break down. A change to one class "
 "could result in damaging effects to other classes."
 msgstr ""
+"Alors, pourquoi tout ce switcharoo complexe fonctionne-t-il ? Parce que les "
+"scènes fonctionnent mieux quand elles fonctionnent seules. Si elle est "
+"incapable de travailler seule, alors travailler avec d'autres de façon "
+"anonyme (avec un minimum de dépendances dures, c.-à-d. un couplage lâche). "
+"Si les changements inévitables apportés à une classe l'amènent à interagir "
+"avec d'autres scènes d'une manière imprévue, alors les choses s'effondrent. "
+"Le changement d'une classe peut avoir des effets néfastes sur les autres "
+"classes."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:238
 msgid ""
 "Scripts and scenes, as extensions of engine classes should abide by *all* "
 "OOP principles. Examples include..."
 msgstr ""
+"Les scripts et les scènes, en tant qu'extensions des classes du moteur, "
+"doivent respecter *tous* les principes OOP. En voici quelques exemples..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:241
 msgid "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
-msgstr ""
+msgstr "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:242
 msgid "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
-msgstr ""
+msgstr "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:243
 msgid "`KISS <https://en.wikipedia.org/wiki/KISS_principle>`_"
-msgstr ""
+msgstr "`KISS <https://en.wikipedia.org/wiki/KISS_principle>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:244
 msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
-msgstr ""
+msgstr "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:247
 #, fuzzy
@@ -25432,8 +25623,16 @@ msgid ""
 "But, for those who are unsure, this helpful guide can give them a sample of "
 "a decent structure to start with."
 msgstr ""
+"Ainsi, un développeur commence à travailler sur un jeu seulement pour "
+"s'arrêter aux vastes possibilités qui s'offrent à lui. Ils savent peut-être "
+"ce qu'ils veulent faire, quels systèmes ils veulent avoir, mais *où* les "
+"mettre ? Eh bien, c'est toujours à eux de décider comment faire leur jeu. On "
+"peut construire des arbres de nœuds de multiples façons. Mais, pour ceux qui "
+"ne sont pas sûrs, ce guide peut leur donner un exemple d'une structure "
+"décente pour commencer."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:256
+#, fuzzy
 msgid ""
 "A game should always have a sort of \"entry point\"; somewhere the developer "
 "can definitively track where things begin so that they can follow the logic "
@@ -25442,63 +25641,84 @@ msgid ""
 "applications, this would be the \"main\" function. In this case, it would be "
 "a Main node."
 msgstr ""
+"Un jeu devrait toujours avoir une sorte de \"point d'entrée\" ; quelque "
+"part, le développeur peut suivre où les choses commencent afin de pouvoir "
+"suivre la logique comme elle continue ailleurs. Cet endroit sert également "
+"de vue d'ensemble de toutes les autres données et logiques du programme. "
+"Pour les applications traditionnelles, ce serait la fonction \"principale\". "
+"Dans ce cas, il s'agirait d'un nœud principal."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:262
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:273
 msgid "Node \"Main\" (main.gd)"
-msgstr ""
+msgstr "Nœud \"Main\" (main.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:264
 msgid ""
 "The ``main.gd`` script would then serve as the primary controller of one's "
 "game."
 msgstr ""
+"Le script ``main.gd`` servirait alors de contrôleur principal de son jeu."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:267
+#, fuzzy
 msgid ""
 "Then one has their actual in-game \"World\" (a 2D or 3D one). This can be a "
 "child of Main. In addition, one will need a primary GUI for their game that "
 "manages the various menus and widgets the project needs."
 msgstr ""
+"Puis certains ont leur \"Monde\" (en 2D ou 3D). Ce peut être un enfant de "
+"Main. En outre, certains auront besoin d'une interface graphique primaire "
+"pour leur jeu qui gère les différents menus et widgets dont le projet a "
+"besoin."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:272
 msgid "Node2D/Spatial \"World\" (game_world.gd)"
-msgstr ""
+msgstr "Node2D/Spatial \"World\" (game_world.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:273
 msgid "Control \"GUI\" (gui.gd)"
-msgstr ""
+msgstr "Contrôle \"GUI\" (gui.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:275
+#, fuzzy
 msgid ""
 "When changing levels, one can then swap out the children of the \"World\" "
 "node. :ref:`Changing scenes manually <doc_change_scenes_manually>` gives "
 "users full control over how their game world transitions."
 msgstr ""
+"Lors d'un changement de niveau, on peut alors échanger les enfants du nœud "
+"\"Monde\". :ref:`Changing scenes manually <doc_change_scenes_manually>` "
+"donnant aux utilisateurs un contrôle total sur la façon dont leur monde de "
+"jeu évolue."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:279
 msgid ""
 "The next step is to consider what gameplay systems one's project requires. "
 "If one has a system that..."
 msgstr ""
+"L'étape suivante consiste à déterminer quels sont les systèmes de gameplay "
+"nécessaires à la réalisation de son projet. Si on a un système qui..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:282
 msgid "tracks all of its data internally"
-msgstr ""
+msgstr "fait le suivi de toutes ses données à l'interne"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:283
 msgid "should be globally accessible"
-msgstr ""
+msgstr "devrait être accessible à l'échelle mondiale"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:284
 msgid "should exist in isolation"
-msgstr ""
+msgstr "devrait exister de manière isolée"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:286
 msgid ""
 "... then one should create an :ref:`autoload 'singleton' node "
 "<doc_singletons_autoload>`."
 msgstr ""
+"... alors on devrait créer un :ref:`autoload 'singleton\" nœud "
+"<doc_singletons_autoload>`."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:290
 msgid ""
@@ -25508,6 +25728,11 @@ msgid ""
 "content. This structure more or less keeps the \"World\" as the main game "
 "node."
 msgstr ""
+"Pour les petits jeux, une alternative plus simple avec moins de contrôle "
+"serait d'avoir un singleton \"Game\" qui appelle simplement le :ref:"
+"`SceneTree.change_scene() <class_SceneTree_method_method_change_scene>` "
+"méthode pour remplacer le contenu du scénario principal. Cette structure "
+"maintient plus ou moins le \"Monde\" comme nœud principal du jeu."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:296
 msgid ""
@@ -25515,6 +25740,10 @@ msgid ""
 "\", or be manually added as a direct child of the root. Otherwise, the GUI "
 "nodes would also delete themselves during scene transitions."
 msgstr ""
+"Toute interface graphique devrait aussi être un singleton, être une partie "
+"transitoire du \"Monde\", ou être ajoutée manuellement comme un enfant "
+"direct de la racine. Sinon, les nœuds de l'interface graphique se "
+"supprimeraient également d'eux-mêmes pendant les transitions de scène."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:301
 msgid ""
@@ -25523,6 +25752,11 @@ msgid ""
 "on the reasons, please see the :ref:`'Autoloads vs. Internal Nodes' "
 "<doc_autoloads_versus_internal_nodes>` documentation."
 msgstr ""
+"Si l'on possède des systèmes qui modifient les données d'autres systèmes, il "
+"faut les définir comme leurs propres scripts ou scènes plutôt que comme des "
+"autochargements. Pour plus d'informations sur les raisons, veuillez "
+"consulter la documentation :ref:`'Autoloads vs. Internal Nodes' "
+"<doc_autoloads_versus_internal_nodes>`."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:307
 msgid ""
@@ -25533,6 +25767,12 @@ msgid ""
 "should have its own place in the hierachy as a sibling or some other "
 "relation."
 msgstr ""
+"Chaque sous-système d'un jeu doit avoir sa propre section dans l'arbre des "
+"scènes. On ne devrait utiliser les relations parent-enfant que dans les cas "
+"où les nœuds sont effectivement des éléments de leurs parents. Le fait de "
+"retirer le parent signifie-t-il raisonnablement que l'on devrait également "
+"retirer les enfants ? Si ce n'est pas le cas, il devrait avoir sa propre "
+"place dans hiérarchie en tant que frère, sœur ou autre parent."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:315
 msgid ""
@@ -25544,17 +25784,28 @@ msgid ""
 "node. To assign the ``target`` :ref:`NodePath <class_NodePath>`, use one of "
 "the following:"
 msgstr ""
+"Dans certains cas, on a besoin de ces nœuds séparés pour *également* se "
+"positionner les uns par rapport aux autres. On peut utiliser les nœuds :ref:"
+"`RemoteTransform <class_RemoteTransform>` / :ref:`RemoteTransform2D "
+"<class_RemoteTransform2D>` à cette fin. Ils permettront à un nœud cible "
+"d'hériter conditionnellement des éléments de transformation sélectionnés du "
+"nœud Remote\\*. Pour assigner le ``target``` :ref:`NodePath "
+"<class_NodePath>`, utilisez l'une des options suivantes :"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:323
 msgid ""
 "A reliable third party, likely a parent node, to mediate the assignment."
 msgstr ""
+"Une tierce partie fiable, probablement un nœud parent, pour assurer la "
+"médiation de l'assignation."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:324
 msgid ""
 "A group, to easily pull a reference to the desired node (assuming there will "
 "only ever be one of the targets)."
 msgstr ""
+"Un groupe, pour facilement obtenir une référence au nœud désiré (en "
+"supposant qu'il n'y aura jamais qu'une seule des cibles)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:327
 msgid ""
@@ -25562,45 +25813,52 @@ msgid ""
 "when one must micro-manage when a node must move around the SceneTree to "
 "preserve itself. For example..."
 msgstr ""
+"Quand faut-il le faire ? C'est à eux de décider. Le dilemme se pose "
+"lorsqu'il faut micro-gérer quand un nœud doit se déplacer dans l'arbre des "
+"scènes pour se préserver. Par exemple...."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:331
 msgid "Add a \"player\" node to a \"room\"."
-msgstr ""
+msgstr "Ajouter un nœud \"player\" à une \"room\"."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:332
 msgid "Need to change rooms, so one must delete the current room."
-msgstr ""
+msgstr "Besoin de changer de pièce, il faut donc supprimer la pièce courante."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:333
 msgid ""
 "Before the room can be deleted, one must preserve and/or move the player."
 msgstr ""
+"Avant de pouvoir supprimer la salle, il faut conserver et/ou déplacer le "
+"joueur."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:335
 msgid "Is memory a concern?"
-msgstr ""
+msgstr "La mémoire est-elle une préoccupation ?"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:337
 msgid ""
 "If not, one can just create the two rooms, move the player and delete the "
 "old one. No problem."
 msgstr ""
+"Si ce n'est pas le cas, il suffit de créer les deux salles, de déplacer le "
+"lecteur et d'effacer l'ancienne. Pas de problème."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:340
 msgid "If so, one will need to..."
-msgstr ""
+msgstr "Si c'est le cas, il faudra...."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:342
 msgid "Move the player somewhere else in the tree."
-msgstr ""
+msgstr "Déplacez le joueur ailleurs dans l'arbre."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:343
 msgid "Delete the room."
-msgstr ""
+msgstr "Supprimer la salle."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:344
 msgid "Instantiate and add the new room."
-msgstr ""
+msgstr "Instanciez et ajoutez la nouvelle pièce."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:345
 #, fuzzy
@@ -25616,32 +25874,48 @@ msgid ""
 "is dangerous. It's a maintenance burden, strains code readability, and "
 "bloats the intellectual content of a project unnecessarily."
 msgstr ""
+"Le problème est que le joueur est ici un \"cas spécial\", un cas où les "
+"développeurs doivent *savoir* qu'ils doivent gérer le joueur de cette façon "
+"pour le projet. En tant que telle, la seule façon de partager cette "
+"information de façon fiable en équipe est de la *documenter*. Il est "
+"cependant dangereux de conserver les détails de la mise en œuvre dans la "
+"documentation. C'est une charge de maintenance, qui pèse sur la lisibilité "
+"du code et gonfle inutilement le contenu intellectuel d'un projet."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:354
 msgid ""
 "In a more complex game with larger assets, it can be a better idea to simply "
 "keep the player somewhere else in the SceneTree entirely. This involves..."
 msgstr ""
+"Dans un jeu plus complexe avec des ressources plus importantes, il peut être "
+"préférable de simplement garder le joueur ailleurs dans l'Arbre de scène. "
+"Cela implique..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:357
 msgid "More consistency."
-msgstr ""
+msgstr "Plus de cohérence."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:358
 msgid "No \"special cases\" that must be documented and maintained somewhere."
 msgstr ""
+"Pas de \"cas spéciaux\" qui doivent être documentés et conservés quelque "
+"part."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:359
 msgid ""
 "No opportunity for errors to occur because these details are not accounted "
 "for."
 msgstr ""
+"Il n'y a aucun risque d'erreur parce que ces détails ne sont pas pris en "
+"compte."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid ""
 "In contrast, if one ever needs to have a child node that does *not* inherit "
 "the transform of their parent, one has the following options:"
 msgstr ""
+"En revanche, si l'on a besoin d'avoir un nœud enfant qui n'hérite pas de la "
+"transformation de son parent, on a les options suivantes :"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:365
 msgid ""
@@ -25649,6 +25923,9 @@ msgid ""
 "them. As nodes with no transform, Nodes will not pass along such information "
 "to their children."
 msgstr ""
+"La solution **déclarative** : placez un :ref:`Node <class_Node>` entre eux. "
+"En tant que nœuds sans transformation, les nœuds ne transmettront pas ces "
+"informations à leurs enfants."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:368
 msgid ""
@@ -25657,6 +25934,11 @@ msgid ""
 "<class_Spatial_method_set_as_toplevel>` node. This will make the node ignore "
 "its inherited transform."
 msgstr ""
+"La solution **impérative** : Utilisez le setter ``set_as_toplevel`` pour le "
+"nœud :ref:`CanvasItem "
+"<class_CanvasItem_CanvasItem_method_method_as_toplevel>` ou :ref:`Spatial "
+"<class_Spatial_method_set_as_toplevel>`. Cela fera que le nœud ignorera sa "
+"transformation héritée."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:375
 msgid ""
@@ -25667,6 +25949,14 @@ msgid ""
 "keeping these in a separate branch from the \"world\" can help simplify the "
 "management of game connections and the like."
 msgstr ""
+"Si vous construisez un jeu en réseau, gardez à l'esprit quels nœuds et "
+"systèmes de jeu sont pertinents pour tous les joueurs par rapport à ceux qui "
+"ne le sont que pour le serveur faisant autorité. Par exemple, les "
+"utilisateurs n'ont pas tous besoin d'avoir une copie de la logique "
+"\"PlayerController\" de chaque joueur. Au lieu de cela, ils n'ont besoin que "
+"des leurs. En tant que tel, le fait de les garder dans une branche séparée "
+"du \"monde\" peut aider à simplifier la gestion des connexions de jeu et "
+"d'autres choses du même genre."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:382
 msgid ""
@@ -25676,6 +25966,12 @@ msgid ""
 "else. If so, then it stands to reason they should be children of that parent "
 "(and likely part of that parent's scene if they aren't already)."
 msgstr ""
+"La clé de l'organisation d'une scène est de considérer le SceneTree en "
+"termes relationnels plutôt qu'en termes spatiaux. Les nœuds doivent-ils être "
+"dépendants de l'existence de leurs parents ? Si ce n'est pas le cas, ils "
+"peuvent prospérer tous seuls ailleurs. Si c'est le cas, il va de soi qu'ils "
+"devraient être les enfants de ce parent (et probablement faire partie de la "
+"scène de ce parent s'ils ne le sont pas déjà)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:388
 msgid ""
@@ -25684,16 +25980,24 @@ msgid ""
 "one still has the flexibility to move nodes around, it is still best when "
 "such moves are unnecessary by default."
 msgstr ""
+"Cela signifie-t-il que les nœuds eux-mêmes sont des composants ? Pas du "
+"tout. Les arbres de nœuds de Godot forment une relation d'agrégation, pas "
+"une relation de composition. Mais bien que l'on ait toujours la flexibilité "
+"de déplacer les nœuds, il est préférable que de tels déplacements ne soient "
+"pas nécessaires par défaut."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:4
 msgid "When to use scenes versus scripts"
-msgstr ""
+msgstr "Quand utiliser des scènes ou des scripts ?"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:6
 msgid ""
 "We've already covered how scenes and scripts are different. Scripts define "
 "an engine class extension with imperative code, scenes with declarative code."
 msgstr ""
+"Nous avons déjà expliqué en quoi les scènes et les scénarios sont "
+"différents. Les scripts définissent une extension de classe du moteur avec "
+"code impératif, les scènes avec code déclaratif."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:10
 msgid ""
@@ -25702,10 +26006,15 @@ msgid ""
 "are often used in conjunction with a script so that the scene acts as an "
 "extension of the scripts declarative code."
 msgstr ""
+"Les capacités de chaque système sont donc différentes. Les scènes peuvent "
+"définir comment une classe étendue s'initialise, mais pas quel est son "
+"comportement réel. Les scènes sont souvent utilisées en conjonction avec un "
+"script de sorte que la scène agit comme une extension du code déclaratif du "
+"script."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
 msgid "Anonymous types"
-msgstr ""
+msgstr "Types anonymes"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:18
 msgid ""
@@ -25713,13 +26022,20 @@ msgid ""
 "alone. This is, in essence, what the Godot Editor does, only in the C++ "
 "constructor of its objects."
 msgstr ""
+"Il * est * possible de définir complètement le contenu des scènes à l’aide "
+"d’un seul script. Il s’agit, en substance, ce que fait l’éditeur Godot, "
+"uniquement dans le constructeur de C++ de ses objets."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
+#, fuzzy
 msgid ""
 "But, choosing which one to use can be a dilemma. Creating script instances "
 "is identical to creating in-engine classes whereas handling scenes requires "
 "a change in API:"
 msgstr ""
+"Mais, choisir lequel utiliser peut être un dilemme. La création d'instances "
+"de script est identique à la création de classes dans le moteur alors que la "
+"gestion des scènes nécessite un changement dans l'API :"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:59
 msgid ""
@@ -25727,6 +26043,10 @@ msgid ""
 "differences between engine and script code. The larger and more complex the "
 "node, the more reason there is to build it as a scene."
 msgstr ""
+"Aussi, les scripts fonctionnent un peu plus lentement que les scènes en "
+"raison de la différence de vitesse entre le moteur et le code de script. "
+"Plus grand et complexe est le nœud, plus il y a de raison de le construire "
+"comme une scène."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
 #, fuzzy
@@ -25740,10 +26060,15 @@ msgid ""
 "dialog with an optional icon. In these cases, the user's ability to use the "
 "script is much more streamlined. Rather than having to..."
 msgstr ""
+"Dans certains cas, un utilisateur peut enregistrer un script comme un "
+"nouveau type dans l'éditeur lui-même. Il s'affiche sous la forme d'un "
+"nouveau type dans la boîte de dialogue de création de nœud ou de ressource "
+"avec une icône facultative. Dans ces cas, la capacité de l'utilisateur à "
+"utiliser le script est beaucoup plus simple. Plutôt que d'avoir à...."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:71
 msgid "Know the base type of the script they would like to use."
-msgstr ""
+msgstr "Connaître le type de base du script qu'ils aimeraient utiliser."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
 #, fuzzy
@@ -25756,8 +26081,9 @@ msgid "Add the script to the node."
 msgstr "Ajoutez ce code à la fonction :"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
+#, fuzzy
 msgid "(Drag-n-drop method)"
-msgstr ""
+msgstr "(Méthode glisser-déposer)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
 #, fuzzy
@@ -25770,18 +26096,21 @@ msgid "Drag and drop the script onto the node in the Scene dock."
 msgstr "Ecrire un script qui peut accéder à d'autres nœuds de la scène."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
+#, fuzzy
 msgid "(Property method)"
-msgstr ""
+msgstr "(Propriété de la méthode)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:85
 msgid ""
 "Scroll down to the bottom of the Inspector to find the ``script`` property "
 "and select it."
 msgstr ""
+"Faites défiler vers le bas de l'inspecteur pour trouver la propriété "
+"``script``et sélectionnez-la."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:87
 msgid "Select \"Load\" from the dropdown."
-msgstr ""
+msgstr "Sélectionnez \"Charger\" dans la liste déroulante."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:89
 #, fuzzy
@@ -25795,6 +26124,10 @@ msgid ""
 "of the above work. The creation dialog even has a search bar to look up the "
 "type by name."
 msgstr ""
+"Avec un script enregistré, le type de script devient une option de création "
+"comme les autres nœuds et ressources du système. Il n'est pas nécessaire "
+"d'effectuer les travaux ci-dessus. La boite de dialogue de création a même "
+"une barre de recherche pour rechercher le type par nom."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:96
 #, fuzzy
@@ -25803,52 +26136,63 @@ msgstr "Il y a 6 types d'expressions :"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:98
 msgid "`Custom Types <doc_making_plugins>`"
-msgstr ""
+msgstr "Types personnalisés <doc_making_plugins>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:100
 msgid "Editor-only. Typenames are not accessible at runtime."
 msgstr ""
+"Éditeur seulement. Les noms de types ne sont pas accessibles au moment de "
+"l'exécution."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:102
 msgid "Does not support inherited custom types."
-msgstr ""
+msgstr "Ne prend pas en charge les types personnalisés hérités."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:104
 msgid "An initializer tool. Creates the node with the script. Nothing more."
-msgstr ""
+msgstr "Un outil d'initialisation. Crée le nœud avec le script. Rien de plus."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:106
 msgid ""
 "Editor has no type-awareness of the script or its relationship to other "
 "engine types or scripts."
 msgstr ""
+"L'éditeur n'est pas conscient du type du script ou de sa relation avec "
+"d'autres types du moteurs ou scripts."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:109
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:127
 msgid "Allows users to define an icon."
-msgstr ""
+msgstr "Permet aux utilisateurs de définir une icône."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:111
 msgid ""
 "Works for all scripting languages because it deals with Script resources in "
 "abstract."
 msgstr ""
+"Fonctionne pour tous les langages de script parce qu'il traite des "
+"ressources de script dans l'abstrait."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:113
 msgid ""
 "Set up using :ref:`EditorPlugin.add_custom_type "
 "<class_EditorPlugin_method_add_custom_type>`."
 msgstr ""
+"Configurer avec :ref:`EditorPlugin.add_custom_type "
+"<class_EditorPlugin_method_add_custom_type>`."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:115
 msgid ""
 "`Script Classes <https://godot.readthedocs.io/en/latest/getting_started/"
 "step_by_step/scripting_continued.html#register-scripts-as-classes>`_"
 msgstr ""
+"`Classes de script <https://godot.readthedocs.io/en/latest/getting_started/"
+"step_by_step/scripting_continued.html#register-scripts-as-classes>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
+#, fuzzy
 msgid "Editor and runtime accessible."
-msgstr ""
+msgstr "Editeur et runtime accessibles."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:119
 #, fuzzy
@@ -25856,22 +26200,32 @@ msgid "Displays inheritance relationships in full."
 msgstr "L'héritage multiple n'est pas autorisé."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:121
+#, fuzzy
 msgid ""
 "Creates the node with the script, but can also change types or extend the "
 "type from the editor."
 msgstr ""
+"Crée le nœud avec le script, mais peut aussi changer de type ou étendre le "
+"type depuis l'éditeur."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:124
+#, fuzzy
 msgid ""
 "Editor is aware of inheritance relationships between scripts, script "
 "classes, and engine C++ classes."
 msgstr ""
+"l'éditeur est conscient des relations entre les scripts, script classes, et "
+"les classes C++  du moteur."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:129
+#, fuzzy
 msgid ""
 "Engine developers must add support for languages manually (both name "
 "exposure and runtime accessibility)."
 msgstr ""
+"Les développeurs du moteur doivent ajouter le support pour les langues "
+"manuellement (à la fois le nom de l'exposition et l'exécution de "
+"l'accessibilité)."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
 #, fuzzy
@@ -25884,6 +26238,9 @@ msgid ""
 "scripting languages. Each scripting language must implement its own support "
 "for exposing this information."
 msgstr ""
+"L'éditeur analyse les dossiers de projet et enregistre tous les noms exposés "
+"pour tous les langages de script. Chaque langage de script doit implémenter "
+"son propre support pour exposer ces informations."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:138
 msgid ""
@@ -25892,6 +26249,11 @@ msgid ""
 "script resource. Creating instances and accessing constants or static "
 "methods is viable from anywhere."
 msgstr ""
+"Les deux méthodologies ajoutent des noms au dialogue de création, mais les "
+"classes de script, en particulier, permettent également aux utilisateurs "
+"d'accéder au nom de type sans charger la ressource script. Créer des "
+"instances et accéder à des constantes ou à des méthodes statiques est viable "
+"de n'importe où."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:143
 msgid ""
@@ -25900,15 +26262,24 @@ msgid ""
 "creating in-house tools for designers to use will find an easier time of "
 "things this way."
 msgstr ""
+"Avec de telles fonctionnalités, on peut souhaiter que leur type soit un "
+"script sans scène en raison de la facilité d'utilisation qu'il offre aux "
+"utilisateurs. Ceux qui développent des plugins ou qui créent des outils "
+"internes pour les concepteurs trouveront les choses plus faciles de cette "
+"façon."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:148
 msgid ""
 "On the downside, it also means having to use largely imperative programming."
 msgstr ""
+"Le revers de la médaille, est que cela signifie aussi avoir à utiliser "
+"largement la programmation impérative."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
 msgid "In the end, the best approach is to consider the following:"
 msgstr ""
+"En fin de compte, la meilleure approche consiste à tenir compte de ce qui "
+"suit :"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
 msgid ""
@@ -25918,6 +26289,11 @@ msgid ""
 "chances are that it should probably be a script, likely one with a custom "
 "name/icon."
 msgstr ""
+"Si l'on souhaite créer un outil de base qui sera réutilisé dans plusieurs "
+"projets différents et que les gens de tous les niveaux de compétence "
+"utiliseront probablement (y compris ceux qui ne se qualifient pas de "
+"\"programmeurs\"), alors il y a de fortes chances pour que ce soit un "
+"script, probablement avec un nom/un icône personnalisé."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:160
 msgid ""
@@ -25925,6 +26301,9 @@ msgid ""
 "should always be a scene. Scenes are easier to track/edit and provide more "
 "security than scripts."
 msgstr ""
+"Si l'on souhaite créer un concept propre à son jeu, il doit toujours s'agir "
+"d'une scène. Les scènes sont plus faciles à suivre/modifier et offrent plus "
+"de sécurité que les scripts."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:164
 msgid ""
@@ -25932,6 +26311,9 @@ msgid ""
 "this in 3.1 by declaring a script class and giving it a scene as a constant. "
 "The script becomes, in effect, a namespace:"
 msgstr ""
+"Si l'on veut donner un nom à une scène, alors ils peuvent toujours le faire "
+"dans 3.1 en déclarant une classe de script et en lui donnant une scène comme "
+"une constante. Le script devient, en effet, un espace de noms :"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:4
 msgid "Autoloads versus internal nodes"

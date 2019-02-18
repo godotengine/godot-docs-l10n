@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-02-10 13:55+0100\n"
-"PO-Revision-Date: 2019-02-10 12:39+0000\n"
+"PO-Revision-Date: 2019-02-17 14:38+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -12098,7 +12098,7 @@ msgstr "if"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:164
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:166
 msgid "See `if/else/elif`_."
-msgstr "`if/else/elif`_ 를 보십시오."
+msgstr "`if/else/elif`_\\ 를 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:164
 msgid "elif"
@@ -12115,16 +12115,15 @@ msgstr "for"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 msgid "See for_."
-msgstr "for_ 를 보십시오."
+msgstr "for_\\ 를 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
 msgid "do"
 msgstr "do"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
-#, fuzzy
 msgid "Reserved for future implementation of ``do... while`` loops."
-msgstr "do...while 루프의 향후 구현을 위해 예약됩니다."
+msgstr "이후 ``do... while`` 루프 구현을 위해 예약됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:812
@@ -12133,7 +12132,7 @@ msgstr "while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 msgid "See while_."
-msgstr "while_ 을 보십시오."
+msgstr "while_\\ 을 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:852
@@ -12142,7 +12141,7 @@ msgstr "match"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "See match_."
-msgstr "match_ 를 보십시오."
+msgstr "match_\\ 를 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 msgid "switch"
@@ -12150,9 +12149,8 @@ msgstr "switch"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
-#, fuzzy
 msgid "Reserved for future implementation. See match_."
-msgstr "향후 구현을 위해 예약됩니다."
+msgstr "향후 구현을 위해 예약됩니다. match_\\ 를 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid "case"
@@ -12343,8 +12341,8 @@ msgstr "preload"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 msgid "Preloads a class or variable. See `Classes as resources`_."
 msgstr ""
-"클래스나 변수를 미리 로드 (Preload)합니다. `Classes as resources`_ 를 참고하"
-"세요."
+"클래스나 변수를 미리 불러오기(Preload)합니다. `리소스 클래스`_\\ 를 참고하세"
+"요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
 msgid "yield"
@@ -12352,7 +12350,8 @@ msgstr "yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
 msgid "Coroutine support. See `Coroutines with yield`_."
-msgstr "코루틴을 지원합니다. `Coroutines with yield`_ 를 참고하세요."
+msgstr ""
+"코루틴을 지원합니다. `yield를 가진 코루틴(Coroutine)`_\\ 을 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:224
 msgid "assert"
@@ -12364,7 +12363,7 @@ msgid ""
 "`Assert keyword`_."
 msgstr ""
 "조건을 가정하고 실패 시 오류를 기록합니다. 디버그가 아닌 빌드에는 무시됩니"
-"다. `Assert keyword`_ 를 참고하세요."
+"다. `Assert 키워드`_\\ 를 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
 msgid "remote"
@@ -12381,7 +12380,7 @@ msgid ""
 "<doc_high_level_multiplayer>`."
 msgstr ""
 "네트워킹 RPC(원격 절차 호출) 주석. :ref:`high-level multiplayer docs "
-"<doc_high_level_multiplayer>` 을 참고하세요."
+"<doc_high_level_multiplayer>`\\ 를 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
 msgid "master"
@@ -13240,12 +13239,11 @@ msgstr ""
 "꽤 유용합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:661
-#, fuzzy
 msgid ""
 "If you pass a name to the enum, it will put all the keys inside a constant "
 "dictionary of that name."
 msgstr ""
-"이넘에 이름을 전달하면, 그 이름의 상수 딕셔너리 내에 모든 값을 넣을 것입니다."
+"이넘에 이름을 전달하면, 그 이름의 상수 딕셔너리 내에 모든 키를 넣을 것입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:684
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
@@ -14030,6 +14028,8 @@ msgid ""
 "objects can listen to in a generic way. Create custom signals for a class "
 "using the ``signal`` keyword."
 msgstr ""
+"시그널은 한 객체에서 다른 객체로 들을 수 있는 신호 메시지를 전달하는 일반적"
+"인 방식입니다. ``signal`` 키워드로 클래스를 위한 커스텀 시그널을 만드세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
 msgid ""
@@ -14037,6 +14037,8 @@ msgid ""
 "built-in signals of nodes such as :ref:`class_Button` or :ref:"
 "`class_RigidBody`."
 msgstr ""
+"내장된 노드, :ref:`class_Button`\\ 이나 :ref:`class_RigidBody`\\ 의 시그널과 "
+"같은 방식으로 이 시그널도 연결할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
 msgid ""
@@ -14044,6 +14046,9 @@ msgid ""
 "the custom signal to a method in a separate script, using the :ref:`Object."
 "connect() <class_Object_method_connect>` method:"
 msgstr ""
+"다음은 :ref:`Object.connect() <class_Object_method_connect>` 메서드를 이용해 "
+"한 스크립트에 커스텀 시그널을 만들고 이를 다른 스크립트에 연결하는 예시입니"
+"다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1513
 msgid ""
@@ -14053,6 +14058,10 @@ msgid ""
 "rather than the signal or the method, meaning that each connection has "
 "unique bindings."
 msgstr ""
+"GDScript는 인수를 신호와 메서드 사이의 연결에 바인딩 할 수 있습니다. 시그널"
+"이 보내질 때, 연결된 메소드를 호출하면 바인딩 된 인자가 메소드에 주어집니다. "
+"이러한 바운드 인수는 신호 또는 메서드가 아닌 연결에만 적용되므로 각 연결마다 "
+"고유 한 바인딩이 있음을 의미합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1519
 msgid ""

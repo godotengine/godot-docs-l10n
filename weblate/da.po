@@ -3,6 +3,7 @@
 #
 # Christoffer Schindel <ceas@outlook.com>, 2018.
 # Dankse Memes <purplelops@gmail.com>, 2018.
+# Daniel Kartin <totalfreak@protonmail.com>, 2019.
 # Esben Damkjær Sørensen <esben@damkjaergaard.com>, 2018.
 # GhostReven <GhostReven@gmail.com>, 2018.
 # Jonathan B. Jørgensen <pizzaernam@gmail.com>, 2018.
@@ -12,8 +13,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-02-10 13:55+0100\n"
-"PO-Revision-Date: 2018-12-13 10:14+0000\n"
-"Last-Translator: GhostReven <GhostReven@gmail.com>\n"
+"PO-Revision-Date: 2019-02-18 08:22+0000\n"
+"Last-Translator: Daniel Kartin <totalfreak@protonmail.com>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/da/>\n"
 "Language: da\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.4-dev\n"
+"X-Generator: Weblate 3.5-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -32,6 +33,8 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"Godots dokumentation er tilgængelig på forskellige sprog og versioner. Udvid "
+"\"Læs Dokumentationen\" panelet i bunden af sidebaren for at se listen."
 
 #: ../../docs/index.rst:10
 #, fuzzy
@@ -50,6 +53,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
+"Denne dokumentation er oversat fra den `originale Engelske <https://docs."
+"godotengine.org/en/latest>`_ af fællesskabs medlemmer på `Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -65,6 +71,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"Nuværende, er lokaliserede oversættelser kun tilgængelige for den \"nyeste"
+"\" (udviklings) grenen, men burde være egnede til at lære hvordan man bruger "
+"stabile Godot udgivelse alligevel."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -143,7 +152,7 @@ msgstr "Udvikling"
 
 #: ../../docs/index.rst:115
 msgid "Creating Content"
-msgstr ""
+msgstr "Skabe indhold"
 
 #: ../../docs/index.rst:123 ../../docs/community/index.rst:2
 msgid "Community"
@@ -237,22 +246,21 @@ msgstr ""
 "en hver art til en vilkårlig platform og uden brugsrestriktion overhovedet."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
 "Denne side har til hensigt at tilbyde en bred præsentation af spilmotoren og "
-"indholdet af denne dokumentation, således du ved hvor at starte, hvis du er "
-"en begynder, eller hvor du kan finde information om en specifik funktion."
+"indholdet af denne dokumentation, således at du ved hvor du kan starte, hvis "
+"du er en begynder, eller hvor du kan finde information om en specifik "
+"funktion."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
 msgstr "Om Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
@@ -263,7 +271,6 @@ msgstr ""
 "kan genanvende hvis du mangler en hurtig fremvisning af Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -276,11 +283,10 @@ msgstr ""
 "skabelse af 2D- og 3D-spil gennem en solid grænseflade. Den tilrådestiller "
 "et omfattende sæt af ordinære værktøjer, så brugere kan fokusere på at "
 "kreere spil uden at skulle genopfinde hjulet. Spil kan eksporteres i ét klik "
-"til diverse platforme, inklusiv større skrivebordsplatforme (Linux, macOS, "
-"Windows) så vel som mobile (Android iOS) og web-baserede (HTML5) platforme."
+"til diverse platforme, inklusiv større PC platforme (Linux, macOS, Windows) "
+"så vel som mobile (Android iOS) og web-baserede (HTML5) platforme."
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -311,7 +317,6 @@ msgid "About the documentation"
 msgstr "Om dokumentationen"
 
 #: ../../docs/about/introduction.rst:48
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -323,8 +328,8 @@ msgstr ""
 "Denne dokumentation er kontinuerligt skrevet, rettet, ændret og forbedret af "
 "medlemmer af Godot Engine fællesskabet. Det er redigeret via tekstfiler i "
 "`reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_ markup "
-"sprog og så kompileret til en statisk hjemmeside/et offline dokumentved brug "
-"af open source `Sphinx <http://www.sphinx-doc.org>`_ og `ReadTheDocs "
+"sprog og så kompileret til en statisk hjemmeside/et offline dokument ved "
+"brug af open source `Sphinx <http://www.sphinx-doc.org>`_ og `ReadTheDocs "
 "<https://readthedocs.org/>`_ værktøjer."
 
 #: ../../docs/about/introduction.rst:55
@@ -352,7 +357,6 @@ msgstr ""
 "\"."
 
 #: ../../docs/about/introduction.rst:66
-#, fuzzy
 msgid "Organization of the documentation"
 msgstr "Tilrettelæggelse af dokumentationen"
 
@@ -377,7 +381,6 @@ msgstr ""
 "osv. Det indeholder også :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:75
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the main *raison d'être* of this "
 "documentation, as it contains all the necessary information on using the "
@@ -411,7 +414,6 @@ msgstr ""
 "udvikling af C++ moduler eller plugins."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -421,7 +423,7 @@ msgid ""
 msgstr ""
 ":ref:`sec-community` sektionen giver information relateret til medvirken til "
 "spilmotorens udvikling og livet af dens fællesskab, f.eks. hvordan man "
-"rapporterer bugs, hjælper med dokumentation, osv. Den henviser også til "
+"rapporterer fejl, hjælper med dokumentation, osv. Den henviser også til "
 "diverse fællesskabskanaler såsom IRC og Discord og indeholder en liste af "
 "anbefalede tredjeparts guides udenfor denne dokumentation."
 
@@ -484,26 +486,29 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"Du er velkommen til at downloade og bruge Godot til et hvert formål, "
+"personligt, non-profit, kommercielt, eller andet;"
 
 #: ../../docs/about/faq.rst:14
-#, fuzzy
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
-msgstr "Du er modificere, (re)distribuere og remixe Godot så meget du lyster"
+msgstr ""
+"Du er velkommen til at modificere, redistribuere, distribuere og remixe "
+"Godot så meget du lyster, til et hvert formål, både ikke kommercielt, og "
+"kommercielt."
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Al indholdet af dokumentationen er under den tolerante Creative Commons "
-"Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/"
-">`_) licens med tilskrivelse af \"Juan Linietsky, Ariel Manzur og Godot "
-"fælleskabet\"."
+"Al udgivet indhold af dokumentationen er under den tolerante Creative "
+"Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/"
+"by/3.0/>`_) licens med tilskrivelse af \"Juan Linietsky, Ariel Manzur og "
+"Godot fælleskabet\"."
 
 #: ../../docs/about/faq.rst:20
 msgid ""
@@ -530,12 +535,11 @@ msgstr ""
 "i Godot kildearkivet."
 
 #: ../../docs/about/faq.rst:28
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"Se også `the license page on the Godot website <https://godotengine.org/"
+"Se også `licens siden på Godot hjemmesiden <https://godotengine.org/"
 "license>`_."
 
 #: ../../docs/about/faq.rst:31
@@ -544,7 +548,7 @@ msgstr "Hvilke platformer er understøttet af Godot?"
 
 #: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**Til redaktøren**"
 
 #: ../../docs/about/faq.rst:35 ../../docs/tutorials/misc/jitter_stutter.rst:53
 msgid "Windows"
@@ -553,7 +557,7 @@ msgstr "Windows"
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 #: ../../docs/tutorials/misc/jitter_stutter.rst:78
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
@@ -584,32 +588,30 @@ msgid "Web"
 msgstr "Web"
 
 #: ../../docs/about/faq.rst:48
-#, fuzzy
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
-"Både 32 og 64 bit binaries er understøttet hvor det giver mening med 64 som "
-"standard."
+"Både 32 og 64 bit binære filer er understøttet hvor det giver mening, med 64 "
+"som standard."
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"Nogen brugere rapportere også at have bygget Godot succesfuldt på ARM-"
+"baserede systemer med Linux, som Raspberry Pi."
 
 #: ../../docs/about/faq.rst:54
-#, fuzzy
 msgid ""
 "Additionally, there is some unofficial third-party work being done on "
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"Nogle brugere meddeler også at succesfulde kompileringer og brug af Godot på "
-"ARM-baserede systemer med Linux såsom Raspberry Pi. Der er også nogle "
-"uofficielle tredjepartsscripts under tilblivelse til kompilering til "
-"konsoller. Ingen af disse er dog inkluderet i standard kompileringsscripts "
-"eller eksportskabeloner."
+"Derudover, er der noget uofficielt tredjeparts igangværende arbejde på at "
+"bygge til nogle konsoller. Men, intet af dette er inkluderet i de standarde "
+"bygge scripts eller export skabeloner."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
@@ -621,20 +623,18 @@ msgstr ""
 "<toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:62
-#, fuzzy
 msgid "Which programming languages are supported in Godot?"
-msgstr "Hvilke sprog er understøttet i Godot?"
+msgstr "Hvilke programmerings sprog er understøttet i Godot?"
 
 #: ../../docs/about/faq.rst:64
-#, fuzzy
 msgid ""
 "The officially supported languages for Godot are GDScript, Visual Scripting, "
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
-"De officielle sprog undersøttet af Godot er GDScript, Visual Scripting, C# "
-"og C++. Se underkategorierne for hvert sprog i :ref:`scripting <toc-learn-"
-"scripting>` sektionen."
+"De sprog som er officielt undersøttet af Godot er GDScript, Visual "
+"Scripting, C# og C++. Se underkategorierne for hvert sprog i :ref:`scripting "
+"<toc-learn-scripting>` sektionen."
 
 #: ../../docs/about/faq.rst:68
 msgid ""

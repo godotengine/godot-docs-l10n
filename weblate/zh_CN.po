@@ -18,6 +18,7 @@
 # Haowen Liu <liu.haowen.andy@gmail.com>, 2018.
 # Harlan Howell <lin_032@hotmail.com>, 2018.
 # Hezekiah Ho <hyq1986@gmail.com>, 2018.
+# hnclca <hnclca@qq.com>, 2019.
 # Jack <skyturtur@gmail.com>, 2018.
 # Jingtian Pan <panjingtian@126.com>, 2018.
 # Joe Zhao <nikejaycn@gmail.com>, 2018.
@@ -58,7 +59,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-02-10 13:55+0100\n"
-"PO-Revision-Date: 2019-02-10 12:39+0000\n"
+"PO-Revision-Date: 2019-02-18 08:22+0000\n"
 "Last-Translator: yzt <834950797@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
@@ -99,7 +100,6 @@ msgstr ""
 "godot-engine/>`_ 上的官方Godot文档。"
 
 #: ../../docs/index.rst:20
-#, fuzzy
 msgid ""
 "Depending on the translation effort's completion level, you may find "
 "paragraphs or whole pages which are still in English. You can help the "
@@ -115,6 +115,7 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"目前，本地化翻译仅适用于最新(开发)分支版本，不过学习推荐使用Godot的稳定版本。"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -280,7 +281,6 @@ msgstr ""
 "戏, 发布在任何平台, 并且没有任何使用限制。"
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
@@ -294,7 +294,6 @@ msgid "About Godot Engine"
 msgstr "关于Godot引擎"
 
 #: ../../docs/about/introduction.rst:23
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
@@ -305,7 +304,6 @@ msgstr ""
 "们。"
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -347,7 +345,6 @@ msgid "About the documentation"
 msgstr "关于文档"
 
 #: ../../docs/about/introduction.rst:48
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -418,7 +415,6 @@ msgstr ""
 "程开始。这个教程是所有新用户的学习起点。"
 
 #: ../../docs/about/introduction.rst:80
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
@@ -436,7 +432,6 @@ msgstr ""
 "擎，开发C++组件和编辑器插件等信息。"
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -853,10 +848,9 @@ msgstr ""
 "容。尽管如此，FBX支持仍然可以由第三方作为插件提供。(参见上面插件的问题。)"
 
 #: ../../docs/about/faq.rst:159
-#, fuzzy
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
-msgstr "能否在Godot中加入闭源SDK，比如PhysX、GameWorks？"
+msgstr "能否在Godot中加入闭源SDK，比如FMOD、GameWorks等？"
 
 #: ../../docs/about/faq.rst:161
 msgid ""
@@ -1380,20 +1374,17 @@ msgid ""
 msgstr "您可以看到顶部有四个工作区按钮:2D、3D、脚本和资源馆。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
-#, fuzzy
 msgid ""
 "You’ll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press F1 to "
 "access it."
 msgstr ""
-"您可以为所有类型的游戏使用 **2D工作区** 。非2D游戏您可以用它创建界面。按下F1"
-"切换。\n"
-"|image15|"
+"您将对所有类型的游戏使用 **2D 工作区** 。除了2d 游戏外, 2D 工作区也是构建接口"
+"的地方。按 F1 访问它。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
 msgid ""
@@ -2021,14 +2012,13 @@ msgid "Conclusion"
 msgstr "总结"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:114
-#, fuzzy
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_instancing_continued`."
 msgstr ""
-"当您想创建同一对象的多个副本时，实例化会非常有用。您也可以使用代码创建实例(请"
-"参阅 :ref:`doc_scripting_continued`)。"
+"当您想创建同一对象的多个副本时，实例化会非常有用。您也可以使用GDScript创建实"
+"例(请参阅 :ref:`doc_scripting_continued`)。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
@@ -2644,7 +2634,6 @@ msgstr ""
 "我们使用代码方法！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
-#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
@@ -2677,13 +2666,12 @@ msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "接下来，写一个函数，按钮按下时它会被触发:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:259
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"最后，在 ``_ready()`` 中通过 :ref:`Object.connect() "
-"<class_Object_method_connect>` 来连接到按钮的“pressed”信号。"
+"最后，通过 :ref:`Object.connect() <class_Object_method_connect>` 来连接按钮"
+"的 “pressed” 信号到 ``_ready()`` 。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:275
 msgid "The final script should look like this:"
@@ -2755,7 +2743,6 @@ msgstr ""
 "理。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
-#, fuzzy
 msgid ""
 "Idle processing is activated when the method :ref:`Node._process() "
 "<class_Node_method__process>` is found in a script. It can be turned off and "
@@ -2846,7 +2833,6 @@ msgid ""
 msgstr "第二种方法是通过代码实现。下面的示例是在场景中标记出敌人:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
-#, fuzzy
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
@@ -2865,15 +2851,14 @@ msgstr ""
 "``player_was_discovered`` 。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
-#, fuzzy
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
-"通过调用 :ref:`SceneTree.get_nodes_in_group() "
-"<class_SceneTree_method_get_nodes_in_group>` 也可以获得 ``enemies`` 节点的完"
-"整列表:"
+"也可以通过调用 :ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>` 获得 ``enemies`` 节点的完整列"
+"表："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""
@@ -2893,7 +2878,6 @@ msgid "Notifications"
 msgstr "通知"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
-#, fuzzy
 msgid ""
 "Godot has a system of notifications. These are usually not needed for "
 "scripting, as it's too low-level and virtual functions are provided for most "
@@ -2969,7 +2953,6 @@ msgstr ""
 "这种情况并向您发出警告。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
-#, fuzzy
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
@@ -2994,7 +2977,6 @@ msgid ""
 msgstr "预加载它会更方便，因为它发生在解析阶段(仅限GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
-#, fuzzy
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
@@ -3913,6 +3895,8 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"每次敌人击中玩家时, 都会发出信号。我们需要禁用玩家的碰撞, 这样我们就不会多次"
+"触发 ``hit`` 信号。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
 msgid ""
@@ -3920,6 +3904,8 @@ msgid ""
 "middle of the engine's collision processing. Using ``call_deferred()`` "
 "allows us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"如果发生在发动机碰撞处理的中间, 禁用该区域的碰撞形状可能会导致错误。使用 "
+"``call_deferred()`` 允许我们让 Godot 等待禁用形状, 直到这样做是安全的。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -4433,12 +4419,12 @@ msgstr "文本: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid "*Layout* : \"Top Wide\""
-msgstr ""
+msgstr "*布局*: \"顶部宽\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
 msgid "*Align* : \"Center\""
-msgstr ""
+msgstr "*对齐*: \"居中\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "MessageLabel"
@@ -4518,6 +4504,9 @@ msgid ""
 "useful to delay, such as in the above code, where we want to wait a little "
 "bit of time before showing the \"Start\" button."
 msgstr ""
+"当您需要暂停很短的时间时, 使用 Timer 节点的替代方法是使用场景树的 "
+"``create_timer()`` 功能。这对于延迟非常有用, 例如在上面的代码中, 我们要等待一"
+"点时间后再显示 “Start” 按钮。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
 msgid "This function is called by ``Main`` whenever the score changes."
@@ -4618,7 +4607,6 @@ msgstr ""
 "一个您喜欢的颜色并拖拽 ``ColorRect`` 的大小使它覆盖整个屏幕。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
-#, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."
@@ -10635,15 +10623,15 @@ msgstr "术语对应"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
 msgid "GameObject -> Node"
-msgstr ""
+msgstr "游戏对象 -> 节点"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:198
 msgid "Add a component -> Inheriting"
-msgstr ""
+msgstr "添加组件 -> 继承"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:199
 msgid "Prefab -> Externalized branch"
-msgstr ""
+msgstr "预制 -> 外部化分支"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:203
 msgid "Scripting: GDScript, C# and Visual Script"
@@ -11133,7 +11121,7 @@ msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "{project} --goto {file}:{line}:{col}"
-msgstr ""
+msgstr "{project} --goto {file}:{line}:{col}"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
 #, fuzzy
@@ -13182,6 +13170,8 @@ msgid ""
 "objects can listen to in a generic way. Create custom signals for a class "
 "using the ``signal`` keyword."
 msgstr ""
+"信号是一种从对象发送通知消息的方式，其他对象可以以通用方式侦听该对象。使用"
+"``signal``关键字为类创建自定义信号。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
 msgid ""
@@ -13189,6 +13179,8 @@ msgid ""
 "built-in signals of nodes such as :ref:`class_Button` or :ref:"
 "`class_RigidBody`."
 msgstr ""
+"这些信号的连接方式可能与连接节点的内置信号相同, 例如： :ref:`class_Button` "
+"或 :ref:`class_RigidBody`。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
 msgid ""
@@ -13196,6 +13188,8 @@ msgid ""
 "the custom signal to a method in a separate script, using the :ref:`Object."
 "connect() <class_Object_method_connect>` method:"
 msgstr ""
+"下面是一个示例, 它在一个脚本中创建自定义信号, 并使用 :ref:`Object.connect() "
+"<class_Object_method_connect>` 方法将自定义信号连接到单独脚本中的方法："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1513
 msgid ""
@@ -13205,6 +13199,9 @@ msgid ""
 "rather than the signal or the method, meaning that each connection has "
 "unique bindings."
 msgstr ""
+"gdscript 可以将参数绑定到信号和方法之间的连接。当发出信号时, 调用连接的方法, "
+"绑定参数被赋予该方法。这些绑定参数特定于连接, 而不是信号或方法, 这意味着每个"
+"连接都有唯一的绑定。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1519
 msgid ""
@@ -13212,6 +13209,9 @@ msgid ""
 "signal and a method, binding the button instance to the connection. The "
 "handler uses the bound argument to print which button instance was pressed."
 msgstr ""
+"下面的示例在按钮的 ``pressed`` 信号和方法之间创建连接，将按钮实例绑定到该连"
+"接。\n"
+"处理程序使用绑定参数打印按下了哪个按钮实例。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
 msgid ""
@@ -13219,11 +13219,13 @@ msgid ""
 "<class_Object_method_emit_signal>` method which broadcasts the signal and "
 "arguments."
 msgstr ""
+"信号由 :ref:`Object.emit_signal() <class_Object_method_emit_signal>` 方法生"
+"成，该方法广播信号和参数。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1537
 msgid ""
 "Extending a previous example to use all the features of GDScript signals:"
-msgstr ""
+msgstr "扩展前面的示例，使用GDScript信号的所有特性："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1569
 msgid "Coroutines with yield"
@@ -21179,6 +21181,8 @@ msgid ""
 "`F12`, to view **debug information** like JavaScript, engine, and WebGL "
 "errors."
 msgstr ""
+"使用浏览器集成的开发人员控制台 (通常使用： :kbd:`F12`打开) 来查看 **调试信息"
+"**, 如 javascript、引擎和WebGL错误。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
 msgid ""
@@ -21202,19 +21206,21 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:25
 msgid "WebGL 2"
-msgstr ""
+msgstr "WebGL 2"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option selected."
 msgstr ""
+"在 *OpenGL ES 3* 呈现器从 Godot 删除以支持 *Vulkan* 之前, 当选择 *GLES3* 选项"
+"时, HTML5导出使用 *WebGL 2* 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
 msgid ""
 "Usage of WebGL 2 is not recommended due to its expected removal from Godot "
 "without replacement."
-msgstr ""
+msgstr "不建议使用 WebGL 2 ，因为它预期会在不更换的情况下从 Godot 中删除。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:33
 #, fuzzy
@@ -21233,7 +21239,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
-msgstr ""
+msgstr "Godot 的 WebGL 2 渲染器与 3D 存在问题，不再维护。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
 msgid "Limitations"
@@ -21297,16 +21303,20 @@ msgid ""
 "engine is started from within a valid input event handler. This requires :"
 "ref:`customization of the HTML page <doc_customizing_html5_shell>`."
 msgstr ""
+"出于同样的原因，除非从有效的输入事件处理程序中启动引擎，否则全屏项目设置将不"
+"起作用。这需要： :ref:`customization of the HTML page "
+"<doc_customizing_html5_shell>`。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid "Audio autoplay"
-msgstr ""
+msgstr "音频自动播放"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:76
 msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
 msgstr ""
+"Chrome 限制网站播放音频的方式。可能需要玩家单击或轻按或按住一个键来启用音频。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
 msgid ""
@@ -21314,14 +21324,16 @@ msgid ""
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
 "autoplay>`__."
 msgstr ""
+"Google 提供了关于 `Web音频自动播放策略 <https://sites.google.com/a/chromium."
+"org/dev/audio-video/autoplay>`__。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
-msgstr ""
+msgstr ":ref:`class_HTTPClient` 和 :ref:`class_HTTPRequest`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
-msgstr ""
+msgstr "HTTP类在HTML5平台上有几个限制："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
@@ -21369,7 +21381,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
 msgid "Boot splash is not displayed"
-msgstr ""
+msgstr "不显示启动初始点"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:104
 msgid ""
@@ -47507,7 +47519,6 @@ msgstr ""
 "到的输入做了很多事情，顺序如下:"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:77
-#, fuzzy
 msgid ""
 "First of all, the standard :ref:`Node._input() <class_Node_method__input>` "
 "function will be called in any node that overrides it (and hasn't disabled "
@@ -47530,7 +47541,6 @@ msgstr ""
 "许GUI侦听。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:82
-#, fuzzy
 msgid ""
 "Second, it will try to feed the input to the GUI, and see if any control can "
 "receive it. If so, the :ref:`Control <class_Control>` will be called via the "
@@ -47556,7 +47566,6 @@ msgstr ""
 "件进一步传播。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:92
-#, fuzzy
 msgid ""
 "If so far no one consumed the event, the unhandled input callback will be "
 "called if overridden (and not disabled with :ref:`Node."
@@ -47576,7 +47585,6 @@ msgstr ""
 "时不会收到它们。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:97
-#, fuzzy
 msgid ""
 "If no one wanted the event so far, and a :ref:`Camera <class_Camera>` is "
 "assigned to the Viewport, a ray to the physics world (in the ray direction "
