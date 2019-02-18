@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,7 @@ msgid "Sprite animation"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-msgid "Click on the ``Player`` node and add an :ref:`AnimatedSprite <class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle the appearance and animations for our player. Notice that there is a warning symbol next to the node. An ``AnimatedSprite`` requires a :ref:`SpriteFrames <class_SpriteFrames>` resource, which is a list of the animations it can display. To create one, find the ``Frames`` property in the Inspector and click \"<null>\" -> \"New SpriteFrames\". Next, in the same location, click ``<SpriteFrames>``, then click \"Open Editor\" to open the \"SpriteFrames\" panel:"
+msgid "Click on the ``Player`` node and add an :ref:`AnimatedSprite <class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle the appearance and animations for our player. Notice that there is a warning symbol next to the node. An ``AnimatedSprite`` requires a :ref:`SpriteFrames <class_SpriteFrames>` resource, which is a list of the animations it can display. To create one, find the ``Frames`` property in the Inspector and click \"[empty]\" -> \"New SpriteFrames\". Next, in the same location, click ``<SpriteFrames>``, then click \"Open Editor\" to open the \"SpriteFrames\" panel:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:111
@@ -121,7 +121,7 @@ msgid "The player images are a bit too large for the game window, so we need to 
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:125
-msgid "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child of ``Player``. This will determine the player's \"hitbox\", or the bounds of its collision area. For this character, a ``CapsuleShape2D`` node gives the best fit, so next to \"Shape\" in the Inspector, click \"<null>\"\" -> \"New CapsuleShape2D\".  Using the two size handles, resize the shape to cover the sprite:"
+msgid "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child of ``Player``. This will determine the player's \"hitbox\", or the bounds of its collision area. For this character, a ``CapsuleShape2D`` node gives the best fit, so next to \"Shape\" in the Inspector, click \"[empty]\"\" -> \"New CapsuleShape2D\".  Using the two size handles, resize the shape to cover the sprite:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
