@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -864,7 +864,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:411
-#, fuzzy
 msgid ""
 "As Godot's 3D engine renders in linear color space, it's important to "
 "understand that textures that are supplied as color (i.e. albedo) need to be "
@@ -873,16 +872,15 @@ msgstr ""
 "Como el motor 3D de Godot genera las imágenes en espacio de color lineal, es "
 "importante comprender que las texturas que son asignadas como color (por "
 "ejemplo, albedo) necesitan ser especificadas como tal para la correcta "
-"conversión SRGB->linear."
+"conversión sRGB->linear."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:415
 msgid "Uniforms can also be assigned default values:"
 msgstr "A los uniforms se les pueden asignar valores por defecto:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:425
-#, fuzzy
 msgid "Built-in functions"
-msgstr "Funciones built-in"
+msgstr "Funciones integradas"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:427
 msgid ""
@@ -1234,18 +1232,16 @@ msgid "vec_type **step** ( vec_type a, vec_type b )"
 msgstr "vec_type **step** ( vec_type a, vec_type b )"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:517
-#, fuzzy
 msgid "``b[i] < a[i] ? 0.0 : 1.0``"
-msgstr "\\` b[i] < a[i] ? 0.0 : 1.0 \\`"
+msgstr "``b[i] < a[i] ? 0.0 : 1.0``"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:519
 msgid "vec_type **step** ( float a, vec_type b )"
 msgstr "vec_type **step** ( float a, vec_type b )"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:519
-#, fuzzy
 msgid "``b[i] < a ? 0.0 : 1.0``"
-msgstr "\\` b[i] < a ? 0.0 : 1.0 \\`"
+msgstr "``b[i] < a ? 0.0 : 1.0``"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:521
 msgid "vec_type **smoothstep** ( vec_type a, vec_type b, vec_type c )"
@@ -1369,7 +1365,6 @@ msgid "vec_type **faceforward** ( vec_type N, vec_type I, vec_type Nref )"
 msgstr "vec_type **faceforward** ( vec_type N, vec_type I, vec_type Nref )"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:551
-#, fuzzy
 msgid "If dot(Nref, I) < 0, return N, otherwise –N"
 msgstr "Si dot(Nref, I) < 0 retorna N, de otro modo –N"
 

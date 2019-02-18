@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -245,9 +245,8 @@ msgid "do"
 msgstr "do"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
-#, fuzzy
 msgid "Reserved for future implementation of ``do... while`` loops."
-msgstr "Reservado para futura implementación de bucles do...while."
+msgstr "Reservado para futura implementación de bucles ``do... while``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:812
@@ -273,9 +272,8 @@ msgstr "switch"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
-#, fuzzy
 msgid "Reserved for future implementation. See match_."
-msgstr "Reservado para futura implementación."
+msgstr "Reservado para futura implementación. Ver match_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid "case"
@@ -1354,12 +1352,11 @@ msgstr ""
 "si quieres asignar números consecutivos a alguna constante."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:661
-#, fuzzy
 msgid ""
 "If you pass a name to the enum, it will put all the keys inside a constant "
 "dictionary of that name."
 msgstr ""
-"Si le das nombre a la enumeración, todos los valores que esta contenga se "
+"Si le das un nombre al enum, todos los valores que este contenga se "
 "asignarán a un diccionario de constantes con ese nombre."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:684
@@ -2194,6 +2191,9 @@ msgid ""
 "objects can listen to in a generic way. Create custom signals for a class "
 "using the ``signal`` keyword."
 msgstr ""
+"Las señales son una forma de enviar mensajes que contienen notificaciones "
+"desde un objeto que puede ser escuchado por otros de forma genérica. Crea "
+"señales personalizadas para una clase usando la palabra clave ``signal``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
 msgid ""
@@ -2201,6 +2201,9 @@ msgid ""
 "built-in signals of nodes such as :ref:`class_Button` or :ref:"
 "`class_RigidBody`."
 msgstr ""
+"Estas señales pueden ser conectadas a métodos de la misma forma en la que "
+"conectas señales propias de nodos tales como :ref:`class_Button` o :ref:"
+"`class_RigidBody`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
 msgid ""
@@ -2208,6 +2211,9 @@ msgid ""
 "the custom signal to a method in a separate script, using the :ref:`Object."
 "connect() <class_Object_method_connect>` method:"
 msgstr ""
+"He aquí un ejemplo donde se crea una señal personalizada en un script y en "
+"otro se conecta dicha señal a un método, usando a su vez el método ref:"
+"`Object.connect() <class_Object_method_connect>` method:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1513
 msgid ""
@@ -2217,6 +2223,11 @@ msgid ""
 "rather than the signal or the method, meaning that each connection has "
 "unique bindings."
 msgstr ""
+"GDScript puede asociar  argumentos a las conexiones entre una señal y un "
+"método. Cuando la señal es emitida, llamando así al método conectado, el "
+"argumento asociado es pasado al método. Estos argumentos asociados son en "
+"realidad específicos a la conexión, en vez de serlos para la señal o el "
+"método, queriendo decir que cada conexión tiene asociaciones únicas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1519
 msgid ""
@@ -2224,6 +2235,10 @@ msgid ""
 "signal and a method, binding the button instance to the connection. The "
 "handler uses the bound argument to print which button instance was pressed."
 msgstr ""
+"He aquí un ejemplo donde se crea una conexión entre la señal ``pressed`` de "
+"un botón y un método, asociando la instancia del botón con la conexión. El "
+"manejador usa el argumento asociado para imprimir cual instancia del botón "
+"fue presionada."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
 msgid ""
@@ -2231,11 +2246,15 @@ msgid ""
 "<class_Object_method_emit_signal>` method which broadcasts the signal and "
 "arguments."
 msgstr ""
+"Las señales son generadas por el método :ref:`Object.emit_signal() "
+"<class_Object_method_emit_signal>` el cual difunde la señal y los argumentos."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1537
 msgid ""
 "Extending a previous example to use all the features of GDScript signals:"
 msgstr ""
+"Extendiendo un ejemplo previo para usar todas las prestaciones de las "
+"señales en GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1569
 msgid "Coroutines with yield"

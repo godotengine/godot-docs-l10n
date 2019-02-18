@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,10 +32,10 @@ msgid ""
 "features rely on it. There is another datatype that is just as important: :"
 "ref:`Resource <class_Resource>`."
 msgstr ""
-"Bisher waren :ref:`Node <class_Node>` in Godot der wichtigste Datentyp, da "
-"die meisten Verhalten und Features der Engine durch sie implementiert "
-"werden. Ein anderer Datentyp ist ebenso wichtig: :ref:`Resource "
-"<class_Resource>`."
+"Bisher haben wir uns auf die :ref:`Node <class_Node>` Klasse in Godot "
+"konzentriert, da dies die Klasse ist, die Du zum Kodieren von Verhalten "
+"verwendest. Die meisten Funktionen der Engine sind darauf angewiesen. Ein "
+"anderer Datentyp ist genauso wichtig: :ref:`Resource <class_Resource>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
 msgid ""
@@ -44,6 +44,10 @@ msgid ""
 "containers**. They don't do anything on their own: instead, nodes use the "
 "data contained in resources."
 msgstr ""
+"*Nodes* geben Dir Funktionalität: Sie zeichnen Sprites, 3D-Modelle, "
+"simulieren Physik, ordnen Benutzeroberflächen usw. an. **Ressourcen * sind "
+"**Datencontainer**. Sie machen nichts alleine: Stattdessen verwenden Nodes "
+"die in Ressourcen enthaltenen Daten."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 msgid ""
@@ -54,6 +58,12 @@ msgid ""
 "<class_AudioStream>`, :ref:`Font <class_Font>`, :ref:`Translation "
 "<class_Translation>`."
 msgstr ""
+"Alles, was Godot speichert oder von der Festplatte lädt, ist eine Ressource. "
+"Sei es eine Szene (eine .tscn- oder eine .scn-Datei), ein Bild, ein "
+"Skript ... Hier einige Beispele für ``Resource``: :ref:`Texture "
+"<class_Texture>`, :ref:`Script <class_Script>`, :ref:`Mesh <class_Mesh>`, :"
+"ref:`Animation <class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :"
+"ref:`Font <class_Font>`, :ref:`Translation <class_Translation>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
 msgid ""
@@ -62,6 +72,11 @@ msgid ""
 "again will return the same copy every time. As resources only contain data, "
 "there is no need to duplicate them."
 msgstr ""
+"Wenn die Engine eine Ressource von der Festplatte lädt, **wird sie nur "
+"einmal geladen**. Wenn sich bereits eine Kopie dieser Ressource im Speicher "
+"befindet, wird beim erneuten Laden der Ressource jedes Mal dieselbe Kopie "
+"zurückgegeben. Da Ressourcen nur Daten enthalten, müssen sie nicht "
+"dupliziert werden."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
 msgid ""
@@ -70,36 +85,50 @@ msgid ""
 "these types can become a resource. This means that both nodes and resources "
 "can contain resources as properties:"
 msgstr ""
+"Jedes Objekt, sei es ein Node oder eine Ressource, kann Eigenschaften "
+"exportieren. Es gibt viele Arten von Eigenschaften wie String, Integer "
+"(Ganzzahl), Vector2 usw., und jeder dieser Typen kann zu einer Ressource "
+"werden. Dies bedeutet, dass sowohl Nodes als auch Ressourcen Ressourcen als "
+"Eigenschaften enthalten können:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:39
 msgid "External vs built-in"
-msgstr ""
+msgstr "Extern vs. integriert"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:41
 msgid "There are two ways to save resources. They can be:"
 msgstr ""
+"Es gibt zwei Möglichkeiten, Ressourcen zu speichern. Diese können sein:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
 msgid "**External** to a scene, saved on the disk as individual files."
 msgstr ""
+"**Extern** zu einer Szene, die als einzelne Dateien auf der Festplatte "
+"gespeichert ist."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
 msgid ""
 "**Built-in**, saved inside the \\*.tscn or the \\*.scn file they're attached "
 "to."
 msgstr ""
+"**Integriert** gespeichert in der \\*.tscn- oder \\*.scn-Datei, an die sie "
+"angehängt sind."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
 msgid ""
 "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
 "`Sprite <class_Sprite>` node:"
 msgstr ""
+"Um genauer zu sein, hier ist eine :ref:`Texture <class_Texture>` in einem :"
+"ref:`Sprite <class_Sprite>` Node:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
 msgid ""
 "Clicking the resource preview allows us to view and edit the resource's "
 "properties."
 msgstr ""
+"Wenn Du auf die Ressourcenvorschau klickst, kannst Du die Eigenschaften der "
+"Ressource anzeigen und bearbeiten."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
 msgid ""
@@ -108,6 +137,11 @@ msgid ""
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes a built-in resource."
 msgstr ""
+"Die Pfadeigenschaft gibt an, woher die Ressource stammt. In diesem Fall "
+"kommt sie von einem PNG-Bild namens ``robi.png``. Wenn die Ressource aus "
+"einer solchen Datei stammt, handelt es sich um eine externe Ressource. Wenn "
+"Du den Pfad löschst oder dieser Pfad leer ist, wird sie zu einer "
+"integrierten Ressource."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
 msgid ""
@@ -115,22 +149,30 @@ msgid ""
 "scene. In the example above, if you erase the path \\`\"res://robi.png\"\\` "
 "and save, Godot will save the image inside the .tscn scene file."
 msgstr ""
+"Der Wechsel zwischen integrierten und externen Ressourcen erfolgt beim "
+"Speichern der Szene. Wenn Du im obigen Beispiel den Pfad \\`\"res://robi.png "
+"\"\\` löschst und speicherst, speichert Godot das Bild in der .tscn Szenen-"
+"Datei."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
 msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
+"Selbst wenn Du eine integrierte Ressource speicherst, lädt die Engine bei "
+"einer mehrmaligen Instanzierung einer Szene nur eine Kopie davon."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
 msgid "Loading resources from code"
-msgstr ""
+msgstr "Laden von Ressourcen via Code"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:72
 msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
 msgstr ""
+"Es gibt zwei Möglichkeiten, Ressourcen im Code zu laden. Erstens kannst Du "
+"jederzeit die Funktion ``load()`` verwenden:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
 msgid ""
@@ -138,10 +180,14 @@ msgid ""
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
+"Du kannst auch ``preload`` verwenden, um Ressourcen vorzuladen. Im Gegensatz "
+"zu ``load`` liest diese Funktion die Datei von der Festplatte und lädt sie "
+"erst zur Kompilierzeit. Daher kannst Du preload nicht mit einem variablen "
+"Pfad aufrufen: Du musst eine konstante Zeichenkette (String) verwenden."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
-msgstr ""
+msgstr "Laden von Szenen"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:108
 msgid ""
@@ -149,12 +195,17 @@ msgid ""
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
 "packed inside a resource."
 msgstr ""
+"Szenen sind auch Ressourcen, aber es gibt einen Haken. Auf der Festplatte "
+"gespeicherte Szenen sind Ressourcen des Typs :ref:`PackedScene "
+"<class_PackedScene>`. Die Szene ist in eine Ressource gepackt."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instance() <class_PackedScene_method_instance>` method."
 msgstr ""
+"Um eine Instanz der Szene zu erhalten, musst Du die Methode :ref:"
+"`PackedScene.instance() <class_PackedScene_method_instance>` verwenden."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
 msgid ""
@@ -162,6 +213,9 @@ msgid ""
 "returns the root node of the scene. You can then add it as a child of any "
 "other node."
 msgstr ""
+"Diese Methode erstellt die Nodes in der Hierarchie der Szene, konfiguriert "
+"sie und gibt den Stammnode der Szene zurück. Du kannst es dann als "
+"untergeordnetes Element eines anderen Nodes hinzufügen."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
 msgid ""
@@ -171,10 +225,15 @@ msgid ""
 "disk each time. Remember that, as always, images, meshes, etc. are all "
 "shared between the scene instances."
 msgstr ""
+"Der Ansatz hat mehrere Vorteile. Da die Funktion :ref:`PackedScene.instance "
+"() <class_PackedScene_method_instance>` ziemlich schnell ist, kannst Du neue "
+"Feinde, Schüsse, Effekte usw. erstellen, ohne sie jedes Mal erneut von der "
+"Festplatte laden zu müssen. Aber denke daran, dass Bilder, Meshes usw. von "
+"den Szeneninstanzen immer gemeinsam genutzt werden."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
 msgid "Freeing resources"
-msgstr ""
+msgstr "Ressourcen freigeben"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:146
 msgid ""
@@ -183,11 +242,14 @@ msgid ""
 "node, the engine frees all the resources it owns as well if no other node "
 "uses them."
 msgstr ""
+"Wenn eine ``Ressource`` nicht mehr verwendet wird, wird sie automatisch "
+"freigegeben. Da in den meisten Fällen Ressourcen in Nodes enthalten sind, "
+"gibt die Engine bei der Freigabe eines Nodes alle Ressourcen frei, die ihm "
+"gehören, sofern kein anderer Node sie verwendet."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:151
-#, fuzzy
 msgid "Creating your own resources"
-msgstr "Nodes erstellen"
+msgstr "Eigene Ressourcen erstellen"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
 msgid ""
@@ -196,6 +258,10 @@ msgid ""
 "serialized text or binary data (/*.tres, /*.res). They also inherit the "
 "reference-counting memory management from the Reference type."
 msgstr ""
+"Wie jedes Objekt in Godot können Benutzer auch Ressourcen schreiben. "
+"Ressourcenskripte erben die Fähigkeit, frei zwischen Objekteigenschaften und "
+"serialisiertem Text oder binären Daten (/*.tres, /*.res) zu übersetzen. Sie "
+"erben auch die Verwaltung des Referenzzählspeichers vom Referenztypen."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
 msgid ""
@@ -206,12 +272,21 @@ msgid ""
 "ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, and :ref:"
 "`Resource <class_Resource>` features:"
 msgstr ""
+"Gegenüber alternativen Datenstrukturen, wie JSON-, CSV- oder "
+"benutzerdefinierten TXT-Dateien, bietet dies viele entscheidende Vorteile. "
+"Benutzer können diese Assets nur als :ref:`Dictionary <class_Dictionary>` "
+"(JSON) oder als :ref:`File <class_File>` zum Analysieren importieren. Was "
+"Ressourcen auszeichnet, ist ihre Vererbung von :ref:`Object "
+"<class_Object>`, :ref:`Reference <class_Reference>` und :ref:`Resource "
+"<class_Resource>` Funktionen:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
 msgid ""
 "They can define constants, so constants from other data fields or objects "
 "are not needed."
 msgstr ""
+"Du kannst Konstanten definieren, sodass Konstanten aus anderen Datenfeldern "
+"oder Objekten nicht benötigt werden."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
 msgid ""
@@ -220,17 +295,26 @@ msgid ""
 "Resource script's structure needs to change, the game using the Resource "
 "need not also change."
 msgstr ""
+"Du kannst Methoden definieren, einschließlich Setter- / Getter-Methoden für "
+"Eigenschaften. Dies ermöglicht die Abstraktion und Einkapselung der zugrunde "
+"liegenden Daten. Wenn die Struktur des Ressource-Skripts geändert werden "
+"muss, muss das Spiel, das die Ressource verwendet, nicht ebenfalls geändert "
+"werden."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:169
 msgid ""
 "They can define signals, so Resources can trigger responses to changes in "
 "the data they manage."
 msgstr ""
+"Du kannst Signale definieren, sodass Ressourcen Antworten auf Änderungen in "
+"den von ihnen verwalteten Daten auslösen können."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:171
 msgid ""
 "They have defined properties, so users know 100% that their data will exist."
 msgstr ""
+"Sie verfügen über definierte Eigenschaften, sodass Benutzer zu 100% wissen, "
+"dass ihre Daten vorhanden sind."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:173
 msgid ""
@@ -238,12 +322,18 @@ msgid ""
 "feature. Users do not need to implement custom logic to import/export a "
 "resource file's data."
 msgstr ""
+"Die automatische Serialisierung und Deserialisierung von Ressourcen ist eine "
+"integrierte Funktion der Godot Engine. Benutzer müssen keine "
+"benutzerdefinierte Logik implementieren, um die Daten einer Ressourcendatei "
+"zu importieren oder zu exportieren."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:175
 msgid ""
 "Resources can even serialize sub-Resources recursively, meaning users can "
 "design even more sophisticated data structures."
 msgstr ""
+"Ressourcen können sogar Teilressourcen rekursiv serialisieren, sodass "
+"Benutzer noch ausgefeiltere Datenstrukturen entwerfen können."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:177
 msgid ""
@@ -251,6 +341,10 @@ msgid ""
 "Upon exporting a game, Godot serializes resource files as binary files (\\*."
 "res) for increased speed and compression."
 msgstr ""
+"Benutzer können Ressourcen als versionskontrollen-freundliche Textdateien "
+"(\\*. tres) speichern. Beim Exportieren eines Spiels serialisiert Godot "
+"Ressourcendateien als Binärdateien (\\*.res), um die Geschwindigkeit und "
+"Komprimierung zu erhöhen."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
 msgid ""
@@ -259,11 +353,17 @@ msgid ""
 "their data. To do so, double-click the resource file in the FileSystem dock "
 "or click the folder icon in the Inspector and open the file in the dialog."
 msgstr ""
+"Der Inspektor der Godot Engine rendert die Ressourcendateien sofort. Daher "
+"müssen Benutzer häufig keine eigene Logik implementieren, um ihre Daten zu "
+"visualisieren oder zu bearbeiten. Doppelklicke dazu auf die Ressourcendatei "
+"im Dateisystemdock oder klicke im Inspektor auf das Ordnersymbol und öffne "
+"die Datei im Dialogfeld."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
 msgid ""
 "They can extend **other** resource types besides just the base Resource."
 msgstr ""
+"Du kannst **andere** Ressourcentypen als nur die Basisressource erweitern."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
 msgid ""
@@ -273,20 +373,31 @@ msgid ""
 "will invalidate the second object's variable. This is not so for Resources "
 "which won't free their memory until *all* instances are gone."
 msgstr ""
+"Ressourcen und Dictionaries (Wörterbücher) unterscheiden sich auch "
+"dahingehend, dass beide als Referenz übergeben werden, aber nur Ressourcen "
+"werden als Referenz gezählt. Das bedeutet, wenn ein Dictionary zwischen "
+"Objekten übergeben wird und das erste Objekt gelöscht wird, wird die "
+"Variable des zweiten Objekts ungültig. Dies gilt nicht für Ressourcen, die "
+"ihr Speicher erst freigegeben wird, wenn *alle* Instanzen nicht mehr "
+"vorhanden sind."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr ""
+"Godot erleichtert es, im Inspektor benutzerdefinierte Ressourcen zu "
+"erstellen."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:217
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
 msgstr ""
+"Erstelle im Inspektor ein einfaches Ressourcenobjekt. Dies kann sogar ein "
+"Typ sein, der Ressource ableitet, solange Dein Skript diesen Typ erweitert."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:218
 msgid "Set the ``script`` property in the Inspector to be your script."
-msgstr ""
+msgstr "Stelle die Eigenschaft ``script`` im Inspektor als Dein Skript ein."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:220
 msgid ""
@@ -295,6 +406,12 @@ msgid ""
 "custom properties too! To save a resource from the Inspector, click the "
 "Inspector's tools menu (top right), and select \"Save\" or \"Save As...\"."
 msgstr ""
+"Der Inspektor zeigt jetzt die benutzerdefinierten Eigenschaften Deines "
+"Ressourcen-Skripts an. Wenn Du diese Werte bearbeiten und die Ressource "
+"speicherst, serialisiert der Inspektor auch die benutzerdefinierten "
+"Eigenschaften! Um eine Ressource aus dem Inspektor zu speichern, klicke auf "
+"das Menü des Inspektors (oben rechts) und wähle \"Speichern\" oder "
+"\"Speichern unter ...\"."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
 msgid ""
@@ -304,11 +421,15 @@ msgid ""
 "creation dialog. This will auto-add your script to the Resource object you "
 "create."
 msgstr ""
+"Wenn die Skriptsprache Folgendes unterstützt :ref:`script classes "
+"<doc_scripting_continued_class_name>, dann wird der Prozess optimiert. Wenn "
+"Du nur für Dein Skript einen Namen definieren, wird dieser dem "
+"Erstellungsdialog des Inspektors hinzugefügt. Dadurch wird Dein Skript "
+"automatisch zu dem von Dir erstellten Ressourcenobjekt hinzugefügt."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:230
-#, fuzzy
 msgid "Let's see some examples."
-msgstr "Einige Beispiele:"
+msgstr "Sehen wir uns einige Beispiele an."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:303
 msgid ""
@@ -318,6 +439,12 @@ msgid ""
 "ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and "
 "editors for their data."
 msgstr ""
+"Ressourcenskripte ähneln den ScriptableObjects von Unity. Der Inspektor "
+"bietet integrierte Unterstützung für benutzerdefinierte Ressourcen an. Auf "
+"Wunsch können Benutzer sogar eigene, auf Controls basierende Werkzeugskripte "
+"erstellen und diese mit einem :ref:`EditorPlugin <class_EditorPlugin>` "
+"kombinieren, um benutzerdefinierte Visualisierungen und Editoren für ihre "
+"Daten zu erstellen."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:309
 msgid ""
@@ -325,30 +452,43 @@ msgid ""
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
 "to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
+"Die DataTables und CurveTables der Unreal Engine 4 können mit "
+"Ressourcenskripten auch leicht neu erstellt werden. DataTables sind ein "
+"String, der einer benutzerdefinierten Struktur zugeordnet ist, ähnlich einem "
+"Dictionary, das einen String einem sekundären benutzerdefinierten "
+"Ressourcenskript zuordnet."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:345
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr ""
+"Anstatt nur die Dictionary-Werte einzugeben, können Sie alternativ auch ..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:347
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
 msgstr ""
+"eine Wertetabelle aus einer Kalkulationstabelle importieren und diese "
+"Schlüsselwertpaare generieren oder ..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:349
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
 msgstr ""
+"eine Visualisierung im Editor entwerfen und ein einfaches Plugin erstellen, "
+"das beim Öffnen dieser Ressourcentypen zum Inspektor hinzugefügt wird."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
+"CurveTables sind dasselbe wie DataTables, außer dass sie einem Array von "
+"Float-Werten (Gleitkommawerten) oder einem Ressourcenobjekt, wie :ref:`Curve "
+"<class_Curve>` / :ref:`Curve2D <class_Curve2D>` zugeordnet sind."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:357
 msgid ""
@@ -359,6 +499,13 @@ msgid ""
 "keyword in GDScript) won't work. Godot will not serialize the custom "
 "properties on the script subclass properly."
 msgstr ""
+"Beachte, dass Ressourcendateien (\\*.tres /\\*.res) den Pfad des von Dir "
+"verwendeten Skripts in der Datei speichert. Wenn sie geladen sind, werden "
+"sie dieses Skript als Erweiterung ihres Typs abrufen und laden. Das "
+"bedeutet, dass der Versuch, eine Unterklasse zuzuordnen, d. h. eine innere "
+"Klasse eines Skripts (z. B. das Schlüsselwort ``class`` 'in GDScript), nicht "
+"funktioniert. Godot wird die benutzerdefinierten Eigenschaften der "
+"Skriptunterklasse nicht ordnungsgemäß serialisieren."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:363
 msgid ""
@@ -366,3 +513,6 @@ msgid ""
 "doesn't extend ``Resource``, and then determine that the script failed to "
 "load for the Resource object since the types are incompatible."
 msgstr ""
+"Im folgenden Beispiel würde Godot das ``Node``-Skript laden, prüfen, dass es "
+"``Resource`` nicht erweitert, und dann feststellen, dass das Skript nicht "
+"für das Ressourcenobjekt geladen wurde, da die Typen nicht kompatibel sind."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:4
-#, fuzzy
 msgid "CanvasItem shaders"
-msgstr "CanvasItem"
+msgstr "Shaders CanvasItem"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:6
 msgid ""
@@ -40,9 +39,8 @@ msgid "Render modes"
 msgstr "Modos de renderizado"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:17
-#, fuzzy
 msgid "Render mode"
-msgstr "Modo de render"
+msgstr "Modo de renderizado"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:17
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:95
@@ -89,14 +87,12 @@ msgid "**blend_premul_alpha**"
 msgstr "**blend_premul_alpha**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:27
-#, fuzzy
 msgid "Pre-multiplied alpha blend mode."
 msgstr "Modo de blending con alfa premultiplicado."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
-#, fuzzy
 msgid "**blend_disabled**"
-msgstr "**cull_disabled**"
+msgstr "**blend_disabled**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
 msgid "Disable blending, values (including alpha) are written as-is."
@@ -115,9 +111,8 @@ msgid "**light_only**"
 msgstr "**light_only**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:33
-#, fuzzy
 msgid "Only draw on light pass."
-msgstr "Sólo dibuja el light pass (cuando se usa multipass)."
+msgstr "Sólo dibuja en light pass (cuando se usa multipass)."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:35
 msgid "**skip_vertex_transform**"
@@ -128,9 +123,8 @@ msgid "VERTEX/NORMAL/etc need to be transformed manually in vertex function."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
-#, fuzzy
 msgid "Vertex built-ins"
-msgstr "Vertex Lighting (Iluminación de vértices)"
+msgstr "Vertex built-ins"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:41
 msgid ""
@@ -305,9 +299,8 @@ msgid "Point size for point drawing."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:123
-#, fuzzy
 msgid "Fragment built-ins"
-msgstr "Tipos de Vectores propios"
+msgstr "Fragment built-ins"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:125
 msgid ""
@@ -379,9 +372,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:160
-#, fuzzy
 msgid "in sampler2D **TEXTURE**"
-msgstr "**isampler2D**"
+msgstr "in sampler2D **TEXTURE**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:160
 msgid "Default 2D texture."
@@ -435,9 +427,8 @@ msgid "Screen texture, mipmaps contain gaussian blurred versions."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
-#, fuzzy
 msgid "Light built-ins"
-msgstr "Tipos integrados básicos"
+msgstr "Light built-ins"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
 msgid ""
@@ -497,9 +488,8 @@ msgid "**SCREEN_TEXTURE** Coordinate (for using with screen texture)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:213
-#, fuzzy
 msgid "UV for Point Sprite."
-msgstr "Usar Point Size (Tamaño de punto)"
+msgstr "UV para Point Sprite."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
 msgid "inout vec2 **LIGHT_VEC**"

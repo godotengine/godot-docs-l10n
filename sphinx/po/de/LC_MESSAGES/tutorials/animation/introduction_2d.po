@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:4
 msgid "Introduction to the 2D animation features"
-msgstr ""
+msgstr "Einführung in die 2D-Animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 msgid "Overview"
@@ -30,26 +30,28 @@ msgid ""
 "The :ref:`class_AnimationPlayer` node allows you to create anything from "
 "simple to complex animations."
 msgstr ""
+"Der :ref:`class_AnimationPlayer`-Node erlaubt es, allerlei Animationen zu "
+"erstellen - von ganz einfachen bis hin zu recht komplexen Abläufen."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:12
 msgid "In this guide you learn to:"
-msgstr ""
+msgstr "In dieser Einführung lernst Du:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:14
 msgid "Work with the Animation Panel"
-msgstr ""
+msgstr "mit dem Animationspanel zu arbeiten"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:15
 msgid "Animate any property of any node"
-msgstr ""
+msgstr "eine Eigenschaft eines beliebigen Nodes zu animieren"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:16
 msgid "Create a simple animation"
-msgstr ""
+msgstr "eine simple Animation zu erstellen"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:17
 msgid "Call functions with the powerful Call Function Tracks"
-msgstr ""
+msgstr "auf Funktionen mithilfe der Funktionsaufrufspur zuzugreifen"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:19
 msgid ""
@@ -59,16 +61,24 @@ msgid ""
 "textures. But not only. You can also control gameplay related values and "
 "call any function."
 msgstr ""
+"In Godot kannst Du jeden Wert im Inspektor animieren. Eine Animation "
+"entsteht, indem der Wert oder Zustand einer Eigenschaft zeitabhängig "
+"verändert wird. So lässt sich alles Mögliche animieren: Sprites, UI-"
+"Elemente, Partikel, die Sichtbarkeit sowie Texturfarben. Aber nicht nur: Du "
+"kannst jede Funktion eines Skripts aus dem AnimationPlayer aufrufen und so "
+"den weiteren Spielverlauf steuern."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:26
 msgid "Create an AnimationPlayer node"
-msgstr ""
+msgstr "Einen AnimationPlayer-Node anlegen"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:28
 msgid ""
 "To use the animation tools we first have to create an :ref:"
 "`class_AnimationPlayer` node."
 msgstr ""
+"Um die Werkzeuge zur Animation zu verwenden, benötigen wir zunächst einen :"
+"ref:`class_AnimationPlayer`-Node."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:31
 msgid ""
@@ -76,56 +86,65 @@ msgid ""
 "AnimationPlayer node can hold multiple animations, that can automatically "
 "transition to one another."
 msgstr ""
+"Der AnimationPlayer-Node dient als Behälter für Animationsabfolgen. Es "
+"können mehrere Animationen in einem AnimationPlayer-Node enthalten sein, "
+"sodass es einen automatischen Übergang von der einen zur anderen gibt."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:38
 msgid "The AnimationPlayer node"
-msgstr ""
+msgstr "Der AnimationPlayer-Node"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:40
 msgid ""
 "Click on the AnimationPlayer node in the Node tab to open the Animation "
 "Panel at the bottom of the viewport."
 msgstr ""
+"Klicke auf den AnimationPlayer-Node im Node-Tab, um das Animationspanel im "
+"Ansichtsbereich unten zu öffnen."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:46
 msgid "The animation panel position"
-msgstr ""
+msgstr "Das Animationspanel in der Bodenleiste"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:48
 msgid "It consists of five parts:"
-msgstr ""
+msgstr "Es besteht aus fünf Bereichen:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:53
 msgid "The animation panel"
-msgstr ""
+msgstr "Das Animationspanel"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:55
 msgid "Animation controls (i.e. add, load, save, and delete animations)"
 msgstr ""
+"Bedienfelder zur Organisation von Animationen (d.h. hinzufügen, laden, "
+"speichern und löschen von Animationen)"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:56
 msgid "The tracks listing"
-msgstr ""
+msgstr "die Liste der Animationsspuren"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:57
 msgid "The timeline with keyframes"
-msgstr ""
+msgstr "die Zeitleiste mit angelegten Schlüsselbildern (Keyframes)"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:58
 msgid "The keyframe editor (when enabled)"
-msgstr ""
+msgstr "die Schlüsselbildbearbeitung (wenn aufgeklappt)"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:59
 msgid ""
 "The timeline and track controls, where you can zoom the timeline and edit "
 "tracks for example."
 msgstr ""
+"die Bedienfelder zur Verkleinerung/Vergrößerung der Zeitleiste sowie "
+"Bearbeitung der Spuren."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:62
 msgid ""
 "See the `animation panel reference <#animation-panel-reference>`__ below for "
 "details."
-msgstr ""
+msgstr "Siehe `#animation-panel-reference`__ unten für Genaueres."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:66
 msgid "Computer animation relies on keyframes"
@@ -188,7 +207,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:113
 msgid "Scene setup"
-msgstr "Eine Szene aufsetzen"
+msgstr "Eine Szene einrichten"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:115
 msgid ""

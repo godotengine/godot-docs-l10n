@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1991,6 +1991,8 @@ msgid ""
 "objects can listen to in a generic way. Create custom signals for a class "
 "using the ``signal`` keyword."
 msgstr ""
+"信号是一种从对象发送通知消息的方式，其他对象可以以通用方式侦听该对象。使用"
+"``signal``关键字为类创建自定义信号。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
 msgid ""
@@ -1998,6 +2000,8 @@ msgid ""
 "built-in signals of nodes such as :ref:`class_Button` or :ref:"
 "`class_RigidBody`."
 msgstr ""
+"这些信号的连接方式可能与连接节点的内置信号相同, 例如： :ref:`class_Button` "
+"或 :ref:`class_RigidBody`。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
 msgid ""
@@ -2005,6 +2009,8 @@ msgid ""
 "the custom signal to a method in a separate script, using the :ref:`Object."
 "connect() <class_Object_method_connect>` method:"
 msgstr ""
+"下面是一个示例, 它在一个脚本中创建自定义信号, 并使用 :ref:`Object.connect() "
+"<class_Object_method_connect>` 方法将自定义信号连接到单独脚本中的方法："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1513
 msgid ""
@@ -2014,6 +2020,9 @@ msgid ""
 "rather than the signal or the method, meaning that each connection has "
 "unique bindings."
 msgstr ""
+"gdscript 可以将参数绑定到信号和方法之间的连接。当发出信号时, 调用连接的方法, "
+"绑定参数被赋予该方法。这些绑定参数特定于连接, 而不是信号或方法, 这意味着每个"
+"连接都有唯一的绑定。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1519
 msgid ""
@@ -2021,6 +2030,9 @@ msgid ""
 "signal and a method, binding the button instance to the connection. The "
 "handler uses the bound argument to print which button instance was pressed."
 msgstr ""
+"下面的示例在按钮的 ``pressed`` 信号和方法之间创建连接，将按钮实例绑定到该连"
+"接。\n"
+"处理程序使用绑定参数打印按下了哪个按钮实例。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
 msgid ""
@@ -2028,11 +2040,13 @@ msgid ""
 "<class_Object_method_emit_signal>` method which broadcasts the signal and "
 "arguments."
 msgstr ""
+"信号由 :ref:`Object.emit_signal() <class_Object_method_emit_signal>` 方法生"
+"成，该方法广播信号和参数。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1537
 msgid ""
 "Extending a previous example to use all the features of GDScript signals:"
-msgstr ""
+msgstr "扩展前面的示例，使用GDScript信号的所有特性："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1569
 msgid "Coroutines with yield"

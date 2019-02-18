@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,11 +56,12 @@ msgid "`SCons <https://scons.org/pages/download.html>`_ build system"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:26
-#, fuzzy
 msgid ""
 "`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
 "(command-line tools are sufficient)"
-msgstr "Android SDK: https://developer.android.com/studio/"
+msgstr ""
+"`Android SDK <https://developer.android.com/studio/#command-tools>`_ (las "
+"herramientas de línea de comandos son suficiente)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:28
 msgid ""
@@ -69,19 +70,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:30
-#, fuzzy
 msgid ""
 "`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 or later"
-msgstr "Android SDK: https://developer.android.com/studio/"
+msgstr ""
+"`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 o superior"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:31
 msgid "Gradle (will be downloaded and installed automatically if missing)"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:32
-#, fuzzy
 msgid "JDK 8 (either OpenJDK or Oracle JDK)"
-msgstr "Instalar OpenJDK u Oracle JDK"
+msgstr "JDK 8 (puede ser OpenJDK u Oracle JDK)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:34
 msgid "JDK 9 or later are not currently supported"
@@ -158,21 +158,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:86
-#, fuzzy
 msgid ""
 "Release template (used when exporting with **Debugging Enabled** unchecked)"
 msgstr ""
-"Release template (se utiliza al exportar con \"Debugging Enabled\" OFF)"
+"Release template (se utiliza al exportar con **Debugging Enabled** apagado)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:99
 msgid "The resulting APK will be located at ``bin/android_release.apk``."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:101
-#, fuzzy
 msgid "Debug template (used when exporting with **Debugging Enabled** checked)"
 msgstr ""
-"Debug template (se utiliza cuando se exporta con \"Debugging Enabled\" ON)"
+"Debug template (se utiliza cuando se exporta con **Debugging Enabled** "
+"encendido)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:114
 msgid "The resulting APK will be located at ``bin/android_debug.apk``."
@@ -279,9 +278,8 @@ msgid "Check that the debug keystore is properly generated."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:190
-#, fuzzy
 msgid "Check that the jarsigner executable is from JDK 8."
-msgstr "El ejecutable *jarsigner* (desde JDK 6 u 8)"
+msgstr "Revisar que el ejecutable jarsigner es de JDK 8."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:192
 msgid ""

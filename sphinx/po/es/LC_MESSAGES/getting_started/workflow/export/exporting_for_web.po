@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid ""
 "This requires support for `WebAssembly <https://webassembly.org/>`__ and "
 "`WebGL <https://www.khronos.org/webgl/>`__ in the user's browser."
 msgstr ""
-"La exportación a HTML5 permite publicar juegos hechos en Godot Engine en el "
+"Exportar a HTML5 permite publicar juegos hechos en Godot Engine en el "
 "navegador. Esto requiere soporte para las tecnologías recientes `WebAssembly "
 "<https://webassembly.org/>`__ y `WebGL 2.0 <https://www.khronos.org/webgl/"
 ">`__ en el navegador del usuario."
@@ -38,6 +38,9 @@ msgid ""
 "`F12`, to view **debug information** like JavaScript, engine, and WebGL "
 "errors."
 msgstr ""
+"Usa la consola de desarrollo integrada en el navegador, usualmente se abre "
+"presionando :kbd:`F12`, para ver **información de depuración** como "
+"JavaScript, el motor, y errores de WebGL."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
 msgid ""
@@ -50,30 +53,36 @@ msgstr ""
 "``file://``. Para evitar esto, utiliza un servidor local."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
-#, fuzzy
 msgid ""
 "Python offers an easy method to start a local server. Use ``python -m "
 "SimpleHTTPServer`` with Python 2 or ``python -m http.server`` with Python 3 "
 "to serve the current working directory at ``http://localhost:8000``."
 msgstr ""
-"``python -m http.server`` con Python 3, ejecutará el servidor en el "
-"directorio de trabajo actual, accesible en ``http://localhost:8000``."
+"Python ofrece un método fácil de comenzar un servidor local. Usa ``python -m "
+"SimpleHTTPServer`` con Python 2 o ``python -m http.server`` con Python 3, "
+"ejecutará el servidor en el directorio de trabajo actual, accesible en "
+"``http://localhost:8000``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:25
 msgid "WebGL 2"
-msgstr ""
+msgstr "WebGL 2"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option selected."
 msgstr ""
+"Hasta que el renderizador *OpenGL ES 3* sea eliminado de Godot a favor de "
+"*Vulkan*, exportar a HTML5 usa *WebGL 2* cuando la opción *GLES3* ha sido "
+"seleccionada."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
 msgid ""
 "Usage of WebGL 2 is not recommended due to its expected removal from Godot "
 "without replacement."
 msgstr ""
+"El uso de WebGL 2 no es recomendado dado a que se espera sea removido de "
+"Godot sin un remplazo."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:33
 msgid ""
@@ -91,6 +100,8 @@ msgstr ""
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
 msgstr ""
+"El renderizador WebGL 2 de Godot tiene problemas con el 3D y ha dejado de "
+"ser mantenido."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
 msgid "Limitations"
@@ -162,16 +173,23 @@ msgid ""
 "engine is started from within a valid input event handler. This requires :"
 "ref:`customization of the HTML page <doc_customizing_html5_shell>`."
 msgstr ""
+"Por la misma razón, la opción de proyecto a pantalla completa no funciona a "
+"menos que el motor sea lanzado desde un manejador de eventos de entrada "
+"válido. Esto requiere :ref:`customizar la página HTML "
+"<doc_customizing_html5_shell>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid "Audio autoplay"
-msgstr ""
+msgstr "Reproducción automática de audio"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:76
 msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
 msgstr ""
+"Chrome restringe como las páginas web pueden reproducir sonido. Puede que "
+"sea necesario para el jugador hacer clic, tocar la pantalla o presionar un "
+"botón para habilitar el sonido."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
 msgid ""
@@ -179,14 +197,17 @@ msgid ""
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
 "autoplay>`__."
 msgstr ""
+"Google ofrece información adicional acerca de su  `política de reproducción "
+"automática de Web Audio <https://sites.google.com/a/chromium.org/dev/audio-"
+"video/autoplay>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
-msgstr ""
+msgstr ":ref:`class_HTTPClient` y :ref:`class_HTTPRequest`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
-msgstr ""
+msgstr "Las clases HTTP tiene varias restricciones en la plataforma HTML5:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
@@ -235,7 +256,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
 msgid "Boot splash is not displayed"
-msgstr ""
+msgstr "La pantalla de inicio no es mostrada"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:104
 msgid ""
@@ -243,6 +264,10 @@ msgid ""
 "However, the image is exported as a PNG file, so :ref:`custom HTML pages "
 "<doc_customizing_html5_shell>` can display it."
 msgstr ""
+"La página HTML por defecto no muestra la pantalla de inicio mientras se "
+"carga. Sin embargo, la imagen es exportada como un archivo PNG, así :ref:"
+"`las páginas HTML customizadas <doc_customizing_html5_shell>` pueden "
+"mostrarla."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
 msgid "Unimplemented functionality"
@@ -360,6 +385,8 @@ msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
 msgstr ""
+"Emitir el modulo WebAssembly (``.wasm``) con un tipo MIME diferente a :"
+"mimetype:`application/wasm` puede evitar algunas optimizaciones de arranque."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:155
 msgid ""
@@ -475,6 +502,9 @@ msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
 msgstr ""
+"Los strings multilinea de GDScript, rodeados por 3 comillas dobles ``"
+"\"\"\"`` como arriba en ``my_func3()``, son utiles para mantener el código "
+"JavaScript más legible."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:223
 msgid ""

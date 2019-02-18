@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,12 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:4
 msgid "Exporting projects"
-msgstr ""
+msgstr "Projekte exportieren"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:9
-#, fuzzy
 msgid "Why export?"
-msgstr "export"
+msgstr "Wozu exportieren?"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:11
 msgid ""
@@ -32,6 +31,9 @@ msgid ""
 "would compile the proper binaries and build the packages for each platform "
 "manually."
 msgstr ""
+"Ursprünglich bot Godot keine Möglichkeit, Projekte zu exportieren. Die "
+"Entwickler kompilierten die entsprechenden Binärdateien und Bibliotheken für "
+"jede Plattform per Hand."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:15
 msgid ""
@@ -39,10 +41,13 @@ msgid ""
 "our company started taking more projects at the same time, it became evident "
 "that this was a bottleneck."
 msgstr ""
+"Als immer mehr Entwickler (und Nicht-Programmierer) begannen, Godot "
+"einzusetzen, und auch gleichzeitig unser Unternehmen immer mehr Aufträge "
+"annahm, stellte sich das als Flaschenhals heraus."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:20
 msgid "On PC"
-msgstr ""
+msgstr "Auf dem PC"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:22
 msgid ""
@@ -50,6 +55,9 @@ msgid ""
 "binary in the same directory as the ``project.godot`` file, then compress "
 "the project directory and you are done."
 msgstr ""
+"Ein Projekt für den PC zu verteilen ist vergleichsweise einfach. Du legst "
+"die ausführbare Godot-Datei im selben Verzeichnis wie die \n"
+"``project.godot`` ab, komprimierst den Projektordner und das war's."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:26
 msgid ""
@@ -61,16 +69,26 @@ msgid ""
 "binary, which is smaller in size, more optimized and does not include tools "
 "like the editor and debugger."
 msgstr ""
+"Das klingt zunächst einmal simpel, doch es gibt einige Gründe, warum ein "
+"Entwickler sich gegen diese Methode auszusprechen mag. Einer davon kann "
+"sein, dass es nicht gewünscht ist, viele einzelne Dateien zu verbreiten, "
+"entweder um den internen Spielaufbau vor neugierigen Blicken zu schützen, "
+"oder weil es unelegant ist, etc. Ein anderer Grund wäre, stattdessen eine "
+"speziell kompilierte Binärdatei auszuliefern, die optimiert ist und eine "
+"kleinere Dateigröße aufweist und ohne Entwicklungswerkzeuge, wie Editor und "
+"Debugger auskommt."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:34
 msgid ""
 "Finally, Godot has a simple but efficient system for creating DLCs as extra "
 "package files."
 msgstr ""
+"Schließlich, bietet Godot ein einfaches aber effizientes System zur "
+"Erzeugung von DLCs für zusätzliche Inhalte."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:38
 msgid "On mobile"
-msgstr ""
+msgstr "Auf mobilen Geräten"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:40
 msgid ""
@@ -78,6 +96,10 @@ msgid ""
 "project on those devices, a binary for each of those platforms is built, "
 "then added to a native project together with the game data."
 msgstr ""
+"Das gleiche Szenario ist auf mobilen Plattformen etwas komplizierter. Um ein "
+"Projekt auf diesen Geräten zu verteilen, wird eine Binärdatei für jede "
+"Zielplattform individuell kompiliert und diese im Anschluss in einem nativen "
+"Projekt eingebettet, zusammen mit den Spielinhalten."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid ""
@@ -86,6 +108,11 @@ msgid ""
 "While learning each SDK is always encouraged, it can be frustrating to be "
 "forced to do it at an undesired time."
 msgstr ""
+"Dies kann sich als problematisch erweisen, denn der Entwickler muss sich im "
+"Vorfeld mit dem SDK der jeweiligen mobilen Plattform vertraut machen, ehe er "
+"damit überhaupt etwas exportieren kann. Auch wenn es immer lobenswert ist, "
+"sich in unterschiedliche SDKs einzuarbeiten, kann es frustrierend sein, wenn "
+"das zu einer ungünstigen Gelegenheit kommt."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:50
 msgid ""
@@ -95,10 +122,16 @@ msgid ""
 "standardized for more than a decade, but mobile devices use different "
 "formats for texture compression, such as PVRTC (iOS) or ETC (Android)."
 msgstr ""
+"Auch kommt eine weitere Problematik mit diesem Ansatz einher: "
+"unterschiedliche Geräte verarbeiten bestimmte Daten in unterschiedlichen "
+"Formaten. Als prominentes Beispiel dafür steht die Texturkomprimierung. "
+"Unter PC-Hardware verwendet man dafür S3TC (BC), welches als der Standard "
+"seit über einem Jahrzehnt gilt, doch mobile Geräte verwenden anderweitige "
+"Formate für die Texturkomprimierung, wie PVRTC (iOS) oder ETC (Android)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
 msgid "Export menu"
-msgstr ""
+msgstr "Export-Menü"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:60
 msgid ""
@@ -106,16 +139,23 @@ msgid ""
 "proven to work the best. At the time of this writing, not all platforms are "
 "supported yet, but the supported platforms continue to grow."
 msgstr ""
+"Nachdem verschiedene Lösungen für den Arbeitsablauf des Exports evaluiert "
+"wurden, hat sich der gegenwärtige als am besten herausgestellt. Zum "
+"Zeitpunkt dieses Schreibens sind noch nicht alle Plattformen abgedeckt, aber "
+"die Zahl der unterstützten Plattformen nimmt zu."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
 msgid "To open the export menu, click the **Export** button:"
 msgstr ""
+"Um das Export-Menü zu öffnen, klicke auf die **Exportieren**-Schaltfläche:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
 msgid ""
 "The export menu will open. However, it will be completely empty. This is "
 "because we need to add an export preset."
 msgstr ""
+"Das Exportieren-Fenster öffnet sich nun. Das Fenster ist jedoch leer. Das "
+"liegt daran, dass wir noch ein Exportprofil anlegen müssen."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:73
 msgid ""
@@ -123,6 +163,9 @@ msgid ""
 "export menu. This will open a drop-down list of platforms to choose from for "
 "an export preset."
 msgstr ""
+"Um ein Exportprofil anzulegen, klicke auf **Hinzufügen…** oben im "
+"Exportieren-Fenster. Daraufhin klappt ein Menü mit einer Liste von "
+"Plattformen auf, für die ein Profil gewählt werden kann."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:79
 msgid ""
@@ -133,16 +176,26 @@ msgid ""
 "is missing and will not allow the user to export for that platform until "
 "they resolve it:"
 msgstr ""
+"Die Standardoptionen für den Export sind häufig ausreichend, eine Anpassung "
+"ist daher üblicherweise nicht notwendig. Allerdings erfordern viele "
+"Plattformen zusätzliche Werkzeuge (SDKs), die vor dem Export installiert "
+"sein müssen. Außerdem benötigt Godot Exportvorlagen, die ebenfalls vorher "
+"installiert sein müssen. Das Export-Menü weist darauf hin, wenn eine "
+"Abhängigkeit fehlt und lässt den Export nicht zu, solange nicht alle "
+"Probleme behoben worden sind:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:88
 msgid ""
 "At that time, the user is expected to come back to the documentation and "
 "follow instructions on how to properly set up that platform."
 msgstr ""
+"Hier würde vom Anwender erwartet werden, dass er die Dokumentation "
+"aufschlägt und den Anweisungen folgt, um dieses System entsprechend "
+"einzurichten."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
 msgid "Export templates"
-msgstr "Vorlagen exportieren"
+msgstr "Exportvorlagen"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:94
 msgid ""
@@ -151,52 +204,75 @@ msgid ""
 "a renamed ZIP archive) from the `download page of the website <https://www."
 "godotengine.org/download>`_."
 msgstr ""
+"Abgesehen von der grundsätzlichen Einrichtung, müssen auch die "
+"Exportvorlagen installiert sein, um Projekte zu exportieren. Sie können als "
+"TPZ-Dateien (ein umbenanntes ZIP-Archiv) aus dem `Download-Bereich der "
+"Webseite <https://www.godotengine.org/download>`_ bezogen werden."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
 msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
 msgstr ""
+"Einmal heruntergeladen, können sie unter **Verwalte Exportvorlagen** im "
+"Editor installiert werden:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:105
 msgid "Export mode"
-msgstr ""
+msgstr "Export-Modus"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:107
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
 msgstr ""
+"Beim Exportieren erzeugt Godot eine Liste aller zu exportierenden Dateien "
+"und erstellt dann das Paket. Es gibt 3 verschiedene Export-Modi:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
 msgid "Export every single file in the project"
-msgstr ""
+msgstr "Exportiere alle Ressourcen des Projekts"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
+#, fuzzy
 msgid "Export only resources (+ custom filter), this is the default."
 msgstr ""
+"Exportiere ausgewählte Ressourcen (inklusive Abhängigkeiten), dies ist der "
+"Standard."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
+#, fuzzy
 msgid "Export only selected resources (+ custom filter)"
-msgstr ""
+msgstr "Exportiere ausgewählte Ressourcen (inklusive Abhängigkeiten)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
+#, fuzzy
 msgid ""
 "**Export every single file** - This mode exports every single file in the "
 "project. This is good to test if something is being forgotten, but "
 "developers often have a lot of unrelated stuff around in the project "
 "directory, which makes it a bad idea."
 msgstr ""
+"**Exportiere alle Ressourcen des Projekts** - This mode exports every single "
+"file in the project. This is good to test if something is being forgotten, "
+"but developers often have a lot of unrelated stuff around in the project "
+"directory, which makes it a bad idea."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
+#, fuzzy
 msgid ""
 "**Export only resources** - Only resources are exported. For most projects, "
 "this is enough. However many developers like to use custom datafiles in "
 "their games. To compensate for this, filters can be added for extra "
 "extensions (for instance, ``*.txt,*.csv``)."
 msgstr ""
+"**Exportiere ausgewählte Ressourcen** - Only resources are exported. For "
+"most projects, this is enough. However many developers like to use custom "
+"datafiles in their games. To compensate for this, filters can be added for "
+"extra extensions (for instance, ``*.txt,*.csv``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
+#, fuzzy
 msgid ""
 "**Export only selected resources** - Only select resources from a list are "
 "exported. This is probably overkill for most projects, but in some cases it "
@@ -204,10 +280,15 @@ msgid ""
 "is exported. Individual resources can be selected and dependency detection "
 "is performed to ensure that everything needed is added."
 msgstr ""
+"**Exportiere ausgewählte Ressourcen** - Only select resources from a list "
+"are exported. This is probably overkill for most projects, but in some cases "
+"it is justified (usually huge projects). This mode offers total control of "
+"what is exported. Individual resources can be selected and dependency "
+"detection is performed to ensure that everything needed is added."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
 msgid "Exporting from the command line"
-msgstr ""
+msgstr "Von der Kommandozeile exportieren"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
 msgid ""

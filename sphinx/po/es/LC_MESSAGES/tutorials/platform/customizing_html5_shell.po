@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,17 +36,16 @@ msgstr ""
 "opciones de exportación como ``Html/Custom Html Shell``."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:11
-#, fuzzy
 msgid ""
 "The default HTML page is available in the Godot Engine repository at `/misc/"
 "dist/html/full-size.html <https://github.com/godotengine/godot/blob/master/"
 "misc/dist/html/full-size.html>`__. Some simple use-cases where customizing "
 "the default page is useful include:"
 msgstr ""
-"La página HTML por defecto está disponible en el repositorio del motor Godot "
-"en `/mist/dist/html/default.html <https://github.com/godotengine/godot/blob/"
-"master/misc/dist/html/default.html>`_. Algunos casos de uso simple donde es "
-"útil personalizar la página por defecto incluyen:"
+"La página HTML por defecto está disponible en el repositorio de Godot Engine "
+"en `/misc/dist/html/full-size.html <https://github.com/godotengine/godot/"
+"blob/master/misc/dist/html/full-size.html>`__. Algunos casos de uso simple "
+"donde es útil personalizar la página por defecto incluyen:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:15
 msgid "Loading files from a different directory"
@@ -109,9 +108,8 @@ msgid "Placeholder"
 msgstr "Parámetros"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
-#, fuzzy
 msgid "Substituted by"
-msgstr "sustituido por"
+msgstr "Sustituido por"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:37
 msgid "``$GODOT_BASENAME``"
@@ -191,21 +189,19 @@ msgstr ""
 "como una interfaz para los procesos de inicio del motor."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:67
-#, fuzzy
 msgid ""
 "The API is based on and requires basic understanding of `Promises <https://"
 "developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises>`__."
 msgstr ""
-"Sujeto a la `política de mismo origen <https://developer.mozilla.org/en-US/"
-"docs/Web/Security/Same-origin_policy>`_"
+"La API está basada en \"promesas\" y requiere una comprensión básica de las "
+"mismas: `Promises <https://developer.mozilla.org/en-US/docs/Web/JavaScript/"
+"Guide/Using_promises>`__."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:69
-#, fuzzy
 msgid "The object itself has only the following methods:"
-msgstr "La escena Mob usará los siguientes nodos:"
+msgstr "El objeto tiene sólo los siguientes métodos:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:73
-#, fuzzy
 msgid "Load the engine from the passed base path."
 msgstr "Carga el motor desde la ruta indicada."
 
@@ -218,28 +214,25 @@ msgid "Base path of the engine to load."
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:0
-#, fuzzy
 msgid "Returns"
-msgstr "Return"
+msgstr "Retorna"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:76
-#, fuzzy
 msgid "Promise which resolves once the engine is loaded."
-msgstr "Devuelve una promesa de que resolverá una vez cargado el motor."
+msgstr "Una promesa de que resolverá una vez cargado el motor."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:80
 msgid "Unload the engine to free memory."
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:82
-#, fuzzy
 msgid ""
 "This is called automatically once the engine is started unless explicitly "
 "disabled using :js:func:`engine.setUnloadAfterInit`."
 msgstr ""
-"Descarga el módulo para liberar memoria. Esto es llamado automáticamente una "
-"vez que el módulo es instanciado a menos que sea deshabilitado "
-"explícitamente."
+"Esto es llamado automáticamente una vez que el motor ha comenzado a menos "
+"que sea deshabilitado explícitamente usando  :js:func:`engine."
+"setUnloadAfterInit`."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:87
 msgid "Check whether WebGL is available."
@@ -250,13 +243,12 @@ msgid "The major WebGL version to check for. Defaults to 1 for *WebGL 1.0*."
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:92
-#, fuzzy
 msgid ""
 "``true`` if the given major version of WebGL is available, ``false`` "
 "otherwise."
 msgstr ""
 "Devuelve  ``true`` si la versión mayor de WebGL dada está disponible, "
-"``false`` falso de otro modo. Por defecto es ``1`` para WebGL 1.0."
+"``false`` falso de otro modo."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:98
 msgid ""
@@ -304,13 +296,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:137
-#, fuzzy
 msgid ""
 "To start such an instance, the global ``Engine`` object must be loaded, then "
 "the ``engine`` instance must be initialized and finally started."
 msgstr ""
-"Esta instancia ``Engine``, referida como ``engine`` con una ``e`` minúscula "
-"desde ahora, es una instancia iniciable desde el motor, usualmente un juego. "
 "Para iniciar esta instancia, el objeto global ``Engine`` debe ser cargado, "
 "luego, la instancia ``engine`` debe ser inicializada e iniciada."
 
@@ -327,73 +316,67 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:149
-#, fuzzy
 msgid "Promise that resolves once the engine is loaded and initialized."
-msgstr "Devuelve una promesa de que resolverá una vez cargado el motor."
+msgstr ""
+"Devuelve una promesa de que resolverá una vez que el motor es cargado e "
+"inicializado."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:153
-#, fuzzy
 msgid ""
 "Load a file so it is available in the file system once the instance runs. "
 "Must be called **before** starting the instance."
 msgstr ""
 "Esto carga un archivo para que esté disponible en el sistema de archivos una "
-"vez que la instancia es iniciada. Esto debe llamarse **antes** de iniciar la "
+"vez que la instancia es iniciada. Debe llamarse **antes** de iniciar la "
 "instancia."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:156
-#, fuzzy
 msgid ""
 "If type is string, the file will be loaded from that path.  If type is "
 "``ArrayBuffer`` or a view on one, the buffer will used as the content of the "
 "file."
 msgstr ""
-"Si el ``file`` es una cadena, el archivo será cargado desde una URL. Si "
-"``file`` es un ``ArrayBuffer`` o una vista de uno, el buffer será usado como "
-"un contenido del archivo."
+"Si file es una cadena, el archivo será cargado desde una URL. Si file es un "
+"``ArrayBuffer`` o una vista de uno, el buffer será usado como el contenido "
+"del archivo."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:157
 msgid "If type is string, the file will be loaded from that path."
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:159
-#, fuzzy
 msgid ""
 "If type is ``ArrayBuffer`` or a view on one, the buffer will used as the "
 "content of the file."
 msgstr ""
-"Si el ``file`` es una cadena, el archivo será cargado desde una URL. Si "
-"``file`` es un ``ArrayBuffer`` o una vista de uno, el buffer será usado como "
+"Si file es un ``ArrayBuffer`` o una vista de uno, el buffer será usado como "
 "un contenido del archivo."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:162
-#, fuzzy
 msgid ""
 "Path by which the file will be available. Mandatory if ``file`` is not a "
 "string. If not passed, the path is derived from the URL of the loaded file."
 msgstr ""
-"Si ``path`` es una cadena, especifica la ruta en la cual el archivo estará "
-"disponible. Es mandatorio si ``file`` no es una cadena. De otro modo, la "
-"ruta será derivada desde la URL del archivo cargado."
+"Ruta en la cual el archivo está disponible. Es mandatorio si ``file`` no es "
+"una cadena. De otro modo, la ruta será derivada desde la URL del archivo "
+"cargado."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:167
-#, fuzzy
 msgid "Promise that resolves once the file is preloaded."
 msgstr ""
-"Devuelve una promesa de que resolverá una vez el archivo es precargado."
+"Devuelve una promesa de que resolverá una vez que el archivo es precargado."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:171
-#, fuzzy
 msgid ""
 "Starts the instance of the engine, using the passed strings as command line "
 "arguments. This allows great control over how the engine is started, but "
 "usually the other methods starting with ``engine.start`` are simpler and "
 "should be used instead."
 msgstr ""
-"Comienza la instancia del motor, pasando la cadena indicada como argumento "
-"de la función ``main()``. Esto permite un gran control sobre cómo el motor "
-"es usado, pero usualmente los otros métodos cuyos nombres comienzan con "
-"``engine.start`` son más simples de usar."
+"Comienza la instancia del motor, pasando la cadena indicada como argumento. "
+"Esto permite un gran control sobre cómo el motor es iniciado, pero "
+"usualmente los otros métodos cuyos nombres comienzan con ``engine.start`` "
+"son más simples y deben usarse en su lugar."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:176
 msgid ""
@@ -412,14 +395,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:184
-#, fuzzy
 msgid "Command line arguments."
-msgstr "Línea de comandos"
+msgstr "Parámetros de la línea de comandos."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:186
-#, fuzzy
 msgid "Promise that resolves once the engine started."
-msgstr "Devuelve una promesa de que resolverá una vez el motor a iniciado."
+msgstr ""
+"Devuelve una promesa de que resolverá una vez que el motor ha iniciado."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
 msgid ""
@@ -448,7 +430,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:203
-#, fuzzy
 msgid "Promise that resolves once the game started."
 msgstr ""
 "Devuelve una promesa de que resolverá una vez que el juego ha arrancado."
@@ -472,17 +453,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:216
-#, fuzzy
 msgid ""
 "This frees browser memory by unloading files that are no longer needed once "
 "the instance is initialized. However, if more instances of the engine will "
 "be started, the Engine will have to be loaded again."
 msgstr ""
-"Especifica si Engine será removido automáticamente una vez que la instancia "
-"es inicializada. Esto libera memoria del navegador removiendo archivos "
-"cargados que no son necesarios una vez que la instancia es inicializada. Sin "
-"embargo, si más instancias de engine son iniciadas, Engine tendrá que ser "
-"cargado nuevamente."
+"Esto libera memoria del navegador removiendo archivos cargados que no son "
+"necesarios una vez que la instancia es inicializada. Sin embargo, si más "
+"instancias de engine son iniciadas, Engine tendrá que ser cargado nuevamente."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:220
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:239
@@ -490,42 +468,40 @@ msgid "Enabled by default."
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:222
-#, fuzzy
 msgid ""
 "``true`` if the engine shall be unloaded after initializing, ``false`` "
 "otherwise."
-msgstr "``true`` si es de depuración, ``false`` en caso contrario"
+msgstr ""
+"``true`` si el motor deberá ser eliminado de memoria después de inicializar, "
+"``false`` en caso contrario."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:228
 msgid "Specify a canvas to use."
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:230
-#, fuzzy
 msgid "By default, the first canvas element on the page is used for rendering."
 msgstr ""
-"Por defecto, el primer elemento del área de trabajo de la página se utiliza "
-"para el renderizado. Llamando a este método, se puede especificar otra área "
-"de trabajo."
+"Por defecto, el primer elemento canvas de la página se utiliza para el "
+"renderizado."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:232
 msgid "The canvas to use."
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:236
-#, fuzzy
 msgid ""
 "Specifies whether the canvas will be resized to the width and height "
 "specified in the project settings on start."
 msgstr ""
-"Establece si el área de trabajo se redimensionará a la anchura y la altura "
-"especificadas en la configuración del proyecto al inicio. Por defecto es "
-"``true``."
+"Establece el canvas se redimensionará a la anchura y la altura especificadas "
+"en la configuración del proyecto al inicio."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:241
-#, fuzzy
 msgid "``true`` if the canvas shall be resized on start, ``false`` otherwise."
-msgstr "``true`` si es de depuración, ``false`` en caso contrario"
+msgstr ""
+"``true`` si el canvas debe redimensionarse al comenzar, ``false`` en caso "
+"contrario."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:246
 msgid ""
@@ -545,9 +521,8 @@ msgid "For example, with PHP:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:258
-#, fuzzy
 msgid "Locale."
-msgstr "Idioma"
+msgstr "Idioma."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:261
 msgid "List of :ref:`locales <doc_locales>`."
@@ -565,13 +540,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:271
-#, fuzzy
 msgid ""
 "By default, the base name of the loaded engine files is used. This method "
 "allows specifying another name."
 msgstr ""
-"Por defecto, el nombre base de los archivos del engine cargados son usados "
-"para el nombre del ejecutable. Este método permite especificar otro nombre."
+"Por defecto, se usa el nombre base de los archivos del engine cargados. Este "
+"método permite especificar otro nombre."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:274
 msgid ""
@@ -642,31 +616,24 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:325
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:344
-#, fuzzy
 msgid ""
 "This method should usually only be used in debug pages. The ``"
 "$GODOT_DEBUG_ENABLED`` placeholder can be used to check for this."
 msgstr ""
-"Esos métodos deben, usualmente, solo ser usados en páginas de depuración; El "
-"parámetro ``$GODOT_DEBUG_ENABLED`` puede ser usado para verificar esto."
+"Este método debe ser usado solamente en páginas de depuración. El "
+"placeholder ``$GODOT_DEBUG_ENABLED`` puede ser usado para verificar esto."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:328
-#, fuzzy
 msgid "By default, ``console.log()`` is used."
-msgstr ""
-"Por defecto, ``console.log()`` y ``console.warn()`` son usadas "
-"respectivamente."
+msgstr "Por defecto, se usa ``console.log()``."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:332
 msgid "Specify the standard error stream callback."
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:347
-#, fuzzy
 msgid "By default, ``console.warn()`` is used."
-msgstr ""
-"Por defecto, ``console.log()`` y ``console.warn()`` son usadas "
-"respectivamente."
+msgstr "Por defecto, se usa ``console.warn()``."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:350
 msgid "Accessing the Emscripten ``Module``"

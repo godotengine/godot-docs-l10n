@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
 msgid "What are Godot classes really?"
-msgstr ""
+msgstr "¿Qué son realmente las clases en Godot?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
@@ -28,6 +28,10 @@ msgid ""
 "design. *How* they do this may not be clear to beginner or intermediate "
 "users though."
 msgstr ""
+"Godot ofrece principalmente dos métodos para crear tipos: scripts y escenas. "
+"Ambos representan una \"clase\" ya que Godot se meneja alrededor de un "
+"diseño Orientado a Objetos. Sin embargo, *cómo* lo hacen, puede no ser claro "
+"para los usuarios principiantes o intermedios."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:11
 msgid ""
@@ -36,6 +40,10 @@ msgid ""
 "they are resources that tell the engine a sequence of initializations to "
 "perform on an engine class."
 msgstr ""
+"Godot Engine provee clases listas para usar (como :ref:`Node <class_Node>`), "
+"pero los tipos creados por el usuario no son realmente clases. Por el "
+"contrario, son recursos que le dicen al motor una secuencia de indicaciones "
+"para realizar en una clase del motor."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:16
 msgid ""
@@ -44,25 +52,27 @@ msgid ""
 "class information (also called \"reflection\"). Things stored in the ClassDB "
 "include, among other things..."
 msgstr ""
+"Las clases internas de Godot tienen métodos que registran los datos de una "
+"clase mediante :ref:`ClassDB <class_ClassDB>`. Esta base de datos provee "
+"acceso a la información de la clase en tiempo de ejecución (algo también "
+"llamado \"reflección\"). Las cosas guardadas en ClassDB incluyen, entre "
+"otras cosas..."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:21
-#, fuzzy
 msgid "properties"
-msgstr "Propiedades de los nodos"
+msgstr "Propiedades"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:23
 msgid "methods"
-msgstr ""
+msgstr "métodos"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:25
-#, fuzzy
 msgid "constants"
 msgstr "Constantes"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
-#, fuzzy
 msgid "signals"
-msgstr "signal"
+msgstr "señales"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:29
 msgid ""
@@ -73,6 +83,12 @@ msgid ""
 "a static `_bind_methods()` function that describes what C++ content it "
 "registers to the database and how."
 msgstr ""
+"Además, ClassDB es lo que los Objetos usan para hacer chequeos cuando "
+"realizar alguna operación. ¿Acceder una propiedad? ¿Invocar un método? "
+"¿Emitir una señal? Va a chequear los registros de la base de datos (y los "
+"registros de los tipos base del Objeto) para ver si el Objeto soporta la "
+"operación. Cada Objeto de C++ define una función estática `_bind_methods()` "
+"que describe que contenido de C++ registra en la base de datos y como."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
 msgid ""
@@ -81,6 +97,11 @@ msgid ""
 "data to be appended to an object's data. That way, users could inject their "
 "own properties and methods into the engine's Object query requests."
 msgstr ""
+"Entonces, si el motor provee todos estos datos al iniciar ¿cómo un usuario "
+"define sus propios datos? Seria bueno si los usuarios pudiesen definir un "
+"conjunto customizado de datos para agregarse a los de un objeto. De esa "
+"manera los usuario podrían inyectar sus propias propiedades y métodos en los "
+"pedidos de búsqueda de los Objetos del motor."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
 msgid ""
@@ -151,9 +172,8 @@ msgid "It helps to define..."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
-#, fuzzy
 msgid "what objects are available to the script?"
-msgstr "El papel del script"
+msgstr "qué objetos son accesibles para el script?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:123
 msgid "how are they organized?"

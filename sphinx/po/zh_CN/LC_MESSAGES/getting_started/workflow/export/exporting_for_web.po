@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,6 +40,8 @@ msgid ""
 "`F12`, to view **debug information** like JavaScript, engine, and WebGL "
 "errors."
 msgstr ""
+"使用浏览器集成的开发人员控制台 (通常使用： :kbd:`F12`打开) 来查看 **调试信息"
+"**, 如 javascript、引擎和WebGL错误。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
 msgid ""
@@ -63,19 +65,21 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:25
 msgid "WebGL 2"
-msgstr ""
+msgstr "WebGL 2"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option selected."
 msgstr ""
+"在 *OpenGL ES 3* 呈现器从 Godot 删除以支持 *Vulkan* 之前, 当选择 *GLES3* 选项"
+"时, HTML5导出使用 *WebGL 2* 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
 msgid ""
 "Usage of WebGL 2 is not recommended due to its expected removal from Godot "
 "without replacement."
-msgstr ""
+msgstr "不建议使用 WebGL 2 ，因为它预期会在不更换的情况下从 Godot 中删除。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:33
 #, fuzzy
@@ -94,7 +98,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
-msgstr ""
+msgstr "Godot 的 WebGL 2 渲染器与 3D 存在问题，不再维护。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
 msgid "Limitations"
@@ -158,16 +162,20 @@ msgid ""
 "engine is started from within a valid input event handler. This requires :"
 "ref:`customization of the HTML page <doc_customizing_html5_shell>`."
 msgstr ""
+"出于同样的原因，除非从有效的输入事件处理程序中启动引擎，否则全屏项目设置将不"
+"起作用。这需要： :ref:`customization of the HTML page "
+"<doc_customizing_html5_shell>`。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid "Audio autoplay"
-msgstr ""
+msgstr "音频自动播放"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:76
 msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
 msgstr ""
+"Chrome 限制网站播放音频的方式。可能需要玩家单击或轻按或按住一个键来启用音频。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
 msgid ""
@@ -175,14 +183,16 @@ msgid ""
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
 "autoplay>`__."
 msgstr ""
+"Google 提供了关于 `Web音频自动播放策略 <https://sites.google.com/a/chromium."
+"org/dev/audio-video/autoplay>`__。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
-msgstr ""
+msgstr ":ref:`class_HTTPClient` 和 :ref:`class_HTTPRequest`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
-msgstr ""
+msgstr "HTTP类在HTML5平台上有几个限制："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
@@ -230,7 +240,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
 msgid "Boot splash is not displayed"
-msgstr ""
+msgstr "不显示启动初始点"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:104
 msgid ""

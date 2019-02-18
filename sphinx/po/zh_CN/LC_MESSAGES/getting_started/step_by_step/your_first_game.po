@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,7 +204,7 @@ msgid ""
 "symbol next to the node. An ``AnimatedSprite`` requires a :ref:`SpriteFrames "
 "<class_SpriteFrames>` resource, which is a list of the animations it can "
 "display. To create one, find the ``Frames`` property in the Inspector and "
-"click \"<null>\" -> \"New SpriteFrames\". Next, in the same location, click "
+"click \"[empty]\" -> \"New SpriteFrames\". Next, in the same location, click "
 "``<SpriteFrames>``, then click \"Open Editor\" to open the \"SpriteFrames\" "
 "panel:"
 msgstr ""
@@ -245,9 +245,9 @@ msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
 "its collision area. For this character, a ``CapsuleShape2D`` node gives the "
-"best fit, so next to \"Shape\" in the Inspector, click \"<null>\"\" -> \"New "
-"CapsuleShape2D\".  Using the two size handles, resize the shape to cover the "
-"sprite:"
+"best fit, so next to \"Shape\" in the Inspector, click \"[empty]\"\" -> "
+"\"New CapsuleShape2D\".  Using the two size handles, resize the shape to "
+"cover the sprite:"
 msgstr ""
 "最终，添加一个 :ref:`CollisionShape2D <class_CollisionShape2D>` 对象作为 "
 "``Player`` 的子节点。它用于决定游戏角色的“碰撞盒”，亦或者说是它碰撞区域的边"
@@ -571,6 +571,8 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"每次敌人击中玩家时, 都会发出信号。我们需要禁用玩家的碰撞, 这样我们就不会多次"
+"触发 ``hit`` 信号。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
 msgid ""
@@ -578,6 +580,8 @@ msgid ""
 "middle of the engine's collision processing. Using ``call_deferred()`` "
 "allows us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"如果发生在发动机碰撞处理的中间, 禁用该区域的碰撞形状可能会导致错误。使用 "
+"``call_deferred()`` 允许我们让 Godot 等待禁用形状, 直到这样做是安全的。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -1090,12 +1094,12 @@ msgstr "文本: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid "*Layout* : \"Top Wide\""
-msgstr ""
+msgstr "*布局*: \"顶部宽\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
 msgid "*Align* : \"Center\""
-msgstr ""
+msgstr "*对齐*: \"居中\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "MessageLabel"
@@ -1175,6 +1179,9 @@ msgid ""
 "useful to delay, such as in the above code, where we want to wait a little "
 "bit of time before showing the \"Start\" button."
 msgstr ""
+"当您需要暂停很短的时间时, 使用 Timer 节点的替代方法是使用场景树的 "
+"``create_timer()`` 功能。这对于延迟非常有用, 例如在上面的代码中, 我们要等待一"
+"点时间后再显示 “Start” 按钮。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
 msgid "This function is called by ``Main`` whenever the score changes."
@@ -1274,7 +1281,6 @@ msgstr ""
 "一个您喜欢的颜色并拖拽 ``ColorRect`` 的大小使它覆盖整个屏幕。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
-#, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."

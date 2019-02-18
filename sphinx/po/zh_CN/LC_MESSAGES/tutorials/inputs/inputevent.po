@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,6 @@ msgstr ""
 "到的输入做了很多事情，顺序如下:"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:77
-#, fuzzy
 msgid ""
 "First of all, the standard :ref:`Node._input() <class_Node_method__input>` "
 "function will be called in any node that overrides it (and hasn't disabled "
@@ -120,7 +119,6 @@ msgstr ""
 "许GUI侦听。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:82
-#, fuzzy
 msgid ""
 "Second, it will try to feed the input to the GUI, and see if any control can "
 "receive it. If so, the :ref:`Control <class_Control>` will be called via the "
@@ -146,7 +144,6 @@ msgstr ""
 "件进一步传播。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:92
-#, fuzzy
 msgid ""
 "If so far no one consumed the event, the unhandled input callback will be "
 "called if overridden (and not disabled with :ref:`Node."
@@ -166,7 +163,6 @@ msgstr ""
 "时不会收到它们。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:97
-#, fuzzy
 msgid ""
 "If no one wanted the event so far, and a :ref:`Camera <class_Camera>` is "
 "assigned to the Viewport, a ray to the physics world (in the ray direction "

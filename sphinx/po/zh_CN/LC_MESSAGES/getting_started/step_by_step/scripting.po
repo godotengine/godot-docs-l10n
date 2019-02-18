@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -461,7 +461,6 @@ msgstr ""
 "我们使用代码方法！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
-#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
@@ -494,13 +493,12 @@ msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "接下来，写一个函数，按钮按下时它会被触发:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:259
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"最后，在 ``_ready()`` 中通过 :ref:`Object.connect() "
-"<class_Object_method_connect>` 来连接到按钮的“pressed”信号。"
+"最后，通过 :ref:`Object.connect() <class_Object_method_connect>` 来连接按钮"
+"的 “pressed” 信号到 ``_ready()`` 。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:275
 msgid "The final script should look like this:"

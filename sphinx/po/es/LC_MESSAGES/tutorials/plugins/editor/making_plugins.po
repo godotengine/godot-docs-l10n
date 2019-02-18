@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:4
-#, fuzzy
 msgid "Making plugins"
-msgstr "Creando árboles"
+msgstr "Creando plugins"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:7
-#, fuzzy
 msgid "About plugins"
-msgstr "Plugins"
+msgstr "Acerca de los plugins"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:9
 msgid ""
@@ -188,17 +186,16 @@ msgid "A custom dock"
 msgstr "Un panel personalizado"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:157
-#, fuzzy
 msgid ""
 "Sometimes, you need to extend the editor and add tools that are always "
 "available. An easy way to do it is to add a new dock with a plugin. Docks "
 "are just scenes based on Control, so they are created in a way similar to "
 "usual GUI scenes."
 msgstr ""
-"Quizás necesites ampliar el editor y añadir herramientas que estén siempre "
-"disponibles. Una forma fácil de hacerlo es añadir un nuevo panel con un "
-"plugin. Los Paneles son sólo escenas basadas en el control, por lo que la "
-"forma de crearlos no está muy lejos de tu conocimiento."
+"Algunas veces necesitarás ampliar el editor y añadir herramientas que estén "
+"siempre disponibles. Una forma fácil de hacerlo es añadir un nuevo panel con "
+"un plugin. Los paneles son sólo escenas basadas en Control, estas son "
+"creadas de una manera similar a las escenas GUI comunes."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:161
 msgid ""
@@ -215,7 +212,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:177
-#, fuzzy
 msgid ""
 "Since we're trying to add a new custom dock, we need to create the contents "
 "of the dock. This is nothing more than a standard Godot scene: just create a "
@@ -223,11 +219,9 @@ msgid ""
 msgstr ""
 "Dado que estamos intentando añadir un nuevo panel personalizado, necesitamos "
 "crear el contenido de dicho panel. Esto no es más que una escena estándar de "
-"Godot. Así que puedes crear una nueva escena en el editor y empezar a "
-"hacerlo."
+"Godot. sólo crea una nueva escena y luego editarla."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:181
-#, fuzzy
 msgid ""
 "For an editor dock, the root node **must** be a :ref:`Control "
 "<class_Control>` or one of its child classes. For this tutorial, you can "
@@ -235,14 +229,13 @@ msgid ""
 "appears on the dock tab, so be sure to give it a short and descriptive name. "
 "Also, don't forget to add some text to your button."
 msgstr ""
-"Para un panel de editor, es obligatorio que la raíz de la escena sea un :ref:"
-"`Control <class_Control>` o una de sus clases hijas. Para este tutorial, "
-"puedes hacer un solo botón. El nombre del nodo raíz también será el nombre "
-"que aparezca en la pestaña panel, así que asegúrate de poner uno descriptivo "
+"Para un panel del editor, la raíz de la escena **debe ser** un :ref:`Control "
+"<class_Control>` o una de sus clases derivadas. Para este tutorial, puedes "
+"hacer un solo botón. El nombre del nodo raíz también será el nombre que "
+"aparezca en la pestaña del panel, así que asegúrate de poner uno descriptivo "
 "pero corto. No olvides añadir un texto a tu botón."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:189
-#, fuzzy
 msgid ""
 "Save this scene as ``my_dock.tscn``. Now, we need to grab the scene we "
 "created then add it as a dock in the editor. For this, you can rely on the "
@@ -250,22 +243,22 @@ msgid ""
 "<class_EditorPlugin_method_add_control_to_dock>` from the :ref:`EditorPlugin "
 "<class_EditorPlugin>` class."
 msgstr ""
-"Ahora necesitas seleccionar la escena que creaste y añadirla como un panel "
-"en el editor. Para ello puedes confiar en la función :ref:"
-"`add_control_to_dock() <class_EditorPlugin_method_add_control_to_dock>` de "
-"la clase `EditorPlugin <class_EditorPlugin>`."
+"Guarda la escena como ``my_dock.tscn``. Ahora necesitas seleccionar la "
+"escena que creaste y añadirla como un panel en el editor. Para ello puedes "
+"usar la función :ref:`add_control_to_dock() "
+"<class_EditorPlugin_method_add_control_to_dock>` de la clase :ref:"
+"`EditorPlugin <class_EditorPlugin>`."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:194
-#, fuzzy
 msgid ""
 "You need to select a dock position and define the control to add (which is "
 "the scene you just created). Don't forget to **remove the dock** when the "
 "plugin is deactivated. The script could look like this::"
 msgstr ""
-"El código es sencillo, necesitas seleccionar una posición de panel para "
-"añadirlo y tener un control para añadir (que es la escena que acabas de "
-"crear). También es importante que recuerdes **quitar el panel** cuando el "
-"plugin está desactivado. El código puede ser así:"
+"Necesitas seleccionar una posición de panel para añadirlo y tener un Control "
+"para añadir (que es la escena que acabas de crear). También es importante "
+"que recuerdes **quitar el panel** cuando el plugin está desactivado. El "
+"código puede verse así:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:221
 msgid ""
@@ -286,16 +279,15 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:234
-#, fuzzy
 msgid ""
 "You can see the plugin is inactive on the **Status** column; click on the "
 "status to select **Active**. The dock should become visible before you even "
 "close the settings window. You should now have a custom dock:"
 msgstr ""
-"En la columna *Estado*, puedes ver que el plugin está inactivo. Por lo "
-"tanto, debe hacer clic en el estado para seleccionar *Activo*. El panel debe "
-"ser visible inmediatamente, incluso antes de cerrar la ventana de "
-"configuración. Deberías tener un panel personalizado:"
+"En la columna *Estado*, puedes ver que el plugin está inactivo, debes hacer "
+"clic en el estado para seleccionar *Activo*. El panel debe ser visible "
+"inmediatamente, incluso antes de cerrar la ventana de configuración. Ahora "
+"deberías tener un panel personalizado:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:241
 msgid "Going beyond"

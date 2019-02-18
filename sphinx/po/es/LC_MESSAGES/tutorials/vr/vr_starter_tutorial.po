@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:4
-#, fuzzy
 msgid "VR starter tutorial"
-msgstr "Vídeo tutoriales"
+msgstr "Tutorial VR para principiantes"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:7
 msgid "Introduction"
@@ -84,13 +83,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:27
-#, fuzzy
 msgid ""
 "How to make a :ref:`RigidBody <class_RigidBody>`-based pick up and drop "
 "system."
 msgstr ""
 "Cómo hacer un sistema :ref:`RigidBody <class_RigidBody>` basado en un "
-"sistema de recogida y entrega."
+"sistema de agarrar y soltar."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:28
 msgid "How to make various items that can be used in VR."
@@ -109,7 +107,6 @@ msgstr ""
 "juegos en 3D **antes** de pasar por esta serie de tutoriales."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:35
-#, fuzzy
 msgid ""
 "This tutorial assumes you know how to and have experience working with the "
 "Godot editor, have basic programming experience in GDScript, and have basic "
@@ -137,7 +134,6 @@ msgstr ""
 "`VR_Starter_Tutorial_Start.zip <files/VR_Starter_Tutorial_Start.zip>`"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:43
-#, fuzzy
 msgid ""
 "The provided starter assets contain some 3D models, sounds, and a few scenes "
 "already set up and configured for this tutorial."
@@ -162,13 +158,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:49
-#, fuzzy
 msgid ""
 "The font used is **Titillium-Regular**, and is licensed under the SIL Open "
 "Font License, Version 1.1."
 msgstr ""
-"La fuente utilizada es **Titillium-Regular**, y está licenciada bajo la "
-"``SIL Open Font License, Version 1.1``."
+"La fuente utilizada es **Titillium-Regular**, y está licenciada bajo la SIL "
+"Open Font License, Version 1.1."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:51
 msgid ""
@@ -194,10 +189,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:58
-#, fuzzy
 msgid "You can find the finished project at the bottom of this page."
 msgstr ""
-"Puedes encontrar el proyecto terminado en la parte inferior de esta página"
+"Puedes encontrar el proyecto terminado en la parte inferior de esta página."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:61
 msgid "Getting everything ready"
@@ -208,7 +202,6 @@ msgid "Launch Godot and open up the project included in the starter assets."
 msgstr "Inicia Godot y abre el proyecto incluido en los recursos iniciales."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:65
-#, fuzzy
 msgid ""
 "While these assets are not necessarily required to use the scripts provided "
 "in this tutorial, they will make the tutorial much easier to follow, as "
@@ -518,13 +511,12 @@ msgid "Next, let's go through ``_ready``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:438
-#, fuzzy
 msgid ""
 "Firstly, we get the teleport :ref:`Raycast <class_Raycast>` node and assign "
 "it to ``teleport_raycast``."
 msgstr ""
-"Primero obtenemos todos los nodos que necesitaremos y los asignamos a las "
-"variables de clase apropiadas."
+"Primero,  obtenemos el nodo teleport :ref:`Raycast <class_Raycast>` y lo "
+"asignamos a ``teleport_raycast``."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:440
 msgid ""
@@ -1088,13 +1080,12 @@ msgid "Adding destroyable targets"
 msgstr "Añadir objetivos destruibles"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:694
-#, fuzzy
 msgid ""
 "Firstly, let's start by making some targets we will destroy in various ways "
 "with various special :ref:`RigidBody <class_RigidBody>` nodes."
 msgstr ""
-"Añadir la habilidad de agarrar y lanzar nodos :ref:`RigidBody "
-"<class_RigidBody>`"
+"Ahora comencemos creando algunos blancos que serán destruidos de distinto "
+"modo usando unos nodos :ref:`RigidBody <class_RigidBody>` especiales."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:696
 msgid ""
@@ -1117,21 +1108,18 @@ msgstr ""
 "variables."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:748
-#, fuzzy
 msgid ""
 "``destroyed``: A variable to track whether this target is destroyed or not."
 msgstr ""
-"``fuse_timer``: Una variable para rastrear cuánto tiempo ha estado encendido "
-"el detonador."
+"``destroyed``: Una variable para verificar si el blanco fue destruido o no."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:749
-#, fuzzy
 msgid ""
 "``destroyed_timer``: A variable to track how long the target has been "
 "destroyed."
 msgstr ""
-"``fuse_timer``: Una variable para rastrear cuánto tiempo ha estado encendido "
-"el detonador."
+"``destroyed_timer``: Una variable para verificar cuánto tiempo a "
+"transcurrido desde que fue destruido."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:750
 msgid ""
@@ -1144,13 +1132,12 @@ msgid "``health``: The amount of health the target has."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:752
-#, fuzzy
 msgid ""
 "``RIGID_BODY_TARGET``: The target broken into several smaller :ref:"
 "`RigidBody <class_RigidBody>` nodes."
 msgstr ""
 "``RIGID_BODY_TARGET`` : El objetivo dividido en varios nodos :ref:`RigidBody "
-"<class_RigidBody>`."
+"<class_RigidBody>` más pequeños."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:756
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:903
@@ -1219,13 +1206,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:788
-#, fuzzy
 msgid ""
 "Firstly, open up ``Game.gd`` and add the following additional class "
 "variables:"
 msgstr ""
-"Primero, abre ``Game.gd`` y añade las siguientes clases de variables "
-"adicionales:"
+"Primero, abre ``Game.gd`` y añade las siguientes variables adicionales:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:795
 msgid "``spheres_left``: The amount of sphere targets left in the game world."
@@ -1596,7 +1581,6 @@ msgid "Let's go through ``_ready``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1160
-#, fuzzy
 msgid ""
 "Firstly, we get all the nodes and assign them to the proper variables for "
 "later use."
@@ -1883,14 +1867,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1398
-#, fuzzy
 msgid ""
 "In ``_physics_process``, we check to see if enough time has passed to reset. "
 "If it has, we reset the box's :ref:`Transform <class_Transform>` and then "
 "reset the timer."
 msgstr ""
-"Cuando se omite la casilla de reinicio, reiniciamos el :ref:`Transform "
-"<class_Transform>` y el timer."
+"En ``_physics_process``, revisamos si ha pasado suficiente tiempo para "
+"reiniciar, si esto ha sucedido reseteamos el :ref:`Transform "
+"<class_Transform>` de la caja y el timer."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1400
 msgid ""

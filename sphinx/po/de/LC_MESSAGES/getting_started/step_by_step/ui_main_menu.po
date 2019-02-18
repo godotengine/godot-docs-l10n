@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,21 +19,26 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
 msgid "Design a title screen"
-msgstr ""
+msgstr "Erstelle einen Titelbildschirm"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:6
 msgid ""
 "In the next two tutorials, you will build two responsive UI (user interface) "
 "scenes step-by-step using the engine's UI system:"
 msgstr ""
+"In den nächsten zwei Tutorials, wirst du mithilfe des Benutzeroberflächen "
+"Systems der Engine, Schritt für Schritt eine zugängliche Benutzeroberfläche "
+"erstellen:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
 msgid "A main menu"
-msgstr ""
+msgstr "Ein Hauptmenü"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
 msgid "A game UI with a health bar, energy bar, bomb and money counters"
 msgstr ""
+"Die Benutzeroberfläche eines Spiels, mit Lebensbalken, Energiebalken, "
+"Bomben- und Geldzähler"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
 msgid ""
@@ -41,10 +46,15 @@ msgid ""
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
+"Du wirst lernen wie man die Benutzeroberfläche eines Spiels effizient "
+"gestaltet, und wie man Godots Control Nodes verwendet. Diese Seite "
+"fokussiert sich auf den sichtbaren Teil: alles was du vom Editor aus machen "
+"kannst. Um zu lernen wie man einen Lebensbalken programmiert, ließ :doc:"
+"`ui_code_a_life_bar`"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create"
-msgstr ""
+msgstr "Die graphische Benutzeroberfläche die du erstellen wirst"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -54,10 +64,15 @@ msgid ""
 "final result. You'll find all the sprites in the ``start/assets/main_menu``` "
 "folder."
 msgstr ""
+"Lade die Projekt Dateien herunter: :download:`ui_main_menu_design.zip <files/"
+"ui_main_menu_design.zip>` und extrahiere das Archiv. Importiere das ``start/"
+"`` Projekt nach Godot um dem Tutorial zu folgen. Der ``end\\`` Ordner "
+"enthält das finale Ergebnis. Du findest alle Sprites im ``start/assets/"
+"main_menu``` Ordner."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:33
 msgid "How to design your game UI"
-msgstr ""
+msgstr "Wie du die Benutzeroberfläche deines Spiels gestaltest"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:35
 msgid ""
@@ -69,10 +84,18 @@ msgid ""
 "sure the players can find their way around the interface using those "
 "placeholders."
 msgstr ""
+"Um eine gute Benutzeroberfläche zu gestalten, möchtest du zunächst eine "
+"grobe Skizze haben: eine flache gemalte Version die sich auf die "
+"Positionierung deiner Komponente, ihre Größe, und die Benutzer Interaktion "
+"fokussiert. Stift und Papier ist alles was du brauchst. Du solltest in "
+"dieser Phase keine spektakulären und finalen Graphiken verwenden. Dann "
+"benötigst du simple Platzhalter Sprites und kannst in Godot loslegen. Du "
+"möchtest sicherstellen das die Spieler sich mit den Platzhaltern in der "
+"Oberfläche zurecht finden."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:45
 msgid "The UI's rough plan or mockup"
-msgstr ""
+msgstr "Das grobe Modell oder der Plan für die Benutzeroberfläche"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:47
 msgid ""
@@ -80,16 +103,24 @@ msgid ""
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
+"Platzhalter muss nicht hässlich bedeuten, aber du solltest die Graphik "
+"einfach und sauber halten. Vermeide spezial Effekte, Animationen und "
+"detaillierte Illustrationen bevor Spieler deine Benutzeroberfläche getestet "
+"haben. Ansonsten:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:51
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback"
 msgstr ""
+"Die Graphik könnte die Wahrnehmung des Spielers verzerren und du verpasst "
+"wertvolle Rückmeldungen"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:53
 msgid "If the User Experience doesn't work, you'll have to redo some sprites"
 msgstr ""
+"Wenn die Benutzer Erfahrung nicht funktioniert, musst du einige Sprites neu "
+"anfertigen"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:57
 msgid ""
@@ -99,22 +130,33 @@ msgid ""
 "visuals away, it's a lot easier to size and place UI elements properly. It "
 "helps you refine the design foundation you'll build upon."
 msgstr ""
+"Versuche immer die Oberfläche mit einfachem Text und Boxen zum laufen zu "
+"bekommen. Es ist einfach die Texturen später zu ersetzen. Professionelle UX-"
+"Designer arbeiten häufig mit einfarbigen Umrissen und Boxen in Grau-stufe. "
+"Wenn du Farbe und spektakuläre visuelle Effekte weg lässt, ist es viel "
+"einfach die Benutzeroberflächen Elemente richtig zu positionieren. Es hilft "
+"dir die Gestaltungsbasis zu verbessern, auf der du aufbaust."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:64
 msgid "There are two ways to design your UI in Godot. You can:"
 msgstr ""
+"Es gibt zwei Wege deine Benutzeroberfläche in Godot zu gestalten. Du kannst:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:66
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes"
 msgstr ""
+"Alles in einer einzigen Szene erstellen, und möglicherweise einige Zweige "
+"als wiederverwendbare Szenen speichern"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:68
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes"
 msgstr ""
+"Vorlagen Szenen für wiederverwendbare Komponente gestalten und spezifische "
+"Komponente erstellen die von diesen Vorlagen abstammen"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:71
 msgid ""

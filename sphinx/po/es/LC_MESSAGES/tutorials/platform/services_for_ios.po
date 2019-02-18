@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,6 @@ msgid "Implemented in platform/iphone/in_app_store.mm"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:66
-#, fuzzy
 msgid ""
 "The Store Kit API is accessible through the \"InAppStore\" singleton (will "
 "always be available from gdscript). It is initialized automatically. It has "
@@ -89,7 +88,7 @@ msgid ""
 msgstr ""
 "La API del Store Kit es accesible a través del singleton \"InAppStore"
 "\" (siempre estará disponible desde gdscript). Se inicializa "
-"automáticamente. Tiene dos métodos de compra:"
+"automáticamente. Tiene tres métodos para la compra:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:70
 msgid "``Error purchase(Variant p_params);``"
@@ -195,9 +194,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:163
-#, fuzzy
 msgid "The response events will be dictionaries with the following fields:"
-msgstr "La escena Mob usará los siguientes nodos:"
+msgstr "Los eventos de respuesta serán diccionarios con los siguientes campos:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:174
 msgid "Game Center"
