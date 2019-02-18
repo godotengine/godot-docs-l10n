@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2019-02-10 13:55+0100\n"
+"POT-Creation-Date: 2019-02-18 09:48+0100\n"
 "PO-Revision-Date: 2018-06-26 13:44+0000\n"
 "Last-Translator: matevž lapajne <sivar.lapajne@gmail.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/godot-engine/"
@@ -515,7 +515,9 @@ msgstr "Katera okolja podpira Godot?"
 msgid "**For the editor:**"
 msgstr "**Za urejevalnik:**"
 
-#: ../../docs/about/faq.rst:35 ../../docs/tutorials/misc/jitter_stutter.rst:53
+#: ../../docs/about/faq.rst:35
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:39
+#: ../../docs/tutorials/misc/jitter_stutter.rst:53
 msgid "Windows"
 msgstr "Windows"
 
@@ -3061,7 +3063,7 @@ msgid ""
 "symbol next to the node. An ``AnimatedSprite`` requires a :ref:`SpriteFrames "
 "<class_SpriteFrames>` resource, which is a list of the animations it can "
 "display. To create one, find the ``Frames`` property in the Inspector and "
-"click \"<null>\" -> \"New SpriteFrames\". Next, in the same location, click "
+"click \"[empty]\" -> \"New SpriteFrames\". Next, in the same location, click "
 "``<SpriteFrames>``, then click \"Open Editor\" to open the \"SpriteFrames\" "
 "panel:"
 msgstr ""
@@ -3088,9 +3090,9 @@ msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
 "its collision area. For this character, a ``CapsuleShape2D`` node gives the "
-"best fit, so next to \"Shape\" in the Inspector, click \"<null>\"\" -> \"New "
-"CapsuleShape2D\".  Using the two size handles, resize the shape to cover the "
-"sprite:"
+"best fit, so next to \"Shape\" in the Inspector, click \"[empty]\"\" -> "
+"\"New CapsuleShape2D\".  Using the two size handles, resize the shape to "
+"cover the sprite:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
@@ -13602,24 +13604,24 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:6
 msgid ""
-"C# support is a new feature in Godot 3.0. As such, you may still run into "
-"some issues, or find spots where the documentation could be improved. Please "
-"report issues with C# in Godot on the `engine Github page <https://github."
-"com/godotengine/godot/issues>`_. And any documentation issues on the "
-"`documentation Github Page <https://github.com/godotengine/godot-docs/"
-"issues>`_."
+"C# support is a new feature available since Godot 3.0. As such, you may "
+"still run into some issues, or find spots where the documentation could be "
+"improved. Please report issues with C# in Godot on the `engine GitHub page "
+"<https://github.com/godotengine/godot/issues>`_, and any documentation "
+"issues on the `documentation GitHub page <https://github.com/godotengine/"
+"godot-docs/issues>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:11
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:14
 msgid ""
-"This page provides a brief intro to C#, both what it is and how to use it in "
-"Godot. Afterwards, you may want to look at :ref:`how to use specific "
-"features <doc_c_sharp_features>`, read about the :ref:`differences between "
-"the C# and the GDScript API <doc_c_sharp_differences>` and (re)visit the :"
-"ref:`Scripting section <doc_scripting>` of the step-by-step tutorial."
+"This page provides a brief introduction to C#, both what it is and how to "
+"use it in Godot. Afterwards, you may want to look at :ref:`how to use "
+"specific features <doc_c_sharp_features>`, read about the :ref:`differences "
+"between the C# and the GDScript API <doc_c_sharp_differences>` and (re)visit "
+"the :ref:`Scripting section <doc_scripting>` of the step-by-step tutorial."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:16
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:21
 msgid ""
 "C# is a high-level programming language developed by Microsoft. In Godot, it "
 "is implemented with the Mono 5.x .NET framework, including full support for "
@@ -13630,7 +13632,7 @@ msgid ""
 "documentation."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:20
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:29
 msgid ""
 "This is **not** a full-scale tutorial on the C# language as a whole. If you "
 "aren't already familiar with its syntax or features, see the `Microsoft C# "
@@ -13638,176 +13640,173 @@ msgid ""
 "suitable introduction elsewhere."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:25
-msgid "Setup C# for Godot"
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:36
+msgid "Setting up C# for Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:27
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:41
 msgid ""
-"Download and install the `Mono <http://www.mono-project.com/download/>`_ SDK."
+"Download and install the latest version of `Visual Studio <https://"
+"visualstudio.microsoft.com/downloads/>`_ (*not* Visual Studio Code), which "
+"contains utilities required to use C# in Godot. If you don't plan on using "
+"the Visual Studio IDE, you can download just the `Visual Studio Build Tools "
+"<https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?"
+"sku=BuildTools&rel=15>`_ instead."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:29
-msgid "If you are using Godot 3.0.2, you must use Mono 5.4."
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:50
+msgid "macOS and Linux"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:31
-msgid "Godot 3.0.3+ requires Mono 5.12 on all platforms."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:33
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:52
 msgid ""
-"To download Mono v5.12+ on a Mac, locate the \"Stable Channel\" link from "
-"the `Mono Downloads Page <http://www.mono-project.com/download/>`_. The "
-"Visual Studio channel is an earlier version of Mono and will not work with "
-"Godot 3.0.3+."
+"Download and install the latest version of the `Mono SDK <http://www.mono-"
+"project.com/download/>`_. As of Godot 3.1 beta 3, the version number doesn't "
+"matter since Godot bundles its own Mono 5.18 installation. We only need the "
+"Mono installation for NuGet and MSBuild which are required to use C# in "
+"Godot."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:35
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
 msgid ""
-"You also need MSBuild (at least version 15.0), which should come with the "
-"Mono installation."
+"To download Mono on macOS, use the \"Stable Channel\" link from the `Mono "
+"Downloads Page <http://www.mono-project.com/download/>`_. The Visual Studio "
+"channel is an earlier version of Mono and will not work."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:37
-msgid ""
-"For instructions on installing older versions of Mono on Linux, see `this "
-"page <http://www.mono-project.com/docs/getting-started/install/linux/"
-"#accessing-older-releases>`_. Older versions of Mono for macOS and Windows "
-"can be found `here <https://download.mono-project.com/archive/>`_."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:40
-msgid ""
-"Additionally, your Godot version must have Mono support enabled, so ensure "
-"you download the **Mono version** of Godot."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:42
-msgid ""
-"If you are building Godot from source, make sure to follow the steps to "
-"include Mono support in your build outlined on the :ref:"
-"`doc_compiling_with_mono` page."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:44
-msgid ""
-"In summary, you must have installed 1) the correct Mono SDK version for your "
-"Godot version, and 2) The Mono version of Godot."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:47
-msgid "Configuring an external editor"
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:49
-msgid ""
-"While Godot does have its own scripting editor, its support for C# is kept "
-"minimal, and it's recommended that you use an external IDE or editor, such "
-"as Microsoft Visual Studio Code, or MonoDevelop, which provide auto-"
-"completion, debugging and other features useful when working with C#. To set "
-"it up, in Godot click on ``Editor``, then ``Editor Settings``. Scroll down "
-"to the bottom, to the ``Mono`` settings. Under Mono click on ``Editor``, and "
-"on that page choose your external editor of choice."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:57
-msgid ""
-"If you are using Visual Studio Code, ensure you download and install the ."
-"NET tools extension. Without this, Godot will crash when trying to create a "
-"new C# project or edit a C# script."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:60
-msgid "Creating a C# script"
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:62
-msgid ""
-"After you successfully setup C# for Godot, you should see the following "
-"option when selecting ``Attach script`` in the context menu of a node in "
-"your scene:"
-msgstr ""
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
+#, fuzzy
+msgid "Additional notes"
+msgstr "Animacija"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
 msgid ""
-"Note that while some specifics change, most of the things work the same when "
-"using C# for scripting. If you're new to Godot, you may want to peruse the "
-"tutorials on :ref:`doc_scripting` at this point. While some places in the "
-"documentation still lack C# examples, most things can be transferred easily "
-"from GDScript."
+"Your Godot version must have Mono support enabled, so make sure to download "
+"the **Mono version** of Godot. If you are building Godot from source, make "
+"sure to follow the steps to enable Mono support in your build as outlined in "
+"the :ref:`doc_compiling_with_mono` page."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:71
-msgid "Project setup and workflow"
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:73
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:72
 msgid ""
-"When you create the first C# script, Godot initializes the C# project files "
-"for your Godot project. This includes generating a C# solution (``.sln``) "
-"and a project (``.csproj``) file, as well as some utility files and folders "
-"(``.mono``, sometimes ``Properties``). All of these but ``.mono`` are "
-"important and should be kept in your version control system. ``.mono`` can "
-"be safely added to the ignore list of your VCS. When troubleshooting, it can "
-"sometimes help to delete the ``.mono`` folder and let it regenerate."
+"In summary, you must have installed Visual Studio or Mono (depending on your "
+"operating system) **and** the Mono-enabled version of Godot."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:76
+msgid "Configuring an external editor"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:78
 msgid ""
-"Note that currently, there are some issues where Godot and the C# project "
-"don't stay in sync; if you delete, rename or move things, like scripts or "
-"nodes, they may no longer match up. In this case, it can help to edit the "
-"solution files manually."
+"While Godot has its own script editor, its support for C# is kept minimal; "
+"it's recommended that you use an external IDE or editor instead, such as "
+"`Visual Studio Code <https://code.visualstudio.com/>`_ or MonoDevelop. These "
+"provide auto-completion, debugging and other features useful when working "
+"with C#. To set it up in Godot, click on **Editor → Editor Settings** and "
+"scroll down to the bottom to the **Mono** settings. Under **Mono**, click on "
+"**Editor** then choose your external editor of choice."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:81
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
 msgid ""
-"Example: If you created a script (e.g. ``Test.cs``) and delete it in Godot, "
-"the compilation will fail because now the missing file is still expected to "
-"be there by the CS project. For now, you can simply open up the ``.csproj`` "
-"file and look for the ``ItemGroup``, there should be a line included like "
-"the following:"
+"If you are using Visual Studio Code, ensure you download and install the `C# "
+"extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
+"csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
+msgid "Creating a C# script"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
 msgid ""
-"Simply remove that line and your project should now again build fine. Same "
+"After you successfully set up C# for Godot, you should see the following "
+"option when selecting ``Attach script`` in the context menu of a node in "
+"your scene:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
+msgid ""
+"Note that while some specifics change, most concepts work the same when "
+"using C# for scripting. If you're new to Godot, you may want to follow the "
+"tutorials on :ref:`doc_scripting` at this point. While some places in the "
+"documentation still lack C# examples, most concepts can be transferred "
+"easily from GDScript."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:106
+msgid "Project setup and workflow"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:108
+msgid ""
+"When you create the first C# script, Godot initializes the C# project files "
+"for your Godot project. This includes generating a C# solution (``.sln``) "
+"and a project file (``.csproj``), as well as some utility files and folders "
+"(``.mono`` and ``Properties/AssemblyInfo.cs``). All of these but ``.mono`` "
+"are important and should be committed to your version control system. ``."
+"mono`` can be safely added to the ignore list of your VCS. When "
+"troubleshooting, it can sometimes help to delete the ``.mono`` folder and "
+"let it regenerate."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:117
+msgid ""
+"Note that currently, there are some issues where Godot and the C# project "
+"don't stay in sync; if you delete, rename or move a C# script, the change "
+"may not be reflected in the C# project file. In cases like this, you will "
+"have to edit the C# project file manually."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:122
+msgid ""
+"For example, if you created a script (e.g. ``Test.cs``) and delete it in "
+"Godot, compilation will fail because the missing file is still expected to "
+"be there by the C# project file. For now, you can simply open up the ``."
+"csproj`` file and look for the ``ItemGroup``, there should be a line "
+"included like the following:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
+msgid ""
+"Simply remove that line and your project should build correctly again. Same "
 "for renaming and moving things, simply rename and move them in the project "
 "file if needed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:95
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
 #: ../../docs/tutorials/io/background_loading.rst:87
 #: ../../docs/tutorials/misc/pausing_games.rst:71
 msgid "Example"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:97
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:143
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:124
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:170
 msgid ""
-"As you can see, the things normally in global scope in GDScript like Godot's "
-"``print`` function are available in the ``GD`` namespace. For a list of "
-"those, see the class reference pages for :ref:`@GDScript <class_@gdscript>` "
-"and :ref:`@GlobalScope <class_@globalscope>`."
+"As you can see, functions normally in global scope in GDScript like Godot's "
+"``print`` function are available in the ``GD`` class which is part of the "
+"``Godot`` namespace. For a list of methods in the ``GD`` class, see the "
+"class reference pages for :ref:`@GDScript <class_@gdscript>` and :ref:"
+"`@GlobalScope <class_@globalscope>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
 msgid ""
 "Keep in mind that the class you wish to attach to your node should be named "
-"as the ``.cs`` file. If not, you will get the following error and won't be "
-"able to run the scene: ``Cannot find class XXX for script res://XXX.cs``."
+"as the ``.cs`` file. Otherwise, you will get the following error and won't "
+"be able to run the scene: *\"Cannot find class XXX for script res://XXX.cs\"*"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:132
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
 msgid "General differences between C# and GDScript"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:134
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:185
 msgid ""
 "The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++. "
 "Where possible, fields and getters/setters have been converted to "
@@ -13815,82 +13814,89 @@ msgid ""
 "reasonably possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:138
-msgid "For more, see the :ref:`doc_c_sharp_differences` page."
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
+msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:192
 msgid "Current gotchas and known issues"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:143
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
 msgid ""
-"As C# support is quite new to Godot, there are some growing pains and things "
-"that still need to be ironed out. Below is a list of the most important "
-"issues you should be aware of when diving into C# in Godot, but if in doubt "
-"also take a look over the official `issue tracker for Mono issues <https://"
-"github.com/godotengine/godot/labels/topic%3Amono>`_."
+"As C# support is quite new in Godot, there are some growing pains and things "
+"that need to be ironed out. Below is a list of the most important issues you "
+"should be aware of when diving into C# in Godot, but if in doubt, also take "
+"a look over the official `issue tracker for Mono issues <https://github.com/"
+"godotengine/godot/labels/topic%3Amono>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:146
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
 msgid ""
 "As explained above, the C# project isn't always kept in sync automatically "
 "when things are deleted, renamed or moved in Godot (`#12917 <https://github."
-"com/godotengine/godot/issues/12917>`_)"
+"com/godotengine/godot/issues/12917>`_)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
-msgid "Writing editor plugins and tool scripts in C# are not yet supported"
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:203
+msgid ""
+"Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:148
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
+msgid ""
+"State is currently not saved and restored when hot-reloading, with the "
+"exception of exported variables."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
 msgid ""
 "Exporting Mono projects is only supported for desktop platforms (Linux, "
-"Windows and macOS). HTML5, Android, iOS and UWP are not currently supported "
-"(`#18364 comment <https://github.com/godotengine/godot/"
-"issues/18364#issuecomment-406222102>`_)"
+"Windows and macOS). Android, iOS, HTML5 and UWP are not currently supported "
+"(`#20267 <https://github.com/godotengine/godot/issues/20267>`_, `#20268 "
+"<https://github.com/godotengine/godot/issues/20268>`_ `#20270 <https://"
+"github.com/godotengine/godot/issues/20270>`_ `#20271 <https://github.com/"
+"godotengine/godot/issues/20271>`_)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
-"matches the file name and is unique within the project assembly (`#7402 "
-"comment <https://github.com/godotengine/godot/"
-"issues/7402#issuecomment-269910926>`_)"
+"matches the file name."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:152
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
 msgid "Performance of C# in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:154
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
-"bunnymark>`_, the performance of C# in Godot - while generally in the same "
-"order of magnitude - is roughly **~4x** that of GDScript in some naive "
-"cases. For full performance, C++ is still a little faster; the specifics are "
-"going to vary according to your use case. GDScript is likely fast enough for "
-"most general scripting workloads. C# is faster, but requires some expensive "
-"marshalling when talking to Godot."
+"bunnymark>`_, the performance of C# in Godot — while generally in the same "
+"order of magnitude — is roughly **~4×** that of GDScript in some naive "
+"cases. C++ is still a little faster; the specifics are going to vary "
+"according to your use case. GDScript is likely fast enough for most general "
+"scripting workloads. C# is faster, but requires some expensive marshalling "
+"when talking to Godot."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:159
-msgid "Using Nuget packages in Godot"
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:226
+msgid "Using NuGet packages in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:161
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
 msgid ""
-"`Nuget <https://www.nuget.org/>`_ Packages can be installed and used with "
-"Godot, as with any project. Many IDEs (such as vs code) can add packages "
-"directly. They can also be added manually by adding the package reference in "
-"the ``.csproj`` file located in the project root:"
+"`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
+"Godot, as with any C# project. Many IDEs are able to add packages directly. "
+"They can also be added manually by adding the package reference in the ``."
+"csproj`` file located in the project root:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:176
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:243
 msgid ""
-"Whenever packages are added or modified, run nuget restore in the root of "
-"the project directory, to ensure that the nuget packages will be available "
-"for msbuild to use, run::"
+"Whenever packages are added or modified, run ``nuget restore`` in the root "
+"of the project directory. To ensure that NuGet packages will be available "
+"for msbuild to use, run:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
@@ -20107,8 +20113,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:108
 msgid ""
 "One can check for input actions within the input callbacks just the same. If "
-"one wants to use delta time, one can fetch it from the :ref:`Performance "
-"<class_Performance>` singleton as needed."
+"one wants to use delta time, one can fetch it from the related deltatime "
+"methods as needed."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:152
@@ -34506,6 +34512,546 @@ msgstr ""
 msgid ""
 "**OpenGameArt.org, 360toolkit.co, the creator(s) of Titillium-Regular, "
 "StumpyStrust, and GameSounds.xyz are in no way involved in this tutorial.**"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/index.rst:2
+msgid "Animating thousands of objects"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:4
+msgid "Animating thousands of fish with MeshInstance"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:6
+msgid ""
+"This tutorial explores a technique used in the game `ABZU <https://www."
+"gdcvault.com/play/1024409/Creating-the-Art-of-ABZ>`_ for rendering and "
+"animating thousands of fish using vertex animation and static mesh "
+"instancing."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:10
+msgid ""
+"In Godot, this can be accomplished with a custom :ref:`Shader "
+"<class_Shader>` and a :ref:`MultiMeshInstance <class_MultiMeshInstance>`. "
+"Using the following technique you can render thousands of animated objects, "
+"even on low end hardware."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:14
+msgid ""
+"We will start by animating one fish. Then, we will see how to extend that "
+"animation to thousands of fish."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:18
+#, fuzzy
+msgid "Animating one Fish"
+msgstr "Animacija"
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:20
+msgid ""
+"We will start with a single fish. Load your fish model into a :ref:"
+"`MeshInstance <class_MeshInstance>` and add a new :ref:`ShaderMaterial "
+"<class_ShaderMaterial>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:23
+msgid ""
+"Here is the fish we will be using for the example images, you can use any "
+"fish model you like."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:27
+msgid ""
+"The fish model in this tutorial is made by `QuaterniusDev <http://quaternius."
+"com>`_ and is shared with a creative commons license. CC0 1.0 Universal (CC0 "
+"1.0) Public Domain Dedication https://creativecommons.org/publicdomain/"
+"zero/1.0/"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:31
+msgid ""
+"Typically, you would use bones and a :ref:`Skeleton <class_Skeleton>` to "
+"animate objects. However, bones are animated on the CPU and so you end "
+"having to calculate thousands of operations every frame and it becomes "
+"impossible to have thousands of objects. Using vertex animation in a vertex "
+"shader, you avoid using bones and can instead calculate the full animation "
+"in a few lines of code and completely on the GPU."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:37
+msgid "The animation will be made of four key motions:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:39
+msgid "A side to side motion"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:40
+msgid "A pivot motion around the center of the fish"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:41
+msgid "A panning wave motion"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:42
+msgid "A panning twist motion"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:44
+msgid ""
+"All the code for the animation will be in the vertex shader with uniforms "
+"controlling the amount of motion. We use uniforms to control the strength of "
+"the motion so that you can tweak the animation in editor and see the results "
+"in real time, without the shader having to recompile."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:48
+msgid ""
+"All the motions will be made using cosine waves applied to ``VERTEX`` in "
+"model space. We want the vertices to be in model space so that the motion is "
+"always relative to the orientation of the fish. For example, side-to-side "
+"will always be move the fish back and forth in its left to right direction, "
+"instead of on the ``x`` axis in the world orientation."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:53
+msgid ""
+"In order to control the speed of the animation, we will start by defining "
+"our own time variable using ``TIME``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:60
+msgid ""
+"The first motion we will implement is the side to side motion. It can be "
+"made by offsetting ``VERTEX.x`` by ``cos`` of ``TIME``. Each time the mesh "
+"is rendered, all the vertices will move to the side by the amount of "
+"``cos(time)``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:69
+msgid "The resulting animation should look something like this:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:73
+msgid ""
+"Next, we add the pivot. Because the fish is centered at (0, 0), all we have "
+"to do is multiply ``VERTEX`` by a rotation matrix for it to rotate around "
+"the center of the fish."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:76
+msgid "We construct a rotation matrix like so:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:85
+msgid ""
+"And then we apply it in the ``x`` and ``z`` axes by multiplying it by "
+"``VERTEX.xz``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:91
+msgid "With only the pivot applied you should see something like this:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:95
+msgid ""
+"The next two motions need to pan down the spine of the fish. For that, we "
+"need a new variable, ``body``. ``body`` is a float that is ``0`` at the tail "
+"of the fish and ``1`` at its head."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:102
+msgid ""
+"The next motion is a cosine wave that moves down the length of the fish. To "
+"make it move along the spine of the fish, we offset the input to ``cos`` by "
+"the position along the spine, which is the variable we defined above, "
+"``body``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:111
+msgid ""
+"This looks very similar to the side to side motion we defined above, but in "
+"this one, by using ``body`` to offset ``cos`` each vertex along the spine "
+"has a different position in the wave making it look like a wave is moving "
+"along the fish."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:117
+msgid ""
+"The last motion is the twist, which is a panning roll along the spine. "
+"Similarly to the pivot, we first  construct a rotation matrix."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:126
+msgid ""
+"We apply the rotation in the ``xy`` axes so that the fish appears to roll "
+"around its spine. For this to work, the fishes spine needs to be centered on "
+"the ``z`` axis."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:133
+msgid "Here is the fish with twist applied:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:137
+msgid ""
+"If we apply all these motions one after another, we get a fluid jelly-like "
+"motion."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:141
+msgid ""
+"Normal fish swim mostly with the back half of their body. Accordingly, we "
+"need to limit the panning motions to the back half of the fish. To do this, "
+"we create a new variable, ``mask``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:144
+msgid ""
+"``mask`` is a float that goes from ``0`` at the front of the fish to ``1`` "
+"at the end  using ``smoothstep`` to control the point at which the "
+"transition from ``0`` to ``1`` happens."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:152
+msgid "Below is an image of the fish with ``mask`` used as ``COLOR``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:156
+msgid ""
+"For the wave, we multiply the motion by ``mask`` which will limit it to the "
+"back half."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:163
+msgid ""
+"In order to apply the mask to the twist, we use ``mix``. ``mix`` allows us "
+"to mix the vertex position between a fully rotated vertex and one that is "
+"not rotated. We need to use ``mix`` instead of multiplying ``mask`` by the "
+"rotated ``VERTEX`` because we are not adding the motion to the ``VERTEX`` we "
+"are replacing the ``VERTEX`` with the rotated version. If we multiplied that "
+"by ``mask`` we would shrink the fish."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:174
+msgid "Putting the four motions together gives us the final animation."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:178
+msgid ""
+"Go ahead and play with the uniforms in order to alter the swim cycle of the "
+"fish. You will find that you can create a wide variety of swim styles using "
+"these four motions."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:182
+msgid "Making a school of fish"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:184
+msgid ""
+"Godot makes it easy to render thousands of the same object using a "
+"MultiMeshInstance node."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:186
+msgid ""
+"A MultiMeshInstance node is created and used the same way you would make a "
+"MeshInstance node. For this tutorial, we will name the MultiMeshInstance "
+"node ``School``, because it will contain a school of fish."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:190
+msgid ""
+"Once you have a MultiMeshInstance add a :ref:`MultiMesh <class_MultiMesh>`, "
+"and to that MultiMesh add your :ref:`Mesh <class_Mesh>` with the shader from "
+"above."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:193
+msgid ""
+"MultiMeshes draw your Mesh with three additional per-instance properties: "
+"Transform (rotation, translation, scale), Color, and Custom. Custom is used "
+"to pass in 4 multi-use variables using a :ref:`Color <class_Color>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:197
+msgid ""
+"``instance_count`` specifies how many instances of the mesh you want to "
+"draw. For now, leave ``instance_count`` at ``0`` because you cannot change "
+"any of the other parameters while ``instance_count`` is larger than ``0``. "
+"We will set ``instance count`` in GDScript later."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:201
+msgid ""
+"``transform_format`` specifies whether the transforms used are 3D or 2D. For "
+"this tutorial, select 3D."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:203
+msgid ""
+"For both ``color_format`` and ``custom_data_format`` you can choose between "
+"``None``, ``Byte``, and ``Float``. ``None`` means you won't be passing in "
+"that data (either a per-instance ``COLOR`` variable, or ``INSTANCE_CUSTOM``) "
+"to the shader. ``Byte`` means each number making up the color you pass in "
+"will be stored with 8 bits while ``Float`` means each number will be stored "
+"in a floating point number (32 bits). ``Float`` is slower but more precise, "
+"``Byte`` will take less memory and be faster, but you may see some visual "
+"artifacts."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:210
+msgid "Now, set ``instance_count`` to the number of fish you want to have."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:212
+msgid "Next we need to set the per-instance transforms."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:214
+msgid ""
+"There are two ways to set per-instance transforms for MultiMeshes. The first "
+"is entirely in editor and is described in the :ref:`MultiMeshInstance "
+"tutorial <doc_using_multi_mesh_instance>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:217
+msgid ""
+"The second is to loop over all the instances and set their transforms in "
+"code. Below, we use GDScript to loop over all the instances and set their "
+"transform to a random position."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:227
+msgid ""
+"Running this script will place the fish in random positions in a box around "
+"the position of the MultiMeshInstance."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:230
+msgid ""
+"If performance is an issue for you, try running the scene with GLES2 or with "
+"fewer fish."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:232
+msgid ""
+"Notice how all the fish  are all in the same position in their swim cycle? "
+"It makes them look very robotic. The next step is to give each fish a "
+"different position in the swim cycle so the entire school looks more organic."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:237
+msgid "Animating a school of fish"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:239
+msgid ""
+"One of the benefits of animating the fish using ``cos`` functions is that "
+"they are animated with one parameter, ``time``. In order to give each fish a "
+"unique position in the swim cycle, we only need to offset ``time``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:243
+msgid ""
+"We do that by adding the per-instance custom value ``INSTANCE_CUSTOM`` to "
+"``time``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:249
+msgid ""
+"Next, we need to pass a value into ``INSTANCE_CUSTOM``. We do that by adding "
+"one line into the ``for`` loop from above. In the ``for`` loop we assign "
+"each instance a set of four random floats to use."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:257
+msgid ""
+"Now the fish all have unique positions in the swim cycle. You can give them "
+"a little more individuality by using ``INSTANCE_CUSTOM`` to make them swim "
+"faster or slower by multiplying by ``TIME``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:266
+msgid ""
+"You can even experiment with changing the per-instance color the same way "
+"you changed the per-instance custom value."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:269
+msgid ""
+"One problem that you will run into at this point is that the fish are "
+"animated, but they are not moving. You can move them by updating the per-"
+"instance transform for each fish every frame. Although doing so will be "
+"faster then moving thousands of MeshInstances per frame, it is still likely "
+"to be slow."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:274
+msgid ""
+"In the next tutorial we will cover how to use :ref:`Particles "
+"<class_Particles>` to take advantage of the GPU and move each fish around "
+"individually while still receiving the benefits of instancing."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:4
+msgid "Controlling thousands of fish with Particles"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:6
+msgid ""
+"The problem with :ref:`MeshInstances <class_MeshInstance>` is that it is "
+"expensive to update their transform array. It is great for placing many "
+"static objects around the scene. But it is still difficult to move the "
+"objects around the scene."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:10
+msgid ""
+"To make each instance move in an interesting way we will use a :ref:"
+"`Particles <class_Particles>` node. Particles take advantage of GPU "
+"acceleration by computing and setting the per-instance information in a :ref:"
+"`Shader <class_Shader>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:14
+msgid ""
+"Particles are not available in GLES2, instead use :ref:`CPUParticles "
+"<class_CPUParticles>`, which do the same thing as Particles, but do not "
+"benefit from GPU acceleration."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:17
+msgid ""
+"First create a Particles node. Then, under \"Draw Passes\" set the "
+"Particle's \"Draw Pass 1\" to your :ref:`Mesh <class_Mesh>`. Then under "
+"\"Process Material\" create a new :ref:`ShaderMaterial "
+"<class_ShaderMaterial>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:21
+msgid "Set the ``shader_type`` to ``particles``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:27
+msgid "Then add the following two functions:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:51
+msgid ""
+"These functions come from the default :ref:`ParticlesMaterial "
+"<class_ParticlesMaterial>`. They are used to generate a random number from  "
+"each particle's ``RANDOM_SEED``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:54
+msgid ""
+"A unique thing about particle shaders is that some of the built-in variables "
+"are saved across frames. ``TRANSFORM``, ``COLOR``, and ``CUSTOM`` can all be "
+"accessed in the Spatial shader of the mesh, and also in the particle shader "
+"the next time it is run."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:58
+msgid ""
+"Next, setup your ``vertex`` function. Particles shaders only contain a "
+"vertex function and no others."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:61
+msgid ""
+"First we will distinguish between code that needs to be run only when the "
+"particle system starts and code that should always run. We want to give each "
+"fish a random position and a random animation offset when the system is "
+"first run so we wrap that code in an ``if`` statement that checks the built-"
+"in variable ``RESTART`` which becomes true for one frame when the particle "
+"system is restarted."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:66
+msgid "From a high level, this looks like:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:78
+msgid ""
+"Next, we need to generate 4 random numbers: 3 to create a random position "
+"and one for the random offset of the swim cycle."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:81
+msgid ""
+"First, generate 4 seeds inside the ``RESTART`` block using the ``hash`` "
+"function provided above:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:90
+msgid ""
+"Then, use those seeds to generate random numbers using ``rand_from_seed``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:99
+msgid ""
+"Finally, assign ``position`` to ``TRANSFORM[3].xyz``, which is the part of "
+"the transform that holds the position information."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:106
+msgid "Remember, all this code so far goes inside the ``RESTART`` block."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:108
+msgid ""
+"The vertex shader for your mesh can stay the exact same as it was in the "
+"previous tutorial."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:110
+msgid ""
+"Now you can move each fish individually each frame, either by adding to the "
+"``TRANSFORM`` directly or by writing to ``VELOCITY``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:113
+msgid "Let's transform the fish by setting their ``VELOCITY``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:119
+msgid ""
+"This is the most basic way to set ``VELOCITY`` every particle (or fish) will "
+"have the same velocity."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:121
+msgid ""
+"Just by setting ``VELOCITY`` you can make the fish swim however you want. "
+"For example, try the code below."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:128
+msgid "This will give each fish a unique speed between ``2`` and ``10``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:130
+msgid ""
+"If you used ``CUSTOM.y`` in the last tutorial, you can also set the speed of "
+"the swim animation based on the ``VELOCITY``. Just use ``CUSTOM.y``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:137
+msgid "This code gives you the following behavior:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:141
+msgid ""
+"Using a ParticlesMaterial you can make the fish behavior as simple or "
+"complex as you like. In this tutorial we only set Velocity, but in your own "
+"Shaders you can also set ``COLOR``, rotation, scale (through ``TRANSFORM``). "
+"Please refer to the :ref:`Particles Shader Reference <doc_particle_shader>` "
+"for more information on particle shaders."
 msgstr ""
 
 #: ../../docs/tutorials/audio/index.rst:2
