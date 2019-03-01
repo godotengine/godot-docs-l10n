@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,6 +111,12 @@ msgid ""
 "to the list of properties the Object fetches from the ClassDB. The same "
 "holds true for other declarative code."
 msgstr ""
+"*Esto* es un :ref:`Script <class_Script>`. Los Object revisan su script "
+"anexado antes que la base de datos del motor, de este modo, los scripts "
+"pueden sobreescribir métodos. Si un sscript define un método "
+"`_get_property_list()`, esos datos serán agregados a la lista de propiedades "
+"que el Object obtiene de la ClassDB. Lo mismo aplica para otros códigos "
+"declarativos."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:47
 msgid ""
@@ -120,6 +126,10 @@ msgid ""
 "Object to defer to the Script's content where the engine logic deems "
 "appropriate."
 msgstr ""
+"Esto puede llevar a una confusión de los usuarios, de ver a un script es una "
+"clase en sí mismo. En realidad, el motor simplemente auto instancia la clase "
+"base y agrega el script al objeto. Esto permite que el Object difiera al "
+"contenido del Script cuando la lógica del motor lo vea apropiado."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:53
 msgid ""
@@ -128,12 +138,16 @@ msgid ""
 "node hierarchies demonstrates this. Each individual Node's logic could be "
 "several hundred lines of code in length."
 msgstr ""
+"Esto también presenta un problema. Cuando el tamaño de los Object aumenta, "
+"el tamaño de los scripts necesarios para crearlos crece mucho. Esto se puede "
+"demostrar creando jerarquías de nodos. La lógica individual de cada Node "
+"puede ser de cientos de líneas de código en longitud."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid "let's see a simple example of creating a single Node as a child."
-msgstr ""
+msgstr "veamos un ejemplo simple de creación de un solo Node como un hijo."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:97
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:98
 msgid ""
 "Notice that only two pieces of declarative code are involved in the creation "
 "of this child node: the variable declaration and the constructor "
@@ -143,61 +157,89 @@ msgid ""
 "\"lookups\" within data structures to find the corresponding logic to "
 "execute."
 msgstr ""
+"Nota que sólo dos porciones de código declarativo están involucradas en la "
+"creación de este nodo hijo: la declaración de una variable y la del "
+"constructor. Todo lo demás sobre el hijo debe hacerse usando código "
+"imperativo. Sin embargo, el código de script es mucho más lento que el "
+"código C++ del motor. Cada cambio debe hacer una llamada separada al API de "
+"scripting, lo que significan muchos C++ \"lookups\" (búsquedas) dentro de "
+"estructuras de datos para encontrar la lógica correspondiente para "
+"ejecutarlo."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:105
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:106
 msgid ""
 "To help offload the work, it would be convenient if one could batch up all "
 "operations involved in creating and setting up node hierarchies. The engine "
 "could then handle the construction using its fast C++ code, and the script "
 "code would be free from the perils of imperative code."
 msgstr ""
+"Para ayudar a aliviar la carga, puede ser conveniente hacer por lotes todas "
+"las operaciones que impliquen la creación y configuración de jerarquías de "
+"nodos. Entonces el motor podrá realizar la construcción usando su rápido "
+"código C++ y el script estará libre de los riesgos del código imperativo."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:110
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:111
 msgid ""
 "*This* is what a scene (:ref:`PackedScene <class_PackedScene>`) is: a "
 "resource that provides an advanced \"constructor\" serialization which is "
 "offloaded to the engine for batch processing."
 msgstr ""
+"*Esto* es una escena (:ref:`PackedScene <class_PackedScene>`): un Resource "
+"que provee un \"constructor\" de serialización avazado que puede ser "
+"delegado al motor para procesamiento por lotes."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:114
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:115
 msgid ""
 "Now, why is any of this important to scene organization? Because one must "
 "understand that scenes *are* objects. One often pairs a scene with a "
 "scripted root node that makes use of the sub-nodes. This means that the "
 "scene is often an extension of the script's declarative code."
 msgstr ""
+"Ahora, por qué esto puede ser importante para la organización de una escena? "
+"Porque uno debe comprender que las escenas *son* objetos. Uno usualmente "
+"relaciona una escena con un nodo raíz con script que hace uso de sub nodos. "
+"Esto significa que la escena normalmente es es una extensión del código "
+"declarativo del script."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:120
 msgid "It helps to define..."
-msgstr ""
+msgstr "Esto ayuda a definir..."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:122
 msgid "what objects are available to the script?"
-msgstr "qué objetos son accesibles para el script?"
+msgstr "¿qué objetos son accesibles para el script?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:123
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:124
 msgid "how are they organized?"
-msgstr ""
+msgstr "¿cómo están organizados?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:125
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
 msgid "how are they initialized?"
-msgstr ""
+msgstr "¿cómo son inicializados?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:127
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
 msgid "what connections to each other do they have, if any?"
-msgstr ""
+msgstr "¿qué conexiones tienen entre sí, si es que tienen alguna?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
 msgid ""
 "As such, many Object-Oriented principles which apply to \"programming\", i."
 "e. scripts, *also* apply to scenes. Some scripts are designed to only work "
 "in one scene (which are often bundled into the scene itself). Other scripts "
 "are meant to be re-used between scenes."
 msgstr ""
+"De este modo, muchos principios de paradigna orientado a objetos aplicados a "
+"\"programación\", por ejemplo en scripts, *también* aplica a escenas. "
+"Algunos scripts son designados para funcionar en una escena (generalmente "
+"incluidos en la escena misma). Otros scripts están hechos para ser "
+"reutilizados en varias escenas."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:134
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:135
 msgid ""
 "**Regardless, the scene is always an extension of the root script, and can "
 "therefore be interpreted as a part of the class.** Most of the points "
 "covered in this series will build on this point, so keep it in mind."
 msgstr ""
+"**A pesar de esto, la escena siempre es una extensión del script raíz, y "
+"puede ser interpretada como parte de la clase.** La mayoría de los puntos "
+"tratados aquí estarán basados en esto, así que tenlo en mente."

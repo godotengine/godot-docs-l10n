@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:4
-#, fuzzy
 msgid "Spatial shaders"
-msgstr "Shaders spatiales"
+msgstr "Shaders spatiaux"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:6
 msgid ""
@@ -280,7 +279,6 @@ msgid "Disable contribution from ambient light and radiance map."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:77
-#, fuzzy
 msgid "Vertex built-ins"
 msgstr "Sommets intégrés"
 
@@ -357,9 +355,8 @@ msgid "Built-in"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
-#, fuzzy
 msgid "inout mat4 **WORLD_MATRIX**"
-msgstr "in mat4 **WORLD_MATRIX**"
+msgstr "inout mat4 **WORLD_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
@@ -380,9 +377,8 @@ msgid "World space to view space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
-#, fuzzy
 msgid "inout mat4 **PROJECTION_MATRIX**"
-msgstr "in mat4 **PROJECTION_MATRIX**"
+msgstr "inout mat4 **PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
@@ -403,18 +399,16 @@ msgid "View space to world space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
-#, fuzzy
 msgid "inout mat4 **MODELVIEW_MATRIX**"
-msgstr "in mat4 **WORLD_MATRIX**"
+msgstr "inout mat4 **MODELVIEW_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
 msgid "Model space to view space transform (use if possible)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
-#, fuzzy
 msgid "inout mat4 **INV_PROJECTION_MATRIX**"
-msgstr "in mat4 **INV_PROJECTION_MATRIX**"
+msgstr "inout mat4 **INV_PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
@@ -447,9 +441,8 @@ msgid "Size of viewport (in pixels)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
-#, fuzzy
 msgid "inout vec3 **VERTEX**"
-msgstr "inout vec2 **VERTEX**"
+msgstr "inout vec3 **VERTEX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
 msgid "Vertex in local coordinates."
@@ -466,9 +459,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
-#, fuzzy
 msgid "inout vec3 **TANGENT**"
-msgstr "inout vec4 **LIGHT**"
+msgstr "inout vec3 **TANGENT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
 msgid "Tangent in local coordinates."
@@ -476,9 +468,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
-#, fuzzy
 msgid "inout vec3 **BINORMAL**"
-msgstr "inout vec3 **NORMAL**"
+msgstr "inout vec3 **BINORMAL**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
 msgid "Binormal in local coordinates."
@@ -493,9 +484,8 @@ msgid "UV main channel."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
-#, fuzzy
 msgid "inout vec2 **UV2**"
-msgstr "inout vec2 **UV**"
+msgstr "inout vec2 **UV2**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
 msgid "UV secondary channel."
@@ -553,9 +543,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:316
-#, fuzzy
 msgid "in bool **OUTPUT_IS_SRGB**"
-msgstr "in float **ROUGHNESS**"
+msgstr "in bool **OUTPUT_IS_SRGB**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
@@ -566,9 +555,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:168
-#, fuzzy
 msgid "Fragment built-ins"
-msgstr "Fragment intégré"
+msgstr "Fragment intégrés"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:170
 msgid ""
@@ -868,7 +856,6 @@ msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
-#, fuzzy
 msgid "Light built-ins"
 msgstr "Lumière intégrée"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,9 +34,8 @@ msgid "transform animation of pose bones"
 msgstr "transformer l'animation des os de pose"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
-#, fuzzy
 msgid "shape key animation"
-msgstr "Animation du sprite"
+msgstr "animation clé de forme"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
 msgid "light animation"
@@ -51,7 +50,6 @@ msgid "Multiple Actions For Single Object"
 msgstr "Plusieurs actions pour un seul objet"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
-#, fuzzy
 msgid ""
 "In most games, one object would have several animations to switch between. "
 "This add-on has support for exporting multiple actions all at once into a "
@@ -71,66 +69,72 @@ msgstr ""
 "la manière d'utiliser cette fonctionnalité :"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
-msgid "**1. Switch workspace to 'Dope Sheet'**"
-msgstr "**1. Basculer l'espace de travail sur 'Dope Sheet'**"
-
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:23
-msgid "**2. Stash the active action**"
+#, fuzzy
+msgid "**1. Stash active action**"
 msgstr "**2. Cacher l'action active**"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:25
-msgid "The stashed action, while not active, will still be exported."
-msgstr "L'action masquée, bien que non active, sera toujours exportée."
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
+msgid ""
+"New created action is always an active action binded to object. There are "
+"several ways to place an active action into NLA track, one is of course "
+"doing it in ``NLA Editor``"
+msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:29
-msgid "**3. Check stashed actions in 'NLA Editor' [optional]**"
-msgstr "**3. Vérifier les actions cachées dans 'l’Éditeur NLA' [facultatif]**"
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
+msgid "Or it can be done stashing the action in ``Dope Sheet``"
+msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:31
-msgid "Switch workspace to 'NLA Editor'."
-msgstr "Basculer l'espace de travail vers 'l’Éditeur NLA'."
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
+msgid "**2. Check mute status of NLA tracks**"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
-#, fuzzy
-msgid "Make sure all stashed actions are muted."
-msgstr "Assurez-vous que toutes les actions cachées sont désactivées"
-
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
-msgid "**4. Export the scene**"
-msgstr "**4. Exporter la scène**"
+msgid ""
+"An NLA track can be ``mute`` or ``unmute``, the exporter will export all the "
+"``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
+"tracks into every action (including the action action) being exported."
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 #, fuzzy
+msgid "**3. Export the scene**"
+msgstr "**4. Exporter la scène**"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
+msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
+#, fuzzy
 msgid ""
-"All the stashed actions, as well as the active action, are exported to an "
-"AnimationPlayer."
+"Then all the stashed actions, as well as the active action, are exported to "
+"an AnimationPlayer."
 msgstr ""
 "Toutes les actions cachées ainsi que l'action active sont exportées vers un "
-"lecteur d'animations."
+"AnimationPlayer."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:48
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
 msgid "Constraints"
 msgstr "Contraintes"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:49
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
 #, fuzzy
 msgid ""
 "Sometimes complicated animation is built with object constraint; a usual "
 "example is inverse kinematics. The add-on would automatically check if an "
 "object has some constraint; if it does, all the constraints are baked into "
-"every action the object has and then exported."
+"actions and then exported along with the object."
 msgstr ""
 "Parfois, une animation compliquée est construite avec une contrainte "
 "d'objet, un exemple classique est la cinématique inverse. L'addon vérifie "
 "automatiquement si un objet a une contrainte, si c'est le cas, toutes les "
 "contraintes sont intégrées à chaque action de l'objet, puis exportées."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:56
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
 msgid "Animation Mode"
 msgstr "Mode D'Animation"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:57
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:63
 msgid ""
 "Godot and Blender have different structure to store animation data. In Godot "
 "animation data is stored in an AnimationPlayer node, instead of in each "
@@ -143,12 +147,11 @@ msgstr ""
 "incohérence et rendre l’animation polyvalente, cet addon a trois modes "
 "d’exportations d’animations."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:64
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Animation as Actions'**"
 msgstr "**Mode 'Animation en tant qu'actions'**"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:66
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid ""
 "Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
@@ -157,12 +160,11 @@ msgstr ""
 "exportée, chaque objet aura son propre élément AnimationPlayer et conservera "
 "ses actions."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Scene Animation'**"
 msgstr "**Mode 'Animation de Scène'**"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid ""
 "If you want your animation to generate the same result as playing at "
 "Blender's timeline, this is what you want. In this mode, all the animations "
@@ -173,12 +175,11 @@ msgstr ""
 "toutes les animations de la scène sont placées dans un seul élément "
 "AnimationPlayer à la racine de la scène."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:82
 msgid "**Mode 'Animation as Action with Squash'**"
 msgstr "**Mode 'Animation en tant qu'Action avec Compression'**"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
 msgid ""
 "This mode has very similar behaviour of mode 'Animation as Action', but it "
 "can generate fewer AnimationPlayers; objects in parent-children relationship "
@@ -186,8 +187,8 @@ msgid ""
 "and each Skeleton and Mesh has actions; then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
-"Ce mode a un comportement très similaire à celui du mode 'Animation comme "
+"Ce mode a un comportement très similaire à celui du mode 'Animation as "
 "Action', mais il peut générer moins d'éléments AnimationPlayer, les objets "
 "en relation parent-enfants partageant leur AnimationPlayer. C'est utile "
-"lorsque vous avez plusieurs plate-formes et que chaque squelette et maillage "
-"a des actions, dans ce cas une plate-forme aurait un seul AnimationPlayer."
+"lorsque vous avez plusieurs éléments et que chaque squelette et maillage a "
+"des actions, dans ce cas un élément aurait un seul AnimationPlayer."

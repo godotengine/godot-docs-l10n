@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,6 @@ msgstr ""
 "*Ports* : *Sequence* et *Data*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:40
-#, fuzzy
 msgid ""
 "*Sequence Ports* indicate the order in which operations are executed. "
 "Typically when a *Node* is done processing, it will go to the next node from "
@@ -161,7 +160,6 @@ msgstr ""
 "*ports de séquences*, cela s’effectue en glissant la *sortie*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:71
-#, fuzzy
 msgid ""
 "This may seem strange at first, but it happens because *Data Ports* are 1:N "
 "(A single output port can connect to many inputs), while *Sequence Ports* "
@@ -310,7 +308,6 @@ msgstr ""
 "Cliquer droit sur la variable vous permet de configurer ses propriétés :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:147
-#, fuzzy
 msgid ""
 "As it can be seen above, the type and initial value of the variable can be "
 "changed, as well as some property hints. Ticking the \"Export\" option makes "
@@ -319,11 +316,10 @@ msgid ""
 "step."
 msgstr ""
 "Comme on peut le voir ci-dessus, le type et la valeur initiale de la "
-"variable peuvent être modifiés, ainsi que certains indices de propriété "
-"(@TODO, documenter ceci). En cochant l'option \"Exporter\", la variable "
-"devient visible dans l'inspecteur lors de la sélection du nœud. Ceci la rend "
-"également disponible à d'autres scripts via la méthode décrite dans l'étape "
-"précédente."
+"variable peuvent être modifiés, ainsi que certains indices de propriété. En "
+"cochant l'option \"Exporter\", la variable devient visible dans l'inspecteur "
+"lors de la sélection du nœud. Ceci la rend également disponible à d'autres "
+"scripts via la méthode décrite dans l'étape précédente."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
 msgid ""
@@ -438,14 +434,13 @@ msgstr ""
 "référence. La plupart du temps, ce sont des entiers ou des flottants."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:219
-#, fuzzy
 msgid ""
 "The first one is \"Constant\", which allows you to select any value of any "
 "type as constant, from an integer (42) to a String (\"Hello!\"). In general, "
 "this node is not used that often because of default input values in *Data "
 "Ports*, but it's good to know it exists."
 msgstr ""
-"La première est \"Constant\" qui vous permet de sélectionner n'importe "
+"La première est \"Constante\" qui vous permet de sélectionner n'importe "
 "quelle valeur de n'importe quel type comme constante, d'un entier (42) à une "
 "chaîne (\"Hello !\"). En général, ce nœud n'est pas souvent utilisé à cause "
 "des valeurs d'entrée par défaut dans les *Ports de données*, mais il est bon "
@@ -537,7 +532,6 @@ msgid "Local Variables"
 msgstr "Variables locales"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:265
-#, fuzzy
 msgid ""
 "These are nodes you can use as temporary storage for your graphs. Make sure "
 "they all have the same name and type when using them and they will reference "
@@ -575,7 +569,6 @@ msgid "Self"
 msgstr "Self"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
-#, fuzzy
 msgid ""
 "In some rare occasions, it may be desired to pass this Scene Node as "
 "argument. It can be used to call functions and set/get properties, or drag "
@@ -593,7 +586,6 @@ msgid "SceneTree"
 msgstr "L'arbre de scène"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
-#, fuzzy
 msgid ""
 "This node is similar to the Singleton node because it references the "
 "SceneTree, which contains the active scene. SceneTree, however, only works "
@@ -745,7 +737,6 @@ msgid "TypeCast"
 msgstr "TypeCast"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:366
-#, fuzzy
 msgid ""
 "This is a useful and commonly used node. You can use it to cast arguments or "
 "other objects to the type you desire. Afterwards, you can even drag the "
@@ -807,7 +798,6 @@ msgid "Built-In"
 msgstr "Built-In"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
-#, fuzzy
 msgid ""
 "There is a list of built-in helpers. The list is almost identical to the one "
 "from GDScript (@TODO, link to gdscript methods?). Most of them are "
@@ -825,7 +815,6 @@ msgid "By Type"
 msgstr "Par type"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:408
-#, fuzzy
 msgid ""
 "Those are the methods available to basic types. For example, if you want a "
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "

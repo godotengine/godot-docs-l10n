@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,7 +210,6 @@ msgid "Sprite animation"
 msgstr "Animation du sprite"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -228,9 +227,10 @@ msgstr ""
 "d'avertissement à côté du nœud. Un ``AnimatedSprite`` nécessite une "
 "ressource :ref:`SpriteFrames <class_SpriteFrames>`, qui est une liste des "
 "animations qu'il peut afficher. Pour en créer un, trouvez la propriété "
-"``Frames`` dans l'Inspecteur et cliquez sur \"<null>\" -> \"Nouveau "
-"SpriteFrames\". Ensuite, au même endroit, cliquez sur ``<SpriteFrames>`` "
-"pour ouvrir le panneau \"SpriteFrames\" :"
+"``Frames`` dans l'Inspecteur et cliquez sur \"[vide]\" -> \"Nouveau "
+"SpriteFrames\". Ensuite, au même endroit, cliquez sur ``<SpriteFrames>``, "
+"ensuite cliquez sur \"Ouvrir l'éditeur\" pour ouvrir le panneau "
+"\"SpriteFrames\" :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:111
 msgid ""
@@ -259,7 +259,6 @@ msgstr ""
 "l'Inspecteur sous la catégorie ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:125
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -272,7 +271,7 @@ msgstr ""
 "qu'enfant de ``Player``. Ceci déterminera la \"hitbox\" du joueur, soit les "
 "limites de sa zone de collision. Pour ce personnage, un nœud "
 "``CapsuleShape2D`` donne le meilleur ajustement, donc à côté de \"Shape\" "
-"dans l'Inspecteur, cliquez sur \"<null>\" -> \"Nouveau CapsuleShape2D\". En "
+"dans l'Inspecteur, cliquez sur \"[vide]\" -> \"Nouveau CapsuleShape2D\". En "
 "utilisant les poignées, redimensionnez la forme pour couvrir le sprite :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134

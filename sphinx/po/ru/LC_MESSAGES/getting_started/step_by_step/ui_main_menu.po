@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -194,7 +194,7 @@ msgstr ""
 "основе нашего макета."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:88
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:278
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
 #, fuzzy
 msgid "Break down the UI mockup"
 msgstr "Краш-тест UI макета"
@@ -462,43 +462,44 @@ msgstr ""
 "находящиеся вне."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
+#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
-"them into the ``VBoxContainer``. Then, drag the illustration node into the "
-"``CenterContainer``. The nodes should position automatically."
+"them into the ``VBoxContainer``. The nodes should position automatically."
 msgstr ""
 "В дереве узлов выберите все узлы ``TextureRect``, которые должны идти с "
 "левой стороны: логотип, параметры и информация о версии. Перетащите их в "
 "``VBoxContainer``. Затем перетащите узел с картинкой в ``CenterContainer``. "
 "Узлы должны позиционироваться автоматически."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:212
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
 msgid "Containers automatically place and resize textures"
 msgstr "Контейнеры автоматически размещает и изменяет размер текстур"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:213
 msgid "We're left with two problems to solve:"
 msgstr "Нам осталось решить две проблемы:"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:215
 msgid "The characters on the right aren't centered"
 msgstr "Картинка справа не центрирована"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
 msgid "There's no space between the logo and the other UI elements"
 msgstr "Между логотипом и другими элементами UI нет места"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
 #, fuzzy
 msgid ""
-"To center the characters on the right, we'll use a ``CenterContainer``.  Add "
-"a ``CenterContainer`` node as a child of the ``HBoxContainer``. Then in the "
-"Inspector, scroll down to the ``Size Flags`` category and click on the field "
-"to the right of the ``Vertical`` property, and check ``Expand`` in addition "
-"to ``Fill``. Do the same for the ``Horizontal`` property. Finally drag and "
-"drop the Characters into the ``CenterContainer``. The Characters element "
-"will center automatically."
+"To center the characters on the right, first select the ``CenterContainer``. "
+"Then in the Inspector, scroll down to the ``Size Flags`` category and click "
+"on the field to the right of the ``Vertical`` property, and check ``Expand`` "
+"in addition to ``Fill``. Do the same for the ``Horizontal`` property. This "
+"makes the ``CenterContainer`` expand into all available space while "
+"respecting its neighbour ``VBoxContainer``. Finally, drag and drop the "
+"Characters node into the ``CenterContainer``. The Characters element will "
+"center automatically."
 msgstr ""
 "Чтобы центрировать картинку справа, мы будем использовать "
 "``CenterContainer``.  Добавьте узел ``CenterContainer`` в качестве дочернего "
@@ -508,7 +509,7 @@ msgstr ""
 "перетащить картинку в ``CenterContainer``. Картинка будет центрирована "
 "автоматически."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 #, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
@@ -517,7 +518,7 @@ msgstr ""
 "Узел character будет центрирован в правой половине экрана, как только вы "
 "поместите его внутрь CenterContainer"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
 #, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
@@ -535,13 +536,13 @@ msgstr ""
 "перетащите их в новый ``VBoxContainer``. Макет UI должен едва измениться, "
 "если вообще изменится."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:241
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
 #, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's layout"
 msgstr "Поместите новый контейнер между двумя другими узлами"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:244
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
 #, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
@@ -559,7 +560,7 @@ msgstr ""
 "``Expand``. Контейнер расширится, чтобы взять все доступное вертикальное "
 "пространство. Но он уважает своих соседей, ``Logo`` и``Version``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:252
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:253
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the ``Alignment`` property to ``Center``."
@@ -567,11 +568,11 @@ msgstr ""
 "Чтобы центрировать узлы в `VBoxContainer``, прокрутите до верхней части "
 "инспектора и измените свойство ``Alignment`` на ``Center``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:257
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
 msgid "The menu options should center vertically in the UI's left column"
 msgstr "MenuOption должен центрироваться по вертикали в левом столбце"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:259
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:260
 #, fuzzy
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
@@ -586,16 +587,16 @@ msgstr ""
 "Установите его на 30. После нажатия клавиши Enter, свойство ``Separation`` "
 "становится активным и Godot добавляет 30 пикселей между MenuOptions."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:267
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:268
 msgid "The final interface"
 msgstr "Финальный интерфейс"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:269
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:270
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr "Без единой строки кода у нас есть точное и отзывчивое главное меню."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:272
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 #, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
@@ -607,7 +608,7 @@ msgstr ""
 "сравнить с вашим собственным. В следующем курсе уроков вы создадите UI игры "
 "с шкалами и счетчиками предметов."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:280
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
 #, fuzzy
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
@@ -620,7 +621,7 @@ msgstr ""
 "различные размеры и соотношения. В Godot мы используем контейнеры для "
 "управления позицией и размера элемента UI."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:285
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
 #, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
@@ -634,7 +635,7 @@ msgstr ""
 "перетащите один из углов контейнера, чтобы изменить его размер. Компоненты "
 "UI должны \"течь\" внутри него."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:291
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
 msgid ""
 "You'll notice that although containers move sprites around, they don't scale "
 "them. This is normal. We want the UI system to handle different screen "
@@ -647,7 +648,7 @@ msgstr ""
 "адаптировалась к различным разрешениям экрана. Для этого Godot масштабирует "
 "все окно вверх и вниз."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:297
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:298
 #, fuzzy
 msgid ""
 "You can change the scale mode in the project settings: click the Project "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,6 +108,9 @@ msgid ""
 "Mono installation for NuGet and MSBuild which are required to use C# in "
 "Godot."
 msgstr ""
+"下载并安装最新版本的 `Mono SDK <http://www.mono-project.com/download/>`_ 。对"
+"于Godot 3.1 beta 3，下载的哪个版本都无所谓，因为Godot自身就捆绑了Mono 5.18的"
+"安装。我们只需要为NuGet和MSBuild安装Mono就可以，那正是Godot中C#需要的。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
 #, fuzzy
@@ -172,6 +175,9 @@ msgid ""
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
+"如果你在使用Visual Studio Code，请确保下载了 `C# 插件 <https://marketplace."
+"visualstudio.com/items?itemName=ms-vscode.csharp>`_ 以启用诸如IntelliSense和"
+"语法高亮的特性。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
 msgid "Creating a C# script"
@@ -347,7 +353,7 @@ msgstr "目前尚不支持在C#中编写编辑器插件和工具脚本"
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
-msgstr ""
+msgstr "在热重装中，当前状态不会得到保存并且会被恢复，除了已经导出的变量之外。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
 #, fuzzy
@@ -367,7 +373,7 @@ msgstr ""
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
-msgstr ""
+msgstr "附加C#脚本需要引用一个类，该类名需要匹配其文件名。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
 msgid "Performance of C# in Godot"

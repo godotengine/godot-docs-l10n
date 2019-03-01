@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Introduction"
 msgstr "소개"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:6
-#, fuzzy
 msgid ""
 "C# support is a new feature available since Godot 3.0. As such, you may "
 "still run into some issues, or find spots where the documentation could be "
@@ -38,7 +37,6 @@ msgstr ""
 "github.com/godotengine/godot-docs/issues>`_\\ 에서 보고해주세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:14
-#, fuzzy
 msgid ""
 "This page provides a brief introduction to C#, both what it is and how to "
 "use it in Godot. Afterwards, you may want to look at :ref:`how to use "
@@ -48,9 +46,9 @@ msgid ""
 msgstr ""
 "이 페이지는 C#에 대한 간단한 소개와 그것이 무엇인지, 그리고 그것을 Godot에서 "
 "사용하는 방법을 제공합니다. 그런 다음, :ref:`특정 기능을 사용하는 방법 "
-"<doc_c_sharp_features>`\\ 을 살펴보고, :ref:`C# 과 GDScript API의 차이점 "
+"<doc_c_sharp_features>`\\ 을 원한다면, :ref:`C# 과 GDScript API의 차이점 "
 "<doc_c_sharp_differences>`\\ 에 대해 읽고 단계별 튜토리얼의 :ref:`스크립팅 섹"
-"션 <doc_scripting>`\\ 을 확인하세요."
+"션 <doc_scripting>`\\ 을 (다시) 확인하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:21
 msgid ""
@@ -81,7 +79,6 @@ msgstr ""
 "us/dotnet/csharp/index>`_\\ 를 보거나 다른 적합한 설명을 찾아보세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:36
-#, fuzzy
 msgid "Setting up C# for Godot"
 msgstr "Godot에 C# 설치하기"
 
@@ -98,10 +95,16 @@ msgid ""
 "<https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?"
 "sku=BuildTools&rel=15>`_ instead."
 msgstr ""
+"`Visual Studio <https://visualstudio.microsoft.com/downloads/>`_\\ 의 최신 버"
+"전을 다운로드 하고 설치하세요 (Visual Studio Code *아닙니다*), 여기에는 Godot"
+"에서 C#을 사용하기 위한 기능들이 있습니다. Visual Studio IDE를 사용할 계획이 "
+"없다면, 대신 `Visual Studio Build Tools <https://visualstudio.microsoft.com/"
+"thank-you-downloading-visual-studio/?sku=BuildTools&rel=15>`_\\ 를 다운로드 "
+"할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:50
 msgid "macOS and Linux"
-msgstr ""
+msgstr "macOS와 리눅스"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:52
 msgid ""
@@ -111,43 +114,44 @@ msgid ""
 "Mono installation for NuGet and MSBuild which are required to use C# in "
 "Godot."
 msgstr ""
+"`Mono SDK <http://www.mono-project.com/download/>`_\\ 의 최신 버전을 다운로"
+"드 하고 설치하세요. Godot 3.1 베타 3에서부터, Godot는 자체적인 Mono 5.18 설치"
+"를 포함하므로 버전 숫자는 문제가 되지 않습니다. Godot에서 C#을 사용하기 위해 "
+"필요한 것은 NuGet과 MSBuild 용 Mono 설치 뿐입니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
-#, fuzzy
 msgid ""
 "To download Mono on macOS, use the \"Stable Channel\" link from the `Mono "
 "Downloads Page <http://www.mono-project.com/download/>`_. The Visual Studio "
 "channel is an earlier version of Mono and will not work."
 msgstr ""
-"Mac에서 Mono v5.12+를 다운로드 하기 위해, `Mono 다운로드 페이지 <http://www."
-"mono-project.com/download/>`_\\ 로 가서 \"Stable Channel\" 링크로 가세요.  "
-"Visual Studio 채널은 이전 버전의 Mono로 Godot 3.0.3 이상에서는 작동하지 않습"
-"니다."
+"macOS에서 Mono를 다운로드 하기 위해, `Mono 다운로드 페이지 <http://www.mono-"
+"project.com/download/>`_\\ 로 가서 \"Stable Channel\" 링크로 가세요. Visual "
+"Studio 채널은 이전 버전의 Mono로 작동되지 않을 것입니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
-#, fuzzy
 msgid "Additional notes"
-msgstr "추가 정보:"
+msgstr "추가 정보"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
-#, fuzzy
 msgid ""
 "Your Godot version must have Mono support enabled, so make sure to download "
 "the **Mono version** of Godot. If you are building Godot from source, make "
 "sure to follow the steps to enable Mono support in your build as outlined in "
 "the :ref:`doc_compiling_with_mono` page."
 msgstr ""
-"소스에서 Godot를 빌드하는 경우, :ref:`doc_compiling_with_mono` 페이지에서 설"
-"명된 Mono 지원이 포함된 빌드를 따르셔야 합니다."
+"당신의 Godot 버전이 Mono를 지원해야 하는데, 그러기 위해 Godot의 **Mono 버전**"
+"\\ 을 다운로드 해야 합니다. 소스에서 Godot를 빌드하는 경우, :ref:"
+"`doc_compiling_with_mono` 페이지에서 설명하는 Mono 지원을 활성화 하는 순서를 "
+"따라야 합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:72
-#, fuzzy
 msgid ""
 "In summary, you must have installed Visual Studio or Mono (depending on your "
 "operating system) **and** the Mono-enabled version of Godot."
 msgstr ""
-"요약하자면, 1) 현재 Godot 버전에 해당하는 Mono SDK 버전을 설치하고, 2) Godot"
-"의 Mono 버전을 설치해야 합니다."
+"요약하자면, Visual Studio나 Mono가 (운영체제에 맞게) 설치되어 있어야 하며 **"
+"그리고** Mono를 사용할 수 있는 버전의 Godot이어야 합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:76
 msgid "Configuring an external editor"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:6
-#, fuzzy
 msgid ""
 "C# support is a new feature available since Godot 3.0. As such, you may "
 "still run into some issues, or find spots where the documentation could be "
@@ -39,7 +38,6 @@ msgstr ""
 "Page <https://github.com/godotengine/godot-docs/issues>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:14
-#, fuzzy
 msgid ""
 "This page provides a brief introduction to C#, both what it is and how to "
 "use it in Godot. Afterwards, you may want to look at :ref:`how to use "
@@ -84,7 +82,6 @@ msgstr ""
 "o busque una introducción adecuada en otro lugar."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:36
-#, fuzzy
 msgid "Setting up C# for Godot"
 msgstr "Configuración C# para Godot"
 
@@ -101,10 +98,16 @@ msgid ""
 "<https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?"
 "sku=BuildTools&rel=15>`_ instead."
 msgstr ""
+"Descarga e instala la última versión de Visual Studio <https://visualstudio."
+"microsoft.com/downloads/>(*NO el código de Visual Studio*), la cual contiene "
+"servicios requeridos para el uso de C# en Godot. Si no vas a utilizar el IDE "
+"de Visual Studio , simplemente descarga los Build Tools de Visual Studio  "
+"<https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?"
+"sku=BuildTools&rel=15> en su lugar."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:50
 msgid "macOS and Linux"
-msgstr ""
+msgstr "macOS y Linux"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:52
 msgid ""
@@ -114,51 +117,52 @@ msgid ""
 "Mono installation for NuGet and MSBuild which are required to use C# in "
 "Godot."
 msgstr ""
+"Descarga e instala la última versión del SDK Mono <http://www.mono-project."
+"com/download/>. Como en el caso de Godot 3.1 beta 3, el número de versión no "
+"tiene importancia desde que Godot agrupa su propia instalación Mono 5.18. "
+"Solamente necesitaremos la instalación mono para NuGet y MSBuild, los cuales "
+"son requeridos para el uso de C# en Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
-#, fuzzy
 msgid ""
 "To download Mono on macOS, use the \"Stable Channel\" link from the `Mono "
 "Downloads Page <http://www.mono-project.com/download/>`_. The Visual Studio "
 "channel is an earlier version of Mono and will not work."
 msgstr ""
-"Para descargar Mono v5.12+ en una Mac, busca el link al \"Stable Channel\" "
-"en la `Mono Downloads Page <http://www.mono-project.com/download/>`_. El "
-"\"Visual Studio channel\" es una versión de mono que no funcionará con Godot "
-"3.0.3+."
+"Para descargar Mono en macOS, utiliza el enlace \"Stable Channel\" de la "
+"página `Mono Downloads Page <http://www.mono-project.com/download/>`_. El "
+"canal Visual Studio es una versión anterior de Mono y no funcionará."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
-#, fuzzy
 msgid "Additional notes"
-msgstr "Información adicional:"
+msgstr "Notas adicionales"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
-#, fuzzy
 msgid ""
 "Your Godot version must have Mono support enabled, so make sure to download "
 "the **Mono version** of Godot. If you are building Godot from source, make "
 "sure to follow the steps to enable Mono support in your build as outlined in "
 "the :ref:`doc_compiling_with_mono` page."
 msgstr ""
-"Si estás compilando Godot desde el código fuente, asegúrate de seguir los "
-"pasos para incluir soporte Mono en tu compilación que se describe en la "
-"página :ref :`doc_compiling_with_mono`."
+"Tu versión de Godot debe tener habilitada la compatibilidad con Mono, así "
+"que asegúrate de descargar la ** versión Mono ** de Godot. Si estás "
+"compilando Godot desde el código fuente, asegúrate de seguir los pasos tal y "
+"cómo se describen en la página :ref :`doc_compiling_with_mono` para incluir "
+"soporte Mono en tu compilación."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:72
-#, fuzzy
 msgid ""
 "In summary, you must have installed Visual Studio or Mono (depending on your "
 "operating system) **and** the Mono-enabled version of Godot."
 msgstr ""
-"En resumen, deberás tener instalado 1) el SDK correcto de mono "
-"correspondiente a la versión de Godot y, 2) La versión de Mono de Godot."
+"En resumen, debes tener instalado Visual Studio o Mono (dependiendo de tu "
+"sistema operativo) **y** la versión Mono de Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:76
 msgid "Configuring an external editor"
 msgstr "Configuración de un editor externo"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:78
-#, fuzzy
 msgid ""
 "While Godot has its own script editor, its support for C# is kept minimal; "
 "it's recommended that you use an external IDE or editor instead, such as "
@@ -168,13 +172,13 @@ msgid ""
 "scroll down to the bottom to the **Mono** settings. Under **Mono**, click on "
 "**Editor** then choose your external editor of choice."
 msgstr ""
-"Siendo que Godot tiene su propio editor de código, su soporte para C# es "
-"mínimo, y se recomienda usar un IDE o editor externo, como Visual Studio "
-"Code, o MonoDevelop, que tienen autocompletado, debugging y otras "
-"características útiles cuando se trabaja con C#. Para configurarlo, haz clic "
-"en ``Editor``, después en ``Editor Settings``. Haz scroll hasta la parte "
-"inferior, a la opción ``Mono``. Dentro de esa opción haz clic en ``Editor``, "
-"y en esa página elige tu editor externo."
+"Aunque Godot tiene su propio editor de scripts, su soporte para C# es "
+"mínimo; se recomienda que utilices un IDE o editor externo en su lugar, como "
+"`Visual Studio Code <https://code.visualstudio.com/>`_ o MonoDevelop. Éstos "
+"proporcionan autocompletado, depuración y otras características útiles "
+"cuando se trabaja con C#. Para configurarlo en Godot, haz clic en **Editor → "
+"Ajustes del editor** y desplázate hacia abajo hasta los ajustes de **Mono**. "
+"En **Mono**, haz clic en **Editor** y elige el editor externo que desees."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
 msgid ""
@@ -182,13 +186,17 @@ msgid ""
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
+"Si está usando Visual Studio Code, asegúrese de descargar e instalar la "
+"extensión de C# \n"
+"<https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp>`_ "
+"para habilitar características como el resaltado de sintaxis y el "
+"autocompletado."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
 msgid "Creating a C# script"
 msgstr "Creando un script de C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
-#, fuzzy
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting ``Attach script`` in the context menu of a node in "
@@ -196,10 +204,9 @@ msgid ""
 msgstr ""
 "Después de que hayas configurado adecuadamente C# para Godot, deberías ver "
 "la siguiente opción cuando selecciones ``Añadir script`` en el menú "
-"contextual de los nodos de tu escena:"
+"contextual de los nodos en tu escena:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
-#, fuzzy
 msgid ""
 "Note that while some specifics change, most concepts work the same when "
 "using C# for scripting. If you're new to Godot, you may want to follow the "
@@ -207,7 +214,7 @@ msgid ""
 "documentation still lack C# examples, most concepts can be transferred "
 "easily from GDScript."
 msgstr ""
-"Tomar nota de que, aunque algunos elementos específicos cambian, la mayoría "
+"Observaras que, aunque algunos elementos específicos cambian, la mayoría "
 "funciona de la misma manera al usar C# para escribir código. Si estás "
 "comenzando con Godot, quizás sea buena idea en este momento mirar los "
 "tutoriales en :ref:`doc_scripting`. Aunque es cierto que algunas partes de "
@@ -403,6 +410,9 @@ msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
+"Los scripts adjuntos de C# deben referirse a una clase que tenga el mismo "
+"nombre que el nombre del archivo. O lo que es lo mismo, el nombre de la "
+"clase que se declara en el script y el nombre del archivo deben ser igual."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
 msgid "Performance of C# in Godot"

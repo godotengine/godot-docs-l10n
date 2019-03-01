@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -234,45 +234,40 @@ msgid "Export every single file in the project"
 msgstr "Exportiere alle Ressourcen des Projekts"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
-#, fuzzy
 msgid "Export only resources (+ custom filter), this is the default."
 msgstr ""
-"Exportiere ausgewählte Ressourcen (inklusive Abhängigkeiten), dies ist der "
-"Standard."
+"Exportiere nur Ressourcen (+spezifische Filter), dies ist der Standard."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
-#, fuzzy
 msgid "Export only selected resources (+ custom filter)"
-msgstr "Exportiere ausgewählte Ressourcen (inklusive Abhängigkeiten)"
+msgstr "Exportiere nur ausgewählte Ressourcen (+ spezifischen Filter)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
-#, fuzzy
 msgid ""
 "**Export every single file** - This mode exports every single file in the "
 "project. This is good to test if something is being forgotten, but "
 "developers often have a lot of unrelated stuff around in the project "
 "directory, which makes it a bad idea."
 msgstr ""
-"**Exportiere alle Ressourcen des Projekts** - This mode exports every single "
-"file in the project. This is good to test if something is being forgotten, "
-"but developers often have a lot of unrelated stuff around in the project "
-"directory, which makes it a bad idea."
+"**Exportiere jede einzelne Datei** - Dieser Modus exportiert jede einzelne "
+"Datei des Projekts. Das ist nützlich, um zu prüfen, ob etwas vergessen wird, "
+"aber da Entwickler oft eine Menge unwichtigen Zeugs in ihrem "
+"Projektverzeichnis haben, kann es eine schlechte Idee sein."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
-#, fuzzy
 msgid ""
 "**Export only resources** - Only resources are exported. For most projects, "
 "this is enough. However many developers like to use custom datafiles in "
 "their games. To compensate for this, filters can be added for extra "
 "extensions (for instance, ``*.txt,*.csv``)."
 msgstr ""
-"**Exportiere ausgewählte Ressourcen** - Only resources are exported. For "
-"most projects, this is enough. However many developers like to use custom "
-"datafiles in their games. To compensate for this, filters can be added for "
-"extra extensions (for instance, ``*.txt,*.csv``)."
+"**Exportiere ausgewählte Ressourcen** - Nur Ressourcen werden exportiert. "
+"Dies ist für die meisten Projekte ausreichend. Jedoch möchten viele "
+"Entwickler spezielle Dateien in ihren Spielen verwenden. Um das zu "
+"berücksichtigen, können Filter für zusätzliche Dateiendungen hinzugefügt "
+"werden (beispielsweise ``*.txt, *.csv``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
-#, fuzzy
 msgid ""
 "**Export only selected resources** - Only select resources from a list are "
 "exported. This is probably overkill for most projects, but in some cases it "
@@ -280,11 +275,12 @@ msgid ""
 "is exported. Individual resources can be selected and dependency detection "
 "is performed to ensure that everything needed is added."
 msgstr ""
-"**Exportiere ausgewählte Ressourcen** - Only select resources from a list "
-"are exported. This is probably overkill for most projects, but in some cases "
-"it is justified (usually huge projects). This mode offers total control of "
-"what is exported. Individual resources can be selected and dependency "
-"detection is performed to ensure that everything needed is added."
+"**Exportiere nur ausgewählte Ressourcen** - Nur ausgewählte Ressourcen auf "
+"einer Liste werden exportiert. Das ist für die meisten Projekte wohl zu viel "
+"des Guten, aber in manchen Fällen ist es gerechtfertigt (für gewöhnlich in "
+"großen Projekten). Dieser Modus bietet volle Kontrolle darüber, was "
+"exportiert wird. Einzelne Ressourcen können ausgewählt werden und eine "
+"Abhängigkeitskontrolle sorgt dafür, dass alles Nötige hinzugefügt wird."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
 msgid "Exporting from the command line"

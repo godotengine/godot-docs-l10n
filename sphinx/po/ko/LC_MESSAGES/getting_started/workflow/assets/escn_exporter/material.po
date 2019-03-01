@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr "머티리얼(Materials)"
 msgid "Using existing Godot materials"
 msgstr "존재하는 Godot 머티리얼 사용하기"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:6
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:7
 msgid ""
 "One way in which the exporter can handle materials is to attempt to match "
 "the Blender material with an existing Godot material. This has the advantage "
@@ -38,7 +38,7 @@ msgstr ""
 "수 있는 이점이 있지만, 블렌더 내부에 적용된 머티리얼로 모델을 볼 수 없다는 것"
 "이기도 합니다."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:11
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:12
 msgid ""
 "To do this, the exporter attempts to find Godot materials with names that "
 "match those of the material name in Blender. So if you export an object in "
@@ -54,7 +54,7 @@ msgstr ""
 "``ShaderMaterial``\\ 이 아니거나, 찾을 수 없다면, 내보내기는 블렌더에서 머티"
 "리얼을 다시 내보내기 위해 돌아올 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:19
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:20
 msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
@@ -62,11 +62,11 @@ msgstr ""
 "내보내기가 ``.tres`` 파일을 찾는 위치는 \"Material Search Paths\" 설정에서 결"
 "정합니다:"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:34
 msgid "This can take the value of:"
 msgstr "다음 값을 사용할 수 있습니다:"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:25
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:26
 msgid ""
 "Project Directory - Attempts to find the ``project.Godot`` and recursively "
 "searches through subdirectories. If ``project.Godot`` cannot be found it "
@@ -77,7 +77,7 @@ msgstr ""
 "색합니다. ``project.Godot``\\ 을 찾을 수 없다면 오류를 발생합니다. 이름 충돌"
 "이 거의 없는 대부분의 프로젝트에서 유용합니다."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:29
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:30
 msgid ""
 "Export Directory - Look for materials in subdirectories of the export "
 "location. This is useful for projects where you may have duplicate material "
@@ -87,38 +87,72 @@ msgstr ""
 "리얼 이름을 복사해서 어떤 머티리얼이 지정되었는지 좀 더 제어가 필요한 프로젝"
 "트에서 유용합니다."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:32
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
 msgid "None - Do not search for materials. Export them from the Blender file."
 msgstr ""
 "None - 머티리얼을 찾지 않습니다. 머티리얼을 블렌더 파일에서 내보냅니다."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:36
-msgid "Export of Blender materials"
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
+#, fuzzy
+msgid "Export of Cycles/EEVEE materials"
 msgstr "블렌더 머티리얼의 내보내기"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:38
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
 msgid ""
-"The other way materials are handled is for the exporter to export them from "
-"Blender. Currently only the diffuse color and a few flags (e.g. unshaded) "
-"are exported."
+"The exporter has a primitive support for converting Cycles/EEVEE material "
+"node tree to Godot Shader Material. Note that some of the Shader Node are "
+"not supported yet due to difficulties in implementation, which are:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
+msgid "all the ``noisy textures``"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
+msgid "``generated texture coordinates``"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
+msgid "``group node``"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
+msgid ""
+"shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
+"``add shader`` and ``mix shader``"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
+msgid ""
+"If possible try to use PrincipledBSDF node with GGX distribution as the "
+"output shader node, it is the only one guarantee to be exactly correctly. "
+"Others are just based on approximation."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
+#, fuzzy
+msgid ""
+"Sometimes materials may not be valid for exporting (e.g. has some "
+"unsupported node) or it is using Blender Internal Engine, only the diffuse "
+"color and a few flags (e.g. unshaded) are exported and form a Spatial "
+"Material."
 msgstr ""
 "머티리얼을 다루는 다른 방법은 블렌더에서 내보내기로 내보내는 것입니다. 현재로"
 "는 오직 디퓨즈 색상과 일부 플래그만 내보내집니다 (예: 쉐이더 없음)."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
-msgid ""
-"Export of Blender materials is currently very primitive. However, it is the "
-"focus of a current GSoC project"
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
+msgid "Generate external materials"
 msgstr ""
-"블렌더 머티리얼의 내보내기는 현재는 매우 원시적입니다. 하지만 현재 GSoC 프로"
-"젝트의 초점입니다"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:47
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
 msgid ""
-"Materials are currently exported using their \"Blender Render\" settings. "
-"When Blender 2.8 is released, this will be removed and this part of the "
-"exporter will change."
+"The default configuration of material exporting would keep all the materials "
+"internal to the ``escn`` file. There is an option which could enable "
+"generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
-"머티리얼은 현재 \"Blender Render(블렌더 렌더)\" 설정을 사용하는 동안 내보낼 "
-"수 있습니다. 블렌더 2.8이 출시될 때, 이것은 제거되고 내보내기의 이 부분이 바"
-"뀔 것입니다."
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
+msgid ""
+"``.material`` file can be assigned to any material slot to be a external "
+"resource."
+msgstr ""

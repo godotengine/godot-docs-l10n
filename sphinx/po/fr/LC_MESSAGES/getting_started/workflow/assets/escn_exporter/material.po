@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr "Matériaux"
 msgid "Using existing Godot materials"
 msgstr "Utiliser des matériaux Godot existants"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:6
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:7
 msgid ""
 "One way in which the exporter can handle materials is to attempt to match "
 "the Blender material with an existing Godot material. This has the advantage "
@@ -39,7 +39,7 @@ msgstr ""
 "de matériaux de Godot, mais cela signifie que vous ne pouvez pas voir votre "
 "modèle avec le matériau appliqué par Blender."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:11
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:12
 msgid ""
 "To do this, the exporter attempts to find Godot materials with names that "
 "match those of the material name in Blender. So if you export an object in "
@@ -56,7 +56,7 @@ msgstr ""
 "``ShaderMaterial``, ou s'il ne peut pas être trouvé, l'exportateur utilisera "
 "alors le matériau exporté par Blender."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:19
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:20
 msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
@@ -64,11 +64,11 @@ msgstr ""
 "C'est l'option \"Chemins de recherche de matériaux\" qui détermine où "
 "l'exportateur recherche les fichiers ``.tres`` :"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:34
 msgid "This can take the value of:"
 msgstr "Cela peut prendre la valeur de :"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:25
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:26
 msgid ""
 "Project Directory - Attempts to find the ``project.Godot`` and recursively "
 "searches through subdirectories. If ``project.Godot`` cannot be found it "
@@ -80,7 +80,7 @@ msgstr ""
 "peut être trouvé, une erreur est générée. Ceci est utile pour la plupart des "
 "projets où les conflits de noms sont peu probables."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:29
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:30
 msgid ""
 "Export Directory - Look for materials in subdirectories of the export "
 "location. This is useful for projects where you may have duplicate material "
@@ -91,41 +91,74 @@ msgstr ""
 "pouvez avoir des noms de matériaux en double et besoin de plus de contrôle "
 "sur leur affectation."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:32
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
 msgid "None - Do not search for materials. Export them from the Blender file."
 msgstr ""
 "Aucun - Ne pas rechercher de matériaux. Les exporter depuis le fichier "
 "Blender."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:36
-msgid "Export of Blender materials"
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
+#, fuzzy
+msgid "Export of Cycles/EEVEE materials"
 msgstr "Exportation des matériaux depuis Blender"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:38
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
+msgid ""
+"The exporter has a primitive support for converting Cycles/EEVEE material "
+"node tree to Godot Shader Material. Note that some of the Shader Node are "
+"not supported yet due to difficulties in implementation, which are:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
+msgid "all the ``noisy textures``"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
+msgid "``generated texture coordinates``"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
+msgid "``group node``"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
+msgid ""
+"shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
+"``add shader`` and ``mix shader``"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
+msgid ""
+"If possible try to use PrincipledBSDF node with GGX distribution as the "
+"output shader node, it is the only one guarantee to be exactly correctly. "
+"Others are just based on approximation."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
 #, fuzzy
 msgid ""
-"The other way materials are handled is for the exporter to export them from "
-"Blender. Currently only the diffuse color and a few flags (e.g. unshaded) "
-"are exported."
+"Sometimes materials may not be valid for exporting (e.g. has some "
+"unsupported node) or it is using Blender Internal Engine, only the diffuse "
+"color and a few flags (e.g. unshaded) are exported and form a Spatial "
+"Material."
 msgstr ""
 "L'autre moyen dont les matériaux sont traités par l'exportateur est de les "
 "exporter depuis Blender. Actuellement, seule la couleur diffuse et quelques "
 "options commutables (par exemple non ombré) sont exportés."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
-msgid ""
-"Export of Blender materials is currently very primitive. However, it is the "
-"focus of a current GSoC project"
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
+msgid "Generate external materials"
 msgstr ""
-"L'exportation de matériaux depuis Blender est actuellement très primitive. "
-"Cependant, c'est l'objet d’un projet du GSOC"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:47
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
 msgid ""
-"Materials are currently exported using their \"Blender Render\" settings. "
-"When Blender 2.8 is released, this will be removed and this part of the "
-"exporter will change."
+"The default configuration of material exporting would keep all the materials "
+"internal to the ``escn`` file. There is an option which could enable "
+"generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
-"Les matériaux sont actuellement exportés en utilisant leurs paramètres "
-"\"Blender Render\". Lorsque Blender 2.8 sera publié, cela sera supprimé et "
-"cette partie de l'exportateur changera."
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
+msgid ""
+"``.material`` file can be assigned to any material slot to be a external "
+"resource."
+msgstr ""

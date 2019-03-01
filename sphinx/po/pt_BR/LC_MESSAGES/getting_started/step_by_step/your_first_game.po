@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,7 +103,6 @@ msgid "Organizing the project"
 msgstr "Organizando o projeto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
-#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -112,12 +111,12 @@ msgid ""
 "and scripts in the project's root folder, referred to as ``res://``.  You "
 "can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
-"Neste projeto, vamos criar três cenas independentes: ``Jogador``, ``Turba`` "
-"e ``HUD``, que combinaremos na cena ``Principal`` do jogo. Em um projeto "
-"maior, pode ser útil criar pastas para armazenar as várias cenas e seus "
-"roteiros, mas para este jogo relativamente pequeno, você pode salvar tudo na "
-"pasta raiz, referenciada como ``res://``. Você pode ver as pastas do seu "
-"projeto no painel Arquivos no canto superior esquerdo:"
+"Neste projeto, vamos criar três cenas independentes: ``Jogador``, "
+"``Inimigo`` e ``HUD``, que combinaremos na cena ``Principal`` do jogo. Em um "
+"projeto maior, pode ser útil criar pastas para armazenar as várias cenas e "
+"seus roteiros, mas para este jogo relativamente pequeno, você pode salvar "
+"tudo na pasta raiz, referenciada como ``res://``. Você pode ver as pastas do "
+"seu projeto no painel Arquivos no canto inferior esquerdo:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
@@ -227,8 +226,8 @@ msgstr ""
 "do tipo :ref:`SpriteFrames <class_SpriteFrames>` (quadros de sprite), que é "
 "uma lista das animações que ele pode mostrar. Para criar um, encontre a "
 "propriedade ``Frames`` no Inspetor e clique em \"<null>\" -> \"Novo "
-"SpriteFrames\". Em seguida, no mesmo local, clique em ``<SpriteFrames>`` "
-"para abrir o painel \"SpriteFrames\":"
+"SpriteFrames\". Em seguida, no mesmo local, clique em ``<SpriteFrames>``, "
+"para abrir o painel \"Animações\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:111
 msgid ""
@@ -257,7 +256,6 @@ msgstr ""
 "no Inspetor na seção ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:125
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -266,9 +264,9 @@ msgid ""
 "\"New CapsuleShape2D\".  Using the two size handles, resize the shape to "
 "cover the sprite:"
 msgstr ""
-"Finalmente, adicione uma :ref:`CollisionShape2D <class_CollisionShape2D>` "
-"(forma de colisão 2D) como filha de ``Jogador``. Isso determina a \"caixa de "
-"pancada\" do jogador, ou seja, os limites da sua área de colisão. Para este "
+"Finalmente, adicione um :ref:`CollisionShape2D <class_CollisionShape2D>` "
+"(forma de colisão 2D) como filho de ``Jogador``. Isso determina a \"caixa de "
+"acerto\" do jogador, ou seja, os limites da sua área de colisão. Para este "
 "personagem, um nó ``CapsuleShape2D`` (forma cápsula 2D) é o que melhor se "
 "encaixa. Então, ao lado de \"Shape\" (forma) no Inspetor, clique em  \"<null>"
 "\" -> \"Novo CapsuleShape2D\". Utilizando os dois manipuladores, "
@@ -384,7 +382,6 @@ msgid "Play the appropriate animation."
 msgstr "Reprodução da animação apropriada."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:219
-#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -477,7 +474,6 @@ msgstr ""
 "play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:312
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position "
 "and use ``clamp()`` to prevent it from leaving the screen by adding the "
@@ -548,7 +544,6 @@ msgstr ""
 "acima:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:399
-#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
@@ -854,7 +849,6 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr "Veja :ref:`doc_instancing` para aprender mais sobre instanciação."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:642
-#, fuzzy
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
@@ -983,18 +977,16 @@ msgstr ""
 "posição e uma direção aleatória ao longo do caminho."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:690
-#, fuzzy
 msgid "Main script"
 msgstr "Script principal"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:692
-#, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
-"Adicione um roteiro a ``Principal``. No começo do roteiro, nós usamos "
-"``export (PackedScene)`` para nos permitir escolher a cena Turba que "
+"Adicione um roteiro a ``Principal``. No começo do script, nós usamos "
+"``export (PackedScene)`` para permitir-nos escolher a cena Inimigo que "
 "queremos instanciar."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:732
@@ -1029,10 +1021,10 @@ msgid ""
 "``StartTimer`` will start the other two timers. ``ScoreTimer`` will "
 "increment the score by 1."
 msgstr ""
-"Agora, conecte o sinal ``timeout()`` (tempo esgotado) para cada um dos nós "
-"de Timer (``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` "
-"irá iniciar os outros dois temporizadores. ``ScoreTimer`` irá incrementar a "
-"pontuação de 1 em 1."
+"Agora, conecte o sinal ``timeout()`` (tempo esgotado) de cada um dos nós de "
+"Timer (``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``) para o script "
+"principal. ``StartTimer`` irá iniciar os outros dois temporizadores. "
+"``ScoreTimer`` irá incrementar a pontuação  em 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:799
 #, fuzzy
@@ -1042,8 +1034,8 @@ msgid ""
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
-"Em ``_on_MobTimer_timeout()``, vamos criar uma instância da turba, pegar um "
-"local de início aleatório ao longo do ``Path2D``, e pôr a turba em "
+"Em ``_on_MobTimer_timeout()``, vamos criar uma instância de inimigo, pegar "
+"um local de início aleatório ao longo do ``Path2D``, e pôr o mob em "
 "movimento. O nó ``PathFollow2D`` irá rotacionar automaticamente à medida em "
 "que ele segue o caminho, então usaremos isso para escolher a direção do "
 "inimigo, bem como sua posição."

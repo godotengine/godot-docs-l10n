@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -344,7 +344,6 @@ msgstr ""
 "en dessous."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:124
-#, fuzzy
 msgid ""
 "Next add a child :ref:`Sprite <class_Sprite>` to each of the :ref:`Light "
 "<class_Light2D>` nodes, and set the :ref:`Sprite's <class_Sprite>` texture "
@@ -359,14 +358,14 @@ msgid ""
 msgstr ""
 "Ajoutez ensuite un :ref:`Sprite <class_Sprite>` enfant à chacun des nœuds  :"
 "ref:`Éclairage <class_Light2D>` et définissez la texture des :ref:`Sprite's "
-"<class_Sprite>` sur `l'image goutte <https://raw.githubusercontent.com/"
+"<class_Sprite>` sur `l'image de tâche <https://raw.githubusercontent.com/"
 "godotengine/godot-demo-projects/master/2d/lights_and_shadows/spot.png>`_. "
 "Chacun de ceux-ci doit rester centré sur le nœud :ref:`Éclairage "
-"<class_Light2D>`. La goutte est l'image de la lumière elle-même tandis que :"
+"<class_Light2D>`. La tâche est l'image de la lumière elle-même tandis que :"
 "ref:`Éclairage <class_Light2D>` montre l'effet de la lumière sur la scène. :"
-"ref:`LightOccluder2D's <class_LightOccluder2D>` considèrera la position de "
+"ref:`LightOccluder2D's <class_LightOccluder2D>` considérera la position de "
 "la lumière comme étant le centre du nœud :ref:`Éclairage <class_Light2D>`, "
-"raison pour laquelle nous voulons que la goutte soit centrée sur son parent :"
+"raison pour laquelle nous voulons que la tâche soit centrée sur son parent :"
 "ref:`Éclairage <class_Light2D>`."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:133
@@ -445,7 +444,6 @@ msgstr ""
 "projetant l'ombre : un mur, un coffre magique, ou autre chose."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:160
-#, fuzzy
 msgid ""
 ":ref:`LightOccluder2Ds <class_LightOccluder2D>` tell the game what shape the "
 "occluder has. They hold an :ref:`OccluderPolygon2D "

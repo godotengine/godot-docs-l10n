@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
-#, fuzzy
 msgid "Blender ESCN exporter"
 msgstr "Blender ESCN exportateur"
 
@@ -51,14 +50,13 @@ msgid "Disabling specific objects"
 msgstr "Désactiver des objets spécifiques"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
-#, fuzzy
 msgid ""
 "Sometimes you don't want some objects exported (e.g. high-res models used "
 "for baking). An object will not be exported if it is not rendered in the "
 "scene. This can be set in the outliner:"
 msgstr ""
 "Parfois, vous ne voulez pas que certains objets soient exportés (par "
-"exemple, les modèles haute résolution utilisés pour la construction). Un "
+"exemple, les modèles haute résolution utilisés pour la préparation). Un "
 "objet ne sera pas exporté s'il n'est pas rendu dans la scène. Cela peut être "
 "réglé dans le hors-champ :"
 
@@ -71,12 +69,10 @@ msgstr ""
 "la scène Godot."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:40
-#, fuzzy
 msgid "Build pipeline integration"
 msgstr "Construire l'intégration au pipeline"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:42
-#, fuzzy
 msgid ""
 "If you have hundreds of model files, you don't want your artists to waste "
 "time manually exporting their blend files. To combat this, the exporter "
@@ -86,9 +82,9 @@ msgid ""
 "in a directory are present in the Godot-Blender-exporter repository."
 msgstr ""
 "Si vous avez des centaines de fichiers modèles, vous ne voulez pas que vos "
-"artistes perdent du temps à exporter manuellement leurs fichiers mélangés. "
+"artistes perdent du temps à exporter manuellement leurs fichiers de mélange. "
 "Pour éviter cela, l'exportateur fournit une fonction python ``io_scene_godot."
 "export(out_file_path)`` qui peut être appelée pour exporter un fichier. Cela "
 "permet une intégration facile avec d'autres systèmes de construction. Un "
-"exemple de script Makefile en python qui exporte tout mélangé dans un "
+"exemple de script Makefile en python qui exporte tout les mélanges dans un "
 "répertoire est présent dans le dépôt Godot-Blender-exporter."

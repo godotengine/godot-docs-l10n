@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -497,18 +497,17 @@ msgid "Ensure Tangents"
 msgstr "Vérifier les tangentes"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
-#, fuzzy
 msgid ""
 "If textures with normal mapping are to be used, meshes need to have tangent "
 "arrays. This option ensures that these are generated if not present in the "
 "source scene. Godot uses Mikktspace for this, but it's always better to have "
 "them generated in the exporter."
 msgstr ""
-"Si des textures avec un mapping normal doivent être utilisées, les maillages "
-"doivent avoir des tableaux de tangentes. Cette option garantit qu'elles "
-"seront générées si elles ne sont pas présentes dans la scène source. Godot "
-"utilise Mikktspace pour cela, mais il est toujours préférable de les générer "
-"dans l'exportateur."
+"Si des textures avec une cartographie normale doivent être utilisées, les "
+"maillages doivent avoir des tableaux de tangentes. Cette option garantit "
+"qu'elles seront générées si elles ne sont pas présentes dans la scène "
+"source. Godot utilise Mikktspace pour cela, mais il est toujours préférable "
+"de les générer dans l'exportateur."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
 msgid ""
@@ -545,7 +544,6 @@ msgid "Animation options"
 msgstr "Options d’animation"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:213
-#, fuzzy
 msgid ""
 "Godot provides many options regarding how animation data is dealt with. Some "
 "exporters (such as Blender) can generate many animations in a single file. "
@@ -568,7 +566,6 @@ msgid "FPS"
 msgstr "IPS"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
-#, fuzzy
 msgid ""
 "Most 3D export formats store animation timeline in seconds instead of "
 "frames. To ensure animations are imported as faithfully as possible, please "
@@ -626,7 +623,6 @@ msgid "Clips"
 msgstr "Clips"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:250
-#, fuzzy
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "
 "clips. Specify from which frame to which frame each clip must be taken (and, "
@@ -792,7 +788,6 @@ msgstr ""
 "prédéfinies, en fonction du type de dessin vide de Blender :"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:312
-#, fuzzy
 msgid "Single arrow will create a :ref:`class_rayshape`"
 msgstr "Une flèche simple créera une :ref:`class_rayshape`"
 
@@ -810,7 +805,6 @@ msgid ""
 msgstr "Sphère (et autres non listés) va créer :ref:`class_sphereshape`"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:317
-#, fuzzy
 msgid ""
 "For better visibility in Blender's editor, the user can set \"X-Ray\" option "
 "on collision empties and set some distinct color for them in User "

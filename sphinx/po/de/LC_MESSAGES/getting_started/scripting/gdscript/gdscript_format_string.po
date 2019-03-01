@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,13 +22,12 @@ msgid "GDScript format strings"
 msgstr "GDScript Zeichenketten formatieren"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
-#, fuzzy
 msgid ""
 "GDScript offers a feature called *format strings*, which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
-"GDScript bietet ein Feature names *Zeichenketten formatieren* welches "
-"Ermöglicht, Textvorlagen wieder zu benutzen, um schnell unterschiedliche, "
+"GDScript bietet ein Funktion namens *Zeichenketten formatieren*, die es "
+"ermöglicht, Textvorlagen wieder zu benutzen, um schnell unterschiedliche, "
 "aber ähnliche Zeichenketten zu erzeugen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
@@ -128,7 +127,6 @@ msgid "Multiple placeholders"
 msgstr "Mehrere Platzhalter"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
-#, fuzzy
 msgid ""
 "Format strings may contain multiple placeholders. In such a case, the values "
 "are handed in the form of an array, one value per placeholder (unless using "
@@ -341,20 +339,18 @@ msgstr ""
 "vorausgesetzt, eine Schrift mit festgelegter Breite wird verwendet."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
-#, fuzzy
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
 msgstr ""
 "Um eine Zeichenfolge auf eine Minimallänge aufzufüllen, füge eine Ganzzahl "
-"zu dem Bezeichner hinzu::"
+"zu dem Bezeichner hinzu:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
-#, fuzzy
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
 msgstr ""
 "Falls die Ganzzahl mit ``0`` beginnt, werden die Ganzzahlwerte mit Nullen "
-"aufgefüllt anstatt mit Leerzeichen::"
+"aufgefüllt anstatt mit Leerzeichen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
 msgid ""
@@ -365,13 +361,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
-#, fuzzy
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
 msgstr ""
 "Das Zeichen ``-`` führt zu einem Auffüllen der Abstände von links anstatt "
-"von rechts und kann für rechtsbündigen Text verwendet werden::"
+"von rechts und kann für rechtsbündigen Text verwendet werden:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
@@ -386,27 +381,25 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
-#, fuzzy
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
 msgstr ""
-"Es ist weiterhin möglich, in Ganzzahl-Platzhaltern mit Nullen aufzufüllen, "
-"indem ``0`` vor ``*`` eingefügt wird::"
+"Es ist weiterhin möglich, Ganzzahl-Platzhalter mit Nullen aufzufüllen, indem "
+"``0`` vor ``*`` eingefügt wird:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
 msgstr "Escape-Sequenz"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
-#, fuzzy
 msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
 "Um das Zeichen ``%`` selbst in einen Format-Zeichenkette einzubauen, muss "
-"dieses „escaped“ werden, damit es nicht als Platzhalter aufgefasst wird. "
-"Dies schafft man durch das Verdoppeln des Zeichens::"
+"dieses „escaped“ (gekennzeichnet) werden, damit es nicht als Platzhalter "
+"aufgefasst wird. Dies schafft man durch das Verdoppeln des Zeichens:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
@@ -453,13 +446,12 @@ msgid "key"
 msgstr "Schlüsselbild"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
-#, fuzzy
 msgid ""
 "``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})``"
 msgstr ""
-"\"Hallo, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
-"\"3.0\"})"
+"``\"Hallo, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
@@ -477,9 +469,8 @@ msgid "index"
 msgstr "Index"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
-#, fuzzy
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
-msgstr "\"Hallo, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
+msgstr "``\"Hallo, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
@@ -487,11 +478,11 @@ msgid "mix"
 msgstr "Mix"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
-#, fuzzy
 msgid ""
 "``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
 msgstr ""
-"\"Hallo, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
+"``\"Hallo, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":"
+"\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -501,33 +492,28 @@ msgid "Array"
 msgstr "Array"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
-#, fuzzy
 msgid ""
 "``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
 "\"Godette\"]])``"
 msgstr ""
-"\"Hallo, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":"
-"\"Godette\"])"
+"``\"Hallo, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":"
+"\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
-#, fuzzy
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
-msgstr "\"Hallo, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
+msgstr "``\"Hallo, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
-#, fuzzy
 msgid "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
-msgstr "\"Hallo, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])"
+msgstr "``\"Hallo, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
-#, fuzzy
 msgid "no index"
-msgstr "Index"
+msgstr "kein Index"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
-#, fuzzy
 msgid "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
-msgstr "\"Hallo, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+msgstr "``\"Hallo, {} v{}\".format([\"Godette\", \"3.0\"], \"{}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
 msgid ""
@@ -542,9 +528,8 @@ msgid "Infix (default)"
 msgstr "Infix (Standard)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
-#, fuzzy
 msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
-msgstr "\"Hallo, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+msgstr "``\"Hallo, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
@@ -557,38 +542,34 @@ msgid "Postfix"
 msgstr "Postfix"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
-#, fuzzy
 msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
-msgstr "\"Hallo, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
+msgstr "``\"Hallo, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
 msgstr "Prefix"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
-#, fuzzy
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
-msgstr "\"Hallo, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
+msgstr "``\"Hallo, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:273
-#, fuzzy
 msgid ""
 "Combining both the ``String.format`` method and the ``%`` operator could be "
 "useful, as ``String.format`` does not have a way to manipulate the "
 "representation of numbers."
 msgstr ""
-"Es kann sinnvoll sein, die ``String.format`` Methode mit dem ``%`` Operator "
+"Es kann sinnvoll sein, die ``String.format``-Methode mit dem ``%`` Operator "
 "zu kombinieren, da mit ``String.format`` keine Möglichkeit besteht, die "
 "Repräsentation von Zahlen zu beeinflussen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
-#, fuzzy
 msgid ""
 "``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
 "3.114})``"
 msgstr ""
-"\"Hallo, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
-"3.114})"
+"``\"Hallo, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Hi, Godette v3.11"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:4
-#, fuzzy
 msgid "CanvasItem shaders"
-msgstr "CanvasItem"
+msgstr "CanvasItem shaders"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:6
 msgid ""
@@ -91,9 +90,8 @@ msgid "Pre-multiplied alpha blend mode."
 msgstr "Mode de mélange alpha pré-multiplié."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
-#, fuzzy
 msgid "**blend_disabled**"
-msgstr "**disable_force**"
+msgstr "**blend_disabled**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
 msgid "Disable blending, values (including alpha) are written as-is."
@@ -124,7 +122,6 @@ msgid "VERTEX/NORMAL/etc need to be transformed manually in vertex function."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
-#, fuzzy
 msgid "Vertex built-ins"
 msgstr "Sommets intégrés"
 
@@ -301,9 +298,8 @@ msgid "Point size for point drawing."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:123
-#, fuzzy
 msgid "Fragment built-ins"
-msgstr "Fragment intégré"
+msgstr "Fragment intégrés"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:125
 msgid ""
@@ -338,10 +334,8 @@ msgid "inout vec3 **NORMAL**"
 msgstr "inout vec3 **NORMAL**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:148
-#, fuzzy
 msgid "Normal read from **NORMAL_TEXTURE**. Writable."
-msgstr ""
-"Lecture normale à partir de **NORMAL_TEXTURE**. accessible en écriture."
+msgstr "Normale lue à partir de **NORMAL_TEXTURE**. Accessible en écriture."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:150
 msgid "out vec3 **NORMALMAP**"
@@ -377,7 +371,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:160
-#, fuzzy
 msgid "in sampler2D **TEXTURE**"
 msgstr "in sampler2D **TEXTURE**"
 
@@ -386,7 +379,6 @@ msgid "Default 2D texture."
 msgstr "Texture 2D par défault."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
-#, fuzzy
 msgid "in sampler2D **NORMAL_TEXTURE**"
 msgstr "in sampler2D **NORMAL_TEXTURE**"
 
@@ -400,7 +392,6 @@ msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
-#, fuzzy
 msgid "Screen UV for use with **SCREEN_TEXTURE**."
 msgstr "Écran UV pour utilisation avec **SCREEN_TEXTURE**."
 
@@ -427,7 +418,6 @@ msgid "Global time in seconds."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
-#, fuzzy
 msgid "in sampler2D **SCREEN_TEXTURE**"
 msgstr "in sampler2D **SCREEN_TEXTURE**"
 
@@ -436,7 +426,6 @@ msgid "Screen texture, mipmaps contain gaussian blurred versions."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
-#, fuzzy
 msgid "Light built-ins"
 msgstr "Lumière intégrée"
 

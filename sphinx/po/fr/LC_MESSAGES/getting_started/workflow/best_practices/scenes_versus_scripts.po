@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,6 @@ msgstr ""
 "uniquement dans le constructeur de C++ de ses objets."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
-#, fuzzy
 msgid ""
 "But, choosing which one to use can be a dilemma. Creating script instances "
 "is identical to creating in-engine classes whereas handling scenes requires "
@@ -80,9 +79,8 @@ msgstr ""
 "comme une scène."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
-#, fuzzy
 msgid "Named types"
-msgstr "Types de shader"
+msgstr "Types nommés"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:66
 msgid ""
@@ -102,34 +100,28 @@ msgid "Know the base type of the script they would like to use."
 msgstr "Connaître le type de base du script qu'ils aimeraient utiliser."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
-#, fuzzy
 msgid "Create an instance of that base type."
-msgstr "Création de types de données personnalisés"
+msgstr "Créez une instance de ce type de base."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:75
-#, fuzzy
 msgid "Add the script to the node."
-msgstr "Ajoutez ce code à la fonction :"
+msgstr "Ajoutez le script au nœud."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
-#, fuzzy
 msgid "(Drag-n-drop method)"
 msgstr "(Méthode glisser-déposer)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
-#, fuzzy
 msgid "Find the script in the FileSystem dock."
-msgstr "Exécute le script dans l'éditeur."
+msgstr "Recherchez le script dans le dock de système de fichiers."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:81
-#, fuzzy
 msgid "Drag and drop the script onto the node in the Scene dock."
-msgstr "Ecrire un script qui peut accéder à d'autres nœuds de la scène."
+msgstr "Glissez et déposez le script sur le nœud dans le dock de la scène."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
-#, fuzzy
 msgid "(Property method)"
-msgstr "(Propriété de la méthode)"
+msgstr "(Méthode de la propriété)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:85
 msgid ""
@@ -144,9 +136,8 @@ msgid "Select \"Load\" from the dropdown."
 msgstr "Sélectionnez \"Charger\" dans la liste déroulante."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:89
-#, fuzzy
 msgid "Select the script from the file dialog."
-msgstr "Exécute le script dans l'éditeur."
+msgstr "Sélectionnez le script dans la boîte de dialogue fichier."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:91
 msgid ""
@@ -161,9 +152,8 @@ msgstr ""
 "une barre de recherche pour rechercher le type par nom."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:96
-#, fuzzy
 msgid "There are two systems for registering types..."
-msgstr "Il y a 6 types d'expressions :"
+msgstr "Il y a deux systèmes d’enregistrement des types..."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:98
 msgid "`Custom Types <doc_making_plugins>`"
@@ -221,17 +211,14 @@ msgstr ""
 "step_by_step/scripting_continued.html#register-scripts-as-classes>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
-#, fuzzy
 msgid "Editor and runtime accessible."
 msgstr "Editeur et runtime accessibles."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:119
-#, fuzzy
 msgid "Displays inheritance relationships in full."
-msgstr "L'héritage multiple n'est pas autorisé."
+msgstr "Affiche l'intégralité des relations d'héritage."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:121
-#, fuzzy
 msgid ""
 "Creates the node with the script, but can also change types or extend the "
 "type from the editor."
@@ -240,16 +227,14 @@ msgstr ""
 "type depuis l'éditeur."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:124
-#, fuzzy
 msgid ""
 "Editor is aware of inheritance relationships between scripts, script "
 "classes, and engine C++ classes."
 msgstr ""
-"l'éditeur est conscient des relations entre les scripts, script classes, et "
-"les classes C++  du moteur."
+"L'éditeur est conscient des relations d'héritage entre les scripts, les "
+"classes de script et les classes C++ du moteur."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:129
-#, fuzzy
 msgid ""
 "Engine developers must add support for languages manually (both name "
 "exposure and runtime accessibility)."
@@ -259,9 +244,8 @@ msgstr ""
 "l'accessibilité)."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
-#, fuzzy
 msgid "Godot 3.1+ only."
-msgstr "Dans Godot v3.11 :"
+msgstr "Godot 3.1+ uniquement."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
 msgid ""

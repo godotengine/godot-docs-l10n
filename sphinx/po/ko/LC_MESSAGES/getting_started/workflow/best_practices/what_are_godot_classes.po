@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgstr ""
 msgid "let's see a simple example of creating a single Node as a child."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:97
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:98
 msgid ""
 "Notice that only two pieces of declarative code are involved in the creation "
 "of this child node: the variable declaration and the constructor "
@@ -123,7 +123,7 @@ msgid ""
 "execute."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:105
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:106
 msgid ""
 "To help offload the work, it would be convenient if one could batch up all "
 "operations involved in creating and setting up node hierarchies. The engine "
@@ -131,14 +131,14 @@ msgid ""
 "code would be free from the perils of imperative code."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:110
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:111
 msgid ""
 "*This* is what a scene (:ref:`PackedScene <class_PackedScene>`) is: a "
 "resource that provides an advanced \"constructor\" serialization which is "
 "offloaded to the engine for batch processing."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:114
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:115
 msgid ""
 "Now, why is any of this important to scene organization? Because one must "
 "understand that scenes *are* objects. One often pairs a scene with a "
@@ -146,28 +146,28 @@ msgid ""
 "scene is often an extension of the script's declarative code."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:120
 msgid "It helps to define..."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:122
 #, fuzzy
 msgid "what objects are available to the script?"
 msgstr "스크립트의 역할"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:123
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:124
 msgid "how are they organized?"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:125
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
 msgid "how are they initialized?"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:127
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
 msgid "what connections to each other do they have, if any?"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
 msgid ""
 "As such, many Object-Oriented principles which apply to \"programming\", i."
 "e. scripts, *also* apply to scenes. Some scripts are designed to only work "
@@ -175,7 +175,7 @@ msgid ""
 "are meant to be re-used between scenes."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:134
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:135
 msgid ""
 "**Regardless, the scene is always an extension of the root script, and can "
 "therefore be interpreted as a part of the class.** Most of the points "

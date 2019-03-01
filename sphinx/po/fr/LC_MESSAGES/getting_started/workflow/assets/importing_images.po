@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -234,7 +234,6 @@ msgid "HDR Mode"
 msgstr "Mode HDR"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:72
-#, fuzzy
 msgid ""
 "Godot supports high dynamic range textures (as .HDR or .EXR). These are "
 "mostly useful as high dynamic range equirectangular panorama skies (the "
@@ -250,7 +249,6 @@ msgstr ""
 "pas le cas."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:75
-#, fuzzy
 msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
 "textures, enable the \"Force RGBE\" option."
@@ -263,7 +261,6 @@ msgid "Normal Map"
 msgstr "Carte normale"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
-#, fuzzy
 msgid ""
 "When using a texture as normal map, only the red and green channels are "
 "required. Given regular texture compression algorithms produce artifacts "
@@ -275,8 +272,8 @@ msgid ""
 msgstr ""
 "Lorsque vous utilisez une texture comme carte normale, seuls les canaux "
 "rouge et vert sont requis. Étant donné que les algorithmes classiques de "
-"compressions de textures produisent des artefacts qui ne semblent pas aussi "
-"beaux dans les cartes normales, le format de compression RGTC convient "
+"compressions de textures produisent des artefacts qui ne semblent pas beaux "
+"dans les cartes normales, le format de compression RGTC convient "
 "parfaitement à ces données. Si vous forcez cette option sur \"Activé\", "
 "Godot importera l'image au format RGTC compressé. Par défaut, il est défini "
 "sur \"Détecter\", ce qui signifie que si la texture est utilisée comme une "
@@ -300,7 +297,6 @@ msgid "Repeat"
 msgstr "Répéter"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:93
-#, fuzzy
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
@@ -419,7 +415,6 @@ msgid "Fix Alpha Border"
 msgstr "Fixer la bordure alpha"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:134
-#, fuzzy
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
 "transparency to non transparency. It helps mitigate the outline effect when "

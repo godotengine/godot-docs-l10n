@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -209,7 +209,6 @@ msgid "Sprite animation"
 msgstr "Animación del sprite"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -227,9 +226,9 @@ msgstr ""
 "de advertencia junto al nodo. Un ``AnimatedSprite`` requiere un recurso :ref:"
 "`SpriteFrames <class_SpriteFrames>`, que es una lista de las animaciones que "
 "puede mostrar. Para crear uno, busca la propiedad ``Frames`` en el Inspector "
-"y haz clic en \"<null>\" -> \"New SpriteFrames\". A continuación, en la "
-"misma ubicación, haz clic en ``<SpriteFrames>`` para abrir el panel "
-"\"SpriteFrames\":"
+"y haz clic en \"[empty]\" -> \"New SpriteFrames\". Luego, en la misma "
+"ubicación, haz clic en ``<SpriteFrames>``, y luego en \"Open Editor\" para "
+"abrir el panel \"SpriteFrames\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:111
 msgid ""
@@ -257,7 +256,6 @@ msgstr ""
 "Inspector bajo el título ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:125
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -269,10 +267,10 @@ msgstr ""
 "Finalmente, añade un :ref:`CollisionShape2D <class_CollisionShape2D>` como "
 "hijo de ``Player``. Esto determinará el \"hitbox\" del jugador, o los "
 "límites de su área de colisión. Para este personaje, un nodo "
-"``CapsuleShape2D`` ya que se ajusta mejor a la imagen, así que junto a "
-"\"Shape\" en el Inspector, haz clic en \"<null>\" -> \"New CapsuleShape2D"
-"\".  Ahora usa los dos manejadores de tamaño y redimensiona la forma de "
-"colisión para cubrir el sprite:"
+"``CapsuleShape2D`` sería el más indicado ya que se ajusta mejor a la imagen, "
+"así que junto a \"Shape\" en el Inspector, haz clic en \"<null>\" -> \"New "
+"CapsuleShape2D\".  Ahora usa los dos manejadores de tamaño y redimensiona la "
+"forma de colisión para cubrir el sprite:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid "When you're finished, your ``Player`` scene should look like this:"

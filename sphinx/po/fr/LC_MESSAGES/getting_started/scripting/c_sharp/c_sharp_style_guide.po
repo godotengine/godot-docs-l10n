@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,9 +92,8 @@ msgstr ""
 "fr-fr/dotnet/csharp/whats-new/>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
-#, fuzzy
 msgid "Formatting conventions"
-msgstr "Conventions de nommage"
+msgstr "Conventions de formatage"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:33
 msgid ""
@@ -138,11 +137,9 @@ msgstr ""
 "niveau :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:57
-#, fuzzy
 msgid "However, you may choose to omit line breaks inside brackets:"
 msgstr ""
-"Cependant, vous pouvez choisir d'omettre les sauts de ligne entre "
-"parenthèses,"
+"Cependant, vous pouvez choisir d'omettre les sauts de ligne entre accolades :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:59
 msgid "For simple property accessors."
@@ -183,19 +180,16 @@ msgstr ""
 "blanche entre les groupes pour faciliter la lecture."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:91
-#, fuzzy
 msgid "Avoid inserting a blank line:"
-msgstr "Évitez d'insérer une ligne blanche,"
+msgstr "Évitez d'insérer une ligne blanche :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
-#, fuzzy
 msgid "After ``{``, the opening brace."
-msgstr "Après une parenthèse ouvrante ('{')."
+msgstr "Après une accolade ouvrante ``{``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:94
-#, fuzzy
 msgid "Before ``}``, the closing brace."
-msgstr "Avant une parenthèse fermante ('}')."
+msgstr "Avant une accolade fermante ``}``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
 msgid "After a comment block, or a single line comment."
@@ -206,7 +200,6 @@ msgid "Adjacent to another blank line."
 msgstr "Adjacente à une autre ligne vide."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:133
-#, fuzzy
 msgid ""
 "Consider breaking a line when it's longer than 100 characters. And it's also "
 "a good practice to insert a line feed (LF) character at the end of a file "
@@ -280,7 +273,6 @@ msgid "Do not use a space:"
 msgstr "N'utilisez pas d'espace :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:155
-#, fuzzy
 msgid "After type cast parentheses."
 msgstr "Après les parenthèses de conversion de type."
 
@@ -339,7 +331,6 @@ msgstr ""
 "un identificateur normal :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:244
-#, fuzzy
 msgid ""
 "It is generally discouraged to use a type name as a prefix of an identifier, "
 "like *'string strText'* or *'float fPower'*, for example. An exception is "
@@ -426,7 +417,6 @@ msgid "Consider omitting default initial value for a type."
 msgstr "Envisagez d'omettre la valeur initiale par défaut pour un type."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
-#, fuzzy
 msgid ""
 "Consider using null-conditional operators or type initializers to make the "
 "code more compact."

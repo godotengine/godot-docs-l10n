@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,7 +93,6 @@ msgid "On mobile"
 msgstr "Sur mobile"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:40
-#, fuzzy
 msgid ""
 "The same scenario on mobile platforms is a little worse. To distribute a "
 "project on those devices, a binary for each of those platforms is built, "
@@ -292,7 +291,6 @@ msgid "Exporting from the command line"
 msgstr "Exporter à partir de la ligne de commande"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
-#, fuzzy
 msgid ""
 "In production, it is useful to automate builds, and Godot supports this with "
 "the ``--export`` and ``--export-debug`` command line parameters. Exporting "
@@ -303,21 +301,19 @@ msgstr ""
 "avec les paramètres de ligne de commande ``--export`` et ``--export-debug``. "
 "L'exportation à partir de la ligne de commande nécessite toujours un modèle "
 "d'exportation pour définir les paramètres d'exportation. Une invocation "
-"basique de l'exportation serait ``godot -exporter \"Windows Desktop\" "
-"un_nom_quelconque``"
+"basique de l'exportation serait :"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
-#, fuzzy
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. The output path is "
 "relative to the project path or absolute; it does not respect the directory "
 "the command was invoked from."
 msgstr ""
-"Ce qui, en supposant qu'il y a un preset appelé \"Windows Desktop\" et que "
-"le modèle puisse être trouvé, sera exporté vers ``un_nom_quelqconque.exe``. "
-"Le chemin de sortie est relatif au chemin du projet ou absolu. Il ne "
-"respecte pas le répertoire à partir duquel la commande a été invoquée."
+"Ceci exportera vers '' some_name.exe'', en supposant qu'il y a un preset "
+"appelé \"Windows Desktop\" et que le modèle puisse être trouvé. Le chemin de "
+"sortie est relatif au chemin du projet ou absolu. Il ne respecte pas le "
+"répertoire à partir duquel la commande a été invoquée."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
 msgid ""
@@ -338,12 +334,10 @@ msgid "the target name ends with ``.pck`` or ``.zip``."
 msgstr "Le nom de la cible se termine par `.pck` ou par `.zip`."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:159
-#, fuzzy
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
 msgstr ""
 "Il est souvent utile de combiner le drapeau ``--export`` avec le drapeau ``--"
 "path`` et de créer un modèle d'exportation dédié pour l'exportation "
-"automatisée : ``godot --path chemin/du/projet --export \"pck\" nom_du_jeu."
-"pck``"
+"automatisée :"

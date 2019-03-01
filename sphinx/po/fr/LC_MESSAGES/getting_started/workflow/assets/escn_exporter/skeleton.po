@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,15 +34,14 @@ msgstr ""
 "position de repos (transformation dans Godot) des os."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:13
-#, fuzzy
 msgid ""
 "The three check boxes :code:`Inherit Rotation`, :code:`Inherit Scale`, :code:"
 "`Local Location` (colored in red) must be ticked when building armature in "
 "Blender, so that the exported bone transform be consistent between Blender "
 "and Godot"
 msgstr ""
-"Les trois cases à cocher :code:`Hériter Rotation`, :code:`Hériter Échelle`, :"
-"code:`Emplacement local` (coloré en rouge) doivent être cochées lors de la "
+"Les trois cases à cocher :code:`Inherit Rotation`, :code:`Inherit Scale`, :"
+"code:`Local Location` (coloré en rouge) doivent être cochées lors de la "
 "construction de l'armature dans Blender pour que la transposition du corps "
 "exporté soit cohérente entre Blender et Godot"
 
@@ -51,7 +50,6 @@ msgid "Bone Weights"
 msgstr "Poids des os"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
-#, fuzzy
 msgid ""
 "Blender put rigged mesh vertices which has no bone weights at its original "
 "position, but these vertices would be placed at (0, 0, 0) in Godot, making "
@@ -69,15 +67,14 @@ msgid "Non-Deform Bone"
 msgstr "Os non déformé"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:29
-#, fuzzy
 msgid ""
 "Note that the non-deform bone can be configured as not exported by enabling "
 "the :code:`Exclude Control Bones`; the deform bone checkbox is shown in the "
 "picture."
 msgstr ""
 "Notez que l'os non déformé peut être configuré pour ne pas être exporté en "
-"activant :code:`Exclure les os de contrôle`, la case à cocher de déformation "
-"de l'os est montrée dans l'image."
+"activant :code:`Exclude Control Bones`, la case à cocher de déformation de "
+"l'os est montrée dans l'image."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:35
 msgid "Bone Attachment"

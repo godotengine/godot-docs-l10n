@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -422,15 +422,15 @@ msgstr "向左平移:"
 msgid "Jump:"
 msgstr "跳跃:"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:303
+#: ../../docs/tutorials/3d/using_transforms.rst:302
 msgid "All common behaviors and logic can be done with just vectors."
 msgstr "所有常见的行为和逻辑都可以用向量来完成。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:306
+#: ../../docs/tutorials/3d/using_transforms.rst:305
 msgid "Setting information"
 msgstr "设置信息"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:308
+#: ../../docs/tutorials/3d/using_transforms.rst:307
 msgid ""
 "There are, of course, cases where you want to set information to a "
 "transform. Imagine a first person controller or orbiting camera. Those are "
@@ -440,7 +440,7 @@ msgstr ""
 "当然，有些情况下您想要将一些信息赋予到变换上。 想象一下第一人称控制器或轨道摄"
 "像机。 那些肯定是用角度来完成的，因为您希望变换以特定的顺序进行。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:310
+#: ../../docs/tutorials/3d/using_transforms.rst:309
 msgid ""
 "For such cases, keep the angles and rotations *outside* the transform and "
 "set them every frame. Don't try to retrieve and re-use them because the "
@@ -449,11 +449,11 @@ msgstr ""
 "对于这种情况，请保持变换 *外* 的角度和旋转，并将其设置为每帧。 不要尝试恢复并"
 "重新使用它们，因为变换没有以这种方式使用的意思。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:312
+#: ../../docs/tutorials/3d/using_transforms.rst:311
 msgid "Example of looking around, FPS style:"
 msgstr "环顾四周，FPS风格的示例:"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:355
+#: ../../docs/tutorials/3d/using_transforms.rst:353
 msgid ""
 "As you can see, in such cases it's even simpler to keep the rotation "
 "outside, then use the transform as the *final* orientation."
@@ -461,11 +461,11 @@ msgstr ""
 "如您所见，在这种情况下，保持外部旋转更为简单，然后使用变换作为* 最后的 *方"
 "向。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:358
+#: ../../docs/tutorials/3d/using_transforms.rst:356
 msgid "Interpolating with quaternions"
 msgstr "四元数插值"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:360
+#: ../../docs/tutorials/3d/using_transforms.rst:358
 msgid ""
 "Interpolating between two transforms can efficiently be done with "
 "quaternions. More information about how quaternions work can be found in "
@@ -478,11 +478,11 @@ msgstr ""
 "联网上的其他地方找到。 在实际应用中，了解它们的主要用途是做最近的路径插值就足"
 "够了。 同样，如果您有两次旋转，四元数将平滑地使用最近的轴在它们之间进行插值。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:362
+#: ../../docs/tutorials/3d/using_transforms.rst:360
 msgid "Converting a rotation to quaternion is straightforward."
 msgstr "将旋转转换为四元数很简单。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:385
+#: ../../docs/tutorials/3d/using_transforms.rst:383
 msgid ""
 "The :ref:`class_Quat` type reference has more information on the datatype "
 "(it can also do transform accumulation, transform points, etc., though this "
@@ -494,17 +494,17 @@ msgstr ""
 "点等等，虽然这个用法较少)。 如果多次对四元数进行插值或应用运算，请记住它们需"
 "要最终归一化，否则它们可能会产生数值精度错误。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:387
+#: ../../docs/tutorials/3d/using_transforms.rst:385
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
 msgstr "四元数在做相机/路径/等东西时很有用。 插值的结果总会是正确且平滑的。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:390
+#: ../../docs/tutorials/3d/using_transforms.rst:388
 msgid "Transforms are your friend"
 msgstr "变换是您的朋友"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:392
+#: ../../docs/tutorials/3d/using_transforms.rst:390
 msgid ""
 "For most beginners, getting used to working with transforms can take some "
 "time. However, once you get used to them, you will appreciate their "
@@ -513,7 +513,7 @@ msgstr ""
 "对于大多数初学者来说，习惯于使用变换可能需要一些时间。 但是，一旦您习惯了它"
 "们，您会欣赏他们的简单而有力。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:394
+#: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid ""
 "Don't hesitate to ask for help on this topic in any of Godot's `online "
 "communities <https://godotengine.org/community>`_ and, once you become "

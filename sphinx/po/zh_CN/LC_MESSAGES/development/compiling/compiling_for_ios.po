@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,9 @@ msgstr ""
 "SCons(您可以从macports获得它，您应该能够在安装时在终端中运行 ``scons`` )"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:13
-msgid "Xcode with the iOS SDK and the command line tools."
+#, fuzzy
+msgid ""
+"Xcode 10.0 (or later) with the iOS (10.0) SDK and the command line tools."
 msgstr "Xcode与iOS SDK和命令行工具。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:15
@@ -73,32 +75,45 @@ msgid "for a Simulator executable."
 msgstr "用于模拟器可执行文件。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:44
+#, fuzzy
 msgid ""
-"Additionally since some time Apple requires 64 bit version of application "
-"binary when you are uploading to iStore. The best way to provide these is to "
-"create a bundle in which there are both 32bit and 64 binaries, so every "
-"device will be able to run the game. It can be done in three steps, first "
-"compile 32 bit version, then compile 64 bit version and then use ``lipo`` to "
-"bundle them into one fat binary, all those steps can be performed with "
-"following commands:"
+"For recent devices, Apple requires 64-bit versions of application binaries "
+"when you are uploading to the Apple Store. The best way to provide these is "
+"to create a bundle in which there are both 32-bit and 64-bit binaries, so "
+"every device will be able to run the game."
 msgstr ""
 "此外，由于Apple在上传到iStore时需要64位版本的应用程序二进制文件。 提供这些的"
 "最好方法是创建一个包含32位和64位二进制文件的包，这样每个设备都可以运行游戏。 "
 "它可以分三步完成，首先编译32位版本，然后编译64位版本，然后使用 ``lipo`` 将它"
 "们捆绑成一个胖二进制文件，所有这些步骤都可以使用以下命令执行:"
 
+#: ../../docs/development/compiling/compiling_for_ios.rst:47
+msgid ""
+"It can be done in three steps: first compile the 32-bit version, then "
+"compile the 64-bit version and then use ``lipo`` to bundle them into one "
+"\"universal\" binary. All those steps can be performed with following "
+"commands:"
+msgstr ""
+
 #: ../../docs/development/compiling/compiling_for_ios.rst:56
+msgid ""
+"If you also want to provide a simulator build (reduces the chance of any "
+"linker errors with dependencies), you'll need to build and lipo the "
+"``x86_64`` architecture as well."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_ios.rst:66
 msgid "Run"
 msgstr "运行"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:58
+#: ../../docs/development/compiling/compiling_for_ios.rst:68
 msgid ""
 "To run on a device or simulator, follow these instructions: :ref:"
 "`doc_exporting_for_ios`."
 msgstr ""
 "要在设备或模拟器上运行，请按照以下说明操作: :ref:`doc_exporting_for_ios`。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:61
+#: ../../docs/development/compiling/compiling_for_ios.rst:71
 msgid ""
 "Replace or add your executable to the Xcode project, and change the "
 "\"executable name\" property on Info.plist accordingly if you use an "

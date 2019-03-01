@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:4
-#, fuzzy
 msgid "Spatial Material"
 msgstr "Spatial Material"
 
@@ -27,7 +26,6 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:9
-#, fuzzy
 msgid ""
 "``SpatialMaterial`` is a default 3D material that aims to provide most of "
 "the features artists look for in a material, without the need for writing "
@@ -83,7 +81,6 @@ msgstr ""
 "l'arrière vers l'avant et rendus dans l'ordre)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:32
-#, fuzzy
 msgid ""
 "This technique is less efficient (many state changes happen) and makes the "
 "materials unusable with many mid- and post-processing effects (such as SSAO, "
@@ -104,7 +101,6 @@ msgstr ""
 "transparence sont :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:39
-#, fuzzy
 msgid "Transparent flag (this one)"
 msgstr "L'option Transparent (celle-ci)"
 
@@ -117,7 +113,6 @@ msgid "Enabling distance or proximity fade"
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:44
-#, fuzzy
 msgid "Unshaded"
 msgstr "Sans ombre"
 
@@ -143,7 +138,6 @@ msgid "Vertex Lighting"
 msgstr "Éclairage de sommet"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:57
-#, fuzzy
 msgid ""
 "Godot has a more or less uniform cost per pixel thanks to depth pre-pass. "
 "All lighting calculations are made by running the lighting shader on every "
@@ -154,7 +148,6 @@ msgstr ""
 "shader d'éclairage sur chaque pixel."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:60
-#, fuzzy
 msgid ""
 "As these calculations are costly, performance can be brought down "
 "considerably in some corner cases such as drawing several layers of "
@@ -209,9 +202,8 @@ msgstr ""
 "Priority* du matériel (voir le bas de cette page)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:87
-#, fuzzy
 msgid "Use Point Size"
-msgstr "Utiliser la taille des points"
+msgstr "Utiliser la taille de point"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:89
 msgid ""
@@ -229,7 +221,6 @@ msgid "World Triplanar"
 msgstr "Monde Triplanaire"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:96
-#, fuzzy
 msgid ""
 "When using triplanar mapping (see below, in the UV1 and UV2 settings), "
 "triplanar is computed in object local space. This option makes triplanar "
@@ -245,7 +236,6 @@ msgid "Fixed Size"
 msgstr "Taille fixe"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:103
-#, fuzzy
 msgid ""
 "This causes the object to be rendered at the same size no matter the "
 "distance. This is useful mostly for indicators (no depth test and high "
@@ -281,7 +271,6 @@ msgid "Vertex Color"
 msgstr "Couleur de vertex"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:122
-#, fuzzy
 msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
 "come from your 3D modelling application. By default they are ignored."
@@ -338,7 +327,6 @@ msgstr ""
 "également disponibles :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:152
-#, fuzzy
 msgid ""
 "**Burley:** Default mode, the original Disney Principled PBS diffuse "
 "algorithm."
@@ -351,15 +339,14 @@ msgid "**Lambert:** Is not affected by roughness."
 msgstr "**Lambert :** n’est pas affecté par la dureté."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:154
-#, fuzzy
 msgid ""
 "**Lambert Wrap:** Extends Lambert to cover more than 90 degrees when "
 "roughness increases. Works great for hair and simulating cheap subsurface "
 "scattering. This implementation is energy conserving."
 msgstr ""
-"**Lambert Wrap:** Élargit Lambert pour couvrir plus de 90 degrés lorsque la "
+"**Lambert Wrap:** Étend de Lambert pour couvrir plus de 90 degrés lorsque la "
 "rugosité augmente. Idéal pour les cheveux et pour simuler la diffusion sous-"
-"surface à bas prix. Cette mise en œuvre permet d'économiser l'énergie."
+"surface à bas prix. Cette implémentation conserve l'énergie."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:157
 msgid ""
@@ -371,17 +358,16 @@ msgstr ""
 "certains types de tissus."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:159
-#, fuzzy
 msgid ""
 "**Toon:** Provides a hard cut for lighting, with smoothing affected by "
 "roughness. It is recommended you disable sky contribution from your "
 "environment's ambient light settings or disable ambient light in the spatial "
 "material to achieve a better effect."
 msgstr ""
-"Toon:**Toon:** Fournit une coupe dure pour l'éclairage, avec un lissage "
-"affecté par la rugosité. Il est recommandé de désactiver la contribution du "
-"ciel en fonction des réglages de la lumière ambiante de votre environnement "
-"ou de désactiver la lumière ambiante dans le SpatialMaterial pour obtenir un "
+"**Toon:** Fournit une coupe dure pour l'éclairage, avec un lissage affecté "
+"par la rugosité. Il est recommandé de désactiver la contribution du ciel en "
+"fonction des réglages de la lumière ambiante de votre environnement ou de "
+"désactiver la lumière ambiante dans le spatial material pour obtenir un "
 "meilleur effet."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:167
@@ -389,7 +375,6 @@ msgid "Specular Mode"
 msgstr "Mode spéculaire"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:169
-#, fuzzy
 msgid ""
 "Specifies how the specular blob will be rendered. The specular blob "
 "represents the shape of a light source reflected in the object."
@@ -398,7 +383,6 @@ msgstr ""
 "représente la forme d'une source lumineuse réfléchie dans l'objet."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:172
-#, fuzzy
 msgid "**ShlickGGX:** The most common blob used by PBR 3D engines nowadays."
 msgstr ""
 "**ShlickGGGX:** La tâche la plus communément utilisée par les moteurs 3D PBR "
@@ -418,7 +402,6 @@ msgid "**Phong:** Same as above."
 msgstr "**Phong:** Comme au-dessus."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:176
-#, fuzzy
 msgid ""
 "**Toon:** Creates a toon blob, which changes size depending on roughness."
 msgstr ""
@@ -434,7 +417,6 @@ msgid "Blend Mode"
 msgstr "Mode de fusion"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:184
-#, fuzzy
 msgid ""
 "Controls the blend mode for the material. Keep in mind that any mode other "
 "than *Mix* forces the object to go through the transparent pipeline."
@@ -496,7 +478,6 @@ msgstr ""
 "élimination n'est effectuée)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:205
-#, fuzzy
 msgid "Depth Draw Mode"
 msgstr "Mode de dessin en profondeur"
 
@@ -619,7 +600,6 @@ msgstr ""
 "pixels semi-transparents."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:268
-#, fuzzy
 msgid ""
 "This renders the object via the opaque pipeline, which is faster and allows "
 "it to use mid- and post-process effects such as SSAO, SSR, etc."
@@ -757,7 +737,6 @@ msgid "Rim"
 msgstr "Rim"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:342
-#, fuzzy
 msgid ""
 "Some fabrics have small micro-fur that causes light to scatter around it. "
 "Godot emulates this with the *Rim* parameter. Unlike other rim lighting "
@@ -772,7 +751,6 @@ msgstr ""
 "Cela rend l'effet beaucoup plus crédible."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:349
-#, fuzzy
 msgid ""
 "Rim size depends on roughness, and there is a special parameter to specify "
 "how it must be colored. If *Tint* is ``0``, the color of the light is used "
@@ -915,7 +893,6 @@ msgid "UV1 and UV2"
 msgstr "UV1 et UV2"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:431
-#, fuzzy
 msgid ""
 "Godot supports two UV channels per material. Secondary UV is often useful "
 "for ambient occlusion or emission (baked light). UVs can be scaled and "

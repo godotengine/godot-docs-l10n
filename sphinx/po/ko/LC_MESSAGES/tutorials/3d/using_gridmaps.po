@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,70 +100,80 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:60
+msgid "Materials"
+msgstr "머티리얼(Materials)"
+
+#: ../../docs/tutorials/3d/using_gridmaps.rst:62
+msgid ""
+"Only the materials from within the meshes are used when generating the mesh "
+"library. Materials set on the node will be ignored."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_gridmaps.rst:66
 msgid "Exporting the MeshLibrary"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:62
+#: ../../docs/tutorials/3d/using_gridmaps.rst:68
 msgid ""
 "To export the library, click on Scene -> Convert To.. -> MeshLibrary.., and "
 "save it as a resource."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:67
+#: ../../docs/tutorials/3d/using_gridmaps.rst:73
 msgid ""
 "You can find an already exported MeshLibrary in the project named "
 "\"MeshLibrary.tres\"."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:70
+#: ../../docs/tutorials/3d/using_gridmaps.rst:76
 msgid "Using GridMap"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:72
+#: ../../docs/tutorials/3d/using_gridmaps.rst:78
 msgid ""
 "Create a new scene and add a GridMap node. Add the mesh library by dragging "
 "the resource file from the FileSystem dock and dropping it in the \"Theme\" "
 "property in the Inspector."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:78
+#: ../../docs/tutorials/3d/using_gridmaps.rst:84
 msgid ""
 "The \"Cell/Size\" property should be set to the size of your meshes. You can "
 "leave it at the default value for the demo. Set the \"Center Y\" property to "
 "\"Off\"."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:81
+#: ../../docs/tutorials/3d/using_gridmaps.rst:87
 msgid ""
 "Now you can start designing the level by choosing a tile from the palette "
 "and placing it with Left-Click in the editor window. To remove a tile, use "
 "Shift+Right-click."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:85
+#: ../../docs/tutorials/3d/using_gridmaps.rst:91
 msgid ""
 "Click on the \"GridMap\" menu to see options and shortcuts. For example, "
 "pressing \"S\" rotates a tile around the y-axis."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:90
+#: ../../docs/tutorials/3d/using_gridmaps.rst:96
 msgid ""
 "Holding <Shift> and dragging with the left mouse button will draw a "
 "selection box. You can duplicate or clear the selected area using the "
 "respective menu options."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:96
+#: ../../docs/tutorials/3d/using_gridmaps.rst:102
 msgid ""
 "In the menu, you can also change the axis you're drawing on, as well as "
 "shift the drawing plane higher or lower on its axis."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:102
+#: ../../docs/tutorials/3d/using_gridmaps.rst:108
 msgid "Using GridMap in code"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_gridmaps.rst:104
+#: ../../docs/tutorials/3d/using_gridmaps.rst:110
 msgid ""
 "See :ref:`class_GridMap` for details on the node's methods and member "
 "variables."

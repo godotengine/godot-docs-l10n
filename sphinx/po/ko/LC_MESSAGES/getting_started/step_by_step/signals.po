@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,7 +298,7 @@ msgstr ""
 msgid "Here is the code for the player using signals to emit the bullet:"
 msgstr "이것이 시그널을 사용해 플레이어가 총알을 방출하는 코드입니다:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:290
+#: ../../docs/getting_started/step_by_step/signals.rst:293
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
@@ -306,18 +306,18 @@ msgstr ""
 "메인 씬에서, 이제 플레이어의 시그널을 연결합니다 (\"노드\" 탭에 나타날 것입니"
 "다)."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:314
+#: ../../docs/getting_started/step_by_step/signals.rst:317
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"
 msgstr ""
 "이제 총알은 움직임을 유지한 채로 플레이어의 회전에 독립을 유지할 것입니다:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:320
+#: ../../docs/getting_started/step_by_step/signals.rst:323
 msgid "Conclusion"
 msgstr "결론"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:322
+#: ../../docs/getting_started/step_by_step/signals.rst:325
 msgid ""
 "Many of Godot's built-in node types provide signals you can use to detect "
 "events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
@@ -329,7 +329,7 @@ msgstr ""
 "는 플레이어의 물리 바디가 충돌 모양에 들어갈 때마다 ``body_entered`` 시그널"
 "을 방출하며, 이를 통해 플레이어가 동전을 언제 먹었는 지를 알 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:327
+#: ../../docs/getting_started/step_by_step/signals.rst:330
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,11 +122,11 @@ msgstr ""
 "算以比使用常规过程更可预测的方式工作，如果帧速率太高或太低，则可能具有尖峰或"
 "丢失精度。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:80
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
 msgid "Scene setup"
 msgstr "建立场景"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:82
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:81
 msgid ""
 "To have something to test, here's the scene (from the tilemap tutorial): :"
 "download:`kbscene.zip <files/kbscene.zip>`. We'll be creating a new scene "
@@ -136,7 +136,7 @@ msgstr ""
 "kbscene.zip>`。 我们将为角色创造一个新场景。 使用机器人精灵并创建一个这样的场"
 "景:"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:88
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:87
 #, fuzzy
 msgid ""
 "You'll notice that there's a warning icon next to our CollisionShape2D node; "
@@ -148,7 +148,7 @@ msgstr ""
 "定义形状。 在CollisionShape2D的shape属性中创建一个新的CircleShape2D。 单击"
 "<CircleShape2D>转到它的选项，并将半径设置为30:"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:95
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:94
 #, fuzzy
 msgid ""
 "**Note: As mentioned before in the physics tutorial, the physics engine "
@@ -161,14 +161,14 @@ msgstr ""
 "多边形，平面和线段工作)，所以总是改变形状的参数(如半径) 缩放它。 运动/刚性/静"
 "态物体本身也是如此，因为它们的尺度会影响形状比例。**"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:102
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:101
 #, fuzzy
 msgid ""
 "Now, create a script for the character, the one used as an example above "
 "should work as a base."
 msgstr "现在为角色创建一个脚本，上面用作示例的脚本应该作为基础。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:105
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:104
 msgid ""
 "Finally, instance that character scene in the tilemap, and make the map "
 "scene the main one, so it runs when pressing play."
@@ -176,12 +176,12 @@ msgstr ""
 "最后，实例化tilemap中的角色场景，并使地图场景成为主场景，因此在按下播放时运"
 "行。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:111
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:110
 #, fuzzy
 msgid "Moving the kinematic character"
 msgstr "移动运动学角色(2D)"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:113
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:112
 #, fuzzy
 msgid ""
 "Go back to the character scene, and open the script, the magic begins now! "
@@ -198,24 +198,24 @@ msgstr ""
 "将 :ref:`Vector2 <class_Vector2>` 作为参数，并尝试将该运动应用于运动体。 如果"
 "发生碰撞，它会在碰撞时停止。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:121
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:120
 msgid "So, let's move our sprite downwards until it hits the floor:"
 msgstr "所以，让我们向下移动我们的精灵，直到它撞上地板:"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:146
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:144
 msgid ""
 "The result is that the character will move, but stop right when hitting the "
 "floor. Pretty cool, huh?"
 msgstr "结果是角色会移动，但在击中地板时会停止。 很酷，对吧？"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:149
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:147
 #, fuzzy
 msgid ""
 "The next step will be adding gravity to the mix, this way it behaves a "
 "little more like a regular game character:"
 msgstr "下一步将增加重力，这样它的行为更像一个真正的游戏角色:"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:185
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:183
 #, fuzzy
 msgid ""
 "Now the character falls smoothly. Let's make it walk to the sides, left and "
@@ -225,15 +225,15 @@ msgstr ""
 "现在角色顺利落下。 当触摸方向键时，让它向左侧和右侧行走。 请记住，所使用的值"
 "(至少速度)是像素/秒。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:189
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:187
 msgid "This adds simple walking support by pressing left and right:"
 msgstr "通过向左和向右按下可以增加简单的步行支持:"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:254
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:252
 msgid "And give it a try."
 msgstr "试一试。"
 
-#: ../../docs/tutorials/physics/kinematic_character_2d.rst:256
+#: ../../docs/tutorials/physics/kinematic_character_2d.rst:254
 msgid ""
 "This is a good starting point for a platformer. A more complete demo can be "
 "found in the demo zip distributed with the engine, or in the https://github."

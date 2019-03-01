@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,13 +111,12 @@ msgstr ""
 "appelée ``PlayerController``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:58
-#, fuzzy
 msgid ""
 "You’ve probably stored a node in a variable before, and typed a dot to be "
 "left with no autocomplete suggestions:"
 msgstr ""
-"Vous avez probablement déjà stocké un nœud dans une variable et tapé un "
-"point, sans suggestions de saisie semi-automatique:"
+"Vous avez probablement déjà stockée un nœud dans une variable et tapé un "
+"point pour se retrouver avec aucune suggestion de saisie semi-automatique :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:64
 msgid ""
@@ -131,14 +130,13 @@ msgstr ""
 "partir du nœud :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:71
-#, fuzzy
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
 "Time compilation and other compiler improvements are already on the roadmap!"
 msgstr ""
-"À l'avenir, le GDScript typé augmentera également les performances du code: "
+"À l'avenir, le GDScript typé augmentera également les performances du code : "
 "la compilation en temps réel et d'autres améliorations du compilateur sont "
-"déjà sur la feuille de route!"
+"déjà sur la feuille de route !"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:75
 msgid ""
@@ -185,7 +183,6 @@ msgid "Currently you can use three types of… types:"
 msgstr "Actuellement, vous pouvez utiliser trois types de… types :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:106
-#, fuzzy
 msgid ":ref:`Built-in <doc_gdscript_builtin_types>`"
 msgstr ":ref:`Built-in <doc_gdscript_builtin_types>`"
 
@@ -250,9 +247,8 @@ msgstr ""
 "précharger dans une constante :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:145
-#, fuzzy
 msgid "Variable casting"
-msgstr "Conversion de type"
+msgstr "Casting de variable"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:147
 msgid ""
@@ -291,7 +287,6 @@ msgstr ""
 "au type ``PlayerController`` :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:170
-#, fuzzy
 msgid ""
 "As we’re dealing with a custom type, if the ``body`` doesn’t extend "
 "``PlayerController``, the ``player``\\ variable will be set to ``null``. We "
@@ -317,7 +312,6 @@ msgid "Safe lines"
 msgstr "Lignes sécurisées"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
-#, fuzzy
 msgid ""
 "You can also use casting to ensure safe lines. Safe lines are a new tool in "
 "Godot 3.1 to tell you when ambiguous lines of code are type-safe. As you can "
@@ -326,11 +320,11 @@ msgid ""
 "runtime."
 msgstr ""
 "Vous pouvez également utiliser la conversion de type pour assurer la "
-"sécurité des lignes. Les lignes de sécurisées sont un nouvel outil dans "
-"Godot 3.1 pour vous avertir lorsque des lignes de code ambiguës sont type-"
-"sûr. Comme vous pouvez mélanger et faire correspondre du code typé et du "
-"code dynamique, Godot n'a parfois pas assez d'informations pour savoir si "
-"une instruction va déclencher une erreur ou non au moment de l'exécution."
+"sécurité des lignes. Les lignes sécurisées sont un nouvel outil dans Godot "
+"3.1 pour vous avertir lorsque des lignes de code ambiguës sont type-sûr. "
+"Comme vous pouvez mélanger et faire correspondre du code typé et du code "
+"dynamique, Godot n'a parfois pas assez d'informations pour savoir si une "
+"instruction va déclencher une erreur ou non au moment de l'exécution."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:188
 msgid ""
@@ -350,7 +344,6 @@ msgstr ""
 "type du nœud tant qu'il possède les méthodes que vous avez besoin d'appeler."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:196
-#, fuzzy
 msgid ""
 "You can use casting to tell Godot the type you expect when you get a node: "
 "``($Timer as Timer)``, ``($Player as KinematicBody2D)``, etc. Godot will "
@@ -446,16 +439,14 @@ msgid "And the same callback, with type hints:"
 msgstr "Et le même rappel, avec des indications de type :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:291
-#, fuzzy
 msgid ""
 "You’re free to replace, e.g. the ``PhysicsBody2D``, with your own type, to "
 "cast parameters automatically:"
 msgstr ""
 "Vous êtes libre de remplacer, par exemple, le ``PhysicsBody2D``, par votre "
-"propre type, pour cast les paramètres automatiquement :"
+"propre type, pour convertir les paramètres automatiquement :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:301
-#, fuzzy
 msgid ""
 "The ``bullet`` variable could hold any ``CollisionObject2D`` here, but we "
 "make sure it is our ``Bullet``, a node we created for our project. If it’s "
@@ -558,7 +549,6 @@ msgstr ""
 "des erreurs**."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:357
-#, fuzzy
 msgid "You can’t use Enums as types:"
 msgstr "Vous ne pouvez pas utiliser les Enums comme types :"
 

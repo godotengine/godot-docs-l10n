@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgid ""
 "use either? Let's see an example:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:87
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:88
 msgid ""
 "Preloading allows the script to handle all the loading the moment one loads "
 "the script. Preloading is useful, but there are also times when one doesn't "
@@ -63,7 +63,7 @@ msgid ""
 "consider:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:92
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:93
 msgid ""
 "If one cannot determine when the script might load, then preloading a "
 "resource, especially a scene or script, could result in further loads one "
@@ -71,28 +71,28 @@ msgid ""
 "times on top of the original script's load operations."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:97
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:98
 msgid ""
 "If something else could replace the value (like a scene's exported "
 "initialization), then preloading the value has no meaning. This point isn't "
 "a significant factor if one intends to always create the script on its own."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:101
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:102
 msgid ""
 "If one wishes only to 'import' another class resource (script or scene), "
 "then using a preloaded constant is often the best course of action. However, "
 "in exceptional cases, one my wish not to do this:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:105
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:106
 msgid ""
 "If the 'imported' class is liable to change, then it should be a property "
 "instead, initialized either using an ``export`` or a ``load`` (and perhaps "
 "not even initialized until later)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:109
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:110
 msgid ""
 "If the script requires a great many dependencies, and one does not wish to "
 "consume so much memory, then one may wish to, load and unload various "
@@ -104,25 +104,25 @@ msgid ""
 "the resources to delete themselves from memory)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:120
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:121
 msgid "Large levels: static vs. dynamic"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:122
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:123
 msgid ""
 "If one is creating a large level, which circumstances are most appropriate? "
 "Should they create the level as one static space? Or should they load the "
 "level in pieces and shift the world's content as needed?"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:126
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:127
 msgid ""
 "Well, the simple answer is , \"when the performance requires it.\" The "
 "dilemma associated with the two options is one of the age-old programming "
 "choices: does one optimize memory over speed, or vice versa?"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:130
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:131
 msgid ""
 "The naive answer is to use a static level that loads everything at once. "
 "But, depending on the project, this could consume a large amount of memory. "
@@ -130,7 +130,7 @@ msgid ""
 "everything else the computer tries to do at the same time."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:135
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:136
 msgid ""
 "No matter what, one should break larger scenes into smaller ones (to aid in "
 "reusability of assets). Developers can then design a node that manages the "
@@ -139,7 +139,7 @@ msgid ""
 "often implement these strategies to avoid wasting memory."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:141
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:142
 msgid ""
 "On the flip side, coding a dynamic system is more complex, i.e. uses more "
 "programmed logic, which results in opportunities for errors and bugs. If one "
@@ -147,15 +147,15 @@ msgid ""
 "the application."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:146
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:147
 msgid "As such, the best options would be..."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:148
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:149
 msgid "To use a static level for smaller games."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:150
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:151
 msgid ""
 "If one has the time/resources on a medium/large game, create a library or "
 "plugin that can code the management of nodes and resources. If refined over "
@@ -163,14 +163,14 @@ msgid ""
 "reliable tool across projects."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:155
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:156
 msgid ""
 "Code the dynamic logic for a medium/large game because one has the coding "
 "skills, but not the time or resources to refine the code (game's gotta get "
 "done). Could potentially refactor later to outsource the code into a plugin."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:160
+#: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:161
 msgid ""
 "For an example of the various ways one can swap scenes around at runtime, "
 "please see the :ref:`\"Change scenes manually\" "

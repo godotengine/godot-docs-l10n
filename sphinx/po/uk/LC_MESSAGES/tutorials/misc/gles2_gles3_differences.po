@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:4
+msgid "Differences between GLES2 and GLES3"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:6
+msgid ""
+"This page documents the differences between GLES2 and GLES3 that are by "
+"design and are not the result of bugs. There may be differences that are "
+"unintentional, but they should be reported as bugs."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:9
+msgid ""
+"\"GLES2\" and \"GLES3\" are the names used in Godot for the two OpenGL-based "
+"rendering backends. In terms of graphics APIs, the GLES2 backend maps to "
+"OpenGL 2.1 on desktop, OpenGL ES 2.0 on mobile and WebGL 1.0 on the web. The "
+"GLES3 backend maps to OpenGL 3.3 on desktop, OpenGL ES 3.0 on mobile and "
+"WebGL 2.0 on the web."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:15
+msgid "Particles"
+msgstr "Частинки"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:17
+msgid ""
+"GLES2 cannot use the :ref:`Particles <class_Particles>` or :ref:`Particles2D "
+"<class_Particles2D>` nodes as they require advanced GPU features. Instead, "
+"use :ref:`CPUParticles <class_CPUParticles>` or `:ref:`CPUParticles2D "
+"<class_CPUParticles2D>`, which provides a similar interface to a :ref:"
+"`ParticlesMaterial <class_ParticlesMaterial>`."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:22
+msgid ""
+"Particles and Particles2D can be converted to their CPU equivalent node with "
+"the \"Convert to CPUParticles\" option in the editor."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:26
+msgid "SCREEN_TEXTURE mip-maps"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:28
+msgid ""
+"In GLES2, ``SCREEN_TEXTURE`` (accessed via a :ref:`ShaderMaterial "
+"<class_ShaderMaterial>`) does not have computed mip-maps. So when accessing "
+"at a different LOD, the texture will not appear blurry."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:32
+#, fuzzy
+msgid "Color space"
+msgstr "Моноширинний"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:34
+msgid ""
+"Shading in GLES3 takes place in linear color space while in GLES2 it takes "
+"place in sRGB space. While this is a very important distinction for graphics "
+"programmers, for everyone else it means that, in GLES3 shaders, you need to "
+"convert to sRGB before outputting your final color or else your colors will "
+"appear washed out and over-bright."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:39
+msgid ""
+"You do so with the following line of code at the end of the fragment shader:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:45
+msgid ""
+"GLES2 does not need this. If your game is going to use both GLES2 and GLES3, "
+"wrap it in an ``if`` statement checking to see if the output is in sRGB, "
+"using ``OUTPUT_IS_SRGB``."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:54
+msgid "``OUTPUT_IS_SRGB`` is ``true`` in GLES2 and ``false`` in GLES3."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:57
+#, fuzzy
+msgid "SpatialMaterial features"
+msgstr "Типові можливості"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
+msgid ""
+"In GLES2, the following advanced rendering features in the :ref:"
+"`SpatialMaterial <class_SpatialMaterial>` are missing:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
+msgid "Refraction"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
+msgid "Subsurface scattering"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:63
+msgid "Anisotropy"
+msgstr "Анізотропія"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:64
+msgid "Clearcoat"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:65
+#, fuzzy
+msgid "Depth mapping"
+msgstr "Затінювання"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:67
+msgid ""
+"The option to use them may appear in custom :ref:`ShaderMaterials "
+"<class_ShaderMaterial>`, however, they will be non-functional. For example, "
+"you will still be able to set ``SSS`` (which normally adds subsurface "
+"scattering) in your shader, but nothing will happen."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:72
+#, fuzzy
+msgid "Environment features"
+msgstr "Змінні середовища"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:74
+msgid ""
+"In GLES2, the following features in the :ref:`Environment "
+"<class_Environment>` are missing:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
+#, fuzzy
+msgid "Auto exposure"
+msgstr "Експозиція"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:77
+#, fuzzy
+msgid "Tonemapping"
+msgstr "Затінювання"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:78
+msgid "Screen space reflections"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:79
+msgid "Screen space ambient occlusion"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:80
+msgid "Depth of field"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:81
+msgid "Glow (also known as bloom)"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:82
+#, fuzzy
+msgid "Adjustment"
+msgstr "Коригування"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:84
+msgid "That means that in GLES2 environments you can only set:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:86
+msgid "Sky (including procedural sky)"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:87
+#, fuzzy
+msgid "Ambient light"
+msgstr "Додавання освітлення"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:88
+msgid "Fog"
+msgstr "Туман"

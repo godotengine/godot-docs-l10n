@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,7 +161,7 @@ msgid ""
 msgstr "在进入编辑器之前，我们要计划如何基于模型映像嵌套容器。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:88
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:278
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
 msgid "Break down the UI mockup"
 msgstr "分解UI模型"
 
@@ -390,41 +390,43 @@ msgid ""
 msgstr "您应该有四个嵌套的容器，以及放置在它旁边的文本竖立节点"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
+#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
-"them into the ``VBoxContainer``. Then, drag the illustration node into the "
-"``CenterContainer``. The nodes should position automatically."
+"them into the ``VBoxContainer``. The nodes should position automatically."
 msgstr ""
 "在节点树中，选择应该位于左侧的所有`TextureRect`节点:徽标、菜单选项和版本说"
 "明。将它们拖放到`VBoxContainer`中。然后，将插图节点拖放到`CenterContainer`"
 "中。节点应该自动定位。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:212
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
 msgid "Containers automatically place and resize textures"
 msgstr "容器自动放置和调整纹理大小"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:213
 msgid "We're left with two problems to solve:"
 msgstr "我们还有两个问题要解决:"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:215
 msgid "The characters on the right aren't centered"
 msgstr "右边的字符没有居中"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
 msgid "There's no space between the logo and the other UI elements"
 msgstr "logo和其他UI元素之间没有空间"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
+#, fuzzy
 msgid ""
-"To center the characters on the right, we'll use a ``CenterContainer``.  Add "
-"a ``CenterContainer`` node as a child of the ``HBoxContainer``. Then in the "
-"Inspector, scroll down to the ``Size Flags`` category and click on the field "
-"to the right of the ``Vertical`` property, and check ``Expand`` in addition "
-"to ``Fill``. Do the same for the ``Horizontal`` property. Finally drag and "
-"drop the Characters into the ``CenterContainer``. The Characters element "
-"will center automatically."
+"To center the characters on the right, first select the ``CenterContainer``. "
+"Then in the Inspector, scroll down to the ``Size Flags`` category and click "
+"on the field to the right of the ``Vertical`` property, and check ``Expand`` "
+"in addition to ``Fill``. Do the same for the ``Horizontal`` property. This "
+"makes the ``CenterContainer`` expand into all available space while "
+"respecting its neighbour ``VBoxContainer``. Finally, drag and drop the "
+"Characters node into the ``CenterContainer``. The Characters element will "
+"center automatically."
 msgstr ""
 "为了使右边的字符居中，我们将使用`CenterContainer`。添加一个`CenterContainer`"
 "节点作为`HBoxContainer`的子节点。然后在属性面板中，向下滚动到`Size Flags(大小"
@@ -432,13 +434,13 @@ msgstr ""
 "`Horizontal(水平)`属性执行相同的操作。最后将字符拖放到`CenterContainer`中。字"
 "符元素将自动居中。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer"
 msgstr "只要将字符节点放在CenterContainer中，它就会集中在屏幕右侧"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
@@ -453,12 +455,12 @@ msgstr ""
 "项)`这三个菜单选项，并将它们拖放到新的`VBoxContainer`中。UI的布局应该几乎不会"
 "改变。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:241
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
 msgid ""
 "Place the new container between the other two nodes to retain the UI's layout"
 msgstr "将新容器放在其他两个节点之间，以保持UI的布局"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:244
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -473,7 +475,7 @@ msgstr ""
 "别。单击`Vertical(垂直)`属性右侧的字段，并检查`Expand(展开)`。容器膨胀以获得"
 "所有可用的垂直空间。但它尊重它的邻居，`Logo`和`Version(Version)`元素。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:252
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:253
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the ``Alignment`` property to ``Center``."
@@ -481,11 +483,11 @@ msgstr ""
 "要将`VBoxContainer`中的节点居中，请滚动到属性面板的顶部，并将`Alignment(对"
 "齐)`属性更改为`Center(居中)`。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:257
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
 msgid "The menu options should center vertically in the UI's left column"
 msgstr "菜单选项应该垂直居中在UI的左列中"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:259
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:260
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the ``Custom Constants`` category below ``Size Flags``, and click the "
@@ -498,16 +500,16 @@ msgstr ""
 "段。设置为30。一旦您按下回车键，`Separation(分离)`属性就会激活，Godot会在菜单"
 "选项之间增加30个像素。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:267
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:268
 msgid "The final interface"
 msgstr "最终界面"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:269
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:270
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr "没有一行代码，我们就有了一个精确且响应迅速的主菜单。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:272
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 #, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
@@ -518,7 +520,7 @@ msgstr ""
 "恭喜您做到了!您可以下载`final menu <#>`__ 来与您自己的菜单进行比较。在下一个"
 "教程中，您将创建一个带有栏和物品计数器的游戏用户界面。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:280
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
@@ -528,7 +530,7 @@ msgstr ""
 "响应式用户界面就是要确保我们的ui在所有屏幕类型上都能很好地伸缩。电视屏幕和电"
 "脑显示器有不同的大小和比例。在Godot中，我们使用容器来控制UI元素的位置和大小。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:285
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press the Q key to activate "
@@ -539,7 +541,7 @@ msgstr ""
 "激活选择模式，选择容器，然后单击并拖动容器的某个角落以调整其大小。UI组件应该"
 "在其中流动。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:291
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
 msgid ""
 "You'll notice that although containers move sprites around, they don't scale "
 "them. This is normal. We want the UI system to handle different screen "
@@ -550,7 +552,7 @@ msgstr ""
 "系统能够处理不同的屏幕比例，但我们也需要整个游戏来适应不同的屏幕分辨率。为"
 "此，Godot将整个窗口上下缩放。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:297
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:298
 msgid ""
 "You can change the scale mode in the project settings: click the Project "
 "menu -> Project Settings. In the window's left column, look for the Display "

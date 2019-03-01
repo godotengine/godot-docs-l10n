@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,22 +36,20 @@ msgid "Architecture diagram"
 msgstr "Diagramme d'architecture"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:13
-#, fuzzy
 msgid ""
 "The following diagram describes the architecture used by Godot, from the "
 "core components down to the abstracted drivers, via the scene structure and "
 "the servers."
 msgstr ""
-"Le diagramme suivant décrit l'architecture utilisée par Godot, en partant "
-"des composants essentiels jusqu'aux pilotes(drivers), via la structure de la "
-"scène et des serveurs."
+"Le schéma suivant décrit l’architecture utilisée par Godot, depuis les "
+"éléments centraux jusqu'aux pilotes abstraits, via la structure de la scène "
+"et les serveurs."
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:20
 msgid "Debugging the editor with gdb"
 msgstr "Déboguer l'éditeur avec gdb"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:22
-#, fuzzy
 msgid ""
 "If you are writing or correcting bugs affecting Godot Engine's editor, "
 "remember that the binary will by default run the project manager first, and "
@@ -60,12 +58,12 @@ msgid ""
 "e`` argument to Godot Engine's binary from within your project's folder. "
 "Typically:"
 msgstr ""
-"Si vous rencontrez ou corriger des bugs affectant l'éditeur du moteur de jeu "
-"de Godot, rappelez vous que par défaut le gestionnaire de projets est lancé "
-"en premier, et ensuite lance l'éditeur par un autre processus une fois un "
-"projet sélectionné. Pour lancer directement un projet, vous avez besoin de "
-"lancer l'éditeur avec l'argument ``-e`` à partir du dossier de votre projet. "
-"Par exemple :"
+"Si vous écrivez ou corrigez des bugs affectant l'éditeur du moteur Godot, "
+"rappelez-vous que le binaire exécutera par défaut le gestionnaire de projet "
+"d'abord, puis l'éditeur dans un autre processus une fois que vous aurez "
+"sélectionné un projet. Pour lancer un projet directement, vous devez "
+"exécuter l'éditeur en passant l'argument ``-e'' au binaire du moteur Godot "
+"depuis le dossier du projet. Typiquement :"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:35
 msgid "Or:"

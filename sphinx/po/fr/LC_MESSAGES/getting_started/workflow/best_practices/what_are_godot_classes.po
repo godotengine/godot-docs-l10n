@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,9 +59,8 @@ msgstr ""
 "choses....."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:21
-#, fuzzy
 msgid "properties"
-msgstr "les propriétés des nœuds"
+msgstr "propriétés"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:23
 msgid "methods"
@@ -152,8 +151,7 @@ msgid "let's see a simple example of creating a single Node as a child."
 msgstr ""
 "voyons un exemple simple de création d'un Nœud unique en tant qu'enfant."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:97
-#, fuzzy
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:98
 msgid ""
 "Notice that only two pieces of declarative code are involved in the creation "
 "of this child node: the variable declaration and the constructor "
@@ -168,10 +166,11 @@ msgstr ""
 "déclaration de constructeur. Les autres caractéristiques doivent être mises "
 "en place dans le code impératif. En revanche, le code de script est bien "
 "plus lent que le code C++ du moteur. Chaque changement doit effectuer un "
-"appel à l'API de script, ce qui correspond à beaucoup de recherches dans les "
-"structures de données pour trouver la logique a exécuter à chaque fois."
+"appel à l'API de script, ce qui correspond à beaucoup de \"recherches\" en C+"
+"+ dans les structures de données pour trouver la logique a exécuter à chaque "
+"fois."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:105
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:106
 msgid ""
 "To help offload the work, it would be convenient if one could batch up all "
 "operations involved in creating and setting up node hierarchies. The engine "
@@ -184,7 +183,7 @@ msgstr ""
 "construction en utilisant son code C++ rapide, et le code du script serait "
 "libre des périls du code impératif."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:110
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:111
 msgid ""
 "*This* is what a scene (:ref:`PackedScene <class_PackedScene>`) is: a "
 "resource that provides an advanced \"constructor\" serialization which is "
@@ -194,7 +193,7 @@ msgstr ""
 "une ressource qui fournit une sérialisation \"constructeur\" avancée qui est "
 "transférée au moteur pour traitement par lots."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:114
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:115
 msgid ""
 "Now, why is any of this important to scene organization? Because one must "
 "understand that scenes *are* objects. One often pairs a scene with a "
@@ -206,27 +205,27 @@ msgstr ""
 "une scène à un nœud racine scripté qui utilise les nœuds inférieurs. Cela "
 "signifie que la scène est souvent une extension du code déclaratif du script."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:120
 msgid "It helps to define..."
 msgstr "Il aide à définir...."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:122
 msgid "what objects are available to the script?"
 msgstr "quels objets sont accessibles par le script ?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:123
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:124
 msgid "how are they organized?"
 msgstr "comment sont-ils organisés ?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:125
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
 msgid "how are they initialized?"
 msgstr "comment sont-ils initialisés ?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:127
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
 msgid "what connections to each other do they have, if any?"
 msgstr "quelles connexions ont-ils entre eux, s'ils en ont ?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
 msgid ""
 "As such, many Object-Oriented principles which apply to \"programming\", i."
 "e. scripts, *also* apply to scenes. Some scripts are designed to only work "
@@ -239,7 +238,7 @@ msgstr ""
 "scène (et sont souvent inclus dans la scène elle-même). D'autres scripts "
 "sont conçus pour être réutilisés entre les scènes."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:134
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:135
 msgid ""
 "**Regardless, the scene is always an extension of the root script, and can "
 "therefore be interpreted as a part of the class.** Most of the points "

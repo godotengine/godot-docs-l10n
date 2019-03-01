@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,6 @@ msgstr ""
 "de Godot, et de la façon dont elles sont utilisées ensemble."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:10
-#, fuzzy
 msgid "Type conversion and casting"
 msgstr "Conversion de type et Casting"
 
@@ -59,27 +58,25 @@ msgid "**Casting and Type Checking**"
 msgstr "**Casting et vérification de type**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
-#, fuzzy
 msgid ""
 "Throws ``InvalidCastException`` if the returned node cannot be cast to "
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
 "sure it won't fail."
 msgstr ""
-"Envoie ``InvalidCastException`` si le nœud retourné ne peut pas être casté "
-"en Sprite. Utilisez le à la place de l'opérateur \"as\" si vous êtes presque "
-"sûr qu'il n'échouera pas."
+"Envoie ``InvalidCastException`` si le nœud retourné ne peut pas être "
+"concertit en Sprite. Utilisez le à la place de l'opérateur \"as\" si vous "
+"êtes presque sûr qu'il n'échouera pas."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:34
 msgid "**Using the AS operator**"
 msgstr "**Utilisation de l'opérateur AS**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
-#, fuzzy
 msgid ""
 "The ``as`` operator returns null if the node cannot be cast to Sprite, and "
 "for that reason, it cannot be used with value types."
 msgstr ""
-"L'opérateur ``as`` retourne null si le nœud ne peut pas être casté en "
+"L'opérateur ``as`` retourne null si le nœud ne peut pas être convertit en "
 "Sprite, et pour cette raison il ne peut pas être utilisé avec les types de "
 "valeurs."
 
@@ -115,15 +112,14 @@ msgid "**Type checking using the IS operator**"
 msgstr "**Vérification du type à l'aide de l'opérateur IS**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
-#, fuzzy
 msgid ""
 "To check if the node can be cast to Sprite, you can use the ``is`` operator. "
 "The ``is`` operator returns false if the node cannot be cast to Sprite, "
 "otherwise it returns true."
 msgstr ""
-"Pour vérifier si le nœud peut être casté en Sprite, vous pouvez utiliser "
+"Pour vérifier si le nœud peut être convertit en Sprite, vous pouvez utiliser "
 "l'opérateur ``is``. L'opérateur ``is`` retourne false si le nœud ne peut pas "
-"être casté en Sprite, sinon il retourne true."
+"être convertit en Sprite, sinon il retourne true."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:77
 msgid ""
@@ -182,7 +178,6 @@ msgstr ""
 "en passant un tableau d'objets."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:148
-#, fuzzy
 msgid ""
 "Signals support parameters and bound values of all the `built-in types "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/"
@@ -196,7 +191,7 @@ msgstr ""
 "reference/keywords/built-in-types-table>`_ et les classes dérivées de :ref:"
 "`Godot.Object <class_Object>`. Par conséquent, tout ``Node`` ou "
 "``Reference`` sera automatiquement compatible mais les objets de données "
-"personnalisés devront étendre `Godot.Object` ou l'une de ses sous-classes."
+"personnalisés devront hériter de `Godot.Object` ou l'une de ses sous-classes."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:160
 msgid ""

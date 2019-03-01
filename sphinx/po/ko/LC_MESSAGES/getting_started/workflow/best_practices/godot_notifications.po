@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -188,11 +188,11 @@ msgid ""
 "methods as needed."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:152
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:156
 msgid "_init vs. initialization vs. export"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:154
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:158
 msgid ""
 "If the script initializes its own node subtree, without a scene, that code "
 "should execute here. Other property or SceneTree-independent initializations "
@@ -200,43 +200,43 @@ msgid ""
 "but after a script creates and initializes its properties."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:159
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:163
 msgid ""
 "Scripts have three types of property assignments that can occur during "
 "instantiation:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:203
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:210
 msgid ""
 "When instantiating a scene, property values will set up according to the "
 "following sequence:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:206
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:213
 msgid ""
 "**Initial value assignment:** instantiation will assign either the "
 "initialization value or the init assignment value. Init assignments take "
 "priority over initialization values."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:210
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:217
 msgid ""
 "**Exported value assignment:** If instancing from a scene rather than a "
 "script, Godot will assign the exported value to replace the initial value "
 "defined in the script."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:214
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:221
 msgid ""
 "As a result, instantiating a script versus a scene will affect both the "
 "initialization *and* the number of times the engine calls the setter."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:218
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:225
 msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:220
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:227
 msgid ""
 "When instantiating a scene connected to the first executed scene, Godot will "
 "instantiate nodes down the tree (making ``_init`` calls) and build the tree "
@@ -246,14 +246,14 @@ msgid ""
 "This then causes a reverse cascade going up back to the tree's root."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:227
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:234
 msgid ""
 "When instantiating a script or a standalone scene, nodes are not added to "
 "the SceneTree upon creation, so no ``_enter_tree`` callbacks trigger. "
 "Instead, only the ``_init`` and later ``_ready`` calls occur."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:231
+#: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:238
 msgid ""
 "If one needs to trigger behavior that occurs as nodes parent to another, "
 "regardless of whether it occurs as part of the main/active scene or not, one "

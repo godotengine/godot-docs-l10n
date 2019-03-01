@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -302,7 +302,6 @@ msgid "A default basis (unmodified) is akin to:"
 msgstr "Une base par défaut (non modifiée) s'apparente à :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:123
-#, fuzzy
 msgid "This is also an analog of a 3x3 identity matrix."
 msgstr "C’est aussi un analogue d’une matrice d’identité 3 x 3."
 
@@ -383,13 +382,12 @@ msgid "This rotates the node relative to the parent node."
 msgstr "Ceci permet de faire pivoter le nœud par rapport au nœud parent."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:183
-#, fuzzy
 msgid ""
 "To rotate relative to object space (the node's own transform), use the "
 "following:"
 msgstr ""
-"Pour faire pivoter par rapport à l'espace objet (la propre transformation du "
-"nœud), utilisez ce qui suit :"
+"Pour faire pivoter par rapport à l'espace de l'objet (la propre "
+"transformation du nœud), utilisez ce qui suit :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:197
 msgid "Precision errors"
@@ -486,19 +484,17 @@ msgstr ""
 msgid "Jump:"
 msgstr "Sauter :"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:303
+#: ../../docs/tutorials/3d/using_transforms.rst:302
 msgid "All common behaviors and logic can be done with just vectors."
 msgstr ""
 "Tous les comportements communs et logique peuvent être faits avec juste des "
 "vecteurs."
 
-#: ../../docs/tutorials/3d/using_transforms.rst:306
-#, fuzzy
+#: ../../docs/tutorials/3d/using_transforms.rst:305
 msgid "Setting information"
-msgstr "Créer l'animation"
+msgstr "Informations de réglage"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:308
-#, fuzzy
+#: ../../docs/tutorials/3d/using_transforms.rst:307
 msgid ""
 "There are, of course, cases where you want to set information to a "
 "transform. Imagine a first person controller or orbiting camera. Those are "
@@ -511,7 +507,7 @@ msgstr ""
 "que vous *voulez* que les transformations se produisent dans un ordre "
 "spécifique."
 
-#: ../../docs/tutorials/3d/using_transforms.rst:310
+#: ../../docs/tutorials/3d/using_transforms.rst:309
 msgid ""
 "For such cases, keep the angles and rotations *outside* the transform and "
 "set them every frame. Don't try to retrieve and re-use them because the "
@@ -522,11 +518,11 @@ msgstr ""
 "et de les réutiliser car la transformation n'est pas destinée à être "
 "utilisée de cette façon."
 
-#: ../../docs/tutorials/3d/using_transforms.rst:312
+#: ../../docs/tutorials/3d/using_transforms.rst:311
 msgid "Example of looking around, FPS style:"
 msgstr "Exemple de regarder autour, dans le style FPS :"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:355
+#: ../../docs/tutorials/3d/using_transforms.rst:353
 msgid ""
 "As you can see, in such cases it's even simpler to keep the rotation "
 "outside, then use the transform as the *final* orientation."
@@ -535,12 +531,11 @@ msgstr ""
 "garder la rotation à l'extérieur, puis d'utiliser la transformation comme "
 "orientation *finale*."
 
-#: ../../docs/tutorials/3d/using_transforms.rst:358
+#: ../../docs/tutorials/3d/using_transforms.rst:356
 msgid "Interpolating with quaternions"
 msgstr "Interpoler avec des quaternions"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:360
-#, fuzzy
+#: ../../docs/tutorials/3d/using_transforms.rst:358
 msgid ""
 "Interpolating between two transforms can efficiently be done with "
 "quaternions. More information about how quaternions work can be found in "
@@ -557,11 +552,11 @@ msgstr ""
 "avez deux rotations, un quaternion permettra l'interpolation entre elles en "
 "utilisant l'axe le plus proche."
 
-#: ../../docs/tutorials/3d/using_transforms.rst:362
+#: ../../docs/tutorials/3d/using_transforms.rst:360
 msgid "Converting a rotation to quaternion is straightforward."
 msgstr "Convertir une rotation en quaternion est très simple."
 
-#: ../../docs/tutorials/3d/using_transforms.rst:385
+#: ../../docs/tutorials/3d/using_transforms.rst:383
 msgid ""
 "The :ref:`class_Quat` type reference has more information on the datatype "
 "(it can also do transform accumulation, transform points, etc., though this "
@@ -570,8 +565,7 @@ msgid ""
 "may suffer from numerical precision errors."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:387
-#, fuzzy
+#: ../../docs/tutorials/3d/using_transforms.rst:385
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
@@ -579,11 +573,11 @@ msgstr ""
 "Les quaternions sont utiles pour les interpolations caméra/chemin/etc. car "
 "le résultat sera toujours correct et lisse."
 
-#: ../../docs/tutorials/3d/using_transforms.rst:390
+#: ../../docs/tutorials/3d/using_transforms.rst:388
 msgid "Transforms are your friend"
 msgstr "Les transformations sont vos amies"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:392
+#: ../../docs/tutorials/3d/using_transforms.rst:390
 msgid ""
 "For most beginners, getting used to working with transforms can take some "
 "time. However, once you get used to them, you will appreciate their "
@@ -593,7 +587,7 @@ msgstr ""
 "transformations peut prendre un certain temps. Cependant, une fois que vous "
 "vous y serez habitué, vous apprécierez leur simplicité et leur puissance."
 
-#: ../../docs/tutorials/3d/using_transforms.rst:394
+#: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid ""
 "Don't hesitate to ask for help on this topic in any of Godot's `online "
 "communities <https://godotengine.org/community>`_ and, once you become "

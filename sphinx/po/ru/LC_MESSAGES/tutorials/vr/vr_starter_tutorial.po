@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:4
 msgid "VR starter tutorial"
-msgstr ""
+msgstr "Гайд для начинающих в ВР"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:7
 msgid "Introduction"
@@ -31,6 +31,9 @@ msgid ""
 "intent of this tutorial is to give you an idea on how to make VR games in "
 "Godot."
 msgstr ""
+"Эта серия уроков покажет вам, как сделать простую VR-игру / проект. Цель "
+"этого урока - дать вам представление о том, как создавать виртуальные игры в "
+"Godot."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:14
 msgid ""
@@ -39,12 +42,17 @@ msgid ""
 "iterations to get this right, but there are a few things you can do to make "
 "it easier:"
 msgstr ""
+"Имейте в виду, одна из самых важных вещей при создании VR-контента - это "
+"правильная шкала измерений! Для этого может понадобиться много практики и "
+"правок, но есть несколько вещей, которые вам помогут:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:17
 msgid ""
 "In VR, 1 unit is often considered 1 meter. If you design your assets around "
 "that standard, you can save yourself a lot of headache."
 msgstr ""
+"В VR 1 единица измерения часто считается 1 метром. Старайтесь разрабатывать "
+"свои проекты в соответствии с этим стандартом."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:18
 msgid ""
@@ -52,22 +60,29 @@ msgid ""
 "world distances. In Blender, you can use the MeasureIt add-on; in Maya, you "
 "can use the Measure Tool."
 msgstr ""
+"В вашей программе 3D-моделирования посмотрите, есть ли способ использования "
+"единиц измерения расстояний реального мира. В Blender вы можете использовать "
+"дополнение MeasureIt; в Maya вы можете использовать инструмент Measure."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:19
 msgid ""
 "You can make rough models using a tool like `Google Blocks <https://vr."
 "google.com/blocks/>`_, and then refine in another 3D modelling program."
 msgstr ""
+"Вы можете создавать грубые модели, используя такой инструмент, как Google "
+"Blocks, а затем улучшать их в другой программе 3D-моделирования."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:20
 msgid ""
 "Test often, as the assets can look dramatically different in VR than on a "
 "flat screen!"
 msgstr ""
+"Тестируйте часто, так как ресурсы могут выглядеть значительно иначе в VR, "
+"чем на плоском экране!"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:22
 msgid "Throughout the course of this tutorial, we will cover:"
-msgstr ""
+msgstr "На протяжении всего курса мы рассмотрим:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:24
 msgid "How to tell Godot to run in VR."

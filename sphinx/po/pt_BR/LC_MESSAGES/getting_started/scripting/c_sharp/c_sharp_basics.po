@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,6 +94,7 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:41
+#, fuzzy
 msgid ""
 "Download and install the latest version of `Visual Studio <https://"
 "visualstudio.microsoft.com/downloads/>`_ (*not* Visual Studio Code), which "
@@ -102,12 +103,17 @@ msgid ""
 "<https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?"
 "sku=BuildTools&rel=15>`_ instead."
 msgstr ""
+"Baixe e instale a última versão do `Visual Studio <https://visualstudio."
+"microsoft.com/downloads/>`_ (*não* o Visual Studio Code), que contém "
+"utilidades requeridas para se usar C# em Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:50
+#, fuzzy
 msgid "macOS and Linux"
-msgstr ""
+msgstr "macOS e Linux"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:52
+#, fuzzy
 msgid ""
 "Download and install the latest version of the `Mono SDK <http://www.mono-"
 "project.com/download/>`_. As of Godot 3.1 beta 3, the version number doesn't "
@@ -115,6 +121,8 @@ msgid ""
 "Mono installation for NuGet and MSBuild which are required to use C# in "
 "Godot."
 msgstr ""
+"Baixe e instale a última versão do `Mono SDK <http://www.mono-project.com/"
+"download/>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
 #, fuzzy
@@ -180,11 +188,12 @@ msgstr ""
 "``Editor`` e, nessa página, escolha seu editor externo de sua preferência."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
+#, fuzzy
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
-msgstr ""
+msgstr "Se você está usando Visual Studio Code,"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
 msgid "Creating a C# script"
@@ -379,10 +388,13 @@ msgstr ""
 "suportado"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
+#, fuzzy
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr ""
+"Atualmente o estado não é salvo e restaurado durante o \"hot-reloading\", "
+"com exceção das variáveis exportadas."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
 #, fuzzy
@@ -404,6 +416,8 @@ msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
+"Os scripts C # anexados devem se referir a uma classe que tenha um nome de "
+"classe que corresponda ao nome do arquivo."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
 msgid "Performance of C# in Godot"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,7 +62,6 @@ msgstr ""
 "un coût."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:22
-#, fuzzy
 msgid ""
 "In 3D physics a similar situation happens. The best algorithms to handle "
 "large amounts of physics objects (such as SAP) are slow at insertion/removal "
@@ -90,7 +89,6 @@ msgstr ""
 "l'utilisation plus difficile."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:33
-#, fuzzy
 msgid ""
 "Godot is not an exception and, while it is designed to have backends "
 "swappable for different algorithms, the default ones (or more like, the only "
@@ -100,7 +98,7 @@ msgstr ""
 "Godot n'est pas une exception et, bien qu'il soit conçu pour avoir des "
 "backends interchangeables pour différents algorithmes, ceux par défaut (ou "
 "plutôt les seuls qui sont là pour le moment) privilégient l'équilibre et la "
-"flexibilité sur la performance."
+"flexibilité par rapport à la performance."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:38
 msgid ""
@@ -127,7 +125,6 @@ msgid "Reuse shaders and materials"
 msgstr "Réutilisation des shaders et des matériaux"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:50
-#, fuzzy
 msgid ""
 "The Godot renderer is a little different to what is out there. It's designed "
 "to minimize GPU state changes as much as possible. :ref:"
@@ -140,7 +137,7 @@ msgstr ""
 "ref:`class_SpatialMaterial' fait un bon travail pour réutiliser les "
 "matériaux qui nécessitent des shaders similaires mais, si des shaders "
 "personnalisés sont utilisés, assurez-vous de les réutiliser autant que "
-"possible. Les priorités de Godot seront comme ça :"
+"possible. Les priorités de Godot seront comme cela :"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:57
 msgid ""
@@ -155,7 +152,6 @@ msgstr ""
 "matériaux ou dans le pire des cas, utilisez des atlas."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:61
-#, fuzzy
 msgid ""
 "**Reusing Shaders**: If materials can't be reused, at least try to re-use "
 "shaders (or SpatialMaterials with different parameters but the same "
@@ -198,16 +194,14 @@ msgstr ""
 "l'origine, les GPU ne rendaient que des triangles, donc tous les sommets :"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:80
-#, fuzzy
 msgid "Had to be transformed by the CPU (including clipping)."
-msgstr "Doivent être transformés par le CPU (y compris le clipping)."
+msgstr "A dû être transformé par le CPU (y compris le clipping)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:82
 msgid "Had to be sent to the GPU memory from the main RAM."
 msgstr "Doit être envoyé à la mémoire du GPU depuis la RAM principale."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:84
-#, fuzzy
 msgid ""
 "Nowadays, all this is handled inside the GPU, so the performance is "
 "extremely high. 3D artists usually have the wrong feeling about polycount "
@@ -238,7 +232,6 @@ msgstr ""
 "énergie."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:96
-#, fuzzy
 msgid ""
 "To be more efficient, mobile GPUs attempt to avoid *overdraw*. This means, "
 "the same pixel on the screen being rendered (as in, with lighting "
@@ -260,7 +253,6 @@ msgstr ""
 "les performances (mais cela augmente aussi la consommation d'énergie)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:106
-#, fuzzy
 msgid ""
 "On mobile, pulling more power is not an option, so a technique called \"Tile "
 "Based Rendering\" is used (almost every mobile hardware uses a variant of "
@@ -326,7 +318,6 @@ msgid "Morphs (shape keys)"
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:131
-#, fuzzy
 msgid "Vertex Lit Objects (common on mobile)"
 msgstr "Objets éclairés par les sommets (communs sur mobile)"
 
@@ -379,7 +370,6 @@ msgid "Transparent objects"
 msgstr "Objets transparents"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:154
-#, fuzzy
 msgid ""
 "As mentioned before, Godot sorts objects by material and shader to improve "
 "performance. This, however, can not be done on transparent objects. "
@@ -391,7 +381,7 @@ msgstr ""
 "Comme mentionné précédemment, Godot trie les objets par matériau et par "
 "shader pour améliorer les performances. Toutefois, cela ne peut pas être "
 "fait sur des objets transparents. Les objets transparents sont rendus de "
-"l'arrière vers l'avant pour se fondre avec ce qui se trouve derrièrel. Par "
+"l'arrière vers l'avant pour se fondre avec ce qui se trouve derrière. Par "
 "conséquent, essayez de réduire au minimum les objets transparents ! Si un "
 "objet a une petite section avec transparence, essayez de faire de cette "
 "section un matériau séparé."
@@ -450,10 +440,9 @@ msgstr ""
 "rebonds de lumière indirecte."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:188
-#, fuzzy
 msgid ""
 "If working on mobile, baking to texture is recommended, since this method is "
 "even faster."
 msgstr ""
-"Si vous travaillez sur mobile, il est recommandé de préparer  jusqu'à la "
-"texture, car cette méthode est encore plus rapide."
+"Si vous travaillez sur mobile, il est recommandé de préparer la texture, car "
+"cette méthode est encore plus rapide."
