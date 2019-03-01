@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,74 +57,74 @@ msgid "This workflow makes use of blender nla_tracks. Here is a brief guide on h
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
-msgid "**1. Switch workspace to 'Dope Sheet'**"
+msgid "**1. Stash active action**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:23
-msgid "**2. Stash the active action**"
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
+msgid "New created action is always an active action binded to object. There are several ways to place an active action into NLA track, one is of course doing it in ``NLA Editor``"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:25
-msgid "The stashed action, while not active, will still be exported."
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
+msgid "Or it can be done stashing the action in ``Dope Sheet``"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:29
-msgid "**3. Check stashed actions in 'NLA Editor' [optional]**"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:31
-msgid "Switch workspace to 'NLA Editor'."
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
+msgid "**2. Check mute status of NLA tracks**"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
-msgid "Make sure all stashed actions are muted."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
-msgid "**4. Export the scene**"
+msgid "An NLA track can be ``mute`` or ``unmute``, the exporter will export all the ``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA tracks into every action (including the action action) being exported."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
-msgid "All the stashed actions, as well as the active action, are exported to an AnimationPlayer."
+msgid "**3. Export the scene**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:48
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
+msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
+msgid "Then all the stashed actions, as well as the active action, are exported to an AnimationPlayer."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
 msgid "Constraints"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:49
-msgid "Sometimes complicated animation is built with object constraint; a usual example is inverse kinematics. The add-on would automatically check if an object has some constraint; if it does, all the constraints are baked into every action the object has and then exported."
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
+msgid "Sometimes complicated animation is built with object constraint; a usual example is inverse kinematics. The add-on would automatically check if an object has some constraint; if it does, all the constraints are baked into actions and then exported along with the object."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:56
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
 msgid "Animation Mode"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:57
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:63
 msgid "Godot and Blender have different structure to store animation data. In Godot animation data is stored in an AnimationPlayer node, instead of in each animated node. In order to fix this inconsistence and still make the animation play versatile, this add-on has three animation exporting modes."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:64
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Animation as Actions'**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:66
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid "Treat all the animations as object actions, so in the exported scene, every object would have its own AnimationPlayer and hold its actions."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Scene Animation'**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid "If you want your animation to generate the same result as playing at Blender's timeline, this is what you want. In this mode, all the animations in the scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:82
 msgid "**Mode 'Animation as Action with Squash'**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
 msgid "This mode has very similar behaviour of mode 'Animation as Action', but it can generate fewer AnimationPlayers; objects in parent-children relationship would share their AnimationPlayer. It is useful when you have several rigs, and each Skeleton and Mesh has actions; then one rig would have just one AnimationPlayer."
 msgstr ""
 

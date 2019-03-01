@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -276,87 +276,87 @@ msgstr ""
 msgid "\"Why not use Node for tree structures?\" one might ask. Well, the Node class contains things that won't be relevant to one's custom data structure. As such, it can be helpful to construct one's own node type when building tree structures."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:267
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:270
 msgid "From here, one can then create their own structures with specific features, limited only by their imagination."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:271
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:274
 msgid "Enumerations: int vs. string"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:273
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
 msgid "Most languages offer an enumeration type option. GDScript is no different, but unlike most other languages, it allows one to use either integers or strings for the enum values. The question then arises, \"which should one use?\""
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:278
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:281
 msgid "The short answer is, \"whichever you are more comfortable with.\" This is a feature specific to GDScript and not Godot scripting in general; The languages prioritizes usability over performance."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:282
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:285
 msgid "On a technical level, integer comparisons (constant-time) will happen faster than string comparisons (linear-time). If one wants to keep up other languages' conventions though, then one should use integers."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:286
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:289
 msgid "The primary issue with using integers comes up when one wants to *print* an enum value. As integers, attempting to print MY_ENUM will print ``5`` or what-have-you, rather than something like ``\"MyEnum\"``. To print an integer enum, one would have to write a Dictionary that maps the corresponding string value for each enum."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:292
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:295
 msgid "If the primary purpose of using an enum is for printing values and one wishes to group them together as related concepts, then it makes sense to use them as strings. That way, a separate data structure to execute on the printing is unnecessary."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:298
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:301
 msgid "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:300
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
 msgid "Under what circumstances should one use each of Godot's animation classes? The answer may not be immediately clear to new Godot users."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:306
 msgid ":ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that the engine draws as an animated loop rather than a static image. Users can manipulate..."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:307
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:310
 msgid "the rate at which it moves across each section of the texture (fps)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:309
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
 msgid "the number of regions contained within the texture (frames)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:311
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
 msgid "Godot's :ref:`VisualServer <class_VisualServer>` then draws the regions in sequence at the prescribed rate. The good news is that this involves no extra logic on the part of the engine. The bad news is that users have very little control."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:316
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:319
 msgid "Also note that AnimatedTexture is a :ref:`Resource <class_Resource>` unlike the other :ref:`Node <class_Node>` objects discussed here. One might create a :ref:`Sprite <class_Sprite>` node that uses AnimatedTexture as its texture. Or (something the others can't do) one could add AnimatedTextures as tiles in a :ref:`TileSet <class_TileSet>` and integrate it with a :ref:`TileMap <class_TileMap>` for many auto-animating backgrounds that all render in a single batched draw call."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:324
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:327
 msgid "The AnimatedSprite node, in combination with the :ref:`SpriteFrames <class_SpriteFrames>` resource, allows one to create a variety of animation sequences through spritesheets, flip between animations, and control their speed, regional offset, and orientation. This makes them well-suited to controlling 2D frame-based animations."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:330
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:333
 msgid "If one needs trigger other effects in relation to animation changes (for example, create particle effects, call functions, or manipulate other peripheral elements besides the frame-based animation), then will need to use an :ref:`AnimationPlayer <class_AnimationPlayer>` node in conjunction with the AnimatedSprite."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:336
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
 msgid "AnimationPlayers are also the tool one will need to use if they wish to design more complex 2D animation systems, such as..."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:342
 msgid "**Cut-Out animations:** editing sprites' transforms at runtime."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:341
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
 msgid "**2D Mesh animations:** defining a region for the sprite's texture and rigging a skeleton to it. Then one animates the bones which stretch and bend the texture in proportion to the bones' relationships to each other."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:346
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:349
 msgid "A mix of the above."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:348
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
 msgid "While one needs an AnimationPlayer to design each of the individual animation sequences for a game, it can also be useful to combine animations for blending, i.e. enabling smooth transitions between these animations. There may also be a hierarchical structure between animations that one plans out for their object. These are the cases where the :ref:`AnimationTree <class_AnimationTree>` shines. One can find an in-depth guide on using the AnimationTree :ref:`here <doc_animation_tree>`."
 msgstr ""
 

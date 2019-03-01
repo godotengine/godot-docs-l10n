@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 09:48+0100\n"
+"POT-Creation-Date: 2019-03-01 14:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "SCons (you can get it from macports, you should be able to run ``scons`` 
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:13
-msgid "Xcode with the iOS SDK and the command line tools."
+msgid "Xcode 10.0 (or later) with the iOS (10.0) SDK and the command line tools."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:15
@@ -61,18 +61,26 @@ msgid "for a Simulator executable."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:44
-msgid "Additionally since some time Apple requires 64 bit version of application binary when you are uploading to iStore. The best way to provide these is to create a bundle in which there are both 32bit and 64 binaries, so every device will be able to run the game. It can be done in three steps, first compile 32 bit version, then compile 64 bit version and then use ``lipo`` to bundle them into one fat binary, all those steps can be performed with following commands:"
+msgid "For recent devices, Apple requires 64-bit versions of application binaries when you are uploading to the Apple Store. The best way to provide these is to create a bundle in which there are both 32-bit and 64-bit binaries, so every device will be able to run the game."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_ios.rst:47
+msgid "It can be done in three steps: first compile the 32-bit version, then compile the 64-bit version and then use ``lipo`` to bundle them into one \"universal\" binary. All those steps can be performed with following commands:"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:56
+msgid "If you also want to provide a simulator build (reduces the chance of any linker errors with dependencies), you'll need to build and lipo the ``x86_64`` architecture as well."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_ios.rst:66
 msgid "Run"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:58
+#: ../../docs/development/compiling/compiling_for_ios.rst:68
 msgid "To run on a device or simulator, follow these instructions: :ref:`doc_exporting_for_ios`."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:61
+#: ../../docs/development/compiling/compiling_for_ios.rst:71
 msgid "Replace or add your executable to the Xcode project, and change the \"executable name\" property on Info.plist accordingly if you use an alternative build."
 msgstr ""
 
