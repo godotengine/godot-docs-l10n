@@ -4,10 +4,12 @@
 #
 # Aleksey Terentyev <terentjew.alexey@ya.ru>, 2018.
 # Alex Afterlife <main-site-maker@yandex.ru>, 2018-2019.
+# Alexander <loginrus@mail.ru>, 2019.
 # Alexander Danilov <modos189@protonmail.com>, 2019.
 # Alexander Pushkar <alexanderpushkar86@gmail.com>, 2018.
 # Alexandr Eremeev <ae125529@gmail.com>, 2019.
 # Alex <snimalovo@gmail.com>, 2018.
+# Allan Nordhøy <epost@anotheragency.no>, 2019.
 # Anatolich <rva.moscow@gmail.com>, 2018.
 # Andrii Doroshenko <xrayez@gmail.com>, 2018.
 # Anton Ivanov <sylaralastr@gmail.com>, 2018.
@@ -60,6 +62,7 @@
 # Аркадий Авас <savvot@gmail.com>, 2018.
 # Аслан Снупов <aslan170505@gmail.com>, 2018.
 # Влад Афонин (Midnightcoder) <afonin.com123@gmail.com>, 2018.
+# Дарисон ДиДжей Младший <xd02-02@mail.ru>, 2019.
 # Дмитрий Ефимов <daefimov@gmail.com>, 2018.
 # Егор Бураков <fend.q@mail.ru>, 2018.
 # Егор Рябуха (REgorion) <ryrgor@gmail.com>, 2018.
@@ -70,14 +73,15 @@
 # Озвучивает R2 <magabumbum@gmail.com>, 2018.
 # Олег Бених <xlegioner@gmail.com>, 2019.
 # Семён Рассохин <forzcross@gmail.com>, 2018.
+# Сергей <anaxronik@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-02-18 09:48+0100\n"
-"PO-Revision-Date: 2019-02-13 05:10+0000\n"
-"Last-Translator: Chaosus89 <chaosus89@gmail.com>\n"
+"PO-Revision-Date: 2019-03-01 12:06+0000\n"
+"Last-Translator: Александр <sashnos98@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -3255,7 +3259,6 @@ msgid "Notifications"
 msgstr "Уведомления"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
-#, fuzzy
 msgid ""
 "Godot has a system of notifications. These are usually not needed for "
 "scripting, as it's too low-level and virtual functions are provided for most "
@@ -3264,7 +3267,7 @@ msgid ""
 "your script:"
 msgstr ""
 "Godot имеет систему уведомлений. Они, как правило, не нужны для сценариев, "
-"так как это слишком низкоуровневые и для большинства из них есть виртуальные "
+"так как они слишком низкоуровневые и для большинства из них есть виртуальные "
 "функции. Просто приятно знать, что они существуют. Например, можно добавить :"
 "ref:`Object._notification() <class_Object_method__notification>` в вашем "
 "сценарии:"
@@ -3975,15 +3978,15 @@ msgid ""
 "``<SpriteFrames>``, then click \"Open Editor\" to open the \"SpriteFrames\" "
 "panel:"
 msgstr ""
-"Нажмите на узел ``Player`` и добавьте ему дочерний узел :ref:`AnimatedSprite "
-"<class_AnimatedSprite>`. ``AnimatedSprite`` будет обрабатывать внешний вид и "
-"анимацию для нашего игрока. Обратите внимание, что рядом с узлом есть "
-"предупреждающий символ. Для ``AnimatedSprite`` нужен ресурс :ref:"
-"`SpriteFrames <class_SpriteFrames>`, который представляет собой список "
-"анимаций, которые он может отображать. Чтобы создать его, найдите свойство "
-"``Frames`` в инспекторе и нажмите \"<null>\" -> \"Новый SpriteFrames\". "
-"Затем, в том же месте, нажмите ``<SpriteFrames>``, чтобы открыть панель "
-"\"SpriteFrames\":"
+"Нажмите на вкладке '' игрок '' и добавить: ref: «AnimatedSprite "
+"<class_AnimatedSprite>» узел в детстве. '' AnimatedSprite'' будет "
+"обрабатывать внешний вид и анимации для наших игроков. Обратите внимание, "
+"что символ предупреждения рядом с узлом. '' AnimatedSprite'' требует: ref: "
+"«SpriteFrames <class_SpriteFrames>» ресурс, который представляет собой "
+"список может отображать анимацию. Чтобы создать один, найдите свойство '' "
+"рамы '' в окне инспектора и нажмите «[Очистить]»-> «Новых SpriteFrames». "
+"Далее в том же месте, нажмите кнопку '' <SpriteFrames>'', а затем нажмите "
+"кнопку «Открыть редактор», чтобы открыть панель «SpriteFrames»:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:111
 msgid ""
@@ -14884,6 +14887,9 @@ msgid ""
 "built-in signals of nodes such as :ref:`class_Button` or :ref:"
 "`class_RigidBody`."
 msgstr ""
+"Эти сигналы могут быть связаны с методами способом, схожим с тем, который вы "
+"используете для соединения с встроенными сигналами узлов, таких как :ref:"
+"`class_Button` или :ref:`class_RigidBody`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
 msgid ""
@@ -14914,11 +14920,16 @@ msgid ""
 "<class_Object_method_emit_signal>` method which broadcasts the signal and "
 "arguments."
 msgstr ""
+"Сигналы генерируются с помощью метода :ref:`Object.emit_signal() "
+"<class_Object_method_emit_signal>`, который способен рассылать сигнал и "
+"аргументы."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1537
 msgid ""
 "Extending a previous example to use all the features of GDScript signals:"
 msgstr ""
+"Дополнение предыдущего примера использованием всех особенностей сигналов "
+"GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1569
 #, fuzzy
@@ -15257,7 +15268,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:203
 msgid "And in GDScript:"
-msgstr "И в GDScript:\n"
+msgstr "И в GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:212
 msgid ""
@@ -57246,7 +57257,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:4
 msgid "VR starter tutorial"
-msgstr ""
+msgstr "Гайд для начинающих в ВР"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:11
 msgid ""
@@ -57254,6 +57265,9 @@ msgid ""
 "intent of this tutorial is to give you an idea on how to make VR games in "
 "Godot."
 msgstr ""
+"Эта серия уроков покажет вам, как сделать простую VR-игру / проект. Цель "
+"этого урока - дать вам представление о том, как создавать виртуальные игры в "
+"Godot."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:14
 msgid ""
@@ -57262,12 +57276,17 @@ msgid ""
 "iterations to get this right, but there are a few things you can do to make "
 "it easier:"
 msgstr ""
+"Имейте в виду, одна из самых важных вещей при создании VR-контента - это "
+"правильная шкала измерений! Для этого может понадобиться много практики и "
+"правок, но есть несколько вещей, которые вам помогут:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:17
 msgid ""
 "In VR, 1 unit is often considered 1 meter. If you design your assets around "
 "that standard, you can save yourself a lot of headache."
 msgstr ""
+"В VR 1 единица измерения часто считается 1 метром. Старайтесь разрабатывать "
+"свои проекты в соответствии с этим стандартом."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:18
 msgid ""
@@ -57275,22 +57294,29 @@ msgid ""
 "world distances. In Blender, you can use the MeasureIt add-on; in Maya, you "
 "can use the Measure Tool."
 msgstr ""
+"В вашей программе 3D-моделирования посмотрите, есть ли способ использования "
+"единиц измерения расстояний реального мира. В Blender вы можете использовать "
+"дополнение MeasureIt; в Maya вы можете использовать инструмент Measure."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:19
 msgid ""
 "You can make rough models using a tool like `Google Blocks <https://vr."
 "google.com/blocks/>`_, and then refine in another 3D modelling program."
 msgstr ""
+"Вы можете создавать грубые модели, используя такой инструмент, как Google "
+"Blocks, а затем улучшать их в другой программе 3D-моделирования."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:20
 msgid ""
 "Test often, as the assets can look dramatically different in VR than on a "
 "flat screen!"
 msgstr ""
+"Тестируйте часто, так как ресурсы могут выглядеть значительно иначе в VR, "
+"чем на плоском экране!"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:22
 msgid "Throughout the course of this tutorial, we will cover:"
-msgstr ""
+msgstr "На протяжении всего курса мы рассмотрим:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:24
 msgid "How to tell Godot to run in VR."

@@ -26,7 +26,7 @@
 # kirk_king <kirk_kpt@163.com>, 2018.
 # MrNewWorld <xcc1997@gmail.com>, 2018.
 # neko mtclaw <mitsuclaws@gmail.com>, 2018.
-# Oberon Zheng <360119124@qq.com>, 2018.
+# Oberon Zheng <360119124@qq.com>, 2018-2019.
 # plumsky <x-wolf@163.com>, 2018.
 # pokemonchw <admin@byayoi.org>, 2018.
 # py_co <py_co@outlook.com>, 2018.
@@ -59,8 +59,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-02-18 09:48+0100\n"
-"PO-Revision-Date: 2019-02-18 08:22+0000\n"
-"Last-Translator: yzt <834950797@qq.com>\n"
+"PO-Revision-Date: 2019-03-01 12:05+0000\n"
+"Last-Translator: Oberon Zheng <360119124@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -3409,7 +3409,6 @@ msgstr ""
 "`doc_scenes_and_nodes` ，那么赶紧看看，以了解如何设置项目并使用编辑器。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
-#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
@@ -16152,6 +16151,9 @@ msgid ""
 "Mono installation for NuGet and MSBuild which are required to use C# in "
 "Godot."
 msgstr ""
+"下载并安装最新版本的 `Mono SDK <http://www.mono-project.com/download/>`_ 。对"
+"于Godot 3.1 beta 3，下载的哪个版本都无所谓，因为Godot自身就捆绑了Mono 5.18的"
+"安装。我们只需要为NuGet和MSBuild安装Mono就可以，那正是Godot中C#需要的。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
 #, fuzzy
@@ -16216,6 +16218,9 @@ msgid ""
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
+"如果你在使用Visual Studio Code，请确保下载了 `C# 插件 <https://marketplace."
+"visualstudio.com/items?itemName=ms-vscode.csharp>`_ 以启用诸如IntelliSense和"
+"语法高亮的特性。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
 msgid "Creating a C# script"
@@ -16393,7 +16398,7 @@ msgstr "目前尚不支持在C#中编写编辑器插件和工具脚本"
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
-msgstr ""
+msgstr "在热重装中，当前状态不会得到保存并且会被恢复，除了已经导出的变量之外。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
 #, fuzzy
@@ -16413,7 +16418,7 @@ msgstr ""
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
-msgstr ""
+msgstr "附加C#脚本需要引用一个类，该类名需要匹配其文件名。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
 msgid "Performance of C# in Godot"
@@ -21623,6 +21628,8 @@ msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
 msgstr ""
+"GDScript中的多行字符串由三双引号 ``\"\"\"`` 包围，如同上文中的 "
+"``my_func3()`` 那样，有助于保证JavaScript代码的可读性。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:223
 msgid ""
@@ -21850,6 +21857,9 @@ msgid ""
 "outlining the best practices should help users feel less confused as they "
 "further explore Godot's depth."
 msgstr ""
+"本教程系列旨在讲解Godot预期的工作流程，换言之，就是定义一个游戏API的“最佳实"
+"践”。Godot允许我们设计项目代码和场景结构时注入大量的灵活性。每个方法都有其自"
+"身的优势和缺点，因此概述最佳实践有助于用户在未来探索Godot的道路上消解困惑。"
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:13
 msgid ""
@@ -21861,6 +21871,10 @@ msgid ""
 "advantages and disadvantages of each option, and then highlights the best "
 "course of action depending on the circumstances."
 msgstr ""
+"本系列也意在帮助用户考虑如何以最好的方式去解读这种实践。我们无法给出一个人在"
+"任意一种项目设计决策中的普适性概览，正因如此，每一篇文章会把问题分解成它们自"
+"身提出的多个基本问题，并建议其可行的解决方案，分析各种选择的利弊，并之后依实"
+"际情况强调采取最佳策略。"
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:21
 msgid ""

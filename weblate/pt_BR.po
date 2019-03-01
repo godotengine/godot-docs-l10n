@@ -19,7 +19,7 @@
 # Cochise César <cochisecesar@gmail.com>, 2018.
 # Danilo Castro <danilo.moreira94@gmail.com>, 2018.
 # Diego Schmidt <diegophh@gmail.com>, 2018.
-# Dimenicius <vinicius.costa.92@gmail.com>, 2018.
+# Dimenicius <vinicius.costa.92@gmail.com>, 2018-2019.
 # Douglas Fiedler <dognew@gmail.com>, 2018.
 # douglas neumeister <douglas.neumeister@gmail.com>, 2019.
 # Eduardo Abreu <eduo.abreu@gmail.com>, 2018-2019.
@@ -63,6 +63,7 @@
 # Mosca Morta <ewersonffranco@gmail.com>, 2018.
 # Paulo Sergio Nogueira da Silva <paulozero357@gmail.com>, 2018.
 # Pedro Silva <pedrosgregorio9@gmail.com>, 2018.
+# Raphael Nogueira Campos <raphaelncampos@gmail.com>, 2019.
 # Renato Lacerda <renato.ac.lacerda@gmail.com>, 2018.
 # Renne Sampaio <rennesampaio97@gmail.com>, 2018-2019.
 # Ricardo Héber R. L. Tenório <ricardo.heber@gmail.com>, 2019.
@@ -75,17 +76,19 @@
 # Thiago R. Silvestrini <thiagorossi.s@gmail.com>, 2018.
 # Tiago Almeida <thyagoeap@gmail.com>, 2019.
 # Tiago A. Reul <tiago@reul.space>, 2018.
+# Vinicius Silva da Cruz <lordehenry@gmail.com>, 2019.
 # Vito Chiarella <vitochiarella@gmail.com>, 2018.
 # Walrus Bane <Walrusbane524@gmail.com>, 2018.
 # Walter Bolitto <wrcarval@live.com>, 2018.
+# Wesley <wsplay357@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-02-18 09:48+0100\n"
-"PO-Revision-Date: 2019-02-10 12:39+0000\n"
-"Last-Translator: Julio Yagami <juliohenrique31501234@hotmail.com>\n"
+"PO-Revision-Date: 2019-03-01 12:06+0000\n"
+"Last-Translator: Dimenicius <vinicius.costa.92@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -181,7 +184,7 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
-"Engine Godot é um projeto de código aberto desenvolvido por uma comunidade "
+"Godot Engine é um projeto de código aberto desenvolvido por uma comunidade "
 "de voluntários. O time de documentação sempre pode ouvir seu retorno para "
 "ajudar a melhorar os tutoriais e as referências de classes. Se você não "
 "entendeu algo, ou não conseguiu encontrar o que procurava na documentação, "
@@ -327,7 +330,7 @@ msgid ""
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"O objetivo dessa página é fornecer uma ampla apresentação do motor e do "
+"O objetivo dessa página é fornecer uma ampla apresentação da engine e do "
 "conteúdo desta documentação, para que você saiba por onde começar se for um "
 "iniciante, ou onde procurar se precisar de informações sobre uma "
 "funcionalidade específica."
@@ -616,7 +619,7 @@ msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"Além disso, veja `a página Licença no site de Godot <https://godotengine.org/"
+"Veja também a página da Licença no site de Godot <https://godotengine.org/"
 "license>`_."
 
 #: ../../docs/about/faq.rst:31
@@ -832,13 +835,15 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"A resposta curta é que nós pensamos que complexidade adicional tanto no seu "
-"lado (ao aprender Godot e GDScript pela primeira vez) quanto no nosso "
-"(manutenção) vale a pena pela experiência mais integrada e homogênea ao "
-"invés de atrair mais usuários com linguagens de programação familiares que "
-"resultam em uma experiência inferior. Nós entendemos se você preferir usar "
-"outra linguagem no Godot (veja acima a lista de opções suportadas), mas nós "
-"encorajamos fortemente que você tente e veja os benefícios por si mesmo."
+"Já que Godot é um projeto de código aberto, foi imperativo desde o começo "
+"priorizar uma experiência mais integrada ao invés de atrair usuários "
+"adicionais suportando linguagens de programação mais familiares--"
+"especialmente quando suportar essas linguagens mais familiares resultaria em "
+"uma experiência pior. Nós entendemos se você prefere usar alguma outra "
+"linguagem no Godot (Veja a lista de opções suportadas acima). Com isso dito, "
+"se você não tentou usar o GDScript, experimente por **três dias**. Assim "
+"como Godot, uma vez que você vê o quão poderoso e rápido seu desenvolvimento "
+"se torna, nos achamos que o GDScript irá crescer em você."
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -885,7 +890,7 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
-"Algumas linguagens existentes têm interfaces horríveis para bindings ao C++, "
+"Muitas linguagens existentes têm interfaces terríveis entre si e o C++, "
 "resultando em uma grande quantidade de código, bugs, gargalos e ineficiência "
 "em geral (Lua, Python, Squirrel, JS e etc). Nós queríamos focar em uma "
 "engine incrível, e não em uma incrível quantidade de integrações."
@@ -3862,7 +3867,6 @@ msgid "Organizing the project"
 msgstr "Organizando o projeto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
-#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -3871,12 +3875,12 @@ msgid ""
 "and scripts in the project's root folder, referred to as ``res://``.  You "
 "can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
-"Neste projeto, vamos criar três cenas independentes: ``Jogador``, ``Turba`` "
-"e ``HUD``, que combinaremos na cena ``Principal`` do jogo. Em um projeto "
-"maior, pode ser útil criar pastas para armazenar as várias cenas e seus "
-"roteiros, mas para este jogo relativamente pequeno, você pode salvar tudo na "
-"pasta raiz, referenciada como ``res://``. Você pode ver as pastas do seu "
-"projeto no painel Arquivos no canto superior esquerdo:"
+"Neste projeto, vamos criar três cenas independentes: ``Jogador``, "
+"``Inimigo`` e ``HUD``, que combinaremos na cena ``Principal`` do jogo. Em um "
+"projeto maior, pode ser útil criar pastas para armazenar as várias cenas e "
+"seus roteiros, mas para este jogo relativamente pequeno, você pode salvar "
+"tudo na pasta raiz, referenciada como ``res://``. Você pode ver as pastas do "
+"seu projeto no painel Arquivos no canto inferior esquerdo:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
@@ -3986,8 +3990,8 @@ msgstr ""
 "do tipo :ref:`SpriteFrames <class_SpriteFrames>` (quadros de sprite), que é "
 "uma lista das animações que ele pode mostrar. Para criar um, encontre a "
 "propriedade ``Frames`` no Inspetor e clique em \"<null>\" -> \"Novo "
-"SpriteFrames\". Em seguida, no mesmo local, clique em ``<SpriteFrames>`` "
-"para abrir o painel \"SpriteFrames\":"
+"SpriteFrames\". Em seguida, no mesmo local, clique em ``<SpriteFrames>``, "
+"para abrir o painel \"Animações\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:111
 msgid ""
@@ -4016,7 +4020,6 @@ msgstr ""
 "no Inspetor na seção ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:125
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -4025,9 +4028,9 @@ msgid ""
 "\"New CapsuleShape2D\".  Using the two size handles, resize the shape to "
 "cover the sprite:"
 msgstr ""
-"Finalmente, adicione uma :ref:`CollisionShape2D <class_CollisionShape2D>` "
-"(forma de colisão 2D) como filha de ``Jogador``. Isso determina a \"caixa de "
-"pancada\" do jogador, ou seja, os limites da sua área de colisão. Para este "
+"Finalmente, adicione um :ref:`CollisionShape2D <class_CollisionShape2D>` "
+"(forma de colisão 2D) como filho de ``Jogador``. Isso determina a \"caixa de "
+"acerto\" do jogador, ou seja, os limites da sua área de colisão. Para este "
 "personagem, um nó ``CapsuleShape2D`` (forma cápsula 2D) é o que melhor se "
 "encaixa. Então, ao lado de \"Shape\" (forma) no Inspetor, clique em  \"<null>"
 "\" -> \"Novo CapsuleShape2D\". Utilizando os dois manipuladores, "
@@ -4143,7 +4146,6 @@ msgid "Play the appropriate animation."
 msgstr "Reprodução da animação apropriada."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:219
-#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -4236,7 +4238,6 @@ msgstr ""
 "play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:312
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position "
 "and use ``clamp()`` to prevent it from leaving the screen by adding the "
@@ -4307,7 +4308,6 @@ msgstr ""
 "acima:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:399
-#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
@@ -4613,7 +4613,6 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr "Veja :ref:`doc_instancing` para aprender mais sobre instanciação."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:642
-#, fuzzy
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
@@ -4742,18 +4741,16 @@ msgstr ""
 "posição e uma direção aleatória ao longo do caminho."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:690
-#, fuzzy
 msgid "Main script"
 msgstr "Script principal"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:692
-#, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
-"Adicione um roteiro a ``Principal``. No começo do roteiro, nós usamos "
-"``export (PackedScene)`` para nos permitir escolher a cena Turba que "
+"Adicione um roteiro a ``Principal``. No começo do script, nós usamos "
+"``export (PackedScene)`` para permitir-nos escolher a cena Inimigo que "
 "queremos instanciar."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:732
@@ -4788,10 +4785,10 @@ msgid ""
 "``StartTimer`` will start the other two timers. ``ScoreTimer`` will "
 "increment the score by 1."
 msgstr ""
-"Agora, conecte o sinal ``timeout()`` (tempo esgotado) para cada um dos nós "
-"de Timer (``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` "
-"irá iniciar os outros dois temporizadores. ``ScoreTimer`` irá incrementar a "
-"pontuação de 1 em 1."
+"Agora, conecte o sinal ``timeout()`` (tempo esgotado) de cada um dos nós de "
+"Timer (``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``) para o script "
+"principal. ``StartTimer`` irá iniciar os outros dois temporizadores. "
+"``ScoreTimer`` irá incrementar a pontuação  em 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:799
 #, fuzzy
@@ -4801,8 +4798,8 @@ msgid ""
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
-"Em ``_on_MobTimer_timeout()``, vamos criar uma instância da turba, pegar um "
-"local de início aleatório ao longo do ``Path2D``, e pôr a turba em "
+"Em ``_on_MobTimer_timeout()``, vamos criar uma instância de inimigo, pegar "
+"um local de início aleatório ao longo do ``Path2D``, e pôr o mob em "
 "movimento. O nó ``PathFollow2D`` irá rotacionar automaticamente à medida em "
 "que ele segue o caminho, então usaremos isso para escolher a direção do "
 "inimigo, bem como sua posição."
@@ -10404,8 +10401,11 @@ msgid ""
 "`Resource <class_Resource>` features:"
 msgstr ""
 "Isto apresenta várias vantagens distintas sobre estruturas de dados "
-"alternativas como JSON, CSV ou arquivos TXT customizados. Os usuários podem "
-"importar estes assets como um "
+"alternativas como JSON, CSV ou arquivos TXT customizados. Os usuários só "
+"podem importar estes assets como um :ref:`Dictionary <class_Dictionary>` "
+"(JSON) ou como um :ref:`File <class_File>`. O que diferencia os recursos são "
+"suas características de herança de :ref:`Object <class_Object>`, :ref:"
+"`Reference <class_Reference>` e :ref:`Resource <class_Resource>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
 #, fuzzy
@@ -14955,22 +14955,34 @@ msgid ""
 "objects can listen to in a generic way. Create custom signals for a class "
 "using the ``signal`` keyword."
 msgstr ""
+"Sinais são um modo de enviar mensagens de notificação de um objeto para que "
+"outros objetos possam o ouvir de forma genérica. Crie sinais customizados "
+"para uma classe usando a palavra-chave ``signal``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
+#, fuzzy
 msgid ""
 "These signals may be connected to methods in the same manner as you connect "
 "built-in signals of nodes such as :ref:`class_Button` or :ref:"
 "`class_RigidBody`."
 msgstr ""
+"Esses sinais podem ser conectados aos métodos da mesma forma com que você "
+"conecta sinais embutidos de nós como :ref:`class_Button` ou :ref:"
+"`class_RigidBody`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
+#, fuzzy
 msgid ""
 "Here's an example that creates a custom signal in one script and connects "
 "the custom signal to a method in a separate script, using the :ref:`Object."
 "connect() <class_Object_method_connect>` method:"
 msgstr ""
+"Aqui está um exemplo que cria um sinal personalizado em um script e conecta "
+"o sinal ao método em um script separado,, using o método :ref:`Object."
+"connect() <class_Object_method_connect>`:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1513
+#, fuzzy
 msgid ""
 "GDScript can bind arguments to connections between a signal and a method. "
 "When the signal is emitted, calling the connected method, the bound argument "
@@ -14978,25 +14990,35 @@ msgid ""
 "rather than the signal or the method, meaning that each connection has "
 "unique bindings."
 msgstr ""
+"GDScript pode passar argumentos a conexões entre um sinal e um método. "
+"Quando o sinal é emitido, chamando o método conectado, o argumento é dado ao "
+"método. Esses argumentos são específicos"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1519
+#, fuzzy
 msgid ""
 "Here is an example that creates a connection between a button's ``pressed`` "
 "signal and a method, binding the button instance to the connection. The "
 "handler uses the bound argument to print which button instance was pressed."
-msgstr ""
+msgstr "Aqui está um exemplo que cria uma conexão entre um botão"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
+#, fuzzy
 msgid ""
 "Signals are generated by the :ref:`Object.emit_signal() "
 "<class_Object_method_emit_signal>` method which broadcasts the signal and "
 "arguments."
 msgstr ""
+"Sinais são gerados pelo método :ref:`Object.emit_signal() "
+"<class_Object_method_emit_signal>` que broadcasts o sinal e argumentos."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1537
+#, fuzzy
 msgid ""
 "Extending a previous example to use all the features of GDScript signals:"
 msgstr ""
+"Extendendo um exemplo anterior para usar todas as características dos sinais "
+"em GDScript."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1569
 msgid "Coroutines with yield"
@@ -18321,6 +18343,7 @@ msgid "Setting up C# for Godot"
 msgstr "Configuração do C# para Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:41
+#, fuzzy
 msgid ""
 "Download and install the latest version of `Visual Studio <https://"
 "visualstudio.microsoft.com/downloads/>`_ (*not* Visual Studio Code), which "
@@ -18329,12 +18352,17 @@ msgid ""
 "<https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?"
 "sku=BuildTools&rel=15>`_ instead."
 msgstr ""
+"Baixe e instale a última versão do `Visual Studio <https://visualstudio."
+"microsoft.com/downloads/>`_ (*não* o Visual Studio Code), que contém "
+"utilidades requeridas para se usar C# em Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:50
+#, fuzzy
 msgid "macOS and Linux"
-msgstr ""
+msgstr "macOS e Linux"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:52
+#, fuzzy
 msgid ""
 "Download and install the latest version of the `Mono SDK <http://www.mono-"
 "project.com/download/>`_. As of Godot 3.1 beta 3, the version number doesn't "
@@ -18342,6 +18370,8 @@ msgid ""
 "Mono installation for NuGet and MSBuild which are required to use C# in "
 "Godot."
 msgstr ""
+"Baixe e instale a última versão do `Mono SDK <http://www.mono-project.com/"
+"download/>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
 #, fuzzy
@@ -18407,11 +18437,12 @@ msgstr ""
 "``Editor`` e, nessa página, escolha seu editor externo de sua preferência."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
+#, fuzzy
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
-msgstr ""
+msgstr "Se você está usando Visual Studio Code,"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
 msgid "Creating a C# script"
@@ -18608,10 +18639,13 @@ msgstr ""
 "suportado"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
+#, fuzzy
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr ""
+"Atualmente o estado não é salvo e restaurado durante o \"hot-reloading\", "
+"com exceção das variáveis exportadas."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
 #, fuzzy
@@ -18633,6 +18667,8 @@ msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
+"Os scripts C # anexados devem se referir a uma classe que tenha um nome de "
+"classe que corresponda ao nome do arquivo."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
 msgid "Performance of C# in Godot"
@@ -20490,33 +20526,35 @@ msgstr "**1. Mude o espaço de trabalho para 'Dope Sheet'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:23
 msgid "**2. Stash the active action**"
-msgstr ""
+msgstr "**2. Esconder a ação ativa**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:25
 msgid "The stashed action, while not active, will still be exported."
-msgstr ""
+msgstr "A ação oculta, enquanto desativada, ainda será exportada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:29
 msgid "**3. Check stashed actions in 'NLA Editor' [optional]**"
-msgstr ""
+msgstr "**3. Verificar as ações ocultas no 'NLA Editor' [opcional]**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:31
 msgid "Switch workspace to 'NLA Editor'."
-msgstr ""
+msgstr "Trocar área de trabalho para 'NLA Editor'."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid "Make sure all stashed actions are muted."
-msgstr ""
+msgstr "Assegure-se que todas ações ocultas estão silenciadas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
 msgid "**4. Export the scene**"
-msgstr ""
+msgstr "**4. Exporte a cena**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 msgid ""
 "All the stashed actions, as well as the active action, are exported to an "
 "AnimationPlayer."
 msgstr ""
+"Todas as ações ocultas, assim como as ações ativas, são exportadas para um "
+"AnimationPlayer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:48
 #, fuzzy
@@ -20530,6 +20568,10 @@ msgid ""
 "object has some constraint; if it does, all the constraints are baked into "
 "every action the object has and then exported."
 msgstr ""
+"Às vezes, a animação complicada é construída com restrição de objetos; Um "
+"exemplo usual é a cinemática inversa. O complemento verifica automaticamente "
+"se um objeto tem alguma restrição; se isso acontecer, todas as restrições "
+"serão inseridas em todas suas ações e depois exportadas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:56
 #, fuzzy
@@ -20550,7 +20592,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:64
 msgid "**Mode 'Animation as Actions'**"
-msgstr ""
+msgstr "**Modo 'Animação como Ações'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:66
 msgid ""
@@ -21039,7 +21081,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 #: ../../docs/tutorials/3d/spatial_material.rst:19
 msgid "Flags"
-msgstr ""
+msgstr "Bandeiras"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid ""
@@ -21067,7 +21109,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "Repeating can optionally be set to mirrored mode."
-msgstr ""
+msgstr "A repetição pode ser definida opcionalmente para o modo espelhado."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:98
 msgid "Filter"
