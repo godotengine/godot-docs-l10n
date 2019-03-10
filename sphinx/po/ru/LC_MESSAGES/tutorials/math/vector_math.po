@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,12 +122,10 @@ msgstr ""
 "относительное направление и магнитуду."
 
 #: ../../docs/tutorials/math/vector_math.rst:58
-#, fuzzy
 msgid "Vector operations"
-msgstr "Векторные Операции"
+msgstr "Операции над векторами"
 
 #: ../../docs/tutorials/math/vector_math.rst:60
-#, fuzzy
 msgid ""
 "You can use either method (x and y coordinates or angle and magnitude) to "
 "refer to a vector, but for convenience, programmers typically use the "
@@ -135,22 +133,21 @@ msgid ""
 "corner of the screen, so to place a 2D node named ``Node2D`` 400 pixels to "
 "the right and 300 pixels down, use the following code:"
 msgstr ""
-"Вы можете использовать оба метода (установка x и y координат или угла с "
-"магнитудой) для определения вектора, но обычно программисты используют "
-"установку координат. Для примера, в Godot начало координат это верхний-левый "
-"угол экрана, так что для помещения 2D ноды с названием ``Node2D`` на 400 "
-"пикселей вправо и 300 вниз, используйте следующий код:"
+"Вы можете любой из методов (установка x и y координат или угла с длиной) для "
+"определения вектора, но обычно программисты используют установку координат. "
+"Для примера, в Godot начало координат это верхний-левый угол экрана, так что "
+"для перемещения 2D ноды с именем ``Node2D`` на 400 пикселей вправо и 300 "
+"вниз, используйте следующий код:"
 
 #: ../../docs/tutorials/math/vector_math.rst:76
-#, fuzzy
 msgid ""
 "Godot supports both :ref:`Vector2 <class_Vector2>` and :ref:`Vector3 "
 "<class_Vector3>` for 2D and 3D usage, respectively. The same mathematical "
 "rules discussed in this article apply to both types."
 msgstr ""
-"Godot поддерживает :ref:`Vector2 <class_Vector2>` и :ref:`Vector3 "
-"<class_Vector3>` для 2D и 3D соответственно. Одинаковые математические "
-"правила, описанные в этой статье, применяются к обоим типам."
+"Godot поддерживает типы :ref:`Vector2 <class_Vector2>` и :ref:`Vector3 "
+"<class_Vector3>` для 2D и 3D соответственно. Математические правила, "
+"рассказанные в этой статье, применяются к обоим типам."
 
 #: ../../docs/tutorials/math/vector_math.rst:80
 msgid "Member access"
@@ -160,7 +157,7 @@ msgstr "Доступ к полям"
 msgid ""
 "The individual components of the vector can be accessed directly by name."
 msgstr ""
-"Индивидуальные компоненты вектора могут быть изменены напрямую по имени."
+"К отдельным компонентам вектора можно обращаться непосредственно по имени."
 
 #: ../../docs/tutorials/math/vector_math.rst:103
 msgid "Adding vectors"
@@ -171,8 +168,8 @@ msgid ""
 "When adding or subtracting two vectors, the corresponding components are "
 "added:"
 msgstr ""
-"Когда два вектора складываются или вычитаются, соответствующие компоненты "
-"добавляются:"
+"Когда два вектора складываются или вычитаются, складываются соответствующие "
+"компоненты :"
 
 #: ../../docs/tutorials/math/vector_math.rst:116
 msgid ""
@@ -453,7 +450,6 @@ msgid "Cross product"
 msgstr "Векторное произведение"
 
 #: ../../docs/tutorials/math/vector_math.rst:341
-#, fuzzy
 msgid ""
 "Like the dot product, the **cross product** is an operation on two vectors. "
 "However, the result of the cross product is a vector with a direction that "
@@ -462,10 +458,10 @@ msgid ""
 "vector."
 msgstr ""
 "Также как и скалярное произведение, **векторное произведение** это операция "
-"над двумя векторами. Хотя в результате векторного произведения вы получаете "
-"вектор с направлением перпендикулярным обоим. Его длина зависит от их "
-"относительного угла. Если два вектора параллельны, в результате вы получить "
-"нулевой вектор."
+"над двумя векторами. Но в результате векторного произведения вы получаете "
+"вектор с направлением перпендикулярным обоим исходным векторам. Его длина "
+"зависит от их относительного угла. Если два вектора параллельны, в "
+"результате вы получите нулевой вектор."
 
 #: ../../docs/tutorials/math/vector_math.rst:346
 msgid ""
@@ -492,9 +488,8 @@ msgstr ""
 "**противоположные** направления."
 
 #: ../../docs/tutorials/math/vector_math.rst:387
-#, fuzzy
 msgid "Calculating normals"
-msgstr "Вычисление Нормалей"
+msgstr "Расчитывание нормалей"
 
 #: ../../docs/tutorials/math/vector_math.rst:389
 msgid ""
@@ -514,12 +509,10 @@ msgid "Here is a function to calculate a triangle's normal:"
 msgstr "Здесь показана функция для вычисления нормали треугольника:"
 
 #: ../../docs/tutorials/math/vector_math.rst:418
-#, fuzzy
 msgid "Pointing to a target"
-msgstr "Направление на Цель"
+msgstr "Направление на цель"
 
 #: ../../docs/tutorials/math/vector_math.rst:420
-#, fuzzy
 msgid ""
 "In the dot product section above, we saw how it could be used to find the "
 "angle between two vectors. However, in 3D, this is not enough information. "
@@ -527,16 +520,16 @@ msgid ""
 "calculating the cross product of the current facing direction and the target "
 "direction. The resulting perpendicular vector is the axis of rotation."
 msgstr ""
-"В скалярном произведении выше, мы видим как оно может использоваться для "
-"нахождения угла между двумя векторами. Но для 3D этого недостаточно. Мы "
-"также должны знать вокруг какой оси нужно вращаться. Мы можем найти это "
-"вычисляя векторное произведение текущего направления взгляда и направлением "
-"цели. В результате мы получим перпендикулярный вектор оси вращения."
+"В скалярном произведении выше, мы видели как оно может использоваться для "
+"нахождения угла между двумя векторами. Однако для 3D этого недостаточно. Мы "
+"также должны знать вокруг какой оси нужно осуществлять вращение. Мы можем "
+"найти её выполняя векторное произведение текущего направления взгляда и "
+"направлением цели. В результате мы получим перпендикулярный вектор оси "
+"вращения."
 
 #: ../../docs/tutorials/math/vector_math.rst:428
-#, fuzzy
 msgid "More information"
-msgstr "Смотрите также"
+msgstr "Дополнительная информация"
 
 #: ../../docs/tutorials/math/vector_math.rst:430
 msgid ""

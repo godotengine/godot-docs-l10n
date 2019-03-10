@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,22 +19,24 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:4
 msgid "Core types"
-msgstr ""
+msgstr "Основные типы"
 
 #: ../../docs/development/cpp/core_types.rst:6
 msgid ""
 "Godot has a rich set of classes and templates that compose its core, and "
 "everything is built upon them."
 msgstr ""
+"Godot имеет богатый набор классов и шаблонов которые составляют его ядро, и "
+"все строится над ними."
 
 #: ../../docs/development/cpp/core_types.rst:9
 msgid ""
 "This reference will try to list them in order for their better understanding."
-msgstr ""
+msgstr "Эта справка попытается перечислить их для лучшего понимания."
 
 #: ../../docs/development/cpp/core_types.rst:13
 msgid "Definitions"
-msgstr ""
+msgstr "Определения"
 
 #: ../../docs/development/cpp/core_types.rst:15
 msgid ""
@@ -43,6 +45,9 @@ msgid ""
 "Reinventing the wheel for those is not fun, as it makes code more difficult "
 "to read."
 msgstr ""
+"Godot использует стандартные типы C98, такие как ``uint8_t``, ``uint32_t``, "
+"``int64_t``, итд. которые поддерживаются всеми компиляторами. Изобретение "
+"колеса для них не нужно, так как делает код более сложным для чтения."
 
 #: ../../docs/development/cpp/core_types.rst:20
 msgid ""
@@ -52,12 +57,19 @@ msgid ""
 "at least a 32 bits bus and can do such operations in one cycle. It makes "
 "code more readable too."
 msgstr ""
+"В целом, не беспокойтесь об использовании самых эффективных типов данных для "
+"ваших целей, если вы конечно не используете большие структуры данных или "
+"массивы. ``int`` используется во всём коде если не нужно обратное. Это так, "
+"поскольку современные устройства имеет 32-битную шину и могут проводить "
+"операции с ними за один цикл. Также это делает код более читабельным."
 
 #: ../../docs/development/cpp/core_types.rst:26
 msgid ""
 "For files or memory sizes, ``size_t`` is used, which is warranted to be 64 "
 "bits."
 msgstr ""
+"Для файлов или размеров памяти, используется ``size_t``, чтобы "
+"гарантированно иметь 64 бита."
 
 #: ../../docs/development/cpp/core_types.rst:29
 msgid ""
@@ -66,6 +78,10 @@ msgid ""
 "However, by default, this has not been forced and CharType maps directly to "
 "wchar_t."
 msgstr ""
+"Для строк Юникода, вместо wchar_t используется CharType, поскольку многие "
+"архитектуры имеют 4 байтовое wchar_t, где 2 байта могут быть "
+"предпочтительнее. Хотя, по умолчанию, это не обязательно и CharType напрямую "
+"переводится в wchar_t."
 
 #: ../../docs/development/cpp/core_types.rst:35
 #: ../../docs/development/cpp/core_types.rst:132
@@ -76,7 +92,7 @@ msgstr ""
 #: ../../docs/development/cpp/core_types.rst:220
 #: ../../docs/development/cpp/core_types.rst:233
 msgid "References:"
-msgstr ""
+msgstr "Источники:"
 
 #: ../../docs/development/cpp/core_types.rst:37
 msgid ""
@@ -86,7 +102,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:40
 msgid "Memory model"
-msgstr ""
+msgstr "Модель памяти"
 
 #: ../../docs/development/cpp/core_types.rst:42
 msgid ""
@@ -95,6 +111,10 @@ msgid ""
 "more resources the OS will swap out the inactive ones. Other architectures "
 "(like mobile or consoles) are in general more limited."
 msgstr ""
+"PC чудесная архитектура. Компьютеры часто содержат гигабайты RAM, терабайты "
+"данных и гигагерцы CPU, и когда приложению нужно больше ресурсов OS просто "
+"отдает неактивные. Другие архитектуры (такие как мобильные телефоны или "
+"консоли) в целом более ограниченны."
 
 #: ../../docs/development/cpp/core_types.rst:47
 msgid ""
@@ -103,6 +123,10 @@ msgid ""
 "return it. This often works best and is flexible, but over time and with "
 "abuse, this can lead to segmentation."
 msgstr ""
+"Самая частая модель памяти это куча, где приложение будет запрашивать "
+"область в памяти, а основная OS будет пытаться выделить её где-нибудь и "
+"вернуть указатель. Это часто работает превосходно и гибко, но с течением "
+"времени могут происходить ошибки, что ведёт к сегментации."
 
 #: ../../docs/development/cpp/core_types.rst:52
 msgid ""
@@ -112,8 +136,14 @@ msgid ""
 "Modern operating systems use paged memory, which helps mitigate the problem "
 "of segmentation but doesn't solve it."
 msgstr ""
+"Сегментация медленно создаёт дыры в памяти которые слишком мелкие для "
+"возможных аллокаций, что ведет к расходу памяти. Существует много литературы "
+"описывающие кучу и сегментацию, так что эта тема будет раскрыта подробнее "
+"здесь. Современные операционные системы используют страничную память, что "
+"помогает смягчать проблему сегментации но не разрешает её."
 
 #: ../../docs/development/cpp/core_types.rst:58
+#, fuzzy
 msgid ""
 "However, in many studies and tests, it is shown that given enough memory, if "
 "the maximum allocation size is below a given threshold in proportion to the "
@@ -122,8 +152,15 @@ msgid ""
 "other words, leave 10-20% of your memory free and perform all small "
 "allocations and you are fine."
 msgstr ""
+"Хотя, во многих исследованиях и тестах, было показано что даже взяв "
+"достаточно памяти, при максимальном размере аллокации меньшему чем порог "
+"пропорциональный максимальному размеру кучи и пропорциональный "
+"неиспользуемой памяти, сегментация не будет доставлять проблем со временем и "
+"будет оставаться константой. Другими словами, оставляя 10-20% вашей памяти "
+"свободной и выполняя лишь маленькие аллокации все будет в порядке."
 
 #: ../../docs/development/cpp/core_types.rst:65
+#, fuzzy
 msgid ""
 "Godot ensures that all objects that can be allocated dynamically are small "
 "(less than a few kb at most). But what happens if an allocation is too large "
@@ -133,10 +170,18 @@ msgid ""
 "rearranged and compacted on demand. Depending on the need of the game, the "
 "programmer can configure the dynamic memory pool size."
 msgstr ""
+"Godot гарантирует что все объекты которые могут быть выделенны динамически - "
+"маленькие (по большей части меньше чем пара килобайт). Но что если аллокация "
+"слишком большая (такая как рисунок или геометрия сеток или большой массив)? "
+"В этом случае Godot имеет опцию использования динамического пула памяти. Эта "
+"память нужно закрыть(locked) прежде чем иметь к ней доступ, и если память "
+"для аллокации закончится, пул будет перегруппирован и сжат по усмотрению. В "
+"зависимости от потребностей игры, программист может настроить размер "
+"динамического пула."
 
 #: ../../docs/development/cpp/core_types.rst:74
 msgid "Allocating memory"
-msgstr ""
+msgstr "Выделение памяти"
 
 #: ../../docs/development/cpp/core_types.rst:76
 msgid ""
@@ -144,30 +189,36 @@ msgid ""
 "debug. Because of this, the regular C and C++ library calls should not be "
 "used. Instead, a few other ones are provided."
 msgstr ""
+"Godot имеет много инструментов для отслеживания использования памяти в игре, "
+"особенно во время отладки. Из-за этого, обычные вызовы библиотек C и C++ не "
+"должны быть использованы. Вместо них, даны некоторые другие."
 
 #: ../../docs/development/cpp/core_types.rst:80
 msgid "For C-style allocation, Godot provides a few macros:"
-msgstr ""
+msgstr "Для аллокации в стиле C, Godot предоставляет пару макросов:"
 
 #: ../../docs/development/cpp/core_types.rst:88
 msgid ""
 "These are equivalent to the usual malloc, realloc, free of the standard C "
 "library."
 msgstr ""
+"Они эквивалентны обычным malloc, realloc, free из стандартной библиотеки C."
 
 #: ../../docs/development/cpp/core_types.rst:91
 msgid "For C++-style allocation, special macros are provided:"
-msgstr ""
+msgstr "Для аллокаций C++, даны специальные макросы:"
 
 #: ../../docs/development/cpp/core_types.rst:101
 msgid "which are equivalent to new, delete, new[] and delete[]."
-msgstr ""
+msgstr "которые эквивалентны new, delete, new[] и delete[]."
 
 #: ../../docs/development/cpp/core_types.rst:103
 msgid ""
 "memnew/memdelete also use a little C++ magic and notify Objects right after "
 "they are created, and right before they are deleted."
 msgstr ""
+"memnew/memdelete также использует маленькую магию C++ и оповещают Объекты "
+"которые они создают, перед их удалением."
 
 #: ../../docs/development/cpp/core_types.rst:106
 msgid ""
@@ -175,12 +226,17 @@ msgid ""
 "standard vector class, and is very similar to vector in the C++ standard "
 "library. To create a PoolVector buffer, use this:"
 msgstr ""
+"Для динамической памяти, используется шаблон PoolVector<>. PoolVector это "
+"стандартный векторный класс, очень похожий на vector из стандартной "
+"библиотеки C++. Для создания PoolVector, используйте это:"
 
 #: ../../docs/development/cpp/core_types.rst:114
 msgid ""
 "PoolVector can be accessed using the [] operator and a few helpers exist for "
 "this:"
 msgstr ""
+"К PoolVector можно получить доступ через оператор [] и пара вспомогательных "
+"методов существует для этого:"
 
 #: ../../docs/development/cpp/core_types.rst:126
 msgid ""
@@ -189,6 +245,11 @@ msgid ""
 "dynamic memory operations, as read() and write() are too slow for a large "
 "amount of accesses."
 msgstr ""
+"Эти операции дают быстрый доступ записи/чтения из PoolVector'ов и сохраняют "
+"из закрытыми до тех пор пока они не покинут область видимости. Хотя, "
+"PoolVector'а должны быть использованы для маленьких, динамических операций с "
+"памятью, так как read() и write() слишком медленны для больших объёмов "
+"доступа."
 
 #: ../../docs/development/cpp/core_types.rst:134
 msgid ""
@@ -204,11 +265,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:138
 msgid "Containers"
-msgstr ""
+msgstr "Контейнеры"
 
 #: ../../docs/development/cpp/core_types.rst:140
 msgid "Godot provides also a set of common containers:"
-msgstr ""
+msgstr "Godot предоставляет следующий набор контейнеров:"
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
@@ -233,22 +294,30 @@ msgid ""
 "symbols and code. List, Set and Map can be iterated using pointers, like "
 "this:"
 msgstr ""
+"Они весьма просты и нацелены на то чтобы быть маленькими по возможности, как "
+"шаблоны в C++ часто встроенные(inlined) и делают размер бинарника весьма "
+"большим, для символов отладки и кода. List, Set и Map могут быть "
+"просмотрены(итерированы) через указатели, вот так:"
 
 #: ../../docs/development/cpp/core_types.rst:158
 msgid "The Vector<> class also has a few nice features:"
-msgstr ""
+msgstr "Класс Vector<> также имеет пару прекрасных возможностей:"
 
 #: ../../docs/development/cpp/core_types.rst:160
 msgid ""
 "It does copy on write, so making copies of it is cheap as long as they are "
 "not modified."
 msgstr ""
+"Он делает копию на запись, что делает создание копий очень производительным "
+"до тех пор пока их не изменяют."
 
 #: ../../docs/development/cpp/core_types.rst:162
 msgid ""
 "It supports multi-threading, by using atomic operations on the reference "
 "counter."
 msgstr ""
+"Он поддерживает мульти-поточность, через использования атомарных операций на "
+"счётчике ссылок."
 
 #: ../../docs/development/cpp/core_types.rst:168
 msgid ""
@@ -283,6 +352,10 @@ msgid ""
 "and utf8 parsing/extracting, as well as helpers for conversion and "
 "visualization."
 msgstr ""
+"Godot также предоставляет класс строки String. Этот класс имеет большой "
+"набор возможностей, полную поддержку Юникода во всех функциях (таких как "
+"операции с регистром), парсинг/выделение utf8, а также вспомогательные "
+"функции для конверсии и визуализации."
 
 #: ../../docs/development/cpp/core_types.rst:184
 msgid ""
@@ -301,12 +374,18 @@ msgid ""
 "StringNames are useful for using strings as identifier, as comparing them is "
 "basically comparing a pointer."
 msgstr ""
+"StringNames похожи на String, но они уникальны. Создание StringName из "
+"строки приводит созданию уникального внутреннего указателя на все одинаковые "
+"строки. StringName'ы полезны для использования строк в идентификаторах, так "
+"как их сравнение это просто сравнение указателя."
 
 #: ../../docs/development/cpp/core_types.rst:194
 msgid ""
 "Creation of a StringName (especially a new one) is slow, but comparison is "
 "fast."
 msgstr ""
+"Создание StringName'а (особенно нового) медленная операция, но сравнивание - "
+"быстрая."
 
 #: ../../docs/development/cpp/core_types.rst:200
 msgid ""
@@ -316,12 +395,12 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:203
 msgid "Math types"
-msgstr ""
+msgstr "Математические типы"
 
 #: ../../docs/development/cpp/core_types.rst:205
 msgid ""
 "There are several linear math types available in the core/math directory."
-msgstr ""
+msgstr "Существует несколько типов линейной алгебры в директории core/math."
 
 #: ../../docs/development/cpp/core_types.rst:211
 msgid ""
@@ -337,6 +416,8 @@ msgid ""
 "This is a special datatype used for storing paths in a scene tree and "
 "referencing them fast."
 msgstr ""
+"Это специальный тип данных для сохранения путей в дереве сцены и быстрых "
+"ссылок на них."
 
 #: ../../docs/development/cpp/core_types.rst:222
 msgid ""
@@ -354,6 +435,10 @@ msgid ""
 "RIDs are opaque, meaning that the data they reference can't be accessed "
 "directly. RIDs are unique, even for different types of referenced data."
 msgstr ""
+"RID'ы это идентификаторы ресурсов. Серверы используют их для ссылки на "
+"данные сохранённые в них. RID'ы непрозрачные типы данных, что подразумевает "
+"что данные на которые они ссылаются не могут быть доступны напрямую. Все "
+"RID'ы уникальны, даже для различных типов данные на которые они ссылаются."
 
 #: ../../docs/development/cpp/core_types.rst:235
 msgid ""

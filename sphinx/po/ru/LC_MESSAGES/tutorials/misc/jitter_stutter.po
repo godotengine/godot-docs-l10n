@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:4
 msgid "Fixing jitter and stutter"
-msgstr ""
+msgstr "Исправление джиттеров и задержек"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:7
 msgid "What are jitter and stutter?"
-msgstr ""
+msgstr "Что такое джиттеры и задержки?"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:9
 msgid ""
@@ -32,30 +32,39 @@ msgid ""
 "These effects are mostly visible in games where the world moves at a "
 "constant speed in a fixed direction, like runners or platformers."
 msgstr ""
+"*Джиттер* и *задержка* это два разных изменения в визуальном движении "
+"объектов по экрану которые могут влиять на игру, даже при запуске на полной "
+"скорости. Эти эффекта главным образом видны в играх где мир движется с "
+"постоянной скоростью в фиксированном направлении, такие как раннеры или "
+"платформеры."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:14
 msgid "Distinguishing between them"
-msgstr ""
+msgstr "Различия между ними"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:16
 msgid ""
 "A game running at a normal framerate without exhibiting any effect will "
 "appear smooth:"
 msgstr ""
+"Игра запущенная с нормальной частотой кадров и без использования эффектов "
+"будет проигрываться гладко:"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:20
 msgid "A game exhibiting *jitter* will shake constantly in a very subtle way:"
-msgstr ""
+msgstr "Игра с *джиттером* будет постоянно дёргаться в непонятной манере:"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:24
 msgid ""
 "Finally, a game exhibiting *stutter* will appear smooth, but appear to "
 "*stop* or *roll back a frame* every few seconds:"
 msgstr ""
+"Наконец, игра с *задержкой* будет проигрываться плавно, но будет "
+"*приостанавливаться* или *откатывать кадр назад* каждые пару секунд:"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:30
 msgid "Jitter"
-msgstr ""
+msgstr "Джиттер"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:32
 msgid ""
@@ -64,6 +73,10 @@ msgid ""
 "the monitor refresh rate. Check whether your monitor refresh rate is "
 "different from 60 Hz."
 msgstr ""
+"Существует много причин вызывающие джиттер, самая обычная возникает когда "
+"игра с  *частотой физики* (обычно 60 Гц) запускается в разрешении отличном "
+"от частоты обновления монитора. Проверьте если ваша частота монитора "
+"отличается от 60 Гц."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:35
 msgid ""
@@ -72,6 +85,9 @@ msgid ""
 "timer was introduced that tries to synchronize with refresh as best as "
 "possible."
 msgstr ""
+"Это обычно не проблема, так как частота кадров выше 60 Гц едва различима для "
+"человеческого глаза, а начиная с Godot 3.1, добавлен таймер кадра который "
+"будет пытаться синхронизироваться с частотой как можно лучше."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:38
 msgid ""
@@ -81,10 +97,16 @@ msgid ""
 "does some improvements to this, from allowing kinematic bodies to be "
 "animated in the regular _process loop, to further fixes in the frame timer."
 msgstr ""
+"Иногда только некоторые объекты начинают джиттерить (персонажи или задний "
+"фон). Это возникает когда они обрабатываются через различные источники "
+"времени (один обрабатывается на стадии физики, тогда как другой на стадии "
+"ожидания). Godot 3.1 внёс некоторые улучшения в эти процессы, от допуска тел "
+"с кинематикой к анимации в обычном цикле _process, до дальнейших исправлений "
+"в таймере кадра."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:44
 msgid "Stutter"
-msgstr ""
+msgstr "Задержка"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:46
 msgid ""
@@ -92,6 +114,10 @@ msgid ""
 "one, is the game not being able to keep full framerate performance. Solving "
 "this is game specific and will require optimization."
 msgstr ""
+"Задержка может возникнуть из-за двух разных причин. Первое, и самое "
+"очевидное, если игра не может поддерживать производительность частоты "
+"кадров. Исправление этого зависит от игры и может потребоваться провести "
+"оптимизацию."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:49
 msgid ""
@@ -99,6 +125,9 @@ msgid ""
 "engine or game but the underlying operating system. Here is some information "
 "regarding stutter on different OSs."
 msgstr ""
+"Другая причина более сложная, поскольку часто не связывается с движком или "
+"игрой но зависит от операционной системы. Здесь показана некоторая "
+"информация о задержках на различных OS."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:53
 msgid "Windows"
@@ -112,6 +141,12 @@ msgid ""
 "avoid this, starting with 3.1, Godot raises the game priority to \"Above "
 "Normal\". This helps considerably but may not completely eliminate stutter."
 msgstr ""
+"Система Windows часто вызывает задержки в оконных играх. Это часто зависит "
+"от установленного железа, версий драйверов или процессов запущенных "
+"параллельно (т.е. если открыто много вкладок браузера это может привести в "
+"задержкам в запущенной игре). Для избегания этого, начиная с 3.1, Godot "
+"поднимает приоритет игрового процесса на *Выше Нормального*. Это значительно "
+"помогает, но может не до конца исправлять задержки."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:60
 msgid ""
@@ -121,12 +156,20 @@ msgid ""
 "games and most users won't play games windowed (games that are played in a "
 "window, e.g. puzzle games, will usaully not exhibit this problem anyway)."
 msgstr ""
+"Полностью исправление этого требует передачи вашей игре полных привилегий на "
+"то чтобы стать *критичным по времени* что не рекомендуется. Некоторые игры "
+"делают это, но лучше научитесь жить с этой проблемой, она обычная для игр "
+"Windows и большинство пользователей не играют в оконные игры (игры которые "
+"играются в окне, напр. головоломки, по любому не будут иметь эту проблему)."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:64
 msgid ""
 "For fullscreen, Windows gives special priority to the game so stutter is no "
 "longer visible and very rare. This is how most games are played."
 msgstr ""
+"Для полноэкранного режима, Windows даёт игре специальный приоритет, так что "
+"игровые задержки не будут видны и станут очень редкими. Так работает "
+"большинство игр."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:68
 msgid "Linux (X11)"
@@ -140,12 +183,20 @@ msgid ""
 "this problem (e.g. KWin), so it is advised to try using a different one to "
 "rule it out as the cause."
 msgstr ""
+"Задержка может быть видима в Десктопном Linux, но обычно она связывается с "
+"различными видео драйверами или композиторами. Драйверы Nouveau часто "
+"демонстрируют это, тогда как проприетарные AMD или NVidia - нет. Некоторые "
+"композиторы могут вызывать эту проблему(напр. KWin), так что советуем "
+"пытаться пробовать другие если какой-то вызывает проблему."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:74
 msgid ""
 "There is no workaround for driver or compositor stuttering other than "
 "reporting it as an issue to the driver or compositor developers."
 msgstr ""
+"Не существует обходных путей для исправления задержек в драйвере или "
+"композиторе кроме как сообщения о проблеме разработчикам драйвера или "
+"композитора."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:78
 msgid "macOS"
@@ -157,6 +208,9 @@ msgid ""
 "when running on fullscreen (this is a macOS bug). If you have a machine "
 "exhibiting this behavior, please let us know."
 msgstr ""
+"В целом, macOS свободна от задержек, хотя недавно были найдены некоторые "
+"ошибки при запуске в полноэкранном режиме. Если вы владеете устройством "
+"демонстрирующим данное поведение, пожалуйста сообщите нам."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "Android"
@@ -169,6 +223,10 @@ msgid ""
 "Kindle Fire is known to be one). If you see this problem on Android, please "
 "let us know."
 msgstr ""
+"Android в целом лишён джиттеров и задержек поскольку запущенный процесс "
+"получает полный приоритет. Однако, на некоторых устройствах могут возникать "
+"проблемы (старые Kindle Fire известны этим). Если вы увидели проблему на "
+"вашем Android устройстве, пожалуйста сообщите нам."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
 msgid "iOS"
@@ -180,10 +238,13 @@ msgid ""
 "versions of the operating system may exhibit problems. This is generally "
 "unavoidable."
 msgstr ""
+"Устройства iOS в целом работают без задержек, но на старых устройствах "
+"запущенных на новых версиях операционной системы могут проявляться ошибки. "
+"Это в целом нельзя избежать."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:96
 msgid "Reporting stutter or jitter problems"
-msgstr ""
+msgstr "Доклад о задержках и джиттерах"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:98
 msgid ""
@@ -192,6 +253,10 @@ msgid ""
 "information possible about device, operating system, driver versions, etc. "
 "This may help to better troubleshoot it."
 msgstr ""
+"Если вы докладываете о задержке или джиттере (открывая проблему) не "
+"вызванную ни какой из вышеперечисленных проблем, пожалуйста точно опишите "
+"информацию об устройстве, операционной системе, версии драйверов, итд. Это "
+"может помочь для лучшего решения."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:101
 msgid ""
@@ -200,3 +265,7 @@ msgid ""
 "Provide a project that can be used to reproduce the issue, and if possible a "
 "screen capture demonstrating the bug."
 msgstr ""
+"Также убедитесь что используете правильную терминологию (джиттер(jitter) или "
+"задержка(stutter)) в зависимости от наблюдаемого поведения. Это помогает "
+"намного быстрее понять вашу проблему. Предоставьте проект демонстрирующий "
+"вашу проблему, и если возможно видео захват экрана с демонстрацией ошибки."

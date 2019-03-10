@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
-msgstr ""
+msgstr "Обзор инструментов отладки"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:7
 msgid "Introduction"
@@ -31,10 +31,13 @@ msgid ""
 "problems occurred. Godot provides several debugging options and tools which "
 "aid your debugging process."
 msgstr ""
+"Когда вы разрабатываете игру, вы можете захотеть протестировать её и "
+"отладить когда возникнут проблемы. Godot предоставляет несколько опций для "
+"отладки и инструменты которые помогут вам в этом процессе."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:12
 msgid "Debug options"
-msgstr ""
+msgstr "Опции отладки"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:14
 msgid ""
@@ -68,6 +71,11 @@ msgid ""
 "will use the USB cable for faster performance. This option speeds up testing "
 "for games with a large footprint."
 msgstr ""
+"Экспортирование или развёртывание создают небольшой исполняемый файл. "
+"Файловая система будет предоставляться из проекта редактором через сеть. На "
+"Android, развёртывание будет использовать кабель USB для большей "
+"производительности. Эта опция ускоряет тестирование для игр с большим "
+"объёмом."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Visible Collision Shapes"
@@ -85,7 +93,7 @@ msgstr "Видимая навигация"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid "Navigation meshes and polygons will be visible on the running game."
-msgstr ""
+msgstr "Навигационные сетки и полигоны будут видимы в загруженной игре."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:43
 msgid "Sync Scene Changes"
@@ -97,6 +105,9 @@ msgid ""
 "running game. When used remotely on a device, this is more efficient with "
 "network filesystem."
 msgstr ""
+"Любые изменения сделанные для сцены в редакторе будут отражены в запущенной "
+"игре. Когда используется на отдельном устройстве, это наиболее эффективно "
+"через сетевую файловую систему."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
 msgid "Sync Script Changes"
@@ -107,24 +118,29 @@ msgid ""
 "Any script that is saved will be reloaded on the running game. When used "
 "remotely on a device, this is more efficient with network filesystem."
 msgstr ""
+"Любой скрипт который сохранён будет перезагружен в запущенной игре. Когда "
+"используется на отдельном устройстве, это наиболее эффективно через сетевую "
+"файловую систему."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:55
 msgid "Debugging tools"
-msgstr ""
+msgstr "Инструменты отладки"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:57
 msgid ""
 "The ``Debugger`` is the second option in the bottom panel. Click on it and a "
 "new panel occurs."
 msgstr ""
+"``Отладчик`` это вторая опция в нижней панели. Клик на нём вызовет новую "
+"панель."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:61
 msgid "The ``Debugger`` provides certain tools under different tabs."
-msgstr ""
+msgstr "``Отладчик`` предоставляет различные инструменты в различных вкладках."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:63
 msgid "Here are some brief descriptions of the tools:"
-msgstr ""
+msgstr "Здесь показано краткое описание этих инструментов:"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:66
 msgid "Debugger"
@@ -132,7 +148,7 @@ msgstr "Отладчик"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:68
 msgid "Monitor the game running process."
-msgstr ""
+msgstr "Сканирует запущенный игровой процесс."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:71
 msgid "Errors"
@@ -140,7 +156,7 @@ msgstr "Ошибки"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:73
 msgid "Print out errors when running the game."
-msgstr ""
+msgstr "Печатает ошибки в запущенной игре."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:76
 msgid "Profiler"
@@ -149,6 +165,7 @@ msgstr "Профайлер"
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
 msgid "Profiling the performance of the any function call in the running game."
 msgstr ""
+"Профилирование производительности при вызове любой функции в запущенной игре."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:81
 msgid "Monitors"
@@ -159,6 +176,8 @@ msgid ""
 "Monitors the performance of the running game, such as the fps and physics "
 "collisions."
 msgstr ""
+"Сканирует производительность запущенной игры, такую как количество кадров "
+"или физические столкновения."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:86
 msgid "Video Mem"
@@ -166,7 +185,7 @@ msgstr "Видео память"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:88
 msgid "Listing the video memory usage of the running game."
-msgstr ""
+msgstr "Ведёт запись использования видео памяти в запущенной игре."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:91
 msgid "Misc"
@@ -174,7 +193,7 @@ msgstr "Прочее"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:93
 msgid "Miscellaneous options for debug."
-msgstr ""
+msgstr "Различные другие опции для отладки."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:97
 msgid "Remote in Scene dock"
@@ -192,3 +211,5 @@ msgid ""
 "Some editor settings related to debugging can be found inside the ``Editor "
 "Settings``, under Network>Debug and Debugger sections."
 msgstr ""
+"Некоторые настройки редактора относящиеся к отладке могут быть найдены "
+"внутри ``Настроек Редактора``, в Сеть>Отладка и секции Отладчика."

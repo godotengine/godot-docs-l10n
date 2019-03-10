@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,11 +83,27 @@ msgstr ""
 "但是，可以在激活的场景树外创建场景块(以树形式排列的节点)。 这样，可以在线程中"
 "构建或实例化部分场景，然后将其添加到主线程中:"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:43
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:42
+msgid ""
+"Still, this is only really useful if you have **one** thread loading data. "
+"Attempting to load or create scene chunks from multiple threads may work, "
+"but you risk resources (which are only loaded once in Godot) tweaked by the "
+"multiple threads, resulting in unexpected behaviors or crashes."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:47
+msgid ""
+"Only use more than one thread to generate scene data if you *really* know "
+"what you are doing and you are sure that a single resource is not being used "
+"or set in multiple ones. Otherwise, you are safer just using the servers API "
+"(which is fully thread-safe) directly and not touching scene or resources."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:55
 msgid "GDScript arrays, dictionaries"
 msgstr "GDScript数组，字典"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:45
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:57
 msgid ""
 "In GDScript, reading and writing elements from multiple threads is ok, but "
 "anything that changes the container size (resizing, adding or removing "
@@ -96,11 +112,11 @@ msgstr ""
 "在GDScript中，可以从多个线程读取和写入元素，但是任何改变容器大小(调整大小，添"
 "加或删除元素)的操作都需要锁定互斥。"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:48
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:60
 msgid "Resources"
 msgstr "资源"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:50
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:62
 msgid ""
 "Modifying a unique resource from multiple threads is not supported, but "
 "loading them on threads or handling a reference is perfectly supported. "

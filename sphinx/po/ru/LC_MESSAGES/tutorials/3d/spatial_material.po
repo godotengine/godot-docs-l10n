@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,16 +32,24 @@ msgid ""
 "shader code. However, it can be converted to shader code if additional "
 "functionality is needed."
 msgstr ""
+"``SpatialMaterial`` это 3D материал по умолчанию, который дает большинство "
+"возможностей необходимых художникам в материале, без необходимости писать "
+"шейдерный код. Тем не менее, он может быть сконвертирован в шейдерный код "
+"если возникнет необходимость в дополнительной функциональности."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:13
 msgid "This tutorial explains most parameters present in ``SpatialMaterial``."
 msgstr ""
+"Этот урок объясняет большинство параметров представленных в "
+"``SpatialMaterial``."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:15
 msgid ""
 "You can add a ``SpatialMaterial`` to an object by choosing \"New "
 "SpatialMaterial\" in the *Material* property of the Inspector."
 msgstr ""
+"Вы можете добавить ``SpatialMaterial`` на объект выбрав \"Новый "
+"SpatialMaterial\" в свойстве *Material* в Инспекторе."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:19
 msgid "Flags"
@@ -52,6 +60,8 @@ msgid ""
 "Spatial materials have many flags determining the general usage of a "
 "material."
 msgstr ""
+"Пространственные(spatial) материалы имеют много флажков для управлением их "
+"поведением."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:26
 msgid "Transparent"
@@ -64,6 +74,9 @@ msgid ""
 "using a different technique (sorted from back to front and rendered in "
 "order)."
 msgstr ""
+"В Godot, материалы не прозрачны если не были настроены быть ими. Главная "
+"причина этого в том что прозрачные материалы отрисовываются через отдельный "
+"метод (сортируются от дальних и ближних и отрисовываются по порядку)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:32
 msgid ""
@@ -71,24 +84,30 @@ msgid ""
 "materials unusable with many mid- and post-processing effects (such as SSAO, "
 "SSR, etc.) that require perfectly opaque geometry."
 msgstr ""
+"Этот метод менее производительный (проходит много изменений состояний) и "
+"делает такие материалы не доступными для многих эффектов средне- и пост-"
+"обработки (таких как SSAO, SSR, итд.) которые требуют идеально непрозрачной "
+"геометрии."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:36
 msgid ""
 "For this reason, materials in Godot are assumed opaque unless specified "
 "otherwise. The main settings that enable transparency are:"
 msgstr ""
+"По этой причине, материалы в Godot по умолчанию непрозрачны если не "
+"настроено обратное. Главные настройки включающие прозрачность это:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:39
 msgid "Transparent flag (this one)"
-msgstr ""
+msgstr "Флаг Transparent (этот самый)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:40
 msgid "Blend mode set to other than \"Mix\""
-msgstr ""
+msgstr "Режим смешивания(blend mode) иной чем \"Mix\""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:41
 msgid "Enabling distance or proximity fade"
-msgstr ""
+msgstr "Включение резкости или размытия дистанции"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:44
 msgid "Unshaded"
@@ -98,6 +117,8 @@ msgstr ""
 msgid ""
 "In most cases it is common for materials to be affected by lighting (shaded)."
 msgstr ""
+"В большинстве случаев он необходим материалам которые не зависят от "
+"освещения (shaded)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:48
 msgid ""
@@ -105,6 +126,9 @@ msgid ""
 "ignore the rest. Toggling this flag on will remove all shading and display "
 "pure, unlit color."
 msgstr ""
+"Тем не менее, в некоторых случаях вам может потребоваться отобразить только "
+"альбедо (цвет) и игнорировать остальное. Включение этого флага убирает весь "
+"шейдинг и показывает чистый, неосвещенный цвет."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:55
 msgid "Vertex Lighting"
@@ -116,6 +140,9 @@ msgid ""
 "All lighting calculations are made by running the lighting shader on every "
 "pixel."
 msgstr ""
+"Godot более и менее одинаков в отображении каждого пикселя благодаря пре-"
+"обработке глубины. Все вычисления света делаются запуском шейдера света на "
+"каждом пикселе."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:60
 msgid ""
@@ -124,18 +151,27 @@ msgid ""
 "transparency (which is common in particle systems). Switching to per-vertex "
 "lighting may help in these cases."
 msgstr ""
+"Так как эти вычисления дорогостоящие, производительность может значительно "
+"понизиться в некоторых особых случаях таких как отрисовка множества слоёв "
+"прозрачности (что обычно происходит в системах частиц). Переключение на "
+"режим света для-каждой-вершины может помочь в этих случаях."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:65
 msgid ""
 "Additionally, on low-end or mobile devices, switching to vertex lighting can "
 "considerably increase rendering performance."
 msgstr ""
+"Дополнительно, на низко-производительных или мобильных устройствах, "
+"переключение на режим вершинного освещения может существенно повысить "
+"производительность отрисовки."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:70
 msgid ""
 "Keep in mind that when vertex lighting is enabled, only directional lighting "
 "can produce shadows (for performance reasons)."
 msgstr ""
+"Имейте ввиду что когда вершинное освещение включено, только направленный "
+"свет может создавать тени (по причинам производительности)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:74
 msgid "No Depth Test"
@@ -147,6 +183,9 @@ msgid ""
 "performed. Disabling it has the result of objects appearing over (or under) "
 "everything else."
 msgstr ""
+"Для того чтобы показывать близкие объекты над дальними объектами, проводится "
+"тест глубины. Его выключение ведёт к тому что объекты будут показывать над "
+"(или под) всеми остальными."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:80
 msgid ""
@@ -154,6 +193,9 @@ msgid ""
 "and works very well with the *Render Priority* property of Material (see the "
 "bottom of this page)."
 msgstr ""
+"Его отключение имеет смысл для отрисовки индикаторов в мировом пространстве, "
+"и отлично  работает в связке со свойством *Render Priority* на Материале "
+"(смотрите внизу данной страницы)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:87
 msgid "Use Point Size"
@@ -165,6 +207,9 @@ msgid ""
 "(generally it's made of triangles when imported from 3D DCCs). If so, then "
 "those points can be resized (see below)."
 msgstr ""
+"Этот флаг работает только с геометрией представленной через точки (обычно "
+"всё сделано из треугольников когда импортируется из редакторов 3D графики). "
+"Если же это так, то размер этих точек может быть изменён (смотрите ниже)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:94
 msgid "World Triplanar"
@@ -176,6 +221,9 @@ msgid ""
 "triplanar is computed in object local space. This option makes triplanar "
 "work in world space."
 msgstr ""
+"Когда используется трипланарное наложение (смотрите нижу, в настройках UV1 и "
+"UV2), триплан вычисляется из локального пространства объекта. Этот флаг "
+"заставляет его вычисляться из мирового пространства."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:101
 msgid "Fixed Size"
@@ -187,6 +235,9 @@ msgid ""
 "distance. This is useful mostly for indicators (no depth test and high "
 "render priority) and some types of billboards."
 msgstr ""
+"Этот флаг заставляет объект рисоваться в одинаковом размере вне зависимости "
+"от расстояния. Это полезно для индикаторов (без теста глубины и высокого "
+"приоритета отрисовки) и некоторых типов билбордов."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:108
 msgid "Do Not Receive Shadows"
@@ -197,6 +248,7 @@ msgid ""
 "Makes the object not receive any kind of shadow that would otherwise be cast "
 "onto it."
 msgstr ""
+"Заставляет объект не принимать тени которые иначе были бы отброшены на него."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:114
 msgid "Disable Ambient Light"
@@ -207,6 +259,7 @@ msgid ""
 "Makes the object not receive any kind of ambient lighting that would "
 "otherwise light it."
 msgstr ""
+"Заставляет объект не принимать окружающий свет который бы иначе осветил его."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:120
 msgid "Vertex Color"
@@ -217,6 +270,8 @@ msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
 "come from your 3D modelling application. By default they are ignored."
 msgstr ""
+"Эта настройка позволяет выбрать цвет для вершин которые будут взяты из вашей "
+"3D модели. По умолчанию эти цвета отбрасываются."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:128
 msgid "Use as Albedo"
@@ -225,6 +280,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:130
 msgid "Choosing this option means vertex color is used as albedo color."
 msgstr ""
+"Использование этого параметра заставляет цвет вершин использовать цвет "
+"альбедо."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:133
 msgid "Is sRGB"

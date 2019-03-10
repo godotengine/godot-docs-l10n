@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,29 +102,40 @@ msgid "Export of Cycles/EEVEE materials"
 msgstr "Modelos de Exportação"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
+#, fuzzy
 msgid ""
 "The exporter has a primitive support for converting Cycles/EEVEE material "
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
+"O exportador tem um suporte primitivo para a conversão da árvore de nós do "
+"material Cycles/EEVEE para Godot Shader Material. Note que alguns dos nós do "
+"Shader ainda não são suportados devido a dificuldades na implementação, que "
+"são:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
+#, fuzzy
 msgid "all the ``noisy textures``"
-msgstr ""
+msgstr "todas as ``noisy textures``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
+#, fuzzy
 msgid "``generated texture coordinates``"
-msgstr ""
+msgstr "``generated texture coordinates``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
+#, fuzzy
 msgid "``group node``"
-msgstr ""
+msgstr "``group node``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
+#, fuzzy
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
+"nós de sombreamento, exceto``PrincipledBSDF``, ``Diffuse``, ``Glossy``, "
+"``Glass``, ``add shader`` e ``mix shader``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
 msgid ""
@@ -132,6 +143,9 @@ msgid ""
 "output shader node, it is the only one guarantee to be exactly correctly. "
 "Others are just based on approximation."
 msgstr ""
+"Se possível, tente usar o nó PrincipledBSDF com a distribuição GGX como o nó "
+"do shader de saída, é a única garantia a ser exatamente correta. Outros são "
+"apenas baseados em aproximação."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
 #, fuzzy
@@ -146,8 +160,9 @@ msgstr ""
 "exemplo, sem sombra) são exportadas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
+#, fuzzy
 msgid "Generate external materials"
-msgstr ""
+msgstr "Gere materiais externos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
 msgid ""
@@ -155,9 +170,15 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
+"A configuração padrão da exportação de material manteria todos os materiais "
+"internos no arquivo ``escn``. Existe uma opção que pode permitir a geração "
+"de arquivos externos ``.material`` quando o arquivo ``escn`` é aberto no "
+"Godot."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
 msgstr ""
+"O arquivo ``.material`` pode ser atribuído a qualquer slot de material para "
+"ser um recurso externo."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,9 +98,8 @@ msgstr ""
 "Blender."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
-#, fuzzy
 msgid "Export of Cycles/EEVEE materials"
-msgstr "Exportation des matériaux depuis Blender"
+msgstr "Exportation de cycles et de matériaux EEEVEE"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
 msgid ""
@@ -108,24 +107,30 @@ msgid ""
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
+"L'exportateur dispose d'un support primitif pour convertir l'arborescence "
+"des nœuds de matériaux Cycles/EEVEE en matériau Godot Shader Material. Notez "
+"que certains des Nœuds Shader ne sont pas encore pris en charge en raison de "
+"difficultés de mise en œuvre, qui sont :"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid "all the ``noisy textures``"
-msgstr ""
+msgstr "toutes les ``noisy textures``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
 msgid "``generated texture coordinates``"
-msgstr ""
+msgstr "``generated texture coordinates``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
-msgstr ""
+msgstr "``group node``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
+"Nœuds shader sauf ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
+"``add shader`` et ``mix shader``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
 msgid ""
@@ -133,22 +138,25 @@ msgid ""
 "output shader node, it is the only one guarantee to be exactly correctly. "
 "Others are just based on approximation."
 msgstr ""
+"Si possible, essayez d'utiliser le nœud PrincipledBSDF avec la distribution "
+"GGX comme nœud shader de sortie, c'est la seule garantie pour être "
+"exactement correct. D'autres sont simplement basées sur l'approximation."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
-#, fuzzy
 msgid ""
 "Sometimes materials may not be valid for exporting (e.g. has some "
 "unsupported node) or it is using Blender Internal Engine, only the diffuse "
 "color and a few flags (e.g. unshaded) are exported and form a Spatial "
 "Material."
 msgstr ""
-"L'autre moyen dont les matériaux sont traités par l'exportateur est de les "
-"exporter depuis Blender. Actuellement, seule la couleur diffuse et quelques "
-"options commutables (par exemple non ombré) sont exportés."
+"Parfois les matériaux peuvent ne pas être valides pour l'exportation (par "
+"exemple a un nœud non supporté) ou il utilise Blender Internal Engine, "
+"seulement la couleur diffuse et quelques drapeaux (par exemple non ombragé) "
+"sont exportés et forment un Spatial Material."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
 msgid "Generate external materials"
-msgstr ""
+msgstr "Générer des matériaux externes"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
 msgid ""
@@ -156,9 +164,15 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
+"La configuration par défaut de l'exportation de matériel garde tous les "
+"matériaux internes au fichier ``escn``. Il y a une option qui peut permettre "
+"de générer un fichier externe ``.material`` lorsque le fichier ``escn`` "
+"s'ouvre dans Godot."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
 msgstr ""
+"Le fichier ``.material`` peut être assigné à n'importe quel emplacement "
+"matériel pour être une ressource externe."

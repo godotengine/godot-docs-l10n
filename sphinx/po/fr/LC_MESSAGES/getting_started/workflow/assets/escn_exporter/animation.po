@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,9 +69,8 @@ msgstr ""
 "la manière d'utiliser cette fonctionnalité :"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
-#, fuzzy
 msgid "**1. Stash active action**"
-msgstr "**2. Cacher l'action active**"
+msgstr "**1. Cacher l'action active**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
 msgid ""
@@ -79,14 +78,17 @@ msgid ""
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
+"Une nouvelle action créée est toujours une action active liée à l'objet. Il "
+"y a plusieurs façons de placer une action active dans la piste NLA, l'une "
+"d'elles est bien sûr de le faire dans ``NLA Editor``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
-msgstr ""
+msgstr "Ou on peut le faire en cachant l'action dans ``Dope Sheet``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2. Vérifier l'état de coupure du son des pistes NLA**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -94,31 +96,33 @@ msgid ""
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
+"Une piste NLA peut être ``mute`` ou ``unmute``, l'exportateur exportera "
+"toute la piste NLA ``mute`` comme une action séparée, tandis qu'il mélange "
+"toutes les pistes NLA ``unmute`` dans chaque action (y compris l'action "
+"action) qui est exportée."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
-#, fuzzy
 msgid "**3. Export the scene**"
-msgstr "**4. Exporter la scène**"
+msgstr "**3. Exporter la scène**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
 msgstr ""
+"Assurez-vous que l'option ``Exporter les actions cachées`` a été activée."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
-#, fuzzy
 msgid ""
 "Then all the stashed actions, as well as the active action, are exported to "
 "an AnimationPlayer."
 msgstr ""
-"Toutes les actions cachées ainsi que l'action active sont exportées vers un "
-"AnimationPlayer."
+"Ensuite, toutes les actions cachées, ainsi que l'action active, sont "
+"exportées vers un AnimationPlayer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
 msgid "Constraints"
 msgstr "Contraintes"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
-#, fuzzy
 msgid ""
 "Sometimes complicated animation is built with object constraint; a usual "
 "example is inverse kinematics. The add-on would automatically check if an "
@@ -127,8 +131,8 @@ msgid ""
 msgstr ""
 "Parfois, une animation compliquée est construite avec une contrainte "
 "d'objet, un exemple classique est la cinématique inverse. L'addon vérifie "
-"automatiquement si un objet a une contrainte, si c'est le cas, toutes les "
-"contraintes sont intégrées à chaque action de l'objet, puis exportées."
+"automatiquement si un objet a une contrainte,  si c'est le cas, toutes les "
+"contraintes sont préparées en actions et ensuite exportées avec l'objet."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
 msgid "Animation Mode"

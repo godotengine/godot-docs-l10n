@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:4
 msgid "Compiling for Windows"
-msgstr ""
+msgstr "Компиляция под Windows"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:9
 msgid "Requirements"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:11
 msgid "For compiling under Windows, the following is required:"
-msgstr ""
+msgstr "Для компиляции под Windows, необходимо следующее:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:13
 msgid ""
@@ -36,30 +36,38 @@ msgid ""
 "read Installing Visual Studio caveats below or you will have to run/download "
 "the installer again.**"
 msgstr ""
+"Visual C++, `Visual Studio Community <https://www.visualstudio.com/vs/"
+"community/>`__ (рекомендовано), версия 2013 (12.0) или более поздняя. "
+"**Убедитесь что прочли как Устанавливать Visual Studio ниже или вам нужно "
+"будет установить/загрузить установщик снова.**"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:18
 msgid "`Python 2.7+ or Python 3.5+ <https://www.python.org/downloads/>`__."
-msgstr ""
+msgstr "`Python 2.7+ или Python 3.5+ <https://www.python.org/downloads/>`__."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:19
 msgid ""
 "`Pywin32 Python Extension <https://github.com/mhammond/pywin32>`__ for "
 "parallel builds (which increase the build speed by a great factor)."
 msgstr ""
+"`Pywin32 Python Extension <https://github.com/mhammond/pywin32>`__ для "
+"параллельной сборки (намного ускоряет процесс сборки)."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:21
 msgid "`SCons <https://www.scons.org>`__ build system."
-msgstr ""
+msgstr "`SCons <https://www.scons.org>`__ система сборки."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:23
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
+"Для общего обзора использования SCons в Godot, смотрите :ref:"
+"`doc_introduction_to_the_buildsystem`."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:27
 msgid "Setting up SCons"
-msgstr ""
+msgstr "Настройка SCons"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:29
 msgid ""
@@ -70,6 +78,12 @@ msgid ""
 "path or it can simply be copied to ``C:\\Python`` together with the "
 "interpreter executable."
 msgstr ""
+"Python добавляет интерпретатор (python.exe) к пути. Он обычно "
+"устанавливается в ``C:\\Python`` (или ``C:\\Python[Version]``). SCons "
+"устанавливается внутрь этой папки (обычно в папку ``Scripts``) и "
+"предоставляет пакетный файл ``scons.bat``. Позиция этого файла может быть "
+"добавлена к пути или он может быть просто скопирован в ``C:\\Python`` вместе "
+"с исполняемым файлом интерпретатора."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:36
 msgid ""
@@ -77,16 +91,21 @@ msgid ""
 "``python --version`` and ``scons --version`` into the Windows Command Prompt "
 "(``cmd.exe``)."
 msgstr ""
+"Для проверки что вы правильно установили Python и SCons, вы может набрать "
+"``python --version`` и ``scons --version`` в Командную Строку Windows (``cmd."
+"exe``)."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:40
 msgid ""
 "If commands above do not work, make sure you add Python to your PATH "
 "environment variable after installing it, and check again."
 msgstr ""
+"Если команды показанные выше не работают, убедитесь что вы добавили Python к "
+"параметру переменной среды PATH если же нет установите, и проверьте снова."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:44
 msgid "Setting up Pywin32"
-msgstr ""
+msgstr "Настройка Pywin32"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:46
 msgid ""
@@ -96,6 +115,11 @@ msgid ""
 "the correct installer executable for your Python version `located at Github. "
 "<https://github.com/mhammond/pywin32/releases>`__"
 msgstr ""
+"Pywin32 необходим для запуска параллельной сборки используя несколько ядер "
+"CPU. Если SCons показывает предупреждение о Pywin32 после обработки "
+"инструкций сборки SConstruct, после начала сборки, вам нужно установить его "
+"правильно из правильного установщика для вашей версии Python `на Github. "
+"<https://github.com/mhammond/pywin32/releases>`__"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:52
 msgid ""
@@ -104,6 +128,10 @@ msgid ""
 "version of Python. That executable installer would be named ``pywin32-221."
 "win32-py2.7.exe``."
 msgstr ""
+"Например, если вы установили 32-битную версию Python 2.7, вам нужно "
+"установить последнюю версию Pywin32 которая упоминается для сборки с "
+"конкретной версией Python. Этот установщик будет иметь имя ``pywin32-221."
+"win32-py2.7.exe``."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:56
 msgid ""
@@ -111,6 +139,9 @@ msgid ""
 "``pywin32-221.win-amd64-py2.7.exe``. Change the ``py`` number to install for "
 "your version of Python (check via ``python --version`` mentioned above)."
 msgstr ""
+"Для ``amd64` версии Pywin32 для 64-битной версии Python - ``pywin32-221.win-"
+"amd64-py2.7.exe``. Измените число ``py`` для установки для под вашу версию "
+"Python (проверьте через ``python --version`` показанной выше)."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:63
 msgid "Installing Visual Studio caveats"
@@ -143,7 +174,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:81
 msgid "Downloading Godot's source"
-msgstr ""
+msgstr "Загрузка исходного кода Godot"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:83
 msgid ""
@@ -151,12 +182,16 @@ msgid ""
 "GitHub. Downloading it (cloning) via `Git <https://git-scm.com/>`__ is "
 "recommended."
 msgstr ""
+"`Исходный код Godot <https://github.com/godotengine/godot>`__ находится на "
+"GitHub. Рекомендована его загрузка (клонирование) через `Git <https://git-"
+"scm.com/>`__."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:86
 msgid ""
 "The tutorial will presume from now on that you placed the source into ``C:"
 "\\godot``."
 msgstr ""
+"Этот урок будет предполагать что вы поместили исходный код в ``C:\\godot``."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:90
 msgid "Compiling"
@@ -168,6 +203,9 @@ msgid ""
 "Prompt (``cmd.exe``) because SCons and Visual C++ compiler will not be able "
 "to locate environment variables and executables they need for compilation."
 msgstr ""
+"SCons не может сразу быть скомпилированным в Командной Строке Windows (``cmd."
+"exe``) поскольку SCons и компилятор Visual C++ не смогут найти переменные "
+"среды и исполняемые файлы для компиляции."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:97
 msgid ""
@@ -176,6 +214,10 @@ msgid ""
 "called similar to one of the below names (for your respective version of "
 "Visual Studio):"
 msgstr ""
+"Таким образом, вам нужно запустить командную строку Visual Studio. Она "
+"устанавливает переменные среды необходимые SCons для определения пути к "
+"компилятору. Она имеет название подобное нижеперечисленным (для вашей версии "
+"Visual Studio):"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:102
 msgid "\"Developer Command Prompt for VS2013\""
@@ -202,13 +244,18 @@ msgid ""
 "You should be able to find at least the Developer Command Prompt for your "
 "version of Visual Studio in your start menu."
 msgstr ""
+"Вы должны найти по крайней мере Developer Command Prompt для вашей версии "
+"Visual Studio в меню пуск."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:111
+#, fuzzy
 msgid ""
 "However Visual Studio sometimes seems to not install some of the above "
 "shortcuts, except the Developer Console at these locations that are "
 "automatically searched by the start menu search option:"
 msgstr ""
+"Хотя Visual Studio иногда не устанавливает некоторые из вышеперечисленных "
+"ярлыков, кроме Developer Console но по этим путям ведётся поиск из меню пуск:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:121
 msgid ""
@@ -216,12 +263,18 @@ msgid ""
 "version of Godot, but if you want the 64-bit version, you might need to "
 "setup the prompts manually for easy access."
 msgstr ""
+"Если вы нашли Developer Console, она может уже использоваться для создания "
+"32-битной версии Godot, но если вы хотите 64-битную версию, вам может "
+"потребоваться установить ярлык вручную для быстрого доступа."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:125
 msgid ""
 "If you don't see some of the shortcuts, \"How the prompts actually work\" "
 "section below will explain how to setup these prompts if you need them."
 msgstr ""
+"Если вы не хотите видеть некоторый из ярлыков, нижерасположенная секция "
+"\"How the prompts actually work\" описывает как установить эти prompts если "
+"вам они нужны."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:129
 msgid "About the Developer/Tools Command Prompts and the Visual C++ compiler"

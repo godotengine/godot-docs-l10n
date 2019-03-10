@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr "Partikel"
 msgid ""
 "GLES2 cannot use the :ref:`Particles <class_Particles>` or :ref:`Particles2D "
 "<class_Particles2D>` nodes as they require advanced GPU features. Instead, "
-"use :ref:`CPUParticles <class_CPUParticles>` or `:ref:`CPUParticles2D "
+"use :ref:`CPUParticles <class_CPUParticles>` or :ref:`CPUParticles2D "
 "<class_CPUParticles2D>`, which provides a similar interface to a :ref:"
 "`ParticlesMaterial <class_ParticlesMaterial>`."
 msgstr ""
@@ -57,7 +57,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:26
-msgid "SCREEN_TEXTURE mip-maps"
+msgid "``SCREEN_TEXTURE`` mip-maps"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:28
@@ -68,125 +68,373 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:32
+msgid "``DEPTH_TEXTURE``"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:34
+msgid ""
+"While GLES2 supports ``DEPTH_TEXTURE`` in shaders, it may not work on some "
+"old hardware (especially mobile)."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:37
 #, fuzzy
 msgid "Color space"
 msgstr "Farbe"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:34
-msgid ""
-"Shading in GLES3 takes place in linear color space while in GLES2 it takes "
-"place in sRGB space. While this is a very important distinction for graphics "
-"programmers, for everyone else it means that, in GLES3 shaders, you need to "
-"convert to sRGB before outputting your final color or else your colors will "
-"appear washed out and over-bright."
-msgstr ""
-
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:39
 msgid ""
-"You do so with the following line of code at the end of the fragment shader:"
+"GLES2 and GLES3 are in different color spaces. This means that colors will "
+"appear slightly different between them  especially when lighting is used."
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:45
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:42
 msgid ""
-"GLES2 does not need this. If your game is going to use both GLES2 and GLES3, "
-"wrap it in an ``if`` statement checking to see if the output is in sRGB, "
-"using ``OUTPUT_IS_SRGB``."
+"If your game is going to use both GLES2 and GLES3, you can use an ``if`` "
+"statement check and see if the output is in sRGB, using ``OUTPUT_IS_SRGB``. "
+"``OUTPUT_IS_SRGB`` is ``true`` in GLES2 and ``false`` in GLES3."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:47
+#, fuzzy
+msgid "HDR"
+msgstr "HUD"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
+msgid ""
+"GLES is not capable of using High Dynamic Range (HDR) rendering features. If "
+"HDR is set for your project, or for a given viewport, Godot will still user "
+"Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` range."
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:54
-msgid "``OUTPUT_IS_SRGB`` is ``true`` in GLES2 and ``false`` in GLES3."
-msgstr ""
-
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:57
 msgid "SpatialMaterial features"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:56
 msgid ""
 "In GLES2, the following advanced rendering features in the :ref:"
 "`SpatialMaterial <class_SpatialMaterial>` are missing:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:58
 msgid "Refraction"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
 msgid "Subsurface scattering"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:63
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:60
 msgid "Anisotropy"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:64
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
 msgid "Clearcoat"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:65
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
 msgid "Depth mapping"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:67
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:64
+msgid "When using SpatialMaterials they will not even appear in the editor."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:66
 msgid ""
-"The option to use them may appear in custom :ref:`ShaderMaterials "
-"<class_ShaderMaterial>`, however, they will be non-functional. For example, "
-"you will still be able to set ``SSS`` (which normally adds subsurface "
+"In custom :ref:`ShaderMaterials <class_ShaderMaterial>`, you can set values "
+"for these features but they will be non-functional. For example, you will "
+"still be able to set the ``SSS`` built-in (which normally adds subsurface "
 "scattering) in your shader, but nothing will happen."
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:72
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:71
 #, fuzzy
 msgid "Environment features"
 msgstr "Umgebungsvariablen"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:74
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:73
 msgid ""
 "In GLES2, the following features in the :ref:`Environment "
 "<class_Environment>` are missing:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:75
 msgid "Auto exposure"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:77
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
 msgid "Tonemapping"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:78
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:77
 msgid "Screen space reflections"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:79
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:78
 msgid "Screen space ambient occlusion"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:80
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:79
 msgid "Depth of field"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:81
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:80
 msgid "Glow (also known as bloom)"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:82
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:81
 msgid "Adjustment"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:84
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:83
 msgid "That means that in GLES2 environments you can only set:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:86
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:85
 msgid "Sky (including procedural sky)"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:87
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:86
 #, fuzzy
 msgid "Ambient light"
 msgstr "Lichter hinzufügen"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:88
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:87
 msgid "Fog"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:90
+msgid "GIProbes"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:92
+msgid ""
+":ref:`GIProbes <class_GIProbe>` do not work in GLES2. Instead use :ref:"
+"`Baked Lightmaps <class_BakedLightmap>`. For a description of how baked "
+"lightmaps work see the :ref:`Baked Lightmaps tutorial <doc_baked_lightmaps>`."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:96
+msgid "Contact shadows"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:98
+msgid ""
+"The ``shadow_contact`` property of :ref:`Lights <class_Light>` is not "
+"supported in GLES2 and so does nothing."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:101
+msgid "Light performance"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:103
+msgid ""
+"In GLES2, performance scales poorly with several lights, as each light is "
+"processed in a separate render pass (in opposition to GLES3 which is all "
+"done in a single pass). Try to limit scenes to as few lights as possible in "
+"order to achieve greatest performance."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:108
+msgid "Texture compression"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:110
+msgid ""
+"On mobile, GLES2 requires ETC texture compression, while GLES3 requires "
+"ETC2. ETC2 is enabled by default, so if exporting to mobile using GLES2 make "
+"sure to set the project setting ``rendering/vram_compression/import_etc`` "
+"and then reimport textures."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:115
+#, fuzzy
+msgid "Blend shapes"
+msgstr "Collision Shapes"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:117
+msgid "Blend shapes are not supported in GLES2."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:120
+msgid "Shading language"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:122
+msgid ""
+"GLES3 provides many built-in functions that GLES2 does not. Below is a list "
+"of functions that are not available or are have limited support in GLES2."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:125
+#, fuzzy
+msgid ""
+"For a complete list of built-in GLSL functions see the :ref:`Shading "
+"Language doc <doc_shading_language>`."
+msgstr ""
+"Genauere Informationen über Godots Shading Language gibt es im eigenen "
+"Artikel: :ref:`Shading Language <doc_shading_language>`"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:128
+msgid "Function"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:128
+msgid "Note"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:130
+msgid "vec_type **sinh** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:132
+msgid "vec_type **cosh** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:134
+msgid "vec_type **tanh** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:136
+msgid "vec_type **asinh** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:138
+msgid "vec_type **acosh** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:140
+msgid "vec_type **atanh** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:142
+msgid "vec_type **round** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:144
+msgid "vec_type **roundEven** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:146
+msgid "vec_type **trunc** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:148
+msgid "vec_type **modf** ( vec_type x, out vec_type i )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:150
+msgid "vec_bool_type **isnan** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:152
+msgid "vec_bool_type **isinf** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:154
+msgid "vec_int_type **floatBitsToInt** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:156
+msgid "vec_uint_type **floatBitsToUint** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:158
+msgid "vec_type **intBitsToFloat** ( vec_int_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:160
+msgid "vec_type **uintBitsToFloat** ( vec_uint_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:162
+msgid "mat_type **outerProduct** ( vec_type, vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:164
+msgid "mat_type **transpose** ( mat_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:166
+msgid "float **determinant** ( mat_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:168
+msgid "mat_type **inverse** ( mat_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:170
+msgid "ivec2 **textureSize** ( sampler2D_type s, int lod )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:172
+msgid "ivec2 **textureSize** ( samplerCube s, int lod )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:174
+msgid "vec4_type **texture** ( sampler2D_type s, vec2 uv [, float bias] )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:174
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:176
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:178
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:180
+msgid "**bias** not available in vertex shader"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:176
+msgid "vec4_type **texture** ( samplerCube s, vec3 uv [, float bias] )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:178
+msgid "vec4_type **textureProj** ( sampler2D_type s, vec3 uv [, float bias] )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:180
+msgid "vec4_type **textureProj** ( sampler2D_type s, vec4 uv [, float bias] )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:182
+msgid "vec4_type **textureLod** ( sampler2D_type s, vec2 uv, float lod )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:182
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:184
+msgid "Only available in vertex shader on some hardware"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:184
+msgid "vec4_type **textureLod** ( samplerCube s, vec3 uv, float lod )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:186
+msgid "vec4_type **textureProjLod** ( sampler2D_type s, vec3 uv, float lod )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:186
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:188
+msgid "Only available in vertex shader"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:188
+msgid "vec4_type **textureProjLod** ( sampler2D_type s, vec4 uv, float lod )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:190
+msgid "vec4_type **texelFetch** ( sampler2D_type s, ivec2 uv, int lod )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:192
+msgid "vec_type **dFdx** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:194
+msgid "vec_type **dFdy** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:196
+msgid "vec_type **fwidth** ( vec_type )"
 msgstr ""

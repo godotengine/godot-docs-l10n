@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:4
 msgid "Introduction to the buildsystem"
-msgstr ""
+msgstr "Введение в систему сборки"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:9
 msgid "SCons"
@@ -34,6 +34,12 @@ msgid ""
 "There are many reasons why we have chosen SCons over other alternatives, for "
 "example:"
 msgstr ""
+"Godot использует `SCons <https://www.scons.org/>`__ для сборки. Мы любим "
+"его, и мы не намерены изменять его на что-то другое. Мы даже не уверены что "
+"другие системы сборки вообще могут осуществить задачу по сборке Godot. Мы "
+"постоянно получаем запросы на изменение системы сборки на CMake, или Visual "
+"Studio, но это не произойдёт. Существуют много причин по которым мы выбрали "
+"SCons из всех возможных например:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:18
 msgid ""
@@ -41,6 +47,9 @@ msgid ""
 "mobile platforms, many consoles, and many web-based platforms (such as HTML5 "
 "and Chrome PNACL)."
 msgstr ""
+"Godot может быть скомпилирован для множества различных платформ. Все ПК "
+"платформы, все мобильные платформы, множество консолей, и множество веб-"
+"платформ (такие как HTML5 и Chrome PNACL)."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:21
 msgid ""
@@ -49,6 +58,10 @@ msgid ""
 "reconfiguring and rebuilding the project each time. SCons can do this with "
 "no sweat, without breaking the builds."
 msgstr ""
+"Разработчикам часто нужно компилировать для множества платформ **в одно и то "
+"же время**, или даже разных целей на одной платформе. Они не хотят "
+"перенастраивать и перестраивать проект каждый раз. SCons позволяет сделать "
+"это без лишней головной боли, без ломания сборок."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:25
 msgid ""
@@ -56,6 +69,9 @@ msgid ""
 "additions, removals etc. You have more chances to die struck by lightning "
 "than needing to clean and rebuild in SCons."
 msgstr ""
+"SCons *никогда* не сломает сборку вне зависимости от количества изменений, "
+"конфигураций, дополнений, удалений итд. Вы имеете больше шансов умереть от "
+"попадания молнии чем нужды в очистке и перестройке SCons."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:28
 msgid ""
@@ -65,6 +81,11 @@ msgid ""
 "write in an actual programming language (like Python) rather than using a "
 "mostly macro-based language only meant for building."
 msgstr ""
+"Процесс сборки Godot не прост. Множество файлов созданы в "
+"коде(связующие(binders)), другие прошли через парсинг (шейдеры), а другие "
+"нуждаются в тонкой настройке (плагины). Всё это требует сложной логики "
+"которая может бы легко написана на подходящем языке программирования "
+"(например Python) чем использовать язык с макросами нужным только для сборки."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:33
 msgid ""
@@ -72,12 +93,17 @@ msgid ""
 "has a specific detection process, and all these must be handled as specific "
 "cases with special code written for each."
 msgstr ""
+"Процесс сборки Godot широко использует инструменты кросс-компиляции. Каждая "
+"платформа имеет специфический процесс обнаружения, и все они должны быть "
+"обработаны в специальном коде написанном для каждого."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:37
 msgid ""
 "So, please try to keep an open mind and get at least a little familiar with "
 "it if you are planning to build Godot yourself."
 msgstr ""
+"Так что, пожалуйста имейте это ввиду и постарайтесь изучить это лучше если "
+"вы хотите собирать Godot самостоятельно."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:41
 msgid "Setup"
@@ -90,6 +116,10 @@ msgid ""
 "`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`, :ref:"
 "`doc_compiling_for_windows` and :ref:`doc_compiling_for_x11`."
 msgstr ""
+"Пожалуйста изучите документацию для :ref:`doc_compiling_for_android`, :ref:"
+"`doc_compiling_for_ios`, :ref:`doc_compiling_for_osx`, :ref:"
+"`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`, :ref:"
+"`doc_compiling_for_windows` и :ref:`doc_compiling_for_x11`."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:45
 msgid ""
@@ -97,10 +127,14 @@ msgid ""
 "Tools Command Prompt for VS 2017`` or similar, depending on your install, "
 "instead of the standard Windows command prompt to enter the commands below."
 msgstr ""
+"Заметьте что для **Windows/Visual Studio**, вам нужно использовать ``x86_x64 "
+"Cross Tools Command Prompt for VS 2017`` или похожий, зависит от ваших "
+"установок, вместо стандартной командного терминала Windows для ввода команд "
+"ниже."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:48
 msgid "Platform selection"
-msgstr ""
+msgstr "Выбор платформы"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:50
 msgid ""
@@ -109,22 +143,29 @@ msgid ""
 "available platforms. The build requirements for each platform are described "
 "in the rest of this tutorial section."
 msgstr ""
+"Сборка Godot начнется с обнаружения платформ на которых она может собраться. "
+"Если требуемая платформа не обнаружится она просто не появится в списке "
+"доступных платформ. Требования сборки для каждой из платформ будут описаны в "
+"оставшейся части руководства."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:55
 msgid "SCons is invoked by just calling ``scons``."
-msgstr ""
+msgstr "SCons вызывается простым вызовом ``scons``."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:57
 msgid ""
 "However, this will do nothing except list the available platforms, for "
 "example:"
 msgstr ""
+"Хотя, не произойдёт ничего кроме показа списка доступных платформ, например:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:78
 msgid ""
 "To build for a platform (for example, x11), run with the ``platform=`` (or "
 "just ``p=`` to make it short) argument:"
 msgstr ""
+"Для сборки под платформу (например, x11), добавьте аргумент ``platform=`` "
+"(или просто ``p=`` для краткости):"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:85
 msgid ""
@@ -133,34 +174,44 @@ msgid ""
 "cores will be used for the build. Or just leave it using one core, so you "
 "can use your computer for something else :)"
 msgstr ""
+"Это запустит процесс сборки, который займёт время. Если вы хотите чтобы "
+"scons строил быстрее, используйте параметр ``-j <числ ядер>`` для "
+"определения как много ядер вашего процессора использовать при сборке. Или "
+"просто оставьте использовать одно ядро, зато вы сможете использовать "
+"компьютер для чего-то другого :)"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:90
 msgid "Example for using 4 cores:"
-msgstr ""
+msgstr "Например для использования 4 ядер:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:97
 msgid "Resulting binary"
-msgstr ""
+msgstr "Полученный бинарный файл"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:99
 msgid ""
 "The resulting binaries will be placed in the bin/ subdirectory, generally "
 "with this naming convention:"
 msgstr ""
+"Полученные исполняемые файлы помещаются в под-директорию bin/, и называются "
+"в соответствии с данными правилами наименования:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:106
 msgid "For the previous build attempt the result would look like this:"
-msgstr ""
+msgstr "Для предыдущего примера сборки результат будет выглядеть так:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:113
 msgid ""
 "This means that the binary is for X11, is not optimized, has tools (the "
 "whole editor) compiled in, and is meant for 64 bits."
 msgstr ""
+"Это означает что бинарный файл для X11, если не оптимизирован, имеет "
+"инструменты (целый редактор) скомпилированный с ним, и нацелен на 64 битную "
+"платформу."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:116
 msgid "A Windows binary with the same configuration will look like this."
-msgstr ""
+msgstr "Бинарный файл для Windows с той же конфигурацией будет выглядеть так."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:123
 msgid ""
@@ -170,12 +221,19 @@ msgid ""
 "are needed (which can be either downloaded from `godotengine.org <https://"
 "godotengine.org/>`__, or you can build them yourself)."
 msgstr ""
+"Просто скопируйте этот бинарный файл куда хотите, так как он содержит "
+"менеджер проектов, редактор и все необходимое для запуска игры. Однако, в "
+"нём нет данных для экспорта на различные платформы. Для этого вам нужно "
+"получить шаблоны экспорта (которые можно скачать с `godotengine.org <https://"
+"godotengine.org/>`__, или вы можете построить их самостоятельно)."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:129
 msgid ""
 "Aside from that, there are a few standard options that can be set in all "
 "build targets, and which will be explained below."
 msgstr ""
+"Помимо этого, есть несколько стандартных параметров для установки во всех "
+"целях сборки, и которые будут описаны ниже."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:133
 msgid "Tools"
@@ -187,20 +245,26 @@ msgid ""
 "disabled for everything else. Disabling tools produces a binary that can run "
 "projects but that does not include the editor or the project manager."
 msgstr ""
+"Инструменты(Tools) включены по умолчанию для всех ПК целей (Linux, Windows, "
+"macOS), но отключены для всего остального. Отключение инструментов создаёт "
+"бинарный файл который годится для запуска проектов но не включает в себя "
+"редактор или менеджер проектов."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:145
 msgid "Target"
-msgstr ""
+msgstr "Цель"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:147
 msgid "Target controls optimization and debug flags. Each mode means:"
-msgstr ""
+msgstr "Цель контролирует оптимизации и флаги отладки. Каждый режим означает:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:149
 msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
 msgstr ""
+"**debug**: Сборка с символами отладки C++, включенными проверками во время "
+"выполнения (выполняет проверки и сообщает об ошибках) и без оптимизации."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:151
 msgid ""
@@ -208,6 +272,9 @@ msgid ""
 "keep the runtime checks (performs checks and reports errors). Official "
 "binaries use this configuration."
 msgstr ""
+"**release_debug**: Сборка без символов отладки C++ и оптимизации, но "
+"сохраняет проверку во время выполнения (проверки и сообщения об ошибках). "
+"Официальные бинарные файлы используют эту конфигурацию."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:154
 msgid ""
@@ -215,6 +282,10 @@ msgid ""
 "runtime checks. This target can't be used together with tools=yes, as the "
 "tools require some debug functionality and run-time checks to run."
 msgstr ""
+"**release**: Сборка без символов, с оптимизацией и практически без проверок "
+"времени выполнения. Эта цель не может быть использована с tools=yes, так как "
+"инструменты требуют некоторой отладочной функциональности и проверок во "
+"время выполнения."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:163
 msgid ""
@@ -222,24 +293,30 @@ msgid ""
 "debug with tools enabled). When optimization is enabled (release) it appends "
 "the \".opt\" suffix."
 msgstr ""
+"Этот флаг добавляет суффикс \".debug\" (для отладки), или \".tools\" (для "
+"отладки с включенными инструментами). Когда оптимизация включена (релиз) "
+"добавляется суффикс \".opt\"."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:168
 msgid "Bits"
-msgstr ""
+msgstr "Биты"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:170
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
 msgstr ""
+"Биты нужны для контроля версии CPU или OS необходимые для запуска "
+"исполняемых файлов. Они сделаны преимущественно для десктопных платформ и "
+"игнорируются где-то ещё."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
 msgid "**32**: Build binaries for 32 bits platform."
-msgstr ""
+msgstr "**32**: Строит бинарные файлы для 32-битной платформы."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
 msgid "**64**: Build binaries for 64 bits platform."
-msgstr ""
+msgstr "**64**: Строит бинарные файлы для 64-битной платформы."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:176
 msgid ""
@@ -247,16 +324,21 @@ msgid ""
 "depends on the host platform (if not cross compiling), on Mac it defaults to "
 "64 bits and on Windows it defaults to 32 bits."
 msgstr ""
+"**default**: Отдаёт выбор на усмотрение системе сборки. На Linux это зависит "
+"от запускаемой платформы (если не кросс-компиляция), на Mac это 64-бит, а на "
+"Windows - 32-бит."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:184
 msgid ""
 "This flag appends \".32\" or \".64\" suffixes to resulting binaries when "
 "relevant."
 msgstr ""
+"Когда необходимо этот флаг добавляет суффиксы \".32\" или \".64\" полученным "
+"бинарным файлам."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
 msgid "Other build options"
-msgstr ""
+msgstr "Другие параметры сборки"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
 msgid ""
@@ -264,12 +346,17 @@ msgid ""
 "Godot should be built (compiler, debug options, etc.) as well as the "
 "features to include/disable."
 msgstr ""
+"Существуют несколько других параметров сборки которые вы можете использовать "
+"для настройки способа сборки Godot (компилятор, опции отладки, итд.) также "
+"как и возможности для включения/выключения."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:194
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
 msgstr ""
+"Посмотрите вывод ``scons --help`` для подробностей по этим командам для "
+"версии которую вы хотите скомпилировать."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
 msgid "Export templates"
@@ -282,12 +369,19 @@ msgid ""
 "build them yourself (in case you want newer ones, you are using custom "
 "modules, or simply don't trust your own shadow)."
 msgstr ""
+"Официальные шаблоны экспорта загружаются с официального сайта Godot: "
+"`godotengine.org <https://godotengine.org/>`__. Однако, вы можете захотеть "
+"собрать их самостоятельно (в случае если вы хотите более свежих, или вы "
+"хотите подключить свои модули, или просто не доверяете собственной тени)."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:205
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most are just optimized binaries or packages for each platform:"
 msgstr ""
+"Если вы загрузите официальные шаблоны экспорта и распакуете их, вы обратите "
+"внимание что большинство из них это просто оптимизированные бинарные файлы "
+"или пакеты для каждой платформы:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
 msgid ""
@@ -295,6 +389,9 @@ msgid ""
 "platform in this same tutorial section. Each platform explains how to create "
 "its own template."
 msgstr ""
+"Для создания собственных, просто следуйте инструкциями описанным для каждой "
+"платформы в соответствующем разделе документации. Для каждой платформы "
+"объясняется как создавать свой шаблон."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:232
 msgid ""
@@ -304,3 +401,7 @@ msgid ""
 "place, but Linux has the advantage of being the easier platform to set this "
 "up."
 msgstr ""
+"Если вы разрабатываете для нескольких платформ, macOS определённо самая "
+"удобная платформа сборки для кросс-компиляции, поскольку вы можете провести "
+"кросс-компиляцию почти для каждой цели (исключая UWP). Linux и Windows на "
+"втором месте, но Linux имеет преимущество в лёгкости установки этой системы."

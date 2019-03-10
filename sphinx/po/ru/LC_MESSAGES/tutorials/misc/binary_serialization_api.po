@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:4
 msgid "Binary serialization API"
-msgstr ""
+msgstr "API двоичной сериализации"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:7
 msgid "Introduction"
@@ -33,10 +33,15 @@ msgid ""
 "the packet APIs for :ref:`class_PacketPeer`. This format is not used for "
 "binary scenes and resources."
 msgstr ""
+"Godot имеет простой API сериализации основанный на Variant. Он используется "
+"эффективной  конвертации типов данных в массивы байтов. Этот API "
+"используется в функциях ``get_var`` и ``store_var`` класса :ref:`class_File` "
+"а также в пакетном API для класса :ref:`class_PacketPeer`. Этот формат не "
+"используется для двоичных сцен и ресурсов."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:16
 msgid "Packet specification"
-msgstr ""
+msgstr "Пакетная сериализация"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:18
 msgid ""
@@ -44,6 +49,9 @@ msgid ""
 "endian encoded. All packets have a 4 byte header representing an integer, "
 "specifying the type of data:"
 msgstr ""
+"Пакет спроектирован так чтобы всегда укладываться в 4 байта. Все значения "
+"закодированы от младшего к старшему(little endian). Все пакеты имеют "
+"целочисленный заголовок в 4 байта, определяющий тип данных:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:92
@@ -432,6 +440,8 @@ msgid ""
 "Following this is the actual packet contents, which varies for each type of "
 "packet:"
 msgstr ""
+"Далее показано содержание пакетов, которое отличается для каждого типа "
+"пакета:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:86
 msgid "0: null"
@@ -470,7 +480,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:452
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:467
 msgid "Offset"
-msgstr ""
+msgstr "Сдвиг"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:92
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:101
@@ -501,7 +511,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:452
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:467
 msgid "Len"
-msgstr ""
+msgstr "Длина"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:92
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:101
@@ -558,7 +568,7 @@ msgstr "Integer"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:94
 msgid "0 for False, 1 for True"
-msgstr ""
+msgstr "0 для False, 1 для True"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:98
 msgid "2: :ref:`int<class_int>`"
@@ -566,7 +576,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:103
 msgid "Signed, 32-Bit Integer"
-msgstr ""
+msgstr "32-битное Целое, со знаком"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:107
 msgid "3: :ref:`float<class_float>`/real"
@@ -641,7 +651,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:112
 msgid "IEE 754 32-Bits Float"
-msgstr ""
+msgstr "IEE 754 32-Битное Число с плавающей точкой"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:116
 msgid "4: :ref:`String<class_string>`"
@@ -649,7 +659,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:121
 msgid "String Length (in Bytes)"
-msgstr ""
+msgstr "Длина строки (в Байтах)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:123
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:321
@@ -663,18 +673,18 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:344
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:430
 msgid "Bytes"
-msgstr ""
+msgstr "Байт"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:123
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:321
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:344
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:430
 msgid "UTF-8 Encoded String"
-msgstr ""
+msgstr "Закодированная в UTF-8 Строка"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:126
 msgid "This field is padded to 4 bytes."
-msgstr ""
+msgstr "Это поле укладывается в 4 байта."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:129
 msgid "5: :ref:`Vector2<class_vector2>`"
@@ -687,7 +697,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:443
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 msgid "X Coordinate"
-msgstr ""
+msgstr "Координата по оси X"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:136
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:147
@@ -696,7 +706,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:445
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:458
 msgid "Y Coordinate"
-msgstr ""
+msgstr "Координата по оси Y"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:140
 msgid "6: :ref:`Rect2<class_rect2>`"
@@ -705,12 +715,12 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:149
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:228
 msgid "X Size"
-msgstr ""
+msgstr "Размер по оси X"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:151
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:230
 msgid "Y Size"
-msgstr ""
+msgstr "Размер по оси Y"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:155
 msgid "7: :ref:`Vector3<class_vector3>`"
@@ -720,7 +730,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:226
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:460
 msgid "Z Coordinate"
-msgstr ""
+msgstr "Координата по оси Z"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:168
 msgid "8: :ref:`Transform2D<class_transform2d>`"
@@ -768,19 +778,19 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:192
 msgid "Normal X"
-msgstr ""
+msgstr "Нормаль по оси X"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:194
 msgid "Normal Y"
-msgstr ""
+msgstr "Нормаль по оси Y"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:196
 msgid "Normal Z"
-msgstr ""
+msgstr "Нормаль по оси Z"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:198
 msgid "Distance"
-msgstr ""
+msgstr "Расстояние"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:202
 msgid "10: :ref:`Quat<class_quat>`"
@@ -788,19 +798,19 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:207
 msgid "Imaginary X"
-msgstr ""
+msgstr "Воображаемое значение по оси X"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:209
 msgid "Imaginary Y"
-msgstr ""
+msgstr "Воображаемое значение по оси Y"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:211
 msgid "Imaginary Z"
-msgstr ""
+msgstr "Воображаемое значение по оси Z"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:213
 msgid "Real W"
-msgstr ""
+msgstr "Настоящее значение по оси W"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:217
 msgid "11: :ref:`AABB<class_aabb>`"
@@ -808,7 +818,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:232
 msgid "Z Size"
-msgstr ""
+msgstr "Размер по оси Z"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:236
 msgid "12: :ref:`Basis<class_basis>`"
@@ -879,22 +889,22 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:297
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Red (0..1)"
-msgstr ""
+msgstr "Красный (0..1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:299
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:473
 msgid "Green (0..1)"
-msgstr ""
+msgstr "Зелёный (0..1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:301
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 msgid "Blue (0..1)"
-msgstr ""
+msgstr "Синий (0..1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:303
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "Alpha (0..1)"
-msgstr ""
+msgstr "Альфа (0..1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:307
 msgid "15: :ref:`NodePath<class_nodepath>`"
@@ -904,30 +914,31 @@ msgstr ""
 msgid ""
 "String Length, or New Format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
 msgstr ""
+"Длина строки, или Новый Формат (val&0x80000000!=0 и NameCount=val&0x7FFFFFFF)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:316
 msgid "For old format:"
-msgstr ""
+msgstr "Для старого формата:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:324
 msgid "Padded to 4 bytes."
-msgstr ""
+msgstr "Укладывается в 4 байта."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:327
 msgid "For new format:"
-msgstr ""
+msgstr "Для нового формата:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:332
 msgid "Sub-Name Count"
-msgstr ""
+msgstr "Количество Под-Имён"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:334
 msgid "Flags (absolute: val&1 != 0 )"
-msgstr ""
+msgstr "Флаги (абсолютные: val&1 != 0 )"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:337
 msgid "For each Name and Sub-Name"
-msgstr ""
+msgstr "Для каждого Имени и Под-Имени"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:342
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:428
@@ -937,7 +948,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:342
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:428
 msgid "String Length"
-msgstr ""
+msgstr "Длина строки"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:344
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:430
@@ -946,7 +957,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:347
 msgid "Every name string is padded to 4 bytes."
-msgstr ""
+msgstr "Каждая строка имени уложена в 4 байта."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:350
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
@@ -970,6 +981,8 @@ msgid ""
 "Then what follows is, for amount of \"elements\", pairs of key and value, "
 "one after the other, using this same format."
 msgstr ""
+"Из этого следует, что количество \"elements\", пар ключ/значение, один за "
+"другим, использует тот же формат."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:368
 msgid "19: :ref:`Array<class_array>`"
@@ -980,6 +993,8 @@ msgid ""
 "Then what follows is, for amount of \"elements\", values one after the "
 "other, using this same format."
 msgstr ""
+"Из этого следует, что количество \"elements\", значений одним за другим, "
+"использует тот же формат."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:380
 msgid "20: :ref:`PoolByteArray<class_poolbytearray>`"
@@ -987,7 +1002,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:385
 msgid "Array Length (Bytes)"
-msgstr ""
+msgstr "Длина Массива (в Байтах)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:387
 msgid "8..8+length"
@@ -995,15 +1010,15 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:387
 msgid "Byte"
-msgstr ""
+msgstr "Байт"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:387
 msgid "Byte (0..255)"
-msgstr ""
+msgstr "Байт (0..255)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:390
 msgid "The array data is padded to 4 bytes."
-msgstr ""
+msgstr "Данные массива укладываются в 4 байта."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:393
 msgid "21: :ref:`PoolIntArray<class_poolintarray>`"
@@ -1011,7 +1026,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:398
 msgid "Array Length (Integers)"
-msgstr ""
+msgstr "Длина Массива (Целые числа)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:400
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:411
@@ -1020,7 +1035,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:400
 msgid "32 Bits Signed Integer"
-msgstr ""
+msgstr "32 Битное Целое Число"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:404
 msgid "22: :ref:`PoolRealArray<class_poolrealarray>`"
@@ -1028,11 +1043,11 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:409
 msgid "Array Length (Floats)"
-msgstr ""
+msgstr "Длина Массива (Числа с плавающей точкой)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:411
 msgid "32 Bits IEE 754 Float"
-msgstr ""
+msgstr "32 Битное IEE 754 Число с плавающей точкой"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:415
 msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"
@@ -1040,15 +1055,15 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:420
 msgid "Array Length (Strings)"
-msgstr ""
+msgstr "Длина Массива (Строки)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:423
 msgid "For each String:"
-msgstr ""
+msgstr "Для каждой Строки:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:433
 msgid "Every string is padded to 4 bytes."
-msgstr ""
+msgstr "Каждая строка укладывается в 4 байта."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:436
 msgid "24: :ref:`PoolVector2Array<class_poolvector2array>`"
@@ -1058,7 +1073,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:454
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:469
 msgid "Array Length"
-msgstr ""
+msgstr "Длина Массива"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:443
 msgid "8..8+length\\*8"

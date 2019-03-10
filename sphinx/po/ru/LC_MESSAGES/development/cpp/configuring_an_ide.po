@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:4
 msgid "Configuring an IDE"
-msgstr ""
+msgstr "Настройка IDE"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:6
 msgid ""
 "We assume that you already `cloned <https://github.com/godotengine/godot>`_ "
 "and :ref:`compiled <toc-devel-compiling>` Godot."
 msgstr ""
+"На этой стадии мы предполагаем что вы уже `склонировали <https://github.com/"
+"godotengine/godot>`_ и :ref:`скомпилировали <toc-devel-compiling>` Godot."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:9
 msgid ""
@@ -33,35 +35,45 @@ msgid ""
 "on the command line, but if you want to work with an IDE (Integrated "
 "Development Environment), here are setup instructions for some popular ones:"
 msgstr ""
+"Вы можете легко разрабатывать Godot из любого текстового редактора и "
+"вызывать ``scons`` из командной строки, но если вы хотите разрабатывать с "
+"помощью IDE (Integrated Development Environment), здесь вы можете найти "
+"инструкции для самых популярных:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:13
 msgid ""
 ":ref:`Qt Creator <doc_configuring_an_ide_qtcreator>` (all desktop platforms)"
 msgstr ""
+":ref:`Qt Creator <doc_configuring_an_ide_qtcreator>` (все десктопные "
+"платформы)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:14
 msgid ""
 ":ref:`Kdevelop <doc_configuring_an_ide_kdevelop>` (all desktop platforms)"
 msgstr ""
+":ref:`Kdevelop <doc_configuring_an_ide_kdevelop>` (все десктопные платформы)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:15
 msgid ":ref:`Xcode <doc_configuring_an_ide_xcode>` (macOS)"
-msgstr ""
+msgstr ":ref:`Xcode <doc_configuring_an_ide_xcode>` (macOS)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:16
 msgid ":ref:`Visual Studio <doc_compiling_for_windows_install_vs>` (Windows)"
-msgstr ""
+msgstr ":ref:`Visual Studio <doc_compiling_for_windows_install_vs>` (Windows)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:17
 msgid ""
 ":ref:`Visual Studio Code<doc_configuring_an_ide_vscode>` (all desktop "
 "platforms)"
 msgstr ""
+":ref:`Visual Studio Code<doc_configuring_an_ide_vscode>` (все десктопные "
+"платформы)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:19
 msgid ""
 "It is possible to use other IDEs, but their setup is not documented yet."
 msgstr ""
+"Возможно использовать и другие IDE, но их настройка ещё не задокументирована."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:24
 msgid "Qt Creator"
@@ -69,15 +81,16 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:27
 msgid "Importing the project"
-msgstr ""
+msgstr "Импортирование проекта"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:29
 msgid "Choose *New Project* -> *Import Project* -> *Import Existing Project*."
 msgstr ""
+"Выберите *New Project* -> *Import Project* -> *Import Existing Project*."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:33
 msgid "Set the path to your Godot root directory and enter the project name."
-msgstr ""
+msgstr "Установить путь к корневой директории Godot и введите имя проекта."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:37
 msgid ""
@@ -86,36 +99,42 @@ msgid ""
 "for buildsystem files, \\*.java for Android development, \\*.mm for macOS. "
 "Click \"Next\"."
 msgstr ""
+"Здесь вы можете выбрать какие папки и файлы будут видимы в проекте. Файлы C/C"
+"++ добавляются автоматически. Потенциально хорошо добавить: \\*.py для "
+"конфигурационных файлов, \\*.java для разработки под Android, \\*.mm для "
+"macOS. Щёлкните \"Next\"."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:43
 msgid "Click *Finish*."
-msgstr ""
+msgstr "Щёлкните *Finish*."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:44
 msgid ""
 "Add a line containing ``.`` to *project_name.includes* to get working code "
 "completion."
 msgstr ""
+"Добавьте строку содержащую ``.`` в *project_name.includes* для включения "
+"функции авто-завершения кода."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:49
 msgid "Build and run"
-msgstr ""
+msgstr "Сборка и запуск"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:51
 msgid "Build configuration:"
-msgstr ""
+msgstr "Конфигурация сборки:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:53
 msgid "Click on *Projects* and open the *Build* tab."
-msgstr ""
+msgstr "Щёлкните *Projects* и откройте вкладку *Build*."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:54
 msgid "Delete the pre-defined ``make`` build step."
-msgstr ""
+msgstr "Удалите предустановленный этап сборки ``make``."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:58
 msgid "Click *Add Build Step* -> *Custom Process Step*."
-msgstr ""
+msgstr "Щёлкните *Add Build Step* -> *Custom Process Step*."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:62
 msgid ""
@@ -124,42 +143,54 @@ msgid ""
 "environment variable, so you may have to use the full path to the SCons "
 "binary."
 msgstr ""
+"Выберите ``scons`` во поле *Command*. Если он будет ругаться 'Could not "
+"start process \"scons\"', это будет означать что ``scons`` не установлен в "
+"переменной среды ``PATH``, так что вам нужно будет установить полный путь к "
+"бинарнику SCons."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:65
 msgid ""
 "Fill the *Arguments* field with your compilation options. (e.g.: ``p=x11 "
 "target=debug -j 4``)"
 msgstr ""
+"Заполните поле *Arguments* вашими опциями компиляции. (напр.: ``p=x11 "
+"target=debug -j 4``)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:69
 msgid "Run configuration:"
-msgstr ""
+msgstr "Конфигурация запуска:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:71
 msgid "Open the *Run* tab."
-msgstr ""
+msgstr "Откройте вкладку *Run*."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:72
 msgid ""
 "Point the *Executable* to your compiled Godot binary (e.g: ``%{buildDir}/bin/"
 "godot.x11.opt.tools.64``)"
 msgstr ""
+"Настройте *Executable* на скомпилированный бинарный файл Godot (напр.: ``"
+"%{buildDir}/bin/godot.x11.opt.tools.64``)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:73
 msgid ""
 "If you want to run a specific game or project, point *Working directory* to "
 "the game directory."
 msgstr ""
+"Если вы хотите запустить определённую игру или проект, настройте *Working "
+"directory* на директорию игры."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:74
 msgid ""
 "If you want to run the editor, add ``-e`` to the *Command line arguments* "
 "field."
 msgstr ""
+"Если вы хотите запустить редактор, добавьте ``-e`` в поле *Command line "
+"arguments*."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:79
 msgid "Updating sources after pulling latest commits"
-msgstr ""
+msgstr "Обновление источников после получения последних коммитов"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:81
 msgid ""
@@ -171,8 +202,16 @@ msgid ""
 "coding in it. A simple way to check these things, is to right click at your "
 "root folder in the \"Projects View\" and click on \"Edit files...\""
 msgstr ""
+"Как разработчик вы обычно хотите часто получать последние коммиты из "
+"главного git репозитория или определённого форка итд. Хотя это приводит к "
+"маленькой проблеме: так как разработка продолжается, исходные файлы (и "
+"папки) добавляются или удаляются. Эти изменения нужно также отразить в ваших "
+"проектных файлах для Qt Creator, чтобы вы смогли продолжить кодинг. "
+"Простейший способ проверки этого, просто кликнуть правой кнопкой мыши по "
+"вашей корневой папке в \"Projects View\" и кликнуть по \"Edit files...\""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:91
+#, fuzzy
 msgid ""
 "Now a new dialog should appear that is similar in functionality to the one "
 "in the third step of the \"Importing the project\" section. Here now you can "
@@ -181,10 +220,15 @@ msgid ""
 "Filter\" button. A simple click on \"Ok\" and you're ready to continue your "
 "work."
 msgstr ""
+"После этого должно появиться диалоговое окно с подобной функциональностью "
+"как в одном из окон из третьего пункта раздела \"Importing the project\". "
+"Здесь вы сможете добавить/удалить определённые файлы и/или папки. Вы можете "
+"выбрать щелчком мыши  или просто кликнув кнопку \"Apply Filter\". Просто "
+"кликните на \"Ok\" и вы сможете продолжить работу."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:99
 msgid "Code style configuration"
-msgstr ""
+msgstr "Конфигурация стилей кода"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:101
 msgid ""
@@ -194,6 +238,11 @@ msgid ""
 "project. You can change this behavior by changing the \"Code Style\" in "
 "*Options* -> *C++*."
 msgstr ""
+"Разработчики должны следовать проектным :ref:`стилям кода "
+"<doc_code_style_guidelines>` и IDE должно помогать им в этом. По умолчанию, "
+"Qt Cretor использует пробелы для отступов что некорректно в проектах на "
+"Godot. Вы можете изменить это поведение в \"Code Style\" в *Options* -> *C+"
+"+*."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:108
 msgid ""
@@ -201,48 +250,55 @@ msgid ""
 "Code Style* button to set a new code style. Set a name for it (e.g. Godot) "
 "and change the Tab policy to be *Tabs Only*."
 msgstr ""
+"Щёлкнув по *Edit* вы измените текущие настройки, после кликните по кнопке "
+"*Copy Built-in Code Style* для установки нового стиля кода. Установить имя "
+"(напр. Godot) и измените настройку вкладок в *Tabs Only*."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:117
-#, fuzzy
 msgid "KDevelop"
-msgstr "Разработка"
+msgstr "KDevelop"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:119
 msgid ""
 "`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
 "desktop platforms."
 msgstr ""
+"`KDevelop <https://www.kdevelop.org>`_ это бесплатная, открытая IDE для всех "
+"десктопных платформ."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:121
 msgid ""
 "You can find a video tutorial `here <https://www.youtube.com/watch?"
 "v=yNVoWQi9TJA>`_. Or you may follow this text version tutorial."
 msgstr ""
+"Вы можете найти видео обучения `здесь <https://www.youtube.com/watch?"
+"v=yNVoWQi9TJA>`_. Или вы можете следовать инструкциям в текстовом виде далее."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:124
 msgid "Start by opening KDevelop and choosing \"open project\"."
-msgstr ""
+msgstr "Начните с открытия KDevelop и выбирания \"open project\"."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:128
 msgid "Choose the directory where you cloned Godot."
-msgstr ""
+msgstr "Выберите директорию где вы склонировали Godot."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:130
 msgid ""
 "On the next screen, choose \"Custom Build System\" for the *Project manager*."
 msgstr ""
+"На следующем экране, выберите \"Custom Build System\" для *Project manager*."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:134
 msgid "Now that the project has been imported, open the project configuration."
-msgstr ""
+msgstr "Теперь, когда проект импортирован, откройте конфигурацию проекта."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:138
 msgid "Add the following includes/imports:"
-msgstr ""
+msgstr "Добавьте следующие инклуды/импорты:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:151
 msgid "Apply the changes."
-msgstr ""
+msgstr "Примените изменения."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:153
 msgid ""
@@ -251,12 +307,18 @@ msgid ""
 "executable then add ``platform=x11 target=debug`` (``platform=osx`` if "
 "you're on macOS) as the arguments."
 msgstr ""
+"Переключитесь на вкладку \"Custom Build System\". Добавьте сонфигурацию "
+"сборки и сохраните бланк директории сборки. Включите утилиты сборки и "
+"добавьте ``scons`` как ваш исполняемый файл и ``platform=x11 target=debug`` "
+"(``platform=osx`` если вы используете macOS) как аргументы."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:160
 msgid ""
 "Next we need to tell KDevelop where to find the binary. From the \"Run\" "
 "menu, choose \"Configure Launches\"."
 msgstr ""
+"Затем вы должны сообщить KDevelop где найти исполняемый файл. Из меню \"Run"
+"\" выберите \"Configure Launches\"."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:165
 msgid ""
@@ -266,14 +328,19 @@ msgid ""
 "name could be different depending on your platform and depending on your "
 "build options)."
 msgstr ""
+"Кликните по \"Add\" если лаунчер отсутствует. Затем добавьте путь к "
+"экзешнику в секции исполнямых файлов. Ваш исполняемый файл должен находиться "
+"в под-директории ``bin/`` и должен иметь имя подобное ``godot.x11.tools.64`` "
+"(имя может быть немного другим в зависимости от вашей платформы и ваших "
+"опций сборки)."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:173
 msgid "That's it! Now you should be good to go :)"
-msgstr ""
+msgstr "Отлично ! Теперь всё хорошо :)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:179
 msgid "Xcode"
-msgstr ""
+msgstr "Xcode"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:182
 msgid "Project setup"
@@ -281,184 +348,202 @@ msgstr "Настройка проекта"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:184
 msgid "Create an Xcode external build project anywhere"
-msgstr ""
+msgstr "Создаёте внешний проект Xcode в любом месте"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:188
 msgid "Set the *Build tool* to the path to scons"
-msgstr ""
+msgstr "Установите *Build tool* на путь до scons"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:190
 msgid "Modify Build Target's Xcode Info Tab:"
-msgstr ""
+msgstr "Измените Цели Сборки во вкладке Xcode Info Tab:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:192
 msgid ""
 "Set *Arguments* to something like: platform=osx tools=yes bits=64 "
 "target=debug"
 msgstr ""
+"Установите *Arguments* на что-то подобное: platform=osx tools=yes bits=64 "
+"target=debug"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:193
 msgid ""
 "Set *Directory* to the path to Godot's source folder. Keep it blank if "
 "project is already there."
 msgstr ""
+"Установите *Directory* на путь к папке исходного кода Godot. Оставьте его "
+"пустым если проект уже установлен."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:194
 msgid "You may uncheck *Pass build settings in environment*"
-msgstr ""
+msgstr "Вы можете снять флажок *Pass build settings in environment*"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:198
 msgid "Add a Command Line Target:"
-msgstr ""
+msgstr "Добавьте Цель Командной Строки:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:200
 msgid ""
 "Go to Xcode File > New > Target... and add a new Xcode command line target"
 msgstr ""
+"Зайдите в Xcode File > New > Target... и добавьте новую цель командной "
+"строки Xcode"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:206
 msgid "Name it something so you know not to compile with this target"
-msgstr ""
+msgstr "Назовите её так, чтобы вы запомнили что её не надо компилировать"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:207
 msgid "e.g. ``GodotXcodeIndex``"
-msgstr ""
+msgstr "напр. ``GodotXcodeIndex``"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:208
 msgid ""
 "Goto the newly created target's *Build Settings* tab and search for *Header "
 "Search Paths*"
-msgstr ""
+msgstr "Перейдите на вкладку *Build Settings* и поищите *Header Search Paths*"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:209
 msgid "Set *Header Search Paths* to an absolute path to Godot's source folder"
 msgstr ""
+"Установите *Header Search Paths* на абсолютный путь к папке исходных кодов "
+"Godot"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:210
 msgid "Make it recursive by adding two \\*'s to the end of the path"
-msgstr ""
+msgstr "Сделайте её рекурсивной добавив две \\* в конец пути"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:211
 msgid "e.g. ``/Users/me/repos/godot-source/\\**``"
-msgstr ""
+msgstr "напр. ``/Users/me/repos/godot-source/\\**``"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:213
 msgid "Add Godot Source to the Project:"
-msgstr ""
+msgstr "Добавьте Исходный Код Godot в Проект:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:215
 msgid "Drag and drop Godot source into project file browser."
-msgstr ""
+msgstr "Перетащите исходный код Godot в браузер файлов проекта."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:216
 msgid "Uncheck *Create External Build System*"
-msgstr ""
+msgstr "Снимите флажок *Create External Build System*"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:220
 msgid "Click Next"
-msgstr ""
+msgstr "Щёлкните Next"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:221
 msgid "Select *create groups*"
-msgstr ""
+msgstr "Выберите *create groups*"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:225
 msgid "Check off only your command line target in the *Add to targets* section"
-msgstr ""
+msgstr "Выберите только свою командную строку цели в разделе *Add to targets*"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:226
 msgid "Click finish. Xcode will now index the files."
-msgstr ""
+msgstr "Щёлкните finish. Xcode начнёт индексировать файлы."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:227
 msgid "Grab a cup of coffee... Maybe make something to eat, too"
-msgstr ""
+msgstr "Примите чашечку кофе... Возможно перекусите, также"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:228
 msgid ""
 "You should have jump to definition, auto completion, and full syntax "
 "highlighting when it is done."
 msgstr ""
+"Вы сможете перейти к определению, настройкам авто завершения, и полной "
+"подсветке синтаксиса когда процесс закончится."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:231
-#, fuzzy
 msgid "Scheme setup"
-msgstr "Настройка сцены"
+msgstr "Настройка схемы"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:233
 msgid "Edit Build Scheme of External Build Target:"
-msgstr ""
+msgstr "Редактируйте Схему Сборки для Внешней Цели Сборки:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:235
 msgid "Open scheme editor of external build target"
-msgstr ""
+msgstr "Откройте редактор схемы внешней цели сборки"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:236
 msgid "Expand the *Build* menu"
-msgstr ""
+msgstr "Разверните меню *Build*"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:237
 msgid "Goto *Post Actions*"
-msgstr ""
+msgstr "Перейдите в *Post Actions*"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:238
 msgid ""
 "Add a new script run action, select your project in ``Provide build settings "
 "from`` as this allows you to use ``${PROJECT_DIR}`` variable."
 msgstr ""
+"Добавьте новый скрипт запуска, выберите ваш проект в ``Provide build "
+"settings from`` так как это позволит вам использовать переменную ``"
+"${PROJECT_DIR}``."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:242
 msgid "Write a script that gives the binary a name that Xcode will recognize"
-msgstr ""
+msgstr "Напишите скрипт чтобы дать имя исполняемому файлу которое поймёт Xcode"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:243
 msgid ""
 "e.g. ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/"
 "godot/bin/godot``"
 msgstr ""
+"напр. ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/"
+"godot/bin/godot``"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:244
 msgid "Build the external build target"
-msgstr ""
+msgstr "Постройте внешнюю цель сборки"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:246
 msgid "Edit Run Scheme of External Build Target:"
-msgstr ""
+msgstr "Редактируйте Схему Запуска во Внешней Цели Сборки:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:248
 msgid "Open the scheme editor again"
-msgstr ""
+msgstr "Откройте редактор схем снова"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:249
 msgid "Click Run"
-msgstr ""
+msgstr "Кликните Run"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:253
 msgid ""
 "Set the *Executable* to the file you linked in your post build action script"
 msgstr ""
+"Установите *Executable* на файл который вы присоединили к вашему скрипту "
+"сборки"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:254
 msgid "Check *Debug executable* if it isn't already"
-msgstr ""
+msgstr "Проверьте *Debug executable* если он уже не установлен"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:255
 msgid ""
 "You can go to *Arguments* tab and add an -e and a -path to a project to "
 "debug the editor not the project selection screen"
 msgstr ""
+"Вы можете перейти во вкладку *Arguments* и добавить -e и -path для проекта "
+"чтобы отлаживать редактор, а не экран выбора проекта"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:258
 msgid "Test it:"
-msgstr ""
+msgstr "Протестируйте это:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:260
 msgid "Set a breakpoint in platform/osx/godot_main_osx.mm"
-msgstr ""
+msgstr "Установите точку отладки в platform/osx/godot_main_osx.mm"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:261
 msgid "It should break at the point!"
-msgstr ""
+msgstr "Он должен останавливаться на этой точке!"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:267
 #, fuzzy
@@ -470,36 +555,47 @@ msgid ""
 "Ensure that C/C++ extension is installed. You can find instructions in `docs "
 "<https://code.visualstudio.com/docs/languages/cpp>`_."
 msgstr ""
+"Убедитесь что расширение C/C++ установлено. Вы можете найти инструкции в "
+"`документации <https://code.visualstudio.com/docs/languages/cpp>`_."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:271
 msgid "Now open cloned godot folder in VS Code (File > Open Folder...)"
 msgstr ""
+"Теперь откройте склонированную папку godot в VS Code (File > Open Folder...)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:273
 msgid ""
 "In order to build the project, we need configurations files: *launch.json* "
 "and *tasks.json*. To create them:"
 msgstr ""
+"Для того чтобы построить проект, нам нужно конфигурационные файлы: *launch."
+"json* и *tasks.json*. Для их создания:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:276
 msgid "Open Debug view (Ctrl + Shift + D) and select cogwheel with orange dot:"
 msgstr ""
+"Откройте Debug view (Ctrl + Shift + D) и выберите колёсико с оранжевой "
+"точкой:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:280
 msgid ""
 "Select *C++ (GDB/LLDB)* (it might be slightly differently called on macOS or "
 "Windows)"
 msgstr ""
+"Выберите *C++ (GDB/LLDB)* (она может называться слегка по другому в macOS "
+"или Windows)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:282
 msgid "Update *launch.json* to match:"
-msgstr ""
+msgstr "Обновите *launch.json* для соответствия:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:286
 msgid ""
 "(Note that *godot.x11.tools.64* in \"program\" value might be differently "
 "called on macOS or Windows)"
 msgstr ""
+"(Заметьте что *godot.x11.tools.64* в значении \"program\" может слегка "
+"отличаться в macOS или Windows)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:288
 msgid ""
@@ -507,18 +603,24 @@ msgid ""
 "with *Configure Task* button. Tap it and select *Create tasks.json file from "
 "template*, then select *Others*"
 msgstr ""
+"Создайте *tasks.json* запустив Debug process (F5). VS Code покажет окно с "
+"кнопкой *Configure Task*. Щёлкните по ней и выберите *Create tasks.json file "
+"from template*, затем выберите *Others*"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:290
 msgid "Update *tasks.json* to match:"
-msgstr ""
+msgstr "Обновите *tasks.json* до соответствия:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:294
 msgid "(Note that *platform=x11* will be different for macOX and Windows)"
 msgstr ""
+"(Заметьте что *platform=x11* может слегка отличаться для macOX и Windows)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:296
 msgid "You can now start Debug process again to test that everything works."
 msgstr ""
+"Теперь вы можете запустить процесс отладки снова и протестировать что всё "
+"работает."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:298
 msgid ""
@@ -526,3 +628,6 @@ msgid ""
 "that some dependencies are missing. Check :ref:`Compiling for X11 (Linux, "
 "\\*BSD) <doc_compiling_for_x11>`"
 msgstr ""
+"Если произойдёт ошибка на фазе сборки, проверьте консоль на подсказки. На "
+"Linux это скорее всего будут какие-либо потери зависимостей. Смотрите :ref:"
+"`Компиляция в X11 (Linux, \\*BSD) <doc_compiling_for_x11>`"

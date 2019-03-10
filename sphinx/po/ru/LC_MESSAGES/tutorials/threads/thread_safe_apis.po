@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:4
 msgid "Thread safe APIs"
-msgstr ""
+msgstr "Потоко-безопасные API"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:7
 msgid "Threads"
@@ -30,11 +30,15 @@ msgid ""
 "Using threads is a common way to balance processing scatter it across CPUs "
 "and cores. Godot supports multi threading, but not in the whole engine."
 msgstr ""
+"Использование потоков это обычный путь для балансировки процесса вычислений "
+"между CPU и ядрами. Godot поддерживает много-поточность, но не во всём "
+"движке."
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:12
 msgid ""
 "Below is a list of the areas in Godot and how they can be used with threads."
 msgstr ""
+"Ниже перечислены области Godot и как они могут быть использованы с потоками."
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:15
 msgid "Global scope"
@@ -47,6 +51,9 @@ msgid ""
 "servers, ensure threaded or thread safe operation is enabled in the project "
 "settings!)."
 msgstr ""
+":ref:`Глобальные<class_@GlobalScope>` синглтоны полностью потоко-безопасны. "
+"Доступ к серверам из потоков поддерживается (для VisualServer и Physics "
+"серверов, убедитесь что потоковые операции включены в настройках проекта!)."
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:19
 msgid ""
@@ -54,6 +61,9 @@ msgid ""
 "in servers and controls them from threads. Of course, it requires a bit more "
 "code, as this is used directly and not within the scene tree."
 msgstr ""
+"Это делает их отличными для кода который создаёт многие тысячи экземпляров в "
+"серверах и контролирует их из потоков. Конечно, это требует немного больше "
+"кода, так как они используются напрямую, а не через дерево сцены."
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:22
 msgid "Scene tree"
@@ -65,6 +75,10 @@ msgid ""
 "use mutexes when sending data between threads. If you want to call functions "
 "from a thread, the *call_deferred* function may be used:"
 msgstr ""
+"Взаимодействие с активным деревом сцены **НЕ** потоко-безопасно. Убедитесь "
+"что используете мьютексы когда посылаете данные между потоками. Если вы "
+"хотите вызывать функции из потока, можно использовать функцию "
+"*call_deferred*:"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:33
 msgid ""
@@ -72,27 +86,52 @@ msgid ""
 "active tree is fine. This way, parts of a scene can be built or instantiated "
 "in a thread, then added in the main thread:"
 msgstr ""
+"Хотя, создание чанков сцены (нодов в древе) вне активного древа нормально. "
+"Таким образом, части сцены могут быть собраны или инстанцированы из потока, "
+"а затем добавлены в главный поток:"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:43
-#, fuzzy
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:42
+msgid ""
+"Still, this is only really useful if you have **one** thread loading data. "
+"Attempting to load or create scene chunks from multiple threads may work, "
+"but you risk resources (which are only loaded once in Godot) tweaked by the "
+"multiple threads, resulting in unexpected behaviors or crashes."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:47
+msgid ""
+"Only use more than one thread to generate scene data if you *really* know "
+"what you are doing and you are sure that a single resource is not being used "
+"or set in multiple ones. Otherwise, you are safer just using the servers API "
+"(which is fully thread-safe) directly and not touching scene or resources."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:55
 msgid "GDScript arrays, dictionaries"
-msgstr "Строки формата GDScript"
+msgstr "GDScript массивы, словари"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:45
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:57
 msgid ""
 "In GDScript, reading and writing elements from multiple threads is ok, but "
 "anything that changes the container size (resizing, adding or removing "
 "elements) requires locking a mutex."
 msgstr ""
+"В GDScript, чтение или запись элементов из многих потоков нормально, но "
+"любая операция изменяющая размер контейнера (изменение размера, добавление "
+"или удаление элементов) требует закрытие через мьютекс."
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:48
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:60
 msgid "Resources"
 msgstr "Ресурсы"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:50
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:62
 msgid ""
 "Modifying a unique resource from multiple threads is not supported, but "
 "loading them on threads or handling a reference is perfectly supported. "
 "Scenes, textures, meshes, etc. Can be loaded and manipulated on threads, "
 "then added to the active scene in the main thread."
 msgstr ""
+"Изменение уникального ресурса через много-поточность не поддерживается, но "
+"загрузка их из потоков или выделение ссылки отлично поддерживается. Сцены, "
+"текстуры, сетки, итд. Они могут быть загружены или настроены через потоки, а "
+"затем добавлены в активную сцену на главном потоке."

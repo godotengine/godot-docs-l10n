@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,8 +28,9 @@ msgstr "Introdução"
 #: ../../docs/tutorials/shading/shader_materials.rst:9
 msgid ""
 "For the most common cases, Godot provides ready to use materials for most "
-"types of shaders, such as SpatialMaterial, CanvasItemMaterial and "
-"ParticlesMaterial (@TODO link to tutorials/classes). They are flexible "
+"types of shaders, such as :ref:`SpatialMaterial <class_SpatialMaterial>`, :"
+"ref:`CanvasItemMaterial <class_CanvasItemMaterial>` and :ref:"
+"`ParticlesMaterial <class_ParticlesMaterial>`. They are flexible "
 "implementations that cover most use cases."
 msgstr ""
 
@@ -44,7 +45,7 @@ msgid "Create procedural textures."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:18
-msgid "Create complex texture blendings."
+msgid "Create complex texture blending effects."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:19
@@ -64,10 +65,9 @@ msgid "Animate vertices, like tree leaves or grass."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:23
-msgid ""
-"Create custom particle code, that responds to baked animations or force "
-"fields."
-msgstr ""
+#, fuzzy
+msgid "Create custom particle code."
+msgstr "Criando nós"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:24
 msgid "And much more!"
@@ -75,34 +75,33 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:26
 msgid ""
-"Traditionally, most engines will ask you to learn GLSL, HLSL or Cg, which "
-"are pretty complex for the skillset of most artists. Godot uses a simplified "
-"version of a shader language that will detect errors as you type, so you can "
-"see your edited shaders in real-time. Additionally, it is possible to edit "
+"Godot provides built in functionality to make frequent operations easier. "
+"Additionally, Godot's shader editor will detect errors as you type, so you "
+"can see your edited shaders in real-time. It is also possible to edit "
 "shaders using a visual, node-based graph editor."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shader_materials.rst:33
+#: ../../docs/tutorials/shading/shader_materials.rst:32
 msgid "Creating a ShaderMaterial"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shader_materials.rst:35
+#: ../../docs/tutorials/shading/shader_materials.rst:34
 msgid ""
 "Create a new ShaderMaterial in some object of your choice. Go to the "
 "\"Material\" property and create a ShaderMaterial."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shader_materials.rst:40
+#: ../../docs/tutorials/shading/shader_materials.rst:39
 msgid "Edit the newly created shader, and the shader editor will open:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shader_materials.rst:45
+#: ../../docs/tutorials/shading/shader_materials.rst:44
 msgid "Converting to ShaderMaterial"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shader_materials.rst:47
+#: ../../docs/tutorials/shading/shader_materials.rst:46
 msgid ""
 "It is possible to convert from SpatialMaterial, CanvasItemMaterial and "
 "ParticlesMaterial to ShaderMaterial. To do so, go to the material properties "
-"and enable the convert option."
+"and select the convert option."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:4
 msgid "Custom resource format loaders"
-msgstr ""
+msgstr "Собственные загрузчики форматов ресурсов"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:7
 msgid "Introduction"
@@ -32,12 +32,19 @@ msgid ""
 "again, the previous loaded Resource will be referenced. Naturally, loaded "
 "resources must be stateless."
 msgstr ""
+"ResourceFormatLoader это интерфейс фабрики для загрузки файлов ассетов. "
+"Ресурсы это первичные контейнеры. Когда загрузка вызывается для того же "
+"файла снова, предыдущий загруженный Resource создаст ссылку. Естественно, "
+"загруженные ресурсы должны быть stateless."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:14
 msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to this guide :ref:`doc_custom_modules_in_c++`."
 msgstr ""
+"Это руководство подразумевает что читатель знаком с созданием модулей на C++ "
+"и разбирается в типах данных Godot. Если нет, ознакомьтесь с данным гайдом "
+"- :ref:`doc_custom_modules_in_c++`."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:18
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:39
@@ -58,23 +65,23 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:24
 msgid "What for?"
-msgstr ""
+msgstr "Для чего это?"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:26
 msgid "Adding new support for many file formats"
-msgstr ""
+msgstr "Добавление новой поддержки для множества форматов файлов"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:27
 msgid "Audio formats"
-msgstr ""
+msgstr "Форматы звука"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:28
 msgid "Video formats"
-msgstr ""
+msgstr "Форматы видео"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:29
 msgid "Machine learning models"
-msgstr ""
+msgstr "Форматы машинного обучения"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:32
 msgid "What not?"

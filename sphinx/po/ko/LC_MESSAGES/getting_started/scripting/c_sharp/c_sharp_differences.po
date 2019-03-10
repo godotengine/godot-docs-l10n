@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,13 +30,12 @@ msgid "General differences"
 msgstr "일반적인 차이점"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:11
-#, fuzzy
 msgid ""
 "As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
 "instead of the ``snake_case`` used in GDScript and C++."
 msgstr ""
 ":ref:`doc_c_sharp`\\ 에서 설명했듯이, C#은 GDScript와 C++에서 ``snake_case``"
-"\\ 를 쓰는 대신 ``PascalCase``\\ 를 사용합니다."
+"\\ 가 아닌 ``PascalCase``\\ 를 사용합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
 msgid "Global scope"
@@ -48,6 +47,8 @@ msgid ""
 "does not allow declaring them in namespaces. Most global constants were "
 "moved to their own enums."
 msgstr ""
+"글로벌 함수와 일부 상수는, C#이 네임 스페이스에서 선언하지 않기 때문에 클래스"
+"로 이동되어야 합니다. 대부분의 글로벌 상수는 자신의 이넘으로 이동합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:22
 msgid "Constants"
@@ -58,11 +59,12 @@ msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
+"글로벌 상수는 자신의 이넘으로 이동합니다. 예를 들어, ``ERR_*`` 상수는 "
+"``Error`` 이넘으로 이동합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
-#, fuzzy
 msgid "Special cases:"
-msgstr "사용 사례"
+msgstr "특수 경우:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:30
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:59
@@ -92,27 +94,27 @@ msgstr "C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``SPKEY``"
-msgstr ""
+msgstr "``SPKEY``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``GD.SpKey``"
-msgstr ""
+msgstr "``GD.SpKey``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``TYPE_*``"
-msgstr ""
+msgstr "``TYPE_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``Variant.Type`` enum"
-msgstr ""
+msgstr "``Variant.Type`` 이넘"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``OP_*``"
-msgstr ""
+msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``Variant.Operator`` enum"
-msgstr ""
+msgstr "``Variant.Operator`` 이넘"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
 #, fuzzy

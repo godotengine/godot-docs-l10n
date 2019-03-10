@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,16 +32,16 @@ msgid ""
 "them, to create anything from life bars to complex applications. Godot's "
 "entire editor and plugins use these nodes."
 msgstr ""
-"Monitore, Displays und Fernseher existieren in allen Formen und Größen.  Um "
-"ein Spiel zu veröffentlichen, musst du verschiedene Bildschirm "
-"Seitenverhältnisse und Auflösungen unterstützen. Es kann schwierig sein "
-"zugängliche Interfaces  zu erstellen welche sich an alle Plattformen "
-"anpassen. Glücklicherweise kommt Godot mit robusten Werkzeugen um "
-"zugängliche Benutzeroberflächen zu designen und zu verwalten. Um deine "
-"Benutzeroberfläche zu gestalten wirst du Control Nodes verwenden. Dies sind "
-"die Nodes mit dem grünen Symbol im Editor. Es gibt dutzende von ihnen, um "
-"alles vom Lebensbalken bis zur komplexen Anwendungen zu kreieren. Der "
-"gesamte Godot Editor und plugins dafür nutzen diese Nodes."
+"Monitore, Displays und Fernseher existieren in allen Formen und Größen. Um "
+"ein Spiel zu veröffentlichen, musst Du verschiedene "
+"Bildschirmseitenverhältnisse und -auflösungen unterstützen. Es kann "
+"schwierig sein adaptive Benutzeroberflächen zu erstellen, welche sich an "
+"alle Plattformen anpassen. Glücklicherweise kommt Godot mit robusten "
+"Werkzeugen, um adaptive Benutzeroberflächen zu gestalten und zu verwalten. "
+"Um deine Benutzeroberfläche zu gestalten wirst du Control-Nodes verwenden. "
+"Dies sind die Nodes mit dem grünen Symbol im Editor. Es gibt dutzende von "
+"ihnen, um alles vom Lebensbalken bis zur komplexen Anwendungen zu kreieren. "
+"Der gesamte Godot Editor und Plugins dafür nutzen diese Nodes."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
 msgid "Godot's editor is made with the engine's UI framework"
@@ -50,24 +50,25 @@ msgstr "Der Godot Editor wurde mittels Godots UI-Framework erstellt."
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "This guide will get you started with UI design. You will learn:"
 msgstr ""
-"Diese Anleitung hilft dir mit dem UI design zu starten. Du wirst folgendes "
-"lernen:"
+"Dieses Anleitung wird Dir den Einstieg in das Design der Benutzeroberfläche "
+"erleichtern. Du wirst folgendes lernen:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:21
 msgid "The five most useful control nodes to build your games’ interface"
 msgstr ""
-"Die fünf nützlichsten Control Nodes um die Benutzeroberfläche deines Spieles "
-"zu erstellen"
+"Die fünf nützlichsten Control-Nodes, um die Benutzeroberfläche Deines "
+"Spieles zu erstellen"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
 msgid "How to work with the anchor of UI elements"
-msgstr "Wie man anchor in UI Elementen verwendet"
+msgstr ""
+"Wie man Anchor (Bezugspunkte) in Benutzeroberflächen-Elementen verwendet"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:23
 msgid ""
 "How to efficiently place and arrange your user interface using containers"
 msgstr ""
-"Wie du deine Benutzeroberfläche effizient arrangierst indem du Container "
+"Wie Du Deine Benutzeroberfläche effizient arrangierst indem Du Container "
 "verwendest"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
@@ -91,24 +92,24 @@ msgid ""
 "with others, like the AnimationPlayer, Tween or the StreamPlayer. Control "
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
-"Verwende Control Nodes nur wenn du Benutzeroberflächen erstellst. Sie haben "
-"einzigartige Eigenschaften, welche es ihnen erlauben mit einander zu "
-"arbeiten. Andere Nodes, wir zum Beispiel Node2D oder Sprite funktionieren "
-"nicht. Du kannst immer noch einige Nodes verwenden die mit anderen arbeiten, "
-"wie AnimationPlayer, Tween oder StreamPlayer.  Control Nodes sind "
-"CanvasItems, ebenso wie Node2D, du kannst also Shader auf sie anwenden."
+"Verwende Control-Nodes nur wenn Du Benutzeroberflächen erstellst. Sie haben "
+"einzigartige Eigenschaften, welche es Dir erlauben mit einander zu arbeiten. "
+"Andere Nodes, wie zum Beispiel Node2D oder Sprite funktionieren nicht. Du "
+"kannst immer noch einige Nodes verwenden die mit anderen arbeiten, wie "
+"AnimationPlayer, Tween oder StreamPlayer.  Control-Nodes sind CanvasItems, "
+"ebenso wie Node2D, Du kannst also Shader auf sie anwenden."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:37
 msgid "All control nodes share the same main properties:"
-msgstr "Alle Control Nodes teilen die selben Haupteigenschaften:"
+msgstr "Alle Control-Nodes teilen die selben Haupteigenschaften:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Anchor"
-msgstr "Anchor (Anker)"
+msgstr "Anchor (Bezugspunkte)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Bounding rectangle"
-msgstr "Bounding rectangle (umgebendes Rechteck)"
+msgstr "Bounding rectangle (Begrenzungsrahmen)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 msgid "Focus and focus neighbor"
@@ -116,22 +117,22 @@ msgstr "Focus and focus neighbor (Fokus und Fokus Nachbar)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Size flags"
-msgstr "Size flags (Größen Einstellungen)"
+msgstr "Size flags (Größeneinstellungen)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "Margin"
-msgstr "Margin (Seitenrand)"
+msgstr "Margin (Außenabstand)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:44
 msgid "The optional UI theme"
-msgstr "Das optionale Benutzeroberflächen Theme"
+msgstr "Das optionale Benutzeroberflächen-Thema"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:46
 msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
 msgstr ""
-"Wenn du die Grundlagen der Control Node verstanden hast, wird es dich dich "
+"Wenn Du die Grundlagen des Control-Nodes verstanden hast, wird es Dich "
 "weniger Zeit kosten all die Nodes zu erlernen die davon abstammen."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:51
@@ -143,16 +144,16 @@ msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
-"Godot wird mit dutzenden Control Nodes geliefert. Viele von ihnen sind da, "
-"um dir zu helfen Editor Plugins und Anwendungen zu erstellen."
+"Godot wird mit dutzenden Control-Nodes geliefert. Viele von ihnen sind da, "
+"um Dir zu helfen Editor Plugins und Anwendungen zu erstellen."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:56
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
 msgstr ""
-"Für die meisten Spiele benötigst du nur fünf Arten von UI Elementen und ein "
-"paar Container. Diese fünf Control Nodes sind:"
+"Für die meisten Spiele benötigst Du nur fünf Arten von UI Elementen und ein "
+"paar Container. Diese fünf Control-Nodes sind:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid "Label: for displaying text"
@@ -162,14 +163,14 @@ msgstr "Label: um Text darzustellen"
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
-msgstr "TextureRect: hauptsächlich Hintergründe oder statischen Bilder"
+msgstr "TextureRect: hauptsächlich für Hintergründe oder statische Bilder"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:62
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
 msgstr ""
-"TextureProgress: für Lebensbalken, Ladebalken, Horizontal, Vertikal oder "
-"Radial"
+"TextureProgress: für Lebensanzeigen, Ladebalken, horizontal, vertikal oder "
+"radial"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "NinePatchRect: for scalable panels"
@@ -177,11 +178,11 @@ msgstr "NinePatchRect: für skalierbare Paneele"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:65
 msgid "TextureButton: to create buttons"
-msgstr "TextureButton: um Buttons zu erstellen"
+msgstr "TextureButton: um Schaltflächen zu erstellen"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:69
 msgid "The 5 most common Control nodes for UI design"
-msgstr "Die 5 häufigsten Control Nodes für UI Design"
+msgstr "Die 5 häufigsten Control-Nodes für UI Design"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
 msgid "TextureRect"
@@ -194,9 +195,9 @@ msgid ""
 "property to change its behavior:"
 msgstr ""
 "**TextureRect** zeigt eine Textur oder ein Bild innerhalb einer "
-"Benutzeroberfläche. Es scheint der Sprite Node ähnlich, doch es bietet "
-"mehrere Modi zu Skalieren. Setzte die Stretch Mode Eigenschaft um das "
-"Verhalten zu ändern:"
+"Benutzeroberfläche an. Es scheint dem Sprite-Node ähnlich zu sein, bietet "
+"jedoch mehrere Skalierungsmodi. Lege die Stretch-Mode-Eigenschaft fest, um "
+"sein Verhalten zu ändern:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
 msgid ""
@@ -204,31 +205,29 @@ msgid ""
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
-"``Scale on Expand (compat)`` skaliert die Texture um sich auf das "
-"begrenzende Rechteck der Node anzupassen, nur wenn die ``expand`` "
-"Eigenschaft ``true`` ist; ansonsten verhält es sich wie der ``Keep`` Modus. "
-"Standart Modus für abwärts Kompatibilität."
+"``Scale on Expand (compat)`` skaliert die Textur um sich an den "
+"Begrenzungsrahmen des Nodes anzupassen, nur wenn die ``expand`` Eigenschaft "
+"``true`` ist; ansonsten verhält es sich wie der ``Keep`` Modus. Dem "
+"Standardmodus für Abwärtskompatibilität."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:79
 msgid "``Scale`` scales the texture to fit the node’s bounding rectangle"
 msgstr ""
-"``Scale`` skaliert die Texture um sich dem begrenzenden Rechteck der Node "
+"``Scale`` skaliert die Textur, um sich dem Begrenzungsrahmen des Nodes "
 "anzupassen"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Tile`` makes the texture repeat, but it won't scale"
-msgstr ""
-"``Tile`` lässt sich die Textur wiederholen, sie wird allerdings nicht "
-"skaliert"
+msgstr "``Tile`` wiederholt die Textur, sie wird allerdings nicht skaliert"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively"
 msgstr ""
-"``Keep`` und ``Keep Centered`` zwingen die Textur ihre original Größe "
-"beizubehalten und platzieren sie in der linken oberen Ecke, respektive der "
-"Mitte des Rahmens"
+"``Keep`` und ``Keep Centered`` zwingen die Textur ihre ursprüngliche Größe "
+"beizubehalten und platzieren sie in der linken oberen Ecke bzw. in der Mitte "
+"des Rahmens"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:84
 msgid ""
@@ -238,7 +237,7 @@ msgid ""
 msgstr ""
 "``Keep Aspect`` und ``Keep Aspect Centered`` skalieren die Textur, aber "
 "erzwingen das originale Seitenverhältnis und platzieren sie in der linken "
-"oberen Ecke, respektive der Mitte des Rahmens"
+"oberen Ecke bzw. in der Mitte des Rahmens"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
 msgid ""
@@ -247,15 +246,15 @@ msgid ""
 "node’s limits"
 msgstr ""
 "``Keep Aspect Covered`` funktioniert genau wie ``Keep Aspect Centered`` "
-"allerdings wird die kürzere Seite dem begrenzenden Rechteck angepasst und "
-"die längere geht bis an das Limit der Node"
+"allerdings wird die kürzere Seite in den Begrenzungsrahmen eingepasst und "
+"die längere an der Node-Begrenzung abgeschnitten"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
-"Wie mit Sprite Nodes kannst du die Farbe des TextureRect modulieren. Klicke "
+"Wie mit Sprite Nodes kannst Du die Farbe des TextureRect modulieren. Klicke "
 "auf die ``Modulate`` Eigenschaft und verwende die Farbpipette."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:92

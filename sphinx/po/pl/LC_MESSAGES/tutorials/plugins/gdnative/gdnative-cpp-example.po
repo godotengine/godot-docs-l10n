@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -511,27 +511,41 @@ msgid ""
 "along a larger figure."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:570
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:571
+msgid ""
+"The ``reloadable`` property in the ``gdexample.gdnlib`` file must be set to "
+"``true`` for the Godot editor to automatically pick up the newly added "
+"property."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:574
+msgid ""
+"However, this setting should be used with care especially when tool classes "
+"are used, as the editor might hold objects then that have script instances "
+"attached to them that are managed by a GDNative library."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:577
 msgid ""
 "Lets do the same but for the speed of our animation and use a setter and "
 "getter function. Our ``gdexample.h`` header file again only needs a few more "
 "lines of code:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:584
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:591
 msgid ""
 "This requires a few more changes to our ``gdexample.cpp`` file, again we're "
 "only showing the methods that have changed so don't remove anything we're "
 "omitting:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:656
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:663
 msgid ""
 "Now when the project is compiled we'll see another property called speed. "
 "Changing its value will make the animation go faster or slower."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:659
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:666
 msgid ""
 "For this example there is no obvious advantage of using a setter and getter. "
 "It is just more code to write. For a simple example as this there may be a "
@@ -539,13 +553,13 @@ msgid ""
 "but in many cases just binding the variable will be enough."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:664
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:671
 msgid ""
 "Getters and setters become far more useful in more complex scenarios where "
 "you need to make additional choices based on the state of your object."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:670
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:677
 msgid ""
 "For simplicity we've left out the optional parameters in the "
 "register_property<class, type> method call. These parameters are "
@@ -553,18 +567,18 @@ msgid ""
 "further configure how properties are displayed and set on the Godot side."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:676
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:683
 msgid ""
 "Modern C++ compilers are able to infer the class and variable type and allow "
 "you to omit the ``<GDExample, float>`` part of our ``register_property`` "
 "method. we've had mixed experiences with this however."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:682
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:689
 msgid "Signals"
 msgstr "Sygnały"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:684
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:691
 msgid ""
 "Last but not least, signals fully work in GDNative as well. Having your "
 "module react to a signal given out by another object requires you to call "
@@ -572,17 +586,17 @@ msgid ""
 "wobbling Godot icon, we would need to showcase a far more complete example."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:690
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:697
 msgid "This however is the required syntax:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:701
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:708
 msgid ""
 "Note that you can only call ``my_method`` if you've previously registered it "
 "in your ``_register_methods`` method."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:704
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:711
 msgid ""
 "Having your object sending out signals is far more common. For our wobbling "
 "Godot icon we'll do something silly just to show how it works. We're going "
@@ -590,26 +604,26 @@ msgid ""
 "along."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:709
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:716
 msgid ""
 "In our ``gdexample.h`` header file we just need to define a new member "
 "``time_emit``:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:719
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:726
 msgid ""
 "The changes in ``gdexample.cpp`` are a bit more elaborate this time. First "
 "you'll need to set ``time_emit = 0.0;`` in either our ``_init`` method or in "
 "our constructor. But the other two needed changes we'll look at one by one."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:723
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:730
 msgid ""
 "In our ``_register_methods`` method we need to declare our signal and we do "
 "this as follows:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:750
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:757
 msgid ""
 "Here we see a nice improvement in the latest version of godot-cpp where our "
 "``register_signal`` method can be a single call first taking the signals "
@@ -617,18 +631,18 @@ msgid ""
 "of each parameter we'll send along with this signal."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:755
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:762
 msgid ""
 "For NativeScript 1.0 we first build a dictionary in which we tell Godot "
 "about the types of arguments we will pass to our signal, and then register "
 "it."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:758
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:765
 msgid "Next we'll need to change our ``_process`` method:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:804
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:811
 msgid ""
 "After a second has passed we emit our signal and reset our counter. Again in "
 "the new version of godot-cpp we can add our parameter values directly to "
@@ -636,22 +650,22 @@ msgid ""
 "then call ``emit_signal``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:810
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:817
 msgid ""
 "Once compiled we can go into Godot and select our sprite node. On our "
 "``Node`` tab we find our new signal and link it up by pressing connect. "
 "We've added a script on our main node and implemented our signal like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:821
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:828
 msgid "Every second we simply output our position to the console."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:825
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:832
 msgid "NativeScript 1.1 vs NativeScript 1.0"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:827
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:834
 msgid ""
 "So far in our example above there doesn't seem to be a lot of difference "
 "between the old and new syntax. The class is defined slightly differently "
@@ -659,7 +673,7 @@ msgid ""
 "of our object. A lot of the improvements are hidden under the hood."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:832
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:839
 msgid ""
 "This example only deals with simple variables and simple methods. Especially "
 "once you start passing references to other objects or when you start calling "
@@ -667,18 +681,18 @@ msgid ""
 "show its benefits."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:838
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:845
 msgid "Next steps"
 msgstr "Kolejne kroki"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:840
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:847
 msgid ""
 "The above is only a simple example, but we hope it shows you the basics. You "
 "can build upon this example to create full-fledged scripts to control nodes "
 "in Godot using C++."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:844
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:851
 msgid ""
 "You should be able to edit and recompile the plugin while the Godot editor "
 "remains open; just rerun the project after the library has finished building."

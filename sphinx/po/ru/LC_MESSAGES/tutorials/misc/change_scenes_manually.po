@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,9 +19,10 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:4
 msgid "Change scenes manually"
-msgstr ""
+msgstr "Изменение сцен вручную"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:6
+#, fuzzy
 msgid ""
 "Sometimes it helps to have more control over how one swaps scenes around. As "
 "mentioned above, a :ref:`Viewport <class_Viewport>`'s child nodes will "
@@ -29,6 +30,11 @@ msgid ""
 "the \"current\" scene. Autoloads fall into this category, but so do scenes "
 "which one instances and adds to the tree at runtime:"
 msgstr ""
+"Иногда это помогает иметь больший контроль над тем как переключаются сцены. "
+"Как показано выше ноды потомки :ref:`Viewport <class_Viewport>` будут "
+"отрисовывать генерируемую картинку. Это истинно даже для нодов вне \"текущей"
+"\" сцены. Автозагрузки попадают под эту категорию, но также и сцены которые "
+"инстанцируются и добавляются в сцену во время выполнения:"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:38
 msgid ""
@@ -38,6 +44,10 @@ msgid ""
 "balancing operation speed and memory consumption as well as balancing data "
 "access and integrity."
 msgstr ""
+"Для завершения цикла и переключения на новую сцену из старой, разработчики "
+"имеют выбор. Существуют много способов для удаления сцены из вида :ref:"
+"`Viewport <class_Viewport>`. Они балансируют между скоростью операций и "
+"потреблением памяти а также доступом к данным и целостности."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:44
 msgid ""
@@ -48,14 +58,20 @@ msgid ""
 "root node's name is \"Main\", one could do ``get_node(\"/root/Main\")."
 "free()`` to delete the whole scene."
 msgstr ""
+"**Мы можем удалить существующую сцену.** :ref:`SceneTree.change_scene() "
+"<class_SceneTree_method_change_scene>` и :ref:`SceneTree.change_scene_to() "
+"<class_SceneTree_method_change_scene_to>` немедленно удаляет текущую сцену. "
+"Разработчики могут также удалить главную сцену. Если корневая нода имеет имя "
+"\"Main\", то её можно удалить из сцены с помощью ``get_node(\"/root/Main\")."
+"free()``."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:51
 msgid "Unloads memory."
-msgstr ""
+msgstr "Освобождение памяти."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:53
 msgid "Pro: RAM is no longer dragging the dead weight."
-msgstr ""
+msgstr "За: RAM более не мёртвый груз."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:55
 msgid ""
@@ -63,12 +79,17 @@ msgid ""
 "back into memory again (takes time AND memory). Not a problem if returning "
 "soon is unnecessary."
 msgstr ""
+"Против: Возврат в эту сцену теперь более затратный так как мы должны снова "
+"загрузить её назад в память (занимает время И память). Не проблема если "
+"скорый возврат не требуется."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:59
 msgid ""
 "Con: No longer have access to that scene's data. Not a problem if using that "
 "data soon is unnecessary."
 msgstr ""
+"Против: Больше нет доступа к данным сцены. Не проблема если эти данные скоро "
+"не потребуются."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:62
 msgid ""
@@ -76,23 +97,29 @@ msgid ""
 "re-attaching one or more of its nodes to a different scene, or even directly "
 "to the :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
+"Заметка: Также пере-подключайте одну или несколько нод в другую сцену или "
+"напрямую в :ref:`SceneTree <class_SceneTree>`. Это может быть полезно для "
+"сохранения данных сцены которая будет скоро удалена."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:66
-#, fuzzy
 msgid "Processing stops."
-msgstr "Обработка"
+msgstr "Обработка остановок."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:68
 msgid ""
 "Pro: No nodes means no process, physics process, or input handling. The CPU "
 "is available to work on the new scene's contents."
 msgstr ""
+"За: Нет нодов - значит нет обработки, физической обработки, или обработки "
+"ввода. Значит что CPU будет работать над новыми задачами сцены."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:71
 msgid ""
 "Con: Those nodes' processing and input handling no longer operate. Not a "
 "problem if using the updated data is unnecessary."
 msgstr ""
+"Против: Обработка нодов и ввода больше не доступна. Не проблема если вас не "
+"интересует  использование обновлённых данных."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:74
 msgid ""
@@ -100,41 +127,49 @@ msgid ""
 "detection of the nodes, we can hide the entire node sub-tree from the "
 "player's perspective."
 msgstr ""
+"**Мы можем скрыть существующую сцену.** Изменяя видимость или обнаружение "
+"столкновения для нодов, мы можем скрыть целую под-древо нодов из вида игрока."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:78
 msgid "Memory still exists."
-msgstr ""
+msgstr "Память всё ещё существует."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:80
 msgid "Pro: One can still access the data if need be."
-msgstr ""
+msgstr "За: Вы все еще можете получить доступ к данным если вам нужно."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:82
 msgid "Pro: There's no need to move any more nodes around to save data."
-msgstr ""
+msgstr "За: Вам больше не нужно перемещать ноды для сохранения данных."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:84
 msgid ""
 "Con: More data is being kept in memory which will be become a problem on "
 "memory-sensitive platforms like web or mobile."
 msgstr ""
+"Против: Больше данных сохраняются в памяти что влечёт проблемы на "
+"чувствительных к проблемам памяти платформах такие как веб или мобильные."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:87
-#, fuzzy
 msgid "Processing continues."
-msgstr "Обработка"
+msgstr "Обработка продолжений."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:89
 msgid ""
 "Pro: Data continues to receive processing updates, so the scene will keep "
 "updated any data within it that relies on delta time or frame data."
 msgstr ""
+"За: Данные продолжают получать обновления обработки, так что сцена будет "
+"обновлять любые данные внутри себя которые зависят от дельты времени и "
+"данных кадра."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:93
 msgid ""
 "Pro: Nodes are still members of groups (since groups belong to the :ref:"
 "`SceneTree <class_SceneTree>`)."
 msgstr ""
+"За: Ноды сохраняются как члены групп (так как группы принадлежат :ref:"
+"`SceneTree <class_SceneTree>`)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:96
 msgid ""
@@ -143,6 +178,10 @@ msgid ""
 "they go to ensure the target platform can support the load they are giving "
 "it."
 msgstr ""
+"Против: Внимание процессора теперь разделено между обоими сценами. Слишком "
+"высокая нагрузка влечёт низкую частоту кадров. Вы должны быть уверены что "
+"протестировали производительность так как целевая платформа должна "
+"поддерживать то что загружается на ней."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:101
 msgid ""
@@ -150,14 +189,20 @@ msgid ""
 "existing scene's root node. Then use :ref:`Node.remove_child(Node) "
 "<class_Node_method_remove_child>` to detach the entire scene from the tree."
 msgstr ""
+"**Мы можем удалить существующую сцену из древа.** Присвойте значение к "
+"существующей ноде в древе сцены. Потом используйте ref:`Node."
+"remove_child(Node) <class_Node_method_remove_child>` чтобы отсоединить всю "
+"сцену от древа."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:106
+#, fuzzy
 msgid "Memory still exists (similar pros/cons as with hiding it from view)."
-msgstr ""
+msgstr "Память все ещё занимается (те же за/против что мы скрыли от взгляда)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:108
 msgid "Processing stops (similar pros/cons as with deleting it completely)."
 msgstr ""
+"Обработка остановок (те же за/против что и когда мы удаляли их полностью)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:110
 msgid ""
@@ -166,6 +211,10 @@ msgid ""
 "only call the one method add/remove_child pair of methods. It is similar to "
 "disabling game objects in other engines."
 msgstr ""
+"За: Этот вариант \"скрытия\" намного более лёгок для показа/скрытия. Вместо "
+"того чтобы хранить след нескольких изменений в сцене, мы должны только "
+"вызвать один метод add/remove_child пары методов. Это то же самое что и "
+"отключение игровых объектов в других движках."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:115
 msgid ""
@@ -173,6 +222,9 @@ msgid ""
 "scene will become stale if it relies on delta time, input, groups, or other "
 "data that is derived from :ref:`SceneTree <class_SceneTree>` access."
 msgstr ""
+"Против: В отличие от скрытия только от взгляда, данные содержащиеся на сцене "
+"станут недоступными если они зависимы от дельты времени, ввода, групп, или "
+"других данных которые наследуются от :ref:`SceneTree <class_SceneTree>`."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:120
 msgid ""
@@ -181,6 +233,9 @@ msgid ""
 "preserving a a scene's data between scene changes (adding the scene to the "
 "root node)."
 msgstr ""
+"Также есть места где вам может захотеться иметь множество сцен в одно и то "
+"же время. К примеру добавление синглтона во время выполнения, или сохранения "
+"данных сцены между изменениями сцены (добавление сцены в корень ноды)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:133
 msgid ""
@@ -189,6 +244,10 @@ msgid ""
 "cases where the intent is to render different content in different parts of "
 "the screen. Minimaps and split-screen multiplayer are good examples."
 msgstr ""
+"Возможно кто-нибудь захочет показать множество сцен в одно и то же время "
+"используя :ref:`ViewportContainers <class_ViewportContainer>`. Это "
+"оптимально в случаях когда нужно отрисовать различное содержимое разных "
+"частей экрана. Миникарты и разделённые экраны мультиплеера хорошие примеры."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:138
 msgid ""
@@ -196,3 +255,6 @@ msgid ""
 "examine the effects of each and determine what path best fits their unique "
 "situation."
 msgstr ""
+"Каждая из опций имеет случаи когда она наиболее востребована, поэтому "
+"необходимо изучить эффекты каждой и определить какой путь будет лучшим для "
+"конкретной ситуации."

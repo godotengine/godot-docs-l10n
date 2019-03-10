@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:4
 msgid "Documentation guidelines"
-msgstr ""
+msgstr "Richtlinien Dokumentation"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:6
 msgid ""
@@ -30,6 +30,11 @@ msgid ""
 "page <https://docs.godotengine.org>`_ on what steps to follow and how to "
 "contact the docs team."
 msgstr ""
+"Diese Seite beschreibt die Regeln beim Schreiben, Prüfen und dem Übersetzen "
+"von Dokumentationsinhalten der Godot Engine. Sieh auch in die README des "
+"`godot-docs GitHub-Repository <https://github.com/godotengine/godot-docs>`_ "
+"und auf der `Dokumentationshauptseite <https://docs.godotengine.org>`_ nach, "
+"wie Du Kontakt mit dem Dokumentationsteam aufnimmst."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:14
 msgid "How to contribute"
@@ -44,6 +49,13 @@ msgid ""
 "in a pull request and getting it merged will trigger a rebuild of the online "
 "documentation."
 msgstr ""
+"Das Anlegen oder Bearbeiten von Dokumentationsseiten geschieht hauptsächlich "
+"über das `godot-docs-GitHub-Repository \n"
+"<https://github.com/godotengine/godot-docs>`_. Die Dokumentation in den "
+"Formaten HTML, PDF und EPUB wird aus den .rst-Dateien (reStructuredText "
+"Markup Language) in diesem Repository generiert. Werden diese Seiten über "
+"einen Pull Request aktualisiert und erfolgt ein Merge der Änderungen, so "
+"löst dies einen Neuaufbau der Onlinedokumentation aus."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:23
 msgid ""
@@ -51,6 +63,10 @@ msgid ""
 "ref:`doc_pr_workflow` page. Most of what it describes regarding the main "
 "godotengine/godot repository is also valid for the docs repository."
 msgstr ""
+"Für Erläuterungen zum Umgang mit Git und dem Arbeitsablauf beim Pull "
+"Request, sieh Dir die  :ref:`doc_pr_workflow`-Seite an. Die meisten der dort "
+"beschriebenen Schritte bezogen auf das godotengine/godot-Repository treffen "
+"ebenso auf das docs-Repository zu."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:28
 msgid ""
@@ -58,6 +74,9 @@ msgid ""
 "please read it. In particular, it contains some tips and tricks and links to "
 "reference documentation about the reStructuredText markup language."
 msgstr ""
+"Die README.md-Datei enthält alle Informationen, die Du benötigst, um "
+"loszulegen; lies es bitte durch. Insbesondere enthält sie Tipps und Tricks "
+"sowie Links zur Referenz der StructuredText-Bezeichnungssprache."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:32
 msgid ""
@@ -67,10 +86,16 @@ msgid ""
 "used to generate the in-editor documentation as well as the API reference of "
 "the online docs. Read more here: :ref:`doc_updating_the_class_reference`."
 msgstr ""
+"Solltest Du die **API-Reference** bearbeiten wollen, beachte dass dies "
+"*nicht* innerhalb des godot-docs-Repository erfolgt. Stattdessen solltest Du "
+"die XML-Dateien unter ``doc/classes/*`` des Haupt-Repository von Godot "
+"bearbeiten. Diese Dateien werden später dafür eingesetzt, um die Godot-"
+"interne als auch die API-Referenz der Onlinedokumentation aktuell zu halten. "
+"Mehr dazu hier: :ref:`doc_updating_the_class_reference`."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:40
 msgid "What makes good documentation?"
-msgstr ""
+msgstr "Was macht eine gute Dokumentation aus?"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:42
 msgid ""
@@ -78,12 +103,17 @@ msgid ""
 "sentences and various levels of sections and subsections. It should be clear "
 "and objective. Also have a look at the :ref:`doc_docs_writing_guidelines`."
 msgstr ""
+"Eine gute Dokumentation sollte klar, verständlich und objektiv sein, mit "
+"wohlgeformten Sätzen und, je nach Komplexität, sinnvollen Abschnitten und "
+"Unterkategorien. Siehe dazu auch die :ref:`doc_docs_writing_guidelines`."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:46
 msgid ""
 "We differentiate tutorial pages from other documentation pages by these "
 "definitions:"
 msgstr ""
+"Wir unterscheiden Anleitungen von anderen Dokumentationsinhalten über "
+"folgende Definitionen:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:49
 msgid ""
@@ -92,6 +122,10 @@ msgid ""
 "purpose (e.g. \"Making a simple 2d Pong game\", \"Applying forces to an "
 "object\")."
 msgstr ""
+"Anleitung: Ein Abschnitt mit dem Ziel, ein oder mehrere Konzepte, die im "
+"Editor oder in Skripten angewandt werden, anhand eines Beispiels zu "
+"veranschaulichen, um ein bestimmtes Lernziel zu erreichen (z.B. \"Ein "
+"einfaches 2D-Pong-Spiel erstellen\", \"Kräfte auf ein Objekt wirken\")."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:53
 msgid ""
@@ -99,20 +133,28 @@ msgid ""
 "time, if possible exhaustively (e.g. the list of methods of the Sprite "
 "class, or an overview of the input management in Godot)."
 msgstr ""
+"Dokumentation: Eine Seite, auf der genau ein Konzept oder eine "
+"Funktionalität zur gleichen Zeit beschrieben wird und das, soweit möglich, "
+"bis ins kleinste Detail (z.B. die Auflistung der Methoden der Sprite-Klasse, "
+"oder eine Übersicht der Eingabeverwaltung in Godot)."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:57
 msgid ""
 "You are free to write the kind of documentation you wish, as long as you "
 "respect the following rules (and the ones on the repo)."
 msgstr ""
+"Es sei Dir freigestellt, welche Art von Dokumentation Du schreiben möchtest "
+"solange Du die folgenden Regeln respektierst (und die aus dem Repo)."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:61
 msgid "Titles"
-msgstr ""
+msgstr "Überschriften"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:63
 msgid "Always begin pages with their title and a Sphinx reference name:"
 msgstr ""
+"Fange jede Seite stets mit der Überschrift an und einer internen Bezeichnung "
+"für den Sphinx-Verweis:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:72
 msgid ""
@@ -120,6 +162,9 @@ msgid ""
 "``:ref:`doc_insert_your_title_here``` would link to the above example page "
 "(note the lack of leading underscore in the reference)."
 msgstr ""
+"Der Sphinx-Verweis erlaubt es, die Seite per ``:ref:``-Tag zu verlinken, so "
+"würde etwa ``:ref:`doc_insert_your_title_here``` auf die obige Beispielseite "
+"verlinken (man beachte den fehlenden Unterstrich im Verweis)."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:76
 msgid ""
@@ -127,34 +172,41 @@ msgid ""
 "a capitalized letter, and every following word should not. Thus, this is a "
 "good example:"
 msgstr ""
+"Außerdem vermeide CamelCase-Überschriften (die amerikanische Schreibweise): "
+"Das erste Wort sollte stets mit einem Großbuchstaben beginnen, während der "
+"Rest normal geschrieben wird. Hier ein gutes Beispiel:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:80
 msgid "Insert your title here"
-msgstr ""
+msgstr "Hier Überschrift einfügen"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:82
 msgid "And this is a bad example:"
-msgstr ""
+msgstr "Und das ist ein schlechtes Beispiel:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:84
 msgid "Insert Your Title Here"
-msgstr ""
+msgstr "Hier Überschrift Einfügen"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:86
 msgid ""
 "Only project, people and node class names should have capitalized first "
 "letter."
 msgstr ""
+"Nur Node-Klassen-, Projekt-, Personennamen und sonstige grammatikalisch "
+"bedingte Fälle sollten großgeschrieben werden."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:90
 msgid "Translating existing pages"
-msgstr ""
+msgstr "Übersetzen vorhandener Seiten"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:92
 msgid ""
 "You can help to translate the official Godot documentation on our `Hosted "
 "Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
 msgstr ""
+"Du kannst bei der Übersetzung der Godot-Dokumentation über unsere `Hosted "
+"Weblate <https://hosted.weblate.org/engage/godot-engine/>`_-Seite mithelfen."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:99
 msgid ""
@@ -162,6 +214,9 @@ msgid ""
 "godotengine/godot-docs-l10n>`_. where you can see when the data was last "
 "synced."
 msgstr ""
+"Dann gibt es noch das offizielle `Godot I18N-Repository <https://github.com/"
+"godotengine/godot-docs-l10n>`_. wo Du einsehen kannst, wann die letzte "
+"Synchronisation stattgefunden hat."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:102
 msgid "License"
@@ -174,13 +229,15 @@ msgid ""
 "tldrlegal.com/license/creative-commons-attribution-(cc)>`_, with attribution "
 "to \"Juan Linietsky, Ariel Manzur and the Godot community\"."
 msgstr ""
-"Diese Dokumentation und alle enthaltenen Seiten werden unter den Bedingungen "
-"der `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://tldrlegal."
-"com/license/creative-commons-attribution-(cc)>`_, unter Zuschreibung an  "
-"\"Juan Linietsky, Ariel Manzur und die Godot-Gemeinschaft\", veröffentlicht."
+"Alle Beiträge werden unter der freizügigen `Creative Commons Attribution 3.0-"
+"Lizenz (CC-BY-3.0) <https://tldrlegal.com/license/creative-commons-"
+"attribution-(cc)>`_ unter dem Namen „Juan Linietsky, Ariel Manzur and the "
+"Godot Engine community“ veröffentlicht."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:107
 msgid ""
 "By contributing to the documentation on the GitHub repository, you agree "
 "that your changes are distributed under this license."
 msgstr ""
+"Durch das Beitragen zu dieser Dokumentation im GitHub-Repository akzeptierst "
+"Du die Veröffentlichung Deiner Inhalte unter dieser Lizenz."

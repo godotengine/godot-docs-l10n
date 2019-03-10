@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:4
 msgid "Object class"
-msgstr ""
+msgstr "Класс Object"
 
 #: ../../docs/development/cpp/object_class.rst:7
 msgid "General definition"
-msgstr ""
+msgstr "Общее определение"
 
 #: ../../docs/development/cpp/object_class.rst:9
 msgid ""
@@ -32,10 +32,14 @@ msgid ""
 "reflection and editable properties, and declaring them is a matter of using "
 "a single macro like this."
 msgstr ""
+":ref:`Object <class_object>`это базовый класс почти для всего. Большинство "
+"классов в Godot наследуется от него напрямую или косвенно. Объекты "
+"предоставляют рефлексию и редактируемые свойства, а также их объявление "
+"важно для использования простых макросов как этот."
 
 #: ../../docs/development/cpp/object_class.rst:21
 msgid "This makes Objects gain a lot of functionality, like for example"
-msgstr ""
+msgstr "Это делает Объекты многофункциональными, например"
 
 #: ../../docs/development/cpp/object_class.rst:31
 #: ../../docs/development/cpp/object_class.rst:89
@@ -44,7 +48,7 @@ msgstr ""
 #: ../../docs/development/cpp/object_class.rst:288
 #: ../../docs/development/cpp/object_class.rst:307
 msgid "References:"
-msgstr ""
+msgstr "Источники:"
 
 #: ../../docs/development/cpp/object_class.rst:33
 msgid ""
@@ -54,7 +58,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:36
 msgid "Registering an Object"
-msgstr ""
+msgstr "Регистрация Object"
 
 #: ../../docs/development/cpp/object_class.rst:38
 msgid ""
@@ -62,20 +66,25 @@ msgid ""
 "that inherit from Object, as well as dynamic bindings to all their methods "
 "properties and integer constants."
 msgstr ""
+"ClassDB это статический класс который хранит полный лист зарегистрированных "
+"классов наследуемых от Object, и динамические связки для всех их методов "
+"свойств и целочисленных констант."
 
 #: ../../docs/development/cpp/object_class.rst:42
 msgid "Classes are registered by calling:"
-msgstr ""
+msgstr "Классы регистрируются через вызов:"
 
 #: ../../docs/development/cpp/object_class.rst:48
 msgid ""
 "Registering it will allow the class to be instanced by scripts, code, or "
 "creating them again when deserializing."
 msgstr ""
+"Регистрация позволяет классу быть инстанцируемым из скриптов, кода, или "
+"созданием их снова при десериализации."
 
 #: ../../docs/development/cpp/object_class.rst:51
 msgid "Registering as virtual is the same but it can't be instanced."
-msgstr ""
+msgstr "Регистрация как виртуальный такое же но не может быть инстанцируемо."
 
 #: ../../docs/development/cpp/object_class.rst:57
 msgid ""
@@ -85,16 +94,25 @@ msgid ""
 "only called once. If an Object derived class is instanced but has not been "
 "registered, it will be registered as virtual automatically."
 msgstr ""
+"Классы наследника Object могут быть перезаписаны в статической функции "
+"``static void _bind_methods()``. Когда один из классов регистрируется, эта "
+"статическая функция вызывается для регистрации все его методов, свойств, "
+"констант, итд. Она вызывается лишь единожды. Если класс наследник Object "
+"инстанцируется не будучи зарегистрированным, он будет автоматически "
+"зарегистрирован как виртуальный."
 
 #: ../../docs/development/cpp/object_class.rst:64
 msgid ""
 "Inside ``_bind_methods``, there are a couple of things that can be done. "
 "Registering functions is one:"
 msgstr ""
+"Внутри ``_bind_methods``, есть целая куча вещей которые могут быть сделаны. "
+"Регистрация функций одна из них:"
 
 #: ../../docs/development/cpp/object_class.rst:71
 msgid "Default values for arguments can be passed in reverse order:"
 msgstr ""
+"Значения по умолчанию для аргументов могут быть переданы в обратном порядке:"
 
 #: ../../docs/development/cpp/object_class.rst:77
 msgid ""
@@ -103,10 +121,15 @@ msgid ""
 "compiling on release, the macro ignores them, so the strings are unused and "
 "optimized away."
 msgstr ""
+"``D_METHOD`` это макрос для конвертации \"methodname\" в StringName для "
+"большей эффективности. Имена аргументов используются для интроспекции, но во "
+"время компиляции для релиза, макрос игнорирует их, так что эти строки будут "
+"не использованы и выброшены при оптимизации."
 
 #: ../../docs/development/cpp/object_class.rst:82
 msgid "Check ``_bind_methods`` of Control or Object for more examples."
 msgstr ""
+"Смотрите ``_bind_methods`` для Control или Object для подробных примеров."
 
 #: ../../docs/development/cpp/object_class.rst:84
 msgid ""
@@ -114,6 +137,9 @@ msgid ""
 "documented as thoroughly, the ``D_METHOD()`` macro can safely be ignored and "
 "a string passing the name can be passed for brevity."
 msgstr ""
+"Если просто добавить модули и функциональность которую не нужно добавлять в "
+"документацию, макрос ``D_METHOD()`` можно спокойно проигнорировать и строка "
+"с именем может быть использована для краткости."
 
 #: ../../docs/development/cpp/object_class.rst:91
 msgid ""
@@ -127,7 +153,7 @@ msgstr "Константы"
 
 #: ../../docs/development/cpp/object_class.rst:96
 msgid "Classes often have enums such as:"
-msgstr ""
+msgstr "Классы часто содержат перечисления такие как:"
 
 #: ../../docs/development/cpp/object_class.rst:105
 msgid ""
@@ -141,25 +167,28 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:120
 msgid "Properties (set/get)"
-msgstr ""
+msgstr "Свойства (set/get)"
 
 #: ../../docs/development/cpp/object_class.rst:122
 msgid "Objects export properties, properties are useful for the following:"
-msgstr ""
+msgstr "Объекты экспортируют свойства, свойства полезны для следующего:"
 
 #: ../../docs/development/cpp/object_class.rst:124
+#, fuzzy
 msgid "Serializing and deserializing the object."
-msgstr ""
+msgstr "Сериализации и десирализации объекта."
 
 #: ../../docs/development/cpp/object_class.rst:125
 msgid "Creating a list of editable values for the Object derived class."
 msgstr ""
+"Создание списка редактируемых значений для наследуемых от Object классов."
 
 #: ../../docs/development/cpp/object_class.rst:127
 msgid ""
 "Properties are usually defined by the PropertyInfo() class. Usually "
 "constructed as:"
 msgstr ""
+"Свойств обычно определены классом PropertyInfo(). Обычно создаются как:"
 
 #: ../../docs/development/cpp/object_class.rst:134
 msgid "For example:"
@@ -171,10 +200,14 @@ msgid ""
 "from 0 to 49 in steps of 1 (integers). It is only usable for the editor "
 "(edit value visually) but won't be serialized."
 msgstr ""
+"Это целочисленное свойство, названное \"amount\", hint это диапазон, от 0 до "
+"49 в шаге 1(целочисленных значений). Это может только использоваться в "
+"редакторе (визуальное редактирование значения) но не может быть "
+"сериализовано."
 
 #: ../../docs/development/cpp/object_class.rst:144
 msgid "Another example:"
-msgstr ""
+msgstr "Другой пример:"
 
 #: ../../docs/development/cpp/object_class.rst:150
 msgid ""
@@ -182,12 +215,18 @@ msgid ""
 "allow the defined hint ones. Since no usage flags were specified, the "
 "default ones are PROPERTY_USAGE_STORAGE and PROPERTY_USAGE_EDITOR."
 msgstr ""
+"Это строковое свойство, может брать любую строку но редактор будет разрешать "
+"только определённые подсказанные(hint). Так как не определенно флагов "
+"использования, по умолчанию это PROPERTY_USAGE_STORAGE и "
+"PROPERTY_USAGE_EDITOR."
 
 #: ../../docs/development/cpp/object_class.rst:154
 msgid ""
 "There are plenty of hints and usage flags available in object.h, give them a "
 "check."
 msgstr ""
+"Существует много подсказок и флагов использования доступные в object.h, "
+"проверьте их."
 
 #: ../../docs/development/cpp/object_class.rst:157
 msgid ""
@@ -197,26 +236,36 @@ msgid ""
 "such as \"animation/frame\" which also make indexing impossible unless using "
 "operator []."
 msgstr ""
+"Свойства могут также работать как свойства C# и могут быть доступные из "
+"скрипта через индексирование, но это их использование в целом не "
+"приветствуется, так использования функций предпочтительнее для понятности. "
+"Многие свойства также разбиты на категории, такие как \"animation/frame\" "
+"которые делают индексирование невозможным разве что с использованием "
+"оператора []."
 
 #: ../../docs/development/cpp/object_class.rst:163
 msgid ""
 "From ``_bind_methods()``, properties can be created and bound as long as set/"
 "get functions exist. Example:"
 msgstr ""
+"Из ``_bind_methods()``, свойства могут быть созданы и связаны с "
+"соответствующими существующими функциями set/get. Например:"
 
 #: ../../docs/development/cpp/object_class.rst:170
 msgid "This creates the property using the setter and the getter."
-msgstr ""
+msgstr "Это создаёт свойство использующее сеттер и геттер."
 
 #: ../../docs/development/cpp/object_class.rst:173
 msgid "Binding properties using ``_set``/``_get``/``_get_property_list``"
-msgstr ""
+msgstr "Связывание свойств через ``_set``/``_get``/``_get_property_list``"
 
 #: ../../docs/development/cpp/object_class.rst:175
 msgid ""
 "An additional method of creating properties exists when more flexibility is "
 "desired (i.e. adding or removing properties on context)."
 msgstr ""
+"Дополнительный метод для создания свойств существует для достижения большей "
+"гибкости (т.е добавления или удаления свойств в контексте)."
 
 #: ../../docs/development/cpp/object_class.rst:178
 msgid ""
@@ -224,21 +273,28 @@ msgid ""
 "are NOT virtual, DO NOT make them virtual, they are called for every "
 "override and the previous ones are not invalidated (multilevel call)."
 msgstr ""
+"Следующие функции могут быть перезаписаны в наследнике Object, они НЕ "
+"виртуальные, НЕ ДЕЛАЙТЕ их виртуальными, они вызываются для каждой "
+"перезаписи и предыдущие не удаляются (мультиуровневый вызов)."
 
 #: ../../docs/development/cpp/object_class.rst:189
 msgid ""
 "This is also a little less efficient since ``p_property`` must be compared "
 "against the desired names in serial order."
 msgstr ""
+"Это также менее эффективно поскольку ``p_property`` должно быть "
+"последовательно сравнено со списком имен."
 
 #: ../../docs/development/cpp/object_class.rst:193
 msgid "Dynamic casting"
-msgstr ""
+msgstr "Динамическое приведение"
 
 #: ../../docs/development/cpp/object_class.rst:195
 msgid ""
 "Godot provides dynamic casting between Object-derived classes, for example:"
 msgstr ""
+"Godot позволяет динамическое приведение между классами наследниками Object, "
+"к примеру:"
 
 #: ../../docs/development/cpp/object_class.rst:205
 msgid ""
@@ -247,6 +303,10 @@ msgid ""
 "platforms where a small binary size is ideal, such as HTML5 or consoles "
 "(with low memory footprint)."
 msgstr ""
+"Если приведение неудачно, возвращается NULL. Эта система использует RTTI, но "
+"также может хорошо работать (может немного медленно) когда RTTI отключено. "
+"Это полезно для платформ где маленькие размеры бинарного файла "
+"предпочтительнее, такое как HTML5 или консоли(с медленным доступом к памяти)."
 
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
@@ -257,18 +317,24 @@ msgid ""
 "Objects can have a set of signals defined (similar to Delegates in other "
 "languages). Connecting to them is rather easy:"
 msgstr ""
+"Объекты могут иметь определённый список сигналов (похожи на Делегаты в "
+"других языках). Соединение с ними весьма простое:"
 
 #: ../../docs/development/cpp/object_class.rst:222
 msgid ""
 "The method ``_node_entered_tree`` must be registered to the class using "
 "``ClassDB::register_method`` (explained before)."
 msgstr ""
+"Метод ``_node_entered_tree`` должен быть зарегистрирован для класса через "
+"``ClassDB::register_method`` (объяснён ранее)."
 
 #: ../../docs/development/cpp/object_class.rst:225
 msgid ""
 "Adding signals to a class is done in ``_bind_methods``, using the "
 "``ADD_SIGNAL`` macro, for example:"
 msgstr ""
+"Добавление сигналов в класс делается в ``_bind_methods``, через "
+"использование макроса ``ADD_SIGNAL`` например:"
 
 #: ../../docs/development/cpp/object_class.rst:233
 msgid "References"
@@ -280,12 +346,17 @@ msgid ""
 "reference count. It is the base for reference counted object types. "
 "Declaring them must be done using Ref<> template. For example:"
 msgstr ""
+":ref:`Reference <class_reference>` наследуется от Object и хранит количество "
+"ссылок. Это базовый класс для ссылочных типов. Их объявление возможно через "
+"использование шаблона Ref<>. Например:"
 
 #: ../../docs/development/cpp/object_class.rst:247
 msgid ""
 "``myref`` is reference counted. It will be freed when no more Ref<> "
 "templates point to it."
 msgstr ""
+"``myref`` считает ссылки. Он может быть освобождён когда нет больше шаблонов "
+"Ref<> указывающих на него."
 
 #: ../../docs/development/cpp/object_class.rst:253
 msgid ""
@@ -305,10 +376,16 @@ msgid ""
 "This is normally done by the resource loader though. No two different "
 "resources can have the same path, attempt to do so will result in an error."
 msgstr ""
+":ref:`Resource <class_resource>` наследуется от Reference, чтобы все ресурсы "
+"могли считать ссылки. Ресурсы могут опционально содержать путь, который "
+"ссылается в файл на диске. Он может быть установлен через ``resource."
+"set_path(path)``. Хотя это обычно делается через загрузчик ресурсов. Два "
+"разных ресурса не могут иметь одинаковый путь, попытка сделать это  вызовет "
+"ошибку."
 
 #: ../../docs/development/cpp/object_class.rst:264
 msgid "Resources without a path are fine too."
-msgstr ""
+msgstr "Ресурсы без пути тоже возможны."
 
 #: ../../docs/development/cpp/object_class.rst:269
 msgid ""
@@ -318,11 +395,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:272
 msgid "Resource loading"
-msgstr ""
+msgstr "Загрузка Ресурсов"
 
 #: ../../docs/development/cpp/object_class.rst:274
 msgid "Resources can be loaded with the ResourceLoader API, like this:"
-msgstr ""
+msgstr "Ресурсы могут быть загружены через ResourceLoader API, например так:"
 
 #: ../../docs/development/cpp/object_class.rst:280
 msgid ""
@@ -330,6 +407,9 @@ msgid ""
 "the resource loader will return that reference. This means that there can be "
 "only one resource loaded from a file referenced on disk at the same time."
 msgstr ""
+"Если ссылка на этот ресурс уже загружена до этого и находится в памяти, "
+"ресурсный загрузчик вернёт эту ссылку. Это означает что только один ресурс "
+"загруженный из файла ссылается на диск в данное время."
 
 #: ../../docs/development/cpp/object_class.rst:285
 msgid "resourceinteractiveloader (TODO)"
@@ -343,11 +423,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:293
 msgid "Resource saving"
-msgstr ""
+msgstr "Сохранение Ресурсов"
 
 #: ../../docs/development/cpp/object_class.rst:295
 msgid "Saving a resource can be done with the resource saver API:"
-msgstr ""
+msgstr "Сохранение ресурса может быть сделано через API сохранения ресурсов:"
 
 #: ../../docs/development/cpp/object_class.rst:301
 msgid ""
@@ -356,6 +436,10 @@ msgid ""
 "bundled with the saved resource and assigned sub-IDs, like \"res://"
 "someresource.res::1\". This also helps to cache them when loaded."
 msgstr ""
+"Экземпляр будет сохранён. Под-ресурсы имеющие этот путь к файлу будут "
+"сохранены как ссылка на этот ресурс. Под-ресурсы без пути будут присоединены "
+"к сохраняемому ресурсу и переназначены на под-идентификаторы, такие как "
+"\"res://someresource.res::1\". Это также помогает кэшировать их при загрузке."
 
 #: ../../docs/development/cpp/object_class.rst:309
 msgid ""

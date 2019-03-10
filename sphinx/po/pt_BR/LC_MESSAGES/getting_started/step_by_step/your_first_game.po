@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -207,7 +207,6 @@ msgid "Sprite animation"
 msgstr "Animação por Sprites"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -1014,7 +1013,6 @@ msgstr ""
 "novo jogo:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``) to the main script. "
@@ -1027,7 +1025,6 @@ msgstr ""
 "``ScoreTimer`` irá incrementar a pontuação  em 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:799
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -1148,7 +1145,6 @@ msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` nomeado ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:894
-#, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the _Text_ field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -1156,7 +1152,8 @@ msgid ""
 "Regular.ttf\". To use this font, do the following for each of the three "
 "``Control`` nodes:"
 msgstr ""
-"A fonte padrão para os nós ``Control`` é pequena e não escala bem. Há um "
+"Clique no ``ScoreLabel`` e digite um número no campo _Text_ no Inspector. A "
+"fonte padrão para os nós ``Control`` é pequena e não escala bem. Há um "
 "arquivo de fonte incluído nos assets do jogo chamado \"Xolonium-Regular.ttf"
 "\". Para usar esta fonte, faça o seguinte para cada um dos três nós "
 "``Control``:"
@@ -1218,7 +1215,7 @@ msgstr "ScoreLabel"
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
 #, fuzzy
 msgid "*Text* : ``0``"
-msgstr "Text: ``0``"
+msgstr "*Text*: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 #, fuzzy
@@ -1235,23 +1232,20 @@ msgid "MessageLabel"
 msgstr "MessageLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:935
-#, fuzzy
 msgid "*Text* : ``Dodge the Creeps!``"
-msgstr "Texto: ``Desvie dos Bichos!``"
+msgstr "*Text*: ``Desvie dos Bichos!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
-#, fuzzy
 msgid "*Layout* : \"HCenter Wide\""
-msgstr "``Layout``: \"Center\" (Centro)"
+msgstr "*Layout* : \"Center\" (Centro)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:940
 msgid "StartButton"
 msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:942
-#, fuzzy
 msgid "*Text* : ``Start``"
-msgstr "Texto: ``Iniciar``"
+msgstr "Text: ``Iniciar``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:943
 #, fuzzy
@@ -1259,9 +1253,8 @@ msgid "*Layout* : \"Center Bottom\""
 msgstr "``Layout``: \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:944
-#, fuzzy
 msgid "*Margin* :"
-msgstr "Margem (Margin)"
+msgstr "Margem (Margin) :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Top: ``-200``"
