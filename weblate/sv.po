@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2019-03-01 14:18+0100\n"
+"POT-Creation-Date: 2019-03-10 11:47+0100\n"
 "PO-Revision-Date: 2018-10-03 05:37+0000\n"
 "Last-Translator: Christoffer Sundbom <christoffer_karlsson@live.se>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/godot-engine/"
@@ -1473,7 +1473,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:79
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:75
 msgid "Scenes"
 msgstr ""
 
@@ -1985,8 +1985,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
-"`doc_gdscript`. Nowadays, Godot has four (yes, four!) official languages and "
-"the ability to add extra scripting languages dynamically!"
+"`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
+"languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
@@ -2021,9 +2021,9 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
 msgid ""
-":ref:`doc_gdscript` is, as mentioned above, the main language used in Godot. "
-"Using it has some positive points compared to other languages due to its "
-"high integration with Godot:"
+":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
+"in Godot. Using it has some positive points compared to other languages due "
+"to its high integration with Godot:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
@@ -2180,10 +2180,10 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
 msgid ""
-"Before continuing, please make sure to read the :ref:`doc_gdscript` "
-"reference. It's a language designed to be simple, and the reference is "
-"short, so it will not take more than a few minutes to get an overview of the "
-"concepts."
+"Before continuing, please make sure to read the :ref:"
+"`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
+"and the reference is short, so it will not take more than a few minutes to "
+"get an overview of the concepts."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
@@ -2698,7 +2698,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1461
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:682
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:689
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
 msgstr ""
@@ -7456,7 +7456,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:4
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:48
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:60
 #: ../../docs/development/cpp/creating_android_modules.rst:204
 #: ../../docs/development/file_formats/tscn.rst:249
 #: ../../docs/community/resources.rst:4
@@ -9438,7 +9438,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:21
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:322
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:366
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:431
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:434
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:15
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:175
@@ -13678,14 +13678,16 @@ msgid ""
 "contains utilities required to use C# in Godot. If you don't plan on using "
 "the Visual Studio IDE, you can download just the `Visual Studio Build Tools "
 "<https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?"
-"sku=BuildTools&rel=15>`_ instead."
+"sku=BuildTools&rel=15>`_ instead. Make sure you at least have the .NET "
+"Framework 4.5 targeting pack installed, you can get it using any of the "
+"installers mentioned above inside the \"Individual components\" tab."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:50
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
 msgid "macOS and Linux"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:52
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:53
 msgid ""
 "Download and install the latest version of the `Mono SDK <http://www.mono-"
 "project.com/download/>`_. As of Godot 3.1 beta 3, the version number doesn't "
@@ -13694,19 +13696,19 @@ msgid ""
 "Godot."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
 msgid ""
 "To download Mono on macOS, use the \"Stable Channel\" link from the `Mono "
 "Downloads Page <http://www.mono-project.com/download/>`_. The Visual Studio "
 "channel is an earlier version of Mono and will not work."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:65
 #, fuzzy
 msgid "Additional notes"
 msgstr "Skapa innehåll"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
 msgid ""
 "Your Godot version must have Mono support enabled, so make sure to download "
 "the **Mono version** of Godot. If you are building Godot from source, make "
@@ -13714,17 +13716,17 @@ msgid ""
 "the :ref:`doc_compiling_with_mono` page."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:72
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:73
 msgid ""
 "In summary, you must have installed Visual Studio or Mono (depending on your "
 "operating system) **and** the Mono-enabled version of Godot."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:76
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:77
 msgid "Configuring an external editor"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:78
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:79
 msgid ""
 "While Godot has its own script editor, its support for C# is kept minimal; "
 "it's recommended that you use an external IDE or editor instead, such as "
@@ -13735,25 +13737,25 @@ msgid ""
 "**Editor** then choose your external editor of choice."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:88
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:93
 msgid "Creating a C# script"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:95
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting ``Attach script`` in the context menu of a node in "
 "your scene:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:100
 msgid ""
 "Note that while some specifics change, most concepts work the same when "
 "using C# for scripting. If you're new to Godot, you may want to follow the "
@@ -13762,11 +13764,11 @@ msgid ""
 "easily from GDScript."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:106
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:107
 msgid "Project setup and workflow"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:108
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:109
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
 "for your Godot project. This includes generating a C# solution (``.sln``) "
@@ -13778,7 +13780,7 @@ msgid ""
 "let it regenerate."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:117
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:118
 msgid ""
 "Note that currently, there are some issues where Godot and the C# project "
 "don't stay in sync; if you delete, rename or move a C# script, the change "
@@ -13786,7 +13788,7 @@ msgid ""
 "have to edit the C# project file manually."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:122
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:123
 msgid ""
 "For example, if you created a script (e.g. ``Test.cs``) and delete it in "
 "Godot, compilation will fail because the missing file is still expected to "
@@ -13795,25 +13797,25 @@ msgid ""
 "included like the following:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:137
 msgid ""
 "Simply remove that line and your project should build correctly again. Same "
 "for renaming and moving things, simply rename and move them in the project "
 "file if needed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:142
 #: ../../docs/tutorials/io/background_loading.rst:87
 #: ../../docs/tutorials/misc/pausing_games.rst:71
 msgid "Example"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:143
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:144
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:170
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:171
 msgid ""
 "As you can see, functions normally in global scope in GDScript like Godot's "
 "``print`` function are available in the ``GD`` class which is part of the "
@@ -13822,18 +13824,18 @@ msgid ""
 "`@GlobalScope <class_@globalscope>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:178
 msgid ""
 "Keep in mind that the class you wish to attach to your node should be named "
 "as the ``.cs`` file. Otherwise, you will get the following error and won't "
 "be able to run the scene: *\"Cannot find class XXX for script res://XXX.cs\"*"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:184
 msgid "General differences between C# and GDScript"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:185
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:186
 msgid ""
 "The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++. "
 "Where possible, fields and getters/setters have been converted to "
@@ -13841,15 +13843,15 @@ msgid ""
 "reasonably possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:190
 msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:192
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:193
 msgid "Current gotchas and known issues"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:195
 msgid ""
 "As C# support is quite new in Godot, there are some growing pains and things "
 "that need to be ironed out. Below is a list of the most important issues you "
@@ -13858,25 +13860,25 @@ msgid ""
 "godotengine/godot/labels/topic%3Amono>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:201
 msgid ""
 "As explained above, the C# project isn't always kept in sync automatically "
 "when things are deleted, renamed or moved in Godot (`#12917 <https://github."
 "com/godotengine/godot/issues/12917>`_)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:203
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:205
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:207
 msgid ""
 "Exporting Mono projects is only supported for desktop platforms (Linux, "
 "Windows and macOS). Android, iOS, HTML5 and UWP are not currently supported "
@@ -13886,17 +13888,17 @@ msgid ""
 "godotengine/godot/issues/20271>`_)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:213
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:217
 msgid "Performance of C# in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:219
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
 "bunnymark>`_, the performance of C# in Godot — while generally in the same "
@@ -13907,11 +13909,11 @@ msgid ""
 "when talking to Godot."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:226
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:227
 msgid "Using NuGet packages in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:229
 msgid ""
 "`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
 "Godot, as with any C# project. Many IDEs are able to add packages directly. "
@@ -13919,7 +13921,7 @@ msgid ""
 "csproj`` file located in the project root:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:243
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:244
 msgid ""
 "Whenever packages are added or modified, run ``nuget restore`` in the root "
 "of the project directory. To ensure that NuGet packages will be available "
@@ -23895,6 +23897,7 @@ msgid "Vertex Lit Objects (common on mobile)"
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:134
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:108
 msgid "Texture compression"
 msgstr ""
 
@@ -24565,7 +24568,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:355
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:64
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
 msgid "Clearcoat"
 msgstr ""
 
@@ -24577,7 +24580,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:362
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:63
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:60
 msgid "Anisotropy"
 msgstr ""
 
@@ -24639,7 +24642,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:411
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:58
 msgid "Refraction"
 msgstr ""
 
@@ -26060,7 +26063,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:112
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:88
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:87
 msgid "Fog"
 msgstr ""
 
@@ -28468,7 +28471,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:778
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:951
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:994
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1410
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1443
 msgid "Final notes"
 msgstr ""
 
@@ -28503,7 +28506,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:787
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:960
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1002
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1416
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1449
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr ""
 
@@ -31871,7 +31874,7 @@ msgid "Add the following code to ``Target.gd``:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:695
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:892
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:920
 msgid "Let's go over what this script does, starting with the class variables:"
 msgstr ""
 
@@ -33109,7 +33112,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:828
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:452
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:477
 msgid "Now let's go through ``_physics_process``."
 msgstr ""
 
@@ -46625,6 +46628,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:4
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:120
 msgid "Shading language"
 msgstr ""
 
@@ -47495,700 +47499,742 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:427
 msgid ""
-"A large number of built-in functions are supported, conforming mostly to "
-"GLSL ES 3.0. When vec_type (float), vec_int_type, vec_uint_type, "
-"vec_bool_type nomenclature is used, it can be scalar or vector."
+"A large number of built-in functions are supported, conforming to GLSL ES "
+"3.0. When vec_type (float), vec_int_type, vec_uint_type, vec_bool_type "
+"nomenclature is used, it can be scalar or vector."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:431
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:430
+msgid ""
+"For a list of the functions that are not available in the GLES2 backend, "
+"please see the :ref:`Differences between GLES2 and GLES3 doc "
+"<doc_gles2_gles3_differences>`."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:434
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:128
 msgid "Function"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:433
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:436
 msgid "vec_type **radians** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:433
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:436
 msgid "Convert degrees to radians"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:435
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:438
 msgid "vec_type **degrees** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:435
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:438
 msgid "Convert radians to degrees"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:437
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:440
 msgid "vec_type **sin** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:437
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:440
 msgid "Sine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:439
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:442
 msgid "vec_type **cos** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:439
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:442
 msgid "Cosine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:441
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:444
 msgid "vec_type **tan** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:441
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:444
 msgid "Tangent"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:443
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:446
 msgid "vec_type **asin** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:443
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:446
 msgid "Arc-Sine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:445
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:448
 msgid "vec_type **acos** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:445
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:448
 msgid "Arc-Cosine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:447
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:450
 msgid "vec_type **atan** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:447
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:450
 msgid "Arc-Tangent"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:449
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:452
 msgid "vec_type **atan** ( vec_type x, vec_type y )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:449
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:452
 msgid "Arc-Tangent to convert vector to angle"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:451
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:454
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:130
 msgid "vec_type **sinh** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:451
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:454
 msgid "Hyperbolic-Sine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:453
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:456
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:132
 msgid "vec_type **cosh** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:453
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:456
 msgid "Hyperbolic-Cosine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:455
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:458
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:134
 msgid "vec_type **tanh** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:455
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:458
 msgid "Hyperbolic-Tangent"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:457
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:460
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:136
 msgid "vec_type **asinh** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:457
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:460
 msgid "Inverse-Hyperbolic-Sine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:459
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:462
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:138
 msgid "vec_type **acosh** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:459
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:462
 msgid "Inverse-Hyperbolic-Cosine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:461
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:464
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:140
 msgid "vec_type **atanh** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:461
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:464
 msgid "Inverse-Hyperbolic-Tangent"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:463
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:466
 msgid "vec_type **pow** ( vec_type, vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:463
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:466
 msgid "Power"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:465
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:468
 msgid "vec_type **exp** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:465
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:468
 msgid "Base-e Exponential"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:467
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:470
 msgid "vec_type **exp2** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:467
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:470
 msgid "Base-2 Exponential"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:469
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:472
 msgid "vec_type **log** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:469
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:472
 msgid "Natural Logarithm"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:471
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:474
 msgid "vec_type **log2** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:471
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:474
 msgid "Base-2 Logarithm"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:473
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:476
 msgid "vec_type **sqrt** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:473
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:476
 msgid "Square Root"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:475
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:478
 msgid "vec_type **inversesqrt** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:475
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:478
 msgid "Inverse Square Root"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:477
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:480
 msgid "vec_type **abs** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:477
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:479
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:480
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:482
 msgid "Absolute"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:479
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:482
 msgid "vec_int_type **abs** ( vec_int_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:481
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:484
 msgid "vec_type **sign** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:481
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:483
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:484
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:486
 msgid "Sign"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:483
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:486
 msgid "vec_int_type **sign** ( vec_int_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:485
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:488
 msgid "vec_type **floor** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:485
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:488
 msgid "Floor"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:487
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:490
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:142
 msgid "vec_type **round** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:487
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:490
 msgid "Round"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:489
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:492
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:144
 msgid "vec_type **roundEven** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:489
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:492
 msgid "Round nearest even"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:491
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:494
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:146
 msgid "vec_type **trunc** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:491
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:494
 msgid "Truncation"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:493
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:496
 msgid "vec_type **ceil** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:493
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:496
 msgid "Ceiling"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:495
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:498
 msgid "vec_type **fract** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:495
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:498
 msgid "Fractional"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:497
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:500
 msgid "vec_type **mod** ( vec_type, vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:497
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:499
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:500
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:502
 msgid "Remainder"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:499
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:502
 msgid "vec_type **mod** ( vec_type, float )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:501
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:504
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:148
 msgid "vec_type **modf** ( vec_type x, out vec_type i )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:501
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:504
 msgid "Fractional of x, with i has integer part"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:503
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:506
 msgid "vec_scalar_type **min** ( vec_scalar_type a, vec_scalar_type b )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:503
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:506
 msgid "Minimum"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:505
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:508
 msgid "vec_scalar_type **max** ( vec_scalar_type a, vec_scalar_type b )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:505
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:508
 msgid "Maximum"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:507
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:510
 msgid ""
 "vec_scalar_type **clamp** ( vec_scalar_type value, vec_scalar_type min, "
 "vec_scalar_type max )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:507
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:510
 msgid "Clamp to Min-Max"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:509
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:512
 msgid "vec_type **mix** ( vec_type a, vec_type b, float c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:509
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:512
 msgid "Linear Interpolate (Scalar Coef.)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:511
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:514
 msgid "vec_type **mix** ( vec_type a, vec_type b, vec_type c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:511
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:514
 msgid "Linear Interpolate (Vector Coef.)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:513
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:516
 msgid "vec_type **mix** ( vec_type a, vec_type b, bool c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:513
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:516
 msgid "Linear Interpolate (Bool Selection)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:515
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:518
 msgid "vec_type **mix** ( vec_type a, vec_type b, vec_bool_type c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:515
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:518
 msgid "Linear Interpolate (Bool-Vector Selection)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:517
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:520
 msgid "vec_type **step** ( vec_type a, vec_type b )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:517
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:520
 msgid "``b[i] < a[i] ? 0.0 : 1.0``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:519
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:522
 msgid "vec_type **step** ( float a, vec_type b )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:519
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:522
 msgid "``b[i] < a ? 0.0 : 1.0``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:521
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:524
 msgid "vec_type **smoothstep** ( vec_type a, vec_type b, vec_type c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:521
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:524
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:526
 msgid "Hermite Interpolate"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:526
 msgid "vec_type **smoothstep** ( float a, float b, vec_type c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:528
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:150
 msgid "vec_bool_type **isnan** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:528
 msgid "Scalar, or vector component being nan"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:530
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:152
 msgid "vec_bool_type **isinf** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:530
 msgid "Scalar, or vector component being inf"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:532
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:154
 msgid "vec_int_type **floatBitsToInt** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:532
 msgid "Float->Int bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:531
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:534
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:156
 msgid "vec_uint_type **floatBitsToUint** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:531
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:534
 msgid "Float->UInt bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:533
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:536
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:158
 msgid "vec_type **intBitsToFloat** ( vec_int_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:533
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:536
 msgid "Int->Float bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:535
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:538
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:160
 msgid "vec_type **uintBitsToFloat** ( vec_uint_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:535
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:538
 msgid "UInt->Float bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:537
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:540
 msgid "float **length** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:537
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:540
 msgid "Vector Length"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:539
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:542
 msgid "float **distance** ( vec_type, vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:539
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:542
 msgid "Distance between vector"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:541
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:544
 msgid "float **dot** ( vec_type, vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:541
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:544
 msgid "Dot Product"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:543
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:546
 msgid "vec3 **cross** ( vec3, vec3 )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:543
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:546
 msgid "Cross Product"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:545
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:548
 msgid "vec_type **normalize** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:545
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:548
 msgid "Normalize to unit length"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:547
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:550
 msgid "vec3 **reflect** ( vec3 I, vec3 N )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:547
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:550
 msgid "Reflect"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:549
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:552
 msgid "vec3 **refract** ( vec3 I, vec3 N, float eta )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:549
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:552
 msgid "Refract"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:551
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:554
 msgid "vec_type **faceforward** ( vec_type N, vec_type I, vec_type Nref )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:551
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:554
 msgid "If dot(Nref, I) < 0, return N, otherwise –N"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:553
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:556
 msgid "mat_type **matrixCompMult** ( mat_type, mat_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:553
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:556
 msgid "Matrix Component Multiplication"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:555
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:558
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:162
 msgid "mat_type **outerProduct** ( vec_type, vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:555
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:558
 msgid "Matrix Outer Product"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:557
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:560
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:164
 msgid "mat_type **transpose** ( mat_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:557
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:560
 msgid "Transpose Matrix"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:559
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:562
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:166
 msgid "float **determinant** ( mat_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:559
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:562
 msgid "Matrix Determinant"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:561
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:564
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:168
 msgid "mat_type **inverse** ( mat_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:561
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:564
 msgid "Inverse Matrix"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:563
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:566
 msgid "vec_bool_type **lessThan** ( vec_scalar_type, vec_scalar_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:563
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:566
 msgid "Bool vector cmp on < int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:565
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:568
 msgid "vec_bool_type **greaterThan** ( vec_scalar_type, vec_scalar_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:565
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:568
 msgid "Bool vector cmp on > int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:567
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:570
 msgid "vec_bool_type **lessThanEqual** ( vec_scalar_type, vec_scalar_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:567
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:570
 msgid "Bool vector cmp on <= int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:569
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:572
 msgid "vec_bool_type **greaterThanEqual** ( vec_scalar_type, vec_scalar_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:569
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:572
 msgid "Bool vector cmp on >= int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:571
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:574
 msgid "vec_bool_type **equal** ( vec_scalar_type, vec_scalar_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:571
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:574
 msgid "Bool vector cmp on == int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:573
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:576
 msgid "vec_bool_type **notEqual** ( vec_scalar_type, vec_scalar_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:573
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:576
 msgid "Bool vector cmp on != int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:575
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:578
 msgid "bool **any** ( vec_bool_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:575
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:578
 msgid "Any component is true"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:577
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:580
 msgid "bool **all** ( vec_bool_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:577
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:580
 msgid "All components are true"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:579
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:582
 msgid "bool **not** ( vec_bool_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:579
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:582
 msgid "No components are true"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:581
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:584
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:170
 msgid "ivec2 **textureSize** ( sampler2D_type s, int lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:581
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:584
 msgid "Get the size of a texture"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:583
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:586
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:172
 msgid "ivec2 **textureSize** ( samplerCube s, int lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:583
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:586
 msgid "Get the size of a cubemap"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:588
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:174
 msgid "vec4_type **texture** ( sampler2D_type s, vec2 uv [, float bias] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:588
 msgid "Perform a 2D texture read"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:587
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:590
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:176
 msgid "vec4_type **texture** ( samplerCube s, vec3 uv [, float bias] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:587
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:590
 msgid "Perform a Cube texture read"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:589
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:592
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:178
 msgid "vec4_type **textureProj** ( sampler2D_type s, vec3 uv [, float bias] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:589
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:591
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:592
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:594
 msgid "Perform a texture read with projection"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:591
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:594
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:180
 msgid "vec4_type **textureProj** ( sampler2D_type s, vec4 uv [, float bias] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:593
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:596
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:182
 msgid "vec4_type **textureLod** ( sampler2D_type s, vec2 uv, float lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:593
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:596
 msgid "Perform a 2D texture read at custom mipmap"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:595
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:598
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:184
 msgid "vec4_type **textureLod** ( samplerCube s, vec3 uv, float lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:595
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:598
 msgid "Perform a Cube texture read at custom mipmap"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:597
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:600
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:186
 msgid "vec4_type **textureProjLod** ( sampler2D_type s, vec3 uv, float lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:597
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:599
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:600
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:602
 msgid "Perform a texture read with projection/lod"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:599
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:602
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:188
 msgid "vec4_type **textureProjLod** ( sampler2D_type s, vec4 uv, float lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:604
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:190
 msgid "vec4_type **texelFetch** ( sampler2D_type s, ivec2 uv, int lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:604
 msgid "Fetch a single texel using integer coords"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:606
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:192
 msgid "vec_type **dFdx** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:606
 msgid "Derivative in x using local differencing"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:605
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:608
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:194
 msgid "vec_type **dFdy** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:605
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:608
 msgid "Derivative in y using local differencing"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:607
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:610
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:196
 msgid "vec_type **fwidth** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:607
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:610
 msgid "Sum of absolute derivative in x and y"
 msgstr ""
 
@@ -49699,8 +49745,9 @@ msgstr ""
 #: ../../docs/tutorials/shading/shader_materials.rst:9
 msgid ""
 "For the most common cases, Godot provides ready to use materials for most "
-"types of shaders, such as SpatialMaterial, CanvasItemMaterial and "
-"ParticlesMaterial (@TODO link to tutorials/classes). They are flexible "
+"types of shaders, such as :ref:`SpatialMaterial <class_SpatialMaterial>`, :"
+"ref:`CanvasItemMaterial <class_CanvasItemMaterial>` and :ref:"
+"`ParticlesMaterial <class_ParticlesMaterial>`. They are flexible "
 "implementations that cover most use cases."
 msgstr ""
 
@@ -49715,7 +49762,7 @@ msgid "Create procedural textures."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:18
-msgid "Create complex texture blendings."
+msgid "Create complex texture blending effects."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:19
@@ -49735,43 +49782,40 @@ msgid "Animate vertices, like tree leaves or grass."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:23
-msgid ""
-"Create custom particle code, that responds to baked animations or force "
-"fields."
+msgid "Create custom particle code."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:26
 msgid ""
-"Traditionally, most engines will ask you to learn GLSL, HLSL or Cg, which "
-"are pretty complex for the skillset of most artists. Godot uses a simplified "
-"version of a shader language that will detect errors as you type, so you can "
-"see your edited shaders in real-time. Additionally, it is possible to edit "
+"Godot provides built in functionality to make frequent operations easier. "
+"Additionally, Godot's shader editor will detect errors as you type, so you "
+"can see your edited shaders in real-time. It is also possible to edit "
 "shaders using a visual, node-based graph editor."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shader_materials.rst:33
+#: ../../docs/tutorials/shading/shader_materials.rst:32
 msgid "Creating a ShaderMaterial"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shader_materials.rst:35
+#: ../../docs/tutorials/shading/shader_materials.rst:34
 msgid ""
 "Create a new ShaderMaterial in some object of your choice. Go to the "
 "\"Material\" property and create a ShaderMaterial."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shader_materials.rst:40
+#: ../../docs/tutorials/shading/shader_materials.rst:39
 msgid "Edit the newly created shader, and the shader editor will open:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shader_materials.rst:45
+#: ../../docs/tutorials/shading/shader_materials.rst:44
 msgid "Converting to ShaderMaterial"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shader_materials.rst:47
+#: ../../docs/tutorials/shading/shader_materials.rst:46
 msgid ""
 "It is possible to convert from SpatialMaterial, CanvasItemMaterial and "
 "ParticlesMaterial to ShaderMaterial. To do so, go to the material properties "
-"and enable the convert option."
+"and select the convert option."
 msgstr ""
 
 #: ../../docs/tutorials/shading/intro_to_shaders_water_workshop.rst:4
@@ -53084,7 +53128,7 @@ msgid ""
 "following code:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:119
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:143
 msgid ""
 "For this to work, you will need to have the `OpenVR asset from the Asset "
 "Library <https://godotengine.org/asset-library/asset/150>`_. The OpenVR "
@@ -53093,11 +53137,11 @@ msgid ""
 "then going to the Asset Library and downloading the newest version."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:123
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:147
 msgid "With that done, let's quickly go over what this script does."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:125
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:149
 msgid ""
 "Firstly, we find a VR interface from the ARVR server. We do this because by "
 "default Godot does not include any VR interfaces, but rather exposes an API "
@@ -53105,14 +53149,14 @@ msgid ""
 "if an OpenVR interface was found, and then we initialize it."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:128
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:152
 msgid ""
 "Assuming nothing went wrong with initializing, we then turn the main :ref:"
 "`Viewport <class_Viewport>` into an AR/VR viewport, by setting ``arvr`` to "
 "``true``. We also set HDR to ``false``, since you cannot use HDR in OpenVR."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:131
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:155
 msgid ""
 "Then, we disable V-Sync and set the target FPS to 90 frames per second. Most "
 "VR headsets run at 90 Hz, and since the game will display on both the VR "
@@ -53121,14 +53165,14 @@ msgid ""
 "down to 60 FPS."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:134
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:158
 msgid ""
 "One thing to notice as well is that the physics FPS is also set to 90! This "
 "makes the physics run at the same frame rate as the display, which makes "
 "things look smoother in VR."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:139
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:163
 msgid ""
 "With that done, go ahead and give the game a try! If everything goes well, "
 "you will now be able to look around the world! If you have a VR headset with "
@@ -53136,11 +53180,11 @@ msgid ""
 "allows."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:143
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:167
 msgid "Coding the controllers"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:145
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:169
 msgid ""
 "While perhaps interesting if we were making a VR film, we really want to do "
 "more than stand around and look. Currently, we cannot move outside of the "
@@ -53148,7 +53192,7 @@ msgid ""
 "cannot interact with anything! Let's change that!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:148
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:172
 msgid ""
 "You may have noticed that you have a pair of green and black hands following "
 "the controllers. Let's write the code for those controllers, which will "
@@ -53156,14 +53200,14 @@ msgid ""
 "and release :ref:`RigidBody <class_RigidBody>` nodes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:151
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:175
 msgid ""
 "Open either ``Left_Controller.tscn`` or ``Right_Controller.tscn``. Feel free "
 "to look at how the scene is set up; there are only a couple things of note "
 "to point out."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:153
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:177
 msgid ""
 "Firstly, notice how there are a couple :ref:`Raycast <class_Raycast>` nodes. "
 "We will be using one :ref:`Raycast <class_Raycast>` to teleport around the "
@@ -53172,7 +53216,7 @@ msgid ""
 "to pick up objects."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:156
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:180
 msgid ""
 "The other thing to note is how there is an :ref:`Area <class_Area>` simply "
 "called ``Area``, that is a small sphere in the palm of the hand. This will "
@@ -53180,122 +53224,122 @@ msgid ""
 "player is using :ref:`Area <class_Area>` nodes to pick up objects."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:159
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:183
 msgid ""
 "We also have a larger :ref:`Area <class_Area>` called ``Sleep_Area``, which "
 "will simply be used to wake :ref:`RigidBody <class_RigidBody>` nodes when "
 "the hands get close."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:161
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:185
 msgid ""
 "Select the root node, either ``Left_Controller`` or ``Right_Controller`` "
 "depending on which scene you chose, and create a new script called "
 "``VR_Controller.gd``. Add the following to ``VR_Controller.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:415
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:440
 msgid ""
 "This is quite a bit of code to go through, so let's break it down bit by "
 "bit. Let's start with the class variables, which are variables outside of "
 "any/all functions."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:418
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:443
 msgid ""
 "``controller_velocity``: The velocity the controller is moving at. We will "
 "calculate this by changes in position every physics frame."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:419
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:444
 msgid ""
 "``prior_controller_position``: The controller's previous position. We will "
 "use this to calculate the controller's velocity."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:420
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:445
 msgid ""
 "``prior_controller_velocities``: The last 30 calculated velocities (1/3 of a "
 "second worth of velocities, assuming the game is running at 90 FPS)."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:421
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:446
 msgid ""
 "``held_object``: The currently-held object, a :ref:`RigidBody "
 "<class_RigidBody>`, if there is one."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:422
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:447
 msgid ""
 "``held_object_data``: The data of the currently-held object, used to reset "
 "the object when it is no longer being held."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:423
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:448
 msgid "``grab_area``: The :ref:`Area <class_Area>` node used to grab objects."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:424
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:449
 msgid "``grab_pos_node``: The position where held objects stay."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:425
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:450
 msgid ""
 "``hand_mesh``: The hand mesh, used to represent the player's hand when they "
 "are not holding anything."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:426
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:451
 msgid ""
 "``teleport_pos``: The position at which the teleport :ref:`Raycast "
 "<class_Raycast>` is aimed."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:427
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:452
 msgid "``teleport_mesh``: The mesh used to represent the teleport position."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:428
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:453
 msgid ""
 "``teleport_button_down``: A variable for tracking whether the teleport "
 "button is being held down or not."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:429
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:454
 msgid ""
 "``teleport_raycast``: The teleport :ref:`Raycast <class_Raycast>` node, used "
 "for calculating the teleportation position."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:430
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:455
 msgid ""
 "``CONTROLLER_DEADZONE``: The dead zone for both the trackpad and the "
 "joystick."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:431
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:456
 msgid ""
 "``MOVEMENT_SPEED``: The speed the player moves at when moving using the "
 "trackpad and/or the joystick."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:432
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:457
 msgid ""
 "``directional_movement``: A boolean to track whether the player is moving "
 "using this controller."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:436
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:461
 msgid "Next, let's go through ``_ready``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:438
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:463
 msgid ""
 "Firstly, we get the teleport :ref:`Raycast <class_Raycast>` node and assign "
 "it to ``teleport_raycast``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:440
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:465
 msgid ""
 "Next, we get the teleport mesh; notice how we are getting it from ``Game/"
 "Teleport_Mesh`` using ``get_tree().root``. This is because we need the "
@@ -53304,19 +53348,19 @@ msgid ""
 "mesh."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:443
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:468
 msgid ""
 "Then we get the grab area, grab :ref:`Raycast <class_Raycast>`, and position "
 "node and assign them to the proper variables."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:445
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:470
 msgid ""
 "We set the default grab mode to ``AREA`` so it uses the :ref:`Area "
 "<class_Area>` node to grab objects by default."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:447
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:472
 msgid ""
 "Then we connect the ``body_entered`` and ``body_exited`` signals from the "
 "sleep area node, we get the hand mesh and assign it the proper variable, and "
@@ -53324,7 +53368,7 @@ msgid ""
 "from the :ref:`ARVRController <class_ARVRController>`."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:454
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:479
 msgid ""
 "Firstly, we check to see if the teleportation button is down or not. If the "
 "teleportation button is down, we then force the teleportation :ref:`Raycast "
@@ -53333,7 +53377,7 @@ msgid ""
 "colliding with anything."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:457
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:482
 msgid ""
 "Next, we check to see if the collision body the :ref:`Raycast "
 "<class_Raycast>` is colliding with is a :ref:`StaticBody "
@@ -53345,14 +53389,14 @@ msgid ""
 "faces pointing upwards."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:461
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:486
 msgid ""
 "If all those checks for the teleport :ref:`Raycast <class_Raycast>` return "
 "true, we then set ``teleport_pos`` to the collision point, and we move the "
 "teleportation mesh to ``teleport_pos``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:464
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:489
 msgid ""
 "The next thing we check is to see if the :ref:`ARVRController "
 "<class_ARVRController>` is active or not. If the :ref:`ARVRController "
@@ -53361,7 +53405,7 @@ msgid ""
 "``controller_velocity`` to an empty :ref:`Vector3 <class_Vector3>`."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:467
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:492
 msgid ""
 "We then add all of the prior velocity calculations in "
 "``prior_controller_velocities`` to ``controller_velocity``. By using the "
@@ -53370,14 +53414,14 @@ msgid ""
 "otherwise we'd get crazy high velocity numbers that are not realistic."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:470
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:495
 msgid ""
 "Next, we calculate the velocity from the position where the controller is "
 "currently, from the position the controller was at. We can use this "
 "difference in position to help track the controller's velocity."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:473
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:498
 msgid ""
 "We then add the velocity from the controller this physics frame and the last "
 "physics frame to ``controller_velocity``. We then update "
@@ -53385,7 +53429,7 @@ msgid ""
 "the calculations in the velocity next physics frame."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:476
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:501
 msgid ""
 "The way we are calculating velocity is not perfect by any means, since it "
 "relies on a consistent amount of frames per second. Ideally, we would be "
@@ -53395,14 +53439,14 @@ msgid ""
 "though, and this will work just fine for this project."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:480
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:505
 msgid ""
 "Then, we check to see if we have more than 30 stored velocities (more than a "
 "third of a second). If there are more than 30, we remove the oldest velocity "
 "from ``prior_controller_velocities``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:484
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:509
 msgid ""
 "Next, we check to see whether there is a held object. If there is, we update "
 "the position and rotation of the held object to the position and rotation of "
@@ -53412,40 +53456,40 @@ msgid ""
 "ruin immersion if the player grabbed a scaled object."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:489
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:514
 msgid ""
 "The last thing we are going to do in ``_physics_process`` is move the player "
 "if they are moving the trackpad/joystick on the VR controller."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:491
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:516
 msgid ""
 "Firstly, we convert the axis values into :ref:`Vector2 <class_Vector2>` "
 "variables, so we can process them. We invert the X axis, so moving the "
 "trackpad/joystick left will move the player left."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:494
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:519
 msgid ""
 "Depending on your VR controller and OS, you may need to change the code so "
 "it gets the proper axis values!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:496
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:521
 msgid ""
 "Next, we account for dead zones on both the trackpad and the joystick. The "
 "code for doing this is adapted from the link below, and I would highly "
 "recommend looking at it."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:498
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:523
 msgid ""
 "You can find a great article explaining joystick dead zones `on Third Helix "
 "<http://www.third-helix.com/2013/04/12/doing-thumbstick-dead-zones-right."
 "html>`_."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:500
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:525
 msgid ""
 "One thing to note is how large we are making the dead zones. The reason we "
 "are using such large dead zones is so the player cannot move themselves "
@@ -53454,44 +53498,44 @@ msgid ""
 "it."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:503
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:528
 msgid ""
 "Next, we get the forward and right directional vectors from the VR camera. "
 "We need these so we can move the player forward/backwards and right/left "
 "based on where they are currently looking."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:506
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:531
 msgid ""
 "Then, we calculate how much the player will be moving by adding both the "
 "trackpad and the joystick vectors together and normalizing them."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:508
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:533
 msgid ""
 "Next, we calculate how far the player will go forwards/backwards and right/"
 "left by multiplying the VR camera's directional vectors by the combined "
 "trackpad/joystick vector."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:510
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:535
 msgid ""
 "We then remove movement on the Y axis so the player cannot fly/fall simply "
 "by moving using the trackpad/joystick."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:512
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:537
 msgid ""
 "And finally, we move the player if there is any movement forwards/backwards "
 "or right/left. If we are moving the player, we set ``directional_movement`` "
 "accordingly."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:516
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:541
 msgid "Now, let's look at ``button_pressed``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:518
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:543
 msgid ""
 "If the button pressed is button 15, which for the Windows Mixed Reality "
 "controllers is the trigger button, we will interact with the held object "
@@ -53499,14 +53543,14 @@ msgid ""
 "object, we will try to start teleporting."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:521
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:546
 msgid ""
 "If the controller is holding an object, and the held object has a method/"
 "function called ``interact``, we call the ``interact`` function on the held "
 "object."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:524
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:549
 msgid ""
 "If the controller is not holding an object, we then check to make sure the "
 "teleportation mesh is not visible. This check ensures the player cannot "
@@ -53517,32 +53561,32 @@ msgid ""
 "<class_Raycast>` coming from the pointer finger of the hand."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:529
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:554
 msgid ""
 "If the button pressed is button 2, which, for the Windows Mixed Reality "
 "controllers, is the grab/grip button, we will grab/throw an object."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:531
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:556
 msgid ""
 "Firstly, we make sure the player is not trying to teleport, as we do not "
 "want the player to be able to grab something while in the middle of trying "
 "to teleport."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:533
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:558
 msgid ""
 "Then, we check to see whether the controller is already holding a object or "
 "not."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:535
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:560
 msgid ""
 "If the controller is not holding an object, we check to see which grab mode "
 "the player is using."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:537
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:562
 msgid ""
 "If the player is using the ``AREA`` grab mode, we then get all the bodies "
 "overlapping the grab :ref:`Area <class_Area>`. We go through all the bodies "
@@ -53553,21 +53597,21 @@ msgid ""
 "nodes with that variable."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:541
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:566
 msgid ""
 "Assuming there is a :ref:`RigidBody <class_RigidBody>` node inside the grab :"
 "ref:`Area <class_Area>` that does not have a variable called ``NO_PICKUP``, "
 "we assign it to ``rigid_body`` for additional processing."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:544
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:569
 msgid ""
 "If the player is using the ``RAYCAST`` grab mode, we first force the :ref:"
 "`Raycast <class_Raycast>` to update. We then check to see whether the :ref:"
 "`Raycast <class_Raycast>` is colliding with something."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:547
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:572
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` is colliding with something, we then "
 "check to see if what it is colliding with is a :ref:`RigidBody "
@@ -53577,7 +53621,7 @@ msgid ""
 "``NO_PICKUP``, we assign it to ``rigid_body`` for additional processing."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:551
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:576
 msgid ""
 "If ``rigid_body`` is not ``null``, meaning we found a :ref:`RigidBody "
 "<class_RigidBody>` in the grab :ref:`Area <class_Area>`, we assign "
@@ -53588,14 +53632,14 @@ msgid ""
 "we picked up the :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:555
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:580
 msgid ""
 "We then set the held object's :ref:`RigidBody <class_RigidBody>` mode to "
 "``MODE_STATIC`` and set the collision layer and mask to 0 so it cannot "
 "collide with any other physic bodies."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:558
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:583
 msgid ""
 "We make the hand mesh invisible so it does not get in the way of the object "
 "we are holding (and also because I did not feel like animating the hand). We "
@@ -53603,78 +53647,78 @@ msgid ""
 "for showing the :ref:`Raycast <class_Raycast>` is no longer visible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:561
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:586
 msgid ""
 "If the :ref:`RigidBody <class_RigidBody>` we picked up has the ``picked_up`` "
 "method/function, we call it. If the :ref:`RigidBody <class_RigidBody>` we "
 "picked up has a variable called ``controller``, we set it to this controller."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:564
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:589
 msgid ""
 "If the controller is not holding an object, and the button pressed is 2, we "
 "want to drop/throw the held object."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:566
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:591
 msgid ""
 "Firstly, we set the held :ref:`RigidBody <class_RigidBody>`'s mode, layer, "
 "and mask back to what they were when we picked the object up. We then apply "
 "an impulse to the held object, using the controller's velocity as the force."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:569
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:594
 msgid ""
 "If the previously held :ref:`RigidBody <class_RigidBody>` has a function "
 "called ``dropped``, we call it. If the :ref:`RigidBody <class_RigidBody>` "
 "has a variable called ``controller``, we set it to ``null``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:572
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:597
 msgid ""
 "Then, we set ``held_object`` to ``null``, since we are no longer holding any "
 "objects, and we make the hand mesh visible again."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:574
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:599
 msgid ""
 "If we are using the ``RAYCAST`` grab mode, we make the :ref:`Raycast "
 "<class_Raycast>` visible so we can see the mesh used for showing the grab :"
 "ref:`Raycast <class_Raycast>`."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:576
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:601
 msgid ""
 "Finally, regardless of whether we are grabbing an object or releasing it, we "
 "play the sound loaded into ``AudioStreamPlayer3D``, which is a pick-up/drop "
 "noise."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:578
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:603
 msgid ""
 "The last thing we are doing in ``button_pressed`` is checking to see if the "
 "button pressed is 1, which, for the Windows Mixed Reality controllers, is "
 "the menu button."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:580
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:605
 msgid ""
 "If the menu button is pressed, we change grab modes, and set the visibility "
 "of the grab :ref:`Raycast <class_Raycast>` so it is only visible when using "
 "``RAYCAST`` as the grab mode."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:584
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:609
 msgid "Let's look at ``button_released`` next."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:586
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:611
 msgid ""
 "If the button released is button 15, the trigger, then we potentially want "
 "to teleport."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:588
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:613
 msgid ""
 "Firstly, we check to see whether ``teleport_button_down`` is ``true``. If it "
 "is, that means the player is intending to teleport, while if it is "
@@ -53682,13 +53726,13 @@ msgid ""
 "object."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:591
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:616
 msgid ""
 "We then check to see if this controller has a teleport position, and we "
 "check to make sure the teleport mesh is visible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:593
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:618
 msgid ""
 "If both of those conditions are ``true``, we then calculate the offset the :"
 "ref:`ARVRCamera <class_ARVRCamera>` has from the :ref:`ARVROrigin "
@@ -53697,7 +53741,7 @@ msgid ""
 "scale tracking."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:596
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:621
 msgid ""
 "Because we want to teleport the player in their current position to the "
 "teleport position, and remember, because of room-scale tracking, their "
@@ -53706,31 +53750,31 @@ msgid ""
 "position is teleported to the teleport position."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:599
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:624
 msgid ""
 "We set the Y value of the camera_offset to zero because we do not want to "
 "account for offsets in the player's height."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:601
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:626
 msgid ""
 "Then, we teleport the :ref:`ARVROrigin <class_ARVROrigin>` to the teleport "
 "position, applying the camera offset."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:603
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:628
 msgid ""
 "Regardless of whether we teleported or not, we reset all the teleport-"
 "related variables so the controller has to get new ones before teleporting "
 "again."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:607
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:632
 msgid ""
 "Finally, let's look at ``sleep_area_entered`` and ``sleep_area_exited``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:609
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:634
 msgid ""
 "When a body enters or exists the sleep area, we check whether it has a "
 "variable called ``can_sleep``. If it does, we then set it to ``false`` and "
@@ -53739,37 +53783,37 @@ msgid ""
 "(which can decrease CPU usage)."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:614
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:639
 msgid ""
 "Okay, whew! That was a lot of code! Add the same script, ``VR_Controller."
 "gd`` to the other controller so both controllers have the same script."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:616
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:641
 msgid ""
 "Now go ahead and try the game again, and you should find you can teleport "
 "around by pressing the touch pad, and can grab and throw objects using the "
 "grab/grip buttons."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:619
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:644
 msgid ""
 "Now, you may want to try moving using the trackpads and/or joysticks, but "
 "**it may make you motion sick!**"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:621
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:646
 msgid ""
 "One of the main reasons this can make you feel motion sick is because your "
 "vision tells you that you are moving, while your body is not moving. This "
 "conflict of signals makes the body feel sick, so let's fix it!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:625
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:650
 msgid "Reducing motion sickness"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:627
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:652
 msgid ""
 "There are plenty of ways to reduce motion sickness in VR, and there is no "
 "one perfect way to reduce motion sickness. See `this page on the Oculus "
@@ -53778,13 +53822,13 @@ msgid ""
 "reducing motion sickness."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:631
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:656
 msgid ""
 "To help reduce motion sickness while moving, we are going to add a vignette "
 "effect that will only be visible while the player moves."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:633
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:658
 msgid ""
 "Open up ``Movement_Vignette.tscn``, which you can find in the ``Scenes`` "
 "folder. Notice how it is just a :ref:`ColorRect <class_ColorRect>` node with "
@@ -53793,41 +53837,41 @@ msgid ""
 "Godot demo repository."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:636
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:661
 msgid ""
 "With ``Movement_Vignette`` selected, make a new script called "
 "``Movement_Vignette.gd``. Add the following code to ``Movement_Vignette.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:672
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:698
 msgid ""
 "Because this script is fairly simple, let's quickly go over what it does."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:674
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:700
 msgid ""
 "In ``_ready``, we wait for four frames. We do this to ensure the VR "
 "interface is ready and going."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:676
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:702
 msgid ""
 "Next, we get the current VR interface, and resize the :ref:`ColorRect "
 "<class_ColorRect>` node's size and position so that it covers the entire "
 "view in VR."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:678
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:704
 msgid ""
 "Then, we get the left and right controllers, assigning them to "
 "``controller_one`` and ``controller_two``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:680
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:706
 msgid "We then make the vignette invisible by default."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:682
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:708
 msgid ""
 "In ``_process``, we check to see if either of the controllers are moving the "
 "player by checking ``directional_movement``. If either controller is moving "
@@ -53835,184 +53879,184 @@ msgid ""
 "moving the player, we make the vignette invisible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:687
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:713
 msgid ""
 "With that done, go ahead and try moving around with the joystick and/or the "
 "trackpad. You should find it is much less motion sickness-inducing than "
 "before!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:689
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:715
 msgid ""
 "Let's add some special :ref:`RigidBody <class_RigidBody>` nodes we can "
 "interact with next."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:692
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:718
 msgid "Adding destroyable targets"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:694
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:720
 msgid ""
 "Firstly, let's start by making some targets we will destroy in various ways "
 "with various special :ref:`RigidBody <class_RigidBody>` nodes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:696
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:722
 msgid ""
 "Open up ``Sphere_Target.tscn``, which you can find in the ``Scenes`` folder. "
 "``Sphere.tscn`` is just a :ref:`StaticBody <class_StaticBody>` with a :ref:"
 "`CollisionShape <class_CollisionShape>`, a mesh, and a audio player."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:699
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:725
 msgid ""
 "Select the ``Sphere_Target`` root node, the :ref:`StaticBody "
 "<class_StaticBody>` node, and make a new script called ``Sphere_Target.gd``. "
 "Add the following to ``Sphere_Target.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:746
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:772
 msgid "Let's go over how this script works, starting with the class variables."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:748
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:774
 msgid ""
 "``destroyed``: A variable to track whether this target is destroyed or not."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:749
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:775
 msgid ""
 "``destroyed_timer``: A variable to track how long the target has been "
 "destroyed."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:750
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:776
 msgid ""
 "``DESTROY_WAIT_TIME``: A constant to tell the sphere target how long to wait "
 "before destroying/deleting itself."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:751
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:777
 msgid "``health``: The amount of health the target has."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:752
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:778
 msgid ""
 "``RIGID_BODY_TARGET``: The target broken into several smaller :ref:"
 "`RigidBody <class_RigidBody>` nodes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:756
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:903
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:782
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:931
 msgid "Let's go over ``_ready``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:758
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:784
 msgid ""
 "All we are doing in ``_ready`` is setting ``_physics_process`` to ``false``. "
 "This is because we will only use ``_physics_process`` for destroying the "
 "target, so we do not want to call it until the target is broken."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:763
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:789
 msgid "Next, let's go over ``_physics_process``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:765
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:791
 msgid ""
 "Firstly, we add time to ``destroyed_timer``. Then we check to see whether "
 "enough time has passed and we can destroy the target. If enough time has "
 "passed, we free/destroy the target using ``queue_free``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:770
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:796
 msgid "Finally, let's go over ``damage``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:772
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:798
 msgid ""
 "Firstly, we check to make sure the target has not already been destroyed."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:774
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:800
 msgid ""
 "Then, we remove however much damage the target has taken from the target's "
 "health."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:776
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:802
 msgid ""
 "If the target has zero or less health, then it has taken enough damage to "
 "break."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:778
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:804
 msgid ""
 "Firstly, we disable the collision shape and make the whole target mesh "
 "invisible. Next, we spawn/instance the :ref:`RigidBody <class_RigidBody>` "
 "version of the target, and instance it at this target's position."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:781
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:807
 msgid ""
 "Then, we set ``destroyed`` to ``true`` and start processing "
 "``_physics_process``. Finally, we play a sound, and remove a sphere from "
 "``Game.gd`` by calling ``remove_sphere``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:786
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:812
 msgid ""
 "Now, you may have noticed we are calling a function in ``Game.gd`` we have "
 "not made yet, so let's fix that!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:788
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:814
 msgid ""
 "Firstly, open up ``Game.gd`` and add the following additional class "
 "variables:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:795
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:822
 msgid "``spheres_left``: The amount of sphere targets left in the game world."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:796
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:823
 msgid "``sphere_ui``: A reference to the sphere UI. We will use this later!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:798
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:825
 msgid ""
 "Next, we need to add the ``remove_sphere`` function. Add the following to "
 "``Game.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:808
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:836
 msgid "What this function does is it subtracts one from ``spheres_left``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:810
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:838
 msgid ""
 "Then, it checks to see whether ``sphere_ui`` is not null, and if it is not, "
 "then it calls its ``update_ui`` function, passing in the amount of spheres "
 "left. We'll add the UI code later in this part."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:813
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:841
 msgid "Now that we have destroyable targets, we need a way to destroy them!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:816
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:844
 msgid "Adding a pistol"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:818
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:846
 msgid ""
 "Okay, let's add a simple pistol. Open up ``Pistol.tscn``, which you will "
 "find in the ``Scenes`` folder."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:820
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:848
 msgid ""
 "There are a few things to note here. The first thing to note is how "
 "everything is rotated. This is to make the pistol rotate correctly when the "
@@ -54021,102 +54065,102 @@ msgid ""
 "pointer and muzzle flash, respectively."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:823
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:851
 msgid ""
 "The other thing to notice is how there is a :ref:`Raycast <class_Raycast>` "
 "node at the end of the pistol. This is what we will be using to calculate "
 "where the bullets impact."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:825
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:853
 msgid ""
 "Now that we have looked at the scene, let's write the code. Select the "
 "``Pistol`` root node, the :ref:`RigidBody <class_RigidBody>` node, and make "
 "a new script called ``Pistol.gd``. Add the following code to ``Pistol.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:894
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:922
 msgid "``flash_mesh``: The mesh used to make the muzzle flash."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:895
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:923
 msgid "``FLASH_TIME``: The length of time the muzzle flash is visible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:896
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:924
 msgid ""
 "``flash_timer``: A variable to track how long the muzzle flash has been "
 "visible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:897
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:925
 msgid "``laser_sight_mesh``: A long rectangular mesh used for the laser sight."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:898
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:926
 msgid "``raycast``: The raycast node used for the pistol firing."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:899
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:927
 msgid "``BULLET_DAMAGE``: The amount of damage a single bullet does."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:905
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:933
 msgid ""
 "All we are doing here is getting the nodes and assigning them to the proper "
 "variables. We also make sure the flash and laser sight meshes are invisible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:910
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:938
 msgid "Next, let's look at ``_physics_process``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:912
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:940
 msgid ""
 "Firstly, we check to see if the flash is visible. We do this by checking to "
 "see if ``flash_timer`` is more than zero. This is because ``flash_timer`` "
 "will be an inverted timer, a timer that counts down instead of counting up."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:915
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:943
 msgid ""
 "If ``flash_timer`` is more than zero, we subtract ``delta`` from it and "
 "check to see whether it is equal to zero or less. If it is, we make the "
 "flash mesh invisible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:918
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:946
 msgid ""
 "This makes it where the flash mesh becomes invisible after ``FLASH_TIME`` "
 "many seconds have gone by."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:922
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:950
 msgid ""
 "Now, let's look at ``interact``, which is called when the trigger button on "
 "the VR controller is pressed and the pistol is being held."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:924
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:952
 msgid ""
 "Firstly, we check to see if the flash timer is less than or equal to zero. "
 "This check makes it where we cannot fire when the flash is visible, limiting "
 "how often the pistol can fire."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:927
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:955
 msgid ""
 "If we can fire, we reset ``flash_timer`` by setting it to ``FLASH_TIME``, "
 "and we make the flash mesh visible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:929
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:957
 msgid ""
 "We then update the :ref:`Raycast <class_Raycast>` and check to see if it is "
 "colliding with anything."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:931
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:959
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` is colliding with something, we get "
 "the collider. We check to see if the collider has the ``damage`` function, "
@@ -54126,43 +54170,43 @@ msgid ""
 "the collider."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:935
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:963
 msgid ""
 "Finally, regardless of whether the pistol hit something or not, we play the "
 "pistol firing sound."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:939
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:967
 msgid ""
 "Finally, let's look at ``picked_up`` and ``dropped``, which are called when "
 "the pistol is picked up and dropped, respectively."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:941
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:969
 msgid ""
 "All we are doing in these functions is making the laser pointer visible when "
 "the pistol is picked up, and making it invisible when the pistol is dropped."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:947
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:975
 msgid ""
 "With that done, go ahead and give the game a try! If you climb up the stairs "
 "and grab the pistols, you should be able to fire at the spheres and they "
 "will break!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:950
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:978
 msgid "Adding a shotgun"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:952
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:980
 msgid ""
 "Let's add a different type of shooting :ref:`RigidBody <class_RigidBody>`: A "
 "shotgun. This is fairly simple to do, and almost everything is the same as "
 "the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:954
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:982
 msgid ""
 "Open up ``Shotgun.tscn``, which you can find in ``Scenes``. Notice how "
 "everything is more or less the same, but instead of a single :ref:`Raycast "
@@ -54173,38 +54217,38 @@ msgid ""
 "player has to aim without knowing for sure where the shotgun is pointing."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:959
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:987
 msgid ""
 "Alright, select the ``Shotgun`` root node, the :ref:`RigidBody "
 "<class_RigidBody>` and make a new script called ``Shotgun.gd``. Add the "
 "following to ``Shotgun.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1019
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1048
 msgid ""
 "You may have noticed this is almost exactly the same as the pistol, and "
 "indeed it is, so let's only go over what has changed."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1021
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1050
 msgid ""
 "``raycasts``: The node that holds all of the five :ref:`Raycast "
 "<class_Raycast>` nodes used for the shotgun's firing."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1023
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1052
 msgid ""
 "In ``_ready``, we get the ``Raycasts`` node, instead of just a single :ref:"
 "`Raycast <class_Raycast>`."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1025
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1054
 msgid ""
 "The only other change, besides there being nothing in ``picked_up`` and "
 "``dropped``, is in ``interact``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1027
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1056
 msgid ""
 "Now we go through each :ref:`Raycast <class_Raycast>` in ``raycasts``. We "
 "then rotate it on the X and Z axes, making within a 10 to ``-10`` cone. From "
@@ -54214,34 +54258,34 @@ msgid ""
 "<class_Raycast>` in ``raycasts``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1033
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1062
 msgid ""
 "Now you can find and fire the shotgun too! The shotgun is located around the "
 "back behind one of the walls (not in the building though!)."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1036
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1065
 msgid "Adding a bomb"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1038
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1067
 msgid ""
 "While both of those are well and good, let's add something we can throw next "
 "— a bomb!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1040
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1069
 msgid "Open up ``Bomb.tscn``, which you will find in the ``Scenes`` folder."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1042
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1071
 msgid ""
 "First, notice how there is a rather large :ref:`Area <class_Area>` node. "
 "This is the explosion radius for the bomb. Anything within this :ref:`Area "
 "<class_Area>` will be effected by the explosion when the bomb explodes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1045
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1074
 msgid ""
 "The other thing to note is how there are two sets of :ref:`Particles "
 "<class_Particles>`: one for smoke coming out of the fuse, and another for "
@@ -54249,7 +54293,7 @@ msgid ""
 "<class_Particles>` nodes if you want!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1048
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1077
 msgid ""
 "The only thing to notice is how long the explosion :ref:`Particles "
 "<class_Particles>` node will last, their lifetime, which is 0.75 seconds. We "
@@ -54257,88 +54301,88 @@ msgid ""
 "explosion :ref:`Particles <class_Particles>`."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1051
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1080
 msgid ""
 "Alright, now let's write the code for the bomb. Select the ``Bomb`` :ref:"
 "`RigidBody <class_RigidBody>` node and make a new script called ``Bomb.gd``. "
 "Add the following code to ``Bomb.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1142
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1172
 msgid ""
 "Let's go through what this script does, starting with the class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1144
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1174
 msgid ""
 "``bomb_mesh``: The :ref:`MeshInstance <class_MeshInstance>` used for the "
 "bomb mesh."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1145
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1175
 msgid "``FUSE_TIME``: The length of time for which the fuse burns."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1146
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1176
 msgid ""
 "``fuse_timer``: A variable for tracking how long the fuse has been burning."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1147
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1177
 msgid ""
 "``explosion_area``: The :ref:`Area <class_Area>` node used for detecting "
 "what nodes are inside the explosion."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1148
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1178
 msgid "``EXPLOSION_DAMAGE``: The amount of damage the explosion does."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1149
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1179
 msgid ""
 "``EXPLOSION_TIME``: The length of time the explosion :ref:`Particles "
 "<class_Particles>` take (you can calculate this number by multiplying the "
 "particles ``lifetime`` by its ``speed scale``)"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1150
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1180
 msgid ""
 "``explosion_timer``: A variable for tracking how long the explosion has "
 "lasted."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1151
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1181
 msgid "``explode``: A boolean for tracking whether the bomb has exploded."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1152
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1182
 msgid "``fuse_particles``: The fuse :ref:`Particles <class_Particles>` node."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1153
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1183
 msgid ""
 "``explosion_particles``: The explosion :ref:`Particles <class_Particles>` "
 "node."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1154
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1184
 msgid ""
 "``controller``: The controller that is currently holding the bomb, if there "
 "is one. This is set by the controller, so we do not need to check anything "
 "outside of checking if it is ``null``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1158
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1188
 msgid "Let's go through ``_ready``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1160
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1190
 msgid ""
 "Firstly, we get all the nodes and assign them to the proper variables for "
 "later use."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1162
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1192
 msgid ""
 "Then, we make sure ``_physics_process`` is not going to be called. We do "
 "this since we will be using ``_physics_process`` only for the fuse and for "
@@ -54346,24 +54390,24 @@ msgid ""
 "the fuse to start when the player interacts while holding a bomb."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1167
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1197
 msgid "Now, let's look at ``_physics_process``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1169
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1199
 msgid ""
 "Firstly we check to see whether ``fuse_timer`` is less than ``FUSE_TIME``. "
 "If ``fuse_timer`` is less than ``FUSE_TIME``, then the bomb must be burning "
 "down the fuse."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1171
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1201
 msgid ""
 "We then add time to ``fuse_timer``, and check to see whether the bomb has "
 "waited long enough and has burned through the entire fuse."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1173
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1203
 msgid ""
 "If the bomb has waited long enough, then we need to explode the bomb. We do "
 "this first by stopping the smoke :ref:`Particles <class_Particles>` from "
@@ -54371,7 +54415,7 @@ msgid ""
 "We also hide the bomb mesh so it is no longer visible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1176
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1206
 msgid ""
 "Next, we make the set the collision layer and mask to zero, and set the :ref:"
 "`RigidBody <class_RigidBody>` mode to static. This makes it where the now "
@@ -54379,7 +54423,7 @@ msgid ""
 "place."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1179
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1209
 msgid ""
 "Then, we go through everything inside the explosion :ref:`Area "
 "<class_Area>`. We make sure the bodies inside the explosion :ref:`Area "
@@ -54390,19 +54434,19 @@ msgid ""
 "call that instead."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1183
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1213
 msgid ""
 "Then, we set ``explode`` to true since the bomb has exploded, and we play a "
 "sound."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1185
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1215
 msgid ""
 "Next, we check to see if the bomb has exploded, as we need to wait until the "
 "explosion :ref:`Particles <class_Particles>` are done."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1187
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1217
 msgid ""
 "If the bomb has exploded, we add time to ``explosion_timer``. We then check "
 "to see if the explosion :ref:`Particles <class_Particles>` are done. If they "
@@ -54413,18 +54457,18 @@ msgid ""
 "free/destroy the bomb using ``queue_free``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1193
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1223
 msgid "Finally, let's look at ``interact``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1195
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1225
 msgid ""
 "All we are doing here is making it where ``_physics_process`` will be "
 "called, which will start the fuse. We also make the fuse :ref:`Particles "
 "<class_Particles>` start emitting, so smoke comes out the top of the bomb."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1200
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1230
 msgid ""
 "With that done, the bombs are ready to go! You can find them in the orange "
 "building. Because of how we are calculating velocity, it is easiest to throw "
@@ -54433,19 +54477,19 @@ msgid ""
 "the because of how we are tracking velocity, it does not always work."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1205
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1235
 msgid "Adding a sword"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1207
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1237
 msgid "Finally, let's add a sword so we can slice through things!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1209
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1239
 msgid "Open up ``Sword.tscn``, which you will find in ``Scenes``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1211
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1241
 msgid ""
 "There is not a whole lot to note here, but there is just one thing, and that "
 "is how the length of the blade of the sword is broken into several small :"
@@ -54454,7 +54498,7 @@ msgid ""
 "could figure out how to do this."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1214
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1244
 msgid ""
 "If you know how to find the point where an :ref:`Area <class_Area>` and a :"
 "ref:`CollisionObject <class_CollisionObject>` meet, please let me know and/"
@@ -54462,7 +54506,7 @@ msgid ""
 "ref:`Area <class_Area>` nodes works okay, but it is not ideal."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1217
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1247
 msgid ""
 "Other than that, there really is not much of note, so let's write the code. "
 "Select the ``Sword`` root node, the :ref:`RigidBody <class_RigidBody>` and "
@@ -54470,27 +54514,27 @@ msgid ""
 "gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1281
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1312
 msgid ""
 "Let's go over what this script does, starting with the two class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1283
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1314
 msgid "``SWORD_DAMAGE``: The amount of damage a single sword slice does."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1284
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1315
 msgid ""
 "``controller``: The controller that is holding the sword, if there is one. "
 "This is set by the controller, so we do not need to set it here, in ``Sword."
 "gd``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1288
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1319
 msgid "Let's go over ``_ready`` next."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1290
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1321
 msgid ""
 "All we are doing here is connecting each of the :ref:`Area <class_Area>` "
 "nodes ``body_entered`` signal to the ``body_entered_sword`` function, "
@@ -54499,28 +54543,28 @@ msgid ""
 "collided."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1295
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1326
 msgid "Now let's go over ``body_entered_sword``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1297
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1328
 msgid ""
 "Firstly, we make sure the body the sword has collided with is not itself."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1299
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1330
 msgid ""
 "Then we figure out which part of the sword the body collided with, using the "
 "passed-in number."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1301
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1332
 msgid ""
 "Next, we check to see whether the body the sword collided with has the "
 "``damage`` function, and if it does, we call it and play a sound."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1303
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1334
 msgid ""
 "If it does not have the damage function, we then check to see whether it has "
 "the ``apply_impulse`` function. If it does, we then calculate the direction "
@@ -54528,7 +54572,7 @@ msgid ""
 "whether the sword is being held or not."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1306
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1337
 msgid ""
 "If the sword is not being held, we use the :ref:`RigidBody "
 "<class_RigidBody>`'s velocity as the force in ``apply_impulse``, while if "
@@ -54536,25 +54580,25 @@ msgid ""
 "the impulse."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1309
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1340
 msgid "Finally, we play a sound."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1315
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1346
 msgid ""
 "With that done, you can now slice through the targets! You can find the "
 "sword in the corner in between the shotgun and the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1318
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1349
 msgid "Updating the target UI"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1320
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1351
 msgid "Okay, let's update the UI as the sphere targets are destroyed."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1322
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1353
 msgid ""
 "Open up ``Game.tscn`` and then expand the ``GUI`` :ref:`MeshInstance "
 "<class_MeshInstance>`. From there, expand the ``GUI`` :ref:`Viewport "
@@ -54562,11 +54606,11 @@ msgid ""
 "script called ``Base_Control``, and add the following:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1342
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1374
 msgid "Let's go over what this script does quickly, as it is fairly simple."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1344
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1376
 msgid ""
 "Firstly, in ``_ready``, we get the :ref:`Label <class_Label>` that shows how "
 "many spheres are left and assign it to the ``sphere_count_label`` class "
@@ -54574,7 +54618,7 @@ msgid ""
 "``sphere_ui`` to this script."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1347
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1379
 msgid ""
 "In ``update_ui``, we change the sphere :ref:`Label <class_Label>`'s text. If "
 "there is at least one sphere remaining, we change the text to show how many "
@@ -54582,71 +54626,71 @@ msgid ""
 "we change the text and congratulate the player."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1351
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1383
 msgid "Adding the final special RigidBody"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1353
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1385
 msgid ""
 "Finally, before we finish this tutorial, let's add a way to reset the game "
 "while in VR."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1355
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1387
 msgid ""
 "Open up ``Reset_Box.tscn``, which you will find in ``Scenes``. Select the "
 "``Reset_Box`` :ref:`RigidBody <class_RigidBody>` node and make a new script "
 "called ``Reset_Box.gd``. Add the following code to ``Reset_Box.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1394
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1427
 msgid "Let's go over what this does quickly, as it is also fairly simple."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1396
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1429
 msgid ""
 "Firstly, we get the starting global :ref:`Transform <class_Transform>` in "
 "``_ready``, and assign it to ``start_transform``. We will use this to reset "
 "the position of the reset box every so often."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1398
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1431
 msgid ""
 "In ``_physics_process``, we check to see if enough time has passed to reset. "
 "If it has, we reset the box's :ref:`Transform <class_Transform>` and then "
 "reset the timer."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1400
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1433
 msgid ""
 "If the player interacts while holding the reset box, we reset the scene by "
 "calling ``get_tree().change_scene`` and passing in the path to the current "
 "scene. This resets/restarts the scene completely."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1403
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1436
 msgid ""
 "When the reset box is dropped, we reset the :ref:`Transform "
 "<class_Transform>` and timer."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1407
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1440
 msgid ""
 "With that done, when you grab and interact with the reset box, the entire "
 "scene will reset/restart and you can destroy all the targets again!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1414
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1447
 msgid "Whew! That was a lot of work. Now you have a fairly simple VR project!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1418
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1451
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`VR_Starter_Tutorial_Complete.zip <files/VR_Starter_Tutorial_Complete.zip>`"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1420
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1453
 msgid ""
 "This will hopefully serve as an introduction to making fully-featured VR "
 "games in Godot! The code written here can be expanded to make puzzle games, "
@@ -54942,58 +54986,52 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:15
 msgid ""
-"This tutorial leads you through the creation of a basic main screen plugin "
-"whose purpose is to edit a resource that consists in a graph (displayed as a "
-"GraphEdit with GraphNodes). Each GraphNode will hold some data that we want "
-"to display in another side-tab of the editor (similar to the Inspector)."
+"This tutorial leads you through the creation of a basic main screen plugin. "
+"With this plugin example, we want to demonstrate:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:20
-msgid "With this plugin example, we want to demonstrate:"
-msgstr ""
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:22
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:18
 #, fuzzy
 msgid "Creating a main screen plugin"
 msgstr "Skapa innehåll"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:23
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:19
 msgid ""
 "Linking the main screen to another plugin GUI element (such as a Tab panel, "
 "similar to the Inspector tab)"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:26
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:22
 msgid ""
 "For the sake of simplicity, the two GUI elements of our main screen plugin "
 "will both consist in a Label and a Button. Pressing one element's button "
 "will display some text on the other's label node."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:31
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:27
 msgid "Initializing the plugin"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:33
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:29
 msgid ""
 "The plugin itself is a Godot project. It is best to set its contents in an "
 "``addons/my_plugin_name/`` structure. The only files that lie in the root "
 "folder are the project.godot file, and the project icon."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:37
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:33
 msgid ""
 "In the ``addons/my_plugin_name/`` folder, we create the ``plugin.cfg`` file "
 "as described in the :ref:`doc_making_plugins` page."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:49
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:45
 msgid ""
 "We also initialize the file targeted by the ``script=`` property of the ``."
 "cfg`` file. In our example, ``main_screen_plugin.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:72
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:68
 msgid ""
 "The important part in this script is the ``has_main_screen()`` function, "
 "which is overloaded so it returns true. This function is automatically "
@@ -55002,14 +55040,14 @@ msgid ""
 "we'll come back to it later."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:81
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:77
 msgid ""
 "The ``main_screen_plugin.gd`` file will be responsible for each of our "
 "plugin's UI element instanciation, and it will also manage the communication "
 "between them."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:84
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:80
 msgid ""
 "As a matter of fact, we wish to design each UI element in their own scene. "
 "Different scenes are not aware of each other unless they are both children "
@@ -55019,7 +55057,7 @@ msgid ""
 "they should only be allowed to access their children."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:91
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:87
 msgid ""
 "So, in order to communicate information to another scene, the best design is "
 "to define signals. If a user action in a UI scene #1 has to trigger "
@@ -55029,13 +55067,13 @@ msgid ""
 "one script will also connect each of them to the required signals."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:98
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:94
 msgid ""
 "If the ``main_screen_plugin.gd`` instanciates the UI scenes, won't they be "
 "brothers nodes then?"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:101
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:97
 msgid ""
 "Not necessarily: this script may add all UI scenes as children of the same "
 "node of the editor's scene tree - but maybe it won't. And the "
@@ -55044,11 +55082,11 @@ msgid ""
 "hold references to instanciated scenes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:108
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:104
 msgid "Main screen scene"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:110
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:106
 msgid ""
 "Create a new scene with a ``Panel`` root node. Select this root node and, in "
 "the viewport, click the ``Layout`` menu and select ``Full Rect``. The panel "
@@ -55056,13 +55094,13 @@ msgid ""
 "script on the root node. Name it ``main_panel.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:115
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:111
 msgid ""
 "We then add 2 children to this Panel node: first a ``Button`` node. Place it "
 "anywhere on the Panel."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:118
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:114
 msgid ""
 "Now we need to define a behaviour when this button is pressed. This is "
 "covered by the :ref:`Handling a signal <doc_scripting_handling_a_signal>` "
@@ -55077,7 +55115,7 @@ msgid ""
 "pressed."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:130
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:126
 msgid ""
 "As the button gets pressed, we want the side-panel's ``Label`` node to show "
 "a specific text. As explained above, we cannot directly access the target "
@@ -55086,23 +55124,23 @@ msgid ""
 "``main_panel.gd`` script:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:146
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:142
 msgid ""
 "In the same way, this main scene's Label node has to show a value when it "
 "receives a specific signal. Let's create a new "
 "``_on_side_button_pressed(text_to_show)`` function for this purpose:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:155
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:151
 msgid ""
 "We are done for the main screen panel. Save the scene as ``main_panel.tscn``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:158
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:154
 msgid "Tabbed panel scene"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:160
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:156
 msgid ""
 "The tabbed panel scene is almost identical to the main panel scene. You can "
 "either duplicate the ``main_panel.tscn`` file and name the new file "
@@ -55113,25 +55151,25 @@ msgid ""
 "different names. Here is the script's full content:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:182
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:178
 msgid "Connecting the two scenes in the plugin script"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:184
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:180
 msgid ""
 "We now need to update the ``main_screen_plugin.gd`` script so the plugin "
 "instances our 2 GUI scenes and places them at the right places in the "
 "editor. Here is the full ``main.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:233
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:229
 msgid ""
 "A couple of specific lines were added. First, we defined the constants that "
 "contain our 2 GUI packed scenes (``MainPanel`` and ``SidePanel``). We will "
 "use these resources to instance both scenes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:237
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:233
 msgid ""
 "The ``_enter_tree()`` function is called before ``_ready()``. This is where "
 "we actually instance the 2 GUI scenes, and add them as children of specific "
@@ -55140,7 +55178,7 @@ msgid ""
 "specified it will be placed in the left-side dock, upper-left tab."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:243
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:239
 msgid ""
 "``EditorPlugin`` class does not provide any function to add an element in "
 "the main viewport. We thus have to use the ``get_editor_interface()."
@@ -55150,7 +55188,7 @@ msgid ""
 "plugin."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:250
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:246
 msgid ""
 "The ``_exit_tree()`` is pretty straightforward. It is automatically called "
 "when the plugin is deactivated. It is then important to ``queue_free()`` the "
@@ -55160,7 +55198,7 @@ msgid ""
 "usage without any way to free it, which is not good."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:257
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:253
 msgid ""
 "Finally the ``make_visible()`` function is overridden to hide or show the "
 "main panel as needed. This function is automatically called by the editor "
@@ -55168,11 +55206,11 @@ msgid ""
 "Script."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:262
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:258
 msgid "Try the plugin"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:264
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:260
 msgid ""
 "Activate the plugin in the Project Settings. You'll observe a new button "
 "next to 2D, 3D, Script above the main viewport. You'll also notice a new tab "
@@ -56758,27 +56796,41 @@ msgid ""
 "along a larger figure."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:570
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:571
+msgid ""
+"The ``reloadable`` property in the ``gdexample.gdnlib`` file must be set to "
+"``true`` for the Godot editor to automatically pick up the newly added "
+"property."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:574
+msgid ""
+"However, this setting should be used with care especially when tool classes "
+"are used, as the editor might hold objects then that have script instances "
+"attached to them that are managed by a GDNative library."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:577
 msgid ""
 "Lets do the same but for the speed of our animation and use a setter and "
 "getter function. Our ``gdexample.h`` header file again only needs a few more "
 "lines of code:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:584
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:591
 msgid ""
 "This requires a few more changes to our ``gdexample.cpp`` file, again we're "
 "only showing the methods that have changed so don't remove anything we're "
 "omitting:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:656
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:663
 msgid ""
 "Now when the project is compiled we'll see another property called speed. "
 "Changing its value will make the animation go faster or slower."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:659
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:666
 msgid ""
 "For this example there is no obvious advantage of using a setter and getter. "
 "It is just more code to write. For a simple example as this there may be a "
@@ -56786,13 +56838,13 @@ msgid ""
 "but in many cases just binding the variable will be enough."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:664
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:671
 msgid ""
 "Getters and setters become far more useful in more complex scenarios where "
 "you need to make additional choices based on the state of your object."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:670
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:677
 msgid ""
 "For simplicity we've left out the optional parameters in the "
 "register_property<class, type> method call. These parameters are "
@@ -56800,14 +56852,14 @@ msgid ""
 "further configure how properties are displayed and set on the Godot side."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:676
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:683
 msgid ""
 "Modern C++ compilers are able to infer the class and variable type and allow "
 "you to omit the ``<GDExample, float>`` part of our ``register_property`` "
 "method. we've had mixed experiences with this however."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:684
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:691
 msgid ""
 "Last but not least, signals fully work in GDNative as well. Having your "
 "module react to a signal given out by another object requires you to call "
@@ -56815,17 +56867,17 @@ msgid ""
 "wobbling Godot icon, we would need to showcase a far more complete example."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:690
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:697
 msgid "This however is the required syntax:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:701
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:708
 msgid ""
 "Note that you can only call ``my_method`` if you've previously registered it "
 "in your ``_register_methods`` method."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:704
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:711
 msgid ""
 "Having your object sending out signals is far more common. For our wobbling "
 "Godot icon we'll do something silly just to show how it works. We're going "
@@ -56833,26 +56885,26 @@ msgid ""
 "along."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:709
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:716
 msgid ""
 "In our ``gdexample.h`` header file we just need to define a new member "
 "``time_emit``:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:719
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:726
 msgid ""
 "The changes in ``gdexample.cpp`` are a bit more elaborate this time. First "
 "you'll need to set ``time_emit = 0.0;`` in either our ``_init`` method or in "
 "our constructor. But the other two needed changes we'll look at one by one."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:723
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:730
 msgid ""
 "In our ``_register_methods`` method we need to declare our signal and we do "
 "this as follows:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:750
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:757
 msgid ""
 "Here we see a nice improvement in the latest version of godot-cpp where our "
 "``register_signal`` method can be a single call first taking the signals "
@@ -56860,18 +56912,18 @@ msgid ""
 "of each parameter we'll send along with this signal."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:755
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:762
 msgid ""
 "For NativeScript 1.0 we first build a dictionary in which we tell Godot "
 "about the types of arguments we will pass to our signal, and then register "
 "it."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:758
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:765
 msgid "Next we'll need to change our ``_process`` method:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:804
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:811
 msgid ""
 "After a second has passed we emit our signal and reset our counter. Again in "
 "the new version of godot-cpp we can add our parameter values directly to "
@@ -56879,22 +56931,22 @@ msgid ""
 "then call ``emit_signal``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:810
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:817
 msgid ""
 "Once compiled we can go into Godot and select our sprite node. On our "
 "``Node`` tab we find our new signal and link it up by pressing connect. "
 "We've added a script on our main node and implemented our signal like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:821
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:828
 msgid "Every second we simply output our position to the console."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:825
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:832
 msgid "NativeScript 1.1 vs NativeScript 1.0"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:827
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:834
 msgid ""
 "So far in our example above there doesn't seem to be a lot of difference "
 "between the old and new syntax. The class is defined slightly differently "
@@ -56902,7 +56954,7 @@ msgid ""
 "of our object. A lot of the improvements are hidden under the hood."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:832
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:839
 msgid ""
 "This example only deals with simple variables and simple methods. Especially "
 "once you start passing references to other objects or when you start calling "
@@ -56910,18 +56962,18 @@ msgid ""
 "show its benefits."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:838
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:845
 msgid "Next steps"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:840
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:847
 msgid ""
 "The above is only a simple example, but we hope it shows you the basics. You "
 "can build upon this example to create full-fledged scripts to control nodes "
 "in Godot using C++."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:844
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:851
 msgid ""
 "You should be able to edit and recompile the plugin while the Godot editor "
 "remains open; just rerun the project after the library has finished building."
@@ -58075,18 +58127,34 @@ msgid ""
 "in a thread, then added in the main thread:"
 msgstr ""
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:43
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:42
+msgid ""
+"Still, this is only really useful if you have **one** thread loading data. "
+"Attempting to load or create scene chunks from multiple threads may work, "
+"but you risk resources (which are only loaded once in Godot) tweaked by the "
+"multiple threads, resulting in unexpected behaviors or crashes."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:47
+msgid ""
+"Only use more than one thread to generate scene data if you *really* know "
+"what you are doing and you are sure that a single resource is not being used "
+"or set in multiple ones. Otherwise, you are safer just using the servers API "
+"(which is fully thread-safe) directly and not touching scene or resources."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:55
 msgid "GDScript arrays, dictionaries"
 msgstr ""
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:45
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:57
 msgid ""
 "In GDScript, reading and writing elements from multiple threads is ok, but "
 "anything that changes the container size (resizing, adding or removing "
 "elements) requires locking a mutex."
 msgstr ""
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:50
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:62
 msgid ""
 "Modifying a unique resource from multiple threads is not supported, but "
 "loading them on threads or handling a reference is perfectly supported. "
@@ -59622,7 +59690,7 @@ msgstr ""
 msgid ""
 "GLES2 cannot use the :ref:`Particles <class_Particles>` or :ref:`Particles2D "
 "<class_Particles2D>` nodes as they require advanced GPU features. Instead, "
-"use :ref:`CPUParticles <class_CPUParticles>` or `:ref:`CPUParticles2D "
+"use :ref:`CPUParticles <class_CPUParticles>` or :ref:`CPUParticles2D "
 "<class_CPUParticles2D>`, which provides a similar interface to a :ref:"
 "`ParticlesMaterial <class_ParticlesMaterial>`."
 msgstr ""
@@ -59634,7 +59702,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:26
-msgid "SCREEN_TEXTURE mip-maps"
+msgid "``SCREEN_TEXTURE`` mip-maps"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:28
@@ -59645,108 +59713,204 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:32
-msgid "Color space"
+msgid "``DEPTH_TEXTURE``"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:34
 msgid ""
-"Shading in GLES3 takes place in linear color space while in GLES2 it takes "
-"place in sRGB space. While this is a very important distinction for graphics "
-"programmers, for everyone else it means that, in GLES3 shaders, you need to "
-"convert to sRGB before outputting your final color or else your colors will "
-"appear washed out and over-bright."
+"While GLES2 supports ``DEPTH_TEXTURE`` in shaders, it may not work on some "
+"old hardware (especially mobile)."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:37
+msgid "Color space"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:39
 msgid ""
-"You do so with the following line of code at the end of the fragment shader:"
+"GLES2 and GLES3 are in different color spaces. This means that colors will "
+"appear slightly different between them  especially when lighting is used."
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:45
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:42
 msgid ""
-"GLES2 does not need this. If your game is going to use both GLES2 and GLES3, "
-"wrap it in an ``if`` statement checking to see if the output is in sRGB, "
-"using ``OUTPUT_IS_SRGB``."
+"If your game is going to use both GLES2 and GLES3, you can use an ``if`` "
+"statement check and see if the output is in sRGB, using ``OUTPUT_IS_SRGB``. "
+"``OUTPUT_IS_SRGB`` is ``true`` in GLES2 and ``false`` in GLES3."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:47
+msgid "HDR"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
+msgid ""
+"GLES is not capable of using High Dynamic Range (HDR) rendering features. If "
+"HDR is set for your project, or for a given viewport, Godot will still user "
+"Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` range."
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:54
-msgid "``OUTPUT_IS_SRGB`` is ``true`` in GLES2 and ``false`` in GLES3."
-msgstr ""
-
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:57
 msgid "SpatialMaterial features"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:56
 msgid ""
 "In GLES2, the following advanced rendering features in the :ref:"
 "`SpatialMaterial <class_SpatialMaterial>` are missing:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
 msgid "Subsurface scattering"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:65
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
 msgid "Depth mapping"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:67
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:64
+msgid "When using SpatialMaterials they will not even appear in the editor."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:66
 msgid ""
-"The option to use them may appear in custom :ref:`ShaderMaterials "
-"<class_ShaderMaterial>`, however, they will be non-functional. For example, "
-"you will still be able to set ``SSS`` (which normally adds subsurface "
+"In custom :ref:`ShaderMaterials <class_ShaderMaterial>`, you can set values "
+"for these features but they will be non-functional. For example, you will "
+"still be able to set the ``SSS`` built-in (which normally adds subsurface "
 "scattering) in your shader, but nothing will happen."
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:72
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:71
 msgid "Environment features"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:74
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:73
 msgid ""
 "In GLES2, the following features in the :ref:`Environment "
 "<class_Environment>` are missing:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:75
 msgid "Auto exposure"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:77
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
 msgid "Tonemapping"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:78
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:77
 msgid "Screen space reflections"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:79
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:78
 msgid "Screen space ambient occlusion"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:80
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:79
 msgid "Depth of field"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:81
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:80
 msgid "Glow (also known as bloom)"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:82
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:81
 msgid "Adjustment"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:84
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:83
 msgid "That means that in GLES2 environments you can only set:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:86
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:85
 msgid "Sky (including procedural sky)"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:87
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:86
 msgid "Ambient light"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:90
+msgid "GIProbes"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:92
+msgid ""
+":ref:`GIProbes <class_GIProbe>` do not work in GLES2. Instead use :ref:"
+"`Baked Lightmaps <class_BakedLightmap>`. For a description of how baked "
+"lightmaps work see the :ref:`Baked Lightmaps tutorial <doc_baked_lightmaps>`."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:96
+msgid "Contact shadows"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:98
+msgid ""
+"The ``shadow_contact`` property of :ref:`Lights <class_Light>` is not "
+"supported in GLES2 and so does nothing."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:101
+msgid "Light performance"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:103
+msgid ""
+"In GLES2, performance scales poorly with several lights, as each light is "
+"processed in a separate render pass (in opposition to GLES3 which is all "
+"done in a single pass). Try to limit scenes to as few lights as possible in "
+"order to achieve greatest performance."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:110
+msgid ""
+"On mobile, GLES2 requires ETC texture compression, while GLES3 requires "
+"ETC2. ETC2 is enabled by default, so if exporting to mobile using GLES2 make "
+"sure to set the project setting ``rendering/vram_compression/import_etc`` "
+"and then reimport textures."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:115
+msgid "Blend shapes"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:117
+msgid "Blend shapes are not supported in GLES2."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:122
+msgid ""
+"GLES3 provides many built-in functions that GLES2 does not. Below is a list "
+"of functions that are not available or are have limited support in GLES2."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:125
+msgid ""
+"For a complete list of built-in GLSL functions see the :ref:`Shading "
+"Language doc <doc_shading_language>`."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:128
+#: ../../docs/development/compiling/compiling_for_android.rst:9
+msgid "Note"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:174
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:176
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:178
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:180
+msgid "**bias** not available in vertex shader"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:182
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:184
+msgid "Only available in vertex shader on some hardware"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:186
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:188
+msgid "Only available in vertex shader"
 msgstr ""
 
 #: ../../docs/tutorials/debug/index.rst:2
@@ -61097,10 +61261,6 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:4
 msgid "Compiling for Android"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_android.rst:9
-msgid "Note"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:11
@@ -64018,7 +64178,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:258
 msgid ""
-"However the trade-of is every single change means a full recompilation of "
+"However the trade-off is every single change means a full recompilation of "
 "the game. Even if SCons is able to detect and recompile only the file that "
 "have changed, finding such files and eventually linking the final binary is "
 "a long and costly part."
