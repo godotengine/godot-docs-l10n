@@ -14,6 +14,7 @@
 # H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2018.
 # Halil Üneş <halilunes@gmail.com>, 2018.
 # Oğuzhan Özdemir <ozdemiroguzhan0@gmail.com>, 2018.
+# Ömer YAZICIOĞLU <oyazicioglu@gmail.com>, 2019.
 # Onur Sanır <onursanir@gmail.com>, 2018.
 # Tuna Soncul <tsoncul@gmail.com>, 2018.
 #
@@ -22,8 +23,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-01 14:18+0100\n"
-"PO-Revision-Date: 2019-03-01 12:06+0000\n"
-"Last-Translator: Gökhan Ersümer <gokhanersumer@gmail.com>\n"
+"PO-Revision-Date: 2019-03-07 12:48+0000\n"
+"Last-Translator: Ömer YAZICIOĞLU <oyazicioglu@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -31,7 +32,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Weblate 3.5.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -46,13 +47,12 @@ msgstr ""
 "görmek için sol alt taraftaki \"Dokümantasyon Oku\" panelini genişlet."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the development (master) branch. Looking for "
 "the documentation of the current **stable** branch? `Have a look here "
 "<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
-"Bu dokümantasyon (ana) dal için stabil değildir. Mevcut **stabil** dalın "
+"Bu döküman geliştirici (ana) dal içindir. Mevcut **stabil** dalın "
 "dokümantasyonunu mu arıyorsunuz? `Buraya bir bakın <http://docs.godotengine."
 "org/en/stable>`_."
 
@@ -125,6 +125,7 @@ msgstr ""
 "bulamıyorsanız, bize bildirerek daha iyi belgelemeyi yapmamıza yardım edin!"
 
 #: ../../docs/index.rst:45
+#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -133,6 +134,12 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"Bir sorun bildir veya `GitHub deposu<https://github.com/godotengine/godot-"
+"docs/issues>`_ üzerinden bir istekte bulun, 'dökümantasyonu <https://hosted."
+"weblate.org/engage/godot-engine/> kendi diline çevirerek' katkıda bulun veya "
+"``#documentation`` kanalı üzerinden `Discord <https://discord.gg/zH7NUgz>`_, "
+"ya da ``#godotengine-doc`` kanalı üzerinden `irc.freenode.net <http://"
+"webchat.freenode.net/?channels=#godotengine-doc>`_ bizlerle sohbete katıl!"
 
 #: ../../docs/index.rst:59
 msgid ""
@@ -258,10 +265,9 @@ msgid ""
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"Eğer acemiyseniz nereden başlamanız veya belirli bir özellik hakkında "
-"bilgiye ihtiyaç duyuyorsanız nereye bakmanız gerektiğini öğrenebilmeniz için "
-"bu sayfa, motorun ve bu belgeleme içeriğinin geniş bir sunumunu vermeyi "
-"amaçlamaktadır."
+"Bu sayfa, motorun ve bu belgeleme içeriğinin geniş bir sunumunu "
+"içermektedir. Böylece; yeni başlayan biriyseniz nereden başlayacağınızı, "
+"belirli bir özellik hakkında nereye bakacağınızı bilirsiniz."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
@@ -280,7 +286,6 @@ msgstr ""
 "sunumumuz işte burada."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -289,12 +294,12 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot Engine, birleşik bir arayüzden 2D ve 3D oyunlar oluşturmak özelliklere "
-"sahip, çapraz platform oyun motorudur. Kapsamlı bir takım, ortak araçlar "
-"sunar, böylece kullanıcılar tekerleği yeniden icat etmeden oyun yapmaya "
-"odaklanabilirler. Oyunlar tek bir tıklamayla, büyük masaüstü platformları "
-"(Linux, macOS, Windows) ve mobil (Android, iOS) ve web tabanlı (HTML5) "
-"platformlar dahil olmak üzere bir dizi platformda dışa aktarılabilir."
+"Godot Engine, birleşik bir arayüzden 2D ve 3D oyunlar oluşturacak "
+"özelliklere sahip, çapraz platform oyun motorudur. Kapsamlı bir takım ortak "
+"araçlar sunar, böylece kullanıcılar tekerleği yeniden icat etmeden oyun "
+"yapmaya odaklanabilirler. Oyunlar tek bir tıklamayla, büyük masaüstü "
+"platformları (Linux, macOS, Windows) ve mobil (Android, iOS) ve web tabanlı "
+"(HTML5) platformlar dahil olmak üzere bir dizi platformda dışa aktarılabilir."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -45429,7 +45434,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:128
 msgid "Capture"
-msgstr ""
+msgstr "Yakala"
 
 #: ../../docs/tutorials/viewports/viewports.rst:130
 msgid ""

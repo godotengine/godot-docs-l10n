@@ -11,6 +11,7 @@
 # datenbauer <d-vaupel@web.de>, 2019.
 # David <david.breier@outlook.de>, 2018.
 # Eduard Albrecht <eddysoulo91@googlemail.com>, 2019.
+# Ettore Atalan <atalanttore@googlemail.com>, 2019.
 # FlamyAT <Game.Couler@gmail.com>, 2018.
 # Florian Findeiss <droddl@gmx.de>, 2018.
 # Gero <me@gero.io>, 2018.
@@ -61,8 +62,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-01 14:18+0100\n"
-"PO-Revision-Date: 2019-03-01 12:06+0000\n"
-"Last-Translator: Katharina Wendel <akd002000nemerb@web.de>\n"
+"PO-Revision-Date: 2019-03-10 09:56+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -70,7 +71,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Weblate 3.5.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -177,12 +178,12 @@ msgid ""
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
 "Reiche ein Issue oder einen Pull Request im `GitHub-Repository <https://"
-"github.com/godotengine/godot-docs/issues>`_ ein, hilf uns `die Dokumentation "
-"<https://hosted.weblate.org/engage/godot-engine/>`_ in Deine Sprache zu "
-"übersetzen, oder diskutiere mit uns entweder im ``#documentation``-Kanal auf "
-"`Discord <https://discord.gg/zH7NUgz>`_, oder dem ``#godotengine-doc``-Kanal "
-"auf `irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-"
-"doc>`_!"
+"github.com/godotengine/godot-docs/issues>`_ ein, hilf uns, `die "
+"Dokumentation <https://hosted.weblate.org/engage/godot-engine/>`_ in Deine "
+"Sprache zu übersetzen, oder diskutiere mit uns entweder im "
+"``#documentation``-Kanal auf `Discord <https://discord.gg/zH7NUgz>`_, oder "
+"dem ``#godotengine-doc``-Kanal auf `irc.freenode.net <http://webchat."
+"freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:59
 msgid ""
@@ -1948,8 +1949,8 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
-"Der Node erscheint im Szenenbaum (oben rechts) und die Label-Eigenschaften "
-"im Inspektor (unten rechts)."
+"Der Node erscheint als neuer Eintrag im Szenenbaum (oben rechts) und die "
+"Label-Eigenschaften werden im Inspektor aufgeführt (unten rechts)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
 msgid ""
@@ -6215,16 +6216,16 @@ msgid ""
 "them, to create anything from life bars to complex applications. Godot's "
 "entire editor and plugins use these nodes."
 msgstr ""
-"Monitore, Displays und Fernseher existieren in allen Formen und Größen.  Um "
-"ein Spiel zu veröffentlichen, musst du verschiedene Bildschirm "
-"Seitenverhältnisse und Auflösungen unterstützen. Es kann schwierig sein "
-"zugängliche Interfaces  zu erstellen welche sich an alle Plattformen "
-"anpassen. Glücklicherweise kommt Godot mit robusten Werkzeugen um "
-"zugängliche Benutzeroberflächen zu designen und zu verwalten. Um deine "
-"Benutzeroberfläche zu gestalten wirst du Control Nodes verwenden. Dies sind "
-"die Nodes mit dem grünen Symbol im Editor. Es gibt dutzende von ihnen, um "
-"alles vom Lebensbalken bis zur komplexen Anwendungen zu kreieren. Der "
-"gesamte Godot Editor und plugins dafür nutzen diese Nodes."
+"Monitore, Displays und Fernseher existieren in allen Formen und Größen. Um "
+"ein Spiel zu veröffentlichen, musst Du verschiedene "
+"Bildschirmseitenverhältnisse und -auflösungen unterstützen. Es kann "
+"schwierig sein adaptive Benutzeroberflächen zu erstellen, welche sich an "
+"alle Plattformen anpassen. Glücklicherweise kommt Godot mit robusten "
+"Werkzeugen, um adaptive Benutzeroberflächen zu gestalten und zu verwalten. "
+"Um deine Benutzeroberfläche zu gestalten wirst du Control-Nodes verwenden. "
+"Dies sind die Nodes mit dem grünen Symbol im Editor. Es gibt dutzende von "
+"ihnen, um alles vom Lebensbalken bis zur komplexen Anwendungen zu kreieren. "
+"Der gesamte Godot Editor und Plugins dafür nutzen diese Nodes."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
 msgid "Godot's editor is made with the engine's UI framework"
@@ -6233,24 +6234,25 @@ msgstr "Der Godot Editor wurde mittels Godots UI-Framework erstellt."
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "This guide will get you started with UI design. You will learn:"
 msgstr ""
-"Diese Anleitung hilft dir mit dem UI design zu starten. Du wirst folgendes "
-"lernen:"
+"Dieses Anleitung wird Dir den Einstieg in das Design der Benutzeroberfläche "
+"erleichtern. Du wirst folgendes lernen:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:21
 msgid "The five most useful control nodes to build your games’ interface"
 msgstr ""
-"Die fünf nützlichsten Control Nodes um die Benutzeroberfläche deines Spieles "
-"zu erstellen"
+"Die fünf nützlichsten Control-Nodes, um die Benutzeroberfläche Deines "
+"Spieles zu erstellen"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
 msgid "How to work with the anchor of UI elements"
-msgstr "Wie man anchor in UI Elementen verwendet"
+msgstr ""
+"Wie man Anchor (Bezugspunkte) in Benutzeroberflächen-Elementen verwendet"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:23
 msgid ""
 "How to efficiently place and arrange your user interface using containers"
 msgstr ""
-"Wie du deine Benutzeroberfläche effizient arrangierst indem du Container "
+"Wie Du Deine Benutzeroberfläche effizient arrangierst indem Du Container "
 "verwendest"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
@@ -6274,24 +6276,24 @@ msgid ""
 "with others, like the AnimationPlayer, Tween or the StreamPlayer. Control "
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
-"Verwende Control Nodes nur wenn du Benutzeroberflächen erstellst. Sie haben "
-"einzigartige Eigenschaften, welche es ihnen erlauben mit einander zu "
-"arbeiten. Andere Nodes, wir zum Beispiel Node2D oder Sprite funktionieren "
-"nicht. Du kannst immer noch einige Nodes verwenden die mit anderen arbeiten, "
-"wie AnimationPlayer, Tween oder StreamPlayer.  Control Nodes sind "
-"CanvasItems, ebenso wie Node2D, du kannst also Shader auf sie anwenden."
+"Verwende Control-Nodes nur wenn Du Benutzeroberflächen erstellst. Sie haben "
+"einzigartige Eigenschaften, welche es Dir erlauben mit einander zu arbeiten. "
+"Andere Nodes, wie zum Beispiel Node2D oder Sprite funktionieren nicht. Du "
+"kannst immer noch einige Nodes verwenden die mit anderen arbeiten, wie "
+"AnimationPlayer, Tween oder StreamPlayer.  Control-Nodes sind CanvasItems, "
+"ebenso wie Node2D, Du kannst also Shader auf sie anwenden."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:37
 msgid "All control nodes share the same main properties:"
-msgstr "Alle Control Nodes teilen die selben Haupteigenschaften:"
+msgstr "Alle Control-Nodes teilen die selben Haupteigenschaften:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Anchor"
-msgstr "Anchor (Anker)"
+msgstr "Anchor (Bezugspunkte)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Bounding rectangle"
-msgstr "Bounding rectangle (umgebendes Rechteck)"
+msgstr "Bounding rectangle (Begrenzungsrahmen)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 msgid "Focus and focus neighbor"
@@ -6299,22 +6301,22 @@ msgstr "Focus and focus neighbor (Fokus und Fokus Nachbar)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Size flags"
-msgstr "Size flags (Größen Einstellungen)"
+msgstr "Size flags (Größeneinstellungen)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "Margin"
-msgstr "Margin (Seitenrand)"
+msgstr "Margin (Außenabstand)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:44
 msgid "The optional UI theme"
-msgstr "Das optionale Benutzeroberflächen Theme"
+msgstr "Das optionale Benutzeroberflächen-Thema"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:46
 msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
 msgstr ""
-"Wenn du die Grundlagen der Control Node verstanden hast, wird es dich dich "
+"Wenn Du die Grundlagen des Control-Nodes verstanden hast, wird es Dich "
 "weniger Zeit kosten all die Nodes zu erlernen die davon abstammen."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:51
@@ -6326,16 +6328,16 @@ msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
-"Godot wird mit dutzenden Control Nodes geliefert. Viele von ihnen sind da, "
-"um dir zu helfen Editor Plugins und Anwendungen zu erstellen."
+"Godot wird mit dutzenden Control-Nodes geliefert. Viele von ihnen sind da, "
+"um Dir zu helfen Editor Plugins und Anwendungen zu erstellen."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:56
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
 msgstr ""
-"Für die meisten Spiele benötigst du nur fünf Arten von UI Elementen und ein "
-"paar Container. Diese fünf Control Nodes sind:"
+"Für die meisten Spiele benötigst Du nur fünf Arten von UI Elementen und ein "
+"paar Container. Diese fünf Control-Nodes sind:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid "Label: for displaying text"
@@ -6345,14 +6347,14 @@ msgstr "Label: um Text darzustellen"
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
-msgstr "TextureRect: hauptsächlich Hintergründe oder statischen Bilder"
+msgstr "TextureRect: hauptsächlich für Hintergründe oder statische Bilder"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:62
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
 msgstr ""
-"TextureProgress: für Lebensbalken, Ladebalken, Horizontal, Vertikal oder "
-"Radial"
+"TextureProgress: für Lebensanzeigen, Ladebalken, horizontal, vertikal oder "
+"radial"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "NinePatchRect: for scalable panels"
@@ -6360,11 +6362,11 @@ msgstr "NinePatchRect: für skalierbare Paneele"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:65
 msgid "TextureButton: to create buttons"
-msgstr "TextureButton: um Buttons zu erstellen"
+msgstr "TextureButton: um Schaltflächen zu erstellen"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:69
 msgid "The 5 most common Control nodes for UI design"
-msgstr "Die 5 häufigsten Control Nodes für UI Design"
+msgstr "Die 5 häufigsten Control-Nodes für UI Design"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
 msgid "TextureRect"
@@ -6377,9 +6379,9 @@ msgid ""
 "property to change its behavior:"
 msgstr ""
 "**TextureRect** zeigt eine Textur oder ein Bild innerhalb einer "
-"Benutzeroberfläche. Es scheint der Sprite Node ähnlich, doch es bietet "
-"mehrere Modi zu Skalieren. Setzte die Stretch Mode Eigenschaft um das "
-"Verhalten zu ändern:"
+"Benutzeroberfläche an. Es scheint dem Sprite-Node ähnlich zu sein, bietet "
+"jedoch mehrere Skalierungsmodi. Lege die Stretch-Mode-Eigenschaft fest, um "
+"sein Verhalten zu ändern:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
 msgid ""
@@ -6387,31 +6389,29 @@ msgid ""
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
-"``Scale on Expand (compat)`` skaliert die Texture um sich auf das "
-"begrenzende Rechteck der Node anzupassen, nur wenn die ``expand`` "
-"Eigenschaft ``true`` ist; ansonsten verhält es sich wie der ``Keep`` Modus. "
-"Standart Modus für abwärts Kompatibilität."
+"``Scale on Expand (compat)`` skaliert die Textur um sich an den "
+"Begrenzungsrahmen des Nodes anzupassen, nur wenn die ``expand`` Eigenschaft "
+"``true`` ist; ansonsten verhält es sich wie der ``Keep`` Modus. Dem "
+"Standardmodus für Abwärtskompatibilität."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:79
 msgid "``Scale`` scales the texture to fit the node’s bounding rectangle"
 msgstr ""
-"``Scale`` skaliert die Texture um sich dem begrenzenden Rechteck der Node "
+"``Scale`` skaliert die Textur, um sich dem Begrenzungsrahmen des Nodes "
 "anzupassen"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Tile`` makes the texture repeat, but it won't scale"
-msgstr ""
-"``Tile`` lässt sich die Textur wiederholen, sie wird allerdings nicht "
-"skaliert"
+msgstr "``Tile`` wiederholt die Textur, sie wird allerdings nicht skaliert"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively"
 msgstr ""
-"``Keep`` und ``Keep Centered`` zwingen die Textur ihre original Größe "
-"beizubehalten und platzieren sie in der linken oberen Ecke, respektive der "
-"Mitte des Rahmens"
+"``Keep`` und ``Keep Centered`` zwingen die Textur ihre ursprüngliche Größe "
+"beizubehalten und platzieren sie in der linken oberen Ecke bzw. in der Mitte "
+"des Rahmens"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:84
 msgid ""
@@ -6421,7 +6421,7 @@ msgid ""
 msgstr ""
 "``Keep Aspect`` und ``Keep Aspect Centered`` skalieren die Textur, aber "
 "erzwingen das originale Seitenverhältnis und platzieren sie in der linken "
-"oberen Ecke, respektive der Mitte des Rahmens"
+"oberen Ecke bzw. in der Mitte des Rahmens"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
 msgid ""
@@ -6430,15 +6430,15 @@ msgid ""
 "node’s limits"
 msgstr ""
 "``Keep Aspect Covered`` funktioniert genau wie ``Keep Aspect Centered`` "
-"allerdings wird die kürzere Seite dem begrenzenden Rechteck angepasst und "
-"die längere geht bis an das Limit der Node"
+"allerdings wird die kürzere Seite in den Begrenzungsrahmen eingepasst und "
+"die längere an der Node-Begrenzung abgeschnitten"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
-"Wie mit Sprite Nodes kannst du die Farbe des TextureRect modulieren. Klicke "
+"Wie mit Sprite Nodes kannst Du die Farbe des TextureRect modulieren. Klicke "
 "auf die ``Modulate`` Eigenschaft und verwende die Farbpipette."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:92
@@ -8241,6 +8241,14 @@ msgid ""
 "container cannot be smaller than the minimal size of its children. The "
 "container's margins also weigh in."
 msgstr ""
+"Damit sich das Icon und der Hintergrund überlappen, brauchen wir einige "
+"Änderungen. Zum einen ist unser Hintergrund etwas zu groß. Das liegt daran, "
+"dass er in einem Margin Container ist, der vom obersten GUI-Node "
+"kontrolliert wird. Wähle den GUI-Node oben im Szenenbaum und ändere die "
+"senkrechte Größe, damit er möglichst dünn wird. Die Anzeige hindert dich "
+"daran, ihn zu klein zu machen. Ein Container kann nicht kleiner als die "
+"Mindestgröße seiner Kinder sein. Die Ränder des Containers kommen auch noch "
+"dazu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:305
 msgid ""
@@ -8249,12 +8257,20 @@ msgid ""
 "Layout menu again and select ``Center Right``. Move the icon up so it is "
 "centered vertically with the ``Background``."
 msgstr ""
+"Wähle das Icon, klicke auf das Layout-Menü und wähle ``Full Rect``, um es "
+"wieder mittig auszurichten. Es muss an der oberen rechten Kante des "
+"``Background`` verankert werden. Öffne wieder das Layout-Menü und wähle "
+"``Center Right``. Bewege das Icon hoch, sodass es senkrecht mittig am "
+"``Background`` ausgerichtet ist."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:313
 msgid ""
 "The bomb icon anchors to the Background's right edge. Resize the Counter "
 "container to see the Icon node stick to its right side"
 msgstr ""
+"Das Bomben-Icon ist am rechten Rand des Background verankert. Passe die "
+"Größe des Counter-Containers an, sodass sich der Icon-Node an seine rechte "
+"Seite anschmiegt"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:316
 msgid ""
@@ -8264,6 +8280,12 @@ msgid ""
 "the ``Extra Spacing`` section, change the ``Bottom`` value to ``0`` to reset "
 "the font's baseline. Our counter now works as expected."
 msgstr ""
+"Da wir den ``Counter`` vom ``Count`` der Leiste dupliziert haben, ist der "
+"Font des ``Number``-Nodes unpassend. Wähle den ``Number``-Node wieder aus, "
+"gehe zur Eigenschaft ``Font`` und klicke sie an, um zur Ressource "
+"``DynamicFont`` zu gelangen. Im Bereich ``Extra Spacing``, wähle den Wert "
+"``Bottom`` zu ``0``, um die Grundlinie der Schrift zurückzusetzen. Unser "
+"Zähler funktioniert nun wie erwartet."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
 msgid ""
@@ -8274,16 +8296,26 @@ msgid ""
 "``Bars`` node should resize and push the counter to the right side of the "
 "screen."
 msgstr ""
+"Sorgen wir dafür, dass die ``Counters`` am rechten oberen Rand des "
+"Sichtfelds verankert werden. Dafür müssen wir den Container ``Bars`` so "
+"einstellen, dass der den ganzen horizontalen Platz einnimmt, der ihm zur "
+"Verfügung steht. Wähle den ``Bars``-Knoten aus und gehe hinunter zum Bereich "
+"``Size Flags``. Im Bereich ``Horizontal``, setze einen Haken bei ``Expand``. "
+"Der Node ``Bars`` sollte seine Größe ändern und den Zähler an den rechten "
+"Bildschirmrand verschieben."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:331
 msgid ""
 "An expanding container eats all the space it can from its parent, pushing "
 "everything else along the way"
 msgstr ""
+"Ein expandierender Container füllt den ganzen Platz aus, den er von seinem "
+"Elternknoten bekommen kann, alles andere wird dabei verdrängt"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:335
 msgid "Turn the bar and counter into reusable UI components"
 msgstr ""
+"Verwandeln der Leiste und des Zählers in wiederverwendbare UI-Komponenten"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:337
 msgid ""
@@ -8292,6 +8324,12 @@ msgid ""
 "we could have a single scene to store a UI element's template, and child "
 "scenes to work on variations. Godot lets us do this with Inherited Scenes."
 msgstr ""
+"Wir haben eine Leiste und einen Zähler. Aber wir brauchen jeweils zwei "
+"Stück. Später müssen die Gestaltung und Funktion gegebenenfalls noch "
+"geändert werden. Es wäre schön, wenn wir eine einzige Szene erstellen "
+"könnten, die als Vorlage eines UI-Elements dient, wir davon Szenen ableiten "
+"könnten, die abgeändert werden können. Godot lässt uns genau das mittels "
+"Vererbter Szenen (Inherited Scenes) tun."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
 msgid ""
@@ -8302,6 +8340,13 @@ msgid ""
 "the scene as ``Bar.tscn``. You should see the node branch turn it to a "
 "single ``Bar`` node."
 msgstr ""
+"Speichern wir also die beiden Zweige ``Counter`` sowie ``Bar`` als getrennte "
+"Szenen ab, die wir reduzieren um daraus die ``LifeBar``, die ``EnergyBar``, "
+"den ``BombCounter`` und den ``EmeraldCounter`` zu erzeugen. Wähle den "
+"HBoxContainer ``Bar``. Mache darauf einen Rechtsklick und klicke auf "
+"``Speichere Verzweigung als Szene``. Speichere die Szene als ``Bar.tscn``. "
+"Der ganze Zweig sollte sich daraufhin in einen einzigen Knoten namens "
+"``Bar`` verwandeln."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
 msgid ""
@@ -8312,6 +8357,13 @@ msgid ""
 "into the active one. Right click on any node in the Scene dock and select "
 "``Save Branch as Scene`` or ``Merge from Scene``."
 msgstr ""
+"Eine Szene ist ein Baum aus Knoten. Der oberste Knoten ist die **Wurzel** "
+"des Baums und die Kinder am Ende der Hierarchie sind **Blätter**. Jeder "
+"Knoten (außer der Wurzel) ergibt zusammen mit einem oder mehreren Kindern "
+"einen **Zweig**. Wie können Zweige in eigene Szenen auslagern oder sie laden "
+"und in andere aktive Szenen einfügen. Mache einen Rechtsklick auf einen "
+"beliebigen Knoten im Szenenfenster und wähle ``Speichere Verzweigung als "
+"Szene`` oder ``Aus Szene zusammenführen``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
 msgid ""
@@ -8326,11 +8378,12 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
 msgid "With no extra changes, our Bar is ready to use"
-msgstr ""
+msgstr "Ohne weitere Änderungen kann unsere Leiste jetzt verwendet werden"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
 msgid "Use scene inheritance to create the remaining elements"
 msgstr ""
+"Verwenden von Szenenvererbung, um die verbleibenden Elemente zu erstellen"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
 msgid ""
@@ -8340,12 +8393,21 @@ msgid ""
 "called EP and is yellow. Godot gives us a powerful tool to create a common "
 "base to reuse for all bars in the game: **inherited scenes**."
 msgstr ""
+"Wir brauchen zwei Leisten, die genauso funktionieren: Sie sollten links eine "
+"Beschriftung mit einem Wert beinhalten und rechts eine horizontale Anzeige. "
+"Der einzige Unterschied ist, dass eine mit HP beschriftet und grün ist und "
+"die andere EP heißt und gelb ist. Godot bietet uns ein mächtiges Werkzeug, "
+"mit dem wir eine allgemeine Leistenvorlage erstellen können, die für alle "
+"Leisten im Spiel genutzt werden kann: **Szenenvererbung** (scene "
+"inheritance)."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:383
 msgid ""
 "Inherited scenes help us keep the GUI scene clean. In the end, we will only "
 "have containers and one node for each UI component."
 msgstr ""
+"Vererbte Szenen helfen uns, die GUI-Szene ordentlich zu halten. Am Ende "
+"haben wir nur Container und einen Knoten für jede UI-Komponente."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
 msgid ""
@@ -10428,12 +10490,16 @@ msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
+"Godot kann so erklärt werden, dass es eine High Level Game Engine über einer "
+"Low Level Middleware ist."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
 "The scene system is the game engine, while the :ref:`OS <class_OS>` and "
 "servers are the low level API."
 msgstr ""
+"Das Szenensystem ist die Game Engine, wohingegen das  :ref:`OS <class_OS> "
+"und Server zur Low Level API gehören."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:49
 msgid ""
@@ -10447,6 +10513,8 @@ msgid ""
 "It's important to know that this class exists because it has a few important "
 "uses:"
 msgstr ""
+"Es ist wichtig zu wissen, dass es diese Klasse gibt, weil sie einige "
+"wichtige Verwendungszwecke hat:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
 msgid ""
@@ -13486,18 +13554,26 @@ msgid ""
 "gd``) *has* to define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``"
 msgstr ""
+"Wenn die geerbte Klasse (``State.gd``) einen ``_init``-Konstruktor "
+"definiert, der Argumente übernimmt (``e`` in diesem Fall), dann *muss* die "
+"vererbende Klasse (``Idle.gd``) ebenfalls ``_init`` definieren und passende "
+"Parameter an ``_init`` von ``State.gd`` übergeben"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1142
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the base class "
 "``State.gd``"
 msgstr ""
+"``Idle.gd`` kann eine andere Anzahl an Argumenten besitzen als die "
+"Basisklasse ``State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
 msgid ""
 "in the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``"
 msgstr ""
+"Im obigen Beispiel ist das ``e`` im Konstruktor von ``State.gd``das gleiche "
+"wie das ``e`` in ``Idle.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1145
 msgid ""
@@ -13550,12 +13626,20 @@ msgid ""
 "to. They will also be available for editing in the property editor. "
 "Exporting is done by using the ``export`` keyword::"
 msgstr ""
+"Klassenmember können exportiert werden. Das bedeutet, dass ihre Werte "
+"zusammen mit der zugehörigen Ressource (z.B. der :ref:`scene "
+"<class_PackedScene>`) gespeichert werden. Sie sind außerdem im "
+"Eigenschaftseditor verfügbar. Der Export funktioniert mit dem Schlüsselwort "
+"``export``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
 msgid ""
 "An exported variable must be initialized to a constant expression or have an "
 "export hint in the form of an argument to the export keyword (see below)."
 msgstr ""
+"Eine exportierte Variable muss mit einem konstanten Ausdruck initialisiert "
+"werden oder einen Zusatz in Form eines Arguments in der Exportanweisung "
+"besitzen (siehe unten)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1213
 msgid ""
@@ -16826,9 +16910,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
-#, fuzzy
 msgid "Special cases:"
-msgstr "Anwendungsfälle"
+msgstr "Sonderfälle:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``SPKEY``"
@@ -16855,9 +16938,8 @@ msgid "``Variant.Operator`` enum"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
-#, fuzzy
 msgid "Math functions"
-msgstr "Statische Funktionen"
+msgstr "Mathematische Funktionen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:40
 msgid ""
@@ -16867,9 +16949,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
-#, fuzzy
 msgid "Random functions"
-msgstr "Statische Funktionen"
+msgstr "Zufallsfunktionen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:47
 msgid ""
@@ -16878,9 +16959,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
-#, fuzzy
 msgid "Other functions"
-msgstr "Statische Funktionen"
+msgstr "Weitere Funktionen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:53
 msgid ""
@@ -16889,9 +16969,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:56
-#, fuzzy
 msgid "Exceptions:"
-msgstr "Funktionen"
+msgstr "Ausnahmen:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``weakref(obj)``"
@@ -17070,9 +17149,8 @@ msgid "``get_rotation()``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
-#, fuzzy
 msgid "``Rotation``"
-msgstr "Rotieren in 3D"
+msgstr "``Drehung``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:210
 msgid "Plane"
@@ -17139,9 +17217,8 @@ msgid "``length()``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
-#, fuzzy
 msgid "``Length``"
-msgstr "``$NodePath``"
+msgstr "``Länge``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
 msgid "``length_squared()``"
@@ -17158,9 +17235,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
-#, fuzzy
 msgid "``Array``"
-msgstr "Array"
+msgstr "``Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``Godot.Array``"
@@ -17171,9 +17247,8 @@ msgid "``PoolIntArray``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
-#, fuzzy
 msgid "``int[]``"
-msgstr "``in``"
+msgstr "``int[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:265
 msgid "``PoolByteArray``"
@@ -17188,18 +17263,16 @@ msgid "``PoolFloatArray``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:266
-#, fuzzy
 msgid "``float[]``"
-msgstr "float"
+msgstr "``float[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
 msgid "``PoolStringArray``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
-#, fuzzy
 msgid "``String[]``"
-msgstr "Zeichenketten"
+msgstr "``String[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:268
 msgid "``PoolColorArray``"
@@ -68526,39 +68599,43 @@ msgstr "Erstellen von 3D-Inhalten"
 
 #: ../../docs/content/3d/making_trees.rst:4
 msgid "Making trees"
-msgstr ""
+msgstr "Bäume erstellen"
 
 #: ../../docs/content/3d/making_trees.rst:6
 msgid ""
 "This is a short tutorial on how to make trees and other types of vegetation "
 "from scratch."
 msgstr ""
+"Dies ist eine kurze Anleitung, wie man Bäume und andere Arten von Vegetation "
+"von Grund auf erstellt."
 
 #: ../../docs/content/3d/making_trees.rst:8
 msgid ""
 "The aim is to not focus on the modelling techniques (there are plenty of "
 "tutorials about that), but how to make them look good in Godot."
 msgstr ""
+"Ziel ist es, sich nicht auf die Modellierungstechniken zu konzentrieren "
+"(dazu gibt es viele Anleitungen), sondern wie sie in Godot gut aussehen."
 
 #: ../../docs/content/3d/making_trees.rst:13
 msgid "Start with a tree"
-msgstr ""
+msgstr "Beginne mit einem Baum"
 
 #: ../../docs/content/3d/making_trees.rst:15
 msgid "I took this tree from SketchFab:"
-msgstr ""
+msgstr "Ich habe diesen bei SketchFab heruntergeladen:"
 
 #: ../../docs/content/3d/making_trees.rst:19
 msgid "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
-msgstr ""
+msgstr "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
 
 #: ../../docs/content/3d/making_trees.rst:21
 msgid "and opened it in Blender."
-msgstr ""
+msgstr "und in Blender geöffnet."
 
 #: ../../docs/content/3d/making_trees.rst:24
 msgid "Paint with vertex colors"
-msgstr ""
+msgstr "Malen mit Vertex-Farben"
 
 #: ../../docs/content/3d/making_trees.rst:26
 msgid ""
@@ -68567,20 +68644,27 @@ msgid ""
 "painting tool of your favorite 3D modelling program and paint something like "
 "this:"
 msgstr ""
+"Als erstes solltest Du durch die Verwendung von Vertex-Farben festlegen, wie "
+"stark sich der Baum später im Wind bewegen soll. Verwende einfach das Vertex-"
+"Farb-Malwerkzeug eines bevorzugten 3D-Modellierungsprogramms und male so "
+"etwas wie das hier:"
 
 #: ../../docs/content/3d/making_trees.rst:30
 msgid ""
 "This is a bit exaggerated, but the idea is that color indicates how much "
 "sway affects every part of the tree. This scale here represents it better:"
 msgstr ""
+"Dies ist hier ein wenig übertrieben dargestellt, aber die Idee ist, dass die "
+"Farbe anzeigt, wie beweglich jeder Teil des Baumes ist. Diese Skala hier "
+"stellt es besser dar:"
 
 #: ../../docs/content/3d/making_trees.rst:35
 msgid "Write a custom shader for the leaves"
-msgstr ""
+msgstr "Schreibe einen eigenen Shader für das Laub"
 
 #: ../../docs/content/3d/making_trees.rst:37
 msgid "This is a simple example of a shader for leaves:"
-msgstr ""
+msgstr "Dies ist ein einfaches Beispiel für einen Shader für die Blätter:"
 
 #: ../../docs/content/3d/making_trees.rst:44
 msgid ""
@@ -68591,12 +68675,22 @@ msgid ""
 "can be duplicated, moved, etc. and it will still work together with other "
 "trees."
 msgstr ""
+"Es handelt sich um einen räumlichen Shader. Es gibt keine Entfernung der "
+"Vorder- oder Rückflächen (so dass Blätter von beiden Seiten gesehen werden "
+"können) und Alpha-Prepass wird verwendet, so dass weniger Tiefenartefakte "
+"entstehen, die sich aus der Verwendung von Transparenz (und Schattenwurf) "
+"ergeben. Schließlich werden für den Bewegungseffekt Weltkoordinaten "
+"empfohlen, sodass der Baum kopiert oder verschoben werden kann und trotzdem "
+"mit anderen Bäumen synchronisiert bleibt."
 
 #: ../../docs/content/3d/making_trees.rst:51
 msgid ""
 "Here, the texture is read, as well as a transmission color, which is used to "
 "add some back-lighting to the leaves, simulating subsurface scattering."
 msgstr ""
+"Hier wird die Textur sowie eine Transmissionsfarbe ausgelesen, die dazu "
+"dient, die Blätter etwas hinterleuchtet darzustellen, um so die Streuung der "
+"Oberfläche zu simulieren."
 
 #: ../../docs/content/3d/making_trees.rst:67
 msgid ""
@@ -68605,14 +68699,19 @@ msgid ""
 "that the strength is multiplied by the color. Every axis uses a different "
 "small near 1.0 multiplication factor so axes don't appear in sync."
 msgstr ""
+"Dies ist der Code, um die Bewegung der Blätter zu erzeugen. Es ist einfach "
+"(verwendet wird nur eine Sinuswelle, die mit der Zeit und der Achsenposition "
+"multipliziert wird, funktioniert aber gut). Beachte, dass die Stärke mit der "
+"Farbe multipliziert wird. Jede Achse verwendet einen anderen kleinen "
+"Multiplikationsfaktor nahe 1.0, so dass Achsen nicht synchron erscheinen."
 
 #: ../../docs/content/3d/making_trees.rst:70
 msgid "Finally all that is left is the fragment shader:"
-msgstr ""
+msgstr "Zum Schluss bleibt nur noch der Fragment-Shader:"
 
 #: ../../docs/content/3d/making_trees.rst:83
 msgid "And this is pretty much it."
-msgstr ""
+msgstr "Und das ist so ziemlich alles."
 
 #: ../../docs/content/3d/making_trees.rst:85
 msgid ""
@@ -68620,6 +68719,10 @@ msgid ""
 "(thus no alpha prepass is needed) and does not require transmission to work. "
 "Both shaders can be improved by adding normal mapping, AO and other maps."
 msgstr ""
+"Der Ast-Shader ist ähnlich, außer das er nicht in den Alphakanal schreibt "
+"(daher ist kein Alpha-Prepass erforderlich) und erfordert keine "
+"Transmission, um zu funktionieren. Beide Shader können durch Hinzufügen von "
+"Normal Maps, AO (Umgebungsbeleuchtung) und anderen Maps verbessert werden."
 
 #: ../../docs/content/3d/making_trees.rst:88
 msgid "Improving the shader"
@@ -68632,14 +68735,19 @@ msgid ""
 "how Crysis does this (focus mostly on the sway code, as many other "
 "techniques shown there are obsolete):"
 msgstr ""
+"Es gibt viele weitere Ressourcen, die Du lesen kannst. Da Du nun die "
+"Grundlagen kennst, ist es empfehlenswert, das Kapitel von GPU Gems3 zu "
+"lesen, wie dies in Crysis umgesetzt wurde (konzentriere Dich hauptsächlich "
+"auf den Code der die Bewegungen beschreibt, da viele andere Techniken dort "
+"veraltet sind):"
 
 #: ../../docs/content/3d/making_trees.rst:93
 msgid "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
-msgstr ""
+msgstr "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
 
 #: ../../docs/community/contributing/index.rst:2
 msgid "Contributing"
-msgstr ""
+msgstr "Mach mit!"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:4
 msgid "Ways to contribute"
@@ -69755,7 +69863,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:246
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:248
 msgid ""
@@ -70025,7 +70133,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:118
 msgid "Milestones"
-msgstr ""
+msgstr "Meilensteine"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:120
 msgid ""
@@ -70048,7 +70156,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:4
 msgid "Documentation guidelines"
-msgstr ""
+msgstr "Richtlinien Dokumentation"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:6
 msgid ""
@@ -70059,6 +70167,11 @@ msgid ""
 "page <https://docs.godotengine.org>`_ on what steps to follow and how to "
 "contact the docs team."
 msgstr ""
+"Diese Seite beschreibt die Regeln beim Schreiben, Prüfen und dem Übersetzen "
+"von Dokumentationsinhalten der Godot Engine. Sieh auch in die README des "
+"`godot-docs GitHub-Repository <https://github.com/godotengine/godot-docs>`_ "
+"und auf der `Dokumentationshauptseite <https://docs.godotengine.org>`_ nach, "
+"wie Du Kontakt mit dem Dokumentationsteam aufnimmst."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:14
 #: ../../docs/community/contributing/updating_the_class_reference.rst:17
@@ -70074,6 +70187,13 @@ msgid ""
 "in a pull request and getting it merged will trigger a rebuild of the online "
 "documentation."
 msgstr ""
+"Das Anlegen oder Bearbeiten von Dokumentationsseiten geschieht hauptsächlich "
+"über das `godot-docs-GitHub-Repository \n"
+"<https://github.com/godotengine/godot-docs>`_. Die Dokumentation in den "
+"Formaten HTML, PDF und EPUB wird aus den .rst-Dateien (reStructuredText "
+"Markup Language) in diesem Repository generiert. Werden diese Seiten über "
+"einen Pull Request aktualisiert und erfolgt ein Merge der Änderungen, so "
+"löst dies einen Neuaufbau der Onlinedokumentation aus."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:23
 msgid ""
@@ -70081,6 +70201,10 @@ msgid ""
 "ref:`doc_pr_workflow` page. Most of what it describes regarding the main "
 "godotengine/godot repository is also valid for the docs repository."
 msgstr ""
+"Für Erläuterungen zum Umgang mit Git und dem Arbeitsablauf beim Pull "
+"Request, sieh Dir die  :ref:`doc_pr_workflow`-Seite an. Die meisten der dort "
+"beschriebenen Schritte bezogen auf das godotengine/godot-Repository treffen "
+"ebenso auf das docs-Repository zu."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:28
 msgid ""
@@ -70088,6 +70212,9 @@ msgid ""
 "please read it. In particular, it contains some tips and tricks and links to "
 "reference documentation about the reStructuredText markup language."
 msgstr ""
+"Die README.md-Datei enthält alle Informationen, die Du benötigst, um "
+"loszulegen; lies es bitte durch. Insbesondere enthält sie Tipps und Tricks "
+"sowie Links zur Referenz der StructuredText-Bezeichnungssprache."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:32
 msgid ""
@@ -70097,10 +70224,16 @@ msgid ""
 "used to generate the in-editor documentation as well as the API reference of "
 "the online docs. Read more here: :ref:`doc_updating_the_class_reference`."
 msgstr ""
+"Solltest Du die **API-Reference** bearbeiten wollen, beachte dass dies "
+"*nicht* innerhalb des godot-docs-Repository erfolgt. Stattdessen solltest Du "
+"die XML-Dateien unter ``doc/classes/*`` des Haupt-Repository von Godot "
+"bearbeiten. Diese Dateien werden später dafür eingesetzt, um die Godot-"
+"interne als auch die API-Referenz der Onlinedokumentation aktuell zu halten. "
+"Mehr dazu hier: :ref:`doc_updating_the_class_reference`."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:40
 msgid "What makes good documentation?"
-msgstr ""
+msgstr "Was macht eine gute Dokumentation aus?"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:42
 msgid ""
@@ -70108,12 +70241,17 @@ msgid ""
 "sentences and various levels of sections and subsections. It should be clear "
 "and objective. Also have a look at the :ref:`doc_docs_writing_guidelines`."
 msgstr ""
+"Eine gute Dokumentation sollte klar, verständlich und objektiv sein, mit "
+"wohlgeformten Sätzen und, je nach Komplexität, sinnvollen Abschnitten und "
+"Unterkategorien. Siehe dazu auch die :ref:`doc_docs_writing_guidelines`."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:46
 msgid ""
 "We differentiate tutorial pages from other documentation pages by these "
 "definitions:"
 msgstr ""
+"Wir unterscheiden Anleitungen von anderen Dokumentationsinhalten über "
+"folgende Definitionen:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:49
 msgid ""
@@ -70122,6 +70260,10 @@ msgid ""
 "purpose (e.g. \"Making a simple 2d Pong game\", \"Applying forces to an "
 "object\")."
 msgstr ""
+"Anleitung: Ein Abschnitt mit dem Ziel, ein oder mehrere Konzepte, die im "
+"Editor oder in Skripten angewandt werden, anhand eines Beispiels zu "
+"veranschaulichen, um ein bestimmtes Lernziel zu erreichen (z.B. \"Ein "
+"einfaches 2D-Pong-Spiel erstellen\", \"Kräfte auf ein Objekt wirken\")."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:53
 msgid ""
@@ -70129,20 +70271,28 @@ msgid ""
 "time, if possible exhaustively (e.g. the list of methods of the Sprite "
 "class, or an overview of the input management in Godot)."
 msgstr ""
+"Dokumentation: Eine Seite, auf der genau ein Konzept oder eine "
+"Funktionalität zur gleichen Zeit beschrieben wird und das, soweit möglich, "
+"bis ins kleinste Detail (z.B. die Auflistung der Methoden der Sprite-Klasse, "
+"oder eine Übersicht der Eingabeverwaltung in Godot)."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:57
 msgid ""
 "You are free to write the kind of documentation you wish, as long as you "
 "respect the following rules (and the ones on the repo)."
 msgstr ""
+"Es sei Dir freigestellt, welche Art von Dokumentation Du schreiben möchtest "
+"solange Du die folgenden Regeln respektierst (und die aus dem Repo)."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:61
 msgid "Titles"
-msgstr ""
+msgstr "Überschriften"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:63
 msgid "Always begin pages with their title and a Sphinx reference name:"
 msgstr ""
+"Fange jede Seite stets mit der Überschrift an und einer internen Bezeichnung "
+"für den Sphinx-Verweis:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:72
 msgid ""
@@ -70150,6 +70300,9 @@ msgid ""
 "``:ref:`doc_insert_your_title_here``` would link to the above example page "
 "(note the lack of leading underscore in the reference)."
 msgstr ""
+"Der Sphinx-Verweis erlaubt es, die Seite per ``:ref:``-Tag zu verlinken, so "
+"würde etwa ``:ref:`doc_insert_your_title_here``` auf die obige Beispielseite "
+"verlinken (man beachte den fehlenden Unterstrich im Verweis)."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:76
 msgid ""
@@ -70157,34 +70310,41 @@ msgid ""
 "a capitalized letter, and every following word should not. Thus, this is a "
 "good example:"
 msgstr ""
+"Außerdem vermeide CamelCase-Überschriften (die amerikanische Schreibweise): "
+"Das erste Wort sollte stets mit einem Großbuchstaben beginnen, während der "
+"Rest normal geschrieben wird. Hier ein gutes Beispiel:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:80
 msgid "Insert your title here"
-msgstr ""
+msgstr "Hier Überschrift einfügen"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:82
 msgid "And this is a bad example:"
-msgstr ""
+msgstr "Und das ist ein schlechtes Beispiel:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:84
 msgid "Insert Your Title Here"
-msgstr ""
+msgstr "Hier Überschrift Einfügen"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:86
 msgid ""
 "Only project, people and node class names should have capitalized first "
 "letter."
 msgstr ""
+"Nur Node-Klassen-, Projekt-, Personennamen und sonstige grammatikalisch "
+"bedingte Fälle sollten großgeschrieben werden."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:90
 msgid "Translating existing pages"
-msgstr ""
+msgstr "Übersetzen vorhandener Seiten"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:92
 msgid ""
 "You can help to translate the official Godot documentation on our `Hosted "
 "Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
 msgstr ""
+"Du kannst bei der Übersetzung der Godot-Dokumentation über unsere `Hosted "
+"Weblate <https://hosted.weblate.org/engage/godot-engine/>`_-Seite mithelfen."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:99
 msgid ""
@@ -70192,6 +70352,9 @@ msgid ""
 "godotengine/godot-docs-l10n>`_. where you can see when the data was last "
 "synced."
 msgstr ""
+"Dann gibt es noch das offizielle `Godot I18N-Repository <https://github.com/"
+"godotengine/godot-docs-l10n>`_. wo Du einsehen kannst, wann die letzte "
+"Synchronisation stattgefunden hat."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:104
 msgid ""
@@ -70200,20 +70363,22 @@ msgid ""
 "tldrlegal.com/license/creative-commons-attribution-(cc)>`_, with attribution "
 "to \"Juan Linietsky, Ariel Manzur and the Godot community\"."
 msgstr ""
-"Diese Dokumentation und alle enthaltenen Seiten werden unter den Bedingungen "
-"der `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://tldrlegal."
-"com/license/creative-commons-attribution-(cc)>`_, unter Zuschreibung an  "
-"\"Juan Linietsky, Ariel Manzur und die Godot-Gemeinschaft\", veröffentlicht."
+"Alle Beiträge werden unter der freizügigen `Creative Commons Attribution 3.0-"
+"Lizenz (CC-BY-3.0) <https://tldrlegal.com/license/creative-commons-"
+"attribution-(cc)>`_ unter dem Namen „Juan Linietsky, Ariel Manzur and the "
+"Godot Engine community“ veröffentlicht."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:107
 msgid ""
 "By contributing to the documentation on the GitHub repository, you agree "
 "that your changes are distributed under this license."
 msgstr ""
+"Durch das Beitragen zu dieser Dokumentation im GitHub-Repository akzeptierst "
+"Du die Veröffentlichung Deiner Inhalte unter dieser Lizenz."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:4
 msgid "Docs writing guidelines"
-msgstr ""
+msgstr "Richtlinien Dokumentation schreiben"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:6
 msgid ""

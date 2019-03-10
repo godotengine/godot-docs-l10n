@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-01 14:18+0100\n"
-"PO-Revision-Date: 2019-02-28 08:14+0000\n"
+"PO-Revision-Date: 2019-03-10 09:56+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Weblate 3.5.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -687,7 +687,6 @@ msgid "What is GDScript and why should I use it?"
 msgstr "GDScript는 무엇이고 왜 이것을 써야하나요?"
 
 #: ../../docs/about/faq.rst:90
-#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -701,7 +700,7 @@ msgstr ""
 "동등하게 Godot의 강점을 가능한 빨리 활용할 수 있도록 짧은 코드로도 Godot의 잠"
 "재력을 극대화할 수 있도록 바닥부터 지어졌습니다. 이전에 Python 비슷한 언어를 "
 "사용해 보신 적이 있다면 익숙하실 겁니다. GDScript가 제공하는 예제, 역사, 그리"
-"고 전체 개요는, `GDScript 스크립팅 가이드 <gdscript_basics>`_\\ 를 참고하세"
+"고 전체 개요는, :ref:`GDScript 스크립팅 가이드 <doc_gdscript>`\\ 를 참고하세"
 "요."
 
 #: ../../docs/about/faq.rst:97
@@ -6900,16 +6899,14 @@ msgstr ""
 "니다"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
 "them into the ``VBoxContainer``. The nodes should position automatically."
 msgstr ""
 "노드 트리에서, 왼쪽에 놓을 모든 ``TextureRect`` 노드를 선택하세요: 로고, 메"
-"뉴 옵션 그리고 버전 노트입니다. ``VBoxContainer`` 에 드래그 앤 드랍하세요. 그"
-"런 다음, 삽화 노드를 ``CenterContainer`` 안으로 드래그 하세요. 노드는 자동으"
-"로 위치가 맞춰집니다."
+"뉴 옵션 그리고 버전 노트입니다. ``VBoxContainer``\\ 로 드래그 앤 드롭하세요. "
+"노드는 자동으로 위치가 맞춰집니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
 msgid "Containers automatically place and resize textures"
@@ -6928,7 +6925,6 @@ msgid "There's no space between the logo and the other UI elements"
 msgstr "로고와 다른 UI 요소들 사이에 공간이 없습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the ``Size Flags`` category and click "
@@ -6939,13 +6935,13 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
-"오른쪽에 캐릭터가 중앙에 오게 하려면, 우리는 ``CenterContainer``\\ 를 사용할 "
-"겁니다. ``CenterContainer`` 노드를 ``HBoxContainer``\\ 의 자식으로 추가합니"
-"다. 그 후 인스펙터에서, ``Size Flags`` 카테고리로 내려서 ``Vertical`` 속성의 "
-"오른쪽에 있는 영역을 클릭하고, ``Expand``\\ 와 추가로 ``Fill``\\ 을 체크하세"
-"요. ``Horizontal`` 속성에도 똑같이 적용합니다. 마지막으로 캐릭터를 "
-"``CenterContainer``\\ 에 드래그 앤 드랍 하세요. 캐릭터 요소는 자동으로 중앙"
-"에 자리 잡을 것입니다."
+"오른쪽에 캐릭터가 중앙에 오게 하려면, 먼저 ``CenterContainer``\\ 를  선택합니"
+"다. 그 후 인스펙터에서, ``Size Flags`` 카테고리로 내려가 ``Vertical`` 속성의 "
+"오른쪽에 있는 영역을 클릭하고, ``Expand``\\ 와 ``Fill``\\ 을 체크하세요. "
+"``Horizontal`` 속성에도 똑같이 적용합니다. 이렇게 하면 ``CenterContainer``\\ "
+"가 ``VBoxContainer``\\ 처럼 모든 이용 가능한 영역으로 펴집니다. 마지막으로 캐"
+"릭터를 ``CenterContainer``\\ 에 드래그 앤 드롭 하세요. 캐릭터 요소는 자동으"
+"로 중앙에 자리 잡을 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid ""
@@ -17234,7 +17230,6 @@ msgid "Configuring an external editor"
 msgstr "외부 편집기 구성하기"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:78
-#, fuzzy
 msgid ""
 "While Godot has its own script editor, its support for C# is kept minimal; "
 "it's recommended that you use an external IDE or editor instead, such as "
@@ -17244,12 +17239,13 @@ msgid ""
 "scroll down to the bottom to the **Mono** settings. Under **Mono**, click on "
 "**Editor** then choose your external editor of choice."
 msgstr ""
-"Godot가 자체 스크립트 에디터를 갖고 있지만, C#에 대한 지원은 최소한이므로 외"
-"부 IDE나 편집기를 사용하는 것을 추천합니다, Microsoft Visual Studio Code나 "
-"MonoDevelop 같은 것은 자동 완성을 제공하며 C#으로 작업할 때 디버깅과 다른 유"
-"용한 기능이 있습니다. Godot에 설정하기 위해, ``에디터``\\ 를 클릭하고 ``에디"
-"터 설정``\\ 으로 갑니다. 아래로 스크롤하면, ``Mono`` 설정이 나옵니다. Mono에"
-"서 ``Editor``\\ 를 클릭하고 외부 편집기를 선택하는 페이지가 나타납니다."
+"Godot가 자체 스크립트 에디터를 갖고 있지만, C#에 대한 지원은 최소한입니다; "
+"`Visual Studio Code <https://code.visualstudio.com/>`_\\ 나 MonoDevelop과 같"
+"은 외부 IDE나 편집기를 사용하는 것을 추천합니다. 이 둘은 자동 완성, 디버깅을 "
+"제공하며 C#으로 작업하면서 쓰이는 유용한 기능이 있습니다. Godot에 설정하기 위"
+"해, **에디터 → 에디터 설정**\\ 으로 갑니다. 아래로 내리면, **Mono** 설정이 나"
+"옵니다. **Mono**\\ 에서 **Editor**\\ 를 클릭하면 외부 편집기를 선택하는 페이"
+"지가 나타납니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
 msgid ""
@@ -17257,13 +17253,15 @@ msgid ""
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
+"만약 Visual Studio Code를 사용하고 있다면, `C# 확장 프로그램<https://"
+"marketplace.visualstudio.com/items?itemName=ms-vscode.csharp>`_\\ 을 설치하"
+"여 문법 하이라이트 효과와 IntelliSense같은 기능을 사용하는 것을 잊지마세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
 msgid "Creating a C# script"
 msgstr "C# 스크립트 만들기"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
-#, fuzzy
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting ``Attach script`` in the context menu of a node in "
@@ -17273,7 +17271,6 @@ msgstr ""
 "기``\\ 를 눌렀을 때, 다음 설정이 보여야 합니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
-#, fuzzy
 msgid ""
 "Note that while some specifics change, most concepts work the same when "
 "using C# for scripting. If you're new to Godot, you may want to follow the "
@@ -17282,7 +17279,7 @@ msgid ""
 "easily from GDScript."
 msgstr ""
 "일부 세부 사항이 변경되는 동안, 대부분의 작업은 스크립팅을 C#으로 하는 것과 "
-"동일합니다. Godot로 처음 접해보신다면, 이 시점에서 :ref:`doc_scripting` 튜토"
+"동일합니다. Godot를 처음 접해보신다면, 이 시점에서 :ref:`doc_scripting` 튜토"
 "리얼을 정독하시는 것이 좋습니다. 문서의 일부는 C# 예제가 부족하지만, 대부분"
 "은 일찍이 GDScript에서 옮길 수 있습니다."
 
@@ -17291,7 +17288,6 @@ msgid "Project setup and workflow"
 msgstr "프로젝트 설정과 작업 흐름"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:108
-#, fuzzy
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
 "for your Godot project. This includes generating a C# solution (``.sln``) "
@@ -17303,27 +17299,25 @@ msgid ""
 "let it regenerate."
 msgstr ""
 "첫 C# 스크립트를 생성하면, Godot는 Godot 프로젝트를 위한 C# 프로젝트 파일을 "
-"초기화합니다. 여기에는 C# 솔루션 (``.sin``)이나 프로젝트 (``.csproj``) 파일 "
-"뿐만 아니라, 일부 유용 파일과 폴더들 (``.mono``, sometimes ``Properties``)을 "
-"생성하는 것도 포함합니다. ``.mono``\\ 를 제외하고는 모두 중요하므로 버전 관"
-"리 시스템에 유지해야 합니다. ``.mono``\\ 는 버전관리 시스템의 무시 목록에 쉽"
-"게 추가할 수 있습니다. 문제를 해결할 때, ``.mono`` 폴더를 삭제하고 다시 만드"
-"는 것이 때로는 도움이 됩니다."
+"초기화합니다. 여기에는 C# 솔루션 (``.sin``)이나 프로젝트 파일 (``.csproj``) "
+"뿐만 아니라, 일부 유용 파일과 폴더들 (``.mono``\\ 와 ``Properties/"
+"AssemblyInfo.cs``)을 생성하는 것도 포함합니다. ``.mono``\\ 를 제외하고는 모"
+"두 중요하므로 버전 관리 시스템에 유지해 두어야 합니다. ``.mono``\\ 는 버전 관"
+"리 시스템의 무시 목록에 쉽게 추가할 수 있습니다. 문제를 해결할 때, ``.mono`` "
+"폴더를 삭제하고 다시 만드는 것이 때로는 도움이 됩니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:117
-#, fuzzy
 msgid ""
 "Note that currently, there are some issues where Godot and the C# project "
 "don't stay in sync; if you delete, rename or move a C# script, the change "
 "may not be reflected in the C# project file. In cases like this, you will "
 "have to edit the C# project file manually."
 msgstr ""
-"현재, Godot와 C# 프로젝트는 동기화 되지 않는 문제가 있습니다; 스크립트나 노"
-"드 따위를 삭제, 이름 변경, 이동을 한다면 더 이상 맞춰지지 않게 될 것입니다. "
-"이 경우, 수동으로 솔루션 파일을 편집하는 것이 도움이 됩니다."
+"현재, Godot와 C# 프로젝트가 동기화되지 않는 문제가 있습니다; C# 스크립트를 삭"
+"제, 이름 변경, 이동을 한다면, 변경 사항이 C# 프로젝트 파일에 반영되지 않을지"
+"도 모릅니다. 이 경우, 수동으로 C# 프로젝트 파일을 편집해야 할 것입니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:122
-#, fuzzy
 msgid ""
 "For example, if you created a script (e.g. ``Test.cs``) and delete it in "
 "Godot, compilation will fail because the missing file is still expected to "
@@ -17331,21 +17325,19 @@ msgid ""
 "csproj`` file and look for the ``ItemGroup``, there should be a line "
 "included like the following:"
 msgstr ""
-"예제: 스크립트를 생성하고 (예를 들어 ``Test.cs``)그리고 Godot에서 삭제한다"
-"면, CS 프로젝트로 있을 것이라고 예측되는 파일이 없기 때문에 편집은 실패할 것"
-"입니다. 당분간, 단순히 ``.csproj`` 파일을 열고 ``ItemGroup``\\ 을 본다면 다음"
-"과 같은 글이 있어야 합니다:"
+"예를 들어 스크립트를 생성하고 (예: ``Test.cs``) Godot에서 삭제한다면,누락된 "
+"파일이 C 프로젝트 파일에 남아있기 때문에 컴파일에 실패할 것입니다. 지금은, 단"
+"순히 ``.csproj`` 파일을 열고 ``ItemGroup``\\ 을 볼수 있고, 다음과 같은 글이 "
+"있어야 합니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
-#, fuzzy
 msgid ""
 "Simply remove that line and your project should build correctly again. Same "
 "for renaming and moving things, simply rename and move them in the project "
 "file if needed."
 msgstr ""
-"단순히 이 글을 삭제하면 프로젝트는 다시 잘 지어져야 합니다. 이름 변경과 이동"
-"도 이와 마찬가지로, 간단히 필요에 따라 이름을 바꾸고 프로젝트 파일로 옮깁니"
-"다."
+"단순히 이 줄을 삭제하면 프로젝트는 다시 올바르게 빌드됩니다. 이름 변경과 이동"
+"도 이와 마찬가지로, 필요에 따라 이름을 바꾸고 프로젝트 파일로 옮깁니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
 #: ../../docs/tutorials/io/background_loading.rst:87
@@ -17361,7 +17353,6 @@ msgstr ""
 "습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:170
-#, fuzzy
 msgid ""
 "As you can see, functions normally in global scope in GDScript like Godot's "
 "``print`` function are available in the ``GD`` class which is part of the "
@@ -17369,13 +17360,13 @@ msgid ""
 "class reference pages for :ref:`@GDScript <class_@gdscript>` and :ref:"
 "`@GlobalScope <class_@globalscope>`."
 msgstr ""
-"보시다시피, Godot의 ``print`` 함수와 같은 전역 범위의 것은 기본적으로 ``GD`` "
-"네임 스페이스로 이용할 수 있습니다. 그 목록을 보려면 :ref:`@GDScript "
-"<class_@gdscript>`\\ 와 :ref:`@GlobalScope <class_@globalscope>`\\ 에 대한 클"
-"래스 참조 페이지를 참고하세요."
+"보시다시피, Godot의 ``print`` 함수와 마찬가지로 GDScript에서 함수는 기본적으"
+"로 전역 범위에 있기 때문에 ``Godot`` 네임스페이스의 일부분인 ``GD`` 클래스에"
+"서 사용할 수 있습니다. ``GD`` 클래스에서의 메서드 목록을 보려면, :ref:"
+"`@GDScript <class_@gdscript>`\\ 와 :ref:`@GlobalScope <class_@globalscope>`"
+"\\ 에서 클래스 참조 페이지를 참고하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
-#, fuzzy
 msgid ""
 "Keep in mind that the class you wish to attach to your node should be named "
 "as the ``.cs`` file. Otherwise, you will get the following error and won't "
@@ -17383,7 +17374,7 @@ msgid ""
 msgstr ""
 "노드에 붙이고 싶은 클래스 이름이 ``.cs`` 파일이어야 한다는 사실을 명심하세"
 "요. 그렇지 않으면, 다음과 같은 오류를 받게 되며 씬을 실행할 수 없을 것입니"
-"다: ``Cannot find class XXX for script res://XXX.cs``."
+"다: *\"스크립트 res://XXX.cs에서 클래스 XXX를 찾을 수 없음\"*"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
 msgid "General differences between C# and GDScript"
@@ -17401,7 +17392,6 @@ msgstr ""
 "Godot API는 합리적으로 가능한 것처럼 관용적이도록 노력합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
-#, fuzzy
 msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr "더 자세한 내용은, :ref:`doc_c_sharp_differences` 페이지를 참고하세요."
 
@@ -17410,7 +17400,6 @@ msgid "Current gotchas and known issues"
 msgstr "현재 문제와 알려진 문제"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
-#, fuzzy
 msgid ""
 "As C# support is quite new in Godot, there are some growing pains and things "
 "that need to be ironed out. Below is a list of the most important issues you "
@@ -17419,12 +17408,11 @@ msgid ""
 "godotengine/godot/labels/topic%3Amono>`_."
 msgstr ""
 "C# 지원이 Godot에서 꽤 새롭기 때문에, 성장통이 있고 다듬어야 할 곳이 여전히 "
-"있습니다. 하단에는 가장 중요한 문제 목록으로 Godot에서 C#으로 갈 때 알아두어"
-"야 합니다, 하지만 의심스러운 점이 있다면 공식 `Mono 이슈를 위한 이슈 트래커 "
+"있습니다. 아래에는 중요한 문제 목록으로 Godot에서 C#으로 갈아탈 때 명심해야 "
+"합니다, 하지만 의심스러운 점이 있다면 공식 `Mono 이슈를 위한 이슈 트래커 "
 "<https://github.com/godotengine/godot/labels/topic%3Amono>`_\\ 를 살펴보세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
-#, fuzzy
 msgid ""
 "As explained above, the C# project isn't always kept in sync automatically "
 "when things are deleted, renamed or moved in Godot (`#12917 <https://github."
@@ -17432,23 +17420,23 @@ msgid ""
 msgstr ""
 "위에서 설명했듯이, C# 프로젝트가 Godot에서 삭제, 이름 변경, 이동을 할 때 항"
 "상 동기화를 자동으로 하지는 않습니다 (`#12917 <https://github.com/"
-"godotengine/godot/issues/12917>`_)"
+"godotengine/godot/issues/12917>`_)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:203
-#, fuzzy
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
-"C#에서 에디터 플러그인과 툴 스크립트를 적는 것은 아직 지원하지 않습니다"
+"에디터 플러그인을 작성하는 것은 가능하지만, 현재로썬 상당히 복잡합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr ""
+"내보낸 변수를 제외하고, 현재 상태는 핫 리로드 중일 때 저장되고 복원되지 않습"
+"니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
-#, fuzzy
 msgid ""
 "Exporting Mono projects is only supported for desktop platforms (Linux, "
 "Windows and macOS). Android, iOS, HTML5 and UWP are not currently supported "
@@ -17458,22 +17446,25 @@ msgid ""
 "godotengine/godot/issues/20271>`_)."
 msgstr ""
 "Mono 프로젝트를 내보내는 것은 데스크탑 플랫폼 (Linux, 윈도우, 그리고 macOS)"
-"만 지원합니다. HTML5, Android, iOS 그리고 UWP는 현재는 지원하지 않습니다 "
-"(`#18364 comment <https://github.com/godotengine/godot/"
-"issues/18364#issuecomment-406222102>`_)"
+"만 지원합니다. Android, iOS, HTML5 그리고 UWP는 현재는 지원하지 않습니다 "
+"(`#20267 <https://github.com/godotengine/godot/issues/20267>`_, `#20268 "
+"<https://github.com/godotengine/godot/issues/20268>`_ `#20270 <https://"
+"github.com/godotengine/godot/issues/20270>`_ `#20271 <https://github.com/"
+"godotengine/godot/issues/20271>`_)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
+"첨부된 C# 스크립트가 파일 이름과 일치하는 클래스 이름을 가진 클래스를 참조해"
+"야 합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
 msgid "Performance of C# in Godot"
 msgstr "Godot에서 C#의 퍼포먼스"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
-#, fuzzy
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
 "bunnymark>`_, the performance of C# in Godot — while generally in the same "
@@ -17484,40 +17475,36 @@ msgid ""
 "when talking to Godot."
 msgstr ""
 "일부 예비  `벤치마크 <https://github.com/cart/godot3-bunnymark>`_\\ 에 따르"
-"면, Godot에서 C#의 퍼포먼스는 - 일반적으로 같은 순서의 크기에서 - 순수한 경우"
-"에서 대략 GDScript의 **~4x**\\ 입니다. 전체 퍼포먼스에서는, C++이 아직 조금 "
-"더 빠릅니다; 하지만 세부 사항은 사용하는 경우에 따라 다릅니다. GDScript는 대"
-"부분의 일반적인 스크립팅 작업에 충분히 빠릅니다. C#이 더 빠르지만, Godot에 대"
-"화하려면 마샬링이 필요합니다."
+"면, Godot에서 C#의 퍼포먼스는 — 일반적으로 같은 순서의 크기에서 — 순수한 경우"
+"에서 대략 GDScript의 **~4x**\\ 입니다. C++이 아직 조금 더 빠릅니다; 하지만 세"
+"부 사항은 사용하는 경우에 따라 다릅니다. GDScript는 대부분의 일반적인 스크립"
+"팅 작업에 충분히 빠릅니다. C#이 더 빠르지만, Godot에 대화하려면 마샬링이 필요"
+"합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:226
-#, fuzzy
 msgid "Using NuGet packages in Godot"
-msgstr "Godot에서 Nuget 패키지 사용하기"
+msgstr "Godot에서 NuGet 패키지 사용하기"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
-#, fuzzy
 msgid ""
 "`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
 "Godot, as with any C# project. Many IDEs are able to add packages directly. "
 "They can also be added manually by adding the package reference in the ``."
 "csproj`` file located in the project root:"
 msgstr ""
-"`Nuget <https://www.nuget.org/>`_ 패키지를 설치하여 프로젝트처럼, Godot와 사"
-"용할 수 있습니다. (vs 코드와 같은) 많은 IDE는 직접 패키지를 추가할 수 있습니"
-"다. 또한 프로젝트 루트에 있는 ``.csproj`` 파일에 패키지 참조를 수동으로 추가"
-"할 수 있습니다:"
+"`NuGet <https://www.nuget.org/>`_ 패키지를 설치하여 프로젝트처럼, Godot와 사"
+"용할 수 있습니다. 많은 IDE는 직접 패키지를 추가할 수 있습니다. 또한 프로젝트 "
+"루트에 있는 ``.csproj`` 파일에 패키지 참조를 수동으로 추가할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:243
-#, fuzzy
 msgid ""
 "Whenever packages are added or modified, run ``nuget restore`` in the root "
 "of the project directory. To ensure that NuGet packages will be available "
 "for msbuild to use, run:"
 msgstr ""
-"패키지가 추가되고 수정될 때마다,프로젝트 디렉토리 루트에서 nuget restore를 실"
-"행하여, msbuild가 사용하고 실행하기 위한 nuget 패키지를 이용할 수 있도록 합니"
-"다::"
+"패키지가 추가되고 수정될 때마다, 프로젝트 디렉토리 루트에서 ``nuget restore``"
+"\\ 를 실행하여, msbuild가 사용하고 실행하기 위한 NuGet 패키지를 이용할 수 있"
+"도록 합니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
@@ -17709,13 +17696,12 @@ msgid "General differences"
 msgstr "일반적인 차이점"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:11
-#, fuzzy
 msgid ""
 "As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
 "instead of the ``snake_case`` used in GDScript and C++."
 msgstr ""
 ":ref:`doc_c_sharp`\\ 에서 설명했듯이, C#은 GDScript와 C++에서 ``snake_case``"
-"\\ 를 쓰는 대신 ``PascalCase``\\ 를 사용합니다."
+"\\ 가 아닌 ``PascalCase``\\ 를 사용합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:15
@@ -17728,41 +17714,44 @@ msgid ""
 "does not allow declaring them in namespaces. Most global constants were "
 "moved to their own enums."
 msgstr ""
+"글로벌 함수와 일부 상수는, C#이 네임 스페이스에서 선언하지 않기 때문에 클래스"
+"로 이동되어야 합니다. 대부분의 글로벌 상수는 자신의 이넘으로 이동합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:24
 msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
+"글로벌 상수는 자신의 이넘으로 이동합니다. 예를 들어, ``ERR_*`` 상수는 "
+"``Error`` 이넘으로 이동합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
-#, fuzzy
 msgid "Special cases:"
-msgstr "사용 사례"
+msgstr "특수 경우:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``SPKEY``"
-msgstr ""
+msgstr "``SPKEY``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``GD.SpKey``"
-msgstr ""
+msgstr "``GD.SpKey``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``TYPE_*``"
-msgstr ""
+msgstr "``TYPE_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``Variant.Type`` enum"
-msgstr ""
+msgstr "``Variant.Type`` 이넘"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``OP_*``"
-msgstr ""
+msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``Variant.Operator`` enum"
-msgstr ""
+msgstr "``Variant.Operator`` 이넘"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
 #, fuzzy
@@ -57632,13 +57621,15 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:4
 msgid "AR/VR primer"
-msgstr ""
+msgstr "AR/VR 입문서"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:6
 msgid ""
 "This tutorial gives you a springboard into the world of AR and VR in the "
 "Godot game engine."
 msgstr ""
+"이 튜토리얼은 Godot 게임 엔진에서 AR과 VR의 세계로 가도록 도와주는 발판이 될 "
+"것입니다."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:8
 msgid ""
@@ -57652,10 +57643,17 @@ msgid ""
 "documented on the relevant interfaces and fall outside of the scope of this "
 "primer."
 msgstr ""
+"Godot 3부터 AR/VR Server라고 하는 새로운 아키텍처가 도입됬습니다. 이 아키텍처"
+"를 기반으로 하여, 특정 구현을 인터페이스로 이용할 수 있게 되었습니다. 대부분"
+"은 GDNative로 만들어진 플러그인입니다. 이 튜토리얼은 순수히 핵심 아키텍처에 "
+"의해 추상화된 핵심 요소에 초점을 둘 것입니다. 이 아키텍처는 다양한 인터페이스"
+"로 배포되면서 모든 VR 경험을 만들기에 충분한 기능을 갖고 있습니다. 하지만 각 "
+"플랫폼은 추상화하기에 불가능한 독특한 기능을 갖고 있습니다. 그런 기능은 입문"
+"서의 영역을 벗어나는 것이므로 관련 인터페이스에서 서술하겠습니다."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:12
 msgid "AR/VR server"
-msgstr ""
+msgstr "AR/VR 서버"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:14
 msgid ""
@@ -57664,6 +57662,9 @@ msgid ""
 "added to the list of GDNative singletons in your project, they will make "
 "themselves known to the server."
 msgstr ""
+"Godot를 실행하면, 사용 가능한 각 인터페이스는 AR/VR 서버에 알려집니다. "
+"GDNative 인터페이스는 싱글톤으로 설정됩니다; 인터페이스가 프로젝트의 "
+"GDNative 싱글톤 목록에 추가되는 만큼, 서버로 알려질 것입니다."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:16
 msgid ""
@@ -57676,11 +57677,17 @@ msgid ""
 "It is also available in the Godot core and outputs to screen on desktop, "
 "which makes it ideal for prototyping or a tutorial such as this one."
 msgstr ""
+"이용 가능한 인터페이스 목록을 반환하기 위해선 함수 :ref:`get_interfaces() "
+"<class_ARVRServer_method_get_interfaces>`\\ 를 사용할 수 있습니다, 하지만 이 "
+"튜토리얼에서, 예제를 위해 :ref:`네이티브 모바일 VR 인터페이스 "
+"<class_MobileVRInterface>`\\ 를 사용하겠습니다. 이 인터페이스는 폰에서 3DOF"
+"를 사용해 입체 이미지를 화면에 출력하도록 하는 간단한 구현입니다. 또한 Godot "
+"코어로 데스크톱에서 화면을 출력할 수 있으므로, 프로토타입을 만들거나 이것과 "
+"같은 튜토리얼을 하기에 이상적입니다."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:18
-#, fuzzy
 msgid "To enable an interface, you execute the following code:"
-msgstr "적 씬은 다음 노드들을 사용할 것입니다:"
+msgstr "인터페이스를 활성화하기 위해, 다음 코드를 실행합니다:"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:35
 msgid ""
@@ -57689,6 +57696,10 @@ msgid ""
 "some control over the viewport to the interface, which automatically enables "
 "things like stereoscopic rendering on the viewport."
 msgstr ""
+"이 코드는 우리가 사용하고자 하는 인터페이스를 찾아 초기화합니다, 그리고 완료"
+"되면 메인 뷰포트를 인터페이스에 제한합니다. 마지막 단계에서는 뷰포트에서 인터"
+"페이스를 제어하여 뷰포트에 입체 렌더링과 같은 것을 자동으로 활성화하도록 할 "
+"것입니다."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:37
 msgid ""
@@ -57700,6 +57711,11 @@ msgid ""
 "the left eye, while showing the fully processed stereoscopic output on the "
 "device."
 msgstr ""
+"모바일 VR 인터페이스나, 화면에 주요 입력이 보여지는 인터페이스의 경우, 메인 "
+"뷰포트는 arvr이 true로 설정되어 있어야 합니다. 하지만 외부에 부착된 기기에 렌"
+"더링을 하는 인터페이스에는, 보조 뷰포트를 사용할 수 있습니다. 후자의 경우, 기"
+"기에서 완전히 처리된 입체 영상을 출력하지만, 화면에 표시하는 뷰포트는 왜곡되"
+"지 않은 왼쪽 눈 장면을 보여줄 것입니다."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:39
 msgid ""
@@ -57709,44 +57725,57 @@ msgid ""
 "to false on the viewport. In most scenarios though, you wouldn't disable the "
 "headset once you're in VR, this can be disconcerting to the gamer."
 msgstr ""
+"마지막으로, 인터페이스를 한번만 초기화해야 합니다; 씬을 바꾸고 인터페이스를 "
+"다시 초기화하면 많은 부담이 발생합니다. 헤드셋을 일시적으로 끄려면, 뷰포트를 "
+"비활성화하거나 뷰포트에서 arvr을 false로 설정하세요."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:42
 msgid "New AR/VR nodes"
-msgstr ""
+msgstr "새로운 AR/VR 노드"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:44
 msgid ""
 "Three new node types have been added for supporting AR and VR in Godot and "
 "one additional node type especially for AR. These are:"
 msgstr ""
+"Godot에서 AR과 VR을 지원하기 위해 세가지 새로운 노드 타입이 추가되었고 AR만"
+"을 위한 추가적인 노드 타입 한 가지가 추가되었습니다. 다음과 같습니다:"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:46
 msgid ":ref:`ARVROrigin <class_ARVROrigin>` - our origin point in the world"
-msgstr ""
+msgstr ":ref:`ARVROrigin <class_ARVROrigin>` - 월드에서 원점"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:47
 msgid ""
 ":ref:`ARVRCamera <class_ARVRCamera>` - a special subclass of the camera, "
 "which is positionally tracked"
 msgstr ""
+":ref:`ARVRCamera <class_ARVRCamera>` - 위치 추적이 가능한 카메라의 특수 하위 "
+"클래스"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:48
 msgid ""
 ":ref:`ARVRController <class_ARVRController>` - a new spatial class, which "
 "tracks the location of a controller"
 msgstr ""
+":ref:`ARVRController <class_ARVRController>` - 컨트롤러의 위치를 추적하는 새"
+"로운 Spatial 클래스"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:49
 msgid ""
 ":ref:`ARVRAnchor <class_ARVRAnchor>` - an anchor point for an AR "
 "implementation mapping a real world location into your virtual world"
 msgstr ""
+":ref:`ARVRAnchor <class_ARVRAnchor>` - 실제 세상 위치를 가상 세계에 매핑하는 "
+"AR 구현을 위한 기준점"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:51
 msgid ""
 "The first two must exist in your scene for AR/VR to work and this tutorial "
 "focuses purely on them."
 msgstr ""
+"AR/VR을 위해선 앞의 두 개가 씬에 있어야 하고 이 튜토리얼 역시 이 둘에 초점을 "
+"두고 있습니다."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:53
 msgid ""
@@ -57762,6 +57791,13 @@ msgid ""
 "HMD is tracked in relation to this center position and the tracking is "
 "mirror in the virtual world."
 msgstr ""
+":ref:`ARVROrigin <class_ARVROrigin>`\\ 은 중요한 노드로, 씬 어딘가에 반드시 "
+"있어야 합니다. 이 노드는 실제 세상의 중심을 가상 세상의 한 위치에 매핑합니"
+"다. 다른 모든 것들은 이 점으로 위치를 추적합니다. 이 점이 하나의 구현에서 다"
+"른 구현으로는 다르지만, 이 노드가 작동하는 방식을 이해하기 위한 최선의 예는 "
+"방 규모 장소를 살펴보는 것입니다. 기본적으로 플레이어를 중심으로 점이 조정되"
+"지만, 원점은 당신이 있는 방의 중심에 있게 됩니다. 물리적으로 방을 돌어다니면 "
+"HMD의 위치는 중심점에 따라 추적하고 이는 가상 세계에 반영됩니다."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:55
 msgid ""

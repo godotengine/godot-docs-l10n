@@ -30,6 +30,7 @@
 # Gilles Roudiere <gilles.roudiere@gmail.com>, 2018.
 # Guillaume Roy <minone.roy@free.fr>, 2018-2019.
 # Hasenn <eliottarloveyrier@live.fr>, 2018.
+# Hugo Locurcio <hugo.locurcio@hugo.pro>, 2019.
 # Jean-François Michaud <jfmichaud31@gmail.com>, 2018.
 # Jean Poree <0mindstorming@gmail.com>, 2018.
 # Jérôme Bignon <iphonejeromebignon@gmail.com>, 2018.
@@ -78,8 +79,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-01 14:18+0100\n"
-"PO-Revision-Date: 2019-03-01 12:06+0000\n"
-"Last-Translator: Caye Pierre <pierrecaye@laposte.net>\n"
+"PO-Revision-Date: 2019-03-07 08:20+0000\n"
+"Last-Translator: Hugo Locurcio <hugo.locurcio@hugo.pro>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -87,7 +88,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Weblate 3.5.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -775,7 +776,6 @@ msgid "What is GDScript and why should I use it?"
 msgstr "Qu'est-ce que le GDScript et pourquoi devrais-je l'utiliser ?"
 
 #: ../../docs/about/faq.rst:90
-#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -786,12 +786,13 @@ msgid ""
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
 "GDScript est le langage de scripting intégré à Godot. Il a été conçu à "
-"partir de zéro pour être expressif, permettant aux développeuses et "
-"développeurs de tous niveaux d'expertise de s'appuyer sur les atouts de "
-"Godot aussi vite que possible. Si vous avez déjà utilisé Python ou un "
-"langage similaire auparavant, vous devriez vous y retrouver rapidement. Des "
-"exemples, l'historique et un aperçu complet de la puissance offerte par "
-"GDScript sont disponibles dans le `manuel GDScript <gdscript_basics>`_."
+"partir de zéro afin de maximiser le potentiel de Godot en un minimum de "
+"code, permettant aux développeuses et développeurs de tous niveaux "
+"d'expertise de s'appuyer sur les atouts de Godot aussi vite que possible. Si "
+"vous avez déjà utilisé Python ou un langage similaire auparavant, vous "
+"devriez vous y retrouver rapidement.  Pour exemples, l’histoire et une "
+"présentation complète de la puissance offerte par GDScript sont disponibles "
+"dans le `manuel GDScript <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -3485,9 +3486,9 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
-"Godot fournit une fonctionnalité \"Script Class\" permettant d'enregistrer "
-"des scripts depuis l'éditeur. Par défaut, l'accès aux scripts anonymes n'est "
-"possible qu'en chargeant le fichier directement."
+"Godot fournit une fonctionnalité \"Script Class\", permettant d'enregistrer "
+"des scripts individuels avec l'éditeur. Par défaut, l'accès aux scripts "
+"anonymes n'est possible qu'en chargeant le fichier directement."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:395
 msgid ""
@@ -3534,7 +3535,7 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
-"Les signaux sont la version de Godot du modèle d'observateur. Ils permettent "
+"Les signaux sont la version de Godot du modèle d'*observer*. Ils permettent "
 "à un nœud d'envoyer un message que les autres nœuds peuvent écouter et "
 "auquel ils peuvent répondre. Par exemple, au lieu de vérifier en continu si "
 "un bouton est appuyé, le bouton peut émettre un signal lorsqu'il est appuyé."
@@ -7469,7 +7470,6 @@ msgstr ""
 "placés à côté de celui-ci"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
@@ -7477,9 +7477,8 @@ msgid ""
 msgstr ""
 "Dans l'arborescence des nœuds, sélectionnez tous les nœuds ``TextureRect`` "
 "qui doivent aller sur le côté gauche : le logo, les options de menu et la "
-"note de version. Faites un glissé-déposé dans le ``VBoxContainer``. Ensuite, "
-"faites glisser le nœud d'illustration dans le ``CenterContainer``. Les nœuds "
-"devraient se positionner automatiquement."
+"note de version. Faites un glissé-déposé dans le ``VBoxContainer``. Les "
+"nœuds doivent se positionner automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
 msgid "Containers automatically place and resize textures"
@@ -7498,7 +7497,6 @@ msgid "There's no space between the logo and the other UI elements"
 msgstr "Il n'y a pas d'espace entre le logo et les autres élements de l'UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the ``Size Flags`` category and click "
@@ -7509,13 +7507,14 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
-"Pour centrer les caractères à droite, nous utiliserons un "
-"``CenterContainer``.  Ajoutez un noeud ``CenterContainer`` comme enfant du "
-"``HBoxContainer``. Ensuite, dans l'inspecteur, faites défiler vers le bas "
-"jusqu'à la catégorie \" Size Flags \" et cliquez sur le champ à droite de la "
-"propriété \" Vertical \", et cochez \" Développer \". Faites de même pour la "
-"propriété \"Horizontal\". Enfin, glissez et déposez les Characters dans le "
-"``CenterContainer``. Les éléments Characters se centre automatiquement."
+"Pour centrer les caractères à droite, sélectionnez d'abord le "
+"``CenterContainer``. Ensuite, dans l'inspecteur, faites défiler vers le bas "
+"jusqu'à la catégorie ``Size Flags`` et cliquez sur le champ à droite de la "
+"propriété ``Vertical``, et cochez ``Expand`` en plus de ``Fill``. Faites de "
+"même pour la propriété ``Horizontal``. Cela permet au ``CenterContainer`` de "
+"s'étendre dans tout l'espace disponible tout en respectant son voisin "
+"``VBoxContainer``. Enfin, glissez-déposez le nœud Characters dans le "
+"``CenterContainer``. L'élément Characters se centre automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid ""
@@ -8466,7 +8465,7 @@ msgstr "Sans aucun autre changement, votre barre est prête à être utilisé"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
 msgid "Use scene inheritance to create the remaining elements"
-msgstr "Utiliser l'héritage de scène pour créer les éléments restants"
+msgstr "Utilisez l'héritage de scène pour créer les éléments restants"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
 msgid ""
@@ -14526,10 +14525,11 @@ msgid ""
 "below it."
 msgstr ""
 "Les expressions sont comparées du haut vers le bas. Si une expression "
-"correspond, le bloc de code correspondant sera exécuté. Ensuite, l’exécution "
-"continuera après le bloc d'instructions ``match``, ignorant les comparaisons "
-"suivantes. Si vous voulez tout de même poursuivre l’exécution de ``match`` "
-"et passer à la comparaison suivante, vous pouvez utiliser ``continue``."
+"correspond au modèle, le bloc de code correspondant sera exécuté. Après "
+"cela, l’exécution continuera après le bloc d'instructions ``match``, "
+"ignorant les comparaisons suivantes. Si vous voulez tout de même poursuivre "
+"l’exécution de ``match`` et passer à la comparaison suivante, vous pouvez "
+"utiliser ``continue``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:878
 msgid "There are 6 pattern types:"
@@ -14595,8 +14595,8 @@ msgid ""
 "matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
 msgstr ""
-"Elle correspond à un tableau. Chaque élément de l'expression de tableau est "
-"lui-même une expression, de sorte que vous pouvez les imbriquer."
+"Elle correspond à un tableau. Chaque élément du modèle de tableau est un "
+"modèle lui-même, de sorte que vous pouvez les imbriquer."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:934
 msgid ""
@@ -19075,13 +19075,12 @@ msgid "General differences"
 msgstr "Différences générales"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:11
-#, fuzzy
 msgid ""
 "As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
 "instead of the ``snake_case`` used in GDScript and C++."
 msgstr ""
 "Comme expliqué dans le :ref:`doc_c_sharp`, C# utilise généralement "
-"``PascalCase`` à la place du ``snake_case`` dans GDScript et C++."
+"``PascalCase`` à la place du ``snake_case`` utilisé dans GDScript et C++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:15
@@ -19094,111 +19093,110 @@ msgid ""
 "does not allow declaring them in namespaces. Most global constants were "
 "moved to their own enums."
 msgstr ""
+"Les fonctions globales et certaines constantes ont dû être déplacées dans "
+"des classes, puisque C# ne permet pas de les déclarer dans les espaces de "
+"noms. La plupart des constantes globales ont été déplacées dans leurs "
+"propres énumérations."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:24
 msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
+"Les constantes globales ont été déplacées dans leurs propres énumérations. "
+"Par exemple, les constantes ``ERR_*`` ont été déplacées dans l'énumération "
+"``Error``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
-#, fuzzy
 msgid "Special cases:"
-msgstr "Shaders spatiaux"
+msgstr "Cas particuliers :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``SPKEY``"
-msgstr ""
+msgstr "``SPKEY``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``GD.SpKey``"
-msgstr ""
+msgstr "``GD.SpKey``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``TYPE_*``"
-msgstr ""
+msgstr "``TYPE_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``Variant.Type`` enum"
-msgstr ""
+msgstr "``Variant.Type`` enum"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``OP_*``"
-msgstr ""
+msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``Variant.Operator`` enum"
-msgstr ""
+msgstr "``Variant.Operator`` enum"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
-#, fuzzy
 msgid "Math functions"
-msgstr "Fonctions statiques"
+msgstr "Fonctions mathématiques"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:40
-#, fuzzy
 msgid ""
 "Math global functions, like ``abs``, ``acos``, ``asin``, ``atan`` and "
 "``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
 "``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
 msgstr ""
 "Les fonctions mathématiques telles que ``abs``, ``acos``, ``asin``, ``atan`` "
-"et ``atan2`` sont situées sous ``Mathf`` : ``Abs``, ``Acos``, ``Asin``, "
-"``Atan`` and ``Atan2``au lieu de la portée globale. ``PI`` est ``Mathf.PI``"
+"et ``atan2`` sont situées dans ``Mathf`` : ``Abs``, ``Acos``, ``Asin``, "
+"``Atan`` and ``Atan2``. La constante ``PI`` peut être trouvée dans ``Mathf."
+"PI``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
-#, fuzzy
 msgid "Random functions"
-msgstr "Fonctions de transformation"
+msgstr "Fonctions aléatoires"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:47
-#, fuzzy
 msgid ""
 "Random global functions, like ``rand_range`` and ``rand_seed``, are located "
 "under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
 msgstr ""
-"Les fonctions aléatoires comme ``rand_range`` et ``rand_seed`` sont situées "
-"sous ``Random``, donc utilisez ``Random.RandRange`` au lieu de "
-"``rand_range``."
+"Les fonctions globales aléatoires, comme ``rand_range`` et ``rand_seed``, se "
+"trouvent sous \"GD\". Exemple : ``GD.RandRange``et ``GD.RandSeed``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
-#, fuzzy
 msgid "Other functions"
-msgstr "Fonction d'arc"
+msgstr "Autres fonctions"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:53
-#, fuzzy
 msgid ""
 "Many other global functions like ``print`` and ``var2str`` are located under "
 "``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
 msgstr ""
-"Les fonctions globales comme ``print``, ``var2str`` et ``weakref`` sont "
-"situées sous ``GD`` en C#."
+"Beaucoup d'autres fonctions globales comme ``print`` et ``var2str`` se "
+"trouvent sous ``GD```. Exemple : ``GD.Print``et ``GD.Var2Str``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:56
-#, fuzzy
 msgid "Exceptions:"
-msgstr "Options d'exportation"
+msgstr "Exceptions :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``weakref(obj)``"
-msgstr ""
+msgstr "``weakref(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``Object.WeakRef(obj)``"
-msgstr ""
+msgstr "``Object.WeakRef(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
 msgid "``is_instance_valid(obj)``"
-msgstr ""
+msgstr "``is_instance_valid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
 msgid "``Object.IsInstanceValid(obj)``"
-msgstr ""
+msgstr "``Object.IsInstanceValid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:66
 msgid "Tips"
-msgstr ""
+msgstr "Conseils"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:68
 msgid ""
@@ -19206,6 +19204,9 @@ msgid ""
 "directive allows to access the members and nested types of a class without "
 "specifying the class name."
 msgstr ""
+"Parfois, il peut être utile d'utiliser la directive ``using static``. Cette "
+"directive permet d'accéder aux membres et aux types imbriqués d'une classe "
+"sans spécifier le nom de la classe."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:90
@@ -19220,7 +19221,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:250
 #: ../../docs/community/contributing/code_style_guidelines.rst:150
 msgid "Example:"
-msgstr ""
+msgstr "Exemple :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:86
 msgid "Export keyword"
@@ -19237,15 +19238,14 @@ msgid "Signal keyword"
 msgstr "Mot-clé de signal"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:105
-#, fuzzy
 msgid ""
 "Use the ``[Signal]`` attribute to declare a signal instead of the GDScript "
 "``signal`` keyword. This attribute should be used on a `delegate`, whose "
 "name signature will be used to define the signal."
 msgstr ""
-"Utilisez l'attribut ``[Signal]`` au lieu du mot-clé ``signal`` dans "
-"GDScript . Cet attribut doit être utilisé sur une `delegate`, dont la "
-"signature du nom sera utilisée pour définir le signal."
+"Utilisez l'attribut ``[Signal]`` pour déclarer un signal au lieu du mot-clé "
+"GDScript ``signal``. Cet attribut doit être utilisé sur un `delegate`, dont "
+"la signature de nom sera utilisée pour définir le signal."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:113
 msgid "See also: :ref:`c_sharp_signals`"
@@ -19256,15 +19256,14 @@ msgid "Singletons"
 msgstr "Singletons"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:118
-#, fuzzy
 msgid ""
 "Singletons are available as static classes rather than using the singleton "
 "pattern. This is to make code less verbose than it would be with an "
 "``Instance`` property."
 msgstr ""
 "Les singletons fournissent des méthodes statiques plutôt que d'utiliser le "
-"patron singleton en C#. Ceci permet de rendre le code moins verbeux et "
-"similaire à GDScript. Exemple :"
+"patron singleton. C'est pour rendre le code moins verbeux qu'il ne le serait "
+"avec une propriété ``Instance``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid ""
@@ -19274,6 +19273,11 @@ msgid ""
 "``Singleton`` that returns the singleton instance. The type of this instance "
 "is ``Godot.Object``."
 msgstr ""
+"Cependant, dans certains cas très rares, ce n'est pas suffisant. Par "
+"exemple, vous pouvez accéder à un membre de la classe de base ``Godot."
+"Object``, comme ``Connect``. Pour l'utilisation de tels cas, nous "
+"fournissons une propriété statique nommée ``Singleton`` qui retourne "
+"l'instance du singleton. Le type de cette instance est ``Godot.Object``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
@@ -19283,14 +19287,13 @@ msgid "String"
 msgstr "Chaîne de caractères"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:141
-#, fuzzy
 msgid ""
 "Use ``System.String`` (``string``). Most of Godot's String methods are "
 "provided by the ``StringExtensions`` class as extension methods."
 msgstr ""
-"Utilisez ``System.String`` (``string``). Toutes les méthodes Godot de "
-"chaînes de caractères sont fournies par la classe ``StringExtensions`` comme "
-"méthodes d'extension. Exemple :"
+"Utilisez ``System.String`` (``string``). La plupart des méthodes String de "
+"Godot sont fournies par la classe ``StringExtensions'' comme méthodes "
+"d'extension."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:151
 msgid "There are a few differences, though:"
@@ -19354,15 +19357,13 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:206
-#, fuzzy
 msgid "``get_scale()``"
-msgstr "get_scale()"
+msgstr "``get_scale()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:206
-#, fuzzy
 msgid "``Scale``"
-msgstr "Scale"
+msgstr "``Scale``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:194
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:157
@@ -19390,14 +19391,12 @@ msgstr ""
 "respectifs modifiés :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
-#, fuzzy
 msgid "``get_rotation()``"
-msgstr "get_rotation()"
+msgstr "``get_rotation()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
-#, fuzzy
 msgid "``Rotation``"
-msgstr "Rotation"
+msgstr "``Rotation``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:210
 msgid "Plane"
@@ -19412,14 +19411,12 @@ msgstr ""
 "différent :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
-#, fuzzy
 msgid "``center()``"
-msgstr "center()"
+msgstr "``center()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
-#, fuzzy
 msgid "``Center``"
-msgstr "Center"
+msgstr "``Center``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:221
 msgid "Rect2"
@@ -19435,21 +19432,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``end``"
-msgstr ""
+msgstr "``end``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``End``"
-msgstr ""
+msgstr "``End``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:236
-#, fuzzy
 msgid "``get_area()``"
-msgstr "get_area()"
+msgstr "``get_area()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:236
-#, fuzzy
 msgid "``Area``"
-msgstr "Area"
+msgstr "``Area``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:240
 msgid "Quat"
@@ -19467,135 +19462,121 @@ msgstr ""
 "``Quat()``en GDScript et C++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:246
-#, fuzzy
 msgid ""
 "The following methods were converted to a property with a different name:"
 msgstr ""
-"La méthode suivante a été convertie en une propriété avec un nom différent :"
+"Les méthodes suivantes ont été converties en une propriété avec un nom "
+"différent :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
 msgid "``length()``"
-msgstr ""
+msgstr "``length()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
-#, fuzzy
 msgid "``Length``"
-msgstr "``$NodePath``"
+msgstr "``Length``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
 msgid "``length_squared()``"
-msgstr ""
+msgstr "``length_squared()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
 msgid "``LengthSquared``"
-msgstr ""
+msgstr "``LengthSquared``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:258
-#, fuzzy
 msgid ""
 "*This is temporary. PoolArrays will need their own types to be used the way "
 "they are meant to.*"
 msgstr ""
-"*Ceci est temporaire. Array est compté par référence, il aura donc besoin de "
-"son propre type qui englobe le côté natif. Les PoolArrays auront également "
-"besoin de leur propre type pour être utilisés de la manière à laquelle ils "
-"sont destinés.*"
+"*C'est temporaire. Les PoolArrays auront besoin de leurs propres types pour "
+"être utilisés de la manière à laquelle ils sont destinés.*"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
-#, fuzzy
 msgid "``Array``"
-msgstr "Tableau"
+msgstr "``Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``Godot.Array``"
-msgstr ""
+msgstr "``Godot.Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
-#, fuzzy
 msgid "``PoolIntArray``"
-msgstr "PoolIntArray"
+msgstr "``PoolIntArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
-#, fuzzy
 msgid "``int[]``"
-msgstr "``in``"
+msgstr "``int[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:265
-#, fuzzy
 msgid "``PoolByteArray``"
-msgstr "PoolByteArray"
+msgstr "``PoolByteArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:265
-#, fuzzy
 msgid "``byte[]``"
-msgstr "byte[]"
+msgstr "``byte[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:266
-#, fuzzy
 msgid "``PoolFloatArray``"
-msgstr "PoolFloatArray"
+msgstr "``PoolFloatArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:266
-#, fuzzy
 msgid "``float[]``"
-msgstr "float[]"
+msgstr "``float[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
-#, fuzzy
 msgid "``PoolStringArray``"
-msgstr "PoolStringArray"
+msgstr "``PoolStringArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
-#, fuzzy
 msgid "``String[]``"
-msgstr "String[]"
+msgstr "``String[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:268
-#, fuzzy
 msgid "``PoolColorArray``"
-msgstr "PoolColorArray"
+msgstr "``PoolColorArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:268
-#, fuzzy
 msgid "``Color[]``"
-msgstr "Color[]"
+msgstr "``Color[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
-#, fuzzy
 msgid "``PoolVector2Array``"
-msgstr "PoolVector2Array"
+msgstr "``PoolVector2Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
-#, fuzzy
 msgid "``Vector2[]``"
-msgstr "Vector2[]"
+msgstr "``Vector2[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:270
-#, fuzzy
 msgid "``PoolVector3Array``"
-msgstr "PoolVector3Array"
+msgstr "``PoolVector3Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:270
-#, fuzzy
 msgid "``Vector3[]``"
-msgstr "Vector3[]"
+msgstr "``Vector3[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:273
 msgid ""
 "``Godot.Array<T>`` is a type-safe wrapper around ``Godot.Array``. Use the "
 "``Godot.Array<T>(Godot.Array)`` constructor to create one."
 msgstr ""
+"``Godot.Array<T>T>`` est une encapsule de type sécurisé autour de ``Godot."
+"Array``. Utilisez le constructeur ``Godot.Array<T>(Godot.Array)`` pour en "
+"créer une."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
-#, fuzzy
 msgid "Use ``Godot.Dictionary``."
-msgstr "Utilisez ``Dictionary<object, object>``."
+msgstr "Utilisez ``Godot.Dictionary``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid ""
 "``Godot.Dictionary<T>`` is a type-safe wrapper around ``Godot.Dictionary``. "
 "Use the ``Godot.Dictionary<T>(Godot.Dictionary)`` constructor to create one."
 msgstr ""
+"``Godot.Dictionary <T>`` est une encapsule de type sécurisé ``Godot."
+"Dictionary``. Utilisez le constructeur ``Godot.Dictionary <T>(Godot."
+"Dictionary)`` pour en créer un."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:285
 msgid "Variant"
@@ -19610,16 +19591,15 @@ msgid "Communicating with other scripting languages"
 msgstr "Communiquer avec d'autres langages de script"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:292
-#, fuzzy
 msgid ""
 "The methods ``object Object.Call(string method, params object[] args)``, "
 "``object Object.Get(string field)`` and ``object Object.Set(string field, "
 "object value)`` are provided to communicate with instances of other "
 "scripting languages via the Variant API."
 msgstr ""
-"Les méthodes ``object Object.call(string method, params object[] args)``, "
-"``object Object.get(string field)`` et ``object Object.set(string field, "
-"object value)`` sont prévues pour communiquer avec les instances d'autres "
+"Les méthodes ``object Object.Call(string method, params object[] args)``, "
+"``object Object.Get(string field)`` et ``object Object.Set(string field, "
+"object value)`` sont fournies pour communiquer avec les instances d'autres "
 "langages de script via l'API Variant."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:300
@@ -19628,12 +19608,17 @@ msgid ""
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield>`_."
 msgstr ""
+"Quelque chose de similaire à ``yield`` de GDScript avec un seul paramètre "
+"peut être réalisé avec le mot-clé `yield <https://docs.microsoft.com/en-US/"
+"dotnet/csharp/language-reference/keywords/yield>`_ de C#."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
 msgstr ""
+"L'équivalent de yield sur un signal peut être obtenu avec async/await et "
+"``Godot.Object.ToSignal``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:313
 msgid "Other differences"
@@ -19644,56 +19629,49 @@ msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
+"``preload```, comme il fonctionne en GDScript, n'est pas disponible en C#. "
+"Utilisez ``GD.Load``` ou ``ResourceLoader.Load`` à la place."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Other differences:"
 msgstr "Autres différences :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
-#, fuzzy
 msgid "``Color8``"
-msgstr "Color8"
+msgstr "``Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
-#, fuzzy
 msgid "``Color.Color8``"
-msgstr "Color.Color8"
+msgstr "``Color.Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:324
-#, fuzzy
 msgid "``is_inf``"
-msgstr "is_inf"
+msgstr "``is_inf``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:324
-#, fuzzy
 msgid "``float.IsInfinity``"
-msgstr "float.IsInfinity"
+msgstr "``float.IsInfinity``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:325
-#, fuzzy
 msgid "``is_nan``"
-msgstr "is_nan"
+msgstr "``is_nan``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:325
-#, fuzzy
 msgid "``float.IsNaN``"
-msgstr "float.IsNaN"
+msgstr "``float.IsNaN``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
-#, fuzzy
 msgid "``dict2inst``"
-msgstr "dict2inst"
+msgstr "``dict2inst``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:327
-#, fuzzy
 msgid "TODO"
-msgstr "? TODO"
+msgstr "TODO"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:327
-#, fuzzy
 msgid "``inst2dict``"
-msgstr "inst2dict"
+msgstr "``inst2dict``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:4
 msgid "C# style guide"
@@ -20361,9 +20339,8 @@ msgstr ""
 "Blender."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
-#, fuzzy
 msgid "Export of Cycles/EEVEE materials"
-msgstr "Exportation des matériaux depuis Blender"
+msgstr "Exportation de cycles et de matériaux EEEVEE"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
 msgid ""
@@ -20371,24 +20348,30 @@ msgid ""
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
+"L'exportateur dispose d'un support primitif pour convertir l'arborescence "
+"des nœuds de matériaux Cycles/EEVEE en matériau Godot Shader Material. Notez "
+"que certains des Nœuds Shader ne sont pas encore pris en charge en raison de "
+"difficultés de mise en œuvre, qui sont :"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid "all the ``noisy textures``"
-msgstr ""
+msgstr "toutes les ``noisy textures``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
 msgid "``generated texture coordinates``"
-msgstr ""
+msgstr "``generated texture coordinates``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
-msgstr ""
+msgstr "``group node``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
+"Nœuds shader sauf ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
+"``add shader`` et ``mix shader``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
 msgid ""
@@ -20396,22 +20379,25 @@ msgid ""
 "output shader node, it is the only one guarantee to be exactly correctly. "
 "Others are just based on approximation."
 msgstr ""
+"Si possible, essayez d'utiliser le nœud PrincipledBSDF avec la distribution "
+"GGX comme nœud shader de sortie, c'est la seule garantie pour être "
+"exactement correct. D'autres sont simplement basées sur l'approximation."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
-#, fuzzy
 msgid ""
 "Sometimes materials may not be valid for exporting (e.g. has some "
 "unsupported node) or it is using Blender Internal Engine, only the diffuse "
 "color and a few flags (e.g. unshaded) are exported and form a Spatial "
 "Material."
 msgstr ""
-"L'autre moyen dont les matériaux sont traités par l'exportateur est de les "
-"exporter depuis Blender. Actuellement, seule la couleur diffuse et quelques "
-"options commutables (par exemple non ombré) sont exportés."
+"Parfois les matériaux peuvent ne pas être valides pour l'exportation (par "
+"exemple a un nœud non supporté) ou il utilise Blender Internal Engine, "
+"seulement la couleur diffuse et quelques drapeaux (par exemple non ombragé) "
+"sont exportés et forment un Spatial Material."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
 msgid "Generate external materials"
-msgstr ""
+msgstr "Générer des matériaux externes"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
 msgid ""
@@ -20419,12 +20405,18 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
+"La configuration par défaut de l'exportation de matériel garde tous les "
+"matériaux internes au fichier ``escn``. Il y a une option qui peut permettre "
+"de générer un fichier externe ``.material`` lorsque le fichier ``escn`` "
+"s'ouvre dans Godot."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
 msgstr ""
+"Le fichier ``.material`` peut être assigné à n'importe quel emplacement "
+"matériel pour être une ressource externe."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:2
 msgid "Physics properties"
@@ -20791,9 +20783,8 @@ msgstr ""
 "la manière d'utiliser cette fonctionnalité :"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
-#, fuzzy
 msgid "**1. Stash active action**"
-msgstr "**2. Cacher l'action active**"
+msgstr "**1. Cacher l'action active**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
 msgid ""
@@ -20801,14 +20792,17 @@ msgid ""
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
+"Une nouvelle action créée est toujours une action active liée à l'objet. Il "
+"y a plusieurs façons de placer une action active dans la piste NLA, l'une "
+"d'elles est bien sûr de le faire dans ``NLA Editor``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
-msgstr ""
+msgstr "Ou on peut le faire en cachant l'action dans ``Dope Sheet``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2. Vérifier l'état de coupure du son des pistes NLA**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -20816,31 +20810,33 @@ msgid ""
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
+"Une piste NLA peut être ``mute`` ou ``unmute``, l'exportateur exportera "
+"toute la piste NLA ``mute`` comme une action séparée, tandis qu'il mélange "
+"toutes les pistes NLA ``unmute`` dans chaque action (y compris l'action "
+"action) qui est exportée."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
-#, fuzzy
 msgid "**3. Export the scene**"
-msgstr "**4. Exporter la scène**"
+msgstr "**3. Exporter la scène**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
 msgstr ""
+"Assurez-vous que l'option ``Exporter les actions cachées`` a été activée."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
-#, fuzzy
 msgid ""
 "Then all the stashed actions, as well as the active action, are exported to "
 "an AnimationPlayer."
 msgstr ""
-"Toutes les actions cachées ainsi que l'action active sont exportées vers un "
-"AnimationPlayer."
+"Ensuite, toutes les actions cachées, ainsi que l'action active, sont "
+"exportées vers un AnimationPlayer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
 msgid "Constraints"
 msgstr "Contraintes"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
-#, fuzzy
 msgid ""
 "Sometimes complicated animation is built with object constraint; a usual "
 "example is inverse kinematics. The add-on would automatically check if an "
@@ -20849,8 +20845,8 @@ msgid ""
 msgstr ""
 "Parfois, une animation compliquée est construite avec une contrainte "
 "d'objet, un exemple classique est la cinématique inverse. L'addon vérifie "
-"automatiquement si un objet a une contrainte, si c'est le cas, toutes les "
-"contraintes sont intégrées à chaque action de l'objet, puis exportées."
+"automatiquement si un objet a une contrainte,  si c'est le cas, toutes les "
+"contraintes sont préparées en actions et ensuite exportées avec l'objet."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
 msgid "Animation Mode"
@@ -27942,6 +27938,10 @@ msgid ""
 "than string comparisons (linear-time). If one wants to keep up other "
 "languages' conventions though, then one should use integers."
 msgstr ""
+"Sur le plan technique, les comparaisons d'entiers (temps-constant) seront "
+"plus rapides que les comparaisons de chaînes (temps-linéaire). Mais si l'on "
+"veut respecter les conventions des autres langues, il faut utiliser des "
+"entiers."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:289
 msgid ""
@@ -27951,6 +27951,12 @@ msgid ""
 "integer enum, one would have to write a Dictionary that maps the "
 "corresponding string value for each enum."
 msgstr ""
+"Le principal soucis lorsqu'on utilise des entiers se produit lorsque l'on "
+"souhaite *afficher* la valeur d'énumération. En tant qu'entier, vouloir "
+"afficher MY_ENUM va en fait afficher ``5`` ou ce-qui-a-été-défini, plutôt "
+"qu'afficher quelque chose du style ``\"MyEnum\"``. Pour afficher un entier "
+"d'énumération, vous devrez écrire un dictionnaire qui recense les chaînes de "
+"caractère qui correspondent à chaque entier."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:295
 msgid ""
@@ -27959,31 +27965,43 @@ msgid ""
 "use them as strings. That way, a separate data structure to execute on the "
 "printing is unnecessary."
 msgstr ""
+"Si l'usage principal de l'énumération est d'afficher des valeurs et que vous "
+"voulez les regrouper selon un concept les liants, alors il fait sens "
+"d'utiliser des chaînes de caractère pour faire cette énumération. De cette "
+"façon il n'est pas nécessaire d'utiliser une structure de donnée annexe."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:301
 msgid ""
 "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 msgstr ""
+"AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
 msgid ""
 "Under what circumstances should one use each of Godot's animation classes? "
 "The answer may not be immediately clear to new Godot users."
 msgstr ""
+"Dans quelles circonstances faut-il utiliser chacune des classes d'animation "
+"de Godot ? La réponse peut ne pas être immédiatement claire pour les "
+"nouveaux utilisateurs de Godot."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:306
 msgid ""
 ":ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that the engine "
 "draws as an animated loop rather than a static image. Users can manipulate..."
 msgstr ""
+"ref:`AnimatedTexture <class_AnimatedTexture>` est une texture que le moteur "
+"dessine comme une boucle animée plutôt que comme une image statique. Les "
+"utilisateurs peuvent manipuler....."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:310
 msgid "the rate at which it moves across each section of the texture (fps)."
 msgstr ""
+"la vitesse à laquelle il se déplace dans chaque section de la texture (fps)."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
 msgid "the number of regions contained within the texture (frames)."
-msgstr ""
+msgstr "le nombre de régions contenues dans la texture (images)."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
 msgid ""
@@ -27992,6 +28010,10 @@ msgid ""
 "extra logic on the part of the engine. The bad news is that users have very "
 "little control."
 msgstr ""
+"ref:`VisualServer <class_VisualServer>` de Godot dessine ensuite les régions "
+"en séquence au rythme prescrit. La bonne nouvelle, c'est que cela n'implique "
+"aucune logique supplémentaire de la part du moteur. La mauvaise nouvelle, "
+"c'est que les utilisateurs ont très peu de contrôle."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:319
 msgid ""
@@ -28003,6 +28025,14 @@ msgid ""
 "`TileMap <class_TileMap>` for many auto-animating backgrounds that all "
 "render in a single batched draw call."
 msgstr ""
+"Notez également que AnimatedTexture est un objet :ref:`Resource "
+"<class_Resource>` contrairement à d'autre objets :ref:`Node <class_Node>` "
+"discutés ici. On peut créer un nœud :ref:`Sprite <class_Sprite>` qui utilise "
+"AnimatedTexture comme texture. Ou (ce que les autres ne peuvent pas faire) "
+"on pourrait ajouter des AnimatedTextures comme tuiles dans un :ref:`TileSet "
+"<class_TileSet>` et l'intégrer avec un :ref:`TileMap <class_TileMap>` pour "
+"de nombreux fonds auto-animés qui sont tous rendus dans un seul appel de "
+"dessin."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:327
 msgid ""
@@ -28012,6 +28042,11 @@ msgid ""
 "speed, regional offset, and orientation. This makes them well-suited to "
 "controlling 2D frame-based animations."
 msgstr ""
+"Le nœud AnimatedSprite, en combinaison avec la ressource :ref:`SpriteFrames "
+"<class_SpriteFrames>`, permet de créer une variété de séquences d’animation "
+"à travers de spritesheets, naviguer entre les animations, et de contrôler "
+"leur vitesse, décalage de frame, et orientation. Ils sont donc bien adaptés "
+"pour contrôler les animations 2D."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:333
 msgid ""
@@ -28021,16 +28056,26 @@ msgid ""
 "use an :ref:`AnimationPlayer <class_AnimationPlayer>` node in conjunction "
 "with the AnimatedSprite."
 msgstr ""
+"Si l'on a besoin de déclencher d'autres effets en relation avec les "
+"changements d'animation (par exemple, créer des effets de particules, "
+"appeler des fonctions ou manipuler d'autres éléments périphériques en plus "
+"de l'animation à base d'images), il faudra alors utiliser un nœud :ref:"
+"`AnimationPlayer <class_AnimationPlayer>` conjointement avec "
+"l'AnimatedSprite."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
 msgid ""
 "AnimationPlayers are also the tool one will need to use if they wish to "
 "design more complex 2D animation systems, such as..."
 msgstr ""
+"AnimationPlayers est également l'outil qu'on devra utiliser afin de créer "
+"des systèmes d'animations plus complexes, tels que..."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:342
 msgid "**Cut-Out animations:** editing sprites' transforms at runtime."
 msgstr ""
+"**Découper les animations :** éditer les transformations des sprites au "
+"moment de l'exécution."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
 msgid ""
@@ -28038,10 +28083,13 @@ msgid ""
 "rigging a skeleton to it. Then one animates the bones which stretch and bend "
 "the texture in proportion to the bones' relationships to each other."
 msgstr ""
+"**Animations 2D Mesh :** Définir une région pour la texture du sprite et y "
+"accrocher un squelette. Ensuite, on anime les os qui s'étirent et plient la "
+"texture proportionnellement aux relations des os entre eux."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:349
 msgid "A mix of the above."
-msgstr ""
+msgstr "Un condensé de ce qui est présent au dessus."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
 msgid ""
@@ -28053,6 +28101,14 @@ msgid ""
 "<class_AnimationTree>` shines. One can find an in-depth guide on using the "
 "AnimationTree :ref:`here <doc_animation_tree>`."
 msgstr ""
+"Bien qu'un AnimationPlayer soit nécessaire pour concevoir chacune des "
+"séquences d'animation d'un jeu, il peut également être utile de combiner des "
+"animations pour les mélanger, c'est-à-dire permettre des transitions fluides "
+"entre ces animations. Il peut aussi y avoir une structure hiérarchique entre "
+"les animations qu'on planifie pour leur objet. Ce sont les cas où le :ref:"
+"`AnimationTree <class_AnimationTree>` brille. Vous trouverez un guide "
+"détaillé sur l'utilisation de l'AnimationTree :ref:`ici "
+"<doc_animation_tree>`."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:4
 msgid "Logic preferences"
@@ -28063,6 +28119,9 @@ msgid ""
 "Ever wondered whether one should approach problem X with strategy Y or Z? "
 "This article covers a variety of topics related to these dilemmas."
 msgstr ""
+"Vous êtes-vous déjà demandé si vous deviez approcher un problème X avec une "
+"stratégie Y ou Z ? Cet article couvre une grande variété de sujets relatifs "
+"à ce dilemme."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:10
 msgid "Loading vs. preloading"
@@ -28091,6 +28150,8 @@ msgid ""
 "So, when exactly does preloading occur versus loading, and when should one "
 "use either? Let's see an example:"
 msgstr ""
+"Donc, quand exactement y a-t-il un préchargement plutôt qu'un chargement, et "
+"quand utiliser l'un ou l'autre ? Voyons un exemple :"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:88
 msgid ""
@@ -28099,6 +28160,10 @@ msgid ""
 "wish for it. To distinguish these situations, there are a few things one can "
 "consider:"
 msgstr ""
+"Le préchargement permet au script de gérer tout le chargement dès le "
+"chargement du script lui-même. Le préchargement est utile, mais il y a aussi "
+"des moments où on ne le souhaite pas. Pour distinguer ces situations, il y a "
+"quelques points à considérer :"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:93
 msgid ""
@@ -28107,6 +28172,11 @@ msgid ""
 "does not expect. This could lead to unintentional, variable-length load "
 "times on top of the original script's load operations."
 msgstr ""
+"S'il est impossible de déterminer le moment du chargement du script, le "
+"préchargement d'une ressource, en particulier d'une scène ou d'un script, "
+"peut entraîner des charges supplémentaires auxquelles on ne s'attend pas. "
+"Cela pourrait entraîner des temps de chargement non intentionnels de "
+"longueur variable en plus des opérations de chargement du script d'origine."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:98
 msgid ""
@@ -28697,7 +28767,6 @@ msgid "TileSet scene"
 msgstr "Scène de jeu de tuiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:47
-#, fuzzy
 msgid ""
 "Create a new scene with a regular Node or Node2D as root. For each tile you "
 "want to define, add a sprite node as a child. Since tiles here are 50x50, "
@@ -28709,9 +28778,9 @@ msgstr ""
 "Pour chaque tuile que vous souhaitez définir, ajoutez un nœud sprite en tant "
 "qu'enfant. Puisque les tuiles ici sont 50x50, vous devez activer la grille "
 "(``Affichage -> Afficher la grille``, ou la touche ``G``) ainsi que la "
-"capture (icône ``Utiliser Capture``, ou la touche ``S``). Déplacer les "
-"tuiles avec la souris peut toujours être imprécis, ainsi utilisez aussi les "
-"touches fléchées."
+"capture (icône ``Utiliser Capture``, ou les touches ``Shift + S``). Déplacer "
+"les tuiles avec la souris peut toujours être imprécis, ainsi utilisez aussi "
+"les touches fléchées."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:53
 msgid ""
@@ -63859,14 +63928,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:4
-#, fuzzy
 msgid "Making main screen plugins"
-msgstr "Création de plugins"
+msgstr "Création de plugins pour l'écran principal"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:7
-#, fuzzy
 msgid "What this tutorial covers"
-msgstr "Tutoriels vidéo"
+msgstr "Ce que couvre ce tutoriel"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:9
 msgid ""
@@ -63890,9 +63957,8 @@ msgid "With this plugin example, we want to demonstrate:"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:22
-#, fuzzy
 msgid "Creating a main screen plugin"
-msgstr "Créer un plugin simple"
+msgstr "Création d'un plugin pour l'écran principal"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:23
 msgid ""
@@ -63908,9 +63974,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:31
-#, fuzzy
 msgid "Initializing the plugin"
-msgstr "Compiler le plugin"
+msgstr "Initialisation du plugin"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:33
 msgid ""
@@ -63983,9 +64048,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:108
-#, fuzzy
 msgid "Main screen scene"
-msgstr "Scène principale"
+msgstr "Scène de l'écran principal"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:110
 msgid ""
@@ -64108,9 +64172,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:262
-#, fuzzy
 msgid "Try the plugin"
-msgstr "Compiler le plugin"
+msgstr "Essayez le plugin"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:264
 msgid ""
@@ -68643,9 +68706,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:4
-#, fuzzy
 msgid "Differences between GLES2 and GLES3"
-msgstr "Différences générales entre C# et GDScript"
+msgstr "Différences entre GLES2 et GLES3"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:6
 msgid ""
@@ -68694,9 +68756,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:32
-#, fuzzy
 msgid "Color space"
-msgstr "Monospace"
+msgstr "Espace de couleurs"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:34
 msgid ""
@@ -68724,9 +68785,8 @@ msgid "``OUTPUT_IS_SRGB`` is ``true`` in GLES2 and ``false`` in GLES3."
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:57
-#, fuzzy
 msgid "SpatialMaterial features"
-msgstr "Spatial Material"
+msgstr "Fonctionnalités SpatialMaterial"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
 msgid ""
@@ -68735,14 +68795,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
-#, fuzzy
 msgid "Subsurface scattering"
-msgstr "Diffusion souterraine"
+msgstr "Diffusion sous la surface"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:65
-#, fuzzy
 msgid "Depth mapping"
-msgstr "Cartographie des ombres de Spot lights"
+msgstr "Cartographie de la profondeur"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:67
 msgid ""
@@ -68753,34 +68811,32 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:72
-#, fuzzy
 msgid "Environment features"
-msgstr "Variables d'environnement"
+msgstr "Fonctionnalités de l’environnement"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:74
-#, fuzzy
 msgid ""
 "In GLES2, the following features in the :ref:`Environment "
 "<class_Environment>` are missing:"
-msgstr "Lumière ambiante dans l':ref:`Environnement <class_Environment>`."
+msgstr ""
+"Dans GLES2, les fonctionnalités suivantes dans le :ref:`Environnement "
+"<class_Environment>` manquent :"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
 msgid "Auto exposure"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:77
-#, fuzzy
 msgid "Tonemapping"
-msgstr "Cartographie des ombres"
+msgstr "Tonemapping"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:78
 msgid "Screen space reflections"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:79
-#, fuzzy
 msgid "Screen space ambient occlusion"
-msgstr "Occlusion ambiante"
+msgstr "Occlusion de l'espace ambiant de l'écran"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:80
 msgid "Depth of field"
@@ -68803,9 +68859,8 @@ msgid "Sky (including procedural sky)"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:87
-#, fuzzy
 msgid "Ambient light"
-msgstr "Désactiver la lumière ambiante"
+msgstr "Lumière ambiante"
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
@@ -68879,7 +68934,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:43
 msgid "Sync Scene Changes"
-msgstr "Synchroniser les changements de scène"
+msgstr "Synchroniser les modifications des scènes"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:45
 msgid ""
@@ -68890,7 +68945,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
 msgid "Sync Script Changes"
-msgstr "Synchroniser les modifications de script"
+msgstr "Synchroniser les modifications des scripts"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:51
 msgid ""
@@ -72277,13 +72332,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:135
-#, fuzzy
 msgid ""
 "`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
 "pool_vector.cpp>`__"
 msgstr ""
-"`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
-"node_path.h>`__"
+"`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
+"pool_vector.cpp>`__"
 
 #: ../../docs/development/cpp/core_types.rst:138
 msgid "Containers"
@@ -72388,13 +72442,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:200
-#, fuzzy
 msgid ""
 "`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
 "string_name.h>`__"
 msgstr ""
-"`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
-"node_path.h>`__"
+"`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
+"string_name.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:203
 msgid "Math types"

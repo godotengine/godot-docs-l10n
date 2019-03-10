@@ -9,6 +9,7 @@
 # Alisson Damasceno <damascenoalisson@gmail.com>, 2018.
 # Anderson Araujo <anderson.araujoprog@gmail.com>, 2018.
 # Anderson Jonas <lambosanm.d@gmail.com>, 2018.
+# André Pereira <andre-filho08@hotmail.com>, 2019.
 # Antônio Vinícius <antoniovinicius97@gmail.com>, 2018.
 # Breno Caldeira <breno.caldeira@gmail.com>, 2018.
 # Cabral <pedrogcabral@hotmail.com>, 2018.
@@ -68,6 +69,7 @@
 # Renne Sampaio <rennesampaio97@gmail.com>, 2018-2019.
 # Ricardo Héber R. L. Tenório <ricardo.heber@gmail.com>, 2019.
 # Rodolfo R Gomes <rodolforg@gmail.com>, 2018.
+# Rogério Dec <rogeriodec@gmail.com>, 2019.
 # ronybezerra <ronybezerra@gmail.com>, 2018.
 # ShallZ <vzinbr@gmail.com>, 2018.
 # Stephann Vasconcelos <stephann@protonmail.com>, 2019.
@@ -87,7 +89,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-01 14:18+0100\n"
-"PO-Revision-Date: 2019-03-01 12:06+0000\n"
+"PO-Revision-Date: 2019-03-07 10:47+0000\n"
 "Last-Translator: Dimenicius <vinicius.costa.92@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
@@ -96,7 +98,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Weblate 3.5.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -772,7 +774,6 @@ msgid "What is GDScript and why should I use it?"
 msgstr "O que é GDScript e porque eu devo usá-lo?"
 
 #: ../../docs/about/faq.rst:90
-#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -3976,7 +3977,6 @@ msgid "Sprite animation"
 msgstr "Animação por Sprites"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -4783,7 +4783,6 @@ msgstr ""
 "novo jogo:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``) to the main script. "
@@ -4796,7 +4795,6 @@ msgstr ""
 "``ScoreTimer`` irá incrementar a pontuação  em 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:799
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -4918,7 +4916,6 @@ msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` nomeado ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:894
-#, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the _Text_ field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -4926,7 +4923,8 @@ msgid ""
 "Regular.ttf\". To use this font, do the following for each of the three "
 "``Control`` nodes:"
 msgstr ""
-"A fonte padrão para os nós ``Control`` é pequena e não escala bem. Há um "
+"Clique no ``ScoreLabel`` e digite um número no campo _Text_ no Inspector. A "
+"fonte padrão para os nós ``Control`` é pequena e não escala bem. Há um "
 "arquivo de fonte incluído nos assets do jogo chamado \"Xolonium-Regular.ttf"
 "\". Para usar esta fonte, faça o seguinte para cada um dos três nós "
 "``Control``:"
@@ -4988,7 +4986,7 @@ msgstr "ScoreLabel"
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
 #, fuzzy
 msgid "*Text* : ``0``"
-msgstr "Text: ``0``"
+msgstr "*Text*: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 #, fuzzy
@@ -5005,23 +5003,20 @@ msgid "MessageLabel"
 msgstr "MessageLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:935
-#, fuzzy
 msgid "*Text* : ``Dodge the Creeps!``"
-msgstr "Texto: ``Desvie dos Bichos!``"
+msgstr "*Text*: ``Desvie dos Bichos!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
-#, fuzzy
 msgid "*Layout* : \"HCenter Wide\""
-msgstr "``Layout``: \"Center\" (Centro)"
+msgstr "*Layout* : \"Center\" (Centro)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:940
 msgid "StartButton"
 msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:942
-#, fuzzy
 msgid "*Text* : ``Start``"
-msgstr "Texto: ``Iniciar``"
+msgstr "Text: ``Iniciar``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:943
 #, fuzzy
@@ -5029,9 +5024,8 @@ msgid "*Layout* : \"Center Bottom\""
 msgstr "``Layout``: \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:944
-#, fuzzy
 msgid "*Margin* :"
-msgstr "Margem (Margin)"
+msgstr "Margem (Margin) :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Top: ``-200``"
@@ -12063,15 +12057,17 @@ msgstr ""
 "então este ponto tem uma importância menor."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:162
+#, fuzzy
 msgid ""
 "However, we often observe a common architecture for Unity projects, which "
 "consists of having one Assets folder in the root directory that contains "
 "various folders, one per type of asset: Audio, Graphics, Models, Materials, "
 "Scripts, Scenes, etc."
 msgstr ""
-"Observamos anteriormente que não há solução perfeita para definir uma "
-"arquitetura de projeto. Qualquer solução funcionará para a Unity e a Godot, "
-"então este ponto tem uma importância menor."
+"No entanto, frequentemente observamos uma arquitetura comum para projetos "
+"Unity, que consiste em ter uma pasta Assets no diretório raiz que contém "
+"várias pastas, uma por tipo de ativo: Áudio, Gráficos, Modelos, Materiais, "
+"Scripts, Cenas, etc."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:165
 msgid ""
@@ -13940,7 +13936,7 @@ msgid ""
 "specified, the variable will be forced to have always that same type, and "
 "trying to assign an incompatible value will raise an error."
 msgstr ""
-"As variáveis ​​podem, opcionalmente, ter uma especificação de tipo. Quando um "
+"As variáveis podem, opcionalmente, ter uma especificação de tipo. Quando um "
 "tipo é especificado, a variável será forçada a ter sempre esse mesmo tipo, e "
 "tentar atribuir um valor incompatível gerará um erro."
 
@@ -18946,12 +18942,17 @@ msgid ""
 "does not allow declaring them in namespaces. Most global constants were "
 "moved to their own enums."
 msgstr ""
+"Funções globais e algumas constantes tiveram que ser movidas para classes, "
+"já que o C# não permite declará-las em namespaces. A maioria das constantes "
+"globais foram movidas para seus próprios enums."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:24
 msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
+"As constantes globais foram movidas para seus próprios enums. Por exemplo, "
+"constantes ``ERR_*`` foram movidas para o enum ``Error``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
 #, fuzzy
@@ -18960,27 +18961,29 @@ msgstr "Utilize o tempo pretérito:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``SPKEY``"
-msgstr ""
+msgstr "``SPKEY``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``GD.SpKey``"
-msgstr ""
+msgstr "``GD.SpKey``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``TYPE_*``"
-msgstr ""
+msgstr "``TYPE_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
+#, fuzzy
 msgid "``Variant.Type`` enum"
-msgstr ""
+msgstr "``Variant.Type`` enum"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``OP_*``"
-msgstr ""
+msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
+#, fuzzy
 msgid "``Variant.Operator`` enum"
-msgstr ""
+msgstr "``Variant.Operator`` enum"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
 #, fuzzy
@@ -19033,23 +19036,24 @@ msgstr "Funções"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``weakref(obj)``"
-msgstr ""
+msgstr "``weakref(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``Object.WeakRef(obj)``"
-msgstr ""
+msgstr "``Object.WeakRef(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
 msgid "``is_instance_valid(obj)``"
-msgstr ""
+msgstr "``is_instance_valid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
+#, fuzzy
 msgid "``Object.IsInstanceValid(obj)``"
-msgstr ""
+msgstr "``Object.IsInstanceValid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:66
 msgid "Tips"
-msgstr ""
+msgstr "Dicas"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:68
 msgid ""
@@ -19057,6 +19061,9 @@ msgid ""
 "directive allows to access the members and nested types of a class without "
 "specifying the class name."
 msgstr ""
+"Às vezes pode ser útil usar a diretiva ``using static``. Esta diretiva "
+"permite acessar os membros e tipos aninhados de uma classe sem especificar o "
+"nome da classe."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:90
@@ -19071,7 +19078,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:250
 #: ../../docs/community/contributing/code_style_guidelines.rst:150
 msgid "Example:"
-msgstr ""
+msgstr "Exemplo:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:86
 msgid "Export keyword"
@@ -19125,6 +19132,11 @@ msgid ""
 "``Singleton`` that returns the singleton instance. The type of this instance "
 "is ``Godot.Object``."
 msgstr ""
+"No entanto, em alguns casos muito raros, isso não é suficiente. Por exemplo, "
+"você pode querer acessar um membro da classe base ``Godot.Object``, como "
+"``Connect``. Para tais casos de uso, fornecemos uma propriedade estática "
+"chamada ``Singleton`` que retorna a instância singleton. O tipo desta "
+"instância é ``Godot.Object``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
@@ -19293,12 +19305,14 @@ msgstr ""
 "nomes alterados:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
+#, fuzzy
 msgid "``end``"
-msgstr ""
+msgstr "``end``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
+#, fuzzy
 msgid "``End``"
-msgstr ""
+msgstr "``End``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:236
 #, fuzzy
@@ -19335,8 +19349,9 @@ msgstr ""
 "nomes alterados:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
+#, fuzzy
 msgid "``length()``"
-msgstr ""
+msgstr "``length()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
 #, fuzzy
@@ -19345,11 +19360,12 @@ msgstr "Caminho do Recurso"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
 msgid "``length_squared()``"
-msgstr ""
+msgstr "``length_squared()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
+#, fuzzy
 msgid "``LengthSquared``"
-msgstr ""
+msgstr "``LengthSquared``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:258
 #, fuzzy
@@ -19367,8 +19383,9 @@ msgid "``Array``"
 msgstr "Vetor"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
+#, fuzzy
 msgid "``Godot.Array``"
-msgstr ""
+msgstr "``Godot.Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
 #, fuzzy
@@ -19445,6 +19462,8 @@ msgid ""
 "``Godot.Array<T>`` is a type-safe wrapper around ``Godot.Array``. Use the "
 "``Godot.Array<T>(Godot.Array)`` constructor to create one."
 msgstr ""
+"``Godot.Array <T> `` é um wrapper de tipo seguro em torno de ``Godot."
+"Array``. Use o construtor ``Godot.Array <T> (Godot.Array) `` para criar um."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 #, fuzzy
@@ -19456,6 +19475,9 @@ msgid ""
 "``Godot.Dictionary<T>`` is a type-safe wrapper around ``Godot.Dictionary``. "
 "Use the ``Godot.Dictionary<T>(Godot.Dictionary)`` constructor to create one."
 msgstr ""
+"``Godot.Dictionary <T> `` é um wrapper de tipo seguro em torno de ``Godot."
+"Dictionary``. Use o construtor ``Godot.Dictionary <T> (Godot.Dictionary) `` "
+"para criar um."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:285
 msgid "Variant"
@@ -19484,11 +19506,15 @@ msgstr ""
 "linguagens de script através da API Variant."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:300
+#, fuzzy
 msgid ""
 "Something similar to GDScript's ``yield`` with a single parameter can be "
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield>`_."
 msgstr ""
+"Algo semelhante ao ``yield`` do GDScript com um único parâmetro pode ser "
+"obtido com a palavra-chave `yield <https://docs.microsoft.com/en-US/dotnet/"
+"csharp/language-reference/keywords/yield> `_ do C#."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid ""
@@ -19501,10 +19527,13 @@ msgid "Other differences"
 msgstr "Outras diferenças"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:315
+#, fuzzy
 msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
+"``pré-carregamento``, da forma que funciona no GDScript, não está disponível "
+"em C#. Ao invés disso, use ``GD.Load`` ou ``ResourceLoader.Load``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Other differences:"
@@ -20249,29 +20278,40 @@ msgid "Export of Cycles/EEVEE materials"
 msgstr "Modelos de Exportação"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
+#, fuzzy
 msgid ""
 "The exporter has a primitive support for converting Cycles/EEVEE material "
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
+"O exportador tem um suporte primitivo para a conversão da árvore de nós do "
+"material Cycles/EEVEE para Godot Shader Material. Note que alguns dos nós do "
+"Shader ainda não são suportados devido a dificuldades na implementação, que "
+"são:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
+#, fuzzy
 msgid "all the ``noisy textures``"
-msgstr ""
+msgstr "todas as ``noisy textures``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
+#, fuzzy
 msgid "``generated texture coordinates``"
-msgstr ""
+msgstr "``generated texture coordinates``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
+#, fuzzy
 msgid "``group node``"
-msgstr ""
+msgstr "``group node``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
+#, fuzzy
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
+"nós de sombreamento, exceto``PrincipledBSDF``, ``Diffuse``, ``Glossy``, "
+"``Glass``, ``add shader`` e ``mix shader``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
 msgid ""
@@ -20279,6 +20319,9 @@ msgid ""
 "output shader node, it is the only one guarantee to be exactly correctly. "
 "Others are just based on approximation."
 msgstr ""
+"Se possível, tente usar o nó PrincipledBSDF com a distribuição GGX como o nó "
+"do shader de saída, é a única garantia a ser exatamente correta. Outros são "
+"apenas baseados em aproximação."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
 #, fuzzy
@@ -20293,8 +20336,9 @@ msgstr ""
 "exemplo, sem sombra) são exportadas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
+#, fuzzy
 msgid "Generate external materials"
-msgstr ""
+msgstr "Gere materiais externos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
 msgid ""
@@ -20302,12 +20346,18 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
+"A configuração padrão da exportação de material manteria todos os materiais "
+"internos no arquivo ``escn``. Existe uma opção que pode permitir a geração "
+"de arquivos externos ``.material`` quando o arquivo ``escn`` é aberto no "
+"Godot."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
 msgstr ""
+"O arquivo ``.material`` pode ser atribuído a qualquer slot de material para "
+"ser um recurso externo."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:2
 #, fuzzy
@@ -20618,7 +20668,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:35
 msgid "Bone Attachment"
-msgstr ""
+msgstr "Ligação do osso"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:36
 #, fuzzy
@@ -20689,19 +20739,25 @@ msgid "**1. Stash active action**"
 msgstr "**2. Esconder a ação ativa**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
+#, fuzzy
 msgid ""
 "New created action is always an active action binded to object. There are "
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
+"A nova ação criada é sempre uma ação ativa vinculada ao objeto. Existem "
+"várias maneiras de colocar uma ação ativa na trilha NLA, uma, é claro, fazê-"
+"lo no ``NLA Editor``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
+#, fuzzy
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
-msgstr ""
+msgstr "Ou pode ser feito juntando a ação em ``Dope Sheet``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
+#, fuzzy
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2. Verificar o status 'mudo' das faixas NLA **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -20716,8 +20772,9 @@ msgid "**3. Export the scene**"
 msgstr "**4. Exporte a cena**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
+#, fuzzy
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
-msgstr ""
+msgstr "Certifique-se de que a opção ``Export Stashed Actions`` está ativada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
 #, fuzzy
@@ -20790,6 +20847,7 @@ msgstr ""
 "colocadas em apenas um AnimationPlayer na raiz da cena."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:82
+#, fuzzy
 msgid "**Mode 'Animation as Action with Squash'**"
 msgstr "Animações suportadas:"
 
@@ -21407,9 +21465,8 @@ msgstr ""
 "sejam necessários."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:142
-#, fuzzy
 msgid "Premultiplied Alpha"
-msgstr "Alpha prémultiplicado"
+msgstr "Alpha pré-multiplicado"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:144
 msgid ""
@@ -21421,25 +21478,33 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:148
 msgid "HDR as sRGB"
-msgstr ""
+msgstr "HDR como sRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
+#, fuzzy
 msgid ""
 "A few HDR files are broken and contain sRGB color data. It is advised not to "
 "use them, but, in the worst-case scenario, toggling this option on will make "
 "them look right."
 msgstr ""
+"Alguns arquivos HDR estão corrompidos e contêm dados de cor sRGB. É "
+"aconselhável não usá-los, mas, na pior das hipóteses, ativar essa opção fará "
+"com que pareçam corretos."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:153
 msgid "Invert Color"
-msgstr ""
+msgstr "Inverter Cor"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:155
+#, fuzzy
 msgid ""
 "Reverses the image's color. This is useful, for example, to convert a height "
 "map generated by external programs to depth map to use with :ref:"
 "`doc_spatial_material`."
 msgstr ""
+"Inverte a cor da imagem. Isto é útil, por exemplo, para converter um mapa de "
+"altura gerado por programas externos em um mapa de profundidade para usar :"
+"ref:`doc_spatial_material`."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 #, fuzzy
@@ -41466,6 +41531,10 @@ msgid ""
 "changes in velocities of *AudioStreamPlayer3D* or *Camera*. Both have this "
 "property, which must be enabled manually:"
 msgstr ""
+"Quando a velocidade relativa entre um emissor e o ouvinte muda, isso é "
+"percebido como um aumento ou diminuição do deslocamento do tom. Godot pode "
+"rastrear mudanças nas velocidades de *AudioStreamPlayer3D* ou *Camera*. "
+"Ambos têm essa propriedade, que deve ser ativada manualmente:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:84
 msgid ""
@@ -41473,17 +41542,19 @@ msgid ""
 "(whether on regular *process* or *physics_process* step) and the tracking "
 "will happen automatically!"
 msgstr ""
+"Basta habilitá-lo, definindo-o dependendo de como os objetos serão movidos "
+"(seja na etapa regular *process* ou *physics_process*) e o rastreamento "
+"ocorrerá automaticamente!"
 
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr "Fisica"
+msgstr "Física"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:4
 msgid "Physics introduction"
 msgstr "Introdução à física"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:6
-#, fuzzy
 msgid ""
 "In game development, you often need to know when two objects in the game "
 "intersect or come into contact. This is known as **collision detection**. "
@@ -74622,28 +74693,27 @@ msgid "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
 msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>'_"
 
 #: ../../docs/community/resources.rst:6
-#, fuzzy
 msgid ""
 "This is a list of third-party resources created by the community that may be "
 "of interest."
 msgstr ""
-"Esta é uma lista de recursos de terceiros criados pela comunidade que podem "
-"ser de interesse para complementar seus estudos."
+"Esta é uma lista de recursos de terceiros criada pela comunidade, que pode "
+"ser de interesse."
 
 #: ../../docs/community/resources.rst:11
 msgid ""
 "`awesome-godot: A curated list of resources by Calinou <https://github.com/"
 "Calinou/awesome-godot>`_"
 msgstr ""
-"'awesome-godot: A curated list of resources by Calinou <https://github.com/"
-"Calinou/awesome-godot>'_"
+"'awesome-godot: Uma lista selecionada de recursos, por Calinou <https://"
+"github.com/Calinou/awesome-godot>'_"
 
 #: ../../docs/community/resources.rst:12
 msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
-"'Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
+"'Zeef Godot Engine: Um diretório selecionado de recursos, por Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>'_"
 
 #: ../../docs/community/resources.rst:13
@@ -74651,6 +74721,8 @@ msgid ""
 "`KidsCanCode: An ongoing tutorial series <http://kidscancode.org/blog/tags/"
 "godot/>`_"
 msgstr ""
+"`KidsCanCode: Uma série de tutoriais em andamento <http://kidscancode.org/"
+"blog/tags/godot/>`_"
 
 #~ msgid "do"
 #~ msgstr "do"

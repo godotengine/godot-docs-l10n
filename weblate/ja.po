@@ -7,6 +7,7 @@
 # Nathan Lovato <nathan.lovato.art@gmail.com>, 2018.
 # nitenook <admin@alterbaum.net>, 2018.
 # nyanode <akaruooyagi@yahoo.co.jp>, 2018.
+# Wataru Onuki <watonu@magadou.com>, 2019.
 # yu tang <0011solo@gmail.com>, 2018.
 # zukkun <zukkun@gmail.com>, 2018.
 #
@@ -15,8 +16,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-01 14:18+0100\n"
-"PO-Revision-Date: 2019-01-20 08:53+0000\n"
-"Last-Translator: Hidetsugu Takahashi <manzyun@gmail.com>\n"
+"PO-Revision-Date: 2019-03-10 09:56+0000\n"
+"Last-Translator: Wataru Onuki <watonu@magadou.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
 "Language: ja\n"
@@ -24,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.4-dev\n"
+"X-Generator: Weblate 3.5.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -35,17 +36,18 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"Godotのドキュメントには様々な言語とバージョンがあります。そのリストを見るに"
+"は、サイドバーの下にある「Read the Docs」のパネルを開いて下さい。"
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the development (master) branch. Looking for "
 "the documentation of the current **stable** branch? `Have a look here "
 "<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
-"このドキュメントは安定版ではない（master）ブランチのものです。**安定版** をお"
-"探しの場合は `こちら <http://docs.godotengine.org/en/stable>`_ をご覧くださ"
-"い。"
+"このドキュメントは安定版ではない（master）ブランチのものです。最新の**安定版"
+"** をお探しの場合は `こちら <http://docs.godotengine.org/en/stable>`_ をご覧"
+"ください。"
 
 #: ../../docs/index.rst:16
 msgid ""
@@ -53,6 +55,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
+"このドキュメントは`Weblate <https://hosted.weblate.org/projects/godot-engine/"
+"godot-docs>`_のコミュニティー・メンバーによって、`英語の原文 <https://docs."
+"godotengine.org/en/latest>`_から翻訳されました。"
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -61,6 +66,9 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
+"翻訳の進行度合いによって、段落やページ全体がまだ英語のままである場合がありま"
+"す。コミュニティーに貢献したい方は、Weblateにて新しく翻訳をしたり既存の文を査"
+"読することができます。"
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -68,6 +76,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"現時点では、翻訳版は「最新」(開発中)ブランチのみで提供されますが、しかし安定"
+"版Godotの使い方を学ぶのにも適しているはずです。"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -485,9 +495,10 @@ msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
+"商用と非商用を問わず、どのような用途であれ、心おきなく自由にGodotを改変、配"
+"布、再配布およびリミックスできます。"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
@@ -496,7 +507,7 @@ msgid ""
 msgstr ""
 "このコンテンツは、\"Juan Linietsky\"、 \"Ariel Manzur \" そして \"Godot "
 "Engine community\" によって、クリエイティブ・コモンズ-表示 3.0（ `CC-BY 3.0 "
-"<https://creativecommons.org/licenses/by/3.0/>`_ ）ライセンスの下、管理されれ"
+"<https://creativecommons.org/licenses/by/3.0/>`_ ）ライセンスの下、管理されて"
 "おります。"
 
 #: ../../docs/about/faq.rst:20
@@ -505,6 +516,9 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
+"ロゴやアイコンには通常、同じクリエイティブ・コモンズライセンスが適用されま"
+"す。ただし、Godotのソースコードと共に含まれるサードパーティー製ライブラリは、"
+"違うライセンスを使用しているかもしれません。"
 
 #: ../../docs/about/faq.rst:24
 msgid ""
@@ -525,65 +539,71 @@ msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
+"また、`Godotウェブサイトのライセンス情報ページ <https://godotengine.org/"
+"license>`_も見てみて下さい。"
 
 #: ../../docs/about/faq.rst:31
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "Godotが対応するプラットフォームは？"
 
 #: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**エディター：**"
 
 #: ../../docs/about/faq.rst:35
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:39
 #: ../../docs/tutorials/misc/jitter_stutter.rst:53
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 #: ../../docs/tutorials/misc/jitter_stutter.rst:78
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:39
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**ゲームの書き出し：**"
 
 #: ../../docs/about/faq.rst:41
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "Windows (およびUWP)"
 
 #: ../../docs/about/faq.rst:44
 #: ../../docs/getting_started/step_by_step/exporting.rst:185
 #: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:45
 #: ../../docs/getting_started/step_by_step/exporting.rst:237
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../docs/about/faq.rst:46
 msgid "Web"
-msgstr ""
+msgstr "ウェブ"
 
 #: ../../docs/about/faq.rst:48
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
+"デフォルトは64ビットですが、場合に応じて32ビットと64ビット両方に対応していま"
+"す。"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"Raspberry Piのような、ARMベースのLinuxマシンでGodotが動作したという報告もいく"
+"つかあります。"
 
 #: ../../docs/about/faq.rst:54
 msgid ""
@@ -591,16 +611,21 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
+"それに加えて、コンソール機向けに第三者による非公式のビルドがいくつかありま"
+"す。しかし、現時点では標準のビルドスクリプトや書き出しテンプレートには含まれ"
+"ていません。"
 
 #: ../../docs/about/faq.rst:58
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"詳しくは、:ref:`書き出しについて <toc-learn-workflow-export>`の節や:ref:"
+"`Godotをコンパイルする <toc-devel-compiling>`をご参照ください。"
 
 #: ../../docs/about/faq.rst:62
 msgid "Which programming languages are supported in Godot?"
-msgstr ""
+msgstr "Godotが対応するプログラミング言語は？"
 
 #: ../../docs/about/faq.rst:64
 msgid ""
@@ -608,6 +633,9 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"Godotが公式対応している言語は、GDScript、ビジュアルスクリプト、C#、およびC+"
+"+です。それぞれの言語についてのサブカテゴリーは:ref:`スクリプティング <toc-"
+"learn-scripting>`にあります。"
 
 #: ../../docs/about/faq.rst:68
 msgid ""
@@ -618,6 +646,11 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"初めてGodotを使う人や、これからゲーム開発を始める人には、Godot内蔵のGDScript"
+"がおすすめです。スクリプト言語はより低水準な言語に比べて、必ずしも長期的には"
+"最適ではありません。しかし試作や、実用最小限の製品(MVP)の開発、製品化への時間"
+"(TTM)を重視する場合、GDScriptはゲーム開発のためのスピーディで親しみやすい、有"
+"用な手段になります。"
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -629,6 +662,12 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"C#への対応はまだ比較的新しいため、何らかの問題が生じる可能性があります。当方"
+"のフレンドリーで仕事熱心な開発コミュニティーは、新たに浮かんできた問題に挑む"
+"準備は万端です。しかし、これはオープンソース・プロジェクトなので、まずはご自"
+"身で解決法を探ることを推奨します。トラブルシューティングには最初に、`open "
+"issues(英語) <https://github.com/godotengine/godot/issues>`_内にて交わされて"
+"いるやりとりを調べてみて下さい。"
 
 #: ../../docs/about/faq.rst:82
 msgid ""
@@ -638,10 +677,14 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"新しい言語については、GDNative / NativeScript / PluginScript 機能を通じてサー"
+"ドパーティによる対応が可能です。例えば現在、`Python <https://github.com/"
+"touilleMan/godot-python>`_や`Nim <https://github.com/pragmagic/godot-nim>`_の"
+"Godot向け非公式バインディングが開発進行中です。"
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "GDScriptとは何で、それを使う必要性は？"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -653,6 +696,12 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"GDScriptはGodot内蔵のスクリプト言語です。最小のコード行数でGodotの能力を最大"
+"限に発揮できるよう、一から設計されています。初心者からエキスパートまで、すば"
+"やくGodotの性能を引き出せるようになります。もしPythonのような言語で書いた経験"
+"があれば、すぐに馴染めることでしょう。GDScriptのサンプルや歴史、その力の概要"
+"を知りたい方は、:ref:`GDScriptスクリプティング・ガイド <doc_gdscript>`をお読"
+"み下さい。"
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -661,6 +710,9 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"GDScriptを使う理由は、――特に、試作やアルファ/ベータ版の段階にある場合や、大作"
+"を作るのでない場合――いくつもあります。しかし一番の理由は、全体的に**複雑さを"
+"減らせる**ことです。"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -3654,7 +3706,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:865
 msgid "HUD"
-msgstr ""
+msgstr "ヘッドアップディスプレイ(HUD)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:867
 msgid ""

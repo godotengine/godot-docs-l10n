@@ -25,6 +25,7 @@
 # Ethan Huff <et.huff.the1st@gmail.com>, 2018.
 # Fidel Dalmasso <fidelmasso@gmail.com>, 2018.
 # Franco F <ezefran256@gmail.com>, 2018.
+# Gonzalo León Toro <gf.leontoro@gmail.com>, 2019.
 # Hernan Campillo Mecklenburg <hcampillo.88@gmail.com>, 2018.
 # Hernan Prado <pradoh97@gmail.com>, 2018.
 # Hisonic <nosoyhackercodigo@gmail.com>, 2018.
@@ -68,8 +69,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-01 14:18+0100\n"
-"PO-Revision-Date: 2019-03-01 12:06+0000\n"
-"Last-Translator: Javier Ocampos <xavier.ocampos@gmail.com>\n"
+"PO-Revision-Date: 2019-03-07 11:59+0000\n"
+"Last-Translator: Gonzalo León Toro <gf.leontoro@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -77,7 +78,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Weblate 3.5.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -761,7 +762,6 @@ msgid "What is GDScript and why should I use it?"
 msgstr "¿Qué es GDScript y por qué debería usarlo?"
 
 #: ../../docs/about/faq.rst:90
-#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -773,10 +773,10 @@ msgid ""
 msgstr ""
 "GDScript es el lenguaje de scripts integrado en Godot. Fue creado desde cero "
 "para maximizar el potencial de Godot hasta la última porción de código, "
-"permitiendo a desarrolladores tanto expertos como novatos a aprovecharse de "
-"las fortalezas de Godot tan rápido como sea posible. Si alguna vez has "
-"escrito algo en un lenguaje como Python, entonces te sentirás justo en casa. "
-"Para ejemplos, la historia y un resumen completo del poder que GDScript te "
+"permitiendo a desarrolladores tanto expertos como novatos aprovechar las "
+"fortalezas de Godot tan rápido como sea posible. Si alguna vez has escrito "
+"algo en un lenguaje como Python, entonces te sentirás como en casa. Para "
+"ejemplos, la historia y un resumen completo del poder que GDScript te "
 "ofrece, revisa la `guía de scripteo en GDScript <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:97
@@ -7324,7 +7324,6 @@ msgstr ""
 "situados a un lado de éstos"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
@@ -7332,9 +7331,8 @@ msgid ""
 msgstr ""
 "En el árbol de nodos, selecciona todos los nodos ``TextureRect`` que deben "
 "ir en el lado izquierdo: el logo, las opciones del menú y la nota de la "
-"versión. Arrástralos y suéltalos en el ``VBoxContainer``. A continuación, "
-"arrastra el nodo de la ilustración hasta el ``CenterContainer``. Los nodos "
-"deben posicionarse automáticamente."
+"versión. Arrástralos y suéltalos en el ``VBoxContainer``. Los nodos deben "
+"posicionarse automáticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
 msgid "Containers automatically place and resize textures"
