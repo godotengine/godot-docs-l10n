@@ -7,6 +7,7 @@
 # Alex FIALE <alex.fiale@gmail.com>, 2019.
 # Alexis Huvier <lavapower84@gmail.com>, 2018.
 # Antoine Carrier <ac.g392@gmail.com>, 2018.
+# Arthus Belliqueux <contact@arthus.fr>, 2019.
 # Aymen B'm <boxaymen7@gmail.com>, 2018.
 # Benjamin Dambrine <Scozor@hotmail.com>, 2018-2019.
 # benjamin thilliez <benjamin.thilliez@gmx.com>, 2018.
@@ -79,8 +80,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-10 11:47+0100\n"
-"PO-Revision-Date: 2019-03-07 08:20+0000\n"
-"Last-Translator: Hugo Locurcio <hugo.locurcio@hugo.pro>\n"
+"PO-Revision-Date: 2019-03-28 08:39+0000\n"
+"Last-Translator: Caye Pierre <pierrecaye@laposte.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -88,7 +89,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.5.1-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -2534,15 +2535,14 @@ msgid "Scripting"
 msgstr "Les scripts"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
-#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
 "Avant Godot 3.0, le seul choix pour scripter un jeu était d'utiliser :ref:"
-"`doc_gdscript`. À présent, Godot a quatre (oui, quatre !) langages officiels "
-"et la possibilité d'ajouter dynamiquement des langages de script "
+"`GDScript<doc_gdscript>`. À présent, Godot a quatre (oui, quatre !) langages "
+"officiels et la possibilité d'ajouter dynamiquement des langages de script "
 "supplémentaires !"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
@@ -2584,15 +2584,14 @@ msgid "GDScript"
 msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript` est, comme indiqué ci-dessus, le langage principal "
-"utilisé dans Godot. Son utilisation a quelques points positifs par rapport à "
-"d'autres langues en raison de sa forte intégration avec Godot :"
+":ref:`GDScript<doc_gdscript>` est, comme indiqué ci-dessus, le langage "
+"principal utilisé dans Godot. Son utilisation a quelques points positifs par "
+"rapport à d'autres langues en raison de sa forte intégration avec Godot :"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -2805,17 +2804,16 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "Ecrire un script qui peut accéder à d'autres nœuds de la scène."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
-"Avant de continuer, assurez-vous de lire la référence :ref:`doc_gdscript`. "
-"C'est un langage conçu pour être simple, et la référence est courte, de "
-"sorte qu'il ne faudra pas plus de quelques minutes pour obtenir une vue "
-"d'ensemble des concepts."
+"Avant de continuer, assurez-vous de lire la référence :ref:"
+"`GDScript<doc_gdscript>`. C'est un langage conçu pour être simple, et la "
+"référence est courte, de sorte qu'il ne faudra pas plus de quelques minutes "
+"pour obtenir une vue d'ensemble des concepts."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
@@ -18505,7 +18503,6 @@ msgid "Setting up C# for Godot"
 msgstr "Configurer C# pour Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:41
-#, fuzzy
 msgid ""
 "Download and install the latest version of `Visual Studio <https://"
 "visualstudio.microsoft.com/downloads/>`_ (*not* Visual Studio Code), which "
@@ -18518,10 +18515,14 @@ msgid ""
 msgstr ""
 "Téléchargez et installez la dernière version de `Visual Studio <https://"
 "visualstudio.microsoft.com/downloads/>`_ (*pas* Visual Studio Code), qui "
-"contient les outils requis pour coder en C# sur Godot. Si vous ne souhaitez "
-"pas utiliser l'IDE de Visual Studio, téléchargez simplement `Visual Studio "
-"Build Tools <https://visualstudio.microsoft.com/thank-you-downloading-visual-"
-"studio/?sku=BuildTools&rel=15>`_."
+"contient les utilitaires requis pour utiliser C# dans Godot. Si vous ne "
+"prévoyez pas d'utiliser l'EDI Visual Studio, vous pouvez télécharger "
+"uniquement les outils de création de`Visual Studio Build Tools <https://"
+"visualstudio.microsoft.com/thank-you-downloading-visual-studio/?"
+"sku=BuildTools&rel=15>`_ à la place. Assurez-vous d'avoir au moins le paquet "
+"de ciblage .NET Framework 4.5 installé, vous pouvez l'obtenir en utilisant "
+"n'importe lequel des installateurs mentionnés ci-dessus dans l'onglet "
+"\"Composants individuels\"."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
 msgid "macOS and Linux"
@@ -28140,6 +28141,10 @@ msgid ""
 "possible to front-load the \"loading\" operations and avoid loading "
 "resources while in the middle of performance-sensitive code."
 msgstr ""
+"Dans GDScript, il existe la méthode globale :ref:`preload "
+"<class_@GDScript_method_preload>`. elle charge les ressources le plus tôt "
+"possible pour charger en amont les opérations de \"chargement\" et éviter de "
+"charger les ressources au milieu d'un code sensible aux performances."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:17
 msgid ""
@@ -28150,6 +28155,13 @@ msgid ""
 "`ResourceLoader.load(path) <class_ResourceLoader_method_load>` which is "
 "accessible to *all* scripting languages."
 msgstr ""
+"Sa contrepartie, la méthode :ref:`load <class_@GDScript_method_load>`, "
+"charge une ressource uniquement lorsqu'elle atteint l'instruction load. "
+"C'est-à-dire qu'elle chargera une ressource à l'instant t ce qui peut causer "
+"des ralentissements si elle se produit au milieu de processus sensibles. La "
+"fonction ``load`` est aussi un alias pour :ref:`ResourceLoader.load(path) "
+"<class_ResourceLoader_method_load>` qui est accessible à *tous* les langages "
+"scripts."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:24
 msgid ""
@@ -28190,6 +28202,10 @@ msgid ""
 "initialization), then preloading the value has no meaning. This point isn't "
 "a significant factor if one intends to always create the script on its own."
 msgstr ""
+"Si quelque chose d'autre pourrait remplacer la valeur (comme "
+"l'initialisation d'une scène exportée), alors le préchargement de la valeur "
+"n'a aucune intérêt. Ce point n'est pas un facteur important si l'on a "
+"l'intention de toujours créer le script tout seul."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:102
 msgid ""
@@ -28197,6 +28213,10 @@ msgid ""
 "then using a preloaded constant is often the best course of action. However, "
 "in exceptional cases, one my wish not to do this:"
 msgstr ""
+"Si l'on souhaite seulement \"importer\" une autre ressource de classe "
+"(script ou scène), alors l'utilisation d'une constante préchargée est "
+"souvent la meilleure solution. Cependant, dans des cas exceptionnels, il "
+"n'est pas souhaitable de le faire :"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:106
 msgid ""
@@ -28204,6 +28224,9 @@ msgid ""
 "instead, initialized either using an ``export`` or a ``load`` (and perhaps "
 "not even initialized until later)."
 msgstr ""
+"Si la classe 'importée' est susceptible de changer, alors elle devrait être "
+"une propriété, initialisée soit à l'aide d'un ``export`` ou d'un ``load`` "
+"(et peut-être même pas initialisée tout de suite)."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:110
 msgid ""
@@ -28216,10 +28239,19 @@ msgid ""
 "(which, as a :ref:`Reference <class_Reference>`-extending type, will cause "
 "the resources to delete themselves from memory)."
 msgstr ""
+"Si le script nécessite de nombreuses dépendances et qu'on souhaite limiter "
+"l'utilisation de mémoire, il peut arriver qu'on veuille charger et décharger "
+"ces diverses dépendances lors de l’exécution, en fonction de l'évolution des "
+"circonstances. Si ces ressources sont pré-chargées dans des constantes, la "
+"seule façon de les décharger serait de décharger le script entier. Si par "
+"contre elles sont chargées comme propriétés,  on pourra alors leur attribuer "
+"la valeur ``null`` et supprimer toute référence à ces ressources (ce qui "
+"aura pour effet de supprimer les ressources de la mémoire, celles-ci étant "
+"de type  à étendre :ref:`Reference <class_Reference>`)."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:121
 msgid "Large levels: static vs. dynamic"
-msgstr ""
+msgstr "Grands niveaux : statique vs dynamique"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:123
 msgid ""
@@ -28227,6 +28259,9 @@ msgid ""
 "Should they create the level as one static space? Or should they load the "
 "level in pieces and shift the world's content as needed?"
 msgstr ""
+"Dans le cadre de la création d'un niveau de grande taille, quelle solution "
+"est la plus appropriée ? Créer le niveau d'une seule pièce, ou bien scinder "
+"ce niveau en fragments qui seront chargés au fur et à mesure des besoins ?"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:127
 msgid ""
@@ -28234,6 +28269,10 @@ msgid ""
 "dilemma associated with the two options is one of the age-old programming "
 "choices: does one optimize memory over speed, or vice versa?"
 msgstr ""
+"La réponse est simple, \"quand les performances le nécessitent\". Le dilemme "
+"dont il est question ici est l'un des plus vieux dans le choix du type de "
+"programmation : doit-on privilégier l'optimisation de la mémoire sur celle "
+"de la vitesse, et inversement ?"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:131
 msgid ""
@@ -28242,6 +28281,11 @@ msgid ""
 "Wasting users' RAM leads to programs running slow or outright crashing from "
 "everything else the computer tries to do at the same time."
 msgstr ""
+"La réponse naïve est d'utiliser un seul niveau et charger toutes les "
+"ressources en une fois. Toutefois, dans le cadre de certains projets, cette "
+"solution peut mener à l'utilisation d'une importante quantité de mémoire. "
+"Gaspiller la mémoire de l'utilisateur risque de ralentir, voire de faire "
+"planter les autres programmes en cours d’exécution sur son système."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:136
 msgid ""
@@ -28251,6 +28295,13 @@ msgid ""
 "Games with large and varied environments or procedurally generated elements "
 "often implement these strategies to avoid wasting memory."
 msgstr ""
+"Il est vivement recommandé de séparer les scènes de grande taille en plus "
+"petites scènes ( aidant ainsi à les rendre réutilisables). Les développeurs "
+"peuvent ensuite concevoir un nœud dont la tâche est de gérer la création/le "
+"chargement et la suppression/le déchargement des ressources et nœuds "
+"correspondants en temps-réel. Les jeux disposant d'un environnement étendu "
+"et varié, ou générés de façon procédurale implémentent souvent ces "
+"stratégies dans un soucis d'optimisation de la mémoire."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:142
 msgid ""
@@ -28259,14 +28310,18 @@ msgid ""
 "isn't careful, they can develop a system that bloats the technical debt of "
 "the application."
 msgstr ""
+"Néanmoins, la conception d'un système dynamique de ce type est plus complexe "
+"car il nécessite plus de programmation, ce qui favorise l'apparition de "
+"bugs. Il faudra donc prendre garde à ne pas développer un système dont la "
+"complexité pourrait mener à l'opposé du résultat recherché."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:147
 msgid "As such, the best options would be..."
-msgstr ""
+msgstr "Ainsi, les meilleures options seraient...."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:149
 msgid "To use a static level for smaller games."
-msgstr ""
+msgstr "Utiliser un niveau unique pour les petits jeux."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:151
 msgid ""
@@ -28275,6 +28330,10 @@ msgid ""
 "time, so as to improve usability and stability, then it could evolve into a "
 "reliable tool across projects."
 msgstr ""
+"En fonction du temps et des ressources disponibles pour la création d'un jeu "
+"de taille moyenne à étendue, la création d'une librairie ou d'un plugin pour "
+"simplifier la gestion des nœuds et ressources. Cette librairie/plugin "
+"pourrait être amélioré et évoluer en un outil fiable au fil des projets."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:156
 msgid ""
@@ -28282,6 +28341,11 @@ msgid ""
 "skills, but not the time or resources to refine the code (game's gotta get "
 "done). Could potentially refactor later to outsource the code into a plugin."
 msgstr ""
+"Implémenter la logique de chargement dynamique directement dans le jeu dans "
+"le cadre d'un projet de taille moyenne/étendue dont les délais ne permettent "
+"pas l'élaboration d'une solution plus élégante. Cette implémentation "
+"pourrait par la suite être externalisée sous forme de plugin, lorsque le "
+"temps nécessaire est disponible."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:161
 msgid ""
@@ -28289,6 +28353,10 @@ msgid ""
 "please see the :ref:`\"Change scenes manually\" "
 "<doc_change_scenes_manually>` documentation."
 msgstr ""
+"Pour trouver des exemples des différentes façons existantes pour charger les "
+"scènes de façon dynamique à l’exécution, on peut se référer à la "
+"documentation suivante : :ref:`\"Change scenes manually\" "
+"<doc_change_scenes_manually>`."
 
 #: ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
@@ -29386,6 +29454,7 @@ msgstr "Paramètres de ParticlesMaterial"
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:169
 msgid "Particles2D > Process Material > Material > drop-down menu > Edit:"
 msgstr ""
+"Particules 2D > Rendu de matériau > Matériau > menu déroulant > Éditer :"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:188
 msgid "Spread"
@@ -31876,7 +31945,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:266
 msgid "Strafe left:"
-msgstr ""
+msgstr "Déplacement latéral à gauche :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:283
 msgid "Jump:"
@@ -31918,7 +31987,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:311
 msgid "Example of looking around, FPS style:"
-msgstr "Exemple de regarder autour, dans le style FPS :"
+msgstr "Exemple de regarder les alentours, en vue FPS :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:353
 msgid ""
@@ -31962,6 +32031,13 @@ msgid ""
 "many times, keep in mind they need to be eventually normalized or they also "
 "may suffer from numerical precision errors."
 msgstr ""
+"La référence de type: ref: `class_Quat` contient plus d'informations sur le "
+"type de données (elle peut également faire de l'accumulation de transformée, "
+"la transformation des points,, etc., bien que cela soit utilisé moins "
+"souvent). Si vous interpolez ou appliquez plusieurs fois des opérations sur "
+"des quaternions, n'oubliez pas qu'ils doivent éventuellement être "
+"normalisés, sinon ils risquent également de présenter des erreurs de "
+"précision numérique."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:385
 msgid ""
@@ -32287,11 +32363,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:129
 msgid "Skinning (skeletal animation)"
-msgstr ""
+msgstr "Skinning (animation squelettique)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:130
 msgid "Morphs (shape keys)"
-msgstr ""
+msgstr "Morphs (clés de forme)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:131
 msgid "Vertex Lit Objects (common on mobile)"
@@ -32509,7 +32585,7 @@ msgstr "Mode de mélange réglé sur un mode autre que \"Mix\""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:41
 msgid "Enabling distance or proximity fade"
-msgstr ""
+msgstr "Activer le fondu de distance ou de proximité"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:44
 msgid "Unshaded"
@@ -32852,7 +32928,7 @@ msgstr "** Mul : ** objet est multiplié."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:196
 msgid "Cull Mode"
-msgstr ""
+msgstr "Mode de Culling"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:198
 msgid ""
@@ -32916,6 +32992,10 @@ msgid ""
 "with the opaque parts, then transparency is drawn above. Use this option "
 "with transparent grass or tree foliage."
 msgstr ""
+"**Pré-passe de profondeur:** Pour les objets transparents, une première "
+"passe est effectuée sur les parties opaques, puis la transparence est tracée "
+"par dessus. Utilisez cette option avec de l'herbe ou du feuillage "
+"transparent."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:220
 msgid "Line Width"
@@ -32940,28 +33020,32 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:231
 msgid "Billboard Mode"
-msgstr ""
+msgstr "Mode Billboard"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:233
 msgid ""
 "Enables billboard mode for drawing materials. This controls how the object "
 "faces the camera:"
 msgstr ""
+"Active le mode ``Billboard`` pour le rendu du matériel. Ceci contrôle la "
+"façon dont l'objet est orienté par rapport à la caméra :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:236
 msgid "**Disabled:** Billboard mode is disabled."
-msgstr ""
+msgstr "**Désactivé:** Le mode ``Billboard`` est désactivé."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:237
 msgid ""
 "**Enabled:** Billboard mode is enabled, the object's -Z axis will always "
 "face the camera."
 msgstr ""
+"**Activé:** Le mode ``Billboard`` est activé. L'axe Z de l'objet fera "
+"toujours face à la caméra."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:239
 msgid ""
 "**Y-Billboard:** The object's X axis will always be aligned with the camera."
-msgstr ""
+msgstr "**Y-Billboard:** L'axe X de l'objet fera toujours face à la caméra."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:240
 msgid ""
@@ -32974,10 +33058,12 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:245
 msgid "The above options are only enabled for Particle Billboard."
 msgstr ""
+"Les options ci-dessus sont seulement activées pour les particules de type "
+"BillBoard."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:248
 msgid "Grow"
-msgstr ""
+msgstr "Croître"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:250
 msgid "Grows the object vertices in the direction pointed by their normals:"
@@ -32989,6 +33075,9 @@ msgid ""
 "This is commonly used to create cheap outlines. Add a second material pass, "
 "make it black and unshaded, reverse culling (Cull Front), and add some grow:"
 msgstr ""
+"Cette option est communément utilisée pour créer des contours simplement. "
+"Ajoutez un second matériau, de couleur noire et sans ombrage, inverser son "
+"mode de Culling et ajouter du repoussement :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:261
 msgid "Use Alpha Scissor"
@@ -33047,6 +33136,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:287
 msgid "Albedo color and texture can be used together as they are multiplied."
 msgstr ""
+"La couleur d'albédo et la texture peuvent être utilisés ensemble, étant "
+"multipliés."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:289
 msgid ""
@@ -33054,6 +33145,10 @@ msgid ""
 "transparency. If you use a color or texture with *alpha channel*, make sure "
 "to either enable transparency or *alpha scissoring* for it to work."
 msgstr ""
+"Le *canal Alpha* de la couleur d'albédo et des textures est également "
+"utilisé pour la transparence de l'objet. Si vous utilisez une couleur ou une "
+"texture avec un *canal alpha*, assurez-vous d'activer la transparence ou "
+"l'*alpha scissoring* pour que cela fonctionne."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:294
 msgid "Metallic"
@@ -33135,6 +33230,11 @@ msgid ""
 "Godot, only the red and green channels of normal maps are used for wider "
 "compatibility."
 msgstr ""
+"Une carte de normale permet l'utilisation d'une texture pour ajouter des "
+"détails fins à une forme. Ce n'est pas la géométrie de l'objet qui est "
+"modifiée, mais seulement l'angle d’incidence de la lumière sur sa surface. "
+"Dans Godot, seulement les canaux rouges et verts des cartes de normale sont "
+"utilisés pour une plus grande compatibilité."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:340
 msgid "Rim"
@@ -33233,6 +33333,12 @@ msgid ""
 "objects, but it produces a realistic depth effect for textures. For best "
 "results, *Depth* should be used together with normal mapping."
 msgstr ""
+"Utiliser une carte de profondeur sur un matériau produit un balayage "
+"utilisant l'émission de rayons pour simuler le déplacement des reliefs dans "
+"la direction du point de vue. Il ne s'agit pas d'un ajout de géométrie mais "
+"d'une illusion de profondeur. Cela peut ne pas marcher pour les objets "
+"complexes, mais cela produit des effets réalistes sur les textures. La "
+"*profondeur* devrait être utilisé avec une carte de normales."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:393
 msgid "Subsurface Scattering"
@@ -33327,6 +33433,9 @@ msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
 msgstr ""
+"Dans l'image ci-dessous, vous pouvez voir que toutes les primitives "
+"utilisent le même matériau avec l'option de triplan global, la texture de "
+"brique s'étend de façon ininterrompue d'un objet à l'autre."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:449
 msgid "Proximity and distance fade"
@@ -33511,6 +33620,9 @@ msgid ""
 "**Bias**: When this parameter is too small, self shadowing occurs. When too "
 "large, shadows separate from the casters. Tweak to what works best for you."
 msgstr ""
+"**Biais:** Si ce paramètre est trop bas, l'ombre de l'objet risque de se "
+"projeter sur lui-même. Si elle est trop élevée, l'ombre se sépare de l'objet "
+"à son origine. Régler pour obtenir le meilleur résultat visuel."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:51
 msgid ""
@@ -34554,16 +34666,23 @@ msgid ""
 "secondary texture coordinates that ensures any face in the object has its "
 "own place in the UV map. Faces must not share pixels in the texture."
 msgstr ""
+"Tout d’abord, pour que le Lightmapper puisse faire quoi que ce soit, les "
+"objets à préparer ont besoin d’un calque UV2 et d’une taille de texture. Une "
+"couche UV2 est un ensemble de coordonnées de texture secondaires "
+"garantissant que chaque face de l'objet a sa propre place dans la carte UV. "
+"Les faces ne doivent pas partager de pixels dans la texture."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:47
 msgid ""
 "There are a few ways to ensure your object has a unique UV2 layer and "
 "texture size:"
 msgstr ""
+"Il y a plusieurs façons de s'assurer qu'un objet dispose d'un calque UV2 et "
+"une taille de texture unique :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:50
 msgid "Unwrap from your 3D DCC"
-msgstr ""
+msgstr "Déplier depuis votre logiciel 3D"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:52
 msgid ""
@@ -34573,10 +34692,16 @@ msgid ""
 "lot, the texture generation process can be quite costly within Godot, so "
 "having it unwrapped before import can be faster."
 msgstr ""
+"Une option est de le faire depuis votre logiciel de modélisation 3D. Bien "
+"que peu recommandée,  cette approche est listée ici pour que vous sachiez "
+"qu'elle existe. L'avantage principal de cette méthode est de contourner le "
+"processus de génération de texture natif de Godot, celui-ci utilisant "
+"d'importantes ressources sur des objets complexes. Déplier  depuis votre "
+"logiciel 3D permet d’accélérer l'importation."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:58
 msgid "Simply do an unwrap on the second UV2 layer."
-msgstr ""
+msgstr "Il suffit simplement de dérouler la deuxième couche d’UV2."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:62
 msgid ""
@@ -58780,9 +58905,8 @@ msgid "Animate vertices, like tree leaves or grass."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:23
-#, fuzzy
 msgid "Create custom particle code."
-msgstr "Création de types de données personnalisés"
+msgstr "Coder des particules personnalisées."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:26
 msgid ""
@@ -68856,9 +68980,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:47
-#, fuzzy
 msgid "HDR"
-msgstr "HUD"
+msgstr "HDR"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
 msgid ""
@@ -68950,9 +69073,8 @@ msgid "Ambient light"
 msgstr "Lumière ambiante"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:90
-#, fuzzy
 msgid "GIProbes"
-msgstr "GI Probes"
+msgstr "GIProbes"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:92
 msgid ""
@@ -68962,9 +69084,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:96
-#, fuzzy
 msgid "Contact shadows"
-msgstr "Lumières et Ombres"
+msgstr "Ombres de contact"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:98
 msgid ""
@@ -68973,9 +69094,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:101
-#, fuzzy
 msgid "Light performance"
-msgstr "Performance"
+msgstr "Performance de la lumière"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:103
 msgid ""
@@ -68994,9 +69114,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:115
-#, fuzzy
 msgid "Blend shapes"
-msgstr "Formes de collisions"
+msgstr "Mélange de formes"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:117
 msgid "Blend shapes are not supported in GLES2."
@@ -77701,7 +77820,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:4
 msgid "Channels"
-msgstr "Chaines"
+msgstr "Canaux"
 
 #: ../../docs/community/channels.rst:6
 msgid ""
@@ -77724,8 +77843,8 @@ msgid ""
 "A brief overview over these channels is also available on the `website "
 "<https://godotengine.org/community>`_."
 msgstr ""
-"Une bref vue d'ensemble sur les chaines est également disponible sur le "
-"`site internet <https://godotengine.org/community>`_."
+"Une bref vue d'ensemble sur les canaux est également disponible sur le `site "
+"internet <https://godotengine.org/community>`_."
 
 #: ../../docs/community/channels.rst:13
 msgid "Q & A"

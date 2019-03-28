@@ -17,7 +17,10 @@
 # Luana Pau <ezhael@gmail.com>, 2018.
 # Marabese Fabio <marabesefabio@outlook.it>, 2019.
 # Marco Galli <mrcgll98@gmail.com>, 2019.
+# Marco Melorio <m.melorio@icloud.com>, 2019.
+# Marco <rodomar705@gmail.com>, 2019.
 # Mario Rossi <mr_do@hotmail.it>, 2018.
+# MassiminoilTrace <omino.gis@gmail.com>, 2019.
 # Matteo <matteo.guglielmetti@hotmail.it>, 2018.
 # Myself <whatamidoing.wt@gmail.com>, 2018.
 # Nicolas Bonet <nicolasbonet2004@gmail.com>, 2018.
@@ -34,8 +37,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-10 11:47+0100\n"
-"PO-Revision-Date: 2019-02-10 12:39+0000\n"
-"Last-Translator: salahzar stenvaag <salahzar@gmail.com>\n"
+"PO-Revision-Date: 2019-03-28 08:39+0000\n"
+"Last-Translator: MassiminoilTrace <omino.gis@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -43,7 +46,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -277,7 +280,6 @@ msgstr ""
 "limitazione."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
@@ -292,7 +294,6 @@ msgid "About Godot Engine"
 msgstr "Riguardo a Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
@@ -303,7 +304,6 @@ msgstr ""
 "libero di utilizzare come una breve descrizione di Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -352,7 +352,6 @@ msgid "About the documentation"
 msgstr "Riguardo la documentazione"
 
 #: ../../docs/about/introduction.rst:48
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -394,7 +393,6 @@ msgstr ""
 "attribuzione \"Juan Linietsky, Ariel Manzur and the Godot Engine community\"."
 
 #: ../../docs/about/introduction.rst:66
-#, fuzzy
 msgid "Organization of the documentation"
 msgstr "Organizzazione della documentazione"
 
@@ -432,14 +430,13 @@ msgstr ""
 "inizio per tutti i nuovi utenti."
 
 #: ../../docs/about/introduction.rst:80
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-"La sezione :ref:`sec-tutorials` d'altro canto può essere letta in caso di "
-"necessità ed in ogni ordine. Questa sezione contiene vari tutorial e "
-"documentazione orientati verso specifiche funzionalità del sistema."
+"La sezione :ref:`sec-tutorials` può essere letta in caso di necessità ed in "
+"ogni ordine. Questa sezione contiene vari tutorial e documentazione "
+"orientati verso specifiche funzionalità del sistema."
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -453,7 +450,6 @@ msgstr ""
 "l'editor."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -576,7 +572,6 @@ msgstr ""
 "di Godot."
 
 #: ../../docs/about/faq.rst:28
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
@@ -724,11 +719,12 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Per quanto riguarda le nuove lingue, il supporto è possibile tramite terze "
-"parti utilizzando i servizi GDNative / NativeScript / PluginScript. (Vedere "
-"domanda sui plugin qui sotto.) Attualmente sono in corso lavori, ad esempio, "
-"su binding non ufficiali per Godot to `Python <https://github.com/touilleMan/"
-"godot-python>`_ e `Nim <https://github.com/pragmagic/godot-nim>`_."
+"Per quanto riguarda l’utilizzo di nuovi linguaggi di programmazione, il "
+"supporto è possibile tramite terze parti utilizzando i servizi GDNative / "
+"NativeScript / PluginScript. (Vedere domanda sui plugin qui sotto.) "
+"Attualmente sono in corso lavori, ad esempio, su binding non ufficiali per "
+"Godot per `Python <https://github.com/touilleMan/godot-python>`_ e `Nim "
+"<https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -749,9 +745,9 @@ msgstr ""
 "zero per massimizzare il potenziale di Godot nella minor quantità di codice, "
 "offrendo sia ai principianti che agli sviluppatori esperti di sfruttare i "
 "punti di forza di Godot al meglio. Se avete già scritto qualcosa in un "
-"linguaggio come Python allora vi sentirete a vostro agio. Per esempio, la "
-"cronologia, e una panoramica completa del potere GDScript offre, controllare "
-"il `GDScript scripting guide <gdscript_basics>`_."
+"linguaggio come Python allora vi sentirete a vostro agio. Per esempi, "
+"evoluzione e una panoramica completa delle capacità che GDScript offre, "
+"potete leggere `GDScript scripting guide <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -928,11 +924,10 @@ msgstr ""
 "<http://opensource.org/licenses/MIT>`_ di Godot."
 
 #: ../../docs/about/faq.rst:159
-#, fuzzy
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
-"Sarà [inserire SDK proprietari come PhysX, Gameworks, ecc] supportato in "
+"Sarà [inserire SDK proprietari come FMOD, Gameworks, ecc] supportato in "
 "Godot?"
 
 #: ../../docs/about/faq.rst:161
@@ -948,7 +943,6 @@ msgstr ""
 "proprietari in quanto integrarli andrebbe contro lo spitito di Godot."
 
 #: ../../docs/about/faq.rst:166
-#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
@@ -1417,7 +1411,6 @@ msgid "|image7|"
 msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
-#, fuzzy
 msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr ""
 "Se il percorso della cartella è corretto vedrai un segno di spunta verde."
@@ -1432,14 +1425,13 @@ msgid "Your first look at Godot’s editor"
 msgstr "Una prima occhiata all'editor di Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
 "Benvenuti in Godot! Con il progetto aperto dovreste vedere l'interfaccia "
-"dell'editor con il l'area di lavoro 3D attivo. In alto nell'interfaccia è "
+"dell'editor con il l'area di lavoro 3D attiva. In alto nell'interfaccia è "
 "possibile cambiare lo spazio di lavoro. Facendo click su 2D si passerà allo "
 "spazio di lavoro 2D."
 
@@ -2788,7 +2780,7 @@ msgstr "Etichetta"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr "Bottone"
+msgstr "Pulsante"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"
@@ -2933,6 +2925,9 @@ msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
 msgstr ""
+"Mentre useremo il metodo del codice per il resto di questa serie di "
+"tutorial, parliamo di come funziona l'interfaccia dell'editor per "
+"riferimenti futuri."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:194
 msgid ""
@@ -13085,7 +13080,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr ""
+msgstr "Padding"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -13279,7 +13274,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
-msgstr ""
+msgstr "Prefisso"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
@@ -13949,7 +13944,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr ""
+msgstr "Percorso Risorsa"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -14552,7 +14547,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
-msgstr ""
+msgstr "Funzionalità"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -15970,7 +15965,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
 #: ../../docs/development/file_formats/tscn.rst:153
 msgid "Skeleton"
-msgstr ""
+msgstr "Scheletro"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
@@ -21929,7 +21924,7 @@ msgstr ""
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:342
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:703
 msgid "Transform"
-msgstr ""
+msgstr "Trasforma"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
@@ -45541,7 +45536,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:112
 #: ../../docs/tutorials/viewports/viewports.rst:38
 msgid "Input"
-msgstr ""
+msgstr "Ingresso"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:114
 msgid ""
@@ -64039,7 +64034,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
-msgstr "Set"
+msgstr "Imposta"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"

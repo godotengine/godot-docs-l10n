@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-10 11:47+0100\n"
-"PO-Revision-Date: 2019-03-10 09:56+0000\n"
+"PO-Revision-Date: 2019-03-28 08:39+0000\n"
 "Last-Translator: Wataru Onuki <watonu@magadou.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.5.1-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -1087,6 +1087,9 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"このチュートリアルでは、Godotのインターフェースを駆け足で紹介していきます。**"
+"プロジェクトマネージャー、ドック、ワークスペース**と、使い始めるのに必要なも"
+"のすべてを見ていきます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
@@ -1119,7 +1122,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:48
 msgid "|image1|"
-msgstr ""
+msgstr "|image1|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:23
 msgid ""
@@ -1133,7 +1136,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:58
 msgid "|image2|"
-msgstr ""
+msgstr "|image2|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid "Create or import a project"
@@ -1151,7 +1154,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:83
 msgid "|image3|"
-msgstr ""
+msgstr "|image3|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:36
 msgid ""
@@ -1165,7 +1168,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:88
 msgid "|image4|"
-msgstr ""
+msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:41
 msgid ""
@@ -1173,9 +1176,8 @@ msgid ""
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"When you see the green tick on the right, エンジンが空フォルダを確認すると "
-"``Create`` をクリックすることができます。Godotはプロジェクトを作成しエディ"
-"ターを開きます。"
+"右に緑のチェックマークがある場合は、空フォルダーだという意味であり、 ``作成``"
+"をクリックするとGodotはプロジェクトを作成してからエディターを開きます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
 msgid ""
@@ -1189,7 +1191,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:92
 msgid "|image5|"
-msgstr ""
+msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:50
 msgid ""
@@ -1204,7 +1206,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:113
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
 msgid "When the folder path is correct, you'll see a green checkmark."
@@ -1213,7 +1215,7 @@ msgstr "フォルダパスが正しいときには、緑色のチェックマー
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:121
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
@@ -1233,7 +1235,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:142
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
 msgid "Now you should see this interface, with empty docks on the right side."
@@ -1270,6 +1272,8 @@ msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
+"右側にある**シーン・ドック**には開いているシーンの中身がリストされていて、右"
+"下には**インスペクター**があります。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:161
@@ -1282,11 +1286,14 @@ msgid ""
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
+"中央上部にある**ツールバー**には、シーン内のオブジェクトを動かしたり、サイズ"
+"変更やロックするためのツールが並んでいます。ワークスペースごとに違うものに変"
+"わります。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:168
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 msgid ""
@@ -1294,20 +1301,25 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
+"**下パネル**はデバッグコンソール、アニメーションエディター、オーディオミキ"
+"サーなどのためにあります。これらは幅広で貴重なスペースを消費するため、既定で"
+"は折りたたまれています。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:115
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid "The workspaces"
-msgstr ""
+msgstr "ワークスペース"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
+"上に４個あるのがワークスペースのボタンです。(2D、3D、Script、および"
+"AssetLib)。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
 msgid ""
@@ -1315,36 +1327,44 @@ msgid ""
 "games, the 2D workspace is where you'll build your interfaces. Press F1 to "
 "access it."
 msgstr ""
+"**2Dワークスペース**はすべての種類のゲームで使うことになります。2Dゲームのみ"
+"ならず、インターフェースの作成も2Dワークスペースで行います。F1キーで開けま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
-#, fuzzy
 msgid "|image15|"
-msgstr "|image0|"
+msgstr "|image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
+"**3Dワークスペース**では、メッシュや光源への作業や、3Dゲームのレベルデザイン"
+"が行えます。F2キーで開けます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
 msgid "|image16|"
-msgstr ""
+msgstr "|image16|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid ""
 "Notice the text [perspective] under the toolbar, it is a button that opens a "
 "list of options related to the 3D viewport."
 msgstr ""
+"ツールバーの下にある[透視投影]を見てください。これはボタンで、押すと3Dビュー"
+"ポートに関するオプションがリスト表示されます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
 msgid "|image20|"
-msgstr ""
+msgstr "|image20|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:119
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
+"**3Dワークスペース**の詳細については:ref:`doc_introduction_to_3d`をご覧くださ"
+"い。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:121
 msgid ""
@@ -1352,20 +1372,25 @@ msgid ""
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
 "to search the reference."
 msgstr ""
+"**Script**ワークスペースは、デバッガーや豊富な自動補完、および組み込みのコー"
+"ドリファレンスを備えた、完全なコードエディターです。F3キーで開くことができ、"
+"またF4キーでリファレンスを検索できます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:125
 msgid "|image17|"
-msgstr ""
+msgstr "|image17|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:127
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
+"最後に**AssetLib**はあなたのプロジェクトで使える、フリーのアドオン、スクリプ"
+"トやアセットをそろえたライブラリです。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
 msgid "Modify the interface"
-msgstr ""
+msgstr "インターフェースのカスタマイズ"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""
@@ -1373,39 +1398,47 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio for instance."
 msgstr ""
+"Godotのインターフェースは一つのウィンドウに収まっています。複数のスクリーンに"
+"分割することはできませんが、AtomやVisual Studioのような外部コードエディターは"
+"使うことができます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
 msgid "Move and resize docks"
-msgstr ""
+msgstr "ドックの移動とサイズ変更"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr ""
+"ドックやパネルの縁をクリックしてドラッグすると、水平および垂直方向にサイズ変"
+"更できます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:143
 msgid "|image18|"
-msgstr ""
+msgstr "|image18|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
+"ドックの上部にある３つの点のアイコンをクリックすると、位置を変更できます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid "|image19|"
-msgstr ""
+msgstr "|image19|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
+"``エディタ``メニューの``エディタ設定``から、エディタの見た目を細かく調整でき"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr ""
+msgstr "シーンとノード"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
 msgid ""
@@ -1414,6 +1447,10 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"ちょっとの間、ゲーム開発者でない自分を想像してみてください。代わりにあなたは"
+"今、シェフです！　ヒップスターの服から、コック帽とダブル仕立てのジャケットに"
+"着替えましょう。これからゲームをつくる代わりに、ゲストのために新たに美味しい"
+"レシピを考えるのです。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -1422,6 +1459,9 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
+"では、シェフはどうやってレシピをつくるのでしょう？　レシピは２つに分けられま"
+"す。ひとつは材料の種類で、もうひとつはその調理法です。これにより、レシピに"
+"従ってつくれば誰でも、あなたの卓越した料理を味わうことができるのです。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -1429,19 +1469,24 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
+"Godotでのゲーム作りもとても似た感覚です。このエンジンを使うときはキッチンにい"
+"るような感覚になります。このキッチンでは、*ノード*は料理に使う、冷蔵庫にいっ"
+"ぱいの新鮮な材料です。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
+"ノードにはたくさんの種類があります。画像を表示するためのものや、音を再生した"
+"り、3Dモデルを表示するためのもの等、数十種類があります。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:87
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:46
 #: ../../docs/development/file_formats/tscn.rst:26
 msgid "Nodes"
-msgstr ""
+msgstr "ノード"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -1450,32 +1495,37 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
+"まずは基本から始めましょう。ノードはゲームを構築する際に基礎となる要素です。"
+"上で触れたように、ノードはさまざまな機能に特化することができます。しかし、ど"
+"のようなノードも常に以下の性質をもっています。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr ""
+msgstr "名前がある。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr ""
+msgstr "編集できるプロパティを持つ。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
-msgstr ""
+msgstr "毎フレームで処理するコールバックを受け取れる。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr ""
+msgstr "拡張できる(機能を追加するため)。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to another node as a child."
-msgstr ""
+msgstr "ほかのノードを子に持てる。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
+"この最後のものが重要です。ノードは他のノードたちを子に持てます。こうやって配"
+"置していくと、ノードは**ツリー**になります。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -1483,6 +1533,9 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
+"Godotでは、このようにノードを配置できることが、プロジェクトを構築するための強"
+"力な道具となっています。異なる機能を持った異なるノードを組み合わせれば、さら"
+"に複雑な機能を作り出せます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -1490,41 +1543,50 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
+"これを次の何節かにわたって掘り下げていくので、まだうまく掴めなくても大丈夫で"
+"す。今はただ、ノードというものが存在し、このように配置できるという重要点のみ"
+"覚えておいてください。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:75
 msgid "Scenes"
-msgstr ""
+msgstr "シーン"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
 "Now that the concept of nodes has been defined, the next logical step is to "
 "explain what a Scene is."
 msgstr ""
+"ノードの概念を定義したので、つぎはシーンについて説明するのが適当でしょう。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
 msgid ""
 "A scene is composed of a group of nodes organized hierarchically (in tree "
 "fashion). Furthermore, a scene:"
 msgstr ""
+"シーンは、ツリーの形で階層構造をしたノードのグループから構成されます。それに"
+"加え、シーンは："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has one root node."
-msgstr ""
+msgstr "常にルートノードをひとつ持つ。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr ""
+msgstr "ディスクに保存し、また読み込める。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr ""
+msgstr "*インスタンス化*できる (詳しくは後で)。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
+"ゲームを走らせることは、シーンを走らせることです。プロジェクトは複数のシーン"
+"を持てますが、しかしゲームを開始するために、どれか一つをメインシーンに指定す"
+"る必要があります。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -1532,10 +1594,13 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
+"基本的に、Godotエディターは**シーンエディター**です。2Dおよび3Dのシーンや、"
+"ユーザーインターフェースを編集するツールを多く備えていますが、しかし基礎とし"
+"ているのは、シーンやそれを構成するノードを編集するという概念だけです。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 msgid "Creating a new project"
-msgstr ""
+msgstr "プロジェクトの新規作成"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
 msgid ""
@@ -1543,18 +1608,25 @@ msgid ""
 "a long tradition in tutorials, we'll start with a \"Hello World\" project. "
 "This will introduce us to using the editor."
 msgstr ""
+"実例を用いて、これらの抽象概念をより具体化していきましょう。チュートリアルの"
+"長い伝統にしたがって \"Hello World\" プロジェクトから始めます。エディターの使"
+"い方をこれで紹介していきます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
 msgid ""
 "If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
+"プロジェクトの外に置いたGodot実行ファイルを起動すると、まずプロジェクトマネー"
+"ジャーが現れます。これは開発者がプロジェクトを管理するためのものです。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
 msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name \"New Project\":"
 msgstr ""
+"新しいプロジェクトを作るには「新規プロジェクト」をクリックします。プロジェク"
+"トを置くパスを指定し、名前を「新しいプロジェクト」にしてください。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 #: ../../docs/getting_started/editor/external_editor.rst:32
@@ -1567,6 +1639,8 @@ msgid ""
 "Once you've created the \"New Project\", then open it. This will open the "
 "Godot editor:"
 msgstr ""
+"「新しいプロジェクト」を作成したら、それを開きましょう。これでGodotエディタが"
+"開きます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
 msgid ""
@@ -1574,23 +1648,29 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
+"前述の通り、Godotでのゲーム作りはキッチンで作業している感覚に似ています。では"
+"冷蔵庫を開けて、いくつか新鮮なノードをプロジェクトに加えてみましょう。まずは"
+"画面に表示する「Hello World」のメッセージから始めます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
 msgid ""
 "To do this, press the \"New Node\" button (which looks like a plus symbol):"
-msgstr ""
+msgstr "そのためには「新しいノード」のボタン(＋)を押します:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
+"するとノード作成のダイアログが開いて、作成できるノードの長いリストが表示され"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
+"そこからまず「Label」ノードを選択します。検索するのが恐らく一番早いでしょう。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid "And finally, create the Label! A lot happens when Create is pressed:"

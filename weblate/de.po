@@ -7,11 +7,13 @@
 # Arthur S. Muszynski <artism90@gmail.com>, 2018-2019.
 # Carsten Nikiel <carsten@nikiel.de>, 2018-2019.
 # chillhelm <wilhelm@neubert.online>, 2018.
+# Constantin <commandr@gmx.net>, 2019.
 # DafabHoid <github@dafabhoid.de>, 2018.
 # datenbauer <d-vaupel@web.de>, 2019.
 # David <david.breier@outlook.de>, 2018.
 # Eduard Albrecht <eddysoulo91@googlemail.com>, 2019.
 # Ettore Atalan <atalanttore@googlemail.com>, 2019.
+# Fabian Böhle <mail@fabianboehle.de>, 2019.
 # FlamyAT <Game.Couler@gmail.com>, 2018.
 # Florian Findeiss <droddl@gmx.de>, 2018.
 # Gero <me@gero.io>, 2018.
@@ -23,9 +25,11 @@
 # Karl <karl.bittner@outlook.com>, 2019.
 # Katharina Wendel <akd002000nemerb@web.de>, 2019.
 # kdankert <k.dankert@wtnet.de>, 2018.
+# kira rose <mskirarose@gmail.com>, 2019.
 # Leif Bernsdorf <leif.bernsdorf@gmail.com>, 2018.
 # Lennard <lefl65@gmail.com>, 2018.
 # Linus Fessler <linusfessler@gmail.com>, 2018.
+# Linux User <no-ads@mail.de>, 2019.
 # M. Feil <git@sgdw.de>, 2018.
 # Manuel Schade <sprivat@protonmail.com>, 2019.
 # Mark B <berezun.mark@gmail.com>, 2018.
@@ -34,7 +38,7 @@
 # Mathias Schmalisch <mathias.schmalisch@gmail.com>, 2018.
 # McDonnough <psbaechli@gmail.com>, 2019.
 # Moritz Jannasch <moritz.jannasch@gmail.com>, 2019.
-# Neicul <neicul@gmx.de>, 2018.
+# Neicul <neicul@gmx.de>, 2018-2019.
 # Nijco <heijnk@posteo.de>, 2018.
 # nimradium <nimra242001@gmail.com>, 2018.
 # Otto Hakstetter <otto@hakstetter.de>, 2018.
@@ -62,8 +66,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-10 11:47+0100\n"
-"PO-Revision-Date: 2019-03-10 09:56+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2019-03-28 08:39+0000\n"
+"Last-Translator: Fabian Böhle <mail@fabianboehle.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -71,7 +75,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5.1-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -575,7 +579,7 @@ msgid ""
 msgstr ""
 "Alle Inhalte dieser Dokumentation werden unter der freizügigen Creative "
 "Commons Attribution 3.0-Lizenz (`CC-BY 3.0 <https://creativecommons.org/"
-"licenses/by/3.0/>`_) unter dem Namen \"Juan Linietsky, Ariel Manzur and the "
+"licenses/by/3.0/>`_) und dem Namen \"Juan Linietsky, Ariel Manzur and the "
 "Godot Engine community\" veröffentlicht."
 
 #: ../../docs/about/faq.rst:20
@@ -627,11 +631,11 @@ msgstr "Windows"
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 #: ../../docs/tutorials/misc/jitter_stutter.rst:78
 msgid "macOS"
-msgstr "macOS"
+msgstr "Mac OS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
-msgstr "X11 (Linux, \\*BSD)"
+msgstr "X11"
 
 #: ../../docs/about/faq.rst:39
 msgid "**For exporting your games:**"
@@ -761,7 +765,6 @@ msgid "What is GDScript and why should I use it?"
 msgstr "Was ist GDScript und warum sollte ich es verwenden?"
 
 #: ../../docs/about/faq.rst:90
-#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -772,12 +775,13 @@ msgid ""
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
 "GDScript ist Godots integrierte Skriptsprache. Sie wurde von Grund auf "
-"entwickelt, um das Potential von Godot mit möglichst wenig Code auszunutzen "
-"und ist sowohl für Anfänger als auch erfahrene Entwickler ausgelegt. Wenn Du "
-"schon mal etwas in einer Programmiersprache wie Python entwickelt hast, "
-"wirst Du Dich bei GDScript schnell heimisch fühlen. Für Beispiele, die "
-"Versionshistorie und eine komplette Übersicht von GDScript, schaue Dir die "
-"`GDScript-Anleitung <gdscript_basics>`_ an."
+"entwickelt, um das Potential von Godot mit möglichst wenig Code "
+"auszuschöpfen, sodass sowohl Anfänger als auch erfahrene Entwickler von "
+"Godots Stärken profitieren können. Wenn du schon mal etwas in einer "
+"Programmiersprache wie Python entwickelt hast, wirst du dich bei GDScript "
+"schnell wie zu Hause fühlen. Für Beispiele, eine Versionshistorie und eine "
+"komplette Übersicht, was GDScript so bietet, schau dir die `GDScript-"
+"Anleitung <gdscript_basics>`_ an."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -2502,16 +2506,15 @@ msgid "Scripting"
 msgstr "Scripting"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
-#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Vor Godot 3.0 gab es zum Programmieren von Spielen nur eine "
-"Programmiersprache zur Auswahl, nämlich :ref:`doc_gdscript`. Heutzutage "
-"unterstütz Godot vier (ja, vier!) offizielle Programmiersprachen und bietet "
-"die Möglichkeit zusätzliche Sprachen dynamisch hinzuzufügen!"
+"Vor Godot 3.0 war für das Programmieren eines Spiels nur eine Sprache "
+"verfügbar, nämlich :ref:`doc_gdscript`. Heutzutage unterstützt Godot vier "
+"(ja, vier!) offizielle Programmiersprachen und bietet die Möglichkeit, "
+"zusätzliche Sprachen dynamisch hinzuzufügen!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
@@ -2552,15 +2555,14 @@ msgid "GDScript"
 msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript` ist, wie oben erwähnt, die Hauptsprache in Godot. Diese "
-"zu verwenden hat ein paar Vorteile gegenüber anderer Sprachen in Godot, da "
-"sie gut in Godot integriert ist:"
+":ref:`doc_gdscript` ist, wie oben erwähnt, die Hauptsprache in Godot. Sie zu "
+"verwenden hat ein paar Vorteile gegenüber anderen Sprachen, da sie gut in "
+"Godot integriert ist:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -2773,17 +2775,16 @@ msgstr ""
 "kann."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
-"Bitte lies die :ref:`doc_gdscript` Referenz bevor Du fortfährst. Es handelt "
-"sich um eine Sprache, die so konzipiert ist, dass sie einfach ist und die "
-"Referenz kurz ist. Daher dauert es nicht mehr als ein paar Minuten, um sich "
-"einen Überblick über die Konzepte zu verschaffen."
+"Bitte lies die :ref:`doc_gdscript`-Referenz, bevor du fortfährst. GDScript "
+"wurde so entworfen, dass die Sprache einfach zu verstehen und ihre Referenz "
+"kurz ist. Daher dauert es nicht mehr als ein paar Minuten, um sich einen "
+"Überblick über ihre Konzepte zu verschaffen."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
@@ -7424,16 +7425,15 @@ msgstr ""
 "nebendran"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
 "them into the ``VBoxContainer``. The nodes should position automatically."
 msgstr ""
 "Wähle im Node-Baum alle ``TextureRect``-Nodes, die auf die linke Seite "
-"gehören: das Loge, die Menüpunkte und die Versionsangabe. Gebe sie mit Drag-"
-"and-Drop in den ``VBoxContainer``. Ziehe dann den Illustrationsnode in den "
-"``CenterContainer``. Die Nodes sollten selbstständig ausgerichtet werden."
+"gehören: das Logo, die Menüpunkte und die Versionsangabe. Ziehe sie per Drag-"
+"and-Drop in den ``VBoxContainer``. Die Nodes sollten sich selbstständig "
+"positionieren."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
 msgid "Containers automatically place and resize textures"
@@ -7452,7 +7452,6 @@ msgid "There's no space between the logo and the other UI elements"
 msgstr "Zwischen dem Logo und den anderen Oberflächenelementen ist kein Platz"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the ``Size Flags`` category and click "
@@ -7463,13 +7462,13 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
-"Um die Charaktere rechts mittig auszurichten, werden wir einen "
-"``CenterContainer`` benutzen. Füge einen ``CenterContainer`` als Kindknoten "
-"des ``HBoxContainer`` hinzu. Gehe dann im Inspektor hinunter zu der "
-"Kategorie ``Size Flags`` und klicke auf das Feld rechts von der Eigenschaft "
-"``Vertical`` und kreuze ``Expand`` sowie ``Fill`` an. Ebenso für die "
-"Eigenschaft ``Horizontal``. Ziehe schließlich die Charaktere in den "
-"``CenterContainer``. Das Element wird automatisch zentriert."
+"Um die Figuren rechts mittig auszurichten, verwenden wir einen "
+"``CenterContainer``. Füge einen ``CenterContainer`` als Kindknoten des "
+"``HBoxContainer`` hinzu. Scrolle dann im Inspektor zur Kategorie ``Size "
+"Flags`` und klicke auf das Feld rechts von der Eigenschaft ``Vertical`` und "
+"kreuze ``Expand`` sowie ``Fill`` an. Ebenso für die Eigenschaft "
+"``Horizontal``. Ziehe schließlich die Figuren in den ``CenterContainer``. "
+"Das Element wird automatisch zentriert."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid ""
@@ -8312,8 +8311,8 @@ msgid ""
 "An expanding container eats all the space it can from its parent, pushing "
 "everything else along the way"
 msgstr ""
-"Ein expandierender Container füllt den ganzen Platz aus, den er von seinem "
-"Elternknoten bekommen kann, alles andere wird dabei verdrängt"
+"Ein wachsender Container füllt den ganzen Platz aus, den er von seinem "
+"Elternknoten bekommen kann, wobei er alles andere dabei verdrängt"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:335
 msgid "Turn the bar and counter into reusable UI components"
@@ -8378,6 +8377,14 @@ msgid ""
 "nodes, we're ready to inherit this template and create the life bar. It's "
 "the same for the ``Counter``."
 msgstr ""
+"Dann, markiere das ``Counter`` Node und mache dasselbe. Rechtsklick, "
+"``Speichere Zweig als Szene``, und speichere es als ``Counter.tscn``. Eine "
+"new bearbeitbares Szenenicon erscheint auf der Rechten Seite der Nodes auf "
+"dem Szenenzweig. Klicke auf das nächste von ``Bar``, um die "
+"korrespondierende Szene zu öffnen. Verändere die Größe des ``Bar`` Nodes, "
+"sodass ihre bounding box zum Inhalt passt. Für den Weg wie wir Controls "
+"benennen und platzieren sind wir jetzt fertig, um das Template zu vererben "
+"und erstellen eine Lebensbar. Es ist dasselbe für ``Counter``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
 msgid "With no extra changes, our Bar is ready to use"
@@ -8428,6 +8435,9 @@ msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
+"Ein \"Neu laden\" Symbol erscheint neben den Eigenschaften, die Sie "
+"überschreiben möchten. Klicken Sie auf das Symbol, um den Wert auf den "
+"Standardwert der Mutterszene zurückzusetzen."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:400
 msgid ""
@@ -8436,10 +8446,16 @@ msgid ""
 "override properties, resources and add extra nodes and scripts to extend its "
 "functionality."
 msgstr ""
+"Man kann sich die Szenenvererbung wie einen Nodebaum vorstellen, oder das "
+"''extends'' Schlüsselwort von GDScript. Eine vererbte Szene macht alles "
+"genauso wie ihr Elternszene, allerdings kann man Eigenschaften und "
+"Ressourcen überschreiben und weitere Nodes und Skripte hinzufügen um ihre "
+"Funktionalität zu erweitern."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:406
+#, fuzzy
 msgid "Inherit the Bar Scene to build the LifeBar"
-msgstr ""
+msgstr "Erbe von der Leistenszene um einen Lebensbalken zu erstellen."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
 msgid ""
@@ -8476,13 +8492,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
 msgid "Design the EnergyBar"
-msgstr ""
+msgstr "Entwerfe die Energieleiste"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:438
 msgid ""
 "We already setup the ``LifeBar``'s design with the main ``Bar`` scene. Now "
 "we need the ``EnergyBar``."
 msgstr ""
+"Wir haben schon das Design für die Lebensleiste mit der Leistenszene "
+"eingerichtet. Nun brauchen wir die Energieleiste."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:441
 msgid ""
@@ -8546,6 +8564,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:488
 msgid "The EP Count widget, with a smaller font than its HP counterpart"
 msgstr ""
+"Das Element, welches die Erfahrung zählt, jedoch mit einer kleineren "
+"Schriftart als ihr Gesundheitsgegenstück"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:490
 msgid ""
@@ -8574,7 +8594,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:509
 msgid "The Count looks better now it's a bit smaller"
-msgstr ""
+msgstr "Der Zähler sieht nun, da er ein wenig kleiner ist, besser aus"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
 msgid ""
@@ -8587,7 +8607,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
 msgid "Prepare the bomb and emerald counters"
-msgstr ""
+msgstr "Bereite die Zähler für die Bomben und die Smaragde vor"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
 msgid ""
@@ -8621,7 +8641,7 @@ msgstr "Der Smaragdzähler sollte so aussehen"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
-msgstr ""
+msgstr "Füge nun die UI-Komponente der finalen Oberfläche hinzu"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:549
 msgid ""
@@ -8658,7 +8678,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
 msgid "Now both counters have a decent size"
-msgstr ""
+msgstr "Nun haben beide Zähler eine angemessene Größe"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:579
 msgid ""
@@ -8680,7 +8700,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:593
 msgid "The 2 bars align perfectly"
-msgstr ""
+msgstr "Die beiden Leisten sind nun perfekt ausgerichtet"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
 msgid ""
@@ -8691,7 +8711,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
 msgid "Place the GUI onto the game's mockup"
-msgstr ""
+msgstr "Platziere die Oberfläche auf den Spielentwurf"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
 msgid ""
@@ -12257,7 +12277,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid "assert"
-msgstr "assert"
+msgstr "behaupten"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid ""
@@ -12579,7 +12599,7 @@ msgstr "NodePath oder StringName"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:312
 msgid "``$NodePath``"
-msgstr "``$NodePath``"
+msgstr "``$NodeWeg``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:312
 msgid "Shorthand for ``get_node(\"NodePath\")``"
@@ -32920,7 +32940,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1060
 msgid "Let's go over the additions, starting with how we're changing weapons."
-msgstr "Gehen wir das Geschehene durch, beginnend mit den Klassenvariablen:"
+msgstr "Gehen wir das Geschehene durch, beginnend mit den Klassenvariablen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1062
 msgid ""
@@ -40061,7 +40081,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
 msgid "For more information, read :ref:`doc_physics_introduction`"
-msgstr "Für weitere Informationen, siehe :ref:`doc_physics_introduction`."
+msgstr "Für weitere Informationen, siehe :ref:`doc_physics_introduction`"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
 msgid "Kinematic character (2D)"
@@ -45791,7 +45811,6 @@ msgid "Finnish (Finland)"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:282
-#, fuzzy
 msgid "fil_PH"
 msgstr "fil_PH"
 
@@ -53076,8 +53095,8 @@ msgid ""
 "For detailed information on Godot's shading language, please refer to the :"
 "ref:`Shading Language <doc_shading_language>` reference."
 msgstr ""
-"Genauere Informationen über Godots Shading Language gibt es im eigenen "
-"Artikel: :ref:`Shading Language <doc_shading_language>`"
+"Genauere Informationen über Godots Shading Sprache gibt es im eigenen "
+"Artikel :ref:`Shading Language <doc_shading_language>`"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:17
 msgid "GLSL"

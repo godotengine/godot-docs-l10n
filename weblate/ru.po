@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Akhtrov Danil <daxartio@gmail.com>, 2019.
 # Aleksey Terentyev <terentjew.alexey@ya.ru>, 2018.
 # Alex Afterlife <main-site-maker@yandex.ru>, 2018-2019.
 # Alexander <loginrus@mail.ru>, 2019.
@@ -35,15 +36,17 @@
 # JackLite <jackkdlite@gmail.com>, 2018.
 # Kenta Akiyama <kentaakiyamagd@gmail.com>, 2018.
 # LAT_Rio <AlSenya@yandex.ru>, 2018.
+# LeLuCh B0й <alekx@alumni.nottingham.ac.uk>, 2019.
 # luckyuk <im-kerber@mail.ru>, 2018-2019.
 # Mintormo <adenos@mail.ru>, 2018.
 # mirrorrim <hieronymus1100@gmail.com>, 2019.
-# Neo6666666 <Neo6666666@gmail.com>, 2018.
+# Neo6666666 <Neo6666666@gmail.com>, 2018-2019.
 # Nick <nikita.porutchyk@gmail.com>, 2018.
 # Nikita Nigmatullin <nnigmat@gmail.com>, 2018.
 # Novikov Vladimir <valdemar.const@gmail.com>, 2018.
 # Omicron <omicron666.dev@gmail.com>, 2018.
 # Petr Kustov <zcaliptium@gmail.com>, 2018-2019.
+# Ratmir Karabut <rkarabut@gmail.com>, 2019.
 # Roman <Steel_hawk@list.ru>, 2018-2019.
 # Ruaguzov Michael <miha890r@gmail.com>, 2019.
 # sample text <sampletext32@bk.ru>, 2018.
@@ -60,9 +63,11 @@
 # Александр <sashnos98@gmail.com>, 2019.
 # Анатолий Горбунов <afgorbunov@gmail.com>, 2018.
 # Аркадий Авас <savvot@gmail.com>, 2018.
+# Арсений Солодков <arsen332211@gmail.com>, 2019.
 # Аслан Снупов <aslan170505@gmail.com>, 2018.
 # Влад Афонин (Midnightcoder) <afonin.com123@gmail.com>, 2018.
 # Дарисон ДиДжей Младший <xd02-02@mail.ru>, 2019.
+# Дмитрий <Aress.87@mail.ru>, 2019.
 # Дмитрий Ефимов <daefimov@gmail.com>, 2018.
 # Егор Бураков <fend.q@mail.ru>, 2018.
 # Егор Рябуха (REgorion) <ryrgor@gmail.com>, 2018.
@@ -80,7 +85,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-10 11:47+0100\n"
-"PO-Revision-Date: 2019-03-10 09:57+0000\n"
+"PO-Revision-Date: 2019-03-28 08:40+0000\n"
 "Last-Translator: Chaosus89 <chaosus89@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
@@ -90,7 +95,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.5.1-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -101,7 +106,7 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"Документация Godot доступа в различных языках и версиях. Разверните панель "
+"Документация Godot доступна в различных языках и версиях. Разверните панель "
 "\"Read the Docs\" в нижней части боковой панели, чтобы увидеть весь список."
 
 #: ../../docs/index.rst:10
@@ -761,7 +766,6 @@ msgid "What is GDScript and why should I use it?"
 msgstr "Что такое GDScript и зачем мне его использовать?"
 
 #: ../../docs/about/faq.rst:90
-#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -772,12 +776,12 @@ msgid ""
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
 "GDScript это интегрированный в Godot язык сценариев. Он был создан с нуля, "
-"что бы максимизировать потенциал Godot в наименьшем количестве кода, "
-"позволяя как начинающим, так и опытным разработчикам как можно быстрее "
-"использовать сильные стороны Godot. Если вы когда нибудь писали что нибудь "
-"на языке, навроде Python, то тут вы почувствуете себя как дома. Примеры, "
-"история и полный обзор мощности, предлагаемой GDScript, ждут вас в `GDScript "
-"scripting guide <gdscript_basics>`_."
+"что бы максимально задействовать потенциал движка Godot с минимальным "
+"количеством кода. Что позволяет как начинающим, так и опытным разработчикам "
+"как можно быстрее использовать сильные стороны Godot. Если вы когда нибудь "
+"писали что нибудь на языке, вроде Python, то тут вы почувствуете себя как "
+"дома. Примеры, история и полный обзор возможностей, предлагаемых GDScript, "
+"ждут вас в `GDScript scripting guide <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -2482,16 +2486,15 @@ msgid "Scripting"
 msgstr "Скриптинг"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
-#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
 "До Godot 3.0, единственным выбором для написания скриптов игры был :ref:"
-"`doc_gdscript`. В настоящее время Godot официально поддерживает четыре (да, "
-"четыре!) языка и имеет возможность динамически добавлять дополнительные "
-"скриптовые языки!"
+"`GDScript<doc_gdscript>`. В настоящее время Godot официально поддерживает "
+"четыре (да, четыре!) языка и имеет возможность динамически добавлять "
+"дополнительные скриптовые языки!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
@@ -2531,15 +2534,15 @@ msgid "GDScript"
 msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript` является, как упоминалось выше, основным языком, "
-"используемым в Godot. Использование его имеет некоторые положительные "
-"моменты по сравнению с другими языками из-за его высокой интеграции с Godot:"
+":ref:`GDScript<doc_gdscript>`, как упоминалось выше, является основным "
+"языком, используемым в Godot. Его использование имеет некоторые "
+"положительные моменты по сравнению с другими языками из-за его высокой "
+"интеграции с Godot:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -2750,16 +2753,16 @@ msgstr ""
 "Написание сценария, который может получать доступ к другим узлам в сцене."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
-"Прежде чем продолжить, обязательно почитайте о :ref:`doc_gdscript`. Это "
-"простой язык, и справочный материал для него не объемный, поэтому для обзора "
-"концепций потребуется не более нескольких минут."
+"Прежде чем продолжить, обязательно прочитайте ссылку :ref:"
+"`GDScript<doc_gdscript>`. Это язык, разработанный для того, чтобы быть "
+"простым а справочник краткий , поэтому для ознакомления с основными "
+"понятиями потребуется не более нескольких минут."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
@@ -3974,7 +3977,6 @@ msgid "Sprite animation"
 msgstr "Анимация Спрайтов"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -3986,15 +3988,15 @@ msgid ""
 "``<SpriteFrames>``, then click \"Open Editor\" to open the \"SpriteFrames\" "
 "panel:"
 msgstr ""
-"Нажмите на вкладке '' игрок '' и добавить: ref: «AnimatedSprite "
-"<class_AnimatedSprite>» узел в детстве. '' AnimatedSprite'' будет "
-"обрабатывать внешний вид и анимации для наших игроков. Обратите внимание, "
-"что символ предупреждения рядом с узлом. '' AnimatedSprite'' требует: ref: "
-"«SpriteFrames <class_SpriteFrames>» ресурс, который представляет собой "
-"список может отображать анимацию. Чтобы создать один, найдите свойство '' "
-"рамы '' в окне инспектора и нажмите «[Очистить]»-> «Новых SpriteFrames». "
-"Далее в том же месте, нажмите кнопку '' <SpriteFrames>'', а затем нажмите "
-"кнопку «Открыть редактор», чтобы открыть панель «SpriteFrames»:"
+"Кликните на узел ``Player`` и добавьте дочерний узел :ref:`AnimatedSprite "
+"<class_AnimatedSprite>`. ``AnimatedSprite`` будет обрабатывать внешний вид и "
+"анимации для нашего игрока. Обратите внимание на символ предупреждения рядом "
+"с узлом. ``AnimatedSprite`` требует ресурс :ref:`SpriteFrames "
+"<class_SpriteFrames>`, который представляет собой список отображаемых "
+"анимаций. Чтобы его создать, найдите свойство ``Frames`` в окне инспектора и "
+"кликните на «[пусто]»-> «Новый SpriteFrames». Далее, в том же месте, нажмите "
+"кнопку ``<SpriteFrames>``, а затем нажмите кнопку «Открыть редактор», чтобы "
+"открыть панель «SpriteFrames»:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:111
 msgid ""
@@ -4087,7 +4089,6 @@ msgstr ""
 "Начните с объявления переменных - членов, которые понадобятся этому объекту:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:179
-#, fuzzy
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
@@ -4099,7 +4100,7 @@ msgstr ""
 "Использование ключевого слова ``export`` у первой переменной ``speed`` "
 "позволяет устанавливать ее значение в Инспекторе. Это может быть полезно, "
 "если вы хотите изменять значения точно так же как и встроенные свойства "
-"узла. Щелкните на узел ``Player`` и вы увидите, что свойство теперь вилось в "
+"узла. Щелкните на узел ``Player`` и вы увидите, что свойство появилось в "
 "разделе \"Script Variables\" в Инспекторе. Помните, что если изменить "
 "значение здесь, то оно перезапишет значение, установленное в скрипте."
 
@@ -4315,16 +4316,15 @@ msgstr ""
 "присваиванием выше:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:399
-#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
 "line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
-"Снова запустите сцену и убедитесь, что анимация правильная для каждого из "
+"Снова запустите сцену и убедитесь, что анимации правильны для каждого из "
 "направлений. Когда вы будете уверены, что движение работает правильно, "
 "добавьте эту строку в функцию ``_ready()``, чтобы игрок был скрыт, когда "
-"игра начинается:"
+"игра начнётся:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:414
 msgid "Preparing for collisions"
@@ -4782,8 +4782,10 @@ msgid ""
 "``StartTimer`` will start the other two timers. ``ScoreTimer`` will "
 "increment the score by 1."
 msgstr ""
-"Теперь соедините ``timeout()`` сигнал каждого из нодов Timer. ``StartTimer`` "
-"запустит другие два таймера. ``ScoreTimer`` будет увеличивать счет на 1."
+"Теперь присоедините сигнал ``timeout()`` каждого из узлов Таймер  "
+"(``StartTimer``, ``ScoreTimer`` ,и ``MobTimer``) к основному скрипту. "
+"``StartTimer`` запустит другие два таймера. ``ScoreTimer`` будет увеличивать "
+"счет на 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:799
 msgid ""
@@ -4913,13 +4915,11 @@ msgid ""
 "Regular.ttf\". To use this font, do the following for each of the three "
 "``Control`` nodes:"
 msgstr ""
-"Для того, чтобы текст ``MessageLabel`` соответствовал окну игры, нажмите на "
-"маленькую иконку рядом с вашим свойством text. Откроется новое окно, в "
-"котором можно добавить новую строку между словами. Шрифт по умолчанию для "
-"узлов ``Control`` мал и не плохо масштабируется. Есть файл шрифта, "
-"включенный в игровые ресурсы под названием \"Xolonium-Regular.ttf\". Чтобы "
-"использовать этот шрифт, выполните следующие действия для каждого из трех "
-"узлов ``Control``:"
+"Нажмите на ``ScoreLabel`` и введите число в поле _Text_ в Инспекторе. "
+"Стандартный шрифт для узлов ``Control`` мал и плохо масштабируется. Есть "
+"файл шрифта, включенный в игровые ресурсы под названием \"Xolonium-Regular."
+"ttf\". Чтобы использовать этот шрифт, выполните следующие действия для "
+"каждого из трех узлов ``Control``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:900
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
@@ -4932,9 +4932,10 @@ msgid ""
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
 "font's ``Size``. A setting of ``64`` works well."
 msgstr ""
-"Нажмите на кнопку \"DynamicFont\", и в разделе \"Font Data\", выбрать \"Load"
-"\" и выберите \"Xolonium-Regular.ttf\" . Необходимо также установить размер "
-"шрифта ``Size``. Значение ``64`` работает хорошо."
+"Нажмите на, только что добавленный, \"DynamicFont\", и в разделе \"Font/Font "
+"Data\", нажмите \"Load\" и выберите файл \"Xolonium-Regular.ttf\" . "
+"Необходимо также установить размер шрифта ``Size``. Значение ``64`` подходит "
+"хорошо."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:910
 msgid ""
@@ -6280,7 +6281,7 @@ msgid ""
 msgstr ""
 "**TextureRect** отображает текстуру или изображение внутри пользовательского "
 "интерфейса. Он похож на узел Sprite, но имеет множество режимов растяжения. "
-"Изменить режим растяжения можно с помощью свойства Stretch Mode."
+"Изменить режим растяжения можно с помощью свойства Stretch Mode:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
 msgid ""
@@ -14867,6 +14868,9 @@ msgid ""
 "objects can listen to in a generic way. Create custom signals for a class "
 "using the ``signal`` keyword."
 msgstr ""
+"Сигналы это способ отправки уведомлений от объекта, который могут "
+"прослушивать другие объекты. Создавайте собственные сигналы для класса "
+"используя ключевое слово ``signal``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1475
 msgid ""
@@ -14884,6 +14888,9 @@ msgid ""
 "the custom signal to a method in a separate script, using the :ref:`Object."
 "connect() <class_Object_method_connect>` method:"
 msgstr ""
+"Здесь приведён пример как создавать свой сигнал в одном скрипте и соединять "
+"его с методом в другом, используя метод :ref:`Object.connect() "
+"<class_Object_method_connect>`:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1507
 msgid ""
@@ -14893,6 +14900,11 @@ msgid ""
 "rather than the signal or the method, meaning that each connection has "
 "unique bindings."
 msgstr ""
+"GDScript может связывать аргументы для соединения между сигналом и методом. "
+"Когда сигнал вызывается, вызывая соединённый метод, включённый аргумент "
+"передается в метод. Эти аргументы определены конкретно для соединения в "
+"отличии от сигнала или метода, что означает что каждое соединение имеет "
+"уникальную привязку."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1513
 msgid ""
@@ -14900,6 +14912,10 @@ msgid ""
 "signal and a method, binding the button instance to the connection. The "
 "handler uses the bound argument to print which button instance was pressed."
 msgstr ""
+"Здесь показан пример который создаёт соединение между кнопочным сигналом "
+"``pressed`` и методом, связывая экземпляр кнопки с соединением. Обработчик "
+"использует связанный аргумент для вывода информации о том какой экземпляр "
+"кнопки был нажат."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1528
 msgid ""
@@ -15329,6 +15345,10 @@ msgid ""
 "style syntax and indexing, which makes it useful for writing initial states "
 "and quick structs:"
 msgstr ""
+"Словари могут также использоваться как разметка данных или быстрые "
+"структуры. Хотя словари GDScript напоминают словари python, он также "
+"поддерживает синтаксис и индексацию в стиле Lua, что делает его полезным для "
+"написания начальных состояний и быстрых структур:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:318
 msgid "For & while"
@@ -15337,40 +15357,44 @@ msgstr "Циклы for и while"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:320
 msgid "Iterating in some statically typed languages can be quite complex:"
 msgstr ""
+"Циклы в некоторых статически типизированных языках могут быть довольно "
+"сложными:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:341
 msgid "This is usually greatly simplified in dynamically typed languages:"
-msgstr ""
+msgstr "В динамически типизированных языках это выглядит значительно проще:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:348
 msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
 "allow iterating the keys:"
 msgstr ""
+"Контейнеры (массивы и словари) являются итерируемыми. Словари позволяют "
+"перебирать ключи:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:356
 msgid "Iterating with indices is also possible:"
-msgstr ""
+msgstr "Итерация с индексами также возможна:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:363
 msgid "The range() function can take 3 arguments:"
-msgstr ""
+msgstr "Функция range() может принимать 3 аргумента:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:371
 msgid "Some statically typed programming language examples:"
-msgstr ""
+msgstr "Примеры в статически типизированных языках:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:381
 msgid "Translate to:"
-msgstr ""
+msgstr "Транслируется в:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:394
 msgid "And backwards looping is done through a negative counter:"
-msgstr ""
+msgstr "И обратный цикл выполняется через отрицательный счётчик цикла:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:400
 msgid "Becomes:"
-msgstr ""
+msgstr "Становится:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:408
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
@@ -15383,7 +15407,7 @@ msgstr "Циклы while() везде одинаковые:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:421
 msgid "Custom iterators"
-msgstr ""
+msgstr "Пользовательские итераторы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:422
 msgid ""
@@ -15392,20 +15416,27 @@ msgid ""
 "and ``_iter_get`` functions in your script. An example implementation of a "
 "forward iterator follows:"
 msgstr ""
+"Вы можете создавать собственные итераторы в случае, если стандартные по "
+"умолчанию не вполне соответствуют вашим потребностям, переопределив функции "
+"``_iter_init``, ``_iter_next`` и ``_iter_get`` класса Variant в вашем "
+"скрипте. Ниже приведен пример реализации итератора прямого действия:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:454
 msgid "And it can be used like any other iterator:"
-msgstr ""
+msgstr "И его можно использовать, как и любой другой итератор:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:462
 msgid ""
 "Make sure to reset the state of the iterator in ``_iter_init``, otherwise "
 "nested for-loops that use custom iterators will not work as expected."
 msgstr ""
+"Обязательно сбросьте состояние итератора в ``_iter_init``, иначе вложенные "
+"for-циклы, использующие пользовательские итераторы не будут работать, как "
+"ожидалось."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:466
 msgid "Duck typing"
-msgstr ""
+msgstr "Утиная типизация"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:468
 msgid ""
@@ -15414,6 +15445,10 @@ msgid ""
 "code design much simpler and straightforward to write, but it's not obvious "
 "how it works."
 msgstr ""
+"Одной из самых сложных концепций, которую нужно понять при переходе от языка "
+"со статической типизацией к динамической, является Утиная типизация. Утиная "
+"типизация делает общий дизайн кода намного проще и понятнее для написания, "
+"но для новичка это может быть не так очевидно."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:473
 msgid ""
@@ -15421,6 +15456,9 @@ msgid ""
 "tunnel, smashing everything on its way. The code for the rock, in a "
 "statically typed language would be something like:"
 msgstr ""
+"В качестве примера представим ситуацию, когда большой камень падает по "
+"туннелю, разбивая все на своем пути. Код для камня на статически "
+"типизированном языке будет выглядеть примерно так:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:484
 msgid ""
@@ -15432,6 +15470,13 @@ msgid ""
 "very elegant to add a virtual method ``smash()`` to Entity only if a few of "
 "them can be smashed."
 msgstr ""
+"Таким образом, все, что может быть разбито камнем, должно наследовать "
+"Smashable. Если персонаж, враг, предмет мебели, маленький камень - все это "
+"можно разбить, им будет необходимо наследовать от класса Smashable, "
+"возможно, требуя множественного наследования. Если множественное "
+"наследование нежелательно, им придется наследовать общий класс, такой как "
+"Entity. Тем не менее, было бы не очень элегантно добавить виртуальный метод "
+"``smash()`` в Entity, только если некоторые из них могут быть разбиты."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:492
 msgid ""
@@ -15439,6 +15484,9 @@ msgid ""
 "sure you only have to define a ``smash()`` function where required and "
 "that's it. No need to consider inheritance, base classes, etc."
 msgstr ""
+"С динамически типизированными языками это не проблема. Утиная типизация "
+"гарантирует, что вам нужно только определить функцию ``smash()`` там, где "
+"требуется, и все. Не нужно учитывать наследование, базовые классы и т.д."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:501
 msgid ""
@@ -15448,25 +15496,33 @@ msgid ""
 "not what it inherits or the class type. The definition of Duck Typing should "
 "make this clearer:"
 msgstr ""
+"И это все. Если объект, столкнувшийся с камнем, имеет метод smash(), он "
+"будет вызван. Нет необходимости наследования или полиморфизма. Языки с "
+"динамической типизацией заботятся только о том, чтобы экземпляр имел нужный "
+"метод или член, а не о том, что он наследует, или о типе класса. Определение "
+"Утиной типизации должно прояснить это:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:507
 msgid ""
 "*\"When I see a bird that walks like a duck and swims like a duck and quacks "
 "like a duck, I call that bird a duck\"*"
 msgstr ""
+"*\"Когда Я вижу птицу, которая ходит как утка и плавает как утка, и крякает "
+"как утка, Я называю эту птицу уткой\"*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:510
 msgid "In this case, it translates to:"
-msgstr ""
+msgstr "В этом случае это переводится как:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:512
 msgid ""
 "*\"If the object can be smashed, don't care what it is, just smash it.\"*"
 msgstr ""
+"*\"Если объект может быть разбит, все равно, что это, просто разбейте его.\"*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:514
 msgid "Yes, we should call it Hulk typing instead."
-msgstr ""
+msgstr "Да, возможно нам следует называть это типизацией Халка."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
 msgid ""
@@ -15475,14 +15531,19 @@ msgid ""
 "exist (like Objective C), but GDScript is stricter, so checking if the "
 "function exists is desirable:"
 msgstr ""
+"Возможно, что объект, по которому ударили, не имеет функции smash(). "
+"Некоторые динамически типизированные языки просто игнорируют вызов метода, "
+"когда он не существует (например, Objective C), но GDScript более строгий, "
+"поэтому желательно проверить, существует ли функция:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:527
 msgid ""
 "Then, simply define that method and anything the rock touches can be smashed."
 msgstr ""
+"Затем просто определите этот метод, и все, к чему прикасается камень, может "
+"быть разбито."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:4
-#, fuzzy
 msgid "GDScript style guide"
 msgstr "Руководство по стилю GDScript"
 
@@ -15493,20 +15554,20 @@ msgid ""
 "projects, discussions, and tutorials. Hopefully, this will also encourage "
 "development of auto-formatting tools."
 msgstr ""
-"В этой инструкции описаны соглашения, помогающие писать элгантный код на "
+"В этой инструкции описаны соглашения, помогающие писать элегантный код на "
 "GDScript. Его цель - вдохновить разработчиков писать чистый, читаемый код, "
 "способствовать единообразию оформления в проекта, обсуждениях и обучающих "
 "материалах. Надеемся, что они вдохновят людей на разработку инструментов "
-"автоформатирования."
+"автоматического форматирования."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:14
 msgid ""
 "Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming styleguide."
 msgstr ""
-"Поскольку GDScript похож на Python, данное руководство вдохновлено стилевыми "
-"правилами программирования на Python `PEP 8 <https://www.python.org/dev/peps/"
-"pep-0008/>`."
+"Поскольку GDScript очень близок к Python, это руководство вдохновлено Python-"
+"ическим руководством по стилистике написания кода `PEP 8 <https://www.python."
+"org/dev/peps/pep-0008/>."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:18
 msgid ""
@@ -15517,9 +15578,8 @@ msgstr ""
 "по умолчанию. Позвольте ему помочь вам."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:22
-#, fuzzy
 msgid "Code structure"
-msgstr "Структура нода"
+msgstr "Структура кода"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:25
 msgid "Indentation"
@@ -15689,15 +15749,15 @@ msgstr "Использование в GDScript"
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:6
 #: ../../docs/tutorials/physics/physics_introduction.rst:16
 msgid "In this guide, you will learn:"
-msgstr ""
+msgstr "В этом руководстве вы узнаете:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:8
 msgid "**How to use types in GDScript**"
-msgstr ""
+msgstr "**Как использовать типы в GDScript**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:9
 msgid "That **static types can help you avoid bugs**"
-msgstr ""
+msgstr "Что **статические типы могут помочь вам избежать ошибок**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:11
 msgid ""
@@ -15705,20 +15765,25 @@ msgid ""
 "can use it only in some sensitive GDScript files, use it everywhere, or "
 "write code like you always did!"
 msgstr ""
+"Где и как вы используете эту новую функцию языка полностью зависит от Вас: "
+"вы можете использовать ее только в некоторых файлах GDScript, использовать "
+"везде или писать код, как вы всегда делали!"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:15
 msgid ""
 "Static types can be used on variables, constants, functions, parameters, and "
 "return types."
 msgstr ""
+"Статические типы могут использоваться для переменных, констант, функций, "
+"параметров и возвращаемых типов."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:20
 msgid "Typed GDScript is available since Godot 3.1."
-msgstr ""
+msgstr "Типизированный GDScript доступен начиная с Godot 3.1."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:23
 msgid "A brief look at static typing"
-msgstr ""
+msgstr "Краткий обзор статической типизации"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
 msgid ""
@@ -15726,6 +15791,9 @@ msgid ""
 "gives you and your teammates more information as you’re working, as the "
 "arguments’ types show up when you call a method."
 msgstr ""
+"С типизированным GDScript, Godot может обнаружить еще больше ошибок при "
+"написании кода! Это дает вам и вашей команде больше информации во время "
+"работы, поскольку типы аргументов отображаются при вызове метода."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
 msgid ""
@@ -15734,6 +15802,11 @@ msgid ""
 "with your code should always pass an ``Item`` to the ``Inventory.add`` "
 "method. With types, you can enforce this:"
 msgstr ""
+"Представьте, что вы программируете систему инвентаризации. Вы "
+"запрограммировали узел ``Item``, а затем ``Inventory``. Чтобы добавить "
+"предметы в инвентарь, люди, работающие с вашим кодом, должны всегда "
+"передавать ``Item`` методу ``Inventory.add``. Используя типы вы можете "
+"обеспечить это:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:48
 msgid ""
@@ -15743,6 +15816,12 @@ msgid ""
 "issues at runtime, but lets you decide whether or not you want to leave the "
 "code as it is. More on that in a moment."
 msgstr ""
+"Еще одним существенным преимуществом типизированного GDScript является новая "
+"**система предупреждений**. Начиная с версии 3.1, Godot выдает вам "
+"предупреждения о вашем коде в процессе его написания: движок определяет "
+"части вашего кода, которые могут привести к проблемам во время выполнения, "
+"но позволяет вам решить, хотите ли вы оставить код таким, какой он есть. "
+"Подробнее об этом через минуту."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:54
 msgid ""
@@ -15750,12 +15829,17 @@ msgid ""
 "see the difference between a dynamic and a static typed completion options "
 "for a class called ``PlayerController``."
 msgstr ""
+"Статические типы также дают вам лучшие варианты завершения кода. Ниже вы "
+"можете увидеть разницу между динамической и статической типизацией вариантов "
+"завершения для класса под названием ``PlayerController``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:58
 msgid ""
 "You’ve probably stored a node in a variable before, and typed a dot to be "
 "left with no autocomplete suggestions:"
 msgstr ""
+"Возможно, вы ранее хранили узел в переменной и набирали точку, и оставались "
+"без предложений авто-завершения:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:64
 msgid ""
@@ -15763,12 +15847,17 @@ msgid ""
 "you’re passing to the function. If you write the type explicitly however, "
 "you will get all public methods and variables from the node:"
 msgstr ""
+"Это обусловлено динамическим кодом. Godot не может знать, какой тип узла или "
+"значения вы передаете в функцию. Однако, если вы опишите тип явно, вы "
+"получите все публичные методы и переменные из узла:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:71
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
 "Time compilation and other compiler improvements are already on the roadmap!"
 msgstr ""
+"В будущем, типизированный GDScript также увеличит производительность кода: "
+"компиляция Just-In-Time и другие улучшения компилятора уже в планах!"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:75
 msgid ""
@@ -15780,10 +15869,18 @@ msgid ""
 "clearer and the more structured the code, the faster it is to understand, "
 "the faster you can move forward."
 msgstr ""
+"В целом, типизированное программирование дает вам более структурированный "
+"опыт. Это помогает предотвратить ошибки и улучшает само-документируемый "
+"аспект ваших скриптов. Это особенно полезно, когда вы работаете в команде "
+"или над долгосрочным проектом: исследования показали, что разработчики "
+"проводят большую часть своего времени за чтением чужого кода или скриптов, "
+"которые они написали в прошлом и о которых забыли. Чем яснее и "
+"структурированнее код, тем быстрее его понять, тем быстрее вы сможете "
+"двигаться вперед."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:84
 msgid "How to use static typing"
-msgstr ""
+msgstr "Как использовать статическую типизацию"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:86
 msgid ""
@@ -15791,24 +15888,31 @@ msgid ""
 "variable’s name, followed by its type. E.g. ``var health: int``. This forces "
 "the variable's type to always stay the same:"
 msgstr ""
+"Чтобы определить тип переменной или константы, запишите двоеточие после "
+"имени переменной, а затем ее тип. Например ``var health: int``. Это "
+"заставляет тип переменной всегда оставаться неизменным:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:95
 msgid ""
 "Godot will try to infer types if you write a colon, but you omit the type:"
 msgstr ""
+"Godot попытается определить тип самостоятельно, если вы напишете двоеточие, "
+"но не укажите тип:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:104
 msgid "Currently you can use three types of… types:"
-msgstr ""
+msgstr "В настоящее время вы можете использовать три вида... типов:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:106
 msgid ":ref:`Built-in <doc_gdscript_builtin_types>`"
-msgstr ""
+msgstr ":ref:`Built-in <doc_gdscript_builtin_types>`"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:107
 msgid ""
 "Core classes and nodes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)"
 msgstr ""
+"Основные классы и узлы (``Object``, ``Node``, ``Area2D``, ``Camera2D``, и т."
+"д.)"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:109
 msgid ""
@@ -15816,6 +15920,9 @@ msgid ""
 "<doc_scripting_continued_class_name>` feature to register types in the "
 "editor."
 msgstr ""
+"Ваши собственные, индивидуальные классы. Посмотрите на новую функцию :ref:"
+"`class_name <doc_scripting_continued_class_name>` для регистрации типов в "
+"редакторе."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:114
 msgid ""
@@ -15823,11 +15930,13 @@ msgid ""
 "automatically from the assigned value. But you can still do so to make the "
 "intent of your code clearer."
 msgstr ""
+"Вам не нужно писать типовые подсказки для констант, так как Godot "
+"устанавливает их автоматически из присвоенного значения. Но вы все равно "
+"можете сделать это, чтобы прояснить смысл вашего кода."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:117
-#, fuzzy
 msgid "Custom variable types"
-msgstr "Создание узлов"
+msgstr "Пользовательские типы переменных"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:119
 msgid ""
@@ -15835,12 +15944,18 @@ msgid ""
 "two ways to use them in scripts. The first method is to preload the script "
 "you want to use as a type in a constant:"
 msgstr ""
+"Вы можете использовать любой класс, включая ваши собственные классы, как "
+"типы. Есть два способа использовать их в скриптах. Первый способ - "
+"предварительно загрузить скрипт, который вы хотите использовать в качестве "
+"типа константы:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:128
 msgid ""
 "The second method is to use the ``class_name`` keyword when you create. For "
 "the example above, your Rifle.gd would look like this:"
 msgstr ""
+"Второй метод заключается в использовании ключевого слова ``class_name`` при "
+"создании. Для приведенного выше примера ваш Rifle.gd будет выглядеть так:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:136
 msgid ""
@@ -15848,17 +15963,21 @@ msgid ""
 "editor, and you can use it anywhere, without having to preload it into a "
 "constant:"
 msgstr ""
+"Если вы используете ``class_name``, Godot глобально регистрирует тип Rifle в "
+"редакторе, и вы можете использовать его где угодно, без предварительной "
+"загрузки в константу:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:145
-#, fuzzy
 msgid "Variable casting"
-msgstr "Переменная"
+msgstr "Приведение переменной"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:147
 msgid ""
 "Type casting is a key concept in typed languages. Casting is the conversion "
 "of a value from one type to another."
 msgstr ""
+"Приведение типов является ключевым понятием в типизированных языках. "
+"Приведение - это преобразование значения из одного типа в другой."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:150
 msgid ""
@@ -15869,6 +15988,12 @@ msgid ""
 "a generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
 "``_on_body_entered`` callback."
 msgstr ""
+"Представьте себе врага в вашей игре, который ``расширяет Area2D``. Вы "
+"хотите, чтобы он сталкивался с Player-ом : ``KinematicBody2D`` со скриптом "
+"под названием ``PlayerController``, прикрепленным к нему. Вы используете "
+"сигнал ``on_body_entered`` для обнаружения столкновений. С типизированным "
+"кодом тело, которое вы обнаружите, будет общим ``PhysicsBody2D``, а не вашим "
+"``PlayerController`` при обратном вызове ``_on_body_entered``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:157
 msgid ""
@@ -15877,6 +16002,10 @@ msgid ""
 "use this type. This forces the variable to stick to the ``PlayerController`` "
 "type:"
 msgstr ""
+"Вы можете проверить, является ли этот ``PhysicsBody2D`` вашим Player-ом "
+"используя ключевое слово ``as`` и снова использовать двоеточие ``:``, чтобы "
+"заставить переменную использовать этот тип. Это заставляет переменную "
+"придерживаться типа ``PlayerController``:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:170
 msgid ""
@@ -15885,17 +16014,23 @@ msgid ""
 "can use this to check if the body is the player or not. We will also get "
 "full autocompletion on the player variable thanks to that cast."
 msgstr ""
+"Так как мы имеем дело с пользовательским типом, если ``body`` не расширяет "
+"``PlayerController``, значение переменной ``player`` будет установлено "
+"``null``. Мы можем использовать это, чтобы проверить, является ли тело "
+"Player-ом или нет. Мы также получим полное авто-заполнение переменной Player-"
+"а благодаря этому исполнению."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:177
 msgid ""
 "If you try to cast with a built-in type and it fails, Godot will throw an "
 "error."
 msgstr ""
+"Если вы попытаетесь выполнить приведение со встроенным типом, и это не "
+"удастся, Godot выдаст ошибку."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:180
-#, fuzzy
 msgid "Safe lines"
-msgstr "Пустые строки"
+msgstr "Безопасные строки"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
 msgid ""
@@ -15905,6 +16040,12 @@ msgid ""
 "information to know if an instruction will trigger an error or not at "
 "runtime."
 msgstr ""
+"Вы также можете использовать приведение, чтобы обеспечить безопасные строки. "
+"Безопасные строки - это новый инструмент в Godot 3.1, который поможет вам "
+"понять, когда неоднозначные строки кода являются типо-безопасными. Поскольку "
+"вы можете смешивать и сопоставлять типизированный и динамический код, иногда "
+"у Godot не хватает информации, чтобы знать, вызовет ли инструкция ошибку или "
+"нет во время выполнения."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:188
 msgid ""
@@ -15915,6 +16056,13 @@ msgid ""
 "classes it extends. With dynamic GDScript, you also don’t care about the "
 "node’s type as long as it has the methods you need to call."
 msgstr ""
+"Это происходит, когда вы получаете дочерний узел. Возьмем, к примеру, "
+"таймер: с динамическим кодом вы можете получить узел с помощью ``$Timer``. "
+"GDScript поддерживает `Утиную типизацию <https://stackoverflow.com/"
+"a/4205163/8125343>`__, поэтому даже если ваш таймер имеет тип ``Timer``, он "
+"также является ``Node`` и ``Object``, два класса которые он расширяет. В "
+"динамическом GDScript вы также не заботитесь о типе узла, если у него есть "
+"необходимые вам методы для вызова."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:196
 msgid ""
@@ -15923,39 +16071,52 @@ msgid ""
 "ensure the type works and if so, the line number will turn green at the left "
 "of the script editor."
 msgstr ""
+"Вы можете использовать приведение, чтобы сообщить Godot-у тип, который вы "
+"ожидаете, когда получаете узел: ``($Timer as Timer)``, ``($Player as "
+"KinematicBody2D)`` и т.д. Godot обеспечит работу типа и, если это так, то "
+"номер строки слева в редакторе скриптов станет зеленым."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:204
 msgid "Safe vs Unsafe Line"
-msgstr ""
+msgstr "Безопасные строки против Небезопасных строк"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:208
 msgid ""
 "You can turn off safe lines or change their color in the editor settings."
 msgstr ""
+"Вы можете отключить безопасные строки или изменить их цвет в настройках "
+"редактора."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:211
 msgid "Define the return type of a function with the arrow ->"
-msgstr ""
+msgstr "Определите тип возвращаемого значения функции с помощью стрелки ->"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:213
 msgid ""
 "To define the return type of a function, write a dash and a right angle "
 "bracket ``->`` after it’s declaration, followed by the return type:"
 msgstr ""
+"Чтобы определить тип возвращаемого значения функции, напишите тире и угловую "
+"скобку показывающую направо ``->`` после ее объявления, а затем тип "
+"возвращаемого значения:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:221
 msgid ""
 "The type ``void`` means the function does not return anything. You can use "
 "any type, as with variables:"
 msgstr ""
+"Тип ``void`` означает, что функция ничего не возвращает. Вы можете "
+"использовать любой тип, как с переменными:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:230
 msgid "You can also use your own nodes as return types:"
 msgstr ""
+"Вы также можете использовать свои собственные узлы в качестве возвращаемых "
+"типов:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:245
 msgid "Typed or dynamic: stick to one style"
-msgstr ""
+msgstr "Типизированный или динамичный: придерживайтесь одного стиля"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:247
 msgid ""
@@ -15964,6 +16125,11 @@ msgid ""
 "for your peers. It’s easier for everyone to work together if you follow the "
 "same guidelines, and faster to read and understand other people’s code."
 msgstr ""
+"Типизированный GDScript и динамический GDScript могут сосуществовать в одном "
+"проекте. Но я бы порекомендовал придерживаться любого из этих стилей для "
+"согласованности в вашей кодовой базе и для ваших коллег. Всем будет легче "
+"работать вместе, если вы будете следовать одним и тем же правилам, также вы "
+"будете быстрее читать и понимать чужой код."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:253
 msgid ""
@@ -15971,10 +16137,13 @@ msgid ""
 "discussed above. Here’s an example of the same, empty script, in a dynamic "
 "style:"
 msgstr ""
+"Типизированный код требует немного больше времени для написания, но вы "
+"получаете преимущества, которые мы обсуждали выше. Ниже приведен пример того "
+"же пустого скрипта в динамическом стиле:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:265
 msgid "And with static typing:"
-msgstr ""
+msgstr "И со статической типизацией:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:275
 msgid ""
@@ -15982,16 +16151,21 @@ msgid ""
 "Signal callbacks, like any methods, can also use types. Here’s a "
 "``body_entered`` signal in a dynamic style:"
 msgstr ""
+"Как видите, вы также можете использовать типы с виртуальными методами "
+"движка. Сигнальные обратные вызовы, как и любые методы, также могут "
+"использовать типы. Вот сигнал ``body_entered`` в динамическом стиле:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:284
 msgid "And the same callback, with type hints:"
-msgstr ""
+msgstr "И тот же обратный вызов, с типовыми подсказками:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:291
 msgid ""
 "You’re free to replace, e.g. the ``PhysicsBody2D``, with your own type, to "
 "cast parameters automatically:"
 msgstr ""
+"Вы можете заменить, например, ``PhysicsBody2D``, на свой собственный тип, "
+"чтобы приводить параметры автоматически:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:301
 msgid ""
@@ -16000,10 +16174,15 @@ msgid ""
 "anything else, like an ``Area2D``, or any node that doesn’t extend "
 "``Bullet``, the ``bullet`` variable will be ``null``."
 msgstr ""
+"Переменная ``bullet`` может содержать любой ``CollisionObject2D`` здесь, но "
+"мы должны убедиться, что это наш ``Bullet``, узел, который мы создали для "
+"нашего проекта. Если это что-то еще, например, ``Area2D`` или любой другой "
+"узел, который не расширяет ``Bullet``, переменная ``bullet`` будет иметь "
+"значение ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:307
 msgid "Warning system"
-msgstr ""
+msgstr "Система предупреждений"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:309
 msgid ""
@@ -16011,12 +16190,17 @@ msgid ""
 "mistakes that are hard to spot during development, and that may lead to "
 "runtime errors."
 msgstr ""
+"Система предупреждений дополняет типизированный GDScript. Она здесь, чтобы "
+"помочь вам избежать ошибок, которые трудно обнаружить во время разработки и "
+"которые могут привести к ошибкам во время выполнения."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
 msgid ""
 "You can configure warnings in the Project Settings under a new section "
 "called ``GDScript``:"
 msgstr ""
+"Вы можете настроить предупреждения в Настройках Проекта, в новом разделе под "
+"названием ``GDScript``:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
 #, fuzzy
@@ -16028,6 +16212,9 @@ msgid ""
 "You can find a list of warnings for the active GDScript file in the script "
 "editor’s status bar. The example below has 3 warnings:"
 msgstr ""
+"Вы можете найти список предупреждений для активного файла GDScript в строке "
+"состояния редактора сценариев. В приведенном ниже примере есть 3 "
+"предупреждения:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
 #, fuzzy
@@ -16042,6 +16229,11 @@ msgid ""
 "corresponding line and the code won’t trigger the corresponding warning "
 "anymore:"
 msgstr ""
+"Чтобы игнорировать определенные предупреждения в одном файле, вставьте "
+"специальный комментарий в форме ``#warning-ignore:warning-id`` или нажмите "
+"на ссылку игнорирования справа от описания предупреждения. Godot добавит "
+"комментарий над соответствующей строкой, и код больше не будет вызывать "
+"соответствующее предупреждение:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
 #, fuzzy
@@ -16056,30 +16248,39 @@ msgid ""
 "on this option. Here’s the same file as the previous example with warnings "
 "as errors turned on:"
 msgstr ""
+"Предупреждения не помешают запуску игры, но вы можете превратить их в "
+"ошибки, если хотите. Таким образом, ваша игра не будет скомпилирована, пока "
+"вы не исправите все предупреждения. Перейдите в раздел ``GDScript`` в "
+"настройках проекта, чтобы включить эту опцию. Вот тот же файл, что и в "
+"предыдущем примере, с предупреждениями которые интерпретируются как ошибки:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:349
 msgid "warnings as errors"
-msgstr ""
+msgstr "предупреждения как ошибки"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:352
 msgid "Cases where you can’t specify types"
-msgstr ""
+msgstr "Случаи, когда вы не можете указать типы"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:354
 msgid ""
 "To wrap up this introduction, let’s cover a few cases where you can’t use "
 "type hints. All the examples below **will trigger errors**."
 msgstr ""
+"Чтобы завершить это введение, давайте рассмотрим несколько случаев, когда вы "
+"не можете использовать типовые подсказки. Все приведенные ниже примеры "
+"**вызовут ошибки**."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:357
 msgid "You can’t use Enums as types:"
-msgstr ""
+msgstr "Вы не можете использовать Перечисления как типы:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:364
 msgid ""
 "You can’t specify the type of individual members in an array. This will give "
 "you an error:"
 msgstr ""
+"Вы не можете указать тип отдельных членов в массиве. Это приведет к ошибке:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:371
 msgid ""
@@ -16087,16 +16288,19 @@ msgid ""
 "the ``for`` keyword loops over already has a different type. So you "
 "**cannot** write:"
 msgstr ""
+"Вы не можете принудительно присваивать типы в цикле ``for``, так как каждый "
+"элемент, по которому проходит ключевое слово ``for``, уже имеет свой тип. "
+"Таким образом, вы **не можете** написать:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
 msgid "Two scripts can’t depend on each other in a cyclic fashion:"
-msgstr ""
+msgstr "Два скрипта не могут циклически зависеть друг от друга:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:400
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:124
 #: ../../docs/tutorials/2d/2d_movement.rst:347
 msgid "Summary"
-msgstr ""
+msgstr "Подведение итогов"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:402
 msgid ""
@@ -16105,6 +16309,11 @@ msgid ""
 "scalable systems. In the future, static types will also bring you a nice "
 "performance boost thanks to upcoming compiler optimizations."
 msgstr ""
+"Типизированный GDScript - это мощный инструмент. Доступный начиная с версии "
+"3.1 Godot, он помогает вам писать более структурированный код, избегать "
+"распространенных ошибок и создавать масштабируемые системы. В будущем "
+"статические типы также принесут вам хороший прирост производительности "
+"благодаря предстоящей оптимизации компилятора."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
@@ -16695,7 +16904,7 @@ msgstr "Привет, Godette v3.11"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:4
 msgid "What is Visual Scripting"
-msgstr ""
+msgstr "Что такое Визуальное Программирование"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:6
 msgid ""
@@ -16704,6 +16913,11 @@ msgid ""
 "understood. Any artist, animator, game designer, etc. can look at it and "
 "quickly grasp the flow of logic."
 msgstr ""
+"Визуальное Программирование - это инструмент, предназначенный для того, "
+"чтобы сделать входной барьер для программирования намного ниже. Поскольку "
+"код более нагляден, для его понимания необходимо меньше абстрактного "
+"мышления. Любой художник, аниматор, гейм-дизайнер и т.д. Может посмотреть на "
+"это и быстро понять поток логики."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:11
 msgid ""
@@ -16712,28 +16926,38 @@ msgid ""
 "with it, and it's often more difficult to modify than just writing a few "
 "characters."
 msgstr ""
+"Причина, по которой это не делает существующее программирование устаревшим, "
+"заключается в том, что такой \"код\" не масштабируется так же хорошо. Для "
+"создания кода с его помощью требуется значительно больше времени, и зачастую "
+"его сложнее модифицировать, чем просто написание нескольких символов."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:15
 msgid ""
 "With the misunderstanding cleared up, the question that remains is what are "
 "the practical uses for Visual Scripting."
 msgstr ""
+"С устранением недоразумений остается вопрос, каково практическое применения "
+"Визуального Программирования."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:18
 msgid "The most common use cases are as follows:"
-msgstr ""
+msgstr "Наиболее распространенные варианты использования следующие:"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:20
 msgid ""
 "Game development beginners who want to learn an engine but have no "
 "programming experience yet."
 msgstr ""
+"Новички в разработке игр, которые хотят изучить движок, но еще не имеют "
+"опыта программирования."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:21
 msgid ""
 "Artists and Game Designers who have no experience in programming and want to "
 "create quick prototypes or simple games."
 msgstr ""
+"Художники и гейм-дизайнеры, которые не имеют опыта программирования и хотят "
+"быстро создавать прототипы или простые игры."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:22
 msgid ""
@@ -16741,16 +16965,21 @@ msgid ""
 "available to Artists or Game Designers in order to offload some of their "
 "work."
 msgstr ""
+"Программисты, работающие в команде, которые хотят сделать часть игровой "
+"логики доступной для художников или гейм-дизайнеров , чтобы переложить часть "
+"своей работы на них."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:24
 msgid ""
 "These scenarios are far more common than one might think, so this is why "
 "Godot has added this feature."
 msgstr ""
+"Эти сценарии встречаются гораздо чаще, чем можно подумать, именно поэтому "
+"Godot добавил эту функцию."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:4
 msgid "Getting started with Visual Scripting"
-msgstr ""
+msgstr "Начало работы с Визуальным Программированием"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:6
 msgid ""
@@ -16759,12 +16988,19 @@ msgid ""
 "workflow. This led us to write our own version of how we believe this "
 "feature would work best with the engine."
 msgstr ""
+"Как и во всем остальном в Godot, мы отдаем предпочтение хорошему опыту, а не "
+"копированию или интеграции сторонних решений, которые могут не вписаться в "
+"текущий рабочий процесс. Это привело нас к написанию собственной версии "
+"того, как, по нашему мнению, эта функция будет лучше всего работать с "
+"движком."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:10
 msgid ""
 "In Godot, a Visual Script fits smoothly together with regular scripts in the "
 "Editor tab"
 msgstr ""
+"В Godot Визуальное Программирование легко сочетается с обычными скриптами на "
+"вкладке Редактора"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:15
 msgid ""
@@ -16773,11 +17009,15 @@ msgid ""
 "rest of Godot panels and docks act like a palette from where you can drag "
 "and drop all sorts of information to the script canvas:"
 msgstr ""
+"На самом деле Визуальное Программирование настолько хорошо интегрируется с "
+"Godot, что трудно поверить, что его добавили только в версии 3.0. Это "
+"происходит потому, что при редактировании остальные панели и док-станции "
+"Godot действуют как палитра, откуда можно перетаскивать на холст "
+"всевозможную информацию:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
-#, fuzzy
 msgid "Creating a script"
-msgstr "Добавление сценария"
+msgstr "Создание скрипта"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
 msgid ""
@@ -16785,23 +17025,30 @@ msgid ""
 "any node in the scene and push the \"New Script\" button at the top right "
 "corner of the Scene Tree dock:"
 msgstr ""
+"Создание скриптов работает так же, как и для других языками "
+"программирования: выберите любой узел в сцене и нажмите кнопку \"Новый Скрипт"
+"\" в верхнем правом углу панели Дерева Сцен:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:31
 msgid ""
 "Once it opens, the script type \"Visual Script\" must be selected from the "
 "drop down list. The script extension must be \".vs\" (for Visual Script!)."
 msgstr ""
+"После того, как меню откроется, необходимо выбрать тип \"Визуальный Скрипт\" "
+"из выпадающего списка. Расширение сценария должно быть \".vs\" (сокращение "
+"для Visual Script!)."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:37
 msgid ""
 "Finally, the Script Editor will open, allowing you to start editing the "
 "visual script:"
 msgstr ""
+"Наконец, откроется Редактор Скриптов, позволяющий начать редактирование "
+"Визуального Скрипта:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:43
-#, fuzzy
 msgid "Adding a function"
-msgstr "Объявляет функцию."
+msgstr "Добавление функции"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:45
 msgid ""
@@ -16810,6 +17057,11 @@ msgid ""
 "to communicate with the engine as other scripting engines. In Godot, the "
 "scripting interface is universal and all implementations conform to it."
 msgstr ""
+"В отличии от других реализаций визуального скриптинга, Визуальный Скриптинг "
+"в Godot в основном базируется на функциях. Это произошло потому что он "
+"использует тот же интерфейс для связи с движком как другие скриптовые "
+"движки. В Godot, интерфейс скриптинга универсален и все реализации "
+"соответствуют ему."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:49
 msgid "A function is an individual canvas with nodes connected."
@@ -16844,6 +17096,9 @@ msgid ""
 "loaded and added to the running scene. For this, the _ready() virtual method "
 "will be overridden:"
 msgstr ""
+"В следующем примере, функция будет выполнена когда узел загрузится и "
+"добавится в запущенную сцену. Для этого, будет перегружен виртуальный метод "
+"_ready():"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:71
 msgid "Finally, a canvas appears for this function, showing the override:"

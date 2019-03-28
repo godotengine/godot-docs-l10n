@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-10 11:47+0100\n"
-"PO-Revision-Date: 2019-03-10 09:56+0000\n"
+"PO-Revision-Date: 2019-03-24 08:29+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.5.1-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -2107,11 +2107,10 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
-"조절된 속성 옆에 회색 \"새로고침\" 버튼이 나타난 것에 주목하세요. 이 버튼이 "
-"있다는 것은, 당신이 인스턴스된 씬의 속성을 수정하여 저장된 씬의 값을 무시하"
-"게 만든 것입니다. 비록 그 속성이 원래 씬에서 수정되더라도, 사용자 지정 값은 "
-"유지됩니다. 새로고침 버튼을 눌러 저장된 씬의 값으로 속성을 복원시킬 수 있을 "
-"것입니다."
+"조절된 속성 옆에 회색 \"새로고침\" 버튼이 나타났습니다. 이 버튼이 있다는 것"
+"은, 인스턴스된 씬의 속성을 수정하여 저장된 씬의 값을 재정의한 것입니다. 속성"
+"이 기존의 씬에서 수정되더라도, 커스텀 값은 유지됩니다. 새로고침 버튼을 누르"
+"면 저장된 씬의 값으로 속성을 복원시킬 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:112
 #: ../../docs/getting_started/step_by_step/signals.rst:323
@@ -2308,15 +2307,14 @@ msgid "Scripting"
 msgstr "스크립팅(Scripting)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
-#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Godot 3.0 이전에는, 스크립팅 하는 법이 :ref:`doc_gdscript` 뿐 이었습니다. 지"
-"금은, Godot는 4개를 (그래요, 4개!) 공식 언어로 갖고 있고 추가로 스크립트 언어"
-"를 추가하는 기능도 있습니다!"
+"Godot 3.0 이전에는, 스크립팅 하는 법이 :ref:`GDScript<doc_gdscript>`\\ 뿐 이"
+"었습니다. 지금은, Godot는 4개를 (그래요, 4개!) 공식 언어로 갖고 있고 추가로 "
+"스크립트 언어를 추가하는 기능도 있습니다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
@@ -2355,15 +2353,14 @@ msgid "GDScript"
 msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript` 는 앞에서 말했듯, Godot에서 사용되는 메인 언어입니다. 이 "
-"언어는 다른 언어들에 비해 Godot와의 높은 통합성으로 인해 갖는 장점이 있습니"
-"다:"
+":ref:`GDScript<doc_gdscript>`\\ 는 앞에서 말했듯, Godot에서 사용되는 메인 언"
+"어입니다. 이 언어는 다른 언어들에 비해 Godot와의 높은 통합성으로 인해 갖는 장"
+"점이 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -2562,16 +2559,15 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "씬의 다른 노드에 액세스 할 수 있는 스크립트를 작성함."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
-"계속하기 전에 :ref:`doc_gdscript` 레퍼런스를 반드시 읽어 보시기 바랍니다. 이 "
-"언어는 간단하게 설계되었고, 참조가 짧기 때문에 개념을 파악하는 데 몇 분 정도 "
-"밖에 걸리지 않습니다."
+"계속하기 전에 :ref:`GDScript<doc_gdscript>` 레퍼런스를 반드시 읽어 보시기 바"
+"랍니다. 이 언어는 간단하게 설계되었고, 참조가 짧기 때문에 개념을 파악하는 데 "
+"몇 분 정도 밖에 걸리지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
@@ -2598,7 +2594,7 @@ msgstr "라벨(Label)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr "버튼(Button)"
+msgstr "버튼"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"
@@ -3856,11 +3852,11 @@ msgid ""
 "Variables\" section of the Inspector. Remember, if you change the value "
 "here, it will override the value written in the script."
 msgstr ""
-"첫 번째 변수인 ``speed``에 ``export`` 키워드를 사용해 인스펙터 내에서 값을 설"
-"정하도록 합니다. 이것은 원하는 값을 노드의 내장 속성처럼 조절할 수 있기 때문"
-"에 편리합니다. ``Player`` 노드를 선택하고 인스펙터의 \"Script Variables\" 섹"
-"션에 나타납니다. 기억하세요, 여기서 값을 바꾸면 스크립트에 적은 값도 재정의됩"
-"니다."
+"첫 번째 변수인 ``speed``\\ 에 ``export`` 키워드를 사용하면 인스펙터 내에서 값"
+"을 설정할 수 있습니다. 편리한 점으로는 인스펙터에서도 원하는 값으로 조정할 "
+"수 있는 것입니다. ``Player`` 노드를 선택하면 인스펙터의 \"Script Variables\" "
+"섹션에 나타납니다. 기억하세요, 여기서 값을 바꾸면 스크립트에 작성한 값도 재정"
+"의됩니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:186
 msgid ""
@@ -9506,7 +9502,7 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:249
 #: ../../docs/community/resources.rst:4
 msgid "Resources"
-msgstr "리소스(Resources)"
+msgstr "리소스"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
@@ -13192,7 +13188,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:71
 #: ../../docs/development/cpp/object_class.rst:94
 msgid "Constants"
-msgstr "상수(Constant)"
+msgstr "상수"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:627
 msgid ""
@@ -15661,7 +15657,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr "패딩(Padding)"
+msgstr "패딩"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -16614,7 +16610,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr "액션(Action)"
+msgstr "액션"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -16687,7 +16683,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr "Self(셀프)"
+msgstr "셀프"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -17162,7 +17158,6 @@ msgid "Setting up C# for Godot"
 msgstr "Godot에 C# 설치하기"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:41
-#, fuzzy
 msgid ""
 "Download and install the latest version of `Visual Studio <https://"
 "visualstudio.microsoft.com/downloads/>`_ (*not* Visual Studio Code), which "
@@ -17178,7 +17173,9 @@ msgstr ""
 "에서 C#을 사용하기 위한 기능들이 있습니다. Visual Studio IDE를 사용할 계획이 "
 "없다면, 대신 `Visual Studio Build Tools <https://visualstudio.microsoft.com/"
 "thank-you-downloading-visual-studio/?sku=BuildTools&rel=15>`_\\ 를 다운로드 "
-"할 수 있습니다."
+"할 수 있습니다. 최소한 설치 대상이 .NET Framework 4.5를 갖고 있어야 합니다, "
+"앞에서 언급한 설치 프로그램를 보면 \"Individual components\" 탭 안에서 그것"
+"을 얻을 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
 msgid "macOS and Linux"
@@ -17760,75 +17757,67 @@ msgid "``Variant.Operator`` enum"
 msgstr "``Variant.Operator`` 이넘"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
-#, fuzzy
 msgid "Math functions"
-msgstr "정적 함수"
+msgstr "수학 함수"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:40
-#, fuzzy
 msgid ""
 "Math global functions, like ``abs``, ``acos``, ``asin``, ``atan`` and "
 "``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
 "``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
 msgstr ""
-"``abs``, ``acos``, ``asin``, ``atan`` 그리고 ``atan2``\\ 와 같은 Math 함수는 "
+"``abs``, ``acos``, ``asin``, ``atan`` 그리고 ``atan2``\\ 와 같은 수학 함수는 "
 "글로벌 범위에 있는 대신, ``Mathf``\\ 에 위치하며,  ``Abs``, ``Acos``, "
-"``Asin``, ``Atan`` 그리고 ``Atan2``\\ 로 있습니다. ``PI``\\ 는 ``Mathf.Pi``"
-"\\ 입니다"
+"``Asin``, ``Atan`` 그리고 ``Atan2``\\ 로 존재합니다. ``PI`` 상수는 ``Mathf."
+"Pi``\\ 입니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
-#, fuzzy
 msgid "Random functions"
-msgstr "정적 함수"
+msgstr "랜덤 함수"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:47
-#, fuzzy
 msgid ""
 "Random global functions, like ``rand_range`` and ``rand_seed``, are located "
 "under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
 msgstr ""
-"``rand_range``\\ 와 ``rand_seed``\\ 와 같은 Random 함수는 ``Random``\\ 에 위"
-"치하기 때문에, ``rand_range``\\ 가 아니라 ``Random.RandRange``\\ 를 사용합니"
-"다."
+"``rand_range``\\ 와 ``rand_seed``\\ 와 같은 랜덤 글로벌 함수는 ``GD``\\ 에 위"
+"치합니다. 예: ``GD.RandRange``\\ 와 ``GD.RandSeed``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
-#, fuzzy
 msgid "Other functions"
-msgstr "정적 함수"
+msgstr "기타 함수"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:53
-#, fuzzy
 msgid ""
 "Many other global functions like ``print`` and ``var2str`` are located under "
 "``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
 msgstr ""
-"``print``, ``var2str`` 그리고 ``weakref``\\ 와 같은 글로벌 함수는 C#에서 "
-"``GD``\\ 에 위치합니다."
+"``print``\\ 와 ``var2str``\\ 와 같은 기타 다른 글로벌 함수는 ``GD``\\ 에 위치"
+"합니다. 예: ``GD.Print``\\ 와 ``GD.Var2Str``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:56
-#, fuzzy
 msgid "Exceptions:"
-msgstr "함수(Function)"
+msgstr "예외:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``weakref(obj)``"
-msgstr ""
+msgstr "``weakref(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``Object.WeakRef(obj)``"
-msgstr ""
+msgstr "``Object.WeakRef(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
 msgid "``is_instance_valid(obj)``"
-msgstr ""
+msgstr "``is_instance_valid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
 msgid "``Object.IsInstanceValid(obj)``"
-msgstr ""
+msgstr "``Object.IsInstanceValid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:66
 msgid "Tips"
-msgstr ""
+msgstr "팁"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:68
 msgid ""
@@ -17836,6 +17825,9 @@ msgid ""
 "directive allows to access the members and nested types of a class without "
 "specifying the class name."
 msgstr ""
+"때로는 ``using static`` 지시문을 사용하는 게 유용할 수 있습니다. 이 지시문이"
+"면 클래스 이름을 지정하지 않고도 클래스의 멤버와 중첩된 타입에 액세스 할 수 "
+"있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:90
@@ -17866,14 +17858,14 @@ msgid "Signal keyword"
 msgstr "시그널 키워드"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:105
-#, fuzzy
 msgid ""
 "Use the ``[Signal]`` attribute to declare a signal instead of the GDScript "
 "``signal`` keyword. This attribute should be used on a `delegate`, whose "
 "name signature will be used to define the signal."
 msgstr ""
-"GDScript의 ``signal`` 키워드 대신 ``[Signal]`` 속성을 사용합니다. 이 속성은 "
-"`delegate`\\ 에 사용되어야 하며, 이름은 시그널을 정의하는 데 사용될 것입니다."
+"GDScript의 ``signal`` 키워드 대신 ``[Signal]`` 속성을 사용하여 시그널을 선언"
+"합니다. 이 속성은 `delegate`\\ 에 사용되어야 하며, 이름은 시그널을 정의하는 "
+"데 사용될 것입니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:113
 msgid "See also: :ref:`c_sharp_signals`"
@@ -17884,14 +17876,14 @@ msgid "Singletons"
 msgstr "싱글톤(Singleton)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:118
-#, fuzzy
 msgid ""
 "Singletons are available as static classes rather than using the singleton "
 "pattern. This is to make code less verbose than it would be with an "
 "``Instance`` property."
 msgstr ""
-"C#에서 싱글톤 패턴을 사용하는 대신 싱글톤은 정적 메서드를 제공합니다. 이것으"
-"로 GDScript와 비슷하면서도 더 적은 글로 코드를 만들 수 있습니다. 예제:"
+"싱글톤은 싱글톤 패턴을 사용하는 대신 정적 클래스로 사용할 수 있습니다. 이것으"
+"로 ``Instance`` 속성으로 작업하는 것과 비슷하면서도 더 적은 문장의 코드를 만"
+"들 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid ""
@@ -17901,6 +17893,10 @@ msgid ""
 "``Singleton`` that returns the singleton instance. The type of this instance "
 "is ``Godot.Object``."
 msgstr ""
+"하지만, 일부 드문 경우가 있어 충분하지 않습니다. 예를 들어, ``Connect``\\ 처"
+"럼, 기본 클래스 ``Godot.Object``\\ 의 멤버로 액세스 해야 하는 경우가 있습니"
+"다. 이런 경우를 위해, 싱글톤 인스턴스를 반환하는 ``Singleton`` 정적 속성을 제"
+"공합니다. 인스턴스의 타입은 ``Godot.Object``\\ 입니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
@@ -17910,13 +17906,12 @@ msgid "String"
 msgstr "문자열(String)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:141
-#, fuzzy
 msgid ""
 "Use ``System.String`` (``string``). Most of Godot's String methods are "
 "provided by the ``StringExtensions`` class as extension methods."
 msgstr ""
 "``System.String`` (``string``)을 사용합니다. 모든 Godot 문자열 메서드는 "
-"``StringExtensions`` 클래스에서 확장 메서드 형태로 제공됩니다. 예제:"
+"``StringExtensions`` 클래스에서 확장 메서드 형태로 제공됩니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:151
 msgid "There are a few differences, though:"
@@ -17976,15 +17971,13 @@ msgstr "다음 메서드들는 다른 이름으로 변환된 속성들입니다:
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:206
-#, fuzzy
 msgid "``get_scale()``"
-msgstr "get_scale()"
+msgstr "``get_scale()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:206
-#, fuzzy
 msgid "``Scale``"
-msgstr "Scale"
+msgstr "``Scale``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:194
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:157
@@ -18010,14 +18003,12 @@ msgid ""
 msgstr "다음 메서드들은 관련된 이름으로 변경된 속성들입니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
-#, fuzzy
 msgid "``get_rotation()``"
-msgstr "get_rotation()"
+msgstr "``get_rotation()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
-#, fuzzy
 msgid "``Rotation``"
-msgstr "Rotation"
+msgstr "``Rotation``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:210
 msgid "Plane"
@@ -18030,14 +18021,12 @@ msgid ""
 msgstr "다음 메서드는 *약간* 다른 이름으로 변환된 속성입니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
-#, fuzzy
 msgid "``center()``"
-msgstr "center()"
+msgstr "``center()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
-#, fuzzy
 msgid "``Center``"
-msgstr "Center"
+msgstr "``Center``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:221
 msgid "Rect2"
@@ -18051,21 +18040,19 @@ msgstr "다음 영역은 *약간* 다른 이름으로 변환된 속성입니다:
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``end``"
-msgstr ""
+msgstr "``end``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``End``"
-msgstr ""
+msgstr "``End``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:236
-#, fuzzy
 msgid "``get_area()``"
-msgstr "get_area()"
+msgstr "``get_area()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:236
-#, fuzzy
 msgid "``Area``"
-msgstr "Area"
+msgstr "``Area``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:240
 msgid "Quat"
@@ -18082,133 +18069,118 @@ msgstr ""
 "``Quat()``\\ 에 해당하는 것으로 ``Quat.Identity``\\ 를 사용해주세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:246
-#, fuzzy
 msgid ""
 "The following methods were converted to a property with a different name:"
-msgstr "다음 메서드들는 다른 이름으로 변환된 속성들입니다:"
+msgstr "다음 메서드는 다른 이름으로 변환된 속성들입니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
 msgid "``length()``"
-msgstr ""
+msgstr "``length()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
-#, fuzzy
 msgid "``Length``"
-msgstr "``$NodePath``"
+msgstr "``Length``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
 msgid "``length_squared()``"
-msgstr ""
+msgstr "``length_squared()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
 msgid "``LengthSquared``"
-msgstr ""
+msgstr "``LengthSquared``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:258
-#, fuzzy
 msgid ""
 "*This is temporary. PoolArrays will need their own types to be used the way "
 "they are meant to.*"
 msgstr ""
-"*이것은 일시적인 것입니다. 배열은 ref를 셀 수 있고, 네이티브 측을 감싸는 타입"
-"이 필요할 것입니다. PoolArray도 그들을 뜻하는 방법으로 자신들의 타입이 필요"
+"*이것은 일시적인 것입니다. PoolArray도 자신을 의미하는 자체적인 타입이 필요"
 "할 것입니다.*"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
-#, fuzzy
 msgid "``Array``"
-msgstr "배열"
+msgstr "``Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``Godot.Array``"
-msgstr ""
+msgstr "``Godot.Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
-#, fuzzy
 msgid "``PoolIntArray``"
-msgstr "PoolIntArray"
+msgstr "``PoolIntArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
-#, fuzzy
 msgid "``int[]``"
-msgstr "``in``"
+msgstr "``int[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:265
-#, fuzzy
 msgid "``PoolByteArray``"
-msgstr "PoolByteArray"
+msgstr "``PoolByteArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:265
-#, fuzzy
 msgid "``byte[]``"
-msgstr "byte[]"
+msgstr "``byte[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:266
-#, fuzzy
 msgid "``PoolFloatArray``"
-msgstr "PoolFloatArray"
+msgstr "``PoolFloatArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:266
-#, fuzzy
 msgid "``float[]``"
-msgstr "float[]"
+msgstr "``float[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
-#, fuzzy
 msgid "``PoolStringArray``"
-msgstr "PoolStringArray"
+msgstr "``PoolStringArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
-#, fuzzy
 msgid "``String[]``"
-msgstr "String[]"
+msgstr "``String[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:268
-#, fuzzy
 msgid "``PoolColorArray``"
-msgstr "PoolColorArray"
+msgstr "``PoolColorArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:268
-#, fuzzy
 msgid "``Color[]``"
-msgstr "Color[]"
+msgstr "``Color[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
-#, fuzzy
 msgid "``PoolVector2Array``"
-msgstr "PoolVector2Array"
+msgstr "``PoolVector2Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
-#, fuzzy
 msgid "``Vector2[]``"
-msgstr "Vector2[]"
+msgstr "``Vector2[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:270
-#, fuzzy
 msgid "``PoolVector3Array``"
-msgstr "PoolVector3Array"
+msgstr "``PoolVector3Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:270
-#, fuzzy
 msgid "``Vector3[]``"
-msgstr "Vector3[]"
+msgstr "``Vector3[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:273
 msgid ""
 "``Godot.Array<T>`` is a type-safe wrapper around ``Godot.Array``. Use the "
 "``Godot.Array<T>(Godot.Array)`` constructor to create one."
 msgstr ""
+"``Godot.Array<T>``\\ 는 ``Godot.Array``\\ 를 둘러싸는 타입 안전 포장지입니"
+"다. 만들기 위해 ``Godot.Array<T>(Godot.Array)`` 생성자를 사용하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
-#, fuzzy
 msgid "Use ``Godot.Dictionary``."
-msgstr "``Dictionary<object, object>``\\ 를 사용하세요."
+msgstr "``Godot.Dictionary``\\ 를 사용하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid ""
 "``Godot.Dictionary<T>`` is a type-safe wrapper around ``Godot.Dictionary``. "
 "Use the ``Godot.Dictionary<T>(Godot.Dictionary)`` constructor to create one."
 msgstr ""
+"``Godot.Dictionary<T>``\\ 는 ``Godot.Dictionary``\\ 를 둘러싸는 타입 안전 포"
+"장지입니다. 만들기 위해 ``Godot.Dictionary<T>(Godot.Dictionary)`` 생성자를 사"
+"용하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:285
 msgid "Variant"
@@ -18223,7 +18195,6 @@ msgid "Communicating with other scripting languages"
 msgstr "다른 스크립팅 언어와 소통하기"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:292
-#, fuzzy
 msgid ""
 "The methods ``object Object.Call(string method, params object[] args)``, "
 "``object Object.Get(string field)`` and ``object Object.Set(string field, "
@@ -18232,8 +18203,8 @@ msgid ""
 msgstr ""
 "메서드 ``object Object.call(string method, params object[] args)``, ``object "
 "Object.get(string field)`` 그리고 ``object Object.set(string field, object "
-"value)``\\ 는 변수 API를 통해 다른 스크립팅 언어의 인스턴스와 소통하기 위해 "
-"제공됩니다."
+"value)``\\ 는 Variant API를 통해 다른 스크립팅 언어의 인스턴스와 소통하기 위"
+"해 제공됩니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:300
 msgid ""
@@ -18241,12 +18212,17 @@ msgid ""
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield>`_."
 msgstr ""
+"단일 매개변수를 사용하는 GDScript의 ``yield``\\ 와 비슷한 C#의 `yield 키워드"
+"<https://docs.microsoft.com/ko/dotnet/csharp/language-reference/keywords/"
+"yield>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
 msgstr ""
+"async/await와 ``Godot.Object.ToSignal``\\로 시그널에서 yield와 동일한 효과를 "
+"얻을 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:313
 msgid "Other differences"
@@ -18257,56 +18233,49 @@ msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
+"GDScript에서 쓰이는 ``preload``\\ 는 C#에서 사용할 수 없습니다. 대신 ``GD."
+"Load`` 또는 ``ResourceLoader.Load``\\ 를 사용하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Other differences:"
 msgstr "다른 차이점:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
-#, fuzzy
 msgid "``Color8``"
-msgstr "Color8"
+msgstr "``Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
-#, fuzzy
 msgid "``Color.Color8``"
-msgstr "Color.Color8"
+msgstr "``Color.Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:324
-#, fuzzy
 msgid "``is_inf``"
-msgstr "is_inf"
+msgstr "``is_inf``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:324
-#, fuzzy
 msgid "``float.IsInfinity``"
-msgstr "float.IsInfinity"
+msgstr "``float.IsInfinity``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:325
-#, fuzzy
 msgid "``is_nan``"
-msgstr "is_nan"
+msgstr "``is_nan``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:325
-#, fuzzy
 msgid "``float.IsNaN``"
-msgstr "float.IsNaN"
+msgstr "``float.IsNaN``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
-#, fuzzy
 msgid "``dict2inst``"
-msgstr "dict2inst"
+msgstr "``dict2inst``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:327
-#, fuzzy
 msgid "TODO"
-msgstr "? TODO"
+msgstr "TODO"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:327
-#, fuzzy
 msgid "``inst2dict``"
-msgstr "inst2dict"
+msgstr "``inst2dict``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:4
 msgid "C# style guide"
@@ -18931,9 +18900,8 @@ msgstr ""
 "None - 머티리얼을 찾지 않습니다. 머티리얼을 블렌더 파일에서 내보냅니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
-#, fuzzy
 msgid "Export of Cycles/EEVEE materials"
-msgstr "블렌더 머티리얼의 내보내기"
+msgstr "Cycles/EEVEE 머티리얼 내보내기"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
 msgid ""
@@ -18941,24 +18909,29 @@ msgid ""
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
+"이 내보내기는 Cycles/EEVEE 머티리얼 노드 트리를 Godot 셰이더 머티리얼로 변환"
+"하기 위한 원시적인 지원을 갖고 있습니다. 일부 셰이더 노드는 구현의 어려움으"
+"로 아직 지원하지 않습니다, 다음과 같습니다:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid "all the ``noisy textures``"
-msgstr ""
+msgstr "모든 ``노이즈 텍스쳐``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
 msgid "``generated texture coordinates``"
-msgstr ""
+msgstr "``생성된 텍스쳐 좌표``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
-msgstr ""
+msgstr "``그룹 노드``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
+"``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, ``add shader`` 그리"
+"고 ``mix shader``\\ 를 제외한 셰이더 노드들"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
 msgid ""
@@ -18966,21 +18939,24 @@ msgid ""
 "output shader node, it is the only one guarantee to be exactly correctly. "
 "Others are just based on approximation."
 msgstr ""
+"PrincipledBSDF 노드가 정확하게 된다는 것을 보장하기 위해, 가능하다면 GGX 분포"
+"를 셰이더 노드 출력으로 하도록 하세요. 다른 것은 단지 근사치를 기반으로 합니"
+"다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
-#, fuzzy
 msgid ""
 "Sometimes materials may not be valid for exporting (e.g. has some "
 "unsupported node) or it is using Blender Internal Engine, only the diffuse "
 "color and a few flags (e.g. unshaded) are exported and form a Spatial "
 "Material."
 msgstr ""
-"머티리얼을 다루는 다른 방법은 블렌더에서 내보내기로 내보내는 것입니다. 현재로"
-"는 오직 디퓨즈 색상과 일부 플래그만 내보내집니다 (예: 쉐이더 없음)."
+"때로 머티리얼이 내보내기에 좋지 않을 수 있습니다 (예: 내보낼 수 없는 노드를 "
+"가져서) 혹은 블렌더 내장 엔진을 사용하는 등의 이유로, 오직 확산 색상과 몇 가"
+"지 플래그 (예: 셰이드 없음)가 내보내지고 Spatial 머티리얼의 형태가 됩니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
 msgid "Generate external materials"
-msgstr ""
+msgstr "외부 머티리얼 생성하기"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
 msgid ""
@@ -18988,12 +18964,17 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
+"머티리얼 내보내기의 기본 구성은 모든 머티리얼을 ``escn`` 파일에 내부적으로 유"
+"지하는 것입니다. 설정을 통해 Godot에서 ``escn`` 파일을 열 때 외부 ``."
+"material`` 파일을 생성하도록 할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
 msgstr ""
+"``.material`` 파일은 아무 머티리얼 슬롯에 지정해 외부 리소스로 사용될 수 있습"
+"니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:2
 msgid "Physics properties"
@@ -19222,7 +19203,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
 #: ../../docs/development/file_formats/tscn.rst:153
 msgid "Skeleton"
-msgstr "스켈레톤(Skeleton)"
+msgstr "스켈레톤"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
@@ -19342,9 +19323,8 @@ msgstr ""
 "단한 가이드입니다:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
-#, fuzzy
 msgid "**1. Stash active action**"
-msgstr "**2. 활성화 동작 숨기기(Stash)**"
+msgstr "**1. 활성화 동작 숨기기(Stash)**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
 msgid ""
@@ -19352,14 +19332,17 @@ msgid ""
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
+"새롭게 만든 액션은 항상 객체에 묶여 활성화된 액션입니다. NLA 트랙에 활성화된 "
+"액션을 놓는 방법은 여러 가지가 있고, 그 중 하나는 ``NLA 에디터``\\ 에서 할 "
+"수 있습니다"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
-msgstr ""
+msgstr "혹은 ``Dope Sheet``\\ 에서 액션을 숨길 수 있습니다"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2. NLA 트랙의 mute 상태 확인하기**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -19367,29 +19350,29 @@ msgid ""
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
+"NLA 트랙은 ``mute``\\ 나 ``unmute``\\ 를 할 수 있고, 내보내기는 ``mute`` 상태"
+"인 모든 NLA 트랙을 개별 액션으로 내보낼 것이며, ``unmute`` 상태의 모든 NLA 트"
+"랙은 (액션을 포함한) 모든 액션으로 혼합하여 내보낼 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
-#, fuzzy
 msgid "**3. Export the scene**"
-msgstr "**4. 씬 내보내기**"
+msgstr "**3. 씬 내보내기**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
-msgstr ""
+msgstr "``Export Stashed Actions`` 설정이 켜져 있어야 합니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
-#, fuzzy
 msgid ""
 "Then all the stashed actions, as well as the active action, are exported to "
 "an AnimationPlayer."
-msgstr "모든 숨겨진 동작, 활성화 동작을 AnimationPlayer로 내보냅니다."
+msgstr "그러면 모든 숨겨진 동작, 활성화 동작을 AnimationPlayer로 내보냅니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
 msgid "Constraints"
 msgstr "제한(Constraints)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
-#, fuzzy
 msgid ""
 "Sometimes complicated animation is built with object constraint; a usual "
 "example is inverse kinematics. The add-on would automatically check if an "
@@ -19398,8 +19381,8 @@ msgid ""
 msgstr ""
 "때로 복잡한 애니메이션은 객체 제한으로 만들어집니다; 보통 예시로는 역운동학"
 "(inverse kinematics)이 있습니다. 애드온은 객체가 제한이 있는지 자동으로 확인"
-"할 것입니다; 있다면 모든 제약은 객체가 가지고 있고 내보내진 모든 동작으로 베"
-"이크합니다."
+"할 것입니다; 제한이 있다면 모든 제한은 액션에 베이크되어 객체와 함께 내보냅니"
+"다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
 msgid "Animation Mode"
@@ -21483,6 +21466,10 @@ msgid ""
 "from the command line still requires an export preset to define the export "
 "parameters. A basic invocation of the command would be:"
 msgstr ""
+"개발에 있어, 빌드를 자동화하는 것이 유용합니다, 그리고 Godot은 명령 행 매개 "
+"변수``--export``\\ 와 ``--export-debug``\\ 를 사용하여 이를 지원합니다. 명령 "
+"행에서 내보내려면 여전히 내보내기 매개 변수를 정의하기 위한 내보내기 프리셋"
+"이 필요합니다. 명령의 기본 호출은 다음과 같습니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
 msgid ""
@@ -21491,6 +21478,9 @@ msgid ""
 "relative to the project path or absolute; it does not respect the directory "
 "the command was invoked from."
 msgstr ""
+"\"Windows Desktop\"이라는 프리셋이 있으며 템플릿을 찾을 수 있다고 가정하면, "
+"이것은 ``some_name.exe``\\ 로 내보냅니다. 출력 경로는 프로젝트 경로 또는 절"
+"대 경로를 기준으로 합니다; 명령이 호출 된 디렉토리를 따르지 않습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
 msgid ""
@@ -21498,24 +21488,28 @@ msgid ""
 "single export to be used with multiple Godot executables). This takes place "
 "if:"
 msgstr ""
+"PCK 또는 ZIP 파일만 내보내도록 설정할 수도 있습니다 (여러 Godot 실행 파일에"
+"서 단일 내보내기를 사용할 수 있음). 다음과 같은 경우에 발생합니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid "the export preset is not marked as runnable,"
-msgstr ""
+msgstr "내보내기 프리셋이 실행 가능으로 표시되지 않고,"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:157
 msgid "the target name ends with ``.pck`` or ``.zip``."
-msgstr ""
+msgstr "대상 이름이 ``.pck``\\ 이나 ``.zip``\\ 으로 끝나는 경우."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:159
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
 msgstr ""
+"때로는 ``--export`` 플래그와 ``--path`` 플래그를 결합하거나, 자동화된 내보내"
+"기를 위해 전용 내보내기 프리셋을 만드는 것이 유용합니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:4
 msgid "Exporting packs, patches, and mods"
-msgstr ""
+msgstr "패키지, 패치, 모드 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:7
 msgid "Use cases"
@@ -21525,68 +21519,71 @@ msgstr "사용 사례"
 msgid ""
 "Oftentimes one would like to add functionality to one's game after it has "
 "been deployed."
-msgstr ""
+msgstr "때때로 게임을 배포한 후에 기능을 추가하고 싶습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:12
 msgid "Examples of this include..."
-msgstr ""
+msgstr "이런 예시로는..."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:14
 msgid ""
 "Downloadable Content: the ability to add features and content to one's game."
 msgstr ""
+"다운로드 가능한 콘텐츠(DLC): 자신의 게임에 기능과 콘텐츠를 추가하는 기능."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:15
 msgid "Patches: the ability to fix a bug that is present in a shipped product."
-msgstr ""
+msgstr "패치: 배포된 제품에 존재하는 버그를 고치는 기능."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:16
 msgid "Mods: grant other people the ability to create content for one's game."
-msgstr ""
+msgstr "모드: 다른 사람들에게 게임의 콘텐츠를 만드는 기능을 허가함."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:18
 msgid ""
 "These tools help developers to extend their development beyond the initial "
 "release."
-msgstr ""
+msgstr "이 도구는 개발자가 초기 출시 단계를 넘어 확장하는 것을 도와줍니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:22
 msgid "Overview of PCK files"
-msgstr ""
+msgstr "PCK 파일의 개요"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:24
 msgid ""
 "Godot enables this via a feature called **resource packs** (PCK files, with "
 "extension ``.pck``)."
 msgstr ""
+"Godot는 **리소스 팩**\\ 이라는 기능을 통해 이를 허용합니다 (``.pck`` 확장자명"
+"을 가진 PCK 파일)."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:27
 msgid "**Advantages:**"
-msgstr ""
+msgstr "**이점:**"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:29
 msgid "incremental updates/patches"
-msgstr ""
+msgstr "증가하는 업데이트/패치"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:30
 msgid "offer DLCs"
-msgstr ""
+msgstr "DLC 제공"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:31
 msgid "offer mod support"
-msgstr ""
+msgstr "모드 지원 제공"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:32
 msgid "no source code disclosure needed for mods"
-msgstr ""
+msgstr "모드에 필요한 소스 코드 공개 없음"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:33
 msgid "more modular project structure"
-msgstr ""
+msgstr "더 많은 모듈형 프로젝트 구조"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:34
 msgid "users don’t have to replace the entire game"
-msgstr ""
+msgstr "사용자는 게임 전체를 교체할 필요가 없음"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:36
 msgid ""
@@ -21594,10 +21591,13 @@ msgid ""
 "to players. Then, when one wants to add functionality or content later on, "
 "they just deliver the updates via PCK files to the users."
 msgstr ""
+"파일을 사용하는 첫번째는 프로젝트를 내보내고 플레이어에게 전달하는 것입니다. "
+"그 뒤, 나중에 기능이나 콘텐츠를 추가하려 한다면, 단지 PCK 파일을 통해 사용자"
+"에게 업데이트를 전달하면 됩니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:40
 msgid "PCK files usually contain, but are not limited to:"
-msgstr ""
+msgstr "PCK 파일은 보통 다음을 포함하지만, 제한은 없습니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:42
 msgid "scripts"
@@ -21609,11 +21609,11 @@ msgstr "씬"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:44
 msgid "shaders"
-msgstr ""
+msgstr "셰이더"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:45
 msgid "models"
-msgstr ""
+msgstr "모델"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:46
 msgid "textures"
@@ -21625,21 +21625,23 @@ msgstr "음향 효과"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:48
 msgid "music"
-msgstr ""
+msgstr "음악"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:49
 msgid "any other asset suitable for import into the game"
-msgstr ""
+msgstr "게임으로 가져오기 적당한 다른 에셋"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:51
 msgid ""
 "The PCK files can even be an entirely different Godot project, which the "
 "original game loads in at runtime."
 msgstr ""
+"PCK 파일은 원래 게임이 런타임에 불러오는 완전히 다른 Godot 프로젝트가 될 수"
+"도 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:55
 msgid "Generating PCK files"
-msgstr ""
+msgstr "PCK 파일 생성하기"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:57
 msgid ""
@@ -21647,6 +21649,9 @@ msgid ""
 "and go to Project/Export and click on “Export PCK/Zip”. Also make sure to "
 "have an export template selected while doing so."
 msgstr ""
+"프로젝트의 모든 리소스를 하나의 PCK 파일에 포장하기(pack) 위해선 프로젝트를 "
+"열고 프로젝트/내보내기로 가고 “PCK/Zip 내보내기”를 클릭합니다. 또한 내보내기 "
+"템플릿이 선택되어 있는지 확인해야 합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:63
 msgid ""
@@ -21655,6 +21660,9 @@ msgid ""
 "or ZIP file extension, then the export process will build that type of file "
 "for the chosen platform."
 msgstr ""
+"다른 방법은 :ref:`명령 행에서 내보내기 <doc_command_line_tutorial_exporting>`"
+"\\ 가 있습니다. 출력 파일은 PCK나 ZIP 파일 확장자명으로 끝나고, 그 뒤 내보내"
+"기 처리는 선택한 플랫폼에 맞는 타입의 파일로 빌드할 것입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:69
 msgid ""
@@ -21663,6 +21671,9 @@ msgid ""
 "certain structure for the PCK's resources and/or a certain interface for its "
 "scripts, then either..."
 msgstr ""
+"누군가는 게임에 모드를 지원하고 싶을 것이고, 그러려면 사용자는 내보낸 파일과 "
+"비슷한 파일을 만들어야 합니다. 기존 게임이 PCK의 리소스를 위한 특정 구조를, "
+"그리고/또는 스크립트를 위한 특정 인터페이스를 예상한다고 가정한다면..."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:74
 msgid ""
@@ -21672,6 +21683,11 @@ msgid ""
 "mod content for the game (so that it will work). Users would then use "
 "Godot's built in exporting tools to create a PCK file, as detailed above."
 msgstr ""
+"개발자는 예상되는 구조/ 인터페이스의 문서를 공개해야 하며, 모드 제작자들이 "
+"Godot 엔진을 설치한다고 생각해야 합니다, 그리고 모드 제작자들도 게임의 모드 "
+"콘텐츠를 제작할 때 문서에 정의된 API를 준수할 것입니다 (따라서 잘 될 것입니"
+"다). 그런 다음 사용자는 Godot에 내장된 내보내기 도구로 위와 같은 PCK 파일을 "
+"만듭니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:80
 msgid ""
@@ -21684,10 +21700,16 @@ msgid ""
 "a tool-build though (for security) and for the modding tools to *do* use a "
 "tool-enabled engine build."
 msgstr ""
+"개발자는 Godot로 정확한 API 콘텐츠를 프로젝트에 추가하기 위한 GUI 도구를 빌드"
+"합니다. Godot 도구는 도구를 쓰는 엔진의 빌드에서 실행되거나 엔진 또는 게임 파"
+"일에 액세스할 수 있어야 합니다. 그런 다음 도구는 Godot 실행 파일을 사용하여 "
+"명령행에서 :ref:`OS.execute() <class_OS_method_execute>`\\ 로 PCK 파일을 내보"
+"냅니다. (보안을 위해) 게임에는 도구 빌드를 사용하지 않으면서 모딩 도구에는 도"
+"구 사용 엔진 빌드를 *사용하는 것*\\ 으로 이해하면 됩니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:90
 msgid "Opening PCK files at runtime"
-msgstr ""
+msgstr "런타임에 PCK 파일 열기"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:92
 msgid ""
@@ -21697,6 +21719,10 @@ msgid ""
 "file in the directory of the games executable. The PCK file contains a "
 "“mod_scene.tscn” test scene in its root."
 msgstr ""
+"PCK 파일을 가져오기 위해, 한마디만 하겠습니다. 가져오기가 실패한다면 오류나 "
+"예외 사항은 없습니다. 대신 확인할 수 있는 코드를 만들어야 할 것입니다. 다음 "
+"예제는 게임 디렉토리에 “mod.pck”으로 보이는 파일을 실행하는 것입니다. PCK 파"
+"일은 루트에 “mod_scene.tscn”라는 테스트 씬을 갖고 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:117
 msgid ""
@@ -21707,6 +21733,11 @@ msgid ""
 "for one's own game. A PCK file of this kind can fix the content of a "
 "previously loaded PCK."
 msgstr ""
+"이미 동일한 파일 경로/이름을 가진 파일을 가진 프로젝트로 파일을 가져온다면, "
+"가져온 것으로 바꿀 것입니다. 이는 DLC나 모드를 만들 때 주의해야 하는 점입니"
+"다 (모드를 특정 모드 하위 폴더로 분리하는 도구로 쉽게 해결됩니다). 하지만, 이"
+"것 또한 게임의 패치를 만드는 방식이기도 합니다. 이런 종류의 PCK 파일은 이전"
+"에 불러온 PCK 파일의 콘텐츠를 고칠 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:126
 msgid ""
@@ -21716,6 +21747,10 @@ msgid ""
 "that purpose. Godot should make that process smooth regardless of which "
 "route a developer pursues."
 msgstr ""
+"이 튜토리얼에서는 게임에 모드, 패치 또는 DLC를 추가하기가 얼마나 쉬운 지에 대"
+"해 설명합니다. 가장 중요한 것은 게임의 미래 콘텐츠를 배포하기 위해 어떻게 계"
+"획을 짜고 이를 위해 어떻게 워크플로우를 개발하는 것입니다. Godot는 개발자가 "
+"추구하는 방향에 관계없이 작업을 부드럽게 만들어줍니다."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
 msgid "Feature tags"
@@ -21726,50 +21761,58 @@ msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
 "is represented as a string, which can refer to many of the following:"
 msgstr ""
+"Godot는 기능의 사용 여부를 태그하는 특수 시스템을 갖고 있습니다. 각 *기능*\\ "
+"은 문자열으로 나타나며, 다음과 같은 것을 언급할 수 있습니다:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:12
 msgid "Platform name."
-msgstr ""
+msgstr "플랫폼 이름."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:13
 msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
-msgstr ""
+msgstr "플랫폼 구조 (64비트나 32비트, x86이나 ARM)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
 msgid "Platform type (desktop, mobile, Web)."
-msgstr ""
+msgstr "플랫폼 유형 (데스크톱, 모바일, 웹)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
 msgid "Supported texture compression algorithms on the platform."
-msgstr ""
+msgstr "플랫폼에서 지원하는 텍스쳐 압축 알고리즘."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
 msgstr ""
+"빌드가 ``디버그``\\ 인지 ``출시``\\ 인지 여부 (``디버그``\\ 는 에디터가 포함"
+"됨)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
 "Whether the project is running from the editor or a \"standalone\" binary."
-msgstr ""
+msgstr "프로젝트가 에디터에서 실행 중인지 \"독립 실행형\" 바이너리인지 여부."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:18
 msgid "Many more things."
-msgstr ""
+msgstr "더 많은 것들."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:20
 msgid "Features can be queried at run-time from the singleton API by calling:"
 msgstr ""
+"기능은 다음과 같이 호출하여 런타임에서 싱글톤 API로 부터 질문(query)을 받을 "
+"수 있습니다:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:28
 msgid "Default features"
-msgstr ""
+msgstr "기본 기능"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:30
 msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are **case-"
 "sensitive**:"
 msgstr ""
+"다음은 Godot의 대부분의 기능 태그 목록입니다. 이들은 **대소문자을 구별**\\ 합"
+"니다:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Feature tag**"
@@ -21777,225 +21820,227 @@ msgstr "**기능 태그**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "**Android**"
-msgstr ""
+msgstr "**Android**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "Running on Android"
-msgstr ""
+msgstr "안드로이드에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "**HTML5**"
-msgstr ""
+msgstr "**HTML5**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "Running on HTML5"
-msgstr ""
+msgstr "HTML5에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid "**JavaScript**"
-msgstr ""
+msgstr "**JavaScript**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
-msgstr ""
+msgstr ":ref:`JavaScript 싱글톤 <doc_javascript_eval>` 사용 가능"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "**OSX**"
-msgstr ""
+msgstr "**OSX**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "Running on macOS"
-msgstr ""
+msgstr "macOS에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:44
 msgid "**iOS**"
-msgstr ""
+msgstr "**iOS**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:44
 msgid "Running on iOS"
-msgstr ""
+msgstr "iOS에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "**UWP**"
-msgstr ""
+msgstr "**UWP**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "Running on UWP"
-msgstr ""
+msgstr "UWP에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "**Windows**"
-msgstr ""
+msgstr "**Windows**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "Running on Windows"
-msgstr ""
+msgstr "윈도우에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "**X11**"
-msgstr ""
+msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
-msgstr ""
+msgstr "X11에서 실행 중 (리눅스/BSD 데스크톱)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "**Server**"
-msgstr ""
+msgstr "**Server**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "Running on the headless server platform"
-msgstr ""
+msgstr "헤드리스 서버 플랫폼에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "**debug**"
-msgstr ""
+msgstr "**debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "Running on a debug build (including the editor)"
-msgstr ""
+msgstr "디버그 빌드에서 실행 중 (에디터를 포함)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
-msgstr ""
+msgstr "**release**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "Running on a release build"
-msgstr ""
+msgstr "출시 빌드에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "**editor**"
-msgstr "**에디터**"
+msgstr "**editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "Running on an editor build"
-msgstr ""
+msgstr "에디터 빌드에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "**standalone**"
-msgstr ""
+msgstr "**standalone**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "Running on a non-editor build"
-msgstr ""
+msgstr "에디터 없는 빌드에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
-msgstr ""
+msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "Running on a 64-bit build (any architecture)"
-msgstr ""
+msgstr "64비트 빌드에서 실행 중 (모든 구조)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
-msgstr ""
+msgstr "**32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "Running on a 32-bit build (any architecture)"
-msgstr ""
+msgstr "32빌드에서 실행 중 (모든 구조)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "**x86_64**"
-msgstr ""
+msgstr "**x86_64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "Running on a 64-bit x86 build"
-msgstr ""
+msgstr "64비트에서 x86 빌드를 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "**x86**"
-msgstr ""
+msgstr "**x86**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "Running on a 32-bit x86 build"
-msgstr ""
+msgstr "32비트에서 x86 빌드를 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "**arm64**"
-msgstr ""
+msgstr "**arm64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "Running on a 64-bit ARM build"
-msgstr ""
+msgstr "64비트에서 ARM 빌드를 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "**arm**"
-msgstr ""
+msgstr "**arm**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "Running on a 32-bit ARM build"
-msgstr ""
+msgstr "32비트에서 ARM 빌드를 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "**mobile**"
-msgstr ""
+msgstr "**mobile**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "Host OS is a mobile platform"
-msgstr ""
+msgstr "호스트 OS가 모바일 플랫폼이다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "**pc**"
-msgstr ""
+msgstr "**pc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "Host OS is a PC platform (desktop/laptop)"
-msgstr ""
+msgstr "호스트 OS가 PC 플랫폼이다 (데스크톱/랩톱)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "**web**"
-msgstr ""
+msgstr "**web**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "Host OS is a Web browser"
-msgstr ""
+msgstr "호스트 OS가 웹 브라우저이다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "**etc**"
-msgstr ""
+msgstr "**etc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "Textures using ETC1 compression are supported"
-msgstr ""
+msgstr "ETC1 압축을 사용하는 텍스쳐를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "**etc2**"
-msgstr ""
+msgstr "**etc2**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "Textures using ETC2 compression are supported"
-msgstr ""
+msgstr "ETC2 압축을 사용하는 텍스쳐를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "**s3tc**"
-msgstr ""
+msgstr "**s3tc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "Textures using S3TC (DXT/BC) compression are supported"
-msgstr ""
+msgstr "S3TC (DXT/BC) 압축을 사용하는 텍스쳐를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "**pvrtc**"
-msgstr ""
+msgstr "**pvrtc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "Textures using PVRTC compression are supported"
-msgstr ""
+msgstr "PVRTC 압축을 사용하는 텍스쳐를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:90
 msgid "Custom features"
-msgstr ""
+msgstr "커스텀 기능"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:92
 msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
+"빌드에 커스텀 기능을 추가할 수 있습니다; 생성하기 위해 *내보내기 프리셋*\\ 에"
+"서 관련 필드를 사용하세요:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Overriding project settings"
-msgstr ""
+msgstr "프로젝트 설정 재정의하기"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
 msgid ""
@@ -22003,6 +22048,8 @@ msgid ""
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
+"기능을 사용하여 *프로젝트 설정*\\ 의 특정 구성 값을 재정의할 수 있습니다. 이"
+"를 통해 빌드를 작업할 때 모든 구성을 더 잘 커스터마이즈할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
 msgid ""
@@ -41965,9 +42012,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/soft_body.rst:10
-#, fuzzy
 msgid "Basic set-up"
-msgstr "기본 문법:"
+msgstr "기본 설정"
 
 #: ../../docs/tutorials/physics/soft_body.rst:12
 msgid ""
@@ -64785,7 +64831,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:15
 msgid "Particles"
-msgstr "파티클(Particles)"
+msgstr "파티클"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:17
 msgid ""

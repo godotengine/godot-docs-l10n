@@ -49,17 +49,18 @@
 # zaevi <526131722@qq.com>, 2018.
 # Zhang Zhibo <zzhibo98@gmail.com>, 2019.
 # zwj36028 <23732399@qq.com>, 2018.
-# 小菠萝粑粑 <2062152083@qq.com>, 2018.
-# 小白newer <2551376741@qq.com>, 2018.
-# 刘庆文 <liuqingwen@163.com>, 2018.
 # 七眼蜂 <txcism@gmail.com>, 2018.
+# 刘庆文 <liuqingwen@163.com>, 2018.
+# 小白newer <2551376741@qq.com>, 2018.
+# 小菠萝粑粑 <2062152083@qq.com>, 2018.
+# 秋纫 <dugucloud@qq.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-10 11:47+0100\n"
-"PO-Revision-Date: 2019-03-07 07:14+0000\n"
+"PO-Revision-Date: 2019-03-28 08:39+0000\n"
 "Last-Translator: yzt <834950797@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
@@ -68,7 +69,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.5.1-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -485,9 +486,9 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot是 `免费和开源的软件 <https://en.wikipedia.org/wiki/Free_and_open-"
-"source_software>`_ 可在 `OSI-approved <https://opensource.org/licenses/"
-"MIT>`_ MIT许可下使用。这意味着它是免费的，就像“言论自由”或者“免费啤酒”。"
+"Godot是 `自由和开源的软件 <https://en.wikipedia.org/wiki/Free_and_open-"
+"source_software>`_ 可在 `OSI认可的<https://opensource.org/licenses/MIT>`_ MIT"
+"许可证下使用。就像“言论自由”或者“免费啤酒”一样，它是自由的。"
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -3430,7 +3431,6 @@ msgid "Organizing the project"
 msgstr "组织项目"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
-#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -3440,10 +3440,9 @@ msgid ""
 "can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
 "在这个项目里，我们会做出来3个独立的场景: ``Player`` , ``Mob`` 和 ``HUD`` ,我"
-"们游戏的 ``Main`` 场景由这3个场景组合而成。在更大的项目里，用不同的文件夹容纳"
-"不同的场景以及它们各自的脚本会很有用，但是对于这次的小游戏，您可以将您的场景"
-"和脚本都存放在根目录 ``res://`` 下。您能在文件系统面板的左上角看到您的项目文"
-"件夹:"
+"们游戏的 ``Main`` 场景由这3个场景组合而成。在更大的项目里，一般会把不同的场景"
+"及其脚本放到各自的文件夹里。但是对于这次的小游戏，您可以将您的场景和脚本都存"
+"放在根目录 ``res://`` 下。您能在文件系统面板的左上角看到您的项目文件夹:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
@@ -3767,7 +3766,7 @@ msgid ""
 "play()``."
 msgstr ""
 "``$`` 是 ``get_node()`` 的简写，因此在上面的代码中， ``$AnimatedSprite."
-"play()`` 与 ``get_node(\"AnimatedSprite\").play()``等效。"
+"play()`` 与 ``get_node(\"AnimatedSprite\").play()`` 等效。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:312
 #, fuzzy
@@ -16130,6 +16129,12 @@ msgid ""
 "Framework 4.5 targeting pack installed, you can get it using any of the "
 "installers mentioned above inside the \"Individual components\" tab."
 msgstr ""
+"下载并安装最新版本的`Visual Studio <https://visualstudio.microsoft.com/"
+"downloads/>`_ （*不是* Visual Studio Code！），它会包含Godot中用到的C#工具。"
+"如果你不打算用Visual Studio IDE的话，也可以只用下载 `Visual Studio Build "
+"Tools <https://visualstudio.microsoft.com/thank-you-downloading-visual-"
+"studio/?sku=BuildTools&rel=15>`_ 。你可以在上述任何安装程序中的“独立组件”选项"
+"卡里找到 .NET Framework 4.5 targeting pack，请确保安装。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
 #, fuzzy
@@ -42703,10 +42708,9 @@ msgstr ""
 "阻尼。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:37
-#, fuzzy
 msgid ""
 "The other three bodies extend :ref:`PhysicsBody2D <class_PhysicsBody2D>`:"
-msgstr "其他三个扩展自 :ref:`PhysicsBody2D <class_PhysicsBody2D>` 的物体:"
+msgstr "其他三个物体扩展自 :ref:`PhysicsBody2D <class_PhysicsBody2D>` ："
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:43
 msgid ":ref:`StaticBody2D <class_StaticBody2D>`"
