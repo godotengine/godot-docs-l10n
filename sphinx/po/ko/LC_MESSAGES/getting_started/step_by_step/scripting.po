@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,15 +26,14 @@ msgid "Introduction"
 msgstr "소개"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
-#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Godot 3.0 이전에는, 스크립팅 하는 법이 :ref:`doc_gdscript` 뿐 이었습니다. 지"
-"금은, Godot는 4개를 (그래요, 4개!) 공식 언어로 갖고 있고 추가로 스크립트 언어"
-"를 추가하는 기능도 있습니다!"
+"Godot 3.0 이전에는, 스크립팅 하는 법이 :ref:`GDScript<doc_gdscript>`\\ 뿐 이"
+"었습니다. 지금은, Godot는 4개를 (그래요, 4개!) 공식 언어로 갖고 있고 추가로 "
+"스크립트 언어를 추가하는 기능도 있습니다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
@@ -62,15 +61,14 @@ msgid "GDScript"
 msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript` 는 앞에서 말했듯, Godot에서 사용되는 메인 언어입니다. 이 "
-"언어는 다른 언어들에 비해 Godot와의 높은 통합성으로 인해 갖는 장점이 있습니"
-"다:"
+":ref:`GDScript<doc_gdscript>`\\ 는 앞에서 말했듯, Godot에서 사용되는 메인 언"
+"어입니다. 이 언어는 다른 언어들에 비해 Godot와의 높은 통합성으로 인해 갖는 장"
+"점이 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -268,16 +266,15 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "씬의 다른 노드에 액세스 할 수 있는 스크립트를 작성함."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
-"계속하기 전에 :ref:`doc_gdscript` 레퍼런스를 반드시 읽어 보시기 바랍니다. 이 "
-"언어는 간단하게 설계되었고, 참조가 짧기 때문에 개념을 파악하는 데 몇 분 정도 "
-"밖에 걸리지 않습니다."
+"계속하기 전에 :ref:`GDScript<doc_gdscript>` 레퍼런스를 반드시 읽어 보시기 바"
+"랍니다. 이 언어는 간단하게 설계되었고, 참조가 짧기 때문에 개념을 파악하는 데 "
+"몇 분 정도 밖에 걸리지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"
@@ -301,7 +298,7 @@ msgstr "라벨(Label)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr "버튼(Button)"
+msgstr "버튼"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"

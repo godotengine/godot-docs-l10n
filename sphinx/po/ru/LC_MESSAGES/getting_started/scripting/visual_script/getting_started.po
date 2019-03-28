@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:4
 msgid "Getting started with Visual Scripting"
-msgstr ""
+msgstr "Начало работы с Визуальным Программированием"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:6
 msgid ""
@@ -28,12 +28,19 @@ msgid ""
 "workflow. This led us to write our own version of how we believe this "
 "feature would work best with the engine."
 msgstr ""
+"Как и во всем остальном в Godot, мы отдаем предпочтение хорошему опыту, а не "
+"копированию или интеграции сторонних решений, которые могут не вписаться в "
+"текущий рабочий процесс. Это привело нас к написанию собственной версии "
+"того, как, по нашему мнению, эта функция будет лучше всего работать с "
+"движком."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:10
 msgid ""
 "In Godot, a Visual Script fits smoothly together with regular scripts in the "
 "Editor tab"
 msgstr ""
+"В Godot Визуальное Программирование легко сочетается с обычными скриптами на "
+"вкладке Редактора"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:15
 msgid ""
@@ -42,11 +49,15 @@ msgid ""
 "rest of Godot panels and docks act like a palette from where you can drag "
 "and drop all sorts of information to the script canvas:"
 msgstr ""
+"На самом деле Визуальное Программирование настолько хорошо интегрируется с "
+"Godot, что трудно поверить, что его добавили только в версии 3.0. Это "
+"происходит потому, что при редактировании остальные панели и док-станции "
+"Godot действуют как палитра, откуда можно перетаскивать на холст "
+"всевозможную информацию:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
-#, fuzzy
 msgid "Creating a script"
-msgstr "Добавление сценария"
+msgstr "Создание скрипта"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
 msgid ""
@@ -54,23 +65,30 @@ msgid ""
 "any node in the scene and push the \"New Script\" button at the top right "
 "corner of the Scene Tree dock:"
 msgstr ""
+"Создание скриптов работает так же, как и для других языками "
+"программирования: выберите любой узел в сцене и нажмите кнопку \"Новый Скрипт"
+"\" в верхнем правом углу панели Дерева Сцен:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:31
 msgid ""
 "Once it opens, the script type \"Visual Script\" must be selected from the "
 "drop down list. The script extension must be \".vs\" (for Visual Script!)."
 msgstr ""
+"После того, как меню откроется, необходимо выбрать тип \"Визуальный Скрипт\" "
+"из выпадающего списка. Расширение сценария должно быть \".vs\" (сокращение "
+"для Visual Script!)."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:37
 msgid ""
 "Finally, the Script Editor will open, allowing you to start editing the "
 "visual script:"
 msgstr ""
+"Наконец, откроется Редактор Скриптов, позволяющий начать редактирование "
+"Визуального Скрипта:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:43
-#, fuzzy
 msgid "Adding a function"
-msgstr "Объявляет функцию."
+msgstr "Добавление функции"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:45
 msgid ""
@@ -79,6 +97,11 @@ msgid ""
 "to communicate with the engine as other scripting engines. In Godot, the "
 "scripting interface is universal and all implementations conform to it."
 msgstr ""
+"В отличии от других реализаций визуального скриптинга, Визуальный Скриптинг "
+"в Godot в основном базируется на функциях. Это произошло потому что он "
+"использует тот же интерфейс для связи с движком как другие скриптовые "
+"движки. В Godot, интерфейс скриптинга универсален и все реализации "
+"соответствуют ему."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:49
 msgid "A function is an individual canvas with nodes connected."
@@ -113,6 +136,9 @@ msgid ""
 "loaded and added to the running scene. For this, the _ready() virtual method "
 "will be overridden:"
 msgstr ""
+"В следующем примере, функция будет выполнена когда узел загрузится и "
+"добавится в запущенную сцену. Для этого, будет перегружен виртуальный метод "
+"_ready():"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:71
 msgid "Finally, a canvas appears for this function, showing the override:"

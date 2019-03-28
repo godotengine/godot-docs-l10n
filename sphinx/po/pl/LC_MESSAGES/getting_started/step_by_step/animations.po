@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,14 +68,15 @@ msgid "Creating the animation"
 msgstr "Tworzenie animacji"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:33
+#, fuzzy
 msgid ""
-"It's time to create a new animation! Press the new animation button and name "
-"the animation \"intro\" when the dialog appears."
+"It's time to create a new animation! Press the Animation button then select "
+"new from the menu. Name the animation \"intro\" when the dialog appears."
 msgstr ""
 "Czas stworzyć nową animację! Naciśnij przycisk nowa animacja i gdy pojawi "
 "się okno dialogowe, nazwij animację \"Intro\"."
 
-#: ../../docs/getting_started/step_by_step/animations.rst:38
+#: ../../docs/getting_started/step_by_step/animations.rst:40
 #, fuzzy
 msgid ""
 "Now that we have an animation, the property editor enters \"animation editing"
@@ -86,15 +87,15 @@ msgstr ""
 "\". W tym trybie obok każdej właściwości edytora właściwości pojawia się "
 "ikona klucza. W Godocie każda własność obiektu może być animowana:"
 
-#: ../../docs/getting_started/step_by_step/animations.rst:46
+#: ../../docs/getting_started/step_by_step/animations.rst:48
 msgid "Editing the animation"
 msgstr "Edycja animacji"
 
-#: ../../docs/getting_started/step_by_step/animations.rst:48
+#: ../../docs/getting_started/step_by_step/animations.rst:50
 msgid "The logo will appear from the top of the screen."
 msgstr "Logo pojawi się w górnej części ekranu."
 
-#: ../../docs/getting_started/step_by_step/animations.rst:50
+#: ../../docs/getting_started/step_by_step/animations.rst:52
 msgid ""
 "With the animation editor panel open, select the \"logo\" node and set the "
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
@@ -103,19 +104,19 @@ msgstr ""
 "Po otwarciu edytora animacji wybierz węzeł \"logo\" i ustaw właściwość "
 "\"Rect / Position\" na ``(118, -400)`` i naciśnij przycisk obok właściwości:"
 
-#: ../../docs/getting_started/step_by_step/animations.rst:56
+#: ../../docs/getting_started/step_by_step/animations.rst:58
 msgid "When the dialog appears, confirm that you are creating a new track."
 msgstr "Gdy pojawi się okno dialogowe, potwierdź, że tworzysz nową ścieżkę."
 
-#: ../../docs/getting_started/step_by_step/animations.rst:58
+#: ../../docs/getting_started/step_by_step/animations.rst:60
 msgid "The keyframe will be added in the animation player editor:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/animations.rst:62
+#: ../../docs/getting_started/step_by_step/animations.rst:64
 msgid "Move the editor cursor to the end by clicking here:"
 msgstr "Przesuń kursor edytora na koniec klikając tutaj:"
 
-#: ../../docs/getting_started/step_by_step/animations.rst:66
+#: ../../docs/getting_started/step_by_step/animations.rst:68
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes, the animation happens."
@@ -123,7 +124,7 @@ msgstr ""
 "Zmień położenie loga na ``(118, 0)`` i ponownie dodaj klatkę kluczową. W "
 "przypadku dwóch klatek kluczowych animacja jest pokazywana."
 
-#: ../../docs/getting_started/step_by_step/animations.rst:71
+#: ../../docs/getting_started/step_by_step/animations.rst:73
 msgid ""
 "Pressing \"Play selected animation from start. (Shift-D)\" on the animation "
 "panel will make the logo descend."
@@ -131,7 +132,7 @@ msgstr ""
 "Naciśnij \"Play selected animation from start. (Shift-D)\" na panelu "
 "animacji spowoduje opadanie loga."
 
-#: ../../docs/getting_started/step_by_step/animations.rst:76
+#: ../../docs/getting_started/step_by_step/animations.rst:78
 msgid ""
 "Click the \"Autoplay on Load\" button to set the animation to start "
 "automatically when the scene starts."
@@ -139,7 +140,7 @@ msgstr ""
 "Kliknąć przycisk \"Autoplay on Load\", aby ustawić automatyczne uruchamianie "
 "animacji gdy scena jest uruchamiana."
 
-#: ../../docs/getting_started/step_by_step/animations.rst:81
+#: ../../docs/getting_started/step_by_step/animations.rst:83
 msgid ""
 "And finally, when running the scene, the animation should look like this:"
 msgstr "W końcu, kiedy uruchomimy scenę, animacja powinna wyglądać tak:"

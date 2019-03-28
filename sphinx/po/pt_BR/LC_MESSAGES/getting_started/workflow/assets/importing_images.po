@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -425,11 +425,15 @@ msgid "Fix Alpha Border"
 msgstr "Corrigir a borda de Alpha"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:134
+#, fuzzy
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
 "transparency to non transparency. It helps mitigate the outline effect when "
 "exporting images from Photoshop and the like."
 msgstr ""
+"Isto coloca pixels adjacentes da mesma cor em transição de transparência à "
+"total opacidade. Isso ajuda a reduzir o efeito de contorno ao se exportar "
+"imagens do Photoshop e similares"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:139
 msgid ""
@@ -444,12 +448,17 @@ msgid "Premultiplied Alpha"
 msgstr "Alpha pré-multiplicado"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:144
+#, fuzzy
 msgid ""
 "An alternative to fix darkened borders is to use premultiplied alpha. By "
 "enabling this option, the texture will be converted to this format. Keep in "
 "mind that a material will need to be created that uses the PREMULT ALPHA "
 "blend mode on canvas items that need it."
 msgstr ""
+"Uma alternativa para ajustar bordas escurecidas é usar alfa pré-"
+"multiplicado. Habilitando esta opção, a textura será convertida para este "
+"formato. Lembre-se de que um material que usa o modo de mistura PREMULT "
+"ALPHA nos itens da tela terá de ser criado"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:148
 msgid "HDR as sRGB"
@@ -487,6 +496,7 @@ msgid "Detect 3D"
 msgstr "Detecção 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:160
+#, fuzzy
 msgid ""
 "This option makes Godot be aware of when a texture (which is imported for 2D "
 "as default) is used in 3D. If this happens, setting are changed so the "
@@ -494,3 +504,8 @@ msgid ""
 "enabled and compression is changed to VRAM). Texture is also reimported "
 "automatically."
 msgstr ""
+"Esta opção faz Godot ficar ciente de quando uma textura (a qual é importada "
+"para 2D por padrão) é usada em 3D. Se isso acontecer, as configurações são "
+"mudadas de modo que as flags da textura são favoráveis à 3D (mipmaps, filtro "
+"e repeat se tornam habilitados e compressão é mudada para VRAM). Textura "
+"também é reimportada automaticamente."

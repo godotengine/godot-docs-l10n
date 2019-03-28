@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -334,8 +334,7 @@ msgid ""
 "values, the script will work correctly, but the angle values will grow "
 "bigger and bigger over time until they reach the maximum integer value Godot "
 "can manage (``2^31 - 1``). When this happens, Godot may crash or produce "
-"unexpected behavior. Since Godot doesn't provide a ``wrap()`` function, "
-"we'll create it here, as it is relatively simple."
+"unexpected behavior."
 msgstr ""
 "我们还在这里增加angle_from和angle_to值。 但是，我们不能忘记将结果值包装()在0"
 "到360°之间！ 也就是说，如果角度是361°，那么它实际上是1°。 如果您不包装这些"
@@ -343,7 +342,7 @@ msgstr ""
 "以管理的最大整数值(2 ^ 31-1)。 当发生这种情况时，Godot可能会崩溃或产生意外行"
 "为。 由于Godot不提供wrap()函数，我们将在这里创建它，因为它相对简单。"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:351
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:349
 #, fuzzy
 msgid ""
 "Finally, we must not forget to call the ``update()`` function, which "
@@ -353,19 +352,19 @@ msgstr ""
 "最后，我们不要忘记调用update()函数，它自动调用_draw()。 这样，您可以控制何时"
 "刷新帧。"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:396
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:389
 #, fuzzy
 msgid ""
 "Also, don't forget to modify the ``_draw()`` function to make use of these "
 "variables:"
 msgstr "另外，不要忘记修改_draw()函数以使用这些变量:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:420
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:413
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr "我们运行吧！ 它工作正常，但弧线快速旋转！ 怎么了？"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:423
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:416
 #, fuzzy
 msgid ""
 "The reason is that your GPU is actually displaying the frames as fast as it "
@@ -381,7 +380,7 @@ msgstr ""
 "经过的时间。 它通常很小(约0.0003秒，但这取决于您的硬件)。 因此，使用“delta”来"
 "控制绘图可确保程序在每个人的硬件上以相同的速度运行。"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:431
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:424
 #, fuzzy
 msgid ""
 "In our case, we simply need to multiply our ``rotation_angle`` variable by "
@@ -392,15 +391,15 @@ msgstr ""
 "在我们的示例中，我们只需要在_process()函数中将'rotation_angle'变量乘"
 "以'delta'。 这样，我们的2个角度将增加一个更小的值，这直接取决于渲染速度。"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:465
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:458
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr "让我们再运行一次！ 这次，旋转显示正常！"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:468
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:461
 msgid "Tools"
 msgstr "工具"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:470
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:463
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
@@ -408,7 +407,7 @@ msgstr ""
 "在编辑器中运行它们时，可能还需要绘制自己的节点，以用作某些功能或行为的预览或"
 "可视化。"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:474
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:467
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."

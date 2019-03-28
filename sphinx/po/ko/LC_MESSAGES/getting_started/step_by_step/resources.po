@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:4
 msgid "Resources"
-msgstr "리소스(Resources)"
+msgstr "리소스"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
@@ -343,12 +343,13 @@ msgid ""
 msgstr "그들은 기본 리소스 외에도 **다른** 리소스 타입도 확장할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
+#, fuzzy
 msgid ""
-"Resources and Dictionaries are also different in that both are passed by "
-"reference, but only Resources are reference-counted. This means that if a "
-"Dictionary is passed between objects, and the first object is deleted, it "
-"will invalidate the second object's variable. This is not so for Resources "
-"which won't free their memory until *all* instances are gone."
+"Resources and Dictionaries are both passed by reference, but only Resources "
+"are reference-counted. This means that if a Dictionary is passed between "
+"objects and the first object is deleted, all other objects' references to "
+"the Dictinoary will be invalidated. Conversely, Resources will not be freed "
+"from memory until *all* the objects are deleted."
 msgstr ""
 "리소스와 딕셔너리는 둘 다 참조로서 전달되지만, 오직 리소스는 참조 카운트가 된"
 "다는 점에서 다릅니다. 이는 즉 딕셔너리가 객체 사이를 지나가고, 첫 번째 객체"

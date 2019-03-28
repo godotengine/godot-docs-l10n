@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,6 +96,12 @@ msgid ""
 "Framework 4.5 targeting pack installed, you can get it using any of the "
 "installers mentioned above inside the \"Individual components\" tab."
 msgstr ""
+"下载并安装最新版本的`Visual Studio <https://visualstudio.microsoft.com/"
+"downloads/>`_ （*不是* Visual Studio Code！），它会包含Godot中用到的C#工具。"
+"如果你不打算用Visual Studio IDE的话，也可以只用下载 `Visual Studio Build "
+"Tools <https://visualstudio.microsoft.com/thank-you-downloading-visual-"
+"studio/?sku=BuildTools&rel=15>`_ 。你可以在上述任何安装程序中的“独立组件”选项"
+"卡里找到 .NET Framework 4.5 targeting pack，请确保安装。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
 #, fuzzy
@@ -157,13 +163,12 @@ msgstr "配置外部编辑器"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:79
 #, fuzzy
 msgid ""
-"While Godot has its own script editor, its support for C# is kept minimal; "
-"it's recommended that you use an external IDE or editor instead, such as "
-"`Visual Studio Code <https://code.visualstudio.com/>`_ or MonoDevelop. These "
-"provide auto-completion, debugging and other features useful when working "
-"with C#. To set it up in Godot, click on **Editor → Editor Settings** and "
-"scroll down to the bottom to the **Mono** settings. Under **Mono**, click on "
-"**Editor** then choose your external editor of choice."
+"C# support in Godot's script editor is minimal. Consider using an external "
+"IDE or editor, such as  `Visual Studio Code <https://code.visualstudio.com/"
+">`_ or MonoDevelop. These provide autocompletion, debugging, and other "
+"useful features for C#. To select an external editor in Godot, click on "
+"**Editor → Editor Settings** and scroll down to **Mono**. Under **Mono**, "
+"click on **Editor**, and select your external editor of choice."
 msgstr ""
 "虽然Godot确实有自己的脚本编辑器，但它对C#的支持很少，建议您使用外部IDE或编辑"
 "器，如Microsoft Visual Studio Code或MonoDevelop，它们提供自动完成，调试和其他"
@@ -171,7 +176,7 @@ msgstr ""
 "置”。 向下滚动到“Mono”设置。 在Mono下单击 ``Editor`` ，然后在该页面上选择您选"
 "择的外部编辑器。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:88
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
@@ -181,11 +186,11 @@ msgstr ""
 "visualstudio.com/items?itemName=ms-vscode.csharp>`_ 以启用诸如IntelliSense和"
 "语法高亮的特性。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:93
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
 msgid "Creating a C# script"
 msgstr "创建C#脚本"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:95
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
 #, fuzzy
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
@@ -195,7 +200,7 @@ msgstr ""
 "成功为Godot设置C#后，在场景中节点的上下文菜单中选择“Attach script”时，应该会"
 "看到以下选项:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:100
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
 #, fuzzy
 msgid ""
 "Note that while some specifics change, most concepts work the same when "
@@ -208,11 +213,11 @@ msgstr ""
 "的。 如果您是Godot的新手，您可能需要仔细阅读以下教程 :ref:`doc_scripting`。 "
 "虽然文档中的某些地方仍缺少C#示例，但大多数内容都可以从GDScript轻松转移。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:107
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:106
 msgid "Project setup and workflow"
 msgstr "项目设置和工作流程"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:109
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:108
 #, fuzzy
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
@@ -230,7 +235,7 @@ msgstr ""
 "该保存在您的版本控制系统中。 ``.mono``可以安全地添加到VCS的忽略列表中。 在进"
 "行故障排除时，有时可以帮助删除 ``.mono`` 文件夹并让它重新生成。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:118
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:117
 #, fuzzy
 msgid ""
 "Note that currently, there are some issues where Godot and the C# project "
@@ -241,7 +246,7 @@ msgstr ""
 "请注意，目前Godot和C#项目存在一些不同步的问题; 如果删除，重命名或移动脚本或节"
 "点等内容，它们可能不再匹配。 在这种情况下，可以帮助手动编辑解决方案文件。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:123
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:122
 #, fuzzy
 msgid ""
 "For example, if you created a script (e.g. ``Test.cs``) and delete it in "
@@ -254,7 +259,7 @@ msgstr ""
 "败，因为现在仍然希望CS项目存在丢失的文件。 您现在可以简单地打开 ``.csproj`` "
 "并查找 ``ItemGroup`` ，应该包含如下所示的一行:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:137
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
 #, fuzzy
 msgid ""
 "Simply remove that line and your project should build correctly again. Same "
@@ -264,16 +269,16 @@ msgstr ""
 "只需删除该行，您的项目现在应该再次构建正常。 对于重命名和移动内容，只需重命名"
 "并在项目文件中移动它们(如果需要)。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:142
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
 msgid "Example"
 msgstr "示例"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:144
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:143
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr "这是一个空白的C#脚本，带有一些注释来演示它是如何工作的。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:171
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:170
 #, fuzzy
 msgid ""
 "As you can see, functions normally in global scope in GDScript like Godot's "
@@ -287,7 +292,7 @@ msgstr ""
 "`@GDScript <class_ @ gdscript>` 和 :ref:`@GlobalScope <class_ @ "
 "globalscope>`。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:178
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
 #, fuzzy
 msgid ""
 "Keep in mind that the class you wish to attach to your node should be named "
@@ -297,11 +302,11 @@ msgstr ""
 "请记住，您希望附加到节点的类应命名为 ``.cs`` 文件。 如果没有，您将收到以下错"
 "误，并且无法运行场景:``找不到类XXX的脚本res:// XXX.cs``。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:184
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
 msgid "General differences between C# and GDScript"
 msgstr "C#和GDScript之间的一般差异"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:186
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:185
 msgid ""
 "The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++. "
 "Where possible, fields and getters/setters have been converted to "
@@ -312,16 +317,16 @@ msgstr ""
 "情况下，字段和getter / setter已转换为属性。 一般来说，C#Godot API力求尽可能合"
 "理。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:190
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
 #, fuzzy
 msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr "有关更多信息，请参阅 :ref:`doc_c_sharp_differences` 页面。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:193
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:192
 msgid "Current gotchas and known issues"
 msgstr "目前的陷阱和已知问题"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:195
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
 #, fuzzy
 msgid ""
 "As C# support is quite new in Godot, there are some growing pains and things "
@@ -335,7 +340,7 @@ msgstr ""
 "问题的官方 `问题跟踪器 <https://github.com/godotengine/godot/labels/topic"
 "%3Amono>`_ 。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:201
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
 #, fuzzy
 msgid ""
 "As explained above, the C# project isn't always kept in sync automatically "
@@ -345,19 +350,19 @@ msgstr ""
 "如上所述，当在Godot中删除，重命名或移动内容时，C#项目并不总是自动保持同步(`＃"
 "12917 <https://github.com/godotengine/godot/issues/12917>`_ )"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:203
 #, fuzzy
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr "目前尚不支持在C#中编写编辑器插件和工具脚本"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:205
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr "在热重装中，当前状态不会得到保存并且会被恢复，除了已经导出的变量之外。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:207
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
 #, fuzzy
 msgid ""
 "Exporting Mono projects is only supported for desktop platforms (Linux, "
@@ -371,17 +376,17 @@ msgstr ""
 "Android，iOS和UWP( `＃18364评论 <https://github.com/godotengine/godot/"
 "issues/18364#issuecomment-406222102>`_ )"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:213
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr "附加C#脚本需要引用一个类，该类名需要匹配其文件名。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:217
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
 msgid "Performance of C# in Godot"
 msgstr "在Godot中表现C#"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:219
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
 #, fuzzy
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
@@ -398,12 +403,12 @@ msgstr ""
 "所不同。 对于大多数通用脚本工作负载而言，GDScript可能足够快。 C#更快，但在与"
 "Godot交谈时需要一些昂贵的编组。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:227
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:226
 #, fuzzy
 msgid "Using NuGet packages in Godot"
 msgstr "在Godot中使用Nuget包"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:229
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
 #, fuzzy
 msgid ""
 "`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
@@ -415,7 +420,7 @@ msgstr ""
 "目一样。 许多IDE(例如vs代码)可以直接添加包。 也可以通过在项目根目录中的."
 "csproj文件中添加包引用来手动添加它们:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:244
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:243
 #, fuzzy
 msgid ""
 "Whenever packages are added or modified, run ``nuget restore`` in the root "

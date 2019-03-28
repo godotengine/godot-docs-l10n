@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,33 +210,24 @@ msgstr ""
 "załaduje tą żądaną."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
-#, fuzzy
 msgid ""
-"As mentioned in the comments above, we need to avoid the situation of "
-"deleting the current scene while it is still being used (i.e. its code is "
-"still running), so using :ref:`Object.call_deferred() "
-"<class_Object_method_call_deferred>` is required at this point. The result "
-"is that the second function will run at a later time when any code from the "
-"current scene has completed."
+"Using :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, the "
+"second function will only run once all code from the current scene has "
+"completed. Thus, the current scene will not be removed while it is still "
+"being used (i.e. its code is still running)."
 msgstr ""
-"Jak wspomniano w komentarzach powyżej, chcemy uniknąć sytuacji, w których w "
-"trakcie użytkowania jest usuwana obecna scena, więc w tym momencie pożądane "
-"jest użycie :ref:`Object.call_deferred() "
-"<class_Object_method_call_deferred>`. W rezultacie wykonanie komend w "
-"drugiej funkcji nastąpi później, gdy nie będzie uruchomiony żaden kod z "
-"bieżącej sceny."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:233
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 #, fuzzy
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
 msgstr "Na koniec wystarczy wypełnić puste funkcje scene_a.gd i scene_b.gd:"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:253
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:252
 msgid "and"
 msgstr "i"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:273
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
 #, fuzzy
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
@@ -245,7 +236,7 @@ msgstr ""
 "Teraz, jeśli uruchomisz projekt, możesz przełączać się pomiędzy obydwoma "
 "scenami, naciskając przycisk!"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:276
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
 msgid ""
 "Note: When scenes are small, the transition is instantaneous. However, if "
 "your scenes are more complex, they may take a noticeable amount of time to "

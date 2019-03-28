@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -371,6 +371,7 @@ msgstr ""
 "_process(delta)."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:342
+#, fuzzy
 msgid ""
 "We also increment our angle_from and angle_to values here. However, we must "
 "not forget to ``wrap()`` the resulting values between 0 and 360°! That is, "
@@ -378,8 +379,7 @@ msgid ""
 "values, the script will work correctly, but the angle values will grow "
 "bigger and bigger over time until they reach the maximum integer value Godot "
 "can manage (``2^31 - 1``). When this happens, Godot may crash or produce "
-"unexpected behavior. Since Godot doesn't provide a ``wrap()`` function, "
-"we'll create it here, as it is relatively simple."
+"unexpected behavior."
 msgstr ""
 "Nous incrémentons également nos valeurs angle_from et angle_to ici. "
 "Cependant, il ne faut pas oublier de ``wrap()`` les valeurs résultantes "
@@ -391,7 +391,7 @@ msgstr ""
 "produire un comportement inattendu. Puisque Godot ne fournit pas de fonction "
 "``wrap()``, nous allons la créer ici, car elle est relativement simple."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:351
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:349
 msgid ""
 "Finally, we must not forget to call the ``update()`` function, which "
 "automatically calls ``_draw()``. This way, you can control when you want to "
@@ -401,7 +401,7 @@ msgstr ""
 "appelle automatiquement ``_draw()``. De cette façon, vous pouvez contrôler "
 "le moment où vous souhaitez actualiser le cadre."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:396
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:389
 msgid ""
 "Also, don't forget to modify the ``_draw()`` function to make use of these "
 "variables:"
@@ -409,14 +409,14 @@ msgstr ""
 "De plus, n'oubliez pas de modifier la fonction _draw() pour faire usage de "
 "ces variables :"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:420
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:413
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
 "Allons-y ! Cela fonctionne, mais l'arc tourne incroyablement vite ! Qu'est-"
 "ce qui ne va pas ?"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:423
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:416
 msgid ""
 "The reason is that your GPU is actually displaying the frames as fast as it "
 "can. We need to \"normalize\" the drawing by this speed; to achieve that, we "
@@ -435,7 +435,7 @@ msgstr ""
 "votre dessin assure que votre programme s'exécutera à la même vitesse sur le "
 "matériel de tout le monde."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:431
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:424
 msgid ""
 "In our case, we simply need to multiply our ``rotation_angle`` variable by "
 "``delta`` in the ``_process()`` function. This way, our 2 angles will be "
@@ -447,15 +447,15 @@ msgstr ""
 "façon, nos 2 angles seront augmentés d'une valeur beaucoup plus petite, qui "
 "dépend directement de la vitesse de rendu."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:465
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:458
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr "Allons-y encore ! Cette fois, la rotation s'opère correctement !"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:468
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:461
 msgid "Tools"
 msgstr "Outils"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:470
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:463
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
@@ -464,7 +464,7 @@ msgstr ""
 "dans l'éditeur pour les utiliser comme prévisualisation ou visualisation de "
 "certaines fonctionnalités ou comportements."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:474
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:467
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."

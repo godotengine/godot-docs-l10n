@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,9 +68,8 @@ msgstr ""
 "guía sobre cómo usar esta función:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
-#, fuzzy
 msgid "**1. Stash active action**"
-msgstr "**2. Ocultar la acción activa.**"
+msgstr "**2. Almacenar la acción activa.**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
 msgid ""
@@ -78,14 +77,17 @@ msgid ""
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
+"Una nueva acción creada es siempre una acción activa unida a un objeto. Hay "
+"varias maneras de colocar una acción activa en NLA , una es por supuesto "
+"haciéndolo en ``NLA Editor``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
-msgstr ""
+msgstr "o puede ser hecho almacenando la acción en ``Dope Sheet``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2. Comprueba el estado silencio de las pistas NLA"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -93,6 +95,10 @@ msgid ""
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
+"Una pista NLA puede estar en “silencio” o “sin silencio”, el exportador "
+"exportará todas las pistas NLA en \"silencio\" como una acción separada, "
+"mientras combina todas las pistas NLA \"sin silencio\" en cada acción "
+"(incluyendo la acción action) que será exportada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 #, fuzzy
@@ -101,7 +107,7 @@ msgstr "**4. Exportar la escena**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
-msgstr ""
+msgstr "Asegurate que la opción “Exportar acciones ocultas” ha sido activada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
 #, fuzzy

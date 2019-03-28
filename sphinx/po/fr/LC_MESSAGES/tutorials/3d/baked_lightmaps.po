@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,16 +104,23 @@ msgid ""
 "secondary texture coordinates that ensures any face in the object has its "
 "own place in the UV map. Faces must not share pixels in the texture."
 msgstr ""
+"Tout d’abord, pour que le Lightmapper puisse faire quoi que ce soit, les "
+"objets à préparer ont besoin d’un calque UV2 et d’une taille de texture. Une "
+"couche UV2 est un ensemble de coordonnées de texture secondaires "
+"garantissant que chaque face de l'objet a sa propre place dans la carte UV. "
+"Les faces ne doivent pas partager de pixels dans la texture."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:47
 msgid ""
 "There are a few ways to ensure your object has a unique UV2 layer and "
 "texture size:"
 msgstr ""
+"Il y a plusieurs façons de s'assurer qu'un objet dispose d'un calque UV2 et "
+"une taille de texture unique :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:50
 msgid "Unwrap from your 3D DCC"
-msgstr ""
+msgstr "Déplier depuis votre logiciel 3D"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:52
 msgid ""
@@ -123,10 +130,16 @@ msgid ""
 "lot, the texture generation process can be quite costly within Godot, so "
 "having it unwrapped before import can be faster."
 msgstr ""
+"Une option est de le faire depuis votre logiciel de modélisation 3D. Bien "
+"que peu recommandée,  cette approche est listée ici pour que vous sachiez "
+"qu'elle existe. L'avantage principal de cette méthode est de contourner le "
+"processus de génération de texture natif de Godot, celui-ci utilisant "
+"d'importantes ressources sur des objets complexes. Déplier  depuis votre "
+"logiciel 3D permet d’accélérer l'importation."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:58
 msgid "Simply do an unwrap on the second UV2 layer."
-msgstr ""
+msgstr "Il suffit simplement de dérouler la deuxième couche d’UV2."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:62
 msgid ""

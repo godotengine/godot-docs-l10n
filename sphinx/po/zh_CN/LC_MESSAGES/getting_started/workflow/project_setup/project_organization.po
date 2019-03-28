@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,51 +25,39 @@ msgstr "项目组织"
 msgid "Introduction"
 msgstr "简介"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:9
-#, fuzzy
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:8
 msgid ""
-"This tutorial aims to propose a simple workflow on how to organize projects. "
-"Since Godot allows the programmer to use the filesystem as they please, "
-"figuring out a way to organize projects when starting to use the engine can "
-"be a little challenging. Because of this, the tutorial describes a simple "
-"workflow, which should work as a starting point, regardless of whether it is "
-"used."
+"Since Godot has no restrictions on project structure or filesystem usage, "
+"organizing files when learning the engine can seem challenging. This "
+"tutorial suggests a workflow which should be a good starting point. We will "
+"also cover using version control with Godot."
 msgstr ""
-"本教程旨在提出一个关于如何组织项目的简单工作流程。 既然Godot允许程序员随心所"
-"欲地使用文件系统，在开始使用引擎时想办法组织项目可能会有点困难。 因此，将描述"
-"一个简单的工作流程，您来决定使用与否，但应该将其作为一个起点。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
-msgid ""
-"Additionally, using version control can be challenging, so this proposition "
-"will include that too."
-msgstr "另外，使用版本控制可能很具挑战性，所以这个部分会谈到这一点。"
-
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:14
 msgid "Organization"
 msgstr "组织"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
 msgid ""
 "Godot is scene-based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
 msgstr "Godot 本身是基于场景的，并使用了文件系统，没有元数据或资源数据库。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:25
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:19
 msgid ""
 "Unlike other engines, many resources are contained within the scene itself, "
 "so the amount of files in the filesystem is considerably lower."
 msgstr ""
 "不像其他的引擎，场景本身包含了大量资源，因此文件系统中的文件数量要少得多。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:28
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
 msgid ""
 "Considering that, the most common approach is to group assets as close to "
 "scenes as possible; when a project grows, it makes it more maintainable."
 msgstr ""
 "考虑到这一点，最常见的方法是将资源按照场景分组，当项目变大时，更易于维护。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:32
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:26
 msgid ""
 "As an example, one can usually place into a single folder their basic "
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
@@ -78,11 +66,11 @@ msgstr ""
 "例如，基本的精灵图像，3D 模型场景或网格，材质等通常可以组织到一起，使用单独的"
 "文件夹来存储它们，从而将它们用于构建关卡。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:53
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:47
 msgid "Importing"
 msgstr "导入"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:55
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:49
 msgid ""
 "Godot versions prior to 3.0 did the import process from files outside the "
 "project. While this can be useful in large projects, it resulted in an "
@@ -91,13 +79,13 @@ msgstr ""
 "3.0版之前的 Godot 版本从项目外的文件中进行导入过程。 虽然这对于大型项目非常有"
 "用，但却导致了大多数开发人员的组织问题。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:59
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:53
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
 msgstr "因此，资源现在可以透明地从项目文件夹中导入。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:62
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:56
 msgid ""
 "If a folder shouldn't be imported into Godot, an exception can be made with "
 "a .gdignore file."

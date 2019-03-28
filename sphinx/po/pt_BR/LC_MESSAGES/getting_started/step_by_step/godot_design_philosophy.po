@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,15 +28,14 @@ msgstr ""
 "Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
-#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
 "they offer a range of features, but the design of each engine is unique. "
 "This leads to different workflows and different ways to form your games’ "
 "structures. This all stems from their respective design philosophies."
 msgstr ""
-"**Cada mecanismo de jogo é diferente e atende a diferentes necessidades.** "
-"Não apenas oferecem uma gama de recursos, mas o design de cada mecanismo é "
+"**Cada motor de jogo é diferente e atende a diferentes necessidades.** Não "
+"apenas oferecem uma gama de recursos, mas o design de cada mecanismo é "
 "único. Isso leva a diferentes fluxos de trabalho e diferentes maneiras de "
 "formar as estruturas dos seus jogos. Tudo isso decorre de suas respectivas "
 "filosofias de design."
@@ -97,7 +96,6 @@ msgid "On top of that, you can **inherit** from any scene."
 msgstr "Além disso, você pode **herdar** de qualquer cena."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
-#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
 "of a level… anything you’d like. It works like a class in pure code, except "
@@ -106,11 +104,10 @@ msgid ""
 msgstr ""
 "Uma cena Godot poderia ser uma arma, um personagem, um item, uma porta, um "
 "nível, parte de um nível... qualquer coisa que você quiser. Funciona como "
-"uma classe em código puro, exceto que você é livre para projetá-la usando o "
-"editor, usando apenas o código ou misturando e combinando os dois."
+"uma classe em código puro, com a exceção de que você é livre para projetá-la "
+"usando o editor, usando apenas o código ou misturando e combinando os dois."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
-#, fuzzy
 msgid ""
 "It’s different from prefabs you find in several 3D engines, as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
@@ -119,9 +116,9 @@ msgid ""
 "matches the game’s design."
 msgstr ""
 "É diferente das prefabs que você encontra em vários mecanismos 3D, pois pode "
-"herdar e estender essas cenas. Você pode criar um mago que estenda seu "
-"personagem. Modifique o personagem no editor e o mágico também atualizará. "
-"Ele ajuda você a criar seus projetos para que sua estrutura corresponda ao "
+"herdar e estender essas cenas. Você pode criar um Mago que estenda seu "
+"Personagem. Modifique o Personagem no editor e o Mago também atualizará. "
+"Isso te ajuda a criar seus projetos de modo que sua estrutura corresponda ao "
 "design do jogo."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:49
@@ -289,7 +286,6 @@ msgstr ""
 "Qualquer um destes pode vir como plugins de terceiros."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
-#, fuzzy
 msgid ""
 "On the other hand, an open codebase means you can **learn from and extend "
 "the engine** to your heart’s content. You can also debug games easily, as "

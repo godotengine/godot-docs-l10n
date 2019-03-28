@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,7 +110,7 @@ msgstr "Mode de mélange réglé sur un mode autre que \"Mix\""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:41
 msgid "Enabling distance or proximity fade"
-msgstr ""
+msgstr "Activer le fondu de distance ou de proximité"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:44
 msgid "Unshaded"
@@ -448,7 +448,7 @@ msgstr "** Mul : ** objet est multiplié."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:196
 msgid "Cull Mode"
-msgstr ""
+msgstr "Mode de Culling"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:198
 msgid ""
@@ -512,6 +512,10 @@ msgid ""
 "with the opaque parts, then transparency is drawn above. Use this option "
 "with transparent grass or tree foliage."
 msgstr ""
+"**Pré-passe de profondeur:** Pour les objets transparents, une première "
+"passe est effectuée sur les parties opaques, puis la transparence est tracée "
+"par dessus. Utilisez cette option avec de l'herbe ou du feuillage "
+"transparent."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:220
 msgid "Line Width"
@@ -536,28 +540,32 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:231
 msgid "Billboard Mode"
-msgstr ""
+msgstr "Mode Billboard"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:233
 msgid ""
 "Enables billboard mode for drawing materials. This controls how the object "
 "faces the camera:"
 msgstr ""
+"Active le mode ``Billboard`` pour le rendu du matériel. Ceci contrôle la "
+"façon dont l'objet est orienté par rapport à la caméra :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:236
 msgid "**Disabled:** Billboard mode is disabled."
-msgstr ""
+msgstr "**Désactivé:** Le mode ``Billboard`` est désactivé."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:237
 msgid ""
 "**Enabled:** Billboard mode is enabled, the object's -Z axis will always "
 "face the camera."
 msgstr ""
+"**Activé:** Le mode ``Billboard`` est activé. L'axe Z de l'objet fera "
+"toujours face à la caméra."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:239
 msgid ""
 "**Y-Billboard:** The object's X axis will always be aligned with the camera."
-msgstr ""
+msgstr "**Y-Billboard:** L'axe X de l'objet fera toujours face à la caméra."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:240
 msgid ""
@@ -570,10 +578,12 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:245
 msgid "The above options are only enabled for Particle Billboard."
 msgstr ""
+"Les options ci-dessus sont seulement activées pour les particules de type "
+"BillBoard."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:248
 msgid "Grow"
-msgstr ""
+msgstr "Croître"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:250
 msgid "Grows the object vertices in the direction pointed by their normals:"
@@ -585,6 +595,9 @@ msgid ""
 "This is commonly used to create cheap outlines. Add a second material pass, "
 "make it black and unshaded, reverse culling (Cull Front), and add some grow:"
 msgstr ""
+"Cette option est communément utilisée pour créer des contours simplement. "
+"Ajoutez un second matériau, de couleur noire et sans ombrage, inverser son "
+"mode de Culling et ajouter du repoussement :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:261
 msgid "Use Alpha Scissor"
@@ -643,6 +656,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:287
 msgid "Albedo color and texture can be used together as they are multiplied."
 msgstr ""
+"La couleur d'albédo et la texture peuvent être utilisés ensemble, étant "
+"multipliés."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:289
 msgid ""
@@ -650,6 +665,10 @@ msgid ""
 "transparency. If you use a color or texture with *alpha channel*, make sure "
 "to either enable transparency or *alpha scissoring* for it to work."
 msgstr ""
+"Le *canal Alpha* de la couleur d'albédo et des textures est également "
+"utilisé pour la transparence de l'objet. Si vous utilisez une couleur ou une "
+"texture avec un *canal alpha*, assurez-vous d'activer la transparence ou "
+"l'*alpha scissoring* pour que cela fonctionne."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:294
 msgid "Metallic"
@@ -731,6 +750,11 @@ msgid ""
 "Godot, only the red and green channels of normal maps are used for wider "
 "compatibility."
 msgstr ""
+"Une carte de normale permet l'utilisation d'une texture pour ajouter des "
+"détails fins à une forme. Ce n'est pas la géométrie de l'objet qui est "
+"modifiée, mais seulement l'angle d’incidence de la lumière sur sa surface. "
+"Dans Godot, seulement les canaux rouges et verts des cartes de normale sont "
+"utilisés pour une plus grande compatibilité."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:340
 msgid "Rim"
@@ -827,6 +851,12 @@ msgid ""
 "objects, but it produces a realistic depth effect for textures. For best "
 "results, *Depth* should be used together with normal mapping."
 msgstr ""
+"Utiliser une carte de profondeur sur un matériau produit un balayage "
+"utilisant l'émission de rayons pour simuler le déplacement des reliefs dans "
+"la direction du point de vue. Il ne s'agit pas d'un ajout de géométrie mais "
+"d'une illusion de profondeur. Cela peut ne pas marcher pour les objets "
+"complexes, mais cela produit des effets réalistes sur les textures. La "
+"*profondeur* devrait être utilisé avec une carte de normales."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:393
 msgid "Subsurface Scattering"
@@ -920,6 +950,9 @@ msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
 msgstr ""
+"Dans l'image ci-dessous, vous pouvez voir que toutes les primitives "
+"utilisent le même matériau avec l'option de triplan global, la texture de "
+"brique s'étend de façon ininterrompue d'un objet à l'autre."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:449
 msgid "Proximity and distance fade"

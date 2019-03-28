@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -263,32 +263,24 @@ msgstr ""
 "(очистить) текущую сцену и заменить ее на нужную нам."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
-#, fuzzy
 msgid ""
-"As mentioned in the comments above, we need to avoid the situation of "
-"deleting the current scene while it is still being used (i.e. its code is "
-"still running), so using :ref:`Object.call_deferred() "
-"<class_Object_method_call_deferred>` is required at this point. The result "
-"is that the second function will run at a later time when any code from the "
-"current scene has completed."
+"Using :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, the "
+"second function will only run once all code from the current scene has "
+"completed. Thus, the current scene will not be removed while it is still "
+"being used (i.e. its code is still running)."
 msgstr ""
-"Как упоминалось в комментариях выше, нам нужно избегать ситуации удаления "
-"текущей сцены во время ее использования (т.е. ее код все еще работает), "
-"поэтому на данном этапе необходимо использовать :ref:`Object.call_deferred() "
-"<class_Object_Call_deferred>`. В результате вторая функция будет запущена "
-"позже, когда код с текущей сцены завершится."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:233
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
 msgstr ""
 "Наконец, нам нужно заполнить пустые функции обратного вызова в двух сценах:"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:253
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:252
 msgid "and"
 msgstr "и"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:273
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button!"
@@ -296,7 +288,7 @@ msgstr ""
 "Запустите проект и проверьте, что вы можете переключаться между сценами, "
 "нажав кнопку!"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:276
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
 msgid ""
 "Note: When scenes are small, the transition is instantaneous. However, if "
 "your scenes are more complex, they may take a noticeable amount of time to "

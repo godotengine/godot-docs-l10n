@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:4
-#, fuzzy
 msgid "Importing 3D scenes"
 msgstr "Importowanie scen 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:7
-#, fuzzy
 msgid "Godot scene importer"
 msgstr "Importer scen Godot"
 
@@ -39,31 +37,33 @@ msgid ""
 "in your favorite 3D DCC will be transferred as close as possible."
 msgstr ""
 "Godot pracuje ze *scenami*. Oznacza to, że cała scena, nad którą pracujesz w "
-"programie do tworzenia 3D, zostanie przeniesiona tak, jak to tylko jest "
-"możliwe."
+"programie do tworzenia 3D, zostanie przeniesiona w stanie możliwie "
+"niezmienionym."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
 msgid "Godot supports the following 3D *scene file fomats*:"
 msgstr "Godot wspiera następujące *formaty plików scen* 3D:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
-#, fuzzy
 msgid "DAE (COLLADA), which is currently the most mature workflow."
-msgstr "DAE (Collada), który jest obecnie najbardziej dojrzałym rozwiązaniem."
+msgstr "DAE (COLLADA), który jest obecnie najbardziej dojrzałym rozwiązaniem."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
 msgid ""
 "GLTF 2.0. Both text and binary formats are supported. Godot has full support "
 "for it, but the format is new and gaining traction."
 msgstr ""
-"GLTF 2.0. Obsługiwane są zarówno formaty tekstowe, jak i binarne. Godot ma "
-"jego pełne wsparcie. Format jest nowy i zyskuje na popularności."
+"GLTF 2.0. Obsługiwane są zarówno formaty tekstowe, jak i binarne. Godot "
+"posiada dla niego pełne wsparcie, jednak format jest nowy i dopiero zyskuje "
+"na popularności."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
 msgid ""
 "OBJ (Wavefront) formats. It is also fully supported, but pretty limited (no "
 "support for pivots, skeletons, etc)."
 msgstr ""
+"Format OBJ (Wavefront). Jest w pełni wspierany, jednak posiada liczne "
+"ograniczenia (brak wsparcia dla osi obrotów, szkieletów itd)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:20
 msgid ""
@@ -71,7 +71,7 @@ msgid ""
 "repository, and Godot will do a full import."
 msgstr ""
 "Wystarczy skopiować plik sceny wraz z teksturą do repozytorium projektu, a "
-"Godot zrobi pełny import."
+"Godot wykona jej pełny import."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:23
 msgid "Why not FBX?"

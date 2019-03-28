@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,9 +93,8 @@ msgstr ""
 "None - 머티리얼을 찾지 않습니다. 머티리얼을 블렌더 파일에서 내보냅니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
-#, fuzzy
 msgid "Export of Cycles/EEVEE materials"
-msgstr "블렌더 머티리얼의 내보내기"
+msgstr "Cycles/EEVEE 머티리얼 내보내기"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
 msgid ""
@@ -103,24 +102,29 @@ msgid ""
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
+"이 내보내기는 Cycles/EEVEE 머티리얼 노드 트리를 Godot 셰이더 머티리얼로 변환"
+"하기 위한 원시적인 지원을 갖고 있습니다. 일부 셰이더 노드는 구현의 어려움으"
+"로 아직 지원하지 않습니다, 다음과 같습니다:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid "all the ``noisy textures``"
-msgstr ""
+msgstr "모든 ``노이즈 텍스쳐``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
 msgid "``generated texture coordinates``"
-msgstr ""
+msgstr "``생성된 텍스쳐 좌표``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
-msgstr ""
+msgstr "``그룹 노드``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
+"``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, ``add shader`` 그리"
+"고 ``mix shader``\\ 를 제외한 셰이더 노드들"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
 msgid ""
@@ -128,21 +132,24 @@ msgid ""
 "output shader node, it is the only one guarantee to be exactly correctly. "
 "Others are just based on approximation."
 msgstr ""
+"PrincipledBSDF 노드가 정확하게 된다는 것을 보장하기 위해, 가능하다면 GGX 분포"
+"를 셰이더 노드 출력으로 하도록 하세요. 다른 것은 단지 근사치를 기반으로 합니"
+"다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
-#, fuzzy
 msgid ""
 "Sometimes materials may not be valid for exporting (e.g. has some "
 "unsupported node) or it is using Blender Internal Engine, only the diffuse "
 "color and a few flags (e.g. unshaded) are exported and form a Spatial "
 "Material."
 msgstr ""
-"머티리얼을 다루는 다른 방법은 블렌더에서 내보내기로 내보내는 것입니다. 현재로"
-"는 오직 디퓨즈 색상과 일부 플래그만 내보내집니다 (예: 쉐이더 없음)."
+"때로 머티리얼이 내보내기에 좋지 않을 수 있습니다 (예: 내보낼 수 없는 노드를 "
+"가져서) 혹은 블렌더 내장 엔진을 사용하는 등의 이유로, 오직 확산 색상과 몇 가"
+"지 플래그 (예: 셰이드 없음)가 내보내지고 Spatial 머티리얼의 형태가 됩니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
 msgid "Generate external materials"
-msgstr ""
+msgstr "외부 머티리얼 생성하기"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
 msgid ""
@@ -150,9 +157,14 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
+"머티리얼 내보내기의 기본 구성은 모든 머티리얼을 ``escn`` 파일에 내부적으로 유"
+"지하는 것입니다. 설정을 통해 Godot에서 ``escn`` 파일을 열 때 외부 ``."
+"material`` 파일을 생성하도록 할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
 msgstr ""
+"``.material`` 파일은 아무 머티리얼 슬롯에 지정해 외부 리소스로 사용될 수 있습"
+"니다."

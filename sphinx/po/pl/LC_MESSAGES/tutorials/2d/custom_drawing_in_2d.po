@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -289,18 +289,17 @@ msgid ""
 "values, the script will work correctly, but the angle values will grow "
 "bigger and bigger over time until they reach the maximum integer value Godot "
 "can manage (``2^31 - 1``). When this happens, Godot may crash or produce "
-"unexpected behavior. Since Godot doesn't provide a ``wrap()`` function, "
-"we'll create it here, as it is relatively simple."
+"unexpected behavior."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:351
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:349
 msgid ""
 "Finally, we must not forget to call the ``update()`` function, which "
 "automatically calls ``_draw()``. This way, you can control when you want to "
 "refresh the frame."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:396
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:389
 #, fuzzy
 msgid ""
 "Also, don't forget to modify the ``_draw()`` function to make use of these "
@@ -309,14 +308,14 @@ msgstr ""
 "Nie zapomnij również zmodyfikować funkcji _draw(), aby wykorzystać te "
 "zmienne:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:420
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:413
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
 "Zatem zaczynajmy! Działa ale arc obraca się nieziemsko szybko! Co jest nie "
 "tak?"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:423
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:416
 #, fuzzy
 msgid ""
 "The reason is that your GPU is actually displaying the frames as fast as it "
@@ -335,7 +334,7 @@ msgstr ""
 "więc użycie 'delty' do sterowania rysunkiem zapewnia, że Twój program będzie "
 "działał z taką samą prędkością na każdym sprzęcie."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:431
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:424
 #, fuzzy
 msgid ""
 "In our case, we simply need to multiply our ``rotation_angle`` variable by "
@@ -348,15 +347,15 @@ msgstr ""
 "zwiększone o znacznie mniejszą wartość, która bezpośrednio zależy od "
 "szybkości renderowania."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:465
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:458
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr "Uruchommy to znowu! Tym razem, obraca się prawidłowo!"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:468
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:461
 msgid "Tools"
 msgstr "Narzędzia"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:470
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:463
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
@@ -365,7 +364,7 @@ msgstr ""
 "własnych węzłów w celu użycia ich jako podglądu lub wizualizacji jakiejś "
 "funkcji lub zachowania."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:474
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:467
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."

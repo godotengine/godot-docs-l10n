@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,10 +27,13 @@ msgid "Why import?"
 msgstr "Por que importar?"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
+#, fuzzy
 msgid ""
 "Raw audio data in general is large and undesired. Godot provides two main "
 "options to import your audio data: WAV and OGG Vorbis."
 msgstr ""
+"Em geral, dados de audio bruto são grandes e desnecessários. Godot fornece "
+"duas opções principais para importar seus dados de audio: WAV e OGG Vorbis."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid ""
@@ -40,6 +43,12 @@ msgid ""
 "* Ogg Vorbis files use a stronger compression that results in much smaller "
 "file size, but require significantly more processing power to play back."
 msgstr ""
+"Cada um tem vantagens diferentes. * Arquivos Wav usam dados brutos ou baixa "
+"compressão, fazem poucas exigências na CPU para serem reproduzidos (Centenas "
+"de vozes simultâneas neste formato são aceitaveis), mas ocupam um espaço "
+"significativo. * Arquivos Ogg Vorbis usam uma compressão mais alta, "
+"resultando em arquivos de tamanho muito menor, mas exigem significativamente "
+"mais poder de processamento para serem reproduzidos."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:19
 #, fuzzy
@@ -105,55 +114,72 @@ msgid "12kb"
 msgstr "12kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:35
+#, fuzzy
 msgid ""
-"In general, what is recommended, is to use WAV for most sound effects, "
-"especially those that are short and repetitive, and OGG for music, voice and "
-"long sound effects."
+"Consider using WAV for short and repetitive sound effects, and OGG for "
+"music, speech, and long sound effects."
 msgstr ""
+"Em geral, o que se é recomendado, é usar formato WAV para a maioria dos "
+"efeitos sonoros, especialmentes aqueles quem são curtos e repetitivos, e OGG "
+"para musicas, vozes e efeitos sonoros longos."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:38
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
+#, fuzzy
 msgid "Best practices"
-msgstr ""
+msgstr "Boas práticas"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:40
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:41
+#, fuzzy
 msgid ""
 "Godot 3+ has an amazing bus system with built-in effects. This saves SFX "
 "artists the need to add reverb to the sound effects, reducing their size "
 "greatly and ensuring correct trimming. Say no to SFX with baked reverb!"
 msgstr ""
+"Godot 3+ tem um sistema de barramentos com efeitos integrados. Isto evita "
+"aos artistas de SFX a necessidade de adicionar reverberação aos efeitos "
+"sonoros, reduzindo o consideravelmente o tamanho e garante um ajuste "
+"correto. Diga não aos SFX com reverberação pré-preparada !"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:47
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:48
 msgid "As you can see above, sound effects become huge with reverb added."
 msgstr ""
+"Como pode ser visto acima, efeitos sonoros podem se tornar enormes com a "
+"reverberação adicionada."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:50
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:51
 msgid "Trimming"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:53
+#, fuzzy
 msgid ""
 "One issue that happens often is that the waveform is exported with long "
 "silences at the beginning and at the end. These are inserted by DAWs when "
 "saving to a waveform, increase their size unnecessarily and add latency to "
 "the moment they are played back."
 msgstr ""
+"Um problema que se produz com frequência é a que a forma de onda é exportada "
+"com longos silêncios no início e no fim. Elas são inseridas pelos DAWs ao "
+"salvar a forma de onda, aumentando seus tamanhos desnecessariamente e "
+"adicionando latência no momento em que são tocadas."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:57
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:58
 msgid "Importing as WAV with the Trimming option enabled solves this."
 msgstr ""
+"A importação de WAV com a opção de corte ativada resolve esse problema."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:61
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:62
 msgid "Looping"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:64
 msgid ""
 "Godot supports looping in the samples (tools such as Sound Forge or Audition "
 "can add loop points to wav files). This is useful for sound effects, such as "
 "engines, machine guns etc. Ping-pong looping is also supported."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:68
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:69
 msgid ""
 "As an alternative, the import screen has a \"loop\" option that enables "
 "looping for the entire sample when importing."

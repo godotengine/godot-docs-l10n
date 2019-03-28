@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -478,7 +478,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:266
 msgid "Strafe left:"
-msgstr ""
+msgstr "Déplacement latéral à gauche :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:283
 msgid "Jump:"
@@ -520,7 +520,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:311
 msgid "Example of looking around, FPS style:"
-msgstr "Exemple de regarder autour, dans le style FPS :"
+msgstr "Exemple de regarder les alentours, en vue FPS :"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:353
 msgid ""
@@ -564,6 +564,13 @@ msgid ""
 "many times, keep in mind they need to be eventually normalized or they also "
 "may suffer from numerical precision errors."
 msgstr ""
+"La référence de type: ref: `class_Quat` contient plus d'informations sur le "
+"type de données (elle peut également faire de l'accumulation de transformée, "
+"la transformation des points,, etc., bien que cela soit utilisé moins "
+"souvent). Si vous interpolez ou appliquez plusieurs fois des opérations sur "
+"des quaternions, n'oubliez pas qu'ils doivent éventuellement être "
+"normalisés, sinon ils risquent également de présenter des erreurs de "
+"précision numérique."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:385
 msgid ""

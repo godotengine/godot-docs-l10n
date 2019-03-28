@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -237,36 +237,29 @@ msgstr ""
 "的场景。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
-#, fuzzy
 msgid ""
-"As mentioned in the comments above, we need to avoid the situation of "
-"deleting the current scene while it is still being used (i.e. its code is "
-"still running), so using :ref:`Object.call_deferred() "
-"<class_Object_method_call_deferred>` is required at this point. The result "
-"is that the second function will run at a later time when any code from the "
-"current scene has completed."
+"Using :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, the "
+"second function will only run once all code from the current scene has "
+"completed. Thus, the current scene will not be removed while it is still "
+"being used (i.e. its code is still running)."
 msgstr ""
-"如上面的注释中所述, 我们需要避免在当前场景仍在使用时将其删除的情况 (即其代码"
-"仍在运行), 因此此时需要使用 :ref:`Object.call_deferred() "
-"<class_Object_method_call_deferred>` 。其结果是, 第二个函数将在以后当前场景中"
-"的任何代码完成后运行。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:233
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
 msgstr "最后, 我们需要在两个场景中填充空回调函数:"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:253
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:252
 msgid "and"
 msgstr "以及"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:273
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button!"
 msgstr "运行项目和测试, 您可以通过按下按钮在场景之间切换!"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:276
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
 msgid ""
 "Note: When scenes are small, the transition is instantaneous. However, if "
 "your scenes are more complex, they may take a noticeable amount of time to "

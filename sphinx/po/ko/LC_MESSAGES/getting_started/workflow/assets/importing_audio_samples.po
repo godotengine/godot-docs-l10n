@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,20 +100,20 @@ msgid "12kb"
 msgstr "12kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:35
+#, fuzzy
 msgid ""
-"In general, what is recommended, is to use WAV for most sound effects, "
-"especially those that are short and repetitive, and OGG for music, voice and "
-"long sound effects."
+"Consider using WAV for short and repetitive sound effects, and OGG for "
+"music, speech, and long sound effects."
 msgstr ""
 "일반적으로 추천하는 것으로, 대부분의 음향 효과에는, 특히 그것이 짧고 반복된다"
 "면 WAV를 사용하고, OGG는 음악, 목소리, 그리고 긴 음향 효과에 사용하는 것입니"
 "다."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:38
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
 msgid "Best practices"
 msgstr "모범 사례"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:40
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:41
 msgid ""
 "Godot 3+ has an amazing bus system with built-in effects. This saves SFX "
 "artists the need to add reverb to the sound effects, reducing their size "
@@ -124,15 +124,15 @@ msgstr ""
 "를 크게 줄이고 올바른 트리밍을 보장합니다. 베이크된 reverb인 SFX에 아니라고 "
 "말해봐요!"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:47
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:48
 msgid "As you can see above, sound effects become huge with reverb added."
 msgstr "위에서 볼 수 있듯이, reverb가 추가되면서 음향 효과는 거대해졌습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:50
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:51
 msgid "Trimming"
 msgstr "트리밍(Trimming)"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:53
 msgid ""
 "One issue that happens often is that the waveform is exported with long "
 "silences at the beginning and at the end. These are inserted by DAWs when "
@@ -143,15 +143,15 @@ msgstr ""
 "것은 파형을 저장할 때 DAW에 의해 삽입되며, 불필요하게 파일 크기를 키우면서 재"
 "생하는 순간 대기 시간이 추가됩니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:57
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:58
 msgid "Importing as WAV with the Trimming option enabled solves this."
 msgstr "Trimming 설정이 활성화된 상태로 WAV로 가져오면 이를 해결합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:61
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:62
 msgid "Looping"
 msgstr "루핑(Looping)"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:64
 msgid ""
 "Godot supports looping in the samples (tools such as Sound Forge or Audition "
 "can add loop points to wav files). This is useful for sound effects, such as "
@@ -161,7 +161,7 @@ msgstr ""
 "복 포인트를 추가할 수 있는 도구). 이것은 엔진, 머신 건과 같은 음향 효과에 유"
 "용합니다. 핑퐁 루핑 역시 지원합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:68
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:69
 msgid ""
 "As an alternative, the import screen has a \"loop\" option that enables "
 "looping for the entire sample when importing."

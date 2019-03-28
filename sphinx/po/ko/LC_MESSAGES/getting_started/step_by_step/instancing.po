@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,17 +159,29 @@ msgstr "인스턴스 편집하기"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
 msgid ""
-"Open the ``Ball`` scene and change the ``Bounce`` property in the Inspector "
-"to `1`. Press \"Play\" and notice that all of the instanced balls are now "
-"much more bouncy. Because the instanced balls are based on the saved scene, "
-"changes to that scene will affect all instances."
+"Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
+"down arrow and selecting \"New PhysicsMaterial\"."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:98
+msgid ""
+"Then, expand the material by clicking on it, and set the ``Bounce`` property "
+"to ``1``."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:103
+#, fuzzy
+msgid ""
+"Press \"Play\" and notice that all of the instanced balls are now much more "
+"bouncy. Because the instanced balls are based on the saved scene, changes to "
+"that scene will affect all instances."
 msgstr ""
 "``Ball`` 씬을 열고 인스펙터 내에 있는 ``Bounce`` 속성을 `1`\\ 로 변경하세요. "
 "\"재생\"을 누르면 모든 인스턴스된 공들이 더 많이 튀어 오르는 것에 주목하세"
 "요. 인스턴스된 공들은 저장된 씬을 기반으로 두기 때문에, 그 씬에 변화를 준다"
 "면 씬의 인스턴스에 영향을 줍니다."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:98
+#: ../../docs/getting_started/step_by_step/instancing.rst:107
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to "
 "``0.5`` and then in the ``Main`` scene, select one of the instanced balls. "
@@ -179,7 +191,7 @@ msgstr ""
 "고 ``Main`` 씬으로 돌아간 다음, 인스턴스된 공들 중 하나를 선택하세요. 그것의 "
 "``Bounce`` 값을 ``1``\\ 로 맞추고 \"재생\"을 누르세요."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:104
+#: ../../docs/getting_started/step_by_step/instancing.rst:113
 msgid ""
 "Notice that a grey \"revert\" button appears next to the adjusted property. "
 "When this button is present, it means you modified a property in the "
@@ -188,17 +200,16 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
-"조절된 속성 옆에 회색 \"새로고침\" 버튼이 나타난 것에 주목하세요. 이 버튼이 "
-"있다는 것은, 당신이 인스턴스된 씬의 속성을 수정하여 저장된 씬의 값을 무시하"
-"게 만든 것입니다. 비록 그 속성이 원래 씬에서 수정되더라도, 사용자 지정 값은 "
-"유지됩니다. 새로고침 버튼을 눌러 저장된 씬의 값으로 속성을 복원시킬 수 있을 "
-"것입니다."
+"조절된 속성 옆에 회색 \"새로고침\" 버튼이 나타났습니다. 이 버튼이 있다는 것"
+"은, 인스턴스된 씬의 속성을 수정하여 저장된 씬의 값을 재정의한 것입니다. 속성"
+"이 기존의 씬에서 수정되더라도, 커스텀 값은 유지됩니다. 새로고침 버튼을 누르"
+"면 저장된 씬의 값으로 속성을 복원시킬 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:112
+#: ../../docs/getting_started/step_by_step/instancing.rst:121
 msgid "Conclusion"
 msgstr "결론"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:114
+#: ../../docs/getting_started/step_by_step/instancing.rst:123
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "

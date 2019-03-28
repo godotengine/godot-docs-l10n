@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,24 +107,30 @@ msgid ""
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
+"El exportador tiene un soporte primitivo para convertir árboles de nodos de "
+"materiales de Cycles/EEVEE para Materiales de sombreado de Godot. Nota que "
+"algunos Nodos de Sombreado no están soportados aún debido a dificultades en "
+"la implementación, tales como:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid "all the ``noisy textures``"
-msgstr ""
+msgstr "todas las ``noisy textures`` (texturas de ruido)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
 msgid "``generated texture coordinates``"
-msgstr ""
+msgstr "coordenadas de texturas generadas"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
-msgstr ""
+msgstr "grupo de nodos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
+"nodos sombredores excepto ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, "
+"``Glass``, ``add shader`` y ``mix shader``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
 msgid ""
@@ -132,6 +138,9 @@ msgid ""
 "output shader node, it is the only one guarantee to be exactly correctly. "
 "Others are just based on approximation."
 msgstr ""
+"Es posible tratar de usar el nodo PrincipledBSDF con distribución GGX como "
+"la salida del nodo sombreador, es la única garantía para ser exactamente "
+"correcto. Otras están basadas en aproximación."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
 #, fuzzy
@@ -147,7 +156,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
 msgid "Generate external materials"
-msgstr ""
+msgstr "Generar materiales externos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
 msgid ""
@@ -155,9 +164,15 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
+"La configuración predeterminada de exportar material debería mantener todos "
+"los materiales internos para el archivo “escn”. Hay una opción que podría "
+"habilitar la generación de un archivo externo “.material” cuando el archivo "
+"“escn” se abra en Godot."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
 msgstr ""
+"``.material``el archivo puede ser asignado a cualquier  espacio material "
+"para ser un recurso externo."

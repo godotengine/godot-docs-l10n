@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -703,8 +703,8 @@ msgid ""
 "An expanding container eats all the space it can from its parent, pushing "
 "everything else along the way"
 msgstr ""
-"Ein expandierender Container füllt den ganzen Platz aus, den er von seinem "
-"Elternknoten bekommen kann, alles andere wird dabei verdrängt"
+"Ein wachsender Container füllt den ganzen Platz aus, den er von seinem "
+"Elternknoten bekommen kann, wobei er alles andere dabei verdrängt"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:335
 msgid "Turn the bar and counter into reusable UI components"
@@ -769,6 +769,14 @@ msgid ""
 "nodes, we're ready to inherit this template and create the life bar. It's "
 "the same for the ``Counter``."
 msgstr ""
+"Dann, markiere das ``Counter`` Node und mache dasselbe. Rechtsklick, "
+"``Speichere Zweig als Szene``, und speichere es als ``Counter.tscn``. Eine "
+"new bearbeitbares Szenenicon erscheint auf der Rechten Seite der Nodes auf "
+"dem Szenenzweig. Klicke auf das nächste von ``Bar``, um die "
+"korrespondierende Szene zu öffnen. Verändere die Größe des ``Bar`` Nodes, "
+"sodass ihre bounding box zum Inhalt passt. Für den Weg wie wir Controls "
+"benennen und platzieren sind wir jetzt fertig, um das Template zu vererben "
+"und erstellen eine Lebensbar. Es ist dasselbe für ``Counter``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
 msgid "With no extra changes, our Bar is ready to use"
@@ -819,6 +827,9 @@ msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
+"Ein \"Neu laden\" Symbol erscheint neben den Eigenschaften, die Sie "
+"überschreiben möchten. Klicken Sie auf das Symbol, um den Wert auf den "
+"Standardwert der Mutterszene zurückzusetzen."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:400
 msgid ""
@@ -827,10 +838,16 @@ msgid ""
 "override properties, resources and add extra nodes and scripts to extend its "
 "functionality."
 msgstr ""
+"Man kann sich die Szenenvererbung wie einen Nodebaum vorstellen, oder das "
+"''extends'' Schlüsselwort von GDScript. Eine vererbte Szene macht alles "
+"genauso wie ihr Elternszene, allerdings kann man Eigenschaften und "
+"Ressourcen überschreiben und weitere Nodes und Skripte hinzufügen um ihre "
+"Funktionalität zu erweitern."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:406
+#, fuzzy
 msgid "Inherit the Bar Scene to build the LifeBar"
-msgstr ""
+msgstr "Erbe von der Leistenszene um einen Lebensbalken zu erstellen."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
 msgid ""
@@ -867,13 +884,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
 msgid "Design the EnergyBar"
-msgstr ""
+msgstr "Entwerfe die Energieleiste"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:438
 msgid ""
 "We already setup the ``LifeBar``'s design with the main ``Bar`` scene. Now "
 "we need the ``EnergyBar``."
 msgstr ""
+"Wir haben schon das Design für die Lebensleiste mit der Leistenszene "
+"eingerichtet. Nun brauchen wir die Energieleiste."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:441
 msgid ""
@@ -937,6 +956,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:488
 msgid "The EP Count widget, with a smaller font than its HP counterpart"
 msgstr ""
+"Das Element, welches die Erfahrung zählt, jedoch mit einer kleineren "
+"Schriftart als ihr Gesundheitsgegenstück"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:490
 msgid ""
@@ -965,7 +986,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:509
 msgid "The Count looks better now it's a bit smaller"
-msgstr ""
+msgstr "Der Zähler sieht nun, da er ein wenig kleiner ist, besser aus"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
 msgid ""
@@ -978,7 +999,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
 msgid "Prepare the bomb and emerald counters"
-msgstr ""
+msgstr "Bereite die Zähler für die Bomben und die Smaragde vor"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
 msgid ""
@@ -1012,7 +1033,7 @@ msgstr "Der Smaragdzähler sollte so aussehen"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
-msgstr ""
+msgstr "Füge nun die UI-Komponente der finalen Oberfläche hinzu"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:549
 msgid ""
@@ -1049,7 +1070,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
 msgid "Now both counters have a decent size"
-msgstr ""
+msgstr "Nun haben beide Zähler eine angemessene Größe"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:579
 msgid ""
@@ -1071,7 +1092,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:593
 msgid "The 2 bars align perfectly"
-msgstr ""
+msgstr "Die beiden Leisten sind nun perfekt ausgerichtet"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
 msgid ""
@@ -1082,7 +1103,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
 msgid "Place the GUI onto the game's mockup"
-msgstr ""
+msgstr "Platziere die Oberfläche auf den Spielentwurf"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
 msgid ""

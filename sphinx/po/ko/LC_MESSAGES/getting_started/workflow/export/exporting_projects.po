@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -275,6 +275,10 @@ msgid ""
 "from the command line still requires an export preset to define the export "
 "parameters. A basic invocation of the command would be:"
 msgstr ""
+"개발에 있어, 빌드를 자동화하는 것이 유용합니다, 그리고 Godot은 명령 행 매개 "
+"변수``--export``\\ 와 ``--export-debug``\\ 를 사용하여 이를 지원합니다. 명령 "
+"행에서 내보내려면 여전히 내보내기 매개 변수를 정의하기 위한 내보내기 프리셋"
+"이 필요합니다. 명령의 기본 호출은 다음과 같습니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
 msgid ""
@@ -283,6 +287,9 @@ msgid ""
 "relative to the project path or absolute; it does not respect the directory "
 "the command was invoked from."
 msgstr ""
+"\"Windows Desktop\"이라는 프리셋이 있으며 템플릿을 찾을 수 있다고 가정하면, "
+"이것은 ``some_name.exe``\\ 로 내보냅니다. 출력 경로는 프로젝트 경로 또는 절"
+"대 경로를 기준으로 합니다; 명령이 호출 된 디렉토리를 따르지 않습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
 msgid ""
@@ -290,17 +297,21 @@ msgid ""
 "single export to be used with multiple Godot executables). This takes place "
 "if:"
 msgstr ""
+"PCK 또는 ZIP 파일만 내보내도록 설정할 수도 있습니다 (여러 Godot 실행 파일에"
+"서 단일 내보내기를 사용할 수 있음). 다음과 같은 경우에 발생합니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid "the export preset is not marked as runnable,"
-msgstr ""
+msgstr "내보내기 프리셋이 실행 가능으로 표시되지 않고,"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:157
 msgid "the target name ends with ``.pck`` or ``.zip``."
-msgstr ""
+msgstr "대상 이름이 ``.pck``\\ 이나 ``.zip``\\ 으로 끝나는 경우."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:159
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
 msgstr ""
+"때로는 ``--export`` 플래그와 ``--path`` 플래그를 결합하거나, 자동화된 내보내"
+"기를 위해 전용 내보내기 프리셋을 만드는 것이 유용합니다:"

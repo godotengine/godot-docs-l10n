@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 11:47+0100\n"
+"POT-Creation-Date: 2019-03-28 09:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,31 +94,30 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:35
 msgid ""
-"In general, what is recommended, is to use WAV for most sound effects, "
-"especially those that are short and repetitive, and OGG for music, voice and "
-"long sound effects."
+"Consider using WAV for short and repetitive sound effects, and OGG for "
+"music, speech, and long sound effects."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:38
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
 msgid "Best practices"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:40
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:41
 msgid ""
 "Godot 3+ has an amazing bus system with built-in effects. This saves SFX "
 "artists the need to add reverb to the sound effects, reducing their size "
 "greatly and ensuring correct trimming. Say no to SFX with baked reverb!"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:47
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:48
 msgid "As you can see above, sound effects become huge with reverb added."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:50
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:51
 msgid "Trimming"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:53
 msgid ""
 "One issue that happens often is that the waveform is exported with long "
 "silences at the beginning and at the end. These are inserted by DAWs when "
@@ -126,22 +125,22 @@ msgid ""
 "the moment they are played back."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:57
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:58
 msgid "Importing as WAV with the Trimming option enabled solves this."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:61
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:62
 msgid "Looping"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:64
 msgid ""
 "Godot supports looping in the samples (tools such as Sound Forge or Audition "
 "can add loop points to wav files). This is useful for sound effects, such as "
 "engines, machine guns etc. Ping-pong looping is also supported."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:68
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:69
 msgid ""
 "As an alternative, the import screen has a \"loop\" option that enables "
 "looping for the entire sample when importing."
