@@ -8,6 +8,7 @@
 # Alexander <loginrus@mail.ru>, 2019.
 # Alexander Danilov <modos189@protonmail.com>, 2019.
 # Alexander Pushkar <alexanderpushkar86@gmail.com>, 2018.
+# Alexandr <cat-elf@yandex.ru>, 2019.
 # Alexandr Eremeev <ae125529@gmail.com>, 2019.
 # Alex <snimalovo@gmail.com>, 2018.
 # Allan Nordhøy <epost@anotheragency.no>, 2019.
@@ -15,9 +16,10 @@
 # Andrii Doroshenko <xrayez@gmail.com>, 2018.
 # Anton Ivanov <sylaralastr@gmail.com>, 2018.
 # asapokl <kzoper@gmail.com>, 2018.
+# B10nicMachine <shumik1337@gmail.com>, 2018.
 # Bashka <Artur-Mamedbekov@yandex.ru>, 2018.
 # batonbl4 <batonbl4@yandex.ru>, 2018.
-# B10nicMachine <shumik1337@gmail.com>, 2018.
+# Bumerang <it.bumerang@gmail.com>, 2019.
 # Chaosus89 <chaosus89@gmail.com>, 2018-2019.
 # Constantin Moskvitin <cmoskvitin@gmail.com>, 2018.
 # Danil Alexeev <danil@alexeev.xyz>, 2018-2019.
@@ -40,9 +42,11 @@
 # luckyuk <im-kerber@mail.ru>, 2018-2019.
 # Mintormo <adenos@mail.ru>, 2018.
 # mirrorrim <hieronymus1100@gmail.com>, 2019.
+# N1 <salminvadim32@gmail.com>, 2019.
 # Neo6666666 <Neo6666666@gmail.com>, 2018-2019.
 # Nick <nikita.porutchyk@gmail.com>, 2018.
 # Nikita Nigmatullin <nnigmat@gmail.com>, 2018.
+# Nikita <yakrobat@protonmail.com>, 2019.
 # Novikov Vladimir <valdemar.const@gmail.com>, 2018.
 # Omicron <omicron666.dev@gmail.com>, 2018.
 # Petr Kustov <zcaliptium@gmail.com>, 2018-2019.
@@ -52,6 +56,7 @@
 # sample text <sampletext32@bk.ru>, 2018.
 # Sergey <maligin.serega2010@yandex.ru>, 2018.
 # Sergey Grinev <sgreenyov@gmail.com>, 2018.
+# Shohrukh Nuriddinov <shohrukhnuriddinov1999@gmail.com>, 2019.
 # Siarhei Dounar <sergey.dovnar@gmail.com>, 2019.
 # Siarhei Mashkarniou <irondrain@gmail.com>, 2018.
 # S.traiker.D <l1evilone@gmail.com>, 2018.
@@ -65,6 +70,7 @@
 # Аркадий Авас <savvot@gmail.com>, 2018.
 # Арсений Солодков <arsen332211@gmail.com>, 2019.
 # Аслан Снупов <aslan170505@gmail.com>, 2018.
+# Виктор <victor8632@bk.ru>, 2019.
 # Влад Афонин (Midnightcoder) <afonin.com123@gmail.com>, 2018.
 # Дарисон ДиДжей Младший <xd02-02@mail.ru>, 2019.
 # Дмитрий <Aress.87@mail.ru>, 2019.
@@ -85,8 +91,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-28 09:54+0100\n"
-"PO-Revision-Date: 2019-03-28 08:40+0000\n"
-"Last-Translator: Chaosus89 <chaosus89@gmail.com>\n"
+"PO-Revision-Date: 2019-04-09 09:31+0000\n"
+"Last-Translator: Alexandr <cat-elf@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -379,8 +385,8 @@ msgid ""
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
-"Для более детального обзора движка, вам нужно подробнее почитать эту "
-"документацию, особенно руководство :ref:`Шаг за шагом <toc-learn-"
+"Для дальнейшего изучения возможностей мы рекомендуем более подробное "
+"изучение документации, особенно руководства :ref:`Шаг за шагом <toc-learn-"
 "step_by_step>`."
 
 #: ../../docs/about/introduction.rst:46
@@ -1304,7 +1310,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr ""
+msgstr "История изменений документации"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -1313,6 +1319,10 @@ msgid ""
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"Документация постоянно совершенствуется. Релиз версии 3.1 включает в себя "
+"множество новых обучающих разделов, множество исправлений и обновлений для "
+"старых обучающих разделов, а также множество обновлений справочника классов. "
+"Ниже приведен список новых учебных разделов, добавленных в версии 3.0."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -1320,136 +1330,137 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"Этот документ содержит только новые руководства, многие руководства были "
+"существенно обновлены, но не вошли в этот документ."
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.0"
-msgstr ""
+msgstr "Новые руководства, начиная с версии 3.0"
 
 #: ../../docs/about/docs_changelog.rst:17
-#, fuzzy
 msgid "Step-by-step"
-msgstr "Шаг за шагом"
+msgstr "Пошаговое обучение"
 
 #: ../../docs/about/docs_changelog.rst:19
-#, fuzzy
 msgid ":ref:`Signals <doc_signals>`"
-msgstr ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`Сигналы <doc_signals>`"
 
 #: ../../docs/about/docs_changelog.rst:20
-#, fuzzy
 msgid ":ref:`Exporting <doc_exporting>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`Экспорт <doc_exporting>`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "Рабочий процесс проекта"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid "Best Practices:"
-msgstr ""
+msgstr "Лучшие практики:"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Introduction <doc_introduction_best_practices>`"
-msgstr ""
+msgstr ":ref:`Введение <doc_introduction_best_practices>`"
 
 #: ../../docs/about/docs_changelog.rst:26
 msgid ":ref:`What are Godot classes <doc_what_are_godot_classes>`"
-msgstr ""
+msgstr ":ref:`Что такое Godot классы <doc_what_are_godot_classes>`"
 
 #: ../../docs/about/docs_changelog.rst:27
 #, fuzzy
 msgid ":ref:`Scene organization <doc_scene_organization>`"
-msgstr ":ref:`Анимационный Пайплайн <doc_animations>`"
+msgstr ":ref:`Структура сцены <doc_scene_organization>`"
 
 #: ../../docs/about/docs_changelog.rst:28
 msgid ":ref:`Scenes versus scripts <doc_scenes_versus_scripts>`"
-msgstr ""
+msgstr ":ref:`Зависимость сцен от скриптов <doc_scenes_versus_scripts>`"
 
 #: ../../docs/about/docs_changelog.rst:29
 msgid ""
 ":ref:`Autoloads versus internal nodes <doc_autoloads_versus_internal_nodes>`"
 msgstr ""
+":ref:`Автозагрузка против внутренних узлов "
+"<doc_autoloads_versus_internal_nodes>`"
 
 #: ../../docs/about/docs_changelog.rst:30
 msgid ":ref:`Node alternatives <doc_node_alternatives>`"
-msgstr ""
+msgstr ":ref:`Альтернативы узлам <doc_node_alternatives>`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`Godot interfaces <doc_godot_interfaces>`"
-msgstr ""
+msgstr "Интерфейсы Godot"
 
 #: ../../docs/about/docs_changelog.rst:32
-#, fuzzy
 msgid ":ref:`Godot notifications <doc_godot_notifications>`"
-msgstr ":ref:`Анимационный Пайплайн <doc_animations>`"
+msgstr ":ref:`Godot оповещения <doc_animations>`"
 
 #: ../../docs/about/docs_changelog.rst:33
 msgid ":ref:`Data preferences <doc_data_preferences>`"
-msgstr ""
+msgstr ":ref:`Настройки данных <doc_data_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid ":ref:`Logic preferences <doc_logic_preferences>`"
-msgstr ""
+msgstr ":ref:`Настройки логики <doc_logic_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:37
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr "Скриптинг"
+msgstr "Написание скриптов"
 
 #: ../../docs/about/docs_changelog.rst:39
-#, fuzzy
 msgid ":ref:`Typed GDscript <doc_gdscript_static_typing>`"
-msgstr ":ref:`Built-in <doc_gdscript_builtin_types>`"
+msgstr ":ref:`Типизированный GDscript <doc_gdscript_static_typing>`"
 
 #: ../../docs/about/docs_changelog.rst:42 ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:44
 msgid ":ref:`2D lights and shadows <doc_2d_lights_and_shadows>`"
-msgstr ""
+msgstr ":ref:`2D освещение и тени <doc_2d_lights_and_shadows>`"
 
 #: ../../docs/about/docs_changelog.rst:45
 msgid ":ref:`2D meshes <doc_2d_meshes>`"
-msgstr ""
+msgstr ":ref:`2D сетки <doc_2d_meshes>`"
 
 #: ../../docs/about/docs_changelog.rst:48 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:50
-#, fuzzy
 msgid ":ref:`CSG <doc_csg_tools>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`CSG <doc_csg_tools>`"
 
 #: ../../docs/about/docs_changelog.rst:51
-#, fuzzy
 msgid ""
 ":ref:`Animating thousands of fish with MultiMesh "
 "<doc_animating_thousands_of_fish>`"
-msgstr "Анимировать смерть с помощью узла Tween"
+msgstr ""
+":ref:`Анимация тысячи рыб при помощи MultiMesh "
+"<doc_animating_thousands_of_fish>`"
 
 #: ../../docs/about/docs_changelog.rst:52
 msgid ""
 ":ref:`Controlling thousands of fish with Particles "
 "<doc_controlling_thousands_of_fish>`"
 msgstr ""
+":ref:`Управление тысячами рыб с помощью Particles "
+"<doc_controlling_thousands_of_fish>`"
 
 #: ../../docs/about/docs_changelog.rst:55
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "Физика"
 
 #: ../../docs/about/docs_changelog.rst:57
 msgid ":ref:`Ragdoll system <doc_ragdoll_system>`"
-msgstr ""
+msgstr ":ref:`Система Ragdoll <doc_ragdoll_system>`"
 
 #: ../../docs/about/docs_changelog.rst:58
 msgid ":ref:`Softbody <doc_soft_body>`"
-msgstr ""
+msgstr ":ref:`Мягкое тело <doc_soft_body>`"
 
 #: ../../docs/about/docs_changelog.rst:61
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:2
@@ -1461,7 +1472,7 @@ msgstr "Анимация"
 
 #: ../../docs/about/docs_changelog.rst:63
 msgid ":ref:`2D skeletons <doc_2d_skeletons>`"
-msgstr ""
+msgstr ":ref:`2D скелеты <doc_2d_skeletons>`"
 
 #: ../../docs/about/docs_changelog.rst:64
 #, fuzzy
@@ -1472,90 +1483,94 @@ msgstr ":ref:`Анимационный Пайплайн <doc_animations>`"
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr ""
+msgstr "Окна просмотра"
 
 #: ../../docs/about/docs_changelog.rst:69
 msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
 msgstr ""
+":ref:`Использование Viewport в качестве текстуры <doc_viewport_as_texture>`"
 
 #: ../../docs/about/docs_changelog.rst:70
 msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
-msgstr ""
+msgstr ":ref:`Пользовательская пост-обработка <doc_custom_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:73
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr ""
+msgstr "Затенение"
 
 #: ../../docs/about/docs_changelog.rst:75
 msgid ""
 ":ref:`Intro to shaders: 2D and 3D water (7 video tutorials) "
 "<doc_intro_to_shaders_water_workshop>`"
 msgstr ""
+":ref:`Введение в шейдеры: 2D и 3D вода (7 видео уроков) "
+"<doc_intro_to_shaders_water_workshop>`"
 
 #: ../../docs/about/docs_changelog.rst:76
 msgid ""
 ":ref:`Migrating to Godot’s shading language "
 "<doc_migrating_to_godot_shader_language>`"
 msgstr ""
+":ref:`Переход к языку шейдинга Godot "
+"<doc_migrating_to_godot_shader_language>`"
 
 #: ../../docs/about/docs_changelog.rst:77
 msgid ""
 ":ref:`Vertex displacement with shaders "
 "<doc_vertex_displacement_with_shaders>`"
 msgstr ""
+":ref:`Смещение вершин при помощи шейдеров "
+"<doc_vertex_displacement_with_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:78
 msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
-msgstr ""
+msgstr ":ref:`Продвинутая пост-обработка <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
 msgid "Shading Reference:"
-msgstr "Смена текущей сцены"
+msgstr "Справка по шейдингу:"
 
 #: ../../docs/about/docs_changelog.rst:81
-#, fuzzy
 msgid ":ref:`Shaders <doc_shaders>`"
-msgstr ":ref:`Легко написать Шейдеры <doc_shading_language>`"
+msgstr ":ref:`Шейдеры <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:82
-#, fuzzy
 msgid ":ref:`Shading language <doc_shading_language>`"
-msgstr ":ref:`Легко написать Шейдеры <doc_shading_language>`"
+msgstr ":ref:`Язык шейдинга <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:83
-#, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr "\"spatial\": Для 3D рендеринга."
+msgstr ":ref:`Пространственные шейдеры <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:84
 #, fuzzy
 msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
-msgstr "\"canvas_item\": Для 2D рендеринга."
+msgstr ":ref:`CanvasItem шейдеры <doc_canvas_item_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
 msgid ":ref:`Particles shaders <doc_particle_shader>`"
-msgstr "\"particles\": Для систем частиц."
+msgstr ":ref:`Точечные шейдеры <doc_particle_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:88 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr ""
+msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:90
 msgid ":ref:`VR starter tutorial <doc_vr_starter_tutorial>`"
-msgstr ""
+msgstr ":ref:`Первоначальное обучение VR <doc_vr_starter_tutorial>`"
 
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/tutorials/platform/index.rst:2
 msgid "Platform-specific"
-msgstr ""
+msgstr "Особенности разных платформ"
 
 #: ../../docs/about/docs_changelog.rst:95
 msgid ""
 ":ref:`Customizing the Web export HTML page <doc_customizing_html5_shell>`"
 msgstr ""
+":ref:`Пользовательская настройка веб экспорта HTML страницы "
+"<doc_customizing_html5_shell>`"
 
 #: ../../docs/about/docs_changelog.rst:98
 #: ../../docs/tutorials/threads/index.rst:2
@@ -1563,8 +1578,9 @@ msgid "Multi-threading"
 msgstr "Много-поточность"
 
 #: ../../docs/about/docs_changelog.rst:100
+#, fuzzy
 msgid ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
-msgstr ""
+msgstr ":ref:`API безопасности потоков <doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:103
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1572,23 +1588,21 @@ msgid "Miscellaneous"
 msgstr "Разное"
 
 #: ../../docs/about/docs_changelog.rst:105
-#, fuzzy
 msgid ":ref:`Fixing jitter and stutter <doc_jitter_stutter>`"
-msgstr "Исправление джиттеров и задержек"
+msgstr ":ref:`Исправление джиттеров и задержек <doc_jitter_stutter>`"
 
 #: ../../docs/about/docs_changelog.rst:106
 msgid ":ref:`Running code in the editor <doc_running_code_in_the_editor>`"
-msgstr ""
+msgstr ":ref:`Запуск кода в редакторе <doc_running_code_in_the_editor>`"
 
 #: ../../docs/about/docs_changelog.rst:107
 msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
-msgstr ""
+msgstr ":ref:`Изменение сцен вручную <doc_change_scenes_manually>`"
 
 #: ../../docs/about/docs_changelog.rst:108
-#, fuzzy
 msgid ""
 ":ref:`Differences between GLES2 and GLES3 <doc_gles2_gles3_differences>`"
-msgstr "Отличия между GLES3 и GLES3"
+msgstr ":ref:`Отличия между GLES3 и GLES3 <doc_gles2_gles3_differences>`"
 
 #: ../../docs/about/docs_changelog.rst:111
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:231
@@ -1599,28 +1613,30 @@ msgstr "Отличия между GLES3 и GLES3"
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 #: ../../docs/development/compiling/compiling_for_uwp.rst:24
 msgid "Compiling"
-msgstr ""
+msgstr "Компиляция"
 
 #: ../../docs/about/docs_changelog.rst:113
+#, fuzzy
 msgid ":ref:`Optimizing a build for size <doc_optimizing_for_size>`"
-msgstr ""
+msgstr ":ref:`Оптимизация размера сборки <doc_optimizing_for_size>`"
 
 #: ../../docs/about/docs_changelog.rst:114
 msgid ""
 ":ref:`Compiling with script encryption key "
 "<doc_compiling_with_script_encryption_key>`"
 msgstr ""
+":ref:`Компиляция с ключом шифрования скрипта "
+"<doc_compiling_with_script_encryption_key>`"
 
 #: ../../docs/about/docs_changelog.rst:117
 #: ../../docs/development/cpp/index.rst:2
 msgid "Engine development"
-msgstr ""
+msgstr "Разработка движка"
 
 #: ../../docs/about/docs_changelog.rst:119
-#, fuzzy
 msgid ""
 ":ref:`Binding to external libraries <doc_binding_to_external_libraries>`"
-msgstr ":ref:`Можно использовать внешние редакторы <doc_external_editor>`"
+msgstr ":ref:`Привязка к внешним библиотекам <doc_external_editor>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/content/index.rst:2
@@ -1629,9 +1645,8 @@ msgid "Creating content"
 msgstr "Создание контента"
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`Making trees <doc_making_trees>`"
-msgstr ":ref:`Анимационный Пайплайн <doc_animations>`"
+msgstr ":ref:`Создание деревьев <doc_animations>`"
 
 #: ../../docs/about/docs_changelog.rst:127
 #: ../../docs/tutorials/plugins/index.rst:2
@@ -1641,11 +1656,11 @@ msgstr "Плагины"
 #: ../../docs/about/docs_changelog.rst:129
 msgid ":ref:`Making main screen plugins <doc_making_main_screen_plugins>`"
 msgstr ""
+":ref:`Создание плагинов главного экрана <doc_making_main_screen_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:130
-#, fuzzy
 msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
-msgstr ":ref:`Анимационный Пайплайн <doc_animations>`"
+msgstr ":ref:`Плагины для 3D-гизмо <doc_spatial_gizmo_plugins>`"
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
@@ -2580,12 +2595,16 @@ msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
+"Откройте сцену ``Ball`` и добавьте ``PhysicsMaterial`` нажав на стрелку и "
+"выбрав пункт \"New PhysicsMaterial\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr ""
+"Затем раскройте параметры материала и установите параметр ``Bounce`` на "
+"``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
 #, fuzzy
@@ -5345,28 +5364,24 @@ msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "Text: ``Уворачивайся от крипов!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
-#, fuzzy
 msgid "*Layout* : \"HCenter Wide\""
-msgstr "``Макет``: \"Center\""
+msgstr "``Макет``: \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:940
 msgid "StartButton"
 msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:942
-#, fuzzy
 msgid "*Text* : ``Start``"
-msgstr "Text: ``Start``"
+msgstr "*Текст* : ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:943
-#, fuzzy
 msgid "*Layout* : \"Center Bottom\""
-msgstr "``Layout``: \"Center Bottom\""
+msgstr "``Слой``: \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:944
-#, fuzzy
 msgid "*Margin* :"
-msgstr "Поле"
+msgstr "*Отступ* :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Top: ``-200``"
@@ -5692,6 +5707,11 @@ msgid ""
 "input, you can do that in the \"Project Settings\" under *Input Devices* and "
 "*Pointing*"
 msgstr ""
+"По умолчанию Godot эмулирует ввод мыши из ввода тача. Это означает что все "
+"что закодировано на событие мыши, также будет вызываться на событие тача. "
+"Если вы хотите отключить такое поведение по какой-то причине, или "
+"эмулировать тач из ввода мыши, вы можете это сделать в \"Project Settings\" "
+"в *Input Devices* и *Pointing*"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
 #, fuzzy
@@ -11772,6 +11792,11 @@ msgid ""
 "completed. Thus, the current scene will not be removed while it is still "
 "being used (i.e. its code is still running)."
 msgstr ""
+"Используя: ref: `Object.call_deferred () "
+"<class_Object_method_call_deferred>`, вторая функция будет запускаться "
+"только после завершения всего кода из текущей сцены. Таким образом, текущая "
+"сцена не будет удалена, пока она все еще используется (то есть ее код все "
+"еще выполняется)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 msgid ""
@@ -17407,17 +17432,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:49
 msgid "A function is an individual canvas with nodes connected."
-msgstr ""
+msgstr "Функция отдельного холста с подключенными нодами."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:51
 msgid ""
 "A single script can contain many functions, each of which will have a canvas "
 "of its own, allowing for more organization."
 msgstr ""
+"Один скрипт может содержать множество функций, каждая из которых имеет свое "
+"полотно, что позволяет добиться лучше организации."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:53
 msgid "There are three main ways to add functions in a script:"
-msgstr ""
+msgstr "Существует три основных способа добавления функций в скрипт:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:56
 #, fuzzy
@@ -17431,6 +17458,10 @@ msgid ""
 "something happens and can be looked up in the reference. Virtual functions "
 "are listed when pressing the \"Override\" icon in the member panel:"
 msgstr ""
+"Большинство типов узлов и других типов объектов в Godot содержат виртуальные "
+"функции. Это функции, которые будут вызываться (запускать ваш код), когда "
+"что-то происходит, и их можно посмотреть в справочнике. Виртуальные функции "
+"отображаются при нажатии значка «Переопределить» на панели элементов:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:65
 msgid ""
@@ -17451,6 +17482,8 @@ msgid ""
 "As some functions expect you to return a value, they will also add a return "
 "node where such value is supposed to be provided:"
 msgstr ""
+"Так как некоторые функции ожидают ответа, они также добавят узел в который "
+"должен поступить ответ:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:83
 #, fuzzy
@@ -17463,6 +17496,9 @@ msgid ""
 "all sorts of things. A typical example would be a button that emits a "
 "\"pressed\" signal when actually pressed."
 msgstr ""
+"Узлы дерева испускают сигнал когда что-то происходит. Godot использует "
+"сигналы повсеместно. Простым примером является кнопка которая при нажатии "
+"излучает сигнал \"pressed\"."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:88
 msgid ""
@@ -17477,12 +17513,16 @@ msgid ""
 "node where the signal will be connected to, and the function that will "
 "receive the signal:"
 msgstr ""
+"Это откроет окно соединения. В этом окне вам нужно выбрать узел к которому "
+"будет подключен сигнал, и функцию которая его получит:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:100
 msgid ""
 "If this is done right, a new function will be created in our script and a "
 "signal will automatically be connected to it:"
 msgstr ""
+"Если все сделано правильно, то в нашем скрипте будет создана новая функция и "
+"сигнал автоматически подключится к ней:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:107
 #, fuzzy
@@ -17497,12 +17537,20 @@ msgid ""
 "breaking a larger function up into several manageable chunks and reusing "
 "your visual code."
 msgstr ""
+"Последний способ создания функций - вручную. В целом это не самая "
+"распространенная практика, к которой строит прибегать только в том случае, "
+"если вам это действительно нужно. Пользовательские функции запускаются если "
+"другой (или тот же) скрипт вызывает их вручную. Основными примерами "
+"использования являются разбиение более крупной функции на несколько "
+"управляемых фрагментов и повторное использование визуального кода."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:113
 msgid ""
 "To create a function manually, push the big \"Plus\" button, and a new "
 "function will be added with a default name:"
 msgstr ""
+"Чтобы создать функцию вручную, нажмите большую кнопку \"Плюс\", и новая "
+"функция будет добавлена с именем по умолчанию:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:119
 msgid ""
@@ -17523,7 +17571,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:4
 msgid "Nodes and terminology"
-msgstr ""
+msgstr "Ноды и Терминология"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:6
 msgid ""
@@ -26086,7 +26134,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
 msgid "Using tilemaps"
-msgstr ""
+msgstr "Использование карт тайлов"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
 msgid ""
@@ -26094,16 +26142,22 @@ msgid ""
 "start with a bunch of reference tiles (or pieces) that can be put on a grid, "
 "as many times each as desired - think of it like a map editor:"
 msgstr ""
+"Карты тайлов это простой и быстрой способ создания игровых уровней в 2D. По "
+"сути, вы начинаете с составления коллекции тайлов (или частей) которые могут "
+"быть помещены на сетку, в том количестве насколько это требуется - подобно "
+"редактору карт:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:15
 msgid ""
 "Collisions can also be added to the tiles, allowing for both 2D side "
 "scrolling and top down games."
 msgstr ""
+"Коллизии могут также быть добавлены на тайлы, позволяя использовать себя, "
+"как в 2D играх с боковой прокруткой так и в играх с видом сверху."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:19
 msgid "Making a tileset"
-msgstr ""
+msgstr "Создание набора тайлов"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid ""
@@ -26112,6 +26166,11 @@ msgid ""
 "packers* that will generate these spritesheets out of your separate texture "
 "files. Having them as separate images also works."
 msgstr ""
+"Для начала, необходимо создать набор тайлов. Здесь находятся некоторые тайлы "
+"для этого. Они все находятся в одной картинке для оптимизации. Они также "
+"называются *текстурными упаковками* которые генерируют эти спрайт-листы из "
+"ваших отдельных текстурных файлов. Также для этого можно использовать и "
+"отдельные картинки."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid ""
@@ -26120,6 +26179,10 @@ msgid ""
 "will cause issues later. ``Mipmaps`` should already be disabled; if not, "
 "disable this too."
 msgstr ""
+"Создайте новый проект и переместите вышерасположенную PNG-картинку в "
+"директорию. Затем, откройте настройки импорта картинки и выключите "
+"``Filter``, если он будет включен это вызовет проблемы далее. ``Mipmaps`` "
+"уже должен быть отключен; если нет, отключите его тоже."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:33
 msgid ""

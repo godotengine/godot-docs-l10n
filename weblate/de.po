@@ -3,10 +3,12 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alexander <adcrashday@googlemail.com>, 2018.
+# Andreas Binczyk <andreas.binczyk@gmail.com>, 2019.
 # Andreas During <anduring@web.de>, 2019.
 # Arthur S. Muszynski <artism90@gmail.com>, 2018-2019.
 # Carsten Nikiel <carsten@nikiel.de>, 2018-2019.
 # chillhelm <wilhelm@neubert.online>, 2018.
+# Christoph Brosch <christoph.brosch@outlook.de>, 2019.
 # Constantin <commandr@gmx.net>, 2019.
 # DafabHoid <github@dafabhoid.de>, 2018.
 # datenbauer <d-vaupel@web.de>, 2019.
@@ -47,6 +49,7 @@
 # Philipp Wabnitz <philipp.wabnitz@s2011.tu-chemnitz.de>, 2018.
 # rama0x9 <5393a6cuwlun@opayq.com>, 2018.
 # RamonP.FreedomUnited <freedomunited@yandex.com>, 2018.
+# Reneator <reneator@googlemail.com>, 2019.
 # R. K <rene.kling1992@gmail.com>, 2018.
 # Robin Bauknecht <robin.bauknecht@gmail.com>, 2018.
 # Schweini07 <schweinthaler@gmx.at>, 2019.
@@ -66,8 +69,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-28 09:54+0100\n"
-"PO-Revision-Date: 2019-03-28 08:39+0000\n"
-"Last-Translator: Fabian Böhle <mail@fabianboehle.de>\n"
+"PO-Revision-Date: 2019-04-07 14:09+0000\n"
+"Last-Translator: Christoph Brosch <christoph.brosch@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -1306,9 +1309,8 @@ msgstr ""
 "org/contact>`_."
 
 #: ../../docs/about/docs_changelog.rst:4
-#, fuzzy
 msgid "Documentation changelog"
-msgstr "Richtlinien Dokumentation"
+msgstr "Änderungen Dokumentation"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -1317,6 +1319,10 @@ msgid ""
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"Die Dokumentation wird stetig verbessert. Version 3.1 beinhaltet viele neue "
+"Tutorials, Fehlerbehebungen, Updates für alte Tutorials und viele "
+"Aktualisierungen bei dem Nachschlagewerk für Klassen-Referenzen. Anbei ist "
+"eine Liste aller neuen Tutorials die seit Version 3.0 hinzugefügt wurden."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -1327,10 +1333,9 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.0"
-msgstr ""
+msgstr "Neue Tutorials seit Version 3.0"
 
 #: ../../docs/about/docs_changelog.rst:17
-#, fuzzy
 msgid "Step-by-step"
 msgstr "Schritt für Schritt"
 
@@ -1347,27 +1352,27 @@ msgstr ":ref:`String <class_String>`"
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "Projekt-Workflow"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid "Best Practices:"
-msgstr ""
+msgstr "Best Practices:"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Introduction <doc_introduction_best_practices>`"
-msgstr ""
+msgstr ":ref:`Einführung <doc_introduction_best_practices>`"
 
 #: ../../docs/about/docs_changelog.rst:26
 msgid ":ref:`What are Godot classes <doc_what_are_godot_classes>`"
-msgstr ""
+msgstr ":ref:`Was sind Godot Klassen <doc_what_are_godot_classes>`"
 
 #: ../../docs/about/docs_changelog.rst:27
 msgid ":ref:`Scene organization <doc_scene_organization>`"
-msgstr ""
+msgstr ":ref:`Szenen Organisation <doc_scene_organization>`"
 
 #: ../../docs/about/docs_changelog.rst:28
 msgid ":ref:`Scenes versus scripts <doc_scenes_versus_scripts>`"
-msgstr ""
+msgstr ":ref:`Szenen Versus Skripte <doc_scenes_versus_scripts>`"
 
 #: ../../docs/about/docs_changelog.rst:29
 msgid ""
@@ -1376,23 +1381,23 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:30
 msgid ":ref:`Node alternatives <doc_node_alternatives>`"
-msgstr ""
+msgstr ":ref:`Node Alternativen <doc_node_alternatives>`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`Godot interfaces <doc_godot_interfaces>`"
-msgstr ""
+msgstr ":ref:`Godot Interfaces <doc_godot_interfaces>`"
 
 #: ../../docs/about/docs_changelog.rst:32
 msgid ":ref:`Godot notifications <doc_godot_notifications>`"
-msgstr ""
+msgstr ":ref:`Godot Benachrichtigungen <doc_godot_notifications>`"
 
 #: ../../docs/about/docs_changelog.rst:33
 msgid ":ref:`Data preferences <doc_data_preferences>`"
-msgstr ""
+msgstr ":ref:`Datenvoreinstellungen <doc_data_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid ":ref:`Logic preferences <doc_logic_preferences>`"
-msgstr ""
+msgstr ":ref:`Logikvoreinstellungen <doc_logic_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:37
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
@@ -1407,7 +1412,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:42 ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:44
 msgid ":ref:`2D lights and shadows <doc_2d_lights_and_shadows>`"
@@ -1419,7 +1424,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:48 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:50
 #, fuzzy
@@ -1441,7 +1446,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:55
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "Physik"
 
 #: ../../docs/about/docs_changelog.rst:57
 msgid ":ref:`Ragdoll system <doc_ragdoll_system>`"
@@ -1545,7 +1550,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/tutorials/platform/index.rst:2
 msgid "Platform-specific"
-msgstr ""
+msgstr "Plattformspezifisches"
 
 #: ../../docs/about/docs_changelog.rst:95
 msgid ""

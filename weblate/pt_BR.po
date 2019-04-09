@@ -39,10 +39,13 @@
 # Gustavo Oliveira <gulopbr@gmail.com>, 2018.
 # Henrique Combochi <henrique.combochi@gmail.com>, 2018-2019.
 # Iago Barbosa da Silva <ErnestoGilgamesh@gmail.com>, 2018.
+# Ian Pontes Louzada <ianlouzad4@gmail.com>, 2019.
+# Ivan Camargo dos Santos <camargo65@gmail.com>, 2019.
 # Jessé Silva <starclock@gmail.com>, 2018.
 # João Victor Lima <victordevtb@outlook.com>, 2018.
 # Joaquim Ferreira <joaquimferreira1996@bol.com.br>, 2018.
 # Joel Landgraf Filho <joel.landgraf@gmail.com>, 2019.
+# José Leonardo Ayres Pereira <leonardo.ayres@gmail.com>, 2019.
 # Julio Yagami <juliohenrique31501234@hotmail.com>, 2018-2019.
 # ieleny filgueira <ielenyfilgueira@hotmail.com>, 2018.
 # Klaus Dellano <klaus.dd.sa@gmail.com>, 2018.
@@ -92,8 +95,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-28 09:54+0100\n"
-"PO-Revision-Date: 2019-03-19 15:15+0000\n"
-"Last-Translator: Accácio <raccacio@poli.ufrj.br>\n"
+"PO-Revision-Date: 2019-04-08 10:36+0000\n"
+"Last-Translator: Julio Yagami <juliohenrique31501234@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -1314,7 +1317,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr ""
+msgstr "Alterações da Documentação"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -1323,6 +1326,10 @@ msgid ""
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"Esta documentação está sendo continuamente melhorada. O lançamento da versão "
+"3.1 inclui muitos novos tutoriais, muitas correções e atualizações de "
+"antigos tutoriais, e muitas atualizações das referências de classes. Abaixo "
+"está a lista dos novos tutoriais adicionados desde a versão 3.0."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -1330,13 +1337,15 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"Este documento apenas contém novos tutoriais, portanto nem todas as mudanças "
+"são contempladas. Muitos tutoriais tem sido substancialmente atualizados mas "
+"não são refletidos neste documento."
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.0"
-msgstr ""
+msgstr "Novos tutoriais desde a versão 3.0"
 
 #: ../../docs/about/docs_changelog.rst:17
-#, fuzzy
 msgid "Step-by-step"
 msgstr "Passo a passo"
 
@@ -1346,9 +1355,8 @@ msgid ":ref:`Signals <doc_signals>`"
 msgstr ":ref:`Basis <class_Basis>`"
 
 #: ../../docs/about/docs_changelog.rst:20
-#, fuzzy
 msgid ":ref:`Exporting <doc_exporting>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`Exporting <doc_exporting>`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/getting_started/workflow/index.rst:2
@@ -1362,46 +1370,47 @@ msgstr "Boas práticas"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Introduction <doc_introduction_best_practices>`"
-msgstr ""
+msgstr ":ref: `Introdução <doc_introduction_best_practices>`"
 
 #: ../../docs/about/docs_changelog.rst:26
 msgid ":ref:`What are Godot classes <doc_what_are_godot_classes>`"
-msgstr ""
+msgstr ":ref: `O que são as classes Godot <doc_what_are_godot_classes>`"
 
 #: ../../docs/about/docs_changelog.rst:27
-#, fuzzy
 msgid ":ref:`Scene organization <doc_scene_organization>`"
-msgstr ":ref:`Canalização de Animações <doc_animations>`"
+msgstr ":ref:`Organização de cenas <doc_scene_organization>`"
 
 #: ../../docs/about/docs_changelog.rst:28
 msgid ":ref:`Scenes versus scripts <doc_scenes_versus_scripts>`"
-msgstr ""
+msgstr ":ref: `Cenas versus Scripts <doc_scenes_versus_scripts>`"
 
 #: ../../docs/about/docs_changelog.rst:29
 msgid ""
 ":ref:`Autoloads versus internal nodes <doc_autoloads_versus_internal_nodes>`"
 msgstr ""
+":ref:`Autoloads versus nós internos <doc_autoloads_versus_internal_nodes>`"
 
 #: ../../docs/about/docs_changelog.rst:30
 msgid ":ref:`Node alternatives <doc_node_alternatives>`"
-msgstr ""
+msgstr ":ref:`Alternativa de nós <doc_node_alternatives>`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`Godot interfaces <doc_godot_interfaces>`"
-msgstr ""
+msgstr ":ref:`Interfaces Godot <doc_godot_interfaces>`"
 
 #: ../../docs/about/docs_changelog.rst:32
-#, fuzzy
 msgid ":ref:`Godot notifications <doc_godot_notifications>`"
-msgstr ":ref:`Canalização de Animações <doc_animations>`"
+msgstr ":ref:`Notificação Godot <doc_animations>`"
 
 #: ../../docs/about/docs_changelog.rst:33
+#, fuzzy
 msgid ":ref:`Data preferences <doc_data_preferences>`"
-msgstr ""
+msgstr ":ref:`Preferências de dados <doc_data_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:34
+#, fuzzy
 msgid ":ref:`Logic preferences <doc_logic_preferences>`"
-msgstr ""
+msgstr ":ref:`Preferências de lógica <doc_logic_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:37
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
@@ -1416,20 +1425,24 @@ msgid ":ref:`Typed GDscript <doc_gdscript_static_typing>`"
 msgstr ":ref:`Embutido <doc_gdscript_builtin_types>`"
 
 #: ../../docs/about/docs_changelog.rst:42 ../../docs/tutorials/2d/index.rst:2
+#, fuzzy
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:44
+#, fuzzy
 msgid ":ref:`2D lights and shadows <doc_2d_lights_and_shadows>`"
-msgstr ""
+msgstr ":ref:`luzes 2D e sombras <doc_2d_lights_and_shadows>`"
 
 #: ../../docs/about/docs_changelog.rst:45
+#, fuzzy
 msgid ":ref:`2D meshes <doc_2d_meshes>`"
-msgstr ""
+msgstr ":ref:`malhas 2D<doc_2d_meshes>`"
 
 #: ../../docs/about/docs_changelog.rst:48 ../../docs/tutorials/3d/index.rst:2
+#, fuzzy
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:50
 #, fuzzy
@@ -1444,10 +1457,13 @@ msgid ""
 msgstr "Animar a perda de vida com o nó Tween"
 
 #: ../../docs/about/docs_changelog.rst:52
+#, fuzzy
 msgid ""
 ":ref:`Controlling thousands of fish with Particles "
 "<doc_controlling_thousands_of_fish>`"
 msgstr ""
+":ref:`Controlando milhares de peixes com Partículas "
+"<doc_controlling_thousands_of_fish>`"
 
 #: ../../docs/about/docs_changelog.rst:55
 #: ../../docs/tutorials/physics/index.rst:2
@@ -1455,12 +1471,14 @@ msgid "Physics"
 msgstr "Física"
 
 #: ../../docs/about/docs_changelog.rst:57
+#, fuzzy
 msgid ":ref:`Ragdoll system <doc_ragdoll_system>`"
-msgstr ""
+msgstr ":ref:`Sistema Ragdoll<doc_ragdoll_system>`"
 
 #: ../../docs/about/docs_changelog.rst:58
+#, fuzzy
 msgid ":ref:`Softbody <doc_soft_body>`"
-msgstr ""
+msgstr ":ref:`Softbody <doc_soft_body>`"
 
 #: ../../docs/about/docs_changelog.rst:61
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:2
@@ -1471,8 +1489,9 @@ msgid "Animation"
 msgstr "Animação"
 
 #: ../../docs/about/docs_changelog.rst:63
+#, fuzzy
 msgid ":ref:`2D skeletons <doc_2d_skeletons>`"
-msgstr ""
+msgstr ":ref:`Esqueletos 2D<doc_2d_skeletons>`"
 
 #: ../../docs/about/docs_changelog.rst:64
 #, fuzzy
@@ -1482,43 +1501,57 @@ msgstr ":ref:`Canalização de Animações <doc_animations>`"
 #: ../../docs/about/docs_changelog.rst:67
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
+#, fuzzy
 msgid "Viewports"
-msgstr ""
+msgstr "Viewports"
 
 #: ../../docs/about/docs_changelog.rst:69
+#, fuzzy
 msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
-msgstr ""
+msgstr ":ref:`Usando uma Viewport como uma textura <doc_viewport_as_texture>`"
 
 #: ../../docs/about/docs_changelog.rst:70
+#, fuzzy
 msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
-msgstr ""
+msgstr ":ref:`Pós-processamento personalizado <doc_custom_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:73
 #: ../../docs/tutorials/shading/index.rst:2
+#, fuzzy
 msgid "Shading"
-msgstr ""
+msgstr "Shading"
 
 #: ../../docs/about/docs_changelog.rst:75
+#, fuzzy
 msgid ""
 ":ref:`Intro to shaders: 2D and 3D water (7 video tutorials) "
 "<doc_intro_to_shaders_water_workshop>`"
 msgstr ""
+":ref:`Introdução aos shaders: água 2D e 3D (7 video-tutoriais) "
+"<doc_intro_to_shaders_water_workshop>`"
 
 #: ../../docs/about/docs_changelog.rst:76
+#, fuzzy
 msgid ""
 ":ref:`Migrating to Godot’s shading language "
 "<doc_migrating_to_godot_shader_language>`"
 msgstr ""
+":ref:`Migrando para a linguagem de shading da Godot "
+"<doc_migrating_to_godot_shader_language>`"
 
 #: ../../docs/about/docs_changelog.rst:77
+#, fuzzy
 msgid ""
 ":ref:`Vertex displacement with shaders "
 "<doc_vertex_displacement_with_shaders>`"
 msgstr ""
+":ref:`Vértice displacement com shaders "
+"<doc_vertex_displacement_with_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:78
+#, fuzzy
 msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
-msgstr ""
+msgstr ":ref:`Pós-processamento avançado <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:85
 #, fuzzy
@@ -1541,8 +1574,9 @@ msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
 msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:84
+#, fuzzy
 msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
-msgstr ""
+msgstr ":ref:`Shaders de CanvasItem <doc_canvas_item_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:85
 #, fuzzy
@@ -1550,22 +1584,27 @@ msgid ":ref:`Particles shaders <doc_particle_shader>`"
 msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:88 ../../docs/tutorials/vr/index.rst:2
+#, fuzzy
 msgid "VR"
-msgstr ""
+msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:90
+#, fuzzy
 msgid ":ref:`VR starter tutorial <doc_vr_starter_tutorial>`"
-msgstr ""
+msgstr ":ref:`Tutorial de iniciante de VR <doc_vr_starter_tutorial>`"
 
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/tutorials/platform/index.rst:2
+#, fuzzy
 msgid "Platform-specific"
-msgstr ""
+msgstr "Específico de plataforma"
 
 #: ../../docs/about/docs_changelog.rst:95
+#, fuzzy
 msgid ""
 ":ref:`Customizing the Web export HTML page <doc_customizing_html5_shell>`"
 msgstr ""
+":ref:`Personalizando a Web export HTML page <doc_customizing_html5_shell>`"
 
 #: ../../docs/about/docs_changelog.rst:98
 #: ../../docs/tutorials/threads/index.rst:2
@@ -1574,25 +1613,30 @@ msgid "Multi-threading"
 msgstr "String com múltiplas linhas"
 
 #: ../../docs/about/docs_changelog.rst:100
+#, fuzzy
 msgid ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
-msgstr ""
+msgstr ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:103
 #: ../../docs/tutorials/misc/index.rst:2
+#, fuzzy
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Diversos"
 
 #: ../../docs/about/docs_changelog.rst:105
+#, fuzzy
 msgid ":ref:`Fixing jitter and stutter <doc_jitter_stutter>`"
-msgstr ""
+msgstr ":ref:`Consertando jitter e stutter <doc_jitter_stutter>`"
 
 #: ../../docs/about/docs_changelog.rst:106
+#, fuzzy
 msgid ":ref:`Running code in the editor <doc_running_code_in_the_editor>`"
-msgstr ""
+msgstr ":ref:`Rodando código no editor <doc_running_code_in_the_editor>`"
 
 #: ../../docs/about/docs_changelog.rst:107
+#, fuzzy
 msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
-msgstr ""
+msgstr ":ref:`Mudar cenas manualmente <doc_change_scenes_manually>`"
 
 #: ../../docs/about/docs_changelog.rst:108
 #, fuzzy
@@ -1608,23 +1652,29 @@ msgstr "Diferenças gerais entre o C# e o GDScript"
 #: ../../docs/development/compiling/compiling_for_osx.rst:23
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 #: ../../docs/development/compiling/compiling_for_uwp.rst:24
+#, fuzzy
 msgid "Compiling"
-msgstr ""
+msgstr "Compilando"
 
 #: ../../docs/about/docs_changelog.rst:113
+#, fuzzy
 msgid ":ref:`Optimizing a build for size <doc_optimizing_for_size>`"
-msgstr ""
+msgstr ":ref:`Otimizando uma build por tamanho <doc_optimizing_for_size>`"
 
 #: ../../docs/about/docs_changelog.rst:114
+#, fuzzy
 msgid ""
 ":ref:`Compiling with script encryption key "
 "<doc_compiling_with_script_encryption_key>`"
 msgstr ""
+":ref:`Compilando com chave de encriptação de script "
+"<doc_compiling_with_script_encryption_key>`"
 
 #: ../../docs/about/docs_changelog.rst:117
 #: ../../docs/development/cpp/index.rst:2
+#, fuzzy
 msgid "Engine development"
-msgstr ""
+msgstr "Desenvolvimento de Engine"
 
 #: ../../docs/about/docs_changelog.rst:119
 #, fuzzy
@@ -1649,8 +1699,10 @@ msgid "Plugins"
 msgstr "Plugins"
 
 #: ../../docs/about/docs_changelog.rst:129
+#, fuzzy
 msgid ":ref:`Making main screen plugins <doc_making_main_screen_plugins>`"
 msgstr ""
+":ref:`Fazendo plugins da cena principal <doc_making_main_screen_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:130
 #, fuzzy
@@ -2585,16 +2637,22 @@ msgid "Editing instances"
 msgstr "Editando instâncias"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
+#, fuzzy
 msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
+"Abra a cena ``Bola`` e adicione uma ``PhysicsMaterial`` clicando na seta "
+"abaixo e selecionando \"Novo PhysicsMaterial\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
+#, fuzzy
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr ""
+"Então, expanda o material clicando-o, e defina a propriedade ``Bounce`` para "
+"``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
 #, fuzzy
@@ -5695,6 +5753,7 @@ msgstr ""
 "e-mover."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
+#, fuzzy
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -5702,6 +5761,11 @@ msgid ""
 "input, you can do that in the \"Project Settings\" under *Input Devices* and "
 "*Pointing*"
 msgstr ""
+"Por padrão Godot emula entrada de mouse apartir da entrada de toque. Quer "
+"dizer, se tudo é programado para acontecer em um evento de mouse, o toque "
+"vai ativar da mesma forma. Se você desejar desativar isso por alguma razão, "
+"ou emular toque apartir da entrada de mouse, você pode fazer isso nas "
+"\"Configurações do Projeto\" abaixo *Dispositivos de Entrada* e *Apontando*"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
 #, fuzzy
@@ -11796,12 +11860,17 @@ msgstr ""
 "e a substitui pela cena requisitada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
+#, fuzzy
 msgid ""
 "Using :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, the "
 "second function will only run once all code from the current scene has "
 "completed. Thus, the current scene will not be removed while it is still "
 "being used (i.e. its code is still running)."
 msgstr ""
+"Usando :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, a "
+"segunda função irá somente rodar uma vez que todo o código dessa cena has "
+"completed. Thus, the current scene will not be removed while it is still "
+"being used (i.e. its code is still running)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 #, fuzzy
@@ -20334,12 +20403,17 @@ msgstr ""
 "tipo diferente e use a conversão direta caso contrário."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:8
+#, fuzzy
 msgid ""
 "Since Godot has no restrictions on project structure or filesystem usage, "
 "organizing files when learning the engine can seem challenging. This "
 "tutorial suggests a workflow which should be a good starting point. We will "
 "also cover using version control with Godot."
 msgstr ""
+"Uma vez que Godot não tem nenhuma restrição na estrutura do projeto ou uso "
+"do sistema de arquivos, organizar arquivos enquanto aprendendo a engine pode "
+"parecer desafiador. This tutorial suggests a workflow which should be a good "
+"starting point. We will also cover using version control with Godot."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:14
 msgid "Organization"
@@ -21055,11 +21129,15 @@ msgid "**2. Check mute status of NLA tracks**"
 msgstr "**2. Verificar o status 'mudo' das faixas NLA **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
+#, fuzzy
 msgid ""
 "An NLA track can be ``mute`` or ``unmute``, the exporter will export all the "
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
+"An NLA track can be ``mute`` or ``unmute``, the exporter will export all the "
+"``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
+"tracks into every action (including the action action) being exported."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 #, fuzzy
@@ -21967,8 +22045,9 @@ msgstr ""
 "reverberação adicionada."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:51
+#, fuzzy
 msgid "Trimming"
-msgstr ""
+msgstr "Trimming"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:53
 #, fuzzy
@@ -21989,46 +22068,67 @@ msgstr ""
 "A importação de WAV com a opção de corte ativada resolve esse problema."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:62
+#, fuzzy
 msgid "Looping"
-msgstr ""
+msgstr "Looping"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:64
+#, fuzzy
 msgid ""
 "Godot supports looping in the samples (tools such as Sound Forge or Audition "
 "can add loop points to wav files). This is useful for sound effects, such as "
 "engines, machine guns etc. Ping-pong looping is also supported."
 msgstr ""
+"Godot supports looping in the samples (tools such as Sound Forge or Audition "
+"can add loop points to wav files). This is useful for sound effects, such as "
+"engines, machine guns etc. Ping-pong looping is also supported."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:69
+#, fuzzy
 msgid ""
 "As an alternative, the import screen has a \"loop\" option that enables "
 "looping for the entire sample when importing."
 msgstr ""
+"Como uma alternativa, a cena de importação tem uma opção de \"loop\" que "
+"ativa looping para o entire sample when importing."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
+#, fuzzy
 msgid "Importing translations"
-msgstr ""
+msgstr "Importando traduções"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:7
+#, fuzzy
 msgid "Games and internationalization"
-msgstr ""
+msgstr "Jogos e internacionalização"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
+#, fuzzy
 msgid ""
 "The world is full of different markets and cultures and, to maximize "
 "profits™, nowadays games are released in several languages. To solve this, "
 "internationalized text must be supported in any modern game engine."
 msgstr ""
+"O mundo é cheio de diferentes mercados e culturas e, para maximizar lucros™, "
+"hoje em dia os jogos são lançados em várias línguas. Para resolver isso, "
+"texto internacionalizado precisa ser suportado em qualquer game engine "
+"moderna."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:14
+#, fuzzy
 msgid ""
 "In regular desktop or mobile applications, internationalized text is usually "
 "located in resource files (or .po files for GNU stuff). Games, however, can "
 "use several orders of magnitude more text than applications, so they must "
 "support efficient methods for dealing with loads of multilingual text."
 msgstr ""
+"In regular desktop or mobile applications, internationalized text is usually "
+"located in resource files (or .po files for GNU stuff). Games, however, can "
+"use several orders of magnitude more text than applications, so they must "
+"support efficient methods for dealing with loads of multilingual text."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
+#, fuzzy
 msgid ""
 "There are two approaches to generate multilingual language games and "
 "applications. Both are based on a key:value system. The first is to use one "
@@ -22037,24 +22137,38 @@ msgid ""
 "if a game is released first in English, later in other languages, but a "
 "complete nightmare if working with many languages at the same time."
 msgstr ""
+"There are two approaches to generate multilingual language games and "
+"applications. Both are based on a key:value system. The first is to use one "
+"of the languages as the key (usually English), the second is to use a "
+"specific identifier. The first approach is probably easier for development "
+"if a game is released first in English, later in other languages, but a "
+"complete nightmare if working with many languages at the same time."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:28
+#, fuzzy
 msgid ""
 "In general, games use the second approach and a unique ID is used for each "
 "string. This allows you to revise the text while it is being translated to "
 "other languages. The unique ID can be a number, a string, or a string with a "
 "number (it's just a unique string anyway)."
 msgstr ""
+"In general, games use the second approach and a unique ID is used for each "
+"string. This allows you to revise the text while it is being translated to "
+"other languages. The unique ID can be a number, a string, or a string with a "
+"number (it's just a unique string anyway)."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
+#, fuzzy
 msgid "Translators also usually prefer to work with spreadsheets."
-msgstr ""
+msgstr "Tradutores também preferem trabalhar com planilhas."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:36
+#, fuzzy
 msgid "Translation format"
-msgstr ""
+msgstr "Formato de tradução"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
+#, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
 "has a special importer that can read CSV files. All spreadsheet editors (be "
@@ -22063,113 +22177,144 @@ msgid ""
 "arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
 "as follows:"
 msgstr ""
+"To complete the picture and allow efficient support for translations, Godot "
+"has a special importer that can read CSV files. All spreadsheet editors (be "
+"it Libreoffice, Microsoft Office, Google Docs, etc.) can export to this "
+"format, so the only requirement is that the files have a special "
+"arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
+"as follows:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
+#, fuzzy
 msgid "<lang1>"
-msgstr ""
+msgstr "<lang1>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
+#, fuzzy
 msgid "<lang2>"
-msgstr ""
+msgstr "<lang2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
+#, fuzzy
 msgid "<langN>"
-msgstr ""
+msgstr "<langN>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#, fuzzy
 msgid "KEY1"
-msgstr ""
+msgstr "KEY1"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:33
+#, fuzzy
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
+#, fuzzy
 msgid "KEY2"
-msgstr ""
+msgstr "KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
+#, fuzzy
 msgid "KEYN"
-msgstr ""
+msgstr "KEYN"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
+#, fuzzy
 msgid ""
 "The \"lang\" tags must represent a language, which must be one of the :ref:"
 "`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags must "
 "be unique and represent a string universally (they are usually in uppercase, "
 "to differentiate from other strings). Here's an example:"
 msgstr ""
+"As tags \"lang\" precisam representar uma língua, que precisa ser uma dos :"
+"ref:`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags "
+"must be unique and represent a string universally (they are usually in "
+"uppercase, to differentiate from other strings). Here's an example:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 #: ../../docs/tutorials/i18n/locales.rst:352
+#, fuzzy
 msgid "id"
-msgstr ""
+msgstr "id"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 #: ../../docs/tutorials/i18n/locales.rst:178
+#, fuzzy
 msgid "en"
-msgstr ""
+msgstr "en"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 #: ../../docs/tutorials/i18n/locales.rst:220
+#, fuzzy
 msgid "es"
-msgstr ""
+msgstr "es"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 #: ../../docs/tutorials/i18n/locales.rst:372
+#, fuzzy
 msgid "ja"
-msgstr ""
+msgstr "ja"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "GREET"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+#, fuzzy
 msgid "Hello, friend!"
-msgstr ""
+msgstr "Olá, amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+#, fuzzy
 msgid "Hola, Amigo!"
-msgstr ""
+msgstr "Hola, Amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+#, fuzzy
 msgid "こんにちは"
-msgstr ""
+msgstr "こんにちは"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "ASK"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+#, fuzzy
 msgid "How are you?"
-msgstr ""
+msgstr "Como vai você?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+#, fuzzy
 msgid "Cómo está?"
-msgstr ""
+msgstr "Cómo está?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+#, fuzzy
 msgid "元気ですか"
-msgstr ""
+msgstr "元気ですか"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "BYE"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#, fuzzy
 msgid "Good Bye"
-msgstr ""
+msgstr "Adeus"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#, fuzzy
 msgid "Adiós"
-msgstr ""
+msgstr "Adiós"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#, fuzzy
 msgid "さようなら"
-msgstr ""
+msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
 #, fuzzy
@@ -22177,17 +22322,24 @@ msgid "CSV importer"
 msgstr "Por que importar?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#, fuzzy
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
+"Godot vai tratar arquivos CSV como traduções por padrão. Ele vai importá-los "
+"e gerar um ou mais arquivos de recurso de tradução compressas próximas a ele."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
+#, fuzzy
 msgid ""
 "Importing will also add the translation to the list of translations to load "
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
+"Importing will also add the translation to the list of translations to load "
+"when the game runs, specified in project.godot (or the project settings). "
+"Godot allows loading and removing translations at runtime as well."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:4
 #, fuzzy
@@ -22200,29 +22352,39 @@ msgid "Godot scene importer"
 msgstr "Godot-Blender-Exporter"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:9
+#, fuzzy
 msgid ""
 "When dealing with 3D assets, Godot has a flexible and configurable importer."
 msgstr ""
+"Ao lidar com assets 3D, Godot tem um flexível e configurável importador."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:11
+#, fuzzy
 msgid ""
 "Godot works with *scenes*. This means that the entire scene being worked on "
 "in your favorite 3D DCC will be transferred as close as possible."
 msgstr ""
+"Godot trabalha com *cenas*. Isso significa que a cena inteira sendo "
+"trabalhada na sua favorita 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
+#, fuzzy
 msgid "Godot supports the following 3D *scene file fomats*:"
-msgstr ""
+msgstr "Godot suporta os seguintes *formatos de arquivo de cena* 3D:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
+#, fuzzy
 msgid "DAE (COLLADA), which is currently the most mature workflow."
-msgstr ""
+msgstr "DAE (COLLADA), which is currently the most mature workflow."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
+#, fuzzy
 msgid ""
 "GLTF 2.0. Both text and binary formats are supported. Godot has full support "
 "for it, but the format is new and gaining traction."
 msgstr ""
+"GLTF 2.0. Both text and binary formats are supported. Godot has full support "
+"for it, but the format is new and gaining traction."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
 msgid ""

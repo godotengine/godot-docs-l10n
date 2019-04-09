@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alejandro Álvarez Monllor <alvarezmonllor@gmail.com>, 2018.
+# roger <616steam@gmail.com>, 2019.
 # Roger Blanco Ribera <roger.blancoribera@gmail.com>, 2018.
 #
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-28 09:54+0100\n"
-"PO-Revision-Date: 2018-09-12 03:14+0000\n"
-"Last-Translator: Roger Blanco Ribera <roger.blancoribera@gmail.com>\n"
+"PO-Revision-Date: 2019-03-30 22:57+0000\n"
+"Last-Translator: roger <616steam@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ca/>\n"
 "Language: ca\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -30,6 +31,9 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"La documentació de Godot està disponible en diversos llenguatges i versions. "
+"Expandiu el panell \"Read the Docs\" al peu de la barra lateral per a veure "
+"la llista."
 
 #: ../../docs/index.rst:10
 #, fuzzy
@@ -262,7 +266,6 @@ msgstr ""
 "resum ràpid sobre el motor Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -275,7 +278,7 @@ msgstr ""
 "la creació jocs 2D i 3D, a través d'interfície unificada.Proporciona un "
 "ampli conjunt d'eines per a poder centrar-se en el procés creatiu sense "
 "haver d'anar reinventant la roda a cada pas. En un simple clic, es poden "
-"exportar els jocs vers diverese plataformes incloent-hi els principals "
+"exportar els jocs vers diverses plataformes incloent-hi els principals "
 "plataformes d'escriptori (Linux, macOS, Windows) així com per a mòbils "
 "(Android, iOS) i web (HTML5)."
 
@@ -482,6 +485,8 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"Ets lliure de descarregar i utilitzar Godot per qualsevol propòsit: "
+"personal, sense anim de lucre, comercial i de qualsevol altra forma;"
 
 #: ../../docs/about/faq.rst:14
 #, fuzzy
@@ -597,18 +602,18 @@ msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"Alguns usuaris han reeixit muntar Godot en sistemes amb Linux basats en "
+"ARM , com el Raspberry Pi."
 
 #: ../../docs/about/faq.rst:54
-#, fuzzy
 msgid ""
 "Additionally, there is some unofficial third-party work being done on "
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"Alguns usuaris han reeixit muntar Godot en sistemes amb Linux basats en "
-"ARM , com el Raspberry Pi.  Existeixen també, projectes no oficials per "
-"portar el Godot a diverses consoles. Res d'això però, s'inclou per defecte "
-"en els scripts de muntatge o en les plantilles d'exportació."
+"Existeixen també, projectes no oficials per portar el Godot a diverses "
+"consoles. Res d'això però, s'inclou per defecte en els scripts de muntatge o "
+"en les plantilles d'exportació."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
@@ -670,7 +675,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "Què es GDScript i per què l'hauria d'utilitzar?"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -690,6 +695,10 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"Hi ha diverses raons per utilitzar GDScript--especialment en prototipatge, "
+"en les etapes alpha/beta del teu projecte, o si no estàs creant el pròxim "
+"títol AAA--però la raó mes destacada es la general **reducció de la "
+"complexitat**"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -736,7 +745,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "Quines van ser les motivacions per a crear GDScript?"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
@@ -804,13 +813,15 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "Quins tipus de formats per a models 3D suporta Godot?"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
+"Godot suporta Collada mitjançant el exportador `OpenCollada <https://github."
+"com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_(Maya, 3DSMax)."
 
 #: ../../docs/about/faq.rst:149
 msgid ""
@@ -820,7 +831,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "A partir de Godot 3.0, glTF es suportat."
 
 #: ../../docs/about/faq.rst:153
 #, fuzzy
@@ -13543,7 +13554,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Acció"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -47301,7 +47312,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:184
 msgid "Class"
-msgstr ""
+msgstr "Classe"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:184
 msgid "Operator"

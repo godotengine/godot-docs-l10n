@@ -5,14 +5,15 @@
 # Árpád Horváth <horvatha4@googlemail.com>, 2018.
 # Gabor Csordas <gaborcsordas@yahoo.com>, 2018.
 # JanosHorak <lyanos.horak@gmail.com>, 2019.
+# Lilla Ozgyin <lityupix@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-28 09:54+0100\n"
-"PO-Revision-Date: 2019-01-31 09:35+0000\n"
-"Last-Translator: JanosHorak <lyanos.horak@gmail.com>\n"
+"PO-Revision-Date: 2019-04-09 09:31+0000\n"
+"Last-Translator: Lilla Ozgyin <lityupix@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/hu/>\n"
 "Language: hu\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -31,6 +32,9 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"A Godot dokumentációja többféle nyelven és verzióban is elérhető. A lista "
+"megtekintéséhez nyissa le a az oldalsáv alján megjelenő \"Dokumentumok "
+"megtekintése\" panelt."
 
 #: ../../docs/index.rst:10
 #, fuzzy
@@ -48,6 +52,10 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
+"Jelen dokumentáció az 'eredeti, angol nyelvű forrásdokumentum <https://docs."
+"godotengine.org/en/latest>`_ közösségi tagok által, a 'Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs>`_ fordításkezelő "
+"rendszer keretein belül lefordított változata."
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -56,6 +64,10 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
+"A fordítások teljességétől függően találkozhat olyan paragrafusokkal illetve "
+"teljes oldalakkal, amelyek továbbra is angol nyelven jelennek meg. A Weblate-"
+"en keresztül segítséget nyújthat a fordítói közösségnek új fordítások "
+"elkészítésével, esetleg már létező fordítások áttekintésével."
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -63,6 +75,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"Jelenleg a fordítások csak a \"legújabb\" (fejlesztési) ágon érhetőek el, "
+"mindazonáltal alkalmasnak kell lenniük a stabil Godot kiadások használatának "
+"ismertetésére is."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -72,11 +87,11 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
-"Üdvözöljük a hivatalos Godot Engine dokumentációjánál, ami egy ingyenes, "
-"szabad, nyílt forráskódú közösség-központú 2D-s, 3D-s játék motor! Ha Önnnek "
-"új ez a dokumentáció akkor javasoljuk, hogy olvassa el a :ref:`introduction "
-"page <doc_about_intro>` részt, hogy áttekintést kapjon arról, hogy mi is ez "
-"a dokumentáció."
+"Üdvözöljük a hivatalos Godot Engine dokumentációjában. A Godot egy ingyenes, "
+"nyílt forráskódú, közösségi alapú 2D-s és 3D-s játék motor! Amennyiben Ön "
+"most találkozik először ezzel a dokumentációval, akkor javasoljuk, hogy "
+"olvassa el a :ref:`introduction page <doc_about_intro>` oldalt, hogy "
+"áttekintést kaphasson a dokumentáció tartalmáról."
 
 #: ../../docs/index.rst:34
 msgid ""
@@ -228,11 +243,11 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Üdvözöljük a hivatalos Godot Engine dokumentációjánál, ami egy ingyenes, "
-"szabad, nyílt forráskódú közösség-központú 2D-s, 3D-s játék motor! E mögött "
-"a mondat mögött egy erőteljes, mégis felhasználóbarát eszközt fog találni, "
-"amely segítségével fejleszthet mindenféle játékot, minden platformra, "
-"bámiféle használati megszorítás nélkül."
+"Üdvözöljük a Godot Engine hivatalos dokumentációjában. A Godot egy ingyenes, "
+"nyílt forráskódú közösség-alapú 2D-s és 3D-s játék motor! E név mögött egy "
+"erőteljes, mégis felhasználóbarát eszközt fog találni, amely segítségével "
+"bármely típusú játékot fejleszthet bármely platformra, bámiféle használati "
+"megszorítás nélkül."
 
 #: ../../docs/about/introduction.rst:16
 #, fuzzy
@@ -529,29 +544,31 @@ msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
+"Lásd még a `Godot weboldal licensz oldalát <https://godotengine.org/"
+"license>`_."
 
 #: ../../docs/about/faq.rst:31
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "Milyen platformokat támogat a Godot?"
 
 #: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**Az editornak:**"
 
 #: ../../docs/about/faq.rst:35
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:39
 #: ../../docs/tutorials/misc/jitter_stutter.rst:53
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 #: ../../docs/tutorials/misc/jitter_stutter.rst:78
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:39
 msgid "**For exporting your games:**"

@@ -3,8 +3,9 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Adrian FHS <adrianfhs014@gmail.com>, 2018.
+# Alec Marsicovetere <alecm.mobile@gmail.com>, 2019.
 # Alvaro Antonio Baena Rubio <aabaenar@gmail.com>, 2018.
-# Api Api dev <apidev1@hotmail.com>, 2018.
+# Api Api dev <apidev1@hotmail.com>, 2018-2019.
 # Gato Wormius <gatowormius@gmail.com>, 2018.
 # jacobopus <chess.coach.ar@gmail.com>, 2018.
 # Javier Elias Barrón López <isc.jbarron@gmail.com>, 2018.
@@ -24,9 +25,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-28 09:54+0100\n"
-"PO-Revision-Date: 2019-01-20 08:54+0000\n"
-"Last-Translator: Josue Nicolas Hernandez Reyes <JosueNicolas27603@gmail."
-"com>\n"
+"PO-Revision-Date: 2019-04-08 10:36+0000\n"
+"Last-Translator: Api Api dev <apidev1@hotmail.com>\n"
 "Language-Team: Spanish (Mexico) <https://hosted.weblate.org/projects/godot-"
 "engine/godot-docs/es_MX/>\n"
 "Language: es_MX\n"
@@ -34,7 +34,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.4-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -45,17 +45,19 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"La documentación de Godot esta disponible en diferentes lenguajes y "
+"distintas versiones. Expande la opción \"Leer Documentos\" en el panel al "
+"final de la barra lateral para ver la lista."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the development (master) branch. Looking for "
 "the documentation of the current **stable** branch? `Have a look here "
 "<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
-"Esta es la documentación para la rama inestable (principal). ¿Está buscando "
-"la documentación de la rama **estable** actual? Mira aquí <http://docs."
-"godotengine.org/en/stable>`_."
+"Esta es la documentación para la rama de desarrollo (principal). ¿Buscas la "
+"documentación mas actual de rama estable? Mira aquí <http://docs.godotengine."
+"org/en/stable>`_."
 
 #: ../../docs/index.rst:16
 msgid ""
@@ -63,6 +65,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
+"Esta documentación se traduce del `original en inglés <https://docs."
+"godotengine.org/en/latest>` _ por miembros de la comunidad en `Weblate "
+"<https://hosted.weblate.org/projects/godot-engine/ Godot-docs>`_."
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -71,6 +76,10 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
+"Según el nivel de finalización del esfuerzo de traducción, puede encontrar "
+"párrafos o páginas enteras que todavía están en inglés. Puede ayudar a la "
+"comunidad proporcionando nuevas traducciones o revisando las existentes en "
+"Weblate."
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -78,6 +87,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"Por el momento, las traducciones localizadas solo están disponibles para la "
+"rama \"más reciente\" (desarrollo), pero deben ser adecuadas para aprender a "
+"usar las versiones estables de Godot."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -276,7 +288,6 @@ msgstr ""
 "explicación breve acerca de este."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -324,7 +335,6 @@ msgid "About the documentation"
 msgstr "Sobre la documentación"
 
 #: ../../docs/about/introduction.rst:48
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -333,13 +343,12 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"Esta documentación está continuamente escrita, corregida, editada y renovada "
-"por miembros de la comunidad Godot Engine. Se edita a través de archivos de "
-"texto en `reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_ "
-"mediante lenguaje de marcado y luego compilado en un sitio web estático / y "
-"el documento sin conexión usando la fuente abierta `Sphinx <http://www."
-"sphinx-doc.org>`_ y las herramientas `ReadTheDocs <https://readthedocs.org/"
-">`_."
+"Esta documentación está continuamente siendo escrita, corregida, editada y "
+"renovada por miembros de la comunidad Godot Engine. Se edita a través de "
+"archivos de texto en `reStructuredText <http://www.sphinx-doc.org/en/stable/"
+"rest.html>`_ mediante lenguaje de marcado y luego compilado en un sitio web "
+"estático sin conexión usando la fuente abierta `Sphinx <http://www.sphinx-"
+"doc.org>`_ y las herramientas `ReadTheDocs <https://readthedocs.org/>`_."
 
 #: ../../docs/about/introduction.rst:55
 msgid ""
@@ -405,13 +414,12 @@ msgstr ""
 "usuarios nuevos."
 
 #: ../../docs/about/introduction.rst:80
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
 "La sección :ref:`sec-tutorials`por otra parte, se puede leer según sea "
-"necesario, en cualquier orden. Contiene muchas funciones específicas "
+"necesario, en cualquier orden. Contiene muchas funciones específicas, "
 "tutoriales y documentaciones."
 
 #: ../../docs/about/introduction.rst:82
@@ -425,7 +433,6 @@ msgstr ""
 "del motor, el desarrollo de módulos C ++ o plugins de edición."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -437,7 +444,7 @@ msgstr ""
 "contribución al desarrollo del motor y la vida de su comunidad, e.g. cómo "
 "reportar errores, ayuda con la documentación, etc. También apunta a varios "
 "canales de la comunidad como IRC y Discord y contiene una lista de "
-"tutoriales de terceros recomendados fuera de esta documentación."
+"tutoriales recomendados de terceros fuera de esta documentación."
 
 #: ../../docs/about/introduction.rst:90
 msgid ""
@@ -707,7 +714,6 @@ msgid "What is GDScript and why should I use it?"
 msgstr "¿Qué es GDScript y por qué debería usarlo?"
 
 #: ../../docs/about/faq.rst:90
-#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -719,11 +725,11 @@ msgid ""
 msgstr ""
 "GDScript es el lenguaje de scripting integrado en Godot. Fue construido "
 "desde cero para maximizar el potencial de Godot con la mínima cantidad de "
-"código, permitiendo a desarrolladores tanto novatos como expertos aprovechar "
+"código, permitiendo a desarrolladores tanto novatos y expertos aprovechar "
 "las fortalezas de Godot lo más rápido posible. Si usted alguna vez escribió "
 "algo en un lenguaje como Python, entonces se va a sentir como en casa. Para "
-"ejemplos, historia, y un panorama completo del poder que le ofrece GDScript, "
-"revise la `Guía de scripting con GDScript <gdscript_basics>`_."
+"ejemplos, su historia, y un panorama completo del poder que le ofrece "
+"GDScript, revise la :ref:`Guía de scripting con GDScript <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -902,12 +908,11 @@ msgstr ""
 "la pregunta de complementos arriba)"
 
 #: ../../docs/about/faq.rst:159
-#, fuzzy
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
-"¿Se admitirá [Insertar los SDK cerrados como PhysX, GameWorks, etc.] y serán "
-"apoyados en Godot?"
+"¿Serán apoyados en Godot [los SDK cerrados como FMOD, PhysX, GameWorks, "
+"etc.]?"
 
 #: ../../docs/about/faq.rst:161
 msgid ""
@@ -1251,7 +1256,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr ""
+msgstr "Documentación lista de cambios"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -1260,6 +1265,11 @@ msgid ""
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"La documentación se está mejorando continuamente. El lanzamiento de la "
+"versión 3.1 incluye muchos tutoriales nuevos, muchas correcciones y "
+"actualizaciones para tutoriales antiguos y muchas actualizaciones a la "
+"referencia de clase. A continuación se muestra una lista de los nuevos "
+"tutoriales agregados desde la versión 3.0."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -1267,48 +1277,51 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"Este documento solo contiene nuevos tutoriales, por lo que no se reflejan "
+"todos los cambios, muchos tutoriales se han actualizado sustancialmente pero "
+"no se reflejan en este documento."
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.0"
-msgstr ""
+msgstr "Nuevos tutoriales desde la versión 3.0"
 
 #: ../../docs/about/docs_changelog.rst:17
-#, fuzzy
 msgid "Step-by-step"
 msgstr "Paso a paso"
 
 #: ../../docs/about/docs_changelog.rst:19
 msgid ":ref:`Signals <doc_signals>`"
-msgstr ""
+msgstr "referencia :ref: `Señales <doc_signals>`"
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`Exporting <doc_exporting>`"
-msgstr ""
+msgstr "Referencia :ref:`Exportando <doc_exporting>`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "Flujo de trabajo del proyecto"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid "Best Practices:"
-msgstr ""
+msgstr "Mejores prácticas:"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Introduction <doc_introduction_best_practices>`"
-msgstr ""
+msgstr "Referencia :ref: `Introducción <doc_introduction_best_practices>`"
 
 #: ../../docs/about/docs_changelog.rst:26
 msgid ":ref:`What are Godot classes <doc_what_are_godot_classes>`"
 msgstr ""
+"Referencia :ref: `Qué son las clases de Godot <doc_what_are_godot_classes>`"
 
 #: ../../docs/about/docs_changelog.rst:27
 msgid ":ref:`Scene organization <doc_scene_organization>`"
-msgstr ""
+msgstr "Referencia :ref: `Organización de la escena <doc_scene_organization>`"
 
 #: ../../docs/about/docs_changelog.rst:28
 msgid ":ref:`Scenes versus scripts <doc_scenes_versus_scripts>`"
-msgstr ""
+msgstr "Referencia :ref: `Escenas y scripts <doc_scenes_versus_scripts>`"
 
 #: ../../docs/about/docs_changelog.rst:29
 msgid ""

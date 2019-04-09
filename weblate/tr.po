@@ -2,8 +2,10 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# 507GamerLab <tyfnyakut@outlook.com>, 2019.
 # alkahesto <gs_dogan05@hotmail.com>, 2019.
 # Altan Demirkilic <demirkilic@gmail.com>, 2018.
+# Burkan Boğaz <bogazburkan@gmail.com>, 2019.
 # Can Delibaş <candelibas96@gmail.com>, 2018.
 # Ceyhun Sezenoglu <sezenoglu@gmail.com>, 2018.
 # ege1212 <owlphp@gmail.com>, 2019.
@@ -25,8 +27,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-03-28 09:54+0100\n"
-"PO-Revision-Date: 2019-03-18 21:30+0000\n"
-"Last-Translator: Mertcan Duman <mertcan.dmn16@gmail.com>\n"
+"PO-Revision-Date: 2019-04-08 10:36+0000\n"
+"Last-Translator: Burkan Boğaz <bogazburkan@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -377,6 +379,9 @@ msgid ""
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
+"Bu dokümantasyon, etkileyici bir şekilde dengesiz bir içerik dağılımına "
+"sahip beş bölüm halinde düzenlenmiştir - ancak ayrılma şekli nispeten "
+"sezgisel olmalıdır:"
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -443,6 +448,11 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
+"Son olarak: ref: `sec-class-ref`, doğrudan motorun script editöründe de "
+"bulunan Godot API'sinin dokümantasyonu. Ana kaynak havuzundaki bir dosyadan "
+"otomatik olarak oluşturulur, bu nedenle dokümantasyonun oluşturulan "
+"dosyalarının değiştirilmesi amaçlanmamıştır. Ayrıntılar için bakınız: ref: "
+"`doc_updating_the_class_reference`."
 
 #: ../../docs/about/introduction.rst:96
 #, fuzzy
@@ -601,12 +611,16 @@ msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
+"Hem 32 hem de 64 bit ikili dosyalar mantıklı olduğu yerlerde desteklenir, 64 "
+"ise varsayılan değerdir."
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"Bazı kullanıcılar, Raspberry Pi gibi Linux kullanan ARM tabanlı sistemlerde "
+"Godot'u başarıyla geliştirdiğini ve kullandığını da bildirmiştir."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
@@ -614,12 +628,18 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
+"Ek olarak, bazı konsollar için inşa çalışmaları üzerine resmi olmayan bir "
+"üçüncü taraf çalışması yapıldı. Ancak, bunların hiçbiri şu anda varsayılan "
+"derleme komut dosyalarına veya dışa aktarma şablonlarına dahil edilmez."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"Bununla ilgili daha fazla bilgi için, bakınız bölüm: ref: `export <toc-learn-"
+"workflow-export>` ve: ref: `Godot 'u kendiniz derleyin <toc-devel-"
+"compiling>`."
 
 #: ../../docs/about/faq.rst:62
 msgid "Which programming languages are supported in Godot?"
@@ -645,6 +665,12 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"Eğer genel olarak Godot veya oyun geliştirmeye yeni başlıyorsanız, GDScript, "
+"Godot’a özgü olduğu için öğrenmek ve kullanmak için önerilen dildir. Betik "
+"dilleri uzun vadede alt seviye dillerden daha az performans gösterme "
+"eğilimindeyken, prototip oluşturma, Minimum Uygulanabilir Ürünler (MVP'ler) "
+"geliştirme ve Pazara Kadar Süre (TTM) 'ye odaklanmak için GDScript hızlı, "
+"kolay ve Oyunlarınızı geliştirmek için yetenekli bir yol."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -656,6 +682,13 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"C # desteğinin hala nispeten yeni olduğunu ve yol boyunca bazı sorunlarla "
+"karşılaşabileceğinizi unutmayın. Dost canlısı ve çalışkan gelişim "
+"topluluğumuz ortaya çıktıkça yeni sorunlarla baş etmeye her zaman hazır "
+"olacağız, ancak bu açık kaynak kodlu bir proje olduğundan, öncelikle "
+"kendinize gerekli özeni göstermenizi öneririz. Açık konulardaki tartışmaları "
+"araştırmak <https://github.com/godotengine/godot/issues> `_ adresinde sorun "
+"gidermeye başlamak için harika bir yoldur."
 
 #: ../../docs/about/faq.rst:82
 msgid ""
@@ -665,10 +698,16 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"Yeni dillere gelince, GDNative / NativeScript / PluginScript özelliklerini "
+"kullanarak üçüncü şahıslar aracılığıyla desteklemek mümkündür. (Aşağıdaki "
+"eklentilerle ilgili soruya bakın.) Örneğin, Godot’un Python <https://github."
+"com/touilleMan/godot-python> `_ ve` Nim <https: //github.com/pragmagic/godot-"
+"nim>`_ adresinde gayrı resmi olarak bağlanması ile ilgili çalışmalar şu anda "
+"devam etmektedir. ."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "GDScript nedir ve neden kullanmalıyım?"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -680,6 +719,14 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"GDScript, Godot'un entegre betik dilidir. Hem acemi hem de uzman "
+"geliştiricilerin, Godot'un güçlü yanlarından mümkün olduğunca hızlı şekilde "
+"faydalanabilmelerini sağlamak için, Godot'un potansiyelini en az miktarda "
+"kodla en üst seviyeye çıkarmak için inşa edildi. Daha önce Python gibi bir "
+"dilde bir şey yazdıysanız, o zaman kendinizi evinizdeymiş gibi "
+"hissedeceksiniz. Örnekler, tarihçeler ve GDScript'in size sunduğu gücün tam "
+"bir incelemesi için, bakınız: ref: `GDScript komut dosyası kılavuzu "
+"<doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -688,6 +735,9 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"GDScript'i kullanmanın birkaç nedeni vardır - özellikle prototiplerken, "
+"projenizin alfa / beta aşamalarında veya bir sonraki AAA başlığını "
+"oluşturmuyorsanız - ancak en belirgin neden karmaşıklığın azaltılması."
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -724,12 +774,13 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "GDScript'i oluşturmanın ardındaki motivasyon neydi?"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
 msgstr ""
+"Godot için özel bir programlama dili yaratmanın ana nedenleri şunlardı:"
 
 #: ../../docs/about/faq.rst:126
 msgid ""
