@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:41
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:33
 msgid "SceneTree"
 msgstr "Дерево сцены"
 
@@ -27,40 +27,21 @@ msgid "Introduction"
 msgstr "Введение"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
-msgid ""
-"This is where things start getting abstract, but don't panic. There's not "
-"much more depth than this."
-msgstr ""
-"Вот здесь и начинается абстракция, но не паникуй. Это не так страшно как "
-"кажется."
-
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:12
+#, fuzzy
 msgid ""
 "In previous tutorials, everything revolved around the concept of nodes. "
-"Scenes are simply a collection of nodes. They become active once they enter "
-"the *scene tree*."
+"Scenes are collections of nodes. They become active once they enter the "
+"*scene tree*."
 msgstr ""
 "В предыдущих уроках все вращалось вокруг концепции узлов. Сцены - это просто "
 "набор узлов. Они(узлы) становятся активными, как только заходят в *дерево "
 "сцены*."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:16
-msgid ""
-"This concept deserves going into a little more detail. In fact, the scene "
-"system is not even a core component of Godot as it is possible to skip it "
-"and write a script (or C++ code) that talks directly to the servers, but "
-"making a game that way would be a lot of work."
-msgstr ""
-"Давайте более подробно рассмотрим эту концепцию. Фактически, система сцен "
-"даже не является центральным компонентом Godot, поскольку ее можно "
-"пропустить и написать скрипт (или C++ код), который напрямую связан с "
-"серверами, но сделать игру таким образом было бы достаточно сложно."
-
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:22
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:14
 msgid "MainLoop"
 msgstr "\"MainLoop\""
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:24
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
 "The way Godot works internally is as follows. There is the :ref:`OS "
 "<class_OS>` class, which is the only instance that runs at the beginning. "
@@ -72,7 +53,7 @@ msgstr ""
 "в самом начале. После этого загружаются все драйверы, серверы, скриптовые "
 "языки, система сцен и т.д."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:29
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:21
 #, fuzzy
 msgid ""
 "When initialization is complete, :ref:`OS <class_OS>` needs to be supplied "
@@ -86,7 +67,7 @@ msgstr ""
 "коде, если вам когда-нибудь будет интересно посмотреть, как это работает "
 "внутри)."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:35
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:27
 #, fuzzy
 msgid ""
 "The user program, or game, starts in the MainLoop. This class has a few "
@@ -101,7 +82,7 @@ msgstr ""
 "уровень, и при создании игр в Godot, написание собственного MainLoop редко "
 "имеет смысл."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:43
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
@@ -109,7 +90,7 @@ msgstr ""
 "Один из способов объяснить, как работает Godot, звучит так: это "
 "высокоуровневый игровой движок над низкоуровневым промежуточным ПО."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:46
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:38
 msgid ""
 "The scene system is the game engine, while the :ref:`OS <class_OS>` and "
 "servers are the low level API."
@@ -117,18 +98,19 @@ msgstr ""
 "Система сцены является игровым движком, в то время как :ref:`OS <class_OS>` "
 "и сервера являются API низкого уровня."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:49
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:41
+#, fuzzy
 msgid ""
-"In any case, the scene system provides its own main loop to OS, :ref:"
-"`SceneTree <class_SceneTree>`. This is automatically instanced and set when "
-"running a scene, no need to do any extra work."
+"The scene system provides its own main loop to OS, :ref:`SceneTree "
+"<class_SceneTree>`. This is automatically instanced and set when running a "
+"scene, no need to do any extra work."
 msgstr ""
 "В любом случае, система сцен обеспечивает собственный основной цикл к ОС, :"
 "ref:`SceneTree <class_SceneTree>`. Это автоматически инстанцируется и "
 "настраивается при запуске сцены, нет необходимости тратить время на "
 "дополнительную работу."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:54
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
 "It's important to know that this class exists because it has a few important "
 "uses:"
@@ -136,7 +118,7 @@ msgstr ""
 "Важно знать, о существовании этого класса, так как он имеет несколько важных "
 "применений:"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:57
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:49
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
 "added as a child when it's first opened to become part of the *Scene Tree* "
@@ -146,7 +128,7 @@ msgstr ""
 "добавляется как дочерняя, когда она впервые открывается то становится частью "
 "*древа сцен* (подробнее об этом ниже)"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:60
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:52
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
 "in a group or get a list of them."
@@ -154,7 +136,7 @@ msgstr ""
 "Он содержит информацию о группах и позволяет вызывать все узлы в группе или "
 "получать список этих узлов."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:62
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:54
 msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
@@ -162,22 +144,22 @@ msgstr ""
 "Он содержит некоторые глобальные функции состояния, такие как режим паузы "
 "или выход."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:65
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:57
 #, fuzzy
 msgid ""
 "When a node is part of the Scene Tree, the :ref:`SceneTree "
-"<class_SceneTree>` singleton can be obtained by simply calling :ref:`Node."
+"<class_SceneTree>` singleton can be obtained by calling :ref:`Node."
 "get_tree() <class_Node_method_get_tree>`."
 msgstr ""
 "Когда узел является частью дерева сцен, :ref:`SceneTree <class_SceneTree>` "
 "синглтон (В следующем уроке будет рассмотрен подробнее.) можно получить, "
 "просто вызвав :ref:`Node.get_tree() <class_Node_method_get_tree>`."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:71
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:63
 msgid "Root viewport"
 msgstr "Корневое окно"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:73
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:65
 msgid ""
 "The root :ref:`Viewport <class_Viewport>` is always at the top of the scene. "
 "From a node, it can be obtained in two different ways:"
@@ -185,19 +167,20 @@ msgstr ""
 "Корневой :ref:`Viewport <class_Viewport>` всегда находится в верхней части "
 "сцены. Из узла его можно получить двумя разными способами:"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:88
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:80
+#, fuzzy
 msgid ""
-"This node contains the main viewport, anything that is a child of a :ref:"
+"This node contains the main viewport. Anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
 "sense that the top of all nodes is always a node of this type otherwise "
-"nothing would be seen!"
+"nothing would be seen."
 msgstr ""
 "Этот узел содержит основное окно просмотра, все, что является дочерним для :"
 "ref:`Viewport <class_Viewport>`, рисуется внутри него по умолчанию, поэтому "
 "наверху всех узлов древа сцен должен быть узел такого типа, иначе ничего не "
 "будет видно!"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:93
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:85
 msgid ""
 "While other viewports can be created in the scene (for split-screen effects "
 "and such), this one is the only one that is never created by the user. It's "
@@ -207,11 +190,11 @@ msgstr ""
 "раздельного экрана и т.д.), это единственное окно, которое никогда не "
 "создается пользователем. Он создается автоматически внутри SceneTree."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:98
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:90
 msgid "Scene tree"
 msgstr "Дерево сцены"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:100
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:92
 msgid ""
 "When a node is connected, directly or indirectly, to the root viewport, it "
 "becomes part of the *scene tree*."
@@ -219,7 +202,7 @@ msgstr ""
 "Когда узел прямо или косвенно связан с корневым окном, он становится частью "
 "*дерева сцены*."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:103
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:95
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
@@ -227,28 +210,29 @@ msgstr ""
 "Это означает, что, как объяснялось в предыдущих уроках, он получит обратные "
 "вызовы _enter_tree() и _ready(), (а также _exit_tree())."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:108
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:100
+#, fuzzy
 msgid ""
 "When nodes enter the *Scene Tree*, they become active. They get access to "
-"everything they need to process, get input, display 2D and 3D, "
-"notifications, play sound, groups, etc. When they are removed from the "
-"*scene tree*, they lose access."
+"everything they need to process, get input, display 2D and 3D visuals, "
+"receive and send notifications, play sounds, etc. When they are removed from "
+"the *scene tree*, they lose these abilities."
 msgstr ""
 "Когда узлы входят в *Древо Сцен*, они становятся активными. Они получают "
 "доступ ко всему, что им нужно для обработки, ввода, отображения 2D и 3D, "
 "уведомлений, воспроизведения звука, групп и т.д. Когда они удаляются из "
 "*древа сцен*, они теряют доступ."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:114
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:106
 msgid "Tree order"
 msgstr "Последовательность в древе"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:116
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:108
 #, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
-"with a smaller rank in the tree order will get notified before the current "
+"with a lower rank in the tree order will get notified before the current "
 "node."
 msgstr ""
 "Большинство операций с узлами в Godot, таких как рисование в 2D, обработка "
@@ -256,15 +240,15 @@ msgstr ""
 "что родители и дети в порядке Древа Сцен с меньшим местом, получат "
 "уведомление раньше текущего узла."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:124
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:116
 msgid "\"Becoming active\" by entering the *Scene Tree*"
 msgstr "\"Становится активным\", войдя в *Древо Сцен*"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:126
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:118
 msgid "A scene is loaded from disk or created by scripting."
 msgstr "Сцена загружается с диска или создается с помощью скрипта."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:127
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:119
 #, fuzzy
 msgid ""
 "The root node of that scene (only one root, remember?) is added as either a "
@@ -275,7 +259,7 @@ msgstr ""
 "дочерний в \"корневое\" окно (из Древа Сцен), либо как дочерний в ней "
 "ребенок или внук."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:130
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:122
 msgid ""
 "Every node of the newly added scene, will receive the \"enter_tree\" "
 "notification ( _enter_tree() callback in GDScript) in top-to-bottom order."
@@ -283,7 +267,7 @@ msgstr ""
 "Каждый узел новой добавленной сцены получит уведомление \"enter_tree"
 "\" (обратный вызов _enter_tree() в GDScript) в порядке сверху вниз."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:133
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:125
 msgid ""
 "An extra notification, \"ready\" ( _ready() callback in GDScript) is "
 "provided for convenience, when a node and all its children are inside the "
@@ -293,7 +277,7 @@ msgstr ""
 "предоставляется для удобства, когда узел и все его дети находятся внутри "
 "активной сцены."
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:136
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:128
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
@@ -301,11 +285,11 @@ msgstr ""
 "Когда сцена (или ее часть) удалена, они получают уведомление \"exit scene"
 "\" (обратный вызов _exit_tree() в GDScript) в порядке снизу вверх"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:141
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:133
 msgid "Changing current scene"
 msgstr "Смена текущей сцены"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:143
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:135
 #, fuzzy
 msgid ""
 "After a scene is loaded, it is often desired to change this scene for "
@@ -316,7 +300,7 @@ msgstr ""
 "простой способ заключается в использовании функции :ref:`SceneTree."
 "change_scene() <class_SceneTree_method_change_scene>`:"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:161
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:153
 #, fuzzy
 msgid ""
 "Rather than using file paths, one can also use ready-made :ref:`PackedScene "
@@ -328,14 +312,15 @@ msgstr ""
 "`SceneTree.change_scene_to(PackedScene scene) "
 "<class_SceneTree_method_change_scene_to>`:"
 
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:182
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:174
+#, fuzzy
 msgid ""
 "These are quick and useful ways to switch scenes but have the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
-"in your game, it may be desired to create proper loading screens with "
-"progress bar, animated indicators or thread (background) loading. This must "
-"be done manually using autoloads (see next chapter!) and :ref:"
-"`doc_background_loading`."
+"in the development of your game, it may be preferable to create proper "
+"loading screens with progress bar, animated indicators or thread "
+"(background) loading. This must be done manually using autoloads (see next "
+"chapter) and :ref:`doc_background_loading`."
 msgstr ""
 "Это быстрые и полезные способы переключения между сценами, но у них есть "
 "недостаток, заключающийся в том, что игра будет \"виснуть\" до тех пор, пока "

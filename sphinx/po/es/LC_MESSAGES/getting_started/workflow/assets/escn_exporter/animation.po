@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,40 +101,37 @@ msgstr ""
 "(incluyendo la acción action) que será exportada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
-#, fuzzy
 msgid "**3. Export the scene**"
-msgstr "**4. Exportar la escena**"
+msgstr "**3. Exportar la escena**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
 msgstr "Asegurate que la opción “Exportar acciones ocultas” ha sido activada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
-#, fuzzy
 msgid ""
 "Then all the stashed actions, as well as the active action, are exported to "
 "an AnimationPlayer."
 msgstr ""
-"Todas las acciones ocultas, así como la acción activa, se exportan a un "
-"AnimationPlayer."
+"A continuación, todas las acciones ocultas, así como la acción activa, se "
+"exportan a un AnimationPlayer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
 msgid "Constraints"
 msgstr "Constraints"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
-#, fuzzy
 msgid ""
 "Sometimes complicated animation is built with object constraint; a usual "
 "example is inverse kinematics. The add-on would automatically check if an "
 "object has some constraint; if it does, all the constraints are baked into "
 "actions and then exported along with the object."
 msgstr ""
-"La animación a veces complicada se construye con restricción de objetos; Un "
-"ejemplo habitual es la cinemática inversa. El complemento verificará "
+"A veces se construye una animación complicada con restricciones de objetos; "
+"un ejemplo habitual es inverse kinematics. El complemento comprobaría "
 "automáticamente si un objeto tiene alguna restricción; si la tiene, todas "
-"las restricciones se incorporan a cada acción que tiene el objeto y luego se "
-"exportan."
+"las restricciones se convierten en acciones y luego se exportan junto con el "
+"objeto."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
 msgid "Animation Mode"

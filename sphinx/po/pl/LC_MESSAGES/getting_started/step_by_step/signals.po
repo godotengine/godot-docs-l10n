@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,6 +38,8 @@ msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"O wzorcu projektowym obserwator, możesz przeczytać więcej tutaj: http://"
+"gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
 msgid ""
@@ -52,6 +54,7 @@ msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
+"Poniżej możesz zobaczyć przykłady, jak używać sygnałów w swoich projektach."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
 #, fuzzy
@@ -92,6 +95,9 @@ msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
+"Kliknij na sygnał \"timeout()\" i wybierz \"Connect...\". Zobaczysz wtedy "
+"okno, w którym będziesz mógł zdefiniować, w jaki sposób chcesz połączyć "
+"sygnał:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:51
 msgid ""
@@ -106,6 +112,7 @@ msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
+"Docelowy węzeł *musi* mieć skrypt, albo otrzymasz informację o błędzie."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
@@ -120,6 +127,7 @@ msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
+"Wybierz \"Connect\" i zobaczysz, że funkcja została utworzona w skrypcie:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:84
 msgid ""
@@ -177,7 +185,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:177
 msgid "To emit a signal via code, use the ``emit`` function:"
-msgstr ""
+msgstr "Aby wyemitować sygnał poprzez kod, użyj funkcji \"emit\":"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
 #, fuzzy
@@ -246,6 +254,8 @@ msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"
 msgstr ""
+"Teraz pocisk będzie utrzymywał swój własny ruch, niezależnie od rotacji "
+"gracza:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:323
 msgid "Conclusion"

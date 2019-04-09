@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,36 +26,23 @@ msgid "Introduction"
 msgstr "소개"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
+#, fuzzy
 msgid ""
-"File systems are yet another hot topic in engine development. The file "
-"system manages how the assets are stored and how they are accessed. A well-"
-"designed file system also allows multiple developers to edit the same source "
-"files and assets while collaborating."
+"A file system manages how assets are stored and how they are accessed. A "
+"well-designed file system also allows multiple developers to edit the same "
+"source files and assets while collaborating. Godot stores all assets as "
+"files in its file system."
 msgstr ""
-"파일 시스템은 하지만 엔진 개발에 있어 또 다른 주요 주제입니다. 파일 시스템은 "
+"파일 시스템은 아직도 엔진 개발에 있어 또 다른 주요 주제입니다. 파일 시스템은 "
 "어떻게 에셋이 저장되고 액세스 되는 지를 관리합니다. 잘 설계된 파일 시스템은 "
 "여러 개발자들에게도 또한 서로 협력하면서 같은 소스 파일과 에셋을 편집할 수 있"
 "게 합니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:14
-msgid ""
-"Initial versions of the Godot engine (and previous iterations before it was "
-"named Godot) used a database. Assets were stored in it and assigned an ID. "
-"Other approaches were tried as well, such as local databases, files with "
-"metadata, etc. In the end, the simple approach won and now Godot stores all "
-"assets as files in the file system."
-msgstr ""
-"Godot 엔진의 초기 버전에는 (그리고 아직 Godot라는 이름이 붙기 전) 데이터베이"
-"스를 사용했습니다. 에셋은 그곳에 있었고 ID가 지정되었습니다. 다른 접근도 시도"
-"해보았습니다, 지역 데이터베이스나, 메타데이터가 있는 파일 등등을 말이죠. 결"
-"국 간단한 접근법을 얻게 되었고 지금 Godot는 모든 에셋을 파일 시스템에 저장합"
-"니다."
-
-#: ../../docs/getting_started/step_by_step/filesystem.rst:21
+#: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
 msgstr "구현"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:23
+#: ../../docs/getting_started/step_by_step/filesystem.rst:17
 msgid ""
 "The file system stores resources on disk. Anything, from a script, to a "
 "scene or a PNG image is a resource to the engine. If a resource contains "
@@ -71,27 +58,28 @@ msgstr ""
 "장 하위 리소스를 갖는다면, 그 리소스는 모든 묶인 하위 리소스들과 함께 단일 파"
 "일로 저장됩니다. 예를 들어, 폰트 리소스는 종종 폰트 텍스쳐와 묶여집니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:30
+#: ../../docs/getting_started/step_by_step/filesystem.rst:24
+#, fuzzy
 msgid ""
-"In general, the Godot file system avoids using metadata files. The reason "
-"for this is simple, existing asset managers and VCSs are simply much better "
-"than anything we can implement, so Godot tries its best to play along with "
-"SVN, Git, Mercurial, Perforce, etc."
+"The Godot file system avoids using metadata files. Existing asset managers "
+"and VCSs are better than anything we can implement, so Godot tries its best "
+"to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
 "일반적으로 Godot 파일 시스템은 메타데이터 파일 사용을 피합니다. 그 이유는 간"
 "단합니다, 기존 에셋 관리자와 버전 관리 시스템(VCS)은 우리가 구현할 수 있는 것"
 "보다 훨씬 더 뛰어나기 때문에, Godot는 SVN, Git, Mercurial, Perforce 등과 함"
 "께 최선을 다합니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:35
-msgid "Example of a file system contents:"
+#: ../../docs/getting_started/step_by_step/filesystem.rst:28
+#, fuzzy
+msgid "Example of file system contents:"
 msgstr "파일 시스템 내용물 예시:"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:46
+#: ../../docs/getting_started/step_by_step/filesystem.rst:39
 msgid "project.godot"
 msgstr "project.godot"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:48
+#: ../../docs/getting_started/step_by_step/filesystem.rst:41
 msgid ""
 "The project.godot file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
@@ -101,7 +89,7 @@ msgstr ""
 "수 있습니다. 사실 파일 위치가 루트의 위치를 정의합니다. 이 파일은 프로젝트를 "
 "열 때 Godot가 제일 먼저 찾는 파일입니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:52
+#: ../../docs/getting_started/step_by_step/filesystem.rst:45
 msgid ""
 "This file contains the project configuration in plain text, using the win."
 "ini format. Even an empty project.godot can function as a basic definition "
@@ -111,27 +99,27 @@ msgstr ""
 "어 비어있는 project.godot도 비어있는 프로젝트의 기본 정의 기능을 할 수 있습니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:57
+#: ../../docs/getting_started/step_by_step/filesystem.rst:50
 msgid "Path delimiter"
 msgstr "경로 구분 기호"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:59
+#: ../../docs/getting_started/step_by_step/filesystem.rst:52
 msgid ""
 "Godot only supports ``/`` as a path delimiter. This is done for portability "
 "reasons. All operating systems support this, even Windows, so a path such as "
 "``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
 "godot``."
 msgstr ""
-"Godot는 오직 ``/`` 만을 경로 구분 기호로 지원합니다. 그 이유는 이식 능력 입니"
-"다. 모든 운영 시스템이, 심지어 윈도우까지, 이를 지원하기 때문에, ``c:"
-"\\project\\project.godot`` 같은 경로는 ``c:/project/project.godot`` 와 같은 "
-"타입이 되어야 합니다."
+"Godot는 오직 ``/``\\ 만을 경로 구분 기호로 지원합니다. 그 이유는 이식 능력 입"
+"니다. 윈도우를 포함한 모든 운영체제가 이 기호를 지원하기 때문에, ``c:"
+"\\project\\project.godot``\\ 같은 경로는 ``c:/project/project.godot``\\ 로 적"
+"어야 합니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:65
+#: ../../docs/getting_started/step_by_step/filesystem.rst:58
 msgid "Resource path"
 msgstr "리소스 경로(Resource path)"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:67
+#: ../../docs/getting_started/step_by_step/filesystem.rst:60
 msgid ""
 "When accessing resources, using the host OS file system layout can be "
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
@@ -141,15 +129,16 @@ msgstr ""
 "고 휴대성이 떨어질 수 있습니다. 이 문제를 해결하기 위해, ``res://`` 라는 특"
 "수 경로가 만들어졌습니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:71
+#: ../../docs/getting_started/step_by_step/filesystem.rst:64
+#, fuzzy
 msgid ""
 "The path ``res://`` will always point at the project root (where project."
-"godot is located, so in fact ``res://project.godot`` is always valid)."
+"godot is located, so ``res://project.godot`` is always valid)."
 msgstr ""
 "``res://`` 경로는 항상 프로젝트 루트를 향할 것입니다 (거기에는 project.godot"
 "이 있고, 그래서 사실 ``res://project.godot`` 경로가 항상 있습니다)."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:75
+#: ../../docs/getting_started/step_by_step/filesystem.rst:68
 msgid ""
 "This file system is read-write only when running the project locally from "
 "the editor. When exported or when running on different devices (such as "
@@ -160,41 +149,43 @@ msgstr ""
 "질 때나 아니면 다른 기기에서 실행 중일 때 (휴대전화나 콘솔, 혹은 DVD로 실"
 "행), 파일 시스템은 읽기만 하고 더 이상 쓰기가 용납되지 않습니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:81
+#: ../../docs/getting_started/step_by_step/filesystem.rst:74
 msgid "User path"
 msgstr "사용자 경로(User path)"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:83
+#: ../../docs/getting_started/step_by_step/filesystem.rst:76
+#, fuzzy
 msgid ""
-"Writing to disk is often still needed for various tasks such as saving game "
-"state or downloading content packs. To this end, the engine ensures that "
-"there is a special path ``user://`` that is always writable."
+"Writing to disk is still needed for tasks such as saving game state or "
+"downloading content packs. To this end, the engine ensures that there is a "
+"special path ``user://`` that is always writable."
 msgstr ""
 "디스크에 쓰기는 게임 상태를 저장하거나 콘텐츠 팩을 다운로드하는 등의 다양한 "
 "작업에 종종 필요합니다. 이를 위해, 엔진은 ``user://`` 라는 항상 쓸 수 있는 경"
 "로를 보장합니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:88
+#: ../../docs/getting_started/step_by_step/filesystem.rst:81
 msgid "Host file system"
 msgstr "호스트 파일 시스템(Host file system)"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:90
+#: ../../docs/getting_started/step_by_step/filesystem.rst:83
+#, fuzzy
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
 "on all platforms. However, using host file system paths can be useful when "
-"writing development tools in Godot!"
+"writing development tools in Godot."
 msgstr ""
 "또는 호스트 파일 시스템 경로도 사용될 수 있습니다, 하지만 이것이 모든 플랫폼"
 "에서 작동된다는 보장은 없으니 출시된 제품에 이 경로를 쓰는 것을 추천하지는 않"
 "습니다. 하지만, 호스트 파일 시스템 경로를 사용하면 Godot에서 개발 도구를 쓸 "
 "때 유용할 수 있습니다!"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:96
+#: ../../docs/getting_started/step_by_step/filesystem.rst:89
 msgid "Drawbacks"
 msgstr "단점"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:98
+#: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid ""
 "There are some drawbacks to this simple file system design. The first issue "
 "is that moving assets around (renaming them or moving them from one path to "
@@ -207,7 +198,7 @@ msgstr ""
 "등) 이 에셋에 관해 존재하는 참조를 깨버릴 것입니다. 이 참조는 새 에셋 위치를 "
 "향하도록 다시 정의해야만 합니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:103
+#: ../../docs/getting_started/step_by_step/filesystem.rst:96
 msgid ""
 "To avoid this, do all your move, delete and rename operations from within "
 "Godot, on the FileSystem dock. Never move assets from outside Godot, or "
@@ -219,7 +210,7 @@ msgstr ""
 "마세요, 그렇지 않으면 종속 여부를 수동으로 설정해야만 합니다 (Godot는 이를 감"
 "지하고 당신이 고치는 것을 어쨌든 도울 것이지만, 왜 어려운 길로 가시나요?)."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:108
+#: ../../docs/getting_started/step_by_step/filesystem.rst:101
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -235,10 +226,11 @@ msgstr ""
 "는 압축된 패키지로 모든 파일을 저장하는 내보낸 바이너리에도 적용될 수 있습니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:114
+#: ../../docs/getting_started/step_by_step/filesystem.rst:107
+#, fuzzy
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
-"files when working with Godot! One simple fool-proof convention is to only "
+"files when working with Godot. One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
 "Godot로 작업할 때 팀이 명명 규칙을 분명하게 정의하는 것을 추천합니다! 간단히 "

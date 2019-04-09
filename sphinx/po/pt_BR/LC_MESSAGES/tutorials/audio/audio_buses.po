@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -277,12 +277,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:121
-msgid "EQ6, EQ10, EQ21"
+msgid "EQ, EQ6, EQ10, EQ21"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:123
 msgid ""
-"Godot provides three models of equalizers with different band counts. "
+"Godot provides four models of equalizers with different band counts. "
 "Equalizers are useful on the Master Bus to completely master a mix and give "
 "it character. They are also useful when a game is run on a mobile device, to "
 "adjust the mix to that kind of speakers (it can be added but disabled when "
@@ -290,10 +290,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:127
+msgid "Filter"
+msgstr "Filtro"
+
+#: ../../docs/tutorials/audio/audio_buses.rst:129
+msgid "Filter is what all other filters inherit from and should not be used."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_buses.rst:132
 msgid "HighPassFilter, HighShelfFilter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:129
+#: ../../docs/tutorials/audio/audio_buses.rst:134
 msgid ""
 "These are filters that cut frequencies below a specific *Cutoff*. A common "
 "use of high pass filters is to add it to effects (or voice) that were "
@@ -301,51 +309,51 @@ msgid ""
 "used for some types of environment, like space."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:133
+#: ../../docs/tutorials/audio/audio_buses.rst:138
 msgid "Limiter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:135
+#: ../../docs/tutorials/audio/audio_buses.rst:140
 msgid ""
 "A limiter is similar to a compressor, but it's less flexible and designed to "
 "disallow sound going over a given dB threshold. Adding one in the *Master "
 "Bus* is always recommended to reduce the effects of clipping."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:139
+#: ../../docs/tutorials/audio/audio_buses.rst:144
 msgid "LowPassFilter, LowShelfFilter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:141
+#: ../../docs/tutorials/audio/audio_buses.rst:146
 msgid ""
 "These are the most common filters, they cut frequencies above a specific "
 "*Cutoff* and can also resonate. They can be used for a wide amount of "
 "effects, from underwater sound to simulating a sound coming from far away."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:145
+#: ../../docs/tutorials/audio/audio_buses.rst:150
 msgid "NotchFilter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:147
+#: ../../docs/tutorials/audio/audio_buses.rst:152
 msgid ""
 "The opposite to the BandPassFilter, it removes a band of sound from the "
 "frequency spectrum at a given *Cutoff*."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:150
+#: ../../docs/tutorials/audio/audio_buses.rst:155
 msgid "Panner"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:152
+#: ../../docs/tutorials/audio/audio_buses.rst:157
 msgid "This is a simple helper to pan sound left or right."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:155
+#: ../../docs/tutorials/audio/audio_buses.rst:160
 msgid "Phaser"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:157
+#: ../../docs/tutorials/audio/audio_buses.rst:162
 msgid ""
 "It probably does not make much sense to explain that this effect is formed "
 "by two signals being dephased and cancelling each other out. It will be "
@@ -353,22 +361,30 @@ msgid ""
 "like sounds."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:161
+#: ../../docs/tutorials/audio/audio_buses.rst:166
 msgid "PitchShift"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:163
+#: ../../docs/tutorials/audio/audio_buses.rst:168
 msgid ""
 "This effect allows for modulating pitch independently of tempo. All "
 "frequencies can be increased/decreased with minimal effect on transients. "
 "Can be used for effects such as voice modulation."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:166
+#: ../../docs/tutorials/audio/audio_buses.rst:171
+msgid "Record"
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_buses.rst:173
+msgid "This effect is used to record the bus it is on to a file."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_buses.rst:176
 msgid "Reverb"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:168
+#: ../../docs/tutorials/audio/audio_buses.rst:178
 msgid ""
 "Reverb simulates rooms of different sizes. It has adjustable parameters that "
 "can be tweaked to obtain the sound of a specific room. Reverb is commonly "
@@ -377,36 +393,36 @@ msgid ""
 "to all sounds."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:172
+#: ../../docs/tutorials/audio/audio_buses.rst:182
 msgid "StereoEnhance"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:174
+#: ../../docs/tutorials/audio/audio_buses.rst:184
 msgid ""
 "This effect has a few algorithms available to enhance the stereo spectrum, "
 "in case this is needed."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:177
+#: ../../docs/tutorials/audio/audio_buses.rst:187
 msgid "Automatic bus disabling"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:179
+#: ../../docs/tutorials/audio/audio_buses.rst:189
 msgid ""
 "There is no need to disable buses manually when not in use; Godot detects "
 "that the bus has been silent for a few seconds and disables it (including "
 "all effects)."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:183
+#: ../../docs/tutorials/audio/audio_buses.rst:193
 msgid "Disabled buses have a blue VU meter."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:186
+#: ../../docs/tutorials/audio/audio_buses.rst:196
 msgid "Bus rearrangement"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:188
+#: ../../docs/tutorials/audio/audio_buses.rst:198
 msgid ""
 "Stream Players use bus names to identify a bus, which allows adding, "
 "removing and moving buses around while the reference to them is kept. If a "
@@ -415,11 +431,11 @@ msgid ""
 "more common process than renaming them."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:192
+#: ../../docs/tutorials/audio/audio_buses.rst:202
 msgid "Default bus layout"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:194
+#: ../../docs/tutorials/audio/audio_buses.rst:204
 msgid ""
 "The default bus layout is automatically saved to the ``res://"
 "default_bus_layout.tres`` file. Other bus layouts can be saved to/retrieved "

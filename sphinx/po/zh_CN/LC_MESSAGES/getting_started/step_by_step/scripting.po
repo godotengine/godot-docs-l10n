@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,14 +26,13 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
-#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
-"在Godot3.0之前，编写游戏脚本的唯一选择是使用 :ref:`doc_gdscript`。而现在，"
-"Godot官方支持四种(是的，四种！)语言，并且能够动态添加额外的语言！"
+"在Godot 3.0版本之前，编写游戏脚本的唯一选择是使用GDScript。 如今，Godot已经有"
+"四种（没错，是四种！）官方语言，可以动态添加额外脚本语言！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
@@ -60,14 +59,13 @@ msgid "GDScript"
 msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript` 是上面提到的用于Godot的主要语言。和其他语言相比，它与"
-"Godot高度整合，有许多优点:"
+"如上所述，GDScript是Godot主要的使用语言。由于其与Godot高度整合，使用它较其他"
+"语言而言，有一些积极意义："
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -244,15 +242,14 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "编写脚本，使其能访问场景中的其它节点。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
-"在继续之前，请确保读了 :ref:`doc_gdscript` 资料。这是一种设计简单的语言，而且"
-"资料很短，因此不用花几分钟的时间就可以了解这些概念。"
+"在继续之前，请务必阅读GDScript参考。它被设计为一种简单的语言，参考文献很简"
+"短，因此阐述这些概念并不会花费几分钟时间。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"

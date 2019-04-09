@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -907,86 +907,110 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:787
 msgid "``FIRE_TIME``: The amount of time (in seconds) needed to fire a bullet."
 msgstr ""
+"``FIRE_TIME``: El tiempo(en segundos) necesitados para disparar una bala."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:788
 msgid ""
 "``fire_timer``: A variable for tracking how much time has passed since the "
 "turret last fired."
 msgstr ""
+"``fire_timer``: Una variable para traquear cuanto tiempo ha pasado desde el "
+"ultimo disparo de la torreta."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:789
 msgid "``node_turret_head``: A variable to hold the ``Head`` node."
-msgstr ""
+msgstr "``node_turret_head``: Una variable para mantener el nodo``Head``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:790
 msgid ""
 "``node_raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node "
 "attached to the turret's head."
 msgstr ""
+"``node_raycast``: Una variable para mantener el nodo :ref:`Raycast "
+"<class_Raycast>` junto a la cabeza de la torreta."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:791
 msgid ""
 "``node_flash_one``: A variable to hold the first muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
 msgstr ""
+"``node_flash_one``: Una variable para mantener el primer flash de disparo:"
+"ref:`MeshInstance <class_MeshInstance>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:792
 msgid ""
 "``node_flash_two``: A variable to hold the second muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
 msgstr ""
+"``node_flash_two``: Una variable para mentener el segundo flash de disparo :"
+"ref:`MeshInstance <class_MeshInstance>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:793
 msgid "``ammo_in_turret``: The amount of ammo currently in the turret."
-msgstr ""
+msgstr "``ammo_in_turret``: Cuanta municion hay en la torreta en el momento."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:794
 msgid "``AMMO_IN_FULL_TURRET``: The amount of ammo in a full turret."
-msgstr ""
+msgstr "``AMMO_IN_FULL_TURRET``: La cantidad de municion en una torreta llena."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:795
 msgid "``AMMO_RELOAD_TIME``: The amount of time it takes the turret to reload."
 msgstr ""
+"``AMMO_RELOAD_TIME``: La cantidad de tiempo necesaria para recargar la "
+"torreta."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:796
 msgid ""
 "``ammo_reload_timer``: A variable for tracking how long the turret has been "
 "reloading."
 msgstr ""
+"``ammo_reload_timer``: Una variable para traquear cuanto tiempo la torreta "
+"ha estado recargando."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:797
 msgid "``current_target``: The turret's current target."
-msgstr ""
+msgstr "``current_target``: El objetivo de la torreta en el momento."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:798
 msgid ""
 "``is_active``: A variable for tracking whether the turret is able to fire at "
 "the target."
 msgstr ""
+"``is_active``: Una variable para traquear si la torreta tiene la posibilidad "
+"de disparar a su objetivo."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:799
 msgid ""
 "``PLAYER_HEIGHT``: The amount of height we're adding to the target so we're "
 "not shooting at its feet."
 msgstr ""
+"``PLAYER_HEIGHT``: La altura que le añadimos al objetivo para que no estemos "
+"disparandole a sus pies."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:800
 msgid "``smoke_particles``: A variable to hold the smoke particles node."
 msgstr ""
+"``smoke_particles``: Una variable para mantener el nodo de particulas de "
+"humo."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:801
 msgid "``turret_health``: The amount of health the turret currently has."
 msgstr ""
+"``turret_health``: La cantidad de vida que tiene la torreta en el momento."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:802
 msgid "``MAX_TURRET_HEALTH``: The amount of health a fully healed turret has."
 msgstr ""
+"``MAX_TURRET_HEALTH``: La cantidad de vida que una torreta al maximo de vida "
+"tiene."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:803
 msgid ""
 "``DESTROYED_TIME``: The amount of time (in seconds) it takes for a destroyed "
 "turret to repair itself."
 msgstr ""
+"``DESTROYED_TIME``: La cantidad de tiempo (en segundos) que son necesarios "
+"para que una torreta destrozada se repare."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:804
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:4
 msgid "Particle systems (2D)"
-msgstr "파티클 시스템(2D)"
+msgstr "파티클 시스템 (2D)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:7
 msgid "Intro"
@@ -31,6 +31,9 @@ msgid ""
 "Particle systems are used to simulate complex physical effects, such as "
 "sparks, fire, magic particles, smoke, mist, etc."
 msgstr ""
+"간단한(간단하지만 대부분 용도에 충분히 유연한) 입자 시스템이 제공됩니다. 입"
+"자 시스템은 스파크나 불, 마법 입자, 연기, 안개 등 복잡한 물리적 효과를 시뮬레"
+"이션하기 위해 쓰입니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:13
 msgid ""
@@ -65,21 +68,29 @@ msgid ""
 "in your inspector panel. Click on the box next to ``Material``, and from the "
 "dropdown menu select ``New ParticlesMaterial``."
 msgstr ""
+"입자 노드에 프로세스 재료(process material)을 추가하기 위해서 인스펙터 패널에"
+"서 ``Process Material`` 로 갑니다.  ``Material`` 박스를 클릭한 다음 드롭다운 "
+"메뉴에서 ``New ParticlsMaterial``를 선택합니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:38
+#, fuzzy
 msgid "Your Particles2D node should now be emitting white points downward."
-msgstr ""
+msgstr "이제 Particles2D 노드는 아래쪽으로 내려가는 흰 점들이 방출됩니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:44
 msgid "Texture"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:46
+#, fuzzy
 msgid ""
 "A particle system uses a single texture (in the future this might be "
 "extended to animated textures via spritesheet). The texture is set via the "
 "relevant texture property:"
 msgstr ""
+"입자 시스템은 단일 텍스쳐를 사용합니다(in the future this might be extended "
+"to animated textures via spritesheet). 텍스쳐는 관련 텍스쳐 속성을 통해 설정"
+"합니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:53
 msgid "Time parameters"
@@ -94,6 +105,7 @@ msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
 "a new particle is created to replace it."
 msgstr ""
+"입자가 머무는 시간(초). 수명(lifetime)이 끝나면 새로운 입자가 대체됩니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:61
 msgid "Lifetime: 0.5"
@@ -112,12 +124,15 @@ msgid ""
 "When enabled, a Particles2D node will emit all of its particles once and "
 "then never again."
 msgstr ""
+"활성화되면 Particles2D 노드는 모든 입자를 한 번 방출하고 다시는 방출하지 않습"
+"니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:76
 msgid "Preprocess"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:78
+#, fuzzy
 msgid ""
 "Particle systems begin with zero particles emitted, then start emitting. "
 "This can be an inconvenience when loading a scene and systems like a torch, "
@@ -125,72 +140,96 @@ msgid ""
 "the system process a given number of seconds before it is actually drawn the "
 "first time."
 msgstr ""
+"입자 시스템은 0개의 입자를 방출된 채로 시작해서 방출합니다. 이 방식은 씬을 불"
+"러오고 당신이 들어온 순간부터 방출하기 시작하는 횃불, 안개 등과 같은 시스템"
+"은  불편할 수 있습니다. 사전프로세스(Preprocess)는 시스템이 실제로 처음 그려"
+"지기 전에 주어진 시간(초)를 처리하도록 하는데 사용됩니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:85
 msgid "Speed Scale"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:87
+#, fuzzy
 msgid ""
 "The speed scale has a default value of ``1`` and is used to adjust the speed "
 "of a particle system. Lowering the value will make the particles slower "
 "while increasing the value will make the particles much faster."
 msgstr ""
+"Speed Scale은 기본값으로 ``1\"을 가지고 있으며 입자 시스템의 속도를 조절하는 "
+"데 사용된다. 값을 낮추면 입자가 느려지는 반면 값을 늘리면 입자가 훨씬 빨라진"
+"다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:92
 msgid "Explosiveness"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:94
+#, fuzzy
 msgid ""
 "If lifetime is ``1`` and there are 10 particles, it means a particle will be "
 "emitted every 0.1 seconds. The explosiveness parameter changes this, and "
 "forces particles to be emitted all together. Ranges are:"
 msgstr ""
+"수명이 ``1\"이고 10개의 입자가 있다면 0.1초마다 입자가 방출되는 것을 의미한"
+"다. 폭발성 매개변수(explosiveness parameter)는 이것을 변화시키고, 입자를 모"
+"두 방출하도록 한다. 범위:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:98
 msgid "0: Emit particles at regular intervals (default value)."
-msgstr ""
+msgstr "0: 입자들을 일정한 간격으로 방출합니다(기본 값)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:99
 msgid "1: Emit all particles simultaneously."
-msgstr ""
+msgstr "1: 동시에 모든 입자를 방출합니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:101
+#, fuzzy
 msgid ""
 "Values in the middle are also allowed. This feature is useful for creating "
 "explosions or sudden bursts of particles:"
 msgstr ""
+"중간 값도 허용됩니다. 이 특징은 폭발이나 갑작스러운 입자 폭발을 만들 때 유용"
+"합니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:107
 msgid "Randomness"
-msgstr ""
+msgstr "랜덤성(Randomness)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:109
+#, fuzzy
 msgid ""
 "All physics parameters can be randomized. Random values range from ``0`` to "
 "``1``. The formula to randomize a parameter is:"
 msgstr ""
+"모든 물리학 파라미터는 랜덤화될 수 있습니다. 무작위 값은 ``0\"부터 ``1\"까지 "
+"다양합니다. 파라미터를 랜덤화하는 공식은 다음과 같습니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:117
+#, fuzzy
 msgid "Fixed FPS"
-msgstr ""
+msgstr "고정 FPS(Fixed FPS)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:119
+#, fuzzy
 msgid ""
 "This setting can be used to set the particle system to render at a fixed "
 "FPS. For instance, changing the value to ``2`` will make the particles "
 "render at 2 frames per second. Note this does not slow down the particle "
 "system itself."
 msgstr ""
+"이 설정은 입자 시스템을 고정 FPS로 렌더하는데 사용됩니다. 예로 들어 값을 "
+"``2`` 로 바꿔 보면 입자를 초당 2 프레임으로 렌더합니다. 단, 입자 시스템을 느"
+"려지게 하는 것이 아니니 주의하세요."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:124
 msgid "Fract Delta"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:126
+#, fuzzy
 msgid "This can be used to turn Fract Delta on or off."
-msgstr ""
+msgstr "이 속성은 Fract Delta를 사용 또는 사용안함으로 바꾸는데 사용됩니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:129
 msgid "Drawing parameters"
@@ -215,6 +254,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
+#, fuzzy
 msgid ""
 "You can have Godot generate a Visibility Rect automatically using the "
 "toolbar above the 2d view. To do so, select the Particles2D node and Click "
@@ -222,6 +262,11 @@ msgid ""
 "Particles2D node emitting particles for a few seconds and set the rectangle "
 "to fit the surface the particles take."
 msgstr ""
+"You can have Godot generate a Visibility Rect automatically using the "
+"toolbar above the 2d view. To do so, select the Particles2D node and Click ``"
+"파티클(Particles) > 가시성 직사각형을 만들기``. Godot will simulate the "
+"Particles2D node emitting particles for a few seconds and set the rectangle "
+"to fit the surface the particles take."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:143
 msgid ""
@@ -236,28 +281,37 @@ msgid "Local Coords"
 msgstr "로컬 좌표"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:148
+#, fuzzy
 msgid ""
 "By default this option is on, and it means that the space that particles are "
 "emitted to is relative to the node. If the node is moved, all particles are "
 "moved with it:"
 msgstr ""
+"기본적으로 이 옵션은 켜져 있으며 이는 입자들이 방출되는 공간이 노드에 상대적"
+"인 걸 의미합니다. 만약 노드가 움직인다면 모든 입자들도 같이 움직입니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:154
+#, fuzzy
 msgid ""
 "If disabled, particles will emit to global space, meaning that if the node "
 "is moved, already emitted particles are not affected:"
 msgstr ""
+"비활성화되면 입자는 전역 공간에 방출됩니다. 만약 노드가 움직이면 이미 방출된 "
+"입자는 영향을 받지 않습니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:160
 msgid "Draw Order"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:162
+#, fuzzy
 msgid ""
 "This controls the order in which individual particles are drawn. ``Index`` "
 "means particles are drawn according to their emission order (default). "
 "``Lifetime`` means they are drawn in order of remaining lifetime."
 msgstr ""
+"각각의 입자가 그려지는 순서를 조절합니다. ``인덱스``는 방출 순서에 따라 입자"
+"가 그려집니다(기본). ``Lifetime``은 남아 있는 lifetime 순서로 그려집니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:167
 msgid "ParticlesMaterial settings"
@@ -268,23 +322,27 @@ msgid "Spread"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:188
+#, fuzzy
 msgid ""
 "This parameter is the angle in degrees which will be randomly added in "
 "either direction to the base ``Direction``. A spread of ``180`` will emit in "
 "all directions (+/- 180)."
 msgstr ""
+"이  매개 변수는 기준 ``방향``에 임의로 어느 방향으로든 추가되는 각도(도) 입니"
+"다. ``180``으로 설정하면 모든 방향(+/- 180)으로 방출됩니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:195
 msgid "Gravity"
-msgstr ""
+msgstr "중력"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:197
+#, fuzzy
 msgid "The gravity applied to every particle."
-msgstr ""
+msgstr "중력이 모든 입자에 적용됩니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:202
 msgid "Initial Velocity"
-msgstr ""
+msgstr "초기 속도(Initial Velocity)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:204
 msgid ""
@@ -292,44 +350,50 @@ msgid ""
 "sec). Speed might later be modified by gravity or other accelerations (as "
 "described further below)."
 msgstr ""
+"선형 속도(Linear velocity)는 입자가 방출 되는 속도입니다(초당 픽셀). 속도는 "
+"나중에 중력이나 다른 가속도에 의해 수정될 수 있습니다(아래에 더 자세히 설명"
+"됨)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:211
+#, fuzzy
 msgid "Angular Velocity"
-msgstr ""
+msgstr "각속도(Angular Velocity)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:213
+#, fuzzy
 msgid "Angular velocity is the initial angular velocity applied to particles."
-msgstr ""
+msgstr "각속도(Angular velocity)는 입자에 적용되는 초기각속도입니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:216
 msgid "Spin Velocity"
-msgstr ""
+msgstr "회전 속도(Spin Velocity)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:218
+#, fuzzy
 msgid ""
 "Spin velocity is the speed at which particles turn around their center (in "
 "degrees/sec)."
-msgstr ""
+msgstr "회전 속도는 입자가 각각의 입자 중심을 회전하는 속도입니다(초당 각도)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:224
 msgid "Orbit Velocity"
-msgstr ""
+msgstr "공전 속도(Orbit Velocity)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:226
 msgid "Orbit velocity is used to make particles turn around their center."
-msgstr ""
+msgstr "공전 속도는 입자들이 중심을 돌게 만드는 데 사용됩니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:231
 msgid "Linear Acceleration"
-msgstr ""
+msgstr "선형 가속도(Linear Acceleration)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:233
 msgid "The linear acceleration applied to each particle."
-msgstr ""
+msgstr "각 입자에 적용되는 선형 가속도."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:236
 msgid "Radial Acceleration"
-msgstr ""
+msgstr "지름 가속도(Radial Acceleration)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:238
 msgid ""
@@ -339,13 +403,16 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:244
 msgid "Tangential Acceleration"
-msgstr ""
+msgstr "접선가속도(Tangential Acceleration)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:246
+#, fuzzy
 msgid ""
 "This acceleration will use the tangent vector to the center. Combining with "
 "radial acceleration can do nice effects."
 msgstr ""
+"이 가속도는 중심에 접선 벡터를 사용합니다. 지름 가속도와 결합하면 좋은 효과"
+"를 볼 수 있습니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:252
 msgid "Damping"
@@ -357,16 +424,20 @@ msgid ""
 "especially useful for sparks or explosions, which usually begin with a high "
 "linear velocity and then stop as they fade."
 msgstr ""
+"Damping은 입자에 마찰을 일으켜 멈추게 합니다. 특히 불꽃이나 폭발에 유용하며 "
+"보통 높은 선형 속도로 시작하다가 점차 사라지면서 멈춘다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:261
 msgid "Angle"
-msgstr ""
+msgstr "각도"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:263
 msgid ""
 "Determines the initial angle of the particle (in degress). This parameter is "
 "mostly useful randomized."
 msgstr ""
+"입자의 초기 각도를 결정합니다.  이 매개 변수는 랜덤화하는데 대부분 유용하게 "
+"쓰입니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:269
 msgid "Scale"
@@ -382,68 +453,76 @@ msgstr "색깔"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:278
 msgid "Used to change the color of the particles being emitted."
-msgstr ""
+msgstr "방출되는 입자 색깔을 바꾸는 데 사용됩니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:281
 msgid "Hue variation"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:283
+#, fuzzy
 msgid ""
 "The ``Variation`` value sets the initial hue variation applied to each "
 "particle. The ``Variation Random`` value controls the hue variation "
 "randomness ratio."
 msgstr ""
+"``Variation`` 값은 각 입자의 초기 hue variation를 설정합니다. ``Variation "
+"Random`` 값은 hue variation 무작위 비율을 조절합니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:288
-#, fuzzy
 msgid "Emission Shapes"
-msgstr "충돌 모양"
+msgstr "방출 모양(Emission Shapes)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:290
+#, fuzzy
 msgid ""
 "ParticlesMaterials allow you to set an Emission Mask, which dictates the "
 "area and direction in which particles are emitted. These can be generated "
 "from textures in your project."
 msgstr ""
+"ParticlesMaterials는 입자가 방출되는 영역과 방향을 결정할 수 있는 에미션 마스"
+"크(Emission Mask)를 설정할 수 있습니다. 프로젝트 내 텍스쳐로 생성될 수 있습니"
+"다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:294
 msgid ""
 "Ensure that a ParticlesMaterial is set, and the Particles2D node is "
 "selected. A \"Particles\" menu should appear in the Toolbar:"
 msgstr ""
+"ParticlesMaterial이 설정되고 Particle2D 노드가 선택되어 있는지 확인하십시오. "
+"툴바에 \"파티클(Particles)\" 메뉴가 표시됩니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:299
 msgid "Open it and select \"Load Emission Mask\":"
-msgstr ""
+msgstr "메뉴를 열고 \"에미션 마스크 불러오기\"를 선택하세요:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:303
 msgid "Then select which texture you want to use as your mask:"
-msgstr ""
+msgstr "그런 다음 마스크로 쓸 텍스쳐를 선택합니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:307
 msgid "A dialog box with several settings will appear."
-msgstr ""
+msgstr "몇 가지 설정이 있는 대화 상자가 나타납니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:310
-#, fuzzy
 msgid "Emission Mask"
-msgstr "충돌 마스크"
+msgstr "에미션 마스크(Emission Mask)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:312
 msgid "Three types of emission masks can be generated from a texture:"
-msgstr ""
+msgstr "텍스쳐로 생성될 수 있는 에미션 마스크는 세 가지 유형이 있습니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:314
 msgid ""
 "Solid Pixels: Particles will spawn from any area of the texture, excluding "
 "transparent areas."
 msgstr ""
+"Solid Pixels: 텍스쳐의 투명한 부분을 제외한 모든 영역에서 입자가 생겨납니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:319
 msgid ""
 "Border Pixels: Particles will spawn from the outer edges of the texture."
-msgstr ""
+msgstr "Border Pixels: 텍스쳐의 바깥쪽 가장자리에 입자가 생겨납니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:323
 msgid ""
@@ -452,6 +531,9 @@ msgid ""
 "Note that an ``Initial Velocity`` will need to be set in order to utilize "
 "this."
 msgstr ""
+"Directed Border Pixels: Border Pixels와 유사하지만 마스크에 추가 정보를 추가"
+"하여 입자들이 경계에서 멀리 방출할 수 있는 능력을 부여한다. 이를 활용하려면 "
+"``초기 속도``를 설정해야 합니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:331
 msgid "Emission Colors"
@@ -461,22 +543,28 @@ msgstr ""
 msgid ""
 "``Capture from Pixel`` will cause the particles to inherit the color of the "
 "mask at their spawn points."
-msgstr ""
+msgstr "``픽셀로부터 캡쳐``는 입자가 생겨난 지점의 마스크 색깔을 물려받습니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:335
 msgid ""
 "Once you click \"OK\", the mask will be generated and set to the "
 "ParticlesMaterial, under the ``Emission Shape`` section:"
 msgstr ""
+"\"확인\" 버튼을 누르게 되면 마스크가 생성되고 ParticlesMaterial의 ``Emission "
+"Shape`` 부분 아래에 설정됩니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:339
 msgid ""
 "All of the values within this section have been automatically generated by "
 "the \"Load Emission Mask\" menu, so they should generally be left alone."
 msgstr ""
+"이 부분의 모든 값은 \"에미션 마스크 불러오기\" 메뉴에 의해서 자동적으로 생성"
+"됩니다. 그래서 이 설정은 일반적으로 그대로 두어야 합니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:342
 msgid ""
 "An image should not be added to ``Point Texture`` or ``Color Texture`` "
 "directly. The \"Load Emission Mask\" menu should always be used instead."
 msgstr ""
+"``Point Texture`` 또는 ``Color Texture``에 직접 이미지를 추가해서는 안됩니"
+"다. 그 대신에 \"에미션 마스크 불러오기\" 메뉴를 통해서 사용되어야 합니다."

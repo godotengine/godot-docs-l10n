@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,24 +19,29 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:4
 msgid "Viewport and canvas transforms"
-msgstr ""
+msgstr "뷰포트와 캔버스 변형"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:7
 msgid "Introduction"
 msgstr "소개"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:9
+#, fuzzy
 msgid ""
 "This is an overview of the 2D transforms going on for nodes from the moment "
 "they draw their content locally to the time they are drawn onto the screen. "
 "This overview discusses very low level details of the engine."
 msgstr ""
+"노드에서 콘텐츠를 로컬로 그리는 순간부터 화면에 그려지는 시간까지 진행되는 "
+"2D 변환에 대한 개요입니다. 이 개요는 엔진에서 매우 저수준의 세부 정보를 설명"
+"합니다."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:14
 msgid "Canvas transform"
-msgstr ""
+msgstr "캔버스 변형"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:16
+#, fuzzy
 msgid ""
 "As mentioned in the previous tutorial, :ref:`doc_canvas_layers`, every "
 "CanvasItem node (remember that Node2D and Control based nodes use CanvasItem "
@@ -44,39 +49,59 @@ msgid ""
 "has a transform (translation, rotation, scale, etc.) that can be accessed as "
 "a :ref:`Transform2D <class_Transform2D>`."
 msgstr ""
+"이전 :ref:`doc_canvas_layers` 튜토리얼에서 언급한 것과 같이 모든 CanvasItem "
+"노드(Node2D와 Control를 기반으로 두는 노드는 CanvasItem를 공통의 루트로 사용"
+"하는 것을 기억하세요)는 *Canvas Layer*에 있습니다. 모든 canvas layer는 :ref:"
+"`Transform2D <class_Transform2D>`로 접근할 수 있는 변형(옮김(translation), 회"
+"전, 스케일 등)이 있습니다."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:22
+#, fuzzy
 msgid ""
 "Also covered in the previous tutorial, nodes are drawn by default in Layer "
 "0, in the built-in canvas. To put nodes in a different layer, a :ref:"
 "`CanvasLayer <class_CanvasLayer>` node can be used."
 msgstr ""
+"또한 이전 튜토리얼에서도 다뤘듯이 노드는 기본적으로 내장된 캔버스의 레이어 0"
+"에서 그려집니다. 노드를 다른 레이어에 배치하려면 :ref:\"CanvasLayer "
+"<class_CanvasLayer> 노드를 사용할 수 있습니다."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:27
 msgid "Global canvas transform"
-msgstr ""
+msgstr "전역 캔버스 변형(Global canvas transform)"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:29
+#, fuzzy
 msgid ""
 "Viewports also have a Global Canvas transform (also a :ref:`Transform2D "
 "<class_Transform2D>`). This is the master transform and affects all "
 "individual *Canvas Layer* transforms. Generally, this transform is not of "
 "much use, but is used in the CanvasItem Editor in Godot's editor."
 msgstr ""
+"뷰포트에는 전역 캔버스 변형(또한 :ref:\"Transform2D <class_Transform2D>도)이 "
+"있습니다. 이는 모든 각각의 *Canvas Layer* 변형에 영향을 미치는 마스터 변형입"
+"니다. 일반적으로 이 변형은 별로 쓸모가 없지만 Godot 편집기의 CanvasItem 편집"
+"기에서 사용된다."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:36
 msgid "Stretch transform"
-msgstr ""
+msgstr "늘이기 변형(Stretch transform)"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:38
+#, fuzzy
 msgid ""
 "Finally, viewports have a *Stretch Transform*, which is used when resizing "
 "or stretching the screen. This transform is used internally (as described "
 "in :ref:`doc_multiple_resolutions`), but can also be manually set on each "
 "viewport."
 msgstr ""
+"마지막으로, 뷰포트에는 *늘이기 변형*이 있으며, 이는 화면 크기를 조정하거나 늘"
+"일 때 사용됩니다. 이 변형은 내부적으로 사용되지만( :ref:"
+"`doc_multiple_resolutions`에 설명됨) 각 뷰포트에서 수동으로 설정할 수도 있습"
+"니다."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:43
+#, fuzzy
 msgid ""
 "Input events received in the :ref:`MainLoop._input_event() "
 "<class_MainLoop_method__input_event>` callback are multiplied by this "
@@ -85,24 +110,31 @@ msgid ""
 "<class_CanvasItem_method_make_input_local>` function was added for "
 "convenience."
 msgstr ""
+"Input events received in the :ref:`MainLoop._input_event() "
+"<class_MainLoop_method__input_event>` callback are multiplied by this "
+"transform but lack the ones above. InputEvent 좌표를 지역 CanvasItem 좌표로 "
+"변환하기 위해서는 :ref:`CanvasItem.make_input_local() "
+"<class_CanvasItem_method_make_input_local>` 기능을 편의를 위해 추가했습니다."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:50
 msgid "Transform order"
-msgstr ""
+msgstr "변형 순서"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:52
 msgid ""
 "For a coordinate in CanvasItem local properties to become an actual screen "
 "coordinate, the following chain of transforms must be applied:"
 msgstr ""
+"CanvasItem 지역 속성의 좌표가 실제 화면 좌표가 되려면 다음과 같은 변형 체인"
+"이 적용되어야 합니다:"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:58
 msgid "Transform functions"
-msgstr ""
+msgstr "변형 기능들"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:60
 msgid "Obtaining each transform can be achieved with the following functions:"
-msgstr ""
+msgstr "각 변형을 얻으려면 다음과 같은 기능을 사용합니다:"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Type"
@@ -121,6 +153,8 @@ msgid ""
 ":ref:`CanvasItem.get_global_transform() "
 "<class_CanvasItem_method_get_global_transform>`"
 msgstr ""
+":ref:`CanvasItem.get_global_transform() "
+"<class_CanvasItem_method_get_global_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid "CanvasLayer"
@@ -147,6 +181,8 @@ msgid ""
 "Finally, then, to convert a CanvasItem local coordinates to screen "
 "coordinates, just multiply in the following order:"
 msgstr ""
+"마지막으로 CanvasItem 지역 좌표를 화면 좌표로 변환하려면 다음 순서로 곱하세"
+"요:"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:84
 msgid ""
@@ -155,13 +191,19 @@ msgid ""
 "coordinates (``CanvasItem.get_global_transform()``), to allow automatic "
 "screen resolution resizing to work properly."
 msgstr ""
+"그러나 화면 좌표를 사용하여 작업하는 것은 일반적으로 바람직하지 않음을 명심하"
+"세요. 권장되는 접근방식은 Canvas 좌표(``CanvasItem.get_global_transform()``)"
+"로 자동으로 화면 해상도를 제대로 크기 조정할 수 있게 간단히 작동해야 합니다."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:90
 msgid "Feeding custom input events"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:92
+#, fuzzy
 msgid ""
 "It is often desired to feed custom input events to the scene tree. With the "
 "above knowledge, to correctly do this, it must be done the following way:"
 msgstr ""
+"씬 트리에 사용자 지정 이벤트를 주는 것이 바람직합니다. 위의 지식으로 이벤트"
+"를 주려면 다음과 같은 방법으로 해야 됩니다."

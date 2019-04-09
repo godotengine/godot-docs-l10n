@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,29 +18,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
+#, fuzzy
 msgid "Importing translations"
-msgstr ""
+msgstr "Importando traduções"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:7
+#, fuzzy
 msgid "Games and internationalization"
-msgstr ""
+msgstr "Jogos e internacionalização"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
+#, fuzzy
 msgid ""
 "The world is full of different markets and cultures and, to maximize "
 "profits™, nowadays games are released in several languages. To solve this, "
 "internationalized text must be supported in any modern game engine."
 msgstr ""
+"O mundo é cheio de diferentes mercados e culturas e, para maximizar lucros™, "
+"hoje em dia os jogos são lançados em várias línguas. Para resolver isso, "
+"texto internacionalizado precisa ser suportado em qualquer game engine "
+"moderna."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:14
+#, fuzzy
 msgid ""
 "In regular desktop or mobile applications, internationalized text is usually "
 "located in resource files (or .po files for GNU stuff). Games, however, can "
 "use several orders of magnitude more text than applications, so they must "
 "support efficient methods for dealing with loads of multilingual text."
 msgstr ""
+"In regular desktop or mobile applications, internationalized text is usually "
+"located in resource files (or .po files for GNU stuff). Games, however, can "
+"use several orders of magnitude more text than applications, so they must "
+"support efficient methods for dealing with loads of multilingual text."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
+#, fuzzy
 msgid ""
 "There are two approaches to generate multilingual language games and "
 "applications. Both are based on a key:value system. The first is to use one "
@@ -49,24 +62,38 @@ msgid ""
 "if a game is released first in English, later in other languages, but a "
 "complete nightmare if working with many languages at the same time."
 msgstr ""
+"There are two approaches to generate multilingual language games and "
+"applications. Both are based on a key:value system. The first is to use one "
+"of the languages as the key (usually English), the second is to use a "
+"specific identifier. The first approach is probably easier for development "
+"if a game is released first in English, later in other languages, but a "
+"complete nightmare if working with many languages at the same time."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:28
+#, fuzzy
 msgid ""
 "In general, games use the second approach and a unique ID is used for each "
 "string. This allows you to revise the text while it is being translated to "
 "other languages. The unique ID can be a number, a string, or a string with a "
 "number (it's just a unique string anyway)."
 msgstr ""
+"In general, games use the second approach and a unique ID is used for each "
+"string. This allows you to revise the text while it is being translated to "
+"other languages. The unique ID can be a number, a string, or a string with a "
+"number (it's just a unique string anyway)."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
+#, fuzzy
 msgid "Translators also usually prefer to work with spreadsheets."
-msgstr ""
+msgstr "Tradutores também preferem trabalhar com planilhas."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:36
+#, fuzzy
 msgid "Translation format"
-msgstr ""
+msgstr "Formato de tradução"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
+#, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
 "has a special importer that can read CSV files. All spreadsheet editors (be "
@@ -75,108 +102,139 @@ msgid ""
 "arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
 "as follows:"
 msgstr ""
+"To complete the picture and allow efficient support for translations, Godot "
+"has a special importer that can read CSV files. All spreadsheet editors (be "
+"it Libreoffice, Microsoft Office, Google Docs, etc.) can export to this "
+"format, so the only requirement is that the files have a special "
+"arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
+"as follows:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
+#, fuzzy
 msgid "<lang1>"
-msgstr ""
+msgstr "<lang1>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
+#, fuzzy
 msgid "<lang2>"
-msgstr ""
+msgstr "<lang2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
+#, fuzzy
 msgid "<langN>"
-msgstr ""
+msgstr "<langN>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#, fuzzy
 msgid "KEY1"
-msgstr ""
+msgstr "KEY1"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
+#, fuzzy
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
+#, fuzzy
 msgid "KEY2"
-msgstr ""
+msgstr "KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
+#, fuzzy
 msgid "KEYN"
-msgstr ""
+msgstr "KEYN"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
+#, fuzzy
 msgid ""
 "The \"lang\" tags must represent a language, which must be one of the :ref:"
 "`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags must "
 "be unique and represent a string universally (they are usually in uppercase, "
 "to differentiate from other strings). Here's an example:"
 msgstr ""
+"As tags \"lang\" precisam representar uma língua, que precisa ser uma dos :"
+"ref:`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags "
+"must be unique and represent a string universally (they are usually in "
+"uppercase, to differentiate from other strings). Here's an example:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
+#, fuzzy
 msgid "id"
-msgstr ""
+msgstr "id"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
+#, fuzzy
 msgid "en"
-msgstr ""
+msgstr "en"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
+#, fuzzy
 msgid "es"
-msgstr ""
+msgstr "es"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
+#, fuzzy
 msgid "ja"
-msgstr ""
+msgstr "ja"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "GREET"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+#, fuzzy
 msgid "Hello, friend!"
-msgstr ""
+msgstr "Olá, amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+#, fuzzy
 msgid "Hola, Amigo!"
-msgstr ""
+msgstr "Hola, Amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+#, fuzzy
 msgid "こんにちは"
-msgstr ""
+msgstr "こんにちは"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "ASK"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+#, fuzzy
 msgid "How are you?"
-msgstr ""
+msgstr "Como vai você?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+#, fuzzy
 msgid "Cómo está?"
-msgstr ""
+msgstr "Cómo está?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+#, fuzzy
 msgid "元気ですか"
-msgstr ""
+msgstr "元気ですか"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "BYE"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#, fuzzy
 msgid "Good Bye"
-msgstr ""
+msgstr "Adeus"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#, fuzzy
 msgid "Adiós"
-msgstr ""
+msgstr "Adiós"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#, fuzzy
 msgid "さようなら"
-msgstr ""
+msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
 #, fuzzy
@@ -184,14 +242,21 @@ msgid "CSV importer"
 msgstr "Por que importar?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#, fuzzy
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
+"Godot vai tratar arquivos CSV como traduções por padrão. Ele vai importá-los "
+"e gerar um ou mais arquivos de recurso de tradução compressas próximas a ele."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
+#, fuzzy
 msgid ""
 "Importing will also add the translation to the list of translations to load "
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
+"Importing will also add the translation to the list of translations to load "
+"when the game runs, specified in project.godot (or the project settings). "
+"Godot allows loading and removing translations at runtime as well."

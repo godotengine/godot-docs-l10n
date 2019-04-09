@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:4
+#, fuzzy
+msgid "Input examples"
+msgstr "一个示例:"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:7
+msgid "Introduction"
+msgstr "简介"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:9
+msgid ""
+"In this tutorial, you'll learn how to use Godot's :ref:`InputEvent "
+"<class_InputEvent>` system to capture player input. There are many different "
+"types of input your game may use - keyboard, gamepad, mouse, etc. - and many "
+"different ways to turn those inputs into actions in your game. This document "
+"will show you some of the most common scenarios, which you can use as "
+"starting points for your own projects."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:16
+msgid ""
+"For a detailed overview of how Godot's input event system works, see :ref:"
+"`doc_inputevent`."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:20
+msgid "Events versus polling"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:22
+msgid ""
+"Sometimes you want your game to respond to a certain input event - pressing "
+"the \"jump\" button, for example. For other situations, you might want "
+"something to happen as long as a key is pressed, such as movement. In the "
+"first case, you can use the ``_input()`` function, which will be called "
+"whenever an input event occurs. In the second case, Godot provides the :ref:"
+"`Input <class_Input>` singleton, which you can use to query the state of an "
+"input."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:29
+msgid "Examples:"
+msgstr "示例:"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:45
+msgid ""
+"This gives you the flexibility to mix-and-match the type of input processing "
+"you do."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:48
+msgid ""
+"For the remainder of this tutorial, we'll focus on capturing individual "
+"events in ``_input()``."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:52
+msgid "Input events"
+msgstr "输入事件"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:54
+msgid ""
+"Input events are objects that inherit from :ref:`InputEvent "
+"<class_InputEvent>`. Depending on the event type, the object will contain "
+"specific properties related to that event. To see what events actually look "
+"like, add a Node and attach the following script:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:67
+msgid ""
+"As you press keys, move the mouse, and perform other inputs, you'll see each "
+"event scroll by in the output window. Here's an example of the output:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:81
+msgid ""
+"As you can see, the results are very different for the different types of "
+"input. Key events are even printed as their key symbols. For example, let's "
+"consider :ref:`InputEventMouseButton <class_InputEventMouseButton>`. It "
+"inherits from the following classes:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:85
+#, fuzzy
+msgid ""
+":ref:`InputEvent <class_InputEvent>` - the base class for all input events"
+msgstr ":ref:`InputEvent <class_InputEvent>`"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:86
+msgid ""
+":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` - adds the "
+"ability to check if modifiers are pressed, such as ``Shift`` or ``Alt``."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:87
+#, fuzzy
+msgid ""
+":ref:`InputEventMouse <class_InputEventMouse>` - adds mouse event "
+"properties, such as ``position``"
+msgstr ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:88
+msgid ""
+":ref:`InputEventMouseButton <class_InputEventMouseButton>` - contains the "
+"index of the button that was pressed, whether it was a double-click, etc."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:90
+msgid ""
+"It's a good idea to keep the class reference open while you're working with "
+"events so you can check the event type's available properties and methods."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:94
+msgid ""
+"You can encounter errors if you try and access a property on an input type "
+"that doesn't contain it - calling ``position`` on ``InputEventKey`` for "
+"example. To avoid this, make sure to test the event type first:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:107
+msgid "InputMap"
+msgstr "InputMap"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:109
+msgid ""
+"The :ref:`InputMap <class_InputMap>` is the most flexible way to handle a "
+"variety of inputs. You use this by creating named input *actions*, to which "
+"you can assign any number of input events, such as keypresses or mouse "
+"clicks. A new Godot project includes a number of default actions already "
+"defined. To see them, and to add your own, open Project -> Project Settings "
+"and select the InputMap tab:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:119
+#, fuzzy
+msgid "Capturing actions"
+msgstr "静态函数"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:121
+msgid ""
+"Once you've defined your actions, you can process them in your scripts using "
+"``is_action_pressed()`` and ``is_action_released()`` by passing the name of "
+"the action you're looking for:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:133
+#, fuzzy
+msgid "Keyboard events"
+msgstr "键盘快捷键"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:135
+msgid ""
+"Keyboard events are captured in :ref:`InputEventKey <class_InputEventKey>`. "
+"While it's recommended to use input actions instead, there may be cases "
+"where you want to specifically look at key events. For this example, let's "
+"check for the \"T\" key:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:148
+#: ../../docs/tutorials/inputs/input_examples.rst:171
+#, fuzzy
+msgid ""
+"See :ref:`@GlobalScope_KeyList <enum_@GlobalScope_KeyList>` for a list of "
+"scancode constants."
+msgstr ""
+"其中一个 :ref:`PropertyHint <enum_ @ GlobalScope_PropertyHint>` 值用作提示。"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:152
+#, fuzzy
+msgid "Keyboard modifiers"
+msgstr "占位符的修饰符"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:154
+msgid ""
+"Modifier properties are inherited from :ref:`InputEventWithModifiers "
+"<class_InputEventWithModifiers>`. This  allows you to check for modifier "
+"combinations using boolean properties. Let's imagine you want one thing to "
+"happen when the \"T\" key is pressed, but something different when it's "
+"\"Shift+T\":"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:175
+#, fuzzy
+msgid "Mouse events"
+msgstr "响应事件"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:177
+msgid ""
+"Mouse events stem from the :ref:`InputEventMouse <class_InputEventMouse>` "
+"class, and are separated into two types: :ref:`InputEventMouseButton "
+"<class_InputEventMouseButton>` and :ref:`InputEventMouseMotion "
+"<class_InputEventMouseMotion>`. Note that this means that all mouse events "
+"will contain a ``position`` property."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:183
+#, fuzzy
+msgid "Mouse buttons"
+msgstr "方便按钮"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:185
+msgid ""
+"Capturing mouse buttons is very similar to handling key events. :ref:"
+"`@GlobalScope_ButtonList <enum_@GlobalScope_ButtonList>` contains a list of "
+"``BUTTON_*`` constants for each possible button, which will be reported in "
+"the event's ``button_index`` property. Note that the scrollwheel also counts "
+"as a button - two buttons, to be precise, with both ``BUTTON_WHEEL_UP`` and "
+"``BUTTON_WHEEL_DOWN`` being separate events."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:202
+#, fuzzy
+msgid "Mouse motion"
+msgstr "旋转"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:204
+msgid ""
+":ref:`InputEventMouseMotion <class_InputEventMouseMotion>` events occur "
+"whenever the mouse moves. You can find the move's distance with the "
+"``relative`` property."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:208
+msgid ""
+"Here's an example using mouse events to drag-and-drop a :ref:`Sprite "
+"<class_Sprite>` node:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:234
+#, fuzzy
+msgid "Touch events"
+msgstr "输入事件"
+
+#: ../../docs/tutorials/inputs/input_examples.rst:236
+msgid ""
+"If you are using a touchscreen device, you can generate touch events. :ref:"
+"`InputEventScreenTouch <class_InputEventScreenTouch>` is equivalent to a "
+"mouse click event, and :ref:`InputEventScreenDrag "
+"<class_InputEventScreenDrag>` works much the same as mouse motion."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/input_examples.rst:241
+msgid ""
+"To test your touch events on a non-touchscreen device, open Project Settings "
+"and go to the \"Input Devices/Pointing\" section. Enable \"Emulate Touch "
+"From Mouse\" and your project will interpret mouse clicks and motion as "
+"touch events."
+msgstr ""

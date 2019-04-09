@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,7 +104,8 @@ msgstr ""
 "переменные по дизайну"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
-msgid "Autoloading nodes and scripts caters to this need."
+#, fuzzy
+msgid "Autoloading nodes and scripts can give us these characteristics."
 msgstr "Автозагрузка удовлетворяет наши потребности."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
@@ -269,6 +270,11 @@ msgid ""
 "completed. Thus, the current scene will not be removed while it is still "
 "being used (i.e. its code is still running)."
 msgstr ""
+"Используя: ref: `Object.call_deferred () "
+"<class_Object_method_call_deferred>`, вторая функция будет запускаться "
+"только после завершения всего кода из текущей сцены. Таким образом, текущая "
+"сцена не будет удалена, пока она все еще используется (то есть ее код все "
+"еще выполняется)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 msgid ""
@@ -281,9 +287,10 @@ msgid "and"
 msgstr "и"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
+#, fuzzy
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
-"button!"
+"button."
 msgstr ""
 "Запустите проект и проверьте, что вы можете переключаться между сценами, "
 "нажав кнопку!"

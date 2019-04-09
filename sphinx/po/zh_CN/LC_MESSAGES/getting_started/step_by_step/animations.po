@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,10 +92,11 @@ msgid "The logo will appear from the top of the screen."
 msgstr "标志将出现在屏幕的顶部。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:52
+#, fuzzy
 msgid ""
 "With the animation editor panel open, select the \"logo\" node and set the "
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
-"next to the property:"
+"next to the property to add a keyframe:"
 msgstr ""
 "打开动画编辑器面板，选择`logo`节点，将`Rect / Position`属性设置为"
 "`(118，-400)`，按下属性旁边的按键:"
@@ -109,13 +110,15 @@ msgid "The keyframe will be added in the animation player editor:"
 msgstr "关键帧将添加到动画播放器编辑器:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:64
-msgid "Move the editor cursor to the end by clicking here:"
+#, fuzzy
+msgid "Move the editor cursor forward in time by clicking here:"
 msgstr "点击这里，将编辑器光标移到末尾:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:68
+#, fuzzy
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
-"keyframes, the animation happens."
+"keyframes with different values, the animation happens."
 msgstr ""
 "将logo的位置改为·(118,0)·，并再次添加一个关键帧。有了两个关键帧，动画就发生"
 "了。"

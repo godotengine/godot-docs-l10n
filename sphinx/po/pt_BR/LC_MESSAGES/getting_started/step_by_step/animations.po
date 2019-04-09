@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,10 +100,11 @@ msgid "The logo will appear from the top of the screen."
 msgstr "O logotipo aparecerá na parte superior da tela."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:52
+#, fuzzy
 msgid ""
 "With the animation editor panel open, select the \"logo\" node and set the "
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
-"next to the property:"
+"next to the property to add a keyframe:"
 msgstr ""
 "Com o painel do editor de animação aberto, selecione o nó \"logo\" e defina "
 "a propriedade \"Rect / Position\" para \"(118, -400)\" e pressione o botão "
@@ -120,13 +121,15 @@ msgid "The keyframe will be added in the animation player editor:"
 msgstr "O quadro-chave será adicionado ao editor do player de animação:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:64
-msgid "Move the editor cursor to the end by clicking here:"
+#, fuzzy
+msgid "Move the editor cursor forward in time by clicking here:"
 msgstr "Mova o cursor do editor para o final, clicando aqui:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:68
+#, fuzzy
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
-"keyframes, the animation happens."
+"keyframes with different values, the animation happens."
 msgstr ""
 "Mude a posição do logo para `` (118, 0) `` e adicione um quadro-chave "
 "novamente. Com dois quadros-chave, a animação acontece."

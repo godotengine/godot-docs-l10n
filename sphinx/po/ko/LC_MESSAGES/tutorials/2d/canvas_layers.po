@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,12 +33,18 @@ msgid ""
 "they will inherit their transform. This means that when moving the parent, "
 "the children will be moved too."
 msgstr ""
+":ref:`Node2D <class_Node2D>` 또는 :ref:`Control <class_Control>`와 같은 2D 노"
+"드는 모든 2D 노드의 기초가 되는 :ref:`CanvasItem <class_CanvasItem>`로부터 상"
+"속됩니다. CanvasItems은 트리 형태로 배열될 수 있고 변형을 상속받게 됩니다. 이"
+"는 부모를 옮길 때 자식들도 함께 움직이는 것을 의미합니다."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
 msgid ""
 "These nodes are placed as direct or indirect children of a :ref:`Viewport "
 "<class_Viewport>`, and will be displayed through it."
 msgstr ""
+"이러한 노드는 뷰포트의 간접 또는 직접적인 자식으로 배치되고 이를 통해 보여집"
+"니다."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
 msgid ""
@@ -48,14 +54,23 @@ msgid ""
 "transform. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
+"뷰포트는 :ref:`Viewport.canvas_transform "
+"<class_Viewport_property_canvas_transform>` 속성을 가지는데 사용자 정의 :ref:"
+"`Transform2D <class_Transform2D>` 변형을 통해 모든 CanvasItem 계층을 변형할 "
+"수 있습니다. :ref:`Camera2D <class_Camera2D>`와 같은 노드는 이 변형을 바꾸는 "
+"것에 의해 작동됩니다."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:25
+#, fuzzy
 msgid ""
 "Changing the canvas transform is useful because it is a lot more efficient "
 "than moving the root canvas item (and hence the whole scene). Canvas "
 "transform is a simple matrix that offsets the whole 2D drawing, so it's the "
 "most efficient way to do scrolling."
 msgstr ""
+"캔버스를 변형하는 것은 루트 캔버스 아이템(전체 씬)을 움직이는 것보다 많은 효"
+"율이 있으므로 유용합니다. 캔버스 변형은 전체 2D 그림을 상쇄하는 간단한 행렬입"
+"니다. 그래서 스크롤 하기에 대부분 효율적인 방법입니다."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid "Not enough..."
@@ -67,28 +82,35 @@ msgid ""
 "application may not want *everything* transformed by the canvas transform. "
 "Examples of this are:"
 msgstr ""
+"하지만 이 방법이 충분하지 않습니다. 게임이나 어플리케이션에서 캔버스 변형에 "
+"의해 모든 것이 변형되는 것을 종종 원하지 않는 상황이 있습니다. 다음과 같은 "
+"예:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:37
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
-msgstr ""
+msgstr "**페럴렉스 배경**: 무대 나머지 부분보다 느리게 움직이는 배경."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid ""
 "**HUD**: Heads-up display, or user interface. If the world moves, the life "
 "counter, score, etc. must stay static."
 msgstr ""
+"**HUD**: 전방 표시 장치(Heads-up display) 또는 사용자 인터페이스. 세상이 움직"
+"이면 목숨, 점수와 같은 것은 정적인 상태를 유지해야 합니다."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:41
 msgid ""
 "**Transitions**: Effects used for transitions (fades, blends) may also want "
 "it to remain at a fixed location."
 msgstr ""
+"**전환**: 전환에 사용되는 효과(페이드, 혼합)가 고정된 위치에 남아 있기를 원"
+"할 수 있습니다."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:44
 msgid "How can these problems be solved in a single scene tree?"
-msgstr ""
+msgstr "단일 씬 트리에서 어떻게 이 문제들을 해결할 수 있을까요?"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:47
 msgid "CanvasLayers"
@@ -104,6 +126,12 @@ msgid ""
 "transform and do not depend on the transform of other layers. This allows "
 "the UI to be fixed in-place while the world moves."
 msgstr ""
+"이 해답은 자식들과 자손들에 분리된 2D 렌더링 레이어를 추가하는 :ref:"
+"`CanvasLayer <class_CanvasLayer>` 노드에 있습니다. 뷰포트 자식들은 기본적으"
+"로 \"0\" 레이어에 그려집니다. 반면에 CanvasLayer는 아무 숫자 레이어에 그려집"
+"니다. 더 큰 숫자를 가진 레이어가 위에 그려집니다. 또한 각 CanvasLayers 만의 "
+"변형을 가지고 다른 레이어의  변형에 의존하지 않습니다. 이것은 세계가 움직이"
+"는 동안에 UI를 고정될 수 있게 해줍니다."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:58
 msgid ""
@@ -113,20 +141,25 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:62
+#, fuzzy
 msgid "Here's a diagram of how it looks:"
-msgstr ""
+msgstr "도표는 다음과 같습니다:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:66
+#, fuzzy
 msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
 "layer number, so they can be instantiated when needed."
 msgstr ""
+"CanvasLayer들은 트리 순서에 독립적이고 레이어 수에만 의존합니다. 그래서 필요"
+"할 때 인스턴스화 될 수 있습니다."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:70
 msgid "Performance"
 msgstr "성능"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:72
+#, fuzzy
 msgid ""
 "Even though there shouldn't be any performance limitation, it is not advised "
 "to use excessive amount of layers to arrange drawing order of nodes. The "
@@ -134,3 +167,8 @@ msgid ""
 "have a property for controlling their drawing order (see :ref:`Node2D."
 "z_index <class_Node2D_property_z_index>`)."
 msgstr ""
+"Even though there shouldn't be any performance limitation, 노드의 그리기 순서"
+"를 정렬하기 위해 과도한 양의 레이어를 사용하는 것은 권장하지 않습니다. 대부"
+"분 최적의 방법은 항상 트리 순서에 따라 정렬해야 합니다. 또한 2d 노드들은 그리"
+"기 순서를 제어할 수 있는 속성이 있습니다(:ref:`Node2D.z_index "
+"<class_Node2D_property_z_index>`를 참고하세요)."

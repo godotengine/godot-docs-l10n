@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
 msgid "Using tilemaps"
-msgstr ""
+msgstr "Использование карт тайлов"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
 msgid "Introduction"
@@ -31,16 +31,22 @@ msgid ""
 "start with a bunch of reference tiles (or pieces) that can be put on a grid, "
 "as many times each as desired - think of it like a map editor:"
 msgstr ""
+"Карты тайлов это простой и быстрой способ создания игровых уровней в 2D. По "
+"сути, вы начинаете с составления коллекции тайлов (или частей) которые могут "
+"быть помещены на сетку, в том количестве насколько это требуется - подобно "
+"редактору карт:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:15
 msgid ""
 "Collisions can also be added to the tiles, allowing for both 2D side "
 "scrolling and top down games."
 msgstr ""
+"Коллизии могут также быть добавлены на тайлы, позволяя использовать себя, "
+"как в 2D играх с боковой прокруткой так и в играх с видом сверху."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:19
 msgid "Making a tileset"
-msgstr ""
+msgstr "Создание набора тайлов"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid ""
@@ -49,6 +55,11 @@ msgid ""
 "packers* that will generate these spritesheets out of your separate texture "
 "files. Having them as separate images also works."
 msgstr ""
+"Для начала, необходимо создать набор тайлов. Здесь находятся некоторые тайлы "
+"для этого. Они все находятся в одной картинке для оптимизации. Они также "
+"называются *текстурными упаковками* которые генерируют эти спрайт-листы из "
+"ваших отдельных текстурных файлов. Также для этого можно использовать и "
+"отдельные картинки."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid ""
@@ -57,6 +68,10 @@ msgid ""
 "will cause issues later. ``Mipmaps`` should already be disabled; if not, "
 "disable this too."
 msgstr ""
+"Создайте новый проект и переместите вышерасположенную PNG-картинку в "
+"директорию. Затем, откройте настройки импорта картинки и выключите "
+"``Filter``, если он будет включен это вызовет проблемы далее. ``Mipmaps`` "
+"уже должен быть отключен; если нет, отключите его тоже."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:33
 msgid ""

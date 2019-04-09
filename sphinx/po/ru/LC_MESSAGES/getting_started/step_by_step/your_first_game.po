@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -629,10 +629,11 @@ msgstr ""
 "нескольку раз."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
+#, fuzzy
 msgid ""
 "Disabling the area's collision shape can cause an error if it happens in the "
-"middle of the engine's collision processing. Using ``call_deferred()`` "
-"allows us to have Godot wait to disable the shape until it's safe to do so."
+"middle of the engine's collision processing. Using ``set_deferred()`` allows "
+"us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
 "Отключение зоны столкновения может привести к ошибке, если это произойдет во "
 "время обработки столкновений движка. Использование ``call_deferred()`` "
@@ -1225,28 +1226,24 @@ msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "Text: ``Уворачивайся от крипов!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
-#, fuzzy
 msgid "*Layout* : \"HCenter Wide\""
-msgstr "``Макет``: \"Center\""
+msgstr "``Макет``: \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:940
 msgid "StartButton"
 msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:942
-#, fuzzy
 msgid "*Text* : ``Start``"
-msgstr "Text: ``Start``"
+msgstr "*Текст* : ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:943
-#, fuzzy
 msgid "*Layout* : \"Center Bottom\""
-msgstr "``Layout``: \"Center Bottom\""
+msgstr "``Слой``: \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:944
-#, fuzzy
 msgid "*Margin* :"
-msgstr "Поле"
+msgstr "*Отступ* :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Top: ``-200``"

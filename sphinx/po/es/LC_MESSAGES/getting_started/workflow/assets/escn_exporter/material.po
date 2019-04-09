@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,9 +97,8 @@ msgstr ""
 "Ninguno - No buscar materiales. Expórtalos desde el archivo de Blender."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
-#, fuzzy
 msgid "Export of Cycles/EEVEE materials"
-msgstr "Exportar materiales de Blender"
+msgstr "Exportar materiales de Cycles/EEVEE"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
 msgid ""
@@ -143,16 +142,16 @@ msgstr ""
 "correcto. Otras están basadas en aproximación."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
-#, fuzzy
 msgid ""
 "Sometimes materials may not be valid for exporting (e.g. has some "
 "unsupported node) or it is using Blender Internal Engine, only the diffuse "
 "color and a few flags (e.g. unshaded) are exported and form a Spatial "
 "Material."
 msgstr ""
-"La otra forma en que los materiales pueden ser tratados es que el exportador "
-"los exporte desde Blender. Actualmente sólo se exportan diffuse color y "
-"algunos flags (por ejemplo, unshaded)."
+"A veces los materiales pueden no ser válidos para ser exportados (por "
+"ejemplo, tiene algún nodo no soportado) o está usando Blender Internal "
+"Engine, sólo se exportan el color difuso y unos pocos flags (por ejemplo, "
+"unshaded) y forman un Spatial Material."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
 msgid "Generate external materials"

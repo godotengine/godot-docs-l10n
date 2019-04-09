@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,27 +26,25 @@ msgid "Introduction"
 msgstr "Wprowadzenie"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
-#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Przed Godotem 3.0, jedynym językiem do programowania gry było użycie :ref:"
-"`doc_gdscript`. Obecnie Godot ma cztery (tak, cztery!) języki oficjalnie "
-"wspierane i możliwość dynamicznego dodawania dodatkowych języków skryptowych!"
+"Przed wersją 3.0 Godota, :ref:`doc_gdscript` był jedynym językiem, którego "
+"można było użyć do oskryptowania gry. Obecnie Godot wspiera cztery (tak, "
+"cztery!) języki, a także możliwość dynamicznego dodawania innych języków "
+"skryptowych!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
-"Jest to wspaniałe, głównie ze względu na dużą elastyczność, ale również "
-"utrudnia naszą pracę w zakresie języków pomocniczych."
+"To wspaniałe, głównie ze względu na dużą elastyczność, jednak im więcej "
+"języków, tym więcej pracy trzeba włożyć w ich utrzymanie."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
-#, fuzzy
 msgid ""
 "The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
@@ -54,26 +52,24 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
-"\"Głównymi\" językami Godota są GDScript i VisualScript. Głównym powodem ich "
-"wyboru jest poziom integracji z Godotem, ponieważ sprawia to, że "
-"doświadczenie jest płynniejsze; obie mają płynną integrację z edytorem, "
-"podczas gdy C# i C++ muszą być edytowane w oddzielnym IDE. Jeśli jesteś "
-"wielkim fanem statycznie typowanych języków, to zacznij korzystać z C# i C++."
+"\"Domyślnymi\" językami dla Godota są GDScript i VisualScript - są "
+"funkcjonalne, wydajne i oferują dobrą integrację z edytorem. Jeśli jesteś "
+"wielkim fanem statycznie typowanych języków, możesz użyć C++ lub C#, jednak "
+"konieczne jest użycie zewnętrznego IDE."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
 msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript` jest, jak wspomniano powyżej, głównym językiem używanym "
-"w Godot. Używanie go ma kilka pozytywów w porównaniu z innymi językami ze "
-"względu na jego wysoką integrację z Godotem:"
+":ref:`GDScript<doc_gdscript>` jest, jak wspomniano powyżej, domyślnym "
+"językiem dla Godota, głównie ze względu na wysoki stopień integracji z "
+"programem. Ma kilka zalet nad innymi językami:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -278,16 +274,15 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "Pisanie skryptu umożliwiającego dostęp do innych węzłów sceny."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
-"Zanim przejdziesz dalej, przeczytaj odnośnik :ref:`doc_gdscript`. Jest to "
-"język zaprojektowany tak, aby był prosty, a tekst jest krótki, więc nie "
-"zajmie więcej niż kilka minut, aby uzyskać ogólne pojęcie."
+"Zanim przejdziesz dalej, przeczytaj dokument o :ref:"
+"`GDScript<doc_gdscript>`. Tekst nie jest długi, a język jest dość prosty, "
+"więc zorientowanie się w nim zajmie co najwyżej kilka minut."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"
@@ -351,13 +346,12 @@ msgstr ""
 "ustawienie języka skryptu, nazwy klasy i innych opcji."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
-#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"W skrypcie GDScript sam plik reprezentuje klasę, więc pole nazwy klasy nie "
-"jest edytowalne."
+"W GDScript to plik reprezentuje klasę, więc pole nazwy klasy nie jest "
+"edytowalne."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
 msgid ""

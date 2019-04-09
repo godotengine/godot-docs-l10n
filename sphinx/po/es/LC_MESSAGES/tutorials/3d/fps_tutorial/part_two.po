@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -760,36 +760,41 @@ msgstr "Analicemos el script:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:497
 msgid "First we define a few class variables:"
-msgstr ""
+msgstr "Primero, declaramos unas cuantas clases variables:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:499
 msgid "``BULLET_SPEED``: The speed at which the bullet travels."
-msgstr ""
+msgstr "``BULLET_SPEED``: La velocidad a la que la bala viaja."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:500
 msgid ""
 "``BULLET_DAMAGE``: The damage the bullet will cause to anything with which "
 "it collides."
 msgstr ""
+"``BULLET_DAMAGE``: El daño que causa una bala cuando colisiona con algo."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:501
 msgid "``KILL_TIMER``: How long the bullet can last without hitting anything."
 msgstr ""
+"``KILL_TIMER``: El tiempo que la bala puede viajar sin colisionar con algo."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:502
 msgid "``timer``: A float for tracking how long the bullet has been alive."
-msgstr ""
+msgstr "Un float para saber cuanto tiempo la bala ha estado viva."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:503
 msgid ""
 "``hit_something``: A boolean for tracking whether or not we've hit something."
 msgstr ""
+"``hit_something``: Un boolean para saber si hemos colisionado con algo o no."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:505
 msgid ""
 "With the exception of ``timer`` and ``hit_something``, all of these "
 "variables change how the bullet interacts with the world."
 msgstr ""
+"Salvo las excepciones de ``timer``y ``hit_something``, todas estas variables "
+"cambian como la bala interactua con su ambiente."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:508
 msgid ""
@@ -797,6 +802,9 @@ msgid ""
 "get a bullet travelling forever. By using a kill timer, we can ensure that "
 "no bullets will travel forever and consume resources."
 msgstr ""
+"La razon por la cual utilizamos un contador es para que no ocurra el caso en "
+"el que la bala viaja infinitamente. Al utilizar un contador, nos aseguramos "
+"que ninguna bala viajara infinitamente ni consumira recursos."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:512
 msgid ""
@@ -807,6 +815,12 @@ msgid ""
 "need to change the damage and speed of these bullets, so we need them to be "
 "variables and not constants."
 msgstr ""
+"Tal cual es presentado en:ref:`doc_fps_tutorial_part_one`, hay dos variables "
+"con solo mayusculas. La razon por esto es la misma a la razon presentadada "
+"en :ref:`doc_fps_tutorial_part_one`: queremos tratar estas variables como "
+"constantes, pero queremos poder cambiarlas. En este caso necesitaremos "
+"cambiar el daño y la velocidad de las balas mas tarde, por lo tanto, "
+"necesitaremos que sean variables y no constantes."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:519
 msgid ""

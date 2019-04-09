@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr ""
+msgstr "Changelog de la documentation"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -28,6 +28,11 @@ msgid ""
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"La documentation est continuellement en cours d'amélioration. La sortie de "
+"la version 3.1 comprend de nombreux nouveaux tutoriels, de nombreuses "
+"corrections et mises à jour pour les anciens tutoriels, ainsi que de "
+"nombreuses mises à jour de class reference. Ci-dessous, une liste des "
+"nouveaux tutoriels ajoutés depuis la version 3.0."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -35,86 +40,84 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"Ce document ne contient que les nouveaux tutoriels, il ne reflète pas "
+"l'étendue des changements; de nombreux tutoriels ont été mis à jour de façon "
+"substantielle mais ne sont pas listés dans ce document."
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.0"
-msgstr ""
+msgstr "Nouveaux tutoriels depuis la version 3.0"
 
 #: ../../docs/about/docs_changelog.rst:17
-#, fuzzy
 msgid "Step-by-step"
 msgstr "Pas à pas"
 
 #: ../../docs/about/docs_changelog.rst:19
-#, fuzzy
 msgid ":ref:`Signals <doc_signals>`"
-msgstr ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`Signaux <doc_signaux>`"
 
 #: ../../docs/about/docs_changelog.rst:20
-#, fuzzy
 msgid ":ref:`Exporting <doc_exporting>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`Exporter <doc_exporter>`"
 
 #: ../../docs/about/docs_changelog.rst:23
 msgid "Project workflow"
 msgstr "Gestion de projet"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid "Best Practices:"
-msgstr "Les meilleures pratiques"
+msgstr "Les Meilleures Pratiques :"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Introduction <doc_introduction_best_practices>`"
-msgstr ""
+msgstr ":ref:`Introduction <doc_introduction_best_practices>`"
 
 #: ../../docs/about/docs_changelog.rst:26
 msgid ":ref:`What are Godot classes <doc_what_are_godot_classes>`"
-msgstr ""
+msgstr ":ref:`Que sont les Classes Godot <doc_que_sont_les_classes_godot>`"
 
 #: ../../docs/about/docs_changelog.rst:27
-#, fuzzy
 msgid ":ref:`Scene organization <doc_scene_organization>`"
-msgstr ":ref:`Pipeline d’animation <doc_animations>`"
+msgstr ":ref:`Organisation des Scènes <doc_organisation_scenes>`"
 
 #: ../../docs/about/docs_changelog.rst:28
 msgid ":ref:`Scenes versus scripts <doc_scenes_versus_scripts>`"
-msgstr ""
+msgstr ":ref:`Scènes VS scripts <doc_scenes_versus_scripts>`"
 
 #: ../../docs/about/docs_changelog.rst:29
 msgid ""
 ":ref:`Autoloads versus internal nodes <doc_autoloads_versus_internal_nodes>`"
 msgstr ""
+":ref:`Chargements automatiques VS nœuds internes "
+"<doc_chargements_automatiques_versus_noeuds_internes>`"
 
 #: ../../docs/about/docs_changelog.rst:30
 msgid ":ref:`Node alternatives <doc_node_alternatives>`"
-msgstr ""
+msgstr ":ref:`Nœuds alternatifs <doc_noeuds_alternatifs>`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`Godot interfaces <doc_godot_interfaces>`"
-msgstr ""
+msgstr ":ref:`Interfaces de Godot <doc_interfaces_godot>`"
 
 #: ../../docs/about/docs_changelog.rst:32
-#, fuzzy
 msgid ":ref:`Godot notifications <doc_godot_notifications>`"
-msgstr ":ref:`Pipeline d’animation <doc_animations>`"
+msgstr ":ref:`Notifications de Godot <doc_notifications_godot>`"
 
 #: ../../docs/about/docs_changelog.rst:33
 msgid ":ref:`Data preferences <doc_data_preferences>`"
-msgstr ""
+msgstr ":ref:`Préférences des données <doc_data_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid ":ref:`Logic preferences <doc_logic_preferences>`"
-msgstr ""
+msgstr ":ref:`Préférences des logiques <doc_preferences_logiques>`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid "Scripting"
 msgstr "Les scripts"
 
 #: ../../docs/about/docs_changelog.rst:39
-#, fuzzy
 msgid ":ref:`Typed GDscript <doc_gdscript_static_typing>`"
-msgstr ":ref:`Built-in <doc_gdscript_builtin_types>`"
+msgstr ":ref:`GDscript Dactylographié <doc_gdscript_dactylographie>`"
 
 #: ../../docs/about/docs_changelog.rst:42
 msgid "2D"
@@ -122,33 +125,35 @@ msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:44
 msgid ":ref:`2D lights and shadows <doc_2d_lights_and_shadows>`"
-msgstr ""
+msgstr ":ref:`Lumières 2D et ombres <doc_lumieres_2d_et_ombres>`"
 
 #: ../../docs/about/docs_changelog.rst:45
 msgid ":ref:`2D meshes <doc_2d_meshes>`"
-msgstr ""
+msgstr ":ref:`Mailles 2D <doc_mailles_2d>`"
 
 #: ../../docs/about/docs_changelog.rst:48
 msgid "3D"
 msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:50
-#, fuzzy
 msgid ":ref:`CSG <doc_csg_tools>`"
-msgstr ":ref:`CSGBox <class_CSGBox>`"
+msgstr ":ref:`CSG <class_csg_outils>`"
 
 #: ../../docs/about/docs_changelog.rst:51
-#, fuzzy
 msgid ""
 ":ref:`Animating thousands of fish with MultiMesh "
 "<doc_animating_thousands_of_fish>`"
-msgstr "Animer des milliers de poissons avec MeshInstance"
+msgstr ""
+":ref: `Animer des milliers de poissons avec MultiMesh "
+"<doc_animer_des_milliers_de_poissons>`"
 
 #: ../../docs/about/docs_changelog.rst:52
 msgid ""
 ":ref:`Controlling thousands of fish with Particles "
 "<doc_controlling_thousands_of_fish>`"
 msgstr ""
+":ref:`Contrôler des milliers de poissons avec des Particules "
+"<doc_controler_des_milliers_de_poissons>`"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid "Physics"
@@ -156,11 +161,11 @@ msgstr "Physique"
 
 #: ../../docs/about/docs_changelog.rst:57
 msgid ":ref:`Ragdoll system <doc_ragdoll_system>`"
-msgstr ""
+msgstr ":ref:`Système de ragdoll <doc_ragdoll_system>`"
 
 #: ../../docs/about/docs_changelog.rst:58
 msgid ":ref:`Softbody <doc_soft_body>`"
-msgstr ""
+msgstr ":ref:`Softbody <doc_soft_body>`"
 
 #: ../../docs/about/docs_changelog.rst:61
 msgid "Animation"
@@ -168,34 +173,36 @@ msgstr "Animation"
 
 #: ../../docs/about/docs_changelog.rst:63
 msgid ":ref:`2D skeletons <doc_2d_skeletons>`"
-msgstr ""
+msgstr ":ref:`Squelettes 2D <doc_squelettes_2d>`"
 
 #: ../../docs/about/docs_changelog.rst:64
-#, fuzzy
 msgid ":ref:`AnimationTree <doc_animation_tree>`"
-msgstr ":ref:`Pipeline d’animation <doc_animations>`"
+msgstr ":ref:`Arbre d'Animations <doc_animations_tree>`"
 
 #: ../../docs/about/docs_changelog.rst:67
+#, fuzzy
 msgid "Viewports"
-msgstr "Viewports"
+msgstr "Multifenêtrages"
 
 #: ../../docs/about/docs_changelog.rst:69
 msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
-msgstr ""
+msgstr ":ref:`Utiliser une Vue comme une texture <doc_vue_comme_texture>`"
 
 #: ../../docs/about/docs_changelog.rst:70
 msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
-msgstr ""
+msgstr "ref:`Post-traitement personnalisé <doc_custom_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:73
 msgid "Shading"
-msgstr "Shaders"
+msgstr "Ombrage"
 
 #: ../../docs/about/docs_changelog.rst:75
 msgid ""
 ":ref:`Intro to shaders: 2D and 3D water (7 video tutorials) "
 "<doc_intro_to_shaders_water_workshop>`"
 msgstr ""
+":ref:`Introduction aux shaders: Eau 2D et 3D (7 tutoriels vidéo) "
+"<doc_intro_aux_shaders_workshop>`"
 
 #: ../../docs/about/docs_changelog.rst:76
 msgid ""
@@ -211,36 +218,31 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:78
 msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
-msgstr ""
+msgstr ":ref:`Post-traitement avancé <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
 msgid "Shading Reference:"
-msgstr "Référence de shading"
+msgstr "Référence de shading :"
 
 #: ../../docs/about/docs_changelog.rst:81
-#, fuzzy
 msgid ":ref:`Shaders <doc_shaders>`"
-msgstr ":ref:`Facilité d’écriture de Shaders <doc_shading_language>`"
+msgstr ":ref:`Shaders <doc_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:82
-#, fuzzy
 msgid ":ref:`Shading language <doc_shading_language>`"
-msgstr ":ref:`Facilité d’écriture de Shaders <doc_shading_language>`"
+msgstr ":ref:`langage de shading <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:83
-#, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ":ref:`Facilité d’écriture de Shaders <doc_shading_language>`"
+msgstr ":ref:`Shaders spatiaux <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:84
 msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
 msgid ":ref:`Particles shaders <doc_particle_shader>`"
-msgstr ":ref:`Facilité d’écriture de Shaders <doc_shading_language>`"
+msgstr ":ref:`Shaders de particule <doc_particle_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:88
 msgid "VR"
@@ -248,17 +250,18 @@ msgstr "Réalité virtuelle"
 
 #: ../../docs/about/docs_changelog.rst:90
 msgid ":ref:`VR starter tutorial <doc_vr_starter_tutorial>`"
-msgstr ""
+msgstr "ref:`Tutoriel de démarrage VR <doc_vr_starter_tutorial>`"
 
 #: ../../docs/about/docs_changelog.rst:93
 msgid "Platform-specific"
 msgstr "Spécifique à la plateforme"
 
 #: ../../docs/about/docs_changelog.rst:95
-#, fuzzy
 msgid ""
 ":ref:`Customizing the Web export HTML page <doc_customizing_html5_shell>`"
-msgstr "Personnalisation de la page HTML d'exportation Web"
+msgstr ""
+":ref:`Personnaliser l'exportation Web de la page HTML "
+"<doc_personnaliser_html5_page>`"
 
 #: ../../docs/about/docs_changelog.rst:98
 msgid "Multi-threading"
@@ -274,21 +277,21 @@ msgstr "Divers"
 
 #: ../../docs/about/docs_changelog.rst:105
 msgid ":ref:`Fixing jitter and stutter <doc_jitter_stutter>`"
-msgstr ""
+msgstr ":ref:`Réparer jitter et stutter <doc_jitter_stutter>`"
 
 #: ../../docs/about/docs_changelog.rst:106
 msgid ":ref:`Running code in the editor <doc_running_code_in_the_editor>`"
-msgstr ""
+msgstr ":ref:`Lancer le code dans l'éditeur <doc_lancer_le_code_dans_editeur>`"
 
 #: ../../docs/about/docs_changelog.rst:107
 msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
 msgstr ""
+":ref:`Changer les scènes manuellement <doc_changer_scenes_manuellement>`"
 
 #: ../../docs/about/docs_changelog.rst:108
-#, fuzzy
 msgid ""
 ":ref:`Differences between GLES2 and GLES3 <doc_gles2_gles3_differences>`"
-msgstr "Différences entre GLES2 et GLES3"
+msgstr ":ref:`Différences entre GLES2 et GLES3 <doc_gles2_gles3_differences>`"
 
 #: ../../docs/about/docs_changelog.rst:111
 msgid "Compiling"
@@ -297,32 +300,32 @@ msgstr "Compilation"
 #: ../../docs/about/docs_changelog.rst:113
 msgid ":ref:`Optimizing a build for size <doc_optimizing_for_size>`"
 msgstr ""
+":ref:`Optimisation d'un build pour la taille <doc_optimizing_for_size>`"
 
 #: ../../docs/about/docs_changelog.rst:114
 msgid ""
 ":ref:`Compiling with script encryption key "
 "<doc_compiling_with_script_encryption_key>`"
 msgstr ""
+":ref:`Compiler avec un script de clé de cryptage "
+"<doc_compiler_avec_script_cle_cryptage>`"
 
 #: ../../docs/about/docs_changelog.rst:117
 msgid "Engine development"
 msgstr "Développement du moteur"
 
 #: ../../docs/about/docs_changelog.rst:119
-#, fuzzy
 msgid ""
 ":ref:`Binding to external libraries <doc_binding_to_external_libraries>`"
-msgstr ":ref:`Les éditeurs externes sont possibles <doc_external_editor>`"
+msgstr ":ref:`Lier aux librairies externes <doc_librairies_externes>`"
 
 #: ../../docs/about/docs_changelog.rst:122
-#, fuzzy
 msgid "Creating content"
 msgstr "Création de contenu"
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`Making trees <doc_making_trees>`"
-msgstr ":ref:`Pipeline d’animation <doc_animations>`"
+msgstr "ref:`Faire des arbres <doc_making_trees>`"
 
 #: ../../docs/about/docs_changelog.rst:127
 msgid "Plugins"
@@ -333,6 +336,5 @@ msgid ":ref:`Making main screen plugins <doc_making_main_screen_plugins>`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:130
-#, fuzzy
 msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
-msgstr ":ref:`Pipeline d’animation <doc_animations>`"
+msgstr "ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"

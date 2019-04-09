@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,9 +72,8 @@ msgid "In the above picture, Scene B was added to Scene A as an instance."
 msgstr "Na powyższym zdjęciu Scena B została dodana do Sceny A."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
-#, fuzzy
 msgid "Instancing by example"
-msgstr "Instancjowanie w przykładzie"
+msgstr "Instancjowanie na przykładzie"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
@@ -170,24 +169,26 @@ msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
+"Otwórz scenę ``Kula`` i dodaj ``Materiał fizyczny`` przez kliknięcie na "
+"strzałkę w dół i wybranie \"Nowy materiał fizyczny\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr ""
+"Następnie, rozwiń materiał przez kliknięcie na niego i ustawienie "
+"właściwości \"Obcicie\" na \"1\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
-#, fuzzy
 msgid ""
 "Press \"Play\" and notice that all of the instanced balls are now much more "
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
-"Otwórz scenę ``Ball`` i zmień właściwość ``Bounce``(Skoczność) w inspektorze "
-"na `1`. Naciśnij \"Odtwórz\" i zauważysz, że wszystkie instancje piłki "
-"lepiej się odbijają. Ponieważ instancje piłki są oparte na zapisanej scenie, "
-"zmiany tej sceny będą miały wpływ na wszystkie instancje."
+"Wciśnij \"Graj\". Zauważysz, że wszystkie piłki będące instancjami odbijają "
+"się mocniej. Jako, że bazują one na zapisanej scenie, zmiany w niej mają "
+"wpływ na wszystkie instancje."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
 msgid ""
@@ -220,11 +221,11 @@ msgid "Conclusion"
 msgstr "Wniosek"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:123
-#, fuzzy
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_instancing_continued`."
 msgstr ""
-"Instancjonowanie może być przydatne, gdy chcesz utworzyć wiele kopii tego "
-"samego obiektu."
+"Instancjonowanie może być przydatne, kiedy chcesz utworzyć wiele kopii tego "
+"samego obiektu. Można również tworzyć instancje przy użyciu GDScripta - :ref:"
+"`doc_instancing_continued`."

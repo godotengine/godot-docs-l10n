@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:6
-#, fuzzy
 msgid ""
 "C# support is a new feature available since Godot 3.0. As such, you may "
 "still run into some issues, or find spots where the documentation could be "
@@ -31,13 +30,12 @@ msgid ""
 "issues on the `documentation GitHub page <https://github.com/godotengine/"
 "godot-docs/issues>`_."
 msgstr ""
-"C#支持是Godot 3.0的一个新功能。 因此，您可能仍会遇到一些问题，或者找到可以改"
-"进文档的位置。 请在 `引擎Github页面 <https://github.com/godotengine/godot/"
-"issues>`_ 上报告Godot中C#的问题。 关于 `文档Github Page <https://github.com/"
-"godotengine/godot-docs/issues>`_ 的任何文档问题。"
+"支持C#是3.0版本的一项新功能。因此，您可能会遇到一些问题，或是发现文档中某些需"
+"要改进的地方。请在Godot引擎的GitHub页面 <https://github.com/godotengine/"
+"godot/issues>提交您在使用C#过程中遇到的问题，或者在任意文档讨论区<https://"
+"github.com/godotengine/godot-docs/issues>提交您的问题。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:14
-#, fuzzy
 msgid ""
 "This page provides a brief introduction to C#, both what it is and how to "
 "use it in Godot. Afterwards, you may want to look at :ref:`how to use "
@@ -45,10 +43,10 @@ msgid ""
 "between the C# and the GDScript API <doc_c_sharp_differences>` and (re)visit "
 "the :ref:`Scripting section <doc_scripting>` of the step-by-step tutorial."
 msgstr ""
-"这个页面简要介绍了C#，它是什么以及如何在Godot中使用它。 之后，您可能需要查"
-"看 :ref:`如何使用特定功能 <doc_c_sharp_features>`，阅读 :ref:`C#和GDScript "
-"API之间的差异 <doc_c_sharp_differences>` 和(重新)访问 :ref:`逐步教程的脚本部"
-"分 <doc_scripting>`。"
+"这个页面简单介绍了C#是什么，以及如何在Godot中使用C#。然后，您可能需要查看“如"
+"何使用特定功能<doc_c_sharp_features>”，阅读“C#和GDScript的API之间有何不同"
+"<doc_c_sharp_differences>”，以及（重新）阅读入门教程的“脚本”部分"
+"<doc_scripting>。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:21
 msgid ""
@@ -77,9 +75,8 @@ msgstr ""
 "在其他地方寻找合适的介绍。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:36
-#, fuzzy
 msgid "Setting up C# for Godot"
-msgstr "为Godot设置C#"
+msgstr "在Godot中设置C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:39
 msgid "Windows"
@@ -104,9 +101,8 @@ msgstr ""
 "卡里找到 .NET Framework 4.5 targeting pack，请确保安装。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
-#, fuzzy
 msgid "macOS and Linux"
-msgstr "在Linux上:"
+msgstr "macOS平台及Linux平台"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:53
 msgid ""
@@ -121,47 +117,43 @@ msgstr ""
 "安装。我们只需要为NuGet和MSBuild安装Mono就可以，那正是Godot中C#需要的。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid ""
 "To download Mono on macOS, use the \"Stable Channel\" link from the `Mono "
 "Downloads Page <http://www.mono-project.com/download/>`_. The Visual Studio "
 "channel is an earlier version of Mono and will not work."
 msgstr ""
-"要在Mac上下载Mono v5.12 +，请从“Mono Downloads Page <http://www.mono-project."
-"com/download/>`_ 找到”稳定通道“链接。 Visual Studio频道是Mono的早期版本，不适"
-"用于Godot 3.0.3+。"
+"在macOS平台下载Mono，请使用“Mono下载页面<http://www.mono-project.com/"
+"download/>”中的“稳定通道”链接。Visual Studio通道是Mono早期版本，将无法正常工"
+"作。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:65
-#, fuzzy
 msgid "Additional notes"
-msgstr "附加信息:"
+msgstr "补充说明"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
-#, fuzzy
 msgid ""
 "Your Godot version must have Mono support enabled, so make sure to download "
 "the **Mono version** of Godot. If you are building Godot from source, make "
 "sure to follow the steps to enable Mono support in your build as outlined in "
 "the :ref:`doc_compiling_with_mono` page."
 msgstr ""
-"如果您从源代码构建Godot，请确保按照以下步骤在您的构建中包含Mono支持 :ref:"
-"`doc_compiling_with_mono` 页面。"
+"您的Godot版本必须启用Mono支持，因此请务必下载Godot的**Mono版本**。如果您是从"
+"源代码构建Godot，请确保按照以下页面<doc_compiling_with_mono>内的步骤启用Mono"
+"支持。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:73
-#, fuzzy
 msgid ""
 "In summary, you must have installed Visual Studio or Mono (depending on your "
 "operating system) **and** the Mono-enabled version of Godot."
 msgstr ""
-"总之，您必须已经为您的Godot版本安装了1)正确的Mono SDK版本，以及2)Godo的Mono版"
-"本。"
+"总之，您必须安装Visual Studio或Mono（取决于您使用的操作系统）**和**启用支持"
+"Mono的Godot版本。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:77
 msgid "Configuring an external editor"
 msgstr "配置外部编辑器"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:79
-#, fuzzy
 msgid ""
 "C# support in Godot's script editor is minimal. Consider using an external "
 "IDE or editor, such as  `Visual Studio Code <https://code.visualstudio.com/"
@@ -170,11 +162,11 @@ msgid ""
 "**Editor → Editor Settings** and scroll down to **Mono**. Under **Mono**, "
 "click on **Editor**, and select your external editor of choice."
 msgstr ""
-"虽然Godot确实有自己的脚本编辑器，但它对C#的支持很少，建议您使用外部IDE或编辑"
-"器，如Microsoft Visual Studio Code或MonoDevelop，它们提供自动完成，调试和其他"
-"有用的功能 使用C#时。 要进行设置，请在Godot中单击“编辑器”，然后单击“编辑器设"
-"置”。 向下滚动到“Mono”设置。 在Mono下单击 ``Editor`` ，然后在该页面上选择您选"
-"择的外部编辑器。"
+"Godot的脚本编辑器对C＃支持很少。因此建议您使用考虑使用外部IDE或编辑器，例如"
+"Visual Studio Code编辑器<https://code.visualstudio.com/>或MonoDevelop编辑器。"
+"它们为C＃提供自动代码补全，启用调试和其他有用的功能。要在Godot中选择外部编辑"
+"器，请单击** 编辑器→编辑器设置**并向下滚动到** Mono **。在** Mono **下，单击"
+"** 编辑器 **，然后选择您指定的外部编辑器。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
 msgid ""
@@ -191,17 +183,15 @@ msgid "Creating a C# script"
 msgstr "创建C#脚本"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
-#, fuzzy
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting ``Attach script`` in the context menu of a node in "
 "your scene:"
 msgstr ""
-"成功为Godot设置C#后，在场景中节点的上下文菜单中选择“Attach script”时，应该会"
-"看到以下选项:"
+"成功为Godot设置C＃后，在场景中节点的上下文菜单中选择“连接脚本”时，应该会看到"
+"以下选项："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
-#, fuzzy
 msgid ""
 "Note that while some specifics change, most concepts work the same when "
 "using C# for scripting. If you're new to Godot, you may want to follow the "
@@ -209,9 +199,9 @@ msgid ""
 "documentation still lack C# examples, most concepts can be transferred "
 "easily from GDScript."
 msgstr ""
-"请注意，虽然某些细节发生了变化，但在使用C#进行脚本编写时，大多数情况都是一样"
-"的。 如果您是Godot的新手，您可能需要仔细阅读以下教程 :ref:`doc_scripting`。 "
-"虽然文档中的某些地方仍缺少C#示例，但大多数内容都可以从GDScript轻松转移。"
+"请注意，虽然在某些细节上有所差别，使用C#编写代码时，大多数概念的工作方式是相"
+"通的。如果您是刚接触Godot的新手，您可能需要按照以下教程“脚本”。虽然在文档中缺"
+"乏详细的C#示例，但大部分概念都能够在GDScript轻松地阐述清楚。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:106
 msgid "Project setup and workflow"

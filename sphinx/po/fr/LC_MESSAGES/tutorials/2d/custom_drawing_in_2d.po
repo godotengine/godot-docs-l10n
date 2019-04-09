@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 09:54+0100\n"
+"POT-Creation-Date: 2019-04-09 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -371,7 +371,6 @@ msgstr ""
 "_process(delta)."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:342
-#, fuzzy
 msgid ""
 "We also increment our angle_from and angle_to values here. However, we must "
 "not forget to ``wrap()`` the resulting values between 0 and 360°! That is, "
@@ -388,8 +387,7 @@ msgstr ""
 "correctement, mais les valeurs d'angle deviendront de plus en plus grandes "
 "avec le temps jusqu'à atteindre la valeur entière maximale que Godot peut "
 "gérer (``2^31 - 1``). Lorsque cela se produit, Godot peut planter ou "
-"produire un comportement inattendu. Puisque Godot ne fournit pas de fonction "
-"``wrap()``, nous allons la créer ici, car elle est relativement simple."
+"produire un comportement inattendu."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:349
 msgid ""
