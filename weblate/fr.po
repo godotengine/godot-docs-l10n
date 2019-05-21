@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# A. Dud <totolintello@live.fr>, 2019.
 # Adam AUTUORI <askeridos@hotmail.fr>, 2018-2019.
 # Alexandre Fiale <afiale@agaetis.fr>, 2019.
 # Alex FIALE <alex.fiale@gmail.com>, 2019.
@@ -11,6 +12,7 @@
 # Arthus Belliqueux <contact@arthus.fr>, 2019.
 # Aymen B'm <boxaymen7@gmail.com>, 2018.
 # Baptiste Babu <baptiste.bab@gmail.com>, 2019.
+# Bastien Guyl <bastien@guyl.me>, 2019.
 # Benjamin Dambrine <Scozor@hotmail.com>, 2018-2019.
 # benjamin thilliez <benjamin.thilliez@gmx.com>, 2018.
 # Bresere <berserk172.cl215@gmail.com>, 2018.
@@ -24,6 +26,7 @@
 # David Partouche <david.partouche@gmail.com>, 2018.
 # David Seeeber <tech.davidseeber@gmail.com>, 2019.
 # didier-v <didierv@mac.com>, 2018.
+# Dorian Grolaux <dorian.grolaux@gmail.com>, 2019.
 # Dorian Wouters <perso@elementw.net>, 2019.
 # Dupuis Alexis <dupuis.alexis@yahoo.fr>, 2018.
 # Eric Chirnside <echirnside@gmail.com>, 2018.
@@ -44,10 +47,13 @@
 # keltwookie <keltwookie@protonmail.com>, 2018.
 # Kesitem <kesitem@gmail.com>, 2019.
 # Kevin Bouancheau <kevin.bouancheau@gmail.com>, 2018-2019.
+# Laurent S <mat.uvu@neuf.fr>, 2019.
 # Le Poisson Libre <services@spika.xyz>, 2019.
 # LittleWhite <lw.demoscene@googlemail.com>, 2018.
+# Logesh SHANKAR <logesh.shankar@gmail.com>, 2019.
 # Luc Stepniewski <lior@gradstein.info>, 2018.
 # Ludovic Moge <ludovic.moge@gmail.com>, 2018.
+# manonam <manonam@openmailbox.org>, 2019.
 # Marc THIBAUDET <marcthibaudet@gmail.com>, 2018.
 # Mathieu H <wiiu3dsxl13127@gmail.com>, 2019.
 # Michel Durand <ledragonseveille@gmail.com>, 2018.
@@ -55,6 +61,7 @@
 # mutergfp <lucas.desnoue@free.fr>, 2018.
 # Nathan Lovato <nathan.lovato.art@gmail.com>, 2018.
 # Nathan Vallet <nathanvalletmarseille@gmail.com>, 2018.
+# Nicolas Barbas <nicolas.d.barbas@gmail.com>, 2019.
 # Nicolas Lapointe <nixcocpp@gmail.com>, 2019.
 # Nocta Senestra <nocta@net-c.com>, 2018.
 # Omicron <omicron666.dev@gmail.com>, 2018.
@@ -69,7 +76,7 @@
 # Sagi <tanguy1.husseini@gmail.com>, 2018.
 # salty64 <cedric.arrabie@univ-pau.fr>, 2018.
 # Smiley32 <jeannin.emile@laposte.net>, 2018.
-# Thibaut Magnier <magniertibo@gmail.com>, 2018.
+# Thibaut Magnier <magniertibo@gmail.com>, 2018-2019.
 # Thomas Baijot <thomasbaijot@gmail.com>, 2018.
 # Trystan SARRADE <trystansarrade@gmail.com>, 2018.
 # Valrog <ctop37@gmail.com>, 2018.
@@ -84,8 +91,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-04-09 11:43+0200\n"
-"PO-Revision-Date: 2019-04-09 09:31+0000\n"
-"Last-Translator: Francois Dorval <fdorval@hotmail.com>\n"
+"PO-Revision-Date: 2019-05-21 11:16+0000\n"
+"Last-Translator: Nicolas Barbas <nicolas.d.barbas@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -93,7 +100,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.7-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -104,7 +111,7 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"La documentation de Godot est disponible dans différents langages et "
+"La documentation de Godot est disponible dans différentes langues et "
 "versions. Développez le panneau \"Read the Docs\" en bas du menu latéral de "
 "navigation pour voir la liste."
 
@@ -767,12 +774,12 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Pour les langues nouvelles, le support est possible avec des applications de "
-"3eme en utilisant les fonctionnalités GDNative / NativeScript / "
-"PluginScript. (Veullier voir la question concernant les plugins ci-dessous.) "
-"Des travaux sont actuellement en cours, par exemple, pour mettre en place le "
-"support non-officiel de `Python <https://github.com/touilleMan/godot-"
-"python>`_ et de `Nim <https://github.com/pragmagic/godot-nim>`_."
+"Comme pour les nouveaux langages, le support est possible via des tiers "
+"utilisant les fonctionnalités GDNative / NativeScript / PluginScript. (Voir "
+"la question sur les plugins ci-dessous.) Des travaux sont actuellement en "
+"cours, par exemple, sur les liaisons non officielles pour Godot à `Python "
+"<https://github.com/touilleMan/godot-python>`_ et `Nim <https://github.com/"
+"pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -1108,8 +1115,8 @@ msgid ""
 "consider learning about Containers."
 msgstr ""
 "Pour les interfaces utilisateur, utilisez l':ref:`ancrage "
-"<doc_size_size_and_anchors>` pour déterminer où les contrôles doivent rester "
-"et se déplacer. Si l'UI est plus complexe, songez à vous renseigner sur les "
+"<doc_size_and_anchors>` pour déterminer où les contrôles doivent rester et "
+"se déplacer. Si l'UI est plus complexe, songez à vous renseigner sur les "
 "conteneurs."
 
 #: ../../docs/about/faq.rst:214
@@ -1364,11 +1371,11 @@ msgstr "Pas à pas"
 
 #: ../../docs/about/docs_changelog.rst:19
 msgid ":ref:`Signals <doc_signals>`"
-msgstr ":ref:`Signaux <doc_signaux>`"
+msgstr ":ref:`Signaux <doc_signals>`"
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`Exporting <doc_exporting>`"
-msgstr ":ref:`Exporter <doc_exporter>`"
+msgstr ":ref:`Exporter <doc_exporting>`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/getting_started/workflow/index.rst:2
@@ -1385,11 +1392,11 @@ msgstr ":ref:`Introduction <doc_introduction_best_practices>`"
 
 #: ../../docs/about/docs_changelog.rst:26
 msgid ":ref:`What are Godot classes <doc_what_are_godot_classes>`"
-msgstr ":ref:`Que sont les Classes Godot <doc_que_sont_les_classes_godot>`"
+msgstr ":ref:`Que sont les Classes Godot <doc_what_are_godot_classes>`"
 
 #: ../../docs/about/docs_changelog.rst:27
 msgid ":ref:`Scene organization <doc_scene_organization>`"
-msgstr ":ref:`Organisation des Scènes <doc_organisation_scenes>`"
+msgstr ":ref:`Organisation des Scènes <doc_scene_organization>`"
 
 #: ../../docs/about/docs_changelog.rst:28
 msgid ":ref:`Scenes versus scripts <doc_scenes_versus_scripts>`"
@@ -1400,19 +1407,19 @@ msgid ""
 ":ref:`Autoloads versus internal nodes <doc_autoloads_versus_internal_nodes>`"
 msgstr ""
 ":ref:`Chargements automatiques VS nœuds internes "
-"<doc_chargements_automatiques_versus_noeuds_internes>`"
+"<doc_autoloads_versus_internal_nodes>`"
 
 #: ../../docs/about/docs_changelog.rst:30
 msgid ":ref:`Node alternatives <doc_node_alternatives>`"
-msgstr ":ref:`Nœuds alternatifs <doc_noeuds_alternatifs>`"
+msgstr ":ref:`Node alternatives <doc_node_alternatives>`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`Godot interfaces <doc_godot_interfaces>`"
-msgstr ":ref:`Interfaces de Godot <doc_interfaces_godot>`"
+msgstr ":ref:`Interfaces de Godot <doc_godot_interfaces>`"
 
 #: ../../docs/about/docs_changelog.rst:32
 msgid ":ref:`Godot notifications <doc_godot_notifications>`"
-msgstr ":ref:`Notifications de Godot <doc_notifications_godot>`"
+msgstr ":ref:`Notifications de Godot <doc_godot_notifications>`"
 
 #: ../../docs/about/docs_changelog.rst:33
 msgid ":ref:`Data preferences <doc_data_preferences>`"
@@ -1420,7 +1427,7 @@ msgstr ":ref:`Préférences des données <doc_data_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid ":ref:`Logic preferences <doc_logic_preferences>`"
-msgstr ":ref:`Préférences des logiques <doc_preferences_logiques>`"
+msgstr ":ref:`Préférences des logiques <doc_logic_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:37
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
@@ -1431,7 +1438,7 @@ msgstr "Les scripts"
 
 #: ../../docs/about/docs_changelog.rst:39
 msgid ":ref:`Typed GDscript <doc_gdscript_static_typing>`"
-msgstr ":ref:`GDscript Dactylographié <doc_gdscript_dactylographie>`"
+msgstr ":ref:`GDscript Dactylographié <doc_gdscript_static_typing>`"
 
 #: ../../docs/about/docs_changelog.rst:42 ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
@@ -1439,11 +1446,11 @@ msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:44
 msgid ":ref:`2D lights and shadows <doc_2d_lights_and_shadows>`"
-msgstr ":ref:`Lumières 2D et ombres <doc_lumieres_2d_et_ombres>`"
+msgstr ":ref:`Lumières 2D et ombres <doc_2d_lights_and_shadows>`"
 
 #: ../../docs/about/docs_changelog.rst:45
 msgid ":ref:`2D meshes <doc_2d_meshes>`"
-msgstr ":ref:`Mailles 2D <doc_mailles_2d>`"
+msgstr ":ref:`Mailles 2D <doc_2d_meshes>`"
 
 #: ../../docs/about/docs_changelog.rst:48 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
@@ -1451,7 +1458,7 @@ msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:50
 msgid ":ref:`CSG <doc_csg_tools>`"
-msgstr ":ref:`CSG <class_csg_outils>`"
+msgstr ":ref:`CSG <doc_csg_tools>`"
 
 #: ../../docs/about/docs_changelog.rst:51
 msgid ""
@@ -1459,7 +1466,7 @@ msgid ""
 "<doc_animating_thousands_of_fish>`"
 msgstr ""
 ":ref: `Animer des milliers de poissons avec MultiMesh "
-"<doc_animer_des_milliers_de_poissons>`"
+"<doc_animating_thousands_of_fish>`"
 
 #: ../../docs/about/docs_changelog.rst:52
 msgid ""
@@ -1467,7 +1474,7 @@ msgid ""
 "<doc_controlling_thousands_of_fish>`"
 msgstr ""
 ":ref:`Contrôler des milliers de poissons avec des Particules "
-"<doc_controler_des_milliers_de_poissons>`"
+"<doc_controlling_thousands_of_fish>`"
 
 #: ../../docs/about/docs_changelog.rst:55
 #: ../../docs/tutorials/physics/index.rst:2
@@ -1492,7 +1499,7 @@ msgstr "Animation"
 
 #: ../../docs/about/docs_changelog.rst:63
 msgid ":ref:`2D skeletons <doc_2d_skeletons>`"
-msgstr ":ref:`Squelettes 2D <doc_squelettes_2d>`"
+msgstr ":ref:`Squelettes 2D <doc_2d_skeletons>`"
 
 #: ../../docs/about/docs_changelog.rst:64
 msgid ":ref:`AnimationTree <doc_animation_tree>`"
@@ -1501,13 +1508,12 @@ msgstr ":ref:`Arbre d'Animations <doc_animations_tree>`"
 #: ../../docs/about/docs_changelog.rst:67
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
-#, fuzzy
 msgid "Viewports"
-msgstr "Multifenêtrages"
+msgstr "Vue d'écran"
 
 #: ../../docs/about/docs_changelog.rst:69
 msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
-msgstr ":ref:`Utiliser une Vue comme une texture <doc_vue_comme_texture>`"
+msgstr ":ref:`Utiliser une Vue comme une texture <doc_viewport_as_texture>`"
 
 #: ../../docs/about/docs_changelog.rst:70
 msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
@@ -1516,7 +1522,7 @@ msgstr "ref:`Post-traitement personnalisé <doc_custom_postprocessing>`"
 #: ../../docs/about/docs_changelog.rst:73
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr "Ombrage"
+msgstr "Ombres"
 
 #: ../../docs/about/docs_changelog.rst:75
 msgid ""
@@ -1524,19 +1530,23 @@ msgid ""
 "<doc_intro_to_shaders_water_workshop>`"
 msgstr ""
 ":ref:`Introduction aux shaders: Eau 2D et 3D (7 tutoriels vidéo) "
-"<doc_intro_aux_shaders_workshop>`"
+"<doc_intro_to_shaders_water_workshop>`"
 
 #: ../../docs/about/docs_changelog.rst:76
 msgid ""
 ":ref:`Migrating to Godot’s shading language "
 "<doc_migrating_to_godot_shader_language>`"
 msgstr ""
+":ref:`Migration vers le langage de Shader de Godot (Godot’s shading "
+"language) <doc_migrating_to_godot_shader_language>`"
 
 #: ../../docs/about/docs_changelog.rst:77
 msgid ""
 ":ref:`Vertex displacement with shaders "
 "<doc_vertex_displacement_with_shaders>`"
 msgstr ""
+": ref: déplacement de vertex avec shaders "
+"<doc_vertex_displacement_with_shaders> `"
 
 #: ../../docs/about/docs_changelog.rst:78
 msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
@@ -1548,7 +1558,7 @@ msgstr "Référence de shading :"
 
 #: ../../docs/about/docs_changelog.rst:81
 msgid ":ref:`Shaders <doc_shaders>`"
-msgstr ":ref:`Shaders <doc_shader>`"
+msgstr ":ref:`Shaders <doc_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:82
 msgid ":ref:`Shading language <doc_shading_language>`"
@@ -1560,7 +1570,7 @@ msgstr ":ref:`Shaders spatiaux <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:84
 msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
-msgstr ""
+msgstr ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:85
 msgid ":ref:`Particles shaders <doc_particle_shader>`"
@@ -1584,7 +1594,7 @@ msgid ""
 ":ref:`Customizing the Web export HTML page <doc_customizing_html5_shell>`"
 msgstr ""
 ":ref:`Personnaliser l'exportation Web de la page HTML "
-"<doc_personnaliser_html5_page>`"
+"<doc_customizing_html5_shell>`"
 
 #: ../../docs/about/docs_changelog.rst:98
 #: ../../docs/tutorials/threads/index.rst:2
@@ -1593,7 +1603,7 @@ msgstr "Le Multi-threading"
 
 #: ../../docs/about/docs_changelog.rst:100
 msgid ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
-msgstr ""
+msgstr ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:103
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1606,12 +1616,11 @@ msgstr ":ref:`Réparer jitter et stutter <doc_jitter_stutter>`"
 
 #: ../../docs/about/docs_changelog.rst:106
 msgid ":ref:`Running code in the editor <doc_running_code_in_the_editor>`"
-msgstr ":ref:`Lancer le code dans l'éditeur <doc_lancer_le_code_dans_editeur>`"
+msgstr ":ref:`Lancer le code dans l'éditeur <doc_running_code_in_the_editor>`"
 
 #: ../../docs/about/docs_changelog.rst:107
 msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
-msgstr ""
-":ref:`Changer les scènes manuellement <doc_changer_scenes_manuellement>`"
+msgstr ":ref:`Changer les scènes manuellement <doc_change_scenes_manually>`"
 
 #: ../../docs/about/docs_changelog.rst:108
 msgid ""
@@ -1640,7 +1649,7 @@ msgid ""
 "<doc_compiling_with_script_encryption_key>`"
 msgstr ""
 ":ref:`Compiler avec un script de clé de cryptage "
-"<doc_compiler_avec_script_cle_cryptage>`"
+"<doc_compiling_with_script_encryption_key>`"
 
 #: ../../docs/about/docs_changelog.rst:117
 #: ../../docs/development/cpp/index.rst:2
@@ -1650,7 +1659,8 @@ msgstr "Développement du moteur"
 #: ../../docs/about/docs_changelog.rst:119
 msgid ""
 ":ref:`Binding to external libraries <doc_binding_to_external_libraries>`"
-msgstr ":ref:`Lier aux librairies externes <doc_librairies_externes>`"
+msgstr ""
+":ref:`Lier aux librairies externes <doc_binding_to_external_libraries>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/content/index.rst:2
@@ -1669,6 +1679,8 @@ msgstr "Extensions"
 #: ../../docs/about/docs_changelog.rst:129
 msgid ":ref:`Making main screen plugins <doc_making_main_screen_plugins>`"
 msgstr ""
+":ref:`Faire des plugins pour l'écran principal "
+"<doc_making_main_screen_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:130
 msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
@@ -2092,7 +2104,7 @@ msgid ""
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
 "Il existe de nombreux types de nœuds. Certains montrent des images, d'autres "
-"jouent du son, d'autres noeuds affichent des modèles 3D, etc. Il y en a des "
+"jouent du son, d'autres nœuds affichent des modèles 3D, etc. Il y en a des "
 "douzaines."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
@@ -2568,7 +2580,7 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
-"Ce projet contient deux scènes :\"Ball.tscn\" et \"Main.tscn\". La scène de "
+"Ce projet contient deux scènes : \"Ball.tscn\" et \"Main.tscn\". La scène de "
 "la balle utilise un :ref:`RigidBody2D <class_RigidBody2D>` pour fournir un "
 "comportement physique pendant que la scène principale dispose d'un ensemble "
 "d'obstacles (utilisant des :ref:`StaticBody2D <class_StaticBody2D>`) pour "
@@ -2638,6 +2650,8 @@ msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr ""
+"Ensuite, développez le contenu en cliquant dessus et définissez la propriété "
+"`` Bounce`` sur `` 1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
 msgid ""
@@ -2732,16 +2746,15 @@ msgid "Design language"
 msgstr "Langage de conception"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
-#, fuzzy
 msgid ""
 "But the greatest strength that comes with instancing scenes is that it works "
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
-"Mais la plus grande force qui vient avec les scènes d'instanciation est "
-"qu'il fonctionne comme un excellent langage de conception. C'est à peu près "
-"ce qui distingue Godot de tous les autres moteurs. Godot a été conçu dès le "
-"départ autour de ce concept."
+"Mais la plus grande force qui vient avec l’instanciation des scènes est "
+"qu'elle fonctionne comme un excellent langage de conception. C'est à peu "
+"près ce qui distingue Godot de tous les autres moteurs. Godot a été conçu "
+"dès le départ autour de ce concept."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -4071,7 +4084,7 @@ msgid ""
 "connection:"
 msgstr ""
 "Pour établir la connexion en code, nous pouvons utiliser la fonction "
-"``connecter``. Nous allons la mettre dans `_ready()` `afin que la connexion "
+"``connect``. Nous allons la mettre dans ``_ready()`` afin que la connexion "
 "soit établie lors de l'exécution. La syntaxe de la fonction est "
 "``<nœud_source>.connecter(<nom_signal>, <nœud_cible>, <nom_fonction_ "
 "cible>)``. Voici le code pour la connexion de notre minuterie :"
@@ -4275,7 +4288,7 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
-"Lancez Godot et créez un nouveau projet. Ensuite, téléchargez :téléchargez :"
+"Lancez Godot et créez un nouveau projet. Ensuite, téléchargez :download:"
 "`dodge_assets.zip <files/dodge_assets.zip>` - les images et les sons que "
 "vous utiliserez pour créer le jeu. Dézippez ces fichiers dans le dossier de "
 "votre projet."
@@ -4838,16 +4851,15 @@ msgstr ""
 "hit`` plus d'une fois."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
-#, fuzzy
 msgid ""
 "Disabling the area's collision shape can cause an error if it happens in the "
 "middle of the engine's collision processing. Using ``set_deferred()`` allows "
 "us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
-"Désactiver la forme de collision de la forme peut provoquer une erreur si "
-"cela se produit au milieu du traitement des collisions du moteur. "
-"L'utilisation de ``call_deferred()`` nous permet de faire attendre Godot "
-"pour désactiver la forme jusqu'à ce que ce soit sûr de le faire."
+"Désactiver la forme de la zone de collision peut provoquer une erreur si "
+"cela se produit pendant le traitement du moteur de collision. L'utilisation "
+"de ``set_deferred()`` nous permet de faire attendre Godot pour qu'il attende "
+"de désactiver la forme jusqu'à ce que ce soit sans danger pour le faire."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -4961,7 +4973,7 @@ msgid ""
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
 "Comme les images du joueur, ces images de monstre doivent être réduites. "
-"Réglez la propriété ``Scale`` d'``AnimatedSprite`` sur ``(0.75, 0.75)``."
+"Réglez la propriété ``Scale`` d' ``AnimatedSprite`` sur ``(0.75, 0.75)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:548
 msgid ""
@@ -4969,8 +4981,8 @@ msgid ""
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
 "property to ``90`` under ``Node2D``."
 msgstr ""
-"Pour ce qui est de la scène ``Player``, ajouter un ``CapsuleShape2D`` pour "
-"la collision. Pour aligner la forme avec l'image, vous aurez besoin de "
+"Comme dans la scène ``Player``, ajouter un ``CapsuleShape2D`` pour la "
+"collision. Pour aligner la forme avec l'image, vous aurez besoin de "
 "paramétrer la propriété ``Rotation Degrees`` à ``90`` sous ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:553
@@ -5018,7 +5030,7 @@ msgstr ""
 "nombres \"aléatoires\" soit différente à chaque fois que vous exécutez la "
 "scène. Nous allons utiliser ``randomize()`` dans notre scène ``Main``, alors "
 "nous n'en aurons pas besoin ici. ``randi() % n`` est la manière habituelle "
-"d'obtenir un entier entre ``0`` et``n-1``."
+"d'obtenir un entier entre ``0`` et ``n-1``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:612
 msgid ""
@@ -5176,7 +5188,7 @@ msgid ""
 "to select a random position and direction along the path."
 msgstr ""
 "Maintenant que le chemin est défini, ajoutez un nœud :ref:`PathFollow2D "
-"<class_PathFollow2D>`en tant qu'enfant de ``MobPath`` et nommez-le "
+"<class_PathFollow2D>` en tant qu'enfant de ``MobPath`` et nommez-le "
 "``MobSpawnLocation``. Ce nœud tournera automatiquement et suivra le chemin "
 "au fur et à mesure qu'il se déplace, de sorte que nous pouvons l'utiliser "
 "pour sélectionner une position et une direction aléatoires le long du chemin."
@@ -5390,8 +5402,8 @@ msgid ""
 "control node's edges to its anchor. See :ref:"
 "`doc_design_interfaces_with_the_control_nodes` for more details."
 msgstr ""
-"**Ancres et marges : ** Les nœuds ``Control`` ont une position et une "
-"taille, mais ils ont aussi des ancres et des marges. Les ancres définissent "
+"**Ancres et marges :** Les nœuds ``Control`` ont une position et une taille, "
+"mais ils ont aussi des ancres et des marges. Les ancres définissent "
 "l'origine - le point de référence pour les bords du nœud. Les marges se "
 "mettent à jour automatiquement lorsque vous déplacez ou redimensionnez un "
 "nœud de contrôle. Ils représentent la distance entre les bords du nœud de "
@@ -5522,7 +5534,7 @@ msgid ""
 "signal of ``StartButton``."
 msgstr ""
 "Connectez le signal ``timeout()`` du ``MessageTimer`` et le signal "
-"``appuyé()`` du ``StartButton``."
+"``pressed()`` du ``StartButton``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1072
 msgid "Connecting HUD to Main"
@@ -5536,17 +5548,16 @@ msgid ""
 "like this, so make sure you didn't miss anything:"
 msgstr ""
 "Maintenant que nous avons fini de créer la scène du ``HUD``, sauvegardez-la "
-"et retournez à ``Main``. Instancez la scène ``HUD`` dans ``Main``` comme "
-"vous l'avez fait dans la scène ``Player`` et placez-la au bas de l'arbre. "
-"L'arbre complet devrait ressembler à ceci, alors assurez-vous de ne rien "
-"manquer :"
+"et retournez à ``Main``. Instancez la scène ``HUD`` dans ``Main`` comme vous "
+"l'avez fait dans la scène ``Player`` et placez-la au bas de l'arbre. L'arbre "
+"complet devrait ressembler à ceci, alors assurez-vous de ne rien manquer :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1081
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
 msgstr ""
-"Nous devons maintenant connecter la fonctionnalité ``HUD``à notre script "
+"Nous devons maintenant connecter la fonctionnalité ``HUD`` à notre script "
 "``Main``. Cela nécessite quelques ajouts à la scène ``Main`` :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1084
@@ -6828,7 +6839,7 @@ msgstr "TextureRect modulé par la couleur rouge"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureButton"
-msgstr "Le TextureButton"
+msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:97
 msgid ""
@@ -10617,15 +10628,15 @@ msgid "The logo will appear from the top of the screen."
 msgstr "Le logo apparaîtra en haut de l'écran."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:52
-#, fuzzy
 msgid ""
 "With the animation editor panel open, select the \"logo\" node and set the "
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
 "next to the property to add a keyframe:"
 msgstr ""
-"Avec le panneau de l'éditeur d'animation ouvert, sélectionnez le noeud \"logo"
+"Avec le panneau de l'éditeur d'animation ouvert, sélectionnez le nœud \"logo"
 "\" et réglez la propriété \"Rect / Position\" sur ``(118, -400)`` et appuyez "
-"sur le bouton en forme de clé à côté de la propriété :"
+"sur le bouton en forme de clé à côté de la propriété pour ajouter une image "
+"clé (keyframes ) :"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:58
 msgid "When the dialog appears, confirm that you are creating a new track."
@@ -10638,18 +10649,17 @@ msgid "The keyframe will be added in the animation player editor:"
 msgstr "L'image clé va être ajoutée dans l'éditeur d'animation :"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:64
-#, fuzzy
 msgid "Move the editor cursor forward in time by clicking here:"
-msgstr "Déplacez le curseur d'édition à la fin en cliquant ici :"
+msgstr "Déplacez le curseur d'édition en avant dans le temps en cliquant ici :"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:68
-#, fuzzy
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes with different values, the animation happens."
 msgstr ""
 "Modifiez la position du logo à ``(118, 0)`` et ajoutez une image clé à "
-"nouveau. Avec deux images clés, l'animation suit son cours."
+"nouveau. Avec deux images clés ayant deux valeurs différentes, l'animation "
+"se produit."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:73
 msgid ""
@@ -10883,7 +10893,6 @@ msgstr ""
 "peut être ajouté comme enfant à n'importe quel autre nœud."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
-#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` function is fast, you can create new "
@@ -10892,10 +10901,10 @@ msgid ""
 "between the scene instances."
 msgstr ""
 "Cette approche présente plusieurs avantages. Comme la fonction :ref:"
-"`PackedScene.instance() <class_PackedScene_method_instance>` est assez "
-"rapide, vous pouvez créez de nouveaux ennemis, balles, effets, etc... sans "
-"avoir à les recharger à chaque fois à partir du disque dur. Il est important "
-"de se rappeler que, comme toujours, les images, les maillages, etc sont tous "
+"`PackedScene.instance() <class_PackedScene_method_instance>` est rapide, "
+"vous pouvez créez de nouveaux ennemis, balles, effets, etc... sans avoir à "
+"les recharger à chaque fois à partir du disque dur. Il est important de se "
+"rappeler que, comme toujours, les images, les maillages, etc sont tous "
 "partagés entre les instances de la scène."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
@@ -11192,18 +11201,16 @@ msgid "File system"
 msgstr "Système de fichiers"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "A file system manages how assets are stored and how they are accessed. A "
 "well-designed file system also allows multiple developers to edit the same "
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
-"Le système de fichier est également un des sujets importants du "
-"développement du moteur. Le système de fichier gère la façon dont les assets "
-"sont stockés et comment elles sont accessibles. Un système bien conçu permet "
-"à plusieurs développeurs d'éditer les mêmes fichiers et assets lorsqu'ils "
-"collaborent ensembles."
+"Le système de fichier gère la façon dont les assets sont stockés et comment "
+"on y accède. Un système bien conçu permet à plusieurs développeurs d'éditer "
+"les mêmes fichiers et assets lorsqu'ils collaborent ensembles. Godot stocke "
+"toutes les ressources sous forme de fichiers dans son système de fichiers."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
@@ -11228,20 +11235,17 @@ msgstr ""
 "de police est souvent comprise avec une police de caractère."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
-#, fuzzy
 msgid ""
 "The Godot file system avoids using metadata files. Existing asset managers "
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
-"En général, le système de fichier de Godot évite d'utiliser des fichiers de "
-"métadonnées. La raison est simple, les gestionnaires d'assets existants et "
-"les VCS sont tout simplement bien meilleurs que tout ce que nous pouvons "
-"mettre en œuvre, alors Godot essaie de jouer au mieux avec SVN, Git, "
-"Mercurial, Perforce, etc."
+"Le système de fichier de Godot évite d'utiliser des fichiers de métadonnées. "
+"Les gestionnaires d'assets existants et les VCS sont tout simplement bien "
+"meilleurs que tout ce que nous pouvons mettre en œuvre, alors Godot essaie "
+"de jouer au mieux avec SVN, Git, Mercurial, Perforce, etc."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:28
-#, fuzzy
 msgid "Example of file system contents:"
 msgstr "Exemple du contenu d'un système de fichier :"
 
@@ -11302,13 +11306,12 @@ msgstr ""
 "ce problème, le chemin spécial ``res://`` a été créé."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
-#, fuzzy
 msgid ""
 "The path ``res://`` will always point at the project root (where project."
 "godot is located, so ``res://project.godot`` is always valid)."
 msgstr ""
 "Le chemin ``res://`` pointera toujours vers la racine du projet (là où "
-"project.godot est localisé, alors ``res://project.godot`` est toujours "
+"project.godot est localisé, ainsi``res://project.godot`` est toujours "
 "valide)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
@@ -11328,13 +11331,12 @@ msgid "User path"
 msgstr "Chemin de l'utilisateur (User path)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
-#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
 "special path ``user://`` that is always writable."
 msgstr ""
-"Écrire sur le disque est souvent nécessaire lors de diverses tâches comme la "
+"L'écriture sur le disque reste nécessaire lors de diverses tâches comme la "
 "sauvegarde d'une partie ou le téléchargement de contenu additionnel. Pour "
 "cela, le moteur assure le fait que le chemin spécial ``user://`` est "
 "toujours accessible en écriture."
@@ -11344,7 +11346,6 @@ msgid "Host file system"
 msgstr "Système de fichier hôte (Host file system)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
-#, fuzzy
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
@@ -11353,9 +11354,9 @@ msgid ""
 msgstr ""
 "Autrement le système de fichier hôte peut également être utilisé. Cependant "
 "ce n'est pas recommandé pour un produit commercialisé car il n'est pas "
-"garanti que ces chemins fonctionnent sur toutes les plates-formes. Toutes "
-"fois, utiliser un système de fichier hôte peut être utile lors du "
-"développement d'outils dans Godot !"
+"garanti que cela fonctionne sur toutes les plates-formes. Toutefois, "
+"utiliser un système de fichier hôte peut être utile lors du développement "
+"d'outils dans Godot."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:89
 msgid "Drawbacks"
@@ -11406,16 +11407,15 @@ msgstr ""
 "paquet compressé pour stocker tous les fichiers."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:107
-#, fuzzy
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot. One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
-"Il est recommandé que votre équipe définisse clairement une convention de "
-"nommage pour les fichier quand elle travaille avec Godot ! Une convention "
-"simple et infaillible est de n'autoriser que les noms de fichiers et de "
-"chemins en minuscules."
+"Il est recommandé à votre équipe de définir clairement une convention pour "
+"le nommage des fichier quand elle travaille avec Godot ! Une convention "
+"simple et infaillible est de n'autoriser que les minuscules pour les noms de "
+"fichiers et de chemins."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:33
@@ -11424,7 +11424,6 @@ msgid "SceneTree"
 msgstr "L'arbre de scène"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
-#, fuzzy
 msgid ""
 "In previous tutorials, everything revolved around the concept of nodes. "
 "Scenes are collections of nodes. They become active once they enter the "
@@ -11496,16 +11495,15 @@ msgstr ""
 "niveau."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
-#, fuzzy
 msgid ""
 "The scene system provides its own main loop to OS, :ref:`SceneTree "
 "<class_SceneTree>`. This is automatically instanced and set when running a "
 "scene, no need to do any extra work."
 msgstr ""
-"Dans tous les cas, le système de scène fournit sa propre boucle principale à "
-"l'OS, :ref:`SceneTree <class_SceneTree>`. Ceci est automatiquement instancié "
-"et configuré lors de l'exécution d'une scène, aucun travail supplémentaire "
-"est nécessaire."
+"Le système de scène fournit sa propre boucle principale à l'OS, :ref:"
+"`SceneTree <class_SceneTree>`. Ceci est automatiquement instancié et "
+"configuré lors de l'exécution d'une scène, aucun travail supplémentaire est "
+"nécessaire."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
@@ -11543,7 +11541,6 @@ msgstr ""
 "mode pause ou l'abandon du processus."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "When a node is part of the Scene Tree, the :ref:`SceneTree "
 "<class_SceneTree>` singleton can be obtained by calling :ref:`Node."
@@ -11566,7 +11563,6 @@ msgstr ""
 "A partir d'un nœud, elle peut être obtenu de deux manières différentes :"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:80
-#, fuzzy
 msgid ""
 "This node contains the main viewport. Anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
@@ -11576,7 +11572,7 @@ msgstr ""
 "Ce nœud contient la vue principale, tout ce qui est un enfant d'un :ref:"
 "`Viewport <class_Viewport>` est dessiné à l'intérieur de celui-ci par "
 "défaut, il est donc logique que le nœud en amont de tous les autres soit "
-"toujours un nœud de ce type, sinon rien ne serait vu !"
+"toujours un nœud de ce type, sinon rien ne serait vu."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:85
 msgid ""
@@ -11611,7 +11607,6 @@ msgstr ""
 "les rappels de _enter_tree() et _ready() (ainsi que _exit_tree())."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:100
-#, fuzzy
 msgid ""
 "When nodes enter the *Scene Tree*, they become active. They get access to "
 "everything they need to process, get input, display 2D and 3D visuals, "
@@ -11620,16 +11615,15 @@ msgid ""
 msgstr ""
 "Lorsque les nœuds entrent dans l'*arbre de scène*, ils deviennent actifs. "
 "Ils ont accès à tout ce dont ils ont besoin pour traiter, obtenir des "
-"entrées, afficher des données en 2D et 3D, des notifications, jouer du son, "
-"des groupes, etc. Lorsqu'ils sont retirés de l'*arbre de scène*, ils perdent "
-"cet accès."
+"entrées, afficher des données en 2D et 3D, recevoir et envoyer des "
+"notifications, jouer du son, etc. Lorsqu'ils sont retirés de l'*arbre de "
+"scène*, ils perdent cet accès."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:106
 msgid "Tree order"
 msgstr "Ordre de l'arborescence"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:108
-#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
@@ -11715,7 +11709,6 @@ msgstr ""
 "<class_SceneTree_method_change_scene_to>` :"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:174
-#, fuzzy
 msgid ""
 "These are quick and useful ways to switch scenes but have the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
@@ -11724,13 +11717,13 @@ msgid ""
 "(background) loading. This must be done manually using autoloads (see next "
 "chapter) and :ref:`doc_background_loading`."
 msgstr ""
-"c'est un moyen rapide de passer d'une scène à une autre mais qui a "
-"l'inconvénient suivant : le jeu va devoir attendre jusqu'à ce que la "
-"nouvelle scène soit chargée et fonctionne. À un moment donné, dans votre "
-"jeu, vous souhaiterez peut-être créer des écrans de chargement avec des "
-"barres de progression ou d'autres façons d'indiquer des chargements en tâche "
-"de fond. Cela doit être fait manuellement en utilisant des \"autoloads"
-"\" (voir le chapitre suivant !) et :ref:`doc_background_loading`."
+"Ce sont des façons rapides et utiles de passer d'une scène à une autre mais "
+"qui ont l'inconvénient que le jeu va devoir attendre jusqu'à ce que la "
+"nouvelle scène soit chargée et fonctionne. À un moment donné, dans le "
+"développement de votre jeu, vous souhaiterez peut-être créer des écrans de "
+"chargement avec des barres de progression, indicateurs animés ou chargement "
+"en arrière plan. Cela doit être fait manuellement en utilisant des "
+"\"autoloads\" (voir le chapitre suivant !) et :ref:`doc_background_loading`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
@@ -11819,7 +11812,6 @@ msgstr ""
 "globales du fait de sa conception"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
-#, fuzzy
 msgid "Autoloading nodes and scripts can give us these characteristics."
 msgstr "Les nœuds Autoloading et les scripts répondent à ce besoin."
 
@@ -11984,6 +11976,11 @@ msgid ""
 "completed. Thus, the current scene will not be removed while it is still "
 "being used (i.e. its code is still running)."
 msgstr ""
+"Avec: ref: `Object.call_deferred () <class_Object_method_call_deferred>`, la "
+"deuxième fonction ne sera exécutée que lorsque tout le code de la scène "
+"actuelle sera terminé. Ainsi, la scène en cours ne sera pas supprimée tant "
+"qu’elle est encore utilisée (c’est-à-dire que son code est toujours en cours "
+"d’exécution)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 msgid ""
@@ -11998,13 +11995,12 @@ msgid "and"
 msgstr "et"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
-#, fuzzy
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button."
 msgstr ""
 "Maintenant, si vous lancez le projet, vous pouvez basculer entre les deux "
-"scènes en appuyant sur le bouton !"
+"scènes en appuyant sur le bouton."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
 msgid ""
@@ -21648,7 +21644,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:78
 msgid "Normal Map"
-msgstr "Carte normale"
+msgstr "Normal Map"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
 msgid ""
@@ -26555,7 +26551,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:115
 msgid ":ref:`Script Classes <doc_scripting_continued_class_name>`"
-msgstr ""
+msgstr ":ref:`Script Classes <doc_scripting_continued_class_name>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."
@@ -29924,12 +29920,18 @@ msgid ""
 "area and direction in which particles are emitted. These can be generated "
 "from textures in your project."
 msgstr ""
+"ParticlesMaterials vous permet de définir un masque d'émission, qui définit "
+"la zone et direction dans laquelle les particules sont émises. Celles-ci "
+"peuvent-être générées à partir des textures de votre projet."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:294
 msgid ""
 "Ensure that a ParticlesMaterial is set, and the Particles2D node is "
 "selected. A \"Particles\" menu should appear in the Toolbar:"
 msgstr ""
+"Assurez-vous qu'un ParticlesMaterial est défini, et que le nœud Particles2D "
+"est sélectionné. Un menu \"Particule\" devrait apparaître dans la barre "
+"d'outils :"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:299
 msgid "Open it and select \"Load Emission Mask\":"
@@ -29959,11 +29961,15 @@ msgid ""
 "Solid Pixels: Particles will spawn from any area of the texture, excluding "
 "transparent areas."
 msgstr ""
+"Solid Pixels (Pixels solides): les particules apparaîtront dans n’importe "
+"quelle zone de la texture, à l’exclusion des zones transparentes."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:319
 msgid ""
 "Border Pixels: Particles will spawn from the outer edges of the texture."
 msgstr ""
+"Border Pixels (Bordure Pixels) : Les particules apparaîtront à partir des "
+"bords extérieurs de la texture."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:323
 msgid ""
@@ -29972,6 +29978,10 @@ msgid ""
 "Note that an ``Initial Velocity`` will need to be set in order to utilize "
 "this."
 msgstr ""
+"Directed Border Pixels (Pixels de bordures dirigés) : Similaire aux pixels "
+"de bordures, mais ajoute des informations supplémentaires au masque pour "
+"permettre aux particules d'émettre loin des bordures. Notez qu’il faut "
+"définir une vitesse initiale ``Initial Velocity`` afin de l'utiliser."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:331
 msgid "Emission Colors"
@@ -29990,18 +30000,25 @@ msgid ""
 "Once you click \"OK\", the mask will be generated and set to the "
 "ParticlesMaterial, under the ``Emission Shape`` section:"
 msgstr ""
+"Une fois que vous avez cliqué sur \"OK\", le masque est généré et défini sur "
+"ParticlesMaterial, dans la section ``Emission Shape`` :"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:339
 msgid ""
 "All of the values within this section have been automatically generated by "
 "the \"Load Emission Mask\" menu, so they should generally be left alone."
 msgstr ""
+"Toutes les valeurs de cette section ont été générées automatiquement par le "
+"menu \"Load Emission Mask\", ils devraient généralement être laissés seuls."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:342
 msgid ""
 "An image should not be added to ``Point Texture`` or ``Color Texture`` "
 "directly. The \"Load Emission Mask\" menu should always be used instead."
 msgstr ""
+"Une image ne devrait pas être ajoutée directement à ``Point Texture`` ou "
+"``Color Texture``. Le menu \"Load Emission Mask\" devrait toujours être "
+"utilisé à la place."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D movement overview"
@@ -31421,9 +31438,8 @@ msgstr ""
 "référence :ref:`doc_gdscript` si vous avez oublié ce que cela fait)."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:4
-#, fuzzy
 msgid "2D Sprite animation"
-msgstr "Animation du sprite"
+msgstr "Animation de Sprite 2D"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
 msgid ""
@@ -31433,6 +31449,12 @@ msgid ""
 "sheet containing all the animation's frames. Depending on which type of "
 "assets you have, you can choose one of the following solutions."
 msgstr ""
+"Dans ce tutoriel, vous allez apprendre deux manières différentes pour créer "
+"un personnage animé en 2D. Typiquement, lorsque vous créez ou téléchargez "
+"une animation d'un personnage, cela peux peux se faire de deux façon : \n"
+"soit avec des images individuelles soit avec une feuille de sprite \"sprite "
+"sheet\" qui contient toutes les images de l'animation. Cela dépend du type "
+"d'assets que vous avez, vous pouvez choisir l'une des solutions suivantes."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:15
 msgid ""
@@ -31441,14 +31463,20 @@ msgid ""
 "`AnimationPlayer <class_AnimationPlayer>` along with the *Animation* "
 "property of :ref:`Sprite <class_Sprite>`."
 msgstr ""
+"Premièrement, nous allons utiliser :ref:`AnimatedSprite "
+"<class_AnimatedSprite>` pour  animer la collection d'images individuelles. "
+"Pour utiliser une feuille de sprite \"sprite sheet\", nous allons utiliser :"
+"ref:`AnimationPlayer <class_AnimationPlayer>` ainsi que la propriété "
+"*Animation* property of :ref:`Sprite <class_Sprite>`."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:20
 msgid "Art for the following examples by https://opengameart.org/users/ansimuz"
 msgstr ""
+"Art pour les exemples suivants par https://opengameart.org/users/ansimuz"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:23
 msgid "Individual images with AnimatedSprite"
-msgstr ""
+msgstr "Images individuelles avec AnimatedSprite"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:25
 msgid ""
@@ -31456,21 +31484,25 @@ msgid ""
 "your character's animation frames. For this example, we'll use the following "
 "animation:"
 msgstr ""
+"Dans ce scénario, vous avez une collection d'images, qui contient toutes les "
+"images pour l'animation de votre personnage. Pour cette exemple, nous allons "
+"utiliser l'animation suivante :"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:31
-#, fuzzy
 msgid ""
 "You can download the images here: :download:`run_animation.zip <files/"
 "run_animation.zip>`"
 msgstr ""
-"Vous pouvez télécharger cet exemple de projet ici: :download:"
-"`2D_movement_demo.zip <files/2D_movement_demo.zip>`"
+"Vous pouvez télécharger les images ici : :téléchargement:`run_animation.zip "
+"<files/run_animation.zip>`"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:34
 msgid ""
 "Unzip the images and place them in your project folder. Set up your scene "
 "tree with the following nodes:"
 msgstr ""
+"Décompressez les images et placez-les dans le dossier de votre projet. "
+"Configurez votre arbre de scène avec les nœuds suivants :"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:39
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:109
@@ -31481,18 +31513,27 @@ msgid ""
 "CollisionShape2D. See :ref:`Physics Introduction <doc_physics_introduction>` "
 "for more information."
 msgstr ""
+"Le nœud racine peut également être: ref: `Area2D <class_Area2D>` ou : ref: "
+"`RigidBody2D <class_RigidBody2D>`. L'animation sera toujours faite de la "
+"même manière. Une fois l'animation terminée, vous pouvez attribuer une forme "
+"à CollisionShape2D. Voir: ref: `Physics Introduction "
+"<doc_physics_introduction>` pour plus d'informations."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:46
 msgid ""
 "Now select the ``AnimatedSprite`` and in its *SpriteFrames* property, select "
 "\"New SpriteFrames\"."
 msgstr ""
+"Sélectionnez maintenant le `` AnimatedSprite`` et dans propriété * "
+"SpriteFrames *, sélectionnez \"Nouveau SpriteFrames\"."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:51
 msgid ""
 "Click on the new SpriteFrames resource and you'll see a new panel appear at "
 "the bottom of the editor window:"
 msgstr ""
+"Cliquez sur la nouvelle ressource SpriteFrames et vous verrez un nouveau "
+"panneau apparaît en bas de la fenêtre de l'éditeur :"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:56
 msgid ""
@@ -31500,6 +31541,9 @@ msgid ""
 "the center part of the SpriteFrames panel. On the left side, change the name "
 "of the animation from \"default\" to \"run\"."
 msgstr ""
+"Depuis le dock situé à gauche, faites glisser les 8 images individuelles "
+"dans la partie centrale du panneau SpriteFrames. Sur le côté gauche, "
+"modifiez le nom de l'animation de \"default\" par \"run\" (courir)."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:62
 msgid ""
@@ -31507,17 +31551,22 @@ msgid ""
 "now see the animation playing in the viewport. However, it is a bit slow. To "
 "fix this, change the *Speed (FPS)* setting in the SpriteFrames panel."
 msgstr ""
+"De retour dans l'inspecteur, cochez la case propriété de * Playing *. Vous "
+"devriez maintenant voir l'animation se jouer dans la fenêtre. Cependant, "
+"c'est un peu lent. Pour résoudre ce problème, modifiez le paramètre * "
+"Vitesse (FPS) * dans le panneau SpriteFrames."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:66
 msgid ""
 "You can add additional animations by clicking the \"New Animation\" button "
 "and adding additional images."
 msgstr ""
+"Vous pouvez rajouter des animations supplémentaires en cliquant sur \"New "
+"Animation\" et ajoutez de nouvelles images."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:70
-#, fuzzy
 msgid "Controlling the animation"
-msgstr "Créer l'animation"
+msgstr "Contrôle de l'animation"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:72
 msgid ""
@@ -31526,11 +31575,14 @@ msgid ""
 "animation while the right arrow key is held, and stop it when the key is "
 "released."
 msgstr ""
+"Une fois l'animation terminée, vous pouvez contrôler l'animation via le code "
+"en utilisant les méthodes `` play () `` et `` stop () ``. Voici un bref "
+"exemple pour lire l'animation tant que la touche fléchée droite est "
+"maintenue enfoncée et l'arrêter lorsque vous la relâchez."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:90
-#, fuzzy
 msgid "Sprite sheet with AnimationPlayer"
-msgstr "AnimationPlayer"
+msgstr "Feuille de Sprite avec AnimationPlayer"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:92
 msgid ""
@@ -31540,22 +31592,33 @@ msgid ""
 "animate the change from texture to texture with :ref:`AnimationPlayer "
 "<class_AnimationPlayer>`."
 msgstr ""
+"Si vous avez un SpriteSheet contenant toutes vos images d'animation, vous ne "
+"pouvez pas utiliser facilement `` AnimatedSprite``. Au lieu de cela, vous "
+"pouvez utiliser un noeud standard: ref: `Sprite <class_Sprite>` pour "
+"afficher la texture, puis l'animer en changeant de texture en texture avec: "
+"ref: `AnimationPlayer <class_AnimationPlayer>`."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:97
 msgid "Consider this sprite sheet, which contains 6 frames of animation:"
 msgstr ""
+"Considérez cette feuille de sprite (sprite sheet), qui contient 6 images "
+"d'animation :"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:101
 msgid ""
 "Right-click the image and choose \"Save Image As\" to download, then copy "
 "the image into your project folder."
 msgstr ""
+"Faites un clique-droit sur l'image et choisissez \"Enregistrer l'image sous"
+"\" pour télécharger, puis copiez l'image dans votre dossier de votre projet."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:104
 msgid ""
 "Our goal is to display these images one after another in a loop. Start by "
 "setting up your scene tree:"
 msgstr ""
+"Notre objectif est d’afficher ces images l’une après l’autre en boucle. "
+"Commencez par configurer votre arbre de scène :"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:116
 msgid ""
@@ -31565,6 +31628,12 @@ msgid ""
 "*Hframes* to ``6``. *Hframes* and *Vframes* are the number of horizontal and "
 "vertical frames in your sprite sheet."
 msgstr ""
+"Faites glisser la feuille de sprite (sprite sheet) dans la propriété * "
+"Texture * du sprite et vous verrez toute la feuille affichée à l'écran. Pour "
+"la découper en images individuelles, développez la section * Animation * de "
+"l'inspecteur et réglez * Hframes * sur `` 6``. * Hframes * et * Vframes *  "
+"représente le nombre d'images horizontales et verticales dans votre feuille "
+"de sprite."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:124
 msgid ""
@@ -31572,6 +31641,9 @@ msgid ""
 "ranges from ``0`` to ``5`` and the image displayed by the Sprite changes "
 "accordingly. This is the property we'll be animating."
 msgstr ""
+"Maintenant, essayez de changer la valeur de la propriété * Frame *. Vous "
+"verrez qu'elles vont de `` 0`` à `` 5`` et que l'image affichée par le "
+"Sprite change en conséquence. C'est la propriété que nous allons animer."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:128
 msgid ""
@@ -31579,11 +31651,17 @@ msgid ""
 "by \"New\". Name the new animation \"walk\". Set the animation length to "
 "``0.6`` and click the \"Loop\" button so that our animation will repeat."
 msgstr ""
+"Sélectionnez `` AnimationPlayer`` et cliquez sur le bouton \"Animation\" "
+"suivi de \"Nouveau\". Nommez la nouvelle animation \"walk\" (marche). "
+"Définissez la longueur de l'animation sur `` 0.6`` et cliquez sur le bouton "
+"'Bouclage de l'animation' pour que notre animation se répète."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:134
 msgid ""
 "Now select the ``Sprite`` node and click the key icon to add a new track."
 msgstr ""
+"Maintenant, sélectionnez le nœud `` Sprite`` et cliquez sur l'icône de la "
+"clé pour ajouter une nouvelle piste."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:138
 msgid ""
@@ -31591,10 +31669,13 @@ msgid ""
 "default), until you have all the frames from 0 to 5. You'll see the frames "
 "actually appearing in the animation track:"
 msgstr ""
+"Continuez à ajouter des images à chaque point de la timeline (`` 0.1`` "
+"secondes par défaut) jusqu'à ce que toutes les images soient comprises entre "
+"0 et 5. Vous verrez les images apparaître dans la piste d'animation :"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:144
 msgid "Press \"Play\" on the animation to see how it looks."
-msgstr ""
+msgstr "Appuyez sur \"Play\" pour voir à quoi ressembe l'animation."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
 msgid ""
@@ -31604,6 +31685,12 @@ msgid ""
 "animate other properties like position or scale. Experiment and see which "
 "works best for your needs."
 msgstr ""
+"Ces exemples illustrent les deux situations les plus couremment rencontrées "
+"dans l’animation 2D. Chacun a ses avantages. Travailler avec `` "
+"AnimationPlayer`` est un peu plus complexe, mais fournit des fonctionnalités "
+"supplémentaires, car vous pouvez également animer d'autres propriétés telles "
+"que la position ou l'échelle. Expérimentez les et voyez lequel convient le "
+"mieux à vos besoins."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
@@ -35289,26 +35376,36 @@ msgid ""
 "work quickly. You will mostly need to use seams or other techniques to "
 "create better unwrapping."
 msgstr ""
+"Si vous utilisez des maillages (meshes) externes lors de l'importation, la "
+"taille sera conservée. Attention car la plupart des décompresseurs des "
+"logiciels 3D ne sont pas réglés pour la qualité mais pour la rapidité de "
+"traitement. Vous devrez surtout utiliser les coutures (seams) ou d’autres "
+"techniques pour créer un meilleur dépliage."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:73
 msgid "Unwrap from within Godot"
-msgstr ""
+msgstr "Dépliage depuis Godot"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:75
 msgid ""
 "Godot has an option to unwrap meshes and visualize the UV channels. It can "
 "be found in the Mesh menu:"
 msgstr ""
+"Godot a une option pour déplier les maillages (meshes) et visualiser les "
+"chaîne UV. On peut la trouver dans le menu Mesh :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:80
 msgid ""
 "This will generate a second set of UV2 coordinates which can be used for "
 "baking, and it will also set the texture size automatically."
 msgstr ""
+"Cela va générer un second ensemble de coordonné UV2 qui peut être utilisé "
+"pour un baking, et cela va aussi configurer automatiquement la taille de la "
+"texture."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:84
 msgid "Unwrap on scene import"
-msgstr ""
+msgstr "Dépliage d'une scène importée"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:86
 msgid ""
@@ -35317,6 +35414,11 @@ msgid ""
 "imported scene in the filesystem dock, then go to the Import tab. There, the "
 "following option can be modified:"
 msgstr ""
+"Ceci est probablement la meilleur approche globale. Le seul inconvénient est "
+"que, sur les grands modèles, le dépliage peut prendre un certain temps à "
+"l'importation. Sélectionnez simplement la scène importée dans le système de "
+"fichiers, puis allez à l'onglet Importer. Là, l'option suivante peut être "
+"modifiée :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:93
 msgid ""
@@ -35325,12 +35427,18 @@ msgid ""
 "size of the lightmap texture (and, in consequence, the UV padding in the "
 "map)."
 msgstr ""
+"Le mode ** Light Baking ** doit être réglé sur ** \"Gen Lightmaps\" **. Une "
+"taille de texel en unités mondiales doit également être fournie, car cela "
+"déterminera la taille finale de la texture lightmap (et, par conséquent, le "
+"remplissage UV de la carte)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:97
 msgid ""
 "The effect of setting this option is that all meshes within the scene will "
 "have their UV2 maps properly generated."
 msgstr ""
+"L’effet du réglage de cette option est que toutes les mailles (meshes) au "
+"sein de la scène auront leurs cartes UV2 correctement générés."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:100
 msgid ""
@@ -35340,6 +35448,12 @@ msgid ""
 "or twice), this will result in inefficient lightmaps. Just don't reuse a "
 "source mesh at different scales if you are planning to use lightmapping."
 msgstr ""
+"Avertissement : lorsque de la réutilisation d'un maillage (meshe) dans une "
+"scène, gardez à l'esprit que les UVs sont générés pour la première instance "
+"trouvée. Si la maille est réutilisée à différentes échelles (et que les "
+"échelles sont très différentes, plus de la moitié ou deux fois), cela se "
+"traduira par un lightmaps inefficace. Juste, ne réutilisez pas les maillages "
+"sources à différentes échelles si vous envisagez d’utiliser lightmapping."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:107
 msgid "Checking UV2"
@@ -35365,6 +35479,9 @@ msgid ""
 "scene. This will enable light baking on all nodes (and sub-nodes) in that "
 "scene, even on instanced scenes."
 msgstr ""
+"Avant de faire quoi que ce soit, un nœud ** BakedLightmap ** doit être "
+"ajouté à une scène. Cela permettra le light baking sur tous les nœuds (et "
+"sous-nœuds) de cette scène, même sur les scènes instanciées."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:123
 msgid ""
@@ -35372,6 +35489,9 @@ msgid ""
 "baker, and each will be assigned a lightmap of its own (just make sure to "
 "respect the rule about scaling mentioned before):"
 msgstr ""
+"Une sous-scène peut être instanciée plusieurs fois, car cela est supporté "
+"par le baker, et chacune se verra attribuer une lightmap (assurez-vous juste "
+"de respecter la règle de mise à l'échelle mentionnée précédemment) :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:128
 msgid "Configure bounds"
@@ -35383,6 +35503,10 @@ msgid ""
 "to transfer light to dynamic objects inside it (more on that later). Just "
 "cover the scene with the volume as you do with ``GIProbe``:"
 msgstr ""
+"Le Lightmap a besoin d'un volume approximatif de la zone affectée, car elle "
+"l'utilise pour transférer la lumière aux objets dynamiques se trouvant à "
+"l'intérieur (plus de détails plus tard). Recouvrez simplement la scène avec "
+"le volume de la même manière que vous le faites avec `` GIProbe`` :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:137
 msgid "Setting up meshes"
@@ -35393,12 +35517,16 @@ msgid ""
 "For a **MeshInstance** node to take part in the baking process, it needs to "
 "have the \"Use in Baked Light\" property enabled."
 msgstr ""
+"Pour qu'un nœud ** MeshInstance ** prenne part au processus de baking, la "
+"propriété \"Utiliser dans Baked Light\" doit être activée."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:144
 msgid ""
 "When auto-generating lightmaps on scene import, this is enabled "
 "automatically."
 msgstr ""
+"Lors de la génération automatique du lightmaps d'une scène importé, celle-ci "
+"est activé automatiquement."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:147
 msgid "Setting up lights"
@@ -35410,12 +35538,19 @@ msgid ""
 "shadowmapping and lighting are still dynamic and affect moving objects, but "
 "light bounces from that light will be baked."
 msgstr ""
+"Les lumières sont \"baker\" par défaut avec une lumière indirecte. Cela "
+"signifie que la shadowmapping (cartographie des ombres) et l'éclairage sont "
+"toujours dynamiques et affectent les objets en mouvement, mais la lumière "
+"rebondit à partir de cette lumière sera \"baké\"."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:153
 msgid ""
 "Lights can be disabled (no bake) or be fully baked (direct and indirect). "
 "This can be controlled from the **Bake Mode** menu in lights:"
 msgstr ""
+"Les lumières peuvent être désactivées (pas de baking) ou entièrement \"baked"
+"\" (directes et indirectes). Ceci peut être contrôlé à partir du menu **Bake "
+"Mode** dans les éclairages :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:158
 msgid "The modes are:"
@@ -35426,21 +35561,29 @@ msgid ""
 "**Disabled:** Light is ignored in baking. Keep in mind hiding a light will "
 "have no effect for baking, so this must be used instead."
 msgstr ""
+"** Désactivé: ** La lumière est ignorée lors du \"baking\". Gardez à "
+"l'esprit que cacher une lumière n'aura aucun effet sur le \"baking\", cela "
+"doit être utilisé à la place."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:161
 msgid ""
 "**Indirect:** This is the default mode. Only indirect lighting will be baked."
 msgstr ""
+"** Indirect: ** Ceci est le mode par défaut. Seul l'éclairage indirect sera "
+"\"baked\"."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:162
 msgid ""
 "**All:** Both indirect and direct lighting will be baked. If you don't want "
 "the light to appear twice (dynamically and statically), simply hide it."
 msgstr ""
+"**All:** Les éclairages directs et indirects seront \"baked\". Si vous ne "
+"voulez pas que la lumière apparaisse deux fois (dynamiquement et "
+"statiquement), masquez-la simplement."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:165
 msgid "Baking quality"
-msgstr ""
+msgstr "Qualité de \"Baking\""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:167
 msgid ""
@@ -35449,6 +35592,10 @@ msgid ""
 "parameter. More subdivision results in more detail, but also takes more time "
 "to bake."
 msgstr ""
+"``BakedLightmap`` utilise par simplicité une version voxelisée de la scène "
+"afin de calculer l'éclairage. La taille de Voxel peut-être ajustée via le "
+"paramètre **Bake Subdiv**. Un plus grand nombre de sous-divisions apportera "
+"plus de détail, mais augmentera également le temps requis du \"baking\"."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:171
 msgid ""
@@ -35457,18 +35604,27 @@ msgid ""
 "subdivision), which is used for capturing light in dynamic objects (more on "
 "that later). Its default value is also good enough for most cases."
 msgstr ""
+"En général, les paramètres par défaut suffisent. Si vous souhaitez capturer "
+"la lumière d'objets dynamiques (plus d'infos là dessus plus tard), vous "
+"pouvez également utiliser **Capture Subdivision** (doit toujours être "
+"inférieur ou égal au nombre de sous-divisions principal). La valeur par "
+"défaut pour ce paramètre est également suffisante dans la plupart des cas."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:178
 msgid ""
 "Besides the capture size, quality can be modified by setting the **Bake "
 "Mode**. Two modes of capturing indirect are provided:"
 msgstr ""
+"Outre la taille de la capture, la qualité peut être modifiée en réglant le "
+"**Bake Mode**. Deux modes de capture indirecte sont proposés :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:183
 msgid ""
 "**Voxel Cone**: Trace: Is the default one; it's less precise, but faster. "
 "Looks similar to (but slightly better than) ``GIProbe``."
 msgstr ""
+"**Voxel Cone**: Trace: est la valeur par défaut; C'est moins précis, mais "
+"plus rapide. Similaire à (mais un peu mieux que) '' GIProbe''."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:184
 msgid ""
@@ -35476,30 +35632,37 @@ msgid ""
 "longer to bake. If used in low or medium quality, some scenes may produce "
 "grain."
 msgstr ""
+"**Ray Tracing** : Cette méthode est plus précise, mais peut avoir un temps "
+"de rendu considérable. Si la qualité basse ou médium est utilisé, certaine "
+"scènes peuvent produire du grain."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:187
 msgid "Baking"
-msgstr ""
+msgstr "Pré-calcul"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:189
 msgid ""
 "To begin the bake process, just push the big **Bake Lightmaps** button on "
 "top when selecting the ``BakedLightmap`` node:"
 msgstr ""
+"Pour pré-calculer les lumières, appuyer sur le bouton **Bake Lightmaps** (en "
+"haut quand vous sélectionnez le noeud ``BakeLightmap``) :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:194
 msgid ""
 "This can take from seconds to minutes (or hours) depending on scene size, "
 "bake method and quality selected."
 msgstr ""
+"Cela peut prendre quelques secondes, voir des heures. La taille de la scène, "
+"la méthode de pré-calcul et sa qualité impacte le temps de calcul."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:198
 msgid "Configuring bake"
-msgstr "Configurer la préparation"
+msgstr "Configurer les pré-calculs"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:200
 msgid "Several more options are present for baking:"
-msgstr ""
+msgstr "Différentes options sont disponibles pour le pré-calcul :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:202
 msgid ""
@@ -35508,6 +35671,10 @@ msgid ""
 "cases. Increase it in case you want better lighting on small details or your "
 "scene is large."
 msgstr ""
+"**Sous-division des pré-calculs** : Dans le système de cartographie de "
+"lumière utilisée par Godot, une grille est utilisée pour le transfert de "
+"l'information lumineuse. Augmenter la densité de la grille pour améliorer "
+"les détails lumineux."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:203
 msgid ""
@@ -35515,40 +35682,56 @@ msgid ""
 "(lighting dynamic objects). Default value is generally OK, it's usually "
 "smaller than Bake Subdiv and can't be larger than it."
 msgstr ""
+"**Sous-division de capture** : il s'agit d'une grille utilisée pour la "
+"capture temps-réel d'information lumineuse (produit par des objets "
+"dynamiques). La valeur par défaut est généralement correcte. Elle doit être "
+"plus petite que la grille de sous-division utilisée pour les pré-calculs."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:204
 msgid ""
 "**Bake Quality**: Three bake quality modes are provided, Low, Medium and "
 "High. Higher quality takes more time."
 msgstr ""
+"**Qualité des pré-calculs** : Trois sont disponibles. Basse, Moyenne et "
+"Haute. Impact la durée des pré-calculs."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:205
 msgid ""
 "**Bake Mode**: The baker can use two different techniques: *Voxel Cone "
 "Tracing* (fast, but approximate), or *RayTracing* (slow, but accurate)."
 msgstr ""
+"**Mode de pré-calcul** : Deux techniques sont proposées : *Voxel Cone "
+"Tracing* (rapide, mais approximatif), et *Lancé de rayons* (lent, mais "
+"précis)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:206
 msgid ""
 "**Propagation**: Used for the *Voxel Cone Trace* mode. Works just like in "
 "``GIProbe``."
 msgstr ""
+"**Propagation** : Utilisé par le mode *Voxel Cone Trace*. Fonctionne comme "
+"le ``GIProbe``."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:207
 msgid ""
 "**HDR**: If disabled, lightmaps are smaller, but can't capture any light "
 "over white (1.0)."
 msgstr ""
+"**HDR**: Si désactivée, les lightmaps seront plus petit, mais ne pourront "
+"pas capturer toutes les lumières au-dessus du blanc (1.0)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:208
 msgid ""
 "**Image Path**: Where lightmaps will be saved. By default, on the same "
 "directory as the scene (\".\"), but can be tweaked."
 msgstr ""
+"**Chemin de l'image** : Où les lightmaps seront sauvegardées. Par défaut, "
+"sur le même répertoire que la scène (\".\"), mais il peut être modifié."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:209
 msgid "**Extents**: Size of the area affected (can be edited visually)"
 msgstr ""
+"**Extensions** : Taille de la zone affectée (peut être modifiée visuellement)"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:210
 msgid ""
@@ -35557,6 +35740,11 @@ msgid ""
 "which can be a bit heavy. If you are using .tscn formats (instead of .scn), "
 "you can save it to disk."
 msgstr ""
+"**Données lumière** : Contient les données de pré-calcul de lumière après le "
+"pré-calcul. Les textures sont sauvegardées sur le disque, mais il contient "
+"aussi les données de capture pour les objets dynamiques, qui peuvent être un "
+"peu lourds. Si vous utilisez des formats.tscn (au lieu de.scn), vous pouvez "
+"les enregistrer sur le disque."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:213
 msgid "Dynamic objects"
@@ -35569,6 +35757,11 @@ msgid ""
 "generate *capture* data. This is used to, then, transfer the light to "
 "dynamic objects that move around the scene."
 msgstr ""
+"Dans d'autres moteurs ou implémentateur de lightmapper, vous devez placer "
+"manuellement de petits objets appelés \"\"lightprobes\" tout autour du "
+"niveau pour générer des données * capture *. Ceci est utilisé pour, ensuite, "
+"transférer la lumière sur des objets dynamiques qui se déplacent dans la "
+"scène."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:220
 msgid ""
@@ -35577,6 +35770,11 @@ msgid ""
 "objects around, and they will be lit accordingly. Of course, you have to "
 "make sure you set up your scene bounds accordingly or it won't work."
 msgstr ""
+"Cependant, cette implementation de la cartographie de la lumière utilise une "
+"méthode différente. Le processus est automatique, vous n'avez donc rien à "
+"faire. Il suffit de déplacer vos objets, et ils seront éclairés en "
+"conséquence. Bien sûr, vous devez vous assurer que vous configurez vos "
+"limites de scène en conséquence ou cela ne fonctionnera pas."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:4
 msgid "Environment and post-processing"
@@ -35587,6 +35785,9 @@ msgid ""
 "Godot 3 provides a redesigned Environment resource, as well as a brand new "
 "post-processing system with many available effects right out of the box."
 msgstr ""
+"Godot 3 fournit une ressource Environnement repensée, ainsi qu'un tout "
+"nouveau système de post-traitement avec de nombreux effets disponibles "
+"directement."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:12
 msgid ""
@@ -35595,6 +35796,11 @@ msgid ""
 "effects, and adjustments. By itself it does nothing, but it becomes enabled "
 "once used in one of the following locations in order of priority:"
 msgstr ""
+"La ressource Environnement stocke toutes les informations nécessaires au "
+"contrôle de l'environnement de rendu. Cela comprend le ciel, l'éclairage "
+"ambiant, la cartographie des tons, les effets et les réglages. Par elle-"
+"même, elle ne fait rien, mais elle devient active une fois utilisée dans "
+"l'un des endroits suivants par ordre de priorité :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:18
 msgid "Camera node"
@@ -35605,12 +35811,16 @@ msgid ""
 "An Environment can be set to a camera. It will have priority over any other "
 "setting."
 msgstr ""
+"Un environnement peut être réglé sur une caméra. Il aura la priorité sur "
+"tout autre réglage."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:24
 msgid ""
 "This is mostly useful when wanting to override an existing environment, but "
 "in general it's a better idea to use the option below."
 msgstr ""
+"C'est surtout utile lorsque vous voulez remplacer un environnement existant, "
+"mais en général c'est une meilleure idée d'utiliser l'option ci-dessous."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:28
 msgid "WorldEnvironment node"
@@ -35621,6 +35831,9 @@ msgid ""
 "The WorldEnvironment node can be added to any scene, but only one can exist "
 "per active scene tree. Adding more than one will result in a warning."
 msgstr ""
+"Le nœud WorldEnvironment peut être ajouté à n'importe quelle scène, mais un "
+"seul peut exister par arbre de scène actif. Si vous en ajoutez plus d'un, "
+"vous recevrez un avertissement."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:35
 msgid ""
@@ -35628,6 +35841,9 @@ msgid ""
 "(explained below). This means it can be overridden on a per-scene basis, "
 "which makes it quite useful."
 msgstr ""
+"Tout environnement ajouté a une priorité plus élevée que l'environnement par "
+"défaut (expliqué ci-dessous). Cela signifie qu'il peut être remplacé par "
+"scène, ce qui le rend très utile."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:42
 msgid ""
@@ -35635,6 +35851,10 @@ msgid ""
 "Environment was set to a Camera or WorldEnvironment. Just head to Project "
 "Settings -> Rendering -> Environment:"
 msgstr ""
+"Un environnement par défaut peut être défini, ce qui agit comme une solution "
+"de repli lorsque aucun environnement n'a été défini sur une caméra ou "
+"WorldEnvironment. Il vous suffit de vous rendre dans Paramètres du projet -> "
+"Rendu -> Environnement :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:48
 msgid ""
@@ -35642,6 +35862,9 @@ msgid ""
 "environment (``default_env.tres``). If one needs to be created, save it to "
 "disk before referencing it here."
 msgstr ""
+"Les nouveaux projets créés à partir du Gestionnaire de projets sont livrés "
+"avec un environnement par défaut (``default_env.tres``). S'il est nécessaire "
+"d'en créer un, sauvegardez-le sur disque avant de le référencer ici."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:53
 msgid "Environment options"
@@ -35652,6 +35875,8 @@ msgid ""
 "Following is a detailed description of all environment options and how they "
 "are intended to be used."
 msgstr ""
+"Vous trouverez ci-dessous une description détaillée de toutes les options "
+"d'environnement et de la façon dont elles doivent être utilisées."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:61
 msgid ""
@@ -35660,20 +35885,29 @@ msgid ""
 "background not only serves the purpose of displaying an image or color, it "
 "can also change how objects are affected by ambient and reflected light."
 msgstr ""
+"La section Arrière-plan contient les paramètres sur la façon de remplir "
+"l'arrière-plan (parties de l'écran où les objets n'ont pas été dessinés). "
+"Dans Godot 3.0, l'arrière-plan ne sert pas seulement à afficher une image ou "
+"une couleur, il peut aussi changer la façon dont les objets sont affectés "
+"par la lumière ambiante et réfléchie."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:68
 msgid "There are many ways to set the background:"
-msgstr ""
+msgstr "Il y a plusieurs façons de régler l'arrière-plan :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:70
 msgid ""
 "**Clear Color** uses the default clear color defined by the project. The "
 "background will be a constant color."
 msgstr ""
+"**Clear Color** utilise la couleur claire par défaut définie par le projet. "
+"L'arrière-plan sera d'une couleur constante."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:71
 msgid "**Custom Color** is like Clear Color, but with a custom color value."
 msgstr ""
+"**Couleur personnalisée** comme Clear Color, mais avec une valeur de couleur "
+"personnalisée."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:72
 msgid ""
@@ -35681,6 +35915,9 @@ msgid ""
 "procedural sky (a simple sky featuring a gradient and an optional sun). "
 "Objects will reflect it and absorb ambient light from it."
 msgstr ""
+"**Sky** vous permet de définir un ciel panoramique (une texture de sphère de "
+"360 degrés) ou un ciel procédural (un ciel simple avec un dégradé et un "
+"soleil en option). Les objets le reflètent et absorbent la lumière ambiante."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:73
 msgid ""
@@ -35688,10 +35925,13 @@ msgid ""
 "value for drawing the background. The sky will only be used for reflection "
 "and ambient light."
 msgstr ""
+"**Couleur+Ciel** vous permet de définir un ciel (comme ci-dessus), mais "
+"utilise une valeur de couleur constante pour dessiner le fond. Le ciel ne "
+"sera utilisé que pour la réflexion et la lumière ambiante."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:76
 msgid "Ambient Light"
-msgstr ""
+msgstr "Lumière ambiante"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:78
 msgid ""
@@ -35699,6 +35939,9 @@ msgid ""
 "geometry with the same intensity. It is global and independent of lights "
 "that might be added to the scene."
 msgstr ""
+"L'ambiante (tel que défini ici) est un type de lumière qui affecte chaque "
+"pièce de la géométrie avec la même intensité. Elle est globale et "
+"indépendante des lumières qui pourraient être ajoutées à la scène."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:82
 msgid ""
@@ -35707,6 +35950,10 @@ msgid ""
 "the *Sky* (as described before, but a sky needs to be set as background for "
 "this to be enabled)."
 msgstr ""
+"Il existe deux types de lumière ambiante : la *Couleur ambiante* (qui est "
+"une couleur constante multipliée par l'albédo du matériau) et celle obtenue "
+"à partir du *Sky* (comme décrit précédemment, mais un ciel doit être défini "
+"comme fond pour que cela soit activé)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:89
 msgid ""
@@ -35714,16 +35961,24 @@ msgid ""
 "color and sky using the **Sky Contribution** setting (this value is 1.0 by "
 "default for convenience, so only the sky affects objects)."
 msgstr ""
+"Lorsqu'un *Sky* est défini comme arrière-plan, il est possible de fusionner "
+"la couleur ambiante et le ciel à l'aide du paramètre **Sky Contribution** "
+"(cette valeur est 1.0 par défaut par commodité, donc seul le ciel affecte "
+"les objets)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:93
 msgid "Here is a comparison of how different ambient light affects a scene:"
 msgstr ""
+"Voici une comparaison montrant comment différentes lumières ambiantes "
+"affectent la scène :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:97
 msgid ""
 "Finally there is an **Energy** setting, which is a multiplier, useful when "
 "working with HDR."
 msgstr ""
+"Enfin, il y a un paramètre **Énergie**, qui est un facteur multiplicatif, "
+"utile lorsque l'on travaille en HDR."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:99
 msgid ""
@@ -35734,17 +35989,26 @@ msgid ""
 "indirect light propagates. Below is a comparison, in terms of quality, "
 "between using a flat ambient color and a GIProbe:"
 msgstr ""
+"En général, la lumière ambiante ne devrait être utilisée que pour des scènes "
+"simples, espaces extérieurs, ou pour des raisons de performance (la lumière "
+"ambiante est peu cher), car cela ne donne pas le meilleur rendu. Le mieux "
+"est de générer la lumière ambiante à partir de ReflectionProbe ou de "
+"GIProbe, cela donnera un rendu plus fidèle de la propagation de la lumière. "
+"Ci-dessous voici une comparaison en terme de qualité entre la lumière "
+"ambiante plate (flat) et GIProbe :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:108
 msgid ""
 "Using one of the methods described above, objects get constant ambient "
 "lighting replaced by ambient light from the probes."
 msgstr ""
+"En utilisant une des méthodes décrites ci-dessus, les objets reçoivent une "
+"lumière ambiante constante remplacé par la lumière ambiante des probes."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:112
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:87
 msgid "Fog"
-msgstr ""
+msgstr "Brouillard"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:114
 msgid ""
@@ -35752,27 +36016,39 @@ msgid ""
 "The physical effect is actually pretty complex, but Godot provides a good "
 "approximation. There are two kinds of fog in Godot:"
 msgstr ""
+"Le brouillard, comme dans la vie réelle, fait disparaître des objets "
+"éloignés dans une couleur uniforme. L'effet physique est en fait assez "
+"complexe, mais Godot fournit une bonne approximation. Il y a deux sortes de "
+"brouillard dans Godot :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:118
 msgid ""
 "**Depth Fog:** This one is applied based on the distance from the camera."
 msgstr ""
+"**Depth Fog:** Celui-ci est appliqué en fonction de la distance de la caméra."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:119
 msgid ""
 "**Height Fog:** This one is applied to any objects below (or above) a "
 "certain height, regardless of the distance from the camera."
 msgstr ""
+"**Height Fog:** Celui-ci est appliqué à tout objet situé au-dessous (ou au-"
+"dessus) d'une certaine hauteur, quelle que soit la distance qui le sépare de "
+"la caméra."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:123
 msgid ""
 "Both of these fog types can have their curve tweaked, making their "
 "transition more or less sharp."
 msgstr ""
+"Ces deux types de brouillard peuvent avoir leur courbe modifiée, ce qui rend "
+"leur transition plus ou moins nette."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:125
 msgid "Two properties can be tweaked to make the fog effect more interesting:"
 msgstr ""
+"Deux propriétés peuvent être modifiées pour rendre l’effet de brouillard "
+"plus intéressant :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:127
 msgid ""
@@ -35780,16 +36056,23 @@ msgid ""
 "the fog. When looking towards a directional light (usually a sun), the color "
 "of the fog will be changed, simulating the sunlight passing through the fog."
 msgstr ""
+"La première est * * Sun amount * *, qui utilise la propriété Sun Color du "
+"brouillard. En regardant vers une lumière directionnelle (généralement un "
+"soleil), la couleur du brouillard sera changée, simulant la lumière du "
+"soleil passant à travers le brouillard."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:131
 msgid ""
 "The second is **Transmit Enabled** which simulates more realistic light "
 "transmittance. In practice, it makes light stand out more across the fog."
 msgstr ""
+"La seconde est * * transmission Enabled * * qui simule une transmittance de "
+"la lumière plus réaliste. Dans la pratique, cela rend la lumière plus "
+"visible dans le brouillard."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:137
 msgid "Tonemap"
-msgstr ""
+msgstr "Tonemap"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:139
 msgid ""
@@ -35798,27 +36081,38 @@ msgid ""
 "mapping can make light and dark areas more homogeneous, even though the "
 "result is not that strong. Tone mapping options are:"
 msgstr ""
+"Sélectionne la courbe de  tone-mapping  qui sera appliquée à la scène, à "
+"partir d’une courte liste de courbes standard utilisées dans l’industrie du "
+"film et du jeu. Le  tone-mapping  peut rendre les zones claires et sombres "
+"plus homogènes, même si le résultat n’est pas très bon. Les options de  tone-"
+"mapping  sont :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:144
 msgid ""
 "**Mode:** Tone mapping mode, which can be Linear, Reindhart, Filmic, or Aces."
 msgstr ""
+"**Mode:** Le mode de Tone mapping , peut être Linear, Reindhart, Filmic, or "
+"Aces."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:145
 msgid ""
 "**Exposure:** Tone mapping exposure which simulates amount of light received "
 "over time."
 msgstr ""
+"**Exposure:** Tone mapping exposure qui simule la quantité de lumière reçue "
+"au fil du temps."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:146
 msgid ""
 "**White:** Tone mapping white, which simulates where in the scale white is "
 "located (by default 1.0)."
 msgstr ""
+"**White:** Tone Mapping blanc, qui simule où  blanc est situé dans l’échelle "
+"(par défaut 1,0)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:149
 msgid "Auto Exposure (HDR)"
-msgstr ""
+msgstr "Auto Exposure (HDR)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:151
 msgid ""
@@ -35829,6 +36123,13 @@ msgid ""
 "simulates the camera (or eye) in an effort to adapt between light and dark "
 "locations and their different amounts of light."
 msgstr ""
+"Même si, dans la plupart des cas, l’éclairage et la texturation sont "
+"fortement contrôlés par les artistes, Godot permet une mise en œuvre simple "
+"du HDR (high dynamic range) avec le mécanisme d’exposition automatique. Ceci "
+"est généralement utilisé dans un souci de réalisme lors de la combinaison "
+"d'espace intérieures faiblement éclairé et d'extérieur. L’exposition "
+"automatique simule la caméra (ou l’œil) qui s'efforce de s’adapter entre les "
+"zones clairs et sombres et leurs différentes quantités de lumière."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:160
 msgid ""
@@ -35839,6 +36140,14 @@ msgid ""
 "directional light. Normally, values between 3.0 and 6.0 are enough to "
 "simulate indoor-outdoor conditions."
 msgstr ""
+"La manière la plus simple d'utiliser l'exposition automatique et de "
+"s'assurer que les éclairages extérieurs ( ou les autres puissants "
+"éclairages ) aie une énergie au delà de 1.0. Ceci est obtenu en manipulant "
+"leur multiplicateur **Energy** ( sur la lumière elle-même ). Pour un tout "
+"homogène, **Sky** nécessite aussi souvent le multiplicateur d'énergie, afin "
+"d'être en harmonie avec les lumières directionnelles. Habituellement, des "
+"valeurs entre 3.0 et 6.0 sont suffisantes pour émuler un environnement "
+"intérieur-extérieur."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:166
 msgid ""
@@ -38611,10 +38920,14 @@ msgid ""
 "turn off the ability to edit individual keys so you cannot change one of the "
 "transform tracks by accident!"
 msgstr ""
+"Soyez sûr d'appuyer sur le boutton \"enable editing of individual keys\" "
+"pour désactiver la possibilité d'éditer des clés individuelles afin que vous "
+"ne puissiez pas changer une des pistes de transformation par accident !"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:331
 msgid "Let's repeat the process for the rifle and knife firing animations!"
 msgstr ""
+"Répétons le processus pour les animations de tir au fusil et au couteau !"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:333
 msgid ""
@@ -50669,9 +50982,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:4
-#, fuzzy
 msgid "Input examples"
-msgstr "Événement d’entrée"
+msgstr "Exemples d'entrée"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:9
 msgid ""
@@ -50795,9 +51107,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:119
-#, fuzzy
 msgid "Capturing actions"
-msgstr "Fonctions mathématiques"
+msgstr "Capturer les actions"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:121
 msgid ""
@@ -50807,9 +51118,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:133
-#, fuzzy
 msgid "Keyboard events"
-msgstr "Raccourci clavier"
+msgstr "Événements clavier"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:135
 msgid ""
@@ -50827,9 +51137,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:152
-#, fuzzy
 msgid "Keyboard modifiers"
-msgstr "Modificateurs d'espace réservé"
+msgstr "Modificateurs de clavier"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:154
 msgid ""
@@ -50841,9 +51150,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:175
-#, fuzzy
 msgid "Mouse events"
-msgstr "Événement d’entrée"
+msgstr "Événements souris"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:177
 msgid ""
@@ -50869,9 +51177,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:202
-#, fuzzy
 msgid "Mouse motion"
-msgstr "Racine de mouvement"
+msgstr "Mouvement de la souris"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:204
 msgid ""
@@ -50887,9 +51194,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:234
-#, fuzzy
 msgid "Touch events"
-msgstr "Événement d’entrée"
+msgstr "Événements tactiles"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:236
 msgid ""

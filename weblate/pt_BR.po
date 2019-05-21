@@ -16,6 +16,7 @@
 # Cabral <pedrogcabral@hotmail.com>, 2018.
 # Caio Jordão Carvalho <caiojcarvalho@gmail.com>, 2018.
 # Caio Northfleet <caio.northfleet@gmail.com>, 2018.
+# Cassio Godinho <cassiopgodinho@gmail.com>, 2019.
 # Cauê Henrique Sousa Ferrareto <caue313@gmail.com>, 2018.
 # Claudio Eden <claudio.eden@gmail.com>, 2018.
 # Cochise César <cochisecesar@gmail.com>, 2018.
@@ -59,17 +60,20 @@
 # Luiz Montevechio <montevechiol@gmail.com>, 2019.
 # Luk3M <luk3@hotmail.com.br>, 2018.
 # M4gma <lucboari@gmail.com>, 2018.
-# Marcus Correia <marknokalt@live.com>, 2018.
+# Marcus Correia <marknokalt@live.com>, 2018-2019.
 # Matheus <matheus.cumpian@hotmail.com>, 2018.
 # Matheus Victor <matheusvictor870@gmail.com>, 2018.
 # Mauricio Luan Carneiro deSouza <newmailmlcs@gmail.com>, 2018.
+# Mauricio Lucas <mauricio.lucas@yahoo.com>, 2019.
 # Michael Alexsander Silva Dias <michaelalexsander@protonmail.com>, 2018.
 # Michael Canesche <michael.canesche@gmail.com>, 2018.
 # Michel G. Souza <Michelgomesdes@hotmail.com>, 2018.
+# Miguel R. Araújo <leuugz@gmail.com>, 2019.
 # miketangogamer <miketangogamer@gmail.com>, 2018-2019.
 # Mosca Morta <ewersonffranco@gmail.com>, 2018.
 # Paulo Sergio Nogueira da Silva <paulozero357@gmail.com>, 2018.
 # Pedro Silva <pedrosgregorio9@gmail.com>, 2018.
+# Pietro Benati Carrara <piticarrara@gmail.com>, 2019.
 # Raphael Nogueira Campos <raphaelncampos@gmail.com>, 2019.
 # Renato Lacerda <renato.ac.lacerda@gmail.com>, 2018.
 # Renne Sampaio <rennesampaio97@gmail.com>, 2018-2019.
@@ -95,8 +99,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-04-09 11:43+0200\n"
-"PO-Revision-Date: 2019-04-08 10:36+0000\n"
-"Last-Translator: Julio Yagami <juliohenrique31501234@hotmail.com>\n"
+"PO-Revision-Date: 2019-05-21 11:16+0000\n"
+"Last-Translator: Miguel R. Araújo <leuugz@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -104,7 +108,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.7-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -1352,9 +1356,8 @@ msgid "Step-by-step"
 msgstr "Passo a passo"
 
 #: ../../docs/about/docs_changelog.rst:19
-#, fuzzy
 msgid ":ref:`Signals <doc_signals>`"
-msgstr ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`Sinais <doc_signals>`"
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`Exporting <doc_exporting>`"
@@ -1366,9 +1369,8 @@ msgid "Project workflow"
 msgstr "Fluxo de trabalho do projeto"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid "Best Practices:"
-msgstr "Boas práticas"
+msgstr "Boas práticas:"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Introduction <doc_introduction_best_practices>`"
@@ -1405,12 +1407,10 @@ msgid ":ref:`Godot notifications <doc_godot_notifications>`"
 msgstr ":ref:`Notificação Godot <doc_animations>`"
 
 #: ../../docs/about/docs_changelog.rst:33
-#, fuzzy
 msgid ":ref:`Data preferences <doc_data_preferences>`"
 msgstr ":ref:`Preferências de dados <doc_data_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid ":ref:`Logic preferences <doc_logic_preferences>`"
 msgstr ":ref:`Preferências de lógica <doc_logic_preferences>`"
 
@@ -1422,44 +1422,38 @@ msgid "Scripting"
 msgstr "Scripting"
 
 #: ../../docs/about/docs_changelog.rst:39
-#, fuzzy
 msgid ":ref:`Typed GDscript <doc_gdscript_static_typing>`"
-msgstr ":ref:`Embutido <doc_gdscript_builtin_types>`"
+msgstr ":ref:`GDscript tipado <doc_gdscript_static_typing>`"
 
 #: ../../docs/about/docs_changelog.rst:42 ../../docs/tutorials/2d/index.rst:2
-#, fuzzy
 msgid "2D"
 msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:44
-#, fuzzy
 msgid ":ref:`2D lights and shadows <doc_2d_lights_and_shadows>`"
-msgstr ":ref:`luzes 2D e sombras <doc_2d_lights_and_shadows>`"
+msgstr ":ref:`Luzes e sombras 2D <doc_2d_lights_and_shadows>`"
 
 #: ../../docs/about/docs_changelog.rst:45
-#, fuzzy
 msgid ":ref:`2D meshes <doc_2d_meshes>`"
-msgstr ":ref:`malhas 2D<doc_2d_meshes>`"
+msgstr ":ref:`Malhas 2D<doc_2d_meshes>`"
 
 #: ../../docs/about/docs_changelog.rst:48 ../../docs/tutorials/3d/index.rst:2
-#, fuzzy
 msgid "3D"
 msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:50
-#, fuzzy
 msgid ":ref:`CSG <doc_csg_tools>`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`CSG <doc_csg_tools>`"
 
 #: ../../docs/about/docs_changelog.rst:51
-#, fuzzy
 msgid ""
 ":ref:`Animating thousands of fish with MultiMesh "
 "<doc_animating_thousands_of_fish>`"
-msgstr "Animar a perda de vida com o nó Tween"
+msgstr ""
+":ref:`Animando milhares de peixes com MultiMesh "
+"<doc_animating_thousands_of_fish>`"
 
 #: ../../docs/about/docs_changelog.rst:52
-#, fuzzy
 msgid ""
 ":ref:`Controlling thousands of fish with Particles "
 "<doc_controlling_thousands_of_fish>`"
@@ -1473,12 +1467,10 @@ msgid "Physics"
 msgstr "Física"
 
 #: ../../docs/about/docs_changelog.rst:57
-#, fuzzy
 msgid ":ref:`Ragdoll system <doc_ragdoll_system>`"
 msgstr ":ref:`Sistema Ragdoll<doc_ragdoll_system>`"
 
 #: ../../docs/about/docs_changelog.rst:58
-#, fuzzy
 msgid ":ref:`Softbody <doc_soft_body>`"
 msgstr ":ref:`Softbody <doc_soft_body>`"
 
@@ -1491,7 +1483,6 @@ msgid "Animation"
 msgstr "Animação"
 
 #: ../../docs/about/docs_changelog.rst:63
-#, fuzzy
 msgid ":ref:`2D skeletons <doc_2d_skeletons>`"
 msgstr ":ref:`Esqueletos 2D<doc_2d_skeletons>`"
 
@@ -1513,23 +1504,20 @@ msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
 msgstr ":ref:`Usando uma Viewport como uma textura <doc_viewport_as_texture>`"
 
 #: ../../docs/about/docs_changelog.rst:70
-#, fuzzy
 msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
-msgstr ":ref:`Pós-processamento personalizado <doc_custom_postprocessing>`"
+msgstr ":ref:`Personalizar Pós-processo <doc_custom_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:73
 #: ../../docs/tutorials/shading/index.rst:2
-#, fuzzy
 msgid "Shading"
-msgstr "Shading"
+msgstr "Sombreamento"
 
 #: ../../docs/about/docs_changelog.rst:75
-#, fuzzy
 msgid ""
 ":ref:`Intro to shaders: 2D and 3D water (7 video tutorials) "
 "<doc_intro_to_shaders_water_workshop>`"
 msgstr ""
-":ref:`Introdução aos shaders: água 2D e 3D (7 video-tutoriais) "
+":ref:`Introdução a shaders: água 2D e 3D (7 video-tutoriais) "
 "<doc_intro_to_shaders_water_workshop>`"
 
 #: ../../docs/about/docs_changelog.rst:76
@@ -1551,9 +1539,8 @@ msgstr ""
 "<doc_vertex_displacement_with_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:78
-#, fuzzy
 msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
-msgstr ":ref:`Pós-processamento avançado <doc_advanced_postprocessing>`"
+msgstr ":ref:`Pós-processo avançado <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:85
 #, fuzzy
@@ -1576,7 +1563,6 @@ msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
 msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:84
-#, fuzzy
 msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
 msgstr ":ref:`Shaders de CanvasItem <doc_canvas_item_shader>`"
 
@@ -1597,9 +1583,8 @@ msgstr ":ref:`Tutorial de iniciante de VR <doc_vr_starter_tutorial>`"
 
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/tutorials/platform/index.rst:2
-#, fuzzy
 msgid "Platform-specific"
-msgstr "Específico de plataforma"
+msgstr "Plataformas específicas"
 
 #: ../../docs/about/docs_changelog.rst:95
 #, fuzzy
@@ -1610,14 +1595,12 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:98
 #: ../../docs/tutorials/threads/index.rst:2
-#, fuzzy
 msgid "Multi-threading"
-msgstr "String com múltiplas linhas"
+msgstr "Multi-threading"
 
 #: ../../docs/about/docs_changelog.rst:100
-#, fuzzy
 msgid ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
-msgstr ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
+msgstr ":ref:`Thread APIs seguras<doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:103
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1641,10 +1624,9 @@ msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
 msgstr ":ref:`Mudar cenas manualmente <doc_change_scenes_manually>`"
 
 #: ../../docs/about/docs_changelog.rst:108
-#, fuzzy
 msgid ""
 ":ref:`Differences between GLES2 and GLES3 <doc_gles2_gles3_differences>`"
-msgstr "Diferenças gerais entre o C# e o GDScript"
+msgstr ":ref:'Diferenças entre GLES2 e GLES3 <doc_gles2_gles3_differences>`"
 
 #: ../../docs/about/docs_changelog.rst:111
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:231
@@ -1679,10 +1661,11 @@ msgid "Engine development"
 msgstr "Desenvolvimento de Engine"
 
 #: ../../docs/about/docs_changelog.rst:119
-#, fuzzy
 msgid ""
 ":ref:`Binding to external libraries <doc_binding_to_external_libraries>`"
-msgstr ":ref:`Editores externos são possíveis <doc_external_editor>`"
+msgstr ""
+":ref:`Vinculação com bibliotecas externas "
+"<doc_binding_to_external_libraries>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/content/index.rst:2
@@ -1691,9 +1674,8 @@ msgid "Creating content"
 msgstr "Criando conteúdo"
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`Making trees <doc_making_trees>`"
-msgstr ":ref:`Canalização de Animações <doc_animations>`"
+msgstr ":ref:`Criando árvores <doc_making_trees>`"
 
 #: ../../docs/about/docs_changelog.rst:127
 #: ../../docs/tutorials/plugins/index.rst:2
@@ -1701,15 +1683,13 @@ msgid "Plugins"
 msgstr "Plugins"
 
 #: ../../docs/about/docs_changelog.rst:129
-#, fuzzy
 msgid ":ref:`Making main screen plugins <doc_making_main_screen_plugins>`"
 msgstr ""
-":ref:`Fazendo plugins da cena principal <doc_making_main_screen_plugins>`"
+":ref:`Fazendo plugins para cena principal <doc_making_main_screen_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:130
-#, fuzzy
 msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
-msgstr ":ref:`Canalização de Animações <doc_animations>`"
+msgstr ":ref:`Plugins de gizmo espacial <doc_animations>`"
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
@@ -2639,13 +2619,12 @@ msgid "Editing instances"
 msgstr "Editando instâncias"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
-#, fuzzy
 msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
-"Abra a cena ``Bola`` e adicione uma ``PhysicsMaterial`` clicando na seta "
-"abaixo e selecionando \"Novo PhysicsMaterial\"."
+"Abra a cena ``Bola`` e adicione um ``PhysicsMaterial`` clicando na seta "
+"baixo e selecionando \"Novo PhysicsMaterial\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 #, fuzzy
@@ -2657,16 +2636,14 @@ msgstr ""
 "``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
-#, fuzzy
 msgid ""
 "Press \"Play\" and notice that all of the instanced balls are now much more "
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
-"Abra a cena ``Ball`` e altere a propriedade ``Bounce`` (quique) no Inspetor "
-"para `1`. Pressione \"Rodar\" e note que todas as instâncias de bola agora "
-"quicam muito mais. Já que as bolas são baseadas na cena salva, alterações "
-"nessa cena afetam todas as instâncias."
+"Pressione \"Rodar\" e note que todas as bolas instanciadas agora quicam "
+"muito mais. Já que as bolas são baseadas na cena salva, alterações nessa "
+"cena afetam todas as instâncias."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
 msgid ""
@@ -2746,16 +2723,15 @@ msgid "Design language"
 msgstr "Linguagem de concepção"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
-#, fuzzy
 msgid ""
 "But the greatest strength that comes with instancing scenes is that it works "
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
-"Mas a maior força que vem de instâncias de cenas é que isso funciona como "
-"uma excelente linguagem de concepção. Isso é o que mais distingue Godot de "
-"todos os outros motores de jogos existentes por aí afora. O Godot foi todo "
-"projetado pensando neste conceito."
+"Mas o maior ponto forte que vem das instâncias de cenas é que isso funciona "
+"como uma excelente linguagem para design. Isso é o que mais distingue Godot "
+"de todas as outras engines por aí. A Godot foi projetada pensando neste "
+"conceito."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -4811,15 +4787,14 @@ msgstr ""
 "uma vez."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
-#, fuzzy
 msgid ""
 "Disabling the area's collision shape can cause an error if it happens in the "
 "middle of the engine's collision processing. Using ``set_deferred()`` allows "
 "us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
 "Desativar o formato de colisão da área pode causar um erro se ocorrer no "
-"meio do processamento de colisão do mecanismo. Usando ``call_deferred ()`` "
-"nos permite que Godot aguarde para desabilitar a forma até que seja seguro "
+"meio do processamento de colisão da engine. Usando ``set_deferred ()`` nos "
+"permite que a Godot aguarde para desabilitar a forma até que seja seguro "
 "fazê-lo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
@@ -5348,16 +5323,15 @@ msgstr ""
 "DynamicFont\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:904
-#, fuzzy
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
 "font's ``Size``. A setting of ``64`` works well."
 msgstr ""
-"Clique na \"DynamicFont\" que você adicionou e, em \"Font Data\" (dados da "
-"fonte), escolha \"Carregar\" e selecione o arquivo \"Xolonium-Regular.ttf\". "
-"Você tem também que definir o tamanho (``Size``) da fonte. Uma configuração "
-"de ``64`` funciona bem."
+"Clique na \"DynamicFont\" que você adicionou, e em \"Font/Font Data\" (dados "
+"da fonte), escolha \"Carregar\" e selecione o arquivo \"Xolonium-Regular.ttf"
+"\". Você tem também que definir o tamanho ``Size`` da fonte. Uma "
+"configuração de ``64`` funciona bem."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:910
 msgid ""
@@ -5756,7 +5730,6 @@ msgstr ""
 "e-mover."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -5764,23 +5737,24 @@ msgid ""
 "input, you can do that in the \"Project Settings\" under *Input Devices* and "
 "*Pointing*"
 msgstr ""
-"Por padrão Godot emula entrada de mouse apartir da entrada de toque. Quer "
-"dizer, se tudo é programado para acontecer em um evento de mouse, o toque "
-"vai ativar da mesma forma. Se você desejar desativar isso por alguma razão, "
-"ou emular toque apartir da entrada de mouse, você pode fazer isso nas "
-"\"Configurações do Projeto\" abaixo *Dispositivos de Entrada* e *Apontando*"
+"Por padrão Godot emula a entrada de mouse para entrada de toque. Quer dizer "
+"que se tudo é programado para acontecer em um evento de mouse, o toque vai "
+"ativar da mesma forma. Se você desejar desativar isso por alguma razão, ou "
+"emular o toque para entrada de mouse, você pode fazer isso nas "
+"\"Configurações do Projeto\" abaixo de *Dispositivos de Entrada* e "
+"*Apontando*"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
-#, fuzzy
 msgid ""
 "Before we change the input method, in the project settings go to *Display*, "
 "then click on *Window*. In the *Stretch* options, set *Mode* to \"2d\" and "
 "*Aspect* to \"keep\". This ensures that the game scales consistently on "
 "different sized screens."
 msgstr ""
-"Na seção *Stretch*, ajuste *Mode* para \"2d\" e *Aspect* para \"keep\". Isso "
-"garante que o jogo seja escalonado de forma consistente em telas de tamanhos "
-"diferentes."
+"Antes de mudarmos o método de entrada, nas opções do projeto vá para *Tela*, "
+"então clique em *Janela*. Na seção *Stretch*, ajuste *Mode* para \"2d\" e "
+"*Aspect* para \"keep\". Isso garante que o jogo seja escalonado de forma "
+"consistente em telas de tamanhos diferentes."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:44
 msgid ""
@@ -6478,14 +6452,13 @@ msgstr ""
 "plug-ins e estender o editor.**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
-#, fuzzy
 msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
-"Isso leva a um sistema de interface de usuário confiável e flexível, pois "
-"aciona o próprio editor. Com a palavra-chave ``tool``, você pode executar "
-"qualquer código de jogo no editor."
+"Isso leva a um sistema de interface de usuário (UI) confiável e flexível, "
+"pois aciona o próprio editor. Com a palavra-chave ``tool``, você pode "
+"executar qualquer código de jogo no editor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
 msgid ""
@@ -6591,7 +6564,6 @@ msgstr ""
 "<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
-#, fuzzy
 msgid ""
 "Only use Control nodes when you design your interfaces. They have unique "
 "properties that allow them to work with one another. Other nodes, like "
@@ -6601,10 +6573,10 @@ msgid ""
 msgstr ""
 "Use apenas os nós de controle ao projetar suas interfaces. Eles possuem "
 "propriedades únicas que permitem que eles trabalhem uns com os outros. "
-"Outros nós, como Node2D, Sprite, etc., não funcionarão. Você ainda pode usar "
-"alguns nós que funcionam com outros como o AnimationPlayer, o Tween ou o "
-"StreamPlayer. Os nós de controle são CanvasItems, como o Node2D, para que "
-"você possa aplicar shaders a eles."
+"Outros nós, como Node2D, Sprite, etc. não funcionarão. Você ainda pode usar "
+"alguns nós que funcionam com outros, como o AnimationPlayer, o Tween ou o "
+"StreamPlayer. Os nós de controle são CanvasItems, como o Node2D, então você "
+"pode aplicar shaders a eles."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:37
 msgid "All control nodes share the same main properties:"
@@ -6620,9 +6592,8 @@ msgid "Bounding rectangle"
 msgstr "Retângulo delimitador (Bounding rectangle)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
-#, fuzzy
 msgid "Focus and focus neighbor"
-msgstr "Foco e foco vizinho (Focus e focus neighbour)"
+msgstr "Foco e foco vizinho (Focus e focus neighbor)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Size flags"
@@ -7303,14 +7274,13 @@ msgstr ""
 "Um GridContainer com 2 colunas. Ele dimensiona cada coluna automaticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
-#, fuzzy
 msgid ""
 "Godot's UI system is complex, and has a lot more to offer. To learn how to "
 "design more advanced interfaces, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
 "O sistema de interface do usuário do Godot é complexo e tem muito mais a "
-"oferecer. Para aprender a projetar uma interface mais avançada, vá até ref:"
+"oferecer. Para aprender a projetar uma interface mais avançada, vá até :ref:"
 "`GUI Section <toc-learn-features-gui>` dos documentos."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
@@ -7353,7 +7323,6 @@ msgid "The GUI you're going to create"
 msgstr "A GUI que você vai criar"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
-#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_main_menu_design.zip <files/"
 "ui_main_menu_design.zip>` and extract the archive. Import the ``start/`` "
@@ -7667,15 +7636,14 @@ msgstr ""
 "criar cinco instâncias extras ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:159
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the ``Texture`` "
 "property and click ``[empty]`` -> ``Load``. A file browser opens and lets "
 "you pick a sprite to load into the texture slot."
 msgstr ""
-"Clique em cada um dos nós para selecioná-lo. No inspetor, clique no ícone ``…"
-"`` à direita da propriedade Texture, e clique em ``Load``. Um navegador de "
-"arquivos é aberto e permite escolher uma sprite para carregar no slot de "
+"Clique em cada um dos nós para selecioná-lo. No inspetor, encontre a "
+"propriedade ``Texture`` e clique em ``[empty]`` -> ``Load`` . Um navegador "
+"de arquivos é aberto e permite escolher uma sprite para carregar no slot de "
 "textura."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
@@ -7757,7 +7725,6 @@ msgstr ""
 "deles"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
@@ -7765,8 +7732,7 @@ msgid ""
 msgstr ""
 "Na árvore de nós, selecione todos os nós ``TextureRect`` que devem ir no "
 "lado esquerdo: a logo, as opções de menu e a nota de versão. Arraste e solte-"
-"os no ``VBoxContainer``. Em seguida, arraste o nó de ilustração para o "
-"``CenterContainer``. Os nós devem se posicionar automaticamente."
+"os no ``VBoxContainer``. Os nós devem se posicionar automaticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
 msgid "Containers automatically place and resize textures"
@@ -7786,7 +7752,6 @@ msgstr ""
 "Não há espaço entre o logotipo e os outros elementos da interface do usuário"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the ``Size Flags`` category and click "
@@ -7797,12 +7762,14 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
-"Para centralizar os caracteres à direita, usaremos um ``CenterContainer``. "
-"Adicione um nó ``CenterContainer`` como filho do ``HBoxContainer``. Então no "
-"Inspetor, vá até a categoria ``Size Flags`` e clique no campo à direita da "
-"propriedade ``Vertical``, e marque ``Expand``. Faça o mesmo com a "
-"propriedade ``Horizontal``. Finalmente, arraste e solte os caracteres no "
-"``CenterContainer``. O elemento Caracteres será centralizado automaticamente."
+"Para centralizar os caracteres à direita, primeiro selecione o "
+"``CenterContainer``.  Então, no inspetor, role abaixo para a categoria "
+"``Size Flags`` e clique no campo à direita da propriedade  ``Vertical``, e "
+"marque ``Expand`` além de ``Fill``. Faça o mesmo com a propriedade "
+"``Horizontal``. Isso faz o ``CenterContainer`` se expandir para todo o "
+"espaço disponível respeitando seu vizinho ``VBoxContainer``. Finalmente, "
+"arraste e solte os caracteres no ``CenterContainer``. O elemento Caracteres "
+"será centralizado automaticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid ""
@@ -7837,7 +7804,6 @@ msgstr ""
 "interface do usuário"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -7851,8 +7817,9 @@ msgstr ""
 "delas é expandido para ocupar o máximo de espaço vertical possível. "
 "Selecione o nó ``MenuOptions``. No Inspetor, role para baixo até a categoria "
 "``Size Flags``. Clique no campo à direita da propriedade ``Vertical`` e "
-"marque ``Expand``. O contêiner se expande para ocupar todo o espaço vertical "
-"disponível. Mas respeita seus vizinhos, os elementos ``Logo`` e ``Version``."
+"marque ``Expand`` além de ``Fill`` . O contêiner se expande para ocupar todo "
+"o espaço vertical disponível. Mas respeita seus vizinhos, os elementos "
+"``Logo`` e ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:253
 msgid ""
@@ -7893,30 +7860,29 @@ msgstr ""
 "Sem uma única linha de código, temos um menu principal preciso e responsívo."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
-#, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
 "your own. In the next tutorial, you'll create a Game User Interface with "
 "bars and item counters."
 msgstr ""
-"Parabéns por chegar lá! Você pode baixar o `menu final <#>`__ para comparar "
-"com o seu próprio. No próximo tutorial, você criará uma interface do usuário "
-"do jogo com barras e contadores de itens."
+"Parabéns por chegar aqui! Você pode baixar o menu final :download:"
+"`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` para comparar com "
+"o seu próprio. No próximo tutorial, você criará uma interface do usuário do "
+"jogo com barras e contadores de itens."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
-#, fuzzy
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
 "ratios. In Godot, we use containers to control the position and the size of "
 "UI elements."
 msgstr ""
-"A interface de usuário responsiva tem tudo a ver com a certeza de que nossas "
-"interfaces de usuário sejam bem dimensionadas em todos os tipos de tela. "
-"Telas de TV e monitores de computador têm diferentes tamanhos e proporções. "
-"No Godot, usamos contêineres para controlar a posição e o tamanho dos "
-"elementos da interface do usuário."
+"Uma interface de usuário responsiva tem tudo a ver com a certeza de que "
+"nossas interfaces de usuário sejam bem dimensionadas em todos os tipos de "
+"tela. Telas de TV e monitores de computador têm diferentes tamanhos e "
+"proporções. No Godot, usamos contêineres para controlar a posição e o "
+"tamanho dos elementos da interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
 msgid ""
@@ -7965,7 +7931,6 @@ msgid "Design the GUI"
 msgstr "Projetar a GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
@@ -7975,8 +7940,8 @@ msgstr ""
 "Agora que você aprendeu o básico, vamos ver como construir uma Interface de "
 "Jogo do Usuário (Game User Interface  - GUI) com componentes de interface do "
 "usuário reutilizáveis: uma barra de vida, uma barra de energia e contadores "
-"de bombas e de dinheiro. No final deste tutorial, você terá uma GUI de jogo, "
-"pronta para controle com GDscript ou VisualScript:"
+"de bombas e esmeraldas. No final deste tutorial, você terá uma GUI de jogo, "
+"pronta para controlar com GDscript ou VisualScript:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
@@ -8041,9 +8006,8 @@ msgstr "As barras de vida e energia"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-#, fuzzy
 msgid "The bomb and emerald counters on the right"
-msgstr "Os contadores de bombas e dinheiro à direita"
+msgstr "Os contadores de bombas e esmeraldas à direita"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
@@ -8059,7 +8023,6 @@ msgid "The life and energy bars on the left"
 msgstr "As barras de vida e energia à esquerda"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
-#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -8073,7 +8036,7 @@ msgstr ""
 "``HBoxContainer`` para gerenciar nossas duas colunas. As duas barras são "
 "empilhadas umas em cima das outras dentro de um ``VBoxContainer``. E "
 "precisaremos de um último ``HBoxContainer`` na coluna da direita para "
-"colocar os contadores de bombas e dinheiro lado-a-lado."
+"colocar os contadores de bombas e esmeraldas lado-a-lado."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
@@ -8115,17 +8078,14 @@ msgid "For now, let's start with a few containers."
 msgstr "Por enquanto, vamos começar com alguns contêineres."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
-#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
 "Crie uma nova cena e adicione um ``MarginContainer``. Selecione o nó e "
-"nomeie-o como ``GUI``. Então salve a cena como ``GUI.tscn``. Ele conterá "
-"toda a GUI."
+"nomeie-o como ``GUI``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
-#, fuzzy
 msgid ""
 "We want our interface to anchor to the top of the screen. Select the ``GUI`` "
 "node and click the Layout button at the top of the viewport. Select the "
@@ -8134,10 +8094,11 @@ msgid ""
 "vertical axis to make space for its child UI components."
 msgstr ""
 "Queremos que nossa interface ancore no topo da tela. Selecione o nó `` GUI`` "
-"e clique no botão Layout na parte superior da viewport. Selecione a opção "
-"\"Top Wide\". O nó `` GUI`` irá ancorar na borda superior de seu pai, a "
-"viewport por padrão. Ele será redimensionado automaticamente no eixo "
-"vertical para criar espaço para seus componentes de UI filho."
+"e clique no botão Layout na parte superior da janela de exibição. Selecione "
+"a opção \"Top Wide\". O nó `` GUI`` irá ancorar na borda superior de seu "
+"pai, a janela de exibição por padrão. Ele será redimensionado "
+"automaticamente no eixo vertical para criar espaço para seus componentes de "
+"UI filho."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
@@ -8159,7 +8120,6 @@ msgstr ""
 "esquerda e as separará dos dois contadores à direita."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
-#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
 "``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
@@ -8167,11 +8127,11 @@ msgid ""
 "``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
 "containers, we have the base for our GUI scene."
 msgstr ""
-"Queremos empilhar as barras verticalmente dentro do ``HBoxContainer``. Para "
-"fazer isso, vamos adicionar um ``VBoxContainer``. Nomeá-lo ``Bars``. "
-"Selecione o pai ``HBoxContainer`` novamente e desta vez, adicione outro "
-"``HBoxContainer``. Este vai segurar os contadores, então chame de \"Counters"
-"\". Com esses quatro contêineres, temos a base para nossa cena de GUI."
+"Queremos empilhar as barras verticalmente dentro do ``HBoxContainer``. "
+"Adicionae um ``VBoxContainer`` como filho de ``HBoxContainer`` e nomeie-o "
+"``Bars``. Selecione o pai ``HBoxContainer`` novamente e desta vez, adicione "
+"outro ``HBoxContainer`` como filho dele. Chame de \"Counters\". Com esses "
+"quatro contêineres, temos a base para nossa cena de GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
@@ -22372,16 +22332,20 @@ msgid ""
 "OBJ (Wavefront) formats. It is also fully supported, but pretty limited (no "
 "support for pivots, skeletons, etc)."
 msgstr ""
+"Formatos OBJ (Wavefront). Também é oferecido suporte completo, mas bastante "
+"limitado (sem suporte para pivots, esqueletos, etc)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:20
 msgid ""
 "Just copy the scene file together with the texture to the project "
 "repository, and Godot will do a full import."
 msgstr ""
+"Simplesmente copie o arquivo todo da cena com a textura para o repositório "
+"do projeto, e o Godot fará uma importação completa."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:23
 msgid "Why not FBX?"
-msgstr ""
+msgstr "Por que não FBX?"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:25
 msgid ""
@@ -22390,16 +22354,20 @@ msgid ""
 "format requires the use of a closed library from Autodesk, which is "
 "distributed with more restrictive licensing terms than Godot."
 msgstr ""
+"A maioria das engines de jogos usa o formato FBX para importar cenas 3D, que "
+"é com certeza um dos formatos mais usados da indústria. Porém, esse formato "
+"requer o uso de uma biblioteca de código fechado da Autodesk, que é "
+"distribuida com uma licensa mais restritiva do que a da Godot."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:30
 msgid ""
 "The plan is, sometime in the future, to offer a binary plug-in using "
 "GDNative."
-msgstr ""
+msgstr "O plano é, futuramente, oferecer um plugin binário usando GDNative."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:33
 msgid "Exporting DAE files from Maya and 3DS Max"
-msgstr ""
+msgstr "Exportando arquivos DAE do Maya e 3DS Max"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:35
 msgid ""
@@ -22409,22 +22377,32 @@ msgid ""
 "OpenCOLLADA-Tools>`__ plugins. They work well, although they are not always "
 "up-to date with the latest version of the software."
 msgstr ""
+"A Autodesk adicionou suporte nativo ao formato COLLADA no Maya e no 3DS Max, "
+"mas ele não funciona por padrão e não deveria ser utilizado. A menlhor "
+"maneira de exportar esse formado é usando os plugins `OpenCollada <https://"
+"github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`__. Eles "
+"funcionam bem, apesar de que nem sempre estão atualizados com a última "
+"versão do software."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:43
 msgid "Exporting DAE files from Blender"
-msgstr ""
+msgstr "Exportando arquivos DAE no Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:45
 msgid ""
 "Blender has built-in COLLADA support too, but it's also broken and should "
 "not be used."
 msgstr ""
+"O Blender possui suporte ao formato COLLADA nativamente, mas está quebrado e "
+"não deveria ser usado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:48
 msgid ""
 "Godot provides a `Python Plugin <https://github.com/godotengine/collada-"
 "exporter>`__ that will do a much better job of exporting the scenes."
 msgstr ""
+"A Godot oferece um `Plugin Python <https://github.com/godotengine/collada-"
+"exporter>`__ que faz um trabalho bem melhor de exportar cenas."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:53
 msgid "Exporting ESCN files from Blender"
@@ -48087,6 +48065,13 @@ msgid ""
 "alternative of using the ``ResourceInteractiveLoader`` class for smoother "
 "load screens."
 msgstr ""
+"Ao trocar a cena atual do seu jogo (ex. ir para uma nova fase), você pode "
+"querer mostrar uma tela de carregamento com alguma indicação do progresso a "
+"ser feito. O principal método de carregamento (``ResourceLoader::load`` ou "
+"só ``load`` em GDScript) bloqueia a thread, fazendo com que seu jogo pareça "
+"estar congelado e sem resposta enquanto o recurso está sendo carregado. Este "
+"documento discute a alternativa de usar a classe "
+"``ResourceInteractiveLoader`` para telas de carregamento mais suaves."
 
 #: ../../docs/tutorials/io/background_loading.rst:15
 msgid "ResourceInteractiveLoader"
@@ -48100,6 +48085,11 @@ msgid ""
 "that is loaded by the main resource. For example, if you're loading a scene "
 "that loads 10 images, each image will be one stage."
 msgstr ""
+"A classe ``ResourceInteractiveLoader`` permite que você carregue um recurso "
+"em etapas. A cada vez que o método ``poll`` é chamado, uma nova etapa é "
+"carregada, e o controle é retornado ao chamador. Cada etapa é geralmente um "
+"sub-recurso que é carregado pelo recurso principal. Por exemplo, se você "
+"está carregando uma cena que tem 10 imagens, cada imagem será uma etapa."
 
 #: ../../docs/tutorials/io/background_loading.rst:24
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
@@ -48112,13 +48102,15 @@ msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:29
 msgid "Obtaining a ResourceInteractiveLoader"
-msgstr ""
+msgstr "Obtendo um ResourceInteractiveLoader"
 
 #: ../../docs/tutorials/io/background_loading.rst:35
 msgid ""
 "This method will give you a ResourceInteractiveLoader that you will use to "
 "manage the load operation."
 msgstr ""
+"Este método te dará um ResourceInteractiveLoader que você pode usar para "
+"gerenciar a operação de carregamento."
 
 #: ../../docs/tutorials/io/background_loading.rst:39
 msgid "Polling"
@@ -48228,6 +48220,8 @@ msgid ""
 "ResourceInteractiveLoader can be used from multiple threads. A couple of "
 "things to keep in mind if you attempt it:"
 msgstr ""
+"O ResourceInteractiveLoader pode ser usado em múltiplas threads. Umas "
+"coisinhas para ter em mente caso tente fazer isso:"
 
 #: ../../docs/tutorials/io/background_loading.rst:201
 msgid "Use a semaphore"

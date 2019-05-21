@@ -9,6 +9,7 @@
 # nyanode <akaruooyagi@yahoo.co.jp>, 2018.
 # Wataru Onuki <watonu@magadou.com>, 2019.
 # yu tang <0011solo@gmail.com>, 2018.
+# zeroni.point <zeroni.point@gmail.com>, 2019.
 # zukkun <zukkun@gmail.com>, 2018.
 #
 msgid ""
@@ -16,8 +17,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-04-09 11:43+0200\n"
-"PO-Revision-Date: 2019-04-08 10:35+0000\n"
-"Last-Translator: Wataru Onuki <watonu@magadou.com>\n"
+"PO-Revision-Date: 2019-04-29 11:46+0000\n"
+"Last-Translator: zeroni.point <zeroni.point@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
 "Language: ja\n"
@@ -25,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -779,26 +780,33 @@ msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"ネイティブなベクトルタイプ（vector3、matrix4など）がないため、カスタムタイプ"
+"（Lua、Python、Squirrel、JS、ASなど）を使用するとパフォーマンスが大幅に低下し"
+"ます。"
 
 #: ../../docs/about/faq.rst:136
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
+"ガベージコレクタが原因で失速したり、不必要にメモリ使用量が増えたりします"
+"（Lua、Python、JS、ASなど）"
 
 #: ../../docs/about/faq.rst:138
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
+"コード補完、ライブ編集などを提供するコードエディタとの統合が困難です。（それ"
+"らすべて）これはGDScriptによってサポートされています。"
 
 #: ../../docs/about/faq.rst:142
 msgid "GDScript was designed to curtail the issues above and more."
-msgstr ""
+msgstr "GDScriptは以上の問題を減らすように設計されています。"
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "Godotはどんな3Dモデルフォーマットをサポートしていますか？"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
@@ -2007,6 +2015,8 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
+"まず初めに、シーンが2Dエディタに切り替わり (Labelは2Dノードのため)、選択され"
+"た状態でLabelがビューポート左上の角にあらわれます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:127
 msgid ""
@@ -2014,28 +2024,36 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
+"Labelノードはシーンツリーエディタ(右上のボックス)にあり、Labelのプロパティは"
+"インスペクタ(右下のボックス)に表示されます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr ""
+"次の一歩はLabelの「Text(テキスト)」プロパティを変更することです。「Hello "
+"world」に変えてみましょう："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
+"OK、これでシーンを動かす準備が整いました！　上のバーにあるシーン再生ボタン(あ"
+"るいはF6キー)を押してください："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid "Aaaand... Oops."
-msgstr ""
+msgstr "すると……あらら。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
+"シーンを動かすにはまず保存する必要があるので、「シーン → シーンを保存」にて "
+"Hello.tscn のような名前を付けてから保存してください："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -2047,12 +2065,19 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
+"ここで変わったことが起こります。これはプロジェクトの中にのみ保存できる、特殊"
+"なファイルダイアログです。プロジェクトのルートは「res://」で、これは『リソー"
+"スのパス』を意味します。これ以降、Godotでファイル操作するときは「res://」がリ"
+"ソースのパスであることを覚えておきましょう。プラットフォームやインストール場"
+"所にかかわらず、ゲーム内にあるリソースファイルを見つけるための手段です。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
+"シーンを保存してから、シーン再生をまた押すと、ついに「Hello World」のデモが動"
+"くはずです："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
@@ -2060,7 +2085,7 @@ msgstr "成功！"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Configuring the project"
-msgstr ""
+msgstr "プロジェクトの設定"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
 msgid ""
@@ -2069,6 +2094,10 @@ msgid ""
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
+"それでは、プロジェクトの設定に取り掛かりましょう。今のところ、実行できるのは"
+"現在のシーンのみです。しかし、プロジェクトは複数のシーンを持つことができるた"
+"め、メインとなるシーンを決めなければなりません。プロジェクトを実行するときは"
+"常にそのシーンから読み込まれます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
 msgid ""
@@ -2078,10 +2107,17 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
+"これらの設定はすべて project.godot ファイルに格納されます。これは編集しやすい"
+"ように win.ini 形式に沿ったプレーンテキストになっていて、プロジェクトの動作を"
+"変更するための設定が数十項目あります。それらを簡単に変更できるよう、project."
+"godotファイル編集用フロントエンドともいえる、プロジェクト設定ダイアログが"
+"Godotにはあります。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
+"ダイアログは『プロジェクト -> プロジェクト設定』からアクセスできます。開いて"
+"みてください。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
 msgid ""

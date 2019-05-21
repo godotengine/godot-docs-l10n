@@ -5,10 +5,12 @@
 # 507GamerLab <tyfnyakut@outlook.com>, 2019.
 # alkahesto <gs_dogan05@hotmail.com>, 2019.
 # Altan Demirkilic <demirkilic@gmail.com>, 2018.
+# Anton Semchenko <semchenkoanton@protonmail.com>, 2019.
 # Burkan Boğaz <bogazburkan@gmail.com>, 2019.
 # Can Delibaş <candelibas96@gmail.com>, 2018.
 # Ceyhun Sezenoglu <sezenoglu@gmail.com>, 2018.
 # ege1212 <owlphp@gmail.com>, 2019.
+# Emre Altinagac <emrealtinagac@gmail.com>, 2019.
 # Gökhan Ersümer <gokhanersumer@gmail.com>, 2019.
 # Güner Acet <kurama632@gmail.com>, 2019.
 # İlker Civelek <ilkercivelek34@gmail.com>, 2018.
@@ -27,8 +29,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-04-09 11:43+0200\n"
-"PO-Revision-Date: 2019-04-08 10:36+0000\n"
-"Last-Translator: Burkan Boğaz <bogazburkan@gmail.com>\n"
+"PO-Revision-Date: 2019-04-29 11:48+0000\n"
+"Last-Translator: Anton Semchenko <semchenkoanton@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -36,7 +38,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -753,6 +755,15 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"Godot için bütüncül ve özgün bir dil oluşturmak için asıl amaç iki katmandan "
+"oluşuyordu: birincil olarak, geliştiricilerin Godot ile tanışıp hızlıca "
+"ilerlemesi için gereken zamanı azaltması, kendilerini ifade etmeleri için "
+"yazılım motoru üzerinde üretim odaklı hızlı bir yol sunması; ikincil olarak, "
+"bir çok farklı yazılım dili arasında küçük bir ilerleme için bile harcanan "
+"tüm o zamanı azaltmaya yönelik olarak - kod geliştirme üzerindeki toplam "
+"yükü, çok boyutlu konuları daraltarak, geliştiricilere hataların giderilmesi "
+"ve yazılım motoru çekirdeği üzerinde iyileştirmelere odaklanmasına olanak "
+"tanımasıdır."
 
 #: ../../docs/about/faq.rst:109
 msgid ""
@@ -766,6 +777,15 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
+"Godot açık-kaynaklı bir proje olduğundan, başlangıçtan itibaren bütüncül ve "
+"kusursuz bir deneyime öncelik verilmesi, daha bilinen yazılım dillerinin "
+"desteklenmesiyle daha fazla kullanıcıya cazip olmasına kıyasla bir "
+"zorunluluktu - özellikle bu dillerin desteklenmesi daha kötü bir deneyimle "
+"sonuçlanabilecekti. Godot içinde farklı bir yazılım dilini kullanmak "
+"isteyebileceğinizi anlıyoruz (yukarıda listelenen desteklenen dillere bir "
+"göz atın). Yine de,henüz GDScript'i denemediyseniz, **üç günlüğüne** bir "
+"deneyin. Tıpkı Godot gibi, ne kadar güçlü bir dil olduğunu ve hızla "
+"ilerlediğinizi görünce GDscript'i daha çok seveceksiniz."
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -773,6 +793,8 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"GDScript veya dinamik yazılan diller hakkında daha fazla bilgi edinmek için :"
+"ref:`doc_gdscript_more_efficiently` rehberine bakabilirsiniz."
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
@@ -789,12 +811,16 @@ msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
+"Birçok betik sanal makinesinin kötü başlık desteğine sahip olması ve "
+"Godot'un başlıkları kullanması (Lua, Python, Squirrel, JS, AS, vs.)."
 
 #: ../../docs/about/faq.rst:128
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"Birçok betik sanal makinesinin sınıf-genişletme desteğinin kötü olması, ve "
+"Godot'a uyarlamanın oldukça verimsiz olması (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:130
 msgid ""
@@ -47778,7 +47804,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:184
 msgid "Class"
-msgstr ""
+msgstr "Sınıf"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:184
 msgid "Operator"

@@ -38,8 +38,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-04-09 11:43+0200\n"
-"PO-Revision-Date: 2019-04-09 09:31+0000\n"
-"Last-Translator: Marco Galli <mrcgll98@gmail.com>\n"
+"PO-Revision-Date: 2019-05-21 11:16+0000\n"
+"Last-Translator: MassiminoilTrace <omino.gis@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -47,7 +47,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.7-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -710,7 +710,6 @@ msgstr ""
 "iniziare la risoluzione dei problemi."
 
 #: ../../docs/about/faq.rst:82
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See the question about "
@@ -718,12 +717,12 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Per quanto riguarda l’utilizzo di nuovi linguaggi di programmazione, il "
-"supporto è possibile tramite terze parti utilizzando i servizi GDNative / "
-"NativeScript / PluginScript. (Vedere domanda sui plugin qui sotto.) "
-"Attualmente sono in corso lavori, ad esempio, su binding non ufficiali per "
-"Godot per `Python <https://github.com/touilleMan/godot-python>`_ e `Nim "
-"<https://github.com/pragmagic/godot-nim>`_."
+"Per quanto riguarda nuovi linguaggi, il supporto è possibile tramite terze "
+"parti utilizzando i servizi GDNative / NativeScript / PluginScript. (Vedere "
+"domanda sui plugin qui sotto.) Attualmente sono in corso lavori, ad esempio, "
+"su binding non ufficiali per usare Godot con `Python <https://github.com/"
+"touilleMan/godot-python>`_ o con `Nim <https://github.com/pragmagic/godot-"
+"nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -1610,7 +1609,6 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:127
 #: ../../docs/tutorials/plugins/index.rst:2
-#, fuzzy
 msgid "Plugins"
 msgstr "Plugins"
 
@@ -1895,7 +1893,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
 #, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
 msgid ""
@@ -2627,14 +2625,13 @@ msgid "Conclusion"
 msgstr "Conclusione"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:123
-#, fuzzy
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_instancing_continued`."
 msgstr ""
-"L'istanziazione puó essere utile se vuoi creare piú copie dello stesso "
-"oggetto. C'é anche la possibilitá di creare istanze dal codice usando "
+"Creare un'istanza può essere utile quando vuoi creare più copie dello stesso "
+"oggetto. C'è anche la possibilità di creare istanze dal codice usando "
 "GDScript, vedi :ref:`doc_scripting_continued`."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
@@ -61464,7 +61461,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:22
 msgid "Deploy with Remote Debug"
-msgstr "Distribuzione con il Debug Remoto"
+msgstr "Distribuzione con Debug remoto"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
 msgid ""
@@ -61486,7 +61483,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Visible Collision Shapes"
-msgstr ""
+msgstr "Forme di collisione visibili"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
 msgid ""
@@ -61504,7 +61501,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:43
 msgid "Sync Scene Changes"
-msgstr ""
+msgstr "Sincronizza cambiamenti scena"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:45
 msgid ""
@@ -61515,7 +61512,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
 msgid "Sync Script Changes"
-msgstr ""
+msgstr "Sincronizza cambiamenti script"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:51
 msgid ""
@@ -69906,7 +69903,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
-msgstr ""
+msgstr "Domande e risposte"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"

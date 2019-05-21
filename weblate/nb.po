@@ -7,14 +7,16 @@
 # Elias <eliasnykrem@gmail.com>, 2018.
 # flesk <eivindkn@gmail.com>, 2019.
 # Frank T. Rambol <frank@d-fect.com>, 2018.
+# Hans-Marius Øverås <hansmariusoveras@gmail.com>, 2019.
+# Revolution <revosw@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-04-09 11:43+0200\n"
-"PO-Revision-Date: 2019-02-10 12:39+0000\n"
-"Last-Translator: flesk <eivindkn@gmail.com>\n"
+"PO-Revision-Date: 2019-05-21 11:16+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/godot-"
 "engine/godot-docs/nb_NO/>\n"
 "Language: nb\n"
@@ -22,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.5-dev\n"
+"X-Generator: Weblate 3.7-dev\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -43,6 +45,9 @@ msgid ""
 "the documentation of the current **stable** branch? `Have a look here "
 "<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
+"Dette er dokumentasjonen for utviklingsgrenen (master). Leter du etter "
+"dokumentasjon for **stable**? Sjekk her: <https://docs.godotengine.org/en/"
+"stable>`_."
 
 #: ../../docs/index.rst:16
 msgid ""
@@ -50,6 +55,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
+"Dokumentasjonen er oversatt fra `Engelsk <https://docs.godotengine.org/en/"
+"latest>`_ av gemenskapsmedlemmer på `Weblate <https://hosted.weblate.org/"
+"projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -58,6 +66,9 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
+"Avhengig av hvor langt oversettelsen har kommet, kan du finne avsnitt eller "
+"hele sider som fortsatt er på Engelsk. Du kan hjelpe fellesskapet ved å "
+"sende inn oversettelser, eller gjennomse de som finnes på Weblate."
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -65,6 +76,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"Akkurat nå er oversettelser kun tilgjengelig for development-grenen, men den "
+"er nyttig for de fleste versjoner av Godot."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -74,6 +87,10 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"Velkommen til den offisielle dokumentasjonen for Godot Engine, en gratis, "
+"open-source, fellesskapt 2D og 3D game engine. Hvis du er ny til "
+"dokumentasjonen, anbefaler vi :ref:`introduksjonssiden <doc_about_intro>`, "
+"som kan gi deg et overblikk over hva dokumentasjonen kan tilby."
 
 #: ../../docs/index.rst:34
 msgid ""
@@ -81,6 +98,9 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"En innholdsfortegnelse er tilgjenglig nedenfor og i menyen på siden av "
+"skjermen. Den hjelper deg med å finne fram til riktig emne. Du kan også "
+"benytte søk-funksjonen øverst til venstre."
 
 #: ../../docs/index.rst:38
 msgid ""
@@ -90,6 +110,10 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godot Engine er et open-source prosjekt utviklet av et fellesskap av "
+"frivillige. Dokumentasjonsteamet trenger din feedback og hjelp til å "
+"forbedre brukerveiledninger og klassereferanser. Hvis du ikke forstår noe, "
+"eller ikke finner svar på det du lurer på, så bør du informere oss!"
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -100,38 +124,44 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"Legg til et problem eller en pull request på `GitHub repositoriet <https://"
+"github.com/godotengine/godot-docs/issues>`_, hjelp oss med å `oversette "
+"dokumentasjonen <https://hosted.weblate.org/engage/godot-engine/>`_ til ditt "
+"språk, eller snakk med oss på vår ``#documentation`` Discord kanal <https://"
+"discord.gg/zH7NUgz>`_, eller på ``#godotengine-doc`` kanalen på `irc."
+"freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:59
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "Hoveddokumentasjonen på denne siden er organisert i disse seksjonene:"
 
 #: ../../docs/index.rst:61
 msgid "General"
-msgstr ""
+msgstr "Generelt"
 
 #: ../../docs/index.rst:69
 msgid "Getting started"
-msgstr ""
+msgstr "Kom i gang"
 
 #: ../../docs/index.rst:80
 msgid "Tutorials"
-msgstr ""
+msgstr "Brukerveiledninger (Tutorials)"
 
 #: ../../docs/index.rst:108
 msgid "Development"
-msgstr ""
+msgstr "Utvikling"
 
 #: ../../docs/index.rst:118
 msgid "Community"
-msgstr ""
+msgstr "Fellesskap"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -210,6 +240,10 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
+"Velkommen til den offisielle dokumentasjonen for Godot Engine, en gratis og "
+"open-source fellesskapt 2D og 3D game engine. Du vil oppdage et verktøy som "
+"er kraftig og brukervenlig, og som du kan bruke til å utvikle alle typer "
+"spill, til alle platformer og med ingen lovlige restriksjoner."
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -217,6 +251,9 @@ msgid ""
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
+"Denne siden gir en vag presentasjon av enginen, og innholdsfortegnelsen, "
+"slik at du vet hvor du skal starte om du er en nybegynner eller hvor du skal "
+"se hvis du leter etter en spesifik funksjon."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
@@ -228,6 +265,9 @@ msgid ""
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
+"En game engine er et komplekst verktøy, og det er derfor vanskelig å "
+"presentere hvordan Godot fungerer med noen få ord. Her er en rask "
+"oppsummering, som du kan gjenbruke hvis du trenger en tekst om Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -238,6 +278,12 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
+"Godot Engine er en cross-platform game engine full av funksjonalitet, som "
+"kan brukes til å lage 2D og 3D spill fra en brukervennlig interface. Enginen "
+"tilbyr et omfattende sett av verktøy, slik at brukere kan fokusere på å lage "
+"spill uten å måtte gjenoppfinne hjulet. Spill kan bli eksportert til flere "
+"platformer med kun et klikk, inkludert desktop (Linux, macOS, Windows), "
+"mobil (Android, iOS) og web (HTML5)."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -248,6 +294,12 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
+"Godot er helt gratis under den altomfattende MIT-lisensen. Det er ingen "
+"lovlige obligasjoner.  Brukeres' spill er deres, helt fra kildekoden og fram "
+"til det ferdige spillet. Godots utvikling er fellesskapdrevet og uavhengig, "
+"noe som gir brukere muligheten til å skape enginen etter egne forventninger. "
+"Den støttes av `Software Freedom Conservancy <https://sfconservancy.org>`_ "
+"not-for-profit."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -255,6 +307,8 @@ msgid ""
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
+"For en forklaring som går mer i dybden, fortsett å lese dokumentasjonen, "
+"spesielt :ref:`Step by step <toc-learn-step_by_step>` brukerveiledningen."
 
 #: ../../docs/about/introduction.rst:46
 msgid "About the documentation"
@@ -16865,7 +16919,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
 msgid "FPS"
-msgstr ""
+msgstr "FPS"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
 msgid ""

@@ -7,14 +7,15 @@
 # George Tsiamasiotis <gtsiam@windowslive.com>, 2018.
 # Konstantinos Poulopoulos <aatyrael@gmail.com>, 2018.
 # Michael Maridakis <michael.marid@gmail.com>, 2018.
+# THANOS SIOURDAKIS <siourdakisthanos@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-04-09 11:43+0200\n"
-"PO-Revision-Date: 2019-04-08 10:35+0000\n"
-"Last-Translator: agrocs <apittakis@csd.auth.gr>\n"
+"PO-Revision-Date: 2019-05-21 11:16+0000\n"
+"Last-Translator: THANOS SIOURDAKIS <siourdakisthanos@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/el/>\n"
 "Language: el\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.7-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -75,6 +76,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"Προς το παρόν, οι κατά τόπους μεταφράσεις είναι διαθέσιμες μόνο για την "
+"«τελευταία» (development) διακλάδωση, αλλά θα πρέπει να είναι κατάλληλες για "
+"να μάθετε πως να χρησιμοποιείται τις σταθερές εκδόσεις Godot παρ’ όλα αυτά."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -109,6 +113,12 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Η μηχανή Godot είναι ένα πρότζεκτ ανοιχτού κώδικα, που έχει αναπτυχθεί από "
+"μία κοινότητα εθελοντών. Η ομάδα συγγραφής του εγχειριδίου μπορεί πάντα να "
+"χρησημοποιήσει τη βοήθεια σας για να βελτιώσει το διδακτικό υλικό και τις "
+"αναφορές στα αντικείμενα. Εάν δεν καταλαβαίνετε κάτι, ή δεν μπορείτε να "
+"βρείτε αυτό που ψάχνετε στο εγχειρίδιο, βοηθήστε μας να κάνουμε καλύτερο το "
+"εγχειρίδιο, ενημερώνοντάς μας!"
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -119,13 +129,20 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"Υποβάλετε ένα πρόβλημα (issue) ή ένα pull request στο GitHub repository "
+"<https://github.com/godotengine/godot-docs/issues>`_, βοηθήστε μας να "
+"μεταφράσουμε το εγειρίδιο <https://hosted.weblate.org/engage/godot-engine/"
+">`_ στη δική σας γλώσσα, ή μιλήστε μαζί μας είτε στο ``#documentation`` "
+"κανάλι στο`Discord <https://discord.gg/zH7NUgz>`_, .είτε στο ``#godotengine-"
+"doc`` κανάλι στο `irc.freenode.net <http://webchat.freenode.net/?"
+"channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:59
 msgid ""
 "The main documentation for the site is organized into the following sections:"
 msgstr ""
 "Το κύριο εγχειρίδιο χρήσης του ιστότοπου είναι διατετμημένο στις παρακάτω "
-"ενότητες."
+"ενότητες:"
 
 #: ../../docs/index.rst:61
 msgid "General"
@@ -141,7 +158,7 @@ msgstr "Διδακτικό υλικό"
 
 #: ../../docs/index.rst:108
 msgid "Development"
-msgstr ""
+msgstr "Ανάπτυξη"
 
 #: ../../docs/index.rst:118
 msgid "Community"
@@ -238,16 +255,15 @@ msgstr ""
 "πλατφόρμα και χωρίς κανέναν περιορισμό χρήσης."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"Αυτή η σελίδα στοχεύει να προσφέρει μια ευρεία παρουσίαση της μηχανής και "
-"των περιεχομένων αυτού του οδηγού, έτσι ώστε να γνωρίζετε από πού να "
-"ξεκινήσετε εάν είστε πρωτάρης ή που να κοιτάξετε εάν χρειάζεστε πληροφορίες "
-"για μία συγκεκριμένη λειτουργία."
+"Αυτή η σελίδα προσφέρει μια ευρεία παρουσίαση της μηχανής και των "
+"περιεχομένων αυτού του οδηγού, έτσι ώστε να γνωρίζετε από πού να ξεκινήσετε "
+"εάν είστε πρωτάρης ή που να κοιτάξετε εάν χρειάζεστε πληροφορίες για μία "
+"συγκεκριμένη λειτουργία."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
@@ -486,19 +502,21 @@ msgid "In short:"
 msgstr "Σε συντομία:"
 
 #: ../../docs/about/faq.rst:13
+#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"Είστε ελεύθεροι να κατεβάσετε και να χρησημοποιήσετε τη Gobot για κάθε "
+"σκοπό, ιδιωτικό, μη κερδοσκοπικό, εμπορικό, ή όποιον επιθυμείτε."
 
 #: ../../docs/about/faq.rst:14
-#, fuzzy
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Μπορείς να τροποποιήσεις, να επαναδιανέμεις και να ανασκευάσεις την Godot "
-"όπως θελήσεις"
+"Μπορείτε να τροποποιήσετε, να επαναδιανέμετε και να ανασκευάσετε την Godot "
+"όπως θελήσετε, για κάθε λόγο, μη εμπορικό και εμπορικό."
 
 #: ../../docs/about/faq.rst:16
 #, fuzzy
@@ -562,7 +580,7 @@ msgstr "Windows"
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 #: ../../docs/tutorials/misc/jitter_stutter.rst:78
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
@@ -593,30 +611,30 @@ msgid "Web"
 msgstr "Ιστός"
 
 #: ../../docs/about/faq.rst:48
-#, fuzzy
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
-msgstr "32 και 64 bit όπου βγάζει νόημα, με τα 64 να είναι η προεπιλογή."
+msgstr ""
+"Αμφότεροι 32- και 64-bit διαδικοί υποστηρίζονται όπου βγάζει αυτό νόημα, με "
+"τους 64μπιτούς να είναι η προεπιλογή."
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"Μερικοί χρήστες ,ακόμη, αναφέρουν την επιτυχή ανάπτυξη και λειτουργεία σε "
+"συστήματα ARM με Linux, όπως η Raspberry Pi."
 
 #: ../../docs/about/faq.rst:54
-#, fuzzy
 msgid ""
 "Additionally, there is some unofficial third-party work being done on "
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"Κάποιοι χρήστης αναφέρουν το επιτυχές χτίσιμο και την χρήση της Godot σε "
-"συστήματα ARM με Linux, όπως το Raspberry Pi. Υπάρχει επίσης κάποια "
-"ανεπίσημη δουλειά από τρίτους η οποία στοχεύει κάποιες κονσόλες. Ωστόσο, "
-"καμία από αυτές δεν συμπεριλαμβάνεται στα προκαθορισμένα build scripts ή "
-"πρότυπα εξαγωγής."
+"Υπάρχει επίσης κάποια ανεπίσημη δουλειά από τρίτους η οποία στοχεύει κάποιες "
+"κονσόλες. Ωστόσο, καμία από αυτές δεν συμπεριλαμβάνεται στα προκαθορισμένα "
+"build scripts ή πρότυπα εξαγωγής."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
@@ -632,17 +650,17 @@ msgid "Which programming languages are supported in Godot?"
 msgstr "Ποιες γλώσσες υποστηρίζονται από την Godot?"
 
 #: ../../docs/about/faq.rst:64
-#, fuzzy
 msgid ""
 "The officially supported languages for Godot are GDScript, Visual Scripting, "
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
 "Οι επίσημα υποστηριζόμενες γλώσσες για την Godot είναι οι GDScript, Visual "
-"Scripting, C# και C++. Δες τις υποκατηγορίες για κάθε γλώσσα στην ενότητα :"
+"Scripting, C# και C++. Δείτε τις υποκατηγορίες για κάθε γλώσσα στην ενότητα :"
 "ref:`Προγραμματσμός <toc-learn-scripting>`."
 
 #: ../../docs/about/faq.rst:68
+#, fuzzy
 msgid ""
 "If you are just starting out with either Godot or game development in "
 "general, GDScript is the recommended language to learn and use since it is "
@@ -651,6 +669,14 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"Εάν μόλις τώρα ξεκινάτε είτε με τη Godot είτε με την ανάπτυξη παιχνιδιών "
+"γενικά, η GDScript είναι η προτεινόμενη γλώσσα για να μάθετε και να "
+"χρησιμοποιήσετε από τη στιγμή που είναι μητρική στη Gobot. Ενώ οι γλώσσες "
+"scripting, έχουν την τάση να είναι λιγότερι αποδοτικές σε σχέση με τις "
+"χαμηλού επιπέδου γλώσσες μακροπρόθεσμα, για το προτότυπο, την ανάπτυξη "
+"Minimum Viable Products(MVPs), επικεντρώνοντας στο Time-To-Market (TTM), η "
+"GDScript θα παρέχει έναν γρήγορο, φιλικό, και ικανό τρόπο για να αναπτύξετε "
+"τα παιχνίδια σας."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -662,9 +688,16 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"Σημειώστε ότι η υποστήριξη για τη C# είναι σχετικά καινούργια, και έτσι, "
+"μπορέι να υπομείνετε μερικά προβλήματα στη πορεία. Η φιλική και σκληρά "
+"εργαζόμενη κοινότητα ανάπτυξης λογισμικού είναι έτοιμη να αντιμετωπίσει "
+"καινούργια ανοδικά προβλήματα, αλλά από τη στηγμή που είναι ένα πρότζεκτ "
+"ανοιχτού λογισμικού, συνιστούμε να κάνετε πρώτα μία επιστάμενη έρευνα μόνοι "
+"σας. Ψάχνωντας τις συνομιλίες στο  `open issues <https://github.com/"
+"godotengine/godot/issues>`_ είναι ένας εξαιρετικός τρόπος να ξεκινήσετε την "
+"επίλυση των προβλημάτων σας."
 
 #: ../../docs/about/faq.rst:82
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See the question about "
@@ -672,13 +705,15 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Η δουλειά εξελίσσεται, για παράδειγμα, σε ανεπίσημα bindings της Godot στην "
-"`Python <https://github.com/touilleMan/godot-python>`_  και `Nim <https://"
-"github.com/pragmagic/godot-nim>`_."
+"Όσον αφορά τις καινούργιες γλώσσες, υποστήριξη είναι διαθέσιμη μέσω τρίτων "
+"χρησιμοποιώντας GDNative / NativeScript / PluginScript μονάδες.(Βλέπετε τις "
+"ερωτήσεις για τα plugins από κάτω.) Η δουλειά εξελίσσεται, για παράδειγμα, "
+"σε ανεπίσημα bindings της Godot στην `Python <https://github.com/touilleMan/"
+"godot-python>`_  και `Nim <https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "Τι είναι το GDSript και γιατί πρέπει να το χρησιμοποιήσω;"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -690,6 +725,14 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"Η GDScript είναι η ενσωματωμένη scripting γλώσσα της Godot. Κατασκευάστηκε "
+"από το μηδέν για να μεγιστοποιήσει τις δυνατότητες της Godot, στις λιγότερες "
+"γραμμές κώδικα, δίνοντας το περιθώριο σε αρχάριους και επαγγελματίες "
+"προγραμματιστές με τον ίδιο τρόπο να εκμεταλλευτούν τα προτερήματα της Godot "
+"όσο το δυνατόν γρηγορότερα. Εάν έχετε ξαναγράψει οτιδήποτε σε μία γλώσσα "
+"όπως η Python τότε θα νίωσετε σαν το σπίτι σας. Για παραδείγματα, την "
+"ιστορία, και μία ολοκληρωμένη επισκόπιση της δύναμης που προσφέρει η "
+"GDScript, δείτε :ref:`GDScript scripting guide <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -698,6 +741,10 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"Υπάρχουν πολλοί λόγοι για να χρησημοποιήσετε τη GDScript--ιδιαίτερα έαν "
+"κάνετε προτότυπο, σε alpha/beta στάδια του πρότζεκτ σας, ή δεν φτίαχνετε τον "
+"επόμενο AAA τίτλο--αλλά ο πιο εξέχων λόγος είναι η ολική **μείωση της "
+"πολυπλοκότητας.**"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -711,6 +758,16 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"Η αρχική πρόθεση για τη δημιουργία μίας στενά ενσωματομένης, εξατομικευμένης "
+"scripting γλώσσας για τη Godot ήταν διπλή: πρώτα, μειώνει τον απαραίτητο "
+"χρόνο για να τεθεί σε λειτουργία η Godot, δίνοντας στους προγραμματιστές "
+"έναν γρήγορο τρόπο να εκθέσουν τους εαυτούς τους σε μία μηχανή που εστιάζει "
+"στη παραγωγικότητα· δεύτερον, μειώνει το ολικό βάρος της συντήρησης, "
+"μετριάζει τη διάσταση των προβλημάτων, και επιτρέπει στους προγραμματιστές "
+"της μηχανής να επικεντρωθούν στην επίλυση bugs και στην βελτίωση "
+"χαρακτηριστικών που είναι σχετικά με το πυρήνα της μηχανής--αντί να ξοδεύουν "
+"πολύ χρόνο προσπαθώντας να κάνουν λειτουργικό ένα μικρό σύνολο "
+"χαρακτηριστικών σε ένα σύνολο απο γλώσσες."
 
 #: ../../docs/about/faq.rst:109
 #, fuzzy
@@ -747,12 +804,14 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "Ποιά είναι τα κίνητρα πίσω από τη δημιουργία της GDScript;"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
 msgstr ""
+"Οι κύριοι λόγοι για την δημιουργία μίας εξατομικευμένης scripting γλώσσας "
+"για τη Godot ήταν:"
 
 #: ../../docs/about/faq.rst:126
 #, fuzzy
@@ -812,28 +871,34 @@ msgstr ""
 "ζωντανή επεξεργασία, κλπ. Αυτό υποστηρίζεται πάρα πολύ καλά από την GDScript."
 
 #: ../../docs/about/faq.rst:142
+#, fuzzy
 msgid "GDScript was designed to curtail the issues above and more."
 msgstr ""
+"Η GDScript σχεδιάστηκε για να περιορίσει τα άνωθεν προβλήματα και παραπάνω."
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "Ποιά 3D μοντέλα υποστηρίζει η Godot;"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
+"Η Godot υποστηρίζει τη Collada μέσω του  `OpenCollada <https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 
 #: ../../docs/about/faq.rst:149
 msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"Εάν χρησιμοποιήτε το Blender, ρίξτε μία ματιά στο δικό μας `Better Collada "
+"Exporter <https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "Από τη Godot 3.0 και έπειτα, το gITF υποστηρίζεται."
 
 #: ../../docs/about/faq.rst:153
 #, fuzzy
@@ -862,6 +927,11 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"Ο σκοπός της Godot είναι η δημιουργία μίας δωρεάν και ελεύθερου λογισμικού "
+"με MIT-άδεια μηχανής, που είναι αρθρωτή και επεκτάσιμη. Δεν υπάρχουν σχέδια "
+"στην κοινότητα προγραμματιστών του πυρήνα της μηχανής για την υποστήριξη "
+"κανενός τρίτου, κλειστού κώδικα/ιδιόκτητων SDKs, καθώς η ενσωμάτωση με αυτά "
+"θα ήταν ενάντια με τον κώδικα ηθικής της Godot."
 
 #: ../../docs/about/faq.rst:166
 #, fuzzy
@@ -890,6 +960,10 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"Εάν ξέρετε κάποιο τρίτο SDK που δεν υποστηρίζεται από τη Godot που προσφέρει "
+"δωρεάν και ανοιχτού κώδικα ενσωμάτωση, αναλογιστείτε να ξεκινήσετε τη "
+"δουλειά της ενσωμάτωσης εσείς. Η Godot δεν ανήκει σε ένα μόνο άτομο· ανήκει "
+"στη κοινότητα, και αναπτύσσεται μαζί με φιλόδοξους συνεργάτες σαν εσάς."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
@@ -1003,7 +1077,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "Πώς μπορώ να επεκτείνω τη Godot;"
 
 #: ../../docs/about/faq.rst:224
 #, fuzzy
@@ -1047,13 +1121,15 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "Θα ήθελα να συνεισφέρω! Πώς μπορώ να ξεκινήσω;"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"Τέλεια! Σαν ένα πρότζεκτ ανοιχτού-κώδικα, η Godot ευδοκιμεί με τη καινοτομία "
+"και τη φιλοδοξία των προγραμματιστών σαν εσάς."
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -1063,10 +1139,16 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"Το πρώτο μέρος για να ξεκινήσετε είναι στα `issues <https://github.com/"
+"godotengine/godot/issues>`_.  Βρείτε ένα πρόβλημα που αντηχεί σε σας, και "
+"προχωρήστε στον `How to Contribute <https://github.com/godotengine/godot/"
+"blob/master/CONTRIBUTING.md#contributing-pull-requests>`_ οδηγό για να "
+"μάθετε πως να κάνετε fork, να τροποποιείται και να υποβάλετε Pull Request "
+"(PR) με τις αλλαγές σας."
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "Έχω μία φανταστική ιδέα για τη Godot. Πώς μπορώ να τη μοιραστώ;"
 
 #: ../../docs/about/faq.rst:251
 msgid ""
@@ -1080,12 +1162,24 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"Μπορεί να είναι δελεαστικό να θέλετε να φέρετε ιδέες στη Godot, όπως αυτές "
+"που φέρουν τεράστιες αλλαγές στο πυρήνα, κάποιου είδους μίμηση από αυτά που "
+"κάνει μία άλλη μηχανή παιχνιδιών, ή μία διαφορετική ροή εργασιών που θα "
+"θέλατε να χτίσετε στον επεξεργαστή. Είναι εξαιρετικές και είμαστε ευγνώμονες "
+"που έχουμε τόσο ενθουσιώδεις ανθρώπους που θέλουν να συνεισφέρουν, αλλά το "
+"επίκεντρο της Godot είναι και πάντα θα είναι η λειτουργικότητα τους πυρήνα "
+"όπως συνοψίζεται στο `Roadmap <https://github.com/godotengine/godot-roadmap/"
+"blob/master/ROADMAP.md>`_, « την εξάλειψη των bugs και την αντιμετώπηση "
+"προβλημάτων» `<https://github.com/godotengine/godot/issues>`_, και τη "
+"συζήτηση μεταξύ μελών της κοινότητας της Godot."
 
 #: ../../docs/about/faq.rst:260
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
+"Οι περισσότεροι προγρμματιστές της κοινότητας της Godot θα ενδιαφέρονταν "
+"περισσότερο να μάθουν για πράγματα όπως:"
 
 #: ../../docs/about/faq.rst:263
 msgid ""
@@ -1107,16 +1201,19 @@ msgstr ""
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr ""
+"Οι έννοιες που ήτανε δύσκολες στη κατανόηση καθώς μαθένατε το λογισμικό."
 
 #: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
-msgstr ""
+msgstr "Τα κομμάτια της ροής εργασιών που θα θέλατε να δείτε βελτιστοποιημένα."
 
 #: ../../docs/about/faq.rst:269
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr ""
+"Κομμάτια για τα οποία δεν βρήκατε ξεκάθαρο διδακτικό υλικό ή ο οδηγός δεν "
+"ήταν ξεκάθαρος."
 
 #: ../../docs/about/faq.rst:271
 msgid ""
@@ -1124,6 +1221,10 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
+"Παρακαλώ μη νιώθετε ότι οι ιδέες σας για τη Godot δεν είναι ευπρόσδεκτες. Εν "
+"αντιθέσει, προσπαθήστε να αναδιατυπώσετε το πρόβλημα πρώτα, ώστε οι "
+"προγραμματιστές και η κοινότητα να έχουν μία λειτουργική βάση για τις ιδέες "
+"σας."
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -1133,34 +1234,44 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"Ένας καλός τρόπος να προσεγγίσετε το να μοιράζεστε τις ιδέες σας και τα "
+"προβλήματά σας με τη κοινότητα είναι σαν ένα σύνολο από ιστορίες χρηστών. "
+"Εξηγήστε τι προσπαθήτε να κάνετε, ποιες συμπεριφορές περιμένετε να συμβούν, "
+"και μέτα ποιες συμπεριφορές συνέβησαν. Το να πλαισιώνεται τα προβλήματα και "
+"τις ιδέες σας κατά αυτόν τον τρόπο βοηθάει τη κοινότητα σαν σύνολο να μείνει "
+"επικεντρωμένη στη βελτίωση της εμπειρίας των προγραμματιστών στο σύνολό της."
 
 #: ../../docs/about/faq.rst:281
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
+"Μπόνους πόντους σε όσους φέρνουν στιγμιότυπα οθόνης, χειροπιαστούς αριθμούς, "
+"υποθέσεις, ή πρότζεκτ παραδείγματα (εάν έχουν εφαρμογή)."
 
 #: ../../docs/about/faq.rst:285
 msgid "How can I support Godot development or contribute?"
-msgstr ""
+msgstr "Πως μπορώ να υποστηρίξω την ανάπτυξη της Godot ή να συνεισφέρω;"
 
 #: ../../docs/about/faq.rst:287
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ""
+msgstr "Δείτε :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:290
 msgid "Who is working on Godot? How can I contact you?"
-msgstr ""
+msgstr "Ποιός δουλεύει στη Godot; Πώς μπορώ να επικοινωνήσω μαζί σας;"
 
 #: ../../docs/about/faq.rst:292
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
+"Δείτε την ανάλογη σελίδα στην ιστοσελίδα της Godot `<https://godotengine.org/"
+"contact>`_."
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr ""
+msgstr "Αρχείο αλλαγών του εγχειριδίου"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -1169,6 +1280,11 @@ msgid ""
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"Το εγχειρίδιο βελτιώνετε συνεχώς. Η κυκλοφορία της έκδοσης 3,1 περιλαμβάνει "
+"περισσότερο καινούργιο διδακτικό υλικό, διορθώσεις και ενημερώσεις στο παλιό "
+"διδακτικό υλικό, και πολλές ενημερώσεις στην αναφορά σε κλάση. Από κάτω "
+"είναι η λίστα με το καινούργιο διδακτικό υλικό που προσθέθηκε ύστερα από την "
+"έκδοση 3,0."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -1176,14 +1292,17 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"Αυτό το αρχείο περιέχει μόνο το καινούργιο διδακτικό υλικό έτσι ώστε να μην "
+"είναι όλες οι αλλαγές εμφανείς, πολύ από το διδακτικό υλικό έχει ενημερωθεί "
+"σημαντικά αλλά αυτό δεν αντικατοπτρίζεται σε αυτό το αρχείο."
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.0"
-msgstr ""
+msgstr "Καινούργιο διδακτικό υλικό από την έκδοση 3,0"
 
 #: ../../docs/about/docs_changelog.rst:17
 msgid "Step-by-step"
-msgstr ""
+msgstr "Βήμα-βήμα"
 
 #: ../../docs/about/docs_changelog.rst:19
 msgid ":ref:`Signals <doc_signals>`"
@@ -1196,11 +1315,11 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "Ροή εργασιών του πρότζεκτ"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid "Best Practices:"
-msgstr ""
+msgstr "Καλύτερες τεχνικές:"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Introduction <doc_introduction_best_practices>`"
@@ -1486,11 +1605,11 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
 msgid "Step by step"
-msgstr ""
+msgstr "Βήμα βήμα"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr ""
+msgstr "Εισαγωγή στον επεξεργαστή της Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1498,75 +1617,91 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"Αυτός ο οδηγός θα προβάρει το περιβάλλον διεπαφής της Godot. Θα ρίξουμε μία "
+"ματιά στον **Project Manager, docks, workspaces** και οτιδήποτε πρέπει να "
+"ξέρετε για να ξεκινήσετε με την μηχανή."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
-msgstr ""
+msgstr "Διαχειριστή πρότζεκτ"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "It lets you create, remove, import or play game projects."
 msgstr ""
+"Όταν ξεκινάτε τη Godot, το πρώτο παράθυρο που θα δείτε είναι ο Διαχειριστής "
+"Πρότζεκτ. Σας επιτρέπει να δημιουργήσετε, να αφαιρέσετε, να εισαγάγετε ή να "
+"παίξετε παιχνίδια πρότζεκτ."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:16
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:49
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:16
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:22
 msgid "|image0|"
-msgstr ""
+msgstr "|εικόνα0|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:18
 msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
+"Στην άνω-δεξιά γωνία θα βρείτε το αναπτυσσόμενο μενού για να αλλάξετε τη "
+"γλώσσα του επεξεργαστή."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:48
 msgid "|image1|"
-msgstr ""
+msgstr "|εικόνα1|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:23
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos to help you get started faster."
 msgstr ""
+"Από τη καρτέλα **Πρότυπα** μπορείτε να κατεβάσετε πρότυπα ανοιχτού κώδικα "
+"και ντέμο για να σας βοηθήσουν να ξεκινήσετε γρηγορότερα."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:58
 msgid "|image2|"
-msgstr ""
+msgstr "|εικόνα2|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid "Create or import a project"
-msgstr ""
+msgstr "Δημιουργήστε ή εισαγάγετε ένα πρότζεκτ"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Give "
 "it a name and choose an empty folder on your computer to save it."
 msgstr ""
+"Για να δημιουργήσετε ένα καινούργιο πρότζεκτ, κάντε κλικ στο κουμπί "
+"``Καινούργιο Πρότζεκτ`` στα δεξιά. Δώστε το όνομα της επιλογής σας και "
+"διαλέξετε ένα κενό φάκελο στον υπολογιστή σας για να το αποθηκεύσετε."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:34
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:83
 msgid "|image3|"
-msgstr ""
+msgstr "|εικόνα3|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:36
 msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
+"Κάντε κλικ στο κουμπί Αναζήτηση για να ανοίξετε την αναζήτηση αρχείων της "
+"Godot και να επιλέξετε τη τοποθεσία ή να πληκτρολογήσετε τη διαδρομή του "
+"φακέλου στο πεδίο Διαδρομή Πρότζεκτ."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:39
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:88
 msgid "|image4|"
-msgstr ""
+msgstr "|εικόνα4|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:41
 msgid ""
@@ -1574,18 +1709,24 @@ msgid ""
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
+"Όταν δείτε το πράσινο-τικ στα δεξιά, σημαίνει ότι η μηχανή εντοπίζει ένα "
+"κενό φάκελο και μπορείτε να κλικ στη «Δημιουργία». Η Godot θα δημιουργήσει "
+"το πρότζεκτ για εσάς και θα ανοίξει τον επεξεργαστή."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
 msgid ""
 "The next time you’ll open Godot, you’ll see your new project in the list. "
 "Double click on it to open it in the editor."
 msgstr ""
+"Την επόμενη φορά που θα ανοίξετε τη Godot, θα δείτε το καινούργιο σας "
+"πρότζεκτ στη λίστα. Κάντε διπλό κλικ αε αυτό για να το ανοίξετε στον "
+"επεξεργαστή."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:92
 msgid "|image5|"
-msgstr ""
+msgstr "|εικόνα5|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:50
 msgid ""
@@ -1593,24 +1734,27 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
+"Μπορείτε να εισαγάγετε υπάρχοντα πρότζεκτ με παρόμοιο τρόπο, χρησιμοποιόντας "
+"το κουμπί Εισαγωγή. Εντοπίστε τι φάκελο που περιέχει το πρότζεκτ ή το αρχείο "
+"«project.gdot» για να το εισαγάγετε και να το επεξεργαστείτε."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:113
 msgid "|image7|"
-msgstr ""
+msgstr "|εικόνα7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
 msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr ""
+msgstr "Όταν η διαδρομή του φακέλου είναι σωστή, θα δείτε ένα πράσινο τικ."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:121
 msgid "|image8|"
-msgstr ""
+msgstr "|εικόνα8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
-msgstr ""
+msgstr "Πρώτα θα δείτε τον επεξεργαστή της Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -1618,48 +1762,61 @@ msgid ""
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
+"Καλωσορίσατε στη Godot! Με το πρότζεκτ σας ανοιχτό, θα πρέπει να βλέπετε τη "
+"διεπαφή του επεξεργαστή με την 3D προβολή ενεργή. Μπορείτε να αλλάξετε την "
+"τωρινή επιφάνεια εργασίας στην κορυφή της διεπαφής. Κάντε κλικ στο 2D για να "
+"αλλάξετε στη 2D επιφάνεια εργασίας."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:142
 msgid "|image9|"
-msgstr ""
+msgstr "|εικόνα9|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
+#, fuzzy
 msgid "Now you should see this interface, with empty docks on the right side."
 msgstr ""
+"Τώρα μπορείτε να δείτε την επιφάνεια διεπαφής, με κενά docks στη δεξιά "
+"πλευρά."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:148
 msgid "|image10|"
-msgstr ""
+msgstr "|εικόνα10|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:74
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
+"Στη κορυφή, από τα αριστερά στα δεξιά, μπορείτε να δείτε τα **κυρίως "
+"μενού**, τις **επιφάνειες εργασίας**, και τα **κουμπία playtest**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
+"Στην αριστερή πλευρά, έχετε το  **FileSystem dock**, όπου μπορείτε να "
+"διαχειριστείτε τα πρότζεκτ σας και τα στοιχεία σας."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:153
 msgid "|image11|"
-msgstr ""
+msgstr "|εικόνα11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
+"Στη δεξιά πλευρά, θα βρείτε το **Scene dock**, το οποίο δείχνει σε λίστα τα "
+"περιεχόμενα των ενεργών σκηνών και την **Επισκόπηση** στη κάτω δεξιά γωνία."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:161
 msgid "|image12|"
-msgstr ""
+msgstr "|εικόνα12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""

@@ -4,8 +4,10 @@
 #
 # ᅚc <silenltypl@gmail.com>, 2018.
 # Adam Jakubczak <adam.per.jakubczak@gmail.com>, 2018-2019.
+# Adam Jankowski <adamjankowski1000@gmail.com>, 2019.
 # Andrzej <impar.andrzej@gmail.com>, 2018.
 # Bartosz Stasiak <bs97086@amu.edu.pl>, 2019.
+# beetbeet <hellobeetbeet@gmail.com>, 2019.
 # Daniel Kulas <danielkulas27@gmail.com>, 2019.
 # Dariusz Król <rexioweb@gmail.com>, 2018-2019.
 # Dariusz Siek <dariuszynski@gmail.com>, 2018.
@@ -14,6 +16,8 @@
 # KolegaLiterat <jawor34@gmail.com>, 2018.
 # luluu9 <maxmax89_89@o2.pl>, 2018.
 # Maciej <WriteToFeniks@gmail.com>, 2019.
+# Myver <igormakarowicz@gmail.com>, 2019.
+# Patryk Majos <psychobutterpl@gmail.com>, 2019.
 # Paweł Litwinowicz <spam@litwinowicz.eu>, 2018.
 # Piotr Bojczewski <piotr200310@outlook.com>, 2018.
 # piotrekpajak <araneo@protonmail.com>, 2018.
@@ -32,8 +36,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-04-09 11:43+0200\n"
-"PO-Revision-Date: 2019-04-08 10:35+0000\n"
-"Last-Translator: Daniel Kulas <danielkulas27@gmail.com>\n"
+"PO-Revision-Date: 2019-04-29 11:47+0000\n"
+"Last-Translator: Patryk Majos <psychobutterpl@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -42,7 +46,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -1423,9 +1427,8 @@ msgid "Viewports"
 msgstr "Okno podglądu"
 
 #: ../../docs/about/docs_changelog.rst:69
-#, fuzzy
 msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
-msgstr "Używanie szablonów eksportu"
+msgstr ":ref:`Używanie Viewport jako tekstury <doc_viewport_as_texture>`"
 
 #: ../../docs/about/docs_changelog.rst:70
 msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
@@ -1478,18 +1481,16 @@ msgid ":ref:`Shading language <doc_shading_language>`"
 msgstr ":ref:`Język cieniowania <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:83
-#, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr "\"spatial\": Dla renderingu 3D."
+msgstr " :ref:`Shadery przestrzenne <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:84
 msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
 msgid ":ref:`Particles shaders <doc_particle_shader>`"
-msgstr ":ref:`Proste pisanie Shaderów <doc_shading_language>`"
+msgstr " :ref:`Shadery cząstek<doc_particle_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:88 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
@@ -1579,14 +1580,12 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
 msgstr "Tworzenie zawartości"
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`Making trees <doc_making_trees>`"
-msgstr ":ref:`Proste pisanie Shaderów <doc_shading_language>`"
+msgstr " :ref:`Tworzenie drzew <doc_making_trees>`"
 
 #: ../../docs/about/docs_changelog.rst:127
 #: ../../docs/tutorials/plugins/index.rst:2
@@ -2495,9 +2494,8 @@ msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
 msgstr "Naciśnij przycisk Odtwórz i obserwuj, jak piłka opada na dół ekranu:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
-#, fuzzy
 msgid "Multiple instances"
-msgstr "Wielokrotna instancja"
+msgstr "Wielokrotne instancje"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
 msgid ""
@@ -2620,16 +2618,14 @@ msgid "Design language"
 msgstr "Język projektu"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
-#, fuzzy
 msgid ""
 "But the greatest strength that comes with instancing scenes is that it works "
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
-"Jednak największą zaletą scen instancjujących jest to że idealnie nadaje się "
-"tworzenia bardzo zaawansowanych scen. To właśnie odróżnia Godota od "
-"wszystkich innych silników. Godot został zaprojektowany od podstaw wokół "
-"tego konceptu."
+"Największą zaletą instancjonowania scen jest ich przydatność w projektowaniu "
+"gry. To właśnie odróżnia Godot od innych silników, został zaprojektowany "
+"wokół idei instancjonowania scen."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -3138,7 +3134,6 @@ msgstr ""
 "skryptu pod Inspektorem:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
-#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
@@ -3239,7 +3234,6 @@ msgstr ""
 "NodePath) oraz nazwa metody, którą chcesz wykonać."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:208
-#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
@@ -3265,7 +3259,6 @@ msgstr ""
 "wygeneruje funkcję przed nawiązaniem połączenia."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:218
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
@@ -3276,7 +3269,6 @@ msgstr ""
 "tego procesu zawarte w kodzie!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:222
-#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
@@ -3844,6 +3836,9 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
+"Możesz także połączyć sygnał z poziomu kodu zamiast w edytorze. To jest "
+"zazwyczaj przydatne podczas tworzenia węzłów w kodzie, ponieważ nie można "
+"ustanowić połączenia dla tego węzła w edytorze."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid ""
@@ -3861,28 +3856,28 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
-#, fuzzy
 msgid "Custom signals"
-msgstr "Niestandardowe iteratory"
+msgstr "Niestandardowe sygnały"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
-msgstr ""
+msgstr "Możesz także deklarować swoje niestandardowe sygnały w Godocie:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:174
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
+"Raz zadeklarowane, twoje niestandardowe sygnały pojawią się w Inspektorze i "
+"będą mogły być podłączone w taki sam sposób jak sygnały wbudowane w węzeł."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:177
 msgid "To emit a signal via code, use the ``emit`` function:"
 msgstr "Aby wyemitować sygnał poprzez kod, użyj funkcji \"emit\":"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
-#, fuzzy
 msgid "Shooting example"
-msgstr "Kilka przykładów:"
+msgstr "Przykład strzelanki"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:205
 msgid ""
@@ -3891,12 +3886,18 @@ msgid ""
 "clicked, we create an instance of the bullet at the player's location. See :"
 "ref:`doc_instancing` for details."
 msgstr ""
+"Jako inny przykład zastosowania sygnałów rozważmy postać gracza, która może "
+"obracać się i strzelać w kierunku myszki. Za każdym razem gdy przycisk myszy "
+"jest kliknięty, tworzymy instancje pocisku w miejscu gracza. Zobacz :ref:"
+"`doc_instancing` po szczegóły."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
 msgstr ""
+"Jednakże jeśli pociski zostaną dodane jako dzieci gracza to podczas jego "
+"obrotu pozostaną do niego \"przyłączone\":"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
 msgid ""
@@ -3907,10 +3908,15 @@ msgid ""
 "\"main\" game scene, which may be the player's parent or even further up the "
 "tree."
 msgstr ""
+"Zamiast tego chcemy żeby pociski były niezależne od ruchu gracza - "
+"wystrzelone powinny lecieć w linii prostej i gracz nie powinien mieć już na "
+"nie żadnego wpływu. Zamiast być dodanym do drzewka sceny jako dziecko gracza "
+"stosowniejszym jest dodanie pocisku jako dziecka \"main\" sceny gry, która "
+"może być ojcem gracza albo być jeszcze wyżej w drzewku."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
 msgid "You could do this by adding the bullet directly:"
-msgstr ""
+msgstr "Możesz to zrobić dodając pocisk bezpośrednio:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:234
 msgid ""
@@ -3921,6 +3927,12 @@ msgid ""
 "scene's node structure, the player's parent may no longer be the appropriate "
 "node to receive the bullets."
 msgstr ""
+"Jednakże to zrodzi nowy problem. Jeśli przetestujesz niezależnie scenę "
+"\"Player\" to wysypie się podczas strzelania, ponieważ nie ma żadnego węzła "
+"ojcowskiego do którego ma dostęp. To znacznie utrudnia niezależne testowanie "
+"kodu gracza oraz oznacza że jeśli zdecydujesz się zmienić strukturę węzłów "
+"głównej sceny to ojciec gracza może już nie być odpowiednim węzłem do "
+"przyjmowania pocisków."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:241
 msgid ""
@@ -3929,17 +3941,22 @@ msgid ""
 "after that - whatever node is connected to the signal can \"receive\" the "
 "bullets and take the appropriate action to spawn them."
 msgstr ""
+"Rozwiązaniem tego problemu jest użycie sygnału \"emit\" aby wyemitować "
+"pociski z gracza. Gracz w ten sposób nie musi \"wiedzieć\" co się od teraz "
+"stanie z pociskami - jakikolwiek węzeł, który jest podłączony do sygnału "
+"może przyjąć pociski i podjąć należyte kroki aby je utworzyć."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:247
-#, fuzzy
 msgid "Here is the code for the player using signals to emit the bullet:"
-msgstr "Oto kod dla kodu ciała gracza:"
+msgstr "Oto kod dla gracza używającego sygnałów do wyemitowania pocisku:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:293
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
 msgstr ""
+"W głównej scenie podłączamy sygnał gracza ( pojawi się w etykiecie \"Węzeł"
+"\" )."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:317
 msgid ""
@@ -3956,12 +3973,19 @@ msgid ""
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
+"Godot ma wiele wbudowanych typów węzłów, które dostarczają sygnałów aby "
+"wykrywać wydarzenia. Na przykład,  :ref:`Area2D <class_Area2D>` "
+"reprezentująca monetę emituje ``body_entered`` sygnał kiedy fizyczne ciało "
+"gracza wchodzi w jej kształt kolizyjny, co daję tobie znać kiedy gracz ją "
+"zebrał."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:330
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
+"W następnej sekcji, :ref:`doc_your_first_game` zbudujesz kompletną grę z "
+"wykorzystaniem sygnałów aby połączyć różne elementy gry."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 #, fuzzy
@@ -15891,13 +15915,12 @@ msgstr ""
 "innym skryptom za pomocą metody opisanej w poprzednim kroku."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
-#, fuzzy
 msgid ""
 "To use the variable in the script, simply drag it to the canvas to create a "
 "getter:"
 msgstr ""
 "Aby użyć zmiennej w skrypcie, po prostu przeciągnij ją w ramkę, aby utworzyć "
-"odbiorcę (?):"
+"odbiorcę:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
@@ -25297,7 +25320,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:124
 msgid "Fract Delta"
-msgstr "Fract Delta"
+msgstr "Fraktal Delty"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:126
 msgid "This can be used to turn Fract Delta on or off."
@@ -25372,7 +25395,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:160
 msgid "Draw Order"
-msgstr "Draw Order"
+msgstr "Rysowanie zamówień"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:162
 msgid ""
@@ -25508,7 +25531,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:309
 msgid "Scale"
-msgstr "Scale"
+msgstr "Skala"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:271
 msgid "Determines the initial scale of the particles."
@@ -42005,7 +42028,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr "Math"
+msgstr "Matematyka"
 
 #: ../../docs/tutorials/math/vector_math.rst:4
 msgid "Vector math"
@@ -50219,15 +50242,15 @@ msgstr "black"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "blue"
-msgstr "blue"
+msgstr "niebieski"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:66
 msgid "fuchsia"
-msgstr "fuchsia"
+msgstr "fuksja"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "gray"
-msgstr "gray"
+msgstr "szary"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:68
 msgid "green"
@@ -50235,7 +50258,7 @@ msgstr "green"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "lime"
-msgstr "lime"
+msgstr "limonkowy"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:70
 msgid "maroon"
@@ -50247,7 +50270,7 @@ msgstr "navy"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:72
 msgid "purple"
-msgstr "purple"
+msgstr "fioletowy"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "red"
@@ -50267,7 +50290,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "yellow"
-msgstr "yellow"
+msgstr "żółty"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:80
 msgid "Hexadecimal color codes"
@@ -66474,7 +66497,7 @@ msgstr "Python 2.7+ (Python 3 wspierany tylko razem z SCons 3.0)"
 #: ../../docs/development/compiling/compiling_for_x11.rst:16
 #: ../../docs/development/compiling/compiling_for_osx.rst:15
 msgid "SCons build system"
-msgstr "SCons build system"
+msgstr "System buildów SCons"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:17
 msgid "pkg-config (used to detect the dependencies below)"
@@ -68856,7 +68879,7 @@ msgstr "Ustaw"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
-msgstr "Map"
+msgstr "Mapa"
 
 #: ../../docs/development/cpp/core_types.rst:147
 msgid ""
@@ -70772,7 +70795,7 @@ msgstr "Jest 5 głównych sekcji w pliku TSCN:"
 
 #: ../../docs/development/file_formats/tscn.rst:23
 msgid "File Descriptor"
-msgstr "File Descriptor"
+msgstr "Deskryptor plików"
 
 #: ../../docs/development/file_formats/tscn.rst:24
 #: ../../docs/development/file_formats/tscn.rst:266

@@ -10,9 +10,11 @@
 # carlcc <carlmarxchen@foxmail.com>, 2018.
 # cavenzhong <cavenzhong@gmail.com>, 2018.
 # cloudapex <cloudapex@126.com>, 2018.
+# codentropy <taozhen2012@163.com>, 2019.
 # congcong <3546952960@qq.com>, 2018.
 # Dante Lucifer <firecloud888@gmail.com>, 2018.
-# DKLost <514dklost@gmail.com>, 2018.
+# DKLost <514dklost@gmail.com>, 2018-2019.
+# DS <dseqrasd@126.com>, 2019.
 # Geequlim <geequlim@gmail.com>, 2018.
 # Griant <goooosick@gmail.com>, 2018.
 # griffenliu <tiansha7xing@163.com>, 2018.
@@ -21,7 +23,7 @@
 # Hezekiah Ho <hyq1986@gmail.com>, 2018.
 # hnclca <hnclca@qq.com>, 2019.
 # Jack <skyturtur@gmail.com>, 2018.
-# Jingtian Pan <panjingtian@126.com>, 2018.
+# Jingtian Pan <panjingtian@126.com>, 2018-2019.
 # Joe Zhao <nikejaycn@gmail.com>, 2018.
 # Jsheng <yangea@outlook.com>, 2019.
 # kirk_king <kirk_kpt@163.com>, 2018.
@@ -31,10 +33,11 @@
 # plumsky <x-wolf@163.com>, 2018.
 # pokemonchw <admin@byayoi.org>, 2018.
 # py_co <py_co@outlook.com>, 2018.
+# qjyqjyqjyqjy <qjyqjyqjyqjy@sina.com.cn>, 2019.
 # RainVector <y2505418927@gmail.com>, 2018.
 # redity su <2215523266@qq.com>, 2018.
 # seanfy <everxiao@qq.com>, 2018.
-# sersoong <seraphim945@qq.com>, 2018.
+# sersoong <seraphim945@qq.com>, 2018-2019.
 # SilMOON <chenminghui8899@gmail.com>, 2018.
 # simano clio <sim2cle@gmail.com>, 2019.
 # tangdou1 <1093505442@qq.com>, 2018.
@@ -62,8 +65,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-04-09 11:43+0200\n"
-"PO-Revision-Date: 2019-04-09 09:31+0000\n"
-"Last-Translator: ByonkoGalilei <byonko@qq.com>\n"
+"PO-Revision-Date: 2019-05-21 11:15+0000\n"
+"Last-Translator: DS <dseqrasd@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -71,7 +74,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.7-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -82,7 +85,7 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"戈多的帮助文档有多种语言和版本。打开侧栏底部的“阅读文档”按钮来查看可用列表。"
+"Godot的帮助文档有多种语言和版本。打开侧栏底部的“阅读文档”按钮来查看可用列表。"
 
 #: ../../docs/index.rst:10
 msgid ""
@@ -354,7 +357,7 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"本文档由Godot Engine社区的成员持续编写，更正，编辑和修改。它的文本文件由 "
+"本文档由Godot Engine社区的成员持续编写，更正，编辑和改进。它的文本文件由 "
 "`reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_ 标记语言"
 "进行编辑，然后使用开源工具 `Sphinx <http://www.sphinx-doc.org>`_ 与 "
 "`ReadTheDocs <https://readthedocs.org/>`_ 编译成一个静态网站和离线文档。"
@@ -1175,14 +1178,12 @@ msgid "Step-by-step"
 msgstr "逐步教程"
 
 #: ../../docs/about/docs_changelog.rst:19
-#, fuzzy
 msgid ":ref:`Signals <doc_signals>`"
-msgstr ":ref:`Basis <class_Basis>`"
+msgstr ":参考:‘信号<文档_信号>’"
 
 #: ../../docs/about/docs_changelog.rst:20
-#, fuzzy
 msgid ":ref:`Exporting <doc_exporting>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":参考:`导出<文档_导出>’"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/getting_started/workflow/index.rst:2
@@ -1190,111 +1191,105 @@ msgid "Project workflow"
 msgstr "项目工作流程"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid "Best Practices:"
-msgstr "最佳做法"
+msgstr "最佳实践："
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Introduction <doc_introduction_best_practices>`"
-msgstr ""
+msgstr ":参考:`简介<文档_简介_最佳实践>’"
 
 #: ../../docs/about/docs_changelog.rst:26
 msgid ":ref:`What are Godot classes <doc_what_are_godot_classes>`"
-msgstr ""
+msgstr ":参考:`什么是Godot类<文档_什么是Godot类>’"
 
 #: ../../docs/about/docs_changelog.rst:27
-#, fuzzy
 msgid ":ref:`Scene organization <doc_scene_organization>`"
-msgstr ":ref:`动画管线 <doc_animations>`"
+msgstr ":参考:`场景结构 <文档_场景结构>’"
 
 #: ../../docs/about/docs_changelog.rst:28
 msgid ":ref:`Scenes versus scripts <doc_scenes_versus_scripts>`"
-msgstr ""
+msgstr ":参考:`场景与脚本<文档_场景与脚本>’"
 
 #: ../../docs/about/docs_changelog.rst:29
 msgid ""
 ":ref:`Autoloads versus internal nodes <doc_autoloads_versus_internal_nodes>`"
-msgstr ""
+msgstr ":参考:`自动加载与内部节点<文档_自动加载与内部节点>’"
 
 #: ../../docs/about/docs_changelog.rst:30
 msgid ":ref:`Node alternatives <doc_node_alternatives>`"
-msgstr ""
+msgstr ":参考:`节点备选方案<文档_节点备选方案>`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`Godot interfaces <doc_godot_interfaces>`"
-msgstr ""
+msgstr ":参考:`Godot接口<文档_godot接口>’"
 
 #: ../../docs/about/docs_changelog.rst:32
-#, fuzzy
 msgid ":ref:`Godot notifications <doc_godot_notifications>`"
-msgstr ":ref:`动画管线 <doc_animations>`"
+msgstr ":参考:`Godot通知<文档_godot通知>’"
 
 #: ../../docs/about/docs_changelog.rst:33
 msgid ":ref:`Data preferences <doc_data_preferences>`"
-msgstr ""
+msgstr ":参考:`数据首选项<文档_数据首选项>’"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid ":ref:`Logic preferences <doc_logic_preferences>`"
-msgstr ""
+msgstr ":参考:`逻辑首选项<文档_逻辑首选项>’"
 
 #: ../../docs/about/docs_changelog.rst:37
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr "脚本"
+msgstr "编写脚本"
 
 #: ../../docs/about/docs_changelog.rst:39
-#, fuzzy
 msgid ":ref:`Typed GDscript <doc_gdscript_static_typing>`"
-msgstr ":ref:`Built-in<gdscript_basics.html#built-in-types>`"
+msgstr ":参考:`GDscript类型<文档_GDScript中静态类型>’"
 
 #: ../../docs/about/docs_changelog.rst:42 ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
-msgstr "2D"
+msgstr "二维"
 
 #: ../../docs/about/docs_changelog.rst:44
 msgid ":ref:`2D lights and shadows <doc_2d_lights_and_shadows>`"
-msgstr ""
+msgstr ":参考:`2D灯光与阴影<文档_2D灯光与阴影>’"
 
 #: ../../docs/about/docs_changelog.rst:45
 msgid ":ref:`2D meshes <doc_2d_meshes>`"
-msgstr ""
+msgstr ":参考:`2D网格<文档_2d网格>’"
 
 #: ../../docs/about/docs_changelog.rst:48 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
-msgstr "3D"
+msgstr "三维"
 
 #: ../../docs/about/docs_changelog.rst:50
-#, fuzzy
 msgid ":ref:`CSG <doc_csg_tools>`"
-msgstr ":ref:`CSGBox <class_CSGBox>`"
+msgstr ":参考:`CSG<文档_csg工具>’"
 
 #: ../../docs/about/docs_changelog.rst:51
-#, fuzzy
 msgid ""
 ":ref:`Animating thousands of fish with MultiMesh "
 "<doc_animating_thousands_of_fish>`"
-msgstr "用渐变节点动画生命的损失"
+msgstr "：参考：`使用复合网格<文档_制作数千条鱼>制作数千条鱼的动画"
 
 #: ../../docs/about/docs_changelog.rst:52
 msgid ""
 ":ref:`Controlling thousands of fish with Particles "
 "<doc_controlling_thousands_of_fish>`"
-msgstr ""
+msgstr ":参考:`使用粒子系统控制数千条鱼<文档_控制数千条鱼>`"
 
 #: ../../docs/about/docs_changelog.rst:55
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr "物理"
+msgstr "物理学"
 
 #: ../../docs/about/docs_changelog.rst:57
 msgid ":ref:`Ragdoll system <doc_ragdoll_system>`"
-msgstr ""
+msgstr ":参考:`布娃娃系统<文档_布娃娃系统>`"
 
 #: ../../docs/about/docs_changelog.rst:58
 msgid ":ref:`Softbody <doc_soft_body>`"
-msgstr ""
+msgstr ":参考:`软体<文档_软体>’"
 
 #: ../../docs/about/docs_changelog.rst:61
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:2
@@ -1306,12 +1301,11 @@ msgstr "动画"
 
 #: ../../docs/about/docs_changelog.rst:63
 msgid ":ref:`2D skeletons <doc_2d_skeletons>`"
-msgstr ""
+msgstr ":参考:`2D骨骼<文档_2d骨骼>’"
 
 #: ../../docs/about/docs_changelog.rst:64
-#, fuzzy
 msgid ":ref:`AnimationTree <doc_animation_tree>`"
-msgstr ":ref:`动画管线 <doc_animations>`"
+msgstr ":参考:`动画树<文档_动画树>’"
 
 #: ../../docs/about/docs_changelog.rst:67
 #: ../../docs/tutorials/viewports/index.rst:2
@@ -1320,13 +1314,12 @@ msgid "Viewports"
 msgstr "视区"
 
 #: ../../docs/about/docs_changelog.rst:69
-#, fuzzy
 msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
-msgstr "使用视区作为纹理"
+msgstr ":参考:`使用视区作为纹理<文档_使用视区作为纹理>`"
 
 #: ../../docs/about/docs_changelog.rst:70
 msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
-msgstr ""
+msgstr ":参考:`自定义后期处理 <文档_自定义后期处理>’"
 
 #: ../../docs/about/docs_changelog.rst:73
 #: ../../docs/tutorials/shading/index.rst:2
@@ -1338,60 +1331,55 @@ msgid ""
 ":ref:`Intro to shaders: 2D and 3D water (7 video tutorials) "
 "<doc_intro_to_shaders_water_workshop>`"
 msgstr ""
+":参考:`着色器简介:2D和3D水(7节视频教程)<文档_着色器简介：水效果的研究>’"
 
 #: ../../docs/about/docs_changelog.rst:76
 msgid ""
 ":ref:`Migrating to Godot’s shading language "
 "<doc_migrating_to_godot_shader_language>`"
-msgstr ""
+msgstr ":参考:`迁移到Godot的着色语言<文档_迁移到Godot的着色语言>’"
 
 #: ../../docs/about/docs_changelog.rst:77
 msgid ""
 ":ref:`Vertex displacement with shaders "
 "<doc_vertex_displacement_with_shaders>`"
-msgstr ""
+msgstr ":参考:`着色器的顶点位移<文档_着色器的顶点位移>`"
 
 #: ../../docs/about/docs_changelog.rst:78
 msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
-msgstr ""
+msgstr ":参考:`高级后期处理<文档_高级后期处理>`"
 
 #: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
 msgid "Shading Reference:"
-msgstr "动画面板参考"
+msgstr "着色参考："
 
 #: ../../docs/about/docs_changelog.rst:81
-#, fuzzy
 msgid ":ref:`Shaders <doc_shaders>`"
-msgstr ":ref:`易于书写的着色器 <doc_shading_language>`"
+msgstr ":参考:`着色器<文档_着色器>`"
 
 #: ../../docs/about/docs_changelog.rst:82
-#, fuzzy
 msgid ":ref:`Shading language <doc_shading_language>`"
-msgstr ":ref:`易于书写的着色器 <doc_shading_language>`"
+msgstr ":参考:`着色器语言<文档_着色器语言>`"
 
 #: ../../docs/about/docs_changelog.rst:83
-#, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr "“spatial”:用于3D渲染。"
+msgstr ":参考:`空间着色器<文档_空间着色器>`"
 
 #: ../../docs/about/docs_changelog.rst:84
-#, fuzzy
 msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
-msgstr "“canvas_item”:用于2D渲染。"
+msgstr ":参考:`画布组件着色器<文档_画布组件着色器>`"
 
 #: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
 msgid ":ref:`Particles shaders <doc_particle_shader>`"
-msgstr "\"particles\":用于粒子系统。"
+msgstr ":参考:`粒子着色器<文档_粒子着色器>`"
 
 #: ../../docs/about/docs_changelog.rst:88 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr "VR"
+msgstr "虚拟现实"
 
 #: ../../docs/about/docs_changelog.rst:90
 msgid ":ref:`VR starter tutorial <doc_vr_starter_tutorial>`"
-msgstr ""
+msgstr ":参考:`虚拟现实入门教程<文档_虚拟现实入门教程>`"
 
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/tutorials/platform/index.rst:2
@@ -1399,10 +1387,9 @@ msgid "Platform-specific"
 msgstr "特定平台"
 
 #: ../../docs/about/docs_changelog.rst:95
-#, fuzzy
 msgid ""
 ":ref:`Customizing the Web export HTML page <doc_customizing_html5_shell>`"
-msgstr "自定义Web导出HTML页面"
+msgstr ":参考:`自定义Web导出HTML页面<文档_自定义html5壳层>`"
 
 #: ../../docs/about/docs_changelog.rst:98
 #: ../../docs/tutorials/threads/index.rst:2
@@ -1411,7 +1398,7 @@ msgstr "多线程"
 
 #: ../../docs/about/docs_changelog.rst:100
 msgid ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
-msgstr ""
+msgstr ":参考:`线程安全API<文档_线程安全API>`"
 
 #: ../../docs/about/docs_changelog.rst:103
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1420,21 +1407,20 @@ msgstr "杂项"
 
 #: ../../docs/about/docs_changelog.rst:105
 msgid ":ref:`Fixing jitter and stutter <doc_jitter_stutter>`"
-msgstr ""
+msgstr ":参考:`修复抖动和时断时续<文档_抖动和时断时续>`"
 
 #: ../../docs/about/docs_changelog.rst:106
 msgid ":ref:`Running code in the editor <doc_running_code_in_the_editor>`"
-msgstr ""
+msgstr ":参考:`在编辑器中运行代码<文档_在编辑器中运行代码>`"
 
 #: ../../docs/about/docs_changelog.rst:107
 msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
-msgstr ""
+msgstr ":参考:`手动更改场景<文档_手动更改场景>`"
 
 #: ../../docs/about/docs_changelog.rst:108
-#, fuzzy
 msgid ""
 ":ref:`Differences between GLES2 and GLES3 <doc_gles2_gles3_differences>`"
-msgstr "C#和GDScript之间的一般差异"
+msgstr ":参考:`GLES2和GLES3之间的差异<文档_GLES2和GLES3之间的差异>`"
 
 #: ../../docs/about/docs_changelog.rst:111
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:231
@@ -1448,15 +1434,14 @@ msgid "Compiling"
 msgstr "开始编译"
 
 #: ../../docs/about/docs_changelog.rst:113
-#, fuzzy
 msgid ":ref:`Optimizing a build for size <doc_optimizing_for_size>`"
-msgstr "优化大小的构建"
+msgstr ":参考:`优化大小的构建<文档_优化大小>`"
 
 #: ../../docs/about/docs_changelog.rst:114
 msgid ""
 ":ref:`Compiling with script encryption key "
 "<doc_compiling_with_script_encryption_key>`"
-msgstr ""
+msgstr ":参考:`使用脚本加密密钥编译<文档_使用脚本加密密钥编译>`"
 
 #: ../../docs/about/docs_changelog.rst:117
 #: ../../docs/development/cpp/index.rst:2
@@ -1464,21 +1449,18 @@ msgid "Engine development"
 msgstr "引擎开发"
 
 #: ../../docs/about/docs_changelog.rst:119
-#, fuzzy
 msgid ""
 ":ref:`Binding to external libraries <doc_binding_to_external_libraries>`"
-msgstr ":ref:`可使用外部编辑器 <doc_external_editor>`"
+msgstr ":参考:`绑定到外部库<文档_绑定到外部库>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
-msgstr "创建内容"
+msgstr "创造内容"
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`Making trees <doc_making_trees>`"
-msgstr ":ref:`动画管线 <doc_animations>`"
+msgstr ":参考:`制作树<文档_制作树>`"
 
 #: ../../docs/about/docs_changelog.rst:127
 #: ../../docs/tutorials/plugins/index.rst:2
@@ -1487,12 +1469,11 @@ msgstr "插件"
 
 #: ../../docs/about/docs_changelog.rst:129
 msgid ":ref:`Making main screen plugins <doc_making_main_screen_plugins>`"
-msgstr ""
+msgstr ":参考:`制作主屏幕插件<文档_制作主屏幕插件>`"
 
 #: ../../docs/about/docs_changelog.rst:130
-#, fuzzy
 msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
-msgstr ":ref:`动画管线 <doc_animations>`"
+msgstr ":参考:`空间变换轴插件<文档_空间变换轴插件>`"
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
@@ -2332,12 +2313,14 @@ msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
+"打开小球（Ball）场景，点击向下箭头并选择新建物理材质（New PhysicsMaterial），"
+"添加一个物理材质（PhysicsMaterial）。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
-msgstr ""
+msgstr "然后，通过单击它来展开材质，并将弹力（Bounce）属性设置为“1”。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
 msgid ""
@@ -2416,7 +2399,6 @@ msgid "Design language"
 msgstr "设计语言"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
-#, fuzzy
 msgid ""
 "But the greatest strength that comes with instancing scenes is that it works "
 "as an excellent design language. This distinguishes Godot from all the other "
@@ -3920,7 +3902,6 @@ msgstr ""
 "``Node2D`` 标题下的属性面板中找到它。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:125
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -3929,15 +3910,15 @@ msgid ""
 "\"New CapsuleShape2D\".  Using the two size handles, resize the shape to "
 "cover the sprite:"
 msgstr ""
-"最终，添加一个 :ref:`CollisionShape2D <class_CollisionShape2D>` 对象作为 "
-"``Player`` 的子节点。它用于决定游戏角色的“碰撞盒”，亦或者说是它碰撞区域的边"
-"界。对于该角色，给他一个 ``CapsuleShape2D`` 节点再好不过了，因此接下来来到查"
-"看器的“Shape”部分，点击“<null>”改为“新建 CapsuleShape2D”。然后重设形状的大小"
-"以盖住精灵:"
+"最后，添加一个:参考:`二维碰撞形状<类_二维碰撞形状>`作为玩家（Player）的子节"
+"点。它用于决定游戏角色的“碰撞盒”，亦或者说是它碰撞区域的边界。对于该角色，给"
+"他一个二维胶囊体形状（CapsuleShape2D） 节点再好不过了，那么接下来，在属性面板"
+"找到形状（Shape）部分，点击[空白](empty)->“新建二维胶囊体形状”（New "
+"CapsuleShape2D）。使用两个尺寸手柄，调整胶囊的形状及大小，以覆盖住精灵:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid "When you're finished, your ``Player`` scene should look like this:"
-msgstr "完成后，您的 ``Player`` 场景看起来应该像这样:"
+msgstr "完成后，您的``Player``场景看起来应该像这样:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:139
 msgid "Moving the player"
@@ -3977,7 +3958,6 @@ msgid "Start by declaring the member variables this object will need:"
 msgstr "首先声明该对象将会用到的成员变量:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:179
-#, fuzzy
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
@@ -3986,9 +3966,10 @@ msgid ""
 "Variables\" section of the Inspector. Remember, if you change the value "
 "here, it will override the value written in the script."
 msgstr ""
-"对于第一个变量 ``speed`` 使用 ``export`` 关键词可以让我们能够在查看器中设置该"
-"变量的值，对于我们期望能够像节点内置属性一样去调整的值，这是一个非常便利的手"
-"段。点击 ``Player`` 节点并将speed属性设置为 ``400``。"
+"在第一个变量“速度”（speed）上使用“导出”（export）关键字，这样允许我们在属性面"
+"板中设置它的值。便利之处在于，您能够像节点内置属性一样调整它的值。单击“玩"
+"家”（Player）节点，您将看到该属性现在已出现在属性面板的“脚本变量”（Script "
+"Variables）部分中。请记住，如果您在此处更改值，它将覆盖脚本中已写入的值。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:186
 msgid ""
@@ -4010,16 +3991,15 @@ msgstr ""
 "小的好时候:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:210
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
 "of our game, which we expect will change often. For the player, we need to "
 "do the following:"
 msgstr ""
-"现在我们可以使用 ``_process()`` 函数来定义游戏角色将会做什么。 "
-"``_process()`` 在每一帧都会被调用，因此我们需要使用它来更新我们游戏中期望被经"
-"常改变的元素，这里我们就做到了:"
+"现在我们可以使用“_处理”函数（_process()）来定义玩家将要做什么。“_处理”函数"
+"（_process()）在每一帧都会被调用，所以我们会用它来实时更新游戏中预计会经常发"
+"生变化的元素。对于玩家，我们需要执行以下操作："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:215
 msgid "Check for input."
@@ -4034,7 +4014,6 @@ msgid "Play the appropriate animation."
 msgstr "播放适当的动画。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:219
-#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -4043,10 +4022,10 @@ msgid ""
 "we will use the default events that are assigned to the arrow keys on the "
 "keyboard."
 msgstr ""
-"首先我们需要检测输入——游戏角色是否在按着某个键？对于这个游戏来说，我们有四个"
-"方向的输入需要检测。输入动作被定义在项目设定的“输入映射”页下。您可以自定义事"
-"件并分配器不同的键位、鼠标亦或者是其他输入的事件。对于这个演示项目来说，我们"
-"会使用已经分配给键盘方向键的默认事件。"
+"首先，我们需要检测输入——玩家是否按了某个键？对于这个游戏来说，我们有四个方向"
+"的输入需要检测。输入操作在“输入映射”下的“项目设置”中定义。在这里，您可以自定"
+"义事件，并分配不同的键位、鼠标事件或是其他输入。对于这个演示项目来说，我们会"
+"使用已经分配给键盘方向键的默认事件。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:226
 msgid ""
@@ -4057,7 +4036,6 @@ msgstr ""
 "下时返回 ``true`` ，否则返回 ``false``。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:288
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -4066,10 +4044,10 @@ msgid ""
 "``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
-"我们会检测每一个输入并增加/减少 ``velocity`` 以获取总的方向。比如说如果您同时"
-"按下了 ``→`` 和 ``↓`` ，那么最终的 ``velocity`` 就会是 ``(1,1)`` 。在这种情况"
-"下因为我们叠加了水平和垂直方向的运动，游戏角色会比仅在水平方向上移动得 *更快"
-"*。"
+"我们首先将速度（velocity）设置为（0,0）- 默认情况下，玩家不应该移动。然后我们"
+"检查每个输入，并从速度（velocity）中添加/减去以获得总方向。例如，如果你同时持"
+"有向右（right）和向下（down），由此产生的速度（velocity）向量将是（1,1）。在"
+"这种情况下，由于我们正在添加水平和垂直运动，玩家将比移动水平*更快*移动。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:295
 msgid ""
@@ -4098,14 +4076,14 @@ msgstr ""
 "我们也会检测某个问价是否在移动，以便我们能够启动或停止AnimatedSprite的动画。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:306
-#, fuzzy
 msgid ""
 "In GDScript, ``$`` returns the node at the relative path from the current "
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
-"``$`` 返回该节点的相对路径，若该节点未找到则返回 ``null`` ，因为"
-"AnimatedSprite是当前节点的子节点，因此我们可以使用 ``$AnimatedSprite`` 。"
+"在GDScript中，“$”的含义是返回当前节点的相对路径上的节点，如果找不到节点则返回"
+"空值（null）。由于动画精灵（AnimatedSprite）是当前节点的子节点，我们可以使用"
+"这种形式$AnimatedSprite。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid ""
@@ -4117,14 +4095,13 @@ msgstr ""
 "play()`` 与 ``get_node(\"AnimatedSprite\").play()`` 等效。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:312
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position "
 "and use ``clamp()`` to prevent it from leaving the screen by adding the "
 "following to the bottom of the ``_process`` function:"
 msgstr ""
-"既然我们已经有了运动的方向，我们就可以更新 ``Player`` 的位置了并可以在 "
-"``_process()` `函数的底部使用 ``clamp()`` 函数来防止它离开屏幕:"
+"现在我们有一个移动方向，我们可以更新玩家的位置并使用“钳住”（clamp()）来防止它"
+"离开屏幕，方法是在“_处理”函数（_process()）函数底部添加以下内容："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:332
 msgid "*Clamping* a value means restricting it to a given range."
@@ -4216,7 +4193,6 @@ msgstr ""
 "节点并点击属性面板标签页旁的 “节点” 标签页来查看游戏角色能够发射的所有信号:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:441
-#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered( Object "
@@ -4226,11 +4202,11 @@ msgid ""
 "automatically create a function in your player's script. This function will "
 "be called whenever the signal is emitted - it *handles* the signal."
 msgstr ""
-"请注意，我们自定义的 “hit” 信号也在其中！因为我们的敌人会是 ``RigidBody2D`` "
-"节点，因此我们要的是 ``body_entered( Object body )`` 信号；它会在一个实体与游"
-"戏角色接触时被发射出去。点击 “连接到……” 然后在 “连接信号” 窗口下再次点击 “连"
-"接” 。我们不需要对任何设定做改变——Godot会在您的游戏角色脚本中自动创建一个叫"
-"做 ``_on_Player_body_entered`` 的函数。"
+"请注意我们的自定义“hit”信号也在存在！由于我们的敌人移动是``RigidBody2D``节"
+"点，我们需要``body_entered（Object body）``信号;这将在body接触玩家时发出。单"
+"击“连接...”，然后在“连接信号”窗口再次“连接”。我们不需要更改任何这些设置 -戈多"
+"将自动在您的编辑器脚本中创建一个功能。每当发出信号时都会调用此函数 -用它来*处"
+"理*这个信号。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:450
 msgid ""
@@ -4255,14 +4231,13 @@ msgstr ""
 "触发 ``hit`` 信号。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
-#, fuzzy
 msgid ""
 "Disabling the area's collision shape can cause an error if it happens in the "
 "middle of the engine's collision processing. Using ``set_deferred()`` allows "
 "us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
-"如果发生在发动机碰撞处理的中间, 禁用该区域的碰撞形状可能会导致错误。使用 "
-"``call_deferred()`` 允许我们让 Godot 等待禁用形状, 直到这样做是安全的。"
+"如果在引擎的碰撞处理过程中发生错误，禁用区域的碰撞形状可能会导致错误。使用"
+"``set_deferred（）``允许我们让戈多等待禁用形状，直到安全为止。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -4383,7 +4358,6 @@ msgid "Add a script to the ``Mob`` and add the following member variables:"
 msgstr "添加一条脚本到 ``Mob`` 然后添加以下成员变量:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:581
-#, fuzzy
 msgid ""
 "When we spawn a mob, we'll pick a random value between ``min_speed`` and "
 "``max_speed`` for how fast each mob will move (it would be boring if they "
@@ -4392,9 +4366,10 @@ msgid ""
 "sure you've spelled these the same in the script and in the SpriteFrames "
 "resource."
 msgstr ""
-"我们将在\"min_speed\"和\"max_speed\"之间选择一个随机值来表示每个怪物移动的速"
-"度(如果它们都以相同的速度移动会很无趣)。在属性面板里将他们设置成\"150\"和"
-"\"250\"。我们还需要一个包含三个动画名字的数组，并随机选择其中一个。"
+"当我们生成一个怪物时，我们将在“min_speed”和“max_speed”之间随机选择一个值，表"
+"示每个怪物移动的速度(如果它们都以相同的速度移动，那就太无聊了)。我们还有一个"
+"数组，其中包含三个动画的名称，我们将使用它来随机选择一个动画。请确保您在脚本"
+"和spriteframe资源中拼写相同."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid ""
@@ -4590,15 +4565,15 @@ msgstr ""
 "容:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``) to the main script. "
 "``StartTimer`` will start the other two timers. ``ScoreTimer`` will "
 "increment the score by 1."
 msgstr ""
-"现在连接每个计时器节点的‘timeout()’信号(‘开始计时器’’、‘记分定时器’和‘移动定"
-"时器’’)。“启动定时器”将启动其他两个定时器。‘记分计时器’将分数增加1。"
+"现在，将每个计时器节点(' StartTimer '、' ScoreTimer '和' MobTimer ')的' ' "
+"timeout() ' '信号连接到主脚本。' StartTimer ' '将启动其他两个计时器。' ' "
+"ScoreTimer ' '将把分数增加1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:799
 msgid ""
@@ -4711,7 +4686,6 @@ msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` 命名为 ``MessageTimer`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:894
-#, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the _Text_ field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -4719,17 +4693,16 @@ msgid ""
 "Regular.ttf\". To use this font, do the following for each of the three "
 "``Control`` nodes:"
 msgstr ""
-"为了使 ``MessageLabel`` 中的文本适配游戏窗口，点击文本属性旁边的小图标。这会"
-"打开一个新窗口，使您可以在单词之间添加新行。 ``Control`` 节点的默认字体很小并"
-"且不能很好的缩放。在游戏资源中包含一个名为 \"Xolonium-Regular.ttf\" 的字体。"
-"要使用这个字体，为三个 ``Control`` 节点分别执行以下操作:"
+"单击“ScoreLabel”并在Inspector属性检查器的_Text_字段中键入一个数字。 "
+"``Control``节点的默认字体很小，不能很好地扩展。游戏资产中包含一个名"
+"为“Xolonium-Regular.ttf”的字体文件。要使用此字体，请对三个“Control”节点中的每"
+"一个执行以下操作："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:900
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr "在 \"Custom Fonts\" 的下拉选项中，选择 \"New DynamicFont\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:904
-#, fuzzy
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -4767,16 +4740,15 @@ msgstr "您可以手动拖动节点来放置它们，或者为了更精确的放
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:926
 msgid "ScoreLabel"
-msgstr "记分牌"
+msgstr "分数标签"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
-#, fuzzy
 msgid "*Text* : ``0``"
-msgstr "文本: ``0``"
+msgstr "*文本*: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid "*Layout* : \"Top Wide\""
-msgstr "*布局*: \"顶部宽\""
+msgstr "*布局*: \"顶部宽度\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
@@ -4788,33 +4760,28 @@ msgid "MessageLabel"
 msgstr "消息标签"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:935
-#, fuzzy
 msgid "*Text* : ``Dodge the Creeps!``"
-msgstr "文本: ``Dodge the Creeps!``"
+msgstr "*文本*: ``躲避小兵!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
-#, fuzzy
 msgid "*Layout* : \"HCenter Wide\""
-msgstr "``布局``: \"中心\""
+msgstr "``布局``: \"水平中心宽\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:940
 msgid "StartButton"
-msgstr "启动按钮"
+msgstr "开始按钮"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:942
-#, fuzzy
 msgid "*Text* : ``Start``"
-msgstr "文本: ``Start``"
+msgstr "*文本*: ``开始``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:943
-#, fuzzy
 msgid "*Layout* : \"Center Bottom\""
-msgstr "``布局``: \"中心 底部\""
+msgstr "``布局``: \"中心底部\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:944
-#, fuzzy
 msgid "*Margin* :"
-msgstr "边距"
+msgstr "*边距*："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Top: ``-200``"
@@ -4826,13 +4793,13 @@ msgstr "底部: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:949
 msgid "Now add this script to ``HUD``:"
-msgstr "现在增加该脚本到 ``HUD``:"
+msgstr "现将这个脚本添加到 ``HUD``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:968
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
-msgstr "“start_game”信号告诉“Main”节点按钮已经被按下。"
+msgstr "“start_game”信号通知“Main”节点，按钮已经被按下。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:990
 msgid ""
@@ -4845,14 +4812,13 @@ msgstr ""
 "为 \"On\" 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
-#, fuzzy
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
 "show the \"Start\" button."
 msgstr ""
-"当游戏角色输掉时调用这个函数。它将显示 \"Game Over\" 2秒，然后返回标题屏幕并"
-"显示 \"Start\" 按钮。"
+"当玩家输掉时调用这个函数。它将显示 \"Game Over\" 2秒，然后返回标题屏幕并显示 "
+"\"Start\" 按钮。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1025
 msgid ""
@@ -5118,9 +5084,11 @@ msgid ""
 "input, you can do that in the \"Project Settings\" under *Input Devices* and "
 "*Pointing*"
 msgstr ""
+"Godot默认将触摸输入看作鼠标输入。这意味着为鼠标事件所写的代码，也能被触摸事件"
+"触发。如果您想禁用该功能或者将鼠标输入看作触摸输入，可以在*Input Devices*和"
+"*Pointing*的\"Project Settings\"里设置。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
-#, fuzzy
 msgid ""
 "Before we change the input method, in the project settings go to *Display*, "
 "then click on *Window*. In the *Stretch* options, set *Mode* to \"2d\" and "
@@ -5128,7 +5096,7 @@ msgid ""
 "different sized screens."
 msgstr ""
 "在 *Stretch* 部分，设置 *Mode* 值为\"2d\"并设置 *Aspect* 值为 ”keep\" 。这确"
-"保游戏在不同大小的屏幕上保持一致的缩放。"
+"保游戏在不同大小的屏幕保持缩放比例。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:44
 msgid ""
@@ -5922,7 +5890,7 @@ msgstr "UI设计中最常见的5个控制节点"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
 msgid "TextureRect"
-msgstr "纹理结构"
+msgstr "材质矩形"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
 msgid ""
@@ -5989,7 +5957,7 @@ msgstr "用红色调制的纹理"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureButton"
-msgstr "纹理按钮"
+msgstr "材质按钮"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:97
 msgid ""
@@ -6026,7 +5994,7 @@ msgstr "纹理按钮和它的5个纹理槽"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureProgress"
-msgstr "纹理的进展"
+msgstr "材质进度条"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:119
 msgid ""
@@ -6084,7 +6052,7 @@ msgstr "标签图片"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "NinePatchRect"
-msgstr "可缩放面板"
+msgstr "九宫格纹理"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
 msgid ""
@@ -6474,7 +6442,6 @@ msgid "The GUI you're going to create"
 msgstr "您将要创建的GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
-#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_main_menu_design.zip <files/"
 "ui_main_menu_design.zip>` and extract the archive. Import the ``start/`` "
@@ -6483,8 +6450,8 @@ msgid ""
 "folder."
 msgstr ""
 "下载项目文件: :download:`ui_main_menu_design.zip <files/ui_main_menu_design."
-"zip>` ，并提取存档。在Godot中导入`start/`项目以遵循本教程。`end/`文件夹包含最"
-"终结果。您会在`start/assets/main_menu`文件夹中找到所有的精灵。"
+"zip>` ，并提取存档。在Godot中导入`start/`项目按照本教程。`end/`文件夹包含最终"
+"结果。您会在`start/assets/main_menu`文件夹中找到所有的精灵图。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:33
 msgid "How to design your game UI"
@@ -6741,14 +6708,13 @@ msgstr ""
 "个`TextureRect`实例。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:159
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the ``Texture`` "
 "property and click ``[empty]`` -> ``Load``. A file browser opens and lets "
 "you pick a sprite to load into the texture slot."
 msgstr ""
-"单击每个节点以选择它。在属性面板中，单击纹理属性右侧的`…`图标，然后单击"
-"`Load`。打开一个文件浏览器，让您选择一个精灵加载到纹理槽中。"
+"单击选择节点。在属性面板中，单击材质属性右侧的`…`图标，然后单击`Load`。打开一"
+"个文件浏览器，然后选择一个精灵加载到材质槽中。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid "The file browser lets you find and load textures"
@@ -6815,15 +6781,14 @@ msgid ""
 msgstr "您应该有四个嵌套的容器，以及放置在它旁边的文本竖立节点"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
 "them into the ``VBoxContainer``. The nodes should position automatically."
 msgstr ""
-"在节点树中，选择应该位于左侧的所有`TextureRect`节点:徽标、菜单选项和版本说"
-"明。将它们拖放到`VBoxContainer`中。然后，将插图节点拖放到`CenterContainer`"
-"中。节点应该自动定位。"
+"在节点树中，选择位于左侧的所有`TextureRect`节点:logo、菜单选项和版本说明。将"
+"它们拖放到`VBoxContainer`中。然后，将插入图片节点拖放到`CenterContainer`中。"
+"节点会自动定位。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
 msgid "Containers automatically place and resize textures"
@@ -6842,7 +6807,6 @@ msgid "There's no space between the logo and the other UI elements"
 msgstr "logo和其他UI元素之间没有空间"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the ``Size Flags`` category and click "
@@ -6853,11 +6817,11 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
-"为了使右边的字符居中，我们将使用`CenterContainer`。添加一个`CenterContainer`"
-"节点作为`HBoxContainer`的子节点。然后在属性面板中，向下滚动到`Size Flags(大小"
-"标志)`类别，单击`Vertical(垂直)`属性右侧的字段，并检查`Expand(展开)`。对"
-"`Horizontal(水平)`属性执行相同的操作。最后将字符拖放到`CenterContainer`中。字"
-"符元素将自动居中。"
+"要将字符置于右侧，首先选择“CenterContainer”。然后在Inspector中，向下滚动到"
+"``Size Flags``类别并单击``Vertical``属性右侧的字段，并检查``Expand``和"
+"``Fill``。对``Horizontal``属性执行相同操作。这使得``CenterContainer``扩展到所"
+"有可用空间，同时对齐到相邻的``VBoxContainer``。最后，将Characters节点拖放到"
+"``CenterContainer``中。 Characters元素将自动居中。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid ""
@@ -6935,15 +6899,15 @@ msgid ""
 msgstr "没有一行代码，我们就有了一个精确且响应迅速的主菜单。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
-#, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
 "your own. In the next tutorial, you'll create a Game User Interface with "
 "bars and item counters."
 msgstr ""
-"恭喜您做到了!您可以下载`final menu <#>`__ 来与您自己的菜单进行比较。在下一个"
-"教程中，您将创建一个带有栏和物品计数器的游戏用户界面。"
+"恭喜你到达！您可以下载最终菜单：下载：`ui_main_menu_design.zip <files /"
+"ui_main_menu_design.zip>`以与您自己进行比较。在下一个教程中，您将创建一个带有"
+"条形和项目计数器的游戏用户界面。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
 msgid ""
@@ -6996,16 +6960,15 @@ msgid "Design the GUI"
 msgstr "设计GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
 "energy bar, and bomb and emerald counters. By the end of this tutorial, "
 "you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
-"既然您已经掌握了基本知识, 我们将看到如何利用可复用的 UI 组件构建游戏用户界面 "
-"(GUI): 生命条、能量条、炸弹和卢比计数器。直到本教程结束时, 您将拥有一个游戏 "
-"GUI, 可以使用 GDscript 或 VisualScript 来控制:"
+"现在您已经掌握了基础知识，我们将看到如何使用可重复使用的UI组件构建游戏图形用"
+"户界面（GUI）：生命条，能量条，炸弹和翠绿计数器。在本教程结束时，您将拥有一个"
+"游戏GUI，可以使用GDscript或VisualScript进行控制:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
@@ -7068,9 +7031,8 @@ msgstr "生命和能量条"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-#, fuzzy
 msgid "The bomb and emerald counters on the right"
-msgstr "炸弹和卢比计数器在右边"
+msgstr "炸弹和翠绿计数器在右边"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
@@ -7084,7 +7046,6 @@ msgid "The life and energy bars on the left"
 msgstr "左边是生命和能量条"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
-#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -7093,10 +7054,10 @@ msgid ""
 "``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
-"这使得嵌套容器变得更加容易:我们在屏幕的边界周围使用了一个`MarginContainer`，"
-"后面跟着一个`HBoxContainer`来管理我们的两个列。这两个条在一个`VBoxContainer`"
-"中堆叠在一起。我们还需要在右边一列最后一个`HBoxContaine`来将炸弹和卢比计数器"
-"并排放置。"
+"这样可以更容易地嵌套容器：我们在屏幕边框周围有一些边距，使用"
+"``MarginContainer``，然后是``HBoxContainer``来管理我们的两列。这两个条"
+"在“VBoxContainer”中叠加在一起。我们需要在右栏中放置一个“HBoxContainer”，将炸"
+"弹和翠绿计数器并排放置。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
@@ -7168,7 +7129,6 @@ msgstr ""
 "`HBoxContainer`节点。这个将包含左边的两个栏，并将它们与右边的两个柜台分开。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
-#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
 "``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
@@ -7176,10 +7136,10 @@ msgid ""
 "``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
 "containers, we have the base for our GUI scene."
 msgstr ""
-"我们想要在`HBoxContainer`中垂直堆叠栏。添加一个`VBoxContainer`作为`GUI`的子元"
-"素，并将其命名为`Bars`。再次选择父`HBoxContainer`，这一次，添加另一个"
-"`HBoxContainer`作为它的子元素。称之为`Counters(计数器)`。有了这四个容器，我们"
-"就有了GUI场景的基础。"
+"我们想在``HBoxContainer``中垂直堆叠条形。添加一个``VBoxContainer``作为"
+"``HBoxContainer``的子容器，并将其命名为``Bars``。再次选择父级"
+"``HBoxContainer``，这次添加另一个``HBoxContainer``作为它的子容器。称之"
+"为“Counters”。有了这四个容器，我们就有了GUI场景的基础。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
@@ -7331,7 +7291,6 @@ msgstr ""
 "开"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
-#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -7344,7 +7303,7 @@ msgid ""
 "Resize the node horizontally, so it takes the right half of the "
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
-"选择 ``Title`` ，在属性面板中，改变它的`Stretch Mode伸展模式`属性为`Keep "
+"在属性面板中选择 `Title`，改变它的`Stretch Mode伸展模式`属性为`Keep "
 "Centered`。接下来，在属性面板中找到`Rect`类别，并将`Size`属性更改为(50,40)，"
 "使其只接受背景的左半部分。接下来，选择`Number`节点。在视图中，单击`Layout布局"
 "`菜单并单击`Full Rect完整矩形`。节点将调整大小以适应`Background背景`。前往属"
@@ -7456,17 +7415,15 @@ msgstr ""
 "设置。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
-#, fuzzy
 msgid "Design the bomb and emerald counters"
-msgstr "设计炸弹和卢比计数器"
+msgstr "设计炸弹和翠绿计数器"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
-#, fuzzy
 msgid ""
 "The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
-"炸弹和卢比计数器就像条形栏的`Count 计数`节点。我们将复制它并将其用作模板。"
+"炸弹和翠绿计数器就像条形栏的`Count 计数`节点。我们将复制它并将其用作模板。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
 msgid ""
@@ -7579,7 +7536,6 @@ msgstr ""
 "正常。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
-#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
 "so, we need to set the ``Bars`` container take all the available horizontal "
@@ -7588,10 +7544,10 @@ msgid ""
 "``Bars`` node should resize and push the counter to the right side of the "
 "screen."
 msgstr ""
-"让我们将`Counters`锚定到视图的右边缘。要做到这一点，我们需要设置`bar`容器，它"
-"可以使用所有可用的水平空间。选择`bar`节点并向下滚动到`Size Flags`类别。在"
-"`Horizontal`类别中，检查`Expand`值。`bar`节点应该调整大小并将计数器推到屏幕右"
-"侧。"
+"让我们将`Counters`锚定到视图的右边缘。要做到这一点，我们需要设置`Bars`容器，"
+"它可以使用所有可用的水平空间。选择`Bars`节点并向下滚动到`Size Flags`类别。在"
+"`Horizontal`类别中，检查`Expand`值。`Bars`节点应该调整大小并将计数器推到屏幕"
+"右侧。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:331
 msgid ""
@@ -7616,7 +7572,6 @@ msgstr ""
 "变量，那就太好了。Godot让我们用继承的场景来做这个。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
-#, fuzzy
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
@@ -7625,13 +7580,12 @@ msgid ""
 "the scene as ``Bar.tscn``. You should see the node branch turn it to a "
 "single ``Bar`` node."
 msgstr ""
-"让我们将`Counter`和`Bar`两个分支都保存为单独的场景，我们将减少它们，以创建"
+"让我们将`Counter`和`Bar`两个分支都保存为单独的场景，我们将缩减它们，以创建"
 "`LifeBar`、`EnergyBar`、`BombCounter`和`smashing - ounter`。选择"
 "`Bar`HBoxContainer。右键点击它，点击`Save Branch as Scene 保存分支为场景`。保"
 "存场景为`Bar.tscn`。您应该看到节点分支将它转换为一个`Bar`节点。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
-#, fuzzy
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
@@ -7640,13 +7594,12 @@ msgid ""
 "into the active one. Right click on any node in the Scene dock and select "
 "``Save Branch as Scene`` or ``Merge from Scene``."
 msgstr ""
-"场景是节点树。最上面的节点是树的 **根** ，层次结构底部的子节点是 **叶** 。除"
-"根节点之外的任何节点以及一个以上的子节点都是 **分支** 。我们可以将节点分支封"
-"装到单独的场景中，或者从其他场景加载并合并到活动场景中。右键点击场景面板中的"
-"任何节点，选择`Save Branch as Scene`或`Merge from Scene`。"
+"场景是节点树。最上面的节点是树的 **root根** ，层次结构底部的子节点是 **leaves"
+"叶** 。除根节点之外的任何节点以及一个以上的子节点都是 **branch分支** 。我们可"
+"以将节点分支封装到单独的场景中，或者从其他场景加载并合并到活动场景中。右键点"
+"击场景面板中的任何节点，选择`Save Branch as Scene`或`Merge from Scene`。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
-#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -7666,7 +7619,6 @@ msgid "With no extra changes, our Bar is ready to use"
 msgstr "没有额外的改变，我们的条形栏准备使用"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
-#, fuzzy
 msgid "Use scene inheritance to create the remaining elements"
 msgstr "使用场景继承来创建剩余的元素"
 
@@ -7691,7 +7643,6 @@ msgstr ""
 "继承的场景帮助我们保持GUI场景的干净。最后，每个UI组件只有容器和一个节点。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
-#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -7701,11 +7652,11 @@ msgid ""
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
-"在继承的场景中，除了属性面板的名称之外，还可以更改属性面板中每个节点的任何属"
-"性。如果您修改并保存父场景，所有继承的场景都会更新以反映更改。如果在继承的场"
-"景中更改一个值，它总是会覆盖父元素的属性。它对ui很有用，因为它们通常需要相同"
-"元素的变体。通常，在UI设计中，按钮、面板等共享一个共同的基本样式和交互。我们"
-"不想手工将它复制到所有的变体中。"
+"在继承的场景中，除了名称之外，您还可以更改检查器中每个节点的任何属性。 如果修"
+"改并保存父场景，则所有继承的场景都会更新以反映更改。 如果更改继承场景中的值，"
+"它将始终覆盖父项的属性。 它对UI很有用，因为它们通常需要相同元素的变体。 通"
+"常，在UI设计中，按钮，面板等共享共同的基本样式和交互。 我们不希望手动将其复制"
+"到所有变体。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
 msgid ""
@@ -7913,9 +7864,8 @@ msgstr ""
 "LifeBar的计数节点都是100像素宽，因此两种量规都可以完美地对齐。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-#, fuzzy
 msgid "Prepare the bomb and emerald counters"
-msgstr "准备炸弹和卢比计数器"
+msgstr "准备炸弹和翠绿计数器"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
 msgid ""
@@ -7933,7 +7883,6 @@ msgid "The bomb counter is the same as the original Counter scene"
 msgstr "炸弹计数器与原计数器场景相同"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``EmeraldCounter`` and save the scene as "
@@ -7946,17 +7895,17 @@ msgid ""
 "the keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
-"转到`Scene -> New Inherited Scene`，再次选择`Counter.tscn`。将根节点重命名为"
-"`ecounter`，并将场景保存为`ecounter .tscn`。对于这个，我们主要需要把炸弹图标"
-"换成卢比图标。在文件系统选项卡中，拖动这个`rupees_icon.png`到`Icon``node's` "
-"`Texture`槽。`Icon`已经锚定在`Background`节点的右边缘，所以我们可以改变它的位"
-"置，它会缩放和重新定位，用`RupeeCounter`。将卢比图标向右向下移动一点。使用键"
-"盘上的箭头键来推动它的位置。保存，所有UI元素都完成了。"
+"再次转到``Scene  - > New Inherited Scene``并再次选择``Counter.tscn``。 重命名"
+"根节点``EmeraldCounter``并将场景保存为``EmeraldCounter.tscn``。 对于这个，我"
+"们主要需要用祖母绿图标替换炸弹图标。 在FileSystem选项卡中，将``emeralds_icon."
+"png``拖到``Icon``节点的``Texture``槽中。 ``Icon``已经锚定到``Background``节点"
+"的右边缘，所以我们可以改变它的位置，它将使用``EmeraldCounter``容器缩放和重新"
+"定位。 将祖母绿图标向右和向下移动一点。 使用键盘上的箭头键轻推其位置。 保存，"
+"完成了所有UI元素。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The emerald counter should look something like this"
-msgstr "卢比计数器应该是这样的"
+msgstr "翠绿计数器看起来应该是这样的"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
@@ -7979,20 +7928,18 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "生命条和能量条自动对齐"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
-#, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
 "scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
-"现在，将`BombCounter.tscn`和`RupeeCounter.tscn`场景拖放到`Counters`节点上。它"
-"们会自动调整大小。"
+"现在，将``BombCounter.tscn``和``EmeraldCounter.tscn``场景拖放到``Counters``节"
+"点上。 他们会自动调整大小。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
 msgid "The nodes resize to take all the available vertical space"
 msgstr "节点调整大小以获取所有可用的垂直空间"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
-#, fuzzy
 msgid ""
 "To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -8001,10 +7948,10 @@ msgid ""
 "property, and check ``Shrink Center`` so the container centers inside the "
 "``HBoxContainer``."
 msgstr ""
-"为了让`RueCeopter`和`BobCuffe`使用我们在`Counter.tscn`中定义的大小，我们需要"
-"在`Counters`容器上改变`Size Flags`。选择`Counters`节点并展开属性面板中的"
-"`Size Flags`部分。取消`Vertica`属性的`Fill`标记，并检查`Shrink Center`，以便"
-"容器在“HBBOX容器”内。"
+"让``EmeraldCounter``和``BombCounter``使用我们在``Counter.tscn``中定义的大小，"
+"我们需要更改``Counters``容器上的``Size Flags``。 选择``Counters``节点并展开"
+"Inspector中的``Size Flags``部分。 取消选中``Vertical``属性的``Fill``标签，勾"
+"选``Shrink Center``，使容器居中于``HBoxContainer``。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
 msgid "Now both counters have a decent size"
@@ -8017,7 +7964,6 @@ msgid ""
 msgstr "更改`Counters`容器的`Min Size`属性，以控制计数器背景的高度。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
-#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -8579,7 +8525,6 @@ msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot为您编写回调方法并将您带到它"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
-#, fuzzy
 msgid ""
 "Inside the parentheses after the function name, add a ``player_health`` "
 "argument. When the player emits the ``health_changed`` signal, it will send "
@@ -9427,8 +9372,8 @@ msgid ""
 "returns the root node of the scene. You can then add it as a child of any "
 "other node."
 msgstr ""
-"此方法在场景层次结构中创建节点, 对其进行配置, 并返回场景的根节点。然后, 您可"
-"以将其添加为任何其他节点的子节点。"
+"此方法在场景层级中创建节点, 对其进行配置, 并返回场景的根节点。然后, 您可以将"
+"其添加为任何其他节点的子节点。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
 #, fuzzy
@@ -10379,12 +10324,16 @@ msgstr ""
 "的场景。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
+#, fuzzy
 msgid ""
 "Using :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, the "
 "second function will only run once all code from the current scene has "
 "completed. Thus, the current scene will not be removed while it is still "
 "being used (i.e. its code is still running)."
 msgstr ""
+"使用：ref:`object.call_deferred（）<class_object_method_call_deferred>`，第二"
+"个函数将仅在当前场景中的所有代码完成后运行。因此，当前场景在该函数被调用时"
+"（即其代码仍在运行）不会被删除。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 msgid ""
@@ -13430,8 +13379,7 @@ msgstr "*setter* 或者 *getter* 函数都可省略:"
 msgid ""
 "Get/Setters are especially useful when exporting variables to editor in tool "
 "scripts or plugins, for validating input."
-msgstr ""
-"在工具脚本或插件中， Get/Setters可将变量导出到编辑器，这可以用于验证输入。"
+msgstr "在工具脚本或插件里导出变量到编辑器时，验证输入Get/Setters格外好用。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1412
 msgid ""
@@ -16979,12 +16927,17 @@ msgid ""
 "does not allow declaring them in namespaces. Most global constants were "
 "moved to their own enums."
 msgstr ""
+"全局函数和某些常量必须移动到类中, 因为C#不允许在命名空间中声明它们。大多数全"
+"局常量都被移动到它们自己的枚举中。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:24
+#, fuzzy
 msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
+"全局常量被移动到它们自己的枚举中。例如, \"ERR _ *\" 常量被移动到 \"Error\" 枚"
+"举。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
 #, fuzzy
@@ -16993,27 +16946,32 @@ msgstr "空间节点"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``SPKEY``"
-msgstr ""
+msgstr "\"SPKEY\""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
+#, fuzzy
 msgid "``GD.SpKey``"
-msgstr ""
+msgstr "\"GD\"SpKey ' '"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
+#, fuzzy
 msgid "``TYPE_*``"
-msgstr ""
+msgstr "''Type_*''"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
+#, fuzzy
 msgid "``Variant.Type`` enum"
-msgstr ""
+msgstr "\"变量.类型\"枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
+#, fuzzy
 msgid "``OP_*``"
-msgstr ""
+msgstr "“op_*”"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
+#, fuzzy
 msgid "``Variant.Operator`` enum"
-msgstr ""
+msgstr "\"变体.运算符\" 枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
 #, fuzzy
@@ -19367,9 +19325,9 @@ msgid ""
 "use several orders of magnitude more text than applications, so they must "
 "support efficient methods for dealing with loads of multilingual text."
 msgstr ""
-"在普通的桌面或移动应用程序中，国际化文本通常位于资源文件(或用于GNU内容的 .po "
-"文件)中。 然而，游戏可以使用比应用程序多几个数量级的文本，因此它们必须支持处"
-"理多语言文本加载的有效方法。"
+"在常规桌面或移动应用程序中，国际化文本通常位于资源文件中（或GNU文件的.po文"
+"件）。但是，游戏可以使用比应用程序多几个数量级的文本，因此它们必须支持处理多"
+"语言文本的有效方法。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
 msgid ""
@@ -19381,7 +19339,7 @@ msgid ""
 "complete nightmare if working with many languages at the same time."
 msgstr ""
 "有两种方法来生成多语言的游戏和应用程序。 两者都基于键值对系统。 第一种是使用"
-"其中一种语言作为关键词(通常是英语)，第二种是使用特定的标识符。 如果首先用英语"
+"其中一种语言作为“键”（通常是英语），第二种是使用特定的标识符。 如果首先用英语"
 "发布游戏，后来以其他语言发布游戏，则第一种方法可能更易于开发，但如果同时使用"
 "多种语言则完全是一场噩梦。"
 
@@ -19413,10 +19371,10 @@ msgid ""
 "arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
 "as follows:"
 msgstr ""
-"为了完成图片并为翻译提供有效的支持，Godot 有一个特殊的导入器，可以读取CSV文"
-"件。 所有电子表格编辑器(无论是 Libreoffice，Microsoft Office，Google Docs等)"
-"都可以导出为这种格式，因此唯一的要求是这些文件有特殊的安排。 CSV 文件必须以 "
-"UTF-8 编码格式保存，格式如下:"
+"为了完成这副图景并提供高效的翻译支持，Godot 设计了一个特殊的导入器，可以读取"
+"CSV文件。 所有电子表格编辑器（无论是 Libreoffice，Microsoft Office，Google "
+"Docs等）都可以导出为这种格式，因此唯一的要求是这些文件有特殊的安排。 CSV 文件"
+"必须以 UTF-8 编码格式保存，且具备如下格式："
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
 msgid "<lang1>"
@@ -21742,18 +21700,15 @@ msgid ""
 msgstr "不建议使用 WebGL 2 ，因为它预期会在不更换的情况下从 Godot 中删除。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:33
-#, fuzzy
 msgid ""
 "WebGL 2 is not supported in all browsers. **Firefox** and **Chromium** "
 "(Chrome, Opera) are the most popular supported browsers, **Safari** and "
 "**Edge** do not work. On **iOS**, all browsers are based on WebKit (i.e. "
 "Safari), so they will also not work."
 msgstr ""
-"HTML5导出允许将在Godot Engine中制作的游戏发布到浏览器。 这需要在用户的浏览器"
-"中支持最近的技术 `WebAssembly <https://webassembly.org/>`__ 和 `WebGL 2.0 "
-"<https://www.khronos.org/webgl/>`__ 。 ** Firefox ** 和 **Chromium** "
-"(Chrome，Opera)是最受欢迎的支持浏览器， **Safari** 和 **Edge** 尚不起作用。 "
-"在 **iOS** 上，所有浏览器必须基于WebKit(即Safari)，因此它们也不起作用。"
+"并非所有浏览器都支持WebGL 2。**Firefox**和**Chromium**（Chrome，Opera）是支持"
+"WebGL 2的广受欢迎的浏览器，而** Safari **和** Edge **无法正常工作。 在**iOS**"
+"系统上，所有浏览器都基于WebKit（即Safari），因此它们也无法正常工作。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
 msgid ""
@@ -21803,7 +21758,6 @@ msgid "Full screen and mouse capture"
 msgstr "全屏和鼠标捕获"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
-#, fuzzy
 msgid ""
 "Browsers do not allow arbitrarily **entering full screen**. The same goes "
 "for **capturing the cursor**. Instead, these actions have to occur as a "
@@ -21812,9 +21766,10 @@ msgid ""
 "``_unhandled_input``. Querying the :ref:`class_Input` singleton is not "
 "sufficient, the relevant input event must currently be active."
 msgstr ""
-"浏览器不允许任意 **随意进入全屏** 。 **捕获光标** 也是如此。 相反，这些操作必"
-"须作为对JavaScript输入事件的响应而发生。 在Godot中，通过在输入回调中输入全"
-"屏，例如 ``_input`` 或 ``_unhandled_input`` ，最容易做到这一点。"
+"浏览器不允许任意**进入全屏**。 **捕获光标**也是如此。 相反，这些操作必须作为"
+"对JavaScript输入事件的响应而发生。 在Godot中，这意味着从按下的输入事件回调中"
+"进入全屏，例如``_input``或``_unhandled_input``。 查询：参考：`类_输入`仅有单"
+"例是不够的，相关的输入事件当前必须是活动的。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:69
 msgid ""
@@ -23171,35 +23126,33 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."
-msgstr ""
+msgstr "编辑器和运行时可访问。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:119
-#, fuzzy
 msgid "Displays inheritance relationships in full."
-msgstr "不允许多重继承。"
+msgstr "显示全部继承关系。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:121
 msgid ""
 "Creates the node with the script, but can also change types or extend the "
 "type from the editor."
-msgstr ""
+msgstr "使用脚本创建节点，但也可以从编辑器更改或扩展类型。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:124
 msgid ""
 "Editor is aware of inheritance relationships between scripts, script "
 "classes, and engine C++ classes."
-msgstr ""
+msgstr "编辑器知道脚本、脚本类和引擎c++类之间的继承关系。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:129
 msgid ""
 "Engine developers must add support for languages manually (both name "
 "exposure and runtime accessibility)."
-msgstr ""
+msgstr "引擎开发人员必须手动添加对语言的支持(包括名称公开和运行时的可访问性)。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
-#, fuzzy
 msgid "Godot 3.1+ only."
-msgstr "在Godot 3.1中:"
+msgstr "仅适用于Godot 3.1版本。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
 msgid ""
@@ -23207,6 +23160,8 @@ msgid ""
 "scripting languages. Each scripting language must implement its own support "
 "for exposing this information."
 msgstr ""
+"编辑器扫描项目文件夹，并为所有脚本语言注册任何公开的名称。每种脚本语言都必须"
+"实现自己对公开此信息的支持。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:138
 msgid ""
@@ -23215,6 +23170,8 @@ msgid ""
 "script resource. Creating instances and accessing constants or static "
 "methods is viable from anywhere."
 msgstr ""
+"这两种方法都向创建对话框添加名称，特别是脚本类，还允许用户在不加载脚本资源的"
+"情况下访问类别名称。在任何地方都可以使用实例和访问常量或静态方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:143
 msgid ""
@@ -23223,16 +23180,17 @@ msgid ""
 "creating in-house tools for designers to use will find an easier time of "
 "things this way."
 msgstr ""
+"有了这些功能，人们或许希望他们的类型是没有场景的脚本，因为它给用户提供了易用"
+"性。通过这种方式，开发插件或为设计师创建内部工具将会更容易。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:148
 msgid ""
 "On the downside, it also means having to use largely imperative programming."
-msgstr ""
+msgstr "不足之处在于，这也意味着很大程度上必须使用命令式编程。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
-#, fuzzy
 msgid "In the end, the best approach is to consider the following:"
-msgstr "对于本文的其余部分，我们考虑以下场景:"
+msgstr "最后，最好的方法是考虑以下几点:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
 msgid ""
@@ -23242,6 +23200,9 @@ msgid ""
 "chances are that it should probably be a script, likely one with a custom "
 "name/icon."
 msgstr ""
+"如果希望创建一个基本工具，它将在几个不同的项目中重用，以及可能提供给不同技能"
+"水平的人使用。(包括那些不认为自己是个“程序员”的用户)，它很可能是一个脚本，有"
+"一个自定义名称/图标。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:160
 msgid ""
@@ -23249,6 +23210,8 @@ msgid ""
 "should always be a scene. Scenes are easier to track/edit and provide more "
 "security than scripts."
 msgstr ""
+"如果希望创建一个特定概念的游戏，那么它应该是一个场景。场景比脚本更容易跟踪/编"
+"辑，并提供更多的安全性。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:164
 msgid ""
@@ -23256,10 +23219,12 @@ msgid ""
 "this in 3.1 by declaring a script class and giving it a scene as a constant. "
 "The script becomes, in effect, a namespace:"
 msgstr ""
+"如果有人想命名一个场景，他们仍然可以在3.1版本中，通过声明一个脚本类并给它一个"
+"场景作为常量来实现这一点。实际上，该脚本变成了一个命名空间:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:4
 msgid "Autoloads versus internal nodes"
-msgstr ""
+msgstr "自动加载与内部节点"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:6
 msgid ""
@@ -23295,6 +23260,8 @@ msgid ""
 "SFX has errors or doesn't have an AudioStreamPlayer available, everything "
 "will break."
 msgstr ""
+"**全局状态**:一个对象现在负责所有对象的数据。如果音效有错误或没有可用的音频流"
+"播放器，一切都会崩溃。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:29
 msgid ""
@@ -38170,16 +38137,15 @@ msgstr ""
 "并尝试一下！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:609
-#, fuzzy
 msgid ""
 "Notice how we're not limiting the amount of ammo you can carry. To limit the "
 "amount of ammo each weapon can carry, you need to add an additional variable "
 "to each weapon's script, and then clamp the weapon's ``spare_ammo`` variable "
 "after adding ammo in ``add_ammo``."
 msgstr ""
-"请注意我们如何限制您可携带的弹药数量。 为了限制每个武器可以携带的弹药数量，您"
-"需要为每个武器的脚本添加一个额外的变量，然后在“add_ammo”中添加弹药后夹住武器"
-"的 ``spare_ammo`` 变量。"
+"要注意的是，我们并没有对你携带弹药的数量进行限制。如果想要限制每件武器可携带"
+"的弹药数量，您需要在每件武器的脚本内添加一个额外变量，然后限定武器的“备用弹"
+"药”（spare_ammo）变量后，在“添加弹药”（add_ammo）变量内添加弹药。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:613
 msgid "Adding breakable targets"
@@ -41831,10 +41797,9 @@ msgid "Now you have a fully working single player FPS!"
 msgstr "现在您有一个完全工作的单人FPS！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1000
-#, fuzzy
 msgid ""
 "At this point, you have a good base to build more complicated FPS games."
-msgstr "在这一点上，您有一个很好的基础来构建更复杂的FPS游戏。"
+msgstr "在此之上，你已打下构建更复杂的FPS游戏的良好基础。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1004
 msgid ""
@@ -41845,14 +41810,13 @@ msgstr ""
 "Godot_FPS_Finished.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1006
-#, fuzzy
 msgid ""
 "The finished project source files contain the same code, just written in a "
 "different order. This is because the finished project source files are what "
 "the tutorial is based on."
 msgstr ""
-"完成的项目源文件包含完全相同的代码，只是以不同的顺序编写。 这是因为完成的项目"
-"源文件是教程所基于的。"
+"完成的项目源文件包含相同的代码，只是书写顺序稍有不同。因为本教程的撰写基于已"
+"完成的项目源文件。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1009
 msgid ""
@@ -41881,14 +41845,13 @@ msgid ""
 msgstr "**请注意，Github中的代码可能与文档中的教程同步也可能不同步**。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1019
-#, fuzzy
 msgid ""
 "The code in the documentation is likely better managed and/or more up to "
 "date. If you are unsure of which to use, use the project(s) provided in the "
 "documentation, as they are maintained by the Godot community."
 msgstr ""
-"文档中的代码可能更好地管理和/或更新。 如果您不确定使用哪个项目，请使用文档中"
-"提供的项目，因为它们由Godot社区维护。"
+"文档中的代码可能会随时更新至最新版。如果您不确定使用哪个，请使用文档中提供的"
+"项目，因为它们是由Godot社区负责维护的。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1022
 #, fuzzy
@@ -42039,8 +42002,12 @@ msgid ""
 "the motion so that you can tweak the animation in editor and see the results "
 "in real time, without the shader having to recompile."
 msgstr ""
+"有关动画的所有代码都将在顶点着色器中，并有一致的控制运动量。 我们统一来控制运"
+"动的强度，以便您可以在编辑器中调整动画并实时查看结果，而不需要着色器重新编"
+"译。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:48
+#, fuzzy
 msgid ""
 "All the motions will be made using cosine waves applied to ``VERTEX`` in "
 "model space. We want the vertices to be in model space so that the motion is "
@@ -42048,6 +42015,9 @@ msgid ""
 "will always be move the fish back and forth in its left to right direction, "
 "instead of on the ``x`` axis in the world orientation."
 msgstr ""
+"所有动作都将使用模型空间中应用于“VERTEX”的余弦波进行。 我们希望顶点位于模型空"
+"间中，以便运动始终相对于鱼的方向。 例如，从一侧到另一侧将始终在左右方向上来回"
+"移动鱼，而不是在世界方向上的“x”轴上。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:53
 msgid ""
@@ -42062,11 +42032,12 @@ msgid ""
 "is rendered, all the vertices will move to the side by the amount of "
 "``cos(time)``."
 msgstr ""
+"我们将实施的第一项议案是左右运动。 它可以通过``TIME``的``cos``抵消``VERTEX."
+"x``来制作。 每次渲染网格时，所有顶点都会移动到“cos（时间）”的数量。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:69
-#, fuzzy
 msgid "The resulting animation should look something like this:"
-msgstr "卢比计数器应该是这样的"
+msgstr "生成的动画看起来是这样的："
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:73
 msgid ""
@@ -42074,10 +42045,13 @@ msgid ""
 "to do is multiply ``VERTEX`` by a rotation matrix for it to rotate around "
 "the center of the fish."
 msgstr ""
+"接下来，我们添加轴心点。 因为鱼以（0, 0）为中心，我们所要做的只是将“VERTEX”乘"
+"以旋转矩阵，使其围绕鱼的中心旋转。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:76
+#, fuzzy
 msgid "We construct a rotation matrix like so:"
-msgstr ""
+msgstr "我们构造一个旋转矩阵, 如下所示:"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:85
 msgid ""
@@ -44853,12 +44827,10 @@ msgid "For more information, read :ref:`doc_physics_introduction`"
 msgstr "有关更多信息，请阅读 :ref:`doc_physics_introduction`"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
-#, fuzzy
 msgid "Kinematic character (2D)"
-msgstr "运动学角色(2D)"
+msgstr "动力学角色(二维)"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:9
-#, fuzzy
 msgid ""
 "Yes, the name sounds strange. \"Kinematic Character\". What is that? The "
 "reason for the name is that, when physics engines came out, they were called "
@@ -44870,21 +44842,20 @@ msgid ""
 "of skill and understanding of physics engines (or a lot of patience with "
 "trial and error)."
 msgstr ""
-"是的，名字听起来很奇怪。 “运动学角色”。 那是什么？ 原因是当物理引擎问世时，它"
+"是的，名字听起来很奇怪。 “动力学角色”。 那是什么？ 原因是当物理引擎问世时，它"
 "们被称为“动力”引擎(因为它们主要处理碰撞响应)。 人们做了许多尝试，想使用动力引"
 "擎创建一个角色控制器，但它并不像看起来那么容易。 Godot拥有您能找到的最好的动"
-"态角色控制器(可以在 2d/platformer 这个演示中查看)，但使用它需要相当高水平的技"
+"态角色控制器(可以在 二维/游戏平台这个演示中查看)，但使用它需要相当高水平的技"
 "能和对物理引擎的理解(或者对试验和试错有足够的耐心)。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:19
-#, fuzzy
 msgid ""
 "Some physics engines, such as Havok seem to swear by dynamic character "
 "controllers as the best option, while others (PhysX) would rather promote "
 "the kinematic one."
 msgstr ""
 "像Havok这样的物理引擎似乎认为动态角色控制器是最好的选择，而其他物理引擎"
-"(PhysX)则更愿意推广Kinematic。"
+"(PhysX)则更愿意推广动力学。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:23
 msgid "So, what is the difference?:"
@@ -44925,15 +44896,14 @@ msgstr ""
 "其他物理对象交互(除非在代码中手动完成)。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:42
-#, fuzzy
 msgid ""
 "This short tutorial will focus on the kinematic character controller. "
 "Basically, the old-school way of handling collisions (which is not "
 "necessarily simpler under the hood, but well hidden and presented as a nice "
 "and simple API)."
 msgstr ""
-"这个简短的教程将重点介绍运动角色控制器。 基本上，oldschool处理碰撞的方式(在引"
-"擎盖下不一定简单，但隐藏得很好，并作为一个漂亮和简单的API呈现)。"
+"这个简短的教程将重点介绍动力学角色控制器。基本上，传统处理冲突的方法(它并不一"
+"定在底层更简单，但隐蔽性很好，并且呈现为一个简洁漂亮的API)。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:48
 msgid "Physics process"
@@ -44964,16 +44934,16 @@ msgstr ""
 "景:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:87
-#, fuzzy
 msgid ""
 "You'll notice that there's a warning icon next to our CollisionShape2D node; "
 "that's because we haven't defined a shape for it. Create a new CircleShape2D "
 "in the shape property of CollisionShape2D. Click on <CircleShape2D> to go to "
 "the options for it, and set the radius to 30:"
 msgstr ""
-"您会注意到我们的CollisionShape2D节点旁边有一个警告图标，这是因为我们没有为它"
-"定义形状。 在CollisionShape2D的shape属性中创建一个新的CircleShape2D。 单击"
-"<CircleShape2D>转到它的选项，并将半径设置为30:"
+"您会注意到，在\"二维碰撞形状\"（CollisionShape2D）节点旁边有一个警告图标；那"
+"是因为我们还没有定义它的形状。在\"二维碰撞形状\"（CollisionShape2D）的形状属"
+"性中创建一个新的二维圆形形状（CircleShape2D）。点击<二维圆形形状"
+">（CircleShape2D）进入选项，将半径设置为30:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:94
 #, fuzzy
@@ -45071,9 +45041,8 @@ msgstr ""
 "kinematic_character中找到。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:4
-#, fuzzy
 msgid "SoftBody"
-msgstr "StaticBody2D"
+msgstr "软体"
 
 #: ../../docs/tutorials/physics/soft_body.rst:6
 #, fuzzy
@@ -45086,14 +45055,13 @@ msgstr ""
 "以用于模拟布料或创建更逼真的角色。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:10
-#, fuzzy
 msgid "Basic set-up"
-msgstr "基本语法:"
+msgstr "基本结构"
 
 #: ../../docs/tutorials/physics/soft_body.rst:12
 msgid ""
 "A :ref:`SoftBody <class_SoftBody>` node is used for soft body simulations."
-msgstr ""
+msgstr "一个软体节点用于模拟柔软的物体。参考：`软体<类_软体>`。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:14
 msgid "We will create a bouncy cube to demonstrate the setup of a soft body."
@@ -45105,12 +45073,16 @@ msgid ""
 "``Softbody`` node. Add a ``CubeMesh`` in the ``mesh`` property of the node "
 "in the inspector and increase the subdivision of the mesh for simulation."
 msgstr ""
+"创建一个以“Spatial”节点为根的新场景。然后，创建一个“Softbody”节点。在属性检查"
+"器中的节点的”mesh”属性中添加一个”CubeMesh”，并增加细分网格以进行仿真模拟。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:20
 msgid ""
 "Set the parameters to obtain the type of soft body you aim for. Try to keep "
 "the ``Simulation Precision`` above 5, otherwise, the soft body may collapse."
 msgstr ""
+"设置参数以获得您想要的软体类型。尽量保持“模拟精度”（Simulation Precision）的"
+"数值高于5，否则，该软体结构可能会瓦解。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:24
 msgid ""
@@ -45119,43 +45091,46 @@ msgid ""
 "more than 0, the softbody will fly around like a plastic bag under strong "
 "wind."
 msgstr ""
+"小心处理一些参数，因为改动某些数值会导致奇怪的结果。 例如，如果形状未完全封闭"
+"并且您将压力设置为大于0，则软体将如同在强风下的塑料袋一样飞舞。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:26
-#, fuzzy
 msgid "Play the scene to view the simulation."
-msgstr "播放适当的动画。"
+msgstr "播放该场景以查看模拟结果。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:28
 msgid ""
 "To improve the simulation's result, increase the ``Simulation Precision``, "
 "this will give significant improvement at the cost of performance."
 msgstr ""
+"为了改善模拟结果，增加“模拟精度”（Simulation Precision），会大幅度增加性能成"
+"本。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:31
-#, fuzzy
 msgid "Cloak simulation"
-msgstr "加载动画"
+msgstr "斗篷模拟"
 
 #: ../../docs/tutorials/physics/soft_body.rst:33
 msgid "Let's make a cloak in the Platformer3D demo."
-msgstr ""
+msgstr "我们将在三维平台游戏演示中制作一个斗篷。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:35
-#, fuzzy
 msgid ""
 "You can download the Platformer3D demo on `GitHub <https://github.com/"
 "godotengine/godot-demo-projects/tree/master/3d/platformer>` or `the Asset "
 "Library <https://godotengine.org/asset-library/asset/125>`_."
 msgstr ""
-"您可以在 `GitHub <https://github.com/godotengine/godot-demo-projects/tree/"
-"master/3d/platformer>`_ 上下载Platformer3D演示或使用 `Asset Library <https://"
-"godotengine.org/asset-library/asset/125>`_ 。"
+"您可以在`GitHub <https://github.com/godotengine/godot-demo-projects/tree/"
+"master/3d/platformer>` 或者`资源商店<https://godotengine.org/asset-library/"
+"asset/125>`内下载这款三维平台游戏演示."
 
 #: ../../docs/tutorials/physics/soft_body.rst:37
 msgid ""
 "Open the ``Player`` scene, add a ``SoftBody`` node and assign a "
 "``PlaneMesh`` to it."
 msgstr ""
+"打开“玩家”（Player）场景，添加一个“软体”（SoftBody）节点并为其指定一个“平面网"
+"格”（PlaneMesh）。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:39
 msgid ""
@@ -45163,16 +45138,21 @@ msgid ""
 "``Subdivide Width`` and ``Subdivide Depth`` to 5. Adjust the ``SoftBody``'s "
 "position. You should end up with something like this:"
 msgstr ""
+"打开“平面网格”（PlaneMesh）属性并设置大小（x：0.5 y：1）然后将“细分宽"
+"度”（Subdivide Width）和“细分深度”（Subdivide Depth）设置为5。调整“软"
+"体”（SoftBody）的位置。您应该看到如下所示："
 
 #: ../../docs/tutorials/physics/soft_body.rst:43
 msgid "Subdivision generates a more tessellated mesh for better simulations."
-msgstr ""
+msgstr "细分会生成更细密的网格，以便更好的模拟。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:45
 msgid ""
 "Add a :ref:`BoneAttachment <class_BoneAttachment>` node under the skeleton "
 "node and select the Neck bone to attach the cloak to the character skeleton."
 msgstr ""
+"在骨架节点下添加：参考：`附属骨骼<类_附属骨骼>`节点，然后选择颈部（Neck）骨"
+"骼，将斗篷附加到角色骨架。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:47
 msgid ""
@@ -48041,7 +48021,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:365
 msgid "2D Skeletal deform"
-msgstr ""
+msgstr "二维骨骼变形"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:367
 msgid ""
@@ -48049,16 +48029,17 @@ msgid ""
 "to enhance this workflow and add more flexibility (single pieces can deform "
 "more organically instead of having to use many separate ones)."
 msgstr ""
+"从Godot 3.1版本开始支持2D骨骼变形，这可以用来增强工作流和添加更多的灵活性（单"
+"个部件可以更有组织地变形，而不必使用许多单独的部件）。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:370
 msgid ""
 "This process is described in a :ref:`separate tutorial <doc_2d_skeletons>`."
-msgstr ""
+msgstr "这个过程在:参考:'单独教程<文档_二维骨骼>'中描述。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:4
-#, fuzzy
 msgid "2D skeletons"
-msgstr "骨架"
+msgstr "二维骨骼"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:9
 msgid ""
@@ -48067,6 +48048,8 @@ msgid ""
 "function is not used as often, it's difficult to find mainstream software "
 "aimed for this."
 msgstr ""
+"当使用三维时，骨骼变形在角色和生物中很常见，大多数三维建模软件都支持这种变"
+"形。对于二维，由于这个函数不常用，很难找到主流软件来实现这一点。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:13
 msgid ""
@@ -48074,40 +48057,44 @@ msgid ""
 "Dragonbones. From Godot 3.1 onwards, though, this functionality is supported "
 "built-in."
 msgstr ""
+"一般选择在第三方软件中创建动画，如Spine或Dragonbones。不过，从Godot 3.1版本开"
+"始，就已经内置此功能。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:16
 msgid ""
 "Why would you want to do skeletal animations directly in Godot? The answer "
 "is that there are many advantages to it:"
-msgstr ""
+msgstr "为什么要在Godot中直接处理骨骼动画？答案是这样做有很多好处："
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:18
 msgid ""
 "Better integration with the engine, so less hassle importing and editing "
 "from an external tool."
-msgstr ""
+msgstr "能更好地与引擎集成，从而减少使用外部工具导入和编辑的麻烦。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:19
 msgid ""
 "Ability to control particle systems, shaders, sounds, call scripts, colors, "
 "transparency, etc. in animations."
-msgstr ""
+msgstr "能够控制粒子系统，着色器，声音，调用脚本，颜色，透明度等动画。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:20
 msgid ""
 "The built-in skeletal system in Godot is very efficient and designed for "
 "performance."
-msgstr ""
+msgstr "Godot内置的骨骼系统非常高效，并且是为性能而设计的。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:22
 msgid "The following tutorial will, then, explain 2D skeletal deformations."
-msgstr ""
+msgstr "接下来的教程将讲解二维骨骼变形。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:27
 msgid ""
 "Before starting, it is advised to go through the :ref:`doc_cutout_animation` "
 "tutorial to gain a general understanding of animating within Godot."
 msgstr ""
+"在开始之前，建议您阅读:参考:'文档_剪纸动画'教程，以便对Godot的动画系统有个大"
+"致的了解。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:30
 msgid ""
@@ -48115,6 +48102,8 @@ msgid ""
 "character. Download it from :download:`gBot_pieces.png <img/gBot_pieces."
 "png>` or save the image below."
 msgstr ""
+"在本教程中，我们将使用单张图片来构建我们的角色。从这里下载:'gBot_pieces."
+"png<img/gBot_pieces.png>'或保存下图。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:35
 msgid ""
@@ -48122,11 +48111,12 @@ msgid ""
 "`gBot_complete.png <img/gBot_complete.png>` to have a good reference for "
 "putting the different pieces together."
 msgstr ""
+"并且建议下载最终的角色图片:“gBot_complete.png < img / gBot_complete.png >”将"
+"不同部分放在一起，以便进行参考。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:41
-#, fuzzy
 msgid "Creating the polygons"
-msgstr "创建一个插件"
+msgstr "创建一个多边形"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:43
 msgid ""
@@ -48134,40 +48124,45 @@ msgid ""
 "character, you may want to use a ``KinematicBody2D``). For ease of use, an "
 "empty 2D node is created as a root for the polygons."
 msgstr ""
+"为您的模型创建一个新场景(如果它是一个动画角色，您可能需要使用“二维动力学物"
+"体”(KinematicBody2D))。为便于使用,创建一个空的二维节点作为该多边形的根节点。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:46
 msgid ""
 "Begin with a ``Polygon2D`` node. There is no need to place it anywhere in "
 "the scene for now, so simply create it like this:"
 msgstr ""
+"从“二维多边形”(Polygon2D)节点开始。现在不需要把它放在场景何处，所以简单创建如"
+"下:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:50
 msgid ""
 "Select it and assign the texture with the character pieces you have "
 "downloaded before:"
-msgstr ""
+msgstr "为您之前下载的角色部件选择并指定纹理:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:54
 msgid ""
 "Drawing a polygon directly is not advised. Instead, open the \"UV\" dialog "
 "for the polygon:"
-msgstr ""
+msgstr "不建议直接绘制多边形。而是打开该多边形的“UV”对话框:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:58
 msgid ""
 "Head over to the *Points* mode, select the pencil and draw a polygon around "
 "the desired piece:"
-msgstr ""
+msgstr "转到*点*模式，选择铅笔，在需要的区域绘制一个多边形:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:62
 msgid ""
 "Duplicate the polygon node, rename it properly, enter the \"UV\" dialog "
 "again and replace the old polygon with another one in the new desired piece."
 msgstr ""
+"复制该多边形节点并重命名,再次进入“UV”对话框，将旧多边形替换为新多边形。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:66
 msgid "Keep doing this until all pieces have been mapped."
-msgstr ""
+msgstr "重复这样的操作，直到所有部分都被映射。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:70
 msgid ""
@@ -48175,6 +48170,8 @@ msgid ""
 "in the original texture. This is because (by default) when you draw a "
 "polygon, the UV and points are the same."
 msgstr ""
+"您会注意到，节点的片段与它们在原始纹理中的布局相同。这是因为(默认情况下)绘制"
+"多边形时，UV和点是一样的。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:73
 msgid ""
@@ -48182,28 +48179,32 @@ msgid ""
 "There is no need to change pivots, so don't bother making sure rotation "
 "pivots for each piece are right; you can leave them be for now."
 msgstr ""
+"重新排列部件，建立角色。这个过程应该很快。没必要改变轴心，因此，不必费心确保"
+"每个部件的旋转轴心都正确；你可以暂时不用理会它们。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:78
 msgid ""
 "Ah, the visual order of the pieces is not correct yet, as some are covering "
 "wrong pieces. Rearrange the order of the nodes to fix this:"
 msgstr ""
+"啊，这些作品的视觉顺序还不正确，因为有些覆盖到错误的部分。重新排列节点的顺序"
+"来解决这个问题:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:82
 msgid ""
 "And there you go! It was definitely much easier than in the cutout tutorial."
-msgstr ""
+msgstr "恭喜你完成本节教程!它肯定比剪纸动画教程简单得多。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:85
-#, fuzzy
 msgid "Creating the skeleton"
-msgstr "完成骨架"
+msgstr "创建骨骼"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:87
 msgid ""
 "Create a ``Skeleton2D`` node as a child of the root node. This will be the "
 "base of our skeleton:"
 msgstr ""
+"创建一个“二维骨骼”(Skeleton2D)节点作为根节点的子节点。我们将其做为基础骨骼:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:91
 msgid ""
@@ -48211,10 +48212,12 @@ msgid ""
 "(usually skeletons start here). The bone will be pointing to the right, but "
 "you can ignore this for now."
 msgstr ""
+"创建一个“二维单根骨”(Bone2D)节点作为骨架的子节点。把它放在臀部(通常骨骼从这里"
+"开始建立)。单根骨会指向右边，但是现在你可以忽略这个。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:96
 msgid "Keep creating bones in hierarchy and naming them accordingly."
-msgstr ""
+msgstr "在层级结构中继续创建骨骼并依次命名它们。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:100
 msgid ""
@@ -48222,6 +48225,8 @@ msgid ""
 "short and pointing to the right. This is normal for bones without children. "
 "The length of *tip* bones can be changed with a property in the inspector:"
 msgstr ""
+"在这根链条的末端，会有一个*下巴*节点。它很短小，也指向右边。这根单根骨正常情"
+"况下没有子骨骼。*提示*单根骨的长度属性可以通过属性面板来改变:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:105
 msgid ""
@@ -48230,10 +48235,13 @@ msgid ""
 "Again, this is only really needed for tip bones as nodes with children don't "
 "usually need a length or a specific rotation."
 msgstr ""
+"在本例中，我们不需要旋转该单根骨(因为它恰好适合精灵图片下巴的角度)，如果你想"
+"更改的话，请随意。重复一遍,该单根骨仅仅起到提示作用，带有子节点的节点通常不需"
+"要长度或者特定的旋转。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:108
 msgid "Keep going and build the whole skeleton:"
-msgstr ""
+msgstr "继续构建整个骨骼:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:112
 msgid ""
@@ -48242,17 +48250,19 @@ msgid ""
 "and create a rest pose. This pose is the default one, you can come back to "
 "it anytime you want (which is very handy for animating):"
 msgstr ""
+"你会注意到，所有单根骨节点旁都有一个烦人的警告，提示你缺少休闲姿势。这意味着"
+"是时候设置一个了。转到“骨架”(skeleton)节点并创建一个休闲姿势。这个姿势是默认"
+"的，你可以随时回来修改(对于制作动画来说非常方便):"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:117
 msgid ""
 "The warnings will go away. If you modify the skeleton (add/remove bones) you "
 "will need to set the rest pose again."
-msgstr ""
+msgstr "警告消失了。如果你修改骨骼(添加/移除单根骨)，你需要重新设置休闲姿势。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:120
-#, fuzzy
 msgid "Deforming the polygons"
-msgstr "试试这个插件"
+msgstr "多边形的变形"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:122
 msgid ""
@@ -48260,15 +48270,17 @@ msgid ""
 "``Skeleton`` property. This will ensure that they can eventually by deformed "
 "by it."
 msgstr ""
+"选择之前创建的多边形，并将骨骼节点分配给它们的“骨骼”(skeleton)属性。这能确保"
+"最终使它们变形。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:126
 msgid "Click the property highlighted above and select the skeleton node:"
-msgstr ""
+msgstr "单击上面突出显示的属性并选择骨骼节点:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:130
 msgid ""
 "Again, open the UV editor for the polygon and go to the *Bones* section."
-msgstr ""
+msgstr "再次打开多边形的UV编辑器，进入*单根骨*部分。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:134
 msgid ""
@@ -48279,6 +48291,10 @@ msgid ""
 "polygon, even if a skeleton node is accidentally lost or the skeleton "
 "modified. Push the \"Sync Bones to Polygon\" button to sync the list."
 msgstr ""
+"现在您还不能绘制权重。为此，您首先需要将骨骼中的单根骨列表与多边形同步。此步"
+"骤仅需手动执行一次(除非您通过添加/删除/重命名骨骼来修改骨骼)。它确保您的绑定"
+"信息保存在多边形中，即使骨骼节点意外丢失或被修改。按“同步骨骼到多边形”按钮来"
+"同步列表。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:140
 msgid ""
@@ -48286,6 +48302,8 @@ msgid ""
 "weight assigned to any of them. Select the bones you want to assign weight "
 "to and paint them:"
 msgstr ""
+"单根骨列表将自动显示。默认情况下，您的多边形没有被分配任何权重信息。选择您想"
+"要分配权重的单根骨，并在它们上面绘制:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:145
 msgid ""
@@ -48295,6 +48313,9 @@ msgid ""
 "not that much need to use shades in-between unless you want to polish the "
 "bending effect)."
 msgstr ""
+"白色点完全受到权重影响，而黑色点完全不受影响。如果在多根单根骨上，绘制了相同"
+"的白色点，那么权重的影响将平均分配在这些单根骨之间。(所以通常不需要过多使用中"
+"间色调，除非你想仔细打磨弯曲效果)。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:151
 msgid ""
@@ -48302,12 +48323,15 @@ msgid ""
 "have the desired effect of modifying and bending the polygons accordingly. "
 "As you only need to animate bones in this approach, work becomes much easier!"
 msgstr ""
+"绘制完权重后，制作单根骨动画(而不是多边形!)会具有修改和弯曲多边形的预期效果。"
+"因为你只需用这种方法驱动单根骨，工作就变得容易得多!"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:154
 msgid ""
 "But it's not all roses. Trying to animate bones that bend the polygon will "
 "often yield unexpected results:"
 msgstr ""
+"但这并不完美。尝试调调单根骨的动画，弯曲的多边形往往会产生意想不到的结果:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:158
 msgid ""
@@ -48316,17 +48340,21 @@ msgid ""
 "expect. To solve this, you need to set hints in the geometry to clarify how "
 "you expect it to deform."
 msgstr ""
+"这是因为Godot在绘制多边形时，产生了内部三角形来连接这些点。它们并不总是按你所"
+"期望的方式弯曲。如果要解决这个问题，你需要在几何图形中设置提示，以明确希望它"
+"如何变形。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:162
-#, fuzzy
 msgid "Internal vertices"
-msgstr "内部资源"
+msgstr "内部顶点"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:164
 msgid ""
 "Open the UV menu for each bone again and go to the *Points* section. Add "
 "some internal vertices in the regions where you expect the geometry to bend:"
 msgstr ""
+"再次打开每个单根骨的UV菜单，进入*点*部分。在你期望几何弯曲的地方添加一些内部"
+"顶点:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:168
 msgid ""
@@ -48334,12 +48362,14 @@ msgid ""
 "detail. Imagine that, as your polygons bend, you need to make sure they "
 "deform the least possible, so experiment a bit to find the right setup."
 msgstr ""
+"现在转到*多边形*部分，重新绘制细节更丰富的多边形。这样，当多边形弯曲时，你需"
+"要确保它们变形的可能性最小，慢慢尝试找出正确的设置。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:173
 msgid ""
 "Once you start drawing, the original polygon will disappear and you will be "
 "free to create your own:"
-msgstr ""
+msgstr "一旦你开始绘制，原来的多边形会消失，你可以自由创建自己的多边形:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:177
 msgid ""
@@ -48347,6 +48377,8 @@ msgid ""
 "grained control over where triangles go. Experiment by yourself until you "
 "get the results you like."
 msgstr ""
+"通常这个数量的细节没有问题，尽管你想更精细地控制三角形。请多多尝试，直到获得"
+"你满意的结果。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:179
 msgid ""
@@ -48354,15 +48386,16 @@ msgid ""
 "weight painting! Go to the *Bones* section again to assign them to the right "
 "bones."
 msgstr ""
+"**注意:**不要忘记，新增加的内部顶点也需要绘制权重！再次转到*单根骨*部分，将它"
+"们分配到正确的单根骨上。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:181
 msgid "Once you are all set, you will get much better results:"
-msgstr ""
+msgstr "一旦你设定好了，你会得到更好的结果:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "AnimationTree"
-msgstr "动画"
+msgstr "动画树"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -48372,12 +48405,17 @@ msgid ""
 "as having dedicated transform, bezier, function calling, audio and sub-"
 "animation tracks, is pretty much unique."
 msgstr ""
+"使用:参考:`动画播放器 <类_动画播放器>`，Godot的动画系统，是你能在任何游戏引擎"
+"中找到最为灵活的系统。可以在任何节点或资源中对任何属性进行动画处理，以及专门"
+"的变换，贝塞尔，函数调用，音频和子动画轨道，该动画系统相当独特。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:13
 msgid ""
 "However, the support for blending those animations via ``AnimationPlayer`` "
 "is relatively limited, as only a fixed cross-fade transition time can be set."
 msgstr ""
+"然而，通过“动画播放器”混合这些动画的支持相对有限，只能设置固定的交叉渐变过渡"
+"时间。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:15
 msgid ""
@@ -48386,11 +48424,12 @@ msgid ""
 "``AnimationTreePlayer``, while adding a huge amount of features and "
 "flexibility."
 msgstr ""
+":参考: '动画树<类_动画树> '是Godot 3.1版本中引入的新节点，用于处理高级转换。"
+"它取代了古老的“动画树播放器”，同时添加了大量功能和灵活性。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:19
-#, fuzzy
 msgid "Creating an AnimationTree"
-msgstr "创建动画"
+msgstr "创建动画树"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:21
 msgid ""
@@ -48400,6 +48439,9 @@ msgid ""
 "them from a 3D scene) as usual and then use this extra node to control the "
 "playback."
 msgstr ""
+"首先，必须明确“动画树”节点不包含它自己的动画。相反，它使用包含在“动画播放"
+"器”节点中的动画。通过这种形式，您可以像往常一样编辑动画(或从3D场景导入动画)，"
+"然后使用这个额外节点来控制播放。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:25
 msgid ""
@@ -48409,6 +48451,9 @@ msgid ""
 "import). At the end, the imported Godot scene will contain the animations in "
 "a ``AnimationPlayer`` node."
 msgstr ""
+"在3D场景中经常使用“动画树”。当从3D交换格式导入场景时，它们通常自带动画(要么是"
+"多个，要么是在导入时从一个大的动画中拆分出来)。最后，导入的Godot场景在“动画播"
+"放器”节点中包含动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:29
 msgid ""
@@ -48418,12 +48463,17 @@ msgid ""
 "``AnimationTree`` node to the ``AnimationPlayer`` that was created in the "
 "imported scene."
 msgstr ""
+"很少在Godot中直接使用导入的场景(它们要么实例化，要么来自继承)，您可以将“动画"
+"树”节点放置在包含导入的新场景中。然后,将“动画树”节点指向导入场景内创建的“动画"
+"播放器”节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:32
 msgid ""
 "This is how it's done in the `Third Person Shooter demo <https://github.com/"
 "godotengine/tps-demo>`_, for reference:"
 msgstr ""
+"这是在“第三人称射击游戏演示”<https://github.com/godotengine/tps-demo>中的设"
+"置，参考下图："
 
 #: ../../docs/tutorials/animation/animation_tree.rst:36
 msgid ""
@@ -48431,48 +48481,54 @@ msgid ""
 "Inside this scene, the original ``.dae`` (Collada) file was instantiated and "
 "an ``AnimationTree`` node was created."
 msgstr ""
+"为玩家创建了一个以“动力学物体”为根节点的新场景。在这个场景中,已实例化原来的“."
+"dae”(Collada)文件，并创建“动画树”节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:40
-#, fuzzy
 msgid "Creating a tree"
-msgstr "创建主题"
+msgstr "创建树"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:42
 msgid ""
 "There are three main types of nodes that can be used in ``AnimationTree``:"
-msgstr ""
+msgstr "可以在“动画树”中使用三种主要节点类型:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:44
 msgid ""
 "Animation nodes, which reference an animation from the linked "
 "``AnimationTree``."
-msgstr ""
+msgstr "动画节点，从链接的“动画树”中引用动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:45
 msgid "Animation Root nodes, which are used to blend sub-nodes."
-msgstr ""
+msgstr "动画根节点，用于混合子节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:46
 msgid ""
 "Animation Blend nodes, which are used within ``AnimationNodeBlendTree`` as "
 "single-graph blending via multiple input ports."
 msgstr ""
+"动画混合节点，它们在“动画节点混合树”中使用，通过多个输入端口作为单图混合。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:48
 msgid "To set a root node in ``AnimationTree``, a few types are available:"
-msgstr ""
+msgstr "在“动画树”中设置根节点，如下几种类型可供选择:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:52
 msgid ""
 "``AnimationNodeAnimation``: Selects an animation from the list and plays it. "
 "This is the simplest root node, and generally not used directly as root."
 msgstr ""
+"“动画节点动画”：从列表中选择一个动画并播放它。这是最简单的根节点，一般不直接"
+"用作根节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:53
 msgid ""
 "``AnimationNodeBlendTree``: Contains many *blend* type nodes, such as mix, "
 "blend2, blend3, one shot, etc. This is one of the most commonly used roots."
 msgstr ""
+"“动画节点混合树”:包含许多*混合*类型的节点，如调配, 混合2, 混合3, 一对一等。这"
+"是最常用的根节点之一。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:54
 msgid ""
@@ -48480,64 +48536,68 @@ msgid ""
 "graph. Each node is used as a *state*, and provides multiple functions to "
 "alternate between states."
 msgstr ""
+"“动画节点状态机”：将多个根节点作为图中的子节点。每个节点作为一个*状态*使用，"
+"并提供多个函数在状态之间进行切换。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:55
 msgid ""
 "``AnimationNodeBlendSpace2D``: Allows placing root nodes in a 2D blend "
 "space. Control the blend position in 2D to mix between multiple animations."
 msgstr ""
+"“动画节点二维混合空间”：允许在二维混合空间中放置根节点。在二维中控制混合位置"
+"以混合多个动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:56
 msgid "``AnimationNodeBlendSpace1D``: Simplified version of the above (1D)."
-msgstr ""
+msgstr "“动画节点一维混合空间”：以上的简化版本(一维)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:59
-#, fuzzy
 msgid "Blend tree"
-msgstr "混合模式"
+msgstr "混合树"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:61
 msgid ""
 "An ``AnimationNodeBlendTree`` can contain both root and regular nodes used "
 "for blending. Nodes are added to the graph from a menu:"
 msgstr ""
+"一个“动画节点混合树”可包含用于混合的根节点和常规节点。节点从菜单添加到图中:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:65
 msgid ""
 "All blend trees contain an ``Output`` node by default, and something has to "
 "be connected to it in order for animations to play."
 msgstr ""
+"所有混合树默认包含一个“输出”节点，为了让动画播放，必须有个东西与其相连。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:67
 msgid ""
 "The easiest way to test this functionality is to connect an ``Animation`` "
 "node to it directly:"
-msgstr ""
+msgstr "测试此功能最简单的方法是直接连接一个“动画”节点:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:71
 msgid ""
 "This will simply play back the animation. Make sure that the "
 "``AnimationTree`` is active for something to actually happen."
-msgstr ""
+msgstr "这会简单地回放动画。确保“动画树”节点对实际发生的事情是激活的。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:73
-#, fuzzy
 msgid "Following is a short description of available nodes:"
-msgstr "以下是可用效果的简短描述:"
+msgstr "以下是可用节点的简短描述:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:76
 msgid "Blend2 / Blend3"
-msgstr ""
+msgstr "混合2/混合3"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:78
 msgid ""
 "These nodes will blend between two or three inputs by a user-specified blend "
 "value:"
-msgstr ""
+msgstr "这些节点将通过用户指定输入的两个或三个混合值之间进行混合:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:82
 msgid "For more complex blending, it is advised to use blend spaces instead."
-msgstr ""
+msgstr "对于更复杂的混合，建议使用混合空间。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:84
 msgid ""
@@ -48545,6 +48605,8 @@ msgid ""
 "tracks go through the blend function. This is very useful for layering "
 "animations on top of each other."
 msgstr ""
+"混合也可以使用过滤器，也就是说，您可以单独控制通过混合功能的轨道。这对于动画"
+"的层叠非常有用。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:90
 #, fuzzy
@@ -48556,32 +48618,31 @@ msgid ""
 "This node will execute a sub-animation and return once it finishes. Blend "
 "times for fading in and out can be customized, as well as filters."
 msgstr ""
+"此节点将执行子动画，并在完成后返回。可以用于定制淡入淡出时间，以及过滤器。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:97
 msgid "Seek"
-msgstr ""
+msgstr "查找"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:99
 msgid ""
 "This node can be used to cause a seek command to happen to any sub-children "
 "of the graph. After setting the time, this value returns to -1."
-msgstr ""
+msgstr "此节点可用于执行对图中任何子节点的查找命令。设置时间后，该值返回-1。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:102
-#, fuzzy
 msgid "TimeScale"
-msgstr "规模"
+msgstr "时间缩放"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:104
 msgid ""
 "Allows scaling the speed of the animation (or reverse it) in any children "
 "nodes. Setting it to 0 will pause the animation."
-msgstr ""
+msgstr "允许缩放任何子节点的动画速度(或将其反转)。设置为0会暂停动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:107
-#, fuzzy
 msgid "Transition"
-msgstr "平移"
+msgstr "转换"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:109
 msgid ""
@@ -48589,10 +48650,12 @@ msgid ""
 "``StateMachine`` node). Animations can be connected to the outputs and "
 "transition times can be specified."
 msgstr ""
+"非常简单的状态机(当您不想使用“状态机”节点时)。动画可以连接到输出，并且可以指"
+"定转换时间。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:112
 msgid "BlendSpace2D"
-msgstr ""
+msgstr "二维混合空间"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:114
 msgid ""
@@ -48600,6 +48663,8 @@ msgid ""
 "are added to a two dimensional space and then a position can be controlled "
 "to determine blending:"
 msgstr ""
+"“二维混合空间”是在二维空间中进行高级混合的节点。在二维空间内添加点，然后控制"
+"位置来确定混合:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:119
 msgid ""
@@ -48608,12 +48673,15 @@ msgid ""
 "system or use the *add point* button) and triangles will be generated "
 "automatically using Delaunay."
 msgstr ""
+"可以控制X和Y的范围(为方便起见，还可以标记它们)。默认情况下，可以在任何位置放"
+"置点(只需右键单击坐标系统或使用*添加点*按钮)将自动生成德洛内三角形。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:124
 msgid ""
 "It is also possible to draw the triangles manually by disabling the *auto "
 "triangle* option, though this is rarely necessary:"
 msgstr ""
+"也可以通过禁用*自动三角形*选项来手动绘制三角形，虽然基本上没必要这么做:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:128
 msgid ""
@@ -48624,21 +48692,23 @@ msgid ""
 "switching between discrete animations, there is a *Carry* mode. This mode "
 "can be changed in the *Blend* menu:"
 msgstr ""
+"最后，可能会更改混合模式。默认情况下，混合是通过在最近的三角形内插点来实现"
+"的。当处理二维动画(逐帧)时，您可能希望切换到*离散*模式。此外，如果您想在离散"
+"动画之间切换时保持当前播放位置，请使用*进位*模式。此模式可在*混合*菜单中更改:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:136
 msgid "BlendSpace1D"
-msgstr ""
+msgstr "一维混合空间"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:138
 msgid ""
 "This is similar to 2D blend spaces, but in one dimension (so triangles are "
 "not needed)."
-msgstr ""
+msgstr "这类似于二维混合空间，但在一维空间中(所以不需要三角形)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:141
-#, fuzzy
 msgid "StateMachine"
-msgstr "搜索"
+msgstr "状态机"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:143
 msgid ""
@@ -48647,47 +48717,49 @@ msgid ""
 "connections with special properties. Transitions are uni-directional, but "
 "two can be used to connect in both ways."
 msgstr ""
+"这个节点是个相对简单的状态机。根节点可以创建并通过线路连接。状态通过*转换*连"
+"接，它们是具有特殊性质的连接。转换是单向的，但是可以用两种方式连接。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:148
-#, fuzzy
 msgid "There are many types of transitions:"
-msgstr "过渡的类型"
+msgstr "有多种类型的转换:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:152
 msgid ""
 "*Immeditate*: Will switch to the next state immediately. The current state "
 "will end and blend into the beginning of the new one."
-msgstr ""
+msgstr "*立即*：立即切换到下一个状态。将结束当前状态将融入新状态的开始。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:153
 msgid ""
 "*Sync*: Will switch to the next state immediately, but will seek the new "
 "state to the playback position of the old state."
 msgstr ""
+"*同步*:立即切换到下一个状态，但会将新状态搜索并放置到旧状态的回放位置。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:154
 msgid ""
 "*At End*: Will wait for the current state playback to end, then switch to "
 "the beginning of the next state animation."
-msgstr ""
+msgstr "*末尾*：将等待当前状态回放结束，然后切换到下一个状态的开始动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:156
 msgid ""
 "Transitions also have a few properties. Click any transition and it will be "
 "displayed in the inspector dock:"
-msgstr ""
+msgstr "转换也有一些属性。点击任何转换，它会显示在属性面板中:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:160
 msgid ""
 "*Switch Mode* is the transition type (see above), it can be modified after "
 "creation here."
-msgstr ""
+msgstr "*切换模式*为过渡类型(见上文)，可以在此处创建后修改。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:161
 msgid ""
 "*Auto Advance* will turn on the transition automatically when this state is "
 "reached. This works best with the *At End* switch mode."
-msgstr ""
+msgstr "*自动前进*当达到此状态时将自动开启转换。最适合“末尾”切换模式。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:162
 msgid ""
@@ -48695,10 +48767,12 @@ msgid ""
 "This is a custom text field that can be filled with a variable name. The "
 "variable can be modified from code (more on this later)."
 msgstr ""
+"*前进条件*设置此条件后，将打开自动前进。这是一个可以用变量名填充的自定义文本"
+"字段。可以从代码中修改变量(稍后将对此进行详细介绍)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:164
 msgid "*Xfade Time* is the time to cross-fade between this state and the next."
-msgstr ""
+msgstr "*X消隐时间*是在这个状态和下一个状态之间交替渐变的时间。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:165
 msgid ""
@@ -48706,17 +48780,18 @@ msgid ""
 "on this later). When travelling from a state to another, give more priority "
 "to this node."
 msgstr ""
+"*优先*与代码中的“travel()”函数一起使用(后面会详细介绍)。当从一种状态移动到另"
+"一种状态时，赋予这个节点更高的优先级。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:166
 msgid ""
 "*Disabled* allows to disable this transition (it will not be used during "
 "travel or auto advance)."
-msgstr ""
+msgstr "*禁用*允许禁用此转换(它不会在行程或自动前进期间使用)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:170
-#, fuzzy
 msgid "Root motion"
-msgstr "旋转"
+msgstr "根骨骼运动"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:172
 msgid ""
@@ -48725,6 +48800,9 @@ msgid ""
 "allows animating characters in a way where steps actually match the floor "
 "below. It also allows precise interaction with objects during cinematics."
 msgstr ""
+"当处理3D动画时，一种流行的技术是动画师利用根骨骼为其余部分骨骼制作运动动画。"
+"这使得动画角色的脚步与下面的地板相匹配。并且允许在电影拍摄期间与物体进行精确"
+"的交互。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:175
 msgid ""
@@ -48732,12 +48810,14 @@ msgid ""
 "as the *root motion track*. Doing so will cancel the bone transformation "
 "visually (the animation will stay in place)."
 msgstr ""
+"在Godot中回放动画时，可以选择这根单根骨作为*根运动轨迹*。这会在视觉上取消单根"
+"骨的转换(动画将保持原状)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:180
 msgid ""
 "Afterwards, the actual motion can be retrieved via the :ref:`AnimationTree "
 "<class_AnimationTree>` API as a transform:"
-msgstr ""
+msgstr "然后，实际运动可以通过:参考:`动画树<类_动画树>`API作为转换："
 
 #: ../../docs/tutorials/animation/animation_tree.rst:191
 msgid ""
@@ -48745,6 +48825,8 @@ msgid ""
 "<class_KinematicBody_method_move_and_slide>` to control the character "
 "movement."
 msgstr ""
+"可以提供给诸如:参考:`动力学物体.移动和滑动<类_动力学物体_方法_移动和滑动>`这"
+"样的函数来控制角色移动。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:193
 msgid ""
@@ -48752,17 +48834,18 @@ msgid ""
 "and will act as a custom floor for your character and animations (this node "
 "is normally disabled during the game)."
 msgstr ""
+"还有一个名为“根骨骼运动视图”的工具节点，可以放置在场景中，并作为你的角色和动"
+"画的自定义地板（此节点通常在游戏期间禁用）。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:200
-#, fuzzy
 msgid "Controlling from code"
-msgstr "贡献代码"
+msgstr "使用代码控制"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:202
 msgid ""
 "After building the tree and previewing it, the only question remaining is "
 "\"How is all this controlled from code?\"."
-msgstr ""
+msgstr "创建树和预览之后，只剩下一个问题：“如何使用代码控制所有的节点?”。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:204
 msgid ""
@@ -48773,6 +48856,9 @@ msgid ""
 "your animation tree, or reuse nodes with a complex layout (such as a state "
 "machine or blend space) in different animation trees."
 msgstr ""
+"请记住动画节点只是资源，因此，它们之间共享所有实例。节点中的设定值会直接影响"
+"使用此“动画树”场景的所有实例。有一些很酷的用例，例如你可以复制、粘贴你的动画"
+"树部分，或在不同的动画树中重用具有复杂布局(例如状态机或混合空间)的节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:209
 msgid ""
@@ -48781,6 +48867,8 @@ msgid ""
 "``AnimationTree`` node to see all the parameters that can be modified in "
 "real-time:"
 msgstr ""
+"实际的动画数据包含在“动画树”节点中，并通过属性访问。检查“动画树”节点的“参"
+"数”部分，查看所有可以实时修改的参数："
 
 #: ../../docs/tutorials/animation/animation_tree.rst:214
 msgid ""
@@ -48788,20 +48876,24 @@ msgid ""
 "``AnimationPlayer``, or even the ``AnimationTree`` itself, allowing the "
 "realisation of very complex animation logic."
 msgstr ""
+"这很方便，因为它可以通过“动画播放器”获得动画效果，甚至是“动画树”本身，允许实"
+"现非常复杂的动画逻辑。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:217
 msgid ""
 "To modify these values from code, the property path must be obtained. This "
 "is done easily by hovering the mouse over any of the parameters:"
 msgstr ""
+"想要通过代码修改这些值，必须获得该属性的路径。这是很容易做到的，把鼠标悬停在"
+"任何参数:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:221
 msgid "Which allows setting them or reading them:"
-msgstr ""
+msgstr "允许设置或读取它们："
 
 #: ../../docs/tutorials/animation/animation_tree.rst:236
 msgid "State machine travel"
-msgstr ""
+msgstr "状态机行程"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:238
 msgid ""
@@ -48810,6 +48902,8 @@ msgid ""
 "to another one, while visiting all the intermediate ones. This is done via "
 "the A\\* algorithm."
 msgstr ""
+"执行“状态机“的行程能力，是Godot引擎的优秀特性之一。可以指示图表从当前状态转到"
+"另一个状态，我们可以访问其所有的中间状态。这是通过A*算法实现的。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:241
 msgid ""
@@ -48818,12 +48912,14 @@ msgid ""
 "<class_AnimationNodeStateMachinePlayback>` object from the ``AnimationTree`` "
 "node (it is exported as a property)."
 msgstr ""
+"要使用行程能力，您应该首先从“动画树”节点中检索:参考:`动画节点状态机回放<类_动"
+"画节点状态机回放>`对象(导出为一个属性)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:254
 msgid ""
 "Once retrieved, it can be used by calling one of the many functions it "
 "offers:"
-msgstr ""
+msgstr "一旦检索到，可以调用它提供的许多函数之一:"
 
 #: ../../docs/tutorials/inputs/index.rst:2
 msgid "Inputs"
@@ -49373,11 +49469,12 @@ msgid ""
 "``is_action_pressed()`` and ``is_action_released()`` by passing the name of "
 "the action you're looking for:"
 msgstr ""
+"一旦你定义了动作，可以在脚本中使用“is_action_pressed()”和“is_action_released "
+"()”处理它们。通过名称查找响应的动作:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:133
-#, fuzzy
 msgid "Keyboard events"
-msgstr "键盘快捷键"
+msgstr "键盘事件"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:135
 msgid ""
@@ -49386,20 +49483,20 @@ msgid ""
 "where you want to specifically look at key events. For this example, let's "
 "check for the \"T\" key:"
 msgstr ""
+"键盘事件在:参考:‘输入事件键位 <类_输入事件键位>’中捕获。虽然建议使用输入行"
+"为，在某些情况下，您可能希望特别关注关键事件。对于这个示例，我们检查“T”键:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:148
 #: ../../docs/tutorials/inputs/input_examples.rst:171
-#, fuzzy
 msgid ""
 "See :ref:`@GlobalScope_KeyList <enum_@GlobalScope_KeyList>` for a list of "
 "scancode constants."
 msgstr ""
-"其中一个 :ref:`PropertyHint <enum_ @ GlobalScope_PropertyHint>` 值用作提示。"
+"详见:参考:“@全局范围_键位列表<枚举_@全局范围_键位列表>”获取扫描代码常量列表。"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:152
-#, fuzzy
 msgid "Keyboard modifiers"
-msgstr "占位符的修饰符"
+msgstr "键盘修饰符"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:154
 msgid ""
@@ -49409,11 +49506,13 @@ msgid ""
 "happen when the \"T\" key is pressed, but something different when it's "
 "\"Shift+T\":"
 msgstr ""
+"修饰符属性继承自:参考:‘带有修饰符的输入事件<类_带有修饰符的输入事件>’。这允许"
+"您使用布尔属性检查修饰符组合。假设您希望在按下“T”键时发生一件事情，但当它"
+"是“Shift+T”时，情况就不一样了:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:175
-#, fuzzy
 msgid "Mouse events"
-msgstr "响应事件"
+msgstr "鼠标事件"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:177
 msgid ""
@@ -49423,11 +49522,13 @@ msgid ""
 "<class_InputEventMouseMotion>`. Note that this means that all mouse events "
 "will contain a ``position`` property."
 msgstr ""
+"鼠标事件继承自:参考:'鼠标输入事件<类_鼠标输入事件>'类，并被分成两种类型::参"
+"考:'鼠标按钮输入事件<类_鼠标按钮输入事件>'和:参考:“鼠标行为输入事件<类_鼠标行"
+"为输入事件>”。注意，这意味着所有鼠标事件将包含一个“位置”（position）属性。"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:183
-#, fuzzy
 msgid "Mouse buttons"
-msgstr "方便按钮"
+msgstr "鼠标按钮"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:185
 msgid ""
@@ -49440,9 +49541,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:202
-#, fuzzy
 msgid "Mouse motion"
-msgstr "旋转"
+msgstr "鼠标行为"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:204
 msgid ""
@@ -53441,14 +53541,13 @@ msgid "An example usage:"
 msgstr "示例用法:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:87
-#, fuzzy
 msgid ""
 "In the example above, a new theme is created. The \"font_color\" option is "
 "changed and then applied to a label. As a result, the label (and all "
 "children and grandchildren labels) will use that color."
 msgstr ""
-"在上面的示例中, 创建了一个新主题。\"font_color\" 选项被更改, 然后应用于一个标"
-"签。因此, 这个标签 (和所有他所有的子孙节点标签) 将使用这种颜色。"
+"在上面的示例中，创建了一个新主题。改变“字体_颜色”（font_color）选项，然后应用"
+"于标签。因此，该标签(及所有子孙辈标签)将使用这种颜色。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:91
 #, fuzzy
@@ -53590,7 +53689,6 @@ msgid "So many controls..."
 msgstr "已经有好多control节点了..."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:9
-#, fuzzy
 msgid ""
 "Yet there are never enough. Creating your own custom controls that act just "
 "the way you want them to is an obsession of almost every GUI programmer. "
@@ -53599,10 +53697,10 @@ msgid ""
 "diagonal scrollbars, at least it will be good to know how to create these "
 "controls easily from script."
 msgstr ""
-"然而, 这永远不会够。创建自定义的控件让其如您所想般工作, 几乎让每个 GUI 程序员"
-"着迷。Godot提供了大量的控件, 但他们也许不能精确的按照您所想要的方式工作。在联"
-"系开发人员请求合并一个“支持对角线滚动条”的pull-request之前, 至少最好知道如何"
-"用脚本轻松地创建这样的控件。"
+"然而，这远远不够。创建您的自定义控件，并使其按您希望的方式工作，这几乎是每个"
+"GUI程序员都向往的事情。Godot提供了大量这样的工具，但它们可能并不完全如您所愿"
+"的方式工作。在使用支持对角滚动条的下拉请求与开发人员联系之前，至少应该了解如"
+"何从脚本轻松地创建这些控件。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:17
 msgid "Drawing"
@@ -58182,9 +58280,8 @@ msgid "in vec4 **FRAGCOORD**"
 msgstr "在vec4 ** FRAGCOORD **"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
-#, fuzzy
 msgid "Fragment coordinate, pixel adjusted. In screen space."
-msgstr "片段坐标，像素调整。"
+msgstr "片段坐标，像素调整。在屏幕空间。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
@@ -58208,9 +58305,8 @@ msgid "in vec3 **VERTEX**"
 msgstr "in vec3 **VERTEX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
-#, fuzzy
 msgid "Vertex that comes from vertex function (default, in view space)."
-msgstr "来自顶点函数的顶点，在视图空间中。"
+msgstr "来自顶点函数的顶点(默认情况下，在视图空间中)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
@@ -58218,23 +58314,20 @@ msgid "in vec3 **VIEW**"
 msgstr "in vec3 **VIEW**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
-#, fuzzy
 msgid "Vector from camera to fragment position (in view space)."
-msgstr "来自顶点函数的顶点，在视图空间中。"
+msgstr "从摄像机到碎片位置的向量(在视图空间中)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
 msgid "in bool **FRONT_FACING**"
 msgstr "in bool **FRONT_FACING**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
-#, fuzzy
 msgid "True if current face is front face."
-msgstr "当前面是否是正面是真的。"
+msgstr "如果当前面是正面，则为真。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
-#, fuzzy
 msgid "Normal that comes from vertex function (default, in view space)."
-msgstr "来自顶点函数的正常，在视图空间中。"
+msgstr "来自于顶点函数的法向量(默认情况下，在视图空间中)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
 msgid "Tangent that comes from vertex function."
@@ -58406,18 +58499,16 @@ msgid "out float **AO**"
 msgstr "out float **AO**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:241
-#, fuzzy
 msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
-msgstr "环境遮挡(预烘焙)。"
+msgstr "环境遮挡。与预焙环境遮挡一起使用。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
 msgid "out float **AO_LIGHT_AFFECT**"
 msgstr "out float **AO_LIGHT_AFFECT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
-#, fuzzy
 msgid "How much AO affects lights (0..1; default 0)."
-msgstr "AO对灯光的影响程度(0..1。默认为0，无)。"
+msgstr "环境遮挡对灯光的影响程度(取值在0到1之间。默认为0)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:245
 msgid "out vec3 **EMISSION**"
@@ -58486,9 +58577,8 @@ msgstr "如果写入，则丢弃低于一定量alpha的值。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
-#, fuzzy
 msgid "Light built-ins"
-msgstr "轻型内置"
+msgstr "内置灯光"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
 msgid ""
@@ -58537,23 +58627,20 @@ msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
-#, fuzzy
 msgid "Normal vector, in view space."
-msgstr "来自顶点函数的正常，在视图空间中。"
+msgstr "法向量，在视图空间中。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
-#, fuzzy
 msgid "View vector, in view space."
-msgstr "图像空间中的顶点。"
+msgstr "视图向量，在视图空间中。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
 msgid "in vec3 **LIGHT**"
 msgstr "in vec3 **LIGHT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
-#, fuzzy
 msgid "Light Vector, in view space."
-msgstr "图像空间中的顶点。"
+msgstr "灯光向量，在视图空间中。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:312
 msgid "in vec3 **LIGHT_COLOR**"
@@ -58612,9 +58699,8 @@ msgid "Specular light result."
 msgstr "镜面光效果。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:4
-#, fuzzy
 msgid "CanvasItem shaders"
-msgstr "CanvasItem"
+msgstr "画布项着色器"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:6
 msgid ""
@@ -58639,9 +58725,8 @@ msgid "Pre-multiplied alpha blend mode."
 msgstr "预乘alpha混合模式。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
-#, fuzzy
 msgid "**blend_disabled**"
-msgstr "**cull_disabled**"
+msgstr "**混合_禁用**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
 msgid "Disable blending, values (including alpha) are written as-is."
@@ -58693,9 +58778,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
-#, fuzzy
 msgid "Then, in your vertex shader:"
-msgstr "我们像这样定义顶点着色器:"
+msgstr "然后，在你的顶点着色器:"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:83
 msgid ""
@@ -58711,9 +58795,8 @@ msgid ""
 msgstr "如果不修改，其他内置函数(如UV和COLOR)也会传递给片段函数。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:97
-#, fuzzy
 msgid "Image space to view space transform."
-msgstr "用于查看空间变换的剪辑空间。"
+msgstr "图像空间到视图空间的转换。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:99
 msgid "in mat4 **EXTRA_MATRIX**"
@@ -58738,9 +58821,8 @@ msgstr "in bool **AT_LIGHT_PASS**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
-#, fuzzy
 msgid "True if this is a light pass."
-msgstr "如果这是光通过则为真(对于多次通过光渲染)。"
+msgstr "如果光通过则为真。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
 #, fuzzy
@@ -58897,9 +58979,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
-#, fuzzy
 msgid "Fragment coordinate of pixel center. Origin at lower left."
-msgstr "片段坐标，像素调整。"
+msgstr "像素中心的片段坐标。原点在左下角。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
 msgid ""
@@ -63193,9 +63274,8 @@ msgid ""
 msgstr "如何制作一个 :ref:`RigidBody <class_RigidBody>` 基于拾取和放下系统。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:27
-#, fuzzy
 msgid "How to make various items that can be used in VR."
-msgstr "如何制作可在VR中使用的各种物品"
+msgstr "如何制作可在虚拟现实场景内使用的各种物品。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:29
 msgid ""
@@ -63209,14 +63289,13 @@ msgstr ""
 "列。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:34
-#, fuzzy
 msgid ""
 "This tutorial assumes you have experience working with the Godot editor, "
 "have basic programming experience in GDScript, and have basic 3D game "
 "development experience."
 msgstr ""
-"本教程假设您具有使用Godot编辑器的经验，具有GDScript的基本编程经验，并具有基本"
-"的3D游戏开发经验。"
+"本教程假设您有使用Godot编辑器的经验，基础GDScript编程经验，以及基础3D游戏开发"
+"经验。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:37
 #, fuzzy
@@ -63300,15 +63379,14 @@ msgid "You can find the finished project at the bottom of this page."
 msgstr "您可以在本页底部找到已完成的项目。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:64
-#, fuzzy
 msgid ""
 "While these assets are not necessarily required to use the scripts provided "
 "in this tutorial, they will make the tutorial much easier to follow, as "
 "there are several premade scenes we will be using throughout the tutorial "
 "series."
 msgstr ""
-"虽然这些资源不一定需要使用本教程中提供的脚本，但它们将使教程更容易理解，因为"
-"我们将在整个教程系列中使用几个预制场景。"
+"虽然使用这些资源并不一定需要本教程提供的脚本，但它们将使教程内容更容易理解，"
+"所以我们将在本系列教程中使用这些预先制作的场景。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:68
 msgid ""
@@ -63434,14 +63512,13 @@ msgid "Starting VR"
 msgstr "启动VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:101
-#, fuzzy
 msgid ""
 "First, let's get the VR up and going! While ``Game.tscn`` is open, select "
 "the ``Game`` node and make a new script called ``Game.gd``. Add the "
 "following code:"
 msgstr ""
-"首先，让我们开始VR吧！ 当 ``Game.tscn`` 打开时，选择 ``Game`` 节点并创建一个"
-"名为 ``Game.gd`` 的新脚本。 添加以下代码:"
+"首先，让我们启动VR!打开“Game.tscn”场景,选择“游戏”（Game）节点并创建一个名"
+"为“Game.gd”的新脚本。添加以下代码:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:142
 msgid ""
@@ -66730,15 +66807,16 @@ msgstr ""
 "常有用。 这显示了导入系统如何强大和可扩展。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:4
-#, fuzzy
 msgid "Spatial gizmo plugins"
-msgstr "制作插件"
+msgstr "空间变换轴插件"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:9
 msgid ""
 "Spatial gizmo plugins are used by the editor and custom plugins to define "
 "the gizmos attached to any kind of Spatial node."
 msgstr ""
+"编辑器和自定义插件，使用空间变换轴插件，来定义附加到任何类型的空间节点的变换"
+"轴。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:12
 msgid ""
@@ -66747,20 +66825,20 @@ msgid ""
 "less clutter in your plugin structure, while the second one will let you "
 "store some per-gizmo data."
 msgstr ""
+"本教程向您展示自定义变换轴的两种主要定义方法。第一种方法适用于简单变换轴，可"
+"以减少插件结构的混乱，而第二种方法将允许您存储每个变换轴的数据。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:16
-#, fuzzy
 msgid ""
 "This tutorial assumes you already know how to make generic plugins. If in "
 "doubt, refer to the :ref:`doc_making_plugins` page."
 msgstr ""
-"本教程假设您已经知道如何制作通用插件。 如有疑问，请参阅 :ref:"
-"`doc_making_plugins` 页面。 这也假设您熟悉Godot的导入系统。"
+"本教程假设您已经知道如何制作通用插件。 如有疑问，请参阅 :参考:`文档_制作插件"
+"` 页面。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:20
-#, fuzzy
 msgid "The EditorSpatialGizmoPlugin"
-msgstr "EditorImportPlugin类"
+msgstr "编辑器空间变换轴插件"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:22
 msgid ""
@@ -66769,10 +66847,13 @@ msgid ""
 "us to set a name for the new gizmo type and define other behaviors such as "
 "whether the gizmo can be hidden or not."
 msgstr ""
+"不管我们选择什么方式，我们需要创建一个新的:参考:`编辑器空间变换轴插件<类_编辑"
+"器空间变换轴插件>`。我们可以为新建的变换轴类型设置名称，并定义其他行为，比如"
+"是否可以隐藏变换轴。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:27
 msgid "This would be a basic setup:"
-msgstr ""
+msgstr "这是一个基本设置:"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:57
 msgid ""
@@ -66781,11 +66862,13 @@ msgid ""
 "gizmo data or you are porting a Godot 3.0 gizmo to 3.1+, you should go with "
 "the second approach."
 msgstr ""
+"对于简单变换轴来说，只继承自:参考:`编辑器空间变换轴插件<类_编辑器空间变换轴插"
+"件>`就足够了。如果你想为每个变换轴存储一些数据，或者你想将Godot 3.0版本的变换"
+"轴，移植到3.1以上版本中，你应该采用第二种方法。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:63
-#, fuzzy
 msgid "Simple approach"
-msgstr "简单购买"
+msgstr "简单方法"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
 msgid ""
@@ -66793,6 +66876,8 @@ msgid ""
 "`has_gizmo()<class_EditorSpatialGizmoPlugin_method_has_gizmo>` method so "
 "that it returns ``true`` when the spatial parameter is of our target type."
 msgstr ""
+"第一步，在我们的自定义变换轴插件中，重写:参考:`已有变换轴()<类_编辑器空间变换"
+"轴插件_方法_已有变换轴>` 方法，以便在空间参数为目标类型时返回“真”值。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:76
 msgid ""
@@ -66800,6 +66885,8 @@ msgid ""
 "`redraw()<class_EditorSpatialGizmoPlugin_method_redraw>` or all the handle "
 "related ones."
 msgstr ""
+"我们可以重写以下方法:参考:`重绘()<类_编辑器空间变换轴插件_方法_重绘>` 或所有"
+"与句柄相关的方法。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:107
 msgid ""
@@ -66822,11 +66909,13 @@ msgid ""
 "`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>` to get properly "
 "working handles."
 msgstr ""
+"注意，我们只是在重绘方法中添加了一些句柄，但是我们仍然需要在:参考:`编辑器空间"
+"变换轴插件<类_编辑器空间变换轴插件>`中实现其他与句柄相关的回调，以获得正确的"
+"工作句柄。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:153
-#, fuzzy
 msgid "Alternative approach"
-msgstr "或者，您可以运行"
+msgstr "替代方法"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:155
 msgid ""
@@ -66835,6 +66924,9 @@ msgid ""
 "have some state stored in each gizmo or because we are porting an old gizmo "
 "plugin and we don't want to go through the rewriting process."
 msgstr ""
+"在某些情况下，我们希望提供自己的:参考:`编辑器空间变换轴<类_编辑器空间变换轴>`"
+"实现，也许是因为我们想要在每个变换轴中存储一些状态，或者正在移植一个旧的变换"
+"轴插件，而不想经历重写过程。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:159
 msgid ""
@@ -66843,12 +66935,17 @@ msgid ""
 "returns our custom gizmo implementation for the Spatial nodes we want to "
 "target."
 msgstr ""
+"在这些情况下，我们需要做的就是在我们的新变换轴插件中覆盖：参考：`创建变换轴"
+"（）<类_编辑器空间变换轴插件_方法_创建变换轴>`，因此它返回我们想要实现的目标"
+"空间节点的自定义变换轴。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:181
 msgid ""
 "This way all the gizmo logic and drawing methods can be implemented in a new "
 "clas extending :ref:`EditorSpatialGizmo<class_EditorSpatialGizmo>`, like so:"
 msgstr ""
+"这样所有的变换轴逻辑和绘图方法都可以在一个新的类中实现扩展：参考：`编辑器空间"
+"变换轴<类_编辑器空间变换轴>`，如下所示："
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:217
 msgid ""
@@ -66857,6 +66954,9 @@ msgid ""
 "`EditorSpatialGizmo<class_EditorSpatialGizmo>` to get properly working "
 "handles."
 msgstr ""
+"请注意，我们刚刚在重绘方法中添加了一些句柄，但我们仍然需要在：参考：`编辑器空"
+"间变换轴<类_编辑器空间变换轴>`中实现其余的与句柄相关的回调，以获得正确工作的"
+"句柄。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:4
 msgid "GDNative C example"
@@ -67557,7 +67657,6 @@ msgstr ""
 "需的构建工具相同。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:42
-#, fuzzy
 msgid ""
 "You can download these repositories from GitHub or let Git do the work for "
 "you. Note that these repositories now have different branches for different "
@@ -67570,7 +67669,7 @@ msgstr ""
 "您可以从GitHub下载这些存储库，或让Git为您完成工作。 请注意，这些存储库现在对"
 "于不同版本的Godot具有不同的分支。 为早期版本的Godot编写的GDNative模块将在较新"
 "版本中运行(除了3.0和3.1之间的ARVR接口的一次重大更改)，但反之亦然，因此请确保"
-"下载正确的分支。"
+"下载正确的分支。还要注意，您用于生成“api.json”的Godot版本将成为最低版本。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:52
 msgid ""
@@ -68088,6 +68187,8 @@ msgid ""
 "``true`` for the Godot editor to automatically pick up the newly added "
 "property."
 msgstr ""
+"“gdexample.gdnlib”文件中的“可重新读取”(reloadable)属性必须设定为“真”，Godot编"
+"辑器才能自动获取到新添加的属性。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:574
 msgid ""
@@ -68095,6 +68196,8 @@ msgid ""
 "are used, as the editor might hold objects then that have script instances "
 "attached to them that are managed by a GDNative library."
 msgstr ""
+"但是，使用该设置时要特别小心，特别是在使用工具类时，因为编辑器可能会持有对"
+"象，然后将脚本实例附加到对象上，这些对象由GDNative库管理。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:577
 msgid ""
@@ -68268,9 +68371,8 @@ msgid "Every second we simply output our position to the console."
 msgstr "每一秒我们只需将我们的位置输出到控制台。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:832
-#, fuzzy
 msgid "NativeScript 1.1 vs NativeScript 1.0"
-msgstr "NativeScript 1.1 与 NativeScript 1.0"
+msgstr "原生脚本1.1与原生脚本1.0"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:834
 msgid ""
@@ -68896,7 +68998,7 @@ msgstr "从主包文件以外的目录中加载引擎文件"
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:18
 msgid ""
 "Adding a click-to-play button so games can be started in full-screen mode"
-msgstr ""
+msgstr "添加一个点击播放按钮，这样游戏可以在全屏模式下启动"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:19
 msgid ""
@@ -68938,9 +69040,8 @@ msgid "Placeholder"
 msgstr "占位符"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
-#, fuzzy
 msgid "Substituted by"
-msgstr "替代"
+msgstr "替换为"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:37
 msgid "``$GODOT_BASENAME``"
@@ -69014,87 +69115,79 @@ msgstr ""
 "过程的接口。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:67
-#, fuzzy
 msgid ""
 "The API is based on and requires basic understanding of `Promises <https://"
 "developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises>`__."
 msgstr ""
-"遵循 `同源政策 <https://developer.mozilla.org/en-US/docs/Web/Security/Same-"
-"origin_policy>`_"
+"本API基于并要求对承诺有基本的理解。 <https://developer.mozilla.org/en-US/"
+"docs/Web/JavaScript/Guide/Using_promises>`__."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:69
-#, fuzzy
 msgid "The object itself has only the following methods:"
-msgstr "Mob场景将会使用如下节点:"
+msgstr "对象本身只有以下方法:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:73
-#, fuzzy
 msgid "Load the engine from the passed base path."
-msgstr "从传递的基本路径加载引擎。"
+msgstr "从已通过的底层路径加载引擎。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:0
-#, fuzzy
 msgid "Arguments"
-msgstr "调整"
+msgstr "参数"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:75
 msgid "Base path of the engine to load."
-msgstr ""
+msgstr "引擎加载的底层路径。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:0
-#, fuzzy
 msgid "Returns"
-msgstr "Return"
+msgstr "返回"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:76
-#, fuzzy
 msgid "Promise which resolves once the engine is loaded."
-msgstr "返回一旦加载引擎就解析的承诺。"
+msgstr "当引擎加载时承诺解决。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:80
 msgid "Unload the engine to free memory."
-msgstr ""
+msgstr "卸载引擎以释放内存。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:82
-#, fuzzy
 msgid ""
 "This is called automatically once the engine is started unless explicitly "
 "disabled using :js:func:`engine.setUnloadAfterInit`."
 msgstr ""
-"卸载模块以释放内存。 除非明确禁用，否则在实例化模块后会自动调用此方法。"
+"除非使用:js:func:`引擎.初始化后卸载`显式禁用，否则引擎一旦启动就会自动调用。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:87
 msgid "Check whether WebGL is available."
-msgstr ""
+msgstr "检查WebGL是否可用。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:89
 msgid "The major WebGL version to check for. Defaults to 1 for *WebGL 1.0*."
-msgstr ""
+msgstr "主要WebGL版本检查。*WebGL 1.0*默认值为1。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:92
-#, fuzzy
 msgid ""
 "``true`` if the given major version of WebGL is available, ``false`` "
 "otherwise."
-msgstr ""
-"如果给定的主要版本的WebGL可用，则返回 ``true`` ，否则返回 ``false`` 。 对于"
-"WebGL 1.0，默认为 ``1`` 。"
+msgstr "如果WebGL的主要版本可用，则为真，否则为假。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:98
 msgid ""
 "When loading the engine, the filename extension of the WebAssembly module is "
 "assumed to be ``wasm``. This function allows usage of an alternate extension."
 msgstr ""
+"加载引擎时，WebAssembly模块的文件名扩展假定为“wasm”。这个函数允许使用替代扩"
+"展。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:108
 msgid ""
 "This is useful for outdated hosts that only accept uploads of files with "
 "certain filename extensions."
-msgstr ""
+msgstr "对于过时的主机来说，只接受某些文件扩展名的文件的上传，是非常有用的。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:111
 msgid "Filename extension without preceding dot."
-msgstr ""
+msgstr "文件名扩展没有前面的点。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:115
 msgid ""
@@ -69102,6 +69195,8 @@ msgid ""
 "some start-up optimizations. This occurs when the file is delivered with a "
 "MIME-type other than :mimetype:`application/wasm`."
 msgstr ""
+"根据主机，使用替代文件名扩展可以防止某些启动优化。当文件使用mime类型交付时，"
+"就会发生这种情况。而不是 :mimetype:`应用程序/wasm`。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:120
 msgid "Starting an ``Engine`` instance"
@@ -69109,57 +69204,56 @@ msgstr "启动 ``Engine`` 实例"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:122
 msgid ":js:class:`Engine` also acts a class:"
-msgstr ""
+msgstr ":js:类:`引擎`还是一个类:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:126
 msgid "An instance of the engine that can be started, usually a game."
-msgstr ""
+msgstr "可以启动的引擎实例，通常是一个游戏。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:128
 msgid "Instantiate the class using the ``new`` operator:"
-msgstr ""
+msgstr "使用“new”操作符实例化类:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:134
 msgid ""
 "This yields an :js:class:`Engine` instance, referred to as ``engine`` with a "
 "lower-case ``e`` from here."
-msgstr ""
+msgstr "这将生成一个:js:类:`引擎`实例，在这里用小写的“e”代替“engine”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:137
-#, fuzzy
 msgid ""
 "To start such an instance, the global ``Engine`` object must be loaded, then "
 "the ``engine`` instance must be initialized and finally started."
 msgstr ""
-"这个 ``Engine`` 实例，在这里被称为 ``engine`` ，带有小写的 ``e`` ，是引擎的可"
-"启动实例，通常是游戏。 要启动这样的实例，必须加载全局 ``Engine`` 对象，然后必"
-"须初始化并启动 ``engine`` 实例。"
+"要启动这样的实例，必须加载全局 ``Engine`` 对象，然后必须初始化并启动 "
+"``engine`` 实例。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:142
 msgid ""
 "Initialize the instance. The instance can then be started with one of the "
 "``start`` functions, usually :js:func:`engine.startGame`."
 msgstr ""
+"初始化实例。然后可以使用其中一个``开始`` 函数启动实例，通常是:js:函数:“引擎."
+"开始游戏”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:145
 msgid ""
 "The base path to the engine, same as in :js:func:`Engine.load`. Must be "
 "passed only if the engine hasn't been loaded yet."
 msgstr ""
+"引擎的基本路径与:js:函数:`引擎.加载`相同。只有在引擎尚未加载时才能通过。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:149
-#, fuzzy
 msgid "Promise that resolves once the engine is loaded and initialized."
-msgstr "返回一旦加载引擎就解析的承诺。"
+msgstr "承诺一旦加载并初始化引擎就会解析。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:153
-#, fuzzy
 msgid ""
 "Load a file so it is available in the file system once the instance runs. "
 "Must be called **before** starting the instance."
 msgstr ""
-"这会加载一个文件，以便在启动实例后在文件系统中可用。 必须在 **启动实例之前调"
-"用** 。"
+"这会加载一个文件，以便在启动实例后在文件系统中可用。 必须在启动实例**之前** "
+"调用。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:156
 #, fuzzy
@@ -69173,7 +69267,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:157
 msgid "If type is string, the file will be loaded from that path."
-msgstr ""
+msgstr "如果类型是字符串，则文件将从该路径加载。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:159
 #, fuzzy
@@ -69217,29 +69311,27 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:179
 msgid "The engine must be loaded beforehand."
-msgstr ""
+msgstr "引擎必须预先加载。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:181
 msgid ""
 "Requires that the engine has been loaded, and that a canvas can be found on "
 "the page."
-msgstr ""
+msgstr "需要的引擎已经加载完毕，可以在页面上找到画布。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:184
-#, fuzzy
 msgid "Command line arguments."
-msgstr "添加命令行目标(Command Line Target):"
+msgstr "命令行参数。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:186
-#, fuzzy
 msgid "Promise that resolves once the engine started."
-msgstr "返回引擎启动后解析的承诺。"
+msgstr "引擎启动后解析的承诺。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
 msgid ""
 "Initializes the engine if not yet initialized and starts the game with the "
 "main pack loaded from the passed URL."
-msgstr ""
+msgstr "初始化引擎(如果还没有初始化)，并使用从传递的URL加载的主包启动游戏。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:193
 msgid ""
@@ -69251,18 +69343,17 @@ msgstr "如果尚未加载引擎，则将使用传递的URL的基本路径来加
 msgid ""
 "This function ignores overrides of filenames and their extensions to start "
 "only the main pack passed as argument."
-msgstr ""
+msgstr "这个函数忽略文件名及其扩展名的覆盖，只启动作为参数传递的主包。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:199
 msgid ""
 "Path to the main pack to start. Also used as base path to load the engine if "
 "not loaded already."
-msgstr ""
+msgstr "从主包路径启动游戏。如果还没有加载引擎，也可用作加载引擎的基本路径。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:203
-#, fuzzy
 msgid "Promise that resolves once the game started."
-msgstr "返回游戏开始后解析的承诺。"
+msgstr "当游戏启动后承诺解析。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:206
 msgid "Configuring start-up behaviour"
@@ -69278,57 +69369,49 @@ msgstr "除启动引擎外，引擎实例的其他方法还允许配置行为:"
 msgid ""
 "Specify whether the Engine will be unloaded automatically after the instance "
 "is initialized."
-msgstr ""
+msgstr "指定初始化实例后是否自动卸载引擎。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:216
-#, fuzzy
 msgid ""
 "This frees browser memory by unloading files that are no longer needed once "
 "the instance is initialized. However, if more instances of the engine will "
 "be started, the Engine will have to be loaded again."
 msgstr ""
-"设置是否在初始化实例后自动卸载Engine。 这通过卸载初始化实例后不再需要的文件来"
-"释放浏览器内存。 但是，如果将启动更多引擎实例，则必须再次加载引擎。"
+"这通过卸载初始化实例后不再需要的文件来释放浏览器内存。 但是，如果将启动更多引"
+"擎实例，则必须再次加载引擎。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:220
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:239
 msgid "Enabled by default."
-msgstr ""
+msgstr "默认启用。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:222
-#, fuzzy
 msgid ""
 "``true`` if the engine shall be unloaded after initializing, ``false`` "
 "otherwise."
-msgstr "如果调试就是 ``true`` ，否则是 ``false``"
+msgstr "如果引擎在初始化后卸载，则为“真”，否则为“假”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:228
 msgid "Specify a canvas to use."
-msgstr ""
+msgstr "指定要使用的画布。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:230
-#, fuzzy
 msgid "By default, the first canvas element on the page is used for rendering."
-msgstr ""
-"默认情况下，页面上的第一个canvas元素用于呈现。 通过调用此方法，可以指定另一个"
-"画布。"
+msgstr "默认情况下，页面上的第一个画布元素用于呈现。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:232
 msgid "The canvas to use."
-msgstr ""
+msgstr "使用的画布。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:236
-#, fuzzy
 msgid ""
 "Specifies whether the canvas will be resized to the width and height "
 "specified in the project settings on start."
-msgstr ""
-"设置是否将画布调整为启动时项目设置中指定的宽度和高度。 默认为 ``true`` 。"
+msgstr "设置是否将画布调整为启动时项目设置中指定的宽度和高度。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:241
-#, fuzzy
 msgid "``true`` if the canvas shall be resized on start, ``false`` otherwise."
-msgstr "如果调试就是 ``true`` ，否则是 ``false``"
+msgstr "如果在开始时需要调整画布大小，则为\"真\"，否则为“假”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:246
 msgid ""
@@ -69342,22 +69425,20 @@ msgstr ""
 "域设置。该方法允许指定这样的自定义区域设置字符串。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:252
-#, fuzzy
 msgid "For example, with PHP:"
-msgstr "例如:"
+msgstr "例如，使用PHP的情况:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:258
-#, fuzzy
 msgid "Locale."
-msgstr "区域"
+msgstr "地区设置。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:261
 msgid "List of :ref:`locales <doc_locales>`."
-msgstr ""
+msgstr "列表:参考:`地区设置<文档_地区设置>`."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:265
 msgid "Specify the virtual filename of the executable."
-msgstr ""
+msgstr "指定可执行文件的虚拟文件名。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:267
 msgid ""
@@ -69365,15 +69446,14 @@ msgid ""
 "virtual filename is stored by the engine for compatibility with other "
 "platforms."
 msgstr ""
+"HTML5平台不存在真正的可执行文件。但是，引擎存储虚拟文件名是为了与其他平台兼"
+"容。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:271
-#, fuzzy
 msgid ""
 "By default, the base name of the loaded engine files is used. This method "
 "allows specifying another name."
-msgstr ""
-"默认情况下，已加载的引擎文件的基本名称用于可执行文件名。 此方法允许指定其他名"
-"称。"
+msgstr "默认情况下，使用加载的引擎文件的基本名称。此方法允许指定另一个名称。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:274
 msgid ""
@@ -69381,10 +69461,12 @@ msgid ""
 "<class_OS_method_get_executable_path>` and the automatically started main "
 "pack, :file:`{ExecutableName}.pck`."
 msgstr ""
+"这将影响:参考:`操作系统.获取可执行文件路径()<类_操作系统_方法_获取可执行文件"
+"路径>`和自动启动的主包:文件:`{可执行文件名称}.pck`。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:277
 msgid "Executable name."
-msgstr ""
+msgstr "可执行文件名称。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:280
 msgid "Customizing the presentation"
@@ -69396,13 +69478,15 @@ msgstr "以下方法用于实现演示:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:286
 msgid "Set the callback for displaying download progress."
-msgstr ""
+msgstr "设置显示下载进度的回调函数。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:288
 msgid ""
 "Callback called once per frame with two number arguments: bytes loaded so "
 "far, and total bytes to load."
 msgstr ""
+"每帧调用一个回调函数，有两个数值类型的参数：目前已加载的字节数，以及要加载的"
+"总字节数。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:299
 msgid "If the total is 0, it couldn't be calculated. Possible reasons include:"
@@ -69426,40 +69510,37 @@ msgstr "并非所有文件下载都已开始(通常在没有多线程的服务�
 msgid ""
 "For ease of use, the callback is only called once per frame, so that usage "
 "of ``requestAnimationFrame()`` is not necessary."
-msgstr ""
+msgstr "为便于使用，每帧只调用一次回调，因此，没有必要使用“请求动画帧()”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:313
 msgid "Specify the standard output stream callback."
-msgstr ""
+msgstr "指定标准输出流回调。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:315
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:334
 msgid "Callback function called with one argument, the string to print."
-msgstr ""
+msgstr "回调函数调用带有一个参数，要打印的字符串。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:325
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:344
-#, fuzzy
 msgid ""
 "This method should usually only be used in debug pages. The ``"
 "$GODOT_DEBUG_ENABLED`` placeholder can be used to check for this."
 msgstr ""
-"这些方法通常只应在调试页面中使用。 可以使用 ``$GODOT_DEBUG_ENABLED`` 占位符来"
-"检查这一点。"
+"这些方法通常只在调试页面中使用。 可以使用\"$GODOT_调试_激活\"占位符来检查这一"
+"点。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:328
-#, fuzzy
 msgid "By default, ``console.log()`` is used."
-msgstr "默认情况下，分别使用 ``console.log()`` 和 ``console.warn()`` 。"
+msgstr "默认情况下，使用的是“console.log()”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:332
 msgid "Specify the standard error stream callback."
-msgstr ""
+msgstr "调整标准错误流回调。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:347
-#, fuzzy
 msgid "By default, ``console.warn()`` is used."
-msgstr "默认情况下，分别使用 ``console.log()`` 和 ``console.warn()`` 。"
+msgstr "默认情况下，使用的是“console.warn()”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:350
 msgid "Accessing the Emscripten ``Module``"
@@ -69563,11 +69644,10 @@ msgstr ""
 "多线程，但不是在整个引擎中。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:12
-#, fuzzy
 msgid ""
 "Below is a list of ways multithreading can be used in different areas of "
 "Godot."
-msgstr "下面是Godot的相关领域列表以及它们如何与线程一起使用的介绍。"
+msgstr "下面是可以在Godot的不同区域使用多线程的方法列表。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:17
 msgid ""
@@ -69613,6 +69693,9 @@ msgid ""
 "but you risk resources (which are only loaded once in Godot) tweaked by the "
 "multiple threads, resulting in unexpected behaviors or crashes."
 msgstr ""
+"不过，只有当您有**一个**线程加载数据时，这才真正有用。从多个线程加载或创建场"
+"景块可能有效，但你要冒着资源被多线程调整的风险(在Godot中只加载一次)，从而导致"
+"意外行为或崩溃。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:47
 msgid ""
@@ -69621,6 +69704,9 @@ msgid ""
 "or set in multiple ones. Otherwise, you are safer just using the servers API "
 "(which is fully thread-safe) directly and not touching scene or resources."
 msgstr ""
+"只有当您“真正”知道自己在做什么，并且确信一个资源没有被多个资源使用或设置时，"
+"才可以使用多个线程来生成场景数据。否则，直接使用服务端的API(它是完全线程安全"
+"的)而不接触场景或资源会更安全。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:55
 msgid "GDScript arrays, dictionaries"
@@ -69779,11 +69865,11 @@ msgstr "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:4
 msgid "Fixing jitter and stutter"
-msgstr ""
+msgstr "修复抖动和不连贯"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:7
 msgid "What are jitter and stutter?"
-msgstr ""
+msgstr "什么是抖动和不连贯？"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:9
 msgid ""
@@ -69792,31 +69878,34 @@ msgid ""
 "These effects are mostly visible in games where the world moves at a "
 "constant speed in a fixed direction, like runners or platformers."
 msgstr ""
+"抖动(Jitter)和不连贯(stutter)是屏幕上物体可见运动的两种不同变化，可能会影响游"
+"戏体验，即使游戏是全速运行。这些问题在世界以恒定速度朝着固定方向运动的游戏中"
+"影响最明显，比如跑酷或平台类游戏。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:14
-#, fuzzy
 msgid "Distinguishing between them"
-msgstr "完成重生系统"
+msgstr "它们之间的区别"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:16
 msgid ""
 "A game running at a normal framerate without exhibiting any effect will "
 "appear smooth:"
-msgstr ""
+msgstr "一款在正常帧下运行，而不显示任何效果的游戏将显得平滑:"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:20
 msgid "A game exhibiting *jitter* will shake constantly in a very subtle way:"
-msgstr ""
+msgstr "游戏展示了*抖动*将以非常微妙的方式持续抖动:"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:24
 msgid ""
 "Finally, a game exhibiting *stutter* will appear smooth, but appear to "
 "*stop* or *roll back a frame* every few seconds:"
 msgstr ""
+"最后，一款“不连贯”的游戏将会显得流畅，但似乎每隔几秒钟就会“停顿”或“回滚一帧”:"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:30
 msgid "Jitter"
-msgstr ""
+msgstr "抖动"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:32
 msgid ""
@@ -69825,6 +69914,8 @@ msgid ""
 "the monitor refresh rate. Check whether your monitor refresh rate is "
 "different from 60 Hz."
 msgstr ""
+"产生抖动的原因有很多，最典型的情况发生在运行游戏时的*物理频率*(通常为60赫兹)"
+"以与显示器刷新率不同。检查您的显示器刷新率是否为60赫兹。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:35
 msgid ""
@@ -69833,6 +69924,8 @@ msgid ""
 "timer was introduced that tries to synchronize with refresh as best as "
 "possible."
 msgstr ""
+"通常情况下这不是问题，在刷新率高于60hz时人眼几乎感觉不到，从Godot 3.1版本开"
+"始，引入了一个帧定时器，它试图尽可能地与刷新率同步。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:38
 msgid ""
@@ -69842,10 +69935,13 @@ msgid ""
 "does some improvements to this, from allowing kinematic bodies to be "
 "animated in the regular _process loop, to further fixes in the frame timer."
 msgstr ""
+"有时只有一些对象会出现抖动(角色或背景)。当它们在不同的时间源中处理时，就会发"
+"生这种情况(一个在物理步骤中处理，另一个在空闲步骤中处理)。Godot 3.1版本对此做"
+"了一些改进，从允许运动体在规则的“_处理”循环中被动画化，进一步修正帧定时器。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:44
 msgid "Stutter"
-msgstr ""
+msgstr "不连贯"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:46
 msgid ""
@@ -69853,6 +69949,8 @@ msgid ""
 "one, is the game not being able to keep full framerate performance. Solving "
 "this is game specific and will require optimization."
 msgstr ""
+"产生不连贯的两个不同原因。第一个，也是最明显的一个，游戏无法保持完整的帧速率"
+"性能。这个游戏的具体解决方案是需要进行优化。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:49
 msgid ""
@@ -69860,6 +69958,8 @@ msgid ""
 "engine or game but the underlying operating system. Here is some information "
 "regarding stutter on different OSs."
 msgstr ""
+"第二个原因更复杂，因为它通常与引擎或游戏无关，而与底层操作系统有关。下面是不"
+"同操作系统上，关于不连贯的一些信息。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:55
 msgid ""
@@ -69869,6 +69969,10 @@ msgid ""
 "avoid this, starting with 3.1, Godot raises the game priority to \"Above "
 "Normal\". This helps considerably but may not completely eliminate stutter."
 msgstr ""
+"众所周知，Windows操作系统在窗口化游戏中会导致不连贯。这主要取决于您所安装的硬"
+"件，驱动程序版本和并行运行的进程(例如，打开多个浏览器选项卡，可能导致正在运行"
+"中的游戏出现不连贯)。为了避免这种情况，从3.1版本开始，Godot将游戏的优先级提升"
+"到“高于标准”。这也许不能完全消除不连贯现象，但这种做法有很大的改进。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:60
 msgid ""
@@ -69878,12 +69982,18 @@ msgid ""
 "games and most users won't play games windowed (games that are played in a "
 "window, e.g. puzzle games, will usaully not exhibit this problem anyway)."
 msgstr ""
+"考虑到这一点，完全需要给你的游戏充分的特权，使其成为“时间关键”，但不建议这么"
+"做。有些游戏可以做到这一点，但建议你学会接受这个问题，这对于Windows平台的游戏"
+"来说是很常见的，大多数用户不会玩窗口化游戏（在窗口内玩的游戏，例如益智游戏，"
+"通常不会显示这个问题）。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:64
 msgid ""
 "For fullscreen, Windows gives special priority to the game so stutter is no "
 "longer visible and very rare. This is how most games are played."
 msgstr ""
+"对于全屏来说，Windows系统对游戏给予了特殊的优先级，所以不连贯现象不再可见，也"
+"非常罕见。大多数游戏都是这样玩的。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:68
 msgid "Linux (X11)"
@@ -69897,12 +70007,17 @@ msgid ""
 "this problem (e.g. KWin), so it is advised to try using a different one to "
 "rule it out as the cause."
 msgstr ""
+"在Linux桌面系统上可以看到不连贯现象，这通常与不同的视频驱动程序和合成程序相"
+"关。Nouveau驱动程序经常表现出这一点，而使用AMD和英伟达的驱动程序却不会出现。"
+"一些组合程序也可能引发这个问题(例如KWin)，我们建议用另一种方法来排除其原因。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:74
 msgid ""
 "There is no workaround for driver or compositor stuttering other than "
 "reporting it as an issue to the driver or compositor developers."
 msgstr ""
+"对于驱动程序或组合程序出现的不连贯现象，除了将其作为问题报告给驱动程序或组合"
+"程序开发人员外，没有其他解决办法。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:80
 msgid ""
@@ -69910,6 +70025,8 @@ msgid ""
 "when running on fullscreen (this is a macOS bug). If you have a machine "
 "exhibiting this behavior, please let us know."
 msgstr ""
+"通常情况下，mac平台不会出现不连贯现象，尽管最近在全屏运行时报告了一些bug(这是"
+"mac平台自身的bug)。如果你有一台机器表现出这种行为，请将这问题提交给我们。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:86
 msgid ""
@@ -69918,6 +70035,9 @@ msgid ""
 "Kindle Fire is known to be one). If you see this problem on Android, please "
 "let us know."
 msgstr ""
+"通常情况下，安卓平台不会出现不连贯和抖动现象，因为运行活动拥有所有的优先级。"
+"也就是说，可能会出现问题的设备(旧式的金读之光(Kindle Fire)就是其中之一)。如果"
+"你在安卓平台上看到这些问题，请将问题提交给我们。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:92
 msgid ""
@@ -69925,10 +70045,12 @@ msgid ""
 "versions of the operating system may exhibit problems. This is generally "
 "unavoidable."
 msgstr ""
+"iOS设备通常没有不连贯现象，但运行新版操作系统的旧式设备可能会出现问题。这通常"
+"是不可避免的。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:96
 msgid "Reporting stutter or jitter problems"
-msgstr ""
+msgstr "报告不连贯或抖动问题"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:98
 msgid ""
@@ -69937,6 +70059,9 @@ msgid ""
 "information possible about device, operating system, driver versions, etc. "
 "This may help to better troubleshoot it."
 msgstr ""
+"如果您报告的不连贯或抖动问题(开启一个问题)不是由上述原因引起的，请尽可能详细"
+"说明关于您的设备配置，使用的操作系统，以及驱动程序版本等信息。这有助于我们更"
+"好地排除故障。"
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:101
 msgid ""
@@ -69945,6 +70070,9 @@ msgid ""
 "Provide a project that can be used to reproduce the issue, and if possible a "
 "screen capture demonstrating the bug."
 msgstr ""
+"还要确保根据所展示的行为使用正确的术语(抖动或不连贯)。这有助于更快地理解您的"
+"问题。请提供可用来复现问题的项目，如果可能的话，还需要您提供一张屏幕截图来阐"
+"述这个bug。"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:4
 msgid "Handling quit requests"
@@ -70029,14 +70157,13 @@ msgid "How pausing works"
 msgstr "如何暂停工作"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:22
-#, fuzzy
 msgid ""
 "To set pause mode, the pause state must be set. This is done by assigning "
 "``true`` to the :ref:`SceneTree.paused <class_SceneTree_property_paused>` "
 "property:"
 msgstr ""
-"要设置暂停模式，必须设置暂停状态。 这是通过为 :ref:`SceneTree.paused "
-"<class_SceneTree_property_paused>` 成员变量赋予“true”值来完成的:"
+"要设置暂停模式，必须设置暂停状态。 这是通过为 :参考:`场景树.暂停<类_场景树_属"
+"性_暂停>` 成员变量赋予“真”值来完成的:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:34
 msgid "Doing so will have the following behavior:"
@@ -70047,15 +70174,13 @@ msgid "2D and 3D physics will be stopped."
 msgstr "2D和3D物理将被停止。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:37
-#, fuzzy
 msgid ""
 "``_process`` and ``_physics_process`` will not be called anymore in nodes."
-msgstr "将不再在节点中调用_process和_physics_process。"
+msgstr "将不再在节点中调用“_处理”和“_物理_处理”函数。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:38
-#, fuzzy
 msgid "``_input`` and ``_input_event`` will not be called anymore either."
-msgstr "_input和_input_event也不再被调用。"
+msgstr "“_输入”和“_输入_事件”也不再被调用。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:40
 msgid ""
@@ -71382,9 +71507,8 @@ msgstr ""
 "路径。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:4
-#, fuzzy
 msgid "Differences between GLES2 and GLES3"
-msgstr "C#和GDScript之间的一般差异"
+msgstr "GLES2和GLES3之间的一般差异"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:6
 msgid ""
@@ -71392,6 +71516,8 @@ msgid ""
 "design and are not the result of bugs. There may be differences that are "
 "unintentional, but they should be reported as bugs."
 msgstr ""
+"本页面记录了GLES2和GLES3之间的差异，这些差异是经过设计的，不是因bug造成的。可"
+"能有些差异是无心之过，但它们应该被报告为bug。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:9
 msgid ""
@@ -71401,6 +71527,10 @@ msgid ""
 "GLES3 backend maps to OpenGL 3.3 on desktop, OpenGL ES 3.0 on mobile and "
 "WebGL 2.0 on the web."
 msgstr ""
+"“GLES2”和“GLES3”是Godot中，两个基于opengl呈现后端的名称。在图形应用程序编程接"
+"口方面，GLES2后端映射到桌面的OpenGL 2.1，移动版的OpenGL ES 2.0和web版的WebGL "
+"1.0。GLES3后端映射到桌面的OpenGL 3.3，移动版的OpenGL ES 3.0和web版的WebGL "
+"2.0。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:15
 msgid "Particles"
@@ -71414,17 +71544,21 @@ msgid ""
 "<class_CPUParticles2D>`, which provides a similar interface to a :ref:"
 "`ParticlesMaterial <class_ParticlesMaterial>`."
 msgstr ""
+"GLES2不能使用:参考:`粒子<类_粒子>`或:参考:`二维粒子<类_二维粒子>`节点，因为它"
+"们需要高级GPU特性。相反，使用:参考:`CPU粒子<类_CPU粒子>`或:参考:`CPU二维粒子<"
+"类_CPU二维粒子>`，它提供了与:参考:`粒子材质<类_粒子材质>`类似的接口。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:22
 msgid ""
 "Particles and Particles2D can be converted to their CPU equivalent node with "
 "the \"Convert to CPUParticles\" option in the editor."
 msgstr ""
+"粒子和二维粒子可以通过编辑器中的“转换为CPU粒子”选项，转换为它们的等效CPU节"
+"点。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:26
-#, fuzzy
 msgid "``SCREEN_TEXTURE`` mip-maps"
-msgstr "SCREEN_TEXTURE示例"
+msgstr "“屏幕_纹理”变频译码"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:28
 msgid ""
@@ -71432,28 +71566,32 @@ msgid ""
 "<class_ShaderMaterial>`) does not have computed mip-maps. So when accessing "
 "at a different LOD, the texture will not appear blurry."
 msgstr ""
+"在GLES2中，“屏幕_纹理”(通过:参考:`着色器纹理<类_着色器纹理>`访问)没有计算变频"
+"译码。所以当访问不同的细节级别时，纹理不会变得模糊。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:32
-#, fuzzy
 msgid "``DEPTH_TEXTURE``"
-msgstr "DEPTH_TEXTURE"
+msgstr "“深度图纹理”"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:34
 msgid ""
 "While GLES2 supports ``DEPTH_TEXTURE`` in shaders, it may not work on some "
 "old hardware (especially mobile)."
 msgstr ""
+"虽然GLES2在着色器中支持“深度图纹理”，可能在一些旧的硬件上(特别是移动设备)不能"
+"工作。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:37
-#, fuzzy
 msgid "Color space"
-msgstr "等宽字体"
+msgstr "色彩空间"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:39
 msgid ""
 "GLES2 and GLES3 are in different color spaces. This means that colors will "
 "appear slightly different between them  especially when lighting is used."
 msgstr ""
+"GLES2和GLES3位于不同的色彩空间中。这表示颜色之间会有细微的差别，特别是在使用"
+"灯光的时候。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:42
 msgid ""
@@ -71461,11 +71599,13 @@ msgid ""
 "statement check and see if the output is in sRGB, using ``OUTPUT_IS_SRGB``. "
 "``OUTPUT_IS_SRGB`` is ``true`` in GLES2 and ``false`` in GLES3."
 msgstr ""
+"如果您在游戏中同时使用GLES2和GLES3，您可以使用“如果”（if）语句检查输出是否为"
+"sRGB，使用“输出_为_SRGB”。“输出_为_SRGB”在GLES2中返回“真”，在GLES3中返"
+"回“假”。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:47
-#, fuzzy
 msgid "HDR"
-msgstr "HUD"
+msgstr "高动态范围"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
 msgid ""
@@ -71473,17 +71613,18 @@ msgid ""
 "HDR is set for your project, or for a given viewport, Godot will still user "
 "Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` range."
 msgstr ""
+"GLES不能使用高动态范围(HDR)渲染功能。如果您为项目或指定视区设置了HDR, Godot仍"
+"然会使用低动态范围(LDR)，这将视区值范围限制在“0-1”之间。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:54
-#, fuzzy
 msgid "SpatialMaterial features"
-msgstr "空间材质"
+msgstr "空间材质特性"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:56
 msgid ""
 "In GLES2, the following advanced rendering features in the :ref:"
 "`SpatialMaterial <class_SpatialMaterial>` are missing:"
-msgstr ""
+msgstr "在GLES2中，在:参考:`空间材质<类_空间材质>`中缺少以下高级渲染特性："
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
 #, fuzzy
@@ -71491,13 +71632,12 @@ msgid "Subsurface scattering"
 msgstr "次表面散射"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
-#, fuzzy
 msgid "Depth mapping"
-msgstr "现场阴影贴图"
+msgstr "深度映射"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:64
 msgid "When using SpatialMaterials they will not even appear in the editor."
-msgstr ""
+msgstr "使用空间材质时，它们甚至不会出现在编辑器中。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:66
 msgid ""
@@ -71506,47 +71646,43 @@ msgid ""
 "still be able to set the ``SSS`` built-in (which normally adds subsurface "
 "scattering) in your shader, but nothing will happen."
 msgstr ""
+"在自定义:参考:`着色器材质<类_着色器材质>`中，您可以为这些特性设置值，但它们是"
+"非功能性的。例如,您仍然可以在着色器中设置内置的“次表面散射”(通常会增加次表面"
+"散射)，但什么都不会发生。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:71
-#, fuzzy
 msgid "Environment features"
-msgstr "环境变量"
+msgstr "环境特性"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:73
-#, fuzzy
 msgid ""
 "In GLES2, the following features in the :ref:`Environment "
 "<class_Environment>` are missing:"
-msgstr "环境光 :ref:`Environment <class_Environment>`。"
+msgstr "在GLES2中，缺少:参考:`环境<类_环境>`中的以下特性："
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:75
-#, fuzzy
 msgid "Auto exposure"
-msgstr "自动曝光(HDR)"
+msgstr "自动曝光"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
-#, fuzzy
 msgid "Tonemapping"
-msgstr "品质图"
+msgstr "色调映射"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:77
-#, fuzzy
 msgid "Screen space reflections"
-msgstr "屏幕空间反射(SSR)"
+msgstr "屏幕空间反射"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:78
-#, fuzzy
 msgid "Screen space ambient occlusion"
-msgstr "屏幕空间环境遮挡(SSAO)"
+msgstr "屏幕空间环境遮挡"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:79
-#, fuzzy
 msgid "Depth of field"
-msgstr "景深/远模糊"
+msgstr "景深"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:80
 msgid "Glow (also known as bloom)"
-msgstr ""
+msgstr "辉光(也称为光晕)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:81
 #, fuzzy
@@ -71555,11 +71691,11 @@ msgstr "调整"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:83
 msgid "That means that in GLES2 environments you can only set:"
-msgstr ""
+msgstr "这意味着在GLES2环境中，您只能设置:"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:85
 msgid "Sky (including procedural sky)"
-msgstr ""
+msgstr "天空(包括程序生成天空)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:86
 #, fuzzy
@@ -71567,9 +71703,8 @@ msgid "Ambient light"
 msgstr "环境光"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:90
-#, fuzzy
 msgid "GIProbes"
-msgstr "GI探针"
+msgstr "全局光照探测器"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:92
 msgid ""
@@ -71577,22 +71712,23 @@ msgid ""
 "`Baked Lightmaps <class_BakedLightmap>`. For a description of how baked "
 "lightmaps work see the :ref:`Baked Lightmaps tutorial <doc_baked_lightmaps>`."
 msgstr ""
+":参考:`全局光照探测器<类_全局光照探测器>` 在GLES2中不起作用。而是使用:参考:`"
+"烘焙灯光贴图<类_烘焙灯光贴图>`。有关烘焙灯光贴图工作原理的描述，请参见:参考:`"
+"烘焙灯光贴图教程<文档_烘焙_灯光贴图>`。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:96
-#, fuzzy
 msgid "Contact shadows"
-msgstr "灯光和阴影"
+msgstr "接触阴影"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:98
 msgid ""
 "The ``shadow_contact`` property of :ref:`Lights <class_Light>` is not "
 "supported in GLES2 and so does nothing."
-msgstr ""
+msgstr "GLES2中不支持“阴影_接触”属性:参考:`灯光<类_灯光>`，并且无效。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:101
-#, fuzzy
 msgid "Light performance"
-msgstr "性能"
+msgstr "灯光性能"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:103
 msgid ""
@@ -71601,6 +71737,9 @@ msgid ""
 "done in a single pass). Try to limit scenes to as few lights as possible in "
 "order to achieve greatest performance."
 msgstr ""
+"在GLES2中，使用多盏灯光会造成性能不佳，因为每盏灯光都在一个单独的渲染通道中处"
+"理(与GLES3相反，GLES3是一次性完成渲染)。尝试将场景灯光控制在尽可能少的情况，"
+"以达到最好效果。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:110
 msgid ""
@@ -71609,30 +71748,32 @@ msgid ""
 "sure to set the project setting ``rendering/vram_compression/import_etc`` "
 "and then reimport textures."
 msgstr ""
+"在移动端，GLES2需要进行纹理压缩，而GLES3需要ETC2纹理压缩。默认启用ETC2纹理压"
+"缩，因此，如果使用GLES2导出到移动端，请确保在项目设置中设定了``渲染/显存_压"
+"缩/导入_etc压缩``，然后重新导入纹理。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:115
-#, fuzzy
 msgid "Blend shapes"
-msgstr "碰撞形状"
+msgstr "融合变形"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:117
 msgid "Blend shapes are not supported in GLES2."
-msgstr ""
+msgstr "在GLES2中不支持融合变形。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:122
 msgid ""
 "GLES3 provides many built-in functions that GLES2 does not. Below is a list "
 "of functions that are not available or are have limited support in GLES2."
 msgstr ""
+"GLES3提供了许多GLES2没有提供的内置函数。下面是在GLES2中不可用或支持有限的函数"
+"列表。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:125
-#, fuzzy
 msgid ""
 "For a complete list of built-in GLSL functions see the :ref:`Shading "
 "Language doc <doc_shading_language>`."
 msgstr ""
-"有关Godot着色语言的详细信息，请参阅 :ref:`Shading Language "
-"<doc_shading_language>` 参考。"
+"有关内置GLSL函数的完整列表，请参见:参考:`着色语言文档<文档_着色_语言>`。"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:128
 #: ../../docs/development/compiling/compiling_for_android.rst:9
@@ -71644,18 +71785,17 @@ msgstr "注意"
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:178
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:180
 msgid "**bias** not available in vertex shader"
-msgstr ""
+msgstr "**偏差**在顶点着色器中不可用"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:182
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:184
 msgid "Only available in vertex shader on some hardware"
-msgstr ""
+msgstr "只在某些硬件的顶点着色器中可用"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:186
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:188
-#, fuzzy
 msgid "Only available in vertex shader"
-msgstr "我们像这样定义顶点着色器:"
+msgstr "只在顶点着色器中可用"
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
@@ -71979,8 +72119,8 @@ msgid ""
 "additions, removals etc. You have more chances to die struck by lightning "
 "than needing to clean and rebuild in SCons."
 msgstr ""
-"不论对项目做出多少修改、配置、增加、删除之类的事情，Scons 都不会把构建(build)"
-"搞坏。需要您用 Scons 进行清理和重新构建的几率比被雷劈死还要低。"
+"不论对项目做出多少修改、配置、增加、删除之类的事情，SCons都不会把构建工作搞"
+"砸。你需要通过Scons进行清理和重新构建的机会比你被闪电击中的几率还低。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:28
 msgid ""
@@ -73596,10 +73736,9 @@ msgstr ""
 "SCons(您可以从macports获得它，您应该能够在安装时在终端中运行 ``scons`` )"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:13
-#, fuzzy
 msgid ""
 "Xcode 10.0 (or later) with the iOS (10.0) SDK and the command line tools."
-msgstr "Xcode与iOS SDK和命令行工具。"
+msgstr "Xcode 10.0(或更高版本)，使用iOS (10.0) SDK和命令行工具。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:21
 msgid "Open a Terminal, go to the root dir of the engine source code and type:"
@@ -73626,17 +73765,15 @@ msgid "for a Simulator executable."
 msgstr "用于模拟器可执行文件。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:44
-#, fuzzy
 msgid ""
 "For recent devices, Apple requires 64-bit versions of application binaries "
 "when you are uploading to the Apple Store. The best way to provide these is "
 "to create a bundle in which there are both 32-bit and 64-bit binaries, so "
 "every device will be able to run the game."
 msgstr ""
-"此外，由于Apple在上传到iStore时需要64位版本的应用程序二进制文件。 提供这些的"
-"最好方法是创建一个包含32位和64位二进制文件的包，这样每个设备都可以运行游戏。 "
-"它可以分三步完成，首先编译32位版本，然后编译64位版本，然后使用 ``lipo`` 将它"
-"们捆绑成一个胖二进制文件，所有这些步骤都可以使用以下命令执行:"
+"对于最新的设备，当你上传到苹果商店时，苹果官方需要64位版本的应用程序二进制文"
+"件。最好的方法是创建一个包，其中包含32位和64位的二进制文件，这样每个设备都可"
+"以运行游戏。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:47
 msgid ""
@@ -73645,6 +73782,8 @@ msgid ""
 "\"universal\" binary. All those steps can be performed with following "
 "commands:"
 msgstr ""
+"可以分三步完成：首先编译32位版本，再编译64位版本，然后使用“lipo”命令将它们绑"
+"定到一个“通用”二进制文件中。所有这些步骤都可以通过以下命令执行:"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:56
 msgid ""
@@ -73652,6 +73791,8 @@ msgid ""
 "linker errors with dependencies), you'll need to build and lipo the "
 "``x86_64`` architecture as well."
 msgstr ""
+"如果您还想提供一个模拟器构建(为了减少任何依赖项链接器错误的机会)，您还需要构"
+"建和修改“x86_64”体系结构。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:66
 msgid "Run"
@@ -74160,6 +74301,8 @@ msgid ""
 "configuration file as double backslashes ``\\\\`` or use Unix-style paths "
 "with a single forward slash ``/``."
 msgstr ""
+"在Windows平台上，确保将Emscripten配置文件中的路径反斜杠，转义为双反斜杠“\\"
+"\\”，或者使用带有单个正斜杠“/”的unix样式的路径。"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:36
 msgid ""
@@ -74797,9 +74940,8 @@ msgstr ""
 "果您要发布商业游戏，请务必签署您的二进制文件或使用将分发它们的平台。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:6
-#, fuzzy
 msgid "Compiling with script encryption key"
-msgstr "连接时间优化编译"
+msgstr "使用脚本加密密钥编译"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:8
 msgid ""
@@ -74810,62 +74952,68 @@ msgid ""
 "compiled, optimized and without symbols, it would take some effort to find "
 "it."
 msgstr ""
+"导出对话框为您提供使用256位AES密钥加密脚本的选项，当您发布游戏时，会确保你的"
+"脚本不存储在纯文本文件内，这样就不容易被一些脚本小子攻击了。当然，密钥需要存"
+"储在二进制文件中，但是如果它已经被编译、优化过，而没有做标记，要找到它得花点"
+"力气。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:14
 msgid ""
 "For this to work, you need to build the export templates from source, with "
 "that same key."
-msgstr ""
+msgstr "要实现这一点，您需要使用相同的键从源代码构建导出模板。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:18
-#, fuzzy
 msgid "Step by step (Linux)"
-msgstr "入门教程"
+msgstr "逐步教程(Linux平台)"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:20
 msgid ""
 "Generate a 256bit AES key in HEX. You can use the aes-256-cbc variant from "
 "`this service <https://asecuritysite.com/encryption/keygen>`_."
 msgstr ""
+"生成一个256位AES十六进制的密钥。您可以使用`此服务<https://asecuritysite.com/"
+"encryption/keygen>`_的aes-256-cbc变体。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:23
 msgid "Alternatively, you can generate it yourself by using OpenSSL:"
-msgstr ""
+msgstr "或者，您自己可以通过使用OpenSSL生成："
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:29
-#, fuzzy
 msgid "This should output the following to ``godot.gdkey`` file:"
-msgstr "将以下内容添加到``Globals.gd``:"
+msgstr "应该输出至以下``godot.gdkey``文件:"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:37
 msgid ""
 "You can generate the key without redirecting the output to a file, but that "
 "way you can minimize the risk of exposing the key."
 msgstr ""
+"您可以在不重定向输出到文件的情况下生成密钥，但这样能将暴露密钥的风险降到最"
+"低。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:41
 msgid ""
 "Set this key as environment variable in the console that you will use to "
 "compile Godot, like this:"
-msgstr ""
+msgstr "将此密钥设置为控制台中的环境变量，您可以使用它来编译Godot，如下所示:"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:49
 msgid ""
 "Compile Godot export templates and set them as custom export templates in "
 "the export preset options."
-msgstr ""
+msgstr "编译Godot导出模板，并在导出预设选项中将它们设置为自定义导出模板。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:52
 msgid "Set the encryption key in the ``Script`` tab of the export preset:"
-msgstr ""
+msgstr "在导出预设的“脚本”选项卡中，设置加密密钥："
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:56
 msgid "Export the project. The game should run with encrypted scripts now."
-msgstr ""
+msgstr "导出项目。游戏现在应该使用加密脚本运行。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:59
 msgid "Possible Errors"
-msgstr ""
+msgstr "可能出现的错误"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:61
 msgid ""
@@ -74873,6 +75021,8 @@ msgid ""
 "your Godot build. Godot is encrypting the scripts during export, but can't "
 "read them at runtime."
 msgstr ""
+"如果出现如下错误，这意味着密钥没有正确地包含在Godot构建中。Godot在导出过程中"
+"对脚本进行加密，但在运行时无法读取它们。"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:4
 msgid "Introduction to Godot development"
@@ -75086,9 +75236,8 @@ msgstr ""
 "e`` 。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:79
-#, fuzzy
 msgid "Updating sources after pulling latest commits"
-msgstr "在提取最新提交后更新源"
+msgstr "获取最新提交后更新源文件"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:81
 msgid ""
@@ -75335,9 +75484,8 @@ msgid ""
 msgstr "完成之后，您就可以使用代码跳转、自动补全、语法高亮等功能了。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:231
-#, fuzzy
 msgid "Scheme setup"
-msgstr "设置 Scheme"
+msgstr "设置计划"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:233
 msgid "Edit Build Scheme of External Build Target:"
@@ -76669,15 +76817,15 @@ msgstr ""
 "都编译进我们的可执行文件中。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:258
-#, fuzzy
 msgid ""
 "However the trade-off is every single change means a full recompilation of "
 "the game. Even if SCons is able to detect and recompile only the file that "
 "have changed, finding such files and eventually linking the final binary is "
 "a long and costly part."
 msgstr ""
-"然而，他的缺点是每次对模块进行修改您都需要重新编译并链接整个引擎。即使 Scons "
-"能够检测到只需要重新编译一小部分文件， 执行这种链接操作会耗费不少时间。"
+"然而，每一次改变都意味着游戏的全面重新编译。即使SCons能够只检测和重新编译已更"
+"改的文件，找到这样的文件，并最终链接到最终的二进制文件，是一个漫长而成本高昂"
+"的过程。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:263
 msgid ""
@@ -79264,12 +79412,12 @@ msgstr ""
 "``git show`` 将显示上次提交的更改。 您还可以指定提交哈希以查看该提交的更改。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:244
-#, fuzzy
 msgid ""
 "That's a lot to memorize! Don't worry, just check this cheat sheet when you "
 "need to make changes, and learn by doing."
 msgstr ""
-"记住这个很多！ 不用担心，只需在需要进行更改时查看此备忘单，并边做边学。"
+"要记住的东西太多了！别担心，当你需要修改的时候，看看这张备忘单，在实践中学"
+"习。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:247
 msgid "Here's how the shell history could look like on our example:"
@@ -80826,11 +80974,10 @@ msgstr ""
 "``可能不明确，不适用于每个成员变量。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:338
-#, fuzzy
 msgid ""
 "Also surround boolean values, variable names and methods with ``[code][/"
 "code]``."
-msgstr "还用[code][/code]包围布尔值，变量名和方法。"
+msgstr "也包括布尔值，变量名和带有“[code][/code]”的方法。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:340
 msgid "**Do** start with \"if true\":"
@@ -80913,9 +81060,8 @@ msgstr ""
 "或``modulate color``都是``properties``。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:389
-#, fuzzy
 msgid "Image contribution guidelines"
-msgstr "图片贡献指南"
+msgstr "图像贡献指南"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:391
 msgid ""
@@ -81409,9 +81555,8 @@ msgstr "调用[method hide]。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
-#, fuzzy
 msgid "See :ref:`hide <class_spatial_method_hide>`."
-msgstr "请参阅 :ref:`hide <class_spatial_method_hide>`。"
+msgstr "参阅:参考:`隐藏<类_空间_方法_隐藏>`。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "[method Class.methodname]"
@@ -81439,9 +81584,8 @@ msgstr "获取[member scale]。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
-#, fuzzy
 msgid "Get :ref:`scale <class_node2d_property_scale>`."
-msgstr "获取 :ref:`scale <class_node2d_property_scale>`。"
+msgstr "获取:参考:`缩放<类_二维节点_属性_缩放>`。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "[member Class.membername]"
@@ -81469,9 +81613,8 @@ msgstr "Emit [signal renamed]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
-#, fuzzy
 msgid "Emit :ref:`renamed <class_node_signal_renamed>`."
-msgstr "发射 :ref:`renamed <class_node_signal_renamed>`."
+msgstr "发射:参考:`重命名<类_节点_信号_重命名>`。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "[signal Class.signalname]"
@@ -81546,14 +81689,13 @@ msgid "*See below.*"
 msgstr "*见下文。*"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:252
-#, fuzzy
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
 "always use **four spaces** for indentation (the parser will delete tabs). "
 "Example:"
 msgstr ""
-"对于预先格式化的代码块使用 ``[codeblock]`` 。 在 ``[codeblock]`` 里面，总是使"
-"用空格来缩进(解析器会删除标签)。 例:"
+"对预格式化的代码块使用“[codeblock]”。在“[codeblock]”中，始终使用**四个空格**"
+"进行缩进(解析器将删除制表符)。例如:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "Will display as:"
@@ -81585,24 +81727,21 @@ msgid "Localization"
 msgstr "本地化"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:282
-#, fuzzy
 msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 msgstr ""
-"您可以帮助我们翻译或校对托管在 `Weblate <https://hosted.weblate.org/engage/"
-"godot-engine/>`_ 上的官方Godot文档。"
+"在Hosted Weblate上的文档可以被翻译成任何语言<https://hosted.weblate.org/"
+"engage/godot-engine/>。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:285
-#, fuzzy
 msgid ""
 "Translated strings are synced manually by documentation maintainers in the "
 "`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`__ "
 "repository."
 msgstr ""
-"总是使用这些XML文件来编辑API引用。不要编辑 :ref:`in the online documentation "
-"<toc-class-ref>` 生成的.rst文件，它托管在 `godot-docs <https://github.com/"
-"godotengine/godot-docs>`_ 存储库中。"
+"翻译后的字符串由文档维护人员在“godot-docs-l10n”存储库中手动同步更新。"
+"<https://github.com/godotengine/godot-docs-l10n>。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:289
 msgid ""
@@ -81610,11 +81749,12 @@ msgid ""
 "of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "
 "think that a new language is complete enough to get its own instance."
 msgstr ""
+"具有良好完成程度的语言具有自己的ReadTheDocs本地化实例。 如果您认为新语言足够"
+"完整以获得自己的实例，请在``godot-docs-l10n``存储库中打开一个问题。"
 
 #: ../../docs/community/channels.rst:4
-#, fuzzy
 msgid "Community channels"
-msgstr "社区"
+msgstr "社区渠道"
 
 #: ../../docs/community/channels.rst:6
 msgid ""
@@ -81637,9 +81777,8 @@ msgstr ""
 "到。"
 
 #: ../../docs/community/channels.rst:13
-#, fuzzy
 msgid "Q&A"
-msgstr "Q & A"
+msgstr "常见问题与答案"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"
@@ -81741,16 +81880,14 @@ msgid "`Forum (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
 msgstr "`论坛 (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
 
 #: ../../docs/community/tutorials.rst:4
-#, fuzzy
 msgid "Tutorials and resources"
-msgstr "节点和资源"
+msgstr "教程和资源"
 
 #: ../../docs/community/tutorials.rst:6
-#, fuzzy
 msgid ""
 "This is a list of third-party tutorials and other resources created by the "
 "community that may be of interest."
-msgstr "这是一个由社区创建并且您可能感兴趣的第三方教程列表。"
+msgstr "这是由社区创建的第三方教程和其他您可能感兴趣的资源列表。"
 
 #: ../../docs/community/tutorials.rst:10
 msgid "Video tutorials"
@@ -81793,15 +81930,15 @@ msgid "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
 msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
 
 #: ../../docs/community/tutorials.rst:19
-#, fuzzy
 msgid "Text tutorials"
-msgstr "教程"
+msgstr "文字教程"
 
 #: ../../docs/community/tutorials.rst:21
 msgid ""
 "`KidsCanCode: An ongoing tutorial series <http://kidscancode.org/blog/tags/"
 "godot/>`_"
 msgstr ""
+"`KidsCanCode: 正在进行的教程系列<http://kidscancode.org/blog/tags/godot/>`_"
 
 #: ../../docs/community/tutorials.rst:26
 msgid ""

@@ -7,10 +7,12 @@
 # Andreas During <anduring@web.de>, 2019.
 # Arthur S. Muszynski <artism90@gmail.com>, 2018-2019.
 # Carsten Nikiel <carsten@nikiel.de>, 2018-2019.
+# CatgamerHD <katzenspieler.catgamerhd04@gmail.com>, 2019.
 # chillhelm <wilhelm@neubert.online>, 2018.
 # Christoph Brosch <christoph.brosch@outlook.de>, 2019.
 # Constantin <commandr@gmx.net>, 2019.
 # DafabHoid <github@dafabhoid.de>, 2018.
+# DagobertDev <mannesdavid@protonmail.com>, 2019.
 # datenbauer <d-vaupel@web.de>, 2019.
 # David <david.breier@outlook.de>, 2018.
 # Eduard Albrecht <eddysoulo91@googlemail.com>, 2019.
@@ -22,8 +24,11 @@
 # Gordon <gkone@gmx.net>, 2018.
 # Headmade Games <janusdr@gmail.com>, 2018-2019.
 # heroldini <heroldini@gmail.com>, 2018.
+# Johannes Rabold <jojo@urweltpark.de>, 2019.
 # Jonathan Berg <onlyjb93@gmail.com>, 2019.
+# josu raki <foo@mediensyndikat.de>, 2019.
 # Julian Retzlaff <julian.retzlaff@googlemail.com>, 2018-2019.
+# Jummit <jummit@web.de>, 2019.
 # Karl <karl.bittner@outlook.com>, 2019.
 # Katharina Wendel <akd002000nemerb@web.de>, 2019.
 # kdankert <k.dankert@wtnet.de>, 2018.
@@ -32,10 +37,13 @@
 # Lennard <lefl65@gmail.com>, 2018.
 # Linus Fessler <linusfessler@gmail.com>, 2018.
 # Linux User <no-ads@mail.de>, 2019.
+# lmarz <leon.marz@kabelmail.de>, 2019.
 # M. Feil <git@sgdw.de>, 2018.
 # Manuel Schade <sprivat@protonmail.com>, 2019.
+# Mario Zeilinger <mario.zeilinger@gmail.com>, 2019.
 # Mark B <berezun.mark@gmail.com>, 2018.
 # Martin <martinreininger@gmx.net>, 2019.
+# Martin Majewski <mail@martinmajewski.net>, 2019.
 # Martin Ziegler <martin.zie@gmx.de>, 2018.
 # Mathias Schmalisch <mathias.schmalisch@gmail.com>, 2018.
 # McDonnough <psbaechli@gmail.com>, 2019.
@@ -47,6 +55,7 @@
 # Patrick Schönberger <patrick.schoenberger@posteo.de>, 2018.
 # Peter Koppatz <norbert@koppatz.com>, 2018-2019.
 # Philipp Wabnitz <philipp.wabnitz@s2011.tu-chemnitz.de>, 2018.
+# Phillip Thelen <viirus@pherth.net>, 2019.
 # rama0x9 <5393a6cuwlun@opayq.com>, 2018.
 # RamonP.FreedomUnited <freedomunited@yandex.com>, 2018.
 # Reneator <reneator@googlemail.com>, 2019.
@@ -56,9 +65,10 @@
 # Simon Wenner <simon@wenner.ch>, 2018.
 # Skayo <jonasg.cool@gmail.com>, 2018.
 # So Wieso <sowieso@dukun.de>, 2018.
-# ssantos <ssantos@web.de>, 2018.
+# ssantos <ssantos@web.de>, 2018-2019.
 # themangomago <markus.schneider84@gmail.com>, 2018.
 # Thomas Eigel <yurumi@gmx.de>, 2018.
+# Thomas Karcher <t_karcher@posteo.de>, 2019.
 # Timo Schwarzer <account@timoschwarzer.com>, 2018.
 # Tobias Möhring <dasbente@gmail.com>, 2019.
 # Übersetzer124 <cloud1@mag-keinen-spam.de>, 2018.
@@ -69,8 +79,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-04-09 11:43+0200\n"
-"PO-Revision-Date: 2019-04-07 14:09+0000\n"
-"Last-Translator: Christoph Brosch <christoph.brosch@outlook.de>\n"
+"PO-Revision-Date: 2019-05-21 11:16+0000\n"
+"Last-Translator: CatgamerHD <katzenspieler.catgamerhd04@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -78,7 +88,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.7-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -1332,6 +1342,9 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"Dieses Dokument beinhaltet nur neue Tutorials, daher werden nicht alle "
+"Änderungen beachtet. Viele Tutorials wurden grundlegend aktualisiert und "
+"sind nicht Bestandteil dieses Dokuments."
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.0"
@@ -1342,14 +1355,12 @@ msgid "Step-by-step"
 msgstr "Schritt für Schritt"
 
 #: ../../docs/about/docs_changelog.rst:19
-#, fuzzy
 msgid ":ref:`Signals <doc_signals>`"
-msgstr ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`Signale <doc_signals>`"
 
 #: ../../docs/about/docs_changelog.rst:20
-#, fuzzy
 msgid ":ref:`Exporting <doc_exporting>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`Exportieren <doc_exporting>`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/getting_started/workflow/index.rst:2
@@ -1358,7 +1369,7 @@ msgstr "Projekt-Workflow"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid "Best Practices:"
-msgstr "Best Practices:"
+msgstr "Bewährte Techniken:"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Introduction <doc_introduction_best_practices>`"
@@ -1370,7 +1381,7 @@ msgstr ":ref:`Was sind Godot Klassen <doc_what_are_godot_classes>`"
 
 #: ../../docs/about/docs_changelog.rst:27
 msgid ":ref:`Scene organization <doc_scene_organization>`"
-msgstr ":ref:`Szenen Organisation <doc_scene_organization>`"
+msgstr ":ref:`Szenenorganisation <doc_scene_organization>`"
 
 #: ../../docs/about/docs_changelog.rst:28
 msgid ":ref:`Scenes versus scripts <doc_scenes_versus_scripts>`"
@@ -1380,6 +1391,7 @@ msgstr ":ref:`Szenen Versus Skripte <doc_scenes_versus_scripts>`"
 msgid ""
 ":ref:`Autoloads versus internal nodes <doc_autoloads_versus_internal_nodes>`"
 msgstr ""
+":ref:`Autoloads vs. interne Nodes <doc_autoloads_versus_internal_nodes>`"
 
 #: ../../docs/about/docs_changelog.rst:30
 msgid ":ref:`Node alternatives <doc_node_alternatives>`"
@@ -1410,7 +1422,7 @@ msgstr "Scripting"
 
 #: ../../docs/about/docs_changelog.rst:39
 msgid ":ref:`Typed GDscript <doc_gdscript_static_typing>`"
-msgstr ""
+msgstr ":ref:`Typisiertes GDscript <doc_gdscript_static_typing>`"
 
 #: ../../docs/about/docs_changelog.rst:42 ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
@@ -1418,32 +1430,35 @@ msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:44
 msgid ":ref:`2D lights and shadows <doc_2d_lights_and_shadows>`"
-msgstr ""
+msgstr ":ref:`2D Lichter und Schatten <doc_2d_lights_and_shadows>`"
 
 #: ../../docs/about/docs_changelog.rst:45
 msgid ":ref:`2D meshes <doc_2d_meshes>`"
-msgstr ""
+msgstr ":ref:`2D Meshes <doc_2d_meshes>`"
 
 #: ../../docs/about/docs_changelog.rst:48 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
 msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:50
-#, fuzzy
 msgid ":ref:`CSG <doc_csg_tools>`"
-msgstr ":ref:`CSGBox <class_CSGBox>`"
+msgstr ":ref:`CSG <doc_csg_tools>`"
 
 #: ../../docs/about/docs_changelog.rst:51
 msgid ""
 ":ref:`Animating thousands of fish with MultiMesh "
 "<doc_animating_thousands_of_fish>`"
 msgstr ""
+":ref:` Tausende Fische mit MultiMesh animieren "
+"<doc_animating_thousands_of_fish>`"
 
 #: ../../docs/about/docs_changelog.rst:52
 msgid ""
 ":ref:`Controlling thousands of fish with Particles "
 "<doc_controlling_thousands_of_fish>`"
 msgstr ""
+":ref:` Tausende Fische mit Partikeln steuern "
+"<doc_controlling_thousands_of_fish>`"
 
 #: ../../docs/about/docs_changelog.rst:55
 #: ../../docs/tutorials/physics/index.rst:2
@@ -1452,11 +1467,11 @@ msgstr "Physik"
 
 #: ../../docs/about/docs_changelog.rst:57
 msgid ":ref:`Ragdoll system <doc_ragdoll_system>`"
-msgstr ""
+msgstr ":ref:`Ragdoll System <doc_ragdoll_system>`"
 
 #: ../../docs/about/docs_changelog.rst:58
 msgid ":ref:`Softbody <doc_soft_body>`"
-msgstr ""
+msgstr ":ref:`Softbody <doc_soft_body>`"
 
 #: ../../docs/about/docs_changelog.rst:61
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:2
@@ -1468,86 +1483,90 @@ msgstr "Animation"
 
 #: ../../docs/about/docs_changelog.rst:63
 msgid ":ref:`2D skeletons <doc_2d_skeletons>`"
-msgstr ""
+msgstr "2D Skelette"
 
 #: ../../docs/about/docs_changelog.rst:64
-#, fuzzy
 msgid ":ref:`AnimationTree <doc_animation_tree>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`AnimationTree <doc_animation_tree>`"
 
 #: ../../docs/about/docs_changelog.rst:67
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr ""
+msgstr "Ansichten"
 
 #: ../../docs/about/docs_changelog.rst:69
 msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
-msgstr ""
+msgstr ":ref:`Viewports als Textur verwenden <doc_viewport_as_texture>`"
 
 #: ../../docs/about/docs_changelog.rst:70
 msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
 msgstr ""
+":ref:` Benutzerdefiniertes post-processing <doc_custom_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:73
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr ""
+msgstr "Schattieren"
 
 #: ../../docs/about/docs_changelog.rst:75
 msgid ""
 ":ref:`Intro to shaders: 2D and 3D water (7 video tutorials) "
 "<doc_intro_to_shaders_water_workshop>`"
 msgstr ""
+":ref:`Einführung in Shader: 2D und 3D Wasser (7 Videotutorials) "
+"<doc_intro_to_shaders_water_workshop>`"
 
 #: ../../docs/about/docs_changelog.rst:76
 msgid ""
 ":ref:`Migrating to Godot’s shading language "
 "<doc_migrating_to_godot_shader_language>`"
 msgstr ""
+":ref:`Übergang zu Godots Shadersprache "
+"<doc_migrating_to_godot_shader_language>`"
 
 #: ../../docs/about/docs_changelog.rst:77
 msgid ""
 ":ref:`Vertex displacement with shaders "
 "<doc_vertex_displacement_with_shaders>`"
 msgstr ""
+":ref:`Vertexverformung mit Shadern <doc_vertex_displacement_with_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:78
 msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
-msgstr ""
+msgstr ":ref:`Fortgeschritene Nachbearbeitung <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:85
 msgid "Shading Reference:"
-msgstr ""
+msgstr "Shaderreferenz:"
 
 #: ../../docs/about/docs_changelog.rst:81
-#, fuzzy
 msgid ":ref:`Shaders <doc_shaders>`"
-msgstr ":ref:`CSGSphere <class_CSGSphere>`"
+msgstr ":ref:`Shader <doc_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:82
 msgid ":ref:`Shading language <doc_shading_language>`"
-msgstr ""
+msgstr ":ref:`Shadersprache <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:83
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ""
+msgstr ":ref:`Spatial-Shader <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:84
 msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
-msgstr ""
+msgstr ":ref:`CanvasItem-Shader <doc_canvas_item_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:85
 msgid ":ref:`Particles shaders <doc_particle_shader>`"
-msgstr ""
+msgstr ":ref:`Partikelshader <doc_particle_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:88 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr ""
+msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:90
 msgid ":ref:`VR starter tutorial <doc_vr_starter_tutorial>`"
-msgstr ""
+msgstr ":ref:`VR Anfängeranleitung <doc_vr_starter_tutorial>`"
 
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/tutorials/platform/index.rst:2
@@ -1558,6 +1577,7 @@ msgstr "Plattformspezifisches"
 msgid ""
 ":ref:`Customizing the Web export HTML page <doc_customizing_html5_shell>`"
 msgstr ""
+":ref:`Die HTML Seite des Web export anpassen <doc_customizing_html5_shell>`"
 
 #: ../../docs/about/docs_changelog.rst:98
 #: ../../docs/tutorials/threads/index.rst:2
@@ -1566,29 +1586,30 @@ msgstr "Multi-threading"
 
 #: ../../docs/about/docs_changelog.rst:100
 msgid ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
-msgstr ""
+msgstr ":ref:`Thread-sichere APIs <doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:103
 #: ../../docs/tutorials/misc/index.rst:2
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Sonstiges"
 
 #: ../../docs/about/docs_changelog.rst:105
 msgid ":ref:`Fixing jitter and stutter <doc_jitter_stutter>`"
-msgstr ""
+msgstr ":ref:`Zittern und ruckeln beheben <doc_jitter_stutter>`"
 
 #: ../../docs/about/docs_changelog.rst:106
 msgid ":ref:`Running code in the editor <doc_running_code_in_the_editor>`"
-msgstr ""
+msgstr ":ref:`Code im Editor ausführen <doc_running_code_in_the_editor>`"
 
 #: ../../docs/about/docs_changelog.rst:107
 msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
-msgstr ""
+msgstr ":ref:`Scenen manuell wechseln <doc_change_scenes_manually>`"
 
 #: ../../docs/about/docs_changelog.rst:108
 msgid ""
 ":ref:`Differences between GLES2 and GLES3 <doc_gles2_gles3_differences>`"
 msgstr ""
+":ref:`Unterschiede zwischen GLES2 und GLES3 <doc_gles2_gles3_differences>`"
 
 #: ../../docs/about/docs_changelog.rst:111
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:231
@@ -1599,37 +1620,39 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 #: ../../docs/development/compiling/compiling_for_uwp.rst:24
 msgid "Compiling"
-msgstr ""
+msgstr "Kompilieren"
 
 #: ../../docs/about/docs_changelog.rst:113
 msgid ":ref:`Optimizing a build for size <doc_optimizing_for_size>`"
-msgstr ""
+msgstr ":ref:`Einen Build auf Größe optimieren <doc_optimizing_for_size>`"
 
 #: ../../docs/about/docs_changelog.rst:114
 msgid ""
 ":ref:`Compiling with script encryption key "
 "<doc_compiling_with_script_encryption_key>`"
 msgstr ""
+":ref:`Mit Scriptverschlüsselung kompilieren "
+"<doc_compiling_with_script_encryption_key>`"
 
 #: ../../docs/about/docs_changelog.rst:117
 #: ../../docs/development/cpp/index.rst:2
 msgid "Engine development"
-msgstr ""
+msgstr "Engine Entwicklung"
 
 #: ../../docs/about/docs_changelog.rst:119
 msgid ""
 ":ref:`Binding to external libraries <doc_binding_to_external_libraries>`"
 msgstr ""
+":ref:`Auf externe Bibliotheken zugreifen <doc_binding_to_external_libraries>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
 msgstr "Inhalte erstellen"
 
 #: ../../docs/about/docs_changelog.rst:124
 msgid ":ref:`Making trees <doc_making_trees>`"
-msgstr ""
+msgstr ":ref:`Bäume erstellen <doc_making_trees>`"
 
 #: ../../docs/about/docs_changelog.rst:127
 #: ../../docs/tutorials/plugins/index.rst:2
@@ -1639,10 +1662,12 @@ msgstr "Erweiterungen"
 #: ../../docs/about/docs_changelog.rst:129
 msgid ":ref:`Making main screen plugins <doc_making_main_screen_plugins>`"
 msgstr ""
+":ref:`Plug-Ins für den Hauptbildschirm erstellen "
+"<doc_making_main_screen_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:130
 msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
-msgstr ""
+msgstr ":ref:`Spatial gizmo Plug-Ins <doc_spatial_gizmo_plugins>`"
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
@@ -2597,25 +2622,26 @@ msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
+"Öffne die ``Ball`` Scene und füge ein ``PhysicsMaterial`` hinzu, indem du "
+"auf den Pfeil nach unten clickst und \"Neues PhysicsMaterial\" auswählst."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr ""
+"Klappe es dann aus indem du es anklickst und setze den ``Bounce`` Wert auf "
+"``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
-#, fuzzy
 msgid ""
 "Press \"Play\" and notice that all of the instanced balls are now much more "
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
-"Öffne die ``Ball`` Szene und ändere die Eigenschaft ``Bounce`` im Inspektor "
-"auf `1`. Drücke auf \"Starten\". Du wirst bemerken, dass alle Instanzen des "
-"Balles stärker springen. Da die instantiierten Bälle auf der gespeicherten "
-"Szene basieren, betreffen alle Änderungen in dieser Szene auch alle "
-"Instanzen."
+"Drücke auf \"Starten\". Du wirst bemerken, dass alle Instanzen des Balles "
+"stärker springen. Da die instantiierten Bälle auf der gespeicherten Szene "
+"basieren, betreffen alle Änderungen in dieser Szene auch alle Instanzen."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
 msgid ""
@@ -2694,16 +2720,15 @@ msgid "Design language"
 msgstr "Designsprache"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
-#, fuzzy
 msgid ""
 "But the greatest strength that comes with instancing scenes is that it works "
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
-"Die größte Stärke von Instanzen ist jedoch, dass sie als ausgezeichnete "
-"Designsprache funktioniert. Dies ist so ziemlich das, was Godot von allen "
-"anderen Engines unterscheidet. Godot wurde von Grund auf um dieses Konzept "
-"herum entworfen."
+"Die größte Stärke des Instanziierens von Szenen ist jedoch, dass es sich als "
+"ausgezeichnete Designsprache verwenden lässt. Dies ist der zentrale "
+"Unterschied zwischen Godot und allen anderen Engines die es so gibt. Godot "
+"wurde von Grund auf um dieses Konzept herum entworfen."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -4818,14 +4843,13 @@ msgstr ""
 "mehr ausgelößt wird."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
-#, fuzzy
 msgid ""
 "Disabling the area's collision shape can cause an error if it happens in the "
 "middle of the engine's collision processing. Using ``set_deferred()`` allows "
 "us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
 "Deaktivieren der Collision Shape während der Kollisionsberechnung der Engine "
-"kann einen Fehler auslösen. Der Gebrauch von ``call_deferred()`` erlaubt es "
+"kann einen Fehler auslösen. Der Gebrauch von ``set_deferred()`` erlaubt es "
 "Godot, die Collision Shape zu einem sicheren Zeitpunkt zu deaktivieren."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
@@ -5774,18 +5798,21 @@ msgid ""
 "input, you can do that in the \"Project Settings\" under *Input Devices* and "
 "*Pointing*"
 msgstr ""
+"Standardmäßig emuliert Godot Mauseingaben von Berührungseingaben, was "
+"bedeuted das alles was programmiert ist auf Mauseingaben zu reagieren auch "
+"von Berührungseingaben ausgelöst wird"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
-#, fuzzy
 msgid ""
 "Before we change the input method, in the project settings go to *Display*, "
 "then click on *Window*. In the *Stretch* options, set *Mode* to \"2d\" and "
 "*Aspect* to \"keep\". This ensures that the game scales consistently on "
 "different sized screens."
 msgstr ""
-"Stellen Sie im Abschnitt *Stretch* *Mode* auf \"2d\" und *Aspect* auf \"keep"
-"\". Dadurch wird sichergestellt, dass das Spiel auf unterschiedlich großen "
-"Bildschirmen konsistent skaliert wird."
+"Bevor wir die Input-Methode ändern, gehen wir in den Projekteinstellungen zu "
+"*Display* und *Window*. Setze bei *Stretch* den *Mode* auf \"2d\" und "
+"*Aspect* auf \"keep\". Das sorgt dafür, dass das Spiel sich auf "
+"unterschiedlich großen Monitoren richtig vergrößert bzw. verkleinert."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:44
 msgid ""
@@ -7368,7 +7395,6 @@ msgid "The GUI you're going to create"
 msgstr "Die graphische Benutzeroberfläche die du erstellen wirst"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
-#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_main_menu_design.zip <files/"
 "ui_main_menu_design.zip>` and extract the archive. Import the ``start/`` "
@@ -7679,16 +7705,15 @@ msgstr ""
 "fünf zusätzliche Instanzen zu erzeugen."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:159
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the ``Texture`` "
 "property and click ``[empty]`` -> ``Load``. A file browser opens and lets "
 "you pick a sprite to load into the texture slot."
 msgstr ""
-"Wähle jeden der Nodes mit einem Klick aus. Drücke auf das ``...``-Zeichen im "
-"Inspektor, das sich rechts von der Eigenschaft ``Texture`` befindet und "
-"drücke auf ``Lade``. Eine Dateiauswahl öffnet sich und lässt dich ein Sprite "
-"auswählen, das in den Texture-Slot geladen wird."
+"Wähle den jeweiligen Node mit einem Klick aus. Finde im Inspektor Tab die "
+"\"Texture\" Eigenschaft, wähle [leer] aus und drücke auf \"Lade\". Ein "
+"Dateibrowser öffnet sich und lässt dich ein Sprite auswählen, das in den "
+"Texture-Slot geladen werden kann."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid "The file browser lets you find and load textures"
@@ -8770,6 +8795,15 @@ msgid ""
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
+"In einer geerbten Szene können wir neben dem Namen jede Eigenschaft jedes "
+"Nodes im Inspektor ändern. Wenn wir die übergeordnete Szene ändern und "
+"speichern, werden alle geerbten Szenen mit den Änderungen aktualisiert. Wenn "
+"wir einen Wert in der geerbten Szene ändern, wird die Eigenschaft des "
+"übergeordneten Objekts immer überschrieben. Dies ist nützlich für "
+"Benutzeroberflächen, da diese häufig Variationen derselben Elemente "
+"erfordern. Im Allgemeinen haben Schaltflächen, Bedienfelder usw. im UI-"
+"Design einen gemeinsamen Basisstil und Interaktionen. Wir möchten es nicht "
+"auf alle Variationen manuell kopieren."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
 msgid ""
@@ -8794,9 +8828,8 @@ msgstr ""
 "Funktionalität zu erweitern."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:406
-#, fuzzy
 msgid "Inherit the Bar Scene to build the LifeBar"
-msgstr "Erbe von der Leistenszene um einen Lebensbalken zu erstellen."
+msgstr "Erbe von der Leistenszene um einen Lebensbalken zu erstellen"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
 msgid ""
@@ -8805,10 +8838,18 @@ msgid ""
 "like your ``Bar``, but with all nodes except the root in grey. Press ``Meta"
 "+S`` to save the new inherited scene and name it ``LifeBar``."
 msgstr ""
+"Wechsle zu ''Szene -> Neue geerbte Szene'' um einen neuen Leistentyp zu "
+"erstellen. Wähle die Leistenszene aus und öffne sie. Du solltest nun einen "
+"neuen [ungespeicherten] Reiter sehen, welcher identisch zu deiner Leiste "
+"ist, jedoch sind alle Knoten bis auf den Wurzelknoten grau. Drücke nun ''Meta"
+"+S'' um die neue geerbte Szene zu speichern und benenne sie als "
+"''Lebensbalken''"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
 msgstr ""
+"Man kann keine ausgegrauten Nodes umbenennen. Dadurch wird kommuniziert, "
+"dass sie von einer Elternszene erben."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:418
 msgid ""
@@ -8819,6 +8860,13 @@ msgid ""
 "works with all inherited scenes. Like our ``TextureProgress`` and ``Number`` "
 "nodes."
 msgstr ""
+"Benenne zuerst den Wurzelknoten in ``Lebensbalken`` um. Der Wurzelknoten "
+"sollte immer möglichst exakt beschreiben, was die UI-Komponente darstellt. "
+"Der Name unterscheidet diesen Balken vom ``Energiebalken``, den wir als "
+"nächstes erstellen. Die anderen Knoten in der Szene sollten die Struktur der "
+"Komponente mit allgemeinen Begriffen beschreiben, damit sie mit allen "
+"geerbten Szenen funktioniert. Wie in unseren ``Texturfortschritt``- und `` "
+"Nummer``-Knoten."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:427
 msgid ""
@@ -8830,6 +8878,13 @@ msgid ""
 "we create an inherited scene and change the name of the top level node, "
 "we're doing the same thing."
 msgstr ""
+"Es ist das gleiche wenn Sie mit CSS arbeiten: sie erstellen eine Basis "
+"Klasse, und fügen eine Variation mit modifizierten Klassen hinzu. Bei der "
+"Knopf Klasse haben Sie grüne und rote Knöpfe, mit dieser kann der Benutzer "
+"Befehle akzeptieren und ablehnen. Die neue Klasse enthält den Namen des "
+"parental Elementes und ein extra Schlüsselwort, um zu erklären wie es zu "
+"modifizieren ist. Wenn wir eine vererbte Szene erstellen und wir den Namen "
+"des oberen Knoten ändern, machen wir das gleiche."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
 msgid "Design the EnergyBar"
@@ -8850,6 +8905,11 @@ msgid ""
 "``EnergyBar``. Save the new scene as ``EnergyBar.tscn``. We need to replace "
 "the HP texture with EP one, and to change the textures on the gauge."
 msgstr ""
+"Erstellen wir nun eine neue vererbte Szene, und ein weiteres Mal selektieren "
+"wir die ``Bar.tscn`` Szene und öffnen diese. Mit einem Doppelklich bennnen "
+"wir ``Bar``, den Wurzel Node um zu ``Energy Bar``. Nun speichern wir diese "
+"als ``EnergyBar.tscn``. Es ist wichtig das wir die HP Textur mit der EP "
+"ersetzen, ebenfalls müssen wir die Textur mit die von der Anzeige ersetzen."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
 msgid ""
@@ -8938,6 +8998,7 @@ msgid "The Count looks better now it's a bit smaller"
 msgstr "Der Zähler sieht nun, da er ein wenig kleiner ist, besser aus"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
+#, fuzzy
 msgid ""
 "The Count node's size affects the position of the TextureProgress. As we'll "
 "align our bars vertically in a moment, we're better off using the Counter's "
@@ -8945,6 +9006,7 @@ msgid ""
 "the LifeBar's Count nodes are one hundred pixels wide, so both gauges will "
 "align perfectly."
 msgstr ""
+"Die Größe des Zähl Node's beeinflusst die Position des Texturen Fortschritts."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
 msgid "Prepare the bomb and emerald counters"
@@ -50104,7 +50166,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:27
-#, fuzzy
 msgid "Single pass post-processing"
 msgstr "Single pass Post-Processing"
 
@@ -53892,8 +53953,8 @@ msgid ""
 "For detailed information on Godot's shading language, please refer to the :"
 "ref:`Shading Language <doc_shading_language>` reference."
 msgstr ""
-"Genauere Informationen über Godots Shading Sprache gibt es im eigenen "
-"Artikel :ref:`Shading Language <doc_shading_language>`"
+"Genauere Informationen über Godots Shading Language gibt es im eigenen "
+"Artikel: :ref:`Shading Language <doc_shading_language>`."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:17
 msgid "GLSL"
@@ -72434,7 +72495,6 @@ msgstr ""
 "channels=#godotengine-doc>`_"
 
 #: ../../docs/community/channels.rst:23
-#, fuzzy
 msgid ""
 "`GDNative: #godotengine-gdnative <http://webchat.freenode.net/?"
 "channels=#godotengine-gdnative>`_"
@@ -72443,7 +72503,6 @@ msgstr ""
 "channels=#godotengine-gdnative>`_"
 
 #: ../../docs/community/channels.rst:24
-#, fuzzy
 msgid ""
 "`Webseite/PR: #godotengine-atelier <http://webchat.freenode.net/?"
 "channels=#godotengine-atelier>`_"
@@ -72474,7 +72533,6 @@ msgid "Social networks"
 msgstr "Soziale Netzwerke"
 
 #: ../../docs/community/channels.rst:36
-#, fuzzy
 msgid "`GitHub <https://github.com/godotengine/>`_"
 msgstr "`GitHub <https://github.com/godotengine/>`_"
 
@@ -72487,27 +72545,22 @@ msgid "`Twitter (also, #godotengine) <https://twitter.com/godotengine>`_"
 msgstr "`Twitter (auch, #godotengine) <https://twitter.com/godotengine>`_"
 
 #: ../../docs/community/channels.rst:39
-#, fuzzy
 msgid "`Reddit <https://www.reddit.com/r/godot>`_"
 msgstr "`Reddit <https://www.reddit.com/r/godot>`_"
 
 #: ../../docs/community/channels.rst:40
-#, fuzzy
 msgid "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
 msgstr "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
 
 #: ../../docs/community/channels.rst:41
-#, fuzzy
 msgid "`Steam <https://steamcommunity.com/app/404790>`_"
 msgstr "`Steam <https://steamcommunity.com/app/404790>`_"
 
 #: ../../docs/community/channels.rst:44
-#, fuzzy
 msgid "Forum"
 msgstr "Forum"
 
 #: ../../docs/community/channels.rst:46
-#, fuzzy
 msgid "`Forum (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
 msgstr "`Forum (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
 
@@ -72530,7 +72583,6 @@ msgid "Video tutorials"
 msgstr "Videotutorials"
 
 #: ../../docs/community/tutorials.rst:12
-#, fuzzy
 msgid ""
 "`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
 "playlists>`_"
@@ -72539,7 +72591,6 @@ msgstr ""
 "playlists>`_"
 
 #: ../../docs/community/tutorials.rst:13
-#, fuzzy
 msgid ""
 "`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
 "playlists>`_"
