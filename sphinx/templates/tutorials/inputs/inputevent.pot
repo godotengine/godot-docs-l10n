@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -244,11 +244,11 @@ msgstr ""
 msgid "Alternatively, it may be desired to supply the game back with an action from the game code (a good example of this is detecting gestures). The Input singleton has a method for this: :ref:`Input.parse_input_event() <class_input_method_parse_input_event>`. You would normally use it like this:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/inputevent.rst:202
+#: ../../docs/tutorials/inputs/inputevent.rst:203
 msgid "InputMap"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/inputevent.rst:204
+#: ../../docs/tutorials/inputs/inputevent.rst:205
 msgid "Customizing and re-mapping input from code is often desired. If your whole workflow depends on actions, the :ref:`InputMap <class_InputMap>` singleton is ideal for reassigning or creating different actions at run-time. This singleton is not saved (must be modified manually) and its state is run from the project settings (project.godot). So any dynamic system of this type needs to store settings in the way the programmer best sees fit."
 msgstr ""
 
