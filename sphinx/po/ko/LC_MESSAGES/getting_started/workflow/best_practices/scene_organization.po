@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
-#, fuzzy
 msgid "Scene organization"
-msgstr "프로젝트 조직"
+msgstr "씬 조직"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:6
 msgid ""
@@ -28,16 +27,20 @@ msgid ""
 "content. Which nodes should one use? Where should one place them? How should "
 "they interact?"
 msgstr ""
+"이 문서는 효과적인 씬 내용 조직에 관련된 주제를 다룹니다. 어떤 노드가 사용되"
+"어야 할까?  어디에 그들을 배치해야할까? 어떻게 그들을 상호작용할까?"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:11
 msgid "How to build relationships effectively"
-msgstr ""
+msgstr "효과적으로 관계를 짓는 방법"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:13
 msgid ""
 "When Godot users begin crafting their own scenes, they often run into the "
 "following problem:"
 msgstr ""
+"Godot 사용자는 그들만의 씬을 제작하려 했을 때, 종종 다음과 같은 문제점에 봉착"
+"했습니다:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:16
 msgid ""
@@ -49,6 +52,12 @@ msgid ""
 "node paths do not find their targets. Signal connections established in the "
 "editor break."
 msgstr ""
+"사용자들은 먼저 첫 씬을 만들고 거기에 내용물을 넣습니다, 이후 씬을 재 사용할 "
+"수 있는 조각들로 나눠야 하는 섬뜩한 기운이 그들에게 엄습할 줄은 몰랐을 것입니"
+"다. 사용자들은 씬 분기들을 그들의 씬에 저장합니다. 하지만 그 뒤 그들은 이제까"
+"지 의지해온 어려운 참고가 더 이상 효과가 없다는 것을 알게됩니다. 씬을 여러 방"
+"면에서 재 사용할 수 있는 것이 문제를 일으켰는데, 노드 경로가 대상을 찾지 못하"
+"기 때문입니다. 에디터에서 설정된 시그널 연결이 끊어집니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
 msgid ""
@@ -57,6 +66,9 @@ msgid ""
 "that the sub-scene will create itself without being picky about how one uses "
 "it."
 msgstr ""
+"이 문제를 해결하기 위해, 환경에 대한 세부 정보가 필요없는 하위 씬을 인스턴스"
+"화해야 합니다. 하위 씬은 쓰이는 방식에 따라 까다롭게 만들어지진 않는다는 신뢰"
+"를 가져야 합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:29
 msgid ""
@@ -66,12 +78,19 @@ msgid ""
 "objects small (for maintainability) and improves their reusability so that "
 "re-writing completed logic is unnecessary."
 msgstr ""
+"객체 기반 프로그래밍에서 고려해야할 가장 큰 점은 집중된 단일 목적의 클래스를 "
+"코드베이스의 다른 부분과의 `느슨한 연결(loose coupling) <https://en."
+"wikipedia.org/wiki/Loose_coupling>`_\\ 을 유지하는 것입니다. 이것으로 객체의 "
+"크기를 (유지 보수성을 위해) 작게 유지하며 재사용성을 높여줍니다, 완전한 논리"
+"를 다시 짤 필요가 없어집니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:36
 msgid ""
 "These OOP best practices have *several* ramifications for the best practices "
 "in scene structure and script usage."
 msgstr ""
+"이런 객체 지향 프로그래밍 모범 사례는 씬 구조와 스크립트 사용의 모범 사례에 "
+"있어 *여러 가지* 파급 효과가 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:39
 msgid ""
@@ -79,6 +98,8 @@ msgid ""
 "That is, one should create scenes that keep everything they need within "
 "themselves."
 msgstr ""
+"**가능하다면 의존성이 없는 씬을 설계해야합니다.** 이는 즉, 외부로 의존하지 않"
+"아 모든 것을 유지하는 씬을 만들어야합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:43
 msgid ""
@@ -89,12 +110,19 @@ msgid ""
 "which rely on their external environment can inadvertently trigger bugs and "
 "unexpected behavior."
 msgstr ""
+"씬이 외부 컨텍스트와 상호작용해야 한다면, 경험있는 개발자들은 `의존성 주입 "
+"<https://ko.wikipedia.org/wiki/의존성 주입>`_\\ 사용을 권장합니다. 이 기술은 "
+"하이 레벨 API를 사용해 로우 레벨 API의 의존성을 제공하는 것과 관련이 있습니"
+"다. 왜 이럴까요? 외부 환경에 의존하는 클래스가 우연히 버그를 일으키거나 예측"
+"하지 못한 행동을 할 수 있기 때문입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:50
 msgid ""
 "To do this, one must expose data and then rely on a parent context to "
 "initialize it:"
 msgstr ""
+"이러기 위해, 데이터를 드러낸 다음 초기화하기 위해 부모 컨텍스트에 의존하게 해"
+"야합니다:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:53
 msgid ""
@@ -102,24 +130,29 @@ msgid ""
 "behavior, not start it. Note that signal names are usually past-tense verbs "
 "like \"entered\", \"skill_activated\", or \"item_collected\"."
 msgstr ""
+"시그널에 연결합니다. 매우 안전하지만 행동에 \"응답\"하는 데에만 사용해야하"
+"고, 시작에는 쓰면 안됩니다. 시그널 이름은 보통 과거 시제 동사를 사용합니다, "
+"\"entered\", \"skill_activated\", 혹은 \"item_collected\"처럼 말이죠."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:74
 msgid "Call a method. Used to start behavior."
-msgstr ""
+msgstr "메서드를 호출합니다. 시작 동작에 사용됩니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:93
 msgid ""
 "Initialize a :ref:`FuncRef <class_FuncRef>` property. Safer than a method as "
 "ownership of the method is unnecessary. Used to start behavior."
 msgstr ""
+":ref:`FuncRef <class_FuncRef>` 속성을 초기화합니다. 소유권이 불필요한 메서드"
+"보다 안전합니다. 시작 동작에 사용됩니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:113
 msgid "Initialize a Node or other Object reference."
-msgstr ""
+msgstr "노드나 다른 객체 참조를 초기화합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:132
 msgid "Initialize a NodePath."
-msgstr ""
+msgstr "노드 경로를 초기화합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:151
 msgid ""
@@ -127,6 +160,9 @@ msgid ""
 "keeps the child **loosely coupled** to its environment. One can re-use it in "
 "another context without any extra changes to its API."
 msgstr ""
+"이런 설정은 자식 노드로부터의 액세스 소스를 숨깁니다. 이것은 차례차례로 자식"
+"을 환경에 **느슨하게 결합합니다**. API에 다른 추가 변경사항없이 다른 컨텍스트"
+"에 재사용할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:157
 msgid ""
@@ -135,6 +171,9 @@ msgid ""
 "should only be aware of their hierarchies while an ancestor mediates their "
 "communications and references."
 msgstr ""
+"위의 예제는 부모 자식 관계를 설명하고 있지만, 모든 객체 관계에 이 원리를 적용"
+"할 수 있습니다. 형제 노드는 그들의 계층 구조만 알아야 하며 부모 노드가 그들"
+"의 상호작용과 참조를 조정해야 합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:204
 msgid ""
@@ -142,6 +181,8 @@ msgid ""
 "dependencies on other objects. Whichever object actually owns the objects "
 "should manage the relationships between them."
 msgstr ""
+"다른 객체에 종속하는 노드가 아닌 객체도 같은 원리가 적용됩니다. 어떤 객체든"
+"지 사실 객체들을 소유하며 그들 간의 관계를 관리해야 합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:210
 msgid ""
@@ -154,6 +195,13 @@ msgid ""
 "is otherwise known as development hell. Writing code that relies on external "
 "documentation for one to use it safely is error-prone by default."
 msgstr ""
+"외부 컨텍스트에 종속성을 배치하듯이 데이터를, 심지어 느슨하게 결합된 것도 작"
+"업 내 (씬 내부)에 유지하는 것이 좋지만, 여전히 노드가 환경의 무언가가 참이라"
+"는 것을 생각하는 것입니다. 프로젝트의 디자인 철학은 문제가 발생하기 전에 이"
+"를 예방하는 것입니다. 그렇지 않으면, 코드의 고유 책임이 개발자에게 넘어가 아"
+"주 작은 규모에서 객체 관계를 추적하기 위해 문서를 사용하게 될 것입니다; 달리 "
+"말해 개발 지옥으로 알려져 있습니다. 외부 문서를 사용하여 코드를 안전하게 사용"
+"하는 코드 작성은 기본적으로 오류가 발생하기 쉽습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:219
 msgid ""
@@ -168,6 +216,14 @@ msgid ""
 "then self-documents the scene through the script code. No content "
 "duplication via documentation is necessary."
 msgstr ""
+"그러한 문서를 작성하고 유지하는 것을 피하려면, 종속 노드 (위의 \"child\")를  "
+"tool 스크립트로 변환하여 :ref:`_get_configuration_warning() "
+"<class_Node_method__get_configuration_warning>`\\ 을 구현해야 합니다. 여기서 "
+"비어있지 않은 문자열을 반환하는 것으로 씬 독은 노드에 의해 툴팁 문자열과 함"
+"께 경고 아이콘을 생성합니다.  :ref:`Area2D <class_Area2D>`\\ 에서 자식 :ref:"
+"`CollisionShape2D <class_CollisionShape2D>` 노드가 없을 때 나타나는 그런 아이"
+"콘과 같습니다.  그런 다음 에디터는 씬을 스크립트 코드를 통해 자체 문서화합니"
+"다. 문서를 통한 콘텐츠 중복은 없습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:230
 msgid ""
@@ -177,6 +233,10 @@ msgid ""
 "will need clear instructions in the messages telling them what to do to "
 "configure it."
 msgstr ""
+"이런 GUI는 프로젝트 사용자에게 노드에 대한 중요한 정보를 더 잘 전달할 수 있습"
+"니다. 외부 종속성을 갖고 있나요? 그러한 종속성을 만족시켰나요? 다른 프로그래"
+"머들, 특히 디자이너와 작가들에게 노드에 무엇을 구성해야 하는 지를 메시지로 명"
+"확하게 설명해야 할 것입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:235
 msgid ""
@@ -187,33 +247,41 @@ msgid ""
 "scenes in unforeseen ways, then things break down. A change to one class "
 "could result in damaging effects to other classes."
 msgstr ""
+"그럼 이런 밑장빼기 식의 작업을 왜 할까요? 음, 씬은 홀로 작동할 때 가장 잘 작"
+"동하기 때문입니다. 홀로 작동하지 않는 경우, 익명으로 다른 것들과 작동합니다 "
+"(최소한의 하드 종속성, 예: 느슨한 결합). 뜻밖의 방법으로 씬과 상호작용하기 위"
+"해 클래스가 씬에게 피할 수 없는 변경을 만든다면, 작업은 무너집니다. 한 클래스"
+"로의 변경은 다른 클래스에 영향을 끼칠 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:242
 msgid ""
 "Scripts and scenes, as extensions of engine classes should abide by *all* "
 "OOP principles. Examples include..."
 msgstr ""
+"스크립트와 씬은, 엔진 클래스의 확장 프로그램으로 *모든* 객체 지향 프로그래밍 "
+"원칙을 준수해야 합니다. 예시는 다음을 포함합니다..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:245
 msgid "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
 msgstr ""
+"`SOLID (객체 지향 설계) <https://ko.wikipedia.org/wiki/SOLID_(%EA%B0%9D%EC"
+"%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84)>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:246
 msgid "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
-msgstr ""
+msgstr "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:247
 msgid "`KISS <https://en.wikipedia.org/wiki/KISS_principle>`_"
-msgstr ""
+msgstr "`KISS 원칙 <https://ko.wikipedia.org/wiki/KISS_%EC%9B%90%EC%B9%99>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:248
 msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
-msgstr ""
+msgstr "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:251
-#, fuzzy
 msgid "Choosing a node tree structure"
-msgstr "코드 구조"
+msgstr "노드 트리 구조 선택하기"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:253
 msgid ""
@@ -224,6 +292,12 @@ msgid ""
 "But, for those who are unsure, this helpful guide can give them a sample of "
 "a decent structure to start with."
 msgstr ""
+"따라서 개발자는 게임을 작업하기 전에 게임에 있어서의 막대한 가능성을 막을 수 "
+"있습니다. 그들은 그들이 작업하고 싶은 것, 그들이 갖고 싶은 시스템을 알고 있"
+"을 것입니다, 하지만 *어디에* 그것들을 넣을 수 있을까요? 음, 게임을 만드는 것"
+"은 항상 그들에게 달려있습니다. 노드 트리는 무수한 방법으로 만들 수 있습니다. "
+"하지만 확실하지 않은 사람들을 위해, 이 유용한 가이드가 시작하기에 알맞은 구"
+"조 샘플을 보여드리겠습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:260
 msgid ""
@@ -234,17 +308,22 @@ msgid ""
 "applications, this would be the \"main\" function. In this case, it would be "
 "a Main node."
 msgstr ""
+"게임은 항상 일종은 \"진입 지점\"을 갖습니다; 때로는 개발자들이 어디서 진입 지"
+"점이 시작하는지 명확하게 추적하고 그렇게 해서 다른 곳에서도 그 논리를 따르게 "
+"할 수 있습니다. 이 지점은 프로그램에서 조감 시점으로 모든 다른 데이터와 논리"
+"를 전달하는 곳이기도 합니다. 전통적인 애플리케이션의 경우, 이것은 \"main\" 함"
+"수가 될 것입니다. 이 경우에는, Main 노드가 될 것입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:266
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:277
 msgid "Node \"Main\" (main.gd)"
-msgstr ""
+msgstr "노드 \"Main\" (main.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:268
 msgid ""
 "The ``main.gd`` script would then serve as the primary controller of one's "
 "game."
-msgstr ""
+msgstr "``main.gd`` 스크립트는 게임의 주된 컨트롤러 역할을 할 것입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:271
 msgid ""
@@ -252,14 +331,17 @@ msgid ""
 "child of Main. In addition, one will need a primary GUI for their game that "
 "manages the various menus and widgets the project needs."
 msgstr ""
+"그런 다음 실제 게임 내 \"World\" (2D나 3D)를 갖습니다. Main의 자식이 될 수 있"
+"습니다. 그리고 프로젝트에 필요한 다양한 메뉴와 위젯을 관리하는 게임용 기본 "
+"GUI가 필요합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:276
 msgid "Node2D/Spatial \"World\" (game_world.gd)"
-msgstr ""
+msgstr "Node2D/Spatial \"World\" (game_world.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:277
 msgid "Control \"GUI\" (gui.gd)"
-msgstr ""
+msgstr "Control \"GUI\" (gui.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:279
 msgid ""
@@ -267,30 +349,37 @@ msgid ""
 "node. :ref:`Changing scenes manually <doc_change_scenes_manually>` gives "
 "users full control over how their game world transitions."
 msgstr ""
+"레벨을 변경할 때, \"World\" 노드의 자식을 바꾸면 됩니다. :ref:`씬을 수동으로 "
+"바꾸는 것 <doc_change_scenes_manually>`\\ 으로 사용자는 게임 월드 전환 방식"
+"을 완전히 제어할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:283
 msgid ""
 "The next step is to consider what gameplay systems one's project requires. "
 "If one has a system that..."
 msgstr ""
+"다음 단계는 이 프로젝트에는 무슨 게임 플레이 시스템이 필요한 지 고려해야 합니"
+"다. 시스템은 다음을 갖고 있습니다..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:286
 msgid "tracks all of its data internally"
-msgstr ""
+msgstr "모든 데이터를 내부적으로 추적하고"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:287
 msgid "should be globally accessible"
-msgstr ""
+msgstr "전역으로 액세스해야 하고"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:288
 msgid "should exist in isolation"
-msgstr ""
+msgstr "독립적으로 존재해야 하는 것"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:290
 msgid ""
 "... then one should create an :ref:`autoload 'singleton' node "
 "<doc_singletons_autoload>`."
 msgstr ""
+"... 그러려면  :ref:`오토로드 '싱글톤' 노드 <doc_singletons_autoload>`\\ 를 만"
+"들어야 합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:294
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,8 +110,12 @@ msgid ""
 "the motion so that you can tweak the animation in editor and see the results "
 "in real time, without the shader having to recompile."
 msgstr ""
+"有关动画的所有代码都将在顶点着色器中，并有一致的控制运动量。 我们统一来控制运"
+"动的强度，以便您可以在编辑器中调整动画并实时查看结果，而不需要着色器重新编"
+"译。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:48
+#, fuzzy
 msgid ""
 "All the motions will be made using cosine waves applied to ``VERTEX`` in "
 "model space. We want the vertices to be in model space so that the motion is "
@@ -119,6 +123,9 @@ msgid ""
 "will always be move the fish back and forth in its left to right direction, "
 "instead of on the ``x`` axis in the world orientation."
 msgstr ""
+"所有动作都将使用模型空间中应用于“VERTEX”的余弦波进行。 我们希望顶点位于模型空"
+"间中，以便运动始终相对于鱼的方向。 例如，从一侧到另一侧将始终在左右方向上来回"
+"移动鱼，而不是在世界方向上的“x”轴上。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:53
 msgid ""
@@ -133,11 +140,12 @@ msgid ""
 "is rendered, all the vertices will move to the side by the amount of "
 "``cos(time)``."
 msgstr ""
+"我们将实施的第一项议案是左右运动。 它可以通过``TIME``的``cos``抵消``VERTEX."
+"x``来制作。 每次渲染网格时，所有顶点都会移动到“cos（时间）”的数量。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:69
-#, fuzzy
 msgid "The resulting animation should look something like this:"
-msgstr "卢比计数器应该是这样的"
+msgstr "生成的动画看起来是这样的："
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:73
 msgid ""
@@ -145,10 +153,13 @@ msgid ""
 "to do is multiply ``VERTEX`` by a rotation matrix for it to rotate around "
 "the center of the fish."
 msgstr ""
+"接下来，我们添加轴心点。 因为鱼以（0, 0）为中心，我们所要做的只是将“VERTEX”乘"
+"以旋转矩阵，使其围绕鱼的中心旋转。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:76
+#, fuzzy
 msgid "We construct a rotation matrix like so:"
-msgstr ""
+msgstr "我们构造一个旋转矩阵, 如下所示:"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:85
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,9 @@ msgid ""
 "Godot 3 provides a redesigned Environment resource, as well as a brand new "
 "post-processing system with many available effects right out of the box."
 msgstr ""
+"Godot 3 fournit une ressource Environnement repensée, ainsi qu'un tout "
+"nouveau système de post-traitement avec de nombreux effets disponibles "
+"directement."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:10
 msgid "Environment"
@@ -38,6 +41,11 @@ msgid ""
 "effects, and adjustments. By itself it does nothing, but it becomes enabled "
 "once used in one of the following locations in order of priority:"
 msgstr ""
+"La ressource Environnement stocke toutes les informations nécessaires au "
+"contrôle de l'environnement de rendu. Cela comprend le ciel, l'éclairage "
+"ambiant, la cartographie des tons, les effets et les réglages. Par elle-"
+"même, elle ne fait rien, mais elle devient active une fois utilisée dans "
+"l'un des endroits suivants par ordre de priorité :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:18
 msgid "Camera node"
@@ -48,12 +56,16 @@ msgid ""
 "An Environment can be set to a camera. It will have priority over any other "
 "setting."
 msgstr ""
+"Un environnement peut être réglé sur une caméra. Il aura la priorité sur "
+"tout autre réglage."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:24
 msgid ""
 "This is mostly useful when wanting to override an existing environment, but "
 "in general it's a better idea to use the option below."
 msgstr ""
+"C'est surtout utile lorsque vous voulez remplacer un environnement existant, "
+"mais en général c'est une meilleure idée d'utiliser l'option ci-dessous."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:28
 msgid "WorldEnvironment node"
@@ -64,6 +76,9 @@ msgid ""
 "The WorldEnvironment node can be added to any scene, but only one can exist "
 "per active scene tree. Adding more than one will result in a warning."
 msgstr ""
+"Le nœud WorldEnvironment peut être ajouté à n'importe quelle scène, mais un "
+"seul peut exister par arbre de scène actif. Si vous en ajoutez plus d'un, "
+"vous recevrez un avertissement."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:35
 msgid ""
@@ -71,6 +86,9 @@ msgid ""
 "(explained below). This means it can be overridden on a per-scene basis, "
 "which makes it quite useful."
 msgstr ""
+"Tout environnement ajouté a une priorité plus élevée que l'environnement par "
+"défaut (expliqué ci-dessous). Cela signifie qu'il peut être remplacé par "
+"scène, ce qui le rend très utile."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:40
 msgid "Default environment"
@@ -82,6 +100,10 @@ msgid ""
 "Environment was set to a Camera or WorldEnvironment. Just head to Project "
 "Settings -> Rendering -> Environment:"
 msgstr ""
+"Un environnement par défaut peut être défini, ce qui agit comme une solution "
+"de repli lorsque aucun environnement n'a été défini sur une caméra ou "
+"WorldEnvironment. Il vous suffit de vous rendre dans Paramètres du projet -> "
+"Rendu -> Environnement :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:48
 msgid ""
@@ -89,6 +111,9 @@ msgid ""
 "environment (``default_env.tres``). If one needs to be created, save it to "
 "disk before referencing it here."
 msgstr ""
+"Les nouveaux projets créés à partir du Gestionnaire de projets sont livrés "
+"avec un environnement par défaut (``default_env.tres``). S'il est nécessaire "
+"d'en créer un, sauvegardez-le sur disque avant de le référencer ici."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:53
 msgid "Environment options"
@@ -99,6 +124,8 @@ msgid ""
 "Following is a detailed description of all environment options and how they "
 "are intended to be used."
 msgstr ""
+"Vous trouverez ci-dessous une description détaillée de toutes les options "
+"d'environnement et de la façon dont elles doivent être utilisées."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:59
 msgid "Background"
@@ -111,20 +138,29 @@ msgid ""
 "background not only serves the purpose of displaying an image or color, it "
 "can also change how objects are affected by ambient and reflected light."
 msgstr ""
+"La section Arrière-plan contient les paramètres sur la façon de remplir "
+"l'arrière-plan (parties de l'écran où les objets n'ont pas été dessinés). "
+"Dans Godot 3.0, l'arrière-plan ne sert pas seulement à afficher une image ou "
+"une couleur, il peut aussi changer la façon dont les objets sont affectés "
+"par la lumière ambiante et réfléchie."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:68
 msgid "There are many ways to set the background:"
-msgstr ""
+msgstr "Il y a plusieurs façons de régler l'arrière-plan :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:70
 msgid ""
 "**Clear Color** uses the default clear color defined by the project. The "
 "background will be a constant color."
 msgstr ""
+"**Clear Color** utilise la couleur claire par défaut définie par le projet. "
+"L'arrière-plan sera d'une couleur constante."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:71
 msgid "**Custom Color** is like Clear Color, but with a custom color value."
 msgstr ""
+"**Couleur personnalisée** comme Clear Color, mais avec une valeur de couleur "
+"personnalisée."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:72
 msgid ""
@@ -132,6 +168,9 @@ msgid ""
 "procedural sky (a simple sky featuring a gradient and an optional sun). "
 "Objects will reflect it and absorb ambient light from it."
 msgstr ""
+"**Sky** vous permet de définir un ciel panoramique (une texture de sphère de "
+"360 degrés) ou un ciel procédural (un ciel simple avec un dégradé et un "
+"soleil en option). Les objets le reflètent et absorbent la lumière ambiante."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:73
 msgid ""
@@ -139,10 +178,13 @@ msgid ""
 "value for drawing the background. The sky will only be used for reflection "
 "and ambient light."
 msgstr ""
+"**Couleur+Ciel** vous permet de définir un ciel (comme ci-dessus), mais "
+"utilise une valeur de couleur constante pour dessiner le fond. Le ciel ne "
+"sera utilisé que pour la réflexion et la lumière ambiante."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:76
 msgid "Ambient Light"
-msgstr ""
+msgstr "Lumière ambiante"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:78
 msgid ""
@@ -150,6 +192,9 @@ msgid ""
 "geometry with the same intensity. It is global and independent of lights "
 "that might be added to the scene."
 msgstr ""
+"L'ambiante (tel que défini ici) est un type de lumière qui affecte chaque "
+"pièce de la géométrie avec la même intensité. Elle est globale et "
+"indépendante des lumières qui pourraient être ajoutées à la scène."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:82
 msgid ""
@@ -158,6 +203,10 @@ msgid ""
 "the *Sky* (as described before, but a sky needs to be set as background for "
 "this to be enabled)."
 msgstr ""
+"Il existe deux types de lumière ambiante : la *Couleur ambiante* (qui est "
+"une couleur constante multipliée par l'albédo du matériau) et celle obtenue "
+"à partir du *Sky* (comme décrit précédemment, mais un ciel doit être défini "
+"comme fond pour que cela soit activé)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:89
 msgid ""
@@ -165,16 +214,24 @@ msgid ""
 "color and sky using the **Sky Contribution** setting (this value is 1.0 by "
 "default for convenience, so only the sky affects objects)."
 msgstr ""
+"Lorsqu'un *Sky* est défini comme arrière-plan, il est possible de fusionner "
+"la couleur ambiante et le ciel à l'aide du paramètre **Sky Contribution** "
+"(cette valeur est 1.0 par défaut par commodité, donc seul le ciel affecte "
+"les objets)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:93
 msgid "Here is a comparison of how different ambient light affects a scene:"
 msgstr ""
+"Voici une comparaison montrant comment différentes lumières ambiantes "
+"affectent la scène :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:97
 msgid ""
 "Finally there is an **Energy** setting, which is a multiplier, useful when "
 "working with HDR."
 msgstr ""
+"Enfin, il y a un paramètre **Énergie**, qui est un facteur multiplicatif, "
+"utile lorsque l'on travaille en HDR."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:99
 msgid ""
@@ -185,16 +242,25 @@ msgid ""
 "indirect light propagates. Below is a comparison, in terms of quality, "
 "between using a flat ambient color and a GIProbe:"
 msgstr ""
+"En général, la lumière ambiante ne devrait être utilisée que pour des scènes "
+"simples, espaces extérieurs, ou pour des raisons de performance (la lumière "
+"ambiante est peu cher), car cela ne donne pas le meilleur rendu. Le mieux "
+"est de générer la lumière ambiante à partir de ReflectionProbe ou de "
+"GIProbe, cela donnera un rendu plus fidèle de la propagation de la lumière. "
+"Ci-dessous voici une comparaison en terme de qualité entre la lumière "
+"ambiante plate (flat) et GIProbe :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:108
 msgid ""
 "Using one of the methods described above, objects get constant ambient "
 "lighting replaced by ambient light from the probes."
 msgstr ""
+"En utilisant une des méthodes décrites ci-dessus, les objets reçoivent une "
+"lumière ambiante constante remplacé par la lumière ambiante des probes."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:112
 msgid "Fog"
-msgstr ""
+msgstr "Brouillard"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:114
 msgid ""
@@ -202,27 +268,39 @@ msgid ""
 "The physical effect is actually pretty complex, but Godot provides a good "
 "approximation. There are two kinds of fog in Godot:"
 msgstr ""
+"Le brouillard, comme dans la vie réelle, fait disparaître des objets "
+"éloignés dans une couleur uniforme. L'effet physique est en fait assez "
+"complexe, mais Godot fournit une bonne approximation. Il y a deux sortes de "
+"brouillard dans Godot :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:118
 msgid ""
 "**Depth Fog:** This one is applied based on the distance from the camera."
 msgstr ""
+"**Depth Fog:** Celui-ci est appliqué en fonction de la distance de la caméra."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:119
 msgid ""
 "**Height Fog:** This one is applied to any objects below (or above) a "
 "certain height, regardless of the distance from the camera."
 msgstr ""
+"**Height Fog:** Celui-ci est appliqué à tout objet situé au-dessous (ou au-"
+"dessus) d'une certaine hauteur, quelle que soit la distance qui le sépare de "
+"la caméra."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:123
 msgid ""
 "Both of these fog types can have their curve tweaked, making their "
 "transition more or less sharp."
 msgstr ""
+"Ces deux types de brouillard peuvent avoir leur courbe modifiée, ce qui rend "
+"leur transition plus ou moins nette."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:125
 msgid "Two properties can be tweaked to make the fog effect more interesting:"
 msgstr ""
+"Deux propriétés peuvent être modifiées pour rendre l’effet de brouillard "
+"plus intéressant :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:127
 msgid ""
@@ -230,16 +308,23 @@ msgid ""
 "the fog. When looking towards a directional light (usually a sun), the color "
 "of the fog will be changed, simulating the sunlight passing through the fog."
 msgstr ""
+"La première est * * Sun amount * *, qui utilise la propriété Sun Color du "
+"brouillard. En regardant vers une lumière directionnelle (généralement un "
+"soleil), la couleur du brouillard sera changée, simulant la lumière du "
+"soleil passant à travers le brouillard."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:131
 msgid ""
 "The second is **Transmit Enabled** which simulates more realistic light "
 "transmittance. In practice, it makes light stand out more across the fog."
 msgstr ""
+"La seconde est * * transmission Enabled * * qui simule une transmittance de "
+"la lumière plus réaliste. Dans la pratique, cela rend la lumière plus "
+"visible dans le brouillard."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:137
 msgid "Tonemap"
-msgstr ""
+msgstr "Tonemap"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:139
 msgid ""
@@ -248,27 +333,38 @@ msgid ""
 "mapping can make light and dark areas more homogeneous, even though the "
 "result is not that strong. Tone mapping options are:"
 msgstr ""
+"Sélectionne la courbe de  tone-mapping  qui sera appliquée à la scène, à "
+"partir d’une courte liste de courbes standard utilisées dans l’industrie du "
+"film et du jeu. Le  tone-mapping  peut rendre les zones claires et sombres "
+"plus homogènes, même si le résultat n’est pas très bon. Les options de  tone-"
+"mapping  sont :"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:144
 msgid ""
 "**Mode:** Tone mapping mode, which can be Linear, Reindhart, Filmic, or Aces."
 msgstr ""
+"**Mode:** Le mode de Tone mapping , peut être Linear, Reindhart, Filmic, or "
+"Aces."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:145
 msgid ""
 "**Exposure:** Tone mapping exposure which simulates amount of light received "
 "over time."
 msgstr ""
+"**Exposure:** Tone mapping exposure qui simule la quantité de lumière reçue "
+"au fil du temps."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:146
 msgid ""
 "**White:** Tone mapping white, which simulates where in the scale white is "
 "located (by default 1.0)."
 msgstr ""
+"**White:** Tone Mapping blanc, qui simule où  blanc est situé dans l’échelle "
+"(par défaut 1,0)."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:149
 msgid "Auto Exposure (HDR)"
-msgstr ""
+msgstr "Auto Exposure (HDR)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:151
 msgid ""
@@ -279,6 +375,13 @@ msgid ""
 "simulates the camera (or eye) in an effort to adapt between light and dark "
 "locations and their different amounts of light."
 msgstr ""
+"Même si, dans la plupart des cas, l’éclairage et la texturation sont "
+"fortement contrôlés par les artistes, Godot permet une mise en œuvre simple "
+"du HDR (high dynamic range) avec le mécanisme d’exposition automatique. Ceci "
+"est généralement utilisé dans un souci de réalisme lors de la combinaison "
+"d'espace intérieures faiblement éclairé et d'extérieur. L’exposition "
+"automatique simule la caméra (ou l’œil) qui s'efforce de s’adapter entre les "
+"zones clairs et sombres et leurs différentes quantités de lumière."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:160
 msgid ""
@@ -289,6 +392,14 @@ msgid ""
 "directional light. Normally, values between 3.0 and 6.0 are enough to "
 "simulate indoor-outdoor conditions."
 msgstr ""
+"La manière la plus simple d'utiliser l'exposition automatique et de "
+"s'assurer que les éclairages extérieurs ( ou les autres puissants "
+"éclairages ) aie une énergie au delà de 1.0. Ceci est obtenu en manipulant "
+"leur multiplicateur **Energy** ( sur la lumière elle-même ). Pour un tout "
+"homogène, **Sky** nécessite aussi souvent le multiplicateur d'énergie, afin "
+"d'être en harmonie avec les lumières directionnelles. Habituellement, des "
+"valeurs entre 3.0 et 6.0 sont suffisantes pour émuler un environnement "
+"intérieur-extérieur."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:166
 msgid ""

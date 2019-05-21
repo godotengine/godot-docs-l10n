@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,14 +27,13 @@ msgid "Introduction"
 msgstr "소개"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
-#, fuzzy
 msgid ""
 "In previous tutorials, everything revolved around the concept of nodes. "
 "Scenes are collections of nodes. They become active once they enter the "
 "*scene tree*."
 msgstr ""
-"이전 튜토리얼에서, 모든 것은 노드 개념을 중심으로 돌아갔습니다. 씬은 간단히 "
-"노드의 집합입니다. 그들이 *씬 트리(scene tree)* 에 들어가면 활성화됩니다."
+"이전 튜토리얼에서, 모든 것은 노드 개념을 중심으로 돌아갔습니다. 씬은 노드 모"
+"음집입니다. 노드는 *씬 트리(scene tree)*\\ 에 들어가면 활성화됩니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:14
 msgid "MainLoop"
@@ -92,15 +91,14 @@ msgstr ""
 "API입니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
-#, fuzzy
 msgid ""
 "The scene system provides its own main loop to OS, :ref:`SceneTree "
 "<class_SceneTree>`. This is automatically instanced and set when running a "
 "scene, no need to do any extra work."
 msgstr ""
-"어쨌든, 씬 시스템은 고유의 메인 루프(main loop)인, :ref:`SceneTree "
-"<class_SceneTree>` 를 OS로 보냅니다. 이것은 자동으로 씬이 실행되는 동안 자동"
-"으로 인스턴스 되고 설정됩니다, 다른 추가 작업은 필요가 없습니다."
+"씬 시스템은 고유의 메인 루프(main loop)를 운영체제로 보냅니다, :ref:"
+"`SceneTree <class_SceneTree>`. 이것은 씬이 실행되는 동안 자동으로 인스턴스되"
+"고 설정됩니다, 다른 추가 작업은 필요가 없습니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
@@ -135,15 +133,14 @@ msgstr ""
 "함합니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "When a node is part of the Scene Tree, the :ref:`SceneTree "
 "<class_SceneTree>` singleton can be obtained by calling :ref:`Node."
 "get_tree() <class_Node_method_get_tree>`."
 msgstr ""
-"노드가 씬 트리의 일부분일 때, :ref:`SceneTree <class_SceneTree>` 싱글톤"
-"(Singleton)은 간단히 :ref:`Node.get_tree() <class_Node_method_get_tree>` 를 "
-"호출해서 포함될 수 있습니다."
+"노드가 씬 트리의 일부분일 때, :ref:`Node.get_tree() "
+"<class_Node_method_get_tree>`\\ 를 호출해서 :ref:`SceneTree "
+"<class_SceneTree>` 싱글톤(Singleton)을 포함될 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:63
 msgid "Root viewport"
@@ -158,16 +155,15 @@ msgstr ""
 "서, 두 가지 다른 방법으로 포함할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:80
-#, fuzzy
 msgid ""
 "This node contains the main viewport. Anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
 "sense that the top of all nodes is always a node of this type otherwise "
 "nothing would be seen."
 msgstr ""
-"이 노드는 메인 뷰포트를 갖고 있습니다, 어떤 것이든 :ref:`Viewport "
-"<class_Viewport>` 의 자식으로 기본적으로 안에 있습니다, 그래서 모든 노드의 "
-"맨 위에는 이 노드가 있고 그렇지 않다면 아무것도 볼 수 없을 것입니다!"
+"이 노드는 메인 뷰포트를 갖고 있습니다. 모든 것이 기본적으로 :ref:`Viewport "
+"<class_Viewport>`\\ 의 자식으로 있습니다, 그래서 모든 노드의 꼭대기에는 이 타"
+"입의 노드가 있고 그렇지 않다면 아무것도 보이지 않을 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:85
 msgid ""
@@ -199,32 +195,31 @@ msgstr ""
 "_enter_tree()와 _ready() 콜백을 가질 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:100
-#, fuzzy
 msgid ""
 "When nodes enter the *Scene Tree*, they become active. They get access to "
 "everything they need to process, get input, display 2D and 3D visuals, "
 "receive and send notifications, play sounds, etc. When they are removed from "
 "the *scene tree*, they lose these abilities."
 msgstr ""
-"노드가 *씬 트리* 에 들어오게 되면, 활성화됩니다. 그들은 프로세스, 입력, 2D와 "
-"3D 디스플레이, 알림, 소리 재생, 그룹 등 필요로 하는 모든 것을 액세스 합니다. "
-"그들이 *씬 트리* 에서 제거될 때, 액세스를 잃습니다."
+"노드는 *씬 트리*\\ 에 들어가면 활성화됩니다. 노드는 입력을 받거나 처리하고, "
+"2D와 3D 표현을 보여주고, 알림을 받고 보내거나, 소리를 재생하는 등을 실행하기 "
+"위한 것들 모두에 액세스합니다. 노드가 *씬 트리*\\ 에서 제거될 때, 능력을 잃습"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:106
 msgid "Tree order"
 msgstr "트리 순서"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:108
-#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
 "with a lower rank in the tree order will get notified before the current "
 "node."
 msgstr ""
-"2D 그리기, 프로세싱, 혹은 알림과 같은 대부분의 노드 운영은 트리 순서에서 완료"
-"됩니다. 이는 트리 순서에서 부모와 더 낮은 등급의 형제 노드들이 현재 노드 이전"
-"에 알림을 받을 것을 의미합니다."
+"2D 그리기, 프로세싱, 혹은 알림 받기와 같은 대부분의 노드 운영은 트리 순서에"
+"서 완료됩니다. 즉, 현재 노드보다 트리 순서에서 부모와 더 낮은 등급의 형제 노"
+"드들이 먼저 알림을 받는 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
 msgid "\"Becoming active\" by entering the *Scene Tree*"
@@ -293,7 +288,6 @@ msgstr ""
 "져 있는 :ref:`PackedScene <class_PackedScene>` 리소스를 사용합니다:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:174
-#, fuzzy
 msgid ""
 "These are quick and useful ways to switch scenes but have the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
@@ -302,8 +296,7 @@ msgid ""
 "(background) loading. This must be done manually using autoloads (see next "
 "chapter) and :ref:`doc_background_loading`."
 msgstr ""
-"이것은 씬을 바꾸기에 빠르고 유용하지만 새로운 씬이 불러오고 실행될 때까지 멈"
-"춰있는 단점이 있습니다. 게임의 어느 시점에서, 진행 막대, 애니메이션 표시기, "
-"혹은 스레드(배경) 로딩으로 적절한 로딩 화면을 만드는 것이 좋습니다. 이것은 수"
-"동으로 오토로드(Autoload)를 사용하거나(다음 챕터를 보십시오!)  :ref:"
-"`doc_background_loading`\\ 으로 해결할 수 있습니다."
+"이것들은 씬을 바꾸려고 할때 빠르고 쓸만하지만 새로운 씬이 로딩되고 실행될때 "
+"약간의 단점이 있습니다. 개발하실 때에는 프로그레스 바가 있는 로딩 화면을 만드"
+"는 것이 더 좋습니다. 이 작업은 Autoloads(다음 장을 참조하십시오) 와 :ref: "
+"`doc_background_loading' 을 사용하여 수동으로 수행해야 합니다."

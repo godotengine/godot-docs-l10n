@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,8 +38,8 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
-"이 문서에는 새로운 튜토리얼만 포함되어 있기 때문에 변경 사항이 반영되지 않습"
-"니다, 많은 튜토리얼이 업데이트되지만 이 문서에는 반영되지 않습니다."
+"이 문서에는 새로운 튜토리얼만 포함되어 있기 때문에 변경사항이 반영되지 않습니"
+"다, 많은 튜토리얼이 업데이트되지만 이 문서에는 반영되지 않습니다."
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.0"
@@ -59,279 +59,340 @@ msgstr ":ref:`내보내기 <doc_exporting>`"
 
 #: ../../docs/about/docs_changelog.rst:23
 msgid "Project workflow"
-msgstr "프로젝트 워크플로우"
+msgstr "프로젝트 워크플로"
 
-#: ../../docs/about/docs_changelog.rst:34
+#: ../../docs/about/docs_changelog.rst:25
+msgid ":ref:`Custom builds for Android <doc_android_custom_build>`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:37
 msgid "Best Practices:"
 msgstr "모범 사례:"
 
-#: ../../docs/about/docs_changelog.rst:25
+#: ../../docs/about/docs_changelog.rst:28
 msgid ":ref:`Introduction <doc_introduction_best_practices>`"
 msgstr ":ref:`소개 <doc_introduction_best_practices>`"
 
-#: ../../docs/about/docs_changelog.rst:26
+#: ../../docs/about/docs_changelog.rst:29
 msgid ":ref:`What are Godot classes <doc_what_are_godot_classes>`"
 msgstr ":ref:`Godot 클래스란 무엇입니까 <doc_what_are_godot_classes>`"
 
-#: ../../docs/about/docs_changelog.rst:27
+#: ../../docs/about/docs_changelog.rst:30
 msgid ":ref:`Scene organization <doc_scene_organization>`"
 msgstr ":ref:`씬 조직 <doc_scene_organization>`"
 
-#: ../../docs/about/docs_changelog.rst:28
+#: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`Scenes versus scripts <doc_scenes_versus_scripts>`"
 msgstr ":ref:`씬 vs 스크립트 <doc_scenes_versus_scripts>`"
 
-#: ../../docs/about/docs_changelog.rst:29
+#: ../../docs/about/docs_changelog.rst:32
 msgid ""
 ":ref:`Autoloads versus internal nodes <doc_autoloads_versus_internal_nodes>`"
 msgstr ":ref:`오토로드 vs 내장 노드 <doc_autoloads_versus_internal_nodes>`"
 
-#: ../../docs/about/docs_changelog.rst:30
+#: ../../docs/about/docs_changelog.rst:33
 msgid ":ref:`Node alternatives <doc_node_alternatives>`"
 msgstr ":ref:`노드 대안 <doc_node_alternatives>`"
 
-#: ../../docs/about/docs_changelog.rst:31
+#: ../../docs/about/docs_changelog.rst:34
 msgid ":ref:`Godot interfaces <doc_godot_interfaces>`"
 msgstr ":ref:`Godot 인터페이스 <doc_godot_interfaces>`"
 
-#: ../../docs/about/docs_changelog.rst:32
+#: ../../docs/about/docs_changelog.rst:35
 msgid ":ref:`Godot notifications <doc_godot_notifications>`"
 msgstr ":ref:`Godot 알림 <doc_godot_notifications>`"
 
-#: ../../docs/about/docs_changelog.rst:33
+#: ../../docs/about/docs_changelog.rst:36
 msgid ":ref:`Data preferences <doc_data_preferences>`"
 msgstr ":ref:`데이터 환경 설정 <doc_data_preferences>`"
 
-#: ../../docs/about/docs_changelog.rst:34
+#: ../../docs/about/docs_changelog.rst:37
 msgid ":ref:`Logic preferences <doc_logic_preferences>`"
 msgstr ":ref:`논리 환경 설정 <doc_logic_preferences>`"
 
-#: ../../docs/about/docs_changelog.rst:37
+#: ../../docs/about/docs_changelog.rst:40
 msgid "Scripting"
 msgstr "스크립팅(Scripting)"
 
-#: ../../docs/about/docs_changelog.rst:39
-#, fuzzy
-msgid ":ref:`Typed GDscript <doc_gdscript_static_typing>`"
-msgstr ":ref:`내장 타입 <doc_gdscript_builtin_types>`"
-
 #: ../../docs/about/docs_changelog.rst:42
+msgid ":ref:`Typed GDscript <doc_gdscript_static_typing>`"
+msgstr ":ref:`타입 GDscript <doc_gdscript_builtin_types>`"
+
+#: ../../docs/about/docs_changelog.rst:45
 msgid "2D"
 msgstr "2D"
 
-#: ../../docs/about/docs_changelog.rst:44
+#: ../../docs/about/docs_changelog.rst:47
 msgid ":ref:`2D lights and shadows <doc_2d_lights_and_shadows>`"
 msgstr ":ref:`2D 빛과 그림자 <doc_2d_lights_and_shadows>`"
 
-#: ../../docs/about/docs_changelog.rst:45
+#: ../../docs/about/docs_changelog.rst:48
 msgid ":ref:`2D meshes <doc_2d_meshes>`"
 msgstr ":ref:`2D meshes <doc_2d_meshes>`"
 
-#: ../../docs/about/docs_changelog.rst:48
+#: ../../docs/about/docs_changelog.rst:51
 msgid "3D"
 msgstr "3D"
 
-#: ../../docs/about/docs_changelog.rst:50
+#: ../../docs/about/docs_changelog.rst:53
 msgid ":ref:`CSG <doc_csg_tools>`"
 msgstr ":ref:`CSG <doc_csg_tools>`"
 
-#: ../../docs/about/docs_changelog.rst:51
-#, fuzzy
+#: ../../docs/about/docs_changelog.rst:54
 msgid ""
 ":ref:`Animating thousands of fish with MultiMesh "
 "<doc_animating_thousands_of_fish>`"
 msgstr ""
-":ref:`Animating thousands of fish with MultiMesh "
+":ref:`MultiMesh로 수천개의 물고기를 움직이게 하기 "
 "<doc_animating_thousands_of_fish>`"
 
-#: ../../docs/about/docs_changelog.rst:52
+#: ../../docs/about/docs_changelog.rst:55
 msgid ""
 ":ref:`Controlling thousands of fish with Particles "
 "<doc_controlling_thousands_of_fish>`"
 msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:55
-msgid "Physics"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:57
-msgid ":ref:`Ragdoll system <doc_ragdoll_system>`"
-msgstr ""
+":ref:`Particle로 수천개의 물고기를 움직이게 하기 "
+"<doc_controlling_thousands_of_fish>`"
 
 #: ../../docs/about/docs_changelog.rst:58
-msgid ":ref:`Softbody <doc_soft_body>`"
-msgstr ""
+msgid "Physics"
+msgstr "물리"
+
+#: ../../docs/about/docs_changelog.rst:60
+msgid ":ref:`Ragdoll system <doc_ragdoll_system>`"
+msgstr ":ref:`래그돌 시스템 <doc_ragdoll_system>`"
 
 #: ../../docs/about/docs_changelog.rst:61
+msgid ":ref:`Softbody <doc_soft_body>`"
+msgstr ":ref:`소프트바디 <doc_soft_body>`"
+
+#: ../../docs/about/docs_changelog.rst:64
 msgid "Animation"
 msgstr "애니메이션"
 
-#: ../../docs/about/docs_changelog.rst:63
+#: ../../docs/about/docs_changelog.rst:66
 msgid ":ref:`2D skeletons <doc_2d_skeletons>`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:64
-#, fuzzy
-msgid ":ref:`AnimationTree <doc_animation_tree>`"
-msgstr ":ref:`Animation Pipeline <doc_animations>`"
+msgstr ":ref:`2D 스켈레톤 <doc_2d_skeletons>`"
 
 #: ../../docs/about/docs_changelog.rst:67
-msgid "Viewports"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:69
-msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
-msgstr ""
+msgid ":ref:`AnimationTree <doc_animation_tree>`"
+msgstr ":ref:`애니메이션 트리(AnimationTree) <doc_animation_tree>`"
 
 #: ../../docs/about/docs_changelog.rst:70
-msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
+msgid "GUI"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:73
-msgid "Shading"
-msgstr ""
+#: ../../docs/about/docs_changelog.rst:72
+#, fuzzy
+msgid ":ref:`Containers <doc_gui_containers>`"
+msgstr ":ref:`Godot 인터페이스 <doc_godot_interfaces>`"
 
 #: ../../docs/about/docs_changelog.rst:75
+msgid "Viewports"
+msgstr "뷰포트"
+
+#: ../../docs/about/docs_changelog.rst:77
+msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
+msgstr ":ref:`뷰포트를 텍스쳐로 사용하기 <doc_viewport_as_texture>`"
+
+#: ../../docs/about/docs_changelog.rst:78
+msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
+msgstr ":ref:`커스텀 포스트 프로세싱 <doc_custom_postprocessing>`"
+
+#: ../../docs/about/docs_changelog.rst:81
+msgid "Shading"
+msgstr "셰이딩"
+
+#: ../../docs/about/docs_changelog.rst:83
 msgid ""
 ":ref:`Intro to shaders: 2D and 3D water (7 video tutorials) "
 "<doc_intro_to_shaders_water_workshop>`"
 msgstr ""
+":ref:`셰이더 소개: 2D와 3D 물 (7개 비디오 튜토리얼) "
+"<doc_intro_to_shaders_water_workshop>`"
 
-#: ../../docs/about/docs_changelog.rst:76
+#: ../../docs/about/docs_changelog.rst:84
 msgid ""
 ":ref:`Migrating to Godot’s shading language "
 "<doc_migrating_to_godot_shader_language>`"
 msgstr ""
+":ref:`Godot의 셰이딩 언어로 이동하기 "
+"<doc_migrating_to_godot_shader_language>`"
 
-#: ../../docs/about/docs_changelog.rst:77
-msgid ""
-":ref:`Vertex displacement with shaders "
-"<doc_vertex_displacement_with_shaders>`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:78
+#: ../../docs/about/docs_changelog.rst:85
 msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
-msgstr ""
+msgstr ":ref:`고급 포스트 프로세싱 <doc_advanced_postprocessing>`"
 
-#: ../../docs/about/docs_changelog.rst:85
+#: ../../docs/about/docs_changelog.rst:91
 #, fuzzy
-msgid "Shading Reference:"
-msgstr "현재 씬 변경하기"
-
-#: ../../docs/about/docs_changelog.rst:81
-#, fuzzy
-msgid ":ref:`Shaders <doc_shaders>`"
-msgstr ":ref:`Easy to write Shaders <doc_shading_language>`"
-
-#: ../../docs/about/docs_changelog.rst:82
-#, fuzzy
-msgid ":ref:`Shading language <doc_shading_language>`"
-msgstr ":ref:`Easy to write Shaders <doc_shading_language>`"
-
-#: ../../docs/about/docs_changelog.rst:83
-#, fuzzy
-msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ":ref:`Easy to write Shaders <doc_shading_language>`"
-
-#: ../../docs/about/docs_changelog.rst:84
-msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
-msgid ":ref:`Particles shaders <doc_particle_shader>`"
-msgstr ":ref:`Easy to write Shaders <doc_shading_language>`"
+msgid "Your First Shader Series:"
+msgstr "당신의 첫 게임"
 
 #: ../../docs/about/docs_changelog.rst:88
-msgid "VR"
-msgstr ""
+#, fuzzy
+msgid ":ref:`What are shaders? <doc_what_are_shaders>`"
+msgstr ":ref:`Spatial 셰이더 <doc_spatial_shader>`"
+
+#: ../../docs/about/docs_changelog.rst:89
+#, fuzzy
+msgid ":ref:`Your first CanvasItem shader <doc_your_first_canvasitem_shader>`"
+msgstr ":ref:`CanvasItem 셰이더 <doc_canvas_item_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:90
-msgid ":ref:`VR starter tutorial <doc_vr_starter_tutorial>`"
-msgstr ""
+#, fuzzy
+msgid ":ref:`Your first Spatial shader <doc_your_first_spatial_shader>`"
+msgstr ":ref:`Spatial 셰이더 <doc_spatial_shader>`"
 
-#: ../../docs/about/docs_changelog.rst:93
-msgid "Platform-specific"
-msgstr ""
+#: ../../docs/about/docs_changelog.rst:91
+#, fuzzy
+msgid ""
+":ref:`Your first Spatial shader: Part 2 <doc_your_second_spatial_shader>`"
+msgstr ":ref:`Spatial 셰이더 <doc_spatial_shader>`"
+
+#: ../../docs/about/docs_changelog.rst:98
+msgid "Shading Reference:"
+msgstr "셰이딩 참조:"
+
+#: ../../docs/about/docs_changelog.rst:94
+msgid ":ref:`Shaders <doc_shaders>`"
+msgstr ":ref:`셰이더 <doc_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:95
+msgid ":ref:`Shading language <doc_shading_language>`"
+msgstr ":ref:`셰이딩 언어 <doc_shading_language>`"
+
+#: ../../docs/about/docs_changelog.rst:96
+msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
+msgstr ":ref:`Spatial 셰이더 <doc_spatial_shader>`"
+
+#: ../../docs/about/docs_changelog.rst:97
+msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
+msgstr ":ref:`CanvasItem 셰이더 <doc_canvas_item_shader>`"
+
+#: ../../docs/about/docs_changelog.rst:98
+msgid ":ref:`Particles shaders <doc_particle_shader>`"
+msgstr ":ref:`Particle 셰이더 <doc_particle_shader>`"
+
+#: ../../docs/about/docs_changelog.rst:101
+msgid "VR"
+msgstr "VR"
+
+#: ../../docs/about/docs_changelog.rst:103
+msgid ":ref:`VR starter tutorial <doc_vr_starter_tutorial>`"
+msgstr ":ref:`VR 초심자 튜토리얼 <doc_vr_starter_tutorial>`"
+
+#: ../../docs/about/docs_changelog.rst:106
+msgid "Platform-specific"
+msgstr "플랫폼 특화"
+
+#: ../../docs/about/docs_changelog.rst:108
 msgid ""
 ":ref:`Customizing the Web export HTML page <doc_customizing_html5_shell>`"
 msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:98
-msgid "Multi-threading"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:100
-msgid ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:103
-msgid "Miscellaneous"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:105
-msgid ":ref:`Fixing jitter and stutter <doc_jitter_stutter>`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:106
-msgid ":ref:`Running code in the editor <doc_running_code_in_the_editor>`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:107
-msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:108
-#, fuzzy
-msgid ""
-":ref:`Differences between GLES2 and GLES3 <doc_gles2_gles3_differences>`"
-msgstr "C#과 GDScript와의 일반적인 차이"
+":ref:`웹 내보내기 HTML 페이지를 커스터마이징하기 "
+"<doc_customizing_html5_shell>`"
 
 #: ../../docs/about/docs_changelog.rst:111
-msgid "Compiling"
-msgstr ""
+msgid "Multi-threading"
+msgstr "멀티 스레딩(Multi-threading)"
 
 #: ../../docs/about/docs_changelog.rst:113
-msgid ":ref:`Optimizing a build for size <doc_optimizing_for_size>`"
+msgid ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
+msgstr ":ref:`스레드 안전 API <doc_thread_safe_apis>`"
+
+#: ../../docs/about/docs_changelog.rst:116
+#, fuzzy
+msgid "Optimization"
+msgstr "애니메이션"
+
+#: ../../docs/about/docs_changelog.rst:118
+#, fuzzy
+msgid ":ref:`Using MultiMesh <doc_using_multimesh>`"
+msgstr ":ref:`나무 만들기 <doc_making_trees>`"
+
+#: ../../docs/about/docs_changelog.rst:119
+#, fuzzy
+msgid ":ref:`Using servers <doc_using_servers>`"
+msgstr ":ref:`나무 만들기 <doc_making_trees>`"
+
+#: ../../docs/about/docs_changelog.rst:122
+msgid "Miscellaneous"
+msgstr "기타"
+
+#: ../../docs/about/docs_changelog.rst:124
+msgid ":ref:`Fixing jitter and stutter <doc_jitter_stutter>`"
+msgstr ":ref:`불안정함과 끊김 현상 고치기 <doc_jitter_stutter>`"
+
+#: ../../docs/about/docs_changelog.rst:125
+msgid ":ref:`Running code in the editor <doc_running_code_in_the_editor>`"
+msgstr ":ref:`에디터에서 코드 실행하기 <doc_running_code_in_the_editor>`"
+
+#: ../../docs/about/docs_changelog.rst:126
+msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
+msgstr ":ref:`수동으로 씬 바꾸기 <doc_change_scenes_manually>`"
+
+#: ../../docs/about/docs_changelog.rst:127
+msgid ""
+":ref:`Differences between GLES2 and GLES3 <doc_gles2_gles3_differences>`"
+msgstr ":ref:`GLES2와 GLES3 간의 차이 <doc_gles2_gles3_differences>`"
+
+#: ../../docs/about/docs_changelog.rst:130
+msgid "Legal"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:114
+#: ../../docs/about/docs_changelog.rst:132
+#, fuzzy
+msgid ":ref:`Complying with Licenses <doc_complying_with_licenses>`"
+msgstr ""
+":ref:`스크립트 암호화 키로 컴파일하기 "
+"<doc_compiling_with_script_encryption_key>`"
+
+#: ../../docs/about/docs_changelog.rst:135
+msgid "Compiling"
+msgstr "컴파일링(Compiling)"
+
+#: ../../docs/about/docs_changelog.rst:137
+msgid ":ref:`Optimizing a build for size <doc_optimizing_for_size>`"
+msgstr ":ref:`크기에 맞게 빌드 최적화하기 <doc_optimizing_for_size>`"
+
+#: ../../docs/about/docs_changelog.rst:138
 msgid ""
 ":ref:`Compiling with script encryption key "
 "<doc_compiling_with_script_encryption_key>`"
 msgstr ""
+":ref:`스크립트 암호화 키로 컴파일하기 "
+"<doc_compiling_with_script_encryption_key>`"
 
-#: ../../docs/about/docs_changelog.rst:117
+#: ../../docs/about/docs_changelog.rst:141
 msgid "Engine development"
-msgstr ""
+msgstr "엔진 개발"
 
-#: ../../docs/about/docs_changelog.rst:119
-#, fuzzy
+#: ../../docs/about/docs_changelog.rst:143
 msgid ""
 ":ref:`Binding to external libraries <doc_binding_to_external_libraries>`"
-msgstr ":ref:`External editors are possible <doc_external_editor>`"
+msgstr ":ref:`외부 라이브러리에 봉제하기 <doc_binding_to_external_libraries>`"
 
-#: ../../docs/about/docs_changelog.rst:122
-#, fuzzy
+#: ../../docs/about/docs_changelog.rst:146
 msgid "Creating content"
 msgstr "콘텐츠 만들기"
 
-#: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
+#: ../../docs/about/docs_changelog.rst:148
 msgid ":ref:`Making trees <doc_making_trees>`"
-msgstr ":ref:`Animation Pipeline <doc_animations>`"
+msgstr ":ref:`나무 만들기 <doc_making_trees>`"
 
-#: ../../docs/about/docs_changelog.rst:127
+#: ../../docs/about/docs_changelog.rst:151
 msgid "Plugins"
 msgstr "플러그인"
 
-#: ../../docs/about/docs_changelog.rst:129
+#: ../../docs/about/docs_changelog.rst:153
 msgid ":ref:`Making main screen plugins <doc_making_main_screen_plugins>`"
-msgstr ""
+msgstr ":ref:`메인 화면 플러그인 만들기<doc_making_main_screen_plugins>`"
 
-#: ../../docs/about/docs_changelog.rst:130
-#, fuzzy
+#: ../../docs/about/docs_changelog.rst:154
 msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
-msgstr ":ref:`Animation Pipeline <doc_animations>`"
+msgstr ":ref:`Spatial 기즈모 플러그인 <doc_spatial_gizmo_plugins>`"
+
+#: ../../docs/about/docs_changelog.rst:155
+#, fuzzy
+msgid ":ref:`Creating Android plugins <doc_android_plugin>`"
+msgstr ":ref:`Spatial 기즈모 플러그인 <doc_spatial_gizmo_plugins>`"

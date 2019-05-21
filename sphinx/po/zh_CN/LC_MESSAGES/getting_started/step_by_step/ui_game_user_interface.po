@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,16 +22,15 @@ msgid "Design the GUI"
 msgstr "设计GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
 "energy bar, and bomb and emerald counters. By the end of this tutorial, "
 "you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
-"既然您已经掌握了基本知识, 我们将看到如何利用可复用的 UI 组件构建游戏用户界面 "
-"(GUI): 生命条、能量条、炸弹和卢比计数器。直到本教程结束时, 您将拥有一个游戏 "
-"GUI, 可以使用 GDscript 或 VisualScript 来控制:"
+"现在您已经掌握了基础知识，我们将看到如何使用可重复使用的UI组件构建游戏图形用"
+"户界面（GUI）：生命条，能量条，炸弹和翠绿计数器。在本教程结束时，您将拥有一个"
+"游戏GUI，可以使用GDscript或VisualScript进行控制:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
@@ -94,9 +93,8 @@ msgstr "生命和能量条"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-#, fuzzy
 msgid "The bomb and emerald counters on the right"
-msgstr "炸弹和卢比计数器在右边"
+msgstr "炸弹和翠绿计数器在右边"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
@@ -110,7 +108,6 @@ msgid "The life and energy bars on the left"
 msgstr "左边是生命和能量条"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
-#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -119,10 +116,10 @@ msgid ""
 "``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
-"这使得嵌套容器变得更加容易:我们在屏幕的边界周围使用了一个`MarginContainer`，"
-"后面跟着一个`HBoxContainer`来管理我们的两个列。这两个条在一个`VBoxContainer`"
-"中堆叠在一起。我们还需要在右边一列最后一个`HBoxContaine`来将炸弹和卢比计数器"
-"并排放置。"
+"这样可以更容易地嵌套容器：我们在屏幕边框周围有一些边距，使用"
+"``MarginContainer``，然后是``HBoxContainer``来管理我们的两列。这两个条"
+"在“VBoxContainer”中叠加在一起。我们需要在右栏中放置一个“HBoxContainer”，将炸"
+"弹和翠绿计数器并排放置。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
@@ -194,7 +191,6 @@ msgstr ""
 "`HBoxContainer`节点。这个将包含左边的两个栏，并将它们与右边的两个柜台分开。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
-#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
 "``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
@@ -202,10 +198,10 @@ msgid ""
 "``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
 "containers, we have the base for our GUI scene."
 msgstr ""
-"我们想要在`HBoxContainer`中垂直堆叠栏。添加一个`VBoxContainer`作为`GUI`的子元"
-"素，并将其命名为`Bars`。再次选择父`HBoxContainer`，这一次，添加另一个"
-"`HBoxContainer`作为它的子元素。称之为`Counters(计数器)`。有了这四个容器，我们"
-"就有了GUI场景的基础。"
+"我们想在``HBoxContainer``中垂直堆叠条形。添加一个``VBoxContainer``作为"
+"``HBoxContainer``的子容器，并将其命名为``Bars``。再次选择父级"
+"``HBoxContainer``，这次添加另一个``HBoxContainer``作为它的子容器。称之"
+"为“Counters”。有了这四个容器，我们就有了GUI场景的基础。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
@@ -357,7 +353,6 @@ msgstr ""
 "开"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
-#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -370,7 +365,7 @@ msgid ""
 "Resize the node horizontally, so it takes the right half of the "
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
-"选择 ``Title`` ，在属性面板中，改变它的`Stretch Mode伸展模式`属性为`Keep "
+"在属性面板中选择 `Title`，改变它的`Stretch Mode伸展模式`属性为`Keep "
 "Centered`。接下来，在属性面板中找到`Rect`类别，并将`Size`属性更改为(50,40)，"
 "使其只接受背景的左半部分。接下来，选择`Number`节点。在视图中，单击`Layout布局"
 "`菜单并单击`Full Rect完整矩形`。节点将调整大小以适应`Background背景`。前往属"
@@ -482,17 +477,15 @@ msgstr ""
 "设置。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
-#, fuzzy
 msgid "Design the bomb and emerald counters"
-msgstr "设计炸弹和卢比计数器"
+msgstr "设计炸弹和翠绿计数器"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
-#, fuzzy
 msgid ""
 "The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
-"炸弹和卢比计数器就像条形栏的`Count 计数`节点。我们将复制它并将其用作模板。"
+"炸弹和翠绿计数器就像条形栏的`Count 计数`节点。我们将复制它并将其用作模板。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
 msgid ""
@@ -605,7 +598,6 @@ msgstr ""
 "正常。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
-#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
 "so, we need to set the ``Bars`` container take all the available horizontal "
@@ -614,10 +606,10 @@ msgid ""
 "``Bars`` node should resize and push the counter to the right side of the "
 "screen."
 msgstr ""
-"让我们将`Counters`锚定到视图的右边缘。要做到这一点，我们需要设置`bar`容器，它"
-"可以使用所有可用的水平空间。选择`bar`节点并向下滚动到`Size Flags`类别。在"
-"`Horizontal`类别中，检查`Expand`值。`bar`节点应该调整大小并将计数器推到屏幕右"
-"侧。"
+"让我们将`Counters`锚定到视图的右边缘。要做到这一点，我们需要设置`Bars`容器，"
+"它可以使用所有可用的水平空间。选择`Bars`节点并向下滚动到`Size Flags`类别。在"
+"`Horizontal`类别中，检查`Expand`值。`Bars`节点应该调整大小并将计数器推到屏幕"
+"右侧。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:331
 msgid ""
@@ -642,7 +634,6 @@ msgstr ""
 "变量，那就太好了。Godot让我们用继承的场景来做这个。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
-#, fuzzy
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
@@ -651,13 +642,12 @@ msgid ""
 "the scene as ``Bar.tscn``. You should see the node branch turn it to a "
 "single ``Bar`` node."
 msgstr ""
-"让我们将`Counter`和`Bar`两个分支都保存为单独的场景，我们将减少它们，以创建"
+"让我们将`Counter`和`Bar`两个分支都保存为单独的场景，我们将缩减它们，以创建"
 "`LifeBar`、`EnergyBar`、`BombCounter`和`smashing - ounter`。选择"
 "`Bar`HBoxContainer。右键点击它，点击`Save Branch as Scene 保存分支为场景`。保"
 "存场景为`Bar.tscn`。您应该看到节点分支将它转换为一个`Bar`节点。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
-#, fuzzy
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
@@ -666,13 +656,12 @@ msgid ""
 "into the active one. Right click on any node in the Scene dock and select "
 "``Save Branch as Scene`` or ``Merge from Scene``."
 msgstr ""
-"场景是节点树。最上面的节点是树的 **根** ，层次结构底部的子节点是 **叶** 。除"
-"根节点之外的任何节点以及一个以上的子节点都是 **分支** 。我们可以将节点分支封"
-"装到单独的场景中，或者从其他场景加载并合并到活动场景中。右键点击场景面板中的"
-"任何节点，选择`Save Branch as Scene`或`Merge from Scene`。"
+"场景是节点树。最上面的节点是树的 **root根** ，层次结构底部的子节点是 **leaves"
+"叶** 。除根节点之外的任何节点以及一个以上的子节点都是 **branch分支** 。我们可"
+"以将节点分支封装到单独的场景中，或者从其他场景加载并合并到活动场景中。右键点"
+"击场景面板中的任何节点，选择`Save Branch as Scene`或`Merge from Scene`。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
-#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -692,7 +681,6 @@ msgid "With no extra changes, our Bar is ready to use"
 msgstr "没有额外的改变，我们的条形栏准备使用"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
-#, fuzzy
 msgid "Use scene inheritance to create the remaining elements"
 msgstr "使用场景继承来创建剩余的元素"
 
@@ -717,7 +705,6 @@ msgstr ""
 "继承的场景帮助我们保持GUI场景的干净。最后，每个UI组件只有容器和一个节点。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
-#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -727,11 +714,11 @@ msgid ""
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
-"在继承的场景中，除了属性面板的名称之外，还可以更改属性面板中每个节点的任何属"
-"性。如果您修改并保存父场景，所有继承的场景都会更新以反映更改。如果在继承的场"
-"景中更改一个值，它总是会覆盖父元素的属性。它对ui很有用，因为它们通常需要相同"
-"元素的变体。通常，在UI设计中，按钮、面板等共享一个共同的基本样式和交互。我们"
-"不想手工将它复制到所有的变体中。"
+"在继承的场景中，除了名称之外，您还可以更改检查器中每个节点的任何属性。 如果修"
+"改并保存父场景，则所有继承的场景都会更新以反映更改。 如果更改继承场景中的值，"
+"它将始终覆盖父项的属性。 它对UI很有用，因为它们通常需要相同元素的变体。 通"
+"常，在UI设计中，按钮，面板等共享共同的基本样式和交互。 我们不希望手动将其复制"
+"到所有变体。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
 msgid ""
@@ -939,9 +926,8 @@ msgstr ""
 "LifeBar的计数节点都是100像素宽，因此两种量规都可以完美地对齐。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-#, fuzzy
 msgid "Prepare the bomb and emerald counters"
-msgstr "准备炸弹和卢比计数器"
+msgstr "准备炸弹和翠绿计数器"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
 msgid ""
@@ -959,7 +945,6 @@ msgid "The bomb counter is the same as the original Counter scene"
 msgstr "炸弹计数器与原计数器场景相同"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``EmeraldCounter`` and save the scene as "
@@ -972,17 +957,17 @@ msgid ""
 "the keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
-"转到`Scene -> New Inherited Scene`，再次选择`Counter.tscn`。将根节点重命名为"
-"`ecounter`，并将场景保存为`ecounter .tscn`。对于这个，我们主要需要把炸弹图标"
-"换成卢比图标。在文件系统选项卡中，拖动这个`rupees_icon.png`到`Icon``node's` "
-"`Texture`槽。`Icon`已经锚定在`Background`节点的右边缘，所以我们可以改变它的位"
-"置，它会缩放和重新定位，用`RupeeCounter`。将卢比图标向右向下移动一点。使用键"
-"盘上的箭头键来推动它的位置。保存，所有UI元素都完成了。"
+"再次转到``Scene  - > New Inherited Scene``并再次选择``Counter.tscn``。 重命名"
+"根节点``EmeraldCounter``并将场景保存为``EmeraldCounter.tscn``。 对于这个，我"
+"们主要需要用祖母绿图标替换炸弹图标。 在FileSystem选项卡中，将``emeralds_icon."
+"png``拖到``Icon``节点的``Texture``槽中。 ``Icon``已经锚定到``Background``节点"
+"的右边缘，所以我们可以改变它的位置，它将使用``EmeraldCounter``容器缩放和重新"
+"定位。 将祖母绿图标向右和向下移动一点。 使用键盘上的箭头键轻推其位置。 保存，"
+"完成了所有UI元素。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The emerald counter should look something like this"
-msgstr "卢比计数器应该是这样的"
+msgstr "翠绿计数器看起来应该是这样的"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
@@ -1005,20 +990,18 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "生命条和能量条自动对齐"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
-#, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
 "scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
-"现在，将`BombCounter.tscn`和`RupeeCounter.tscn`场景拖放到`Counters`节点上。它"
-"们会自动调整大小。"
+"现在，将``BombCounter.tscn``和``EmeraldCounter.tscn``场景拖放到``Counters``节"
+"点上。 他们会自动调整大小。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
 msgid "The nodes resize to take all the available vertical space"
 msgstr "节点调整大小以获取所有可用的垂直空间"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
-#, fuzzy
 msgid ""
 "To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -1027,10 +1010,10 @@ msgid ""
 "property, and check ``Shrink Center`` so the container centers inside the "
 "``HBoxContainer``."
 msgstr ""
-"为了让`RueCeopter`和`BobCuffe`使用我们在`Counter.tscn`中定义的大小，我们需要"
-"在`Counters`容器上改变`Size Flags`。选择`Counters`节点并展开属性面板中的"
-"`Size Flags`部分。取消`Vertica`属性的`Fill`标记，并检查`Shrink Center`，以便"
-"容器在“HBBOX容器”内。"
+"让``EmeraldCounter``和``BombCounter``使用我们在``Counter.tscn``中定义的大小，"
+"我们需要更改``Counters``容器上的``Size Flags``。 选择``Counters``节点并展开"
+"Inspector中的``Size Flags``部分。 取消选中``Vertical``属性的``Fill``标签，勾"
+"选``Shrink Center``，使容器居中于``HBoxContainer``。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
 msgid "Now both counters have a decent size"
@@ -1043,7 +1026,6 @@ msgid ""
 msgstr "更改`Counters`容器的`Min Size`属性，以控制计数器背景的高度。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
-#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "

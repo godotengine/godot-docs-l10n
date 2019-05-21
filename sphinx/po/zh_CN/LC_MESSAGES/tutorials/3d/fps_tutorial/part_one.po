@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -378,11 +378,11 @@ msgstr ""
 "让我们通过添加移动能力，用鼠标环顾四周并跳跃来编程我们的游戏角色。 将以下代码"
 "添加到``Player.gd``:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:243
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:373
 msgid "This is a lot of code, so let's break it down function by function:"
 msgstr "这是很多代码，所以让我们按功能分解它:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:245
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:375
 msgid ""
 "While copy and pasting code is ill advised, as you can learn a lot from "
 "manually typing the code in, you can copy and paste the code from this page "
@@ -391,12 +391,12 @@ msgstr ""
 "虽然不建议复制和粘贴代码，因为您可以通过手动输入代码来学习很多东西，但您可以"
 "将此页面中的代码直接复制并粘贴到脚本编辑器中。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:248
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:378
 msgid ""
 "If you do this, all of the code copied will be using spaces instead of tabs."
 msgstr "如果这样做，所有复制的代码将使用空格而不是制表符。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:250
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:380
 #, fuzzy
 msgid ""
 "To convert the spaces to tabs in the script editor, click the \"edit\" menu "
@@ -408,13 +408,13 @@ msgstr ""
 "卡”。 这会将所有空格转换为制表符。 您可以选择“将缩进转换为空格”以将t转换回空"
 "格。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:255
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:385
 msgid ""
 "First, we define some class variables to dictate how our player will move "
 "about the world."
 msgstr "首先，我们定义一些类变量来决定我们的游戏角色将如何在世界范围内移动。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:257
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:387
 msgid ""
 "Throughout this tutorial, **variables defined outside functions will be "
 "referred to as \"class variables\"**. This is because we can access any of "
@@ -423,30 +423,30 @@ msgstr ""
 "在本教程中， **函数外部定义的变量将被称为“类变量”** 。 这是因为我们可以从脚本"
 "中的任何位置访问这些变量中的任何一个。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:261
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:391
 msgid "Let's go through each of the class variables:"
 msgstr "让我们来看看每个类变量:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:263
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:393
 msgid "``GRAVITY``: How strong gravity pulls us down."
 msgstr "``GRAVITY``:强大的重力让我们失望。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:264
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:394
 msgid "``vel``: Our :ref:`KinematicBody <class_KinematicBody>`'s velocity."
 msgstr "``vel``:我们的 :ref:`KinematicBody <class_KinematicBody>` 的速度。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:265
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:395
 msgid ""
 "``MAX_SPEED``: The fastest speed we can reach. Once we hit this speed, we "
 "will not go any faster."
 msgstr ""
 "``MAX_SPEED``:我们可以达到的最快速度。 一旦我们达到这个速度，我们就不会更快。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:266
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:396
 msgid "``JUMP_SPEED``: How high we can jump."
 msgstr "``JUMP_SPEED``:我们能跳得多高。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:267
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:397
 #, fuzzy
 msgid ""
 "``ACCEL``: How quickly we accelerate. The higher the value, the sooner we "
@@ -454,14 +454,14 @@ msgid ""
 msgstr ""
 "``ACCEL``:我们加速的速度有多快。 值越高，我们达到最大速度的速度就越快。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:268
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:398
 #, fuzzy
 msgid ""
 "``DEACCEL``: How quickly we are going to decelerate. The higher the value, "
 "the sooner we will come to a complete stop."
 msgstr "``DEACCEL``:我们减速的速度有多快。 价值越高，我们就越快完全停止。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:269
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:399
 msgid ""
 "``MAX_SLOPE_ANGLE``: The steepest angle our :ref:`KinematicBody "
 "<class_KinematicBody>` will consider as a 'floor'."
@@ -469,11 +469,11 @@ msgstr ""
 "``MAX_SLOPE_ANGLE``:我们最陡的角度 :ref:`KinematicBody "
 "<class_KinematicBody>` 将被视为'floor'。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:270
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:400
 msgid "``camera``: The :ref:`Camera <class_Camera>` node."
 msgstr "``camera``: :ref:`Camera <class_Camera>` 节点。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:271
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:401
 msgid ""
 "``rotation_helper``: A :ref:`Spatial <class_Spatial>` node holding "
 "everything we want to rotate on the X axis (up and down)."
@@ -481,7 +481,7 @@ msgstr ""
 "``rotation_helper``:一个 :ref:`Spatial <class_Spatial>` 节点，包含我们想要在X"
 "轴上旋转的所有内容(向上和向下)。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:272
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:402
 msgid ""
 "``MOUSE_SENSITIVITY``: How sensitive the mouse is. I find a value of "
 "``0.05`` works well for my mouse, but you may need to change it based on how "
@@ -490,7 +490,7 @@ msgstr ""
 "``MOUSE_SENSITIVITY``:鼠标的敏感程度。 我发现“0.05”的值适用于我的鼠标，但您可"
 "能需要根据鼠标的敏感程度进行更改。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:274
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:404
 msgid ""
 "You can tweak many of these variables to get different results. For example, "
 "by lowering ``GRAVITY`` and/or increasing ``JUMP_SPEED`` you can get a more "
@@ -499,7 +499,7 @@ msgstr ""
 "您可以调整其中的许多变量以获得不同的结果。 例如，通过降低 ``GRAVITY`` 和/或增"
 "加 ``JUMP_SPEED`` ，您可以获得一个更“浮动”的感觉角色。 随意尝试！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:278
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:408
 msgid ""
 "You may have noticed that ``MOUSE_SENSITIVITY`` is written in all caps like "
 "the other constants, but ``MOUSE_SENSITIVITY`` is not a constant."
@@ -507,7 +507,7 @@ msgstr ""
 "您可能已经注意到 ``MOUSE_SENSITIVITY`` 写在所有大写字母中，就像其他常量一样，"
 "但 ``MOUSE_SENSITIVITY`` 不是常量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:280
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:410
 msgid ""
 "The reason behind this is we want to treat it like a constant variable (a "
 "variable that cannot change) throughout our script, but we want to be able "
@@ -519,25 +519,25 @@ msgstr ""
 "但我们希望能够在以后添加可自定义设置时更改该值。 因此，为了提醒自己将其视为一"
 "个常量，它以全部大写命名。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:285
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:415
 msgid "Now let's look at the ``_ready`` function:"
 msgstr "现在让我们看一下 ``_ready`` 函数:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:287
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:417
 msgid ""
 "First we get the ``camera`` and ``rotation_helper`` nodes and store them "
 "into their variables."
 msgstr ""
 "首先，我们获得“camera”和“rotation_helper”节点，并将它们存储到它们的变量中。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:289
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:419
 #, fuzzy
 msgid ""
 "Then we need to set the mouse mode to captured, so the mouse cannot leave "
 "the game window."
 msgstr "然后我们需要将鼠标模式设置为capture，这样鼠标就不能离开游戏窗口。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:291
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:421
 #, fuzzy
 msgid ""
 "This will hide the mouse and keep it at the center of the screen. We do this "
@@ -547,7 +547,7 @@ msgstr ""
 "这将隐藏鼠标并将其保持在屏幕的中心。 我们这样做有两个原因:第一个原因是我们不"
 "希望游戏角色在玩游戏时看到他们的鼠标光标。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:294
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:424
 #, fuzzy
 msgid ""
 "The second reason is because we do not want the cursor to leave the game "
@@ -559,7 +559,7 @@ msgstr ""
 "游戏角色在窗口外点击的情况，然后游戏将失去焦点。 为了确保这些问题都不会发生，"
 "我们捕获鼠标光标。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:298
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:428
 msgid ""
 "see :ref:`Input documentation <class_Input>` for the various mouse modes. We "
 "will only be using ``MOUSE_MODE_CAPTURED`` and ``MOUSE_MODE_VISIBLE`` in "
@@ -568,11 +568,11 @@ msgstr ""
 "请参阅 :ref:`输入文档<class_Input>` 用于各种鼠标模式。 我们将只在本教程系列中"
 "使用 ``MOUSE_MODE_CAPTURED`` 和 ``MOUSE_MODE_VISIBLE`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:303
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:433
 msgid "Next let's take a look at ``_physics_process``:"
 msgstr "接下来让我们来看看``_physics_process``:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:305
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:435
 msgid ""
 "All we're doing in ``_physics_process`` is calling two functions: "
 "``process_input`` and ``process_movement``."
@@ -580,7 +580,7 @@ msgstr ""
 "我们在 ``_physics_process`` 中所做的就是调用两个函数: ``process_input`` 和 "
 "``process_movement`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:307
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:437
 #, fuzzy
 msgid ""
 "``process_input`` will be where we store all the code relating to player "
@@ -590,7 +590,7 @@ msgstr ""
 "``process_input``将存储与游戏角色输入相关的所有代码。 我们希望在其他任何事情"
 "之前先调用它，以便我们有新的游戏角色输入。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:310
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:440
 #, fuzzy
 msgid ""
 "``process_movement`` is where we'll send all the data necessary to the :ref:"
@@ -599,15 +599,15 @@ msgstr ""
 "``process_movement`` 是我们将所有必要的数据发送到 :ref:`KinematicBody "
 "<class_KinematicBody>` 所以它可以在游戏世界中移动。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:315
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:445
 msgid "Let's look at ``process_input`` next:"
 msgstr "让我们看看下面的``process_input``:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:317
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:447
 msgid "First we set ``dir`` to an empty :ref:`Vector3 <class_Vector3>`."
 msgstr "首先我们将 ``dir`` 设置为空 :ref:`Vector3 <class_Vector3>`。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:319
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:449
 msgid ""
 "``dir`` will be used for storing the direction the player intends to move "
 "towards. Because we do not want the player's previous input to effect the "
@@ -616,13 +616,13 @@ msgstr ""
 "``dir``将用于存储游戏角色打算移动的方向。 因为我们不希望游戏角色以前的输入影"
 "响游戏角色超过单个 ``process_movement`` 调用，所以我们重置 ``dir`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:322
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:452
 msgid ""
 "Next we get the camera's global transform and store it as well, into the "
 "``cam_xform`` variable."
 msgstr "接下来，我们获取相机的全局变换并将其存储到 ``cam_xform`` 变量中。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:324
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:454
 msgid ""
 "The reason we need the camera's global transform is so we can use its "
 "directional vectors. Many have found directional vectors confusing, so let's "
@@ -631,7 +631,7 @@ msgstr ""
 "我们需要相机的全局变换的原因是我们可以使用它的方向向量。 许多人发现方向向量令"
 "人困惑，所以让我们花一点时间来解释它们是如何工作的:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:329
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:459
 msgid ""
 "World space can be defined as: The space in which all objects are placed in, "
 "relative to a constant origin point. Every object, no matter if it is 2D or "
@@ -640,7 +640,7 @@ msgstr ""
 "世界空间可以定义为:相对于恒定原点，放置所有对象的空间。 每个物体，无论是2D还"
 "是3D，都在世界空间中占有一席之地。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:332
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:462
 msgid ""
 "To put it another way: world space is the space in a universe where every "
 "object's position, rotation, and scale can be measured by a single, known, "
@@ -649,13 +649,13 @@ msgstr ""
 "换句话说:世界空间是宇宙中的空间，每个物体的位置，旋转和比例都可以通过称为原点"
 "的单个已知固定点来测量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:335
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:465
 msgid ""
 "In Godot, the origin is at position ``(0, 0, 0)`` with a rotation of ``(0, "
 "0, 0)`` and a scale of ``(1, 1, 1)``."
 msgstr "在Godot中，原点位于``(0,0,0)``，旋转为``(0,0,0)``，标度为``(1,1,1)``。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:337
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:467
 msgid ""
 "When you open up the Godot editor and select a :ref:`Spatial "
 "<class_Spatial>` based node, a gizmo pops up. Each of the arrows points "
@@ -664,13 +664,13 @@ msgstr ""
 "当您打开Godot编辑器并选择一个 :ref:`Spatial <class_Spatial>` 基于节点时，会弹"
 "出一个Gizmo。 默认情况下，每个箭头都使用世界空间方向指向。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:340
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:470
 msgid ""
 "If you want to move using the world space directional vectors, you'd do "
 "something like this:"
 msgstr "如果您想使用世界空间方向向量移动，您会做这样的事情:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:353
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:495
 msgid ""
 "Notice how we do not need to do any calculations to get world space "
 "directional vectors. We can define a few :ref:`Vector3 <class_Vector3>` "
@@ -679,22 +679,22 @@ msgstr ""
 "请注意我们如何不需要进行任何计算来获得世界空间方向向量。 我们可以定义一些 :"
 "ref:`Vector3 <class_Vector3>` 变量并输入指向每个方向的值。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:356
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:498
 msgid "Here is what world space looks like in 2D:"
 msgstr "以下是2D中的世界空间:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:358
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:500
 msgid ""
 "The following images are just examples. Each arrow/rectangle represents a "
 "directional vector"
 msgstr "以下图片仅为示例。 每个箭头/矩形表示方向向量"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:362
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:405
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:504
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:559
 msgid "And here is what it looks like for 3D:"
 msgstr "这就是3D的样子:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:366
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:508
 msgid ""
 "Notice how in both examples, the rotation of the node does not change the "
 "directional arrows. This is because world space is a constant. No matter how "
@@ -704,13 +704,13 @@ msgstr ""
 "请注意，在两个示例中，节点的旋转不会更改方向箭头。 这是因为世界空间是一个常"
 "数。 无论您如何平移，旋转或缩放对象，世界空间都将*始终指向相同的方向*。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:370
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:512
 msgid ""
 "Local space is different, because it takes the rotation of the object into "
 "account."
 msgstr "局部空间不同，因为它考虑了对象的旋转。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:372
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:514
 #, fuzzy
 msgid ""
 "Local space can be defined as follows: The space in which an object's "
@@ -721,13 +721,13 @@ msgstr ""
 "局部空间可以定义如下:对象位置是宇宙起源的空间。 因为原点的位置可以在“N”多个位"
 "置，所以从局部空间导出的值随着原点的位置而变化。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:377
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:519
 msgid ""
 "This stack overflow question has a much better explanation of world space "
 "and local space."
 msgstr "这个堆栈溢出问题对世界空间和局部空间有更好的解释。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:379
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:521
 msgid ""
 "https://gamedev.stackexchange.com/questions/65783/what-are-world-space-and-"
 "eye-space-in-game-development (Local space and eye space are essentially the "
@@ -736,7 +736,7 @@ msgstr ""
 "https://gamedev.stackexchange.com/questions/65783/what-are-world-space-and-"
 "eye-space-in-game-development(在这种情况下，局部空间和眼睛空间基本相同)"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:382
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:524
 msgid ""
 "To get a :ref:`Spatial <class_Spatial>` node's local space, we need to get "
 "its :ref:`Transform <class_Transform>`, so then we can get the :ref:`Basis "
@@ -746,7 +746,7 @@ msgstr ""
 "`Transform <class_Transform>` ，这样我们就可以从 :ref:`Transform "
 "<class_Transform>` 得到 :ref:`Basis <class_Basis>` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:385
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:527
 msgid ""
 "Each :ref:`Basis <class_Basis>` has three vectors: ``X``, ``Y``, and ``Z``. "
 "Each of those vectors point towards each of the local space vectors coming "
@@ -755,18 +755,18 @@ msgstr ""
 "每个 :ref:`Basis <class_Basis>` 有三个向量: ``X`` ， ``Y`` 和 ``Z``。 这些向"
 "量中的每一个指向来自该对象的每个局部空间向量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:388
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:530
 msgid ""
 "To use the :ref:`Spatial <class_Spatial>` node's local directional vectors, "
 "we use this code:"
 msgstr ""
 "要使用 :ref:`Spatial <class_Spatial>` 节点的本地方向向量，我们使用以下代码:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:401
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:555
 msgid "Here is what local space looks like in 2D:"
 msgstr "以下是2D中的局部空间:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:409
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:563
 msgid ""
 "Here is what the :ref:`Spatial <class_Spatial>` gizmo shows when you are "
 "using local space mode. Notice how the arrows follow the rotation of the "
@@ -776,7 +776,7 @@ msgstr ""
 "以下是 :ref:`Spatial <class_Spatial>` 装置在您使用本地空间模式时显示。 注意箭"
 "头如何跟随左侧对象的旋转，这看起来与局部空间的3D示例完全相同。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:413
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:567
 #, fuzzy
 msgid ""
 "You can change between local and world space modes by pressing T or the "
@@ -786,7 +786,7 @@ msgstr ""
 "当您选择了 :ref:`Spatial <class_Spatial>` 基于节点时，可以通过按小立方体按钮"
 "在本地和世界空间模式之间切换。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:418
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:572
 #, fuzzy
 msgid ""
 "Local vectors are confusing even for more experienced game developers, so do "
@@ -799,11 +799,11 @@ msgstr ""
 "切都没有多大意义。 关于局部向量要记住的关键是我们使用局部坐标从对象的角度获取"
 "方向，而不是使用从世界的角度给出方向的世界向量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:424
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:578
 msgid "Okay, back to ``process_input``:"
 msgstr "好的，回到``process_input``:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:426
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:580
 #, fuzzy
 msgid ""
 "Next we make a new variable called ``input_movement_vector`` and assign it "
@@ -814,13 +814,13 @@ msgstr ""
 "ref:`Vector2 <class_Vector2>`。 我们将使用它来制作各种虚拟轴，以便将游戏角色"
 "的输入映射到移动。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:429
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:583
 msgid ""
 "This may seem overkill for just the keyboard, but this will make sense later "
 "when we add joypad input."
 msgstr "这对于键盘来说似乎有些过分，但是当我们添加游戏手柄输入时，这将有意义。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:431
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:585
 #, fuzzy
 msgid ""
 "Based on which directional movement action is pressed, we add to or subtract "
@@ -828,7 +828,7 @@ msgid ""
 msgstr ""
 "根据按下的方向移动动作，我们在 ``input_movement_vector`` 中添加或删除。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:433
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:587
 msgid ""
 "After we've checked each of the directional movement actions, we normalize "
 "``input_movement_vector``. This makes it where ``input_movement_vector``'s "
@@ -837,7 +837,7 @@ msgstr ""
 "在我们检查了每个定向运动动作之后，我们将 ``input_movement_vector`` 标准化。 "
 "这使得 ``input_movement_vector`` 的值在“1”半径单位圆内。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:436
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:590
 msgid ""
 "Next we add the camera's local ``Z`` vector times ``input_movement_vector."
 "y`` to ``dir``. This is so when the player presses forward or backwards, we "
@@ -848,7 +848,7 @@ msgstr ""
 "``dir`` 。 这是当游戏角色向前或向后按下时，我们添加相机的本地“Z”轴，以便游戏"
 "角色相对于相机向前或向后移动。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:439
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:593
 msgid ""
 "Because the camera is rotated by ``-180`` degrees, we have to flip the ``Z`` "
 "directional vector. Normally forward would be the positive Z axis, so using "
@@ -860,7 +860,7 @@ msgstr ""
 "``basis.z.normalized()`` 会起作用，但是我们使用 ``-basis.z.normalized()`` 因"
 "为我们的相机的Z轴面向后方 对其余的游戏角色。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:444
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:598
 msgid ""
 "We do the same thing for the camera's local ``X`` vector, and instead of "
 "using ``input_movement_vector.y`` we instead use ``input_movement_vector."
@@ -871,7 +871,7 @@ msgstr ""
 "y`` 我们改为使用 ``input_movement_vector.x`` 。 当游戏角色向左/向右按下时，这"
 "使得游戏角色相对于相机向左/向右移动。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:447
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:601
 msgid ""
 "Next we check if the player is on the floor using :ref:`KinematicBody "
 "<class_KinematicBody>`'s ``is_on_floor`` function. If it is, then we check "
@@ -883,12 +883,12 @@ msgstr ""
 "了“movement_jump”动作。 如果有，那么我们将游戏角色的“Y”速度设置"
 "为“JUMP_SPEED”。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:451
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:605
 msgid ""
 "Because we're setting the Y velocity, the player will jump into the air."
 msgstr "因为我们正在设置Y速度，所以游戏角色将跳到空中。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:453
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:607
 msgid ""
 "Then we check for the ``ui_cancel`` action. This is so we can free/capture "
 "the mouse cursor when the ``escape`` button is pressed. We do this because "
@@ -899,7 +899,7 @@ msgstr ""
 "捕获鼠标光标。 我们这样做是因为否则我们无法释放光标，这意味着它会在您终止运行"
 "时停止。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:457
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:611
 #, fuzzy
 msgid ""
 "To free/capture the cursor, we check to see if the mouse is visible (freed) "
@@ -909,7 +909,7 @@ msgstr ""
 "要释放/捕获光标，我们检查鼠标是否可见(释放)。 如果是，我们捕获它，如果它不是"
 "我们让它可见(释放它)。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:459
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:613
 msgid ""
 "That's all we're doing right now for ``process_input``. We'll come back "
 "several times to this function as we add more complexities to our player."
@@ -917,11 +917,11 @@ msgstr ""
 "这就是我们现在为 ``process_input`` 所做的一切。 我们会多次回到此功能，因为我"
 "们会为游戏角色增加更多复杂性。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:463
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:617
 msgid "Now let's look at ``process_movement``:"
 msgstr "现在让我们看一下``process_movement``:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:465
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:619
 #, fuzzy
 msgid ""
 "First we ensure that ``dir`` does not have any movement on the ``Y`` axis by "
@@ -929,7 +929,7 @@ msgid ""
 msgstr ""
 "首先，我们通过将 ``Y`` 值设置为零来确保 ``dir`` 在 ``Y`` 轴上没有任何运动。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:467
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:621
 #, fuzzy
 msgid ""
 "Next we normalize ``dir`` to ensure we're within a ``1`` radius unit circle. "
@@ -941,7 +941,7 @@ msgstr ""
 "线移动还是对角线移动，这都是我们以恒定速度移动的地方。 如果我们没有标准化，那"
 "么游戏角色在对角线上移动的速度要比直线移动时快。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:470
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:624
 msgid ""
 "Next we add gravity to the player by adding ``GRAVITY * delta`` to the "
 "player's ``Y`` velocity."
@@ -949,7 +949,7 @@ msgstr ""
 "接下来，我们通过将“GRAVITY * delta”添加到游戏角色的“Y”速度来为游戏角色增加重"
 "力。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:472
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:626
 msgid ""
 "After that we assign the player's velocity to a new variable (called "
 "``hvel``) and remove any movement on the ``Y`` axis."
@@ -957,7 +957,7 @@ msgstr ""
 "之后我们将游戏角色的速度分配给一个新的变量(称为“hvel”)，并移除“Y”轴上的任何移"
 "动。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:474
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:628
 msgid ""
 "Next we set a new variable (``target``) to the player's direction vector. "
 "Then we multiply that by the player's max speed so we know how far the "
@@ -966,11 +966,11 @@ msgstr ""
 "接下来，我们为游戏角色的方向向量设置一个新变量(``target``)。 然后我们将其乘以"
 "游戏角色的最大速度，以便我们知道游戏角色将在“dir”提供的方向上移动多远。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:477
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:631
 msgid "After that we make a new variable for acceleration, named ``accel``."
 msgstr "之后我们为加速创建一个新变量，名为 ``accel`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:479
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:633
 msgid ""
 "We then take the dot product of ``hvel`` to see if the player is moving "
 "according to ``hvel``. Remember, ``hvel`` does not have any ``Y`` velocity, "
@@ -981,7 +981,7 @@ msgstr ""
 "``hvel`` 没有任何“Y”速度，这意味着我们只检查游戏角色是向前，向后，向左还是向"
 "右移动。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:483
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:637
 #, fuzzy
 msgid ""
 "If the player is moving according to ``hvel``, then we set ``accel`` to the "
@@ -992,7 +992,7 @@ msgstr ""
 "这样游戏角色就会加速，否则我们将``accel`设置为 ``DEACCEL`` 常数 所以游戏角色"
 "会减速。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:486
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:640
 msgid ""
 "Then we interpolate the horizontal velocity, set the player's ``X`` and "
 "``Z`` velocity to the interpolated horizontal velocity, and call "
@@ -1003,19 +1003,19 @@ msgstr ""
 "用“move_and_slide”以让 :ref:`KinematicBody <class_KinematicBody>` 处理移动 游"
 "戏角色通过物理世界。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:489
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:643
 msgid ""
 "All of the code in ``process_movement`` is exactly the same as the movement "
 "code from the Kinematic Character demo!"
 msgstr "``process_movement``中的所有代码都与运动角色演示中的移动代码完全相同！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:493
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:647
 msgid ""
 "The final function we have is the ``_input`` function, and thankfully it's "
 "fairly short:"
 msgstr "我们的最后一个函数是 ``_input`` 函数，谢天谢地它很简短:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:495
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:649
 #, fuzzy
 msgid ""
 "First we make sure that the event we are dealing with is an :ref:"
@@ -1026,7 +1026,7 @@ msgstr ""
 "<class_InputEventMouseMotion>` event。 我们还想检查光标是否被捕获，因为如果不"
 "是，我们不想旋转。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:498
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:652
 msgid ""
 "See :ref:`Mouse and input coordinates <doc_mouse_and_input_coordinates>` for "
 "a list of possible input events."
@@ -1034,7 +1034,7 @@ msgstr ""
 "请参阅 :ref:`鼠标和输入坐标<doc_mouse_and_input_coordinates>` 以获取可能的输"
 "入事件列表。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:501
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:655
 msgid ""
 "If the event is indeed a mouse motion event and the cursor is captured, we "
 "rotate based on the relative mouse motion provided by :ref:"
@@ -1043,7 +1043,7 @@ msgstr ""
 "如果事件确实是鼠标移动事件并且捕获了光标，我们将根据以下提供的相对鼠标移动进"
 "行旋转 :ref:`InputEventMouseMotion <class_InputEventMouseMotion>`。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:504
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:658
 msgid ""
 "First we rotate the ``rotation_helper`` node on the ``X`` axis, using the "
 "relative mouse motion's ``Y`` value, provided by :ref:`InputEventMouseMotion "
@@ -1052,7 +1052,7 @@ msgstr ""
 "首先，我们使用相对鼠标运动的 ``Y`` 值旋转 ``X`` 轴上的``rotation_helper`` 节"
 "点，提供者 :ref:`InputEventMouseMotion <class_InputEventMouseMotion>`。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:507
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:661
 msgid ""
 "Then we rotate the entire :ref:`KinematicBody <class_KinematicBody>` on the "
 "``Y`` axis by the relative mouse motion's ``X`` value."
@@ -1060,7 +1060,7 @@ msgstr ""
 "然后我们通过相对鼠标运动的“X”值旋转整个 :ref:`KinematicBody "
 "<class_KinematicBody>` 在 ``Y`` 轴上。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:509
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:663
 msgid ""
 "Godot converts relative mouse motion into a :ref:`Vector2 <class_Vector2>` "
 "where mouse movement going up and down is ``1`` and ``-1`` respectively. "
@@ -1069,7 +1069,7 @@ msgstr ""
 "Godot将相对鼠标运动转换为 :ref:`Vector2 <class_Vector2>` 其中鼠标上下移动分别"
 "为“1”和“-1”。 左右移动分别是“1”和“-1”。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:513
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:667
 msgid ""
 "Because of how we are rotating the player, we multiply the relative mouse "
 "motion's ``X`` value by ``-1`` so mouse motion going left and right rotates "
@@ -1078,7 +1078,7 @@ msgstr ""
 "由于我们如何旋转游戏角色，我们将相对鼠标移动的“X”值乘以“-1”，因此鼠标左右移动"
 "会使游戏角色左右向同一方向旋转。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:517
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:671
 msgid ""
 "Finally, we clamp the ``rotation_helper``'s ``X`` rotation to be between "
 "``-70`` and ``70`` degrees so the player cannot rotate themselves upside "
@@ -1087,7 +1087,7 @@ msgstr ""
 "最后，我们将 ``rotation_helper`` 的 ``X`` 旋转夹在 ``-70`` 和 ``70`` 度之间，"
 "这样游戏角色就不能自己颠倒了。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:520
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:674
 #, fuzzy
 msgid ""
 "See :ref:`using transforms <doc_using_transforms>` for more information on "
@@ -1095,7 +1095,7 @@ msgid ""
 msgstr ""
 "请参阅 :ref:`使用变换<doc_using_transforms>` 获取有关旋转变换的更多信息。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:524
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:678
 #, fuzzy
 msgid ""
 "To test the code, open up the scene named ``Testing_Area.tscn``, if it's not "
@@ -1106,7 +1106,7 @@ msgstr ""
 "在接下来的几个教程部分中使用此场景，因此请务必在其中一个场景选项卡中保持打开"
 "状态。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:527
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:681
 #, fuzzy
 msgid ""
 "Go ahead and test your code either by pressing ``F6`` with ``Testing_Area."
@@ -1117,18 +1117,18 @@ msgstr ""
 "继续测试代码，方法是按 ``F4`` ，将 ``Testing_Area.tscn`` 作为打开标签，按右上"
 "角的播放按钮，或按“F6”。 您现在应该能够四处走动，跳到空中，用鼠标环顾四周。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:533
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:687
 msgid "Giving the player a flash light and the option to sprint"
 msgstr "为游戏角色提供闪光灯和冲刺选项"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:535
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:689
 #, fuzzy
 msgid ""
 "Before we get to making the weapons work, there are a couple more things we "
 "should add."
 msgstr "在我们开始制造武器之前，还有一些我们应该添加的东西。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:537
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:691
 msgid ""
 "Many FPS games have an option to sprint and a flashlight. We can easily add "
 "these to our player, so let's do that!"
@@ -1136,18 +1136,18 @@ msgstr ""
 "许多FPS游戏都可以选择冲刺和手电筒。 我们可以轻松地将这些添加到我们的游戏角色"
 "中，所以让我们这样做！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:540
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:694
 msgid "First we need a few more class variables in our player script:"
 msgstr "首先，我们需要在游戏角色脚本中添加更多类变量:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:550
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:715
 #, fuzzy
 msgid ""
 "All the sprinting variables work exactly the same as the non sprinting "
 "variables with similar names."
 msgstr "所有冲刺变量与具有相似名称的非冲刺变量完全相同。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:553
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:718
 msgid ""
 "``is_sprinting`` is a boolean to track whether the player is currently "
 "sprinting, and ``flashlight`` is a variable we will be using to hold the "
@@ -1156,21 +1156,21 @@ msgstr ""
 "``is_sprinting``是一个布尔值来跟踪游戏角色当前是否正在冲刺，而'`flashlight``"
 "是我们用来保持游戏角色闪光灯节点的变量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:556
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:721
 msgid ""
 "Now we need to add a few lines of code, starting in ``_ready``. Add the "
 "following to ``_ready``:"
 msgstr ""
 "现在我们需要添加几行代码，从 ``_ready`` 开始。 将以下内容添加到``_ready``:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:562
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:732
 #, fuzzy
 msgid ""
 "This gets the ``Flashlight`` node and assigns it to the ``flashlight`` "
 "variable."
 msgstr "这将获得闪光灯节点并将其分配给 ``flashlight`` 变量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:566
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:736
 msgid ""
 "Now we need to change some of the code in ``process_input``. Add the "
 "following somewhere in ``process_input``:"
@@ -1178,11 +1178,11 @@ msgstr ""
 "现在我们需要更改 ``process_input`` 中的一些代码。 在 ``process_input`` 中添加"
 "以下内容:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:587
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:778
 msgid "Let's go over the additions:"
 msgstr "让我们回顾一下:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:589
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:780
 msgid ""
 "We set ``is_sprinting`` to true when the player is holding down the "
 "``movement_sprint`` action, and false when the ``movement_sprint`` action is "
@@ -1195,7 +1195,7 @@ msgstr ""
 "中，我们将添加代码，使其在冲刺时更快。 在 ``process_input`` 中，我们将改变 "
 "``is_sprinting`` 变量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:593
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:784
 #, fuzzy
 msgid ""
 "We do something similar to freeing/capturing the cursor for handling the "
@@ -1207,7 +1207,7 @@ msgstr ""
 "``flashlight`` 动作。 如果是，我们检查是否在场景树中看到 ``flashlight`` 。 如"
 "果是，那么我们隐藏它，如果它不是我们显示它。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:598
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:789
 msgid ""
 "Now we need to change a couple things in ``process_movement``. First, "
 "replace ``target *= MAX_SPEED`` with the following:"
@@ -1215,7 +1215,7 @@ msgstr ""
 "现在我们需要在 ``process_movement`` 中改变一些东西。 首先，用以下代码替换"
 "``target * = MAX_SPEED``:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:607
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:806
 msgid ""
 "Now instead of always multiplying ``target`` by ``MAX_SPEED``, we first "
 "check to see if the player is sprinting or not. If the player is sprinting, "
@@ -1225,14 +1225,14 @@ msgstr ""
 "``MAX_SPEED`` 。 如果游戏角色正在冲刺，我们将 ``target`` 乘以 "
 "``MAX_SPRINT_SPEED`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:610
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:809
 #, fuzzy
 msgid ""
 "Now all that's left is to change the acceleration when sprinting. Change "
 "``accel = ACCEL`` to the following:"
 msgstr "现在剩下的就是在短跑时改变加速度。 将``accel = ACCEL``更改为以下内容:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:620
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:826
 #, fuzzy
 msgid ""
 "Now, when the player is sprinting, we'll use ``SPRINT_ACCEL`` instead of "
@@ -1241,7 +1241,7 @@ msgstr ""
 "现在当游戏角色冲刺时，我们将使用 ``SPRINT_ACCEL`` 而不是 ``ACCEL`` ，这将加快"
 "游戏角色的速度。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:624
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:830
 msgid ""
 "You should now be able to sprint if you press the ``shift`` button, and can "
 "toggle the flash light on and off by pressing the ``F`` button!"
@@ -1249,7 +1249,7 @@ msgstr ""
 "如果您按下“shift”按钮，您现在应该能够冲刺，并且可以通过按下“F”按钮来打开和关"
 "闭闪光灯！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:626
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:832
 #, fuzzy
 msgid ""
 "Go try it out! You can change the sprint-related class variables to make the "
@@ -1257,31 +1257,31 @@ msgid ""
 msgstr ""
 "去试试吧！ 您可以更改与sprint相关的类变量，以便在短跑时让游戏角色更快或更慢！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:629
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:835
 msgid "Final notes"
 msgstr "最后的笔记"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:633
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:839
 #, fuzzy
 msgid ""
 "Whew! That was a lot of work. Now you have a fully working first person "
 "character!"
 msgstr "唷！ 这是很多工作。 现在您有一个完全工作的第一人称角色！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:635
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:841
 msgid ""
 "In :ref:`doc_fps_tutorial_part_two` we will add some guns to our player "
 "character."
 msgstr ""
 "在 :ref:`doc_fps_tutorial_part_two` 我们将为我们的游戏角色角色添加一些枪支。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:637
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:843
 msgid ""
 "At this point we've recreated the Kinematic character demo from first person "
 "perspective with sprinting and a flash light!"
 msgstr "在这一点上，我们通过短跑和闪光灯从第一人称角度重新创建了运动角色演示！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:639
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:845
 msgid ""
 "Currently the player script would be at an ideal state for making all sorts "
 "of first person games. For example: Horror games, platformer games, "
@@ -1290,11 +1290,11 @@ msgstr ""
 "目前，游戏角色脚本将处于制作各种第一人称游戏的理想状态。 例如:恐怖游戏，平台"
 "游戏，冒险游戏等等！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:642
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:848
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr "如果您迷路了，请务必再次阅读代码！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:644
+#: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:850
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_1.zip <files/Godot_FPS_Part_1.zip>`"

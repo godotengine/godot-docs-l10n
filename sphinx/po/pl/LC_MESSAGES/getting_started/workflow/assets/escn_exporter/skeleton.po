@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,11 +39,18 @@ msgid ""
 "and Godot"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:19
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:18
+msgid ""
+"It is important that the mesh is not deformed by bones when exporting in "
+"Blender. Make sure that the skeleton is reset to its T-pose or default rest "
+"pose."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:22
 msgid "Bone Weights"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:24
 msgid ""
 "Blender put rigged mesh vertices which has no bone weights at its original "
 "position, but these vertices would be placed at (0, 0, 0) in Godot, making "
@@ -51,22 +58,22 @@ msgid ""
 "vertex with no bone weights detected in a rigged mesh."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:27
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:30
 msgid "Non-Deform Bone"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:29
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:32
 msgid ""
 "Note that the non-deform bone can be configured as not exported by enabling "
 "the :code:`Exclude Control Bones`; the deform bone checkbox is shown in the "
 "picture."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:35
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:38
 msgid "Bone Attachment"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:36
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:39
 msgid ""
 "A bone can be the parent of an object in Blender; this relation is exported "
 "as a BoneAttachment node in the Godot scene."

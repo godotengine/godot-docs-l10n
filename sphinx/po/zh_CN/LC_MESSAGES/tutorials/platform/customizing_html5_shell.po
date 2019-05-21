@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr "从主包文件以外的目录中加载引擎文件"
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:18
 msgid ""
 "Adding a click-to-play button so games can be started in full-screen mode"
-msgstr ""
+msgstr "添加一个点击播放按钮，这样游戏可以在全屏模式下启动"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:19
 msgid ""
@@ -102,9 +102,8 @@ msgid "Placeholder"
 msgstr "占位符"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
-#, fuzzy
 msgid "Substituted by"
-msgstr "替代"
+msgstr "替换为"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:37
 msgid "``$GODOT_BASENAME``"
@@ -178,87 +177,79 @@ msgstr ""
 "过程的接口。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:67
-#, fuzzy
 msgid ""
 "The API is based on and requires basic understanding of `Promises <https://"
 "developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises>`__."
 msgstr ""
-"遵循 `同源政策 <https://developer.mozilla.org/en-US/docs/Web/Security/Same-"
-"origin_policy>`_"
+"本API基于并要求对承诺有基本的理解。 <https://developer.mozilla.org/en-US/"
+"docs/Web/JavaScript/Guide/Using_promises>`__."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:69
-#, fuzzy
 msgid "The object itself has only the following methods:"
-msgstr "Mob场景将会使用如下节点:"
+msgstr "对象本身只有以下方法:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:73
-#, fuzzy
 msgid "Load the engine from the passed base path."
-msgstr "从传递的基本路径加载引擎。"
+msgstr "从已通过的底层路径加载引擎。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:0
-#, fuzzy
 msgid "Arguments"
-msgstr "调整"
+msgstr "参数"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:75
 msgid "Base path of the engine to load."
-msgstr ""
+msgstr "引擎加载的底层路径。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:0
-#, fuzzy
 msgid "Returns"
-msgstr "Return"
+msgstr "返回"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:76
-#, fuzzy
 msgid "Promise which resolves once the engine is loaded."
-msgstr "返回一旦加载引擎就解析的承诺。"
+msgstr "当引擎加载时承诺解决。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:80
 msgid "Unload the engine to free memory."
-msgstr ""
+msgstr "卸载引擎以释放内存。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:82
-#, fuzzy
 msgid ""
 "This is called automatically once the engine is started unless explicitly "
 "disabled using :js:func:`engine.setUnloadAfterInit`."
 msgstr ""
-"卸载模块以释放内存。 除非明确禁用，否则在实例化模块后会自动调用此方法。"
+"除非使用:js:func:`引擎.初始化后卸载`显式禁用，否则引擎一旦启动就会自动调用。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:87
 msgid "Check whether WebGL is available."
-msgstr ""
+msgstr "检查WebGL是否可用。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:89
 msgid "The major WebGL version to check for. Defaults to 1 for *WebGL 1.0*."
-msgstr ""
+msgstr "主要WebGL版本检查。*WebGL 1.0*默认值为1。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:92
-#, fuzzy
 msgid ""
 "``true`` if the given major version of WebGL is available, ``false`` "
 "otherwise."
-msgstr ""
-"如果给定的主要版本的WebGL可用，则返回 ``true`` ，否则返回 ``false`` 。 对于"
-"WebGL 1.0，默认为 ``1`` 。"
+msgstr "如果WebGL的主要版本可用，则为真，否则为假。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:98
 msgid ""
 "When loading the engine, the filename extension of the WebAssembly module is "
 "assumed to be ``wasm``. This function allows usage of an alternate extension."
 msgstr ""
+"加载引擎时，WebAssembly模块的文件名扩展假定为“wasm”。这个函数允许使用替代扩"
+"展。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:108
 msgid ""
 "This is useful for outdated hosts that only accept uploads of files with "
 "certain filename extensions."
-msgstr ""
+msgstr "对于过时的主机来说，只接受某些文件扩展名的文件的上传，是非常有用的。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:111
 msgid "Filename extension without preceding dot."
-msgstr ""
+msgstr "文件名扩展没有前面的点。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:115
 msgid ""
@@ -266,6 +257,8 @@ msgid ""
 "some start-up optimizations. This occurs when the file is delivered with a "
 "MIME-type other than :mimetype:`application/wasm`."
 msgstr ""
+"根据主机，使用替代文件名扩展可以防止某些启动优化。当文件使用mime类型交付时，"
+"就会发生这种情况。而不是 :mimetype:`应用程序/wasm`。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:120
 msgid "Starting an ``Engine`` instance"
@@ -273,57 +266,56 @@ msgstr "启动 ``Engine`` 实例"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:122
 msgid ":js:class:`Engine` also acts a class:"
-msgstr ""
+msgstr ":js:类:`引擎`还是一个类:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:126
 msgid "An instance of the engine that can be started, usually a game."
-msgstr ""
+msgstr "可以启动的引擎实例，通常是一个游戏。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:128
 msgid "Instantiate the class using the ``new`` operator:"
-msgstr ""
+msgstr "使用“new”操作符实例化类:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:134
 msgid ""
 "This yields an :js:class:`Engine` instance, referred to as ``engine`` with a "
 "lower-case ``e`` from here."
-msgstr ""
+msgstr "这将生成一个:js:类:`引擎`实例，在这里用小写的“e”代替“engine”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:137
-#, fuzzy
 msgid ""
 "To start such an instance, the global ``Engine`` object must be loaded, then "
 "the ``engine`` instance must be initialized and finally started."
 msgstr ""
-"这个 ``Engine`` 实例，在这里被称为 ``engine`` ，带有小写的 ``e`` ，是引擎的可"
-"启动实例，通常是游戏。 要启动这样的实例，必须加载全局 ``Engine`` 对象，然后必"
-"须初始化并启动 ``engine`` 实例。"
+"要启动这样的实例，必须加载全局 ``Engine`` 对象，然后必须初始化并启动 "
+"``engine`` 实例。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:142
 msgid ""
 "Initialize the instance. The instance can then be started with one of the "
 "``start`` functions, usually :js:func:`engine.startGame`."
 msgstr ""
+"初始化实例。然后可以使用其中一个``开始`` 函数启动实例，通常是:js:函数:“引擎."
+"开始游戏”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:145
 msgid ""
 "The base path to the engine, same as in :js:func:`Engine.load`. Must be "
 "passed only if the engine hasn't been loaded yet."
 msgstr ""
+"引擎的基本路径与:js:函数:`引擎.加载`相同。只有在引擎尚未加载时才能通过。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:149
-#, fuzzy
 msgid "Promise that resolves once the engine is loaded and initialized."
-msgstr "返回一旦加载引擎就解析的承诺。"
+msgstr "承诺一旦加载并初始化引擎就会解析。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:153
-#, fuzzy
 msgid ""
 "Load a file so it is available in the file system once the instance runs. "
 "Must be called **before** starting the instance."
 msgstr ""
-"这会加载一个文件，以便在启动实例后在文件系统中可用。 必须在 **启动实例之前调"
-"用** 。"
+"这会加载一个文件，以便在启动实例后在文件系统中可用。 必须在启动实例**之前** "
+"调用。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:156
 #, fuzzy
@@ -337,7 +329,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:157
 msgid "If type is string, the file will be loaded from that path."
-msgstr ""
+msgstr "如果类型是字符串，则文件将从该路径加载。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:159
 #, fuzzy
@@ -381,29 +373,27 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:179
 msgid "The engine must be loaded beforehand."
-msgstr ""
+msgstr "引擎必须预先加载。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:181
 msgid ""
 "Requires that the engine has been loaded, and that a canvas can be found on "
 "the page."
-msgstr ""
+msgstr "需要的引擎已经加载完毕，可以在页面上找到画布。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:184
-#, fuzzy
 msgid "Command line arguments."
-msgstr "添加命令行目标(Command Line Target):"
+msgstr "命令行参数。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:186
-#, fuzzy
 msgid "Promise that resolves once the engine started."
-msgstr "返回引擎启动后解析的承诺。"
+msgstr "引擎启动后解析的承诺。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
 msgid ""
 "Initializes the engine if not yet initialized and starts the game with the "
 "main pack loaded from the passed URL."
-msgstr ""
+msgstr "初始化引擎(如果还没有初始化)，并使用从传递的URL加载的主包启动游戏。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:193
 msgid ""
@@ -415,18 +405,17 @@ msgstr "如果尚未加载引擎，则将使用传递的URL的基本路径来加
 msgid ""
 "This function ignores overrides of filenames and their extensions to start "
 "only the main pack passed as argument."
-msgstr ""
+msgstr "这个函数忽略文件名及其扩展名的覆盖，只启动作为参数传递的主包。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:199
 msgid ""
 "Path to the main pack to start. Also used as base path to load the engine if "
 "not loaded already."
-msgstr ""
+msgstr "从主包路径启动游戏。如果还没有加载引擎，也可用作加载引擎的基本路径。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:203
-#, fuzzy
 msgid "Promise that resolves once the game started."
-msgstr "返回游戏开始后解析的承诺。"
+msgstr "当游戏启动后承诺解析。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:206
 msgid "Configuring start-up behaviour"
@@ -442,57 +431,49 @@ msgstr "除启动引擎外，引擎实例的其他方法还允许配置行为:"
 msgid ""
 "Specify whether the Engine will be unloaded automatically after the instance "
 "is initialized."
-msgstr ""
+msgstr "指定初始化实例后是否自动卸载引擎。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:216
-#, fuzzy
 msgid ""
 "This frees browser memory by unloading files that are no longer needed once "
 "the instance is initialized. However, if more instances of the engine will "
 "be started, the Engine will have to be loaded again."
 msgstr ""
-"设置是否在初始化实例后自动卸载Engine。 这通过卸载初始化实例后不再需要的文件来"
-"释放浏览器内存。 但是，如果将启动更多引擎实例，则必须再次加载引擎。"
+"这通过卸载初始化实例后不再需要的文件来释放浏览器内存。 但是，如果将启动更多引"
+"擎实例，则必须再次加载引擎。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:220
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:239
 msgid "Enabled by default."
-msgstr ""
+msgstr "默认启用。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:222
-#, fuzzy
 msgid ""
 "``true`` if the engine shall be unloaded after initializing, ``false`` "
 "otherwise."
-msgstr "如果调试就是 ``true`` ，否则是 ``false``"
+msgstr "如果引擎在初始化后卸载，则为“真”，否则为“假”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:228
 msgid "Specify a canvas to use."
-msgstr ""
+msgstr "指定要使用的画布。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:230
-#, fuzzy
 msgid "By default, the first canvas element on the page is used for rendering."
-msgstr ""
-"默认情况下，页面上的第一个canvas元素用于呈现。 通过调用此方法，可以指定另一个"
-"画布。"
+msgstr "默认情况下，页面上的第一个画布元素用于呈现。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:232
 msgid "The canvas to use."
-msgstr ""
+msgstr "使用的画布。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:236
-#, fuzzy
 msgid ""
 "Specifies whether the canvas will be resized to the width and height "
 "specified in the project settings on start."
-msgstr ""
-"设置是否将画布调整为启动时项目设置中指定的宽度和高度。 默认为 ``true`` 。"
+msgstr "设置是否将画布调整为启动时项目设置中指定的宽度和高度。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:241
-#, fuzzy
 msgid "``true`` if the canvas shall be resized on start, ``false`` otherwise."
-msgstr "如果调试就是 ``true`` ，否则是 ``false``"
+msgstr "如果在开始时需要调整画布大小，则为\"真\"，否则为“假”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:246
 msgid ""
@@ -506,22 +487,20 @@ msgstr ""
 "域设置。该方法允许指定这样的自定义区域设置字符串。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:252
-#, fuzzy
 msgid "For example, with PHP:"
-msgstr "例如:"
+msgstr "例如，使用PHP的情况:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:258
-#, fuzzy
 msgid "Locale."
-msgstr "区域"
+msgstr "地区设置。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:261
 msgid "List of :ref:`locales <doc_locales>`."
-msgstr ""
+msgstr "列表:参考:`地区设置<文档_地区设置>`."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:265
 msgid "Specify the virtual filename of the executable."
-msgstr ""
+msgstr "指定可执行文件的虚拟文件名。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:267
 msgid ""
@@ -529,15 +508,14 @@ msgid ""
 "virtual filename is stored by the engine for compatibility with other "
 "platforms."
 msgstr ""
+"HTML5平台不存在真正的可执行文件。但是，引擎存储虚拟文件名是为了与其他平台兼"
+"容。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:271
-#, fuzzy
 msgid ""
 "By default, the base name of the loaded engine files is used. This method "
 "allows specifying another name."
-msgstr ""
-"默认情况下，已加载的引擎文件的基本名称用于可执行文件名。 此方法允许指定其他名"
-"称。"
+msgstr "默认情况下，使用加载的引擎文件的基本名称。此方法允许指定另一个名称。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:274
 msgid ""
@@ -545,10 +523,12 @@ msgid ""
 "<class_OS_method_get_executable_path>` and the automatically started main "
 "pack, :file:`{ExecutableName}.pck`."
 msgstr ""
+"这将影响:参考:`操作系统.获取可执行文件路径()<类_操作系统_方法_获取可执行文件"
+"路径>`和自动启动的主包:文件:`{可执行文件名称}.pck`。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:277
 msgid "Executable name."
-msgstr ""
+msgstr "可执行文件名称。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:280
 msgid "Customizing the presentation"
@@ -560,13 +540,15 @@ msgstr "以下方法用于实现演示:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:286
 msgid "Set the callback for displaying download progress."
-msgstr ""
+msgstr "设置显示下载进度的回调函数。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:288
 msgid ""
 "Callback called once per frame with two number arguments: bytes loaded so "
 "far, and total bytes to load."
 msgstr ""
+"每帧调用一个回调函数，有两个数值类型的参数：目前已加载的字节数，以及要加载的"
+"总字节数。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:299
 msgid "If the total is 0, it couldn't be calculated. Possible reasons include:"
@@ -590,40 +572,37 @@ msgstr "并非所有文件下载都已开始(通常在没有多线程的服务�
 msgid ""
 "For ease of use, the callback is only called once per frame, so that usage "
 "of ``requestAnimationFrame()`` is not necessary."
-msgstr ""
+msgstr "为便于使用，每帧只调用一次回调，因此，没有必要使用“请求动画帧()”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:313
 msgid "Specify the standard output stream callback."
-msgstr ""
+msgstr "指定标准输出流回调。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:315
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:334
 msgid "Callback function called with one argument, the string to print."
-msgstr ""
+msgstr "回调函数调用带有一个参数，要打印的字符串。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:325
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:344
-#, fuzzy
 msgid ""
 "This method should usually only be used in debug pages. The ``"
 "$GODOT_DEBUG_ENABLED`` placeholder can be used to check for this."
 msgstr ""
-"这些方法通常只应在调试页面中使用。 可以使用 ``$GODOT_DEBUG_ENABLED`` 占位符来"
-"检查这一点。"
+"这些方法通常只在调试页面中使用。 可以使用\"$GODOT_调试_激活\"占位符来检查这一"
+"点。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:328
-#, fuzzy
 msgid "By default, ``console.log()`` is used."
-msgstr "默认情况下，分别使用 ``console.log()`` 和 ``console.warn()`` 。"
+msgstr "默认情况下，使用的是“console.log()”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:332
 msgid "Specify the standard error stream callback."
-msgstr ""
+msgstr "调整标准错误流回调。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:347
-#, fuzzy
 msgid "By default, ``console.warn()`` is used."
-msgstr "默认情况下，分别使用 ``console.log()`` 和 ``console.warn()`` 。"
+msgstr "默认情况下，使用的是“console.warn()”。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:350
 msgid "Accessing the Emscripten ``Module``"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -242,15 +242,15 @@ msgstr ""
 "都编译进我们的可执行文件中。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:258
-#, fuzzy
 msgid ""
 "However the trade-off is every single change means a full recompilation of "
 "the game. Even if SCons is able to detect and recompile only the file that "
 "have changed, finding such files and eventually linking the final binary is "
 "a long and costly part."
 msgstr ""
-"然而，他的缺点是每次对模块进行修改您都需要重新编译并链接整个引擎。即使 Scons "
-"能够检测到只需要重新编译一小部分文件， 执行这种链接操作会耗费不少时间。"
+"然而，每一次改变都意味着游戏的全面重新编译。即使SCons能够只检测和重新编译已更"
+"改的文件，找到这样的文件，并最终链接到最终的二进制文件，是一个漫长而成本高昂"
+"的过程。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:263
 msgid ""
@@ -272,9 +272,10 @@ msgstr ""
 "们需要帮助可执行文件在运行时找到它:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:305
+#, fuzzy
 msgid ""
 "**note**: Pay attention you have to ``export`` the environ variable "
-"otherwise you won't be able to play you project from within the editor."
+"otherwise you won't be able to play your project from within the editor."
 msgstr ""
 "**注意**: 请确保您有 ``export`` 这个环境变量， 否则您将无法从编辑器中启动您的"
 "游戏。"

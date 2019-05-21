@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,16 +48,21 @@ msgid ""
 "does not allow declaring them in namespaces. Most global constants were "
 "moved to their own enums."
 msgstr ""
+"全局函数和某些常量必须移动到类中, 因为C#不允许在命名空间中声明它们。大多数全"
+"局常量都被移动到它们自己的枚举中。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:22
 msgid "Constants"
 msgstr "常量"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:24
+#, fuzzy
 msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
+"全局常量被移动到它们自己的枚举中。例如, \"ERR _ *\" 常量被移动到 \"Error\" 枚"
+"举。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
 #, fuzzy
@@ -92,27 +97,32 @@ msgstr "C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``SPKEY``"
-msgstr ""
+msgstr "\"SPKEY\""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
+#, fuzzy
 msgid "``GD.SpKey``"
-msgstr ""
+msgstr "\"GD\"SpKey ' '"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
+#, fuzzy
 msgid "``TYPE_*``"
-msgstr ""
+msgstr "''Type_*''"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
+#, fuzzy
 msgid "``Variant.Type`` enum"
-msgstr ""
+msgstr "\"变量.类型\"枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
+#, fuzzy
 msgid "``OP_*``"
-msgstr ""
+msgstr "“op_*”"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
+#, fuzzy
 msgid "``Variant.Operator`` enum"
-msgstr ""
+msgstr "\"变体.运算符\" 枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
 #, fuzzy

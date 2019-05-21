@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -821,6 +821,15 @@ msgid ""
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
+"In einer geerbten Szene können wir neben dem Namen jede Eigenschaft jedes "
+"Nodes im Inspektor ändern. Wenn wir die übergeordnete Szene ändern und "
+"speichern, werden alle geerbten Szenen mit den Änderungen aktualisiert. Wenn "
+"wir einen Wert in der geerbten Szene ändern, wird die Eigenschaft des "
+"übergeordneten Objekts immer überschrieben. Dies ist nützlich für "
+"Benutzeroberflächen, da diese häufig Variationen derselben Elemente "
+"erfordern. Im Allgemeinen haben Schaltflächen, Bedienfelder usw. im UI-"
+"Design einen gemeinsamen Basisstil und Interaktionen. Wir möchten es nicht "
+"auf alle Variationen manuell kopieren."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
 msgid ""
@@ -845,9 +854,8 @@ msgstr ""
 "Funktionalität zu erweitern."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:406
-#, fuzzy
 msgid "Inherit the Bar Scene to build the LifeBar"
-msgstr "Erbe von der Leistenszene um einen Lebensbalken zu erstellen."
+msgstr "Erbe von der Leistenszene um einen Lebensbalken zu erstellen"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
 msgid ""
@@ -856,10 +864,18 @@ msgid ""
 "like your ``Bar``, but with all nodes except the root in grey. Press ``Meta"
 "+S`` to save the new inherited scene and name it ``LifeBar``."
 msgstr ""
+"Wechsle zu ''Szene -> Neue geerbte Szene'' um einen neuen Leistentyp zu "
+"erstellen. Wähle die Leistenszene aus und öffne sie. Du solltest nun einen "
+"neuen [ungespeicherten] Reiter sehen, welcher identisch zu deiner Leiste "
+"ist, jedoch sind alle Knoten bis auf den Wurzelknoten grau. Drücke nun ''Meta"
+"+S'' um die neue geerbte Szene zu speichern und benenne sie als "
+"''Lebensbalken''"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
 msgstr ""
+"Man kann keine ausgegrauten Nodes umbenennen. Dadurch wird kommuniziert, "
+"dass sie von einer Elternszene erben."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:418
 msgid ""
@@ -870,6 +886,13 @@ msgid ""
 "works with all inherited scenes. Like our ``TextureProgress`` and ``Number`` "
 "nodes."
 msgstr ""
+"Benenne zuerst den Wurzelknoten in ``Lebensbalken`` um. Der Wurzelknoten "
+"sollte immer möglichst exakt beschreiben, was die UI-Komponente darstellt. "
+"Der Name unterscheidet diesen Balken vom ``Energiebalken``, den wir als "
+"nächstes erstellen. Die anderen Knoten in der Szene sollten die Struktur der "
+"Komponente mit allgemeinen Begriffen beschreiben, damit sie mit allen "
+"geerbten Szenen funktioniert. Wie in unseren ``Texturfortschritt``- und `` "
+"Nummer``-Knoten."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:427
 msgid ""
@@ -881,6 +904,13 @@ msgid ""
 "we create an inherited scene and change the name of the top level node, "
 "we're doing the same thing."
 msgstr ""
+"Es ist das gleiche wenn Sie mit CSS arbeiten: sie erstellen eine Basis "
+"Klasse, und fügen eine Variation mit modifizierten Klassen hinzu. Bei der "
+"Knopf Klasse haben Sie grüne und rote Knöpfe, mit dieser kann der Benutzer "
+"Befehle akzeptieren und ablehnen. Die neue Klasse enthält den Namen des "
+"parental Elementes und ein extra Schlüsselwort, um zu erklären wie es zu "
+"modifizieren ist. Wenn wir eine vererbte Szene erstellen und wir den Namen "
+"des oberen Knoten ändern, machen wir das gleiche."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
 msgid "Design the EnergyBar"
@@ -901,6 +931,11 @@ msgid ""
 "``EnergyBar``. Save the new scene as ``EnergyBar.tscn``. We need to replace "
 "the HP texture with EP one, and to change the textures on the gauge."
 msgstr ""
+"Erstellen wir nun eine neue vererbte Szene, und ein weiteres Mal selektieren "
+"wir die ``Bar.tscn`` Szene und öffnen diese. Mit einem Doppelklich bennnen "
+"wir ``Bar``, den Wurzel Node um zu ``Energy Bar``. Nun speichern wir diese "
+"als ``EnergyBar.tscn``. Es ist wichtig das wir die HP Textur mit der EP "
+"ersetzen, ebenfalls müssen wir die Textur mit die von der Anzeige ersetzen."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
 msgid ""
@@ -989,6 +1024,7 @@ msgid "The Count looks better now it's a bit smaller"
 msgstr "Der Zähler sieht nun, da er ein wenig kleiner ist, besser aus"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
+#, fuzzy
 msgid ""
 "The Count node's size affects the position of the TextureProgress. As we'll "
 "align our bars vertically in a moment, we're better off using the Counter's "
@@ -996,6 +1032,7 @@ msgid ""
 "the LifeBar's Count nodes are one hundred pixels wide, so both gauges will "
 "align perfectly."
 msgstr ""
+"Die Größe des Zähl Node's beeinflusst die Position des Texturen Fortschritts."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
 msgid "Prepare the bomb and emerald counters"

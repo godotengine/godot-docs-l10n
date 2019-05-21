@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,9 +98,8 @@ msgid ""
 msgstr "如何制作一个 :ref:`RigidBody <class_RigidBody>` 基于拾取和放下系统。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:27
-#, fuzzy
 msgid "How to make various items that can be used in VR."
-msgstr "如何制作可在VR中使用的各种物品"
+msgstr "如何制作可在虚拟现实场景内使用的各种物品。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:29
 msgid ""
@@ -114,14 +113,13 @@ msgstr ""
 "列。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:34
-#, fuzzy
 msgid ""
 "This tutorial assumes you have experience working with the Godot editor, "
 "have basic programming experience in GDScript, and have basic 3D game "
 "development experience."
 msgstr ""
-"本教程假设您具有使用Godot编辑器的经验，具有GDScript的基本编程经验，并具有基本"
-"的3D游戏开发经验。"
+"本教程假设您有使用Godot编辑器的经验，基础GDScript编程经验，以及基础3D游戏开发"
+"经验。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:37
 #, fuzzy
@@ -222,15 +220,14 @@ msgid "Launch Godot and open up the project included in the starter assets."
 msgstr "启动Godot并打开启动资源中包含的项目。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:64
-#, fuzzy
 msgid ""
 "While these assets are not necessarily required to use the scripts provided "
 "in this tutorial, they will make the tutorial much easier to follow, as "
 "there are several premade scenes we will be using throughout the tutorial "
 "series."
 msgstr ""
-"虽然这些资源不一定需要使用本教程中提供的脚本，但它们将使教程更容易理解，因为"
-"我们将在整个教程系列中使用几个预制场景。"
+"虽然使用这些资源并不一定需要本教程提供的脚本，但它们将使教程内容更容易理解，"
+"所以我们将在本系列教程中使用这些预先制作的场景。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:68
 msgid ""
@@ -356,14 +353,13 @@ msgid "Starting VR"
 msgstr "启动VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:101
-#, fuzzy
 msgid ""
 "First, let's get the VR up and going! While ``Game.tscn`` is open, select "
 "the ``Game`` node and make a new script called ``Game.gd``. Add the "
 "following code:"
 msgstr ""
-"首先，让我们开始VR吧！ 当 ``Game.tscn`` 打开时，选择 ``Game`` 节点并创建一个"
-"名为 ``Game.gd`` 的新脚本。 添加以下代码:"
+"首先，让我们启动VR!打开“Game.tscn”场景,选择“游戏”（Game）节点并创建一个名"
+"为“Game.gd”的新脚本。添加以下代码:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:142
 msgid ""

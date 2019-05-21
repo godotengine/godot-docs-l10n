@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,11 +162,12 @@ msgid ""
 "``is_action_pressed()`` and ``is_action_released()`` by passing the name of "
 "the action you're looking for:"
 msgstr ""
+"一旦你定义了动作，可以在脚本中使用“is_action_pressed()”和“is_action_released "
+"()”处理它们。通过名称查找响应的动作:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:133
-#, fuzzy
 msgid "Keyboard events"
-msgstr "键盘快捷键"
+msgstr "键盘事件"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:135
 msgid ""
@@ -175,20 +176,20 @@ msgid ""
 "where you want to specifically look at key events. For this example, let's "
 "check for the \"T\" key:"
 msgstr ""
+"键盘事件在:参考:‘输入事件键位 <类_输入事件键位>’中捕获。虽然建议使用输入行"
+"为，在某些情况下，您可能希望特别关注关键事件。对于这个示例，我们检查“T”键:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:148
 #: ../../docs/tutorials/inputs/input_examples.rst:171
-#, fuzzy
 msgid ""
 "See :ref:`@GlobalScope_KeyList <enum_@GlobalScope_KeyList>` for a list of "
 "scancode constants."
 msgstr ""
-"其中一个 :ref:`PropertyHint <enum_ @ GlobalScope_PropertyHint>` 值用作提示。"
+"详见:参考:“@全局范围_键位列表<枚举_@全局范围_键位列表>”获取扫描代码常量列表。"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:152
-#, fuzzy
 msgid "Keyboard modifiers"
-msgstr "占位符的修饰符"
+msgstr "键盘修饰符"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:154
 msgid ""
@@ -198,11 +199,13 @@ msgid ""
 "happen when the \"T\" key is pressed, but something different when it's "
 "\"Shift+T\":"
 msgstr ""
+"修饰符属性继承自:参考:‘带有修饰符的输入事件<类_带有修饰符的输入事件>’。这允许"
+"您使用布尔属性检查修饰符组合。假设您希望在按下“T”键时发生一件事情，但当它"
+"是“Shift+T”时，情况就不一样了:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:175
-#, fuzzy
 msgid "Mouse events"
-msgstr "响应事件"
+msgstr "鼠标事件"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:177
 msgid ""
@@ -212,11 +215,13 @@ msgid ""
 "<class_InputEventMouseMotion>`. Note that this means that all mouse events "
 "will contain a ``position`` property."
 msgstr ""
+"鼠标事件继承自:参考:'鼠标输入事件<类_鼠标输入事件>'类，并被分成两种类型::参"
+"考:'鼠标按钮输入事件<类_鼠标按钮输入事件>'和:参考:“鼠标行为输入事件<类_鼠标行"
+"为输入事件>”。注意，这意味着所有鼠标事件将包含一个“位置”（position）属性。"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:183
-#, fuzzy
 msgid "Mouse buttons"
-msgstr "方便按钮"
+msgstr "鼠标按钮"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:185
 msgid ""
@@ -229,9 +234,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:202
-#, fuzzy
 msgid "Mouse motion"
-msgstr "旋转"
+msgstr "鼠标行为"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:204
 msgid ""

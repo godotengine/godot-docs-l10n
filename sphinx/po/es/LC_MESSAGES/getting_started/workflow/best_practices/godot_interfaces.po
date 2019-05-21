@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,18 +26,22 @@ msgid ""
 "Often one needs scripts that rely on other objects for features. There are 2 "
 "parts to this process:"
 msgstr ""
+"Frecuentemente se necesitan scripts que dependen de otros objetos para su "
+"funcionamiento. Hay 2 partes en este proceso:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:9
 msgid "Acquiring a reference to the object that presumably has the features."
 msgstr ""
+"Obtener una referencia al objeto que presumiblemente tenga las "
+"características."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:11
 msgid "Accessing the data or logic from the object."
-msgstr ""
+msgstr "Accediendo a los datos o lógica desde el objeto."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:13
 msgid "The rest of this tutorial outlines the various ways of doing all this."
-msgstr ""
+msgstr "El resto de este tutorial describe las distintas formas de hacer esto."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:16
 msgid "Acquiring object references"
@@ -49,6 +53,9 @@ msgid ""
 "them is to get a reference to an existing object from another acquired "
 "instance."
 msgstr ""
+"Para todos los :ref:`Object <class_Object>`, el modo más básico de "
+"referenciarlos es obtener una referencia de un objeto existente desde otra "
+"instancia."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:32
 msgid ""
@@ -56,11 +63,17 @@ msgid ""
 "While users often access :ref:`Node <class_Node>` and :ref:`Resource "
 "<class_Resource>` this way, alternative measures are available."
 msgstr ""
+"El mismo principio aplica para objetos :ref:`Reference <class_Reference>`. "
+"Mientras que los usuarios acceden normalmente a :ref:`Node <class_Node>` y :"
+"ref:`Resource <class_Resource>`de este modo, hay modos alternativos "
+"disponibles."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:36
 msgid ""
 "Instead of property or method access, one can get Resources by load access."
 msgstr ""
+"En lugar de acceso mediante propiedades o métodos, se pueden obtener "
+"recursos por acceso de carga."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:115
 msgid "Note the following:"
@@ -69,12 +82,15 @@ msgstr "Nota lo siguiente:"
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:117
 msgid "There are many ways in which a language can load such resources."
 msgstr ""
+"Existen muchas formas en las que un lenguaje puede cargar tales recursos."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:119
 msgid ""
 "When designing how objects will access data, don't forget that one can pass "
 "resources around as references as well."
 msgstr ""
+"Al diseñar cómo los objetos accederán a los datos, no olvides que también se "
+"pueden pasar recursos como referencias."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:122
 msgid ""
@@ -83,14 +99,18 @@ msgid ""
 "<class_Resource_method_duplicate>` an existing reference or instantiate one "
 "from scratch with ``new()``."
 msgstr ""
+"Ten en mente que al cargar un recurso se obtiene la versión cacheada de la "
+"instancia del recurso mantenida por el motor. Para obtener uno nuevo, se "
+"debe :ref:`duplicate <class_Resource_method_duplicate>` (duplicar) una "
+"referencia existente o instanciar una nueva con ``new()``."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:127
 msgid "Nodes likewise have an alternative access point: the SceneTree."
-msgstr ""
+msgstr "Los nodos también tienen un punto de acceso alternativo: el SceneTree."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:242
 msgid "Accessing data or logic from an object"
-msgstr ""
+msgstr "Acceso a datos o lógica desde un objeto"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
 msgid ""
@@ -99,6 +119,10 @@ msgid ""
 "**type**. It instead checks that the object **implements** the individual "
 "method."
 msgstr ""
+"El API de scripting de Godot es tipado dinámico (duck-typed). Esto quiere "
+"decir que si un script ejecuta una operación, Godot no valida si soporta la "
+"operación por **tipo**. En su lugar chequea que el objeto **implemente** el "
+"método individual."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:248
 msgid ""
@@ -108,6 +132,11 @@ msgid ""
 "`CanvasItem.visible <class_CanvasItem_property_visible>`, then Godot would "
 "do the following checks, in order:"
 msgstr ""
+"Por ejemplo, la clase :ref:`CanvasItem <class_CanvasItem>` tiene la "
+"propiedad ``visible``. Todas las propiedades expuestas al API de scripting "
+"son en efecto un par setter y getter vinculados a un nombre. Si uno intenta "
+"acceder a :ref:`CanvasItem.visible <class_CanvasItem_property_visible>`, "
+"entonces Godot hará los siguientes chequeos en orden:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:254
 msgid ""
@@ -116,6 +145,10 @@ msgid ""
 "a property defined on a base object by overriding the setter method for the "
 "property."
 msgstr ""
+"Si el objeto tiene un script adjunto, intentará establecer la propiedad a "
+"través del script. Esto deja abierta la oportunidad de que los scripts "
+"anulen una propiedad definida en un objeto base al anular el método setter "
+"de la propiedad."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:259
 msgid ""
@@ -125,12 +158,19 @@ msgid ""
 "getter. For more information about HashMaps, see the :ref:`data preferences "
 "<doc_data_preferences>` docs."
 msgstr ""
+"Si el script no tiene la propiedad, realiza una búsqueda en el HashMap de la "
+"ClassDB en busca de la propiedad \"visible\", contra la clase CanvasItem y "
+"todos sus tipos heredados. Si la encuentra, este llamará al setter o getter "
+"vinculado. Para más información acerca de HashMaps, ver :ref:`data "
+"preferences <doc_data_preferences>`."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:265
 msgid ""
 "If not found, it does an explicit check to see if the user wants to access "
 "the \"script\" or \"meta\" properties."
 msgstr ""
+"Si no se encuentra, realiza una comprobación explícita para ver si el "
+"usuario desea acceder a las propiedades \"script\" o \"meta\"."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:268
 msgid ""
@@ -139,6 +179,10 @@ msgid ""
 "execute logic that gives the impression that the Object has a property. This "
 "is also the case with the ``_get_property_list`` method."
 msgstr ""
+"Si no es así, busca una implementación ``_set``/``_get`` (dependiendo del "
+"tipo de acceso) en el CanvasItem y sus tipos heredados. Estos métodos pueden "
+"ejecutar una lógica que da la impresión de que el objeto tiene una "
+"propiedad. Este es también el caso del método ``_get_property_list``."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:273
 msgid ""
@@ -147,6 +191,10 @@ msgid ""
 "the name of the tile with ID 1, i.e. :ref:`TileSet.tile_get_name(1) "
 "<class_TileSet_method_tile_get_name>`."
 msgstr ""
+"Hay que tener en cuenta que esto ocurre incluso con nombres de símbolos no-"
+"legales, como en el caso de la propiedad \"1/tile_name\" de :ref:`TileSet "
+"<class_TileSet>`'s. Se refiere al nombre del tile con ID 1, es decir, :ref:"
+"`TileSet.tile_get_name(1) <class_TileSet_method_tile_get_name>`."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:278
 msgid ""
@@ -154,18 +202,26 @@ msgid ""
 "script, the object's class, or any class that object inherits, but only for "
 "things which extend Object."
 msgstr ""
+"Como resultado, este sistema puede localizar una propiedad ya sea en el "
+"script, en la clase del objeto o en cualquier clase que el objeto herede, "
+"pero sólo para cosas que se extiendan en Object."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:282
 msgid ""
 "Godot provides a variety of options for performing runtime checks on these "
 "accesses:"
 msgstr ""
+"Godot proporciona una variedad de opciones para realizar comprobaciones de "
+"tiempo de ejecución en estos accesos:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:285
 msgid ""
 "A duck-typed property access. These will property check (as described "
 "above). If the operation isn't supported by the object, execution will halt."
 msgstr ""
+"Un acceso a propiedad en tipado dinámico. Estas harán chequeo de propiedades "
+"(como se describió anteriormente). Si la operación no está disponible por el "
+"objeto se detendrá la ejecución."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:313
 msgid ""
@@ -173,6 +229,9 @@ msgid ""
 "<class_CanvasItem_property_visible>`, one can access the methods, "
 "``set_visible`` and ``is_visible`` like any other method."
 msgstr ""
+"Un chequeo de método. En el caso de :ref:`CanvasItem.visible "
+"<class_CanvasItem_property_visible>`, se puede acceder al método "
+"``set_visible`` y ``is_visible`` como cualquier otro método."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:445
 msgid ""
@@ -180,9 +239,15 @@ msgid ""
 "useful in cases where one needs the max level of freedom from dependencies. "
 "In this case, one relies on an external context to setup the method."
 msgstr ""
+"Externaliza el acceso a :ref:`FuncRef <class_FuncRef>`. Puede resultar útil "
+"en casos en que se quiere maximizar el nivel de libertad de dependencias. En "
+"este caso se depende de un contexto externo para configurar el método."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:504
 msgid ""
 "These strategies contribute to Godot's flexible design. Between them, users "
 "have a breadth of tools to meet their specific needs."
 msgstr ""
+"Estas estrategias contribuyen al diseño flexible de Godot. Entre todos "
+"ellos, los usuarios disponen de una amplia gama de herramientas para "
+"satisfacer sus necesidades específicas."

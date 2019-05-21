@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,9 +45,10 @@ msgid "In short:"
 msgstr "간단히 말해서:"
 
 #: ../../docs/about/faq.rst:13
+#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
-"profit, commercial, or otherwise;"
+"profit, commercial, or otherwise."
 msgstr ""
 "개인적으로, 비영리로, 사업으로, 혹은 그 외 어떤 목적이든 당신은 무료로 Godot"
 "를 다운로드하실 수 있습니다;"
@@ -404,12 +405,13 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Godot 3.0부터는, glTF도 지원합니다."
 
 #: ../../docs/about/faq.rst:153
+#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<https://opensource.org/licenses/MIT>`_ provided by Godot. That being said, "
 "FBX support could still be provided by third parties as a plugin. (See "
-"Plugins question above.)"
+"Plugins question below.)"
 msgstr ""
 "FBX SDK는 `제한적인 라이센스 <http://www.blender.org/bf/Autodesk_FBX_License."
 "rtf>`_\\ 를 갖고 있기 때문에, Godot의 `오픈 라이선스 <http://opensource.org/"
@@ -444,9 +446,10 @@ msgstr ""
 "지 폐쇄 소스든지 말이죠."
 
 #: ../../docs/about/faq.rst:170
+#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
-"the Plugins question above."
+"the Plugins question below."
 msgstr ""
 "여러분이 원하는 SDK 지원을 추가하는 방법을 알아보려면, 위 플러그인 질문을 참"
 "고하세요."
@@ -512,20 +515,22 @@ msgstr ""
 "고, 더 많은 메모리를 먹고 더 긴 로딩이 걸릴 것이니 명심하십시오."
 
 #: ../../docs/about/faq.rst:201
+#, fuzzy
 msgid ""
-"Use the stretch options in Godot, 2D stretching with keeping aspect works "
-"best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
-"this."
+"Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
+"works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
+"achieve this."
 msgstr ""
 "Godot에서 늘이기 옵션을 사용해보세요. 비율을 유지하는 2D 늘이기는 잘 작동됩니"
 "다. :ref:`doc_multiple_resolutions` 튜토리얼에서 확인해보세요."
 
 #: ../../docs/about/faq.rst:205
+#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
-"stretch vertically or horizontally for different aspect ratios, or whether "
-"there is a minimum one and you want black bars to appear instead. This is "
-"also explained in the previous step."
+"stretch vertically or horizontally for different aspect ratios, or if there "
+"is one aspect ratio and you want black bars to appear instead. This is also "
+"explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
 "최소 해상도를 선택한 다음, 게임의 화면을 다른 화면비에 맞게 늘릴 것인지 또는 "
 "검정색 막대를 사용하여 화면비를 유지할 것인지를 정하십시오. 이 또한 이전 단계"
@@ -617,9 +622,9 @@ msgid ""
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
 "처음으로 시작해야 할 부분은 `issues <https://github.com/godotengine/godot/"
-"issues>`_ 입니다. 당신이 공감할만한 이슈를 찾으신 다음, 변경 사항과 함께 "
-"Pull Request (PR)를 포크 요청, 수정 및 제출하는 법을 배우기 위해 `기여하는 방"
-"법 <https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
+"issues>`_ 입니다. 당신이 공감할만한 이슈를 찾으신 다음, 변경사항과 함께 Pull "
+"Request (PR)를 포크 요청, 수정 및 제출하는 법을 배우기 위해 `기여하는 방법 "
+"<https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
 "md#contributing-pull-requests>`_ 가이드를 진행하세요."
 
 #: ../../docs/about/faq.rst:249
@@ -639,7 +644,7 @@ msgid ""
 "community members."
 msgstr ""
 "Godot로 아이디어를 가져오는 것이, 마치 거대한 핵심 변화를 가져오거나, 다른 종"
-"류의 게임 엔진을 흉내 내거나, 에디터에 내장하길 원하는 대체 워크플로우가 생기"
+"류의 게임 엔진을 흉내 내거나, 에디터에 내장하길 원하는 대체 워크플로가 생기"
 "는 것 같아서, 매력적일 것이라고 생각합니다. 이것들은 위대하고 그래서 우리는 "
 "그러한 사람들이 기여하길 원하는 것에 감사하고 있습니다, 하지만 Godot의 초점"
 "은 `로드맵 \n"
@@ -676,7 +681,7 @@ msgstr "소프트웨어를 배우면서 이해하기 어려운 개념들."
 
 #: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
-msgstr "워크플로우를 최적화시키고 싶은 부분들."
+msgstr "워크플로를 최적화시키고 싶은 부분들."
 
 #: ../../docs/about/faq.rst:269
 msgid ""

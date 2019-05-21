@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,23 +26,32 @@ msgid "Introduction"
 msgstr "소개"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:9
+#, fuzzy
 msgid ""
 "Since version 3.1, Godot supports ragdoll physics. Ragdolls rely on physics "
 "simulation to create realistic procedural animation. They are used for death "
 "animations in many games."
 msgstr ""
+"3.1 버전부터 Godot은 래그돌 물리를 지원합니다. 래그돌은 현실적 절차 애니메이"
+"션을 만들기 위해 물리 시뮬레이션에 의존합니다. 이것은 많은 게임에서 죽음 애니"
+"메이션으로 쓰입니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:11
 msgid ""
 "In this tutorial, we will be using the Platformer3D demo to set up a ragdoll."
 msgstr ""
+"이번 튜토리얼에서는 래그돌을 설치하기 위해 Platformer3D 데모를 사용합니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:13
+#, fuzzy
 msgid ""
 "You can download the Platformer3D demo on `GitHub <https://github.com/"
 "godotengine/godot-demo-projects/tree/master/3d/platformer>`_ or using the "
 "`Asset Library <https://godotengine.org/asset-library/asset/125>`_."
 msgstr ""
+"`GitHub <https://github.com/godotengine/godot-demo-projects/tree/master/3d/"
+"platformer>`_ 또는 `Asset Library <https://godotengine.org/asset-library/"
+"asset/125>`_ 를 사용해서 Platformer3D 데모를 다운로드할 수 있습니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:16
 msgid "Setting up the ragdoll"
@@ -53,12 +62,17 @@ msgid "Creating physical bones"
 msgstr "물리적 본 만들기"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:21
+#, fuzzy
 msgid ""
 "Like many other features in the engine, there is a node to set up a ragdoll: "
 "the :ref:`PhysicalBone <class_PhysicalBone>` node. To simplify the setup, "
 "you can generate ``PhysicalBone`` nodes with the \"Create physical skeleton"
 "\" feature in the skeleton node."
 msgstr ""
+"엔진 내 다른 특징들과 마찬가지로 래그돌을 설정하기 위한 :ref:`PhysicalBone "
+"<class_PhysicalBone>` 노드가 있습니다. 설정을 단순화 하기 위해서  골격 노드"
+"의 \"Create physical skeleton\" 기능으로``PhysicalBone`` 노드를 생성할 수 있"
+"습니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
 msgid ""

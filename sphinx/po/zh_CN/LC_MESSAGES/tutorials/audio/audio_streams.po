@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgstr "简介"
 #, fuzzy
 msgid ""
 "As you might have already read in the :ref:`Audio Buses Tutorial<doc_audio-"
-"buses>` , sound is sent to each bus via an AudioStreamPlayer."
+"buses>`, sound is sent to each bus via an AudioStreamPlayer."
 msgstr ""
 "您可能已经阅读过 :ref:`Audio Buses Tutorial <doc_audio-bus>` ，声音通过"
 "AudioStreamPlayer发送到每个总线。"
@@ -37,8 +37,8 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_streams.rst:12
 #, fuzzy
 msgid ""
-"There are many types of AudioStreamPlayer, which will be explained in "
-"detail. Each one loads an AudioStream and plays it back."
+"There are different kinds of AudioStreamPlayer. Each one loads an "
+"AudioStream and plays it back."
 msgstr ""
 "有许多类型的AudioStreamPlayers将详细解释。 每个都加载一个AudioStream并播放"
 "它。"
@@ -50,9 +50,9 @@ msgstr "音频流"
 #: ../../docs/tutorials/audio/audio_streams.rst:18
 #, fuzzy
 msgid ""
-"An audio stream is an abstract object that emits sound. It can come from "
-"many places, but most commonly from the filesystem. Audio files, such as ."
-"wav or .ogg, can be loaded as AudioStreams and placed inside an "
+"An audio stream is an abstract object that emits sound. The sound can come "
+"from many places, but most commonly from the filesystem. Audio files, such "
+"as .wav or .ogg, can be loaded as AudioStreams and placed inside an "
 "AudioStreamPlayer."
 msgstr ""
 "音频流是发出声音的抽象对象。 它可以来自许多地方，但最常见的是来自文件系统。 "
@@ -62,8 +62,8 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_streams.rst:22
 #, fuzzy
 msgid ""
-"Here is a comparison of the two, to help you choose which one fits your "
-"specific use case best:"
+"Here is a comparison of the two types of file to help you choose the one "
+"that fits your use case best:"
 msgstr "使用这些类型的文件时，您应该选择哪一个最适合您的特定用例:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:24
@@ -71,8 +71,7 @@ msgstr "使用这些类型的文件时，您应该选择哪一个最适合您的
 msgid ""
 "Audio files of type *.wav* are quite large, but use little CPU power to play "
 "back. Hundreds of them can be played simultaneously with little impact to "
-"performance. This format is usually best for short sound effects, as the "
-"importer will trim and convert them to IMA-ADPCM."
+"performance. This format is usually best for short sound effects."
 msgstr ""
 "* .wav * 类型的音频文件相当大，但使用少量的CPU来播放。 其中数百个可以同时播"
 "放，对性能影响不大。 这种格式通常最适合短音效，因为导入器会修剪它们并将它们转"
@@ -83,8 +82,8 @@ msgstr ""
 msgid ""
 "Audio files of type *.ogg* are much smaller, but use considerably more CPU "
 "power to play back, so only a few can be played back (especially on "
-"mobile!). This format is usually best for music or long sound effect "
-"sequences. It also works well for voice at relatively low bitrates."
+"mobile!). This format works well for music, long sound effect sequences, and "
+"voice at relatively low bitrates."
 msgstr ""
 "* .ogg * 类型的音频文件要小得多，但要回放使用相当多的CPU功率，因此只能播放少"
 "量(特别是在移动设备上！)。 这种格式通常最适合音乐或长音效序列。 它也适用于比"
@@ -93,41 +92,42 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_streams.rst:27
 #, fuzzy
 msgid ""
-"Keep in mind neither .wav nor .ogg usually contains looping information, so "
-"this information must be set on the import options of each:"
+"Keep in mind neither .wav nor .ogg usually contains looping information. If "
+"looping is desired it must be set up using the import options of each file "
+"type:"
 msgstr ""
 "请记住.wav和.ogg通常不包含循环信息，因此必须在每个的导入选项上设置此信息:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:31
 #, fuzzy
 msgid ""
-"There are other types of AudioStream, such as AudioStreamRandomPitch, which "
-"takes an existing AudioStream and modulates the pitch every time it's played "
-"back randomly (great for some sound effects), and more will keep appearing "
-"in the future."
+"There are other types of AudioStreamPlayer, such as AudioStreamRandomPitch. "
+"This one makes a random adjustment to the sound's pitch every time it's "
+"played back. This can be helpful for adding interest to sounds that are "
+"played back often."
 msgstr ""
 "还有其他类型的AudioStream，例如AudioStreamRandomPitch，它可以接收现有的"
 "AudioStream，并在每次随机播放时调整音高(对于某些音效非常有用)，并且将来还会出"
 "现更多音频。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:35
+#: ../../docs/tutorials/audio/audio_streams.rst:34
 msgid "AudioStreamPlayer"
 msgstr "AudioStreamPlayer"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:37
+#: ../../docs/tutorials/audio/audio_streams.rst:36
 #, fuzzy
 msgid ""
-"This is the standard stream player; it can play to any given bus. In 5.1 "
-"sound, it can send to stereo mix or front speakers."
+"This is the standard stream player; it can play to any bus. In 5.1 sound, it "
+"can send to stereo mix or front speakers."
 msgstr ""
 "这是标准的流播放器，它可以播放任何给定的总线。 在5.1声音中，它可以发送到立体"
 "声混音或前置扬声器。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:40
+#: ../../docs/tutorials/audio/audio_streams.rst:39
 msgid "AudioStreamPlayer2D"
 msgstr "AudioStreamPlayer2D"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:42
+#: ../../docs/tutorials/audio/audio_streams.rst:41
 #, fuzzy
 msgid ""
 "This is a variant of AudioStreamPlayer, but emits sound in a 2D positional "
@@ -137,24 +137,19 @@ msgstr ""
 "这是AudioStreamPlayer的变体，但在2D位置环境中发出声音。 当靠近屏幕左侧时，平"
 "移将向左移动。 当靠近右侧时，它会向右移动."
 
-#: ../../docs/tutorials/audio/audio_streams.rst:44
-#, fuzzy
+#: ../../docs/tutorials/audio/audio_streams.rst:43
 msgid ""
-"While it's possible to send these effects to specific audio buses, one of "
-"the best strategies is to use an Area2D to divert sound to a specific bus. "
-"This allows you to create buses with different reverb or sound qualities and "
-"make it so the emitter will automatically send to them when entering the "
-"Area2D shapes."
+"Area2Ds can be used to divert sound from any AudioStreamPlayer2Ds they "
+"contain to specific buses. This makes it possible to create buses with "
+"different reverb or sound qualities to handle action happening in a "
+"particular parts of your game world."
 msgstr ""
-"虽然可以将这些效果发送到特定的音频总线，但最好的策略之一是使用Area2D将声音转"
-"移到特定的总线。 这允许创建具有不同混响或声音质量的总线，并使得发射器在进入"
-"Area2D形状时自动发送给它们。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:50
+#: ../../docs/tutorials/audio/audio_streams.rst:48
 msgid "AudioStreamPlayer3D"
 msgstr "AudioStreamPlayer3D"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:52
+#: ../../docs/tutorials/audio/audio_streams.rst:50
 #, fuzzy
 msgid ""
 "This is a variant of AudioStreamPlayer, but emits sound in a 3D positional "
@@ -165,22 +160,22 @@ msgstr ""
 "这是AudioStreamPlayer的变体，但在3D位置环境中发出声音。 根据播放器相对于屏幕"
 "的位置，它可以根据所选的音频设置将声音定位在立体声，5.1或7.1中。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:55
+#: ../../docs/tutorials/audio/audio_streams.rst:53
 msgid ""
 "Similar to AudioStreamPlayer2D, an Area can divert the sound to an audio bus."
 msgstr "与AudioStreamPlayer2D类似，Area可以将声音转移到音频总线。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:59
+#: ../../docs/tutorials/audio/audio_streams.rst:57
 msgid ""
 "Unlike for 2D, the 3D version of AudioStreamPlayer has a few more advanced "
 "options:"
 msgstr "与2D不同，AudioStreamPlayer的3D版本有一些更高级的选项:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:62
+#: ../../docs/tutorials/audio/audio_streams.rst:60
 msgid "Reverb buses"
 msgstr "混响总线"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:64
+#: ../../docs/tutorials/audio/audio_streams.rst:62
 msgid ""
 "Godot allows 3D Audio Streams that enter a specific *Area* to send dry and "
 "wet audio to separate buses. This is useful when you have several reverb "
@@ -191,48 +186,51 @@ msgstr ""
 "型的房间设置多个混响配置时，这非常有用。 这是通过在 *Area* 属性的 *Reverb "
 "Bus* 部分中启用此类混响来完成的:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:69
+#: ../../docs/tutorials/audio/audio_streams.rst:67
+#, fuzzy
 msgid ""
 "At the same time, a special bus layout is created where each area receives "
-"the reverb info from each area. Of course, an actual Reverb effect must be "
-"created in that bus for anything to happen:"
+"the reverb info from each area. A Reverb effect needs to be created and "
+"configured in each reverb bus to complete the setup for the desired effect:"
 msgstr ""
 "同时，创建一个特殊的总线布局，每个区域从每个区域接收混响信息。 当然，必须在该"
 "总线中创建实际的混响效果才能发生任何事情:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:73
+#: ../../docs/tutorials/audio/audio_streams.rst:71
 #, fuzzy
 msgid ""
-"The Area Reverb Bus section also has a specific parameter named \"Uniformity"
-"\". Some types of rooms bounce sounds more than others (like for example, a "
-"typical warehouse), so reverberation can be heard almost uniformly across "
-"the room even though the source is far away. Playing around with this "
-"parameter can simulate that effect."
+"The Area Reverb Bus section also has a parameter named \"Uniformity\". Some "
+"types of rooms bounce sounds more than others (like a warehouse), so "
+"reverberation can be heard almost uniformly across the room even though the "
+"source may be far away. Playing around with this parameter can simulate that "
+"effect."
 msgstr ""
 "Area Reverb Bus部分还有一个名为“Uniformity”的特定参数。 有些类型的房间比其他"
 "类型的房间反弹声音更多(例如，典型的仓库)，因此即使光源很远，也可以在房间内几"
 "乎均匀地听到混响。 使用此参数可以模拟该效果。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:77
+#: ../../docs/tutorials/audio/audio_streams.rst:75
 msgid "Doppler"
 msgstr "多普勒"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:79
+#: ../../docs/tutorials/audio/audio_streams.rst:77
+#, fuzzy
 msgid ""
 "When the relative velocity between an emitter and listener changes, this is "
-"perceived as an increase or decrease of the pitch shift. Godot can track "
-"changes in velocities of *AudioStreamPlayer3D* or *Camera*. Both have this "
-"property, which must be enabled manually:"
+"perceived as an increase or decrease in the pitch of the emitted sound. "
+"Godot can track changes in velocities of *AudioStreamPlayer3D* or *Camera*. "
+"Both have this property, which must be enabled manually:"
 msgstr ""
 "当发射器和收听者之间的相对速度改变时，这被认为是音调移位的增加或减少。 Godot"
 "可以跟踪 * AudioStreamPlayer3D* 或 *Camera* 的速度变化。 两者都有此属性，必须"
 "手动启用:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:84
+#: ../../docs/tutorials/audio/audio_streams.rst:82
+#, fuzzy
 msgid ""
-"Simply enable it by setting it depending on how objects will be moved "
-"(whether on regular *process* or *physics_process* step) and the tracking "
-"will happen automatically!"
+"Enable it by setting it depending on how objects will be moved (whether on "
+"regular *process* or *physics_process* step) and the tracking will happen "
+"automatically."
 msgstr ""
 "只需根据对象的移动方式(无论是常规 *process* 还是 *physics_process* 步骤)进行"
 "设置即可启用它，并且跟踪将自动进行！"

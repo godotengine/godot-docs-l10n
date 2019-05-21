@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,10 +33,9 @@ msgstr ""
 "SCons(您可以从macports获得它，您应该能够在安装时在终端中运行 ``scons`` )"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:13
-#, fuzzy
 msgid ""
 "Xcode 10.0 (or later) with the iOS (10.0) SDK and the command line tools."
-msgstr "Xcode与iOS SDK和命令行工具。"
+msgstr "Xcode 10.0(或更高版本)，使用iOS (10.0) SDK和命令行工具。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:15
 msgid ""
@@ -75,17 +74,15 @@ msgid "for a Simulator executable."
 msgstr "用于模拟器可执行文件。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:44
-#, fuzzy
 msgid ""
 "For recent devices, Apple requires 64-bit versions of application binaries "
 "when you are uploading to the Apple Store. The best way to provide these is "
 "to create a bundle in which there are both 32-bit and 64-bit binaries, so "
 "every device will be able to run the game."
 msgstr ""
-"此外，由于Apple在上传到iStore时需要64位版本的应用程序二进制文件。 提供这些的"
-"最好方法是创建一个包含32位和64位二进制文件的包，这样每个设备都可以运行游戏。 "
-"它可以分三步完成，首先编译32位版本，然后编译64位版本，然后使用 ``lipo`` 将它"
-"们捆绑成一个胖二进制文件，所有这些步骤都可以使用以下命令执行:"
+"对于最新的设备，当你上传到苹果商店时，苹果官方需要64位版本的应用程序二进制文"
+"件。最好的方法是创建一个包，其中包含32位和64位的二进制文件，这样每个设备都可"
+"以运行游戏。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:47
 msgid ""
@@ -94,6 +91,8 @@ msgid ""
 "\"universal\" binary. All those steps can be performed with following "
 "commands:"
 msgstr ""
+"可以分三步完成：首先编译32位版本，再编译64位版本，然后使用“lipo”命令将它们绑"
+"定到一个“通用”二进制文件中。所有这些步骤都可以通过以下命令执行:"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:56
 msgid ""
@@ -101,6 +100,8 @@ msgid ""
 "linker errors with dependencies), you'll need to build and lipo the "
 "``x86_64`` architecture as well."
 msgstr ""
+"如果您还想提供一个模拟器构建(为了减少任何依赖项链接器错误的机会)，您还需要构"
+"建和修改“x86_64”体系结构。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:66
 msgid "Run"

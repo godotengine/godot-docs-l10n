@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design the GUI"
 msgstr "Projetar a GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
@@ -32,8 +31,8 @@ msgstr ""
 "Agora que você aprendeu o básico, vamos ver como construir uma Interface de "
 "Jogo do Usuário (Game User Interface  - GUI) com componentes de interface do "
 "usuário reutilizáveis: uma barra de vida, uma barra de energia e contadores "
-"de bombas e de dinheiro. No final deste tutorial, você terá uma GUI de jogo, "
-"pronta para controle com GDscript ou VisualScript:"
+"de bombas e esmeraldas. No final deste tutorial, você terá uma GUI de jogo, "
+"pronta para controlar com GDscript ou VisualScript:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
@@ -98,9 +97,8 @@ msgstr "As barras de vida e energia"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-#, fuzzy
 msgid "The bomb and emerald counters on the right"
-msgstr "Os contadores de bombas e dinheiro à direita"
+msgstr "Os contadores de bombas e esmeraldas à direita"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
@@ -116,7 +114,6 @@ msgid "The life and energy bars on the left"
 msgstr "As barras de vida e energia à esquerda"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
-#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -130,7 +127,7 @@ msgstr ""
 "``HBoxContainer`` para gerenciar nossas duas colunas. As duas barras são "
 "empilhadas umas em cima das outras dentro de um ``VBoxContainer``. E "
 "precisaremos de um último ``HBoxContainer`` na coluna da direita para "
-"colocar os contadores de bombas e dinheiro lado-a-lado."
+"colocar os contadores de bombas e esmeraldas lado-a-lado."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
@@ -172,17 +169,14 @@ msgid "For now, let's start with a few containers."
 msgstr "Por enquanto, vamos começar com alguns contêineres."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
-#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
 "Crie uma nova cena e adicione um ``MarginContainer``. Selecione o nó e "
-"nomeie-o como ``GUI``. Então salve a cena como ``GUI.tscn``. Ele conterá "
-"toda a GUI."
+"nomeie-o como ``GUI``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
-#, fuzzy
 msgid ""
 "We want our interface to anchor to the top of the screen. Select the ``GUI`` "
 "node and click the Layout button at the top of the viewport. Select the "
@@ -191,10 +185,11 @@ msgid ""
 "vertical axis to make space for its child UI components."
 msgstr ""
 "Queremos que nossa interface ancore no topo da tela. Selecione o nó `` GUI`` "
-"e clique no botão Layout na parte superior da viewport. Selecione a opção "
-"\"Top Wide\". O nó `` GUI`` irá ancorar na borda superior de seu pai, a "
-"viewport por padrão. Ele será redimensionado automaticamente no eixo "
-"vertical para criar espaço para seus componentes de UI filho."
+"e clique no botão Layout na parte superior da janela de exibição. Selecione "
+"a opção \"Top Wide\". O nó `` GUI`` irá ancorar na borda superior de seu "
+"pai, a janela de exibição por padrão. Ele será redimensionado "
+"automaticamente no eixo vertical para criar espaço para seus componentes de "
+"UI filho."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
@@ -216,7 +211,6 @@ msgstr ""
 "esquerda e as separará dos dois contadores à direita."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
-#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
 "``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
@@ -224,11 +218,11 @@ msgid ""
 "``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
 "containers, we have the base for our GUI scene."
 msgstr ""
-"Queremos empilhar as barras verticalmente dentro do ``HBoxContainer``. Para "
-"fazer isso, vamos adicionar um ``VBoxContainer``. Nomeá-lo ``Bars``. "
-"Selecione o pai ``HBoxContainer`` novamente e desta vez, adicione outro "
-"``HBoxContainer``. Este vai segurar os contadores, então chame de \"Counters"
-"\". Com esses quatro contêineres, temos a base para nossa cena de GUI."
+"Queremos empilhar as barras verticalmente dentro do ``HBoxContainer``. "
+"Adicionae um ``VBoxContainer`` como filho de ``HBoxContainer`` e nomeie-o "
+"``Bars``. Selecione o pai ``HBoxContainer`` novamente e desta vez, adicione "
+"outro ``HBoxContainer`` como filho dele. Chame de \"Counters\". Com esses "
+"quatro contêineres, temos a base para nossa cena de GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"

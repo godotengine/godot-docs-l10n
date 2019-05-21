@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,11 +35,10 @@ msgstr ""
 "多线程，但不是在整个引擎中。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:12
-#, fuzzy
 msgid ""
 "Below is a list of ways multithreading can be used in different areas of "
 "Godot."
-msgstr "下面是Godot的相关领域列表以及它们如何与线程一起使用的介绍。"
+msgstr "下面是可以在Godot的不同区域使用多线程的方法列表。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:15
 msgid "Global scope"
@@ -93,6 +92,9 @@ msgid ""
 "but you risk resources (which are only loaded once in Godot) tweaked by the "
 "multiple threads, resulting in unexpected behaviors or crashes."
 msgstr ""
+"不过，只有当您有**一个**线程加载数据时，这才真正有用。从多个线程加载或创建场"
+"景块可能有效，但你要冒着资源被多线程调整的风险(在Godot中只加载一次)，从而导致"
+"意外行为或崩溃。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:47
 msgid ""
@@ -101,12 +103,15 @@ msgid ""
 "or set in multiple ones. Otherwise, you are safer just using the servers API "
 "(which is fully thread-safe) directly and not touching scene or resources."
 msgstr ""
+"只有当您“真正”知道自己在做什么，并且确信一个资源没有被多个资源使用或设置时，"
+"才可以使用多个线程来生成场景数据。否则，直接使用服务端的API(它是完全线程安全"
+"的)而不接触场景或资源会更安全。"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:55
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:53
 msgid "GDScript arrays, dictionaries"
 msgstr "GDScript数组，字典"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:57
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:55
 msgid ""
 "In GDScript, reading and writing elements from multiple threads is ok, but "
 "anything that changes the container size (resizing, adding or removing "
@@ -115,11 +120,11 @@ msgstr ""
 "在GDScript中，可以从多个线程读取和写入元素，但是任何改变容器大小(调整大小，添"
 "加或删除元素)的操作都需要锁定互斥。"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:60
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:58
 msgid "Resources"
 msgstr "资源"
 
-#: ../../docs/tutorials/threads/thread_safe_apis.rst:62
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:60
 msgid ""
 "Modifying a unique resource from multiple threads is not supported, but "
 "loading them on threads or handling a reference is perfectly supported. "

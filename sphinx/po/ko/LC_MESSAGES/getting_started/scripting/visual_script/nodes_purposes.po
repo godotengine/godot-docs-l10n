@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,7 +216,7 @@ msgid ""
 msgstr ""
 "대부분의 경우 속성에 액세스하는 것이 좋지만 (아래에 자세히 설명되어 있음), 때"
 "로는 *메서드 호출*\\ 도 유용할 수 있습니다. 메서드는 객체에서 특정 작업을 실"
-"행합니다. 위의 경우로는, 마우스 포인터는 컨트롤에 대한 로컬 좌표의 위치로 비"
+"행합니다. 위의 경우로는, 마우스 포인터는 컨트롤에 대한 지역 좌표의 위치로 비"
 "틀 수 있습니다. 또 다른 일반적인 사용 사례는 노드를 삭제하기 위해 대기하는 것"
 "으로, *queue_free* 메서드를 사용하여 이루어집니다."
 
@@ -273,7 +273,7 @@ msgid ""
 "This value can be read from any of the functions of the script or from other "
 "scripts via the method described in the previous step."
 msgstr ""
-"변수는 값을 저장할 수 있는 스크립트의 로컬 메모리 컨테이너입니다. 이 값은 스"
+"변수는 값을 저장할 수 있는 스크립트의 지역 메모리 컨테이너입니다. 이 값은 스"
 "크립트의 모든 기능이나 이전 단계에서 설명한 방법을 통해 다른 스크립트에서 읽"
 "을 수 있습니다."
 
@@ -425,7 +425,7 @@ msgid ""
 "constants for global types in Godot. In there you can find some useful "
 "constants to refer to key names, joystick or mouse buttons, etc."
 msgstr ""
-"두 번째 것은 GlobalConstant 노드로, Godot에서 글로벌 타입을 위한 긴 상수 목록"
+"두 번째 것은 GlobalConstant 노드로, Godot에서 전역 타입을 위한 긴 상수 목록"
 "을 포함합니다. 여기서는 키 이름, 조이스틱이나 마우스 버튼 등을 나타내는 유용"
 "한 상수를 볼 수 있습니다."
 
@@ -485,9 +485,9 @@ msgid ""
 "have several purposes, but in general, they are useful for low-level access "
 "or OS-related access."
 msgstr ""
-"엔진 싱글톤은 글로벌 인터페이스입니다 (즉 씬 노드와 달리, 참조 없이 액세스 "
-"될 수 있고 항상 이용 가능합니다). 그들은 여러 목적을 지니지만, 대개 로우 레"
-"벨 액세스나 OS 관련 액세스에 유용합니다."
+"엔진 싱글톤은 전역 인터페이스입니다 (즉 씬 노드와 달리, 참조 없이 액세스 될 "
+"수 있고 항상 이용 가능합니다). 그들은 여러 목적을 지니지만, 대개 로우 레벨 액"
+"세스나 OS 관련 액세스에 유용합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:257
 msgid ""
@@ -499,7 +499,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:263
 msgid "Local Variables"
-msgstr "로컬 변수(Local Variables)"
+msgstr "지역 변수(Local Variables)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:265
 msgid ""
@@ -926,7 +926,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:495
 msgid "Access local variables or properties:"
-msgstr "로컬 변수나 속성을 액세스:"
+msgstr "지역 변수나 속성을 액세스:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:500
 msgid ""

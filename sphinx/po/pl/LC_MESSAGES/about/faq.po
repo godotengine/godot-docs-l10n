@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,9 +44,10 @@ msgid "In short:"
 msgstr "W skrócie:"
 
 #: ../../docs/about/faq.rst:13
+#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
-"profit, commercial, or otherwise;"
+"profit, commercial, or otherwise."
 msgstr ""
 "Możesz pobrać i używać Godota w dowolnym celu: prywatnym, komercyjnym, non-"
 "profit itd."
@@ -424,12 +425,13 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Dla Godot 3.0 istnieje wsparcie dla glTF."
 
 #: ../../docs/about/faq.rst:153
+#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<https://opensource.org/licenses/MIT>`_ provided by Godot. That being said, "
 "FBX support could still be provided by third parties as a plugin. (See "
-"Plugins question above.)"
+"Plugins question below.)"
 msgstr ""
 "FBX SDK posiada `restrykcyjną licencję <http://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, która jest niezgodna z `otwartą licencją "
@@ -469,9 +471,10 @@ msgstr ""
 "źródłem."
 
 #: ../../docs/about/faq.rst:170
+#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
-"the Plugins question above."
+"the Plugins question below."
 msgstr ""
 "Aby dowiedzieć się, w jaki sposób można obsługiwać wybrane SDK, zajrzyj do "
 "rozdziału wtyczki powyżej."
@@ -542,20 +545,22 @@ msgstr ""
 "więcej pamięci będą zajmować i dłużej się ładować."
 
 #: ../../docs/about/faq.rst:201
+#, fuzzy
 msgid ""
-"Use the stretch options in Godot, 2D stretching with keeping aspect works "
-"best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
-"this."
+"Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
+"works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
+"achieve this."
 msgstr ""
 "Użyj opcji 'stretch' w Godot, '2D stretching' utrzymuje proporcje ekranu. "
 "Sprawdź samouczek :ref:`doc_multiple_resolutions` by dowiedzieć się więcej."
 
 #: ../../docs/about/faq.rst:205
+#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
-"stretch vertically or horizontally for different aspect ratios, or whether "
-"there is a minimum one and you want black bars to appear instead. This is "
-"also explained in the previous step."
+"stretch vertically or horizontally for different aspect ratios, or if there "
+"is one aspect ratio and you want black bars to appear instead. This is also "
+"explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
 "Określ minimalną rozdzielczość, a następnie zdecyduj, czy gra ma rozciągać "
 "się pionowo czy poziomo dla różnych proporcji, czy też ma być minimalna "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,11 +46,12 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
+#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
-"that any interested objects can subscribe to and respond."
+"that all interested objects can subscribe to and respond to."
 msgstr ""
 "Las señales son una forma de desacoplar los objetos de juego, que lleva a "
 "tener código mas organizado y mas fácil de gestionar. En vez de forzar a los "
@@ -71,12 +72,11 @@ msgid "Timer example"
 msgstr "Ejemplo de temporizador"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
+#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
-"<class_Sprite>`. You can use the Godot icon for the Sprite's texture, or any "
-"other image you like. Attach a script to the root node, but don't add any "
-"code to it yet."
+"<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
 "Para visualizar como funcionan las señales, intentemos usando un nodo :ref:"
 "`Timer <class_Timer>`. Crea una nueva Escena con un Nodo y dos Hijos: un "
@@ -84,11 +84,19 @@ msgstr ""
 "la textura del Sprite, o cualquier otra imagen que gustes. Adjunta un Script "
 "al Nodo Raiz, pero no le agregues codigo todavia."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:31
+#: ../../docs/getting_started/step_by_step/signals.rst:30
+msgid ""
+"For the Sprite's texture, you can use the Godot icon, or any other image you "
+"like. Do so by selecting ``Load`` in the Sprite's Texture attribute drop-"
+"down menu. Attach a script to the root node, but don't add any code to it "
+"yet."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
 msgstr "Tu árbol de la escena debería verse así:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:35
+#: ../../docs/getting_started/step_by_step/signals.rst:38
 msgid ""
 "In the Timer node's properties, check the \"On\" box next to *Autostart*. "
 "This will cause the timer to start automatically when you run the scene. You "
@@ -98,7 +106,7 @@ msgstr ""
 "*Autostart*. Esto hace que el temporizador inicie automaticamente cuando se "
 "ejecuta la escena. Puedes dejar el *Wait Time* en 1 segundo."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:39
+#: ../../docs/getting_started/step_by_step/signals.rst:42
 msgid ""
 "Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
 "and you'll see all of the signals that the selected node can emit. In the "
@@ -110,7 +118,7 @@ msgstr ""
 "En el caso del nodo temporizador, la que nos ocupa es \"timeout\". Esta "
 "señal es emitida cuando el temporizador llega a ``0``."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:46
+#: ../../docs/getting_started/step_by_step/signals.rst:49
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
@@ -118,7 +126,7 @@ msgstr ""
 "Haz click en la señal \"timeout()\" y clickea \"Connect...\". Verás la "
 "siguiente ventana, donde puedes definir como quieres conectar la señal:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:51
+#: ../../docs/getting_started/step_by_step/signals.rst:54
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is red "
@@ -130,7 +138,7 @@ msgstr ""
 "en rojo - esto *no* es un error, sino una indicacion visual de que el nodo "
 "esta emitiendo una señal. Selecciona el nodo raiz."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:56
+#: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
@@ -138,7 +146,7 @@ msgstr ""
 "El nodo target *debe* tener un script adjunto o recibirás un mensaje de "
 "error."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:59
+#: ../../docs/getting_started/step_by_step/signals.rst:62
 msgid ""
 "On the bottom of the window is a field labeled \"Method In Node\". This is "
 "the name of the function in the target node's script that you want to use. "
@@ -150,13 +158,13 @@ msgstr ""
 "usar. Por defecto, Godot va a crear esta función usando "
 "``_on_<node_name>_<signal_name>`` pero se puede cambiar si asi lo desea."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:64
+#: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr "Haz click en \"Conectar\" y verás que la función se creo en el script:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:84
+#: ../../docs/getting_started/step_by_step/signals.rst:87
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
@@ -164,7 +172,7 @@ msgstr ""
 "Ahora podemos reemplazar el código de relleno con cualquier código que "
 "queramos ejecutar cuando se reciba la señal. Hagamos que el Sprite parpadee:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:106
+#: ../../docs/getting_started/step_by_step/signals.rst:111
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
@@ -172,11 +180,11 @@ msgstr ""
 "Ejecuta la escena y verás parpadear al Sprite a cada segundo. Puedes cambiar "
 "la propiedad *Wait Time* para cambiar el resultado de este."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:110
+#: ../../docs/getting_started/step_by_step/signals.rst:115
 msgid "Connecting signals in code"
 msgstr "Conectar señales en código"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:112
+#: ../../docs/getting_started/step_by_step/signals.rst:117
 msgid ""
 "You can also make the signal connection in code rather than with the editor. "
 "This is usually necessary when you're instancing nodes via code and so you "
@@ -186,7 +194,7 @@ msgstr ""
 "código en vez de usar el editor. Esto, por lo general, es necesario cuando "
 "estás creando nodos así que no puedes usar el editor para hacer la conexión."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:116
+#: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
@@ -194,7 +202,7 @@ msgstr ""
 "Primero, desconecta la señal seleccionando la conexión en la pestaña \"Node"
 "\" del temporizador (Timer), y haz click en desconectar (disconnect)."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:121
+#: ../../docs/getting_started/step_by_step/signals.rst:126
 msgid ""
 "To make the connection in code, we can use the ``connect`` function. We'll "
 "put it in ``_ready()`` so that the connection will be made on run. The "
@@ -208,127 +216,34 @@ msgstr ""
 "<target_node>, <target_function_name>)``. Aquí está el código para la "
 "conexión de nuestro Timer:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:154
+#: ../../docs/getting_started/step_by_step/signals.rst:159
 msgid "Custom signals"
 msgstr "Señales personalizadas"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:156
+#: ../../docs/getting_started/step_by_step/signals.rst:161
 msgid "You can also declare your own custom signals in Godot:"
 msgstr ""
 "También puedes declarar tus propia señales (signal) personalizadas dentro de "
 "Godot:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:174
+#: ../../docs/getting_started/step_by_step/signals.rst:179
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
-"Una vez declaradas, tus señales (signal) personalizadas aparecerán en el "
-"Inspector y podrán ser conectadas de la misma forma que las señales "
-"integradas del nodo."
+"Una vez declaradas, las señales personalizadas aparecerán en el Inspector y "
+"podrán conectarse de la misma forma que las señales integradas del nodo."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:177
-msgid "To emit a signal via code, use the ``emit`` function:"
+#: ../../docs/getting_started/step_by_step/signals.rst:182
+#, fuzzy
+msgid "To emit a signal via code, use the ``emit_signal`` function:"
 msgstr "Para emitir una señal por código, usa la función ``emit``:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:203
-msgid "Shooting example"
-msgstr "Ejemplo de disparos"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:205
-msgid ""
-"As another example of signal usage, let's consider a player character that "
-"can rotate and shoot towards the mouse. Every time the mouse button is "
-"clicked, we create an instance of the bullet at the player's location. See :"
-"ref:`doc_instancing` for details."
-msgstr ""
-"Como otro ejemplo de uso de señales, consideremos un personaje que pueda "
-"rotar y disparar en dirección al ratón. Cada vez que el botón del ratón sea "
-"presionado, creamos una instancia de la bala en la localización del jugador. "
-"Vea :ref:`doc_instancing` para más detalles."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:210
-msgid ""
-"However, if the bullets are added as children of the player, then they will "
-"remain \"attached\" to the player as it rotates:"
-msgstr ""
-"Sin embargo, si las balas son añadidas como hijas del jugador, entonces "
-"permanecerán \"ligadas\" al jugador a medida que gira:"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:215
-msgid ""
-"Instead, we need the bullets to be independent of the player's movement - "
-"once fired, they should continue traveling in a straight line and the player "
-"can no longer affect them. Instead of being added to the scene tree as a "
-"child of the player, it makes more sense to add the bullet as a child of the "
-"\"main\" game scene, which may be the player's parent or even further up the "
-"tree."
-msgstr ""
-"En su lugar, necesitamos que las balas sean independientes del movimiento "
-"del jugador - una vez disparadas, deberían continuar viajando en línea recta "
-"y el jugador ya no puede afectarlas. En vez de ser añadidas al árbol de "
-"escenas como un hijo del jugador, tiene más sentido añadir la bala como un "
-"hijo de la escena de juego \"principal\", la cual puede ser el padre del "
-"jugador o incluso más arriba en el árbol."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:221
-msgid "You could do this by adding the bullet directly:"
-msgstr "Tu podrías hacer esto directamente agregando la bala:"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:234
-msgid ""
-"However, this will lead to a different problem. Now if you try and test your "
-"\"Player\" scene independently, it will crash on shooting, because there is "
-"no parent node to access. This makes it a lot harder to test your player "
-"code independently and also means that if you decide to change your main "
-"scene's node structure, the player's parent may no longer be the appropriate "
-"node to receive the bullets."
-msgstr ""
-"Sin embargo, esto conducirá a un problema diferente. Ahora, si intenta "
-"probar su escena \"Player\" de forma independiente, se bloqueará al "
-"disparar, porque no hay ningún nodo padre al que pueda acceder. Esto hace "
-"que sea mucho más difícil probar el código del jugador de forma "
-"independiente y también significa que si decides cambiar la estructura del "
-"nodo de la escena principal, es posible que el padre del jugador ya no sea "
-"el nodo apropiado para recibir las balas."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:241
-msgid ""
-"The solution to this is to use a signal to \"emit\" the bullets from the "
-"player. The player then has no need to \"know\" what happens to the bullets "
-"after that - whatever node is connected to the signal can \"receive\" the "
-"bullets and take the appropriate action to spawn them."
-msgstr ""
-"La solución a esto es usar una señal para \"emitir\" las balas desde el "
-"jugador. El jugador entonces no tiene necesidad de \"saber\" qué pasa con "
-"las balas después de eso - cualquier nodo que esté conectado a la señal "
-"puede \"recibir\" las balas y tomar la acción apropiada para generarlas."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:247
-msgid "Here is the code for the player using signals to emit the bullet:"
-msgstr "Este es el código para el jugador usando señales para emitir la bala:"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:293
-msgid ""
-"In the main scene, we then connect the player's signal (it will appear in "
-"the \"Node\" tab)."
-msgstr ""
-"En la escena princial, contectaremos la señal del jugador(aparecerá en la "
-"pestaña \"Nodo\")."
-
-#: ../../docs/getting_started/step_by_step/signals.rst:317
-msgid ""
-"Now the bullets will maintain their own movement independent of the player's "
-"rotation:"
-msgstr ""
-"Ahora las balas mantendrán su propio movimiento independiente de la rotación "
-"del jugador:"
-
-#: ../../docs/getting_started/step_by_step/signals.rst:323
+#: ../../docs/getting_started/step_by_step/signals.rst:208
 msgid "Conclusion"
 msgstr "Conclusión"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:325
+#: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
 "Many of Godot's built-in node types provide signals you can use to detect "
 "events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
@@ -341,7 +256,7 @@ msgstr ""
 "``body_entered`` cada vez que el cuerpo físico del jugador entra a su forma "
 "de colisión, permitiéndote saber cuando el jugador la ha recolectado."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:330
+#: ../../docs/getting_started/step_by_step/signals.rst:215
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."

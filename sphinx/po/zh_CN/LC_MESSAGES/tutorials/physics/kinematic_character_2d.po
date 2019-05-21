@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
-#, fuzzy
 msgid "Kinematic character (2D)"
-msgstr "运动学角色(2D)"
+msgstr "动力学角色(二维)"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:7
 msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:9
-#, fuzzy
 msgid ""
 "Yes, the name sounds strange. \"Kinematic Character\". What is that? The "
 "reason for the name is that, when physics engines came out, they were called "
@@ -39,21 +37,20 @@ msgid ""
 "of skill and understanding of physics engines (or a lot of patience with "
 "trial and error)."
 msgstr ""
-"是的，名字听起来很奇怪。 “运动学角色”。 那是什么？ 原因是当物理引擎问世时，它"
+"是的，名字听起来很奇怪。 “动力学角色”。 那是什么？ 原因是当物理引擎问世时，它"
 "们被称为“动力”引擎(因为它们主要处理碰撞响应)。 人们做了许多尝试，想使用动力引"
 "擎创建一个角色控制器，但它并不像看起来那么容易。 Godot拥有您能找到的最好的动"
-"态角色控制器(可以在 2d/platformer 这个演示中查看)，但使用它需要相当高水平的技"
+"态角色控制器(可以在 二维/游戏平台这个演示中查看)，但使用它需要相当高水平的技"
 "能和对物理引擎的理解(或者对试验和试错有足够的耐心)。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:19
-#, fuzzy
 msgid ""
 "Some physics engines, such as Havok seem to swear by dynamic character "
 "controllers as the best option, while others (PhysX) would rather promote "
 "the kinematic one."
 msgstr ""
 "像Havok这样的物理引擎似乎认为动态角色控制器是最好的选择，而其他物理引擎"
-"(PhysX)则更愿意推广Kinematic。"
+"(PhysX)则更愿意推广动力学。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:23
 msgid "So, what is the difference?:"
@@ -94,15 +91,14 @@ msgstr ""
 "其他物理对象交互(除非在代码中手动完成)。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:42
-#, fuzzy
 msgid ""
 "This short tutorial will focus on the kinematic character controller. "
 "Basically, the old-school way of handling collisions (which is not "
 "necessarily simpler under the hood, but well hidden and presented as a nice "
 "and simple API)."
 msgstr ""
-"这个简短的教程将重点介绍运动角色控制器。 基本上，oldschool处理碰撞的方式(在引"
-"擎盖下不一定简单，但隐藏得很好，并作为一个漂亮和简单的API呈现)。"
+"这个简短的教程将重点介绍动力学角色控制器。基本上，传统处理冲突的方法(它并不一"
+"定在底层更简单，但隐蔽性很好，并且呈现为一个简洁漂亮的API)。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:48
 msgid "Physics process"
@@ -137,16 +133,16 @@ msgstr ""
 "景:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:87
-#, fuzzy
 msgid ""
 "You'll notice that there's a warning icon next to our CollisionShape2D node; "
 "that's because we haven't defined a shape for it. Create a new CircleShape2D "
 "in the shape property of CollisionShape2D. Click on <CircleShape2D> to go to "
 "the options for it, and set the radius to 30:"
 msgstr ""
-"您会注意到我们的CollisionShape2D节点旁边有一个警告图标，这是因为我们没有为它"
-"定义形状。 在CollisionShape2D的shape属性中创建一个新的CircleShape2D。 单击"
-"<CircleShape2D>转到它的选项，并将半径设置为30:"
+"您会注意到，在\"二维碰撞形状\"（CollisionShape2D）节点旁边有一个警告图标；那"
+"是因为我们还没有定义它的形状。在\"二维碰撞形状\"（CollisionShape2D）的形状属"
+"性中创建一个新的二维圆形形状（CircleShape2D）。点击<二维圆形形状"
+">（CircleShape2D）进入选项，将半径设置为30:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:94
 #, fuzzy

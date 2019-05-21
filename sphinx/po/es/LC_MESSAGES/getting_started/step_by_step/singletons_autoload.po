@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,10 +104,10 @@ msgstr ""
 "diseño"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
-#, fuzzy
 msgid "Autoloading nodes and scripts can give us these characteristics."
 msgstr ""
-"La carga automática (autoload) de nodos y scripts satisface esta necesidad."
+"La carga automática (autoload) de nodos y scripts nos permite usar estas "
+"funcionalidades."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
@@ -270,6 +270,10 @@ msgid ""
 "completed. Thus, the current scene will not be removed while it is still "
 "being used (i.e. its code is still running)."
 msgstr ""
+"Usando :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, la "
+"segunda función se ejecutará una vez que todo el código de la escena actual "
+"se ha completado. De este modo, la escena actual no será removida mientras "
+"esté todavía en uso (por ejemplo, su código todavía esté ejecutándose)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 msgid ""
@@ -283,13 +287,12 @@ msgid "and"
 msgstr "y"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
-#, fuzzy
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button."
 msgstr ""
 "Ejecuta el proyecto y prueba que puedes cambiar entre escenas presionando el "
-"botón!"
+"botón."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
 msgid ""

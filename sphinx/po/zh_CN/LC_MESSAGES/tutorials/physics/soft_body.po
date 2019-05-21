@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/soft_body.rst:4
-#, fuzzy
 msgid "SoftBody"
-msgstr "StaticBody2D"
+msgstr "软体"
 
 #: ../../docs/tutorials/physics/soft_body.rst:6
 #, fuzzy
@@ -33,14 +32,13 @@ msgstr ""
 "以用于模拟布料或创建更逼真的角色。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:10
-#, fuzzy
 msgid "Basic set-up"
-msgstr "基本语法:"
+msgstr "基本结构"
 
 #: ../../docs/tutorials/physics/soft_body.rst:12
 msgid ""
 "A :ref:`SoftBody <class_SoftBody>` node is used for soft body simulations."
-msgstr ""
+msgstr "一个软体节点用于模拟柔软的物体。参考：`软体<类_软体>`。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:14
 msgid "We will create a bouncy cube to demonstrate the setup of a soft body."
@@ -52,12 +50,16 @@ msgid ""
 "``Softbody`` node. Add a ``CubeMesh`` in the ``mesh`` property of the node "
 "in the inspector and increase the subdivision of the mesh for simulation."
 msgstr ""
+"创建一个以“Spatial”节点为根的新场景。然后，创建一个“Softbody”节点。在属性检查"
+"器中的节点的”mesh”属性中添加一个”CubeMesh”，并增加细分网格以进行仿真模拟。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:20
 msgid ""
 "Set the parameters to obtain the type of soft body you aim for. Try to keep "
 "the ``Simulation Precision`` above 5, otherwise, the soft body may collapse."
 msgstr ""
+"设置参数以获得您想要的软体类型。尽量保持“模拟精度”（Simulation Precision）的"
+"数值高于5，否则，该软体结构可能会瓦解。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:24
 msgid ""
@@ -66,43 +68,46 @@ msgid ""
 "more than 0, the softbody will fly around like a plastic bag under strong "
 "wind."
 msgstr ""
+"小心处理一些参数，因为改动某些数值会导致奇怪的结果。 例如，如果形状未完全封闭"
+"并且您将压力设置为大于0，则软体将如同在强风下的塑料袋一样飞舞。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:26
-#, fuzzy
 msgid "Play the scene to view the simulation."
-msgstr "播放适当的动画。"
+msgstr "播放该场景以查看模拟结果。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:28
 msgid ""
 "To improve the simulation's result, increase the ``Simulation Precision``, "
 "this will give significant improvement at the cost of performance."
 msgstr ""
+"为了改善模拟结果，增加“模拟精度”（Simulation Precision），会大幅度增加性能成"
+"本。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:31
-#, fuzzy
 msgid "Cloak simulation"
-msgstr "加载动画"
+msgstr "斗篷模拟"
 
 #: ../../docs/tutorials/physics/soft_body.rst:33
 msgid "Let's make a cloak in the Platformer3D demo."
-msgstr ""
+msgstr "我们将在三维平台游戏演示中制作一个斗篷。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:35
-#, fuzzy
 msgid ""
 "You can download the Platformer3D demo on `GitHub <https://github.com/"
 "godotengine/godot-demo-projects/tree/master/3d/platformer>` or `the Asset "
 "Library <https://godotengine.org/asset-library/asset/125>`_."
 msgstr ""
-"您可以在 `GitHub <https://github.com/godotengine/godot-demo-projects/tree/"
-"master/3d/platformer>`_ 上下载Platformer3D演示或使用 `Asset Library <https://"
-"godotengine.org/asset-library/asset/125>`_ 。"
+"您可以在`GitHub <https://github.com/godotengine/godot-demo-projects/tree/"
+"master/3d/platformer>` 或者`资源商店<https://godotengine.org/asset-library/"
+"asset/125>`内下载这款三维平台游戏演示."
 
 #: ../../docs/tutorials/physics/soft_body.rst:37
 msgid ""
 "Open the ``Player`` scene, add a ``SoftBody`` node and assign a "
 "``PlaneMesh`` to it."
 msgstr ""
+"打开“玩家”（Player）场景，添加一个“软体”（SoftBody）节点并为其指定一个“平面网"
+"格”（PlaneMesh）。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:39
 msgid ""
@@ -110,16 +115,21 @@ msgid ""
 "``Subdivide Width`` and ``Subdivide Depth`` to 5. Adjust the ``SoftBody``'s "
 "position. You should end up with something like this:"
 msgstr ""
+"打开“平面网格”（PlaneMesh）属性并设置大小（x：0.5 y：1）然后将“细分宽"
+"度”（Subdivide Width）和“细分深度”（Subdivide Depth）设置为5。调整“软"
+"体”（SoftBody）的位置。您应该看到如下所示："
 
 #: ../../docs/tutorials/physics/soft_body.rst:43
 msgid "Subdivision generates a more tessellated mesh for better simulations."
-msgstr ""
+msgstr "细分会生成更细密的网格，以便更好的模拟。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:45
 msgid ""
 "Add a :ref:`BoneAttachment <class_BoneAttachment>` node under the skeleton "
 "node and select the Neck bone to attach the cloak to the character skeleton."
 msgstr ""
+"在骨架节点下添加：参考：`附属骨骼<类_附属骨骼>`节点，然后选择颈部（Neck）骨"
+"骼，将斗篷附加到角色骨架。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:47
 msgid ""

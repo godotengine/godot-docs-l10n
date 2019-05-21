@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,26 +156,36 @@ msgid ""
 "work quickly. You will mostly need to use seams or other techniques to "
 "create better unwrapping."
 msgstr ""
+"Si vous utilisez des maillages (meshes) externes lors de l'importation, la "
+"taille sera conservée. Attention car la plupart des décompresseurs des "
+"logiciels 3D ne sont pas réglés pour la qualité mais pour la rapidité de "
+"traitement. Vous devrez surtout utiliser les coutures (seams) ou d’autres "
+"techniques pour créer un meilleur dépliage."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:73
 msgid "Unwrap from within Godot"
-msgstr ""
+msgstr "Dépliage depuis Godot"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:75
 msgid ""
 "Godot has an option to unwrap meshes and visualize the UV channels. It can "
 "be found in the Mesh menu:"
 msgstr ""
+"Godot a une option pour déplier les maillages (meshes) et visualiser les "
+"chaîne UV. On peut la trouver dans le menu Mesh :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:80
 msgid ""
 "This will generate a second set of UV2 coordinates which can be used for "
 "baking, and it will also set the texture size automatically."
 msgstr ""
+"Cela va générer un second ensemble de coordonné UV2 qui peut être utilisé "
+"pour un baking, et cela va aussi configurer automatiquement la taille de la "
+"texture."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:84
 msgid "Unwrap on scene import"
-msgstr ""
+msgstr "Dépliage d'une scène importée"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:86
 msgid ""
@@ -184,6 +194,11 @@ msgid ""
 "imported scene in the filesystem dock, then go to the Import tab. There, the "
 "following option can be modified:"
 msgstr ""
+"Ceci est probablement la meilleur approche globale. Le seul inconvénient est "
+"que, sur les grands modèles, le dépliage peut prendre un certain temps à "
+"l'importation. Sélectionnez simplement la scène importée dans le système de "
+"fichiers, puis allez à l'onglet Importer. Là, l'option suivante peut être "
+"modifiée :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:93
 msgid ""
@@ -192,12 +207,18 @@ msgid ""
 "size of the lightmap texture (and, in consequence, the UV padding in the "
 "map)."
 msgstr ""
+"Le mode ** Light Baking ** doit être réglé sur ** \"Gen Lightmaps\" **. Une "
+"taille de texel en unités mondiales doit également être fournie, car cela "
+"déterminera la taille finale de la texture lightmap (et, par conséquent, le "
+"remplissage UV de la carte)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:97
 msgid ""
 "The effect of setting this option is that all meshes within the scene will "
 "have their UV2 maps properly generated."
 msgstr ""
+"L’effet du réglage de cette option est que toutes les mailles (meshes) au "
+"sein de la scène auront leurs cartes UV2 correctement générés."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:100
 msgid ""
@@ -207,6 +228,12 @@ msgid ""
 "or twice), this will result in inefficient lightmaps. Just don't reuse a "
 "source mesh at different scales if you are planning to use lightmapping."
 msgstr ""
+"Avertissement : lorsque de la réutilisation d'un maillage (meshe) dans une "
+"scène, gardez à l'esprit que les UVs sont générés pour la première instance "
+"trouvée. Si la maille est réutilisée à différentes échelles (et que les "
+"échelles sont très différentes, plus de la moitié ou deux fois), cela se "
+"traduira par un lightmaps inefficace. Juste, ne réutilisez pas les maillages "
+"sources à différentes échelles si vous envisagez d’utiliser lightmapping."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:107
 msgid "Checking UV2"
@@ -232,6 +259,9 @@ msgid ""
 "scene. This will enable light baking on all nodes (and sub-nodes) in that "
 "scene, even on instanced scenes."
 msgstr ""
+"Avant de faire quoi que ce soit, un nœud ** BakedLightmap ** doit être "
+"ajouté à une scène. Cela permettra le light baking sur tous les nœuds (et "
+"sous-nœuds) de cette scène, même sur les scènes instanciées."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:123
 msgid ""
@@ -239,6 +269,9 @@ msgid ""
 "baker, and each will be assigned a lightmap of its own (just make sure to "
 "respect the rule about scaling mentioned before):"
 msgstr ""
+"Une sous-scène peut être instanciée plusieurs fois, car cela est supporté "
+"par le baker, et chacune se verra attribuer une lightmap (assurez-vous juste "
+"de respecter la règle de mise à l'échelle mentionnée précédemment) :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:128
 msgid "Configure bounds"
@@ -250,6 +283,10 @@ msgid ""
 "to transfer light to dynamic objects inside it (more on that later). Just "
 "cover the scene with the volume as you do with ``GIProbe``:"
 msgstr ""
+"Le Lightmap a besoin d'un volume approximatif de la zone affectée, car elle "
+"l'utilise pour transférer la lumière aux objets dynamiques se trouvant à "
+"l'intérieur (plus de détails plus tard). Recouvrez simplement la scène avec "
+"le volume de la même manière que vous le faites avec `` GIProbe`` :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:137
 msgid "Setting up meshes"
@@ -260,12 +297,16 @@ msgid ""
 "For a **MeshInstance** node to take part in the baking process, it needs to "
 "have the \"Use in Baked Light\" property enabled."
 msgstr ""
+"Pour qu'un nœud ** MeshInstance ** prenne part au processus de baking, la "
+"propriété \"Utiliser dans Baked Light\" doit être activée."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:144
 msgid ""
 "When auto-generating lightmaps on scene import, this is enabled "
 "automatically."
 msgstr ""
+"Lors de la génération automatique du lightmaps d'une scène importé, celle-ci "
+"est activé automatiquement."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:147
 msgid "Setting up lights"
@@ -277,12 +318,19 @@ msgid ""
 "shadowmapping and lighting are still dynamic and affect moving objects, but "
 "light bounces from that light will be baked."
 msgstr ""
+"Les lumières sont \"baker\" par défaut avec une lumière indirecte. Cela "
+"signifie que la shadowmapping (cartographie des ombres) et l'éclairage sont "
+"toujours dynamiques et affectent les objets en mouvement, mais la lumière "
+"rebondit à partir de cette lumière sera \"baké\"."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:153
 msgid ""
 "Lights can be disabled (no bake) or be fully baked (direct and indirect). "
 "This can be controlled from the **Bake Mode** menu in lights:"
 msgstr ""
+"Les lumières peuvent être désactivées (pas de baking) ou entièrement \"baked"
+"\" (directes et indirectes). Ceci peut être contrôlé à partir du menu **Bake "
+"Mode** dans les éclairages :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:158
 msgid "The modes are:"
@@ -293,21 +341,29 @@ msgid ""
 "**Disabled:** Light is ignored in baking. Keep in mind hiding a light will "
 "have no effect for baking, so this must be used instead."
 msgstr ""
+"** Désactivé: ** La lumière est ignorée lors du \"baking\". Gardez à "
+"l'esprit que cacher une lumière n'aura aucun effet sur le \"baking\", cela "
+"doit être utilisé à la place."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:161
 msgid ""
 "**Indirect:** This is the default mode. Only indirect lighting will be baked."
 msgstr ""
+"** Indirect: ** Ceci est le mode par défaut. Seul l'éclairage indirect sera "
+"\"baked\"."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:162
 msgid ""
 "**All:** Both indirect and direct lighting will be baked. If you don't want "
 "the light to appear twice (dynamically and statically), simply hide it."
 msgstr ""
+"**All:** Les éclairages directs et indirects seront \"baked\". Si vous ne "
+"voulez pas que la lumière apparaisse deux fois (dynamiquement et "
+"statiquement), masquez-la simplement."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:165
 msgid "Baking quality"
-msgstr ""
+msgstr "Qualité de \"Baking\""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:167
 msgid ""
@@ -316,6 +372,10 @@ msgid ""
 "parameter. More subdivision results in more detail, but also takes more time "
 "to bake."
 msgstr ""
+"``BakedLightmap`` utilise par simplicité une version voxelisée de la scène "
+"afin de calculer l'éclairage. La taille de Voxel peut-être ajustée via le "
+"paramètre **Bake Subdiv**. Un plus grand nombre de sous-divisions apportera "
+"plus de détail, mais augmentera également le temps requis du \"baking\"."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:171
 msgid ""
@@ -324,18 +384,27 @@ msgid ""
 "subdivision), which is used for capturing light in dynamic objects (more on "
 "that later). Its default value is also good enough for most cases."
 msgstr ""
+"En général, les paramètres par défaut suffisent. Si vous souhaitez capturer "
+"la lumière d'objets dynamiques (plus d'infos là dessus plus tard), vous "
+"pouvez également utiliser **Capture Subdivision** (doit toujours être "
+"inférieur ou égal au nombre de sous-divisions principal). La valeur par "
+"défaut pour ce paramètre est également suffisante dans la plupart des cas."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:178
 msgid ""
 "Besides the capture size, quality can be modified by setting the **Bake "
 "Mode**. Two modes of capturing indirect are provided:"
 msgstr ""
+"Outre la taille de la capture, la qualité peut être modifiée en réglant le "
+"**Bake Mode**. Deux modes de capture indirecte sont proposés :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:183
 msgid ""
 "**Voxel Cone**: Trace: Is the default one; it's less precise, but faster. "
 "Looks similar to (but slightly better than) ``GIProbe``."
 msgstr ""
+"**Voxel Cone**: Trace: est la valeur par défaut; C'est moins précis, mais "
+"plus rapide. Similaire à (mais un peu mieux que) '' GIProbe''."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:184
 msgid ""
@@ -343,30 +412,37 @@ msgid ""
 "longer to bake. If used in low or medium quality, some scenes may produce "
 "grain."
 msgstr ""
+"**Ray Tracing** : Cette méthode est plus précise, mais peut avoir un temps "
+"de rendu considérable. Si la qualité basse ou médium est utilisé, certaine "
+"scènes peuvent produire du grain."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:187
 msgid "Baking"
-msgstr ""
+msgstr "Pré-calcul"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:189
 msgid ""
 "To begin the bake process, just push the big **Bake Lightmaps** button on "
 "top when selecting the ``BakedLightmap`` node:"
 msgstr ""
+"Pour pré-calculer les lumières, appuyer sur le bouton **Bake Lightmaps** (en "
+"haut quand vous sélectionnez le noeud ``BakeLightmap``) :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:194
 msgid ""
 "This can take from seconds to minutes (or hours) depending on scene size, "
 "bake method and quality selected."
 msgstr ""
+"Cela peut prendre quelques secondes, voir des heures. La taille de la scène, "
+"la méthode de pré-calcul et sa qualité impacte le temps de calcul."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:198
 msgid "Configuring bake"
-msgstr "Configurer la préparation"
+msgstr "Configurer les pré-calculs"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:200
 msgid "Several more options are present for baking:"
-msgstr ""
+msgstr "Différentes options sont disponibles pour le pré-calcul :"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:202
 msgid ""
@@ -375,6 +451,10 @@ msgid ""
 "cases. Increase it in case you want better lighting on small details or your "
 "scene is large."
 msgstr ""
+"**Sous-division des pré-calculs** : Dans le système de cartographie de "
+"lumière utilisée par Godot, une grille est utilisée pour le transfert de "
+"l'information lumineuse. Augmenter la densité de la grille pour améliorer "
+"les détails lumineux."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:203
 msgid ""
@@ -382,40 +462,56 @@ msgid ""
 "(lighting dynamic objects). Default value is generally OK, it's usually "
 "smaller than Bake Subdiv and can't be larger than it."
 msgstr ""
+"**Sous-division de capture** : il s'agit d'une grille utilisée pour la "
+"capture temps-réel d'information lumineuse (produit par des objets "
+"dynamiques). La valeur par défaut est généralement correcte. Elle doit être "
+"plus petite que la grille de sous-division utilisée pour les pré-calculs."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:204
 msgid ""
 "**Bake Quality**: Three bake quality modes are provided, Low, Medium and "
 "High. Higher quality takes more time."
 msgstr ""
+"**Qualité des pré-calculs** : Trois sont disponibles. Basse, Moyenne et "
+"Haute. Impact la durée des pré-calculs."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:205
 msgid ""
 "**Bake Mode**: The baker can use two different techniques: *Voxel Cone "
 "Tracing* (fast, but approximate), or *RayTracing* (slow, but accurate)."
 msgstr ""
+"**Mode de pré-calcul** : Deux techniques sont proposées : *Voxel Cone "
+"Tracing* (rapide, mais approximatif), et *Lancé de rayons* (lent, mais "
+"précis)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:206
 msgid ""
 "**Propagation**: Used for the *Voxel Cone Trace* mode. Works just like in "
 "``GIProbe``."
 msgstr ""
+"**Propagation** : Utilisé par le mode *Voxel Cone Trace*. Fonctionne comme "
+"le ``GIProbe``."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:207
 msgid ""
 "**HDR**: If disabled, lightmaps are smaller, but can't capture any light "
 "over white (1.0)."
 msgstr ""
+"**HDR**: Si désactivée, les lightmaps seront plus petit, mais ne pourront "
+"pas capturer toutes les lumières au-dessus du blanc (1.0)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:208
 msgid ""
 "**Image Path**: Where lightmaps will be saved. By default, on the same "
 "directory as the scene (\".\"), but can be tweaked."
 msgstr ""
+"**Chemin de l'image** : Où les lightmaps seront sauvegardées. Par défaut, "
+"sur le même répertoire que la scène (\".\"), mais il peut être modifié."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:209
 msgid "**Extents**: Size of the area affected (can be edited visually)"
 msgstr ""
+"**Extensions** : Taille de la zone affectée (peut être modifiée visuellement)"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:210
 msgid ""
@@ -424,6 +520,11 @@ msgid ""
 "which can be a bit heavy. If you are using .tscn formats (instead of .scn), "
 "you can save it to disk."
 msgstr ""
+"**Données lumière** : Contient les données de pré-calcul de lumière après le "
+"pré-calcul. Les textures sont sauvegardées sur le disque, mais il contient "
+"aussi les données de capture pour les objets dynamiques, qui peuvent être un "
+"peu lourds. Si vous utilisez des formats.tscn (au lieu de.scn), vous pouvez "
+"les enregistrer sur le disque."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:213
 msgid "Dynamic objects"
@@ -436,6 +537,11 @@ msgid ""
 "generate *capture* data. This is used to, then, transfer the light to "
 "dynamic objects that move around the scene."
 msgstr ""
+"Dans d'autres moteurs ou implémentateur de lightmapper, vous devez placer "
+"manuellement de petits objets appelés \"\"lightprobes\" tout autour du "
+"niveau pour générer des données * capture *. Ceci est utilisé pour, ensuite, "
+"transférer la lumière sur des objets dynamiques qui se déplacent dans la "
+"scène."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:220
 msgid ""
@@ -444,3 +550,8 @@ msgid ""
 "objects around, and they will be lit accordingly. Of course, you have to "
 "make sure you set up your scene bounds accordingly or it won't work."
 msgstr ""
+"Cependant, cette implementation de la cartographie de la lumière utilise une "
+"méthode différente. Le processus est automatique, vous n'avez donc rien à "
+"faire. Il suffit de déplacer vos objets, et ils seront éclairés en "
+"conséquence. Bien sûr, vous devez vous assurer que vous configurez vos "
+"limites de scène en conséquence ou cela ne fonctionnera pas."

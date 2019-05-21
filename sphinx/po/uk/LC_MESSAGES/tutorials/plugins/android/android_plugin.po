@@ -1,0 +1,366 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:4
+#, fuzzy
+msgid "Creating Android plugins"
+msgstr "Створення простого додатка"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:7
+msgid "Introduction"
+msgstr "Вступ"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:9
+msgid ""
+"Making video games portable is all fine and dandy, until mobile gaming "
+"monetization shows up."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:12
+msgid ""
+"This area is complex, usually a mobile game that monetizes needs special "
+"connections to a server for things like:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:15
+msgid "Analytics"
+msgstr "Аналітика"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:16
+msgid "In-app purchases"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:17
+msgid "Receipt validation"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:18
+msgid "Install tracking"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:19
+msgid "Ads"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:20
+msgid "Video ads"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:21
+msgid "Cross-promotion"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:22
+msgid "In-game soft & hard currencies"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:23
+msgid "Promo codes"
+msgstr "Промокоди"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:24
+msgid "A/B testing"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:25
+msgid "Login"
+msgstr "Вхід"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:26
+msgid "Cloud saves"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:27
+msgid "Leaderboards and scores"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:28
+msgid "User support & feedback"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:29
+msgid "Posting to Facebook, Twitter, etc."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:30
+msgid "Push notifications"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:32
+msgid ""
+"On iOS, you can write a C++ module and take advantage of the C++/ObjC "
+"intercommunication. Even using GDNative is possible to make it a plug-in."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:35
+msgid ""
+"On Android, interfacing with C++ through JNI (Java Native Interface) isn't "
+"as flexible, so writing plugins is considerably more work."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:38
+msgid ""
+"It is also possible that you just want to do modifications to the Android "
+"export template, and by using a plugin your project can remain compatible "
+"with newer Godot versions (as the android source template will get updated "
+"on each release)."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:42
+msgid "Maybe REST"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:44
+msgid ""
+"Most of these APIs allow communication via REST/JSON APIs. If the API is "
+"relatively simple and does not require complex authenthication, this may be "
+"a better idea than writing a specific Android plugin."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:47
+msgid ""
+"Godot has great support for HTTP, HTTPS and JSON, so an API implemented this "
+"way will work on every platform, too."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:50
+msgid ""
+"Of course, in most of the cases, it's easier to just write an Android "
+"plugin, so keep reading."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:53
+#, fuzzy
+msgid "Android plugin"
+msgstr "Android"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:55
+msgid ""
+"Writing an Android plugin is now possible begining Godot 3.2. It's also "
+"pretty easy! Re-compiling the engine is no longer needed."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:57
+msgid ""
+"Before anything, make sure you understand how to set up a :ref:`custom build "
+"environment<doc_android_custom_build>` for Android."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:59
+msgid ""
+"Your plugin needs to be in a folder other than *\"build/\"* inside the *"
+"\"res://android\"* directory (which was created by following the link "
+"above). Any name is fine, so name it according to the SDK you will implement "
+"(or just your plugin name)."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:61
+msgid "Once created, there are certain rules to follow, but they are simple."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:64
+msgid "Android Directories"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:66
+msgid ""
+"Inside your plugin folder, you can use the standard folders as if they were "
+"from an Android Gradle project. Examples of this are:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:77
+msgid ""
+"Gradle will treat them as part of the project automatically when building, "
+"same as the default project files."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:80
+msgid "\"Chunk\" files"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:82
+msgid ""
+"It is now possible to modify *\"AndroidManifest.xml\"* and *build.gradle* in "
+"*\"res://android/build\"* directly and Godot will keep your changes when "
+"building. The problem, however, is that if you update Godot, you will also "
+"need to update the *build/* folder and your changes will be lost."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:86
+msgid ""
+"To overcome this, the Godot Android Plugin system lets you create *chunk* "
+"files, where you can specify little bits that can be inserted in both *"
+"\"AndroidManifest.xml\"* and *build.gradle*. They are inserted every time "
+"Godot builds the project for export or deploy."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:90
+#, fuzzy
+msgid "AndroidManifest.conf"
+msgstr "AndroidManifest"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:92
+msgid ""
+"This file allows to insert bits of chunk into *AndroidManifest.xml*, the "
+"following are supported tags and are entirely optional:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:98
+msgid ""
+"Any bit of text below this tag is inserted inside the <manifest> tag of the "
+"file. This is often used for permission tags."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:104
+msgid ""
+"Any bit of text below this tag inside the <application> tag of the file. "
+"Many SDKs require this."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:110
+msgid ""
+"These are attributes you can add at the end of the <application> tag. Some "
+"SDKs require this."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:113
+msgid "gradle.conf"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:115
+msgid ""
+"This file allows to insert bits of chunk into *build.gradle*, the following "
+"are supported and are entirely optional:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:122
+msgid ""
+"Any bit of text below this tag is inserted inside the buildscript."
+"repositories section of the build file."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:130
+msgid ""
+"Any bit of text below this tag is inserted inside the buildscript."
+"dependencies section of the build file."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:137
+msgid ""
+"Any bit of text below this tag is inserted inside the allprojects."
+"repositories section of the build file."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:144
+msgid ""
+"Any bit of text below this tag is inserted inside the dependencies section "
+"of the build file."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:152
+msgid ""
+"Any bit of text below this tag is inserted inside the android.defaultconfig "
+"section of the build file."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:159
+msgid ""
+"Any bit of text below this tag is inserted inside the global scope of the "
+"build file."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:162
+msgid "Java singleton"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:164
+msgid ""
+"An Android plugin will usually have a singleton class that will load it, "
+"this class inherits from ``Godot.SingletonBase``. Resource identifiers for "
+"any additional resources you have provided for the module will be in the "
+"``com.godot.game.R`` class, so you'll likely want to import it."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:169
+msgid "A singleton object template follows:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:236
+msgid "Calling back to Godot"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:238
+msgid ""
+"Calling back to Godot from Java is a little more difficult. The instance ID "
+"of the script must be known first, this is obtained by calling "
+"``get_instance_ID()`` on the script. This returns an integer that can be "
+"passed to Java."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:243
+msgid ""
+"From Java, use the ``calldeferred`` function to communicate back with Godot. "
+"Java will most likely run in a separate thread, so calls are deferred:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:251
+msgid "Godot will detect this singleton and initialize it at the proper time."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:255
+msgid "Troubleshooting"
+msgstr "Вирішення проблем"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:258
+msgid "Godot crashes upon load"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:260
+msgid "Check ``adb logcat`` for possible problems, then:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:262
+msgid "Make sure libgodot_android.so is in the ``libs/armeabi`` folder"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:263
+msgid ""
+"Check that the methods used in the Java singleton only use simple Java "
+"datatypes, more complex ones are not supported."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:267
+msgid "Future"
+msgstr "Майбутні"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:269
+msgid ""
+"Godot has an experimental Java API Wrapper that allows to use the entire "
+"Java API from GDScript."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:272
+msgid "It's simple to use and it's used like this:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:278
+msgid ""
+"This is most likely not functional yet, if you want to test it and help us "
+"make it work, contact us on irc.freenode.org:#godotengine-devel."
+msgstr ""

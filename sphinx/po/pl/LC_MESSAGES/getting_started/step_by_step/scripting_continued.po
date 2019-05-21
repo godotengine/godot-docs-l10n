@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,23 +46,27 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
-msgid ""
-"This method will be called every time a frame is drawn, so it's fully "
-"dependent on how many frames per second (FPS) the application is running at:"
+msgid "This method will be called every time a frame is drawn:"
 msgstr ""
-"Ta metoda będzie wywoływana za każdym razem gdy klatka jest rysowana, więc "
-"jest całkowicie zależna od tego, w ilu klatkach na sekundę(FPS) ta aplikacja "
-"pracuje:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:37
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
-"The delta parameter contains the time elapsed in seconds, as a floating "
-"point, since the previous call to ``_process()``."
+"It's important to bear in mind that the frequecy with which ``_process()`` "
+"will be called depends on how many frames per second (FPS) your application "
+"is running at. This rate can vary over time and devices."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+#, fuzzy
+msgid ""
+"To help manage this variability the ``delta`` parameter contains the time "
+"elapsed in seconds, as a floating point, since the previous call to "
+"``_process()``."
 msgstr ""
 "Parametr delta, to liczba zmiennoprzecinkowa, zawierająca czas w sekundach "
 "jaki upłynął od poprzedniego wywołania ``_process()``."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
@@ -70,7 +74,7 @@ msgstr ""
 "Ten parametr jest stosowany by być zawsze pewnym, że czynność zawsze będzie "
 "trwała określony czas, bez względu na ilość FPS."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
@@ -78,7 +82,7 @@ msgstr ""
 "Na przykład, ruch jest często mnożony przez czas od ostatniej klatki, aby "
 "prędkość ruchu była stała i niezależna od częstotliwości odświeżania."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""
 "Physics processing with ``_physics_process()`` is similar, but it should be "
 "used for processes that must happen before each physics step, such as "
@@ -95,7 +99,7 @@ msgstr ""
 "``_physics_process()`` ustawieniami projektu, przechodząc do zakładki "
 "Physics -> Common -> Physics Fps."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:52
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
 "The function ``_process()``, however, is not synced with physics. Its frame "
 "rate is not constant and is dependent on hardware and game optimization. Its "
@@ -105,43 +109,43 @@ msgstr ""
 "Częstotliwość odświeżania nie jest stała i zależy od optymalizacji sprzętu i "
 "gier. Jej wykonanie następuje po obliczeniu fizyki w grach jednowątkowych."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
+#, fuzzy
 msgid ""
-"A simple way to test this is to create a scene with a single Label node, "
-"with the following script:"
+"A simple way to see the ``_process()`` function at work is to create a scene "
+"with a single Label node, with the following script:"
 msgstr ""
 "Prostym sposobem sprawdzenia tego jest utworzenie sceny z pojedynczym węzłem "
 "Label, z następującym skryptem:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:82
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
 msgstr "Który będzie pokazywał licznik zwiększający każdą klatkę."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
 msgstr "Grupy"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:87
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
+#, fuzzy
 msgid ""
-"Nodes can be added to groups, as many as desired per node, and is a useful "
-"feature for organizing large scenes. There are two ways to do this. The "
-"first is from the UI, from the Groups button under the Node panel:"
+"Groups in Godot work like tags you might have come across in other software. "
+"A node can be added to as many groups as desired. This is a useful feature "
+"for organizing large scenes. There are two ways to do add nodes to groups. "
+"The first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
 "Węzły mogą być dodawane do grup, w dowolnej liczbie do każdego węzeła i są "
 "użytecznym narzędziem do organizowania dużych scen. Można je ustawić na dwa "
 "sposoby. Pierwszą metodą jest ich ustawienie interfejsu użytkownika, z "
 "przycisku Grupy pod panelem Węzeł:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
-"And the second way is from code. One example would be to tag nodes which are "
-"enemies:"
+"And the second way is from code. The following script would add the current "
+"node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
-"A drugą metodą jest ustawienie grupy z kodu. Jednym z przykładów może być "
-"tagowanie scen, które są wrogami:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 #, fuzzy
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
@@ -152,7 +156,7 @@ msgstr ""
 "bazy, wszyscy wrogowie zostaną powiadomieni za pomocą :ref:`SceneTree."
 "call_group() <class_SceneTree_method_call_group>`:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
@@ -160,7 +164,7 @@ msgstr ""
 "Powyższy kod wywołuje funkcję ``wykryto_gracza``(player_was_discovered) w "
 "kodzie każdego członka grupy ``przeciwnicy``(enemies)."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
 #, fuzzy
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
@@ -171,24 +175,25 @@ msgstr ""
 "wywołanie :ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
+#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
 "allows you to easily switch scenes or reload them, to quit the game or pause "
 "and unpause it. It even comes with interesting signals. So check it out if "
-"you got some time!"
+"you have some time!"
 msgstr ""
 "Klasa :ref:`SceneTree <class_SceneTree>` dostarcza wielu przydatnych metod, "
 "takich jak interakcja ze scenami, ich hierarchią i grupami węzłów. Pozwala w "
 "łatwy sposób przełączać sceny, przeładowywać je, kończyć grę lub spauzować i "
 "odpauzować ją. Sprawdź to, jeśli masz trochę czasu!"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:151
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 msgid "Notifications"
 msgstr "Powiadomienia"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:158
 #, fuzzy
 msgid ""
 "Godot has a system of notifications. These are usually not needed for "
@@ -203,7 +208,7 @@ msgstr ""
 "na przykład dodać w twoim skrypcie funkcję :ref:`Object.notification() "
 "<class_Object__ Notification>` :"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:188
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid ""
 "The documentation of each class in the :ref:`Class Reference <toc-class-"
 "ref>` shows the notifications it can receive. However, in most cases "
@@ -213,11 +218,11 @@ msgstr ""
 "powiadomienia, które może otrzymać. Jednak w większości przypadków GDScript "
 "zapewnia prostsze, możliwe do nadpisania funkcje."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
 msgid "Overrideable functions"
 msgstr "Funkcje możliwe do nadpisania"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:195
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
 msgid ""
 "Such overrideable functions, which are described as follows, can be applied "
 "to nodes:"
@@ -225,7 +230,7 @@ msgstr ""
 "Takie możliwe do nadpisania funkcje, opisane poniżej, mogą być stosowane do "
 "węzłów:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:267
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
@@ -233,11 +238,11 @@ msgstr ""
 "Jak wspomniano wcześniej, lepiej jest używać tych funkcji zamiast systemu "
 "powiadomień."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:271
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
 msgid "Creating nodes"
 msgstr "Tworzenie węzłów"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:273
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:278
 msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
@@ -245,16 +250,17 @@ msgstr ""
 "Aby utworzyć węzeł w kodzie, należy wywołać metodę ``.new()``, tak jak w "
 "przypadku każdego innego zbioru danych opartego na klasie. Na przykład:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:297
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
 msgstr ""
 "Aby usunąć węzeł, zarówno wewnątrz, jak i na zewnątrz sceny, należy użyć "
 "``free()``:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:313
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
+#, fuzzy
 msgid ""
-"When a node is freed, it also frees all its children nodes. Because of this, "
+"When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
@@ -262,7 +268,7 @@ msgstr ""
 "tego powodu ręczne usuwanie węzłów jest znacznie prostsze niż się wydaje. "
 "Zwolnij węzeł bazowy i wszystko inne w drzewie podrzędnym zniknie."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:317
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
 "A situation might occur where we want to delete a node that is currently "
 "\"blocked\", because it is emitting a signal or calling a function. This "
@@ -274,7 +280,7 @@ msgstr ""
 "Uruchomienie Godota z debuggerem często wyłapuje tą sytuację ostrzega przed "
 "nią."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
 #, fuzzy
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
@@ -284,11 +290,11 @@ msgstr ""
 "queue_free() <class_Node_method_queue_free>`. Węzeł zostanie bezpiecznie "
 "usunięty, podczas gdy będzie bezczynny."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:340
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
 msgid "Instancing scenes"
 msgstr "Instancjowanie scen"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:342
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:347
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
@@ -296,13 +302,13 @@ msgstr ""
 "Instancjowanie sceny z kodu odbywa się w dwóch krokach. Pierwszym z nich "
 "jest wczytanie sceny z dysku twardego:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:360
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
 #, fuzzy
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
@@ -317,7 +323,7 @@ msgstr ""
 "<class_PackedScene_method_instance>`. Spowoduje to zwrócenie drzewa węzłów, "
 "które można dodać do aktywnej sceny:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid ""
 "The advantage of this two-step process is that a packed scene may be kept "
 "loaded and ready to use so that you can create as many instances as desired. "
@@ -329,18 +335,18 @@ msgstr ""
 "instancji. Jest to szczególnie przydatne do szybkiego wywołania kilku "
 "wrogów, pocisków i innych podmiotów na aktywnej scenie."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:389
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:391
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
 msgid ""
 "Godot has a \"Script Class\" feature to register individual scripts with the "
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:395
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
 msgid ""
 "You can name a script and register it as a type in the editor with the "
 "``class_name`` keyword followed by the class's name. You may add a comma and "
@@ -348,17 +354,17 @@ msgid ""
 "type in the Node or Resource creation dialog."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
 #, fuzzy
 msgid "In Godot 3.1:"
 msgstr "Hej, Godette v3.11"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:419
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:420
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
 msgid "Only GDScript creates global variables for each named script."
 msgstr ""

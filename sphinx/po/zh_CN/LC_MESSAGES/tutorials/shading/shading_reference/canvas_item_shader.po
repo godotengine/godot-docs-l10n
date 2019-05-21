@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:4
-#, fuzzy
 msgid "CanvasItem shaders"
-msgstr "CanvasItem"
+msgstr "画布项着色器"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:6
 msgid ""
@@ -94,9 +93,8 @@ msgid "Pre-multiplied alpha blend mode."
 msgstr "预乘alpha混合模式。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
-#, fuzzy
 msgid "**blend_disabled**"
-msgstr "**cull_disabled**"
+msgstr "**混合_禁用**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:29
 msgid "Disable blending, values (including alpha) are written as-is."
@@ -176,9 +174,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
-#, fuzzy
 msgid "Then, in your vertex shader:"
-msgstr "我们像这样定义顶点着色器:"
+msgstr "然后，在你的顶点着色器:"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:83
 msgid ""
@@ -223,9 +220,8 @@ msgid "in mat4 **WORLD_MATRIX**"
 msgstr "在mat4 ** WORLD_MATRIX **"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:97
-#, fuzzy
 msgid "Image space to view space transform."
-msgstr "用于查看空间变换的剪辑空间。"
+msgstr "图像空间到视图空间的转换。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:99
 msgid "in mat4 **EXTRA_MATRIX**"
@@ -268,9 +264,8 @@ msgstr "in bool **AT_LIGHT_PASS**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
-#, fuzzy
 msgid "True if this is a light pass."
-msgstr "如果这是光通过则为真(对于多次通过光渲染)。"
+msgstr "如果光通过则为真。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
 #, fuzzy
@@ -463,9 +458,8 @@ msgid "Screen texture, mipmaps contain gaussian blurred versions."
 msgstr "屏幕纹理，mipmap包含高斯模糊版本。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
-#, fuzzy
 msgid "Light built-ins"
-msgstr "轻型内置"
+msgstr "内置灯光"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
 msgid ""
@@ -485,9 +479,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
-#, fuzzy
 msgid "Fragment coordinate of pixel center. Origin at lower left."
-msgstr "片段坐标，像素调整。"
+msgstr "像素中心的片段坐标。原点在左下角。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
 msgid "in vec3 **NORMAL**"

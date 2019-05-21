@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,7 +204,6 @@ msgstr ""
 "로 반환합니다. 그런 뒤 이것을 다른 노드의 자식으로 추가할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
-#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` function is fast, you can create new "
@@ -344,7 +343,6 @@ msgid ""
 msgstr "그들은 기본 리소스 외에도 **다른** 리소스 타입도 확장할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
-#, fuzzy
 msgid ""
 "Resources and Dictionaries are both passed by reference, but only Resources "
 "are reference-counted. This means that if a Dictionary is passed between "
@@ -352,10 +350,10 @@ msgid ""
 "the Dictinoary will be invalidated. Conversely, Resources will not be freed "
 "from memory until *all* the objects are deleted."
 msgstr ""
-"리소스와 딕셔너리는 둘 다 참조로서 전달되지만, 오직 리소스는 참조 카운트가 된"
-"다는 점에서 다릅니다. 이는 즉 딕셔너리가 객체 사이를 지나가고, 첫 번째 객체"
-"가 삭제된다면, 두 번째 객체의 변수를 무효화 할 것입니다. 하지만 리소스는 *모"
-"든* 인스턴스가 사라질 때까지 메모리를 해제하지 않습니다."
+"리소스와 딕셔너리는 둘 다 참조로서 전달되지만, 리소스는 참조 카운트가 된다는 "
+"점에서 딕셔너리와 다릅니다. 즉, 딕셔너리가 객체 사이를 지나가고 첫 번째 객체"
+"가 삭제된다면, 딕셔너리에 대한 다른 모든 객체들의 참조는 무효화될 것입니다. "
+"반면, 리소스는 *모든* 객체가 사라질 때까지 메모리를 해제하지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
 msgid "Godot makes it easy to create custom Resources in the Inspector."

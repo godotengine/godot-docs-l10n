@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,3 +83,22 @@ msgid ""
 msgstr ""
 "这幅图中的示例表示, 控件被设置为延展到父控件的右下角, 因此当重新调整父控件(或"
 "视区)大小时, 控件将始终覆盖父控件, 每边留下20像素的边距:"
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:42
+#, fuzzy
+msgid "Centering a control"
+msgstr "自定义控件"
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:44
+msgid ""
+"To center a control in its parent, set its anchors to 0.5 and each margin to "
+"half of its relevant dimension. For example, the code below shows how a "
+"TextureRect can be centered in its parent:"
+msgstr ""
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:63
+msgid ""
+"Setting each anchor to 0.5 moves the reference point for the margins to the "
+"center of its parent. From there, we set negative margins so that the "
+"control gets its natural size."
+msgstr ""

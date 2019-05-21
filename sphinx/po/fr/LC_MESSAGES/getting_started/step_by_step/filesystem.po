@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,18 +26,16 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "A file system manages how assets are stored and how they are accessed. A "
 "well-designed file system also allows multiple developers to edit the same "
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
-"Le système de fichier est également un des sujets importants du "
-"développement du moteur. Le système de fichier gère la façon dont les assets "
-"sont stockés et comment elles sont accessibles. Un système bien conçu permet "
-"à plusieurs développeurs d'éditer les mêmes fichiers et assets lorsqu'ils "
-"collaborent ensembles."
+"Le système de fichier gère la façon dont les assets sont stockés et comment "
+"on y accède. Un système bien conçu permet à plusieurs développeurs d'éditer "
+"les mêmes fichiers et assets lorsqu'ils collaborent ensembles. Godot stocke "
+"toutes les ressources sous forme de fichiers dans son système de fichiers."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
@@ -62,20 +60,17 @@ msgstr ""
 "de police est souvent comprise avec une police de caractère."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
-#, fuzzy
 msgid ""
 "The Godot file system avoids using metadata files. Existing asset managers "
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
-"En général, le système de fichier de Godot évite d'utiliser des fichiers de "
-"métadonnées. La raison est simple, les gestionnaires d'assets existants et "
-"les VCS sont tout simplement bien meilleurs que tout ce que nous pouvons "
-"mettre en œuvre, alors Godot essaie de jouer au mieux avec SVN, Git, "
-"Mercurial, Perforce, etc."
+"Le système de fichier de Godot évite d'utiliser des fichiers de métadonnées. "
+"Les gestionnaires d'assets existants et les VCS sont tout simplement bien "
+"meilleurs que tout ce que nous pouvons mettre en œuvre, alors Godot essaie "
+"de jouer au mieux avec SVN, Git, Mercurial, Perforce, etc."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:28
-#, fuzzy
 msgid "Example of file system contents:"
 msgstr "Exemple du contenu d'un système de fichier :"
 
@@ -135,13 +130,12 @@ msgstr ""
 "ce problème, le chemin spécial ``res://`` a été créé."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
-#, fuzzy
 msgid ""
 "The path ``res://`` will always point at the project root (where project."
 "godot is located, so ``res://project.godot`` is always valid)."
 msgstr ""
 "Le chemin ``res://`` pointera toujours vers la racine du projet (là où "
-"project.godot est localisé, alors ``res://project.godot`` est toujours "
+"project.godot est localisé, ainsi``res://project.godot`` est toujours "
 "valide)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
@@ -161,13 +155,12 @@ msgid "User path"
 msgstr "Chemin de l'utilisateur (User path)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
-#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
 "special path ``user://`` that is always writable."
 msgstr ""
-"Écrire sur le disque est souvent nécessaire lors de diverses tâches comme la "
+"L'écriture sur le disque reste nécessaire lors de diverses tâches comme la "
 "sauvegarde d'une partie ou le téléchargement de contenu additionnel. Pour "
 "cela, le moteur assure le fait que le chemin spécial ``user://`` est "
 "toujours accessible en écriture."
@@ -177,7 +170,6 @@ msgid "Host file system"
 msgstr "Système de fichier hôte (Host file system)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
-#, fuzzy
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
@@ -186,9 +178,9 @@ msgid ""
 msgstr ""
 "Autrement le système de fichier hôte peut également être utilisé. Cependant "
 "ce n'est pas recommandé pour un produit commercialisé car il n'est pas "
-"garanti que ces chemins fonctionnent sur toutes les plates-formes. Toutes "
-"fois, utiliser un système de fichier hôte peut être utile lors du "
-"développement d'outils dans Godot !"
+"garanti que cela fonctionne sur toutes les plates-formes. Toutefois, "
+"utiliser un système de fichier hôte peut être utile lors du développement "
+"d'outils dans Godot."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:89
 msgid "Drawbacks"
@@ -239,13 +231,12 @@ msgstr ""
 "paquet compressé pour stocker tous les fichiers."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:107
-#, fuzzy
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot. One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
-"Il est recommandé que votre équipe définisse clairement une convention de "
-"nommage pour les fichier quand elle travaille avec Godot ! Une convention "
-"simple et infaillible est de n'autoriser que les noms de fichiers et de "
-"chemins en minuscules."
+"Il est recommandé à votre équipe de définir clairement une convention pour "
+"le nommage des fichier quand elle travaille avec Godot ! Une convention "
+"simple et infaillible est de n'autoriser que les minuscules pour les noms de "
+"fichiers et de chemins."

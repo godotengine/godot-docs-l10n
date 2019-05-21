@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:4
-#, fuzzy
 msgid "Spatial gizmo plugins"
-msgstr "制作插件"
+msgstr "空间变换轴插件"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:7
 msgid "Introduction"
@@ -31,6 +30,8 @@ msgid ""
 "Spatial gizmo plugins are used by the editor and custom plugins to define "
 "the gizmos attached to any kind of Spatial node."
 msgstr ""
+"编辑器和自定义插件，使用空间变换轴插件，来定义附加到任何类型的空间节点的变换"
+"轴。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:12
 msgid ""
@@ -39,20 +40,20 @@ msgid ""
 "less clutter in your plugin structure, while the second one will let you "
 "store some per-gizmo data."
 msgstr ""
+"本教程向您展示自定义变换轴的两种主要定义方法。第一种方法适用于简单变换轴，可"
+"以减少插件结构的混乱，而第二种方法将允许您存储每个变换轴的数据。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:16
-#, fuzzy
 msgid ""
 "This tutorial assumes you already know how to make generic plugins. If in "
 "doubt, refer to the :ref:`doc_making_plugins` page."
 msgstr ""
-"本教程假设您已经知道如何制作通用插件。 如有疑问，请参阅 :ref:"
-"`doc_making_plugins` 页面。 这也假设您熟悉Godot的导入系统。"
+"本教程假设您已经知道如何制作通用插件。 如有疑问，请参阅 :参考:`文档_制作插件"
+"` 页面。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:20
-#, fuzzy
 msgid "The EditorSpatialGizmoPlugin"
-msgstr "EditorImportPlugin类"
+msgstr "编辑器空间变换轴插件"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:22
 msgid ""
@@ -61,10 +62,13 @@ msgid ""
 "us to set a name for the new gizmo type and define other behaviors such as "
 "whether the gizmo can be hidden or not."
 msgstr ""
+"不管我们选择什么方式，我们需要创建一个新的:参考:`编辑器空间变换轴插件<类_编辑"
+"器空间变换轴插件>`。我们可以为新建的变换轴类型设置名称，并定义其他行为，比如"
+"是否可以隐藏变换轴。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:27
 msgid "This would be a basic setup:"
-msgstr ""
+msgstr "这是一个基本设置:"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:57
 msgid ""
@@ -73,11 +77,13 @@ msgid ""
 "gizmo data or you are porting a Godot 3.0 gizmo to 3.1+, you should go with "
 "the second approach."
 msgstr ""
+"对于简单变换轴来说，只继承自:参考:`编辑器空间变换轴插件<类_编辑器空间变换轴插"
+"件>`就足够了。如果你想为每个变换轴存储一些数据，或者你想将Godot 3.0版本的变换"
+"轴，移植到3.1以上版本中，你应该采用第二种方法。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:63
-#, fuzzy
 msgid "Simple approach"
-msgstr "简单购买"
+msgstr "简单方法"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
 msgid ""
@@ -85,6 +91,8 @@ msgid ""
 "`has_gizmo()<class_EditorSpatialGizmoPlugin_method_has_gizmo>` method so "
 "that it returns ``true`` when the spatial parameter is of our target type."
 msgstr ""
+"第一步，在我们的自定义变换轴插件中，重写:参考:`已有变换轴()<类_编辑器空间变换"
+"轴插件_方法_已有变换轴>` 方法，以便在空间参数为目标类型时返回“真”值。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:76
 msgid ""
@@ -92,6 +100,8 @@ msgid ""
 "`redraw()<class_EditorSpatialGizmoPlugin_method_redraw>` or all the handle "
 "related ones."
 msgstr ""
+"我们可以重写以下方法:参考:`重绘()<类_编辑器空间变换轴插件_方法_重绘>` 或所有"
+"与句柄相关的方法。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:107
 msgid ""
@@ -114,11 +124,13 @@ msgid ""
 "`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>` to get properly "
 "working handles."
 msgstr ""
+"注意，我们只是在重绘方法中添加了一些句柄，但是我们仍然需要在:参考:`编辑器空间"
+"变换轴插件<类_编辑器空间变换轴插件>`中实现其他与句柄相关的回调，以获得正确的"
+"工作句柄。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:153
-#, fuzzy
 msgid "Alternative approach"
-msgstr "或者，您可以运行"
+msgstr "替代方法"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:155
 msgid ""
@@ -127,6 +139,9 @@ msgid ""
 "have some state stored in each gizmo or because we are porting an old gizmo "
 "plugin and we don't want to go through the rewriting process."
 msgstr ""
+"在某些情况下，我们希望提供自己的:参考:`编辑器空间变换轴<类_编辑器空间变换轴>`"
+"实现，也许是因为我们想要在每个变换轴中存储一些状态，或者正在移植一个旧的变换"
+"轴插件，而不想经历重写过程。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:159
 msgid ""
@@ -135,12 +150,17 @@ msgid ""
 "returns our custom gizmo implementation for the Spatial nodes we want to "
 "target."
 msgstr ""
+"在这些情况下，我们需要做的就是在我们的新变换轴插件中覆盖：参考：`创建变换轴"
+"（）<类_编辑器空间变换轴插件_方法_创建变换轴>`，因此它返回我们想要实现的目标"
+"空间节点的自定义变换轴。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:181
 msgid ""
 "This way all the gizmo logic and drawing methods can be implemented in a new "
 "clas extending :ref:`EditorSpatialGizmo<class_EditorSpatialGizmo>`, like so:"
 msgstr ""
+"这样所有的变换轴逻辑和绘图方法都可以在一个新的类中实现扩展：参考：`编辑器空间"
+"变换轴<类_编辑器空间变换轴>`，如下所示："
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:217
 msgid ""
@@ -149,3 +169,6 @@ msgid ""
 "`EditorSpatialGizmo<class_EditorSpatialGizmo>` to get properly working "
 "handles."
 msgstr ""
+"请注意，我们刚刚在重绘方法中添加了一些句柄，但我们仍然需要在：参考：`编辑器空"
+"间变换轴<类_编辑器空间变换轴>`中实现其余的与句柄相关的回调，以获得正确工作的"
+"句柄。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,17 +22,17 @@ msgid "Using an external text editor"
 msgstr "외부 텍스트 에디터 사용하기"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
+#, fuzzy
 msgid ""
-"While Godot has an inbuilt text editor, some developers have a tendency to "
-"want to use a text editor they are familiar with. Godot provides this option "
-"via the options under ``Editor -> Editor Settings -> Text Editor -> "
-"External``"
+"Godot can be used with an external text editor, such as Sublime Text or "
+"Visual Studio Code. To select an external text editor via the Godot editor "
+"menu: ``Editor -> Editor Settings -> Text Editor -> External``"
 msgstr ""
 "Godot에는 내장 텍스트 에디터가 있지만, 일부 개발자들은 그들에게 익숙한 텍스"
 "트 에디터를 사용하려는 경향이 있습니다. Godot는 ``에디터 -> 에디터 설정 -> "
 "Text Editor -> External`` 의 설정을 통해 이 선택을 제공합니다."
 
-#: ../../docs/getting_started/editor/external_editor.rst:13
+#: ../../docs/getting_started/editor/external_editor.rst:11
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
 "allow you to better integrate the editor with Godot. Godot will replace the "
@@ -42,86 +42,101 @@ msgstr ""
 "면 에디터를 Godot와 보다 잘 통합할 수 있습니다. Godot는 플래그 매개 변수에서 "
 "다음을 바꿉니다:"
 
-#: ../../docs/getting_started/editor/external_editor.rst:18
+#: ../../docs/getting_started/editor/external_editor.rst:16
 msgid "Field in Exec Flags"
 msgstr "Exec Flags의 필드"
 
-#: ../../docs/getting_started/editor/external_editor.rst:18
+#: ../../docs/getting_started/editor/external_editor.rst:16
 msgid "Is replaced with"
 msgstr "를 이것으로 바꿉니다"
 
-#: ../../docs/getting_started/editor/external_editor.rst:20
+#: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "{project}"
 msgstr "{project}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:20
+#: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "The absolute path to the project directory"
 msgstr "프로젝트 디렉토리의 절대 경로"
 
-#: ../../docs/getting_started/editor/external_editor.rst:22
+#: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "{file}"
 msgstr "{file}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:22
+#: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "The absolute path to the file"
 msgstr "파일의 절대 경로"
 
-#: ../../docs/getting_started/editor/external_editor.rst:24
+#: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "{col}"
 msgstr "{col}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:24
+#: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "The column number of the error"
 msgstr "오류의 열 번호"
 
-#: ../../docs/getting_started/editor/external_editor.rst:26
+#: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "{line}"
 msgstr "{line}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:26
+#: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The line number of the error"
 msgstr "오류의 행 번호"
 
-#: ../../docs/getting_started/editor/external_editor.rst:29
+#: ../../docs/getting_started/editor/external_editor.rst:27
 msgid "Some example Exec Flags for various editors include:"
 msgstr "다양한 에디터의 Exec Flags의 예는 다음과 같습니다:"
 
-#: ../../docs/getting_started/editor/external_editor.rst:32
+#: ../../docs/getting_started/editor/external_editor.rst:30
 msgid "Editor"
 msgstr "에디터"
 
-#: ../../docs/getting_started/editor/external_editor.rst:32
+#: ../../docs/getting_started/editor/external_editor.rst:30
 msgid "Exec Flags"
 msgstr "Exec Flags"
 
-#: ../../docs/getting_started/editor/external_editor.rst:34
+#: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Geany/Kate"
 msgstr "Geany/Kate"
 
-#: ../../docs/getting_started/editor/external_editor.rst:34
-msgid "{file} --line {line} --column {col}"
+#: ../../docs/getting_started/editor/external_editor.rst:32
+#, fuzzy
+msgid "{file} -\\-line {line} -\\-column {col}"
 msgstr "{file} --line {line} --column {col}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:36
+#: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "Atom/Sublime Text"
 msgstr "Atom/Sublime Text"
 
-#: ../../docs/getting_started/editor/external_editor.rst:36
+#: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "{file}:{line}"
 msgstr "{file}:{line}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:38
+#: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "JetBrains Rider"
 msgstr "JetBrains Rider"
 
-#: ../../docs/getting_started/editor/external_editor.rst:38
-msgid "--line {line} {file}"
+#: ../../docs/getting_started/editor/external_editor.rst:36
+#, fuzzy
+msgid "-\\-line {line} {file}"
 msgstr "--line {line} {file}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:40
+#: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
-#: ../../docs/getting_started/editor/external_editor.rst:40
-msgid "{project} --goto {file}:{line}:{col}"
+#: ../../docs/getting_started/editor/external_editor.rst:38
+#, fuzzy
+msgid "{project} -\\-goto {file}:{line}:{col}"
 msgstr "{project} --goto {file}:{line}:{col}"
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+msgid "Vim (gVim)"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+msgid "\"+call cursor({line}, {col})\" {file}"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:43
+msgid "For Visual Studio Code you will have to point to the \"code.cmd\" file."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,7 +86,8 @@ msgid "Store Kit"
 msgstr "商店套件"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:64
-msgid "Implemented in platform/iphone/in_app_store.mm"
+#, fuzzy
+msgid "Implemented in ``platform/iphone/in_app_store.mm``."
 msgstr "在platform / iphone / in_app_store.mm中实现"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:66
@@ -124,9 +125,9 @@ msgstr "通过Store Kit API购买产品ID。"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:87
 #: ../../docs/tutorials/platform/services_for_ios.rst:127
-#: ../../docs/tutorials/platform/services_for_ios.rst:196
-#: ../../docs/tutorials/platform/services_for_ios.rst:240
-#: ../../docs/tutorials/platform/services_for_ios.rst:385
+#: ../../docs/tutorials/platform/services_for_ios.rst:198
+#: ../../docs/tutorials/platform/services_for_ios.rst:242
+#: ../../docs/tutorials/platform/services_for_ios.rst:387
 msgid "Parameters"
 msgstr "参数"
 
@@ -141,41 +142,41 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:97
 #: ../../docs/tutorials/platform/services_for_ios.rst:137
 #: ../../docs/tutorials/platform/services_for_ios.rst:161
-#: ../../docs/tutorials/platform/services_for_ios.rst:210
-#: ../../docs/tutorials/platform/services_for_ios.rst:257
-#: ../../docs/tutorials/platform/services_for_ios.rst:286
-#: ../../docs/tutorials/platform/services_for_ios.rst:316
-#: ../../docs/tutorials/platform/services_for_ios.rst:348
-#: ../../docs/tutorials/platform/services_for_ios.rst:405
-msgid "Response event"
-msgstr "响应事件"
-
-#: ../../docs/tutorials/platform/services_for_ios.rst:99
-#: ../../docs/tutorials/platform/services_for_ios.rst:139
 #: ../../docs/tutorials/platform/services_for_ios.rst:212
 #: ../../docs/tutorials/platform/services_for_ios.rst:259
 #: ../../docs/tutorials/platform/services_for_ios.rst:288
 #: ../../docs/tutorials/platform/services_for_ios.rst:318
 #: ../../docs/tutorials/platform/services_for_ios.rst:350
 #: ../../docs/tutorials/platform/services_for_ios.rst:407
-msgid "The response event will be a dictionary with the following fields:"
-msgstr "响应事件将是包含以下字段的字典:"
+msgid "Response event"
+msgstr "响应事件"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:101
+#: ../../docs/tutorials/platform/services_for_ios.rst:99
+#: ../../docs/tutorials/platform/services_for_ios.rst:139
 #: ../../docs/tutorials/platform/services_for_ios.rst:214
 #: ../../docs/tutorials/platform/services_for_ios.rst:261
 #: ../../docs/tutorials/platform/services_for_ios.rst:290
 #: ../../docs/tutorials/platform/services_for_ios.rst:320
 #: ../../docs/tutorials/platform/services_for_ios.rst:352
+#: ../../docs/tutorials/platform/services_for_ios.rst:409
+msgid "The response event will be a dictionary with the following fields:"
+msgstr "响应事件将是包含以下字段的字典:"
+
+#: ../../docs/tutorials/platform/services_for_ios.rst:101
+#: ../../docs/tutorials/platform/services_for_ios.rst:216
+#: ../../docs/tutorials/platform/services_for_ios.rst:263
+#: ../../docs/tutorials/platform/services_for_ios.rst:292
+#: ../../docs/tutorials/platform/services_for_ios.rst:322
+#: ../../docs/tutorials/platform/services_for_ios.rst:354
 msgid "On error:"
 msgstr "出错:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:111
-#: ../../docs/tutorials/platform/services_for_ios.rst:225
-#: ../../docs/tutorials/platform/services_for_ios.rst:271
-#: ../../docs/tutorials/platform/services_for_ios.rst:300
-#: ../../docs/tutorials/platform/services_for_ios.rst:330
-#: ../../docs/tutorials/platform/services_for_ios.rst:362
+#: ../../docs/tutorials/platform/services_for_ios.rst:227
+#: ../../docs/tutorials/platform/services_for_ios.rst:273
+#: ../../docs/tutorials/platform/services_for_ios.rst:302
+#: ../../docs/tutorials/platform/services_for_ios.rst:332
+#: ../../docs/tutorials/platform/services_for_ios.rst:364
 msgid "On success:"
 msgstr "成功时:"
 
@@ -215,86 +216,101 @@ msgid "Game Center"
 msgstr "游戏中心"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:176
-msgid "Implemented in platform/iphone/game_center.mm"
+#, fuzzy
+msgid "Implemented in ``platform/iphone/game_center.mm``."
 msgstr "在platform / iphone / game_center.mm中实现"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:178
+#, fuzzy
 msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
-"has 6 methods:"
+"has 8 methods:"
 msgstr "Game Center API可通过“GameCenter”单例获得。 它有6种方法:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:181
+msgid "``bool is_authenticated();``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/services_for_ios.rst:182
 msgid "``Error post_score(Variant p_score);``"
 msgstr "``Error post_score(Variant p_score);``"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:182
-msgid "``Erroraward_achievement(Variant p_params);``"
+#: ../../docs/tutorials/platform/services_for_ios.rst:183
+#, fuzzy
+msgid "``Error award_achievement(Variant p_params);``"
 msgstr "``Erroraward_achievement(Variant p_params);``"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:183
-msgid "``Error reset_achievements();``"
+#: ../../docs/tutorials/platform/services_for_ios.rst:184
+#, fuzzy
+msgid "``void reset_achievements();``"
 msgstr "``Error reset_achievements();``"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:184
-msgid "``Error request_achievements();``"
+#: ../../docs/tutorials/platform/services_for_ios.rst:185
+#, fuzzy
+msgid "``void request_achievements();``"
 msgstr "``Error request_achievements();``"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:185
-msgid "``Error request_achievement_descriptions();``"
+#: ../../docs/tutorials/platform/services_for_ios.rst:186
+#, fuzzy
+msgid "``void request_achievement_descriptions();``"
 msgstr "``Error request_achievement_descriptions();``"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:186
+#: ../../docs/tutorials/platform/services_for_ios.rst:187
 msgid "``Error show_game_center(Variant p_params);``"
 msgstr "``Error show_game_center(Variant p_params);``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:188
+#, fuzzy
+msgid "``Error request_identity_verification_signature();``"
+msgstr "``Error request_achievement_descriptions();``"
+
+#: ../../docs/tutorials/platform/services_for_ios.rst:190
 msgid "plus the standard pending event interface."
 msgstr "加上标准的待处理事件接口。"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:191
+#: ../../docs/tutorials/platform/services_for_ios.rst:193
 msgid "post_score"
 msgstr "post_score"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:193
+#: ../../docs/tutorials/platform/services_for_ios.rst:195
 msgid "Posts a score to a Game Center leaderboard."
 msgstr "将分数发布到游戏中心排行榜。"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:198
-#: ../../docs/tutorials/platform/services_for_ios.rst:387
+#: ../../docs/tutorials/platform/services_for_ios.rst:200
+#: ../../docs/tutorials/platform/services_for_ios.rst:389
 msgid "Takes a Dictionary as a parameter, with two fields:"
 msgstr "将Dictionary作为参数，包含两个字段:"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:200
+#: ../../docs/tutorials/platform/services_for_ios.rst:202
 msgid "``score`` a float number"
 msgstr "``得分``浮点数"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:201
+#: ../../docs/tutorials/platform/services_for_ios.rst:203
 msgid "``category`` a string with the category name"
 msgstr "``category``一个带有类别名称的字符串"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:203
-#: ../../docs/tutorials/platform/services_for_ios.rst:250
+#: ../../docs/tutorials/platform/services_for_ios.rst:205
+#: ../../docs/tutorials/platform/services_for_ios.rst:252
 msgid "Example:"
 msgstr "例:"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:235
+#: ../../docs/tutorials/platform/services_for_ios.rst:237
 msgid "award_achievement"
 msgstr "award_achievement"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:237
+#: ../../docs/tutorials/platform/services_for_ios.rst:239
 msgid "Modifies the progress of a Game Center achievement."
 msgstr "修改游戏中心成就的进度。"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:242
+#: ../../docs/tutorials/platform/services_for_ios.rst:244
 msgid "Takes a Dictionary as a parameter, with 3 fields:"
 msgstr "将Dictionary作为参数，包含3个字段:"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:244
+#: ../../docs/tutorials/platform/services_for_ios.rst:246
 msgid "``name`` (string) the achievement name"
 msgstr "``name``(字符串)成就名称"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:245
+#: ../../docs/tutorials/platform/services_for_ios.rst:247
 msgid ""
 "``progress`` (float) the achievement progress from 0.0 to 100.0 (passed to "
 "``GKAchievement::percentComplete``)"
@@ -302,51 +318,51 @@ msgstr ""
 "``progress``(浮动)成就进度从0.0到100.0(传递给``GKAchievement :: "
 "percentComplete``)"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:247
+#: ../../docs/tutorials/platform/services_for_ios.rst:249
 msgid ""
 "``show_completion_banner`` (bool) whether Game Center should display an "
 "achievement banner at the top of the screen"
 msgstr "``show_completion_banner``(bool)游戏中心是否应该在屏幕顶部显示成就横幅"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:281
+#: ../../docs/tutorials/platform/services_for_ios.rst:283
 msgid "reset_achievements"
 msgstr "reset_achievements"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:283
+#: ../../docs/tutorials/platform/services_for_ios.rst:285
 msgid "Clears all Game Center achievements. The function takes no parameters."
 msgstr "清除所有Game Center成就。 该函数不带参数。"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:310
+#: ../../docs/tutorials/platform/services_for_ios.rst:312
 msgid "request_achievements"
 msgstr "request_achievements"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:312
+#: ../../docs/tutorials/platform/services_for_ios.rst:314
 msgid ""
 "Request all the Game Center achievements the player has made progress on. "
 "The function takes no parameters."
 msgstr "请求游戏角色取得进步的所有游戏中心成就。 该函数不带参数。"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:342
+#: ../../docs/tutorials/platform/services_for_ios.rst:344
 msgid "request_achievement_descriptions"
 msgstr "request_achievement_descriptions"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:344
+#: ../../docs/tutorials/platform/services_for_ios.rst:346
 msgid ""
 "Request the descriptions of all existing Game Center achievements regardless "
 "of progress. The function takes no parameters."
 msgstr "无论进度如何，都要求描述所有现有的Game Center成就。 该函数不带参数。"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:379
+#: ../../docs/tutorials/platform/services_for_ios.rst:381
 msgid "show_game_center"
 msgstr "show_game_center"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:381
+#: ../../docs/tutorials/platform/services_for_ios.rst:383
 msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
 "achievements, and challenges."
 msgstr "显示内置的游戏中心叠加层，显示排行榜，成就和挑战。"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:389
+#: ../../docs/tutorials/platform/services_for_ios.rst:391
 msgid ""
 "``view`` (string) (optional) the name of the view to present. Accepts "
 "\"default\", \"leaderboards\", \"achievements\", or \"challenges\". Defaults "
@@ -355,7 +371,7 @@ msgstr ""
 "``view``(string)(可选)要呈现的视图的名称。 接受“默认”，“排行榜”，“成就”或“挑"
 "战”。 默认为“默认”。"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:392
+#: ../../docs/tutorials/platform/services_for_ios.rst:394
 msgid ""
 "``leaderboard_name`` (string) (optional) the name of the leaderboard to "
 "present. Only used when \"view\" is \"leaderboards\" (or \"default\" is "
@@ -366,19 +382,19 @@ msgstr ""
 "榜”(或“默认”配置为显示排行榜)时使用。 如果未指定，Game Center将显示聚合排行"
 "榜。"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:397
+#: ../../docs/tutorials/platform/services_for_ios.rst:399
 msgid "Examples:"
 msgstr "示例:"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:409
+#: ../../docs/tutorials/platform/services_for_ios.rst:411
 msgid "On close:"
 msgstr "关闭时:"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:419
+#: ../../docs/tutorials/platform/services_for_ios.rst:421
 msgid "Multi-platform games"
 msgstr "多平台游戏"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:421
+#: ../../docs/tutorials/platform/services_for_ios.rst:423
 msgid ""
 "When working on a multi-platform game, you won't always have the \"GameCenter"
 "\" singleton available (for example when running on PC or Android). Because "

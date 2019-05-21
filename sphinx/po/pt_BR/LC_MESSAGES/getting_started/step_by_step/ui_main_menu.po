@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,6 @@ msgid "The GUI you're going to create"
 msgstr "A GUI que você vai criar"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
-#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_main_menu_design.zip <files/"
 "ui_main_menu_design.zip>` and extract the archive. Import the ``start/`` "
@@ -371,15 +370,14 @@ msgstr ""
 "criar cinco instâncias extras ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:159
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the ``Texture`` "
 "property and click ``[empty]`` -> ``Load``. A file browser opens and lets "
 "you pick a sprite to load into the texture slot."
 msgstr ""
-"Clique em cada um dos nós para selecioná-lo. No inspetor, clique no ícone ``…"
-"`` à direita da propriedade Texture, e clique em ``Load``. Um navegador de "
-"arquivos é aberto e permite escolher uma sprite para carregar no slot de "
+"Clique em cada um dos nós para selecioná-lo. No inspetor, encontre a "
+"propriedade ``Texture`` e clique em ``[empty]`` -> ``Load`` . Um navegador "
+"de arquivos é aberto e permite escolher uma sprite para carregar no slot de "
 "textura."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
@@ -461,7 +459,6 @@ msgstr ""
 "deles"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
@@ -469,8 +466,7 @@ msgid ""
 msgstr ""
 "Na árvore de nós, selecione todos os nós ``TextureRect`` que devem ir no "
 "lado esquerdo: a logo, as opções de menu e a nota de versão. Arraste e solte-"
-"os no ``VBoxContainer``. Em seguida, arraste o nó de ilustração para o "
-"``CenterContainer``. Os nós devem se posicionar automaticamente."
+"os no ``VBoxContainer``. Os nós devem se posicionar automaticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
 msgid "Containers automatically place and resize textures"
@@ -490,7 +486,6 @@ msgstr ""
 "Não há espaço entre o logotipo e os outros elementos da interface do usuário"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the ``Size Flags`` category and click "
@@ -501,12 +496,14 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
-"Para centralizar os caracteres à direita, usaremos um ``CenterContainer``. "
-"Adicione um nó ``CenterContainer`` como filho do ``HBoxContainer``. Então no "
-"Inspetor, vá até a categoria ``Size Flags`` e clique no campo à direita da "
-"propriedade ``Vertical``, e marque ``Expand``. Faça o mesmo com a "
-"propriedade ``Horizontal``. Finalmente, arraste e solte os caracteres no "
-"``CenterContainer``. O elemento Caracteres será centralizado automaticamente."
+"Para centralizar os caracteres à direita, primeiro selecione o "
+"``CenterContainer``.  Então, no inspetor, role abaixo para a categoria "
+"``Size Flags`` e clique no campo à direita da propriedade  ``Vertical``, e "
+"marque ``Expand`` além de ``Fill``. Faça o mesmo com a propriedade "
+"``Horizontal``. Isso faz o ``CenterContainer`` se expandir para todo o "
+"espaço disponível respeitando seu vizinho ``VBoxContainer``. Finalmente, "
+"arraste e solte os caracteres no ``CenterContainer``. O elemento Caracteres "
+"será centralizado automaticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid ""
@@ -541,7 +538,6 @@ msgstr ""
 "interface do usuário"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -555,8 +551,9 @@ msgstr ""
 "delas é expandido para ocupar o máximo de espaço vertical possível. "
 "Selecione o nó ``MenuOptions``. No Inspetor, role para baixo até a categoria "
 "``Size Flags``. Clique no campo à direita da propriedade ``Vertical`` e "
-"marque ``Expand``. O contêiner se expande para ocupar todo o espaço vertical "
-"disponível. Mas respeita seus vizinhos, os elementos ``Logo`` e ``Version``."
+"marque ``Expand`` além de ``Fill`` . O contêiner se expande para ocupar todo "
+"o espaço vertical disponível. Mas respeita seus vizinhos, os elementos "
+"``Logo`` e ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:253
 msgid ""
@@ -597,30 +594,29 @@ msgstr ""
 "Sem uma única linha de código, temos um menu principal preciso e responsívo."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
-#, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
 "your own. In the next tutorial, you'll create a Game User Interface with "
 "bars and item counters."
 msgstr ""
-"Parabéns por chegar lá! Você pode baixar o `menu final <#>`__ para comparar "
-"com o seu próprio. No próximo tutorial, você criará uma interface do usuário "
-"do jogo com barras e contadores de itens."
+"Parabéns por chegar aqui! Você pode baixar o menu final :download:"
+"`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` para comparar com "
+"o seu próprio. No próximo tutorial, você criará uma interface do usuário do "
+"jogo com barras e contadores de itens."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
-#, fuzzy
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
 "ratios. In Godot, we use containers to control the position and the size of "
 "UI elements."
 msgstr ""
-"A interface de usuário responsiva tem tudo a ver com a certeza de que nossas "
-"interfaces de usuário sejam bem dimensionadas em todos os tipos de tela. "
-"Telas de TV e monitores de computador têm diferentes tamanhos e proporções. "
-"No Godot, usamos contêineres para controlar a posição e o tamanho dos "
-"elementos da interface do usuário."
+"Uma interface de usuário responsiva tem tudo a ver com a certeza de que "
+"nossas interfaces de usuário sejam bem dimensionadas em todos os tipos de "
+"tela. Telas de TV e monitores de computador têm diferentes tamanhos e "
+"proporções. No Godot, usamos contêineres para controlar a posição e o "
+"tamanho dos elementos da interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,6 @@ msgid "The GUI you're going to create"
 msgstr "您将要创建的GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
-#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_main_menu_design.zip <files/"
 "ui_main_menu_design.zip>` and extract the archive. Import the ``start/`` "
@@ -60,8 +59,8 @@ msgid ""
 "folder."
 msgstr ""
 "下载项目文件: :download:`ui_main_menu_design.zip <files/ui_main_menu_design."
-"zip>` ，并提取存档。在Godot中导入`start/`项目以遵循本教程。`end/`文件夹包含最"
-"终结果。您会在`start/assets/main_menu`文件夹中找到所有的精灵。"
+"zip>` ，并提取存档。在Godot中导入`start/`项目按照本教程。`end/`文件夹包含最终"
+"结果。您会在`start/assets/main_menu`文件夹中找到所有的精灵图。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:33
 msgid "How to design your game UI"
@@ -318,14 +317,13 @@ msgstr ""
 "个`TextureRect`实例。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:159
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the ``Texture`` "
 "property and click ``[empty]`` -> ``Load``. A file browser opens and lets "
 "you pick a sprite to load into the texture slot."
 msgstr ""
-"单击每个节点以选择它。在属性面板中，单击纹理属性右侧的`…`图标，然后单击"
-"`Load`。打开一个文件浏览器，让您选择一个精灵加载到纹理槽中。"
+"单击选择节点。在属性面板中，单击材质属性右侧的`…`图标，然后单击`Load`。打开一"
+"个文件浏览器，然后选择一个精灵加载到材质槽中。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid "The file browser lets you find and load textures"
@@ -392,15 +390,14 @@ msgid ""
 msgstr "您应该有四个嵌套的容器，以及放置在它旁边的文本竖立节点"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
 "them into the ``VBoxContainer``. The nodes should position automatically."
 msgstr ""
-"在节点树中，选择应该位于左侧的所有`TextureRect`节点:徽标、菜单选项和版本说"
-"明。将它们拖放到`VBoxContainer`中。然后，将插图节点拖放到`CenterContainer`"
-"中。节点应该自动定位。"
+"在节点树中，选择位于左侧的所有`TextureRect`节点:logo、菜单选项和版本说明。将"
+"它们拖放到`VBoxContainer`中。然后，将插入图片节点拖放到`CenterContainer`中。"
+"节点会自动定位。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
 msgid "Containers automatically place and resize textures"
@@ -419,7 +416,6 @@ msgid "There's no space between the logo and the other UI elements"
 msgstr "logo和其他UI元素之间没有空间"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the ``Size Flags`` category and click "
@@ -430,11 +426,11 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
-"为了使右边的字符居中，我们将使用`CenterContainer`。添加一个`CenterContainer`"
-"节点作为`HBoxContainer`的子节点。然后在属性面板中，向下滚动到`Size Flags(大小"
-"标志)`类别，单击`Vertical(垂直)`属性右侧的字段，并检查`Expand(展开)`。对"
-"`Horizontal(水平)`属性执行相同的操作。最后将字符拖放到`CenterContainer`中。字"
-"符元素将自动居中。"
+"要将字符置于右侧，首先选择“CenterContainer”。然后在Inspector中，向下滚动到"
+"``Size Flags``类别并单击``Vertical``属性右侧的字段，并检查``Expand``和"
+"``Fill``。对``Horizontal``属性执行相同操作。这使得``CenterContainer``扩展到所"
+"有可用空间，同时对齐到相邻的``VBoxContainer``。最后，将Characters节点拖放到"
+"``CenterContainer``中。 Characters元素将自动居中。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid ""
@@ -512,15 +508,15 @@ msgid ""
 msgstr "没有一行代码，我们就有了一个精确且响应迅速的主菜单。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
-#, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
 "your own. In the next tutorial, you'll create a Game User Interface with "
 "bars and item counters."
 msgstr ""
-"恭喜您做到了!您可以下载`final menu <#>`__ 来与您自己的菜单进行比较。在下一个"
-"教程中，您将创建一个带有栏和物品计数器的游戏用户界面。"
+"恭喜你到达！您可以下载最终菜单：下载：`ui_main_menu_design.zip <files /"
+"ui_main_menu_design.zip>`以与您自己进行比较。在下一个教程中，您将创建一个带有"
+"条形和项目计数器的游戏用户界面。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,10 +86,64 @@ msgstr ""
 "`doc_updating_the_class_reference`。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:40
+msgid "The 'Edit on Github' link"
+msgstr ""
+
+#: ../../docs/community/contributing/documentation_guidelines.rst:42
+msgid ""
+"If you're reading documentation on ``docs.godotengine.org`` you'll see an "
+"'Edit on GitHub' hyperlink at the top right of the page. Once you've created "
+"a GitHub account you can propose changes to a page you're reading as follows:"
+msgstr ""
+
+#: ../../docs/community/contributing/documentation_guidelines.rst:44
+msgid ""
+"Copy the URL that the GitHub link points to. Part of the URL refers to a "
+"version name such as '3.1' or 'latest'. Swap this part for the word 'master' "
+"so that the result looks something like this: ``https://github.com/"
+"godotengine/godot-docs/blob/master/community/contributing/"
+"docs_writing_guidelines.rst``"
+msgstr ""
+
+#: ../../docs/community/contributing/documentation_guidelines.rst:45
+msgid "Load that URL in your browser."
+msgstr ""
+
+#: ../../docs/community/contributing/documentation_guidelines.rst:46
+msgid ""
+"On the GitHub page you're taken to, click the pencil icon. It has the "
+"tooltip \"Edit the file in a fork of this project\"."
+msgstr ""
+
+#: ../../docs/community/contributing/documentation_guidelines.rst:47
+msgid "Complete all the edits you want to make for that page."
+msgstr ""
+
+#: ../../docs/community/contributing/documentation_guidelines.rst:48
+msgid ""
+"Summarise the changes you made in the form at the bottom of the page and "
+"click the button labelled 'Propose file change' when done."
+msgstr ""
+
+#: ../../docs/community/contributing/documentation_guidelines.rst:49
+msgid ""
+"On the following screens, click the 'Create pull request' buttons until you "
+"see a message like ``Open. yourGitHubUsername wants to merge 1 commit into "
+"godotengine:master from yourGitHubUsername:patch-6``"
+msgstr ""
+
+#: ../../docs/community/contributing/documentation_guidelines.rst:50
+msgid ""
+"A reviewer will evaluate your changes and incorporate them into the docs if "
+"they're judged to improve them. You might also be asked to make "
+"modifications to your changes before they're included."
+msgstr ""
+
+#: ../../docs/community/contributing/documentation_guidelines.rst:53
 msgid "What makes good documentation?"
 msgstr "什么是良好的文档？"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:42
+#: ../../docs/community/contributing/documentation_guidelines.rst:55
 msgid ""
 "Documentation should be well written in plain English, using well-formed "
 "sentences and various levels of sections and subsections. It should be clear "
@@ -98,13 +152,13 @@ msgstr ""
 "文档应该用简单的英语写成，使用格式良好的句子和各种级别的章节和小节。 它应该清"
 "楚客观。 另请看 :ref:`doc_docs_writing_guidelines` 。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:46
+#: ../../docs/community/contributing/documentation_guidelines.rst:59
 msgid ""
 "We differentiate tutorial pages from other documentation pages by these "
 "definitions:"
 msgstr "我们通过以下定义将教程页面与其他文档页面区分开来:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:49
+#: ../../docs/community/contributing/documentation_guidelines.rst:62
 msgid ""
 "Tutorial: a page aiming at explaining how to use one or more concepts in the "
 "editor or scripts in order to achieve a specific goal with a learning "
@@ -114,7 +168,7 @@ msgstr ""
 "教程:旨在解释如何在编辑器或脚本中使用一个或多个概念以实现具有学习目的的特定目"
 "标的页面(例如“制作简单的2d乒乓游戏”，“将力施加到对象”)。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:53
+#: ../../docs/community/contributing/documentation_guidelines.rst:66
 msgid ""
 "Documentation: a page describing precisely one and only one concept at a "
 "time, if possible exhaustively (e.g. the list of methods of the Sprite "
@@ -123,22 +177,22 @@ msgstr ""
 "文档:一个页面，如果可能的话，一次只描述一个且只有一个概念(例如Sprite类的方法"
 "列表，或者Godot中输入管理的概述)。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:57
+#: ../../docs/community/contributing/documentation_guidelines.rst:70
 msgid ""
 "You are free to write the kind of documentation you wish, as long as you "
 "respect the following rules (and the ones on the repo)."
 msgstr ""
 "只要您遵守以下规则(以及储存库中的规则)，您就可以自由地编写所需的文档类型。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:61
+#: ../../docs/community/contributing/documentation_guidelines.rst:74
 msgid "Titles"
 msgstr "标题"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:63
+#: ../../docs/community/contributing/documentation_guidelines.rst:76
 msgid "Always begin pages with their title and a Sphinx reference name:"
 msgstr "始终以其标题和Sphinx参考名称开始页面:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:72
+#: ../../docs/community/contributing/documentation_guidelines.rst:85
 msgid ""
 "The reference allows to link to this page using the ``:ref:`` format, e.g. "
 "``:ref:`doc_insert_your_title_here``` would link to the above example page "
@@ -148,7 +202,7 @@ msgstr ""
 "`doc_insert_your_title_here``` 将链接到上面的示例页面(注意引用中缺少前导下划"
 "线)。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:76
+#: ../../docs/community/contributing/documentation_guidelines.rst:89
 msgid ""
 "Also, avoid American CamelCase titles: title's first word should begin with "
 "a capitalized letter, and every following word should not. Thus, this is a "
@@ -157,29 +211,29 @@ msgstr ""
 "另外，避免使用美国CamelCase标题:标题的第一个单词应以大写字母开头，而后面的每"
 "个单词都不应该。 因此，这是一个很好的示例:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:80
+#: ../../docs/community/contributing/documentation_guidelines.rst:93
 msgid "Insert your title here"
 msgstr "Insert your title here"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:82
+#: ../../docs/community/contributing/documentation_guidelines.rst:95
 msgid "And this is a bad example:"
 msgstr "这是一个糟糕的示例:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:84
+#: ../../docs/community/contributing/documentation_guidelines.rst:97
 msgid "Insert Your Title Here"
 msgstr "Insert Your Title Here"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:86
+#: ../../docs/community/contributing/documentation_guidelines.rst:99
 msgid ""
 "Only project, people and node class names should have capitalized first "
 "letter."
 msgstr "只有项目，人员和节点类名称应该首字母大写。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:90
+#: ../../docs/community/contributing/documentation_guidelines.rst:103
 msgid "Translating existing pages"
 msgstr "翻译现有页面"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:92
+#: ../../docs/community/contributing/documentation_guidelines.rst:105
 msgid ""
 "You can help to translate the official Godot documentation on our `Hosted "
 "Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
@@ -187,7 +241,7 @@ msgstr ""
 "您可以帮助我们翻译或校对托管在 `Weblate <https://hosted.weblate.org/engage/"
 "godot-engine/>`_ 上的官方Godot文档。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:99
+#: ../../docs/community/contributing/documentation_guidelines.rst:112
 msgid ""
 "There also is the official `Godot I18N repository <https://github.com/"
 "godotengine/godot-docs-l10n>`_. where you can see when the data was last "
@@ -196,11 +250,11 @@ msgstr ""
 "还有官方的 `Godot I18N存储库 <https://github.com/godotengine/godot-docs-"
 "l10n>`_ 。 您可以在哪里查看数据上次同步的时间。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:102
+#: ../../docs/community/contributing/documentation_guidelines.rst:115
 msgid "License"
 msgstr "许可证"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:104
+#: ../../docs/community/contributing/documentation_guidelines.rst:117
 msgid ""
 "This documentation and every page it contains is published under the terms "
 "of the `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://"
@@ -211,7 +265,7 @@ msgstr ""
 "tldrlegal.com/license/creative-commons-attribution-(cc)>`_ 的条款发布 ，归属"
 "于“Juan Linietsky，Ariel Manzur和Godot社区”。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:107
+#: ../../docs/community/contributing/documentation_guidelines.rst:120
 msgid ""
 "By contributing to the documentation on the GitHub repository, you agree "
 "that your changes are distributed under this license."

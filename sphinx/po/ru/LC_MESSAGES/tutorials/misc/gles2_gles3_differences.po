@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -462,4 +462,41 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:196
 msgid "vec_type **fwidth** ( vec_type )"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:199
+msgid ""
+"Godot also provides many built-in variables and render modes. Some cannot be "
+"supported in GLES2. Below is a list of built-in variables and render modes "
+"that, when written to, will have no effect or could even cause issues when "
+"using the GLES2 backend."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:204
+#, fuzzy
+msgid "Variable / Render Mode"
+msgstr "Опции Отрисовки"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:206
+msgid "``ensure_correct_normals``"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:208
+msgid "``INSTANCE_ID``"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:210
+msgid "``DEPTH``"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:212
+msgid "``ANISOTROPY``"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:214
+msgid "``ANISOTROPY_FLOW``"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:216
+msgid "``SSS_STRENGTH``"
 msgstr ""

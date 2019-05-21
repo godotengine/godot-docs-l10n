@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -180,35 +180,33 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."
-msgstr ""
+msgstr "编辑器和运行时可访问。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:119
-#, fuzzy
 msgid "Displays inheritance relationships in full."
-msgstr "不允许多重继承。"
+msgstr "显示全部继承关系。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:121
 msgid ""
 "Creates the node with the script, but can also change types or extend the "
 "type from the editor."
-msgstr ""
+msgstr "使用脚本创建节点，但也可以从编辑器更改或扩展类型。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:124
 msgid ""
 "Editor is aware of inheritance relationships between scripts, script "
 "classes, and engine C++ classes."
-msgstr ""
+msgstr "编辑器知道脚本、脚本类和引擎c++类之间的继承关系。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:129
 msgid ""
 "Engine developers must add support for languages manually (both name "
 "exposure and runtime accessibility)."
-msgstr ""
+msgstr "引擎开发人员必须手动添加对语言的支持(包括名称公开和运行时的可访问性)。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
-#, fuzzy
 msgid "Godot 3.1+ only."
-msgstr "在Godot 3.1中:"
+msgstr "仅适用于Godot 3.1版本。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
 msgid ""
@@ -216,6 +214,8 @@ msgid ""
 "scripting languages. Each scripting language must implement its own support "
 "for exposing this information."
 msgstr ""
+"编辑器扫描项目文件夹，并为所有脚本语言注册任何公开的名称。每种脚本语言都必须"
+"实现自己对公开此信息的支持。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:138
 msgid ""
@@ -224,6 +224,8 @@ msgid ""
 "script resource. Creating instances and accessing constants or static "
 "methods is viable from anywhere."
 msgstr ""
+"这两种方法都向创建对话框添加名称，特别是脚本类，还允许用户在不加载脚本资源的"
+"情况下访问类别名称。在任何地方都可以使用实例和访问常量或静态方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:143
 msgid ""
@@ -232,20 +234,21 @@ msgid ""
 "creating in-house tools for designers to use will find an easier time of "
 "things this way."
 msgstr ""
+"有了这些功能，人们或许希望他们的类型是没有场景的脚本，因为它给用户提供了易用"
+"性。通过这种方式，开发插件或为设计师创建内部工具将会更容易。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:148
 msgid ""
 "On the downside, it also means having to use largely imperative programming."
-msgstr ""
+msgstr "不足之处在于，这也意味着很大程度上必须使用命令式编程。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
 msgid "Conclusion"
 msgstr "总结"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
-#, fuzzy
 msgid "In the end, the best approach is to consider the following:"
-msgstr "对于本文的其余部分，我们考虑以下场景:"
+msgstr "最后，最好的方法是考虑以下几点:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
 msgid ""
@@ -255,6 +258,9 @@ msgid ""
 "chances are that it should probably be a script, likely one with a custom "
 "name/icon."
 msgstr ""
+"如果希望创建一个基本工具，它将在几个不同的项目中重用，以及可能提供给不同技能"
+"水平的人使用。(包括那些不认为自己是个“程序员”的用户)，它很可能是一个脚本，有"
+"一个自定义名称/图标。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:160
 msgid ""
@@ -262,6 +268,8 @@ msgid ""
 "should always be a scene. Scenes are easier to track/edit and provide more "
 "security than scripts."
 msgstr ""
+"如果希望创建一个特定概念的游戏，那么它应该是一个场景。场景比脚本更容易跟踪/编"
+"辑，并提供更多的安全性。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:164
 msgid ""
@@ -269,3 +277,5 @@ msgid ""
 "this in 3.1 by declaring a script class and giving it a scene as a constant. "
 "The script becomes, in effect, a namespace:"
 msgstr ""
+"如果有人想命名一个场景，他们仍然可以在3.1版本中，通过声明一个脚本类并给它一个"
+"场景作为常量来实现这一点。实际上，该脚本变成了一个命名空间:"

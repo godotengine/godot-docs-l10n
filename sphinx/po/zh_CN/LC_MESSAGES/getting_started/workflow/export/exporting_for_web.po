@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,18 +82,15 @@ msgid ""
 msgstr "不建议使用 WebGL 2 ，因为它预期会在不更换的情况下从 Godot 中删除。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:33
-#, fuzzy
 msgid ""
 "WebGL 2 is not supported in all browsers. **Firefox** and **Chromium** "
 "(Chrome, Opera) are the most popular supported browsers, **Safari** and "
 "**Edge** do not work. On **iOS**, all browsers are based on WebKit (i.e. "
 "Safari), so they will also not work."
 msgstr ""
-"HTML5导出允许将在Godot Engine中制作的游戏发布到浏览器。 这需要在用户的浏览器"
-"中支持最近的技术 `WebAssembly <https://webassembly.org/>`__ 和 `WebGL 2.0 "
-"<https://www.khronos.org/webgl/>`__ 。 ** Firefox ** 和 **Chromium** "
-"(Chrome，Opera)是最受欢迎的支持浏览器， **Safari** 和 **Edge** 尚不起作用。 "
-"在 **iOS** 上，所有浏览器必须基于WebKit(即Safari)，因此它们也不起作用。"
+"并非所有浏览器都支持WebGL 2。**Firefox**和**Chromium**（Chrome，Opera）是支持"
+"WebGL 2的广受欢迎的浏览器，而** Safari **和** Edge **无法正常工作。 在**iOS**"
+"系统上，所有浏览器都基于WebKit（即Safari），因此它们也无法正常工作。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
 msgid ""
@@ -143,7 +140,6 @@ msgid "Full screen and mouse capture"
 msgstr "全屏和鼠标捕获"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
-#, fuzzy
 msgid ""
 "Browsers do not allow arbitrarily **entering full screen**. The same goes "
 "for **capturing the cursor**. Instead, these actions have to occur as a "
@@ -152,9 +148,10 @@ msgid ""
 "``_unhandled_input``. Querying the :ref:`class_Input` singleton is not "
 "sufficient, the relevant input event must currently be active."
 msgstr ""
-"浏览器不允许任意 **随意进入全屏** 。 **捕获光标** 也是如此。 相反，这些操作必"
-"须作为对JavaScript输入事件的响应而发生。 在Godot中，通过在输入回调中输入全"
-"屏，例如 ``_input`` 或 ``_unhandled_input`` ，最容易做到这一点。"
+"浏览器不允许任意**进入全屏**。 **捕获光标**也是如此。 相反，这些操作必须作为"
+"对JavaScript输入事件的响应而发生。 在Godot中，这意味着从按下的输入事件回调中"
+"进入全屏，例如``_input``或``_unhandled_input``。 查询：参考：`类_输入`仅有单"
+"例是不够的，相关的输入事件当前必须是活动的。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:69
 msgid ""

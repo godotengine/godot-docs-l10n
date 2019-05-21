@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,11 +47,18 @@ msgstr ""
 "Blender, de modo que o \"bone transform\" exportado seja constante no "
 "Blender e na Godot"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:19
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:18
+msgid ""
+"It is important that the mesh is not deformed by bones when exporting in "
+"Blender. Make sure that the skeleton is reset to its T-pose or default rest "
+"pose."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:22
 msgid "Bone Weights"
 msgstr "Peso dos ossos"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:24
 #, fuzzy
 msgid ""
 "Blender put rigged mesh vertices which has no bone weights at its original "
@@ -65,11 +72,11 @@ msgstr ""
 "deformado. Portanto, o exportador mostraria um erro para qualquer vértice "
 "sem pesos ósseos detectados no modelo manipulado."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:27
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:30
 msgid "Non-Deform Bone"
 msgstr "Osso não-deformável"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:29
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:32
 #, fuzzy
 msgid ""
 "Note that the non-deform bone can be configured as not exported by enabling "
@@ -80,11 +87,11 @@ msgstr ""
 "habilitando o: code: `Exclude Control Bones`, a caixa de seleção deform bone "
 "é mostrada na figura."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:35
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:38
 msgid "Bone Attachment"
 msgstr "Ligação do osso"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:36
+#: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:39
 #, fuzzy
 msgid ""
 "A bone can be the parent of an object in Blender; this relation is exported "

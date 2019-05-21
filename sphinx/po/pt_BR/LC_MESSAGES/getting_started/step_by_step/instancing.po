@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,13 +164,12 @@ msgid "Editing instances"
 msgstr "Editando instâncias"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
-#, fuzzy
 msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
-"Abra a cena ``Bola`` e adicione uma ``PhysicsMaterial`` clicando na seta "
-"abaixo e selecionando \"Novo PhysicsMaterial\"."
+"Abra a cena ``Bola`` e adicione um ``PhysicsMaterial`` clicando na seta "
+"baixo e selecionando \"Novo PhysicsMaterial\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 #, fuzzy
@@ -182,22 +181,21 @@ msgstr ""
 "``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
-#, fuzzy
 msgid ""
 "Press \"Play\" and notice that all of the instanced balls are now much more "
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
-"Abra a cena ``Ball`` e altere a propriedade ``Bounce`` (quique) no Inspetor "
-"para `1`. Pressione \"Rodar\" e note que todas as instâncias de bola agora "
-"quicam muito mais. Já que as bolas são baseadas na cena salva, alterações "
-"nessa cena afetam todas as instâncias."
+"Pressione \"Rodar\" e note que todas as bolas instanciadas agora quicam "
+"muito mais. Já que as bolas são baseadas na cena salva, alterações nessa "
+"cena afetam todas as instâncias."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
+#, fuzzy
 msgid ""
-"You can also adjust individual instances. Set the bounce value back to "
-"``0.5`` and then in the ``Main`` scene, select one of the instanced balls. "
-"Set its ``Bounce`` to ``1`` and press \"Play\"."
+"You can also adjust individual instances. Set the bounce value back to ``0`` "
+"and then in the ``Main`` scene, select one of the instanced balls. Set its "
+"``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
 "Você também pode ajustar instâncias individualmente. Configure o valor de "
 "quique de volta para ``0.5`` e então, na cena ``Main``, selecione uma das "

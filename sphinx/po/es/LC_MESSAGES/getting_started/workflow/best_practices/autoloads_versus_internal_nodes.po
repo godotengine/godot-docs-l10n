@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:4
 msgid "Autoloads versus internal nodes"
-msgstr ""
+msgstr "Autoloads y nodos internos"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:6
 msgid ""
@@ -28,6 +28,10 @@ msgid ""
 "thrives by supporting ways to cut down the size of such objects. Instead it "
 "shifts content into individual nodes as much as possible."
 msgstr ""
+"Otros motores suelen incentivar el uso de crear clases \"manager\" para "
+"organizar las funcionalidades en una entidad accesible globalmente. Godot "
+"soporta modos que permiten reducir el tamaño y cantidad de dichos objetos. "
+"En su lugar divide el contenido en nodos individuales cuanto sea posible."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:11
 msgid ""
@@ -38,6 +42,13 @@ msgid ""
 "playing the sound, then the new sound interrupts the first sound, "
 "terminating it before it can play."
 msgstr ""
+"Por ejemplo, ¿qué puede hacer un desarrollador está creando un juego de "
+"plataformas y quiere que al recolectar monedas se reproduzca un efecto de "
+"sonido? Existe un nodo para hacer eso, :ref:`AudioStreamPlayer "
+"<class_AudioStreamPlayer>`. Pero notará durante las pryebas que si reproduce "
+"un \"AudioStreamPlayer\" mientras está ejecutando un sonido, el nuevo sonido "
+"interrumpirá el que se está reproduciendo, terminándolo antes de que se "
+"pueda reproducir."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:18
 msgid ""
@@ -48,6 +59,13 @@ msgid ""
 "access it from anywhere with `SFX.play(\"coin_pickup.ogg\")`. Little do they "
 "know, they've invited a great many complications into their code."
 msgstr ""
+"Los usuarios tienden a creer que la mejor solución es crear un sistema más "
+"práctico haciendo un nodo SoundManager (administrador de sonidos) en modo "
+"autoload. Este genera un pool de AudioStreamPlayers que administra cada "
+"requerimiento de un nuevo efecto de sonido. Entonces hacen de este "
+"SoundManager un autoload para que pueda accederse desde cualquier parte con "
+"como `SFX.play(\"coin_pickup.ogg\")`. Poco saben que han agregado mucha "
+"complejidad a su código."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:25
 msgid ""
@@ -55,38 +73,53 @@ msgid ""
 "SFX has errors or doesn't have an AudioStreamPlayer available, everything "
 "will break."
 msgstr ""
+"**estado global**: Un objeto es ahora responsable de todos los datos del "
+"objeto. Si SFX tiene errores o no tiene un AudioStreamPlayer disponible, "
+"todo se romperá."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:29
 msgid ""
 "**global access**: Now that any object can call `SFX.play(sound_path)` from "
 "anywhere, there's no longer an easy way to track where an SFX bug began."
 msgstr ""
+"**acceso global**: Ahora que cualquier objeto puede llamar a `SFX."
+"play(sound_path)` desde cualquier parte, no habrá un modo sencillo de "
+"rastrear un error relacionado al SFX."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:33
 msgid ""
 "**global resource allocation**: If all objects' data and processing is "
 "centralized from the start, then one must either..."
 msgstr ""
+"**asignación global de recursos**: Si todos los datos de un objeto y su "
+"procesamiento es centralizado desde el principio, entonces uno debe..."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:36
 msgid "risk under-allocating resources which might lead to faulty behavior."
 msgstr ""
+"arriesgarse a sub-asignar recursos que podrían provocar un comportamiento "
+"erróneo."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:38
 msgid ""
 "Ex: Have too few AudioStreamPlayers in the object pool. Sound doesn't play "
 "or it interrupts another sound."
 msgstr ""
+"Ej: Tener muy pocos AudioStreamPlayers en el grupo de objetos. El sonido no "
+"se reproduce o interrumpe otro sonido."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:41
 msgid "over-allocate resources and use more memory/processing than it needs."
 msgstr ""
+"sobre-asignar recursos y usar más memoria/procesamiento de lo necesario."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:43
 msgid ""
 "Ex: Have an arbitrarily large number of AudioStreamPlayers, with many of "
 "them idling away and not doing anything."
 msgstr ""
+"Ej: Tener un número arbitrariamente grande de AudioStreamPlayers, muchos de "
+"ellos inactivos y sin hacer nada."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:46
 msgid ""
@@ -95,18 +128,27 @@ msgid ""
 "though; it is now coupled to each object, just as a child node would have "
 "been. One has added an unnecessary middleman to the equation."
 msgstr ""
+"Cada objeto que necesita un AudioStreamPlayer registra exactamente cuántos "
+"necesita y para qué sonidos. Esto anula el propósito de usar un tercero; "
+"ahora está acoplado a cada objeto, tal como lo estaría un nodo hijo. Uno ha "
+"añadido un intermediario innecesario a la ecuación."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:52
 msgid ""
 "Contrast this with each scene keeping as many AudioStreamPlayer nodes as it "
 "needs within itself and all these problems go away."
 msgstr ""
+"Contrasta esto con cada escena manteniendo tantos nodos de AudioStreamPlayer "
+"como sean necesarios dentro de sí mismo y todos estos problemas "
+"desaparecerán."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:55
 msgid ""
 "Each scene manages its own state information. If there is a problem with the "
 "data, it will only cause issues in that one scene."
 msgstr ""
+"Cada escena gestiona su propia información de estado. Si hay un problema con "
+"los datos, únicamente causará problemas en esa escena."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:58
 msgid ""
@@ -115,18 +157,28 @@ msgid ""
 "in the code it's making the problematic call (locate where the code "
 "references the given node) is going to be much easier."
 msgstr ""
+"Cada escena accede sólo a sus propios nodos. Ahora, si hay un error, "
+"rastrear qué nodo es el responsable (probablemente el nodo raíz de la "
+"escena), y en qué parte del código está haciendo la llamada problemática "
+"(localizar dónde el código hace referencia al nodo en cuestión) va a ser "
+"mucho más fácil."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:63
 msgid ""
 "Each scene knows exactly how many resources it needs for the task it "
 "performs. No waste of memory or processing due to a lack of information."
 msgstr ""
+"Cada escena sabe exactamente cuántos recursos necesita para la tarea que "
+"realiza. No hay pérdida de memoria o procesamiento por falta de información."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:66
 msgid ""
 "The typical justifications for the Autoload include, \"I have common Xs that "
 "involve many nodes across many scenes, and I want each scene to have X.\""
 msgstr ""
+"Las justificaciones típicas para el Autoload incluyen, \"Tengo X's comunes "
+"que involucran muchos nodos a través de muchas escenas, y quiero que cada "
+"escena tenga X.\""
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:69
 msgid ""
@@ -134,6 +186,9 @@ msgid ""
 "<class_Node>` that deals with providing that feature for an individual scene "
 "or node subtree."
 msgstr ""
+"Si X es una función, entonces la solución es crear un nuevo tipo de :ref:"
+"`Nodo <class_Node>` que se ocupe de proporcionar esa característica para una "
+"escena individual o subárbol de un nodo."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:73
 msgid ""
@@ -142,10 +197,14 @@ msgid ""
 "object to which each node has access (nodes within a scene can use "
 "`get_owner()` to fetch the scene root for example)."
 msgstr ""
+"Si X es dato, entonces la solución es, 1) crear un nuevo tipo de :ref:"
+"`Resource <class_Resource>` para compartir datos, o 2) guardar los datos en "
+"un objeto al cual cada nodo tenga acceso (nodos dentro de una escena pueden "
+"utilizar `get_owner()` para obtener la raíz de su escena)."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:78
 msgid "So when *should* one use an autoload?"
-msgstr ""
+msgstr "Entonces, ¿cuándo *debería* utilizarse un autoload?"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:80
 msgid ""
@@ -157,6 +216,13 @@ msgid ""
 "class within a scene, then it will function in place of a formal singleton "
 "API."
 msgstr ""
+"**Datos estáticos**: si necesitas datos estáticos, por ejemplo, datos que "
+"deben ser asociados a una clase (así hay sólo una única copia de los datos), "
+"entonces los autoloads son una buena oportunidad para eso. Los datos "
+"estáticos no existen en la API de scripting de Godot, así que los autoload "
+"singletons son lo mejor disponible. Si uno crea una clase como autoload y "
+"nunca crea otra copia de esa clase dentro de una escena, entonces esta "
+"funcionará en como un singleton."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:88
 msgid ""
@@ -167,6 +233,12 @@ msgid ""
 "to load and create constants to access other Script or PackedScene "
 "resources, resulting in something like ``MyAutoload.MyNode.new()``."
 msgstr ""
+"**Convenience**: los nodos en modo autoload tienen una variable global "
+"generada para GDScript. Esto puede ser conveniente para definir objetos que "
+"deben existir siempre pero que necesitan información de instancia de objeto. "
+"La alternativa es crear un script de espacio de nombres, un script cuyo "
+"único propósito es cargar y crear constantes para acceder a otros recursos "
+"Script o PackedScene, resultando en algo como ``MyAutoload.MyNode.new()``."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:95
 msgid ""
@@ -175,6 +247,11 @@ msgid ""
 "name from GDScript. Using an autoload to get to a namespace script becomes "
 "unnecessary, e.g. ``MyScriptClass.MyPreloadedScript.new()``."
 msgstr ""
+"Nota que la introducción de classes de script en Godot 3.1 cuestiona la "
+"validez de esta lógica. Con ellas, se pueden acceder scripts usando un "
+"nombre explícito desde GDScript. Usando un autoload para crear un espacio de "
+"nombres se vuelve innecesario, por ejemplo: ``MyScriptClass."
+"MyPreloadedScript.new()``."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:100
 msgid ""
@@ -183,3 +260,8 @@ msgid ""
 "handles a broad-scoped task. For example a targeting system, quest system, "
 "or dialogue system would be great use cases of singleton implementations."
 msgstr ""
+"Si el singleton mantiene su propia información y no invade los datos de "
+"otros objetos, entonces es un buen modo de crear una clase \"system\" que "
+"maneje tareas de ámbito amplio. Por ejemplo, un sistema de rastreo de "
+"blancos, de misiones o diálogo, pueden ser casos de uso de implementación de "
+"singletons."

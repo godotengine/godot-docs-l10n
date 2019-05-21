@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,9 +96,8 @@ msgid ""
 msgstr "GDScript가 전역 변수를 지원하지 않기 때문에 싱글톤처럼 행동합니다"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
-#, fuzzy
 msgid "Autoloading nodes and scripts can give us these characteristics."
-msgstr "노드와 스크립트 오토로드는 이러한 필요를 충족시킵니다."
+msgstr "노드와 스크립트를 Autoload하는 것은 위와 같은 기능을 제공합니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
@@ -132,8 +131,8 @@ msgid ""
 "manipulated using the up/down arrow keys."
 msgstr ""
 "여기서 원하는 씬이나 스크립트를 추가하실 수 있습니다. 목록에서 각 항목에는 노"
-"드의 ``name`` 속성으로 지정하는 이름이 필요합니다. 글로벌 씬 트리에 추가된 항"
-"목의 순서는 위/아래 방향키를 사용해 조작할 수 있습니다."
+"드의 ``name`` 속성으로 지정하는 이름이 필요합니다. 전역 씬 트리에 추가된 항목"
+"의 순서는 위/아래 방향키를 사용해 조작할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid ""
@@ -257,6 +256,9 @@ msgid ""
 "completed. Thus, the current scene will not be removed while it is still "
 "being used (i.e. its code is still running)."
 msgstr ""
+":ref:`Object.call_deferred() <class_Object_method_call_deferred>` 를 사용한다"
+"면 두 번째 기능은 현재 씬의 코드가 모두 종료되었을 때 실행된다. 따라서, 현재 "
+"씬은 그것이 사용되고 있을 때 까지 제거되지 않을 것이다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 msgid ""
@@ -268,11 +270,10 @@ msgid "and"
 msgstr "그리고"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
-#, fuzzy
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button."
-msgstr "프로젝트를 실행하고 버튼을 눌러 씬이 전환되는 지를 확인하세요!"
+msgstr "프로젝트를 실행하고 버튼을 누를 때 씬이 바뀌는지 확인해보세요."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
 msgid ""

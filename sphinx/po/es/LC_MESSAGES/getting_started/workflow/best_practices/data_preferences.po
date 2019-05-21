@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,9 @@ msgid ""
 "Ever wondered whether one should approach problem X with data structure Y or "
 "Z? This article covers a variety of topics related to these dilemmas."
 msgstr ""
+"¿Alguna vez te has preguntado si se debería abordar el problema X con la "
+"estructura de datos Y o Z? Este artículo cubre una variedad de temas "
+"relacionados con estos dilemas."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:11
 msgid ""
@@ -33,34 +36,41 @@ msgid ""
 "terminology comes from algorithm analysis' `Big O Notation <https://rob-bell."
 "net/2009/06/a-beginners-guide-to-big-o-notation/>`_."
 msgstr ""
+"Este artículo hace referencia a las operaciones de \"tiempo-[algo]\". Esta "
+"terminología proviene del análisis de algoritmos ' `Big O Notation <https://"
+"rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/>`_."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:15
 msgid ""
 "Long-story short, it describes the worst-case scenario of runtime length. In "
 "laymen's terms:"
 msgstr ""
+"En resumen, describe el peor de los casos de duración del tiempo de "
+"ejecución. En términos simples:"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:18
 msgid ""
 "\"As the size of a problem domain increases, the runtime length of the "
 "algorithm...\""
 msgstr ""
+"\"A medida que aumenta el tamaño de un dominio problemático, la duración del "
+"tiempo de ejecución del algoritmo...\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:21
 msgid "Constant-time, ``O(1)``: \"...does not increase.\""
-msgstr ""
+msgstr "Tiempo-constante, ``O(1)``: \"...no aumenta.\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:22
 msgid "Logarithmic-time, ``O(log n)``: \"...increases at a slow rate.\""
-msgstr ""
+msgstr "Tiempo-logarítmico, ``O(log n)``: \"...aumenta a un ritmo lento.\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:23
 msgid "Linear-time, ``O(n)``: \"...increases at the same rate.\""
-msgstr ""
+msgstr "Tiempo-lineal, ``O(n)``: \"...aumenta a la misma frecuencia.\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:24
 msgid "Etc."
-msgstr ""
+msgstr "Etc."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:26
 msgid ""
@@ -70,6 +80,11 @@ msgid ""
 "time allotted. In comparison, using a constant-time algorithm could handle "
 "the operation without issue."
 msgstr ""
+"Imagínate si tuvieras que procesar 3 millones de puntos de datos en un solo "
+"fotograma. Sería imposible crear esta característica con un algoritmo de "
+"tiempo-lineal, ya que el gran tamaño de los datos aumentaría el tiempo de "
+"ejecución mucho más allá del tiempo asignado. En cambio, un algoritmo de "
+"tiempo-constante podría realizar la operación sin problemas."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:32
 msgid ""
@@ -80,10 +95,16 @@ msgid ""
 "algorithm / data structure for the job is part of what makes programmers' "
 "skills valuable."
 msgstr ""
+"En general, los desarrolladores quieren evitar participar en operaciones de "
+"tiempo lineal tanto como sea posible. Pero, si uno mantiene la escala de una "
+"operación de tiempo lineal reducida, y no es necesario realizar la operación "
+"con frecuencia, entonces podría ser aceptable. Equilibrar estos requisitos y "
+"elegir el algoritmo y la estructura de datos adecuados para el trabajo es "
+"parte de lo que hace que las habilidades de los programadores sean valiosas."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:40
 msgid "Array vs. Dictionary vs. Object"
-msgstr ""
+msgstr "Array vs. Diccionario vs. Objeto"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:42
 msgid ""
@@ -93,6 +114,11 @@ msgid ""
 "<class_Array>` and :ref:`Dictionary <class_Dictionary>` as well as :ref:"
 "`Object <class_Object>` s."
 msgstr ""
+"Godot almacena todas las variables del API de scripting en la clase `Variant "
+"<https://docs.godotengine.org/en/latest/development/cpp/variant_class."
+"html>`_ . Las Variants pueden guardar estructuras de datos compatible con "
+"Variant como :ref:`Array <class_Array>` y :ref:`Dictionary "
+"<class_Dictionary>` y también :ref:`Object <class_Object>`."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:48
 msgid ""
@@ -100,6 +126,9 @@ msgid ""
 "contents in a contiguous section of memory, i.e. they are in a row adjacent "
 "to each other."
 msgstr ""
+"Godot implementa Arrays como ``Vector<Variant>``. El motor almacena el "
+"contenido del Array en secciones contínuas de memoria, es decir, están "
+"adyacentes uno con el otro en fila."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:53
 msgid ""
@@ -109,6 +138,11 @@ msgid ""
 "for example, a :ref:`PoolStringArray <class_PoolStringArray>` would be "
 "something like a ``Vector<String>``."
 msgstr ""
+"Para los que no están familiarizados con C++, Vector e el nombre del objeto "
+"de arreglo tradicional en librerías C++. Es un tipo \"templated\", quiere "
+"decir que sus registros pueden contener sólo un tipo particuar (denotado por "
+"símbolos mayor y menor). Por ejemplo, un :ref:`PoolStringArray "
+"<class_PoolStringArray>` sería algo como ``Vector<String>``."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:60
 msgid "Contiguous memory stores imply the following operation performance:"

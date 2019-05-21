@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -263,28 +263,37 @@ msgid ""
 "scenes in unforeseen ways, then things break down. A change to one class "
 "could result in damaging effects to other classes."
 msgstr ""
+"¿Entonces, por qué todo esto funciona? Porque las escenas operan mejor "
+"cuando trabajan solas. Si no son capaces de funcionar solas al menos "
+"deberían intentar trabajar con otras de manera anónima (con mínimas "
+"dependencias, bajo acoplamiento). Si los inevitables cambios hechos a una "
+"clase resultan que interactúen con otras escenas en modos no previstos, "
+"entonces las cosas se romperán. Un cambio a una clase puede resultar en "
+"efectos dañinos a otras clases."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:242
 msgid ""
 "Scripts and scenes, as extensions of engine classes should abide by *all* "
 "OOP principles. Examples include..."
 msgstr ""
+"Tanto scripts y escenas, como clases de extensión del motor, deben apegarse "
+"a *todos* los principios POO. Ejemplos incluyen..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:245
 msgid "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
-msgstr ""
+msgstr "`SOLID <https://es.wikipedia.org/wiki/SOLID>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:246
 msgid "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
-msgstr ""
+msgstr "`DRY <https://es.wikipedia.org/wiki/No_te_repitas>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:247
 msgid "`KISS <https://en.wikipedia.org/wiki/KISS_principle>`_"
-msgstr ""
+msgstr "`KISS <https://es.wikipedia.org/wiki/Principio_KISS>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:248
 msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
-msgstr ""
+msgstr "`YAGNI <https://es.wikipedia.org/wiki/YAGNI>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:251
 msgid "Choosing a node tree structure"
@@ -299,6 +308,12 @@ msgid ""
 "But, for those who are unsure, this helpful guide can give them a sample of "
 "a decent structure to start with."
 msgstr ""
+"Un desarrollador comienza a trabajar en un juego, sólo para detenerse frente "
+"a las vastas posibilidades que se le presentan. Tal vez sepa qué quiere "
+"hacer, qué sistemas se usarán, ¿pero dónde ponerlos a todos?. Bueno, el modo "
+"en que alguien hace los juegos es asunto propio. Uno puede construir árboles "
+"de nodos de muchos modos. Pero para esos que no están seguros, esta guía "
+"puede darles un ejemplo de una estructura decente con la cual comenzar."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:260
 msgid ""
@@ -309,17 +324,24 @@ msgid ""
 "applications, this would be the \"main\" function. In this case, it would be "
 "a Main node."
 msgstr ""
+"Un juego debe tener siempre un \"punto de entrada\", en alguna parte el "
+"desarrollador puede saber definitivamente dónde comienzan las cosas, así se "
+"puede seguir la lógica mientras contiúa en alguna otra parte. Este lugar "
+"también sirve punto de vista panorámico del resto de los datos y lógica del "
+"programa. Para aplicaciones tradicionales, esto sería la función \"main\". "
+"En este caso, podría ser el nodo Main."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:266
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:277
 msgid "Node \"Main\" (main.gd)"
-msgstr ""
+msgstr "Nodo \"Main\" (main.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:268
 msgid ""
 "The ``main.gd`` script would then serve as the primary controller of one's "
 "game."
 msgstr ""
+"El script ``main.gd`` debería servir como controlador primario del juego."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:271
 msgid ""
@@ -327,14 +349,17 @@ msgid ""
 "child of Main. In addition, one will need a primary GUI for their game that "
 "manages the various menus and widgets the project needs."
 msgstr ""
+"Luego, uno tiene el \"Mundo\" (2D o 3D) del juego. Esto puede ser un hijo de "
+"Main. Adicionalmente, se puede necesitar una GUI primaria para el juego, que "
+"maneje los menues y widgets que necesita el proyecto."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:276
 msgid "Node2D/Spatial \"World\" (game_world.gd)"
-msgstr ""
+msgstr "Node2D/Spatial \"World\" (game_world.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:277
 msgid "Control \"GUI\" (gui.gd)"
-msgstr ""
+msgstr "Control \"GUI\" (gui.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:279
 msgid ""
@@ -342,30 +367,38 @@ msgid ""
 "node. :ref:`Changing scenes manually <doc_change_scenes_manually>` gives "
 "users full control over how their game world transitions."
 msgstr ""
+"Cuando se cambian los niveles, entonces se pueden intercambiar los hijos del "
+"nodo \"World\". :ref:`Cambiar escenas manualmente "
+"<doc_change_scenes_manually>` le da al usuario un mayor control sobre cómo "
+"suceden las transiciones del juego."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:283
 msgid ""
 "The next step is to consider what gameplay systems one's project requires. "
 "If one has a system that..."
 msgstr ""
+"El siguiente paso es considerar qué sistemas de juego se requieren. Si uno "
+"tiene un sistema que..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:286
 msgid "tracks all of its data internally"
-msgstr ""
+msgstr "monitorea todos los datos internamente"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:287
 msgid "should be globally accessible"
-msgstr ""
+msgstr "debería ser accesible globalmente"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:288
 msgid "should exist in isolation"
-msgstr ""
+msgstr "debería existir de manera aislada"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:290
 msgid ""
 "... then one should create an :ref:`autoload 'singleton' node "
 "<doc_singletons_autoload>`."
 msgstr ""
+"... entonces se puede crear un nodo :ref:`autoload 'singleton' "
+"<doc_singletons_autoload>`."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:294
 msgid ""
@@ -375,6 +408,11 @@ msgid ""
 "content. This structure more or less keeps the \"World\" as the main game "
 "node."
 msgstr ""
+"Para juegos pequeños, una alternativa simple con menor control podría ser "
+"tener un singleton \"Game\" que simplemente llame al método :ref:`SceneTree."
+"change_scene() <class_SceneTree_method_change_scene>` para intercambiar el "
+"contenido de la escena principal. Esta estructura mantiene a \"World\" como "
+"un nodo principal del juego."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:300
 msgid ""
@@ -382,6 +420,9 @@ msgid ""
 "\", or be manually added as a direct child of the root. Otherwise, the GUI "
 "nodes would also delete themselves during scene transitions."
 msgstr ""
+"Un GUI puede necesitar también un singleton, sean partes transitorias de "
+"\"World\", o agregadas manualmente como hijas del raíz. De otro modo, los "
+"nodos GUI pueden también borrarse a si mismos durante escenas de transición."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:305
 msgid ""
@@ -390,6 +431,10 @@ msgid ""
 "on the reasons, please see the :ref:`'Autoloads vs. Internal Nodes' "
 "<doc_autoloads_versus_internal_nodes>` documentation."
 msgstr ""
+"Si uno de los sistemas modifica datos de otro sistema, se los pueden definir "
+"en sus propios scripts en lugar de autoloads. Para más información sobre "
+"estas razones, por favor lee la documentación en  :ref:`'Autoloads vs. Nodos "
+"Internos' <doc_autoloads_versus_internal_nodes>`."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:311
 msgid ""
@@ -400,6 +445,12 @@ msgid ""
 "should have its own place in the hierarchy as a sibling or some other "
 "relation."
 msgstr ""
+"Cada subsistema dentro de tu juego debería tener su propia sección en el "
+"Árbol de Escenas. Uno debe usar la relación  padre-hijo sólo en casos donde "
+"los nodos son efectivamente elementos de sus padres. ¿Remover un padre "
+"quiere decir también remover los hijos? Si la respuesta es no, entonces "
+"estos deben tener su propio lugar en la jerarquía como hermanos o alguna "
+"otra relación."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:319
 msgid ""
@@ -411,17 +462,26 @@ msgid ""
 "node. To assign the ``target`` :ref:`NodePath <class_NodePath>`, use one of "
 "the following:"
 msgstr ""
+"En algunos casos, es necesario que esos nodos separados se posicionen de "
+"manera relativa entre sí. Para este propósito se pueden utilizar los nodos :"
+"ref:`RemoteTransform <class_RemoteTransform>` o :ref:`RemoteTransform2D "
+"<class_RemoteTransform2D>`. Estos permiten que a un nodo target (objetivo) "
+"se le apliquen elementos del Transform del nodo remoto. Para asignar el "
+"``target`` :ref:`NodePath <class_NodePath>`, usa uno de los siguientes:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:327
 msgid ""
 "A reliable third party, likely a parent node, to mediate the assignment."
 msgstr ""
+"Un nodo externo confiable, como un nodo padre, para mediar en la asignación."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:328
 msgid ""
 "A group, to easily pull a reference to the desired node (assuming there will "
 "only ever be one of the targets)."
 msgstr ""
+"Un grupo, para tomar fácilmente una referencia al nodo deseado (asumiendo "
+"que siempre será uno de los objetivos)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:331
 msgid ""
@@ -429,45 +489,51 @@ msgid ""
 "when one must micro-manage when a node must move around the SceneTree to "
 "preserve itself. For example..."
 msgstr ""
+"¿Cuándo debería hacer esto? Bueno, eso depende de de tí decidirlo. El dilema "
+"surge cuando se debe realizar un control fino si un nodo debe moverse en el "
+"árbol de escenas para preservarse. Por ejemplo..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:335
 msgid "Add a \"player\" node to a \"room\"."
-msgstr ""
+msgstr "Agregar un nodo \"jugador\" a un \"escenario\"."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:336
 msgid "Need to change rooms, so one must delete the current room."
-msgstr ""
+msgstr "Se necesitan cambiar escenarios, entonces se debe eliminar el actual."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:337
 msgid ""
 "Before the room can be deleted, one must preserve and/or move the player."
 msgstr ""
+"Antes de que el escenario sea borrado, hay que preservar o mover al jugador."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:339
 msgid "Is memory a concern?"
-msgstr ""
+msgstr "¿Importa la memoria?"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:341
 msgid ""
 "If not, one can just create the two rooms, move the player and delete the "
 "old one. No problem."
 msgstr ""
+"Si no importa, se pueden crear dos escenarios, mover al jugador y borrar el "
+"escenario viejo. No hay problema."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:344
 msgid "If so, one will need to..."
-msgstr ""
+msgstr "Si importa, habrá que..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:346
 msgid "Move the player somewhere else in the tree."
-msgstr ""
+msgstr "Mover el jugador a algún lugar en el árbol de escenas."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:347
 msgid "Delete the room."
-msgstr ""
+msgstr "Borrar el escenario."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:348
 msgid "Instantiate and add the new room."
-msgstr ""
+msgstr "Instanciar el escenario nuevo."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:349
 msgid "Re-add the player."
@@ -482,32 +548,48 @@ msgid ""
 "is dangerous. It's a maintenance burden, strains code readability, and "
 "bloats the intellectual content of a project unnecessarily."
 msgstr ""
+"El problema es que en este caso, el jugador es un \"caso especial\", uno "
+"donde los desarrolladores deben *saber* que habrá que utilizar de este modo "
+"al jugador en el proyecto. El único modo de compartir información de manera "
+"confiable en el equipo, es *documentarla*. Aunque mantener detalles de "
+"implementación en la documentación es peligroso. Es una carga extra de "
+"mantenimiento, afecta la facilidad de lectura del código y engorda el "
+"contenido intelectual del proyecto de manera innecesaria."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:358
 msgid ""
 "In a more complex game with larger assets, it can be a better idea to simply "
 "keep the player somewhere else in the SceneTree entirely. This involves..."
 msgstr ""
+"En un juego más complejo, con recursos más grandes, puede ser mejor "
+"simplemente dejar al jugador en alguna otra parte del árbol de escenas. Esto "
+"implica..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:361
 msgid "More consistency."
-msgstr ""
+msgstr "Mayor consistencia."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid "No \"special cases\" that must be documented and maintained somewhere."
 msgstr ""
+"No hay \"casos especiales\" que deban ser documentados y mantenidos en algún "
+"lugar."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:363
 msgid ""
 "No opportunity for errors to occur because these details are not accounted "
 "for."
 msgstr ""
+"No hay oportunidad de que sucedan esos errores porque algún detalle no se "
+"tuvo en cuenta."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:366
 msgid ""
 "In contrast, if one ever needs to have a child node that does *not* inherit "
 "the transform of their parent, one has the following options:"
 msgstr ""
+"En contraste, si se necesita que un hijo *no* herede el transform del padre, "
+"están las siguientes opciones:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:369
 msgid ""
@@ -515,6 +597,8 @@ msgid ""
 "them. As nodes with no transform, Nodes will not pass along such information "
 "to their children."
 msgstr ""
+"La solución **declarativa**: coloca un :ref:`Node <class_Node>` entre ellos. "
+"Como los Node no tienen transform, no pasarán esa información a sus hijos."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:372
 msgid ""
@@ -523,6 +607,10 @@ msgid ""
 "<class_Spatial_method_set_as_toplevel>` node. This will make the node ignore "
 "its inherited transform."
 msgstr ""
+"La solución **imperativa**: Usar ``set_as_toplevel`` para el nodo :ref:"
+"`CanvasItem <class_CanvasItem_method_set_as_toplevel>` o :ref:`Spatial "
+"<class_Spatial_method_set_as_toplevel>`. Esto hará que el nodo ignore el "
+"transform heredado."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:379
 msgid ""
@@ -533,6 +621,13 @@ msgid ""
 "keeping these in a separate branch from the \"world\" can help simplify the "
 "management of game connections and the like."
 msgstr ""
+"Si estás creando un juego en red, ten en mente qué nodos y sistemas de juego "
+"serán relevantes para todos los jugadores y cuáles sólo serán pertinentes "
+"para el servidor autoritativo. Por ejemplo, no todos los usuarios necesitan "
+"tener una copia de la lógica de cada \"controlador de jugador\". En cambio, "
+"sí necesitan el propio. De este modo, mantenerlos en una rama separada del "
+"\"mundo\" puede simplificar la administración de las conexiones del juego "
+"entre otras cosas."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:386
 msgid ""
@@ -542,6 +637,12 @@ msgid ""
 "else. If so, then it stands to reason they should be children of that parent "
 "(and likely part of that parent's scene if they aren't already)."
 msgstr ""
+"La clave para la organización de las escenas es considerar al Arbol de "
+"Escenas en términos relacionales en lugar de términos especiales. ¿Deben los "
+"nodos depender de la existencia de su nodo padre? Si no, entonces pueden "
+"arreglárselas solos en alguna otra parte. Caso contrario, deben ser hijos de "
+"ese padre (y probablemente deberían ser parte de la escena del padre si no "
+"lo son actualmente)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:392
 msgid ""
@@ -550,3 +651,7 @@ msgid ""
 "one still has the flexibility to move nodes around, it is still best when "
 "such moves are unnecessary by default."
 msgstr ""
+"¿Quiere decir esto que los nodos son componentes? Para nada, los árboles de "
+"nodos de Godot forman una relación de agregación, no una de composición. Y "
+"aunque exista la flexibilidad de mover nodos por el árbol, es mejor cuando "
+"esas acciones no son necesarias."

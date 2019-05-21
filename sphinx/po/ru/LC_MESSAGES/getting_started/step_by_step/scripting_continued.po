@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,23 +54,27 @@ msgstr ""
 "<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
-msgid ""
-"This method will be called every time a frame is drawn, so it's fully "
-"dependent on how many frames per second (FPS) the application is running at:"
+msgid "This method will be called every time a frame is drawn:"
 msgstr ""
-"Этот метод будет вызываться каждый раз при отрисовке кадра, поэтому он "
-"полностью зависит от количества кадров в секунду (FPS), при котором работает "
-"приложение:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:37
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
-"The delta parameter contains the time elapsed in seconds, as a floating "
-"point, since the previous call to ``_process()``."
+"It's important to bear in mind that the frequecy with which ``_process()`` "
+"will be called depends on how many frames per second (FPS) your application "
+"is running at. This rate can vary over time and devices."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+#, fuzzy
+msgid ""
+"To help manage this variability the ``delta`` parameter contains the time "
+"elapsed in seconds, as a floating point, since the previous call to "
+"``_process()``."
 msgstr ""
 "Параметр delta содержит время (в виде числа с плавающей запятой), прошедшее "
 "в секундах после предыдущего вызова функции ``_process()``."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
@@ -78,7 +82,7 @@ msgstr ""
 "Этот параметр можно использовать для того, чтобы различные операции всегда "
 "занимали одинаковое количество времени, независимо от FPS игры."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
@@ -86,7 +90,7 @@ msgstr ""
 "Например, перемещение часто умножается на дельту времени, чтобы скорость "
 "движения была постоянной и не зависела от частоты кадров."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""
 "Physics processing with ``_physics_process()`` is similar, but it should be "
 "used for processes that must happen before each physics step, such as "
@@ -102,7 +106,7 @@ msgstr ""
 "секунду по умолчанию. Вы можете изменить интервал в настройках проекта, в "
 "разделе Физика -> Общие -> Физическая Fps."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:52
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
 "The function ``_process()``, however, is not synced with physics. Its frame "
 "rate is not constant and is dependent on hardware and game optimization. Its "
@@ -112,43 +116,44 @@ msgstr ""
 "кадров не является постоянной и зависит от аппаратной и игровой оптимизации. "
 "В однопоточных играх ее выполнение осуществляется после этапа физики."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
+#, fuzzy
 msgid ""
-"A simple way to test this is to create a scene with a single Label node, "
-"with the following script:"
+"A simple way to see the ``_process()`` function at work is to create a scene "
+"with a single Label node, with the following script:"
 msgstr ""
 "Простой способ проверить это - создать сцену с одним узлом Label со "
 "следующим скриптом:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:82
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
 msgstr ""
 "Он будет показывать счетчик, который будет увеличиваться на каждом кадре."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
 msgstr "Группы"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:87
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
+#, fuzzy
 msgid ""
-"Nodes can be added to groups, as many as desired per node, and is a useful "
-"feature for organizing large scenes. There are two ways to do this. The "
-"first is from the UI, from the Groups button under the Node panel:"
+"Groups in Godot work like tags you might have come across in other software. "
+"A node can be added to as many groups as desired. This is a useful feature "
+"for organizing large scenes. There are two ways to do add nodes to groups. "
+"The first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
 "Узлы могут быть объединены в группы, по сколько угодно узлов, которые "
 "являются полезной особенностью для организации больших сцен. Есть два "
 "способа сделать это. Первый - из пользовательского интерфейса, с помощью "
 "кнопки \"Группы\" под панелью \"Узел\":"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
-"And the second way is from code. One example would be to tag nodes which are "
-"enemies:"
+"And the second way is from code. The following script would add the current "
+"node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
-"И второй способ - из кода. Одним из примеров это пометка сцен, которые "
-"являются врагами:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
@@ -158,7 +163,7 @@ msgstr ""
 "могут быть уведомлены об этом звуковым сигналом тревоги с помощью функции :"
 "ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
@@ -166,7 +171,7 @@ msgstr ""
 "Вышеупомянутый код вызывает функцию ``player_was_discovered`` для каждого "
 "члена группы ``enemies``."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() "
@@ -175,13 +180,14 @@ msgstr ""
 "Также можно получить полный список узлов ``enemies``, вызвав функцию :ref:"
 "`SceneTree.get_nodes_in_group() <class_SceneTree_method_get_nodes_in_group>`:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
+#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
 "allows you to easily switch scenes or reload them, to quit the game or pause "
 "and unpause it. It even comes with interesting signals. So check it out if "
-"you got some time!"
+"you have some time!"
 msgstr ""
 "Класс :ref:`SceneTree <class_SceneTree>` предоставляет множество полезных "
 "методов, таких как взаимодействие со сценами, иерархия узлов и групп узлов. "
@@ -189,11 +195,11 @@ msgstr ""
 "игры или делать паузу и продолжать далее. У него также есть интересные "
 "сигналы. Поэтому ознакомьтесь с ним, когда будет время!"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:151
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 msgid "Notifications"
 msgstr "Уведомления"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:158
 msgid ""
 "Godot has a system of notifications. These are usually not needed for "
 "scripting, as it's too low-level and virtual functions are provided for most "
@@ -207,7 +213,7 @@ msgstr ""
 "ref:`Object._notification() <class_Object_method__notification>` в вашем "
 "сценарии:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:188
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid ""
 "The documentation of each class in the :ref:`Class Reference <toc-class-"
 "ref>` shows the notifications it can receive. However, in most cases "
@@ -217,11 +223,11 @@ msgstr ""
 "описаны уведомления, которые он может получить. Однако в большинстве случаев "
 "GDScript предоставляет более простые переопределяемые функции."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
 msgid "Overrideable functions"
 msgstr "Переопределяемые функции"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:195
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
 msgid ""
 "Such overrideable functions, which are described as follows, can be applied "
 "to nodes:"
@@ -229,7 +235,7 @@ msgstr ""
 "Такие переопределяемые функции, которые описываются ниже, могут быть "
 "применены к узлам:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:267
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
@@ -237,11 +243,11 @@ msgstr ""
 "Как упоминалось ранее, лучше использовать эти функции вместо системы "
 "уведомлений."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:271
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
 msgid "Creating nodes"
 msgstr "Создание узлов"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:273
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:278
 msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
@@ -249,16 +255,17 @@ msgstr ""
 "Чтобы создать узел из кода вызовите метод ``.new()`` как и для любого "
 "другого типа данных на основе классов. Например:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:297
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
 msgstr ""
 "Для удаления узла, будь он внутри или снаружи сцены, необходимо использовать "
 "метод ``free()``:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:313
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
+#, fuzzy
 msgid ""
-"When a node is freed, it also frees all its children nodes. Because of this, "
+"When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
@@ -266,7 +273,7 @@ msgstr ""
 "этого удаление узлов вручную намного проще, чем кажется. Освободите базовый "
 "узел, и все остальное в поддереве исчезнет вместе с ним."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:317
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
 "A situation might occur where we want to delete a node that is currently "
 "\"blocked\", because it is emitting a signal or calling a function. This "
@@ -278,7 +285,7 @@ msgstr ""
 "приведет к сбою игры. Запуск Godot с отладчиком будет отлавливать такие "
 "ситуации и предупреждать вас об этом."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
@@ -287,11 +294,11 @@ msgstr ""
 "queue_free() <class_Node_method_queue_free>`. Это безопасно удаляет узел во "
 "время его бездействия."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:340
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
 msgid "Instancing scenes"
 msgstr "Инстанцирование сцен"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:342
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:347
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
@@ -299,7 +306,7 @@ msgstr ""
 "Инстанцирование сцены из кода выполняется в два этапа. Первый - загрузить "
 "сцену с жесткого диска:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:360
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
@@ -307,7 +314,7 @@ msgstr ""
 "Предварительная загрузка может быть более удобной, т.к. происходит во время "
 "парсинга (только для GDScript):"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
@@ -321,7 +328,7 @@ msgstr ""
 "<class_PackedScene_method_instance>`. Это вернет дерево узлов, которое можно "
 "добавить в активную сцену:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid ""
 "The advantage of this two-step process is that a packed scene may be kept "
 "loaded and ready to use so that you can create as many instances as desired. "
@@ -333,11 +340,11 @@ msgstr ""
 "создать сколько угодно экземпляров. Это особенно полезно для быстрого "
 "инстанцирования нескольких врагов, пуль и других объектов в активной сцене."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:389
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
 msgstr "Регистрация сценариев в качестве классов"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:391
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
 msgid ""
 "Godot has a \"Script Class\" feature to register individual scripts with the "
 "Editor. By default, you can only access unnamed scripts by loading the file "
@@ -347,7 +354,7 @@ msgstr ""
 "По умолчанию доступ к безымянным сценариям можно получить только загрузив "
 "файл напрямую."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:395
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
 msgid ""
 "You can name a script and register it as a type in the editor with the "
 "``class_name`` keyword followed by the class's name. You may add a comma and "
@@ -359,11 +366,11 @@ msgstr ""
 "через запятую вы можете указать путь к иконке. Затем вы найдете свой новый "
 "тип в диалоговом окне создание узла или ресурса."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
 msgid "In Godot 3.1:"
 msgstr "В Godot 3.1:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:419
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
@@ -371,7 +378,7 @@ msgstr ""
 "Только при помощи GDScript и NativeScript (C++ и другие) могут "
 "зарегистрировать такие скрипты."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:420
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
 msgid "Only GDScript creates global variables for each named script."
 msgstr ""
 "Только GDScript создает глобальные переменные для каждого именованного "

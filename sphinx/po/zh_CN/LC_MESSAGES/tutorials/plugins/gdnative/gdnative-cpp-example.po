@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,7 +103,6 @@ msgstr ""
 "需的构建工具相同。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:42
-#, fuzzy
 msgid ""
 "You can download these repositories from GitHub or let Git do the work for "
 "you. Note that these repositories now have different branches for different "
@@ -116,7 +115,7 @@ msgstr ""
 "您可以从GitHub下载这些存储库，或让Git为您完成工作。 请注意，这些存储库现在对"
 "于不同版本的Godot具有不同的分支。 为早期版本的Godot编写的GDNative模块将在较新"
 "版本中运行(除了3.0和3.1之间的ARVR接口的一次重大更改)，但反之亦然，因此请确保"
-"下载正确的分支。"
+"下载正确的分支。还要注意，您用于生成“api.json”的Godot版本将成为最低版本。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:52
 msgid ""
@@ -223,9 +222,10 @@ msgid ""
 msgstr "在将来的某个时刻，已编译的二进制文件将可用，使此步骤可选。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:140
+#, fuzzy
 msgid ""
-"You may need to add ``bits=64`` to the command on Windows. We're still "
-"working on better auto detection."
+"You may need to add ``bits=64`` to the command on Windows or Linux. We're "
+"still working on better auto detection."
 msgstr ""
 "您可能需要在Windows上的命令中添加 ``bits=64`` 。 我们仍在努力进行更好的自动检"
 "测。"
@@ -634,6 +634,8 @@ msgid ""
 "``true`` for the Godot editor to automatically pick up the newly added "
 "property."
 msgstr ""
+"“gdexample.gdnlib”文件中的“可重新读取”(reloadable)属性必须设定为“真”，Godot编"
+"辑器才能自动获取到新添加的属性。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:574
 msgid ""
@@ -641,6 +643,8 @@ msgid ""
 "are used, as the editor might hold objects then that have script instances "
 "attached to them that are managed by a GDNative library."
 msgstr ""
+"但是，使用该设置时要特别小心，特别是在使用工具类时，因为编辑器可能会持有对"
+"象，然后将脚本实例附加到对象上，这些对象由GDNative库管理。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:577
 msgid ""
@@ -818,9 +822,8 @@ msgid "Every second we simply output our position to the console."
 msgstr "每一秒我们只需将我们的位置输出到控制台。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:832
-#, fuzzy
 msgid "NativeScript 1.1 vs NativeScript 1.0"
-msgstr "NativeScript 1.1 与 NativeScript 1.0"
+msgstr "原生脚本1.1与原生脚本1.0"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:834
 msgid ""

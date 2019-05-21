@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "AnimationTree"
-msgstr "动画"
+msgstr "动画树"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:7
 msgid "Introduction"
@@ -34,12 +33,17 @@ msgid ""
 "as having dedicated transform, bezier, function calling, audio and sub-"
 "animation tracks, is pretty much unique."
 msgstr ""
+"使用:参考:`动画播放器 <类_动画播放器>`，Godot的动画系统，是你能在任何游戏引擎"
+"中找到最为灵活的系统。可以在任何节点或资源中对任何属性进行动画处理，以及专门"
+"的变换，贝塞尔，函数调用，音频和子动画轨道，该动画系统相当独特。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:13
 msgid ""
 "However, the support for blending those animations via ``AnimationPlayer`` "
 "is relatively limited, as only a fixed cross-fade transition time can be set."
 msgstr ""
+"然而，通过“动画播放器”混合这些动画的支持相对有限，只能设置固定的交叉渐变过渡"
+"时间。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:15
 msgid ""
@@ -48,11 +52,12 @@ msgid ""
 "``AnimationTreePlayer``, while adding a huge amount of features and "
 "flexibility."
 msgstr ""
+":参考: '动画树<类_动画树> '是Godot 3.1版本中引入的新节点，用于处理高级转换。"
+"它取代了古老的“动画树播放器”，同时添加了大量功能和灵活性。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:19
-#, fuzzy
 msgid "Creating an AnimationTree"
-msgstr "创建动画"
+msgstr "创建动画树"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:21
 msgid ""
@@ -62,6 +67,9 @@ msgid ""
 "them from a 3D scene) as usual and then use this extra node to control the "
 "playback."
 msgstr ""
+"首先，必须明确“动画树”节点不包含它自己的动画。相反，它使用包含在“动画播放"
+"器”节点中的动画。通过这种形式，您可以像往常一样编辑动画(或从3D场景导入动画)，"
+"然后使用这个额外节点来控制播放。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:25
 msgid ""
@@ -71,6 +79,9 @@ msgid ""
 "import). At the end, the imported Godot scene will contain the animations in "
 "a ``AnimationPlayer`` node."
 msgstr ""
+"在3D场景中经常使用“动画树”。当从3D交换格式导入场景时，它们通常自带动画(要么是"
+"多个，要么是在导入时从一个大的动画中拆分出来)。最后，导入的Godot场景在“动画播"
+"放器”节点中包含动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:29
 msgid ""
@@ -80,12 +91,17 @@ msgid ""
 "``AnimationTree`` node to the ``AnimationPlayer`` that was created in the "
 "imported scene."
 msgstr ""
+"很少在Godot中直接使用导入的场景(它们要么实例化，要么来自继承)，您可以将“动画"
+"树”节点放置在包含导入的新场景中。然后,将“动画树”节点指向导入场景内创建的“动画"
+"播放器”节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:32
 msgid ""
 "This is how it's done in the `Third Person Shooter demo <https://github.com/"
 "godotengine/tps-demo>`_, for reference:"
 msgstr ""
+"这是在“第三人称射击游戏演示”<https://github.com/godotengine/tps-demo>中的设"
+"置，参考下图："
 
 #: ../../docs/tutorials/animation/animation_tree.rst:36
 msgid ""
@@ -93,48 +109,54 @@ msgid ""
 "Inside this scene, the original ``.dae`` (Collada) file was instantiated and "
 "an ``AnimationTree`` node was created."
 msgstr ""
+"为玩家创建了一个以“动力学物体”为根节点的新场景。在这个场景中,已实例化原来的“."
+"dae”(Collada)文件，并创建“动画树”节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:40
-#, fuzzy
 msgid "Creating a tree"
-msgstr "创建主题"
+msgstr "创建树"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:42
 msgid ""
 "There are three main types of nodes that can be used in ``AnimationTree``:"
-msgstr ""
+msgstr "可以在“动画树”中使用三种主要节点类型:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:44
 msgid ""
 "Animation nodes, which reference an animation from the linked "
 "``AnimationTree``."
-msgstr ""
+msgstr "动画节点，从链接的“动画树”中引用动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:45
 msgid "Animation Root nodes, which are used to blend sub-nodes."
-msgstr ""
+msgstr "动画根节点，用于混合子节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:46
 msgid ""
 "Animation Blend nodes, which are used within ``AnimationNodeBlendTree`` as "
 "single-graph blending via multiple input ports."
 msgstr ""
+"动画混合节点，它们在“动画节点混合树”中使用，通过多个输入端口作为单图混合。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:48
 msgid "To set a root node in ``AnimationTree``, a few types are available:"
-msgstr ""
+msgstr "在“动画树”中设置根节点，如下几种类型可供选择:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:52
 msgid ""
 "``AnimationNodeAnimation``: Selects an animation from the list and plays it. "
 "This is the simplest root node, and generally not used directly as root."
 msgstr ""
+"“动画节点动画”：从列表中选择一个动画并播放它。这是最简单的根节点，一般不直接"
+"用作根节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:53
 msgid ""
 "``AnimationNodeBlendTree``: Contains many *blend* type nodes, such as mix, "
 "blend2, blend3, one shot, etc. This is one of the most commonly used roots."
 msgstr ""
+"“动画节点混合树”:包含许多*混合*类型的节点，如调配, 混合2, 混合3, 一对一等。这"
+"是最常用的根节点之一。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:54
 msgid ""
@@ -142,64 +164,68 @@ msgid ""
 "graph. Each node is used as a *state*, and provides multiple functions to "
 "alternate between states."
 msgstr ""
+"“动画节点状态机”：将多个根节点作为图中的子节点。每个节点作为一个*状态*使用，"
+"并提供多个函数在状态之间进行切换。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:55
 msgid ""
 "``AnimationNodeBlendSpace2D``: Allows placing root nodes in a 2D blend "
 "space. Control the blend position in 2D to mix between multiple animations."
 msgstr ""
+"“动画节点二维混合空间”：允许在二维混合空间中放置根节点。在二维中控制混合位置"
+"以混合多个动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:56
 msgid "``AnimationNodeBlendSpace1D``: Simplified version of the above (1D)."
-msgstr ""
+msgstr "“动画节点一维混合空间”：以上的简化版本(一维)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:59
-#, fuzzy
 msgid "Blend tree"
-msgstr "混合模式"
+msgstr "混合树"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:61
 msgid ""
 "An ``AnimationNodeBlendTree`` can contain both root and regular nodes used "
 "for blending. Nodes are added to the graph from a menu:"
 msgstr ""
+"一个“动画节点混合树”可包含用于混合的根节点和常规节点。节点从菜单添加到图中:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:65
 msgid ""
 "All blend trees contain an ``Output`` node by default, and something has to "
 "be connected to it in order for animations to play."
 msgstr ""
+"所有混合树默认包含一个“输出”节点，为了让动画播放，必须有个东西与其相连。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:67
 msgid ""
 "The easiest way to test this functionality is to connect an ``Animation`` "
 "node to it directly:"
-msgstr ""
+msgstr "测试此功能最简单的方法是直接连接一个“动画”节点:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:71
 msgid ""
 "This will simply play back the animation. Make sure that the "
 "``AnimationTree`` is active for something to actually happen."
-msgstr ""
+msgstr "这会简单地回放动画。确保“动画树”节点对实际发生的事情是激活的。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:73
-#, fuzzy
 msgid "Following is a short description of available nodes:"
-msgstr "以下是可用效果的简短描述:"
+msgstr "以下是可用节点的简短描述:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:76
 msgid "Blend2 / Blend3"
-msgstr ""
+msgstr "混合2/混合3"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:78
 msgid ""
 "These nodes will blend between two or three inputs by a user-specified blend "
 "value:"
-msgstr ""
+msgstr "这些节点将通过用户指定输入的两个或三个混合值之间进行混合:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:82
 msgid "For more complex blending, it is advised to use blend spaces instead."
-msgstr ""
+msgstr "对于更复杂的混合，建议使用混合空间。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:84
 msgid ""
@@ -207,6 +233,8 @@ msgid ""
 "tracks go through the blend function. This is very useful for layering "
 "animations on top of each other."
 msgstr ""
+"混合也可以使用过滤器，也就是说，您可以单独控制通过混合功能的轨道。这对于动画"
+"的层叠非常有用。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:90
 #, fuzzy
@@ -218,32 +246,31 @@ msgid ""
 "This node will execute a sub-animation and return once it finishes. Blend "
 "times for fading in and out can be customized, as well as filters."
 msgstr ""
+"此节点将执行子动画，并在完成后返回。可以用于定制淡入淡出时间，以及过滤器。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:97
 msgid "Seek"
-msgstr ""
+msgstr "查找"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:99
 msgid ""
 "This node can be used to cause a seek command to happen to any sub-children "
 "of the graph. After setting the time, this value returns to -1."
-msgstr ""
+msgstr "此节点可用于执行对图中任何子节点的查找命令。设置时间后，该值返回-1。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:102
-#, fuzzy
 msgid "TimeScale"
-msgstr "规模"
+msgstr "时间缩放"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:104
 msgid ""
 "Allows scaling the speed of the animation (or reverse it) in any children "
 "nodes. Setting it to 0 will pause the animation."
-msgstr ""
+msgstr "允许缩放任何子节点的动画速度(或将其反转)。设置为0会暂停动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:107
-#, fuzzy
 msgid "Transition"
-msgstr "平移"
+msgstr "转换"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:109
 msgid ""
@@ -251,10 +278,12 @@ msgid ""
 "``StateMachine`` node). Animations can be connected to the outputs and "
 "transition times can be specified."
 msgstr ""
+"非常简单的状态机(当您不想使用“状态机”节点时)。动画可以连接到输出，并且可以指"
+"定转换时间。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:112
 msgid "BlendSpace2D"
-msgstr ""
+msgstr "二维混合空间"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:114
 msgid ""
@@ -262,6 +291,8 @@ msgid ""
 "are added to a two dimensional space and then a position can be controlled "
 "to determine blending:"
 msgstr ""
+"“二维混合空间”是在二维空间中进行高级混合的节点。在二维空间内添加点，然后控制"
+"位置来确定混合:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:119
 msgid ""
@@ -270,12 +301,15 @@ msgid ""
 "system or use the *add point* button) and triangles will be generated "
 "automatically using Delaunay."
 msgstr ""
+"可以控制X和Y的范围(为方便起见，还可以标记它们)。默认情况下，可以在任何位置放"
+"置点(只需右键单击坐标系统或使用*添加点*按钮)将自动生成德洛内三角形。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:124
 msgid ""
 "It is also possible to draw the triangles manually by disabling the *auto "
 "triangle* option, though this is rarely necessary:"
 msgstr ""
+"也可以通过禁用*自动三角形*选项来手动绘制三角形，虽然基本上没必要这么做:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:128
 msgid ""
@@ -286,21 +320,23 @@ msgid ""
 "switching between discrete animations, there is a *Carry* mode. This mode "
 "can be changed in the *Blend* menu:"
 msgstr ""
+"最后，可能会更改混合模式。默认情况下，混合是通过在最近的三角形内插点来实现"
+"的。当处理二维动画(逐帧)时，您可能希望切换到*离散*模式。此外，如果您想在离散"
+"动画之间切换时保持当前播放位置，请使用*进位*模式。此模式可在*混合*菜单中更改:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:136
 msgid "BlendSpace1D"
-msgstr ""
+msgstr "一维混合空间"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:138
 msgid ""
 "This is similar to 2D blend spaces, but in one dimension (so triangles are "
 "not needed)."
-msgstr ""
+msgstr "这类似于二维混合空间，但在一维空间中(所以不需要三角形)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:141
-#, fuzzy
 msgid "StateMachine"
-msgstr "搜索"
+msgstr "状态机"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:143
 msgid ""
@@ -309,47 +345,49 @@ msgid ""
 "connections with special properties. Transitions are uni-directional, but "
 "two can be used to connect in both ways."
 msgstr ""
+"这个节点是个相对简单的状态机。根节点可以创建并通过线路连接。状态通过*转换*连"
+"接，它们是具有特殊性质的连接。转换是单向的，但是可以用两种方式连接。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:148
-#, fuzzy
 msgid "There are many types of transitions:"
-msgstr "过渡的类型"
+msgstr "有多种类型的转换:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:152
 msgid ""
 "*Immeditate*: Will switch to the next state immediately. The current state "
 "will end and blend into the beginning of the new one."
-msgstr ""
+msgstr "*立即*：立即切换到下一个状态。将结束当前状态将融入新状态的开始。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:153
 msgid ""
 "*Sync*: Will switch to the next state immediately, but will seek the new "
 "state to the playback position of the old state."
 msgstr ""
+"*同步*:立即切换到下一个状态，但会将新状态搜索并放置到旧状态的回放位置。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:154
 msgid ""
 "*At End*: Will wait for the current state playback to end, then switch to "
 "the beginning of the next state animation."
-msgstr ""
+msgstr "*末尾*：将等待当前状态回放结束，然后切换到下一个状态的开始动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:156
 msgid ""
 "Transitions also have a few properties. Click any transition and it will be "
 "displayed in the inspector dock:"
-msgstr ""
+msgstr "转换也有一些属性。点击任何转换，它会显示在属性面板中:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:160
 msgid ""
 "*Switch Mode* is the transition type (see above), it can be modified after "
 "creation here."
-msgstr ""
+msgstr "*切换模式*为过渡类型(见上文)，可以在此处创建后修改。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:161
 msgid ""
 "*Auto Advance* will turn on the transition automatically when this state is "
 "reached. This works best with the *At End* switch mode."
-msgstr ""
+msgstr "*自动前进*当达到此状态时将自动开启转换。最适合“末尾”切换模式。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:162
 msgid ""
@@ -357,10 +395,12 @@ msgid ""
 "This is a custom text field that can be filled with a variable name. The "
 "variable can be modified from code (more on this later)."
 msgstr ""
+"*前进条件*设置此条件后，将打开自动前进。这是一个可以用变量名填充的自定义文本"
+"字段。可以从代码中修改变量(稍后将对此进行详细介绍)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:164
 msgid "*Xfade Time* is the time to cross-fade between this state and the next."
-msgstr ""
+msgstr "*X消隐时间*是在这个状态和下一个状态之间交替渐变的时间。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:165
 msgid ""
@@ -368,17 +408,18 @@ msgid ""
 "on this later). When travelling from a state to another, give more priority "
 "to this node."
 msgstr ""
+"*优先*与代码中的“travel()”函数一起使用(后面会详细介绍)。当从一种状态移动到另"
+"一种状态时，赋予这个节点更高的优先级。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:166
 msgid ""
 "*Disabled* allows to disable this transition (it will not be used during "
 "travel or auto advance)."
-msgstr ""
+msgstr "*禁用*允许禁用此转换(它不会在行程或自动前进期间使用)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:170
-#, fuzzy
 msgid "Root motion"
-msgstr "旋转"
+msgstr "根骨骼运动"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:172
 msgid ""
@@ -387,6 +428,9 @@ msgid ""
 "allows animating characters in a way where steps actually match the floor "
 "below. It also allows precise interaction with objects during cinematics."
 msgstr ""
+"当处理3D动画时，一种流行的技术是动画师利用根骨骼为其余部分骨骼制作运动动画。"
+"这使得动画角色的脚步与下面的地板相匹配。并且允许在电影拍摄期间与物体进行精确"
+"的交互。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:175
 msgid ""
@@ -394,12 +438,14 @@ msgid ""
 "as the *root motion track*. Doing so will cancel the bone transformation "
 "visually (the animation will stay in place)."
 msgstr ""
+"在Godot中回放动画时，可以选择这根单根骨作为*根运动轨迹*。这会在视觉上取消单根"
+"骨的转换(动画将保持原状)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:180
 msgid ""
 "Afterwards, the actual motion can be retrieved via the :ref:`AnimationTree "
 "<class_AnimationTree>` API as a transform:"
-msgstr ""
+msgstr "然后，实际运动可以通过:参考:`动画树<类_动画树>`API作为转换："
 
 #: ../../docs/tutorials/animation/animation_tree.rst:191
 msgid ""
@@ -407,6 +453,8 @@ msgid ""
 "<class_KinematicBody_method_move_and_slide>` to control the character "
 "movement."
 msgstr ""
+"可以提供给诸如:参考:`动力学物体.移动和滑动<类_动力学物体_方法_移动和滑动>`这"
+"样的函数来控制角色移动。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:193
 msgid ""
@@ -414,17 +462,18 @@ msgid ""
 "and will act as a custom floor for your character and animations (this node "
 "is normally disabled during the game)."
 msgstr ""
+"还有一个名为“根骨骼运动视图”的工具节点，可以放置在场景中，并作为你的角色和动"
+"画的自定义地板（此节点通常在游戏期间禁用）。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:200
-#, fuzzy
 msgid "Controlling from code"
-msgstr "贡献代码"
+msgstr "使用代码控制"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:202
 msgid ""
 "After building the tree and previewing it, the only question remaining is "
 "\"How is all this controlled from code?\"."
-msgstr ""
+msgstr "创建树和预览之后，只剩下一个问题：“如何使用代码控制所有的节点?”。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:204
 msgid ""
@@ -435,6 +484,9 @@ msgid ""
 "your animation tree, or reuse nodes with a complex layout (such as a state "
 "machine or blend space) in different animation trees."
 msgstr ""
+"请记住动画节点只是资源，因此，它们之间共享所有实例。节点中的设定值会直接影响"
+"使用此“动画树”场景的所有实例。有一些很酷的用例，例如你可以复制、粘贴你的动画"
+"树部分，或在不同的动画树中重用具有复杂布局(例如状态机或混合空间)的节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:209
 msgid ""
@@ -443,6 +495,8 @@ msgid ""
 "``AnimationTree`` node to see all the parameters that can be modified in "
 "real-time:"
 msgstr ""
+"实际的动画数据包含在“动画树”节点中，并通过属性访问。检查“动画树”节点的“参"
+"数”部分，查看所有可以实时修改的参数："
 
 #: ../../docs/tutorials/animation/animation_tree.rst:214
 msgid ""
@@ -450,20 +504,24 @@ msgid ""
 "``AnimationPlayer``, or even the ``AnimationTree`` itself, allowing the "
 "realisation of very complex animation logic."
 msgstr ""
+"这很方便，因为它可以通过“动画播放器”获得动画效果，甚至是“动画树”本身，允许实"
+"现非常复杂的动画逻辑。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:217
 msgid ""
 "To modify these values from code, the property path must be obtained. This "
 "is done easily by hovering the mouse over any of the parameters:"
 msgstr ""
+"想要通过代码修改这些值，必须获得该属性的路径。这是很容易做到的，把鼠标悬停在"
+"任何参数:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:221
 msgid "Which allows setting them or reading them:"
-msgstr ""
+msgstr "允许设置或读取它们："
 
 #: ../../docs/tutorials/animation/animation_tree.rst:236
 msgid "State machine travel"
-msgstr ""
+msgstr "状态机行程"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:238
 msgid ""
@@ -472,6 +530,8 @@ msgid ""
 "to another one, while visiting all the intermediate ones. This is done via "
 "the A\\* algorithm."
 msgstr ""
+"执行“状态机“的行程能力，是Godot引擎的优秀特性之一。可以指示图表从当前状态转到"
+"另一个状态，我们可以访问其所有的中间状态。这是通过A*算法实现的。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:241
 msgid ""
@@ -480,9 +540,11 @@ msgid ""
 "<class_AnimationNodeStateMachinePlayback>` object from the ``AnimationTree`` "
 "node (it is exported as a property)."
 msgstr ""
+"要使用行程能力，您应该首先从“动画树”节点中检索:参考:`动画节点状态机回放<类_动"
+"画节点状态机回放>`对象(导出为一个属性)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:254
 msgid ""
 "Once retrieved, it can be used by calling one of the many functions it "
 "offers:"
-msgstr ""
+msgstr "一旦检索到，可以调用它提供的许多函数之一:"

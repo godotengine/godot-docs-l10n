@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -994,16 +994,15 @@ msgstr ""
 "并尝试一下！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:609
-#, fuzzy
 msgid ""
 "Notice how we're not limiting the amount of ammo you can carry. To limit the "
 "amount of ammo each weapon can carry, you need to add an additional variable "
 "to each weapon's script, and then clamp the weapon's ``spare_ammo`` variable "
 "after adding ammo in ``add_ammo``."
 msgstr ""
-"请注意我们如何限制您可携带的弹药数量。 为了限制每个武器可以携带的弹药数量，您"
-"需要为每个武器的脚本添加一个额外的变量，然后在“add_ammo”中添加弹药后夹住武器"
-"的 ``spare_ammo`` 变量。"
+"要注意的是，我们并没有对你携带弹药的数量进行限制。如果想要限制每件武器可携带"
+"的弹药数量，您需要在每件武器的脚本内添加一个额外变量，然后限定武器的“备用弹"
+"药”（spare_ammo）变量后，在“添加弹药”（add_ammo）变量内添加弹药。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:613
 msgid "Adding breakable targets"

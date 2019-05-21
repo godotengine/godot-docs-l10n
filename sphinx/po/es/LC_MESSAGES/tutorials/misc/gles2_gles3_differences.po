@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:4
-#, fuzzy
 msgid "Differences between GLES2 and GLES3"
-msgstr "Diferencias generales entre C# y GDScript"
+msgstr "Diferencias entre GLES2 y GLES3"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:6
 msgid ""
@@ -79,9 +78,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:37
-#, fuzzy
 msgid "Color space"
-msgstr "Monospace"
+msgstr "Espacio de color"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:39
 msgid ""
@@ -97,9 +95,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:47
-#, fuzzy
 msgid "HDR"
-msgstr "HUD"
+msgstr "HDR"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
 msgid ""
@@ -109,9 +106,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:54
-#, fuzzy
 msgid "SpatialMaterial features"
-msgstr "Material Spatial"
+msgstr "Características de SpatialMaterial"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:56
 msgid ""
@@ -124,9 +120,8 @@ msgid "Refraction"
 msgstr "Refraction"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
-#, fuzzy
 msgid "Subsurface scattering"
-msgstr "Subsurface Scattering"
+msgstr "Subsurface scattering"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:60
 msgid "Anisotropy"
@@ -137,9 +132,8 @@ msgid "Clearcoat"
 msgstr "Clearcoat"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
-#, fuzzy
 msgid "Depth mapping"
-msgstr "Spot shadow mapping"
+msgstr "Depth mapping"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:64
 msgid "When using SpatialMaterials they will not even appear in the editor."
@@ -154,34 +148,32 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:71
-#, fuzzy
 msgid "Environment features"
-msgstr "Variables de entorno"
+msgstr "Características de Environment"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:73
-#, fuzzy
 msgid ""
 "In GLES2, the following features in the :ref:`Environment "
 "<class_Environment>` are missing:"
-msgstr "Luz Ambiental en :ref:`Environment <class_Environment>`."
+msgstr ""
+"En GLES2, no se están disponibles las siguientes características de :ref:"
+"`Environment <class_Environment>`:"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:75
 msgid "Auto exposure"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
-#, fuzzy
 msgid "Tonemapping"
-msgstr "Shadow Mapping"
+msgstr "Tonemapping"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:77
 msgid "Screen space reflections"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:78
-#, fuzzy
 msgid "Screen space ambient occlusion"
-msgstr "Ambient Occlusion"
+msgstr "Screen space ambient occlusion"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:79
 msgid "Depth of field"
@@ -204,9 +196,8 @@ msgid "Sky (including procedural sky)"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:86
-#, fuzzy
 msgid "Ambient light"
-msgstr "Disable Ambient Light"
+msgstr "Ambient light"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:87
 msgid "Fog"
@@ -224,9 +215,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:96
-#, fuzzy
 msgid "Contact shadows"
-msgstr "Luces y sombras"
+msgstr "Contact shadows"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:98
 msgid ""
@@ -235,9 +225,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:101
-#, fuzzy
 msgid "Light performance"
-msgstr "Rendimiento"
+msgstr "Rendimiento de luces"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:103
 msgid ""
@@ -260,9 +249,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:115
-#, fuzzy
 msgid "Blend shapes"
-msgstr "Figuras de Colisión"
+msgstr "Blend shapes"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:117
 msgid "Blend shapes are not supported in GLES2."
@@ -279,13 +267,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:125
-#, fuzzy
 msgid ""
 "For a complete list of built-in GLSL functions see the :ref:`Shading "
 "Language doc <doc_shading_language>`."
 msgstr ""
-"Para información detallada sobre el lenguaje de shaders de Godot, por favor "
-"lee la referencia en :ref:`Shading Language <doc_shading_language>` ."
+"Para una lista completa de las funciones GLSL integradas, por favor lee la "
+"referencia en :ref:`Shading Language <doc_shading_language>` ."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:128
 msgid "Function"
@@ -447,3 +434,40 @@ msgstr "vec_type **dFdy** ( vec_type )"
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:196
 msgid "vec_type **fwidth** ( vec_type )"
 msgstr "vec_type **fwidth** ( vec_type )"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:199
+msgid ""
+"Godot also provides many built-in variables and render modes. Some cannot be "
+"supported in GLES2. Below is a list of built-in variables and render modes "
+"that, when written to, will have no effect or could even cause issues when "
+"using the GLES2 backend."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:204
+#, fuzzy
+msgid "Variable / Render Mode"
+msgstr "Modo de renderizado"
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:206
+msgid "``ensure_correct_normals``"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:208
+msgid "``INSTANCE_ID``"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:210
+msgid "``DEPTH``"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:212
+msgid "``ANISOTROPY``"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:214
+msgid "``ANISOTROPY_FLOW``"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:216
+msgid "``SSS_STRENGTH``"
+msgstr ""

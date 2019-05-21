@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,9 +42,10 @@ msgid "In short:"
 msgstr "总之:"
 
 #: ../../docs/about/faq.rst:13
+#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
-"profit, commercial, or otherwise;"
+"profit, commercial, or otherwise."
 msgstr "您可以免费下载并使用Godot，用于任何，个人，非营利，商业或其他目的;"
 
 #: ../../docs/about/faq.rst:14
@@ -379,12 +380,13 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Godot从3.0版本开始支持gITF。"
 
 #: ../../docs/about/faq.rst:153
+#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<https://opensource.org/licenses/MIT>`_ provided by Godot. That being said, "
 "FBX support could still be provided by third parties as a plugin. (See "
-"Plugins question above.)"
+"Plugins question below.)"
 msgstr ""
 "FBX SDK具有 `限制性许可 <https://www.blender.org/bf/Autodesk_FBX_License."
 "rtf>`_ ，与Godot提供的 `开放许可 <https://opensource.org/licenses/MIT>`_ 不兼"
@@ -416,9 +418,10 @@ msgstr ""
 "发布游戏，无论开源或闭源。万事皆允。"
 
 #: ../../docs/about/faq.rst:170
+#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
-"the Plugins question above."
+"the Plugins question below."
 msgstr "欲了解如何支持您想用的SDK，请查看上面的插件问题。"
 
 #: ../../docs/about/faq.rst:173
@@ -477,20 +480,22 @@ msgstr ""
 "意，分辨率越高，资源越多，它们需要的内存就越多，加载所需时间也会越长。"
 
 #: ../../docs/about/faq.rst:201
+#, fuzzy
 msgid ""
-"Use the stretch options in Godot, 2D stretching with keeping aspect works "
-"best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
-"this."
+"Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
+"works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
+"achieve this."
 msgstr ""
 "使用Godot中的拉伸(Stretch)选项，2D的保持拉伸效果最好。参阅教程 :ref:"
 "`doc_multiple_resolutions` 来学习如何实现它。"
 
 #: ../../docs/about/faq.rst:205
+#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
-"stretch vertically or horizontally for different aspect ratios, or whether "
-"there is a minimum one and you want black bars to appear instead. This is "
-"also explained in the previous step."
+"stretch vertically or horizontally for different aspect ratios, or if there "
+"is one aspect ratio and you want black bars to appear instead. This is also "
+"explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
 "确定最小分辨率，然后决定是否让游戏根据不同的纵横比进行垂直或水平拉伸，或者在"
 "想要显示黑边的情况下确定一个最小分辨率。这在前面的步骤中有所解释。"

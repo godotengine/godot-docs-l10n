@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for Windows"
-msgstr ""
+msgstr "윈도우에 응용 프로그램 아이콘 바꾸기"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
 msgid ""
@@ -27,36 +27,44 @@ msgid ""
 "most likely want to change that for your project. There are two types of "
 "icons that can be changed on Windows: the file icon and the taskbar icon."
 msgstr ""
+"기본적으로 내보낸 프로젝트의 아이콘은 Godot 아이콘입니다. 프로젝트를 위해 아"
+"이콘을 바꾸고 싶을 것입니다. 윈도우에서 바꿀 수 있는 두 가지 유형의 아이콘이 "
+"있습니다: 파일 아이콘하고 작업 표시줄 아이콘입니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
 msgid "Changing the taskbar icon"
-msgstr ""
+msgstr "작업 표시줄 아이콘 바꾸기"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
 "The taskbar icon is the icon that shows up on the taskbar when your project "
 "is running."
 msgstr ""
+"작업 표시줄 아이콘은 프로젝트가 실행하면 작업 표시줄에 나타나는 아이콘입니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Icon**. Click on the folder icon and select your desired icon."
 msgstr ""
+"작업 표시줄 아이콘을 바꾸기 위해선, **프로젝트 → 프로젝트 설정 → Application "
+"→ Config → Icon**\\ 으로 갑니다. 폴더 아이콘을 클릭하고 원하는 아이콘을 선택"
+"합니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:22
 msgid "This is also the icon that gets displayed in the Godot project list."
-msgstr ""
+msgstr "Godot 프로젝트 목록에서 표시되는 아이콘이기도 합니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:27
 msgid "Changing the file icon"
-msgstr ""
+msgstr "파일 아이콘 바꾸기"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:29
 msgid ""
 "The file icon is the icon of the executable that you click on to start the "
 "project."
 msgstr ""
+"파일 아이콘은 프로젝트를 실행하기 위해 클릭하는 실행 파일의 아이콘입니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:34
 msgid ""
@@ -64,6 +72,9 @@ msgid ""
 "tool called **rcedit**. You can download it `here <https://github.com/"
 "electron/rcedit/releases>`_."
 msgstr ""
+"내보내기 설정에서 아이콘을 선택하기 전에, **rcedit**\\ 이라는 추가 도구를 설"
+"치해야합니다. `여기서 <https://github.com/electron/rcedit/releases>`_ 다운로"
+"드할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
 msgid ""
@@ -72,12 +83,17 @@ msgid ""
 "Click on the folder icon for the **rcedit** entry. Navigate to and select "
 "the rcedit executable."
 msgstr ""
+"다운로드한 후, Godot에 컴퓨터에서 rcedit 실행 파일의 경로를 주어야 합니다. **"
+"에디터 → 에디터 설정 → Export → Windows**\\ 로 갑니다. **rcedit** 항목의 폴"
+"더 아이콘을 클릭합니다. rcedit 실행 파일로 가서 선택합니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:44
 msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
 msgstr ""
+"리눅스와 macOS 사용자는 rcedit를 사용하려면 `WINE <https://www.winehq.org/>`_"
+"\\ 을 별도로 설치해야 합니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:49
 msgid ""
@@ -86,6 +102,10 @@ msgid ""
 "Export**. Assuming you have already created a Windows Desktop preset, select "
 "your icon in ICO format in the **Application → Icon** field."
 msgstr ""
+"이제 파일 아이콘을 바꾸기 위한 준비가 되었습니다. 하기 위해선, 내보낼 때 아이"
+"콘을 지정해야 합니다. **프로젝트 → 내보내기**\\ 로 갑니다. 이미 윈도우 데스크"
+"톱 프리셋이 준비되었다고 가정합니다, **Application → Icon** 영역에서 ICO 형식"
+"으로 된 아이콘을 선택합니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:55
 msgid ""
@@ -93,19 +113,23 @@ msgid ""
 "information, please refer to `this tutorial <http://skyboygames.com/easily-"
 "create-a-windows-app-icon-with-gimp/>`_."
 msgstr ""
+"GIMP와 같은 소프트웨어로 ICO 이미지를 내보낼 수 있습니다. 더 자세한 정보는  `"
+"이 튜토리얼 <http://skyboygames.com/easily-create-a-windows-app-icon-with-"
+"gimp/>`_\\ 을 참고하세요."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
 msgid "Testing the result"
-msgstr ""
+msgstr "결과 시험하기"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:64
 msgid ""
 "You can now export the project. If it worked correctly, you should see this:"
 msgstr ""
+"이제 프로젝트를 내보낼 수 있습니다. 작업이 잘 됬다면 이렇게 보여야 합니다:"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:69
 msgid "ICO file requirements"
-msgstr ""
+msgstr "ICO 파일 요구사항"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:71
 msgid ""
@@ -113,6 +137,9 @@ msgid ""
 "wikipedia.org/wiki/ICO_(file_format)>`_, there are some requirements to "
 "ensure the icon (and your executable) works on Windows."
 msgstr ""
+"`ICO 파일 <https://en.wikipedia.org/wiki/ICO_(file_format)>`_\\ 을 만드는 어"
+"떤 프로그램이든 관계없이, 윈도우에 맞는 아이콘 (그리고 실행 파일)에는 몇 가"
+"지 요구사항이 있습니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:75
 msgid ""
@@ -120,12 +147,17 @@ msgid ""
 "threads: `one <https://stackoverflow.com/q/3236115/>`_, `two <https://"
 "stackoverflow.com/q/40749785/>`_."
 msgstr ""
+"다음 Stack Overflow 스레드가 있을 정도로 조금 까다롭습니다: `하나 <https://"
+"stackoverflow.com/q/3236115/>`_, `둘 <https://stackoverflow.com/q/40749785/"
+">`_."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:79
 msgid ""
 "Your ICO file should at least contain icons in the following resolutions: "
 "16×16, 48×48 and 256×256."
 msgstr ""
+"ICO 파일은 적어도 아이콘이 다음 화면 비율에 있어야 합니다: 16x16, 48x48 그리"
+"고 256x256."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
 msgid ""
@@ -133,9 +165,14 @@ msgid ""
 "supported icon sizes on Windows 10: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, "
 "48, 56, 60, 63, 84 and one larger than 255 pixels (such as 256, 512 or 1024)."
 msgstr ""
+"높은 DPI 화면을 완벽하게 지원하고 싶다면, 다음은 윈도우 10에서 지원하는 아이"
+"콘 크기 전체 목록입니다: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, 48, 56, 60, "
+"63, 84 그리고 255 화소보다 큰 것 하나 (256, 512 또는 1024같은 것)."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
 msgid ""
 "It is also possible to convert a PNG image to an hiDPI-friendly ICO file "
 "using this `ImageMagick <https://www.imagemagick.org/>`_ command:"
 msgstr ""
+"다음 `ImageMagick <https://www.imagemagick.org/>`_ 명령문을 사용하면 PNG 이미"
+"지를 hiDPI 친화적인 ICO 파일로 변환할 수 있습니다:"

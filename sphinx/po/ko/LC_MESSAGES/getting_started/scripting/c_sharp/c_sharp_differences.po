@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,12 +34,12 @@ msgid ""
 "As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
 "instead of the ``snake_case`` used in GDScript and C++."
 msgstr ""
-":ref:`doc_c_sharp`\\ 에서 설명했듯이, C#은 GDScript와 C++에서 ``snake_case``"
-"\\ 가 아닌 ``PascalCase``\\ 를 사용합니다."
+":ref:`doc_c_sharp`\\ 에서 설명했듯이, GDScript와 C++에서 ``snake_case``\\ 가 "
+"사용되는 반면, C#은 ``PascalCase``\\ 를 사용합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
 msgid "Global scope"
-msgstr "글로벌 범위"
+msgstr "전역 범위"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:17
 msgid ""
@@ -47,8 +47,8 @@ msgid ""
 "does not allow declaring them in namespaces. Most global constants were "
 "moved to their own enums."
 msgstr ""
-"글로벌 함수와 일부 상수는, C#이 네임 스페이스에서 선언하지 않기 때문에 클래스"
-"로 이동되어야 합니다. 대부분의 글로벌 상수는 자신의 이넘으로 이동합니다."
+"C#은 네임 스페이스에서 전역 함수와 일부 상수는 선언하지 않기 때문에 이 둘은 "
+"클래스로 이동해야 합니다. 대부분의 전역 상수는 자신의 이넘으로 이동합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:22
 msgid "Constants"
@@ -59,12 +59,12 @@ msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
-"글로벌 상수는 자신의 이넘으로 이동합니다. 예를 들어, ``ERR_*`` 상수는 "
-"``Error`` 이넘으로 이동합니다."
+"전역 상수는 자신의 이넘으로 이동합니다. 예를 들어 ``ERR_*`` 상수는 ``Error`` "
+"이넘으로 이동합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
 msgid "Special cases:"
-msgstr "특수 경우:"
+msgstr "특별한 경우:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:30
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:59
@@ -126,10 +126,9 @@ msgid ""
 "``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
 "``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
 msgstr ""
-"``abs``, ``acos``, ``asin``, ``atan`` 그리고 ``atan2``\\ 와 같은 수학 함수는 "
-"글로벌 범위에 있는 대신, ``Mathf``\\ 에 위치하며,  ``Abs``, ``Acos``, "
-"``Asin``, ``Atan`` 그리고 ``Atan2``\\ 로 존재합니다. ``PI`` 상수는 ``Mathf."
-"Pi``\\ 입니다."
+"``abs``, ``acos``, ``asin``, ``atan`` 그리고 ``atan2``\\ 와 같은 수학 전역 함"
+"수는 ``Mathf``\\ 에 위치하며,  ``Abs``, ``Acos``, ``Asin``, ``Atan`` 그리고 "
+"``Atan2``\\ 로 존재합니다. ``PI`` 상수는 ``Mathf.Pi``\\ 입니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
 msgid "Random functions"
@@ -140,8 +139,8 @@ msgid ""
 "Random global functions, like ``rand_range`` and ``rand_seed``, are located "
 "under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
 msgstr ""
-"``rand_range``\\ 와 ``rand_seed``\\ 와 같은 랜덤 글로벌 함수는 ``GD``\\ 에 위"
-"치합니다. 예: ``GD.RandRange``\\ 와 ``GD.RandSeed``."
+"``rand_range``\\ 와 ``rand_seed``\\ 와 같은 랜덤 전역 함수는 ``GD``\\ 에 위치"
+"합니다. 예: ``GD.RandRange``\\ 와 ``GD.RandSeed``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
 msgid "Other functions"
@@ -152,8 +151,8 @@ msgid ""
 "Many other global functions like ``print`` and ``var2str`` are located under "
 "``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
 msgstr ""
-"``print``\\ 와 ``var2str``\\ 와 같은 기타 다른 글로벌 함수는 ``GD``\\ 에 위치"
-"합니다. 예: ``GD.Print``\\ 와 ``GD.Var2Str``."
+"``print``\\ 와 ``var2str``\\ 와 같은 기타 다른 전역 함수는 ``GD``\\ 에 위치합"
+"니다. 예: ``GD.Print``\\ 와 ``GD.Var2Str``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:56
 msgid "Exceptions:"
@@ -186,8 +185,8 @@ msgid ""
 "specifying the class name."
 msgstr ""
 "때로는 ``using static`` 지시문을 사용하는 게 유용할 수 있습니다. 이 지시문이"
-"면 클래스 이름을 지정하지 않고도 클래스의 멤버와 중첩된 타입에 액세스 할 수 "
-"있습니다."
+"면 클래스 이름을 지정하지 않고도 클래스의 멤버와 중첩된 타입에 액세스할 수 있"
+"습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:90
@@ -196,11 +195,11 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:144
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:305
 msgid "Example:"
-msgstr "예:"
+msgstr "예시:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:86
 msgid "Export keyword"
-msgstr "키워드 가져오기"
+msgstr "Export 키워드"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:88
 msgid ""
@@ -209,7 +208,7 @@ msgstr "GDScript의 ``export`` 키워드 대신 ``[Export]`` 속성을 사용합
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:103
 msgid "Signal keyword"
-msgstr "시그널 키워드"
+msgstr "Signal 키워드"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:105
 msgid ""
@@ -219,7 +218,7 @@ msgid ""
 msgstr ""
 "GDScript의 ``signal`` 키워드 대신 ``[Signal]`` 속성을 사용하여 시그널을 선언"
 "합니다. 이 속성은 `delegate`\\ 에 사용되어야 하며, 이름은 시그널을 정의하는 "
-"데 사용될 것입니다."
+"데 사용됩니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:113
 msgid "See also: :ref:`c_sharp_signals`"
@@ -227,7 +226,7 @@ msgstr "이것도 보세요: :ref:`c_sharp_signals`"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:116
 msgid "Singletons"
-msgstr "싱글톤(Singleton)"
+msgstr "Singletons"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:118
 msgid ""
@@ -247,14 +246,14 @@ msgid ""
 "``Singleton`` that returns the singleton instance. The type of this instance "
 "is ``Godot.Object``."
 msgstr ""
-"하지만, 일부 드문 경우가 있어 충분하지 않습니다. 예를 들어, ``Connect``\\ 처"
-"럼, 기본 클래스 ``Godot.Object``\\ 의 멤버로 액세스 해야 하는 경우가 있습니"
-"다. 이런 경우를 위해, 싱글톤 인스턴스를 반환하는 ``Singleton`` 정적 속성을 제"
-"공합니다. 인스턴스의 타입은 ``Godot.Object``\\ 입니다."
+"하지만, 일부 드문 경우가 있어 충분하지 않습니다. 예를 들어 ``Connect``\\ 처"
+"럼 기본 클래스 ``Godot.Object``\\ 의 멤버로 액세스해야하는 경우가 있습니다. "
+"이런 경우를 위해, 싱글톤 인스턴스를 반환하는 ``Singleton`` 정적 속성을 제공합"
+"니다. 인스턴스의 타입은 ``Godot.Object``\\ 입니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
 msgid "String"
-msgstr "문자열(String)"
+msgstr "String"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:141
 msgid ""
@@ -275,10 +274,10 @@ msgid ""
 "extension method of ``StringBuilder`` instead of string. Alternatively, you "
 "can use ``string.Remove``."
 msgstr ""
-"``erase``: C#에서는 문자열이 변경되지 않아서, 확장 메서드에 전달된 문자열을 "
-"수정할 수 없습니다. 이런 이유로, ``Erase``\\ 는 문자열의 확장 메서드가 아닌 "
-"``StringBuilder``\\ 의 확장 메서드 형태로 추가되었습니다. 이를 대체하기 위"
-"해, ``string.Remove``\\ 를 사용할 수 있습니다."
+"``erase``: C#에서는 문자열이 변경되지 않아서 확장 메서드에 전달된 문자열을 수"
+"정할 수 없습니다. 이런 이유로 ``Erase``\\ 는 문자열의 확장 메서드가 아닌, "
+"``StringBuilder``\\ 의 확장 메서드 형태로 추가되었습니다. 이를 대체하기 위해 "
+"``string.Remove``\\ 를 사용할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:157
 msgid ""
@@ -286,8 +285,8 @@ msgid ""
 "which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
 "specify case sensitivity:"
 msgstr ""
-"``IsSubsequenceOf``/``IsSubsequenceOfi``: ``IsSubsequenceOf``\\ 의 과부하"
-"(overload)인 추가 메서드를 제공하여, 대소문자 구분을 명시적으로 할 수 있습니"
+"``IsSubsequenceOf``/``IsSubsequenceOfi``: ``IsSubsequenceOf``\\ 의 오버로드"
+"(overload)인 추가 메서드를 제공하여, 명시적으로 대소문자를 구분할 수 있습니"
 "다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:168
@@ -297,11 +296,11 @@ msgid ""
 "sensitivity:"
 msgstr ""
 "``Match``/``Matchn``/``ExprMatch``: ``Match``\\ 와 ``Matchn``\\ 이외에 추가 "
-"메서드를 제공하여, 대소문자 구분을 명시적으로 할 수 있습니다:"
+"메서드를 제공하여, 명시적으로 대소문자를 구분할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:179
 msgid "Basis"
-msgstr "Basis(기초)"
+msgstr "Basis"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:181
 msgid ""
@@ -309,14 +308,14 @@ msgid ""
 "Basis()`` initializes all primitive members to their default value. Use "
 "``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
 msgstr ""
-"C#에서 Struct은 매개변수 없는 생성자를 가질 수 없습니다. 따라서, ``new "
+"C#에서 Struct은 매개변수 없는 생성자를 가질 수 없습니다. 따라서 ``new "
 "Basis()``\\ 는 모든 기본 멤버를 기본 값으로 초기화합니다. GDScript와 C++에서 "
 "``Basis()``\\ 에 해당하는 것으로 ``Basis.Identity``\\ 를 사용합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:185
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:231
 msgid "The following method was converted to a property with a different name:"
-msgstr "다음 메서드들는 다른 이름으로 변환된 속성들입니다:"
+msgstr "다음 메서드들는 다른 이름으로 변경된 속성들입니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:206
@@ -330,7 +329,7 @@ msgstr "``Scale``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:194
 msgid "Transform2D"
-msgstr "Transform2D(변형2D)"
+msgstr "Transform2D"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:196
 msgid ""
@@ -366,7 +365,7 @@ msgstr "Plane"
 msgid ""
 "The following method was converted to a property with a *slightly* different "
 "name:"
-msgstr "다음 메서드는 *약간* 다른 이름으로 변환된 속성입니다:"
+msgstr "다음 메서드는 *약간* 다른 이름으로 변경된 속성입니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
 msgid "``center()``"
@@ -384,7 +383,7 @@ msgstr "Rect2"
 msgid ""
 "The following field was converted to a property with a *slightly* different "
 "name:"
-msgstr "다음 영역은 *약간* 다른 이름으로 변환된 속성입니다:"
+msgstr "다음 영역은 *약간* 다른 이름으로 변경된 속성입니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``end``"
@@ -419,7 +418,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:246
 msgid ""
 "The following methods were converted to a property with a different name:"
-msgstr "다음 메서드는 다른 이름으로 변환된 속성들입니다:"
+msgstr "다음 메서드는 다른 이름으로 변경된 속성들입니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
 msgid "``length()``"
@@ -519,7 +518,7 @@ msgid ""
 "``Godot.Array<T>(Godot.Array)`` constructor to create one."
 msgstr ""
 "``Godot.Array<T>``\\ 는 ``Godot.Array``\\ 를 둘러싸는 타입 안전 포장지입니"
-"다. 만들기 위해 ``Godot.Array<T>(Godot.Array)`` 생성자를 사용하세요."
+"다. 만들기 위해 ``Godot.Array<T>(Godot.Array)`` 생성자를 사용합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
 msgid "Dictionary"
@@ -527,7 +526,7 @@ msgstr "딕셔너리"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 msgid "Use ``Godot.Dictionary``."
-msgstr "``Godot.Dictionary``\\ 를 사용하세요."
+msgstr "``Godot.Dictionary``\\ 를 사용합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid ""
@@ -536,11 +535,11 @@ msgid ""
 msgstr ""
 "``Godot.Dictionary<T>``\\ 는 ``Godot.Dictionary``\\ 를 둘러싸는 타입 안전 포"
 "장지입니다. 만들기 위해 ``Godot.Dictionary<T>(Godot.Dictionary)`` 생성자를 사"
-"용하세요."
+"용합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:285
 msgid "Variant"
-msgstr "변수"
+msgstr "Variant"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:287
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
@@ -572,7 +571,7 @@ msgid ""
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield>`_."
 msgstr ""
-"단일 매개변수를 사용하는 GDScript의 ``yield``\\ 와 비슷한 C#의 `yield 키워드"
+"단일 매개변수를 사용하는 GDScript의 ``yield``\\ 와 비슷한 C#의 `yield 키워드 "
 "<https://docs.microsoft.com/ko/dotnet/csharp/language-reference/keywords/"
 "yield>`_."
 
@@ -594,7 +593,7 @@ msgid ""
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
 "GDScript에서 쓰이는 ``preload``\\ 는 C#에서 사용할 수 없습니다. 대신 ``GD."
-"Load`` 또는 ``ResourceLoader.Load``\\ 를 사용하세요."
+"Load`` 또는 ``ResourceLoader.Load``\\ 를 사용합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Other differences:"

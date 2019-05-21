@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,15 +22,13 @@ msgid "Design interfaces with the Control nodes"
 msgstr "컨트롤(Control) 노드로 인터페이스를 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
+#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
 "resolutions. It can be hard to build responsive interfaces that adapt to all "
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
-"responsive User Interface. To design your UI, you'll use the Control nodes. "
-"These are the nodes with green icons in the editor. There are dozens of "
-"them, to create anything from life bars to complex applications. Godot's "
-"entire editor and plugins use these nodes."
+"responsive User Interface."
 msgstr ""
 "컴퓨터 디스플레이, 모바일 폰, 그리고 TV 화면은 모든 크기와 모양을 갖습니다. "
 "게임을 출시하려면, 당신은 다양한 화면 비율과 해상도를 지원해야 합니다. 모든 "
@@ -41,34 +39,38 @@ msgstr ""
 "잡한 애플리케이션까지 만들 수 있습니다. Godot의 모든 에디터와 플러그인은 이 "
 "노드들을 사용합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
 msgstr "Godot 에디터는 엔진의 UI 프레임 워크로 제작되었습니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:16
 msgid "This guide will get you started with UI design. You will learn:"
 msgstr ""
 "이 강좌는 UI 디자인으로 시작할 것입니다. 당신은 이러한 것들을 배울 겁니다:"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:21
-msgid "The five most useful control nodes to build your games’ interface"
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
+#, fuzzy
+msgid "The five most useful control nodes to build your games' interface"
 msgstr "게임 인터페이스를 제작하는 가장 유용한 다섯 가지 컨트롤 노드들"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
 msgstr "UI 요소들의 앵커 작업 방법"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:23
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:20
 msgid ""
 "How to efficiently place and arrange your user interface using containers"
 msgstr ""
 "컨테이너를 사용해서 사용자 인터페이스를 효율적으로 배치하고 배열하는 방법"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
-msgid "The five most common containers"
-msgstr "가장 일반적인 다섯 가지 컨테이너"
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
+msgid ""
+"The five most common containers (at a later time, you can learn more about "
+"containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
+"page)."
+msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:27
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
 "To learn how to control the interface and connect it to other scripts, read :"
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
@@ -76,49 +78,51 @@ msgstr ""
 "인터페이스를 컨트롤하고 다른 스크립트에 연결하는 방법을 배우려면, `Build "
 "your first game UI in Godot <doc_ui_game_user_interface>` 를 읽어주세요."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
 msgid ""
-"Only use Control nodes when you design your interfaces. They have unique "
-"properties that allow them to work with one another. Other nodes, like "
-"Node2D, Sprite, etc. will not work. You can still use some nodes that work "
-"with others, like the AnimationPlayer, Tween or the StreamPlayer. Control "
-"nodes are CanvasItems like Node2D, so you can apply shaders to them."
+"To design your UI, you'll use the Control nodes. These are the nodes with "
+"green icons in the editor. There are dozens of them, for creating anything "
+"from life bars to complex applications. Godot's editor itself is built using "
+"Control nodes."
 msgstr ""
-"인터페이스를 설계할 때 오직 컨트롤 노드만 사용하세요. 그들은 서로 상호작용하"
-"는 독특한 속성을 지닙니다. Node2D, Sprite 등 과 같은 다른 노드들은 할 수 없습"
-"니다. 당신은 AnimationPlayer나 Tween, StreamPlayer같은 다른 노드들과 작동하"
-"는 일부 노드들을 사용할 수 있습니다. 컨트롤 노드는 Node2D와 같은 CanvasItems"
-"이므로, 그것들에 쉐이더를 적용할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:37
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
+msgid ""
+"Control nodes have unique properties that allow them to work well with one "
+"another. Other visual nodes, like Node2D and Sprite don't have these "
+"capabilities. So to make your life easier use Control nodes wherever "
+"possible when building your UIs."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
 msgstr "모든 컨트롤 노드는 동일한 메인 속성을 공유합니다:"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:38
 msgid "Anchor"
 msgstr "앵커(Anchor)"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Bounding rectangle"
 msgstr "경계 사각형(Bounding rectangle)"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Focus and focus neighbor"
 msgstr "포커스(Focus)와 포커스 이웃(Focus neighbor)"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 msgid "Size flags"
 msgstr "사이즈 플래그(Size flags)"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Margin"
 msgstr "마진(Margin)"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:44
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "The optional UI theme"
 msgstr "선택적인 UI 테마"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:46
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:45
 msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
@@ -126,11 +130,11 @@ msgstr ""
 "일단 당신이 컨트롤 노드의 기초를 이해했다면, 노드에서 파생되는 모든 다른 노드"
 "들을 이해하는 데 오래 걸리지 않을 겁니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:51
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:50
 msgid "The 5 most common UI elements"
 msgstr "가장 일반적인 5개의 UI 요소들"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:53
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:52
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
@@ -138,7 +142,7 @@ msgstr ""
 "Godot는 수십 개의 컨트롤 노드를 갖고 있습니다. 이들이 당신이 에디터 플러그인"
 "과 애플리케이션을 만드는 것을 도와줍니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:56
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:55
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
@@ -146,41 +150,41 @@ msgstr ""
 "대부분의 게임에, 당신은 오로지 다섯 가지 UI 요소와, 몇 개의 컨테이너들만 필요"
 "합니다. 컨트롤 노드들은 이렇습니다:"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:58
 msgid "Label: for displaying text"
 msgstr "Label: 문자를 보여주기 위해 사용합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:60
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
 msgstr ""
 "TextureRect: 보통은 배경으로 사용되고, 그 외 모든 정적 이미지에 사용합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:62
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:61
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
 msgstr ""
 "TextureProgress: 체력 막대, 로딩 막대, 가로 형태, 세로 형태, 혹은 방사 형태"
 "에 사용합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:63
 msgid "NinePatchRect: for scalable panels"
 msgstr "NinePatchRect: 확장 가능한 패널에 사용합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:65
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "TextureButton: to create buttons"
 msgstr "TextureButton: 버튼을 만들기 위해 사용합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:69
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:68
 msgid "The 5 most common Control nodes for UI design"
 msgstr "UI 디자인을 위한 5개의 가장 일반적인 컨트롤 노드들"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
 msgstr "TextureRect"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:73
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
@@ -190,9 +194,10 @@ msgstr ""
 "와 비슷하지만 다중 크기 조절 모드를 제공합니다. Sprite 노드의 동작을 변경하려"
 "면 Stretch Mode 속성을 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
+#, fuzzy
 msgid ""
-"``Scale On Expand (compat)`` scales the texture to fit the node’s bounding "
+"``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
@@ -200,43 +205,48 @@ msgstr ""
 "때 텍스쳐가 노드의 경계 사각형에 꽉 차도록 크기를 조절하고; 그렇지 않으면 이"
 "것은 ``Keep`` 모드와 다르지 않습니다. 호환성을 되돌리기 위한 기본 모드."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:79
-msgid "``Scale`` scales the texture to fit the node’s bounding rectangle"
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
+#, fuzzy
+msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr "``Scale`` 은 텍스쳐가 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-msgid "``Tile`` makes the texture repeat, but it won't scale"
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
+#, fuzzy
+msgid "``Tile`` makes the texture repeat, but it won't scale."
 msgstr ""
 "``Tile`` 은 텍스쳐가 바둑판으로 배열되도록 만들고, 크기를 조절하지 않습니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
+#, fuzzy
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
-"size, in the top left corner or the center of the frame respectively"
+"size, in the top left corner or the center of the frame respectively."
 msgstr ""
 "``Keep`` 과 ``Keep Centered`` 는 텍스쳐가 그 크기를 유지하게 합니다, 각각 경"
 "계의 좌측 상단과 중심에 위치시킵니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:84
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
+#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
-"the frame respectively"
+"the frame respectively."
 msgstr ""
 "``Keep Aspect`` 와 ``Keep Aspect Centered`` 는 텍스쳐의 크기를 조절하지만 그"
 "것의 크기 비율은 유지합니다, 각각 경계의 좌측 상단과 중심에 위치시킵니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
+#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
-"node’s limits"
+"node's limits."
 msgstr ""
 "``Keep Aspect Covered`` 는 ``Keep Aspect Centered`` 와 비슷하지만 경계 직사각"
 "형의 짧은 변 쪽은 꽉 차는 반면, 긴 변 쪽은 노드의 경계까지만 보여주고 짤립니"
 "다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
@@ -244,15 +254,15 @@ msgstr ""
 "Sprite 노드와 마찬가지로, 당신은 TextureRect의 색상을 바꿀 수 있습니다. "
 "``Modulate`` 속성을 눌러 색상 선택기를 사용하세요."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:92
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureRect modulated with a red color"
 msgstr "빨강 색으로 바뀐 TextureRect"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:98
 msgid "TextureButton"
 msgstr "TextureButton"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:97
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
 msgid ""
 "**TextureButton** is like TextureRect, except it has 5 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -266,7 +276,7 @@ msgstr ""
 "유용합니다. 여섯 번째 이미지 슬롯인, Click Mask는, 순수한 흰색과 검은색 2-비"
 "트를 사용해 클릭할 수 있는 영역을 정의하게 만듭니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:104
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""
 "In the Base Button section, you'll find a few checkboxes that change how the "
 "button behaves. When ``Toggle Mode`` is on, the button will toggle between "
@@ -283,15 +293,15 @@ msgstr ""
 "몇 가지 속성들을 공유합니다: ``modulate`` 속성을 갖고 있어서, 색상을 바꿀 수 "
 "있고, ``Resize`` 와 ``Stretch`` 모드로 크기의 변화를 바꿀 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:114
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureButton and its 5 texture slots"
 msgstr "TextureButton과 5개의 텍스쳐 슬롯"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
 msgid "TextureProgress"
 msgstr "TextureProgress"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:119
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:122
 msgid ""
 "**TextureProgress** layers up to 3 sprites to create a progress bar. The "
 "Under and Over textures sandwich the Progress one, which displays the bar's "
@@ -300,7 +310,7 @@ msgstr ""
 "**TextureProgress** 는 진행 막대를 만들기 위해 3개의 스프라이트로 층을 쌓습니"
 "다. Under와 Over 텍스쳐 사이에 막대의 값을 보여줄 Progress를 끼워 넣습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:123
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:126
 msgid ""
 "The ``Mode`` property controls the direction in which the bar grows: "
 "horizontally, vertically, or radially. If you set it to radial, the "
@@ -311,7 +321,7 @@ msgstr ""
 "면 방사형으로 말입니다. 방사형으로 설정하면, ``Initial Angle`` 과 ``Fill "
 "Degrees``  속성으로 당신은 게이지의 범위를 제한할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:128
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
 msgid ""
 "To animate the bar, you'll want to look at the Range section. Set the "
 "``Min`` and ``Max`` properties to define the range of the gauge. For "
@@ -328,15 +338,15 @@ msgstr ""
 "과 ``Max`` 를 기본 값인 ``1`` 과 ``100`` 으로 두고, ``Value`` 속성을 ``40`` "
 "으로 하면, ``Progress`` 텍스쳐의 40%가 보여지고 60%는 계속 안 보일 겁니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:138
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"
 msgstr "3분의 2가 채워진 TextureProgress 막대"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:144
 msgid "Label"
 msgstr "라벨(Label)"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:146
 msgid ""
 "**Label** prints text to the screen. You'll find all its properties in the "
 "Label section, in the Inspector. Write the text in the ``Text`` property, "
@@ -350,15 +360,15 @@ msgstr ""
 "하세요. Autowrap이 체크가 풀려있으면, 노드의 크기를 조절할 수 없습니다. 당신"
 "은 Align과 Valign을 사용해서 문자를 가로와 세로로 정렬할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:152
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "Picture of a Label"
 msgstr "Label의 사진"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
 msgid "NinePatchRect"
 msgstr "NinePatchRect"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:160
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
@@ -369,22 +379,22 @@ msgstr ""
 "의 크기에 맞추어지지만, 모서리 부분은 크기가 바뀌지 않습니다. 이것은 패널이"
 "나 대화 상자, UI에서 크기 조절이 가능한 배경을 만들 때 유용합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:164
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "NinePatchRect scaled with the min\\_size property"
 msgstr "min\\_size 속성으로 조절된 NinePatchRect"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:170
 msgid "There are two workflows to build responsive UIs"
-msgstr "반응형 UI를 만들기 위한 두 가지 워크플로우가 있습니다"
+msgstr "반응형 UI를 만들기 위한 두 가지 워크플로가 있습니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:169
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:172
 msgid ""
 "There are two workflows to build scalable and flexible interfaces in Godot:"
 msgstr ""
-"Godot에서 확장성 있고 유연한 인터페이스를 만들기 위한 두 가지 워크플로우가 있"
-"습니다:"
+"Godot에서 확장성 있고 유연한 인터페이스를 만들기 위한 두 가지 워크플로가 있습"
+"니다:"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:171
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
 msgid ""
 "You have many container nodes at your disposal that scale and place UI "
 "elements for you. They take control over their children."
@@ -392,7 +402,7 @@ msgstr ""
 "원하는 만큼의 UI 요소들을 확장하고 배치할 수 있는 많은 컨테이너 노드들이 있습"
 "니다. 컨테이너는 그들의 자식인 UI 요소들을 제어합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:172
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
 msgid ""
 "On the other side, you have the layout menu. It helps you to anchor, place "
 "and resize a UI element within its parent."
@@ -400,7 +410,7 @@ msgstr ""
 "반대로, 당신은 레이아웃 메뉴가 있습니다. 이것은 UI 요소들을 부모 내에서 부모"
 "위치를 기준로 위치를 고정하거나 배치하고 크기 조절하도록 돕습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
 msgid ""
 "The two approaches are not always compatible. Because a container controls "
 "its children, you cannot use the layout menu on them. Each container has a "
@@ -418,7 +428,7 @@ msgstr ""
 "깨끗한 계층 구조를 만들 수 있지만, 항목을 행이나 열, 격자 등으로 배열하기는 "
 "더 어렵습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:176
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:179
 msgid ""
 "As you create UIs for your games and tools, you'll develop a sense for what "
 "fits best in each situation."
@@ -426,11 +436,11 @@ msgstr ""
 "게임과 도구를 위해 UI를 만들 때, 당신은 각 상황에서 무엇이 가장 적당한지에 대"
 "한 감각을 기르게 될 것입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:180
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:183
 msgid "Place UI elements precisely with anchors"
 msgstr "앵커를 사용하여 UI 요소를 정밀하게 배치하세요"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:182
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:185
 msgid ""
 "Control nodes have a position and size, but they also have anchors and "
 "margins. Anchors define the origin, or the reference point, for the Left, "
@@ -441,21 +451,22 @@ msgstr ""
 "Anchors는 노드의 Left, Top, Right, Bottom 모서리를 위해 원점이나 기준점을 정"
 "의합니다. 4개의 앵커 중 아무거나 바꿔서 margins의 기준점을 변경하세요."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:189
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
 msgid "The anchor property"
 msgstr "앵커 속성"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:195
 msgid "How to change the anchor"
 msgstr "앵커를 바꾸는 방법"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:194
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
+#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
 "layout menu appears above the viewport, in the toolbar. It gives you a list "
 "of icons to set all 4 anchors with a single click, instead of using the "
-"inspector’s 4 properties. The layout menu will only show up when you select "
+"inspector's 4 properties. The layout menu will only show up when you select "
 "a control node."
 msgstr ""
 "모든 속성과 마찬가지로, 인스펙터에서 4개의 앵커 포인트를 편집할 수 있습니다"
@@ -464,15 +475,15 @@ msgstr ""
 "정할 수 있습니다, 인스펙터의 4개의 속성을 사용하는 대신 말이죠. 레이아웃 메뉴"
 "는 오직 컨트롤 노드를 선택할 때만 보여집니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:203
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "The layout menu in the viewport"
 msgstr "뷰포트 내의 레이아웃 메뉴"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:209
 msgid "Anchors are relative to the parent container"
 msgstr "앵커는 부모 컨테이너를 기준로 합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:208
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:211
 msgid ""
 "Each anchor is a value between 0 and 1. For the left and top anchors, a "
 "value of 0 means that without any margin, the node's edges will align with "
@@ -489,7 +500,7 @@ msgstr ""
 "를 픽셀 단위로 나타냅니다, 반면에 앵커는 부모 컨테이너의 크기와 관련이 있습니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:218
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:221
 msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
@@ -497,11 +508,11 @@ msgstr ""
 "마진은 앵커 위치에 상대적이고, 앵커 위치는 앵커와 상대적입니다. 실제의 경우, "
 "당신은 종종 컨테이너가 마진을 업데이트하도록 할 것입니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:223
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:226
 msgid "Margins change with the anchor"
 msgstr "마진은 앵커가 변하면 같이 변합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:225
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:228
 msgid ""
 "Margins update automatically when you move or resize a control node. They "
 "represent the distance from the control node's edges to its anchor, which is "
@@ -516,11 +527,11 @@ msgstr ""
 "드가 항상 컨테이너에 있는 이유입니다. 부모가 없다면, 마진은 인스펙터 내에 "
 "Rect 섹션에 설정된, 자신의 경계 사각형에 상대적으로 될 것입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:235
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:238
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
 msgstr "CenterContainer에 있는 \"Full Rect\" 앵커로 설정된 마진"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:237
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:240
 msgid ""
 "Try to change the anchors or nest your Control nodes inside Containers: the "
 "margins will update. You'll rarely need to edit the margins manually. Always "
@@ -536,13 +547,13 @@ msgstr ""
 "MarginContainer를 사용하세요. 세로 메뉴를 만들고 싶나요? VBoxContainer를 사용"
 "하세요. 아래에서 더 자세히 설명하겠습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:246
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:249
 msgid "Use size tags to change how UI elements fill the available space"
 msgstr ""
 "UI 요소가 이용 가능한 영역을 채우는 방식을 바꾸기 위해서 사이즈 태그를 사용하"
 "세요"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:248
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:251
 msgid ""
 "Every control node has Size Flags. They tell containers how the UI elements "
 "should scale. If you add the \"Fill\" flag to the Horizontal or Vertical "
@@ -560,11 +571,11 @@ msgstr ""
 "에 있다면, 그들은 각자의 가능한 공간의 3분의 1을 차지하고 그 외는 사용하지 않"
 "을 겁니다. 컨테이너는 노드를 제어하여 크기를 자동으로 조절합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:258
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:261
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
 msgstr "HBoxContainer에 있는 3개의 UI 요소들, 이들은 수평으로 정렬됩니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:260
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:263
 msgid ""
 "The \"Expand\" flag lets the UI element take all the space it can, and push "
 "against its siblings. Its bounding rectangle will grow against the edges of "
@@ -574,14 +585,14 @@ msgstr ""
 "를 밀어냅니다. 경계 사각형은 부모의 모서리까지, 혹은 다른 UI 노드로 가로막힐 "
 "때까지 커집니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:266
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
 msgstr ""
 "위와 같은 샘플 예제에서, 가운데 노드는 \"Expand\" 사이즈 플래그가 설정되어 있"
 "습니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:272
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
@@ -589,11 +600,11 @@ msgstr ""
 "당신이 사이즈 태그를 이해하려면 몇 번의 연습이 필요할 겁니다, 왜냐하면 당신"
 "이 인터페이스를 만드는 방식에 따라서 결과가 많이 달라지기 때문입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:273
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:276
 msgid "Arrange control nodes automatically with containers"
 msgstr "컨테이너에 컨트롤 노드를 자동으로 배열하기"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:278
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
@@ -605,7 +616,7 @@ msgstr ""
 "페이스나 중심 노드 주위에 패딩을 추가합니다. 모든 내장 컨테이너는 에디터 내에"
 "서 업데이트 되므로 컨테이너가 작동되는 것을 바로 확인하실 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:281
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:284
 msgid ""
 "Containers have a few special properties to control how they arrange UI "
 "elements. To change them, navigate down to the Custom Constants section in "
@@ -614,11 +625,11 @@ msgstr ""
 "컨테이너는 UI 요소들을 배열하는 방법을 제어하기 위한 일부 특별한 속성을 지닙"
 "니다. 컨테이너를 변화하기 위해, 인스펙터의  Custom Constants 섹션으로 갑시다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:286
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:289
 msgid "The 5 most useful containers"
 msgstr "다섯 가지 가장 유용한 컨테이너들"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:288
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
@@ -626,24 +637,24 @@ msgstr ""
 "당신이 도구를 제작하는 것이라면, 모든 컨테이너가 필요할 수도 있겠지만, 대부분"
 "의 게임들은, 이정도만 있어도 충분합니다:"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
 msgid "MarginContainer, to add margins around part of the UI"
 msgstr "MarginContainer, UI의 가장자리에 여백을 추가함"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:292
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 msgid "CenterContainer, to center its children in its bounding box"
 msgstr "CenterContainer, 경계 사각형 안에 자식을 중앙에 둠"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:293
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:296
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
 msgstr "VboxContainer와 HboxContainer, UI 요소들을 행이나 열로 배열함"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:298
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
 msgstr "GridContainer, 컨트롤 노드를 바둑판 같은 무늬로 배열함"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:297
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:300
 msgid ""
 "CenterContainer centers all its children inside of its bounding rectangle. "
 "It's one you typically use for title screens, if you want the options to "
@@ -656,12 +667,12 @@ msgstr ""
 "앙에 두기 때문에, 내부에 하나의 컨테이너가 중첩되어 있어야 합니다. 대신 텍스"
 "쳐나 버튼을 놓는다면, 그들은 쌓일 것입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:305
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
 msgstr "실행 중인 CenterContainer. 체력 막대가 부모 컨테이너의 중앙에 있다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:311
 msgid ""
 "The MarginContainer adds a margin on any side of the child nodes. Add a "
 "MarginContainer that encompasses the entire viewport to add a separation "
@@ -676,12 +687,12 @@ msgstr ""
 "다. 체크박스는 건들지 않아도 됩니다: 해당하는 값의 상자를 선택하고 아무 숫자"
 "나 치세요. 자동으로 작동합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:317
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:320
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
 msgstr ""
 "게임 사용자 인터페이스 주변에 MarginContainer가 40px의 여백을 추가합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:319
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:322
 msgid ""
 "There are two BoxContainers: VBoxContainer and HBoxContainer. You cannot add "
 "the BoxContainer node itself, as it is a helper class, but you can use "
@@ -697,11 +708,11 @@ msgstr ""
 "른 크기로 하여 복잡한 격자를 만들 수 있고, 이걸로 당신은 마음 속 내용을 만들"
 "어낼 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:328
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:331
 msgid "The HBoxContainer horizontally aligns UI elements"
 msgstr "HBoxContainer가 UI 요소들을 수평으로 배열합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:330
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:333
 msgid ""
 "VBoxContainer automatically arranges its children into a column. It puts "
 "them one after the other. If you use the separation parameter, it will leave "
@@ -716,7 +727,7 @@ msgstr ""
 "게, 스크립트에서 맨 앞이나 맨 뒤에 간격을 띄우는 컨트롤 노드를 추가하는, "
 "``add_spacer`` 메서드를 갖고 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:337
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:340
 msgid ""
 "The GridContainer lets you arrange UI elements in a grid-like pattern. You "
 "can only control the number of columns it has, and it will set the number of "
@@ -734,11 +745,11 @@ msgstr ""
 "추가해 행을 늘릴 수 있습니다. 박스 컨테이너처럼, 이것도 각기 행과 열 사이에 "
 "수직과 수평 분리를 설정하는 두 개의 속성이 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:348
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:351
 msgid "A GridContainer with 2 columns. It sizes each column automatically."
 msgstr "2열로 된 GridContainer. 각 행은 자동으로 크기가 조절됩니다."
 
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:353
 msgid ""
 "Godot's UI system is complex, and has a lot more to offer. To learn how to "
 "design more advanced interfaces, head to the :ref:`GUI section <toc-learn-"

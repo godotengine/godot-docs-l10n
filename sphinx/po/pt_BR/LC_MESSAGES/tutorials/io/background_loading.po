@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,13 @@ msgid ""
 "alternative of using the ``ResourceInteractiveLoader`` class for smoother "
 "load screens."
 msgstr ""
+"Ao trocar a cena atual do seu jogo (ex. ir para uma nova fase), você pode "
+"querer mostrar uma tela de carregamento com alguma indicação do progresso a "
+"ser feito. O principal método de carregamento (``ResourceLoader::load`` ou "
+"só ``load`` em GDScript) bloqueia a thread, fazendo com que seu jogo pareça "
+"estar congelado e sem resposta enquanto o recurso está sendo carregado. Este "
+"documento discute a alternativa de usar a classe "
+"``ResourceInteractiveLoader`` para telas de carregamento mais suaves."
 
 #: ../../docs/tutorials/io/background_loading.rst:15
 msgid "ResourceInteractiveLoader"
@@ -44,6 +51,11 @@ msgid ""
 "that is loaded by the main resource. For example, if you're loading a scene "
 "that loads 10 images, each image will be one stage."
 msgstr ""
+"A classe ``ResourceInteractiveLoader`` permite que você carregue um recurso "
+"em etapas. A cada vez que o método ``poll`` é chamado, uma nova etapa é "
+"carregada, e o controle é retornado ao chamador. Cada etapa é geralmente um "
+"sub-recurso que é carregado pelo recurso principal. Por exemplo, se você "
+"está carregando uma cena que tem 10 imagens, cada imagem será uma etapa."
 
 #: ../../docs/tutorials/io/background_loading.rst:24
 msgid "Usage"
@@ -55,13 +67,15 @@ msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:29
 msgid "Obtaining a ResourceInteractiveLoader"
-msgstr ""
+msgstr "Obtendo um ResourceInteractiveLoader"
 
 #: ../../docs/tutorials/io/background_loading.rst:35
 msgid ""
 "This method will give you a ResourceInteractiveLoader that you will use to "
 "manage the load operation."
 msgstr ""
+"Este método te dará um ResourceInteractiveLoader que você pode usar para "
+"gerenciar a operação de carregamento."
 
 #: ../../docs/tutorials/io/background_loading.rst:39
 msgid "Polling"
@@ -175,6 +189,8 @@ msgid ""
 "ResourceInteractiveLoader can be used from multiple threads. A couple of "
 "things to keep in mind if you attempt it:"
 msgstr ""
+"O ResourceInteractiveLoader pode ser usado em múltiplas threads. Umas "
+"coisinhas para ter em mente caso tente fazer isso:"
 
 #: ../../docs/tutorials/io/background_loading.rst:201
 msgid "Use a semaphore"

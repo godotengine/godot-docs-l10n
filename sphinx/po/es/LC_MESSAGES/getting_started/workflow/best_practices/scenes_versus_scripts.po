@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,16 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:4
 msgid "When to use scenes versus scripts"
-msgstr ""
+msgstr "Cuándo usar escenas y cuándo scripts"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:6
 msgid ""
 "We've already covered how scenes and scripts are different. Scripts define "
 "an engine class extension with imperative code, scenes with declarative code."
 msgstr ""
+"Ya hemos cubierto la diferencia entre escenas y scripts. Los scripts definen "
+"una extensión de clases del motor con código imperativo, las escenas lo "
+"hacen con código declarativo."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:10
 msgid ""
@@ -34,10 +37,15 @@ msgid ""
 "are often used in conjunction with a script so that the scene acts as an "
 "extension of the scripts declarative code."
 msgstr ""
+"Como resultado, las capacidades de cada sistema son diferentes. Las escenas "
+"pueden definir cómo se inicializa una clase extendida, pero no cuál es su "
+"comportamiento. Las escenas también suelen ser usadas en conjunto con "
+"scripts, así que las escenas actúan como extensión del código declarativo "
+"del script."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
 msgid "Anonymous types"
-msgstr ""
+msgstr "Tipos anónimos"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:18
 msgid ""
@@ -45,6 +53,9 @@ msgid ""
 "alone. This is, in essence, what the Godot Editor does, only in the C++ "
 "constructor of its objects."
 msgstr ""
+"Es posible definir escenas completamente usando sólo scripts. Esto es en "
+"escencia lo que hace el editor de Godot, sólo que lo hace en el constructor C"
+"++ de sus objetos."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
 msgid ""
@@ -52,6 +63,9 @@ msgid ""
 "is identical to creating in-engine classes whereas handling scenes requires "
 "a change in API:"
 msgstr ""
+"El dilema puede surgir al tener que elegir cuál usar. Crear instancias de un "
+"script es idéntico a crear clases en el motor, por lo que manipular escenas "
+"requiere un cambio en el API:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:59
 msgid ""
@@ -59,6 +73,10 @@ msgid ""
 "differences between engine and script code. The larger and more complex the "
 "node, the more reason there is to build it as a scene."
 msgstr ""
+"Además, los scripts funcionan un poco más lentos que las escenas debido a la "
+"diferencia de velocidad entre el motor y el código del script. Mientras más "
+"grande sea, más complejo es el nodo, lo que nos da una mayor razón para "
+"construirlo como escena."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
 msgid "Named types"
@@ -71,10 +89,14 @@ msgid ""
 "dialog with an optional icon. In these cases, the user's ability to use the "
 "script is much more streamlined. Rather than having to..."
 msgstr ""
+"En algunos casos, un usuario puede registrar un script como un nuevo tipo de "
+"nodo en sí mismo. Esto muestra el tipo nuevo de nodo o recurso en el diálogo "
+"de creación con un icono opcional. En esos casos, la habilidad del usuario "
+"para usar scripts es mucho más simplificada. En lugar de tener que..."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:71
 msgid "Know the base type of the script they would like to use."
-msgstr ""
+msgstr "Conocer el tipo base del script que quieran usar."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
 msgid "Create an instance of that base type."
@@ -86,7 +108,7 @@ msgstr "Agrega el script al nodo."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
 msgid "(Drag-n-drop method)"
-msgstr ""
+msgstr "(Método de arrastrar y soltar)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
 msgid "Find the script in the FileSystem dock."
@@ -98,17 +120,19 @@ msgstr "Arrastre el script hasta el nodo en el panel de escenas."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
 msgid "(Property method)"
-msgstr ""
+msgstr "(Método de propiedad)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:85
 msgid ""
 "Scroll down to the bottom of the Inspector to find the ``script`` property "
 "and select it."
 msgstr ""
+"Baja al final del inspector para encontrar la propiedad ``script`` y "
+"selecciónala."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:87
 msgid "Select \"Load\" from the dropdown."
-msgstr ""
+msgstr "Selecciona ``Cargar`` de la lista desplegable."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:89
 msgid "Select the script from the file dialog."
@@ -121,6 +145,10 @@ msgid ""
 "of the above work. The creation dialog even has a search bar to look up the "
 "type by name."
 msgstr ""
+"Con un script registrado, el tipo del script se convierte en una opción de "
+"creación como los demás Node y Resource en el sistema. No es necesario hacer "
+"nada de lo mostrado anteriormente, el diálogo de creación además tiene una "
+"barra de búsqueda donde se puede buscar el tipo por nombre."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:96
 msgid "There are two systems for registering types..."
@@ -133,45 +161,53 @@ msgstr ":ref:`Tipos Personalizados <doc_making_plugins>`"
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:100
 msgid "Editor-only. Typenames are not accessible at runtime."
 msgstr ""
+"Solo para el editor. Los tipos con nombre no son accesibles en tiempo de "
+"ejecución."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:102
 msgid "Does not support inherited custom types."
-msgstr ""
+msgstr "No soporta tipos personalizados heredados."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:104
 msgid "An initializer tool. Creates the node with the script. Nothing more."
-msgstr ""
+msgstr "Una herramienta inicializadora. Crea el nodo con el script, nada más."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:106
 msgid ""
 "Editor has no type-awareness of the script or its relationship to other "
 "engine types or scripts."
 msgstr ""
+"El editor no está pendiente del tipo del script o su relación con otros "
+"tipos del engine o scripts."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:109
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:127
 msgid "Allows users to define an icon."
-msgstr ""
+msgstr "Permite al usuario definir un icono."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:111
 msgid ""
 "Works for all scripting languages because it deals with Script resources in "
 "abstract."
 msgstr ""
+"Funciona para todos los lenguajes de scripting porque funciona con los "
+"recursos Script de manera abstracta."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:113
 msgid ""
 "Set up using :ref:`EditorPlugin.add_custom_type "
 "<class_EditorPlugin_method_add_custom_type>`."
 msgstr ""
+"Se configura usando :ref:`EditorPlugin.add_custom_type "
+"<class_EditorPlugin_method_add_custom_type>`."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:115
 msgid ":ref:`Script Classes <doc_scripting_continued_class_name>`"
-msgstr ""
+msgstr ":ref:`Script Classes <doc_scripting_continued_class_name>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."
-msgstr ""
+msgstr "Accesible en el editor y en tiempo de ejecución."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:119
 msgid "Displays inheritance relationships in full."
@@ -182,18 +218,25 @@ msgid ""
 "Creates the node with the script, but can also change types or extend the "
 "type from the editor."
 msgstr ""
+"Crea el nodo con el script, pero también cambia el tipo o extiende el tipo "
+"desde el editor."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:124
 msgid ""
 "Editor is aware of inheritance relationships between scripts, script "
 "classes, and engine C++ classes."
 msgstr ""
+"El editor está pendiente de la relación de herencia entre scripts, clases de "
+"script y clases C++ del motor."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:129
 msgid ""
 "Engine developers must add support for languages manually (both name "
 "exposure and runtime accessibility)."
 msgstr ""
+"Los desarrolladores que trabajan sobre el motor deben agregar soporta para "
+"lenguajes manualmente (tanto la exposición del nombre como la accesibilidad "
+"en tiempo de ejecución)."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
 msgid "Godot 3.1+ only."
@@ -205,6 +248,9 @@ msgid ""
 "scripting languages. Each scripting language must implement its own support "
 "for exposing this information."
 msgstr ""
+"El editor escanea las carpetas del proyecto y registra cualquier nombre "
+"expuesto para todos los lenguajes de scripting. Cada lenguaje de scripting "
+"debe incorporar su propio soporte para exponer esta información."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:138
 msgid ""
@@ -213,6 +259,11 @@ msgid ""
 "script resource. Creating instances and accessing constants or static "
 "methods is viable from anywhere."
 msgstr ""
+"Ambas metodologías agregan nombres al diálogo de creación, pero para clases "
+"de script en particular, también permite a los usuarios acceder por el "
+"nombre del tipo sin necesidad de cargar el recurso de script. La creación de "
+"instancias y acceso a constantes o métodos estáticos es viable desde "
+"cualquier parte."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:143
 msgid ""
@@ -221,11 +272,17 @@ msgid ""
 "creating in-house tools for designers to use will find an easier time of "
 "things this way."
 msgstr ""
+"Con características como esta, puede preferirse que un tipo sea un script "
+"sin una escena debido a la facilidad de uso que le da a los usuarios. "
+"Quienes estén desarrollando plugins o creando herramientas propias para "
+"diseñadores, encontrarán mucho más sencillo hacer las cosas de este modo."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:148
 msgid ""
 "On the downside, it also means having to use largely imperative programming."
 msgstr ""
+"Un aspecto negativo de esto es que implica tener que usar mucha programación "
+"imperativa."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
 msgid "Conclusion"
@@ -243,6 +300,10 @@ msgid ""
 "chances are that it should probably be a script, likely one with a custom "
 "name/icon."
 msgstr ""
+"Si se desea crear una herramienta básica que será reutilizada en distintos "
+"proyectos y donde gente de todo tipo de nivel la usará (incluyendo aquellos "
+"que no se llaman a si mismos \"programadores\"), entonces hay chances de que "
+"deba ser un script, probablemente uno con un nombre/icono personalizado."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:160
 msgid ""
@@ -250,6 +311,9 @@ msgid ""
 "should always be a scene. Scenes are easier to track/edit and provide more "
 "security than scripts."
 msgstr ""
+"Si se desea crear un concepto que es particular para el juego, entonces debe "
+"ser una escena. Las escenas son más fáciles de revisar/editar y proveen más "
+"seguridad que los scripts."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:164
 msgid ""
@@ -257,3 +321,6 @@ msgid ""
 "this in 3.1 by declaring a script class and giving it a scene as a constant. "
 "The script becomes, in effect, a namespace:"
 msgstr ""
+"Si uno desea darle un nombre a una escena, también se puede hacer en 3.1 "
+"declarando una clase script y dándole la escena como constante, de este modo "
+"el script se vuelve un espacio de nombres:"

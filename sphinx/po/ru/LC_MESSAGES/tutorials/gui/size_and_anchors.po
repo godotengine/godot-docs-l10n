@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,4 +64,23 @@ msgid ""
 "Here, the control is set to expand its bottom-right corner with that of the "
 "parent, so when re-sizing the parent, the control will always cover it, "
 "leaving a 20 pixel margin:"
+msgstr ""
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:42
+#, fuzzy
+msgid "Centering a control"
+msgstr "Создание проекта"
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:44
+msgid ""
+"To center a control in its parent, set its anchors to 0.5 and each margin to "
+"half of its relevant dimension. For example, the code below shows how a "
+"TextureRect can be centered in its parent:"
+msgstr ""
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:63
+msgid ""
+"Setting each anchor to 0.5 moves the reference point for the margins to the "
+"center of its parent. From there, we set negative margins so that the "
+"control gets its natural size."
 msgstr ""

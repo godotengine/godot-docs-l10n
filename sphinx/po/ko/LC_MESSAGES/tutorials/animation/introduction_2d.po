@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:4
 msgid "Introduction to the 2D animation features"
-msgstr ""
+msgstr "2D 애니메이션 특징 소개"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 msgid "Overview"
@@ -30,73 +30,90 @@ msgid ""
 "The :ref:`class_AnimationPlayer` node allows you to create anything from "
 "simple to complex animations."
 msgstr ""
+":ref:`class_AnimationPlayer` 노드는 간단한 애니메이션부터 복잡한 애니메이션까"
+"지 만들 수 있습니다."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:12
+#, fuzzy
 msgid "In this guide you learn to:"
-msgstr ""
+msgstr "이 가이드는 다음을 배웁니다:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:14
+#, fuzzy
 msgid "Work with the Animation Panel"
-msgstr ""
+msgstr "애니메이션 패널 작업"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:15
+#, fuzzy
 msgid "Animate any property of any node"
-msgstr ""
+msgstr "노드의 속성 애니메이션하기"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:16
 msgid "Create a simple animation"
-msgstr ""
+msgstr "간단한 애니메이션 만들기"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:17
 msgid "Call functions with the powerful Call Function Tracks"
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:19
+#, fuzzy
 msgid ""
 "In Godot, you can animate anything available in the Inspector, such as Node "
 "transforms, sprites, UI elements, particles, visibility and color of "
 "materials, and so on. You can also modify values of script variables and "
 "call any function."
 msgstr ""
+"Godot에서 당신은 인스펙터의 노드 변형, 스프라이트, UI 요소, 입자, 가시성 및 "
+"재료 색상 기타 등을  애니메이션 할 수 있습니다. 스크립트 변수 값을 수정하고 "
+"임의의 함수를 호출할 수도 있습니다."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:25
 msgid "Create an AnimationPlayer node"
-msgstr ""
+msgstr "AnimationPlayer 노드 만들기"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:27
 msgid ""
 "To use the animation tools we first have to create an :ref:"
 "`class_AnimationPlayer` node."
 msgstr ""
+"애니메이션 도구를 사용하기 위해서는 먼저 :ref:`class_AnimationPlayer` 노드를 "
+"만들어야 합니다."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:30
+#, fuzzy
 msgid ""
 "The AnimationPlayer node type is the data container for your animations. One "
 "AnimationPlayer node can hold multiple animations, that can automatically "
 "transition to one another."
 msgstr ""
+"AnimationPlayer 노드 유형은 애니메이션의 데이터 컨테이너입니다.. "
+"AnimationPlayer 노드 하나로 여러 애니메이션을 저장할 수 있으며 자동으로 서로 "
+"전환될 수 있습니다."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:37
 msgid "The AnimationPlayer node"
-msgstr ""
+msgstr "AnimationPlayer 노드"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:39
 msgid ""
 "Click on the AnimationPlayer node in the Node tab to open the Animation "
 "Panel at the bottom of the viewport."
 msgstr ""
+"노드 탭에서 AnimationPlayer 노드를 클릭해서 뷰포트 하단의 애니메이션 패널을 "
+"엽니다."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:45
 msgid "The animation panel position"
-msgstr ""
+msgstr "애니메이션 패널 위치"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:47
 msgid "It consists of five parts:"
-msgstr ""
+msgstr "애니메이션 패널은 5가지 부분으로 구성되어 있습니다:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:52
 msgid "The animation panel"
-msgstr ""
+msgstr "애니메이션 패널"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:54
 msgid "Animation controls (i.e. add, load, save, and delete animations)"
@@ -125,6 +142,8 @@ msgid ""
 "See the `animation panel reference <#animation-panel-reference>`__ below for "
 "details."
 msgstr ""
+"자세한 설명은 아래의 `animation panel reference <#animation-panel-"
+"reference>`__ 를 보세요."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:65
 msgid "Computer animation relies on keyframes"
@@ -132,42 +151,51 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:67
 msgid "A keyframe defines the value of a property at a certain point in time."
-msgstr ""
+msgstr "키프레임은 특정 시점의 속성이 가지는 값을 정의합니다."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:69
+#, fuzzy
 msgid "White and blue diamond shapes represent keyframes in the timeline."
-msgstr ""
+msgstr "흰색과 파란 다이아몬드 모양은 타임라인에서 키프레임을 나타냅니다."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:74
 msgid "Keyframes in Godot"
-msgstr ""
+msgstr "Godot에서의 키프레임"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:76
 msgid ""
 "The engine interpolates values between keyframes, resulting in a gradual "
 "change in values over time."
 msgstr ""
+"엔진은 키프레임 사이의 값을 보간하여 시간이 지남에 따라 값이 점진적으로 변하"
+"게 됩니다."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:82
 msgid "Two keyframes are all it takes to obtain a smooth motion"
-msgstr ""
+msgstr "두 개의 키프레임만 있으면 부드러운 움직임을 얻을 수 있습니다"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:84
 msgid ""
 "The timeline lets you insert keyframes and change their timing. It also "
 "defines how long the animation is."
 msgstr ""
+"타임라인을 사용하면 키프레임을 삽입하고 시기를 변경할 수 있습니다. 또한 애니"
+"메이션의 길이를 정의합니다."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:90
 msgid "The timeline in the animation panel"
-msgstr ""
+msgstr "애니메이션 패널에서의 타임라인"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:92
+#, fuzzy
 msgid ""
 "Each line of the Animation Panel is an animation track. Normal and Transform "
 "tracks reference node properties. Their name or id is a path to the node and "
 "the affected property."
 msgstr ""
+"애니메이션 패널의 각각의 줄은 애니메이션 트랙입니다. Normal 과 Transform 은 "
+"참조하는 노드 속성을 추적합니다. 이들의 이름이나 아이디는 노드와 영향을 받는 "
+"속성의 경로입니다."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:99
 msgid "Example of Normal animation tracks"

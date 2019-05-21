@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
 msgid "What are Godot classes really?"
-msgstr ""
+msgstr "Godot 클래스는 정말 무엇입니까?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
@@ -28,6 +28,10 @@ msgid ""
 "design. *How* they do this may not be clear to beginner or intermediate "
 "users though."
 msgstr ""
+"Godot는 생성 타입에 있어 두가지 중심 의미가 있습니다: 스크립트와 씬입니다. "
+"Godot를 객체 지향 디자인 중심으로 전개할 때, 둘은 모두 \"클래스\"를 나타냅니"
+"다. 초보자나 중급자에게 이것이 *어떻게* 가능한 지를 분명하게 알기는 어렵습니"
+"다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:11
 msgid ""
@@ -36,6 +40,9 @@ msgid ""
 "they are resources that tell the engine a sequence of initializations to "
 "perform on an engine class."
 msgstr ""
+"Godot 엔진은 별도의 설치없이 클래스를 제공합니다 (:ref:`Node <class_Node>`\\ "
+"처럼 말이죠), 하지만 사용자가 만든 타입은 사실 클래스가 아닙니다. 대신 엔진 "
+"클래스에서 작동하기 위해 엔진에게 초기화 시퀀스를 알려주는 리소스입나다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:16
 msgid ""
@@ -44,25 +51,26 @@ msgid ""
 "class information (also called \"reflection\"). Things stored in the ClassDB "
 "include, among other things..."
 msgstr ""
+"Godot의 내장 클래스는 메서드를 가지며 클래스의 데이터를 :ref:`ClassDB "
+"<class_ClassDB>`\\ 로 등록합니다. 이 데이터베이스는 (\"reflection\"이라 하"
+"는) 클래스 정보에 액세스하여 런타임을 제공합니다. ClassDB에 저장된 것은 다음 "
+"것도 포함됩니다..."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:21
-#, fuzzy
 msgid "properties"
-msgstr "노드 속성"
+msgstr "속성"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:23
 msgid "methods"
-msgstr ""
+msgstr "메서드"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:25
-#, fuzzy
 msgid "constants"
-msgstr "상수(Constant)"
+msgstr "상수"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
-#, fuzzy
 msgid "signals"
-msgstr "signal"
+msgstr "시그널"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:29
 msgid ""
@@ -73,6 +81,12 @@ msgid ""
 "a static `_bind_methods()` function that describes what C++ content it "
 "registers to the database and how."
 msgstr ""
+"게다가 ClassDB는 어떤 객체가 언제 연산을 수행하는 지를 확인합니다. 속성에 액"
+"세스하는가? 메서드를 호출하는가? 시그널을 방출하는가? 이 모두를 데이터베이스"
+"의 기록 (그리고 객체의 기본 타입의 기록)에서 확인함으로써 객체가 연산을 지원"
+"하는 지 여부를 볼 수 있습니다. 모든 C++ 객체는 정적 `_bind_methods()` 함수를 "
+"정의하는데 이걸로 데이터베이스에 등록한 C++ 내용물이 무엇이고 어떻게 등록했는"
+"지를 설명합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
 msgid ""
@@ -81,6 +95,10 @@ msgid ""
 "data to be appended to an object's data. That way, users could inject their "
 "own properties and methods into the engine's Object query requests."
 msgstr ""
+"따라서 엔진이 시작할 때 이 모든 데이터를 제공한다면, 사용자는 어떻게 고유의 "
+"데이터를 정의할까요? 사용자가 객체의 데이터에 추가하는 커스텀 데이터 세트를 "
+"정의하는 것이 좋습니다. 이 방법으로 사용자는 고유의 속성과 메서드를 엔진의 객"
+"체 쿼리 요청에 넣을 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
 msgid ""
@@ -90,6 +108,11 @@ msgid ""
 "to the list of properties the Object fetches from the ClassDB. The same "
 "holds true for other declarative code."
 msgstr ""
+"*이것*\\ 이 바로 :ref:`Script <class_Script>`\\ 입니다. 객체는 데이터베이스 "
+"이전에 붙어있는 스크립트를 확인합니다, 즉 스크립트는 메서드를 재정의할 수도 "
+"있습니다. 스크립트가  `_get_property_list()` 메서드를 정의한다면, ClassDB에"
+"서 객체가 가져오는 속성 목록이 데이터로 추가됩니다. 이는 다른 선언적 코드에서"
+"도 마찬가지입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:47
 msgid ""
@@ -99,6 +122,10 @@ msgid ""
 "Object to defer to the Script's content where the engine logic deems "
 "appropriate."
 msgstr ""
+"스크립트가 그 자체로 하나의 클래스가 되는 것을 보면 일부 사용자는 혼란에 빠"
+"질 수 있습니다. 사실 엔진은 기본 엔진 클래스를 자동으로 인스턴스화한 뒤 그 객"
+"체에 스크립트를 추가합니다. 이것으로 객체는 엔진 논리에 적절하다고 판단하는 "
+"스크립트의 내용을 이행합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:53
 msgid ""
@@ -107,10 +134,13 @@ msgid ""
 "node hierarchies demonstrates this. Each individual Node's logic could be "
 "several hundred lines of code in length."
 msgstr ""
+"자체적인 문제가 있습니다. 객체의 규모가 커질수록, 그것을 만드는 데 필요한 스"
+"크립트의 규모도 더욱 더 커집니다. 이것은 노드 계층 구조를 만드는 것으로 드러"
+"납니다. 각 노드의 논리는 수 백줄의 코드가 될 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid "let's see a simple example of creating a single Node as a child."
-msgstr ""
+msgstr "한 노드를 자식으로 만드는 예제를 알아봅시다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:98
 msgid ""
@@ -122,6 +152,11 @@ msgid ""
 "\"lookups\" within data structures to find the corresponding logic to "
 "execute."
 msgstr ""
+"선언 노드의 두 부분만 자식 노드를 생성하는데 관여합니다: 변수 선언과 생성자 "
+"선언입니다. 자식에 관한 다른 나머지는 명령형 코드를 사용해 설정해야 합니다. "
+"하지만 스크립트 코드는 엔진 C++ 코드보더 훨씬 더 느립니다. 각 변경사항은 스크"
+"립팅 API로의 호출을 만들게 되고, 이는 즉 데이터 구조 내 실행하기 위한 해당 논"
+"리를 찾는 많은 C++ \"lookup들\"을 의미합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:106
 msgid ""
@@ -130,6 +165,10 @@ msgid ""
 "could then handle the construction using its fast C++ code, and the script "
 "code would be free from the perils of imperative code."
 msgstr ""
+"작업량을 줄이기 위해 무언가가 노드 계층 구조를 만들고 설정하는 데 관련된 모"
+"든 작업을 처리할 수 있다면 편리할 것입니다. 그러면 엔진은 빠른 C++ 코드를 사"
+"용해 그 구조를 다룰 수 있을 것이고, 스크립트 코드는 명령형 코드의 위험으로부"
+"터 벗어날 수 있을 것입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:111
 msgid ""
@@ -137,6 +176,9 @@ msgid ""
 "resource that provides an advanced \"constructor\" serialization which is "
 "offloaded to the engine for batch processing."
 msgstr ""
+"*이것*\\ 이 바로 씬입니다 (:ref:`PackedScene <class_PackedScene>`): 고급 \"생"
+"성자\" 직렬화를 제공하는 리소스로 일괄 처리를 위해 엔진이 오프로드하도록 합니"
+"다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:115
 msgid ""
@@ -145,27 +187,29 @@ msgid ""
 "scripted root node that makes use of the sub-nodes. This means that the "
 "scene is often an extension of the script's declarative code."
 msgstr ""
+"자, 왜 이렇게 씬 조직이 중요할까요? 씬이 *바로* 객체라는 것을 이해해야합니"
+"다. 때로는 하나의 씬과 스크립트과 붙은 루트 노드로 된 씬을 하위 노드로 사용하"
+"는 경우도 있습니다. 즉, 씬은 때로 스크립트의 선언적 코드의 확장이 됩니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:120
 msgid "It helps to define..."
-msgstr ""
+msgstr "씬이 정의하는 것은..."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:122
-#, fuzzy
 msgid "what objects are available to the script?"
-msgstr "스크립트의 역할"
+msgstr "어떤 객체를 스크립트에서 사용할 수 있는지?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:124
 msgid "how are they organized?"
-msgstr ""
+msgstr "어떻게 그들이 조직되어있는지?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
 msgid "how are they initialized?"
-msgstr ""
+msgstr "어떻게 그들이 초기화되는지?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
 msgid "what connections to each other do they have, if any?"
-msgstr ""
+msgstr "그렇다면 서로에게 어떤 연결이 있는지?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
 msgid ""
@@ -174,6 +218,10 @@ msgid ""
 "in one scene (which are often bundled into the scene itself). Other scripts "
 "are meant to be re-used between scenes."
 msgstr ""
+"이처럼 많은 객체 지향 원칙들이 \"프로그래밍\"에 적용됩니다, 즉 스크립트 *또한"
+"* 씬에 적용됩니다. 어떤 스크립트는 오직 하나의 씬에서만 작동하도록 설계됩니"
+"다 (보통은 씬 자체에서 번들로 제공됩니다). 그렇지 않은 스크립트는 씬 사이에"
+"서 재사용될 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:135
 msgid ""
@@ -181,3 +229,6 @@ msgid ""
 "therefore be interpreted as a part of the class.** Most of the points "
 "covered in this series will build on this point, so keep it in mind."
 msgstr ""
+"**그럼에도 불구하고 씬은 항상 루트 스크립트의 확장이고, 그렇기에 클래스의 일"
+"부로 해석될 수 있습니다.** 이 시리즈의 대부분은 이러한 시점에서 다루게 될 것"
+"입니다, 그러니 명심하세요."

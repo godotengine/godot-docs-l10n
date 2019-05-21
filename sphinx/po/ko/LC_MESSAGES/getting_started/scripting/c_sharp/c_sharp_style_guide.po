@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,8 @@ msgid ""
 "Having well-defined and consistent coding conventions is important for every "
 "project, and Godot is no exception to this rule."
 msgstr ""
-"잘 정의되고 일관된 코딩 규칙을 갖는 것은 모든 프로젝트에 중요하며 Godot도 예"
-"외가 아닙니다."
+"잘 정의되고 일관된 코딩 규칙을 정하는 것은 모든 프로젝트에 중요하며 Godot도 "
+"마찬가지입니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:9
 msgid ""
@@ -38,11 +38,11 @@ msgid ""
 "users of the language, we encourage you to do the same, especially if you do "
 "not have such a guide yet."
 msgstr ""
-"이 페이지는 코딩 스타일 가이드로, Godot의 개발자나 기여자들이 따라야 할 것을 "
-"가지고 있습니다. 따라서 이것은 주로 프로젝트에 기여하는 사람들을 위한 것이지"
-"만, 여기에서 말하는 규정이나 가이드 라인은 언어 사용자들에 의해 가장 널리 채"
-"택된 것이므로, 우리는 똑같이 하기를 권합니다, 특히 이러한 가이드를 아직 갖지 "
-"못했다면 말이죠."
+"이 페이지는 코딩 스타일 가이드로, Godot의 개발자나 기여자들이 지켜야 하는 문"
+"서들입니다. 따라서 이 문서는 주로 프로젝트에 기여하는 사람들이 대상이지만, 여"
+"기에서 말하는 규칙이나 가이드 라인은 프로그래밍 언어 사용자들에 의해 가장 널"
+"리 채택된 것이고 우리는 이를 따라가길 권장합니다, 특히 이러한 가이드를 아직 "
+"찾지 못했다면 말이죠."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:14
 msgid ""
@@ -54,12 +54,12 @@ msgid ""
 "`Framework Design Guidelines <https://docs.microsoft.com/en-us/dotnet/"
 "standard/design-guidelines/naming-guidelines>`_."
 msgstr ""
-"이 문서는 표준 코딩 규칙이나 최상의 방법을 따르는 법에 관한 포괄적인 가이드"
-"가 아닙니다. 혹시 다루지 않은 불확실한 면이 있다면, `C# 코딩 규칙 <https://"
-"docs.microsoft.com/ko-kr/dotnet/csharp/programming-guide/inside-a-program/"
-"coding-conventions>`_ \\ 이나 `명명 지침 <https://docs.microsoft.com/ko-kr/"
-"dotnet/standard/design-guidelines/naming-guidelines>`_\\ 에서 더 포괄적인 문"
-"서를 참고하세요."
+"이 문서는 표준 코딩 규칙이나 최고의 방법에 관한 포괄적인 가이드가 아닙니다. "
+"혹시 다루지 않은 불확실한 면이 있다면, `C# 코딩 규칙 <https://docs.microsoft."
+"com/ko-kr/dotnet/csharp/programming-guide/inside-a-program/coding-"
+"conventions>`_ \\ 이나 `명명 지침 <https://docs.microsoft.com/ko-kr/dotnet/"
+"standard/design-guidelines/naming-guidelines>`_\\ 에서 더 포괄적인 문서를 참"
+"고하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:21
 msgid "Language specification"
@@ -72,10 +72,10 @@ msgid ""
 "language features only available in C# 7.0 or later, such as pattern "
 "matching or expression-bodied members inside get/set accessors."
 msgstr ""
-"현재로썬, Godot는 엔진과 예제 소스 코드로 C# 6.0 버전을 사용합니다. 그러므"
-"로, 신규 버전으로 옮기기 전에, 오직 C# 7.0 혹은 그 이상에서만 이용할 수 있는 "
-"언어 기능이 섞이는 것에 주의하세요, 패턴 매칭이나 get/set 접근자 내 표현 바"
-"디 멤버와 같은 것이 있습니다."
+"현재로썬 Godot는 엔진과 예제 소스 코드로 C# 6.0 버전을 사용합니다. 그러므로 "
+"신규 버전으로 옮기기 전까지는 C# 7.0이나 그 이상에서만 사용할 수 있는 언어 기"
+"능이 섞이는 지 주의하세요, 패턴 매칭이나 get/set 접근자 내 표현 바디 멤버와 "
+"같은 것이 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:27
 msgid ""
@@ -103,8 +103,8 @@ msgid ""
 "Use UTF-8 encoding without a byte order mark (BOM <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>)."
 msgstr ""
-"바이트 순서 표식 (BOM <https://ko.wikipedia.org/wiki/바이트_순서_표식>)없이  "
-"UTF-8 인코딩을 사용합니다."
+"바이트 순서 표식 (`BOM <https://ko.wikipedia.org/wiki/바이트_순서_표식>`_)없"
+"이 UTF-8 인코딩을 사용합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:35
 msgid ""
@@ -147,7 +147,7 @@ msgstr "추상적 auto 속성, 인덱서, 혹은 이벤트 선언을 위해."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:83
 msgid "Insert a blank line:"
-msgstr "공백 줄을 넣습니다:"
+msgstr "다음 경우에 공백 줄을 넣습니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:85
 msgid "After *using* statement list."
@@ -168,7 +168,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:91
 msgid "Avoid inserting a blank line:"
-msgstr "공백 줄을 삽입하는 것을 피하세요:"
+msgstr "다음 경우에 공백 줄을 삽입하는 것을 피하세요:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
 msgid "After ``{``, the opening brace."
@@ -203,11 +203,11 @@ msgstr "공백 사용하기"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:140
 msgid "Insert a space:"
-msgstr "공백을 삽입합니다:"
+msgstr "다음 경우에 공백을 넣습니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
 msgid "Around a binary and tertiary operator."
-msgstr "2진 및 3진 연산자 주변."
+msgstr "이진 및 삼항 연산자 주변."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:143
 msgid ""
@@ -287,7 +287,7 @@ msgid ""
 "arguments), and use underscore('_') as a prefix for private fields (but not "
 "for methods or properties, as explained above):"
 msgstr ""
-"모든 다른 식별자 (예: 로컬 변수, 메서드 인수)에 *camelCase*\\ 를 사용하고, "
+"모든 다른 식별자 (예: 지역 변수, 메서드 인수)에 *camelCase*\\ 를 사용하고, "
 "private 영역의 접두사로 밑줄('_')을 사용합니다 (하지만 위에서 설명했듯이, 메"
 "서드나 속성은 아닙니다):"
 
@@ -350,7 +350,7 @@ msgid ""
 "variable, but do so **only when the type is evident** from the right side of "
 "the assignment:"
 msgstr ""
-"로컬 변수의 선언을 위해 암시적 형식 (*'var'*)를 사용하는 것을 생각해보세요, "
+"지역 변수의 선언을 위해 암시적 형식 (*'var'*)를 사용하는 것을 생각해보세요, "
 "하지만 할당의 오른쪽에서 **타입이 분명할 때만** 해야합니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:296

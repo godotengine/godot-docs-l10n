@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -617,9 +617,8 @@ msgid "in vec4 **FRAGCOORD**"
 msgstr "在vec4 ** FRAGCOORD **"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
-#, fuzzy
 msgid "Fragment coordinate, pixel adjusted. In screen space."
-msgstr "片段坐标，像素调整。"
+msgstr "片段坐标，像素调整。在屏幕空间。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
@@ -641,9 +640,8 @@ msgid "in vec3 **VERTEX**"
 msgstr "in vec3 **VERTEX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
-#, fuzzy
 msgid "Vertex that comes from vertex function (default, in view space)."
-msgstr "来自顶点函数的顶点，在视图空间中。"
+msgstr "来自顶点函数的顶点(默认情况下，在视图空间中)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
@@ -651,23 +649,20 @@ msgid "in vec3 **VIEW**"
 msgstr "in vec3 **VIEW**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
-#, fuzzy
 msgid "Vector from camera to fragment position (in view space)."
-msgstr "来自顶点函数的顶点，在视图空间中。"
+msgstr "从摄像机到碎片位置的向量(在视图空间中)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
 msgid "in bool **FRONT_FACING**"
 msgstr "in bool **FRONT_FACING**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
-#, fuzzy
 msgid "True if current face is front face."
-msgstr "当前面是否是正面是真的。"
+msgstr "如果当前面是正面，则为真。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
-#, fuzzy
 msgid "Normal that comes from vertex function (default, in view space)."
-msgstr "来自顶点函数的正常，在视图空间中。"
+msgstr "来自于顶点函数的法向量(默认情况下，在视图空间中)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
 msgid "Tangent that comes from vertex function."
@@ -835,18 +830,16 @@ msgid "out float **AO**"
 msgstr "out float **AO**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:241
-#, fuzzy
 msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
-msgstr "环境遮挡(预烘焙)。"
+msgstr "环境遮挡。与预焙环境遮挡一起使用。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
 msgid "out float **AO_LIGHT_AFFECT**"
 msgstr "out float **AO_LIGHT_AFFECT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
-#, fuzzy
 msgid "How much AO affects lights (0..1; default 0)."
-msgstr "AO对灯光的影响程度(0..1。默认为0，无)。"
+msgstr "环境遮挡对灯光的影响程度(取值在0到1之间。默认为0)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:245
 msgid "out vec3 **EMISSION**"
@@ -910,9 +903,8 @@ msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr "如果写入，则丢弃低于一定量alpha的值。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
-#, fuzzy
 msgid "Light built-ins"
-msgstr "轻型内置"
+msgstr "内置灯光"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
 msgid ""
@@ -959,23 +951,20 @@ msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
-#, fuzzy
 msgid "Normal vector, in view space."
-msgstr "来自顶点函数的正常，在视图空间中。"
+msgstr "法向量，在视图空间中。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
-#, fuzzy
 msgid "View vector, in view space."
-msgstr "图像空间中的顶点。"
+msgstr "视图向量，在视图空间中。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
 msgid "in vec3 **LIGHT**"
 msgstr "in vec3 **LIGHT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
-#, fuzzy
 msgid "Light Vector, in view space."
-msgstr "图像空间中的顶点。"
+msgstr "灯光向量，在视图空间中。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:312
 msgid "in vec3 **LIGHT_COLOR**"

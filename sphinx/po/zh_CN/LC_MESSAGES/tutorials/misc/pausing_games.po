@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,14 +50,13 @@ msgid "How pausing works"
 msgstr "如何暂停工作"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:22
-#, fuzzy
 msgid ""
 "To set pause mode, the pause state must be set. This is done by assigning "
 "``true`` to the :ref:`SceneTree.paused <class_SceneTree_property_paused>` "
 "property:"
 msgstr ""
-"要设置暂停模式，必须设置暂停状态。 这是通过为 :ref:`SceneTree.paused "
-"<class_SceneTree_property_paused>` 成员变量赋予“true”值来完成的:"
+"要设置暂停模式，必须设置暂停状态。 这是通过为 :参考:`场景树.暂停<类_场景树_属"
+"性_暂停>` 成员变量赋予“真”值来完成的:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:34
 msgid "Doing so will have the following behavior:"
@@ -68,15 +67,13 @@ msgid "2D and 3D physics will be stopped."
 msgstr "2D和3D物理将被停止。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:37
-#, fuzzy
 msgid ""
 "``_process`` and ``_physics_process`` will not be called anymore in nodes."
-msgstr "将不再在节点中调用_process和_physics_process。"
+msgstr "将不再在节点中调用“_处理”和“_物理_处理”函数。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:38
-#, fuzzy
 msgid "``_input`` and ``_input_event`` will not be called anymore either."
-msgstr "_input和_input_event也不再被调用。"
+msgstr "“_输入”和“_输入_事件”也不再被调用。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:40
 msgid ""

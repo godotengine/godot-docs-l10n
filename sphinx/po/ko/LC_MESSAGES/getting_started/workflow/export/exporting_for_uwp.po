@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-09 11:43+0200\n"
+"POT-Creation-Date: 2019-05-21 13:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
 msgid "Exporting for Universal Windows Platform"
-msgstr ""
+msgstr "유니버설 윈도우 플랫폼으로 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:6
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "installed as a Windows App or submitted to the Windows Store. Exporting UWP "
 "packages also works from any platform, not only from Windows."
 msgstr ""
+"윈도우 앱으로 설치하거나 윈도우 스토어에 제출할 수 있는 ``.appx`` 패키지를 내"
+"보내기 위한 추가 요구사항은 없습니다. UWP 패키지를 내보내는 것은 윈도우 뿐만 "
+"아니라 어느 플랫폼에서든지 가능합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
 msgid ""
@@ -34,66 +37,76 @@ msgid ""
 "trusted signature. Currently, Godot does not support signing of packages, so "
 "you need to use external tools to do so."
 msgstr ""
+"하지만, 앱을 설치하고 실행하고 싶다면, 신뢰할 수 있는 서명으로 서명해야합니"
+"다. 현재 Godot는 패키지 서명을 지원하지 않으므로, 외부의 도구를 사용해야합니"
+"다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
 msgid ""
 "Also, make sure the Publisher Name you set when exporting the package "
 "matches the name used on the certificate."
 msgstr ""
+"그리고 패키지를 내보낼 때 설정한 퍼블리셔 이름이 인증서에 사용되는 이름과 같"
+"아야 합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:18
 msgid "Limitations on Xbox One"
-msgstr ""
+msgstr "Xbox One의 제한사항"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:20
 msgid ""
 "As described in the `UWP documentation <https://docs.microsoft.com/en-us/"
 "windows/uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
+"`UWP 문서 <https://docs.microsoft.com/en-us/windows/uwp/xbox-apps/system-"
+"resource-allocation>`__\\ 의 설명에 따라:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "Submitted as an \"App\""
-msgstr ""
+msgstr "\"App\"으로 제출됨"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:23
 msgid "available memory is 1GB"
-msgstr ""
+msgstr "사용 가능한 메모리는 1GB이다"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:24
 msgid "share of 2-4 CPU cores"
-msgstr ""
+msgstr "2-4 CPU 코어의 점유율"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "shared access of GPU power (45%)"
-msgstr ""
+msgstr "GPU 전력의 공유 액세스 (45%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid ""
 "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www."
 "xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
+"\"Game\"으로 제출됨 (`Xbox Live 크리에이터스 프로그램 <https://www.xbox.com/"
+"ko-kr/developers/creators-program>`__\\ 을 통해)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:28
 msgid "available memory is 5GB"
-msgstr ""
+msgstr "사용 가능한 메모리는 5GB이다"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:29
 msgid "4 exclusive CPU cores and 2 shared CPU cores"
-msgstr ""
+msgstr "4개의 전용 CPU 코어와 2개의 공유 CPU 코어"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid "exclusive access to GPU power (100%)"
-msgstr ""
+msgstr "GPU 전력에 대한 독점적 액세스 (100%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
 msgid ""
 "Exceeding these memory limitations will cause allocation failures and the "
 "application will crash."
 msgstr ""
+"이 메모리 한도를 넘게되면 할당에 실패하고 애플리케이션이 팅길 것입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:35
 msgid "Creating a signing certificate"
-msgstr ""
+msgstr "서명 인증서 만들기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:37
 msgid ""
@@ -102,6 +115,9 @@ msgid ""
 "Developer Prompts, since it comes with these tools and they can be located "
 "in the path."
 msgstr ""
+"윈도우 SDK에 있는 ``MakeCert.exe``\\ 와 ``Pvk2Pfx.exe`` 도구가 필요합니다. "
+"Visual Stuido를 사용한다면, 이 도구들을 갖고 있고 경로가 존재하기 때문에, "
+"Developer Prompts에서 이것을 열 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:41
 msgid ""
@@ -109,28 +125,35 @@ msgid ""
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
 "aspx>`__."
 msgstr ""
+"더 자세한 설명은 `Microsoft의 문서 <https://msdn.microsoft.com/en-us/library/"
+"windows/desktop/jj835832(v=vs.85).aspx>`__\\ 에서 확인할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:44
 msgid "First, run ``MakeCert`` to create a private key::"
-msgstr ""
+msgstr "먼저, 개인 키를 만들기 위해 ``MakeCert``\\ 를 실행합니다::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:48
 msgid ""
 "Where ``publisherName`` matches the Publisher Name of your package and "
 "``expirationDate`` is in the ``mm/dd/yyyy`` format."
 msgstr ""
+"여기서 ``publisherName``\\ 은 패키지 내 퍼블리셔 이름과 일치하고 "
+"``expirationDate``\\ 가 ``mm/dd/yyyy`` 형식입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:51
 msgid ""
 "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx."
 "exe``::"
 msgstr ""
+"다음으로, ``Pvk2Pfx.exe``\\ 를 사용해서 개인 정보 교환 (.pfx) 파일을 만듭니"
+"다::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:55
 msgid ""
 "If you don't specify a password with ``/po`` argument, the PFX will have the "
 "same password as the private key."
 msgstr ""
+"``/po`` 인수로 암호를 지정하지 않으면, PFX는 개인 키와 같은 암호일 것입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:58
 msgid ""
@@ -138,33 +161,40 @@ msgid ""
 "your app. Open the Command Prompt as Administrator and run the following "
 "command::"
 msgstr ""
+"그리고 앱을 설치하도록 하기 위해 이 인증서를 신뢰하여야 합니다. 관리자 권한으"
+"로 명령 프롬포트를 열고 다음 명령을 실행하세요::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
 msgid "Signing the package"
-msgstr ""
+msgstr "패키지 서명하기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
 msgstr ""
+"마지막으로, 윈도우 SDK나 Visual Studio에서 ``SignTool.exe``\\ 를 사용합니다::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
 msgid "Installing the package"
-msgstr ""
+msgstr "패키지 설치하기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:73
 msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
 msgstr ""
+"윈도우 10 1주년 업데이트로, 파일 탐색기에서 단순히 ``.appx`` 파일을 더블 클릭"
+"하는 것으로 패키지를 설치할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:76
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
-msgstr ""
+msgstr "``Add-AppxPackage`` PowerShell cmdlet을 사용해서 설치할 수도 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:78
 msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."
 msgstr ""
+"이미 설치된 앱을 업데이트 하는 경우, 새 패키지의 버전 이름을 업데이트하거나 "
+"먼저 이전 패키지를 제거해야합니다."
