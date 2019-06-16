@@ -25,6 +25,7 @@
 # Constantin Moskvitin <cmoskvitin@gmail.com>, 2018.
 # Danil Alexeev <danil@alexeev.xyz>, 2018-2019.
 # Danil Semenov <semenoff.da2018@yandex.ru>, 2018-2019.
+# Dark King <damir@t1c.ru>, 2019.
 # Denis <miraakdovahkiin45@gmail.com>, 2018.
 # Denis K <dekasoftware@mail.ru>, 2018.
 # Dmitry Derbin <dimderbin@mail.ru>, 2018.
@@ -37,6 +38,7 @@
 # ijet <my-ijet@mail.ru>, 2018.
 # Ivan Toropelov <chuchundra06@gmail.com>, 2018.
 # JackLite <jackkdlite@gmail.com>, 2018.
+# jpVm5jYYRE1VIKL <fuxfwgc4a2i1gr@gmail.com>, 2019.
 # Kenta Akiyama <kentaakiyamagd@gmail.com>, 2018.
 # LAT_Rio <AlSenya@yandex.ru>, 2018.
 # LeLuCh B0й <alekx@alumni.nottingham.ac.uk>, 2019.
@@ -61,6 +63,7 @@
 # Shohrukh Nuriddinov <shohrukhnuriddinov1999@gmail.com>, 2019.
 # Siarhei Dounar <sergey.dovnar@gmail.com>, 2019.
 # Siarhei Mashkarniou <irondrain@gmail.com>, 2018.
+# stalker3204 <stalker3204@yandex.ru>, 2019.
 # S.traiker.D <l1evilone@gmail.com>, 2018.
 # teriva <spirin.cos@yandex.ru>, 2018.
 # wotanweb <pooding55@gmail.com>, 2018.
@@ -93,8 +96,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-05-21 13:40+0200\n"
-"PO-Revision-Date: 2019-05-21 11:16+0000\n"
-"Last-Translator: Sam Serious <samserious25@gmail.com>\n"
+"PO-Revision-Date: 2019-06-16 20:10+0000\n"
+"Last-Translator: Dark King <damir@t1c.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -567,13 +570,12 @@ msgid "In short:"
 msgstr "Вкратце:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
 "Вы можете бесплатно скачивать и использовать Godot для любых целей, личных, "
-"некоммерческих, коммерческих или иных;"
+"некоммерческих, коммерческих или иных."
 
 #: ../../docs/about/faq.rst:14
 msgid ""
@@ -955,7 +957,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Начиная с версии Godot 3.0, поддерживается glTF."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -1001,7 +1002,6 @@ msgstr ""
 "закрытого источника."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
@@ -1079,7 +1079,6 @@ msgstr ""
 "больше времени им потребуется для загрузки."
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
@@ -1090,7 +1089,6 @@ msgstr ""
 "урок о том, как этого достичь."
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -1100,7 +1098,7 @@ msgstr ""
 "Определите минимальное разрешение, а затем решите, хотите ли вы, чтобы ваша "
 "игра растягивалась вертикально или горизонтально для разных соотношений "
 "сторон или была в одном минимальном разрешении, с отображением черных шкал "
-"прогресса по краям. Это также объясняется на предыдущем шаге."
+"прогресса по краям. Это также объяснялось в :ref:`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -1369,6 +1367,7 @@ msgstr "Рабочий процесс проекта"
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Custom builds for Android <doc_android_custom_build>`"
 msgstr ""
+":ref:`Кастомизированные сборки для Андройда <doc_android_custom_build>`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid "Best Practices:"
@@ -1494,12 +1493,11 @@ msgstr ":ref:`Дерево анимаций <doc_animation_tree>`"
 
 #: ../../docs/about/docs_changelog.rst:70 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
-msgstr ""
+msgstr "Интерфейс"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`Containers <doc_gui_containers>`"
-msgstr "Интерфейсы Godot"
+msgstr ":ref:`Контейнеры <doc_gui_containers>`"
 
 #: ../../docs/about/docs_changelog.rst:75
 #: ../../docs/tutorials/viewports/index.rst:2
@@ -1542,30 +1540,26 @@ msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
 msgstr ":ref:`Продвинутая пост-обработка <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid "Your First Shader Series:"
-msgstr "Ваша Первая Игра"
+msgstr "Ваш Первый Ряд Шейдеров:"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`What are shaders? <doc_what_are_shaders>`"
-msgstr ":ref:`Пространственные шейдеры <doc_spatial_shader>`"
+msgstr ":ref:`Что такое шейдеры ? <doc_what_are_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:89
-#, fuzzy
 msgid ":ref:`Your first CanvasItem shader <doc_your_first_canvasitem_shader>`"
-msgstr ":ref:`Шейдеры элементов канваза <doc_canvas_item_shader>`"
+msgstr ":ref:`Ваш первый CanvasItem шейдер <doc_your_first_canvasitem_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:90
-#, fuzzy
 msgid ":ref:`Your first Spatial shader <doc_your_first_spatial_shader>`"
-msgstr ":ref:`Пространственные шейдеры <doc_spatial_shader>`"
+msgstr ":ref:`Ваш первый Spatial  шейдер <doc_your_first_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid ""
 ":ref:`Your first Spatial shader: Part 2 <doc_your_second_spatial_shader>`"
-msgstr ":ref:`Пространственные шейдеры <doc_spatial_shader>`"
+msgstr ""
+":ref:`Ваш первый  Spatial  шейдер. Часть 2 <doc_your_second_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:98
 msgid "Shading Reference:"
@@ -1622,19 +1616,16 @@ msgstr ":ref:`API безопасности потоков <doc_thread_safe_apis>
 
 #: ../../docs/about/docs_changelog.rst:116
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "Анимация"
+msgstr "Оптимизация"
 
 #: ../../docs/about/docs_changelog.rst:118
-#, fuzzy
 msgid ":ref:`Using MultiMesh <doc_using_multimesh>`"
-msgstr ":ref:`Создание деревьев <doc_animations>`"
+msgstr ":ref:`Использование MultiMesh <doc_using_multimesh>`"
 
 #: ../../docs/about/docs_changelog.rst:119
-#, fuzzy
 msgid ":ref:`Using servers <doc_using_servers>`"
-msgstr ":ref:`Создание деревьев <doc_animations>`"
+msgstr ":ref:`Использование серверов <doc_using_servers>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1661,14 +1652,11 @@ msgstr ":ref:`Отличия между GLES3 и GLES3 <doc_gles2_gles3_differen
 #: ../../docs/about/docs_changelog.rst:130
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "Легализация"
 
 #: ../../docs/about/docs_changelog.rst:132
-#, fuzzy
 msgid ":ref:`Complying with Licenses <doc_complying_with_licenses>`"
-msgstr ""
-":ref:`Компиляция с ключом шифрования скрипта "
-"<doc_compiling_with_script_encryption_key>`"
+msgstr ":ref:`Соответствие с Лицензиями <doc_complying_with_licenses>`"
 
 #: ../../docs/about/docs_changelog.rst:135
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:231
@@ -1727,9 +1715,8 @@ msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
 msgstr ":ref:`Плагины для 3D-гизмо <doc_spatial_gizmo_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:155
-#, fuzzy
 msgid ":ref:`Creating Android plugins <doc_android_plugin>`"
-msgstr ":ref:`Плагины для 3D-гизмо <doc_spatial_gizmo_plugins>`"
+msgstr ":ref:`Создание плагинов для Андройд <doc_android_plugin>`"
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
@@ -2687,14 +2674,13 @@ msgstr ""
 "этой сцены подействуют на другие экземпляры шаров."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Set its "
 "``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
 "Вы также можете настроить отдельные экземпляры. Установите значение "
-"упругости обратно на ``0.5``, а затем на сцене ``Main`` выберите один из "
+"упругости обратно на ``0``, а затем на сцене ``Main`` выберите один из "
 "экземпляров мяча. Установите ``Bounce`` как ``1`` и нажмите \"Воспроизвести"
 "\"."
 
@@ -3564,7 +3550,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Этот метод будет вызван каждый раз в момент прорисовки фрейма:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -3572,16 +3558,19 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"Важно понимать что частота с которой будет вызываться ``_process()`` зависит "
+"от того сколько кадров в секунду (FPS) выполняется в вашем приложении на "
+"текущий момент. Это величина может меняться во времени и зависит от "
+"аппаратуры."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"Параметр delta содержит время (в виде числа с плавающей запятой), прошедшее "
-"в секундах после предыдущего вызова функции ``_process()``."
+"Параметр delta содержит время (в виде вещественного числа), прошедшее в "
+"секундах после предыдущего вызова функции ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -3626,13 +3615,12 @@ msgstr ""
 "В однопоточных играх ее выполнение осуществляется после этапа физики."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Простой способ проверить это - создать сцену с одним узлом Label со "
-"следующим скриптом:"
+"Простой способ посмотреть метод ``_process()`` в работе, это создать сцену с "
+"одной нодой типа Label и со следующим скриптом:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -3651,16 +3639,19 @@ msgid ""
 "for organizing large scenes. There are two ways to do add nodes to groups. "
 "The first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"Узлы могут быть объединены в группы, по сколько угодно узлов, которые "
-"являются полезной особенностью для организации больших сцен. Есть два "
-"способа сделать это. Первый - из пользовательского интерфейса, с помощью "
-"кнопки \"Группы\" под панелью \"Узел\":"
+"Группы в Godot работают как теги, с которыми вы могли встретиться в других "
+"программах. Узел может находиться в стольких группах, в скольких захотите. "
+"Это очень полезная механика для организации огромных сцен. Есть два способа "
+"добавлять узлы в группы. Во-первых, через UI, используя кнопку Groups под "
+"панелью Узла:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"И второй способ сделать это с помощью кода. Следующий скрипт добавит текущий "
+"Узел к группе  ``enemies`` как только она появится в дереве сцены."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -3924,7 +3915,6 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
@@ -3934,7 +3924,7 @@ msgstr ""
 "Сигналы - это способ *уменьшить зацепление* игровых объектов, приводящий код "
 "к более упорядоченному и управляемому виду. Вместо того чтобы принуждать "
 "игровые объекты постоянно зависеть от существования других объектов, "
-"возможно выдавать сигналы, на которые  заинтересованные объекты могут "
+"возможно выдавать сигналы, на которые заинтересованные объекты могут "
 "реагировать."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
@@ -3950,26 +3940,30 @@ msgid "Timer example"
 msgstr "Пример таймера"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
 "<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
 "Чтобы увидеть, как работают сигналы, давайте попробуем использовать узел :"
-"ref:`Timer <class_Timer> . Создайте новую сцену с узлом и двумя дочерними "
-"узлами: таймер и :ref:`спрайт <class_Sprite>`. Вы можете использовать иконку "
-"Godot для текстуры спрайта или любое другое изображение, которое вам "
-"нравится. Присоедините скрипт к корневому узлу, но пока не добавляйте в него "
-"никакого кода."
+"ref:`Timer <class_Timer> . Создайте новую сцену с узлом Node и двумя "
+"дочерними узлами: таймер и :ref:`спрайт <class_Sprite>`. Вы можете "
+"использовать иконку Godot для текстуры спрайта или любое другое изображение, "
+"которое вам нравится. Присоедините скрипт к корневому узлу, но пока не "
+"добавляйте в него никакого кода."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
+#, fuzzy
 msgid ""
 "For the Sprite's texture, you can use the Godot icon, or any other image you "
 "like. Do so by selecting ``Load`` in the Sprite's Texture attribute drop-"
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Для текстуры Спрайта вы можете использовать иконку Godot, или любое другое "
+"изображение, что вы ходите. Сделайте это с помощью выбора ``Load`` в "
+"аттрибуте Sprite Texture в выпадающем меню. Прикрепите скрипт к корневому "
+"узлу, но пока не добавляйте кода."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -4115,9 +4109,8 @@ msgstr ""
 "и могут быть соединены так же, как и встроенные сигналы узла."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Чтобы выпустить сигнал через код, используйте функцию ``emit``:"
+msgstr "Чтобы выпустить сигнал через код, используйте функцию ``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
@@ -4395,8 +4388,8 @@ msgstr ""
 "качестве потомка в ``Player``. Это позволит задать игроку \"hitbox\" или, "
 "иначе говоря, границы зоны определения столкновений. Для этого персонажа "
 "лучше всего подходит узел ``CapsuleShape2D``, поэтому далее идем в "
-"Инспектор, и в разделе \"Shape\" щелкаем \"<null>\"\" -> \"New CapsuleShape2D"
-"\". Подгоните размер фигуры под размер изображения:"
+"Инспектор, и в разделе \"Shape\" щелкаем \"[empty]\"\" -> \"New "
+"CapsuleShape2D\". Подгоните размер фигуры под размер изображения:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid "When you're finished, your ``Player`` scene should look like this:"
@@ -4764,7 +4757,7 @@ msgstr ""
 "Отключение зоны столкновения может привести к ошибке, если это произойдет во "
 "время обработки столкновений движка. Использование ``call_deferred()`` "
 "позволяет нам заставить Godot ждать отключения фигуры, пока это не будет "
-"безопасно"
+"безопасно."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -4905,12 +4898,12 @@ msgid ""
 "sure you've spelled these the same in the script and in the SpriteFrames "
 "resource."
 msgstr ""
-"Во время спауна моба, выберем случайное значение между ``min_speed`` и "
+"Во время появления моба, выберем случайное значение между ``min_speed`` и "
 "``max_speed`` для определения того, как быстро каждый моб будет двигаться "
 "(было бы скучно, если бы все они двигались с одинаковой скоростью). Также у "
 "нас есть массив, содержащий имена трех анимаций, которые мы будем выбирать "
 "случайным образом. Убедитесь, что имена анимаций в скрипте совпадают с "
-"именами анимаций в SpriteFrame resource"
+"именами анимаций в SpriteFrame resource."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid ""
@@ -5327,7 +5320,7 @@ msgstr "ScoreLabel"
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
 #, fuzzy
 msgid "*Text* : ``0``"
-msgstr "Text: ``0``"
+msgstr "*Text*: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid "*Layout* : \"Top Wide\""
@@ -5492,14 +5485,18 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1129
 msgid "Removing old creeps"
-msgstr ""
+msgstr "Удаляем старых крипов"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
+#, fuzzy
 msgid ""
 "If you play until \"Game Over\" and then start a new game the creeps from "
 "the previous game are still on screen. It would be better if they all "
 "disappeared at the start of a new game."
 msgstr ""
+"Если ты играешь пока \"Game Over\" и затем начинаешь новую игру, крипы из "
+"предыдущей игры езё на экране. Будет лучше, если они исчезнут в начале новой "
+"игры"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid ""
@@ -5515,12 +5512,16 @@ msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
 msgstr ""
+"Начните с добавления новой функций \"\"Mob.gd\"\".\"\"queue_free()\"\" "
+"Удалит этот узел в конце текущего кадра."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
+"Затем в ``Main.gd`` добавь новую линию внутрь ``_on_MobTimer_timeout()` "
+"функций, в конце"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1157
 msgid ""

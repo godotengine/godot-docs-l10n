@@ -6,6 +6,7 @@
 # asd789l <690367819@qq.com>, 2018.
 # baiwu liu <bovy.liu@gmail.com>, 2018.
 # bladesero <872461916@qq.com>, 2018.
+# bugfig <bugfig@gmail.com>, 2019.
 # ByonkoGalilei <byonko@qq.com>, 2019.
 # carlcc <carlmarxchen@foxmail.com>, 2018.
 # cavenzhong <cavenzhong@gmail.com>, 2018.
@@ -40,9 +41,10 @@
 # sersoong <seraphim945@qq.com>, 2018-2019.
 # SilMOON <chenminghui8899@gmail.com>, 2018.
 # simano clio <sim2cle@gmail.com>, 2019.
-# tangdou1 <1093505442@qq.com>, 2018.
+# tangdou1 <1093505442@qq.com>, 2018-2019.
 # tf <1353699675@qq.com>, 2018.
 # Toby <tianer2820@163.com>, 2018.
+# Wang Chenhao <wch272@outlook.com>, 2019.
 # ws00010203 <ws00010203@hotmail.com>, 2019.
 # XQDD <1032453509@qq.com>, 2018.
 # xuzheng <690089735@qq.com>, 2018.
@@ -56,6 +58,7 @@
 # zwj36028 <23732399@qq.com>, 2018.
 # 七眼蜂 <txcism@gmail.com>, 2018.
 # 刘庆文 <liuqingwen@163.com>, 2018.
+# 卢海镕 <188582457@qq.com>, 2019.
 # 小白newer <2551376741@qq.com>, 2018.
 # 小菠萝粑粑 <2062152083@qq.com>, 2018.
 # 秋纫 <dugucloud@qq.com>, 2019.
@@ -65,8 +68,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-05-21 13:40+0200\n"
-"PO-Revision-Date: 2019-05-21 11:15+0000\n"
-"Last-Translator: DS <dseqrasd@126.com>\n"
+"PO-Revision-Date: 2019-06-16 20:11+0000\n"
+"Last-Translator: yzt <834950797@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -501,11 +504,10 @@ msgid "In short:"
 msgstr "总之:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
-msgstr "您可以免费下载并使用Godot，用于任何，个人，非营利，商业或其他目的;"
+msgstr "您可以免费下载并使用Godot，用于任何个人，非营利，商业或其他目的。"
 
 #: ../../docs/about/faq.rst:14
 msgid ""
@@ -846,7 +848,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Godot从3.0版本开始支持gITF。"
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -856,7 +857,7 @@ msgid ""
 msgstr ""
 "FBX SDK具有 `限制性许可 <https://www.blender.org/bf/Autodesk_FBX_License."
 "rtf>`_ ，与Godot提供的 `开放许可 <https://opensource.org/licenses/MIT>`_ 不兼"
-"容。尽管如此，FBX支持仍然可以由第三方作为插件提供。(参见上面插件的问题。)"
+"容。尽管如此，FBX支持仍然可以由第三方作为插件提供。(参见下面插件的问题。)"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -884,11 +885,10 @@ msgstr ""
 "发布游戏，无论开源或闭源。万事皆允。"
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
-msgstr "欲了解如何支持您想用的SDK，请查看上面的插件问题。"
+msgstr "如欲了解如何支持您使用的SDK，请查看下面的插件问题。"
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -946,7 +946,6 @@ msgstr ""
 "意，分辨率越高，资源越多，它们需要的内存就越多，加载所需时间也会越长。"
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
@@ -956,7 +955,6 @@ msgstr ""
 "`doc_multiple_resolutions` 来学习如何实现它。"
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -1200,7 +1198,7 @@ msgstr "项目工作流程"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Custom builds for Android <doc_android_custom_build>`"
-msgstr ""
+msgstr ":参考:`安卓自定义构建<文档_安卓_自定义_构建>`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid "Best Practices:"
@@ -1323,7 +1321,6 @@ msgid "GUI"
 msgstr "GUI"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`Containers <doc_gui_containers>`"
 msgstr ":参考:`Godot接口<文档_godot接口>’"
 
@@ -1364,30 +1361,25 @@ msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
 msgstr ":参考:`高级后期处理<文档_高级后期处理>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid "Your First Shader Series:"
-msgstr "您的第一个游戏"
+msgstr "您的第一个光色生成器系列："
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`What are shaders? <doc_what_are_shaders>`"
-msgstr ":参考:`空间着色器<文档_空间着色器>`"
+msgstr ":参考:`光色生成器是什么？<文档_光色生成器是什么>`"
 
 #: ../../docs/about/docs_changelog.rst:89
-#, fuzzy
 msgid ":ref:`Your first CanvasItem shader <doc_your_first_canvasitem_shader>`"
-msgstr ":参考:`画布组件着色器<文档_画布组件着色器>`"
+msgstr ":参考:`您的第一个CanvasItem(画布项)光色生成器<文档_画布项光色生成器>`"
 
 #: ../../docs/about/docs_changelog.rst:90
-#, fuzzy
 msgid ":ref:`Your first Spatial shader <doc_your_first_spatial_shader>`"
-msgstr ":参考:`空间着色器<文档_空间着色器>`"
+msgstr ":ref:`你的第一个空间着色器 <doc_your_first_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid ""
 ":ref:`Your first Spatial shader: Part 2 <doc_your_second_spatial_shader>`"
-msgstr ":参考:`空间着色器<文档_空间着色器>`"
+msgstr ":ref:`你的第一个空间着色器:第2部分 <doc_your_second_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:98
 msgid "Shading Reference:"
@@ -1442,19 +1434,16 @@ msgstr ":参考:`线程安全API<文档_线程安全API>`"
 
 #: ../../docs/about/docs_changelog.rst:116
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
 msgstr "优化"
 
 #: ../../docs/about/docs_changelog.rst:118
-#, fuzzy
 msgid ":ref:`Using MultiMesh <doc_using_multimesh>`"
-msgstr ":参考:`制作树<文档_制作树>`"
+msgstr ":ref:`使用多重网格 <doc_using_multimesh>`"
 
 #: ../../docs/about/docs_changelog.rst:119
-#, fuzzy
 msgid ":ref:`Using servers <doc_using_servers>`"
-msgstr ":参考:`制作树<文档_制作树>`"
+msgstr ":ref:`使用服务器 <doc_using_servers>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1481,12 +1470,11 @@ msgstr ":参考:`GLES2和GLES3之间的差异<文档_GLES2和GLES3之间的差�
 #: ../../docs/about/docs_changelog.rst:130
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "合法的"
 
 #: ../../docs/about/docs_changelog.rst:132
-#, fuzzy
 msgid ":ref:`Complying with Licenses <doc_complying_with_licenses>`"
-msgstr ":参考:`使用脚本加密密钥编译<文档_使用脚本加密密钥编译>`"
+msgstr ":ref:`遵守许可证 <doc_complying_with_licenses>`"
 
 #: ../../docs/about/docs_changelog.rst:135
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:231
@@ -1542,9 +1530,8 @@ msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
 msgstr ":参考:`空间变换轴插件<文档_空间变换轴插件>`"
 
 #: ../../docs/about/docs_changelog.rst:155
-#, fuzzy
 msgid ":ref:`Creating Android plugins <doc_android_plugin>`"
-msgstr ":参考:`空间变换轴插件<文档_空间变换轴插件>`"
+msgstr ":ref:`创建安卓插件 <doc_android_plugin>`"
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
@@ -2404,14 +2391,13 @@ msgstr ""
 "存过的场景，更改此场景会影响所有实例。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Set its "
 "``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
-"您也可以调整单个实例。把弹性调回 ``0.5`` 然后回到 ``Main`` 场景中，选择其中一"
-"个小球，把它的 ``Bounce`` 设为 ``1`` ，然后运行。"
+"您也可以调整单个实例。把弹力（Bounce）属性调回 ``0`` 然后回到 ``Main`` 场景"
+"中，选择其中一个小球，把它的 ``Bounce`` 设为 ``1`` ，然后运行。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:113
 msgid ""
@@ -3173,7 +3159,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "这个方法将在每次绘制帧时调用："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -3181,15 +3167,17 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"请记住，调用“_处理”函数的频率取决于应用程序每秒运行的帧数(FPS)，这一点很重"
+"要。这个速率可以随时间和设备的不同而变化。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"delta参数是自从上一次调用 ``_process()`` 以来以秒为单位的时间，类型是浮点数。"
+"为了帮助管理这种可变性，``delta``参数包含自上次调用``_process()``以来以秒为单"
+"位经过的时间（作为浮点）。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -3227,11 +3215,12 @@ msgstr ""
 "游戏优化。在单线程游戏中它的执行是在的物理步骤之后完成的。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
-msgstr "测试此方法的一种简单方法是使用以下脚本创建具有单个标签节点的场景:"
+msgstr ""
+"如果想查看``_process()``这个方法是如何工作的，最简单的方式就是创建一个只有单"
+"个Label节点的Scene，同时为Label节点绑定以下脚本："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -3242,21 +3231,23 @@ msgid "Groups"
 msgstr "分组"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
 "for organizing large scenes. There are two ways to do add nodes to groups. "
 "The first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"随着节点数的增加，一个有用的管理方式是把节点添加到组里。有两种方法可以做到这"
-"一点。第一个通过UI实现，在Node面板下的Groups按钮:"
+"Godot中的组的工作方式类似于您可能在其他软件中遇到的标记。一个节点可以根据需要"
+"添加到任意多个组。这是组织大型场景的一个有用特性。有两种方法可以向组添加节"
+"点。第一个来自UI，使用节点面板下的Groups按钮："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"第二种方法来自代码。下列脚本将在当前节点出现在场景树中时，立即将其添加到“敌"
+"人”分组。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -3287,7 +3278,6 @@ msgstr ""
 "表："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -3295,9 +3285,9 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you have some time!"
 msgstr ""
-"类 :ref:`SceneTree <class_SceneTree>` 提供了很多有用的方法，例如与场景、场景"
-"中节点的层次、节点分组交互。它让您可以很方便切换场景，重载场景，退出游戏，暂"
-"停和继续游戏。它还有一些有趣的信号，如果您有空可以详细去查看！"
+"类 :ref:`场景树 <class_SceneTree>` 提供了很多有用的方法，例如与场景、场景中节"
+"点的层次、节点分组交互。它让您可以很方便切换场景，重载场景，退出游戏，暂停和"
+"继续游戏。它还有一些有趣的信号，如果您有空可以详细去查看！"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:157
@@ -3360,7 +3350,6 @@ msgstr ""
 "若要删除一个节点，无论其是否在场景树之内， ``free()`` 方法一定会被调用:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
@@ -3536,6 +3525,8 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"对于精灵纹理来说，你可以使用Godot图标，或任何你喜欢的图片。通过在精灵的纹理属"
+"性下拉菜单中选择“加载”来实现。将脚本附加到根节点，现在不要向它添加任何代码。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -4910,7 +4901,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1129
 msgid "Removing old creeps"
-msgstr ""
+msgstr "删除旧的小怪"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
 msgid ""
@@ -4918,6 +4909,8 @@ msgid ""
 "the previous game are still on screen. It would be better if they all "
 "disappeared at the start of a new game."
 msgstr ""
+"如果你一直玩到“游戏结束”，然后重新开始新游戏，上次游戏的小怪仍然显示在屏幕"
+"上。假如它们在新游戏开始时被清除，我们的游戏就会更完善。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid ""
@@ -4927,18 +4920,24 @@ msgid ""
 "``Mob`` nodes in the ``Main`` scene tree until we run the game. Instead "
 "we'll use code."
 msgstr ""
+"我们将使用“开始_游戏”信号，它已经被``HUD``节点发出，以删除剩余的小怪。我们无"
+"法使用编辑器以需要的方式将信号连接到``Mob``节点，因为在运行游戏之前，"
+"``Main`` 场景树中没有``Mob``节点。相反，我们将使用代码。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1140
 msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
 msgstr ""
+"首先向``Mob.gd``添加一个新函数。``queue_free()``将在当前帧的末尾删除当前节"
+"点。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
+"然后在``Main.gd``中，``_on_MobTimer_timeout()``函数中的末尾，添加新的行。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1157
 msgid ""
@@ -4946,6 +4945,8 @@ msgid ""
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
 "its ``_on_start_game()`` function."
 msgstr ""
+"这一行告诉新Mob节点(由``mob``变量引用)通过运行``_on_start_game()``函数来响应"
+"``HUD``节点发出的任何``开始_游戏``信号。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
 msgid "Finishing up"
@@ -5136,7 +5137,7 @@ msgid ""
 msgstr ""
 "Godot默认将触摸输入看作鼠标输入。这意味着为鼠标事件所写的代码，也能被触摸事件"
 "触发。如果您想禁用该功能或者将鼠标输入看作触摸输入，可以在*Input Devices*和"
-"*Pointing*的\"Project Settings\"里设置。"
+"*Pointing*的\"Project Settings\"里设置"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
 msgid ""
@@ -5839,6 +5840,8 @@ msgid ""
 "containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
 "page)."
 msgstr ""
+"最常见的五个容器（稍后，你可以了解更多关于容器的信息:参考:`图形用户界面容器<"
+"文档_图形用户界面_容器>`文档页）。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -5855,6 +5858,9 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"要设计UI，您需要使用控制节点。就是在编辑器中带有绿色图标的节点。它们有几十"
+"种，用于创建从生命条到复杂应用程序的任何东西。Godot编辑器本身就是使用控制节点"
+"构建的。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -5863,6 +5869,8 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"控制节点具有独特的属性，使它们能很好地相互协作。其他可视化节点，如二维节点和"
+"精灵没有这些功能。为使您的工作更轻松，在构建用户界面时尽量使用控制节点。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
@@ -10387,7 +10395,6 @@ msgstr ""
 "的场景。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
-#, fuzzy
 msgid ""
 "Using :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, the "
 "second function will only run once all code from the current scene has "
@@ -11490,7 +11497,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:43
 msgid "For Visual Studio Code you will have to point to the \"code.cmd\" file."
-msgstr ""
+msgstr "对于Visual Studio Code编辑器来说，您必须指向\"code.cmd\"文件。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
 #, fuzzy
@@ -16597,7 +16604,6 @@ msgid "Project setup and workflow"
 msgstr "项目设置和工作流程"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:108
-#, fuzzy
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
 "for your Godot project. This includes generating a C# solution (``.sln``) "
@@ -17044,14 +17050,12 @@ msgid "``Variant.Type`` enum"
 msgstr "\"变量.类型\"枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
-#, fuzzy
 msgid "``OP_*``"
-msgstr "“op_*”"
+msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
-#, fuzzy
 msgid "``Variant.Operator`` enum"
-msgstr "\"变体.运算符\" 枚举"
+msgstr "``变体.运算符`` 枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
 #, fuzzy
@@ -17120,7 +17124,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:66
 msgid "Tips"
-msgstr ""
+msgstr "提示"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:68
 msgid ""
@@ -17128,6 +17132,8 @@ msgid ""
 "directive allows to access the members and nested types of a class without "
 "specifying the class name."
 msgstr ""
+"有时候，使用``使用静态``指令是很有用的。该指令允许在不指定类名的情况下，访问"
+"类的成员和嵌套类型。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:90
@@ -17193,6 +17199,9 @@ msgid ""
 "``Singleton`` that returns the singleton instance. The type of this instance "
 "is ``Godot.Object``."
 msgstr ""
+"然而，在一些非常罕见的情况下，这是不够的。例如，您可能希望访问基类``Godot."
+"Object``中的成员，比如``连接``。对于这样的用例，我们提供了一个名为``单例``的"
+"静态属性，它返回单例实例。这个实例的类型是``Godot.Object``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
@@ -17532,7 +17541,7 @@ msgstr ""
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
-msgstr ""
+msgstr "通过同步/等待和``Godot.对象.对信号``可以实现对信号的等效收益。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:313
 msgid "Other differences"
@@ -17543,6 +17552,8 @@ msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
+"``preload``在GDScript中可用，在c#中不可用。请使用`GD.Load``或"
+"``ResourceLoader.Load``替代。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Other differences:"
@@ -17964,6 +17975,9 @@ msgid ""
 "tutorial suggests a workflow which should be a good starting point. We will "
 "also cover using version control with Godot."
 msgstr ""
+"由于Godot对项目结构或文件系统的使用没有限制，学习引擎时对文件进行排序似乎很有"
+"挑战性。本教程建议使用工作流，这应该是一个很好的起点。我们还将介绍使用Godot的"
+"版本控制。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:14
 msgid "Organization"
@@ -18040,7 +18054,6 @@ msgstr ""
 "github.com/godotengine/godot-blender-exporter"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:7
-#, fuzzy
 msgid ""
 "This plugin can be used to export Blender scenes in a Godot-specific scene "
 "format called ESCN, which is similar to TSCN (text format) but will be "
@@ -18173,24 +18186,28 @@ msgid ""
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
+"导出器支持将Cycles/EEVEE材质节点树转换为Godot着色器材质。注意，由于实现上的困"
+"难，一些着色器节点还不受支持，如下所示："
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid "all the ``noisy textures``"
-msgstr ""
+msgstr "所有``噪声纹理``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
 msgid "``generated texture coordinates``"
-msgstr ""
+msgstr "``生成纹理坐标``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
-msgstr ""
+msgstr "``组节点``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
+"着色器节点除了``条理化BSDF``, ``漫射``, ``光泽度``, ``玻璃``, ``添加着色器``"
+"以及``混合着色器``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
 msgid ""
@@ -18198,6 +18215,8 @@ msgid ""
 "output shader node, it is the only one guarantee to be exactly correctly. "
 "Others are just based on approximation."
 msgstr ""
+"如果可能，可以尝试使用具有GGX分布的条理化BSDF节点作为输出着色器节点，这是唯一"
+"能保证完全正确的方法。其他的只是基于近似。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
 #, fuzzy
@@ -18221,12 +18240,14 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
+"材质导出的默认配置，将把所有材质保存在``escn``文件内部。有一个选项是，当在"
+"Godot中打开``escn``文件时，可以生成外部``.material``文件。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
-msgstr ""
+msgstr "``.material``文件可以作为外部资源，分配给任何材质槽。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:2
 msgid "Physics properties"
@@ -18464,6 +18485,8 @@ msgid ""
 "Blender. Make sure that the skeleton is reset to its T-pose or default rest "
 "pose."
 msgstr ""
+"重要的是，当在Blender导出时，网格不会被骨骼变形。确保骨骼复位为其T型姿势或默"
+"认的休闲姿势。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:22
 msgid "Bone Weights"
@@ -18559,14 +18582,16 @@ msgid ""
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
+"新创建的动作始终绑定到对象的活动动作。有几种方法可以在NLA轨道上放置活动动作，"
+"一种当然是在``NLA编辑器``中"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
-msgstr ""
+msgstr "或者可以将动作存储在``摄影表``中"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2.检查NLA轨道的无声状态**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -18574,6 +18599,8 @@ msgid ""
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
+"NLA轨道可以是``静音``或``取消静音``，导出器将导出所有``静音``NLA轨道作为一个"
+"单独的动作，将所有``取消静音``NLA轨道混合到输出的每个动作(包括活动动作)中。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 #, fuzzy
@@ -18582,7 +18609,7 @@ msgstr "**4. 导出场景**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
-msgstr ""
+msgstr "确保开启``导出隐藏动作``选项。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
 #, fuzzy
@@ -19650,6 +19677,8 @@ msgid ""
 "sure that the skeleton is reset to its T-pose or default rest pose before "
 "exporting with your favorite 3D editor."
 msgstr ""
+"重要的是，在输出时网格不会被骨骼变形。在使用您喜爱的三维编辑器导出之前，请确"
+"保骨架被重置为T型姿势或默认休闲姿势。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:26
 msgid "Why not FBX?"
@@ -20291,7 +20320,7 @@ msgstr "具有此后缀的网格节点将被转换为导航网格。原始网格
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:330
 msgid "Create a VehicleBody (-vehicle)"
-msgstr ""
+msgstr "创建一个车体(-车辆)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:332
 #, fuzzy
@@ -20302,7 +20331,7 @@ msgstr "具有此后缀的网格节点将被转换为导航网格。原始网格
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
 msgid "Create a VehicleWheel (-wheel)"
-msgstr ""
+msgstr "创建一个车轮(-轮子)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:337
 #, fuzzy
@@ -21727,7 +21756,6 @@ msgid "Release User: Replace with the key alias."
 msgstr "发布用户:替换为您的密钥别名。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
-#, fuzzy
 msgid ""
 "Release Password: Key password. Note that the keystore password and the key "
 "password currently have to be the same."
@@ -21979,6 +22007,8 @@ msgid ""
 "However, the image is exported as a PNG file, so :ref:`custom HTML pages "
 "<doc_customizing_html5_shell>` can display it."
 msgstr ""
+"默认的HTML页面在加载时不显示启动界面。然而，图像导出为一个PNG文件，因此:参考:"
+"`自定义HTML页面<文档_自定义_html5_命令解析器>`可以显示它。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
 msgid "Unimplemented functionality"
@@ -22277,6 +22307,9 @@ msgid ""
 "then build it and use it as an export template every time you export the "
 "project."
 msgstr ""
+"Godot提供了使用自定义构建安卓模板的选项。与使用Godot附带的已预先构建好的模板"
+"不同，将实际的安卓Java项目安装到项目文件夹中。然后Godot将构建它，并在每次导出"
+"项目时将其作为导出模板。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:10
 #, fuzzy
@@ -22285,36 +22318,38 @@ msgstr "这可能有几个原因:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:12
 msgid "Modify the project before it's build"
-msgstr ""
+msgstr "在项目构建之前修改它"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
 msgid "Add external SDKs that build with your project"
-msgstr ""
+msgstr "添加与项目一起构建的外部SDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:15
 msgid ""
 "Configuring custom build is a more or less straightforward process, but it "
 "may take a while to get used to how the Android SDK works."
 msgstr ""
+"配置自定义构建，或多或少是一个简单的过程，但要习惯安卓SDK的工作方式可能需要一"
+"段时间。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:17
 msgid ""
 "Instructions will be provided as detailed as possible to do this process."
-msgstr ""
+msgstr "将提供尽可能详细的说明来完成这一过程。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:20
 msgid "Set up the Custom Build environment"
-msgstr ""
+msgstr "设置自定义构建环境"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:22
 msgid "Go to the Project menu, and install the *Custom Build* template:"
-msgstr ""
+msgstr "进入项目菜单，安装*自定义构建*模板:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:26
 msgid ""
 "Make sure export templates are downloaded. If not, this menu will aid you to "
 "do it."
-msgstr ""
+msgstr "确保已经下载了导出模板。如果没有，这个菜单会帮助你做这件事。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:28
 msgid ""
@@ -22327,7 +22362,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:31
 msgid "Install the Android SDK (Command Line Version)"
-msgstr ""
+msgstr "安装安卓SDK(命令行版本)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:33
 msgid ""
@@ -22337,6 +22372,9 @@ msgid ""
 "is easier but it requires downloading and installing Android Studio (which "
 "may require more than 1gb of storage)."
 msgstr ""
+"下面是使用命令行安装安卓SDK的步骤。这种方法的优点是简单，而且下载/安装的包体"
+"尺寸很小。不过，这可能更具挑战性。使用Android Studio方法更简单，但它需要下载"
+"和安装Android Studio(可能需要超过1gb的硬盘存储空间)。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:36
 #, fuzzy
@@ -22350,6 +22388,9 @@ msgid ""
 "otherwise Oracle's Java SDK for version 8 will work. Later versions may not "
 "work for Android development."
 msgstr ""
+"安卓SDK没有附带Java，所以需要手动安装。安装Java SDK(**不是**运行时或JRE)。建"
+"议使用OpenSDK 8，否则，甲骨文Java SDK版本8将正常工作。以后的版本可能不适用于"
+"安卓开发。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:41
 #, fuzzy
@@ -22363,30 +22404,37 @@ msgid ""
 "download (if you do want it, read further down for instructions for doing "
 "the same using Android Studio)."
 msgstr ""
+"到谷歌的网站下载安卓SDK。搜索引擎会带您进入*Android Studio*下载页面。你不需要"
+"它，所以不要下载(如果你想要，请进一步阅读使用Android Studio执行相同操作的说"
+"明)。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:46
 msgid ""
 "Look in that page for the *Command Line Tools*. Currently, they are listed "
 "under *Download Options*. Scroll down a bit until you see them."
 msgstr ""
+"在该页面中查找*命令行工具*。目前，它们列在*下载选项*下。向下滚动一点，直到看"
+"到它们。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:50
 msgid ""
 "Download the zip file for your platform, inside there will be a single "
 "*tools* folder:"
-msgstr ""
+msgstr "下载适合您平台的zip压缩包文件，里面有个单独的*工具*文件夹:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:54
 msgid ""
 "This may appear a little confusing, but be sure to follow these instructions "
 "carefully:"
-msgstr ""
+msgstr "这可能有点令人困惑，请务必认真遵循以下说明："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:56
 msgid ""
 "Create a new folder anywhere you want named *android-sdk* (it **must** be an "
 "empty directory). On Windows,"
 msgstr ""
+"在你想要的任何地方创建一个名为*android-sdk*的新文件夹(它**必须**是一个空目"
+"录)。在Windows平台上，"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:62
 msgid ""
@@ -22394,6 +22442,8 @@ msgid ""
 "The only thing in the directory you created in the previous step should be "
 "the *tools* folder with it's contents inside, like this:"
 msgstr ""
+"通常就够了。解压缩刚才下载的*sdk zip文件*。在上一步中创建的目录中，唯一的内容"
+"应该是*tools*文件夹，就像这样："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:72
 #, fuzzy
@@ -22405,6 +22455,7 @@ msgid ""
 "Everything would be more or less rosy up to here, but in order to even do "
 "anything, Google requires you to accept its licenses."
 msgstr ""
+"到这里的一切或多或少都很轻松，但是为了做任何事情，谷歌需要您接受它的许可。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:76
 msgid ""
@@ -22413,25 +22464,28 @@ msgid ""
 "folder (instructions provided for Windows users, as Unix users are expected "
 "to understand how command line navigation works):"
 msgstr ""
+"为此，必须在命令行中使用一个特殊参数执行*sdkmanager*。导航到sdk文件夹中的"
+"*tools/bin*目录(这是为Windows用户提供的说明，因为Unix用户需要了解命令行导航的"
+"工作原理):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:80
 msgid "Then open a command line window:"
-msgstr ""
+msgstr "然后打开命令行窗口："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:84
 msgid "In there, manually run sdkmanager with the \"--licenses\" argument:"
-msgstr ""
+msgstr "在这里，使用\"--licenses\"参数，手动运行sdkmanager："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:88
 msgid ""
 "This will ask you to accept several licenses, just write *\"y\"* and press "
 "*enter* on every of them until it's done."
-msgstr ""
+msgstr "这将要求您接受多个许可证，只要写*\"y\"*，然后按下*回车键*，直到完成。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:90
 msgid ""
 "Afterwards, install the platform tools (this is needed to install *adb*):"
-msgstr ""
+msgstr "然后安装平台工具(需要安装*adb*):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:96
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:166
@@ -22444,16 +22498,20 @@ msgid ""
 "Once *platform tools* are installed, the last step is to generate a debug "
 "keystore (this is needed to build). Go up two folders by writing:"
 msgstr ""
+"一旦安装了*平台工具*，最后一步是生成调试密钥存储库(这是构建所需要的)。向上写"
+"两个文件夹："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:105
 msgid "(or open a new shell on the *android-sdk* folder)."
-msgstr ""
+msgstr "(或者在“android-sdk”文件夹中打开一个新的命令解析器)。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:107
 msgid ""
 "And you need to input the following line (on Unixes this should work out of "
 "the box, for Windows there are further instructions below):"
 msgstr ""
+"您需要输入以下一行(在Unixes平台，这应该是开箱即用的，关于Windows平台的进一步"
+"说明如下):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:113
 msgid ""
@@ -22461,6 +22519,8 @@ msgid ""
 "added at the beginning on the line if you use PowerShell, it's not needed "
 "for regular console)."
 msgstr ""
+"在Windows平台，应该提供Java的完整路径(如果使用PowerShell脚本编辑器，需要在行"
+"首添加$，它不需要常规控制台)。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:115
 msgid ""
@@ -22468,12 +22528,14 @@ msgid ""
 "(by adding & and the full Java Path to keytool.exe). Again, keep in mind "
 "that you need Java installed:"
 msgstr ""
+"为了更清楚地说明这一点，下面是在PowerShell编辑器上工作的一行代码的截屏(通过向"
+"keytool.exe添加&和完整的Java路径)。同样，请记住您需要安装Java："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:119
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:186
 msgid ""
 "(right-click, then open the image in a new tab if this appears too small)"
-msgstr ""
+msgstr "(右键单击，如果图像太小，则在新选项卡中打开图像)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:123
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:190
@@ -22487,13 +22549,14 @@ msgid ""
 "Go to the *Editor Settings* and set up a few fields in *Export -> Android*. "
 "Make sure they look like the following:"
 msgstr ""
+"转到*编辑器设置*并在*导出->安卓*中设置几个字段。确保它们看起来像下面这样："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:129
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:196
 msgid ""
 "(again, right-click, then open the image in a new tab if this appears too "
 "small)"
-msgstr ""
+msgstr "(同样，右键单击，如果图像太小，则在新选项卡中打开图像)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:132
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:199
@@ -22502,6 +22565,8 @@ msgid ""
 "created, or inside the Java install. For Unix users, *jarsigner* is often in "
 "\"/usr/bin\"."
 msgstr ""
+"可以看出，大多数路径都在您最初创建的*android-sdk*中，或者在Java安装中。对于"
+"Unix用户，*jarsigner*通常位于“/usr/bin”中。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:134
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:201
@@ -22511,7 +22576,7 @@ msgstr "就是这样，喵！"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:138
 msgid "Install the Android SDK (Android Studio)"
-msgstr ""
+msgstr "安装安卓SDK (Android Studio)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:140
 msgid ""
@@ -22520,6 +22585,9 @@ msgid ""
 "up more disk space. It's also useful if you plan to develop Godot for "
 "Android (modify the Java source code) or if you plan to develop Add-Ons."
 msgstr ""
+"如果您刚刚通过命令行工具安装完SDK，那么可以完全跳过这部分。Android Studio路径"
+"更简单，但是它占用更多的磁盘空间。如果您计划为安卓平台开发Godot(修改Java源代"
+"码)，或者计划开发附加组件，那么它也非常有用。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:143
 #, fuzzy
@@ -22531,24 +22599,28 @@ msgid ""
 "Download the latest version of Android Studio. When installing, pay "
 "attention to where the *android-sdk* directory is created."
 msgstr ""
+"下载最新版本的Android Studio。安装时，请注意创建*android-sdk*目录的位置。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:149
 msgid ""
 "This is funny, the path it proposes by default contains whitespace (and "
 "complains about it). It must be changed."
 msgstr ""
+"这很有趣，默认情况下，它建议的路径包含空格(您会为此抱怨不已)。所以它必须改"
+"变。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:151
 msgid ""
 "In any case, it's better to select a different path inside your user "
 "folders. The recommended one is usually:"
-msgstr ""
+msgstr "无论如何，最好在用户文件夹中选择不同的路径。推荐的方法通常是："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:157
 msgid ""
 "Replace *yourusername* by your actual user name. Once it's correct, select "
 "from the list above in the same screen:"
 msgstr ""
+"用实际用户名替换*yourusername*。一旦正确，在同一屏幕上从以上列表中选择:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:159
 #, fuzzy
@@ -22564,19 +22636,22 @@ msgstr "Android NDK r13或更高版本"
 msgid ""
 "The rest are not needed, because the build system will fetch them itself. "
 "After selecting them, go on with the installation."
-msgstr ""
+msgstr "其余都不需要，因为构建系统会自动获取它们。选定它们后，继续安装。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:168
 msgid ""
 "You thought that by going the Android Studio way you could escape the "
 "Keystore generation, but no. It's back to haunt you."
 msgstr ""
+"你认为通过Android Studio的方式，就可以摆脱密钥存储的一代了，然而并没有。它又"
+"回来缠着你了。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:170
 msgid ""
 "Go to the folder where you installed android-sdk in the previous step, use "
 "File Explorer and open a command line tool there:"
 msgstr ""
+"转到上一步安装android-sdk的文件夹，使用文件资源管理器，并打开命令行工具："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:174
 msgid ""
@@ -22584,6 +22659,8 @@ msgid ""
 "out of the box, but on Windows it needs additional details (keep reading "
 "afterwards)."
 msgstr ""
+"要键入的实际命令行如下。在unix上应该是开箱即用的，但在Windows上，它需要更多的"
+"细节(请稍后继续阅读)。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:180
 msgid ""
@@ -22592,6 +22669,9 @@ msgid ""
 "for regular commandline). Don't worry, at least by using Android Studio on "
 "Windows, Java comes bundled with it."
 msgstr ""
+"在Windows上，应该提供到Java的完整路径(如果使用PowerShell编辑器，需要在行首添"
+"加&，它不需要常规命令行)。不用担心，至少在Windows平台上使用Android Studio，"
+"Java与它一并捆绑安装。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:182
 msgid ""
@@ -22600,16 +22680,19 @@ msgid ""
 "you use regular console). It uses a path to the Java version that comes with "
 "Android Studio:"
 msgstr ""
+"为了更清楚地说明这点，下面是在PowerShell编辑器上工作的一行代码的截屏(通过在"
+"keytool.exe中添加&和完整的Java路径，如果您使用常规控制台，请删除&)。它使用"
+"Android Studio自带的Java版本的路径:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:205
 msgid "Enabling Custom Build and Exporting"
-msgstr ""
+msgstr "启用自定义构建和导出"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:207
 msgid ""
 "When setting up the Android project in the *Project -> Export* dialog, "
 "*custom build* needs to be enabled:"
-msgstr ""
+msgstr "在*项目->导出*对话框中设置安卓项目时，需要启用*自定义构建*:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:211
 msgid ""
@@ -22617,12 +22700,14 @@ msgid ""
 "the *Gradle* build system to generate fresh templates (this window will "
 "appear every time):"
 msgstr ""
+"从现在开始，尝试导出项目或一键部署，会调用*Gradle*工具来构建系统生成新的模板"
+"（每次都会出现此窗口）："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:215
 msgid ""
 "The templates built will be used automatically afterwards, so no further "
 "configuration is needed."
-msgstr ""
+msgstr "随后将自动使用所构建的模板，所以不需要进一步配置。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for Windows"
@@ -22808,10 +22893,13 @@ msgid ""
 "article. It is from there that the \"best practices\" for the rest of the "
 "engine become more clear, based on established OOP practices."
 msgstr ""
+"虽然本系列的文章主要以主题为导向，还是建议用户从:参考:`文档_什么_是_godot_类`"
+"文章开始。正是从这里，引擎其余部分的“最佳实践”变得更加清晰，基于已建立的OOP实"
+"践。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
 msgid "What are Godot classes really?"
-msgstr ""
+msgstr "Godot类究竟是什么?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
@@ -22820,6 +22908,9 @@ msgid ""
 "design. *How* they do this may not be clear to beginner or intermediate "
 "users though."
 msgstr ""
+"Godot提供了两种创建类型的主要方法：脚本和场景。这两个都表示一个“类”，因为"
+"Godot是围绕着面向对象的设计。不过，初学者或中级用户可能还不清楚他们是*如何*做"
+"到这一点的。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:11
 msgid ""
@@ -22828,6 +22919,8 @@ msgid ""
 "they are resources that tell the engine a sequence of initializations to "
 "perform on an engine class."
 msgstr ""
+"Godot引擎提供了开箱即用的类(例如:参考:`节点<类_节点>`)，但是用户创建的类型实"
+"际上不是类。相反，它们是一种资源，告诉引擎初始化的顺序来执行一个引擎类。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:16
 msgid ""
@@ -22836,6 +22929,8 @@ msgid ""
 "class information (also called \"reflection\"). Things stored in the ClassDB "
 "include, among other things..."
 msgstr ""
+"Godot的内部类具有用:参考:`ClassDB <类_类数据库>`注册类数据的方法。此数据库提"
+"供对类信息(也称为“反射”)的运行时访问。存储在类数据库中的内容包括……"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:21
 #, fuzzy
@@ -22866,6 +22961,10 @@ msgid ""
 "a static `_bind_methods()` function that describes what C++ content it "
 "registers to the database and how."
 msgstr ""
+"此外，这个类数据库是执行任何操作时对象实际检查的对象。访问一个属性？调用一个"
+"方法？还是发射一个信号？它将检查数据库的记录(以及对象的基本类型的记录)，以查"
+"看对象是否支持该操作。每个c++对象都定义一个静态的`_bind_methods()`函数，该函"
+"数描述它向数据库注册了什么c++内容以及如何注册。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
 msgid ""
@@ -22874,6 +22973,9 @@ msgid ""
 "data to be appended to an object's data. That way, users could inject their "
 "own properties and methods into the engine's Object query requests."
 msgstr ""
+"如果引擎在启动时提供了所有这些数据，那么用户如何定义自己的数据？如果用户能够"
+"自定义一组数据，并将其附加到对象的数据中，那就太好了。这样，用户就可以将自己"
+"的属性和方法注入到引擎的对象查询请求中。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
 msgid ""
@@ -22883,6 +22985,9 @@ msgid ""
 "to the list of properties the Object fetches from the ClassDB. The same "
 "holds true for other declarative code."
 msgstr ""
+"*这个*就是:参考:`脚本<类_脚本>`。对象在数据库前检查其附加的脚本，脚本甚至可以"
+"重写方法。如果脚本定义了一个`_get_property_list()`方法，将该数据附加到对象从"
+"类数据库中获取的属性列表中。同样适用于其他的声明代码。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:47
 msgid ""
@@ -22892,6 +22997,9 @@ msgid ""
 "Object to defer to the Script's content where the engine logic deems "
 "appropriate."
 msgstr ""
+"当一些用户将脚本视为一个类时，他们可能会感到困惑。实际上，引擎只是自动实例化"
+"基本引擎类，然后将脚本添加到该对象。这样，对象就可以在引擎逻辑认为合适的地方"
+"遵从脚本的内容。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:53
 msgid ""
@@ -22900,10 +23008,12 @@ msgid ""
 "node hierarchies demonstrates this. Each individual Node's logic could be "
 "several hundred lines of code in length."
 msgstr ""
+"但问题确实出现了。随着物体尺寸的增大，创建它们所需的脚本尺寸也变得越来越大。"
+"创建节点层次结构演示了这一点。每个节点的逻辑可能是几百行代码的长度。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid "let's see a simple example of creating a single Node as a child."
-msgstr ""
+msgstr "让我们来看一个创建单个节点作为子节点的简单示例。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:98
 msgid ""
@@ -22915,6 +23025,10 @@ msgid ""
 "\"lookups\" within data structures to find the corresponding logic to "
 "execute."
 msgstr ""
+"注意，创建这个子节点只涉及两段声明性代码：变量声明和构造函数声明。关于子元素"
+"的所有其他内容，都必须使用命令式代码进行设置。但是，脚本代码比c++引擎代码要慢"
+"得多。每次更改都必须单独调用脚本API，这意味着要在数据结构中进行大量c++“查"
+"找”，以找到要执行的相应逻辑。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:106
 msgid ""
@@ -22923,6 +23037,9 @@ msgid ""
 "could then handle the construction using its fast C++ code, and the script "
 "code would be free from the perils of imperative code."
 msgstr ""
+"为了减轻工作量，如果可以批处理创建和设置节点层次结构所涉及的所有操作，将会非"
+"常方便。然后引擎就可以使用它的快速c++代码来处理构造，并且脚本代码将从命令式代"
+"码的危险中解放出来。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:111
 msgid ""
@@ -22930,6 +23047,8 @@ msgid ""
 "resource that provides an advanced \"constructor\" serialization which is "
 "offloaded to the engine for batch processing."
 msgstr ""
+"*这*就是场景(:参考:`打包场景<类_打包场景>`)：提供高级“构造函数”序列化的资源，"
+"该序列化被卸载到引擎进行批处理。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:115
 msgid ""
@@ -22938,10 +23057,12 @@ msgid ""
 "scripted root node that makes use of the sub-nodes. This means that the "
 "scene is often an extension of the script's declarative code."
 msgstr ""
+"为什么这些对场景组织很重要呢？因为我们必须明白场景*是*对象。通常将场景与使用"
+"子节点的脚本根节点进行配对。这意味着场景通常是脚本声明性代码的扩展。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:120
 msgid "It helps to define..."
-msgstr ""
+msgstr "它有助于定义……"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:122
 #, fuzzy
@@ -22950,15 +23071,15 @@ msgstr "脚本的作用"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:124
 msgid "how are they organized?"
-msgstr ""
+msgstr "它们是如何组织的?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
 msgid "how are they initialized?"
-msgstr ""
+msgstr "它们是如何初始化的？"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
 msgid "what connections to each other do they have, if any?"
-msgstr ""
+msgstr "它们之间是否有联系，如果有的话?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
 msgid ""
@@ -22967,6 +23088,8 @@ msgid ""
 "in one scene (which are often bundled into the scene itself). Other scripts "
 "are meant to be re-used between scenes."
 msgstr ""
+"因此，许多面向对象的原则适用于“编程”，也就是说，脚本*仍然*适用于场景。有些脚"
+"本只在一个场景中工作(通常是绑定到场景本身)。其他脚本是为了在场景之间复用。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:135
 msgid ""
@@ -22974,6 +23097,8 @@ msgid ""
 "therefore be interpreted as a part of the class.** Most of the points "
 "covered in this series will build on this point, so keep it in mind."
 msgstr ""
+"**无论如何，场景始终是根脚本的扩展，因此可以解释为类的一部分。**本系列涵盖的"
+"大部分观点都将建立在这点上，所以请牢记这一点。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
 #, fuzzy
@@ -22986,16 +23111,18 @@ msgid ""
 "content. Which nodes should one use? Where should one place them? How should "
 "they interact?"
 msgstr ""
+"本文讨论与场景内容的有效组织相关的主题。应该使用哪些节点？应该把它们放在哪"
+"里？它们应该如何互动？"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:11
 msgid "How to build relationships effectively"
-msgstr ""
+msgstr "如何有效地建立配置关系"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:13
 msgid ""
 "When Godot users begin crafting their own scenes, they often run into the "
 "following problem:"
-msgstr ""
+msgstr "当Godot用户开始制作自己的场景时，他们经常遇到以下问题："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:16
 msgid ""
@@ -23007,6 +23134,10 @@ msgid ""
 "node paths do not find their targets. Signal connections established in the "
 "editor break."
 msgstr ""
+"他们创造了自己的第一个场景，并在需要将其分割成可复用的部分之前，将其填满内"
+"容。将场景的分支保存到自己的场景中。随后他们注意到，以前可以依赖的硬引用，现"
+"在已经不可用了。在多个位置复用场景会产生问题，因为节点路径找不到它们的目标。"
+"在编辑器内，中断已建立的信号连接。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
 msgid ""
@@ -23015,6 +23146,8 @@ msgid ""
 "that the sub-scene will create itself without being picky about how one uses "
 "it."
 msgstr ""
+"为了解决这些问题，必须实例化子场景，而不需要详细说明其环境。我们需要相信子场"
+"景能够创建自己，而无需挑剔如何使用它。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:29
 msgid ""
@@ -23024,12 +23157,16 @@ msgid ""
 "objects small (for maintainability) and improves their reusability so that "
 "re-writing completed logic is unnecessary."
 msgstr ""
+"在面向对象的程序设计中，需要考虑的最重要的事情之一是保持专注，使用“松散耦合"
+"<https://en.wikipedia.org/wiki/Loose_coupling>”到代码库的其他部分的单用途类。"
+"这使对象的尺寸尽可能小(为了可维护性)并提高了它们的可复用性，因此无需重写已完"
+"成的逻辑。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:36
 msgid ""
 "These OOP best practices have *several* ramifications for the best practices "
 "in scene structure and script usage."
-msgstr ""
+msgstr "这些面向对象的最佳实践，对场景结构和脚本使用中的最佳实践有*几个*分支。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:39
 msgid ""
@@ -23037,6 +23174,8 @@ msgid ""
 "That is, one should create scenes that keep everything they need within "
 "themselves."
 msgstr ""
+"**如果可能的话，应该设计没有依赖关系的场景。**也就是说，用户在创造场景时，要"
+"对他们所需的一切谙熟于心。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:43
 msgid ""
@@ -23047,12 +23186,16 @@ msgid ""
 "which rely on their external environment can inadvertently trigger bugs and "
 "unexpected behavior."
 msgstr ""
+"如果场景必须与外部环境交互，经验丰富的开发人员建议使用“依赖注入<https://en."
+"wikipedia.org/wiki/Dependency_injection>_.”这种技术是让一个高级API提供低级API"
+"的依赖关系。为什么这样做呢?因为依赖于外部环境的类，可能在无意中触发bug和意外"
+"行为。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:50
 msgid ""
 "To do this, one must expose data and then rely on a parent context to "
 "initialize it:"
-msgstr ""
+msgstr "要做到这一点，必须公开数据，然后依赖父级上下文来初始化它:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:53
 msgid ""
@@ -23060,10 +23203,12 @@ msgid ""
 "behavior, not start it. Note that signal names are usually past-tense verbs "
 "like \"entered\", \"skill_activated\", or \"item_collected\"."
 msgstr ""
+"连接到一个信号。非常安全,但是应该只用于“回应”行为，而不是启动它。注意，信号名"
+"通常是过去时态动词，如“进入后”，“技能_激活后”或“物品_收集后”。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:74
 msgid "Call a method. Used to start behavior."
-msgstr ""
+msgstr "调用一个方法。用于启动行为。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:93
 msgid ""
@@ -23073,11 +23218,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:113
 msgid "Initialize a Node or other Object reference."
-msgstr ""
+msgstr "初始化节点或其他对象引用。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:132
 msgid "Initialize a NodePath."
-msgstr ""
+msgstr "初始化节点路径。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:151
 msgid ""
@@ -23085,6 +23230,8 @@ msgid ""
 "keeps the child **loosely coupled** to its environment. One can re-use it in "
 "another context without any extra changes to its API."
 msgstr ""
+"这些选项对子节点隐藏访问源。反过来，又保持子节点与环境的**松散耦合**。可以在"
+"另外的上下文中重用它，而无需对它的API做任何额外更改。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:157
 msgid ""
@@ -23093,6 +23240,8 @@ msgid ""
 "should only be aware of their hierarchies while an ancestor mediates their "
 "communications and references."
 msgstr ""
+"虽然上面的例子说明了父子关系，同样的原则也适用于所有对象之间的关系。兄弟节点"
+"应该只知道它们的层次结构，而先祖节点则负责协调它们的通信和引用。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:204
 msgid ""
@@ -23100,6 +23249,8 @@ msgid ""
 "dependencies on other objects. Whichever object actually owns the objects "
 "should manage the relationships between them."
 msgstr ""
+"同样的原则也适用于维护对其他对象依赖关系的非节点对象。无论哪个对象实际拥有这"
+"些对象，都应该管理它们之间的关系。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:210
 msgid ""
@@ -23112,6 +23263,11 @@ msgid ""
 "is otherwise known as development hell. Writing code that relies on external "
 "documentation for one to use it safely is error-prone by default."
 msgstr ""
+"应该倾向于将数据保存在内部(场景内部)，尽管它依赖于外部环境，即使是松散耦合"
+"的，仍然意味着节点将期望其环境中的某些内容为真。项目的设计理念应该防止这种情"
+"况发生。如果不是这样，代码固有的责任将迫使开发人员使用文档，以在微观尺度上跟"
+"踪对象关系；这就是所谓的开发地狱。默认情况下，编写依赖于外部文档的代码来安全"
+"地使用它，是很容易出错的。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:219
 msgid ""
@@ -23126,6 +23282,12 @@ msgid ""
 "then self-documents the scene through the script code. No content "
 "duplication via documentation is necessary."
 msgstr ""
+"为避免创建和维护此类文档，将依赖节点(上面的“子节点”)转换为实现的工具脚本:参"
+"考:`_获取_配置_警告() <类_节点_方法__获取_配置_警告>`。返回一个非空字符串，将"
+"使场景面板生成一个警告图标，该字符串作为节点的工具提示。这是节点出现的相同图"
+"标，例如:参考:`二维区域<类_二维区域>`节点，当它没有定义:参考:`二维碰撞形状<类"
+"_二维碰撞形状>`子节点时。然后编辑器通过脚本代码自动记录场景。不需要通过文档复"
+"制内容。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:230
 msgid ""
@@ -23135,6 +23297,9 @@ msgid ""
 "will need clear instructions in the messages telling them what to do to "
 "configure it."
 msgstr ""
+"这样的图形用户界面可以更好地向项目用户提供关于节点的关键信息。它有外部依赖"
+"吗？这些依赖关系是否得到了满足？其他程序员，尤其是设计师和编剧们，需要明确指"
+"示的消息，告诉他们如何配置它。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:235
 msgid ""
@@ -23145,12 +23310,18 @@ msgid ""
 "scenes in unforeseen ways, then things break down. A change to one class "
 "could result in damaging effects to other classes."
 msgstr ""
+"那么，为什么所有这些复杂的切换都能工作呢？因为当场景单独运行时，效果最好。如"
+"果不能独自工作，那么就匿名与其他对象合作(具有最小的硬依赖关系，即松散耦合)。"
+"如果一个类不可避免的变化导致它以不可预见的方式与其他场景交互，然后事情就发生"
+"了变化。对一个类的更改可能会对其他类造成破坏性的影响。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:242
 msgid ""
 "Scripts and scenes, as extensions of engine classes should abide by *all* "
 "OOP principles. Examples include..."
 msgstr ""
+"脚本和场景，作为引擎类的扩展，应该*全部*遵循面向对象的程序设计原则。例子包"
+"括……"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:245
 #, fuzzy
@@ -23186,6 +23357,10 @@ msgid ""
 "But, for those who are unsure, this helpful guide can give them a sample of "
 "a decent structure to start with."
 msgstr ""
+"一个开发者开始开发一款游戏，却在眼前的巨大可能性面前止步不前。他们可能知道自"
+"己想做什么，他们想要什么样的系统，但是把它们都放在*哪里*呢？好吧，如何创造他"
+"们的游戏总是取决于他们自己。可以用多种方法构造节点树。但是，对于那些不确定的"
+"人来说，这篇有用的指南可以为他们提供一个良好结构的示例。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:260
 msgid ""
@@ -23196,17 +23371,20 @@ msgid ""
 "applications, this would be the \"main\" function. In this case, it would be "
 "a Main node."
 msgstr ""
+"游戏应该始终有一个“切入点”；在任何地点，开发人员都能明确跟踪事件的开始位置，"
+"以便在其他地方继续执行逻辑。这个地点也作为鸟瞰程序中所有其他数据和逻辑的地"
+"方。对于传统的应用程序，这就是“主”函数。在本例中，它将是一个主节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:266
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:277
 msgid "Node \"Main\" (main.gd)"
-msgstr ""
+msgstr "节点“主”(main.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:268
 msgid ""
 "The ``main.gd`` script would then serve as the primary controller of one's "
 "game."
-msgstr ""
+msgstr "``main.gd``脚本将作为游戏的主控制器。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:271
 msgid ""
@@ -23214,14 +23392,16 @@ msgid ""
 "child of Main. In addition, one will need a primary GUI for their game that "
 "manages the various menus and widgets the project needs."
 msgstr ""
+"然后你便拥有了真正的游戏“世界”(二维或三维)。这可以是主场景的子节点。此外，玩"
+"家需要为他们的游戏提供一个主要图形用户界面来管理项目所需的各种菜单和小部件。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:276
 msgid "Node2D/Spatial \"World\" (game_world.gd)"
-msgstr ""
+msgstr "二维节点/空间“世界”(game_world.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:277
 msgid "Control \"GUI\" (gui.gd)"
-msgstr ""
+msgstr "控制“图形用户界面”(gui.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:279
 msgid ""
@@ -23229,30 +23409,32 @@ msgid ""
 "node. :ref:`Changing scenes manually <doc_change_scenes_manually>` gives "
 "users full control over how their game world transitions."
 msgstr ""
+"当变更关卡时，可以替换“世界”节点的子节点。:参考:`手动更换场景<文档_手动_更换_"
+"场景>`让用户完全控制他们的游戏世界如何过渡。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:283
 msgid ""
 "The next step is to consider what gameplay systems one's project requires. "
 "If one has a system that..."
-msgstr ""
+msgstr "下一步是考虑项目需要什么样的游戏系统。如果有这么一个系统……"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:286
 msgid "tracks all of its data internally"
-msgstr ""
+msgstr "跟踪所有的内部数据"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:287
 msgid "should be globally accessible"
-msgstr ""
+msgstr "应该是全局可访问的"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:288
 msgid "should exist in isolation"
-msgstr ""
+msgstr "应该独立存在的"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:290
 msgid ""
 "... then one should create an :ref:`autoload 'singleton' node "
 "<doc_singletons_autoload>`."
-msgstr ""
+msgstr "……那么应该创建一个:参考:`自动加载'单例'节点<文档_单例_自动加载>`节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:294
 msgid ""
@@ -23262,6 +23444,9 @@ msgid ""
 "content. This structure more or less keeps the \"World\" as the main game "
 "node."
 msgstr ""
+"对于较小的游戏，一个更简单、更少控制的选择，是简单地调用一个“游戏”单例:参考:`"
+"场景树.更换_场景() <类_场景树_方法_更换_场景>`方法替换主场景的内容。这种结构"
+"或多或少保留了作为主要游戏节点的“世界”。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:300
 msgid ""
@@ -23269,6 +23454,8 @@ msgid ""
 "\", or be manually added as a direct child of the root. Otherwise, the GUI "
 "nodes would also delete themselves during scene transitions."
 msgstr ""
+"任何图形用户界面也需要是一个单例，成为“世界”过渡的一部分，或者作为根的直接子"
+"元素手动添加。否则，图形界面用户节点也会在场景转换期间删除它们自己。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:305
 msgid ""
@@ -23277,6 +23464,9 @@ msgid ""
 "on the reasons, please see the :ref:`'Autoloads vs. Internal Nodes' "
 "<doc_autoloads_versus_internal_nodes>` documentation."
 msgstr ""
+"如果一个系统修改了其他系统的数据，应该将它们定义为自己的脚本或场景，而不是自"
+"动加载。更多关于该原因的信息，请参阅:参考:`'自动加载和内部节点'<文档_自动加载"
+"_和_内部_节点>`文档。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:311
 msgid ""
@@ -23287,6 +23477,9 @@ msgid ""
 "should have its own place in the hierarchy as a sibling or some other "
 "relation."
 msgstr ""
+"游戏中的每个子系统都应该在场景树中有自己的区域。只有在节点实际上是其父节点的"
+"元素的情况下，才能使用父子关系。删除父节点是否意味着也应该删除子节点？如果不"
+"是这样，那么它应该在层次结构中有自己的位置，作为兄弟或其他关系。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:319
 msgid ""
@@ -23298,17 +23491,21 @@ msgid ""
 "node. To assign the ``target`` :ref:`NodePath <class_NodePath>`, use one of "
 "the following:"
 msgstr ""
+"在某些情况下，我们需要这些分离的节点*仍然*定位它们彼此之间的相对位置。为此，"
+"可以使用:参考:`移除转换<类_移除转换>`/:参考:`移除二维转换<类_移除二维转换>`节"
+"点。它们将允许目标节点有条件地从远程\\*节点继承选定的转换元素。要分配“目标”:"
+"参考:`节点路径<类_节点路径>`，使用以下方法之一："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:327
 msgid ""
 "A reliable third party, likely a parent node, to mediate the assignment."
-msgstr ""
+msgstr "一个可靠的第三方，可能是一个父节点，来协调分配任务。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:328
 msgid ""
 "A group, to easily pull a reference to the desired node (assuming there will "
 "only ever be one of the targets)."
-msgstr ""
+msgstr "一个组，以便拉到所需节点的引用(假设目标只有一个)。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:331
 msgid ""
@@ -23316,37 +23513,39 @@ msgid ""
 "when one must micro-manage when a node must move around the SceneTree to "
 "preserve itself. For example..."
 msgstr ""
+"什么时候应该这样做呢？好吧，这取决于它们自身。当一个节点必须围绕场景树移动以"
+"保持自身时，必须对其进行微观管理时，就会出现这种困境。例如……"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:335
 msgid "Add a \"player\" node to a \"room\"."
-msgstr ""
+msgstr "添加一个“玩家”节点到一个“房间”。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:336
 msgid "Need to change rooms, so one must delete the current room."
-msgstr ""
+msgstr "需要更换房间，所以必须删除当前的房间。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:337
 msgid ""
 "Before the room can be deleted, one must preserve and/or move the player."
-msgstr ""
+msgstr "在可以删除房间之前，必须保存和/或移动玩家。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:339
 msgid "Is memory a concern?"
-msgstr ""
+msgstr "需要关心内存吗？"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:341
 msgid ""
 "If not, one can just create the two rooms, move the player and delete the "
 "old one. No problem."
-msgstr ""
+msgstr "如果不是这样，一次可以创建两个房间，移动玩家并删除旧的那个。没有问题。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:344
 msgid "If so, one will need to..."
-msgstr ""
+msgstr "如果是这样，那么需要……"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:346
 msgid "Move the player somewhere else in the tree."
-msgstr ""
+msgstr "将玩家移动到树的其他位置。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:347
 #, fuzzy
@@ -23355,7 +23554,7 @@ msgstr "删除轨道"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:348
 msgid "Instantiate and add the new room."
-msgstr ""
+msgstr "实例化并添加新房间。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:349
 #, fuzzy
@@ -23371,32 +23570,38 @@ msgid ""
 "is dangerous. It's a maintenance burden, strains code readability, and "
 "bloats the intellectual content of a project unnecessarily."
 msgstr ""
+"问题在于，这里的玩家是一个“特例”，其中开发者必须“懂得”他们需要以这种方式处理"
+"项目中的玩家。因此，作为一个团队可靠地共享此信息的唯一方法就是“记录”它。然"
+"而，在文档中保存实现细节是危险的。这是一种维护负担，增加了代码的可读性压力，"
+"以及增加了项目内不必要的知识内容。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:358
 msgid ""
 "In a more complex game with larger assets, it can be a better idea to simply "
 "keep the player somewhere else in the SceneTree entirely. This involves..."
 msgstr ""
+"更复杂的游戏，拥有更大的资源量，简单地将玩家完全保留在场景中的其他地方，可能"
+"是一个更好的主意。这涉及到……"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:361
 msgid "More consistency."
-msgstr ""
+msgstr "更多的一致性。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid "No \"special cases\" that must be documented and maintained somewhere."
-msgstr ""
+msgstr "没有必须被记录和维护在某地的“特殊情况”。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:363
 msgid ""
 "No opportunity for errors to occur because these details are not accounted "
 "for."
-msgstr ""
+msgstr "没有发生错误的机会，因为忽略不计这些细节。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:366
 msgid ""
 "In contrast, if one ever needs to have a child node that does *not* inherit "
 "the transform of their parent, one has the following options:"
-msgstr ""
+msgstr "相比之下，如果需要一个子节点不继承父节点的转换，那么具有以下选项："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:369
 msgid ""
@@ -23404,6 +23609,8 @@ msgid ""
 "them. As nodes with no transform, Nodes will not pass along such information "
 "to their children."
 msgstr ""
+"**声明性**解决方案是：在它们之间放置一个:参考:`节点<类_节点>`。作为没有转换的"
+"节点，节点不会将这些信息传递给其子节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:372
 msgid ""
@@ -23412,6 +23619,9 @@ msgid ""
 "<class_Spatial_method_set_as_toplevel>` node. This will make the node ignore "
 "its inherited transform."
 msgstr ""
+"**必要**解决方案:对:参考:`画布组件<类_画布组件_方法_设置_为_顶级>` 或者:参考:"
+"`空间<类_空间_方法_设置_为_顶级>`节点，使用``设置_为_顶级``设值函数。这将使节"
+"点忽略其继承的转换。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:379
 msgid ""
@@ -23422,6 +23632,10 @@ msgid ""
 "keeping these in a separate branch from the \"world\" can help simplify the "
 "management of game connections and the like."
 msgstr ""
+"如果创建一个网络游戏，请记住哪些节点和游戏系统与所有玩家相关，而哪些只与权威"
+"服务器相关。例如，用户并不需要拥有所有玩家“玩家角色控制器”逻辑的副本。相反，"
+"他们只需属于自己的角色控制器。因此,将它们与“世界”保持在一个单独的分支中，可以"
+"帮助简化游戏连接等的管理。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:386
 msgid ""
@@ -23431,6 +23645,10 @@ msgid ""
 "else. If so, then it stands to reason they should be children of that parent "
 "(and likely part of that parent's scene if they aren't already)."
 msgstr ""
+"场景组织的关键是用关系术语，而不是空间术语来考虑场景。节点是否需要依赖于其父"
+"节点的存在？如果不是，那么它们可以在其他地方独自成长。如果是这样，那么很显"
+"然，它们应该是父节点的子节点(如果它们不是这样做的话，那很可能是其父场景的一部"
+"分)。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:392
 msgid ""
@@ -23439,16 +23657,21 @@ msgid ""
 "one still has the flexibility to move nodes around, it is still best when "
 "such moves are unnecessary by default."
 msgstr ""
+"这是否意味着节点本身就是组件？并不是这样。Godot的节点树形成的是聚合关系，而不"
+"是组合关系。虽然我们依旧可以灵活地移动节点，但在默认情况下，无需移动，仍然是"
+"最好的选择。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:4
 msgid "When to use scenes versus scripts"
-msgstr ""
+msgstr "什么时候使用场景，什么时候使用脚本"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:6
 msgid ""
 "We've already covered how scenes and scripts are different. Scripts define "
 "an engine class extension with imperative code, scenes with declarative code."
 msgstr ""
+"我们已经介绍了场景和脚本的不同之处。脚本使用命令式代码定义引擎类扩展，而场景"
+"带有声明性代码。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:10
 msgid ""
@@ -23457,10 +23680,12 @@ msgid ""
 "are often used in conjunction with a script so that the scene acts as an "
 "extension of the scripts declarative code."
 msgstr ""
+"因此，每个系统的功能是不同的。场景可以定义扩展类如何初始化，但不关心它的实际"
+"行为。场景经常与脚本结合使用，使得场景作为脚本声明性代码的扩展。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
 msgid "Anonymous types"
-msgstr ""
+msgstr "匿名类型"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:18
 msgid ""
@@ -23468,6 +23693,8 @@ msgid ""
 "alone. This is, in essence, what the Godot Editor does, only in the C++ "
 "constructor of its objects."
 msgstr ""
+"*仅仅*使用脚本就可以完全定义场景的内容。这就是Godot编辑器的本质，只存在于c+"
+"+构造函数的对象中。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
 msgid ""
@@ -23475,6 +23702,8 @@ msgid ""
 "is identical to creating in-engine classes whereas handling scenes requires "
 "a change in API:"
 msgstr ""
+"但是，选择使用哪个可能是个两难的选择。创建脚本实例与创建引擎内的类相同，但是"
+"处理场景需要更改API:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:59
 msgid ""
@@ -23482,6 +23711,8 @@ msgid ""
 "differences between engine and script code. The larger and more complex the "
 "node, the more reason there is to build it as a scene."
 msgstr ""
+"此外，由于引擎和脚本代码之间的速度差异，脚本的运行速度会比场景略慢。节点越大"
+"越复杂，所以更加有理由把它建立为一个场景。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
 #, fuzzy
@@ -23495,10 +23726,13 @@ msgid ""
 "dialog with an optional icon. In these cases, the user's ability to use the "
 "script is much more streamlined. Rather than having to..."
 msgstr ""
+"在某些情况下，用户可以在编辑器内，将脚本注册为新类型。在节点或资源创建对话框"
+"中，将其显示为新类型，并带有可选图标。在这些情况下，用户使用脚本的能力更加流"
+"畅。而不必……"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:71
 msgid "Know the base type of the script they would like to use."
-msgstr ""
+msgstr "了解他们想要使用的脚本的基本类型。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
 #, fuzzy
@@ -23512,7 +23746,7 @@ msgstr "资源的文字描述。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
 msgid "(Drag-n-drop method)"
-msgstr ""
+msgstr "（拖放方法）"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
 #, fuzzy
@@ -23526,13 +23760,13 @@ msgstr "编写脚本，使其能访问场景中的其它节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
 msgid "(Property method)"
-msgstr ""
+msgstr "(属性方法)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:85
 msgid ""
 "Scroll down to the bottom of the Inspector to find the ``script`` property "
 "and select it."
-msgstr ""
+msgstr "向下滚动到属性面板的底部，找到“脚本”属性并选择它。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:87
 #, fuzzy
@@ -23551,6 +23785,8 @@ msgid ""
 "of the above work. The creation dialog even has a search bar to look up the "
 "type by name."
 msgstr ""
+"使用注册脚本，相反，脚本类型变成了创建选项，就像系统中的其他节点和资源一样。"
+"你不需要做任何的工作。创建有一个搜索栏的对话框来按名称查找类型。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:96
 #, fuzzy
@@ -23564,42 +23800,44 @@ msgstr ":ref:`易于书写的着色器 <doc_shading_language>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:100
 msgid "Editor-only. Typenames are not accessible at runtime."
-msgstr ""
+msgstr "仅限编辑器。运行时无法访问类型名。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:102
 msgid "Does not support inherited custom types."
-msgstr ""
+msgstr "不支持继承自定义类型。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:104
 msgid "An initializer tool. Creates the node with the script. Nothing more."
-msgstr ""
+msgstr "初始化工具。使用脚本创建节点。仅此而已。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:106
 msgid ""
 "Editor has no type-awareness of the script or its relationship to other "
 "engine types or scripts."
-msgstr ""
+msgstr "编辑器不知道脚本的类型，也不知道它与其他引擎类型或脚本的关系。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:109
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:127
 msgid "Allows users to define an icon."
-msgstr ""
+msgstr "允许用户定义图标。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:111
 msgid ""
 "Works for all scripting languages because it deals with Script resources in "
 "abstract."
-msgstr ""
+msgstr "适用于所有脚本语言，因为它处理抽象的脚本资源。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:113
 msgid ""
 "Set up using :ref:`EditorPlugin.add_custom_type "
 "<class_EditorPlugin_method_add_custom_type>`."
 msgstr ""
+"设置使用:参考:`编辑器插件.添加_自定义_类型<类_编辑器插件_方法_添加_自定义_类"
+"型>`。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:115
 msgid ":ref:`Script Classes <doc_scripting_continued_class_name>`"
-msgstr ""
+msgstr ":参考:`脚本类<文档_脚本_持续_类_名称>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."
@@ -23710,6 +23948,9 @@ msgid ""
 "thrives by supporting ways to cut down the size of such objects. Instead it "
 "shifts content into individual nodes as much as possible."
 msgstr ""
+"其他引擎可能鼓励创建“管理”类，这些类将许多功能组织成一个全局可访问的实体。"
+"Godot通过支持减少此类对象大小的方法而蓬勃发展。相反，它尽可能地将内容转移到各"
+"个节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:11
 msgid ""
@@ -23720,6 +23961,10 @@ msgid ""
 "playing the sound, then the new sound interrupts the first sound, "
 "terminating it before it can play."
 msgstr ""
+"例如，如果开发者正在创建一个平台游戏，而他们想要收集金币时能播放声音效果，那"
+"该怎么办？这里有一个节点:参考:`音频流播放器<类_音频流播放器>`。但是他们注意"
+"到，在测试过程中，如果他们“播放”一个已经在播放声音的音频流播放器，然后新的声"
+"音打断了第一个声音，可以在播放之前终止它。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:18
 msgid ""
@@ -23730,6 +23975,11 @@ msgid ""
 "access it from anywhere with `SFX.play(\"coin_pickup.ogg\")`. Little do they "
 "know, they've invited a great many complications into their code."
 msgstr ""
+"用户倾向于认为最好的解决方案是，通过使音效管理器自动加载节点，使整个系统更智"
+"能。它生成一个音频流播放器池，当每个对声音效果的新请求到来时，这些播放器就会"
+"循环播放。然后，他们将这个音效管理器设置为一个自动加载器，这样他们就可以通"
+"过“SFX.play(“coin_pick.ogg”)从任何地方访问它。而他们根本不知道，代码中引入了"
+"很多复杂的东西。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:25
 msgid ""
@@ -23745,32 +23995,36 @@ msgid ""
 "**global access**: Now that any object can call `SFX.play(sound_path)` from "
 "anywhere, there's no longer an easy way to track where an SFX bug began."
 msgstr ""
+"**全局访问**：现在任何对象都可以从任何地方调用“SFX.play(音效_路径)”，现在已没"
+"有一种简单的方法来跟踪音效bug是从哪里开始的了。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:33
 msgid ""
 "**global resource allocation**: If all objects' data and processing is "
 "centralized from the start, then one must either..."
 msgstr ""
+"**全局资源配置**：如果所有对象的数据和处理，从一开始就是集中管理的，然后你必"
+"须……"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:36
 msgid "risk under-allocating resources which might lead to faulty behavior."
-msgstr ""
+msgstr "资源分配不足的风险，可能导致发生错误行为。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:38
 msgid ""
 "Ex: Have too few AudioStreamPlayers in the object pool. Sound doesn't play "
 "or it interrupts another sound."
-msgstr ""
+msgstr "例如：在对象池中音频流播放器太少。声音不播放或打断其他声音。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:41
 msgid "over-allocate resources and use more memory/processing than it needs."
-msgstr ""
+msgstr "过度分配资源和使用更多内存/处理超出它的需要。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:43
 msgid ""
 "Ex: Have an arbitrarily large number of AudioStreamPlayers, with many of "
 "them idling away and not doing anything."
-msgstr ""
+msgstr "例如：拥有任意数量的音频播放器，其中有许多处于闲置状态，什么都没做。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:46
 msgid ""
@@ -23785,12 +24039,15 @@ msgid ""
 "Contrast this with each scene keeping as many AudioStreamPlayer nodes as it "
 "needs within itself and all these problems go away."
 msgstr ""
+"与之形成对比的是，在每个场景中保留尽可能多的音频流播放器节点，所有这些问题都"
+"会消失。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:55
 msgid ""
 "Each scene manages its own state information. If there is a problem with the "
 "data, it will only cause issues in that one scene."
 msgstr ""
+"每个场景管理自己的状态信息。如果数据出了问题，它只会在单个场景中引起问题。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:58
 msgid ""
@@ -23799,18 +24056,25 @@ msgid ""
 "in the code it's making the problematic call (locate where the code "
 "references the given node) is going to be much easier."
 msgstr ""
+"每一个场景都只能访问自己的节点。现在，如果有一个bug，跟踪哪个节点(可能是场景"
+"的根节点)，而在代码中，确定哪个位置进行有问题的调用(定位代码引用给定节点的位"
+"置)将会容易得多。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:63
 msgid ""
 "Each scene knows exactly how many resources it needs for the task it "
 "performs. No waste of memory or processing due to a lack of information."
 msgstr ""
+"每个场景都确切地知道执行任务需要多少资源。不会造成由于缺乏信息而造成的内存或"
+"者数据处理的浪费。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:66
 msgid ""
 "The typical justifications for the Autoload include, \"I have common Xs that "
 "involve many nodes across many scenes, and I want each scene to have X.\""
 msgstr ""
+"典型的自动装载的理由包括，“我有一些公共的x，它包含很多场景中的节点，我希望每"
+"个场景都有x。”"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:69
 msgid ""
@@ -23818,6 +24082,8 @@ msgid ""
 "<class_Node>` that deals with providing that feature for an individual scene "
 "or node subtree."
 msgstr ""
+"如果x是一个函数，那么，解决方案是创建一个新的类型:参考:`节点<类_节点>`，它被"
+"处理为单个场景或为节点子树提供该特性。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:73
 msgid ""
@@ -23826,10 +24092,13 @@ msgid ""
 "object to which each node has access (nodes within a scene can use "
 "`get_owner()` to fetch the scene root for example)."
 msgstr ""
+"如果x是数据，那么解决方案是:1)创建一个新的类型:参考:`资源<类_资源>`来共享数"
+"据，或者2)将数据存储在每个节点都可以访问的对象中(例如，场景中的节点可以使用"
+"`get_owner()`来获取场景根)。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:78
 msgid "So when *should* one use an autoload?"
-msgstr ""
+msgstr "那么什么时候*应该*使用自动加载呢？"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:80
 msgid ""
@@ -23841,6 +24110,10 @@ msgid ""
 "class within a scene, then it will function in place of a formal singleton "
 "API."
 msgstr ""
+"**静态数据**：如果需要静态数据，即应该与类关联的数据（所以只有一个数据拷"
+"贝），自动加载是很好的机会。静态数据并不存在于Godot的脚本API中，所以自动装载"
+"单例是其次最好的事情。将类创建为自动加载，而且永远不会在场景中创建该类的另一"
+"个副本，那么它将代替一个正式的单例API。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:88
 msgid ""
@@ -23851,6 +24124,10 @@ msgid ""
 "to load and create constants to access other Script or PackedScene "
 "resources, resulting in something like ``MyAutoload.MyNode.new()``."
 msgstr ""
+"**便利**：自动加载的节点在GDScript中，以其名称生成一个全局变量。这对于定义应"
+"该始终存在的对象非常方便，但是需要对象实例的信息。另一种方法是创建一个命名空"
+"间脚本：一个脚本的目的只是加载和创建常量，来访问其他脚本或打包的场景资源，生"
+"成类似于``MyAutoload.MyNode.new()``的东西。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:95
 msgid ""
@@ -23859,6 +24136,9 @@ msgid ""
 "name from GDScript. Using an autoload to get to a namespace script becomes "
 "unnecessary, e.g. ``MyScriptClass.MyPreloadedScript.new()``."
 msgstr ""
+"注意，Godot 3.1中引入的脚本类对这个原因的有效性提出了质疑。对于它们，可以使用"
+"GDScript的显式名称访问脚本。没有必要使用自动加载来获取命令空间脚本，如"
+"``MyScriptClass.MyPreloadedScript.new()``。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:100
 msgid ""
@@ -23867,10 +24147,13 @@ msgid ""
 "handles a broad-scoped task. For example a targeting system, quest system, "
 "or dialogue system would be great use cases of singleton implementations."
 msgstr ""
+"如果单例对象管理自身的信息，而不入侵其他对象的数据，那么创建一个“系统”类来处"
+"理一个范围广泛的任务的好方法。例如一个目标系统，任务系统，以及对话系统将是单"
+"例实现的很好用例。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:4
 msgid "When and how to avoid using nodes for everything"
-msgstr ""
+msgstr "何时以及如何避免在任何情况下都使用节点"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:7
 msgid ""
@@ -23879,6 +24162,8 @@ msgid ""
 "behavior though, the larger the strain each one adds to a project's "
 "performance."
 msgstr ""
+"节点生产成本低廉，但是他们也有一定的局限性。一个项目可能有成千上万个节点在做"
+"所有事情。他们的行为越复杂，每个节点对项目性能增加的压力就越大。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:12
 msgid ""
@@ -23886,6 +24171,8 @@ msgid ""
 "Be sure to keep these in mind as options when designing how you wish to "
 "build your project's features."
 msgstr ""
+"Godot为创建节点使用的api提供了更轻量级的对象。在设计如何构建项目的特性时，请"
+"务必将这些作为选项牢记在心。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:16
 msgid ""
@@ -23894,6 +24181,9 @@ msgid ""
 "difficult to create one's own custom data structures, even node structures, "
 "that are also lighter than the :ref:`Node <class_Node>` class."
 msgstr ""
+":参考:`对象<类_对象>`: 终极轻量级对象，原始对象必须使用手动内存管理。尽管如"
+"此，创建自己的自定义数据结构并不难，甚至于节点结构，它也比:参考:`节点<类_节点"
+">`类更轻。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:21
 msgid ""
@@ -23902,6 +24192,8 @@ msgid ""
 "columns. The data that it uses to generate its visualization though is "
 "actually a tree of :ref:`TreeItem <class_TreeItem>` Objects."
 msgstr ""
+"**示例:**参见:参考:`树<类_树>`节点。它支持对具有任意行数和列数的内容表进行高"
+"级定制。用来生成可视化的数据实际上是:参考:`树组件<类_树组件>`对象的树。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:26
 msgid ""
@@ -23910,6 +24202,9 @@ msgid ""
 "the entire Node library, one creates an abbreviated set of Objects from "
 "which a node can generate and manage the appropriate sub-nodes."
 msgstr ""
+"**优点:**将API简化为更小的作用域对象，有助于提升其可访问性，提高迭代时间。而"
+"不是使用整个节点库，一种方法是创建一组简短的对象，节点可以从中生成和管理适当"
+"的子节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:31
 msgid ""
@@ -23918,6 +24213,9 @@ msgid ""
 "example, if the object's creator decides to delete it out of nowhere, this "
 "would trigger an error state when one next accesses it."
 msgstr ""
+"处理它们时要小心。可以将对象存储到变量中，但是这些引用可能在没有警告的情况下"
+"失效。例如，如果对象的创建者决定删除它，这将在下一次访问错误状态时触发错误状"
+"态。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:36
 msgid ""
@@ -23926,12 +24224,17 @@ msgid ""
 "further references to themselves exist. These are useful in the majority of "
 "cases where one needs data in a custom class."
 msgstr ""
+":参考:`引用<类_引用>`:只比对象稍微复杂一点。他们追踪对自己的引用，只有在不再"
+"存在对其本身的引用时，才删除已加载的内存。在需要自定义类中的数据的大多数情况"
+"下，这些都很有用。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:41
 msgid ""
 "**Example:** See the :ref:`File <class_File>` object. It functions just like "
 "a regular Object except that one need not delete it themselves."
 msgstr ""
+"**示例：**参见:参考:`文件<类_文件>`对象。它的功能就像普通对象一样，只是不需要"
+"自己删除它。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:44
 #, fuzzy
@@ -23944,6 +24247,8 @@ msgid ""
 "They have the innate ability to serialize/deserialize (i.e. save and load) "
 "their object properties to/from Godot resource files."
 msgstr ""
+":参考:`资源<类_资源>`: 只比引用稍微复杂一点。它们天然具有将其对象属性序列化/"
+"反序列化(即保存和加载)到/从Godot资源文件的能力。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:50
 msgid ""
@@ -23951,6 +24256,8 @@ msgid ""
 "each of the :ref:`AudioEffect <class_AudioEffect>` classes. Each of these "
 "can be save and loaded, therefore they extend from Resource."
 msgstr ""
+"**示例:**脚本，打包场景(用于场景文件)，以及其他类型，比如:参考:`音频效果<类_"
+"音频效果>`类。每一个都可以保存和加载，因此他们从资源扩展。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:54
 msgid ""
@@ -23963,6 +24270,11 @@ msgid ""
 "usability front, but also improve performance if one plans to have many such "
 "Resources/Nodes in their scenes."
 msgstr ""
+"**优点:**有很多::参考:`已说过<文档_资源>`:参考:`资源<类_资源>`相比传统数据存"
+"储方法的优点。然而，通过节点使用资源的上下文，它们的主要优点是与属性面板的兼"
+"容性。虽然几乎和对象/引用一样轻量级，它们仍然可以在属性面板中显示和导出属性。"
+"这使他们实现一个目标，就像子节点在可用性方面,但是，如果您计划在场景中拥有许多"
+"这样的资源/节点，那么还可以提高性能。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:4
 #, fuzzy
@@ -23973,19 +24285,19 @@ msgstr "调整界面"
 msgid ""
 "Often one needs scripts that rely on other objects for features. There are 2 "
 "parts to this process:"
-msgstr ""
+msgstr "通常需要依赖于其他对象的脚本来提供特性。这个过程分为两部分："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:9
 msgid "Acquiring a reference to the object that presumably has the features."
-msgstr ""
+msgstr "获取对可能具有这些特性的对象的引用。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:11
 msgid "Accessing the data or logic from the object."
-msgstr ""
+msgstr "处理来自对象的数据或逻辑。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:13
 msgid "The rest of this tutorial outlines the various ways of doing all this."
-msgstr ""
+msgstr "本教程的其余部分，概述了实现这一切的各种方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:16
 #, fuzzy
@@ -23998,6 +24310,8 @@ msgid ""
 "them is to get a reference to an existing object from another acquired "
 "instance."
 msgstr ""
+"对所有:参考:`对象<类_对象>`来说，引用它们最基本的方法，是从另一个获取的实例中"
+"获取对现有对象的引用。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:32
 msgid ""
@@ -24005,11 +24319,13 @@ msgid ""
 "While users often access :ref:`Node <class_Node>` and :ref:`Resource "
 "<class_Resource>` this way, alternative measures are available."
 msgstr ""
+"同样的原则也适用于:参考:`引用<类_引用>`对象。虽然用户经常以这种方式访问:参考:"
+"`节点<类_节点>`和:参考:`资源<类_资源>`，还可以采取其他措施。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:36
 msgid ""
 "Instead of property or method access, one can get Resources by load access."
-msgstr ""
+msgstr "而不是属性或方法访问，可以通过加载访问获得资源。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:115
 #, fuzzy
@@ -24018,13 +24334,13 @@ msgstr "使用以下名称:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:117
 msgid "There are many ways in which a language can load such resources."
-msgstr ""
+msgstr "一种语言可以通过多种方式加载这些资源。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:119
 msgid ""
 "When designing how objects will access data, don't forget that one can pass "
 "resources around as references as well."
-msgstr ""
+msgstr "在设计对象如何访问数据时，不要忘记，还可以将资源作为引用传递。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:122
 msgid ""
@@ -24033,14 +24349,16 @@ msgid ""
 "<class_Resource_method_duplicate>` an existing reference or instantiate one "
 "from scratch with ``new()``."
 msgstr ""
+"请记住，加载资源将获取引擎维护的缓存资源实例。要获取一个新对象，必须:参考:`复"
+"制<类_资源_方法_复制>`一个现有引用，或者使用``new()``从头实例化一个引用。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:127
 msgid "Nodes likewise have an alternative access point: the SceneTree."
-msgstr ""
+msgstr "节点也有一个可选的访问点：场景树。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:242
 msgid "Accessing data or logic from an object"
-msgstr ""
+msgstr "处理来自对象的数据或逻辑"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
 msgid ""
@@ -24049,6 +24367,8 @@ msgid ""
 "**type**. It instead checks that the object **implements** the individual "
 "method."
 msgstr ""
+"Godot的脚本API是隐藏类型。这意味着如果脚本执行某个操作，Godot不验证它是否支持"
+"**类型**操作。相反，它检查对象**实现**的单独方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:248
 msgid ""
@@ -24058,6 +24378,9 @@ msgid ""
 "`CanvasItem.visible <class_CanvasItem_property_visible>`, then Godot would "
 "do the following checks, in order:"
 msgstr ""
+"例如，:参考:`画布组件 <类_画布组件>`类有一个“可见性”的属性。暴露给脚本API的所"
+"有属性，实际上都是绑定到名称的设值函数和取值函数对。如果有人试图访问:参考:`画"
+"布组件.可见性 <类_画布组件_属性_可见性>`，那么Godot会按照以下顺序进行检查："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:254
 msgid ""
@@ -24066,6 +24389,8 @@ msgid ""
 "a property defined on a base object by overriding the setter method for the "
 "property."
 msgstr ""
+"如果对象附加了脚本，它将尝试通过脚本设置属性。这就为脚本提供了重写基础对象上"
+"定义的属性的机会，方法是重写属性的设值函数方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:259
 msgid ""
@@ -24075,12 +24400,15 @@ msgid ""
 "getter. For more information about HashMaps, see the :ref:`data preferences "
 "<doc_data_preferences>` docs."
 msgstr ""
+"如果脚本没有该属性，它在类数据库中对画布组件类及其所有继承类型执行“可见性”属"
+"性的哈希表查找。如果找到，它将调用绑定的设值函数或取值函数。有关哈希表的更多"
+"信息，参见:参考:`数据偏好<文档_数据_偏好>`文档。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:265
 msgid ""
 "If not found, it does an explicit check to see if the user wants to access "
 "the \"script\" or \"meta\" properties."
-msgstr ""
+msgstr "如果没有找到，它会显式地检查用户是否想要访问“脚本”或“元”属性。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:268
 msgid ""
@@ -24089,6 +24417,9 @@ msgid ""
 "execute logic that gives the impression that the Object has a property. This "
 "is also the case with the ``_get_property_list`` method."
 msgstr ""
+"如果没有，它将检查画布组件中的``_设值``/``_取值``实现(取决于访问的类型)及其继"
+"承类型。这些方法可以执行逻辑，从而给人一种对象具有属性的印象。``_获取_属性_列"
+"表``方法也是如此。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:273
 msgid ""
@@ -24104,18 +24435,22 @@ msgid ""
 "script, the object's class, or any class that object inherits, but only for "
 "things which extend Object."
 msgstr ""
+"因此，这个隐藏类型系统可以在脚本中找到一个属性，对象的类，或对象继承的任何"
+"类，但仅适用于扩展对象的对象。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:282
 msgid ""
 "Godot provides a variety of options for performing runtime checks on these "
 "accesses:"
-msgstr ""
+msgstr "Godot提供了多种选项，来执行这些访问的运行时检查："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:285
 msgid ""
 "A duck-typed property access. These will property check (as described "
 "above). If the operation isn't supported by the object, execution will halt."
 msgstr ""
+"隐藏类型的属性访问。这些将检查属性(如上所述)。如果对象不支持该操作，将停止执"
+"行。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:313
 msgid ""
@@ -24123,6 +24458,8 @@ msgid ""
 "<class_CanvasItem_property_visible>`, one can access the methods, "
 "``set_visible`` and ``is_visible`` like any other method."
 msgstr ""
+"一种检查方法。在:参考:`画布组件.可见性 <类_画布组件_属性_可见性>`的情况下，我"
+"们可以访问这些方法，``设置_可见性``和``为_可见性``与任何其他方法一样。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:445
 msgid ""
@@ -24136,6 +24473,8 @@ msgid ""
 "These strategies contribute to Godot's flexible design. Between them, users "
 "have a breadth of tools to meet their specific needs."
 msgstr ""
+"这些策略有助于Godot的灵活设计。通过它们，用户可以使用多种工具来满足他们的特定"
+"需求。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:4
 #, fuzzy
@@ -24150,12 +24489,17 @@ msgid ""
 "it. For example, if the engine tells a :ref:`CanvasItem <class_CanvasItem>` "
 "to \"draw\", it will call ``_notification(NOTIFICATION_DRAW)``."
 msgstr ""
+"Godot中的每个对象都实现了一个:参考:`_通知 <类_对象_方法__通知>`方法。目的是允"
+"许对象响应可能与之相关的各种引擎级回调。例如，如果引擎告诉:参考:`画布组件<类_"
+"画布组件>`来“绘制”，它将调用``_通知(通知_绘制)``。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:13
 msgid ""
 "Some of these notifications, like draw, are useful to override in scripts. "
 "So much so that Godot exposes many of them with dedicated functions:"
 msgstr ""
+"其中一些通知，与绘制类似，在脚本中重写也是有效的。以至于Godot公开了其中许多专"
+"用函数："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:16
 msgid "``_ready()`` : NOTIFICATION_READY"
@@ -24193,7 +24537,7 @@ msgstr ""
 msgid ""
 "What users might *not* realize is that notifications exist for types other "
 "than Node alone:"
-msgstr ""
+msgstr "用户可能*没有*意识到，除了节点之外，还有其他类型的通知："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:35
 msgid ""
@@ -24222,6 +24566,7 @@ msgid ""
 "And many of the callbacks that *do* exist in Nodes don't have any dedicated "
 "methods, but are still quite useful."
 msgstr ""
+"而且，节点中*确实*存在的许多回调函数没有任何专用的方法，但仍然非常有用。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:49
 msgid ""
@@ -24249,13 +24594,13 @@ msgstr ""
 msgid ""
 "One can access all these custom notifications from the universal "
 "``_notification`` method."
-msgstr ""
+msgstr "您可以从通用的``_通知``方法访问所有这些自定义通知。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:65
 msgid ""
 "Methods in the documentation labeled as \"virtual\" are also intended to be "
 "overridden by scripts."
-msgstr ""
+msgstr "文档中标记为“虚拟”的方法也可以被脚本覆盖。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:68
 msgid ""
@@ -24268,7 +24613,7 @@ msgstr ""
 msgid ""
 "So, in which situation should one use each of these notifications or virtual "
 "functions?"
-msgstr ""
+msgstr "那么，在哪种情况下应该使用这些通知或虚函数呢？"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:77
 msgid "_process vs. _physics_process vs. \\*_input"
@@ -24283,6 +24628,10 @@ msgid ""
 "the evaluations to update. If they don't need to execute every frame, then "
 "implementing a Timer-yield-timeout loop is another option."
 msgstr ""
+"当需要帧与帧之间的帧间时间间隔时，使用“_处理”。如果更新对象数据的代码需要尽可"
+"能频繁地更新，这是正确的地方。这里经常执行循环逻辑检查和数据缓存，但这取决于"
+"更新评估的频率。如果它们不需要执行每一帧，那么使用定时器-暂停-超时循环是另一"
+"个选项。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:97
 msgid ""
@@ -24291,6 +24640,9 @@ msgid ""
 "how fast or slow time advances, this is the right place. Recurring kinematic "
 "and object transform operations should execute here."
 msgstr ""
+"当需要帧与帧之间独立的时间间隔时，使用``_物理_处理``。如果代码需要持续一致的"
+"更新，无论时间进展得多快或多慢，这是正确的地方。重复的动力学学和对象变换操作"
+"应该在这里执行。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:102
 msgid ""
@@ -24300,6 +24652,9 @@ msgid ""
 "by default). In contrast, ``*_input`` callbacks will trigger only on frames "
 "in which the engine has actually detected the input."
 msgstr ""
+"虽然有可能达到最好的性能，应避免在这些回调期间进行输入检查。“_处理”和“_物理_"
+"处理”将在任何机会触发（默认情况下，它们不会“休息”）。相反，“*_输入”回调只会在"
+"引擎实际检测到输入的帧上触发。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:108
 msgid ""
@@ -24307,6 +24662,8 @@ msgid ""
 "one wants to use delta time, one can fetch it from the related deltatime "
 "methods as needed."
 msgstr ""
+"可以检查输入回调中的输入操作。如果想使用增量时间，可以根据需要从相关的增量时"
+"间方法获取它。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:156
 msgid "_init vs. initialization vs. export"
@@ -24319,18 +24676,21 @@ msgid ""
 "should also run here. This triggers before ``_ready`` or ``_enter_tree``, "
 "but after a script creates and initializes its properties."
 msgstr ""
+"如果脚本初始化它自己的节点子树，没有场景，代码应该在这里执行。其他属性或独立"
+"于场景树的初始化也应该在这里运行。这在``_准备``或``_进入_树``之前触发，但是在"
+"脚本创建并初始化其属性之后。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:163
 msgid ""
 "Scripts have three types of property assignments that can occur during "
 "instantiation:"
-msgstr ""
+msgstr "脚本有三种类型的属性分配，可以在实例化过程中发生："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:210
 msgid ""
 "When instantiating a scene, property values will set up according to the "
 "following sequence:"
-msgstr ""
+msgstr "当实例化一个场景时，属性值将按照以下顺序设置："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:213
 msgid ""
@@ -24338,6 +24698,7 @@ msgid ""
 "initialization value or the init assignment value. Init assignments take "
 "priority over initialization values."
 msgstr ""
+"**初始值赋值：**实例化将分配初始化值或初始化赋值。初始化赋值优先于初始化值。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:217
 msgid ""
@@ -24345,12 +24706,14 @@ msgid ""
 "script, Godot will assign the exported value to replace the initial value "
 "defined in the script."
 msgstr ""
+"**导出值赋值：**如果从一个场景而不是脚本中，Godot将分配导出的值来替换脚本中定"
+"义的初始值。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:221
 msgid ""
 "As a result, instantiating a script versus a scene will affect both the "
 "initialization *and* the number of times the engine calls the setter."
-msgstr ""
+msgstr "因此，实例化脚本和场景将影响初始化*和*引擎调用设值函数的次数。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:225
 msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
@@ -24365,6 +24728,10 @@ msgid ""
 "will call this method once all child nodes have finished calling theirs. "
 "This then causes a reverse cascade going up back to the tree's root."
 msgstr ""
+"当实例化连接到第一个执行场景时，Godot将实例化树下的节点(调用``_初始化``)并从"
+"根向下构建树。这会导致``_进入_树``调用级联到树的下面。当树构建完成，叶子节点"
+"调用``_准备``。一旦所有子节点都完成了对它们的子节点的调用，节点就会调用这个方"
+"法。这将导致反向级联回到树的根部。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:234
 msgid ""
@@ -24372,6 +24739,8 @@ msgid ""
 "the SceneTree upon creation, so no ``_enter_tree`` callbacks trigger. "
 "Instead, only the ``_init`` and later ``_ready`` calls occur."
 msgstr ""
+"在实例化脚本或独立场景时，节点不会在创建时添加到场景树，所以没有``_进入_树``"
+"的回调触发器。相反，只发生``_初始化``和之后的``_准备``调用。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:238
 msgid ""
@@ -24382,6 +24751,10 @@ msgid ""
 "to a custom signal on the parent node without failing. Useful on data-"
 "centric nodes that one might create at runtime."
 msgstr ""
+"如果一个节点需要触发作为另一个节点的父节点发生的行为，不管它是否出现在主要/活"
+"动场景中，可以使用:参考:`父级<类_节点_常数_通知_父级>`通知。例如，以下是将节"
+"点连接到父节点上的自定义信号，而代码段不出错的方法。可以在运行时创建以数据为"
+"中心的节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:4
 #, fuzzy
@@ -24393,6 +24766,8 @@ msgid ""
 "Ever wondered whether one should approach problem X with data structure Y or "
 "Z? This article covers a variety of topics related to these dilemmas."
 msgstr ""
+"有没有想过应该用数据结构Y还是Z，来处理问题X ？本文包括与这些难题相关的各种主"
+"题。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:11
 msgid ""
@@ -24400,34 +24775,36 @@ msgid ""
 "terminology comes from algorithm analysis' `Big O Notation <https://rob-bell."
 "net/2009/06/a-beginners-guide-to-big-o-notation/>`_."
 msgstr ""
+"本文引用了“[某物]-时间”操作。这个术语来自于算法分析“大O表示法<https://rob-"
+"bell.net/2009/06/a-beginners-guide-to-big-o-notation/>”。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:15
 msgid ""
 "Long-story short, it describes the worst-case scenario of runtime length. In "
 "laymen's terms:"
-msgstr ""
+msgstr "长话短说，它描述了运行时长度的最坏的情况。用外行人的话说："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:18
 msgid ""
 "\"As the size of a problem domain increases, the runtime length of the "
 "algorithm...\""
-msgstr ""
+msgstr "“随着问题域的大小增加，算法的运行时间长度……”"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:21
 msgid "Constant-time, ``O(1)``: \"...does not increase.\""
-msgstr ""
+msgstr "常量时间，``O(1)``:“……不会增加。”"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:22
 msgid "Logarithmic-time, ``O(log n)``: \"...increases at a slow rate.\""
-msgstr ""
+msgstr "对数时间，``O(log n)``:“……以缓慢的速度增长。”"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:23
 msgid "Linear-time, ``O(n)``: \"...increases at the same rate.\""
-msgstr ""
+msgstr "线性时间，``O(n)``:“……以同样的速度增长。”"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:24
 msgid "Etc."
-msgstr ""
+msgstr "诸如此类。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:26
 msgid ""
@@ -24437,6 +24814,9 @@ msgid ""
 "time allotted. In comparison, using a constant-time algorithm could handle "
 "the operation without issue."
 msgstr ""
+"想象一下，如果必须在一帧内处理300万个数据点。不可能使用线性时间算法来设计这个"
+"特性，因为数据的大小会大大超出分配的时间。相比之下，使用常量时间算法可以毫无"
+"问题地处理该操作。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:32
 msgid ""
@@ -24447,10 +24827,13 @@ msgid ""
 "algorithm / data structure for the job is part of what makes programmers' "
 "skills valuable."
 msgstr ""
+"总的来说，开发人员希望尽可能避免进行线性时间操作。但是，如果保持线性时间运算"
+"的规模很小，如果不需要经常执行操作，这是能够接受的。平衡这些需求，并为工作选"
+"择正确的算法/数据结构，是使程序员的技能有价值的一部分。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:40
 msgid "Array vs. Dictionary vs. Object"
-msgstr ""
+msgstr "数组，字典，对象"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:42
 msgid ""
@@ -24460,6 +24843,10 @@ msgid ""
 "<class_Array>` and :ref:`Dictionary <class_Dictionary>` as well as :ref:"
 "`Object <class_Object>` s."
 msgstr ""
+"Godot将脚本API中的所有变量存储在`变量<https://docs.godotengine.org/en/latest/"
+"development/cpp/variant_class.html>`类中。变量可以存储与变量兼容的数据结构，"
+"比如:参考:`数组<类_数组>`和:参考:`字典<类_字典>`，以及:参考:`对象<类_对象>`"
+"中。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:48
 msgid ""
@@ -24467,6 +24854,8 @@ msgid ""
 "contents in a contiguous section of memory, i.e. they are in a row adjacent "
 "to each other."
 msgstr ""
+"Godot将数组实现为``向量<变量>``。引擎将数组内容存储在一个连续的内存段中，也就"
+"是说，它们是连续相邻的。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:53
 msgid ""
@@ -24476,44 +24865,47 @@ msgid ""
 "for example, a :ref:`PoolStringArray <class_PoolStringArray>` would be "
 "something like a ``Vector<String>``."
 msgstr ""
+"对于不熟悉c++的人来说，向量是传统c++库中数组对象的名称。它是一个“模板化”类"
+"型，这意味着它的记录只能包含特定的类型(用尖括号表示)。举个例子，一个:参考:`字"
+"符串数组池<类_字符串数组池>`类似于``向量<字符串>``。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:60
 msgid "Contiguous memory stores imply the following operation performance:"
-msgstr ""
+msgstr "连续的内存存储意味着以下操作性能："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:62
 msgid "**Iterate:** Fastest. Great for loops."
-msgstr ""
+msgstr "**迭代：**最快。非常适合循环。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:64
 msgid "Op: All it does is increment a counter to get to the next record."
-msgstr ""
+msgstr "运行：它所做的就是增加一个计数器，以得到下一个记录。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:66
 msgid "**Insert, Erase, Move:** Position-dependent. Generally slow."
-msgstr ""
+msgstr "**插入、删除、移动：**依赖于位置。一般很慢。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:68
 msgid ""
 "Op: Adding/removing/moving content involves moving the adjacent records over "
 "(to make room / fill space)."
-msgstr ""
+msgstr "运行：添加/删除/移动内容涉及移动相邻的记录(腾出房间/填补空间)。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:71
 msgid "Fast add/remove *from the end*."
-msgstr ""
+msgstr "快速的*从末尾*添加/删除。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:73
 msgid "Slow add/remove *from an arbitrary position*."
-msgstr ""
+msgstr "慢速的*从任意位置*添加/删除。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:75
 msgid "Slowest add/remove *from the front*."
-msgstr ""
+msgstr "最慢的*从前面*添加/删除。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:77
 msgid "If doing many inserts/removals *from the front*, then..."
-msgstr ""
+msgstr "如果执行多次*从前面*插入/删除，那么……"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:79
 #, fuzzy
@@ -24522,7 +24914,7 @@ msgstr "int array"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:81
 msgid "do a loop which executes the Array changes *at the end*."
-msgstr ""
+msgstr "执行一个循环，该循环*在末尾*执行数组更改。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:83
 #, fuzzy
@@ -24534,30 +24926,34 @@ msgid ""
 "This makes only 2 copies of the array (still constant time, but slow) versus "
 "copying roughly 1/2 of the array, on average, N times (linear time)."
 msgstr ""
+"这只是复制了数组的两个副本(仍然是常数时间，但是速度很慢)，大约复制了数组的"
+"1/2，平均N次(线性时间)。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:88
 msgid ""
 "**Get, Set:** Fastest *by position*. Ex. can request 0th, 2nd, 10th record, "
 "etc. but cannot specify which record you want."
 msgstr ""
+"**取值，设值:**最快*按位置*。例如:可以请求第0、第2、第10条记录，诸如此类，但"
+"不能指定想要哪个记录。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:91
 msgid "Op: 1 addition operation from array start position up to desired index."
-msgstr ""
+msgstr "操作：1添加操作从数组起始位置到所需的索引。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:93
 msgid "**Find:** Slowest. Identifies the index/position of a value."
-msgstr ""
+msgstr "**查找：**最慢。识别数值的索引/位置。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:95
 msgid ""
 "Op: Must iterate through array and compare values until one finds a match."
-msgstr ""
+msgstr "操作：必须遍历数组并比较值，直到找到匹配的为止。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:97
 msgid ""
 "Performance is also dependent on whether one needs an exhaustive search."
-msgstr ""
+msgstr "性能也取决于是否需要一个详尽的搜索。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:100
 msgid ""
@@ -24566,6 +24962,9 @@ msgid ""
 "by re-sorting the Array after every edit and writing an ordered-aware search "
 "algorithm."
 msgstr ""
+"如果保持有序，自定义搜索操作，可以使其达到对数时间(相对较快)。不过，外行用户"
+"对此会感到不舒服。通过在每次编辑之后，重新排序数组，并编写一个感知顺序的搜索"
+"算法来完成。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
 msgid ""
@@ -24576,6 +24975,10 @@ msgid ""
 "index into the array, giving the OHM a quick lookup for the value within the "
 "conceptual \"table\" of keys mapped to values."
 msgstr ""
+"Godot将字典实现为``有序哈希表<变量，变量>``。引擎存储一个由键值对组成的巨大数"
+"组(初始化为1000条记录)。当试图访问一个值时，其会提供一个键。然后它*散列*键，"
+"即把它转换成一个数字。“哈希”变成数组的索引，让OHM库快速查找映射到值的键的概"
+"念“表”中的值。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:112
 msgid ""
@@ -24584,10 +24987,13 @@ msgid ""
 "position into account. In all, this results in constant-time access to all "
 "records at the expense of memory and some minor operational efficiency."
 msgstr ""
+"散列是为了减少键碰撞的机会。如果发生了，列表必须为考虑前一个位置的值重新计算"
+"另一个索引。总之，这导致以牺牲内存和一些较小的操作效率为代价，对所有记录的常"
+"量时间访问。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:117
 msgid "Hashing every key an arbitrary number of times."
-msgstr ""
+msgstr "散列每个键都有任意的次数。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:119
 msgid ""
@@ -24595,10 +25001,12 @@ msgid ""
 "one, as long as the number of hash calculations doesn't become too dependent "
 "on the density of the table, things will stay fast. Which leads to..."
 msgstr ""
+"散列操作是常量时间的，因此即使一个算法必须执行多于一个，只要散列计算的数量不"
+"太依赖于列表的密度，一切都会保持快速。这导致了……"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:124
 msgid "Maintaining a huge size for the table."
-msgstr ""
+msgstr "维护一个巨大的列表尺寸。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:126
 msgid ""
@@ -24606,26 +25014,30 @@ msgid ""
 "of unused memory interspersed in the table is to minimize hash collisions "
 "and maintain the speed of the accesses."
 msgstr ""
+"从1000条记录开始，强制在表中插入大量未使用内存的原因，是为了最小化散列冲突，"
+"并保持访问的速度。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:130
 msgid ""
 "As one might be able to tell, Dictionaries specialize in tasks that Arrays "
 "aren't. An overview of their operational details is as follows:"
-msgstr ""
+msgstr "也许有人会说，字典专门处理数组所没有的任务。其运作详情概览如下："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:133
 msgid "**Iterate:** Fast."
-msgstr ""
+msgstr "**迭代：**快速。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
 msgid ""
 "Op: Iterate over the map's internal vector of hashes. Return each key. "
 "Afterwards, users then use the key to jump to and return the desired value."
 msgstr ""
+"操作：遍历映射的内部散列向量。返回每个键。之后，用户使用该键跳转到并返回所需"
+"的值。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:139
 msgid "**Insert, Erase, Move:** Fastest."
-msgstr ""
+msgstr "**插入，删除，移动：**最快。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
 msgid ""
@@ -24633,44 +25045,46 @@ msgid ""
 "value (array start + offset). Move is two of these (one insert, one erase). "
 "The map must do some maintenance to preserve its capabilities:"
 msgstr ""
+"操作：散列给定的键。执行1个加法操作来查找适当的值(数组开始+偏移量)。移动其中"
+"的两个(一个插入，一个擦除)。图表必须进行如下维护，以维持其功能："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:146
 msgid "update ordered List of records."
-msgstr ""
+msgstr "更新记录的有序列表。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
 msgid "determine if table density mandates a need to expand table capacity."
-msgstr ""
+msgstr "确定列表密度，是否需要扩展列表容量。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
 msgid ""
 "The Dictionary remembers in what order users inserted its keys. This enables "
 "it to execute reliable iterations."
-msgstr ""
+msgstr "字典会记住用户插入键的顺序。这使它能够执行可靠的迭代。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:153
 msgid "**Get, Set:** Fastest. Same as a lookup *by key*."
-msgstr ""
+msgstr "**取值，设值：**最快。和*根据键*查找很相似。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
 msgid "Op: Same as insert/erase/move."
-msgstr ""
+msgstr "操作：和插入/删除/移动类似。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
 msgid "**Find:** Slowest. Identifies the key of a value."
-msgstr ""
+msgstr "**查找：**最慢。标识值的键。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
 msgid ""
 "Op: Must iterate through records and compare the value until a match is "
 "found."
-msgstr ""
+msgstr "操作：必须遍历记录并比较该值，直到找到匹配的为止。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:162
 msgid ""
 "Note that Godot does not provide this feature out-of-the-box (because they "
 "aren't meant for this task)."
-msgstr ""
+msgstr "注意，Godot不提供开箱即用的特性(因为它们不适合这项任务)。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:165
 msgid ""
@@ -24681,6 +25095,10 @@ msgid ""
 "find more information about what objects are and how they work in the :ref:"
 "`doc_what_are_godot_classes` article."
 msgstr ""
+"Godot用愚蠢的方式实现对象，数据内容的动态容器。对象在查询数据源时提出问题。例"
+"如，为了回答这个问题，“你有一个叫‘位置’的属性吗？”它可能会询问:参考:`脚本<类_"
+"脚本>`或:参考:`类数据库<类_类数据库>`。可以在这篇:参考:`文档_什么_是_godot_类"
+"`文章内找到更多关于对象是什么以及它们如何工作。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:172
 msgid ""
@@ -24694,6 +25112,11 @@ msgid ""
 "that it must make so many checks is what makes them slower than both of the "
 "alternatives for looking up data."
 msgstr ""
+"这里重要的细节是对象任务的复杂性。每次执行这些多源查询时，它运行*几个*迭代循"
+"环和哈希表查找。此外，查询是线性时间操作，依赖于对象的继承层次结构大小。如果"
+"类的对象查询（当前类）没有找到任何结果，请求将一直延迟到下一个基类，直到原始"
+"对象类。虽然这些都是单独的快速操作，但它必须进行如此多的检查，于是这一事实使"
+"得它们比查找数据的两种方法都要慢。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:184
 msgid ""
@@ -24703,12 +25126,15 @@ msgid ""
 "API operations will take much longer. They must locate the source of any "
 "relevant data before they can attempt to access it."
 msgstr ""
+"当开发人员提到脚本API有多慢时，所引用的正是这一系列查询。与编译后的c++代码相"
+"比，应用程序知道在哪里可以找到任何东西，不可避免的是，脚本API操作将花费更长的"
+"时间。他们必须找到任何相关数据的来源，然后才能尝试访问它。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:190
 msgid ""
 "The reason GDScript is slow is because every operation it performs passes "
 "through this system."
-msgstr ""
+msgstr "GDScript很慢的原因是，它执行的每个操作都要经过这个系统。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:193
 msgid ""
@@ -24716,6 +25142,8 @@ msgid ""
 "But, if the C# script calls into an engine class' content or if the script "
 "tries to access something external to it, it will go through this pipeline."
 msgstr ""
+"c#可以通过更优化的字节码，以更快的速度处理一些内容。但是，如果c#脚本调用引擎"
+"类的内容，或者脚本试图访问它的外部内容，它会通过这个管道。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:198
 msgid ""
@@ -24725,12 +25153,17 @@ msgid ""
 "a manual task. It is at this point that external, non-C++ classes will use "
 "the API to locate them."
 msgstr ""
+"NativeScript c++甚至更进一步，默认将所有内容都保持在内部。对外部结构的调用将"
+"通过脚本API进行。在NativeScript c++中，注册将方法公开给脚本API的方法是一项手"
+"动任务。在这一点上，非c++类将使用API来定位它们。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:204
 msgid ""
 "So, assuming one extends from Reference to create a data structure, like an "
 "Array or Dictionary, why choose an Object over the other two options?"
 msgstr ""
+"因此，假设从引用扩展到创建数据结构，比如数组或字典，为什么选择对象而不是其他"
+"两个选项？"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:207
 msgid ""
@@ -24739,6 +25172,8 @@ msgid ""
 "API doesn't change in response to internal data structure changes. What's "
 "more, Objects can have signals, allowing for reactive behavior."
 msgstr ""
+"**控件：**对象能够创建更复杂的结构。可以在数据上分层抽象，以确保外部API不会响"
+"应内部数据结构的更改。更重要的是，物体可以有信号，允许响应式行为。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:212
 msgid ""
@@ -24747,6 +25182,8 @@ msgid ""
 "values one expects, but one doesn't need to worry about whether the property "
 "exists in the first place."
 msgstr ""
+"**清晰：**当涉及到脚本和引擎类为对象定义的数据时，对象是一个可靠的数据源。属"
+"性可能不包含期望的值，但是无需担心这个属性是否存在。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:217
 msgid ""
@@ -24755,6 +25192,8 @@ msgid ""
 "structure much easier. In comparison, Arrays and Dictionaries don't fulfill "
 "all use cases one might have."
 msgstr ""
+"**便利：**如果已经有了类似的数据结构，之后从现有类扩展，可以使构建数据结构的"
+"任务变得容易得多。相比之下，数组和字典不能满足所有的用例。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:222
 msgid ""
@@ -24762,6 +25201,8 @@ msgid ""
 "structures. With it, one can design their own List, Binary Search Tree, "
 "Heap, Splay Tree, Graph, Disjoint Set, and any host of other options."
 msgstr ""
+"对象还让用户有机会创建更专门化的数据结构。有了它，一个人可以设计自己的列表，"
+"二叉搜索树，堆，散列树，图，不相交集，以及其他选择。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:226
 msgid ""
@@ -24770,16 +25211,19 @@ msgid ""
 "As such, it can be helpful to construct one's own node type when building "
 "tree structures."
 msgstr ""
+"“为什么不在树结构中使用节点？”有人可能会问。节点类包含与自定义数据结构无关的"
+"内容。因此在构建树结构时，构造自己的节点类型是很有帮助的。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:270
 msgid ""
 "From here, one can then create their own structures with specific features, "
 "limited only by their imagination."
 msgstr ""
+"从这里开始，然后就可以创建具有特定功能的结构，只会受到他们想象力的限制。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:274
 msgid "Enumerations: int vs. string"
-msgstr ""
+msgstr "枚举：整数和字符串"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
 msgid ""
@@ -24788,6 +25232,8 @@ msgid ""
 "strings for the enum values. The question then arises, \"which should one "
 "use?\""
 msgstr ""
+"大多数语言都提供枚举类型选项。GDScript也一样，但与大多数其他语言不同的是，它"
+"允许对枚举值使用整数或字符串。问题就来了，“应该用哪个呢？”"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:281
 msgid ""
@@ -24795,6 +25241,8 @@ msgid ""
 "feature specific to GDScript and not Godot scripting in general; The "
 "languages prioritizes usability over performance."
 msgstr ""
+"简而言之，“你觉得哪个更舒服就选哪个。”这是GDScript特有的特性，而并非一般的"
+"Godot脚本；该语言将可用性置于性能之上。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:285
 msgid ""
@@ -24802,6 +25250,8 @@ msgid ""
 "than string comparisons (linear-time). If one wants to keep up other "
 "languages' conventions though, then one should use integers."
 msgstr ""
+"在技术层面上，整数比较（常量时间）比字符串比较（线性时间）更快。如果你想保持"
+"其他语言的习惯，那么应该使用整数。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:289
 msgid ""
@@ -24811,6 +25261,9 @@ msgid ""
 "integer enum, one would have to write a Dictionary that maps the "
 "corresponding string value for each enum."
 msgstr ""
+"当您想要*打印*枚举值时，使用整数的主要问题就出现了。作为整数尝试打印MY_ENUM，"
+"将会打印“5”之类的东西，而不是像\"MyEnum\"这样的词。要打印整数枚举，必须编写一"
+"个字典来映射每个枚举对应的字符串值。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:295
 msgid ""
@@ -24819,31 +25272,37 @@ msgid ""
 "use them as strings. That way, a separate data structure to execute on the "
 "printing is unnecessary."
 msgstr ""
+"如果使用枚举的主要目的是打印值，并且希望将它们作为相关概念组合在一起，那么使"
+"用它们作为字符串是有意义的。这样，就不需要在打印上执行单独的数据结构。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:301
 msgid ""
 "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
-msgstr ""
+msgstr "动画纹理、动画精灵、动画播放器、动画树"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
 msgid ""
 "Under what circumstances should one use each of Godot's animation classes? "
 "The answer may not be immediately clear to new Godot users."
 msgstr ""
+"在什么情况下应该使用Godot的各种动画类？对于Godot的新用户来说，可能不是很清楚"
+"答案。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:306
 msgid ""
 ":ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that the engine "
 "draws as an animated loop rather than a static image. Users can manipulate..."
 msgstr ""
+":参考:`动画纹理<类_动画纹理>`是引擎绘制的动画循环，而不是静态图像的纹理。用户"
+"可以进行如下操作……"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:310
 msgid "the rate at which it moves across each section of the texture (fps)."
-msgstr ""
+msgstr "它在纹理的每个部分移动的速率(每秒帧数)。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
 msgid "the number of regions contained within the texture (frames)."
-msgstr ""
+msgstr "纹理中包含的区域数(帧)。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
 msgid ""
@@ -24852,6 +25311,8 @@ msgid ""
 "extra logic on the part of the engine. The bad news is that users have very "
 "little control."
 msgstr ""
+"Godot的:参考:`视频服务器 <类_视频服务器>`按规定的速度依次绘制区域。好消息是，"
+"这并不涉及引擎部分额外的逻辑。坏消息是，用户几乎没有控制权。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:319
 msgid ""
@@ -24863,6 +25324,11 @@ msgid ""
 "`TileMap <class_TileMap>` for many auto-animating backgrounds that all "
 "render in a single batched draw call."
 msgstr ""
+"还要注意动画纹理是一种:参考:`资源<类_资源>`，与:参考:`节点<类_节点>`对象不"
+"同。可以创建一个:参考:`精灵<类_精灵>`节点，该节点使用动画纹理作为其纹理。或者"
+"(其他方法做不到的)可以在:参考:`砖块集<类_砖块集>`中添加动画纹理作为砖块。并将"
+"其与:参考:`砖块贴图<类_砖块贴图>`集成。对于许多自动动画背景，所有的渲染将在一"
+"个批处理内绘制调用。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:327
 msgid ""
@@ -24872,6 +25338,9 @@ msgid ""
 "speed, regional offset, and orientation. This makes them well-suited to "
 "controlling 2D frame-based animations."
 msgstr ""
+"动画精灵节点，结合:参考:`精灵帧<类_精灵帧>`资源，允许用户通过精灵表创建各种动"
+"画序列，在动画之间切换，并控制它们的速度，区域偏移量和方向。这使得它们非常适"
+"合控制基于二维的帧动画。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:333
 msgid ""
@@ -24881,16 +25350,19 @@ msgid ""
 "use an :ref:`AnimationPlayer <class_AnimationPlayer>` node in conjunction "
 "with the AnimatedSprite."
 msgstr ""
+"如果需要触发与动画更改相关的其他效果(例如，创建粒子效果，调用函数，或操作除基"
+"于帧的动画外的其他外围元素)，那么就需要使用:参考:`动画播放器<类_动画播放器>`"
+"节点与动画精灵连接。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
 msgid ""
 "AnimationPlayers are also the tool one will need to use if they wish to "
 "design more complex 2D animation systems, such as..."
-msgstr ""
+msgstr "如果你想设计更复杂的二维动画系统，动画播放器也是你的必备工具，例如……"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:342
 msgid "**Cut-Out animations:** editing sprites' transforms at runtime."
-msgstr ""
+msgstr "**剪纸动画：**在运行时编辑精灵的变换。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
 msgid ""
@@ -24898,10 +25370,12 @@ msgid ""
 "rigging a skeleton to it. Then one animates the bones which stretch and bend "
 "the texture in proportion to the bones' relationships to each other."
 msgstr ""
+"**二维网格动画：**为精灵的纹理划分一个区域，并将骨骼绑定在上面。然后对单根骨"
+"做动画，按照单根骨之间的比例关系，拉伸和弯曲纹理。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:349
 msgid "A mix of the above."
-msgstr ""
+msgstr "综上所述。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
 msgid ""
@@ -24913,6 +25387,10 @@ msgid ""
 "<class_AnimationTree>` shines. One can find an in-depth guide on using the "
 "AnimationTree :ref:`here <doc_animation_tree>`."
 msgstr ""
+"虽然我们需要一个动画播放器，来为游戏设计每个独立的动画序列，它也可以用来混合"
+"复合动画，也就是说，在这些动画之间实现平滑的转换。在为对象规划的动画之间，也"
+"可能存在分层结构。在这些情况下使用:参考:`动画树<类_动画树>`效果很出色。可以找"
+"到关于使用动画树:参考:`这里<文档_动画_树>`的深入指南。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:4
 #, fuzzy
@@ -24924,6 +25402,7 @@ msgid ""
 "Ever wondered whether one should approach problem X with strategy Y or Z? "
 "This article covers a variety of topics related to these dilemmas."
 msgstr ""
+"有没有想过应该用策略Y还是Z，来处理问题X？本文包括与这些难题相关的各种主题。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:10
 #, fuzzy
@@ -24937,6 +25416,8 @@ msgid ""
 "possible to front-load the \"loading\" operations and avoid loading "
 "resources while in the middle of performance-sensitive code."
 msgstr ""
+"在GDScript中，存在全局:参考:`预加载<类_@GDScript_方法_预加载>`方法。它尽可能"
+"早地加载资源，以便提前进行“加载”操作，并避免在执行性能敏感的代码时加载资源。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:17
 msgid ""
@@ -24947,12 +25428,18 @@ msgid ""
 "`ResourceLoader.load(path) <class_ResourceLoader_method_load>` which is "
 "accessible to *all* scripting languages."
 msgstr ""
+"与其对应，:参考:`加载 <类_@GDScript_方法_加载>`方法，仅当资源到达加载语句时才"
+"加载它。也就是说，它将在适当的位置加载资源，这会导致速度下降，然后在敏感进程"
+"的中间发生。“加载”函数也是:参考:`资源加载器.加载(路径) <类_资源加载器_方法_加"
+"载>`的别名。*所有*脚本语言都可访问。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:24
 msgid ""
 "So, when exactly does preloading occur versus loading, and when should one "
 "use either? Let's see an example:"
 msgstr ""
+"那么，预加载和加载到底在什么时候发生，什么时候又应该使用这两种方法呢?我们来看"
+"一个例子："
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:88
 msgid ""
@@ -24961,6 +25448,8 @@ msgid ""
 "wish for it. To distinguish these situations, there are a few things one can "
 "consider:"
 msgstr ""
+"预加载允许脚本在加载脚本时处理所有加载。预加载是有用的，但也有一些时候，人们"
+"并不希望这样。为了区分这些情况，我们可以考虑以下几点："
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:93
 msgid ""
@@ -24969,6 +25458,9 @@ msgid ""
 "does not expect. This could lead to unintentional, variable-length load "
 "times on top of the original script's load operations."
 msgstr ""
+"如果无法确定脚本何时加载，则需要预加载资源，特别是场景或脚本，可能会导致超出"
+"预期的进一步加载。这可能会导致无意中，在原始脚本的加载操作之上的可变长度加载"
+"时间。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:98
 msgid ""
@@ -24976,6 +25468,8 @@ msgid ""
 "initialization), then preloading the value has no meaning. This point isn't "
 "a significant factor if one intends to always create the script on its own."
 msgstr ""
+"如果有其他东西可以替代这个值(比如场景的导出初始化)，那么预加载值就没有意义"
+"了。如果打算总是自己创建脚本，那么这点就不是一个重要因素。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:102
 msgid ""
@@ -24983,6 +25477,8 @@ msgid ""
 "then using a preloaded constant is often the best course of action. However, "
 "in exceptional cases, one my wish not to do this:"
 msgstr ""
+"如果只希望“导入”另一个类资源(脚本或场景)，那么使用预加载的常量通常是最好的做"
+"法。但在特殊情况下，我不希望这样做："
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:106
 msgid ""
@@ -24990,6 +25486,8 @@ msgid ""
 "instead, initialized either using an ``export`` or a ``load`` (and perhaps "
 "not even initialized until later)."
 msgstr ""
+"如果“导入”类可能更改，那么它应该是一个属性，使用“导出”或“加载”初始化（可能直"
+"到稍后才初始化）。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:110
 msgid ""
@@ -25002,10 +25500,15 @@ msgid ""
 "(which, as a :ref:`Reference <class_Reference>`-extending type, will cause "
 "the resources to delete themselves from memory)."
 msgstr ""
+"如果脚本需要很多依赖项，人们不希望消耗这么多内存，也许有人希望随着环境的变"
+"化，在运行时加载和卸载各种依赖项。如果将资源预加载到常量中，那么卸载这些资源"
+"的唯一方法，就是卸载整个脚本。如果它们是加载的属性，然后可以将它们设置"
+"为“空”，并完全删除对资源的所有引用(作为:参考:`引用<类_引用>`扩展类型，将导致"
+"资源从内存中删除它们自己)。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:121
 msgid "Large levels: static vs. dynamic"
-msgstr ""
+msgstr "大型关卡：静态和动态"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:123
 msgid ""
@@ -25013,6 +25516,8 @@ msgid ""
 "Should they create the level as one static space? Or should they load the "
 "level in pieces and shift the world's content as needed?"
 msgstr ""
+"如果一个人正在创建一个大型关卡，哪种情况是最合适的？他们应该将关卡创建为一个"
+"静态空间吗？或者他们应该将关卡分成几部分，并根据需要改变世界的内容吗？"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:127
 msgid ""
@@ -25020,6 +25525,8 @@ msgid ""
 "dilemma associated with the two options is one of the age-old programming "
 "choices: does one optimize memory over speed, or vice versa?"
 msgstr ""
+"答案很简单，“当性能需要的时候。”与这两种选择有关的困境，是一种古老的编程选"
+"择：是否会优化内存而不是速度，反之亦然？"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:131
 msgid ""
@@ -25028,6 +25535,9 @@ msgid ""
 "Wasting users' RAM leads to programs running slow or outright crashing from "
 "everything else the computer tries to do at the same time."
 msgstr ""
+"最简单的方法是使用静态关卡，它可以一次加载所有内容。但是，根据项目的不同，这"
+"可能会消耗大量内存。浪费用户的运行内存会导致程序运行缓慢，或者计算机在同一时"
+"间尝试做的所有其他事情都会崩溃。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:136
 msgid ""
@@ -25037,6 +25547,9 @@ msgid ""
 "Games with large and varied environments or procedurally generated elements "
 "often implement these strategies to avoid wasting memory."
 msgstr ""
+"无论如何，我们应该把大场景分成小场景(提升资产的可复用性)。然后，开发人员可以"
+"设计一个节点，来实时管理资源和节点的创建/加载和删除/卸载。拥有大而多样的环境"
+"或程序生成元素的游戏，通常会执行这些策略，以避免浪费内存。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:142
 msgid ""
@@ -25045,14 +25558,16 @@ msgid ""
 "isn't careful, they can develop a system that bloats the technical debt of "
 "the application."
 msgstr ""
+"另一方面，编写动态系统的代码要复杂得多，即使用更多的程序逻辑，这会导致出现错"
+"误和bug的机会。如果不小心的话，开发的系统，会增加应用程序的技术成本。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:147
 msgid "As such, the best options would be..."
-msgstr ""
+msgstr "因此，最好的选择是……"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:149
 msgid "To use a static level for smaller games."
-msgstr ""
+msgstr "在小型游戏中使用静态关卡。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:151
 msgid ""
@@ -25061,6 +25576,9 @@ msgid ""
 "time, so as to improve usability and stability, then it could evolve into a "
 "reliable tool across projects."
 msgstr ""
+"如果一个人有时间/资源开发中型/大型游戏，使用一个可以编写节点和资源管理代码的"
+"库或插件。那么随着时间的推移，为了提高可用性和稳定性，它就可以发展成为跨项目"
+"的可靠工具。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:156
 msgid ""
@@ -25068,6 +25586,8 @@ msgid ""
 "skills, but not the time or resources to refine the code (game's gotta get "
 "done). Could potentially refactor later to outsource the code into a plugin."
 msgstr ""
+"为一款中/大型游戏编写动态逻辑代码，因为你拥有编程技能，但却没有时间或资源去完"
+"善代码(必须要完成游戏)。以后可能会进行重构，将代码外包到插件中。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:161
 msgid ""
@@ -25075,6 +25595,8 @@ msgid ""
 "please see the :ref:`\"Change scenes manually\" "
 "<doc_change_scenes_manually>` documentation."
 msgstr ""
+"举个例子，我们可以在运行时交换场景，请参见:参考:`\"手动更改场景\" <文档_手动_"
+"更改_场景>`文档。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
@@ -25128,6 +25650,8 @@ msgid ""
 "transform property. This approach is more efficient than moving the root "
 "canvas item (and hence the whole scene)."
 msgstr ""
+"像滚动效果最好通过操作画布的变换属性来实现。这种方法比移动根画布组件更有效(这"
+"就是整个场景)。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:28
 #, fuzzy
@@ -25151,6 +25675,9 @@ msgid ""
 "display and other elements to retain their screen positions even when our "
 "view of the game world is changing."
 msgstr ""
+"**用户界面**：想象一个用户界面(UI)或平视显示器(HUD)叠加在我们的游戏世界视图"
+"上。我们想要一个生命计数器，分数显示和其他元素，以保持其屏幕位置，即使当游戏"
+"世界中的视角正在改变。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:34
 #, fuzzy
@@ -25213,6 +25740,10 @@ msgid ""
 "controlling their drawing order (see :ref:`Node2D.z_index "
 "<class_Node2D_property_z_index>`)."
 msgstr ""
+"画布图层不需要控制节点的绘制顺序。确保节点被正确绘制在“前面”或“后面”的标准方"
+"法是操作场景面板中节点的顺序。也许相反，场景面板中最上面的节点绘制在视图端口"
+"中*后面*较低的节点上。二维节点还具有控制其绘图顺序的属性(参见:参考:`二维节点."
+"z轴_索引<类_二维节点_属性_z轴_索引>`)。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:4
 msgid "Viewport and canvas transforms"
@@ -25440,6 +25971,10 @@ msgid ""
 "a tileset. The tileset can be thought of as a pallete with which a tilemap "
 "(level) can be 'painted':"
 msgstr ""
+"砖块地图可以用来制作二维游戏的关卡。砖块地图是一个由（通常是正方形）图像砖块"
+"组成的网格，它们构成了游戏中关卡或区域的风景。在砖块地图中放置的砖块，是来自"
+"砖块集的“引用砖块”的实例。砖块集可以被认为是一个托盘，其中一个砖块地图(水平)"
+"可以被“绘制”："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:14
 #, fuzzy
@@ -25481,6 +26016,8 @@ msgid ""
 "The easiest way to edit and maintain a tileset is exporting it from a "
 "specially prepared scene. We'll create that next."
 msgstr ""
+"编辑和维护一个砖块集的最简单方法，是从一个特别准备的场景中导出它。接下来，我"
+"们将创建它。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:35
 msgid "TileSet scene"
@@ -25661,6 +26198,7 @@ msgid ""
 "It's easy to accidentally select and move the tilemap node. To avoid this "
 "use the node's lock button:"
 msgstr ""
+"很容易意外地选择和移动砖块地图节点。为了避免这种情况，使用节点的锁定按钮："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:138
 msgid ""
@@ -25705,7 +26243,7 @@ msgstr ""
 msgid ""
 "To avoid this situation use the approach below that makes the most sense for "
 "your game:"
-msgstr ""
+msgstr "为避免这种情况，使用以下最适合您游戏的方法："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:159
 msgid ""
@@ -26175,24 +26713,26 @@ msgid ""
 "area and direction in which particles are emitted. These can be generated "
 "from textures in your project."
 msgstr ""
+"粒子材质可以让你设置一个发射遮罩，它决定了粒子发射的区域和方向。这些可以从项"
+"目中的纹理产生。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:294
 msgid ""
 "Ensure that a ParticlesMaterial is set, and the Particles2D node is "
 "selected. A \"Particles\" menu should appear in the Toolbar:"
-msgstr ""
+msgstr "确保设置了粒子材质，选择二维粒子节点。工具栏中应显示“粒子”菜单："
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:299
 msgid "Open it and select \"Load Emission Mask\":"
-msgstr ""
+msgstr "打开它，选择“加载发射遮罩”："
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:303
 msgid "Then select which texture you want to use as your mask:"
-msgstr ""
+msgstr "然后选择你想要用作遮罩的纹理："
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:307
 msgid "A dialog box with several settings will appear."
-msgstr ""
+msgstr "将出现一个具有多个设置的对话框。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:310
 #, fuzzy
@@ -26201,18 +26741,18 @@ msgstr "发射"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:312
 msgid "Three types of emission masks can be generated from a texture:"
-msgstr ""
+msgstr "纹理可以生成三种类型的发射遮罩："
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:314
 msgid ""
 "Solid Pixels: Particles will spawn from any area of the texture, excluding "
 "transparent areas."
-msgstr ""
+msgstr "实体像素：粒子将从纹理的任何区域产生，透明区域除外。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:319
 msgid ""
 "Border Pixels: Particles will spawn from the outer edges of the texture."
-msgstr ""
+msgstr "边界像素：粒子将从纹理的外边缘产生。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:323
 msgid ""
@@ -26221,6 +26761,8 @@ msgid ""
 "Note that an ``Initial Velocity`` will need to be set in order to utilize "
 "this."
 msgstr ""
+"定向边界像素：类似于边界像素，在遮罩中添加额外的信息，使粒子能够从边缘发射出"
+"去。请注意，想要使用它，需要设置一个“初始速度”。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:331
 #, fuzzy
@@ -26231,25 +26773,27 @@ msgstr "发射"
 msgid ""
 "``Capture from Pixel`` will cause the particles to inherit the color of the "
 "mask at their spawn points."
-msgstr ""
+msgstr "“从像素捕获”会使粒子在其产生点处继承遮罩的颜色。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:335
 msgid ""
 "Once you click \"OK\", the mask will be generated and set to the "
 "ParticlesMaterial, under the ``Emission Shape`` section:"
-msgstr ""
+msgstr "一旦你点击“确定”，将生成遮罩并设置为粒子材质，在“发射形状”部分："
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:339
 msgid ""
 "All of the values within this section have been automatically generated by "
 "the \"Load Emission Mask\" menu, so they should generally be left alone."
 msgstr ""
+"“加载发射遮罩”菜单在这个部分自动生成了所有的值，所以通常他们应该被单独留下。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:342
 msgid ""
 "An image should not be added to ``Point Texture`` or ``Color Texture`` "
 "directly. The \"Load Emission Mask\" menu should always be used instead."
 msgstr ""
+"图像不应该直接添加到“点纹理”或“颜色纹理”中。应该始终使用“加载发射遮罩”菜单。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D movement overview"
@@ -26989,7 +27533,6 @@ msgid "2D meshes"
 msgstr "网格"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:9
-#, fuzzy
 msgid ""
 "In 3D, meshes are used to display the world. In 2D, they are rare as images "
 "are used more often. Godot's 2D engine is a pure two dimensional engine, so "
@@ -27014,12 +27557,16 @@ msgid ""
 "or ignored) instead of 3D. You can experiment creating them yourself using "
 "``SurfaceTool`` from code and displaying them in a ``MeshInstance2D`` node."
 msgstr ""
+"二维网格是包含二维几何(Z轴可以省略或忽略)而不是三维的网格。您可以尝试使用代码"
+"中的“平面工具”创建它们，并在“二维网格实例”节点中显示它们。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:18
 msgid ""
 "Currently, the only way to generate a 2D mesh within the editor is by either "
 "importing an OBJ file as a mesh, or converting it from a Sprite."
 msgstr ""
+"目前，在编辑器中生成二维网格的唯一方法，是导入一个OBJ文件作为网格，或者从精灵"
+"转换而来。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:21
 #, fuzzy
@@ -27032,6 +27579,8 @@ msgid ""
 "drawing large images with transparency, Godot will draw the whole quad to "
 "the screen. The large transparent areas will still be drawn."
 msgstr ""
+"在某些情况下，此工作流对于优化二维绘图非常有用。当绘制具有透明度的大型图像"
+"时，Godot将把整个四方形绘制到屏幕上。还会画出大片的透明区域。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:25
 msgid ""
@@ -27040,12 +27589,14 @@ msgid ""
 "each other with large transparent areas (for example, when using "
 "``ParallaxBackground``)."
 msgstr ""
+"这会影响性能，尤其是在移动设备上，当绘制非常大的图像时(通常是屏幕大小)，或者"
+"用大的透明区域将多个图像叠加在一起(例如，当使用“视差背景”时)。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:28
 msgid ""
 "Converting to a mesh will ensure that only the opaque parts will be drawn "
 "and the rest will be ignored."
-msgstr ""
+msgstr "转换成网格能确保只绘制不透明部分，其余部分被忽略。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:31
 #, fuzzy
@@ -27058,27 +27609,29 @@ msgid ""
 "``MeshInstance2D``. Start with an image that contains large amounts of "
 "transparency on the edges, like this tree:"
 msgstr ""
+"您可以通过将“精灵”转换为“二维网格实例”来利用这种优化。从边缘有大量透明度的图"
+"片开始，就像这棵树："
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:38
 msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
-msgstr ""
+msgstr "在“精灵”菜单中选择“转换为二维网格”："
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:42
 msgid ""
 "A dialog will appear, showing a preview of how the 2D mesh will be created:"
-msgstr ""
+msgstr "会出现一个对话框，显示将要创建的二维网格预览："
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:46
 msgid ""
 "The default values are good enough for many cases, but you can change growth "
 "and simplification according to your needs:"
-msgstr ""
+msgstr "很多情况下，默认值已经足够好，但是你可以根据需要改变增长和简化："
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:50
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
 "replaced:"
-msgstr ""
+msgstr "最后，按下“转换为二维网格”按钮，你的精灵将被替换："
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:4
 msgid "Custom drawing in 2D"
@@ -27136,6 +27689,8 @@ msgid ""
 "Drawing a large number of simple objects. Custom drawing avoids the overhead "
 "of using nodes which makes it less memory intensive and potentially faster."
 msgstr ""
+"绘制大量的简单对象。自定义绘制避免了使用节点的开销，这减少了内存占用，而且有"
+"可能更快。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
 msgid ""
@@ -27493,6 +28048,9 @@ msgid ""
 "sheet containing all the animation's frames. Depending on which type of "
 "assets you have, you can choose one of the following solutions."
 msgstr ""
+"在本教程中，您将学习创建二维动画角色的两种不同方法。通常，当您创建或下载动画"
+"角色时，它将以两种方式出现：作为单独的图像或一个包含所有动画帧的单张精灵表。"
+"根据您拥有的资产类型，您可以选择以下解决方案之一。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:15
 msgid ""
@@ -27501,14 +28059,17 @@ msgid ""
 "`AnimationPlayer <class_AnimationPlayer>` along with the *Animation* "
 "property of :ref:`Sprite <class_Sprite>`."
 msgstr ""
+"首先，我们将使用:参考:`动画精灵<类_动画精灵>`为单个图像的集合制作动画。然后使"
+"用精灵表，我们将使用:参考:`动画播放器 <c类_动画播放器>`以及:参考:`精灵<类_精"
+"灵>`的*动画*属性。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:20
 msgid "Art for the following examples by https://opengameart.org/users/ansimuz"
-msgstr ""
+msgstr "以下示例由https://opengameart.org/users/ansimuz提供"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:23
 msgid "Individual images with AnimatedSprite"
-msgstr ""
+msgstr "带有动画精灵的独立图像"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:25
 msgid ""
@@ -27516,6 +28077,8 @@ msgid ""
 "your character's animation frames. For this example, we'll use the following "
 "animation:"
 msgstr ""
+"在这个场景中，你有一组图像，每一个都包含你角色的动画帧。对于这个例子，我们将"
+"使用以下动画："
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:31
 #, fuzzy
@@ -27530,7 +28093,7 @@ msgstr ""
 msgid ""
 "Unzip the images and place them in your project folder. Set up your scene "
 "tree with the following nodes:"
-msgstr ""
+msgstr "解压缩这些图像并将它们放在项目文件夹中。使用以下节点设置场景树："
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:39
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:109
@@ -27541,18 +28104,21 @@ msgid ""
 "CollisionShape2D. See :ref:`Physics Introduction <doc_physics_introduction>` "
 "for more information."
 msgstr ""
+"根节点也可以是:参考:`二维区域<类_二维区域>`或:参考:`二维刚体<类_二维刚体>`。"
+"动画仍然会以同样的方式制作。一旦动画完成，您可以为二维碰撞形状分配一个形状。"
+"更多信息请参见:参考:`物理介绍<文档_物理_介绍>`。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:46
 msgid ""
 "Now select the ``AnimatedSprite`` and in its *SpriteFrames* property, select "
 "\"New SpriteFrames\"."
-msgstr ""
+msgstr "现在选择“动画精灵”，并在*精灵帧*属性中，选择“新建精灵帧”。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:51
 msgid ""
 "Click on the new SpriteFrames resource and you'll see a new panel appear at "
 "the bottom of the editor window:"
-msgstr ""
+msgstr "点击新的精灵帧资源，你会看到一个新的面板出现在编辑器窗口的底部："
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:56
 msgid ""
@@ -27560,6 +28126,8 @@ msgid ""
 "the center part of the SpriteFrames panel. On the left side, change the name "
 "of the animation from \"default\" to \"run\"."
 msgstr ""
+"从左边的文件系统面板，将这8张独立的图片拖放到精灵帧面板的中间部分。在左边，将"
+"动画名称从“默认”更改为“奔跑”。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:62
 msgid ""
@@ -27567,12 +28135,14 @@ msgid ""
 "now see the animation playing in the viewport. However, it is a bit slow. To "
 "fix this, change the *Speed (FPS)* setting in the SpriteFrames panel."
 msgstr ""
+"回到属性面板，选中“播放”属性的复选框。您现在应该可以看到在视区中播放的动画。"
+"然而，它有点慢。为了解决这个问题，更改精灵帧面板中的*速度(每秒帧数)*设置。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:66
 msgid ""
 "You can add additional animations by clicking the \"New Animation\" button "
 "and adding additional images."
-msgstr ""
+msgstr "您可以通过点击“新建动画”按钮，并添加额外的图像，来添加额外的动画。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:70
 #, fuzzy
@@ -27586,6 +28156,8 @@ msgid ""
 "animation while the right arrow key is held, and stop it when the key is "
 "released."
 msgstr ""
+"一旦动画完成，您可以通过代码中的“播放()”和“停止()”方法控制动画。这里有一个简"
+"单的例子来播放动画，同时按住右箭头键，键位松开后就停下。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:90
 #, fuzzy
@@ -27600,22 +28172,26 @@ msgid ""
 "animate the change from texture to texture with :ref:`AnimationPlayer "
 "<class_AnimationPlayer>`."
 msgstr ""
+"如果你有一个包含所有动画帧的精灵表，你不能轻易使用“动画精灵”。相反，您可以使"
+"用一个标准的:参考:`精灵<类_精灵>`节点来显示纹理，然后用:参考:`动画播放器<类_"
+"动画播放器>`对纹理之间的变化进行动画处理。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:97
 msgid "Consider this sprite sheet, which contains 6 frames of animation:"
-msgstr ""
+msgstr "考虑一下这个精灵表，包含6帧动画："
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:101
 msgid ""
 "Right-click the image and choose \"Save Image As\" to download, then copy "
 "the image into your project folder."
-msgstr ""
+msgstr "右键单击图片，选择“图片另存为”下载，然后将图像复制到项目文件夹中。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:104
 msgid ""
 "Our goal is to display these images one after another in a loop. Start by "
 "setting up your scene tree:"
 msgstr ""
+"我们的目的是，在一个循环中一个接一个地显示这些图像。首先设置你的场景树："
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:116
 msgid ""
@@ -27625,6 +28201,9 @@ msgid ""
 "*Hframes* to ``6``. *Hframes* and *Vframes* are the number of horizontal and "
 "vertical frames in your sprite sheet."
 msgstr ""
+"将精灵表拖拽到精灵的纹理属性中，你会看到整个表显示在屏幕上。把它分割成单独的"
+"帧，在属性面板中展开*动画*部分，将*水平帧*设置为“6”。*水平帧*和*垂直帧*是精灵"
+"表中水平和垂直帧的数量。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:124
 msgid ""
@@ -27632,6 +28211,8 @@ msgid ""
 "ranges from ``0`` to ``5`` and the image displayed by the Sprite changes "
 "accordingly. This is the property we'll be animating."
 msgstr ""
+"现在尝试更改*帧*属性的值。您将看到它的范围从“0”到“5”，精灵所显示的图像也随之"
+"改变。这就是我们想要的动画属性。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:128
 msgid ""
@@ -27639,11 +28220,13 @@ msgid ""
 "by \"New\". Name the new animation \"walk\". Set the animation length to "
 "``0.6`` and click the \"Loop\" button so that our animation will repeat."
 msgstr ""
+"选择“动画播放器”，然后点击“动画”按钮，然后点击“新建”按钮。将新动画命名为“走"
+"路”。将动画长度设置为“0.6”，点击“循环”按钮，动画将会重复。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:134
 msgid ""
 "Now select the ``Sprite`` node and click the key icon to add a new track."
-msgstr ""
+msgstr "现在选择“精灵”节点，并单击钥匙图标，添加一个新的轨道。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:138
 msgid ""
@@ -27651,10 +28234,12 @@ msgid ""
 "default), until you have all the frames from 0 to 5. You'll see the frames "
 "actually appearing in the animation track:"
 msgstr ""
+"继续在时间轴的每一点添加帧(默认为“0.1”秒)，直到你得到了从0到5的所有帧。你会看"
+"到这些帧实际上出现在动画轨道："
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:144
 msgid "Press \"Play\" on the animation to see how it looks."
-msgstr ""
+msgstr "按下动画上的“播放”键，看看效果如何。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
 msgid ""
@@ -27664,6 +28249,9 @@ msgid ""
 "animate other properties like position or scale. Experiment and see which "
 "works best for your needs."
 msgstr ""
+"这些例子说明了在二维动画中最常见的两种情况。每种方法都有其好处。使用动画播放"
+"器有点复杂，但是提供了额外的功能，因为你也可以为其他属性做动画，如位置或比"
+"例。试验一下，看看哪种最适合你的需要。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
@@ -32357,7 +32945,7 @@ msgstr ""
 msgid ""
 "Only the materials from within the meshes are used when generating the mesh "
 "library. Materials set on the node will be ignored."
-msgstr ""
+msgstr "在生成网格库时，只使用网格内的材质。节点上设置的材质将被忽略。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:66
 msgid "Exporting the MeshLibrary"
@@ -32841,27 +33429,27 @@ msgstr "在组合CSG形状时，在“Orthogonal”视图中工作可以提供�
 
 #: ../../docs/tutorials/3d/csg_tools.rst:111
 msgid "Our level will contain these objects:"
-msgstr ""
+msgstr "我们的关卡将包含以下对象："
 
 #: ../../docs/tutorials/3d/csg_tools.rst:113
 msgid "a room,"
-msgstr ""
+msgstr "一个房间，"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:114
 msgid "a bed,"
-msgstr ""
+msgstr "一张床，"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:115
 msgid "a lamp,"
-msgstr ""
+msgstr "一盏灯，"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:116
 msgid "a desk,"
-msgstr ""
+msgstr "一张桌子，"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:117
 msgid "a bookshelf."
-msgstr ""
+msgstr "一个书架。"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:119
 msgid "Create a scene with a Spatial node as root node."
@@ -33455,16 +34043,15 @@ msgid ""
 msgstr "如果这样做，所有复制的代码将使用空格而不是制表符。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:380
-#, fuzzy
 msgid ""
 "To convert the spaces to tabs in the script editor, click the \"edit\" menu "
 "and select \"Convert Indent To Tabs\". This will convert all the spaces into "
 "tabs. You can select \"Convert Indent To Spaces\" to convert tabs back into "
 "spaces."
 msgstr ""
-"要在脚本编辑器中将空格转换为选项卡，请单击“编辑”菜单并选择“将缩进转换为选项"
-"卡”。 这会将所有空格转换为制表符。 您可以选择“将缩进转换为空格”以将t转换回空"
-"格。"
+"要在脚本编辑器中将空格转换为制表符（Tab），请单击“编辑”菜单并选择“将缩进转换"
+"为选项卡”。 这会将所有空格转换为制表符。 您也可以选择“将缩进转换为空格”以将制"
+"表符转换回空格。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:385
 msgid ""
@@ -34940,6 +35527,7 @@ msgid ""
 "From there right click on the timeline and click \"Insert Key\". Put "
 "\"animation_callback\" into the name field and press ``enter``."
 msgstr ""
+"从那里右键单击时间轴并单击“插入关键帧”。将“动画_回调”放入名称字段并按“回车”。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:339
 msgid "Be sure to save your work!"
@@ -42354,6 +42942,9 @@ msgid ""
 "animating thousands of fish using vertex animation and static mesh "
 "instancing."
 msgstr ""
+"本教程探索了游戏“ABZU <https://www.gdcvault.com/play/1024409/Creating-the-"
+"Art-of-ABZ>”中使用的一种技术，该技术使用顶点动画和静态网格实例，来渲染和制作"
+"成千上万的鱼动画。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:10
 msgid ""
@@ -42362,12 +42953,15 @@ msgid ""
 "Using the following technique you can render thousands of animated objects, "
 "even on low end hardware."
 msgstr ""
+"在Godot中，这可以通过自定义:参考:`着色器<类_着色器>`和:参考:`多重网格实例<类_"
+"多重网格实例>`实现。使用下面的技术，你可以渲染成千上万的动画对象，即使是在低"
+"端硬件上。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:14
 msgid ""
 "We will start by animating one fish. Then, we will see how to extend that "
 "animation to thousands of fish."
-msgstr ""
+msgstr "我们将从一条鱼的动画开始。然后，我们将看到如何将该动画扩展到数千条鱼。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:18
 #, fuzzy
@@ -42388,7 +42982,7 @@ msgstr ""
 msgid ""
 "Here is the fish we will be using for the example images, you can use any "
 "fish model you like."
-msgstr ""
+msgstr "这是我们用于示例图像的鱼，您可以使用任何您喜欢的鱼模型。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:27
 msgid ""
@@ -42397,6 +42991,9 @@ msgid ""
 "1.0) Public Domain Dedication https://creativecommons.org/publicdomain/"
 "zero/1.0/"
 msgstr ""
+"本教程中的鱼模型由“QuaterniusDev<http://quaternius.com>”制作，使用如下知识共"
+"享许可。CC0 1.0通用(CC0 1.0)公共领域贡献https://creativecommons.org/"
+"publicdomain/zero/1.0/"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:31
 msgid ""
@@ -42407,26 +43004,30 @@ msgid ""
 "shader, you avoid using bones and can instead calculate the full animation "
 "in a few lines of code and completely on the GPU."
 msgstr ""
+"通常情况下，您将使用单根骨和:参考:`骨骼<类_骨骼>`为对象做动画。然而，单根骨的"
+"动画在CPU上进行计算，所以你必须为每一帧计算成千上万的操作，那么就不可能有成千"
+"上万的对象。在顶点着色器中使用顶点动画，你就可以避免使用单根骨，而是完全在GPU"
+"上，使用几行代码来计算完整的动画。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:37
 msgid "The animation will be made of four key motions:"
-msgstr ""
+msgstr "动画由四个关键帧动作组成："
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:39
 msgid "A side to side motion"
-msgstr ""
+msgstr "从一边运动到另一边"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:40
 msgid "A pivot motion around the center of the fish"
-msgstr ""
+msgstr "绕着鱼的中心作旋转运动"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:41
 msgid "A panning wave motion"
-msgstr ""
+msgstr "平移波动运动"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:42
 msgid "A panning twist motion"
-msgstr ""
+msgstr "平移扭转运动"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:44
 msgid ""
@@ -42440,7 +43041,6 @@ msgstr ""
 "译。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:48
-#, fuzzy
 msgid ""
 "All the motions will be made using cosine waves applied to ``VERTEX`` in "
 "model space. We want the vertices to be in model space so that the motion is "
@@ -42448,15 +43048,15 @@ msgid ""
 "will always be move the fish back and forth in its left to right direction, "
 "instead of on the ``x`` axis in the world orientation."
 msgstr ""
-"所有动作都将使用模型空间中应用于“VERTEX”的余弦波进行。 我们希望顶点位于模型空"
-"间中，以便运动始终相对于鱼的方向。 例如，从一侧到另一侧将始终在左右方向上来回"
-"移动鱼，而不是在世界方向上的“x”轴上。"
+"所有动作都将使用模型空间中应用于``VERTEX``的余弦波进行。 我们希望顶点位于模型"
+"空间中，以便运动始终相对于鱼的方向。 例如，从一侧到另一侧将始终在左右方向上来"
+"回移动鱼，而不是在世界方向上的``x``轴上。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:53
 msgid ""
 "In order to control the speed of the animation, we will start by defining "
 "our own time variable using ``TIME``."
-msgstr ""
+msgstr "为了控制动画的速度，我们将通过使用“时间”定义自己的时间变量开始。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:60
 msgid ""
@@ -42482,7 +43082,6 @@ msgstr ""
 "以旋转矩阵，使其围绕鱼的中心旋转。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:76
-#, fuzzy
 msgid "We construct a rotation matrix like so:"
 msgstr "我们构造一个旋转矩阵, 如下所示:"
 
@@ -42490,7 +43089,7 @@ msgstr "我们构造一个旋转矩阵, 如下所示:"
 msgid ""
 "And then we apply it in the ``x`` and ``z`` axes by multiplying it by "
 "``VERTEX.xz``."
-msgstr ""
+msgstr "然后我们把它应用到“x”轴和“z”轴上乘以“顶点.xz”。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:91
 #, fuzzy
@@ -42503,6 +43102,8 @@ msgid ""
 "need a new variable, ``body``. ``body`` is a float that is ``0`` at the tail "
 "of the fish and ``1`` at its head."
 msgstr ""
+"接下来的两个动作需要顺着鱼的脊柱向下平移。为此，我们需要一个新的变量，“身"
+"体”。“身体”是一个浮点数，在鱼的尾巴上是“0”，在它的头部是“1”。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:102
 msgid ""
@@ -42511,6 +43112,8 @@ msgid ""
 "the position along the spine, which is the variable we defined above, "
 "``body``."
 msgstr ""
+"下一个运动是沿着鱼的长度向下移动的余弦波。为了让它沿着鱼的脊柱移动，我们用脊"
+"柱的位置来偏移输入到“余弦”的位置，也就是我们在上面定义的变量“身体”。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:111
 msgid ""
@@ -42519,12 +43122,17 @@ msgid ""
 "has a different position in the wave making it look like a wave is moving "
 "along the fish."
 msgstr ""
+"这看起来很像我们上面定义的左右运动，但在这个例子中，通过使用“身体”来偏移“余"
+"弦”，沿着脊柱的每个顶点在波浪中都有不同的位置，使它看起来像是沿着鱼移动的波"
+"浪。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:117
 msgid ""
 "The last motion is the twist, which is a panning roll along the spine. "
 "Similarly to the pivot, we first  construct a rotation matrix."
 msgstr ""
+"最后一个动作是扭转，也就是沿着脊柱滚动。类似轴心运动，我们首先构造一个旋转矩"
+"阵。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:126
 msgid ""
@@ -42532,6 +43140,8 @@ msgid ""
 "around its spine. For this to work, the fishes spine needs to be centered on "
 "the ``z`` axis."
 msgstr ""
+"我们在“xy”轴上旋转，这样鱼就会绕着它的脊柱滚动。要做到这一点，鱼的脊柱需要"
+"以“z”轴为中心。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:133
 #, fuzzy
@@ -42542,7 +43152,7 @@ msgstr "这是GDScript示例代码:"
 msgid ""
 "If we apply all these motions one after another, we get a fluid jelly-like "
 "motion."
-msgstr ""
+msgstr "如果我们一个接一个地应用这些运动，就得到一个类似液体凝胶似的运动。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:141
 msgid ""
@@ -42550,6 +43160,8 @@ msgid ""
 "need to limit the panning motions to the back half of the fish. To do this, "
 "we create a new variable, ``mask``."
 msgstr ""
+"通常鱼主要使用身体的后半部分游泳。因此，我们需要将平移运动限制在鱼的后半部"
+"分。为此，我们创建一个新变量“遮罩”。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:144
 msgid ""
@@ -42557,16 +43169,18 @@ msgid ""
 "at the end  using ``smoothstep`` to control the point at which the "
 "transition from ``0`` to ``1`` happens."
 msgstr ""
+"“遮罩”是一个浮点数，它使用“平滑步进”控制从“0”到“1”之间发生转换的点，从鱼最前"
+"面的“0”到最后的“1”。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:152
 msgid "Below is an image of the fish with ``mask`` used as ``COLOR``:"
-msgstr ""
+msgstr "以下是这条鱼的图片，使用“颜色”作为“遮罩”："
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:156
 msgid ""
 "For the wave, we multiply the motion by ``mask`` which will limit it to the "
 "back half."
-msgstr ""
+msgstr "对于波浪，我们将运动乘以“遮罩”，这就把它限制在后半部分。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:163
 msgid ""
@@ -42577,10 +43191,14 @@ msgid ""
 "are replacing the ``VERTEX`` with the rotated version. If we multiplied that "
 "by ``mask`` we would shrink the fish."
 msgstr ""
+"为了将遮罩应用于扭曲，我们使用“混合”。“混合”允许我们混合一个完全旋转的顶点和"
+"一个没有旋转的顶点之间的顶点位置。我们需要使用“混合”而不是“遮罩”乘以旋转的“顶"
+"点”，因为我们没有将运动添加到“顶点”，而是用旋转的版本替换了“顶点”。如果我们把"
+"它乘以“遮罩”，鱼就会缩小。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:174
 msgid "Putting the four motions together gives us the final animation."
-msgstr ""
+msgstr "将四个动作组合在一起，就得到了最终的动画效果。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:178
 msgid ""
@@ -42588,10 +43206,12 @@ msgid ""
 "fish. You will find that you can create a wide variety of swim styles using "
 "these four motions."
 msgstr ""
+"为了改变鱼的游泳周期，继续统一播放吧。你会发现可以用这四个动作创造出多种多样"
+"的游泳风格。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:182
 msgid "Making a school of fish"
-msgstr ""
+msgstr "制作一群鱼"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:184
 #, fuzzy
@@ -42606,6 +43226,8 @@ msgid ""
 "MeshInstance node. For this tutorial, we will name the MultiMeshInstance "
 "node ``School``, because it will contain a school of fish."
 msgstr ""
+"创建和使用多重网格实例节点的方法，与创建网格实例节点相同。在本教程中，我们将"
+"把多重网格实例节点命名为“鱼群”，因为里面会有一群鱼。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:190
 msgid ""
@@ -42613,6 +43235,8 @@ msgid ""
 "and to that MultiMesh add your :ref:`Mesh <class_Mesh>` with the shader from "
 "above."
 msgstr ""
+"一旦你有了一个多重网格实例，添加:参考:`多重网格<类_多重网格>`，然后添加:参考:"
+"`网格<类_网格>`和上面的着色器。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:193
 msgid ""
@@ -42620,6 +43244,8 @@ msgid ""
 "Transform (rotation, translation, scale), Color, and Custom. Custom is used "
 "to pass in 4 multi-use variables using a :ref:`Color <class_Color>`."
 msgstr ""
+"多重网格使用三个额外的实例属性来绘制网格：变换(旋转、平移、缩放)、颜色和自定"
+"义。自定义用于使用:参考:`颜色<类_颜色>`传入4个多用途变量。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:197
 msgid ""
@@ -42628,12 +43254,15 @@ msgid ""
 "any of the other parameters while ``instance_count`` is larger than ``0``. "
 "We will set ``instance count`` in GDScript later."
 msgstr ""
+"“实例_数量”指定要绘制的网格的实例数量。现在，将“实例_数量”保留为“0”，因为"
+"当“实例_数量”大于“0”时，您不能更改任何其他参数。我们稍后将在GDScript中设置“实"
+"例数量”。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:201
 msgid ""
 "``transform_format`` specifies whether the transforms used are 3D or 2D. For "
 "this tutorial, select 3D."
-msgstr ""
+msgstr "“变换_格式”指定使用的变换是3D还是2D。对于本教程，选择3D。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:203
 msgid ""
@@ -42646,14 +43275,19 @@ msgid ""
 "``Byte`` will take less memory and be faster, but you may see some visual "
 "artifacts."
 msgstr ""
+"对于“颜色_格式”和“自定义_数据_格式”，您可以在“无”，“字节”，和“浮点数”之间进行"
+"选择，“无”表示您不会传递该数据(可以是每个实例的“颜色”变量，也可以是“实例_自定"
+"义”变量)到着色器中。“字节”表示每个组成颜色的数字将被存储为8位，“浮点数”表示每"
+"个数字将被存储为一个浮点数(32位)。“浮点数”更慢但更精确，“字节”将占用更少的内"
+"存和更快，但您可能会看到一些视觉瑕疵。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:210
 msgid "Now, set ``instance_count`` to the number of fish you want to have."
-msgstr ""
+msgstr "现在，将“实例_数量”设置为您想要的鱼的数量。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:212
 msgid "Next we need to set the per-instance transforms."
-msgstr ""
+msgstr "接下来，我们需要设置每个实例的变换。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:214
 msgid ""
@@ -42661,6 +43295,8 @@ msgid ""
 "is entirely in editor and is described in the :ref:`MultiMeshInstance "
 "tutorial <doc_using_multi_mesh_instance>`."
 msgstr ""
+"有两种方法可以为多个时间轴设置每个实例的变换。第一个完全在编辑器中，在:参考:`"
+"多重网格实例教程<文档_使用_多重_网格_实例>`中进行了描述。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:217
 msgid ""
@@ -42668,18 +43304,20 @@ msgid ""
 "code. Below, we use GDScript to loop over all the instances and set their "
 "transform to a random position."
 msgstr ""
+"第二种方法是，遍历所有实例，并在代码中设置它们的变换。下面，我们使用GDScript"
+"遍历所有实例，并将它们的变换设置为随机位置。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:227
 msgid ""
 "Running this script will place the fish in random positions in a box around "
 "the position of the MultiMeshInstance."
-msgstr ""
+msgstr "运行此脚本，会在多重网格实例位置周围的框中随机放置鱼。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:230
 msgid ""
 "If performance is an issue for you, try running the scene with GLES2 or with "
 "fewer fish."
-msgstr ""
+msgstr "如果你关注性能问题，试着使用GLES2运行场景或摆放更少的鱼。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:232
 msgid ""
@@ -42687,6 +43325,9 @@ msgid ""
 "It makes them look very robotic. The next step is to give each fish a "
 "different position in the swim cycle so the entire school looks more organic."
 msgstr ""
+"你注意到所有的鱼在它们的游泳周期中都处于相同的位置吗？这让他们看起来很机械刻"
+"板。下一步是让每条鱼在游泳周期中处于不同的位置，这样整个鱼群看起来就更加生动"
+"自然了。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:237
 #, fuzzy
@@ -42699,6 +43340,8 @@ msgid ""
 "they are animated with one parameter, ``time``. In order to give each fish a "
 "unique position in the swim cycle, we only need to offset ``time``."
 msgstr ""
+"使用“余弦”函数给鱼动画的一个好处是，它们只需要一个参数，“时间”。为了让每条鱼"
+"在游泳周期中处于单独的位置，我们只需要偏移“时间”。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:243
 msgid ""
@@ -45638,7 +46281,6 @@ msgid "SoftBody"
 msgstr "软体"
 
 #: ../../docs/tutorials/physics/soft_body.rst:6
-#, fuzzy
 msgid ""
 "Soft bodies (or *soft-body dynamics*) simulate movement, changing shape and "
 "other physical properties of deformable objects. This can for example be "

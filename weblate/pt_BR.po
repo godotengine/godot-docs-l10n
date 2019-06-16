@@ -24,10 +24,12 @@
 # Davi <wokep.ma.wavid@gmail.com>, 2019.
 # Diego Schmidt <diegophh@gmail.com>, 2018.
 # Dimenicius <vinicius.costa.92@gmail.com>, 2018-2019.
+# Dnickson Lima <dnickson1509@gmail.com>, 2019.
 # Douglas Fiedler <dognew@gmail.com>, 2018.
 # douglas neumeister <douglas.neumeister@gmail.com>, 2019.
 # Eduardo Abreu <eduo.abreu@gmail.com>, 2018-2019.
 # Emerson Guerra <guerraemerson@gmail.com>, 2018.
+# Esdras Tarsis <esdrastarsis@gmail.com>, 2019.
 # Fathos Law <fathos23@gmail.com>, 2018.
 # Filipe Dias <filipediascontato@gmail.com>, 2018.
 # Flávio Henrique <flavio.pessini@outlook.com>, 2018.
@@ -49,9 +51,10 @@
 # José Leonardo Ayres Pereira <leonardo.ayres@gmail.com>, 2019.
 # Julio Yagami <juliohenrique31501234@hotmail.com>, 2018-2019.
 # ieleny filgueira <ielenyfilgueira@hotmail.com>, 2018.
-# Klaus Dellano <klaus.dd.sa@gmail.com>, 2018.
+# Klaus Dellano <klausdell@hotmail.com>, 2018-2019.
 # Leandro <xupisco@gmail.com>, 2018.
 # Leonardo Ramos <ranyor@gmail.com>, 2019.
+# Lucas Motizuki <motizukilucas@gmail.com>, 2019.
 # Lucas Prado <lucade238oficial@gmail.com>, 2018.
 # LucasSouza6 <lucasosouza66@gmail.com>, 2018.
 # Lucas Vitor <lucasvitorifg@gmail.com>, 2018.
@@ -76,11 +79,13 @@
 # Pietro Benati Carrara <piticarrara@gmail.com>, 2019.
 # Raphael Nogueira Campos <raphaelncampos@gmail.com>, 2019.
 # Renato Lacerda <renato.ac.lacerda@gmail.com>, 2018.
+# Renato Rotenberg <renato.rotenberg@gmail.com>, 2019.
 # Renne Sampaio <rennesampaio97@gmail.com>, 2018-2019.
 # Ricardo Héber R. L. Tenório <ricardo.heber@gmail.com>, 2019.
 # Rodolfo R Gomes <rodolforg@gmail.com>, 2018.
 # Rogério Dec <rogeriodec@gmail.com>, 2019.
 # ronybezerra <ronybezerra@gmail.com>, 2018.
+# Sergio Henrique C Miranda <sergiogbrox@gmail.com>, 2019.
 # ShallZ <vzinbr@gmail.com>, 2018.
 # Stephann Vasconcelos <stephann@protonmail.com>, 2019.
 # suxuf@2odem.com <suxuf@2odem.com>, 2018.
@@ -99,8 +104,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-05-21 13:40+0200\n"
-"PO-Revision-Date: 2019-05-21 11:16+0000\n"
-"Last-Translator: Miguel R. Araújo <leuugz@gmail.com>\n"
+"PO-Revision-Date: 2019-06-16 20:10+0000\n"
+"Last-Translator: Sergio Henrique C Miranda <sergiogbrox@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -576,7 +581,6 @@ msgid "In short:"
 msgstr "Resumindo:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
@@ -964,7 +968,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "A partir de Godot 3.0, glTF é suportado."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -1010,7 +1013,6 @@ msgstr ""
 "permitido."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
@@ -1086,18 +1088,16 @@ msgstr ""
 "conteúdos, e mais memória eles vão ocupar e mais tempo levará para carregar."
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Use as opções de esticamento no Godot, esticar em 2D enquanto mantém o "
+"Use as opções de esticamento no Godot, esticando em 2D enquanto mantém o "
 "aspecto (proporção) funciona melhor. Veja o tutorial :ref:"
 "`doc_multiple_resolutions` sobre como fazer isso."
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -1369,7 +1369,7 @@ msgstr ":ref:`Sinais <doc_signals>`"
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`Exporting <doc_exporting>`"
-msgstr ":ref:`Exporting <doc_exporting>`"
+msgstr ":ref:`Exportando <doc_exportando>`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/getting_started/workflow/index.rst:2
@@ -1378,7 +1378,7 @@ msgstr "Fluxo de trabalho do projeto"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Custom builds for Android <doc_android_custom_build>`"
-msgstr ""
+msgstr ":ref:`Builds personalizadas para Android <doc_android_custom_build>`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid "Best Practices:"
@@ -1498,30 +1498,28 @@ msgid ":ref:`2D skeletons <doc_2d_skeletons>`"
 msgstr ":ref:`Esqueletos 2D<doc_2d_skeletons>`"
 
 #: ../../docs/about/docs_changelog.rst:67
-#, fuzzy
 msgid ":ref:`AnimationTree <doc_animation_tree>`"
-msgstr ":ref:`Canalização de Animações <doc_animations>`"
+msgstr ":ref:`Árvore de Animações <doc_animation_tree>`"
 
 #: ../../docs/about/docs_changelog.rst:70 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
-msgstr ""
+msgstr "GUI"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`Containers <doc_gui_containers>`"
-msgstr ":ref:`Interfaces Godot <doc_godot_interfaces>`"
+msgstr ":ref:`Contêiners <doc_gui_contêiners>`"
 
 #: ../../docs/about/docs_changelog.rst:75
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
-#, fuzzy
 msgid "Viewports"
-msgstr "Viewports"
+msgstr "Janelas de exibição"
 
 #: ../../docs/about/docs_changelog.rst:77
-#, fuzzy
 msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
-msgstr ":ref:`Usando uma Viewport como uma textura <doc_viewport_as_texture>`"
+msgstr ""
+":ref:`Usando uma Janela de exibição (Viewport) como uma textura "
+"<doc_viewport_as_texture>`"
 
 #: ../../docs/about/docs_changelog.rst:78
 msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
@@ -1541,7 +1539,6 @@ msgstr ""
 "<doc_intro_to_shaders_water_workshop>`"
 
 #: ../../docs/about/docs_changelog.rst:84
-#, fuzzy
 msgid ""
 ":ref:`Migrating to Godot’s shading language "
 "<doc_migrating_to_godot_shader_language>`"
@@ -1554,67 +1551,57 @@ msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
 msgstr ":ref:`Pós-processo avançado <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid "Your First Shader Series:"
-msgstr "Seu primeiro jogo"
+msgstr "Sua Primeira Série Shader:"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`What are shaders? <doc_what_are_shaders>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`O que são shaders? <doc_what_are_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:89
-#, fuzzy
 msgid ":ref:`Your first CanvasItem shader <doc_your_first_canvasitem_shader>`"
-msgstr ":ref:`Shaders de CanvasItem <doc_canvas_item_shader>`"
+msgstr ""
+":ref:`Seu primeiro shader de CanvasItem <doc_your_first_canvasitem_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:90
-#, fuzzy
 msgid ":ref:`Your first Spatial shader <doc_your_first_spatial_shader>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`Seu primeiro shader Spatial  <doc_your_first_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid ""
 ":ref:`Your first Spatial shader: Part 2 <doc_your_second_spatial_shader>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ""
+":ref:`Seu primeiro shader Spatial: Parte 2 <doc_your_second_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:98
-#, fuzzy
 msgid "Shading Reference:"
-msgstr "Alterando a cena atual"
+msgstr "Referência de sombreamento:"
 
 #: ../../docs/about/docs_changelog.rst:94
-#, fuzzy
 msgid ":ref:`Shaders <doc_shaders>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`Sombreamento <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:95
-#, fuzzy
 msgid ":ref:`Shading language <doc_shading_language>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`Linguagem de sombreamento <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:96
-#, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`Shaders Spatial <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:97
 msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
 msgstr ":ref:`Shaders de CanvasItem <doc_canvas_item_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:98
-#, fuzzy
 msgid ":ref:`Particles shaders <doc_particle_shader>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`Sombreamento de partículas <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:101 ../../docs/tutorials/vr/index.rst:2
-#, fuzzy
 msgid "VR"
 msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:103
-#, fuzzy
 msgid ":ref:`VR starter tutorial <doc_vr_starter_tutorial>`"
 msgstr ":ref:`Tutorial de iniciante de VR <doc_vr_starter_tutorial>`"
 
@@ -1624,11 +1611,11 @@ msgid "Platform-specific"
 msgstr "Plataformas específicas"
 
 #: ../../docs/about/docs_changelog.rst:108
-#, fuzzy
 msgid ""
 ":ref:`Customizing the Web export HTML page <doc_customizing_html5_shell>`"
 msgstr ""
-":ref:`Personalizando a Web export HTML page <doc_customizing_html5_shell>`"
+":ref:`Personalizando a página Web de exportação de HTML "
+"<doc_customizing_html5_shell>`"
 
 #: ../../docs/about/docs_changelog.rst:111
 #: ../../docs/tutorials/threads/index.rst:2
@@ -1641,19 +1628,16 @@ msgstr ":ref:`Thread APIs seguras<doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:116
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "Animação"
+msgstr "Otimização"
 
 #: ../../docs/about/docs_changelog.rst:118
-#, fuzzy
 msgid ":ref:`Using MultiMesh <doc_using_multimesh>`"
-msgstr ":ref:`Criando árvores <doc_making_trees>`"
+msgstr ":ref:`Utilizando MultiMesh <doc_using_multimesh>`"
 
 #: ../../docs/about/docs_changelog.rst:119
-#, fuzzy
 msgid ":ref:`Using servers <doc_using_servers>`"
-msgstr ":ref:`Criando árvores <doc_making_trees>`"
+msgstr ":ref:`Usando servidores <doc_making_trees>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1662,17 +1646,14 @@ msgid "Miscellaneous"
 msgstr "Diversos"
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`Fixing jitter and stutter <doc_jitter_stutter>`"
 msgstr ":ref:`Consertando jitter e stutter <doc_jitter_stutter>`"
 
 #: ../../docs/about/docs_changelog.rst:125
-#, fuzzy
 msgid ":ref:`Running code in the editor <doc_running_code_in_the_editor>`"
 msgstr ":ref:`Rodando código no editor <doc_running_code_in_the_editor>`"
 
 #: ../../docs/about/docs_changelog.rst:126
-#, fuzzy
 msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
 msgstr ":ref:`Mudar cenas manualmente <doc_change_scenes_manually>`"
 
@@ -1684,14 +1665,12 @@ msgstr ":ref:'Diferenças entre GLES2 e GLES3 <doc_gles2_gles3_differences>`"
 #: ../../docs/about/docs_changelog.rst:130
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "Jurídico"
 
 #: ../../docs/about/docs_changelog.rst:132
-#, fuzzy
 msgid ":ref:`Complying with Licenses <doc_complying_with_licenses>`"
 msgstr ""
-":ref:`Compilando com chave de encriptação de script "
-"<doc_compiling_with_script_encryption_key>`"
+":ref:`Compilando com Licenças <doc_compiling_with_script_encryption_key>`"
 
 #: ../../docs/about/docs_changelog.rst:135
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:231
@@ -1701,27 +1680,23 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_osx.rst:23
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 #: ../../docs/development/compiling/compiling_for_uwp.rst:24
-#, fuzzy
 msgid "Compiling"
 msgstr "Compilando"
 
 #: ../../docs/about/docs_changelog.rst:137
-#, fuzzy
 msgid ":ref:`Optimizing a build for size <doc_optimizing_for_size>`"
-msgstr ":ref:`Otimizando uma build por tamanho <doc_optimizing_for_size>`"
+msgstr ":ref:`Otimizando uma build para tamanho <doc_optimizing_for_size>`"
 
 #: ../../docs/about/docs_changelog.rst:138
-#, fuzzy
 msgid ""
 ":ref:`Compiling with script encryption key "
 "<doc_compiling_with_script_encryption_key>`"
 msgstr ""
-":ref:`Compilando com chave de encriptação de script "
+":ref:`Compilando com a chave de encriptação de script "
 "<doc_compiling_with_script_encryption_key>`"
 
 #: ../../docs/about/docs_changelog.rst:141
 #: ../../docs/development/cpp/index.rst:2
-#, fuzzy
 msgid "Engine development"
 msgstr "Desenvolvimento de Engine"
 
@@ -1734,7 +1709,6 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:146
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
 msgstr "Criando conteúdo"
 
@@ -1757,9 +1731,8 @@ msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
 msgstr ":ref:`Plugins de gizmo espacial <doc_animations>`"
 
 #: ../../docs/about/docs_changelog.rst:155
-#, fuzzy
 msgid ":ref:`Creating Android plugins <doc_android_plugin>`"
-msgstr ":ref:`Plugins de gizmo espacial <doc_animations>`"
+msgstr ":ref:`Criando plugins para Android <doc_animations>`"
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
@@ -2698,7 +2671,6 @@ msgstr ""
 "baixo e selecionando \"Novo PhysicsMaterial\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
-#, fuzzy
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
@@ -2717,14 +2689,13 @@ msgstr ""
 "cena afetam todas as instâncias."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Set its "
 "``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
 "Você também pode ajustar instâncias individualmente. Configure o valor de "
-"quique de volta para ``0.5`` e então, na cena ``Main``, selecione uma das "
+"quique de volta para ``0`` e então, na cena ``Main``, selecione uma das "
 "bolas instanciadas. Defina seu ``Bounce`` para ``1`` e pressione \"Rodar\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:113
@@ -3593,7 +3564,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Esse método será chamado toda vez que um quadro é desenhado:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -3601,16 +3572,19 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"É importante ter em mente que a frequência que o ``_process()`` será chamado "
+"depende de quantos quadros por segundo (FPS) sua aplicação está rodando. "
+"Essa taxa pode variar com o tempo e dispositivos."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"O parâmetro ``delta`` contém o tempo decorrido em segundos, como número "
-"real, desde a chamada anterior de ``_process()``."
+"Para ajudar a gererênciar essa variabilidade o parâmetro ``delta`` contém o "
+"tempo decorrido em segundos, como número real, desde a chamada anterior de "
+"``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -3656,13 +3630,12 @@ msgstr ""
 "Sua execução é feita depois do passo da física em jogos de thread única."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Uma maneira simples de testar isso é criar uma cena com um único nó Rótulo, "
-"com o seguinte roteiro:"
+"Uma maneira simples de ver a função ``_process()`` funcionando é criar uma "
+"cena com um único nó Label, com o seguinte roteiro:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -3690,6 +3663,8 @@ msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"E a segunda maneira é por código. O sequinte script adicionará o nó atual ao "
+"grupo ``enemies`` assim que aparecesse na árvore de cena."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -3730,10 +3705,10 @@ msgid ""
 "you have some time!"
 msgstr ""
 "A classe :ref:`SceneTree <class_SceneTree>` fornece muitos métodos úteis, "
-"como interagir com cenas, sua hierarquia de nós e grupos de nós. Ela lhe "
-"permite facilmente trocar cenas ou recarregá-las, sair do jogo ou suspendê-"
-"lo ou retomá-lo. Ela até vem com sinais interessantes. Então dê uma "
-"conferida nela se tiver um tempo!"
+"como interagir com cenas, suas hierarquias e grupos de nós. Ela lhe permite "
+"facilmente trocar ou recarregar cenas, sair do jogo ou suspendê-lo ou retomá-"
+"lo. Ela até vem com sinais interessantes. Então dê uma olhada nela se tiver "
+"um tempo!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:157
@@ -3804,15 +3779,14 @@ msgstr ""
 "``free()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
 "Quando um nó é liberado da memória, ele também libera todos os seus nós "
-"filhos. Por isso, excluir nós manualmente é mais simples do que aparenta. "
-"Libere o nó base e todo o resto na subárvore vai embora junto com ele."
+"filhos. Por isso, excluir nós manualmente é mais simples do que parece. "
+"Libere o nó base e todo o resto vai embora junto com ele."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
@@ -3954,7 +3928,6 @@ msgstr ""
 "http://gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
@@ -3999,6 +3972,10 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Para a textura do Sprite, você pode usar o ícone Godot, ou qualquer outra "
+"imagem que desejar.  Que é feito selecionando ``Load`` no menu suspenso do "
+"atributo Textura do Sprite. Anexe um script ao nó raiz, mas não adicione "
+"nenhum código ainda."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -5555,12 +5532,16 @@ msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
 msgstr ""
+"Começando por adicionar a nova função para ``Mob.gd``. ``queue_free()`` que "
+"excluirá o nó atual no final do quadro atual."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
+"Então, em ``Main.gd`` adicione uma nova linha dentro da função "
+"``_on_MobTimer_timeout()``, no final."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1157
 msgid ""
@@ -5568,10 +5549,13 @@ msgid ""
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
 "its ``_on_start_game()`` function."
 msgstr ""
+"Essa linha diz ao novo nó Mob ( referenciado pela variável ``mob``) para "
+"responder a qualquer sinal ``start_game`` emitido pelo nó ``HUD`` rodando "
+"sua função ``_on_start_game()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
 msgid "Finishing up"
-msgstr "Finalizando"
+msgstr "Terminando"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
 msgid ""
@@ -5656,7 +5640,7 @@ msgstr "Por fim, adicione ``$SomDeMorte.play()`` na função ``game_over()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1200
 msgid "Keyboard Shortcut"
-msgstr "Atalho de teclado"
+msgstr "Atalho do teclado"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1202
 msgid ""

@@ -10,6 +10,7 @@
 # Daniele Tolomelli <daniel.tolomelli@gmail.com>, 2018.
 # Dario D'Ambra <legione0@ymail.com>, 2018.
 # Davide Cristini <davcri91@gmail.com>, 2018.
+# Davide Giuliano <davidegiuliano00@gmail.com>, 2019.
 # Davide Wayan Mores <moresdavidewayan@gmail.com>, 2018.
 # Giacomo Bella <foliestere@gmail.com>, 2018.
 # Giuseppe Guerra <me@nyodev.xyz>, 2019.
@@ -21,11 +22,12 @@
 # Marco <rodomar705@gmail.com>, 2019.
 # Mario Rossi <mr_do@hotmail.it>, 2018.
 # MassiminoilTrace <omino.gis@gmail.com>, 2019.
-# Matteo <matteo.guglielmetti@hotmail.it>, 2018.
+# Matteo <matteo.guglielmetti@hotmail.it>, 2018-2019.
 # Myself <whatamidoing.wt@gmail.com>, 2018.
 # Nicolas Bonet <nicolasbonet2004@gmail.com>, 2018.
 # Omar Ruggero Manca <o.r.manca1@outlook.it>, 2019.
 # Red Pill <redpill902@gmail.com>, 2018.
+# RHC <rhc.throwaway@gmail.com>, 2019.
 # salahzar stenvaag <salahzar@gmail.com>, 2019.
 # Salvo Permiracolo <salvoperm@gmail.com>, 2018.
 # Samuele Zolfanelli <samdazel@gmail.com>, 2018.
@@ -38,8 +40,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-05-21 13:40+0200\n"
-"PO-Revision-Date: 2019-05-21 11:16+0000\n"
-"Last-Translator: MassiminoilTrace <omino.gis@gmail.com>\n"
+"PO-Revision-Date: 2019-06-16 20:11+0000\n"
+"Last-Translator: Matteo <matteo.guglielmetti@hotmail.it>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -487,13 +489,13 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
-"In aggiunta a questa documentazione è possibile dare un'occhiata anche ai "
-"vari `Progetti dimostativi (Godot demo projects <https://github.com/"
-"godotengine/godot-demo-projects>`_."
+"In aggiunta a questa documentazione potresti voler dare un'occhiata ai vari "
+"`progetti demo di Godot <https://github.com/godotengine/godot-demo-"
+"projects>`_."
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr "Divertiti leggendo e creando giochi con Godot Engine!"
+msgstr "Divertiti durante la lettura e nel creare giochi con Godot Engine!"
 
 #: ../../docs/about/faq.rst:4
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -521,13 +523,12 @@ msgid "In short:"
 msgstr "In breve:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
 "Sei libero di scaricare e utilizzare Godot per qualsiasi scopo: personale, "
-"non-profit, commerciale o altro;"
+"non-profit, commerciale o altro."
 
 #: ../../docs/about/faq.rst:14
 msgid ""
@@ -567,19 +568,18 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
-"Per tutti i dettagli fare riferimento alla nota sul `COPYRIGHT.txt <https://"
-"github.com/godotengine/godot/blob/master/COPYRIGHT.txt>`_ così come ai "
-"termini di licenza:  `LICENSE.txt <https://github.com/godotengine/godot/blob/"
-"master/LICENSE.txt>`_ e `LOGO_LICENSE.txt <https://github.com/godotengine/"
-"godot/blob/master/LOGO_LICENSE.md>`_. I file sono disponibili nel repository "
-"di Godot."
+"Per maggiori dettagli, guarda i file `COPYRIGHT.txt <https://github.com/"
+"godotengine/godot/blob/master/COPYRIGHT.txt>`_, `LICENSE.txt <https://github."
+"com/godotengine/godot/blob/master/LICENSE.txt>`_ e `LOGO_LICENSE.txt "
+"<https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ nella "
+"repository di Godot."
 
 #: ../../docs/about/faq.rst:28
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"Vedere anche `la pagina sulla licenza presente nel sito web di Godot "
+"Consultare anche 'la pagina sulla licenza presente nel sito web di Godot "
 "<https://godotengine.org/license>`_."
 
 #: ../../docs/about/faq.rst:31
@@ -854,7 +854,7 @@ msgid ""
 msgstr ""
 "L'interfaccia per il binding con C++ è orrible, e risulta in una quantità "
 "enorme di codice, bug, colli di bottiglia e inefficienze in generale (Lua, "
-"Python, Squirrel, JS, ecc.)"
+"Python, Squirrel, JS, ecc.)."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
@@ -956,7 +956,6 @@ msgstr ""
 "source."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
@@ -1293,7 +1292,6 @@ msgstr ""
 "seguito è riportato un elenco di nuovi tutorial aggiunto dalla versione 3.0."
 
 #: ../../docs/about/docs_changelog.rst:10
-#, fuzzy
 msgid ""
 "This document only contains new tutorials so not all changes are reflected, "
 "many tutorials have been substantially updated but are not reflected in this "
@@ -1312,12 +1310,10 @@ msgid "Step-by-step"
 msgstr "Passo passo"
 
 #: ../../docs/about/docs_changelog.rst:19
-#, fuzzy
 msgid ":ref:`Signals <doc_signals>`"
 msgstr ":ref:`Signals <doc_signals>`"
 
 #: ../../docs/about/docs_changelog.rst:20
-#, fuzzy
 msgid ":ref:`Exporting <doc_exporting>`"
 msgstr ":ref:`Exporting <doc_exporting>`"
 
@@ -1331,7 +1327,6 @@ msgid ":ref:`Custom builds for Android <doc_android_custom_build>`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:37
-#, fuzzy
 msgid "Best Practices:"
 msgstr "Metodi migliori:"
 
@@ -1458,7 +1453,7 @@ msgstr ":ref:`AnimationTree <doc_animation_tree>`"
 
 #: ../../docs/about/docs_changelog.rst:70 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
-msgstr ""
+msgstr "GUI"
 
 #: ../../docs/about/docs_changelog.rst:72
 #, fuzzy
@@ -1565,7 +1560,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:106
 #: ../../docs/tutorials/platform/index.rst:2
 msgid "Platform-specific"
-msgstr ""
+msgstr "Piattaforma specifica"
 
 #: ../../docs/about/docs_changelog.rst:108
 msgid ""
@@ -1574,8 +1569,9 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:111
 #: ../../docs/tutorials/threads/index.rst:2
+#, fuzzy
 msgid "Multi-threading"
-msgstr ""
+msgstr "Multi-threading"
 
 #: ../../docs/about/docs_changelog.rst:113
 msgid ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
@@ -1599,8 +1595,9 @@ msgstr ":ref:`Shaders <doc_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/misc/index.rst:2
+#, fuzzy
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Misto"
 
 #: ../../docs/about/docs_changelog.rst:124
 msgid ":ref:`Fixing jitter and stutter <doc_jitter_stutter>`"
@@ -1622,7 +1619,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:130
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "Legale"
 
 #: ../../docs/about/docs_changelog.rst:132
 msgid ":ref:`Complying with Licenses <doc_complying_with_licenses>`"
@@ -3218,7 +3215,7 @@ msgid ""
 msgstr ""
 "Usa l'editor 2d per posizionare e ridimensionare il Pulsante e l'Etichetta "
 "così che possano assomigliare all'immagine qui sotto. Puoi impostare il "
-"testo dalla tab Inspector"
+"testo dalla tab Inspector."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:124
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
@@ -3359,6 +3356,9 @@ msgid ""
 "Select the Button node in the scene tree and then select the \"Node\" tab. "
 "Next, make sure that you have \"Signals\" selected."
 msgstr ""
+"Seleziona il nodo Button nella Scene Tree e seleziona a quel punto "
+"l'etichetta \"Node\". Successivamente assicurati di aver selezionato "
+"\"Signals\"."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:199
 msgid ""
@@ -3366,6 +3366,9 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
+"Se poi selezioni \"pressed()\" sotto \"BaseButton\" e premi il bottone "
+"\"Connect...\" in basso a destra, aprirai la finestra per la creazione delle "
+"connessioni."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:204
 msgid ""
@@ -3373,6 +3376,9 @@ msgid ""
 "node which implements the method you want to trigger (represented here as a "
 "NodePath) and the name of the method to trigger."
 msgstr ""
+"In basso a sinistra ci sono gli elementi chiave necessari per creare una "
+"connessione: un nodo che implementa il metodo che vuoi attivare (qui "
+"rappresentato con un NodePath) e il nome del metodo da attivare."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:208
 msgid ""

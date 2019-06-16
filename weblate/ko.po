@@ -33,7 +33,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-05-21 13:40+0200\n"
-"PO-Revision-Date: 2019-05-19 16:05+0000\n"
+"PO-Revision-Date: 2019-06-11 03:16+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -488,13 +488,12 @@ msgid "In short:"
 msgstr "간단히 말해서:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"개인적으로, 비영리로, 사업으로, 혹은 그 외 어떤 목적이든 당신은 무료로 Godot"
-"를 다운로드하실 수 있습니다;"
+"개인적으로, 비영리로, 사업으로, 그 외 어떤 이유든지 자유롭게 Godot를 다운로드"
+"하고 사용할 수 있습니다."
 
 #: ../../docs/about/faq.rst:14
 msgid ""
@@ -855,7 +854,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Godot 3.0부터는, glTF도 지원합니다."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -865,8 +863,8 @@ msgid ""
 msgstr ""
 "FBX SDK는 `제한적인 라이센스 <http://www.blender.org/bf/Autodesk_FBX_License."
 "rtf>`_\\ 를 갖고 있기 때문에, Godot의 `오픈 라이선스 <http://opensource.org/"
-"licenses/MIT>`_\\ 와 호환되지 않습니다. 이는 즉, FBX 지원은 아직 플러그인을 "
-"통해서만 사용하실 수 있습니다.(위의 플러그인 질문을 참고하세요.)"
+"licenses/MIT>`_\\ 와 맞지 않습니다. 이는 즉, FBX 지원은 아직 타사의 플러그인"
+"을 통해서만 사용할 수 있습니다.(아래의 플러그인 질문을 참고하세요.)"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -896,13 +894,11 @@ msgstr ""
 "지 폐쇄 소스든지 말이죠."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
-"여러분이 원하는 SDK 지원을 추가하는 방법을 알아보려면, 위 플러그인 질문을 참"
-"고하세요."
+"선택한 SDK를 지원하도록 하는지 알아보려면, 아래 플러그인 질문을 참고하세요."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -965,26 +961,25 @@ msgstr ""
 "고, 더 많은 메모리를 먹고 더 긴 로딩이 걸릴 것이니 명심하십시오."
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Godot에서 늘이기 옵션을 사용해보세요. 비율을 유지하는 2D 늘이기는 잘 작동됩니"
-"다. :ref:`doc_multiple_resolutions` 튜토리얼에서 확인해보세요."
+"Godot에서 늘이기 옵션을 사용해보세요; 크기 비율을 유지하는 2D 늘이기가 좋습니"
+"다. 사용하는 방법은 :ref:`doc_multiple_resolutions` 튜토리얼에서 확인해보세"
+"요."
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
-"최소 해상도를 선택한 다음, 게임의 화면을 다른 화면비에 맞게 늘릴 것인지 또는 "
-"검정색 막대를 사용하여 화면비를 유지할 것인지를 정하십시오. 이 또한 이전 단계"
-"에서 설명했습니다."
+"최소 해상도를 선택한 다음, 게임의 화면을 다른 화면비에 맞게 수직이나 수평으"
+"로 펴낼 것인지, 아니면 화면비를 유지하는 대신 검은 여백이 나타나게 할 것인지"
+"를 정합니다. 이 또한 :ref:`doc_multiple_resolutions`\\ 에서 설명합니다."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -1237,7 +1232,7 @@ msgstr "프로젝트 워크플로"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Custom builds for Android <doc_android_custom_build>`"
-msgstr ""
+msgstr ":ref:`안드로이드로 커스텀 빌드 <doc_android_custom_build>`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid "Best Practices:"
@@ -1361,12 +1356,11 @@ msgstr ":ref:`애니메이션 트리(AnimationTree) <doc_animation_tree>`"
 
 #: ../../docs/about/docs_changelog.rst:70 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
-msgstr ""
+msgstr "GUI"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`Containers <doc_gui_containers>`"
-msgstr ":ref:`Godot 인터페이스 <doc_godot_interfaces>`"
+msgstr ":ref:`컨테이너 <doc_godot_interfaces>`"
 
 #: ../../docs/about/docs_changelog.rst:75
 #: ../../docs/tutorials/viewports/index.rst:2
@@ -1408,30 +1402,25 @@ msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
 msgstr ":ref:`고급 포스트 프로세싱 <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid "Your First Shader Series:"
-msgstr "당신의 첫 게임"
+msgstr "당신의 첫 셰이더 시리즈:"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`What are shaders? <doc_what_are_shaders>`"
-msgstr ":ref:`Spatial 셰이더 <doc_spatial_shader>`"
+msgstr ":ref:`셰이더란 무엇일까? <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:89
-#, fuzzy
 msgid ":ref:`Your first CanvasItem shader <doc_your_first_canvasitem_shader>`"
-msgstr ":ref:`CanvasItem 셰이더 <doc_canvas_item_shader>`"
+msgstr ":ref:`안드로이드로 커스텀 빌드 <doc_android_custom_build>`"
 
 #: ../../docs/about/docs_changelog.rst:90
-#, fuzzy
 msgid ":ref:`Your first Spatial shader <doc_your_first_spatial_shader>`"
-msgstr ":ref:`Spatial 셰이더 <doc_spatial_shader>`"
+msgstr ":ref:`당신의 첫 Spatial 셰이더 <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid ""
 ":ref:`Your first Spatial shader: Part 2 <doc_your_second_spatial_shader>`"
-msgstr ":ref:`Spatial 셰이더 <doc_spatial_shader>`"
+msgstr ":ref:`당신의 첫 Spatial 셰이더: 파트 2 <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:98
 msgid "Shading Reference:"
@@ -1488,19 +1477,16 @@ msgstr ":ref:`스레드 안전 API <doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:116
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "애니메이션"
+msgstr "최적화"
 
 #: ../../docs/about/docs_changelog.rst:118
-#, fuzzy
 msgid ":ref:`Using MultiMesh <doc_using_multimesh>`"
-msgstr ":ref:`나무 만들기 <doc_making_trees>`"
+msgstr ":ref:`MultiMesh 사용하기 <doc_using_multimesh>`"
 
 #: ../../docs/about/docs_changelog.rst:119
-#, fuzzy
 msgid ":ref:`Using servers <doc_using_servers>`"
-msgstr ":ref:`나무 만들기 <doc_making_trees>`"
+msgstr ":ref:`서버 사용하기 <doc_making_trees>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1527,14 +1513,11 @@ msgstr ":ref:`GLES2와 GLES3 간의 차이 <doc_gles2_gles3_differences>`"
 #: ../../docs/about/docs_changelog.rst:130
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "법적"
 
 #: ../../docs/about/docs_changelog.rst:132
-#, fuzzy
 msgid ":ref:`Complying with Licenses <doc_complying_with_licenses>`"
-msgstr ""
-":ref:`스크립트 암호화 키로 컴파일하기 "
-"<doc_compiling_with_script_encryption_key>`"
+msgstr ":ref:`라이선스 준수하기 <doc_compiling_with_script_encryption_key>`"
 
 #: ../../docs/about/docs_changelog.rst:135
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:231
@@ -1592,9 +1575,8 @@ msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
 msgstr ":ref:`Spatial 기즈모 플러그인 <doc_spatial_gizmo_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:155
-#, fuzzy
 msgid ":ref:`Creating Android plugins <doc_android_plugin>`"
-msgstr ":ref:`Spatial 기즈모 플러그인 <doc_spatial_gizmo_plugins>`"
+msgstr ":ref:`안드로이드 플러그인 만들기 <doc_spatial_gizmo_plugins>`"
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
@@ -2516,14 +2498,13 @@ msgstr ""
 "에 영향을 줍니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Set its "
 "``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
-"또한 각각의 인스턴스들도 조절할 수 있습니다. Bounce 값을 ``0.5``\\ 로 돌려 놓"
-"고 ``Main`` 씬으로 돌아간 다음, 인스턴스된 공들 중 하나를 선택하세요. 그것의 "
+"각각의 인스턴스들도 조절할 수 있습니다. Bounce 값을 ``0``\\ 으로 돌려 놓고 "
+"``Main`` 씬으로 돌아간 다음, 인스턴스된 공 하나를 선택합니다. 공의 "
 "``Bounce`` 값을 ``1``\\ 로 맞추고 \"재생\"을 누르세요."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:113
@@ -3343,7 +3324,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "이 메서드는 매 프레임마다 호출됩니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -3351,16 +3332,18 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"``_process()``\\ 가 호출되는 비중은 응용프로그램이 초 당 몇 프레임 (FPS)으로 "
+"실행하는 지에 따라 다르다는 것을 마음에 두는 것이 중요합니다. 이 비율은 시간"
+"과 기기에 따라 다를 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"델타 매개 변수에는 이전 호출에서 ``_process()`` 로 이동한 이후 부터, 경과된 "
-"시간을 유동적인 소수점인 초 단위로 나타냅니다."
+"이 변동성을 다루는 것을 돕기 위해, ``_process()``\\ 가 호출된 이후부터 "
+"``delta`` 매개 변수는 경과된 시간을 초 단위, 즉 실수의 형태로 갖습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -3404,13 +3387,12 @@ msgstr ""
 "물리 단계를 거친 후에 실행됩니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"이것을 테스트하는 간단한 방법은, 다음 스크립트를 사용하여 단일 Label 노드로 "
-"씬을 생성하는 것입니다:"
+"``_process()`` 함수가 작동하는 것을 보는 간단한 방법은 하나의 Label 노드로 "
+"된 씬을 생성하고, 다음 스크립트를 넣는 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -3421,22 +3403,24 @@ msgid "Groups"
 msgstr "그룹"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
 "for organizing large scenes. There are two ways to do add nodes to groups. "
 "The first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"노드는 노드당 원하는 수만큼 그룹에 추가할 수 있으며, 큰 씬을 구성하는 데 유용"
-"합니다. 두가지 방법이 있습니다. 첫 번째 방법은 노드 패널 아래에 있는 그룹 버"
-"튼의 UI에서 시작합니다:"
+"Godot에서 그룹은 다른 소프트웨어에서 접했을 태그와 비슷합니다. 노드는 많은 그"
+"룹에 원하는 만큼 추가될 수 있습니다. 거대한 씬을 조직하는데 유용한 기능입니"
+"다. 노드를 그룹에 추가하는 두가지 방법이 있습니다. 첫번째는 UI에서 하는 것으"
+"로, 노드 패널 하단의 그룹 버튼을 사용합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"두번째 방법은 코드에서 하는 것입니다. 다음 코드는 씬 트리가 나타나면 "
+"``enemies``\\ 라는 그룹에 현재 노드를 추가할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -3466,7 +3450,6 @@ msgstr ""
 "의 전체 목록을 가져올 수도 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -3474,11 +3457,11 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you have some time!"
 msgstr ""
-":ref:`SceneTree<class_SceneTree>` 의 클래스는 씬 들과 노드 계층 및 노드 그룹"
-"과의 상호 작용과 같은 다양한 유용한 방법들을 제공합니다. 이를 통해 씬 들을 쉽"
-"게 전환하거나 다시 불러와서 게임을 종료하거나 일시 중지하거나 이를 해제할 수 "
-"있습니다. 그것은 심지어 흥미로운 시그널을 동반합니다. 시간이 있으면 확인해 보"
-"십시오!"
+":ref:`SceneTree <class_SceneTree>` 클래스는 씬들끼리, 노드 계층끼리, 그리고 "
+"노드의 그룹들끼리 상호작용하는 많은 유용한 메서드를 제공합니다. 이것으로 쉽"
+"게 씬을 바꾸거나 다시 불러올 수 있고, 게임을 끄거나 일시정지를 키고 끄는 행위"
+"를 할 수 있습니다. 심지어 흥미로운 시그널도 동반됩니다. 시간이 된다면 한번 확"
+"인해보세요!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:157
@@ -3545,15 +3528,14 @@ msgstr ""
 "씬 내부 또는 외부에 있는 노드를 삭제하려면 ``free()`` 를 사용해야 합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
 "노드가 삭제되면 모든 하위 노드도 삭제됩니다. 따라서 수동으로 노드를 삭제하는 "
-"것이 표시되는 것보다 훨씬 간단합니다. 기본 노드를 사용할 수 있도록 설정하면 "
-"하위 노드에 있는 다른 모든 항목이 삭제됩니다."
+"것이 나타내는 것보다 훨씬 간단합니다. 기본 노드를 삭제하면 하위 트리에 있는 "
+"다른 모든 것이 삭제됩니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
@@ -3691,17 +3673,15 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
-"시그널은 게임 객체들을 *분리하는* 도구로, 이를 활용하여 더 체계적이고 관리하"
-"기 쉬운 코드를 작성할 수 있습니다. 게임 객체가 다른 객체가 존재하도록 강요하"
-"는 대신, 한 객체가 방출한 시그널을 필요로 하는 다른 객체만 구독하거나 응답할 "
-"수 있도록 합니다."
+"시그널은 게임 객체들을 *분리하는* 방법으로, 보다 체계적이고 관리하기 좋은 코"
+"드로 만들어줍니다. 게임 객체가 항상 다른 객체를 기대하도록 강요하는 대신, 시"
+"그널을 방출해 모든 관심있는 객체들이 시그널을 받아 응답할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
@@ -3716,7 +3696,6 @@ msgid "Timer example"
 msgstr "타이머(Timer) 예제"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
@@ -3724,9 +3703,8 @@ msgid ""
 msgstr ""
 "시그널이 어떻게 작동하는지 알아보기 위해, :ref:`Timer <class_Timer>` 노드를 "
 "사용하겠습니다. Node와 두 자식 노드가 있는 씬을 만듭니다: 하나는 Timer이고 다"
-"른 하나는 :ref:`Sprite <class_Sprite>`\\ 입니다. 스프라이트의 텍스쳐로 Godot "
-"아이콘을 쓸 수도 있고, 원하는 어떤 이미지를 놓아도 좋습니다. 루트 노드에 스크"
-"립트를 붙이되, 아직 아무 코드도 넣지 마세요."
+"른 하나는 :ref:`Sprite <class_Sprite>`\\ 입니다. 씬 독에서 Node 이름을 "
+"TimerExample로 바꿉니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -3735,6 +3713,9 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Sprite의 텍스쳐에는, Godot 아이콘이나 다른 원하는 이미지를 사용할 수 있습니"
+"다. Sprite의 Texture 속성 드롭 다운 메뉴에서 ``불러오기``\\ 를 선택하면 됩니"
+"다. 스크립트를 루트 노드에 붙입니다, 하지만 아직 코드는 추가하지 마세요."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -3875,9 +3856,8 @@ msgstr ""
 "같은 방식으로 연결할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "코드를 통해 시그널을 방출하기 위해선, ``emit`` 함수를 사용합니다:"
+msgstr "코드를 통해 시그널을 방출하기 위해, ``emit_signal`` 함수를 사용합니다:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
@@ -5199,7 +5179,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1129
 msgid "Removing old creeps"
-msgstr ""
+msgstr "오래된 적들 제거하기"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
 msgid ""
@@ -5207,6 +5187,9 @@ msgid ""
 "the previous game are still on screen. It would be better if they all "
 "disappeared at the start of a new game."
 msgstr ""
+"\"Game Over\"까지 게임을 하고 새 게임을 시작해도, 전 판에서 있었던 적들이 아"
+"직 화면에 남아 있습니다.새 게임이 시작되면 적이 모두 사라지는 것이 좋을 것입"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid ""
@@ -5216,18 +5199,26 @@ msgid ""
 "``Mob`` nodes in the ``Main`` scene tree until we run the game. Instead "
 "we'll use code."
 msgstr ""
+"이미 ``HUD`` 노드에 의해 방출되는 ``start_game`` 시그널을 사용해 남아있는 적"
+"들을 제거할 것입니다. 에디터를 사용해 적에게 시그널을 연결할 수는 없는데, 게"
+"임을 실행하기 전 까진 ``Mob`` 노드가 ``Main`` 씬 트리에 없기 때운입니다. 대"
+"신 코드를 사용합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1140
 msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
 msgstr ""
+"시작하려면 ``Mob.gd``\\ 에 새 함수를 추가합니다. ``queue_free()``\\ 는 현재 "
+"프레임이 끝나는 순간 현재 노드를 제거합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
+"그런 다음 ``Main.gd``\\ 에서 ``_on_MobTimer_timeout()``\\ 의 끝에 새로운 줄"
+"을 추가합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1157
 msgid ""
@@ -5235,6 +5226,9 @@ msgid ""
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
 "its ``_on_start_game()`` function."
 msgstr ""
+"이 줄은 (``mob`` 변수에 의해 참조된) 새로운 Mob 노드로, ``HUD`` 노드의 "
+"``_on_start_game()`` 함수가 실행하여 방출하는 ``start_game`` 시그널에 반응합"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
 msgid "Finishing up"
@@ -6156,7 +6150,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "컨트롤(Control) 노드로 인터페이스를 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -6164,14 +6157,11 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
-"컴퓨터 디스플레이, 모바일 폰, 그리고 TV 화면은 모든 크기와 모양을 갖습니다. "
-"게임을 출시하려면, 당신은 다양한 화면 비율과 해상도를 지원해야 합니다. 모든 "
-"플랫폼에 적용되는 반응형 인터페이스를 만드는 것은 어려울 수 있습니다. 감사하"
-"게도, Godot의 든든한 도구들로 반응형 인터페이스를 제작하고 관리할 수 있습니"
-"다. UI를 설계하기 위해선, 당신은 Control 노드들을 사용할 겁니다. 이들은 에디"
-"터 내 초록 아이콘을 갖고 있는 노드입니다. 이들은 많기 때문에 체력 막대부터 복"
-"잡한 애플리케이션까지 만들 수 있습니다. Godot의 모든 에디터와 플러그인은 이 "
-"노드들을 사용합니다."
+"컴퓨터 디스플레이, 모바일 폰, 그리고 TV 화면은 각자의 크기와 모양을 갖습니"
+"다. 게임을 출시하려면, 게임이 다양한 화면 비율과 해상도를 지원해야 할 것입니"
+"다. 모든 플랫폼에 적용되는 반응형 인터페이스를 만드는 것은 어려울 수 있습니"
+"다. 감사하게도, Godot의 든든한 도구들로 반응형 사용자 인터페이스를 제작하고 "
+"관리할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -6183,9 +6173,8 @@ msgstr ""
 "이 강좌는 UI 디자인으로 시작할 것입니다. 당신은 이러한 것들을 배울 겁니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
-msgstr "게임 인터페이스를 제작하는 가장 유용한 다섯 가지 컨트롤 노드들"
+msgstr "게임 인터페이스를 제작하는 유용한 다섯 가지 Control 노드들"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
@@ -6203,6 +6192,9 @@ msgid ""
 "containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
 "page)."
 msgstr ""
+"다섯 가지 가장 일반적인 컨테이너 (나중에 :ref:`GUI Containers "
+"<doc_gui_containers>` 문서 페이지에서 컨테이너에 대해 더 자세하게 배울 수 있"
+"습니다)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -6219,6 +6211,10 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"UI를 설계하기 위해, Control 노드를 사용하게됩니다. 이 노드들은 에디터에서 초"
+"록색 아이콘을 갖습니다. 이들을 수 십개가 존재하며, 이걸로 라이프바에서 복잡"
+"한 애플리케이션까지 만들 수 있습니다. Godot의 에디터 자체는 Control 노드를 사"
+"용하여 만들어졌습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -6227,6 +6223,9 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"Control 노드는 다른 노드를과 함께 잘 작동하는 독특한 속성들을 갖습니다. "
+"Node2D, Sprite와 같은 다른 시각적 노드들은 이런 능력이 없습니다. 따라서 UI를 "
+"더 쉽게 작업하고 싶다면, 가능하면 Control 노드를 사용하세요."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
@@ -6330,56 +6329,51 @@ msgstr ""
 "면 Stretch Mode 속성을 설정하세요:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
-#, fuzzy
 msgid ""
 "``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
-"``Scale On Expand (compat)`` 는 오직 ``expand`` 속성이 ``true`` 로 되어 있을 "
-"때 텍스쳐가 노드의 경계 사각형에 꽉 차도록 크기를 조절하고; 그렇지 않으면 이"
-"것은 ``Keep`` 모드와 다르지 않습니다. 호환성을 되돌리기 위한 기본 모드."
+"``Scale On Expand (compat)``\\ 는 ``expand`` 속성이 ``true``\\ 로 되어 있을 "
+"때만 텍스쳐를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다; 그렇지 않으"
+"면 이것은 ``Keep`` 모드와 같습니다. 호환성을 되돌리기 위한 기본 모드."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
-msgstr "``Scale`` 은 텍스쳐가 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다"
+msgstr ""
+"``Scale``\\ 은 텍스쳐를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
-#, fuzzy
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr ""
-"``Tile`` 은 텍스쳐가 바둑판으로 배열되도록 만들고, 크기를 조절하지 않습니다"
+msgstr "``Tile``\\ 은 텍스쳐를 바둑판으로 배열하고, 크기를 조절하지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
-#, fuzzy
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
-"``Keep`` 과 ``Keep Centered`` 는 텍스쳐가 그 크기를 유지하게 합니다, 각각 경"
-"계의 좌측 상단과 중심에 위치시킵니다"
+"``Keep``\\ 과 ``Keep Centered``\\ 는 텍스쳐가 그 크기를 유지하게 합니다, 각"
+"각 텍스쳐를 경계의 좌측 상단과 중심에 두도록 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
-#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
-"``Keep Aspect`` 와 ``Keep Aspect Centered`` 는 텍스쳐의 크기를 조절하지만 그"
-"것의 크기 비율은 유지합니다, 각각 경계의 좌측 상단과 중심에 위치시킵니다"
+"``Keep Aspect``\\ 와 ``Keep Aspect Centered``\\ 는 텍스쳐의 크기를 조절하지"
+"만 그것의 크기 비율은 유지합니다, 각각 텍스쳐를 경계의 좌측 상단과 중심에 두"
+"도록 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node's limits."
 msgstr ""
-"``Keep Aspect Covered`` 는 ``Keep Aspect Centered`` 와 비슷하지만 경계 직사각"
-"형의 짧은 변 쪽은 꽉 차는 반면, 긴 변 쪽은 노드의 경계까지만 보여주고 짤립니"
-"다"
+"``Keep Aspect Covered``\\ 는 ``Keep Aspect Centered``\\ 와 비슷하지만 경계 사"
+"각형의 짧은 변 쪽은 꽉 차는 반면, 긴 변 쪽은 노드의 경계까지만 보여주고 짤립"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
 msgid ""
@@ -6591,7 +6585,6 @@ msgid "How to change the anchor"
 msgstr "앵커를 바꾸는 방법"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
-#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
@@ -6601,10 +6594,10 @@ msgid ""
 "a control node."
 msgstr ""
 "모든 속성과 마찬가지로, 인스펙터에서 4개의 앵커 포인트를 편집할 수 있습니다"
-"만, 가장 편리한 방법은 아닙니다. 당신이 컨트롤 노드를 선택할 때, 레이아웃 메"
-"뉴가 뷰포트 위의 툴바에 나타납니다. 이것은 클릭 만으로 4개의 앵커들을 모두 설"
-"정할 수 있습니다, 인스펙터의 4개의 속성을 사용하는 대신 말이죠. 레이아웃 메뉴"
-"는 오직 컨트롤 노드를 선택할 때만 보여집니다."
+"만, 가장 편리한 방법은 아닙니다. 컨트롤 노드를 선택할 때, 레이아웃 메뉴가 뷰"
+"포트 위의 툴바에 나타납니다. 여기에는 아이콘 목록이 있는데 이것으로 4개의 앵"
+"커들을 모두 설정할 수 있습니다, 인스펙터의 4개의 속성을 사용하는 대신 말이"
+"죠. 레이아웃 메뉴는 오직 컨트롤 노드를 선택할 때만 보여집니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "The layout menu in the viewport"
@@ -12125,15 +12118,14 @@ msgid "Using an external text editor"
 msgstr "외부 텍스트 에디터 사용하기"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
-#, fuzzy
 msgid ""
 "Godot can be used with an external text editor, such as Sublime Text or "
 "Visual Studio Code. To select an external text editor via the Godot editor "
 "menu: ``Editor -> Editor Settings -> Text Editor -> External``"
 msgstr ""
-"Godot에는 내장 텍스트 에디터가 있지만, 일부 개발자들은 그들에게 익숙한 텍스"
-"트 에디터를 사용하려는 경향이 있습니다. Godot는 ``에디터 -> 에디터 설정 -> "
-"Text Editor -> External`` 의 설정을 통해 이 선택을 제공합니다."
+"Sublime Text나 Visual Studio Code와 같은 외부 텍스트 편집기를 Godot에 사용할 "
+"수 있습니다. Godot 에디터 메뉴를 통해 외부 텍스트 편집기를 선택할 수 있습니"
+"다: ``에디터 -> 에디터 설정 -> Text Editor -> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:11
 msgid ""
@@ -12198,9 +12190,8 @@ msgid "Geany/Kate"
 msgstr "Geany/Kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
-#, fuzzy
 msgid "{file} -\\-line {line} -\\-column {col}"
-msgstr "{file} --line {line} --column {col}"
+msgstr "{file} -\\-line {line} -\\-column {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "Atom/Sublime Text"
@@ -12215,9 +12206,8 @@ msgid "JetBrains Rider"
 msgstr "JetBrains Rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
-#, fuzzy
 msgid "-\\-line {line} {file}"
-msgstr "--line {line} {file}"
+msgstr "-\\-line {line} {file}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 #: ../../docs/development/cpp/configuring_an_ide.rst:267
@@ -12225,21 +12215,20 @@ msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-#, fuzzy
 msgid "{project} -\\-goto {file}:{line}:{col}"
-msgstr "{project} --goto {file}:{line}:{col}"
+msgstr "{project} -\\-goto {file}:{line}:{col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "Vim (gVim)"
-msgstr ""
+msgstr "Vim (gVim)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "\"+call cursor({line}, {col})\" {file}"
-msgstr ""
+msgstr "\"+call cursor({line}, {col})\" {file}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:43
 msgid "For Visual Studio Code you will have to point to the \"code.cmd\" file."
-msgstr ""
+msgstr "Visual Studio Code 코드의 경우, \"code.cmd\" 파일을 가리켜야 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
 msgid "GDScript basics"
@@ -15598,13 +15587,12 @@ msgid "And the same callback, with type hints:"
 msgstr "그리고 타입형 힌트를 쓴 같은 콜백입니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:291
-#, fuzzy
 msgid ""
 "You’re free to replace, e.g. the ``CollisionObject2D``, with your own type, "
 "to cast parameters automatically:"
 msgstr ""
-"바꿀 자유는 있습니다, 예를 들어 자신의 타입을 가진 ``PhysicsBody2D``\\ 는 매"
-"개변수를 자동으로 캐스트 합니다:"
+"자유롭게 바꿀 수 있습니다, 예를 들어 자체 타입을 지닌 ``CollisionObject2D``"
+"\\ 는 자동으로 매개변수를 캐스트합니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:301
 msgid ""
@@ -19600,6 +19588,8 @@ msgid ""
 "Blender. Make sure that the skeleton is reset to its T-pose or default rest "
 "pose."
 msgstr ""
+"블렌더에서 메시를 내보낼 때, 메시가 본에 의해 형태가 변하지 않는 것이 중요합"
+"니다. 스켈레톤이 기존의 T 포즈나 기본 휴식 포즈로 되어있는지 확인하세요."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:22
 msgid "Bone Weights"
@@ -20847,6 +20837,9 @@ msgid ""
 "sure that the skeleton is reset to its T-pose or default rest pose before "
 "exporting with your favorite 3D editor."
 msgstr ""
+"메시를 내보낼 때, 메시가 본에 의해 형태가 변하지 않는 것이 중요합니다. 좋아하"
+"는 3D 편집기에서 메시를 내보낼 때, 스켈레톤이 기존의 T 포즈나 기본 휴식 포즈"
+"로 되어있는지 확인하세요."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:26
 msgid "Why not FBX?"
@@ -21551,29 +21544,27 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:330
 msgid "Create a VehicleBody (-vehicle)"
-msgstr ""
+msgstr "VehicleBody 만들기 (-vehicle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:332
-#, fuzzy
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleBody <class_VehicleBody>` node."
 msgstr ""
-"이 접미사를 가진 메시 노드는 내비게이션 메시로 변환될 것입니다. 기존 메시 노"
-"드는 삭제될 것입니다."
+"이 접미사를 가진 메시 노드는 :ref:`VehicleBody <class_VehicleBody>` 노드의 자"
+"식으로 가져오게 됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
 msgid "Create a VehicleWheel (-wheel)"
-msgstr ""
+msgstr "VehicleWheel 만들기 (-wheel)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:337
-#, fuzzy
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleWheel <class_VehicleWheel>` node."
 msgstr ""
-"이 접미사를 가진 메시 노드는 내비게이션 메시로 변환될 것입니다. 기존 메시 노"
-"드는 삭제될 것입니다."
+"이 접미사를 가진 메시 노드는 :ref:`VehicleWheel <class_VehicleWheel>` 노드의 "
+"자식으로 가져오게 됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:340
 msgid "Rigid Body (-rigid)"
@@ -23626,9 +23617,8 @@ msgid "Click once.. and deploy!"
 msgstr "한번 클릭하세요.. 그러면 배포합니다!"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
-#, fuzzy
 msgid "Custom builds for Android"
-msgstr "안드로이드로 내보내기"
+msgstr "안드로이드 용 커스텀 빌드"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:6
 msgid ""
@@ -23638,43 +23628,51 @@ msgid ""
 "then build it and use it as an export template every time you export the "
 "project."
 msgstr ""
+"Godot는 커스텀 빌드 안드로이드 템플릿을 사용하기 위한 설정을 제공합니다. "
+"Godot와 함께 제공되는 미리 빌드된 템플릿을 사용하는 대신, 실제로 안드로이드 "
+"Java 프로젝트를 프로젝트 폴더에 설치합니다. Godot는 이제 프로젝트를 빌드하"
+"며, 프로젝트를 내보낼 때마다 내보내기 템플릿으로 사용될 것입니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:10
 msgid "There are some reasons why you may want to do this:"
-msgstr ""
+msgstr "이렇게 하고 싶어하는 몇 가지 이유가 있습니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:12
 msgid "Modify the project before it's build"
-msgstr ""
+msgstr "빌드하기 전 프로젝트를 수정하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
 msgid "Add external SDKs that build with your project"
-msgstr ""
+msgstr "프로젝트가 있는 빌드에 외부 SDK를 추가하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:15
 msgid ""
 "Configuring custom build is a more or less straightforward process, but it "
 "may take a while to get used to how the Android SDK works."
 msgstr ""
+"커스텀 빌드를 구성하는 것은 다소 간단한 과정이지만, 안드로이드 SDK가 작동하"
+"는 방식에 익숙해지는 데는 시간이 걸릴 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:17
 msgid ""
 "Instructions will be provided as detailed as possible to do this process."
-msgstr ""
+msgstr "이 과정을 따르기 위해 가능한 디테일하게 설명하겠습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:20
 msgid "Set up the Custom Build environment"
-msgstr ""
+msgstr "커스텀 빌드 환경 설정하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:22
 msgid "Go to the Project menu, and install the *Custom Build* template:"
-msgstr ""
+msgstr "프로젝트 메뉴로 갑니다, 그리고 *Custom Build* 템플릿을 설치합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:26
 msgid ""
 "Make sure export templates are downloaded. If not, this menu will aid you to "
 "do it."
 msgstr ""
+"내보내기 템플릿을 다운로드했어야 합니다. 그렇지 않았더라도 이 메뉴가 도움을 "
+"줄 것입니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:28
 msgid ""
@@ -23684,10 +23682,15 @@ msgid ""
 "ref:`create your own add-ons<doc_android_plugin>`, or you really need to "
 "modify the project."
 msgstr ""
+"이것은 *\"res://android/build\"*\\ 에 Gradle 기반 안드로이드 프로젝트를 만듭"
+"니다, 그리고 .gdignore 파일을 *\"res://android\"*\\ 에 놓습니다, 따라서 "
+"Godot 파일 시스템은 이 폴더를 무시합니다. :ref:`자신만의 애드온을 만들기"
+"<doc_android_plugin>`\\ 나, 정말로 프로젝트를 수정해야 하는 경우가 아니면 이 "
+"파일들은 편집하지 않아도 됩니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:31
 msgid "Install the Android SDK (Command Line Version)"
-msgstr ""
+msgstr "안드로이드 SDK 설치하기 (명령 행 버전)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:33
 msgid ""
@@ -23697,10 +23700,14 @@ msgid ""
 "is easier but it requires downloading and installing Android Studio (which "
 "may require more than 1gb of storage)."
 msgstr ""
+"명령 행을 사용해서 안드로이드 SDK를 설치하려면 몇 가지 절차가 있습니다. 이 방"
+"식의 장점은 간단하며 작은 다운로드/설치 크기입니다. 그렇지만 조금 더 힘들 수 "
+"있습니다. 안드로이드 스튜디오 방식은 더 쉽지만, 안드로이드 스튜디오를 다운로"
+"드하고 설치해야 합니다 (이는 1기가보다 더 클 수도 있습니다)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:36
 msgid "Install Java"
-msgstr ""
+msgstr "Java 설치하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:38
 msgid ""
@@ -23709,11 +23716,14 @@ msgid ""
 "otherwise Oracle's Java SDK for version 8 will work. Later versions may not "
 "work for Android development."
 msgstr ""
+"안드로이드 SDK에는 Java가 포함되지 않습니다, 따라서 수동으로 설치해야 합니"
+"다. Java SDK를 설치합니다 (runtime이나 JRE가 **아닙니다**). OpenSDK 8을 추천"
+"합니다, 다른 방법으로 Oracle의 버전 8 용 Java SDK도 가능합니다. 이후 버전은 "
+"안드로이드 개발에 작동하지 않을 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:41
-#, fuzzy
 msgid "Download the command line tools"
-msgstr "명령 행에서 내보내기"
+msgstr "명령 행 도구 다운로드하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:43
 msgid ""
@@ -23722,30 +23732,40 @@ msgid ""
 "download (if you do want it, read further down for instructions for doing "
 "the same using Android Studio)."
 msgstr ""
+"안드로이드 SDK를 다운로드하기 위해 구글 웹사이트로 갑니다. 검색을 통해 *안드"
+"로이드 스튜디오* 다운로드 페이지로 갑니다. 안드로이드 스튜디오를 원한 것은 아"
+"니므로, 다운로드하지 않습니다 (원한다면, 하단에서 안드로이드 스튜디오를 사용"
+"해 같은 작업을 하는 설명을 읽으세요)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:46
 msgid ""
 "Look in that page for the *Command Line Tools*. Currently, they are listed "
 "under *Download Options*. Scroll down a bit until you see them."
 msgstr ""
+"해당 페이지에서 *Command Line Tools*\\ 를 찾아봅니다. 현재 *Download "
+"Options* 아래에 있습니다. 아래로 화면을 스크롤합니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:50
 msgid ""
 "Download the zip file for your platform, inside there will be a single "
 "*tools* folder:"
 msgstr ""
+"플랫폼에 맞는 zip 파일을 다운로드합니다, 거기에는 하나의 *tools* 폴더가 있습"
+"니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:54
 msgid ""
 "This may appear a little confusing, but be sure to follow these instructions "
 "carefully:"
-msgstr ""
+msgstr "약간 혼란스러울 수 있습니다, 그러므로 다음 설명을 주의깊게 따르세요:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:56
 msgid ""
 "Create a new folder anywhere you want named *android-sdk* (it **must** be an "
 "empty directory). On Windows,"
 msgstr ""
+"아무 위치에서 새 폴더를 만들고 *android-sdk*\\ 로 이름을 짓습니다 (**빈 디렉"
+"토리이어야 합니다). 윈도우에서는,"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:62
 msgid ""
@@ -23753,17 +23773,21 @@ msgid ""
 "The only thing in the directory you created in the previous step should be "
 "the *tools* folder with it's contents inside, like this:"
 msgstr ""
+"다음 명령이 충분합니다. 방금 다운로드한 *sdk zip 파일*\\ 의 압축을 풉니다. 이"
+"전 단계를 거치고 디렉토리에 있는 것은 파일이 들어 있는 *tools* 폴더이어야합니"
+"다, 이렇게 말입니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:72
-#, fuzzy
 msgid "Accepting the Licenses"
-msgstr "씬 설정하기"
+msgstr "라이선스 수락하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:74
 msgid ""
 "Everything would be more or less rosy up to here, but in order to even do "
 "anything, Google requires you to accept its licenses."
 msgstr ""
+"여기에서 하는 모든 것이 좋거나 나쁠 수 있습니다, 하지만 무엇을 하든 지 구글"
+"은 라이선스 수락을 요청합니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:76
 msgid ""
@@ -23772,47 +23796,57 @@ msgid ""
 "folder (instructions provided for Windows users, as Unix users are expected "
 "to understand how command line navigation works):"
 msgstr ""
+"수락하기 위해선, *sdkmanager*\\ 를 특별한 인수를 가진 명령 행에서 실행해야 합"
+"니다. sdk 폴더 내의 *tools/bin* 디렉토리로 갑니다 (윈도우 사용자를 위한 설명"
+"이며, Unix 사용자는 명령 행 내비게이션이 작동하는 방식을 알고 있다고 가정합니"
+"다):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:80
 msgid "Then open a command line window:"
-msgstr ""
+msgstr "그 후 명령 행 윈도우를 엽니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:84
 msgid "In there, manually run sdkmanager with the \"--licenses\" argument:"
-msgstr ""
+msgstr "여기서 \"--licenses\" 인수가 있는 sdkmanager를 수동으로 실행합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:88
 msgid ""
 "This will ask you to accept several licenses, just write *\"y\"* and press "
 "*enter* on every of them until it's done."
 msgstr ""
+"이것으로 몇 가지 라이선스를 수락하는 요청들이 들어옵니다, 모든 요청이 끝날 때"
+"까지 *\"y\"*\\ 를 치고 *엔터*\\ 를 누릅니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:90
 msgid ""
 "Afterwards, install the platform tools (this is needed to install *adb*):"
 msgstr ""
+"그런 다음, 플랫폼 도구를 실행합니다 (*adb*\\ 를 설치하는 데 필요합니다):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:96
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:166
-#, fuzzy
 msgid "Generating the Keystore"
-msgstr "PCK 파일 생성하기"
+msgstr "Keystore 생성하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:98
 msgid ""
 "Once *platform tools* are installed, the last step is to generate a debug "
 "keystore (this is needed to build). Go up two folders by writing:"
 msgstr ""
+"*플랫폼 도구*\\ 를 설치하면, 마지막 단계는 디버그 Keystore를 생성하는 것입니"
+"다 (빌드에 필요합니다). 다음 명령을 쳐서 두 폴더 위로 이동합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:105
 msgid "(or open a new shell on the *android-sdk* folder)."
-msgstr ""
+msgstr "(혹은 *android-sdk* 폴더에서 새 셸을 엽니다)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:107
 msgid ""
 "And you need to input the following line (on Unixes this should work out of "
 "the box, for Windows there are further instructions below):"
 msgstr ""
+"그리고 다음 문장을 입력해야 합니다 (Unix에서 즉시 실행될 것이며, 윈도우에서"
+"는 아래 추가 설명이 있습니다):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:113
 msgid ""
@@ -23820,6 +23854,9 @@ msgid ""
 "added at the beginning on the line if you use PowerShell, it's not needed "
 "for regular console)."
 msgstr ""
+"윈도우에서는, Java를 향하는 전체 경로를 제공해야 합니다 (그리고 PowerShell을 "
+"사용한다면 문장의 시작에 &를 추가해야 합니다, 일반적인 콘솔에는 필요하지 않습"
+"니다)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:115
 msgid ""
@@ -23827,16 +23864,18 @@ msgid ""
 "(by adding & and the full Java Path to keytool.exe). Again, keep in mind "
 "that you need Java installed:"
 msgstr ""
+"명확하게 하기 위해, PowerShell에서 작동하는 문장 캡쳐본이 있습니다 (&를 추가"
+"하고 keytool.exe에 대한 전체 Java 경로를 추가함). 다시 말하지만, Java가 설치"
+"되어 있어야 합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:119
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:186
 msgid ""
 "(right-click, then open the image in a new tab if this appears too small)"
-msgstr ""
+msgstr "(이미지가 너무 작으면, 우클릭하고 새 탭에서 이미지를 여세요)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:123
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:190
-#, fuzzy
 msgid "Setting up Godot"
 msgstr "Godot에서 설정하기"
 
@@ -23846,13 +23885,15 @@ msgid ""
 "Go to the *Editor Settings* and set up a few fields in *Export -> Android*. "
 "Make sure they look like the following:"
 msgstr ""
+"*에디터 설정*\\ 으로 가서 *Export -> Android*\\ 의 몇 가지 영역을 설정합니"
+"다. 다음과 같아야 합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:129
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:196
 msgid ""
 "(again, right-click, then open the image in a new tab if this appears too "
 "small)"
-msgstr ""
+msgstr "(또 이미지가 너무 작으면, 우클릭하고 새 탭에서 이미지를 여세요)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:132
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:199
@@ -23861,15 +23902,18 @@ msgid ""
 "created, or inside the Java install. For Unix users, *jarsigner* is often in "
 "\"/usr/bin\"."
 msgstr ""
+"보시다시피, 대부분의 경로는 원래 만든 *android-sdk*\\ 에 있거나 Java 내부에 "
+"있습니다. Unix 사용자의 경우, *jarsigner*\\ 는 종종 \"/usr/bin\"\\ 에 있습니"
+"다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:134
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:201
 msgid "With this, you should be all set."
-msgstr ""
+msgstr "이것으로 모두 설정되었습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:138
 msgid "Install the Android SDK (Android Studio)"
-msgstr ""
+msgstr "안드로이드 SDK 설치하기 (안드로이드 스튜디오)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:140
 msgid ""
@@ -23878,62 +23922,78 @@ msgid ""
 "up more disk space. It's also useful if you plan to develop Godot for "
 "Android (modify the Java source code) or if you plan to develop Add-Ons."
 msgstr ""
+"명령 행 도구를 통해 SDK 설치하기를 끝냈다면, 이 섹션은 편하게 넘어가세요. 안"
+"드로이드 스튜디오 경로는 더 쉽지만, 더 많은 디스크 공간을 차지합니다. 안드로"
+"이드 용 Godot를 개발하려는 계획이라면 (Java 소스 코드 수정), 혹은 애드온을 개"
+"발할 계획이라면 좋을 것입니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:143
-#, fuzzy
 msgid "Download and Install Android Studio"
-msgstr "안드로이드 SDK 다운로드하기"
+msgstr "안드로이드 스튜디오 다운로드하고 설치하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:145
 msgid ""
 "Download the latest version of Android Studio. When installing, pay "
 "attention to where the *android-sdk* directory is created."
 msgstr ""
+"최신 안드로이드 스튜디오를 다운로드합니다. 설치할 때, 어디에 *android-sdk* 디"
+"렉토리가 만들어지는 지 확인하세요."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:149
 msgid ""
 "This is funny, the path it proposes by default contains whitespace (and "
 "complains about it). It must be changed."
 msgstr ""
+"이게 재밌는 것이, 기본적으로 제안하는 경로에는 공백이 포함됩니다 (그리고 그것"
+"에 불평합니다). 이것은 바꾸어야 합니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:151
 msgid ""
 "In any case, it's better to select a different path inside your user "
 "folders. The recommended one is usually:"
 msgstr ""
+"어쨌든, 사용자 폴더 내에서 다른 경로를 선택하는 것이 좋습니다. 추천하는 경로"
+"는 보통 이렇습니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:157
 msgid ""
 "Replace *yourusername* by your actual user name. Once it's correct, select "
 "from the list above in the same screen:"
 msgstr ""
+"*yourusername* 부분을 실제 사용자 이름으로 바꿉니다. 올바르면 위와 같은 화면"
+"에서 다음을 선택하세요:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:159
-#, fuzzy
 msgid "Android SDK"
-msgstr "안드로이드"
+msgstr "Android SDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:160
 msgid "Android SDK Platform"
-msgstr ""
+msgstr "Android SDK Platform"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:162
 msgid ""
 "The rest are not needed, because the build system will fetch them itself. "
 "After selecting them, go on with the installation."
 msgstr ""
+"나머지는 필요없습니다, 빌드 시스템이 자체적으로 이들을 가져오기 때문이죠. 선"
+"택한 추 설치를 계속하세요."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:168
 msgid ""
 "You thought that by going the Android Studio way you could escape the "
 "Keystore generation, but no. It's back to haunt you."
 msgstr ""
+"안드로이드 스튜디오 방식으로는 Keystore 생성에서 벗어날 수 있다고 생각했을텐"
+"데요, 아닙니다. 다시 돌아왔습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:170
 msgid ""
 "Go to the folder where you installed android-sdk in the previous step, use "
 "File Explorer and open a command line tool there:"
 msgstr ""
+"이전 단계에서 android-sdk를 설치한 폴더로 가서, 파일 탐색기를 사용하고 거기에"
+"서 명령 행 도구를 엽니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:174
 msgid ""
@@ -23941,6 +24001,8 @@ msgid ""
 "out of the box, but on Windows it needs additional details (keep reading "
 "afterwards)."
 msgstr ""
+"실제 입력할 명령 문장은 다음과 같습니다. Unix에서 이것은 즉시 작동하지만, 윈"
+"도우에서는 추가 세부 사항이 필요합니다 (계속 읽어주세요)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:180
 msgid ""
@@ -23949,6 +24011,10 @@ msgid ""
 "for regular commandline). Don't worry, at least by using Android Studio on "
 "Windows, Java comes bundled with it."
 msgstr ""
+"윈도우에서는, Java에 대한 전체 경로를 제공해야 합니다 (그리고 PowerShell을 사"
+"용한다면, 문장의 시작 부분에 &를 추가해야 합니다, 일반 명령 행에서는 필요하"
+"지 않습니다). 걱정하지 마세요, 적어도 윈도우에서 안드로이드 스튜디오를 쓴다"
+"면, Java가 번들로 제공됩니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:182
 msgid ""
@@ -23957,16 +24023,22 @@ msgid ""
 "you use regular console). It uses a path to the Java version that comes with "
 "Android Studio:"
 msgstr ""
+"명확하게 하기 위해, PowerShell에서 작동하는 문장 캡쳐본이 있습니다 (&를 추가"
+"하고 keytool.exe에 대한 전체 Java 경로를 추가합니다, 일반 콘솔을 사용한다면 &"
+"를 제거하세요). 안드로이드 스튜디오와 함께 제공되는 Java 버전에 대한 경로를 "
+"사용합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:205
 msgid "Enabling Custom Build and Exporting"
-msgstr ""
+msgstr "커스텀 빌드를 활성화하고 내보내기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:207
 msgid ""
 "When setting up the Android project in the *Project -> Export* dialog, "
 "*custom build* needs to be enabled:"
 msgstr ""
+"*프로젝트 -> 내보내기* 대화 상자에서 안드로이드 프로젝트를 설정할 때, "
+"*custiom build*\\ 가 켜져있어야 합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:211
 msgid ""
@@ -23974,12 +24046,15 @@ msgid ""
 "the *Gradle* build system to generate fresh templates (this window will "
 "appear every time):"
 msgstr ""
+"지금부터 프로젝트를 내보내거나, 원 클릭 배포를 하면 *Gradle* 빌드 시스템으로 "
+"새로운 템플릿을 생성하게 됩니다 (매 번 이 창이 나타날 것입니다):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:215
 msgid ""
 "The templates built will be used automatically afterwards, so no further "
 "configuration is needed."
 msgstr ""
+"작성된 템플릿은 나중에 자동으로 사용되므로, 더 이상 구성할 필요가 없습니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for Windows"
@@ -24772,6 +24847,10 @@ msgid ""
 "content. This structure more or less keeps the \"World\" as the main game "
 "node."
 msgstr ""
+"더 작은 게임일수록, 더 적은 제어로 \"Game\" 싱글톤을 갖는 간단한 대안이 필요"
+"한데, :ref:`SceneTree.change_scene() <class_SceneTree_method_change_scene>` "
+"\\ 이라고 하는 이 메서드는 메인 씬의 내용물을 바꿔 넣습니다. 이 구조는 "
+"\"World\"를 메인 게임 노드로 어느정도는 유지해줍니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:300
 msgid ""
@@ -24779,6 +24858,9 @@ msgid ""
 "\", or be manually added as a direct child of the root. Otherwise, the GUI "
 "nodes would also delete themselves during scene transitions."
 msgstr ""
+"모든 GUI는 \"World\"의 일시적인 일부로, 싱글톤이 되어야 합니다, 아니면 수동으"
+"로 루트의 자식으로 추가해야 합니다. 그렇지 않으면, GUI 노드는 씬을 전환하는 "
+"동안 자신 또한 삭제됩니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:305
 msgid ""
@@ -28678,8 +28760,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:4
+#, fuzzy
 msgid "Custom drawing in 2D"
-msgstr ""
+msgstr "2D에서 사용자 임의 그리기"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:7
 #: ../../docs/tutorials/io/encrypting_save_games.rst:7
@@ -29424,6 +29507,7 @@ msgid "Generated geometry"
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:65
+#, fuzzy
 msgid ""
 "It is possible to create custom geometry by using the :ref:`ArrayMesh "
 "<class_ArrayMesh>` resource directly. Simply create your arrays and use the :"
@@ -29433,25 +29517,40 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
+":ref:`ArrayMesh <class_ArrayMesh>` 리소스를 바로 사용하여 사용자 정의 지오메"
+"트리를 만들 수 있습니다.. 간단하게 당신의 배열을 만들고 :ref:`ArrayMesh."
+"add_surface_from_arrays() <class_ArrayMesh_method_add_surface_from_arrays>` "
+"함수를 사용하세요. 또한 :ref:`SurfaceTool <class_SurfaceTool>` 도우미 클래스"
+"를 이용할 수 있습니다. 더 간단한 API와 indexing, generating normals, "
+"tangents 등을 위한 도우미를 제공합니다."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:72
+#, fuzzy
 msgid ""
 "In any case, this method is meant for generating static geometry (models "
 "that will not be updated often), as creating vertex arrays and submitting "
 "them to the 3D API has a significant performance cost."
 msgstr ""
+"어쨌든, 이 메소드는 정적 지오메트리(자주 업데이트되지 않는 모델)를 생성하기 "
+"위한 것입니다. 정점 배열을 만들고 3D API에 배열을 제출하는 것은 상당한 성능 "
+"비용이 있습니다"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
-msgstr ""
+msgstr "즉각적인 지오메트리(Immediate geometry)"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:79
+#, fuzzy
 msgid ""
 "If, instead, there is a requirement to generate simple geometry that will be "
 "updated often, Godot provides a special node, :ref:`ImmediateGeometry "
 "<class_ImmediateGeometry>`, which provides an OpenGL 1.x style immediate-"
 "mode API to create points, lines, triangles, etc."
 msgstr ""
+"대신에 자주 업데이트 되는 간단한 지오메트리를 생성해야 할 경우 Godot은 점, "
+"선, 삼각형 등을 만드는 OpenGL 1.x 스타일의 즉시-모드(immediate-mode) API를 제"
+"공하는 특수 노드 :ref:`ImmediateGeometry <class_ImmediateGeometry>` 를 제공합"
+"니다."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
@@ -43639,7 +43738,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:4
 msgid "Ray-casting"
-msgstr ""
+msgstr "광선 투사 (Ray-casting)"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:9
 msgid ""
@@ -43932,23 +44031,33 @@ msgstr ""
 "습니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
+#, fuzzy
 msgid ""
 "Open the platformer demo in Godot, and then the Robi scene. Select the "
 "``Skeleton`` node. A skeleton button appears on the top bar menu:"
 msgstr ""
+"Godot에서 플랫포머 데모를 열고 Robi 씬을 엽니다. ``Skeleton`` 노드를 선택하세"
+"요. 상단 바 메뉴에 스켈레톤 버튼이 나타납니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:27
+#, fuzzy
 msgid ""
 "Click it and select the ``Create physical skeleton`` option. Godot will "
 "generate ``PhysicalBone`` nodes and collision shapes for each bone in the "
 "skeleton and pin joints to connect them together:"
 msgstr ""
+"버튼을 클릭하고 ``Create physical skeleton`` 옵션을 선택하세요. Godot이 "
+"``PhysicalBone`` 노드와 스켈레톤의 각 뼈에 대한 충돌 모양과 핀 접합부를 생성"
+"하여 서로 연결합니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:31
+#, fuzzy
 msgid ""
 "Some of the generated bones aren't necessary: the ``MASTER`` bone for "
 "example. So we're going to clean up the skeleton by removing them."
 msgstr ""
+"생성된 뼈들 중 일부는 필요하지 않습니다. 예: ``MASTER`` 뼈. 그래서 우리는 그 "
+"뼈들을 제거함으로서 스켈레톤을 정리합니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:34
 msgid "Cleaning up the skeleton"
@@ -44029,7 +44138,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:80
 msgid "Collision layer and mask"
-msgstr ""
+msgstr "충돌 레이어와 마스크"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:82
 msgid ""

@@ -60,6 +60,7 @@
 # R. Joshua Seville <rjoshua@protonmail.com>, 2018.
 # Ramiro Garay <ramiro.sgaray@gmail.com>, 2019.
 # Renato Pereson <peresonrenato@gmail.com>, 2018.
+# Reynaldo Cruz <rcruz60@gmail.com>, 2019.
 # Ricardo Pérez <ricpelo@gmail.com>, 2018.
 # Roberto Sosa Cano <roberto.cano@gmail.com>, 2018.
 # Rodolfo Lam <r_lam@hotmail.com>, 2018.
@@ -74,8 +75,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-05-21 13:40+0200\n"
-"PO-Revision-Date: 2019-05-10 04:49+0000\n"
-"Last-Translator: eon-s <emanuel.segretin@gmail.com>\n"
+"PO-Revision-Date: 2019-06-16 20:11+0000\n"
+"Last-Translator: Javier Ocampos <xavier.ocampos@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -328,7 +329,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
-msgstr "Acerca del Motor Godot"
+msgstr "Acerca de Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -559,13 +560,12 @@ msgid "In short:"
 msgstr "En pocas palabras:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Eres libre de descargar y usar Godot para cualquier propósito: personal, sin "
-"fines de lucro, comercial u otros;"
+"Eres libre de descargar y usar Godot para cualquier propósito, personal, sin "
+"fines de lucro, comercial o de otro tipo."
 
 #: ../../docs/about/faq.rst:14
 msgid ""
@@ -947,7 +947,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "A partir de Godot 3.0, glTF es soportado."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -957,9 +956,9 @@ msgid ""
 msgstr ""
 "FBX SDK tiene una `licencia restrictiva <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, que es incompatible con la `licencia abierta "
-"<https://opensource.org/licenses/MIT>`_ proporcionada por Godot. Ya dicho "
-"eso, el soporte de FBX podría ser proveído por terceras partes como un "
-"plugin. (Veáse la pregunta sobre Plugins más arriba.)"
+"<https://opensource.org/licenses/MIT>`_ proporcionada por Godot. Dicho esto, "
+"el soporte de FBX podría ser proporcionado por terceros como un plugin. (Ver "
+"la sección de Plugins a continuación.)"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -992,13 +991,12 @@ msgstr ""
 "juego con ellas, ya sea como código abierto o como código cerrado."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
-"Para ver cómo se podría seguir ofreciendo soporte para el SDK de tu "
-"elección, consulta la sección de Plugins anterior."
+"Para ver cómo se puede seguir ofreciendo soporte para el SDK de tu elección, "
+"consulta la sección de Plugins a continuación."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -1070,18 +1068,16 @@ msgstr ""
 "consumo de memoria y el tiempo de carga."
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Utiliza las opciones de stretch en Godot, 2D stretch junto con keeping "
-"aspect es la mejor. Mira el tutorial  :ref:`doc_multiple_resolutions` sobre "
-"cómo hacer esto."
+"Usa las opciones de estiramiento en Godot; el estiramiento en 2D funciona "
+"mejor si mantienes la relación de aspecto. Consulta el tutorial :ref:"
+"`doc_multiple_resolutions` sobre cómo conseguir esto."
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -1090,8 +1086,8 @@ msgid ""
 msgstr ""
 "Determina una resolución mínima y luego decide si quieres que tu juego se "
 "extienda vertical u horizontalmente para diferentes relaciones de aspecto, o "
-"si hay una mínima y quieres que aparezcan barras negras en su lugar. Esto "
-"también se explica en el paso anterior."
+"si hay una relación de aspecto y quieres que aparezcan barras negras en su "
+"lugar. Esto también se explica en :ref:`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -1361,7 +1357,7 @@ msgstr "Flujo de trabajo del proyecto"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Custom builds for Android <doc_android_custom_build>`"
-msgstr ""
+msgstr ":ref:`Custom builds para Android <doc_android_custom_build>`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid "Best Practices:"
@@ -1490,9 +1486,8 @@ msgid "GUI"
 msgstr "GUI"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`Containers <doc_gui_containers>`"
-msgstr ":ref:`Interfaces en Godot <doc_godot_interfaces>`"
+msgstr ":ref:`Containers <doc_gui_containers>`"
 
 #: ../../docs/about/docs_changelog.rst:75
 #: ../../docs/tutorials/viewports/index.rst:2
@@ -1534,30 +1529,26 @@ msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
 msgstr ":ref:`Post procesado avanzado <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid "Your First Shader Series:"
-msgstr "Tu primer juego"
+msgstr "Tu primera serie de Shaders:"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`What are shaders? <doc_what_are_shaders>`"
-msgstr ":ref:`Spatial shaders <doc_spatial_shader>`"
+msgstr ":ref:`¿Qué son los shaders? <doc_what_are_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:89
-#, fuzzy
 msgid ":ref:`Your first CanvasItem shader <doc_your_first_canvasitem_shader>`"
-msgstr ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
+msgstr ":ref:`Tu primer shader CanvasItem <doc_your_first_canvasitem_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:90
-#, fuzzy
 msgid ":ref:`Your first Spatial shader <doc_your_first_spatial_shader>`"
-msgstr ":ref:`Spatial shaders <doc_spatial_shader>`"
+msgstr ":ref:`Tu primer shader Spatial <doc_your_first_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid ""
 ":ref:`Your first Spatial shader: Part 2 <doc_your_second_spatial_shader>`"
-msgstr ":ref:`Spatial shaders <doc_spatial_shader>`"
+msgstr ""
+":ref:`Tu primer shader Spatial: Parte 2 <doc_your_second_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:98
 msgid "Shading Reference:"
@@ -1614,19 +1605,16 @@ msgstr ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:116
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "Una optimización"
+msgstr "Optimización"
 
 #: ../../docs/about/docs_changelog.rst:118
-#, fuzzy
 msgid ":ref:`Using MultiMesh <doc_using_multimesh>`"
-msgstr ":ref:`Creando árboles <doc_making_trees>`"
+msgstr ":ref:`Uso de MultiMesh <doc_using_multimesh>`"
 
 #: ../../docs/about/docs_changelog.rst:119
-#, fuzzy
 msgid ":ref:`Using servers <doc_using_servers>`"
-msgstr ":ref:`Creando árboles <doc_making_trees>`"
+msgstr ":ref:`Uso de servidores <doc_using_servers>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1653,14 +1641,11 @@ msgstr ":ref:`Diferencias entre GLES2 y GLES3 <doc_gles2_gles3_differences>`"
 #: ../../docs/about/docs_changelog.rst:130
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "Legal"
 
 #: ../../docs/about/docs_changelog.rst:132
-#, fuzzy
 msgid ":ref:`Complying with Licenses <doc_complying_with_licenses>`"
-msgstr ""
-":ref:`Compilando un script con clave de cifrado "
-"<doc_compiling_with_script_encryption_key>`"
+msgstr ":ref:`Cumplimiento de las licencias <doc_complying_with_licenses>`"
 
 #: ../../docs/about/docs_changelog.rst:135
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:231
@@ -1723,9 +1708,8 @@ msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
 msgstr ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:155
-#, fuzzy
 msgid ":ref:`Creating Android plugins <doc_android_plugin>`"
-msgstr ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
+msgstr ":ref:`Creación de plugins para Android <doc_android_plugin>`"
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
@@ -1803,9 +1787,9 @@ msgid ""
 "To create a new project, click the ``New Project`` button on the right. Give "
 "it a name and choose an empty folder on your computer to save it."
 msgstr ""
-"Para crear un proyecto nuevo, selecciona el botón ``Proyecto nuevo`` situado "
-"a la derecha. Asígnale un nombre y selecciona una carpeta vacía en tu "
-"ordenador para guardarlo."
+"Para crear un nuevo proyecto, haz clic en el botón ``Nuevo proyecto`` a la "
+"derecha. Dale un nombre y elige una carpeta vacía en tu ordenador para "
+"guardarlo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:34
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
@@ -1818,9 +1802,9 @@ msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
-"Haga clic el botón Examinar para abrir el explorador de archivos de Godot y "
-"elija una ubicación o escriba la ruta de la carpeta en el campo Ruta del "
-"Proyecto."
+"Haz clic en el botón Examinar para abrir el explorador de archivos de Godot "
+"y selecciona una ubicación o escribe la ruta de la carpeta en el campo Ruta "
+"del proyecto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:39
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
@@ -1834,17 +1818,17 @@ msgid ""
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"Cuando veas la marca verde a la derecha, quiere decir que el motor ha "
-"detectado una carpeta vacía y se puede seleccionar ``Crear y editar``. Godot "
-"creará el proyecto y lo abrirá en el editor."
+"Cuando veas la marca verde a la derecha, significa que el engine detecta una "
+"carpeta vacía y puedes hacer clic en ``Crear y editar``. Godot creará el "
+"proyecto por ti y lo abrirá en el editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
 msgid ""
 "The next time you’ll open Godot, you’ll see your new project in the list. "
 "Double click on it to open it in the editor."
 msgstr ""
-"La próxima vez que abras Godot, verás el nuevo proyecto en la lista. Haz un "
-"doble click en el proyecto para abrirlo en el editor."
+"La próxima vez que abras Godot, verás tu nuevo proyecto en la lista. Haz "
+"doble clic sobre él para abrirlo en el editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
@@ -1886,7 +1870,7 @@ msgid ""
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
-"¡Bienvenido a Godot! Con tu proyecto abierto deberías ver la interfaz del "
+"¡Bienvenido a Godot! Con un proyecto abierto, deberías ver la interfaz del "
 "editor con la vista 3D activa. Puedes cambiar el espacio de trabajo actual "
 "en la parte superior de la interfaz. Haz clic en 2D para cambiar al espacio "
 "de trabajo 2D."
@@ -2294,9 +2278,9 @@ msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name \"New Project\":"
 msgstr ""
-"Para crear un nuevo proyecto, haz clic en la opción \"Proyecto Nuevo\". "
+"Para crear un nuevo proyecto, haz clic en la opción \"Nuevo proyecto\". "
 "Elige y crea una ruta para el proyecto y especifica el nombre del proyecto "
-"\"Proyecto Nuevo\":"
+"\"Nuevo proyecto\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 #: ../../docs/getting_started/editor/external_editor.rst:30
@@ -2474,9 +2458,9 @@ msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
-"Una vez que se abra la ventana, seleccionaremos una escena principal. "
-"Localizamos la propiedad `Applicación/Ejecutar/Escena Principal` y haremos "
-"clic en ella para seleccionar `hello.tscn'."
+"Una vez que se abra la ventana, seleccionamos una escena principal. Localiza "
+"la propiedad `Application/Run/Main Scene` y haz clic en ella para "
+"seleccionar `hello.tscn'."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
@@ -2697,15 +2681,15 @@ msgstr ""
 "guardada, los cambios en esa escena afectarán a todas las instancias."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Set its "
 "``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
-"Puedes ajustar instancias individuales. Pon el valor de nuevo en ``0.5`` y "
-"en la escena ``Main``, selecciona una de las instancias. Asigna ``1`` a "
-"``Bounce`` y presiona \"Play\"."
+"También puede ajustar instancias individuales. Vuelve a poner el valor de "
+"bounce (rebote) en ``0`` y, a continuación, en la escena ``Main``, "
+"selecciona una de las bolas instanciadas. Establece su ``Bounce`` en ``1`` y "
+"pulsa \"Play\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:113
 msgid ""
@@ -3259,7 +3243,7 @@ msgid ""
 "context menu:"
 msgstr ""
 "Haz clic con el botón derecho del ratón en el nodo Panel y selecciona \" "
-"Adjuntar Script \" en el menú contextual:"
+"Añadir Script \" en el menú contextual:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:136
 msgid ""
@@ -3394,9 +3378,9 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
-"Si luego seleccionas \"pressed()\" dentro de \"BaseButton\" y presionas el "
-"botón ``Conectar...`` en la parte inferior derecha del panel, abrirás la "
-"ventana de diálogo de conexión."
+"Si seleccionas \"pressed()\" en \"BaseButton\" y haces clic en el botón "
+"\"Conectar... \" en la parte inferior derecha, se abrirá el cuadro de "
+"diálogo de creación de la conexión."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:204
 msgid ""
@@ -3581,7 +3565,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Este método se llamará cada vez que se dibuje un frame:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -3591,14 +3575,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"El parámetro delta contiene el tiempo transcurrido en segundos, como punto "
-"flotante, desde la llamada anterior a ``_process()``."
+"Para ayudar a manejar esta variabilidad el parámetro ``delta`` contiene el "
+"tiempo transcurrido en segundos, como punto flotante, desde la llamada "
+"anterior a ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -3645,13 +3629,12 @@ msgstr ""
 "en los juegos de un solo subproceso."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Una forma sencilla de comprobar esto es crear una escena con un único nodo "
-"Label, con el siguiente script:"
+"Una forma sencilla de ver la función ``_process()`` en funcionamiento es "
+"crear una escena con un único nodo Label, con el siguiente script:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -3662,17 +3645,17 @@ msgid "Groups"
 msgstr "Grupos"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
 "for organizing large scenes. There are two ways to do add nodes to groups. "
 "The first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"Los nodos se pueden añadir a los grupos, tantos como se desee por nodo, y es "
-"una función útil para organizar escenas de gran tamaño. Hay dos maneras de "
-"hacerlo. La primera es desde la UI, desde el botón Grupos bajo el panel "
-"Nodos:"
+"Los grupos en Godot trabajan como etiquetas que podrías haber encontrado en "
+"otro software. Se puede añadir un nodo a tantos grupos como se desees. Esta "
+"es una función útil para organizar escenas de gran tamaño. Hay dos maneras "
+"de añadir nodos a los grupos. La primera es desde la interfaz de usuario, "
+"utilizando el botón Grupos en el panel Nodo:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
@@ -3709,7 +3692,6 @@ msgstr ""
 "<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -3720,8 +3702,8 @@ msgstr ""
 "La clase :ref:`SceneTree <class_SceneTree>` proporciona muchos métodos "
 "útiles, como la interacción con escenas, su jerarquía de nodos y grupos de "
 "nodos. Te permite cambiar escenas o recargarlas fácilmente, salir del juego "
-"o pausar y despausar el juego. Incluso viene con señales interesantes ¡Así "
-"que échale un vistazo si tienes tiempo!"
+"o pausar y despausar el juego. Incluso viene con señales interesantes !"
+"Compruébalo si tienes tiempo!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:157
@@ -3792,15 +3774,15 @@ msgstr ""
 "``free()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
-"Cuando un nodo se libera, también libera todos sus nodos hijos. Debido a "
-"esto, el borrado manual de nodos es mucho más sencillo de lo que parece. "
-"Libera el nodo base y todo lo demás en el subárbol desaparecerá con él."
+"Cuando se elimina un nodo, también se eliminan todos los nodos hijos. Debido "
+"a esto, eliminar manualmente los nodos es mucho más sencillo de lo que "
+"parece. Elimina el nodo base y todo lo demás en el subárbol desaparecerá con "
+"él."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
@@ -3942,43 +3924,40 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
-"Las señales son una forma de desacoplar los objetos de juego, que lleva a "
-"tener código mas organizado y mas fácil de gestionar. En vez de forzar a los "
-"objetos de juego a esperar que otros objetos siempre esten presentes, pueden "
-"emitir señales a las que cualquier objeto interesado puede suscribirse y "
-"responder."
+"Las señales son una forma de *desacoplar* los objetos del juego, lo que "
+"permite obtener un código mejor organizado y fácil de administrar. En lugar "
+"de forzar a los objetos del juego a esperar que otros objetos estén siempre "
+"presentes, pueden emitir señales a las que todos los objetos interesados "
+"puedan suscribirse y responder."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
-"Aqui debajo puedes ver algunos ejemplos de como usar señales en tus propios "
-"proyectos."
+"A continuación puedes ver algunos ejemplos de cómo puedes usar las señales "
+"en tus propios proyectos."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
 msgid "Timer example"
-msgstr "Ejemplo de temporizador"
+msgstr "Ejemplo de Timer"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
 "<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
-"Para visualizar como funcionan las señales, intentemos usando un nodo :ref:"
-"`Timer <class_Timer>`. Crea una nueva Escena con un Nodo y dos Hijos: un "
-"Timer y un :ref:`Sprite <class_Sprite>`. Puedes usar el ícono de Godot para "
-"la textura del Sprite, o cualquier otra imagen que gustes. Adjunta un Script "
-"al Nodo Raiz, pero no le agregues codigo todavia."
+"Para ver cómo funcionan las señales, intentemos usar un nodo :ref:`Timer "
+"<class_Timer>`. Creamos una nueva escena con un Node y dos hijos: un Timer y "
+"un :ref:`Sprite <class_Sprite>`. En el dock de Escenas, cambia el nombre de "
+"Node a TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -3987,6 +3966,9 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"cualquier otra imagen que desees. Para ello, selecciona ``Load`` en el menú "
+"desplegable del atributo Texture del Sprite. Agrega un script al nodo raíz, "
+"pero no le añadas ningún código todavía."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -3998,9 +3980,10 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
-"En las propiedades del nodo temporizador, selecciona la casilla ON en "
-"*Autostart*. Esto hace que el temporizador inicie automaticamente cuando se "
-"ejecuta la escena. Puedes dejar el *Wait Time* en 1 segundo."
+"En las propiedades del nodo Temporizador, marca la casilla \"On\" que "
+"aparece junto a *Autostart*. Esto hará que el temporizador se inicie "
+"automáticamente cuando se ejecute la escena. Puedes dejar el *Wait Time* en "
+"1 segundo."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:42
 msgid ""
@@ -4009,18 +3992,18 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
-"Junto a la solapa \"Inspector\" hay una solapa llamada \"Nodo\". Haz click "
-"en esta solapa y verás todas las señales que el nodo elegido puede emitir. "
-"En el caso del nodo temporizador, la que nos ocupa es \"timeout\". Esta "
-"señal es emitida cuando el temporizador llega a ``0``."
+"Junto a la pestaña \"Inspector\" hay una pestaña con el nombre \"Nodos\". "
+"Haz clic en esta pestaña y verás todas las señales que puede emitir el nodo "
+"seleccionado. En el caso del nodo Timer, el que nos ocupa es el \"timeout\". "
+"Esta señal se emite cada vez que el temporizador alcanza ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
-"Haz click en la señal \"timeout()\" y clickea \"Connect...\". Verás la "
-"siguiente ventana, donde puedes definir como quieres conectar la señal:"
+"Haz clic en la señal \"timeout()\" y en \"Connect...\". Se abrirá la "
+"siguiente ventana, donde podrás definir cómo quieres conectar la señal:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:54
 msgid ""
@@ -4029,17 +4012,17 @@ msgid ""
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
-"En el margen izquierdo, verás los nodos en la escena y puedes elegir el nodo "
-"que quieres que \"escuche\" la señal. Fijate que el nodo temporizador esta "
-"en rojo - esto *no* es un error, sino una indicacion visual de que el nodo "
-"esta emitiendo una señal. Selecciona el nodo raiz."
+"En el lado izquierdo, verás los nodos de tu escena y podrás seleccionar el "
+"nodo que quieras que \"escuche \" la señal. Hay que tener en cuenta que el "
+"nodo Timer es rojo - esto *no es* un error, pero es una indicación visual de "
+"que es el nodo el que está emitiendo la señal. Selecciona el nodo raíz."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
-"El nodo target *debe* tener un script adjunto o recibirás un mensaje de "
+"El nodo de destino *debe* tener un script adjunto o recibirá un mensaje de "
 "error."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:62
@@ -4049,36 +4032,38 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"En la parte inferior de la ventana hay un campo llamado \"Método en nodo\". "
-"Este es el nombre de la función en el script del nodo destino que quieres "
-"usar. Por defecto, Godot va a crear esta función usando "
-"``_on_<node_name>_<signal_name>`` pero se puede cambiar si asi lo desea."
+"En la parte inferior de la ventana hay un campo llamado \"Method In Node\". "
+"Es el nombre de la función del script del nodo de destino que queremos "
+"utilizar. Por defecto, Godot creará esta función usando la convención de "
+"nomenclatura ``_on_<node_name>_<signal_name>`` pero puedes cambiarla si así "
+"lo deseas."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
-msgstr "Haz click en \"Conectar\" y verás que la función se creo en el script:"
+msgstr ""
+"Haz clic en \"Conectar\" y verás que la función ha sido creada en el script:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:87
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
-"Ahora podemos reemplazar el código de relleno con cualquier código que "
-"queramos ejecutar cuando se reciba la señal. Hagamos que el Sprite parpadee:"
+"Ahora podemos reemplazar el código del placeholder con cualquier código que "
+"queramos ejecutar cuando recibamos la señal. Hagamos que el Sprite parpadee:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:111
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
-"Ejecuta la escena y verás parpadear al Sprite a cada segundo. Puedes cambiar "
-"la propiedad *Wait Time* para cambiar el resultado de este."
+"Ejecuta la escena y verás el Sprite parpadeando cada segundo. Se puede "
+"cambiar la propiedad *Wait Time* del temporizador para modificarla."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:115
 msgid "Connecting signals in code"
-msgstr "Conectar señales en código"
+msgstr "Conectar señales por código"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:117
 msgid ""
@@ -4086,17 +4071,17 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
-"También puedes puedes hacer la conexión de señal (signal connection), en "
-"código en vez de usar el editor. Esto, por lo general, es necesario cuando "
-"estás creando nodos así que no puedes usar el editor para hacer la conexión."
+"También puedes hacer la conexión de la señal por código en lugar de hacerlo "
+"con el editor. Esto suele ser necesario cuando estás instanciando nodos "
+"mediante código, por lo que no puedes usar el editor para hacer la conexión."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
-"Primero, desconecta la señal seleccionando la conexión en la pestaña \"Node"
-"\" del temporizador (Timer), y haz click en desconectar (disconnect)."
+"Primero, desconecta la señal seleccionando la conexión en la pestaña \"Nodos"
+"\" del Timer y haciendo clic en desconectar."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:126
 msgid ""
@@ -4131,9 +4116,8 @@ msgstr ""
 "podrán conectarse de la misma forma que las señales integradas del nodo."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Para emitir una señal por código, usa la función ``emit``:"
+msgstr "Para emitir una señal por código, utiliza la función ``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
@@ -4240,8 +4224,9 @@ msgid ""
 "\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
 "Este juego utiliza el modo vertical (portrait), así que tendremos que "
-"ajustar el tamaño de la ventana. Click en Proyecto -> Ajustes del proyecto -"
-"> Display -> Window y colocar \"Width\" en 480 y \"Height\" en 720."
+"ajustar el tamaño de la ventana. Haz clic en Proyecto -> Ajustes del "
+"proyecto -> Display -> Window y colocar \"Width\" en ``480`` y \"Height\" en "
+"``720``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 msgid "Organizing the project"
@@ -4287,8 +4272,8 @@ msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
-"Para comenzar, haz click en el botón \"Añadir/Crear nodo nuevo\" y agrega un "
-"nodo :ref:`Area2D <class_Area2D>` a la escena."
+"Para comenzar, haz clic en el botón \"Añadir/Crear un nuevo nodo\" y agrega "
+"un nodo :ref:`Area2D <class_Area2D>` a la escena."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid ""
@@ -4298,9 +4283,9 @@ msgid ""
 "functionality."
 msgstr ""
 "Con ``Area2D`` podemos detectar objetos que se superponen o entran en "
-"contacto con el jugador. Cambia su nombre a ``Player`` haciendo click en el "
-"nombre del nodo. Este nodo es el nodo raíz de la escena. Se pueden "
-"incorporar más nodos al jugador para agregar funcionalidad."
+"contacto con el jugador. Cambia su nombre a ``Player`` haciendo clic en el "
+"nombre del nodo. Este es el nodo raíz de la escena. Podemos añadir nodos "
+"adicionales al player para añadir funcionalidad."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:75
 msgid ""
@@ -4319,8 +4304,8 @@ msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
-"Guarda la escena. Clic en Escena -> Guardar, o presiona ``Ctrl+S`` en "
-"Windows/Linux o ``Command+S`` en Mac."
+"Guarda la escena. Haz clic en Escenas -> Guardar escena, o presiona ``Ctrl"
+"+S`` en Windows/Linux o ``Command+S`` en Mac."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:84
 msgid "For this project, we will be following the Godot naming conventions."
@@ -4475,9 +4460,9 @@ msgstr ""
 "Utilizar la palabra clave ``export`` en la primera variable ``speed`` nos "
 "permite asignar su valor desde el Inspector. Esto puede ser útil para "
 "valores que quieres ajustar como ajustas las propiedades de los nodos "
-"comunes. Selecciona el nodo ``Player`` y verás que en la sección \"Script "
+"comunes. Haz clic en el nodo ``Player`` y verás que en la sección \"Script "
 "Variables\" del Inspector aparece la nueva propiedad. Recuerda que si "
-"cambias el valor aquí, sobreescribirá el valor asignado en el script al "
+"cambias el valor aquí, sobrescribirá el valor asignado en el script al "
 "ejecutar el juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:186
@@ -4640,11 +4625,11 @@ msgid ""
 "scene can be closed by clicking ``Output`` (which should be highlighted in "
 "blue) in the lower left of the Bottom Panel."
 msgstr ""
-"Haz click en \"Play Scene\" (``F6``) y verá que puede mover el jugador a lo "
-"largo de la pantalla en todas las direcciones. La salida de la consola que "
-"se abre encima de la escena en ejecución puede ser cerrada haciendo click en "
-"``Output`` (que debería estar resaltado en azul) en la parte inferior "
-"izquierda del panel inferior."
+"Haz clic en \"Reproducir escena\" (``F6``) y confirma que puedes mover el "
+"player por la pantalla en todas las direcciones. La salida de la consola que "
+"se abre al reproducir la escena puede cerrarse haciendo clic en ``Output`` "
+"(que debe estar resaltado en azul) en la parte inferior izquierda del Panel "
+"Inferior."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:339
 msgid ""
@@ -4727,11 +4712,11 @@ msgid ""
 "detect the collision. Select the ``Player`` node and click the \"Node\" tab "
 "next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
-"Esto define una señal personalizada llamada \"hit\", la que Player emitirá "
-"cuando colisione con un enemigo. Usaremos ``Area2D`` para detectar la "
-"colisión. Selecciona el nodo ``Player`` y haz click en el panel \"Nodo\", "
-"que está junto al panel Inspector para ver la lista de señales que Player "
-"puede emitir:"
+"Esto define una señal personalizada llamada \"hit\" que nuestro player "
+"emitirá (enviará) cuando colisione con un enemigo. Usaremos ``Area2D`` para "
+"detectar la colisión. Selecciona el nodo ``Player`` y haz clic en la pestaña "
+"\"Nodos\" junto a la pestaña Inspector para ver la lista de señales que "
+"puede emitir el player:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:441
 msgid ""
@@ -4743,13 +4728,14 @@ msgid ""
 "automatically create a function in your player's script. This function will "
 "be called whenever the signal is emitted - it *handles* the signal."
 msgstr ""
-"Observa que nuestra señal personalizada \"hit\" está allí también. Como "
-"nuestros enemigos serán nodos ``RigidBody2D``, usaremos la señal "
-"``body_entered( Object body )``; esta se emitirá cuando un cuerpo (body) "
-"haga contacto con Player. Click en \"Conectar..\" y luego \"Conectar\" "
-"nuevamente en la ventana \"Confirmar Decisión\" de configuración de señales. "
-"No necesitaremos cambiar nada, Godot creará atomáticamente una función "
-"llamada ``_on_Player_body_entered`` en el script de Player."
+"Observa que nuestra señal personalizada de \"hit\" también está ahí! Como "
+"nuestros enemigos van a ser nodos ``RigidBody2D``, necesitamos la señal "
+"``body_entered( Object body )``; esta se emitirá cuando un cuerpo entre en "
+"contacto con el player. Haz clic en \"Conectar...\" y luego en \"Conectar\" "
+"de nuevo en la ventana \" Conectar señal \". No necesitamos cambiar ninguna "
+"de estas configuraciones - Godot creará automáticamente una función en el "
+"script de su player. Esta función se llamará cada vez que se emita la señal "
+"- que *manipula* la señal."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:450
 msgid ""
@@ -4824,7 +4810,7 @@ msgstr "Configuración del Nodo"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:516
 msgid "Click Scene -> New Scene and we'll create the Mob."
-msgstr "Haz click en Escena -> Nueva Escena y crearemos el Mob."
+msgstr "Haz clic en Escena -> Nueva escena y crearemos el Mob."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:518
 msgid "The Mob scene will use the following nodes:"
@@ -4867,7 +4853,7 @@ msgid ""
 msgstr ""
 "En las propiedades de :ref:`RigidBody2D <class_RigidBody2D>`, ajustar "
 "``Gravity Scale`` a ``0``, así los enemigos no caerán hacia abajo. Además, "
-"dentro de la sección ``PhysicsBody2D``, haz click en la propiedad ``Mask`` y "
+"dentro de la sección ``PhysicsBody2D``, haz clic en la propiedad ``Mask`` y "
 "marca el primer cuadro, para asegurarse que los enemigos no colisionen entre "
 "sí."
 
@@ -4981,7 +4967,7 @@ msgid ""
 "your saved ``Player.tscn``."
 msgstr ""
 "Ahora es momento de juntar todo. Crea una nueva escena y agrega un :ref:"
-"`Node <class_Node>` llamado ``Main``. Haz click en el botón \"Instanciar\" y "
+"`Node <class_Node>` llamado ``Main``. Haz clic en el botón \"Instanciar\" y "
 "selecciona la escena grabada ``Player.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:640
@@ -5081,8 +5067,8 @@ msgid ""
 "a series of three vertical dots."
 msgstr ""
 "Selecciona el botón del medio (\"Añadir Punto\") y dibuja el camino haciendo "
-"click para agregar los puntos en las esquinas como se muestra. Para tener "
-"los puntos ajustados a la rejilla, asegúrate de tener marcado \"Ajustar a "
+"clic para agregar los puntos en las esquinas como se muestra. Para tener los "
+"puntos ajustados a la rejilla, asegúrate de tener marcado \"Ajustar a "
 "cuadrícula\". Esta opción se encuentra dentro de las \"Opciones de fijado\" "
 "a la izquierda del \"candado\", aparece como tres puntos verticales."
 
@@ -5099,7 +5085,7 @@ msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
 msgstr ""
-"Después de colocar el punto ``4``, haz click en el botón \"Cerrar Curva\" y "
+"Después de colocar el punto ``4``, haz clic en el botón \"Cerrar Curva\" y "
 "la curva se completará."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:684
@@ -5144,7 +5130,7 @@ msgid ""
 "bottom of the \"Connecting Signal\" window. Add the following code, as well "
 "as a ``new_game`` function to set everything up for a new game:"
 msgstr ""
-"Luego, haz click en Player y conecta la señal ``hit``. Haremos una nueva "
+"Luego, haz clic en Player y conecta la señal ``hit``. Haremos una nueva "
 "función llamada ``game_over``, la que ejecutará lo que debe suceder cuando "
 "el juego termina. Escribe \"game_over\" en el campo \"Method In Node\" en la "
 "parte inferior de la ventana \"Confirmar decisión\" de las señales. Agrega "
@@ -5290,7 +5276,7 @@ msgid ""
 "Regular.ttf\". To use this font, do the following for each of the three "
 "``Control`` nodes:"
 msgstr ""
-"Haz click en ``ScoreLabel`` y escribe un número en el campo _Text_ del "
+"Haz clic en ``ScoreLabel`` y escribe un número en el campo _Text_ del "
 "Inspector. La fuente por defecto de los nodos ``Control`` es pequeña y no "
 "escala bien. Entre los recursos del juego hay una fuente incluida, llamada "
 "\"Xolonium-Regular.ttf\". Para usar esta fuente, haz lo siguiente en los "
@@ -5306,7 +5292,7 @@ msgid ""
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
 "font's ``Size``. A setting of ``64`` works well."
 msgstr ""
-"Haz click en la \"DynamicFont\" agregada y, dentro de \"Font Data\", elige "
+"Haz clic en la \"DynamicFont\" agregada y, dentro de \"Font Data\", elige "
 "\"Load\" y selecciona el archivo \"Xolonium-Regular.ttf\". Deberás también "
 "cambiar el ``Size`` (tamaño) de la fuente. Un valor de ``64`` funcionará "
 "bien."
@@ -5332,8 +5318,8 @@ msgid ""
 "Arrange the nodes as shown below. Click the \"Anchor\" button to set a "
 "Control node's anchor:"
 msgstr ""
-"Acomoda los nodos como se muestra debajo. Cliquea en el botón \"Disposición"
-"\" para configurar el anclaje del nodo Control:"
+"Organiza los nodos como se muestra a continuación. Haz clic en el botón "
+"\"Disposición\"para establecer el anclaje de un nodo de Control:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:922
 msgid ""
@@ -5509,8 +5495,9 @@ msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
 msgstr ""
-"Ahora está listo para jugar. Haga click en el botón \"Reproducir\". Deberás "
-"seleccionar una escena principal, selecciona ``Main.tscn``."
+"¡Ahora estás listo para jugar! Haz clic en el botón \"Reproducir el proyecto"
+"\". Se te pedirá que selecciones una escena principal, así que elige ``Main."
+"tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1129
 msgid "Removing old creeps"
@@ -5618,7 +5605,7 @@ msgid ""
 msgstr ""
 "Agrega dos nodos  :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` hijos "
 "de ``Main``. Nombre uno de ellos ``Music`` y el otro ``DeathSound``. En cada "
-"uno, haz click en la propiedad ``Stream``, selecciona \"Load\" y escoge el "
+"uno, haz clic en la propiedad ``Stream``, selecciona \"Load\" y escoge el "
 "archivo de audio correspondiente."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1194
@@ -6522,7 +6509,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Diseño de interfaces con nodos Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -6530,16 +6516,12 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
-"Pantallas de computadoras, teléfonos móviles y pantallas de televisión "
+"Las pantallas de computadora, teléfonos móviles y pantallas de televisión "
 "vienen en todas las formas y tamaños. Para distribuir un juego, tendrás que "
 "admitir diferentes proporciones y resoluciones de pantalla. Puede ser "
-"difícil crear interfaces sensibles que se adapten a todas las plataformas. "
+"difícil crear interfaces responsivas que se adapten a todas las plataformas. "
 "Afortunadamente, Godot viene con herramientas robustas para diseñar y "
-"administrar una interfaz de usuario sensible. Para diseñar tu interfaz de "
-"usuario, utilizarás los nodos de Control. Estos son los nodos con íconos "
-"verdes en el editor. Hay docenas de ellos, para crear cualquier cosa, desde "
-"barras de vida hasta aplicaciones complejas. Todo el editor y los plugins de "
-"Godot usan estos nodos."
+"administrar una Interfaz de Usuario responsiva."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -6550,7 +6532,6 @@ msgid "This guide will get you started with UI design. You will learn:"
 msgstr "Esta guía te ayudará a comenzar con el diseño de la UI. Aprenderás:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
 msgstr ""
 "Los cinco nodos de control más útiles para construir la interfaz de tus "
@@ -6704,60 +6685,54 @@ msgstr ""
 "propiedad Stretch Mode para alterar su comportamiento:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
-#, fuzzy
 msgid ""
 "``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
-"`` Scale On Expand (compat) `` escala la textura para ajustarse al "
-"rectángulo delimitador del nodo, solo si la propiedad `` expand`` es `` "
-"true``; de lo contrario, se comporta como el modo `` Keep``. Modo "
+"``Scale On Expand (compat)`` escala la textura para que se ajuste al "
+"rectángulo delimitador del nodo, sólo si la propiedad ``expand`` es "
+"``true``; de lo contrario, se comporta como el modo ``Keep``. Modo "
 "predeterminado para compatibilidad con versiones anteriores."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
 "``Scale`` escala la textura para que se ajuste al rectángulo delimitador del "
-"nodo"
+"nodo."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
-#, fuzzy
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr "``Tile`` hace que la textura se repita, pero no escalará"
+msgstr "``Tile`` hace que la textura se repita, pero no escalará."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
-#, fuzzy
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
-"``Keep`` y``Keep Centered`` fuerzan a que la textura mantenga su tamaño "
-"original, en la esquina superior izquierda, o en el centro del marco "
-"respectivamente"
+"``Keep`` y ``Keep Centered`` fuerzan a mantener la textura en su tamaño "
+"original, en la esquina superior izquierda o en el centro del marco "
+"respectivamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
-#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
-"``Keep Aspect`` y ``Keep Aspect Centered`` escala la textura pero la obliga "
-"a mantener su relación de aspecto original, en la esquina superior izquierda "
-"o en el centro del marco, respectivamente"
+"``Keep Aspect`` y ``Keep Aspect Centered`` escalan la textura pero la "
+"fuerzan a mantener su relación de aspecto original, en la esquina superior "
+"izquierda o en el centro del marco, respectivamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node's limits."
 msgstr ""
-"`` Keep Aspect Covered`` funciona igual que `` Keep Aspect Centered`` pero "
-"el lado más corto se ajusta al rectángulo delimitador y el otro a los "
-"límites del nodo"
+"``Keep Aspect Covered`` funciona igual que ``Keep Aspect Centered`` pero el "
+"lado más corto se ajusta al rectángulo delimitador y el otro a los límites "
+"del nodo."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
 msgid ""
@@ -6980,7 +6955,6 @@ msgid "How to change the anchor"
 msgstr "Cómo cambiar el anclaje"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
-#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
@@ -6992,9 +6966,9 @@ msgstr ""
 "Como cualquier otra propiedad, puedes editar los 4 puntos de anclaje en el "
 "Inspector, pero esta no es la forma más conveniente. Cuando seleccionas un "
 "nodo de control, el menú de configuración aparece encima de la ventana de "
-"visualización, en la barra de herramientas. Le da una lista de iconos para "
-"establecer los 4 anclajes con un solo clic, en lugar de usar las 4 "
-"propiedades del inspector. El menú de configuración sólo aparecerá cuando "
+"visualización, en la barra de herramientas. Te ofrece una lista de iconos "
+"para establecer los 4 anclajes con un solo clic, en lugar de utilizar las 4 "
+"propiedades del inspector. El menú de diseño sólo aparecerá cuando "
 "selecciones un nodo de control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
@@ -8750,8 +8724,9 @@ msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
-"Aparecerá un ícono de recarga junto a las propiedades que anula. Haga clic "
-"para restablecer el valor predeterminado de la escena principal."
+"Aparecerá un icono de recarga junto a las propiedades que sobrescriba. Haz "
+"clic en él para restablecer el valor al valor predeterminado de la escena "
+"principal."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:400
 msgid ""
@@ -10603,8 +10578,7 @@ msgid ""
 "Clicking the resource preview allows us to view and edit the resource's "
 "properties."
 msgstr ""
-"Haciendo click en la previsualización del recurso nos permite ver y editar "
-"sus propiedades."
+"Haz clic en la vista previa del recurso para ver y editar sus propiedades."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
 msgid ""
@@ -11719,11 +11693,11 @@ msgid ""
 "the script by clicking the ``..`` button or typing its path: ``res://Global."
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
-"El siguiente paaso es añadir este script en la lista de autoLoad. Selecciona "
-"Proyecto > Ajustes del proyecto en el menú, ve a la pestaña AutoLoad y "
-"selecciona el script haciendo click en el  ``..`` botón o escribiendo su "
-"ruta: ``res://Global.gd``. Presiona \"Añadir\" para añadirlo en la lista "
-"autoLoad:"
+"El siguiente paso es añadir este script a la lista de AutoLoad. Abre "
+"``Proyecto > Ajustes del proyecto`` desde el menú, cambia a la pestaña "
+"\"AutoLoad\" y selecciona el script haciendo clic en el botón ``..`` o "
+"escribiendo su ruta: ``res://Global.gd``. Pulsa \"Añadir\" para incluirlo en "
+"la lista de carga automática:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
 msgid ""
@@ -12849,16 +12823,15 @@ msgid "Using an external text editor"
 msgstr "Uso de un editor de texto externo"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
-#, fuzzy
 msgid ""
 "Godot can be used with an external text editor, such as Sublime Text or "
 "Visual Studio Code. To select an external text editor via the Godot editor "
 "menu: ``Editor -> Editor Settings -> Text Editor -> External``"
 msgstr ""
-"A pesar de que Godot tiene un editor de texto incorporado, algunos "
-"desarrolladores tienen la tendencia de querer usar un editor de texto con el "
-"que estén más familiarizados. Godot ofrece esta posibilidad en el apartado "
-"``Editor -> Ajustes del editor -> Text Editor -> External``"
+"Godot puede ser utilizado con un editor de texto externo, como Sublime Text "
+"o Visual Studio Code. Para seleccionar un editor de texto externo a través "
+"del menú de edición de Godot: ``Editor -> Ajustes del Editor -> Text Editor -"
+"> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:11
 msgid ""
@@ -12923,9 +12896,8 @@ msgid "Geany/Kate"
 msgstr "Geany / Kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
-#, fuzzy
 msgid "{file} -\\-line {line} -\\-column {col}"
-msgstr "{file} --line {line} --column {col}"
+msgstr "{file} -\\-line {line} -\\-column {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "Atom/Sublime Text"
@@ -12940,9 +12912,8 @@ msgid "JetBrains Rider"
 msgstr "JetBrains Rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
-#, fuzzy
 msgid "-\\-line {line} {file}"
-msgstr "--line {line} {file}"
+msgstr "-\\-line {line} {file}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 #: ../../docs/development/cpp/configuring_an_ide.rst:267
@@ -12950,9 +12921,8 @@ msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-#, fuzzy
 msgid "{project} -\\-goto {file}:{line}:{col}"
-msgstr "{project} --goto {file}:{line}:{col}"
+msgstr "{project} -\\-goto {file}:{line}:{col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "Vim (gVim)"
@@ -16469,13 +16439,12 @@ msgid "And the same callback, with type hints:"
 msgstr "Y el mismo callback con tipos especificados:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:291
-#, fuzzy
 msgid ""
 "You’re free to replace, e.g. the ``CollisionObject2D``, with your own type, "
 "to cast parameters automatically:"
 msgstr ""
-"Eres libre de reemplazar, por ejemplo, ``PhysicsBody2D` con tu propio tipo, "
-"para convertir parámetros automáticamente:"
+"Eres libre de reemplazar, por ejemplo, el ``CollisionObject2D``, con tu "
+"propio tipo, para establecer parámetros automáticamente:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:301
 msgid ""
@@ -16536,10 +16505,11 @@ msgid ""
 "corresponding line and the code won’t trigger the corresponding warning "
 "anymore:"
 msgstr ""
-"Para ignorar afvertencias específicas en un archivo, inserta un comentario "
-"especial en la forma ``#warning-ignore:warning-id``. O puedes hacer click en "
-"el link a la derecha de la descripción de la advertencia, De este modo Godot "
-"agregará la línea correspondiente y el código no mostrará más la advertencia:"
+"Para ignorar advertencias específicas en un archivo, inserta un comentario "
+"especial en el formulario ``#warning-ignore:warning-id``, o haz clic en el "
+"enlace ignorar a la derecha de la descripción de la advertencia. Godot "
+"añadirá un comentario sobre la línea correspondiente y el código ya no "
+"activará la advertencia correspondiente:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
 msgid "warning system ignore example"
@@ -17484,9 +17454,9 @@ msgid ""
 "when you call this function), simply click the Function node and check the "
 "inspector:"
 msgstr ""
-"Para editar los \"argumentos\" esta funcion puede obtener(los valores que "
-"pasan a través de él cuando llamas a esta función),  simplemente haz clic en "
-"el nodo Función y chequea en el Inspector:"
+"Para editar los \"argumentos\" que esta función puede obtener (los valores "
+"que le pasa cuando llama a esta función), simplemente haz clic en el nodo "
+"Función y comprueba el inspector:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:131
 msgid "More on that will be explained later in this document."
@@ -20442,8 +20412,7 @@ msgid ""
 msgstr ""
 "Blender sólo tiene el concepto de cuerpos rígidos \"Active\" y \"Passive\". "
 "Estos se convierten en nodos Static y RigidBody. Para crear un cuerpo "
-"cinemático, activa la casilla de verificación \"animated\" en un cuerpo "
-"\"Active\":"
+"cinemático, activa la opción \"animated\" en un cuerpo \"Active\":"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:23
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
@@ -20597,7 +20566,7 @@ msgstr "No hay diferencia entre buffer shadow y ray shadow en la exportación."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr "Malla"
+msgstr "Mesh"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -22712,26 +22681,24 @@ msgid "Create a VehicleBody (-vehicle)"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:332
-#, fuzzy
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleBody <class_VehicleBody>` node."
 msgstr ""
-"Un nodo de malla con este sufijo se convertirá en una malla de navegación. "
-"Se eliminará el nodo Mesh original."
+"Un nodo mesh con este sufijo se importará como un hijo a un nodo :ref:"
+"`VehicleBody <class_VehicleBody>`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
 msgid "Create a VehicleWheel (-wheel)"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:337
-#, fuzzy
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleWheel <class_VehicleWheel>` node."
 msgstr ""
-"Un nodo de malla con este sufijo se convertirá en una malla de navegación. "
-"Se eliminará el nodo Mesh original."
+"Un nodo mesh con este sufijo se importará como un hijo a un nodo :ref:"
+"`VehicleWheel <class_VehicleWheel>`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:340
 msgid "Rigid Body (-rigid)"
@@ -22895,9 +22862,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
 msgid "To open the export menu, click the **Export** button:"
-msgstr ""
-"Para la pantalla de exportación, haz clic en el el menu \"Proyecto>Exportar"
-"\":"
+msgstr "Para abrir el menú de exportación, haz clic en el botón **Exportar**:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
 msgid ""
@@ -22913,9 +22878,9 @@ msgid ""
 "export menu. This will open a drop-down list of platforms to choose from for "
 "an export preset."
 msgstr ""
-"Para añadir un preset, haz click en el botón `Añadir` que hay encima del "
-"panel de exportación. Esto abrirá una lista con todas la plataformas "
-"disponibles para hacer un preset de exportación."
+"Para crear un preset de exportación, haz clic en el botón **Añadir....** en "
+"la parte superior del menú de exportación. Se abrirá una lista desplegable "
+"de plataformas entre las que puedes elegir para un preset de exportación."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:79
 msgid ""
@@ -24899,12 +24864,11 @@ msgstr "¡Y listo!"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:33
 msgid "Click once.. and deploy!"
-msgstr "Haga clic una vez... y despliegue!"
+msgstr "Haga clic una vez... ¡y despliegue!"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
-#, fuzzy
 msgid "Custom builds for Android"
-msgstr "Exportación para Android"
+msgstr "Compilación personalizada para Android"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:6
 msgid ""
@@ -24916,9 +24880,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:10
-#, fuzzy
 msgid "There are some reasons why you may want to do this:"
-msgstr "Hay algunas razones por las que esto puede suceder:"
+msgstr "Hay algunas razones por las que puedes querer hacer esto:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:12
 msgid "Modify the project before it's build"
@@ -24988,9 +24951,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:41
-#, fuzzy
 msgid "Download the command line tools"
-msgstr "Exportando desde la línea de comandos"
+msgstr "Descarga las herramientas de la línea de comandos"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:43
 msgid ""
@@ -25032,9 +24994,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:72
-#, fuzzy
 msgid "Accepting the Licenses"
-msgstr "Configurando la escena"
+msgstr "Aceptación de las licencias"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:74
 msgid ""
@@ -25071,9 +25032,8 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:96
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:166
-#, fuzzy
 msgid "Generating the Keystore"
-msgstr "Consiguiendo el código fuente"
+msgstr "Generación del Keystore"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:98
 msgid ""
@@ -25110,12 +25070,13 @@ msgstr ""
 msgid ""
 "(right-click, then open the image in a new tab if this appears too small)"
 msgstr ""
+"(haz clic con el botón derecho del ratón y, a continuación, abre la imagen "
+"en una nueva pestaña si es demasiado pequeña.)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:123
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:190
-#, fuzzy
 msgid "Setting up Godot"
-msgstr "Instalándolo en Godot"
+msgstr "Configurando Godot"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:125
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:192
@@ -25130,6 +25091,8 @@ msgid ""
 "(again, right-click, then open the image in a new tab if this appears too "
 "small)"
 msgstr ""
+"(nuevamente, haz clic con el botón derecho del ratón y abre la imagen en una "
+"nueva pestaña si es demasiado pequeña)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:132
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:199
@@ -25157,9 +25120,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:143
-#, fuzzy
 msgid "Download and Install Android Studio"
-msgstr "Descargar el SDK de Android"
+msgstr "Descargar e instalar Android Studio"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:145
 msgid ""
@@ -25186,9 +25148,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:159
-#, fuzzy
 msgid "Android SDK"
-msgstr "Android"
+msgstr "Android SDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:160
 msgid "Android SDK Platform"
@@ -25329,8 +25290,8 @@ msgid ""
 msgstr ""
 "Después de descargar, necesitarás indicarle a Godot la ruta al ejecutable de "
 "rcedit en tu computadora. Ve a **Editor → Ajustes del Editor → Export → "
-"Windows**. Clic en el botón con ícono de carpeta en la entrada **rcedit**. "
-"Navega y selecciona el ejecutable de rcedit."
+"Windows**. Haz clic en el botón con ícono de carpeta en la entrada "
+"**rcedit**. Navega y selecciona el ejecutable de rcedit."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:44
 msgid ""
@@ -27466,11 +27427,12 @@ msgid ""
 "how fast or slow time advances, this is the right place. Recurring kinematic "
 "and object transform operations should execute here."
 msgstr ""
-"Utiliza ``physics_process`` cuando necesitas un delta tiempo independiente "
-"del framerate entre frames. Si el código necesita actualizaciones "
-"consistentes a lo largo del tiempo independientemente de cuán rápido o lento "
-"avanza el tiempo, este es el lugar correcto. Operaciones en transforms de "
-"objectos o cuerpos cinemáticos deben ejecutarse aquí."
+"Utiliza ``_physics_process`` cuando necesites un tiempo delta independiente "
+"de la velocidad de cuadros entre fotogramas. Si el código necesita "
+"actualizaciones constantes a lo largo del tiempo, independientemente de lo "
+"rápido o lento que avance el tiempo, este es el lugar indicado. Las "
+"operaciones cinemáticas recurrentes y de transformación de objetos deben "
+"ejecutarse aquí."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:102
 msgid ""
@@ -28971,8 +28933,9 @@ msgid ""
 "If you accidentally place a tile somewhere you don't want it to be, you can "
 "delete it with ``RMB`` (the right mouse button) while in the tilemap editor."
 msgstr ""
-"Si se coloca accidentalmente un tile en un lugar no deseado, se puede "
-"eliminar con ``click derecho`` mientras se está editando el tilemap."
+"Si accidentalmente colocas una tile en un lugar que no deseas que esté, "
+"puedes eliminarlo con ``RMB`` (el botón derecho del ratón) mientras estás en "
+"el editor de tilemaps."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:141
 #, fuzzy
@@ -29313,7 +29276,7 @@ msgid ""
 msgstr ""
 "Puedes hacer que Godot genere un rectángulo de visibilidad automáticamente "
 "usando la barra de herramientas en la parte superior de la vista 2D. Para "
-"esto, selecciona el nodo Particles2D y haz click en ``Partículas > Generar "
+"esto, selecciona el nodo Particles2D y haz clic en ``Partículas > Generar "
 "rectángulo de visibilidad ``. Godot simulará el nodo Particles2D emitiendo "
 "partículas por algunos segundos y creará un rectángulo que se ajuste a la "
 "superficie ocupada por las partículas."
@@ -29600,6 +29563,8 @@ msgid ""
 "Once you click \"OK\", the mask will be generated and set to the "
 "ParticlesMaterial, under the ``Emission Shape`` section:"
 msgstr ""
+"Una vez que hagas clic en \"OK\", la máscara se generará y se ajustará a "
+"ParticlesMaterial, en la sección ``Emission Shape``:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:339
 msgid ""
@@ -29687,7 +29652,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:37
 msgid "Add a script to the kinematic body and add the following code:"
-msgstr "Agrega un script al KinematicBody2D e incluya el siguiente código:"
+msgstr "Añade un script al cuerpo cinemático y agrega el siguiente código:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:101
 msgid ""
@@ -29795,7 +29760,7 @@ msgid ""
 "the screen will cause the player to move to the target location."
 msgstr ""
 "Este último ejemplo utiliza sólo el ratón para controlar el personaje. "
-"Haciendo click en la pantalla ocasiona que el jugador se mueva a la posición "
+"Haciendo clic en la pantalla ocasiona que el jugador se mueva a la posición "
 "indicada."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:335
@@ -29924,7 +29889,7 @@ msgid ""
 msgstr ""
 "Lo siguiente es la luz propiamente dicha (`light.png <https://raw."
 "githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
-"lights_and_shadows/light.png>`_). Si haces click en el link, notarás lo "
+"lights_and_shadows/light.png>`_). Si haces clic en el link, notarás lo "
 "grande que es. La imagen usada para la luz debe cubrir la misma área que se "
 "quiere afectar por la luz. Esta imagen es 1024x1024, así que se usará para "
 "cubrir 1024x1024 pixeles en el juego."
@@ -30085,7 +30050,7 @@ msgid ""
 "By default shadows are turned off. To turn them on click on the :ref:`Light "
 "<class_Light2D>` and under the Shadows section check ``Enabled``."
 msgstr ""
-"Por defecto, las sombras están apagadas. Para encenderlas debes hacer click "
+"Por defecto, las sombras están apagadas. Para encenderlas debes hacer clic "
 "en el nodo :ref:`Light <class_Light2D>`  y en la sección Shadows marcar "
 "``Enabled``."
 
@@ -31035,6 +31000,8 @@ msgid ""
 "Click on the new SpriteFrames resource and you'll see a new panel appear at "
 "the bottom of the editor window:"
 msgstr ""
+"Haz clic en el nuevo recurso SpriteFrames y verás que aparece un nuevo panel "
+"en la parte inferior de la ventana del editor:"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:56
 msgid ""
@@ -31090,6 +31057,9 @@ msgid ""
 "Right-click the image and choose \"Save Image As\" to download, then copy "
 "the image into your project folder."
 msgstr ""
+"Haz clic con el botón derecho del ratón en la imagen y selecciona \"Guardar "
+"imagen como\" para descargarla, luego copia la imagen en la carpeta de tu "
+"proyecto."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:104
 msgid ""
@@ -37289,6 +37259,8 @@ msgid ""
 "All of the code in ``process_movement`` is exactly the same as the movement "
 "code from the Kinematic Character demo!"
 msgstr ""
+"¡Todo el código en ``process_movement`` es exactamente igual que el código "
+"de movimiento de la demo de Personaje Cinemático!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:647
 msgid ""
@@ -37509,6 +37481,8 @@ msgid ""
 "At this point we've recreated the Kinematic character demo from first person "
 "perspective with sprinting and a flash light!"
 msgstr ""
+"¡En este punto hemos recreado la demo del Personaje Cinemático desde una "
+"perspectiva en primera persona con sprint y una luz de flash!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:845
 msgid ""
@@ -45778,7 +45752,7 @@ msgstr ""
 "Los cuerpos tipo :ref:`KinematicBody2D <class_KinematicBody2D>` detectan "
 "colisiones con otros cuerpos pero no son afectados por propiedades físicas "
 "como gravedad o fricción, deben ser controlados por el usuario mediante "
-"código. El motor de física no moverá este tipo de cuerpos."
+"código. El motor de física no moverá un cuerpo cinemático."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:293
 msgid ""
@@ -45788,16 +45762,16 @@ msgid ""
 "if a collision is detected with another body. After the body has collided, "
 "any collision response must be coded manually."
 msgstr ""
-"Cuando se mueve un KinematicBody2D, no debes ajustar su propiedad "
-"``position`` directamente. En su lugar, utiliza los métodos "
-"``move_and_collide()`` o ``move_and_slide()``, estos métodos mueven el "
-"cuerpo a lo largo de un vector dado y harán que se detenga si se detecta una "
-"colisión con otro cuerpo. Después de que el cuerpo ha colisionado, cualquier "
-"respuesta de colisión debe ser codificada manualmente."
+"Al mover un cuerpo cinemático, no se debe establecer su ``position`` "
+"directamente. En su lugar, se utilizan los métodos ``move_and_collide()`` o "
+"``move_and_slide()``. Estos métodos mueven el cuerpo a lo largo de un vector "
+"determinado, y se detendrá inmediatamente si se detecta una colisión con "
+"otro cuerpo. Después de que el cuerpo haya colisionado, cualquier respuesta "
+"de colisión debe ser programada manualmente."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:300
 msgid "Kinematic collision response"
-msgstr "Respuesta de colisiones de KinematicBody2D"
+msgstr "Respuesta de colisión cinemática"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:302
 msgid ""
@@ -46039,7 +46013,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:20
 msgid "What is a kinematic body?"
-msgstr "¿Qué es un KinematicBody2D?"
+msgstr "¿Qué es un cuerpo cinemático?"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:22
 msgid ""
@@ -46092,8 +46066,8 @@ msgid ""
 "Kinematic body movement should only be done in the ``_physics_process()`` "
 "callback."
 msgstr ""
-"El movimiento de KinematicBody2D debe hacerse solamente en la función "
-"interna ``_physics_process()``."
+"El movimiento del cuerpo cinemático sólo debe realizarse en la llamada de "
+"retorno ``_physics_process()``."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:43
 msgid ""
@@ -46941,7 +46915,7 @@ msgid ""
 "of skill and understanding of physics engines (or a lot of patience with "
 "trial and error)."
 msgstr ""
-"Sí, el nombre suena extraño. \"Personaje cinemático\". ¿Qué es eso? La razón "
+"Sí, el nombre suena extraño. \"Personaje Cinemático\". ¿Qué es eso? La razón "
 "es que cuando aparecieron los motores de físicas, fueron llamados motores de "
 "\"Dinámicas\" (porque tratan principalmente con respuestas de colisiones). "
 "Se llevaron a cabo muchos intentos para crear un controlador de personajes "
@@ -47019,13 +46993,13 @@ msgid ""
 "in a more predictable way than using regular process, which might have "
 "spikes or lose precision if the frame rate is too high or too low."
 msgstr ""
-"Para manejar la lógica de un personaje o cuerpo cinemático (kinematic body), "
-"siempre se aconseja utilizar el proceso de la física, ya que es llamado "
-"antes del paso de la física y su ejecución está sincronizada con el servidor "
-"de física, también siempre es llamado la misma cantidad de veces por "
-"segundo. Esto hace que la física y el cálculo de movimiento funcionen de una "
-"manera más predecible que el proceso normal, que puede tener picos o perder "
-"precisión si la frecuencia de imagen es demasiado alta o demasiado baja."
+"Para manejar la lógica de un personaje o cuerpo cinemático, siempre se "
+"aconseja utilizar el proceso de la física, ya que es llamado antes del paso "
+"de la física y su ejecución está sincronizada con el servidor de física, "
+"también siempre es llamado la misma cantidad de veces por segundo. Esto hace "
+"que la física y el cálculo de movimiento funcionen de una manera más "
+"predecible que el proceso normal, que puede tener picos o perder precisión "
+"si la frecuencia de imagen es demasiado alta o demasiado baja."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:81
 msgid ""
