@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:4
 msgid "High dynamic range"
-msgstr ""
+msgstr "High dynamic range"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:7
 msgid "Introduction"
@@ -32,6 +32,10 @@ msgid ""
 "ready for integration!\" then goes into the game, lighting is setup and the "
 "game runs."
 msgstr ""
+"Normalement, un artiste fait toute la modélisation 3D, puis toutes les "
+"textures, regarde son modèle d'apparence impressionnant dans le DCC 3D et "
+"dit \"c'est fantastique, prêt pour l'intégration\", puis va dans le jeu, "
+"l'éclairage est installé et le jeu fonctionne."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:14
 msgid ""
@@ -39,6 +43,10 @@ msgid ""
 "instead of dealing with colors that go from black to white (0 to 1), we use "
 "colors whiter than white (for example, 0 to 8 times white)."
 msgstr ""
+"Alors, à quel moment toute cette histoire de HDR entre-t-elle en jeu ? "
+"L'idée est qu'au lieu de traiter les couleurs qui vont du noir au blanc (0 à "
+"1), nous utilisons des couleurs plus blanches que le blanc (par exemple, 0 à "
+"8 fois le blanc)."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:18
 msgid ""
@@ -46,6 +54,9 @@ msgid ""
 "light (generally 1.0) is set to 5.0. The whole scene will turn very bright "
 "(towards white) and look horrible."
 msgstr ""
+"Pour être plus pratique, imaginez que dans une scène régulière, l'intensité "
+"d'une lumière (généralement 1.0) est réglée à 5.0. Toute la scène deviendra "
+"très lumineuse (vers le blanc) et aura l'air horrible."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:22
 msgid ""
@@ -54,6 +65,11 @@ msgid ""
 "back to normal ranges. This last operation is called tone-mapping. Finally, "
 "we are at a similar place from where we started:"
 msgstr ""
+"Ensuite, la luminance de la scène est calculée en faisant la moyenne de la "
+"luminance de chaque pixel de la scène, et cette valeur est utilisée pour "
+"ramener la scène à des plages normales. Cette dernière opération est appelée "
+"tone-mapping. Enfin, nous nous trouvons à un endroit similaire à celui où "
+"nous avons commencé :"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:30
 msgid ""
@@ -62,6 +78,10 @@ msgid ""
 "change while you move through the world, allowing situations like this to "
 "happen:"
 msgstr ""
+"Sauf que la scène est plus contrastée parce qu'il y a une plus grande plage "
+"lumineuse en jeu. À quoi tout cela sert-il ? L'idée est que la luminance de "
+"la scène va changer pendant que vous vous déplacez dans le monde, permettant "
+"à des situations comme celle-ci de se produire :"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:37
 msgid ""
@@ -69,10 +89,13 @@ msgid ""
 "buffer depending on the pixel luminance. This allows for more realistic "
 "light bleeding effects in the scene."
 msgstr ""
+"En outre, il est possible de définir une valeur seuil à envoyer au tampon "
+"lumineux en fonction de la luminance des pixels. Cela permet d'obtenir des "
+"effets de saignement de lumière plus réalistes dans la scène."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:42
 msgid "Linear color space"
-msgstr ""
+msgstr "Espace colorimétrique linéaire"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:44
 msgid ""
@@ -81,6 +104,10 @@ msgid ""
 "art on the screen too, so their art has an implicit gamma curve applied to "
 "it."
 msgstr ""
+"Le problème avec cette technique est que les écrans d'ordinateur appliquent "
+"une courbe gamma pour mieux s'adapter à la façon dont l'œil humain voit. Les "
+"artistes créent aussi leur art à l'écran, de sorte qu'une courbe gamma "
+"implicite s'applique à leur art."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:49
 msgid ""
@@ -88,6 +115,10 @@ msgid ""
 "\"sRGB\". All visual content that people have on their computers or download "
 "from the internet (such as pictures, movies, etc.) is in this colorspace."
 msgstr ""
+"L’espace colorimétrique où existent les images créées sur les moniteurs "
+"d’ordinateur est appelé «sRGB». Tout le contenu visuel que les gens ont sur "
+"leurs ordinateurs ou télécharge à partir d’Internet (tels que des images, "
+"des films, etc.) est dans cet espace couleur."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:56
 msgid ""
@@ -95,20 +126,27 @@ msgid ""
 "values to adjust the luminance and exposure to different light ranges, and "
 "this curve gets in the way, as we need colors in linear space for this."
 msgstr ""
+"Les mathématiques du HDR exigent que nous multipliions la scène par "
+"différentes valeurs pour ajuster la luminance et l'exposition à différentes "
+"plages de lumière, et cette courbe est un obstacle, car nous avons besoin "
+"pour cela de couleurs dans l'espace linéaire."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:62
 msgid "Linear color space & asset pipeline"
-msgstr ""
+msgstr "Espace couleur linéaire et pipeline de ressource"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:64
 msgid ""
 "Working in HDR is not just pressing a switch. First, imported image assets "
 "must be converted to linear space on import. There are two ways to do this:"
 msgstr ""
+"Travailler en HDR n'est pas seulement appuyer sur un bouton. Tout d'abord, "
+"les images importées doivent être converties en espace linéaire lors de "
+"l'importation. Il y a deux façons de le faire :"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:69
 msgid "sRGB -> linear conversion on image import"
-msgstr ""
+msgstr "sRGB -> conversion linéaire lors de l'importation d'images"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:71
 msgid ""
@@ -119,14 +157,21 @@ msgid ""
 "the human eye. These textures might later be compressed too, which makes the "
 "problem worse."
 msgstr ""
+"C'est la façon la plus compatible d'utiliser les ressources de l'espace "
+"linéaire, et elle fonctionnera partout, y compris sur tous les appareils "
+"mobiles. Le principal problème est la perte de qualité, car le sRGB existe "
+"pour éviter ce même problème. Utiliser 8 bits par canal pour représenter les "
+"couleurs linéaires est inefficace du point de vue de l'œil humain. Ces "
+"textures peuvent aussi être compressées plus tard, ce qui aggrave le "
+"problème."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:78
 msgid "In any case, though, this is the easy solution that works everywhere."
-msgstr ""
+msgstr "Quoi qu'il en soit, c'est la solution facile qui fonctionne partout."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:81
 msgid "Hardware sRGB -> linear conversion"
-msgstr ""
+msgstr "Hardware sRGB-> conversion linéaire"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:83
 msgid ""
@@ -136,10 +181,16 @@ msgid ""
 "do no support it, or do not support it on compressed texture format (iOS for "
 "example)."
 msgstr ""
+"C'est la façon la plus correcte d'utiliser les ressources dans l'espace "
+"linéaire, car l'échantillonneur de texture sur le GPU effectuera la "
+"conversion après avoir lu le texel en virgule flottante. Cela fonctionne "
+"bien sur PC et consoles, mais la plupart des appareils mobiles ne le "
+"supportent pas, ou ne le supportent pas au format texture compressé (iOS par "
+"exemple)."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:90
 msgid "Linear -> sRGB at the end"
-msgstr ""
+msgstr "Linéaire -> sRGB à la fin"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:92
 msgid ""
@@ -147,6 +198,10 @@ msgid ""
 "converted back to sRGB. To do this, simply enable sRGB conversion in the "
 "current :ref:`Environment <class_Environment>` (more on that below)."
 msgstr ""
+"Une fois le rendu terminé, l'image rendue dans l'espace linéaire doit être "
+"convertie en sRGB. Pour ce faire, il suffit d'activer la conversion sRGB "
+"dans le fichier courant :ref:`Environment <class_Environment>` (plus "
+"d'informations à ce sujet ci-dessous)."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:96
 msgid ""
@@ -154,10 +209,14 @@ msgid ""
 "be **both** enabled. Failing to enable one of them will result in horrible "
 "visuals suitable only for avant-garde experimental indie games."
 msgstr ""
+"Gardez à l'esprit que les conversions sRGB -> Linéaire et Linéaire -> sRGB "
+"doivent toujours être **toutes les deux** activées. Si l'une d'entre elles "
+"n'est pas activée, il en résultera d'horribles visuels qui ne conviendront "
+"qu'aux jeux indépendants expérimentaux d'avant-garde."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:102
 msgid "Parameters of HDR"
-msgstr ""
+msgstr "Paramètres de HDR"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:104
 msgid ""
@@ -166,16 +225,22 @@ msgid ""
 "<class_WorldEnvironment>` node or set in a camera. There are many parameters "
 "for HDR:"
 msgstr ""
+"HDR se trouve dans la ressource :ref:`Environnement <class_Environment>`. On "
+"les trouve la plupart du temps dans un nœud :ref:`WorldEnvironment "
+"<class_WorldEnvironment>` ou dans une caméra. Il existe de nombreux "
+"paramètres pour le HDR :"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:112
 msgid "ToneMapper"
-msgstr ""
+msgstr "ToneMapper"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:114
 msgid ""
 "The ToneMapper is the heart of the algorithm. Many options for tonemappers "
 "are provided:"
 msgstr ""
+"Le ToneMapper est le cœur de l'algorithme. De nombreuses options sont "
+"disponibles pour les tonemappers :"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:117
 msgid ""
@@ -183,26 +248,33 @@ msgid ""
 "brightness, but if the differences in light are too big, it will cause "
 "colors to be too saturated."
 msgstr ""
+"**Linear:**Le tonemapper le plus simple. Il fait son travail de réglage de "
+"la luminosité de la scène, mais si les différences de lumière sont trop "
+"grandes, les couleurs seront trop saturées."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:120
 msgid "**Log:** Similar to linear but not as extreme."
-msgstr ""
+msgstr "**Log:**Semblable à linéaire mais pas aussi extrême."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:121
 msgid ""
 "**Reinhardt:** Classical tonemapper (modified, so it will not desaturate as "
 "much)"
 msgstr ""
+"**Reinhardt:** Tonemapper classique (modifié, donc il ne désaturera pas "
+"autant)"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:123
 msgid ""
 "**ReinhardtAutoWhite:** Same as above, but uses the max scene luminance to "
 "adjust the white value."
 msgstr ""
+"**ReinhardtAutoWhite:** Comme ci-dessus, mais utilise la luminance maximale "
+"de la scène pour régler la valeur du blanc."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:127
 msgid "Exposure"
-msgstr ""
+msgstr "Exposition"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:129
 msgid ""
@@ -210,59 +282,72 @@ msgid ""
 "enters the camera. Higher values will result in a brighter scene, and lower "
 "values will result in a darker scene."
 msgstr ""
+"Le même paramètre d'exposition que pour les appareils photo réels. Contrôle "
+"la quantité de lumière qui pénètre dans la caméra. Des valeurs plus élevées "
+"se traduiront par une scène plus claire et des valeurs plus faibles par une "
+"scène plus sombre."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:134
 msgid "White"
-msgstr ""
+msgstr "Blanc"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:136
 msgid "Maximum value of white."
-msgstr ""
+msgstr "Valeur maximale du blanc."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:139
 msgid "Glow threshold"
-msgstr ""
+msgstr "Seuil de lueur"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:141
 msgid ""
 "Determines above which value (from 0 to 1 after the scene is tonemapped) "
 "light will start bleeding."
 msgstr ""
+"Détermine au-dessus de quelle valeur (de 0 à 1 après que la scène soit "
+"tonemappée) la lumière commencera à saigner."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:145
 msgid "Glow scale"
-msgstr ""
+msgstr "Échelle de lueur"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:147
 msgid "Determines how much light will bleed."
-msgstr ""
+msgstr "Détermine la quantité de lumière qui saignera."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:150
 msgid "Min luminance"
-msgstr ""
+msgstr "Luminosité minimale"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:152
 msgid ""
 "Lower bound value of light for the scene at which the tonemapper stops "
 "working. This allows dark scenes to remain dark."
 msgstr ""
+"Valeur limite inférieure de la lumière de la scène à laquelle le tonemapper "
+"s'arrête de fonctionner. Ceci permet aux scènes sombres de rester sombres."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:156
 msgid "Max luminance"
-msgstr ""
+msgstr "Luminance maximale"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:158
 msgid ""
 "Upper bound value of light for the scene at which the tonemapper stops "
 "working. This allows bright scenes to remain saturated."
 msgstr ""
+"Valeur limite supérieure de la lumière de la scène à laquelle le tonemapper "
+"cesse de fonctionner. Cela permet aux scènes lumineuses de rester saturées."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:162
 msgid "Exposure adjustment speed"
-msgstr ""
+msgstr "Vitesse d'ajustement de l'exposition"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:164
 msgid ""
 "Auto-exposure will change slowly and will take a while to adjust (like in "
 "real cameras). Bigger values mean faster adjustment."
 msgstr ""
+"L'exposition automatique changera lentement et prendra un certain temps pour "
+"s'ajuster (comme dans les appareils photo réels). Plus les valeurs sont "
+"élevées, plus le réglage est rapide."

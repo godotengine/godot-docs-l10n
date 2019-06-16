@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,17 +46,15 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
-"시그널은 게임 객체들을 *분리하는* 도구로, 이를 활용하여 더 체계적이고 관리하"
-"기 쉬운 코드를 작성할 수 있습니다. 게임 객체가 다른 객체가 존재하도록 강요하"
-"는 대신, 한 객체가 방출한 시그널을 필요로 하는 다른 객체만 구독하거나 응답할 "
-"수 있도록 합니다."
+"시그널은 게임 객체들을 *분리하는* 방법으로, 보다 체계적이고 관리하기 좋은 코"
+"드로 만들어줍니다. 게임 객체가 항상 다른 객체를 기대하도록 강요하는 대신, 시"
+"그널을 방출해 모든 관심있는 객체들이 시그널을 받아 응답할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
@@ -71,7 +69,6 @@ msgid "Timer example"
 msgstr "타이머(Timer) 예제"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
@@ -79,9 +76,8 @@ msgid ""
 msgstr ""
 "시그널이 어떻게 작동하는지 알아보기 위해, :ref:`Timer <class_Timer>` 노드를 "
 "사용하겠습니다. Node와 두 자식 노드가 있는 씬을 만듭니다: 하나는 Timer이고 다"
-"른 하나는 :ref:`Sprite <class_Sprite>`\\ 입니다. 스프라이트의 텍스쳐로 Godot "
-"아이콘을 쓸 수도 있고, 원하는 어떤 이미지를 놓아도 좋습니다. 루트 노드에 스크"
-"립트를 붙이되, 아직 아무 코드도 넣지 마세요."
+"른 하나는 :ref:`Sprite <class_Sprite>`\\ 입니다. 씬 독에서 Node 이름을 "
+"TimerExample로 바꿉니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -90,6 +86,9 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Sprite의 텍스쳐에는, Godot 아이콘이나 다른 원하는 이미지를 사용할 수 있습니"
+"다. Sprite의 Texture 속성 드롭 다운 메뉴에서 ``불러오기``\\ 를 선택하면 됩니"
+"다. 스크립트를 루트 노드에 붙입니다, 하지만 아직 코드는 추가하지 마세요."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -230,9 +229,8 @@ msgstr ""
 "같은 방식으로 연결할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "코드를 통해 시그널을 방출하기 위해선, ``emit`` 함수를 사용합니다:"
+msgstr "코드를 통해 시그널을 방출하기 위해, ``emit_signal`` 함수를 사용합니다:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:208
 msgid "Conclusion"

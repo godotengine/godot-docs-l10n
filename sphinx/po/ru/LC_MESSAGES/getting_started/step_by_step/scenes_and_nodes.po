@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -338,11 +338,18 @@ msgstr ""
 msgid "Success!"
 msgstr "Успех!"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:167
+msgid ""
+"If this doesn't immediately work and you have a hiDPI display on at least "
+"one of your monitors, go to **Project → Project Settings → Display → "
+"Window** then enable **Allow Hidpi** under **Dpi**."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
 msgid "Configuring the project"
 msgstr "Настройка проекта"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:177
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
@@ -354,7 +361,7 @@ msgstr ""
 "несколько сцен, поэтому одна из них должна быть установлена как главная "
 "сцена. Именно эта сцена будет загружаться при каждом запуске проекта."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
 msgid ""
 "These settings are all stored in a project.godot file, which is a plaintext "
 "file in win.ini format (for easy editing). There are dozens of settings that "
@@ -369,13 +376,13 @@ msgstr ""
 "меню настроек проекта, который действует как своего рода интерфейс для "
 "редактирования файла project.godot."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
 "Чтобы открыть это диалоговое окно, выберите меню Проект -> Настройки "
 "проекта. Попробуйте прямо сейчас."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:190
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
@@ -384,7 +391,7 @@ msgstr ""
 "`Application/Run/Main Scene` (`Приложение/Запуск/Главная Сцена`) и нажмите "
 "на него, чтобы выбрать 'Hello.tscn'."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
@@ -393,7 +400,7 @@ msgstr ""
 "F5), эта сцена будет запускаться независимо от того, какая сцена "
 "редактируется в данный момент."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:191
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:198
 msgid ""
 "The project settings dialog provides a lot of options that can be saved to a "
 "project.godot file and shows their default values. If you change a value, a "
@@ -405,7 +412,7 @@ msgstr ""
 "Если вы измените значение, появится галочка слева от ее имени. Это означает, "
 "что свойство будет сохранено в файле project.godot и запомнено."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
@@ -415,11 +422,11 @@ msgstr ""
 "конфигурации и прочитать их во время выполнения, используя одиночку "
 "(singleton) :ref:`ProjectSettings <class_ProjectSettings>`."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:207
 msgid "To be continued..."
 msgstr "Продолжение следует..."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:202
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
 msgid ""
 "This tutorial talked about \"scenes and nodes\", but so far there has been "
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "

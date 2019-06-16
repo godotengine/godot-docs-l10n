@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,42 +49,42 @@ msgid ""
 "run it from the Mono command line prompt):"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:24
+#: ../../docs/development/compiling/compiling_with_mono.rst:25
 #, fuzzy
 msgid "Environment variables"
 msgstr "Zmienne środowiskowe"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:26
+#: ../../docs/development/compiling/compiling_with_mono.rst:27
 msgid ""
 "By default, SCons will try to find Mono in the Windows Registry on Windows "
 "or via ``pkg-config`` on other platforms. You can specify a different "
-"installation directory by using the following environment variables for the "
-"respective ``bits`` option: ``MONO32_PREFIX`` and ``MONO64_PREFIX``."
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_with_mono.rst:28
-msgid ""
-"The specified directory must contain the subdirectories ``bin``, "
-"``include``, and ``lib``."
+"installation directory by passing the ``mono_prefix`` command-line option to "
+"SCons; e.g.: ``scons [...] mono_prefix=%ProgramFiles%/Mono``."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:31
+msgid ""
+"This is the directory that contains the subdirectories ``include`` and "
+"``lib``."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:34
 #, fuzzy
 msgid "Enable the Mono module"
 msgstr "Odblokowanie modułu Mono"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:33
+#: ../../docs/development/compiling/compiling_with_mono.rst:36
 msgid ""
 "By default, the mono module is disabled for builds. To enable it you can "
 "pass the option ``module_mono_enabled=yes`` to your SCons command."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:36
+#: ../../docs/development/compiling/compiling_with_mono.rst:40
 #, fuzzy
 msgid "Generate the glue"
 msgstr "Tworzenie \"kleju\"(Glue)"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:38
+#: ../../docs/development/compiling/compiling_with_mono.rst:42
 msgid ""
 "The glue sources are the wrapper functions that will be called by managed "
 "methods. These source files must be generated before building your final "
@@ -92,21 +92,21 @@ msgid ""
 "binary with the options ``tools=yes`` and ``mono_glue=no``:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:44
+#: ../../docs/development/compiling/compiling_with_mono.rst:50
 msgid ""
 "After the build finishes, you need to run the compiled executable with the "
 "parameter ``--generate-mono-glue`` followed by the path to an output "
 "directory. This path must be ``modules/mono/glue`` in the Godot directory."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:50
+#: ../../docs/development/compiling/compiling_with_mono.rst:58
 msgid ""
 "This command will tell Godot to generate the file ``modules/mono/glue/"
 "mono_glue.gen.cpp``. Once this file is generated, you can build Godot for "
 "all the desired targets without the need to repeat this process."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:53
+#: ../../docs/development/compiling/compiling_with_mono.rst:61
 msgid ""
 "``<godot_binary>`` refers to the tools binary you compiled above with the "
 "Mono module enabled. Its exact name will differ based on your system and "
@@ -117,11 +117,11 @@ msgid ""
 "without this suffix which can't be used to generate the Mono glue."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:58
+#: ../../docs/development/compiling/compiling_with_mono.rst:68
 msgid "Notes"
 msgstr "Uwagi"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:59
+#: ../../docs/development/compiling/compiling_with_mono.rst:69
 msgid ""
 "**Do not** build your final binaries with ``mono_glue=no``. This disables C# "
 "scripting. This option must be used only for the temporary binary that will "
@@ -129,80 +129,88 @@ msgid ""
 "without the glue sources."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:60
+#: ../../docs/development/compiling/compiling_with_mono.rst:72
 msgid ""
-"The glue sources must be regenerated every time the ClassDB bindings "
-"changes. That is, for example, when a new method is added to ClassDB or one "
-"of the parameter of such a method changes. Godot will print an error at "
-"startup if there is an API mismatch between ClassDB and the glue sources."
+"The glue sources must be regenerated every time the ClassDB registered API "
+"changes. That is, for example, when a new method is registered to the "
+"scripting API or one of the parameter of such a method changes. Godot will "
+"print an error at startup if there is an API mismatch between ClassDB and "
+"the glue sources."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:63
+#: ../../docs/development/compiling/compiling_with_mono.rst:78
 msgid "Rebuild with Mono glue"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:65
+#: ../../docs/development/compiling/compiling_with_mono.rst:80
 msgid ""
 "Once you have generated the Mono glue, you can build the final binary with "
 "``mono_glue=yes``. It's the default value for ``mono_glue`` so you can also "
 "omit it. You can build the Mono-enabled editor:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:72
+#: ../../docs/development/compiling/compiling_with_mono.rst:87
 #, fuzzy
 msgid "And Mono-enabled export templates:"
 msgstr "Używanie szablonów eksportu"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:78
+#: ../../docs/development/compiling/compiling_with_mono.rst:93
 msgid ""
 "If everything went well, apart from the normal output SCons should have "
 "created the following files in the ``bin`` directory:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:80
+#: ../../docs/development/compiling/compiling_with_mono.rst:95
 msgid ""
 "If you're not static linking the Mono runtime, the build script will place "
-"the Mono runtime shared library next to the Godot binary."
+"the Mono runtime shared library (``monosgen-2.0``) next next to the Godot "
+"binary in the output directory. Make sure to include this library when "
+"distributing Godot. When targeting Android, no extra steps are required, as "
+"this library is automatically copied ``#platform/android/java/libs`` and "
+"gradle takes care of the rest."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:81
+#: ../../docs/development/compiling/compiling_with_mono.rst:98
 msgid ""
 "Unlike \"classical\" Godot builds, when building with the mono module "
-"enabled a data directory will be created both for the editor and for export "
-"templates. This directory is important for proper functioning and must be "
-"distributed together with Godot. More details about this directory in :ref:"
-"`Data directory<compiling_with_mono_data_directory>`."
+"enabled and depending of the target platform a data directory may be created "
+"both for the editor and for export templates. This directory is important "
+"for proper functioning and must be distributed together with Godot. More "
+"details about this directory in :ref:`Data "
+"directory<compiling_with_mono_data_directory>`."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:84
+#: ../../docs/development/compiling/compiling_with_mono.rst:104
 msgid "Examples"
 msgstr "Przykłady"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:87
+#: ../../docs/development/compiling/compiling_with_mono.rst:107
 msgid "Example (Windows)"
 msgstr "Przykład (Windows)"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:103
+#: ../../docs/development/compiling/compiling_with_mono.rst:123
 #, fuzzy
 msgid "Example (X11)"
 msgstr "Przykład (x11)"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:121
+#: ../../docs/development/compiling/compiling_with_mono.rst:141
 msgid "Data directory"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:123
+#: ../../docs/development/compiling/compiling_with_mono.rst:143
 msgid ""
 "The data directory is a dependency for Godot binaries built with the mono "
 "module enabled. It contains files that are important for the correct "
-"functioning of Godot. It must be distributed next to the Godot executable."
+"functioning of Godot. It must be distributed together with the Godot "
+"executable. There is no data directory when targeting ``Android`` so the "
+"following information does not apply to that platform."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:126
+#: ../../docs/development/compiling/compiling_with_mono.rst:148
 msgid "Export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:128
+#: ../../docs/development/compiling/compiling_with_mono.rst:150
 msgid ""
 "The name of the data directory for a export template differs based on the "
 "configuration it was built with. The format is ``data.mono.<platform>.<bits>."
@@ -210,14 +218,14 @@ msgid ""
 "release``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:130
+#: ../../docs/development/compiling/compiling_with_mono.rst:153
 msgid ""
 "In the case of export templates the data directory only contains Mono "
 "framework assemblies and configuration files, as well as some shared library "
 "dependencies like ``MonoPosixHelper``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:132
+#: ../../docs/development/compiling/compiling_with_mono.rst:156
 msgid ""
 "This directory must be placed with its original name next to the Godot "
 "export templates. When exporting a project, Godot will also copy this "
@@ -226,62 +234,62 @@ msgid ""
 "in the project setting ``application/config/name``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:134
+#: ../../docs/development/compiling/compiling_with_mono.rst:161
 msgid ""
 "In the case of macOS, where the export template is compressed as a zip file, "
 "the contents of the data directory can be placed in the following locations "
 "inside the zip:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:137
-#: ../../docs/development/compiling/compiling_with_mono.rst:196
+#: ../../docs/development/compiling/compiling_with_mono.rst:165
+#: ../../docs/development/compiling/compiling_with_mono.rst:232
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Mono/lib``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:137
+#: ../../docs/development/compiling/compiling_with_mono.rst:165
 msgid "``/osx_template.app/Contents/Frameworks/GodotSharp/Mono/lib``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:139
-#: ../../docs/development/compiling/compiling_with_mono.rst:198
+#: ../../docs/development/compiling/compiling_with_mono.rst:167
+#: ../../docs/development/compiling/compiling_with_mono.rst:234
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Mono/etc``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:139
+#: ../../docs/development/compiling/compiling_with_mono.rst:167
 msgid "``/osx_template.app/Contents/Resources/GodotSharp/Mono/etc``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:143
+#: ../../docs/development/compiling/compiling_with_mono.rst:171
 msgid "Editor"
 msgstr "Edytor"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:145
+#: ../../docs/development/compiling/compiling_with_mono.rst:173
 msgid ""
 "The name of the data directory for the Godot editor will always be "
 "``GodotSharp``. The main structure of this directory has the following "
 "subdirectories:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:147
+#: ../../docs/development/compiling/compiling_with_mono.rst:176
 msgid "``Api`` (optional)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:148
+#: ../../docs/development/compiling/compiling_with_mono.rst:177
 #, fuzzy
 msgid "``Mono`` (optional)"
 msgstr "Postęp ładowania (opcjonalny)"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:149
+#: ../../docs/development/compiling/compiling_with_mono.rst:178
 msgid "``Tools`` (required)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:151
+#: ../../docs/development/compiling/compiling_with_mono.rst:180
 msgid ""
 "The ``Tools`` subdirectory contains tools required by the editor, like the "
 "``GodotSharpTools`` assembly."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:153
+#: ../../docs/development/compiling/compiling_with_mono.rst:182
 msgid ""
 "The ``Mono`` subdirectory is optional. It can be used to bundle the Mono "
 "framework assemblies and configuration files with the Godot editor, as well "
@@ -292,7 +300,7 @@ msgid ""
 "passing the option ``copy_mono_root=yes`` when building the editor."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:155
+#: ../../docs/development/compiling/compiling_with_mono.rst:188
 msgid ""
 "The ``Api`` directory is also optional. Godot API assemblies are not bundled "
 "with the editor by default. Instead the Godot editor will generate and build "
@@ -302,84 +310,123 @@ msgid ""
 "generating and building them again."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:157
+#: ../../docs/development/compiling/compiling_with_mono.rst:193
 msgid ""
 "The following is an example script for building and copying the Godot API "
 "assemblies:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:188
+#: ../../docs/development/compiling/compiling_with_mono.rst:224
 msgid ""
 "The script assumes it's being executed from the directory where SConstruct "
 "is located. ``<godot_binary>`` refers to the tools binary compiled with the "
 "Mono module enabled."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:191
+#: ../../docs/development/compiling/compiling_with_mono.rst:227
 msgid ""
 "In the case of macOS, if the Godot editor is distributed as a bundle, the "
 "contents of the data directory may be placed in the following locations:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:194
+#: ../../docs/development/compiling/compiling_with_mono.rst:230
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Api``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:194
+#: ../../docs/development/compiling/compiling_with_mono.rst:230
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Api``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:196
+#: ../../docs/development/compiling/compiling_with_mono.rst:232
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Mono/lib``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:198
+#: ../../docs/development/compiling/compiling_with_mono.rst:234
 msgid "``<bundle_name>.app/Contents/Resources/GodotSharp/Mono/etc``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:200
+#: ../../docs/development/compiling/compiling_with_mono.rst:236
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Tools``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:200
+#: ../../docs/development/compiling/compiling_with_mono.rst:236
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Tools``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:204
+#: ../../docs/development/compiling/compiling_with_mono.rst:240
+#, fuzzy
+msgid "Targeting Android"
+msgstr "Eksportowanie na Androida"
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:242
+msgid ""
+"Compiling the Android export templates with Mono is a bit simpler than it is "
+"for the desktop platforms, as there are no additional steps required after "
+"building. There is no need to worry about any dependency like a data "
+"directory or the runtime shared library (when dynamically linking) as those "
+"are automatically added to the gradle project."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:247
+msgid ""
+"**Important:** You need to manually specify the mono version with the "
+"``MONO_VERSION`` environment variable."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:249
+msgid ""
+"Before building Godot you do need to cross compile the Mono runtime for the "
+"target architectures. The easiest way to do this is to use the sdk Makefiles "
+"from the Mono repository. The following is an example bash script:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:252
+msgid ""
+"*Note: We plan to distribute prebuilt packages of the Mono runtime in the "
+"future so you don't have to build it yourself.*"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:314
 #, fuzzy
 msgid "Command-line options"
 msgstr "Linia komend"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:206
+#: ../../docs/development/compiling/compiling_with_mono.rst:316
 msgid ""
 "The following is the list of command-line options available when building "
 "with the mono module:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:208
+#: ../../docs/development/compiling/compiling_with_mono.rst:318
 msgid ""
 "**module_mono_enabled**: Build Godot with the mono module enabled ( yes | "
 "**no** )"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:210
+#: ../../docs/development/compiling/compiling_with_mono.rst:320
 msgid ""
 "**mono_glue**: Whether to include the glue source files in the build and "
 "define `MONO_GLUE_DISABLED` as a preprocessor macro ( **yes** | no )"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:212
+#: ../../docs/development/compiling/compiling_with_mono.rst:322
+msgid ""
+"**mono_prefix**: Path to the Mono installation directory for the target "
+"platform and architecture"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:324
 msgid ""
 "**xbuild_fallback**: Whether to fallback to xbuild if MSBuild is not "
 "available ( yes | **no** )"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:214
+#: ../../docs/development/compiling/compiling_with_mono.rst:326
 msgid ""
 "**mono_static**: Whether to link the mono runtime statically ( yes | **no** )"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:216
+#: ../../docs/development/compiling/compiling_with_mono.rst:328
 msgid ""
 "**copy_mono_root**: Whether to copy the Mono framework assemblies and "
 "configuration files required by the Godot editor ( yes | **no** )"

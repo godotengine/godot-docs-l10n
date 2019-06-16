@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,14 +115,12 @@ msgid "``Variant.Type`` enum"
 msgstr "\"变量.类型\"枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
-#, fuzzy
 msgid "``OP_*``"
-msgstr "“op_*”"
+msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
-#, fuzzy
 msgid "``Variant.Operator`` enum"
-msgstr "\"变体.运算符\" 枚举"
+msgstr "``变体.运算符`` 枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
 #, fuzzy
@@ -191,7 +189,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:66
 msgid "Tips"
-msgstr ""
+msgstr "提示"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:68
 msgid ""
@@ -199,6 +197,8 @@ msgid ""
 "directive allows to access the members and nested types of a class without "
 "specifying the class name."
 msgstr ""
+"有时候，使用``使用静态``指令是很有用的。该指令允许在不指定类名的情况下，访问"
+"类的成员和嵌套类型。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:90
@@ -258,6 +258,9 @@ msgid ""
 "``Singleton`` that returns the singleton instance. The type of this instance "
 "is ``Godot.Object``."
 msgstr ""
+"然而，在一些非常罕见的情况下，这是不够的。例如，您可能希望访问基类``Godot."
+"Object``中的成员，比如``连接``。对于这样的用例，我们提供了一个名为``单例``的"
+"静态属性，它返回单例实例。这个实例的类型是``Godot.Object``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
 msgid "String"
@@ -470,8 +473,9 @@ msgid "``Array``"
 msgstr "数组"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
-msgid "``Godot.Array``"
-msgstr ""
+#, fuzzy
+msgid "``Godot.Collections.Array``"
+msgstr "PoolVector2Array"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
 #, fuzzy
@@ -545,8 +549,9 @@ msgstr "Vector3[]"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:273
 msgid ""
-"``Godot.Array<T>`` is a type-safe wrapper around ``Godot.Array``. Use the "
-"``Godot.Array<T>(Godot.Array)`` constructor to create one."
+"``Godot.Collections.Array<T>`` is a type-safe wrapper around ``Godot."
+"Collections.Array``. Use the ``Godot.Collections.Array<T>(Godot.Collections."
+"Array)`` constructor to create one."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
@@ -555,13 +560,14 @@ msgstr "字典"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 #, fuzzy
-msgid "Use ``Godot.Dictionary``."
+msgid "Use ``Godot.Collections.Dictionary``."
 msgstr "使用 ``Dictionary <object，object>``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid ""
-"``Godot.Dictionary<T>`` is a type-safe wrapper around ``Godot.Dictionary``. "
-"Use the ``Godot.Dictionary<T>(Godot.Dictionary)`` constructor to create one."
+"``Godot.Collections.Dictionary<T>`` is a type-safe wrapper around ``Godot."
+"Collections.Dictionary``. Use the ``Godot.Collections.Dictionary<T>(Godot."
+"Collections.Dictionary)`` constructor to create one."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:285
@@ -603,7 +609,7 @@ msgstr ""
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
-msgstr ""
+msgstr "通过同步/等待和``Godot.对象.对信号``可以实现对信号的等效收益。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:313
 msgid "Other differences"
@@ -614,6 +620,8 @@ msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
+"``preload``在GDScript中可用，在c#中不可用。请使用`GD.Load``或"
+"``ResourceLoader.Load``替代。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Other differences:"

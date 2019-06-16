@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -695,21 +695,22 @@ msgid "Built-In"
 msgstr "内置"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
+#, fuzzy
 msgid ""
 "There is a list of built-in helpers. The list is almost identical to the one "
-"from GDScript (@TODO, link to gdscript methods?). Most of them are "
-"mathematical functions, but others can be useful helpers. Make sure to take "
-"a look at the list at some point."
+"from :ref:`GDScript<class_@GDScript>`. Most of them are mathematical "
+"functions, but others can be useful helpers. Make sure to take a look at the "
+"list at some point."
 msgstr ""
 "有一个内置帮助器列表。 该列表几乎与GDScript中的列表相同 (@TODO, link to "
 "gdscript methods?) 。 其中大多数是数学函数，但其他人可能是有用的助手。 请务必"
 "在某个时候查看列表。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:404
 msgid "By Type"
 msgstr "按类型"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:408
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
 msgid ""
 "Those are the methods available to basic types. For example, if you want a "
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
@@ -718,11 +719,11 @@ msgstr ""
 "这些是基本类型可用的方法。例如，如果您想要一个点积，您可以搜索“点”而不是"
 "Vector3类型。在大多数情况下，只需搜索节点列表，就应该更快。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:411
 msgid "Call"
 msgstr "调用"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:415
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
@@ -730,11 +731,11 @@ msgstr ""
 "这是通用调用节点。它很少直接使用，而是通过拖动到已配置的节点上的空白空间来使"
 "用。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
 msgstr "构造函数"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:421
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
 "These are all the functions needed to create Godot basic datatypes. For "
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
@@ -743,32 +744,32 @@ msgstr ""
 "这些是创建Godot基本数据类型所需的所有函数。例如，如果需要从3个浮点数中创建一"
 "个Vector3，则必须使用构造函数。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:425
 msgid "Destructor"
 msgstr "析构函数"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:429
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
 msgstr "这与构造函数相反，它允许将任何基本类型(即Vector3)分离到子元素中。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:433
 msgid "Emit Signal"
 msgstr "发射信号"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:437
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid ""
 "Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
 "从任何物体发出信号。一般来说，这并不是很有用，因为拖动信号到画布的效果更好。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:439
 msgid "Get/Set"
 msgstr "获取/设置"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:443
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
 msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
@@ -776,11 +777,11 @@ msgstr ""
 "通用的Getter/Setter节点。从属性面板中拖拽属性效果更好，因为在拖放时它们就被正"
 "确配置。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
 msgstr "等待"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:449
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid ""
 "The Wait nodes will suspend execution of the function until something "
 "happens (many frames can pass until resuming, in fact). Default nodes allow "
@@ -790,39 +791,39 @@ msgstr ""
 "等待节点将暂停执行函数直到发生某些事情(实际上，许多帧可以通过，直到恢复)。默"
 "认节点允许您等待帧通过、固定帧或给定的时间量，直到执行恢复为止。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 msgid "Yield"
 msgstr "Yield"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:456
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
 "This node completely suspends the execution of the script, and it will make "
 "the function return a value that can be used to resume execution."
 msgstr "这个节点完全暂停脚本的执行，它将使函数返回一个值，该值可用于恢复执行。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:458
 msgid "Yield Signal"
 msgstr "Yield 信号"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:462
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Same as Yield, but will wait until a given signal is emitted."
 msgstr "与Yield相同，但要等到一个给定的信号发出。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
 msgstr "索引"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:468
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
 msgstr "泛型索引操作符，不常用，但它的存在是好的，以防万一。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:470
 msgid "Operators"
 msgstr "运算符"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
 msgid ""
 "These are mostly generic operators, such as addition, multiplication, "
 "comparison, etc. By default, these mostly accept any datatype (and will "
@@ -834,11 +835,11 @@ msgstr ""
 "要接受任何数据类型(如果输入的类型与操作符不匹配，则会在运行时出错)。建议始终"
 "为操作符设置正确的类型，以更快地捕捉错误并使图形更易于阅读。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:481
 msgid "Expression Node"
 msgstr "表达式节点"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:485
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid ""
 "Among the operators, the *Expression* node is the most powerful. If well "
 "used, it allows you to enormously simplify visual scripts that are math or "
@@ -847,22 +848,22 @@ msgstr ""
 "在运算符中， *Expression* 节点是最强大的。 如果使用得当，它可以让您获得数学或"
 "逻辑繁重的视觉可视化脚本。 在其上键入任何表达式，它将实时执行。"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:486
 msgid "Expression nodes can:"
 msgstr "表达式节点可以:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:490
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
 msgstr ""
 "基于自定义输入执行数学和逻辑表达式(例如:“a*5 + b”，其中a和b是自定义输入):"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:495
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:493
 msgid "Access local variables or properties:"
 msgstr "访问局部变量或属性:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:500
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:498
 msgid ""
 "Use most of the existing built-in functions that are available to GDScript, "
 "such as sin(),cos(),print(), as well as constructors, such as Vector3(x,y,z),"
@@ -871,11 +872,11 @@ msgstr ""
 "使用GDScript可用的大多数现有内置函数，例如 sin(),cos(),print()，以及构造函"
 "数，例如Vector3(x，y，z)，Rect2(..) 等:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:505
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503
 msgid "Call API functions:"
 msgstr "调用API函数:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:510
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:508
 msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"

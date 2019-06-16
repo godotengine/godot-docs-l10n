@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,11 +42,10 @@ msgid "In short:"
 msgstr "总之:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
-msgstr "您可以免费下载并使用Godot，用于任何，个人，非营利，商业或其他目的;"
+msgstr "您可以免费下载并使用Godot，用于任何个人，非营利，商业或其他目的。"
 
 #: ../../docs/about/faq.rst:14
 msgid ""
@@ -380,7 +379,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Godot从3.0版本开始支持gITF。"
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -390,7 +388,7 @@ msgid ""
 msgstr ""
 "FBX SDK具有 `限制性许可 <https://www.blender.org/bf/Autodesk_FBX_License."
 "rtf>`_ ，与Godot提供的 `开放许可 <https://opensource.org/licenses/MIT>`_ 不兼"
-"容。尽管如此，FBX支持仍然可以由第三方作为插件提供。(参见上面插件的问题。)"
+"容。尽管如此，FBX支持仍然可以由第三方作为插件提供。(参见下面插件的问题。)"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -418,11 +416,10 @@ msgstr ""
 "发布游戏，无论开源或闭源。万事皆允。"
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
-msgstr "欲了解如何支持您想用的SDK，请查看上面的插件问题。"
+msgstr "如欲了解如何支持您使用的SDK，请查看下面的插件问题。"
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -480,7 +477,6 @@ msgstr ""
 "意，分辨率越高，资源越多，它们需要的内存就越多，加载所需时间也会越长。"
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
@@ -490,7 +486,6 @@ msgstr ""
 "`doc_multiple_resolutions` 来学习如何实现它。"
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "

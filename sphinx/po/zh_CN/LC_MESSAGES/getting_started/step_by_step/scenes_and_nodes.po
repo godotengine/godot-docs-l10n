@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -305,11 +305,18 @@ msgstr "在保存场景并再一次按下运行场景之后，“Hello, World!�
 msgid "Success!"
 msgstr "成功！"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:167
+msgid ""
+"If this doesn't immediately work and you have a hiDPI display on at least "
+"one of your monitors, go to **Project → Project Settings → Display → "
+"Window** then enable **Allow Hidpi** under **Dpi**."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
 msgid "Configuring the project"
 msgstr "配置项目"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:177
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
@@ -320,7 +327,7 @@ msgstr ""
 "是执行当前的场景。然而，项目有多个场景，因此其中一个必须被设定为主场景(Main "
 "Scene)。这个场景是将会在项目运行时被载入的场景。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
 msgid ""
 "These settings are all stored in a project.godot file, which is a plaintext "
 "file in win.ini format (for easy editing). There are dozens of settings that "
@@ -332,11 +339,11 @@ msgstr ""
 "辑)。有一些设定可以在这个文件中修改，来更改项目的执行方式。为了方便修改，"
 "Godot提供了项目设置对话框，作为project.godot文件的可视修改工具。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr "要打开这个对话框，选择 Project -> Project Settings。试试吧。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:190
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
@@ -344,7 +351,7 @@ msgstr ""
 "窗口打开后，让我们选择一个主场景。定位到`Application/Run/Main Scene` 属性然后"
 "点击并选择 'Hello.tscn'。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
@@ -352,7 +359,7 @@ msgstr ""
 "随着这个改动，按下常规运行(Play)按钮(或者F5)就会运行这个场景，无论它现在是否"
 "正被编辑。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:191
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:198
 msgid ""
 "The project settings dialog provides a lot of options that can be saved to a "
 "project.godot file and shows their default values. If you change a value, a "
@@ -363,7 +370,7 @@ msgstr ""
 "默认值。当您改变了一个值，一个对勾被标记在属性名的左侧。这意味着这个属性将被"
 "保存到project.godot文件中并被记住。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
@@ -372,11 +379,11 @@ msgstr ""
 "另外，还可以添加自定义配置选项，并在运行时使用 :ref:`ProjectSettings "
 "<class_ProjectSettings>` 单例来读取它们。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:207
 msgid "To be continued..."
 msgstr "接下来…"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:202
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
 msgid ""
 "This tutorial talked about \"scenes and nodes\", but so far there has been "
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "

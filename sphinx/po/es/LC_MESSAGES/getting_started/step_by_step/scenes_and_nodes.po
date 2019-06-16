@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,9 +213,9 @@ msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name \"New Project\":"
 msgstr ""
-"Para crear un nuevo proyecto, haz clic en la opción \"Proyecto Nuevo\". "
+"Para crear un nuevo proyecto, haz clic en la opción \"Nuevo proyecto\". "
 "Elige y crea una ruta para el proyecto y especifica el nombre del proyecto "
-"\"Proyecto Nuevo\":"
+"\"Nuevo proyecto\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 msgid "Editor"
@@ -347,11 +347,18 @@ msgstr ""
 msgid "Success!"
 msgstr "¡Finalizado!"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:167
+msgid ""
+"If this doesn't immediately work and you have a hiDPI display on at least "
+"one of your monitors, go to **Project → Project Settings → Display → "
+"Window** then enable **Allow Hidpi** under **Dpi**."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
 msgid "Configuring the project"
 msgstr "Configurando el proyecto"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:177
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
@@ -364,7 +371,7 @@ msgstr ""
 "principal. Esta es la escena que se cargará cada vez que se ejecute el "
 "proyecto."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
 msgid ""
 "These settings are all stored in a project.godot file, which is a plaintext "
 "file in win.ini format (for easy editing). There are dozens of settings that "
@@ -379,22 +386,22 @@ msgstr ""
 "ventana de diálogo de ajustes de proyecto, la que hace de interfaz para "
 "editar el archivo project.godot."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
 "Para acceder al diálogo, seleccione Projecto -> Ajustes del Proyecto. "
 "Pruébalo ahora."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:190
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
-"Una vez que se abra la ventana, seleccionaremos una escena principal. "
-"Localizamos la propiedad `Applicación/Ejecutar/Escena Principal` y haremos "
-"clic en ella para seleccionar `hello.tscn'."
+"Una vez que se abra la ventana, seleccionamos una escena principal. Localiza "
+"la propiedad `Application/Run/Main Scene` y haz clic en ella para "
+"seleccionar `hello.tscn'."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
@@ -403,7 +410,7 @@ msgstr ""
 "F5), esta escena se ejecutará no importando qué escena es la que está siendo "
 "editada."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:191
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:198
 msgid ""
 "The project settings dialog provides a lot of options that can be saved to a "
 "project.godot file and shows their default values. If you change a value, a "
@@ -416,7 +423,7 @@ msgstr ""
 "Esto significa que la propiedad se guardará en el archivo project.godot y se "
 "recordará ."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
@@ -426,11 +433,11 @@ msgstr ""
 "personalizadas y leerlas en tiempo de ejecución usando el singleton :ref:"
 "`ProjectSettings <class_ProjectSettings>` ."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:207
 msgid "To be continued..."
 msgstr "Continuará..."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:202
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
 msgid ""
 "This tutorial talked about \"scenes and nodes\", but so far there has been "
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "

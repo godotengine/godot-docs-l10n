@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -750,21 +750,22 @@ msgid "Built-In"
 msgstr "Built-In(내장)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
+#, fuzzy
 msgid ""
 "There is a list of built-in helpers. The list is almost identical to the one "
-"from GDScript (@TODO, link to gdscript methods?). Most of them are "
-"mathematical functions, but others can be useful helpers. Make sure to take "
-"a look at the list at some point."
+"from :ref:`GDScript<class_@GDScript>`. Most of them are mathematical "
+"functions, but others can be useful helpers. Make sure to take a look at the "
+"list at some point."
 msgstr ""
 "내장 도우미 목록입니다. GDScript와 거의 동일합니다 (@TODO, GDScript 메서드 링"
 "크?). 대부분은 수학적 함수지만, 어떤 것은 유용한 도우미입니다. 여러 시점으로 "
 "목록들을 살펴보세요."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:404
 msgid "By Type"
 msgstr "By Type(타입 별)"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:408
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
 msgid ""
 "Those are the methods available to basic types. For example, if you want a "
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
@@ -774,11 +775,11 @@ msgstr ""
 "Vector3 카테고리 대신 \"dot\"을 검색할 수 있습니다. 대부분의 경우는 노드 목록"
 "을 검색하는 것이 더 빠릅니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:411
 msgid "Call"
 msgstr "Call(호출)"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:415
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
@@ -786,11 +787,11 @@ msgstr ""
 "일반적인 호출 노드입니다. 직접적으로 쓰이는 일은 거의 없고 이미 구성된 노드"
 "의 빈 공간으로 드래그 하여 사용됩니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
 msgstr "Constructors(생성자)"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:421
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
 "These are all the functions needed to create Godot basic datatypes. For "
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
@@ -799,11 +800,11 @@ msgstr ""
 "Godot 기본 데이터 타입을 생성하는 데 필요한 모든 함수들 입니다. 예를 들어, 3"
 "개의 실수가 있는 Vector3를 생성한다면, Constructor가 사용되어야 합니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:425
 msgid "Destructor"
 msgstr "Destructor(분해자)"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:429
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
@@ -811,11 +812,11 @@ msgstr ""
 "Constructor의 반대 성격으로, (Vector3와 같은) 기본 타입을 하위 원소로 분리합"
 "니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:433
 msgid "Emit Signal"
 msgstr "Emit Signal(시그널 방출)"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:437
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid ""
 "Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
@@ -823,11 +824,11 @@ msgstr ""
 "객체로부터 시그널을 방출합니다. 일반적으로 유용하지는 않고, 시그널을 캔버스"
 "로 드래그 하는 것이 더 잘 작동합니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:439
 msgid "Get/Set"
 msgstr "Get/Set"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:443
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
 msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
@@ -835,11 +836,11 @@ msgstr ""
 "일반적인 Getter/Setter 노드. 인스펙터에서 속성을 드래그 하고 드롭하면 잘 구성"
 "되면 더 잘 작동합니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
 msgstr "Wait(기다림)"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:449
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid ""
 "The Wait nodes will suspend execution of the function until something "
 "happens (many frames can pass until resuming, in fact). Default nodes allow "
@@ -850,11 +851,11 @@ msgstr ""
 "할 때까지 많은 프레임이 지나갈 수 있습니다). 기본 노드는 실행이 재개될 때까"
 "지 1 프레임, 혹은 고정된 프레임, 아니면 고정된 시간을 기다릴 수 있습니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 msgid "Yield"
 msgstr "Yield"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:456
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
 "This node completely suspends the execution of the script, and it will make "
 "the function return a value that can be used to resume execution."
@@ -862,30 +863,30 @@ msgstr ""
 "이 노드는 스크립트의 실행을 완전히 중지하고, 함수가 실행을 재개하는 값을 반환"
 "하게 만듭니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:458
 msgid "Yield Signal"
 msgstr "Yield Signal(Yield 시그널)"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:462
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Same as Yield, but will wait until a given signal is emitted."
 msgstr "Yield와 같지만, 주어진 시그널이 방출될 때까지 기다립니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
 msgstr "Index(인덱스)"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:468
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
 msgstr ""
 "일반적인 인덱스 연산자로, 자주 쓰이진 않지만 있다는 것은 좋은 일입니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:470
 msgid "Operators"
 msgstr "연산자(Operators)"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
 msgid ""
 "These are mostly generic operators, such as addition, multiplication, "
 "comparison, etc. By default, these mostly accept any datatype (and will "
@@ -898,11 +899,11 @@ msgstr ""
 "타입과 맞지 않으면 런타임 시 오류가 발생합니다). 항상 오류를 빠르게 잡고 그래"
 "프를 읽기 쉽게 하기 위해 연산자에 맞는 타입을 설정하기를 추천합니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:481
 msgid "Expression Node"
 msgstr "Expression Node(표현식 노드)"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:485
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid ""
 "Among the operators, the *Expression* node is the most powerful. If well "
 "used, it allows you to enormously simplify visual scripts that are math or "
@@ -912,11 +913,11 @@ msgstr ""
 "나 논리로 무거워진 비주얼 스크립트를 엄청 간단하게 만들 수 있습니다. 표현식"
 "을 입력하면 실시간으로 실행됩니다."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:486
 msgid "Expression nodes can:"
 msgstr "Expression 노드는 가능합니다:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:490
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
@@ -924,11 +925,11 @@ msgstr ""
 "커스텀 입력에 따라 수학 및 논리 표현식을 실행 (예:  \"a*5+b\"에서, a와 b는 커"
 "스텀 입력입니다):"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:495
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:493
 msgid "Access local variables or properties:"
 msgstr "지역 변수나 속성을 액세스:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:500
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:498
 msgid ""
 "Use most of the existing built-in functions that are available to GDScript, "
 "such as sin(),cos(),print(), as well as constructors, such as Vector3(x,y,z),"
@@ -937,11 +938,11 @@ msgstr ""
 "Vector3(x,y,z),Rect2(..) 등과 같은 Constructor나 sin(),cos(),print()와 같은 "
 "GDScript에서 사용할 수 있는 존재하는 내장 함수 대부분을 사용:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:505
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503
 msgid "Call API functions:"
 msgstr "API 함수를 호출:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:510
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:508
 msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"

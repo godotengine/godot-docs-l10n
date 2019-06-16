@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,17 +77,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:33
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:53
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:83
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:96
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:120
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:140
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:222
 msgid "**Good**:"
 msgstr "**Bien**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:40
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:93
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:106
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:150
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:230
 msgid "**Bad**:"
 msgstr "**Mal**:"
 
@@ -104,19 +106,20 @@ msgid "Blank lines"
 msgstr "Lineas en blanco"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:72
-msgid "Surround functions and class definitions with a blank line."
+#, fuzzy
+msgid "Surround functions and class definitions with two blank lines:"
 msgstr "Envuelva sus funciones y definiciones de clases por una linea vacía."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:74
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:87
 msgid "Use one blank line inside functions to separate logical sections."
 msgstr ""
 "use una linea blanca dentro de las funciones para separar secciones lógicas."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:77
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:90
 msgid "One statement per line"
 msgstr "Una declaración/instrucción por linea"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:79
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:92
 msgid ""
 "Never combine multiple statements on a single line. No, C programmers, not "
 "with a single line conditional statement (except with the ternary operator)!"
@@ -125,11 +128,11 @@ msgstr ""
 "de C, no hagan declaraciones condicionales en una única línea (excepto con "
 "el operador ternario)!"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:115
 msgid "Avoid unnecessary parentheses"
 msgstr "Evita paréntesis innecesarios"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:104
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:117
 msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations, they only reduce readability."
@@ -137,11 +140,11 @@ msgstr ""
 "Evite paréntesis en expresiones y condicionales. A menos que sean necesarios "
 "para el orden de las operaciones, solo reducen la legibilidad."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:122
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:135
 msgid "Whitespace"
 msgstr "Espacio en blanco"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:124
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
 msgid ""
 "Always use one space around operators and after commas. Avoid extra spaces "
 "in dictionary references and function calls, or to create \"columns.\""
@@ -150,15 +153,15 @@ msgstr ""
 "Evita los espacios adicionales en las referencias de los diccionarios y las "
 "llamadas de función, o para crear \"columnas\"."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:160
 msgid "**NEVER**:"
 msgstr "**NUNCA**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:156
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:169
 msgid "Naming conventions"
 msgstr "Convenciones para la definición de nombres"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:158
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:171
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, which is ugly."
@@ -167,27 +170,27 @@ msgstr ""
 "código choque con las convenciones de nomenclaturas incorporadas, lo cual es "
 "feo."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:163
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
 msgid "Classes and nodes"
 msgstr "Clases y Nodos"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:165
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
 msgid "Use PascalCase: ``extends KinematicBody``"
 msgstr "Usa PascalCase: ``extends KinematicBody``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:167
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:180
 msgid "Also when loading a class into a constant or variable:"
 msgstr "También cuando se carga una clase en una constante o variable:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:174
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:187
 msgid "Functions and variables"
 msgstr "Funciones y Variables"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:189
 msgid "Use snake\\_case: ``get_node()``"
 msgstr "usa snake\\_case: ``get_node()``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:191
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods (functions the user "
 "must override), private functions, and private variables: ``func _ready()``"
@@ -196,22 +199,55 @@ msgstr ""
 "(Funciones que el usuario debe anular), funciones privadas y variables "
 "privadas: ``func _ready()``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:196
 msgid "Signals"
 msgstr "Señales"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:185
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:198
 msgid "Use past tense:"
 msgstr "Usa el tiempo pasado:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:206
 msgid "Constants"
 msgstr "Constantes"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:208
 msgid ""
 "Use CONSTANT\\_CASE, all caps, with an underscore (\\_) to separate words: "
 "``const MAX_SPEED = 200``"
 msgstr ""
 "Usa CONSTANT\\_CASE, todas en mayusculas, con el símbolo de subrayado (\\_) "
 "para separar palabras: ``const MAX_SPEED = 200``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:212
+#, fuzzy
+msgid "Static typing"
+msgstr "Funciones estáticas"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:214
+msgid ""
+"Since Godot 3.1, GDScript supports :ref:`optional static "
+"typing<doc_gdscript_static_typing>`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:217
+#, fuzzy
+msgid "Type hints"
+msgstr "Tipos"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:219
+msgid ""
+"Place the colon right after the variable's name, without a space, and let "
+"the GDScript compiler infer the variable's type when possible."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
+msgid ""
+"When you let the compiler infer the type hint, write the colon and equal "
+"signs together: ``:=``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:244
+msgid ""
+"Add a space on either sides of the return type arrow when defining functions."
+msgstr ""

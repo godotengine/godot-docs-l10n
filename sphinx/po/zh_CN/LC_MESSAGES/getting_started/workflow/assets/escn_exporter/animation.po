@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,14 +75,16 @@ msgid ""
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
+"新创建的动作始终绑定到对象的活动动作。有几种方法可以在NLA轨道上放置活动动作，"
+"一种当然是在``NLA编辑器``中"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
-msgstr ""
+msgstr "或者可以将动作存储在``摄影表``中"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2.检查NLA轨道的无声状态**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -90,6 +92,8 @@ msgid ""
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
+"NLA轨道可以是``静音``或``取消静音``，导出器将导出所有``静音``NLA轨道作为一个"
+"单独的动作，将所有``取消静音``NLA轨道混合到输出的每个动作(包括活动动作)中。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 #, fuzzy
@@ -98,7 +102,7 @@ msgstr "**4. 导出场景**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
-msgstr ""
+msgstr "确保开启``导出隐藏动作``选项。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
 #, fuzzy

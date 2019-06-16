@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1802,7 +1802,7 @@ msgstr ""
 "导出成员变量的基本好处之一是使它们在编辑器中可见并可编辑。通过这种方式，艺术"
 "家和游戏设计师可以修改影响程序运行的值。为此，提供了一种特殊的导出语法。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1299
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1302
 msgid ""
 "It must be noted that even if the script is not being run while at the "
 "editor, the exported properties are still editable (see below for \"tool\")."
@@ -1810,11 +1810,11 @@ msgstr ""
 "必须注意的是，即使脚本在编辑器中没有运行，导出的属性仍然是可编辑的(参见下面"
 "的“工具”)。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1304
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1307
 msgid "Exporting bit flags"
 msgstr "导出位标志"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1309
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
@@ -1823,13 +1823,13 @@ msgstr ""
 "作为位标志的整数可以在一个属性中存储多个“true”/“false”(boolean)值。通过使用导"
 "出提示' ' int, FLAGS ' '，它们可以从编辑器中设置:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1315
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1318
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax:"
 msgstr "也可以将标志限制为指定数量的标志。语法类似于枚举语法:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1323
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1326
 msgid ""
 "In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
@@ -1839,17 +1839,17 @@ msgstr ""
 "``Wind`` 的值是8。通常，常数应该相应地定义。(例如: ``const ELEMENT_WIND = "
 "8`` ，以此类推)。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1328
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1331
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
 msgstr "使用位标志需要了解位操作。如果有疑问，应该导出布尔变量。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1332
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
 msgid "Exporting arrays"
 msgstr "导出数组"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1334
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1337
 msgid ""
 "Exporting arrays works, but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -1861,11 +1861,11 @@ msgstr ""
 "的，但导出的数组是在所有实例之间“共享”的。这意味着在一个实例中编辑它们将导致"
 "在所有其他实例中更改它们。导出的数组可以有初始化器，但它们必须是常量表达式。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1371
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1374
 msgid "Setters/getters"
 msgstr "Setters/getters"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1373
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1376
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
@@ -1874,7 +1874,7 @@ msgstr ""
 "知道类的成员变量何时因某种原因发生变化通常很有用。也可能需要以某种方式封装其"
 "访问。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1376
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1379
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
@@ -1882,7 +1882,7 @@ msgstr ""
 "为此，GDScript使用 ``setget`` 关键字提供了一个 *setter/getter* 语法。在变量定"
 "义后可直接使用:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1383
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1386
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -1896,27 +1896,27 @@ msgstr ""
 "setter * 来设置新值。 反之亦然，当访问 ``变量`` 时，必须用 *getter * 函数(上"
 "面的 ``getterfunc`` ) ``返回`` 所需的值。 下面是一个示例:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1400
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1403
 msgid "Either of the *setter* or *getter* functions can be omitted:"
 msgstr "*setter* 或者 *getter* 函数都可省略:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1409
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1412
 msgid ""
 "Get/Setters are especially useful when exporting variables to editor in tool "
 "scripts or plugins, for validating input."
 msgstr "在工具脚本或插件里导出变量到编辑器时，验证输入Get/Setters格外好用。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1412
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1415
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr "如上所述， *本地* 访问 *不* 需要触发setter和getter。 这里有个说明:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1427
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1430
 msgid "Tool mode"
 msgstr "工具模式"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1429
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
 msgid ""
 "Scripts, by default, don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
@@ -1928,11 +1928,11 @@ msgstr ""
 "在编辑器中运行脚本(只要它们不执行游戏代码或手动避免那样做)。为此，可以用 "
 "``tool`` 关键字并将它放在文件的顶部:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1444
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1447
 msgid "Memory management"
 msgstr "内存管理"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1446
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1449
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -1948,7 +1948,7 @@ msgstr ""
 "必须调用 instance.free()。 为了避免无法释放的引用循环，一个 ``weakref`` 函数"
 "被用来来创建弱引用。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1454
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1457
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
@@ -1957,11 +1957,11 @@ msgstr ""
 "或者，当不使用引用时，可以使用 ``is_instance_valid(instance)`` 来检查对象是否"
 "已被释放。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1461
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1464
 msgid "Signals"
 msgstr "信号"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1463
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1466
 msgid ""
 "Signals are a way to send notification messages from an object that other "
 "objects can listen to in a generic way. Create custom signals for a class "
@@ -1970,7 +1970,7 @@ msgstr ""
 "信号是一种从对象发送通知消息的方式，其他对象可以以通用方式侦听该对象。使用"
 "``signal``关键字为类创建自定义信号。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1475
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1478
 msgid ""
 "These signals may be connected to methods in the same manner as you connect "
 "built-in signals of nodes such as :ref:`class_Button` or :ref:"
@@ -1979,7 +1979,7 @@ msgstr ""
 "这些信号的连接方式可能与连接节点的内置信号相同, 例如： :ref:`class_Button` "
 "或 :ref:`class_RigidBody`。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1478
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
 msgid ""
 "Here's an example that creates a custom signal in one script and connects "
 "the custom signal to a method in a separate script, using the :ref:`Object."
@@ -1988,7 +1988,7 @@ msgstr ""
 "下面是一个示例, 它在一个脚本中创建自定义信号, 并使用 :ref:`Object.connect() "
 "<class_Object_method_connect>` 方法将自定义信号连接到单独脚本中的方法："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1507
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1510
 msgid ""
 "GDScript can bind arguments to connections between a signal and a method. "
 "When the signal is emitted, calling the connected method, the bound argument "
@@ -2000,7 +2000,7 @@ msgstr ""
 "绑定参数被赋予该方法。这些绑定参数特定于连接, 而不是信号或方法, 这意味着每个"
 "连接都有唯一的绑定。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1513
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1516
 msgid ""
 "Here is an example that creates a connection between a button's ``pressed`` "
 "signal and a method, binding the button instance to the connection. The "
@@ -2010,7 +2010,7 @@ msgstr ""
 "接。\n"
 "处理程序使用绑定参数打印按下了哪个按钮实例。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1528
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1531
 msgid ""
 "Signals are generated by the :ref:`Object.emit_signal() "
 "<class_Object_method_emit_signal>` method which broadcasts the signal and "
@@ -2019,16 +2019,16 @@ msgstr ""
 "信号由 :ref:`Object.emit_signal() <class_Object_method_emit_signal>` 方法生"
 "成，该方法广播信号和参数。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1531
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
 msgid ""
 "Extending a previous example to use all the features of GDScript signals:"
 msgstr "扩展前面的示例，使用GDScript信号的所有特性："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1563
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1566
 msgid "Coroutines with yield"
 msgstr "有yield的协同程序"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1565
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1568
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
@@ -2042,21 +2042,21 @@ msgstr ""
 "结状态。在结果对象上调用 ``resume`` 将会继续执行，并返回函数返回的任何内容。"
 "一旦恢复，状态对象就变得无效。下面是一个示例:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1587
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1611
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1590
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1614
 msgid "Will print:"
 msgstr "将打印:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1595
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
 "It is also possible to pass values between yield() and resume(), for example:"
 msgstr "还可以在 yield() 和 resume() 之间传递值，例如:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1620
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1623
 msgid "Coroutines & signals"
 msgstr "协程&信号"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1622
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1625
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
@@ -2065,22 +2065,22 @@ msgstr ""
 "使用 ``yield`` 的真正强度是在与信号结合时。 ``yield`` 可以接受两个参数，一个"
 "物体和一个信号。当接收到信号时，执行将重新开始。下面是一些示例:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1637
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1640
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example:"
 msgstr "协同程序本身在转换到无效状态时使用 ``completed`` 信号，例如:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1650
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1653
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr "``my_func`` 将只在按钮被按下后继续执行。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1653
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1656
 msgid "Onready keyword"
 msgstr "Onready关键词"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1655
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1658
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2090,7 +2090,7 @@ msgstr ""
 "当使用节点时，通常希望在变量中保留对场景部分的引用。由于场景只允许在进入活动"
 "场景树时配置，所以子节点只能在 Node._ready() 准备后获得。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1670
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2101,11 +2101,11 @@ msgstr ""
 "``onready`` 关键字，它将成员变量的初始化推迟到调用 until _ready 后。它可以用"
 "一行代码替换上面的代码:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1677
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1680
 msgid "Assert keyword"
 msgstr "Assert关键字"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1679
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1682
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds."

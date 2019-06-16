@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Este método se llamará cada vez que se dibuje un frame:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -67,14 +67,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"El parámetro delta contiene el tiempo transcurrido en segundos, como punto "
-"flotante, desde la llamada anterior a ``_process()``."
+"Para ayudar a manejar esta variabilidad el parámetro ``delta`` contiene el "
+"tiempo transcurrido en segundos, como punto flotante, desde la llamada "
+"anterior a ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -121,13 +121,12 @@ msgstr ""
 "en los juegos de un solo subproceso."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Una forma sencilla de comprobar esto es crear una escena con un único nodo "
-"Label, con el siguiente script:"
+"Una forma sencilla de ver la función ``_process()`` en funcionamiento es "
+"crear una escena con un único nodo Label, con el siguiente script:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -138,17 +137,17 @@ msgid "Groups"
 msgstr "Grupos"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
 "for organizing large scenes. There are two ways to do add nodes to groups. "
 "The first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"Los nodos se pueden añadir a los grupos, tantos como se desee por nodo, y es "
-"una función útil para organizar escenas de gran tamaño. Hay dos maneras de "
-"hacerlo. La primera es desde la UI, desde el botón Grupos bajo el panel "
-"Nodos:"
+"Los grupos en Godot trabajan como etiquetas que podrías haber encontrado en "
+"otro software. Se puede añadir un nodo a tantos grupos como se desees. Esta "
+"es una función útil para organizar escenas de gran tamaño. Hay dos maneras "
+"de añadir nodos a los grupos. La primera es desde la interfaz de usuario, "
+"utilizando el botón Grupos en el panel Nodo:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
@@ -185,7 +184,6 @@ msgstr ""
 "<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -196,8 +194,8 @@ msgstr ""
 "La clase :ref:`SceneTree <class_SceneTree>` proporciona muchos métodos "
 "útiles, como la interacción con escenas, su jerarquía de nodos y grupos de "
 "nodos. Te permite cambiar escenas o recargarlas fácilmente, salir del juego "
-"o pausar y despausar el juego. Incluso viene con señales interesantes ¡Así "
-"que échale un vistazo si tienes tiempo!"
+"o pausar y despausar el juego. Incluso viene con señales interesantes !"
+"Compruébalo si tienes tiempo!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 msgid "Notifications"
@@ -267,15 +265,15 @@ msgstr ""
 "``free()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
-"Cuando un nodo se libera, también libera todos sus nodos hijos. Debido a "
-"esto, el borrado manual de nodos es mucho más sencillo de lo que parece. "
-"Libera el nodo base y todo lo demás en el subárbol desaparecerá con él."
+"Cuando se elimina un nodo, también se eliminan todos los nodos hijos. Debido "
+"a esto, eliminar manualmente los nodos es mucho más sencillo de lo que "
+"parece. Elimina el nodo base y todo lo demás en el subárbol desaparecerá con "
+"él."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""

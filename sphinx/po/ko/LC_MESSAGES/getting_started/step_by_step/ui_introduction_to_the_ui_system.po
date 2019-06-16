@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "컨트롤(Control) 노드로 인터페이스를 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -30,14 +29,11 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
-"컴퓨터 디스플레이, 모바일 폰, 그리고 TV 화면은 모든 크기와 모양을 갖습니다. "
-"게임을 출시하려면, 당신은 다양한 화면 비율과 해상도를 지원해야 합니다. 모든 "
-"플랫폼에 적용되는 반응형 인터페이스를 만드는 것은 어려울 수 있습니다. 감사하"
-"게도, Godot의 든든한 도구들로 반응형 인터페이스를 제작하고 관리할 수 있습니"
-"다. UI를 설계하기 위해선, 당신은 Control 노드들을 사용할 겁니다. 이들은 에디"
-"터 내 초록 아이콘을 갖고 있는 노드입니다. 이들은 많기 때문에 체력 막대부터 복"
-"잡한 애플리케이션까지 만들 수 있습니다. Godot의 모든 에디터와 플러그인은 이 "
-"노드들을 사용합니다."
+"컴퓨터 디스플레이, 모바일 폰, 그리고 TV 화면은 각자의 크기와 모양을 갖습니"
+"다. 게임을 출시하려면, 게임이 다양한 화면 비율과 해상도를 지원해야 할 것입니"
+"다. 모든 플랫폼에 적용되는 반응형 인터페이스를 만드는 것은 어려울 수 있습니"
+"다. 감사하게도, Godot의 든든한 도구들로 반응형 사용자 인터페이스를 제작하고 "
+"관리할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -49,9 +45,8 @@ msgstr ""
 "이 강좌는 UI 디자인으로 시작할 것입니다. 당신은 이러한 것들을 배울 겁니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
-msgstr "게임 인터페이스를 제작하는 가장 유용한 다섯 가지 컨트롤 노드들"
+msgstr "게임 인터페이스를 제작하는 유용한 다섯 가지 Control 노드들"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
@@ -69,6 +64,9 @@ msgid ""
 "containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
 "page)."
 msgstr ""
+"다섯 가지 가장 일반적인 컨테이너 (나중에 :ref:`GUI Containers "
+"<doc_gui_containers>` 문서 페이지에서 컨테이너에 대해 더 자세하게 배울 수 있"
+"습니다)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -85,6 +83,10 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"UI를 설계하기 위해, Control 노드를 사용하게됩니다. 이 노드들은 에디터에서 초"
+"록색 아이콘을 갖습니다. 이들을 수 십개가 존재하며, 이걸로 라이프바에서 복잡"
+"한 애플리케이션까지 만들 수 있습니다. Godot의 에디터 자체는 Control 노드를 사"
+"용하여 만들어졌습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -93,6 +95,9 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"Control 노드는 다른 노드를과 함께 잘 작동하는 독특한 속성들을 갖습니다. "
+"Node2D, Sprite와 같은 다른 시각적 노드들은 이런 능력이 없습니다. 따라서 UI를 "
+"더 쉽게 작업하고 싶다면, 가능하면 Control 노드를 사용하세요."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
@@ -195,56 +200,51 @@ msgstr ""
 "면 Stretch Mode 속성을 설정하세요:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
-#, fuzzy
 msgid ""
 "``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
-"``Scale On Expand (compat)`` 는 오직 ``expand`` 속성이 ``true`` 로 되어 있을 "
-"때 텍스쳐가 노드의 경계 사각형에 꽉 차도록 크기를 조절하고; 그렇지 않으면 이"
-"것은 ``Keep`` 모드와 다르지 않습니다. 호환성을 되돌리기 위한 기본 모드."
+"``Scale On Expand (compat)``\\ 는 ``expand`` 속성이 ``true``\\ 로 되어 있을 "
+"때만 텍스쳐를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다; 그렇지 않으"
+"면 이것은 ``Keep`` 모드와 같습니다. 호환성을 되돌리기 위한 기본 모드."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
-msgstr "``Scale`` 은 텍스쳐가 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다"
+msgstr ""
+"``Scale``\\ 은 텍스쳐를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
-#, fuzzy
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr ""
-"``Tile`` 은 텍스쳐가 바둑판으로 배열되도록 만들고, 크기를 조절하지 않습니다"
+msgstr "``Tile``\\ 은 텍스쳐를 바둑판으로 배열하고, 크기를 조절하지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
-#, fuzzy
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
-"``Keep`` 과 ``Keep Centered`` 는 텍스쳐가 그 크기를 유지하게 합니다, 각각 경"
-"계의 좌측 상단과 중심에 위치시킵니다"
+"``Keep``\\ 과 ``Keep Centered``\\ 는 텍스쳐가 그 크기를 유지하게 합니다, 각"
+"각 텍스쳐를 경계의 좌측 상단과 중심에 두도록 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
-#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
-"``Keep Aspect`` 와 ``Keep Aspect Centered`` 는 텍스쳐의 크기를 조절하지만 그"
-"것의 크기 비율은 유지합니다, 각각 경계의 좌측 상단과 중심에 위치시킵니다"
+"``Keep Aspect``\\ 와 ``Keep Aspect Centered``\\ 는 텍스쳐의 크기를 조절하지"
+"만 그것의 크기 비율은 유지합니다, 각각 텍스쳐를 경계의 좌측 상단과 중심에 두"
+"도록 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node's limits."
 msgstr ""
-"``Keep Aspect Covered`` 는 ``Keep Aspect Centered`` 와 비슷하지만 경계 직사각"
-"형의 짧은 변 쪽은 꽉 차는 반면, 긴 변 쪽은 노드의 경계까지만 보여주고 짤립니"
-"다"
+"``Keep Aspect Covered``\\ 는 ``Keep Aspect Centered``\\ 와 비슷하지만 경계 사"
+"각형의 짧은 변 쪽은 꽉 차는 반면, 긴 변 쪽은 노드의 경계까지만 보여주고 짤립"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
 msgid ""
@@ -460,7 +460,6 @@ msgid "How to change the anchor"
 msgstr "앵커를 바꾸는 방법"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
-#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
@@ -470,10 +469,10 @@ msgid ""
 "a control node."
 msgstr ""
 "모든 속성과 마찬가지로, 인스펙터에서 4개의 앵커 포인트를 편집할 수 있습니다"
-"만, 가장 편리한 방법은 아닙니다. 당신이 컨트롤 노드를 선택할 때, 레이아웃 메"
-"뉴가 뷰포트 위의 툴바에 나타납니다. 이것은 클릭 만으로 4개의 앵커들을 모두 설"
-"정할 수 있습니다, 인스펙터의 4개의 속성을 사용하는 대신 말이죠. 레이아웃 메뉴"
-"는 오직 컨트롤 노드를 선택할 때만 보여집니다."
+"만, 가장 편리한 방법은 아닙니다. 컨트롤 노드를 선택할 때, 레이아웃 메뉴가 뷰"
+"포트 위의 툴바에 나타납니다. 여기에는 아이콘 목록이 있는데 이것으로 4개의 앵"
+"커들을 모두 설정할 수 있습니다, 인스펙터의 4개의 속성을 사용하는 대신 말이"
+"죠. 레이아웃 메뉴는 오직 컨트롤 노드를 선택할 때만 보여집니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "The layout menu in the viewport"

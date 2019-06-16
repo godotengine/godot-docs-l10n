@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Этот метод будет вызван каждый раз в момент прорисовки фрейма:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -63,16 +63,19 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"Важно понимать что частота с которой будет вызываться ``_process()`` зависит "
+"от того сколько кадров в секунду (FPS) выполняется в вашем приложении на "
+"текущий момент. Это величина может меняться во времени и зависит от "
+"аппаратуры."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"Параметр delta содержит время (в виде числа с плавающей запятой), прошедшее "
-"в секундах после предыдущего вызова функции ``_process()``."
+"Параметр delta содержит время (в виде вещественного числа), прошедшее в "
+"секундах после предыдущего вызова функции ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -117,13 +120,12 @@ msgstr ""
 "В однопоточных играх ее выполнение осуществляется после этапа физики."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Простой способ проверить это - создать сцену с одним узлом Label со "
-"следующим скриптом:"
+"Простой способ посмотреть метод ``_process()`` в работе, это создать сцену с "
+"одной нодой типа Label и со следующим скриптом:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -142,16 +144,19 @@ msgid ""
 "for organizing large scenes. There are two ways to do add nodes to groups. "
 "The first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"Узлы могут быть объединены в группы, по сколько угодно узлов, которые "
-"являются полезной особенностью для организации больших сцен. Есть два "
-"способа сделать это. Первый - из пользовательского интерфейса, с помощью "
-"кнопки \"Группы\" под панелью \"Узел\":"
+"Группы в Godot работают как теги, с которыми вы могли встретиться в других "
+"программах. Узел может находиться в стольких группах, в скольких захотите. "
+"Это очень полезная механика для организации огромных сцен. Есть два способа "
+"добавлять узлы в группы. Во-первых, через UI, используя кнопку Groups под "
+"панелью Узла:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"И второй способ сделать это с помощью кода. Следующий скрипт добавит текущий "
+"Узел к группе  ``enemies`` как только она появится в дереве сцены."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "这个方法将在每次绘制帧时调用："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -61,15 +61,17 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"请记住，调用“_处理”函数的频率取决于应用程序每秒运行的帧数(FPS)，这一点很重"
+"要。这个速率可以随时间和设备的不同而变化。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"delta参数是自从上一次调用 ``_process()`` 以来以秒为单位的时间，类型是浮点数。"
+"为了帮助管理这种可变性，``delta``参数包含自上次调用``_process()``以来以秒为单"
+"位经过的时间（作为浮点）。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -107,11 +109,12 @@ msgstr ""
 "游戏优化。在单线程游戏中它的执行是在的物理步骤之后完成的。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
-msgstr "测试此方法的一种简单方法是使用以下脚本创建具有单个标签节点的场景:"
+msgstr ""
+"如果想查看``_process()``这个方法是如何工作的，最简单的方式就是创建一个只有单"
+"个Label节点的Scene，同时为Label节点绑定以下脚本："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -122,21 +125,23 @@ msgid "Groups"
 msgstr "分组"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
 "for organizing large scenes. There are two ways to do add nodes to groups. "
 "The first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"随着节点数的增加，一个有用的管理方式是把节点添加到组里。有两种方法可以做到这"
-"一点。第一个通过UI实现，在Node面板下的Groups按钮:"
+"Godot中的组的工作方式类似于您可能在其他软件中遇到的标记。一个节点可以根据需要"
+"添加到任意多个组。这是组织大型场景的一个有用特性。有两种方法可以向组添加节"
+"点。第一个来自UI，使用节点面板下的Groups按钮："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"第二种方法来自代码。下列脚本将在当前节点出现在场景树中时，立即将其添加到“敌"
+"人”分组。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -167,7 +172,6 @@ msgstr ""
 "表："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -175,9 +179,9 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you have some time!"
 msgstr ""
-"类 :ref:`SceneTree <class_SceneTree>` 提供了很多有用的方法，例如与场景、场景"
-"中节点的层次、节点分组交互。它让您可以很方便切换场景，重载场景，退出游戏，暂"
-"停和继续游戏。它还有一些有趣的信号，如果您有空可以详细去查看！"
+"类 :ref:`场景树 <class_SceneTree>` 提供了很多有用的方法，例如与场景、场景中节"
+"点的层次、节点分组交互。它让您可以很方便切换场景，重载场景，退出游戏，暂停和"
+"继续游戏。它还有一些有趣的信号，如果您有空可以详细去查看！"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 msgid "Notifications"
@@ -239,7 +243,6 @@ msgstr ""
 "若要删除一个节点，无论其是否在场景树之内， ``free()`` 方法一定会被调用:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
 msgid "What are Godot classes really?"
-msgstr ""
+msgstr "Godot类究竟是什么?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
@@ -28,6 +28,9 @@ msgid ""
 "design. *How* they do this may not be clear to beginner or intermediate "
 "users though."
 msgstr ""
+"Godot提供了两种创建类型的主要方法：脚本和场景。这两个都表示一个“类”，因为"
+"Godot是围绕着面向对象的设计。不过，初学者或中级用户可能还不清楚他们是*如何*做"
+"到这一点的。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:11
 msgid ""
@@ -36,6 +39,8 @@ msgid ""
 "they are resources that tell the engine a sequence of initializations to "
 "perform on an engine class."
 msgstr ""
+"Godot引擎提供了开箱即用的类(例如:参考:`节点<类_节点>`)，但是用户创建的类型实"
+"际上不是类。相反，它们是一种资源，告诉引擎初始化的顺序来执行一个引擎类。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:16
 msgid ""
@@ -44,6 +49,8 @@ msgid ""
 "class information (also called \"reflection\"). Things stored in the ClassDB "
 "include, among other things..."
 msgstr ""
+"Godot的内部类具有用:参考:`ClassDB <类_类数据库>`注册类数据的方法。此数据库提"
+"供对类信息(也称为“反射”)的运行时访问。存储在类数据库中的内容包括……"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:21
 #, fuzzy
@@ -74,6 +81,10 @@ msgid ""
 "a static `_bind_methods()` function that describes what C++ content it "
 "registers to the database and how."
 msgstr ""
+"此外，这个类数据库是执行任何操作时对象实际检查的对象。访问一个属性？调用一个"
+"方法？还是发射一个信号？它将检查数据库的记录(以及对象的基本类型的记录)，以查"
+"看对象是否支持该操作。每个c++对象都定义一个静态的`_bind_methods()`函数，该函"
+"数描述它向数据库注册了什么c++内容以及如何注册。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
 msgid ""
@@ -82,6 +93,9 @@ msgid ""
 "data to be appended to an object's data. That way, users could inject their "
 "own properties and methods into the engine's Object query requests."
 msgstr ""
+"如果引擎在启动时提供了所有这些数据，那么用户如何定义自己的数据？如果用户能够"
+"自定义一组数据，并将其附加到对象的数据中，那就太好了。这样，用户就可以将自己"
+"的属性和方法注入到引擎的对象查询请求中。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
 msgid ""
@@ -91,6 +105,9 @@ msgid ""
 "to the list of properties the Object fetches from the ClassDB. The same "
 "holds true for other declarative code."
 msgstr ""
+"*这个*就是:参考:`脚本<类_脚本>`。对象在数据库前检查其附加的脚本，脚本甚至可以"
+"重写方法。如果脚本定义了一个`_get_property_list()`方法，将该数据附加到对象从"
+"类数据库中获取的属性列表中。同样适用于其他的声明代码。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:47
 msgid ""
@@ -100,6 +117,9 @@ msgid ""
 "Object to defer to the Script's content where the engine logic deems "
 "appropriate."
 msgstr ""
+"当一些用户将脚本视为一个类时，他们可能会感到困惑。实际上，引擎只是自动实例化"
+"基本引擎类，然后将脚本添加到该对象。这样，对象就可以在引擎逻辑认为合适的地方"
+"遵从脚本的内容。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:53
 msgid ""
@@ -108,10 +128,12 @@ msgid ""
 "node hierarchies demonstrates this. Each individual Node's logic could be "
 "several hundred lines of code in length."
 msgstr ""
+"但问题确实出现了。随着物体尺寸的增大，创建它们所需的脚本尺寸也变得越来越大。"
+"创建节点层次结构演示了这一点。每个节点的逻辑可能是几百行代码的长度。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid "let's see a simple example of creating a single Node as a child."
-msgstr ""
+msgstr "让我们来看一个创建单个节点作为子节点的简单示例。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:98
 msgid ""
@@ -123,6 +145,10 @@ msgid ""
 "\"lookups\" within data structures to find the corresponding logic to "
 "execute."
 msgstr ""
+"注意，创建这个子节点只涉及两段声明性代码：变量声明和构造函数声明。关于子元素"
+"的所有其他内容，都必须使用命令式代码进行设置。但是，脚本代码比c++引擎代码要慢"
+"得多。每次更改都必须单独调用脚本API，这意味着要在数据结构中进行大量c++“查"
+"找”，以找到要执行的相应逻辑。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:106
 msgid ""
@@ -131,6 +157,9 @@ msgid ""
 "could then handle the construction using its fast C++ code, and the script "
 "code would be free from the perils of imperative code."
 msgstr ""
+"为了减轻工作量，如果可以批处理创建和设置节点层次结构所涉及的所有操作，将会非"
+"常方便。然后引擎就可以使用它的快速c++代码来处理构造，并且脚本代码将从命令式代"
+"码的危险中解放出来。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:111
 msgid ""
@@ -138,6 +167,8 @@ msgid ""
 "resource that provides an advanced \"constructor\" serialization which is "
 "offloaded to the engine for batch processing."
 msgstr ""
+"*这*就是场景(:参考:`打包场景<类_打包场景>`)：提供高级“构造函数”序列化的资源，"
+"该序列化被卸载到引擎进行批处理。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:115
 msgid ""
@@ -146,10 +177,12 @@ msgid ""
 "scripted root node that makes use of the sub-nodes. This means that the "
 "scene is often an extension of the script's declarative code."
 msgstr ""
+"为什么这些对场景组织很重要呢？因为我们必须明白场景*是*对象。通常将场景与使用"
+"子节点的脚本根节点进行配对。这意味着场景通常是脚本声明性代码的扩展。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:120
 msgid "It helps to define..."
-msgstr ""
+msgstr "它有助于定义……"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:122
 #, fuzzy
@@ -158,15 +191,15 @@ msgstr "脚本的作用"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:124
 msgid "how are they organized?"
-msgstr ""
+msgstr "它们是如何组织的?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
 msgid "how are they initialized?"
-msgstr ""
+msgstr "它们是如何初始化的？"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
 msgid "what connections to each other do they have, if any?"
-msgstr ""
+msgstr "它们之间是否有联系，如果有的话?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
 msgid ""
@@ -175,6 +208,8 @@ msgid ""
 "in one scene (which are often bundled into the scene itself). Other scripts "
 "are meant to be re-used between scenes."
 msgstr ""
+"因此，许多面向对象的原则适用于“编程”，也就是说，脚本*仍然*适用于场景。有些脚"
+"本只在一个场景中工作(通常是绑定到场景本身)。其他脚本是为了在场景之间复用。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:135
 msgid ""
@@ -182,3 +217,5 @@ msgid ""
 "therefore be interpreted as a part of the class.** Most of the points "
 "covered in this series will build on this point, so keep it in mind."
 msgstr ""
+"**无论如何，场景始终是根脚本的扩展，因此可以解释为类的一部分。**本系列涵盖的"
+"大部分观点都将建立在这点上，所以请牢记这一点。"

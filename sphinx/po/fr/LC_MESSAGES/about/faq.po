@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,22 +45,21 @@ msgid "In short:"
 msgstr "En bref :"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Vous pouvez télécharger et utiliser Godot pour tout usage, qu'il soit "
-"personnel, libre, commercial ou autre;"
+"Vous êtes autorisé à télécharger et à utiliser Godot pour tout usage, qu'il "
+"soit personnel, libre, commercial ou autre."
 
 #: ../../docs/about/faq.rst:14
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Vous pouvez modifier, distribuer, redistribuer et remixer Godot autant que "
-"vous le voulez, pour n'importe quelle raison, que ce soit commercialement ou "
-"non."
+"Vous êtes libre de modifier, distribuer, redistribuer et remixer Godot comme "
+"bon vous semble, pour quelque raison que ce soit, à la fois de manière non "
+"commerciale et commerciale."
 
 #: ../../docs/about/faq.rst:16
 msgid ""
@@ -430,7 +429,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "À partir de Godot 3.0, glTF est pris en charge."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -441,14 +439,14 @@ msgstr ""
 "Le SDK du format FBX a une `licence très restrictive <http://www.blender.org/"
 "bf/Autodesk_FBX_License.rtf>`_, qui est incompatible avec la `licence libre "
 "<http://opensource.org/licenses/MIT>`_ fournie par Godot. Ceci étant dit, "
-"FBX peut tout de même être fourni par des tiers en tant que plugin. (Voir la "
-"section Plugins ci-dessus.)"
+"FBX peut tout de même être fourni par des tiers en tant que plugins. (Voir "
+"la section Plugins ci-dessus.)"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
-"Est-ce que [Insérer un SDK fermé tel que PhysX, GameWorks, etc.] sera un "
+"Est-ce que [Insérer un SDK fermé tel que FMOD, GameWorks, etc.] sera un "
 "jour, supporté dans Godot ?"
 
 #: ../../docs/about/faq.rst:161
@@ -458,10 +456,10 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
-"Le but de Godot est de créer un moteur de jeu gratuit, couvert par "
-"l'extensible et modulaire licence open source MIT. La communauté autour du "
-"moteur de jeu ne prévoit aucun support de projets tiers/SDK propriétaire, du "
-"fait que leur intégration irait à l'encontre de l'éthique de Godot."
+"Le but de Godot est de créer un moteur de jeu modulaire, extensible, libre "
+"et open-source couvert par la licence MIT. La communauté autour du moteur de "
+"jeu ne prévoit aucun support de projets tiers/SDK propriétaire, du fait que "
+"leur intégration irait à l'encontre de l'éthique de Godot."
 
 #: ../../docs/about/faq.rst:166
 msgid ""
@@ -471,17 +469,16 @@ msgid ""
 msgstr ""
 "Cela dit, parce que Godot est open source et modulaire, rien n'empêche que "
 "vous ou toute autre personne intéressée ajoutiez ces bibliothèques en tant "
-"que module et que vous les livriez avec votre jeu -- qu'il soit open source "
-"ou non."
+"que module et que vous les livriez avec votre jeu -- qu'il soient open-"
+"source ou non."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
-"Pour voir comment la prise en charge de votre kit de développement de choix "
-"pourrait encore être fournis, regardez la question des plugins ci-dessus."
+"Pour voir comment la prise en charge de votre kit de développement préféré "
+"pourrait encore être fourni, regardez la question des plugins ci-dessus."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -553,18 +550,16 @@ msgstr ""
 "plus elles prendront de mémoire et plus le temps de chargement sera long."
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Utilisez les options d'étirement dans Godot, l'étirement 2D avec maintien de "
-"l'aspect fonctionne le mieux. Consultez le tutoriel :ref:"
+"Utilisez les options d'étirement dans Godot, l'étirement 2D conservant "
+"l'aspect originel fonctionne le mieux. Consultez le tutoriel :ref:"
 "`doc_multiple_resolutions` sur la façon d'y parvenir."
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -574,8 +569,8 @@ msgstr ""
 "Déterminez une résolution minimale et décidez ensuite si vous souhaitez que "
 "votre jeu s'étire verticalement ou horizontalement pour différents rapports "
 "d'aspect, ou s'il y a une résolution minimale et que vous souhaitez que des "
-"barres noires apparaissent à la place. Ceci est également expliqué dans "
-"l'étape précédente."
+"barres noires apparaissent à la place. Ceci est également expliqué dans :ref:"
+"`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:210
 msgid ""

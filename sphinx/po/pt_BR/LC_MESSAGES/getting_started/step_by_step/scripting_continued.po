@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Esse método será chamado toda vez que um quadro é desenhado:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -63,16 +63,19 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"É importante ter em mente que a frequência que o ``_process()`` será chamado "
+"depende de quantos quadros por segundo (FPS) sua aplicação está rodando. "
+"Essa taxa pode variar com o tempo e dispositivos."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"O parâmetro ``delta`` contém o tempo decorrido em segundos, como número "
-"real, desde a chamada anterior de ``_process()``."
+"Para ajudar a gererênciar essa variabilidade o parâmetro ``delta`` contém o "
+"tempo decorrido em segundos, como número real, desde a chamada anterior de "
+"``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -118,13 +121,12 @@ msgstr ""
 "Sua execução é feita depois do passo da física em jogos de thread única."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Uma maneira simples de testar isso é criar uma cena com um único nó Rótulo, "
-"com o seguinte roteiro:"
+"Uma maneira simples de ver a função ``_process()`` funcionando é criar uma "
+"cena com um único nó Label, com o seguinte roteiro:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -152,6 +154,8 @@ msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"E a segunda maneira é por código. O sequinte script adicionará o nó atual ao "
+"grupo ``enemies`` assim que aparecesse na árvore de cena."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -192,10 +196,10 @@ msgid ""
 "you have some time!"
 msgstr ""
 "A classe :ref:`SceneTree <class_SceneTree>` fornece muitos métodos úteis, "
-"como interagir com cenas, sua hierarquia de nós e grupos de nós. Ela lhe "
-"permite facilmente trocar cenas ou recarregá-las, sair do jogo ou suspendê-"
-"lo ou retomá-lo. Ela até vem com sinais interessantes. Então dê uma "
-"conferida nela se tiver um tempo!"
+"como interagir com cenas, suas hierarquias e grupos de nós. Ela lhe permite "
+"facilmente trocar ou recarregar cenas, sair do jogo ou suspendê-lo ou retomá-"
+"lo. Ela até vem com sinais interessantes. Então dê uma olhada nela se tiver "
+"um tempo!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 msgid "Notifications"
@@ -265,15 +269,14 @@ msgstr ""
 "``free()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
 "Quando um nó é liberado da memória, ele também libera todos os seus nós "
-"filhos. Por isso, excluir nós manualmente é mais simples do que aparenta. "
-"Libere o nó base e todo o resto na subárvore vai embora junto com ele."
+"filhos. Por isso, excluir nós manualmente é mais simples do que parece. "
+"Libere o nó base e todo o resto vai embora junto com ele."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""

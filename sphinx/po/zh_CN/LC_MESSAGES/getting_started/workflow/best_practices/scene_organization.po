@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,16 +28,18 @@ msgid ""
 "content. Which nodes should one use? Where should one place them? How should "
 "they interact?"
 msgstr ""
+"本文讨论与场景内容的有效组织相关的主题。应该使用哪些节点？应该把它们放在哪"
+"里？它们应该如何互动？"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:11
 msgid "How to build relationships effectively"
-msgstr ""
+msgstr "如何有效地建立配置关系"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:13
 msgid ""
 "When Godot users begin crafting their own scenes, they often run into the "
 "following problem:"
-msgstr ""
+msgstr "当Godot用户开始制作自己的场景时，他们经常遇到以下问题："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:16
 msgid ""
@@ -49,6 +51,10 @@ msgid ""
 "node paths do not find their targets. Signal connections established in the "
 "editor break."
 msgstr ""
+"他们创造了自己的第一个场景，并在需要将其分割成可复用的部分之前，将其填满内"
+"容。将场景的分支保存到自己的场景中。随后他们注意到，以前可以依赖的硬引用，现"
+"在已经不可用了。在多个位置复用场景会产生问题，因为节点路径找不到它们的目标。"
+"在编辑器内，中断已建立的信号连接。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
 msgid ""
@@ -57,6 +63,8 @@ msgid ""
 "that the sub-scene will create itself without being picky about how one uses "
 "it."
 msgstr ""
+"为了解决这些问题，必须实例化子场景，而不需要详细说明其环境。我们需要相信子场"
+"景能够创建自己，而无需挑剔如何使用它。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:29
 msgid ""
@@ -66,12 +74,16 @@ msgid ""
 "objects small (for maintainability) and improves their reusability so that "
 "re-writing completed logic is unnecessary."
 msgstr ""
+"在面向对象的程序设计中，需要考虑的最重要的事情之一是保持专注，使用“松散耦合"
+"<https://en.wikipedia.org/wiki/Loose_coupling>”到代码库的其他部分的单用途类。"
+"这使对象的尺寸尽可能小(为了可维护性)并提高了它们的可复用性，因此无需重写已完"
+"成的逻辑。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:36
 msgid ""
 "These OOP best practices have *several* ramifications for the best practices "
 "in scene structure and script usage."
-msgstr ""
+msgstr "这些面向对象的最佳实践，对场景结构和脚本使用中的最佳实践有*几个*分支。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:39
 msgid ""
@@ -79,6 +91,8 @@ msgid ""
 "That is, one should create scenes that keep everything they need within "
 "themselves."
 msgstr ""
+"**如果可能的话，应该设计没有依赖关系的场景。**也就是说，用户在创造场景时，要"
+"对他们所需的一切谙熟于心。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:43
 msgid ""
@@ -89,12 +103,16 @@ msgid ""
 "which rely on their external environment can inadvertently trigger bugs and "
 "unexpected behavior."
 msgstr ""
+"如果场景必须与外部环境交互，经验丰富的开发人员建议使用“依赖注入<https://en."
+"wikipedia.org/wiki/Dependency_injection>_.”这种技术是让一个高级API提供低级API"
+"的依赖关系。为什么这样做呢?因为依赖于外部环境的类，可能在无意中触发bug和意外"
+"行为。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:50
 msgid ""
 "To do this, one must expose data and then rely on a parent context to "
 "initialize it:"
-msgstr ""
+msgstr "要做到这一点，必须公开数据，然后依赖父级上下文来初始化它:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:53
 msgid ""
@@ -102,10 +120,12 @@ msgid ""
 "behavior, not start it. Note that signal names are usually past-tense verbs "
 "like \"entered\", \"skill_activated\", or \"item_collected\"."
 msgstr ""
+"连接到一个信号。非常安全,但是应该只用于“回应”行为，而不是启动它。注意，信号名"
+"通常是过去时态动词，如“进入后”，“技能_激活后”或“物品_收集后”。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:74
 msgid "Call a method. Used to start behavior."
-msgstr ""
+msgstr "调用一个方法。用于启动行为。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:93
 msgid ""
@@ -115,11 +135,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:113
 msgid "Initialize a Node or other Object reference."
-msgstr ""
+msgstr "初始化节点或其他对象引用。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:132
 msgid "Initialize a NodePath."
-msgstr ""
+msgstr "初始化节点路径。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:151
 msgid ""
@@ -127,6 +147,8 @@ msgid ""
 "keeps the child **loosely coupled** to its environment. One can re-use it in "
 "another context without any extra changes to its API."
 msgstr ""
+"这些选项对子节点隐藏访问源。反过来，又保持子节点与环境的**松散耦合**。可以在"
+"另外的上下文中重用它，而无需对它的API做任何额外更改。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:157
 msgid ""
@@ -135,6 +157,8 @@ msgid ""
 "should only be aware of their hierarchies while an ancestor mediates their "
 "communications and references."
 msgstr ""
+"虽然上面的例子说明了父子关系，同样的原则也适用于所有对象之间的关系。兄弟节点"
+"应该只知道它们的层次结构，而先祖节点则负责协调它们的通信和引用。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:204
 msgid ""
@@ -142,6 +166,8 @@ msgid ""
 "dependencies on other objects. Whichever object actually owns the objects "
 "should manage the relationships between them."
 msgstr ""
+"同样的原则也适用于维护对其他对象依赖关系的非节点对象。无论哪个对象实际拥有这"
+"些对象，都应该管理它们之间的关系。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:210
 msgid ""
@@ -154,6 +180,11 @@ msgid ""
 "is otherwise known as development hell. Writing code that relies on external "
 "documentation for one to use it safely is error-prone by default."
 msgstr ""
+"应该倾向于将数据保存在内部(场景内部)，尽管它依赖于外部环境，即使是松散耦合"
+"的，仍然意味着节点将期望其环境中的某些内容为真。项目的设计理念应该防止这种情"
+"况发生。如果不是这样，代码固有的责任将迫使开发人员使用文档，以在微观尺度上跟"
+"踪对象关系；这就是所谓的开发地狱。默认情况下，编写依赖于外部文档的代码来安全"
+"地使用它，是很容易出错的。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:219
 msgid ""
@@ -168,6 +199,12 @@ msgid ""
 "then self-documents the scene through the script code. No content "
 "duplication via documentation is necessary."
 msgstr ""
+"为避免创建和维护此类文档，将依赖节点(上面的“子节点”)转换为实现的工具脚本:参"
+"考:`_获取_配置_警告() <类_节点_方法__获取_配置_警告>`。返回一个非空字符串，将"
+"使场景面板生成一个警告图标，该字符串作为节点的工具提示。这是节点出现的相同图"
+"标，例如:参考:`二维区域<类_二维区域>`节点，当它没有定义:参考:`二维碰撞形状<类"
+"_二维碰撞形状>`子节点时。然后编辑器通过脚本代码自动记录场景。不需要通过文档复"
+"制内容。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:230
 msgid ""
@@ -177,6 +214,9 @@ msgid ""
 "will need clear instructions in the messages telling them what to do to "
 "configure it."
 msgstr ""
+"这样的图形用户界面可以更好地向项目用户提供关于节点的关键信息。它有外部依赖"
+"吗？这些依赖关系是否得到了满足？其他程序员，尤其是设计师和编剧们，需要明确指"
+"示的消息，告诉他们如何配置它。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:235
 msgid ""
@@ -187,12 +227,18 @@ msgid ""
 "scenes in unforeseen ways, then things break down. A change to one class "
 "could result in damaging effects to other classes."
 msgstr ""
+"那么，为什么所有这些复杂的切换都能工作呢？因为当场景单独运行时，效果最好。如"
+"果不能独自工作，那么就匿名与其他对象合作(具有最小的硬依赖关系，即松散耦合)。"
+"如果一个类不可避免的变化导致它以不可预见的方式与其他场景交互，然后事情就发生"
+"了变化。对一个类的更改可能会对其他类造成破坏性的影响。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:242
 msgid ""
 "Scripts and scenes, as extensions of engine classes should abide by *all* "
 "OOP principles. Examples include..."
 msgstr ""
+"脚本和场景，作为引擎类的扩展，应该*全部*遵循面向对象的程序设计原则。例子包"
+"括……"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:245
 #, fuzzy
@@ -228,6 +274,10 @@ msgid ""
 "But, for those who are unsure, this helpful guide can give them a sample of "
 "a decent structure to start with."
 msgstr ""
+"一个开发者开始开发一款游戏，却在眼前的巨大可能性面前止步不前。他们可能知道自"
+"己想做什么，他们想要什么样的系统，但是把它们都放在*哪里*呢？好吧，如何创造他"
+"们的游戏总是取决于他们自己。可以用多种方法构造节点树。但是，对于那些不确定的"
+"人来说，这篇有用的指南可以为他们提供一个良好结构的示例。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:260
 msgid ""
@@ -238,17 +288,20 @@ msgid ""
 "applications, this would be the \"main\" function. In this case, it would be "
 "a Main node."
 msgstr ""
+"游戏应该始终有一个“切入点”；在任何地点，开发人员都能明确跟踪事件的开始位置，"
+"以便在其他地方继续执行逻辑。这个地点也作为鸟瞰程序中所有其他数据和逻辑的地"
+"方。对于传统的应用程序，这就是“主”函数。在本例中，它将是一个主节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:266
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:277
 msgid "Node \"Main\" (main.gd)"
-msgstr ""
+msgstr "节点“主”(main.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:268
 msgid ""
 "The ``main.gd`` script would then serve as the primary controller of one's "
 "game."
-msgstr ""
+msgstr "``main.gd``脚本将作为游戏的主控制器。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:271
 msgid ""
@@ -256,14 +309,16 @@ msgid ""
 "child of Main. In addition, one will need a primary GUI for their game that "
 "manages the various menus and widgets the project needs."
 msgstr ""
+"然后你便拥有了真正的游戏“世界”(二维或三维)。这可以是主场景的子节点。此外，玩"
+"家需要为他们的游戏提供一个主要图形用户界面来管理项目所需的各种菜单和小部件。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:276
 msgid "Node2D/Spatial \"World\" (game_world.gd)"
-msgstr ""
+msgstr "二维节点/空间“世界”(game_world.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:277
 msgid "Control \"GUI\" (gui.gd)"
-msgstr ""
+msgstr "控制“图形用户界面”(gui.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:279
 msgid ""
@@ -271,30 +326,32 @@ msgid ""
 "node. :ref:`Changing scenes manually <doc_change_scenes_manually>` gives "
 "users full control over how their game world transitions."
 msgstr ""
+"当变更关卡时，可以替换“世界”节点的子节点。:参考:`手动更换场景<文档_手动_更换_"
+"场景>`让用户完全控制他们的游戏世界如何过渡。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:283
 msgid ""
 "The next step is to consider what gameplay systems one's project requires. "
 "If one has a system that..."
-msgstr ""
+msgstr "下一步是考虑项目需要什么样的游戏系统。如果有这么一个系统……"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:286
 msgid "tracks all of its data internally"
-msgstr ""
+msgstr "跟踪所有的内部数据"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:287
 msgid "should be globally accessible"
-msgstr ""
+msgstr "应该是全局可访问的"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:288
 msgid "should exist in isolation"
-msgstr ""
+msgstr "应该独立存在的"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:290
 msgid ""
 "... then one should create an :ref:`autoload 'singleton' node "
 "<doc_singletons_autoload>`."
-msgstr ""
+msgstr "……那么应该创建一个:参考:`自动加载'单例'节点<文档_单例_自动加载>`节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:294
 msgid ""
@@ -304,6 +361,9 @@ msgid ""
 "content. This structure more or less keeps the \"World\" as the main game "
 "node."
 msgstr ""
+"对于较小的游戏，一个更简单、更少控制的选择，是简单地调用一个“游戏”单例:参考:`"
+"场景树.更换_场景() <类_场景树_方法_更换_场景>`方法替换主场景的内容。这种结构"
+"或多或少保留了作为主要游戏节点的“世界”。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:300
 msgid ""
@@ -311,6 +371,8 @@ msgid ""
 "\", or be manually added as a direct child of the root. Otherwise, the GUI "
 "nodes would also delete themselves during scene transitions."
 msgstr ""
+"任何图形用户界面也需要是一个单例，成为“世界”过渡的一部分，或者作为根的直接子"
+"元素手动添加。否则，图形界面用户节点也会在场景转换期间删除它们自己。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:305
 msgid ""
@@ -319,6 +381,9 @@ msgid ""
 "on the reasons, please see the :ref:`'Autoloads vs. Internal Nodes' "
 "<doc_autoloads_versus_internal_nodes>` documentation."
 msgstr ""
+"如果一个系统修改了其他系统的数据，应该将它们定义为自己的脚本或场景，而不是自"
+"动加载。更多关于该原因的信息，请参阅:参考:`'自动加载和内部节点'<文档_自动加载"
+"_和_内部_节点>`文档。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:311
 msgid ""
@@ -329,6 +394,9 @@ msgid ""
 "should have its own place in the hierarchy as a sibling or some other "
 "relation."
 msgstr ""
+"游戏中的每个子系统都应该在场景树中有自己的区域。只有在节点实际上是其父节点的"
+"元素的情况下，才能使用父子关系。删除父节点是否意味着也应该删除子节点？如果不"
+"是这样，那么它应该在层次结构中有自己的位置，作为兄弟或其他关系。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:319
 msgid ""
@@ -340,17 +408,21 @@ msgid ""
 "node. To assign the ``target`` :ref:`NodePath <class_NodePath>`, use one of "
 "the following:"
 msgstr ""
+"在某些情况下，我们需要这些分离的节点*仍然*定位它们彼此之间的相对位置。为此，"
+"可以使用:参考:`移除转换<类_移除转换>`/:参考:`移除二维转换<类_移除二维转换>`节"
+"点。它们将允许目标节点有条件地从远程\\*节点继承选定的转换元素。要分配“目标”:"
+"参考:`节点路径<类_节点路径>`，使用以下方法之一："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:327
 msgid ""
 "A reliable third party, likely a parent node, to mediate the assignment."
-msgstr ""
+msgstr "一个可靠的第三方，可能是一个父节点，来协调分配任务。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:328
 msgid ""
 "A group, to easily pull a reference to the desired node (assuming there will "
 "only ever be one of the targets)."
-msgstr ""
+msgstr "一个组，以便拉到所需节点的引用(假设目标只有一个)。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:331
 msgid ""
@@ -358,37 +430,39 @@ msgid ""
 "when one must micro-manage when a node must move around the SceneTree to "
 "preserve itself. For example..."
 msgstr ""
+"什么时候应该这样做呢？好吧，这取决于它们自身。当一个节点必须围绕场景树移动以"
+"保持自身时，必须对其进行微观管理时，就会出现这种困境。例如……"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:335
 msgid "Add a \"player\" node to a \"room\"."
-msgstr ""
+msgstr "添加一个“玩家”节点到一个“房间”。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:336
 msgid "Need to change rooms, so one must delete the current room."
-msgstr ""
+msgstr "需要更换房间，所以必须删除当前的房间。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:337
 msgid ""
 "Before the room can be deleted, one must preserve and/or move the player."
-msgstr ""
+msgstr "在可以删除房间之前，必须保存和/或移动玩家。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:339
 msgid "Is memory a concern?"
-msgstr ""
+msgstr "需要关心内存吗？"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:341
 msgid ""
 "If not, one can just create the two rooms, move the player and delete the "
 "old one. No problem."
-msgstr ""
+msgstr "如果不是这样，一次可以创建两个房间，移动玩家并删除旧的那个。没有问题。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:344
 msgid "If so, one will need to..."
-msgstr ""
+msgstr "如果是这样，那么需要……"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:346
 msgid "Move the player somewhere else in the tree."
-msgstr ""
+msgstr "将玩家移动到树的其他位置。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:347
 #, fuzzy
@@ -397,7 +471,7 @@ msgstr "删除轨道"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:348
 msgid "Instantiate and add the new room."
-msgstr ""
+msgstr "实例化并添加新房间。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:349
 #, fuzzy
@@ -413,32 +487,38 @@ msgid ""
 "is dangerous. It's a maintenance burden, strains code readability, and "
 "bloats the intellectual content of a project unnecessarily."
 msgstr ""
+"问题在于，这里的玩家是一个“特例”，其中开发者必须“懂得”他们需要以这种方式处理"
+"项目中的玩家。因此，作为一个团队可靠地共享此信息的唯一方法就是“记录”它。然"
+"而，在文档中保存实现细节是危险的。这是一种维护负担，增加了代码的可读性压力，"
+"以及增加了项目内不必要的知识内容。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:358
 msgid ""
 "In a more complex game with larger assets, it can be a better idea to simply "
 "keep the player somewhere else in the SceneTree entirely. This involves..."
 msgstr ""
+"更复杂的游戏，拥有更大的资源量，简单地将玩家完全保留在场景中的其他地方，可能"
+"是一个更好的主意。这涉及到……"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:361
 msgid "More consistency."
-msgstr ""
+msgstr "更多的一致性。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid "No \"special cases\" that must be documented and maintained somewhere."
-msgstr ""
+msgstr "没有必须被记录和维护在某地的“特殊情况”。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:363
 msgid ""
 "No opportunity for errors to occur because these details are not accounted "
 "for."
-msgstr ""
+msgstr "没有发生错误的机会，因为忽略不计这些细节。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:366
 msgid ""
 "In contrast, if one ever needs to have a child node that does *not* inherit "
 "the transform of their parent, one has the following options:"
-msgstr ""
+msgstr "相比之下，如果需要一个子节点不继承父节点的转换，那么具有以下选项："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:369
 msgid ""
@@ -446,6 +526,8 @@ msgid ""
 "them. As nodes with no transform, Nodes will not pass along such information "
 "to their children."
 msgstr ""
+"**声明性**解决方案是：在它们之间放置一个:参考:`节点<类_节点>`。作为没有转换的"
+"节点，节点不会将这些信息传递给其子节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:372
 msgid ""
@@ -454,6 +536,9 @@ msgid ""
 "<class_Spatial_method_set_as_toplevel>` node. This will make the node ignore "
 "its inherited transform."
 msgstr ""
+"**必要**解决方案:对:参考:`画布组件<类_画布组件_方法_设置_为_顶级>` 或者:参考:"
+"`空间<类_空间_方法_设置_为_顶级>`节点，使用``设置_为_顶级``设值函数。这将使节"
+"点忽略其继承的转换。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:379
 msgid ""
@@ -464,6 +549,10 @@ msgid ""
 "keeping these in a separate branch from the \"world\" can help simplify the "
 "management of game connections and the like."
 msgstr ""
+"如果创建一个网络游戏，请记住哪些节点和游戏系统与所有玩家相关，而哪些只与权威"
+"服务器相关。例如，用户并不需要拥有所有玩家“玩家角色控制器”逻辑的副本。相反，"
+"他们只需属于自己的角色控制器。因此,将它们与“世界”保持在一个单独的分支中，可以"
+"帮助简化游戏连接等的管理。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:386
 msgid ""
@@ -473,6 +562,10 @@ msgid ""
 "else. If so, then it stands to reason they should be children of that parent "
 "(and likely part of that parent's scene if they aren't already)."
 msgstr ""
+"场景组织的关键是用关系术语，而不是空间术语来考虑场景。节点是否需要依赖于其父"
+"节点的存在？如果不是，那么它们可以在其他地方独自成长。如果是这样，那么很显"
+"然，它们应该是父节点的子节点(如果它们不是这样做的话，那很可能是其父场景的一部"
+"分)。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:392
 msgid ""
@@ -481,3 +574,6 @@ msgid ""
 "one still has the flexibility to move nodes around, it is still best when "
 "such moves are unnecessary by default."
 msgstr ""
+"这是否意味着节点本身就是组件？并不是这样。Godot的节点树形成的是聚合关系，而不"
+"是组合关系。虽然我们依旧可以灵活地移动节点，但在默认情况下，无需移动，仍然是"
+"最好的选择。"

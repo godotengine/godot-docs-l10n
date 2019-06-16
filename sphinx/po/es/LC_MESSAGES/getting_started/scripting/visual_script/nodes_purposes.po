@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -787,22 +787,23 @@ msgid "Built-In"
 msgstr "Funciones propias"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
+#, fuzzy
 msgid ""
 "There is a list of built-in helpers. The list is almost identical to the one "
-"from GDScript (@TODO, link to gdscript methods?). Most of them are "
-"mathematical functions, but others can be useful helpers. Make sure to take "
-"a look at the list at some point."
+"from :ref:`GDScript<class_@GDScript>`. Most of them are mathematical "
+"functions, but others can be useful helpers. Make sure to take a look at the "
+"list at some point."
 msgstr ""
 "Hay una lista de utilidades integradas. La lista es casi idéntica a la de "
 "GDScript. La mayoría de ellos son funciones matemáticas, pero otras pueden "
 "ser útiles para facilitar operaciones comunes. Asegúrate de echar un vistazo "
 "a la lista en algún momento."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:404
 msgid "By Type"
 msgstr "By Type"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:408
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
 msgid ""
 "Those are the methods available to basic types. For example, if you want a "
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
@@ -813,11 +814,11 @@ msgstr ""
 "Vector3. En la mayoría de los casos sólo hay que buscar en la lista de "
 "nodos, debería ser más rápido."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:411
 msgid "Call"
 msgstr "Call"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:415
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
@@ -825,11 +826,11 @@ msgstr ""
 "Esta es la llamada a nodo genérica. Es raramente utilizada directamente, se "
 "utiliza arrastrando desde un nodo ya configurado."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
 msgstr "Constructores"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:421
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
 "These are all the functions needed to create Godot basic datatypes. For "
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
@@ -839,11 +840,11 @@ msgstr ""
 "Godot. Por ejemplo, si necesitas crear un Vector3 desde 3 floats, se debe "
 "utilizar un constructor."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:425
 msgid "Destructor"
 msgstr "Destructor"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:429
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
@@ -851,11 +852,11 @@ msgstr ""
 "Es lo contrario al Constructor, permite separar tipos básicos en sus sub-"
 "elementos."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:433
 msgid "Emit Signal"
 msgstr "Emitir Señal"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:437
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid ""
 "Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
@@ -863,11 +864,11 @@ msgstr ""
 "Emite señales desde cualquier objeto. En general no es tan útil, ya que "
 "arrastrar una señal al área de trabajo es lo más eficaz."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:439
 msgid "Get/Set"
 msgstr "Get/Set"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:443
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
 msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
@@ -875,11 +876,11 @@ msgstr ""
 "Nodo Setter/Getter genérico. Arrastrando propiedades desde el Inspector "
 "suele ser mejor, ya que aparecen configuradas al soltar."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
 msgstr "Wait"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:449
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid ""
 "The Wait nodes will suspend execution of the function until something "
 "happens (many frames can pass until resuming, in fact). Default nodes allow "
@@ -891,11 +892,11 @@ msgstr ""
 "nodos permiten esperar un frame, un fixed frame o una cantidad de tiempo "
 "dada antes de resumir la ejecución."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 msgid "Yield"
 msgstr "Yield"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:456
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
 "This node completely suspends the execution of the script, and it will make "
 "the function return a value that can be used to resume execution."
@@ -903,19 +904,19 @@ msgstr ""
 "Este nodo suspende completamente la ejecución del script y hará que la "
 "función retorne un valor que puede ser utilizado para continuar la ejecución."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:458
 msgid "Yield Signal"
 msgstr "Señal Yield"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:462
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Same as Yield, but will wait until a given signal is emitted."
 msgstr "Lo mismo que Yield, pero espera a que determinada señal sea emitida."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
 msgstr "Index"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:468
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
@@ -923,11 +924,11 @@ msgstr ""
 "Operador de indexación genérico, no muy usado pero es bueno que esté por si "
 "acaso."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:470
 msgid "Operators"
 msgstr "Operadores"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
 msgid ""
 "These are mostly generic operators, such as addition, multiplication, "
 "comparison, etc. By default, these mostly accept any datatype (and will "
@@ -942,11 +943,11 @@ msgstr ""
 "correcto para que los operadores detecten los errores rápidamente y "
 "faciliten la lectura del grafo."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:481
 msgid "Expression Node"
 msgstr "Expression Node"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:485
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid ""
 "Among the operators, the *Expression* node is the most powerful. If well "
 "used, it allows you to enormously simplify visual scripts that are math or "
@@ -957,11 +958,11 @@ msgstr ""
 "punto de vista matemático o lógico. Escribe cualquier expresión en él y se "
 "ejecutará en tiempo real."
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:486
 msgid "Expression nodes can:"
 msgstr "Los nodos Expression pueden:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:490
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
@@ -970,11 +971,11 @@ msgstr ""
 "personalizadas (ej. \"a*5+b\", donde a y b son tipos de entrada "
 "personalizados):"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:495
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:493
 msgid "Access local variables or properties:"
 msgstr "Acceder a variables locales o propiedades:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:500
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:498
 msgid ""
 "Use most of the existing built-in functions that are available to GDScript, "
 "such as sin(),cos(),print(), as well as constructors, such as Vector3(x,y,z),"
@@ -984,11 +985,11 @@ msgstr ""
 "sin(), cos(), print, así como constructores como Vector3(x,y,z),Rect2(...), "
 "etc.:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:505
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503
 msgid "Call API functions:"
 msgstr "Funciones API Call:"
 
-#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:510
+#: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:508
 msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"

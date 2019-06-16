@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -329,11 +329,18 @@ msgstr ""
 msgid "Success!"
 msgstr "성공!"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:167
+msgid ""
+"If this doesn't immediately work and you have a hiDPI display on at least "
+"one of your monitors, go to **Project → Project Settings → Display → "
+"Window** then enable **Allow Hidpi** under **Dpi**."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
 msgid "Configuring the project"
 msgstr "프로젝트 구성하기"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:177
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
@@ -345,7 +352,7 @@ msgstr ""
 "를 메인 씬으로 지정해야 합니다. 언제나 프로젝트를 실행할 때 준비가 된 씬 말이"
 "죠."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
 msgid ""
 "These settings are all stored in a project.godot file, which is a plaintext "
 "file in win.ini format (for easy editing). There are dozens of settings that "
@@ -359,11 +366,11 @@ msgstr ""
 "히 하기 위해, Godot는 project.godot 파일을 편집하기 위한 프로젝트 설정 대화 "
 "상자를 제공합니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr "대화 상자에 들어가기 위해, 프로젝트 -> 프로젝트 설정으로 가세요."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:190
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
@@ -371,7 +378,7 @@ msgstr ""
 "창을 열었다면, 메인 씬을 선택합니다. 'Application/Run/Main Scene' 속성으로 가"
 "서 'hello.tscn'을 선택합니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
@@ -379,7 +386,7 @@ msgstr ""
 "이제 변경했으니, 평범한 실행 버튼을 누를 때 (혹은F5를 누를 때), 어떤 씬을 편"
 "집하는 도중이더라도, 설정한 씬이 실행될 것입니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:191
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:198
 msgid ""
 "The project settings dialog provides a lot of options that can be saved to a "
 "project.godot file and shows their default values. If you change a value, a "
@@ -390,7 +397,7 @@ msgstr ""
 "저장하거나 기본 값으로 되돌릴 수 있습니다. 값을 변경하게 되면, 이름 왼쪽에 체"
 "크 표시가 뜹니다. 이는 그 속성이 project.godot 파일에 저장되었다는 것입니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
@@ -399,11 +406,11 @@ msgstr ""
 "또한, :ref:`ProjectSettings <class_ProjectSettings>` 싱글톤(singleton)을 사용"
 "해서 런타임에 쓰이는 사용자 구성 옵션을 추가할 수도 있습니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:207
 msgid "To be continued..."
 msgstr "계속..."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:202
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
 msgid ""
 "This tutorial talked about \"scenes and nodes\", but so far there has been "
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,330 +27,256 @@ msgstr "소개"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
 msgid ""
-"Tilemaps can be used to make levels for 2D games. A tilemap is a grid of "
-"(usually square) image tiles which form the scenery of a level or area in a "
-"game. The placed tiles in a tilemap are instances of 'reference tiles' from "
-"a tileset. The tileset can be thought of as a pallete with which a tilemap "
-"(level) can be 'painted':"
+"A tilemap is a grid of tiles used to create a game's layout. There are "
+"several benefits to using :ref:`TileMap <class_TileMap>` nodes to design "
+"your levels. First, they make it possible to draw the layout by \"painting' "
+"the tiles onto a grid, which is much faster than placing individual :ref:"
+"`Sprite <class_Sprite>` nodes one by one. Second, they allow for much larger "
+"levels because they are optimized for drawing large numbers of tiles. "
+"Finally, you can add collision, occlusion, and navigation shapes to tiles, "
+"adding additional functionality to the TileMap."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:14
-#, fuzzy
+#: ../../docs/tutorials/2d/using_tilemaps.rst:21
+msgid "Project setup"
+msgstr "프로젝트 설정하기"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:23
 msgid ""
-"Collision shapes can be added to the tiles in a tileset to create solid "
-"geometry. Tilemaps can be used for both side view and top-down 2D games."
-msgstr ""
-"충돌 효과를 타일에 추가할 수도 있어 2D 사이드 스크롤링과 탑 다운 게임을 할 "
-"수 있습니다."
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:17
-msgid "Making a tileset"
+"This demo we'll use the following tiles taken from Kenney's \"Abstract "
+"Platformer\" art pack. You can find the complete set `here <https://kenney."
+"nl/assets/abstract-platformer>`_ but for this demo we'll stick to this small "
+"set."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:19
-#, fuzzy
-msgid ""
-"Here are some tiles for a tileset. They are all part of the same image file. "
-"This is helpful for a game's performance. There are so-called *texture "
-"packers* that will generate these spritesheets out of several separate tile "
-"images. But keeping them as separate images also works."
+#: ../../docs/tutorials/2d/using_tilemaps.rst:29
+msgid "Create a new project and place the above image in the project folder."
 msgstr ""
-"타일셋을 만들어야 합니다. 여기에 만들기 위한 약간의 타일이 있습니다. 최적화"
-"의 이유로 동일한 이미지에 모두 담겨있습니다. 각각의 텍스쳐 파일들을 이러한 스"
-"프라이트시트로 생성한 것을 *texture packers*라 불립니다. 또한 별도의 이미지"
-"로 가지고 있어도 효과가 있습니다"
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:27
-#, fuzzy
-msgid ""
-"Create a new project and move the above PNG image into the project "
-"directory. Next, go into the image's import settings and turn off "
-"``Filter``. Keeping it on will cause issues later. ``Mipmaps`` should "
-"already be disabled; if not, disable this too."
-msgstr ""
-"새 프로젝트를 만들고 위 PNG 이미지를 프로젝트 위치에 옮겨 봅시다. 다음으로 이"
-"미지 가져오기 설정에 가서 ``Filter``를 끕니다, keeping it on will cause "
-"issues later.. ``Mipmaps`` 옵션은 이미 비활성화되어 있지만 그렇지 않다면 이것"
-"도 끄도록 합니다."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:31
 msgid ""
-"The easiest way to edit and maintain a tileset is exporting it from a "
-"specially prepared scene. We'll create that next."
-msgstr ""
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:35
-msgid "TileSet scene"
+"When using a tileset, it's important that adjacent tiles match up. Godot's "
+"default is to import 2D images using an interpolated \"filter\" mode, which "
+"will result in ugly borders between the tiles. Select the image and click "
+"the Import tab. Turn off ``Filter`` and click \"Reimport\". See :ref:"
+"`doc_import_images` for details."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
 #, fuzzy
-msgid ""
-"Create a new scene with a regular Node or Node2D as root. For each reference "
-"tile you want to define, add a sprite node as a child. Since our tiles "
-"measure 50x50 pixels, you should turn on the grid (``View -> Show Grid`` or "
-"``G`` key) and enable snap (``Use Snap`` icon or ``Shift + S`` keys). Moving "
-"tiles with the mouse might still be inaccurate, so use your arrow keys as "
-"well."
-msgstr ""
-"새 씬을 만들고 루트 노드는 Node 또는 Node2D로 합니다. 정의하려는 각 타일에 대"
-"해 스프라이트 노드를 자식 노드로 추가합니다. Since tiles here are 50x50, you "
-"should turn on the grid (``보기 -> 격자 보기`` 또는 ``G`` 키) 그리고 스냅을 "
-"활성화합니다 (``스냅 사용`` 아이콘 또는 ``Shift + S`` 키). 마우스로 타일들을 "
-"움직이려면 여전히 약간 부정확할 수 있으므로 방향키를 사용합니다."
+msgid "TileMap node"
+msgstr "카메라 노드"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:43
-#, fuzzy
+#: ../../docs/tutorials/2d/using_tilemaps.rst:39
 msgid ""
-"If more than one tile is present in the source image, make sure to use the "
-"region property of the sprite to adjust which part of the texture is being "
-"used."
+"Add a new :ref:`TileMap <class_TileMap>` node to the scene. By default, a "
+"TileMap uses a square grid of tiles. You can also use a perspective-based "
+"\"Isometric\" mode or define your own custom tile shape."
 msgstr ""
-"원본 이미지에 두 개 이상의 타일이 있다면 사용 중인 텍스쳐 부분을 조정하기 위"
-"해서 스프라이트의 Region 속성을 사용해야 합니다."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:47
-#, fuzzy
+#: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid ""
-"Give the sprite node an appropriate and unique name. This will ensure that, "
-"in subsequent edits to the tileset (for example, if you've added collision, "
-"changed the region, etc), the tile will still be **identified correctly and "
-"updated**."
+"Under the \"Cell\" section in the Inspector are many properties you can "
+"adjust to customize your tilemap's behavior:"
 msgstr ""
-"마지막으로 스프라이트 노드 이름을 올바르게 지어야 합니다. 그래야 다음의 타일"
-"셋 편집(예를 들어 충돌효과를 주거나 Region을 변경하는 등)에서 타일이 **정확하"
-"게 식별되고 업데이트** 됩니다. 이름은 유일해야 합니다."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:52
 #, fuzzy
-msgid "Here's a screenshot that shows where everything of relevance is:"
-msgstr ""
-"아까 말한 필요사항이 어디에 있는지 보여주는 스크린샷이 여기에 있습니다:"
+msgid "``Cell Size``"
+msgstr "``Center``"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:57
+#: ../../docs/tutorials/2d/using_tilemaps.rst:51
+msgid ""
+"This defines the size of the grid. This should match the pixel size of your "
+"tiles. The default value is ``(64, 64)``."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:56
+msgid "``YSort``"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:55
+msgid ""
+"This causes tiles to be drawn in order of their ``Y`` position, so that "
+"\"lower\" tiles are drawn on top of \"higher\" ones."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:59
+msgid "``Half Offset`` and ``Tile Origin``"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:59
+msgid ""
+"These properties affect the position of the tile relative to the grid "
+"position."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:63
+msgid "``Quadrant``"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:62
+msgid ""
+"Defines the chunk size used for batched drawing. This can negatively affect "
+"performance. Don't change it unless you know what you're doing."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:66
+#, fuzzy
+msgid "``Custom Transform``"
+msgstr "변형"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:66
+msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:68
+msgid "All of these options can be left at their defaults for this demo."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:71
+#, fuzzy
+msgid "Creating a TileSet"
+msgstr "타일셋(TileSet) 내보내기"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:73
+msgid ""
+"Once you've configured your tilemap, it's time to add a :ref:`TileSet "
+"<class_TileSet>`. A TileSet is a :ref:`Resource <class_Resource>` that "
+"contains the data about your tiles - their   textures, collision shapes, and "
+"other properties. When the game runs, the TileMap combines the individual "
+"tiles into a single object."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:79
+msgid ""
+"To add a new TileSet, click on the \"Tile Set\" property and select \"New "
+"TileSet\"."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:84
 #, fuzzy
 msgid ""
-"Add all the reference tiles in the way described above, adjusting the "
-"offsets as needed (that is, if you have multiple tiles in a single source "
-"image). Again, *remember that their names must be unique*."
+"When you do this, the \"TileSet\" panel will open at the bottom of the "
+"editor window:"
 msgstr ""
-"모든 타일을 계속 추가하고 필요한 경우 오프셋을 조정하세요(즉, 단일 원본 이미"
-"지에 여러 타일이 있는 경우). 다시 말하자면 *타일 이름이 유일해야 한다는 것을 "
-"기억하세요*."
+"새 SpriteFrames 리소스를 클릭하면 에디터 창 하단에 새로운 패널이 나타날 것입"
+"니다:"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:64
+#: ../../docs/tutorials/2d/using_tilemaps.rst:89
+msgid ""
+"First, you need to add the texture(s) that you'll use for the tiles. Click "
+"the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
+"image."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:92
+msgid ""
+"Next, click \"New Single Tile\" and drag in the image to select the tile you "
+"want. Click the \"Enable Snap\" button to make it easier to select the "
+"entire tile. A yellow rectangle appears around the selected tile."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:98
+msgid ""
+"Click on the TileMap in the scene tree, and you'll see that the newly "
+"created tile now appears on the right side. Click in the viewport and you "
+"can place tiles. Right-click to remove them."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:104
+msgid ""
+"It's easy to accidentally select and move the tilemap node. To avoid this, "
+"use the node's lock button:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:110
 #, fuzzy
 msgid "Collision Shapes"
 msgstr "충돌 모양"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:66
-#, fuzzy
+#: ../../docs/tutorials/2d/using_tilemaps.rst:112
 msgid ""
-"To add collision shapes to the tiles, create a StaticBody2D child for each "
-"sprite. This is a static collision node. Then create a CollisionShape2D or "
-"CollisionPolygon as a child of the StaticBody2D. The CollisionPolygon is "
-"easier to edit."
+"If you're making a map that needs collisions - walls, floor, or other "
+"obstacles, for example - then you'll need to add collision shapes to any "
+"tiles that you want to be considered \"solid\"."
 msgstr ""
-"타일에 충돌효과를 넣기 위해서 스프라이트 자식 노드로 StaticBody2D 노드를 만듭"
-"니다. StaticBody2D는 static collision 노드입니다. 그런 다음 CollisionShape2D "
-"또는 CollisionPolygon를  StaticBody2D 자식 노드로 만듭니다. CollisionPolygon"
-"이 편집하기 쉬우므로 추천합니다."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:72
-#, fuzzy
+#: ../../docs/tutorials/2d/using_tilemaps.rst:116
 msgid ""
-"Edit the polygon; this will give the tile a collision shape and remove the "
-"warning icon next to the CollisionPolygon node. **Remember to use snap!** "
-"Using snap will make sure collision polygons are aligned properly, allowing "
-"a character to walk seamlessly from tile to tile. Also **do not scale or "
-"move** the collision and/or collision polygon nodes. Leave them at offset "
-"0,0, with scale 1,1 and rotation 0 with respect to the parent sprite."
+"Click \"TileSet\" at the bottom of the editor window to return to the "
+"tileset tool. Click the tile you previously defined (outlined in yellow). "
+"Select the \"Collision\" tab and click the \"Create a new rectangle\" "
+"button. Make sure you still have grid snap enabled, then click and drag in "
+"the tile. A square collision shape appears in light blue:"
 msgstr ""
-"마지막으로, CollisionPolygon2D를 편집해서 타일에 충돌효과를 주고 "
-"CollisionPolygon node 옆 경고 아이콘을 고칩니다. **스냅 사용하는 것을 기억하"
-"세요!** 스냅 사용은 충돌 폴리곤(collision polygons)이 확실하게 제대로 정렬되"
-"어 캐릭터가 타일 간에 매끄럽게 이동할 수 있습니다. 또한 충돌 노드 및 충돌 폴"
-"리곤 노드 **크기를 조정하거나 움직이지 마세요**. 부모 스프라이트에 대하여 오"
-"프셋 0,0과 스케일 1,1 회전 0으로 두세요."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:81
-#, fuzzy
+#: ../../docs/tutorials/2d/using_tilemaps.rst:124
 msgid ""
-"Keep adding collision shapes to all tiles that need them. Note that BG is a "
-"background tile, so it should not have a collision shape."
-msgstr ""
-"다 할 때까지 충돌 효과를 추가합니다. BG는 그냥 배경이므로 충돌효과를 주어선 "
-"안되는 것을 유의하세요."
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:86
-#, fuzzy
-msgid ""
-"Then save this scene for future editing. \"tileset_edit.scn\" would be a "
-"sensible name for it."
-msgstr ""
-"됐습니다! 우리는 해냈습니다! 나중에 편집할 수 있도록 이 씬을 저장하십시오. 씬"
-"을 \"tileset_edit.scn\" 또는 비슷한 이름으로 짓습니다."
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:90
-msgid "Exporting a TileSet"
-msgstr "타일셋(TileSet) 내보내기"
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:92
-#, fuzzy
-msgid ""
-"With the scene created and still open in the editor, use Scene > Convert To "
-"> Tile Set from the Scene Menu:"
-msgstr ""
-"에디터에서 만들었던 씬을 연 다음 타일셋을 만들겁니다. 씬 메뉴에서 씬 > 변"
-"환... > 타일 셋... 을 이용하여 만듭니다:"
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:96
-#, fuzzy
-msgid ""
-"Then choose a filename, like \"mytiles.tres\". Make sure the \"Merge With "
-"Existing\" option is toggled on. This way, every time the tileset resource "
-"file is overwritten, existing tiles are merged and updated (they are "
-"referenced by their unique name, so again, **name your tiles properly**)."
-msgstr ""
-"\"mytiles.tres\"와 같은 파일이름으로 내보내십시오. 내보낼 때 \"기존과 병합\" "
-"옵션을 켜져 있는지 확인하십시오. 이렇게 하면 매번 타일셋 리소스 파일을 덮어"
-"쓸 때마다 기존 파일이 병합되고 업데이트 됩니다. 타일들은 고유한 이름에 의하"
-"여 참조되므로 **타일 이름을 올바르게 지어주십시오**."
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:105
-msgid "Using the TileSet in a TileMap"
-msgstr "타일맵에서 타일셋을 사용하기"
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:107
-msgid ""
-"Create a new scene, using any node or node2d as root, and then create a :ref:"
-"`TileMap <class_TileMap>` as a child."
-msgstr ""
-"새 씬을 만드십시오. 루트는 Node 또는 Node2D로 합니다. 그런 다음 자식 노드로 :"
-"ref:`TileMap <class_TileMap>`을 만드십시오."
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:113
-msgid ""
-"Go to the TileSet property of this node and assign the one created in "
-"previous steps:"
-msgstr ""
-"타일맵 노드의 타일셋 속성으로 가서 이전 단계에서 만든 타일셋을 할당하십시오:"
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:118
-#, fuzzy
-msgid ""
-"Also set the cell size to '50', since that is the size used by the tiles. "
-"Quadrant size is a tuning value. The default value of 16 means that the "
-"engine will draw and cull (erase) the tilemap in blocks of 16x16 tiles. This "
-"value is usually fine, but can be used to fine tune performance in specific "
-"cases if you know what you're doing."
-msgstr ""
-"또한 타일에 사용되는 크기인 셀 크기를 50으로 설정하세요. . 사분면 크기"
-"(Quadrant size)는 엔진이 16x16 타일 블록으로 타일맵을 그리고 도려내는 것을 의"
-"미하는 튜닝(tuning) 값입니다. 이 값은 대개 양호하고 바꿀 필요는 없지만 특정 "
-"사례(무엇을 하고 있는지 알고 있는 경우)에서 성능을 미세조정하는데 사용될 수 "
-"있습니다."
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:125
-msgid "Painting your world"
+"You can add occlusion and navigation shapes to the tile in the same way."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:127
-#, fuzzy
-msgid ""
-"Make sure the TileMap node is selected. A red grid will appear on the "
-"screen, allowing you to paint on it with the tile currently selected in the "
-"left palette."
-msgstr ""
-"모두 설정이 된 상태에서 타일맵 노드가 선택되었는지 확인하십시오. 왼쪽 팔레트"
-"에 선택된 타일로 칠할 수 있는 빨간 격자가 화면에 나타날 겁니다."
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:133
-msgid ""
-"It's easy to accidentally select and move the tilemap node. To avoid this "
-"use the node's lock button:"
+msgid "Atlas tiles"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:138
+#: ../../docs/tutorials/2d/using_tilemaps.rst:129
 msgid ""
-"If you accidentally place a tile somewhere you don't want it to be, you can "
-"delete it with ``RMB`` (the right mouse button) while in the tilemap editor."
+"Rather than adding individual tiles one at a time, you can define a group of "
+"tiles all at once using an atlas. Click \"New Atlas\" and drag to select the "
+"entire tile sheet."
 msgstr ""
-"만약 실수로 원하지 않은 곳에 타일을 놓았다면 타일맵 에디터에서 ``RMB`` (마우"
-"스 오른쪽 버튼)으로 제거할 수 있습니다."
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:135
+msgid ""
+"If you haven't already, make sure to change the \"Step\" in the snap "
+"settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
+"You can find this in the Inspector:"
+msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:141
-#, fuzzy
 msgid ""
-"You can flip and rotate sprites in the TileMap editor (note: flipping the "
-"sprite in the TileSet will have no effect). Icons at the top right of the "
-"editor allow flipping and rotating of the currently selected sprite - you "
-"can also use the A and S keys to flip the sprite horizontally and "
-"vertically. With a brick pattern like this tutorial uses, flipping the "
-"sprites would create unpleasant discontinuities unless you're flipping an "
-"entire region of bricks. But for some kinds of tiles, flipping can be a "
-"convenient and space-saving feature."
-msgstr ""
-"타일맵 에디터에서 스프라이트를 뒤집고 회전할 수 있습니다(타일셋에서 스프라이"
-"트를 뒤집는 것은 효과가 없음). 에디터 상단 오른쪽에 있는 아이콘으로 선택한 스"
-"프라이트를 뒤집고 회전할 수 있습니다. 또한 A키와 S키로 상하 또는 좌우로 뒤집"
-"을 수 있습니다. With a brick pattern like this tutorial uses, flipping the "
-"sprites would create unpleasant discontinuities unless you're flipping an "
-"entire region of bricks. 하지만 이러한 유형의 타일들이 뒤집기가 편리하고 공간"
-"을 절약하는 특징이 될 수 있습니다."
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:151
-msgid "Offset and scaling artifacts"
+"Once you've defined the atlas you can add collision shapes to the individual "
+"tiles as before. You can also click \"Icon\" to select one of the tiles to "
+"represent the atlas."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:153
-#, fuzzy
+#: ../../docs/tutorials/2d/using_tilemaps.rst:145
 msgid ""
-"When using a single texture for all the tiles, scaling the tileset or moving "
-"it to a non pixel-aligned location can cause filtering artifacts:"
-msgstr ""
-"모든 타일에 단일 텍스쳐를 사용할 때 타일셋을 스케일링(scaling)하는 것은(또는 "
-"심지어 픽셀이 정렬되지 않은 위치로 이동하는 경우에도) 다음과 같은 필터링 아티"
-"팩트(filtering artifacts)가 대부분 발생할 것이다."
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:157
-msgid ""
-"To avoid this situation use the approach below that makes the most sense for "
-"your game:"
+"Back in the TileMap, you can select the atlas tile and you'll see all of the "
+"tiles it contains:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:159
-#, fuzzy
+#: ../../docs/tutorials/2d/using_tilemaps.rst:150
 msgid ""
-"Disable filtering and mipmaps for either the tileset texture or all tile "
-"textures if using separate images (see the :ref:`doc_import_images` asset "
-"pipeline tutorial)."
+"In addition to saving time when defining the tiles, this can help by "
+"grouping similar tiles together when you're working with a large number of "
+"tiles."
 msgstr ""
-"타일셋 텍스쳐 또는 만약 별도의 이미지를 사용한다면 모든 타일 텍스쳐에 대해서 "
-"filtering과 mipmaps를 비활성화하십시오 (see the :ref:`doc_import_images` "
-"asset pipeline tutorial)."
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:154
+msgid "Tips and tricks"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:156
+msgid ""
+"If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
+"may notice lines appearing between your tiles. To fix this, open Project "
+"Settings and enable \"Use Pixel Snap\" in the \"Rendering/Quality\" section."
+msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:160
 msgid ""
-"Enable pixel snap (Set ``Project > Project Settings > Rendering > Quality > "
-"2d > Use Pixel Snap`` to true; you can also search for ``Pixel Snap``)."
+"You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr ""
-"픽셀 스냅을 활성화하세요. (``프로젝트 > 프로젝트 설정 > Rendering > Quality "
-"> 2d > Use Pixel Snap`` 또는  ``Pixel Snap`` 검색해서 사용으로 체크합니다)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:162
 msgid ""
-"Viewport Scaling can often help with shrinking the map (see the :ref:"
-"`doc_viewports` tutorial). Adding a camera, setting it to ``Current`` and "
-"playing around with its ``Zoom`` may be a good starting point."
+"To draw straight lines, hold <Shift> while clicking and dragging a tile."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:164
-#, fuzzy
 msgid ""
-"You can use a single, separate image for each tile. This will remove all "
-"artifacts, but can be more cumbersome to implement and is less optimized."
+"Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
+"menu in the upper-right."
 msgstr ""
-"각 타일마다 별도의 이미지를 하나씩 사용할 수 있습니다. 이렇게 하면 모든 아티"
-"팩트(artifacts)를 없앨 수 있겠지만 구현하기가 더 번거로울 수 있고 최적화가 "
-"덜 됩니다."

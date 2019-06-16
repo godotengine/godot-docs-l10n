@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,23 +75,33 @@ msgstr ""
 "습니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
+#, fuzzy
 msgid ""
 "Open the platformer demo in Godot, and then the Robi scene. Select the "
 "``Skeleton`` node. A skeleton button appears on the top bar menu:"
 msgstr ""
+"Godot에서 플랫포머 데모를 열고 Robi 씬을 엽니다. ``Skeleton`` 노드를 선택하세"
+"요. 상단 바 메뉴에 스켈레톤 버튼이 나타납니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:27
+#, fuzzy
 msgid ""
 "Click it and select the ``Create physical skeleton`` option. Godot will "
 "generate ``PhysicalBone`` nodes and collision shapes for each bone in the "
 "skeleton and pin joints to connect them together:"
 msgstr ""
+"버튼을 클릭하고 ``Create physical skeleton`` 옵션을 선택하세요. Godot이 "
+"``PhysicalBone`` 노드와 스켈레톤의 각 뼈에 대한 충돌 모양과 핀 접합부를 생성"
+"하여 서로 연결합니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:31
+#, fuzzy
 msgid ""
 "Some of the generated bones aren't necessary: the ``MASTER`` bone for "
 "example. So we're going to clean up the skeleton by removing them."
 msgstr ""
+"생성된 뼈들 중 일부는 필요하지 않습니다. 예: ``MASTER`` 뼈. 그래서 우리는 그 "
+"뼈들을 제거함으로서 스켈레톤을 정리합니다."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:34
 msgid "Cleaning up the skeleton"
@@ -172,7 +182,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:80
 msgid "Collision layer and mask"
-msgstr ""
+msgstr "충돌 레이어와 마스크"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:82
 msgid ""

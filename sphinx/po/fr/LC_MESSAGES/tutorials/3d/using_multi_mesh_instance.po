@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:4
 msgid "Using MultiMeshInstance"
-msgstr ""
+msgstr "Utilisation de MultiMeshInstance"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:7
 msgid "Introduction"
@@ -36,6 +36,15 @@ msgid ""
 "conducive to rapid iterations. :ref:`MultiMeshInstance "
 "<class_MultiMeshInstance>` is one of the possible solutions to this problem."
 msgstr ""
+"Dans un scénario normal, vous utiliseriez un nœud :ref:`MeshInstance "
+"<class_MeshInstance>` pour afficher un maillage 3D comme un modèle humain "
+"pour le personnage principal, mais dans certains cas, vous voudriez créer "
+"plusieurs instances du même maillage dans une scène. Vous pouvez dupliquer "
+"le même nœud plusieurs fois et ajuster les transformations manuellement. Ce "
+"processus peut être fastidieux et le résultat peut sembler mécanique. De "
+"plus, cette méthode n'est pas propice aux itérations rapides : :ref:"
+"`MultiMeshInstance <class_MultiMeshInstance>` est une des solutions "
+"possibles à ce problème."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:18
 msgid ""
@@ -44,38 +53,51 @@ msgid ""
 "tree mesh populate a landscape mesh with trees of random scales and "
 "orientations."
 msgstr ""
+"MultiMeshInstance, comme son nom l'indique, crée plusieurs copies d'une "
+"MeshInstance sur une surface d'un maillage spécifique. Par exemple, un "
+"maillage d'arbre peut peupler un maillage paysage avec des arbres d'échelles "
+"et d'orientations aléatoires."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:23
 msgid "Setting up the nodes"
-msgstr ""
+msgstr "Configuration des nœuds"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:25
 msgid ""
 "The basic setup requires three nodes: the MultiMeshInstance node and two "
 "MeshInstance nodes."
 msgstr ""
+"La configuration de base nécessite trois nœuds : le nœud MultiMeshInstance "
+"et deux nœuds MeshInstance."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:28
 msgid ""
 "One node is used as the target, the mesh that you want to place multiple "
 "meshes on. In the tree example, this would be the landscape."
 msgstr ""
+"Un nœud est utilisé comme cible, le maillage sur lequel vous voulez placer "
+"plusieurs maillages. Dans l'exemple de l'arbre, ce serait le paysage."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:31
 msgid ""
 "The other node is used as the source, the mesh that you want to have "
 "duplicated. In the tree case, this would be the tree itself."
 msgstr ""
+"L'autre nœud est utilisé comme source, le maillage que vous voulez "
+"dupliquer. Dans le cas de l'arbre, ce serait l'arbre lui-même."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:34
 msgid ""
 "In our example, we would use a :ref:`Spatial <class_Spatial>` node as the "
 "root node of the scene. Your scene tree would look like this:"
 msgstr ""
+"Dans notre exemple, nous utiliserions un nœud :ref:`Spatial <class_Spatial>` "
+"comme nœud racine de la scène. Votre arbre de scène ressemblerait à ceci :"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:39
 msgid "For simplicity's sake, this tutorial uses built-in primitives."
 msgstr ""
+"Pour des raisons de simplicité, ce tutoriel utilise des primitives intégrées."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:41
 msgid ""
@@ -84,6 +106,11 @@ msgid ""
 "``View``. Click it and select *Populate surface* in the dropdown menu. A new "
 "window titled *Populate MultiMesh* will pop up."
 msgstr ""
+"Maintenant, tout est prêt. Sélectionnez le nœud MultiMeshInstance et "
+"regardez la barre d'outils, vous devriez voir un bouton supplémentaire "
+"appelé ``MultiMesh`` à côté de ``Affichage``. Cliquez dessus et sélectionnez "
+"*Peupler la surface* dans le menu déroulant. Une nouvelle fenêtre intitulée "
+"*Peupler la MultiMesh* s'ouvrira."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:51
 msgid "MultiMesh settings"
@@ -91,57 +118,59 @@ msgstr "Paramètres MultiMesh"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:53
 msgid "Below are descriptions of the options."
-msgstr ""
+msgstr "Vous trouverez ci-dessous la description des options."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:56
 msgid "Target Surface"
-msgstr ""
+msgstr "Surface cible"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:58
 msgid ""
 "The mesh used as the target surface on which to place copies of your source "
 "mesh."
 msgstr ""
+"Le maillage utilisé comme surface cible sur laquelle placer des copies de "
+"votre maillage source."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:62
 msgid "Source Mesh"
-msgstr ""
+msgstr "Maillage source"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:64
 msgid "The mesh you want duplicated on the target surface."
-msgstr ""
+msgstr "Le maillage que vous voulez dupliquer sur la surface cible."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:67
 msgid "Mesh Up Axis"
-msgstr ""
+msgstr "Mesh Up Axis"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:69
 msgid "The axis used as the up axis of the source mesh."
-msgstr ""
+msgstr "L'axe utilisé comme axe ascendant du maillage source."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:72
 msgid "Random Rotation"
-msgstr ""
+msgstr "Rotation aléatoire"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:74
 msgid "Randomizing the rotation around the up axis of the source mesh."
-msgstr ""
+msgstr "Randomiser la rotation autour de l'axe ascendant du maillage source."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:77
 msgid "Random Tilt"
-msgstr ""
+msgstr "Inclinaison aléatoire"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:79
 msgid "Randomizing the overall rotation of the source mesh."
-msgstr ""
+msgstr "Randomiser la rotation globale du maillage source."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:82
 msgid "Random Scale"
-msgstr ""
+msgstr "Échelle aléatoire"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:84
 msgid "Randomizing the scale of the source mesh."
-msgstr ""
+msgstr "Randomiser l'échelle du maillage source."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
@@ -151,14 +180,15 @@ msgstr "Scale"
 msgid ""
 "The scale of the source mesh that will be placed over the target surface."
 msgstr ""
+"L'échelle du maillage source qui sera placé sur la surface de la cible."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:92
 msgid "Amount"
-msgstr ""
+msgstr "Amount"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:94
 msgid "The amount of mesh instances placed over the target surface."
-msgstr ""
+msgstr "Le nombre d'instances de maillage placées sur la surface de la cible."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:96
 msgid ""
@@ -168,12 +198,20 @@ msgid ""
 "source mesh will be placed over the target mesh. If you are satisfied with "
 "the result, you can delete the mesh instance used as the source mesh."
 msgstr ""
+"Sélectionnez la surface cible. Dans le cas d'un arbre, il doit s'agir du "
+"nœud paysage. Le maillage source doit être le nœud arbre. Ajustez les autres "
+"paramètres selon vos préférences. Appuyez sur \"Peupler\" et plusieurs "
+"copies du maillage source seront placées sur le maillage cible. Si vous êtes "
+"satisfait du résultat, vous pouvez supprimer l'instance de maillage utilisée "
+"comme maillage source."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:102
 msgid "The end result should look like this:"
-msgstr ""
+msgstr "Le résultat final devrait ressembler à ceci :"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:106
 msgid ""
 "To change the result, repeat the previous steps with different parameters."
 msgstr ""
+"Pour changer le résultat, répétez les étapes précédentes avec des paramètres "
+"différents."

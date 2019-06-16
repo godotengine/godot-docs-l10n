@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,121 +25,129 @@ msgstr "使用外部的文本编辑器"
 #, fuzzy
 msgid ""
 "Godot can be used with an external text editor, such as Sublime Text or "
-"Visual Studio Code. To select an external text editor via the Godot editor "
-"menu: ``Editor -> Editor Settings -> Text Editor -> External``"
+"Visual Studio Code. To enable an external text editor, browse to the "
+"relevant editor settings via: ``Editor -> Editor Settings -> Text Editor -> "
+"External``"
 msgstr ""
 "虽然 Godot 拥有内置的文本编辑器，但一些开发人员倾向于使用他们熟悉的文本编辑"
 "器。 Godot 通过 ``编辑器 ->编辑器设置 ->文本编辑器 ->外部`` 下的选项提供此选"
 "项"
 
-#: ../../docs/getting_started/editor/external_editor.rst:11
+#: ../../docs/getting_started/editor/external_editor.rst:12
 #, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
-"allow you to better integrate the editor with Godot. Godot will replace the "
-"following inside the flags parameter:"
+"allow you to integrate the editor with Godot, passing it the file path to "
+"open and other relevant arguments. Godot will replace the following "
+"placeholders in the flags string:"
 msgstr ""
 "有两个字段:可执行路径和命令行标志。这些标志允许您更好地将编辑器集成到Godot"
 "上。 Godot将在标志参数中替换以下内容:"
 
-#: ../../docs/getting_started/editor/external_editor.rst:16
+#: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
 msgstr "Exec 标志中的字段"
 
-#: ../../docs/getting_started/editor/external_editor.rst:16
+#: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Is replaced with"
 msgstr "被替换为"
 
-#: ../../docs/getting_started/editor/external_editor.rst:18
-msgid "{project}"
+#: ../../docs/getting_started/editor/external_editor.rst:20
+#, fuzzy
+msgid "``{project}``"
 msgstr "{project}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:18
+#: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "The absolute path to the project directory"
 msgstr "项目目录的绝对路径"
 
-#: ../../docs/getting_started/editor/external_editor.rst:20
-msgid "{file}"
+#: ../../docs/getting_started/editor/external_editor.rst:22
+#, fuzzy
+msgid "``{file}``"
 msgstr "{file}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:20
+#: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "The absolute path to the file"
 msgstr "文件的绝对路径"
 
-#: ../../docs/getting_started/editor/external_editor.rst:22
-msgid "{col}"
+#: ../../docs/getting_started/editor/external_editor.rst:24
+#, fuzzy
+msgid "``{col}``"
 msgstr "{col}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:22
+#: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The column number of the error"
 msgstr "错误的列号"
 
-#: ../../docs/getting_started/editor/external_editor.rst:24
-msgid "{line}"
+#: ../../docs/getting_started/editor/external_editor.rst:26
+#, fuzzy
+msgid "``{line}``"
 msgstr "{line}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:24
+#: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The line number of the error"
 msgstr "错误的行号"
 
-#: ../../docs/getting_started/editor/external_editor.rst:27
+#: ../../docs/getting_started/editor/external_editor.rst:29
 msgid "Some example Exec Flags for various editors include:"
 msgstr "各种编辑器的一些示例Exec标志:"
 
-#: ../../docs/getting_started/editor/external_editor.rst:30
+#: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Editor"
 msgstr "编辑器"
 
-#: ../../docs/getting_started/editor/external_editor.rst:30
+#: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Exec Flags"
 msgstr "Exec 标志"
 
-#: ../../docs/getting_started/editor/external_editor.rst:32
+#: ../../docs/getting_started/editor/external_editor.rst:34
 #, fuzzy
 msgid "Geany/Kate"
 msgstr "geany/kate"
 
-#: ../../docs/getting_started/editor/external_editor.rst:32
+#: ../../docs/getting_started/editor/external_editor.rst:34
 #, fuzzy
-msgid "{file} -\\-line {line} -\\-column {col}"
+msgid "``{file} --line {line} --column {col}``"
 msgstr "{file} --行 {line} --列 {col}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:34
+#: ../../docs/getting_started/editor/external_editor.rst:36
 #, fuzzy
 msgid "Atom/Sublime Text"
 msgstr "atom/sublime text"
 
-#: ../../docs/getting_started/editor/external_editor.rst:34
-msgid "{file}:{line}"
+#: ../../docs/getting_started/editor/external_editor.rst:36
+#, fuzzy
+msgid "``{file}:{line}``"
 msgstr "{file}:{line}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:36
+#: ../../docs/getting_started/editor/external_editor.rst:38
 #, fuzzy
 msgid "JetBrains Rider"
 msgstr "jetbrains车手"
 
-#: ../../docs/getting_started/editor/external_editor.rst:36
+#: ../../docs/getting_started/editor/external_editor.rst:38
 #, fuzzy
-msgid "-\\-line {line} {file}"
+msgid "``--line {line} {file}``"
 msgstr "--行 {line} {file}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:38
+#: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
-#: ../../docs/getting_started/editor/external_editor.rst:38
+#: ../../docs/getting_started/editor/external_editor.rst:40
 #, fuzzy
-msgid "{project} -\\-goto {file}:{line}:{col}"
+msgid "``{project} --goto {file}:{line}:{col}``"
 msgstr "{project} --goto {file}:{line}:{col}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:40
+#: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "Vim (gVim)"
 msgstr ""
 
-#: ../../docs/getting_started/editor/external_editor.rst:40
-msgid "\"+call cursor({line}, {col})\" {file}"
+#: ../../docs/getting_started/editor/external_editor.rst:42
+msgid "``\"+call cursor({line}, {col})\" {file}``"
 msgstr ""
 
-#: ../../docs/getting_started/editor/external_editor.rst:43
-msgid "For Visual Studio Code you will have to point to the \"code.cmd\" file."
-msgstr ""
+#: ../../docs/getting_started/editor/external_editor.rst:45
+#, fuzzy
+msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
+msgstr "对于Visual Studio Code编辑器来说，您必须指向\"code.cmd\"文件。"

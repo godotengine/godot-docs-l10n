@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgid ""
 msgstr ""
 "Vous pouvez créer autant de scènes que vous le souhaitez et les sauvegarder "
 "sur disque. Les scènes sauvegardées de cette manière sont appelées \"Scènes "
-"empaquetés\" (Packed Scenes) et ont une extension de nom de fichier ``."
+"empaquetés\" (*Packed Scenes*) et ont une extension de nom de fichier ``."
 "tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
@@ -185,7 +185,7 @@ msgid ""
 "to ``1``."
 msgstr ""
 "Ensuite, développez le contenu en cliquant dessus et définissez la propriété "
-"`` Bounce`` sur `` 1``."
+"``Bounce`` sur ``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
 msgid ""
@@ -199,15 +199,14 @@ msgstr ""
 "affecteront toutes les instances."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Set its "
 "``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
 "Vous pouvez également ajuster des instances individuelles. Réglez de nouveau "
-"la valeur de rebond sur ``0.5`` puis dans la scène ``Main``, sélectionnez "
-"l'une des boules instancées. Réglez son ``Bounce`` sur ``1`` et appuyez sur "
+"la valeur de rebond sur ``0``, puis dans la scène ``Main``, sélectionnez "
+"l'une des balles instanciées. Réglez son ``Bounce`` sur ``1`` et appuyez sur "
 "\"Jouer\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:113

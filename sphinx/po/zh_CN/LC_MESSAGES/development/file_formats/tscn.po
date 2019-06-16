@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +22,13 @@ msgid "TSCN file format"
 msgstr "TSCN文件格式"
 
 #: ../../docs/development/file_formats/tscn.rst:4
+#, fuzzy
 msgid ""
-"A :code:`.tscn` File format is the \"Text SCeNe\" file format and represents "
-"a single scene-tree inside Godot. TSCN files have the advantage of being "
-"nearly human-readable and easy for version control systems to manage. During "
-"import the TSCN files are compiled into binary :code:`.scn` files stored "
-"inside the .import folder. This reduces the data size and speed up loading."
+"The TSCN (text scene) file format represents a single scene tree inside "
+"Godot. TSCN files have the advantage of being mostly human-readable and easy "
+"for version control systems to manage. During import, TSCN files are "
+"compiled into binary ``.scn`` files stored inside the .import folder. This "
+"reduces the data size and speeds up loading."
 msgstr ""
 ":code:`.tscn` 文件格式是“Text SCeNe”文件格式，表示Godot内部的单个场景树。TSCN"
 "文件的优点是人类可读的，并且版本控制系统易于管理。在导入期间，TSCN文件被编译"
@@ -35,10 +36,11 @@ msgstr ""
 "了加载速度。"
 
 #: ../../docs/development/file_formats/tscn.rst:10
+#, fuzzy
 msgid ""
-"The :code:`.escn` file format is identical to the TSCN file format, but is "
-"used to indicate to Godot that the file has been exported from another "
-"program and should not be edited by the user from within Godot."
+"The ESCN (exported scene) file format is identical to the TSCN file format, "
+"but is used to indicate to Godot that the file has been exported from "
+"another program and should not be edited by the user from within Godot."
 msgstr ""
 ":code:`.escn` 文件格式与TSCN文件格式相同，但是用于向Godot指示从另一个程序导出"
 "的文件，并且不应该由用户在Godot内编辑。"
@@ -48,8 +50,8 @@ msgstr ""
 msgid ""
 "For those looking for a complete description, the parsing is handled in the "
 "file `resource_format_text.cpp <https://github.com/godotengine/godot/blob/"
-"master/scene/resources/resource_format_text.cpp>`_ in the class :code:"
-"`ResourceFormatLoaderText`"
+"master/scene/resources/resource_format_text.cpp>`_ in the "
+"``ResourceFormatLoaderText`` class."
 msgstr ""
 "对于那些寻找完整描述的人来说，可在类 :code:`ResourceFormatLoaderText` 中的 "
 "`scene_format_text.cpp <https://github.com/godotengine/godot/blob/master/"
@@ -60,7 +62,8 @@ msgid "File structure"
 msgstr "文件结构"
 
 #: ../../docs/development/file_formats/tscn.rst:21
-msgid "There are five main sections inside the TSCN File:"
+#, fuzzy
+msgid "There are five main sections inside the TSCN file:"
 msgstr "TSCN文件有五个主要部分:"
 
 #: ../../docs/development/file_formats/tscn.rst:23
@@ -68,12 +71,12 @@ msgid "File Descriptor"
 msgstr "文件描述符"
 
 #: ../../docs/development/file_formats/tscn.rst:24
-#: ../../docs/development/file_formats/tscn.rst:266
+#: ../../docs/development/file_formats/tscn.rst:273
 msgid "External resources"
 msgstr "外部资源"
 
 #: ../../docs/development/file_formats/tscn.rst:25
-#: ../../docs/development/file_formats/tscn.rst:287
+#: ../../docs/development/file_formats/tscn.rst:295
 msgid "Internal resources"
 msgstr "内部资源"
 
@@ -86,251 +89,290 @@ msgid "Connections"
 msgstr "连接"
 
 #: ../../docs/development/file_formats/tscn.rst:29
+#, fuzzy
 msgid ""
-"The file descriptor looks like :code:`[gd_scene load_steps=1 format=2]` And "
-"should be the first entry in the file. The load_steps parameter should (in "
-"theory) be the number of resources within the file, though in practice its "
-"value seems not to matter."
+"The file descriptor looks like ``[gd_scene load_steps=1 format=2]`` and "
+"should be the first entry in the file. The ``load_steps`` parameter should "
+"(in theory) be the number of resources within the file. However, in "
+"practice, its value seems not to matter."
 msgstr ""
 "文件描述符看起来就像 :code:`[gd_scene load_steps=1 format=2]` 并且应该是文件"
 "中的第一个条目。 load_steps参数应该(理论上)是文件中的资源数量，但实际上它的值"
 "似乎并不重要。"
 
 #: ../../docs/development/file_formats/tscn.rst:34
+#, fuzzy
 msgid ""
 "These sections should appear in order, but it can be hard to distinguish "
 "them. The only difference between them is the first element in the heading "
 "for all of the items in the section. For example, the heading of all "
-"external resources should start with :code:`[ext_resource .....]`"
+"external resources should start with ``[ext_resource .....]``."
 msgstr ""
 "这些部分应按顺序出现，但很难区分它们。 它们之间的唯一区别是标题中该部分中所有"
 "项目的第一个元素。 例如，所有外部资源的标题应该以:code:`[ext_resource .....]`"
 "开头"
 
-#: ../../docs/development/file_formats/tscn.rst:41
+#: ../../docs/development/file_formats/tscn.rst:39
+msgid ""
+"A TSCN file may contain single-line comments starting with a semicolon (``;"
+"``). However, comments will be discarded when saving the file using the "
+"Godot editor."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:43
 msgid "Entries inside the file"
 msgstr "文件中的条目"
 
-#: ../../docs/development/file_formats/tscn.rst:43
+#: ../../docs/development/file_formats/tscn.rst:45
+#, fuzzy
 msgid ""
-"A heading looks like: :code:`[<resource_type> key=value key=value "
-"key=value ...]` Where resource_type is one of:"
+"A heading looks like ``[<resource_type> key=value key=value key=value ...]`` "
+"where resource_type is one of:"
 msgstr ""
 "标题如下:: code:`[<resource_type> key = value key = value key = value ...]`其"
 "中resource_type是以下之一:"
 
-#: ../../docs/development/file_formats/tscn.rst:47
-msgid "ext_resource"
+#: ../../docs/development/file_formats/tscn.rst:49
+#, fuzzy
+msgid "``ext_resource``"
 msgstr "ext_resource"
 
-#: ../../docs/development/file_formats/tscn.rst:48
-msgid "sub_resource"
+#: ../../docs/development/file_formats/tscn.rst:50
+#, fuzzy
+msgid "``sub_resource``"
 msgstr "sub_resource"
 
-#: ../../docs/development/file_formats/tscn.rst:49
-msgid "node"
-msgstr "node"
-
-#: ../../docs/development/file_formats/tscn.rst:50
-msgid "connection"
-msgstr "connection"
+#: ../../docs/development/file_formats/tscn.rst:51
+#, fuzzy
+msgid "``node``"
+msgstr "``组节点``"
 
 #: ../../docs/development/file_formats/tscn.rst:52
+#, fuzzy
+msgid "``connection``"
+msgstr "connection"
+
+#: ../../docs/development/file_formats/tscn.rst:54
+#, fuzzy
 msgid ""
-"Underneath every heading comes zero or more :code:`key = value` pairs. The "
-"values can be complex datatypes such as arrays, transformations, colors, and "
-"so on. For example, a spatial node looks like:"
+"Below every heading comes zero or more ``key = value`` pairs. The values can "
+"be complex datatypes such as Arrays, Transforms, Colors, and so on. For "
+"example, a spatial node looks like:"
 msgstr ""
 "在每个标题下面都是零或更多:代码:`key = value`对。 值可以是复杂的数据类型，例"
 "如数组，转换，颜色等。 例如，空间节点如下所示:"
 
-#: ../../docs/development/file_formats/tscn.rst:62
+#: ../../docs/development/file_formats/tscn.rst:65
 msgid "The scene tree"
 msgstr "场景树"
 
-#: ../../docs/development/file_formats/tscn.rst:64
+#: ../../docs/development/file_formats/tscn.rst:67
+#, fuzzy
 msgid ""
-"The scene tree is made up of... nodes! The heading of each node consists of "
-"its name, parent and (most of the time) a type. For example :code:`[node "
-"type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]`"
+"The scene tree is made up of… nodes! The heading of each node consists of "
+"its name, parent and (most of the time) a type. For example ``[node type="
+"\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 msgstr ""
 "场景树由......节点组成！ 每个节点的标题由其名称，父级和(大多数时间)类型组"
 "成。 例如:code:`[node type =“Camera”name =“PlayerCamera”parent =“Player / "
 "Head”]`"
 
-#: ../../docs/development/file_formats/tscn.rst:68
+#: ../../docs/development/file_formats/tscn.rst:71
 msgid "Other valid keywords include:"
 msgstr "其他有效关键词包括:"
 
-#: ../../docs/development/file_formats/tscn.rst:70
-msgid "instance"
+#: ../../docs/development/file_formats/tscn.rst:73
+#, fuzzy
+msgid "``instance``"
 msgstr "实例"
 
-#: ../../docs/development/file_formats/tscn.rst:71
-msgid "instance_placeholder"
+#: ../../docs/development/file_formats/tscn.rst:74
+#, fuzzy
+msgid "``instance_placeholder``"
 msgstr "实例化占位符"
 
-#: ../../docs/development/file_formats/tscn.rst:72
-msgid "owner"
-msgstr "拥有者"
-
-#: ../../docs/development/file_formats/tscn.rst:73
-msgid "index (if two nodes have the same name)"
-msgstr "索引(如果两个节点具有相同的名称)"
-
-#: ../../docs/development/file_formats/tscn.rst:74
-msgid "groups"
-msgstr "组"
+#: ../../docs/development/file_formats/tscn.rst:75
+#, fuzzy
+msgid "``owner``"
+msgstr "中心"
 
 #: ../../docs/development/file_formats/tscn.rst:76
+#, fuzzy
+msgid "``index`` (if two nodes have the same name)"
+msgstr "索引(如果两个节点具有相同的名称)"
+
+#: ../../docs/development/file_formats/tscn.rst:77
+#, fuzzy
+msgid "``groups``"
+msgstr "``组节点``"
+
+#: ../../docs/development/file_formats/tscn.rst:79
+#, fuzzy
 msgid ""
-"The first node in the file should not have the :code:`parent=Path/To/Node` "
-"entry in it's heading, and it is the scene root. All scene files should have "
-"exactly one scene root. It it does not, Godot will fail to import the file. "
-"The parent path of other nodes should be absolute, but without the scene "
-"root's name. If it is a direct child of the scene root, it should be :code:`"
-"\".\"`. Here is an example scene tree (but without any node content)."
+"The first node in the file, which is also the scene root, must not have a "
+"``parent=Path/To/Node`` entry in its heading. All scene files should have "
+"exactly *one* scene root. If it doesn't, Godot will fail to import the file. "
+"The parent path of other nodes should be absolute, but shouldn't contain the "
+"scene root's name. If the node is a direct child of the scene root, the path "
+"should be ``\".\"``. Here is an example scene tree (but without any node "
+"content):"
 msgstr ""
 "文件中的第一个节点不应该在其标题中包含:code:`parent = Path / To / Node`条目，"
 "它是场景根。 所有场景文件应该只有一个场景根。 它没有，Godot将无法导入文件。 "
 "其他节点的父路径应该是绝对的，但没有场景根的名称。 如果它是场景根的直接子节"
 "点，它应该是:code:`“。”`。 这是一个示例场景树(但没有任何节点内容)。"
 
-#: ../../docs/development/file_formats/tscn.rst:90
+#: ../../docs/development/file_formats/tscn.rst:95
+#, fuzzy
 msgid ""
 "Similar to the internal resource, the document for each node is currently "
-"incomplete. Fortunately it is easy to find out because you can simply save a "
-"file with that node in it. Some example nodes are:"
+"incomplete. Fortunately, it is easy to find out because you can simply save "
+"a file with that node in it. Some example nodes are:"
 msgstr ""
 "与内部资源类似，每个节点的文档目前尚未完成。 幸运的是，很容易找到它，因为您只"
 "需保存包含该节点的文件即可。 一些示例节点是:"
 
-#: ../../docs/development/file_formats/tscn.rst:128
+#: ../../docs/development/file_formats/tscn.rst:134
 msgid "NodePath"
 msgstr "节点路径"
 
-#: ../../docs/development/file_formats/tscn.rst:130
+#: ../../docs/development/file_formats/tscn.rst:136
+#, fuzzy
 msgid ""
-"A tree structure is not enough to represent the whole scene, Godot use a :"
-"code:`NodePath(Path/To/Node)` structure to refer to another node or "
-"attribute of the node anywhere in the scene tree. Some typical usages of "
-"NodePath like mesh node use :code:`NodePath()` to point to its skeleton, "
-"animation track use :code:`NodePath()` points to animated attribute in node."
+"A tree structure is not enough to represent the whole scene. Godot uses a "
+"``NodePath(Path/To/Node)`` structure to refer to another node or attribute "
+"of the node anywhere in the scene tree. For instance, MeshInstance uses "
+"``NodePath()`` to point to its skeleton. Likewise, Animation tracks use "
+"``NodePath()`` to point to node properties to animate."
 msgstr ""
 "树结构不足以表示整个场景，Godot使用a:code:`NodePath(Path / To / Node)`结构来"
 "引用场景树中任何位置的节点的另一个节点或属性。 NodePath的一些典型用法就像网格"
 "节点一样:代码:`NodePath()`指向它的骨架，动画轨道使用:代码:`NodePath()`指向节"
 "点中的动画属性。"
 
-#: ../../docs/development/file_formats/tscn.rst:153
+#: ../../docs/development/file_formats/tscn.rst:161
 msgid "Skeleton"
 msgstr "骨架"
 
-#: ../../docs/development/file_formats/tscn.rst:155
+#: ../../docs/development/file_formats/tscn.rst:163
+#, fuzzy
 msgid ""
-"Skeleton node inherits Spatial node, besides that it may have a list of "
-"bones described in key, value pair in the format :code:`bones/Id/"
-"Attribute=Value`, attributes of bone consists of"
+"The Skeleton node inherits the Spatial node, but also may have a list of "
+"bones described in key-value pairs in the format ``bones/Id/"
+"Attribute=Value``. The bone attributes consist of:"
 msgstr ""
 "Skeleton节点继承Spatial节点，除了它可能有一个以key，value对描述的骨骼列表，格"
 "式为:code:`bones / Id / Attribute = Value`，bone的属性由"
 
-#: ../../docs/development/file_formats/tscn.rst:159
-msgid "name"
-msgstr "name"
-
-#: ../../docs/development/file_formats/tscn.rst:160
-msgid "parent"
-msgstr "parent"
-
-#: ../../docs/development/file_formats/tscn.rst:161
-msgid "rest"
-msgstr "rest"
-
-#: ../../docs/development/file_formats/tscn.rst:162
-msgid "pose"
-msgstr "pose"
-
-#: ../../docs/development/file_formats/tscn.rst:163
-#: ../../docs/development/file_formats/tscn.rst:385
-msgid "enabled"
-msgstr "enabled"
-
-#: ../../docs/development/file_formats/tscn.rst:164
-msgid "bound_children"
-msgstr "bound_children"
-
-#: ../../docs/development/file_formats/tscn.rst:166
-msgid ":code:`name` must put as the first attribute of each bone"
-msgstr ":code:`name`必须作为每个骨骼的第一个属性"
+#: ../../docs/development/file_formats/tscn.rst:167
+msgid "``name``"
+msgstr "``name``"
 
 #: ../../docs/development/file_formats/tscn.rst:168
+#, fuzzy
+msgid "``parent``"
+msgstr "parent"
+
+#: ../../docs/development/file_formats/tscn.rst:169
+#, fuzzy
+msgid "``rest``"
+msgstr "rest"
+
+#: ../../docs/development/file_formats/tscn.rst:170
+#, fuzzy
+msgid "``pose``"
+msgstr "pose"
+
+#: ../../docs/development/file_formats/tscn.rst:171
+#: ../../docs/development/file_formats/tscn.rst:391
+#, fuzzy
+msgid "``enabled``"
+msgstr "enabled"
+
+#: ../../docs/development/file_formats/tscn.rst:172
+#, fuzzy
+msgid "``bound_children``"
+msgstr "bound_children"
+
+#: ../../docs/development/file_formats/tscn.rst:174
+#, fuzzy
+msgid "``name`` must be the first attribute of each bone."
+msgstr ":code:`name`必须作为每个骨骼的第一个属性"
+
+#: ../../docs/development/file_formats/tscn.rst:175
+#, fuzzy
 msgid ""
-":code:`parent` is the index of parent bone in the bone list, with parent "
-"index, the bone list is built to a bone tree"
+"``parent`` is the index of parent bone in the bone list, with parent index, "
+"the bone list is built to a bone tree."
 msgstr ""
 ":code:`parent`是骨骼列表中父骨骼的索引，带有父索引，骨骼列表构建到骨骼树"
 
-#: ../../docs/development/file_formats/tscn.rst:171
-msgid ":code:`rest` is the transform matrix of bone in rest position"
+#: ../../docs/development/file_formats/tscn.rst:177
+#, fuzzy
+msgid "``rest`` is the transform matrix of bone in its \"resting\" position."
 msgstr ":code:`rest`是休息位置骨骼的变换矩阵"
 
-#: ../../docs/development/file_formats/tscn.rst:173
-msgid ":code:`pose` is the pose matrix use :code:`rest` as basis"
+#: ../../docs/development/file_formats/tscn.rst:178
+#, fuzzy
+msgid "``pose`` is the pose matrix; use ``rest`` as the basis."
 msgstr ":code:`pose`是姿势矩阵用法:代码:`rest`作为基础"
 
-#: ../../docs/development/file_formats/tscn.rst:175
+#: ../../docs/development/file_formats/tscn.rst:179
+#, fuzzy
 msgid ""
-":code:`bound_children` is a list of NodePath() points to BoneAttachments "
-"belong to this bone"
+"``bound_children`` is a list of ``NodePath()`` which point to "
+"BoneAttachments belonging to this bone."
 msgstr ""
 ":code:`bound_children`是一个NodePath()的列表，指向BoneAttachments属于这个骨骼"
 
-#: ../../docs/development/file_formats/tscn.rst:178
-msgid "An example of a skeleton node with two bones:"
+#: ../../docs/development/file_formats/tscn.rst:182
+#, fuzzy
+msgid "Here's an example of a skeleton node with two bones:"
 msgstr "具有两个骨骼的骨架节点的示例:"
 
-#: ../../docs/development/file_formats/tscn.rst:198
+#: ../../docs/development/file_formats/tscn.rst:203
 msgid "BoneAttachment"
 msgstr "BoneAttachment"
 
-#: ../../docs/development/file_formats/tscn.rst:200
+#: ../../docs/development/file_formats/tscn.rst:205
+#, fuzzy
 msgid ""
 "BoneAttachment node is an intermediate node to describe some node being "
-"parented to a single bone in Skeleton node. The BoneAttachment has a :code:"
-"`bone_name=NameOfBone`, and the corresponding bone being the parent has the "
-"BoneAttachment node in its :code:`bound_children` list."
+"parented to a single bone in a Skeleton node. The BoneAttachment has a "
+"``bone_name=NameOfBone`` attribute, and the corresponding bone being the "
+"parent has the BoneAttachment node in its ``bound_children`` list."
 msgstr ""
 "BoneAttachment节点是一个中间节点，用于描述某个节点是Skeleton节点中单个骨骼的"
 "父级。 BoneAttachment有一个:code:`bone_name = NameOfBone`，作为父对应的骨骼在"
 "其:: code:`bound_children`列表中有BoneAttachment节点。"
 
-#: ../../docs/development/file_formats/tscn.rst:205
+#: ../../docs/development/file_formats/tscn.rst:210
 msgid "An example of one MeshInstance parented to a bone in Skeleton:"
 msgstr "一个MeshInstance的示例，它是Skeleton中一个骨骼的父级:"
 
-#: ../../docs/development/file_formats/tscn.rst:229
+#: ../../docs/development/file_formats/tscn.rst:235
 msgid "AnimationPlayer"
 msgstr "AnimationPlayer"
 
-#: ../../docs/development/file_formats/tscn.rst:231
+#: ../../docs/development/file_formats/tscn.rst:237
+#, fuzzy
 msgid ""
-"AnimationPlayer works as an animation lib. it has animations listed in the "
-"format :code:`anim/Name=SubResource(ResourceId)`, each refers to a Animation "
-"internal resource. All the animation resources use the root node of "
-"AnimationPlayer. The root node is stored as :code:`root_node=NodePath(Path/"
-"To/Node)`."
+"AnimationPlayer works as an animation library. It stores animations listed "
+"in the format ``anim/Name=SubResource(ResourceId)``; each line refers to an "
+"Animation resource. All the animation resources use the root node of "
+"AnimationPlayer. The root node is stored as ``root_node=NodePath(Path/To/"
+"Node)``."
 msgstr ""
 "AnimationPlayer用作动画库。 它有以下格式列出的动画:代码:`anim / Name = "
 "SubResource(ResourceId)`，每个都引用一个动画内部资源。 所有动画资源都使用"
 "AnimationPlayer的根节点。 根节点存储为:code:`root_node = NodePath(Path / "
 "To / Node)`。"
 
-#: ../../docs/development/file_formats/tscn.rst:249
+#: ../../docs/development/file_formats/tscn.rst:257
 msgid "Resources"
 msgstr "资源"
 
-#: ../../docs/development/file_formats/tscn.rst:251
+#: ../../docs/development/file_formats/tscn.rst:259
 msgid ""
 "Resources are components that make up the nodes. For example, a MeshInstance "
 "node will have an accompanying ArrayMesh resource. The ArrayMesh resource "
@@ -339,293 +381,315 @@ msgstr ""
 "资源是组成节点的组件。 例如，MeshInstance节点将具有附带的ArrayMesh资源。 "
 "ArrayMesh资源可以是TSCN文件的内部或外部。"
 
-#: ../../docs/development/file_formats/tscn.rst:255
+#: ../../docs/development/file_formats/tscn.rst:263
+#, fuzzy
 msgid ""
-"References to the resources are handled by id numbers in the resources "
-"heading. External resources and internal resource are referred to with :code:"
-"`ExtResource(id)` and :code:`SubResource(id)`. Because there have different "
-"methods to refer to internal and external resource, you can have the same ID "
-"for both an internal and external resource."
+"References to the resources are handled by ``id`` numbers in the resource's "
+"heading. External resources and internal resources are referred to with "
+"``ExtResource(id)`` and ``SubResource(id)``, respectively. Because there "
+"have different methods to refer to internal and external resources, you can "
+"have the same ID for both an internal and external resource."
 msgstr ""
 "资源的引用由资源标题中的id号处理。 外部资源和内部资源用:代码:"
 "`ExtResource(id)`和:code:`SubResource(id)`。 因为有不同的方法来引用内部和外部"
 "资源，所以内部和外部资源都可以使用相同的ID。"
 
-#: ../../docs/development/file_formats/tscn.rst:261
+#: ../../docs/development/file_formats/tscn.rst:269
+#, fuzzy
 msgid ""
-"For example, to refer to the resource :code:`[ext_resource id=3 type="
-"\"PackedScene\" path=....]` you would use :code:`ExtResource(3)`"
+"For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
+"\" path=....]``, you would use ``ExtResource(3)``."
 msgstr ""
 "例如，要引用资源:代码:`[ext_resource id = 3 type =“PackedScene”path = ....]`"
 "您将使用:code:`ExtResource(3)`"
 
-#: ../../docs/development/file_formats/tscn.rst:268
+#: ../../docs/development/file_formats/tscn.rst:275
+#, fuzzy
 msgid ""
 "External resources are links to resources not contained within the TSCN file "
-"itself. An external resource consists of:"
+"itself. An external resource consists of a path, a type and an ID."
 msgstr "外部资源是指TSCN文件本身未包含的资源的链接。 外部资源包括:"
 
-#: ../../docs/development/file_formats/tscn.rst:271
-msgid "A path"
-msgstr "一条路径"
-
-#: ../../docs/development/file_formats/tscn.rst:272
-msgid "A type"
-msgstr "一种类型"
-
-#: ../../docs/development/file_formats/tscn.rst:273
-msgid "An ID"
-msgstr "一个ID"
-
-#: ../../docs/development/file_formats/tscn.rst:275
+#: ../../docs/development/file_formats/tscn.rst:278
+#, fuzzy
 msgid ""
 "Godot always generates absolute paths relative to the resource directory and "
-"thus prefixed with :code:`res://`, but paths relative to the TSCN file's "
+"thus prefixed with ``res://``, but paths relative to the TSCN file's "
 "location are also valid."
 msgstr ""
 "Godot总是生成相对于资源目录的绝对路径，因此前缀为:code:`res://`，但相对于TSCN"
 "文件位置的路径也是有效的。"
 
-#: ../../docs/development/file_formats/tscn.rst:279
+#: ../../docs/development/file_formats/tscn.rst:282
 msgid "Some example external resources are:"
 msgstr "一些示例外部资源是:"
 
-#: ../../docs/development/file_formats/tscn.rst:289
+#: ../../docs/development/file_formats/tscn.rst:290
 msgid ""
-"A TSCN file can contain meshes, materials and other data, and these are "
-"contained in the internal resources section of the file. The heading for an "
-"internal resource looks similar to those of external resources, but does not "
-"have a path. Internal resources also have :code:`key=value` pairs under each "
-"heading. For example, a capsule collision shape looks like:"
+"Like TSCN files, a TRES file may contain single-line comments starting with "
+"a semicolon (``;``). However, comments will be discarded when saving the "
+"resource using the Godot editor."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:297
+#, fuzzy
+msgid ""
+"A TSCN file can contain meshes, materials and other data. These are "
+"contained in the *internal resources* section of the file. The heading for "
+"an internal resource looks similar to those of external resources, except "
+"that it doesn't have a path. Internal resources also have ``key=value`` "
+"pairs under each heading. For example, a capsule collision shape looks like:"
 msgstr ""
 "TSCN文件可以包含网格，材质和其他数据，这些文件包含在文件的内部资源部分中。 内"
 "部资源的标题看起来与外部资源的标题类似，但没有路径。 内部资源也有:代码:每个标"
 "题下的`key = value`对。 例如，胶囊碰撞形状如下所示:"
 
-#: ../../docs/development/file_formats/tscn.rst:302
+#: ../../docs/development/file_formats/tscn.rst:311
+#, fuzzy
 msgid ""
-"Some internal resource contain links to other internal resources (such as a "
+"Some internal resources contain links to other internal resources (such as a "
 "mesh having a material). In this case, the referring resource must appear "
-"before the reference to it. Thus, in the internal resources section of the "
-"file, order does matter."
+"*before* the reference to it. This means that order matters in the file's "
+"internal resources section."
 msgstr ""
 "某些内部资源包含指向其他内部资源的链接(例如具有材质的网格)。 在这种情况下，引"
 "用资源必须出现在引用之前。 因此，在文件的内部资源部分，顺序确实很重要。"
 
-#: ../../docs/development/file_formats/tscn.rst:307
+#: ../../docs/development/file_formats/tscn.rst:316
+#, fuzzy
 msgid ""
-"Unfortunately, documentation on the formats for these subresources is not "
-"complete, and while some can be found through inspecting resources of saved "
-"files, others can only be found by looking through Godot's source."
+"Unfortunately, documentation on the formats for these subresources isn't "
+"complete. Some examples can be found by inspecting saved resource files, but "
+"others can only be found by looking through Godot's source."
 msgstr ""
 "遗憾的是，关于这些子资源的格式的文档并不完整，虽然可以通过检查已保存文件的资"
 "源找到一些，但其他文件只能通过查看Godot的来源找到。"
 
-#: ../../docs/development/file_formats/tscn.rst:312
+#: ../../docs/development/file_formats/tscn.rst:321
 msgid "ArrayMesh"
 msgstr "ArrayMesh"
 
-#: ../../docs/development/file_formats/tscn.rst:314
+#: ../../docs/development/file_formats/tscn.rst:323
+#, fuzzy
 msgid ""
-"ArrayMesh consists of several surfaces, each in the format :code:`surface"
-"\\Index={}`, each surface is a set of vertex and a material."
+"ArrayMesh consists of several surfaces, each in the format ``surface"
+"\\Index={}``. Each surface is a set of vertices and a material."
 msgstr ""
 "ArrayMesh由几个表面组成，每个表面的格式为:code:`surface \\ Index = {}`，每个"
 "表面都是一组顶点和一个材质。"
 
-#: ../../docs/development/file_formats/tscn.rst:317
-msgid "TSCN support two format of surface,"
+#: ../../docs/development/file_formats/tscn.rst:326
+#, fuzzy
+msgid "TSCN files support two surface formats:"
 msgstr "TSCN支持两种格式的表面，"
 
-#: ../../docs/development/file_formats/tscn.rst:319
-msgid "for the old format, each surface has three essential keys:"
+#: ../../docs/development/file_formats/tscn.rst:328
+#, fuzzy
+msgid "For the old format, each surface has three essential keys:"
 msgstr "对于旧格式，每个表面都有三个基本键:"
 
-#: ../../docs/development/file_formats/tscn.rst:321
-msgid "primitive"
+#: ../../docs/development/file_formats/tscn.rst:330
+#, fuzzy
+msgid "``primitive``"
 msgstr "primitive"
 
-#: ../../docs/development/file_formats/tscn.rst:322
-msgid "arrays"
-msgstr "arrays"
+#: ../../docs/development/file_formats/tscn.rst:331
+#, fuzzy
+msgid "``arrays``"
+msgstr "数组"
 
-#: ../../docs/development/file_formats/tscn.rst:323
-msgid "morph_arrays"
+#: ../../docs/development/file_formats/tscn.rst:332
+#, fuzzy
+msgid "``morph_arrays``"
 msgstr "morph_arrays"
 
-#: ../../docs/development/file_formats/tscn.rst:325
+#: ../../docs/development/file_formats/tscn.rst:334
+#, fuzzy
 msgid ""
-":code:`primitive` is an enumerate variable, :code:`primitive=4` which is "
-"PRIMITIVE_TRIANGLES is frequently used."
+"``primitive`` is an enumerate variable, ``primitive=4`` which is "
+"``PRIMITIVE_TRIANGLES`` is frequently used."
 msgstr ""
 ":code:`primitive`是一个枚举变量，:code:`primitive = 4`，经常使用"
 "PRIMITIVE_TRIANGLES。"
 
-#: ../../docs/development/file_formats/tscn.rst:328
-msgid ":code:`arrays` as the name suggests is an array of array, it contains:"
+#: ../../docs/development/file_formats/tscn.rst:337
+#, fuzzy
+msgid "``arrays`` is a two-dimensional array, it contains:"
 msgstr ":code:`arrays`顾名思义就是一个数组数组，它包含:"
 
-#: ../../docs/development/file_formats/tscn.rst:330
-msgid "An array of vertex position"
-msgstr "顶点位置数组"
+#: ../../docs/development/file_formats/tscn.rst:339
+#, fuzzy
+msgid "Vertex positions array"
+msgstr "顶点颜色数组"
 
-#: ../../docs/development/file_formats/tscn.rst:331
+#: ../../docs/development/file_formats/tscn.rst:340
 msgid "Tangents array"
 msgstr "切线阵列"
 
-#: ../../docs/development/file_formats/tscn.rst:332
-msgid "Vertex color array"
+#: ../../docs/development/file_formats/tscn.rst:341
+#, fuzzy
+msgid "Vertex colors array"
 msgstr "顶点颜色数组"
 
-#: ../../docs/development/file_formats/tscn.rst:333
+#: ../../docs/development/file_formats/tscn.rst:342
 msgid "UV array 1"
 msgstr "UV阵列1"
 
-#: ../../docs/development/file_formats/tscn.rst:334
+#: ../../docs/development/file_formats/tscn.rst:343
 msgid "UV array 2"
 msgstr "UV阵列2"
 
-#: ../../docs/development/file_formats/tscn.rst:335
-msgid "Bone index array"
+#: ../../docs/development/file_formats/tscn.rst:344
+#, fuzzy
+msgid "Bone indexes array"
 msgstr "骨索引数组"
 
-#: ../../docs/development/file_formats/tscn.rst:336
-msgid "Bone weight array"
+#: ../../docs/development/file_formats/tscn.rst:345
+#, fuzzy
+msgid "Bone weights array"
 msgstr "骨重阵列"
 
-#: ../../docs/development/file_formats/tscn.rst:337
-msgid "Vertex index array"
+#: ../../docs/development/file_formats/tscn.rst:346
+#, fuzzy
+msgid "Vertex indexes array"
 msgstr "顶点索引数组"
 
-#: ../../docs/development/file_formats/tscn.rst:339
+#: ../../docs/development/file_formats/tscn.rst:348
+#, fuzzy
 msgid ""
-":code:`morph_arrays` is an array of morph, each morph is exactly an :code:"
-"`arrays` without vertex index array."
+"``morph_arrays`` is an array of morphs. Each morph is exactly an ``arrays`` "
+"without the vertex indexes array."
 msgstr ""
 ":code:`morph_arrays`是一个变形数组，每个变形都是一个:code:`arrays`，没有顶点"
 "索引数组。"
 
-#: ../../docs/development/file_formats/tscn.rst:342
+#: ../../docs/development/file_formats/tscn.rst:351
 msgid "An example of ArrayMesh:"
 msgstr "ArrayMesh的一个示例:"
 
-#: ../../docs/development/file_formats/tscn.rst:365
+#: ../../docs/development/file_formats/tscn.rst:375
 msgid "Animation"
 msgstr "动画"
 
-#: ../../docs/development/file_formats/tscn.rst:367
+#: ../../docs/development/file_formats/tscn.rst:377
+#, fuzzy
 msgid ""
-"An animation resource consists of tracks. Besides, it has 'length', 'loop' "
-"and 'step' applied to all the tracks."
+"An animation resource consists of tracks. Besides, it has ``length``, "
+"``loop`` and ``step`` applied to all the tracks."
 msgstr ""
 "动画资源由轨道组成。 此外，它还有'长度'，'循环'和'步骤'应用于所有轨道。"
 
-#: ../../docs/development/file_formats/tscn.rst:370
-msgid "length"
-msgstr "length"
-
-#: ../../docs/development/file_formats/tscn.rst:371
-msgid "loop"
-msgstr "loop"
-
-#: ../../docs/development/file_formats/tscn.rst:372
-msgid "step"
-msgstr "step"
-
-#: ../../docs/development/file_formats/tscn.rst:374
-msgid ":code:`length` and :code:`step` are both time in seconds"
+#: ../../docs/development/file_formats/tscn.rst:380
+#, fuzzy
+msgid "``length`` and ``step`` are both durations in seconds."
 msgstr ":code:`length`和:code:`step`都是以秒为单位的时间"
 
-#: ../../docs/development/file_formats/tscn.rst:376
+#: ../../docs/development/file_formats/tscn.rst:382
+#, fuzzy
 msgid ""
-"Each track is described by a list of (key, value) pairs in the format :code:"
-"`tracks/Id/Attribute`, it includes:"
+"Each track is described by a list of key-value pairs in the format ``tracks/"
+"Id/Attribute``. Each track includes:"
 msgstr ""
 "每个轨道由(键，值)对列表描述，格式为:code:`tracks / Id / Attribute`，它包括:"
 
-#: ../../docs/development/file_formats/tscn.rst:379
-msgid "type"
+#: ../../docs/development/file_formats/tscn.rst:385
+#, fuzzy
+msgid "``type``"
 msgstr "type"
 
-#: ../../docs/development/file_formats/tscn.rst:380
-msgid "path"
-msgstr "path"
-
-#: ../../docs/development/file_formats/tscn.rst:381
-msgid "interp"
-msgstr "interp"
-
-#: ../../docs/development/file_formats/tscn.rst:382
-msgid "keys"
-msgstr "keys"
-
-#: ../../docs/development/file_formats/tscn.rst:383
-msgid "loop_wrap"
-msgstr "loop_wrap"
-
-#: ../../docs/development/file_formats/tscn.rst:384
-msgid "imported"
-msgstr "imported"
+#: ../../docs/development/file_formats/tscn.rst:386
+#, fuzzy
+msgid "``path``"
+msgstr "``$NodePath``"
 
 #: ../../docs/development/file_formats/tscn.rst:387
-msgid ""
-"The :code:`type` must be put as the first attribute of each track. The value "
-"of :code:`type` can be:"
-msgstr ":code:`type`必须作为每个轨道的第一个属性。 值:code:`type`可以是:"
+#, fuzzy
+msgid "``interp``"
+msgstr "中心"
+
+#: ../../docs/development/file_formats/tscn.rst:388
+#, fuzzy
+msgid "``keys``"
+msgstr "keys"
+
+#: ../../docs/development/file_formats/tscn.rst:389
+#, fuzzy
+msgid "``loop_wrap``"
+msgstr "loop_wrap"
 
 #: ../../docs/development/file_formats/tscn.rst:390
-msgid "'transform'"
-msgstr "'transform'"
+#, fuzzy
+msgid "``imported``"
+msgstr "imported"
 
-#: ../../docs/development/file_formats/tscn.rst:391
-msgid "'value'"
-msgstr "'value'"
+#: ../../docs/development/file_formats/tscn.rst:393
+#, fuzzy
+msgid ""
+"The ``type`` must be the first attribute of each track. The value of "
+"``type`` can be:"
+msgstr ":code:`type`必须作为每个轨道的第一个属性。 值:code:`type`可以是:"
 
-#: ../../docs/development/file_formats/tscn.rst:392
-msgid "'method'"
+#: ../../docs/development/file_formats/tscn.rst:396
+#, fuzzy
+msgid "``transform``"
+msgstr "transform"
+
+#: ../../docs/development/file_formats/tscn.rst:397
+#, fuzzy
+msgid "``value``"
+msgstr "``default_value``"
+
+#: ../../docs/development/file_formats/tscn.rst:398
+#, fuzzy
+msgid "``method``"
 msgstr "'method'"
 
-#: ../../docs/development/file_formats/tscn.rst:394
+#: ../../docs/development/file_formats/tscn.rst:400
+#, fuzzy
 msgid ""
-"The :code:`path` has the format :code:`NodePath(Path/To/Node:Attribute)`. It "
-"is the path from animation root node (property of AnimationPlayer) to the "
-"animated node or attribute."
+"The ``path`` has the format ``NodePath(Path/To/Node:attribute)``. It's the "
+"path to the animated node or attribute, relative to the root node defined in "
+"the AnimationPlayer."
 msgstr ""
 ":code:`path`的格式为:code:`NodePath(Path / To / Node:Attribute)`。 它是从动画"
 "根节点(AnimationPlayer的属性)到动画节点或属性的路径。"
 
-#: ../../docs/development/file_formats/tscn.rst:398
+#: ../../docs/development/file_formats/tscn.rst:404
+#, fuzzy
 msgid ""
-"The :code:`interp` is the method to interpolate frames from the keyframes. "
-"it is a enum variable and can has value:"
+"The ``interp`` is the method to interpolate frames from the keyframes. it is "
+"a enum variable and can has value:"
 msgstr ":code:`interp`是从关键帧插入帧的方法。 它是一个枚举变量，可以有价值:"
 
-#: ../../docs/development/file_formats/tscn.rst:401
+#: ../../docs/development/file_formats/tscn.rst:407
 msgid "0 (constant)"
 msgstr "0(常数)"
 
-#: ../../docs/development/file_formats/tscn.rst:402
+#: ../../docs/development/file_formats/tscn.rst:408
 msgid "1 (linear)"
 msgstr "1(线性)"
 
-#: ../../docs/development/file_formats/tscn.rst:403
+#: ../../docs/development/file_formats/tscn.rst:409
 msgid "2 (cubic)"
 msgstr "2(立方)"
 
-#: ../../docs/development/file_formats/tscn.rst:405
+#: ../../docs/development/file_formats/tscn.rst:411
+#, fuzzy
 msgid ""
-"The :code:`keys` is the keyframes, it appears as a PoolRealArray() but have "
-"different structure for track with different type"
+"The ``keys`` correspond to the keyframes. It appears as a "
+"``PoolRealArray()``, but may have a different structure for tracks with "
+"different types."
 msgstr ""
 ":code:`keys`是关键帧，它显示为PoolRealArray()但具有不同类型的轨道的不同结构"
 
-#: ../../docs/development/file_formats/tscn.rst:408
+#: ../../docs/development/file_formats/tscn.rst:414
+#, fuzzy
 msgid ""
-"A transform track use every 12 real number in the :code:`keys` to describte "
-"a keyframe. The first number is the timestamp, the second number is the "
-"transition (default 1.0 in transform track), followed by a three number "
-"translation vector, followed by four number rotation quaternion (x,y,z,w) "
-"and finally a three number scale vector."
+"A Transform track uses every 12 real numbers in the ``keys`` to describe a "
+"keyframe. The first number is the timestamp. The second number is the "
+"transition followed by a 3-number translation vector, followed by a 4-number "
+"rotation quaternion (X, Y, Z, W) and finally a 3-number scale vector. The "
+"default transition in a Transform track is 1.0."
 msgstr ""
 "变换轨道使用:code:`keys`中的每12个实数来描述一个关键帧。 第一个数字是时间戳，"
 "第二个数字是转换(转换轨道中默认为1.0)，后跟三个数字转换向量，后跟四个数字旋转"

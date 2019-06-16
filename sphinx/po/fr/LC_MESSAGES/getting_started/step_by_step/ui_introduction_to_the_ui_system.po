@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Conception d'interfaces avec les nœuds Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -35,11 +34,7 @@ msgstr ""
 "charge différents ratios et résolutions d'écran. Il peut être difficile de "
 "construire des interfaces réactives qui s'adaptent à toutes les plates-"
 "formes. Heureusement, Godot est fourni avec des outils robustes pour "
-"concevoir et gérer une interface utilisateur réactive. Pour concevoir votre "
-"interface utilisateur, vous utiliserez les nœuds Control. Ce sont les nœuds "
-"avec des icônes vertes dans l'éditeur. Il y en a des dizaines, pour créer "
-"n'importe quoi, des barres de vie aux applications complexes. L'intégralité "
-"de l'éditeur et des plugins de Godot utilisent ces nœuds."
+"concevoir et gérer une interface utilisateur réactive."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -52,7 +47,6 @@ msgstr ""
 "utilisateurs. Vous apprendrez :"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
 msgstr ""
 "Les cinq nœuds de contrôle les plus utiles pour construire l'interface de "
@@ -76,6 +70,9 @@ msgid ""
 "containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
 "page)."
 msgstr ""
+"Les cinq conteneurs les plus courants (plus tard, vous pourrez en savoir "
+"plus sur les conteneurs dans la page de documentation :ref:`GUI Containers "
+"<doc_gui_containers>`)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -93,6 +90,10 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"Pour concevoir votre interface utilisateur, vous utiliserez les nœuds de "
+"contrôle. Ce sont les nœuds avec des icônes vertes dans l'éditeur. Il y en a "
+"des douzaines, pour créer des barres de vie ou des applications complexes. "
+"L'éditeur de Godot lui-même est construit à l'aide de nœuds de contrôle."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -101,6 +102,11 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"Les nœuds de contrôle ont des propriétés uniques qui leur permettent de bien "
+"fonctionner les uns avec les autres. D'autres nœuds visuels, comme Node2D et "
+"Sprite n'ont pas ces capacités. Donc, pour vous faciliter la vie, utilisez "
+"les nœuds de contrôle autant que possible lors de la création de vos "
+"interfaces utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
@@ -208,41 +214,37 @@ msgstr ""
 "son comportement :"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
-#, fuzzy
 msgid ""
 "``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
 "``Scale On Expand (compat)`` met à l'échelle la texture afin de s'ajuster au "
-"rectangle englobant le noeud, seulement si la propriété ``expand`` est égale "
+"rectangle englobant le nœud, seulement si la propriété ``expand`` est égale "
 "à ``true``; sinon, le comportement est le même que le mode ``Keep`` qui est "
 "le mode par défaut pour des raisons de rétro-compatibilité."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
 "``Scale`` met à l'échelle la texture afin de s'ajuster au rectangle "
-"englobant le noeud"
+"englobant le nœud."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
-#, fuzzy
 msgid "``Tile`` makes the texture repeat, but it won't scale."
 msgstr ""
-"``Tile`` permet à la texture de se répéter, mais ne se mettra pas à l'échelle"
+"``Tile`` permet à la texture de se répéter, mais ne se mettra pas à "
+"l'échelle."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
-#, fuzzy
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
 "``Keep`` et ``Keep Centered`` force la texture à garder sa taille d'origine, "
-"dans le coin supérieur gauche ou au centre du cadre respectivement"
+"dans le coin supérieur gauche ou au centre du cadre respectivement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
-#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
@@ -250,10 +252,9 @@ msgid ""
 msgstr ""
 "``Keep Aspect`` et ``Keep Aspect Centered`` met à l'échelle la texture mais "
 "la force à garder le rapport hauteur/largeur d'origine, dans le coin "
-"supérieur gauche ou au centre du cadre respectivement"
+"supérieur gauche ou au centre du cadre respectivement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
@@ -261,7 +262,7 @@ msgid ""
 msgstr ""
 "``Keep Aspect Covered`` fonctionne comme ``Keep Aspect Centered`` mais le "
 "côté le plus court s'étend jusqu'au rectangle de délimitation et le côté le "
-"plus long est coupé aux limites du noeud"
+"plus long est coupé aux limites du nœud."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
 msgid ""
@@ -498,7 +499,6 @@ msgid "How to change the anchor"
 msgstr "Comment modifier l'ancrage"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
-#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "

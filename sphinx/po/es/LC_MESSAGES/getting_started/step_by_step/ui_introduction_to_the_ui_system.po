@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Diseño de interfaces con nodos Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -30,16 +29,12 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
-"Pantallas de computadoras, teléfonos móviles y pantallas de televisión "
+"Las pantallas de computadora, teléfonos móviles y pantallas de televisión "
 "vienen en todas las formas y tamaños. Para distribuir un juego, tendrás que "
 "admitir diferentes proporciones y resoluciones de pantalla. Puede ser "
-"difícil crear interfaces sensibles que se adapten a todas las plataformas. "
+"difícil crear interfaces responsivas que se adapten a todas las plataformas. "
 "Afortunadamente, Godot viene con herramientas robustas para diseñar y "
-"administrar una interfaz de usuario sensible. Para diseñar tu interfaz de "
-"usuario, utilizarás los nodos de Control. Estos son los nodos con íconos "
-"verdes en el editor. Hay docenas de ellos, para crear cualquier cosa, desde "
-"barras de vida hasta aplicaciones complejas. Todo el editor y los plugins de "
-"Godot usan estos nodos."
+"administrar una Interfaz de Usuario responsiva."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -50,7 +45,6 @@ msgid "This guide will get you started with UI design. You will learn:"
 msgstr "Esta guía te ayudará a comenzar con el diseño de la UI. Aprenderás:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
 msgstr ""
 "Los cinco nodos de control más útiles para construir la interfaz de tus "
@@ -203,60 +197,54 @@ msgstr ""
 "propiedad Stretch Mode para alterar su comportamiento:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
-#, fuzzy
 msgid ""
 "``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
-"`` Scale On Expand (compat) `` escala la textura para ajustarse al "
-"rectángulo delimitador del nodo, solo si la propiedad `` expand`` es `` "
-"true``; de lo contrario, se comporta como el modo `` Keep``. Modo "
+"``Scale On Expand (compat)`` escala la textura para que se ajuste al "
+"rectángulo delimitador del nodo, sólo si la propiedad ``expand`` es "
+"``true``; de lo contrario, se comporta como el modo ``Keep``. Modo "
 "predeterminado para compatibilidad con versiones anteriores."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
 "``Scale`` escala la textura para que se ajuste al rectángulo delimitador del "
-"nodo"
+"nodo."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
-#, fuzzy
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr "``Tile`` hace que la textura se repita, pero no escalará"
+msgstr "``Tile`` hace que la textura se repita, pero no escalará."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
-#, fuzzy
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
-"``Keep`` y``Keep Centered`` fuerzan a que la textura mantenga su tamaño "
-"original, en la esquina superior izquierda, o en el centro del marco "
-"respectivamente"
+"``Keep`` y ``Keep Centered`` fuerzan a mantener la textura en su tamaño "
+"original, en la esquina superior izquierda o en el centro del marco "
+"respectivamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
-#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
-"``Keep Aspect`` y ``Keep Aspect Centered`` escala la textura pero la obliga "
-"a mantener su relación de aspecto original, en la esquina superior izquierda "
-"o en el centro del marco, respectivamente"
+"``Keep Aspect`` y ``Keep Aspect Centered`` escalan la textura pero la "
+"fuerzan a mantener su relación de aspecto original, en la esquina superior "
+"izquierda o en el centro del marco, respectivamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node's limits."
 msgstr ""
-"`` Keep Aspect Covered`` funciona igual que `` Keep Aspect Centered`` pero "
-"el lado más corto se ajusta al rectángulo delimitador y el otro a los "
-"límites del nodo"
+"``Keep Aspect Covered`` funciona igual que ``Keep Aspect Centered`` pero el "
+"lado más corto se ajusta al rectángulo delimitador y el otro a los límites "
+"del nodo."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
 msgid ""
@@ -483,7 +471,6 @@ msgid "How to change the anchor"
 msgstr "Cómo cambiar el anclaje"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
-#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
@@ -495,9 +482,9 @@ msgstr ""
 "Como cualquier otra propiedad, puedes editar los 4 puntos de anclaje en el "
 "Inspector, pero esta no es la forma más conveniente. Cuando seleccionas un "
 "nodo de control, el menú de configuración aparece encima de la ventana de "
-"visualización, en la barra de herramientas. Le da una lista de iconos para "
-"establecer los 4 anclajes con un solo clic, en lugar de usar las 4 "
-"propiedades del inspector. El menú de configuración sólo aparecerá cuando "
+"visualización, en la barra de herramientas. Te ofrece una lista de iconos "
+"para establecer los 4 anclajes con un solo clic, en lugar de utilizar las 4 "
+"propiedades del inspector. El menú de diseño sólo aparecerá cuando "
 "selecciones un nodo de control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206

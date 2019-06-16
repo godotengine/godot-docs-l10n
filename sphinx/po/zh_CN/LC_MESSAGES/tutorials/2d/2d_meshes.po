@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,6 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:9
-#, fuzzy
 msgid ""
 "In 3D, meshes are used to display the world. In 2D, they are rare as images "
 "are used more often. Godot's 2D engine is a pure two dimensional engine, so "
@@ -52,12 +51,16 @@ msgid ""
 "or ignored) instead of 3D. You can experiment creating them yourself using "
 "``SurfaceTool`` from code and displaying them in a ``MeshInstance2D`` node."
 msgstr ""
+"二维网格是包含二维几何(Z轴可以省略或忽略)而不是三维的网格。您可以尝试使用代码"
+"中的“平面工具”创建它们，并在“二维网格实例”节点中显示它们。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:18
 msgid ""
 "Currently, the only way to generate a 2D mesh within the editor is by either "
 "importing an OBJ file as a mesh, or converting it from a Sprite."
 msgstr ""
+"目前，在编辑器中生成二维网格的唯一方法，是导入一个OBJ文件作为网格，或者从精灵"
+"转换而来。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:21
 #, fuzzy
@@ -70,6 +73,8 @@ msgid ""
 "drawing large images with transparency, Godot will draw the whole quad to "
 "the screen. The large transparent areas will still be drawn."
 msgstr ""
+"在某些情况下，此工作流对于优化二维绘图非常有用。当绘制具有透明度的大型图像"
+"时，Godot将把整个四方形绘制到屏幕上。还会画出大片的透明区域。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:25
 msgid ""
@@ -78,12 +83,14 @@ msgid ""
 "each other with large transparent areas (for example, when using "
 "``ParallaxBackground``)."
 msgstr ""
+"这会影响性能，尤其是在移动设备上，当绘制非常大的图像时(通常是屏幕大小)，或者"
+"用大的透明区域将多个图像叠加在一起(例如，当使用“视差背景”时)。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:28
 msgid ""
 "Converting to a mesh will ensure that only the opaque parts will be drawn "
 "and the rest will be ignored."
-msgstr ""
+msgstr "转换成网格能确保只绘制不透明部分，其余部分被忽略。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:31
 #, fuzzy
@@ -96,24 +103,26 @@ msgid ""
 "``MeshInstance2D``. Start with an image that contains large amounts of "
 "transparency on the edges, like this tree:"
 msgstr ""
+"您可以通过将“精灵”转换为“二维网格实例”来利用这种优化。从边缘有大量透明度的图"
+"片开始，就像这棵树："
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:38
 msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
-msgstr ""
+msgstr "在“精灵”菜单中选择“转换为二维网格”："
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:42
 msgid ""
 "A dialog will appear, showing a preview of how the 2D mesh will be created:"
-msgstr ""
+msgstr "会出现一个对话框，显示将要创建的二维网格预览："
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:46
 msgid ""
 "The default values are good enough for many cases, but you can change growth "
 "and simplification according to your needs:"
-msgstr ""
+msgstr "很多情况下，默认值已经足够好，但是你可以根据需要改变增长和简化："
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:50
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
 "replaced:"
-msgstr ""
+msgstr "最后，按下“转换为二维网格”按钮，你的精灵将被替换："

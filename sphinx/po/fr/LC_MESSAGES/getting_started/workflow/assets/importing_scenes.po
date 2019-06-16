@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,6 +80,10 @@ msgid ""
 "sure that the skeleton is reset to its T-pose or default rest pose before "
 "exporting with your favorite 3D editor."
 msgstr ""
+"Il est important que le maillage ne soit pas déformé par les os lors de "
+"l'exportation. Assurez-vous que le squelette soit réinitialisé à sa position "
+"T ou à sa position de repos par défaut avant d'exporter avec votre éditeur "
+"3D préféré."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:26
 msgid "Why not FBX?"
@@ -835,29 +839,27 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:330
 msgid "Create a VehicleBody (-vehicle)"
-msgstr ""
+msgstr "Créer un VehicleBody (-vehicle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:332
-#, fuzzy
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleBody <class_VehicleBody>` node."
 msgstr ""
-"Un nœud de maillage avec ce suffixe sera converti en un maillage de "
-"navigation. Le nœud de maillage original sera supprimé."
+"Un nœud de maillage avec ce suffixe sera importé en tant qu'enfant d'un "
+"nœud :ref:`VehicleBody <class_VehicleBody>`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
 msgid "Create a VehicleWheel (-wheel)"
-msgstr ""
+msgstr "Créer une VehicleWheel (-wheel)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:337
-#, fuzzy
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleWheel <class_VehicleWheel>` node."
 msgstr ""
-"Un nœud de maillage avec ce suffixe sera converti en un maillage de "
-"navigation. Le nœud de maillage original sera supprimé."
+"Un nœud de maillage avec ce suffixe sera importé en tant qu'enfant d'un "
+"nœud :ref:`VehicleWheel <class_VehicleWheel>`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:340
 msgid "Rigid Body (-rigid)"

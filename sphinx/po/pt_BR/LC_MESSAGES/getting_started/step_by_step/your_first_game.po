@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1400,12 +1400,16 @@ msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
 msgstr ""
+"Começando por adicionar a nova função para ``Mob.gd``. ``queue_free()`` que "
+"excluirá o nó atual no final do quadro atual."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
+"Então, em ``Main.gd`` adicione uma nova linha dentro da função "
+"``_on_MobTimer_timeout()``, no final."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1157
 msgid ""
@@ -1413,10 +1417,13 @@ msgid ""
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
 "its ``_on_start_game()`` function."
 msgstr ""
+"Essa linha diz ao novo nó Mob ( referenciado pela variável ``mob``) para "
+"responder a qualquer sinal ``start_game`` emitido pelo nó ``HUD`` rodando "
+"sua função ``_on_start_game()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
 msgid "Finishing up"
-msgstr "Finalizando"
+msgstr "Terminando"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
 msgid ""
@@ -1500,7 +1507,7 @@ msgstr "Por fim, adicione ``$SomDeMorte.play()`` na função ``game_over()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1200
 msgid "Keyboard Shortcut"
-msgstr "Atalho de teclado"
+msgstr "Atalho do teclado"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1202
 msgid ""

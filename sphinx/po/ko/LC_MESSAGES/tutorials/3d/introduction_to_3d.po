@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,6 +129,7 @@ msgid "Generated geometry"
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:65
+#, fuzzy
 msgid ""
 "It is possible to create custom geometry by using the :ref:`ArrayMesh "
 "<class_ArrayMesh>` resource directly. Simply create your arrays and use the :"
@@ -138,25 +139,40 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
+":ref:`ArrayMesh <class_ArrayMesh>` 리소스를 바로 사용하여 사용자 정의 지오메"
+"트리를 만들 수 있습니다.. 간단하게 당신의 배열을 만들고 :ref:`ArrayMesh."
+"add_surface_from_arrays() <class_ArrayMesh_method_add_surface_from_arrays>` "
+"함수를 사용하세요. 또한 :ref:`SurfaceTool <class_SurfaceTool>` 도우미 클래스"
+"를 이용할 수 있습니다. 더 간단한 API와 indexing, generating normals, "
+"tangents 등을 위한 도우미를 제공합니다."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:72
+#, fuzzy
 msgid ""
 "In any case, this method is meant for generating static geometry (models "
 "that will not be updated often), as creating vertex arrays and submitting "
 "them to the 3D API has a significant performance cost."
 msgstr ""
+"어쨌든, 이 메소드는 정적 지오메트리(자주 업데이트되지 않는 모델)를 생성하기 "
+"위한 것입니다. 정점 배열을 만들고 3D API에 배열을 제출하는 것은 상당한 성능 "
+"비용이 있습니다"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
-msgstr ""
+msgstr "즉각적인 지오메트리(Immediate geometry)"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:79
+#, fuzzy
 msgid ""
 "If, instead, there is a requirement to generate simple geometry that will be "
 "updated often, Godot provides a special node, :ref:`ImmediateGeometry "
 "<class_ImmediateGeometry>`, which provides an OpenGL 1.x style immediate-"
 "mode API to create points, lines, triangles, etc."
 msgstr ""
+"대신에 자주 업데이트 되는 간단한 지오메트리를 생성해야 할 경우 Godot은 점, "
+"선, 삼각형 등을 만드는 OpenGL 1.x 스타일의 즉시-모드(immediate-mode) API를 제"
+"공하는 특수 노드 :ref:`ImmediateGeometry <class_ImmediateGeometry>` 를 제공합"
+"니다."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"

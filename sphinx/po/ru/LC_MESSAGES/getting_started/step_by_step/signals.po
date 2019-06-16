@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,6 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
@@ -56,7 +55,7 @@ msgstr ""
 "Сигналы - это способ *уменьшить зацепление* игровых объектов, приводящий код "
 "к более упорядоченному и управляемому виду. Вместо того чтобы принуждать "
 "игровые объекты постоянно зависеть от существования других объектов, "
-"возможно выдавать сигналы, на которые  заинтересованные объекты могут "
+"возможно выдавать сигналы, на которые заинтересованные объекты могут "
 "реагировать."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
@@ -72,26 +71,30 @@ msgid "Timer example"
 msgstr "Пример таймера"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
 "<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
 "Чтобы увидеть, как работают сигналы, давайте попробуем использовать узел :"
-"ref:`Timer <class_Timer> . Создайте новую сцену с узлом и двумя дочерними "
-"узлами: таймер и :ref:`спрайт <class_Sprite>`. Вы можете использовать иконку "
-"Godot для текстуры спрайта или любое другое изображение, которое вам "
-"нравится. Присоедините скрипт к корневому узлу, но пока не добавляйте в него "
-"никакого кода."
+"ref:`Timer <class_Timer> . Создайте новую сцену с узлом Node и двумя "
+"дочерними узлами: таймер и :ref:`спрайт <class_Sprite>`. Вы можете "
+"использовать иконку Godot для текстуры спрайта или любое другое изображение, "
+"которое вам нравится. Присоедините скрипт к корневому узлу, но пока не "
+"добавляйте в него никакого кода."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
+#, fuzzy
 msgid ""
 "For the Sprite's texture, you can use the Godot icon, or any other image you "
 "like. Do so by selecting ``Load`` in the Sprite's Texture attribute drop-"
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Для текстуры Спрайта вы можете использовать иконку Godot, или любое другое "
+"изображение, что вы ходите. Сделайте это с помощью выбора ``Load`` в "
+"аттрибуте Sprite Texture в выпадающем меню. Прикрепите скрипт к корневому "
+"узлу, но пока не добавляйте кода."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -237,9 +240,8 @@ msgstr ""
 "и могут быть соединены так же, как и встроенные сигналы узла."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Чтобы выпустить сигнал через код, используйте функцию ``emit``:"
+msgstr "Чтобы выпустить сигнал через код, используйте функцию ``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:208
 msgid "Conclusion"

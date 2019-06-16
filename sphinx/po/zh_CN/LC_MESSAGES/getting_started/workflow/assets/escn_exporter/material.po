@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,24 +96,28 @@ msgid ""
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
+"导出器支持将Cycles/EEVEE材质节点树转换为Godot着色器材质。注意，由于实现上的困"
+"难，一些着色器节点还不受支持，如下所示："
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid "all the ``noisy textures``"
-msgstr ""
+msgstr "所有``噪声纹理``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
 msgid "``generated texture coordinates``"
-msgstr ""
+msgstr "``生成纹理坐标``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
-msgstr ""
+msgstr "``组节点``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
+"着色器节点除了``条理化BSDF``, ``漫射``, ``光泽度``, ``玻璃``, ``添加着色器``"
+"以及``混合着色器``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
 msgid ""
@@ -121,6 +125,8 @@ msgid ""
 "output shader node, it is the only one guarantee to be exactly correctly. "
 "Others are just based on approximation."
 msgstr ""
+"如果可能，可以尝试使用具有GGX分布的条理化BSDF节点作为输出着色器节点，这是唯一"
+"能保证完全正确的方法。其他的只是基于近似。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
 #, fuzzy
@@ -144,9 +150,11 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
+"材质导出的默认配置，将把所有材质保存在``escn``文件内部。有一个选项是，当在"
+"Godot中打开``escn``文件时，可以生成外部``.material``文件。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
-msgstr ""
+msgstr "``.material``文件可以作为外部资源，分配给任何材质槽。"

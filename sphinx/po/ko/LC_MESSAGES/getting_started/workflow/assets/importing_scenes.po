@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,6 +78,9 @@ msgid ""
 "sure that the skeleton is reset to its T-pose or default rest pose before "
 "exporting with your favorite 3D editor."
 msgstr ""
+"메시를 내보낼 때, 메시가 본에 의해 형태가 변하지 않는 것이 중요합니다. 좋아하"
+"는 3D 편집기에서 메시를 내보낼 때, 스켈레톤이 기존의 T 포즈나 기본 휴식 포즈"
+"로 되어있는지 확인하세요."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:26
 msgid "Why not FBX?"
@@ -790,29 +793,27 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:330
 msgid "Create a VehicleBody (-vehicle)"
-msgstr ""
+msgstr "VehicleBody 만들기 (-vehicle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:332
-#, fuzzy
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleBody <class_VehicleBody>` node."
 msgstr ""
-"이 접미사를 가진 메시 노드는 내비게이션 메시로 변환될 것입니다. 기존 메시 노"
-"드는 삭제될 것입니다."
+"이 접미사를 가진 메시 노드는 :ref:`VehicleBody <class_VehicleBody>` 노드의 자"
+"식으로 가져오게 됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
 msgid "Create a VehicleWheel (-wheel)"
-msgstr ""
+msgstr "VehicleWheel 만들기 (-wheel)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:337
-#, fuzzy
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleWheel <class_VehicleWheel>` node."
 msgstr ""
-"이 접미사를 가진 메시 노드는 내비게이션 메시로 변환될 것입니다. 기존 메시 노"
-"드는 삭제될 것입니다."
+"이 접미사를 가진 메시 노드는 :ref:`VehicleWheel <class_VehicleWheel>` 노드의 "
+"자식으로 가져오게 됩니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:340
 msgid "Rigid Body (-rigid)"

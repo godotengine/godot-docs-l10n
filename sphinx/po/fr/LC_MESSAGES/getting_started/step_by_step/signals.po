@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,6 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
@@ -72,18 +71,15 @@ msgid "Timer example"
 msgstr "Exemple de minuterie"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
 "<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
-"Pour voir comment fonctionnent les signaux, essayons d'utiliser un noeud :"
-"ref:`Timer <class_Timer>`. Créez une nouvelle scène avec un nœud et deux "
-"enfants : un Timer et un :ref:`Sprite <class_Sprite>`. Vous pouvez utiliser "
-"l'icône Godot pour la texture du Sprite, ou toute autre image que vous "
-"souhaitez. Attachez un script au nœud racine, mais n'y ajoutez pas encore de "
-"code."
+"Pour voir comment fonctionnent les signaux, essayons d'utiliser un nœud :ref:"
+"`Timer <class_Timer>`. Créez une nouvelle scène avec un nœud et deux "
+"enfants : un Timer et un :ref:`Sprite <class_Sprite>`. Dans le dock scène, "
+"renommez Node part TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -92,6 +88,10 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Pour la texture du Sprite, vous pouvez utiliser l'icône Godot, ou toute "
+"autre image que vous souhaitez. Pour ce faire, sélectionnez ``Load`` dans le "
+"menu déroulant de l'attribut Texture du Sprite. Attachez un script au nœud "
+"racine, mais n'y ajoutez pas encore de code."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -244,9 +244,9 @@ msgstr ""
 "nœud."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Pour émettre un signal par le code, utilisez la fonction ``emit`` :"
+msgstr ""
+"Pour émettre un signal par le code, utilisez la fonction ``emit_signal`` :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:208
 msgid "Conclusion"

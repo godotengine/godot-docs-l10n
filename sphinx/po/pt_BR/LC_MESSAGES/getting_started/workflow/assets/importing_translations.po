@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,16 +83,18 @@ msgstr ""
 "number (it's just a unique string anyway)."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
-#, fuzzy
-msgid "Translators also usually prefer to work with spreadsheets."
-msgstr "Tradutores também preferem trabalhar com planilhas."
+msgid ""
+"If you need a more powerful file format, Godot also supports loading "
+"translations written in the gettext ``.po`` format. See :ref:"
+"`doc_localization_using_gettext` for details."
+msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:36
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 #, fuzzy
 msgid "Translation format"
 msgstr "Formato de tradução"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
 #, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
@@ -109,44 +111,44 @@ msgstr ""
 "arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
 "as follows:"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #, fuzzy
 msgid "<lang1>"
 msgstr "<lang1>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #, fuzzy
 msgid "<lang2>"
 msgstr "<lang2>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #, fuzzy
 msgid "<langN>"
 msgstr "<langN>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 #, fuzzy
 msgid "KEY1"
 msgstr "KEY1"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
 #, fuzzy
 msgid "string"
 msgstr "string"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 #, fuzzy
 msgid "KEY2"
 msgstr "KEY2"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
 #, fuzzy
 msgid "KEYN"
 msgstr "KEYN"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 #, fuzzy
 msgid ""
 "The \"lang\" tags must represent a language, which must be one of the :ref:"
@@ -159,89 +161,89 @@ msgstr ""
 "must be unique and represent a string universally (they are usually in "
 "uppercase, to differentiate from other strings). Here's an example:"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 #, fuzzy
 msgid "id"
 msgstr "id"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 #, fuzzy
 msgid "en"
 msgstr "en"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 #, fuzzy
 msgid "es"
 msgstr "es"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 #, fuzzy
 msgid "ja"
 msgstr "ja"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "GREET"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 #, fuzzy
 msgid "Hello, friend!"
 msgstr "Olá, amigo!"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 #, fuzzy
 msgid "Hola, Amigo!"
 msgstr "Hola, Amigo!"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 #, fuzzy
 msgid "こんにちは"
 msgstr "こんにちは"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "ASK"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 #, fuzzy
 msgid "How are you?"
 msgstr "Como vai você?"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 #, fuzzy
 msgid "Cómo está?"
 msgstr "Cómo está?"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 #, fuzzy
 msgid "元気ですか"
 msgstr "元気ですか"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
 msgid "BYE"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
 #, fuzzy
 msgid "Good Bye"
 msgstr "Adeus"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
 #, fuzzy
 msgid "Adiós"
 msgstr "Adiós"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
 #, fuzzy
 msgid "さようなら"
 msgstr "さようなら"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
 #, fuzzy
 msgid "CSV importer"
 msgstr "Por que importar?"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
 #, fuzzy
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
@@ -250,7 +252,7 @@ msgstr ""
 "Godot vai tratar arquivos CSV como traduções por padrão. Ele vai importá-los "
 "e gerar um ou mais arquivos de recurso de tradução compressas próximas a ele."
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 #, fuzzy
 msgid ""
 "Importing will also add the translation to the list of translations to load "

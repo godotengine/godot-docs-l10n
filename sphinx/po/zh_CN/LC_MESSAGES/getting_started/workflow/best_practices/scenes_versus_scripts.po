@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:4
 msgid "When to use scenes versus scripts"
-msgstr ""
+msgstr "什么时候使用场景，什么时候使用脚本"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:6
 msgid ""
 "We've already covered how scenes and scripts are different. Scripts define "
 "an engine class extension with imperative code, scenes with declarative code."
 msgstr ""
+"我们已经介绍了场景和脚本的不同之处。脚本使用命令式代码定义引擎类扩展，而场景"
+"带有声明性代码。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:10
 msgid ""
@@ -34,10 +36,12 @@ msgid ""
 "are often used in conjunction with a script so that the scene acts as an "
 "extension of the scripts declarative code."
 msgstr ""
+"因此，每个系统的功能是不同的。场景可以定义扩展类如何初始化，但不关心它的实际"
+"行为。场景经常与脚本结合使用，使得场景作为脚本声明性代码的扩展。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
 msgid "Anonymous types"
-msgstr ""
+msgstr "匿名类型"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:18
 msgid ""
@@ -45,6 +49,8 @@ msgid ""
 "alone. This is, in essence, what the Godot Editor does, only in the C++ "
 "constructor of its objects."
 msgstr ""
+"*仅仅*使用脚本就可以完全定义场景的内容。这就是Godot编辑器的本质，只存在于c+"
+"+构造函数的对象中。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
 msgid ""
@@ -52,6 +58,8 @@ msgid ""
 "is identical to creating in-engine classes whereas handling scenes requires "
 "a change in API:"
 msgstr ""
+"但是，选择使用哪个可能是个两难的选择。创建脚本实例与创建引擎内的类相同，但是"
+"处理场景需要更改API:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:59
 msgid ""
@@ -59,6 +67,8 @@ msgid ""
 "differences between engine and script code. The larger and more complex the "
 "node, the more reason there is to build it as a scene."
 msgstr ""
+"此外，由于引擎和脚本代码之间的速度差异，脚本的运行速度会比场景略慢。节点越大"
+"越复杂，所以更加有理由把它建立为一个场景。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
 #, fuzzy
@@ -72,10 +82,13 @@ msgid ""
 "dialog with an optional icon. In these cases, the user's ability to use the "
 "script is much more streamlined. Rather than having to..."
 msgstr ""
+"在某些情况下，用户可以在编辑器内，将脚本注册为新类型。在节点或资源创建对话框"
+"中，将其显示为新类型，并带有可选图标。在这些情况下，用户使用脚本的能力更加流"
+"畅。而不必……"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:71
 msgid "Know the base type of the script they would like to use."
-msgstr ""
+msgstr "了解他们想要使用的脚本的基本类型。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
 #, fuzzy
@@ -89,7 +102,7 @@ msgstr "资源的文字描述。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
 msgid "(Drag-n-drop method)"
-msgstr ""
+msgstr "（拖放方法）"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
 #, fuzzy
@@ -103,13 +116,13 @@ msgstr "编写脚本，使其能访问场景中的其它节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
 msgid "(Property method)"
-msgstr ""
+msgstr "(属性方法)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:85
 msgid ""
 "Scroll down to the bottom of the Inspector to find the ``script`` property "
 "and select it."
-msgstr ""
+msgstr "向下滚动到属性面板的底部，找到“脚本”属性并选择它。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:87
 #, fuzzy
@@ -128,6 +141,8 @@ msgid ""
 "of the above work. The creation dialog even has a search bar to look up the "
 "type by name."
 msgstr ""
+"使用注册脚本，相反，脚本类型变成了创建选项，就像系统中的其他节点和资源一样。"
+"你不需要做任何的工作。创建有一个搜索栏的对话框来按名称查找类型。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:96
 #, fuzzy
@@ -141,42 +156,44 @@ msgstr ":ref:`易于书写的着色器 <doc_shading_language>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:100
 msgid "Editor-only. Typenames are not accessible at runtime."
-msgstr ""
+msgstr "仅限编辑器。运行时无法访问类型名。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:102
 msgid "Does not support inherited custom types."
-msgstr ""
+msgstr "不支持继承自定义类型。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:104
 msgid "An initializer tool. Creates the node with the script. Nothing more."
-msgstr ""
+msgstr "初始化工具。使用脚本创建节点。仅此而已。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:106
 msgid ""
 "Editor has no type-awareness of the script or its relationship to other "
 "engine types or scripts."
-msgstr ""
+msgstr "编辑器不知道脚本的类型，也不知道它与其他引擎类型或脚本的关系。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:109
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:127
 msgid "Allows users to define an icon."
-msgstr ""
+msgstr "允许用户定义图标。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:111
 msgid ""
 "Works for all scripting languages because it deals with Script resources in "
 "abstract."
-msgstr ""
+msgstr "适用于所有脚本语言，因为它处理抽象的脚本资源。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:113
 msgid ""
 "Set up using :ref:`EditorPlugin.add_custom_type "
 "<class_EditorPlugin_method_add_custom_type>`."
 msgstr ""
+"设置使用:参考:`编辑器插件.添加_自定义_类型<类_编辑器插件_方法_添加_自定义_类"
+"型>`。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:115
 msgid ":ref:`Script Classes <doc_scripting_continued_class_name>`"
-msgstr ""
+msgstr ":参考:`脚本类<文档_脚本_持续_类_名称>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:40+0200\n"
+"POT-Creation-Date: 2019-06-16 22:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ":ref:`Sinais <doc_signals>`"
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`Exporting <doc_exporting>`"
-msgstr ":ref:`Exporting <doc_exporting>`"
+msgstr ":ref:`Exportando <doc_exportando>`"
 
 #: ../../docs/about/docs_changelog.rst:23
 msgid "Project workflow"
@@ -65,7 +65,7 @@ msgstr "Fluxo de trabalho do projeto"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`Custom builds for Android <doc_android_custom_build>`"
-msgstr ""
+msgstr ":ref:`Builds personalizadas para Android <doc_android_custom_build>`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid "Best Practices:"
@@ -178,28 +178,26 @@ msgid ":ref:`2D skeletons <doc_2d_skeletons>`"
 msgstr ":ref:`Esqueletos 2D<doc_2d_skeletons>`"
 
 #: ../../docs/about/docs_changelog.rst:67
-#, fuzzy
 msgid ":ref:`AnimationTree <doc_animation_tree>`"
-msgstr ":ref:`Canalização de Animações <doc_animations>`"
+msgstr ":ref:`Árvore de Animações <doc_animation_tree>`"
 
 #: ../../docs/about/docs_changelog.rst:70
 msgid "GUI"
-msgstr ""
+msgstr "GUI"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`Containers <doc_gui_containers>`"
-msgstr ":ref:`Interfaces Godot <doc_godot_interfaces>`"
+msgstr ":ref:`Contêiners <doc_gui_contêiners>`"
 
 #: ../../docs/about/docs_changelog.rst:75
-#, fuzzy
 msgid "Viewports"
-msgstr "Viewports"
+msgstr "Janelas de exibição"
 
 #: ../../docs/about/docs_changelog.rst:77
-#, fuzzy
 msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
-msgstr ":ref:`Usando uma Viewport como uma textura <doc_viewport_as_texture>`"
+msgstr ""
+":ref:`Usando uma Janela de exibição (Viewport) como uma textura "
+"<doc_viewport_as_texture>`"
 
 #: ../../docs/about/docs_changelog.rst:78
 msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
@@ -218,7 +216,6 @@ msgstr ""
 "<doc_intro_to_shaders_water_workshop>`"
 
 #: ../../docs/about/docs_changelog.rst:84
-#, fuzzy
 msgid ""
 ":ref:`Migrating to Godot’s shading language "
 "<doc_migrating_to_godot_shader_language>`"
@@ -231,67 +228,57 @@ msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
 msgstr ":ref:`Pós-processo avançado <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid "Your First Shader Series:"
-msgstr "Seu primeiro jogo"
+msgstr "Sua Primeira Série Shader:"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`What are shaders? <doc_what_are_shaders>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`O que são shaders? <doc_what_are_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:89
-#, fuzzy
 msgid ":ref:`Your first CanvasItem shader <doc_your_first_canvasitem_shader>`"
-msgstr ":ref:`Shaders de CanvasItem <doc_canvas_item_shader>`"
+msgstr ""
+":ref:`Seu primeiro shader de CanvasItem <doc_your_first_canvasitem_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:90
-#, fuzzy
 msgid ":ref:`Your first Spatial shader <doc_your_first_spatial_shader>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`Seu primeiro shader Spatial  <doc_your_first_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:91
-#, fuzzy
 msgid ""
 ":ref:`Your first Spatial shader: Part 2 <doc_your_second_spatial_shader>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ""
+":ref:`Seu primeiro shader Spatial: Parte 2 <doc_your_second_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:98
-#, fuzzy
 msgid "Shading Reference:"
-msgstr "Alterando a cena atual"
+msgstr "Referência de sombreamento:"
 
 #: ../../docs/about/docs_changelog.rst:94
-#, fuzzy
 msgid ":ref:`Shaders <doc_shaders>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`Sombreamento <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:95
-#, fuzzy
 msgid ":ref:`Shading language <doc_shading_language>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`Linguagem de sombreamento <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:96
-#, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`Shaders Spatial <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:97
 msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
 msgstr ":ref:`Shaders de CanvasItem <doc_canvas_item_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:98
-#, fuzzy
 msgid ":ref:`Particles shaders <doc_particle_shader>`"
-msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
+msgstr ":ref:`Sombreamento de partículas <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:101
-#, fuzzy
 msgid "VR"
 msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:103
-#, fuzzy
 msgid ":ref:`VR starter tutorial <doc_vr_starter_tutorial>`"
 msgstr ":ref:`Tutorial de iniciante de VR <doc_vr_starter_tutorial>`"
 
@@ -300,11 +287,11 @@ msgid "Platform-specific"
 msgstr "Plataformas específicas"
 
 #: ../../docs/about/docs_changelog.rst:108
-#, fuzzy
 msgid ""
 ":ref:`Customizing the Web export HTML page <doc_customizing_html5_shell>`"
 msgstr ""
-":ref:`Personalizando a Web export HTML page <doc_customizing_html5_shell>`"
+":ref:`Personalizando a página Web de exportação de HTML "
+"<doc_customizing_html5_shell>`"
 
 #: ../../docs/about/docs_changelog.rst:111
 msgid "Multi-threading"
@@ -315,19 +302,16 @@ msgid ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
 msgstr ":ref:`Thread APIs seguras<doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:116
-#, fuzzy
 msgid "Optimization"
-msgstr "Animação"
+msgstr "Otimização"
 
 #: ../../docs/about/docs_changelog.rst:118
-#, fuzzy
 msgid ":ref:`Using MultiMesh <doc_using_multimesh>`"
-msgstr ":ref:`Criando árvores <doc_making_trees>`"
+msgstr ":ref:`Utilizando MultiMesh <doc_using_multimesh>`"
 
 #: ../../docs/about/docs_changelog.rst:119
-#, fuzzy
 msgid ":ref:`Using servers <doc_using_servers>`"
-msgstr ":ref:`Criando árvores <doc_making_trees>`"
+msgstr ":ref:`Usando servidores <doc_making_trees>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #, fuzzy
@@ -335,17 +319,14 @@ msgid "Miscellaneous"
 msgstr "Diversos"
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`Fixing jitter and stutter <doc_jitter_stutter>`"
 msgstr ":ref:`Consertando jitter e stutter <doc_jitter_stutter>`"
 
 #: ../../docs/about/docs_changelog.rst:125
-#, fuzzy
 msgid ":ref:`Running code in the editor <doc_running_code_in_the_editor>`"
 msgstr ":ref:`Rodando código no editor <doc_running_code_in_the_editor>`"
 
 #: ../../docs/about/docs_changelog.rst:126
-#, fuzzy
 msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
 msgstr ":ref:`Mudar cenas manualmente <doc_change_scenes_manually>`"
 
@@ -356,36 +337,30 @@ msgstr ":ref:'Diferenças entre GLES2 e GLES3 <doc_gles2_gles3_differences>`"
 
 #: ../../docs/about/docs_changelog.rst:130
 msgid "Legal"
-msgstr ""
+msgstr "Jurídico"
 
 #: ../../docs/about/docs_changelog.rst:132
-#, fuzzy
 msgid ":ref:`Complying with Licenses <doc_complying_with_licenses>`"
 msgstr ""
-":ref:`Compilando com chave de encriptação de script "
-"<doc_compiling_with_script_encryption_key>`"
+":ref:`Compilando com Licenças <doc_compiling_with_script_encryption_key>`"
 
 #: ../../docs/about/docs_changelog.rst:135
-#, fuzzy
 msgid "Compiling"
 msgstr "Compilando"
 
 #: ../../docs/about/docs_changelog.rst:137
-#, fuzzy
 msgid ":ref:`Optimizing a build for size <doc_optimizing_for_size>`"
-msgstr ":ref:`Otimizando uma build por tamanho <doc_optimizing_for_size>`"
+msgstr ":ref:`Otimizando uma build para tamanho <doc_optimizing_for_size>`"
 
 #: ../../docs/about/docs_changelog.rst:138
-#, fuzzy
 msgid ""
 ":ref:`Compiling with script encryption key "
 "<doc_compiling_with_script_encryption_key>`"
 msgstr ""
-":ref:`Compilando com chave de encriptação de script "
+":ref:`Compilando com a chave de encriptação de script "
 "<doc_compiling_with_script_encryption_key>`"
 
 #: ../../docs/about/docs_changelog.rst:141
-#, fuzzy
 msgid "Engine development"
 msgstr "Desenvolvimento de Engine"
 
@@ -397,7 +372,6 @@ msgstr ""
 "<doc_binding_to_external_libraries>`"
 
 #: ../../docs/about/docs_changelog.rst:146
-#, fuzzy
 msgid "Creating content"
 msgstr "Criando conteúdo"
 
@@ -419,6 +393,5 @@ msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
 msgstr ":ref:`Plugins de gizmo espacial <doc_animations>`"
 
 #: ../../docs/about/docs_changelog.rst:155
-#, fuzzy
 msgid ":ref:`Creating Android plugins <doc_android_plugin>`"
-msgstr ":ref:`Plugins de gizmo espacial <doc_animations>`"
+msgstr ":ref:`Criando plugins para Android <doc_animations>`"
