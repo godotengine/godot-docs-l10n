@@ -53,6 +53,7 @@
 # ieleny filgueira <ielenyfilgueira@hotmail.com>, 2018.
 # Klaus Dellano <klausdell@hotmail.com>, 2018-2019.
 # Leandro <xupisco@gmail.com>, 2018.
+# Leonardo Nyanko Desu <leonardo.sensei2@gmail.com>, 2019.
 # Leonardo Ramos <ranyor@gmail.com>, 2019.
 # Lucas Motizuki <motizukilucas@gmail.com>, 2019.
 # Lucas Prado <lucade238oficial@gmail.com>, 2018.
@@ -74,10 +75,12 @@
 # Miguel R. Araújo <leuugz@gmail.com>, 2019.
 # miketangogamer <miketangogamer@gmail.com>, 2018-2019.
 # Mosca Morta <ewersonffranco@gmail.com>, 2018.
+# Nataniel Sousa <natannada08@gmail.com>, 2019.
 # Paulo Sergio Nogueira da Silva <paulozero357@gmail.com>, 2018.
 # Pedro Silva <pedrosgregorio9@gmail.com>, 2018.
 # Pietro Benati Carrara <piticarrara@gmail.com>, 2019.
 # Raphael Nogueira Campos <raphaelncampos@gmail.com>, 2019.
+# Rarysson Guilherme <r_guilherme12@hotmail.com>, 2019.
 # Renato Lacerda <renato.ac.lacerda@gmail.com>, 2018.
 # Renato Rotenberg <renato.rotenberg@gmail.com>, 2019.
 # Renne Sampaio <rennesampaio97@gmail.com>, 2018-2019.
@@ -104,8 +107,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-06-16 22:53+0200\n"
-"PO-Revision-Date: 2019-06-16 20:10+0000\n"
-"Last-Translator: Sergio Henrique C Miranda <sergiogbrox@gmail.com>\n"
+"PO-Revision-Date: 2019-07-02 12:04+0000\n"
+"Last-Translator: Rarysson Guilherme <r_guilherme12@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -113,7 +116,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7-dev\n"
+"X-Generator: Weblate 3.8-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -1659,7 +1662,6 @@ msgstr ":ref:`Usando servidores <doc_making_trees>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 #: ../../docs/tutorials/misc/index.rst:2
-#, fuzzy
 msgid "Miscellaneous"
 msgstr "Diversos"
 
@@ -3671,17 +3673,17 @@ msgid "Groups"
 msgstr "Grupos"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
 "for organizing large scenes. There are two ways to do add nodes to groups. "
 "The first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"Nós podem ser adicionados a grupos, tantos quantos desejados por nó, e isso "
-"é uma funcionalidade útil para organizar cenas grandes. Há duas forma de "
-"fazer isso. A primeira é pela interface gráfica, a partir do botão Grupos "
-"dentro do painel Nó:"
+"Grupos em Godot funcionam como tags que você pode encontrar em outros "
+"softwares. Nós podem ser adicionados a grupos, tantos quantos desejados por "
+"nó, e isso é uma funcionalidade útil para organizar cenas grandes. Há duas "
+"forma de fazer isso. A primeira é pela interface gráfica, a partir do botão "
+"Grupos dentro do painel Nó:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
@@ -3721,7 +3723,6 @@ msgstr ""
 "<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -3731,7 +3732,7 @@ msgid ""
 msgstr ""
 "A classe :ref:`SceneTree <class_SceneTree>` fornece muitos métodos úteis, "
 "como interagir com cenas, suas hierarquias e grupos de nós. Ela lhe permite "
-"facilmente trocar ou recarregar cenas, sair do jogo ou suspendê-lo ou retomá-"
+"facilmente trocar ou recarregar cenas, sair do jogo ou pausa-lo ou retomá-"
 "lo. Ela até vem com sinais interessantes. Então dê uma olhada nela se tiver "
 "um tempo!"
 
@@ -3978,7 +3979,6 @@ msgid "Timer example"
 msgstr "Alguns exemplos"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
@@ -3986,9 +3986,7 @@ msgid ""
 msgstr ""
 "Para ver como sinais funcionam, vamos tentar usar um nó :ref:`Timer "
 "<class_Timer>`. Crie uma nova cena com um Node e dois filhos: um Timer e um :"
-"ref:`Sprite <class_Sprite>`. Você pode usar o ícone do Godot para a textura "
-"do Sprite, ou qualquer outra imagem que você quiser. Anexe um script no nó "
-"raíz, mas não adicione nenhum código a ele ainda."
+"ref:`Sprite <class_Sprite>`.  Na Scene dock renomeie o nó para TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -4143,9 +4141,8 @@ msgstr ""
 "ser conectados da mesma forma que os sinais pré-incorporados em um node."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Para emitir um sinal por código, use a função ``emit``:"
+msgstr "Para emitir um sinal por código, use a função ``emit_signal`` :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
@@ -5535,7 +5532,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1129
 msgid "Removing old creeps"
-msgstr ""
+msgstr "Removendo antigas criaturas"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
 msgid ""
@@ -5543,6 +5540,9 @@ msgid ""
 "the previous game are still on screen. It would be better if they all "
 "disappeared at the start of a new game."
 msgstr ""
+"Se você jogar até o \"Game Over\" e der start em um novo jogo as criaturas "
+"do jogo anterior ainda estarão na tela. Seria melhor se todas elas "
+"desaparecessem quando iniciar o novo jogo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid ""
@@ -5552,6 +5552,11 @@ msgid ""
 "``Mob`` nodes in the ``Main`` scene tree until we run the game. Instead "
 "we'll use code."
 msgstr ""
+"Nós vamos usar o sinal ``start_game`` que já está sendo emitido pelo nó "
+"``HUD`` para remover as criaturas restantes. Nós não podemos usar o editor "
+"para conectar o sinal nos mobs da maneira que precisamos, porque não há nós "
+"``Mob`` na arvore de cena ``Main`` até que o jogo seja executado.Em vez "
+"disso, vamos usar o código."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1140
 msgid ""
@@ -6065,12 +6070,11 @@ msgstr ""
 "etapa."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:240
-#, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
 msgstr ""
-"Para construir seu jogo para iOS, você deve ter um computador executando o "
+"Para compilar seu jogo para iOS, você deve ter um computador executando o "
 "MacOS com o Xcode instalado."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:243
@@ -6549,7 +6553,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Design de interfaces com os nós de Controle"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -6557,15 +6560,12 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
-"Monitores de computador, telefones celulares e tela de TV vêm em todas as "
-"formas e tamanhos. Para enviar um jogo, você precisará suportar diferentes "
-"proporções e resoluções de tela. Pode ser difícil criar interfaces "
-"responsivas que se adaptem a todas as plataformas. Felizmente, o Godot vem "
-"com ferramentas robustas para projetar e gerenciar a interface de usuário "
-"responsiva. Para projetar sua interface do usuário, você usará o nós de "
-"Controle. Estes são os nós com ícones verdes no editor. Existem dezenas "
-"deles, para criar qualquer coisa, desde barras de vida até aplicações "
-"complexas. Tanto o editor quanto os plugins do Godot usam esses nós."
+"Monitores de computador, telefones celulares e tela de TV existem em todas "
+"as formas e tamanhos. Para enviar um jogo, você precisará suportar "
+"diferentes proporções e resoluções de tela. Pode ser difícil criar "
+"interfaces responsivas que se adaptem a todas as plataformas. Felizmente, o "
+"Godot vem com ferramentas robustas para projetar e gerenciar a interface de "
+"usuário responsiva."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -6579,10 +6579,8 @@ msgstr ""
 "aprender:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
-msgstr ""
-"Os cinco nós de controle mais úteis para criar a interface dos seus jogos"
+msgstr "Os cinco nós de controle mais úteis para criar sua interface de jogos"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
@@ -6596,11 +6594,15 @@ msgstr ""
 "contêineres"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
+#, fuzzy
 msgid ""
 "The five most common containers (at a later time, you can learn more about "
 "containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
 "page)."
 msgstr ""
+"Os cinco contêineres mais comuns (outra hora, você pode ler mais sobre "
+"contêineres na pagina de documentação :ref:`GUI Containers "
+"<doc_gui_containers>`)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -6612,20 +6614,30 @@ msgstr ""
 "<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
+#, fuzzy
 msgid ""
 "To design your UI, you'll use the Control nodes. These are the nodes with "
 "green icons in the editor. There are dozens of them, for creating anything "
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"Para desenhar sua UI, você irá usar os nós Controle. Eles são os os nós com "
+"ícones verdes no editor. Lá tem dezenas deles, para criar qualqeur coisa "
+"desde barras de life até aplicações complexas. O editor do Godot é "
+"construido usando nós Controle."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
+#, fuzzy
 msgid ""
 "Control nodes have unique properties that allow them to work well with one "
 "another. Other visual nodes, like Node2D and Sprite don't have these "
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"Os nós de Controle possuem propriedades exclusivas que permitem que eles "
+"funcionem bem um com o outro. Outros nós visuais, como Node2D e Sprite não "
+"possuem estas capacidades. Então para facilitar sua vida use os nós de "
+"Controle sempre que possível quando for construir suas UIs."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
@@ -13214,8 +13226,8 @@ msgid ""
 "Some people can learn better by taking a look at the syntax, so here's a "
 "simple example of how GDScript looks."
 msgstr ""
-"Algumas pessoas podem aprender melhor dando uma olhada na sintaxe, então "
-"aqui está um exemplo simples de como o GDScript parece."
+"Algumas pessoas conseguem aprender melhor observando a sintaxe, então aqui "
+"está um simples exemplo de como o GDScript parece."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:129
 msgid ""
@@ -61831,7 +61843,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
 msgid "Asset Library"
-msgstr ""
+msgstr "Biblioteca de Assets"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"

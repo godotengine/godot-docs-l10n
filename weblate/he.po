@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Daniel <lorddaniel09@gmail.com>, 2018.
+# Daniel Dovgun <daniel.dovgun@gmail.com>, 2019.
 # Ido Dana <idodana01@gmail.com>, 2019.
 # RaikaRakka <shaiyatta@gmail.com>, 2018.
 # Yaron Shahrabani <sh.yaron@gmail.com>, 2018-2019.
@@ -13,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-06-16 22:53+0200\n"
-"PO-Revision-Date: 2019-03-28 08:39+0000\n"
+"PO-Revision-Date: 2019-07-02 12:04+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/he/>\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 3.6-dev\n"
+"X-Generator: Weblate 3.8-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -157,7 +158,7 @@ msgstr "קהילה"
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr "על אודות"
+msgstr "על"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -275,7 +276,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
-msgstr "על Godot"
+msgstr "על אודות המנוע Godot"
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -327,7 +328,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:57
 msgid "About the documentation"
-msgstr "על התיעוד"
+msgstr "על אודות התיעוד"
 
 #: ../../docs/about/introduction.rst:59
 #, fuzzy
@@ -388,6 +389,8 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
+"פרק :ref:`sec-general` מכיל את המבוא וכן את המידע על המנוע, על ההיסטוריה "
+"שלו,  על הרשאותיו, על מחבריו ועוד. כמו כן מכיל המבוא את :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
 msgid ""
@@ -584,6 +587,8 @@ msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"חלק מהמשתמשים דיווחו שהם גם הצליחו להשתמש ב־Godot על מערכות המובססות על "
+"ארכיטקטורת ARM, כגון Raspberry Pi בעזרת לינוקס."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
@@ -591,17 +596,21 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
+"בנוסף על כך, ישנם כמה ישומיי צד שלישי לא רשמיים המסוגלים לבנות לחלק "
+"מהקונסולות. למרות זאת, ישומיים אלו לא כלולים בסקריפטי הבנייה ובתבניות הייצוא "
+"הרשמיים."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"לקבלת מידע נוסף, ראו פרק על `<ref:`exporting <toc-learn-workflow-export: וגם "
+"פרק על `<ref:`compiling Godot yourself<toc-devel-compiling: ."
 
 #: ../../docs/about/faq.rst:62
-#, fuzzy
 msgid "Which programming languages are supported in Godot?"
-msgstr "אילו שפות נתמכות ב־Godot?"
+msgstr "אילו שפות תכנות נתמכות ב־Godot?"
 
 #: ../../docs/about/faq.rst:64
 msgid ""
@@ -609,6 +618,8 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"השפות הרשמיות הנתמכות בגודוט הם: C#, GDScript, סקריפטינג חזותי ו++C. ראו את "
+"הקטגוריות משנה לכל שפה בפרק '<ref:`scripting <toc-learn-scripting: ."
 
 #: ../../docs/about/faq.rst:68
 msgid ""
@@ -619,6 +630,12 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"אם הינכם רק מתחילים עם גודוט או עם פיתוח משחקים בכללי, GDscript היא השפה "
+"המומלצת ללמידה שכן היא שפה שנבנתה על גבי המנוע והיא מותאמת לו. בזמן ששפות "
+"סקריפטיות נוטות להיות בעלות ביצועים נחותים יותר משפות עיליות או שפות low-"
+"level בטווח הארוך; GDscript יספק דרך מהירה, ידידותית, ובעלת יכולות גבוהות "
+"בשביל יצירת אב-טיפוס, בשביל יצירת מוצרי בר-קיימא מינימליים ובשביל יצירת "
+"מוצרים שניתן למסחר במהרה."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -630,6 +647,11 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"נא לשים לב כי התמיכה ב־C#‎ עדיין חדשה יחסית, על כן, יתכן ותצוצנה בעיות במהלך "
+"העבודה. קהילת המתכנתים הידידותיים שלנו עמלה רבות והיא תמיד מוכנה להתמודד עם "
+"בעיות חדשות, אך כיוון שמיזם זה הוא מיזם קוד פתוח, נמליץ לך תחילה לוודא "
+"שביצעת הכול כשורה לפני הכול. דרך טובה להתחיל את תהליך פתרון התקלות היא לחפש "
+"בדיונים תחת `<נושאים פתוחים <https://github.com/godotengine/godot/issues` ."
 
 #: ../../docs/about/faq.rst:82
 msgid ""
@@ -639,10 +661,15 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"לשפות חדשות, תיתכן תמיכה דרך צדדים שלישיים בעזרת GDNative / NativeScript / "
+"PluginScript. כרגע העבודה נמצאת בעיצומה על יצירת איגודים לא רשמיים לגודו, "
+"לדוגמה:\n"
+"`<Python <https://github.com/touilleMan/godot-python>` וגם `<Nim <https://"
+"github.com/pragmagic/godot-nim` ."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "מה הוא GDScript ומדוע עלי להשתמש בו?"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -698,12 +725,12 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "מה היו המניעים ליצירת GDScript?"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr ""
+msgstr "הסיבות הראשיות ליצירת שפת סקריפטינג המותאמת אישית לגודוט:"
 
 #: ../../docs/about/faq.rst:126
 msgid ""
@@ -72871,7 +72898,7 @@ msgstr "ראה גם  `את דף הרישיון באתר גודוט <https://godo
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
-msgstr ""
+msgstr "שאלות ותשובות נפוצות"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"

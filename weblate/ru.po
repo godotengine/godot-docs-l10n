@@ -14,6 +14,7 @@
 # Allan Nordhøy <epost@anotheragency.no>, 2019.
 # Anatolich <rva.moscow@gmail.com>, 2018.
 # Andrii Doroshenko <xrayez@gmail.com>, 2018.
+# Anton <rokketjump@gmail.com>, 2019.
 # Anton Ivanov <sylaralastr@gmail.com>, 2018.
 # asapokl <kzoper@gmail.com>, 2018.
 # B10nicMachine <shumik1337@gmail.com>, 2018.
@@ -53,6 +54,7 @@
 # Novikov Vladimir <valdemar.const@gmail.com>, 2018.
 # Omicron <omicron666.dev@gmail.com>, 2018.
 # Petr Kustov <zcaliptium@gmail.com>, 2018-2019.
+# PJ <Montigor0@gmail.com>, 2019.
 # Ratmir Karabut <rkarabut@gmail.com>, 2019.
 # Roman <Steel_hawk@list.ru>, 2018-2019.
 # Ruaguzov Michael <miha890r@gmail.com>, 2019.
@@ -71,9 +73,10 @@
 # Азиз Ганиев <ajganiev@gmail.com>, 2018.
 # Александр <ol-vin@mail.ru>, 2018-2019.
 # Александр <sashnos98@gmail.com>, 2019.
-# Анатолий Горбунов <afgorbunov@gmail.com>, 2018.
+# Анатолий Горбунов <afgorbunov@gmail.com>, 2018-2019.
 # Аркадий Авас <savvot@gmail.com>, 2018.
 # Арсений Солодков <arsen332211@gmail.com>, 2019.
+# Артем Мельник <regnaris@gmail.com>, 2019.
 # Аслан Снупов <aslan170505@gmail.com>, 2018.
 # Виктор <victor8632@bk.ru>, 2019.
 # Влад Афонин (Midnightcoder) <afonin.com123@gmail.com>, 2018.
@@ -96,8 +99,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-06-16 22:53+0200\n"
-"PO-Revision-Date: 2019-06-16 20:10+0000\n"
-"Last-Translator: Dark King <damir@t1c.ru>\n"
+"PO-Revision-Date: 2019-07-02 12:04+0000\n"
+"Last-Translator: Chaosus89 <chaosus89@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -106,7 +109,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.7-dev\n"
+"X-Generator: Weblate 3.8-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -3657,7 +3660,6 @@ msgid "Groups"
 msgstr "Группы"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
@@ -3986,9 +3988,9 @@ msgid ""
 "yet."
 msgstr ""
 "Для текстуры Спрайта вы можете использовать иконку Godot, или любое другое "
-"изображение, что вы ходите. Сделайте это с помощью выбора ``Load`` в "
-"аттрибуте Sprite Texture в выпадающем меню. Прикрепите скрипт к корневому "
-"узлу, но пока не добавляйте кода."
+"изображение. Сделайте это с помощью выбора ``Загрузить`` в аттрибуте Sprite "
+"Texture в выпадающем меню. Прикрепите скрипт к корневому узлу, но пока не "
+"добавляйте код."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -5344,9 +5346,8 @@ msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
-#, fuzzy
 msgid "*Text* : ``0``"
-msgstr "*Text*: ``0``"
+msgstr "*Text* : ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid "*Layout* : \"Top Wide\""
@@ -5514,15 +5515,14 @@ msgid "Removing old creeps"
 msgstr "Удаляем старых крипов"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
-#, fuzzy
 msgid ""
 "If you play until \"Game Over\" and then start a new game the creeps from "
 "the previous game are still on screen. It would be better if they all "
 "disappeared at the start of a new game."
 msgstr ""
-"Если ты играешь пока \"Game Over\" и затем начинаешь новую игру, крипы из "
-"предыдущей игры езё на экране. Будет лучше, если они исчезнут в начале новой "
-"игры"
+"Если вы доиграете до конца и затем начнете новую игру, крипы из предыдущей "
+"игры останутся на экране. Будет лучше, если они будут исчезать в начале "
+"новой игры."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid ""
@@ -5532,29 +5532,37 @@ msgid ""
 "``Mob`` nodes in the ``Main`` scene tree until we run the game. Instead "
 "we'll use code."
 msgstr ""
+"Для удаления оставшихся крипов, мы используем сигнал ``start_game`` который "
+"уже посылает узел ``HUD``. Мы не можем использовать редактор для подключения "
+"сигнала к мобам так как мы хотим, поскольку, до запуска игры, в дереве сцены "
+"``Main`` нет узлов ``Mob``. Вместо этого мы используем код."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1140
 msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
 msgstr ""
-"Начните с добавления новой функций \"\"Mob.gd\"\".\"\"queue_free()\"\" "
-"Удалит этот узел в конце текущего кадра."
+"Начните с добавления новой функций ``Mob.gd``. ``queue_free()`` удалит этот "
+"узел в конце текущего кадра."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
-"Затем в ``Main.gd`` добавь новую линию внутрь ``_on_MobTimer_timeout()` "
-"функций, в конце"
+"Затем добавьте новую строку, в конец функции  в ``_on_MobTimer_timeout()``, "
+"в ``Main.gd``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1157
+#, fuzzy
 msgid ""
 "This line tells the new Mob node (referenced by the ``mob`` variable) to "
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
 "its ``_on_start_game()`` function."
 msgstr ""
+"Эта строка говорит новому узлу Mob (...) отвечать на все сигналы "
+"``start_game``, отправленные ``HUD``, исполнением функции "
+"``_on_start_game()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
 msgid "Finishing up"
@@ -6569,6 +6577,8 @@ msgid ""
 "containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
 "page)."
 msgstr ""
+"Пять самых используемых контейнеров (позже вы можете изучить больше о "
+"контейнерах на странице :ref:`GUI Containers <doc_gui_containers>`)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -6586,6 +6596,10 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"Для создания своего интерфейса, вы должны использовать узлы Control. В "
+"редакторе это узлы с зелеными иконками. Их очень много, для создания всего, "
+"от полосок здоровья до более сложных применений. Интерфейс редактора Godot "
+"построен на использовании узлов Control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -6594,6 +6608,10 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"Узлы Control имеют уникальные свойства позволяющие им отлично работать друг "
+"с другом. Другие визуальные узлы, такие как Node2D и Sprite не имеют таких "
+"свойств. Так что, если вы строите свой интерфейс, используйте узлы Control "
+"где только возможно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
@@ -7152,13 +7170,12 @@ msgid "The 5 most useful containers"
 msgstr "5 наиболее полезных контейнеров"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
-#, fuzzy
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
-"Если вы создаёте инструменты, вам могут понадобиться все контейнеры. Но для "
-"большинства игр достаточно нескольких:"
+"Если вы создаёте инструменты, то вам могут понадобиться все контейнеры. Но "
+"для большинства игр достаточно нескольких:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
 msgid "MarginContainer, to add margins around part of the UI"
@@ -7179,7 +7196,6 @@ msgstr ""
 "пользовательского интерфейса в строках или столбцах"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:298
-#, fuzzy
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
 msgstr "GridContainer, упорядочивает узлы Controls в виде сетки"
 
@@ -7641,7 +7657,6 @@ msgid "The three text options, as individual nodes"
 msgstr "Три варианта текста, как отдельные узлы"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
-#, fuzzy
 msgid "The version note"
 msgstr "Информация о версии"
 
@@ -7693,13 +7708,12 @@ msgid "The six nodes, with textures loaded"
 msgstr "Шесть узлов с загруженными текстурами"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
-#, fuzzy
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
 msgstr ""
-"Если вы хотите локализовать вашу игру, используйте ``Labels`` для опций меню "
-"вместо ``TextureRect``."
+"Если вы хотите добавить возможность локализации вашей игры, используйте "
+"``Labels`` для опций меню вместо ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:182
 msgid "Add containers to place UI elements automatically"
@@ -13045,7 +13059,7 @@ msgstr "{project} --goto {file}:{line}:{col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "Vim (gVim)"
-msgstr ""
+msgstr "Vim (gVim)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "``\"+call cursor({line}, {col})\" {file}``"
@@ -16105,9 +16119,9 @@ msgid ""
 "Always use one space around operators and after commas. Avoid extra spaces "
 "in dictionary references and function calls, or to create \"columns.\""
 msgstr ""
-"Всегда ставьте пробел с обоих сторон от оператора, а также после запятой. "
-"Избегайте лишних пробелов как при обращении к словарям, так и при вызове "
-"функций, либо для выравнивания кода \"в столбик\"."
+"Всегда ставьте пробел до и после операторов, а также после запятых. "
+"Избегайте лишних пробелов при обращении к словарям и вызовах функций, или "
+"для того, чтобы выровнять \"в столбик\"."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:160
 msgid "**NEVER**:"
@@ -18490,7 +18504,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr ""
+msgstr "Конструкторы"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -18498,26 +18512,33 @@ msgid ""
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
 "be used."
 msgstr ""
+"Это все функции необходимые для создания базовых типов данных Godot. "
+"Например, если вам нужно создать Vector3 из трех float, должен "
+"использоваться конструктор."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:425
 msgid "Destructor"
-msgstr ""
+msgstr "Деструктор"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
 msgstr ""
+"Это противоположность Конструктору, которая позволяет разделить любой "
+"основной тип (например, Vector3) на его под-элементы."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:433
 msgid "Emit Signal"
-msgstr ""
+msgstr "Испускание сигнала"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
+#, fuzzy
 msgid ""
 "Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
+"Испускает сигнал из любого объекта. В целом, это не так полезно, так как.."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:439
 msgid "Get/Set"
@@ -18589,10 +18610,14 @@ msgid ""
 "used, it allows you to enormously simplify visual scripts that are math or "
 "logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
+"Среди операторов, *Expression* узел самый сильный. При правильном "
+"использовании, позволяет вам чрезвычайно упростить визуальные скрипты, в "
+"которых много математики и логики. Введите любое выражение и оно будет "
+"выполнено в реальном времени."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:486
 msgid "Expression nodes can:"
-msgstr ""
+msgstr "Узлы выражений могут:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid ""
@@ -28748,7 +28773,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
-msgstr ""
+msgstr "Введение в 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:6
 msgid ""
@@ -28760,6 +28785,12 @@ msgid ""
 "3D kinematic character tutorials, which are almost identical to their 2D "
 "counterparts."
 msgstr ""
+"Создание 3D игры может быть трудоемким. Дополнительная Z координата делает "
+"многие обычные техники для создания 2D игр неработоспособными. Для помощи в "
+"этом переходе, стоит упомянуть что Godot использует похожие API для 2D и 3D. "
+"Большинство узлов одинаковые и представлены в 2D и 3D версиях. На самом "
+"деле, стоит проверить пример с 3D платформером, или примеры с кинематикой 3D "
+"персонажей,  чтобы убедиться что они почти идентичны с их 2D версиями."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:14
 msgid ""
@@ -28768,10 +28799,14 @@ msgid ""
 "developers, not mathematicians or engineers) will help pave the way for you "
 "to develop 3D games efficiently."
 msgstr ""
+"В 3D, математика немного более сложная чем в 2D, так что мы рекомендуем "
+"посмотреть статью :ref:`doc_vector_math` (которая была создана для "
+"разработчиков игр, а не математиков или инженеров) которая поможет вам "
+"создавать 3D игры эффективно."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
-msgstr ""
+msgstr "Узел Spatial"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 msgid ""
@@ -28780,6 +28815,9 @@ msgid ""
 "reasoning, the 3D engine uses the :ref:`Spatial <class_Spatial>` node for "
 "everything 3D."
 msgstr ""
+":ref:`Node2D <class_Node2D>` это базовый узел для 2D. :ref:`Control "
+"<class_Control>` базовый узел для GUI. Следуя той же логике, движок 3D "
+"использует :ref:`Spatial <class_Spatial>` для всего 3D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 msgid ""
@@ -28789,6 +28827,11 @@ msgid ""
 "<class_Transform>`, or as 3 :ref:`Vector3 <class_Vector3>` members "
 "representing location, Euler rotation (x,y and z angles) and scale."
 msgstr ""
+"Spatial узлы имеют локальную трансформацию, относительно родительского узла "
+"(пока родительский узел также наследуется от типа Spatial). Эта "
+"трансформация может быть доступна как  4x3 :ref:`Transform "
+"<class_Transform>`, или как 3 :ref:`Vector3 <class_Vector3>` члена "
+"представляющие позицию, вращение по Эйлеру (x, y и z углы) и масштаб."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
@@ -28824,7 +28867,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid "Generated geometry"
-msgstr ""
+msgstr "Генерация геометрии"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:65
 msgid ""
@@ -28836,6 +28879,13 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
+"Возможно создание пользовательской геометрии используя ресурс :ref:"
+"`ArrayMesh <class_ArrayMesh>` напрямую. Просто создавайте ваши массивы и "
+"используйте функцию :ref:`ArrayMesh.add_surface_from_arrays() "
+"<class_ArrayMesh_method_add_surface_from_arrays>`. Существует "
+"вспомогательный класс :ref:`SurfaceTool <class_SurfaceTool>`, который "
+"предоставляет более простой API и вспомогательные функции для индексации, "
+"генерации нормалей, тангенсов, итд."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:72
 msgid ""
@@ -28843,6 +28893,10 @@ msgid ""
 "that will not be updated often), as creating vertex arrays and submitting "
 "them to the 3D API has a significant performance cost."
 msgstr ""
+"В любом случае, этот метод предназначен для генерации статичной геометрии "
+"(модели которая не будет обновляться часто), так как создание массивов "
+"вершин и передача их в 3D API несет существенные затраты в "
+"производительности."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
@@ -28858,7 +28912,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
-msgstr ""
+msgstr "2D в 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:88
 msgid ""
@@ -28880,7 +28934,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:10
 msgid "Environment"
-msgstr ""
+msgstr "Окружение"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:103
 msgid ""
@@ -28911,7 +28965,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid "Coordinate system"
-msgstr ""
+msgstr "Система координат"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:128
 msgid ""
@@ -28920,6 +28974,10 @@ msgid ""
 "attempting to use a different scale is usually a bad idea (unless you know "
 "what you are doing)."
 msgstr ""
+"Godot использует `метрическую<https://en.wikipedia.org/wiki/"
+"Metric_system>`__ систему для всего. 3D Физика и прочие области настроены на "
+"нее, так что попытка использовать другую размерность обычно плохая идея "
+"(если вы точно не уверены что делаете)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:133
 msgid ""
@@ -28930,6 +28988,12 @@ msgid ""
 "as rendering or physics, so make sure your artists always work in the right "
 "scale!"
 msgstr ""
+"Во время работы с 3D ассетами, всегда лучше использовать правильный масштаб "
+"(установите ваш DCC на метры). Godot позволяет масштабировать их после "
+"импорта , это работает в большинстве случаев, но изредка могут случаться "
+"сбои вычислений плавающей точки (и от них, глюки и артефакты) в определенных "
+"областях, таких как отображение или физика, так что убедитесь что ваши "
+"художники всегда работают в правильном масштабе!"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:140
 msgid ""
@@ -28938,18 +29002,22 @@ msgid ""
 "axis is used as a \"pointing towards\" direction. This convention roughly "
 "means that:"
 msgstr ""
+"Координата Y используется как \"вверх\", тогда как для многих объектов "
+"которые нуждаются в выравнивании (таких как свет, камеры, капсульный "
+"коллайдер, машина, итд.), ось Z используется как \"указатель на\" "
+"направление. Это соглашение примерно означает что:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:145
 msgid "**X** is sides"
-msgstr ""
+msgstr "**X** это влево/вправо"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:146
 msgid "**Y** is up/down"
-msgstr ""
+msgstr "**Y** это вверх/вниз"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:147
 msgid "**Z** is front/back"
-msgstr ""
+msgstr "**Z** это вперед/назад"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:150
 msgid "Space and manipulation gizmos"
@@ -32679,12 +32747,16 @@ msgid ""
 "To learn how GridMaps work, start by downloading the sample project: :"
 "download:`gridmap_demo.zip <files/gridmap_demo.zip>`."
 msgstr ""
+"Чтобы узнать как работают GridMaps, скачайте тестовый проект : :download:"
+"`gridmap_demo.zip <files/gridmap_demo.zip>`."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:24
 msgid ""
 "Unzip this project and add it to the Project Manager using the \"Import\" "
 "button."
 msgstr ""
+"Разархивируте этот проект и добавьте его в мэнеджер проекта используя кнопку "
+"\"импортировать\"."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:28
 msgid "Creating a MeshLibrary"
@@ -33334,185 +33406,236 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/index.rst:2
+#, fuzzy
 msgid "FPS tutorial"
-msgstr ""
+msgstr "Урок по созданию FPS"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:4
 msgid "Part 1"
-msgstr ""
+msgstr "Часть 1"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:7
 msgid "Tutorial introduction"
-msgstr ""
+msgstr "Введение"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:11
 msgid ""
 "This tutorial series will show you how to make a single player FPS game."
-msgstr ""
+msgstr "Эта серия уроков покажет вам как создать одиночную игру в жанре FPS."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:13
 msgid "Throughout the course of this tutorial series, we will cover how:"
-msgstr ""
+msgstr "На протяжении всего курса этих уроков мы покроем такие темы как:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:15
 msgid "To make a first person character that can move, sprint, and jump."
 msgstr ""
+"Создание персонажа с видом от первого лица, который сможет двигаться, "
+"ускоряться и прыгать."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:16
+#, fuzzy
 msgid ""
 "To make a simple animation state machine for handling animation transitions."
 msgstr ""
+"Как добавить состояния анимаций для управления переходами между анимациями."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:17
+#, fuzzy
 msgid ""
 "To add three weapons to the first person character, each using a different "
 "way to handle bullet collisions:"
 msgstr ""
+"Как добавить три вида оружия, каждое из которых использут свой тип "
+"столкновения пуль."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:18
 msgid "A knife (using an :ref:`Area <class_Area>`)"
-msgstr ""
+msgstr "нож (используя :ref:`Area <class_Area>`)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:19
 msgid "A pistol (Bullet scenes)"
-msgstr ""
+msgstr "пистолет (сцены с использованием пуль)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:20
 msgid "A rifle (using a :ref:`Raycast <class_Raycast>`)"
-msgstr ""
+msgstr "винтовку (используя :ref:`Raycast <class_Raycast>`)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:21
 msgid "To add two different types of grenades to the first person character:"
-msgstr ""
+msgstr "Как добавить два вида гранат:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:22
 msgid "A normal grenade"
-msgstr ""
+msgstr "обычную гранату"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:23
+#, fuzzy
 msgid "A sticky grenade"
-msgstr ""
+msgstr "гранату-\"липучку\""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:24
+#, fuzzy
 msgid ""
 "To add the ability to grab and throw :ref:`RigidBody <class_RigidBody>` nodes"
 msgstr ""
+"Добавим возможность брать и бросать узлы :ref:`RigidBody <class_RigidBody>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:25
+#, fuzzy
 msgid "To add joypad input for the player"
-msgstr ""
+msgstr "Добавми для игрока ввод с джойпада"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:26
 msgid "To add ammo and reloading for all weapons that consume ammo."
 msgstr ""
+"Добавим патроны и возможность перезарядки для всего оружия , которое "
+"использует боеприпасы."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:27
 msgid "To add ammo and health pick ups"
-msgstr ""
+msgstr "Добавим бонусы с патронами и здоровьем"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:28
 msgid "In two sizes: big and small"
-msgstr ""
+msgstr "двух размеров: большие и маленькие"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:29
 msgid "To add an automatic turret"
-msgstr ""
+msgstr "Добавим автоматическую турель"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:30
+#, fuzzy
 msgid "That can fire using bullet objects or a :ref:`Raycast <class_Raycast>`"
 msgstr ""
+"Которая сможет стрелять, используя для пуль обьекты или :ref:`Raycast "
+"<class_Raycast>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:31
 msgid "To add targets that break when they've taken enough damage"
-msgstr ""
+msgstr "Добавим разрушаемые после повреждений цели"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:32
 msgid "To add sounds that play when the guns fire."
-msgstr ""
+msgstr "Проигрываение звуков во время стрельбы."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:33
 msgid "To add a simple main menu:"
-msgstr ""
+msgstr "Как добавить простое главное меню:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:34
+#, fuzzy
 msgid "With an options menu for changing how the game runs"
-msgstr ""
+msgstr "с настройками игры"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:35
 msgid "With a level select screen"
-msgstr ""
+msgstr "с экраном выбора уровня"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:36
+#, fuzzy
 msgid "To add a universal pause menu we can access anywhere"
-msgstr ""
+msgstr "Добавим возможность ставить игру на паузу в любом месте"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:38
+#, fuzzy
 msgid ""
 "While this tutorial can be completed by beginners, it is highly advised to "
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development **before** going through this tutorial series."
 msgstr ""
+"Несмотря на то, что этот урок может быть выполнен начинающими, мы советуем "
+"для начала выполнить :ref:`doc_your_first_game`, если у вас не было опыта "
+"работы с Godot или разработки игр."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:43
+#, fuzzy
 msgid ""
 "Remember: Making 3D games is much harder than making 2D games. If you do not "
 "know how to make 2D games, you will likely struggle making 3D games."
 msgstr ""
+"Помните: делать 3D игры намного сложнее чем 2D игры. Если вы не знаете как "
+"делать 2D игры, то при создании 3D игр, у вас возникнут струдности."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:46
+#, fuzzy
 msgid ""
 "This tutorial assumes you have experience working with the Godot editor, "
 "basic programming experience in GDScript, and basic experience in game "
 "development."
 msgstr ""
+"Этот урок предполагает, что у вас уже имеется опыт работы с редактором "
+"Godot, базовый опыт программирования GDScript и некоторый опыт в разработке "
+"игр."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:49
+#, fuzzy
 msgid ""
 "You can find the start assets for this tutorial here: :download:"
 "`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 msgstr ""
+"Ассеты для этого урока можно найти здесь: :download:`Godot_FPS_Starter.zip "
+"<files/Godot_FPS_Starter.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:51
+#, fuzzy
 msgid ""
 "The provided starter assets contain an animated 3D model, a bunch of 3D "
 "models for making levels, and a few scenes already configured for this "
 "tutorial."
 msgstr ""
+"Предоставленные материалы содержат анимированую 3D модель, кучу моделей для "
+"создания уровней, и несколько уже настроеных сцен для урока."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:54
+#, fuzzy
 msgid ""
 "All assets provided (unless otherwise noted) were originally created by "
 "TwistedTwigleg, with changes/additions by the Godot community. All original "
 "assets provided for this tutorial are released under the ``MIT`` license."
 msgstr ""
+"Все предоставленные материалы () были созданы за авторством TwistedTwigleg, "
+"с изменениями и добавлениями от сообщества Godot. Все оригинальные материалы "
+"для этого урока выпущены под лицензией ``MIT``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:57
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1027
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:44
+#, fuzzy
 msgid ""
 "Feel free to use these assets however you want! All original assets belong "
 "to the Godot community, with the other assets belonging to those listed "
 "below:"
 msgstr ""
+"Можете использовать эти ассеты как захотите! Все оригинальные материалы "
+"принадлежат сообществу Godot, с остальными в списке  ниже:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:59
+#, fuzzy
 msgid ""
 "The skybox is created by **StumpyStrust** on OpenGameArt. The skybox used is "
 "licensed under ``CC0``."
 msgstr ""
+"Текстура неба создана **StumpyStrust** с сайта OpenGameArt. Текстура неба "
+"имеет лицензию ``CC0``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:62
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1032
+#, fuzzy
 msgid ""
 "The font used is **Titillium-Regular**, and is licensed under the ``SIL Open "
 "Font License, Version 1.1``."
 msgstr ""
+"Использовался шрифт **Titillium-Regular**, под лицензией ``SIL Open Font "
+"License, Version 1.1``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:64
+#, fuzzy
 msgid ""
 "You can find the finished project for each part at the bottom of each part's "
 "page"
 msgstr ""
+"Можете найти файлы законченного проекта в конце страницы каждой из частей."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:67
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:7
@@ -33525,58 +33648,82 @@ msgid "Part overview"
 msgstr "Обзор"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:69
+#, fuzzy
 msgid ""
 "In this part we will be making a first person player that can move around "
 "the environment."
 msgstr ""
+"В этой части мы создадим игрока с видом от первого лица, который сможет "
+"передвигаться по окружению."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:74
+#, fuzzy
 msgid ""
 "By the end of this part, you will have a working first-person character who "
 "can move around the game environment, sprint, look around with a mouse based "
 "first person camera, jump into the air, and turn a flash light on and off."
 msgstr ""
+"К концу этой части у вас получится персонаж, который может передвигаться, "
+"бегать с ускорением, осматриваться при помощи мыши, прыгать и пользоваться "
+"фонариком."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:78
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:60
+#, fuzzy
 msgid "Getting everything ready"
-msgstr ""
+msgstr "Подготовка"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:80
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:62
+#, fuzzy
 msgid "Launch Godot and open up the project included in the starter assets."
 msgstr ""
+"Запустите Godot и откройте проект, включенный в предоставленных материалах."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:82
+#, fuzzy
 msgid ""
 "While these assets are not necessarily required to use the scripts provided "
 "in this tutorial, they will make the tutorial much easier to follow, as "
 "there are several pre-setup scenes we will be using throughout the tutorial "
 "series."
 msgstr ""
+"Хотя данные ассеты и не обязательны для работы со скриптами описанных в этих "
+"уроках, с ними следовать уроку будет намного легче, т.к среди них "
+"присутствуют несколько заранее построенных сцен, которые мы будем "
+"использовать в течене всего этого курса."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:86
+#, fuzzy
 msgid ""
 "First, open the project settings and go to the \"Input Map\" tab. You'll "
 "find several actions have already been defined. We will be using these "
 "actions for our player. Feel free to change the keys bound to these actions "
 "if you want."
 msgstr ""
+"Для начала, откройте параметры проекта и откройте вкладку \"Список действий"
+"\". Заметьте, что определенные действия уже настроены. Мы будем использовать "
+"эти действия для нашего игрока. Если желаете, можете заменить горячие "
+"клавиши для этих действий на те, что  вам удобнее."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:92
+#, fuzzy
 msgid "Let's take a second to see what we have in the starter assets."
-msgstr ""
+msgstr "Посмотрим, что же у нас есть в наших ассетах."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:94
+#, fuzzy
 msgid ""
 "Included in the starter assets are several scenes. For example, in ``res://"
 "`` we have 14 scenes, most of which we will be visiting as we go through "
 "this tutorial series."
 msgstr ""
+"У нас есть несколько сцен. Например, в  папке ресурсов ``res://``имеется 14 "
+"сцен, большинство из которых мы просмотрим по ходу обучающего курса."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:97
 msgid "For now let's open up ``Player.tscn``."
-msgstr ""
+msgstr "Для начала откройте ``Player.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:99
 msgid ""
@@ -33585,29 +33732,41 @@ msgid ""
 "``Assets`` in this tutorial series. ``Assets`` contains all the models used "
 "for each of the levels, as well as some textures and materials."
 msgstr ""
+"Тут есть множество сцен и несколько текстур в папке  ``Assets``. Можно "
+"взгянуть на них, если хотите, но сейчас мы не будем обращать на них "
+"внимания. Папка ``Assets`` содержит все модели, текстуры и материалы, "
+"используемые для каждого уровня."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:104
+#, fuzzy
 msgid "Making the FPS movement logic"
-msgstr ""
+msgstr "Создаем логику передвижения FPS"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:106
 msgid ""
 "Once you have ``Player.tscn`` open, let's take a quick look at how it is set "
 "up"
-msgstr ""
+msgstr "После того, как вы открыли ``Player.tscn``, посмотрите как он построен"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:110
+#, fuzzy
 msgid ""
 "First, notice how the player's collision shapes are set up. Using a vertical "
 "pointing capsule as the collision shape for the player is fairly common in "
 "most first person games."
 msgstr ""
+"Заметьте, как настроены примитивы просчета столкновений для игрока.  "
+"Использование для игрока модели вертикальной капсулы часто встречается в "
+"играх от первого лица."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:113
+#, fuzzy
 msgid ""
 "We are adding a small square to the 'feet' of the player so the player does "
 "not feel like they are balancing on a single point."
 msgstr ""
+"Давайте добавим небольшую квадратную плоскость под  'ногами' игрока, чтобы "
+"он не чувствовал, будто балансирует на одной точке."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:116
 msgid ""
@@ -33693,37 +33852,44 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:391
 msgid "Let's go through each of the class variables:"
-msgstr ""
+msgstr "Рассмотрим все переменные класса:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:393
 msgid "``GRAVITY``: How strong gravity pulls us down."
-msgstr ""
+msgstr "``GRAVITY``: С какой силой гравитация притягивает к земле."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:394
 msgid "``vel``: Our :ref:`KinematicBody <class_KinematicBody>`'s velocity."
-msgstr ""
+msgstr "``vel``: Скорость нашего :ref:`KinematicBody <class_KinematicBody>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:395
 msgid ""
 "``MAX_SPEED``: The fastest speed we can reach. Once we hit this speed, we "
 "will not go any faster."
 msgstr ""
+"``MAX_SPEED``: Наибольшая скорость которой мы можем достигнуть. Больше этого "
+"значения она подниматься не будет."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:396
 msgid "``JUMP_SPEED``: How high we can jump."
-msgstr ""
+msgstr "``JUMP_SPEED``: Как высоко мы можем прыгать."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:397
 msgid ""
 "``ACCEL``: How quickly we accelerate. The higher the value, the sooner we "
 "get to max speed."
 msgstr ""
+"``ACCEL``: Как быстро мы набираем скорость. Чем выше это значение, тем "
+"быстрее мы достигнем максимальной скорости."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:398
+#, fuzzy
 msgid ""
 "``DEACCEL``: How quickly we are going to decelerate. The higher the value, "
 "the sooner we will come to a complete stop."
 msgstr ""
+"``DEACCEL``: Как быстро мы теряем скорость. Чем выше значение, тем быстрее "
+"мы остановимся."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:399
 msgid ""
@@ -43020,7 +43186,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:4
 msgid "Ragdoll system"
-msgstr ""
+msgstr "Система Ragdoll"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:9
 msgid ""
@@ -43028,11 +43194,16 @@ msgid ""
 "simulation to create realistic procedural animation. They are used for death "
 "animations in many games."
 msgstr ""
+"Начиная с версии 3.1, Godot поддерживает физику тряпичных кукол(ragdolls). "
+"Куклы зависят от симуляции физики для создания реалистичной процедурной "
+"анимации. Они используются для анимаций смерти во многих играх."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:11
 msgid ""
 "In this tutorial, we will be using the Platformer3D demo to set up a ragdoll."
 msgstr ""
+"В этом руководстве, мы будем использовать пример Platformer3D для установки "
+"ragdoll."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:13
 msgid ""
@@ -43040,16 +43211,18 @@ msgid ""
 "godotengine/godot-demo-projects/tree/master/3d/platformer>`_ or using the "
 "`Asset Library <https://godotengine.org/asset-library/asset/125>`_."
 msgstr ""
+"Вы можете скачать пример Platformer3D с `GitHub <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/3d/platformer>`_ или "
+"использовать `Библиотеку Ассетов <https://godotengine.org/asset-library/"
+"asset/125>`_."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:16
-#, fuzzy
 msgid "Setting up the ragdoll"
-msgstr "Настройка вашего проекта"
+msgstr "Настройка куклы"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:19
-#, fuzzy
 msgid "Creating physical bones"
-msgstr "Создание узлов"
+msgstr "Создание физических костей"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:21
 msgid ""
@@ -43058,6 +43231,10 @@ msgid ""
 "you can generate ``PhysicalBone`` nodes with the \"Create physical skeleton"
 "\" feature in the skeleton node."
 msgstr ""
+"Как во многих других возможностях в движке, существует узел для установки "
+"рэгдолла: узел :ref:`PhysicalBone <class_PhysicalBone>`. Для упрощения "
+"настройки, вы можете создать узлы ``PhysicalBone`` через возможность "
+"\"Создать физический скелет\" в узле скелетона."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
 msgid ""
@@ -63541,11 +63718,11 @@ msgid "Making plugins"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:7
-#, fuzzy
 msgid "About plugins"
-msgstr "Плагины"
+msgstr "О плагинах"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:9
+#, fuzzy
 msgid ""
 "A plugin is a great way to extend the editor with useful tools. It can be "
 "made entirely with GDScript and standard scenes, without even reloading the "
@@ -63554,24 +63731,39 @@ msgid ""
 "you can do with them. Note that a plugin is similar to any scene you can "
 "already make, except it is created using a script to add functionality."
 msgstr ""
+"Плагин является отличным способом расширить возможности редактора новыми "
+"полезными инструментами. Его можно создать используя лишь GDScript и "
+"стандартные сцены, без необходимости перезапускать редактор. В отличие от "
+"модулей, вам не надо писать код на C++ или заново компилировать движок. Это "
+"делает плагины менее эффективными, но благодяря им можно делать многие "
+"вещи.  Плагин схож со сценами с тем отличием, что использует скрипт для "
+"добавления функционала."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:16
+#, fuzzy
 msgid ""
 "This tutorial will guide you through the creation of two simple plugins so "
 "you can understand how they work and be able to develop your own. The first "
 "will be a custom node that you can add to any scene in the project and the "
 "other will be a custom dock added to the editor."
 msgstr ""
+"Этот туториал покажет вам как создать два простых плагина, чтобы вы смогли "
+"понять как они работают и научиться создавать свои собственные. Первый "
+"плагин это пользовательский узел, который можно добавить в любую сцену "
+"проекта. Вторым будет пользовательская панель, которую можно будет добавить "
+"в редактор."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:22
 msgid "Creating a plugin"
-msgstr ""
+msgstr "Создаем плагин"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:24
 msgid ""
 "Before starting, create a new empty project wherever you want. This will "
 "serve as a base to develop and test the plugins."
 msgstr ""
+"Перед тем, как начать, создайте новый пустой проект в любом месте. Это "
+"послужит базой для разработки и тестирования плагинов."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:27
 msgid ""
@@ -65436,8 +65628,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:251
+#, fuzzy
 msgid "Let's implement our functions by creating our ``gdexample.cpp`` file:"
 msgstr ""
+"Давайте реализуем наши функции путём создания нашего файла``gdexample.cpp``:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:311
 msgid ""
@@ -65449,6 +65643,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:317
+#, fuzzy
 msgid ""
 "The other method of note is our ``_process`` function, which simply keeps "
 "track of how much time has passed and calculates a new position for our "
@@ -65458,8 +65653,17 @@ msgid ""
 "actual Sprite node our script relates to. In the upcoming NativeScript 1.1, "
 "``set_position`` can be called directly on our class."
 msgstr ""
+"Следующим методом узла является наша ``_process`` функция, которая просто "
+"следит за количеством пройденного времени и высчитывает новую позицию для "
+"нашего Спрайта, используя простые функции синуса и косинуса. Всё, что "
+"остаётся это вызвать ``owner->set_position`` для вызова одного из встроенных "
+"методов нашего Спрайта. Смысл в том, что наш класс это класс контейнер;  "
+"``owner`` указывает на текущий узел Спрайта к которому обращается наш "
+"скрипт. В предстоящей версии NativeScript 1.1, ``set_position`` может быть "
+"вызвана напрямую из нашего класса."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:326
+#, fuzzy
 msgid ""
 "There is one more C++ file we need; we'll name it ``gdlibrary.cpp``. Our "
 "GDNative plugin can contain multiple NativeScripts, each with their own "
@@ -65467,12 +65671,21 @@ msgid ""
 "we need now is a small bit of code that tells Godot about all the "
 "NativeScripts in our GDNative plugin."
 msgstr ""
+"Есть ещё один файл C++, который нам нужен; мы назовём его ``gdlibrary.cpp``. "
+"Наш GDNative плагин может содержать несколько NativeScripts, каждый со своим "
+"заголовком и исходным файлом, такими, как мы реализовывали ``GDExample`` "
+"выше. Всё что нам нужно это небольшая часть кода, котора говорит Godot обо "
+"всех NativeScripts в нашем GDNative плагине."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:350
+#, fuzzy
 msgid ""
 "Note that we are not using the ``godot`` namespace here, since the three "
 "functions implemented here need to be defined without a namespace."
 msgstr ""
+"Учтите, что  здесь мы не используем  пространства имён``godot`` , поскольку "
+"три функции реализованные здесь функции должны быть объявлены без "
+"пространства имён."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:353
 msgid ""
@@ -65492,8 +65705,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:365
+#, fuzzy
 msgid "Compiling the plugin"
-msgstr ""
+msgstr "Компилировать дополнение"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:367
 msgid ""
@@ -79328,12 +79542,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:266
+#, fuzzy
 msgid "Will display as:"
-msgstr ""
+msgstr "Будет отображено как:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:276
 msgid "I don't know what this method does!"
-msgstr ""
+msgstr "Я не знаю, что делает этот метод!"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:278
 msgid ""
@@ -79357,6 +79572,8 @@ msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 msgstr ""
+"Документация может быть переведена на любой язык на сайте `Hosted Weblate "
+"<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:289
 msgid ""
@@ -79382,6 +79599,8 @@ msgid ""
 "So, where is the Godot community and where can you ask questions and get "
 "help?"
 msgstr ""
+"Итак, где обитает сообщество Godot и где вы можете получить ответы на свои "
+"вопросы и получить помощь?"
 
 #: ../../docs/community/channels.rst:8
 msgid ""
@@ -79402,7 +79621,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
-msgstr ""
+msgstr "Вопросы и ответы"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"
@@ -79503,9 +79722,10 @@ msgstr ""
 #: ../../docs/community/tutorials.rst:4
 #, fuzzy
 msgid "Tutorials and resources"
-msgstr "Узлы и Ресурсы"
+msgstr "Образовательные ресурсы"
 
 #: ../../docs/community/tutorials.rst:6
+#, fuzzy
 msgid ""
 "This is a list of third-party tutorials and resources created by the Godot "
 "community. For resources, remember that there is the official `Godot Asset "
@@ -79514,17 +79734,27 @@ msgid ""
 "<https://www.reddit.com/r/godot/comments/an0iq5/"
 "godot_tutorials_list_of_video_and_written/>`_."
 msgstr ""
+"Здесь находится список уроков и интернет-ресурсов от сообщества Godot. "
+"Имейте в виду, что существует официальная библиотека ресурсов Godot (`Godot "
+"Asset Library <https://godotengine.org/asset-library/asset>`_), в которой "
+"тоже можно найти много полезных ресурсов! Также загляните на Reddit <https://"
+"www.reddit.com/r/godot/comments/an0iq5/"
+"godot_tutorials_list_of_video_and_written/>`_."
 
 #: ../../docs/community/tutorials.rst:8
+#, fuzzy
 msgid ""
 "Think there is something missing here? Feel free to submit a `Pull Request "
 "<https://github.com/godotengine/godot-docs/blob/master/community/resources."
 "rst>`_ as always."
 msgstr ""
+"Считаете, что чего-то не хватает? Можете отправить заявку на `Pull Request "
+"<https://github.com/godotengine/godot-docs/blob/master/community/resources."
+"rst>`_."
 
 #: ../../docs/community/tutorials.rst:11
 msgid "Where to start"
-msgstr ""
+msgstr "С чего начать"
 
 #: ../../docs/community/tutorials.rst:13
 msgid ""
@@ -79535,18 +79765,30 @@ msgid ""
 "playlists>`_ are well-regarded in the community and often recommended as a "
 "gentle introduction to beginners."
 msgstr ""
+"Видеоуроки по Godot от `GDQuest <https://www.youtube.com/channel/"
+"UCxboW7x0jZqFdvMdCFKTMsQ/playlists>`_, `Game from Scratch <https://www."
+"youtube.com/watch?v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_ и "
+"`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
+"playlists>`_ положительно оценены сообществом и часто рекомендуются как "
+"хорошие вступительные уроки для начинающих."
 
 #: ../../docs/community/tutorials.rst:15
+#, fuzzy
 msgid ""
 "If you're interested in Visual Scripting, `Emilio's tutorials <https://www."
 "youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ may be worth a look."
 msgstr ""
+"Есл вас интересует визуальный скриптинг, то возможно стоит посмотреть `уроки "
+"от Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_."
 
 #: ../../docs/community/tutorials.rst:17
+#, fuzzy
 msgid ""
 "Some of the others mentioned below provide more advanced tutorials, e.g. on "
 "3D or shaders."
 msgstr ""
+"Некоторые из ниже упомянутых также имеют уроки на продвинутые темы, например "
+"3D или шейдеры."
 
 #: ../../docs/community/tutorials.rst:20
 msgid "Video tutorials"
@@ -79554,19 +79796,23 @@ msgstr "Видео-уроки"
 
 #: ../../docs/community/tutorials.rst:22
 msgid "`Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_"
-msgstr ""
+msgstr "`Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_"
 
 #: ../../docs/community/tutorials.rst:23
 msgid ""
 "`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
 "playlists>`_"
 msgstr ""
+"`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
+"playlists>`_"
 
 #: ../../docs/community/tutorials.rst:24
 msgid ""
 "`Game Endeavor <https://www.youtube.com/channel/UCLweX1UtQjRjj7rs_0XQ2Eg/"
 "videos>`_"
 msgstr ""
+"`Game Endeavor <https://www.youtube.com/channel/UCLweX1UtQjRjj7rs_0XQ2Eg/"
+"videos>`_"
 
 #: ../../docs/community/tutorials.rst:25
 #, fuzzy
@@ -79627,9 +79873,8 @@ msgid "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`__"
 msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
 
 #: ../../docs/community/tutorials.rst:36
-#, fuzzy
 msgid "Text tutorials"
-msgstr "Уроки"
+msgstr "Текстовые уроки"
 
 #: ../../docs/community/tutorials.rst:38
 #, fuzzy
@@ -79645,7 +79890,7 @@ msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
 
 #: ../../docs/community/tutorials.rst:42
 msgid "Devlogs"
-msgstr ""
+msgstr "Дневники разработчиков"
 
 #: ../../docs/community/tutorials.rst:44
 msgid ""

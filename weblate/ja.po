@@ -2,7 +2,10 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# burontsan <dullboy_375@yahoo.co.jp>, 2019.
+# FourmiSushi <neko@fourmisushi.soy>, 2019.
 # Hidetsugu Takahashi <manzyun@gmail.com>, 2018-2019.
+# John Smith <weblater_jp@susa.eek.jp>, 2019.
 # Kazuki Miyanishi <mozukichi.0807@gmail.com>, 2018-2019.
 # Nathan Lovato <nathan.lovato.art@gmail.com>, 2018.
 # nitenook <admin@alterbaum.net>, 2018.
@@ -17,8 +20,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-06-16 22:53+0200\n"
-"PO-Revision-Date: 2019-04-29 11:46+0000\n"
-"Last-Translator: zeroni.point <zeroni.point@gmail.com>\n"
+"PO-Revision-Date: 2019-07-02 12:04+0000\n"
+"Last-Translator: FourmiSushi <neko@fourmisushi.soy>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
 "Language: ja\n"
@@ -26,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.8-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -116,7 +119,6 @@ msgstr ""
 "えてください！"
 
 #: ../../docs/index.rst:45
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -251,13 +253,13 @@ msgstr ""
 "パワフルでユーザーフレンドリーなゲームエンジンを知ることになるでしょう。"
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"このページでは、Godotエンジンの機能紹介とゲーム作りの始め方を提供します。"
+"このページでは、初めての方や、特定の機能について知りたい方のために、おおまか"
+"にGodotエンジンの機能と当ドキュメントの内容について紹介します。"
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
@@ -282,17 +284,16 @@ msgid "About Godot Engine"
 msgstr "Godot Engine について"
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"ゲームエンジンは複雑なツールで、それゆえ難しい用語がいくつか提示されます。一"
-"方このPRプレゼンテーションでは、Godot Engineの良い点を掻い摘んで紹介します。"
+"ゲームエンジンは複雑なツールのため、少ない言葉でGodotを表現するのは難しいこと"
+"です。こちらが短い概要ですが、Godotについて短く紹介する必要がもしあればご自由"
+"にこれを再利用してください。"
 
 #: ../../docs/about/introduction.rst:38
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -301,11 +302,11 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot Engine は機能がパッケージになっており、クロスプラットフォームで2D・3D"
-"ゲームを単一的なインターフェイスで製作することができます。その機能群は包括的"
-"な汎用ツールで、ユーザーはゲームの製作に集中して取り組めます。製作したゲーム"
-"は主要なデスクトップ環境（Linux, MacOS, Windows）や、モバイル（Android, "
-"iOS）、Webベース（HTML5）環境に出力できます。"
+"Godotエンジンは機能豊富な、クロスプラットフォームのゲームエンジンであり、2D・"
+"3Dゲームを単一のインターフェイスで製作することができます。基本的なツールは一"
+"通り用意され、ユーザーは車輪の再発明をすることなくゲーム製作に集中できます。"
+"製作したゲームは主要なデスクトップ環境（Linux, MacOS, Windows）や、モバイル"
+"（Android, iOS）、Webベース（HTML5）環境にワンクリックで書き出せます。"
 
 #: ../../docs/about/introduction.rst:45
 msgid ""
@@ -767,10 +768,12 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"GDScriptや他の動的言語を使いこなすための情報は、こちらのチュートリアル :ref:"
+"`doc_gdscript_more_efficiently`にあります。"
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "GDScript製作の背景にある動機とはなんだったのでしょうか？"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
@@ -841,6 +844,8 @@ msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"もしあなたがBlenderを使っているなら、我々の`Better Collada Exporter <https://"
+"godotengine.org/download>`をご覧ください。"
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
@@ -894,6 +899,8 @@ msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
+"複数の解像度やアスペクト比に対応するアセットはどのように作成する必要がありま"
+"すか?"
 
 #: ../../docs/about/faq.rst:181
 msgid ""
@@ -905,6 +912,11 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"この質問は頻繁に出てきますが、これはおそらくAppleが当初デバイスの解像度を2倍"
+"にしたときに起こした誤解のせいでしょう。同じ資産を異なる解像度で持つことは良"
+"い考えだと人々に思わせ、多くの人がその道に向かって進み続けました。当初はApple"
+"のデバイスでしか使えませんでしたが、その後、解像度とアスペクト比の異なる複数"
+"のAndroidとAppleのデバイスが作られ、サイズとDPIの幅が非常に広くなりました。"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -923,6 +935,11 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"ゲームの基本解像度を1つ選択します。2Kまでのデバイスや400pまでのデバイスがあっ"
+"ても、デバイスの通常のハードウェアスケーリングでは、パフォーマンスコストをほ"
+"とんどまたはまったくかけずに対応できます。最も一般的な選択肢は、約"
+"1080p(1920x1080)または720p(1280x720)です。解像度が高いほどアセットが大きくな"
+"り、メモリの使用量が多くなり、ロードに時間がかかることに注意してください。"
 
 #: ../../docs/about/faq.rst:201
 msgid ""
@@ -945,10 +962,13 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"ユーザインタフェースでは、 :ref:`anchoring <doc_size_and_anchors>` を使用し"
+"て、コントロールの位置と移動先を指定します。UIがより複雑な場合は、コンテナに"
+"ついて学ぶことを検討してください。"
 
 #: ../../docs/about/faq.rst:214
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr ""
+msgstr "以上です!ゲームは複数の解像度で動作する必要があります。"
 
 #: ../../docs/about/faq.rst:216
 msgid ""
@@ -978,10 +998,12 @@ msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
+"`GDNativeアーキテクチャを参照<https://godotengine.org/article/look-gdnative-"
+"architecture>`_"
 
 #: ../../docs/about/faq.rst:231
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr ""
+msgstr "`GDNativeはこちら! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
 msgid ""
@@ -1038,12 +1060,14 @@ msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"あなたがソフトウェアを使った経験とあなたが抱えている問題(私たちはそれをどう改"
+"善するかについての考えよりももっとずっと気にかけています)。"
 
 #: ../../docs/about/faq.rst:265
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
-msgstr ""
+msgstr "プロジェクトに必要なため、実装してほしい機能。"
 
 #: ../../docs/about/faq.rst:267
 msgid ""
@@ -1052,7 +1076,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
-msgstr ""
+msgstr "ワークフローの最適化したい部分。"
 
 #: ../../docs/about/faq.rst:269
 msgid ""
@@ -1084,21 +1108,23 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:285
 msgid "How can I support Godot development or contribute?"
-msgstr ""
+msgstr "Godotの開発をサポートしたり、貢献したりするにはどうすればいいですか?"
 
 #: ../../docs/about/faq.rst:287
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ""
+msgstr ":ref:`doc_ways_to_contribute` をご覧下さい。"
 
 #: ../../docs/about/faq.rst:290
 msgid "Who is working on Godot? How can I contact you?"
-msgstr ""
+msgstr "誰がGodotで働いていますか。どうやって連絡すればいいですか?"
 
 #: ../../docs/about/faq.rst:292
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
+"`Godot webサイト <https://godotengine.org/contact>` の該当ページを見てくださ"
+"い。"
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
@@ -1195,7 +1221,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr ""
+msgstr "スクリプト"
 
 #: ../../docs/about/docs_changelog.rst:42
 msgid ":ref:`Typed GDscript <doc_gdscript_static_typing>`"
@@ -9522,7 +9548,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:4
 msgid "Command line tutorial"
-msgstr ""
+msgstr "コマンドラインチュートリアル"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
 msgid ""
@@ -9531,6 +9557,10 @@ msgid ""
 "command line. Given the engine relies on almost no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
+"一部の開発者は、コマンドラインを広範囲に使用することを好みます。Godotは使いや"
+"すく設計されているので、ここでは完全にコマンドラインから作業するための手順を"
+"説明します。エンジンが外部ライブラリーにほとんど依存しないことを考えると、初"
+"期化時間は非常に速く、このワークフローに適しています。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
@@ -9543,10 +9573,14 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
+"``godot``と入力すればどこからでも簡単に実行できるように、godotバイナリをPATH"
+"環境変数に含めることをお勧めします。Linuxでは、 ``/usr/local/bin`` にgodotバ"
+"イナリを配置し、それが ``godot`` と呼ばれていることを確認することで、これを行"
+"うことができます。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:23
 msgid "Setting the project path"
-msgstr ""
+msgstr "プロジェクトパスの設定"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:25
 msgid ""
@@ -9554,40 +9588,48 @@ msgid ""
 "working directory is, you may need to set the path to your project for any "
 "of the following commands to work correctly."
 msgstr ""
+"Godotバイナリの場所と現在の作業ディレクトリによっては、次のコマンドを正しく機"
+"能させるためにプロジェクトへのパスを設定する必要があります。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:29
 msgid ""
 "This can be done by giving the path to the ``project.godot`` file of your "
 "project as either the first argument, like this:"
 msgstr ""
+"これは、プロジェクトの ``project.godot`` ファイルへのパスを最初の引数として指"
+"定することで実現できます:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid "Or by using the ``--path`` argument:"
-msgstr ""
+msgstr "または ``--path`` 引数を使用して:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr ""
+"たとえば、ゲームをエクスポートするための完全なコマンド(以下に説明する)は次の"
+"ようになります:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid "Creating a project"
-msgstr ""
+msgstr "プロジェクトの作成"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
 msgstr ""
+"コマンドラインからプロジェクトを作成するには、シェルを目的の場所に移動して"
+"project.godotファイルを作成します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "The project can now be opened with Godot."
-msgstr ""
+msgstr "これで、Godotでプロジェクトを開くことができます。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "Running the editor"
-msgstr ""
+msgstr "エディタの実行"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid ""
@@ -9595,16 +9637,21 @@ msgid ""
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
+"エディタを実行するには、Godotに ``-e`` フラグを付けて実行します。これは、プロ"
+"ジェクトディレクトリまたはサブディレクトリ内から実行する必要があります。それ"
+"以外の場合、コマンドは無視され、プロジェクトマネージャが表示されます。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid ""
 "If a scene has been created and saved, it can be edited later by running the "
 "same code with that scene as argument."
 msgstr ""
+"シーンが作成および保存されている場合は、そのシーンを引数として同じコードを実"
+"行することで、後で編集できます。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "Erasing a scene"
-msgstr ""
+msgstr "シーンの削除"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:87
 msgid ""
@@ -9612,26 +9659,33 @@ msgid ""
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
 "scene or else an error will be thrown upon opening."
 msgstr ""
+"Godotはあなたのファイルシステムと友達であり、追加のメタデータファイルを作成す"
+"ることはありません。シーンファイルを削除するには、 ``rm`` を使用します。 その"
+"シーンを参照するものが何もないことを確認してください。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Running the game"
-msgstr ""
+msgstr "ゲームの実行"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid ""
 "To run the game, simply execute Godot within the project directory or "
 "subdirectory."
 msgstr ""
+"ゲームを実行するには、プロジェクトディレクトリまたはサブディレクトリ内でGodot"
+"を実行します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:105
 msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
 msgstr ""
+"特定のシーンをテストする必要がある場合は、そのシーンをコマンドラインに渡しま"
+"す。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "Debugging"
-msgstr ""
+msgstr "デバッグ"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:115
 msgid ""
@@ -9639,6 +9693,9 @@ msgid ""
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for running either the game or a simple scene."
 msgstr ""
+"コマンドラインでエラーを検出するのは非常に困難な作業です。 ``-d`` を追加する"
+"ことでコマンドラインデバッガが利用できます。これは、ゲームまたは単一のシーン"
+"を実行するために機能します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid ""
@@ -9646,6 +9703,9 @@ msgid ""
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
+"コマンドラインからプロジェクトをエクスポートすることもサポートされています。"
+"これは継続的インテグレーション設定に特に役立ちます。これには、ヘッドレスの"
+"Godotバージョン(サーバービルド、ビデオなし)が理想的です。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:141
 msgid ""
@@ -9654,16 +9714,23 @@ msgid ""
 "platforms from the command line, try exporting to a non-recognized platform "
 "and the full listing of platforms your configuration supports will be shown."
 msgstr ""
+"``--export`` スイッチによって認識されるプラットフォーム名は、エディタのエクス"
+"ポートウィザードに表示されるものと同じです。サポートされているプラットフォー"
+"ムの一覧をコマンドラインから取得するには、認識されていないプラットフォームに"
+"エクスポートすると設定がサポートしているプラットフォームの一覧が表示されま"
+"す。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
+"ゲームのデバッグバージョンをエクスポートするには、 ``--export`` の代わりに "
+"``--export-debug`` スイッチを使用します。パラメータと使用方法は同じです。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid "Running a script"
-msgstr ""
+msgstr "スクリプトの実行"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:153
 msgid ""
@@ -9671,24 +9738,29 @@ msgid ""
 "feature is especially useful in large projects, for batch conversion of "
 "assets or custom import/export."
 msgstr ""
+"コマンドラインから単純な.gdスクリプトを実行することは可能です。この機能は大規"
+"模プロジェクトでアセットの一括変換やカスタムのインポート/エクスポートに特に便"
+"利です。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:157
 msgid "The script must inherit from SceneTree or MainLoop."
-msgstr ""
+msgstr "スクリプトはSceneTreeまたはMainLoopから継承する必要があります。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:159
 msgid "Here is a simple example of how it works:"
-msgstr ""
+msgstr "簡単な動作例を次に示します:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:170
 msgid "And how to run it:"
-msgstr ""
+msgstr "実行方法:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:177
 msgid ""
 "If no project.godot exists at the path, current path is assumed to be the "
 "current working directory (unless ``-path`` is specified)."
 msgstr ""
+"パスにproject.godotが存在しない場合は、現在のパスが現在の作業ディレクトリであ"
+"ると見なされます( ``-path`` が指定されている場合を除く)。"
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
@@ -9805,7 +9877,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
 msgid "GDScript basics"
-msgstr ""
+msgstr "GDScriptの基本"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:9
 msgid ""
@@ -9816,10 +9888,15 @@ msgid ""
 "integrated with Godot Engine, allowing great flexibility for content "
 "creation and integration."
 msgstr ""
+"*GDScript*は、コンテンツの作成に使用される高水準の動的型付けプログラミング言"
+"語です。 `Python <https://en.wikipedia.org/wiki/Python_"
+"%28programming_language%29>`に似た構文を使用します(ブロックはインデントベース"
+"で、多くのキーワードは似ています)。その目標は、Godot Engine用に最適化され、緊"
+"密に統合され、コンテンツの作成と統合に大きな柔軟性を与えることです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:17
 msgid "History"
-msgstr ""
+msgstr "歴史"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:19
 msgid ""
@@ -9829,6 +9906,11 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
+"初期には、このエンジンは `Lua <http://www.lua.org>` スクリプト言語を使用して"
+"いました。Luaは高速ですが、オブジェクト指向システム(フォールバックを使用して)"
+"へのバインディングの作成は複雑で時間がかかり、膨大なコードを必要としました。 "
+"`Python <https://www.python.org>` でいくつかの実験を行った結果、それを埋め込"
+"むのは難しいことがわかりました。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:25
 msgid ""
@@ -9837,36 +9919,51 @@ msgid ""
 "point, it became evident that a custom scripting language could more "
 "optimally make use of Godot's particular architecture:"
 msgstr ""
+"出荷されたゲームに使用されていた最後のサードパーティ製スクリプト言語は "
+"`Squirrel <http://squirrel-lang.org>` でしたが、これも削除されました。その時"
+"点で、カスタムスクリプト言語がGodotの特定のアーキテクチャをより最適に利用でき"
+"ることが明らかになってきました:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:30
 msgid ""
 "Godot embeds scripts in nodes. Most languages are not designed with this in "
 "mind."
 msgstr ""
+"Godotはスクリプトをノードに埋め込みます。ほとんどの言語はこれを念頭に置いて設"
+"計されていません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:32
 msgid ""
 "Godot uses several built-in data types for 2D and 3D math. Script languages "
 "do not provide this, and binding them is inefficient."
 msgstr ""
+"Godotは、2Dおよび3D計算に複数の組み込みデータ型を使用します。スクリプト言語は"
+"これを提供せず、それらをバインドすることは非効率的です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:34
 msgid ""
 "Godot uses threads heavily for lifting and initializing data from the net or "
 "disk. Script interpreters for common languages are not friendly to this."
 msgstr ""
+"Godotは、ネットやディスクからデータを取り出したり初期化したりするためにスレッ"
+"ドを多用しますが、一般的な言語のスクリプトインタプリタは、これに適していませ"
+"ん。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:37
 msgid ""
 "Godot already has a memory management model for resources, most script "
 "languages provide their own, which results in duplicate effort and bugs."
 msgstr ""
+"Godotは既にリソースのメモリ管理モデルを持っており、ほとんどのスクリプト言語は"
+"独自のものを提供しているため、作業とバグが重複してしまいます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:40
 msgid ""
 "Binding code is always messy and results in several failure points, "
 "unexpected bugs and generally low maintainability."
 msgstr ""
+"バインディング・コードは常に乱雑で、いくつかの障害点、予期しないバグ、そして"
+"一般的に保守性の低さをもたらします。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:43
 msgid ""
@@ -9875,16 +9972,21 @@ msgid ""
 "for Lua and Squirrel, while having equal functionality. With time, having a "
 "built-in language has proven to be a huge advantage."
 msgstr ""
+"これらの考慮の結果が*GDScript*です。GDScriptの言語とインタープリターは、Luaと"
+"Squirrelのバインディング・コードよりも小さく、機能は同じでした。時間の経過と"
+"ともに、言語が組み込まれていることは大きな利点となってきました。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:49
 msgid "Example of GDScript"
-msgstr ""
+msgstr "GDScriptの例"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:51
 msgid ""
 "Some people can learn better by taking a look at the syntax, so here's a "
 "simple example of how GDScript looks."
 msgstr ""
+"構文を見ることでより良く学べる人もいるので、ここではGDScriptがどのように見え"
+"るかの簡単な例を紹介します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:129
 msgid ""
@@ -9892,6 +9994,9 @@ msgid ""
 "+, or C# but never used a dynamically typed one before, it is advised you "
 "read this tutorial: :ref:`doc_gdscript_more_efficiently`."
 msgstr ""
+"C、C ++、C＃などの静的型付き言語の経験があるが、これまでに動的型付き言語を使"
+"用したことがない場合は、以下のチュートリアルを読むことをお勧めします。:ref:"
+"`doc_gdscript_more_efficiently`。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:134
 msgid "Language"
@@ -9903,10 +10008,12 @@ msgid ""
 "methods are available to arrays or other objects, should be looked up in the "
 "linked class descriptions."
 msgstr ""
+"GDScriptの概要を説明していきます。配列やその他のオブジェクトで使用できるメ"
+"ソッドなどの詳細については、リンクされたクラスの説明を参照してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:141
 msgid "Identifiers"
-msgstr ""
+msgstr "識別子"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:143
 msgid ""
@@ -9915,10 +10022,14 @@ msgid ""
 "identifier. Additionally, identifiers must not begin with a digit. "
 "Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
 msgstr ""
+"アルファベット文字( ``a`` から ``z`` および ``A`` から ``Z`` )、数字( ``0`` "
+"から ``9`` )、 ``_`` が識別子として修飾される文字列です。また、識別子は数字で"
+"始まってはいけません。識別子では大文字と小文字が区別されます( ``foo`` が "
+"``FOO`` と異なる)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:149
 msgid "Keywords"
-msgstr ""
+msgstr "キーワード"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
 msgid ""
@@ -9927,6 +10038,10 @@ msgid ""
 "Operators (like ``in``, ``not``, ``and`` or ``or``) and names of built-in "
 "types as listed in the following sections are also reserved."
 msgstr ""
+"言語でサポートされているキーワードのリストを次に示します。キーワードは予約語"
+"(トークン)であるため、識別子として使用することはできません。次のセクションに"
+"示す演算子( ``in`` 、 ``not`` 、 ``and`` 、 ``or`` など)と組み込み型の名前も"
+"予約されています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:156
 msgid ""
@@ -9934,10 +10049,13 @@ msgid ""
 "godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
 "case you want to take a look under the hood."
 msgstr ""
+"キーワードは `GDScriptのトークナイザー<https://github.com/godotengine/godot/"
+"blob/master/modules/gdscript/gdscript_tokenizer.cpp>` で定義されているので、"
+"内部を調べたい場合に便利です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:160
 msgid "Keyword"
-msgstr ""
+msgstr "キーワード"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:160
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:7
@@ -9995,30 +10113,30 @@ msgstr "説明"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:162
 msgid "if"
-msgstr ""
+msgstr "if"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:162
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:164
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:166
 msgid "See `if/else/elif`_."
-msgstr ""
+msgstr "`if/else/elif`_ を参照して下さい。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:164
 msgid "elif"
-msgstr ""
+msgstr "elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:166
 msgid "else"
-msgstr ""
+msgstr "else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:817
 msgid "for"
-msgstr ""
+msgstr "for"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 msgid "See for_."
-msgstr ""
+msgstr "for_ を参照して下さい。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:806
@@ -10027,43 +10145,45 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
 msgid "See while_."
-msgstr ""
+msgstr "while_ を参照して下さい。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:846
 msgid "match"
-msgstr ""
+msgstr "match"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 msgid "See match_."
-msgstr ""
+msgstr "match_ を参照して下さい。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "break"
-msgstr ""
+msgstr "break"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "Exits the execution of the current ``for`` or ``while`` loop."
-msgstr ""
+msgstr "現在のforまたはwhileループの実行を終了します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 msgid "continue"
-msgstr ""
+msgstr "continue"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 msgid ""
 "Immediately skips to the next iteration of the ``for`` or ``while`` loop."
-msgstr ""
+msgstr "``for`` または ``while`` ループの次の反復に直ちにスキップします。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid "pass"
-msgstr ""
+msgstr "pass"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid ""
 "Used where a statement is required syntactically but execution of code is "
 "undesired, e.g. in empty functions."
 msgstr ""
+"ステートメントが構文的には必要だが、コードの実行が望ましくない場合 (空の関数"
+"など) に使用されます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:180
 msgid "return"
@@ -10071,7 +10191,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:180
 msgid "Returns a value from a function."
-msgstr ""
+msgstr "関数から値を返します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid "class"
@@ -10079,34 +10199,36 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid "Defines a class."
-msgstr ""
+msgstr "クラスを定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:184
 msgid "extends"
-msgstr ""
+msgstr "extends"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:184
 msgid "Defines what class to extend with the current class."
-msgstr ""
+msgstr "現在のクラスで拡張するクラスを定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:186
 #: ../../docs/tutorials/i18n/locales.rst:360
 msgid "is"
-msgstr ""
+msgstr "is"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:186
 msgid ""
 "Tests whether a variable extends a given class, or is of a given built-in "
 "type."
 msgstr ""
+"変数が特定のクラスを拡張するのか、それとも特定の組み込み型のものかをテストし"
+"ます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "as"
-msgstr ""
+msgstr "as"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "Cast the value to a given type if possible."
-msgstr ""
+msgstr "可能であれば、指定した型に値をキャストします。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "self"
@@ -10114,73 +10236,75 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "Refers to current class instance."
-msgstr ""
+msgstr "現在のクラスインスタンスを参照します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "tool"
-msgstr ""
+msgstr "tool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "Executes the script in the editor."
-msgstr ""
+msgstr "エディタでスクリプトを実行します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "signal"
-msgstr ""
+msgstr "signal"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "Defines a signal."
-msgstr ""
+msgstr "シグナルを定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "func"
-msgstr ""
+msgstr "func"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "Defines a function."
-msgstr ""
+msgstr "関数を定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "static"
-msgstr ""
+msgstr "static"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "Defines a static function. Static member variables are not allowed."
-msgstr ""
+msgstr "静的関数を定義します。静的メンバー変数は使用できません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:200
 msgid "const"
-msgstr ""
+msgstr "const"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:200
 msgid "Defines a constant."
-msgstr ""
+msgstr "定数を定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:202
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:202
 msgid "Defines an enum."
-msgstr ""
+msgstr "列挙型を定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:204
 msgid "var"
-msgstr ""
+msgstr "var"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:204
 msgid "Defines a variable."
-msgstr ""
+msgstr "変数を定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:206
 msgid "onready"
-msgstr ""
+msgstr "onready"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:206
 msgid ""
 "Initializes a variable once the Node the script is attached to and its "
 "children are part of the scene tree."
 msgstr ""
+"スクリプトがアタッチされているノードとその子がシーンツリーの一部になると、変"
+"数を初期化します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:208
 msgid "export"
@@ -10191,22 +10315,24 @@ msgid ""
 "Saves a variable along with the resource it's attached to and makes it "
 "visible and modifiable in the editor."
 msgstr ""
+"変数をアタッチ先のリソースとともに保存し、エディタで表示および変更できるよう"
+"にします。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
 msgid "setget"
-msgstr ""
+msgstr "setget"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
 msgid "Defines setter and getter functions for a variable."
-msgstr ""
+msgstr "変数の設定および取得関数を定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "breakpoint"
-msgstr ""
+msgstr "breakpoint"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "Editor helper for debugger breakpoints."
-msgstr ""
+msgstr "デバッガブレークポイント用のエディタヘルパー。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "preload"
@@ -10215,6 +10341,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "Preloads a class or variable. See `Classes as resources`_."
 msgstr ""
+"クラスまたは変数をプリロードします。`Classes as resources`_ を参照してくださ"
+"い。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid "yield"
@@ -10222,21 +10350,23 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid "Coroutine support. See `Coroutines with yield`_."
-msgstr ""
+msgstr "コルーチンサポート 。`Coroutines with yield`_ を参照してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid "assert"
-msgstr ""
+msgstr "assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid ""
 "Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
 "`Assert keyword`_."
 msgstr ""
+"条件を表明し、失敗時にエラーをログに記録します。 デバッグ以外のビルドでは無視"
+"されます。`Assert keyword`_ を参照してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 msgid "remote"
-msgstr ""
+msgstr "remote"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
@@ -10248,125 +10378,127 @@ msgid ""
 "Networking RPC annotation. See :ref:`high-level multiplayer docs "
 "<doc_high_level_multiplayer>`."
 msgstr ""
+"ネットワーキングRPCアノテーション。 :ref:`high-level multiplayer docs "
+"<doc_high_level_multiplayer>` を参照してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
 msgid "master"
-msgstr ""
+msgstr "master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:224
 msgid "puppet"
-msgstr ""
+msgstr "puppet"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
 msgid "remotesync"
-msgstr ""
+msgstr "remotesync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
 msgid "mastersync"
-msgstr ""
+msgstr "mastersync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "puppetsync"
-msgstr ""
+msgstr "puppetsync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "PI"
-msgstr ""
+msgstr "PI"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "PI constant."
-msgstr ""
+msgstr "PI定数。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "TAU"
-msgstr ""
+msgstr "TAU"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "TAU constant."
-msgstr ""
+msgstr "TAU定数。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "INF"
-msgstr ""
+msgstr "INF"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "Infinity constant. Used for comparisons."
-msgstr ""
+msgstr "Infinity定数。比較に使用されます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "NAN"
-msgstr ""
+msgstr "NAN"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "NAN (not a number) constant. Used for comparisons."
-msgstr ""
+msgstr "NAN (not a number)定数。比較に使用されます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:242
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:470
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:179
 msgid "Operators"
-msgstr ""
+msgstr "演算子"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:244
 msgid "The following is the list of supported operators and their precedence."
-msgstr ""
+msgstr "サポートされている演算子とその優先順位を次に示します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:247
 msgid "**Operator**"
-msgstr ""
+msgstr "**演算子**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:247
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Description**"
-msgstr ""
+msgstr "**説明**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:249
 msgid "``x[index]``"
-msgstr ""
+msgstr "``x[index]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:249
 msgid "Subscription, Highest Priority"
-msgstr ""
+msgstr "サブスクリプション、最高優先度"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:251
 msgid "``x.attribute``"
-msgstr ""
+msgstr "``x.attribute``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:251
 msgid "Attribute Reference"
-msgstr ""
+msgstr "属性参照"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
 msgid "``is``"
-msgstr ""
+msgstr "``is``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
 msgid "Instance Type Checker"
-msgstr ""
+msgstr "インスタンスタイプチェッカー"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:255
 msgid "``~``"
-msgstr ""
+msgstr "``~``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:255
 msgid "Bitwise NOT"
-msgstr ""
+msgstr "ビット単位のNOT"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:257
 msgid "``-x``"
-msgstr ""
+msgstr "``-x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:257
 msgid "Negative / Unary Negation"
-msgstr ""
+msgstr "否定/単項否定"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:259
 msgid "``*`` ``/`` ``%``"
-msgstr ""
+msgstr "``*`` ``/`` ``%``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:259
 msgid "Multiplication / Division / Remainder"
-msgstr ""
+msgstr "乗算/除算/剰余"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:261
 msgid ""
@@ -10374,175 +10506,176 @@ msgid ""
 "rather than returning a fractional number, and the % operator is only "
 "available for ints (\"fmod\" for floats)"
 msgstr ""
+"これらの演算子はC ++と同じ動作をします。整数の除算は小数を切り捨てられ、％演"
+"算子は整数にのみ使用可能です（floatの場合は \"fmod\" ）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:267
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "``+``"
-msgstr ""
+msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:267
 msgid "Addition / Concatenation of Arrays"
-msgstr ""
+msgstr "配列の追加/連結"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:269
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "``-``"
-msgstr ""
+msgstr "``-``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:269
-#, fuzzy
 msgid "Subtraction"
-msgstr "はじめに"
+msgstr "減算"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:271
 msgid "``<<`` ``>>``"
-msgstr ""
+msgstr "``<<`` ``>>``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:271
 msgid "Bit Shifting"
-msgstr ""
+msgstr "ビットシフト"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:273
 msgid "``&``"
-msgstr ""
+msgstr "``&``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:273
 msgid "Bitwise AND"
-msgstr ""
+msgstr "ビットAND"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:275
 msgid "``^``"
-msgstr ""
+msgstr "``^``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:275
 msgid "Bitwise XOR"
-msgstr ""
+msgstr "ビットXOR"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:277
 msgid "``|``"
-msgstr ""
+msgstr "``|``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:277
 msgid "Bitwise OR"
-msgstr ""
+msgstr "ビットOR"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:279
 msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
-msgstr ""
+msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:279
 msgid "Comparisons"
-msgstr ""
+msgstr "比較"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:281
 msgid "``in``"
-msgstr ""
+msgstr "``in``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:281
 msgid "Content Test"
-msgstr ""
+msgstr "コンテンツテスト"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
 msgid "``!`` ``not``"
-msgstr ""
+msgstr "``!`` ``not``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
 msgid "Boolean NOT"
-msgstr ""
+msgstr "ブール型 NOT"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
 msgid "``and`` ``&&``"
-msgstr ""
+msgstr "``and`` ``&&``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
 msgid "Boolean AND"
-msgstr ""
+msgstr "ブール型 AND"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "``or`` ``||``"
-msgstr ""
+msgstr "``or`` ``||``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "Boolean OR"
-msgstr ""
+msgstr "ブール型 OR"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "``if x else``"
-msgstr ""
+msgstr "``if x else``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "Ternary if/else"
-msgstr ""
+msgstr "3項if/else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
-msgstr ""
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "Assignment, Lowest Priority"
-msgstr ""
+msgstr "割り当て、最低優先度"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "Literals"
-msgstr ""
+msgstr "リテラル"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:298
 msgid "**Literal**"
-msgstr ""
+msgstr "**リテラル**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:298
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 msgid "**Type**"
-msgstr ""
+msgstr "**型**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:300
 msgid "``45``"
-msgstr ""
+msgstr "``45``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:300
 msgid "Base 10 integer"
-msgstr ""
+msgstr "10進整数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:302
 msgid "``0x8F51``"
-msgstr ""
+msgstr "``0x8F51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:302
 msgid "Base 16 (hex) integer"
-msgstr ""
+msgstr "16進整数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:304
 msgid "``3.14``, ``58.1e-10``"
-msgstr ""
+msgstr "``3.14``, ``58.1e-10``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:304
 msgid "Floating point number (real)"
-msgstr ""
+msgstr "浮動小数点数（実数）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:306
 msgid "``\"Hello\"``, ``\"Hi\"``"
-msgstr ""
+msgstr "``\"Hello\"``, ``\"Hi\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:306
 msgid "Strings"
-msgstr ""
+msgstr "文字列"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:308
 msgid "``\"\"\"Hello\"\"\"``"
-msgstr ""
+msgstr "``\"\"\"Hello\"\"\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:308
 msgid "Multiline string"
-msgstr ""
+msgstr "複数行文字列"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:310
 msgid "``@\"Node/Label\"``"
-msgstr ""
+msgstr "``@\"Node/Label\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:310
 msgid "NodePath or StringName"
-msgstr ""
+msgstr "ノードのパスまたはStringName"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:312
 #, fuzzy
@@ -10551,17 +10684,17 @@ msgstr "リソースのパス"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:312
 msgid "Shorthand for ``get_node(\"NodePath\")``"
-msgstr ""
+msgstr "get_node（ \"NodePath\"）の短縮形"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:316
 msgid "Comments"
-msgstr ""
+msgstr "Comments"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:318
 msgid ""
 "Anything from a ``#`` to the end of the line is ignored and is considered a "
 "comment."
-msgstr ""
+msgstr "``#`` から行末までは無視され、コメントと見なされます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:326
 msgid ""
@@ -10569,10 +10702,13 @@ msgid ""
 "the beginning and end of a block of text. Note that this creates a string, "
 "therefore, it will not be stripped away when the script is compiled."
 msgstr ""
+"複数行のコメントは、テキストブロックの先頭と末尾に \"\"\" (行内の3つの引用符)"
+"を使用して作成できます。これにより作成した文字列はスクリプトのコンパイル時に"
+"削除されないことに注意してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:339
 msgid "Built-in types"
-msgstr ""
+msgstr "組み込み型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:341
 msgid ""
@@ -10583,45 +10719,53 @@ msgid ""
 "``PoolByteArray`` though, those are passed as values too, so consider this "
 "when deciding which to use!)"
 msgstr ""
+"組み込み型はスタック割り当て型です。これらは値として渡されます。つまり、割り"
+"当てごとに、または関数に引数として渡すときにコピーが作成されます。唯一の例外"
+"は ``Array``\\ s と ``Dictionaries`` で、これらは参照によって渡され、共有され"
+"ます。( ``PoolArray``\\ s は ``PoolByteArray`` のように値として渡されるわけで"
+"はありませんが、どちらを使用するかを決定する際にはこの点を考慮してください)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:348
 msgid "Basic built-in types"
-msgstr ""
+msgstr "組み込み型ベース"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:350
 msgid "A variable in GDScript can be assigned to several built-in types."
-msgstr ""
+msgstr "GDScriptの変数は、いくつかの組み込み型に割り当てることができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:353
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "null"
-msgstr ""
+msgstr "null"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:355
 msgid ""
 "``null`` is an empty data type that contains no information and can not be "
 "assigned any other value."
 msgstr ""
+"``null`` は、情報を含まない空のデータ型であり、他の値を割り当てることはできま"
+"せん。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:359
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:27
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:361
 msgid "The Boolean data type can only contain ``true`` or ``false``."
 msgstr ""
+"Booleanデータ型には、 ``true`` または ``false`` のみを含めることができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:364
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
 msgid ""
 "The integer data type can only contain integer numbers, (both negative and "
 "positive)."
-msgstr ""
+msgstr "整数データ型には、整数（負と正の両方）のみを含めることができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:100
@@ -10636,11 +10780,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
 msgid "Used to contain a floating point value (real numbers)."
-msgstr ""
+msgstr "浮動小数点値(実数)を格納するために使用します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:375
 msgid ":ref:`String <class_String>`"
-msgstr ""
+msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:377
 msgid ""
@@ -10649,72 +10793,86 @@ msgid ""
 "wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript supports :ref:`format "
 "strings aka printf functionality <doc_gdscript_printf>`."
 msgstr ""
+"`Unicode形式 <https://en.wikipedia.org/wiki/Unicode>`_ の文字列。文字列に"
+"は、 `標準のCエスケープシーケンス <https://en.wikipedia.org/wiki/"
+"Escape_sequences_in_C>`_ を含めることができます。GDScriptは、 :ref:`format "
+"strings aka printf functionality <doc_gdscript_printf>` をサポートしていま"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:383
 msgid "Vector built-in types"
-msgstr ""
+msgstr "組み込み型ベクトル"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
 msgid ":ref:`Vector2 <class_Vector2>`"
-msgstr ""
+msgstr ":ref:`Vector2 <class_Vector2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as "
 "array."
 msgstr ""
+"``x`` と ``y`` を含む2Dベクトルタイプ。配列としてアクセスすることもできます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid ":ref:`Rect2 <class_Rect2>`"
-msgstr ""
+msgstr ":ref:`Rect2 <class_Rect2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:394
 msgid ""
 "2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
 "Alternatively contains an ``end`` field which is ``position+size``."
 msgstr ""
+"``position`` と ``size`` の2つのベクトルフィールドを含む2D矩形タイプ。また"
+"は、 ``position+size`` である ``end`` フィールドを含みます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:398
 msgid ":ref:`Vector3 <class_Vector3>`"
-msgstr ""
+msgstr ":ref:`Vector3 <class_Vector3>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:400
 msgid ""
 "3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
 "accessed as an array."
 msgstr ""
+"``x``、 ``y`` 、 ``z`` フィールドを含む3Dベクトルタイプ。配列としてアクセスす"
+"ることもできます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:404
 msgid ":ref:`Transform2D <class_Transform2D>`"
-msgstr ""
+msgstr ":ref:`Transform2D <class_Transform2D>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:406
 msgid "3x2 matrix used for 2D transforms."
-msgstr ""
+msgstr "2D変換に使用される3x2行列です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:409
 msgid ":ref:`Plane <class_Plane>`"
-msgstr ""
+msgstr ":ref:`Plane <class_Plane>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:411
 msgid ""
 "3D Plane type in normalized form that contains a ``normal`` vector field and "
 "a ``d`` scalar distance."
 msgstr ""
+"``normal`` ベクトルフィールドと ``d`` スカラー距離を含む正規化形式の3D平面型"
+"です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:415
 msgid ":ref:`Quat <class_Quat>`"
-msgstr ""
+msgstr ":ref:`Quat <class_Quat>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:417
 msgid ""
 "Quaternion is a datatype used for representing a 3D rotation. It's useful "
 "for interpolating rotations."
 msgstr ""
+"四元数は3D回転を表すために使用されるデータ型です。 回転を補間するのに便利で"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:421
 msgid ":ref:`AABB <class_AABB>`"
-msgstr ""
+msgstr ":ref:`AABB <class_AABB>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:423
 msgid ""
@@ -10722,73 +10880,87 @@ msgid ""
 "``position`` and ``size``. Alternatively contains an ``end`` field which is "
 "``position+size``."
 msgstr ""
+"Axis-alignedバウンディングボックス（または3Dボックス）には、 ``position`` と "
+"``size`` の2つのベクトルフィールドがあります。または、 ``position+size`` であ"
+"る ``end`` フィールドを含みます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:428
 msgid ":ref:`Basis <class_Basis>`"
-msgstr ""
+msgstr ":ref:`Basis <class_Basis>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:430
 msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
 msgstr ""
+"3Dの回転と拡大縮小に使用される3x3のマトリックス。これには3つのベクトルフィー"
+"ルド( ``x`` 、 ``y`` 、 ``z`` )が含まれ、3Dベクトルの配列としてアクセスするこ"
+"ともできます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:435
 msgid ":ref:`Transform <class_Transform>`"
-msgstr ""
+msgstr ":ref:`Transform <class_Transform>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:437
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
+"3DTransformには、基底フィールド ``basis`` とVector3フィールド ``origin`` が含"
+"まれています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:441
 msgid "Engine built-in types"
-msgstr ""
+msgstr "エンジン組み込み型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:444
 msgid ":ref:`Color <class_Color>`"
-msgstr ""
+msgstr ":ref:`Color <class_Color>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:446
 msgid ""
 "Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
 "be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
 msgstr ""
+"カラーデータ型は、 ``r`` 、 ``g`` 、 ``b``,および ``a`` フィールドを含みま"
+"す。色相/彩度/明度の ``h`` 、 ``s`` 、 ``v`` としてアクセスすることもできま"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:450
 msgid ":ref:`NodePath <class_NodePath>`"
-msgstr ""
+msgstr ":ref:`NodePath <class_NodePath>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:452
 msgid ""
 "Compiled path to a node used mainly in the scene system. It can be easily "
 "assigned to, and from, a String."
 msgstr ""
+"主にシーンシステムで使用されるノードへのコンパイル済みパス。 Stringとの間で簡"
+"単に割り当てることができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:456
 msgid ":ref:`RID <class_RID>`"
-msgstr ""
+msgstr ":ref:`RID <class_RID>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:458
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
 msgstr ""
+"リソースID(RID)。サーバーは汎用RIDを使用して不透明なデータを参照します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:461
 msgid ":ref:`Object <class_Object>`"
-msgstr ""
+msgstr ":ref:`Object <class_Object>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:463
 msgid "Base class for anything that is not a built-in type."
-msgstr ""
+msgstr "組み込み型でないものすべての基本クラス。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:466
 msgid "Container built-in types"
-msgstr ""
+msgstr "組み込み型コンテナ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:469
 msgid ":ref:`Array <class_Array>`"
-msgstr ""
+msgstr ":ref:`Array <class_Array>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:471
 msgid ""
@@ -10797,6 +10969,10 @@ msgid ""
 "indexed starting from index ``0``. Starting with Godot 2.1, indices may be "
 "negative like in Python, to count from the end."
 msgstr ""
+"他の配列や辞書(下記参照)を含む、任意のオブジェクトタイプの一般的なシーケン"
+"ス。配列のサイズは動的に変更できます。配列にはインデックス ``0`` から始まるイ"
+"ンデックスが付けられます。Godot 2.1以降のインデックスは、Pythonと同様に負の数"
+"にすることができ、最後から数えます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:485
 msgid ""
@@ -10807,50 +10983,63 @@ msgid ""
 "also use less memory but are atomic and tend to run slower than generic "
 "arrays. They are therefore only recommended to use for large data sets:"
 msgstr ""
+"GDScript配列は速度を上げるためにメモリ内で線形に割り当てられます。大規模な配"
+"列（数万要素以上）は、メモリの断片化を引き起こす可能性があります。 これが問題"
+"になる場合は、特殊なタイプの配列が利用可能です。これらは単一のデータ型のみを"
+"受け入れます。この配列はメモリの断片化を回避し、メモリの使用量も少なくなりま"
+"すが原始的であり、一般的な配列より実行速度が遅くなりがちです。 したがって、そ"
+"れらは大規模なデータセットにのみ使用することをお勧めします:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:492
 msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
 msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>`: バイト型の配列(0～255の整数)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:493
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
-msgstr ""
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: 整数型の配列。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:494
 msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
-msgstr ""
+msgstr ":ref:`PoolRealArray <class_PoolRealArray>`: 浮動小数点型の配列。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:495
 msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
-msgstr ""
+msgstr ":ref:`PoolStringArray <class_PoolStringArray>`: 文字列型の配列。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:496
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
 "<class_Vector2>` objects."
 msgstr ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: :ref:`Vector2 "
+"<class_Vector2>` の配列。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:497
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
 "<class_Vector3>` objects."
 msgstr ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: :ref:`Vector3 "
+"<class_Vector3>` の配列。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:498
 msgid ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
 "<class_Color>` objects."
 msgstr ""
+":ref:`PoolColorArray <class_PoolColorArray>`: :ref:`Color <class_Color>` の配"
+"列。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:501
 msgid ":ref:`Dictionary <class_Dictionary>`"
-msgstr ""
+msgstr ":ref:`Dictionary <class_Dictionary>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:503
 msgid "Associative container which contains values referenced by unique keys."
-msgstr ""
+msgstr "一意のキーによって参照される値を含む連想コンテナです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:516
 msgid ""
@@ -10859,17 +11048,22 @@ msgid ""
 "write). Note however that like any GDScript identifier, keys written in this "
 "form cannot start with a digit."
 msgstr ""
+"Luaスタイルのテーブル構文もサポートされています。 Luaスタイルでは、 ``:`` の"
+"代わりに ``=`` を使用し、文字列のキーをマークするために引用符を使用しません"
+"（記述するのがやや少なくなります）。ただし、他のGDScript識別子と同様に、この"
+"形式で書かれたキーは数字で始めることはできません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:530
 msgid ""
 "To add a key to an existing dictionary, access it like an existing key and "
 "assign to it::"
 msgstr ""
+"既存の辞書にキーを追加するには、既存のキーのようにアクセスして割り当てます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:539
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
-msgstr ""
+msgstr "データ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:542
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:131
@@ -10877,7 +11071,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:148
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:212
 msgid "Variables"
-msgstr ""
+msgstr "変数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:544
 msgid ""
@@ -10885,6 +11079,9 @@ msgid ""
 "with the ``var`` keyword and may, optionally, be assigned a value upon "
 "initialization."
 msgstr ""
+"変数はクラスメンバーとして存在することも、関数に対してローカルに存在すること"
+"もできます。これらは ``var`` キーワードを使用して作成され、必要に応じて初期化"
+"時に値が割り当てられます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:555
 msgid ""
@@ -10892,43 +11089,52 @@ msgid ""
 "specified, the variable will be forced to have always that same type, and "
 "trying to assign an incompatible value will raise an error."
 msgstr ""
+"変数にはオプションで型指定を指定できます。型を指定すると、変数は常に同じ型を"
+"持つように強制され、互換性のない値を割り当てようとするとエラーが発生します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:559
 msgid ""
 "Types are specified in the variable declaration using a ``:`` (colon) symbol "
 "after the variable name, followed by the type."
 msgstr ""
+"型は、変数名の後に ``:`` (コロン)記号を使用して変数宣言内で指定され、その後に"
+"型が続きます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:567
 msgid ""
 "If the variable is initialized within the declaration, the type can be "
 "inferred, so it's possible to omit the type name::"
 msgstr ""
+"変数が宣言内で初期化されている場合、型を推定できるため、型名を省略できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:573
 msgid ""
 "Type inference is only possible if the assigned value has a defined type, "
 "otherwise it will raise an error."
 msgstr ""
+"型推論が可能なのは、割り当てられた値に型が定義されている場合だけです。定義さ"
+"れていない場合は、エラーが発生します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:576
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:39
 msgid "Valid types are:"
-msgstr ""
+msgstr "有効なタイプは以下のとおりです:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:578
 msgid "Built-in types (Array, Vector2, int, String, etc.)"
-msgstr ""
+msgstr "組み込み型（Array、Vector2、int、Stringなど）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:579
 msgid "Engine classes (Node, Resource, Reference, etc.)"
-msgstr ""
+msgstr "エンジンクラス（Node、Resource、Referenceなど）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:580
 msgid ""
 "Constant names if they contain a script resource (``MyScript`` if you "
 "declared ``const MyScript = preload(\"res://my_script.gd\")``)."
 msgstr ""
+"スクリプトリソースを含む場合は定数名（ ``const MyScript = preload(\"res://"
+"my_script.gd\")`` を宣言した場合は ``MyScript`` ）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:581
 msgid ""
@@ -10936,15 +11142,18 @@ msgid ""
 "NestedClass`` if you declared ``class NestedClass`` inside the ``class "
 "InnerClass`` in the same scope)"
 msgstr ""
+"同じスクリプト内の他のクラス、スコープを尊重します（同じスコープ内の ``class "
+"InnerClass`` で ``class NestedClass`` を宣言した場合は ``InnerClass."
+"NestedClass`` ）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:582
 msgid "Script classes declared with the ``class_name`` keyword."
-msgstr ""
+msgstr "``class_name`` キーワードで宣言されたスクリプトクラス。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:585
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:73
 msgid "Casting"
-msgstr ""
+msgstr "キャスト"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:587
 msgid ""
@@ -10952,30 +11161,39 @@ msgid ""
 "needed to coerce a value to be of a certain type, in particular for object "
 "types, you can use the casting operator ``as``."
 msgstr ""
+"型付き変数に割り当てられた値は、互換性のある型を持つ必要があります。特定の"
+"型、特にオブジェクト型に対して値を強制する必要がある場合は、キャスト演算子を "
+"``as`` として使用できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:591
 msgid ""
 "Casting between object types results in the same object if the value is of "
 "the same type or a subtype of the cast type."
 msgstr ""
+"値が同じ型またはキャスト型のサブタイプの場合、オブジェクト型間でキャストする"
+"と同じオブジェクトになります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:599
 msgid ""
 "If the value is not a subtype, the casting operation will result in a "
 "``null`` value."
-msgstr ""
+msgstr "値がサブタイプではない場合、キャスト操作は ``null`` 値になります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:606
 msgid ""
 "For built-in types, they will be forcibly converted if possible, otherwise "
 "the engine will raise an error."
 msgstr ""
+"組み込み型の場合、可能であれば強制的に変換されますが、それ以外の場合はエラー"
+"が発生します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:615
 msgid ""
 "Casting is also useful to have better type-safe variables when interacting "
 "with tree::"
 msgstr ""
+"また、キャストは、ツリーと対話するときに、より安全な型保証変数を用意するのに"
+"も役立ちます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:625
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:206
@@ -10991,38 +11209,45 @@ msgid ""
 "Constants are similar to variables, but must be constants or constant "
 "expressions and must be assigned on initialization."
 msgstr ""
+"定数は変数に似ていますが、定数または定数式である必要があり、初期化時に割り当"
+"てる必要があります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:641
 msgid ""
 "Although the type of constants is inferred from the assigned value, it's "
 "also possible to add explicit type specification::"
 msgstr ""
+"定数の型は割り当てられた値から推測されますが、明示的な型指定を追加することも"
+"可能です:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:647
 msgid "Assigning a value of an incompatible type will raise an error."
-msgstr ""
+msgstr "互換性のないタイプの値を割り当てると、エラーが発生します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:650
 msgid "Enums"
-msgstr ""
+msgstr "列挙型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:652
 msgid ""
 "Enums are basically a shorthand for constants, and are pretty useful if you "
 "want to assign consecutive integers to some constant."
 msgstr ""
+"列挙型は基本的に定数の省略形であり、連続した整数をある定数に割り当てたい場合"
+"には非常に便利です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:655
 msgid ""
 "If you pass a name to the enum, it will put all the keys inside a constant "
 "dictionary of that name."
 msgstr ""
+"列挙型に名前を渡すと、その名前の定数辞書内にすべてのキーが配置されます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:678
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:245
 msgid "Functions"
-msgstr ""
+msgstr "関数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:680
 msgid ""
@@ -11032,11 +11257,17 @@ msgid ""
 "but is not always required (and should *not* be sent as the function's first "
 "argument, unlike Python)."
 msgstr ""
+"関数は常に `class <Classes_>`_ に属します。 変数検索のスコープ優先順位は、"
+"ローカル→クラスメンバー→グローバルです。 ``self`` 変数は常に利用可能でクラス"
+"メンバにアクセスするためのオプションとして提供されていますが、必ずしも必要で"
+"はありません(Pythonとは異なり、関数の最初の引数として送信しないでください)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:693
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
+"関数は任意の時点で ``return`` することができます。デフォルトの戻り値は"
+"``null`` です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:695
 msgid ""
@@ -11044,17 +11275,21 @@ msgid ""
 "return value. Types for arguments can be added in a similar way to "
 "variables::"
 msgstr ""
+"関数には、引数と戻り値の型を指定することもできます。引数の型は次のように変数"
+"に追加できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:701
 msgid ""
 "If a function argument has a default value, it's possible to infer the type::"
-msgstr ""
+msgstr "関数の引数にデフォルト値がある場合は、次のように型を推測できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:706
 msgid ""
 "The return type of the function can be specified after the arguments list "
 "using the arrow token (``->``)::"
 msgstr ""
+"関数の戻り型は、引数リストの後に矢印トークン（ ``->`` ）を使用して指定できま"
+"す:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:712
 msgid ""
@@ -11063,6 +11298,9 @@ msgid ""
 "functions can return early with the ``return`` keyword, but they can't "
 "return any value."
 msgstr ""
+"戻り型を持つ関数は、適切な値を返す**必要があります**。型を ``void`` に設定す"
+"ると、関数は何も返しません。Void関数は ``return`` キーワードを使用して早期に"
+"戻ることができますが、値を返すことはできません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:721
 msgid ""
@@ -11072,10 +11310,15 @@ msgid ""
 "``if`` block but not after it, the editor will raise an error because if the "
 "block is not executed, the function won't have a valid value to return."
 msgstr ""
+"void関数でない場合は**常に**値を返す必要があるため、コードに分岐文( ``if``/"
+"``else`` 構造など)がある場合は、考えられるすべてのパスに戻り値が必要です。た"
+"とえば、 ``if`` ブロックの内側に戻り値があってもその後に戻り値がない場合、エ"
+"ディタはエラーを発生させます。 ``if`` 内のブロックが実行されない場合、関数に"
+"は有効な戻り値がないからです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:729
 msgid "Referencing Functions"
-msgstr ""
+msgstr "関数の参照"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:731
 msgid ""
@@ -11084,6 +11327,9 @@ msgid ""
 "another function or be returned from other functions. This is for "
 "performance reasons."
 msgstr ""
+"Pythonとは反対に、関数はGDScriptの最上位クラスのオブジェクトではありません。"
+"つまり、変数に格納したり、引数として別の関数に渡したり、他の関数から返すこと"
+"はできません。 これはパフォーマンス上の理由からです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:735
 msgid ""
@@ -11091,6 +11337,9 @@ msgid ""
 "or pass it to another function as an argument) one must use the ``call`` or "
 "``funcref`` helpers::"
 msgstr ""
+"実行時に名前で関数を参照するには（たとえば、変数に格納したり、引数として別の"
+"関数に渡したりするには）、 ``call`` または ``funcref`` ヘルパーを使用する必要"
+"があります:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:748
 msgid ""
@@ -11099,10 +11348,14 @@ msgid ""
 "etc. are called in all base classes automatically. So there is only a need "
 "to call the function explicitly when overloading them in some way."
 msgstr ""
+"``_init`` などのデフォルト関数と、 ``_enter_tree`` 、 ``_exit_tree`` 、 "
+"``_process`` 、 ``_physics_process`` などのほとんどの通知は、すべての基本クラ"
+"スで自動的に呼び出されます。そのため、何らかの方法でそれらをオーバーロードす"
+"るときに関数を明示的に呼び出す必要があるだけです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:756
 msgid "Static functions"
-msgstr ""
+msgstr "静的関数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:758
 msgid ""
@@ -11110,10 +11363,13 @@ msgid ""
 "access to the instance member variables or ``self``. This is mainly useful "
 "to make libraries of helper functions:"
 msgstr ""
+"関数は静的として宣言できます。静的関数は、インスタンス・メンバー変数または "
+"``self`` にアクセスできません。これは主に、ヘルパー関数のライブラリを作成する"
+"のに便利です:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:769
 msgid "Statements and control flow"
-msgstr ""
+msgstr "ステートメントと制御フロー"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:771
 msgid ""
@@ -11121,10 +11377,12 @@ msgid ""
 "structures, etc (see below). ``;`` as a statement separator is entirely "
 "optional."
 msgstr ""
+"文は標準的なもので、代入、関数呼び出し、制御フロー構造などです（下記参照）。 "
+"``;`` は文の区切り文字としては完全にオプションです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:776
 msgid "if/else/elif"
-msgstr ""
+msgstr "if/else/elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:778
 msgid ""
@@ -11133,22 +11391,30 @@ msgid ""
 "nature of the tab-based indentation, ``elif`` can be used instead of "
 "``else``/``if`` to maintain a level of indentation."
 msgstr ""
+"単純な条件は、 ``if``/``else``/``elif`` 構文を使用して作成します。条件をかっ"
+"こで囲むことはできますが、必須ではありません。タブベースのインデントの性質か"
+"ら、インデントのレベルを維持するために ``elif`` を ``else``/``if`` の代わりに"
+"使用できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:792
 msgid "Short statements can be written on the same line as the condition::"
-msgstr ""
+msgstr "短いステートメントは、条件と同じ行に記述できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:799
 msgid ""
 "Sometimes you might want to assign a different initial value based on a "
 "boolean expression. In this case, ternary-if expressions come in handy::"
 msgstr ""
+"場合によっては、ブール式に基づいて異なる初期値を割り当てたいことがあります。 "
+"この場合、3項式が便利です:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:808
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
 msgstr ""
+"単純なループは ``while`` 構文を使用して作成されます。ループは ``break`` を"
+"使って中断することも、 ``continue`` を使って続けることもできます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:819
 msgid ""
@@ -11157,6 +11423,9 @@ msgid ""
 "loop variable. When iterating over a dictionary, the *index* is stored in "
 "the loop variable."
 msgstr ""
+"配列やテーブルなどの範囲を反復するには、 *for* ループが使用されます。配列を反"
+"復処理する時には、現在の配列要素がループ変数に格納されます。 辞書を反復処理す"
+"るとき、 *index* はループ変数に格納されます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:848
 msgid ""
@@ -11164,36 +11433,41 @@ msgid ""
 "equivalent of the ``switch`` statement found in many other languages, but "
 "offers some additional features."
 msgstr ""
+"``match`` 文はプログラムの実行を分岐するために使用されます。他の多くの言語で"
+"見られる ``switch`` 文と同等ですが、いくつかの追加機能を提供します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:851
 msgid "Basic syntax:"
-msgstr ""
+msgstr "基本の構文:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:864
 msgid "**Crash-course for people who are familiar with switch statements**:"
 msgstr ""
+"**switchステートメントに精通しているユーザー向けのクラッシュ・コース**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:866
 msgid "Replace ``switch`` with ``match``"
-msgstr ""
+msgstr "``match`` する ``switch`` を置換します"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:867
 msgid "Remove ``case``"
-msgstr ""
+msgstr "``case`` を削除します"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:868
 msgid ""
 "Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
+"``break`` を除去します。デフォルトで ``break`` しない場合は、 ``continue`` を"
+"使用してフォールスルーを行うことができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
 msgid "Change ``default`` to a single underscore."
-msgstr ""
+msgstr "``default`` をアンダースコア1つに変更します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:872
 msgid "**Control flow**:"
-msgstr ""
+msgstr "**制御フロー**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:874
 msgid ""
@@ -11203,44 +11477,52 @@ msgid ""
 "use ``continue`` to stop execution in the current block and check the ones "
 "below it."
 msgstr ""
+"パターンは上から下に一致します。パターンが一致すると、対応するブロックが実行"
+"されます。その後、実行は ``match`` 文の下で続行されます。フォールスルーしたい"
+"場合は、 ``continue`` を使用して現在のブロックで実行を停止し、その下のブロッ"
+"クを確認します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:878
 msgid "There are 6 pattern types:"
-msgstr ""
+msgstr "6種類のパターンがあります:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:890
 msgid "constant pattern"
-msgstr ""
+msgstr "定数パターン"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:881
 msgid "constant primitives, like numbers and strings ::"
-msgstr ""
+msgstr "数値や文字列のような定数プリミティブ:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:902
 msgid "variable pattern"
-msgstr ""
+msgstr "変数パターン"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:893
 msgid "matches the contents of a variable/enum ::"
-msgstr ""
+msgstr "変数/列挙型の内容と一致:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:916
 msgid "wildcard pattern"
-msgstr ""
+msgstr "ワイルドカードパターン"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:905
 msgid "This pattern matches everything. It's written as a single underscore."
 msgstr ""
+"このパターンはすべてにマッチします。 単一のアンダースコアとして書かれていま"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:907
 msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages. ::"
 msgstr ""
+"他の言語における ``switch`` ステートメントでの ``default`` と同等のものとして"
+"使用できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:929
 msgid "binding pattern"
-msgstr ""
+msgstr "バインディングパターン"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:919
 msgid ""
@@ -11248,77 +11530,94 @@ msgid ""
 "matches everything - and also gives that value a name. It's especially "
 "useful in array and dictionary patterns. ::"
 msgstr ""
+"バインディング・パターンは新しい変数を導入します。ワイルドカード・パターンと"
+"同様に、すべてに一致し、その値に名前を付けます。配列や辞書のパターンで特に便"
+"利です:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:948
 msgid "array pattern"
-msgstr ""
+msgstr "配列パターン"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:932
 msgid ""
 "matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
 msgstr ""
+"配列と一致します。 配列パターンの各要素はパターンそのものなので、それらをネス"
+"トすることができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:934
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
 "pattern, otherwise the pattern doesn't match."
 msgstr ""
+"配列の長さが最初にテストされ、それはパターンと同じサイズでなければなりませ"
+"ん、そうでなければパターンは一致しません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:936
 msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``"
 msgstr ""
+"**オープンエンド配列**: 最後のサブパターンを `` ..`` にすることで配列をパター"
+"ンよりも大きくすることができます"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:938
 msgid "Every subpattern has to be comma separated. ::"
-msgstr ""
+msgstr "各サブパターンはカンマで区切る必要があります:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:973
 msgid "dictionary pattern"
-msgstr ""
+msgstr "辞書パターン"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:951
 msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
 msgstr ""
+"配列パターンと同じように機能します。 すべてのキーは定数パターンでなければなり"
+"ません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:953
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
 "the pattern, otherwise the pattern doesn't match."
 msgstr ""
+"辞書のサイズが最初にテストされ、それはパターンと同じサイズでなければなりませ"
+"ん、そうでなければパターンは一致しません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:955
 msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``"
 msgstr ""
+"**オープンエンド辞書**: 最後のサブパターンを `` ..`` にすることで辞書をパター"
+"ンよりも大きくすることができます"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
 msgid "Every subpattern has to be comma separated."
-msgstr ""
+msgstr "各サブパターンはカンマで区切る必要があります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:959
 msgid ""
 "If you don't specify a value, then only the existence of the key is checked."
-msgstr ""
+msgstr "値を指定しないと、キーの存在のみがチェックされます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:961
 msgid "A value pattern is separated from the key pattern with a ``:`` ::"
-msgstr ""
+msgstr "値パターンは、キーパターンとは ``:`` で区別されます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:984
 msgid "Multipatterns:"
-msgstr ""
+msgstr "組み合わせパターン:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:976
 msgid ""
 "You can also specify multiple patterns separated by a comma. These patterns "
 "aren't allowed to have any bindings in them. ::"
 msgstr ""
+"複数のパターンをカンマで区切って指定することもできます。 これらのパターンに"
+"は、バインディングを含めることはできません:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:987
 msgid "Classes"
@@ -11330,6 +11629,10 @@ msgid ""
 "reference them using the file's path, using either a relative or an absolute "
 "path. For example, if you name a script file ``character.gd``"
 msgstr ""
+"デフォルトでは、すべてのスクリプトファイルは名前のないクラスです。この場合、"
+"相対パスまたは絶対パスを使用して、ファイルのパスを使用してのみそれらを参照で"
+"きます。 たとえば、スクリプトファイルに ``character.gd`` という名前を付けたと"
+"します"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1004
 msgid ""
@@ -11338,10 +11641,14 @@ msgid ""
 "optional comma followed by a path to an image, to use it as an icon. Your "
 "class will then appear with its new icon in the editor:"
 msgstr ""
+"代わりに、Godotのエディタで新しいタイプとして登録するためにクラスに名前を付け"
+"ることができます。それには、 'class_name' キーワードを使用します。 アイコンと"
+"して使用するために、オプションのコンマに続けて画像へのパスを追加できます。あ"
+"なたのクラスはエディタに新しいアイコンで表示されます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1019
 msgid "Here's a class file example:"
-msgstr ""
+msgstr "クラスファイルの例を次に示します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1038
 msgid ""
@@ -11352,46 +11659,55 @@ msgid ""
 "of thread safety, since scripts can be initialized in separate threads "
 "without the user knowing."
 msgstr ""
+"Godotのクラス構文はコンパクトで、メンバー変数または関数のみを含むことができま"
+"す。静的関数は使用できますが、静的メンバー変数は使用できません。同様に、イン"
+"スタンスを作成するたびに変数が初期化されますが、これには配列とディクショナリ"
+"が含まれます。スクリプトはユーザーが知らなくても別のスレッドで初期化できるた"
+"め、これはスレッド・セーフの精神に基づいています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1046
 msgid "Inheritance"
-msgstr ""
+msgstr "継承"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1048
 msgid "A class (stored as a file) can inherit from"
-msgstr ""
+msgstr "クラス（ファイルとして格納されている）は以下から継承することができます"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1050
 msgid "A global class"
-msgstr ""
+msgstr "グローバルクラス"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1051
 msgid "Another class file"
-msgstr ""
+msgstr "他のクラスファイル"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1052
 msgid "An inner class inside another class file."
-msgstr ""
+msgstr "別のクラスファイル内の内部クラス。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1054
 msgid "Multiple inheritance is not allowed."
-msgstr ""
+msgstr "多重継承はできません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1056
 msgid "Inheritance uses the ``extends`` keyword:"
-msgstr ""
+msgstr "継承は ``extends`` キーワードを使用します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1070
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used:"
 msgstr ""
+"特定のインスタンスが特定のクラスを継承するかどうかを確認するには、 ``is`` "
+"キーワードを使用します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1084
 msgid ""
 "To call a function in a *base class* (i.e. one ``extend``-ed in your current "
 "class), prepend ``.`` to the function name:"
 msgstr ""
+"基本クラス（つまり、現在のクラスで拡張されたクラス）で関数を呼び出すには、 関"
+"数名の前に ``.`` を付けます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1091
 msgid ""
@@ -11399,10 +11715,13 @@ msgid ""
 "functions with the same name in their base classes. So if you still want to "
 "call them, you can use ``.`` like the ``super`` keyword in other languages:"
 msgstr ""
+"これはクラスを拡張する関数が基本クラス内の同じ名前の関数を置き換えるため、特"
+"に便利です。それらを呼び出したいのであれば、 ``.`` を他の言語の ``super`` "
+"キーワードのように使うことができます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1101
 msgid "Class Constructor"
-msgstr ""
+msgstr "クラスコンストラクタ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1103
 msgid ""
@@ -11411,6 +11730,10 @@ msgid ""
 "automatically when inheriting a class. So there is usually no need to call "
 "``._init()`` explicitly."
 msgstr ""
+"クラスのインスタンス化時に呼び出されるクラスコンストラクタの名前は ``_init`` "
+"です。前述のように、親クラスのコンストラクタはクラスを継承するときに自動的に"
+"呼び出されます。従って、通常は ``._init()`` を明示的に呼び出す必要はありませ"
+"ん。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1107
 msgid ""
@@ -11418,14 +11741,19 @@ msgid ""
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this:"
 msgstr ""
+"``.some_func`` を使用した上記の例のように、通常の関数の呼び出しとは異なり、継"
+"承したクラスのコンストラクタが引数を取得する場合、それらは次のように渡されま"
+"す:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1115
 msgid "This is better explained through examples. Say we have this scenario:"
 msgstr ""
+"これは、例を使って説明した方がわかりやすいです。次のようなシナリオがあるとし"
+"ます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1137
 msgid "There are a few things to keep in mind here:"
-msgstr ""
+msgstr "留意すべきことがいくつかあります:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1139
 msgid ""
@@ -11434,18 +11762,24 @@ msgid ""
 "gd``) *has* to define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``"
 msgstr ""
+"継承クラス（ ``State.gd`` ）が引数をとる ``_init`` コンストラクタ（この場合"
+"は ``e`` ）を定義する場合、継承クラス（ ``Idle.gd`` ）も_initを定義し、 "
+"``State.gd`` から ``_init`` に適切なパラメータを渡す*必要*があります"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1142
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the base class "
 "``State.gd``"
 msgstr ""
+"``Idle.gd`` は、基本クラス ``State.gd`` と異なる数の引数を持つことができます"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
 msgid ""
 "in the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``"
 msgstr ""
+"上の例では、 ``State.gd`` コンストラクタに渡される ``e`` は、 ``Idle.gd`` に"
+"渡されるのと同じ ``e`` です"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1145
 msgid ""
@@ -11454,20 +11788,26 @@ msgid ""
 "Which brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables. Eg.:"
 msgstr ""
+"``Idle.gd`` の ``_init`` コンストラクタが0の引数を取る場合、何もしなくても "
+"``State.gd`` 基本クラスに値を渡す必要があります。つまり変数だけでなく、基本コ"
+"ンストラクターにもリテラルを渡すことができます。 例:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1157
 msgid "Inner classes"
-msgstr ""
+msgstr "内部クラス"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1159
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
 msgstr ""
+"クラスファイルには内部クラスを含めることができます。内部クラスは、 ``class`` "
+"キーワードを使用して定義されます。 ``ClassName.new()`` 関数を使用してインスタ"
+"ンス化されます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1179
 msgid "Classes as resources"
-msgstr ""
+msgstr "リソースとしてのクラス"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1181
 msgid ""
@@ -11477,10 +11817,15 @@ msgid ""
 "of a loaded class resource is done by calling the ``new`` function on the "
 "class object::"
 msgstr ""
+"ファイルとして保存されたクラスは :ref:`resources <class_GDScript>` として扱わ"
+"れます。他のクラスでそれらにアクセスするには、それらをディスクからロードする"
+"必要があります。 これは、 ``load`` または ``preload`` 関数を使用して行われま"
+"す（下記参照）。ロードされたクラスリソースのインスタンス化は、クラスオブジェ"
+"クトの新しい関数を呼び出すことによって行われます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1199
 msgid "Exports"
-msgstr ""
+msgstr "エクスポート"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1201
 msgid ""
@@ -11489,12 +11834,18 @@ msgid ""
 "to. They will also be available for editing in the property editor. "
 "Exporting is done by using the ``export`` keyword::"
 msgstr ""
+"クラスメンバーはエクスポートできます。つまりそれらの値は、それらが関連付けら"
+"れているリソース（ :ref:`scene <class_PackedScene>` など）と共に保存されま"
+"す。プロパティエディタで編集することもできます。エクスポートは ``export`` "
+"キーワードを使用して行われます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
 msgid ""
 "An exported variable must be initialized to a constant expression or have an "
 "export hint in the form of an argument to the export keyword (see below)."
 msgstr ""
+"エクスポートされた変数は、定数式で初期化するか、exportキーワードの引数の形式"
+"でエクスポート・ヒントを持つ必要があります(下記参照)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1213
 msgid ""
@@ -11503,16 +11854,22 @@ msgid ""
 "designers can modify values that later influence how the program runs. For "
 "this, a special export syntax is provided."
 msgstr ""
+"メンバー変数をエクスポートする基本的な利点の1つは、エディタで表示および編集で"
+"きることです。このようにして、アーティストやゲームデザイナーは後でプログラム"
+"の実行方法に影響する値を変更できます。このために特別なエクスポート構文が用意"
+"されています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1302
 msgid ""
 "It must be noted that even if the script is not being run while at the "
 "editor, the exported properties are still editable (see below for \"tool\")."
 msgstr ""
+"スクリプトがエディタで実行されていない場合でも、エクスポートされたプロパティ"
+"はまだ編集可能です（ \"tool\" については下記を参照）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1307
 msgid "Exporting bit flags"
-msgstr ""
+msgstr "ビットフラグ・エクスポート"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1309
 msgid ""
@@ -11520,12 +11877,17 @@ msgid ""
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
 "set from the editor:"
 msgstr ""
+"ビットフラグとして使用される整数は、1つのプロパティに複数の ``true``/"
+"``false`` （ブール値）値を格納できます。エクスポートヒント ``int, FLAGS`` を"
+"使用して、エディタから設定できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1318
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax:"
 msgstr ""
+"フラグを特定の数の名前付きフラグに制限することもできます。構文は列挙構文に似"
+"ています:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1326
 msgid ""
@@ -11533,16 +11895,21 @@ msgid ""
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
 "defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
+"この例では、 ``Fire`` の値は1、 ``Water`` の値は2、 ``Earth`` の値は4、 "
+"``Wind`` は値8に対応します。通常、定数はそれに応じて定義する必要があります"
+"（例： ``const ELEMENT_WIND = 8`` など）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1331
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
 msgstr ""
+"ビットフラグを使用するには、ビット単位の操作についてある程度理解する必要があ"
+"ります。疑わしい場合は、代わりにブール変数をエクスポートしてください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
 msgid "Exporting arrays"
-msgstr ""
+msgstr "配列のエクスポート"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1337
 msgid ""
@@ -11552,10 +11919,15 @@ msgid ""
 "cause them to change in all other instances. Exported arrays can have "
 "initializers, but they must be constant expressions."
 msgstr ""
+"通常の配列はすべてのクラスインスタンスに対してローカルに作成されますが、エク"
+"スポートされた配列はすべてのインスタンス間で共有されます。つまり、1つのインス"
+"タンスで編集すると、*他のすべてのインスタンスで変更されます*。エクスポートさ"
+"れた配列は初期化子を持つことができますが、それらは定数式でなければなりませ"
+"ん。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1374
 msgid "Setters/getters"
-msgstr ""
+msgstr "Setters/getters"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1376
 msgid ""
@@ -11563,12 +11935,17 @@ msgid ""
 "whatever reason. It may also be desired to encapsulate its access in some "
 "way."
 msgstr ""
+"クラスのメンバー変数がどのような理由で変更されたかを把握しておくと便利です。"
+"また、何らかの方法でそのアクセスをカプセル化することが望ましい場合もあるかも"
+"しれません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1379
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
 msgstr ""
+"このため、GDScriptには ``setget`` キーワードを使用した *setter/getter* 構文が"
+"用意されています。変数定義の直後に使用されます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1386
 msgid ""
@@ -11579,26 +11956,36 @@ msgid ""
 "``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
 "``return`` the desired value. Below is an example:"
 msgstr ""
+"``variable`` の値が*外部*ソース(つまり、クラス内のローカルでの使用によるもの"
+"ではありません)によって変更されると、必ず*setter*関数(上記の ``setterfunc`` )"
+"が呼び出されます。これは、値が変更される*前*に発生します。*setter*は、新しい"
+"値の処理方法を決定する必要があります。逆に、 ``variable`` がアクセスされる"
+"と、*getter*関数(上記の ``getterfunc`` )は目的の値を ``return`` する必要があ"
+"ります。次に例を示します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1403
 msgid "Either of the *setter* or *getter* functions can be omitted:"
-msgstr ""
+msgstr "*setter* または *getter* 関数のどちらかを省略することができます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1412
 msgid ""
 "Get/Setters are especially useful when exporting variables to editor in tool "
 "scripts or plugins, for validating input."
 msgstr ""
+"Get/Settersは、ツールスクリプトまたはプラグインのエディタに入力を検証するため"
+"に変数を書き出す場合に特に便利です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1415
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
+"前述したように、*ローカル*・アクセスはセッターとゲッターを*起動しません*。こ"
+"の例を次に示します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1430
 msgid "Tool mode"
-msgstr ""
+msgstr "ツールモード"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
 msgid ""
@@ -11608,10 +11995,14 @@ msgid ""
 "doing so). For this, the ``tool`` keyword exists and must be placed at the "
 "top of the file:"
 msgstr ""
+"スクリプトは、デフォルトではエディタ内では実行されず、エクスポートされたプロ"
+"パティのみを変更できます。場合によっては、（ゲームコードを実行しないか手動で"
+"実行しない限り）エディタ内で実行することが望ましい場合があります。これには、 "
+"``tool`` キーワードが存在し、ファイルの先頭に配置する必要があります:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1447
 msgid "Memory management"
-msgstr ""
+msgstr "メモリ管理"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1449
 msgid ""
@@ -11623,6 +12014,12 @@ msgid ""
 "cycles that can't be freed, a ``weakref`` function is provided for creating "
 "weak references."
 msgstr ""
+"クラスが :ref:`class_Reference` から継承する場合、インスタンスは使用されなく"
+"なると解放されます。ガベージコレクタは存在せず、参照カウントのみが存在しま"
+"す。デフォルトでは、継承を定義しないすべてのクラスが **Reference** を継承しま"
+"す。これが望ましくない場合は、クラスは手動で :ref:`class_Object` を継承し、"
+"instance.free() を呼び出す必要があります。解放できない参照サイクルを避けるた"
+"めに、弱い参照を作成するための ``weakref`` 関数が提供されています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1457
 msgid ""
@@ -11630,6 +12027,8 @@ msgid ""
 "``is_instance_valid(instance)`` can be used to check if an object has been "
 "freed."
 msgstr ""
+"あるいは、参照を使用しない場合は、 ``is_instance_valid(instance)`` を使用して"
+"オブジェクトが解放されたかどうかを確認できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1466
 msgid ""
@@ -11637,6 +12036,9 @@ msgid ""
 "objects can listen to in a generic way. Create custom signals for a class "
 "using the ``signal`` keyword."
 msgstr ""
+"シグナルは、他のオブジェクトが一般的な方法で受信できるオブジェクトから通知"
+"メッセージを送信する方法です。 ``signal`` キーワードを使用して、クラスのカス"
+"タムシグナルを作成します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1478
 msgid ""
@@ -11644,6 +12046,8 @@ msgid ""
 "built-in signals of nodes such as :ref:`class_Button` or :ref:"
 "`class_RigidBody`."
 msgstr ""
+":ref:`class_Button` や :ref:`class_RigidBody` などのノードの組み込み信号を接"
+"続するのと同じ方法で、これらの信号をメソッドに接続できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
 msgid ""
@@ -11651,6 +12055,9 @@ msgid ""
 "the custom signal to a method in a separate script, using the :ref:`Object."
 "connect() <class_Object_method_connect>` method:"
 msgstr ""
+"以下は1つのスクリプトでカスタム信号を作成し、そのカスタム信号を別のスクリプト"
+"で :ref:`Object.connect() <class_Object_method_connect>` メソッドを使用してメ"
+"ソッドに接続する例です:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1510
 msgid ""
@@ -11660,6 +12067,10 @@ msgid ""
 "rather than the signal or the method, meaning that each connection has "
 "unique bindings."
 msgstr ""
+"GDScriptは、シグナルとメソッド間の接続に引数をバインドすることができます。シ"
+"グナルが発生し、接続メソッドが呼び出されると、バインドされた引数がメソッドに"
+"与えられます。これらのバインドされた引数は、シグナルやメソッドではなく接続に"
+"固有のもので、各接続には一意のバインドがあります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1516
 msgid ""
@@ -11667,6 +12078,9 @@ msgid ""
 "signal and a method, binding the button instance to the connection. The "
 "handler uses the bound argument to print which button instance was pressed."
 msgstr ""
+"ボタンの ``pressed`` シグナルとメソッド間の接続を作成し、ボタン・インスタンス"
+"を接続にバインドする例を次に示します。ハンドラは、バインドされた引数を使用し"
+"て、押されたボタン・インスタンスを出力します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1531
 msgid ""
@@ -11674,15 +12088,17 @@ msgid ""
 "<class_Object_method_emit_signal>` method which broadcasts the signal and "
 "arguments."
 msgstr ""
+"シグナルは、シグナルと引数をブロードキャストする :ref:`Object.emit_signal() "
+"<class_Object_method_emit_signal>` メソッドによって生成されます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
 msgid ""
 "Extending a previous example to use all the features of GDScript signals:"
-msgstr ""
+msgstr "GDScriptシグナルのすべての機能を使用するために前の例を拡張します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1566
 msgid "Coroutines with yield"
-msgstr ""
+msgstr "コルーチン(yield関数による)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1568
 msgid ""
@@ -11693,20 +12109,26 @@ msgid ""
 "resulting object will continue execution and return whatever the function "
 "returns. Once resumed, the state object becomes invalid. Here is an example:"
 msgstr ""
+"GDScriptは、 ``yield`` 組み込み関数によって `coroutines <https://en."
+"wikipedia.org/wiki/Coroutine>` をサポートしています。 ``yield()`` をコールす"
+"ると、同じ関数の現在のfrozen状態を戻り値として、すぐに現在の関数から戻りま"
+"す。結果として得られたオブジェクトに対して ``resume`` を呼び出すと、実行が継"
+"続され、関数が返す内容が戻されます。再開すると、状態オブジェクトは無効になり"
+"ます。次に例を示します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1590
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1614
 msgid "Will print:"
-msgstr ""
+msgstr "以下のように表示されます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
 "It is also possible to pass values between yield() and resume(), for example:"
-msgstr ""
+msgstr "次のように、yield()とresume()の間に値を渡すこともできます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1623
 msgid "Coroutines & signals"
-msgstr ""
+msgstr "コルーチンとシグナル"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1625
 msgid ""
@@ -11714,21 +12136,26 @@ msgid ""
 "``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples:"
 msgstr ""
+"``yield`` を使うことの本当の強みはシグナルと組み合わせることです。 ``yield`` "
+"は、オブジェクトとシグナルの2つの引数を受け付けることができます。シグナルを受"
+"信すると、実行が再開されます。次に例を示します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1640
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example:"
 msgstr ""
+"コルーチン自体は、次のように無効な状態に遷移するときに ``completed`` シグナル"
+"を使用します。例:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1653
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
-msgstr ""
+msgstr "``my_func`` は、両方のボタンを押した後でのみ実行を継続します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1656
 msgid "Onready keyword"
-msgstr ""
+msgstr "Onreadyキーワード"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1658
 msgid ""
@@ -11737,6 +12164,9 @@ msgid ""
 "entering the active scene tree, the sub-nodes can only be obtained when a "
 "call to Node._ready() is made."
 msgstr ""
+"ノードを使用する場合、シーンの一部への参照した値を変数に保持することが一般的"
+"です。シーンはアクティブなシーンツリーに入ったときにのみ設定されるので、サブ"
+"ノードは Node._ready() への呼び出しが行われた時にのみ取得できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1670
 msgid ""
@@ -11745,20 +12175,26 @@ msgid ""
 "defers initialization of a member variable until _ready is called. It can "
 "replace the above code with a single line:"
 msgstr ""
+"これは特にノードと外部参照が重なっている場合には少し面倒になります。このため"
+"に、GDScriptには ``onready`` キーワードがあります。これは_readyが呼び出される"
+"までメンバー変数の初期化を遅らせるものです。 上記のコードを単一行に置き換える"
+"ことができます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1680
 msgid "Assert keyword"
-msgstr ""
+msgstr "Assertキーワード"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1682
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds."
 msgstr ""
+"``assert`` キーワードを使用すると、デバッグビルドの条件をチェックできます。デ"
+"バッグ以外のビルドではこれらのアサーションは無視されます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:4
 msgid "GDScript: An introduction to dynamic languages"
-msgstr ""
+msgstr "GDScript: 動的言語の紹介"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:9
 msgid ""
@@ -11766,66 +12202,72 @@ msgid ""
 "efficiently. It focuses on common cases specific to the language, but also "
 "covers a lot of information on dynamically typed languages."
 msgstr ""
+"このチュートリアルでは、GDScriptをより効率的に使用する方法を簡単に紹介しま"
+"す。この言語固有の一般的なケースに焦点を当てていますが、動的型付け言語に関す"
+"る多くの情報も扱っています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:13
 msgid ""
 "It's meant to be especially useful for programmers with little or no "
 "previous experience with dynamically typed languages."
 msgstr ""
+"これは、動的型付け言語に関する経験がほとんどないかまったくないプログラマに特"
+"に有用であることを意味します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:17
 msgid "Dynamic nature"
-msgstr ""
+msgstr "動的性質"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:20
 msgid "Pros & cons of dynamic typing"
-msgstr ""
+msgstr "動的型付けの長所と短所"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:22
 msgid ""
 "GDScript is a Dynamically Typed language. As such, its main advantages are "
 "that:"
-msgstr ""
+msgstr "GDScriptは動的型付け言語です。その主な利点は以下のとおりです:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:25
 msgid "The language is simple and easy to learn."
-msgstr ""
+msgstr "言語はシンプルで習得が容易です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:26
 msgid "Most code can be written and changed quickly and without hassle."
-msgstr ""
+msgstr "ほとんどのコードは、手間をかけずに素早く作成および変更できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:27
 msgid "Less code written means less errors & mistakes to fix."
 msgstr ""
+"書かれたコードが少なければ少ないほど、エラーや修正の誤りが少なくなります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:28
 msgid "Easier to read the code (less clutter)."
-msgstr ""
+msgstr "コードがより読みやすいです（混乱が少なくなります）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:29
 msgid "No compilation is required to test."
-msgstr ""
+msgstr "動作テスト時にコンパイルは必要ありません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:30
 msgid "Runtime is tiny."
-msgstr ""
+msgstr "ランタイムは小さいです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:31
 msgid "Duck-typing and polymorphism by nature."
-msgstr ""
+msgstr "ダック・タイピングとその性質による多型。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:33
 msgid "While the main disadvantages are:"
-msgstr ""
+msgstr "主な欠点は次のとおりです:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:35
 msgid "Less performance than statically typed languages."
-msgstr ""
+msgstr "静的型付き言語よりもパフォーマンスが劣ります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:36
 msgid "More difficult to refactor (symbols can't be traced)"
-msgstr ""
+msgstr "リファクタリングするのがより難しい（シンボルは辿ることができない）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:37
 msgid ""
@@ -11833,12 +12275,14 @@ msgid ""
 "typed languages only appear while running the code (because expression "
 "parsing is more strict)."
 msgstr ""
+"静的型付け言語のコンパイル時に通常検出されるエラーの中には、コードの実行中に"
+"のみ発生するものがあります（式の構文解析がより厳密なため）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:40
 msgid ""
 "Less flexibility for code-completion (some variable types are only known at "
 "run-time)."
-msgstr ""
+msgstr "コード補完の柔軟性が低い（一部の変数型は実行時にのみ認識されます）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
 msgid ""
@@ -11850,10 +12294,15 @@ msgid ""
 "most of the game in GDScript and add small bits of C++ in the areas that "
 "need a performance boost."
 msgstr ""
+"これは、実際には、Godot + GDScriptはゲームを迅速かつ効率的に作成するために設"
+"計された組み合わせです。非常に計算集約的で、エンジンの組み込みツール（ベクト"
+"ル型、Physics Engine、Mathライブラリなど）の恩恵を受けることができないゲーム"
+"には、C ++を使用する場合もあります。GDScriptでゲームの大部分を作成し、パ"
+"フォーマンスの向上が必要な部分にC++の一部を追加することができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
-msgstr ""
+msgstr "変数及び割り当て"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:54
 msgid ""
@@ -11861,30 +12310,34 @@ msgid ""
 "means that their type is not fixed, and is only modified through assignment. "
 "Example:"
 msgstr ""
+"動的に型付けされた言語の変数はすべて「Variant型」のようなものです。つまり、タ"
+"イプは固定されず、割り当てによってのみ変更されます。例:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:58
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:80
 msgid "Static:"
-msgstr ""
+msgstr "静的:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:66
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:94
 msgid "Dynamic:"
-msgstr ""
+msgstr "動的:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:75
 msgid "As function arguments:"
-msgstr ""
+msgstr "関数の引数として:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:77
 msgid ""
 "Functions are of dynamic nature too, which means they can be called with "
 "different arguments, for example:"
 msgstr ""
+"関数も動的な性質を持っているため、次のように異なる引数で呼び出すことができま"
+"す。例えば:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:107
 msgid "Pointers & referencing:"
-msgstr ""
+msgstr "ポインタと参照:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:109
 msgid ""
@@ -11893,6 +12346,9 @@ msgid ""
 "variable. The latter allows the object to be modified by other functions by "
 "passing a reference to the original one."
 msgstr ""
+"CやC++(そしてある程度はJavaとC#)などの静的言語では、変数と、変数へのポインタ"
+"または参照とは区別されます。後者では、元のオブジェクトへの参照を渡すことで、"
+"他の関数によってオブジェクトを変更できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:114
 msgid ""
@@ -11901,18 +12357,22 @@ msgid ""
 "automatically, which means they are erased when no longer used. Dynamically "
 "typed languages tend to use this memory model, too. Some Examples:"
 msgstr ""
+"C#やJavaでは、組み込み型(int、float、場合によってはString)でないものはすべて"
+"常にポインタまたは参照です。参照も自動的にガベージコレクションされるため、使"
+"用されなくなると削除されます。動的型付け言語もこのメモリー・モデルを使用する"
+"傾向があります。例:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:120
 msgid "C++:"
-msgstr ""
+msgstr "C++:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:136
 msgid "Java:"
-msgstr ""
+msgstr "Java:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:154
 msgid "GDScript:"
-msgstr ""
+msgstr "GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:166
 msgid ""
@@ -11923,6 +12383,12 @@ msgid ""
 "not used, but manual memory management is allowed too if inheriting manually "
 "from :ref:`class_Object`."
 msgstr ""
+"GDScriptでは、基本型（int、float、string、およびベクトル型）のみが値によって"
+"関数に渡されます（値はコピーされます）。それ以外のもの（インスタンス、配列、"
+"辞書など）は参照として渡されます。 :ref:`class_Reference` を継承していないク"
+"ラス（何も指定されていない場合のデフォルト）は、使用されていないときは解放さ"
+"れますが、 :ref:`class_Object` から手動で継承している場合は手動のメモリ管理も"
+"可能です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:174
 #: ../../docs/tutorials/content/procedural_geometry.rst:88
@@ -11935,24 +12401,29 @@ msgid ""
 "datatypes inside and are always dynamic (can be resized at any time). "
 "Compare for example arrays in statically typed languages:"
 msgstr ""
+"動的型付け言語の配列は、内部に多くの異なるデータ型を混在させることができ、常"
+"に動的です(いつでもサイズ変更可能)。たとえば、静的型付け言語の配列を比較しま"
+"す:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:203
 msgid "And in GDScript:"
-msgstr ""
+msgstr "GDScriptでは:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:212
 msgid ""
 "In dynamically typed languages, arrays can also double as other datatypes, "
 "such as lists:"
 msgstr ""
+"動的型付け言語では、配列はリストなどの他のデータ型のように二重になることもあ"
+"ります:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:222
 msgid "Or unordered sets:"
-msgstr ""
+msgstr "または順序なしセット:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:231
 msgid "Dictionaries"
-msgstr ""
+msgstr "辞書"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
 msgid ""
@@ -11962,6 +12433,10 @@ msgid ""
 "This datatype is generally not present in such languages (or only in limited "
 "form)."
 msgstr ""
+"辞書は動的型付け言語における強力なツールです。静的型付け言語(C++やC#など)出身"
+"のプログラマーの多くは、その存在を無視し、不必要に彼らの生活を困難にしていま"
+"す。このデータ型は通常、そのような言語には存在しないか限定された形でのみ存在"
+"しています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:239
 msgid ""
@@ -11971,22 +12446,28 @@ msgid ""
 "are, in fact, so efficient that some languages will go as far as "
 "implementing arrays as dictionaries."
 msgstr ""
+"辞書は、キーまたは値として使用されるデータ型を完全に無視して、任意の値を他の"
+"任意の値にマップできます。一般に信じられていることとは異なり、ハッシュテーブ"
+"ルを使用して実装できるため効率的です。実際、これらは非常に効率的なため、一部"
+"の言語では辞書として配列を実装することもあります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:245
 msgid "Example of Dictionary:"
-msgstr ""
+msgstr "辞書の例:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:252
 msgid ""
 "Dictionaries are also dynamic, keys can be added or removed at any point at "
 "little cost:"
-msgstr ""
+msgstr "辞書も動的で、キーの追加や削除はいつでも低コストで行えます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:261
 msgid ""
 "In most cases, two-dimensional arrays can often be implemented more easily "
 "with dictionaries. Here's a simple battleship game example:"
 msgstr ""
+"ほとんどの場合、辞書を使用すると2次元配列をより簡単に実装できます。以下は簡単"
+"な戦艦ゲームの例です:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
 msgid ""
@@ -11995,48 +12476,53 @@ msgid ""
 "style syntax and indexing, which makes it useful for writing initial states "
 "and quick structs:"
 msgstr ""
+"辞書は、データマークアップまたはクイック構造としても使用できます。 GDScriptの"
+"辞書はPythonの辞書に似ていますが、Luaスタイルの構文と索引付けもサポートしてい"
+"るので、初期状態や素早い構造体を書くのに役立ちます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:318
 msgid "For & while"
-msgstr ""
+msgstr "For & while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:320
 msgid "Iterating in some statically typed languages can be quite complex:"
-msgstr ""
+msgstr "静的型付け言語の中には、反復処理が非常に複雑なものがあります:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:341
 msgid "This is usually greatly simplified in dynamically typed languages:"
-msgstr ""
+msgstr "これは通常、動的型付け言語では非常に単純化されています:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:348
 msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
 "allow iterating the keys:"
 msgstr ""
+"コンテナのデータ型（配列と辞書）は反復可能です。 辞書ではキーを繰り返すことが"
+"できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:356
 msgid "Iterating with indices is also possible:"
-msgstr ""
+msgstr "インデックスによる反復も可能です:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:363
 msgid "The range() function can take 3 arguments:"
-msgstr ""
+msgstr "range()関数は3つの引数を取ることができます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:371
 msgid "Some statically typed programming language examples:"
-msgstr ""
+msgstr "静的型付けされたプログラミング言語の例:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:381
 msgid "Translate to:"
-msgstr ""
+msgstr "動的型付け言語では:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:394
 msgid "And backwards looping is done through a negative counter:"
-msgstr ""
+msgstr "逆方向ループは負のカウンタで行われます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:400
 msgid "Becomes:"
-msgstr ""
+msgstr "動的型付け言語では:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:408
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
@@ -12045,11 +12531,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
-msgstr ""
+msgstr "while（）ループはどこでも同じです:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:421
 msgid "Custom iterators"
-msgstr ""
+msgstr "カスタム・イテレータ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:422
 msgid ""
@@ -12058,20 +12544,27 @@ msgid ""
 "and ``_iter_get`` functions in your script. An example implementation of a "
 "forward iterator follows:"
 msgstr ""
+"デフォルトのイテレータがニーズに合わない場合は、スクリプト内のVariantクラス"
+"の ``_iter_init`` 、 ``_iter_next`` 、および ``_iter_get`` 関数をオーバーライ"
+"ドして、カスタムイテレータを作成できます。転送イテレータの実装例を次に示しま"
+"す:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:454
 msgid "And it can be used like any other iterator:"
-msgstr ""
+msgstr "これらは他のイテレータと同様に使用できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:462
 msgid ""
 "Make sure to reset the state of the iterator in ``_iter_init``, otherwise "
 "nested for-loops that use custom iterators will not work as expected."
 msgstr ""
+"``_iter_init`` のイテレータの状態を必ずリセットしてください。リセットしない"
+"と、カスタムイテレータを使用するネストされたforループが期待どおりに動作しませ"
+"ん。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:466
 msgid "Duck typing"
-msgstr ""
+msgstr "ダック・タイピング"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:468
 msgid ""
@@ -12080,6 +12573,9 @@ msgid ""
 "code design much simpler and straightforward to write, but it's not obvious "
 "how it works."
 msgstr ""
+"静的型付け言語から動的型付け言語に移行する際に理解するのが最も難しい概念の1つ"
+"は、ダック・タイピングです。ダック・タイピングを使用すると、コード全体の設計"
+"がはるかに簡単かつ簡単になりますが、その仕組みが明確ではありません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:473
 msgid ""
@@ -12087,6 +12583,8 @@ msgid ""
 "tunnel, smashing everything on its way. The code for the rock, in a "
 "statically typed language would be something like:"
 msgstr ""
+"例として、大きな岩がトンネルを流れ落ちて、途中ですべてを壊している状況を想像"
+"してください。静的に型付けされた言語でのロックのコードは、次のようになります:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:484
 msgid ""
@@ -12098,6 +12596,12 @@ msgid ""
 "very elegant to add a virtual method ``smash()`` to Entity only if a few of "
 "them can be smashed."
 msgstr ""
+"このように、岩石によって破壊されることができるすべてはSmashableを継承しなけれ"
+"ばならないでしょう。キャラクター、敵、家具、小さな岩がすべて粉砕可能であれ"
+"ば、それらはSmashableクラスから継承する必要があり、おそらく複数の継承が必要に"
+"なります。 多重継承が望ましくない場合は、Entityのような共通クラスを継承する必"
+"要があります。それでも、仮想メソッド ``smash()`` をEntityに追加するのは、それ"
+"らのうちのいくつかを粉砕できる場合に限り、それほどエレガントではありません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:492
 msgid ""
@@ -12105,6 +12609,9 @@ msgid ""
 "sure you only have to define a ``smash()`` function where required and "
 "that's it. No need to consider inheritance, base classes, etc."
 msgstr ""
+"動的型付け言語ではこれは問題になりません。ダック・タイピングでは、必要に応じ"
+"て ``smash()`` 関数を定義するだけで済みます。継承、基本クラスなどを考慮する必"
+"要はありません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:501
 msgid ""
@@ -12114,25 +12621,33 @@ msgid ""
 "not what it inherits or the class type. The definition of Duck Typing should "
 "make this clearer:"
 msgstr ""
+"以上です。 大きな岩に当たったオブジェクトがsmash()メソッドを持っていれば、そ"
+"れが呼ばれます。継承や多型は必要ありません。動的に型付けされた言語は、それが"
+"継承しているものやクラスの型ではなく、目的のメソッドやメンバを持つインスタン"
+"スだけを扱います。ダック・タイピングの定義はこれをより明確にするはずです:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:507
 msgid ""
 "*\"When I see a bird that walks like a duck and swims like a duck and quacks "
 "like a duck, I call that bird a duck\"*"
 msgstr ""
+"*「アヒルのように歩きアヒルのように泳ぎアヒルのように鳴く鳥を見たら、私はその"
+"鳥をアヒルと呼びます」*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:510
 msgid "In this case, it translates to:"
-msgstr ""
+msgstr "この場合は、次のように変換されます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:512
 msgid ""
 "*\"If the object can be smashed, don't care what it is, just smash it.\"*"
 msgstr ""
+"*「オブジェクトが壊れる可能性がある場合は、それが何であるかは気にしないで、単"
+"にそれを壊してください。」*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:514
 msgid "Yes, we should call it Hulk typing instead."
-msgstr ""
+msgstr "はい、代わりにHulkタイピングと呼ぶべきですね。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
 msgid ""
@@ -12141,15 +12656,21 @@ msgid ""
 "exist (like Objective C), but GDScript is stricter, so checking if the "
 "function exists is desirable:"
 msgstr ""
+"ヒットしたオブジェクトがsmash()関数を持たない可能性があります。動的に型付けさ"
+"れた言語の中には(Objective Cのように)存在しないメソッドの呼び出しを単に無視す"
+"るものがありますが、GDScriptはより厳密なので、関数が存在するかどうかをチェッ"
+"クするのが望ましいです:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:527
 msgid ""
 "Then, simply define that method and anything the rock touches can be smashed."
 msgstr ""
+"そして、その方法を単純に定義すれば、岩に触れるものは何でも砕くことができま"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:4
 msgid "GDScript style guide"
-msgstr ""
+msgstr "GDScriptスタイル・ガイド"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:9
 msgid ""
@@ -12158,38 +12679,47 @@ msgid ""
 "projects, discussions, and tutorials. Hopefully, this will also encourage "
 "development of auto-formatting tools."
 msgstr ""
+"このスタイル・ガイドには、エレガントなGDScriptを作成するための規則が記載され"
+"ています。目標は、クリーンで読みやすいコードの作成を奨励し、プロジェクト、"
+"ディスカッション、およびチュートリアル間の一貫性を促進することです。うまくい"
+"けば、これも自動フォーマットツールの開発を促進するでしょう。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:14
 msgid ""
 "Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming styleguide."
 msgstr ""
+"GDScriptはPythonに近いので、このガイドはPythonの `PEP 8 <https://www.python."
+"org/dev/peps/pep-0008/>` プログラミングスタイルガイドに触発されています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:18
 msgid ""
 "Godot's built-in script editor uses a lot of these conventions by default. "
 "Let it help you."
 msgstr ""
+"Godotのビルトインスクリプトエディタは、デフォルトでこれらの規則を多く使用しま"
+"す。それをあなたの役に立つようにしてください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:22
 msgid "Code structure"
-msgstr ""
+msgstr "コードの構造"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:25
 msgid "Indentation"
-msgstr ""
+msgstr "インデント"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:27
 msgid "Indent type: Tabs *(editor default)*"
-msgstr ""
+msgstr "インデント・タイプ：Tab*(エディター既定)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:29
 msgid "Indent size: 4 *(editor default)*"
-msgstr ""
+msgstr "インデントのサイズ：4*(エディター既定)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:31
 msgid "Each indent level should be one greater than the block containing it."
 msgstr ""
+"各インデントレベルは、それを含むブロックより1つ大きくなければなりません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:33
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:53
@@ -12198,7 +12728,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:140
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:222
 msgid "**Good**:"
-msgstr ""
+msgstr "**良い例**："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:40
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
@@ -12207,17 +12737,19 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:150
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:230
 msgid "**Bad**:"
-msgstr ""
+msgstr "**悪い例**："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:50
 msgid ""
 "Use 2 indent levels to distinguish continuation lines from regular code "
 "blocks."
 msgstr ""
+"継続行と通常のコードブロックを区別するには、2つのインデントレベルを使用しま"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:70
 msgid "Blank lines"
-msgstr ""
+msgstr "空白行"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:72
 msgid "Surround functions and class definitions with two blank lines:"
@@ -12225,88 +12757,101 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:87
 msgid "Use one blank line inside functions to separate logical sections."
-msgstr ""
+msgstr "論理セクションを区切るには、関数内で1行の空白行を使用します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:90
 msgid "One statement per line"
-msgstr ""
+msgstr "1行につき1つのステートメント"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:92
 msgid ""
 "Never combine multiple statements on a single line. No, C programmers, not "
 "with a single line conditional statement (except with the ternary operator)!"
 msgstr ""
+"複数のステートメントを1行にまとめないでください。いいえ、Cプログラマは、単一"
+"行の条件文(3項演算子を除く)ではありません！"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:115
 msgid "Avoid unnecessary parentheses"
-msgstr ""
+msgstr "不要なかっこ()を入れない"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:117
 msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations, they only reduce readability."
 msgstr ""
+"式や条件文に括弧を付けないでください。 操作の順序に必要な場合を除き、可読性が"
+"低下するだけです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:135
 msgid "Whitespace"
-msgstr ""
+msgstr "スペース"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
 msgid ""
 "Always use one space around operators and after commas. Avoid extra spaces "
 "in dictionary references and function calls, or to create \"columns.\""
 msgstr ""
+"演算子の前後およびコンマの後には常に1つのスペースを使用してください。辞書参照"
+"や関数呼び出しに余分なスペースを入れないようにするか、 列 を作成します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:160
 msgid "**NEVER**:"
-msgstr ""
+msgstr "**最も悪い例**："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:169
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:194
 msgid "Naming conventions"
-msgstr ""
+msgstr "命名規則"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:171
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, which is ugly."
 msgstr ""
+"これらの命名規則は、Godot Engineスタイルに従います。これらを破ると、コードは"
+"組み込みの命名規則と衝突することになりますが、これは醜いことです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
 msgid "Classes and nodes"
-msgstr ""
+msgstr "クラスとノード"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
 msgid "Use PascalCase: ``extends KinematicBody``"
-msgstr ""
+msgstr "PascalCaseを使用: ``extends KinematicBody``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:180
 msgid "Also when loading a class into a constant or variable:"
-msgstr ""
+msgstr "クラスを定数または変数にロードする場合も、次のようになります:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:187
 msgid "Functions and variables"
-msgstr ""
+msgstr "関数と変数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:189
 msgid "Use snake\\_case: ``get_node()``"
-msgstr ""
+msgstr "snake\\_caseを使用: ``get_node()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:191
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods (functions the user "
 "must override), private functions, and private variables: ``func _ready()``"
 msgstr ""
+"仮想メソッド(ユーザーがオーバーライドする必要がある関数)、プライベート関数、"
+"およびプライベート変数の後に単一のアンダースコア (\\_) を追加します: ``func "
+"_ready()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:198
 msgid "Use past tense:"
-msgstr ""
+msgstr "過去形を使用:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:208
 msgid ""
 "Use CONSTANT\\_CASE, all caps, with an underscore (\\_) to separate words: "
 "``const MAX_SPEED = 200``"
 msgstr ""
+"定数には大文字を使用します。単語の区切りにはアンダースコア(\\_)を使用します: "
+"``const MAX_SPEED = 200``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:212
 msgid "Static typing"
@@ -12341,41 +12886,41 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:4
 msgid "Static typing in GDScript"
-msgstr ""
+msgstr "静的型付けGDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:6
 #: ../../docs/tutorials/physics/physics_introduction.rst:16
 msgid "In this guide, you will learn:"
-msgstr ""
+msgstr "このガイドでは、次の内容について学習します:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:8
 msgid "**How to use types in GDScript**"
-msgstr ""
+msgstr "**GDScriptで型を使用する方法**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:9
 msgid "That **static types can help you avoid bugs**"
-msgstr ""
+msgstr "静的型は**バグの回避に役立つ**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:11
 msgid ""
 "Where and how you use this new language feature is entirely up to you: you "
 "can use it only in some sensitive GDScript files, use it everywhere, or "
 "write code like you always did!"
-msgstr ""
+msgstr "この新しい言語機能をどこで、どのように使うかは完全にあなた次第です！"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:15
 msgid ""
 "Static types can be used on variables, constants, functions, parameters, and "
 "return types."
-msgstr ""
+msgstr "静的型は、変数、定数、関数、パラメータ、戻り値の型に使用できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:20
 msgid "Typed GDScript is available since Godot 3.1."
-msgstr ""
+msgstr "型付きGDScriptはGodot 3.1から使用できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:23
 msgid "A brief look at static typing"
-msgstr ""
+msgstr "静的型付けの概要"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
 msgid ""
@@ -12383,6 +12928,9 @@ msgid ""
 "gives you and your teammates more information as you’re working, as the "
 "arguments’ types show up when you call a method."
 msgstr ""
+"型付きのGDScriptを使うことで、Godotはコードを書く際にさらに多くのエラーを検出"
+"することができます。メソッドを呼び出すと引数の型が表示されるため、作業中に詳"
+"細な情報が得られます。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
 msgid ""
@@ -12391,6 +12939,10 @@ msgid ""
 "with your code should always pass an ``Item`` to the ``Inventory.add`` "
 "method. With types, you can enforce this:"
 msgstr ""
+"あなたが在庫管理システムをプログラミングしていると想像してください。 "
+"``Item`` ノード、次に ``Inventory`` をコーディングします。アイテムをインベン"
+"トリに追加するには、コードを操作する人々は常に ``Item`` を ``Inventory.add`` "
+"メソッドに渡す必要があります。型を設定すれば、これを強制できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:48
 msgid ""
@@ -12400,6 +12952,10 @@ msgid ""
 "issues at runtime, but lets you decide whether or not you want to leave the "
 "code as it is. More on that in a moment."
 msgstr ""
+"型付きGDScriptのもう1つの重要な利点は、新しい**警告システム**です。バージョン"
+"3.1以降のGodotではコードを記述する際に警告が表示されます:実行時に問題を引き起"
+"こす可能性のあるコードのセクションが識別されますが、コードをそのままにしてお"
+"くかどうかを決めることができます。これについては後で説明します。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:54
 msgid ""
@@ -12407,12 +12963,17 @@ msgid ""
 "see the difference between a dynamic and a static typed completion options "
 "for a class called ``PlayerController``."
 msgstr ""
+"静的型を使用すると、コード補完オプションも改善されます。以下に、 "
+"``PlayerController`` というクラスの動的型補完オプションと静的型補完オプション"
+"の違いを示します。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:58
 msgid ""
 "You’ve probably stored a node in a variable before, and typed a dot to be "
 "left with no autocomplete suggestions:"
 msgstr ""
+"あなたはおそらく以前に変数にノードを格納していて、オートコンプリートの提案な"
+"しで残されるようにドットをタイプしました："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:64
 msgid ""
@@ -12420,12 +12981,18 @@ msgid ""
 "you’re passing to the function. If you write the type explicitly however, "
 "you will get all public methods and variables from the node:"
 msgstr ""
+"これは動的コードによるものです。Godotは、関数に渡されているノードまたは値のタ"
+"イプを認識できません。ただし型を明示的に記述すると、すべてのpublicメソッドと"
+"変数がノードから取得されます:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:71
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
 "Time compilation and other compiler improvements are already on the roadmap!"
 msgstr ""
+"将来的には、型付きGDScriptによってコードのパフォーマンスも向上します。ジャス"
+"トインタイムコンパイルやその他のコンパイラの改善はすでにロードマップに盛り込"
+"まれています！"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:75
 msgid ""
@@ -12437,10 +13004,16 @@ msgid ""
 "clearer and the more structured the code, the faster it is to understand, "
 "the faster you can move forward."
 msgstr ""
+"全体として、型付きプログラミングはあなたにもっと構造化された経験を与えます。"
+"それはエラーを防ぎ、あなたのスクリプトの自己文書化の側面を改善するのを助けま"
+"す。これはチームや長期的なプロジェクトで作業している場合に特に役立ちます。開"
+"発者が他の人のコードや過去に書いたスクリプトを読んで忘れていたことがほとんど"
+"の時間を費やしていることが調査によってわかっています。コードがより明確でより"
+"構造化されているほど、理解するのが早くなるほど、早く進むことができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:84
 msgid "How to use static typing"
-msgstr ""
+msgstr "静的型付けの使用方法"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:86
 msgid ""
@@ -12448,24 +13021,29 @@ msgid ""
 "variable’s name, followed by its type. E.g. ``var health: int``. This forces "
 "the variable's type to always stay the same:"
 msgstr ""
+"変数または定数の型を定義するには、変数の名前の後にコロンを書き、その後に指定"
+"する型を書きます。例: ``var health: int`` これにより、変数の型は常に保持され"
+"ます:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:95
 msgid ""
 "Godot will try to infer types if you write a colon, but you omit the type:"
-msgstr ""
+msgstr "コロンを書くと、Godotは型を推測しようとしますが、型を省略します:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:104
 msgid "Currently you can use three types of… types:"
-msgstr ""
+msgstr "現在、3種類の…タイプを使用できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:106
 msgid ":ref:`Built-in <doc_gdscript_builtin_types>`"
-msgstr ""
+msgstr ":ref:`ビルトイン <doc_gdscript_builtin_types>`"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:107
 msgid ""
 "Core classes and nodes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)"
 msgstr ""
+"コアクラスとノード ( ``Object`` 、 ``Node`` 、 ``Area2D`` 、 ``Camera2D`` な"
+"ど)"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:109
 msgid ""
@@ -12473,6 +13051,9 @@ msgid ""
 "<doc_scripting_continued_class_name>` feature to register types in the "
 "editor."
 msgstr ""
+"独自のカスタムクラス。新しい :ref:`class_name "
+"<doc_scripting_continued_class_name>` 機能を調べて、型をエディタに登録しま"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:114
 msgid ""
@@ -12480,10 +13061,13 @@ msgid ""
 "automatically from the assigned value. But you can still do so to make the "
 "intent of your code clearer."
 msgstr ""
+"Godotは割り当てられた値から自動的に型を設定するので、定数の型ヒントを書く必要"
+"はありません。ただしコードの意図をより明確にするために、これを行うこともでき"
+"ます。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:117
 msgid "Custom variable types"
-msgstr ""
+msgstr "カスタム変数型"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:119
 msgid ""
@@ -12491,12 +13075,17 @@ msgid ""
 "two ways to use them in scripts. The first method is to preload the script "
 "you want to use as a type in a constant:"
 msgstr ""
+"カスタムクラスを含む任意のクラスを型として使用できます。スクリプトで使用する"
+"方法は2つあります。最初の方法は、定数の型として使用するスクリプトをプリロード"
+"することです:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:128
 msgid ""
 "The second method is to use the ``class_name`` keyword when you create. For "
 "the example above, your Rifle.gd would look like this:"
 msgstr ""
+"2番目の方法は、作成時に ``class_name`` キーワードを使用することです。上記の例"
+"では、Rifle.gdは次のようになります:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:136
 msgid ""
@@ -12504,6 +13093,8 @@ msgid ""
 "editor, and you can use it anywhere, without having to preload it into a "
 "constant:"
 msgstr ""
+"``class_name`` を使用する場合、GodotはRifle型をグローバルにエディタに登録しま"
+"す。定数にプリロードすることなく、どこでも使用できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:145
 #, fuzzy
@@ -12515,6 +13106,8 @@ msgid ""
 "Type casting is a key concept in typed languages. Casting is the conversion "
 "of a value from one type to another."
 msgstr ""
+"型キャストは型付き言語の重要な概念です。キャストは、ある型から別の型への値の"
+"変換です。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:150
 msgid ""
@@ -12525,6 +13118,12 @@ msgid ""
 "a generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
 "``_on_body_entered`` callback."
 msgstr ""
+"``extends Area2D``であなたのゲームに敵がいると仮定してください。あなたはそれ"
+"を ``PlayerController`` と呼ばれるスクリプトが付いている ``KinematicBody2D`` "
+"と衝突させたいのです。衝突を検出するには ``on_body_entered`` シグナルを使用し"
+"ます。型付きコードでは、 ``_on_body_entered`` コールバックでは、検出したボ"
+"ディは一般的な ``PhysicsBody2D`` になり、 ``PlayerController`` にはなりませ"
+"ん。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:157
 msgid ""
@@ -12533,6 +13132,9 @@ msgid ""
 "use this type. This forces the variable to stick to the ``PlayerController`` "
 "type:"
 msgstr ""
+"この ``PhysicsBody2D`` がプレーヤーであるかどうかを確認するには、 ``as`` キャ"
+"ストキーワードを使用し、再度コロン ``:`` を使用して変数にこの型を使用させま"
+"す。これにより、変数は ``PlayerController`` タイプに固定されます:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:170
 msgid ""
@@ -12541,16 +13143,21 @@ msgid ""
 "can use this to check if the body is the player or not. We will also get "
 "full autocompletion on the player variable thanks to that cast."
 msgstr ""
+"ここではカスタム・タイプを扱っているため、 ``body`` が ``PlayerController`` "
+"を拡張しない場合、 ``player`` 変数は ``null`` に設定されます。これを使って、"
+"体がプレイヤーかどうかを確認できます。このキャストのおかげで、player変数の完"
+"全なオートコンプリートもできるようになります。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:177
 msgid ""
 "If you try to cast with a built-in type and it fails, Godot will throw an "
 "error."
 msgstr ""
+"組み込み型でキャストしようとして失敗すると、Godotはエラーをスローします。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:180
 msgid "Safe lines"
-msgstr ""
+msgstr "セーフ・ライン"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
 msgid ""
@@ -12560,6 +13167,11 @@ msgid ""
 "information to know if an instruction will trigger an error or not at "
 "runtime."
 msgstr ""
+"セーフ・ラインを確保するためにキャストを使用することもできます。セーフ・ライ"
+"ンは、はGodot 3.1の新しいツールで、あいまいなコード行がセーフな型であることを"
+"教えてくれます。型指定されたコードと動的なコードを混在させることができるた"
+"め、Godotには実行時に命令がエラーを引き起こすかどうかを知るための十分な情報が"
+"ない場合があります。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:188
 msgid ""
@@ -12570,6 +13182,13 @@ msgid ""
 "classes it extends. With dynamic GDScript, you also don’t care about the "
 "node’s type as long as it has the methods you need to call."
 msgstr ""
+"これは子ノードを取得したときに起こります。たとえばタイマーを考えてみましょ"
+"う。動的コードでは、 ``$Timer`` でノードを取得できます。GDScriptは`ダック・タ"
+"イピング <https://stackoverflow.com/a/4205163/8125343>`をサポートしているの"
+"で、あなたのタイマーが ``Timer`` 型であっても、それは ``Node`` であり "
+"``Object`` でもあり、2つのクラスが拡張しています。動的GDScriptでは、呼び出す"
+"必要のあるメソッドがある限り、ノードの種類についても気にする必要はありませ"
+"ん。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:196
 msgid ""
@@ -12578,39 +13197,48 @@ msgid ""
 "ensure the type works and if so, the line number will turn green at the left "
 "of the script editor."
 msgstr ""
+"ノードを取得したときに期待される型をGodotに伝えるためにキャストを使用できま"
+"す: ``($Timer as Timer)`` 、 ``($Player as KinematicBody2D)`` など。Godotは、"
+"そのタイプが機能することを確認し、機能する場合は、行番号がスクリプトエディタ"
+"の左側で緑に変わります。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:204
 msgid "Safe vs Unsafe Line"
-msgstr ""
+msgstr "セーフ･ラインVSセーフでないライン"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:208
 msgid ""
 "You can turn off safe lines or change their color in the editor settings."
 msgstr ""
+"セーフ･ラインをオフにするか、エディタ設定でカラーを変更することができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:211
 msgid "Define the return type of a function with the arrow ->"
-msgstr ""
+msgstr "アロー(->)による関数の戻り値の定義"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:213
 msgid ""
 "To define the return type of a function, write a dash and a right angle "
 "bracket ``->`` after its declaration, followed by the return type:"
 msgstr ""
+"関数の戻り値の型を定義するには、宣言の後に ``->`` を記述し、その後に戻り値の"
+"型を記述します:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:221
 msgid ""
 "The type ``void`` means the function does not return anything. You can use "
 "any type, as with variables:"
 msgstr ""
+"``void`` 型は、関数が何も返さないことを意味します。変数と同様に、任意の型を使"
+"用できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:230
 msgid "You can also use your own nodes as return types:"
-msgstr ""
+msgstr "独自のノードを戻り値の型として使用することもできます:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:245
 msgid "Typed or dynamic: stick to one style"
-msgstr ""
+msgstr "静的と動的：どちらかのみを利用する"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:247
 msgid ""
@@ -12619,6 +13247,10 @@ msgid ""
 "for your peers. It’s easier for everyone to work together if you follow the "
 "same guidelines, and faster to read and understand other people’s code."
 msgstr ""
+"型付きGDScriptと動的GDScriptは、同じプロジェクト内に共存できます。しかし、"
+"コードベースの一貫性のためにも、仲間のためにも、どちらかスタイルに固定するこ"
+"とをお勧めします。同じガイドラインに従うことで全員が協力しやすくなり、他の人"
+"のコードを素早く読んで理解できるようになります。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:253
 msgid ""
@@ -12626,10 +13258,12 @@ msgid ""
 "discussed above. Here’s an example of the same, empty script, in a dynamic "
 "style:"
 msgstr ""
+"型定義されたコードはもう少し作成が必要ですが、上で説明したような利点がありま"
+"す。次に、同じ空のスクリプトを動的なスタイルで示します:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:265
 msgid "And with static typing:"
-msgstr ""
+msgstr "そして静的型付けでは："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:275
 msgid ""
@@ -12637,16 +13271,21 @@ msgid ""
 "Signal callbacks, like any methods, can also use types. Here’s a "
 "``body_entered`` signal in a dynamic style:"
 msgstr ""
+"このように、エンジンの仮想メソッドで型を使用することもできます。シグナルの"
+"コールバックも、他のメソッドと同様に型を使用できます。動的スタイルの "
+"``body_entered`` シグナルは次のとおりです:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:284
 msgid "And the same callback, with type hints:"
-msgstr ""
+msgstr "同じコールバックをタイプヒントとともに使用します："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:291
 msgid ""
 "You’re free to replace, e.g. the ``CollisionObject2D``, with your own type, "
 "to cast parameters automatically:"
 msgstr ""
+"パラメータを自動的にキャストするには、 ``CollisionObject2D`` などを独自の型に"
+"自由に置き換えます:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:301
 msgid ""
@@ -12655,10 +13294,14 @@ msgid ""
 "anything else, like an ``Area2D``, or any node that doesn’t extend "
 "``Bullet``, the ``bullet`` variable will be ``null``."
 msgstr ""
+"``bullet`` 変数にはここで任意の ``CollisionObject2D`` を保持できますが、それ"
+"が独自に作成したノードである ``Bullet`` であることを確認します。 ``Area2D`` "
+"など、 ``Bullet`` を拡張していないノードなど、それ以外のものがある場合、 "
+"``bullet`` 変数は ``null`` になります。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:307
 msgid "Warning system"
-msgstr ""
+msgstr "警告システム"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:309
 msgid ""
@@ -12666,26 +13309,31 @@ msgid ""
 "mistakes that are hard to spot during development, and that may lead to "
 "runtime errors."
 msgstr ""
+"この警告システムは型付きGDScriptを補完します。これはコーディング中に発見しに"
+"くく、ランタイムエラーにつながる可能性のあるミスを回避するのに役立ちます。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
 msgid ""
 "You can configure warnings in the Project Settings under a new section "
 "called ``GDScript``:"
 msgstr ""
+"プロジェクト設定 の ``GDScript`` という新しいセクションで警告を設定できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
 msgid "warning system project settings"
-msgstr ""
+msgstr "警告システムプロジェクト設定"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:321
 msgid ""
 "You can find a list of warnings for the active GDScript file in the script "
 "editor’s status bar. The example below has 3 warnings:"
 msgstr ""
+"スクリプトエディタのステータスバーにアクティブなGDScriptファイルに関する警告"
+"の一覧が表示されます。次の例には、3つの警告があります:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
 msgid "warning system example"
-msgstr ""
+msgstr "警報システム例"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
 msgid ""
@@ -12695,10 +13343,14 @@ msgid ""
 "corresponding line and the code won’t trigger the corresponding warning "
 "anymore:"
 msgstr ""
+"1つのファイル内の特定の警告を無視するには、 ``#warning-ignore:warning-id`` と"
+"いう形式の特別なコメントを挿入するか、警告の説明の右側にある無視リンクをク"
+"リックします。Godotは対応する行の上にコメントを追加し、対応する警告を表示しな"
+"くなります:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
 msgid "warning system ignore example"
-msgstr ""
+msgstr "警告システム無視の例"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:340
 msgid ""
@@ -12708,30 +13360,39 @@ msgid ""
 "on this option. Here’s the same file as the previous example with warnings "
 "as errors turned on:"
 msgstr ""
+"警告によってゲームの実行が妨げられることはありませんが、必要に応じてエラーに"
+"することができます。こうすると、すべての警告を修正しない限りゲームはコンパイ"
+"ルされません。このオプションをオンにするには、プロジェクト設定の "
+"``GDScript`` セクションに移動します。前の例と同じファイルで、エラーとしての警"
+"告がオンになっているものを次に示します:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:349
 msgid "warnings as errors"
-msgstr ""
+msgstr "エラーとしての警告"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:352
 msgid "Cases where you can’t specify types"
-msgstr ""
+msgstr "型を指定できない場合"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:354
 msgid ""
 "To wrap up this introduction, let’s cover a few cases where you can’t use "
 "type hints. All the examples below **will trigger errors**."
 msgstr ""
+"この紹介の締めくくりに、タイプヒントを使用できないいくつかのケースを取り上げ"
+"ましょう。 以下の例はすべて**エラーを引き起こします**。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:357
 msgid "You can’t use Enums as types:"
-msgstr ""
+msgstr "Enumを型として使うことはできません:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:364
 msgid ""
 "You can’t specify the type of individual members in an array. This will give "
 "you an error:"
 msgstr ""
+"配列の個々のメンバの種類を指定することはできません。これにより、エラーが発生"
+"します:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:371
 msgid ""
@@ -12739,17 +13400,20 @@ msgid ""
 "the ``for`` keyword loops over already has a different type. So you "
 "**cannot** write:"
 msgstr ""
+"``for`` キーワード・ループの各要素にはすでに異なる型があるため、 ``for`` ルー"
+"プで型の割り当てを強制することはできません。したがって、次のように書くことは"
+"**できません**:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
 msgid "Two scripts can’t depend on each other in a cyclic fashion:"
-msgstr ""
+msgstr "2つのスクリプトは、循環的に相互に依存することはできません:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:400
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:124
 #: ../../docs/tutorials/2d/2d_movement.rst:347
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:149
 msgid "Summary"
-msgstr ""
+msgstr "概要"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:402
 msgid ""
@@ -12758,16 +13422,23 @@ msgid ""
 "scalable systems. In the future, static types will also bring you a nice "
 "performance boost thanks to upcoming compiler optimizations."
 msgstr ""
+"型付きGDScriptは強力なツールです。Godotのバージョン3.1から利用できるようにな"
+"り、より構造化されたコードの記述、一般的なエラーの回避、スケーラブルシステム"
+"の作成に役立ちます。将来的には、コンパイラーの最適化によって静的型のパフォー"
+"マンスも大幅に向上するでしょう。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
-msgstr ""
+msgstr "GDScriptフォーマット文字列"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
 msgid ""
 "GDScript offers a feature called *format strings*, which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
+"GDScriptは*フォーマット文字列*と呼ばれる機能を提供します。これはテキストテン"
+"プレートを再利用して、異なるが似ている文字列を簡潔に作成することを可能にしま"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -12775,6 +13446,9 @@ msgid ""
 "placeholder character-sequences. These placeholders can then easily be "
 "replaced by parameters handed to the format string."
 msgstr ""
+"フォーマット文字列は、特定のプレースホルダ文字シーケンスを含むことを除けば、"
+"通常の文字列とまったく同じです。これらのプレースホルダは、フォーマット文字列"
+"に渡されるパラメータに簡単に置き換えることができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
 msgid ""
@@ -12783,14 +13457,17 @@ msgid ""
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
+"例として、プレースホルダとして ``%s`` を使用すると、フォーマット文字列 ``"
+"\"Hello %s, how are you?\"`` は簡単に ``\"Hello World, how are you?\"`` に変"
+"更できます。フォーマット文字列なしでは面倒かもしれません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
-msgstr ""
+msgstr "GDScriptでの使用"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
 msgid "Examine this concrete GDScript example:"
-msgstr ""
+msgstr "具体的なGDScriptの例を見てみましょう:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:35
 msgid ""
@@ -12798,6 +13475,8 @@ msgid ""
 "characters, the *format specifier*, determines how the given value is "
 "converted to a string."
 msgstr ""
+"プレースホルダは常に ``%`` で始まりますが、次の文字(*format specifier*)は、指"
+"定された値を文字列に変換する方法を決定します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:39
 msgid ""
@@ -12808,6 +13487,11 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
+"上記の例で見られる ``%s`` は最も単純なプレースホルダーで、ほとんどの場合で機"
+"能します。暗黙の文字列変換または ``str()`` が変換するのと同じ方法で値を変換し"
+"ます。 文字列は変更されません。ブール値は ``\"True\"`` または ``\"False\"`` "
+"に変わります。整数または実数は10進数になります。他の型は通常、人間が読める文"
+"字列でデータを返します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
@@ -12816,26 +13500,34 @@ msgid ""
 "the corresponding value. The method can handle arrays or dictionaries for "
 "the key/value pairs."
 msgstr ""
+"GDScriptでテキストをフォーマットする別の方法、すなわち ``String.format()`` メ"
+"ソッドもあります。文字列内に出現するすべてのキーを対応する値に置き換えます。 "
+"このメソッドは、キー/値ペアの配列または辞書を処理できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:50
 msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
+"配列はキー、インデックス、または混合スタイルとして使用できます(下記の例を参"
+"照)。配列のインデックスまたは混合スタイルが使用されている場合にのみ順序が重要"
+"になります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
-msgstr ""
+msgstr "GDScriptの簡単な例:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
 msgid ""
 "There are other `format specifiers`_, but they are only applicable when "
 "using the ``%`` operator."
 msgstr ""
+"他の `書式指定子` もありますが、 ``%`` 演算子を使用する場合にのみ適用できま"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:71
 msgid "Multiple placeholders"
-msgstr ""
+msgstr "複数のプレースホルダ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
 msgid ""
@@ -12843,16 +13535,21 @@ msgid ""
 "are handed in the form of an array, one value per placeholder (unless using "
 "a format specifier with ``*``, see `dynamic padding`_):"
 msgstr ""
+"フォーマット文字列には複数のプレースホルダを含めることができます。そのような"
+"場合、値は配列の形で渡され、プレースホルダごとに1つの値になります( ``*`` で"
+"フォーマット指定子を使用しない限り。 `動的パディング` を参照):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
 msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
+"値が順番に挿入されていることに注意してください。すべてのプレースホルダは一度"
+"に置き換えられる必要があるので、適切な数の値が必要です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
 msgid "Format specifiers"
-msgstr ""
+msgstr "書式指定子"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:92
 msgid ""
@@ -12861,10 +13558,14 @@ msgid ""
 "themselves like ``s``, some appear before other characters, some only work "
 "with certain values or characters."
 msgstr ""
+"プレースホルダで使用できる書式指定子は、 ``s`` 以外にもあります。これらは1つ"
+"以上の文字で構成されます。その中には、 ``s`` のように単独で動作するものもあれ"
+"ば、他の文字の前に現れるものもあり、特定の値や文字だけで動作するものもありま"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid "Placeholder types"
-msgstr ""
+msgstr "プレースホルダ・タイプ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:101
 msgid ""
@@ -12872,88 +13573,101 @@ msgid ""
 "format specifier. Apart from ``s``, these require certain types of "
 "parameters."
 msgstr ""
+"これらのうちの1つだけが、常にフォーマット指定子の最後の文字として表示されてい"
+"る必要があります。 ``s`` とは別に、これらは特定の種類のパラメータを必要としま"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid "``s``"
-msgstr ""
+msgstr "``s``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
-msgstr ""
+msgstr "暗黙的な文字列変換と同じメソッドによる文字列への**単純な**変換。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
-msgstr ""
+msgstr "``c``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid ""
 "A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
 "for a code point or a single-character string."
 msgstr ""
+"単一の**Unicode文字**。 コードポイントまたは1文字の文字列には、符号なし8ビッ"
+"ト整数(0〜255)が必要です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``d``"
-msgstr ""
+msgstr "``d``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"単一の**10進整数**。整数または実数(圧倒されるだろう)を指定してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
-msgstr ""
+msgstr "``o``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"単一の**8進整数**。整数または実数(圧倒されるだろう)を指定してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"単一の**小文字の16進整数**。整数または実数(圧倒されるだろう)を指定してくださ"
+"い。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
-msgstr ""
+msgstr "``x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"単一の**大文字の16進整数**。整数または実数(圧倒されるだろう)を指定してくださ"
+"い。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
-msgstr ""
+msgstr "``f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
-msgstr ""
+msgstr "単一の**10進実数**。整数または実数を指定してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "Placeholder modifiers"
-msgstr ""
+msgstr "プレースホルダ修飾子"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
 msgid ""
 "These characters appear before the above. Some of them work only under "
 "certain conditions."
 msgstr ""
+"これらの文字は上記の前に表示されます。中には、特定の条件下でのみ機能するもの"
+"もあります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "In number specifiers, **show + sign** if positive."
-msgstr ""
+msgstr "数値指定子で、正の場合は**+記号を表示**します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:94
@@ -12983,34 +13697,41 @@ msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer placeholder. When used after ``.``, see ``.``."
 msgstr ""
+"**パディング**を設定します。 整数プレースホルダ内で整数が ``0`` で始まる場合"
+"は、スペースまたはゼロでパディングされます。後に ``.``を使用する場合は、 ``."
+"`` を参照してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid "``.``"
-msgstr ""
+msgstr "``.``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
 msgstr ""
+"``f`` の**前に**、精度を小数点以下0桁に設定します。 変更する数字でフォロー"
+"アップすることができます。 ゼロでパディングされます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "**Pad to the right** rather than the left."
-msgstr ""
+msgstr "左ではなく右にパディングされます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid "``*``"
-msgstr ""
+msgstr "``*``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid ""
 "**Dynamic padding**, expect additional integral parameter to set padding or "
 "precision after ``.``, see `dynamic padding`_."
 msgstr ""
+"**動的パディング**。 ``.`` の後にパディングまたは精度を設定するために追加の整"
+"数パラメータが必要です。`動的パディング` を参照してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr ""
+msgstr "パディング"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -13018,16 +13739,20 @@ msgid ""
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
+"``.`` (*ドット*), ``*`` (*アスタリスク*), ``-`` (*マイナス記号*) および数字 "
+"(``0``-``9``) の文字が埋め込みに使用されます。これにより、固定幅フォントが使"
+"用されている場合に、縦に並んだ複数の値を列のように出力できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
-msgstr ""
+msgstr "文字列を最小の長さにするには、指定子に整数を追加します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
 msgstr ""
+"整数が ``0`` で始まる場合、整数値は空白ではなくゼロでパディングされます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
 msgid ""
@@ -13036,16 +13761,21 @@ msgid ""
 "used, rounding to integral value. The integer to use for padding must appear "
 "before the dot."
 msgstr ""
+"``.`` (*ドット*)を追加することで、実数に対して精度を指定できます。それに続く"
+"整数で``.`` の後に整数がないと、0の精度が使用され整数値に丸められます。パディ"
+"ングに使用する整数は、ドットの前になければなりません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
 msgstr ""
+"``-`` 文字を使用すると、左ではなく右にスペースが挿入され、テキストの右揃えに"
+"便利です:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
-msgstr ""
+msgstr "動的パディング"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
 msgid ""
@@ -13054,48 +13784,57 @@ msgid ""
 "in the format specifier. The values for padding and precision are then "
 "passed when formatting:"
 msgstr ""
+"``*`` (*アスタリスク*)文字を使用すると、フォーマット文字列を変更せずにパディ"
+"ングまたは精度を設定できます。フォーマット指定子の整数の代わりに使用されま"
+"す。 フォーマット時にパディングと精度の値が渡されます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
 msgstr ""
+"``*`` の前に ``0`` を追加することで、整数のプレースホルダに0を埋め込むことも"
+"できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
-msgstr ""
+msgstr "エスケープシーケンス"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
 msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
+"フォーマット文字列にリテラルの ``%`` 文字を挿入するには、プレースホルダとして"
+"読み取られないようにエスケープする必要があります。これは文字を2倍にすることに"
+"よって行われます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
-msgstr ""
+msgstr "フォーマット方法の例"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:237
 msgid ""
 "The following are some examples of how to use the various invocations of the "
 "``String.format``  method."
 msgstr ""
+"以下は、 ``String.format`` メソッドのさまざまな呼び出しの使用方法の例です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 msgid "**Style**"
-msgstr ""
+msgstr "**様式**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Example**"
-msgstr ""
+msgstr "**例**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Result**"
-msgstr ""
+msgstr "**結果**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
@@ -13114,6 +13853,8 @@ msgid ""
 "``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})``"
 msgstr ""
+"``\"やあ、 {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
@@ -13123,7 +13864,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "Hi, Godette v3.0!"
-msgstr ""
+msgstr "やあ、 Godette v3.0!"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -13132,17 +13873,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
-msgstr ""
+msgstr "``\"やあ、 {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "mix"
-msgstr ""
+msgstr "キーとインデックス"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid ""
 "``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
 msgstr ""
+"``\"やあ、 {0} v{version}!\".format({\"0\":\"Godette\", \"version\":"
+"\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -13157,50 +13900,54 @@ msgid ""
 "``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
 "\"Godette\"]])``"
 msgstr ""
+"``\"やあ、 {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
+"\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
-msgstr ""
+msgstr "``\"やあ、 {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
-msgstr ""
+msgstr "``\"やあ、 {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "no index"
-msgstr ""
+msgstr "インデックスなし"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
-msgstr ""
+msgstr "``\"やあ、 {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
 msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
 msgstr ""
+"``String.format`` を使用するときにプレースホルダをカスタマイズすることもでき"
+"ます。これはその機能の例です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "Infix (default)"
-msgstr ""
+msgstr "インフィックス(デフォルト)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
-msgstr ""
+msgstr "``\"やあ、 {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Hi, Godette v3.0"
-msgstr ""
+msgstr "やあ、 Godette v3.0"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Postfix"
-msgstr ""
+msgstr "ポストフィックス"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
-msgstr ""
+msgstr "``\"やあ、 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
@@ -13208,7 +13955,7 @@ msgstr "プレフィックス"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
-msgstr ""
+msgstr "``\"やあ、 %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:273
 msgid ""
@@ -13216,20 +13963,24 @@ msgid ""
 "useful, as ``String.format`` does not have a way to manipulate the "
 "representation of numbers."
 msgstr ""
+"``String.format`` には数値の表現を操作する方法がないため、``String.format`` "
+"メソッドと ``%`` 演算子の両方を組み合わせると便利です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid ""
 "``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
 "3.114})``"
 msgstr ""
+"``\"やあ、 {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Hi, Godette v3.11"
-msgstr ""
+msgstr "やあ、 Godette v3.11"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:4
 msgid "What is Visual Scripting"
-msgstr ""
+msgstr "ビジュアル・スクリプトとは何か"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:6
 msgid ""
@@ -13238,6 +13989,10 @@ msgid ""
 "understood. Any artist, animator, game designer, etc. can look at it and "
 "quickly grasp the flow of logic."
 msgstr ""
+"ビジュアル・スクリプトは、プログラミングへの入り口の障壁をはるかに低くするよ"
+"うに設計されたツールです。コードは視覚的なものであるため、理解するための抽象"
+"的思考が少なくて済みます。どんなアーティスト、アニメーター、ゲームデザイナー"
+"などもそれを見て、論理の流れを素早く把握することができます。"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:11
 msgid ""
@@ -13246,28 +14001,35 @@ msgid ""
 "with it, and it's often more difficult to modify than just writing a few "
 "characters."
 msgstr ""
+"それが既存のプログラミングを時代遅れにしない理由は、単に、それが同様に拡大縮"
+"小しないということです。これを使ってコードを作成するにはかなり時間がかかりま"
+"す。また、数文字を書くよりも変更が難しいことがよくあります。"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:15
 msgid ""
 "With the misunderstanding cleared up, the question that remains is what are "
 "the practical uses for Visual Scripting."
 msgstr ""
+"誤解が解消された今もなお残っている問題は、ビジュアルスクリプティングの実用的"
+"な用途は何かということです。"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:18
 msgid "The most common use cases are as follows:"
-msgstr ""
+msgstr "最も一般的な使用例は次のとおりです:"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:20
 msgid ""
 "Game development beginners who want to learn an engine but have no "
 "programming experience yet."
-msgstr ""
+msgstr "エンジンを学びたいがまだプログラミング経験がないゲーム開発初心者。"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:21
 msgid ""
 "Artists and Game Designers who have no experience in programming and want to "
 "create quick prototypes or simple games."
 msgstr ""
+"プログラミングの経験がなく、簡単なプロトタイプや簡単なゲームを作りたいアー"
+"ティストやゲームデザイナー。"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:22
 msgid ""
@@ -13275,16 +14037,20 @@ msgid ""
 "available to Artists or Game Designers in order to offload some of their "
 "work."
 msgstr ""
+"ゲームロジックの一部をアーティストやゲームデザイナーが利用できるようにしたい"
+"チームで作業しているプログラマー。"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:24
 msgid ""
 "These scenarios are far more common than one might think, so this is why "
 "Godot has added this feature."
 msgstr ""
+"これらのシナリオは、思っているよりはるかに一般的なので、Godotがこれを追加しま"
+"した。"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:4
 msgid "Getting started with Visual Scripting"
-msgstr ""
+msgstr "ビジュアル・スクリプト入門"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:6
 msgid ""
@@ -13293,12 +14059,18 @@ msgid ""
 "workflow. This led us to write our own version of how we believe this "
 "feature would work best with the engine."
 msgstr ""
+"Godotのすべてのものと同様に、現在のワークフローにはうまく適合しない可能性があ"
+"るサードパーティ製のソリューションをコピーまたは統合するよりも、優れた経験を"
+"優先します。このため、この機能がエンジンで最もうまく動作すると思われる独自の"
+"バージョンを作成しました。"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:10
 msgid ""
 "In Godot, a Visual Script fits smoothly together with regular scripts in the "
 "Editor tab"
 msgstr ""
+"Godotでは、 エディタ・タブでビジュアルスクリプトを通常のスクリプトとスムーズ"
+"に連携させることができます"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:15
 msgid ""
@@ -13307,6 +14079,10 @@ msgid ""
 "rest of Godot panels and docks act like a palette from where you can drag "
 "and drop all sorts of information to the script canvas:"
 msgstr ""
+"実際、ビジュアル・スクリプトはGodotと非常によく統合されているため、バージョン"
+"3.0でのみ追加されたとは信じられません。これは編集時に残りのGodotパネルとドッ"
+"クがパレットのように機能し、そこからあらゆる種類の情報をスクリプトキャンバス"
+"にドラッグアンドドロップできるためです:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
 #, fuzzy
@@ -13319,22 +14095,29 @@ msgid ""
 "any node in the scene and push the \"New Script\" button at the top right "
 "corner of the Scene Tree dock:"
 msgstr ""
+"スクリプトの作成は他のスクリプト言語と同じように機能します。シーン内の任意の"
+"ノードを選択し、シーンツリードックの右上隅にある \"New Script\" ボタンを押し"
+"ます:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:31
 msgid ""
 "Once it opens, the script type \"Visual Script\" must be selected from the "
 "drop down list. The script extension must be \".vs\" (for Visual Script!)."
 msgstr ""
+"開いたら、ドロップダウンリストからスクリプトタイプ \"Visual Script\" を選択す"
+"る必要があります。スクリプトの拡張子は \".vs\" にする必要があります(Visual "
+"Scriptの場合)。"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:37
 msgid ""
 "Finally, the Script Editor will open, allowing you to start editing the "
 "visual script:"
 msgstr ""
+"最後にスクリプトエディタが開き、ビジュアル・スクリプトの編集を開始できます:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:43
 msgid "Adding a function"
-msgstr ""
+msgstr "関数の追加"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:45
 msgid ""
@@ -13343,24 +14126,30 @@ msgid ""
 "to communicate with the engine as other scripting engines. In Godot, the "
 "scripting interface is universal and all implementations conform to it."
 msgstr ""
+"他のビジュアルスクリプティング実装とは異なり、Godotのビジュアルスクリプティン"
+"グは関数に大きく基づいています。これは、他のスクリプトエンジンと同じインター"
+"フェイスを使用してエンジンと通信するために発生します。Godotでは、スクリプトイ"
+"ンターフェースは汎用的で、すべての実装はそれに準拠しています。"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:49
 msgid "A function is an individual canvas with nodes connected."
-msgstr ""
+msgstr "関数は、ノードが接続されている個々のキャンバスです。"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:51
 msgid ""
 "A single script can contain many functions, each of which will have a canvas "
 "of its own, allowing for more organization."
 msgstr ""
+"1つのスクリプトに多数の関数を含めることができ、それぞれに独自のキャンバスがあ"
+"り、より多くの編成が可能になります。"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:53
 msgid "There are three main ways to add functions in a script:"
-msgstr ""
+msgstr "スクリプトに関数を追加するには、主に3つの方法があります:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:56
 msgid "Overriding a virtual function"
-msgstr ""
+msgstr "仮想関数のオーバーライド"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:58
 msgid ""
@@ -13369,6 +14158,10 @@ msgid ""
 "something happens and can be looked up in the reference. Virtual functions "
 "are listed when pressing the \"Override\" icon in the member panel:"
 msgstr ""
+"Godotのほとんどの種類のノードやその他の種類のオブジェクトには仮想関数が含まれ"
+"ています。これらは、何かが起こったときに呼び出され(コードを実行する)、参照で"
+"調べることができる関数です。メンバーパネルの \"Override\" アイコンを押すと、"
+"仮想関数が一覧表示されます:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:65
 msgid ""
@@ -13376,20 +14169,24 @@ msgid ""
 "loaded and added to the running scene. For this, the _ready() virtual method "
 "will be overridden:"
 msgstr ""
+"次の例ではノードがロードされて実行中のシーンに追加されたときに関数が実行され"
+"ます。このため_ready()仮想メソッドはオーバーライドされます:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:71
 msgid "Finally, a canvas appears for this function, showing the override:"
-msgstr ""
+msgstr "最後に、この関数のキャンバスが表示され、オーバーライドが表示されます:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:76
 msgid ""
 "As some functions expect you to return a value, they will also add a return "
 "node where such value is supposed to be provided:"
 msgstr ""
+"一部の関数は値を返すことを期待しているので、そのような値を提供することを想定"
+"しているリターンノードも追加します:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:83
 msgid "Connecting a signal to a function"
-msgstr ""
+msgstr "シグナルの関数への接続"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:85
 msgid ""
@@ -13397,6 +14194,9 @@ msgid ""
 "all sorts of things. A typical example would be a button that emits a "
 "\"pressed\" signal when actually pressed."
 msgstr ""
+"ツリー内のノードは何かが起こるとシグナルを発します。 Godotはあらゆる種類のも"
+"のにシグナルを使用します。典型的な例は、実際に押されたときに \"pressed\" 信号"
+"を発するボタンです。"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:88
 msgid ""
@@ -13404,6 +14204,8 @@ msgid ""
 "inspecting the signals. Once they are displayed, connect the \"pressed\" "
 "signal:"
 msgstr ""
+"このためにはノードを選択して[ノード]タブを開く必要があります。これで信号を調"
+"べることができます。表示されたら、 \"pressed\" 信号を接続します:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:94
 msgid ""
@@ -13411,16 +14213,20 @@ msgid ""
 "node where the signal will be connected to, and the function that will "
 "receive the signal:"
 msgstr ""
+"これで接続ダイアログが開きます。 このダイアログでは、信号が接続されるノードと"
+"信号を受信する機能を選択する必要があります:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:100
 msgid ""
 "If this is done right, a new function will be created in our script and a "
 "signal will automatically be connected to it:"
 msgstr ""
+"これが正しく行われると、スクリプト内に新しい関数が作成され、シグナルが自動的"
+"にその関数に接続されます:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:107
 msgid "Creating a function manually"
-msgstr ""
+msgstr "関数の手動作成"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:109
 msgid ""
@@ -13430,18 +14236,25 @@ msgid ""
 "breaking a larger function up into several manageable chunks and reusing "
 "your visual code."
 msgstr ""
+"関数を作成する最後の方法は手動でそれをすることです。一般にこれはが必要な時は"
+"さほどありません。カスタム関数は、別の(または同じ)スクリプトがそれらを手動で"
+"呼び出すときに機能します。これの主な使用例は、大きな機能をいくつかの管理可能"
+"なチャンクに分割し、ビジュアルコードを再利用することです。"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:113
 msgid ""
 "To create a function manually, push the big \"Plus\" button, and a new "
 "function will be added with a default name:"
 msgstr ""
+"手動で関数を作成するには、大きな \"Plus\" ボタンを押すと、新しい関数がデフォ"
+"ルトの名前で追加されます:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:119
 msgid ""
 "This will add a new function, which can be renamed by simply double clicking "
 "its name:"
 msgstr ""
+"新しい関数が追加され、名前をダブルクリックするだけで名前を変更できます:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:125
 msgid ""
@@ -13449,14 +14262,16 @@ msgid ""
 "when you call this function), simply click the Function node and check the "
 "inspector:"
 msgstr ""
+"この関数が取得できる \"arguments\" (この関数を呼び出すときに渡す値)を編集する"
+"には、関数ノードをクリックしてインスペクタをチェックするだけです:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:131
 msgid "More on that will be explained later in this document."
-msgstr ""
+msgstr "詳細については、このドキュメントの後半で説明します。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:4
 msgid "Nodes and terminology"
-msgstr ""
+msgstr "ノードと用語"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:6
 msgid ""
@@ -13469,6 +14284,12 @@ msgid ""
 "referring to *Node* here, it will be implied that a *Visual Script Node* is "
 "referred to unless indicated otherwise."
 msgstr ""
+"続行する前に、*ノード*の用語を注意して使用する必要があります。*ビジュアルスク"
+"リプトノード*(または通常は*ノード*)を参照する場合、このテキストはグラフの一部"
+"である線で接続する小さなボックスを参照します。*シーンノード*を参照すると、"
+"シーンを構成する要素 (ツリーの一部) が参照されます。名前は似ていますが、機能"
+"は違います。ここで*ノード*を参照する場合、特に指定しないかぎり、*ビジュアルス"
+"クリプトノード*が参照されることを意味します。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:15
 msgid "Node properties"
@@ -14212,6 +15033,9 @@ msgid ""
 "guide <https://docs.microsoft.com/en-us/dotnet/csharp/index>`_ or look for a "
 "suitable introduction elsewhere."
 msgstr ""
+"これはC#言語全体に関する本格的なチュートリアルでは**ありません**。まだその構"
+"文や機能に慣れていなければ、 `Microsoft C#ガイド<https://docs.microsoft.com/"
+"en-us/dotnet/csharp/index>` や他の適切な入門書を参照してください。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:36
 msgid "Setting up C# for Godot"
@@ -14270,7 +15094,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:77
 msgid "Configuring an external editor"
-msgstr ""
+msgstr "外部エディタの設定"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:79
 msgid ""
@@ -14291,7 +15115,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
 msgid "Creating a C# script"
-msgstr ""
+msgstr "C#スクリプトの作成"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
 msgid ""
@@ -14311,7 +15135,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:106
 msgid "Project setup and workflow"
-msgstr ""
+msgstr "プロジェクトの設定とワークフロー"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:108
 msgid ""
@@ -14353,12 +15177,12 @@ msgstr ""
 #: ../../docs/tutorials/io/background_loading.rst:87
 #: ../../docs/tutorials/misc/pausing_games.rst:71
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:143
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
-msgstr ""
+msgstr "以下に、空白のC#スクリプトと、その動作を示すコメントを示します。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:170
 msgid ""
@@ -14378,7 +15202,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
 msgid "General differences between C# and GDScript"
-msgstr ""
+msgstr "C#とGDScriptの一般的な違い"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:185
 msgid ""
@@ -14387,6 +15211,10 @@ msgid ""
 "properties. In general, the C# Godot API strives to be as idiomatic as is "
 "reasonably possible."
 msgstr ""
+"C＃APIはGDScript/C++の `` snake_case`` の代わりに `` PascalCase`` を使いま"
+"す。 可能であれば、フィールドとゲッター/セッターはプロパティに変換されていま"
+"す。一般的に、C#Godot APIは合理的に可能な限り慣用的であることを目指していま"
+"す。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
 msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
@@ -14394,7 +15222,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:192
 msgid "Current gotchas and known issues"
-msgstr ""
+msgstr "現在の課題と既知の問題"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
 msgid ""
@@ -14441,7 +15269,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
 msgid "Performance of C# in Godot"
-msgstr ""
+msgstr "GodotにおけるC#のパフォーマンス"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
 msgid ""
@@ -14475,7 +15303,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
-msgstr ""
+msgstr "特徴"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -14497,14 +15325,16 @@ msgid ""
 "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
 "convert it to the desired derived type, ``Sprite`` in this case."
 msgstr ""
+"メソッド `` GetNode()`` は `` Node`` インスタンスを返します。 あなたはそれを"
+"望みの派生型、この場合 `` Sprite`` に明示的に変換しなければなりません。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:22
 msgid "For this, you have various options in C#."
-msgstr ""
+msgstr "このために、C#にはさまざまなオプションがあります。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
 msgid "**Casting and Type Checking**"
-msgstr ""
+msgstr "**キャストと型チェック**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
 msgid ""
@@ -14515,7 +15345,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:34
 msgid "**Using the AS operator**"
-msgstr ""
+msgstr "**AS演算子の使用**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
 msgid ""
@@ -14546,7 +15376,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:64
 msgid "**Type checking using the IS operator**"
-msgstr ""
+msgstr "**IS演算子を使用した型チェック**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
 msgid ""
@@ -14560,6 +15390,8 @@ msgid ""
 "For more advanced type checking, you can look into `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 msgstr ""
+"より高度な型チェックについては、 `パターンマッチング<https://docs.microsoft."
+"com/ja-jp/dotnet/csharp/pattern-matching>` で調べることができます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:82
 #, fuzzy
@@ -14571,34 +15403,42 @@ msgid ""
 "For a complete C# example, see the **Handling a signal** section in the step "
 "by step :ref:`doc_scripting` tutorial."
 msgstr ""
+"完全なC#の例については、チュートリアル :ref:`doc_scripting` の**Handling a "
+"signal**を参照してください。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:86
 msgid ""
 "Declaring a signal in C# is done with the ``[Signal]`` attribute on a "
 "delegate."
 msgstr ""
+"C＃でシグナルを宣言するには、デリゲートの `` [Signal] `` 属性を使います。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:96
 msgid ""
 "These signals can then be connected either in the editor or from code with "
 "``Connect``."
 msgstr ""
+"これらのシグナルはエディタで、あるいは `` Connect`` を使ってコードから接続す"
+"ることができます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:116
 msgid "Emitting signals is done with the ``EmitSignal`` method."
-msgstr ""
+msgstr "シグナルの発行は `` EmitSignal`` メソッドで行われます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:126
 msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
 msgstr ""
+"シグナル名はいつでも `` nameof`` キーワードで参照できることに注意してください"
+"(デリゲート自体に適用されます)。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
 msgid ""
 "It is possible to bind values when establishing a connection by passing an "
 "object array."
 msgstr ""
+"オブジェクト配列を渡すことで、接続を確立するときに値をバインドできます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:148
 msgid ""
@@ -14619,11 +15459,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
 msgid "API differences to GDScript"
-msgstr ""
+msgstr "GDScriptとAPIの違い"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:6
 msgid "This is a (incomplete) list of API differences between C# and GDScript."
-msgstr ""
+msgstr "これは、C#とGDScriptのAPIの相違点の(不完全な)リストです。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:9
 msgid "General differences"
@@ -14760,16 +15600,18 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:86
 msgid "Export keyword"
-msgstr ""
+msgstr "エクスポート・キーワード"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:88
 msgid ""
 "Use the ``[Export]`` attribute instead of the GDScript ``export`` keyword."
 msgstr ""
+"GDScriptの `` export`` キーワードの代わりに `` [Export] `` 属性を使用してくだ"
+"さい。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:103
 msgid "Signal keyword"
-msgstr ""
+msgstr "シグナル・キーワード"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:105
 msgid ""
@@ -14780,11 +15622,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:113
 msgid "See also: :ref:`c_sharp_signals`"
-msgstr ""
+msgstr ":ref:`c_sharp_signals` も参照して下さい"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:116
 msgid "Singletons"
-msgstr ""
+msgstr "シングルトン"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:118
 msgid ""
@@ -14886,7 +15728,7 @@ msgstr ""
 msgid ""
 "The following methods were converted to properties with their respective "
 "names changed:"
-msgstr ""
+msgstr "次のメソッドは、それぞれの名前が変更されたプロパティに変換されました:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
 msgid "``get_rotation()``"
@@ -15072,7 +15914,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:290
 msgid "Communicating with other scripting languages"
-msgstr ""
+msgstr "他のスクリプト言語との通信"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:292
 msgid ""
@@ -15097,7 +15939,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:313
 msgid "Other differences"
-msgstr ""
+msgstr "他の相違点"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:315
 msgid ""
@@ -15107,7 +15949,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Other differences:"
-msgstr ""
+msgstr "他の相違点:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
 #, fuzzy
@@ -21979,11 +22821,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
-msgstr ""
+msgstr "キャンバス・レイヤー"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:7
 msgid "Viewport and Canvas items"
-msgstr ""
+msgstr "Viewportとキャンバス・アイテム"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
 msgid ""
@@ -21993,6 +22835,10 @@ msgid ""
 "Each item will inherit its parent's transform. This means that when the "
 "parent is moved, the children will move too."
 msgstr ""
+":ref:`Node2D <class_Node2D>` や:ref:`Control <class_Control>` などの通常の2D"
+"ノードは、すべての2Dノードのベースである :ref:`CanvasItem "
+"<class_CanvasItem>` から両方とも継承されます。CanvasItemはツリーに配置でき、"
+"その変換を継承します。つまり、親を移動すると、子も移動します。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
 msgid ""
@@ -22000,6 +22846,8 @@ msgid ""
 "children of a :ref:`Viewport <class_Viewport>`, and will be displayed "
 "through it."
 msgstr ""
+"これらのノードは :ref:`Viewport <class_Viewport>` の直接または間接の子として"
+"配置され、Viewportを通して表示されます。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
 msgid ""
@@ -22009,6 +22857,11 @@ msgid ""
 "it contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
+"Viewportには :ref:`Viewport.canvas_transform "
+"<class_Viewport_property_canvas_transform>` プロパティがあります。これによ"
+"り、カスタム :ref:`Transform2D <class_Transform2D>` 変換によってすべての"
+"CanvasItem階層を変換できます。 :ref:`Camera2D <class_Camera2D>` などのノード"
+"は、その変換を変更することで機能します。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:25
 msgid ""
@@ -22016,18 +22869,23 @@ msgid ""
 "transform property. This approach is more efficient than moving the root "
 "canvas item (and hence the whole scene)."
 msgstr ""
+"スクロールのような効果を得るには、キャンバスのtransformプロパティを操作しま"
+"す。この方法は、ルートキャンバス項目(シーン全体が)を移動するよりも効率的で"
+"す。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:28
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
 "to the canvas transform. Examples of this are:"
 msgstr ""
+"しかし通常は、ゲームやアプリケーションの*すべて*をキャンバス変換の対象にする"
+"ことは望ましくありません。 この例は次のとおりです:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
-msgstr ""
+msgstr "**パララックス背景**:ステージの他の部分よりもゆっくり移動する背景。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:33
 msgid ""
@@ -22036,20 +22894,24 @@ msgid ""
 "display and other elements to retain their screen positions even when our "
 "view of the game world is changing."
 msgstr ""
+"**UI**: ヘッドアップディスプレイ、またはユーザーインターフェイス。 背景が動い"
+"ても、ライフカウンターやスコアなどは移動しないはずです。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:34
 msgid ""
 "**Transitions**: We may want visual effects used for transitions (fades, "
 "blends) to remain at a fixed screen location."
 msgstr ""
+"**トランジション**:トランジション(フェード、ブレンド)に使用されるエフェクトで"
+"も、固定された場所に留めておくことが望ましい場合があります。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:36
 msgid "How can these problems be solved in a single scene tree?"
-msgstr ""
+msgstr "単一のシーンツリーでこれらの問題をどのように解決できるでしょうか？"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid "CanvasLayers"
-msgstr ""
+msgstr "キャンバス・レイヤー"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:41
 msgid ""
@@ -22061,6 +22923,12 @@ msgid ""
 "transform and do not depend on the transform of other layers. This allows "
 "the UI to be fixed in screen-space while our view on the game world changes."
 msgstr ""
+"その答えは :ref:`CanvasLayer <class_CanvasLayer>` です。これは、そのすべての"
+"子と孫のために別々の2Dレンダリングレイヤを追加するノードです。CanvasLayerは任"
+"意の数値レイヤで描画しますが、Viewportの子はデフォルトでレイヤー \"0\" で描画"
+"します。大きい番号のレイヤーは小さい番号のレイヤーの上に描画されます。"
+"CanvasLayersにも独自の変換があり、他のレイヤーの変換には依存しません。これに"
+"より、世界が動いている間にUIをその場で固定することができます。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:50
 msgid ""
@@ -22068,16 +22936,21 @@ msgid ""
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
 "pause button can also be created at layer \"1\"."
 msgstr ""
+"この一例は、パララックスの背景を作成することです。 これはCanvasLayerの "
+"\"-1\" レイヤーで行うことができます。ポイント、ライフカウンター、ポーズ・ボタ"
+"ンを含む画面もレイヤー \"1\" で作成できます。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:54
 msgid "Here's a diagram of how it looks:"
-msgstr ""
+msgstr "外観は次のとおりです:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:58
 msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
 "layer number, so they can be instantiated when needed."
 msgstr ""
+"キャンバス・レイヤーはツリーの順序に依存せず、レイヤ番号のみに依存するため、"
+"必要に応じてインスタンス化できます。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:61
 msgid ""
@@ -22089,10 +22962,16 @@ msgid ""
 "controlling their drawing order (see :ref:`Node2D.z_index "
 "<class_Node2D_property_z_index>`)."
 msgstr ""
+"キャンバス・レイヤーはノードの描画順序を制御する必要はありません。 ノードが他"
+"のノードの「前面」または「背面」に正しく描画されるようにするための標準的な方"
+"法は、シーンパネル内のノードの順序を操作することです。 おそらく直感に反して、"
+"シーンパネルの一番上のノードはViewportの下のノードの*後ろ*に描かれています。 "
+"2dノードは描画順を制御するためのプロパティも持っています( :ref:`Node2D."
+"z_index <class_Node2D_property_z_index>` を参照してください)。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:4
 msgid "Viewport and canvas transforms"
-msgstr ""
+msgstr "Viewportおよびキャンバス変換"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:9
 msgid ""
@@ -22100,10 +22979,13 @@ msgid ""
 "they draw their content locally to the time they are drawn onto the screen. "
 "This overview discusses very low level details of the engine."
 msgstr ""
+"ここでは、ノードがコンテンツをローカルに描画してから画面に描画するまでの間に"
+"行われる2D変換の概要について説明します。この概要では、エンジンの非常に低いレ"
+"ベルの詳細について説明します。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:14
 msgid "Canvas transform"
-msgstr ""
+msgstr "キャンバス変換"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:16
 msgid ""
@@ -22113,6 +22995,11 @@ msgid ""
 "has a transform (translation, rotation, scale, etc.) that can be accessed as "
 "a :ref:`Transform2D <class_Transform2D>`."
 msgstr ""
+"前のチュートリアルの :ref:`doc_canvas_layers` で説明したように、すべての"
+"CanvasItemノード(Node2DおよびControlベースのノードはCanvasItemを共通のルート"
+"として使用することに注意してください)は*キャンバス・レイヤー*に存在します。 "
+"すべてのキャンバス・レイヤーには、 :ref:`Transform2D <class_Transform2D>` と"
+"してアクセスできる変換（平行移動、回転、拡大縮小など）があります。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:22
 msgid ""
@@ -22120,10 +23007,13 @@ msgid ""
 "0, in the built-in canvas. To put nodes in a different layer, a :ref:"
 "`CanvasLayer <class_CanvasLayer>` node can be used."
 msgstr ""
+"前のチュートリアルでも説明したように、ノードはデフォルトでレイヤー0の組み込み"
+"キャンバスに描画されます。 ノードを別のレイヤーに配置するには、 a :ref:"
+"`CanvasLayer <class_CanvasLayer>` ノードを使うことができます。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:27
 msgid "Global canvas transform"
-msgstr ""
+msgstr "グローバル・キャンバス変換"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:29
 msgid ""
@@ -22132,10 +23022,14 @@ msgid ""
 "individual *Canvas Layer* transforms. Generally, this transform is not of "
 "much use, but is used in the CanvasItem Editor in Godot's editor."
 msgstr ""
+"Viewportにはグローバル・キャンバス変換もあります（これも :ref:`Transform2D "
+"<class_Transform2D>` です）。 これはマスター変換であり、すべての個々の"
+"*Canvas Layer*変換に影響します。通常、この変換はあまり使用されませんが、Godot"
+"のエディタのCanvasItemエディタで使用されます。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:36
 msgid "Stretch transform"
-msgstr ""
+msgstr "ストレッチ変換"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:38
 msgid ""
@@ -22144,6 +23038,10 @@ msgid ""
 "in :ref:`doc_multiple_resolutions`), but can also be manually set on each "
 "viewport."
 msgstr ""
+"最後に、Viewportには*Stretch Transform*があります。これは、画面のサイズ変更や"
+"ストレッチを行うときに使用されます。 この変換は( :ref:"
+"`doc_multiple_resolutions` で説明されているように)内部的に使われますが、各"
+"Viewportで手動で設定することもできます。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:43
 msgid ""
@@ -22154,24 +23052,31 @@ msgid ""
 "<class_CanvasItem_method_make_input_local>` function was added for "
 "convenience."
 msgstr ""
+":ref:`MainLoop._input_event() <class_MainLoop_method__input_event>` コール"
+"バックで受け取った入力イベントは、この変換によって乗算されますが、上記のもの"
+"はありません。 InputEvent座標をローカルのCanvasItem座標に変換するために、便宜"
+"上 :ref:`CanvasItem.make_input_local() "
+"<class_CanvasItem_method_make_input_local>` 関数が追加されました。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:50
 msgid "Transform order"
-msgstr ""
+msgstr "変換の順序"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:52
 msgid ""
 "For a coordinate in CanvasItem local properties to become an actual screen "
 "coordinate, the following chain of transforms must be applied:"
 msgstr ""
+"CanvasItemローカルプロパティの座標を実際の画面座標にするには、次の一連の変換"
+"を適用する必要があります:"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:58
 msgid "Transform functions"
-msgstr ""
+msgstr "変換関数"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:60
 msgid "Obtaining each transform can be achieved with the following functions:"
-msgstr ""
+msgstr "各変換を取得するには、次の関数を使用します:"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:21
@@ -22220,39 +23125,47 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
-msgstr ""
+msgstr "キャンバス・アイテム"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid ""
 ":ref:`CanvasItem.get_global_transform() "
 "<class_CanvasItem_method_get_global_transform>`"
 msgstr ""
+":ref:`CanvasItem.get_global_transform() "
+"<class_CanvasItem_method_get_global_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid "CanvasLayer"
-msgstr ""
+msgstr "キャンバス・レイヤー"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid ""
 ":ref:`CanvasItem.get_canvas_transform() "
 "<class_CanvasItem_method_get_canvas_transform>`"
 msgstr ""
+":ref:`CanvasItem.get_canvas_transform() "
+"<class_CanvasItem_method_get_canvas_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:69
 msgid "CanvasLayer+GlobalCanvas+Stretch"
-msgstr ""
+msgstr "キャンバス・レイヤー+グローバル・キャンバス+ストレッチ"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:69
 msgid ""
 ":ref:`CanvasItem.get_viewport_transform() "
 "<class_CanvasItem_method_get_viewport_transform>`"
 msgstr ""
+":ref:`CanvasItem.get_viewport_transform() "
+"<class_CanvasItem_method_get_viewport_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:72
 msgid ""
 "Finally, then, to convert a CanvasItem local coordinates to screen "
 "coordinates, just multiply in the following order:"
 msgstr ""
+"最後に、CanvasItemのローカル座標をスクリーン座標に変換するには、次の順序で乗"
+"算します:"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:84
 msgid ""
@@ -22261,20 +23174,25 @@ msgid ""
 "coordinates (``CanvasItem.get_global_transform()``), to allow automatic "
 "screen resolution resizing to work properly."
 msgstr ""
+"ただし、通常は画面座標で作業することは望ましくないことに注意してください。推"
+"奨される方法は、画面の自動解像度のサイズ変更が正しく機能するように、単純に"
+"Canvas座標( ``CanvasItem.get_global_transform()`` )で作業することです。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:90
 msgid "Feeding custom input events"
-msgstr ""
+msgstr "カスタム入力イベントのフィード"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:92
 msgid ""
 "It is often desired to feed custom input events to the scene tree. With the "
 "above knowledge, to correctly do this, it must be done the following way:"
 msgstr ""
+"多くの場合、カスタム入力イベントをシーンツリーにフィードすることが望まれま"
+"す。上記の知識をもとに、これを正しく行うには、次のようにしなければなりません:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
 msgid "Using tilemaps"
-msgstr ""
+msgstr "タイルマップの使用"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
 msgid ""
@@ -55693,7 +56611,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
 msgid "Asset Library"
-msgstr ""
+msgstr "アセットライブラリ"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
@@ -71502,7 +72420,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:4
 msgid "Bug triage guidelines"
-msgstr ""
+msgstr "バグ分類のガイドライン"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:6
 msgid ""
@@ -71512,32 +72430,37 @@ msgid ""
 "bugsquad, so do not hesitate to propose modifications to the following "
 "guidelines."
 msgstr ""
+"このページでは、Godotの`GitHub<https://github.com/godotengine/"
+"godot>`_repositoryで問題やプルリクエストを処理する際の、バグ分類チーム、別名"
+"バグチームの典型的なワークフローについて説明します。これはバグチームと一緒に"
+"進化することになっているので、次のガイドラインの修正を提案することをためらわ"
+"ないでください。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:12
 msgid "Issues management"
-msgstr ""
+msgstr "問題管理"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:14
 msgid "GitHub proposes various features to manage issues:"
-msgstr ""
+msgstr "GitHubは課題を管理するためのさまざまな機能を提案します:"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:16
 msgid "Set one or several labels from a predefined list"
-msgstr ""
+msgstr "定義済みリストから1つまたは複数のラベルを設定する"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:17
 msgid "Set one milestone from a predefined list"
-msgstr ""
+msgstr "定義済みの一覧からマイルストーンを1つ設定する"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:18
 msgid "Keep track of the issue in the project dashboard"
-msgstr ""
+msgstr "プロジェクト・ダッシュボードで問題を追跡する"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:19
 msgid ""
 "Define one contributor as \"assignee\" among the Godot engine organization "
 "members"
-msgstr ""
+msgstr "Godotエンジン組織メンバーの間で1人の貢献者を「担当者」として定義します"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:22
 msgid ""
@@ -71547,38 +72470,46 @@ msgid ""
 "it on the issue ticket and/or discussing the best way to resolve it with "
 "other developers."
 msgstr ""
+"GitHubのGodotエンジン組織には現在、限られた数の貢献者しかいないため当面は譲受"
+"人を広範囲に使用しません。すべての寄稿者は問題があればそれをissueチケットに記"
+"載したり、他の開発者と解決するための最善の方法を話し合った後で関連しているな"
+"ら、どのような問題でも解決することを歓迎します。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:28
 msgid "For the time being we do not use the project dashboard feature either."
-msgstr ""
+msgstr "当面はプロジェクト・ダッシュボード機能も使用しません。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:30
 msgid ""
 "As far as possible, we try to assign labels (and milestones, when relevant) "
 "to both issues and pull requests."
 msgstr ""
+"可能な限り、ラベル（および関連する場合はマイルストーン）をissueとpull request"
+"の両方に割り当てます。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:34
 msgid "Labels"
-msgstr ""
+msgstr "ラベル"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:36
 msgid "The following labels are currently defined in the Godot repository:"
-msgstr ""
+msgstr "現在、Godotリポジトリでは以下のラベルが定義されています:"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:38
 msgid "**Categories:**"
-msgstr ""
+msgstr "**カテゴリ:**"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:40
 msgid ""
 "*Archived*: either a duplicate of another issue, or invalid. Such an issue "
 "would also be closed."
 msgstr ""
+"*Archived*：他の問題の重複、または無効です。 このような問題も解決されるでしょ"
+"う。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:42
 msgid "*Bug*: describes something that is not working properly."
-msgstr ""
+msgstr "*Bug*:正しく動作していないものを示します。"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:43
 msgid ""
@@ -71947,7 +72878,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:95
 msgid "And this is a bad example:"
-msgstr ""
+msgstr "これは悪い例です:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:97
 msgid "Insert Your Title Here"
@@ -71958,10 +72889,12 @@ msgid ""
 "Only project, people and node class names should have capitalized first "
 "letter."
 msgstr ""
+"プロジェクト名、ユーザー名、およびノードクラス名だけは先頭を大文字にしてくだ"
+"さい。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:103
 msgid "Translating existing pages"
-msgstr ""
+msgstr "既存のページの翻訳"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:105
 msgid ""
@@ -71993,6 +72926,8 @@ msgid ""
 "By contributing to the documentation on the GitHub repository, you agree "
 "that your changes are distributed under this license."
 msgstr ""
+"GitHubリポジトリのドキュメントに投稿することで、変更がこのライセンスの下で配"
+"布されることに同意します。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:4
 msgid "Docs writing guidelines"
@@ -73092,7 +74027,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
-msgstr ""
+msgstr "Q&A"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"

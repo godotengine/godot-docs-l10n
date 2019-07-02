@@ -33,8 +33,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-06-16 22:53+0200\n"
-"PO-Revision-Date: 2019-06-11 03:16+0000\n"
-"Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
+"PO-Revision-Date: 2019-07-02 12:05+0000\n"
+"Last-Translator: moolow <copyhyeon@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
 "Language: ko\n"
@@ -42,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7-dev\n"
+"X-Generator: Weblate 3.8-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -15351,7 +15351,7 @@ msgid ""
 "for a class called ``PlayerController``."
 msgstr ""
 "정적 타입 또한 더 나은 코드 완성 옵션을 제공합니다. 아래에서"
-"``PlayerController``라는 클래스에 대한 동적 및 정적 타입 완료 옵션의 차이점"
+"``PlayerController`` 라는 클래스에 대한 동적 및 정적 타입 완료 옵션의 차이점"
 "을 볼 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:58
@@ -24956,6 +24956,10 @@ msgid ""
 "on the reasons, please see the :ref:`'Autoloads vs. Internal Nodes' "
 "<doc_autoloads_versus_internal_nodes>` documentation."
 msgstr ""
+"다은 시스템의 데이터를 수정하는 시스템을 갖고 있다면, 오토로드보다는 자체 스"
+"크립트나 씬으로 데이터를 정의해야 합니다. 그 이유에 대한 더 자세한 정보는 "
+"ref:`'오토로드 vs. 내장 노드' <doc_autoloads_versus_internal_nodes>` 문서를 "
+"참고하세요."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:311
 msgid ""
@@ -24966,6 +24970,10 @@ msgid ""
 "should have its own place in the hierarchy as a sibling or some other "
 "relation."
 msgstr ""
+"게임 내 각 하위 시스템은 SceneTree 안에 자체 섹션을 가져야 합니다. 노드가 부"
+"모의 실질적인 요소가 되는 경우에만 노드 자식 관계를 사용해야 합니다. 자식을 "
+"제거해야 부모를 합리적으로 제거하는 것일까요? 그렇지 않으면 노드는 형제나 다"
+"른 관계로서 계층 구조 내에 자리를 잡아야 합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:319
 msgid ""
@@ -24977,17 +24985,24 @@ msgid ""
 "node. To assign the ``target`` :ref:`NodePath <class_NodePath>`, use one of "
 "the following:"
 msgstr ""
+"몇몇 경우에는, 분리된 노드 간의 상대적인 위치가 필요합니다. 이를 위해  :ref:"
+"`RemoteTransform <class_RemoteTransform>` / :ref:`RemoteTransform2D "
+"<class_RemoteTransform2D>`노드를 사용할 수 있습니다. 이것으로 대상 노드는 조"
+"건부로 선택된  Remote\\* 노드의 변형 요소를 상속할 수 있습니다. ``대상``  :"
+"ref:`NodePath <class_NodePath>`\\ 에 액세스하려면 다음 방식 중 하나를 사용하"
+"세요:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:327
 msgid ""
 "A reliable third party, likely a parent node, to mediate the assignment."
-msgstr ""
+msgstr "지정하는 것을 조정하기 위한, 부모 노드와 같은, 신뢰할 수 있는 제 3자."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:328
 msgid ""
 "A group, to easily pull a reference to the desired node (assuming there will "
 "only ever be one of the targets)."
 msgstr ""
+"원하는 노드에 쉽게 참조를 끌어올 수 있는 그룹 (대상 하나만 속한다고 가정)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:331
 msgid ""
@@ -24995,50 +25010,54 @@ msgid ""
 "when one must micro-manage when a node must move around the SceneTree to "
 "preserve itself. For example..."
 msgstr ""
+"언제 해봐야 할까요? 흠, 결정하는 것은 여러분에게 달렸습니다. 마이크로 급 관리"
+"를 해야 할 때나, 노드 자체를 보존하기 위해 SceneTree의 여기 저기로 움직여야 "
+"할 때 이 딜레마가 발생합니다. 예를 들어..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:335
 msgid "Add a \"player\" node to a \"room\"."
-msgstr ""
+msgstr "\"플레이어\" 노드를 \"방\"에 추가하기."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:336
 msgid "Need to change rooms, so one must delete the current room."
-msgstr ""
+msgstr "방을 바꿔야 해서, 현재 방을 삭제해야 합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:337
 msgid ""
 "Before the room can be deleted, one must preserve and/or move the player."
-msgstr ""
+msgstr "방을 삭제할 수 있기 전, 플레이어를 보존하거나/혹은 움직여야 합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:339
 msgid "Is memory a concern?"
-msgstr ""
+msgstr "메모리가 걱정인가?"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:341
 msgid ""
 "If not, one can just create the two rooms, move the player and delete the "
 "old one. No problem."
 msgstr ""
+"걱정되지 않다면, 그냥 두 개의 방을 만들고, 플레이어를 이동시키고, 이전 것을 "
+"삭제합니다. 문제없습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:344
 msgid "If so, one will need to..."
-msgstr ""
+msgstr "걱정된다면, 이렇게 해보죠..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:346
 msgid "Move the player somewhere else in the tree."
-msgstr ""
+msgstr "플레이어를 트리 어딘가로 이동시킵니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:347
 msgid "Delete the room."
-msgstr ""
+msgstr "방을 삭제합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:348
 msgid "Instantiate and add the new room."
-msgstr ""
+msgstr "새로운 방을 인스턴스화하고 추가합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:349
-#, fuzzy
 msgid "Re-add the player."
-msgstr "플레이어"
+msgstr "플레이어를 다시 추가합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:351
 msgid ""
@@ -25049,16 +25068,24 @@ msgid ""
 "is dangerous. It's a maintenance burden, strains code readability, and "
 "bloats the intellectual content of a project unnecessarily."
 msgstr ""
+"이 문제에서 플레이어는 \"특수한 상황\"에 있습니다, 개발자는 프로젝트를 위해 "
+"플레이어를 이런 방식으로 다룰 줄 *알아야 하죠*. 즉, 팀원으로서 이 정보를 확실"
+"히 공유하는 유일한 방법은 *문서화*\\ 하는 것입니다. 하지만 문서에 구현 방법"
+"의 세부 사항을 유지하는 것은 위험합니다. 유지 관리의 부담과, 코드의 가독성을 "
+"해치고, 불필요하게 프로젝트의 지적 내용을 부풀리기 때문입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:358
 msgid ""
 "In a more complex game with larger assets, it can be a better idea to simply "
 "keep the player somewhere else in the SceneTree entirely. This involves..."
 msgstr ""
+"더 많은 자원을 사용하는 더 복잡한 게임이라면, 차라리 플레이어를 SceneTree 어"
+"딘가에 통째로 유지하는 것이 더 좋은 생각일 수 있습니다. 이것이 의미하는 것"
+"은..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:361
 msgid "More consistency."
-msgstr ""
+msgstr "더 일관성 있음."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid "No \"special cases\" that must be documented and maintained somewhere."
@@ -27880,7 +27907,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:331
 msgid "Emission Colors"
-msgstr ""
+msgstr "방출 색상"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:333
 msgid ""
@@ -28748,25 +28775,32 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:38
+#, fuzzy
 msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
-msgstr ""
+msgstr "``Sprite`` 에 넣고 메뉴에서 \"Convert to 2D Mesh\" 를 선택하세요"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:42
+#, fuzzy
 msgid ""
 "A dialog will appear, showing a preview of how the 2D mesh will be created:"
 msgstr ""
+"2D 메시가 어떻게 생성될 지에 대한 미리보기를 보여주는 대화 상자가 나타날 겁니"
+"다."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:46
+#, fuzzy
 msgid ""
 "The default values are good enough for many cases, but you can change growth "
 "and simplification according to your needs:"
 msgstr ""
+"기본값은 많은 경우에 충분하지만 필요에 따라 성장(growth)과 단순화"
+"(simplification)를 변경할 수 있습니다."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:50
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
 "replaced:"
-msgstr ""
+msgstr "마지막으로 ``Convert 2D Mesh`` 버튼을 누르면 스프라이트가 교체됩니다:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:4
 #, fuzzy
@@ -29566,6 +29600,7 @@ msgid "2D in 3D"
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:88
+#, fuzzy
 msgid ""
 "While Godot packs a powerful 2D engine, many types of games use 2D in a 3D "
 "environment. By using a fixed camera (either orthogonal or perspective) that "
@@ -29574,6 +29609,12 @@ msgid ""
 "that take advantage of mixing with 3D backgrounds, more realistic parallax, "
 "lighting/shadow effects, etc."
 msgstr ""
+"Godot은 강력한 2D 엔진을 탑재하고 있지만, 게임들 중 많은 유형들이 3D 환경에"
+"서 2D를 사용합니다. 회전하지 않는 고정된 카메라(직교 또는 원근법)를 사용함으"
+"로써 :ref:`Sprite3D <class_Sprite3D>` 와 :ref:`AnimatedSprite3D "
+"<class_AnimatedSprite3D>` 같은 노드로 3D 배경, 더 현실적인 시차(Parallax), 조"
+"명/그림자(lighting/shadow) 효과 등을 혼합하는 이점을 가진 2D 게임들을 만드는"
+"데 사용할 수 있습니다."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:96
 msgid ""
@@ -29884,7 +29925,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_transforms.rst:62
 #: ../../docs/tutorials/math/interpolation.rst:4
 msgid "Interpolation"
-msgstr ""
+msgstr "보간법 (Interpolation)"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:64
 msgid ""
@@ -48083,9 +48124,8 @@ msgid "Once you are all set, you will get much better results:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "AnimationTree"
-msgstr "애니메이션"
+msgstr "애니메이션 트리"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -71676,7 +71716,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:145
 msgid "Target"
-msgstr ""
+msgstr "대상"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:147
 msgid "Target controls optimization and debug flags. Each mode means:"
@@ -74767,7 +74807,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
-msgstr ""
+msgstr "벡터"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"

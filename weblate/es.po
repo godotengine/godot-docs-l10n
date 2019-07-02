@@ -9,6 +9,7 @@
 # Alejo <patto.revuelto@gmail.com>, 2018.
 # Alvaro García <alvarofernandogarcia@gmail.com>, 2019.
 # Andrus Diaz German <andrusdiazaleman@gmail.com>, 2018.
+# Ángel Sillero Navajas <xenmai95@gmail.com>, 2019.
 # AnyMan <romopua@gmail.com>, 2018-2019.
 # Agustin Ostorero <panconmayonesa56@gmail.com>, 2018.
 # Avocado <avocadosan42@gmail.com>, 2018-2019.
@@ -56,6 +57,7 @@
 # Nahum Rosillo Lopez <nahum.rosillolopez@gmail.com>, 2018.
 # Oscar Vila <codemoscar@gmail.com>, 2018.
 # pablo guevara <pabloguevara@gmail.com>, 2018.
+# Peter Mx <pedroada31@gmail.com>, 2019.
 # Pòsweg <joshu253@gmail.com>, 2018.
 # R. Joshua Seville <rjoshua@protonmail.com>, 2018.
 # Ramiro Garay <ramiro.sgaray@gmail.com>, 2019.
@@ -75,8 +77,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-06-16 22:53+0200\n"
-"PO-Revision-Date: 2019-06-16 20:11+0000\n"
-"Last-Translator: Javier Ocampos <xavier.ocampos@gmail.com>\n"
+"PO-Revision-Date: 2019-07-02 12:05+0000\n"
+"Last-Translator: Peter Mx <pedroada31@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -84,7 +86,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.7-dev\n"
+"X-Generator: Weblate 3.8-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -2431,7 +2433,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
-msgstr "¡Finalizado!"
+msgstr "¡Éxito!"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:167
 msgid ""
@@ -3598,6 +3600,9 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"Es importante tener en cuenta que la frecuencia en la que ``_process()`` "
+"será llamado depende de a cuántos frames por segundo (FPS) estará ejecutando "
+"una aplicación. Esta frecuencia puede variar con el tiempo y dispositivos."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -3687,6 +3692,8 @@ msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"Y el segundo modo es desde código. El siguiente script agregará el nodo "
+"actual al grupo ``enemies`` ni bien aparece en el árbol de escenas."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -5527,7 +5534,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1129
 msgid "Removing old creeps"
-msgstr ""
+msgstr "Removiendo los viejos \"creeps\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
 msgid ""
@@ -5535,6 +5542,9 @@ msgid ""
 "the previous game are still on screen. It would be better if they all "
 "disappeared at the start of a new game."
 msgstr ""
+"Si juegas hasta el \"Game Over\" y comienzas un juego nuevo, los \"creeps\" "
+"del juego previo estarán todavía en pantalla. Sería mejor si todos "
+"desaparecen al comienzo del juego nuevo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid ""
@@ -5544,18 +5554,27 @@ msgid ""
 "``Mob`` nodes in the ``Main`` scene tree until we run the game. Instead "
 "we'll use code."
 msgstr ""
+"Usaremos la señal ``start_game`` que ya fue emitida por el nodo ``HUD`` para "
+"remover los creeps remanentes. No podemos usar el editor para conectar la "
+"señal a los enemigos en la forma que necesitamos porque no habrá nodos "
+"``Mob`` en la escena ``Main`` hasta que hayamos iniciado el juego. Entonces "
+"usaremos código."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1140
 msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
 msgstr ""
+"Comienza añadiendo una nueva función ``Mob.gd``. ``queue_free()`` removerá "
+"el nodo actual al final del frame."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
+"Luego, en ``Main.gd`` agrega una nueva línea dentro de la función "
+"``_on_MobTimer_timeout()``, al final."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1157
 msgid ""
@@ -5563,6 +5582,9 @@ msgid ""
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
 "its ``_on_start_game()`` function."
 msgstr ""
+"Esta línea le dice al nuevo nodo Mob (referenciado por la variable ``mob``) "
+"que responda a cualquier señal ``start_game`` emitida por el nodo ``HUD``, "
+"ejecutando su función ``_on_start_game()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
 msgid "Finishing up"
@@ -6580,6 +6602,9 @@ msgid ""
 "containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
 "page)."
 msgstr ""
+"Los cinco contenedores más comunes (más adelante aprenderás más sobre "
+"contenedores en la página :ref:`GUI Containers <doc_gui_containers>` de la "
+"documentación)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -6597,6 +6622,10 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"Para diseñar tu UI, usarás los nodos Control. Esos son los nodos con íconos "
+"verdes en el editor. Hay docenas de ellos, para crear cualquier cosa, desde "
+"barras de vida hasta aplicaciones complejas. El mismo editor de Godot está "
+"armado usando nodos Control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -6605,6 +6634,10 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"Los nodos Control tienen propiedades únicas que les permiten trabajar bien "
+"uno con otro. Otros nodos visuales, como Node2D y Sprite, no tienen esas "
+"capacidades. Así que para hacer tu vida más fácil, utiliza nodos Control "
+"cuando sea posible para construir las interfaces de usuario."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
@@ -10538,9 +10571,9 @@ msgid ""
 "<class_AudioStream>`, :ref:`Font <class_Font>`, :ref:`Translation "
 "<class_Translation>`."
 msgstr ""
-"Cualquier cosa que Godot grabe o cargue del disco es un Resource. Puede ser "
-"una escena (archivo .scn o .scn), una imagen, un script. Estos son unos "
-"ejemplos de ``Resource`` :ref:`Texture <class_Texture>`, :ref:`Script "
+"Todo lo que Godot guarde o cargue desde el disco es un recurso. Ya sea una "
+"escena (un archivo.tscn o.scn), una imagen, un script.... Estos son algunos "
+"ejemplos de ``Resource``: :ref:`Texture <class_Texture>`, :ref:`Script "
 "<class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
 "<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
 "<class_Font>`, :ref:`Translation <class_Translation>`."
@@ -12964,7 +12997,7 @@ msgstr "{project} -\\-goto {file}:{line}:{col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "Vim (gVim)"
-msgstr ""
+msgstr "Vim (gVim)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "``\"+call cursor({line}, {col})\" {file}``"
@@ -18115,7 +18148,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr "Ruta de recursos"
+msgstr "Ruta de Recursos"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -20727,6 +20760,9 @@ msgid ""
 "Blender. Make sure that the skeleton is reset to its T-pose or default rest "
 "pose."
 msgstr ""
+"Es importante que la malla no esté deformada por huesos cuando se exporta en "
+"Blender. Asegúrate de que los esqueletos están reseteados en su T-pose o "
+"pose de descanso por defecto."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:22
 msgid "Bone Weights"
@@ -22038,6 +22074,9 @@ msgid ""
 "sure that the skeleton is reset to its T-pose or default rest pose before "
 "exporting with your favorite 3D editor."
 msgstr ""
+"Es importante que la malla no se deforme por los huesos al exportarla. "
+"Asegúrate que el esqueleto se restablezca a su posición T o posición de "
+"reposo predeterminada antes de exportarlo con tu editor 3D favorito."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:26
 msgid "Why not FBX?"
@@ -22762,7 +22801,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:330
 msgid "Create a VehicleBody (-vehicle)"
-msgstr ""
+msgstr "Crea un VehicleBody (-vehicle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:332
 msgid ""
@@ -22774,7 +22813,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
 msgid "Create a VehicleWheel (-wheel)"
-msgstr ""
+msgstr "Crea un VehicleWheel (-wheel)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:337
 msgid ""
@@ -24962,6 +25001,11 @@ msgid ""
 "then build it and use it as an export template every time you export the "
 "project."
 msgstr ""
+"Godot provee la opción de usar templates de Android personalizados. En lugar "
+"de usar los templates pre-compilados que se distribuyen con Godot, un "
+"proyecto actual Java de Android es instalado en tu carpeta de proyecto. "
+"Godot lo compilará y lo usará como template cada vez que exportes el "
+"proyecto."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:10
 msgid "There are some reasons why you may want to do this:"
@@ -24969,26 +25013,31 @@ msgstr "Hay algunas razones por las que puedes querer hacer esto:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:12
 msgid "Modify the project before it's build"
-msgstr ""
+msgstr "Modifica el proyecto antes de compilarlo"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
 msgid "Add external SDKs that build with your project"
-msgstr ""
+msgstr "Añade SDKs externos que se compilan con tu proyecto"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:15
 msgid ""
 "Configuring custom build is a more or less straightforward process, but it "
 "may take a while to get used to how the Android SDK works."
 msgstr ""
+"La configuración de la compilación personalizada es un proceso más o menos "
+"sencillo, pero puede llevar un tiempo acostumbrarse a cómo funciona el SDK "
+"de Android."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:17
 msgid ""
 "Instructions will be provided as detailed as possible to do this process."
 msgstr ""
+"Se proporcionarán instrucciones lo más detalladas posible para realizar este "
+"proceso."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:20
 msgid "Set up the Custom Build environment"
-msgstr ""
+msgstr "Configurar el entorno de Compilación Personalizada"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:22
 msgid "Go to the Project menu, and install the *Custom Build* template:"
@@ -28382,7 +28431,6 @@ msgid "Viewport and Canvas items"
 msgstr "Viewport y Canvas items"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
-#, fuzzy
 msgid ""
 "Regular 2D nodes, such as :ref:`Node2D <class_Node2D>` or :ref:`Control "
 "<class_Control>` both inherit from :ref:`CanvasItem <class_CanvasItem>`, "
@@ -28397,17 +28445,16 @@ msgstr ""
 "los hijos también se moverán."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
-#, fuzzy
 msgid ""
 "CanvasItem nodes, and nodes inheriting from them, are direct or indirect "
 "children of a :ref:`Viewport <class_Viewport>`, and will be displayed "
 "through it."
 msgstr ""
-"Esos nodos son situados directa o indirectamente como hijos de un :ref:"
-"`Viewport <class_Viewport>`, y son mostrados en pantalla por este."
+"Los nodos CanvasItem y todos los que heredan de ellos, son directa o "
+"indirectamente hijos de un :ref:`Viewport <class_Viewport>`, y son mostrados "
+"en pantalla por este."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
-#, fuzzy
 msgid ""
 "A Viewport has the property :ref:`Viewport.canvas_transform "
 "<class_Viewport_property_canvas_transform>`, which allows applying a custom :"
@@ -28416,10 +28463,11 @@ msgid ""
 "that transform."
 msgstr ""
 "El nodo Viewport tiene la propiedad :ref:`Viewport.canvas_transform "
-"<class_Viewport_property_canvas_transform>`, que permite modificar toda la "
-"jerarquía de CanvasItem mediante una matriz de transformación :ref:"
-"`Transform2D <class_Transform2D>`. Nodos como :ref:`Camera2D "
-"<class_Camera2D>`, funcionan cambiando esa transformación."
+"<class_Viewport_property_canvas_transform>`, la que permite aplicar una una "
+"matriz de transformación :ref:`Transform2D <class_Transform2D>` "
+"personalizada para modificar la jerarquía de CanvasItem que contiene. Nodos "
+"como :ref:`Camera2D <class_Camera2D>`, funcionan cambiando esa "
+"transformación."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:25
 msgid ""
@@ -28427,16 +28475,17 @@ msgid ""
 "transform property. This approach is more efficient than moving the root "
 "canvas item (and hence the whole scene)."
 msgstr ""
+"Efectos como scrolling, se pueden lograr manipulando la propiedad canvas "
+"transform. Este modo es más eficiente que mover la el canvas item raíz (y "
+"por ende, toda la escena)."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:28
-#, fuzzy
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
 "to the canvas transform. Examples of this are:"
 msgstr ""
-"Esto no es suficiente, hay situaciones donde el juego o la aplicación no "
-"quiere que *todo* sea transformado por el canvas transform. Ejemplos de esto "
-"son:"
+"Normalmente no queremos que *todo* el juego o aplicación sea sujeto a los "
+"cambios en el transform del canvas. Ejemplos de esto son:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid ""
@@ -28453,15 +28502,18 @@ msgid ""
 "display and other elements to retain their screen positions even when our "
 "view of the game world is changing."
 msgstr ""
+"**UI**: Piensa en una interfaz de usuario (UI) o Heads-up display (HUD, "
+"proyección elevada de información) superpuesta en nuestra vista de juego. "
+"Queremos un contador de vida, contador de puntos y otros elementos que "
+"tienen que manter su posición mientras la vista del mundo del juego cambia."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:34
-#, fuzzy
 msgid ""
 "**Transitions**: We may want visual effects used for transitions (fades, "
 "blends) to remain at a fixed screen location."
 msgstr ""
-"**Transitions**: Efectos usados para transiciones (mezclas, "
-"desvanecimientos) también deben permanecer en un lugar fijo."
+"**Transiciones**: Podríamos preferir que efectos usados para transiciones "
+"(mezclas, desvanecimientos) se mantengan en un lugar fijo de la pantalla."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:36
 msgid "How can these problems be solved in a single scene tree?"
@@ -28473,7 +28525,6 @@ msgid "CanvasLayers"
 msgstr "CanvasLayers"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:41
-#, fuzzy
 msgid ""
 "The answer is :ref:`CanvasLayer <class_CanvasLayer>`, which is a node that "
 "adds a separate 2D rendering layer for all its children and grand-children. "
@@ -28483,14 +28534,14 @@ msgid ""
 "transform and do not depend on the transform of other layers. This allows "
 "the UI to be fixed in screen-space while our view on the game world changes."
 msgstr ""
-"La respuesta es :ref:`CanvasLayer <class_CanvasLayer>`, que es un nodo que "
-"añade una capa de renderizado 2D separada para todos sus hijos y nietos. Los "
-"niños de Viewport dibujarán por defecto en la capa \"0\", mientras que "
-"CanvasLayer dibujará en cualquier capa numérica. Las capas con un número "
-"mayor se sortearán por encima de las capas con un número menor. CanvasLayers "
-"también tienen su propia transformación, y no dependen de la transformación "
-"de otras capas. Esto permite que la interfaz de usuario se fije en el lugar, "
-"mientras el mundo se mueve."
+"La solución es la :ref:`CanvasLayer <class_CanvasLayer>`, que es un nodo que "
+"añade una capa de renderizado 2D separada para todos sus nodos hijos y "
+"descendientes. Los hijos de Viewport dibujarán por defecto en la capa \"0\", "
+"mientras que CanvasLayer dibujará en cualquier capa numérica. Las capas con "
+"un número mayor se dibujarán por encima de las capas con un número menor. "
+"CanvasLayers también tienen su propia transformación, y no dependen de la "
+"transformación de otras capas. Esto permite que la interfaz de usuario se "
+"fije en el lugar mientras se cambia la vista del mundo del juego."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:50
 msgid ""
@@ -28525,6 +28576,13 @@ msgid ""
 "controlling their drawing order (see :ref:`Node2D.z_index "
 "<class_Node2D_property_z_index>`)."
 msgstr ""
+"Las CanvasLayers no están necesariamente para controlar el orden de dibujado "
+"de los nodos. El modo normal de asegurar que un nodo es dibujado "
+"correctamente 'al frente' o 'detrás' otros, es manipulando el orden de los "
+"nodos en el panel de escena. Los nodos más arriba en el panel de escena, son "
+"dibujados *detrás* de los que están más abajo en el viewport. Nodos 2D "
+"también tienen la propiedad de controlar el orden de dibujado (ver :ref:"
+"`Node2D.z_index <class_Node2D_property_z_index>`)."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:4
 msgid "Viewport and canvas transforms"
@@ -28920,9 +28978,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:110
-#, fuzzy
 msgid "Collision Shapes"
-msgstr "Figuras de Colisión"
+msgstr "Formas de Colisión"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:112
 msgid ""
@@ -29288,7 +29345,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:146
 msgid "Local Coords"
-msgstr "Coordenadas locales"
+msgstr "Coordenadas Locales"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:148
 msgid ""
@@ -37455,7 +37512,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:994
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1412
 msgid "Final notes"
-msgstr ""
+msgstr "Notas finales"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:839
 msgid ""
@@ -44570,16 +44627,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:89
-#, fuzzy
 msgid "The compressor has many uses. For example:"
 msgstr "El compresor tiene muchos usos en el mix, por ejemplo:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:91
-#, fuzzy
 msgid "It can be used in the Master bus to compress the whole output."
-msgstr ""
-"Puede ser usado en el 'Master bus' para comprimir todo el resultado (Aunque "
-"un limitador seria mejor opcion)"
+msgstr "Puede ser usado en el 'Master bus' para comprimir todo el resultado."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:92
 msgid ""
@@ -44667,14 +44720,13 @@ msgid "Limiter"
 msgstr "Limitador"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:130
-#, fuzzy
 msgid ""
 "A limiter is similar to a compressor, but it's less flexible and designed to "
 "prevent a signal's amplitude exceeding a given dB threshold. Adding a "
 "limiter to the *Master Bus* is a safeguard against clipping."
 msgstr ""
 "Un limitador es similar a un compresor, pero es menos flexible y esta "
-"diseñado para omitir el sonido al pasar el limite de dB. Añadir uno al "
+"diseñado para omitir el sonido al exceder el limite de dB. Añadir uno al "
 "*Master Bus* es siempre recomendado para reducir los efectos de los recortes."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:133
@@ -44695,13 +44747,12 @@ msgid "NotchFilter"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:140
-#, fuzzy
 msgid ""
 "The opposite to the BandPassFilter, it removes a band of sound from the "
 "frequency spectrum at a given *Cutoff* frequency."
 msgstr ""
 "Lo opuesto al \"BandPassFilter\", remueve una banda del sonido del espectro "
-"de frecuencias en un cierto *Cutoff*."
+"de frecuencias en una cierta frecuencia de *Cutoff*."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:143
 msgid "Panner"
@@ -44763,12 +44814,11 @@ msgid "StereoEnhance"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:171
-#, fuzzy
 msgid ""
 "This effect has a few algorithms for enhancing a signal's stereo spectrum."
 msgstr ""
-"Este efecto tiene algunos algoritmos disponibles para incremental el "
-"espectro de sonido, en este caso es necesario."
+"Este efecto tiene algunos algoritmos disponibles para mejorar el espectro de "
+"una señal estereo."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:174
 msgid "Automatic bus disabling"
@@ -44838,13 +44888,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:22
-#, fuzzy
 msgid ""
 "Here is a comparison of the two types of file to help you choose the one "
 "that fits your use case best:"
 msgstr ""
-"Aqui hay una comparacion de los dos, para ayudarte a elegir cual es mejor "
-"para tu uso especifico:"
+"Aquí hay una comparación de los dos tipos de archivo para ayudarte a elegir "
+"cual es mejor para tu uso especifico:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:24
 msgid ""
@@ -44969,15 +45018,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:82
-#, fuzzy
 msgid ""
 "Enable it by setting it depending on how objects will be moved (whether on "
 "regular *process* or *physics_process* step) and the tracking will happen "
 "automatically."
 msgstr ""
-"Simplemente habilítalo configurándolo en función de cómo se moverán los "
-"objetos (ya sea en el paso *process* normal o *physics_process*) y el "
-"seguimiento se realizará automáticamente!"
+"Habilítalo configurándolo en función de cómo se moverán los objetos (ya sea "
+"en el paso *process* normal o *physics_process*) y el seguimiento se "
+"realizará automáticamente."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:4
 msgid "Sync the gameplay with audio and music"
@@ -47584,7 +47632,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:263
 msgid "Dot product"
-msgstr "Producto de puntos"
+msgstr "Producto punto"
 
 #: ../../docs/tutorials/math/vector_math.rst:265
 msgid ""
@@ -47593,15 +47641,15 @@ msgid ""
 "returns a **scalar**. Unlike a vector, which contains both magnitude and "
 "direction, a scalar value has only magnitude."
 msgstr ""
-"El **producto de puntos** es uno de los conceptos más importantes en la "
-"matemática vectorial, pero a menudo es malentendido. El producto de punto es "
+"El **producto punto** es uno de los conceptos más importantes en la "
+"matemática vectorial, pero a menudo es malentendido. El producto punto es "
 "una operación en dos vectores que devuelve un **escalar**. A diferencia de "
 "un vector, que contiene tanto la magnitud como la dirección, un valor "
 "escalar sólo tiene magnitud."
 
 #: ../../docs/tutorials/math/vector_math.rst:270
 msgid "The formula for dot product takes two common forms:"
-msgstr "La fórmula para el producto de puntos toma dos formas comunes:"
+msgstr "La fórmula para el producto punto toma dos formas comunes:"
 
 #: ../../docs/tutorials/math/vector_math.rst:272
 msgid ""
@@ -47626,10 +47674,10 @@ msgid ""
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
 "tell us something about the angle between two vectors:"
 msgstr ""
-"El producto de puntos es más útil cuando se usa con vectores unitarios, "
-"haciendo que la primera fórmula se reduzca a ``cosθ``. Esto significa que "
-"podemos usar el producto de puntos para indicarnos algo sobre el ángulo "
-"entre dos vectores:"
+"El producto punto es más útil cuando se usa con vectores unitarios, haciendo "
+"que la primera fórmula se reduzca a ``cosθ``. Esto significa que podemos "
+"usar el producto punto para indicarnos algo sobre el ángulo entre dos "
+"vectores:"
 
 #: ../../docs/tutorials/math/vector_math.rst:302
 msgid ""
@@ -47794,7 +47842,7 @@ msgid ""
 "(under the plane), and (contrary to popular belief) you can also use their "
 "math in 2D:"
 msgstr ""
-"El producto de puntos tiene otra propiedad interesante con los vectores "
+"El producto punto tiene otra propiedad interesante con los vectores "
 "unitarios. Imaginemos que perpendicular a ese vector (y a través del origen) "
 "pasa un plano. Los planos dividen todo el espacio en positivo (sobre el "
 "plano) y negativo (debajo del plano), y (contrariamente a la creencia "
@@ -47844,8 +47892,8 @@ msgid ""
 "time we do dot product between vector and position), returns the **distance "
 "from the point to the plane**:"
 msgstr ""
-"Ahora que está claro lo que es un plano, volvamos al producto de puntos. El "
-"producto de puntos entre un **vector unitario** y cualquier **punto en el "
+"Ahora que está claro lo que es un plano, volvamos al producto punto. El "
+"producto punto entre un **vector unitario** y cualquier **punto en el "
 "espacio** (sí, esta vez hacemos producto de puntos entre vector y posición), "
 "devuelve la **distancia entre el punto y el plano**:"
 
@@ -48362,7 +48410,7 @@ msgstr ""
 "Puede parecer extraño, pero tiene mucha lógica. Recuerda, como hemos visto "
 "en el :ref:`doc_vector_math`, lo que pasó es que la distancia al eje X, y la "
 "distancia al eje Y fueron calculadas. El cálculo de la distancia en una "
-"dirección o plano fue uno de los usos del producto de puntos. Esto fue "
+"dirección o plano fue uno de los usos del producto punto. Esto fue "
 "suficiente para recuperar las coordenadas de diseño de cada punto de la nave."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:121
@@ -48878,9 +48926,8 @@ msgid "And often simplified to:"
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:26
-#, fuzzy
 msgid "which is exactly the same."
-msgstr "Sin embargo, esto no es lo mismo:"
+msgstr "lo que es exactamente lo mismo."
 
 #: ../../docs/tutorials/math/interpolation.rst:28
 msgid ""
@@ -48897,9 +48944,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:33
-#, fuzzy
 msgid "Vector interpolation"
-msgstr "Interpolación de pista"
+msgstr "Interpolación de vectorial"
 
 #: ../../docs/tutorials/math/interpolation.rst:35
 msgid ""
@@ -48924,14 +48970,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:50
-#, fuzzy
 msgid "It will produce the following motion:"
-msgstr "La escena Mob usará los siguientes nodos:"
+msgstr "Esto producirá el siguiente movimiento:"
 
 #: ../../docs/tutorials/math/interpolation.rst:55
-#, fuzzy
 msgid "Transform interpolation"
-msgstr "Interpolación de pista"
+msgstr "Interpolación de matriz de transformación"
 
 #: ../../docs/tutorials/math/interpolation.rst:57
 msgid ""
@@ -48947,18 +48991,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:64
-#, fuzzy
 msgid "Using the following pseudocode:"
-msgstr "Añade el siguiente código:"
+msgstr "Utilizando el siguiente pseudocódigo:"
 
 #: ../../docs/tutorials/math/interpolation.rst:76
 msgid "And again, it will produce the following motion:"
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:82
-#, fuzzy
 msgid "Smoothing motion"
-msgstr "Root motion"
+msgstr "Suavizando el movimiento"
 
 #: ../../docs/tutorials/math/interpolation.rst:84
 msgid ""
@@ -48967,9 +49009,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:96
-#, fuzzy
 msgid "Here is how it looks:"
-msgstr "Aquí hay un diagrama de cómo se ve:"
+msgstr "Así es cómo se ve:"
 
 #: ../../docs/tutorials/math/interpolation.rst:100
 msgid ""
@@ -49060,14 +49101,12 @@ msgid "We then take our three points and reduce them to two:"
 msgstr ""
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:86
-#, fuzzy
 msgid "And to one:"
-msgstr "Y cómo ejecutarlo:"
+msgstr "Y a uno:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:94
-#, fuzzy
 msgid "Here is the full function:"
-msgstr "A continuación, añade dos funciones:"
+msgstr "Aquí está la función completa:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:110
 msgid ""
@@ -49081,9 +49120,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:120
-#, fuzzy
 msgid "Adding control points"
-msgstr "Agregando luces"
+msgstr "Agregando puntos de control"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:122
 msgid ""
@@ -49127,14 +49165,12 @@ msgid "Curve2D, Curve3D, Path and Path2D"
 msgstr ""
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:143
-#, fuzzy
 msgid ""
 "There are two objects that contain curves: :ref:`Curve3D <class_Curve3D>` "
 "and :ref:`Curve2D <class_Curve2D>` (for 3D and 2D respectively)."
 msgstr ""
-"Las CurveTables son la misma cosa, excepto que se asignan a una matriz de "
-"valores flotantes o a un objeto de recurso :ref:`Curve <class_Curve>`/:ref:"
-"`Curve2D <class_Curve2D>`."
+"Existen dos objetos que contienen curvas: :ref:`Curve3D <class_Curve3D>` y :"
+"ref:`Curve2D <class_Curve2D>` (para 3D y 2D respectivamente)."
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:145
 msgid ""
@@ -49961,7 +49997,7 @@ msgstr "Añadir un fotograma clave a la pista de función de llamada"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:399
 msgid "Enter \"play\" as the function name."
-msgstr ""
+msgstr "Introduzca \"play\" como el nombre de la función."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:404
 msgid "Keyframe settings of a call func track"
@@ -50453,9 +50489,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:221
-#, fuzzy
 msgid "Your final skeleton should look something like this:"
-msgstr "La escena final debería verse similar a esta."
+msgstr "El esqueleto finalizado debería verse similar a esto:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:225
 msgid ""
@@ -50464,7 +50499,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:228
-#, fuzzy
 msgid ""
 "Now that the whole figure is rigged, the next step is setting up the IK "
 "chains. IK chains allow for more natural control of extremities."
@@ -50515,9 +50549,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:264
-#, fuzzy
 msgid "Animation tips"
-msgstr "Opciones de animación"
+msgstr "Recomendaciones para animaciones"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:266
 msgid ""
@@ -50527,19 +50560,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:271
-#, fuzzy
 msgid "Setting keyframes and excluding properties"
-msgstr "Accediendo a propiedades de nodos de la escena"
+msgstr "Asignando keyframes y excluyendo propiedades"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:273
-#, fuzzy
 msgid ""
 "Special contextual elements appear in the top toolbar when the animation "
 "editor window is open:"
 msgstr ""
-"Al hacer animación en 2D, un ayudante estará presente en el menú superior. "
-"Este asistente sólo aparece cuando se abre la ventana del editor de "
-"animación:"
+"Los elementos contextuales especiales aparecerán en la barra de herramientas "
+"superior cuando se abra el panel del editor de animación:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:278
 msgid ""
@@ -50566,9 +50596,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:294
-#, fuzzy
 msgid "Creating a rest pose"
-msgstr "Creando un árbol"
+msgstr "Creando una posición de descanso"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:296
 msgid ""
@@ -50583,9 +50612,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:302
-#, fuzzy
 msgid "Create a new animation, rename it \"rest\"."
-msgstr "Crear un nodo AnimationPlayer"
+msgstr "Crea una nueva animación, renómbrala a \"rest\" (descanso)."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:304
 msgid "Select all nodes in your rig (box selection should work fine)."
@@ -50631,7 +50659,6 @@ msgid "Keyframing IK chains"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:333
-#, fuzzy
 msgid ""
 "When editing IK chains, it's not necessary to select the whole chain to add "
 "keyframes. Selecting the endpoint of the chain and inserting a keyframe will "
@@ -50640,8 +50667,7 @@ msgstr ""
 "Cuando se editan cadenas IK, no es necesario seleccionar toda la cadena para "
 "añadir fotogramas clave. Al seleccionar el punto final de la cadena e "
 "insertar un fotograma clave, se insertarán automáticamente fotogramas clave "
-"hasta la base de la cadena. Esto hace que la tarea de animar las "
-"extremidades sea mucho más sencilla."
+"hasta la base de la cadena."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:338
 msgid "Visually move a sprite behind its parent"
@@ -50678,13 +50704,12 @@ msgid "Select the relevant keys."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:359
-#, fuzzy
 msgid ""
 "Click on the pencil icon in the bottom right of the animation panel, this "
 "will open the transition editor."
 msgstr ""
-"Haz clic en el nodo AnimationPlayer en la pestaña Nodos para abrir el Panel "
-"de Animación en la parte inferior de la ventana de visualización."
+"Haz clic en el ícono de lápiz en la parte inferior derecha del panel de "
+"animación, esto abrirá el editor de transiciones."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
 msgid "In the transition editor click on the desired curve to apply it."
@@ -51654,6 +51679,10 @@ msgid ""
 "do so in a reverse depth-first order: Starting with the node at the bottom "
 "of the scene tree, and ending at the root node:"
 msgstr ""
+"Cuando se envían eventos a todos los nodos que están escuchando en la "
+"escena, el viewport lo hará en un orden depth-first (primero en "
+"profundidad): Comenzando por el nodo al final del árbol de escenas y "
+"finalizando en el nodo raíz:"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:112
 msgid ""
@@ -51661,6 +51690,9 @@ msgid ""
 "specific Controls, only direct ancestors of the targeted Control node "
 "receive the event."
 msgstr ""
+"Los eventos de GUI irán hacia arriba del árbol de escenas, como los eventos "
+"apuntan a Controls específicos, sólo se dirige a ancestros de los nodos "
+"Control indicados para recibir el evento."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:115
 msgid ""
@@ -51668,6 +51700,10 @@ msgid ""
 "nodes to handle and consume particular events, while their ancestors, and "
 "ultimately the scene root, can provide more generalized behaviour if needed."
 msgstr ""
+"De acuerdo al diseño basado en nodos de Godot, esto habilita que nodos hijos "
+"especializados para manipular y consumir eventos particulares, mientras que "
+"los ancestros y finalmente el árbol de escenas, pueden proveer un "
+"comportamiento más generalizado si es necesario."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:121
 msgid "Anatomy of an InputEvent"
@@ -56473,9 +56509,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:42
-#, fuzzy
 msgid "Centering a control"
-msgstr "Creando un árbol"
+msgstr "Centrando un control"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:44
 msgid ""
@@ -56521,9 +56556,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:18
-#, fuzzy
 msgid "Container layout"
-msgstr "Tipos de Container integrados"
+msgstr "Esquema de Containers"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:20
 msgid ""
@@ -56605,9 +56639,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:60
-#, fuzzy
 msgid "Container types"
-msgstr "Tipos de Container integrados"
+msgstr "Tipos de Container"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:62
 msgid ""
@@ -56616,9 +56649,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:65
-#, fuzzy
 msgid "Box Containers"
-msgstr "Viewport Container"
+msgstr "Box Containers"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:67
 msgid ""
@@ -56635,9 +56667,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:76
-#, fuzzy
 msgid "Grid Container"
-msgstr "Viewport Container"
+msgstr "Grid Container"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:78
 msgid ""
@@ -56647,9 +56678,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:84
-#, fuzzy
 msgid "Margin Container"
-msgstr "Viewport Container"
+msgstr "Margin Container"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:86
 msgid ""
@@ -56665,9 +56695,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:98
-#, fuzzy
 msgid "Tab Container"
-msgstr "Viewport Container"
+msgstr "Tab Container"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:100
 msgid ""
@@ -56695,9 +56724,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:114
-#, fuzzy
 msgid "Split Container"
-msgstr "Viewport Container"
+msgstr "Split Container"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:116
 msgid ""
@@ -56714,9 +56742,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:128
-#, fuzzy
 msgid "PanelContainer"
-msgstr "Viewport Container"
+msgstr "Panel Container"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:130
 msgid ""
@@ -56732,9 +56759,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:139
-#, fuzzy
 msgid "ScrollContainer"
-msgstr "Viewport Container"
+msgstr "Scroll Container"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:141
 msgid ""
@@ -56758,9 +56784,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:156
-#, fuzzy
 msgid "ViewportContainer"
-msgstr "Viewport Container"
+msgstr "ViewportContainer"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:158
 msgid ""
@@ -56770,9 +56795,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:162
-#, fuzzy
 msgid "Creating custom Containers"
-msgstr "Creando tipos de datos personalizados"
+msgstr "Creando contenedores personalizados"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:164
 msgid ""
@@ -57471,9 +57495,8 @@ msgid "Multiple resolutions"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:8
-#, fuzzy
 msgid "The problem of multiple resolutions"
-msgstr "El tipo de transición"
+msgstr "El problema de las resoluciones múltiples"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:10
 msgid ""
@@ -57806,9 +57829,8 @@ msgid "Before most game data is loaded."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:248
-#, fuzzy
 msgid "Handling aspect ratios"
-msgstr "Manejando una señal"
+msgstr "Trabajando con relaciones de aspecto"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:250
 msgid ""
@@ -61818,9 +61840,8 @@ msgid "Random seed used as base for random."
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/index.rst:2
-#, fuzzy
 msgid "Your first shader"
-msgstr "Tu primer juego"
+msgstr "Tu primer shader"
 
 #: ../../docs/tutorials/shading/your_first_shader/index.rst:4
 msgid ""
@@ -61851,9 +61872,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:4
-#, fuzzy
 msgid "What are shaders?"
-msgstr "Spatial shaders"
+msgstr "¿Qué son los shaders?"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:9
 msgid ""
@@ -61964,18 +61984,16 @@ msgid "access other pixels from current pixel (or vertices)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:74
-#, fuzzy
 msgid "store previous iterations"
-msgstr "Otras consideraciones"
+msgstr "guarda iteraciones previas"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:75
 msgid "update on the fly (they can, but they need to be compiled)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:78
-#, fuzzy
 msgid "Structure of a shader"
-msgstr "Imagen de un Label"
+msgstr "Estructura de un shader"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:80
 msgid ""
@@ -62004,18 +62022,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:93
-#, fuzzy
 msgid ""
 "For more information about how shaders operate specifically in Godot see "
 "the :ref:`Shaders <doc_shaders>` doc."
 msgstr ""
-"Para más información sobre cómo funcionan los nodos ``Viewport``, lee :ref:"
-"`Viewports Tutorial <doc_viewports>`."
+"Para más información sobre cómo funcionan los shaders específicamente en "
+"Godot, lee :ref:`Shaders <doc_shaders>` doc."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:96
-#, fuzzy
 msgid "Technical overview"
-msgstr "Resumen"
+msgstr "Reseña técnica"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:98
 msgid ""
@@ -62046,9 +62062,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:4
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:51
-#, fuzzy
 msgid "Your first CanvasItem shader"
-msgstr "Shaders CanvasItem"
+msgstr "Tu primer shader CanvasItem"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:9
 msgid ""
@@ -62128,13 +62143,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:53
-#, fuzzy
 msgid ""
 "In Godot, all shaders start with a line specifying what type of shader they "
 "are. It uses the following format:"
 msgstr ""
-"Todos los shaders deben especificar el tipo en la primera línea, en el "
-"siguiente formato:"
+"En Godot, todos los shaders deben especificar el tipo en la primera línea, "
+"en el siguiente formato:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:60
 msgid ""
@@ -62158,9 +62172,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:70
-#, fuzzy
 msgid "Your first fragment function"
-msgstr "Tu primer juego"
+msgstr "Tu primera función fragment"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:72
 msgid ""
@@ -62238,9 +62251,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:142
-#, fuzzy
 msgid "Uniform input"
-msgstr "Uniforms"
+msgstr "Entrada uniform"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:144
 msgid ""
@@ -62254,13 +62266,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:152
-#, fuzzy
 msgid ""
 "For more information about usage see the :ref:`Shading Language doc "
 "<doc_shading_language>`."
 msgstr ""
-"Para una lista completa de las funciones GLSL integradas, por favor lee la "
-"referencia en :ref:`Shading Language <doc_shading_language>` ."
+"Para más información sobre el uso, lee :ref:`Shading Language doc "
+"<doc_shading_language>`."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:154
 msgid "Add a uniform to change the amount of blue in our Sprite."
@@ -62276,9 +62287,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:171
-#, fuzzy
 msgid "Interacting with shaders from code"
-msgstr "Interactuar con la luz"
+msgstr "Interactuando con shaders desde código"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:173
 msgid ""
@@ -62341,9 +62351,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:4
-#, fuzzy
 msgid "Your first Spatial shader"
-msgstr "Spatial shaders"
+msgstr "Tu primer shader Spatial"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:6
 msgid ""
@@ -62443,9 +62452,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:60
-#, fuzzy
 msgid "This adds a :ref:`PlaneMesh <class_planemesh>` to our scene."
-msgstr "Primero, agrega un :ref:`Viewport <class_Viewport>` a la escena."
+msgstr "Esto agrega un :ref:`PlaneMesh <class_planemesh>` a nuestra escena."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:62
 msgid ""
@@ -62545,9 +62553,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:143
-#, fuzzy
 msgid "Noise heightmap"
-msgstr "Baked lightmaps"
+msgstr "Noise heightmap"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:145
 msgid ""
@@ -62589,9 +62596,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:166
-#, fuzzy
 msgid "Once you set it up and should look like this."
-msgstr "En código se vería así:"
+msgstr "Una vez que esté todo configurado, debería verse así."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:170
 msgid ""
@@ -62679,9 +62685,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:243
-#, fuzzy
 msgid "First, we will add an :ref:`OmniLight<class_OmniLight>` to the scene."
-msgstr "Primero, agrega un :ref:`Viewport <class_Viewport>` a la escena."
+msgstr ""
+"Primero, agregaremos una :ref:`OmniLight<class_OmniLight>` a la escena."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:247
 msgid ""
@@ -62844,11 +62850,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:45
-#, fuzzy
 msgid ""
 "For a full list of render modes see the :ref:`Spatial shader reference "
 "<doc_spatial_shader>`."
-msgstr ":ref:`Spatial shaders <doc_spatial_shader>`"
+msgstr ""
+"Para una lista completa de los modos de renderizado, ver :ref:`Spatial "
+"shader reference <doc_spatial_shader>`."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:47
 msgid ""
@@ -63031,9 +63038,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:225
-#, fuzzy
 msgid "Advanced effects: waves"
-msgstr "Matemática vectorial avanzada"
+msgstr "Efectos avanzados: olas"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:227
 msgid ""
@@ -63086,9 +63092,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:276
-#, fuzzy
 msgid "Using this you get:"
-msgstr "En esta guía aprenderás a hacerlo:"
+msgstr "Usando esto tendrás:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:280
 msgid ""
@@ -67857,10 +67862,13 @@ msgstr ""
 "variables:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1145
+#, fuzzy
 msgid ""
 "``bomb_mesh``: The :ref:`MeshInstance <class_MeshInstance>` used for the "
 "bomb mesh."
 msgstr ""
+"``bomb_mesh``: El :ref:`MeshInstance <class_MeshInstance>` utilizado para el "
+"mesh de la bomba."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1146
 msgid "``FUSE_TIME``: The length of time for which the fuse burns."
@@ -67878,10 +67886,12 @@ msgid ""
 "``explosion_area``: The :ref:`Area <class_Area>` node used for detecting "
 "what nodes are inside the explosion."
 msgstr ""
+"``explosion_area``: El nodo :ref:`Area <class_Area>` utilizado para detectar "
+"que nodos se encuentran dentro de la explosión."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1149
 msgid "``EXPLOSION_DAMAGE``: The amount of damage the explosion does."
-msgstr ""
+msgstr "``EXPLOSION_DAMAGE``: La cantidad de daño que hace la explosión."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1150
 msgid ""
@@ -67889,16 +67899,22 @@ msgid ""
 "<class_Particles>` take (you can calculate this number by multiplying the "
 "particles ``lifetime`` by its ``speed scale``)"
 msgstr ""
+"``EXPLOSION_TIME``: La duración de tiempo que las :ref:`Particles "
+"<class_Particles>` de la explosión duraran (puedes calcular este numero "
+"multiplicando las partículas ``lifetime`` por su ``speed scale``)"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1151
 msgid ""
 "``explosion_timer``: A variable for tracking how long the explosion has "
 "lasted."
 msgstr ""
+"``explosion_timer``: Una variable para rastrear que tanto tiempo ha durado "
+"la explosión."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1152
+#, fuzzy
 msgid "``explode``: A boolean for tracking whether the bomb has exploded."
-msgstr ""
+msgstr "``explode``: Una boolean para rastrear si la bomba ha explotado."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1153
 msgid "``fuse_particles``: The fuse :ref:`Particles <class_Particles>` node."
@@ -68233,6 +68249,8 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1416
 msgid "Whew! That was a lot of work. Now you have a VR project!"
 msgstr ""
+"¡Wow! Eso fue un montón de trabajo. ¡Ahora tienes un proyecto de Realidad "
+"Virtual!"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1420
 msgid ""
@@ -68251,7 +68269,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/index.rst:2
 msgid "Editor plugins"
-msgstr ""
+msgstr "Plugins del editor"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:4
 msgid "Making plugins"
@@ -68285,13 +68303,15 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:22
 msgid "Creating a plugin"
-msgstr ""
+msgstr "Creando un plugin"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:24
 msgid ""
 "Before starting, create a new empty project wherever you want. This will "
 "serve as a base to develop and test the plugins."
 msgstr ""
+"Antes de empezar, crea un proyecto vacío nuevo donde quieras.  Esto servirá "
+"como base para desarrollar y probar los plugins."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:27
 msgid ""
@@ -68486,16 +68506,14 @@ msgstr ""
 "`EditorPlugin <class_EditorPlugin>`."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:294
-#, fuzzy
 msgid ""
 "You need to select a dock position and define the control to add (which is "
 "the scene you just created). Don't forget to **remove the dock** when the "
 "plugin is deactivated. The script could look like this:"
 msgstr ""
 "Necesitas seleccionar una posición de panel para añadirlo y tener un Control "
-"para añadir (que es la escena que acabas de crear). También es importante "
-"que recuerdes **quitar el panel** cuando el plugin está desactivado. El "
-"código puede verse así:"
+"para añadir (que es la escena que acabas de crear). No olvides **quitar el "
+"panel** cuando el plugin es desactivado. El código debería verse así:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:352
 msgid ""
@@ -70630,14 +70648,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/index.rst:2
-#, fuzzy
 msgid "Android plugins"
-msgstr "Acerca de los plugins"
+msgstr "Plugins de Android"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:4
-#, fuzzy
 msgid "Creating Android plugins"
-msgstr "Creación de un simple plugin"
+msgstr "Creando plugins de Android"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:9
 msgid ""
@@ -70759,9 +70775,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:53
-#, fuzzy
 msgid "Android plugin"
-msgstr "Android"
+msgstr "Plugin de Android"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:55
 msgid ""
@@ -70788,9 +70803,8 @@ msgid "Once created, there are certain rules to follow, but they are simple."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:64
-#, fuzzy
 msgid "Android Directories"
-msgstr "Añadir vectores"
+msgstr "Directorios de Android"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:66
 msgid ""
@@ -70903,17 +70917,16 @@ msgid "Java singleton"
 msgstr "Singleton Java"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:164
-#, fuzzy
 msgid ""
 "An Android plugin will usually have a singleton class that will load it, "
 "this class inherits from ``Godot.SingletonBase``. Resource identifiers for "
 "any additional resources you have provided for the module will be in the "
 "``com.godot.game.R`` class, so you'll likely want to import it."
 msgstr ""
-"Un módulo Android normalmente tendrá una clase singleton que lo cargará, "
+"Un plugin de Android normalmente tendrá una clase singleton que lo cargará, "
 "esta clase hereda de ``Godot.SingletonBase``. Los identificadores de "
 "recursos para cualquier recurso adicional que haya proporcionado para el "
-"módulo estarán en el juego ``com.godot.game.R``, por lo que probablemente "
+"módulo estarán en la clase ``com.godot.game.R``, por lo que probablemente "
 "querrás importarlo."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:169
@@ -71327,13 +71340,12 @@ msgid "Implemented in ``platform/iphone/game_center.mm``."
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:178
-#, fuzzy
 msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
 "has 8 methods:"
 msgstr ""
 "La API de Game Center está disponible a través del singleton \"GameCenter\". "
-"Tiene 6 métodos:"
+"Tiene 8 métodos:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:181
 msgid "``bool is_authenticated();``"
@@ -72218,14 +72230,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:16
-#, fuzzy
 msgid "Creating a Thread"
-msgstr "Creando un árbol"
+msgstr "Creando un hilo"
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:18
-#, fuzzy
 msgid "Creating a thread is very simple, just use the following code:"
-msgstr "Para activar una interfaz, ejecutarás el siguiente código:"
+msgstr "Crear un hilo es muy simple, sólo usa el siguiente código:"
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:43
 msgid ""
@@ -72266,9 +72276,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:62
-#, fuzzy
 msgid "Here is an example of using a Mutex:"
-msgstr "Abajo se muestra un ejemplo de archivo de clase."
+msgstr "Aquí hay un ejemplo del uso de un Mutex:"
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:94
 msgid "Semaphores"
@@ -72402,18 +72411,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry.rst:17
-#, fuzzy
 msgid "Here is a simple example of how to use it to add a single triangle."
-msgstr "He aquí un ejemplo simple de su funcionamiento:"
+msgstr "Aquí hay un ejemplo simple de cómo usarlo para agregar un triángulo."
 
 #: ../../docs/tutorials/content/procedural_geometry.rst:46
 msgid "Just explore the APIs and the possibilities."
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry.rst:49
-#, fuzzy
 msgid "ImmediateGeometry"
-msgstr "Geometría inmediata"
+msgstr "ImmediateGeometry"
 
 #: ../../docs/tutorials/content/procedural_geometry.rst:51
 msgid ""
@@ -72611,9 +72618,8 @@ msgid "Still, Godot is designed to work around this problem."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:27
-#, fuzzy
 msgid "Servers"
-msgstr "**Server**"
+msgstr "Servidores"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:29
 msgid ""
@@ -72686,14 +72692,14 @@ msgid "For nodes, there are many functions available:"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:60
-#, fuzzy
 msgid ""
 "For CanvasItem, the :ref:`CanvasItem.get_canvas_item() "
 "<class_CanvasItem_method_get_canvas_item>` method will return the canvas "
 "item RID in the server."
 msgstr ""
-":ref:`CanvasItem.get_canvas_transform() "
-"<class_CanvasItem_method_get_canvas_transform>`"
+"Para CanvasItem, el método  :ref:`CanvasItem.get_canvas_item() "
+"<class_CanvasItem_method_get_canvas_item>` retornará el RID del canvas item "
+"en el servidor."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:62
 msgid ""
@@ -72750,9 +72756,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:84
-#, fuzzy
 msgid "Creating a sprite"
-msgstr "Creando un Script"
+msgstr "Creando un sprite"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:86
 msgid ""
@@ -72787,15 +72792,14 @@ msgid "Creating a 2D RigidBody and moving a sprite with it"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:148
-#, fuzzy
 msgid ""
 "This creates a :ref:`RigidBody2D <class_RigidBody2D>` using the :ref:"
 "`Physics2DServer <class_Physics2DServer>` API, and moves a :ref:`CanvasItem "
 "<class_CanvasItem>` when the body moves."
 msgstr ""
-"El espacio resultante :ref:`RID <class_RID>` puede usarse en :ref:"
-"`PhysicsServer <class_PhysicsServer>` y :ref:`Physics2DServer "
-"<class_Physics2DServer>` respectivamente para  3D y 2D."
+"Esto crea un :ref:`RigidBody2D <class_RigidBody2D>` usando el API de :ref:"
+"`Physics2DServer <class_Physics2DServer>`, y mueve un :ref:`CanvasItem "
+"<class_CanvasItem>` cuando se mueve el cuerpo."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:176
 msgid ""
@@ -72805,9 +72809,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:180
-#, fuzzy
 msgid "Getting data from the servers"
-msgstr "Enviando datos al servidor"
+msgstr "Obteniendo datos de servidores"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:182
 msgid ""
@@ -72846,9 +72849,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:15
-#, fuzzy
 msgid "MultiMeshes"
-msgstr "Configuración de MultiMesh"
+msgstr "MultiMeshes"
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:17
 msgid ""
@@ -72906,9 +72908,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:48
-#, fuzzy
 msgid "Multimesh example"
-msgstr "Ejemplo de temporizador"
+msgstr "Ejemplo de Multimesh"
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:50
 msgid ""
@@ -74677,9 +74678,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:204
-#, fuzzy
 msgid "Variable / Render Mode"
-msgstr "Modo de renderizado"
+msgstr "Variable / Modo de renderizado"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:206
 msgid "``ensure_correct_normals``"
@@ -74706,9 +74706,8 @@ msgid "``SSS_STRENGTH``"
 msgstr ""
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:4
-#, fuzzy
 msgid "Instancing with signals"
-msgstr "Interactuar con la luz"
+msgstr "Instanciando con señales"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:6
 msgid ""
@@ -74730,16 +74729,15 @@ msgid "Shooting example"
 msgstr "Ejemplo de disparos"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:18
-#, fuzzy
 msgid ""
 "Consider a player character that can rotate and shoot towards the mouse. "
 "Every time the mouse button is clicked, we create an instance of the bullet "
 "at the player's location. See :ref:`doc_instancing` for details."
 msgstr ""
-"Como otro ejemplo de uso de señales, consideremos un personaje que pueda "
-"rotar y disparar en dirección al ratón. Cada vez que el botón del ratón sea "
-"presionado, creamos una instancia de la bala en la localización del jugador. "
-"Vea :ref:`doc_instancing` para más detalles."
+"Consideremos un personaje que pueda rotar y disparar en dirección al ratón. "
+"Cada vez que el botón del ratón sea presionado, creamos una instancia de la "
+"bala en la ubicación del jugador. Ver :ref:`doc_instancing` para más "
+"detalles."
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:22
 msgid ""
@@ -74772,9 +74770,9 @@ msgstr ""
 "jugador o incluso más arriba en el árbol."
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:58
-#, fuzzy
 msgid "You could do this by adding the bullet to the main scene directly:"
-msgstr "Tu podrías hacer esto directamente agregando la bala:"
+msgstr ""
+"Podrías hacer esto agregando la bala directamente a la escena principal:"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:71
 #, fuzzy
@@ -74858,7 +74856,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:22
 msgid "Deploy with Remote Debug"
-msgstr "Exportar con depuración remota"
+msgstr "Exportar con Depuración Remota"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
 msgid ""
@@ -74870,7 +74868,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
 msgid "Small Deploy with Network FS"
-msgstr "Exportación mini con recursos en red"
+msgstr "Exportación Mini con Recursos en Red"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid ""
@@ -74882,7 +74880,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Visible Collision Shapes"
-msgstr "Ver formas de colisión"
+msgstr "Ver Formas de Colisión"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
 msgid ""
@@ -74892,7 +74890,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid "Visible Navigation"
-msgstr "Navegación visible"
+msgstr "Navegación Visible"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -74911,7 +74909,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
 msgid "Sync Script Changes"
-msgstr "Actualizar cambios en scripts"
+msgstr "Sincronizar Cambios en Scripts"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:51
 msgid ""
@@ -74973,7 +74971,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:86
 msgid "Video Mem"
-msgstr "Memoria de vídeo"
+msgstr "Memoria de Vídeo"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:88
 msgid "Listing the video memory usage of the running game."
@@ -75008,9 +75006,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:4
-#, fuzzy
 msgid "Complying with Licenses"
-msgstr "Compilando el plugin"
+msgstr "Cumpliendo con las licencias"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:7
 msgid "What are licenses?"
@@ -75043,9 +75040,8 @@ msgid "This text reads as follows:"
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:22
-#, fuzzy
 msgid "Godot Engine"
-msgstr "Acerca del Motor Godot"
+msgstr "Godot Engine"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:24
 msgid ""
@@ -75083,9 +75079,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:35
-#, fuzzy
 msgid "Inclusion"
-msgstr "Conclusión"
+msgstr "Inclusión"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:37
 msgid ""
@@ -75106,9 +75101,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:45
-#, fuzzy
 msgid "Licenses screen"
-msgstr "Licencia"
+msgstr "Pantalla de licencias"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:47
 msgid ""
@@ -75137,9 +75131,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:60
-#, fuzzy
 msgid "Printed manual"
-msgstr "Manual del editor"
+msgstr "Manual impreso"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:62
 msgid ""
@@ -75147,9 +75140,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:65
-#, fuzzy
 msgid "Third Party licenses"
-msgstr "Herramientas de terceros"
+msgstr "Licencias de terceros"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:67
 msgid ""
@@ -75160,9 +75152,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:70
-#, fuzzy
 msgid "FreeType"
-msgstr "Tipo"
+msgstr "FreeType"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:72
 msgid ""
@@ -75495,7 +75486,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:145
 msgid "Target"
-msgstr ""
+msgstr "Objetivo"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:147
 msgid "Target controls optimization and debug flags. Each mode means:"
@@ -83452,13 +83443,12 @@ msgstr ""
 "moderados por miembros de la comunidad Godot o terceros."
 
 #: ../../docs/community/channels.rst:10
-#, fuzzy
 msgid ""
 "A brief overview over these and other channels is also available on the "
 "`Godot website <https://godotengine.org/community>`_."
 msgstr ""
-"Una breve reseña sobre estos canales también está disponible en el `sitio "
-"web <https://godotengine.org/community>`_."
+"Una breve reseña sobre esos y otros canales también está disponible en el "
+"`sitio web <https://godotengine.org/community>`_."
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
@@ -83496,13 +83486,12 @@ msgstr ""
 "channels=#godotengine-doc>`_"
 
 #: ../../docs/community/channels.rst:23
-#, fuzzy
 msgid ""
 "`Pull request meetings: #godotengine-meeting <http://webchat.freenode.net/?"
 "channels=#godotengine-meeting>`_"
 msgstr ""
-"`Desarrollo del motor: #godotengine-devel <http://webchat.freenode.net/?"
-"channels=#godotengine-devel>`_"
+"`Reuniones de pull requests:  #godotengine-meeting <http://webchat.freenode."
+"net/?channels=#godotengine-meeting>`_"
 
 #: ../../docs/community/channels.rst:24
 msgid ""
@@ -83513,13 +83502,12 @@ msgstr ""
 "channels=#godotengine-gdnative>`_"
 
 #: ../../docs/community/channels.rst:25
-#, fuzzy
 msgid ""
 "`Website and public relations: #godotengine-atelier <http://webchat.freenode."
 "net/?channels=#godotengine-atelier>`_"
 msgstr ""
-"`Webseite/PR: #godotengine-atelier <http://webchat.freenode.net/?"
-"channels=#godotengine-atelier>`_"
+"`Sitio web y relaciones públicas: #godotengine-atelier <http://webchat."
+"freenode.net/?channels=#godotengine-atelier>`_"
 
 #: ../../docs/community/channels.rst:26
 msgid "`IRC logs <https://godot.eska.me/irc-logs/>`_"
@@ -83572,9 +83560,8 @@ msgid "Forum"
 msgstr "Foro"
 
 #: ../../docs/community/channels.rst:47
-#, fuzzy
 msgid "`Forum (godotforums.org) <https://godotforums.org/>`_"
-msgstr "`Foro (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
+msgstr "`Forum (godotforums.org) <https://godotforums.org/>`_"
 
 #: ../../docs/community/tutorials.rst:4
 msgid "Tutorials and resources"
@@ -83640,21 +83627,19 @@ msgstr ""
 "playlists>`_"
 
 #: ../../docs/community/tutorials.rst:24
-#, fuzzy
 msgid ""
 "`Game Endeavor <https://www.youtube.com/channel/UCLweX1UtQjRjj7rs_0XQ2Eg/"
 "videos>`_"
 msgstr ""
-"`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
-"playlists>`_"
+"`Game Endeavor <https://www.youtube.com/channel/UCLweX1UtQjRjj7rs_0XQ2Eg/"
+"videos>`_"
 
 #: ../../docs/community/tutorials.rst:25
-#, fuzzy
 msgid ""
 "`Game from Scratch <https://www.youtube.com/watch?"
 "v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_"
 msgstr ""
-"`Game from Scratch: Godot 3 Tutorial Series <https://www.youtube.com/watch?"
+"`Game from Scratch <https://www.youtube.com/watch?"
 "v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_"
 
 #: ../../docs/community/tutorials.rst:26
