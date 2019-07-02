@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,6 +58,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
 msgstr ""
+"Diese Methode wird jedes Mal aufgerufen, wenn ein Frame gezeichnet wird:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -65,16 +66,20 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"Es ist wichtig im Hinterkopf zu behalten, dass die Häufigkeit in der die "
+"``_process()`` Methode aufgerufen wird, davon abhängt, mit wie vielen Frames "
+"pro Sekunde (FPS) die Anwendung läuft. Diese Rate kann auf verschiedenen "
+"Geräten oder auch über Zeit variieren."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"Der delta Parameter enthält die vergangene Zeit in Sekunden als "
-"Fließkommazahl (float) seit dem letzten Aufruf von ``_process()``."
+"Zur Berücksichtigung dieser Varibilität, enthält der ``delta`` Parameter die "
+"vergangene Zeit in Sekunden als Fließkommazahl (float) seit dem letzten "
+"Aufruf von ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -121,14 +126,13 @@ msgstr ""
 "bei Single-Threaded-Spielen."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Eine einfache Möglichkeit, dies zu testen, besteht darin, eine Szene mit "
-"einem einzelnen Label-Node zu erstellen. Du kannst dies mit dem folgendem "
-"Skript erledigen:"
+"Eine einfache Möglichkeit die ``_process()``-Funktion bei der Arbeit zu "
+"sehen, besteht darin, eine Szene mit einem einzelnen Label-Knoten zu "
+"erstellen. Du kannst dies mit dem folgendem Skript erledigen:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -143,8 +147,8 @@ msgstr "Gruppen"
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
-"for organizing large scenes. There are two ways to do add nodes to groups. "
-"The first is from the UI, using the Groups button under the Node panel:"
+"for organizing large scenes. There are two ways to add nodes to groups. The "
+"first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
 "Eine nützliche Funktion zur Organisation großer Szenen ist es, Nodes zu "
 "Gruppen zusammenzufassen. Ein Node kann beliebig vielen Gruppen hinzugefügt "
@@ -156,6 +160,9 @@ msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"Und die zweite Möglichkeit ist programmatisch. Das folgende Skript würde die "
+"aktuelle Node zur Gruppe ``enemies`` hinzufügen, sobald diese im Szenenbaum "
+"auftaucht."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -269,16 +276,15 @@ msgstr ""
 "``free()`` verwendet werden:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
-"Wird ein Node gelöscht, so werden auch all seine untergeordneten Nodes "
-"gelöscht. Deshalb ist manuelles Löschen erheblich einfacher als es den "
-"Anschein hat. Lösche den Basis-Node und der restliche Unterbaum wird "
-"ebenfalls entfernt."
+"Wird eine Node freigegeben, so werden auch all seine untergeordneten Nodes "
+"freigegeben. Deshalb ist manuelles Löschen erheblich einfacher als es den "
+"Anschein hat. Gebe die Haupt-Node frei und alle Kinder im Baum werden "
+"ebenfalls freigegeben."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""

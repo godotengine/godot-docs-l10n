@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,11 +35,11 @@ msgid "GCC or Clang"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:15
-msgid "Python 2.7+ (Python 3 only supported as of SCons 3.0)"
+msgid "Python 3 or 2.7+"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:16
-msgid "SCons build system"
+msgid "SCons build system (3.0 or later for Python 3)"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:17
@@ -59,26 +59,18 @@ msgid "ALSA development libraries"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:21
-msgid "PulseAudio development libraries (for sound support)"
+msgid "PulseAudio development libraries"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:22
-msgid "Freetype (for the editor)"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_x11.rst:23
-msgid "OpenSSL (for HTTPS and TLS)"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_x11.rst:24
 msgid "*Optional* - libudev (build with ``udev=yes``)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:25
+#: ../../docs/development/compiling/compiling_for_x11.rst:23
 msgid "*Optional* - yasm (for WebM SIMD optimizations)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:27
+#: ../../docs/development/compiling/compiling_for_x11.rst:25
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
@@ -86,56 +78,56 @@ msgstr ""
 "Для общего обзора использования SCons в Godot, смотрите :ref:"
 "`doc_introduction_to_the_buildsystem`."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:31
+#: ../../docs/development/compiling/compiling_for_x11.rst:29
 msgid "Distro-specific oneliners"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:33
-msgid "**Arch**"
+#: ../../docs/development/compiling/compiling_for_x11.rst:31
+msgid "**Arch Linux**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:37
+#: ../../docs/development/compiling/compiling_for_x11.rst:35
 msgid "**Debian** / **Ubuntu**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:43
+#: ../../docs/development/compiling/compiling_for_x11.rst:40
 msgid "**Fedora**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:49
+#: ../../docs/development/compiling/compiling_for_x11.rst:46
 msgid "**FreeBSD**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:54
+#: ../../docs/development/compiling/compiling_for_x11.rst:51
 msgid "**Gentoo**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:60
+#: ../../docs/development/compiling/compiling_for_x11.rst:56
 msgid "**Mageia**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:66
+#: ../../docs/development/compiling/compiling_for_x11.rst:62
 msgid "**OpenBSD**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:70
+#: ../../docs/development/compiling/compiling_for_x11.rst:66
 msgid "**openSUSE**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:76
+#: ../../docs/development/compiling/compiling_for_x11.rst:71
 msgid "**Solus**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:83
+#: ../../docs/development/compiling/compiling_for_x11.rst:78
 msgid "Compiling"
 msgstr "Компиляция"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:85
+#: ../../docs/development/compiling/compiling_for_x11.rst:80
 msgid ""
 "Start a terminal, go to the root dir of the engine source code and type:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:91
+#: ../../docs/development/compiling/compiling_for_x11.rst:86
 msgid ""
 "A good rule of thumb for the ``-j`` (*jobs*) flag, is to have at least as "
 "many threads compiling Godot as you have cores in your CPU, if not one or "
@@ -143,75 +135,84 @@ msgid ""
 "below."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:95
+#: ../../docs/development/compiling/compiling_for_x11.rst:90
 msgid ""
 "If all goes well, the resulting binary executable will be placed in the \"bin"
 "\" subdirectory. This executable file contains the whole engine and runs "
 "without any dependencies. Executing it will bring up the project manager."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:102
+#: ../../docs/development/compiling/compiling_for_x11.rst:97
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:108
+#: ../../docs/development/compiling/compiling_for_x11.rst:103
 msgid ""
 "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would "
 "not build."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:111
+#: ../../docs/development/compiling/compiling_for_x11.rst:106
 msgid ""
 "If you are compiling Godot for production use, then you can make the final "
 "executable smaller and faster by adding the SCons option "
 "``target=release_debug``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:116
+#: ../../docs/development/compiling/compiling_for_x11.rst:111
 msgid "Building export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:118
+#: ../../docs/development/compiling/compiling_for_x11.rst:113
+msgid ""
+"Linux binaries usually won't run on distributions that are older than the "
+"distribution they were built on. If you wish to distribute binaries that "
+"work on most distributions, you should build them on an old distribution "
+"such as Ubuntu 16.04. You can use a virtual machine or a container to set up "
+"a suitable build environment."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:121
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:121
+#: ../../docs/development/compiling/compiling_for_x11.rst:124
 msgid "(32 bits)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:128
+#: ../../docs/development/compiling/compiling_for_x11.rst:131
 msgid "(64 bits)"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_x11.rst:135
-msgid ""
-"Note that cross compiling for the opposite bits (64/32) as your host "
-"platform is not always straight-forward and might need a chroot environment."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:138
 msgid ""
+"Note that cross-compiling for the opposite bits (64/32) as your host "
+"platform is not always straight-forward and might need a chroot environment."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:141
+msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:144
+#: ../../docs/development/compiling/compiling_for_x11.rst:147
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:153
+#: ../../docs/development/compiling/compiling_for_x11.rst:156
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
 "here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:159
+#: ../../docs/development/compiling/compiling_for_x11.rst:162
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
-"in the bin/ directory of your Godot source folder, so the next time you "
-"build you automatically have the custom templates referenced."
+"in the ``bin/`` directory of your Godot source folder, so the next time you "
+"build, you automatically have the custom templates referenced."
 msgstr ""

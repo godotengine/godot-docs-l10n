@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,9 @@ msgid ""
 "less straightforward, as most screen aspect ratios are 16:9 and resolutions "
 "are standard (720,1080,2k,4k,etc)."
 msgstr ""
+"开发人员常常难以理解，如何在他们的游戏中最好地支持多个分辨率。对于桌面和控制"
+"台游戏，或多或少会比较简单，因为大多数屏幕宽高比是16:9，标准分辨率"
+"(720,1080,2k,4k,等等)。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:14
 msgid ""
@@ -41,6 +44,9 @@ msgid ""
 "the amount of pixel density (so most developers had assets in default and "
 "double resolutions)."
 msgstr ""
+"起初，手机游戏很简单。多年来，iPhone(和iPad)使用了同样的分辨率。当实现*视网膜"
+"屏*时，他们只是把像素密度增加了一倍(因此，大多数开发人员的游戏资源都是默认状"
+"态，而且分辨率是双倍的)。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:18
 msgid ""
@@ -48,6 +54,8 @@ msgid ""
 "sizes, densities and aspect ratios for mobile, and non conventional sizes "
 "are becoming trendy for Desktop, such as ultra-wide."
 msgstr ""
+"如今已不再是这种情况，因为很多移动设备有不同的屏幕尺寸，密度和纵横比，非传统"
+"尺寸正在成为电脑桌面的潮流，例如超宽。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:22
 msgid ""
@@ -57,12 +65,17 @@ msgid ""
 "reason one may want to support this, in this case, is for *performance* "
 "reasons (running in lower resolution to increase frames per second)."
 msgstr ""
+"对于三维游戏来说，并不需要支持多个分辨率(从审美的角度来看)。三维几何体会根据"
+"视场填充屏幕，无需考虑纵横比。人们支持这个观点的主要原因是，在本例中，是出于*"
+"性能*的原因(为了增加每秒帧数，以较低的分辨率运行)。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:27
 msgid ""
 "For 2D and game UIs, this is a different matter, as art needs to be created "
 "using specific pixel sizes in software such as Photoshop, Gimp, Krita, etc."
 msgstr ""
+"而对于二维游戏和游戏的用户界面来说，却是另一回事，因为需要在Photoshop，"
+"Gimp， Krita等软件中，使用特定的像素尺寸来创建美术资源。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:30
 msgid ""
@@ -70,10 +83,12 @@ msgid ""
 "much, it is no longer possible to design UIs for every specific screen. "
 "Another method must be used."
 msgstr ""
+"给定布局，长宽比，分辨率和像素密度可以很大改变，不可能再为每个特定的屏幕设计"
+"游戏界面。必须使用另一种方法。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:34
 msgid "One size fits all"
-msgstr ""
+msgstr "万全之策"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:36
 msgid ""
@@ -84,6 +99,11 @@ msgid ""
 "for desktop, Steam `also does <https://store.steampowered.com/hwsurvey/Steam-"
 "Hardware-Software-Survey-Welcome-to-Steam>`_."
 msgstr ""
+"目前最常见的方法，是使用一个单独的*基础*分辨率，然后将其应用于其他所有内容。"
+"这个解决方案是大多数玩家希望如何(在考虑他们的硬件的情况下)玩游戏。对于手机，"
+"谷歌有效的`在线游戏统计<https://developer.android.com/about/dashboards>`_，并"
+"且对于桌面，Steam平台`也是如此<https://store.steampowered.com/hwsurvey/Steam-"
+"Hardware-Software-Survey-Welcome-to-Steam>`_。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:41
 msgid ""
@@ -91,6 +111,8 @@ msgid ""
 "is 1920x1080, so a sensible approach is to develop a game for this "
 "resolution, then handle scaling for different sizes and aspect ratios."
 msgstr ""
+"举个例子，在Steam平台上显示最为常见的*主显示分辨率*是1920x1080像素，一种合理"
+"的方法是，先使用这个分辨率开发出游戏，然后处理不同尺寸和纵横比的缩放。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:43
 #, fuzzy
@@ -406,7 +428,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:233
 msgid "Reducing aliasing on downsampling"
-msgstr ""
+msgstr "减少缩减取样的混叠"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:235
 msgid ""
@@ -415,10 +437,13 @@ msgid ""
 "detected and reduced by forcing to shrink all images by 2 upon load (this is "
 "very fast). This can be achieved by calling"
 msgstr ""
+"如果游戏的基础分辨率很高(比如4k)，当采样率降至相当低的值(如720)时，可能会出现"
+"混叠。可以通过强制在加载时将所有图像二次收缩来检测和减少(这是非常快的)。可以"
+"通过调用来实现"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:245
 msgid "Before most game data is loaded."
-msgstr ""
+msgstr "在大多数游戏数据加载之前。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:248
 #, fuzzy
@@ -432,3 +457,6 @@ msgid ""
 "easily done using :ref:`anchors <doc_size_and_anchors>` and/or :ref:"
 "`containers <doc_gui_containers>`."
 msgstr ""
+"考虑到不同分辨率的缩放，只要确保您的*用户界面*也适用于不同的长宽比。使用:ref:"
+"`锚点<doc_size_and_anchors>` 以及/或者:ref:`容器<doc_gui_containers>`，可以很"
+"容易地做到这一点。"

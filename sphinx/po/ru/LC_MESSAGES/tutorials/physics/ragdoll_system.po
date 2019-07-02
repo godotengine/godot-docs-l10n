@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:4
 msgid "Ragdoll system"
-msgstr ""
+msgstr "Система Ragdoll"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:7
 msgid "Introduction"
@@ -31,11 +31,16 @@ msgid ""
 "simulation to create realistic procedural animation. They are used for death "
 "animations in many games."
 msgstr ""
+"Начиная с версии 3.1, Godot поддерживает физику тряпичных кукол(ragdolls). "
+"Куклы зависят от симуляции физики для создания реалистичной процедурной "
+"анимации. Они используются для анимаций смерти во многих играх."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:11
 msgid ""
 "In this tutorial, we will be using the Platformer3D demo to set up a ragdoll."
 msgstr ""
+"В этом руководстве, мы будем использовать пример Platformer3D для установки "
+"ragdoll."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:13
 msgid ""
@@ -43,16 +48,18 @@ msgid ""
 "godotengine/godot-demo-projects/tree/master/3d/platformer>`_ or using the "
 "`Asset Library <https://godotengine.org/asset-library/asset/125>`_."
 msgstr ""
+"Вы можете скачать пример Platformer3D с `GitHub <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/3d/platformer>`_ или "
+"использовать `Библиотеку Ассетов <https://godotengine.org/asset-library/"
+"asset/125>`_."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:16
-#, fuzzy
 msgid "Setting up the ragdoll"
-msgstr "Настройка вашего проекта"
+msgstr "Настройка куклы"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:19
-#, fuzzy
 msgid "Creating physical bones"
-msgstr "Создание узлов"
+msgstr "Создание физических костей"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:21
 msgid ""
@@ -61,6 +68,10 @@ msgid ""
 "you can generate ``PhysicalBone`` nodes with the \"Create physical skeleton"
 "\" feature in the skeleton node."
 msgstr ""
+"Как во многих других возможностях в движке, существует узел для установки "
+"рэгдолла: узел :ref:`PhysicalBone <class_PhysicalBone>`. Для упрощения "
+"настройки, вы можете создать узлы ``PhysicalBone`` через возможность "
+"\"Создать физический скелет\" в узле скелетона."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
 msgid ""

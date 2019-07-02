@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -224,16 +224,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:89
-#, fuzzy
 msgid "The compressor has many uses. For example:"
 msgstr "El compresor tiene muchos usos en el mix, por ejemplo:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:91
-#, fuzzy
 msgid "It can be used in the Master bus to compress the whole output."
-msgstr ""
-"Puede ser usado en el 'Master bus' para comprimir todo el resultado (Aunque "
-"un limitador seria mejor opcion)"
+msgstr "Puede ser usado en el 'Master bus' para comprimir todo el resultado."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:92
 msgid ""
@@ -325,14 +321,13 @@ msgid "Limiter"
 msgstr "Limitador"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:130
-#, fuzzy
 msgid ""
 "A limiter is similar to a compressor, but it's less flexible and designed to "
 "prevent a signal's amplitude exceeding a given dB threshold. Adding a "
 "limiter to the *Master Bus* is a safeguard against clipping."
 msgstr ""
 "Un limitador es similar a un compresor, pero es menos flexible y esta "
-"diseñado para omitir el sonido al pasar el limite de dB. Añadir uno al "
+"diseñado para omitir el sonido al exceder el limite de dB. Añadir uno al "
 "*Master Bus* es siempre recomendado para reducir los efectos de los recortes."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:133
@@ -353,13 +348,12 @@ msgid "NotchFilter"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:140
-#, fuzzy
 msgid ""
 "The opposite to the BandPassFilter, it removes a band of sound from the "
 "frequency spectrum at a given *Cutoff* frequency."
 msgstr ""
 "Lo opuesto al \"BandPassFilter\", remueve una banda del sonido del espectro "
-"de frecuencias en un cierto *Cutoff*."
+"de frecuencias en una cierta frecuencia de *Cutoff*."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:143
 msgid "Panner"
@@ -421,12 +415,11 @@ msgid "StereoEnhance"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:171
-#, fuzzy
 msgid ""
 "This effect has a few algorithms for enhancing a signal's stereo spectrum."
 msgstr ""
-"Este efecto tiene algunos algoritmos disponibles para incremental el "
-"espectro de sonido, en este caso es necesario."
+"Este efecto tiene algunos algoritmos disponibles para mejorar el espectro de "
+"una señal estereo."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:174
 msgid "Automatic bus disabling"

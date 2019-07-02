@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,13 +49,15 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:22
 msgid "Creating a plugin"
-msgstr ""
+msgstr "Creando un plugin"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:24
 msgid ""
 "Before starting, create a new empty project wherever you want. This will "
 "serve as a base to develop and test the plugins."
 msgstr ""
+"Antes de empezar, crea un proyecto vacío nuevo donde quieras.  Esto servirá "
+"como base para desarrollar y probar los plugins."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:27
 msgid ""
@@ -250,16 +252,14 @@ msgstr ""
 "`EditorPlugin <class_EditorPlugin>`."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:294
-#, fuzzy
 msgid ""
 "You need to select a dock position and define the control to add (which is "
 "the scene you just created). Don't forget to **remove the dock** when the "
 "plugin is deactivated. The script could look like this:"
 msgstr ""
 "Necesitas seleccionar una posición de panel para añadirlo y tener un Control "
-"para añadir (que es la escena que acabas de crear). También es importante "
-"que recuerdes **quitar el panel** cuando el plugin está desactivado. El "
-"código puede verse así:"
+"para añadir (que es la escena que acabas de crear). No olvides **quitar el "
+"panel** cuando el plugin es desactivado. El código debería verse así:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:352
 msgid ""

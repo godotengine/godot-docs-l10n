@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,11 +136,13 @@ msgid ""
 "attached object will follow the bone's movement, weapon of a character can "
 "be attached this way."
 msgstr ""
+"“附属骨骼”节点是将物体连接到盔甲的单根骨上。附着的物体会随着单根骨的运动，角"
+"色的武器可以通过这种方式附加。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:51
 msgid ""
 "To create pinned joints, select the upper vertices in the ``SoftBody`` node:"
-msgstr ""
+msgstr "要创建固定的关节，选择“软体”节点上的顶点："
 
 #: ../../docs/tutorials/physics/soft_body.rst:55
 msgid ""
@@ -148,19 +150,23 @@ msgid ""
 "choose the ``BoneAttachment`` as the ``SpatialAttachment`` for each pinned "
 "joints, the pinned joints are now attached to the neck."
 msgstr ""
+"固定节点可以在“软体”的“附属”属性中找到，选择“附属骨骼”作为每个固定关节的“空间"
+"附属”，现在固定关节连接到脖子上。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:59
 msgid ""
 "Last step is to avoid clipping by adding the Kinematic Body `Player` to "
 "``Parent Collision Ignore`` of the ``SoftBody``."
 msgstr ""
+"最后一步，通过在“软体”的“忽略父级碰撞”中添加动力学物体“玩家”来避免裁切。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:63
 msgid "Play the scene and the cloak should simulate correctly."
-msgstr ""
+msgstr "播放场景，应该已经正确模拟了斗篷。"
 
 #: ../../docs/tutorials/physics/soft_body.rst:67
 msgid ""
 "This covers the basic settings of softbody, experiment with the parameters "
 "to achieve the effect you are aiming for when making your game."
 msgstr ""
+"这涵盖了软体的基本设置，当你制作游戏时，尝试这些参数来达到你想要的效果。"

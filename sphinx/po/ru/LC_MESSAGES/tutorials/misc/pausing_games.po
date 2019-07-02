@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,6 +103,10 @@ msgstr ""
 "\"Pause Mode\" в ноде:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:53
+msgid "You can achieve the same result in code:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/pausing_games.rst:62
 msgid ""
 "By default all nodes have this property in the \"Inherit\" state. This "
 "means, that they will only process (or not) depending on what this same "
@@ -120,11 +124,11 @@ msgstr ""
 "будет использовано состояние SceneTree/ Это означает, что по умолчанию, "
 "когда игра ставится на паузу каждая нода будет остановлена."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:61
+#: ../../docs/tutorials/misc/pausing_games.rst:70
 msgid "So the three possible states for a node are:"
 msgstr "Существует три возможных состояния для ноды:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:63
+#: ../../docs/tutorials/misc/pausing_games.rst:72
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
 "The first parent that has a non-Inherit state."
@@ -132,7 +136,7 @@ msgstr ""
 "**Inherit**: Процесс зависит от состояния родителя, родителя-родителя, итд. "
 "Т.е первый родитель который будет иметь не-Inherit состояние."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:65
+#: ../../docs/tutorials/misc/pausing_games.rst:74
 msgid ""
 "**Stop**: Stop the node no matter what (and children in Inherit mode). When "
 "paused this node will not process."
@@ -140,7 +144,7 @@ msgstr ""
 "**Stop**: Останавливает ноду в любом случае (и потомков в состоянии "
 "Inherit). Когда пауза происходит эта нода не будет обрабатываться."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:67
+#: ../../docs/tutorials/misc/pausing_games.rst:76
 msgid ""
 "**Process**: Process the node no matter what (and children in Inherit mode). "
 "Paused or not this node will process."
@@ -148,11 +152,11 @@ msgstr ""
 "**Process**: Обрабатывать эту ноду в любом случае (и потомков в состоянии "
 "Inherit). Вне зависимости от паузы эта нода будет обрабатываться."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:71
+#: ../../docs/tutorials/misc/pausing_games.rst:80
 msgid "Example"
 msgstr ""
 
-#: ../../docs/tutorials/misc/pausing_games.rst:73
+#: ../../docs/tutorials/misc/pausing_games.rst:82
 msgid ""
 "An example of this is creating a popup or panel with controls inside, and "
 "set its pause mode to \"Process\" then hide it:"
@@ -160,7 +164,7 @@ msgstr ""
 "Например создадим поп-ап или панель с элементами управления внутри, "
 "установим режим паузы в \"Process\" а затем скроем её:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:78
+#: ../../docs/tutorials/misc/pausing_games.rst:87
 msgid ""
 "Just by setting the root of the pause popup to \"Process\", all children and "
 "grandchildren will inherit that state. This way, this branch of the scene "
@@ -170,7 +174,7 @@ msgstr ""
 "потомки потомков будут наследовать это состояние. Таким образом, эта часть "
 "дерева сцены продолжит работу во время паузы."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:82
+#: ../../docs/tutorials/misc/pausing_games.rst:91
 msgid ""
 "Finally, make it so when a pause button is pressed (any button will do), "
 "enable the pause and show the pause screen."
@@ -178,10 +182,10 @@ msgstr ""
 "Наконец, сделайте так чтобы нажатая кнопка паузы (любая кнопка подойдёт), "
 "включала паузу и показывала экран паузы."
 
-#: ../../docs/tutorials/misc/pausing_games.rst:100
+#: ../../docs/tutorials/misc/pausing_games.rst:109
 msgid "To remove the pause, do the opposite when the pause screen is closed:"
 msgstr "Для отключения паузы, сделайте обратное когда экран паузы закрывается:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:118
+#: ../../docs/tutorials/misc/pausing_games.rst:127
 msgid "And that should be all!"
 msgstr "Вот и всё!"

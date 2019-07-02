@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,6 +98,11 @@ msgstr ""
 "节点中的“暂停模式”属性来完成的:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:53
+#, fuzzy
+msgid "You can achieve the same result in code:"
+msgstr "您可以使用以下命令检查所有远程服务器的列表:"
+
+#: ../../docs/tutorials/misc/pausing_games.rst:62
 msgid ""
 "By default all nodes have this property in the \"Inherit\" state. This "
 "means, that they will only process (or not) depending on what this same "
@@ -112,18 +117,18 @@ msgstr ""
 "项，依此类推。 最终，如果在任何祖父中找不到状态，则使用SceneTree中的暂停状"
 "态。 这意味着，默认情况下，当游戏暂停时，每个节点都将暂停。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:61
+#: ../../docs/tutorials/misc/pausing_games.rst:70
 msgid "So the three possible states for a node are:"
 msgstr "节点的三种可能状态有:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:63
+#: ../../docs/tutorials/misc/pausing_games.rst:72
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
 "The first parent that has a non-Inherit state."
 msgstr ""
 "**继承** : 进程取决于父，祖父节点等的状态。具有非继承状态的第一个父节点。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:65
+#: ../../docs/tutorials/misc/pausing_games.rst:74
 msgid ""
 "**Stop**: Stop the node no matter what (and children in Inherit mode). When "
 "paused this node will not process."
@@ -131,7 +136,7 @@ msgstr ""
 "**停止** : 无论什么情况下，停止节点(以及继承模式下的子节点)。 当暂停时，此节"
 "点将不会被放入进程。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:67
+#: ../../docs/tutorials/misc/pausing_games.rst:76
 msgid ""
 "**Process**: Process the node no matter what (and children in Inherit mode). "
 "Paused or not this node will process."
@@ -139,11 +144,11 @@ msgstr ""
 "**进程** : 无论什么情况下, 处理节点(以及继承模式下的子节点)。 无论暂停或不暂"
 "停, 此节点仍会在进程中。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:71
+#: ../../docs/tutorials/misc/pausing_games.rst:80
 msgid "Example"
 msgstr "示例"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:73
+#: ../../docs/tutorials/misc/pausing_games.rst:82
 msgid ""
 "An example of this is creating a popup or panel with controls inside, and "
 "set its pause mode to \"Process\" then hide it:"
@@ -151,7 +156,7 @@ msgstr ""
 "一个示例是创建一个带有控件的弹出窗口或面板，并将其暂停模式设置为“进程”然后隐"
 "藏它:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:78
+#: ../../docs/tutorials/misc/pausing_games.rst:87
 msgid ""
 "Just by setting the root of the pause popup to \"Process\", all children and "
 "grandchildren will inherit that state. This way, this branch of the scene "
@@ -160,16 +165,16 @@ msgstr ""
 "只需设置暂停弹出窗口的根节点项为“进程”，所有子孙都将继承该状态。 这样，场景树"
 "的这个分支将在暂停时继续工作。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:82
+#: ../../docs/tutorials/misc/pausing_games.rst:91
 msgid ""
 "Finally, make it so when a pause button is pressed (any button will do), "
 "enable the pause and show the pause screen."
 msgstr "最后，当按下暂停按钮(任何按钮都可以)时，启用暂停并显示暂停屏幕。"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:100
+#: ../../docs/tutorials/misc/pausing_games.rst:109
 msgid "To remove the pause, do the opposite when the pause screen is closed:"
 msgstr "要删除暂停，请在暂停屏幕关闭时执行相反操作:"
 
-#: ../../docs/tutorials/misc/pausing_games.rst:118
+#: ../../docs/tutorials/misc/pausing_games.rst:127
 msgid "And that should be all!"
 msgstr "就是这样，喵！"

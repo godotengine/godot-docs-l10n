@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,11 @@ msgid ""
 "then build it and use it as an export template every time you export the "
 "project."
 msgstr ""
+"Godot provee la opción de usar templates de Android personalizados. En lugar "
+"de usar los templates pre-compilados que se distribuyen con Godot, un "
+"proyecto actual Java de Android es instalado en tu carpeta de proyecto. "
+"Godot lo compilará y lo usará como template cada vez que exportes el "
+"proyecto."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:10
 msgid "There are some reasons why you may want to do this:"
@@ -36,26 +41,31 @@ msgstr "Hay algunas razones por las que puedes querer hacer esto:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:12
 msgid "Modify the project before it's build"
-msgstr ""
+msgstr "Modifica el proyecto antes de compilarlo"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
 msgid "Add external SDKs that build with your project"
-msgstr ""
+msgstr "Añade SDKs externos que se compilan con tu proyecto"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:15
 msgid ""
 "Configuring custom build is a more or less straightforward process, but it "
 "may take a while to get used to how the Android SDK works."
 msgstr ""
+"La configuración de la compilación personalizada es un proceso más o menos "
+"sencillo, pero puede llevar un tiempo acostumbrarse a cómo funciona el SDK "
+"de Android."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:17
 msgid ""
 "Instructions will be provided as detailed as possible to do this process."
 msgstr ""
+"Se proporcionarán instrucciones lo más detalladas posible para realizar este "
+"proceso."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:20
 msgid "Set up the Custom Build environment"
-msgstr ""
+msgstr "Configurar el entorno de Compilación Personalizada"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:22
 msgid "Go to the Project menu, and install the *Custom Build* template:"

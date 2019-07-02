@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,6 +36,11 @@ msgid ""
 "they output a final color to the screen and then move on. Accordingly, there "
 "is no way of accessing the color output from the last run of the shader."
 msgstr ""
+"着色器是在图形处理器上运行的独特程序。它们用于指定如何获取网格数据(顶点位置、"
+"颜色、法线等等)然后把它们绘制到屏幕上。着色器并不像普通程序那样处理信息，因为"
+"它们经过了优化，可以在图形处理器上运行。其结果是，着色器在运行后不会保留数"
+"据；它们把最后一种颜色输出到屏幕上，然后继续。因此，无法访问着色器上次运行时"
+"的颜色输出。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:16
 msgid ""
@@ -48,6 +53,11 @@ msgid ""
 "use it to affect the rendering pipeline. For more advanced shaders, you can "
 "turn this functionality off using a render_mode."
 msgstr ""
+"Godot使用一种与GLSL非常相似的着色语言，增加了一些功能，但灵活性稍差。这样做的"
+"原因是Godot集成了内置功能，使编写复杂着色器变得更加容易。Godot将用户编写的着"
+"色器代码封装在自己的代码中。这样，Godot就可以处理很多用户无需担心的底层内容，"
+"它能够解析着色器代码，并使用它来影响渲染管道。对于更高级的着色器，您可以使用"
+"渲染_模式关闭此功能。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:23
 msgid ""
@@ -55,6 +65,8 @@ msgid ""
 "Godot. For a detailed reference of the shading language in Godot see the :"
 "ref:`Godot shading language doc<doc_shading_language>`."
 msgstr ""
+"这个文档为您提供了一些特定于Godot的着色器的信息。有关Godot中着色语言的详细信"
+"息，请参见:ref:`Godot着色语言文档<doc_shading_language>`。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:27
 #, fuzzy
@@ -102,7 +114,7 @@ msgstr "\"particles\":用于粒子系统。"
 msgid ""
 "For detailed information on each shading type, see the corresponding "
 "reference document."
-msgstr ""
+msgstr "有关每种着色类型的详细信息，参见相应的参考文档。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:48
 #, fuzzy
@@ -123,13 +135,15 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:55
 msgid "Render modes are specified underneath the shader type:"
-msgstr ""
+msgstr "渲染模式在着色器类型下面指定："
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:62
 msgid ""
 "Each shader type has a different list of render modes available. See the "
 "document for each shader type for a complete list of render modes."
 msgstr ""
+"每种着色器类型都有不同的渲染模式列表。有关渲染模式的完整列表，请参阅每种着色"
+"器类型的文档。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:66
 #, fuzzy
@@ -168,6 +182,8 @@ msgid ""
 "variables that will be sent to the fragment function by using varyings(see "
 "other doc)."
 msgstr ""
+"“顶点”函数用于修改传递给片段函数的每个顶点信息。也可用于建立变量，这些变量将"
+"通过使用变量发送到片段函数(请参见“其他文档”)。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:82
 msgid ""
@@ -176,6 +192,9 @@ msgid ""
 "transform the data yourself; see the :ref:`Spatial shader doc "
 "<doc_spatial_shader>` for an example of this."
 msgstr ""
+"默认情况下，Godot将获取您的顶点信息，并相应地对其进行转换以便绘制。如果这是不"
+"可用的，您可以使用渲染模式转换数据;查看:ref:`空间着色器文档 "
+"<doc_spatial_shader>`来获得这个示例。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:87
 #, fuzzy
@@ -207,6 +226,12 @@ msgid ""
 "is used; if not, it cuts all the corresponding code out. Therefore, you will "
 "not waste calculations on effects that you do not use."
 msgstr ""
+"分段函数的标准用法是设置用于计算光照的材质属性。例如，你可以设置“粗糙度”、“边"
+"缘”或“传递”的值，可以告诉光照功能，以及光照对这个片段的响应。这使得控制复杂的"
+"着色管道成为可能，而无需用户编写太多代码。如果你不需要这个内置功能，可以忽略"
+"它，编写自己的光照处理函数，Godot会优化它。例如，如果你不给“边缘”设定一个值，"
+"Godot将不计算边缘照明。编译期间，Godot检查是否使用了“边缘”；如果没有，它将删"
+"除所有对应的代码。因此，您不会将计算力浪费在不使用的效果上。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:103
 #, fuzzy
@@ -232,3 +257,6 @@ msgid ""
 "`CanvasItem shaders <doc_canvas_item_shader>` and :ref:`Spatial shaders "
 "<doc_spatial_shader>`, respectively."
 msgstr ""
+"“光照”处理器在二维和三维环境下的工作方式不同；要了解它如何在每种情况下工作，"
+"请分别查阅文档:ref:`画布组件着色器 <doc_canvas_item_shader>`以及:ref:`空间着"
+"色器 <doc_spatial_shader>`。"

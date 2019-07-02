@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,10 @@ msgid ""
 "optionally write vertex, fragment, and light processor functions to affect "
 "how objects are drawn."
 msgstr ""
+"空间着色器用于为三维对象着色。它们是Godot提供的最复杂的着色器类型。空间着色器"
+"是高度可配置的，具有不同的渲染模式和不同的渲染选项(例如：次表面散射、透射、环"
+"境遮挡、边缘照明等)。用户可以选择编辑顶点、片段、和光照处理器功能，以影响如何"
+"绘制对象。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:12
 #, fuzzy
@@ -253,11 +257,11 @@ msgstr "VERTEX / NORMAL / etc在世界坐标中而不是在本地坐标中进行
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:67
 msgid "**ensure_correct_normals**"
-msgstr ""
+msgstr "**确保_正确_法线**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:67
 msgid "Use when non-uniform scale is applied to mesh."
-msgstr ""
+msgstr "当对网格应用非均匀尺度时。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:69
 msgid "**vertex_lighting**"
@@ -274,7 +278,7 @@ msgstr "**specular_disabled**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:71
 msgid "Disable computing shaders in shader."
-msgstr ""
+msgstr "禁用着色器中的计算着色器。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:73
 #, fuzzy
@@ -283,7 +287,7 @@ msgstr "**depth_test_disable**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:73
 msgid "Disable contribution from ambient light and radiance map."
-msgstr ""
+msgstr "禁用环境光和辐射度图的收益。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:77
 #, fuzzy
@@ -343,6 +347,8 @@ msgid ""
 "is ignored and projection does not happen. However, the value passed to the "
 "fragment shader still comes from ``VERTEX``."
 msgstr ""
+"用户可以使用内置的“位置”覆盖模型视图矩阵和投影转换。当使用“位置”时，将忽略“顶"
+"点”中的值，不会发生投影。然而，传递给片段着色器的值仍然来自于“顶点”。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:110
 msgid ""
@@ -555,7 +561,7 @@ msgstr "out vec4 **COLOR**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:155
 msgid "If written to, overrides final vertex position."
-msgstr ""
+msgstr "如果写入，则覆盖最终顶点位置。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:157
 msgid "in int **INSTANCE_ID**"
@@ -595,7 +601,7 @@ msgstr "in float **ROUGHNESS**"
 msgid ""
 "True when calculations happen in sRGB color space (true in GLES2, false in "
 "GLES3)."
-msgstr ""
+msgstr "当计算发生在sRGB颜色空间时为真(在GLES2中为真，在GLES3中为假)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:168
 #, fuzzy
@@ -610,6 +616,8 @@ msgid ""
 "properties, and if you don't write to them, Godot will optimize away the "
 "corresponding functionality."
 msgstr ""
+"Godot片段处理器函数的默认用法是设置对象的材质属性，并让内置渲染器处理最终的阴"
+"影。但是，你无需使用所有这些属性，如果你不写入它们，Godot将优化掉相应的功能。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
@@ -760,7 +768,7 @@ msgstr "out float **RIM**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:225
 msgid "Rim (0..1). If used, Godot calculates rim lighting."
-msgstr ""
+msgstr "边缘(0-1区间)。如果使用，Godot计算边缘照明。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:227
 msgid "out float **RIM_TINT**"
@@ -779,7 +787,7 @@ msgstr "out float **CLEARCOAT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:229
 msgid "Small added specular blob. If used, Godot calculates Clearcoat."
-msgstr ""
+msgstr "小幅增加镜面团块。如果使用，Godot计算清漆涂层。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
 msgid "out float **CLEARCOAT_GLOSS**"
@@ -787,7 +795,7 @@ msgstr "out float **CLEARCOAT_GLOSS**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
 msgid "Gloss of Clearcoat. If used, Godot calculates Clearcoat."
-msgstr ""
+msgstr "清漆涂层的光泽度。如果使用，Godot计算清漆涂层。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:233
 msgid "out float **ANISOTROPY**"
@@ -813,7 +821,7 @@ msgstr "out float **SSS_STRENGTH**"
 msgid ""
 "Strength of Subsurface Scattering. If used, Subsurface Scattering will be "
 "applied to object."
-msgstr ""
+msgstr "次表面散射强度。如果使用，物体将应用次表面散射。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:239
 msgid "out vec3 **TRANSMISSION**"
@@ -823,7 +831,7 @@ msgstr "out vec3 **TRANSMISSION**"
 msgid ""
 "Transmission mask (default 0,0,0). Allows light to pass through object. Only "
 "applied if used."
-msgstr ""
+msgstr "传输掩码(默认值0,0,0)。允许光穿过物体。只在使用时应用。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:241
 msgid "out float **AO**"
@@ -914,6 +922,9 @@ msgid ""
 "fragment function to calculate the lighting for you (subject to the "
 "render_mode)."
 msgstr ""
+"编写光处理器功能是完全可选的。您可以通过设置渲染_模式为“无阴影”来跳过光照函"
+"数。如果没有写入光照函数，Godot将使用片段函数中写入的材质属性来为您计算光照"
+"(取决于渲染_模式)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:271
 #, fuzzy
@@ -928,19 +939,21 @@ msgstr ""
 msgid ""
 "The light function is called for every light in every pixel. It is called "
 "within a loop for each light type."
-msgstr ""
+msgstr "每个像素中的每个光都调用光照函数。在每个光类型的循环中被调用。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:277
 msgid ""
 "Below is an example of a custom light function using a Lambertian lighting "
 "model:"
-msgstr ""
+msgstr "下面是一个使用兰伯特光照模型的自定义光函数的例子："
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:285
 msgid ""
 "If you want the lights to add together, add the light contribution to "
 "``DIFFUSE_LIGHT`` using ``+=``, rather than overwriting it."
 msgstr ""
+"如果你想把这些光照加在一起，使用“+=”运算符将光线添加到“漫反射_光照”函数中，而"
+"不是覆盖它。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
 msgid "Fragment coordinate, pixel adjusted."

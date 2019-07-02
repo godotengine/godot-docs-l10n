@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,333 +41,388 @@ msgstr ""
 "档中体现出来。"
 
 #: ../../docs/about/docs_changelog.rst:14
-msgid "New tutorials since version 3.0"
+#, fuzzy
+msgid "New tutorials since version 3.1"
 msgstr "自3.0版本以来的新教程"
 
 #: ../../docs/about/docs_changelog.rst:17
+msgid "Internationalization"
+msgstr "国际化"
+
+#: ../../docs/about/docs_changelog.rst:19
+#, fuzzy
+msgid ":ref:`doc_localization_using_gettext`"
+msgstr "本地化"
+
+#: ../../docs/about/docs_changelog.rst:22
+msgid "New tutorials since version 3.0"
+msgstr "自3.0版本以来的新教程"
+
+#: ../../docs/about/docs_changelog.rst:25
 msgid "Step-by-step"
 msgstr "逐步教程"
 
-#: ../../docs/about/docs_changelog.rst:19
-msgid ":ref:`Signals <doc_signals>`"
-msgstr ":参考:‘信号<文档_信号>’"
+#: ../../docs/about/docs_changelog.rst:27
+#, fuzzy
+msgid ":ref:`doc_signals`"
+msgstr ":ref:`信号 <doc_signals>`"
 
-#: ../../docs/about/docs_changelog.rst:20
-msgid ":ref:`Exporting <doc_exporting>`"
-msgstr ":参考:`导出<文档_导出>’"
+#: ../../docs/about/docs_changelog.rst:28
+#, fuzzy
+msgid ":ref:`doc_exporting`"
+msgstr ":ref:`导出 <doc_exporting>`"
 
-#: ../../docs/about/docs_changelog.rst:23
+#: ../../docs/about/docs_changelog.rst:31
 msgid "Project workflow"
 msgstr "项目工作流程"
 
-#: ../../docs/about/docs_changelog.rst:25
-msgid ":ref:`Custom builds for Android <doc_android_custom_build>`"
-msgstr ":参考:`安卓自定义构建<文档_安卓_自定义_构建>`"
+#: ../../docs/about/docs_changelog.rst:33
+#, fuzzy
+msgid ":ref:`doc_android_custom_build`"
+msgstr ":ref:`安卓自定义构建 <doc_android_custom_build>`"
 
-#: ../../docs/about/docs_changelog.rst:37
+#: ../../docs/about/docs_changelog.rst:45
 msgid "Best Practices:"
 msgstr "最佳实践："
 
-#: ../../docs/about/docs_changelog.rst:28
-msgid ":ref:`Introduction <doc_introduction_best_practices>`"
-msgstr ":参考:`简介<文档_简介_最佳实践>’"
-
-#: ../../docs/about/docs_changelog.rst:29
-msgid ":ref:`What are Godot classes <doc_what_are_godot_classes>`"
-msgstr ":参考:`什么是Godot类<文档_什么是Godot类>’"
-
-#: ../../docs/about/docs_changelog.rst:30
-msgid ":ref:`Scene organization <doc_scene_organization>`"
-msgstr ":参考:`场景结构 <文档_场景结构>’"
-
-#: ../../docs/about/docs_changelog.rst:31
-msgid ":ref:`Scenes versus scripts <doc_scenes_versus_scripts>`"
-msgstr ":参考:`场景与脚本<文档_场景与脚本>’"
-
-#: ../../docs/about/docs_changelog.rst:32
-msgid ""
-":ref:`Autoloads versus internal nodes <doc_autoloads_versus_internal_nodes>`"
-msgstr ":参考:`自动加载与内部节点<文档_自动加载与内部节点>’"
-
-#: ../../docs/about/docs_changelog.rst:33
-msgid ":ref:`Node alternatives <doc_node_alternatives>`"
-msgstr ":参考:`节点备选方案<文档_节点备选方案>`"
-
-#: ../../docs/about/docs_changelog.rst:34
-msgid ":ref:`Godot interfaces <doc_godot_interfaces>`"
-msgstr ":参考:`Godot接口<文档_godot接口>’"
-
-#: ../../docs/about/docs_changelog.rst:35
-msgid ":ref:`Godot notifications <doc_godot_notifications>`"
-msgstr ":参考:`Godot通知<文档_godot通知>’"
-
 #: ../../docs/about/docs_changelog.rst:36
-msgid ":ref:`Data preferences <doc_data_preferences>`"
-msgstr ":参考:`数据首选项<文档_数据首选项>’"
+#, fuzzy
+msgid ":ref:`doc_introduction_best_practices`"
+msgstr ":ref:`简介 <doc_introduction_best_practices>`"
 
 #: ../../docs/about/docs_changelog.rst:37
-msgid ":ref:`Logic preferences <doc_logic_preferences>`"
-msgstr ":参考:`逻辑首选项<文档_逻辑首选项>’"
+#, fuzzy
+msgid ":ref:`doc_what_are_godot_classes`"
+msgstr ":ref:`什么是Godot类 <doc_what_are_godot_classes>`"
+
+#: ../../docs/about/docs_changelog.rst:38
+#, fuzzy
+msgid ":ref:`doc_scene_organization`"
+msgstr ":ref:`场景结构 <doc_scene_organization>`"
+
+#: ../../docs/about/docs_changelog.rst:39
+#, fuzzy
+msgid ":ref:`doc_scenes_versus_scripts`"
+msgstr ":ref:`场景和脚本 <doc_scenes_versus_scripts>`"
 
 #: ../../docs/about/docs_changelog.rst:40
+#, fuzzy
+msgid ":ref:`doc_autoloads_versus_internal_nodes`"
+msgstr "自动加载与内部节点"
+
+#: ../../docs/about/docs_changelog.rst:41
+#, fuzzy
+msgid ":ref:`doc_node_alternatives`"
+msgstr ":ref:`节点备选方案 <doc_node_alternatives>`"
+
+#: ../../docs/about/docs_changelog.rst:42
+#, fuzzy
+msgid ":ref:`doc_godot_interfaces`"
+msgstr ":ref:`Godot接口 <doc_godot_interfaces>`"
+
+#: ../../docs/about/docs_changelog.rst:43
+#, fuzzy
+msgid ":ref:`doc_godot_notifications`"
+msgstr ":ref:`Godot通知 <doc_godot_notifications>`"
+
+#: ../../docs/about/docs_changelog.rst:44
+#, fuzzy
+msgid ":ref:`doc_data_preferences`"
+msgstr ":ref:`数据首选项 <doc_data_preferences>`"
+
+#: ../../docs/about/docs_changelog.rst:45
+#, fuzzy
+msgid ":ref:`doc_logic_preferences`"
+msgstr ":ref:`逻辑首选项 <doc_logic_preferences>`"
+
+#: ../../docs/about/docs_changelog.rst:48
 msgid "Scripting"
 msgstr "编写脚本"
 
-#: ../../docs/about/docs_changelog.rst:42
-msgid ":ref:`Typed GDscript <doc_gdscript_static_typing>`"
-msgstr ":参考:`GDscript类型<文档_GDScript中静态类型>’"
+#: ../../docs/about/docs_changelog.rst:50
+#, fuzzy
+msgid ":ref:`doc_gdscript_static_typing`"
+msgstr ":ref:`GDscript类型 <doc_gdscript_static_typing>`"
 
-#: ../../docs/about/docs_changelog.rst:45
+#: ../../docs/about/docs_changelog.rst:53
 msgid "2D"
 msgstr "二维"
 
-#: ../../docs/about/docs_changelog.rst:47
-msgid ":ref:`2D lights and shadows <doc_2d_lights_and_shadows>`"
-msgstr ":参考:`2D灯光与阴影<文档_2D灯光与阴影>’"
+#: ../../docs/about/docs_changelog.rst:55
+#, fuzzy
+msgid ":ref:`doc_2d_lights_and_shadows`"
+msgstr ":ref:`2D灯光与阴影 <doc_2d_lights_and_shadows>`"
 
-#: ../../docs/about/docs_changelog.rst:48
-msgid ":ref:`2D meshes <doc_2d_meshes>`"
-msgstr ":参考:`2D网格<文档_2d网格>’"
+#: ../../docs/about/docs_changelog.rst:56
+#, fuzzy
+msgid ":ref:`doc_2d_meshes`"
+msgstr ":ref:`2D网格 <doc_2d_meshes>`"
 
-#: ../../docs/about/docs_changelog.rst:51
+#: ../../docs/about/docs_changelog.rst:59
 msgid "3D"
 msgstr "三维"
 
-#: ../../docs/about/docs_changelog.rst:53
-msgid ":ref:`CSG <doc_csg_tools>`"
-msgstr ":参考:`CSG<文档_csg工具>’"
+#: ../../docs/about/docs_changelog.rst:61
+#, fuzzy
+msgid ":ref:`doc_csg_tools`"
+msgstr ":ref:`CSG <doc_csg_tools>`"
 
-#: ../../docs/about/docs_changelog.rst:54
-msgid ""
-":ref:`Animating thousands of fish with MultiMesh "
-"<doc_animating_thousands_of_fish>`"
-msgstr "：参考：`使用复合网格<文档_制作数千条鱼>制作数千条鱼的动画"
+#: ../../docs/about/docs_changelog.rst:62
+#, fuzzy
+msgid ":ref:`doc_animating_thousands_of_fish`"
+msgstr ":ref:`doc_matrices_and_transforms`"
 
-#: ../../docs/about/docs_changelog.rst:55
-msgid ""
-":ref:`Controlling thousands of fish with Particles "
-"<doc_controlling_thousands_of_fish>`"
-msgstr ":参考:`使用粒子系统控制数千条鱼<文档_控制数千条鱼>`"
+#: ../../docs/about/docs_changelog.rst:63
+#, fuzzy
+msgid ":ref:`doc_controlling_thousands_of_fish`"
+msgstr ":ref:`使用粒子系统控制数千条鱼 <doc_controlling_thousands_of_fish>`"
 
-#: ../../docs/about/docs_changelog.rst:58
+#: ../../docs/about/docs_changelog.rst:66
 msgid "Physics"
 msgstr "物理学"
 
-#: ../../docs/about/docs_changelog.rst:60
-msgid ":ref:`Ragdoll system <doc_ragdoll_system>`"
-msgstr ":参考:`布娃娃系统<文档_布娃娃系统>`"
+#: ../../docs/about/docs_changelog.rst:68
+#, fuzzy
+msgid ":ref:`doc_ragdoll_system`"
+msgstr ":ref:`布娃娃系统 <doc_ragdoll_system>`"
 
-#: ../../docs/about/docs_changelog.rst:61
-msgid ":ref:`Softbody <doc_soft_body>`"
-msgstr ":参考:`软体<文档_软体>’"
+#: ../../docs/about/docs_changelog.rst:69
+#, fuzzy
+msgid ":ref:`doc_soft_body`"
+msgstr ":ref:`软体 <doc_soft_body>`"
 
-#: ../../docs/about/docs_changelog.rst:64
+#: ../../docs/about/docs_changelog.rst:72
 msgid "Animation"
 msgstr "动画"
 
-#: ../../docs/about/docs_changelog.rst:66
-msgid ":ref:`2D skeletons <doc_2d_skeletons>`"
-msgstr ":参考:`2D骨骼<文档_2d骨骼>’"
+#: ../../docs/about/docs_changelog.rst:74
+#, fuzzy
+msgid ":ref:`doc_2d_skeletons`"
+msgstr ":ref:`2D骨骼 <doc_2d_skeletons>`"
 
-#: ../../docs/about/docs_changelog.rst:67
-msgid ":ref:`AnimationTree <doc_animation_tree>`"
-msgstr ":参考:`动画树<文档_动画树>’"
+#: ../../docs/about/docs_changelog.rst:75
+#, fuzzy
+msgid ":ref:`doc_animation_tree`"
+msgstr ":ref:`动画树 <doc_animation_tree>`"
 
-#: ../../docs/about/docs_changelog.rst:70
+#: ../../docs/about/docs_changelog.rst:78
 msgid "GUI"
 msgstr "GUI"
 
-#: ../../docs/about/docs_changelog.rst:72
-msgid ":ref:`Containers <doc_gui_containers>`"
-msgstr ":参考:`Godot接口<文档_godot接口>’"
+#: ../../docs/about/docs_changelog.rst:80
+#, fuzzy
+msgid ":ref:`doc_gui_containers`"
+msgstr ":ref:`Godot接口 <doc_gui_containers>`"
 
-#: ../../docs/about/docs_changelog.rst:75
+#: ../../docs/about/docs_changelog.rst:83
 msgid "Viewports"
 msgstr "视区"
 
-#: ../../docs/about/docs_changelog.rst:77
-msgid ":ref:`Using a Viewport as a texture <doc_viewport_as_texture>`"
-msgstr ":参考:`使用视区作为纹理<文档_使用视区作为纹理>`"
+#: ../../docs/about/docs_changelog.rst:85
+#, fuzzy
+msgid ":ref:`doc_viewport_as_texture`"
+msgstr ":ref:`使用视区作为纹理 <doc_viewport_as_texture>`"
 
-#: ../../docs/about/docs_changelog.rst:78
-msgid ":ref:`Custom post-processing <doc_custom_postprocessing>`"
-msgstr ":参考:`自定义后期处理 <文档_自定义后期处理>’"
+#: ../../docs/about/docs_changelog.rst:86
+#, fuzzy
+msgid ":ref:`doc_custom_postprocessing`"
+msgstr ":ref:`自定义后期处理 <doc_custom_postprocessing>`"
 
-#: ../../docs/about/docs_changelog.rst:81
+#: ../../docs/about/docs_changelog.rst:89
 msgid "Shading"
 msgstr "着色器"
 
-#: ../../docs/about/docs_changelog.rst:83
-msgid ""
-":ref:`Intro to shaders: 2D and 3D water (7 video tutorials) "
-"<doc_intro_to_shaders_water_workshop>`"
-msgstr ""
-":参考:`着色器简介:2D和3D水(7节视频教程)<文档_着色器简介：水效果的研究>’"
-
-#: ../../docs/about/docs_changelog.rst:84
-msgid ""
-":ref:`Migrating to Godot’s shading language "
-"<doc_migrating_to_godot_shader_language>`"
-msgstr ":参考:`迁移到Godot的着色语言<文档_迁移到Godot的着色语言>’"
-
-#: ../../docs/about/docs_changelog.rst:85
-msgid ":ref:`Advanced post-processing <doc_advanced_postprocessing>`"
-msgstr ":参考:`高级后期处理<文档_高级后期处理>`"
-
 #: ../../docs/about/docs_changelog.rst:91
+#, fuzzy
+msgid ":ref:`doc_intro_to_shaders_water_workshop`"
+msgstr ""
+":ref:`着色器简介:2D和3D水（7节视频教程） "
+"<doc_intro_to_shaders_water_workshop>`"
+
+#: ../../docs/about/docs_changelog.rst:92
+#, fuzzy
+msgid ":ref:`doc_migrating_to_godot_shader_language`"
+msgstr ":ref:`迁移到Godot的着色语言 <doc_migrating_to_godot_shader_language>`"
+
+#: ../../docs/about/docs_changelog.rst:93
+#, fuzzy
+msgid ":ref:`doc_advanced_postprocessing`"
+msgstr "高级后处理"
+
+#: ../../docs/about/docs_changelog.rst:99
 msgid "Your First Shader Series:"
 msgstr "您的第一个光色生成器系列："
 
-#: ../../docs/about/docs_changelog.rst:88
-msgid ":ref:`What are shaders? <doc_what_are_shaders>`"
-msgstr ":参考:`光色生成器是什么？<文档_光色生成器是什么>`"
+#: ../../docs/about/docs_changelog.rst:96
+#, fuzzy
+msgid ":ref:`doc_what_are_shaders`"
+msgstr ":ref:`着色器是什么？ <doc_what_are_shaders>`"
 
-#: ../../docs/about/docs_changelog.rst:89
-msgid ":ref:`Your first CanvasItem shader <doc_your_first_canvasitem_shader>`"
-msgstr ":参考:`您的第一个CanvasItem(画布项)光色生成器<文档_画布项光色生成器>`"
-
-#: ../../docs/about/docs_changelog.rst:90
-msgid ":ref:`Your first Spatial shader <doc_your_first_spatial_shader>`"
-msgstr ":ref:`你的第一个空间着色器 <doc_your_first_spatial_shader>`"
-
-#: ../../docs/about/docs_changelog.rst:91
-msgid ""
-":ref:`Your first Spatial shader: Part 2 <doc_your_second_spatial_shader>`"
-msgstr ":ref:`你的第一个空间着色器:第2部分 <doc_your_second_spatial_shader>`"
+#: ../../docs/about/docs_changelog.rst:97
+#, fuzzy
+msgid ":ref:`doc_your_first_canvasitem_shader`"
+msgstr ":ref:`你的第一个画布项着色器 <doc_your_first_canvasitem_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:98
+#, fuzzy
+msgid ":ref:`doc_your_first_spatial_shader`"
+msgstr ":ref:`你的第一个空间着色器 <doc_your_first_spatial_shader>`"
+
+#: ../../docs/about/docs_changelog.rst:99
+#, fuzzy
+msgid ":ref:`doc_your_second_spatial_shader`"
+msgstr ":ref:`你的第一个空间着色器：第2部分 <doc_your_second_spatial_shader>`"
+
+#: ../../docs/about/docs_changelog.rst:106
 msgid "Shading Reference:"
 msgstr "着色参考："
 
-#: ../../docs/about/docs_changelog.rst:94
-msgid ":ref:`Shaders <doc_shaders>`"
-msgstr ":参考:`着色器<文档_着色器>`"
+#: ../../docs/about/docs_changelog.rst:102
+#, fuzzy
+msgid ":ref:`doc_shaders`"
+msgstr ":ref:`着色器 <doc_shaders>`"
 
-#: ../../docs/about/docs_changelog.rst:95
-msgid ":ref:`Shading language <doc_shading_language>`"
-msgstr ":参考:`着色器语言<文档_着色器语言>`"
+#: ../../docs/about/docs_changelog.rst:103
+#, fuzzy
+msgid ":ref:`doc_shading_language`"
+msgstr ":ref:`着色器语言 <doc_shading_language>`"
 
-#: ../../docs/about/docs_changelog.rst:96
-msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ":参考:`空间着色器<文档_空间着色器>`"
+#: ../../docs/about/docs_changelog.rst:104
+#, fuzzy
+msgid ":ref:`doc_spatial_shader`"
+msgstr ":ref:`空间着色器 <doc_spatial_shader>`"
 
-#: ../../docs/about/docs_changelog.rst:97
-msgid ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
-msgstr ":参考:`画布组件着色器<文档_画布组件着色器>`"
+#: ../../docs/about/docs_changelog.rst:105
+#, fuzzy
+msgid ":ref:`doc_canvas_item_shader`"
+msgstr ":ref:`画布项着色器 <doc_canvas_item_shader>`"
 
-#: ../../docs/about/docs_changelog.rst:98
-msgid ":ref:`Particles shaders <doc_particle_shader>`"
-msgstr ":参考:`粒子着色器<文档_粒子着色器>`"
+#: ../../docs/about/docs_changelog.rst:106
+#, fuzzy
+msgid ":ref:`doc_particle_shader`"
+msgstr ":ref:`粒子着色器 <doc_particle_shader>`"
 
-#: ../../docs/about/docs_changelog.rst:101
+#: ../../docs/about/docs_changelog.rst:109
 msgid "VR"
 msgstr "虚拟现实"
 
-#: ../../docs/about/docs_changelog.rst:103
-msgid ":ref:`VR starter tutorial <doc_vr_starter_tutorial>`"
-msgstr ":参考:`虚拟现实入门教程<文档_虚拟现实入门教程>`"
+#: ../../docs/about/docs_changelog.rst:111
+#, fuzzy
+msgid ":ref:`doc_vr_starter_tutorial`"
+msgstr ":ref:`虚拟现实入门教程 <doc_vr_starter_tutorial>`"
 
-#: ../../docs/about/docs_changelog.rst:106
+#: ../../docs/about/docs_changelog.rst:114
 msgid "Platform-specific"
 msgstr "特定平台"
 
-#: ../../docs/about/docs_changelog.rst:108
-msgid ""
-":ref:`Customizing the Web export HTML page <doc_customizing_html5_shell>`"
-msgstr ":参考:`自定义Web导出HTML页面<文档_自定义html5壳层>`"
+#: ../../docs/about/docs_changelog.rst:116
+#, fuzzy
+msgid ":ref:`doc_customizing_html5_shell`"
+msgstr ":ref:`自定义Web导出HTML页面 <doc_customizing_html5_shell>`"
 
-#: ../../docs/about/docs_changelog.rst:111
+#: ../../docs/about/docs_changelog.rst:119
 msgid "Multi-threading"
 msgstr "多线程"
 
-#: ../../docs/about/docs_changelog.rst:113
-msgid ":ref:`Thread safe APIs <doc_thread_safe_apis>`"
-msgstr ":参考:`线程安全API<文档_线程安全API>`"
+#: ../../docs/about/docs_changelog.rst:121
+#, fuzzy
+msgid ":ref:`doc_thread_safe_apis`"
+msgstr ":ref:`线程安全API <doc_thread_safe_apis>`"
 
-#: ../../docs/about/docs_changelog.rst:116
+#: ../../docs/about/docs_changelog.rst:124
 msgid "Optimization"
 msgstr "优化"
 
-#: ../../docs/about/docs_changelog.rst:118
-msgid ":ref:`Using MultiMesh <doc_using_multimesh>`"
+#: ../../docs/about/docs_changelog.rst:126
+#, fuzzy
+msgid ":ref:`doc_using_multimesh`"
 msgstr ":ref:`使用多重网格 <doc_using_multimesh>`"
 
-#: ../../docs/about/docs_changelog.rst:119
-msgid ":ref:`Using servers <doc_using_servers>`"
+#: ../../docs/about/docs_changelog.rst:127
+#, fuzzy
+msgid ":ref:`doc_using_servers`"
 msgstr ":ref:`使用服务器 <doc_using_servers>`"
 
-#: ../../docs/about/docs_changelog.rst:122
+#: ../../docs/about/docs_changelog.rst:130
 msgid "Miscellaneous"
 msgstr "杂项"
 
-#: ../../docs/about/docs_changelog.rst:124
-msgid ":ref:`Fixing jitter and stutter <doc_jitter_stutter>`"
-msgstr ":参考:`修复抖动和时断时续<文档_抖动和时断时续>`"
+#: ../../docs/about/docs_changelog.rst:132
+#, fuzzy
+msgid ":ref:`doc_jitter_stutter`"
+msgstr ":ref:`修复抖动和时断时续 <doc_jitter_stutter>`"
 
-#: ../../docs/about/docs_changelog.rst:125
-msgid ":ref:`Running code in the editor <doc_running_code_in_the_editor>`"
-msgstr ":参考:`在编辑器中运行代码<文档_在编辑器中运行代码>`"
+#: ../../docs/about/docs_changelog.rst:133
+#, fuzzy
+msgid ":ref:`doc_running_code_in_the_editor`"
+msgstr ":ref:`在编辑器中运行代码 <doc_running_code_in_the_editor>`"
 
-#: ../../docs/about/docs_changelog.rst:126
-msgid ":ref:`Change scenes manually <doc_change_scenes_manually>`"
-msgstr ":参考:`手动更改场景<文档_手动更改场景>`"
+#: ../../docs/about/docs_changelog.rst:134
+#, fuzzy
+msgid ":ref:`doc_change_scenes_manually`"
+msgstr ":ref:`手动更改场景 <doc_change_scenes_manually>`"
 
-#: ../../docs/about/docs_changelog.rst:127
-msgid ""
-":ref:`Differences between GLES2 and GLES3 <doc_gles2_gles3_differences>`"
-msgstr ":参考:`GLES2和GLES3之间的差异<文档_GLES2和GLES3之间的差异>`"
+#: ../../docs/about/docs_changelog.rst:135
+#, fuzzy
+msgid ":ref:`doc_gles2_gles3_differences`"
+msgstr ":ref:`GLES2和GLES3之间的差异 <doc_gles2_gles3_differences>`"
 
-#: ../../docs/about/docs_changelog.rst:130
+#: ../../docs/about/docs_changelog.rst:138
 msgid "Legal"
 msgstr "合法的"
 
-#: ../../docs/about/docs_changelog.rst:132
-msgid ":ref:`Complying with Licenses <doc_complying_with_licenses>`"
+#: ../../docs/about/docs_changelog.rst:140
+#, fuzzy
+msgid ":ref:`doc_complying_with_licenses`"
 msgstr ":ref:`遵守许可证 <doc_complying_with_licenses>`"
 
-#: ../../docs/about/docs_changelog.rst:135
+#: ../../docs/about/docs_changelog.rst:143
 msgid "Compiling"
 msgstr "开始编译"
 
-#: ../../docs/about/docs_changelog.rst:137
-msgid ":ref:`Optimizing a build for size <doc_optimizing_for_size>`"
-msgstr ":参考:`优化大小的构建<文档_优化大小>`"
+#: ../../docs/about/docs_changelog.rst:145
+#, fuzzy
+msgid ":ref:`doc_optimizing_for_size`"
+msgstr ":ref:`根据大小优化构建 <doc_optimizing_for_size>`"
 
-#: ../../docs/about/docs_changelog.rst:138
-msgid ""
-":ref:`Compiling with script encryption key "
-"<doc_compiling_with_script_encryption_key>`"
-msgstr ":参考:`使用脚本加密密钥编译<文档_使用脚本加密密钥编译>`"
+#: ../../docs/about/docs_changelog.rst:146
+#, fuzzy
+msgid ":ref:`doc_compiling_with_script_encryption_key`"
+msgstr "使用脚本加密密钥编译"
 
-#: ../../docs/about/docs_changelog.rst:141
+#: ../../docs/about/docs_changelog.rst:149
 msgid "Engine development"
 msgstr "引擎开发"
 
-#: ../../docs/about/docs_changelog.rst:143
-msgid ""
-":ref:`Binding to external libraries <doc_binding_to_external_libraries>`"
-msgstr ":参考:`绑定到外部库<文档_绑定到外部库>`"
+#: ../../docs/about/docs_changelog.rst:151
+#, fuzzy
+msgid ":ref:`doc_binding_to_external_libraries`"
+msgstr "绑定到外部库"
 
-#: ../../docs/about/docs_changelog.rst:146
+#: ../../docs/about/docs_changelog.rst:154
 msgid "Creating content"
 msgstr "创造内容"
 
-#: ../../docs/about/docs_changelog.rst:148
-msgid ":ref:`Making trees <doc_making_trees>`"
-msgstr ":参考:`制作树<文档_制作树>`"
+#: ../../docs/about/docs_changelog.rst:156
+#, fuzzy
+msgid ":ref:`doc_making_trees`"
+msgstr ":ref:`制作树 <doc_making_trees>`"
 
-#: ../../docs/about/docs_changelog.rst:151
+#: ../../docs/about/docs_changelog.rst:159
 msgid "Plugins"
 msgstr "插件"
 
-#: ../../docs/about/docs_changelog.rst:153
-msgid ":ref:`Making main screen plugins <doc_making_main_screen_plugins>`"
-msgstr ":参考:`制作主屏幕插件<文档_制作主屏幕插件>`"
+#: ../../docs/about/docs_changelog.rst:161
+#, fuzzy
+msgid ":ref:`doc_making_main_screen_plugins`"
+msgstr ":ref:`制作主屏幕插件 <doc_making_main_screen_plugins>`"
 
-#: ../../docs/about/docs_changelog.rst:154
-msgid ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
-msgstr ":参考:`空间变换轴插件<文档_空间变换轴插件>`"
+#: ../../docs/about/docs_changelog.rst:162
+#, fuzzy
+msgid ":ref:`doc_spatial_gizmo_plugins`"
+msgstr ":ref:`空间变换轴插件 <doc_spatial_gizmo_plugins>`"
 
-#: ../../docs/about/docs_changelog.rst:155
-msgid ":ref:`Creating Android plugins <doc_android_plugin>`"
+#: ../../docs/about/docs_changelog.rst:163
+#, fuzzy
+msgid ":ref:`doc_android_plugin`"
 msgstr ":ref:`创建安卓插件 <doc_android_plugin>`"

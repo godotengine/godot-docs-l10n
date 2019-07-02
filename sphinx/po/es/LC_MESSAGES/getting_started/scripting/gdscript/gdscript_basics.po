@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2128,11 +2128,18 @@ msgstr ""
 "palabra clave ``tool`` que se deberá escribir en la parte superior del "
 "archivo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1447
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1446
+msgid ""
+"Be cautious when freeing nodes with `queue_free()` or `free()` in a tool "
+"script (especially the script's owner itself). As tool scripts run their "
+"code in the editor, misusing them may lead to crashing the editor."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1452
 msgid "Memory management"
 msgstr "Gestión de la memoria"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1449
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1454
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2150,7 +2157,7 @@ msgstr ""
 "free(). Para evitar ciclos de referencia que no puedan ser liberados, se "
 "proporciona una función ``weakref`` para crear referencias débiles."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1457
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1462
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
@@ -2160,47 +2167,106 @@ msgstr ""
 "``is_instance_valid(instance)`` puede usarse para comprobar si un objeto ha "
 "sido liberado."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1464
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1469
 msgid "Signals"
 msgstr "Señales"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1466
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1471
+#, fuzzy
 msgid ""
-"Signals are a way to send notification messages from an object that other "
-"objects can listen to in a generic way. Create custom signals for a class "
-"using the ``signal`` keyword."
+"Signals are a tool to emit messages from an object that other objects can "
+"react to. To create custom signals for a class, use the ``signal`` keyword."
 msgstr ""
 "Las señales son una forma de enviar mensajes que contienen notificaciones "
 "desde un objeto que puede ser escuchado por otros de forma genérica. Crea "
 "señales personalizadas para una clase usando la palabra clave ``signal``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1478
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1483
 msgid ""
-"These signals may be connected to methods in the same manner as you connect "
-"built-in signals of nodes such as :ref:`class_Button` or :ref:"
-"`class_RigidBody`."
+"Signals are a `Callback <https://en.wikipedia.org/wiki/"
+"Callback_(computer_programming)>` mechanism. They also fill the role of "
+"Observers, a common programming pattern. For more information, read the "
+"`Observer tutorial<http://gameprogrammingpatterns.com/observer.html>`_ in "
+"the Game Programming Patterns ebook."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1490
+#, fuzzy
+msgid ""
+"You can connect these signals to methods the same way you connect built-in "
+"signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
 msgstr ""
 "Estas señales pueden ser conectadas a métodos de la misma forma en la que "
 "conectas señales propias de nodos tales como :ref:`class_Button` o :ref:"
 "`class_RigidBody`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1493
 msgid ""
-"Here's an example that creates a custom signal in one script and connects "
-"the custom signal to a method in a separate script, using the :ref:`Object."
-"connect() <class_Object_method_connect>` method:"
+"In the example below, we connect the ``health_depleted`` signal from a "
+"``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
+"signal, the game node's ``_on_Character_health_depleted`` is called:"
 msgstr ""
-"He aquí un ejemplo donde se crea una señal personalizada en un script y en "
-"otro se conecta dicha señal a un método, usando a su vez el método ref:"
-"`Object.connect() <class_Object_method_connect>` method:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1508
+msgid "You can emit as many arguments as you want along with a signal."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1510
 msgid ""
-"GDScript can bind arguments to connections between a signal and a method. "
-"When the signal is emitted, calling the connected method, the bound argument "
-"is given to the method. These bound arguments are specific to the connection "
-"rather than the signal or the method, meaning that each connection has "
-"unique bindings."
+"Here is an example where this is useful. Let's say we want a life bar on "
+"screen to react to health changes with an animation, but we want to keep the "
+"user interface separate from the player in our scene tree."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1514
+msgid ""
+"In our ``Character.gd`` script, we define a ``health_changed`` signal and "
+"emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
+"and from a ``Game`` node higher up our scene tree, we connect it to the "
+"``Lifebar`` using the :ref:`Object.connect() <class_Object_method_connect>` "
+"method:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1556
+msgid ""
+"To use signals, your class has to extend the ``Object`` class or any type "
+"extending it like ``Node``, ``KinematicBody``, ``Control``..."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1559
+msgid ""
+"In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
+"then connect the character, that emits the signal, to the receiver, the "
+"``Lifebar`` node in this case."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1573
+msgid ""
+"This allows the ``Lifebar`` to react to health changes without coupling it "
+"to the ``Character`` node."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1576
+msgid ""
+"you can write optional argument names in parentheses after the signal's "
+"definition."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1584
+msgid ""
+"These arguments show up in the editor's node dock, and Godot can use them to "
+"generate callback functions for you. However, you can still emit any number "
+"of arguments when you emit signals. So it's up to you to emit the correct "
+"values."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1590
+#, fuzzy
+msgid ""
+"GDScript can bind an array of values to connections between a signal and a "
+"method. When the signal is emitted, the callback method receives the bound "
+"values. These bound arguments are unique to each connection, and the values "
+"will stay the same."
 msgstr ""
 "GDScript puede asociar  argumentos a las conexiones entre una señal y un "
 "método. Cuando la señal es emitida, llamando así al método conectado, el "
@@ -2208,38 +2274,33 @@ msgstr ""
 "realidad específicos a la conexión, en vez de serlos para la señal o el "
 "método, queriendo decir que cada conexión tiene asociaciones únicas."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1516
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1594
 msgid ""
-"Here is an example that creates a connection between a button's ``pressed`` "
-"signal and a method, binding the button instance to the connection. The "
-"handler uses the bound argument to print which button instance was pressed."
+"You can use this array of values to add extra constant information to the "
+"connection if the emitted signal itself doesn't give you access to all the "
+"data that you need."
 msgstr ""
-"He aquí un ejemplo donde se crea una conexión entre la señal ``pressed`` de "
-"un botón y un método, asociando la instancia del botón con la conexión. El "
-"manejador usa el argumento asociado para imprimir cual instancia del botón "
-"fue presionada."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1531
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
-"Signals are generated by the :ref:`Object.emit_signal() "
-"<class_Object_method_emit_signal>` method which broadcasts the signal and "
-"arguments."
+"Building on the example above, let's say we want to display a log of the "
+"damage taken by each character on the screen, like ``Player1 took 22 damage."
+"``. The ``health_changed`` signal doesn't give us the name of the character "
+"that took damage. So when we connect the signal to the in-game console, we "
+"can add the character's name in the binds array argument:"
 msgstr ""
-"Las señales son generadas por el método :ref:`Object.emit_signal() "
-"<class_Object_method_emit_signal>` el cual difunde la señal y los argumentos."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1614
 msgid ""
-"Extending a previous example to use all the features of GDScript signals:"
+"Our ``BattleLog`` node receives each element in the binds array as an extra "
+"argument:"
 msgstr ""
-"Extendiendo un ejemplo previo para usar todas las prestaciones de las "
-"señales en GDScript:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1566
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1628
 msgid "Coroutines with yield"
 msgstr "Corrutinas con yield"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1568
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1630
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
@@ -2256,22 +2317,22 @@ msgstr ""
 "retornará lo que sea que la función retorne. Una vez resumido, el estado del "
 "objeto se tornará inválido. Aquí hay un ejemplo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1590
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1614
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1652
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1676
 msgid "Will print:"
 msgstr "Imprimirá:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1660
 msgid ""
 "It is also possible to pass values between yield() and resume(), for example:"
 msgstr ""
 "También es posible pasar valores entre yield() y resume(), por ejemplo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1623
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1685
 msgid "Coroutines & signals"
 msgstr "Corrutinas y Señales"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1625
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1687
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
@@ -2282,7 +2343,7 @@ msgstr ""
 "Cuando la señal se recibe, la ejecución continuará. Aquí hay algunos "
 "ejemplos:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1640
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1702
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example:"
@@ -2290,18 +2351,18 @@ msgstr ""
 "Las corrutinas mismas usan la señal ``completed`` cuando pasan a un estado "
 "inválido, por ejemplo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1653
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1715
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr ""
 "``my_func`` sólo continuará la ejecución una vez que se hayan presionado "
 "ambos botones."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1656
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1718
 msgid "Onready keyword"
 msgstr "Palabra clave Onready"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1658
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1720
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2314,7 +2375,7 @@ msgstr ""
 "subnodos sólo se pueden obtener cuando se realiza la llamada a un Node."
 "_ready() se ha realizado."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1670
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1732
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2327,11 +2388,11 @@ msgstr ""
 "momento en que _ready es ejecutado. Esta palabra reemplaza el código de "
 "abajo en una sola línea:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1680
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1742
 msgid "Assert keyword"
 msgstr "Palabra clave Assert"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1682
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1744
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds."

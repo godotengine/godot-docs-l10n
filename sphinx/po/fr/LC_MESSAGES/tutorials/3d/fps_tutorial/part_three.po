@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -436,10 +436,12 @@ msgid ""
 "Next we play the reloading animation for this weapon, and then return "
 "``true``."
 msgstr ""
+"Ensuite nous jouons l'animation de rechargement de cette arme, puis nous "
+"retournons ``true``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:251
 msgid "If the player could not reload, we return ``false``."
-msgstr ""
+msgstr "Si le joueur n'a pas pu recharger, nous retournons ``false``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:255
 msgid ""
@@ -454,20 +456,26 @@ msgid ""
 "These variables are exactly the same as the pistol, just with "
 "``RELOADING_ANIM_NAME`` changed to the rifle's reloading animation."
 msgstr ""
+"Ces variables sont exactement les mêmes que celles du pistolet, seul "
+"``RELOADING_ANIM_NAME`` change pour l'animation de rechargement du fusil."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:266
 msgid "Now we need to add ``reload_weapon`` to ``Weapon_Rifle.gd``:"
 msgstr ""
+"Maintenant nous devons ajouter ``reload_weapon`` à ``Weapon_Rifle.gd`` :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:295
 msgid "This code is exactly the same as the one for the pistol."
-msgstr ""
+msgstr "Ce code est exactement le même que celui du pistolet."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:299
 msgid ""
 "The last bit we need to do for the weapons is add 'reloading' to the knife. "
 "Add the following class variables to ``Weapon_Knife.gd``:"
 msgstr ""
+"Le dernier morceau que nous devons faire pour les armes est d'ajouter le "
+"'rechargement' du couteau. Ajoutez les variables de classe suivantes à "
+"``Weapon_Knife.gd`` :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:308
 msgid ""
@@ -475,55 +483,70 @@ msgid ""
 "``false``. We also define ``RELOADING_ANIM_NAME`` as an empty string, since "
 "the knife has no reloading animation."
 msgstr ""
+"Comme nous ne pouvons recharger ou remplir un couteau, nous mettons à "
+"``false`` les deux constantes. On définit aussi ``RELOADING_ANIM_NAME`` "
+"comme une chaîne vide, vu que le couteau n'a pas d'animation de rechargement."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:311
 msgid "Now we need to add ``reloading_weapon``:"
-msgstr ""
+msgstr "Maintenant nous devons ajouter ``reloading_weapon`` :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:318
 msgid "Since we cannot reload a knife, we always return ``false``."
 msgstr ""
+"Comme nous ne pouvons pas recharger un couteau, nous retournons toujours "
+"``false``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:321
 msgid "Adding reloading to the player"
-msgstr ""
+msgstr "Ajout du rechargement au joueur"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:323
 msgid ""
 "Now we need to add a few things to ``Player.gd``. First we need to define a "
 "new class variable:"
 msgstr ""
+"Maintenant nous devons ajouter quelques choses à ``Player.gd``. D'abord nous "
+"devons définir une nouvelle variable de classe :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:329
 msgid ""
 "``reloading_weapon``: A variable to track whether or not the player is "
 "currently trying to reload."
 msgstr ""
+"``reloading_weapon`` : Une variable pour traquer si le joueur essaie de "
+"recharger ou non."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:332
 msgid "Next we need to add another function call to ``_physics_process``."
 msgstr ""
+"Ensuite nous devons ajouter un nouvel appel de fonction à "
+"``_physics_process``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:334
 msgid ""
 "Add ``process_reloading(delta)`` to ``_physics_process``. Now "
 "``_physics_process`` should look something like this:"
 msgstr ""
+"Ajoutez ``process_reloading(delta)`` à ``_physics_process``. Maintenant "
+"``_physics_process`` devrait ressembler à ça :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:345
 msgid ""
 "Now we need to add ``process_reloading``. Add the following function to "
 "``Player.gd``:"
 msgstr ""
+"Maintenant nous devons ajouter ``process_reloading``.  Ajoutez la fonction "
+"suivante à ``Player.gd`` :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:356
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:407
 msgid "Let's go over what's happening here."
-msgstr ""
+msgstr "Voyons ce qui s'y passe."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:358
 msgid "Firstly, we check to make sure the player is trying to reload."
-msgstr ""
+msgstr "D'abord, on s'assure que le joueur essaie de recharger."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:360
 msgid ""
@@ -531,12 +554,17 @@ msgid ""
 "current weapon does not equal ``null``, we call its ``reload_weapon`` "
 "function."
 msgstr ""
+"Si le joueur essaie de recharger, on récupère ensuite l'arme actuelle. Si "
+"l'arme actuelle n'est pas à égale à ``null``, on appelle sa fonction "
+"``reload_weapon``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:362
 msgid ""
 "If the current weapon is equal to ``null``, then the current weapon is "
 "``UNARMED``."
 msgstr ""
+"Si l'arme actuelle est égale à ``null``, alors l'arme actuelle est "
+"``UNARMED``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:364
 msgid ""
@@ -544,12 +572,17 @@ msgid ""
 "whether the player successfully reloaded, we've tried reloading and no "
 "longer need to keep trying."
 msgstr ""
+"Enfin, nous définissons ``reloading_weapon`` à ``false`` car, sans tenir "
+"compte du fait que le joueur aie correctement rechargé, nous avons essayé de "
+"recharger et nous n'avons plus besoin de continuer d'essayer."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:369
 msgid ""
 "Before we can let the player reload, we need to change a few things in "
 "``process_input``."
 msgstr ""
+"Avant que l'on puisse laisser le joueur recharger, nous devons changer "
+"quelques choses dans ``process_input``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:371
 msgid ""
@@ -561,23 +594,28 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:382
 msgid ""
 "This makes it so the player cannot change weapons if the player is reloading."
-msgstr ""
+msgstr "Cela permet d'empêcher le joueur de changer d'arme lorsqu'il recharge."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:384
 msgid ""
 "Now we need to add the code to trigger a reload when the player pushes the "
 "``reload`` action. Add the following code to ``process_input``:"
 msgstr ""
+"Maintenant nous devons ajouter le code pour déclencher un rechargement "
+"lorsque le joueur appuie sur le bouton d'action ``reload``. Ajoutez le code "
+"suivant à ``process_input`` :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:409
 msgid ""
 "First we make sure the player is not reloading already, nor is the player "
 "trying to change weapons."
 msgstr ""
+"D'abord on s'assure que le joueur n'est pas déjà en train de recharger, ou "
+"que le joueur essaie de changer d'arme."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:411
 msgid "Then we check to see if the ``reload`` action has been pressed."
-msgstr ""
+msgstr "Ensuite on vérifie si l'action ``reload`` à été pressée."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:413
 msgid ""
@@ -591,12 +629,17 @@ msgid ""
 "If the weapon can reload, we then get the current animation state, and make "
 "a variable for tracking whether the player is already reloading or not."
 msgstr ""
+"Si l'arme peut être rechargée, on récupère alors l'état d'animation courant, "
+"et faisons une variable pour traquer si le joueur est déjà en train de "
+"recharger ou pas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:418
 msgid ""
 "We then go through every weapon to make sure the player is not already "
 "playing that weapon's reloading animation."
 msgstr ""
+"On fait ensuite le tour de chaque arme pour s'assurer que le joueur n'est "
+"pas déjà en train de jouer l'animation de recharge de l'arme."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:420
 msgid ""

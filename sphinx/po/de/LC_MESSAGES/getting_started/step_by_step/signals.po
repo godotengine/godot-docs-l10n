@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,14 +47,13 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
-"Signale sind eine Möglichkeit, Deine Spielobjekte von anderen Objekten *zu "
+"Signale sind eine Möglichkeit, deine Spielobjekte von anderen Objekten *zu "
 "lösen*, was zu besser organisiertem und überschaubarem Code führt. Anstatt, "
 "dass Spielobjekte erwarten, dass andere Objekte immer vorhanden sind, können "
 "sie stattdessen Signale aussenden, sodass jedes anderen verknüpfte Objekt "
@@ -92,6 +91,10 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Als Textur für die Sprite kannst du das Godot Icon, oder ein anderen Bild "
+"das dir gefällt, verwenden. Das kannst du tun, in dem du im Textur Attribut "
+"des Sprites den Punkt ``Load`` im Drop-Down Menü auswählst. Füge der "
+"Wurzelnode ein leeres Skript hinzu."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -247,9 +250,9 @@ msgstr ""
 "werden."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Um ein Signal per Code auszusenden, verwende die Funktion ``emit``:"
+msgstr ""
+"Um ein Signal per Code auszusenden, verwende die Funktion ``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:208
 msgid "Conclusion"

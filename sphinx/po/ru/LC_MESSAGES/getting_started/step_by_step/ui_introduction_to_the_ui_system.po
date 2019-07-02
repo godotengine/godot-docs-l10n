@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,6 +75,8 @@ msgid ""
 "containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
 "page)."
 msgstr ""
+"Пять самых используемых контейнеров (позже вы можете изучить больше о "
+"контейнерах на странице :ref:`GUI Containers <doc_gui_containers>`)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -92,6 +94,10 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"Для создания своего интерфейса, вы должны использовать узлы Control. В "
+"редакторе это узлы с зелеными иконками. Их очень много, для создания всего, "
+"от полосок здоровья до более сложных применений. Интерфейс редактора Godot "
+"построен на использовании узлов Control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -100,6 +106,10 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"Узлы Control имеют уникальные свойства позволяющие им отлично работать друг "
+"с другом. Другие визуальные узлы, такие как Node2D и Sprite не имеют таких "
+"свойств. Так что, если вы строите свой интерфейс, используйте узлы Control "
+"где только возможно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
@@ -661,13 +671,12 @@ msgid "The 5 most useful containers"
 msgstr "5 наиболее полезных контейнеров"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
-#, fuzzy
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
-"Если вы создаёте инструменты, вам могут понадобиться все контейнеры. Но для "
-"большинства игр достаточно нескольких:"
+"Если вы создаёте инструменты, то вам могут понадобиться все контейнеры. Но "
+"для большинства игр достаточно нескольких:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
 msgid "MarginContainer, to add margins around part of the UI"
@@ -688,7 +697,6 @@ msgstr ""
 "пользовательского интерфейса в строках или столбцах"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:298
-#, fuzzy
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
 msgstr "GridContainer, упорядочивает узлы Controls в виде сетки"
 

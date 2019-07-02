@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -664,17 +664,25 @@ msgid "Clearcoat"
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:357
+#: ../../docs/tutorials/3d/spatial_material.rst:366
+#: ../../docs/tutorials/3d/spatial_material.rst:388
+#: ../../docs/tutorials/3d/spatial_material.rst:401
+#: ../../docs/tutorials/3d/spatial_material.rst:421
+msgid "*This feature is only available when using the GLES3 backend.*"
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:359
 msgid ""
 "The *Clearcoat* parameter is used to add a secondary pass of transparent "
 "coat to the material. This is common in car paint and toys. In practice, "
 "it's a smaller specular blob added on top of the existing material."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:362
+#: ../../docs/tutorials/3d/spatial_material.rst:364
 msgid "Anisotropy"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:364
+#: ../../docs/tutorials/3d/spatial_material.rst:368
 msgid ""
 "This changes the shape of the specular blob and aligns it to tangent space. "
 "Anisotropy is commonly used with hair, or to make materials such as brushed "
@@ -682,11 +690,11 @@ msgid ""
 "flowmaps."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:371
+#: ../../docs/tutorials/3d/spatial_material.rst:375
 msgid "Ambient Occlusion"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:373
+#: ../../docs/tutorials/3d/spatial_material.rst:377
 msgid ""
 "It is possible to specify a baked ambient occlusion map. This map affects "
 "how much ambient light reaches each surface of the object (it does not "
@@ -696,11 +704,11 @@ msgid ""
 "whenever possible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:382
+#: ../../docs/tutorials/3d/spatial_material.rst:386
 msgid "Depth"
 msgstr "Глубина"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:384
+#: ../../docs/tutorials/3d/spatial_material.rst:390
 msgid ""
 "Setting a depth map on a material produces a ray-marched search to emulate "
 "the proper displacement of cavities along the view direction. This is not "
@@ -709,33 +717,33 @@ msgid ""
 "results, *Depth* should be used together with normal mapping."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:393
+#: ../../docs/tutorials/3d/spatial_material.rst:399
 msgid "Subsurface Scattering"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:395
+#: ../../docs/tutorials/3d/spatial_material.rst:403
 msgid ""
 "This effect emulates light that penetrates an object's surface, is "
 "scattered, and then comes out. It is useful to create realistic skin, "
 "marble, colored liquids, etc."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:402
+#: ../../docs/tutorials/3d/spatial_material.rst:410
 msgid "Transmission"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:404
+#: ../../docs/tutorials/3d/spatial_material.rst:412
 msgid ""
 "This controls how much light from the lit side (visible to light) is "
 "transferred to the dark side (opposite from the light). This works well for "
 "thin objects such as plant leaves, grass, human ears, etc."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:411
+#: ../../docs/tutorials/3d/spatial_material.rst:419
 msgid "Refraction"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:413
+#: ../../docs/tutorials/3d/spatial_material.rst:423
 msgid ""
 "When refraction is enabled, it supersedes alpha blending, and Godot attempts "
 "to fetch information from behind the object being rendered instead. This "
@@ -743,33 +751,33 @@ msgid ""
 "life."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:420
+#: ../../docs/tutorials/3d/spatial_material.rst:430
 msgid "Detail"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:422
+#: ../../docs/tutorials/3d/spatial_material.rst:432
 msgid ""
 "Godot allows using secondary albedo and normal maps to generate a detail "
 "texture, which can be blended in many ways. By combining this with secondary "
 "UV or triplanar modes, many interesting textures can be achieved."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:429
+#: ../../docs/tutorials/3d/spatial_material.rst:439
 msgid "UV1 and UV2"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:431
+#: ../../docs/tutorials/3d/spatial_material.rst:441
 msgid ""
 "Godot supports two UV channels per material. Secondary UV is often useful "
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
 "offset, which is useful when using repeating textures."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:436
+#: ../../docs/tutorials/3d/spatial_material.rst:446
 msgid "Triplanar Mapping"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:438
+#: ../../docs/tutorials/3d/spatial_material.rst:448
 msgid ""
 "Triplanar mapping is supported for both UV1 and UV2. This is an alternative "
 "way to obtain texture coordinates, sometimes called \"Autotexture\". "
@@ -777,17 +785,17 @@ msgid ""
 "mapping can be performed in either world space or object space."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:443
+#: ../../docs/tutorials/3d/spatial_material.rst:453
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:449
+#: ../../docs/tutorials/3d/spatial_material.rst:459
 msgid "Proximity and distance fade"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:451
+#: ../../docs/tutorials/3d/spatial_material.rst:461
 msgid ""
 "Godot allows materials to fade by proximity to each other as well as "
 "depending on the distance from the viewer. Proximity fade is useful for "
@@ -796,17 +804,17 @@ msgid ""
 "only present after a given distance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:457
+#: ../../docs/tutorials/3d/spatial_material.rst:467
 msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for an "
 "entire scene is usually not a good idea."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:463
+#: ../../docs/tutorials/3d/spatial_material.rst:473
 msgid "Render priority"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:465
+#: ../../docs/tutorials/3d/spatial_material.rst:475
 msgid ""
 "The rendering order of objects can be changed, although this is mostly "
 "useful for transparent objects (or opaque objects that perform depth draw "

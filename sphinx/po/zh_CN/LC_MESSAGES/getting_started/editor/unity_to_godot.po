@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,64 +30,71 @@ msgstr ""
 "该指南提供了从 Unity 用户的角度所作的概览,并旨在帮助您将现有的Unity体验迁移至"
 "Godot的世界里。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:14
+#: ../../docs/getting_started/editor/unity_to_godot.rst:15
+msgid ""
+"This article talks about older versions of Unity. Nestable prefabs ('Nested "
+"prefabs') were added to Unity 2018.3. Nestable prefabs are analogous to "
+"Godot's scenes, and allow a more Godot-like approach to scene organisation."
+msgstr ""
+
+#: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "Differences"
 msgstr "不同"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:17
+#: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Unity"
 msgstr "Unity"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:17
+#: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Godot"
 msgstr "Godot"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:19
+#: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "License"
 msgstr "许可证"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:19
+#: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid ""
 "Proprietary, closed, free license with revenue caps and usage restrictions"
 msgstr "专有，封闭，有收入上限和使用限制的免费许可证"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:19
+#: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "MIT license, free and fully open source without any restriction"
 msgstr "MIT许可证，免费，完全开源，没有任何限制"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:21
+#: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "OS (editor)"
 msgstr "OS (编辑器)"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:21
+#: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, Linux (unofficial and unsupported)"
 msgstr "Windows, macOS, Linux (非正式的，不被支持的)"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:21
+#: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
 msgstr "Windows，macOS，X11(Linux， \\*BSD)"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:23
+#: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "OS (export)"
 msgstr "OS (导出)"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:23
+#: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**Desktop:** Windows, macOS, Linux"
 msgstr "**桌面端:** Windows，macOS，Linux"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:24
+#: ../../docs/getting_started/editor/unity_to_godot.rst:28
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
 msgstr "**移动端:** Android，iOS，Windows Phone，Tizen"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:25
+#: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "**Web:** WebAssembly or asm.js"
 msgstr "**网页:** WebAssembly 或 asm.js"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:26
+#: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 msgstr "**游戏主机:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:27
+#: ../../docs/getting_started/editor/unity_to_godot.rst:31
 msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
 "HoloLens"
@@ -95,171 +102,171 @@ msgstr ""
 "**虚拟现实端:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear "
 "VR, HoloLens"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:28
+#: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "**TV:** Android TV, Samsung SMART TV, tvOS"
 msgstr "**电视端:** Android TV, Samsung SMART TV, tvOS"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:23
+#: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**Desktop:** Windows, macOS, X11"
 msgstr "**桌面端:** Windows，macOS，X11"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:24
+#: ../../docs/getting_started/editor/unity_to_godot.rst:28
 msgid "**Mobile:** Android, iOS"
 msgstr "**移动端:** Android，iOS"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:25
+#: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "**Web:** WebAssembly"
 msgstr "**网页:** WebAssembly"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:26
+#: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "**Console:** See :ref:`doc_consoles`"
 msgstr "**游戏主机:** 见 :ref:`doc_consoles`"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:27
+#: ../../docs/getting_started/editor/unity_to_godot.rst:31
 msgid "**VR:** Oculus Rift, SteamVR"
 msgstr "**虚拟现实端:** Oculus Rift, SteamVR"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:30
+#: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid "Scene system"
 msgstr "场景系统"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:30
+#: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid "Component/Scene (GameObject > Component)"
 msgstr "组件/场景 (游戏物体 > 组件)"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:31
+#: ../../docs/getting_started/editor/unity_to_godot.rst:35
 msgid "Prefabs"
 msgstr "预制体"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:30
+#: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid ""
 ":ref:`Scene tree and nodes <doc_scenes_and_nodes>`, allowing scenes to be "
 "nested and/or inherit other scenes"
 msgstr ""
 ":ref:`场景树和节点<doc_scenes_and_nodes>`，允许场景被嵌套或继承其他场景"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:33
+#: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid "Third-party tools"
 msgstr "第三方工具"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:33
+#: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid "Visual Studio or VS Code"
 msgstr "Visual Studio 或 VS Code"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:33
+#: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid ":ref:`External editors are possible <doc_external_editor>`"
 msgstr ":ref:`可使用外部编辑器 <doc_external_editor>`"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:34
+#: ../../docs/getting_started/editor/unity_to_godot.rst:38
 msgid ":ref:`Android SDK for Android export <doc_exporting_for_android>`"
 msgstr ":ref:`用于导出安卓平台的 Android SDK <doc_exporting_for_android>`"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:36
-msgid "Killer features"
-msgstr "杀手级的功能"
+#: ../../docs/getting_started/editor/unity_to_godot.rst:40
+#, fuzzy
+msgid "Notable advantages"
+msgstr "**优势:**"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:36
+#: ../../docs/getting_started/editor/unity_to_godot.rst:40
 msgid "Huge community"
 msgstr "庞大的社区"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:37
+#: ../../docs/getting_started/editor/unity_to_godot.rst:41
 msgid "Large assets store"
 msgstr "大型的素材商店"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:36
+#: ../../docs/getting_started/editor/unity_to_godot.rst:40
 msgid "Scene System"
 msgstr "场景系统"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:37
+#: ../../docs/getting_started/editor/unity_to_godot.rst:41
 msgid ":ref:`Animation Pipeline <doc_animations>`"
 msgstr ":ref:`动画管线 <doc_animations>`"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:38
+#: ../../docs/getting_started/editor/unity_to_godot.rst:42
 msgid ":ref:`Easy to write Shaders <doc_shading_language>`"
 msgstr ":ref:`易于书写的着色器 <doc_shading_language>`"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:39
+#: ../../docs/getting_started/editor/unity_to_godot.rst:43
 msgid "Debug on Device"
 msgstr "在设备上排错"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:46
+#: ../../docs/getting_started/editor/unity_to_godot.rst:50
 msgid "The editor"
 msgstr "编辑器"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:48
+#: ../../docs/getting_started/editor/unity_to_godot.rst:52
+#, fuzzy
 msgid ""
 "Godot Engine provides a rich-featured editor that allows you to build your "
-"games. The pictures below display both editors with colored blocks to "
-"indicate common functionalities."
+"games. The pictures below display the default layouts of both editors with "
+"colored blocks to indicate common functionalities."
 msgstr ""
 "Godot引擎提供了一个功能丰富的编辑器，可让您构建您的游戏。以下的图片展示了带有"
 "表示常用功能的色彩块的编辑器。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:55
-msgid ""
-"Note that Godot editor allows you to dock each panel at the side of the "
-"scene editor you wish."
-msgstr "请注意，Godot编辑器允许您任意将各个面板停靠在场景编辑器的一侧。"
-
-#: ../../docs/getting_started/editor/unity_to_godot.rst:57
+#: ../../docs/getting_started/editor/unity_to_godot.rst:58
+#, fuzzy
 msgid ""
 "While both editors may seem similar, there are many differences below the "
 "surface. Both let you organize the project using the filesystem, but Godot's "
 "approach is simpler with a single configuration file, minimalist text "
-"format, and no metadata. All this contributes to Godot being much friendlier "
-"to VCS systems, such as Git, Subversion, or Mercurial."
+"format, and no metadata. This makes Godot more friendly to VCS systems, such "
+"as Git, Subversion, or Mercurial."
 msgstr ""
 "虽然这两个编辑器看上去相同，但是在外表之下有着许多的不同。两者都允许您使用文"
 "件系统来组织项目，但是Godot的方法更简单，只需要一个非常小的文本格式文件，而不"
 "需要元数据。所有这些都使得 Godot 对VCS系统(如 Git ， Subversion 或 "
 "Mercurial )更友好。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:62
+#: ../../docs/getting_started/editor/unity_to_godot.rst:63
+#, fuzzy
 msgid ""
 "Godot's Scene panel is similar to Unity's Hierarchy panel but, as each node "
 "has a specific function, the approach used by Godot is more visually "
-"descriptive. In other words, it's easier to understand what a specific scene "
-"does at a glance."
+"descriptive. It's easier to understand what a scene does at a glance."
 msgstr ""
 "虽然Godot的场景面板和Unity的Hierarchy面板很相似，但是因为每个节点都有特殊的功"
 "能，Godot的用法更具有视觉描述性。换句话说，看一眼就能理解一个特定场景的功能。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:66
+#: ../../docs/getting_started/editor/unity_to_godot.rst:67
+#, fuzzy
 msgid ""
-"The Inspector in Godot is more minimalist and designed to only show "
-"properties. Thanks to this, objects can export a much larger amount of "
-"useful parameters to the user without having to hide functionality in "
-"language APIs. As a plus, Godot allows animating any of those properties "
-"visually, so changing colors, textures, enumerations, or even links to "
-"resources in real-time is possible without involving code."
+"The Inspector in Godot is more minimal, it shows only properties. Thanks to "
+"this, objects can expose more useful parameters to the user without having "
+"to hide functionality in language APIs. As a plus, Godot allows animating "
+"any of those properties visually. Changing colors, textures, enumerations, "
+"or even links to resources in real-time is possible without needing to write "
+"code."
 msgstr ""
 "Godot 的 Inspector 面板更为简单，且它的设计只为显示属性服务。得益于此，对象可"
 "以向用户输出大量有用的参数，而无需把功能隐藏在语言 API 中。另外，Godot允许可"
 "视化地为任何这些属性制作动画，所以可以在不使用代码的情况下实时改变颜色，纹"
 "理，枚举甚至是实时链接资源。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:71
+#: ../../docs/getting_started/editor/unity_to_godot.rst:72
+#, fuzzy
 msgid ""
-"Finally, the Toolbar at the top of the screen is similar in the sense that "
-"it allows controlling the project playback, but projects in Godot run in a "
-"separate window, as they don't execute inside the editor (but the tree and "
-"objects can still be explored in the debugger window)."
+"The Toolbar at the top of the screen is similar in both editors, offering "
+"control over project playback. Projects in Godot run in a separate window, "
+"rather than inside the editor (but the tree and objects can still be "
+"explored in the debugger window)."
 msgstr ""
 "最后，屏幕上方的工具条都有着类似的功能，那就是控制项目的播放，但是 Godot 的项"
 "目是在独立窗口中运行的，它们不会在编辑器中执行(但是树和对象仍然可以在调试窗口"
 "中查看)。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:75
+#: ../../docs/getting_started/editor/unity_to_godot.rst:76
+#, fuzzy
 msgid ""
-"This approach has the disadvantage that the running game can't be explored "
-"from different angles (though this may be supported in the future and "
-"displaying collision gizmos in the running game is already possible), but in "
-"exchange has several advantages:"
+"This approach has the disadvantage that in Godot the running game can't be "
+"explored from different angles (though this may be supported in the future "
+"and displaying collision gizmos in the running game is already possible), "
+"but in exchange has several advantages:"
 msgstr ""
 "这种方法的缺点就是运行中的游戏不能从其他角度观察(尽管未来可能会得到支持，并在"
 "运行中的游戏里显示碰撞体 gizmo也有可能)，但是作为交换有几个优点:"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:79
+#: ../../docs/getting_started/editor/unity_to_godot.rst:80
 msgid ""
 "Running the project and closing it is fast (Unity has to save, run the "
 "project, close the project, and then reload the previous state)."
@@ -267,7 +274,7 @@ msgstr ""
 "运行项目与关闭它会非常快( Unity 必须保存，再运行项目，关闭项目，然后重载之前"
 "的状态)。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:80
+#: ../../docs/getting_started/editor/unity_to_godot.rst:81
 msgid ""
 "Live editing is a lot more useful because changes done to the editor take "
 "effect immediately in the game and are not lost (nor have to be synced) when "
@@ -277,75 +284,80 @@ msgstr ""
 "实时编辑更加有用，因为对编辑器做的更改会立即在游戏中生效，并且在游戏关闭时不"
 "会丢失(也不必同步)。这提供了出色的工作流程，比如在您运行的时候创建关卡。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:81
+#: ../../docs/getting_started/editor/unity_to_godot.rst:82
 msgid "The editor is more stable because the game runs in a separate process."
 msgstr "编辑器更加稳定，因为游戏运行在一个单独的进程中。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:83
+#: ../../docs/getting_started/editor/unity_to_godot.rst:84
+#, fuzzy
 msgid ""
-"Finally, the top toolbar includes a menu for remote debugging. These options "
-"make it simple to deploy to a device (connected phone, tablet, or browser "
-"via HTML5), and debug/live edit on it after the game was exported."
+"Finally, Godot's top toolbar includes a menu for remote debugging. These "
+"options allow deployment to a device (connected phone, tablet, or browser "
+"via HTML5), and debugging/live editing on it after the game is exported."
 msgstr ""
 "最后，顶部的工具条包含了一个远程排错的菜单。这些选项让在设备上的部署变得简单"
 "(连接到手机，平板或者是支持HTML5的浏览器)，并可以在游戏导出之后排错/实时编"
 "辑。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:88
+#: ../../docs/getting_started/editor/unity_to_godot.rst:89
 msgid "The scene system"
 msgstr "场景系统"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:90
+#: ../../docs/getting_started/editor/unity_to_godot.rst:91
+#, fuzzy
 msgid ""
-"This is the most important difference between Unity and Godot and, actually, "
-"the favourite feature of most Godot users."
+"This is the most important difference between Unity and Godot and the "
+"favourite feature of most Godot users."
 msgstr ""
 "这是Unity和Godot间最重要的不同点，实际上也是大多数 Godot 用户最喜爱的特性。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:92
+#: ../../docs/getting_started/editor/unity_to_godot.rst:93
+#, fuzzy
 msgid ""
-"Unity's scene system consists of embedding all the required assets in a "
-"scene and linking them together by setting components and scripts to them."
+"Working on a 'level' in Unity usually means embedding all the required "
+"assets in a scene and linking them together with components and scripts."
 msgstr ""
 "Unity的场景系统包含了一个将所有需要的素材嵌入到其中的场景，并通过设置组件和脚"
 "本将它们链接在一起。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:95
+#: ../../docs/getting_started/editor/unity_to_godot.rst:96
+#, fuzzy
 msgid ""
-"Godot's scene system is different: it actually consists of a tree made of "
-"nodes. Each node serves a purpose: Sprite, Mesh, Light, etc. Basically, this "
-"is similar to the Unity scene system. However, each node can have multiple "
-"children, which makes each a subscene of the main scene. This means you can "
-"compose a whole scene with different scenes stored in different files."
+"Godot's scene system is superficially similar to Unity. A 'level' consists "
+"of a collection of nodes, each with its own purpose: Sprite, Mesh, Light, "
+"etc. However, in Godot the nodes are arranged in a tree. Each node can have "
+"multiple children, which makes each a subscene of the main scene. This means "
+"you can compose a whole scene with different scenes stored in different "
+"files."
 msgstr ""
 "Godot 的场景系统与其不同:它实际上包含一个由节点组成的树。每一个节点都有它的用"
 "途:精灵，网格，灯光，等。基本上，这与Unity场景系统类似。但是，每个节点可以有"
 "多个子节点，这使得每个节点都成为主场景的子场景。这意味着您可以用不同的场景组"
 "成一个完整的场景，存储在不同的文件中。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:100
+#: ../../docs/getting_started/editor/unity_to_godot.rst:99
 msgid ""
 "For example, think of a platformer level. You would compose it with multiple "
 "elements:"
 msgstr "例如，一个平台游戏的关卡。您可以用多个元素来组合它:"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:102
+#: ../../docs/getting_started/editor/unity_to_godot.rst:101
 msgid "Bricks"
 msgstr "砖块"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:103
+#: ../../docs/getting_started/editor/unity_to_godot.rst:102
 msgid "Coins"
 msgstr "金币"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:104
+#: ../../docs/getting_started/editor/unity_to_godot.rst:103
 msgid "The player"
 msgstr "游戏角色"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:105
+#: ../../docs/getting_started/editor/unity_to_godot.rst:104
 msgid "The enemies"
 msgstr "敌人"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:108
+#: ../../docs/getting_started/editor/unity_to_godot.rst:106
 msgid ""
 "In Unity, you would put all the GameObjects in the scene: the player, "
 "multiple instances of enemies, bricks everywhere to form the ground of the "
@@ -359,61 +371,71 @@ msgstr ""
 "加到每个元素以将它们链接起来并添加关卡中的逻辑:例如，您应该会为场景的所有元素"
 "各添加一个BoxCollider2D，以便它们可以发生碰撞。这个原则在 Godot中是不同的。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:113
+#: ../../docs/getting_started/editor/unity_to_godot.rst:111
+#, fuzzy
 msgid ""
-"In Godot, you would split your whole scene into 3 separate, smaller scenes, "
-"which you would then instance in the main scene."
+"In Godot, you would split your whole scene into three separate, smaller "
+"scenes, and instance them in the main scene."
 msgstr ""
 "在Godot中，您要把整个场景分成3个独立的小场景，然后您将在主场景中实例化它们。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:115
-msgid "**First, a scene for the Player alone.**"
+#: ../../docs/getting_started/editor/unity_to_godot.rst:113
+#, fuzzy
+msgid "**A scene for the Player alone.**"
 msgstr "**首先，一个只有游戏角色的场景。**"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:117
+#: ../../docs/getting_started/editor/unity_to_godot.rst:115
+#, fuzzy
 msgid ""
-"Consider the player as a reusable element in other levels. It is composed of "
-"one node in particular: an AnimatedSprite node, which contains the sprite "
-"textures to form various animations (for example, walking animation)"
+"Consider the player as an element we'd like to use in different parent "
+"scenes (for instance 'level' scenes). In our case, the player element needs "
+"at least an AnimatedSprite node. This node contains the sprite textures "
+"necessary for various animations (for example, a walking animation)."
 msgstr ""
 "把游戏角色视为一个在其他关卡中可重用的元素。它通常由一个节点组成:一个精灵动画"
 "节点，它包含可生成各种动画的精灵纹理(例如，步行动画)"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:120
-msgid "**Second, a scene for the Enemy.**"
+#: ../../docs/getting_started/editor/unity_to_godot.rst:117
+#, fuzzy
+msgid "**A scene for the Enemy.**"
 msgstr "**其次，一个敌人场景。**"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:122
+#: ../../docs/getting_started/editor/unity_to_godot.rst:119
+#, fuzzy
 msgid ""
-"There again, an enemy is a reusable element in other levels. It is almost "
-"the same as the Player node - the only differences are the script (that "
-"manages AI, mostly) and sprite textures used by the AnimatedSprite."
+"An enemy is also an element we'd like to use in several scenes. It's almost "
+"the same as the Player node. The only differences are the script (it needs "
+"'AI' routines to generate the enemy's behaviour) and the sprite textures "
+"used by the AnimatedSprite node."
 msgstr ""
 "敌人也是其他关卡的可重用元素。它与Player节点几乎相同 - 唯一的区别是 "
 "AnimatedSprite 所使用的脚本(主要是管理AI的)和精灵纹理。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:126
-msgid "**Lastly, the Level scene.**"
+#: ../../docs/getting_started/editor/unity_to_godot.rst:123
+#, fuzzy
+msgid "**A Level scene.**"
 msgstr "**最后，关卡场景。**"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:128
+#: ../../docs/getting_started/editor/unity_to_godot.rst:125
+#, fuzzy
 msgid ""
-"It is composed of Bricks (for platforms), Coins (for the player to grab) and "
-"a certain number of instances of the previous Enemy scene. These will be "
-"different, separate enemies, whose behaviour and appearance will be the same "
-"as defined in the Enemy scene. Each instance is then considered as a node in "
-"the Level scene tree. Of course, you can set different properties for each "
-"Enemy node (to change its color, for example)."
+"A Level scene is composed of Bricks (for platforms), Coins (for the player "
+"to collect) and a number of instances of the Enemy scene. Each instance is a "
+"node in the Level scene tree. These instances are separate enemies, which "
+"initially have shared behaviour and appearance as defined in the Enemy "
+"scene. You can set different properties for each Enemy node (to change its "
+"color, for example)."
 msgstr ""
 "它由砖块(用于平台)，金币(供游戏角色抓取)和一定数量的前一个敌人场景的实例组"
 "成。这些将是不同的，独立的敌人，其行为和外观将与“敌人”场景中定义的相同。然后"
 "将每个实例视为关卡场景树中的节点。当然，您可以为每个敌人节点设置不同的属性(例"
 "如改变它的颜色)。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:134
+#: ../../docs/getting_started/editor/unity_to_godot.rst:129
+#, fuzzy
 msgid ""
-"Finally, the main scene would then be composed of one root node with 2 "
-"children: a Player instance node, and a Level instance node. The root node "
+"4. **A Main scene.** The Main scene would be composed of one root node with "
+"2 children: a Player instance node, and a Level instance node. The root node "
 "can be anything, generally a \"root\" type such as \"Node\" which is the "
 "most global type, or \"Node2D\" (root type of all 2D-related nodes), "
 "\"Spatial\" (root type of all 3D-related nodes) or \"Control\" (root type of "
@@ -424,7 +446,7 @@ msgstr ""
 "者“2D节点”(所有2D相关节点的根类型)，“空间”(所有3D相关节点的根类型)或“控制”(所"
 "有GUI相关节点的根类型)。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:140
+#: ../../docs/getting_started/editor/unity_to_godot.rst:135
 msgid ""
 "As you can see, every scene is organized as a tree. The same goes for nodes' "
 "properties: you don't *add* a collision component to a node to make it "
@@ -438,166 +460,165 @@ msgstr ""
 "有碰撞属性的新特定节点的 *子节点* 。Godot具有各种碰撞类型节点，具体取决于使用"
 "情况(请参阅 :ref:`Physics introduction <doc_physics_introduction>`)。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:145
+#: ../../docs/getting_started/editor/unity_to_godot.rst:140
+#, fuzzy
 msgid ""
-"Question: What are the advantages of this system? Wouldn't this system "
-"potentially increase the depth of the scene tree? Besides, Unity allows "
-"organizing GameObjects by putting them in empty GameObjects."
+"What are the advantages of this system? Wouldn't this system potentially "
+"increase the depth of the scene tree? And doesn't Unity already allow you to "
+"organize GameObjects by putting them inside empty GameObjects?"
 msgstr ""
 "问题:这个系统的优点是什么？这个系统不会增加场景树的深度吗？此外，Unity允许通"
 "过将 GameObjects 放置在空的 GameObjects 中来组织他们。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:147
+#: ../../docs/getting_started/editor/unity_to_godot.rst:142
+#, fuzzy
 msgid ""
-"First, this system is closer to the well-known object-oriented paradigm: "
-"Godot provides a number of nodes which are not clearly \"Game Objects\", but "
-"they provide their children with their own capabilities: this is inheritance."
+"Godot's system is closer to the well-known object-oriented paradigm: Godot "
+"provides a number of nodes which are not clearly \"Game Objects\", but they "
+"provide their children with their own capabilities: this is inheritance."
 msgstr ""
 "首先，这个系统更接近于众所周知的面向对象的标准: Godot 提供了许多不清楚“游戏对"
 "象”的节点，但它们为子节点提供了自己本身的功能:这就是继承。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:148
+#: ../../docs/getting_started/editor/unity_to_godot.rst:143
+#, fuzzy
 msgid ""
-"Second, it allows the extraction of a subtree of the scene to make it a "
-"scene of its own, which answers the second and third questions: even if a "
-"scene tree gets too deep, it can be split into smaller subtrees. This also "
-"allows a better solution for reusability, as you can include any subtree as "
-"a child of any node. Putting multiple nodes in an empty GameObject in Unity "
-"does not provide the same possibility, apart from a visual organization."
+"Godot allows the extraction of a subtree of a scene to make it a scene of "
+"its own. So if a scene tree gets too deep, it can be split into smaller "
+"subtrees. This is better for reusability, as you can include any subtree as "
+"a child of any node. Putting multiple GameObjects in an empty GameObject in "
+"Unity does not provide the same functionality."
 msgstr ""
 "其次，它允许抽出场景的一个子树使其成为它自己的一个场景，这回答了第二个和第三"
 "个问题:即使场景树变得太深，它也可以拆分成更小的子树。这也提供了有着可重用性的"
 "更好的解决方案，因为您可以将任何子树作为任何节点的子节点。除了可视化组织外，"
 "将多个节点放入Unity中的空 GameObject 中并不能提供相同的可能性。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:151
-msgid ""
-"These are the most important concepts you need to remember: \"node\", "
-"\"parent node\", and \"child node\"."
-msgstr "这些是您需要记住的最重要的概念:“节点”，“父节点”和“子节点”。"
-
-#: ../../docs/getting_started/editor/unity_to_godot.rst:155
+#: ../../docs/getting_started/editor/unity_to_godot.rst:146
 msgid "Project organization"
 msgstr "项目组织"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:159
+#: ../../docs/getting_started/editor/unity_to_godot.rst:150
 msgid ""
-"We previously observed that there is no perfect solution to set a project "
-"architecture. Any solution will work for Unity and Godot, so this point has "
-"a lesser importance."
+"There is no perfect project architecture. Any architecture can be made to "
+"work in either Unity and Godot."
 msgstr ""
-"我们之前观察到，没有完美的设置项目体系结构的解决方案。 任何解决方案都适用于 "
-"Unity 和 Godot ，所以这一点不太重要。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:162
+#: ../../docs/getting_started/editor/unity_to_godot.rst:153
+#, fuzzy
 msgid ""
-"However, we often observe a common architecture for Unity projects, which "
-"consists of having one Assets folder in the root directory that contains "
-"various folders, one per type of asset: Audio, Graphics, Models, Materials, "
-"Scripts, Scenes, etc."
+"However, a common architecture for Unity projects is to have one Assets "
+"folder in the root directory that contains various folders, one per type of "
+"asset: Audio, Graphics, Models, Materials, Scripts, Scenes, and so on."
 msgstr ""
 "但是，我们经常可以注意到Unity项目的一个通用体系结构，它包含一个在根目录中的"
 "Assets文件夹，其中包含各种文件夹，每种资源类型各一个:音频，图形，模型，材质，"
 "脚本，场景等。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:165
+#: ../../docs/getting_started/editor/unity_to_godot.rst:156
+#, fuzzy
 msgid ""
-"As described before, the Godot scene system allows splitting scenes into "
-"smaller scenes. Since each scene and subscene is actually one scene file in "
-"the project, we recommend organizing your project a bit differently. This "
-"wiki provides a page for this: :ref:`doc_project_organization`."
+"Since Godot allows splitting scenes into smaller scenes, each scene and "
+"subscene existing as a file in the project, we recommend organizing your "
+"project a bit differently. This wiki provides a page for this: :ref:"
+"`doc_project_organization`."
 msgstr ""
 "如前所述，Godot场景系统允许将场景切割成更小的场景。 由于每个场景和子场景实际"
 "上都是项目中的一个场景文件，因此我们建议用不同的方法组织您的项目。 这个wiki为"
 "此提供了一个页面: :ref:`doc_project_organization` 。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:171
+#: ../../docs/getting_started/editor/unity_to_godot.rst:161
 msgid "Where are my prefabs?"
 msgstr "我的预制体在哪里？"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:173
+#: ../../docs/getting_started/editor/unity_to_godot.rst:163
+#, fuzzy
 msgid ""
-"The concept of prefabs as provided by Unity is a 'template' element of the "
-"scene. It is reusable, and each instance of the prefab that exists in the "
-"scene has an existence of its own, but all of them have the same properties "
-"as defined by the prefab."
+"A prefab as provided by Unity is a 'template' element of the scene. It is "
+"reusable, and each instance of the prefab that exists in the scene has an "
+"existence of its own, but all of them have the same properties as defined by "
+"the prefab."
 msgstr ""
 "Unity 提供的预制体的概念是场景的“模板”元素。 它是可重复使用的，并且场景中存在"
 "的预制体的每个实例都有其自己的存在，但它们都具有与预制体所定义的相同的属性。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:177
+#: ../../docs/getting_started/editor/unity_to_godot.rst:167
+#, fuzzy
 msgid ""
-"Godot does not provide prefabs as such, but this functionality is here, "
-"again, filled thanks to its scene system: As we saw, the scene system is "
-"organized as a tree. Godot allows you to save a subtree of a scene as its "
-"own scene, thus saved into its own file. This new scene can then be "
-"instanced as many times as you want. Any change you make to this new, "
-"separate scene will be applied to its instances. However, any change you "
-"make to the instance will not have any impact on the 'template' scene."
+"Godot does not provide prefabs as such, but the same functionality is "
+"provided by its scene system: The scene system is organized as a tree. Godot "
+"allows you to save any subtree of a scene as a scene file. This new scene "
+"can then be instanced as many times as you want, as a child of any node. Any "
+"change you make to this new, separate scene will be applied to its "
+"instances. However, any change you make to the instance will not have any "
+"impact on the 'template' scene."
 msgstr ""
 "Godot不提供这样的预制体，但它的功能由它的场景系统所弥补:正如我们所看到的，场"
 "景系统由一棵树组成。 Godot 允许您将场景的一个子树保存为自己的场景，并保存在自"
 "己的文件中。这个新场景可以随意多次实例化。您对这个新的独立场景所做的任何更改"
 "都将应用于其实例。但是，对实例所做的任何更改都不会对“模板”场景产生任何影响。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:185
+#: ../../docs/getting_started/editor/unity_to_godot.rst:174
+#, fuzzy
 msgid ""
-"To be precise, you can modify the parameters of the instance in the "
-"Inspector panel. However, the nodes that compose this instance are locked "
-"although you can unlock them if you need to by right-clicking the instance "
-"in the Scene tree and selecting \"Editable children\" in the menu. You don't "
-"need to do this to add new children nodes to this node, but it is possible. "
-"Remember that these new children will belong to the instance, not the "
-"'template' scene. If you want to add new children to all the instances of "
-"your 'template' scene, then you need to add them in the 'template' scene."
+"To be precise, you can modify the parameters of an instance in the Inspector "
+"panel. The nodes that compose this instance are initially locked. You can "
+"unlock them if you need to by right-clicking the instance in the Scene tree "
+"and selecting \"Editable children\" in the menu. You don't need to do this "
+"to add *new* child nodes to this node. Remember that any new children will "
+"belong to the instance, not to the 'template' scene on disk. If you want to "
+"add new children to every instance of your 'template' scene, then you should "
+"add them in the 'template' scene."
 msgstr ""
 "确切地说，您可以在 Inspector 面板中修改实例的参数。但是，组成此实例的节点已锁"
 "定，如果有必要请右键单击“场景”树中的实例并在菜单中选择“可编辑的子项”，即可以"
 "解锁它们。 您不需要这样做来为此节点添加新的子节点，但请记住，这些新子节点将属"
 "于该实例，而不是“模板”场景。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:195
+#: ../../docs/getting_started/editor/unity_to_godot.rst:184
 msgid "Glossary correspondence"
 msgstr "术语对应"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:197
+#: ../../docs/getting_started/editor/unity_to_godot.rst:186
 msgid "GameObject -> Node"
 msgstr "游戏对象 -> 节点"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:198
+#: ../../docs/getting_started/editor/unity_to_godot.rst:187
 msgid "Add a component -> Inheriting"
 msgstr "添加组件 -> 继承"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:199
-msgid "Prefab -> Externalized branch"
-msgstr "预制 -> 外部化分支"
+#: ../../docs/getting_started/editor/unity_to_godot.rst:188
+msgid "Prefab -> Reusable Scene file"
+msgstr ""
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:203
+#: ../../docs/getting_started/editor/unity_to_godot.rst:192
 msgid "Scripting: GDScript, C# and Visual Script"
 msgstr "脚本:GDScript ，C# 和 Visual Script"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:206
+#: ../../docs/getting_started/editor/unity_to_godot.rst:195
 msgid "Design"
 msgstr "设计"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:208
+#: ../../docs/getting_started/editor/unity_to_godot.rst:197
+#, fuzzy
 msgid ""
-"As you may know already, Unity supports C#. C# benefits from its integration "
-"with Visual Studio and other features, such as static typing."
+"Unity supports C#. C# benefits from its integration with Visual Studio and "
+"has desirable features such as static typing."
 msgstr ""
 "如您所知，Unity 支持 C#。C# 从与 Visual Studio 集成中受益和其他的功能中受益，"
 "例如静态类型。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:210
+#: ../../docs/getting_started/editor/unity_to_godot.rst:199
+#, fuzzy
 msgid ""
 "Godot provides its own scripting language, :ref:`GDScript <doc_scripting>` "
 "as well as support for :ref:`Visual Script <toc-learn-scripting-"
 "visual_script>` and :ref:`C# <doc_c_sharp>`. GDScript borrows its syntax "
 "from Python, but is not related to it. If you wonder about the reasoning for "
 "a custom scripting language, please read the :ref:`doc_gdscript` and :ref:"
-"`doc_faq` pages. GDScript is strongly attached to the Godot API and is "
-"really easy to learn: Between one evening for an experienced programmer and "
-"a week for a complete beginner."
+"`doc_faq` pages. GDScript is strongly attached to the Godot API and doesn't "
+"take long to learn: Between one evening for an experienced programmer and a "
+"week for a complete beginner."
 msgstr ""
 "Godot提供了自己的脚本语言: :ref:`GDScript <doc_scripting>` ，并且支持: :ref:"
 "`Visual Script <toc-learn-scripting-visual_script>` 和 :ref:`C# "
@@ -606,7 +627,7 @@ msgstr ""
 "GDScript 非常依赖于Godot API，但它的确很容易学习:一个有经验的程序员一个晚上就"
 "能学会，一个真正的初学者也只需一个星期。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:216
+#: ../../docs/getting_started/editor/unity_to_godot.rst:205
 msgid ""
 "Unity allows you to attach as many scripts as you want to a GameObject. Each "
 "script adds a behaviour to the GameObject: For example, you can attach a "
@@ -617,7 +638,7 @@ msgstr ""
 "加一个行为:例如，您可以添加一个脚本，以便它对游戏角色的控制作出反应，而另一个"
 "脚本控制其特定的游戏逻辑。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:220
+#: ../../docs/getting_started/editor/unity_to_godot.rst:209
 msgid ""
 "In Godot, you can only attach one script per node. You can use either an "
 "external GDScript file or include the script directly in the node. If you "
@@ -628,33 +649,33 @@ msgstr ""
 "将其包含在节点中。如果您需要将更多脚本附加到一个节点上，那么您可以考虑这两种"
 "解决方案，具体取决于您的场景以及您想实现的目标:"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:224
+#: ../../docs/getting_started/editor/unity_to_godot.rst:213
 msgid ""
 "either add a new node between your target node and its current parent, then "
 "add a script to this new node."
 msgstr ""
 "在目标节点和其当前父节点之间添加一个新节点，然后向该新节点添加一个脚本。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:225
+#: ../../docs/getting_started/editor/unity_to_godot.rst:214
 msgid ""
 "or, you can split your target node into multiple children and attach one "
 "script to each of them."
 msgstr "或者，您可以将您的目标节点分成多个子节点并为其中的每一个添加一个脚本。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:227
+#: ../../docs/getting_started/editor/unity_to_godot.rst:216
+#, fuzzy
 msgid ""
-"As you can see, it can be easy to turn a scene tree to a mess. This is why "
-"it is important to have a real reflection and consider splitting a "
-"complicated scene into multiple, smaller branches."
+"As you can see, it can be easy to turn a scene tree to a mess. Consider "
+"splitting any complicated scene into multiple, smaller branches."
 msgstr ""
 "正如您所看到的，把场景树变成一团糟可能很容易。 这就是拥有一个真正的反射的重要"
 "性，并且考虑把一个复杂的场景分成多个小的分支。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:231
+#: ../../docs/getting_started/editor/unity_to_godot.rst:219
 msgid "Connections: groups and signals"
 msgstr "连接:组和信号"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:233
+#: ../../docs/getting_started/editor/unity_to_godot.rst:221
 #, fuzzy
 msgid ""
 "You can control nodes by accessing them via script and calling built-in or "
@@ -666,7 +687,7 @@ msgstr ""
 "的)。但还有:您也可以将它们放在一个组中，并调用一个在该组中包含的所有节点上的"
 "函数！解释如下: :ref:`this page <doc_scripting_continued>` 。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:238
+#: ../../docs/getting_started/editor/unity_to_godot.rst:226
 #, fuzzy
 msgid ""
 "Nodes can send a signal when a specified action occurs. A signal can be set "
@@ -678,16 +699,16 @@ msgstr ""
 "候来调用特定的函数。请注意，您可以定义自己的信号并随时发送。这个功能记录在`这"
 "里 <../scripting/gdscript/gdscript_basics.html#signals>`_ 。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:243
+#: ../../docs/getting_started/editor/unity_to_godot.rst:231
 #, fuzzy
 msgid "Script serialization"
 msgstr "脚本序列化"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:245
+#: ../../docs/getting_started/editor/unity_to_godot.rst:233
 msgid "Unity can handle script serialization in two ways:"
 msgstr "Unity可以通过两种方式处理脚本序列化:"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:247
+#: ../../docs/getting_started/editor/unity_to_godot.rst:235
 msgid ""
 "Implicit: All public fields in a class are automatically serialized if the "
 "type is a serializable type (``Dictionary`` is not serializable)."
@@ -695,13 +716,13 @@ msgstr ""
 "隐式: 如果类型是可序列化类型 ( ``字典`` 是不可序列化的), 则类中的所有公共字段"
 "都将自动序列化。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:248
+#: ../../docs/getting_started/editor/unity_to_godot.rst:236
 msgid ""
 "Explicit: Non-public fields can be serialized using the ``[SerializeField]`` "
 "attribute."
 msgstr "显式: 可以使用 ``[SerializeField]`` 属性序列化非公共字段。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:250
+#: ../../docs/getting_started/editor/unity_to_godot.rst:238
 #, fuzzy
 msgid ""
 "Godot also has a built-in script serialization system, but it works only "
@@ -715,7 +736,7 @@ msgstr ""
 "<doc_binary_serialization_api>` ，包括类 _ array 和类 _ dicary)。此工作流程"
 "在 `这里 <../scripting/gdscript/gdscript_basics.html#exports>`_ 进行了说明。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:255
+#: ../../docs/getting_started/editor/unity_to_godot.rst:243
 msgid ""
 "Unity also has a data type called ``ScriptableObject`` used to serialize "
 "custom asset objects. Its equivalent in Godot is the base class for all "
@@ -728,11 +749,11 @@ msgstr ""
 "ref:`class_Resource` 的脚本将允许您创建可自定义可序列化对象。有关资源的更多信"
 "息, 请参考 :ref:`这里 <doc_resources>` 。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:260
+#: ../../docs/getting_started/editor/unity_to_godot.rst:248
 msgid "Using Godot in C++"
 msgstr "在 Godot 中使用 C++"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:262
+#: ../../docs/getting_started/editor/unity_to_godot.rst:250
 #, fuzzy
 msgid ""
 "Godot allows you to develop your project directly in C++ by using its API, "
@@ -744,7 +765,7 @@ msgstr ""
 "Unity 。 例如，您可以将 Godot 引擎的编辑器视为使用 Godot API 用C++编写的“游"
 "戏”。"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:265
+#: ../../docs/getting_started/editor/unity_to_godot.rst:253
 msgid ""
 "If you are interested in using Godot in C++, you may want to start reading "
 "the :ref:`Developing in C++ <doc_introduction_to_godot_development>` page."

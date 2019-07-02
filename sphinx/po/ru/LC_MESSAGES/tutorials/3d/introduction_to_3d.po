@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
-msgstr ""
+msgstr "Введение в 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:6
 msgid ""
@@ -31,6 +31,12 @@ msgid ""
 "3D kinematic character tutorials, which are almost identical to their 2D "
 "counterparts."
 msgstr ""
+"Создание 3D игры может быть трудоемким. Дополнительная Z координата делает "
+"многие обычные техники для создания 2D игр неработоспособными. Для помощи в "
+"этом переходе, стоит упомянуть что Godot использует похожие API для 2D и 3D. "
+"Большинство узлов одинаковые и представлены в 2D и 3D версиях. На самом "
+"деле, стоит проверить пример с 3D платформером, или примеры с кинематикой 3D "
+"персонажей,  чтобы убедиться что они почти идентичны с их 2D версиями."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:14
 msgid ""
@@ -39,10 +45,14 @@ msgid ""
 "developers, not mathematicians or engineers) will help pave the way for you "
 "to develop 3D games efficiently."
 msgstr ""
+"В 3D, математика немного более сложная чем в 2D, так что мы рекомендуем "
+"посмотреть статью :ref:`doc_vector_math` (которая была создана для "
+"разработчиков игр, а не математиков или инженеров) которая поможет вам "
+"создавать 3D игры эффективно."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
-msgstr ""
+msgstr "Узел Spatial"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 msgid ""
@@ -51,6 +61,9 @@ msgid ""
 "reasoning, the 3D engine uses the :ref:`Spatial <class_Spatial>` node for "
 "everything 3D."
 msgstr ""
+":ref:`Node2D <class_Node2D>` это базовый узел для 2D. :ref:`Control "
+"<class_Control>` базовый узел для GUI. Следуя той же логике, движок 3D "
+"использует :ref:`Spatial <class_Spatial>` для всего 3D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 msgid ""
@@ -60,6 +73,11 @@ msgid ""
 "<class_Transform>`, or as 3 :ref:`Vector3 <class_Vector3>` members "
 "representing location, Euler rotation (x,y and z angles) and scale."
 msgstr ""
+"Spatial узлы имеют локальную трансформацию, относительно родительского узла "
+"(пока родительский узел также наследуется от типа Spatial). Эта "
+"трансформация может быть доступна как  4x3 :ref:`Transform "
+"<class_Transform>`, или как 3 :ref:`Vector3 <class_Vector3>` члена "
+"представляющие позицию, вращение по Эйлеру (x, y и z углы) и масштаб."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
@@ -95,7 +113,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid "Generated geometry"
-msgstr ""
+msgstr "Генерация геометрии"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:65
 msgid ""
@@ -107,6 +125,13 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
+"Возможно создание пользовательской геометрии используя ресурс :ref:"
+"`ArrayMesh <class_ArrayMesh>` напрямую. Просто создавайте ваши массивы и "
+"используйте функцию :ref:`ArrayMesh.add_surface_from_arrays() "
+"<class_ArrayMesh_method_add_surface_from_arrays>`. Существует "
+"вспомогательный класс :ref:`SurfaceTool <class_SurfaceTool>`, который "
+"предоставляет более простой API и вспомогательные функции для индексации, "
+"генерации нормалей, тангенсов, итд."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:72
 msgid ""
@@ -114,6 +139,10 @@ msgid ""
 "that will not be updated often), as creating vertex arrays and submitting "
 "them to the 3D API has a significant performance cost."
 msgstr ""
+"В любом случае, этот метод предназначен для генерации статичной геометрии "
+"(модели которая не будет обновляться часто), так как создание массивов "
+"вершин и передача их в 3D API несет существенные затраты в "
+"производительности."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
@@ -129,7 +158,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
-msgstr ""
+msgstr "2D в 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:88
 msgid ""
@@ -150,7 +179,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 msgid "Environment"
-msgstr ""
+msgstr "Окружение"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:103
 msgid ""
@@ -181,7 +210,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid "Coordinate system"
-msgstr ""
+msgstr "Система координат"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:128
 msgid ""
@@ -190,6 +219,10 @@ msgid ""
 "attempting to use a different scale is usually a bad idea (unless you know "
 "what you are doing)."
 msgstr ""
+"Godot использует `метрическую<https://en.wikipedia.org/wiki/"
+"Metric_system>`__ систему для всего. 3D Физика и прочие области настроены на "
+"нее, так что попытка использовать другую размерность обычно плохая идея "
+"(если вы точно не уверены что делаете)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:133
 msgid ""
@@ -200,6 +233,12 @@ msgid ""
 "as rendering or physics, so make sure your artists always work in the right "
 "scale!"
 msgstr ""
+"Во время работы с 3D ассетами, всегда лучше использовать правильный масштаб "
+"(установите ваш DCC на метры). Godot позволяет масштабировать их после "
+"импорта , это работает в большинстве случаев, но изредка могут случаться "
+"сбои вычислений плавающей точки (и от них, глюки и артефакты) в определенных "
+"областях, таких как отображение или физика, так что убедитесь что ваши "
+"художники всегда работают в правильном масштабе!"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:140
 msgid ""
@@ -208,18 +247,22 @@ msgid ""
 "axis is used as a \"pointing towards\" direction. This convention roughly "
 "means that:"
 msgstr ""
+"Координата Y используется как \"вверх\", тогда как для многих объектов "
+"которые нуждаются в выравнивании (таких как свет, камеры, капсульный "
+"коллайдер, машина, итд.), ось Z используется как \"указатель на\" "
+"направление. Это соглашение примерно означает что:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:145
 msgid "**X** is sides"
-msgstr ""
+msgstr "**X** это влево/вправо"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:146
 msgid "**Y** is up/down"
-msgstr ""
+msgstr "**Y** это вверх/вниз"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:147
 msgid "**Z** is front/back"
-msgstr ""
+msgstr "**Z** это вперед/назад"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:150
 msgid "Space and manipulation gizmos"

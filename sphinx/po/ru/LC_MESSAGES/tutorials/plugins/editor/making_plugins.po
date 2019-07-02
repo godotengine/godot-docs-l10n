@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgid "Making plugins"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:7
-#, fuzzy
 msgid "About plugins"
-msgstr "Плагины"
+msgstr "О плагинах"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:9
+#, fuzzy
 msgid ""
 "A plugin is a great way to extend the editor with useful tools. It can be "
 "made entirely with GDScript and standard scenes, without even reloading the "
@@ -35,24 +35,39 @@ msgid ""
 "you can do with them. Note that a plugin is similar to any scene you can "
 "already make, except it is created using a script to add functionality."
 msgstr ""
+"Плагин является отличным способом расширить возможности редактора новыми "
+"полезными инструментами. Его можно создать используя лишь GDScript и "
+"стандартные сцены, без необходимости перезапускать редактор. В отличие от "
+"модулей, вам не надо писать код на C++ или заново компилировать движок. Это "
+"делает плагины менее эффективными, но благодяря им можно делать многие "
+"вещи.  Плагин схож со сценами с тем отличием, что использует скрипт для "
+"добавления функционала."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:16
+#, fuzzy
 msgid ""
 "This tutorial will guide you through the creation of two simple plugins so "
 "you can understand how they work and be able to develop your own. The first "
 "will be a custom node that you can add to any scene in the project and the "
 "other will be a custom dock added to the editor."
 msgstr ""
+"Этот туториал покажет вам как создать два простых плагина, чтобы вы смогли "
+"понять как они работают и научиться создавать свои собственные. Первый "
+"плагин это пользовательский узел, который можно добавить в любую сцену "
+"проекта. Вторым будет пользовательская панель, которую можно будет добавить "
+"в редактор."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:22
 msgid "Creating a plugin"
-msgstr ""
+msgstr "Создаем плагин"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:24
 msgid ""
 "Before starting, create a new empty project wherever you want. This will "
 "serve as a base to develop and test the plugins."
 msgstr ""
+"Перед тем, как начать, создайте новый пустой проект в любом месте. Это "
+"послужит базой для разработки и тестирования плагинов."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:27
 msgid ""

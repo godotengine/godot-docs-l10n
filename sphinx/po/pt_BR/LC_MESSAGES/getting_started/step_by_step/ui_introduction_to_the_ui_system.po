@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Design de interfaces com os nós de Controle"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -30,15 +29,12 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
-"Monitores de computador, telefones celulares e tela de TV vêm em todas as "
-"formas e tamanhos. Para enviar um jogo, você precisará suportar diferentes "
-"proporções e resoluções de tela. Pode ser difícil criar interfaces "
-"responsivas que se adaptem a todas as plataformas. Felizmente, o Godot vem "
-"com ferramentas robustas para projetar e gerenciar a interface de usuário "
-"responsiva. Para projetar sua interface do usuário, você usará o nós de "
-"Controle. Estes são os nós com ícones verdes no editor. Existem dezenas "
-"deles, para criar qualquer coisa, desde barras de vida até aplicações "
-"complexas. Tanto o editor quanto os plugins do Godot usam esses nós."
+"Monitores de computador, telefones celulares e tela de TV existem em todas "
+"as formas e tamanhos. Para enviar um jogo, você precisará suportar "
+"diferentes proporções e resoluções de tela. Pode ser difícil criar "
+"interfaces responsivas que se adaptem a todas as plataformas. Felizmente, o "
+"Godot vem com ferramentas robustas para projetar e gerenciar a interface de "
+"usuário responsiva."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -52,10 +48,8 @@ msgstr ""
 "aprender:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
-msgstr ""
-"Os cinco nós de controle mais úteis para criar a interface dos seus jogos"
+msgstr "Os cinco nós de controle mais úteis para criar sua interface de jogos"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
@@ -69,11 +63,15 @@ msgstr ""
 "contêineres"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
+#, fuzzy
 msgid ""
 "The five most common containers (at a later time, you can learn more about "
 "containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
 "page)."
 msgstr ""
+"Os cinco contêineres mais comuns (outra hora, você pode ler mais sobre "
+"contêineres na pagina de documentação :ref:`GUI Containers "
+"<doc_gui_containers>`)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -85,20 +83,30 @@ msgstr ""
 "<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
+#, fuzzy
 msgid ""
 "To design your UI, you'll use the Control nodes. These are the nodes with "
 "green icons in the editor. There are dozens of them, for creating anything "
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"Para desenhar sua UI, você irá usar os nós Controle. Eles são os os nós com "
+"ícones verdes no editor. Lá tem dezenas deles, para criar qualqeur coisa "
+"desde barras de life até aplicações complexas. O editor do Godot é "
+"construido usando nós Controle."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
+#, fuzzy
 msgid ""
 "Control nodes have unique properties that allow them to work well with one "
 "another. Other visual nodes, like Node2D and Sprite don't have these "
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"Os nós de Controle possuem propriedades exclusivas que permitem que eles "
+"funcionem bem um com o outro. Outros nós visuais, como Node2D e Sprite não "
+"possuem estas capacidades. Então para facilitar sua vida use os nós de "
+"Controle sempre que possível quando for construir suas UIs."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"

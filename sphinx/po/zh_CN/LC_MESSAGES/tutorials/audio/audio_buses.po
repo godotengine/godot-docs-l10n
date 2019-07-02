@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgstr "简介"
 msgid ""
 "Godot's audio processing code has been written with games in mind, with the "
 "aim of achieving an optimal balance between performance and sound quality."
-msgstr ""
+msgstr "Godot的音频处理代码是为了游戏而写的，以达到性能和音质之间的最佳平衡。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:11
 msgid ""
@@ -39,6 +39,9 @@ msgid ""
 "the device running your game will limit the number of buses and effects that "
 "can be used before performance starts to suffer."
 msgstr ""
+"Godot的音频引擎允许创建任意数量的音频总线，并且可以向每个总线添加任意数量的效"
+"果处理器。运行游戏的设备的硬件会限制总线的数量，以及在性能开始下降之前可以使"
+"用的效果。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:14
 msgid "Decibel scale"
@@ -49,6 +52,7 @@ msgid ""
 "Godot's sound interface is designed to meet the expectations of sound design "
 "professionals. To this end it primarily uses the decibel scale."
 msgstr ""
+"Godot的声音界面设计，符合声音设计专业人员的期望。所以，它主要使用分贝刻度。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:19
 msgid "For those unfamiliar with it, it can be explained with a few facts:"
@@ -200,7 +204,7 @@ msgstr "音频总线可以包含各种效果。 这些效果以某种方式修�
 msgid ""
 "Try them all out to get a sense of how they alter sound. Here follows a "
 "short description of available effects:"
-msgstr ""
+msgstr "尝试一下，了解他们是如何改变声音的。以下是对可用效果的简短描述："
 
 #: ../../docs/tutorials/audio/audio_buses.rst:69
 msgid "Amplify"
@@ -212,6 +216,8 @@ msgid ""
 "Setting the level too high can make the sound clip, which is usually "
 "undesirable."
 msgstr ""
+"增强改变了信号的振幅。使用时要小心。把音量调得太高的话，声音就会被截断，这通"
+"常是不可取的。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:74
 msgid "BandLimit and BandPass"
@@ -225,6 +231,9 @@ msgid ""
 "the sound of a wah-wah guitar pedal, think of the guitar in Jimi Hendrix's "
 "*Voodoo Child (Slight Return)*."
 msgstr ""
+"这些是共振滤波器，它在*截止*点附近阻断频率。带通滤波器可以用来模拟声音通过旧"
+"电话线路或扩音器。调制带通滤波器频率，可以模拟哇哇吉他踏板的声音，想想吉米·亨"
+"德里克斯在*魔法之子（轻微的回报）*中使用的吉他吧。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:79
 msgid "Chorus"
@@ -238,6 +247,9 @@ msgid ""
 "together again. This creates a shimmering effect and adds stereo width to "
 "the sound."
 msgstr ""
+"合唱效果会复制传入的音频，稍微延迟复制，并使用低频振荡器连续调节重复信号的音"
+"高，然后再将重复信号和原始信号混合在一起。这就创造了一个闪烁的效果，并增加立"
+"体声宽度的声音。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:84
 msgid "Compressor"
@@ -253,6 +265,10 @@ msgid ""
 "range of signals with very loud and quiet parts. Reducing the dynamic range "
 "of a signal can make it easier to mix."
 msgstr ""
+"当输入信号的幅度超过某一阈值时，动态范围压缩器会自动衰减该信号的电平。衰减的"
+"程度与传入的音频超过阈值的程度成正比。压缩器的比例参数控制着衰减的程度。压缩"
+"器的主要用途之一，是降低信号的动态范围与非常响亮和安静的部分。减小信号的动态"
+"范围，可以使混合变得更容易。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:89
 #, fuzzy
@@ -294,6 +310,8 @@ msgid ""
 "altogether, rather that to reduce the dynamic range       of the signal, a "
 "limiter is likely a better choice than a compressor. See below."
 msgstr ""
+"如果你的目标是防止信号超过给定的振幅，而不是减少信号的动态范围……那么，限幅器"
+"可能是比压缩器更好的选择。详见下文。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:102
 msgid "Delay"
@@ -335,6 +353,9 @@ msgid ""
 "reproduce bass content well). The equalizer effect can be disabled when "
 "headphones are plugged in."
 msgstr ""
+"Godot提供了四个具有不同频带数的均衡器。主总线上的均衡器，可以有效地降低设备扬"
+"声器不能很好地再现的频率(例如，手机扬声器不能很好地再现低音内容)。当耳机插入"
+"时，可以禁用均衡器效果。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:118
 msgid "Filter"
@@ -344,7 +365,7 @@ msgstr "过滤器"
 msgid ""
 "Filter is what all other effects processors inherit from and should not be "
 "used directly."
-msgstr ""
+msgstr "滤波器是所有其他处理器继承的效果，不能直接使用。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:123
 msgid "HighPassFilter, HighShelfFilter"
@@ -356,6 +377,8 @@ msgid ""
 "HighPassFilter and HighShelfFilter are used to reduce the bass content of a "
 "signal."
 msgstr ""
+"这些滤波器将频率降低到特定的截止频率以下。高通滤波器和高阻滤波器，用于降低信"
+"号的低音内容。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:128
 msgid "Limiter"
@@ -406,7 +429,7 @@ msgstr "Panner"
 msgid ""
 "The Panner allows the stereo balance of a signal to be adjusted between left "
 "and right channels (wear headphones to audition this effect)."
-msgstr ""
+msgstr "平移器允许在左右通道之间调整信号的立体平衡(戴上耳机试听这个效果)。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:148
 msgid "Phaser"
@@ -438,13 +461,13 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:158
 msgid "Record"
-msgstr ""
+msgstr "录制"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:160
 msgid ""
 "The Record effect allows audio passing through the bus to be written to a "
 "file."
-msgstr ""
+msgstr "录制效果允许将通过总线的音频写入文件。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:163
 msgid "Reverb"

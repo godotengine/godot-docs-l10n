@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -677,6 +677,15 @@ msgid "Clearcoat"
 msgstr "清漆"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:357
+#: ../../docs/tutorials/3d/spatial_material.rst:366
+#: ../../docs/tutorials/3d/spatial_material.rst:388
+#: ../../docs/tutorials/3d/spatial_material.rst:401
+#: ../../docs/tutorials/3d/spatial_material.rst:421
+#, fuzzy
+msgid "*This feature is only available when using the GLES3 backend.*"
+msgstr "此选项仅适用于基于unix的平台。"
+
+#: ../../docs/tutorials/3d/spatial_material.rst:359
 msgid ""
 "The *Clearcoat* parameter is used to add a secondary pass of transparent "
 "coat to the material. This is common in car paint and toys. In practice, "
@@ -685,11 +694,11 @@ msgstr ""
 "* Clearcoat *参数用于为材质添加透明涂层的二次通过。 这在汽车油漆和玩具中很常"
 "见。 在实践中，它是在现有材质之上添加的较小的镜面斑点。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:362
+#: ../../docs/tutorials/3d/spatial_material.rst:364
 msgid "Anisotropy"
 msgstr "各向异性"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:364
+#: ../../docs/tutorials/3d/spatial_material.rst:368
 msgid ""
 "This changes the shape of the specular blob and aligns it to tangent space. "
 "Anisotropy is commonly used with hair, or to make materials such as brushed "
@@ -699,11 +708,11 @@ msgstr ""
 "这会更改镜面斑点的形状并将其与切线空间对齐。 各向异性通常与头发一起使用，或使"
 "诸如拉丝铝之类的材质更加逼真。 与流程图结合使用时效果特别好。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:371
+#: ../../docs/tutorials/3d/spatial_material.rst:375
 msgid "Ambient Occlusion"
 msgstr "环境光遮蔽"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:373
+#: ../../docs/tutorials/3d/spatial_material.rst:377
 msgid ""
 "It is possible to specify a baked ambient occlusion map. This map affects "
 "how much ambient light reaches each surface of the object (it does not "
@@ -716,11 +725,11 @@ msgstr ""
 "况下它不会影响直接光)。 虽然可以使用屏幕空间环境遮挡(SSAO)来生成环境遮挡，但"
 "没有什么能比良好烘焙的AO贴图的质量更好。 建议尽可能烘焙环境遮挡。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:382
+#: ../../docs/tutorials/3d/spatial_material.rst:386
 msgid "Depth"
 msgstr "深度"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:384
+#: ../../docs/tutorials/3d/spatial_material.rst:390
 msgid ""
 "Setting a depth map on a material produces a ray-marched search to emulate "
 "the proper displacement of cavities along the view direction. This is not "
@@ -732,11 +741,11 @@ msgstr ""
 "不是真正增加的几何，而是一种深度的幻觉。 它可能不适用于复杂的对象，但它会为纹"
 "理产生逼真的深度效果。 为获得最佳效果，* Depth *应与法线贴图一起使用。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:393
+#: ../../docs/tutorials/3d/spatial_material.rst:399
 msgid "Subsurface Scattering"
 msgstr "次表面散射"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:395
+#: ../../docs/tutorials/3d/spatial_material.rst:403
 msgid ""
 "This effect emulates light that penetrates an object's surface, is "
 "scattered, and then comes out. It is useful to create realistic skin, "
@@ -745,11 +754,11 @@ msgstr ""
 "此效果模拟穿透物体表面，散射然后散出的光。 创造逼真的皮肤，大理石，有色液体等"
 "是有用的。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:402
+#: ../../docs/tutorials/3d/spatial_material.rst:410
 msgid "Transmission"
 msgstr "传输"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:404
+#: ../../docs/tutorials/3d/spatial_material.rst:412
 msgid ""
 "This controls how much light from the lit side (visible to light) is "
 "transferred to the dark side (opposite from the light). This works well for "
@@ -758,11 +767,11 @@ msgstr ""
 "这可以控制从被点亮的一侧(可见光到光线)传输到暗侧(与灯光相反)的光线。 这适用于"
 "植物叶子，草，人耳等薄物体。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:411
+#: ../../docs/tutorials/3d/spatial_material.rst:419
 msgid "Refraction"
 msgstr "折射"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:413
+#: ../../docs/tutorials/3d/spatial_material.rst:423
 msgid ""
 "When refraction is enabled, it supersedes alpha blending, and Godot attempts "
 "to fetch information from behind the object being rendered instead. This "
@@ -772,11 +781,11 @@ msgstr ""
 "当启用折射时，它会取代alpha混合，而Godot会尝试从正在渲染的对象后面获取信息。 "
 "这允许以类似于现实生活中的折射的方式扭曲透明度。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:420
+#: ../../docs/tutorials/3d/spatial_material.rst:430
 msgid "Detail"
 msgstr "详情"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:422
+#: ../../docs/tutorials/3d/spatial_material.rst:432
 msgid ""
 "Godot allows using secondary albedo and normal maps to generate a detail "
 "texture, which can be blended in many ways. By combining this with secondary "
@@ -785,11 +794,11 @@ msgstr ""
 "Godot允许使用二级反照率和法线贴图生成细节纹理，可以通过多种方式进行混合。 通"
 "过将其与二级UV或三平面模式相结合，可以实现许多有趣的纹理。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:429
+#: ../../docs/tutorials/3d/spatial_material.rst:439
 msgid "UV1 and UV2"
 msgstr "UV1和UV2"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:431
+#: ../../docs/tutorials/3d/spatial_material.rst:441
 msgid ""
 "Godot supports two UV channels per material. Secondary UV is often useful "
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
@@ -798,11 +807,11 @@ msgstr ""
 "Godot每种材质支持两个UV通道。 二次紫外线通常可用于环境遮挡或发射(烘焙光)。 UV"
 "可以缩放和偏移，这在使用重复纹理时很有用。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:436
+#: ../../docs/tutorials/3d/spatial_material.rst:446
 msgid "Triplanar Mapping"
 msgstr "Triplanar映射"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:438
+#: ../../docs/tutorials/3d/spatial_material.rst:448
 msgid ""
 "Triplanar mapping is supported for both UV1 and UV2. This is an alternative "
 "way to obtain texture coordinates, sometimes called \"Autotexture\". "
@@ -813,7 +822,7 @@ msgstr ""
 "理”。 纹理在X，Y和Z中采样，并由法线混合。 可以在世界空间或对象空间中执行三平"
 "面映射。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:443
+#: ../../docs/tutorials/3d/spatial_material.rst:453
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
@@ -821,11 +830,11 @@ msgstr ""
 "在下图中，您可以看到所有基元如何与世界三平面共享相同的材质，因此砖纹理在它们"
 "之间继续平滑。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:449
+#: ../../docs/tutorials/3d/spatial_material.rst:459
 msgid "Proximity and distance fade"
 msgstr "接近和距离褪色"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:451
+#: ../../docs/tutorials/3d/spatial_material.rst:461
 msgid ""
 "Godot allows materials to fade by proximity to each other as well as "
 "depending on the distance from the viewer. Proximity fade is useful for "
@@ -837,7 +846,7 @@ msgstr ""
 "颗粒或大量水的效果是有用的，并且平滑地混合到海岸。 距离淡化对于仅在给定距离之"
 "后存在的光轴或指示器是有用的。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:457
+#: ../../docs/tutorials/3d/spatial_material.rst:467
 msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for an "
 "entire scene is usually not a good idea."
@@ -845,11 +854,11 @@ msgstr ""
 "请记住，启用这些功能可以实现Alpha混合，因此将它们用于整个场景通常不是一个好主"
 "意。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:463
+#: ../../docs/tutorials/3d/spatial_material.rst:473
 msgid "Render priority"
 msgstr "渲染优先级"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:465
+#: ../../docs/tutorials/3d/spatial_material.rst:475
 msgid ""
 "The rendering order of objects can be changed, although this is mostly "
 "useful for transparent objects (or opaque objects that perform depth draw "

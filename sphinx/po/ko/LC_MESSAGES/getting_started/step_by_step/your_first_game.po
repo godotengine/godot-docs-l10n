@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1344,7 +1344,7 @@ msgstr ""
 "시작하려면 ``Mob.gd``\\ 에 새 함수를 추가합니다. ``queue_free()``\\ 는 현재 "
 "프레임이 끝나는 순간 현재 노드를 제거합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1156
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
@@ -1352,7 +1352,7 @@ msgstr ""
 "그런 다음 ``Main.gd``\\ 에서 ``_on_MobTimer_timeout()``\\ 의 끝에 새로운 줄"
 "을 추가합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1157
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1168
 msgid ""
 "This line tells the new Mob node (referenced by the ``mob`` variable) to "
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
@@ -1362,11 +1362,11 @@ msgstr ""
 "``_on_start_game()`` 함수가 실행하여 방출하는 ``start_game`` 시그널에 반응합"
 "니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid "Finishing up"
 msgstr "마무리 작업"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1175
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -1376,11 +1376,11 @@ msgstr ""
 "을 향상시킬 \"주스\"를 추가하는 것입니다. 독창적인 아이디어로 자유롭게 게임 "
 "플레이를 확장시켜보세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1180
 msgid "Background"
 msgstr "배경(Background)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1171
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1182
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1395,7 +1395,7 @@ msgstr ""
 "``ColorRect`` 는 오직 하나의 속성만 가지고 있습니다: ``Color`` 입니다. 원하"
 "는 색깔을 고르고 ``ColorRect`` 의 크기를 조절해 화면을 덮도록 만듭시다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1178
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1189
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."
@@ -1403,11 +1403,11 @@ msgstr ""
 "또한 배경 이미지를 추가할 수도 있는데, 이미지가 있다면, ``Sprite`` 노드를 사"
 "용하면 됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1182
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1193
 msgid "Sound effects"
 msgstr "음향 효과(Sound effects)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1184
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1195
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -1419,7 +1419,7 @@ msgstr ""
 "Loop.ogg\"는 배경 음악으로, \"gameover.wav\"는 플레이어가 죽었을 때 쓰면 됩니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1189
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1200
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -1431,7 +1431,7 @@ msgstr ""
 "이름 지으세요. 각각에서, ``Stream`` 속성을 클릭하시고 \"Load\"를 선택해서 이"
 "름에 맞는 오디오 파일을 선택하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1194
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -1439,16 +1439,16 @@ msgstr ""
 "음악을 실행시키려면, ``new_game()`` 함수에 ``$Music.play()`` 를 추가하고 "
 "``game_over()`` 함수에 ``$Music.stop()`` 을 추가하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1197
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1208
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr ""
 "마지막으로, ``game_over()`` 함수에 ``$DeathSound.play()`` 를 추가하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1200
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1211
 msgid "Keyboard Shortcut"
 msgstr "키보드 단축키"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1202
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1213
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. One way to "
@@ -1458,7 +1458,7 @@ msgstr ""
 "하는 게 편리할 것입니다. 이렇게 하는 방법들 중 하나로 ``Button`` 노드의 "
 "\"Shortcut\" 속성을 사용하는 것이 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1217
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its _Shortcut_ "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1473,7 +1473,7 @@ msgstr ""
 "\"InputEvent\"을 클릭합니다. 마지막으로 _Action_ 속성에서, 이름을 \"ui_select"
 "\"로 적습니다. 이것은 스페이스바로 지정된 기본 입력 이벤트입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1214
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1225
 msgid ""
 "Now when the start button appears, you can either click it or press the "
 "spacebar to start the game."
@@ -1481,18 +1481,18 @@ msgstr ""
 "이제 시작 버튼이 나타날 때, 버튼을 클릭하거나 스페이스바를 눌러서 게임을 시작"
 "할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1218
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1229
 msgid "Project files"
 msgstr "프로젝트 파일"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
+#: ../../docs/<generated>:1
 msgid "You can find a completed version of this project at these locations:"
 msgstr "당신은 여기서 이 프로젝트의 완성 버전을 확인하실 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1232
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1222
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1233
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"

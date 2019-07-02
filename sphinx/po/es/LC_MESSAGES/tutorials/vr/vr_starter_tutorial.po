@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1516,10 +1516,13 @@ msgstr ""
 "variables:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1145
+#, fuzzy
 msgid ""
 "``bomb_mesh``: The :ref:`MeshInstance <class_MeshInstance>` used for the "
 "bomb mesh."
 msgstr ""
+"``bomb_mesh``: El :ref:`MeshInstance <class_MeshInstance>` utilizado para el "
+"mesh de la bomba."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1146
 msgid "``FUSE_TIME``: The length of time for which the fuse burns."
@@ -1537,10 +1540,12 @@ msgid ""
 "``explosion_area``: The :ref:`Area <class_Area>` node used for detecting "
 "what nodes are inside the explosion."
 msgstr ""
+"``explosion_area``: El nodo :ref:`Area <class_Area>` utilizado para detectar "
+"que nodos se encuentran dentro de la explosión."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1149
 msgid "``EXPLOSION_DAMAGE``: The amount of damage the explosion does."
-msgstr ""
+msgstr "``EXPLOSION_DAMAGE``: La cantidad de daño que hace la explosión."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1150
 msgid ""
@@ -1548,16 +1553,22 @@ msgid ""
 "<class_Particles>` take (you can calculate this number by multiplying the "
 "particles ``lifetime`` by its ``speed scale``)"
 msgstr ""
+"``EXPLOSION_TIME``: La duración de tiempo que las :ref:`Particles "
+"<class_Particles>` de la explosión duraran (puedes calcular este numero "
+"multiplicando las partículas ``lifetime`` por su ``speed scale``)"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1151
 msgid ""
 "``explosion_timer``: A variable for tracking how long the explosion has "
 "lasted."
 msgstr ""
+"``explosion_timer``: Una variable para rastrear que tanto tiempo ha durado "
+"la explosión."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1152
+#, fuzzy
 msgid "``explode``: A boolean for tracking whether the bomb has exploded."
-msgstr ""
+msgstr "``explode``: Una boolean para rastrear si la bomba ha explotado."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1153
 msgid "``fuse_particles``: The fuse :ref:`Particles <class_Particles>` node."
@@ -1895,11 +1906,13 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1412
 msgid "Final notes"
-msgstr ""
+msgstr "Notas finales"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1416
 msgid "Whew! That was a lot of work. Now you have a VR project!"
 msgstr ""
+"¡Wow! Eso fue un montón de trabajo. ¡Ahora tienes un proyecto de Realidad "
+"Virtual!"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1418
 msgid "If you ever get lost, be sure to read over the code again!"

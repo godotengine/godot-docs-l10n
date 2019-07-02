@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -282,8 +282,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:251
+#, fuzzy
 msgid "Let's implement our functions by creating our ``gdexample.cpp`` file:"
 msgstr ""
+"Давайте реализуем наши функции путём создания нашего файла``gdexample.cpp``:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:311
 msgid ""
@@ -295,6 +297,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:317
+#, fuzzy
 msgid ""
 "The other method of note is our ``_process`` function, which simply keeps "
 "track of how much time has passed and calculates a new position for our "
@@ -304,8 +307,17 @@ msgid ""
 "actual Sprite node our script relates to. In the upcoming NativeScript 1.1, "
 "``set_position`` can be called directly on our class."
 msgstr ""
+"Следующим методом узла является наша ``_process`` функция, которая просто "
+"следит за количеством пройденного времени и высчитывает новую позицию для "
+"нашего Спрайта, используя простые функции синуса и косинуса. Всё, что "
+"остаётся это вызвать ``owner->set_position`` для вызова одного из встроенных "
+"методов нашего Спрайта. Смысл в том, что наш класс это класс контейнер;  "
+"``owner`` указывает на текущий узел Спрайта к которому обращается наш "
+"скрипт. В предстоящей версии NativeScript 1.1, ``set_position`` может быть "
+"вызвана напрямую из нашего класса."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:326
+#, fuzzy
 msgid ""
 "There is one more C++ file we need; we'll name it ``gdlibrary.cpp``. Our "
 "GDNative plugin can contain multiple NativeScripts, each with their own "
@@ -313,12 +325,21 @@ msgid ""
 "we need now is a small bit of code that tells Godot about all the "
 "NativeScripts in our GDNative plugin."
 msgstr ""
+"Есть ещё один файл C++, который нам нужен; мы назовём его ``gdlibrary.cpp``. "
+"Наш GDNative плагин может содержать несколько NativeScripts, каждый со своим "
+"заголовком и исходным файлом, такими, как мы реализовывали ``GDExample`` "
+"выше. Всё что нам нужно это небольшая часть кода, котора говорит Godot обо "
+"всех NativeScripts в нашем GDNative плагине."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:350
+#, fuzzy
 msgid ""
 "Note that we are not using the ``godot`` namespace here, since the three "
 "functions implemented here need to be defined without a namespace."
 msgstr ""
+"Учтите, что  здесь мы не используем  пространства имён``godot`` , поскольку "
+"три функции реализованные здесь функции должны быть объявлены без "
+"пространства имён."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:353
 msgid ""
@@ -338,8 +359,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:365
+#, fuzzy
 msgid "Compiling the plugin"
-msgstr ""
+msgstr "Компилировать дополнение"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:367
 msgid ""

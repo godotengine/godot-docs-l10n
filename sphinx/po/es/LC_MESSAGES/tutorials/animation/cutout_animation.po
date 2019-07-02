@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -345,9 +345,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:221
-#, fuzzy
 msgid "Your final skeleton should look something like this:"
-msgstr "La escena final debería verse similar a esta."
+msgstr "El esqueleto finalizado debería verse similar a esto:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:225
 msgid ""
@@ -356,7 +355,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:228
-#, fuzzy
 msgid ""
 "Now that the whole figure is rigged, the next step is setting up the IK "
 "chains. IK chains allow for more natural control of extremities."
@@ -407,9 +405,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:264
-#, fuzzy
 msgid "Animation tips"
-msgstr "Opciones de animación"
+msgstr "Recomendaciones para animaciones"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:266
 msgid ""
@@ -419,19 +416,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:271
-#, fuzzy
 msgid "Setting keyframes and excluding properties"
-msgstr "Accediendo a propiedades de nodos de la escena"
+msgstr "Asignando keyframes y excluyendo propiedades"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:273
-#, fuzzy
 msgid ""
 "Special contextual elements appear in the top toolbar when the animation "
 "editor window is open:"
 msgstr ""
-"Al hacer animación en 2D, un ayudante estará presente en el menú superior. "
-"Este asistente sólo aparece cuando se abre la ventana del editor de "
-"animación:"
+"Los elementos contextuales especiales aparecerán en la barra de herramientas "
+"superior cuando se abra el panel del editor de animación:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:278
 msgid ""
@@ -458,9 +452,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:294
-#, fuzzy
 msgid "Creating a rest pose"
-msgstr "Creando un árbol"
+msgstr "Creando una posición de descanso"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:296
 msgid ""
@@ -475,9 +468,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:302
-#, fuzzy
 msgid "Create a new animation, rename it \"rest\"."
-msgstr "Crear un nodo AnimationPlayer"
+msgstr "Crea una nueva animación, renómbrala a \"rest\" (descanso)."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:304
 msgid "Select all nodes in your rig (box selection should work fine)."
@@ -523,7 +515,6 @@ msgid "Keyframing IK chains"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:333
-#, fuzzy
 msgid ""
 "When editing IK chains, it's not necessary to select the whole chain to add "
 "keyframes. Selecting the endpoint of the chain and inserting a keyframe will "
@@ -532,8 +523,7 @@ msgstr ""
 "Cuando se editan cadenas IK, no es necesario seleccionar toda la cadena para "
 "añadir fotogramas clave. Al seleccionar el punto final de la cadena e "
 "insertar un fotograma clave, se insertarán automáticamente fotogramas clave "
-"hasta la base de la cadena. Esto hace que la tarea de animar las "
-"extremidades sea mucho más sencilla."
+"hasta la base de la cadena."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:338
 msgid "Visually move a sprite behind its parent"
@@ -570,13 +560,12 @@ msgid "Select the relevant keys."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:359
-#, fuzzy
 msgid ""
 "Click on the pencil icon in the bottom right of the animation panel, this "
 "will open the transition editor."
 msgstr ""
-"Haz clic en el nodo AnimationPlayer en la pestaña Nodos para abrir el Panel "
-"de Animación en la parte inferior de la ventana de visualización."
+"Haz clic en el ícono de lápiz en la parte inferior derecha del panel de "
+"animación, esto abrirá el editor de transiciones."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
 msgid "In the transition editor click on the desired curve to apply it."

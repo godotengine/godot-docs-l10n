@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -856,7 +856,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr ""
+msgstr "Конструкторы"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -864,26 +864,33 @@ msgid ""
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
 "be used."
 msgstr ""
+"Это все функции необходимые для создания базовых типов данных Godot. "
+"Например, если вам нужно создать Vector3 из трех float, должен "
+"использоваться конструктор."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:425
 msgid "Destructor"
-msgstr ""
+msgstr "Деструктор"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
 msgstr ""
+"Это противоположность Конструктору, которая позволяет разделить любой "
+"основной тип (например, Vector3) на его под-элементы."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:433
 msgid "Emit Signal"
-msgstr ""
+msgstr "Испускание сигнала"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
+#, fuzzy
 msgid ""
 "Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
+"Испускает сигнал из любого объекта. В целом, это не так полезно, так как.."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:439
 msgid "Get/Set"
@@ -958,10 +965,14 @@ msgid ""
 "used, it allows you to enormously simplify visual scripts that are math or "
 "logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
+"Среди операторов, *Expression* узел самый сильный. При правильном "
+"использовании, позволяет вам чрезвычайно упростить визуальные скрипты, в "
+"которых много математики и логики. Введите любое выражение и оно будет "
+"выполнено в реальном времени."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:486
 msgid "Expression nodes can:"
-msgstr ""
+msgstr "Узлы выражений могут:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid ""

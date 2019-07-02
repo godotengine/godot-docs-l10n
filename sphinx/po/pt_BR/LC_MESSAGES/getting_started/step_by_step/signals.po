@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,6 @@ msgid "Timer example"
 msgstr "Alguns exemplos"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
@@ -79,9 +78,7 @@ msgid ""
 msgstr ""
 "Para ver como sinais funcionam, vamos tentar usar um nó :ref:`Timer "
 "<class_Timer>`. Crie uma nova cena com um Node e dois filhos: um Timer e um :"
-"ref:`Sprite <class_Sprite>`. Você pode usar o ícone do Godot para a textura "
-"do Sprite, ou qualquer outra imagem que você quiser. Anexe um script no nó "
-"raíz, mas não adicione nenhum código a ele ainda."
+"ref:`Sprite <class_Sprite>`.  Na Scene dock renomeie o nó para TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -236,9 +233,8 @@ msgstr ""
 "ser conectados da mesma forma que os sinais pré-incorporados em um node."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Para emitir um sinal por código, use a função ``emit``:"
+msgstr "Para emitir um sinal por código, use a função ``emit_signal`` :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:208
 msgid "Conclusion"

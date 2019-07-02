@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:4
-#, fuzzy
 msgid "Creating Android plugins"
-msgstr "Creación de un simple plugin"
+msgstr "Creando plugins de Android"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:7
 msgid "Introduction"
@@ -146,9 +145,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:53
-#, fuzzy
 msgid "Android plugin"
-msgstr "Android"
+msgstr "Plugin de Android"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:55
 msgid ""
@@ -175,9 +173,8 @@ msgid "Once created, there are certain rules to follow, but they are simple."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:64
-#, fuzzy
 msgid "Android Directories"
-msgstr "Añadir vectores"
+msgstr "Directorios de Android"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:66
 msgid ""
@@ -290,17 +287,16 @@ msgid "Java singleton"
 msgstr "Singleton Java"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:164
-#, fuzzy
 msgid ""
 "An Android plugin will usually have a singleton class that will load it, "
 "this class inherits from ``Godot.SingletonBase``. Resource identifiers for "
 "any additional resources you have provided for the module will be in the "
 "``com.godot.game.R`` class, so you'll likely want to import it."
 msgstr ""
-"Un módulo Android normalmente tendrá una clase singleton que lo cargará, "
+"Un plugin de Android normalmente tendrá una clase singleton que lo cargará, "
 "esta clase hereda de ``Godot.SingletonBase``. Los identificadores de "
 "recursos para cualquier recurso adicional que haya proporcionado para el "
-"módulo estarán en el juego ``com.godot.game.R``, por lo que probablemente "
+"módulo estarán en la clase ``com.godot.game.R``, por lo que probablemente "
 "querrás importarlo."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:169

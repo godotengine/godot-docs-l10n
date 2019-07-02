@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1261,14 +1261,14 @@ msgstr ""
 "首先向``Mob.gd``添加一个新函数。``queue_free()``将在当前帧的末尾删除当前节"
 "点。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1156
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
 "然后在``Main.gd``中，``_on_MobTimer_timeout()``函数中的末尾，添加新的行。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1157
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1168
 msgid ""
 "This line tells the new Mob node (referenced by the ``mob`` variable) to "
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
@@ -1277,11 +1277,11 @@ msgstr ""
 "这一行告诉新Mob节点(由``mob``变量引用)通过运行``_on_start_game()``函数来响应"
 "``HUD``节点发出的任何``开始_游戏``信号。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid "Finishing up"
 msgstr "完成了"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1175
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -1290,11 +1290,11 @@ msgstr ""
 "现在我们已经完成了游戏的所有功能。下面是一些额外的步骤，添加更多的\"juice\"来"
 "提升游戏体验。您可以用您自己的想法来扩展游戏玩法。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1180
 msgid "Background"
 msgstr "背景"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1171
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1182
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1308,17 +1308,17 @@ msgstr ""
 "样它就会被绘制到其它节点的后面。 ``ColorRect`` 只有一个属性: ``Color`` 。选择"
 "一个您喜欢的颜色并拖拽 ``ColorRect`` 的大小使它覆盖整个屏幕。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1178
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1189
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."
 msgstr "如果您有背景图片，您也可以通过使用 ``Sprite`` 节点来添加背景图片。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1182
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1193
 msgid "Sound effects"
 msgstr "声音效果"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1184
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1195
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -1329,7 +1329,7 @@ msgstr ""
 "音文件:\"House In a Forest Loop.ogg\"用于背景音乐， \"gameover.wav\"将在游戏"
 "角色输掉游戏时播放。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1189
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1200
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -1341,7 +1341,7 @@ msgstr ""
 "``DeathSound`` 。在每个节点选项上，点击 ``Stream``属性， 选择\"Load\"，然后选"
 "择相应的音频文件。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1194
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -1349,15 +1349,15 @@ msgstr ""
 "要播放音乐，在 ``new_game()`` 函数中添加 ``$Music.play()``，在 "
 "``game_over()`` 函数中添加 ``$Music.stop()`` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1197
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1208
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr "最后， 在 ``game_over()`` 函数中添加 ``$DeathSound.play()`` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1200
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1211
 msgid "Keyboard Shortcut"
 msgstr "键盘快捷键"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1202
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1213
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. One way to "
@@ -1367,7 +1367,7 @@ msgstr ""
 "便。\n"
 "一种方法是使用`Button`节点的“快捷方式”属性。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1217
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its _Shortcut_ "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1383,24 +1383,24 @@ msgstr ""
 "最后，在_Action_属性中输入名称“ui_select”。\n"
 "这是与空格键关联的默认输入事件。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1214
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1225
 msgid ""
 "Now when the start button appears, you can either click it or press the "
 "spacebar to start the game."
 msgstr "现在，当开始按钮出现时，您可以单击它或按空格键来启动游戏。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1218
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1229
 msgid "Project files"
 msgstr "项目文件"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
+#: ../../docs/<generated>:1
 msgid "You can find a completed version of this project at these locations:"
 msgstr "您可以在这里找到这个项目的完整版本:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1232
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1222
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1233
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-16 22:53+0200\n"
+"POT-Creation-Date: 2019-07-02 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1418,7 +1418,7 @@ msgstr ""
 "Commencez par ajouter une nouvelle fonction à ``Mob.gd```. ``queue_free()`` "
 "supprimera le nœud courant à la fin de l'image(frame) courante."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1156
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
@@ -1426,7 +1426,7 @@ msgstr ""
 "Enfin, dans le script \"Main.gd\", ajoutez une nouvelle ligne à la fin de la "
 "fonction \"_on_MobTimer_timeout()\"."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1157
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1168
 msgid ""
 "This line tells the new Mob node (referenced by the ``mob`` variable) to "
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
@@ -1436,11 +1436,11 @@ msgstr ""
 "de répondre à tout signal ``start_game`` émis par le nœud ``HUD`` en "
 "exécutant sa fonction ``_on_start_game()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid "Finishing up"
 msgstr "Pour terminer"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1175
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -1451,11 +1451,11 @@ msgstr ""
 "pour améliorer l'expérience de jeu. N'hésitez pas à développer le gameplay "
 "avec vos propres idées."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1180
 msgid "Background"
 msgstr "Arrière-plan"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1171
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1182
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1471,7 +1471,7 @@ msgstr ""
 "propriété : ``Color``. Choisissez une couleur que vous aimez et faites "
 "glisser la taille du ``ColorRect`` pour qu'il couvre l'écran."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1178
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1189
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."
@@ -1479,11 +1479,11 @@ msgstr ""
 "Vous pouvez aussi ajouter une image de fond, si vous en avez une, en "
 "utilisant un nœud ``Sprite``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1182
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1193
 msgid "Sound effects"
 msgstr "Effets sonores"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1184
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1195
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -1495,7 +1495,7 @@ msgstr ""
 "vous avez deux fichiers son : \"House In a Forest Loop.ogg\" pour la musique "
 "de fond, et \"gameover.wav\" pour quand le joueur perd."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1189
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1200
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -1507,7 +1507,7 @@ msgstr ""
 "``DeathSound``. Sur chacun d'eux, cliquez sur la propriété ``Stream``, "
 "sélectionnez \"Charger\", et choisissez le fichier audio correspondant."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1194
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -1515,16 +1515,16 @@ msgstr ""
 "Pour jouer de la musique, ajouter ``$Music.play()`` dans la fonction "
 "``new_game()`` et ``$Music.stop()`` dans la fonction ``game_over()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1197
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1208
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr ""
 "Enfin, ajoutez ``$DeathSound.play()`` dans la fonction ``game_over()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1200
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1211
 msgid "Keyboard Shortcut"
 msgstr "Raccourci clavier"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1202
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1213
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. One way to "
@@ -1535,7 +1535,7 @@ msgstr ""
 "clavier. Une façon d'y parvenir est d'utiliser la propriété \"Raccourci\" du "
 "nœud \"Bouton\"."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1217
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its _Shortcut_ "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1551,7 +1551,7 @@ msgstr ""
 "\". Enfin, dans _Action_ property, tapez le nom \"ui_select\". C'est "
 "l'événement d'entrée par défaut associé à la barre d'espace."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1214
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1225
 msgid ""
 "Now when the start button appears, you can either click it or press the "
 "spacebar to start the game."
@@ -1559,18 +1559,18 @@ msgstr ""
 "Maintenant, lorsque le bouton de démarrage apparaît, vous pouvez cliquer "
 "dessus ou appuyer sur la barre d'espace pour démarrer le jeu."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1218
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1229
 msgid "Project files"
 msgstr "Fichiers du projet"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
+#: ../../docs/<generated>:1
 msgid "You can find a completed version of this project at these locations:"
 msgstr "Vous pouvez trouver une version complète de ce projet ici :"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1232
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1222
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1233
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"
