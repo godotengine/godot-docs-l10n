@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,8 +129,8 @@ msgid ""
 msgstr ""
 "프로젝트를 내보내려면, *내보내기 템플릿(export templates)* 을 http://"
 "godotengine.org/download 에서 다운로드 해야 합니다. 이 템플릿은 엔진에 최적화"
-"된 버전으로 각 플렛폼에 따로 컴파일된 에디터가 필요 없습니다. 당신은 또한 "
-"Godot에서 *에디터 -> 내보내기 템플릿 관리* 를 통해 다운로드 할 수 있습니다:"
+"된 버전으로 각 플렛폼에 따로 컴파일된 편집기가 필요 없습니다. 당신은 또한 "
+"Godot에서 *편집기 -> 내보내기 템플릿 관리* 를 통해 다운로드 할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:132
 msgid ""
@@ -182,7 +182,7 @@ msgid ""
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
 "두 번째 버튼, \" 프로젝트 내보내기\", 게임의 완전 실행가능한 버전을 만듭니"
-"다, 마치 안드로이드의 `.apk` 나 윈도우의 `.exe` 처럼 말이죠."
+"다, 마치 Android의 `.apk` 나 Windows의 `.exe` 처럼 말이죠."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:157
 msgid ""
@@ -206,7 +206,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:167
 msgid "PC (Linux/macOS/Windows)"
-msgstr "PC (리눅스/macOS/윈도우)"
+msgstr "PC (Linux/macOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:169
 msgid ""
@@ -232,7 +232,7 @@ msgid ""
 "click and run."
 msgstr ""
 "macOS 컴퓨터에서 작업한다면, macOS로 내보낼 때, 파일을 `.dmg` 파일로 만들 것"
-"이고, 반면에 리눅스나 윈도우는 `.zip` 으로 생성합니다. 어떤 경우든지, 압축된 "
+"이고, 반면에 Linux나 Windows는 `.zip` 으로 생성합니다. 어떤 경우든지, 압축된 "
 "파일은 macOS의 `.app` 을 갖고 있으므로 더블 클릭해서 실행할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:181
@@ -241,13 +241,13 @@ msgid ""
 "than the default one, you need to change it manually. See: :ref:"
 "`doc_changing_application_icon_for_windows`."
 msgstr ""
-"윈도우에서, 당신이 내보낸 실행 파일이 기존과 다른 아이콘을 갖도록 하고 싶다"
+"Windows에서, 당신이 내보낸 실행 파일이 기존과 다른 아이콘을 갖도록 하고 싶다"
 "면, 수동으로 교체해야합니다. 여기를 참고하세요: :ref:"
 "`doc_changing_application_icon_for_windows`."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:186
 msgid "Android"
-msgstr "안드로이드"
+msgstr "Android"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:188
 msgid ""
@@ -264,11 +264,11 @@ msgstr ""
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
-msgstr "안드로이드에 내보내기 전에, 다음의 소프트웨어를 다운받으셔야 합니다:"
+msgstr "Android에 내보내기 전에, 다음의 소프트웨어를 다운받으셔야 합니다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:197
 msgid "Android SDK: https://developer.android.com/studio/"
-msgstr "안드로이드 SDK: https://developer.android.com/studio/"
+msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:198
 msgid ""
@@ -282,17 +282,16 @@ msgid ""
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
 "command-line tool that Godot uses to communicate with your device."
 msgstr ""
-"안드로이드 스튜디오를 처음 실행하신다면, *Configure -> SDK Manager* 를 클릭하"
-"고 \"Android SDK Platform Tools\" 을 실행하세요. 이것은 Godot가 장치와 통신하"
-"도록 만드는 `adb` 명령 행 도구를 실행시킵니다."
+"Android 스튜디오를 처음 실행하신다면, *Configure -> SDK Manager* 를 클릭하고 "
+"\"Android SDK Platform Tools\" 을 실행하세요. 이것은 Godot가 장치와 통신하도"
+"록 만드는 `adb` 명령줄 도구를 실행시킵니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:204
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
 msgstr ""
-"다음으로, 시스템의 명령 행에 다음의 명령을 실행시켜 debug keystore를 만드세"
-"요:"
+"다음으로, 시스템의 명령줄에 다음의 명령을 실행시켜 debug keystore를 만드세요:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:211
 msgid ""
@@ -301,17 +300,17 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
-"Godot에서 *에디터 -> 에디터 설정* 으로 가서 *Export/Android*섹션을 선택합니"
-"다. 여기에서, 당신은 안드로이드 SDK 응용 프로그램의 위치와 당신이 방금 만든 "
-"키 저장소의 위치를 설정해줘야 합니다."
+"Godot에서 *편집기 -> 편집기 설정* 으로 가서 *Export/Android*섹션을 선택합니"
+"다. 여기에서, 당신은 Android SDK 응용 프로그램의 위치와 당신이 방금 만든 키 "
+"저장소의 위치를 설정해줘야 합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:217
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above)."
 msgstr ""
-"이제 만들 준비가 됬습니다. *프로젝트 -> 내보내기* 를 누르고 (위에서 본) 안드"
-"로이드의 프리셋을 추가하세요."
+"이제 만들 준비가 됬습니다. *프로젝트 -> 내보내기* 를 누르고 (위에서 본) "
+"Android의 프리셋을 추가하세요."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:220
 msgid ""
@@ -319,7 +318,7 @@ msgid ""
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
 "\"프로젝트 내보내기\" 버튼을 클릭하면 Godot가 APK를 만들고 휴대용 기기에 다운"
-"로드 할 수 있게 됩니다. 명령 행에서 하려면, 이것을 사용하세요:"
+"로드 할 수 있게 됩니다. 명령줄에서 하려면, 이것을 사용하세요:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:227
 msgid ""
@@ -336,7 +335,7 @@ msgid ""
 "area:"
 msgstr ""
 "시스템이 지원한다면, Godot의 실행 버튼 영역에 \"원 클릭 배포\" 버튼이 표시되"
-"어 호환 가능한 안드로이드 기기와 연결합니다:"
+"어 호환 가능한 Android 기기와 연결합니다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:235
 msgid ""

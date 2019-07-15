@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgstr ""
 "자들은 호기심 많은 사용자가 게임이 만들어진 방법을 알아내는 것을 좋아하지 않"
 "을 수도 있고, 다른 개발자들이 게임이 잘 만들어지지 않은 것을 발견할 수도 있습"
 "니다. 또 다른 이유는 개발자가 특별히 컴파일된 바이너리를 선호하기 때문인데, "
-"크기 면에서 더 작지만 더 많이 최적화되어 있으면서, 에디터와 디버거같은 도구들"
+"크기 면에서 더 작지만 더 많이 최적화되어 있으면서, 편집기와 디버거같은 도구들"
 "을 갖지 않기 때문입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:34
@@ -118,9 +118,9 @@ msgid ""
 "formats for texture compression, such as PVRTC (iOS) or ETC (Android)."
 msgstr ""
 "이 접근법에는 다른 문제가 있습니다: 기기들은 실행하기 위한 각기 다른 형식의 "
-"데이터를 선호합니다. 주요 예시로 텍스쳐 압축이 있습니다. 모든 PC 하드웨어는 "
+"데이터를 선호합니다. 주요 예시로 텍스처 압축이 있습니다. 모든 PC 하드웨어는 "
 "S3TC (BC) 압축을 사용하고 10년 이상 표준화 되어 왔습니다, 하지만 모바일 기기"
-"는 텍스쳐 압축에  PVRTC (iOS)나 ETC (Android)와 같이 다른 형식을 사용합니다."
+"는 텍스처 압축에  PVRTC (iOS)나 ETC (Android)와 같이 다른 형식을 사용합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
 msgid "Export menu"
@@ -201,7 +201,7 @@ msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
 msgstr ""
-"다운로드 했다면, 에디터에서 **내보내기 템플릿 관리** 설정으로 설치할 수 있습"
+"다운로드 했다면, 편집기에서 **내보내기 템플릿 관리** 설정으로 설치할 수 있습"
 "니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:105
@@ -266,7 +266,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
 msgid "Exporting from the command line"
-msgstr "명령 행에서 내보내기"
+msgstr "명령줄에서 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
 msgid ""
@@ -275,10 +275,10 @@ msgid ""
 "from the command line still requires an export preset to define the export "
 "parameters. A basic invocation of the command would be:"
 msgstr ""
-"개발에 있어, 빌드를 자동화하는 것이 유용합니다, 그리고 Godot은 명령 행 매개 "
-"변수``--export``\\ 와 ``--export-debug``\\ 를 사용하여 이를 지원합니다. 명령 "
-"행에서 내보내려면 여전히 내보내기 매개 변수를 정의하기 위한 내보내기 프리셋"
-"이 필요합니다. 명령의 기본 호출은 다음과 같습니다:"
+"개발에 있어, 빌드를 자동화하는 것이 유용합니다, 그리고 Godot은 명령줄 매개 변"
+"수``--export``\\ 와 ``--export-debug``\\ 를 사용하여 이를 지원합니다. 명령줄"
+"에서 내보내려면 여전히 내보내기 매개 변수를 정의하기 위한 내보내기 프리셋이 "
+"필요합니다. 명령의 기본 호출은 다음과 같습니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,19 +47,19 @@ msgstr "플랫폼 유형 (데스크톱, 모바일, 웹)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
 msgid "Supported texture compression algorithms on the platform."
-msgstr "플랫폼에서 지원하는 텍스쳐 압축 알고리즘."
+msgstr "플랫폼에서 지원하는 텍스처 압축 알고리즘."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
 msgstr ""
-"빌드가 ``디버그``\\ 인지 ``출시``\\ 인지 여부 (``디버그``\\ 는 에디터가 포함"
+"빌드가 ``디버그``\\ 인지 ``출시``\\ 인지 여부 (``디버그``\\ 는 편집기가 포함"
 "됨)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
 "Whether the project is running from the editor or a \"standalone\" binary."
-msgstr "프로젝트가 에디터에서 실행 중인지 \"독립 실행형\" 바이너리인지 여부."
+msgstr "프로젝트가 편집기에서 실행 중인지 \"독립 실행형\" 바이너리인지 여부."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:18
 msgid "Many more things."
@@ -97,7 +97,7 @@ msgstr "**Android**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "Running on Android"
-msgstr "안드로이드에서 실행 중"
+msgstr "Android에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "**HTML5**"
@@ -145,7 +145,7 @@ msgstr "**Windows**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "Running on Windows"
-msgstr "윈도우에서 실행 중"
+msgstr "Windows에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "**X11**"
@@ -153,7 +153,7 @@ msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
-msgstr "X11에서 실행 중 (리눅스/BSD 데스크톱)"
+msgstr "X11에서 실행 중 (Linux/BSD 데스크톱)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "**Server**"
@@ -169,7 +169,7 @@ msgstr "**debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "Running on a debug build (including the editor)"
-msgstr "디버그 빌드에서 실행 중 (에디터를 포함)"
+msgstr "디버그 빌드에서 실행 중 (편집기를 포함)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
@@ -185,7 +185,7 @@ msgstr "**editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "Running on an editor build"
-msgstr "에디터 빌드에서 실행 중"
+msgstr "편집기 빌드에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "**standalone**"
@@ -193,7 +193,7 @@ msgstr "**standalone**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "Running on a non-editor build"
-msgstr "에디터 없는 빌드에서 실행 중"
+msgstr "편집기 없는 빌드에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
@@ -273,7 +273,7 @@ msgstr "**etc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "Textures using ETC1 compression are supported"
-msgstr "ETC1 압축을 사용하는 텍스쳐를 지원한다"
+msgstr "ETC1 압축을 사용하는 텍스처를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "**etc2**"
@@ -281,7 +281,7 @@ msgstr "**etc2**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "Textures using ETC2 compression are supported"
-msgstr "ETC2 압축을 사용하는 텍스쳐를 지원한다"
+msgstr "ETC2 압축을 사용하는 텍스처를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "**s3tc**"
@@ -289,7 +289,7 @@ msgstr "**s3tc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "Textures using S3TC (DXT/BC) compression are supported"
-msgstr "S3TC (DXT/BC) 압축을 사용하는 텍스쳐를 지원한다"
+msgstr "S3TC (DXT/BC) 압축을 사용하는 텍스처를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "**pvrtc**"
@@ -297,7 +297,7 @@ msgstr "**pvrtc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "Textures using PVRTC compression are supported"
-msgstr "PVRTC 압축을 사용하는 텍스쳐를 지원한다"
+msgstr "PVRTC 압축을 사용하는 텍스처를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:90
 msgid "Custom features"

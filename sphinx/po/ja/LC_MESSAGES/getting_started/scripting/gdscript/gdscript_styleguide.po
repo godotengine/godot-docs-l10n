@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:4
+msgid "GDScript style guide"
+msgstr "GDScriptスタイル・ガイド"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:7
+msgid "Description"
+msgstr "説明"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:9
+msgid ""
+"This styleguide lists conventions to write elegant GDScript. The goal is to "
+"encourage writing clean, readable code and promote consistency across "
+"projects, discussions, and tutorials. Hopefully, this will also encourage "
+"development of auto-formatting tools."
+msgstr ""
+"このスタイル・ガイドには、エレガントなGDScriptを作成するための規則が記載され"
+"ています。目標は、クリーンで読みやすいコードの作成を奨励し、プロジェクト、"
+"ディスカッション、およびチュートリアル間の一貫性を促進することです。うまくい"
+"けば、これも自動フォーマットツールの開発を促進するでしょう。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:14
+msgid ""
+"Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
+"<https://www.python.org/dev/peps/pep-0008/>`__ programming styleguide."
+msgstr ""
+"GDScriptはPythonに近いので、このガイドはPythonの `PEP 8 <https://www.python."
+"org/dev/peps/pep-0008/>` プログラミングスタイルガイドに触発されています。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:18
+msgid ""
+"Godot's built-in script editor uses a lot of these conventions by default. "
+"Let it help you."
+msgstr ""
+"Godotのビルトインスクリプトエディタは、デフォルトでこれらの規則を多く使用しま"
+"す。それをあなたの役に立つようにしてください。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:22
+msgid "Code structure"
+msgstr "コードの構造"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:25
+msgid "Indentation"
+msgstr "インデント"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:27
+msgid "Indent type: Tabs *(editor default)*"
+msgstr "インデント・タイプ：Tab*(エディター既定)*"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:29
+msgid "Indent size: 4 *(editor default)*"
+msgstr "インデントのサイズ：4*(エディター既定)*"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:31
+msgid "Each indent level should be one greater than the block containing it."
+msgstr ""
+"各インデントレベルは、それを含むブロックより1つ大きくなければなりません。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:33
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:53
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:96
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:120
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:140
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:222
+msgid "**Good**:"
+msgstr "**良い例**："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:40
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:106
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:150
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:230
+msgid "**Bad**:"
+msgstr "**悪い例**："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:50
+msgid ""
+"Use 2 indent levels to distinguish continuation lines from regular code "
+"blocks."
+msgstr ""
+"継続行と通常のコードブロックを区別するには、2つのインデントレベルを使用しま"
+"す。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:70
+msgid "Blank lines"
+msgstr "空白行"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:72
+msgid "Surround functions and class definitions with two blank lines:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:87
+msgid "Use one blank line inside functions to separate logical sections."
+msgstr "論理セクションを区切るには、関数内で1行の空白行を使用します。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:90
+msgid "One statement per line"
+msgstr "1行につき1つのステートメント"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:92
+msgid ""
+"Never combine multiple statements on a single line. No, C programmers, not "
+"with a single line conditional statement (except with the ternary operator)!"
+msgstr ""
+"複数のステートメントを1行にまとめないでください。いいえ、Cプログラマは、単一"
+"行の条件文(3項演算子を除く)ではありません！"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:115
+msgid "Avoid unnecessary parentheses"
+msgstr "不要なかっこ()を入れない"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:117
+msgid ""
+"Avoid parentheses in expressions and conditional statements. Unless "
+"necessary for order of operations, they only reduce readability."
+msgstr ""
+"式や条件文に括弧を付けないでください。 操作の順序に必要な場合を除き、可読性が"
+"低下するだけです。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:135
+msgid "Whitespace"
+msgstr "スペース"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+msgid ""
+"Always use one space around operators and after commas. Avoid extra spaces "
+"in dictionary references and function calls, or to create \"columns.\""
+msgstr ""
+"演算子の前後およびコンマの後には常に1つのスペースを使用してください。辞書参照"
+"や関数呼び出しに余分なスペースを入れないようにするか、 列 を作成します。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:160
+msgid "**NEVER**:"
+msgstr "**最も悪い例**："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:169
+msgid "Naming conventions"
+msgstr "命名規則"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:171
+msgid ""
+"These naming conventions follow the Godot Engine style. Breaking these will "
+"make your code clash with the built-in naming conventions, which is ugly."
+msgstr ""
+"これらの命名規則は、Godot Engineスタイルに従います。これらを破ると、コードは"
+"組み込みの命名規則と衝突することになりますが、これは醜いことです。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
+msgid "Classes and nodes"
+msgstr "クラスとノード"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
+msgid "Use PascalCase: ``extends KinematicBody``"
+msgstr "PascalCaseを使用: ``extends KinematicBody``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:180
+msgid "Also when loading a class into a constant or variable:"
+msgstr "クラスを定数または変数にロードする場合も、次のようになります:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:187
+msgid "Functions and variables"
+msgstr "関数と変数"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:189
+msgid "Use snake\\_case: ``get_node()``"
+msgstr "snake\\_caseを使用: ``get_node()``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:191
+msgid ""
+"Prepend a single underscore (\\_) to virtual methods (functions the user "
+"must override), private functions, and private variables: ``func _ready()``"
+msgstr ""
+"仮想メソッド(ユーザーがオーバーライドする必要がある関数)、プライベート関数、"
+"およびプライベート変数の後に単一のアンダースコア (\\_) を追加します: ``func "
+"_ready()``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:196
+msgid "Signals"
+msgstr "シグナル"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:198
+msgid "Use past tense:"
+msgstr "過去形を使用:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:206
+msgid "Constants"
+msgstr "定数"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:208
+msgid ""
+"Use CONSTANT\\_CASE, all caps, with an underscore (\\_) to separate words: "
+"``const MAX_SPEED = 200``"
+msgstr ""
+"定数には大文字を使用します。単語の区切りにはアンダースコア(\\_)を使用します: "
+"``const MAX_SPEED = 200``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:212
+msgid "Static typing"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:214
+msgid ""
+"Since Godot 3.1, GDScript supports :ref:`optional static "
+"typing<doc_gdscript_static_typing>`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:217
+msgid "Type hints"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:219
+msgid ""
+"Place the colon right after the variable's name, without a space, and let "
+"the GDScript compiler infer the variable's type when possible."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
+msgid ""
+"When you let the compiler infer the type hint, write the colon and equal "
+"signs together: ``:=``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:244
+msgid ""
+"Add a space on either sides of the return type arrow when defining functions."
+msgstr ""

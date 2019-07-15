@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,7 +95,8 @@ msgstr ""
 "问题，可以使用设备唯一的id或某个唯一用户标识符，例如:"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:74
-msgid "Note that ``OS.get_unique_id()`` only works on iOS and Android."
+#, fuzzy
+msgid "Note that ``OS.get_unique_id()`` does not work on UWP or HTML5."
 msgstr "请注意， ``OS.get_unique_id()`` 只适用于iOS和Android系统。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:76

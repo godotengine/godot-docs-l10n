@@ -1,0 +1,578 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
+msgid "API differences to GDScript"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:6
+msgid "This is a (incomplete) list of API differences between C# and GDScript."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:9
+msgid "General differences"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:11
+msgid ""
+"As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
+"instead of the ``snake_case`` used in GDScript and C++."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
+msgid "Global scope"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:17
+msgid ""
+"Global functions and some constants had to be moved to classes, since C# "
+"does not allow declaring them in namespaces. Most global constants were "
+"moved to their own enums."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:22
+msgid "Constants"
+msgstr "Costanti"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:24
+msgid ""
+"Global constants were moved to their own enums. For example, ``ERR_*`` "
+"constants were moved to the ``Error`` enum."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
+msgid "Special cases:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:30
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:59
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:188
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:203
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:215
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:226
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:234
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:249
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:261
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:321
+msgid "GDScript"
+msgstr "GDScript"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:30
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:59
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:188
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:203
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:215
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:226
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:234
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:249
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:261
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:321
+msgid "C#"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
+msgid "``SPKEY``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
+msgid "``GD.SpKey``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
+msgid "``TYPE_*``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
+msgid "``Variant.Type`` enum"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
+msgid "``OP_*``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
+msgid "``Variant.Operator`` enum"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
+#, fuzzy
+msgid "Math functions"
+msgstr "Continua..."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:40
+msgid ""
+"Math global functions, like ``abs``, ``acos``, ``asin``, ``atan`` and "
+"``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
+"``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
+#, fuzzy
+msgid "Random functions"
+msgstr "Continua..."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:47
+msgid ""
+"Random global functions, like ``rand_range`` and ``rand_seed``, are located "
+"under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
+#, fuzzy
+msgid "Other functions"
+msgstr "Continua..."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:53
+msgid ""
+"Many other global functions like ``print`` and ``var2str`` are located under "
+"``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:56
+msgid "Exceptions:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
+msgid "``weakref(obj)``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
+msgid "``Object.WeakRef(obj)``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
+msgid "``is_instance_valid(obj)``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
+msgid "``Object.IsInstanceValid(obj)``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:66
+msgid "Tips"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:68
+msgid ""
+"Sometimes it can be useful to use the ``using static`` directive. This "
+"directive allows to access the members and nested types of a class without "
+"specifying the class name."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:90
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:121
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:132
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:144
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:305
+msgid "Example:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:86
+msgid "Export keyword"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:88
+msgid ""
+"Use the ``[Export]`` attribute instead of the GDScript ``export`` keyword."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:103
+msgid "Signal keyword"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:105
+msgid ""
+"Use the ``[Signal]`` attribute to declare a signal instead of the GDScript "
+"``signal`` keyword. This attribute should be used on a `delegate`, whose "
+"name signature will be used to define the signal."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:113
+msgid "See also: :ref:`c_sharp_signals`"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:116
+msgid "Singletons"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:118
+msgid ""
+"Singletons are available as static classes rather than using the singleton "
+"pattern. This is to make code less verbose than it would be with an "
+"``Instance`` property."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
+msgid ""
+"However, in some very rare cases this is not enough. For example, you may "
+"want to access a member from the base class ``Godot.Object``, like "
+"``Connect``. For such use cases we provide a static property named "
+"``Singleton`` that returns the singleton instance. The type of this instance "
+"is ``Godot.Object``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
+msgid "String"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:141
+msgid ""
+"Use ``System.String`` (``string``). Most of Godot's String methods are "
+"provided by the ``StringExtensions`` class as extension methods."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:151
+#, fuzzy
+msgid "There are a few differences, though:"
+msgstr "Non ci sono restrizioni di utilizzo per Godot"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:153
+msgid ""
+"``erase``: Strings are immutable in C#, so we cannot modify the string "
+"passed to the extension method. For this reason, ``Erase`` was added as an "
+"extension method of ``StringBuilder`` instead of string. Alternatively, you "
+"can use ``string.Remove``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:157
+msgid ""
+"``IsSubsequenceOf``/``IsSubsequenceOfi``: An additional method is provided, "
+"which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
+"specify case sensitivity:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:168
+msgid ""
+"``Match``/``Matchn``/``ExprMatch``: An additional method is provided besides "
+"``Match`` and ``Matchn``, which allows you to explicitly specify case "
+"sensitivity:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:179
+msgid "Basis"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:181
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Basis()`` initializes all primitive members to their default value. Use "
+"``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:185
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:231
+msgid "The following method was converted to a property with a different name:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:206
+msgid "``get_scale()``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:206
+msgid "``Scale``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:194
+msgid "Transform2D"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:196
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Transform2D()`` initializes all primitive members to their default value. "
+"Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
+"in GDScript and C++."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:200
+msgid ""
+"The following methods were converted to properties with their respective "
+"names changed:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
+msgid "``get_rotation()``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
+msgid "``Rotation``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:210
+msgid "Plane"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:212
+msgid ""
+"The following method was converted to a property with a *slightly* different "
+"name:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
+msgid "``center()``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
+msgid "``Center``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:221
+msgid "Rect2"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
+msgid ""
+"The following field was converted to a property with a *slightly* different "
+"name:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
+msgid "``end``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
+msgid "``End``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:236
+msgid "``get_area()``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:236
+msgid "``Area``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:240
+msgid "Quat"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:242
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Quat()`` initializes all primitive members to their default value. Please "
+"use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:246
+msgid ""
+"The following methods were converted to a property with a different name:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
+msgid "``length()``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
+msgid "``Length``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
+msgid "``length_squared()``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
+msgid "``LengthSquared``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:256
+msgid "Array"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:258
+msgid ""
+"*This is temporary. PoolArrays will need their own types to be used the way "
+"they are meant to.*"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
+msgid "``Array``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
+msgid "``Godot.Collections.Array``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
+msgid "``PoolIntArray``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
+msgid "``int[]``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:265
+msgid "``PoolByteArray``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:265
+msgid "``byte[]``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:266
+msgid "``PoolFloatArray``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:266
+msgid "``float[]``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
+msgid "``PoolStringArray``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
+msgid "``String[]``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:268
+msgid "``PoolColorArray``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:268
+msgid "``Color[]``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
+msgid "``PoolVector2Array``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
+msgid "``Vector2[]``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:270
+msgid "``PoolVector3Array``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:270
+msgid "``Vector3[]``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:273
+msgid ""
+"``Godot.Collections.Array<T>`` is a type-safe wrapper around ``Godot."
+"Collections.Array``. Use the ``Godot.Collections.Array<T>(Godot.Collections."
+"Array)`` constructor to create one."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
+msgid "Dictionary"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
+msgid "Use ``Godot.Collections.Dictionary``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
+msgid ""
+"``Godot.Collections.Dictionary<T>`` is a type-safe wrapper around ``Godot."
+"Collections.Dictionary``. Use the ``Godot.Collections.Dictionary<T>(Godot."
+"Collections.Dictionary)`` constructor to create one."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:285
+msgid "Variant"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:287
+msgid "``System.Object`` (``object``) is used instead of ``Variant``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:290
+msgid "Communicating with other scripting languages"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:292
+msgid ""
+"The methods ``object Object.Call(string method, params object[] args)``, "
+"``object Object.Get(string field)`` and ``object Object.Set(string field, "
+"object value)`` are provided to communicate with instances of other "
+"scripting languages via the Variant API."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:298
+msgid "Yield"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:300
+msgid ""
+"Something similar to GDScript's ``yield`` with a single parameter can be "
+"achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
+"csharp/language-reference/keywords/yield>`_."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
+msgid ""
+"The equivalent of yield on signal can be achieved with async/await and "
+"``Godot.Object.ToSignal``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:313
+msgid "Other differences"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:315
+msgid ""
+"``preload``, as it works in GDScript, is not available in C#. Use ``GD."
+"Load`` or ``ResourceLoader.Load`` instead."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
+msgid "Other differences:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
+msgid "``Color8``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
+msgid "``Color.Color8``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:324
+msgid "``is_inf``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:324
+msgid "``float.IsInfinity``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:325
+msgid "``is_nan``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:325
+msgid "``float.IsNaN``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
+msgid "``dict2inst``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:327
+msgid "TODO"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:327
+msgid "``inst2dict``"
+msgstr ""

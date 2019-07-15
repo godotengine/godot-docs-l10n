@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/2d/2d_movement.rst:4
+msgid "2D movement overview"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:7
+msgid "Introduction"
+msgstr "Johdanto"
+
+#: ../../docs/tutorials/2d/2d_movement.rst:9
+msgid ""
+"Every beginner has been there: \"How do I move my character?\" Depending on "
+"the style of game you're making, you may have special requirements, but in "
+"general the movement in most 2D games is based on a small number of designs."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:13
+msgid ""
+"We'll use :ref:`KinematicBody2D <class_KinematicBody2D>` for these examples, "
+"but the principles will apply to other node types (Area2D, RigidBody2D) as "
+"well."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:17
+msgid "Setup"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:19
+msgid ""
+"Each example below uses the same scene setup. Start with a "
+"``KinematicBody2D`` with two children: ``Sprite`` and ``CollisionShape2D``. "
+"You can use the Godot icon (\"icon.png\") for the Sprite's texture or use "
+"any other 2D image you have."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:23
+msgid ""
+"Open ``Project -> Project Settings`` and select the \"Input Map\" tab. Add "
+"the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
+"details):"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:29
+msgid "8-way movement"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:31
+msgid ""
+"In this scenario, you want the user to press the four directional keys (up/"
+"left/down/right or W/A/S/D) and move in the selected direction. The name \"8-"
+"way movement\" comes from the fact that the player can move diagonally by "
+"pressing two keys at the same time."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:37
+msgid "Add a script to the kinematic body and add the following code:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:101
+msgid ""
+"In the ``get_input()`` function we check for the four key events and sum "
+"them up to get the velocity vector. This has the benefit of making two "
+"opposite keys cancel each other out, but will also result in diagonal "
+"movement being faster due to the two directions being added together."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:106
+msgid ""
+"We can prevent that if we *normalize* the velocity, which means we set its "
+"*length* to ``1``, and multiply by the desired speed."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:109
+msgid ""
+"If you've never used vector math before, or need a refresher, you can see an "
+"explanation of vector usage in Godot at :ref:`doc_vector_math`."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:113
+msgid "Rotation + movement"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:115
+msgid ""
+"This type of movement is sometimes called \"Asteroids-style\" because it "
+"resembles how that classic arcade game worked. Pressing left/right rotates "
+"the character, while up/down moves it forward or backward in whatever "
+"direction it's facing."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:190
+msgid ""
+"Here we've added two new variables to track our rotation direction and "
+"speed. Again, pressing both keys at once will cancel out and result in no "
+"rotation. The rotation is applied directly to the body's ``rotation`` "
+"property."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:194
+msgid ""
+"To set the velocity, we use the ``Vector2.rotated()`` method, so that it "
+"points in the same direction as the body. ``rotated()`` is a useful vector "
+"function that you can use in many circumstances where you would otherwise "
+"need to apply trigonometric functions."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:200
+msgid "Rotation + movement (mouse)"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:202
+msgid ""
+"This style of movement is a variation of the previous one. This time, the "
+"direction is set by the mouse position instead of the keyboard. The "
+"character will always \"look at\" the mouse pointer. The forward/back inputs "
+"remain the same, however."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:261
+msgid ""
+"Here we're using the :ref:`Node2D <class_Node2D>` ``look_at()`` method to "
+"point the player towards a given position. Without this function, you could "
+"get the same effect by setting the angle like this:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:276
+msgid "Click-and-move"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:278
+msgid ""
+"This last example uses only the mouse to control the character. Clicking on "
+"the screen will cause the player to move to the target location."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:335
+msgid ""
+"Note the ``length()`` check we make prior to movement. Without this test, "
+"the body would \"jitter\" upon reaching the target position, as it moves "
+"slightly past the position and tries to move back, only to move too far and "
+"repeat."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:340
+msgid ""
+"Uncommenting the ``rotation`` line will also turn the body to point in its "
+"direction of motion if you prefer."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:343
+msgid ""
+"This technique can also be used as the basis of a \"following\" character. "
+"The ``target`` position can be that of any object you want to move to."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:347
+msgid "Summary"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:349
+msgid ""
+"You may find these code samples useful as starting points for your own "
+"projects. Feel free to use them and experiment with them to see what you can "
+"make."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:352
+msgid ""
+"You can download this sample project here: :download:`2D_movement_demo.zip "
+"<files/2D_movement_demo.zip>`"
+msgstr ""

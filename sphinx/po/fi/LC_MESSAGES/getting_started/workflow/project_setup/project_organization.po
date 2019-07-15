@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:4
+msgid "Project organization"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:7
+msgid "Introduction"
+msgstr "Johdanto"
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:8
+msgid ""
+"Since Godot has no restrictions on project structure or filesystem usage, "
+"organizing files when learning the engine can seem challenging. This "
+"tutorial suggests a workflow which should be a good starting point. We will "
+"also cover using version control with Godot."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:14
+msgid "Organization"
+msgstr "Järjestys"
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
+#, fuzzy
+msgid ""
+"Godot is scene-based in nature, and uses the filesystem as-is, without "
+"metadata or an asset database."
+msgstr ""
+"Godot on luonnostaan skene-pohjainen ja käyttää tiedostojärjestelmää "
+"sellaisenaan ilman metadataa tai asset-tietokantaa."
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:19
+#, fuzzy
+msgid ""
+"Unlike other engines, many resources are contained within the scene itself, "
+"so the amount of files in the filesystem is considerably lower."
+msgstr ""
+"Toisin kuin muissa pelimoottoreissa, suuri osa resursseista sisältyy skeneen "
+"itseensä, joten tiedostojen määrä tiedostojärjestelmässä on huomattavasti "
+"alhaisempi."
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
+#, fuzzy
+msgid ""
+"Considering that, the most common approach is to group assets as close to "
+"scenes as possible; when a project grows, it makes it more maintainable."
+msgstr ""
+"Ottaen sen huomioon, yleisin lähestymistapa on ryhmitellä assetit lähelle "
+"skenejä, niin että kun projekti kasvaa, se on helpommin ylläpidettävissä."
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:26
+#, fuzzy
+msgid ""
+"As an example, one can usually place into a single folder their basic "
+"assets, such as sprite images, 3D model meshes, materials, and music, etc. "
+"They can then use a separate folder to store built levels that use them."
+msgstr ""
+"Esimerkkinä, perustana toimivat spritejen kuvat, 3D-skenemallit tai meshit, "
+"materiaalit, ym. voi yleensä järjestää yhteen paikkaan, kun taas niistä "
+"rakennetuille kentille voi käyttää erillistä kansiota."
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:47
+msgid "Importing"
+msgstr "Tuonti"
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:49
+#, fuzzy
+msgid ""
+"Godot versions prior to 3.0 did the import process from files outside the "
+"project. While this can be useful in large projects, it resulted in an "
+"organization hassle for most developers."
+msgstr ""
+"Ennen 3.0 versiota Godot hoiti tuontiprosessin projektin ulkopuolisista "
+"tiedostoista. Vaikka tämä saattoi olla hyödyllistä isoissa projekteissa, se "
+"johti useimmilla kehittäjillä järjestämisen sekamelskaan."
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:53
+#, fuzzy
+msgid ""
+"Because of this, assets are now transparently imported from within the "
+"project folder."
+msgstr "Tästä syystä, assetit tuodaan nykyään läpinäkyvästi projektikansiosta."
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:56
+#, fuzzy
+msgid ""
+"If a folder shouldn't be imported into Godot, an exception can be made with "
+"a .gdignore file."
+msgstr ""
+"Jos kansiota ei pidä tuoda Godotiin, sille voidaan tehdä poikkeus .gdignore "
+"tiedostolla."

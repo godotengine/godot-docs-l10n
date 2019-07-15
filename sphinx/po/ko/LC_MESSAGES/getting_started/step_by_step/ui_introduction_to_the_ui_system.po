@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,8 +22,9 @@ msgid "Design interfaces with the Control nodes"
 msgstr "컨트롤(Control) 노드로 인터페이스를 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
+#, fuzzy
 msgid ""
-"Computer displays, mobile phones, and TV screen come in all shapes and "
+"Computer displays, mobile phones, and TV screens come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
 "resolutions. It can be hard to build responsive interfaces that adapt to all "
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
@@ -37,7 +38,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
-msgstr "Godot 에디터는 엔진의 UI 프레임 워크로 제작되었습니다"
+msgstr "Godot 편집기는 엔진의 UI 프레임 워크로 제작되었습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:16
 msgid "This guide will get you started with UI design. You will learn:"
@@ -83,9 +84,9 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
-"UI를 설계하기 위해, Control 노드를 사용하게됩니다. 이 노드들은 에디터에서 초"
+"UI를 설계하기 위해, Control 노드를 사용하게됩니다. 이 노드들은 편집기에서 초"
 "록색 아이콘을 갖습니다. 이들을 수 십개가 존재하며, 이걸로 라이프바에서 복잡"
-"한 애플리케이션까지 만들 수 있습니다. Godot의 에디터 자체는 Control 노드를 사"
+"한 애플리케이션까지 만들 수 있습니다. Godot의 편집기 자체는 Control 노드를 사"
 "용하여 만들어졌습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
@@ -144,7 +145,7 @@ msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
-"Godot는 수십 개의 컨트롤 노드를 갖고 있습니다. 이들이 당신이 에디터 플러그인"
+"Godot는 수십 개의 컨트롤 노드를 갖고 있습니다. 이들이 당신이 편집기 플러그인"
 "과 애플리케이션을 만드는 것을 도와줍니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:55
@@ -195,7 +196,7 @@ msgid ""
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
-"**TextureRect** 은 UI 내에 텍스쳐나 이미지를 보여줍니다. 이것은 Sprite 노드"
+"**TextureRect** 은 UI 내에 텍스처나 이미지를 보여줍니다. 이것은 Sprite 노드"
 "와 비슷하지만 다중 크기 조절 모드를 제공합니다. Sprite 노드의 동작을 변경하려"
 "면 Stretch Mode 속성을 설정하세요:"
 
@@ -206,25 +207,25 @@ msgid ""
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
 "``Scale On Expand (compat)``\\ 는 ``expand`` 속성이 ``true``\\ 로 되어 있을 "
-"때만 텍스쳐를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다; 그렇지 않으"
+"때만 텍스처를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다; 그렇지 않으"
 "면 이것은 ``Keep`` 모드와 같습니다. 호환성을 되돌리기 위한 기본 모드."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
-"``Scale``\\ 은 텍스쳐를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다."
+"``Scale``\\ 은 텍스처를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr "``Tile``\\ 은 텍스쳐를 바둑판으로 배열하고, 크기를 조절하지 않습니다."
+msgstr "``Tile``\\ 은 텍스처를 바둑판으로 배열하고, 크기를 조절하지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
-"``Keep``\\ 과 ``Keep Centered``\\ 는 텍스쳐가 그 크기를 유지하게 합니다, 각"
-"각 텍스쳐를 경계의 좌측 상단과 중심에 두도록 만듭니다."
+"``Keep``\\ 과 ``Keep Centered``\\ 는 텍스처가 그 크기를 유지하게 합니다, 각"
+"각 텍스처를 경계의 좌측 상단과 중심에 두도록 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
 msgid ""
@@ -232,8 +233,8 @@ msgid ""
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
-"``Keep Aspect``\\ 와 ``Keep Aspect Centered``\\ 는 텍스쳐의 크기를 조절하지"
-"만 그것의 크기 비율은 유지합니다, 각각 텍스쳐를 경계의 좌측 상단과 중심에 두"
+"``Keep Aspect``\\ 와 ``Keep Aspect Centered``\\ 는 텍스처의 크기를 조절하지"
+"만 그것의 크기 비율은 유지합니다, 각각 텍스처를 경계의 좌측 상단과 중심에 두"
 "도록 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
@@ -270,9 +271,9 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 2-bit, pure black and white image."
 msgstr ""
-"**TextureButton** 은 TextureRect와 비슷하지만, 5개의 텍스쳐 슬롯을 갖고 있습"
+"**TextureButton** 은 TextureRect와 비슷하지만, 5개의 텍스처 슬롯을 갖고 있습"
 "니다: 이들은 각 버튼의 상태입니다. 대부분은, Normal, Pressed, 그리고 Hover 텍"
-"스쳐를 사용할 겁니다. Focused는 인터페이스가 키보드의 입력을 수신하는 경우에 "
+"스처를 사용할 겁니다. Focused는 인터페이스가 키보드의 입력을 수신하는 경우에 "
 "유용합니다. 여섯 번째 이미지 슬롯인, Click Mask는, 순수한 흰색과 검은색 2-비"
 "트를 사용해 클릭할 수 있는 영역을 정의하게 만듭니다."
 
@@ -289,13 +290,13 @@ msgstr ""
 "Base Button 섹션에서, 당신은 버튼이 행동하는 법을 바꾸는 몇 가지 체크 상자를 "
 "볼 수 있을 겁니다. ``Toggle Mode`` 가 켜지면, 버튼은 당신이 눌렀을 때 활성화"
 "와 기본 상태를 껏다 켯다 할 것입니다. ``Disabled`` 는 버튼을 기본 상태로 만들"
-"고, 이 경우에 ``Disabled`` 텍스쳐를 사용합니다. TextureButton은  앞의 노드와 "
+"고, 이 경우에 ``Disabled`` 텍스처를 사용합니다. TextureButton은  앞의 노드와 "
 "몇 가지 속성들을 공유합니다: ``modulate`` 속성을 갖고 있어서, 색상을 바꿀 수 "
 "있고, ``Resize`` 와 ``Stretch`` 모드로 크기의 변화를 바꿀 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureButton and its 5 texture slots"
-msgstr "TextureButton과 5개의 텍스쳐 슬롯"
+msgstr "TextureButton과 5개의 텍스처 슬롯"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
 msgid "TextureProgress"
@@ -308,7 +309,7 @@ msgid ""
 "value."
 msgstr ""
 "**TextureProgress** 는 진행 막대를 만들기 위해 3개의 스프라이트로 층을 쌓습니"
-"다. Under와 Over 텍스쳐 사이에 막대의 값을 보여줄 Progress를 끼워 넣습니다."
+"다. Under와 Over 텍스처 사이에 막대의 값을 보여줄 Progress를 끼워 넣습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:126
 msgid ""
@@ -322,13 +323,14 @@ msgstr ""
 "Degrees``  속성으로 당신은 게이지의 범위를 제한할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
+#, fuzzy
 msgid ""
 "To animate the bar, you'll want to look at the Range section. Set the "
 "``Min`` and ``Max`` properties to define the range of the gauge. For "
 "instance, to represent a character's life, you'll want to set ``Min`` to ``0,"
 "`` and ``Max`` to the character's maximum life. Change the ``Value`` "
 "property to update the bar. If you leave the ``Min`` and ``Max`` values to "
-"the default of ``1`` and ``100,`` and set the ``Value`` property to ``40``, "
+"the default of ``0`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
 "막대를 애니메이트 하기 위해, 당신은 Range 섹션을 확인해야 합니다. ``Min`` 과 "
@@ -336,7 +338,7 @@ msgstr ""
 "내려면, 당신은 ``Min`` 을 ``0`` 으로, ``Max`` 를 캐릭터의 최대 체력으로 설정"
 "해야 할 겁니다. ``Value`` 속성을 바꿔서 막대를 업데이트 하세요. 만약 ``Min`` "
 "과 ``Max`` 를 기본 값인 ``1`` 과 ``100`` 으로 두고, ``Value`` 속성을 ``40`` "
-"으로 하면, ``Progress`` 텍스쳐의 40%가 보여지고 60%는 계속 안 보일 겁니다."
+"으로 하면, ``Progress`` 텍스처의 40%가 보여지고 60%는 계속 안 보일 겁니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"
@@ -375,7 +377,7 @@ msgid ""
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
-"**NinePatchRect** 텍스쳐를 3행과 3열로 분할합니다. 중앙과 가장자리는 텍스쳐"
+"**NinePatchRect** 텍스처를 3행과 3열로 분할합니다. 중앙과 가장자리는 텍스처"
 "의 크기에 맞추어지지만, 모서리 부분은 크기가 바뀌지 않습니다. 이것은 패널이"
 "나 대화 상자, UI에서 크기 조절이 가능한 배경을 만들 때 유용합니다."
 
@@ -612,7 +614,7 @@ msgid ""
 msgstr ""
 "컨테이너는 자동으로 모든 자식 컨트롤 노드와 자식 컨테이너들을 열이나 행이나 "
 "그 밖의 형태로 배열합니다. 컨테이너를 사용해서 이것의 경계 사각형 내에서 인터"
-"페이스나 중심 노드 주위에 패딩을 추가합니다. 모든 내장 컨테이너는 에디터 내에"
+"페이스나 중심 노드 주위에 패딩을 추가합니다. 모든 내장 컨테이너는 편집기 내에"
 "서 업데이트 되므로 컨테이너가 작동되는 것을 바로 확인하실 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:284
@@ -664,7 +666,7 @@ msgstr ""
 "CenterContainer는 경계 사각형의 안에 모든 자식들을 가운데로 놓습니다. 이것은 "
 "당신이 뷰포트의 중앙에 있을 타이틀 화면에 일반적으로 사용합니다. 모든 것을 중"
 "앙에 두기 때문에, 내부에 하나의 컨테이너가 중첩되어 있어야 합니다. 대신 텍스"
-"쳐나 버튼을 놓는다면, 그들은 쌓일 것입니다."
+"처나 버튼을 놓는다면, 그들은 쌓일 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
 msgid ""
@@ -740,7 +742,7 @@ msgstr ""
 "GridContainer는 UI 요소들을 격자 같은 무늬로 배열합니다. 당신은 오직 세로 열"
 "의 숫자만 제어할 수 있는데, 가로 행의 수는 자식의 수에 따라 스스로 설정됩니"
 "다. 당신이 9개의 자식을 3열로 배열한다면, 9÷3 = 3행을 가지게 됩니다. 자식이 3"
-"개 더 늘어나면 4행을 가지게 됩니다. 이는 즉, 당신이 더 많은 텍스쳐와 버튼을 "
+"개 더 늘어나면 4행을 가지게 됩니다. 이는 즉, 당신이 더 많은 텍스처와 버튼을 "
 "추가해 행을 늘릴 수 있습니다. 박스 컨테이너처럼, 이것도 각기 행과 열 사이에 "
 "수직과 수평 분리를 설정하는 두 개의 속성이 있습니다."
 

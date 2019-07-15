@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,10 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"Sygnały w Godot są odpowednikiem wzorca *obserwatora*. Pozwalają węzłowi na "
+"wysyłanie wiadomości, na które inne węzły mogą nasłuchiwać i reagować.  "
+"Przykładowo, zamiast bez przerwy sprawdzać, czy przycisk jest w momencie "
+"przyciskania, to przycisk może wyemitować sygnał, kiedy zostanie wciśnięty."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
@@ -48,6 +52,11 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
+"Sygnały są sposobem na *rozdzielenie* Twoich obiektów, co powoduje, że "
+"pisany kod jest lepiej zorganizowany i łatwiej nim zarządzać. Zamiast "
+"wymuszać na obiektach, żeby zawsze spodziewały się określonych obiektów, "
+"mogą zamiast tego emitować sygnały, na które zareagują wszystkie "
+"zainteresowane obiekty."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
@@ -57,9 +66,8 @@ msgstr ""
 "Poniżej możesz zobaczyć przykłady, jak używać sygnałów w swoich projektach."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
-#, fuzzy
 msgid "Timer example"
-msgstr "Kilka przykładów:"
+msgstr "Przykład dla węzła Timer"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -67,6 +75,10 @@ msgid ""
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
 "<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
+"Żeby zobaczyć, jak działają sygnały, użyjmy węzła :ref:`Timer "
+"<class_Timer>`. Utwórz nową scenę z węzłem typu Node oraz jego dwoma węzłami-"
+"dziećmi: węzłem Timer oraz a :ref:`Sprite <class_Sprite>`. W doku sceny, "
+"zmień nazwę węzła z Node na TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -75,9 +87,12 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Dla tekstury węzła Sprite, możesz użyć ikony Godota lub jakiegokolwiek "
+"innego obrazu. Żeby to zrobić, naciśnij przycisk ``Załaduj`` w menu "
+"rozwijalnym atrybutu Tekstura, należącym do węzła Sprite. Dodaj skrypt do "
+"głównego węzła, ale nie dodawaj do niego jeszcze żadnego kodu."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
-#, fuzzy
 msgid "Your scene tree should look like this:"
 msgstr "Drzewo sceny powinno tak wyglądać:"
 
@@ -87,14 +102,23 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"We właściwościach węzła Timer, zaznacz pole \"Tak\", znajdujące się obok "
+"etykiety \"Autostart\". To spowoduje, że zegar wystartuje automatycznie, "
+"kiedy uruchomisz scenę. Możesz zostawić *Czas oczekiwania* na 1 sekundę."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:42
+#, fuzzy
 msgid ""
 "Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
 "and you'll see all of the signals that the selected node can emit. In the "
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
+"Obok zakładki \"Inspektor\" znajduje się zakładka z etykietą \"Węzeł\". "
+"Kliknij na tę zakładkę, żeby zobaczyć wszystkie sygnały, jakie ten węzeł "
+"może wyemitować. w przypadku węzła  typu Timer, zależy nam na sygnale "
+"\"timeout\". Ten sygnał jest emitowany za każdym razem, kiedy czas Timera "
+"osiąga ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
 msgid ""
@@ -106,12 +130,17 @@ msgstr ""
 "sygnał:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:54
+#, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is red "
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
+"Po lewej stronie znajdują się węzły w Twojej scenie - możesz wybrać węzeł, "
+"na którego sygnał chcesz \"nasłuchiwać\". Zauważ, że węzeł Timer jest "
+"zaznaczony na czerwono - to *nie* jest błąd, tylko podkreślenie, że to jest "
+"węzeł, który emituje sygnał. Wybierz główny węzeł."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
@@ -127,6 +156,11 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"Na dole okna znajduje się pole \"Metoda w węźle\". Jest to nazwa funkcji w "
+"skrypcie docelowego węzła, której chcesz użyć. Domyślnie Godot utworzy tę "
+"funkcję, korzystając z następującej konwencji : "
+"``_on_<nazwa_wezla>_<nazwa_sygnalu>`` . Oczywiście, jeśli chcesz, możesz "
+"zmienić tę nazwę według uznania."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
@@ -140,12 +174,18 @@ msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"Teraz możemy zastąpić tymczasowy kod jakimkolwiek innym, który ma być "
+"uruchomiony w momencie odebrania sygnału. Spowodujmy, żeby węzeł Sprite "
+"zaczął migać:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:111
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"Odtwórz scenę i zauważ, że węzeł Sprite miga z każdą sekundą. Możesz "
+"kontrolować czas migotania przy użyciu właściwości *Czas oczekiwania*, "
+"należącej do węzła Timer."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:115
 #, fuzzy
@@ -167,6 +207,8 @@ msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"Najpierw odłącz sygnał wybierając połączenie z zakładki \"Węzeł\", należącej "
+"do węzła Timer i kliknij *odłącz*."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:126
 msgid ""
@@ -176,6 +218,12 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
+"Aby dodać połączenie z poziomu kodu, może skorzystać z funkcji ``connect``. "
+"Wstawimy tę funkcję do metody ``_ready()`` po to, żeby połączenie zostało "
+"nawiązane zaraz o po uruchomieniu. Składnia tej funkcji wygląda tak "
+"następująco: ``<wezel_zrodlowy>.connect(<nazwa_sygnalu>, <docelowy_wezel>, "
+"<nazwa_funkcji_docelowej>)``. Poniżej znajduje się kod dla połączenia węzła "
+"Timer:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:159
 msgid "Custom signals"
@@ -183,7 +231,7 @@ msgstr "Niestandardowe sygnały"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:161
 msgid "You can also declare your own custom signals in Godot:"
-msgstr "Możesz także deklarować swoje niestandardowe sygnały w Godocie:"
+msgstr "W Godot możesz także zadeklarować własne rodzaje sygnałów:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:179
 msgid ""
@@ -194,9 +242,8 @@ msgstr ""
 "będą mogły być podłączone w taki sam sposób jak sygnały wbudowane w węzeł."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Aby wyemitować sygnał poprzez kod, użyj funkcji \"emit\":"
+msgstr "Aby wyemitować sygnał poprzez kod, użyj funkcji ``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:208
 msgid "Conclusion"
@@ -221,4 +268,4 @@ msgid ""
 "game including several uses of signals to connect different game components."
 msgstr ""
 "W następnej sekcji, :ref:`doc_your_first_game` zbudujesz kompletną grę z "
-"wykorzystaniem sygnałów aby połączyć różne elementy gry."
+"wykorzystaniem sygnałów, aby połączyć różne elementy gry."

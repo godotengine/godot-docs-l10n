@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,7 @@ msgstr "Godot에 C# 설치하기"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:39
 msgid "Windows"
-msgstr "윈도우"
+msgstr "Windows"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:41
 msgid ""
@@ -108,7 +108,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
 msgid "macOS and Linux"
-msgstr "macOS와 리눅스"
+msgstr "macOS와 Linux"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:53
 msgid ""
@@ -170,11 +170,11 @@ msgid ""
 "**Editor → Editor Settings** and scroll down to **Mono**. Under **Mono**, "
 "click on **Editor**, and select your external editor of choice."
 msgstr ""
-"Godot의 스크립트 에디터에서 C# 지원은 최소한입니다. `Visual Studio Code "
+"Godot의 스크립트 편집기에서 C# 지원은 최소한입니다. `Visual Studio Code "
 "<https://code.visualstudio.com/>`_\\ 나 MonoDevelop과 같은 외부 IDE나 편집기"
 "를 사용하는 것을 고려해보세요. 이 둘은 자동 완성, 디버깅을 제공하며 C#으로 작"
 "업하면서 쓰이는 유용한 기능이 있습니다. Godot에서 외부 편집기를 선택하려면, "
-"**에디터 → 에디터 설정**\\ 으로 가서 **Mono**\\ 로 내려갑니다. **Mono**\\ 에"
+"**편집기 → 편집기 설정**\\ 으로 가서 **Mono**\\ 로 내려갑니다. **Mono**\\ 에"
 "서 **Editor**\\ 를 클릭하면 외부 편집기를 선택하는 페이지가 나타납니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
@@ -295,10 +295,12 @@ msgstr ""
 "\\ 에서 클래스 참조 페이지를 참고하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
+#, fuzzy
 msgid ""
-"Keep in mind that the class you wish to attach to your node should be named "
-"as the ``.cs`` file. Otherwise, you will get the following error and won't "
-"be able to run the scene: *\"Cannot find class XXX for script res://XXX.cs\"*"
+"Keep in mind that the class you wish to attach to your node should have the "
+"same name as the ``.cs`` file. Otherwise, you will get the following error "
+"and won't be able to run the scene: *\"Cannot find class XXX for script "
+"res://XXX.cs\"*"
 msgstr ""
 "노드에 붙이고 싶은 클래스 이름이 ``.cs`` 파일이어야 한다는 사실을 명심하세"
 "요. 그렇지 않으면, 다음과 같은 오류를 받게 되며 씬을 실행할 수 없을 것입니"
@@ -354,7 +356,7 @@ msgstr ""
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
-"에디터 플러그인을 작성하는 것은 가능하지만, 현재로썬 상당히 복잡합니다."
+"편집기 플러그인을 작성하는 것은 가능하지만, 현재로썬 상당히 복잡합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
 msgid ""
@@ -373,7 +375,7 @@ msgid ""
 "github.com/godotengine/godot/issues/20270>`_ `#20271 <https://github.com/"
 "godotengine/godot/issues/20271>`_)."
 msgstr ""
-"Mono 프로젝트를 내보내는 것은 데스크탑 플랫폼 (Linux, 윈도우, 그리고 macOS)"
+"Mono 프로젝트를 내보내는 것은 데스크탑 플랫폼 (Linux, Windows, 그리고 macOS)"
 "만 지원합니다. Android, iOS, HTML5 그리고 UWP는 현재는 지원하지 않습니다 "
 "(`#20267 <https://github.com/godotengine/godot/issues/20267>`_, `#20268 "
 "<https://github.com/godotengine/godot/issues/20268>`_ `#20270 <https://"

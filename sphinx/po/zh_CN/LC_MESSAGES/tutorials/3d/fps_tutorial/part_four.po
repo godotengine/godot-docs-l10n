@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -973,7 +973,6 @@ msgstr ""
 "``current_weapon_name`` 之前没有使用 ``UNARMED`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:602
-#, fuzzy
 msgid ""
 "Next, we check to see if the current weapon can be refilled. If the current "
 "weapon can, we add a full clip/magazine worth of ammo to the weapon by "
@@ -981,8 +980,8 @@ msgid ""
 "clips we're adding (``additional_ammo``)."
 msgstr ""
 "接下来我们检查当前的武器是否可以重新填充。 如果当前的武器可以，我们通过将当前"
-"武器的“AMMO_IN_MAG”变量乘以我们正在添加的大量弹药片段(``additional_ammo``)来"
-"为武器添加一个完整的弹片/杂志。"
+"武器的 ``AMMO_IN_MAG`` 变量乘以额外的弹夹数目（``additional_ammo``），来为武"
+"器添加完整的弹夹/弹仓所容纳的弹药量。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:607
 #, fuzzy

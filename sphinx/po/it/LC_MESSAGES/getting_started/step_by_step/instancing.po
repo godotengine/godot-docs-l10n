@@ -1,0 +1,237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:4
+msgid "Instancing"
+msgstr "Instanziare"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:7
+msgid "Introduction"
+msgstr "Introduzione"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:9
+msgid ""
+"Creating a single scene and adding nodes into it might work for small "
+"projects, but as a project grows in size and complexity, the number of nodes "
+"can quickly become unmanageable. To address this, Godot allows a project to "
+"be separated into any number of scenes. This provides you with a powerful "
+"tool that helps you organize the different components of your game."
+msgstr ""
+"Creare una singola scena e aggiungere nodi a questa puó funzionare per "
+"piccoli progetti ma, quando il progetto diventa piú grande e complesso, il "
+"numero di nodi puó diventare rapidamente ingestibile. Per risolvere questo "
+"problema Godot permette che un progetto sia separato in un qualsiasi numero "
+"di scene in modo da avere uno strumento che ti aiuti adn organizzare le "
+"diverse componenti di un gioco."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:15
+msgid ""
+"In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
+"nodes organized in a tree structure, with a single node as the tree root."
+msgstr ""
+"In :ref:`doc_scenes_and_nodes` hai imparato che una scena é una collezione "
+"di nodi organizzata in una struttura ad albero, con un singolo nodo come "
+"radice."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:20
+msgid ""
+"You can create as many scenes as you like and save them to disk. Scenes "
+"saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
+"filename extension."
+msgstr ""
+"Puoi creare quante scene vuoi e salvarle su disco. Le scene salvate in "
+"questa maniera sono chiamate \"Packed Scenes\" e hanno estensione ``.tscn``."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:26
+msgid ""
+"Once a scene has been saved, it can be instanced into another scene as if it "
+"were any other node."
+msgstr ""
+"Una volta che una scena é stata salvata puó successivamente essere "
+"istanziata all'interno di un'altra scena esattamente come qualunque altro "
+"nodo."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:31
+msgid "In the above picture, Scene B was added to Scene A as an instance."
+msgstr ""
+"Nell'immagine sopra, la Scena B é stata aggiunta alla Scena A come istanza."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:34
+msgid "Instancing by example"
+msgstr "Instanziazione per esempi"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:36
+msgid ""
+"To learn how instancing works, let's start by downloading a sample project: :"
+"download:`instancing.zip <files/instancing.zip>`."
+msgstr ""
+"Per capire come funziona l'instanziazione, iniziamo scaricando un progetto "
+"di esempio: :download:`instancing.zip <files/instancing.zip>`."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:39
+msgid ""
+"Unzip this project anywhere you like. Then open Godot and add this project "
+"to the project manager using the 'Import' button:"
+msgstr ""
+"Decomprimi questo progetto ovunque tu voglia, quindi apri Godot e aggiungilo "
+"al Gestore di Progetti utilizzando il bottone 'Importa':"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:44
+msgid ""
+"Browse to the folder you extracted and open the \"project.godot\" file you "
+"can find inside it. After doing this, the new project will appear on the "
+"list of projects. Edit the project by pressing the 'Edit' button."
+msgstr ""
+"Naviga fino alla cartella in cui hai estratto l'archivio e apri il file "
+"project.godot che trovi all'interno, a questo punto il progetto apparirá "
+"nella lista dei progetti. Modifica il progetto premendo sul bottone "
+"'Modifica'."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:48
+msgid ""
+"This project contains two scenes: \"Ball.tscn\" and \"Main.tscn\". The ball "
+"scene uses a :ref:`RigidBody2D <class_RigidBody2D>` to provide physics "
+"behavior while the main scene has a set of obstacles for the ball to collide "
+"with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
+msgstr ""
+"Questo progetto contiene due scene: \"Ball.tscn\" e \"Main.tscn\". La scena "
+"``Ball`` usa un :ref:`RigidBody2D <class_RigidBody2D>` per simulare un "
+"comportamento fisicamente corretto, mentre la scena principale contiene un "
+"insieme di ostacoli su cul la palla possa collidere (utilizzando :ref:"
+"`StaticBody2D <class_StaticBody2D>`)."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:57
+msgid "Open the ``Main`` scene, and then select the root node:"
+msgstr "Apri la scena ``Main`` e seleziona il nodo radice:"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:61
+msgid ""
+"We want to add an instance of the ``Ball`` scene as a child of ``Main``. "
+"Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
+"file as a Node.\") and select the ``Ball.tscn`` file."
+msgstr ""
+"Quello che vogliamo é aggiungere un'istanza della scena ``Ball`` come figlia "
+"di ``Main``, fai click sulla bottone a forma di catena (il testo in "
+"sovrimpressione dice \"Istanzia un file scena come nodo.\") e seleziona il "
+"file ``Ball.tscn``."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:67
+msgid ""
+"The ball will be placed at the top-left corner of the screen area (this is "
+"``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
+"the top-center of the scene:"
+msgstr ""
+"La palla sará piazzata nell'angolo in alto a sinistra dell'area di schermo "
+"(questa é la posizione ``(0, 0)`` in coordinate sullo schermo). Fai click e "
+"trascina la palla in una posizione in alto e centrale della scena:"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:73
+msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
+msgstr "Premi \"Play\" e guarda la palla cadere verso il fondo dello schermo:"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:78
+msgid "Multiple instances"
+msgstr "Istanze multiple"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:80
+msgid ""
+"You can add as many instances as you like to a scene, either by using the "
+"\"Instance\" button again, or by clicking on the ball instance and pressing "
+"\"Duplicate\" (Ctrl-D):"
+msgstr ""
+"Puoi aggiungere quante istanze vuoi in una scena, sia premendo sul bottone "
+"\"Istanzia\" di nuovo o facendo click sull'istanza della palla e premendo il "
+"\"Duplica\" (Ctrl+D):"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:86
+msgid "Run the scene again and all of the balls will fall."
+msgstr "Esegui la scena di nuovo e tutte le palle cadranno."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:91
+msgid "Editing instances"
+msgstr "Modificare le istanze"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:93
+msgid ""
+"Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
+"down arrow and selecting \"New PhysicsMaterial\"."
+msgstr ""
+"Apri la scena ``Ball`` ed aggiungi un ``PhysicsMaterial`` cliccando sulla "
+"freccia verso il basso e selezionando \"New PhysicsMaterial\"."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:98
+msgid ""
+"Then, expand the material by clicking on it, and set the ``Bounce`` property "
+"to ``1``."
+msgstr ""
+"Poi, espandi il materiale cliccando su di esso, ed imposta la proprietà "
+"``Bounce`` ad ``1``."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:103
+msgid ""
+"Press \"Play\" and notice that all of the instanced balls are now much more "
+"bouncy. Because the instanced balls are based on the saved scene, changes to "
+"that scene will affect all instances."
+msgstr ""
+"Premi ''Play'' e ti renderai conto che tutte quelle sfere instanziate adesso "
+"rimbalzano di più. Questo perché le sfere instanziate si basano sulla scena "
+"salvata, e le modifiche a quella scena affliggeranno tutte le sue istanze."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:107
+#, fuzzy
+msgid ""
+"You can also adjust individual instances. Set the bounce value back to ``0`` "
+"and then in the ``Main`` scene, select one of the instanced balls. Resources "
+"like ``PhysicsMaterial`` are shared between instances by default, so we need "
+"to make it unique. Click on the down arrow and select \"Make Unique\". Set "
+"its ``Bounce`` to ``1`` and press \"Play\"."
+msgstr ""
+"Puoi anche modificare istanze individuali. Riporta il valore di ``Bounce`` a "
+"0.5, poi nella scena ``Main``, seleziona una della palle istanziate e "
+"modifica il suo valore ``Bounce`` a ``1`` e premi \"Play\"."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:115
+msgid ""
+"Notice that a grey \"revert\" button appears next to the adjusted property. "
+"When this button is present, it means you modified a property in the "
+"instanced scene to override its value in the saved scene. Even if that "
+"property is modified in the original scene, the custom value will remain. "
+"Pressing the revert button will restore the property to the value in the "
+"saved scene."
+msgstr ""
+"Nota che compare un bottone \"Annulla\" in grigio a fianco alla proprietá "
+"modificata. Quando questo bottone é presente significa che é stato "
+"modificato un valore che va a sovrascrivere il valore della scena salvata. "
+"Il valore personalizzato nell'istanza rimane anche se il valore di quella "
+"proprietá viene modificato nella scena originale. Premendo il bottone di "
+"annulla riporterá il valore a quello salvato nella scena originaria."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:123
+msgid "Conclusion"
+msgstr "Conclusione"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:125
+msgid ""
+"Instancing can be useful when you want to create many copies of the same "
+"object. It is also possible to create instances in code by using GDScript, "
+"see :ref:`doc_instancing_continued`."
+msgstr ""
+"Creare un'istanza può essere utile quando vuoi creare più copie dello stesso "
+"oggetto. C'è anche la possibilità di creare istanze dal codice usando "
+"GDScript, vedi :ref:`doc_scripting_continued`."

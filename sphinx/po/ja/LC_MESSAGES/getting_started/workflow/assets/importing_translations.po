@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
+msgid "Importing translations"
+msgstr "翻訳のインポート"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:7
+msgid "Games and internationalization"
+msgstr "ゲームと国際化"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
+msgid ""
+"The world is full of different markets and cultures and, to maximize "
+"profits™, nowadays games are released in several languages. To solve this, "
+"internationalized text must be supported in any modern game engine."
+msgstr ""
+"世界はさまざまな市場や文化に満ちており、収益を最大化するために、今日ではゲー"
+"ムは複数の言語でリリースされています。 これを解決するために、国際化されたテキ"
+"ストはどんな現代のゲームエンジンでもサポートされなければなりません。"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:14
+msgid ""
+"In regular desktop or mobile applications, internationalized text is usually "
+"located in resource files (or .po files for GNU stuff). Games, however, can "
+"use several orders of magnitude more text than applications, so they must "
+"support efficient methods for dealing with loads of multilingual text."
+msgstr ""
+"通常のデスクトップアプリケーションまたはモバイルアプリケーションでは、国際化"
+"されたテキストは通常、リソースファイル(またはGNUのもののための.poファイル)に"
+"配置されます。ただし、ゲームはアプリケーションよりも複数のテキストを使用でき"
+"るため、多言語テキストの負荷を処理するための効率的なメソッドをサポートする必"
+"要があります。"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
+msgid ""
+"There are two approaches to generate multilingual language games and "
+"applications. Both are based on a key:value system. The first is to use one "
+"of the languages as the key (usually English), the second is to use a "
+"specific identifier. The first approach is probably easier for development "
+"if a game is released first in English, later in other languages, but a "
+"complete nightmare if working with many languages at the same time."
+msgstr ""
+"多言語ゲームとアプリケーションを生成するには、2つの方法があります。どちらも"
+"key:valueシステムに基づいています。1つ目は、1つの言語をキー(通常は英語)として"
+"使用し、2つ目は特定の識別子を使用することです。最初のアプローチは、ゲームが最"
+"初に英語でリリースされ、後で他の言語でリリースされた場合、開発が容易になりま"
+"すが、同時に多くの言語で作業する場合は完全な悪夢です。"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:28
+msgid ""
+"In general, games use the second approach and a unique ID is used for each "
+"string. This allows you to revise the text while it is being translated to "
+"other languages. The unique ID can be a number, a string, or a string with a "
+"number (it's just a unique string anyway)."
+msgstr ""
+"一般に、ゲームは2番目のアプローチを使用し、各文字列に一意のIDが使用されます。"
+"これにより、他の言語に翻訳されている間にテキストを修正できます。一意のIDに"
+"は、数値、文字列、または数値を持つ文字列(とにかく一意の文字列にすぎません)を"
+"指定できます。"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
+msgid ""
+"If you need a more powerful file format, Godot also supports loading "
+"translations written in the gettext ``.po`` format. See :ref:"
+"`doc_localization_using_gettext` for details."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
+msgid "Translation format"
+msgstr "翻訳形式"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
+msgid ""
+"To complete the picture and allow efficient support for translations, Godot "
+"has a special importer that can read CSV files. All spreadsheet editors (be "
+"it Libreoffice, Microsoft Office, Google Docs, etc.) can export to this "
+"format, so the only requirement is that the files have a special "
+"arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
+"as follows:"
+msgstr ""
+"画像を完成させ、翻訳を効率的にサポートするために、GodotにはCSVファイルを読み"
+"取ることができる特別なインポーターがあります。すべてのスプレッドシートエディ"
+"タ(Libreoffice、Microsoft Office、Googleドキュメントなど)は、この形式にエクス"
+"ポートすることができるので、唯一の要件は、ファイルが特別な配置を持っているこ"
+"とです。CSV ファイルは UTF-8エンコーディングに保存し、次のようにフォーマット"
+"する必要があります:"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+msgid "<lang1>"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+msgid "<lang2>"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+msgid "<langN>"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
+msgid "KEY1"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
+msgid "string"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
+msgid "KEY2"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
+msgid "KEYN"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
+msgid ""
+"The \"lang\" tags must represent a language, which must be one of the :ref:"
+"`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags must "
+"be unique and represent a string universally (they are usually in uppercase, "
+"to differentiate from other strings). Here's an example:"
+msgstr ""
+"\"lang\" タグは、エンジンでサポートされている :ref:`valid locales "
+"<doc_locales>` のいずれかである必要があります。\"KEY\" タグは一意で、文字列を"
+"普遍的に表す必要があります (通常は大文字で、他の文字列と区別します)。次に例を"
+"示します:"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+msgid "id"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+msgid "en"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+msgid "es"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
+msgid "ja"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+msgid "GREET"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+msgid "Hello, friend!"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+msgid "Hola, Amigo!"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
+msgid "こんにちは"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+msgid "ASK"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+msgid "How are you?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+msgid "Cómo está?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+msgid "元気ですか"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+msgid "BYE"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+msgid "Good Bye"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+msgid "Adiós"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+msgid "さようなら"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+msgid "CSV importer"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+msgid ""
+"Godot will treat CSV files as translations by default. It will import them "
+"and generate one or more compressed translation resource files next to it."
+msgstr ""
+"GodotはデフォルトでCSVファイルを翻訳として扱います。インポートし、その横に 1"
+"つ以上の圧縮翻訳リソースファイルを生成します。"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
+msgid ""
+"Importing will also add the translation to the list of translations to load "
+"when the game runs, specified in project.godot (or the project settings). "
+"Godot allows loading and removing translations at runtime as well."
+msgstr ""
+"読み込むと、project.godot(またはプロジェクト設定)で指定された、ゲームの実行時"
+"に読み込む翻訳の一覧にも翻訳が追加されます。Godotでは、実行時に翻訳を読み込"
+"み、削除することもできます。"

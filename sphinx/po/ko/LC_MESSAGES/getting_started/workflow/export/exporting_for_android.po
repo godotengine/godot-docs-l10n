@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,27 +19,27 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:4
 msgid "Exporting for Android"
-msgstr "안드로이드로 내보내기"
+msgstr "Android로 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for it. "
 "The following steps detail what is needed to setup the SDK and the engine."
 msgstr ""
-"안드로이드로 내보내려면 Godot를 컴파일하는 것보다 요구사항이 적습니다. 다음 "
-"단계는 SDK와 엔진을 설정하는데 필요한 것에 대해 설명합니다."
+"Android로 내보내려면 Godot를 컴파일하는 것보다 요구사항이 적습니다. 다음 단계"
+"는 SDK와 엔진을 설정하는데 필요한 것에 대해 설명합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
-msgstr "안드로이드 SDK 다운로드하기"
+msgstr "Android SDK 다운로드하기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
 msgid ""
 "Download and install the Android SDK from https://developer.android.com/"
 "studio/"
 msgstr ""
-"https://developer.android.com/studio/ 에서 안드로이드 SDK를 다운로드하고 설치"
-"하세요"
+"https://developer.android.com/studio/ 에서 Android SDK를 다운로드하고 설치하"
+"세요"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid "Install OpenJDK or Oracle JDK"
@@ -69,10 +69,10 @@ msgid ""
 "or eclipse probably generated one for you (on Linux and macOS, you can find "
 "it in the ``~/.android`` directory)."
 msgstr ""
-"안드로이드는 기기에 설치하고 출시하지 않은 APK를 배포하기 위해 디버그 키스토"
-"어 파일이 필요합니다. 이전에 SDK를 사용하고 프로젝트를 만든 적이 있다면, ant"
-"나 eclipse가 파일이 있을 것입니다 (리눅스와 macOS에서, ``~/.android`` 디렉토"
-"리에서 찾을 수 있습니다)."
+"Android는 기기에 설치하고 출시하지 않은 APK를 배포하기 위해 디버그 키스토어 "
+"파일이 필요합니다. 이전에 SDK를 사용하고 프로젝트를 만든 적이 있다면, ant나 "
+"eclipse가 파일이 있을 것입니다 (Linux와 macOS에서, ``~/.android`` 디렉토리에"
+"서 찾을 수 있습니다)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
 msgid ""
@@ -93,9 +93,9 @@ msgid ""
 "one (any) of the Android API levels for it to be installed in the SDK "
 "directory."
 msgstr ""
-"Android Debug Bridge (adb)는 명령 행 도구로 안드로이드 기기와 통신하는데 사용"
-"됩니다. SDK와 함께 설치되지만, SDK 디렉토리에 설치하기 위해 안드로이드 API 수"
-"준에 맞는 것을 설치해야 할 지도 모릅니다."
+"Android Debug Bridge (adb)는 명령줄 도구로 Android 기기와 통신하는데 사용됩니"
+"다. SDK와 함께 설치되지만, SDK 디렉토리에 설치하기 위해 Android API 수준에 맞"
+"는 것을 설치해야 할 지도 모릅니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:43
 msgid "Setting it up in Godot"
@@ -106,7 +106,7 @@ msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
 "for the user account in the computer (it's independent from the project)."
 msgstr ""
-"에디터 설정 화면으로 갑니다. 이 화면은 컴퓨터의 사용자 계정을 위한 에디터 설"
+"편집기 설정 화면으로 갑니다. 이 화면은 컴퓨터의 사용자 계정을 위한 편집기 설"
 "정을 갖고 있습니다 (프로젝트와는 독립된 것입니다)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:51
@@ -119,7 +119,7 @@ msgstr "이 화면에서 3개의 파일 경로가 설정되어야 합니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
 msgid "The *adb* executable (adb.exe on Windows)"
-msgstr "*adb* 실행 파일 (윈도우에서는 adb.exe)"
+msgstr "*adb* 실행 파일 (Windows에서는 adb.exe)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
 msgid "The *jarsigner* executable (from JDK 6 or 8)"
@@ -131,7 +131,7 @@ msgstr "디버그 *keystore*"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
 msgid "Once that is configured, everything is ready to export to Android!"
-msgstr "일단 구성되면, 안드로이드에 내보낼 준비가 끝납니다!"
+msgstr "일단 구성되면, Android에 내보낼 준비가 끝납니다!"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
 msgid "Exporting for Google Play Store"
@@ -154,12 +154,12 @@ msgid ""
 msgstr ""
 "이 키스토어와 키는 개발자 ID를 확인하는데 사용됩니다, 암호를 기억하고 안전한 "
 "장소에 보관하세요! `APK 서명 <https://developer.android.com/studio/publish/"
-"app-signing>`__\\ 에 대해 더 자세히 배우고 싶다면 구글 안드로이드 개발자 가이"
-"드를 사용하세요."
+"app-signing>`__\\ 에 대해 더 자세히 배우고 싶다면 구글 Android 개발자 가이드"
+"를 사용하세요."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
 msgid "Now fill in the following forms in your Android Export Presets:"
-msgstr "이제 안드로이드 내보내기 프리셋에서 다음 항목을 채우세요:"
+msgstr "이제 Android 내보내기 프리셋에서 다음 항목을 채우세요:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
 msgid "Release: Enter the path to the keystore file you just generated."

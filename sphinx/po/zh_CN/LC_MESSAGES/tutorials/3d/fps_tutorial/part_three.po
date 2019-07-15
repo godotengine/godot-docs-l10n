@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,7 +124,6 @@ msgid ""
 msgstr "现在游戏角色有枪，让我们给他们一些有限的弹药。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:80
-#, fuzzy
 msgid ""
 "Firstly, we need to define a few variables in each of our weapon scripts."
 msgstr "首先，我们需要在每个武器脚本中定义一些变量。"
@@ -144,9 +143,8 @@ msgid ""
 msgstr "``spare_ammo``:我们为手枪留下的弹药量"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:92
-#, fuzzy
 msgid "``AMMO_IN_MAG``: The amount of ammo in a fully reloaded weapon/magazine"
-msgstr "``AMMO_IN_MAG``:完全重装武器/杂志中的弹药数量"
+msgstr "``AMMO_IN_MAG``：武器或弹仓完全重装后所容纳的弹药数量"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:94
 msgid "Now all we need to do is add a single line of code to ``fire_weapon``."
@@ -379,7 +377,7 @@ msgid ""
 "magazine."
 msgstr ""
 "如果游戏角色有足够的弹药来填充武器，我们从 ``spare_ammo`` 中移除所需的弹药，"
-"然后将'ammo_in_weapon``设置为完整的武器/杂志。"
+"然后将 ``ammo_in_weapon`` 设置为武器/弹仓的满载值。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:247
 #, fuzzy

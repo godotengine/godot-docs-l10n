@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 "다. 사용자들은 씬 분기들을 그들의 씬에 저장합니다. 하지만 그 뒤 그들은 이제까"
 "지 의지해온 어려운 참고가 더 이상 효과가 없다는 것을 알게됩니다. 씬을 여러 방"
 "면에서 재 사용할 수 있는 것이 문제를 일으켰는데, 노드 경로가 대상을 찾지 못하"
-"기 때문입니다. 에디터에서 설정된 시그널 연결이 끊어집니다."
+"기 때문입니다. 편집기에서 설정된 시그널 연결이 끊어집니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
 msgid ""
@@ -222,7 +222,7 @@ msgstr ""
 "비어있지 않은 문자열을 반환하는 것으로 씬 독은 노드에 의해 툴팁 문자열과 함"
 "께 경고 아이콘을 생성합니다.  :ref:`Area2D <class_Area2D>`\\ 에서 자식 :ref:"
 "`CollisionShape2D <class_CollisionShape2D>` 노드가 없을 때 나타나는 그런 아이"
-"콘과 같습니다.  그런 다음 에디터는 씬을 스크립트 코드를 통해 자체 문서화합니"
+"콘과 같습니다.  그런 다음 편집기는 씬을 스크립트 코드를 통해 자체 문서화합니"
 "다. 문서를 통한 콘텐츠 중복은 없습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:230
@@ -544,19 +544,21 @@ msgstr "더 일관성 있음."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid "No \"special cases\" that must be documented and maintained somewhere."
-msgstr ""
+msgstr "문서화하거나 어딘가에 남겨둬야 하는 \"특수한 상황\"이 없음."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:363
 msgid ""
 "No opportunity for errors to occur because these details are not accounted "
 "for."
-msgstr ""
+msgstr "이러한 세부 사항이 고려되지 않았기 때문에 오류가 발생하지 않음."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:366
 msgid ""
 "In contrast, if one ever needs to have a child node that does *not* inherit "
 "the transform of their parent, one has the following options:"
 msgstr ""
+"반대로 부모의 변형을 상속받지 *않는* 자식 노드가 필요하다면, 다음 옵션이 있습"
+"니다:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:369
 msgid ""
@@ -564,6 +566,9 @@ msgid ""
 "them. As nodes with no transform, Nodes will not pass along such information "
 "to their children."
 msgstr ""
+"**선언형** 해결: :ref:`Node <class_Node>`\\ 를 둘의 계층 구조 사이에 놓습니"
+"다. 변형이 없는 노드이므로 노드는 자식들에게 부모의 정보를 전달하지 않을 것입"
+"니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:372
 msgid ""
@@ -572,6 +577,10 @@ msgid ""
 "<class_Spatial_method_set_as_toplevel>` node. This will make the node ignore "
 "its inherited transform."
 msgstr ""
+"**명령형** 해결: :ref:`CanvasItem <class_CanvasItem_method_set_as_toplevel>`"
+"또는  :ref:`Spatial <class_Spatial_method_set_as_toplevel>` 노드의 "
+"``set_as_toplevel`` Setter를 사용합니다. 이것으로 노드는 상속된 변형의 영향"
+"을 무시합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:379
 msgid ""
@@ -582,6 +591,11 @@ msgid ""
 "keeping these in a separate branch from the \"world\" can help simplify the "
 "management of game connections and the like."
 msgstr ""
+"네트워크 게임을 만든다면, 어떤 노드와 게임 플레이 시스템이 모든 플레이어와 관"
+"련 있는지, 단지 권위 있는 서버와 관련 있는지 알아야 합니다. 예를 들어, 사용자"
+"는 모든 플레이어의 \"PlayerController\" 논리 사본을 가질 필요가 없습니다. 대"
+"신 그들의 것만이 필요합니다. 따라서 \"World\"에서 그들을 분리하여 게임 연결"
+"의 관리를 단순화할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:386
 msgid ""
@@ -591,6 +605,10 @@ msgid ""
 "else. If so, then it stands to reason they should be children of that parent "
 "(and likely part of that parent's scene if they aren't already)."
 msgstr ""
+"씬 조직의 핵심은 SceneTree를 공간적 용어보다는 관계적 용어로 생각하는 것입니"
+"다. 노드가 부모의 존재에 의존해야 할까요? 그렇지 않아도 된다면, 그들은 다른 "
+"어딘가에서 스스로 잘 있을 수 있을 겁니다. 의존해야 한다면, 그들은 부모의 자식"
+"으로 (그리고 준비가 되지 않았다면 부모의 씬의 일부로) 존재해야 할 것입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:392
 msgid ""
@@ -599,3 +617,6 @@ msgid ""
 "one still has the flexibility to move nodes around, it is still best when "
 "such moves are unnecessary by default."
 msgstr ""
+"이것이 노드 자체가 구성 요소를 뜻하는 걸까요? 전혀요. Godot의 노드 트리는 집"
+"합 관계를 형성합니다, 구성의 일부가 아닙니다. 하지만 노드가 움직이는 유동성"
+"을 지니고 있더라도, 그것이 기본적으로 불필요한 것이 가장 좋습니다."

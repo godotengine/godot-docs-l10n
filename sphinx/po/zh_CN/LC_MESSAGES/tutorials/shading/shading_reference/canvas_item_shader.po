@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr "渲染模式"
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:17
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:95
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:144
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:193
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
 msgid "Description"
 msgstr "描述"
 
@@ -217,7 +217,7 @@ msgstr "** z**: 动画帧。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:95
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:144
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:193
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
 msgid "Built-in"
 msgstr "内建的"
 
@@ -246,8 +246,8 @@ msgid "View space to clip space transform."
 msgstr "查看空间以剪切空间变换。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:103
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
 msgid "in float **TIME**"
 msgstr "in float **TIME**"
 
@@ -264,12 +264,12 @@ msgid "Instance custom data."
 msgstr "实例自定义数据。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
 msgid "in bool **AT_LIGHT_PASS**"
 msgstr "in bool **AT_LIGHT_PASS**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
 msgid "True if this is a light pass."
 msgstr "如果光通过则为真。"
 
@@ -284,14 +284,14 @@ msgid "Vertex, in image space."
 msgstr "图像空间中的顶点。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:207
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:166
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:207
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:166
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
 msgid ""
 "Normalized pixel size of default 2D texture. For a Sprite with a texture of "
 "size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
@@ -309,7 +309,7 @@ msgid "UV."
 msgstr "UV."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:159
 #, fuzzy
 msgid "inout vec4 **COLOR**"
 msgstr "out vec4 **COLOR**"
@@ -359,122 +359,126 @@ msgstr ""
 "线”。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:146
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
 msgid "in vec4 **FRAGCOORD**"
 msgstr "在vec4 ** FRAGCOORD **"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:146
-msgid "Fragment coordinate, pixel adjusted."
-msgstr "片段坐标，像素调整。"
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
+msgid ""
+"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
+"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
+"lower-left."
+msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:148
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:150
 #, fuzzy
 msgid "inout vec3 **NORMAL**"
 msgstr "out vec3 **NORMAL**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:148
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:150
 #, fuzzy
 msgid "Normal read from **NORMAL_TEXTURE**. Writable."
 msgstr "sampler2D **NORMAL_TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:150
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:152
 msgid "out vec3 **NORMALMAP**"
 msgstr "out vec3 **NORMALMAP**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:150
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:152
 msgid ""
 "Configures normal maps meant for 3D for use in 2D. If used, overwrites "
 "**NORMAL**."
 msgstr "配置用于三维的法线贴图，以便在二维中使用。如果使用，则覆盖**法线**。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:153
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
 #, fuzzy
 msgid "inout float **NORMALMAP_DEPTH**"
 msgstr "out float **NORMALMAP_DEPTH**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:153
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
 msgid "Normalmap depth for scaling."
 msgstr "用于缩放的法线贴图深度。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:200
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:204
 msgid "in vec2 **UV**"
 msgstr "in vec2 **UV**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
 msgid "UV from vertex function."
 msgstr "来自顶点功能的UV。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:159
 msgid ""
 "Color from vertex function and output fragment color. If unused, will be set "
 "to **TEXTURE** color."
 msgstr "从顶点函数和输出片段颜色。如果未使用，将设置为**纹理**颜色。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:160
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
 #, fuzzy
 msgid "in sampler2D **TEXTURE**"
 msgstr "sampler2D **TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:160
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
 msgid "Default 2D texture."
 msgstr "默认的2D纹理。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
 #, fuzzy
 msgid "in sampler2D **NORMAL_TEXTURE**"
 msgstr "sampler2D **NORMAL_TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
 msgid "Default 2D normal texture."
 msgstr "默认2D普通纹理。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:170
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:170
 #, fuzzy
 msgid "Screen UV for use with **SCREEN_TEXTURE**."
 msgstr "屏幕UV用于SCREEN_TEXTURE。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:170
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:170
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
 msgid "Size of individual pixels. Equal to inverse of resolution."
 msgstr "单个像素的大小。 等于分辨率的倒数。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:213
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
 msgid "in vec2 **POINT_COORD**"
 msgstr "in vec2 **POINT_COORD**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
 msgid "Coordinate for drawing points."
 msgstr "协调绘图点。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
 msgid "Global time in seconds."
 msgstr "全球时间以秒为单位。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:180
 #, fuzzy
 msgid "in sampler2D **SCREEN_TEXTURE**"
 msgstr "sampler2D **SCREEN_TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:180
 msgid "Screen texture, mipmaps contain gaussian blurred versions."
 msgstr "屏幕纹理，mipmap包含高斯模糊版本。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
 msgid "Light built-ins"
 msgstr "内置灯光"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:186
 msgid ""
 "Light processor functions work differently in 2D than they do in 3D. In "
 "CanvasItem shaders, the shader is called once for the object being drawn, "
@@ -489,110 +493,106 @@ msgstr ""
 "传递，请使用渲染_模式中的“无阴影”。如果您只想让光通过该对象，使用渲染_模式中"
 "的“仅有_光照”；当您只想让被光覆盖的对象可见时，这是非常有用的。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:190
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:192
 msgid ""
 "When the shader is on a light pass, the ``AT_LIGHT_PASS`` variable will be "
 "``true``."
 msgstr "当着色器处于光通道时，“在_光照_通道”变量将为“真”。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
-msgid "Fragment coordinate of pixel center. Origin at lower left."
-msgstr "像素中心的片段坐标。原点在左下角。"
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:201
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:201
 msgid ""
 "Input Normal. Although this value is passed in, **normal calculation still "
 "happens outside of this function**."
 msgstr "输入正常。 虽然传入了这个值，但 **正常计算仍然发生在此函数之外** 。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:200
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:204
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
 msgstr "来自顶点函数的UV，相当于片段函数中的UV。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:202
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:206
 msgid "in vec4 **COLOR**"
 msgstr "in vec4 **COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:202
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:206
 msgid ""
 "Input Color. This is the output of the fragment function with final "
 "modulation applied."
 msgstr "输入颜色。 这是应用了最终调制的片段函数的输出。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:205
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:209
 msgid "sampler2D **TEXTURE**"
 msgstr "sampler2D **TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:205
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:209
 msgid "Current texture in use for CanvasItem."
 msgstr "CanvasItem使用的当前纹理。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
 #, fuzzy
 msgid "**SCREEN_TEXTURE** Coordinate (for using with screen texture)."
 msgstr "屏幕纹理坐标(用于屏幕纹理)。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:213
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
 #, fuzzy
 msgid "UV for Point Sprite."
 msgstr "Point Sprite的当前UV。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
 #, fuzzy
 msgid "inout vec2 **LIGHT_VEC**"
 msgstr "out vec2 **LIGHT_VEC**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
 msgid ""
 "Vector from light to fragment, can be modified to alter shadow computation."
 msgstr "向量从光到片段，可以修改以改变阴影计算。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
 #, fuzzy
 msgid "inout float **LIGHT_HEIGHT**"
 msgstr "out float **LIGHT_HEIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
 msgid "Height of Light. Only effective when normals are used."
 msgstr "光照的高度。只有在使用法线时才有效。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
 #, fuzzy
 msgid "inout vec4 **LIGHT_COLOR**"
 msgstr "out vec4 **LIGHT_COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
 msgid "Color of Light."
 msgstr "光的颜色。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 #, fuzzy
 msgid "in vec2 **LIGHT_UV**"
 msgstr "out vec2 **LIGHT_UV**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid "UV for Light texture."
 msgstr "紫外线对质地轻。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
 msgid "out vec4 **SHADOW_COLOR**"
 msgstr "out vec4 **SHADOW_COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
 #, fuzzy
 msgid "Shadow Color of Light."
 msgstr "光的颜色。"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
 #, fuzzy
 msgid "inout vec4 **LIGHT**"
 msgstr "out vec4 **LIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
 msgid ""
 "Value from the Light texture and output color. Can be modified. If not used, "
 "the light function is ignored."

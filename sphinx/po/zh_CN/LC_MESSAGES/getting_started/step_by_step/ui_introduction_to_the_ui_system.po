@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgstr "使用控制节点设计界面"
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 #, fuzzy
 msgid ""
-"Computer displays, mobile phones, and TV screen come in all shapes and "
+"Computer displays, mobile phones, and TV screens come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
 "resolutions. It can be hard to build responsive interfaces that adapt to all "
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
@@ -32,9 +32,7 @@ msgid ""
 msgstr ""
 "电脑显示器、手机和电视屏幕有各种形状和大小。要发布一款游戏，您需要支持不同的"
 "屏幕比例和分辨率。构建适应所有平台的响应式界面可能很困难。值得庆幸的是，Godot"
-"提供了强大的的工具来设计和管理响应性用户界面。要设计UI，您将使用控制节点。这"
-"些是编辑器中带有绿色图标的节点。它们有几十个，可以创建从生命条到复杂应用程序"
-"的任何东西。Godot的整个编辑器和插件都使用这些节点。"
+"提供了强大的的工具来设计和管理响应性用户界面。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -45,9 +43,8 @@ msgid "This guide will get you started with UI design. You will learn:"
 msgstr "本指南将让您从UI设计开始。您将学习:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
-msgstr "五个最有用的控制节点来构建您的游戏界面"
+msgstr "有五个最实用的控制节点来构建您的游戏界面"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
@@ -199,9 +196,8 @@ msgstr ""
 "否则，它的行为就像`Keep`mode。向后兼容的默认模式。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
-msgstr "`Scale`缩放纹理以适合节点的边框"
+msgstr "`Scale`缩放纹理以适应节点的边框。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 #, fuzzy
@@ -309,13 +305,14 @@ msgstr ""
 "Angle(初始角度)`和`Fill Degrees(填充度)`属性让您限制量规的范围。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
+#, fuzzy
 msgid ""
 "To animate the bar, you'll want to look at the Range section. Set the "
 "``Min`` and ``Max`` properties to define the range of the gauge. For "
 "instance, to represent a character's life, you'll want to set ``Min`` to ``0,"
 "`` and ``Max`` to the character's maximum life. Change the ``Value`` "
 "property to update the bar. If you leave the ``Min`` and ``Max`` values to "
-"the default of ``1`` and ``100,`` and set the ``Value`` property to ``40``, "
+"the default of ``0`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
 "要使栏动画化，您需要查看Range部分。设置`Min`和`Max`属性来定义量规的范围。例"

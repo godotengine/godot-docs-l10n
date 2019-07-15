@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
 msgid "Custom builds for Android"
-msgstr "안드로이드 용 커스텀 빌드"
+msgstr "Android 용 커스텀 빌드"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:6
 msgid ""
@@ -29,17 +29,18 @@ msgid ""
 "then build it and use it as an export template every time you export the "
 "project."
 msgstr ""
-"Godot는 커스텀 빌드 안드로이드 템플릿을 사용하기 위한 설정을 제공합니다. "
-"Godot와 함께 제공되는 미리 빌드된 템플릿을 사용하는 대신, 실제로 안드로이드 "
-"Java 프로젝트를 프로젝트 폴더에 설치합니다. Godot는 이제 프로젝트를 빌드하"
-"며, 프로젝트를 내보낼 때마다 내보내기 템플릿으로 사용될 것입니다."
+"Godot는 커스텀 빌드 Android 템플릿을 사용하기 위한 설정을 제공합니다. Godot"
+"와 함께 제공되는 미리 빌드된 템플릿을 사용하는 대신, 실제로 Android Java 프로"
+"젝트를 프로젝트 폴더에 설치합니다. Godot는 이제 프로젝트를 빌드하며, 프로젝트"
+"를 내보낼 때마다 내보내기 템플릿으로 사용될 것입니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:10
 msgid "There are some reasons why you may want to do this:"
 msgstr "이렇게 하고 싶어하는 몇 가지 이유가 있습니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:12
-msgid "Modify the project before it's build"
+#, fuzzy
+msgid "Modify the project before it's built"
 msgstr "빌드하기 전 프로젝트를 수정하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
@@ -51,8 +52,8 @@ msgid ""
 "Configuring custom build is a more or less straightforward process, but it "
 "may take a while to get used to how the Android SDK works."
 msgstr ""
-"커스텀 빌드를 구성하는 것은 다소 간단한 과정이지만, 안드로이드 SDK가 작동하"
-"는 방식에 익숙해지는 데는 시간이 걸릴 수 있습니다."
+"커스텀 빌드를 구성하는 것은 다소 간단한 과정이지만, Android SDK가 작동하는 방"
+"식에 익숙해지는 데는 시간이 걸릴 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:17
 msgid ""
@@ -83,15 +84,15 @@ msgid ""
 "ref:`create your own add-ons<doc_android_plugin>`, or you really need to "
 "modify the project."
 msgstr ""
-"이것은 *\"res://android/build\"*\\ 에 Gradle 기반 안드로이드 프로젝트를 만듭"
-"니다, 그리고 .gdignore 파일을 *\"res://android\"*\\ 에 놓습니다, 따라서 "
-"Godot 파일 시스템은 이 폴더를 무시합니다. :ref:`자신만의 애드온을 만들기"
+"이것은 *\"res://android/build\"*\\ 에 Gradle 기반 Android 프로젝트를 만듭니"
+"다, 그리고 .gdignore 파일을 *\"res://android\"*\\ 에 놓습니다, 따라서 Godot "
+"파일 시스템은 이 폴더를 무시합니다. :ref:`자신만의 애드온을 만들기"
 "<doc_android_plugin>`\\ 나, 정말로 프로젝트를 수정해야 하는 경우가 아니면 이 "
 "파일들은 편집하지 않아도 됩니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:31
 msgid "Install the Android SDK (Command Line Version)"
-msgstr "안드로이드 SDK 설치하기 (명령 행 버전)"
+msgstr "Android SDK 설치하기 (명령줄 버전)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:33
 msgid ""
@@ -101,10 +102,10 @@ msgid ""
 "is easier but it requires downloading and installing Android Studio (which "
 "may require more than 1gb of storage)."
 msgstr ""
-"명령 행을 사용해서 안드로이드 SDK를 설치하려면 몇 가지 절차가 있습니다. 이 방"
-"식의 장점은 간단하며 작은 다운로드/설치 크기입니다. 그렇지만 조금 더 힘들 수 "
-"있습니다. 안드로이드 스튜디오 방식은 더 쉽지만, 안드로이드 스튜디오를 다운로"
-"드하고 설치해야 합니다 (이는 1기가보다 더 클 수도 있습니다)."
+"명령줄을 사용해서 Android SDK를 설치하려면 몇 가지 절차가 있습니다. 이 방식"
+"의 장점은 간단하며 작은 다운로드/설치 크기입니다. 그렇지만 조금 더 힘들 수 있"
+"습니다. Android 스튜디오 방식은 더 쉽지만, Android 스튜디오를 다운로드하고 설"
+"치해야 합니다 (이는 1기가보다 더 클 수도 있습니다)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:36
 msgid "Install Java"
@@ -117,14 +118,14 @@ msgid ""
 "otherwise Oracle's Java SDK for version 8 will work. Later versions may not "
 "work for Android development."
 msgstr ""
-"안드로이드 SDK에는 Java가 포함되지 않습니다, 따라서 수동으로 설치해야 합니"
-"다. Java SDK를 설치합니다 (runtime이나 JRE가 **아닙니다**). OpenSDK 8을 추천"
-"합니다, 다른 방법으로 Oracle의 버전 8 용 Java SDK도 가능합니다. 이후 버전은 "
-"안드로이드 개발에 작동하지 않을 수 있습니다."
+"Android SDK에는 Java가 포함되지 않습니다, 따라서 수동으로 설치해야 합니다. "
+"Java SDK를 설치합니다 (runtime이나 JRE가 **아닙니다**). OpenSDK 8을 추천합니"
+"다, 다른 방법으로 Oracle의 버전 8 용 Java SDK도 가능합니다. 이후 버전은 "
+"Android 개발에 작동하지 않을 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:41
 msgid "Download the command line tools"
-msgstr "명령 행 도구 다운로드하기"
+msgstr "명령줄 도구 다운로드하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:43
 msgid ""
@@ -133,10 +134,10 @@ msgid ""
 "download (if you do want it, read further down for instructions for doing "
 "the same using Android Studio)."
 msgstr ""
-"안드로이드 SDK를 다운로드하기 위해 구글 웹사이트로 갑니다. 검색을 통해 *안드"
-"로이드 스튜디오* 다운로드 페이지로 갑니다. 안드로이드 스튜디오를 원한 것은 아"
-"니므로, 다운로드하지 않습니다 (원한다면, 하단에서 안드로이드 스튜디오를 사용"
-"해 같은 작업을 하는 설명을 읽으세요)."
+"Android SDK를 다운로드하기 위해 구글 웹사이트로 갑니다. 검색을 통해 *Android "
+"스튜디오* 다운로드 페이지로 갑니다. Android 스튜디오를 원한 것은 아니므로, 다"
+"운로드하지 않습니다 (원한다면, 하단에서 Android 스튜디오를 사용해 같은 작업"
+"을 하는 설명을 읽으세요)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:46
 msgid ""
@@ -166,13 +167,14 @@ msgid ""
 "empty directory). On Windows,"
 msgstr ""
 "아무 위치에서 새 폴더를 만들고 *android-sdk*\\ 로 이름을 짓습니다 (**빈 디렉"
-"토리이어야 합니다). 윈도우에서는,"
+"토리이어야 합니다). Windows에서는,"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:62
+#, fuzzy
 msgid ""
 "is often good enough. Unzip the *sdk zip file* you just downloaded there. "
 "The only thing in the directory you created in the previous step should be "
-"the *tools* folder with it's contents inside, like this:"
+"the *tools* folder with its contents inside, like this:"
 msgstr ""
 "다음 명령이 충분합니다. 방금 다운로드한 *sdk zip 파일*\\ 의 압축을 풉니다. 이"
 "전 단계를 거치고 디렉토리에 있는 것은 파일이 들어 있는 *tools* 폴더이어야합니"
@@ -197,14 +199,14 @@ msgid ""
 "folder (instructions provided for Windows users, as Unix users are expected "
 "to understand how command line navigation works):"
 msgstr ""
-"수락하기 위해선, *sdkmanager*\\ 를 특별한 인수를 가진 명령 행에서 실행해야 합"
-"니다. sdk 폴더 내의 *tools/bin* 디렉토리로 갑니다 (윈도우 사용자를 위한 설명"
-"이며, Unix 사용자는 명령 행 내비게이션이 작동하는 방식을 알고 있다고 가정합니"
+"수락하기 위해선, *sdkmanager*\\ 를 특별한 인수를 가진 명령줄에서 실행해야 합"
+"니다. sdk 폴더 내의 *tools/bin* 디렉토리로 갑니다 (Windows 사용자를 위한 설명"
+"이며, Unix 사용자는 명령줄 내비게이션이 작동하는 방식을 알고 있다고 가정합니"
 "다):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:80
 msgid "Then open a command line window:"
-msgstr "그 후 명령 행 윈도우를 엽니다:"
+msgstr "그 후 명령줄 창을 엽니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:84
 msgid "In there, manually run sdkmanager with the \"--licenses\" argument:"
@@ -246,7 +248,7 @@ msgid ""
 "And you need to input the following line (on Unixes this should work out of "
 "the box, for Windows there are further instructions below):"
 msgstr ""
-"그리고 다음 문장을 입력해야 합니다 (Unix에서 즉시 실행될 것이며, 윈도우에서"
+"그리고 다음 문장을 입력해야 합니다 (Unix에서 즉시 실행될 것이며, Windows에서"
 "는 아래 추가 설명이 있습니다):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:113
@@ -255,9 +257,9 @@ msgid ""
 "added at the beginning on the line if you use PowerShell, it's not needed "
 "for regular console)."
 msgstr ""
-"윈도우에서는, Java를 향하는 전체 경로를 제공해야 합니다 (그리고 PowerShell을 "
-"사용한다면 문장의 시작에 &를 추가해야 합니다, 일반적인 콘솔에는 필요하지 않습"
-"니다)."
+"Windows에서는, Java를 향하는 전체 경로를 제공해야 합니다 (그리고 PowerShell"
+"을 사용한다면 문장의 시작에 &를 추가해야 합니다, 일반적인 콘솔에는 필요하지 "
+"않습니다)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:115
 msgid ""
@@ -286,7 +288,7 @@ msgid ""
 "Go to the *Editor Settings* and set up a few fields in *Export -> Android*. "
 "Make sure they look like the following:"
 msgstr ""
-"*에디터 설정*\\ 으로 가서 *Export -> Android*\\ 의 몇 가지 영역을 설정합니"
+"*편집기 설정*\\ 으로 가서 *Export -> Android*\\ 의 몇 가지 영역을 설정합니"
 "다. 다음과 같아야 합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:129
@@ -314,7 +316,7 @@ msgstr "이것으로 모두 설정되었습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:138
 msgid "Install the Android SDK (Android Studio)"
-msgstr "안드로이드 SDK 설치하기 (안드로이드 스튜디오)"
+msgstr "Android SDK 설치하기 (Android 스튜디오)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:140
 msgid ""
@@ -323,22 +325,22 @@ msgid ""
 "up more disk space. It's also useful if you plan to develop Godot for "
 "Android (modify the Java source code) or if you plan to develop Add-Ons."
 msgstr ""
-"명령 행 도구를 통해 SDK 설치하기를 끝냈다면, 이 섹션은 편하게 넘어가세요. 안"
-"드로이드 스튜디오 경로는 더 쉽지만, 더 많은 디스크 공간을 차지합니다. 안드로"
-"이드 용 Godot를 개발하려는 계획이라면 (Java 소스 코드 수정), 혹은 애드온을 개"
-"발할 계획이라면 좋을 것입니다."
+"명령줄 도구를 통해 SDK 설치하기를 끝냈다면, 이 섹션은 편하게 넘어가세요. "
+"Android 스튜디오 경로는 더 쉽지만, 더 많은 디스크 공간을 차지합니다. Android "
+"용 Godot를 개발하려는 계획이라면 (Java 소스 코드 수정), 혹은 애드온을 개발할 "
+"계획이라면 좋을 것입니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:143
 msgid "Download and Install Android Studio"
-msgstr "안드로이드 스튜디오 다운로드하고 설치하기"
+msgstr "Android 스튜디오 다운로드하고 설치하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:145
 msgid ""
 "Download the latest version of Android Studio. When installing, pay "
 "attention to where the *android-sdk* directory is created."
 msgstr ""
-"최신 안드로이드 스튜디오를 다운로드합니다. 설치할 때, 어디에 *android-sdk* 디"
-"렉토리가 만들어지는 지 확인하세요."
+"최신 Android 스튜디오를 다운로드합니다. 설치할 때, 어디에 *android-sdk* 디렉"
+"토리가 만들어지는 지 확인하세요."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:149
 msgid ""
@@ -385,8 +387,8 @@ msgid ""
 "You thought that by going the Android Studio way you could escape the "
 "Keystore generation, but no. It's back to haunt you."
 msgstr ""
-"안드로이드 스튜디오 방식으로는 Keystore 생성에서 벗어날 수 있다고 생각했을텐"
-"데요, 아닙니다. 다시 돌아왔습니다."
+"Android 스튜디오 방식으로는 Keystore 생성에서 벗어날 수 있다고 생각했을텐데"
+"요, 아닙니다. 다시 돌아왔습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:170
 msgid ""
@@ -394,7 +396,7 @@ msgid ""
 "File Explorer and open a command line tool there:"
 msgstr ""
 "이전 단계에서 android-sdk를 설치한 폴더로 가서, 파일 탐색기를 사용하고 거기에"
-"서 명령 행 도구를 엽니다:"
+"서 명령줄 도구를 엽니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:174
 msgid ""
@@ -402,8 +404,8 @@ msgid ""
 "out of the box, but on Windows it needs additional details (keep reading "
 "afterwards)."
 msgstr ""
-"실제 입력할 명령 문장은 다음과 같습니다. Unix에서 이것은 즉시 작동하지만, 윈"
-"도우에서는 추가 세부 사항이 필요합니다 (계속 읽어주세요)."
+"실제 입력할 명령 문장은 다음과 같습니다. Unix에서 이것은 즉시 작동하지만, "
+"Windows에서는 추가 세부 사항이 필요합니다 (계속 읽어주세요)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:180
 msgid ""
@@ -412,10 +414,10 @@ msgid ""
 "for regular commandline). Don't worry, at least by using Android Studio on "
 "Windows, Java comes bundled with it."
 msgstr ""
-"윈도우에서는, Java에 대한 전체 경로를 제공해야 합니다 (그리고 PowerShell을 사"
-"용한다면, 문장의 시작 부분에 &를 추가해야 합니다, 일반 명령 행에서는 필요하"
-"지 않습니다). 걱정하지 마세요, 적어도 윈도우에서 안드로이드 스튜디오를 쓴다"
-"면, Java가 번들로 제공됩니다."
+"Windows에서는, Java에 대한 전체 경로를 제공해야 합니다 (그리고 PowerShell을 "
+"사용한다면, 문장의 시작 부분에 &를 추가해야 합니다, 일반 명령줄에서는 필요하"
+"지 않습니다). 걱정하지 마세요, 적어도 Windows에서 Android 스튜디오를 쓴다면, "
+"Java가 번들로 제공됩니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:182
 msgid ""
@@ -426,8 +428,8 @@ msgid ""
 msgstr ""
 "명확하게 하기 위해, PowerShell에서 작동하는 문장 캡쳐본이 있습니다 (&를 추가"
 "하고 keytool.exe에 대한 전체 Java 경로를 추가합니다, 일반 콘솔을 사용한다면 &"
-"를 제거하세요). 안드로이드 스튜디오와 함께 제공되는 Java 버전에 대한 경로를 "
-"사용합니다:"
+"를 제거하세요). Android 스튜디오와 함께 제공되는 Java 버전에 대한 경로를 사용"
+"합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:205
 msgid "Enabling Custom Build and Exporting"
@@ -438,8 +440,8 @@ msgid ""
 "When setting up the Android project in the *Project -> Export* dialog, "
 "*custom build* needs to be enabled:"
 msgstr ""
-"*프로젝트 -> 내보내기* 대화 상자에서 안드로이드 프로젝트를 설정할 때, "
-"*custiom build*\\ 가 켜져있어야 합니다:"
+"*프로젝트 -> 내보내기* 대화 상자에서 Android 프로젝트를 설정할 때, *custiom "
+"build*\\ 가 켜져있어야 합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:211
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,6 +40,9 @@ msgid ""
 "by the CanvasItem of Spatial shader. They contain only a vertex processor "
 "function that outputs multiple properties (see built-ins below)."
 msgstr ""
+"粒子着色器是独特的，因为它们不用于绘制对象本身；被用来计算粒子的性质，然后由"
+"空间着色器的画布组件使用。它们只包含一个顶点处理器函数，输出多个属性的内置函"
+"数(见下文)。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:16
 msgid ""
@@ -51,6 +54,10 @@ msgid ""
 "shaders that discard the data they have calculated once they draw to the "
 "frame buffer."
 msgstr ""
+"粒子着色器使用转换反馈着色器，这是一种单独运行的特殊类型的顶点着色器。它像普"
+"通顶点着色器那样在缓冲区中接受数据，但是也输出到数据缓冲区，而不是输出到片段"
+"着色器进行像素处理。正因为如此，转换反馈着色器可以在每次运行时自行构建，与其"
+"他着色器不同，其他着色器一旦绘制到帧缓冲区，就会丢弃它们计算的数据。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:23
 msgid ""
@@ -87,7 +94,7 @@ msgstr "**disable_force**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:34
 msgid "Disable attractor force. (Not currently implemented in 3.1)"
-msgstr ""
+msgstr "禁用吸引力。(目前在3.1版本中未实现)"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:36
 msgid "**disable_velocity**"
@@ -120,6 +127,8 @@ msgid ""
 "``use_vertex_as_albedo`` to ``true``. In a ShaderMaterial, access it with "
 "the ``COLOR`` variable."
 msgstr ""
+"为了在空间材质中使用“颜色”变量，将“使用_顶点_作为_反照率”设置为“真”值。在空间"
+"材质中，使用“颜色”变量访问它。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
 msgid "Built-in"
@@ -181,7 +190,7 @@ msgstr "out vec4 **CUSTOM**"
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:63
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
-msgstr ""
+msgstr "自定义粒子数据。可从网格着色器作为**实例化_自定义**访问。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
 #, fuzzy

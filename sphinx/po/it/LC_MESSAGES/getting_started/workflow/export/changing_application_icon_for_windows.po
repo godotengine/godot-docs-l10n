@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
+msgid "Changing application icon for Windows"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
+msgid ""
+"By default, the exported project's icon will be the Godot icon. You will "
+"most likely want to change that for your project. There are two types of "
+"icons that can be changed on Windows: the file icon and the taskbar icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
+msgid "Changing the taskbar icon"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
+msgid ""
+"The taskbar icon is the icon that shows up on the taskbar when your project "
+"is running."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
+msgid ""
+"To change the taskbar icon, go to **Project → Project Settings → Application "
+"→ Config → Icon**. Click on the folder icon and select your desired icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:22
+msgid "This is also the icon that gets displayed in the Godot project list."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:27
+msgid "Changing the file icon"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:29
+msgid ""
+"The file icon is the icon of the executable that you click on to start the "
+"project."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:34
+msgid ""
+"Before selecting it in the export options, you will need to install an extra "
+"tool called **rcedit**. You can download it `here <https://github.com/"
+"electron/rcedit/releases>`_."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
+msgid ""
+"After downloading, you need to tell Godot the path to the rcedit executable "
+"on your computer. Go to **Editor → Editor Settings → Export → Windows**. "
+"Click on the folder icon for the **rcedit** entry. Navigate to and select "
+"the rcedit executable."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:44
+msgid ""
+"Linux and macOS users will also need to install `WINE <https://www.winehq."
+"org/>`_ to use rcedit."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:49
+msgid ""
+"You should now have everything in place to change the file icon. To do that, "
+"you will need to specify the icon when exporting. Go to **Project → "
+"Export**. Assuming you have already created a Windows Desktop preset, select "
+"your icon in ICO format in the **Application → Icon** field."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:55
+msgid ""
+"You can use software such as GIMP to export an ICO image. For more "
+"information, please refer to `this tutorial <http://skyboygames.com/easily-"
+"create-a-windows-app-icon-with-gimp/>`_."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
+msgid "Testing the result"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:64
+msgid ""
+"You can now export the project. If it worked correctly, you should see this:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:69
+msgid "ICO file requirements"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:71
+msgid ""
+"Regardless of which program you use to create your `ICO file <https://en."
+"wikipedia.org/wiki/ICO_(file_format)>`_, there are some requirements to "
+"ensure the icon (and your executable) works on Windows."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:75
+msgid ""
+"This is a bit tricky, as can be seen in the following Stack Overflow "
+"threads: `one <https://stackoverflow.com/q/3236115/>`_, `two <https://"
+"stackoverflow.com/q/40749785/>`_."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:79
+msgid ""
+"Your ICO file should at least contain icons in the following resolutions: "
+"16×16, 48×48 and 256×256."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
+msgid ""
+"If you want to fully support high-DPI screens, this is the full list of "
+"supported icon sizes on Windows 10: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, "
+"48, 56, 60, 63, 84 and one larger than 255 pixels (such as 256, 512 or 1024)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
+msgid ""
+"It is also possible to convert a PNG image to an hiDPI-friendly ICO file "
+"using this `ImageMagick <https://www.imagemagick.org/>`_ command:"
+msgstr ""

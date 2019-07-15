@@ -1,0 +1,546 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:4
+msgid "Data preferences"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:6
+msgid ""
+"Ever wondered whether one should approach problem X with data structure Y or "
+"Z? This article covers a variety of topics related to these dilemmas."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:11
+msgid ""
+"This article makes references to \"[something]-time\" operations. This "
+"terminology comes from algorithm analysis' `Big O Notation <https://rob-bell."
+"net/2009/06/a-beginners-guide-to-big-o-notation/>`_."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:15
+msgid ""
+"Long-story short, it describes the worst-case scenario of runtime length. In "
+"laymen's terms:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:18
+msgid ""
+"\"As the size of a problem domain increases, the runtime length of the "
+"algorithm...\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:21
+msgid "Constant-time, ``O(1)``: \"...does not increase.\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:22
+msgid "Logarithmic-time, ``O(log n)``: \"...increases at a slow rate.\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:23
+msgid "Linear-time, ``O(n)``: \"...increases at the same rate.\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:24
+msgid "Etc."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:26
+msgid ""
+"Imagine if one had to process 3 million data points within a single frame. "
+"It would be impossible to craft the feature with a linear-time algorithm "
+"since the sheer size of the data would increase the runtime far beyond the "
+"time allotted. In comparison, using a constant-time algorithm could handle "
+"the operation without issue."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:32
+msgid ""
+"By and large, developers want to avoid engaging in linear-time operations as "
+"much as possible. But, if one keeps the scale of a linear-time operation "
+"small, and if one does not need to perform the operation often, then it may "
+"be acceptable. Balancing these requirements and choosing the right "
+"algorithm / data structure for the job is part of what makes programmers' "
+"skills valuable."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:40
+msgid "Array vs. Dictionary vs. Object"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:42
+msgid ""
+"Godot stores all variables in the scripting API in the `Variant <https://"
+"docs.godotengine.org/en/latest/development/cpp/variant_class.html>`_ class. "
+"Variants can store Variant-compatible data structures such as :ref:`Array "
+"<class_Array>` and :ref:`Dictionary <class_Dictionary>` as well as :ref:"
+"`Object <class_Object>` s."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:48
+msgid ""
+"Godot implements Array as a ``Vector<Variant>``. The engine stores the Array "
+"contents in a contiguous section of memory, i.e. they are in a row adjacent "
+"to each other."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:53
+msgid ""
+"For those unfamiliar with C++, a Vector is the name of the array object in "
+"traditional C++ libraries. It is a \"templated\" type, meaning that its "
+"records can only contain a particular type (denoted by angled brackets). So, "
+"for example, a :ref:`PoolStringArray <class_PoolStringArray>` would be "
+"something like a ``Vector<String>``."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:60
+msgid "Contiguous memory stores imply the following operation performance:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:62
+msgid "**Iterate:** Fastest. Great for loops."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:64
+msgid "Op: All it does is increment a counter to get to the next record."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:66
+msgid "**Insert, Erase, Move:** Position-dependent. Generally slow."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:68
+msgid ""
+"Op: Adding/removing/moving content involves moving the adjacent records over "
+"(to make room / fill space)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:71
+msgid "Fast add/remove *from the end*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:73
+msgid "Slow add/remove *from an arbitrary position*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:75
+msgid "Slowest add/remove *from the front*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:77
+msgid "If doing many inserts/removals *from the front*, then..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:79
+msgid "invert the array."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:81
+msgid "do a loop which executes the Array changes *at the end*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:83
+msgid "re-invert the array."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:85
+msgid ""
+"This makes only 2 copies of the array (still constant time, but slow) versus "
+"copying roughly 1/2 of the array, on average, N times (linear time)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:88
+msgid ""
+"**Get, Set:** Fastest *by position*. Ex. can request 0th, 2nd, 10th record, "
+"etc. but cannot specify which record you want."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:91
+msgid "Op: 1 addition operation from array start position up to desired index."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:93
+msgid "**Find:** Slowest. Identifies the index/position of a value."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:95
+msgid ""
+"Op: Must iterate through array and compare values until one finds a match."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:97
+msgid ""
+"Performance is also dependent on whether one needs an exhaustive search."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:100
+msgid ""
+"If kept ordered, custom search operations can bring it to logarithmic time "
+"(relatively fast). Laymen users won't be comfortable with this though. Done "
+"by re-sorting the Array after every edit and writing an ordered-aware search "
+"algorithm."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
+msgid ""
+"Godot implements Dictionary as an ``OrderedHashMap<Variant, Variant>``. The "
+"engine stores a giant array (initialized to 1000 records) of key-value "
+"pairs. When one attempts to access a value, they provide it a key. It then "
+"*hashes* the key, i.e. converts it into a number. The \"hash\" becomes the "
+"index into the array, giving the OHM a quick lookup for the value within the "
+"conceptual \"table\" of keys mapped to values."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:112
+msgid ""
+"Hashes are to reduce the chance of a key collision. If one occurs, the table "
+"must recalculate another index for the value that takes the previous "
+"position into account. In all, this results in constant-time access to all "
+"records at the expense of memory and some minor operational efficiency."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:117
+msgid "Hashing every key an arbitrary number of times."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:119
+msgid ""
+"Hash operations are constant-time, so even if an algorithm must do more than "
+"one, as long as the number of hash calculations doesn't become too dependent "
+"on the density of the table, things will stay fast. Which leads to..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:124
+msgid "Maintaining a huge size for the table."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:126
+msgid ""
+"The reason it starts with 1000 records, and the reason it forces large gaps "
+"of unused memory interspersed in the table is to minimize hash collisions "
+"and maintain the speed of the accesses."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:130
+msgid ""
+"As one might be able to tell, Dictionaries specialize in tasks that Arrays "
+"aren't. An overview of their operational details is as follows:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:133
+msgid "**Iterate:** Fast."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
+msgid ""
+"Op: Iterate over the map's internal vector of hashes. Return each key. "
+"Afterwards, users then use the key to jump to and return the desired value."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:139
+msgid "**Insert, Erase, Move:** Fastest."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
+msgid ""
+"Op: Hash the given key. Do 1 addition operation to look up the appropriate "
+"value (array start + offset). Move is two of these (one insert, one erase). "
+"The map must do some maintenance to preserve its capabilities:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:146
+msgid "update ordered List of records."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
+msgid "determine if table density mandates a need to expand table capacity."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
+msgid ""
+"The Dictionary remembers in what order users inserted its keys. This enables "
+"it to execute reliable iterations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:153
+msgid "**Get, Set:** Fastest. Same as a lookup *by key*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
+msgid "Op: Same as insert/erase/move."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
+msgid "**Find:** Slowest. Identifies the key of a value."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
+msgid ""
+"Op: Must iterate through records and compare the value until a match is "
+"found."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:162
+msgid ""
+"Note that Godot does not provide this feature out-of-the-box (because they "
+"aren't meant for this task)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:165
+msgid ""
+"Godot implements Objects as stupid, but dynamic containers of data content. "
+"Objects query data sources when posed questions. For example, to answer the "
+"question, \"do you have a property called, 'position'?\", it might ask its :"
+"ref:`script <class_Script>` or the :ref:`ClassDB <class_ClassDB>`. One can "
+"find more information about what objects are and how they work in the :ref:"
+"`doc_what_are_godot_classes` article."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:172
+msgid ""
+"The important detail here is the complexity of the Object's task. Every time "
+"it performs one of these multi-source queries, it runs through *several* "
+"iteration loops and HashMap lookups. What's more, the queries are linear-"
+"time operations dependent on the Object's inheritance hierarchy size. If the "
+"class the Object queries (its current class) doesn't find anything, the "
+"request defers to the next base class, all the way up until the original "
+"Object class. While these are each fast operations in isolation, the fact "
+"that it must make so many checks is what makes them slower than both of the "
+"alternatives for looking up data."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:184
+msgid ""
+"When developers mention how slow the scripting API is, it is this chain of "
+"queries they refer to. Compared to compiled C++ code where the application "
+"knows exactly where to go to find anything, it is inevitable that scripting "
+"API operations will take much longer. They must locate the source of any "
+"relevant data before they can attempt to access it."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:190
+msgid ""
+"The reason GDScript is slow is because every operation it performs passes "
+"through this system."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:193
+msgid ""
+"C# can process some content at higher speeds via more optimized bytecode. "
+"But, if the C# script calls into an engine class' content or if the script "
+"tries to access something external to it, it will go through this pipeline."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:198
+msgid ""
+"NativeScript C++ goes even further and keeps everything internal by default. "
+"Calls into external structures will go through the scripting API. In "
+"NativeScript C++, registering methods to expose them to the scripting API is "
+"a manual task. It is at this point that external, non-C++ classes will use "
+"the API to locate them."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:204
+msgid ""
+"So, assuming one extends from Reference to create a data structure, like an "
+"Array or Dictionary, why choose an Object over the other two options?"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:207
+msgid ""
+"**Control:** With objects comes the ability to create more sophisticated "
+"structures. One can layer abstractions over the data to ensure the external "
+"API doesn't change in response to internal data structure changes. What's "
+"more, Objects can have signals, allowing for reactive behavior."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:212
+msgid ""
+"**Clarity:** Objects are a reliable data source when it comes to the data "
+"that scripts and engine classes define for them. Properties may not hold the "
+"values one expects, but one doesn't need to worry about whether the property "
+"exists in the first place."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:217
+msgid ""
+"**Convenience:** If one already has a similar data structure in mind, then "
+"extending from an existing class makes the task of building the data "
+"structure much easier. In comparison, Arrays and Dictionaries don't fulfill "
+"all use cases one might have."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:222
+msgid ""
+"Objects also give users the opportunity to create even more specialized data "
+"structures. With it, one can design their own List, Binary Search Tree, "
+"Heap, Splay Tree, Graph, Disjoint Set, and any host of other options."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:226
+msgid ""
+"\"Why not use Node for tree structures?\" one might ask. Well, the Node "
+"class contains things that won't be relevant to one's custom data structure. "
+"As such, it can be helpful to construct one's own node type when building "
+"tree structures."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:270
+msgid ""
+"From here, one can then create their own structures with specific features, "
+"limited only by their imagination."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:274
+msgid "Enumerations: int vs. string"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
+msgid ""
+"Most languages offer an enumeration type option. GDScript is no different, "
+"but unlike most other languages, it allows one to use either integers or "
+"strings for the enum values. The question then arises, \"which should one "
+"use?\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:281
+msgid ""
+"The short answer is, \"whichever you are more comfortable with.\" This is a "
+"feature specific to GDScript and not Godot scripting in general; The "
+"languages prioritizes usability over performance."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:285
+msgid ""
+"On a technical level, integer comparisons (constant-time) will happen faster "
+"than string comparisons (linear-time). If one wants to keep up other "
+"languages' conventions though, then one should use integers."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:289
+msgid ""
+"The primary issue with using integers comes up when one wants to *print* an "
+"enum value. As integers, attempting to print MY_ENUM will print ``5`` or "
+"what-have-you, rather than something like ``\"MyEnum\"``. To print an "
+"integer enum, one would have to write a Dictionary that maps the "
+"corresponding string value for each enum."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:295
+msgid ""
+"If the primary purpose of using an enum is for printing values and one "
+"wishes to group them together as related concepts, then it makes sense to "
+"use them as strings. That way, a separate data structure to execute on the "
+"printing is unnecessary."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:301
+msgid ""
+"AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
+msgid ""
+"Under what circumstances should one use each of Godot's animation classes? "
+"The answer may not be immediately clear to new Godot users."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:306
+msgid ""
+":ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that the engine "
+"draws as an animated loop rather than a static image. Users can manipulate..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:310
+msgid "the rate at which it moves across each section of the texture (fps)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
+msgid "the number of regions contained within the texture (frames)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
+msgid ""
+"Godot's :ref:`VisualServer <class_VisualServer>` then draws the regions in "
+"sequence at the prescribed rate. The good news is that this involves no "
+"extra logic on the part of the engine. The bad news is that users have very "
+"little control."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:319
+msgid ""
+"Also note that AnimatedTexture is a :ref:`Resource <class_Resource>` unlike "
+"the other :ref:`Node <class_Node>` objects discussed here. One might create "
+"a :ref:`Sprite <class_Sprite>` node that uses AnimatedTexture as its "
+"texture. Or (something the others can't do) one could add AnimatedTextures "
+"as tiles in a :ref:`TileSet <class_TileSet>` and integrate it with a :ref:"
+"`TileMap <class_TileMap>` for many auto-animating backgrounds that all "
+"render in a single batched draw call."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:327
+msgid ""
+"The AnimatedSprite node, in combination with the :ref:`SpriteFrames "
+"<class_SpriteFrames>` resource, allows one to create a variety of animation "
+"sequences through spritesheets, flip between animations, and control their "
+"speed, regional offset, and orientation. This makes them well-suited to "
+"controlling 2D frame-based animations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:333
+msgid ""
+"If one needs trigger other effects in relation to animation changes (for "
+"example, create particle effects, call functions, or manipulate other "
+"peripheral elements besides the frame-based animation), then will need to "
+"use an :ref:`AnimationPlayer <class_AnimationPlayer>` node in conjunction "
+"with the AnimatedSprite."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
+msgid ""
+"AnimationPlayers are also the tool one will need to use if they wish to "
+"design more complex 2D animation systems, such as..."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:342
+msgid "**Cut-Out animations:** editing sprites' transforms at runtime."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
+msgid ""
+"**2D Mesh animations:** defining a region for the sprite's texture and "
+"rigging a skeleton to it. Then one animates the bones which stretch and bend "
+"the texture in proportion to the bones' relationships to each other."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:349
+msgid "A mix of the above."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
+msgid ""
+"While one needs an AnimationPlayer to design each of the individual "
+"animation sequences for a game, it can also be useful to combine animations "
+"for blending, i.e. enabling smooth transitions between these animations. "
+"There may also be a hierarchical structure between animations that one plans "
+"out for their object. These are the cases where the :ref:`AnimationTree "
+"<class_AnimationTree>` shines. One can find an in-depth guide on using the "
+"AnimationTree :ref:`here <doc_animation_tree>`."
+msgstr ""

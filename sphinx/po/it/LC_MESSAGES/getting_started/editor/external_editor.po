@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/editor/external_editor.rst:4
+msgid "Using an external text editor"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:6
+msgid ""
+"Godot can be used with an external text editor, such as Sublime Text or "
+"Visual Studio Code. To enable an external text editor, browse to the "
+"relevant editor settings via: ``Editor -> Editor Settings -> Text Editor -> "
+"External``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:12
+msgid ""
+"There are two fields: the executable path and command line flags. The flags "
+"allow you to integrate the editor with Godot, passing it the file path to "
+"open and other relevant arguments. Godot will replace the following "
+"placeholders in the flags string:"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:18
+msgid "Field in Exec Flags"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:18
+msgid "Is replaced with"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:20
+msgid "``{project}``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:20
+msgid "The absolute path to the project directory"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:22
+msgid "``{file}``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:22
+msgid "The absolute path to the file"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:24
+msgid "``{col}``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:24
+msgid "The column number of the error"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:26
+msgid "``{line}``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:26
+msgid "The line number of the error"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:29
+msgid "Some example Exec Flags for various editors include:"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:32
+msgid "Editor"
+msgstr "Editor"
+
+#: ../../docs/getting_started/editor/external_editor.rst:32
+msgid "Exec Flags"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:34
+msgid "Geany/Kate"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:34
+msgid "``{file} --line {line} --column {col}``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:36
+msgid "Atom/Sublime Text"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:36
+msgid "``{file}:{line}``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:38
+msgid "JetBrains Rider"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:38
+msgid "``--line {line} {file}``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+msgid "Visual Studio Code"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+msgid "``{project} --goto {file}:{line}:{col}``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:42
+msgid "Vim (gVim)"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:42
+msgid "``\"+call cursor({line}, {col})\" {file}``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:45
+msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
-#, fuzzy
 msgid "Your first game"
 msgstr "Twoja pierwsza gra"
 
@@ -32,7 +31,7 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
-"Ten samouczek pomoże ci stworzyć pierwszy projekt Godota. Dowiesz się, jak "
+"Ten samouczek pomoże ci stworzyć pierwszy projekt w Godot. Dowiesz się, jak "
 "działa edytor Godot, jak ustawić strukturę projektu i jak zbudować grę 2D."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
@@ -41,7 +40,7 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
-"Projekt ten jest wstępem do obsługi silnika Godota. Zakłada on, że masz już "
+"Projekt ten jest wstępem do obsługi silnika Godot. Zakłada on, że masz już "
 "pewne doświadczenie w programowaniu. Jeśli jesteś początkującym programistą, "
 "powinieneś zacząć od: :ref:`doc_scripting`."
 
@@ -59,7 +58,7 @@ msgid ""
 "2D until you have a good understanding of the game development process."
 msgstr ""
 "**Dlaczego 2D?** Gry 3D są znacznie bardziej złożone niż 2D. Powinieneś "
-"trzymać się 2D dopóki dobrze nie zrozumiesz procesu tworzenia gry."
+"trzymać się 2D, dopóki dobrze nie zrozumiesz procesu tworzenia gry."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 msgid "Project setup"
@@ -86,23 +85,21 @@ msgstr ""
 "konfiguracji projektu i korzystania z edytora."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
-#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
-"Ta gra będzie korzystać z trybu portretowego(pionowego), więc musimy "
+"Ta gra będzie korzystać z trybu portretowego (pionowego), więc musimy "
 "dostosować rozmiar okna gry. Kliknij Projekt -> Ustawienia projektu -> "
-"Display -> Window i ustaw \"Width\" na 480 oraz \"Height\" na 720."
+"Wyświetlanie -> Okno i ustaw \"Szerokość\" na 480 oraz \"Wysokość\" na 720."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 #, fuzzy
 msgid "Organizing the project"
-msgstr "Organizacja Projektu"
+msgstr "Organizacja projektu"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
-#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -119,9 +116,8 @@ msgstr ""
 "plików w lewym górnym rogu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
-#, fuzzy
 msgid "Player scene"
-msgstr "Scena Player(Gracz)"
+msgstr "Scena Player (Gracz)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
 msgid ""
@@ -129,9 +125,9 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
-"Pierwszą wykoną sceną będzie ``Player``. Jedną z zalet stworzenia oddzielnej "
-"sceny Player jest to, że możemy ją przetestować oddzielnie, nawet zanim "
-"utworzyliśmy inne części gry."
+"Pierwszą sceną, którą stworzymy, będzie ``Player``. Jedną z zalet stworzenia "
+"oddzielnej sceny Player jest to, że możemy ją przetestować oddzielnie, nawet "
+"zanim utworzyliśmy inne części gry."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 #, fuzzy
@@ -155,7 +151,7 @@ msgid ""
 msgstr ""
 "Za pomocą ``Area2D`` możemy wykrywać obiekty, które zachodzą na siebie. "
 "Zmień jego nazwę na ``Player`` klikając na nazwę węzła. Jest to główny węzeł "
-"sceny. Możemy dodać dodatkowe węzły do odtwarzacza, aby zwiększyć jego "
+"sceny. Możemy dodać dodatkowe węzły do gracza, aby zwiększyć jego "
 "funkcjonalność."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:75
@@ -175,12 +171,14 @@ msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
-"Zapisz scenę. Kliknij Scena -> Zapisz lub naciśnij ``Ctrl+S`` w oknie "
-"Linuksa lub ``Command+S`` na komputerze Mac."
+"Zapisz scenę. Kliknij Scena -> Zapisz lub naciśnij ``Ctrl+S`` w Windowsie/"
+"Linuksie lub ``Command+S`` na komputerze Mac."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:84
 msgid "For this project, we will be following the Godot naming conventions."
 msgstr ""
+"Dla tego projektu, będziemy korzystać z konwencji nazewnictwa, typowych dla "
+"Godota."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:86
 #, fuzzy
@@ -199,14 +197,16 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Klasy, eksportowane zmienne i metody używają PascalCase, pola "
+"prywatne używają _camelCase, natomiast zmienne lokalne i parametry "
+"korzystają z camelCase (Więcej na :ref:`doc_c_sharp_styleguide`).  Zwróć "
+"szczególną uwagę na nazwy metod przy łączeniu sygnałów."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:97
-#, fuzzy
 msgid "Sprite animation"
-msgstr "Animacja Sprita"
+msgstr "Animacja węzła Sprite"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -274,7 +274,6 @@ msgid "When you're finished, your ``Player`` scene should look like this:"
 msgstr "Po zakończeniu, scena ``Player`` powinna wyglądać w ten sposób:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:139
-#, fuzzy
 msgid "Moving the player"
 msgstr "Poruszanie graczem"
 
@@ -285,8 +284,8 @@ msgid ""
 "Script\" button:"
 msgstr ""
 "Teraz musimy dodać funkcjonalność, której nie możemy uzyskać z wbudowanego "
-"węzła, więc dodamy skrypt. Kliknij na węzeł ``Player`` i przycisk \"Dodaj "
-"skrypt\":"
+"węzła, więc dodamy skrypt. Kliknij na węzeł ``Player``, a następnie kliknij "
+"przycisk \"Dodaj skrypt\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:147
 msgid ""
@@ -339,6 +338,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Jeżeli używasz C#m musisz (prze)budować projekt, jeśli chcesz zobaczyć "
+"nowowyeksportowane zmienne czy sygnały. Takie przebudowanie może zostać "
+"uruchomione ręcznie - w tym celu otwórz Panel Mono klikając na tekst \"Mono"
+"\", znajdujący się na dole okna edytora, a następnie kliknij przycisk "
+"\"Zbuduj projekt\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:194
 msgid ""
@@ -349,7 +353,6 @@ msgstr ""
 "jest dobrym momentem, aby ustalić rozmiar okna gry:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:210
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
@@ -359,19 +362,19 @@ msgstr ""
 "Teraz możemy użyć funkcji ``_process()`` do zdefiniowania, co gracz będzie "
 "robił. ``_process()`` jest wywoływany co każda klatkę, więc użyjemy go do "
 "aktualizacji elementów naszej gry, które, jak się spodziewamy, będą się "
-"często zmieniać. Zrobimy to tak:"
+"często zmieniać. W przypadku naszego gracza, musimy zrobić, co następuje:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:215
 msgid "Check for input."
-msgstr "Sprawdza dane wejściowe."
+msgstr "Sprawdzić dane wejściowe."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:216
 msgid "Move in the given direction."
-msgstr "Przesuwa się w określonym kierunku."
+msgstr "Przesunąć gracza w określonym kierunku."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:217
 msgid "Play the appropriate animation."
-msgstr "Odtwarza odpowiednią animację."
+msgstr "Odtworzyć odpowiednią animację."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:219
 #, fuzzy

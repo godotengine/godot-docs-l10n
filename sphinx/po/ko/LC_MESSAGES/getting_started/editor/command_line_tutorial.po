@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:4
 msgid "Command line tutorial"
-msgstr "명령 행(Command line) 튜토리얼"
+msgstr "명령줄(Command line) 튜토리얼"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
 msgid ""
@@ -28,10 +28,10 @@ msgid ""
 "command line. Given the engine relies on almost no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
-"일부 개발자들은 명령 행을 광범위하게 사용하는 것을 좋아합니다. Godot는 그들에"
-"게 친절하게 설계되었고, 명령 행에서 완전히 작업하는 순서가 있습니다. 엔진은 "
-"외부 라이브러리에 거의 의존하지 않아서, 초기화 시간이 매우 빠르고, 이 워크플"
-"로에 적합하게 만듭니다."
+"일부 개발자들은 명령줄을 광범위하게 사용하는 것을 좋아합니다. Godot는 그들에"
+"게 친절하게 설계되었고, 명령줄에서 완전히 작업하는 순서가 있습니다. 엔진은 외"
+"부 라이브러리에 거의 의존하지 않아서, 초기화 시간이 매우 빠르고, 이 워크플로"
+"에 적합하게 만듭니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
@@ -45,7 +45,7 @@ msgid ""
 "making sure it is called ``godot``."
 msgstr ""
 "Godot 바이너리를 PATH 환경 변수에 넣어서, ``godot``\\ 를 입력하면 어느 곳이"
-"든 쉽게 실행하도록 하는 것을 추천합니다. 리눅스에서 Godot 바이너리를 ``/usr/"
+"든 쉽게 실행하도록 하는 것을 추천합니다. Linux에서 Godot 바이너리를 ``/usr/"
 "local/bin``\\ 에 배치하여, ``godot``\\ 라고 부르게 하세요."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:23
@@ -90,8 +90,8 @@ msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
 msgstr ""
-"명령 행에서 프로젝트를 생성하려면 셸을 원하는 위치로 이동하고 project.godot "
-"파일을 작성하십시오."
+"명령줄에서 프로젝트를 생성하려면 셸을 원하는 위치로 이동하고 project.godot 파"
+"일을 작성하십시오."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "The project can now be opened with Godot."
@@ -99,7 +99,7 @@ msgstr "프로젝트는 이제 Godot로 열릴 수 있습니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "Running the editor"
-msgstr "에디터 실행하기"
+msgstr "편집기 실행하기"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid ""
@@ -107,7 +107,7 @@ msgid ""
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
-"에디터는 ``-e`` 플래그를 실행해서 실행됩니다. 작업은 프로젝트 디렉토리 또는 "
+"편집기는 ``-e`` 플래그를 실행해서 실행됩니다. 작업은 프로젝트 디렉토리 또는 "
 "하위 디렉토리에서 수행해야 합니다, 그렇지 않으면 명령이 무시되고 프로젝트 관"
 "리자가 나타납니다."
 
@@ -149,7 +149,7 @@ msgstr ""
 msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
-msgstr "특정 씬을 테스트 해야 하는 경우 씬을 명령 행으로 전달하십시오."
+msgstr "특정 씬을 테스트 해야 하는 경우 씬을 명령줄로 전달하세요."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "Debugging"
@@ -161,8 +161,8 @@ msgid ""
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for running either the game or a simple scene."
 msgstr ""
-"명령 행에서 에러를 계산하는 것은 그냥 지나칠 수 있기 때문에 어려운 작업이 될 "
-"수 있습니다. 이를 위해 명령 행 디버거는 ``-d``\\ 를 추가하여 제공합니다. 게임"
+"명령줄에서 에러를 계산하는 것은 그냥 지나칠 수 있기 때문에 어려운 작업이 될 "
+"수 있습니다. 이를 위해 명령줄 디버거는 ``-d``\\ 를 추가하여 제공합니다. 게임"
 "이나 간단한 씬을 실행하는 데 모두 사용됩니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
@@ -175,9 +175,9 @@ msgid ""
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
-"명령 행에서 프로젝트를 내보내는 것도 지원됩니다. 특히 연속적인 통합 설정에 유"
-"용합니다. 이 때문에 Godot의 헤드리스 버전은 (서버 빌드, 비디오 없음) 이상적입"
-"니다."
+"명령줄에서 프로젝트를 내보내는 것도 지원됩니다. 특히 연속적인 통합 설정에 유"
+"용합니다. Godot의 헤드리스 버전은 (서버 빌드, 비디오 없음) 이런 점에서 이상적"
+"입니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:141
 msgid ""
@@ -186,8 +186,8 @@ msgid ""
 "platforms from the command line, try exporting to a non-recognized platform "
 "and the full listing of platforms your configuration supports will be shown."
 msgstr ""
-"``--export`` 스위치가 인식하는 플랫폼 이름은 에디터의 내보내기 마법사에 표시"
-"된 것과 동일합니다. 명령 행에서 지원하는 플랫폼 목록을 얻기 위해, 인지하지 않"
+"``--export`` 스위치가 인식하는 플랫폼 이름은 편집기의 내보내기 마법사에 표시"
+"된 것과 동일합니다. 명령줄에서 지원하는 플랫폼 목록을 얻기 위해, 인지하지 않"
 "는 플랫폼으로 내보내기를 시도하고 그러면 구성이 지원되는 전체 플랫폼 목록이 "
 "나타날 것입니다."
 
@@ -209,7 +209,7 @@ msgid ""
 "feature is especially useful in large projects, for batch conversion of "
 "assets or custom import/export."
 msgstr ""
-"명령 행에서 .gd 스크립트를 간단하게 실행할 수 있습니다.특히 일괄 변환 또는 커"
+"명령줄에서 .gd 스크립트를 간단하게 실행할 수 있습니다.특히 일괄 변환 또는 커"
 "스텀 가져 오기/내보내기를 위한, 큰 프로젝트에서 유용합니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:157

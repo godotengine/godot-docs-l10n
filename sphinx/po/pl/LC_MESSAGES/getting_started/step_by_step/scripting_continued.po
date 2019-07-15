@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,12 +30,17 @@ msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"Wiele akcji w Godot jest uruchamianych poprzez wywołania zwrotne i funkcje "
+"wirtualne, dla tego nie ma też potrzeby pisać kodu, który działa bez przerwy."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
+"Jednakże często zdarza się, że skrypt musi być przetworzony co każdą klatkę. "
+"Istnieją dwa rodzaje przetwarzania: bezczynne (idle processing) oraz "
+"procesów fizycznych (physics processing)."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -44,26 +49,33 @@ msgid ""
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
+"Bezczynne przetwarzanie jest aktywowane, gdy w skrypcie znajduje się metoda :"
+"ref:`Node._process() <class_Node_method__process>`. Może być ono włączane i "
+"wyłączane za pomocą funkcji :ref:`Node.set_process() "
+"<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Ta metoda wykona się za każdym razem, kiedy rysowana jest klatka:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
+#, fuzzy
 msgid ""
-"It's important to bear in mind that the frequecy with which ``_process()`` "
+"It's important to bear in mind that the frequency with which ``_process()`` "
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"Trzeba pamiętać, że częstotliwość z jaką będzie się wykonywać metoda "
+"``_process()`` zależy od tego w ilu klatkach na sekundę (FPS) działa Twoja "
+"aplikacja. Ta wartość może się zmieniać w zależności od czasu i urządzenia."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"Parametr delta, to liczba zmiennoprzecinkowa, zawierająca czas w sekundach "
+"Parametr delta to liczba zmiennoprzecinkowa, zawierająca czas w sekundach, "
 "jaki upłynął od poprzedniego wywołania ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
@@ -115,8 +127,8 @@ msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Prostym sposobem sprawdzenia tego jest utworzenie sceny z pojedynczym węzłem "
-"Label, z następującym skryptem:"
+"Prostym sposobem sprawdzenia tego, jak działa funkcja ``_process()`` jest "
+"utworzenie sceny z pojedynczym węzłem Label, z następującym skryptem:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -144,9 +156,10 @@ msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"A drugą z poziomu kodu. Skrypt poniżej dodałby aktualny węzeł do grupy "
+"``enemies``, gdy tylko pojawi się w drzewie sceny."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
-#, fuzzy
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
@@ -165,18 +178,16 @@ msgstr ""
 "kodzie każdego członka grupy ``przeciwnicy``(enemies)."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
-#, fuzzy
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
-"Możliwe jest również uzyskanie pełnej listy węzłów ``wrogów`` przez "
-"wywołanie :ref:`SceneTree.get_nodes_in_group() "
+"Możliwe jest również uzyskanie pełnej listy węzłów z grupy ``wrogowie`` "
+"przez wywołanie :ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -307,9 +318,10 @@ msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
+"Wstępne ładowanie (preloading) może być wygodniejsze, gdyż ma miejsce "
+"podczas parsowania (tylko GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
-#, fuzzy
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
@@ -337,7 +349,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "Rejstrowanie skryptów jako klasy"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
 msgid ""
@@ -355,16 +367,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
-#, fuzzy
 msgid "In Godot 3.1:"
-msgstr "Hej, Godette v3.11"
+msgstr "W Godot 3.1:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"Tylko GDScript i NativeScript, tj. C++ i inne języki wspierane przez "
+"GDNative, mogą rejestrować skrypty."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
 msgid "Only GDScript creates global variables for each named script."
-msgstr ""
+msgstr "Tylko GDScript tworzy globalne zmienne dla każdego nazwanego skryptu."

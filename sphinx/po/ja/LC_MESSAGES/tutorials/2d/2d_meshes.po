@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:4
+msgid "2D meshes"
+msgstr "2Dメッシュ"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:7
+msgid "Introduction"
+msgstr "はじめに"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:9
+msgid ""
+"In 3D, meshes are used to display the world. In 2D, they are rare as images "
+"are used more often. Godot's 2D engine is a pure two dimensional engine, so "
+"it can't really display 3D meshes directly (although it can be done via "
+"``Viewport`` and ``ViewportTexture``)."
+msgstr ""
+"3Dでは、メッシュを使用してワールドを表示します。2Dでは、イメージが頻繁に使用"
+"されるため、これらはまれです。Godotの2Dエンジンは純粋な二次元エンジンなので、"
+"3Dメッシュを直接表示することはできません(これは ``Viewport`` と"
+"``ViewportTexture`` を介して行うことができます）。"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:13
+msgid ""
+"If you are interested in displaying 3D meshes on a 2D viewport, see the :ref:"
+"`doc_viewport_as_texture` tutorial."
+msgstr ""
+"3Dメッシュを2Dビューポートに表示する方法については、 チュートリアルの :ref:"
+"`doc_viewport_as_texture` を参照してください。"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:15
+msgid ""
+"2D meshes are meshes that contain two dimensional geometry (Z can be omitted "
+"or ignored) instead of 3D. You can experiment creating them yourself using "
+"``SurfaceTool`` from code and displaying them in a ``MeshInstance2D`` node."
+msgstr ""
+"2Dメッシュは、3Dではなく二次元ジオメトリ(Z軸は省略または無視できます)を含む"
+"メッシュです。 ``SurfaceTool`` を使用してコードから作成し、 "
+"``MeshInstance2D`` 2Dノードに表示することもできます。"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:18
+msgid ""
+"Currently, the only way to generate a 2D mesh within the editor is by either "
+"importing an OBJ file as a mesh, or converting it from a Sprite."
+msgstr ""
+"現在、エディタ内で2Dメッシュを生成する唯一の方法は、OBJファイルをメッシュとし"
+"てインポートするか、それをSpriteから変換することです。"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:21
+msgid "Optimizing pixels drawn"
+msgstr "描画するピクセルの最適化"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:23
+msgid ""
+"This workflow is useful for optimizing 2D drawing in some situations. When "
+"drawing large images with transparency, Godot will draw the whole quad to "
+"the screen. The large transparent areas will still be drawn."
+msgstr ""
+"このワークフローは、2D図面を最適化する場合に便利です。大きなイメージを透明で"
+"描画する場合、Godotは四角形全体を画面に描画します。大きな透明領域は描画されま"
+"す。"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:25
+msgid ""
+"This can affect performance, especially on mobile devices, when drawing very "
+"large images (generally screen sized), or layering multiple images on top of "
+"each other with large transparent areas (for example, when using "
+"``ParallaxBackground``)."
+msgstr ""
+"ただし、非常に大きな画像（通常は画面サイズ）を描画するとき、または大きな透明"
+"領域を使用して複数の画像を重ね合わせるとき(特に ``ParallaxBackground`` を使用"
+"するとき)、特にモバイルデバイスでパフォーマンスに影響を与える可能性がありま"
+"す。"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:28
+msgid ""
+"Converting to a mesh will ensure that only the opaque parts will be drawn "
+"and the rest will be ignored."
+msgstr "メッシュに変換すると、不透明な部分だけが描画され、残りは無視されます。"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:31
+msgid "Converting Sprites to 2D meshes"
+msgstr "スプライトを2Dメッシュに変換"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:33
+msgid ""
+"You can take advantage of this optimization by converting a ``Sprite`` to a "
+"``MeshInstance2D``. Start with an image that contains large amounts of "
+"transparency on the edges, like this tree:"
+msgstr ""
+"``Sprite`` を ``MeshInstance2D`` に変換することでこの最適化を利用できます。下"
+"記の木の画像のように、端に大量の透過部分を含む画像から始めます:"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:38
+msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
+msgstr ""
+"それを `` Sprite`` に入れて、メニューから \"Convert to 2D Mesh\" を選択してく"
+"ださい:"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:42
+msgid ""
+"A dialog will appear, showing a preview of how the 2D mesh will be created:"
+msgstr "ダイアログが表示され、2Dメッシュの作成方法のプレビューが表示されます:"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:46
+msgid ""
+"The default values are good enough for many cases, but you can change growth "
+"and simplification according to your needs:"
+msgstr ""
+"大体の場合はデフォルト値で十分ですが、必要に応じて拡大(growth)や単純化"
+"(simplification)を変更できます:"
+
+#: ../../docs/tutorials/2d/2d_meshes.rst:50
+msgid ""
+"Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
+"replaced:"
+msgstr "最後に、 ``Convert 2D Mesh`` を押すとSpriteが置き換えられます:"

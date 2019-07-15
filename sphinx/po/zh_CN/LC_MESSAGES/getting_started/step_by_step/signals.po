@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,16 +45,15 @@ msgstr ""
 "observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
-"信号是一种 *解耦* 游戏对象的方法，从而使代码更有条理，更易于管理。他们可以对"
-"任何感兴趣的可以订阅的对象发出信号和响应，而不是强制游戏对象去期望其他对象始"
-"终存在。"
+"信号是一种 *解耦* 游戏对象的方法，从而使代码更有条理，更易于管理。它们可以发"
+"送，任何关注对象都能订阅并响应的信号，而不是强制游戏对象去期望其他对象始终存"
+"在。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
@@ -67,16 +66,14 @@ msgid "Timer example"
 msgstr "计时器示例"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
 "<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
-"要查看信号是如何工作的，让我们尝试使用 :ref:`Timer <class_Timer>` 节点。使用"
-"一个节点和两个子节点来创建一个新场景:一个是:Timer和一个 :ref:`Sprite "
-"<class_Sprite>`。您可以使用Godot图标作为Sprite的纹理，或者其他您喜欢的任意图"
-"像。"
+"要查看信号是如何工作的，我们可以尝试使用 :ref:`Timer <class_Timer>` 节点。使"
+"用一个节点和两个子节点来创建一个新场景：一个Timer，和一个 :ref:`Sprite "
+"<class_Sprite>` 。在场景驳接（ Scene dock）中，重命名节点为TimerExample。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -219,9 +216,8 @@ msgstr ""
 "的方式进行连接。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "要通过代码发出信号，使用 ``emit`` 函数:"
+msgstr "要通过代码发出信号，使用 ``emit_signal`` 函数:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:208
 msgid "Conclusion"

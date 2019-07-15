@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,11 +109,11 @@ msgstr "Godot는 어떤 플랫폼을 지원하나요?"
 
 #: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
-msgstr "**에디터의 경우:**"
+msgstr "**편집기의 경우:**"
 
 #: ../../docs/about/faq.rst:35
 msgid "Windows"
-msgstr "윈도우"
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 msgid "macOS"
@@ -121,7 +121,7 @@ msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
-msgstr "X11 (리눅스, \\*BSD)"
+msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:39
 msgid "**For exporting your games:**"
@@ -129,11 +129,11 @@ msgstr "**내보내는 게임들의 경우:**"
 
 #: ../../docs/about/faq.rst:41
 msgid "Windows (and UWP)"
-msgstr "윈도우 (그리고 UWP)"
+msgstr "Windows (그리고 UWP)"
 
 #: ../../docs/about/faq.rst:44
 msgid "Android"
-msgstr "안드로이드"
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:45
 msgid "iOS"
@@ -154,7 +154,7 @@ msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
-"또한 Raspberry Pi같은, 리눅스의 ARM 기반 시스템에서도 Godot를 성공적으로 사용"
+"또한 Raspberry Pi같은, Linux의 ARM 기반 시스템에서도 Godot를 성공적으로 사용"
 "했다는 일부 사용자들의 보고가 있습니다."
 
 #: ../../docs/about/faq.rst:54
@@ -372,7 +372,7 @@ msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
-"코드 완성, 실시간 편집 등을 지원하기 위한 코드 에디터와의 결합이 (전부) 까다"
+"코드 완성, 실시간 편집 등을 지원하기 위한 코드 편집기와의 결합이 (전부) 까다"
 "롭습니다. GDScript는 이 부분이 아주 잘 지원됩니다."
 
 #: ../../docs/about/faq.rst:142
@@ -465,7 +465,7 @@ msgstr ""
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
-msgstr "다양한 해상도와 화면비에 대응하려면 어떻게 에셋을 만들어야 할까요?"
+msgstr "다양한 해상도와 화면비에 대응하려면 어떻게 애셋을 만들어야 할까요?"
 
 #: ../../docs/about/faq.rst:181
 msgid ""
@@ -478,11 +478,10 @@ msgid ""
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
 "이 질문은 자주 나타났고 애플이 기기의 해상도를 원래 두배로 했기 때문에 나온 "
-"오해이므로 다행일지도 모릅니다. 이때문에 사람들이 같은 에셋을 다른 해상도로 "
+"오해이므로 다행일지도 모릅니다. 이때문에 사람들이 같은 애셋을 다른 해상도로 "
 "만드는 것이 좋은 생각으로 여기고, 많은 사람들이 그렇게 했습니다. 그것은 원래 "
 "애플 기기에서만 효과가 나타났습니다, 하지만 다양한 해상도와 종횡비를 가진 몇"
-"몇 안드로이드와 애플 기기가 만들어졌습니다, 매우 큰 화면과 해상도를 가지면서"
-"요."
+"몇 Android와 애플 기기가 만들어졌습니다, 매우 큰 화면과 해상도를 가지면서요."
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -507,7 +506,7 @@ msgstr ""
 "게임을 위한 기본 해상도를 고르세요. 해상도가 2K까지 올라가는 기기나 400p까지 "
 "내려가는 기기가 있더라도, 여러분들의 기기 안에 있는 정규 하드웨어 스케일링은 "
 "이 점을 퍼포먼스 비용으로 다루진 않을 겁니다. 대부분의 선택은 1080p "
-"(1920x1080)이나 720p (1280x720) 근처입니다. 해상도가 높을수록, 에셋은 더 커지"
+"(1920x1080)이나 720p (1280x720) 근처입니다. 해상도가 높을수록, 애셋은 더 커지"
 "고, 더 많은 메모리를 먹고 더 긴 로딩이 걸릴 것이니 명심하십시오."
 
 #: ../../docs/about/faq.rst:201
@@ -566,8 +565,8 @@ msgid ""
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Godot 에디터 플러그인 제작이나 추가적인 언어 지원을 하고 싶으시다면, :ref:`에"
-"디터 플러그인 <doc_making_plugins>`\\ 과 tool 스크립트를 참고하세요."
+"Godot 편집기 플러그인 제작이나 추가적인 언어 지원을 하고 싶으시다면, :ref:`편"
+"집기 플러그인 <doc_making_plugins>`\\ 과 tool 스크립트를 참고하세요."
 
 #: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
@@ -617,9 +616,9 @@ msgid ""
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
 "처음으로 시작해야 할 부분은 `issues <https://github.com/godotengine/godot/"
-"issues>`_ 입니다. 당신이 공감할만한 이슈를 찾으신 다음, 변경사항과 함께 Pull "
-"Request (PR)를 포크 요청, 수정 및 제출하는 법을 배우기 위해 `기여하는 방법 "
-"<https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
+"issues>`_\\ 입니다. 당신이 공감할만한 이슈를 찾으신 다음, 변경사항과 함께 "
+"Pull Request (PR)를 포크 요청, 수정 및 제출하는 법을 배우기 위해 `기여하는 방"
+"법 <https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
 "md#contributing-pull-requests>`_ 가이드를 진행하세요."
 
 #: ../../docs/about/faq.rst:249
@@ -639,7 +638,7 @@ msgid ""
 "community members."
 msgstr ""
 "Godot로 아이디어를 가져오는 것이, 마치 거대한 핵심 변화를 가져오거나, 다른 종"
-"류의 게임 엔진을 흉내 내거나, 에디터에 내장하길 원하는 대체 워크플로가 생기"
+"류의 게임 엔진을 흉내 내거나, 편집기에 내장하길 원하는 대체 워크플로가 생기"
 "는 것 같아서, 매력적일 것이라고 생각합니다. 이것들은 위대하고 그래서 우리는 "
 "그러한 사람들이 기여하길 원하는 것에 감사하고 있습니다, 하지만 Godot의 초점"
 "은 `로드맵 \n"

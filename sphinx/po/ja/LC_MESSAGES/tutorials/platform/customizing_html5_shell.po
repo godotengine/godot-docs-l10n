@@ -1,0 +1,558 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:4
+msgid "Customizing the Web export HTML page"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:6
+msgid ""
+"Rather than the default HTML page that comes with the export templates, it "
+"is also possible to use a custom HTML page. This allows drastic "
+"customization of the final web presentation and behavior. The path to the "
+"custom HTML page is specified in the export options as ``Html/Custom Html "
+"Shell``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:11
+msgid ""
+"The default HTML page is available in the Godot Engine repository at `/misc/"
+"dist/html/full-size.html <https://github.com/godotengine/godot/blob/master/"
+"misc/dist/html/full-size.html>`__. Some simple use-cases where customizing "
+"the default page is useful include:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:15
+msgid "Loading files from a different directory"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:16
+msgid "Loading a ``.zip`` file instead of a ``.pck`` file as main pack"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:17
+msgid "Loading engine files from a different directory than the main pack file"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:18
+msgid ""
+"Adding a click-to-play button so games can be started in full-screen mode"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:19
+msgid ""
+"Loading some extra files before the engine starts, so they are available in "
+"the file system later"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:21
+msgid ""
+"Passing custom \"command line\" arguments, e.g. ``-s`` to start a MainLoop "
+"script"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:23
+msgid ""
+"Another sample HTML page is available at `/misc/dist/html/fixed-size.html "
+"<https://github.com/godotengine/godot/blob/master/misc/dist/html/fixed-size."
+"html>`__. This page uses a fixed size canvas with an output widget below. "
+"However, the F12 browser console should be preferred as it can display "
+"additional information, such as WebGL errors."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:29
+msgid "Placeholder substitution"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:31
+msgid ""
+"When exporting the game, several placeholders in the HTML page are replaced "
+"with values depending on the export:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
+msgid "Placeholder"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
+msgid "Substituted by"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:37
+msgid "``$GODOT_BASENAME``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:37
+msgid ""
+"Basename of exported files without suffixes, e.g. ``game`` when exporting "
+"``game.html``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
+msgid "``$GODOT_DEBUG_ENABLED``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
+msgid "``true`` if debugging, ``false`` otherwise"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
+msgid "``$GODOT_HEAD_INCLUDE``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
+msgid ""
+"Custom string to include just before the end of the HTML ``<head>`` element"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:46
+msgid ""
+"The HTML file must evaluate the JavaScript file ``$GODOT_BASENAME.js``. This "
+"file defines a global ``Engine`` object used to start the engine, :ref:`see "
+"below <doc_javascript_engine_object>` for details."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:50
+msgid ""
+"The boot splash image is exported as ``$GODOT_BASENAME.png`` and can be used "
+"e.g. in ``<img />`` elements."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:53
+msgid ""
+"``$GODOT_DEBUG_ENABLED`` can be useful to optionally display e.g. an output "
+"console or other debug tools."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:56
+msgid ""
+"``$GODOT_HEAD_INCLUDE`` is replaced with the string specified by the export "
+"option ``Html/Head Include``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:62
+msgid "The ``Engine`` object"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:64
+msgid ""
+"The JavaScript global object ``Engine`` is defined by ``$GODOT_BASENAME.js`` "
+"and serves as an interface to the engine start-up process."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:67
+msgid ""
+"The API is based on and requires basic understanding of `Promises <https://"
+"developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises>`__."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:69
+msgid "The object itself has only the following methods:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:73
+msgid "Load the engine from the passed base path."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:0
+msgid "Arguments"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:75
+msgid "Base path of the engine to load."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:76
+msgid "Promise which resolves once the engine is loaded."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:80
+msgid "Unload the engine to free memory."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:82
+msgid ""
+"This is called automatically once the engine is started unless explicitly "
+"disabled using :js:func:`engine.setUnloadAfterInit`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:87
+msgid "Check whether WebGL is available."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:89
+msgid "The major WebGL version to check for. Defaults to 1 for *WebGL 1.0*."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:92
+msgid ""
+"``true`` if the given major version of WebGL is available, ``false`` "
+"otherwise."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:98
+msgid ""
+"When loading the engine, the filename extension of the WebAssembly module is "
+"assumed to be ``wasm``. This function allows usage of an alternate extension."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:108
+msgid ""
+"This is useful for outdated hosts that only accept uploads of files with "
+"certain filename extensions."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:111
+msgid "Filename extension without preceding dot."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:115
+msgid ""
+"Depending on the host, using an alternate filename extension can prevent "
+"some start-up optimizations. This occurs when the file is delivered with a "
+"MIME-type other than :mimetype:`application/wasm`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:120
+msgid "Starting an ``Engine`` instance"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:122
+msgid ":js:class:`Engine` also acts a class:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:126
+msgid "An instance of the engine that can be started, usually a game."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:128
+msgid "Instantiate the class using the ``new`` operator:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:134
+msgid ""
+"This yields an :js:class:`Engine` instance, referred to as ``engine`` with a "
+"lower-case ``e`` from here."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:137
+msgid ""
+"To start such an instance, the global ``Engine`` object must be loaded, then "
+"the ``engine`` instance must be initialized and finally started."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:142
+msgid ""
+"Initialize the instance. The instance can then be started with one of the "
+"``start`` functions, usually :js:func:`engine.startGame`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:145
+msgid ""
+"The base path to the engine, same as in :js:func:`Engine.load`. Must be "
+"passed only if the engine hasn't been loaded yet."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:149
+msgid "Promise that resolves once the engine is loaded and initialized."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:153
+msgid ""
+"Load a file so it is available in the file system once the instance runs. "
+"Must be called **before** starting the instance."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:156
+msgid ""
+"If type is string, the file will be loaded from that path.  If type is "
+"``ArrayBuffer`` or a view on one, the buffer will used as the content of the "
+"file."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:157
+msgid "If type is string, the file will be loaded from that path."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:159
+msgid ""
+"If type is ``ArrayBuffer`` or a view on one, the buffer will used as the "
+"content of the file."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:162
+msgid ""
+"Path by which the file will be available. Mandatory if ``file`` is not a "
+"string. If not passed, the path is derived from the URL of the loaded file."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:167
+msgid "Promise that resolves once the file is preloaded."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:171
+msgid ""
+"Starts the instance of the engine, using the passed strings as command line "
+"arguments. This allows great control over how the engine is started, but "
+"usually the other methods starting with ``engine.start`` are simpler and "
+"should be used instead."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:176
+msgid ""
+"If the instance has not yet been initialized with :js:func:`engine.init`, it "
+"will be."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:179
+msgid "The engine must be loaded beforehand."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:181
+msgid ""
+"Requires that the engine has been loaded, and that a canvas can be found on "
+"the page."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:184
+msgid "Command line arguments."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:186
+msgid "Promise that resolves once the engine started."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
+msgid ""
+"Initializes the engine if not yet initialized and starts the game with the "
+"main pack loaded from the passed URL."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:193
+msgid ""
+"If the engine isn't loaded yet, the base path of the passed URL will be used "
+"to load the engine."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:196
+msgid ""
+"This function ignores overrides of filenames and their extensions to start "
+"only the main pack passed as argument."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:199
+msgid ""
+"Path to the main pack to start. Also used as base path to load the engine if "
+"not loaded already."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:203
+msgid "Promise that resolves once the game started."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:206
+msgid "Configuring start-up behaviour"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:208
+msgid ""
+"Beside starting the engine, other methods of the engine instance allow "
+"configuring the behavior:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:213
+msgid ""
+"Specify whether the Engine will be unloaded automatically after the instance "
+"is initialized."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:216
+msgid ""
+"This frees browser memory by unloading files that are no longer needed once "
+"the instance is initialized. However, if more instances of the engine will "
+"be started, the Engine will have to be loaded again."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:220
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:239
+msgid "Enabled by default."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:222
+msgid ""
+"``true`` if the engine shall be unloaded after initializing, ``false`` "
+"otherwise."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:228
+msgid "Specify a canvas to use."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:230
+msgid "By default, the first canvas element on the page is used for rendering."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:232
+msgid "The canvas to use."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:236
+msgid ""
+"Specifies whether the canvas will be resized to the width and height "
+"specified in the project settings on start."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:241
+msgid "``true`` if the canvas shall be resized on start, ``false`` otherwise."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:246
+msgid ""
+"By default, the engine will try to guess the locale to use from the "
+"JavaScript environment. It is usually preferable to use a server-side user-"
+"specified locale, or at least use the locale requested in the HTTP ``Accept-"
+"Language`` header. This method allows specifying such a custom locale string."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:252
+msgid "For example, with PHP:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:258
+#, fuzzy
+msgid "Locale."
+msgstr "ロケール"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:261
+msgid "List of :ref:`locales <doc_locales>`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:265
+msgid "Specify the virtual filename of the executable."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:267
+msgid ""
+"A real executable file doesn't exist for the HTML5 platform. However, a "
+"virtual filename is stored by the engine for compatibility with other "
+"platforms."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:271
+msgid ""
+"By default, the base name of the loaded engine files is used. This method "
+"allows specifying another name."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:274
+msgid ""
+"This affects the output of :ref:`OS.get_executable_path() "
+"<class_OS_method_get_executable_path>` and the automatically started main "
+"pack, :file:`{ExecutableName}.pck`."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:277
+msgid "Executable name."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:280
+msgid "Customizing the presentation"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:282
+msgid "The following methods are used to implement the presentation:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:286
+msgid "Set the callback for displaying download progress."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:288
+msgid ""
+"Callback called once per frame with two number arguments: bytes loaded so "
+"far, and total bytes to load."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:299
+msgid "If the total is 0, it couldn't be calculated. Possible reasons include:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:302
+msgid "Files are delivered with server-side chunked compression"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:303
+msgid "Files are delivered with server-side compression on Chromium"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:304
+msgid ""
+"Not all file downloads have started yet (usually on servers without multi-"
+"threading)"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:308
+msgid ""
+"For ease of use, the callback is only called once per frame, so that usage "
+"of ``requestAnimationFrame()`` is not necessary."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:313
+msgid "Specify the standard output stream callback."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:315
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:334
+msgid "Callback function called with one argument, the string to print."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:325
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:344
+msgid ""
+"This method should usually only be used in debug pages. The ``"
+"$GODOT_DEBUG_ENABLED`` placeholder can be used to check for this."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:328
+msgid "By default, ``console.log()`` is used."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:332
+msgid "Specify the standard error stream callback."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:347
+msgid "By default, ``console.warn()`` is used."
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:350
+msgid "Accessing the Emscripten ``Module``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:352
+msgid ""
+"If you know what you're doing, you can access the runtime environment "
+"(Emscripten's ``Module``) as ``engine.rtenv``. Check the official Emscripten "
+"documentation for information on how to use it: https://kripken.github.io/"
+"emscripten-site/docs/api_reference/module.html"
+msgstr ""

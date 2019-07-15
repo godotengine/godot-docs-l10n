@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,8 +88,8 @@ msgid ""
 "extended to animated textures via spritesheet). The texture is set via the "
 "relevant texture property:"
 msgstr ""
-"입자 시스템은 단일 텍스쳐를 사용합니다(in the future this might be extended "
-"to animated textures via spritesheet). 텍스쳐는 관련 텍스쳐 속성을 통해 설정"
+"입자 시스템은 단일 텍스처를 사용합니다(in the future this might be extended "
+"to animated textures via spritesheet). 텍스처는 관련 텍스처 속성을 통해 설정"
 "합니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:53
@@ -481,7 +481,7 @@ msgid ""
 "from textures in your project."
 msgstr ""
 "ParticlesMaterials는 입자가 방출되는 영역과 방향을 결정할 수 있는 에미션 마스"
-"크(Emission Mask)를 설정할 수 있습니다. 프로젝트 내 텍스쳐로 생성될 수 있습니"
+"크(Emission Mask)를 설정할 수 있습니다. 프로젝트 내 텍스처로 생성될 수 있습니"
 "다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:294
@@ -498,7 +498,7 @@ msgstr "메뉴를 열고 \"에미션 마스크 불러오기\"를 선택하세요
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:303
 msgid "Then select which texture you want to use as your mask:"
-msgstr "그런 다음 마스크로 쓸 텍스쳐를 선택합니다:"
+msgstr "그런 다음 마스크로 쓸 텍스처를 선택합니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:307
 msgid "A dialog box with several settings will appear."
@@ -510,19 +510,19 @@ msgstr "에미션 마스크(Emission Mask)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:312
 msgid "Three types of emission masks can be generated from a texture:"
-msgstr "텍스쳐로 생성될 수 있는 에미션 마스크는 세 가지 유형이 있습니다:"
+msgstr "텍스처로 생성될 수 있는 에미션 마스크는 세 가지 유형이 있습니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:314
 msgid ""
 "Solid Pixels: Particles will spawn from any area of the texture, excluding "
 "transparent areas."
 msgstr ""
-"Solid Pixels: 텍스쳐의 투명한 부분을 제외한 모든 영역에서 입자가 생겨납니다."
+"Solid Pixels: 텍스처의 투명한 부분을 제외한 모든 영역에서 입자가 생겨납니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:319
 msgid ""
 "Border Pixels: Particles will spawn from the outer edges of the texture."
-msgstr "Border Pixels: 텍스쳐의 바깥쪽 가장자리에 입자가 생겨납니다."
+msgstr "Border Pixels: 텍스처의 바깥쪽 가장자리에 입자가 생겨납니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:323
 msgid ""

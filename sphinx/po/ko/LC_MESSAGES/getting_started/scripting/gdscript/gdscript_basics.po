@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -337,7 +337,7 @@ msgstr "tool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "Executes the script in the editor."
-msgstr "에디터에서 스크립트를 실행합니다."
+msgstr "편집기에서 스크립트를 실행합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "signal"
@@ -408,7 +408,7 @@ msgid ""
 "Saves a variable along with the resource it's attached to and makes it "
 "visible and modifiable in the editor."
 msgstr ""
-"첨부된 리소스를 변수와 함께 저장하고 에디터에서 변수를 표시하고 수정할 수 있"
+"첨부된 리소스를 변수와 함께 저장하고 편집기에서 변수를 표시하고 수정할 수 있"
 "게 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
@@ -425,7 +425,7 @@ msgstr "breakpoint"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "Editor helper for debugger breakpoints."
-msgstr "디버거 중단점을 위한 에디터 도우미."
+msgstr "디버거 중단점을 위한 편집기 도우미."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "preload"
@@ -707,11 +707,11 @@ msgstr "할당, 최하위 우선 순위"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "Literals"
-msgstr "상수(Literal)"
+msgstr "리터럴(Literal)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:298
 msgid "**Literal**"
-msgstr "**상수**"
+msgstr "**리터럴**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:298
 msgid "**Type**"
@@ -723,7 +723,7 @@ msgstr "``45``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:300
 msgid "Base 10 integer"
-msgstr "기본 10 정수"
+msgstr "기본 10진법 정수"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:302
 msgid "``0x8F51``"
@@ -731,7 +731,7 @@ msgstr "``0x8F51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:302
 msgid "Base 16 (hex) integer"
-msgstr "기본 16 (hex) 정수"
+msgstr "기본 16진법 (hex) 정수"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:304
 msgid "``3.14``, ``58.1e-10``"
@@ -771,7 +771,7 @@ msgstr "``$NodePath``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:312
 msgid "Shorthand for ``get_node(\"NodePath\")``"
-msgstr "``get_node(\"NodePath\")`` 의 속기"
+msgstr "``get_node(\"NodePath\")``\\ 의 속기"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:316
 msgid "Comments"
@@ -838,7 +838,7 @@ msgstr "bool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:361
 msgid "The Boolean data type can only contain ``true`` or ``false``."
-msgstr "불 데이터 타입으로 ``true`` 나 ``false`` 만을 가지고 있습니다."
+msgstr "불리언 데이터 타입으로 ``true`` 아니면 ``false`` 값만 가지고 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:364
 msgid "int"
@@ -848,7 +848,8 @@ msgstr "int"
 msgid ""
 "The integer data type can only contain integer numbers, (both negative and "
 "positive)."
-msgstr "정수 데이터 타입은 오직 정수만 가질 수 있습니다, (음수와 양수 둘 다)."
+msgstr ""
+"정수 데이터 타입은 오직 정수 값만 가질 수 있습니다, (음수와 양수 둘 다)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 msgid "float"
@@ -869,10 +870,10 @@ msgid ""
 "wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript supports :ref:`format "
 "strings aka printf functionality <doc_gdscript_printf>`."
 msgstr ""
-"`유니 코드 형식 <https://en.wikipedia.org/wiki/Unicode>`_ 에 있는 문자열. 문"
-"자열은 `표준 C 이스케이프 시퀀스 <https://en.wikipedia.org/wiki/"
-"Escape_sequences_in_C>`_ 를 가질 수 있습니다. GDScript는 :ref:`형식 문자열 일"
-"명 printf 기능 <doc_gdscript_printf>` 을 지원합니다."
+"`유니 코드 형식 <https://ko.wikipedia.org/wiki/Unicode>`_\\ 에 있는 문자열. "
+"문자열은 `표준 C 이스케이프 시퀀스 <https://en.wikipedia.org/wiki/"
+"Escape_sequences_in_C>`_\\ 를 가질 수 있습니다. GDScript는 :ref:`형식 문자열 "
+"printf 기능 <doc_gdscript_printf>`\\ 을 지원합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:383
 msgid "Vector built-in types"
@@ -887,8 +888,8 @@ msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as "
 "array."
 msgstr ""
-"2D 벡터 타입으로 ``x`` 와 ``y`` 필드를 가지고 있습니다. 배열로 접근될 수도 있"
-"습니다."
+"2D 벡터 타입으로 ``x``\\ 와 ``y`` 필드를 가지고 있습니다. 배열로 액세스할 수"
+"도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid ":ref:`Rect2 <class_Rect2>`"
@@ -943,8 +944,8 @@ msgid ""
 "Quaternion is a datatype used for representing a 3D rotation. It's useful "
 "for interpolating rotations."
 msgstr ""
-"사원수(Quaternion)는 3D 회전을 표현하기 위해 사용되는 데이터 타입입니다. 회전"
-"을 보간하기에 유용합니다."
+"사원수(Quaternion)는 3D 회전을 표현하기 위해 사용되는 데이터 타입입니다. 회"
+"전 값을 보간하기에 유용합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:421
 msgid ":ref:`AABB <class_AABB>`"
@@ -969,8 +970,8 @@ msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
 msgstr ""
-"3x3 행렬로 3D 회전과 규모에 사용됩니다. 3 개의 벡터 필드 (``x``, ``y`` 그리"
-"고 ``z``)를 가지며 3D 벡터의 배열로 접근될 수도 있습니다."
+"3x3 행렬로 3D 회전과 규모에 사용됩니다. 3개의 벡터 필드 (``x``, ``y`` 그리고 "
+"``z``)를 가지며 3D 벡터의 배열로 액세스할 수도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:435
 msgid ":ref:`Transform <class_Transform>`"
@@ -980,8 +981,8 @@ msgstr ":ref:`Transform <class_Transform>`"
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
-"3D 변형(Transform)으로 기반 필드인 ``basis`` 와 Vector3 필드인 ``origin`` 을 "
-"갖습니다."
+"3D 변형(Transform)으로 기반 필드인 ``basis``\\ 와 Vector3 필드인 ``origin``"
+"\\ 을 갖습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:441
 msgid "Engine built-in types"
@@ -997,7 +998,7 @@ msgid ""
 "be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
 msgstr ""
 "색상 데이터 타입으로 ``r``, ``g``, ``b``, 그리고 ``a`` 필드를 갖습니다. 색조/"
-"채도/색가를 위한 ``h``, ``s``, 그리고 ``v`` 로 접근될 수도 있습니다."
+"채도/명도를 위한 ``h``, ``s``, 그리고 ``v``\\ 로 액세스할 수도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:450
 msgid ":ref:`NodePath <class_NodePath>`"
@@ -1008,8 +1009,8 @@ msgid ""
 "Compiled path to a node used mainly in the scene system. It can be easily "
 "assigned to, and from, a String."
 msgstr ""
-"주로 씬 시스템에 사용되는 노드로 컴파일 된 경로. 쉽게 문자열에 할당하거나 문"
-"자열이 될 수 있습니다."
+"노드로 컴파일 된 경로로 주로 씬 시스템에 사용됩니다. 쉽게 문자열에 지정하거"
+"나 문자열이 될 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:456
 msgid ":ref:`RID <class_RID>`"
@@ -1031,11 +1032,11 @@ msgstr "내장 타입이 아닌 것을 위한 기본 클래스."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:466
 msgid "Container built-in types"
-msgstr "컨테이너 내장 타입"
+msgstr "컨테이너(Container) 내장 타입"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:469
 msgid ":ref:`Array <class_Array>`"
-msgstr ":ref:`Array <class_Array>`"
+msgstr ":ref:`Array <class_Array>`\\ (배열)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:471
 msgid ""
@@ -1046,8 +1047,8 @@ msgid ""
 msgstr ""
 "임의 객체 타입의 일반적인 열로, 다른 배열이다 딕셔너리를 포함하고 있습니다 "
 "(아래를 참고하세요). 배열의 크기는 동적으로 변경할 수 있습니다. 배열은 인덱"
-"스 ``0`` 부터 인덱스가 붙기 시작합니다. Godot 2.1부터는, 끝에서 세도록 하기 "
-"위해, Python처럼 인덱스가 음수일 수도 있습니다."
+"스 ``0``\\ 부터 인덱스가 붙기 시작합니다. Godot 2.1부터는, 끝에서 세도록 하"
+"기 위해, Python처럼 인덱스가 음수일 수도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:485
 msgid ""
@@ -1070,7 +1071,7 @@ msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
 msgstr ""
-":ref:`PoolByteArray <class_PoolByteArray>`: 비트의 배열 (0부터 255까지의 정"
+":ref:`PoolByteArray <class_PoolByteArray>`: 바이트의 배열 (0부터 255까지의 정"
 "수)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:493
@@ -1111,7 +1112,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:501
 msgid ":ref:`Dictionary <class_Dictionary>`"
-msgstr "딕셔너리 (:ref:`Dictionary <class_Dictionary>`)"
+msgstr ":ref:`Dictionary <class_Dictionary>`\\ (딕셔너리)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:503
 msgid "Associative container which contains values referenced by unique keys."
@@ -1124,9 +1125,9 @@ msgid ""
 "write). Note however that like any GDScript identifier, keys written in this "
 "form cannot start with a digit."
 msgstr ""
-"Lua 스타일의 테이블 문법 역시 지원됩니다. Lua 스타일은 ``:`` 대신 ``=`` 를 사"
-"용하고 (쓰는 것을 적게 만들기 위해) 문자열 키를 표시하기 위해 따옴표를 사용하"
-"지 않습니다.\n"
+"Lua 스타일의 테이블 문법 역시 지원됩니다. Lua 스타일은 ``:`` 대신 ``=``\\ 를 "
+"사용하고 (쓰는 것을 적게 만들기 위해) 문자열 키를 표시하기 위해 따옴표를 사용"
+"하지 않습니다.\n"
 "하지만 모든 GDScript 식별자와 마찬가지로, 이 양식으로 작성된 키는 숫자로 시작"
 "할 수 없습니다."
 
@@ -1186,12 +1187,12 @@ msgid ""
 "Type inference is only possible if the assigned value has a defined type, "
 "otherwise it will raise an error."
 msgstr ""
-"타입 함축은 오직 할당된 값이 정의된 타입을 갖고 있어야만 가능합니다, 그렇지 "
+"타입 함축은 오직 지정된 값이 정의된 타입을 갖고 있어야만 가능합니다, 그렇지 "
 "않으면 오류가 발생합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:576
 msgid "Valid types are:"
-msgstr "유효한 타입은 다음과 같습니다:"
+msgstr "올바른 타입은 다음과 같습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:578
 msgid "Built-in types (Array, Vector2, int, String, etc.)"
@@ -1269,7 +1270,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:625
 msgid "Constants"
-msgstr "상수"
+msgstr "상수(Constant)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:627
 msgid ""
@@ -1300,7 +1301,7 @@ msgid ""
 "Enums are basically a shorthand for constants, and are pretty useful if you "
 "want to assign consecutive integers to some constant."
 msgstr ""
-"이넘은 기본적으로 상수의 축약 형이고, 연속적인 정수를 일부 상수에 지정할 때 "
+"이넘은 기본적으로 상수의 축약형이고, 연속적인 정수를 일부 상수에 지정할 때 "
 "꽤 유용합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:655
@@ -1308,7 +1309,8 @@ msgid ""
 "If you pass a name to the enum, it will put all the keys inside a constant "
 "dictionary of that name."
 msgstr ""
-"이넘에 이름을 전달하면, 그 이름의 상수 딕셔너리 내에 모든 키를 넣을 것입니다."
+"이넘에 이름을 전달하면, 이넘은 해당 이름의 상수 딕셔너리 안에 모든 키를 넣습"
+"니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:678
 msgid "Functions"
@@ -1322,17 +1324,17 @@ msgid ""
 "but is not always required (and should *not* be sent as the function's first "
 "argument, unlike Python)."
 msgstr ""
-"함수는 항상 `class <Classes_>`_ 에 속해 있습니다. 변수를 조회하는 범위 우선 "
-"순위는: 지역 → 클래스 멤버 → 전역 순입니다. ``self`` 변수는 항상 사용할 수 있"
-"고 클래스 멤버에 접근하는 옵션으로 제공될 수 있지만, 항상 필요한 것은 아닙니"
-"다 (그리고 Python과 달리, 함수의 첫 인수로 보내서는 *안 됩니다*)."
+"함수는 항상 `class <Classes_>`_\\ 에 속해 있습니다. 변수를 조회하는 범위 우"
+"선 순위는: 지역 → 클래스 멤버 → 전역 순입니다. ``self`` 변수는 항상 사용할 "
+"수 있고 클래스 멤버에 접근하는 옵션으로 제공될 수 있지만, 항상 필요한 것은 아"
+"닙니다 (그리고 Python과 달리, 함수의 첫 인수로 보내서는 *안 됩니다*)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:693
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
-"함수는 언제든지 ``반환(return)`` 될 수 있습니다. 기본 반환 값은 ``null`` 입니"
-"다."
+"함수는 언제든지 ``반환(return)``\\ 할 수 있습니다. 기본 반환 값은 ``null``\\ "
+"입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:695
 msgid ""
@@ -1363,9 +1365,9 @@ msgid ""
 "functions can return early with the ``return`` keyword, but they can't "
 "return any value."
 msgstr ""
-"반환 값을 갖는 함수는 **반드시** 적절한 값을 반환해야 합니다. ``void(빈)``\\ "
-"로 타입을 설정하는 것은 함수가 어느 것도 반환하지 않음을 의미합니다. 빈 함수"
-"는 ``return`` 키워드로 일찍 반환할 수 있지만 어떤 값도 반환할 수 없습니다."
+"반환 값을 갖는 함수는 **반드시** 적절한 값을 반환해야 합니다. ``void``\\ 로 "
+"타입을 설정하면 함수가 아무것도 반환하지 않습니다. 이런 함수들은 ``return`` "
+"키워드로 일찍 반환할 수 있지만 어떤 값도 반환할 수 없습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:721
 msgid ""
@@ -1375,11 +1377,11 @@ msgid ""
 "``if`` block but not after it, the editor will raise an error because if the "
 "block is not executed, the function won't have a valid value to return."
 msgstr ""
-"무효가 아닌 함수는 반드시 **항상** 값을 반환해야 하므로, 코드가 (``if``/"
-"``else`` 구조와 같은) 명령문을 뻗고 있다면, 모든 가능한 경로가 반환을 가져야 "
-"합니다. 예를 들어, ``if`` 블록 안에 ``return``\\ 을 갖지만 그 뒤가 없는 경"
-"우, 블록이 실행되지 않으면 반환할 유효한 값을 함수가 가질 수 없기 때문에, 에"
-"디터는 오류를 발생합니다."
+"반환할 수 있는 함수는 반드시 **항상** 값을 반환해야 하므로, 코드가 (``if``/"
+"``else`` 구조와 같은) 명령문으로 나뉘고 있다면, 모든 가능한 경로가 반환을 가"
+"져야 합니다. 예를 들어, ``if`` 블록 안에 ``return``\\ 을 갖지만 그 뒤가 없는 "
+"경우, 블록이 실행되지 않는 경우, 반환할 올바른 값을 함수가 가질 수 없기 때문"
+"에 편집기는 오류를 발생합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:729
 msgid "Referencing Functions"
@@ -1402,9 +1404,9 @@ msgid ""
 "or pass it to another function as an argument) one must use the ``call`` or "
 "``funcref`` helpers::"
 msgstr ""
-"런타임에 함수를  이름으로 참조하기 위해 (예를 들어 그것을 변수로 저장하거나, "
-"다른 함수에 인수로 전달하기 위해), ``call`` 이나 ``funcref`` 도우미를 사용해"
-"야 합니다::"
+"런타임에 함수를 이름으로 참조하기 위해 (예를 들어 그것을 변수로 저장하거나, "
+"다른 함수에 인수로 전달하기 위해), ``call``\\ 이나 ``funcref`` 도우미를 사용"
+"해야 합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:748
 msgid ""
@@ -1416,7 +1418,7 @@ msgstr ""
 "``_init``\\ 과 같은 기본 함수와, ``_enter_tree``, ``_exit_tree``, "
 "``_process``, ``_physics_process`` 등과 같은 대부분의 알림은 모든 기본 클래스"
 "에서 자동으로 호출된다는 것을 기억하세요. 그래서 어떤 방법이든 함수를 오버로"
-"딩 할 때 명시적으로 함수를 호출할 필요가 있습니다."
+"딩할 때 명시적으로 함수를 호출할 필요가 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:756
 msgid "Static functions"
@@ -1443,7 +1445,7 @@ msgid ""
 "optional."
 msgstr ""
 "명령문은 표준이고 할당, 함수 호출, 제어 흐름 구조 등이 될 수 있습니다 (하단"
-"을 참고하세요). 명령문 분리 기호로 쓰인 ``;`` 는 전적으로 선택 사항입니다."
+"을 참고하세요). 명령문 분리 기호로 쓰인 ``;``\\ 는 전적으로 선택 사항입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:776
 msgid "if/else/elif"
@@ -1478,8 +1480,8 @@ msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
 msgstr ""
-"간단한 루프는 ``while`` 문법을 사용하여 만들 수 있습니다. 루프는 ``break`` "
-"를 사용하여 끊거나 ``continue`` 를 사용하여 진행할 수 있습니다:"
+"간단한 루프는 ``while`` 문법을 사용하여 만들 수 있습니다. 루프는 ``break``\\ "
+"를 사용하여 끊거나 ``continue``\\ 를 사용하여 진행할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:819
 msgid ""
@@ -1490,7 +1492,7 @@ msgid ""
 msgstr ""
 "배열이나 테이블 같은, 범위를 반복하려면, *for* 루프가 사용됩니다. 한 배열을 "
 "반복할 때, 현재 배열 요소는 루프 변수에 저장됩니다. 딕셔너리를 반복할 때, *인"
-"덱스* 는 루프 변수에 저장됩니다."
+"덱스*\\ 는 루프 변수에 저장됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:848
 msgid ""
@@ -1512,11 +1514,11 @@ msgstr "**switch 명령문에 익숙한 사람들을 위한 집중 강좌**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:866
 msgid "Replace ``switch`` with ``match``"
-msgstr "``switch`` 를 ``match`` 로 바꾸십시오"
+msgstr "``switch``\\ 를 ``match``\\ 로 바꾸세요"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:867
 msgid "Remove ``case``"
-msgstr "``case`` 를 제거하십시오"
+msgstr "``case``\\ 를 제거하세요"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:868
 msgid ""
@@ -1524,11 +1526,11 @@ msgid ""
 "use ``continue`` for a fallthrough."
 msgstr ""
 "모든 ``break``\\ 를 제거하세요. 기본적으로 ``break``\\ 가 되지 않도록 하고 싶"
-"다면 fallthrough를 위해 ``continue``\\ 를 사용하실 수 있습니다."
+"다면 fallthrough처럼 ``continue``\\ 를 사용하실 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
 msgid "Change ``default`` to a single underscore."
-msgstr "``default`` 를 하나의 밑줄로 변경하십시오."
+msgstr "``default``\\ 를 하나의 밑줄로 변경하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:872
 msgid "**Control flow**:"
@@ -1580,8 +1582,7 @@ msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages. ::"
 msgstr ""
-"다른 언어의 ``switch`` 명령문에서 ``default`` 와 동등하게 사용될 수 있습니"
-"다. ::"
+"다른 언어의 ``switch`` 명령문에서 ``default``\\ 와 동등하게 쓰입니다. ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:929
 msgid "binding pattern"
@@ -1622,8 +1623,8 @@ msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``"
 msgstr ""
-"**개방형 배열**: 마지막 하위 패턴을 ``..`` 로 만들어서 배열이 패턴보다 더 커"
-"지도록 만들 수 있습니다"
+"**개방형 배열**: 마지막 하위 패턴을 ``..``\\ 으로 만들어서 배열이 패턴보다 "
+"더 커지도록 만들 수 있습니다"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:938
 msgid "Every subpattern has to be comma separated. ::"
@@ -1653,8 +1654,8 @@ msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``"
 msgstr ""
-"**개방형 딕셔너리**: 마지막 하위 패턴을 ``..`` 로 만들어서 딕셔너리가 패턴보"
-"다 더 커지도록 만들 수 있습니다"
+"**개방형 딕셔너리**: 마지막 하위 패턴을 ``..``\\ 으로 만들어서 딕셔너리가 패"
+"턴보다 더 커지도록 만들 수 있습니다"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
 msgid "Every subpattern has to be comma separated."
@@ -1667,7 +1668,7 @@ msgstr "값을 지정하지 않으면, 키의 존재 여부만 확인됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:961
 msgid "A value pattern is separated from the key pattern with a ``:`` ::"
-msgstr "값 패턴은 키 패턴과 ``:`` 로 분리됩니다 ::"
+msgstr "값 패턴은 키 패턴과 ``:``\\ 으로 분리됩니다 ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:984
 msgid "Multipatterns:"
@@ -1693,7 +1694,7 @@ msgid ""
 msgstr ""
 "기본적으로, 모든 스크립트 파일은 이름 없는 클래스 입니다. 이 경우, 우리는 파"
 "일 경로를 사용하거나 상대 경로 혹은 절대 경로를 사용하여 그들을 참조할 수 있"
-"습니다. 예를 들어 스크립트의 이름이 ``character.gd`` 라면"
+"습니다. 예를 들어 스크립트의 이름이 ``character.gd``\\ 라면"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1004
 msgid ""
@@ -1702,9 +1703,9 @@ msgid ""
 "optional comma followed by a path to an image, to use it as an icon. Your "
 "class will then appear with its new icon in the editor:"
 msgstr ""
-"대신, 클래스에 이름을 지정하여 Godot 에디터에 새 타입으로 등록할 수 있습니"
+"대신 클래스에 이름을 지정하여 Godot 편집기에 새로운 타입으로 등록할 수 있습니"
 "다. 이를 위해, 'class_name' 키워드를 사용합니다. 선택적 쉼표와 이미지 경로를 "
-"추가하여 아이콘으로 사용할 수 있습니다. 클래스는 이제 에디터에서 새로운 아이"
+"추가하여 아이콘으로 사용할 수 있습니다. 클래스는 이제 편집기에서 새로운 아이"
 "콘으로 나타납니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1019
@@ -1767,8 +1768,8 @@ msgid ""
 "To call a function in a *base class* (i.e. one ``extend``-ed in your current "
 "class), prepend ``.`` to the function name:"
 msgstr ""
-"*기본 클래스* (즉, 현재 클래스에서 ``extend`` 된 것)에서 함수를 호출하려면, "
-"``.`` 를 함수 이름 앞에 붙이세요:"
+"*기본 클래스* (즉, 현재 클래스에서 ``extend``\\ 된 것)에서 함수를 호출하려"
+"면, ``.``\\ 을 함수 이름 앞에 붙이세요:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1091
 msgid ""
@@ -1778,7 +1779,7 @@ msgid ""
 msgstr ""
 "이는 확장 클래스의 함수가 함수를 기본 클래스의 동일한 이름으로 대체하기 때문"
 "에 특히 유용합니다. 따라서 여전히 그들을 호출하고 싶다면, 다른 언어의 "
-"``super`` 키워드처럼 ``.`` 을 사용할 수 있습니다:"
+"``super`` 키워드처럼 ``.``\\ 을 사용할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1101
 msgid "Class Constructor"
@@ -1791,9 +1792,9 @@ msgid ""
 "automatically when inheriting a class. So there is usually no need to call "
 "``._init()`` explicitly."
 msgstr ""
-"클래스 인스턴스에 호출되는, 클래스 생성자의 이름은 ``_init`` 입니다. 앞서 언"
-"급한 바와 같이, 부모 클래스의 생성자는 클래스를 상속할 때 자동으로 호출됩니"
-"다. 그래서 보통 ``._init()`` 을 명시적으로 호출할 필요는 없습니다."
+"클래스 인스턴스에 호출되는, 클래스 생성자의 이름은 ``_init``\\ 입니다. 앞서 "
+"언급한 바와 같이, 부모 클래스의 생성자는 클래스를 상속할 때 자동으로 호출됩니"
+"다. 그래서 보통 ``._init()``\\ 을 명시적으로 호출할 필요는 없습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1107
 msgid ""
@@ -1806,8 +1807,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1115
 msgid "This is better explained through examples. Say we have this scenario:"
-msgstr ""
-"이것은 예제를 통해 더 잘 설명됩니다. 이 시나리오가 있다고 가정하십시오:"
+msgstr "이것은 예제를 통해 더 잘 설명됩니다. 이 시나리오가 있다고 가정하세요:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1137
 msgid "There are a few things to keep in mind here:"
@@ -1821,17 +1821,17 @@ msgid ""
 "``_init`` from ``State.gd``"
 msgstr ""
 "상속된 클래스 (``State.gd``)가 인수를 갖는 (이 경우에는 ``e``\\ 를 갖는) "
-"``_init`` 생성자를 정의한다면 상속하는 클래스 (``Idle.gd``)는 ``State.gd`` 에"
-"서 적절한 매개 변수를 ``_init`` 에게 전달하고 ``_init`` *정의해야*\\ 만 합니"
-"다"
+"``_init`` 생성자를 정의한다면 상속하는 클래스 (``Idle.gd``)는 ``State.gd``\\ "
+"에서 적절한 매개 변수를 ``_init``\\ 에게 전달하고 ``_init``\\ 을 *정의해야만"
+"* 합니다"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1142
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the base class "
 "``State.gd``"
 msgstr ""
-"``Idle.gd`` 는 기본 클래스 ``State.gd`` 와 다른 수의 인수들을 가질 수 있습니"
-"다"
+"``Idle.gd``\\ 는 기본 클래스 ``State.gd``\\ 와는 다른 수의 인수들을 가질 수 "
+"있습니다"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
 msgid ""
@@ -1876,10 +1876,10 @@ msgid ""
 "of a loaded class resource is done by calling the ``new`` function on the "
 "class object::"
 msgstr ""
-"파일로 저장된 클래스는 :ref:`resources <class_GDScript>` 로 취급됩니다. 다른 "
-"클래스에서 접근하려면 반드시 불러와 있어야 합니다. 이것에는 ``load`` 나 "
-"``preload`` 함수를 사용합니다 (하단을 참고하세요). 불러온 클래스를 인스턴스 "
-"하려면 클래스 객체에 ``new`` 함수를 호출합니다::"
+"파일로 저장된 클래스는 :ref:`resources <class_GDScript>`\\ 로 취급됩니다. 다"
+"른 클래스에서 접근하려면 반드시 불러와 있어야 합니다. 이것에는 ``load``\\ 나 "
+"``preload`` 함수를 사용합니다 (하단을 참고하세요). 불러온 클래스를 인스턴스하"
+"려면 클래스 객체에 ``new`` 함수를 호출합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1199
 msgid "Exports"
@@ -1893,7 +1893,7 @@ msgid ""
 "Exporting is done by using the ``export`` keyword::"
 msgstr ""
 "클래스 멤버는 내보내질 수 있습니다. 즉, 값이 첨부된 리소스와 함께 저장됩니다 "
-"(예 the :ref:`scene <class_PackedScene>`). 그들은 또한 속성 에디터에서 편집하"
+"(예 the :ref:`scene <class_PackedScene>`). 그들은 또한 속성 편집기에서 편집하"
 "는 것이 가능합니다. 내보내는 것은 ``export`` 키워드를 사용합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
@@ -1911,7 +1911,7 @@ msgid ""
 "designers can modify values that later influence how the program runs. For "
 "this, a special export syntax is provided."
 msgstr ""
-"멤버 변수 내보내기의 기본적인 이점은 에디터에서 보이고 편집할 수 있는 것입니"
+"멤버 변수 내보내기의 기본적인 이점은 편집기에서 보이고 편집할 수 있는 것입니"
 "다. 이 방법으로 아티스트와 게임 디자이너가 프로그램이 실행 방법에 영향을 주"
 "는 값을 수정할 수 있습니다. 이를 위해, 특수 내보내기 문법이 제공됩니다."
 
@@ -1920,8 +1920,8 @@ msgid ""
 "It must be noted that even if the script is not being run while at the "
 "editor, the exported properties are still editable (see below for \"tool\")."
 msgstr ""
-"심지어 스크립트가 에디터에서 실행되지 않더라도, 내보낸 속성은 여전히 편집 가"
-"능합니다 (아래 \"도구\"를 참고하세요)."
+"심지어 스크립트가 편집기에서 실행되지 않더라도, 내보낸 속성은 여전히 편집 가"
+"능합니다 (아래 \"툴\"을 참고하세요)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1307
 msgid "Exporting bit flags"
@@ -1933,9 +1933,9 @@ msgid ""
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
 "set from the editor:"
 msgstr ""
-"비트 플래그로 사용되는 정수는 한 속성에 많은 ``참``/``거짓`` (불) 값을 저장"
-"할 수 있습니다. 내보내기 힌트 ``int, FLAGS`` 를 사용하여, 이를 에디터에서 설"
-"정할 수 있습니다:"
+"비트 플래그로 사용되는 정수는 한 속성에 많은 ``참``/``거짓`` (불리언) 값을 저"
+"장할 수 있습니다. 내보내기 힌트 ``int, FLAGS``\\ 를 사용하여, 이를 편집기에"
+"서 설정할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1318
 msgid ""
@@ -2027,7 +2027,7 @@ msgid ""
 "Get/Setters are especially useful when exporting variables to editor in tool "
 "scripts or plugins, for validating input."
 msgstr ""
-"Get/Setter는 입력이 유효한지 알아보기 위해, 툴 스크립트나 플러그인에서 에디터"
+"Get/Setter는 입력이 유효한지 알아보기 위해, 툴 스크립트나 플러그인에서 편집기"
 "로 변수를 내보낼 때 특히 유용합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1415
@@ -2050,8 +2050,8 @@ msgid ""
 "doing so). For this, the ``tool`` keyword exists and must be placed at the "
 "top of the file:"
 msgstr ""
-"기본적으로, 스크립트는 에디터 내에서 실행되지 않고 내보낸 속성만 변경할 수 있"
-"습니다. 경우에 따라 에디터 내에서 실행하는 것이 바람직합니다 (게임 코드를 실"
+"기본적으로, 스크립트는 편집기 내에서 실행되지 않고 내보낸 속성만 변경할 수 있"
+"습니다. 경우에 따라 편집기 내에서 실행하는 것이 바람직합니다 (게임 코드를 실"
 "행하지 않거나 수동으로 실행하려 하지 않는 한). 이를 위해 ``tool`` 키워드가 존"
 "재하며 파일의 맨 위에 배치해야 합니다:"
 
@@ -2108,9 +2108,9 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1483
 msgid ""
 "Signals are a `Callback <https://en.wikipedia.org/wiki/"
-"Callback_(computer_programming)>` mechanism. They also fill the role of "
+"Callback_(computer_programming)>`_ mechanism. They also fill the role of "
 "Observers, a common programming pattern. For more information, read the "
-"`Observer tutorial<http://gameprogrammingpatterns.com/observer.html>`_ in "
+"`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ in "
 "the Game Programming Patterns ebook."
 msgstr ""
 

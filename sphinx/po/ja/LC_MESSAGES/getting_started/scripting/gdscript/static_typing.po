@@ -1,0 +1,557 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:4
+msgid "Static typing in GDScript"
+msgstr "静的型付けGDScript"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:6
+msgid "In this guide, you will learn:"
+msgstr "このガイドでは、次の内容について学習します:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:8
+msgid "**How to use types in GDScript**"
+msgstr "**GDScriptで型を使用する方法**"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:9
+msgid "That **static types can help you avoid bugs**"
+msgstr "静的型は**バグの回避に役立つ**"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:11
+msgid ""
+"Where and how you use this new language feature is entirely up to you: you "
+"can use it only in some sensitive GDScript files, use it everywhere, or "
+"write code like you always did!"
+msgstr "この新しい言語機能をどこで、どのように使うかは完全にあなた次第です！"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:15
+msgid ""
+"Static types can be used on variables, constants, functions, parameters, and "
+"return types."
+msgstr "静的型は、変数、定数、関数、パラメータ、戻り値の型に使用できます。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:20
+msgid "Typed GDScript is available since Godot 3.1."
+msgstr "型付きGDScriptはGodot 3.1から使用できます。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:23
+msgid "A brief look at static typing"
+msgstr "静的型付けの概要"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
+msgid ""
+"With typed GDScript, Godot can detect even more errors as you write code! It "
+"gives you and your teammates more information as you’re working, as the "
+"arguments’ types show up when you call a method."
+msgstr ""
+"型付きのGDScriptを使うことで、Godotはコードを書く際にさらに多くのエラーを検出"
+"することができます。メソッドを呼び出すと引数の型が表示されるため、作業中に詳"
+"細な情報が得られます。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
+msgid ""
+"Imagine you’re programming an inventory system. You code an ``Item`` node, "
+"then an ``Inventory``. To add items to the inventory, the people who work "
+"with your code should always pass an ``Item`` to the ``Inventory.add`` "
+"method. With types, you can enforce this:"
+msgstr ""
+"あなたが在庫管理システムをプログラミングしていると想像してください。 "
+"``Item`` ノード、次に ``Inventory`` をコーディングします。アイテムをインベン"
+"トリに追加するには、コードを操作する人々は常に ``Item`` を ``Inventory.add`` "
+"メソッドに渡す必要があります。型を設定すれば、これを強制できます:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:48
+msgid ""
+"Another significant advantage of typed GDScript is the new **warning "
+"system**. From version 3.1, Godot gives you warnings about your code as you "
+"write it: the engine identifies sections of your code that may lead to "
+"issues at runtime, but lets you decide whether or not you want to leave the "
+"code as it is. More on that in a moment."
+msgstr ""
+"型付きGDScriptのもう1つの重要な利点は、新しい**警告システム**です。バージョン"
+"3.1以降のGodotではコードを記述する際に警告が表示されます:実行時に問題を引き起"
+"こす可能性のあるコードのセクションが識別されますが、コードをそのままにしてお"
+"くかどうかを決めることができます。これについては後で説明します。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:54
+msgid ""
+"Static types also give you better code completion options. Below, you can "
+"see the difference between a dynamic and a static typed completion options "
+"for a class called ``PlayerController``."
+msgstr ""
+"静的型を使用すると、コード補完オプションも改善されます。以下に、 "
+"``PlayerController`` というクラスの動的型補完オプションと静的型補完オプション"
+"の違いを示します。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:58
+msgid ""
+"You’ve probably stored a node in a variable before, and typed a dot to be "
+"left with no autocomplete suggestions:"
+msgstr ""
+"あなたはおそらく以前に変数にノードを格納していて、オートコンプリートの提案な"
+"しで残されるようにドットをタイプしました："
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:64
+msgid ""
+"This is due to dynamic code. Godot cannot know what node or value type "
+"you’re passing to the function. If you write the type explicitly however, "
+"you will get all public methods and variables from the node:"
+msgstr ""
+"これは動的コードによるものです。Godotは、関数に渡されているノードまたは値のタ"
+"イプを認識できません。ただし型を明示的に記述すると、すべてのpublicメソッドと"
+"変数がノードから取得されます:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:71
+msgid ""
+"In the future, typed GDScript will also increase code performance: Just-In-"
+"Time compilation and other compiler improvements are already on the roadmap!"
+msgstr ""
+"将来的には、型付きGDScriptによってコードのパフォーマンスも向上します。ジャス"
+"トインタイムコンパイルやその他のコンパイラの改善はすでにロードマップに盛り込"
+"まれています！"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:75
+msgid ""
+"Overall, typed programming gives you a more structured experience. It helps "
+"prevent errors and improves the self-documenting aspect of your scripts. "
+"This is especially helpful when you’re working in a team or on a long-term "
+"project: studies have shown that developers spend most of their time reading "
+"other people’s code, or scripts they wrote in the past and forgot about. The "
+"clearer and the more structured the code, the faster it is to understand, "
+"the faster you can move forward."
+msgstr ""
+"全体として、型付きプログラミングはあなたにもっと構造化された経験を与えます。"
+"それはエラーを防ぎ、あなたのスクリプトの自己文書化の側面を改善するのを助けま"
+"す。これはチームや長期的なプロジェクトで作業している場合に特に役立ちます。開"
+"発者が他の人のコードや過去に書いたスクリプトを読んで忘れていたことがほとんど"
+"の時間を費やしていることが調査によってわかっています。コードがより明確でより"
+"構造化されているほど、理解するのが早くなるほど、早く進むことができます。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:84
+msgid "How to use static typing"
+msgstr "静的型付けの使用方法"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:86
+msgid ""
+"To define the type of a variable or a constant, write a colon after the "
+"variable’s name, followed by its type. E.g. ``var health: int``. This forces "
+"the variable's type to always stay the same:"
+msgstr ""
+"変数または定数の型を定義するには、変数の名前の後にコロンを書き、その後に指定"
+"する型を書きます。例: ``var health: int`` これにより、変数の型は常に保持され"
+"ます:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:95
+msgid ""
+"Godot will try to infer types if you write a colon, but you omit the type:"
+msgstr "コロンを書くと、Godotは型を推測しようとしますが、型を省略します:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:104
+msgid "Currently you can use three types of… types:"
+msgstr "現在、3種類の…タイプを使用できます:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:106
+msgid ":ref:`Built-in <doc_gdscript_builtin_types>`"
+msgstr ":ref:`ビルトイン <doc_gdscript_builtin_types>`"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:107
+msgid ""
+"Core classes and nodes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)"
+msgstr ""
+"コアクラスとノード ( ``Object`` 、 ``Node`` 、 ``Area2D`` 、 ``Camera2D`` な"
+"ど)"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:109
+msgid ""
+"Your own, custom classes. Look at the new :ref:`class_name "
+"<doc_scripting_continued_class_name>` feature to register types in the "
+"editor."
+msgstr ""
+"独自のカスタムクラス。新しい :ref:`class_name "
+"<doc_scripting_continued_class_name>` 機能を調べて、型をエディタに登録しま"
+"す。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:114
+msgid ""
+"You don't need to write type hints for constants, as Godot sets it "
+"automatically from the assigned value. But you can still do so to make the "
+"intent of your code clearer."
+msgstr ""
+"Godotは割り当てられた値から自動的に型を設定するので、定数の型ヒントを書く必要"
+"はありません。ただしコードの意図をより明確にするために、これを行うこともでき"
+"ます。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:117
+msgid "Custom variable types"
+msgstr "カスタム変数型"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:119
+msgid ""
+"You can use any class, including your custom classes, as types. There are "
+"two ways to use them in scripts. The first method is to preload the script "
+"you want to use as a type in a constant:"
+msgstr ""
+"カスタムクラスを含む任意のクラスを型として使用できます。スクリプトで使用する"
+"方法は2つあります。最初の方法は、定数の型として使用するスクリプトをプリロード"
+"することです:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:128
+msgid ""
+"The second method is to use the ``class_name`` keyword when you create. For "
+"the example above, your Rifle.gd would look like this:"
+msgstr ""
+"2番目の方法は、作成時に ``class_name`` キーワードを使用することです。上記の例"
+"では、Rifle.gdは次のようになります:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:136
+msgid ""
+"If you use ``class_name``, Godot registers the Rifle type globally in the "
+"editor, and you can use it anywhere, without having to preload it into a "
+"constant:"
+msgstr ""
+"``class_name`` を使用する場合、GodotはRifle型をグローバルにエディタに登録しま"
+"す。定数にプリロードすることなく、どこでも使用できます:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:145
+#, fuzzy
+msgid "Variable casting"
+msgstr "変数"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:147
+msgid ""
+"Type casting is a key concept in typed languages. Casting is the conversion "
+"of a value from one type to another."
+msgstr ""
+"型キャストは型付き言語の重要な概念です。キャストは、ある型から別の型への値の"
+"変換です。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:150
+msgid ""
+"Imagine an Enemy in your game, that ``extends Area2D``. You want it to "
+"collide with the Player, a ``KinematicBody2D`` with a script called "
+"``PlayerController`` attached to it. You use the ``on_body_entered`` signal "
+"to detect the collision. With typed code, the body you detect is going to be "
+"a generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
+"``_on_body_entered`` callback."
+msgstr ""
+"``extends Area2D``であなたのゲームに敵がいると仮定してください。あなたはそれ"
+"を ``PlayerController`` と呼ばれるスクリプトが付いている ``KinematicBody2D`` "
+"と衝突させたいのです。衝突を検出するには ``on_body_entered`` シグナルを使用し"
+"ます。型付きコードでは、 ``_on_body_entered`` コールバックでは、検出したボ"
+"ディは一般的な ``PhysicsBody2D`` になり、 ``PlayerController`` にはなりませ"
+"ん。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:157
+msgid ""
+"You can check if this ``PhysicsBody2D`` is your Player with the ``as`` "
+"casting keyword, and using the colon ``:`` again to force the variable to "
+"use this type. This forces the variable to stick to the ``PlayerController`` "
+"type:"
+msgstr ""
+"この ``PhysicsBody2D`` がプレーヤーであるかどうかを確認するには、 ``as`` キャ"
+"ストキーワードを使用し、再度コロン ``:`` を使用して変数にこの型を使用させま"
+"す。これにより、変数は ``PlayerController`` タイプに固定されます:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:170
+msgid ""
+"As we’re dealing with a custom type, if the ``body`` doesn’t extend "
+"``PlayerController``, the ``player``\\ variable will be set to ``null``. We "
+"can use this to check if the body is the player or not. We will also get "
+"full autocompletion on the player variable thanks to that cast."
+msgstr ""
+"ここではカスタム・タイプを扱っているため、 ``body`` が ``PlayerController`` "
+"を拡張しない場合、 ``player`` 変数は ``null`` に設定されます。これを使って、"
+"体がプレイヤーかどうかを確認できます。このキャストのおかげで、player変数の完"
+"全なオートコンプリートもできるようになります。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:177
+msgid ""
+"If you try to cast with a built-in type and it fails, Godot will throw an "
+"error."
+msgstr ""
+"組み込み型でキャストしようとして失敗すると、Godotはエラーをスローします。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:180
+msgid "Safe lines"
+msgstr "セーフ・ライン"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
+msgid ""
+"You can also use casting to ensure safe lines. Safe lines are a new tool in "
+"Godot 3.1 to tell you when ambiguous lines of code are type-safe. As you can "
+"mix and match typed and dynamic code, at times, Godot doesn’t have enough "
+"information to know if an instruction will trigger an error or not at "
+"runtime."
+msgstr ""
+"セーフ・ラインを確保するためにキャストを使用することもできます。セーフ・ライ"
+"ンは、はGodot 3.1の新しいツールで、あいまいなコード行がセーフな型であることを"
+"教えてくれます。型指定されたコードと動的なコードを混在させることができるた"
+"め、Godotには実行時に命令がエラーを引き起こすかどうかを知るための十分な情報が"
+"ない場合があります。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:188
+msgid ""
+"This happens when you get a child node. Let’s take a timer for example: with "
+"dynamic code, you can get the node with ``$Timer``. GDScript supports `duck-"
+"typing <https://stackoverflow.com/a/4205163/8125343>`__, so even if your "
+"timer is of type ``Timer``, it is also a ``Node`` and an ``Object``, two "
+"classes it extends. With dynamic GDScript, you also don’t care about the "
+"node’s type as long as it has the methods you need to call."
+msgstr ""
+"これは子ノードを取得したときに起こります。たとえばタイマーを考えてみましょ"
+"う。動的コードでは、 ``$Timer`` でノードを取得できます。GDScriptは`ダック・タ"
+"イピング <https://stackoverflow.com/a/4205163/8125343>`をサポートしているの"
+"で、あなたのタイマーが ``Timer`` 型であっても、それは ``Node`` であり "
+"``Object`` でもあり、2つのクラスが拡張しています。動的GDScriptでは、呼び出す"
+"必要のあるメソッドがある限り、ノードの種類についても気にする必要はありませ"
+"ん。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:196
+msgid ""
+"You can use casting to tell Godot the type you expect when you get a node: "
+"``($Timer as Timer)``, ``($Player as KinematicBody2D)``, etc. Godot will "
+"ensure the type works and if so, the line number will turn green at the left "
+"of the script editor."
+msgstr ""
+"ノードを取得したときに期待される型をGodotに伝えるためにキャストを使用できま"
+"す: ``($Timer as Timer)`` 、 ``($Player as KinematicBody2D)`` など。Godotは、"
+"そのタイプが機能することを確認し、機能する場合は、行番号がスクリプトエディタ"
+"の左側で緑に変わります。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:204
+msgid "Safe vs Unsafe Line"
+msgstr "セーフ･ラインVSセーフでないライン"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:208
+msgid ""
+"You can turn off safe lines or change their color in the editor settings."
+msgstr ""
+"セーフ･ラインをオフにするか、エディタ設定でカラーを変更することができます。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:211
+msgid "Define the return type of a function with the arrow ->"
+msgstr "アロー(->)による関数の戻り値の定義"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:213
+msgid ""
+"To define the return type of a function, write a dash and a right angle "
+"bracket ``->`` after its declaration, followed by the return type:"
+msgstr ""
+"関数の戻り値の型を定義するには、宣言の後に ``->`` を記述し、その後に戻り値の"
+"型を記述します:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:221
+msgid ""
+"The type ``void`` means the function does not return anything. You can use "
+"any type, as with variables:"
+msgstr ""
+"``void`` 型は、関数が何も返さないことを意味します。変数と同様に、任意の型を使"
+"用できます:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:230
+msgid "You can also use your own nodes as return types:"
+msgstr "独自のノードを戻り値の型として使用することもできます:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:245
+msgid "Typed or dynamic: stick to one style"
+msgstr "静的と動的：どちらかのみを利用する"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:247
+msgid ""
+"Typed GDScript and dynamic GDScript can coexist in the same project. But I "
+"recommended to stick to either style for consistency in your codebase, and "
+"for your peers. It’s easier for everyone to work together if you follow the "
+"same guidelines, and faster to read and understand other people’s code."
+msgstr ""
+"型付きGDScriptと動的GDScriptは、同じプロジェクト内に共存できます。しかし、"
+"コードベースの一貫性のためにも、仲間のためにも、どちらかスタイルに固定するこ"
+"とをお勧めします。同じガイドラインに従うことで全員が協力しやすくなり、他の人"
+"のコードを素早く読んで理解できるようになります。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:253
+msgid ""
+"Typed code takes a little more writing, but you get the benefits we "
+"discussed above. Here’s an example of the same, empty script, in a dynamic "
+"style:"
+msgstr ""
+"型定義されたコードはもう少し作成が必要ですが、上で説明したような利点がありま"
+"す。次に、同じ空のスクリプトを動的なスタイルで示します:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:265
+msgid "And with static typing:"
+msgstr "そして静的型付けでは："
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:275
+msgid ""
+"As you can see, you can also use types with the engine’s virtual methods. "
+"Signal callbacks, like any methods, can also use types. Here’s a "
+"``body_entered`` signal in a dynamic style:"
+msgstr ""
+"このように、エンジンの仮想メソッドで型を使用することもできます。シグナルの"
+"コールバックも、他のメソッドと同様に型を使用できます。動的スタイルの "
+"``body_entered`` シグナルは次のとおりです:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:284
+msgid "And the same callback, with type hints:"
+msgstr "同じコールバックをタイプヒントとともに使用します："
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:291
+msgid ""
+"You’re free to replace, e.g. the ``CollisionObject2D``, with your own type, "
+"to cast parameters automatically:"
+msgstr ""
+"パラメータを自動的にキャストするには、 ``CollisionObject2D`` などを独自の型に"
+"自由に置き換えます:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:301
+msgid ""
+"The ``bullet`` variable could hold any ``CollisionObject2D`` here, but we "
+"make sure it is our ``Bullet``, a node we created for our project. If it’s "
+"anything else, like an ``Area2D``, or any node that doesn’t extend "
+"``Bullet``, the ``bullet`` variable will be ``null``."
+msgstr ""
+"``bullet`` 変数にはここで任意の ``CollisionObject2D`` を保持できますが、それ"
+"が独自に作成したノードである ``Bullet`` であることを確認します。 ``Area2D`` "
+"など、 ``Bullet`` を拡張していないノードなど、それ以外のものがある場合、 "
+"``bullet`` 変数は ``null`` になります。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:307
+msgid "Warning system"
+msgstr "警告システム"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:309
+msgid ""
+"The warning system complements typed GDScript. It’s here to help you avoid "
+"mistakes that are hard to spot during development, and that may lead to "
+"runtime errors."
+msgstr ""
+"この警告システムは型付きGDScriptを補完します。これはコーディング中に発見しに"
+"くく、ランタイムエラーにつながる可能性のあるミスを回避するのに役立ちます。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
+msgid ""
+"You can configure warnings in the Project Settings under a new section "
+"called ``GDScript``:"
+msgstr ""
+"プロジェクト設定 の ``GDScript`` という新しいセクションで警告を設定できます:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
+msgid "warning system project settings"
+msgstr "警告システムプロジェクト設定"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:321
+msgid ""
+"You can find a list of warnings for the active GDScript file in the script "
+"editor’s status bar. The example below has 3 warnings:"
+msgstr ""
+"スクリプトエディタのステータスバーにアクティブなGDScriptファイルに関する警告"
+"の一覧が表示されます。次の例には、3つの警告があります:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
+msgid "warning system example"
+msgstr "警報システム例"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
+msgid ""
+"To ignore specific warnings in one file, insert a special comment of the "
+"form ``#warning-ignore:warning-id``, or click on the ignore link to the "
+"right of the warning’s description. Godot will add a comment above the "
+"corresponding line and the code won’t trigger the corresponding warning "
+"anymore:"
+msgstr ""
+"1つのファイル内の特定の警告を無視するには、 ``#warning-ignore:warning-id`` と"
+"いう形式の特別なコメントを挿入するか、警告の説明の右側にある無視リンクをク"
+"リックします。Godotは対応する行の上にコメントを追加し、対応する警告を表示しな"
+"くなります:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
+msgid "warning system ignore example"
+msgstr "警告システム無視の例"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:340
+msgid ""
+"Warnings won’t prevent the game from running, but you can turn them into "
+"errors if you’d like. This way your game won’t compile unless you fix all "
+"warnings. Head to the ``GDScript`` section of the Project Settings to turn "
+"on this option. Here’s the same file as the previous example with warnings "
+"as errors turned on:"
+msgstr ""
+"警告によってゲームの実行が妨げられることはありませんが、必要に応じてエラーに"
+"することができます。こうすると、すべての警告を修正しない限りゲームはコンパイ"
+"ルされません。このオプションをオンにするには、プロジェクト設定の "
+"``GDScript`` セクションに移動します。前の例と同じファイルで、エラーとしての警"
+"告がオンになっているものを次に示します:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:349
+msgid "warnings as errors"
+msgstr "エラーとしての警告"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:352
+msgid "Cases where you can’t specify types"
+msgstr "型を指定できない場合"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:354
+msgid ""
+"To wrap up this introduction, let’s cover a few cases where you can’t use "
+"type hints. All the examples below **will trigger errors**."
+msgstr ""
+"この紹介の締めくくりに、タイプヒントを使用できないいくつかのケースを取り上げ"
+"ましょう。 以下の例はすべて**エラーを引き起こします**。"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:357
+msgid "You can’t use Enums as types:"
+msgstr "Enumを型として使うことはできません:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:364
+msgid ""
+"You can’t specify the type of individual members in an array. This will give "
+"you an error:"
+msgstr ""
+"配列の個々のメンバの種類を指定することはできません。これにより、エラーが発生"
+"します:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:371
+msgid ""
+"You can’t force the assignment of types in a ``for`` loop, as each element "
+"the ``for`` keyword loops over already has a different type. So you "
+"**cannot** write:"
+msgstr ""
+"``for`` キーワード・ループの各要素にはすでに異なる型があるため、 ``for`` ルー"
+"プで型の割り当てを強制することはできません。したがって、次のように書くことは"
+"**できません**:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
+msgid "Two scripts can’t depend on each other in a cyclic fashion:"
+msgstr "2つのスクリプトは、循環的に相互に依存することはできません:"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:400
+msgid "Summary"
+msgstr "概要"
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:402
+msgid ""
+"Typed GDScript is a powerful tool. Available as of version 3.1 of Godot, it "
+"helps you write more structured code, avoid common errors, and create "
+"scalable systems. In the future, static types will also bring you a nice "
+"performance boost thanks to upcoming compiler optimizations."
+msgstr ""
+"型付きGDScriptは強力なツールです。Godotのバージョン3.1から利用できるようにな"
+"り、より構造化されたコードの記述、一般的なエラーの回避、スケーラブルシステム"
+"の作成に役立ちます。将来的には、コンパイラーの最適化によって静的型のパフォー"
+"マンスも大幅に向上するでしょう。"

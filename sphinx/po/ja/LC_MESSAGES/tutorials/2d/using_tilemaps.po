@@ -1,0 +1,276 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:4
+msgid "Using tilemaps"
+msgstr "タイルマップの使用"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:7
+msgid "Introduction"
+msgstr "はじめに"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:9
+msgid ""
+"A tilemap is a grid of tiles used to create a game's layout. There are "
+"several benefits to using :ref:`TileMap <class_TileMap>` nodes to design "
+"your levels. First, they make it possible to draw the layout by \"painting' "
+"the tiles onto a grid, which is much faster than placing individual :ref:"
+"`Sprite <class_Sprite>` nodes one by one. Second, they allow for much larger "
+"levels because they are optimized for drawing large numbers of tiles. "
+"Finally, you can add collision, occlusion, and navigation shapes to tiles, "
+"adding additional functionality to the TileMap."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:21
+msgid "Project setup"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:23
+msgid ""
+"This demo we'll use the following tiles taken from Kenney's \"Abstract "
+"Platformer\" art pack. You can find the complete set `here <https://kenney."
+"nl/assets/abstract-platformer>`_ but for this demo we'll stick to this small "
+"set."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:29
+msgid "Create a new project and place the above image in the project folder."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:31
+msgid ""
+"When using a tileset, it's important that adjacent tiles match up. Godot's "
+"default is to import 2D images using an interpolated \"filter\" mode, which "
+"will result in ugly borders between the tiles. Select the image and click "
+"the Import tab. Turn off ``Filter`` and click \"Reimport\". See :ref:"
+"`doc_import_images` for details."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:37
+msgid "TileMap node"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:39
+msgid ""
+"Add a new :ref:`TileMap <class_TileMap>` node to the scene. By default, a "
+"TileMap uses a square grid of tiles. You can also use a perspective-based "
+"\"Isometric\" mode or define your own custom tile shape."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:45
+msgid ""
+"Under the \"Cell\" section in the Inspector are many properties you can "
+"adjust to customize your tilemap's behavior:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:52
+msgid "``Cell Size``"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:51
+msgid ""
+"This defines the size of the grid. This should match the pixel size of your "
+"tiles. The default value is ``(64, 64)``."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:56
+msgid "``YSort``"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:55
+msgid ""
+"This causes tiles to be drawn in order of their ``Y`` position, so that "
+"\"lower\" tiles are drawn on top of \"higher\" ones."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:59
+msgid "``Half Offset`` and ``Tile Origin``"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:59
+msgid ""
+"These properties affect the position of the tile relative to the grid "
+"position."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:63
+msgid "``Quadrant``"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:62
+msgid ""
+"Defines the chunk size used for batched drawing. This can negatively affect "
+"performance. Don't change it unless you know what you're doing."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:66
+msgid "``Custom Transform``"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:66
+msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:68
+msgid "All of these options can be left at their defaults for this demo."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:71
+#, fuzzy
+msgid "Creating a TileSet"
+msgstr "コンテンツの作成"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:73
+msgid ""
+"Once you've configured your tilemap, it's time to add a :ref:`TileSet "
+"<class_TileSet>`. A TileSet is a :ref:`Resource <class_Resource>` that "
+"contains the data about your tiles - their   textures, collision shapes, and "
+"other properties. When the game runs, the TileMap combines the individual "
+"tiles into a single object."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:79
+msgid ""
+"To add a new TileSet, click on the \"Tile Set\" property and select \"New "
+"TileSet\"."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:84
+msgid ""
+"When you do this, the \"TileSet\" panel will open at the bottom of the "
+"editor window:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:89
+msgid ""
+"First, you need to add the texture(s) that you'll use for the tiles. Click "
+"the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
+"image."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:92
+msgid ""
+"Next, click \"New Single Tile\" and drag in the image to select the tile you "
+"want. Click the \"Enable Snap\" button to make it easier to select the "
+"entire tile. A yellow rectangle appears around the selected tile."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:98
+msgid ""
+"Click on the TileMap in the scene tree, and you'll see that the newly "
+"created tile now appears on the right side. Click in the viewport and you "
+"can place tiles. Right-click to remove them."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:104
+msgid ""
+"It's easy to accidentally select and move the tilemap node. To avoid this, "
+"use the node's lock button:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:110
+#, fuzzy
+msgid "Collision Shapes"
+msgstr "コリジョン形状の表示"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:112
+msgid ""
+"If you're making a map that needs collisions - walls, floor, or other "
+"obstacles, for example - then you'll need to add collision shapes to any "
+"tiles that you want to be considered \"solid\"."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:116
+msgid ""
+"Click \"TileSet\" at the bottom of the editor window to return to the "
+"tileset tool. Click the tile you previously defined (outlined in yellow). "
+"Select the \"Collision\" tab and click the \"Create a new rectangle\" "
+"button. Make sure you still have grid snap enabled, then click and drag in "
+"the tile. A square collision shape appears in light blue:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:124
+msgid ""
+"You can add occlusion and navigation shapes to the tile in the same way."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:127
+msgid "Atlas tiles"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:129
+msgid ""
+"Rather than adding individual tiles one at a time, you can define a group of "
+"tiles all at once using an atlas. Click \"New Atlas\" and drag to select the "
+"entire tile sheet."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:135
+msgid ""
+"If you haven't already, make sure to change the \"Step\" in the snap "
+"settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
+"You can find this in the Inspector:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:141
+msgid ""
+"Once you've defined the atlas you can add collision shapes to the individual "
+"tiles as before. You can also click \"Icon\" to select one of the tiles to "
+"represent the atlas."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:145
+msgid ""
+"Back in the TileMap, you can select the atlas tile and you'll see all of the "
+"tiles it contains:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:150
+msgid ""
+"In addition to saving time when defining the tiles, this can help by "
+"grouping similar tiles together when you're working with a large number of "
+"tiles."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:154
+msgid "Tips and tricks"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:156
+msgid ""
+"If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
+"may notice lines appearing between your tiles. To fix this, open Project "
+"Settings and enable \"Use Pixel Snap\" in the \"Rendering/Quality\" section."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:160
+msgid ""
+"You can flip and rotate tiles using the icons at the top right of the editor."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:162
+msgid ""
+"To draw straight lines, hold <Shift> while clicking and dragging a tile."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:164
+msgid ""
+"Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
+"menu in the upper-right."
+msgstr ""

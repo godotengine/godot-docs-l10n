@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,47 +21,51 @@ msgstr ""
 msgid "Multiple resolutions"
 msgstr "多分辨率"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:8
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:7
 #, fuzzy
 msgid "The problem of multiple resolutions"
 msgstr "多分辨率"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:10
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:9
+#, fuzzy
 msgid ""
-"Developers often have trouble understanding  how to best support multiple "
-"resolutions in their games. For Desktop and Console games this is more or "
+"Developers often have trouble understanding how to best support multiple "
+"resolutions in their games. For desktop and console games, this is more or "
 "less straightforward, as most screen aspect ratios are 16:9 and resolutions "
-"are standard (720,1080,2k,4k,etc)."
+"are standard (720p, 1080p, 1440p, 4K, …)."
 msgstr ""
 "开发人员常常难以理解，如何在他们的游戏中最好地支持多个分辨率。对于桌面和控制"
 "台游戏，或多或少会比较简单，因为大多数屏幕宽高比是16:9，标准分辨率"
 "(720,1080,2k,4k,等等)。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:14
+#, fuzzy
 msgid ""
-"For mobile games at first it was easy. For many years, the iPhone (and iPad) "
+"For mobile games, at first, it was easy. For many years, the iPhone and iPad "
 "used the same resolution. When *Retina* was implemented, they just doubled "
-"the amount of pixel density (so most developers had assets in default and "
-"double resolutions)."
+"the pixel density; most developers had to supply assets in default and "
+"double resolutions."
 msgstr ""
 "起初，手机游戏很简单。多年来，iPhone(和iPad)使用了同样的分辨率。当实现*视网膜"
 "屏*时，他们只是把像素密度增加了一倍(因此，大多数开发人员的游戏资源都是默认状"
 "态，而且分辨率是双倍的)。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:18
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:19
+#, fuzzy
 msgid ""
-"Nowadays this is no longer the case, as there are plenty of different screen "
-"sizes, densities and aspect ratios for mobile, and non conventional sizes "
-"are becoming trendy for Desktop, such as ultra-wide."
+"Nowadays, this is no longer the case, as there are plenty of different "
+"screen sizes, densities, and aspect ratios. Non-conventional sizes are also "
+"becoming increasingly popular, such as ultrawide displays."
 msgstr ""
 "如今已不再是这种情况，因为很多移动设备有不同的屏幕尺寸，密度和纵横比，非传统"
 "尺寸正在成为电脑桌面的潮流，例如超宽。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:22
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:23
+#, fuzzy
 msgid ""
-"For 3D games there is not much of a need to support multiple resolutions "
+"For 3D games, there is not much of a need to support multiple resolutions "
 "(from the aesthetic point of view). The 3D geometry will just fill the "
-"screen based on the field-of-view, disregarding the aspect ratio. The main "
+"screen based on the field of view, disregarding the aspect ratio. The main "
 "reason one may want to support this, in this case, is for *performance* "
 "reasons (running in lower resolution to increase frames per second)."
 msgstr ""
@@ -69,35 +73,37 @@ msgstr ""
 "视场填充屏幕，无需考虑纵横比。人们支持这个观点的主要原因是，在本例中，是出于*"
 "性能*的原因(为了增加每秒帧数，以较低的分辨率运行)。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:27
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:29
+#, fuzzy
 msgid ""
 "For 2D and game UIs, this is a different matter, as art needs to be created "
-"using specific pixel sizes in software such as Photoshop, Gimp, Krita, etc."
+"using specific pixel sizes in software such as Photoshop, GIMP or Krita."
 msgstr ""
 "而对于二维游戏和游戏的用户界面来说，却是另一回事，因为需要在Photoshop，"
 "Gimp， Krita等软件中，使用特定的像素尺寸来创建美术资源。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:30
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:32
+#, fuzzy
 msgid ""
-"Given layouts, aspect ratios, resolutions and pixel densities can change so "
+"Since layouts, aspect ratios, resolutions, and pixel densities can change so "
 "much, it is no longer possible to design UIs for every specific screen. "
 "Another method must be used."
 msgstr ""
 "给定布局，长宽比，分辨率和像素密度可以很大改变，不可能再为每个特定的屏幕设计"
 "游戏界面。必须使用另一种方法。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:34
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:37
 msgid "One size fits all"
 msgstr "万全之策"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:36
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:39
+#, fuzzy
 msgid ""
-"The most common approach nowadays is to just use a single *base* resolution "
-"and then fit it to everything else. This resolution is how most players are "
-"expected to play the game (given their hardware). For mobile, Google has "
-"useful `stats <https://developer.android.com/about/dashboards>`_ online, and "
-"for desktop, Steam `also does <https://store.steampowered.com/hwsurvey/Steam-"
-"Hardware-Software-Survey-Welcome-to-Steam>`_."
+"The most common approach is to use a single *base* resolution and then fit "
+"it to everything else. This resolution is how most players are expected to "
+"play the game (given their hardware). For mobile, Google has useful `stats "
+"<https://developer.android.com/about/dashboards>`_ online, and for desktop, "
+"Steam `also does <https://store.steampowered.com/hwsurvey/>`_."
 msgstr ""
 "目前最常见的方法，是使用一个单独的*基础*分辨率，然后将其应用于其他所有内容。"
 "这个解决方案是大多数玩家希望如何(在考虑他们的硬件的情况下)玩游戏。对于手机，"
@@ -105,31 +111,33 @@ msgstr ""
 "且对于桌面，Steam平台`也是如此<https://store.steampowered.com/hwsurvey/Steam-"
 "Hardware-Software-Survey-Welcome-to-Steam>`_。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:41
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:45
+#, fuzzy
 msgid ""
 "As an example, Steam shows that the most common *primary display resolution* "
-"is 1920x1080, so a sensible approach is to develop a game for this "
+"is 1920×1080, so a sensible approach is to develop a game for this "
 "resolution, then handle scaling for different sizes and aspect ratios."
 msgstr ""
 "举个例子，在Steam平台上显示最为常见的*主显示分辨率*是1920x1080像素，一种合理"
 "的方法是，先使用这个分辨率开发出游戏，然后处理不同尺寸和纵横比的缩放。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:43
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:49
 #, fuzzy
 msgid "Godot provides a several useful tools to do this easily."
 msgstr "Godot 还提供了一系列通用的容器:"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:46
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:52
 msgid "Base size"
 msgstr "基本大小"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:48
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:54
+#, fuzzy
 msgid ""
-"A base size for the window can be specified in the project settings under "
-"\"Display\", \"Window\"."
+"A base size for the window can be specified in the Project Settings under "
+"**Display → Window**."
 msgstr "可以在“显示”，“窗口”下的项目设置中指定窗口的基本大小。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:53
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:59
 msgid ""
 "However, what it does is not completely obvious; the engine will *not* "
 "attempt to switch the monitor to this resolution. Rather, think of this "
@@ -141,7 +149,7 @@ msgstr ""
 "此设置视为“设计大小”，即您在编辑器中使用的区域的大小。 此设置直接对应于2D编辑"
 "器中蓝色矩形的大小。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:59
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:65
 msgid ""
 "There is often a need to support devices with screen and window sizes that "
 "are different from this base size. Godot offers many ways to control how the "
@@ -150,11 +158,11 @@ msgstr ""
 "通常需要支持具有与该基本大小不同的屏幕和窗口大小的设备。 Godot提供了许多方法"
 "来控制视区的大小调整和拉伸到不同的屏幕大小。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:65
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:71
 msgid "Resizing"
 msgstr "调整大小"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:67
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:73
 msgid ""
 "There are several types of devices, with several types of screens, which in "
 "turn have different pixel density and resolutions. Handling all of them can "
@@ -170,7 +178,7 @@ msgstr ""
 "点始终是一个Viewport (场景将作为它的子节点被实例化, 并且始终可以通过调用"
 "``get_tree().get_root()`` 或``get_node(\"/root\")`` 来访问它。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:76
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:82
 msgid ""
 "In any case, while changing the root Viewport params is probably the most "
 "flexible way to deal with the problem, it can be a lot of work, code and "
@@ -181,27 +189,28 @@ msgstr ""
 "能包含大量工作、大量代码和大量推测过程, 因此Godot在“项目设置”中提供了一组简单"
 "的参数来处理多分辨率问题。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:82
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:88
 msgid "Stretch settings"
 msgstr "拉伸设置"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:84
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:90
 msgid ""
 "Stretch settings are located in the project settings, it's just a bunch of "
 "configuration variables that provide several options:"
 msgstr "拉伸设置位于项目设置中, 它只是一系列提供多种选项的配置变量:"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:90
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:96
 msgid "Stretch Mode"
 msgstr "拉伸模式 (Stretch mode)"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:92
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:98
+#, fuzzy
 msgid ""
-"The \"Stretch Mode\" setting defines how the base size is stretched to fit "
+"The **Stretch Mode** setting defines how the base size is stretched to fit "
 "the resolution of the window or screen."
 msgstr "“拉伸模式”设置定义如何拉伸基本大小以适合窗口或屏幕的分辨率。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:97
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:103
 msgid ""
 "The animations below use a \"base size\" of just 16×9 pixels to demonstrate "
 "the effect of different stretch modes. A single sprite, also 16×9 pixels in "
@@ -212,16 +221,17 @@ msgstr ""
 "也是16×9像素，覆盖整个视区，并在其上添加一个对角线 :ref:`Line2D "
 "<class_Line2D>` :"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:107
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:113
+#, fuzzy
 msgid ""
-"Stretch Mode = **Disabled** (default): No stretching happens. One unit in "
+"**Stretch Mode = Disabled** (default): No stretching happens. One unit in "
 "the scene corresponds to one pixel on the screen. In this mode, the "
-"\"Stretch Aspect\" setting has no effect."
+"**Stretch Aspect** setting has no effect."
 msgstr ""
 "拉伸模式= **禁用**(默认值):不进行拉伸。 场景中的一个单元对应于屏幕上的一个像"
 "素。 在此模式下，“拉伸纵横比”设置无效。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:111
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:117
 msgid ""
 "This is a good option if you want full control over every screen pixel, and "
 "is probably the best option for 3D games."
@@ -229,22 +239,22 @@ msgstr ""
 "如果您想要完全控制每个屏幕像素，这是一个不错的选择，并且可能是3D游戏的最佳选"
 "择。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:116
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:122
+#, fuzzy
 msgid ""
-"Stretch Mode = **2D**: In this mode, the size specified in display/width and "
-"display/height in the project settings will be stretched to cover the whole "
-"screen (taking the \"Stretch Aspect\" setting into account). This means that "
-"everything will be rendered directly at the target resolution. 3D will be "
-"largely unaffected, while in 2D there is no longer a 1:1 correspondence "
-"between sprite pixels and screen pixels, which may result in scaling "
-"artifacts."
+"**Stretch Mode = 2D**: In this mode, the size specified in display/width and "
+"display/height in the project settings is stretched to cover the whole "
+"screen (taking the **Stretch Aspect** setting into account). This means that "
+"everything is rendered directly at the target resolution. 3D is largely "
+"unaffected, while in 2D, there is no longer a 1:1 correspondence between "
+"sprite pixels and screen pixels, which may result in scaling artifacts."
 msgstr ""
 "拉伸模式= ** 2D**: 在此模式下，项目设置中显示/宽度和显示/高度中指定的大小将被"
 "拉伸以覆盖整个屏幕(考虑“拉伸方面”设置)。 这意味着所有内容都将直接以目标分辨率"
 "呈现。 3D将基本上不受影响，而在2D中，精灵像素和屏幕像素之间不再存在1:1的对应"
 "关系，这可能导致缩放伪像。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:124
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:130
 msgid ""
 "This is a good option if your 2D artwork has a sufficiently high resolution "
 "and does not require pixel-perfect rendering. Consider enabling texture "
@@ -253,38 +263,41 @@ msgstr ""
 "如果您的2D图稿具有足够高的分辨率并且不需要像素完美渲染，那么这是一个不错的选"
 "择。 考虑在2D纹理和字体上启用纹理过滤和mipmapping。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:131
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:137
+#, fuzzy
 msgid ""
-"Stretch Mode = **Viewport**: Viewport scaling means that the size of the "
+"**Stretch Mode = Viewport**: Viewport scaling means that the size of the "
 "root :ref:`Viewport <class_Viewport>` is set precisely to the base size "
-"specified in the \"Display\" section of the project settings. The scene is "
+"specified in the Project Settings' **Display** section. The scene is "
 "rendered to this viewport first. Finally, this viewport is scaled to fit the "
-"screen (taking the \"Stretch Aspect\" setting into account)."
+"screen (taking the **Stretch Aspect** setting into account)."
 msgstr ""
 "拉伸模式= **Viewport**: 视区缩放意味着根 :ref:`Viewport <class_Viewport>` 的"
 "大小精确设置为项目设置的“显示”部分中指定的基本大小。 首先将场景渲染到此视"
 "区。 最后，缩放此视区以适合屏幕(考虑“拉伸方面”设置)。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:138
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:144
+#, fuzzy
 msgid ""
 "This mode is useful when working with pixel-precise games, or for the sake "
-"of rendering to a lower resolution for improving performance."
+"of rendering to a lower resolution to improve performance."
 msgstr ""
 "在使用像素精确游戏时，或者为了提高性能而渲染到较低分辨率，此模式非常有用。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:144
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:150
 msgid "Stretch Aspect"
 msgstr "拉伸比例(Stretch aspect)"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:146
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:152
+#, fuzzy
 msgid ""
 "The second setting is the stretch aspect. Note that this only takes effect "
-"if \"Stretch Mode\" is set to something other than \"disabled\"."
+"if **Stretch Mode** is set to something other than **Disabled**."
 msgstr ""
 "第二个设置是拉伸方面。 请注意，仅当“拉伸模式”设置为“禁用”以外的其他值时，此操"
 "作才会生效。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:149
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:155
 msgid ""
 "In the animations below, you will notice gray and black areas. The black "
 "areas are added by the engine and cannot be drawn into. The gray areas are "
@@ -295,9 +308,10 @@ msgstr ""
 "色区域是场景的一部分，可以绘制。 灰色区域对应于您在2D编辑器中看到的蓝色框架外"
 "的区域。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:154
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:160
+#, fuzzy
 msgid ""
-"Stretch Aspect = **Ignore**: Ignore the aspect ratio when stretching the "
+"**Stretch Aspect = Ignore**: Ignore the aspect ratio when stretching the "
 "screen. This means that the original resolution will be stretched to exactly "
 "fill the screen, even if it's wider or narrower. This may result in "
 "nonuniform stretching: things looking wider or taller than designed."
@@ -306,9 +320,10 @@ msgstr ""
 "填充屏幕，即使它更宽或更窄。 这可能导致拉伸不均匀:看起来比设计更宽或更高的东"
 "西。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:162
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:168
+#, fuzzy
 msgid ""
-"Stretch Aspect = **Keep**: Keep aspect ratio when stretching the screen. "
+"**Stretch Aspect = Keep**: Keep aspect ratio when stretching the screen. "
 "This means that the viewport retains its original size regardless of the "
 "screen resolution, and black bars will be added to the top/bottom of the "
 "screen (\"letterboxing\") or the sides (\"pillarboxing\")."
@@ -317,7 +332,7 @@ msgstr ""
 "都会保留其原始大小，并且黑色条将添加到屏幕的顶部/底部(“letterboxing”)或侧面"
 "(“pillarboxing”)。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:168
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:174
 msgid ""
 "This is a good option if you know the aspect ratio of your target devices in "
 "advance, or if you don't want to handle different aspect ratios."
@@ -325,9 +340,10 @@ msgstr ""
 "如果您事先知道目标设备的宽高比，或者您不想处理不同的宽高比，这是一个不错的选"
 "择。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:174
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:180
+#, fuzzy
 msgid ""
-"Stretch Aspect = **Keep Width**: Keep aspect ratio when stretching the "
+"**Stretch Aspect = Keep Width**: Keep aspect ratio when stretching the "
 "screen. If the screen is wider than the base size, black bars are added at "
 "the left and right (pillarboxing). But if the screen is taller than the base "
 "resolution, the viewport will be grown in the vertical direction (and more "
@@ -338,7 +354,7 @@ msgstr ""
 "侧和右侧添加黑条(柱框)。 但是如果屏幕高于基本分辨率，则视区将在垂直方向上生长"
 "(并且底部可以看到更多内容)。 您也可以将其视为“垂直展开”。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:181
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:187
 msgid ""
 "This is usually the best option for creating GUIs or HUDs that scale, so "
 "some controls can be anchored to the bottom (:ref:`doc_size_and_anchors`)."
@@ -346,9 +362,10 @@ msgstr ""
 "这通常是创建可扩展的GUI或HUD的最佳选择，因此一些控件可以锚定到底部( :ref:"
 "`doc_size_and_anchors`)。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:187
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:193
+#, fuzzy
 msgid ""
-"Stretch Aspect = **Keep Height**: Keep aspect ratio when stretching the "
+"**Stretch Aspect = Keep Height**: Keep aspect ratio when stretching the "
 "screen. If the screen is taller than the base size, black bars are added at "
 "the top and bottom (letterboxing). But if the screen is wider than the base "
 "resolution, the viewport will be grown in the horizontal direction (and more "
@@ -359,15 +376,16 @@ msgstr ""
 "部和底部添加黑条(letterboxing)。 但是，如果屏幕比基本分辨率宽，则视区将在水平"
 "方向上生长(并且右侧可以看到更多内容)。 您也可以将其视为“水平扩展”。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:194
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:200
 msgid ""
 "This is usually the best option for 2D games that scroll horizontally (like "
 "runners or platformers)."
 msgstr "这通常是水平滚动的2D游戏的最佳选择(如跑步者或平台游戏者)。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:199
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:205
+#, fuzzy
 msgid ""
-"Stretch Aspect = **Expand**: Keep aspect ratio when stretching the screen, "
+"**Stretch Aspect = Expand**: Keep aspect ratio when stretching the screen, "
 "but keep neither the base width nor height. Depending on the screen aspect "
 "ratio, the viewport will either be larger in the horizontal direction (if "
 "the screen is wider than the base size) or in the vertical direction (if the "
@@ -377,32 +395,35 @@ msgstr ""
 "根据屏幕宽高比，视区将在水平方向上较大(如果屏幕宽于基本大小)或在垂直方向上(如"
 "果屏幕高于原始大小)。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:209
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:215
 msgid "Stretch Shrink"
 msgstr "拉伸收缩"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:211
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:217
+#, fuzzy
 msgid ""
-"The \"Shrink\" setting allows you to add an extra scaling factor on top of "
-"what the \"Stretch\" options above already provide. The default value of 1 "
+"The **Shrink** setting allows you to add an extra scaling factor on top of "
+"what the **Stretch** options above already provide. The default value of 1 "
 "means that no scaling occurs."
 msgstr ""
 "“收缩”设置允许您在上面提供的“拉伸”选项之上添加额外的缩放系数。 默认值1表示不"
 "进行缩放。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:215
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:221
+#, fuzzy
 msgid ""
-"If, for example, you set \"Shrink\" to 4 and leave \"Stretch Mode\" on "
-"\"Disabled\", each unit in your scene will correspond to 4×4 pixels on the "
+"If, for example, you set **Shrink** to 4 and leave **Stretch Mode** on "
+"**Disabled**, each unit in your scene will correspond to 4×4 pixels on the "
 "screen."
 msgstr ""
 "例如，如果将“Shrink”设置为4并将“Stretch Mode”设置为“Disabled”，则场景中的每个"
 "单元将对应于屏幕上的4×4像素。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:219
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:225
+#, fuzzy
 msgid ""
-"If \"Stretch Mode\" is set to something other than \"Disabled\", the size of "
-"the root viewport is scaled down by the \"Shrink\" factor, and pixels in the "
+"If **Stretch Mode** is set to something other than **Disabled**, the size of "
+"the root viewport is scaled down by the **Shrink** factor, and pixels in the "
 "output are scaled up by the same amount. This is rarely useful for 2D games, "
 "but can be used to increase performance in 3D games by rendering them at a "
 "lower resolution."
@@ -411,11 +432,11 @@ msgstr ""
 "并且输出中的像素按比例放大。 这对2D游戏很少有用，但可以通过以较低分辨率渲染来"
 "提高3D游戏的性能。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:226
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:232
 msgid "From scripts"
 msgstr "来自脚本"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:228
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:234
 #, fuzzy
 msgid ""
 "To configure stretching at runtime from a script, use the ``get_tree()."
@@ -426,37 +447,56 @@ msgstr ""
 "参阅 :ref:`SceneTree.set_screen_stretch() "
 "<class_SceneTree_method_set_screen_stretch>`)。"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:233
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:239
 msgid "Reducing aliasing on downsampling"
 msgstr "减少缩减取样的混叠"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:235
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:241
+#, fuzzy
 msgid ""
-"If the game has a very high base resolution (say 4k), aliasing might appear "
-"when downsampling to something considerably lower like 720. This can be "
-"detected and reduced by forcing to shrink all images by 2 upon load (this is "
-"very fast). This can be achieved by calling"
+"If the game has a very high base resolution (e.g. 3840×2160), aliasing might "
+"appear when downsampling to something considerably lower like 1280×720. "
+"Aliasing can be made less visible by shrinking all images by a factor of 2 "
+"upon loading. This can be done by calling the method below before the game "
+"data is loaded:"
 msgstr ""
 "如果游戏的基础分辨率很高(比如4k)，当采样率降至相当低的值(如720)时，可能会出现"
 "混叠。可以通过强制在加载时将所有图像二次收缩来检测和减少(这是非常快的)。可以"
 "通过调用来实现"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:245
-msgid "Before most game data is loaded."
-msgstr "在大多数游戏数据加载之前。"
-
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:248
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:253
 #, fuzzy
 msgid "Handling aspect ratios"
 msgstr "处理通知"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:250
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:255
+#, fuzzy
 msgid ""
-"Once scaling for different resolutions is accounted for, just make sure that "
-"your *user interface* also scales for different aspect ratios. This can be "
-"easily done using :ref:`anchors <doc_size_and_anchors>` and/or :ref:"
-"`containers <doc_gui_containers>`."
+"Once scaling for different resolutions is accounted for, make sure that your "
+"*user interface* also scales for different aspect ratios. This can be done "
+"using :ref:`anchors <doc_size_and_anchors>` and/or :ref:`containers "
+"<doc_gui_containers>`."
 msgstr ""
 "考虑到不同分辨率的缩放，只要确保您的*用户界面*也适用于不同的长宽比。使用:ref:"
 "`锚点<doc_size_and_anchors>` 以及/或者:ref:`容器<doc_gui_containers>`，可以很"
 "容易地做到这一点。"
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:261
+msgid "Field of view scaling"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:263
+msgid ""
+"The 3D Camera node's **Keep Aspect** property defaults to the **Keep "
+"Height** scaling mode (also called *Hor+*). This is usually the best value "
+"for desktop games and mobile games in landscape mode, as widescreen displays "
+"will automatically use a wider field of view."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:268
+msgid ""
+"However, if your 3D game is intended to be played in portrait mode, it may "
+"make more sense to use **Keep Width** instead (also called *Vert-*). This "
+"way, smartphones with an aspect ratio taller than 16:9 (e.g. 19:9) will use "
+"a *taller* field of view, which is more logical here."
+msgstr ""

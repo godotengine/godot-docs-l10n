@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,36 +102,36 @@ msgstr "**Fedora**"
 msgid "**FreeBSD**"
 msgstr "**FreeBSD**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:51
+#: ../../docs/development/compiling/compiling_for_x11.rst:52
 msgid "**Gentoo**"
 msgstr "**Gentoo**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:56
+#: ../../docs/development/compiling/compiling_for_x11.rst:57
 msgid "**Mageia**"
 msgstr "**Mageia**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:62
+#: ../../docs/development/compiling/compiling_for_x11.rst:63
 msgid "**OpenBSD**"
 msgstr "**OpenBSD**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:66
+#: ../../docs/development/compiling/compiling_for_x11.rst:67
 msgid "**openSUSE**"
 msgstr "**openSUSE**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:71
+#: ../../docs/development/compiling/compiling_for_x11.rst:72
 msgid "**Solus**"
 msgstr "**Solus**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:78
+#: ../../docs/development/compiling/compiling_for_x11.rst:79
 msgid "Compiling"
 msgstr "开始编译"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:80
+#: ../../docs/development/compiling/compiling_for_x11.rst:81
 msgid ""
 "Start a terminal, go to the root dir of the engine source code and type:"
 msgstr "启动终端，然后进入引擎源代码的根目录。键入下面的指令:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:86
+#: ../../docs/development/compiling/compiling_for_x11.rst:87
 msgid ""
 "A good rule of thumb for the ``-j`` (*jobs*) flag, is to have at least as "
 "many threads compiling Godot as you have cores in your CPU, if not one or "
@@ -142,7 +142,7 @@ msgstr ""
 "中有核心一样，如果不是一两个。 随意将 ``-j`` 选项添加到您在下面看到的任何"
 "SCons命令。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:90
+#: ../../docs/development/compiling/compiling_for_x11.rst:91
 msgid ""
 "If all goes well, the resulting binary executable will be placed in the \"bin"
 "\" subdirectory. This executable file contains the whole engine and runs "
@@ -151,18 +151,18 @@ msgstr ""
 "如果一切顺利，编译结果将存放在 ``bin`` 目录下。 这个可执行文件包含了整个引"
 "擎，无需任何依赖项。 执行它将会启动项目管理器。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:97
+#: ../../docs/development/compiling/compiling_for_x11.rst:98
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr "如果您希望使用 Clang 而不是 GCC 编译器， 可以使用这个命令:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:103
+#: ../../docs/development/compiling/compiling_for_x11.rst:104
 msgid ""
 "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would "
 "not build."
 msgstr ""
 "在 OpenBSD 平台上必须使用 Clang，否则在构建字体相关的依赖时会遇到一些麻烦。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:106
+#: ../../docs/development/compiling/compiling_for_x11.rst:107
 msgid ""
 "If you are compiling Godot for production use, then you can make the final "
 "executable smaller and faster by adding the SCons option "
@@ -171,11 +171,11 @@ msgstr ""
 "如果您正在编译Godot用于生产用途，那么您可以通过添加SCons选项``target = "
 "release_debug``来使最终的可执行文件更小更快。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:111
+#: ../../docs/development/compiling/compiling_for_x11.rst:112
 msgid "Building export templates"
 msgstr "构建导出模板"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:113
+#: ../../docs/development/compiling/compiling_for_x11.rst:114
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -184,22 +184,22 @@ msgid ""
 "a suitable build environment."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:121
+#: ../../docs/development/compiling/compiling_for_x11.rst:122
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
 msgstr ""
 "要构建 X11 (Linux，\\*BSD)平台的导出模板， 执行构建系统时需要带上这些参数:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:124
+#: ../../docs/development/compiling/compiling_for_x11.rst:125
 msgid "(32 bits)"
 msgstr "( 32 位 )"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:131
+#: ../../docs/development/compiling/compiling_for_x11.rst:132
 msgid "(64 bits)"
 msgstr "( 64 位 )"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:138
+#: ../../docs/development/compiling/compiling_for_x11.rst:139
 #, fuzzy
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
@@ -208,19 +208,19 @@ msgstr ""
 "请注意，跨CPU位数( 64/32)编译不总是这样直截了当，这可能还需要您通过 "
 "``chroot`` 切换编译环境。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:141
+#: ../../docs/development/compiling/compiling_for_x11.rst:142
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr "要创建导出模板，需要您手动把编译出来的二进制文件拷贝到这里:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:147
+#: ../../docs/development/compiling/compiling_for_x11.rst:148
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
 msgstr ""
 "并且还需要将文件命名成这样(在 Godot 中， \\*BSD 平台也被视为 \"Linux X11\"):"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:156
+#: ../../docs/development/compiling/compiling_for_x11.rst:157
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
@@ -229,7 +229,7 @@ msgstr ""
 "此外，如果您正在开发自定义模块或修改引擎的其他 C++ 代码，则可以在此处将您编译"
 "好的二进制文件配置为自定义导出模板:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:162
+#: ../../docs/development/compiling/compiling_for_x11.rst:163
 #, fuzzy
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "

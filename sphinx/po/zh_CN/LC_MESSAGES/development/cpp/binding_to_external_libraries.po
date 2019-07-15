@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,27 +46,27 @@ msgstr "要绑定到外部库，请设置类似于Summator示例的模块目录:
 msgid "Next, you will create a header file with a simple TTS class:"
 msgstr "接下来，您将使用简单的TTS类创建头文件:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:44
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:45
 msgid "And then you'll add the cpp file."
 msgstr "然后您将添加cpp文件。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:68
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:70
 msgid ""
 "Just as before, the new class needs to be registered somehow, so two more "
 "files need to be created:"
 msgstr "和以前一样，新类需要以某种方式注册，因此需要创建另外两个文件:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:76
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:78
 msgid "With the following contents:"
 msgstr "并填入下面的内容:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:104
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:105
 msgid ""
 "Next, you need to create a ``SCsub`` file so the build system compiles this "
 "module:"
 msgstr "接下来，您需要创建一个 ``SCsub`` 文件，以便构建系统编译此模块:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:115
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:117
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
 "library files.  See the library's official documentation for specific "
@@ -77,7 +77,7 @@ msgstr ""
 "的具体说明，请参阅库的官方文档。 我们在下面提供了适用于Linux的安装命令，以供"
 "参考。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:126
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:128
 msgid ""
 "**Important:** The voices that Festival uses (and any other potential "
 "external/3rd-party resource) all have varying licenses and terms of use; "
@@ -89,7 +89,7 @@ msgstr ""
 "和使用条款; 即使节日图书馆本身与MIT许可证兼容，其中一些(如果不是大多数)可能与"
 "Godot有问题。 请务必查看许可证和使用条款。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:131
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:133
 msgid ""
 "The external library will also need to be installed inside your module to "
 "make the source files accessible to the compiler, while also keeping the "
@@ -101,7 +101,7 @@ msgstr ""
 "含。 可以使用以下命令通过git从modules / tts /目录安装festival和speech_tools"
 "库:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:141
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:143
 msgid ""
 "If you don't want the external repository source files committed to your "
 "repository, you can link to them instead by adding them as submodules (from "
@@ -110,7 +110,7 @@ msgstr ""
 "如果您不希望将外部存储库源文件提交到您的存储库，您可以通过将它们添加为子模块"
 "(从modules / tts /目录中)链接到它们，如下所示:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:150
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:152
 msgid ""
 "**Important:** Please note that Git submodules are not used in the Godot "
 "repository.  If you are developing a module to be merged into the main Godot "
@@ -122,13 +122,13 @@ msgstr ""
 "Godot存储库的模块，则不应使用子模块。 如果您的模块没有合并，您可以始终尝试将"
 "外部库实现为GDNative C++插件。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:155
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:157
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
 msgstr "要添加头文件包含目录，您可以在构建环境中追加路径:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:166
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:168
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone `env` first, so it won't add those flags to whole Godot build "
@@ -138,18 +138,18 @@ msgstr ""
 "样您的构建选项就不会污染构建系统的其他部分了(污染全局构建环境玩玩会给您造成麻"
 "烦)。 这里是一个使用了自定义编译选项的 `SCsub` 文件:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:179
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:183
 msgid "The final module should look like this:"
 msgstr "最终模块应如下所示:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:197
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:201
 msgid "Using the module"
 msgstr "使用模块"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:199
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:203
 msgid "You can now use your newly created module from any script:"
 msgstr "您现在可以在任何脚本中使用新创建的模块:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:208
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:212
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr "如果说出文本，输出将是 ``is_spoken:True`` 。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr "渲染模式"
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:15
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:175
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:289
 msgid "Description"
 msgstr "描述"
 
@@ -381,7 +381,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:175
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:289
 msgid "Built-in"
 msgstr "内建的"
 
@@ -391,20 +391,20 @@ msgid "inout mat4 **WORLD_MATRIX**"
 msgstr "out mat4 **WORLD_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:180
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
 msgid "Model space to world space transform."
 msgstr "模型空间到世界空间变换。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:181
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:298
 msgid "in mat4 **INV_CAMERA_MATRIX**"
 msgstr "in mat4 **INV_CAMERA_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:181
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:298
 msgid "World space to view space transform."
 msgstr "观看空间变换的世界空间。"
 
@@ -414,20 +414,20 @@ msgid "inout mat4 **PROJECTION_MATRIX**"
 msgstr "out mat4 **PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:298
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:302
 msgid "View space to clip space transform."
 msgstr "查看空间以剪切空间变换。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:183
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:300
 msgid "in mat4 **CAMERA_MATRIX**"
 msgstr "in mat4 **CAMERA_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:183
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:300
 msgid "View space to world space transform."
 msgstr "查看空间到世界空间变换。"
 
@@ -446,32 +446,32 @@ msgid "inout mat4 **INV_PROJECTION_MATRIX**"
 msgstr "out mat4 **INV_PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:300
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:188
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:304
 msgid "Clip space to view space transform."
 msgstr "用于查看空间变换的剪辑空间。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:189
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:302
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:190
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
 msgid "in float **TIME**"
 msgstr "in float **TIME**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:189
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:302
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:190
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
 msgid "Elapsed total time in seconds."
 msgstr "经过的总时间(秒)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:304
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:192
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr "in vec2 **VIEWPORT_SIZE**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:304
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:192
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
 msgid "Size of viewport (in pixels)."
 msgstr "视区大小(以像素为单位)。"
 
@@ -486,7 +486,7 @@ msgid "Vertex in local coordinates."
 msgstr "切线在当地的坐标。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
 #, fuzzy
 msgid "inout vec3 **NORMAL**"
 msgstr "out vec3 **NORMAL**"
@@ -497,7 +497,7 @@ msgid "Normal in local coordinates."
 msgstr "局部坐标正常。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
 #, fuzzy
 msgid "inout vec3 **TANGENT**"
 msgstr "out vec3 **TANGENT**"
@@ -508,7 +508,7 @@ msgid "Tangent in local coordinates."
 msgstr "切线在当地的坐标。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
 #, fuzzy
 msgid "inout vec3 **BINORMAL**"
 msgstr "out vec3 **BINORMAL**"
@@ -580,7 +580,7 @@ msgid "Instance custom data (for particles, mostly)."
 msgstr "实例自定义数据(主要用于粒子)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:223
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
 msgid "out float **ROUGHNESS**"
 msgstr "out float **ROUGHNESS**"
 
@@ -589,15 +589,15 @@ msgid "Roughness for vertex lighting."
 msgstr "顶点照明的粗糙度。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:326
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:260
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:330
 #, fuzzy
 msgid "in bool **OUTPUT_IS_SRGB**"
 msgstr "in float **ROUGHNESS**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:326
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:260
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:330
 msgid ""
 "True when calculations happen in sRGB color space (true in GLES2, false in "
 "GLES3)."
@@ -620,301 +620,305 @@ msgstr ""
 "影。但是，你无需使用所有这些属性，如果你不写入它们，Godot将优化掉相应的功能。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:291
 msgid "in vec4 **FRAGCOORD**"
 msgstr "在vec4 ** FRAGCOORD **"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
-msgid "Fragment coordinate, pixel adjusted. In screen space."
-msgstr "片段坐标，像素调整。在屏幕空间。"
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:291
+msgid ""
+"Coordinate of pixel center. In screen space. ``xy`` specifies  position in "
+"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
+"lower-left."
+msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:180
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
 msgid "in mat4 **WORLD_MATRIX**"
 msgstr "在mat4 ** WORLD_MATRIX **"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:298
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:302
 msgid "in mat4 **PROJECTION_MATRIX**"
 msgstr "in mat4 **PROJECTION_MATRIX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:300
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:188
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:304
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
 msgstr "in mat4 **INV_PROJECTION_MATRIX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:194
 msgid "in vec3 **VERTEX**"
 msgstr "in vec3 **VERTEX**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:194
 msgid "Vertex that comes from vertex function (default, in view space)."
 msgstr "来自顶点函数的顶点(默认情况下，在视图空间中)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:196
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:312
 msgid "in vec3 **VIEW**"
 msgstr "in vec3 **VIEW**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:196
 msgid "Vector from camera to fragment position (in view space)."
 msgstr "从摄像机到碎片位置的向量(在视图空间中)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
 msgid "in bool **FRONT_FACING**"
 msgstr "in bool **FRONT_FACING**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
 msgid "True if current face is front face."
 msgstr "如果当前面是正面，则为真。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
 msgid "Normal that comes from vertex function (default, in view space)."
 msgstr "来自于顶点函数的法向量(默认情况下，在视图空间中)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
 msgid "Tangent that comes from vertex function."
 msgstr "来自顶点函数的切线。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
 msgid "Binormal that comes from vertex function."
 msgstr "来自顶点函数的Binormal。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:205
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
 msgid "out vec3 **NORMALMAP**"
 msgstr "out vec3 **NORMALMAP**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:205
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
 #, fuzzy
 msgid "Set normal here if reading normal from a texture instead of NORMAL."
 msgstr "如果从纹理而不是NORMAL读取法线，则输出此值。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:207
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:208
 msgid "out float **NORMALMAP_DEPTH**"
 msgstr "out float **NORMALMAP_DEPTH**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:207
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:208
 msgid "Depth from variable above. Defaults to 1.0."
 msgstr "从变量上方深度。 默认为1.0。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:209
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:210
 msgid "in vec2 **UV**"
 msgstr "in vec2 **UV**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:209
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:210
 msgid "UV that comes from vertex function."
 msgstr "来自顶点功能的UV。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:211
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:212
 msgid "in vec2 **UV2**"
 msgstr "in vec2 **UV2**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:211
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:212
 msgid "UV2 that comes from vertex function."
 msgstr "来自顶点功能的UV2。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:213
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
 msgid "in vec4 **COLOR**"
 msgstr "in vec4 **COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:213
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
 msgid "COLOR that comes from vertex function."
 msgstr "来自顶点功能的颜色。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:215
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:216
 msgid "out vec3 **ALBEDO**"
 msgstr "out vec3 **ALBEDO**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:215
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:216
 msgid "Albedo (default white)."
 msgstr "反照率(默认为白色)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:217
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:218
 msgid "out float **ALPHA**"
 msgstr "out float **ALPHA**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:217
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:218
 #, fuzzy
 msgid ""
 "Alpha (0..1); if written to, the material will go to the transparent "
 "pipeline."
 msgstr "Alpha(0..1)，如果写入材质将转到透明管道。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:219
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
 msgid "out float **METALLIC**"
 msgstr "out float **METALLIC**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:219
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
 msgid "Metallic (0..1)."
 msgstr "Metallic (0..1)."
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:221
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:222
 msgid "out float **SPECULAR**"
 msgstr "out float **SPECULAR**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:221
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:222
 #, fuzzy
 msgid ""
 "Specular. Defaults to 0.5, best not to modify unless you want to change IOR."
 msgstr "镜面。 默认为0.5，除非您想要更改IOR，否则最好不要修改。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:223
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
 msgid "Roughness (0..1)."
 msgstr "粗糙度(0..1)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:225
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:226
 msgid "out float **RIM**"
 msgstr "out float **RIM**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:225
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:226
 msgid "Rim (0..1). If used, Godot calculates rim lighting."
 msgstr "边缘(0-1区间)。如果使用，Godot计算边缘照明。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:227
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:228
 msgid "out float **RIM_TINT**"
 msgstr "out float **RIM_TINT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:227
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:228
 #, fuzzy
 msgid ""
 "Rim Tint, goes from 0 (white) to 1 (albedo). If used, Godot calculates rim "
 "lighting."
 msgstr "Rim Tint，从0(白色)变为1(反照率)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:229
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:230
 msgid "out float **CLEARCOAT**"
 msgstr "out float **CLEARCOAT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:229
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:230
 msgid "Small added specular blob. If used, Godot calculates Clearcoat."
 msgstr "小幅增加镜面团块。如果使用，Godot计算清漆涂层。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:232
 msgid "out float **CLEARCOAT_GLOSS**"
 msgstr "out float **CLEARCOAT_GLOSS**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:232
 msgid "Gloss of Clearcoat. If used, Godot calculates Clearcoat."
 msgstr "清漆涂层的光泽度。如果使用，Godot计算清漆涂层。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:233
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:234
 msgid "out float **ANISOTROPY**"
 msgstr "out float **ANISOTROPY**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:233
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:234
 msgid "For distorting the specular blob according to tangent space."
 msgstr "用于根据切线空间扭曲镜面斑点。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:235
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:236
 msgid "out vec2 **ANISOTROPY_FLOW**"
 msgstr "out vec2 **ANISOTROPY_FLOW**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:235
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:236
 msgid "Distortion direction, use with flowmaps."
 msgstr "失真方向，与流程图一起使用。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:237
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:238
 msgid "out float **SSS_STRENGTH**"
 msgstr "out float **SSS_STRENGTH**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:237
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:238
 msgid ""
 "Strength of Subsurface Scattering. If used, Subsurface Scattering will be "
 "applied to object."
 msgstr "次表面散射强度。如果使用，物体将应用次表面散射。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:239
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:240
 msgid "out vec3 **TRANSMISSION**"
 msgstr "out vec3 **TRANSMISSION**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:239
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:240
 msgid ""
 "Transmission mask (default 0,0,0). Allows light to pass through object. Only "
 "applied if used."
 msgstr "传输掩码(默认值0,0,0)。允许光穿过物体。只在使用时应用。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:241
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:242
 msgid "out float **AO**"
 msgstr "out float **AO**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:241
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:242
 msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
 msgstr "环境遮挡。与预焙环境遮挡一起使用。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:244
 msgid "out float **AO_LIGHT_AFFECT**"
 msgstr "out float **AO_LIGHT_AFFECT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:244
 msgid "How much AO affects lights (0..1; default 0)."
 msgstr "环境遮挡对灯光的影响程度(取值在0到1之间。默认为0)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:245
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:246
 msgid "out vec3 **EMISSION**"
 msgstr "out vec3 **EMISSION**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:245
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:246
 msgid "Emission color (can go over 1,1,1 for HDR)."
 msgstr "发射颜色(HDR可以超过1,1,1)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:247
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:248
 msgid "sampler2D **SCREEN_TEXTURE**"
 msgstr "sampler2D **SCREEN_TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:247
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:248
 msgid ""
 "Built-in Texture for reading from the screen. Mipmaps contain increasingly "
 "blurred copies."
 msgstr "内置纹理，用于从屏幕上读取。 Mipmap包含越来越模糊的副本。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:249
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:250
 msgid "sampler2D **DEPTH_TEXTURE**"
 msgstr "sampler2D **DEPTH_TEXTURE**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:249
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:250
 msgid ""
 "Built-in Texture for reading depth from the screen. Must convert to linear "
 "using INV_PROJECTION."
 msgstr "内置纹理，用于从屏幕读取深度。 必须使用INV_PROJECTION转换为线性。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:251
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:252
 msgid "out float **DEPTH**"
 msgstr "out float **DEPTH**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:251
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:252
 msgid "Custom depth value (0..1)."
 msgstr "自定义深度值(0..1)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:253
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:254
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:253
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:254
 msgid "Screen UV coordinate for current pixel."
 msgstr "屏幕当前像素的UV坐标。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:255
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:256
 msgid "in vec2 **POINT_COORD**"
 msgstr "in vec2 **POINT_COORD**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:255
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:256
 #, fuzzy
 msgid "Point Coordinate for drawing points with POINT_SIZE."
 msgstr "使用POINT_SIZE绘制点的点坐标。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:257
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:258
 msgid "out float **ALPHA_SCISSOR**"
 msgstr "out float **ALPHA_SCISSOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:257
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:258
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr "如果写入，则丢弃低于一定量alpha的值。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:265
 msgid "Light built-ins"
 msgstr "内置灯光"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:267
 msgid ""
 "Writing light processor functions is completely optional. You can skip the "
 "light function by setting render_mode to ``unshaded``. If no light function "
@@ -926,7 +930,7 @@ msgstr ""
 "数。如果没有写入光照函数，Godot将使用片段函数中写入的材质属性来为您计算光照"
 "(取决于渲染_模式)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:271
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:272
 #, fuzzy
 msgid ""
 "To write a light function, assign something to ``DIFFUSE_LIGHT`` or "
@@ -935,19 +939,19 @@ msgstr ""
 "要编写灯光着色器，只需确保将某些内容分配给DIFFUSE_LIGHT或SPECULAR_LIGHT即"
 "可。 无任何分配意味着不处理光。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:274
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:275
 msgid ""
 "The light function is called for every light in every pixel. It is called "
 "within a loop for each light type."
 msgstr "每个像素中的每个光都调用光照函数。在每个光类型的循环中被调用。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:277
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
 msgid ""
 "Below is an example of a custom light function using a Lambertian lighting "
 "model:"
 msgstr "下面是一个使用兰伯特光照模型的自定义光函数的例子："
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:285
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:286
 msgid ""
 "If you want the lights to add together, add the light contribution to "
 "``DIFFUSE_LIGHT`` using ``+=``, rather than overwriting it."
@@ -955,82 +959,78 @@ msgstr ""
 "如果你想把这些光照加在一起，使用“+=”运算符将光线添加到“漫反射_光照”函数中，而"
 "不是覆盖它。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
-msgid "Fragment coordinate, pixel adjusted."
-msgstr "片段坐标，像素调整。"
-
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
 msgid "Normal vector, in view space."
 msgstr "法向量，在视图空间中。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:312
 msgid "View vector, in view space."
 msgstr "视图向量，在视图空间中。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:314
 msgid "in vec3 **LIGHT**"
 msgstr "in vec3 **LIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:310
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:314
 msgid "Light Vector, in view space."
 msgstr "灯光向量，在视图空间中。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:312
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:316
 msgid "in vec3 **LIGHT_COLOR**"
 msgstr "in vec3 **LIGHT_COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:312
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:316
 msgid "Color of light multiplied by energy."
 msgstr "光的颜色乘以能量。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:314
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:318
 msgid "in vec3 **ATTENUATION**"
 msgstr "in vec3 **ATTENUATION**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:314
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:318
 msgid "Attenuation based on distance or shadow."
 msgstr "基于距离或阴影的衰减。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:316
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:320
 msgid "in vec3 **ALBEDO**"
 msgstr "in vec3 **ALBEDO**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:316
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:320
 msgid "Base albedo."
 msgstr "基地反照率。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:318
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:322
 msgid "in vec3 **TRANSMISSION**"
 msgstr "in vec3 **TRANSMISSION**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:318
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:322
 msgid "Transmission mask."
 msgstr "传输掩模。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:320
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:324
 msgid "in float **ROUGHNESS**"
 msgstr "in float **ROUGHNESS**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:320
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:324
 msgid "Roughness."
 msgstr "粗糙度。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:322
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:326
 msgid "out vec3 **DIFFUSE_LIGHT**"
 msgstr "out vec3 **DIFFUSE_LIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:322
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:326
 msgid "Diffuse light result."
 msgstr "漫射光效果。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:324
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:328
 msgid "out vec3 **SPECULAR_LIGHT**"
 msgstr "out vec3 **SPECULAR_LIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:324
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:328
 msgid "Specular light result."
 msgstr "镜面光效果。"

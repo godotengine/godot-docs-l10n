@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:4
+msgid "Localization using gettext"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:6
+msgid ""
+"In addition to :ref:`doc_importing_translations` in CSV format, Godot also "
+"supports loading translation files written in the GNU gettext (``.po``) "
+"format."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:10
+msgid ""
+"For an introduction to gettext, check out `A Quick Gettext Tutorial <https://"
+"www.labri.fr/perso/fleury/posts/programming/a-quick-gettext-tutorial."
+"html>`_. It's written with C projects in mind, but much of the advice also "
+"applies to Godot (with the exception of ``xgettext``)."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:16
+msgid "Advantages"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:18
+msgid ""
+"gettext is a standard format, which can be edited using any text editor or "
+"GUI editors such as `Poedit <https://poedit.net/>`_."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:20
+msgid ""
+"gettext is supported by translation platforms such as `Transifex <https://"
+"www.transifex.com/>`_ and `Weblate <https://weblate.org/>`_, which makes it "
+"easier for people to collaborate to localization."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:23
+msgid ""
+"Compared to CSV, gettext works better with version control systems like Git, "
+"as each locale has its own messages file."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:25
+msgid ""
+"Multiline strings are more convenient to edit in gettext files compared to "
+"CSV files."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:29
+msgid "Disadvantages"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:31
+msgid ""
+"gettext is a more complex format than CSV and can be harder to grasp for "
+"people new to software localization."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:33
+msgid ""
+"People who maintain localization files will have to install gettext tools on "
+"their system. However, as Godot doesn't use compiled message object files "
+"(``.mo``), translators can test their work without having to install gettext "
+"tools."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:39
+msgid "Caveats"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:41
+msgid ""
+"As Godot uses its own PO file parser behind the scenes (which is more "
+"limited than the reference GNU gettext implementation), some features such "
+"as pluralization aren't supported."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:46
+msgid "Installing gettext tools"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:48
+msgid ""
+"The command line gettext tools are required to perform maintenance "
+"operations, such as updating message files. Therefore, it's strongly "
+"recommended to install them."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:52
+msgid ""
+"**Windows:** Download an installer from `this page <https://mlocati.github."
+"io/articles/gettext-iconv-windows.html>`_. Any architecture and binary type "
+"(shared or static) works; if in doubt, choose the 64-bit static installer."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:56
+msgid ""
+"**macOS:** Use `Homebrew <https://brew.sh/>`_ to install gettext with the "
+"``brew install gettext`` command."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:58
+msgid ""
+"**Linux:** On most distributions, install the ``gettext`` package from your "
+"distribution's package manager."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:62
+#, fuzzy
+msgid "Creating the PO template"
+msgstr "Creare contenuti"
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:64
+msgid ""
+"Godot currently doesn't support extracting source strings using "
+"``xgettext``, so the ``.pot`` file must be created manually. This file can "
+"be placed anywhere in the project directory, but it's recommended to keep it "
+"in a subdirectory, as each locale will be defined in its own file."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:69
+msgid ""
+"Create a directory named `locale` in the project directory. In this "
+"directory, save a file named ``messages.pot`` with the following contents:"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:81
+msgid ""
+"Messages in gettext are made of ``msgid`` and ``msgstr`` pairs. ``msgid`` is "
+"the source string (usually in English), ``msgstr`` will be the translated "
+"string."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:85
+msgid ""
+"The ``msgstr`` value in PO template files (``.pot``) should **always** be "
+"empty. Localization will be done in the generated ``.po`` files instead."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:89
+msgid "Creating a messages file from a PO template"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:91
+msgid ""
+"The ``msginit`` command is used to turn a PO template into a messages file. "
+"For instance, to create a French localization file, use the following "
+"command while in the ``locale`` directory:"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:100
+msgid ""
+"The command above will create a file named ``fr.po`` in the same directory "
+"as the PO template."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:104
+msgid "Loading a messages file in Godot"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:106
+msgid ""
+"To register a messages file as a translation in a project, open the "
+"**Project Settings**, then go to the **Localization** tab. In "
+"**Translations**, click **Add…** then choose the ``.po`` file in the file "
+"dialog. The locale will be inferred from the ``\"Language: <code>\\n\"`` "
+"property in the messages file."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:112
+msgid ""
+"See :ref:`doc_internationalizing_games` for more information on importing "
+"and testing translations in Godot."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:116
+msgid "Updating message files to follow the PO template"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:118
+msgid ""
+"After updating the PO template, you will have to update message files so "
+"that they contain new strings, while removing strings that are no longer "
+"present in the PO template removed in the PO template. This can be done "
+"automatically using the ``msgmerge`` tool:"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:129
+msgid ""
+"If you want to keep a backup of the original message file (which would be "
+"saved as ``fr.po~`` in this example), remove the ``--backup=none`` argument."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:133
+msgid "Checking the validity of a PO file or template"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:135
+msgid ""
+"It is possible to check whether a gettext file's syntax is valid by running "
+"the command below:"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:142
+msgid ""
+"If there are syntax errors or warnings, they will be displayed in the "
+"console. Otherwise, ``msgfmt`` won't output anything."
+msgstr ""

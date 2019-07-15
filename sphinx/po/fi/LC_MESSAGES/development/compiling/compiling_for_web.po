@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/compiling/compiling_for_web.rst:4
+msgid "Compiling for the Web"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:9
+msgid "Requirements"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:11
+msgid "To compile export templates for the Web, the following is required:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:13
+msgid ""
+"`Emscripten 1.38.27+ <http://kripken.github.io/emscripten-site>`__: If the "
+"version available per package manager is not recent enough, the best "
+"alternative is to install using the `Emscripten SDK <http://kripken.github."
+"io/emscripten-site/docs/getting_started/downloads.html>`__"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:16
+msgid "`Python 2.7+ or Python 3.5+ <https://www.python.org/>`__"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:17
+msgid "`SCons <https://www.scons.org>`__ build system"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:19
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:23
+msgid "Building export templates"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:25
+msgid ""
+"Before starting, confirm that the Emscripten configuration file exists and "
+"specifies all settings correctly. This file is available as ``~/."
+"emscripten`` on UNIX-like systems and ``%USERPROFILE%\\.emscripten`` on "
+"Windows. It's usually written by the Emscripten SDK, e.g. when invoking "
+"``emsdk activate latest``, or by your package manager. It's also created "
+"when starting Emscripten's ``emcc`` program if the file doesn't exist."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:32
+msgid ""
+"On Windows, make sure to escape backslashes of paths within the Emscripten "
+"configuration file as double backslashes ``\\\\`` or use Unix-style paths "
+"with a single forward slash ``/``."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:36
+msgid ""
+"Open a terminal and navigate to the root directory of the engine source "
+"code. Then instruct SCons to build the JavaScript platform. Specify "
+"``target`` as either ``release`` for a release build or ``release_debug`` "
+"for a debug build::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:43
+msgid ""
+"By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be "
+"built into the engine. Since ``eval()`` calls can be a security concern, the "
+"``javascript_eval`` option can be used to build without the singleton::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:50
+msgid ""
+"The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
+"the resulting file will be placed in the ``bin`` subdirectory. Its name is "
+"``godot.javascript.opt.zip`` for release or ``godot.javascript.opt.debug."
+"zip`` for debug."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:55
+msgid ""
+"Finally, rename the zip archive to ``webassembly_release.zip`` for the "
+"release template::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:60
+msgid "And ``webassembly_debug.zip`` for the debug template::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:65
+msgid "Building per asm.js translation or LLVM backend"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:67
+msgid ""
+"WebAssembly can be compiled in two ways: The default is to first compile to "
+"asm.js, a highly optimizable subset of JavaScript, using Emscripten's "
+"*fastcomp* fork of LLVM. This code is then translated to WebAssembly using a "
+"tool called ``asm2wasm``. Emscripten automatically takes care of both "
+"processes, we simply run SCons."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:73
+msgid ""
+"The other method uses LLVM's WebAssembly backend. This backend is available "
+"starting with LLVM 8 or in development builds. Emscripten manages this "
+"process as well, so we just invoke SCons."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:77
+msgid ""
+"In order to choose one of the two methods, the ``LLVM_ROOT`` variable in the "
+"Emscripten configuration file is used. If it points to a directory "
+"containing binaries of Emscripten's *fastcomp* fork of clang, ``asm2wasm`` "
+"is used. This is the default in a normal Emscripten installation. Otherwise, "
+"LLVM binaries built with the WebAssembly backend will be expected and the "
+"LLVM's WebAssembly backend is used."
+msgstr ""

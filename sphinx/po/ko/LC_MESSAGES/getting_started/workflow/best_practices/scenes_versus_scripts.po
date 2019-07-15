@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-02 14:18+0200\n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:4
 msgid "When to use scenes versus scripts"
-msgstr ""
+msgstr "씬과 스크립트 중 하나를 사용해야 하는 경우"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:6
 msgid ""
 "We've already covered how scenes and scripts are different. Scripts define "
 "an engine class extension with imperative code, scenes with declarative code."
 msgstr ""
+"우리는 이미 씬과 스크립트가 다르다는 것을 압니다. 스크립트는 명령형 코드, 선"
+"언형 코드로 만든 씬을 사용해 엔진 클래스 확장을 정의합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:10
 msgid ""
@@ -34,10 +36,13 @@ msgid ""
 "are often used in conjunction with a script so that the scene acts as an "
 "extension of the scripts declarative code."
 msgstr ""
+"각 시스템의 능력은 결과적으로는 다릅니다. 씬은 어떻게 확장된 클래스를 초기화"
+"하는 지 정의할 수 있지만, 씬은 종종 스크립트와 함께 사용되어 선언형 코드 스크"
+"립트의 확장으로 작업하기도 합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
 msgid "Anonymous types"
-msgstr ""
+msgstr "익명 타입"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:18
 msgid ""
@@ -45,6 +50,8 @@ msgid ""
 "alone. This is, in essence, what the Godot Editor does, only in the C++ "
 "constructor of its objects."
 msgstr ""
+"스크립트 하나 만으로 씬의 내용을 완전히 정의하는 것은 *가능합니다*. 본질적으"
+"로, Godot 편집기가 하는 일은 오직 개체의 C++ 생성자에서 이루어집니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
 msgid ""
@@ -94,7 +101,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
 #, fuzzy
 msgid "Find the script in the FileSystem dock."
-msgstr "에디터에서 스크립트를 실행합니다."
+msgstr "편집기에서 스크립트를 실행합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:81
 #, fuzzy
@@ -118,7 +125,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:89
 #, fuzzy
 msgid "Select the script from the file dialog."
-msgstr "에디터에서 스크립트를 실행합니다."
+msgstr "편집기에서 스크립트를 실행합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:91
 msgid ""

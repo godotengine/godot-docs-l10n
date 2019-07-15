@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:4
+msgid "Thread safe APIs"
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:7
+msgid "Threads"
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:9
+msgid ""
+"Threads are used to balance processing power across CPUs and cores. Godot "
+"supports multithreading, but not in the whole engine."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:12
+msgid ""
+"Below is a list of ways multithreading can be used in different areas of "
+"Godot."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:15
+msgid "Global scope"
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:17
+msgid ""
+":ref:`Global Scope<class_@GlobalScope>` singletons are all thread safe. "
+"Accessing servers from threads is supported (for VisualServer and Physics "
+"servers, ensure threaded or thread safe operation is enabled in the project "
+"settings!)."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:19
+msgid ""
+"This makes them ideal for code that creates dozens of thousands of instances "
+"in servers and controls them from threads. Of course, it requires a bit more "
+"code, as this is used directly and not within the scene tree."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:22
+msgid "Scene tree"
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:24
+msgid ""
+"Interacting with the active scene tree is **NOT** thread safe. Make sure to "
+"use mutexes when sending data between threads. If you want to call functions "
+"from a thread, the *call_deferred* function may be used:"
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:33
+msgid ""
+"However, creating scene chunks (nodes in tree arrangement) outside the "
+"active tree is fine. This way, parts of a scene can be built or instantiated "
+"in a thread, then added in the main thread:"
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:42
+msgid ""
+"Still, this is only really useful if you have **one** thread loading data. "
+"Attempting to load or create scene chunks from multiple threads may work, "
+"but you risk resources (which are only loaded once in Godot) tweaked by the "
+"multiple threads, resulting in unexpected behaviors or crashes."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:47
+msgid ""
+"Only use more than one thread to generate scene data if you *really* know "
+"what you are doing and you are sure that a single resource is not being used "
+"or set in multiple ones. Otherwise, you are safer just using the servers API "
+"(which is fully thread-safe) directly and not touching scene or resources."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:53
+msgid "GDScript arrays, dictionaries"
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:55
+msgid ""
+"In GDScript, reading and writing elements from multiple threads is ok, but "
+"anything that changes the container size (resizing, adding or removing "
+"elements) requires locking a mutex."
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:58
+msgid "Resources"
+msgstr ""
+
+#: ../../docs/tutorials/threads/thread_safe_apis.rst:60
+msgid ""
+"Modifying a unique resource from multiple threads is not supported, but "
+"loading them on threads or handling a reference is perfectly supported. "
+"Scenes, textures, meshes, etc. Can be loaded and manipulated on threads, "
+"then added to the active scene in the main thread."
+msgstr ""
