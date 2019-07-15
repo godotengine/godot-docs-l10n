@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # AColdCube <761397398@qq.com>, 2018.
+# ASC_8384 <ASC8384ST@gmail.com>, 2019.
 # asd789l <690367819@qq.com>, 2018.
 # baiwu liu <bovy.liu@gmail.com>, 2018.
 # bladesero <872461916@qq.com>, 2018.
@@ -12,6 +13,7 @@
 # cavenzhong <cavenzhong@gmail.com>, 2018.
 # cloudapex <cloudapex@126.com>, 2018.
 # codentropy <taozhen2012@163.com>, 2019.
+# ColdThunder11 <lslyj27761@gmail.com>, 2019.
 # congcong <3546952960@qq.com>, 2018.
 # Dante Lucifer <firecloud888@gmail.com>, 2018.
 # DKLost <514dklost@gmail.com>, 2018-2019.
@@ -22,6 +24,7 @@
 # griffenliu <tiansha7xing@163.com>, 2018.
 # Haowen Liu <liu.haowen.andy@gmail.com>, 2018.
 # Harlan Howell <lin_032@hotmail.com>, 2018.
+# hewittchoi <caitt2009@gmail.com>, 2019.
 # Hezekiah Ho <hyq1986@gmail.com>, 2018.
 # hnclca <hnclca@qq.com>, 2019.
 # Jack <skyturtur@gmail.com>, 2018.
@@ -29,6 +32,7 @@
 # Joe Zhao <nikejaycn@gmail.com>, 2018.
 # Jsheng <yangea@outlook.com>, 2019.
 # kirk_king <kirk_kpt@163.com>, 2018.
+# Lyu Shiqing <shiqing-thu18@yandex.com>, 2019.
 # MrNewWorld <xcc1997@gmail.com>, 2018.
 # neko mtclaw <mitsuclaws@gmail.com>, 2018.
 # Oberon Zheng <360119124@qq.com>, 2018-2019.
@@ -70,8 +74,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-02 14:18+0200\n"
-"PO-Revision-Date: 2019-07-02 12:05+0000\n"
-"Last-Translator: wesley woo <wesley_woo@yeah.net>\n"
+"PO-Revision-Date: 2019-07-15 15:57+0000\n"
+"Last-Translator: ColdThunder11 <lslyj27761@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -1544,7 +1548,7 @@ msgstr ":ref:`GLES2和GLES3之间的差异 <doc_gles2_gles3_differences>`"
 #: ../../docs/about/docs_changelog.rst:138
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr "合法的"
+msgstr "法律相关"
 
 #: ../../docs/about/docs_changelog.rst:140
 #, fuzzy
@@ -3575,16 +3579,15 @@ msgstr ""
 "observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
-"信号是一种 *解耦* 游戏对象的方法，从而使代码更有条理，更易于管理。他们可以对"
-"任何感兴趣的可以订阅的对象发出信号和响应，而不是强制游戏对象去期望其他对象始"
-"终存在。"
+"信号是一种 *解耦* 游戏对象的方法，从而使代码更有条理，更易于管理。它们可以发"
+"送，任何关注对象都能订阅并响应的信号，而不是强制游戏对象去期望其他对象始终存"
+"在。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
@@ -3597,16 +3600,14 @@ msgid "Timer example"
 msgstr "计时器示例"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
 "<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
-"要查看信号是如何工作的，让我们尝试使用 :ref:`Timer <class_Timer>` 节点。使用"
-"一个节点和两个子节点来创建一个新场景:一个是:Timer和一个 :ref:`Sprite "
-"<class_Sprite>`。您可以使用Godot图标作为Sprite的纹理，或者其他您喜欢的任意图"
-"像。"
+"要查看信号是如何工作的，我们可以尝试使用 :ref:`Timer <class_Timer>` 节点。使"
+"用一个节点和两个子节点来创建一个新场景：一个Timer，和一个 :ref:`Sprite "
+"<class_Sprite>` 。在场景驳接（ Scene dock）中，重命名节点为TimerExample。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -3749,9 +3750,8 @@ msgstr ""
 "的方式进行连接。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "要通过代码发出信号，使用 ``emit`` 函数:"
+msgstr "要通过代码发出信号，使用 ``emit_signal`` 函数:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
@@ -5889,7 +5889,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "使用控制节点设计界面"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -5899,9 +5898,7 @@ msgid ""
 msgstr ""
 "电脑显示器、手机和电视屏幕有各种形状和大小。要发布一款游戏，您需要支持不同的"
 "屏幕比例和分辨率。构建适应所有平台的响应式界面可能很困难。值得庆幸的是，Godot"
-"提供了强大的的工具来设计和管理响应性用户界面。要设计UI，您将使用控制节点。这"
-"些是编辑器中带有绿色图标的节点。它们有几十个，可以创建从生命条到复杂应用程序"
-"的任何东西。Godot的整个编辑器和插件都使用这些节点。"
+"提供了强大的的工具来设计和管理响应性用户界面。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -5912,9 +5909,8 @@ msgid "This guide will get you started with UI design. You will learn:"
 msgstr "本指南将让您从UI设计开始。您将学习:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
-msgstr "五个最有用的控制节点来构建您的游戏界面"
+msgstr "有五个最实用的控制节点来构建您的游戏界面"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
@@ -6067,9 +6063,8 @@ msgstr ""
 "否则，它的行为就像`Keep`mode。向后兼容的默认模式。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
-msgstr "`Scale`缩放纹理以适合节点的边框"
+msgstr "`Scale`缩放纹理以适应节点的边框。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 #, fuzzy
@@ -37502,7 +37497,6 @@ msgid ""
 msgstr "现在游戏角色有枪，让我们给他们一些有限的弹药。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:80
-#, fuzzy
 msgid ""
 "Firstly, we need to define a few variables in each of our weapon scripts."
 msgstr "首先，我们需要在每个武器脚本中定义一些变量。"
@@ -37522,9 +37516,8 @@ msgid ""
 msgstr "``spare_ammo``:我们为手枪留下的弹药量"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:92
-#, fuzzy
 msgid "``AMMO_IN_MAG``: The amount of ammo in a fully reloaded weapon/magazine"
-msgstr "``AMMO_IN_MAG``:完全重装武器/杂志中的弹药数量"
+msgstr "``AMMO_IN_MAG``：武器或弹仓完全重装后所容纳的弹药数量"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:94
 msgid "Now all we need to do is add a single line of code to ``fire_weapon``."
@@ -37758,7 +37751,7 @@ msgid ""
 "magazine."
 msgstr ""
 "如果游戏角色有足够的弹药来填充武器，我们从 ``spare_ammo`` 中移除所需的弹药，"
-"然后将'ammo_in_weapon``设置为完整的武器/杂志。"
+"然后将 ``ammo_in_weapon`` 设置为武器/弹仓的满载值。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:247
 #, fuzzy
@@ -39351,7 +39344,6 @@ msgstr ""
 "``current_weapon_name`` 之前没有使用 ``UNARMED`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:602
-#, fuzzy
 msgid ""
 "Next, we check to see if the current weapon can be refilled. If the current "
 "weapon can, we add a full clip/magazine worth of ammo to the weapon by "
@@ -39359,8 +39351,8 @@ msgid ""
 "clips we're adding (``additional_ammo``)."
 msgstr ""
 "接下来我们检查当前的武器是否可以重新填充。 如果当前的武器可以，我们通过将当前"
-"武器的“AMMO_IN_MAG”变量乘以我们正在添加的大量弹药片段(``additional_ammo``)来"
-"为武器添加一个完整的弹片/杂志。"
+"武器的 ``AMMO_IN_MAG`` 变量乘以额外的弹夹数目（``additional_ammo``），来为武"
+"器添加完整的弹夹/弹仓所容纳的弹药量。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:607
 #, fuzzy
@@ -62008,6 +62000,9 @@ msgid ""
 "by the CanvasItem of Spatial shader. They contain only a vertex processor "
 "function that outputs multiple properties (see built-ins below)."
 msgstr ""
+"粒子着色器是独特的，因为它们不用于绘制对象本身；被用来计算粒子的性质，然后由"
+"空间着色器的画布组件使用。它们只包含一个顶点处理器函数，输出多个属性的内置函"
+"数(见下文)。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:16
 msgid ""
@@ -62019,6 +62014,10 @@ msgid ""
 "shaders that discard the data they have calculated once they draw to the "
 "frame buffer."
 msgstr ""
+"粒子着色器使用转换反馈着色器，这是一种单独运行的特殊类型的顶点着色器。它像普"
+"通顶点着色器那样在缓冲区中接受数据，但是也输出到数据缓冲区，而不是输出到片段"
+"着色器进行像素处理。正因为如此，转换反馈着色器可以在每次运行时自行构建，与其"
+"他着色器不同，其他着色器一旦绘制到帧缓冲区，就会丢弃它们计算的数据。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:23
 msgid ""
@@ -62040,7 +62039,7 @@ msgstr "**disable_force**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:34
 msgid "Disable attractor force. (Not currently implemented in 3.1)"
-msgstr ""
+msgstr "禁用吸引力。(目前在3.1版本中未实现)"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:36
 msgid "**disable_velocity**"
@@ -62057,6 +62056,8 @@ msgid ""
 "``use_vertex_as_albedo`` to ``true``. In a ShaderMaterial, access it with "
 "the ``COLOR`` variable."
 msgstr ""
+"为了在空间材质中使用“颜色”变量，将“使用_顶点_作为_反照率”设置为“真”值。在空间"
+"材质中，使用“颜色”变量访问它。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
 #, fuzzy
@@ -62109,7 +62110,7 @@ msgstr "out vec4 **CUSTOM**"
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:63
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
-msgstr ""
+msgstr "自定义粒子数据。可从网格着色器作为**实例化_自定义**访问。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
 #, fuzzy
@@ -62182,24 +62183,29 @@ msgid ""
 "overview of shaders in Godot see the :ref:`Shading Reference Page <toc-"
 "shading-reference>`."
 msgstr ""
+"本系列教程将指导您编写第一个着色器。适用于没有着色器相关经验的人，想要从最基"
+"础开始。本教程不涉及高级主题，也不够全面。有关Godot中着色器的全面和详细概述，"
+"请参见:ref:`着色参考页面<toc-shading-reference>`。"
 
 #: ../../docs/tutorials/shading/your_first_shader/index.rst:10
 msgid ""
 "\"What are shaders\" gives you a high-level overview of what shaders are and "
 "how they fit into the rendering pipeline."
-msgstr ""
+msgstr "“什么是着色器”为您提供了着色器的高级概述，以及它们如何适合于渲染管道。"
 
 #: ../../docs/tutorials/shading/your_first_shader/index.rst:13
 msgid ""
 "The \"your first shader\" tutorials walk you through the process of writing "
 "a shader step-by-step."
-msgstr ""
+msgstr "“您的第一个着色器”教程，将逐步引导您完成编写着色器的过程。"
 
 #: ../../docs/tutorials/shading/your_first_shader/index.rst:16
 msgid ""
 "For a more general introduction into shaders and the OpenGL Shading "
 "Language, use `The Book of Shaders <https://thebookofshaders.com>`_."
 msgstr ""
+"有关着色器和OpenGL着色语言的更通俗的介绍，请参考`着色器手册 <https://"
+"thebookofshaders.com>`_。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:4
 #, fuzzy
@@ -62212,12 +62218,16 @@ msgid ""
 "can be used to create interesting effects that run incredibly fast. You have "
 "also likely heard that they are terrifying. Both are true."
 msgstr ""
+"你已经决定尝试编写着色器了。你可能已经听说过，它们可用来快速创造非常有趣的效"
+"果。可能也听说过它们很可怕。以上两种说法都对。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:13
 msgid ""
 "Shaders can be used to create a wide range of effects (in fact everything "
 "drawn in a modern rendering engine is done with shaders)."
 msgstr ""
+"着色器可以用来创建广泛的效果(事实上，现代渲染引擎中绘制的所有东西都是用着色器"
+"绘制的)。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:16
 msgid ""
@@ -62228,6 +62238,10 @@ msgid ""
 "still unintuitive and restricting, especially for users who are used to "
 "GDScript."
 msgstr ""
+"对于不熟悉着色器的人来说，编写着色器也是非常困难的。Godot试图通过公开许多有用"
+"的内置特性，并为您处理一些较低级别的初始化工作，使编写着色器变得更容易一些。"
+"然而，GLSL (OpenGL着色语言，也是Godot使用的)仍然是不直观和受限制的，特别是对"
+"于习惯使用GDScript的用户。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:22
 msgid "But what are they?"
@@ -62242,6 +62256,9 @@ msgid ""
 "rendering because they are optimized for running thousands of instructions "
 "in parallel."
 msgstr ""
+"着色器是一种在图形处理单元(GPU)上运行的特殊程序。大多数电脑都有GPU，一个集成"
+"到他们的CPU或离散的(这意味着它是一个单独的硬件组件，例如，标准显卡)。GPU对于"
+"呈现特别有用，因为它们被优化为并行运行数千条指令。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:29
 msgid ""
@@ -62253,24 +62270,29 @@ msgid ""
 "or corner of a Sprite) goes and the fragment shader decides what color "
 "individual pixels receive."
 msgstr ""
+"着色器的输出通常是绘制到视图端口的对象的彩色像素。但是一些着色器允许特殊的输"
+"出(对于像Vulkan这样的应用程序接口尤其如此)。着色器在着色器管道中操作。标准流"
+"程是顶点->片段着色器管道。顶点着色器用于决定每个顶点的位置(3D模型中的点，或者"
+"精灵的一角)去和片段着色器决定什么颜色个别像素接收。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:35
 msgid ""
 "Suppose you want to update all the pixels in a texture to a given color, on "
 "the CPU you would write:"
-msgstr ""
+msgstr "假设你想要将纹理中的所有像素更新为给定的颜色，你可以在CPU上这样写："
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:43
 msgid ""
 "In a shader you are given access only to the inside of the loop so what you "
 "write looks like this:"
-msgstr ""
+msgstr "在着色器中，你只能访问循环的内部，所以你写的是这样的："
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:52
 msgid ""
 "You have no control over how this function is called. So you have to design "
 "your shaders differently from how you would design programs on the CPU."
 msgstr ""
+"您无法控制如何调用此函数。您必须设计不同于在中央处理器上设计程序的着色器。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:55
 msgid ""
@@ -62281,6 +62303,10 @@ msgid ""
 "parallel, as they do not depend on each other. This lack of flexibility is "
 "designed to work with the GPU which allows shaders to be incredibly fast."
 msgstr ""
+"着色器管道的一个后果是，您无法访问着色器上次运行的结果，您无法从正在绘制的像"
+"素中访问其他像素，而且不能在当前绘制的像素之外编写。这使得GPU能够并行地为不同"
+"的像素执行着色器，因为他们彼此不耦合。这种灵活性的缺乏是为GPU的工作设计，使着"
+"色器难以置信的快。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:62
 msgid "What can they do"
@@ -62288,31 +62314,31 @@ msgstr "它会干"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:64
 msgid "position vertices very fast"
-msgstr ""
+msgstr "快速定位顶点"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:65
 msgid "compute color very fast"
-msgstr ""
+msgstr "快速上色"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:66
 msgid "compute lighting very fast"
-msgstr ""
+msgstr "快速计算光照"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:67
 msgid "lots and lots of math"
-msgstr ""
+msgstr "还有大量的数学知识"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:70
 msgid "What can't they do"
-msgstr ""
+msgstr "无法做到的事"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:72
 msgid "draw outside mesh"
-msgstr ""
+msgstr "绘制外部网格"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:73
 msgid "access other pixels from current pixel (or vertices)"
-msgstr ""
+msgstr "从当前像素(或顶点)访问其他像素"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:74
 #, fuzzy
@@ -62321,7 +62347,7 @@ msgstr "其他考虑"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:75
 msgid "update on the fly (they can, but they need to be compiled)"
-msgstr ""
+msgstr "动态更新(可以，但是需要编译)"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:78
 #, fuzzy
@@ -62333,12 +62359,16 @@ msgid ""
 "In Godot, shaders are made up of 3 main functions: the ``vertex()`` "
 "function, the ``fragment()`` function and the ``light()`` function."
 msgstr ""
+"在Godot中，着色器由3个主要函数组成:“vertex()”函数，“fragment()”和“light()”函"
+"数。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:83
 msgid ""
 "The ``vertex()`` function runs over all the vertices in the mesh and sets "
 "their positions as well as some other per-vertex variables."
 msgstr ""
+"“vertex()”函数运行在网格中的所有顶点上，并设置它们的位置以及部分其他每个顶点"
+"的变量。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:86
 msgid ""
@@ -62347,12 +62377,17 @@ msgid ""
 "variables from the ``vertex()`` function are interpolated between the "
 "vertices to provide the values for the ``fragment()`` function."
 msgstr ""
+"函数的作用是:为网格所覆盖的每个像素运行“fragment()”函数。它使用“vertex()”函数"
+"中的变量来运行。“vertex()”函数中的变量在顶点之间进行插值，以提"
+"供“fragment()”函数的值。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:90
 msgid ""
 "The ``light()`` function runs for every pixel and for every light. It takes "
 "variables from the ``fragment()`` function and from previous runs of itself."
 msgstr ""
+"“light()”函数用于每个像素和每束光照。它从“fragment()”函数和以前的运行中获取变"
+"量。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:93
 #, fuzzy
@@ -62376,6 +62411,10 @@ msgid ""
 "quickly, but only when many or all cores are doing the same calculation at "
 "once, but with different data."
 msgstr ""
+"GPU渲染图形的速度要比CPU快得多，原因如下:但最值得注意的是，它们能够大规模并行"
+"运行计算。CPU通常有4或8个内核，而GPU通常有数千个。这意味着GPU可以一次完成数百"
+"项任务。GPU架构师已经利用了这种方式，允许快速地进行许多计算，但只有当多个或所"
+"有核心同时进行相同的计算时，但数据不同。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:104
 msgid ""
@@ -62392,6 +62431,13 @@ msgid ""
 "rendering time will decrease. On a GPU, you have to speed up the entire "
 "wavefront to speed up rendering."
 msgstr ""
+"这就是着色器的作用。GPU会同时调用着色器很多次，然后对不同的数据位(顶点或像素)"
+"进行操作。这些数据束通常被称为波前。一个着色器将在波前运行相同的每一个线程。"
+"例如，如果给定的GPU可以处理每个波前100个线程，波前将一起运行在一个10x10像素块"
+"上。它将继续运行在波前的所有像素，直到它们完成。因此，如果你有一个像素比其他"
+"像素慢(由于过度分支)，整个区域都会减速，导致渲染时间大大降低。这与基于CPU的操"
+"作不同，在CPU上，如果你能加快哪怕一个像素，整个渲染时间都会减少。在GPU上，你"
+"必须加速整个波前来加速渲染。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:4
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:51

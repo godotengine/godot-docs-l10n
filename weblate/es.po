@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Agustin Ostorero <panconmayonesa56@gmail.com>, 2018.
 # Alan Arrecis <alan.arrecis@gmail.com>, 2018.
 # Alberto Jimenez <ajimaenezpac2017@my.fit.edu>, 2019.
 # Aldo Orozco <orozcotransferencias@gmail.com>, 2019.
@@ -11,7 +12,7 @@
 # Andrus Diaz German <andrusdiazaleman@gmail.com>, 2018.
 # Ángel Sillero Navajas <xenmai95@gmail.com>, 2019.
 # AnyMan <romopua@gmail.com>, 2018-2019.
-# Agustin Ostorero <panconmayonesa56@gmail.com>, 2018.
+# AracnidKnight <jjifernandezcubillos@gmail.com>, 2019.
 # Avocado <avocadosan42@gmail.com>, 2018-2019.
 # Cameron Toms <cameron.toms@gmail.com>, 2018.
 # Carlos Roberto Rojas C <carlosroberto.rojas@gmail.com>, 2018.
@@ -53,6 +54,7 @@
 # Kevin Soto Vallejo <siguemek@gmail.com>, 2018.
 # korge Rodriguez <jorge.3dcomv@gmail.com>, 2018.
 # LuisHerasme <luis.alberto.herasme.cuevas@gmail.com>, 2019.
+# Marcos Yeguez <marcos2687@gmail.com>, 2019.
 # Max R.R. Collada <mrdguezc@gmail.com>, 2018.
 # Nahum Rosillo Lopez <nahum.rosillolopez@gmail.com>, 2018.
 # Oscar Vila <codemoscar@gmail.com>, 2018.
@@ -77,8 +79,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-02 14:18+0200\n"
-"PO-Revision-Date: 2019-07-02 12:05+0000\n"
-"Last-Translator: Peter Mx <pedroada31@gmail.com>\n"
+"PO-Revision-Date: 2019-07-12 03:01+0000\n"
+"Last-Translator: Javier Ocampos <xavier.ocampos@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -25202,12 +25204,15 @@ msgstr "Configurar el entorno de Compilación Personalizada"
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:22
 msgid "Go to the Project menu, and install the *Custom Build* template:"
 msgstr ""
+"Ve al menu de Proyectos e instala la plantilla *Estructura Personalizada*:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:26
 msgid ""
 "Make sure export templates are downloaded. If not, this menu will aid you to "
 "do it."
 msgstr ""
+"Asegurese de que las platillas exportadas esten descargadas. Si no lo estan, "
+"este menu te ayudara a hacerlo."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:28
 msgid ""
@@ -25217,10 +25222,15 @@ msgid ""
 "ref:`create your own add-ons<doc_android_plugin>`, or you really need to "
 "modify the project."
 msgstr ""
+"Esto creara un poyecto Android, basado en Gradle, en *\"res://android/build"
+"\"*, y creara un archivo .gdignore en *\"res://android\"* para que el "
+"sistema de archivos de Godot ignore esta carpeta. No es necesario editar "
+"estos archivos, a no ser que quiera :ref:`create your own add-"
+"ons<doc_android_plugin>`, o realmente necesite modificar el proyecto."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:31
 msgid "Install the Android SDK (Command Line Version)"
-msgstr ""
+msgstr "Instala el Android SDK (Versión de linea de comandos)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:33
 msgid ""
@@ -25230,10 +25240,15 @@ msgid ""
 "is easier but it requires downloading and installing Android Studio (which "
 "may require more than 1gb of storage)."
 msgstr ""
+"Estos son los pasos para la instalación de Android SDK usando la línea de "
+"comandos. La gran ventaja de este método es la simplicidad y el pequeño "
+"tamaño de descarga/instalación. Aunque puede ser algo mas desafiante. El "
+"enfoque de Android Studio es mas fácil, pero este requiere la descarga e "
+"instalación de Android Studio (Lo cual puede requerir mas de 1gb de espacio)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:36
 msgid "Install Java"
-msgstr ""
+msgstr "Instala Java"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:38
 msgid ""
@@ -25242,6 +25257,10 @@ msgid ""
 "otherwise Oracle's Java SDK for version 8 will work. Later versions may not "
 "work for Android development."
 msgstr ""
+"Android SDK no viene con Java, así que necesita ser instalado manualmente. "
+"Instala Java SDK (**no** runtime o JRE). OpenSDK 8 es recomendado, de otra "
+"manera Java SDK 8 de Oracle funcionara. Versiones posteriores pueden no "
+"funcionar en desarrollo Android."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:41
 msgid "Download the command line tools"
@@ -25254,30 +25273,42 @@ msgid ""
 "download (if you do want it, read further down for instructions for doing "
 "the same using Android Studio)."
 msgstr ""
+"Ve al sitio web de Google para descargar Android SDK. Una búsqueda va a "
+"llevarte a la pagina de descarga de *Android Studio*. No es lo que quieres, "
+"asi que no lo descargues (Si lo quieres, lee mas abajo para las "
+"instrucciones de como hacer lo mismo usando Android Studio)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:46
 msgid ""
 "Look in that page for the *Command Line Tools*. Currently, they are listed "
 "under *Download Options*. Scroll down a bit until you see them."
 msgstr ""
+"Mira en la pagina por *Herramientas de la Línea de Comandos*. Por ahora, "
+"están listadas bajo *Opciones de Descarga*. Baja un poco hasta que las veas."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:50
 msgid ""
 "Download the zip file for your platform, inside there will be a single "
 "*tools* folder:"
 msgstr ""
+"Descarga el archivo zip para tu plataforma, dentro habrá una sola carpeta de "
+"*herramientas*:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:54
 msgid ""
 "This may appear a little confusing, but be sure to follow these instructions "
 "carefully:"
 msgstr ""
+"Esto puede parecer un poco confuso, pero asegúrate de seguir estas "
+"instrucciones con cuidado:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:56
 msgid ""
 "Create a new folder anywhere you want named *android-sdk* (it **must** be an "
 "empty directory). On Windows,"
 msgstr ""
+"Crea un nuevo directorio,en cualquier que quieras nombrado *android-sdk* "
+"(**debe** ser un directorio vacío). En Windows,"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:62
 msgid ""
@@ -25285,6 +25316,10 @@ msgid ""
 "The only thing in the directory you created in the previous step should be "
 "the *tools* folder with it's contents inside, like this:"
 msgstr ""
+"a menudo es suficiente. Descomprime el *archivo sdk zip* que acabas de "
+"descargar allí. La única cosa en el directorio que creaste en el anterior "
+"paso debería ser el directorio *tools* con sus contenidos dentro, tal que "
+"así:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:72
 msgid "Accepting the Licenses"
@@ -25295,6 +25330,8 @@ msgid ""
 "Everything would be more or less rosy up to here, but in order to even do "
 "anything, Google requires you to accept its licenses."
 msgstr ""
+"Todo debería ser mas o menos prometedor hasta aquí, pero en orden para "
+"incluso hacer algo, Google requiere que aceptes sus licencias."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:76
 msgid ""
@@ -25303,25 +25340,34 @@ msgid ""
 "folder (instructions provided for Windows users, as Unix users are expected "
 "to understand how command line navigation works):"
 msgstr ""
+"Para hacer esto, el *sdkmanager* debe ejecutarse desde línea de comandos con "
+"un argumento especial. Navegar al directorio *tools/bin* dentro de la "
+"carpeta sdk (instrucciones proporcionadas para usuarios de Windows, ya que "
+"se espera que los usuarios de Unix entiendan cómo funciona la navegación por "
+"la línea de comandos):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:80
 msgid "Then open a command line window:"
-msgstr ""
+msgstr "Luego abre una venta de linea de comandos:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:84
 msgid "In there, manually run sdkmanager with the \"--licenses\" argument:"
-msgstr ""
+msgstr "Ahí, ejecuta manualmente sdkmanager con el argumento \"--licenses\":"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:88
 msgid ""
 "This will ask you to accept several licenses, just write *\"y\"* and press "
 "*enter* on every of them until it's done."
 msgstr ""
+"Este te preguntara por la aceptación de varias licencias, solamente escribe *"
+"\"y\"* y presiona *enter* en cada uno de ellos hasta que termine."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:90
 msgid ""
 "Afterwards, install the platform tools (this is needed to install *adb*):"
 msgstr ""
+"Después, instala las herramientas de plataforma (esto es necesario para "
+"instalar *adb*):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:96
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:166
@@ -25333,16 +25379,21 @@ msgid ""
 "Once *platform tools* are installed, the last step is to generate a debug "
 "keystore (this is needed to build). Go up two folders by writing:"
 msgstr ""
+"Una vez se hayan instalado las *herramientas de plataforma*, el último paso "
+"es generar un debug keystore (esto es necesario para la compilación). Sube "
+"dos carpetas escribiendo:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:105
 msgid "(or open a new shell on the *android-sdk* folder)."
-msgstr ""
+msgstr "(o abre una nueva consola en la carpeta *android-sdk*)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:107
 msgid ""
 "And you need to input the following line (on Unixes this should work out of "
 "the box, for Windows there are further instructions below):"
 msgstr ""
+"Y necesitarás la entrada de la siguiente línea (En Unix esto debería "
+"funcionar fuera de la caja, para Windows hay mas instrucciones abajo):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:113
 msgid ""
@@ -25350,6 +25401,9 @@ msgid ""
 "added at the beginning on the line if you use PowerShell, it's not needed "
 "for regular console)."
 msgstr ""
+"En Windows, se debe proporcionar la ruta de acceso completa a Java (y debe "
+"agregarse & al principio en la línea si PowerShell es usado, no es necesario "
+"para la consola normal)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:115
 msgid ""
@@ -25357,6 +25411,9 @@ msgid ""
 "(by adding & and the full Java Path to keytool.exe). Again, keep in mind "
 "that you need Java installed:"
 msgstr ""
+"Para hacerlo mas claro, aquí hay una captura de la línea que funciona en "
+"PowerShell (añadiendo un & y la ruta completa de Java a keytool.exe). "
+"Nuevamente, mantén en mente que necesitas Java instalado:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:119
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:186
@@ -25377,6 +25434,8 @@ msgid ""
 "Go to the *Editor Settings* and set up a few fields in *Export -> Android*. "
 "Make sure they look like the following:"
 msgstr ""
+"Ve a *Configuración del editor* y define algunos campos en *Export -> "
+"Android*. Asegúrate que se vea como se muestra a continuación:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:129
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:196
@@ -25394,15 +25453,18 @@ msgid ""
 "created, or inside the Java install. For Unix users, *jarsigner* is often in "
 "\"/usr/bin\"."
 msgstr ""
+"Como se puede ver, la mayoría de las direcciones van, o dentro de *android-"
+"sdk* que creaste originalmente, o dentro de la instalación de Java. Para "
+"usuarios de Unix, *jarsigner* está usualmente en \"/usr/bin\"."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:134
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:201
 msgid "With this, you should be all set."
-msgstr ""
+msgstr "Con todo esto, ya deberías estar preparado."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:138
 msgid "Install the Android SDK (Android Studio)"
-msgstr ""
+msgstr "Instalar Android SDK (Android Studio)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:140
 msgid ""
@@ -25411,6 +25473,11 @@ msgid ""
 "up more disk space. It's also useful if you plan to develop Godot for "
 "Android (modify the Java source code) or if you plan to develop Add-Ons."
 msgstr ""
+"Si acabas de instalar el SDK a través de las herramientas de línea de "
+"comandos, no dudes en saltarte esta sección por completo. La ruta de Android "
+"Studio es más fácil, pero ocupa más espacio en disco. También es útil si "
+"planeas desarrollar Godot para Android (modificar el código fuente de Java) "
+"o si planeas desarrollar Add-Ons."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:143
 msgid "Download and Install Android Studio"
@@ -25421,24 +25488,33 @@ msgid ""
 "Download the latest version of Android Studio. When installing, pay "
 "attention to where the *android-sdk* directory is created."
 msgstr ""
+"Descarga la última versión de Android Studio. En la instalación, presta "
+"atención en dónde el directorio *android-sdk* es creado."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:149
 msgid ""
 "This is funny, the path it proposes by default contains whitespace (and "
 "complains about it). It must be changed."
 msgstr ""
+"Esto es divertido, la dirección que propone por defecto contiene espacio (y "
+"se queja de ello). Debe ser cambiada."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:151
 msgid ""
 "In any case, it's better to select a different path inside your user "
 "folders. The recommended one is usually:"
 msgstr ""
+"En cualquier caso, será mejor seleccionar un camino diferente dentro de tus "
+"archivos de usuarios. El recomendado es usualmente:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:157
 msgid ""
 "Replace *yourusername* by your actual user name. Once it's correct, select "
 "from the list above in the same screen:"
 msgstr ""
+"Reemplaza *yourusername* por tu nombre de usuario real. Cuando todo esté "
+"correcto, selecciona una de las opciones de la lista anterior en la misma "
+"pantalla:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:159
 msgid "Android SDK"
@@ -25446,25 +25522,31 @@ msgstr "Android SDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:160
 msgid "Android SDK Platform"
-msgstr ""
+msgstr "Android SDK Platform"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:162
 msgid ""
 "The rest are not needed, because the build system will fetch them itself. "
 "After selecting them, go on with the installation."
 msgstr ""
+"El resto no son necesarios, porque el sistema de armado los extraerá él "
+"mismo. Después de seleccionarlos, continua con la instalación."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:168
 msgid ""
 "You thought that by going the Android Studio way you could escape the "
 "Keystore generation, but no. It's back to haunt you."
 msgstr ""
+"Pensaste que por ir por la ruta de Android Studio podrías escapar de la "
+"generación de Keystore, pero no. Ha vuelto para embrujarte."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:170
 msgid ""
 "Go to the folder where you installed android-sdk in the previous step, use "
 "File Explorer and open a command line tool there:"
 msgstr ""
+"Ve al archivo donde instalaste android-sdk en el paso previo, usa el "
+"Explorador de Archivos y abre una herramienta de línea de comandos allí:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:174
 msgid ""
@@ -25472,6 +25554,9 @@ msgid ""
 "out of the box, but on Windows it needs additional details (keep reading "
 "afterwards)."
 msgstr ""
+"La línea de comandos a escribir es la siguiente. En Unix esto debería de "
+"funcionar fuera de la caja, pero en Windows se necesitan detalles "
+"adicionales (lee a continuación)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:180
 msgid ""
@@ -25480,6 +25565,10 @@ msgid ""
 "for regular commandline). Don't worry, at least by using Android Studio on "
 "Windows, Java comes bundled with it."
 msgstr ""
+"En Windows, el camino completo a Java debe ser provisto (y un & necesita ser "
+"añadido al comienzo de la línea si ocupas PowerShell, no es necesario en la "
+"línea de comandos regular). No te preocupes, al menos por usar Android "
+"Studio en Windows, Java viene con él."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:182
 msgid ""
@@ -25488,16 +25577,22 @@ msgid ""
 "you use regular console). It uses a path to the Java version that comes with "
 "Android Studio:"
 msgstr ""
+"Para hacerlo mas claro, aquí hay una captura de una línea que funciona en "
+"PowerShell (añadiendo un & y la ruta completa de Java a keytool.exe, remueve "
+"& si ocupas la consola regular). Usa una ruta a la versión de Java que viene "
+"con Android Studio:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:205
 msgid "Enabling Custom Build and Exporting"
-msgstr ""
+msgstr "Habilitar Compilación y Exportación Personalizada"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:207
 msgid ""
 "When setting up the Android project in the *Project -> Export* dialog, "
 "*custom build* needs to be enabled:"
 msgstr ""
+"Cuando configures el proyecto Android en el cuadro de diálogo *Project -> "
+"Export*, es necesario activar *custom build*:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:211
 msgid ""
@@ -25505,12 +25600,17 @@ msgid ""
 "the *Gradle* build system to generate fresh templates (this window will "
 "appear every time):"
 msgstr ""
+"Por ahora, intentar exportar el proyecto o un despliegue de un clic va a "
+"llamar el sistema de construcción *Gradle* para generar plantillas frescas "
+"(esta ventana aparecerá cada vez):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:215
 msgid ""
 "The templates built will be used automatically afterwards, so no further "
 "configuration is needed."
 msgstr ""
+"Las plantillas construidas serán usadas automáticamente después, así que no "
+"es necesaria mas configuración."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for Windows"
@@ -68043,7 +68143,6 @@ msgstr ""
 "variables:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1145
-#, fuzzy
 msgid ""
 "``bomb_mesh``: The :ref:`MeshInstance <class_MeshInstance>` used for the "
 "bomb mesh."
@@ -68093,9 +68192,8 @@ msgstr ""
 "la explosión."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1152
-#, fuzzy
 msgid "``explode``: A boolean for tracking whether the bomb has exploded."
-msgstr "``explode``: Una boolean para rastrear si la bomba ha explotado."
+msgstr "``explode``: Booleano para detectar si la bomba ha explotado."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1153
 msgid "``fuse_particles``: The fuse :ref:`Particles <class_Particles>` node."

@@ -33,8 +33,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-02 14:18+0200\n"
-"PO-Revision-Date: 2019-07-02 12:05+0000\n"
-"Last-Translator: moolow <copyhyeon@gmail.com>\n"
+"PO-Revision-Date: 2019-07-15 15:56+0000\n"
+"Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
 "Language: ko\n"
@@ -320,8 +320,8 @@ msgstr ""
 "Godot 엔진은 통일된 하나의 인터페이스 안에서 2D 및 3D 게임을 만들 수 있는, 기"
 "능이 포장된 크로스 플랫폼 게임 엔진입니다. 이 엔진은 사용자가 바퀴를 재 발명"
 "할 필요 없이 게임을 만드는 데 집중할 수 있도록 종합적인 도구들을 제공합니다. "
-"만든 게임은 클릭 한 번으로 주요 데스크톱 플랫폼(리눅스, macOS, 윈도우)은 물"
-"론 모바일(안드로이드, iOS) 및 웹 기반(HTML 5) 플랫폼으로 내보낼 수 있습니다."
+"만든 게임은 클릭 한 번으로 주요 데스크톱 플랫폼(Linux, macOS, Windows)은 물"
+"론 모바일(Android, iOS) 및 웹 기반(HTML 5) 플랫폼으로 내보낼 수 있습니다."
 
 #: ../../docs/about/introduction.rst:45
 msgid ""
@@ -411,7 +411,7 @@ msgid ""
 "also contains the :ref:`doc_faq`."
 msgstr ""
 ":ref:`sec-general` 섹션은 이 소개문과 엔진의 역사, 라이선스, 제작자 등 기본적"
-"인 정보를 담고 있습니다. :ref:`doc_faq` 도 여기 속합니다."
+"인 정보를 담고 있습니다. :ref:`doc_faq`\\ 도 여기 속합니다."
 
 #: ../../docs/about/introduction.rst:86
 msgid ""
@@ -440,7 +440,7 @@ msgid ""
 "developing C++ modules or editor plugins."
 msgstr ""
 ":ref:`sec-devel` 섹션은 고급 사용자와 엔진 개발 기여자들을 위한 섹션으로 엔"
-"진 컴파일, C++ 모듈 혹은 에디터 플러그인 개발에 대한 정보를 담고 있습니다."
+"진 컴파일, C++ 모듈 혹은 편집기 플러그인 개발에 대한 정보를 담고 있습니다."
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -463,7 +463,7 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
-"마지막으로 :ref:`sec-class-ref`\\ 는 Godot API 문서로 엔진의 스크립트 에디터"
+"마지막으로 :ref:`sec-class-ref`\\ 는 Godot API 문서로 엔진의 스크립트 편집기"
 "에서도 바로 읽어볼 수 있습니다. 이 섹션은 엔진 소스 저장소에 있는 파일에서 자"
 "동으로 생성되기 때문에 생성된 문서 파일은 직접 수정하지 않습니다. 자세한 내용"
 "은 :ref:`doc_updating_the_class_reference`\\ 을 확인하세요."
@@ -574,13 +574,13 @@ msgstr "Godot는 어떤 플랫폼을 지원하나요?"
 
 #: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
-msgstr "**에디터의 경우:**"
+msgstr "**편집기의 경우:**"
 
 #: ../../docs/about/faq.rst:35
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:39
 #: ../../docs/tutorials/misc/jitter_stutter.rst:53
 msgid "Windows"
-msgstr "윈도우"
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 #: ../../docs/tutorials/misc/jitter_stutter.rst:78
@@ -589,7 +589,7 @@ msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
-msgstr "X11 (리눅스, \\*BSD)"
+msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:39
 msgid "**For exporting your games:**"
@@ -597,13 +597,13 @@ msgstr "**내보내는 게임들의 경우:**"
 
 #: ../../docs/about/faq.rst:41
 msgid "Windows (and UWP)"
-msgstr "윈도우 (그리고 UWP)"
+msgstr "Windows (그리고 UWP)"
 
 #: ../../docs/about/faq.rst:44
 #: ../../docs/getting_started/step_by_step/exporting.rst:186
 #: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "Android"
-msgstr "안드로이드"
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:45
 #: ../../docs/getting_started/step_by_step/exporting.rst:238
@@ -626,7 +626,7 @@ msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
-"또한 Raspberry Pi같은, 리눅스의 ARM 기반 시스템에서도 Godot를 성공적으로 사용"
+"또한 Raspberry Pi같은, Linux의 ARM 기반 시스템에서도 Godot를 성공적으로 사용"
 "했다는 일부 사용자들의 보고가 있습니다."
 
 #: ../../docs/about/faq.rst:54
@@ -844,7 +844,7 @@ msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
-"코드 완성, 실시간 편집 등을 지원하기 위한 코드 에디터와의 결합이 (전부) 까다"
+"코드 완성, 실시간 편집 등을 지원하기 위한 코드 편집기와의 결합이 (전부) 까다"
 "롭습니다. GDScript는 이 부분이 아주 잘 지원됩니다."
 
 #: ../../docs/about/faq.rst:142
@@ -937,7 +937,7 @@ msgstr ""
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
-msgstr "다양한 해상도와 화면비에 대응하려면 어떻게 에셋을 만들어야 할까요?"
+msgstr "다양한 해상도와 화면비에 대응하려면 어떻게 애셋을 만들어야 할까요?"
 
 #: ../../docs/about/faq.rst:181
 msgid ""
@@ -950,11 +950,10 @@ msgid ""
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
 "이 질문은 자주 나타났고 애플이 기기의 해상도를 원래 두배로 했기 때문에 나온 "
-"오해이므로 다행일지도 모릅니다. 이때문에 사람들이 같은 에셋을 다른 해상도로 "
+"오해이므로 다행일지도 모릅니다. 이때문에 사람들이 같은 애셋을 다른 해상도로 "
 "만드는 것이 좋은 생각으로 여기고, 많은 사람들이 그렇게 했습니다. 그것은 원래 "
 "애플 기기에서만 효과가 나타났습니다, 하지만 다양한 해상도와 종횡비를 가진 몇"
-"몇 안드로이드와 애플 기기가 만들어졌습니다, 매우 큰 화면과 해상도를 가지면서"
-"요."
+"몇 Android와 애플 기기가 만들어졌습니다, 매우 큰 화면과 해상도를 가지면서요."
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -979,7 +978,7 @@ msgstr ""
 "게임을 위한 기본 해상도를 고르세요. 해상도가 2K까지 올라가는 기기나 400p까지 "
 "내려가는 기기가 있더라도, 여러분들의 기기 안에 있는 정규 하드웨어 스케일링은 "
 "이 점을 퍼포먼스 비용으로 다루진 않을 겁니다. 대부분의 선택은 1080p "
-"(1920x1080)이나 720p (1280x720) 근처입니다. 해상도가 높을수록, 에셋은 더 커지"
+"(1920x1080)이나 720p (1280x720) 근처입니다. 해상도가 높을수록, 애셋은 더 커지"
 "고, 더 많은 메모리를 먹고 더 긴 로딩이 걸릴 것이니 명심하십시오."
 
 #: ../../docs/about/faq.rst:201
@@ -1038,8 +1037,8 @@ msgid ""
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Godot 에디터 플러그인 제작이나 추가적인 언어 지원을 하고 싶으시다면, :ref:`에"
-"디터 플러그인 <doc_making_plugins>`\\ 과 tool 스크립트를 참고하세요."
+"Godot 편집기 플러그인 제작이나 추가적인 언어 지원을 하고 싶으시다면, :ref:`편"
+"집기 플러그인 <doc_making_plugins>`\\ 과 tool 스크립트를 참고하세요."
 
 #: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
@@ -1089,9 +1088,9 @@ msgid ""
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
 "처음으로 시작해야 할 부분은 `issues <https://github.com/godotengine/godot/"
-"issues>`_ 입니다. 당신이 공감할만한 이슈를 찾으신 다음, 변경사항과 함께 Pull "
-"Request (PR)를 포크 요청, 수정 및 제출하는 법을 배우기 위해 `기여하는 방법 "
-"<https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
+"issues>`_\\ 입니다. 당신이 공감할만한 이슈를 찾으신 다음, 변경사항과 함께 "
+"Pull Request (PR)를 포크 요청, 수정 및 제출하는 법을 배우기 위해 `기여하는 방"
+"법 <https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
 "md#contributing-pull-requests>`_ 가이드를 진행하세요."
 
 #: ../../docs/about/faq.rst:249
@@ -1111,7 +1110,7 @@ msgid ""
 "community members."
 msgstr ""
 "Godot로 아이디어를 가져오는 것이, 마치 거대한 핵심 변화를 가져오거나, 다른 종"
-"류의 게임 엔진을 흉내 내거나, 에디터에 내장하길 원하는 대체 워크플로가 생기"
+"류의 게임 엔진을 흉내 내거나, 편집기에 내장하길 원하는 대체 워크플로가 생기"
 "는 것 같아서, 매력적일 것이라고 생각합니다. 이것들은 위대하고 그래서 우리는 "
 "그러한 사람들이 기여하길 원하는 것에 감사하고 있습니다, 하지만 Godot의 초점"
 "은 `로드맵 \n"
@@ -1434,7 +1433,7 @@ msgstr ":ref:`커스텀 포스트 프로세싱 <doc_custom_postprocessing>`"
 #: ../../docs/about/docs_changelog.rst:89
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr "셰이딩"
+msgstr "셰이딩(Shading)"
 
 #: ../../docs/about/docs_changelog.rst:91
 #, fuzzy
@@ -1659,7 +1658,7 @@ msgstr "단계별"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr "Godot 에디터 소개"
+msgstr "Godot 편집기 소개"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1694,7 +1693,7 @@ msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
-"창의 우측 상단의 지구본 아이콘을 눌러 에디터에서 사용할 언어를 변경하실 수 있"
+"창의 우측 상단의 지구본 아이콘을 눌러 편집기에서 사용할 언어를 변경하실 수 있"
 "습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
@@ -1756,7 +1755,7 @@ msgid ""
 "you and open it in the editor."
 msgstr ""
 "오른쪽에 초록 불이 들어오면, 엔진이 빈 폴더를 감지했다는 것이므로 ``생성`` "
-"을 누릅니다. Godot는 프로젝트를 만들고 에디터에서 열어볼 것입니다."
+"을 누릅니다. Godot는 프로젝트를 만들고 편집기에서 열어볼 것입니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
 msgid ""
@@ -1764,7 +1763,7 @@ msgid ""
 "Double click on it to open it in the editor."
 msgstr ""
 "다음 번에 Godot를 키게 된다면, 당신의 새 프로젝트가 목록에 있을 겁니다. 더블 "
-"클릭으로 에디터를 실행시킵니다."
+"클릭으로 편집기를 실행시킵니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
@@ -1797,7 +1796,7 @@ msgstr "|image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
-msgstr "Godot 에디터와의 첫 만남"
+msgstr "Godot 편집기와의 첫 만남"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -1805,7 +1804,7 @@ msgid ""
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
-"Godot에 오신 것을 환영합니다! 프로젝트를 열고 당신은 3d 뷰포트가 켜진 에디터"
+"Godot에 오신 것을 환영합니다! 프로젝트를 열고 당신은 3d 뷰포트가 켜진 편집기"
 "의 인터페이스를 보고 계실 겁니다. 맨 위 인터페이스를 통해 현재 작업 공간을 바"
 "꿀 수 있습니다. 2D를 눌러 2D 작업 공간으로 바꾸세요."
 
@@ -1837,7 +1836,7 @@ msgid ""
 "project files and assets."
 msgstr ""
 "왼쪽에는 **파일 시스템 독(FileSystem dock)**\\ 이 있는데, 여기서 당신은 프로"
-"젝트 파일이나 에셋들을 관리할 수 있습니다."
+"젝트 파일이나 애셋들을 관리할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:153
@@ -1947,7 +1946,7 @@ msgid ""
 "to search the reference."
 msgstr ""
 "**Script** 작업 공간은 디버거, 많은 자동 완성 기능, 내장 코드 설명이 있는 완"
-"전한 코드 에디터입니다. F3 키로 들어가고, F4를 눌러 원하는 참조를 검색할 수 "
+"전한 코드 편집기입니다. F3 키로 들어가고, F4를 눌러 원하는 참조를 검색할 수 "
 "있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:125
@@ -1959,7 +1958,7 @@ msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
-"마지막으로 **AssetLib**\\ 은 프로젝트에 쓰일 무료 애드온, 스크립트 그리고 에"
+"마지막으로 **AssetLib**\\ 은 프로젝트에 쓰일 무료 애드온, 스크립트 그리고 애"
 "셋들이 있는 라이브러리입니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
@@ -1973,7 +1972,7 @@ msgid ""
 "Atom or Visual Studio for instance."
 msgstr ""
 "Godot의 인터페이스는 하나의 화면에 있습니다. 비록 여러개의 화면으로 분할 시"
-"킬 수는 없지만 대신 Atom과 Visual Studio와 같은 외부 코드 에디터를 사용할 수 "
+"킬 수는 없지만 대신 Atom과 Visual Studio와 같은 외부 코드 편집기를 사용할 수 "
 "있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
@@ -2007,7 +2006,7 @@ msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
-"더 보기 좋은 에디터를 만들고 싶다면 ``에디터`` 메뉴의 ``에디터 설정`` 으로 가"
+"더 보기 좋은 편집기를 만들고 싶다면 ``편집기`` 메뉴의 ``편집기 설정`` 으로 가"
 "십시오."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
@@ -2166,8 +2165,8 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
-"기본적으로 Godot 에디터는 **씬 에디터** 입니다. 2D와 3D 씬을 편집하기 위한 도"
-"구들과 사용자 인터페이스들이 많이 있지만, 에디터는 씬을 편집하는 것과 씬을 구"
+"기본적으로 Godot 편집기는 **씬 편집기** 입니다. 2D와 3D 씬을 편집하기 위한 도"
+"구들과 사용자 인터페이스들이 많이 있지만, 편집기는 씬을 편집하는 것과 씬을 구"
 "성하는 노드들이란 개념을 기반으로 둡니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
@@ -2181,7 +2180,7 @@ msgid ""
 "This will introduce us to using the editor."
 msgstr ""
 "예제를 통해 이런 추상적인 개념들을 더 구체화 시켜봅시다. 튜토리얼의 오랜 전통"
-"에 따라, 우리는 \"Hello World\" 프로젝트를 시작할 겁니다. 이를 통해 에디터를 "
+"에 따라, 우리는 \"Hello World\" 프로젝트를 시작할 겁니다. 이를 통해 편집기를 "
 "사용하는 법을 설명하겠습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
@@ -2205,14 +2204,14 @@ msgstr ""
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:43
 #: ../../docs/development/compiling/compiling_with_mono.rst:170
 msgid "Editor"
-msgstr "에디터"
+msgstr "편집기"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:96
 msgid ""
 "Once you've created the \"New Project\", then open it. This will open the "
 "Godot editor:"
 msgstr ""
-"\"새 프로젝트\"를 만들면, 프로젝트를 엽니다. 그러면 Godot 에디터가 켜질 것입"
+"\"새 프로젝트\"를 만들면, 프로젝트를 엽니다. 그러면 Godot 편집기가 켜질 것입"
 "니다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
@@ -2257,7 +2256,7 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
-"먼저, 씬이 2D 에디터로 바뀝니다 (Label은 2D 노드 타입이기 때문입니다), 그리"
+"먼저, 씬이 2D 편집기로 바뀝니다 (Label은 2D 노드 타입이기 때문입니다), 그리"
 "고 Label이 선택 된 채로, 뷰포트의 왼쪽 위에 보입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:127
@@ -2266,7 +2265,7 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
-"노드는 씬 트리 에디터에 나타납니다 (오른쪽 위 상자), 그리고 라벨 속성은 인스"
+"노드는 씬 트리 편집기에 나타납니다 (오른쪽 위 상자), 그리고 라벨 속성은 인스"
 "펙터에 나타납니다 (오른쪽 아래 상자)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
@@ -2700,7 +2699,7 @@ msgid ""
 "relationships."
 msgstr ""
 "다이어그램이 완성되었다면 게임을 만들 때 다이어그램에 있는 요소들에 대응되는 "
-"씬을 만들기를 권장합니다. 여기서 (코드를 사용해서, 아니면 에디터에서 직접) 인"
+"씬을 만들기를 권장합니다. 여기서 (코드를 사용해서, 아니면 편집기에서 직접) 인"
 "스턴스를 사용할 것입니다, 소유 관계를 위해서 말입니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
@@ -2725,7 +2724,7 @@ msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
-"좀 더 복잡한 예시를 들어보겠습니다. 한 번 에셋들도 많고, 중첩된 원소들이 많"
+"좀 더 복잡한 예시를 들어보겠습니다. 한 번 애셋들도 많고, 중첩된 원소들이 많"
 "은 오픈월드 게임을 살펴보죠:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:53
@@ -2767,9 +2766,9 @@ msgid ""
 "interface."
 msgstr ""
 "Godot라면, 당신은 씬을 만들고 그것을 인스턴스하면 되니까 작업을 쉽게 반복할 "
-"수 있습니다. 게다가, 에디터 UI는 프로그래머나 비 프로그래머에게도 친근하게 디"
+"수 있습니다. 게다가, 편집기 UI는 프로그래머나 비 프로그래머에게도 친근하게 디"
 "자인 되었습니다. 전형적인 개발 팀은 2D나 3D 아티스트, 레벨 디자이너, 게임 디"
-"자이너, 애니메이터를 포함하지만, 모두가 이 에디터 내에서 작업 할 수 있습니다."
+"자이너, 애니메이터를 포함하지만, 모두가 이 편집기 내에서 작업 할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"
@@ -2820,7 +2819,7 @@ msgid ""
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
 "Godot에서 \"메인\" 언어는 GDScript와 VisualScript입니다. 이들이 선택된 주된 "
-"이유는 Godot와 통합 능력이 좋기 때문입니다, 둘다 기본 에디터에서 매끄럽게 사"
+"이유는 Godot와 통합 능력이 좋기 때문입니다, 둘다 기본 편집기에서 매끄럽게 사"
 "용할 수 있습니다, 반면 C#과 C++는 별도의 IDE에서 편집해야 합니다. 당신이 정"
 "적 타입 언어를 좋아한다면, C#과 C++을 선택하세요."
 
@@ -2866,7 +2865,7 @@ msgid ""
 "The editor integration is a pleasure to work with, with code completion for "
 "nodes, signals, and many other items pertaining to the scene being edited."
 msgstr ""
-"에디터 통합은 노드, 시그널, 그리고 작업 중인 씬과 관련된 많은 항목들의 코드 "
+"편집기 통합은 노드, 시그널, 그리고 작업 중인 씬과 관련된 많은 항목들의 코드 "
 "완성을 작업하는 즐거움입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:31
@@ -3092,7 +3091,7 @@ msgid ""
 "Use the 2D editor to position and resize the Button and Label so that they "
 "look like the image below. You can set the text from the Inspector tab."
 msgstr ""
-"2D 에디터를 사용하여 Button 과 Label을 아래 이미지와 같이 배치하고 크기를 조"
+"2D 편집기를 사용하여 Button 과 Label을 아래 이미지와 같이 배치하고 크기를 조"
 "정합니다. 인스펙터 탭에서 텍스트를 설정할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:124
@@ -3158,7 +3157,7 @@ msgid ""
 "where a default template will be included:"
 msgstr ""
 "스크립트를 편집하려면 위 이미지에 강조 표시된 두 버튼 중 하나를 선택합니다. "
-"그러면 스크립트 에디터로 이동하고, 기본 템플릿이 나타납니다:"
+"그러면 스크립트 편집기로 이동하고, 기본 템플릿이 나타납니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -3210,7 +3209,7 @@ msgid ""
 msgstr ""
 "이 단계에서 우리는 \"pressed\" 시그널을 커스텀 기능에 연결할 겁니다. 먼저 연"
 "결 형식을 지정한 후에 두 번째로 커스텀 기능을 정의합니다. Godot에서는 연결하"
-"기 위한 2가지 방법을 제공합니다: 에디터에서 제공하는 시각적 인터페이스나 코드"
+"기 위한 2가지 방법을 제공합니다: 편집기에서 제공하는 시각적 인터페이스나 코드"
 "를 통해 사용자 지정 기능에 연결할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:191
@@ -3219,7 +3218,7 @@ msgid ""
 "let's cover how the editor interface works for future reference."
 msgstr ""
 "이 튜토리얼 시리즈의 나머지 부분에서는 코드 메서드를 사용하겠습니다만, 나중"
-"에 참고하기 위한 에디터 인터페이스가 어떻게 작동하는지에 대해서는 설명하겠습"
+"에 참고하기 위한 편집기 인터페이스가 어떻게 작동하는지에 대해서는 설명하겠습"
 "니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:194
@@ -3269,7 +3268,7 @@ msgid ""
 msgstr ""
 "기본적으로, 메서드의 이름은 방출하는 노드의 이름에 포함되어서 "
 "\"_on_[EmitterNode]_[signal_name]\"으로 표시됩니다 (이 경우에는 \"Button\"이"
-"죠). 만일 \"함수 만들기\" 버튼이 체크되어 있다면, 에디터는 연결을 설정하기 전"
+"죠). 만일 \"함수 만들기\" 버튼이 체크되어 있다면, 편집기는 연결을 설정하기 전"
 "에 함수를 생성할 겁니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:218
@@ -3696,7 +3695,7 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
-"Godot는 에디터에 각각의 스크립트를 등록하기 위한 \"스크립트 클래스\" 기능을 "
+"Godot는 편집기에 각각의 스크립트를 등록하기 위한 \"스크립트 클래스\" 기능을 "
 "갖고 있습니다. 기본적으로, 당신은 파일을 직접 불러와서 이름이 없는 스크립트"
 "에 액세스 할 수 있습니다."
 
@@ -3707,8 +3706,8 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
-"스크립트에 이름을 짓고 클래스의 이름과 함께 ``class_name`` 키워드를 통해 에디"
-"터의 타입으로 등록할 수 있습니다. 쉼표나 이미지로 향하는 선택적인 경로를 추가"
+"스크립트에 이름을 짓고 클래스의 이름과 함께 ``class_name`` 키워드를 통해 편집"
+"기의 타입으로 등록할 수 있습니다. 쉼표나 이미지로 향하는 선택적인 경로를 추가"
 "해 아이콘으로도 사용할 수 있습니다. 그런 뒤 노드나 리소스 생성 대화 상자에서 "
 "당신의 새 타입을 찾으실 수 있습니다."
 
@@ -3798,7 +3797,7 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
-"Sprite의 텍스쳐에는, Godot 아이콘이나 다른 원하는 이미지를 사용할 수 있습니"
+"Sprite의 텍스처에는, Godot 아이콘이나 다른 원하는 이미지를 사용할 수 있습니"
 "다. Sprite의 Texture 속성 드롭 다운 메뉴에서 ``불러오기``\\ 를 선택하면 됩니"
 "다. 스크립트를 루트 노드에 붙입니다, 하지만 아직 코드는 추가하지 마세요."
 
@@ -3900,8 +3899,8 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
-"에디터에서 뿐만 아니라 코드에서도 시그널 연결을 만들 수 있습니다. 보통은 코드"
-"를 통해 노드를 인스턴스할 때 필요하기 때문에 에디터에서 이런 시그널 연결을 만"
+"편집기에서 뿐만 아니라 코드에서도 시그널 연결을 만들 수 있습니다. 보통은 코드"
+"를 통해 노드를 인스턴스할 때 필요하기 때문에 편집기에서 이런 시그널 연결을 만"
 "들 수는 없습니다."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
@@ -3981,7 +3980,7 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
-"이 튜토리얼은 첫 Godot 프로젝트를 만드는 과정을 안내합니다. Godot 에디터가 어"
+"이 튜토리얼은 첫 Godot 프로젝트를 만드는 과정을 안내합니다. Godot 편집기가 어"
 "떻게 작동하는지, 프로젝트를 구성하는 방법, 2D 게임을 만드는 방법을 배우게 됩"
 "니다."
 
@@ -4034,8 +4033,8 @@ msgid ""
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
-"이 튜토리얼에서는 에디터에 대해 잘 알고 있다고 가정하겠습니다. :ref:"
-"`doc_scenes_and_nodes` 내용을 읽지 않은 경우, 프로젝트를 설정하고 에디터를 사"
+"이 튜토리얼에서는 편집기에 대해 잘 알고 있다고 가정하겠습니다. :ref:"
+"`doc_scenes_and_nodes` 내용을 읽지 않은 경우, 프로젝트를 설정하고 편집기를 사"
 "용하는 방법에 대해 배우러 가세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
@@ -4122,7 +4121,7 @@ msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
-"씬을 저장합니다. 씬 -> 씬 저장을 클릭하거나 윈도우/리눅스에서는 ``Ctrl+S`` "
+"씬을 저장합니다. 씬 -> 씬 저장을 클릭하거나 Windows/Linux에서는 ``Ctrl+S`` "
 "를, 맥에서는 ``Command+S`` 를 누릅니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:84
@@ -4171,7 +4170,7 @@ msgstr ""
 "\\ 는 표시할 수 있는 애니메이션 목록인 :ref:`SpriteFrames "
 "<class_SpriteFrames>` 리소스가 필요합니다. 만들려면 인스펙터에서 ``Frames`` "
 "속성을 찾아 \"[비었음]\" -> \"새 SpriteFrames\"를 클릭합니다. 그런 다음 같은 "
-"위치에서 ``<SpriteFrames>``\\ 를 클릭하고 \"에디터 열기\"를 클릭해 \"스프라이"
+"위치에서 ``<SpriteFrames>``\\ 를 클릭하고 \"편집기 열기\"를 클릭해 \"스프라이"
 "트 프레임\" 패널을 엽니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:111
@@ -4837,7 +4836,7 @@ msgstr ""
 "메인 노드는 새로운 적들을 스폰할 것이고 우리는 그들이 화면 모서리 아무 위치에"
 "서나 나타나도록 만들고 싶습니다. :ref:`Path2D <class_Path2D>` 노드를 "
 "``Main`` 의 자식으로 추가하고 ``MobPath`` 라고 이름지으세요. ``Path2D`` 를 선"
-"택한다면, 당신은 에디터 위쪽에 새로운 버튼들이 보일 것입니다:"
+"택한다면, 당신은 편집기 위쪽에 새로운 버튼들이 보일 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:670
 msgid ""
@@ -5286,7 +5285,7 @@ msgid ""
 "we'll use code."
 msgstr ""
 "이미 ``HUD`` 노드에 의해 방출되는 ``start_game`` 시그널을 사용해 남아있는 적"
-"들을 제거할 것입니다. 에디터를 사용해 적에게 시그널을 연결할 수는 없는데, 게"
+"들을 제거할 것입니다. 편집기를 사용해 적에게 시그널을 연결할 수는 없는데, 게"
 "임을 실행하기 전 까진 ``Mob`` 노드가 ``Main`` 씬 트리에 없기 때운입니다. 대"
 "신 코드를 사용합니다."
 
@@ -5370,7 +5369,7 @@ msgid ""
 "for when the player loses."
 msgstr ""
 "사운드와 음악은 게임 경험을 멋지게 만들어주는 가장 효과적인 물건입니다. 게임 "
-"에셋 폴더에서, 두 개의 사운드 파일을 찾으실 수 있습니다: \"House In a Forest "
+"애셋 폴더에서, 두 개의 사운드 파일을 찾으실 수 있습니다: \"House In a Forest "
 "Loop.ogg\"는 배경 음악으로, \"gameover.wav\"는 플레이어가 죽었을 때 쓰면 됩니"
 "다."
 
@@ -5564,8 +5563,8 @@ msgid ""
 msgstr ""
 "프로젝트를 내보내려면, *내보내기 템플릿(export templates)* 을 http://"
 "godotengine.org/download 에서 다운로드 해야 합니다. 이 템플릿은 엔진에 최적화"
-"된 버전으로 각 플렛폼에 따로 컴파일된 에디터가 필요 없습니다. 당신은 또한 "
-"Godot에서 *에디터 -> 내보내기 템플릿 관리* 를 통해 다운로드 할 수 있습니다:"
+"된 버전으로 각 플렛폼에 따로 컴파일된 편집기가 필요 없습니다. 당신은 또한 "
+"Godot에서 *편집기 -> 내보내기 템플릿 관리* 를 통해 다운로드 할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:132
 msgid ""
@@ -5617,7 +5616,7 @@ msgid ""
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
 "두 번째 버튼, \" 프로젝트 내보내기\", 게임의 완전 실행가능한 버전을 만듭니"
-"다, 마치 안드로이드의 `.apk` 나 윈도우의 `.exe` 처럼 말이죠."
+"다, 마치 Android의 `.apk` 나 Windows의 `.exe` 처럼 말이죠."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:157
 msgid ""
@@ -5641,7 +5640,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:167
 msgid "PC (Linux/macOS/Windows)"
-msgstr "PC (리눅스/macOS/윈도우)"
+msgstr "PC (Linux/macOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:169
 msgid ""
@@ -5667,7 +5666,7 @@ msgid ""
 "click and run."
 msgstr ""
 "macOS 컴퓨터에서 작업한다면, macOS로 내보낼 때, 파일을 `.dmg` 파일로 만들 것"
-"이고, 반면에 리눅스나 윈도우는 `.zip` 으로 생성합니다. 어떤 경우든지, 압축된 "
+"이고, 반면에 Linux나 Windows는 `.zip` 으로 생성합니다. 어떤 경우든지, 압축된 "
 "파일은 macOS의 `.app` 을 갖고 있으므로 더블 클릭해서 실행할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:181
@@ -5676,7 +5675,7 @@ msgid ""
 "than the default one, you need to change it manually. See: :ref:"
 "`doc_changing_application_icon_for_windows`."
 msgstr ""
-"윈도우에서, 당신이 내보낸 실행 파일이 기존과 다른 아이콘을 갖도록 하고 싶다"
+"Windows에서, 당신이 내보낸 실행 파일이 기존과 다른 아이콘을 갖도록 하고 싶다"
 "면, 수동으로 교체해야합니다. 여기를 참고하세요: :ref:"
 "`doc_changing_application_icon_for_windows`."
 
@@ -5695,11 +5694,11 @@ msgstr ""
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
-msgstr "안드로이드에 내보내기 전에, 다음의 소프트웨어를 다운받으셔야 합니다:"
+msgstr "Android에 내보내기 전에, 다음의 소프트웨어를 다운받으셔야 합니다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:197
 msgid "Android SDK: https://developer.android.com/studio/"
-msgstr "안드로이드 SDK: https://developer.android.com/studio/"
+msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:198
 msgid ""
@@ -5713,17 +5712,16 @@ msgid ""
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
 "command-line tool that Godot uses to communicate with your device."
 msgstr ""
-"안드로이드 스튜디오를 처음 실행하신다면, *Configure -> SDK Manager* 를 클릭하"
-"고 \"Android SDK Platform Tools\" 을 실행하세요. 이것은 Godot가 장치와 통신하"
-"도록 만드는 `adb` 명령 행 도구를 실행시킵니다."
+"Android 스튜디오를 처음 실행하신다면, *Configure -> SDK Manager* 를 클릭하고 "
+"\"Android SDK Platform Tools\" 을 실행하세요. 이것은 Godot가 장치와 통신하도"
+"록 만드는 `adb` 명령줄 도구를 실행시킵니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:204
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
 msgstr ""
-"다음으로, 시스템의 명령 행에 다음의 명령을 실행시켜 debug keystore를 만드세"
-"요:"
+"다음으로, 시스템의 명령줄에 다음의 명령을 실행시켜 debug keystore를 만드세요:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:211
 msgid ""
@@ -5732,17 +5730,17 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
-"Godot에서 *에디터 -> 에디터 설정* 으로 가서 *Export/Android*섹션을 선택합니"
-"다. 여기에서, 당신은 안드로이드 SDK 응용 프로그램의 위치와 당신이 방금 만든 "
-"키 저장소의 위치를 설정해줘야 합니다."
+"Godot에서 *편집기 -> 편집기 설정* 으로 가서 *Export/Android*섹션을 선택합니"
+"다. 여기에서, 당신은 Android SDK 응용 프로그램의 위치와 당신이 방금 만든 키 "
+"저장소의 위치를 설정해줘야 합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:217
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above)."
 msgstr ""
-"이제 만들 준비가 됬습니다. *프로젝트 -> 내보내기* 를 누르고 (위에서 본) 안드"
-"로이드의 프리셋을 추가하세요."
+"이제 만들 준비가 됬습니다. *프로젝트 -> 내보내기* 를 누르고 (위에서 본) "
+"Android의 프리셋을 추가하세요."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:220
 msgid ""
@@ -5750,7 +5748,7 @@ msgid ""
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
 "\"프로젝트 내보내기\" 버튼을 클릭하면 Godot가 APK를 만들고 휴대용 기기에 다운"
-"로드 할 수 있게 됩니다. 명령 행에서 하려면, 이것을 사용하세요:"
+"로드 할 수 있게 됩니다. 명령줄에서 하려면, 이것을 사용하세요:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:227
 msgid ""
@@ -5767,7 +5765,7 @@ msgid ""
 "area:"
 msgstr ""
 "시스템이 지원한다면, Godot의 실행 버튼 영역에 \"원 클릭 배포\" 버튼이 표시되"
-"어 호환 가능한 안드로이드 기기와 연결합니다:"
+"어 호환 가능한 Android 기기와 연결합니다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:235
 msgid ""
@@ -5965,7 +5963,7 @@ msgid ""
 "and matching the two."
 msgstr ""
 "Godot 씬은 무기나 캐릭터, 아이템, 문, 하나의 레벨, 레벨의 일부... 원하는 어"
-"떤 것이든 될수 있습니다. 에디터를 사용하거나, 오직 코드만을 사용하거나 이 둘"
+"떤 것이든 될수 있습니다. 편집기를 사용하거나, 오직 코드만을 사용하거나 이 둘"
 "을 섞어서 일치시켜서 자유롭게 디자인한다는 경우를 제외하면 마치 순수코드에서"
 "의 클래스처럼 작동합니다."
 
@@ -5978,7 +5976,7 @@ msgid ""
 "matches the game’s design."
 msgstr ""
 "이것은 씬을 상속하고 확장한다는 점에서 여러 3D 엔진에서 볼수 있는 프리펩과는 "
-"다릅니다. 당신은 캐릭터를 확장시켜 마법사를 만들수도 있습니다. 에디터에 있는 "
+"다릅니다. 당신은 캐릭터를 확장시켜 마법사를 만들수도 있습니다. 편집기에 있는 "
 "캐릭터를 수정하면 마법사도 이를 업데이트합니다. 이것은 당신이 프로젝트를 만들"
 "면서 프로젝트 구조가 게임 디자인에 일치하도록 도와줍니다."
 
@@ -6016,7 +6014,7 @@ msgid ""
 "on remote devices, etc."
 msgstr ""
 "Godot는 가장 보편적인 요구들의 해답을 제공하고자 노력했습니다. Godot는 전용 "
-"스크립팅 작업 공간과 애니메이션 에디터, 타일맵 에디터, 쉐이더 에디터, 디버"
+"스크립팅 작업 공간과 애니메이션 편집기, 타일맵 편집기, 쉐이더 편집기, 디버"
 "거, 프로파일러, 지역 및 원격 장치를 핫 리로드 하는 기능 등등을 가지고 있습니"
 "다."
 
@@ -6041,7 +6039,7 @@ msgid ""
 msgstr ""
 "이것이 Godot가 C#과 함께, 고유의 프로그래밍 언어인 GDScript와 VisualScript를 "
 "제공하는 이유이기도 합니다. 그들은 게임 개발자와 게임 디자이너의 필요를 위해 "
-"제작되었고, 엔진과 에디터에 완벽하게 통합됩니다."
+"제작되었고, 엔진과 편집기에 완벽하게 통합됩니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
 msgid ""
@@ -6069,7 +6067,7 @@ msgid ""
 "the editor. You can drag and drop nodes or resources into the graph to "
 "create new code blocks.*"
 msgstr ""
-"*VisualScript는 노드 기반 프로그래밍 언어로 에디터에 잘 통합되어 있습니다. 노"
+"*VisualScript는 노드 기반 프로그래밍 언어로 편집기에 잘 통합되어 있습니다. 노"
 "드나 리소스를 그래프로 드래그 앤 드롭하여 새 노드 블럭을 생성할 수 있습니다.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:97
@@ -6082,7 +6080,7 @@ msgid ""
 msgstr ""
 "3D 작업 공간은 2D 작업 공간같은 도구들이 많지 않습니다. 당신은 외부 프로그램"
 "이나 애드온으로 지형을 편집하거나, 복잡한 캐릭터를 애니메이트하거나 해야합니"
-"다. Godot는 게임 코드를 사용하여 에디터의 기능성을 넓히는 완전한 API를 제공합"
+"다. Godot는 게임 코드를 사용하여 편집기의 기능성을 넓히는 완전한 API를 제공합"
 "니다. 하단의 `The Godot editor is a Godot game`_ 을 참고하세요."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
@@ -6171,7 +6169,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:144
 msgid "The Godot editor is a Godot game"
-msgstr "Godot 에디터는 Godot 게임입니다"
+msgstr "Godot 편집기는 Godot 게임입니다"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:146
 msgid ""
@@ -6180,10 +6178,10 @@ msgid ""
 "run game code in the editor. This means you can **use the same code** and "
 "scenes for your games, or **build plugins and extend the editor.**"
 msgstr ""
-"Godot 에디터는 게임 엔진으로 돌아갑니다. 이것은 엔진 스스로의 UI 시스템을 사"
-"용하고, 프로젝트를 테스트하거나 에디터에서 게임 코드를 실행할 때 코드와 씬을 "
+"Godot 편집기는 게임 엔진으로 돌아갑니다. 이것은 엔진 스스로의 UI 시스템을 사"
+"용하고, 프로젝트를 테스트하거나 편집기에서 게임 코드를 실행할 때 코드와 씬을 "
 "핫 리로드 할 수 있습니다. 이는 당신이 게임에 쓰는 코드와 **같은 코드와 씬을 "
-"사용해서** , **플러그인을 만들거나 에디터를 확장** 시킬 수 있다는 것을 의미합"
+"사용해서** , **플러그인을 만들거나 편집기를 확장** 시킬 수 있다는 것을 의미합"
 "니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
@@ -6191,8 +6189,8 @@ msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
-"이것은 에디터 자체에 권한을 부여하기 때문에 안정적이고 유연한 UI 시스템을 만"
-"듭니다. ``tool`` 키워드로 당신은 에디터에서 어떤 게임 코드도 실행시킬 수 있습"
+"이것은 편집기 자체에 권한을 부여하기 때문에 안정적이고 유연한 UI 시스템을 만"
+"듭니다. ``tool`` 키워드로 당신은 편집기에서 어떤 게임 코드도 실행시킬 수 있습"
 "니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
@@ -6201,7 +6199,7 @@ msgid ""
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""
-"*RPG in a Box는 복셀 RPG 에디터로 Godot 2 에서 만들어졌습니다. 노드 기반 프로"
+"*RPG in a Box는 복셀 RPG 편집기로 Godot 2 에서 만들어졌습니다. 노드 기반 프로"
 "그래밍 시스템과 인터페이스의 일부를 위해 Godot UI 툴을 사용했습니다.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
@@ -6211,9 +6209,9 @@ msgid ""
 "custom level editors, or create scripts with the same nodes and API you use "
 "in your projects."
 msgstr ""
-"``tool`` 키워드를 GDscript 파일의 맨 위에 놓으면 에디터에서 파일이 실행될 것"
+"``tool`` 키워드를 GDscript 파일의 맨 위에 놓으면 편집기에서 파일이 실행될 것"
 "입니다. 이걸로 당신은 프로젝트에 쓰이는 것과 똑같은 노드와 API를 가지고 플러"
-"그인을 내보내거나 가져올 수 있고, 사용자 지정 레벨 에디터 같은 플러그인을 제"
+"그인을 내보내거나 가져올 수 있고, 사용자 지정 레벨 편집기 같은 플러그인을 제"
 "작하거나, 스크립트를 만들 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:166
@@ -6251,7 +6249,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
-msgstr "Godot 에디터는 엔진의 UI 프레임 워크로 제작되었습니다"
+msgstr "Godot 편집기는 엔진의 UI 프레임 워크로 제작되었습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:16
 msgid "This guide will get you started with UI design. You will learn:"
@@ -6297,9 +6295,9 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
-"UI를 설계하기 위해, Control 노드를 사용하게됩니다. 이 노드들은 에디터에서 초"
+"UI를 설계하기 위해, Control 노드를 사용하게됩니다. 이 노드들은 편집기에서 초"
 "록색 아이콘을 갖습니다. 이들을 수 십개가 존재하며, 이걸로 라이프바에서 복잡"
-"한 애플리케이션까지 만들 수 있습니다. Godot의 에디터 자체는 Control 노드를 사"
+"한 애플리케이션까지 만들 수 있습니다. Godot의 편집기 자체는 Control 노드를 사"
 "용하여 만들어졌습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
@@ -6359,7 +6357,7 @@ msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
-"Godot는 수십 개의 컨트롤 노드를 갖고 있습니다. 이들이 당신이 에디터 플러그인"
+"Godot는 수십 개의 컨트롤 노드를 갖고 있습니다. 이들이 당신이 편집기 플러그인"
 "과 애플리케이션을 만드는 것을 도와줍니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:55
@@ -6410,7 +6408,7 @@ msgid ""
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
-"**TextureRect** 은 UI 내에 텍스쳐나 이미지를 보여줍니다. 이것은 Sprite 노드"
+"**TextureRect** 은 UI 내에 텍스처나 이미지를 보여줍니다. 이것은 Sprite 노드"
 "와 비슷하지만 다중 크기 조절 모드를 제공합니다. Sprite 노드의 동작을 변경하려"
 "면 Stretch Mode 속성을 설정하세요:"
 
@@ -6421,25 +6419,25 @@ msgid ""
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
 "``Scale On Expand (compat)``\\ 는 ``expand`` 속성이 ``true``\\ 로 되어 있을 "
-"때만 텍스쳐를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다; 그렇지 않으"
+"때만 텍스처를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다; 그렇지 않으"
 "면 이것은 ``Keep`` 모드와 같습니다. 호환성을 되돌리기 위한 기본 모드."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
-"``Scale``\\ 은 텍스쳐를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다."
+"``Scale``\\ 은 텍스처를 노드의 경계 사각형에 꽉 차도록 크기를 조절합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr "``Tile``\\ 은 텍스쳐를 바둑판으로 배열하고, 크기를 조절하지 않습니다."
+msgstr "``Tile``\\ 은 텍스처를 바둑판으로 배열하고, 크기를 조절하지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
-"``Keep``\\ 과 ``Keep Centered``\\ 는 텍스쳐가 그 크기를 유지하게 합니다, 각"
-"각 텍스쳐를 경계의 좌측 상단과 중심에 두도록 만듭니다."
+"``Keep``\\ 과 ``Keep Centered``\\ 는 텍스처가 그 크기를 유지하게 합니다, 각"
+"각 텍스처를 경계의 좌측 상단과 중심에 두도록 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
 msgid ""
@@ -6447,8 +6445,8 @@ msgid ""
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
-"``Keep Aspect``\\ 와 ``Keep Aspect Centered``\\ 는 텍스쳐의 크기를 조절하지"
-"만 그것의 크기 비율은 유지합니다, 각각 텍스쳐를 경계의 좌측 상단과 중심에 두"
+"``Keep Aspect``\\ 와 ``Keep Aspect Centered``\\ 는 텍스처의 크기를 조절하지"
+"만 그것의 크기 비율은 유지합니다, 각각 텍스처를 경계의 좌측 상단과 중심에 두"
 "도록 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
@@ -6485,9 +6483,9 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 2-bit, pure black and white image."
 msgstr ""
-"**TextureButton** 은 TextureRect와 비슷하지만, 5개의 텍스쳐 슬롯을 갖고 있습"
+"**TextureButton** 은 TextureRect와 비슷하지만, 5개의 텍스처 슬롯을 갖고 있습"
 "니다: 이들은 각 버튼의 상태입니다. 대부분은, Normal, Pressed, 그리고 Hover 텍"
-"스쳐를 사용할 겁니다. Focused는 인터페이스가 키보드의 입력을 수신하는 경우에 "
+"스처를 사용할 겁니다. Focused는 인터페이스가 키보드의 입력을 수신하는 경우에 "
 "유용합니다. 여섯 번째 이미지 슬롯인, Click Mask는, 순수한 흰색과 검은색 2-비"
 "트를 사용해 클릭할 수 있는 영역을 정의하게 만듭니다."
 
@@ -6504,13 +6502,13 @@ msgstr ""
 "Base Button 섹션에서, 당신은 버튼이 행동하는 법을 바꾸는 몇 가지 체크 상자를 "
 "볼 수 있을 겁니다. ``Toggle Mode`` 가 켜지면, 버튼은 당신이 눌렀을 때 활성화"
 "와 기본 상태를 껏다 켯다 할 것입니다. ``Disabled`` 는 버튼을 기본 상태로 만들"
-"고, 이 경우에 ``Disabled`` 텍스쳐를 사용합니다. TextureButton은  앞의 노드와 "
+"고, 이 경우에 ``Disabled`` 텍스처를 사용합니다. TextureButton은  앞의 노드와 "
 "몇 가지 속성들을 공유합니다: ``modulate`` 속성을 갖고 있어서, 색상을 바꿀 수 "
 "있고, ``Resize`` 와 ``Stretch`` 모드로 크기의 변화를 바꿀 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureButton and its 5 texture slots"
-msgstr "TextureButton과 5개의 텍스쳐 슬롯"
+msgstr "TextureButton과 5개의 텍스처 슬롯"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
 msgid "TextureProgress"
@@ -6523,7 +6521,7 @@ msgid ""
 "value."
 msgstr ""
 "**TextureProgress** 는 진행 막대를 만들기 위해 3개의 스프라이트로 층을 쌓습니"
-"다. Under와 Over 텍스쳐 사이에 막대의 값을 보여줄 Progress를 끼워 넣습니다."
+"다. Under와 Over 텍스처 사이에 막대의 값을 보여줄 Progress를 끼워 넣습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:126
 msgid ""
@@ -6551,7 +6549,7 @@ msgstr ""
 "내려면, 당신은 ``Min`` 을 ``0`` 으로, ``Max`` 를 캐릭터의 최대 체력으로 설정"
 "해야 할 겁니다. ``Value`` 속성을 바꿔서 막대를 업데이트 하세요. 만약 ``Min`` "
 "과 ``Max`` 를 기본 값인 ``1`` 과 ``100`` 으로 두고, ``Value`` 속성을 ``40`` "
-"으로 하면, ``Progress`` 텍스쳐의 40%가 보여지고 60%는 계속 안 보일 겁니다."
+"으로 하면, ``Progress`` 텍스처의 40%가 보여지고 60%는 계속 안 보일 겁니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"
@@ -6586,7 +6584,7 @@ msgid ""
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
-"**NinePatchRect** 텍스쳐를 3행과 3열로 분할합니다. 중앙과 가장자리는 텍스쳐"
+"**NinePatchRect** 텍스처를 3행과 3열로 분할합니다. 중앙과 가장자리는 텍스처"
 "의 크기에 맞추어지지만, 모서리 부분은 크기가 바뀌지 않습니다. 이것은 패널이"
 "나 대화 상자, UI에서 크기 조절이 가능한 배경을 만들 때 유용합니다."
 
@@ -6823,7 +6821,7 @@ msgid ""
 msgstr ""
 "컨테이너는 자동으로 모든 자식 컨트롤 노드와 자식 컨테이너들을 열이나 행이나 "
 "그 밖의 형태로 배열합니다. 컨테이너를 사용해서 이것의 경계 사각형 내에서 인터"
-"페이스나 중심 노드 주위에 패딩을 추가합니다. 모든 내장 컨테이너는 에디터 내에"
+"페이스나 중심 노드 주위에 패딩을 추가합니다. 모든 내장 컨테이너는 편집기 내에"
 "서 업데이트 되므로 컨테이너가 작동되는 것을 바로 확인하실 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:284
@@ -6875,7 +6873,7 @@ msgstr ""
 "CenterContainer는 경계 사각형의 안에 모든 자식들을 가운데로 놓습니다. 이것은 "
 "당신이 뷰포트의 중앙에 있을 타이틀 화면에 일반적으로 사용합니다. 모든 것을 중"
 "앙에 두기 때문에, 내부에 하나의 컨테이너가 중첩되어 있어야 합니다. 대신 텍스"
-"쳐나 버튼을 놓는다면, 그들은 쌓일 것입니다."
+"처나 버튼을 놓는다면, 그들은 쌓일 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
 msgid ""
@@ -6951,7 +6949,7 @@ msgstr ""
 "GridContainer는 UI 요소들을 격자 같은 무늬로 배열합니다. 당신은 오직 세로 열"
 "의 숫자만 제어할 수 있는데, 가로 행의 수는 자식의 수에 따라 스스로 설정됩니"
 "다. 당신이 9개의 자식을 3열로 배열한다면, 9÷3 = 3행을 가지게 됩니다. 자식이 3"
-"개 더 늘어나면 4행을 가지게 됩니다. 이는 즉, 당신이 더 많은 텍스쳐와 버튼을 "
+"개 더 늘어나면 4행을 가지게 됩니다. 이는 즉, 당신이 더 많은 텍스처와 버튼을 "
 "추가해 행을 늘릴 수 있습니다. 박스 컨테이너처럼, 이것도 각기 행과 열 사이에 "
 "수직과 수평 분리를 설정하는 두 개의 속성이 있습니다."
 
@@ -6997,7 +6995,7 @@ msgid ""
 msgstr ""
 "어떻게 게임 UI를 효율적으로 설계하는지, 그리고 어떻게 Godot의 컨트롤 노드를 "
 "사용하는지 배울겁니다. 이 페이지에서는 시각적인 부분에 중점을 두겠습니다: 모"
-"든 것은 에디터에서 할 수 있습니다. 어떻게 체력 막대를 코딩하는지 배우려면 :"
+"든 것은 편집기에서 할 수 있습니다. 어떻게 체력 막대를 코딩하는지 배우려면 :"
 "doc:`ui_code_a_life_bar`\\ 를 읽어주세요"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
@@ -7074,7 +7072,7 @@ msgid ""
 "visuals away, it's a lot easier to size and place UI elements properly. It "
 "helps you refine the design foundation you'll build upon."
 msgstr ""
-"항상 먼저 간단한 문자와 상자로 인터페이스 작업을 해보세요. 나중에 텍스쳐를 쉽"
+"항상 먼저 간단한 문자와 상자로 인터페이스 작업을 해보세요. 나중에 텍스처를 쉽"
 "게 교체할 수 있습니다. 전문적인 UX 디자이너들은 작업을 흑백으로 된 선과 상자"
 "만으로 작업하기도 합니다. 당신이 색깔이나 멋진 비주얼을 멀리할 때, UI 요소들"
 "을 적절하게 배치하고 크기를 조정하기가 훨씬 쉬워집니다. 이를 기초로 하여 디자"
@@ -7129,7 +7127,7 @@ msgid ""
 "Before we jump into the editor, we want to plan how we'll nest containers "
 "based on our mockup image."
 msgstr ""
-"에디터로 가기 전에, 우리는 모형 이미지를 통해 어떻게 컨테이너를 중첩할 지 계"
+"편집기로 가기 전에, 우리는 모형 이미지를 통해 어떻게 컨테이너를 중첩할 지 계"
 "획을 세워야 됩니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:88
@@ -7306,12 +7304,12 @@ msgid ""
 "you pick a sprite to load into the texture slot."
 msgstr ""
 "각 노드를 선택하세요. 인스펙터에서, ``Texture`` 속성을 찾고 , ``[비었음]`` -"
-"> ``불러오기``\\ 를 클릭하세요. 파일 브라우저가 열리면 텍스쳐 슬롯 안에 있는 "
+"> ``불러오기``\\ 를 클릭하세요. 파일 브라우저가 열리면 텍스처 슬롯 안에 있는 "
 "스프라이트를 불러올 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid "The file browser lets you find and load textures"
-msgstr "파일 브라우저에서 당신은 불러올 텍스쳐를 찾으실 수 있습니다"
+msgstr "파일 브라우저에서 당신은 불러올 텍스처를 찾으실 수 있습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:167
 msgid ""
@@ -7326,7 +7324,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:174
 msgid "The six nodes, with textures loaded"
-msgstr "텍스쳐가 로드된, 여섯 개의 노드들"
+msgstr "텍스처가 로드된, 여섯 개의 노드들"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
 msgid ""
@@ -7394,7 +7392,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
 msgid "Containers automatically place and resize textures"
-msgstr "컨테이너가 자동으로 텍스쳐를 위치시키고 크기를 조정합니다"
+msgstr "컨테이너가 자동으로 텍스처를 위치시키고 크기를 조정합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:213
 msgid "We're left with two problems to solve:"
@@ -7817,7 +7815,7 @@ msgid ""
 "``MarginContainer``. Name it ``Count``. Inside of it, add three nodes:"
 msgstr ""
 "라벨에는 적어도 세 개의 노드가 더 필요합니다: 배경에 쓸 ``NinePatchRect``, "
-"그 배경에서 왼쪽에는 ``HP`` 나 ``EP`` 를 쓸 텍스쳐, 그리고 값을 나타내는 "
+"그 배경에서 왼쪽에는 ``HP`` 나 ``EP`` 를 쓸 텍스처, 그리고 값을 나타내는 "
 "``Label``  입니다. 우리는 원하는 대로  ``Control`` 노드를 중첩시킬 수 있습니"
 "다. 즉, ``NinePatchRect`` 를 다른 두 개의 요소를 포괄하는 부모로 사용할 수 있"
 "다는 것입니다. 일반적으로, 우리는 컨테이너를 사용합니다, 그것이 그들의 역할이"
@@ -7847,7 +7845,7 @@ msgstr ""
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
 msgstr ""
-"당신의 씬 트리는 이렇게 되야 합니다. 이제 텍스쳐를 넣을 준비가 끝났습니다"
+"당신의 씬 트리는 이렇게 되야 합니다. 이제 텍스처를 넣을 준비가 끝났습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
 msgid ""
@@ -7855,13 +7853,13 @@ msgid ""
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
 "down to the res://assets/GUI folder."
 msgstr ""
-"씬은 아직 텅 빈 상태입니다. 이제 텍스쳐를 추가해 봅시다. 텍스쳐를 불러오기 위"
+"씬은 아직 텅 빈 상태입니다. 이제 텍스처를 추가해 봅시다. 텍스처를 불러오기 위"
 "해선, 뷰포트의 왼쪽에 있는 파일 시스템 독으로 가세요. 경로를 res://assets/"
 "GUI 로 하세요."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:141
 msgid "You should see a list of textures that we'll use to skin our interface."
-msgstr "우리가 인터페이스에 쓸 텍스쳐의 목록이 이렇게 나와야 합니다."
+msgstr "우리가 인터페이스에 쓸 텍스처의 목록이 이렇게 나와야 합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:144
 msgid ""
@@ -7875,8 +7873,8 @@ msgid ""
 msgstr ""
 "씬 독에서 ``Background`` 를 선택합니다. 인스펙터에서, ``Texture`` 속성을 보세"
 "요. 파일 시스템 탭에서 ``label_HP_bg.png`` 를 ``Texture`` 슬롯으로 드래그 합"
-"니다. 찌그러진 채로 있습니다. 텍스쳐가 부모 MarginContainer의 영향을 받기 때"
-"문에 그 영향을 최소화 하지 않으면 컨테이너는 텍스쳐의 크기를 0으로 만듭니다. "
+"니다. 찌그러진 채로 있습니다. 텍스처가 부모 MarginContainer의 영향을 받기 때"
+"문에 그 영향을 최소화 하지 않으면 컨테이너는 텍스처의 크기를 0으로 만듭니다. "
 "``Background`` 노드를 선택합니다. 인스펙터에서, Rect 섹션으로 갑니다. ``Min "
 "Size`` 를 (100, 40)으로 설정합니다. ``Background`` 가 부모 컨테이너에 크기가 "
 "조정된 것을 보실 수 있습니다."
@@ -7908,9 +7906,9 @@ msgid ""
 msgstr ""
 "직계 부모인 컨테이너를 갖게 되었으니, 우리는 이들을 자유롭게 움직일 수 없습니"
 "다: ``Count`` 노드는 앵커나 크기, 위치가 항상 원상복귀 됩니다. 뷰포트에서 노"
-"드를 움직이거나 크기를 바꾸려고 시도해보시죠. 그 이후에는, 세 개의 텍스쳐 중 "
+"드를 움직이거나 크기를 바꾸려고 시도해보시죠. 그 이후에는, 세 개의 텍스처 중 "
 "하나를 선택하고 Ctrl 위 아니면 Ctrl 아래를 눌러 그들을 씬 독에 다시 맞춰주세"
-"요. 텍스쳐들은 이전 크기와 위치로 돌아갈 것입니다."
+"요. 텍스처들은 이전 크기와 위치로 돌아갈 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:170
 msgid ""
@@ -7931,7 +7929,7 @@ msgid ""
 "By using the Background node as the two textures' parent, we take control "
 "away from the Count MarginContainer"
 msgstr ""
-"두 텍스쳐의 부모로 Background 노드를 사용해서, 우리는 Count MarginContainer"
+"두 텍스처의 부모로 Background 노드를 사용해서, 우리는 Count MarginContainer"
 "의 통제권을 빼앗아 버립니다"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
@@ -8008,7 +8006,7 @@ msgid ""
 "``Custom Font`` category again and tweak the ``Bottom`` property until the "
 "text aligns with the ``Title`` node. I used a value of ``2`` pixels."
 msgstr ""
-"이제 왼쪽의 HP 텍스쳐와 일직선으로 하기 위해, 텍스트의 기준선과 숫자 하단의 "
+"이제 왼쪽의 HP 텍스처와 일직선으로 하기 위해, 텍스트의 기준선과 숫자 하단의 "
 "가장자리가 필요합니다. 그러기 위해, 다시 ``DynamicFont`` 리소스에서, ``Extra "
 "Spacing``  카테고리의 ``Bottom`` 속성을 잡아당길 수 있습니다. 그것은 텍스트"
 "에 하단 여백을 추가합니다. 씬 탭에 있는 ``Number`` 노드를 클릭하고 노드 속성"
@@ -8052,7 +8050,7 @@ msgid ""
 msgstr ""
 "Bar 노드를 선택하고 안에 ``TextureProgress`` 를 추가합니다. ``Gauge`` 라고 이"
 "름을 짓습니다. 인스펙터에서 ``Textures`` 섹션을 엽니다. 파일 시스템 독에서 "
-"``lifebar_bg.png`` 텍스쳐를 ``Under`` 슬롯에 드래그 앤 드롭 합니다.  "
+"``lifebar_bg.png`` 텍스처를 ``Under`` 슬롯에 드래그 앤 드롭 합니다.  "
 "``lifebar_fill.png`` 이미지도 ``Progress`` 슬롯에 넣어줍니다. 인스펙터에서 "
 "``Range`` 클래스 하단에, ``Value`` 속성을 ``50`` 으로 설정하면 게이지가 찬 모"
 "습을 볼 수 있습니다."
@@ -8428,7 +8426,7 @@ msgid ""
 msgstr ""
 "새 상속 씬을 만듭니다, 그리고 다시 ``Bar.tscn`` 씬을 선택하고 엽니다. "
 "``Bar`` 루트 노드를 더블 클릭하고 이름을 ``EnergyBar`` 로 바꿉니다. 새 씬을 "
-"``EnergyBar.tscn`` 으로 저장합니다. HP 텍스쳐를 EP로 바꾸고 게이지의 텍스쳐"
+"``EnergyBar.tscn`` 으로 저장합니다. HP 텍스처를 EP로 바꾸고 게이지의 텍스처"
 "를 바꿔야 합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
@@ -8439,7 +8437,7 @@ msgid ""
 "different value like ``14``."
 msgstr ""
 "파일 시스템 독으로 가서, 씬 트리에서 ``Title`` 노드를 선택하고 ``label_EP."
-"png`` 파일을 텍스쳐 슬롯에 드래그 앤 드롭 합니다. ``Number`` 노드를 선택하고 "
+"png`` 파일을 텍스처 슬롯에 드래그 앤 드롭 합니다. ``Number`` 노드를 선택하고 "
 "``Text`` 속성을 ``14`` 처럼 다른 값으로 바꿉니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:452
@@ -8451,7 +8449,7 @@ msgid ""
 "``40`` and switch back to the ``LifeBar`` or the ``Bar`` scenes. You will "
 "see the text increased in size."
 msgstr ""
-"EP 텍스쳐가 HP보다 더 작은 것을 눈치채셨을겁니다. 이에 맞추기 위해 "
+"EP 텍스처가 HP보다 더 작은 것을 눈치채셨을겁니다. 이에 맞추기 위해 "
 "``Number`` 폰트 크기를 업데이트해야 합니다. 한 폰트는 하나의 리소스입니다. "
 "이 리소스를 사용하는 모든 프로젝트가 리소스의 속성 변화에 영향을 받습니다. 우"
 "리는 크기를 ``40`` 처럼 크게 바꾸고 ``LifeBar`` 나 ``Bar`` 씬으로 돌아갑니"
@@ -8512,7 +8510,7 @@ msgid ""
 "drop it onto the ``Progress`` texture slot."
 msgstr ""
 "이제, ``TextureProgress`` 노드를 선택합니다. ``energy_bar_bg.png`` 파일을 "
-"``Under`` 슬롯에 드래그하고 ``energy_bar_fill.png`` 을 ``Progress`` 텍스쳐 슬"
+"``Under`` 슬롯에 드래그하고 ``energy_bar_fill.png`` 을 ``Progress`` 텍스처 슬"
 "롯에 넣습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:494
@@ -8526,7 +8524,7 @@ msgid ""
 msgstr ""
 "노드의 경계 사각형이 게이지에 맞도록 노드의 크기를 수직으로 조정해야 합니다."
 "``Count`` 노드도 마찬가지로 막대에 경계 사각형에 정렬해야 합니다. "
-"``TextureProgress`` 의 최소 크기가 텍스쳐의 크기에 맞춰져 있기 때문에, 당신"
+"``TextureProgress`` 의 최소 크기가 텍스처의 크기에 맞춰져 있기 때문에, 당신"
 "은 ``Count`` 노드를 축소 시킬 수 없을 겁니다. 그것이 ``Bar`` 컨테이너의 크기"
 "이기도 합니다. 이것은 크기를 줄일 수 있습니다."
 
@@ -8749,7 +8747,7 @@ msgid ""
 "elements to only move horizontally when we change the window size."
 msgstr ""
 "**반응 형 디자인의 마지막 주석**. GUI의 크기를 조정하면, 노드가 움직이지만, "
-"텍스쳐와 문자는 크기가 조정되지 않는 것을 보실 수 있습니다. GUI는 텍스쳐 기반"
+"텍스처와 문자는 크기가 조정되지 않는 것을 보실 수 있습니다. GUI는 텍스처 기반"
 "의 최소 크기를 갖고 있습니다. 게임에서, 우리는 인터페이스가 웹 사이트처럼 유"
 "연하게 되기를 원하진 않습니다. 당신은 가로와 세로 화면을 모두 지원하고 싶진 "
 "않습니다. 그것은 다른 것입니다. 가로 화면에서, 가장 일반적인 비율은 4:3 에서 "
@@ -8878,7 +8876,7 @@ msgid ""
 "get started. Extract the .zip archive to get two folders: `start` and `end`."
 msgstr ""
 "Godot 프로젝트를 다운로드 하세요: :download:`ui_code_life_bar.zip <files/"
-"ui_code_life_bar.zip>`. 시작할 모든 에셋과 스크립트가 포함되어 있습니다. ."
+"ui_code_life_bar.zip>`. 시작할 모든 애셋과 스크립트가 포함되어 있습니다. ."
 "zip 파일을 풀고 두 개의 폴더가 나옵니다: `start` 와 `end` 입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
@@ -8975,7 +8973,7 @@ msgid ""
 "the scene in the editor. You'll see the LifeBar and EnergyBar are sub-scenes "
 "themselves."
 msgstr ""
-"에디터에서 씬 트리 오른쪽의 편집 씬 아이콘을 클릭해서 씬을 엽니다. LifeBar와 "
+"편집기에서 씬 트리 오른쪽의 편집 씬 아이콘을 클릭해서 씬을 엽니다. LifeBar와 "
 "EnergyBar 가 하위 씬으로 있는 것을 보실 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:121
@@ -8994,7 +8992,7 @@ msgid ""
 "player's health to the GUI every time they take damage. The GUI will then "
 "update the ``Lifebar`` and ``Number`` nodes with this value."
 msgstr ""
-"우리는 GUI가 플레이어의 현재 체력이 어떤지 알려주고, 체력 막대의 텍스쳐를 업"
+"우리는 GUI가 플레이어의 현재 체력이 어떤지 알려주고, 체력 막대의 텍스처를 업"
 "데이트하고, 화면 좌측 상단에서 HP 카운터가 남은 체력을 보여주어야 합니다. 그"
 "러기 위해 우리는 플레이어가 피해를 입을 때마다 체력을 GUI로 보내야 합니다. "
 "GUI는 ``Lifebar`` 와 ``Number`` 노드를 주어진 값으로 업데이트할 것입니다."
@@ -9224,7 +9222,7 @@ msgid ""
 "You can optionally connect nodes from the code. However doing it from the "
 "editor has two advantages:"
 msgstr ""
-"선택적으로 코드로부터 노드를 연결할 수 있습니다. 하지만 에디터로 하면 두 가"
+"선택적으로 코드로부터 노드를 연결할 수 있습니다. 하지만 편집기로 하면 두 가"
 "지 이점이 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
@@ -9253,7 +9251,7 @@ msgstr ""
 "그널이 방출될 때 호출되는 메서드 입니다. 이 메서드는 시그널과 함께 전송된 값"
 "을 받아 처리합니다. 오른쪽을 보시면, \"함수 만들기\" 버튼이 기본적으로 켜진 "
 "채로 있습니다. 창 아래의 연결 버튼을 누릅니다. Godot는 ``GUI`` 노드 안에 메서"
-"드를 만듭니다. 스크립트 에디터를 열면 새로운 ``_on_Player_health_changed`` 함"
+"드를 만듭니다. 스크립트 편집기를 열면 새로운 ``_on_Player_health_changed`` 함"
 "수가 안에 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:265
@@ -9263,7 +9261,7 @@ msgid ""
 "method already, the \"Make Function\" option will keep it. You may replace "
 "the name with anything you'd like."
 msgstr ""
-"에디터에서 노드를 연결할 때, Godot는 메서드 이름을 다음과 같은 방식으로 만듭"
+"편집기에서 노드를 연결할 때, Godot는 메서드 이름을 다음과 같은 방식으로 만듭"
 "니다: ``_on_방출하는노드이름_시그널_이름``. 이미 메서드를 적었다면, \"함수 만"
 "들기\" 설정은 유지될 것입니다. 당신이 원하는 어떤 이름으로도 바꿀 수 있습니"
 "다."
@@ -9694,7 +9692,7 @@ msgid ""
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
 msgstr ""
 "UI 요소가 사라지도록 애니메이트 하기 위해, 우리는 그것의 ``modulate`` 속성을 "
-"사용해야 합니다. ``modulate`` 는 ``Color`` 로 텍스쳐의 색상을 곱합니다."
+"사용해야 합니다. ``modulate`` 는 ``Color`` 로 텍스처의 색상을 곱합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:609
 msgid ""
@@ -9802,7 +9800,7 @@ msgid ""
 "can be placed directly in your project folder and Godot will import them "
 "automatically."
 msgstr ""
-"다음은 우리가 사용할 파일과 에셋입니다. 추출된 파일을 직접 프로젝트 폴더에 놓"
+"다음은 우리가 사용할 파일과 애셋입니다. 추출된 파일을 직접 프로젝트 폴더에 놓"
 "으면 Godot가 자동으로 가져올 것입니다."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
@@ -9833,7 +9831,7 @@ msgid ""
 "to the texture property."
 msgstr ""
 "\"background\"와 \"logo\" 노드는 :ref:`TextureRect <class_TextureRect>` 타입 "
-"입니다. 이미지를 보이기 위해, 해당하는 에셋을 텍스쳐 속성으로 끌어옵니다."
+"입니다. 이미지를 보이기 위해, 해당하는 애셋을 텍스처 속성으로 끌어옵니다."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:32
 msgid ""
@@ -9895,11 +9893,11 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/animations.rst:23
 msgid ""
 "When a node of this type is selected, the animation editor panel will appear:"
-msgstr "이 타입의 노드가 선택될 때, 애니메이션 에디터 패널이 나타날 것입니다:"
+msgstr "이 타입의 노드가 선택될 때, 애니메이션 편집기 패널이 나타날 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:28
 msgid "The animation editor panel stays visible until manually hidden."
-msgstr "애니메이션 에디터 패널은 수동으로 숨기지 않는 이상 표시됩니다."
+msgstr "애니메이션 편집기 패널은 수동으로 숨기지 않는 이상 표시됩니다."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:31
 msgid "Creating the animation"
@@ -9919,8 +9917,8 @@ msgid ""
 "\" mode. In this mode, a key icon appears next to every property of the "
 "property editor. In Godot, any property of an object can be animated:"
 msgstr ""
-"이제 애니메이션이 있으므로 속성 에디터는 \"애니메이션 편집\" 모드로 들어갑니"
-"다. 이 모드에서, 속성 에디터의 모든 속성에 키 아이콘이 나타납니다. Godot에서"
+"이제 애니메이션이 있으므로 속성 편집기는 \"애니메이션 편집\" 모드로 들어갑니"
+"다. 이 모드에서, 속성 편집기의 모든 속성에 키 아이콘이 나타납니다. Godot에서"
 "는 대상의 어떤 속성도 애니메이트 할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:48
@@ -9947,11 +9945,11 @@ msgstr "대화 상자가 나타나면, 새 트랙을 만들겠다고 확인합�
 
 #: ../../docs/getting_started/step_by_step/animations.rst:60
 msgid "The keyframe will be added in the animation player editor:"
-msgstr "키프레임이 애니메이션 플레이어 에디터에 나타날 것입니다:"
+msgstr "키프레임이 애니메이션 플레이어 편집기에 나타날 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:64
 msgid "Move the editor cursor forward in time by clicking here:"
-msgstr "여기를 클릭해서 에디터 커서를 앞으로 이동합니다:"
+msgstr "여기를 클릭해서 편집기 커서를 앞으로 이동합니다:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:68
 msgid ""
@@ -10228,7 +10226,7 @@ msgid ""
 "`Resource <class_Resource>` features:"
 msgstr ""
 "JSON, CSV, 혹은 커스텀 TXT 파일로 이루어진 이것은 대체 데이터 구조를 넘어서 "
-"많은 뚜렷한 이점을 제공합니다. 사용자는 이 에셋을 문법 분석하기 위해 :ref:"
+"많은 뚜렷한 이점을 제공합니다. 사용자는 이 애셋을 문법 분석하기 위해 :ref:"
 "`Dictionary <class_Dictionary>` (JSON) 혹은 :ref:`File <class_File>`\\ 로만 "
 "가져올 수 있습니다. 리소스는 :ref:`Object <class_Object>`, :ref:`Reference "
 "<class_Reference>`, 그리고 :ref:`Resource <class_Resource>` 기능의 상속을 통"
@@ -10377,7 +10375,7 @@ msgid ""
 "ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and "
 "editors for their data."
 msgstr ""
-"리소스 스크립트는 유니티의 ScriptableObjects(스크립트 가능한 객체)와 유사합니"
+"리소스 스크립트는 Unity의 ScriptableObjects(스크립트 가능한 객체)와 유사합니"
 "다. 인스펙터는 커스텀 리소스를 위한 내장 지원을 제공합니다. 그래도 원한다면, "
 "사용자는 자신만의 제어 기반 도구 스크립트를 설계하고 그들을 :ref:"
 "`EditorPlugin <class_EditorPlugin>`\\ 으로 결합하여 커스텀 시각화와 데이터를 "
@@ -10411,7 +10409,7 @@ msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
 msgstr ""
-"에디터 내에서 시각화를 설계하고 해당 타입 리소스를 열 때 인스펙터에 리소스를 "
+"편집기 내에서 시각화를 설계하고 해당 타입 리소스를 열 때 인스펙터에 리소스를 "
 "추가하는 간단한 플러그인을 제작합니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
@@ -10463,9 +10461,9 @@ msgid ""
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
-"파일 시스템은 에셋을 저장하고 액세스하는 방법을 관리합니다. 잘 설계된 파일 시"
-"스템은 여러 개발자가 협업하며 같은 소스 파일과 에셋을 편집할 수 있습니다. "
-"Godot는 모든 에셋을 파일 시스템에 파일의 형태로 저장합니다."
+"파일 시스템은 애셋을 저장하고 액세스하는 방법을 관리합니다. 잘 설계된 파일 시"
+"스템은 여러 개발자가 협업하며 같은 소스 파일과 애셋을 편집할 수 있습니다. "
+"Godot는 모든 애셋을 파일 시스템에 파일의 형태로 저장합니다."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
@@ -10485,7 +10483,7 @@ msgstr ""
 "지 어떤 것이든, 엔진에게는 리소스 입니다. 리소스가 디스크 내 다른 리소스의 참"
 "조를 속성으로 갖고 있다면, 그 리소스로 가는 경로 또한 포함됩니다. 리소스가 내"
 "장 하위 리소스를 갖는다면, 그 리소스는 모든 묶인 하위 리소스들과 함께 단일 파"
-"일로 저장됩니다. 예를 들어, 폰트 리소스는 종종 폰트 텍스쳐와 묶여집니다."
+"일로 저장됩니다. 예를 들어, 폰트 리소스는 종종 폰트 텍스처와 묶여집니다."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
 msgid ""
@@ -10493,7 +10491,7 @@ msgid ""
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
-"Godot 파일 시스템은 메타데이터 파일 사용을 피합니다. 기존 에셋 관리자와 버전 "
+"Godot 파일 시스템은 메타데이터 파일 사용을 피합니다. 기존 애셋 관리자와 버전 "
 "관리 시스템(VCS)은 우리가 구현할 수 있는 것보다 훨씬 더 뛰어나기 때문에, "
 "Godot는 SVN, Git, Mercurial, Perforce 등과 작업하도록 최선을 다합니다."
 
@@ -10537,7 +10535,7 @@ msgid ""
 "godot``."
 msgstr ""
 "Godot는 오직 ``/``\\ 만을 경로 구분 기호로 지원합니다. 그 이유는 이식 능력 입"
-"니다. 윈도우를 포함한 모든 운영체제가 이 기호를 지원하기 때문에, ``c:"
+"니다. Windows를 포함한 모든 운영체제가 이 기호를 지원하기 때문에, ``c:"
 "\\project\\project.godot``\\ 같은 경로는 ``c:/project/project.godot``\\ 로 적"
 "어야 합니다."
 
@@ -10571,7 +10569,7 @@ msgid ""
 "phones or consoles, or running from DVD), the file system will become read-"
 "only and writing will no longer be permitted."
 msgstr ""
-"파일 시스템은 에디터에서 프로젝트를 지역으로 실행 중일 때만 읽고 씁니다. 내보"
+"파일 시스템은 편집기에서 프로젝트를 지역으로 실행 중일 때만 읽고 씁니다. 내보"
 "내질 때나 아니면 다른 기기에서 실행 중일 때 (휴대전화나 콘솔, 혹은 DVD로 실"
 "행), 파일 시스템은 읽기만 하고 더 이상 쓰기가 용납되지 않습니다."
 
@@ -10617,9 +10615,9 @@ msgid ""
 "These references will have to be re-defined to point at the new asset "
 "location."
 msgstr ""
-"이 간단한 파일 시스템 설계에는 몇 가지 단점이 있습니다. 첫 번째 문제는 에셋"
+"이 간단한 파일 시스템 설계에는 몇 가지 단점이 있습니다. 첫 번째 문제는 애셋"
 "의 이동으로 (프로젝트 내에서 이름을 바꾸거나 한 경로를 다른 곳으로 옮기는 "
-"등) 이 에셋에 관해 존재하는 참조를 깨버릴 것입니다. 이 참조는 새 에셋 위치를 "
+"등) 이 애셋에 관해 존재하는 참조를 깨버릴 것입니다. 이 참조는 새 애셋 위치를 "
 "향하도록 다시 정의해야만 합니다."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:96
@@ -10630,7 +10628,7 @@ msgid ""
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
 "이를 피하기 위해, Godot에서, 파일 시스템 독 내에서, 위치를 바꾸거나 이름을 바"
-"꾸거나 삭제하는 등의 모든 작업을 해야만 합니다. Godot 밖에서 에셋을 움직이지 "
+"꾸거나 삭제하는 등의 모든 작업을 해야만 합니다. Godot 밖에서 애셋을 움직이지 "
 "마세요, 그렇지 않으면 종속 여부를 수동으로 설정해야만 합니다 (Godot는 이를 감"
 "지하고 당신이 고치는 것을 어쨌든 도울 것이지만, 왜 어려운 길로 가시나요?)."
 
@@ -10643,10 +10641,10 @@ msgid ""
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
-"두 번째로 윈도우와 macOS에서는 파일과 경로 이름을 대소문자를 구별하지 않는 것"
-"입니다. 대소문자를 구분하지 않는 호스트 파일 시스템이 에셋을 \"myfile.PNG\"라"
-"고 저장하지만, \"myfile.png\" 로 참조됩니다, 그 플랫폼 내에서는 작동이 잘 될 "
-"것입니다, 하지만 리눅스, 안드로이드 등의 플랫폼에서는 작동하지 않습니다. 이"
+"두 번째로 Windows와 macOS에서는 파일과 경로 이름을 대소문자를 구별하지 않는 "
+"것입니다. 대소문자를 구분하지 않는 호스트 파일 시스템이 애셋을 \"myfile.PNG"
+"\"라고 저장하지만, \"myfile.png\" 로 참조됩니다, 그 플랫폼 내에서는 작동이 "
+"잘 될 것입니다, 하지만 Linux, Android 등의 플랫폼에서는 작동하지 않습니다. 이"
 "는 압축된 패키지로 모든 파일을 저장하는 내보낸 바이너리에도 적용될 수 있습니"
 "다."
 
@@ -11209,11 +11207,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/index.rst:2
 msgid "Editor manual"
-msgstr "에디터 매뉴얼"
+msgstr "편집기 매뉴얼"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
 msgid "From Unity to Godot Engine"
-msgstr "유니티(Unity)에서 Godot 엔진까지"
+msgstr "Unity에서 Godot 엔진까지"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:10
 msgid ""
@@ -11221,8 +11219,8 @@ msgid ""
 "Unity user, and aims to help you migrate your existing Unity experience into "
 "the world of Godot."
 msgstr ""
-"이 가이드는 유니티 사용자의 관점에서 Godot 엔진의 개요를 제공합니다, 그리고 "
-"존재하는 유니티 경험을 Godot라는 세상에 옮기도록 돕는 것에 중점을 둡니다."
+"이 가이드는 Unity 사용자의 관점에서 Godot 엔진의 개요를 제공합니다, 그리고 존"
+"재하는 Unity 경험을 Godot라는 세상에 옮기도록 돕는 것에 중점을 둡니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:15
 msgid ""
@@ -11237,11 +11235,11 @@ msgstr "차이점"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Unity"
-msgstr "유니티(Unity)"
+msgstr "Unity"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Godot"
-msgstr "Godot(Godot)"
+msgstr "Godot"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 #: ../../docs/community/contributing/documentation_guidelines.rst:115
@@ -11259,15 +11257,15 @@ msgstr "MIT 라이선스로, 어떤 제한 없이 무료이고 완전한 오픈 
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "OS (editor)"
-msgstr "OS (에디터)"
+msgstr "OS (편집기)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, Linux (unofficial and unsupported)"
-msgstr "윈도우, macOS, 리눅스 (비공식이고 지원되지 않음)"
+msgstr "Windows, macOS, Linux (비공식이고 지원되지 않음)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
-msgstr "윈도우, macOS, X11 (리눅스, \\*BSD)"
+msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "OS (export)"
@@ -11275,11 +11273,11 @@ msgstr "OS (내보내기)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**Desktop:** Windows, macOS, Linux"
-msgstr "**데스크톱:** 윈도우, macOS, 리눅스"
+msgstr "**데스크톱:** Windows, macOS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:28
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
-msgstr "**모바일:** 안드로이드, iOS, 윈도우 폰, 타이젠(Tizen)"
+msgstr "**모바일:** Android, iOS, Windows 폰, Tizen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "**Web:** WebAssembly or asm.js"
@@ -11294,20 +11292,20 @@ msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
 "HoloLens"
 msgstr ""
-"**VR:** 오큘러스 리프트, SteamVR, 구글 카드보드, 플레이스테이션 VR, Gear VR, "
+"**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
 "HoloLens"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "**TV:** Android TV, Samsung SMART TV, tvOS"
-msgstr "**TV:** 안드로이드 TV, 삼성 스마트 TV, tvOS"
+msgstr "**TV:** Android TV, Samsung SMART TV, tvOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**Desktop:** Windows, macOS, X11"
-msgstr "**데스크톱:** 윈도우, macOS, X11"
+msgstr "**데스크톱:** Windows, macOS, X11"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:28
 msgid "**Mobile:** Android, iOS"
-msgstr "**모바일:** 안드로이드, iOS"
+msgstr "**모바일:** Android, iOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "**Web:** WebAssembly"
@@ -11319,7 +11317,7 @@ msgstr "**콘솔:** :ref:`doc_consoles` 을 확인하세요"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
 msgid "**VR:** Oculus Rift, SteamVR"
-msgstr "**VR:** 오큘러스 리프트, SteamVR"
+msgstr "**VR:** Oculus Rift, SteamVR"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid "Scene system"
@@ -11347,7 +11345,7 @@ msgstr "타사 도구"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid "Visual Studio or VS Code"
-msgstr "비주얼 스튜디오 혹은 VS Code"
+msgstr "Visual Studio 혹은 VS Code"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid ":ref:`External editors are possible <doc_external_editor>`"
@@ -11368,7 +11366,7 @@ msgstr "거대한 커뮤니티"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:41
 msgid "Large assets store"
-msgstr "넓은 에셋 스토어"
+msgstr "넓은 애셋 스토어"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:40
 msgid "Scene System"
@@ -11376,11 +11374,11 @@ msgstr "씬 시스템"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:41
 msgid ":ref:`Animation Pipeline <doc_animations>`"
-msgstr ":ref:`Animation Pipeline <doc_animations>`"
+msgstr ":ref:`애니메이션 파이프라인 <doc_animations>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:42
 msgid ":ref:`Easy to write Shaders <doc_shading_language>`"
-msgstr ":ref:`Easy to write Shaders <doc_shading_language>`"
+msgstr ":ref:`쉽게 셰이더 작성하기 <doc_shading_language>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:43
 msgid "Debug on Device"
@@ -11388,7 +11386,7 @@ msgstr "기기에서 디버그"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:50
 msgid "The editor"
-msgstr "에디터"
+msgstr "편집기"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:52
 #, fuzzy
@@ -11472,8 +11470,8 @@ msgid ""
 "Running the project and closing it is fast (Unity has to save, run the "
 "project, close the project, and then reload the previous state)."
 msgstr ""
-"프로젝트를 실행하고 종료하는 것이 빠릅니다 (유니티는 저장하고, 프로젝트를 실"
-"행하고, 프로젝트를 종료하고, 그리고 이전 상태를 다시 불러와야 합니다)."
+"프로젝트를 실행하고 종료하는 것이 빠릅니다 (Unity는 저장하고, 프로젝트를 실행"
+"하고, 프로젝트를 종료하고, 그리고 이전 상태를 다시 불러와야 합니다)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:81
 msgid ""
@@ -11482,13 +11480,13 @@ msgid ""
 "the game is closed. This allows fantastic workflows, like creating levels "
 "while you play them."
 msgstr ""
-"실시간 편집은 에디터에서 변경한 사항이 게임에 즉시 적용되고 게임을 끌 때 (동"
+"실시간 편집은 편집기에서 변경한 사항이 게임에 즉시 적용되고 게임을 끌 때 (동"
 "기화 할 필요도 없이) 사라지지 않으니 훨씬 더 유용합니다. 이것으로 플레이 도"
 "중 레벨을 만드는 등의 환상적인 워크플로가 가능합니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:82
 msgid "The editor is more stable because the game runs in a separate process."
-msgstr "게임이 별도의 프로세스에서 실행되기 때문에 에디터는 더 안정적입니다."
+msgstr "게임이 별도의 프로세스에서 실행되기 때문에 편집기는 더 안정적입니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:84
 #, fuzzy
@@ -11572,11 +11570,11 @@ msgid ""
 "the level: For example, you'd add a BoxCollider2D to all the elements of the "
 "scene so that they can collide. This principle is different in Godot."
 msgstr ""
-"유니티에서, 모든 GameObjects를 씬에 넣을 것입니다: 플레이어, 여러 인스턴스 "
-"된 적, 레벨을 만드는 벽돌, 그리고 모든 레벨에 있는 여러 인스턴스 된 동전입니"
-"다. 그런 다음 각 요소들을 연결하고 레벨의 타당성을 주기 위한 다양한 구성 요소"
-"를 추가할 것입니다: 예를 들어 모든 요소에 BoxCollider2D를 추가해서 씬의 모든 "
-"요소가 충돌할 수 있도록 합니다. 이 원리가 Godot에서는 다릅니다."
+"Unity에서, 모든 GameObjects를 씬에 넣을 것입니다: 플레이어, 여러 인스턴스 된 "
+"적, 레벨을 만드는 벽돌, 그리고 모든 레벨에 있는 여러 인스턴스 된 동전입니다. "
+"그런 다음 각 요소들을 연결하고 레벨의 타당성을 주기 위한 다양한 구성 요소를 "
+"추가할 것입니다: 예를 들어 모든 요소에 BoxCollider2D를 추가해서 씬의 모든 요"
+"소가 충돌할 수 있도록 합니다. 이 원리가 Godot에서는 다릅니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:111
 #, fuzzy
@@ -11667,10 +11665,10 @@ msgid ""
 "collision types nodes, depending on the usage (see the :ref:`Physics "
 "introduction <doc_physics_introduction>`)."
 msgstr ""
-"보시다시피, 모든 씬이 트리로 조직됩니다. 노드의 속성도 동일합니다: 유니티처"
-"럼 노드가 충돌 가능하도록 충돌 구성 요소를 *추가* 할 수는 없습니다. 대신 충"
-"돌 속성을 가진 새로운 특정 노드를 *자식* 으로 만들 수 있습니다. Godot는 사용"
-"법에 따른 다양한 충돌 타입 노드가 있습니다 (:ref:`물리 소개 "
+"보시다시피, 모든 씬이 트리로 조직됩니다. 노드의 속성도 동일합니다: Unity처럼 "
+"노드가 충돌 가능하도록 충돌 구성 요소를 *추가* 할 수는 없습니다. 대신 충돌 속"
+"성을 가진 새로운 특정 노드를 *자식* 으로 만들 수 있습니다. Godot는 사용법에 "
+"따른 다양한 충돌 타입 노드가 있습니다 (:ref:`물리 소개 "
 "<doc_physics_introduction>`\\ 를 참고하세요)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:140
@@ -11859,7 +11857,7 @@ msgid ""
 "script so that it reacts to the player's controls, and another that controls "
 "its specific game logic."
 msgstr ""
-"유니티는 GameObject에 원하는 만큼의 스크립트를 붙일 수 있습니다. 각 스크립트"
+"Unity는 GameObject에 원하는 만큼의 스크립트를 붙일 수 있습니다. 각 스크립트"
 "는 GameObject에 행동을 추가합니다: 예를 들어 스크립트를 붙여서 플레이어의 조"
 "작이나 특정 게임을 조작하는 다른 것을 넣을 수 있습니다."
 
@@ -11934,7 +11932,7 @@ msgstr "스크립트 직렬화"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
 msgid "Unity can handle script serialization in two ways:"
-msgstr "유니티는 두 가지 방법으로 스크립트 직렬화를 다룰 수 있습니다:"
+msgstr "Unity는 두 가지 방법으로 스크립트 직렬화를 다룰 수 있습니다:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:235
 msgid ""
@@ -11975,12 +11973,11 @@ msgid ""
 "`class_Resource` will allow you to create custom serializable objects. More "
 "information about resources can be found :ref:`here <doc_resources>`."
 msgstr ""
-"유니티 또한 커스텀 에셋 객체를 직렬화 하기 위해 사용되는 "
-"``ScriptableObject`` 라는 데이터 타입을 갖고 있습니다. Godot에서 이것은 모든 "
-"리소스의 기본 클래스에 해당합니다: :ref:`class_Resource`. :ref:"
-"`class_Resource`\\ 를 상속하는 스크립트를 만드는 것으로 커스텀 직렬화 가능한 "
-"객체를 만들 수 있게 됩니다. 리소스에 관한 더 많은 정보는 :ref:`여기서 "
-"<doc_resources>` 볼 수 있습니다."
+"Unity 또한 커스텀 애셋 객체를 직렬화 하기 위해 사용되는 ``ScriptableObject`` "
+"라는 데이터 타입을 갖고 있습니다. Godot에서 이것은 모든 리소스의 기본 클래스"
+"에 해당합니다: :ref:`class_Resource`. :ref:`class_Resource`\\ 를 상속하는 스"
+"크립트를 만드는 것으로 커스텀 직렬화 가능한 객체를 만들 수 있게 됩니다. 리소"
+"스에 관한 더 많은 정보는 :ref:`여기서 <doc_resources>` 볼 수 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:248
 msgid "Using Godot in C++"
@@ -11994,8 +11991,8 @@ msgid ""
 "API."
 msgstr ""
 "Godot는 API를 사용하여 C++로 프로젝트를 직접 개발할 수 있게 해줍니다, 이는 현"
-"재 유니티에서는 불가능합니다. 예를 들어 Godot 엔진의 에디터를 Godot API를 사"
-"용하는 C++로 작성된 \"게임\"으로 간주할 수 있습니다."
+"재 Unity에서는 불가능합니다. 예를 들어 Godot 엔진의 편집기를 Godot API를 사용"
+"하는 C++로 작성된 \"게임\"으로 간주할 수 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:253
 msgid ""
@@ -12007,7 +12004,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:4
 msgid "Command line tutorial"
-msgstr "명령 행(Command line) 튜토리얼"
+msgstr "명령줄(Command line) 튜토리얼"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
 msgid ""
@@ -12016,10 +12013,10 @@ msgid ""
 "command line. Given the engine relies on almost no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
-"일부 개발자들은 명령 행을 광범위하게 사용하는 것을 좋아합니다. Godot는 그들에"
-"게 친절하게 설계되었고, 명령 행에서 완전히 작업하는 순서가 있습니다. 엔진은 "
-"외부 라이브러리에 거의 의존하지 않아서, 초기화 시간이 매우 빠르고, 이 워크플"
-"로에 적합하게 만듭니다."
+"일부 개발자들은 명령줄을 광범위하게 사용하는 것을 좋아합니다. Godot는 그들에"
+"게 친절하게 설계되었고, 명령줄에서 완전히 작업하는 순서가 있습니다. 엔진은 외"
+"부 라이브러리에 거의 의존하지 않아서, 초기화 시간이 매우 빠르고, 이 워크플로"
+"에 적합하게 만듭니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
@@ -12033,7 +12030,7 @@ msgid ""
 "making sure it is called ``godot``."
 msgstr ""
 "Godot 바이너리를 PATH 환경 변수에 넣어서, ``godot``\\ 를 입력하면 어느 곳이"
-"든 쉽게 실행하도록 하는 것을 추천합니다. 리눅스에서 Godot 바이너리를 ``/usr/"
+"든 쉽게 실행하도록 하는 것을 추천합니다. Linux에서 Godot 바이너리를 ``/usr/"
 "local/bin``\\ 에 배치하여, ``godot``\\ 라고 부르게 하세요."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:23
@@ -12078,8 +12075,8 @@ msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
 msgstr ""
-"명령 행에서 프로젝트를 생성하려면 셸을 원하는 위치로 이동하고 project.godot "
-"파일을 작성하십시오."
+"명령줄에서 프로젝트를 생성하려면 셸을 원하는 위치로 이동하고 project.godot 파"
+"일을 작성하십시오."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "The project can now be opened with Godot."
@@ -12087,7 +12084,7 @@ msgstr "프로젝트는 이제 Godot로 열릴 수 있습니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "Running the editor"
-msgstr "에디터 실행하기"
+msgstr "편집기 실행하기"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid ""
@@ -12095,7 +12092,7 @@ msgid ""
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
-"에디터는 ``-e`` 플래그를 실행해서 실행됩니다. 작업은 프로젝트 디렉토리 또는 "
+"편집기는 ``-e`` 플래그를 실행해서 실행됩니다. 작업은 프로젝트 디렉토리 또는 "
 "하위 디렉토리에서 수행해야 합니다, 그렇지 않으면 명령이 무시되고 프로젝트 관"
 "리자가 나타납니다."
 
@@ -12137,7 +12134,7 @@ msgstr ""
 msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
-msgstr "특정 씬을 테스트 해야 하는 경우 씬을 명령 행으로 전달하십시오."
+msgstr "특정 씬을 테스트 해야 하는 경우 씬을 명령줄로 전달하세요."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "Debugging"
@@ -12149,8 +12146,8 @@ msgid ""
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for running either the game or a simple scene."
 msgstr ""
-"명령 행에서 에러를 계산하는 것은 그냥 지나칠 수 있기 때문에 어려운 작업이 될 "
-"수 있습니다. 이를 위해 명령 행 디버거는 ``-d``\\ 를 추가하여 제공합니다. 게임"
+"명령줄에서 에러를 계산하는 것은 그냥 지나칠 수 있기 때문에 어려운 작업이 될 "
+"수 있습니다. 이를 위해 명령줄 디버거는 ``-d``\\ 를 추가하여 제공합니다. 게임"
 "이나 간단한 씬을 실행하는 데 모두 사용됩니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
@@ -12159,9 +12156,9 @@ msgid ""
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
-"명령 행에서 프로젝트를 내보내는 것도 지원됩니다. 특히 연속적인 통합 설정에 유"
-"용합니다. 이 때문에 Godot의 헤드리스 버전은 (서버 빌드, 비디오 없음) 이상적입"
-"니다."
+"명령줄에서 프로젝트를 내보내는 것도 지원됩니다. 특히 연속적인 통합 설정에 유"
+"용합니다. Godot의 헤드리스 버전은 (서버 빌드, 비디오 없음) 이런 점에서 이상적"
+"입니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:141
 msgid ""
@@ -12170,8 +12167,8 @@ msgid ""
 "platforms from the command line, try exporting to a non-recognized platform "
 "and the full listing of platforms your configuration supports will be shown."
 msgstr ""
-"``--export`` 스위치가 인식하는 플랫폼 이름은 에디터의 내보내기 마법사에 표시"
-"된 것과 동일합니다. 명령 행에서 지원하는 플랫폼 목록을 얻기 위해, 인지하지 않"
+"``--export`` 스위치가 인식하는 플랫폼 이름은 편집기의 내보내기 마법사에 표시"
+"된 것과 동일합니다. 명령줄에서 지원하는 플랫폼 목록을 얻기 위해, 인지하지 않"
 "는 플랫폼으로 내보내기를 시도하고 그러면 구성이 지원되는 전체 플랫폼 목록이 "
 "나타날 것입니다."
 
@@ -12193,7 +12190,7 @@ msgid ""
 "feature is especially useful in large projects, for batch conversion of "
 "assets or custom import/export."
 msgstr ""
-"명령 행에서 .gd 스크립트를 간단하게 실행할 수 있습니다.특히 일괄 변환 또는 커"
+"명령줄에서 .gd 스크립트를 간단하게 실행할 수 있습니다.특히 일괄 변환 또는 커"
 "스텀 가져 오기/내보내기를 위한, 큰 프로젝트에서 유용합니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:157
@@ -12218,7 +12215,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
-msgstr "외부 텍스트 에디터 사용하기"
+msgstr "외부 텍스트 편집기 사용하기"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
 #, fuzzy
@@ -12290,7 +12287,7 @@ msgstr "오류의 행 번호"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
 msgid "Some example Exec Flags for various editors include:"
-msgstr "다양한 에디터의 Exec Flags의 예는 다음과 같습니다:"
+msgstr "다양한 편집기의 Exec Flags의 예는 다음과 같습니다:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Exec Flags"
@@ -12714,7 +12711,7 @@ msgstr "tool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "Executes the script in the editor."
-msgstr "에디터에서 스크립트를 실행합니다."
+msgstr "편집기에서 스크립트를 실행합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "signal"
@@ -12785,7 +12782,7 @@ msgid ""
 "Saves a variable along with the resource it's attached to and makes it "
 "visible and modifiable in the editor."
 msgstr ""
-"첨부된 리소스를 변수와 함께 저장하고 에디터에서 변수를 표시하고 수정할 수 있"
+"첨부된 리소스를 변수와 함께 저장하고 편집기에서 변수를 표시하고 수정할 수 있"
 "게 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
@@ -12802,7 +12799,7 @@ msgstr "breakpoint"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "Editor helper for debugger breakpoints."
-msgstr "디버거 중단점을 위한 에디터 도우미."
+msgstr "디버거 중단점을 위한 편집기 도우미."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "preload"
@@ -13089,11 +13086,11 @@ msgstr "할당, 최하위 우선 순위"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "Literals"
-msgstr "상수(Literal)"
+msgstr "리터럴(Literal)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:298
 msgid "**Literal**"
-msgstr "**상수**"
+msgstr "**리터럴**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:298
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
@@ -13107,7 +13104,7 @@ msgstr "``45``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:300
 msgid "Base 10 integer"
-msgstr "기본 10 정수"
+msgstr "기본 10진법 정수"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:302
 msgid "``0x8F51``"
@@ -13115,7 +13112,7 @@ msgstr "``0x8F51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:302
 msgid "Base 16 (hex) integer"
-msgstr "기본 16 (hex) 정수"
+msgstr "기본 16진법 (hex) 정수"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:304
 msgid "``3.14``, ``58.1e-10``"
@@ -13155,7 +13152,7 @@ msgstr "``$NodePath``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:312
 msgid "Shorthand for ``get_node(\"NodePath\")``"
-msgstr "``get_node(\"NodePath\")`` 의 속기"
+msgstr "``get_node(\"NodePath\")``\\ 의 속기"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:316
 msgid "Comments"
@@ -13225,7 +13222,7 @@ msgstr "bool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:361
 msgid "The Boolean data type can only contain ``true`` or ``false``."
-msgstr "불 데이터 타입으로 ``true`` 나 ``false`` 만을 가지고 있습니다."
+msgstr "불리언 데이터 타입으로 ``true`` 아니면 ``false`` 값만 가지고 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:364
 msgid "int"
@@ -13235,7 +13232,8 @@ msgstr "int"
 msgid ""
 "The integer data type can only contain integer numbers, (both negative and "
 "positive)."
-msgstr "정수 데이터 타입은 오직 정수만 가질 수 있습니다, (음수와 양수 둘 다)."
+msgstr ""
+"정수 데이터 타입은 오직 정수 값만 가질 수 있습니다, (음수와 양수 둘 다)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:100
@@ -13263,10 +13261,10 @@ msgid ""
 "wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript supports :ref:`format "
 "strings aka printf functionality <doc_gdscript_printf>`."
 msgstr ""
-"`유니 코드 형식 <https://en.wikipedia.org/wiki/Unicode>`_ 에 있는 문자열. 문"
-"자열은 `표준 C 이스케이프 시퀀스 <https://en.wikipedia.org/wiki/"
-"Escape_sequences_in_C>`_ 를 가질 수 있습니다. GDScript는 :ref:`형식 문자열 일"
-"명 printf 기능 <doc_gdscript_printf>` 을 지원합니다."
+"`유니 코드 형식 <https://ko.wikipedia.org/wiki/Unicode>`_\\ 에 있는 문자열. "
+"문자열은 `표준 C 이스케이프 시퀀스 <https://en.wikipedia.org/wiki/"
+"Escape_sequences_in_C>`_\\ 를 가질 수 있습니다. GDScript는 :ref:`형식 문자열 "
+"printf 기능 <doc_gdscript_printf>`\\ 을 지원합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:383
 msgid "Vector built-in types"
@@ -13281,8 +13279,8 @@ msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as "
 "array."
 msgstr ""
-"2D 벡터 타입으로 ``x`` 와 ``y`` 필드를 가지고 있습니다. 배열로 접근될 수도 있"
-"습니다."
+"2D 벡터 타입으로 ``x``\\ 와 ``y`` 필드를 가지고 있습니다. 배열로 액세스할 수"
+"도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid ":ref:`Rect2 <class_Rect2>`"
@@ -13337,8 +13335,8 @@ msgid ""
 "Quaternion is a datatype used for representing a 3D rotation. It's useful "
 "for interpolating rotations."
 msgstr ""
-"사원수(Quaternion)는 3D 회전을 표현하기 위해 사용되는 데이터 타입입니다. 회전"
-"을 보간하기에 유용합니다."
+"사원수(Quaternion)는 3D 회전을 표현하기 위해 사용되는 데이터 타입입니다. 회"
+"전 값을 보간하기에 유용합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:421
 msgid ":ref:`AABB <class_AABB>`"
@@ -13363,8 +13361,8 @@ msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
 msgstr ""
-"3x3 행렬로 3D 회전과 규모에 사용됩니다. 3 개의 벡터 필드 (``x``, ``y`` 그리"
-"고 ``z``)를 가지며 3D 벡터의 배열로 접근될 수도 있습니다."
+"3x3 행렬로 3D 회전과 규모에 사용됩니다. 3개의 벡터 필드 (``x``, ``y`` 그리고 "
+"``z``)를 가지며 3D 벡터의 배열로 액세스할 수도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:435
 msgid ":ref:`Transform <class_Transform>`"
@@ -13374,8 +13372,8 @@ msgstr ":ref:`Transform <class_Transform>`"
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
-"3D 변형(Transform)으로 기반 필드인 ``basis`` 와 Vector3 필드인 ``origin`` 을 "
-"갖습니다."
+"3D 변형(Transform)으로 기반 필드인 ``basis``\\ 와 Vector3 필드인 ``origin``"
+"\\ 을 갖습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:441
 msgid "Engine built-in types"
@@ -13391,7 +13389,7 @@ msgid ""
 "be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
 msgstr ""
 "색상 데이터 타입으로 ``r``, ``g``, ``b``, 그리고 ``a`` 필드를 갖습니다. 색조/"
-"채도/색가를 위한 ``h``, ``s``, 그리고 ``v`` 로 접근될 수도 있습니다."
+"채도/명도를 위한 ``h``, ``s``, 그리고 ``v``\\ 로 액세스할 수도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:450
 msgid ":ref:`NodePath <class_NodePath>`"
@@ -13402,8 +13400,8 @@ msgid ""
 "Compiled path to a node used mainly in the scene system. It can be easily "
 "assigned to, and from, a String."
 msgstr ""
-"주로 씬 시스템에 사용되는 노드로 컴파일 된 경로. 쉽게 문자열에 할당하거나 문"
-"자열이 될 수 있습니다."
+"노드로 컴파일 된 경로로 주로 씬 시스템에 사용됩니다. 쉽게 문자열에 지정하거"
+"나 문자열이 될 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:456
 msgid ":ref:`RID <class_RID>`"
@@ -13425,11 +13423,11 @@ msgstr "내장 타입이 아닌 것을 위한 기본 클래스."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:466
 msgid "Container built-in types"
-msgstr "컨테이너 내장 타입"
+msgstr "컨테이너(Container) 내장 타입"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:469
 msgid ":ref:`Array <class_Array>`"
-msgstr ":ref:`Array <class_Array>`"
+msgstr ":ref:`Array <class_Array>`\\ (배열)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:471
 msgid ""
@@ -13440,8 +13438,8 @@ msgid ""
 msgstr ""
 "임의 객체 타입의 일반적인 열로, 다른 배열이다 딕셔너리를 포함하고 있습니다 "
 "(아래를 참고하세요). 배열의 크기는 동적으로 변경할 수 있습니다. 배열은 인덱"
-"스 ``0`` 부터 인덱스가 붙기 시작합니다. Godot 2.1부터는, 끝에서 세도록 하기 "
-"위해, Python처럼 인덱스가 음수일 수도 있습니다."
+"스 ``0``\\ 부터 인덱스가 붙기 시작합니다. Godot 2.1부터는, 끝에서 세도록 하"
+"기 위해, Python처럼 인덱스가 음수일 수도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:485
 msgid ""
@@ -13464,7 +13462,7 @@ msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
 msgstr ""
-":ref:`PoolByteArray <class_PoolByteArray>`: 비트의 배열 (0부터 255까지의 정"
+":ref:`PoolByteArray <class_PoolByteArray>`: 바이트의 배열 (0부터 255까지의 정"
 "수)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:493
@@ -13505,7 +13503,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:501
 msgid ":ref:`Dictionary <class_Dictionary>`"
-msgstr "딕셔너리 (:ref:`Dictionary <class_Dictionary>`)"
+msgstr ":ref:`Dictionary <class_Dictionary>`\\ (딕셔너리)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:503
 msgid "Associative container which contains values referenced by unique keys."
@@ -13518,9 +13516,9 @@ msgid ""
 "write). Note however that like any GDScript identifier, keys written in this "
 "form cannot start with a digit."
 msgstr ""
-"Lua 스타일의 테이블 문법 역시 지원됩니다. Lua 스타일은 ``:`` 대신 ``=`` 를 사"
-"용하고 (쓰는 것을 적게 만들기 위해) 문자열 키를 표시하기 위해 따옴표를 사용하"
-"지 않습니다.\n"
+"Lua 스타일의 테이블 문법 역시 지원됩니다. Lua 스타일은 ``:`` 대신 ``=``\\ 를 "
+"사용하고 (쓰는 것을 적게 만들기 위해) 문자열 키를 표시하기 위해 따옴표를 사용"
+"하지 않습니다.\n"
 "하지만 모든 GDScript 식별자와 마찬가지로, 이 양식으로 작성된 키는 숫자로 시작"
 "할 수 없습니다."
 
@@ -13585,13 +13583,13 @@ msgid ""
 "Type inference is only possible if the assigned value has a defined type, "
 "otherwise it will raise an error."
 msgstr ""
-"타입 함축은 오직 할당된 값이 정의된 타입을 갖고 있어야만 가능합니다, 그렇지 "
+"타입 함축은 오직 지정된 값이 정의된 타입을 갖고 있어야만 가능합니다, 그렇지 "
 "않으면 오류가 발생합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:576
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:39
 msgid "Valid types are:"
-msgstr "유효한 타입은 다음과 같습니다:"
+msgstr "올바른 타입은 다음과 같습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:578
 msgid "Built-in types (Array, Vector2, int, String, etc.)"
@@ -13675,7 +13673,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:71
 #: ../../docs/development/cpp/object_class.rst:94
 msgid "Constants"
-msgstr "상수"
+msgstr "상수(Constant)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:627
 msgid ""
@@ -13706,7 +13704,7 @@ msgid ""
 "Enums are basically a shorthand for constants, and are pretty useful if you "
 "want to assign consecutive integers to some constant."
 msgstr ""
-"이넘은 기본적으로 상수의 축약 형이고, 연속적인 정수를 일부 상수에 지정할 때 "
+"이넘은 기본적으로 상수의 축약형이고, 연속적인 정수를 일부 상수에 지정할 때 "
 "꽤 유용합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:655
@@ -13714,7 +13712,8 @@ msgid ""
 "If you pass a name to the enum, it will put all the keys inside a constant "
 "dictionary of that name."
 msgstr ""
-"이넘에 이름을 전달하면, 그 이름의 상수 딕셔너리 내에 모든 키를 넣을 것입니다."
+"이넘에 이름을 전달하면, 이넘은 해당 이름의 상수 딕셔너리 안에 모든 키를 넣습"
+"니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:678
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
@@ -13730,17 +13729,17 @@ msgid ""
 "but is not always required (and should *not* be sent as the function's first "
 "argument, unlike Python)."
 msgstr ""
-"함수는 항상 `class <Classes_>`_ 에 속해 있습니다. 변수를 조회하는 범위 우선 "
-"순위는: 지역 → 클래스 멤버 → 전역 순입니다. ``self`` 변수는 항상 사용할 수 있"
-"고 클래스 멤버에 접근하는 옵션으로 제공될 수 있지만, 항상 필요한 것은 아닙니"
-"다 (그리고 Python과 달리, 함수의 첫 인수로 보내서는 *안 됩니다*)."
+"함수는 항상 `class <Classes_>`_\\ 에 속해 있습니다. 변수를 조회하는 범위 우"
+"선 순위는: 지역 → 클래스 멤버 → 전역 순입니다. ``self`` 변수는 항상 사용할 "
+"수 있고 클래스 멤버에 접근하는 옵션으로 제공될 수 있지만, 항상 필요한 것은 아"
+"닙니다 (그리고 Python과 달리, 함수의 첫 인수로 보내서는 *안 됩니다*)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:693
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
-"함수는 언제든지 ``반환(return)`` 될 수 있습니다. 기본 반환 값은 ``null`` 입니"
-"다."
+"함수는 언제든지 ``반환(return)``\\ 할 수 있습니다. 기본 반환 값은 ``null``\\ "
+"입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:695
 msgid ""
@@ -13771,9 +13770,9 @@ msgid ""
 "functions can return early with the ``return`` keyword, but they can't "
 "return any value."
 msgstr ""
-"반환 값을 갖는 함수는 **반드시** 적절한 값을 반환해야 합니다. ``void(빈)``\\ "
-"로 타입을 설정하는 것은 함수가 어느 것도 반환하지 않음을 의미합니다. 빈 함수"
-"는 ``return`` 키워드로 일찍 반환할 수 있지만 어떤 값도 반환할 수 없습니다."
+"반환 값을 갖는 함수는 **반드시** 적절한 값을 반환해야 합니다. ``void``\\ 로 "
+"타입을 설정하면 함수가 아무것도 반환하지 않습니다. 이런 함수들은 ``return`` "
+"키워드로 일찍 반환할 수 있지만 어떤 값도 반환할 수 없습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:721
 msgid ""
@@ -13783,11 +13782,11 @@ msgid ""
 "``if`` block but not after it, the editor will raise an error because if the "
 "block is not executed, the function won't have a valid value to return."
 msgstr ""
-"무효가 아닌 함수는 반드시 **항상** 값을 반환해야 하므로, 코드가 (``if``/"
-"``else`` 구조와 같은) 명령문을 뻗고 있다면, 모든 가능한 경로가 반환을 가져야 "
-"합니다. 예를 들어, ``if`` 블록 안에 ``return``\\ 을 갖지만 그 뒤가 없는 경"
-"우, 블록이 실행되지 않으면 반환할 유효한 값을 함수가 가질 수 없기 때문에, 에"
-"디터는 오류를 발생합니다."
+"반환할 수 있는 함수는 반드시 **항상** 값을 반환해야 하므로, 코드가 (``if``/"
+"``else`` 구조와 같은) 명령문으로 나뉘고 있다면, 모든 가능한 경로가 반환을 가"
+"져야 합니다. 예를 들어, ``if`` 블록 안에 ``return``\\ 을 갖지만 그 뒤가 없는 "
+"경우, 블록이 실행되지 않는 경우, 반환할 올바른 값을 함수가 가질 수 없기 때문"
+"에 편집기는 오류를 발생합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:729
 msgid "Referencing Functions"
@@ -13810,9 +13809,9 @@ msgid ""
 "or pass it to another function as an argument) one must use the ``call`` or "
 "``funcref`` helpers::"
 msgstr ""
-"런타임에 함수를  이름으로 참조하기 위해 (예를 들어 그것을 변수로 저장하거나, "
-"다른 함수에 인수로 전달하기 위해), ``call`` 이나 ``funcref`` 도우미를 사용해"
-"야 합니다::"
+"런타임에 함수를 이름으로 참조하기 위해 (예를 들어 그것을 변수로 저장하거나, "
+"다른 함수에 인수로 전달하기 위해), ``call``\\ 이나 ``funcref`` 도우미를 사용"
+"해야 합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:748
 msgid ""
@@ -13824,7 +13823,7 @@ msgstr ""
 "``_init``\\ 과 같은 기본 함수와, ``_enter_tree``, ``_exit_tree``, "
 "``_process``, ``_physics_process`` 등과 같은 대부분의 알림은 모든 기본 클래스"
 "에서 자동으로 호출된다는 것을 기억하세요. 그래서 어떤 방법이든 함수를 오버로"
-"딩 할 때 명시적으로 함수를 호출할 필요가 있습니다."
+"딩할 때 명시적으로 함수를 호출할 필요가 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:756
 msgid "Static functions"
@@ -13851,7 +13850,7 @@ msgid ""
 "optional."
 msgstr ""
 "명령문은 표준이고 할당, 함수 호출, 제어 흐름 구조 등이 될 수 있습니다 (하단"
-"을 참고하세요). 명령문 분리 기호로 쓰인 ``;`` 는 전적으로 선택 사항입니다."
+"을 참고하세요). 명령문 분리 기호로 쓰인 ``;``\\ 는 전적으로 선택 사항입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:776
 msgid "if/else/elif"
@@ -13886,8 +13885,8 @@ msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
 msgstr ""
-"간단한 루프는 ``while`` 문법을 사용하여 만들 수 있습니다. 루프는 ``break`` "
-"를 사용하여 끊거나 ``continue`` 를 사용하여 진행할 수 있습니다:"
+"간단한 루프는 ``while`` 문법을 사용하여 만들 수 있습니다. 루프는 ``break``\\ "
+"를 사용하여 끊거나 ``continue``\\ 를 사용하여 진행할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:819
 msgid ""
@@ -13898,7 +13897,7 @@ msgid ""
 msgstr ""
 "배열이나 테이블 같은, 범위를 반복하려면, *for* 루프가 사용됩니다. 한 배열을 "
 "반복할 때, 현재 배열 요소는 루프 변수에 저장됩니다. 딕셔너리를 반복할 때, *인"
-"덱스* 는 루프 변수에 저장됩니다."
+"덱스*\\ 는 루프 변수에 저장됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:848
 msgid ""
@@ -13920,11 +13919,11 @@ msgstr "**switch 명령문에 익숙한 사람들을 위한 집중 강좌**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:866
 msgid "Replace ``switch`` with ``match``"
-msgstr "``switch`` 를 ``match`` 로 바꾸십시오"
+msgstr "``switch``\\ 를 ``match``\\ 로 바꾸세요"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:867
 msgid "Remove ``case``"
-msgstr "``case`` 를 제거하십시오"
+msgstr "``case``\\ 를 제거하세요"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:868
 msgid ""
@@ -13932,11 +13931,11 @@ msgid ""
 "use ``continue`` for a fallthrough."
 msgstr ""
 "모든 ``break``\\ 를 제거하세요. 기본적으로 ``break``\\ 가 되지 않도록 하고 싶"
-"다면 fallthrough를 위해 ``continue``\\ 를 사용하실 수 있습니다."
+"다면 fallthrough처럼 ``continue``\\ 를 사용하실 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
 msgid "Change ``default`` to a single underscore."
-msgstr "``default`` 를 하나의 밑줄로 변경하십시오."
+msgstr "``default``\\ 를 하나의 밑줄로 변경하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:872
 msgid "**Control flow**:"
@@ -13988,8 +13987,7 @@ msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages. ::"
 msgstr ""
-"다른 언어의 ``switch`` 명령문에서 ``default`` 와 동등하게 사용될 수 있습니"
-"다. ::"
+"다른 언어의 ``switch`` 명령문에서 ``default``\\ 와 동등하게 쓰입니다. ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:929
 msgid "binding pattern"
@@ -14030,8 +14028,8 @@ msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``"
 msgstr ""
-"**개방형 배열**: 마지막 하위 패턴을 ``..`` 로 만들어서 배열이 패턴보다 더 커"
-"지도록 만들 수 있습니다"
+"**개방형 배열**: 마지막 하위 패턴을 ``..``\\ 으로 만들어서 배열이 패턴보다 "
+"더 커지도록 만들 수 있습니다"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:938
 msgid "Every subpattern has to be comma separated. ::"
@@ -14061,8 +14059,8 @@ msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``"
 msgstr ""
-"**개방형 딕셔너리**: 마지막 하위 패턴을 ``..`` 로 만들어서 딕셔너리가 패턴보"
-"다 더 커지도록 만들 수 있습니다"
+"**개방형 딕셔너리**: 마지막 하위 패턴을 ``..``\\ 으로 만들어서 딕셔너리가 패"
+"턴보다 더 커지도록 만들 수 있습니다"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
 msgid "Every subpattern has to be comma separated."
@@ -14075,7 +14073,7 @@ msgstr "값을 지정하지 않으면, 키의 존재 여부만 확인됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:961
 msgid "A value pattern is separated from the key pattern with a ``:`` ::"
-msgstr "값 패턴은 키 패턴과 ``:`` 로 분리됩니다 ::"
+msgstr "값 패턴은 키 패턴과 ``:``\\ 으로 분리됩니다 ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:984
 msgid "Multipatterns:"
@@ -14101,7 +14099,7 @@ msgid ""
 msgstr ""
 "기본적으로, 모든 스크립트 파일은 이름 없는 클래스 입니다. 이 경우, 우리는 파"
 "일 경로를 사용하거나 상대 경로 혹은 절대 경로를 사용하여 그들을 참조할 수 있"
-"습니다. 예를 들어 스크립트의 이름이 ``character.gd`` 라면"
+"습니다. 예를 들어 스크립트의 이름이 ``character.gd``\\ 라면"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1004
 msgid ""
@@ -14110,9 +14108,9 @@ msgid ""
 "optional comma followed by a path to an image, to use it as an icon. Your "
 "class will then appear with its new icon in the editor:"
 msgstr ""
-"대신, 클래스에 이름을 지정하여 Godot 에디터에 새 타입으로 등록할 수 있습니"
+"대신 클래스에 이름을 지정하여 Godot 편집기에 새로운 타입으로 등록할 수 있습니"
 "다. 이를 위해, 'class_name' 키워드를 사용합니다. 선택적 쉼표와 이미지 경로를 "
-"추가하여 아이콘으로 사용할 수 있습니다. 클래스는 이제 에디터에서 새로운 아이"
+"추가하여 아이콘으로 사용할 수 있습니다. 클래스는 이제 편집기에서 새로운 아이"
 "콘으로 나타납니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1019
@@ -14175,8 +14173,8 @@ msgid ""
 "To call a function in a *base class* (i.e. one ``extend``-ed in your current "
 "class), prepend ``.`` to the function name:"
 msgstr ""
-"*기본 클래스* (즉, 현재 클래스에서 ``extend`` 된 것)에서 함수를 호출하려면, "
-"``.`` 를 함수 이름 앞에 붙이세요:"
+"*기본 클래스* (즉, 현재 클래스에서 ``extend``\\ 된 것)에서 함수를 호출하려"
+"면, ``.``\\ 을 함수 이름 앞에 붙이세요:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1091
 msgid ""
@@ -14186,7 +14184,7 @@ msgid ""
 msgstr ""
 "이는 확장 클래스의 함수가 함수를 기본 클래스의 동일한 이름으로 대체하기 때문"
 "에 특히 유용합니다. 따라서 여전히 그들을 호출하고 싶다면, 다른 언어의 "
-"``super`` 키워드처럼 ``.`` 을 사용할 수 있습니다:"
+"``super`` 키워드처럼 ``.``\\ 을 사용할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1101
 msgid "Class Constructor"
@@ -14199,9 +14197,9 @@ msgid ""
 "automatically when inheriting a class. So there is usually no need to call "
 "``._init()`` explicitly."
 msgstr ""
-"클래스 인스턴스에 호출되는, 클래스 생성자의 이름은 ``_init`` 입니다. 앞서 언"
-"급한 바와 같이, 부모 클래스의 생성자는 클래스를 상속할 때 자동으로 호출됩니"
-"다. 그래서 보통 ``._init()`` 을 명시적으로 호출할 필요는 없습니다."
+"클래스 인스턴스에 호출되는, 클래스 생성자의 이름은 ``_init``\\ 입니다. 앞서 "
+"언급한 바와 같이, 부모 클래스의 생성자는 클래스를 상속할 때 자동으로 호출됩니"
+"다. 그래서 보통 ``._init()``\\ 을 명시적으로 호출할 필요는 없습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1107
 msgid ""
@@ -14214,8 +14212,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1115
 msgid "This is better explained through examples. Say we have this scenario:"
-msgstr ""
-"이것은 예제를 통해 더 잘 설명됩니다. 이 시나리오가 있다고 가정하십시오:"
+msgstr "이것은 예제를 통해 더 잘 설명됩니다. 이 시나리오가 있다고 가정하세요:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1137
 msgid "There are a few things to keep in mind here:"
@@ -14229,17 +14226,17 @@ msgid ""
 "``_init`` from ``State.gd``"
 msgstr ""
 "상속된 클래스 (``State.gd``)가 인수를 갖는 (이 경우에는 ``e``\\ 를 갖는) "
-"``_init`` 생성자를 정의한다면 상속하는 클래스 (``Idle.gd``)는 ``State.gd`` 에"
-"서 적절한 매개 변수를 ``_init`` 에게 전달하고 ``_init`` *정의해야*\\ 만 합니"
-"다"
+"``_init`` 생성자를 정의한다면 상속하는 클래스 (``Idle.gd``)는 ``State.gd``\\ "
+"에서 적절한 매개 변수를 ``_init``\\ 에게 전달하고 ``_init``\\ 을 *정의해야만"
+"* 합니다"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1142
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the base class "
 "``State.gd``"
 msgstr ""
-"``Idle.gd`` 는 기본 클래스 ``State.gd`` 와 다른 수의 인수들을 가질 수 있습니"
-"다"
+"``Idle.gd``\\ 는 기본 클래스 ``State.gd``\\ 와는 다른 수의 인수들을 가질 수 "
+"있습니다"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
 msgid ""
@@ -14284,10 +14281,10 @@ msgid ""
 "of a loaded class resource is done by calling the ``new`` function on the "
 "class object::"
 msgstr ""
-"파일로 저장된 클래스는 :ref:`resources <class_GDScript>` 로 취급됩니다. 다른 "
-"클래스에서 접근하려면 반드시 불러와 있어야 합니다. 이것에는 ``load`` 나 "
-"``preload`` 함수를 사용합니다 (하단을 참고하세요). 불러온 클래스를 인스턴스 "
-"하려면 클래스 객체에 ``new`` 함수를 호출합니다::"
+"파일로 저장된 클래스는 :ref:`resources <class_GDScript>`\\ 로 취급됩니다. 다"
+"른 클래스에서 접근하려면 반드시 불러와 있어야 합니다. 이것에는 ``load``\\ 나 "
+"``preload`` 함수를 사용합니다 (하단을 참고하세요). 불러온 클래스를 인스턴스하"
+"려면 클래스 객체에 ``new`` 함수를 호출합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1199
 msgid "Exports"
@@ -14301,7 +14298,7 @@ msgid ""
 "Exporting is done by using the ``export`` keyword::"
 msgstr ""
 "클래스 멤버는 내보내질 수 있습니다. 즉, 값이 첨부된 리소스와 함께 저장됩니다 "
-"(예 the :ref:`scene <class_PackedScene>`). 그들은 또한 속성 에디터에서 편집하"
+"(예 the :ref:`scene <class_PackedScene>`). 그들은 또한 속성 편집기에서 편집하"
 "는 것이 가능합니다. 내보내는 것은 ``export`` 키워드를 사용합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
@@ -14319,7 +14316,7 @@ msgid ""
 "designers can modify values that later influence how the program runs. For "
 "this, a special export syntax is provided."
 msgstr ""
-"멤버 변수 내보내기의 기본적인 이점은 에디터에서 보이고 편집할 수 있는 것입니"
+"멤버 변수 내보내기의 기본적인 이점은 편집기에서 보이고 편집할 수 있는 것입니"
 "다. 이 방법으로 아티스트와 게임 디자이너가 프로그램이 실행 방법에 영향을 주"
 "는 값을 수정할 수 있습니다. 이를 위해, 특수 내보내기 문법이 제공됩니다."
 
@@ -14328,8 +14325,8 @@ msgid ""
 "It must be noted that even if the script is not being run while at the "
 "editor, the exported properties are still editable (see below for \"tool\")."
 msgstr ""
-"심지어 스크립트가 에디터에서 실행되지 않더라도, 내보낸 속성은 여전히 편집 가"
-"능합니다 (아래 \"도구\"를 참고하세요)."
+"심지어 스크립트가 편집기에서 실행되지 않더라도, 내보낸 속성은 여전히 편집 가"
+"능합니다 (아래 \"툴\"을 참고하세요)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1307
 msgid "Exporting bit flags"
@@ -14341,9 +14338,9 @@ msgid ""
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
 "set from the editor:"
 msgstr ""
-"비트 플래그로 사용되는 정수는 한 속성에 많은 ``참``/``거짓`` (불) 값을 저장"
-"할 수 있습니다. 내보내기 힌트 ``int, FLAGS`` 를 사용하여, 이를 에디터에서 설"
-"정할 수 있습니다:"
+"비트 플래그로 사용되는 정수는 한 속성에 많은 ``참``/``거짓`` (불리언) 값을 저"
+"장할 수 있습니다. 내보내기 힌트 ``int, FLAGS``\\ 를 사용하여, 이를 편집기에"
+"서 설정할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1318
 msgid ""
@@ -14435,7 +14432,7 @@ msgid ""
 "Get/Setters are especially useful when exporting variables to editor in tool "
 "scripts or plugins, for validating input."
 msgstr ""
-"Get/Setter는 입력이 유효한지 알아보기 위해, 툴 스크립트나 플러그인에서 에디터"
+"Get/Setter는 입력이 유효한지 알아보기 위해, 툴 스크립트나 플러그인에서 편집기"
 "로 변수를 내보낼 때 특히 유용합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1415
@@ -14458,8 +14455,8 @@ msgid ""
 "doing so). For this, the ``tool`` keyword exists and must be placed at the "
 "top of the file:"
 msgstr ""
-"기본적으로, 스크립트는 에디터 내에서 실행되지 않고 내보낸 속성만 변경할 수 있"
-"습니다. 경우에 따라 에디터 내에서 실행하는 것이 바람직합니다 (게임 코드를 실"
+"기본적으로, 스크립트는 편집기 내에서 실행되지 않고 내보낸 속성만 변경할 수 있"
+"습니다. 경우에 따라 편집기 내에서 실행하는 것이 바람직합니다 (게임 코드를 실"
 "행하지 않거나 수동으로 실행하려 하지 않는 한). 이를 위해 ``tool`` 키워드가 존"
 "재하며 파일의 맨 위에 배치해야 합니다:"
 
@@ -15218,7 +15215,7 @@ msgid ""
 "Godot's built-in script editor uses a lot of these conventions by default. "
 "Let it help you."
 msgstr ""
-"Godot의 내장 스크립트 에디터는 기본적으로 많은 규정을 사용합니다. 그것이 당신"
+"Godot의 내장 스크립트 편집기는 기본적으로 많은 규정을 사용합니다. 그것이 당신"
 "을 돕도록 하십시오."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:22
@@ -15231,11 +15228,11 @@ msgstr "들여쓰기(Indentation)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:27
 msgid "Indent type: Tabs *(editor default)*"
-msgstr "들여쓰기 유형: Tabs *(에디터 기본)*"
+msgstr "들여쓰기 유형: Tabs *(편집기 기본)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:29
 msgid "Indent size: 4 *(editor default)*"
-msgstr "들여쓰기 크기: 4 *(에디터 기본)*"
+msgstr "들여쓰기 크기: 4 *(편집기 기본)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:31
 msgid "Each indent level should be one greater than the block containing it."
@@ -15579,7 +15576,7 @@ msgid ""
 "<doc_scripting_continued_class_name>` feature to register types in the "
 "editor."
 msgstr ""
-"당신이 만들고 수정한 클래스들. 에디터에서 타입을 등록하려면 새로운 :ref:`클래"
+"당신이 만들고 수정한 클래스들. 편집기에서 타입을 등록하려면 새로운 :ref:`클래"
 "스이름 <doc_scripting_continued_class_name>` 특징을 보세요."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:114
@@ -15620,7 +15617,7 @@ msgid ""
 "editor, and you can use it anywhere, without having to preload it into a "
 "constant:"
 msgstr ""
-"``class_name``\\ 을 사용한다면, Godot는 Rifle 타입을 에디터에서 전역으로 등록"
+"``class_name``\\ 을 사용한다면, Godot는 Rifle 타입을 편집기에서 전역으로 등록"
 "합니다, 그리고 상수에 미리 불러올 필요 없이 어디에나 그것을 쓸 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:145
@@ -15723,7 +15720,7 @@ msgid ""
 msgstr ""
 "노드를 얻을 때 예상하는 타입을 Godot에게 말하기 위해 캐스팅을 사용할 수 있습"
 "니다: ``($Timer as Timer)``,  ``($Player as KinematicBody2D)`` 등. Godot는 타"
-"입이 작동하는지 확인하고, 작동한다면 스크립트 에디터 왼쪽의 줄 숫자가 초록색"
+"입이 작동하는지 확인하고, 작동한다면 스크립트 편집기 왼쪽의 줄 숫자가 초록색"
 "으로 바뀔 것입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:204
@@ -15733,7 +15730,7 @@ msgstr "안전 vs 불안전 라인"
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:208
 msgid ""
 "You can turn off safe lines or change their color in the editor settings."
-msgstr "에디터 설정에서 안전 라인을 끌 수 있고 혹은 색상을 바꿀 수 있습니다."
+msgstr "편집기 설정에서 안전 라인을 끌 수 있고 혹은 색상을 바꿀 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:211
 msgid "Define the return type of a function with the arrow ->"
@@ -15852,7 +15849,7 @@ msgid ""
 "You can find a list of warnings for the active GDScript file in the script "
 "editor’s status bar. The example below has 3 warnings:"
 msgstr ""
-"스크립트 에디터의 상태 바에서 활성화된 GDScript 파일을 위한 경고 목록을 찾을 "
+"스크립트 편집기의 상태 바에서 활성화된 GDScript 파일을 위한 경고 목록을 찾을 "
 "수 있습니다. 밑의 예제는 3개의 경고를 갖습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
@@ -16575,7 +16572,7 @@ msgid ""
 "In Godot, a Visual Script fits smoothly together with regular scripts in the "
 "Editor tab"
 msgstr ""
-"Godot에서, Visual Script가 에디터 탭의 일반 스크립트와 매끄럽게 호환합니다"
+"Godot에서, Visual Script가 편집기 탭의 일반 스크립트와 매끄럽게 호환합니다"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:15
 msgid ""
@@ -16616,7 +16613,7 @@ msgid ""
 "Finally, the Script Editor will open, allowing you to start editing the "
 "visual script:"
 msgstr ""
-"마침내, Script 에디터가 열리고, Visual script 편집을 시작할 수 있습니다:"
+"마침내, Script 편집기가 열리고, Visual script 편집을 시작할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:43
 msgid "Adding a function"
@@ -17632,8 +17629,8 @@ msgid ""
 "logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
 "연산자들 사이에서, *Expression* 노드는 가장 강력합니다. 잘만 쓴다면, 수학이"
-"나 논리로 무거워진 비주얼 스크립트를 엄청 간단하게 만들 수 있습니다. 표현식"
-"을 입력하면 실시간으로 실행됩니다."
+"나 논리로 무거워진 VisualScript를 엄청 간단하게 만들 수 있습니다. 표현식을 입"
+"력하면 실시간으로 실행됩니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:486
 msgid "Expression nodes can:"
@@ -17768,7 +17765,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
 msgid "macOS and Linux"
-msgstr "macOS와 리눅스"
+msgstr "macOS와 Linux"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:53
 msgid ""
@@ -17830,11 +17827,11 @@ msgid ""
 "**Editor → Editor Settings** and scroll down to **Mono**. Under **Mono**, "
 "click on **Editor**, and select your external editor of choice."
 msgstr ""
-"Godot의 스크립트 에디터에서 C# 지원은 최소한입니다. `Visual Studio Code "
+"Godot의 스크립트 편집기에서 C# 지원은 최소한입니다. `Visual Studio Code "
 "<https://code.visualstudio.com/>`_\\ 나 MonoDevelop과 같은 외부 IDE나 편집기"
 "를 사용하는 것을 고려해보세요. 이 둘은 자동 완성, 디버깅을 제공하며 C#으로 작"
 "업하면서 쓰이는 유용한 기능이 있습니다. Godot에서 외부 편집기를 선택하려면, "
-"**에디터 → 에디터 설정**\\ 으로 가서 **Mono**\\ 로 내려갑니다. **Mono**\\ 에"
+"**편집기 → 편집기 설정**\\ 으로 가서 **Mono**\\ 로 내려갑니다. **Mono**\\ 에"
 "서 **Editor**\\ 를 클릭하면 외부 편집기를 선택하는 페이지가 나타납니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
@@ -18016,7 +18013,7 @@ msgstr ""
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
-"에디터 플러그인을 작성하는 것은 가능하지만, 현재로썬 상당히 복잡합니다."
+"편집기 플러그인을 작성하는 것은 가능하지만, 현재로썬 상당히 복잡합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
 msgid ""
@@ -18035,7 +18032,7 @@ msgid ""
 "github.com/godotengine/godot/issues/20270>`_ `#20271 <https://github.com/"
 "godotengine/godot/issues/20271>`_)."
 msgstr ""
-"Mono 프로젝트를 내보내는 것은 데스크탑 플랫폼 (Linux, 윈도우, 그리고 macOS)"
+"Mono 프로젝트를 내보내는 것은 데스크탑 플랫폼 (Linux, Windows, 그리고 macOS)"
 "만 지원합니다. Android, iOS, HTML5 그리고 UWP는 현재는 지원하지 않습니다 "
 "(`#20267 <https://github.com/godotengine/godot/issues/20267>`_, `#20268 "
 "<https://github.com/godotengine/godot/issues/20268>`_ `#20270 <https://"
@@ -18226,7 +18223,7 @@ msgid ""
 "These signals can then be connected either in the editor or from code with "
 "``Connect``."
 msgstr ""
-"이 시그널들은 ``Connect``\\ 로 코드나 에디터에서 한 쪽으로 연결될 수 있습니"
+"이 시그널들은 ``Connect``\\ 로 코드나 편집기에서 한 쪽으로 연결될 수 있습니"
 "다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:116
@@ -19294,7 +19291,7 @@ msgid ""
 "Godot is scene-based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
 msgstr ""
-"Godot는 본질적으로 씬 기반이고, 파일 시스템을 메타데이터나 에셋 데이터베이스"
+"Godot는 본질적으로 씬 기반이고, 파일 시스템을 메타데이터나 애셋 데이터베이스"
 "가 아닌, 있는 그대로 사용합니다."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:19
@@ -19310,7 +19307,7 @@ msgid ""
 "Considering that, the most common approach is to group assets as close to "
 "scenes as possible; when a project grows, it makes it more maintainable."
 msgstr ""
-"그것을 고려해보면, 가장 일반적인 접근법은 에셋들을 씬과 가능한 밀접하게 묶어"
+"그것을 고려해보면, 가장 일반적인 접근법은 애셋들을 씬과 가능한 밀접하게 묶어"
 "내는 것입니다; 프로젝트가 커지다 보면, 프로젝트를 더 유지할 수 있게 만듭니다."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:26
@@ -19319,7 +19316,7 @@ msgid ""
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
 "They can then use a separate folder to store built levels that use them."
 msgstr ""
-"예로서, 보통은 하나의 폴더에 기본 에셋을 넣습니다, 스프라이트 이미지나, 3D 모"
+"예로서, 보통은 하나의 폴더에 기본 애셋을 넣습니다, 스프라이트 이미지나, 3D 모"
 "델 메시, 머티리얼, 그리고 음악 등이죠. 그런 다음 별도의 폴더를 사용하여 만든 "
 "레벨을 저장할 수 있습니다."
 
@@ -19341,7 +19338,7 @@ msgstr ""
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
-msgstr "이 때문에, 에셋은 이제 프로젝트 폴더 내에서 투명하게 가져옵니다."
+msgstr "이 때문에, 애셋은 이제 프로젝트 폴더 내에서 투명하게 가져옵니다."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:56
 msgid ""
@@ -19512,11 +19509,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid "all the ``noisy textures``"
-msgstr "모든 ``노이즈 텍스쳐``"
+msgstr "모든 ``노이즈 텍스처``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
 msgid "``generated texture coordinates``"
-msgstr "``생성된 텍스쳐 좌표``"
+msgstr "``생성된 텍스처 좌표``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
@@ -19932,7 +19929,7 @@ msgid ""
 "doing it in ``NLA Editor``"
 msgstr ""
 "새롭게 만든 액션은 항상 객체에 묶여 활성화된 액션입니다. NLA 트랙에 활성화된 "
-"액션을 놓는 방법은 여러 가지가 있고, 그 중 하나는 ``NLA 에디터``\\ 에서 할 "
+"액션을 놓는 방법은 여러 가지가 있고, 그 중 하나는 ``NLA 편집기``\\ 에서 할 "
 "수 있습니다"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
@@ -20044,7 +20041,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/index.rst:2
 msgid "Assets workflow"
-msgstr "에셋 워크플로"
+msgstr "애셋 워크플로"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
@@ -20052,7 +20049,7 @@ msgstr "가져오기 방법"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr "Godot 3.0+에서 에셋 가져오기"
+msgstr "Godot 3.0+에서 애셋 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -20061,8 +20058,8 @@ msgid ""
 "to specify how to convert and change import flags for textures, audio files, "
 "scenes, etc."
 msgstr ""
-"이제까지는, Godot 2.x에서 에셋을 가져오려면 원본 에셋이 있는 별개의 디렉토리"
-"를 수동으로 유지해야 했습니다. 이렇게 하지 않으면, 텍스쳐, 오디오 파일, 씬 등"
+"이제까지는, Godot 2.x에서 애셋을 가져오려면 원본 애셋이 있는 별개의 디렉토리"
+"를 수동으로 유지해야 했습니다. 이렇게 하지 않으면, 텍스처, 오디오 파일, 씬 등"
 "을 위한 가져오기 플래그를 변환하고 변경하는 방식을 지정하는 일은 불가능했습니"
 "다."
 
@@ -20074,9 +20071,9 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
-"Godot 3.0에서, 가져오기에 더 현대적인 접근법을 사용합니다: 간단히 에셋 (이미"
+"Godot 3.0에서, 가져오기에 더 현대적인 접근법을 사용합니다: 간단히 애셋 (이미"
 "지 파일, 씬, 오디오 파일, 폰트 등)을 프로젝트 폴더에 직접 드롭합니다 (OS 파"
-"일 탐색기로 에셋을 수동으로 복사합니다). Godot은 이 파일을 내부로 가져오며 가"
+"일 탐색기로 애셋을 수동으로 복사합니다). Godot은 이 파일을 내부로 가져오며 가"
 "져온 리소스를 res://.import 폴더에 숨겨 놓습니다."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
@@ -20093,7 +20090,7 @@ msgid ""
 "import parameters are only present in non-native Godot resource types) is "
 "easy. Select the relevant resource in the filesystem dock:"
 msgstr ""
-"Godot에서 에셋의 가져오기 매개변수를 변경하는 것은 쉽습니다 (다시 말하지만, "
+"Godot에서 애셋의 가져오기 매개변수를 변경하는 것은 쉽습니다 (다시 말하지만, "
 "가져오기 매개변수는 오직 네이티브가 아닌 Godot 리소스 타입에 있습니다). 파일 "
 "시스템 독에서 관련된 리소스를 선택합니다:"
 
@@ -20102,7 +20099,7 @@ msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
 msgstr ""
-"매개변수를 조정한 후에, \"다시 가져오기\"를 눌러줍니다. 매개변수는 이 에셋과 "
+"매개변수를 조정한 후에, \"다시 가져오기\"를 눌러줍니다. 매개변수는 이 애셋과 "
 "향후 다시 가져오기에만 사용될 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:34
@@ -20111,7 +20108,7 @@ msgid ""
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
-"여러 에셋 가져오기 매개변수를 동시에 바꾸는 것도 가능합니다. 간단히 리소스 독"
+"여러 애셋 가져오기 매개변수를 동시에 바꾸는 것도 가능합니다. 간단히 리소스 독"
 "에서 모두를 선택하고 다시 가져올 때 가져온 매개변수를 적용합니다."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
@@ -20124,7 +20121,7 @@ msgid ""
 "automatic reimport of it, applying the preset configured for that specific "
 "asset."
 msgstr ""
-"원본 에셋의 MD5 체크섬이 바꿀 때, Godot는 튿정 에셋을 위해 구성된 프리셋을 적"
+"원본 애셋의 MD5 체크섬이 바꿀 때, Godot는 튿정 애셋을 위해 구성된 프리셋을 적"
 "용하면서, 그것에 자동 다시 내보내기를 실행할 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
@@ -20143,7 +20140,7 @@ msgstr ""
 msgid ""
 "Additionally, extra assets will be preset in the hidden res://.import folder:"
 msgstr ""
-"또한, 추가 에셋은 숨겨진 res://.import 폴더에 프리셋이 되어 있을 것입니다:"
+"또한, 추가 애셋은 숨겨진 res://.import 폴더에 프리셋이 되어 있을 것입니다:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:57
 msgid ""
@@ -20153,7 +20150,7 @@ msgid ""
 "reimporting time when checking out on another computer, but it takes "
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
-"이 폴더에 있는 파일이 (혹은 폴더 전체가) 지워진다면, 에셋은 자동으로 다시 가"
+"이 폴더에 있는 파일이 (혹은 폴더 전체가) 지워진다면, 애셋은 자동으로 다시 가"
 "져올 것입니다. 따라서, 이 폴더를 버전 제어 시스템에 커밋하는 것은 선택적입니"
 "다. 다른 컴퓨터에서 확인할 때 다시 가져오는 시간이 짧을 수 있지만, 상당히 많"
 "은 시간과 공간을 잡아먹습니다. 오십보백보입니다!"
@@ -20167,7 +20164,7 @@ msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
 msgstr ""
-"일부 원본 에셋은 리소스의 다른 타입으로 가져올 수 있습니다. 이를 위해, 원하"
+"일부 원본 애셋은 리소스의 다른 타입으로 가져올 수 있습니다. 이를 위해, 원하"
 "는 리소스의 관련된 타입을 선택하고 \"Reimport\"를 누르세요:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:74
@@ -20202,7 +20199,7 @@ msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
 msgstr ""
-"많은 타입의 에셋을 가져오기로 이용할 수 있습니다, 따라서 이 모든 것들을 가지"
+"많은 타입의 애셋을 가져오기로 이용할 수 있습니다, 따라서 이 모든 것들을 가지"
 "고 작업하는 방법을 이해하기 위해 계속 읽어주세요!"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:4
@@ -20233,7 +20230,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:17
 msgid "Importing textures"
-msgstr "텍스쳐 가져오기"
+msgstr "텍스처 가져오기"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:19
 msgid ""
@@ -20241,7 +20238,7 @@ msgid ""
 "stored in video memory and can't be accessed directly. This is what makes "
 "drawing them efficient."
 msgstr ""
-"Godot에서 기본 값 행동은 이미지를 텍스쳐로 가져오는 것입니다. 텍스쳐는 비디"
+"Godot에서 기본 값 행동은 이미지를 텍스처로 가져오는 것입니다. 텍스처는 비디"
 "오 메모리에 저장되며 직접 액세스 할 수 없습니다. 이것이 효율적으로 그리는 것"
 "입니다."
 
@@ -20261,10 +20258,10 @@ msgid ""
 "enabled and compression is changed to VRAM). Texture is also reimported "
 "automatically."
 msgstr ""
-"이 설정은 Godot가 (기본 값에 따라 2D로 가져온) 텍스쳐를 3D에 사용한다는 것을 "
-"인식하도록 만듭니다. 이 경우, 설정이 변경되고 텍스쳐 플래그는 3D에 맞게 변합"
+"이 설정은 Godot가 (기본 값에 따라 2D로 가져온) 텍스처를 3D에 사용한다는 것을 "
+"인식하도록 만듭니다. 이 경우, 설정이 변경되고 텍스처 플래그는 3D에 맞게 변합"
 "니다 (mipmaps, filter 그리고 repeat가 활성화되고 compression은 VRAM으로 변합"
-"니다). 텍스쳐도 자동으로 다시 가져옵니다."
+"니다). 텍스처도 자동으로 다시 가져옵니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
 msgid "Compression"
@@ -20276,7 +20273,7 @@ msgid ""
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
-"이미지는 게임의 거대한 에셋들 중 하나 입니다. 이를 효율적으로 다루기 위해, 압"
+"이미지는 게임의 거대한 애셋들 중 하나 입니다. 이를 효율적으로 다루기 위해, 압"
 "축이 필요합니다. Godot는 여러 압축 방식을 제공하며, 사용 사례에 따라 다릅니"
 "다."
 
@@ -20290,7 +20287,7 @@ msgid ""
 "File on disk is reduced and video memory usage is also reduced considerably. "
 "For 3D, it may present unwanted artifacts, though."
 msgstr ""
-"VRAM 압축: 이것은 3D 에셋을 위한 가장 일반적인 압축 모드입니다. 디스크의 파일"
+"VRAM 압축: 이것은 3D 애셋을 위한 가장 일반적인 압축 모드입니다. 디스크의 파일"
 "은 줄어들고 비디오 메모리 사용량도 상당히 줄어듭니다. 3D의 경우, 원치 않은 결"
 "과물이 나올 수 있습니다."
 
@@ -20301,8 +20298,8 @@ msgid ""
 "decent. It will use considerably more amount of video memory than VRAM, "
 "though."
 msgstr ""
-"무손실 압축: 이것은 2D 에셋을 위한 가장 일반적인 압축입니다. 어떤 인위적 처리"
-"없이 에셋을 보여주고, 디스크 압축은 괜찮습니다. VRAM보다 상당히 많은 양의 비"
+"무손실 압축: 이것은 2D 애셋을 위한 가장 일반적인 압축입니다. 어떤 인위적 처리"
+"없이 애셋을 보여주고, 디스크 압축은 괜찮습니다. VRAM보다 상당히 많은 양의 비"
 "디오 메모리를 사용할 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
@@ -20311,7 +20308,7 @@ msgid ""
 "can be a great choice. It has some artifacting, but less than VRAM and the "
 "file size is almost a tenth of Lossless."
 msgstr ""
-"손실 압축: 많은 양의 2D 에셋을 가진 게임에게, 손실 압축은 좋은 선택일 수 있습"
+"손실 압축: 많은 양의 2D 애셋을 가진 게임에게, 손실 압축은 좋은 선택일 수 있습"
 "니다. 인위적 처리를 갖지만, VRAM보다 더 약하면서 파일 크기는 거의 무손실의 10"
 "분의 1이 됩니다."
 
@@ -20436,7 +20433,7 @@ msgid ""
 "2.x. Modern PCs support the BC6H VRAM format, but there are still plenty "
 "that do not."
 msgstr ""
-"Godot는 높은 동적 범위 텍스쳐 (.HDR 또는 .EXR)를 지원합니다. 대개 높은 동적 "
+"Godot는 높은 동적 범위 텍스처 (.HDR 또는 .EXR)를 지원합니다. 대개 높은 동적 "
 "범위 equirectangular 파노라마 하늘에 유용하며 Godot 2.x의 큐브맵을 대신하기"
 "도 합니다 (검색해보면 쉽게 찾을 수 있습니다). 최신 PC는 BC6H VRAM 형식을 지원"
 "하지만, 지원하지 않는 형식도 많이 있습니다."
@@ -20446,7 +20443,7 @@ msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
 "textures, enable the \"Force RGBE\" option."
 msgstr ""
-"Godot가 텍스쳐의 종류와의 완전한 호환성을 보장하고 싶다면, \"Force RGBE\" 설"
+"Godot가 텍스처의 종류와의 완전한 호환성을 보장하고 싶다면, \"Force RGBE\" 설"
 "정을 활성화하세요."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
@@ -20463,11 +20460,11 @@ msgid ""
 "which means that if the texture is ever used as a normal map, it will be "
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
-"텍스쳐를 노말맵으로 사용할 때, 빨강과 초록 채널만 필요합니다. 주어진 표준 텍"
-"스쳐 압축 알고리즘은 인위 구조를 만드는데 노말맵에서는 좋게 보이지는 않습니"
+"텍스처를 노말맵으로 사용할 때, 빨강과 초록 채널만 필요합니다. 주어진 표준 텍"
+"스처 압축 알고리즘은 인위 구조를 만드는데 노말맵에서는 좋게 보이지는 않습니"
 "다, RGTC 압축 형식이 이 데이터에 가장 적합합니다. 이 설정을 \"Enabled\"로 하"
 "면 Godot는 이미지를 RGTC 압축 형식으로 가져올 것입니다. 기본적으로, \"Detect"
-"\"로 설정하는데, 텍스쳐가 노말맵으로 사용된다면 자동으로 \"Enabled\"로 바뀌"
+"\"로 설정하는데, 텍스처가 노말맵으로 사용된다면 자동으로 \"Enabled\"로 바뀌"
 "며 다시 가져온다는 것을 뜻합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
@@ -20480,7 +20477,7 @@ msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
 msgstr ""
-"사용 사례에 따라, 이미지를 텍스쳐로 가져올 때 쓸 수 있는 많은 설정이 있습니"
+"사용 사례에 따라, 이미지를 텍스처로 가져올 때 쓸 수 있는 많은 설정이 있습니"
 "다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:97
@@ -20513,7 +20510,7 @@ msgid ""
 "making pixel perfect games."
 msgstr ""
 "픽셀이 화면 화소보다 커지게 되면, 이 설정은 선형 보간을 활성화합니다. 그 결과"
-"는 더 부드러운 (덜 각진) 텍스쳐가 됩니다. 이 설정은 보통은 2D와 3D에 사용될 "
+"는 더 부드러운 (덜 각진) 텍스처가 됩니다. 이 설정은 보통은 2D와 3D에 사용될 "
 "수 있지만, 픽셀 퍼펙트 게임을 만들 때는 보통 비활성화합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:109
@@ -20527,13 +20524,13 @@ msgid ""
 "older hardware (GLES2, mainly mobile), there are some requirements to use "
 "mipmaps:"
 msgstr ""
-"픽셀이 화면보다 더 작아질 때, 밉맵이 등장합니다. 텍스쳐가 줄어들 때, 거친 효"
+"픽셀이 화면보다 더 작아질 때, 밉맵이 등장합니다. 텍스처가 줄어들 때, 거친 효"
 "과를 줄여줍니다. 명심하세요, 오래된 하드웨어 (GLES2, 주로 모바일)에서, 밉맵"
 "을 사용하려면 몇 가지 요구 사항이 있습니다:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:114
 msgid "Texture width and height must be powers of 2"
-msgstr "텍스쳐 가로와 세로는 반드시 2의 제곱이어야 합니다"
+msgstr "텍스처 가로와 세로는 반드시 2의 제곱이어야 합니다"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:115
 msgid "Repeat must be enabled"
@@ -20552,7 +20549,7 @@ msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
-"3D 작업에서, 밉맵은 켜져 있어야 성능이 향상됩니다 (더 작은 버전의 텍스쳐는 멀"
+"3D 작업에서, 밉맵은 켜져 있어야 성능이 향상됩니다 (더 작은 버전의 텍스처는 멀"
 "리 있는 객체에 사용됩니다)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:122
@@ -20564,7 +20561,7 @@ msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
 msgstr ""
-"텍스쳐가 (바닥과 같이) 화면과 거의 평행할 때, 이 설정은 흐려지는 것을 줄여서 "
+"텍스처가 (바닥과 같이) 화면과 거의 평행할 때, 이 설정은 흐려지는 것을 줄여서 "
 "더 세세하게 표현하도록 만듭니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:127
@@ -20579,8 +20576,8 @@ msgid ""
 "SRGB when used in albedo channels."
 msgstr ""
 "Godot는 3D를 렌더링 할 때 선형 colorspace를 사용합니다. 반사율(albedo)이나 세"
-"부 채널에 맵핑된 텍스쳐는 색상이 올바르게 보이기 위해 이 설정을 켜져 있어야 "
-"합니다. \"Detect\" 모드로 설정할 때, 텍스쳐는 반사율 채널을 사용할 때 SRGB로 "
+"부 채널에 맵핑된 텍스처는 색상이 올바르게 보이기 위해 이 설정을 켜져 있어야 "
+"합니다. \"Detect\" 모드로 설정할 때, 텍스처는 반사율 채널을 사용할 때 SRGB로 "
 "표시될 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:133
@@ -20590,7 +20587,7 @@ msgstr "Process(가공)"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:135
 msgid ""
 "Some special processes can be applied to images when imported as textures."
-msgstr "이미지를 텍스쳐로 가져올 때, 일부 특수 가공을 적용할 수 있습니다."
+msgstr "이미지를 텍스처로 가져올 때, 일부 특수 가공을 적용할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:138
 msgid "Fix Alpha Border"
@@ -20624,7 +20621,7 @@ msgid ""
 "blend mode on canvas items that need it."
 msgstr ""
 "어두워진 테두리를 고치는 법으로 Premultiplied Alpha를 사용하는 것입니다. 이 "
-"설정을 키면, 텍스쳐는 이 형식으로 변환될 것입니다. 이 텍스쳐가 필요한 캔버스 "
+"설정을 키면, 텍스처는 이 형식으로 변환될 것입니다. 이 텍스처가 필요한 캔버스 "
 "항목에 PREMULT ALPHA 블렌드 모드를 사용하는 머티리얼을 만들어야 합니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:154
@@ -20884,7 +20881,7 @@ msgid ""
 "as follows:"
 msgstr ""
 "작품을 완성하고 번역에 효율적인 지원을 하기 위해, Godot는 CSV 파일을 읽을 수 "
-"있는 특수 가져오기를 갖고 있습니다. 모든 스프레드시트 에디터는 (Libreoffice, "
+"있는 특수 가져오기를 갖고 있습니다. 모든 스프레드시트 편집기는 (Libreoffice, "
 "Microsoft Office, Google Docs 등이 있죠) 이 형식으로 내보낼 수 있습니다, 따라"
 "서 필요한 것은 파일이 특별한 배열로 되어야 하는 것입니다. CSV 파일은 UTP-8 인"
 "코딩으로 저장되어야 하며 다음과 같은 형식이어야 합니다:"
@@ -21034,7 +21031,7 @@ msgstr "Godot 씬 가져오기"
 msgid ""
 "When dealing with 3D assets, Godot has a flexible and configurable importer."
 msgstr ""
-"3D 에셋을 다룰 때, Godot는 유연하면서 구성할 수 있는 가져오기를 갖고 있습니"
+"3D 애셋을 다룰 때, Godot는 유연하면서 구성할 수 있는 가져오기를 갖고 있습니"
 "다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:11
@@ -21074,7 +21071,7 @@ msgid ""
 "Just copy the scene file together with the texture to the project "
 "repository, and Godot will do a full import."
 msgstr ""
-"그냥 텍스쳐와 함께 씬 파일을 프로젝트 저장소에 복사하면 됩니다, 그리고 Godot"
+"그냥 텍스처와 함께 씬 파일을 프로젝트 저장소에 복사하면 됩니다, 그리고 Godot"
 "는 완전히 가져올 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:22
@@ -21263,8 +21260,8 @@ msgid ""
 "This is great for post processing, changing materials, doing funny stuff "
 "with the geometry etc."
 msgstr ""
-"특수 스크립트로 가져오기 후 전체 씬을 처리하기 위해 제공할 수 있습니다. 포스"
-"트 프로세싱이나, 머티리얼 변경, 기하학으로 재미있는 짓 하기 등에 좋습니다."
+"특수 스크립트로 가져오기 후 전체 씬을 처리하기 위해 제공할 수 있습니다. 후처"
+"리, 머티리얼 변경, 아니면 기하학으로 하는 재미있는 짓 등에 좋습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
 msgid "Create a script like this:"
@@ -21453,7 +21450,7 @@ msgstr "추가 정보:"
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:182
 msgid ""
 "UV2 = The second UV channel for detail textures and baked lightmap textures."
-msgstr "UV2 = 세부적인 텍스쳐와 베이크된 텍스쳐를 위한 두 번째 UV 채널."
+msgstr "UV2 = 세부적인 텍스처와 베이크된 텍스처를 위한 두 번째 UV 채널."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
 msgid ""
@@ -21487,7 +21484,7 @@ msgid ""
 "source scene. Godot uses Mikktspace for this, but it's always better to have "
 "them generated in the exporter."
 msgstr ""
-"노말 맵핑 된 텍스쳐가 사용된다면, 메시는 탄젠트 배열을 가져야 합니다. 이 설정"
+"노말 맵핑 된 텍스처가 사용된다면, 메시는 탄젠트 배열을 가져야 합니다. 이 설정"
 "으로 원본 씬에서 탄젠트 배열이 없다면 생성하게 해줍니다. Godot는 Mikktspace"
 "를 사용하지만, 가져오기에서 생성하는 것이 항상 더 좋습니다."
 
@@ -21617,7 +21614,7 @@ msgid ""
 "(source .dae, .gltf, .obj file re-exported from 3D modelling app), Godot "
 "will re-import the whole scene."
 msgstr ""
-"많은 상황에서, 가져온 씬을 수정하고 싶을 것입니다. 기본적으로 원본 에셋이 바"
+"많은 상황에서, 가져온 씬을 수정하고 싶을 것입니다. 기본적으로 원본 애셋이 바"
 "뀌기 때문에 그렇게 할 수는 없고 (3D 모델링 앱에서 다시 가져온 원본 .dae, ."
 "gltf, .obj 파일), Godot는 전체 씬을 다시 가져올 것입니다."
 
@@ -21772,7 +21769,7 @@ msgid ""
 "on collision empties and set some distinct color for them in User "
 "Preferences / Themes / 3D View / Empty."
 msgstr ""
-"블렌더의 에디터에서 더 좋은 가시성을 위해, 충돌 Empty에 \"X-Ray\"를 설정하고 "
+"블렌더의 편집기에서 더 좋은 가시성을 위해, 충돌 Empty에 \"X-Ray\"를 설정하고 "
 "User Preferences / Themes / 3D View / Empty에서 뚜렷한 색상을 설정할 수 있습"
 "니다."
 
@@ -21839,7 +21836,7 @@ msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the \"loop\" or \"cycle\" prefix or suffix."
 msgstr ""
-"블렌더에서, 이를 위해 NLA 에디터를 사용하여 Action 이름에 \"loop\"나 \"cycle"
+"블렌더에서, 이를 위해 NLA 편집기를 사용하여 Action 이름에 \"loop\"나 \"cycle"
 "\" 접두사 혹은 접미사를 붙여야 합니다."
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
@@ -21902,7 +21899,7 @@ msgstr ""
 "자들은 호기심 많은 사용자가 게임이 만들어진 방법을 알아내는 것을 좋아하지 않"
 "을 수도 있고, 다른 개발자들이 게임이 잘 만들어지지 않은 것을 발견할 수도 있습"
 "니다. 또 다른 이유는 개발자가 특별히 컴파일된 바이너리를 선호하기 때문인데, "
-"크기 면에서 더 작지만 더 많이 최적화되어 있으면서, 에디터와 디버거같은 도구들"
+"크기 면에서 더 작지만 더 많이 최적화되어 있으면서, 편집기와 디버거같은 도구들"
 "을 갖지 않기 때문입니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:34
@@ -21947,9 +21944,9 @@ msgid ""
 "formats for texture compression, such as PVRTC (iOS) or ETC (Android)."
 msgstr ""
 "이 접근법에는 다른 문제가 있습니다: 기기들은 실행하기 위한 각기 다른 형식의 "
-"데이터를 선호합니다. 주요 예시로 텍스쳐 압축이 있습니다. 모든 PC 하드웨어는 "
+"데이터를 선호합니다. 주요 예시로 텍스처 압축이 있습니다. 모든 PC 하드웨어는 "
 "S3TC (BC) 압축을 사용하고 10년 이상 표준화 되어 왔습니다, 하지만 모바일 기기"
-"는 텍스쳐 압축에  PVRTC (iOS)나 ETC (Android)와 같이 다른 형식을 사용합니다."
+"는 텍스처 압축에  PVRTC (iOS)나 ETC (Android)와 같이 다른 형식을 사용합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
 msgid "Export menu"
@@ -22026,7 +22023,7 @@ msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
 msgstr ""
-"다운로드 했다면, 에디터에서 **내보내기 템플릿 관리** 설정으로 설치할 수 있습"
+"다운로드 했다면, 편집기에서 **내보내기 템플릿 관리** 설정으로 설치할 수 있습"
 "니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:105
@@ -22091,7 +22088,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
 msgid "Exporting from the command line"
-msgstr "명령 행에서 내보내기"
+msgstr "명령줄에서 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
 msgid ""
@@ -22100,10 +22097,10 @@ msgid ""
 "from the command line still requires an export preset to define the export "
 "parameters. A basic invocation of the command would be:"
 msgstr ""
-"개발에 있어, 빌드를 자동화하는 것이 유용합니다, 그리고 Godot은 명령 행 매개 "
-"변수``--export``\\ 와 ``--export-debug``\\ 를 사용하여 이를 지원합니다. 명령 "
-"행에서 내보내려면 여전히 내보내기 매개 변수를 정의하기 위한 내보내기 프리셋"
-"이 필요합니다. 명령의 기본 호출은 다음과 같습니다:"
+"개발에 있어, 빌드를 자동화하는 것이 유용합니다, 그리고 Godot은 명령줄 매개 변"
+"수``--export``\\ 와 ``--export-debug``\\ 를 사용하여 이를 지원합니다. 명령줄"
+"에서 내보내려면 여전히 내보내기 매개 변수를 정의하기 위한 내보내기 프리셋이 "
+"필요합니다. 명령의 기본 호출은 다음과 같습니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
 msgid ""
@@ -22251,7 +22248,7 @@ msgstr "모델"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:46
 msgid "textures"
-msgstr "텍스쳐"
+msgstr "텍스처"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:47
 msgid "sound effects"
@@ -22263,7 +22260,7 @@ msgstr "음악"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:49
 msgid "any other asset suitable for import into the game"
-msgstr "게임으로 가져오기 적당한 다른 에셋"
+msgstr "게임으로 가져오기 적당한 다른 애셋"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:51
 msgid ""
@@ -22294,7 +22291,7 @@ msgid ""
 "or ZIP file extension, then the export process will build that type of file "
 "for the chosen platform."
 msgstr ""
-"다른 방법은 :ref:`명령 행에서 내보내기 <doc_command_line_tutorial_exporting>`"
+"다른 방법은 :ref:`명령줄에서 내보내기 <doc_command_line_tutorial_exporting>`"
 "\\ 가 있습니다. 출력 파일은 PCK나 ZIP 파일 확장자명으로 끝나고, 그 뒤 내보내"
 "기 처리는 선택한 플랫폼에 맞는 타입의 파일로 빌드할 것입니다."
 
@@ -22412,19 +22409,19 @@ msgstr "플랫폼 유형 (데스크톱, 모바일, 웹)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
 msgid "Supported texture compression algorithms on the platform."
-msgstr "플랫폼에서 지원하는 텍스쳐 압축 알고리즘."
+msgstr "플랫폼에서 지원하는 텍스처 압축 알고리즘."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
 msgstr ""
-"빌드가 ``디버그``\\ 인지 ``출시``\\ 인지 여부 (``디버그``\\ 는 에디터가 포함"
+"빌드가 ``디버그``\\ 인지 ``출시``\\ 인지 여부 (``디버그``\\ 는 편집기가 포함"
 "됨)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
 "Whether the project is running from the editor or a \"standalone\" binary."
-msgstr "프로젝트가 에디터에서 실행 중인지 \"독립 실행형\" 바이너리인지 여부."
+msgstr "프로젝트가 편집기에서 실행 중인지 \"독립 실행형\" 바이너리인지 여부."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:18
 msgid "Many more things."
@@ -22458,7 +22455,7 @@ msgstr "**Android**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "Running on Android"
-msgstr "안드로이드에서 실행 중"
+msgstr "Android에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "**HTML5**"
@@ -22506,7 +22503,7 @@ msgstr "**Windows**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "Running on Windows"
-msgstr "윈도우에서 실행 중"
+msgstr "Windows에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "**X11**"
@@ -22514,7 +22511,7 @@ msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
-msgstr "X11에서 실행 중 (리눅스/BSD 데스크톱)"
+msgstr "X11에서 실행 중 (Linux/BSD 데스크톱)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "**Server**"
@@ -22530,7 +22527,7 @@ msgstr "**debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "Running on a debug build (including the editor)"
-msgstr "디버그 빌드에서 실행 중 (에디터를 포함)"
+msgstr "디버그 빌드에서 실행 중 (편집기를 포함)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
@@ -22546,7 +22543,7 @@ msgstr "**editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "Running on an editor build"
-msgstr "에디터 빌드에서 실행 중"
+msgstr "편집기 빌드에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "**standalone**"
@@ -22554,7 +22551,7 @@ msgstr "**standalone**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "Running on a non-editor build"
-msgstr "에디터 없는 빌드에서 실행 중"
+msgstr "편집기 없는 빌드에서 실행 중"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
@@ -22634,7 +22631,7 @@ msgstr "**etc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "Textures using ETC1 compression are supported"
-msgstr "ETC1 압축을 사용하는 텍스쳐를 지원한다"
+msgstr "ETC1 압축을 사용하는 텍스처를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "**etc2**"
@@ -22642,7 +22639,7 @@ msgstr "**etc2**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "Textures using ETC2 compression are supported"
-msgstr "ETC2 압축을 사용하는 텍스쳐를 지원한다"
+msgstr "ETC2 압축을 사용하는 텍스처를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "**s3tc**"
@@ -22650,7 +22647,7 @@ msgstr "**s3tc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "Textures using S3TC (DXT/BC) compression are supported"
-msgstr "S3TC (DXT/BC) 압축을 사용하는 텍스쳐를 지원한다"
+msgstr "S3TC (DXT/BC) 압축을 사용하는 텍스처를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "**pvrtc**"
@@ -22658,7 +22655,7 @@ msgstr "**pvrtc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "Textures using PVRTC compression are supported"
-msgstr "PVRTC 압축을 사용하는 텍스쳐를 지원한다"
+msgstr "PVRTC 압축을 사용하는 텍스처를 지원한다"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:90
 msgid "Custom features"
@@ -22734,9 +22731,9 @@ msgid ""
 "(``godot.exe`` on Windows, ``godot`` on the rest), compress the folder and "
 "send it to someone else. However, this is often not desired."
 msgstr ""
-"게임을 PC로 배포하는 가장 쉬운 방법은 실행 파일을 복사하는 것입니다 (윈도우에"
-"서는 ``godot.exe``, 그 외로는 ``godot``), 폴더를 압축하고 다른 이에게 보내는 "
-"것입니다. 하지만 때로는 생각같지 않습니다."
+"게임을 PC로 배포하는 가장 쉬운 방법은 실행 파일을 복사하는 것입니다 (Windows"
+"에서는 ``godot.exe``, 그 외로는 ``godot``), 폴더를 압축하고 다른 이에게 보내"
+"는 것입니다. 하지만 때로는 생각같지 않습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:10
 msgid ""
@@ -22747,9 +22744,9 @@ msgid ""
 "not contain the editor and debugger."
 msgstr ""
 "Godot는 내보내기 시스템을 사용할 때 PC 배포에 있어 더 우아한 접근법을 제공합"
-"니다. PC로 내보낼 때 (리눅스, 윈도우, macOS), 내보내기는 모든 프로젝트 파일"
+"니다. PC로 내보낼 때 (Linux, Windows, macOS), 내보내기는 모든 프로젝트 파일"
 "을 가지고 ``data.pck`` 파일을 만듭니다. 이 파일은 특별히 최적화된 이진으로 묶"
-"여있어, 더 작고 빠르며, 에디터와 디버거를 포함하지 않습니다."
+"여있어, 더 작고 빠르며, 편집기와 디버거를 포함하지 않습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:4
 msgid "Exporting for iOS"
@@ -22789,7 +22786,7 @@ msgid ""
 "Download the Godot export templates. Use the Godot menu: Editor > Manage "
 "Export Templates"
 msgstr ""
-"Godoy 내보내기 템플릿을 다운로드하세요. Godot 메뉴를 사용하세요: 에디터 > 내"
+"Godoy 내보내기 템플릿을 다운로드하세요. Godot 메뉴를 사용하세요: 편집기 > 내"
 "보내기 템플릿 관리"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:17
@@ -22801,7 +22798,7 @@ msgid ""
 "In the Godot editor, open the **Export** window from the **Project** menu. "
 "When the Export window opens, click **Add..** and select **iOS**."
 msgstr ""
-"Godot 에디터에서, **프로젝트** 메뉴에서 **내보내기** 창으로 갑니다. 내보내기 "
+"Godot 편집기에서, **프로젝트** 메뉴에서 **내보내기** 창으로 갑니다. 내보내기 "
 "창이 열리면, **추가하기..**\\ 를 클릭하고 **iOS**\\ 를 선택합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:22
@@ -22959,7 +22956,7 @@ msgid ""
 "That's it! You can now edit your project in the Godot editor and build it in "
 "Xcode when you want to run it on a device."
 msgstr ""
-"됬습니다! 이제 Godot 에디터에서 프로젝트를 편집할 수 있고 기기에서 실행하고 "
+"됬습니다! 이제 Godot 편집기에서 프로젝트를 편집할 수 있고 기기에서 실행하고 "
 "싶을 때 Xcode에서 빌드할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:94
@@ -22977,7 +22974,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
 msgid "Exporting for Universal Windows Platform"
-msgstr "유니버설 윈도우 플랫폼으로 내보내기"
+msgstr "유니버설 Windows 플랫폼으로 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:6
 msgid ""
@@ -22985,9 +22982,9 @@ msgid ""
 "installed as a Windows App or submitted to the Windows Store. Exporting UWP "
 "packages also works from any platform, not only from Windows."
 msgstr ""
-"윈도우 앱으로 설치하거나 윈도우 스토어에 제출할 수 있는 ``.appx`` 패키지를 내"
-"보내기 위한 추가 요구사항은 없습니다. UWP 패키지를 내보내는 것은 윈도우 뿐만 "
-"아니라 어느 플랫폼에서든지 가능합니다."
+"Windows 앱으로 설치하거나 Windows 스토어에 제출할 수 있는 ``.appx`` 패키지를 "
+"내보내기 위한 추가 요구사항은 없습니다. UWP 패키지를 내보내는 것은 Windows 뿐"
+"만 아니라 어느 플랫폼에서든지 가능합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
 msgid ""
@@ -23073,7 +23070,7 @@ msgid ""
 "Developer Prompts, since it comes with these tools and they can be located "
 "in the path."
 msgstr ""
-"윈도우 SDK에 있는 ``MakeCert.exe``\\ 와 ``Pvk2Pfx.exe`` 도구가 필요합니다. "
+"Windows SDK에 있는 ``MakeCert.exe``\\ 와 ``Pvk2Pfx.exe`` 도구가 필요합니다. "
 "Visual Stuido를 사용한다면, 이 도구들을 갖고 있고 경로가 존재하기 때문에, "
 "Developer Prompts에서 이것을 열 수 있습니다."
 
@@ -23129,7 +23126,8 @@ msgstr "패키지 서명하기"
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
 msgstr ""
-"마지막으로, 윈도우 SDK나 Visual Studio에서 ``SignTool.exe``\\ 를 사용합니다::"
+"마지막으로, Windows SDK나 Visual Studio에서 ``SignTool.exe``\\ 를 사용합니"
+"다::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
 msgid "Installing the package"
@@ -23140,8 +23138,8 @@ msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
 msgstr ""
-"윈도우 10 1주년 업데이트로, 파일 탐색기에서 단순히 ``.appx`` 파일을 더블 클릭"
-"하는 것으로 패키지를 설치할 수 있습니다."
+"Windows 10 1주년 업데이트로, 파일 탐색기에서 단순히 ``.appx`` 파일을 더블 클"
+"릭하는 것으로 패키지를 설치할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:76
 msgid ""
@@ -23159,27 +23157,27 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:4
 msgid "Exporting for Android"
-msgstr "안드로이드로 내보내기"
+msgstr "Android로 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for it. "
 "The following steps detail what is needed to setup the SDK and the engine."
 msgstr ""
-"안드로이드로 내보내려면 Godot를 컴파일하는 것보다 요구사항이 적습니다. 다음 "
-"단계는 SDK와 엔진을 설정하는데 필요한 것에 대해 설명합니다."
+"Android로 내보내려면 Godot를 컴파일하는 것보다 요구사항이 적습니다. 다음 단계"
+"는 SDK와 엔진을 설정하는데 필요한 것에 대해 설명합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
-msgstr "안드로이드 SDK 다운로드하기"
+msgstr "Android SDK 다운로드하기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
 msgid ""
 "Download and install the Android SDK from https://developer.android.com/"
 "studio/"
 msgstr ""
-"https://developer.android.com/studio/ 에서 안드로이드 SDK를 다운로드하고 설치"
-"하세요"
+"https://developer.android.com/studio/ 에서 Android SDK를 다운로드하고 설치하"
+"세요"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid "Install OpenJDK or Oracle JDK"
@@ -23209,10 +23207,10 @@ msgid ""
 "or eclipse probably generated one for you (on Linux and macOS, you can find "
 "it in the ``~/.android`` directory)."
 msgstr ""
-"안드로이드는 기기에 설치하고 출시하지 않은 APK를 배포하기 위해 디버그 키스토"
-"어 파일이 필요합니다. 이전에 SDK를 사용하고 프로젝트를 만든 적이 있다면, ant"
-"나 eclipse가 파일이 있을 것입니다 (리눅스와 macOS에서, ``~/.android`` 디렉토"
-"리에서 찾을 수 있습니다)."
+"Android는 기기에 설치하고 출시하지 않은 APK를 배포하기 위해 디버그 키스토어 "
+"파일이 필요합니다. 이전에 SDK를 사용하고 프로젝트를 만든 적이 있다면, ant나 "
+"eclipse가 파일이 있을 것입니다 (Linux와 macOS에서, ``~/.android`` 디렉토리에"
+"서 찾을 수 있습니다)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
 msgid ""
@@ -23233,9 +23231,9 @@ msgid ""
 "one (any) of the Android API levels for it to be installed in the SDK "
 "directory."
 msgstr ""
-"Android Debug Bridge (adb)는 명령 행 도구로 안드로이드 기기와 통신하는데 사용"
-"됩니다. SDK와 함께 설치되지만, SDK 디렉토리에 설치하기 위해 안드로이드 API 수"
-"준에 맞는 것을 설치해야 할 지도 모릅니다."
+"Android Debug Bridge (adb)는 명령줄 도구로 Android 기기와 통신하는데 사용됩니"
+"다. SDK와 함께 설치되지만, SDK 디렉토리에 설치하기 위해 Android API 수준에 맞"
+"는 것을 설치해야 할 지도 모릅니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:43
 msgid "Setting it up in Godot"
@@ -23246,7 +23244,7 @@ msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
 "for the user account in the computer (it's independent from the project)."
 msgstr ""
-"에디터 설정 화면으로 갑니다. 이 화면은 컴퓨터의 사용자 계정을 위한 에디터 설"
+"편집기 설정 화면으로 갑니다. 이 화면은 컴퓨터의 사용자 계정을 위한 편집기 설"
 "정을 갖고 있습니다 (프로젝트와는 독립된 것입니다)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:51
@@ -23259,7 +23257,7 @@ msgstr "이 화면에서 3개의 파일 경로가 설정되어야 합니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
 msgid "The *adb* executable (adb.exe on Windows)"
-msgstr "*adb* 실행 파일 (윈도우에서는 adb.exe)"
+msgstr "*adb* 실행 파일 (Windows에서는 adb.exe)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
 msgid "The *jarsigner* executable (from JDK 6 or 8)"
@@ -23271,7 +23269,7 @@ msgstr "디버그 *keystore*"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
 msgid "Once that is configured, everything is ready to export to Android!"
-msgstr "일단 구성되면, 안드로이드에 내보낼 준비가 끝납니다!"
+msgstr "일단 구성되면, Android에 내보낼 준비가 끝납니다!"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
 msgid "Exporting for Google Play Store"
@@ -23294,12 +23292,12 @@ msgid ""
 msgstr ""
 "이 키스토어와 키는 개발자 ID를 확인하는데 사용됩니다, 암호를 기억하고 안전한 "
 "장소에 보관하세요! `APK 서명 <https://developer.android.com/studio/publish/"
-"app-signing>`__\\ 에 대해 더 자세히 배우고 싶다면 구글 안드로이드 개발자 가이"
-"드를 사용하세요."
+"app-signing>`__\\ 에 대해 더 자세히 배우고 싶다면 구글 Android 개발자 가이드"
+"를 사용하세요."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
 msgid "Now fill in the following forms in your Android Export Presets:"
-msgstr "이제 안드로이드 내보내기 프리셋에서 다음 항목을 채우세요:"
+msgstr "이제 Android 내보내기 프리셋에서 다음 항목을 채우세요:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
 msgid "Release: Enter the path to the keystore file you just generated."
@@ -23705,7 +23703,7 @@ msgid ""
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
 "the game in the default browser for testing."
 msgstr ""
-"실행 가능한 웹 내보내기 템플릿을 이용할 수 있다면, 에디터에서 *씬 멈추기* 버"
+"실행 가능한 웹 내보내기 템플릿을 이용할 수 있다면, 편집기에서 *씬 멈추기* 버"
 "튼과 *편집 중인 씬 실행* 버튼 사이에 버튼이 나타나 테스트를 위해 빠르게 기본 "
 "브라우저에서 게임을 열 수 있습니다."
 
@@ -23835,10 +23833,10 @@ msgid ""
 "the device. This feature is called, in industry buzz-words, \"One Click "
 "Deploy\" (though, it's technically two clicks...)."
 msgstr ""
-"일부 플랫폼 (이 글을 쓰는 시점에는 안드로이드와 블랙베리 10)은 USB 기기가 컴"
-"퓨터가 연결되는 지를 감지할 수 있으며, 사용자가 자동으로 내보낼 수 있도록 기"
-"기에 프로젝트를 (디버그 모드로) 설치하고 실행합니다. 이 기능은 업계 속어로, "
-"\"원 클릭 배포\"라고 합니다 (물론 기술적으로는 두 번 클릭합니다...)."
+"일부 플랫폼 (이 글을 쓰는 시점에는 Android와 블랙베리 10)은 USB 기기가 컴퓨터"
+"가 연결되는 지를 감지할 수 있으며, 사용자가 자동으로 내보낼 수 있도록 기기에 "
+"프로젝트를 (디버그 모드로) 설치하고 실행합니다. 이 기능은 업계 속어로, \"원 "
+"클릭 배포\"라고 합니다 (물론 기술적으로는 두 번 클릭합니다...)."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
 msgid "Steps for one-click deploy"
@@ -23870,7 +23868,7 @@ msgstr "한번 클릭하세요.. 그러면 배포합니다!"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
 msgid "Custom builds for Android"
-msgstr "안드로이드 용 커스텀 빌드"
+msgstr "Android 용 커스텀 빌드"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:6
 msgid ""
@@ -23880,10 +23878,10 @@ msgid ""
 "then build it and use it as an export template every time you export the "
 "project."
 msgstr ""
-"Godot는 커스텀 빌드 안드로이드 템플릿을 사용하기 위한 설정을 제공합니다. "
-"Godot와 함께 제공되는 미리 빌드된 템플릿을 사용하는 대신, 실제로 안드로이드 "
-"Java 프로젝트를 프로젝트 폴더에 설치합니다. Godot는 이제 프로젝트를 빌드하"
-"며, 프로젝트를 내보낼 때마다 내보내기 템플릿으로 사용될 것입니다."
+"Godot는 커스텀 빌드 Android 템플릿을 사용하기 위한 설정을 제공합니다. Godot"
+"와 함께 제공되는 미리 빌드된 템플릿을 사용하는 대신, 실제로 Android Java 프로"
+"젝트를 프로젝트 폴더에 설치합니다. Godot는 이제 프로젝트를 빌드하며, 프로젝트"
+"를 내보낼 때마다 내보내기 템플릿으로 사용될 것입니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:10
 msgid "There are some reasons why you may want to do this:"
@@ -23902,8 +23900,8 @@ msgid ""
 "Configuring custom build is a more or less straightforward process, but it "
 "may take a while to get used to how the Android SDK works."
 msgstr ""
-"커스텀 빌드를 구성하는 것은 다소 간단한 과정이지만, 안드로이드 SDK가 작동하"
-"는 방식에 익숙해지는 데는 시간이 걸릴 수 있습니다."
+"커스텀 빌드를 구성하는 것은 다소 간단한 과정이지만, Android SDK가 작동하는 방"
+"식에 익숙해지는 데는 시간이 걸릴 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:17
 msgid ""
@@ -23934,15 +23932,15 @@ msgid ""
 "ref:`create your own add-ons<doc_android_plugin>`, or you really need to "
 "modify the project."
 msgstr ""
-"이것은 *\"res://android/build\"*\\ 에 Gradle 기반 안드로이드 프로젝트를 만듭"
-"니다, 그리고 .gdignore 파일을 *\"res://android\"*\\ 에 놓습니다, 따라서 "
-"Godot 파일 시스템은 이 폴더를 무시합니다. :ref:`자신만의 애드온을 만들기"
+"이것은 *\"res://android/build\"*\\ 에 Gradle 기반 Android 프로젝트를 만듭니"
+"다, 그리고 .gdignore 파일을 *\"res://android\"*\\ 에 놓습니다, 따라서 Godot "
+"파일 시스템은 이 폴더를 무시합니다. :ref:`자신만의 애드온을 만들기"
 "<doc_android_plugin>`\\ 나, 정말로 프로젝트를 수정해야 하는 경우가 아니면 이 "
 "파일들은 편집하지 않아도 됩니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:31
 msgid "Install the Android SDK (Command Line Version)"
-msgstr "안드로이드 SDK 설치하기 (명령 행 버전)"
+msgstr "Android SDK 설치하기 (명령줄 버전)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:33
 msgid ""
@@ -23952,10 +23950,10 @@ msgid ""
 "is easier but it requires downloading and installing Android Studio (which "
 "may require more than 1gb of storage)."
 msgstr ""
-"명령 행을 사용해서 안드로이드 SDK를 설치하려면 몇 가지 절차가 있습니다. 이 방"
-"식의 장점은 간단하며 작은 다운로드/설치 크기입니다. 그렇지만 조금 더 힘들 수 "
-"있습니다. 안드로이드 스튜디오 방식은 더 쉽지만, 안드로이드 스튜디오를 다운로"
-"드하고 설치해야 합니다 (이는 1기가보다 더 클 수도 있습니다)."
+"명령줄을 사용해서 Android SDK를 설치하려면 몇 가지 절차가 있습니다. 이 방식"
+"의 장점은 간단하며 작은 다운로드/설치 크기입니다. 그렇지만 조금 더 힘들 수 있"
+"습니다. Android 스튜디오 방식은 더 쉽지만, Android 스튜디오를 다운로드하고 설"
+"치해야 합니다 (이는 1기가보다 더 클 수도 있습니다)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:36
 msgid "Install Java"
@@ -23968,14 +23966,14 @@ msgid ""
 "otherwise Oracle's Java SDK for version 8 will work. Later versions may not "
 "work for Android development."
 msgstr ""
-"안드로이드 SDK에는 Java가 포함되지 않습니다, 따라서 수동으로 설치해야 합니"
-"다. Java SDK를 설치합니다 (runtime이나 JRE가 **아닙니다**). OpenSDK 8을 추천"
-"합니다, 다른 방법으로 Oracle의 버전 8 용 Java SDK도 가능합니다. 이후 버전은 "
-"안드로이드 개발에 작동하지 않을 수 있습니다."
+"Android SDK에는 Java가 포함되지 않습니다, 따라서 수동으로 설치해야 합니다. "
+"Java SDK를 설치합니다 (runtime이나 JRE가 **아닙니다**). OpenSDK 8을 추천합니"
+"다, 다른 방법으로 Oracle의 버전 8 용 Java SDK도 가능합니다. 이후 버전은 "
+"Android 개발에 작동하지 않을 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:41
 msgid "Download the command line tools"
-msgstr "명령 행 도구 다운로드하기"
+msgstr "명령줄 도구 다운로드하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:43
 msgid ""
@@ -23984,10 +23982,10 @@ msgid ""
 "download (if you do want it, read further down for instructions for doing "
 "the same using Android Studio)."
 msgstr ""
-"안드로이드 SDK를 다운로드하기 위해 구글 웹사이트로 갑니다. 검색을 통해 *안드"
-"로이드 스튜디오* 다운로드 페이지로 갑니다. 안드로이드 스튜디오를 원한 것은 아"
-"니므로, 다운로드하지 않습니다 (원한다면, 하단에서 안드로이드 스튜디오를 사용"
-"해 같은 작업을 하는 설명을 읽으세요)."
+"Android SDK를 다운로드하기 위해 구글 웹사이트로 갑니다. 검색을 통해 *Android "
+"스튜디오* 다운로드 페이지로 갑니다. Android 스튜디오를 원한 것은 아니므로, 다"
+"운로드하지 않습니다 (원한다면, 하단에서 Android 스튜디오를 사용해 같은 작업"
+"을 하는 설명을 읽으세요)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:46
 msgid ""
@@ -24017,7 +24015,7 @@ msgid ""
 "empty directory). On Windows,"
 msgstr ""
 "아무 위치에서 새 폴더를 만들고 *android-sdk*\\ 로 이름을 짓습니다 (**빈 디렉"
-"토리이어야 합니다). 윈도우에서는,"
+"토리이어야 합니다). Windows에서는,"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:62
 msgid ""
@@ -24048,14 +24046,14 @@ msgid ""
 "folder (instructions provided for Windows users, as Unix users are expected "
 "to understand how command line navigation works):"
 msgstr ""
-"수락하기 위해선, *sdkmanager*\\ 를 특별한 인수를 가진 명령 행에서 실행해야 합"
-"니다. sdk 폴더 내의 *tools/bin* 디렉토리로 갑니다 (윈도우 사용자를 위한 설명"
-"이며, Unix 사용자는 명령 행 내비게이션이 작동하는 방식을 알고 있다고 가정합니"
+"수락하기 위해선, *sdkmanager*\\ 를 특별한 인수를 가진 명령줄에서 실행해야 합"
+"니다. sdk 폴더 내의 *tools/bin* 디렉토리로 갑니다 (Windows 사용자를 위한 설명"
+"이며, Unix 사용자는 명령줄 내비게이션이 작동하는 방식을 알고 있다고 가정합니"
 "다):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:80
 msgid "Then open a command line window:"
-msgstr "그 후 명령 행 윈도우를 엽니다:"
+msgstr "그 후 명령줄 창을 엽니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:84
 msgid "In there, manually run sdkmanager with the \"--licenses\" argument:"
@@ -24097,7 +24095,7 @@ msgid ""
 "And you need to input the following line (on Unixes this should work out of "
 "the box, for Windows there are further instructions below):"
 msgstr ""
-"그리고 다음 문장을 입력해야 합니다 (Unix에서 즉시 실행될 것이며, 윈도우에서"
+"그리고 다음 문장을 입력해야 합니다 (Unix에서 즉시 실행될 것이며, Windows에서"
 "는 아래 추가 설명이 있습니다):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:113
@@ -24106,9 +24104,9 @@ msgid ""
 "added at the beginning on the line if you use PowerShell, it's not needed "
 "for regular console)."
 msgstr ""
-"윈도우에서는, Java를 향하는 전체 경로를 제공해야 합니다 (그리고 PowerShell을 "
-"사용한다면 문장의 시작에 &를 추가해야 합니다, 일반적인 콘솔에는 필요하지 않습"
-"니다)."
+"Windows에서는, Java를 향하는 전체 경로를 제공해야 합니다 (그리고 PowerShell"
+"을 사용한다면 문장의 시작에 &를 추가해야 합니다, 일반적인 콘솔에는 필요하지 "
+"않습니다)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:115
 msgid ""
@@ -24137,7 +24135,7 @@ msgid ""
 "Go to the *Editor Settings* and set up a few fields in *Export -> Android*. "
 "Make sure they look like the following:"
 msgstr ""
-"*에디터 설정*\\ 으로 가서 *Export -> Android*\\ 의 몇 가지 영역을 설정합니"
+"*편집기 설정*\\ 으로 가서 *Export -> Android*\\ 의 몇 가지 영역을 설정합니"
 "다. 다음과 같아야 합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:129
@@ -24165,7 +24163,7 @@ msgstr "이것으로 모두 설정되었습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:138
 msgid "Install the Android SDK (Android Studio)"
-msgstr "안드로이드 SDK 설치하기 (안드로이드 스튜디오)"
+msgstr "Android SDK 설치하기 (Android 스튜디오)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:140
 msgid ""
@@ -24174,22 +24172,22 @@ msgid ""
 "up more disk space. It's also useful if you plan to develop Godot for "
 "Android (modify the Java source code) or if you plan to develop Add-Ons."
 msgstr ""
-"명령 행 도구를 통해 SDK 설치하기를 끝냈다면, 이 섹션은 편하게 넘어가세요. 안"
-"드로이드 스튜디오 경로는 더 쉽지만, 더 많은 디스크 공간을 차지합니다. 안드로"
-"이드 용 Godot를 개발하려는 계획이라면 (Java 소스 코드 수정), 혹은 애드온을 개"
-"발할 계획이라면 좋을 것입니다."
+"명령줄 도구를 통해 SDK 설치하기를 끝냈다면, 이 섹션은 편하게 넘어가세요. "
+"Android 스튜디오 경로는 더 쉽지만, 더 많은 디스크 공간을 차지합니다. Android "
+"용 Godot를 개발하려는 계획이라면 (Java 소스 코드 수정), 혹은 애드온을 개발할 "
+"계획이라면 좋을 것입니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:143
 msgid "Download and Install Android Studio"
-msgstr "안드로이드 스튜디오 다운로드하고 설치하기"
+msgstr "Android 스튜디오 다운로드하고 설치하기"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:145
 msgid ""
 "Download the latest version of Android Studio. When installing, pay "
 "attention to where the *android-sdk* directory is created."
 msgstr ""
-"최신 안드로이드 스튜디오를 다운로드합니다. 설치할 때, 어디에 *android-sdk* 디"
-"렉토리가 만들어지는 지 확인하세요."
+"최신 Android 스튜디오를 다운로드합니다. 설치할 때, 어디에 *android-sdk* 디렉"
+"토리가 만들어지는 지 확인하세요."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:149
 msgid ""
@@ -24236,8 +24234,8 @@ msgid ""
 "You thought that by going the Android Studio way you could escape the "
 "Keystore generation, but no. It's back to haunt you."
 msgstr ""
-"안드로이드 스튜디오 방식으로는 Keystore 생성에서 벗어날 수 있다고 생각했을텐"
-"데요, 아닙니다. 다시 돌아왔습니다."
+"Android 스튜디오 방식으로는 Keystore 생성에서 벗어날 수 있다고 생각했을텐데"
+"요, 아닙니다. 다시 돌아왔습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:170
 msgid ""
@@ -24245,7 +24243,7 @@ msgid ""
 "File Explorer and open a command line tool there:"
 msgstr ""
 "이전 단계에서 android-sdk를 설치한 폴더로 가서, 파일 탐색기를 사용하고 거기에"
-"서 명령 행 도구를 엽니다:"
+"서 명령줄 도구를 엽니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:174
 msgid ""
@@ -24253,8 +24251,8 @@ msgid ""
 "out of the box, but on Windows it needs additional details (keep reading "
 "afterwards)."
 msgstr ""
-"실제 입력할 명령 문장은 다음과 같습니다. Unix에서 이것은 즉시 작동하지만, 윈"
-"도우에서는 추가 세부 사항이 필요합니다 (계속 읽어주세요)."
+"실제 입력할 명령 문장은 다음과 같습니다. Unix에서 이것은 즉시 작동하지만, "
+"Windows에서는 추가 세부 사항이 필요합니다 (계속 읽어주세요)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:180
 msgid ""
@@ -24263,10 +24261,10 @@ msgid ""
 "for regular commandline). Don't worry, at least by using Android Studio on "
 "Windows, Java comes bundled with it."
 msgstr ""
-"윈도우에서는, Java에 대한 전체 경로를 제공해야 합니다 (그리고 PowerShell을 사"
-"용한다면, 문장의 시작 부분에 &를 추가해야 합니다, 일반 명령 행에서는 필요하"
-"지 않습니다). 걱정하지 마세요, 적어도 윈도우에서 안드로이드 스튜디오를 쓴다"
-"면, Java가 번들로 제공됩니다."
+"Windows에서는, Java에 대한 전체 경로를 제공해야 합니다 (그리고 PowerShell을 "
+"사용한다면, 문장의 시작 부분에 &를 추가해야 합니다, 일반 명령줄에서는 필요하"
+"지 않습니다). 걱정하지 마세요, 적어도 Windows에서 Android 스튜디오를 쓴다면, "
+"Java가 번들로 제공됩니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:182
 msgid ""
@@ -24277,8 +24275,8 @@ msgid ""
 msgstr ""
 "명확하게 하기 위해, PowerShell에서 작동하는 문장 캡쳐본이 있습니다 (&를 추가"
 "하고 keytool.exe에 대한 전체 Java 경로를 추가합니다, 일반 콘솔을 사용한다면 &"
-"를 제거하세요). 안드로이드 스튜디오와 함께 제공되는 Java 버전에 대한 경로를 "
-"사용합니다:"
+"를 제거하세요). Android 스튜디오와 함께 제공되는 Java 버전에 대한 경로를 사용"
+"합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:205
 msgid "Enabling Custom Build and Exporting"
@@ -24289,8 +24287,8 @@ msgid ""
 "When setting up the Android project in the *Project -> Export* dialog, "
 "*custom build* needs to be enabled:"
 msgstr ""
-"*프로젝트 -> 내보내기* 대화 상자에서 안드로이드 프로젝트를 설정할 때, "
-"*custiom build*\\ 가 켜져있어야 합니다:"
+"*프로젝트 -> 내보내기* 대화 상자에서 Android 프로젝트를 설정할 때, *custiom "
+"build*\\ 가 켜져있어야 합니다:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:211
 msgid ""
@@ -24310,7 +24308,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for Windows"
-msgstr "윈도우에 응용 프로그램 아이콘 바꾸기"
+msgstr "Windows에 응용 프로그램 아이콘 바꾸기"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
 msgid ""
@@ -24319,8 +24317,8 @@ msgid ""
 "icons that can be changed on Windows: the file icon and the taskbar icon."
 msgstr ""
 "기본적으로 내보낸 프로젝트의 아이콘은 Godot 아이콘입니다. 프로젝트를 위해 아"
-"이콘을 바꾸고 싶을 것입니다. 윈도우에서 바꿀 수 있는 두 가지 유형의 아이콘이 "
-"있습니다: 파일 아이콘하고 작업 표시줄 아이콘입니다."
+"이콘을 바꾸고 싶을 것입니다. Windows에서 바꿀 수 있는 두 가지 유형의 아이콘"
+"이 있습니다: 파일 아이콘하고 작업 표시줄 아이콘입니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
 msgid "Changing the taskbar icon"
@@ -24375,7 +24373,7 @@ msgid ""
 "the rcedit executable."
 msgstr ""
 "다운로드한 후, Godot에 컴퓨터에서 rcedit 실행 파일의 경로를 주어야 합니다. **"
-"에디터 → 에디터 설정 → Export → Windows**\\ 로 갑니다. **rcedit** 항목의 폴"
+"편집기 → 편집기 설정 → Export → Windows**\\ 로 갑니다. **rcedit** 항목의 폴"
 "더 아이콘을 클릭합니다. rcedit 실행 파일로 가서 선택합니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:44
@@ -24383,7 +24381,7 @@ msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
 msgstr ""
-"리눅스와 macOS 사용자는 rcedit를 사용하려면 `WINE <https://www.winehq.org/>`_"
+"Linux와 macOS 사용자는 rcedit를 사용하려면 `WINE <https://www.winehq.org/>`_"
 "\\ 을 별도로 설치해야 합니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:49
@@ -24394,9 +24392,9 @@ msgid ""
 "your icon in ICO format in the **Application → Icon** field."
 msgstr ""
 "이제 파일 아이콘을 바꾸기 위한 준비가 되었습니다. 하기 위해선, 내보낼 때 아이"
-"콘을 지정해야 합니다. **프로젝트 → 내보내기**\\ 로 갑니다. 이미 윈도우 데스크"
-"톱 프리셋이 준비되었다고 가정합니다, **Application → Icon** 영역에서 ICO 형식"
-"으로 된 아이콘을 선택합니다."
+"콘을 지정해야 합니다. **프로젝트 → 내보내기**\\ 로 갑니다. 이미 Windows 데스"
+"크톱 프리셋이 준비되었다고 가정합니다, **Application → Icon** 영역에서 ICO 형"
+"식으로 된 아이콘을 선택합니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:55
 msgid ""
@@ -24429,7 +24427,7 @@ msgid ""
 "ensure the icon (and your executable) works on Windows."
 msgstr ""
 "`ICO 파일 <https://en.wikipedia.org/wiki/ICO_(file_format)>`_\\ 을 만드는 어"
-"떤 프로그램이든 관계없이, 윈도우에 맞는 아이콘 (그리고 실행 파일)에는 몇 가"
+"떤 프로그램이든 관계없이, Windows에 맞는 아이콘 (그리고 실행 파일)에는 몇 가"
 "지 요구사항이 있습니다."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:75
@@ -24456,7 +24454,7 @@ msgid ""
 "supported icon sizes on Windows 10: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, "
 "48, 56, 60, 63, 84 and one larger than 255 pixels (such as 256, 512 or 1024)."
 msgstr ""
-"높은 DPI 화면을 완벽하게 지원하고 싶다면, 다음은 윈도우 10에서 지원하는 아이"
+"높은 DPI 화면을 완벽하게 지원하고 싶다면, 다음은 Windows 10에서 지원하는 아이"
 "콘 크기 전체 목록입니다: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, 48, 56, 60, "
 "63, 84 그리고 255 화소보다 큰 것 하나 (256, 512 또는 1024같은 것)."
 
@@ -24767,7 +24765,7 @@ msgstr ""
 "다. 사용자들은 씬 분기들을 그들의 씬에 저장합니다. 하지만 그 뒤 그들은 이제까"
 "지 의지해온 어려운 참고가 더 이상 효과가 없다는 것을 알게됩니다. 씬을 여러 방"
 "면에서 재 사용할 수 있는 것이 문제를 일으켰는데, 노드 경로가 대상을 찾지 못하"
-"기 때문입니다. 에디터에서 설정된 시그널 연결이 끊어집니다."
+"기 때문입니다. 편집기에서 설정된 시그널 연결이 끊어집니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
 msgid ""
@@ -24932,7 +24930,7 @@ msgstr ""
 "비어있지 않은 문자열을 반환하는 것으로 씬 독은 노드에 의해 툴팁 문자열과 함"
 "께 경고 아이콘을 생성합니다.  :ref:`Area2D <class_Area2D>`\\ 에서 자식 :ref:"
 "`CollisionShape2D <class_CollisionShape2D>` 노드가 없을 때 나타나는 그런 아이"
-"콘과 같습니다.  그런 다음 에디터는 씬을 스크립트 코드를 통해 자체 문서화합니"
+"콘과 같습니다.  그런 다음 편집기는 씬을 스크립트 코드를 통해 자체 문서화합니"
 "다. 문서를 통한 콘텐츠 중복은 없습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:230
@@ -25254,19 +25252,21 @@ msgstr "더 일관성 있음."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid "No \"special cases\" that must be documented and maintained somewhere."
-msgstr ""
+msgstr "문서화하거나 어딘가에 남겨둬야 하는 \"특수한 상황\"이 없음."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:363
 msgid ""
 "No opportunity for errors to occur because these details are not accounted "
 "for."
-msgstr ""
+msgstr "이러한 세부 사항이 고려되지 않았기 때문에 오류가 발생하지 않음."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:366
 msgid ""
 "In contrast, if one ever needs to have a child node that does *not* inherit "
 "the transform of their parent, one has the following options:"
 msgstr ""
+"반대로 부모의 변형을 상속받지 *않는* 자식 노드가 필요하다면, 다음 옵션이 있습"
+"니다:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:369
 msgid ""
@@ -25274,6 +25274,9 @@ msgid ""
 "them. As nodes with no transform, Nodes will not pass along such information "
 "to their children."
 msgstr ""
+"**선언형** 해결: :ref:`Node <class_Node>`\\ 를 둘의 계층 구조 사이에 놓습니"
+"다. 변형이 없는 노드이므로 노드는 자식들에게 부모의 정보를 전달하지 않을 것입"
+"니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:372
 msgid ""
@@ -25282,6 +25285,10 @@ msgid ""
 "<class_Spatial_method_set_as_toplevel>` node. This will make the node ignore "
 "its inherited transform."
 msgstr ""
+"**명령형** 해결: :ref:`CanvasItem <class_CanvasItem_method_set_as_toplevel>`"
+"또는  :ref:`Spatial <class_Spatial_method_set_as_toplevel>` 노드의 "
+"``set_as_toplevel`` Setter를 사용합니다. 이것으로 노드는 상속된 변형의 영향"
+"을 무시합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:379
 msgid ""
@@ -25292,6 +25299,11 @@ msgid ""
 "keeping these in a separate branch from the \"world\" can help simplify the "
 "management of game connections and the like."
 msgstr ""
+"네트워크 게임을 만든다면, 어떤 노드와 게임 플레이 시스템이 모든 플레이어와 관"
+"련 있는지, 단지 권위 있는 서버와 관련 있는지 알아야 합니다. 예를 들어, 사용자"
+"는 모든 플레이어의 \"PlayerController\" 논리 사본을 가질 필요가 없습니다. 대"
+"신 그들의 것만이 필요합니다. 따라서 \"World\"에서 그들을 분리하여 게임 연결"
+"의 관리를 단순화할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:386
 msgid ""
@@ -25301,6 +25313,10 @@ msgid ""
 "else. If so, then it stands to reason they should be children of that parent "
 "(and likely part of that parent's scene if they aren't already)."
 msgstr ""
+"씬 조직의 핵심은 SceneTree를 공간적 용어보다는 관계적 용어로 생각하는 것입니"
+"다. 노드가 부모의 존재에 의존해야 할까요? 그렇지 않아도 된다면, 그들은 다른 "
+"어딘가에서 스스로 잘 있을 수 있을 겁니다. 의존해야 한다면, 그들은 부모의 자식"
+"으로 (그리고 준비가 되지 않았다면 부모의 씬의 일부로) 존재해야 할 것입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:392
 msgid ""
@@ -25309,16 +25325,21 @@ msgid ""
 "one still has the flexibility to move nodes around, it is still best when "
 "such moves are unnecessary by default."
 msgstr ""
+"이것이 노드 자체가 구성 요소를 뜻하는 걸까요? 전혀요. Godot의 노드 트리는 집"
+"합 관계를 형성합니다, 구성의 일부가 아닙니다. 하지만 노드가 움직이는 유동성"
+"을 지니고 있더라도, 그것이 기본적으로 불필요한 것이 가장 좋습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:4
 msgid "When to use scenes versus scripts"
-msgstr ""
+msgstr "씬과 스크립트 중 하나를 사용해야 하는 경우"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:6
 msgid ""
 "We've already covered how scenes and scripts are different. Scripts define "
 "an engine class extension with imperative code, scenes with declarative code."
 msgstr ""
+"우리는 이미 씬과 스크립트가 다르다는 것을 압니다. 스크립트는 명령형 코드, 선"
+"언형 코드로 만든 씬을 사용해 엔진 클래스 확장을 정의합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:10
 msgid ""
@@ -25327,10 +25348,13 @@ msgid ""
 "are often used in conjunction with a script so that the scene acts as an "
 "extension of the scripts declarative code."
 msgstr ""
+"각 시스템의 능력은 결과적으로는 다릅니다. 씬은 어떻게 확장된 클래스를 초기화"
+"하는 지 정의할 수 있지만, 씬은 종종 스크립트와 함께 사용되어 선언형 코드 스크"
+"립트의 확장으로 작업하기도 합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
 msgid "Anonymous types"
-msgstr ""
+msgstr "익명 타입"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:18
 msgid ""
@@ -25338,6 +25362,8 @@ msgid ""
 "alone. This is, in essence, what the Godot Editor does, only in the C++ "
 "constructor of its objects."
 msgstr ""
+"스크립트 하나 만으로 씬의 내용을 완전히 정의하는 것은 *가능합니다*. 본질적으"
+"로, Godot 편집기가 하는 일은 오직 개체의 C++ 생성자에서 이루어집니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
 msgid ""
@@ -25387,7 +25413,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
 #, fuzzy
 msgid "Find the script in the FileSystem dock."
-msgstr "에디터에서 스크립트를 실행합니다."
+msgstr "편집기에서 스크립트를 실행합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:81
 #, fuzzy
@@ -25411,7 +25437,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:89
 #, fuzzy
 msgid "Select the script from the file dialog."
-msgstr "에디터에서 스크립트를 실행합니다."
+msgstr "편집기에서 스크립트를 실행합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:91
 msgid ""
@@ -27621,8 +27647,8 @@ msgid ""
 "extended to animated textures via spritesheet). The texture is set via the "
 "relevant texture property:"
 msgstr ""
-"입자 시스템은 단일 텍스쳐를 사용합니다(in the future this might be extended "
-"to animated textures via spritesheet). 텍스쳐는 관련 텍스쳐 속성을 통해 설정"
+"입자 시스템은 단일 텍스처를 사용합니다(in the future this might be extended "
+"to animated textures via spritesheet). 텍스처는 관련 텍스처 속성을 통해 설정"
 "합니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:53
@@ -28016,7 +28042,7 @@ msgid ""
 "from textures in your project."
 msgstr ""
 "ParticlesMaterials는 입자가 방출되는 영역과 방향을 결정할 수 있는 에미션 마스"
-"크(Emission Mask)를 설정할 수 있습니다. 프로젝트 내 텍스쳐로 생성될 수 있습니"
+"크(Emission Mask)를 설정할 수 있습니다. 프로젝트 내 텍스처로 생성될 수 있습니"
 "다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:294
@@ -28033,7 +28059,7 @@ msgstr "메뉴를 열고 \"에미션 마스크 불러오기\"를 선택하세요
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:303
 msgid "Then select which texture you want to use as your mask:"
-msgstr "그런 다음 마스크로 쓸 텍스쳐를 선택합니다:"
+msgstr "그런 다음 마스크로 쓸 텍스처를 선택합니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:307
 msgid "A dialog box with several settings will appear."
@@ -28045,19 +28071,19 @@ msgstr "에미션 마스크(Emission Mask)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:312
 msgid "Three types of emission masks can be generated from a texture:"
-msgstr "텍스쳐로 생성될 수 있는 에미션 마스크는 세 가지 유형이 있습니다:"
+msgstr "텍스처로 생성될 수 있는 에미션 마스크는 세 가지 유형이 있습니다:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:314
 msgid ""
 "Solid Pixels: Particles will spawn from any area of the texture, excluding "
 "transparent areas."
 msgstr ""
-"Solid Pixels: 텍스쳐의 투명한 부분을 제외한 모든 영역에서 입자가 생겨납니다."
+"Solid Pixels: 텍스처의 투명한 부분을 제외한 모든 영역에서 입자가 생겨납니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:319
 msgid ""
 "Border Pixels: Particles will spawn from the outer edges of the texture."
-msgstr "Border Pixels: 텍스쳐의 바깥쪽 가장자리에 입자가 생겨납니다."
+msgstr "Border Pixels: 텍스처의 바깥쪽 가장자리에 입자가 생겨납니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:323
 msgid ""
@@ -28146,7 +28172,7 @@ msgid ""
 msgstr ""
 "아래의 각 예제는 동일한 씬 설정을 사용합니다. ``KinematicBody2D`` 와 자식 노"
 "드로 ``Sprite`` 와 ``CollisionShape2D`` 로 시작합니다. 당신은 스프라이트 텍스"
-"쳐로 Godot 아이콘(\"icon.png\")을 사용하거나 가지고 있는 다른 2D 이미지를 사"
+"처로 Godot 아이콘(\"icon.png\")을 사용하거나 가지고 있는 다른 2D 이미지를 사"
 "용할 수 있습니다."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:23
@@ -28361,7 +28387,7 @@ msgid ""
 "casters, and one for the background. I've included links to them all here if "
 "you want to download them separately from the demo."
 msgstr ""
-"이 데모에서 우리는 4가지 텍스쳐를 사용할 것입니다. 두 개는 빛, 하나는 그림자 "
+"이 데모에서 우리는 4가지 텍스처를 사용할 것입니다. 두 개는 빛, 하나는 그림자 "
 "캐스터(shadow casters), 그리고 나머지 하나는 배경입니다. 데모로부터 개별적으"
 "로 다운로드하고 싶을까봐 여기에 모든 링크를 포함시켰습니다."
 
@@ -28501,7 +28527,7 @@ msgid ""
 "``Add`` adds the color of the light texture to the scene. It brightens the "
 "area under the light."
 msgstr ""
-"``Add`` 는 빛 텍스쳐의 색깔을 씬에 추가합니다. 빛 아래에 놓인 영역을 밝게 합"
+"``Add`` 는 빛 텍스처의 색깔을 씬에 추가합니다. 빛 아래에 놓인 영역을 밝게 합"
 "니다."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:79
@@ -28569,7 +28595,7 @@ msgid ""
 "`LightOccluder2D <class_LightOccluder2D>` looks like a dark spot and in this "
 "demo the :ref:`Sprite <class_Sprite>` is just a black square."
 msgstr ""
-"데모에서 \"그림자 캐스터\" 를 만들 때 텍스쳐로 :ref:`Sprite <class_Sprite>` "
+"데모에서 \"그림자 캐스터\" 를 만들 때 텍스처로 :ref:`Sprite <class_Sprite>` "
 "를 사용하고 있지만 실제로는 :ref:`LightOccluder2Ds 만 있으면 됩니다"
 "<class_LightOccluder2D>`. :ref:`LightOccluder2D <class_LightOccluder2D>` 는 "
 "그 자체로 어두운 장소로 보이고 이 데모에서 :ref:`Sprite <class_Sprite>` 는 단"
@@ -28592,11 +28618,11 @@ msgid ""
 "any background you choose. For this style of shadow it is most likely to be "
 "a floor texture."
 msgstr ""
-"첫번째로 :ref:`Sprite <class_Sprite>` 를 추가하고 스프라이트 텍스쳐는 "
+"첫번째로 :ref:`Sprite <class_Sprite>` 를 추가하고 스프라이트 텍스처는 "
 "`background image <https://raw.githubusercontent.com/godotengine/godot-demo-"
 "projects/master/2d/lights_and_shadows/bg.png>` 로 설정합니다. 당신의 게임을 "
 "위해서라면 아무 배경이나 선택해도 됩니다. 이런 그림자 유형은 대부분 바닥 텍스"
-"쳐일 가능성이 가장 높습니다."
+"처일 가능성이 가장 높습니다."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:118
 msgid ""
@@ -28629,7 +28655,7 @@ msgid ""
 "be centered on its parent :ref:`Light <class_Light2D>`."
 msgstr ""
 "다음으로 각 :ref:`Light <class_Light2D>` 노드에 자식 :ref:`Sprite "
-"<class_Sprite>` 를 추가하고 :ref:`Sprite <class_Sprite>` 텍스쳐를 `블롭 이미"
+"<class_Sprite>` 를 추가하고 :ref:`Sprite <class_Sprite>` 텍스처를 `블롭 이미"
 "지 <https://raw.githubusercontent.com/godotengine/godot-demo-projects/"
 "master/2d/lights_and_shadows/spot.png>`_로 설정합니다. 각 스프라이트는 :ref:"
 "`Light <class_Light2D>` 노드 중앙에 위치해야 합니다. 블롭은 빛 그자체 이미지"
@@ -28705,7 +28731,7 @@ msgid ""
 msgstr ""
 "각각의 그림자 캐스터는 :ref:`Sprite <class_Sprite>` 로 만들어졌고 :ref:"
 "`LightOccluder2D <class_LightOccluder2D>` 를 자식으로 가집니다. 데모에서는 :"
-"ref:`Sprite <class_Sprite>` 가 텍스쳐로 `caster image <https://raw."
+"ref:`Sprite <class_Sprite>` 가 텍스처로 `caster image <https://raw."
 "githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
 "lights_and_shadows/caster.png>` 설정하고 다른 것은 없습니다. 자식 :ref:"
 "`LightOccluder2D <class_LightOccluder2D>` 는 마법이 일어나는 장소입니다. 게임"
@@ -29094,7 +29120,7 @@ msgid ""
 "Here is a little more complex example, a texture variable that will be "
 "redrawn if modified:"
 msgstr ""
-"여기 좀 더 복잡한 예가 있는데 텍스쳐 변수는 수정하면 다시 그려지게 됩니다:"
+"여기 좀 더 복잡한 예가 있는데 텍스처 변수는 수정하면 다시 그려지게 됩니다:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:114
 #, fuzzy
@@ -29370,7 +29396,7 @@ msgstr ""
 "이번 튜토리얼에서는 2D 애니메이션 캐릭터를 만드는 두 가지 방법을 배우게 됩니"
 "다. 전형적으로 애니메이션 캐릭터를 만들거나 다운로드 할 경우 두 가지 유형 중 "
 "하나일 것입니다: 개별 이미지 또는 애니메이션 프레임을 모두 담긴 단일 스프라이"
-"트 시트. 에셋 유형에 따라 다음 해결책 중 하나를 선택할 수 있습니다."
+"트 시트. 애셋 유형에 따라 다음 해결책 중 하나를 선택할 수 있습니다."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:15
 msgid ""
@@ -29447,7 +29473,7 @@ msgid ""
 "Click on the new SpriteFrames resource and you'll see a new panel appear at "
 "the bottom of the editor window:"
 msgstr ""
-"새 SpriteFrames 리소스를 클릭하면 에디터 창 하단에 새로운 패널이 나타날 것입"
+"새 SpriteFrames 리소스를 클릭하면 편집기 창 하단에 새로운 패널이 나타날 것입"
 "니다:"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:56
@@ -29507,9 +29533,9 @@ msgid ""
 "<class_AnimationPlayer>`."
 msgstr ""
 "애니메이션 프레임을 모두 포함하는 스프라이트 시트를 가지고 있는 경우에는 간단"
-"하게 ``AnimatedSprite`` 를 사용할 수 없습니다. 대신에 텍스쳐를 보여주기 위해 "
+"하게 ``AnimatedSprite`` 를 사용할 수 없습니다. 대신에 텍스처를 보여주기 위해 "
 "표준 :ref:`Sprite <class_Sprite>` 노드를 사용한 다음 :ref:`AnimationPlayer "
-"<class_AnimationPlayer>` 로 텍스쳐에서 텍스쳐로 변경사항을 애니메이션 할 수 "
+"<class_AnimationPlayer>` 로 텍스처에서 텍스처로 변경사항을 애니메이션 할 수 "
 "있습니다."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:97
@@ -42855,7 +42881,7 @@ msgid ""
 msgstr ""
 "모양을 지정하는 가장 일반적인 방법은 객체의 자식으로 :ref:`CollisionShape2D "
 "<class_CollisionShape2D>`\\ 또는 :ref:`CollisionPolygon2D "
-"<class_CollisionPolygon2D>`\\ 를 추가하는 것입니다. 이러한 노드들은 에디터 작"
+"<class_CollisionPolygon2D>`\\ 를 추가하는 것입니다. 이러한 노드들은 편집기 작"
 "업 공간에서 직접 모양을 그릴 수 있도록 합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:68
@@ -42866,7 +42892,7 @@ msgid ""
 "``Node2D`` scale handles. Scaling a shape can result in unexpected collision "
 "behavior."
 msgstr ""
-"에디터에서 충돌 모양을 변경하지 않도록 주의하십시오. 인스펙터의 \"Scale\" 속"
+"편집기에서 충돌 모양을 변경하지 않도록 주의하십시오. 인스펙터의 \"Scale\" 속"
 "성은  ``(1, 1)``\\ 로 유지되어야 합니다. 충돌 모양을 변경할 때는 항상 "
 "``Node2D`` 크기 핸들이 **아닌** 크기 핸들을 사용해야 합니다. 도형의 크기를 조"
 "절하는 것은 예기치 않은 충돌 행동이 일어날 수 있습니다."
@@ -43770,7 +43796,7 @@ msgid ""
 "RectangleShape2D\" and size the rectangle to fit over the sprite image."
 msgstr ""
 "이 예시에서 ``KinematicBody2D``\\ 를 두 자식과 함께 추가합니다: ``Sprite``\\ "
-"와 ``CollisionShape2D``\\ 입니다. Godot \"icon.png\"를 Sprite의 텍스쳐 속성으"
+"와 ``CollisionShape2D``\\ 입니다. Godot \"icon.png\"를 Sprite의 텍스처 속성으"
 "로 사용합니다 (파일 시스템 독에서 ``Sprite``\\ 의 *Texture* 속성으로 끌어다 "
 "놓으십시오). ``CollisionShape2D``\\ 의 *Shape* 속성에서 \"New "
 "RectangleShape2D\"를 선택하고 스프라이트 이미지에 맞게 사각형 크기를 조정합니"
@@ -47443,7 +47469,7 @@ msgid ""
 "animated and blended."
 msgstr ""
 "**애니메이션 시스템이 엔진과 완전히 통합됨**: 이 말은 즉 애니메이션은 텍스"
-"쳐, 스프라이트 크기, 중심점, 불투명함, 색깔 변조(modulation) 등과 같은 단순"
+"처, 스프라이트 크기, 중심점, 불투명함, 색깔 변조(modulation) 등과 같은 단순"
 "한 오브젝트의 움직임 이상의 것을 제어할 수 있습니다의."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:35
@@ -55031,7 +55057,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:107
 msgid "Making the planet texture"
-msgstr "행성 텍스쳐 만들기"
+msgstr "행성 텍스처 만들기"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:109
 msgid ""
@@ -62129,7 +62155,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
 msgid "Asset Library"
-msgstr "에셋 라이브러리"
+msgstr "애셋 라이브러리"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
@@ -63056,7 +63082,7 @@ msgid ""
 "iterations to get this right, but there are a few things you can do to make "
 "it easier:"
 msgstr ""
-"주의하세요, **VR 콘텐츠를 만들 때 가장 중요한 것은 에셋의 크기를 올바르게 하"
+"주의하세요, **VR 콘텐츠를 만들 때 가장 중요한 것은 애셋의 크기를 올바르게 하"
 "는 것입니다**! 이 권리를 얻으려면 많은 연습과 반복이 필요합니다, 하지만 이를 "
 "더 쉽게 할 수 있는 몇 가지가 있습니다:"
 
@@ -63065,7 +63091,7 @@ msgid ""
 "In VR, 1 unit is typically considered 1 meter. If you design your assets "
 "around that standard, you can save yourself a lot of headache."
 msgstr ""
-"VR에서, 1 단위는 일반적으로 1미터로 취급됩니다. 이 표준을 기준으로 에셋을 디"
+"VR에서, 1 단위는 일반적으로 1미터로 취급됩니다. 이 표준을 기준으로 애셋을 디"
 "자인한다면, 스스로 머리를 쥐어짜는 걱정은 덜게됩니다."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:17
@@ -63090,7 +63116,7 @@ msgstr ""
 msgid ""
 "Test often, as the assets can look dramatically different in VR than on a "
 "flat screen!"
-msgstr "평상시보다 VR에서 에셋이 크게 달라질 수 있으므로 자주 테스트하세요!"
+msgstr "평상시보다 VR에서 애셋이 크게 달라질 수 있으므로 자주 테스트하세요!"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:21
 msgid "Throughout the course of this tutorial, we will cover:"
@@ -63137,7 +63163,7 @@ msgid ""
 "have basic programming experience in GDScript, and have basic 3D game "
 "development experience."
 msgstr ""
-"이 튜토리얼은 당신이 Godot 에디터로 작업하면서, GDScript에 대한 기초 프로그래"
+"이 튜토리얼은 당신이 Godot 편집기로 작업하면서, GDScript에 대한 기초 프로그래"
 "밍 경험과 기초 3D 게임 개발 경험이 있다고 가정합니다."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:37
@@ -63149,17 +63175,17 @@ msgid ""
 "work with other VR headsets, such as the Oculus Rift."
 msgstr ""
 "그리고, 당신이 OpenVR이 준비된 헤드셋과 두 개의 OpenVR이 준비된 컨트롤러가 있"
-"다고 가정합니다! 이 튜토리얼은 윈도우 10에서 윈도우 혼합 현실 헤드셋을 사용하"
-"여 작성되었기에, 이 헤드셋에서 작동하도록 작성되었습니다. HTC Vive에서도 테스"
-"트를 할 수 있습니다. 오큘러스 리프트 같은 다른 VR 헤드셋에는 코드를 수정해야 "
-"할 수도 있습니다."
+"다고 가정합니다! 이 튜토리얼은 Windows 10에서 Windows 혼합 현실 헤드셋을 사용"
+"하여 작성되었기에, 이 헤드셋에서 작동하도록 작성되었습니다. HTC Vive에서도 테"
+"스트를 할 수 있습니다. 오큘러스 리프트 같은 다른 VR 헤드셋에는 코드를 수정해"
+"야 할 수도 있습니다."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:40
 msgid ""
 "You can find the start assets for this tutorial here: :download:"
 "`VR_Starter_Tutorial_Start.zip <files/VR_Starter_Tutorial_Start.zip>`"
 msgstr ""
-"다음은 이 튜토리얼을 위한 시작 에셋입니다: :download:"
+"다음은 이 튜토리얼을 위한 시작 애셋입니다: :download:"
 "`VR_Starter_Tutorial_Start.zip <files/VR_Starter_Tutorial_Start.zip>`"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:42
@@ -63167,7 +63193,7 @@ msgid ""
 "The provided starter assets contain some 3D models, sounds, and a few scenes "
 "already set up and configured for this tutorial."
 msgstr ""
-"제공되는 시작 에셋은 몇 가지 3D 모델, 소리, 그리고 미리 설정되고 이 튜토리얼"
+"제공되는 시작 애셋은 몇 가지 3D 모델, 소리, 그리고 미리 설정되고 이 튜토리얼"
 "에 맞게 구성된 씬들이 있습니다."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:46
@@ -67317,7 +67343,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:53
 #, fuzzy
 msgid "Android plugin"
-msgstr "안드로이드"
+msgstr "Android"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:55
 msgid ""
@@ -68353,9 +68379,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:184
-#, fuzzy
 msgid "Command line arguments."
-msgstr "명령 행(Command line) 튜토리얼"
+msgstr "명령줄 인수."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:186
 msgid "Promise that resolves once the engine started."
@@ -70541,7 +70566,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:4
 msgid "Running code in the editor"
-msgstr "에디터에서 코드 실행하기"
+msgstr "편집기에서 코드 실행하기"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:7
 msgid "What is ``tool``?"
@@ -71572,7 +71597,7 @@ msgstr ""
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:60
 #, fuzzy
 msgid "Printed manual"
-msgstr "에디터 매뉴얼"
+msgstr "편집기 매뉴얼"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:62
 msgid ""
@@ -72882,7 +72907,7 @@ msgstr ""
 msgid ""
 "`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
 "(command-line tools are sufficient)"
-msgstr "안드로이드 SDK: https://developer.android.com/studio/"
+msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:28
 msgid ""
@@ -72894,7 +72919,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 or later"
-msgstr "안드로이드 SDK: https://developer.android.com/studio/"
+msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:31
 msgid "Gradle (will be downloaded and installed automatically if missing)"

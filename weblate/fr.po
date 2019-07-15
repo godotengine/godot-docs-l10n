@@ -7,6 +7,7 @@
 # Adrien Léo <couroux99@gmail.com>, 2019.
 # Alexandre Fiale <afiale@agaetis.fr>, 2019.
 # Alex FIALE <alex.fiale@gmail.com>, 2019.
+# Alexis Comte <comtealexis@gmail.com>, 2019.
 # Alexis Huvier <lavapower84@gmail.com>, 2018.
 # Antoine Carrier <ac.g392@gmail.com>, 2018.
 # Antoine Garnier <anto9garnier@gmail.com>, 2019.
@@ -20,6 +21,7 @@
 # benjamin thilliez <benjamin.thilliez@gmx.com>, 2018.
 # Bresere <berserk172.cl215@gmail.com>, 2018.
 # Brice Lobet <tempo.data@gmail.com>, 2018-2019.
+# Capitain Mitten <chopard.sim@gmail.com>, 2019.
 # Carl Schwan <schwancarl@protonmail.com>, 2018.
 # Caye Pierre <pierrecaye@laposte.net>, 2018-2019.
 # Chadrack Tamukwa Besongo <chadrack@scadhsong.com>, 2019.
@@ -98,8 +100,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-02 14:18+0200\n"
-"PO-Revision-Date: 2019-07-02 06:19+0000\n"
-"Last-Translator: Proton Fox <protonthefox@gmail.com>\n"
+"PO-Revision-Date: 2019-07-15 15:56+0000\n"
+"Last-Translator: Alexis Comte <comtealexis@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -43102,6 +43104,9 @@ msgid ""
 "need to add an additional check (``if reloading_weapon == false:``) to see "
 "if the player is reloading:"
 msgstr ""
+"La première chose à modifier se trouve dans l'implémentation du changement "
+"d'arme. Nous avons besoin d'ajouter un test additionnel (``if "
+"reloading_weapon == false:``) pour voir si le joueur recharge."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:382
 msgid ""
@@ -43135,6 +43140,9 @@ msgid ""
 "check to make sure it is not ``null``. Then we check to see whether the "
 "weapon can reload or not using its ``CAN_RELOAD`` constant."
 msgstr ""
+"Si le joueur a appuyé sur ``reload```, on regarde quel est l'arme courante "
+"et on vérifie qu'elle n'est pas ``null``. Ensuite on utilise la constante "
+"``CAN_RELOAD`` de l'arme  pour savoir si celle-ci peut recharger ou non."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:416
 msgid ""
@@ -43164,12 +43172,17 @@ msgid ""
 "One thing I like to add is where the weapon will reload itself if you try to "
 "fire it and it's out of ammo."
 msgstr ""
+"Une chose que j'aime ajouter est le rechargement automatique de l'arme "
+"lorsque l'on essaye de tirer alors qu'elle est déchargée."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:426
 msgid ""
 "We also need to add an additional if check (``is_reloading_weapon == false:"
 "``) so the player cannot fire the current weapon while reloading."
 msgstr ""
+"On a besoin d'ajouter une nouvelle condition (``is_reloading_weapon == false:"
+"``) pour que le joueur ne puisse pas tirer avec son arme actuelle lorsqu'il "
+"recharge."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:429
 msgid ""

@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-02 14:18+0200\n"
-"PO-Revision-Date: 2019-07-02 12:04+0000\n"
+"PO-Revision-Date: 2019-07-12 03:01+0000\n"
 "Last-Translator: roger <616steam@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ca/>\n"
@@ -42,7 +42,7 @@ msgid ""
 "the documentation of the current **stable** branch? `Have a look here "
 "<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
-"Aquí s'hi troba la documentació corresponent a la branca inestable (master). "
+"Aquesta es la documentació per a la branca de desenvolupament (master). "
 "Buscàveu la documentació de la branca **estable**?  `Féu un cop d'ull aquí "
 "<http://docs.godotengine.org/en/stable>`_."
 
@@ -69,11 +69,15 @@ msgstr ""
 "comunitat proporcionant noves traduccions o revisant les existents a Weblate."
 
 #: ../../docs/index.rst:25
+#, fuzzy
 msgid ""
 "For the time being, localized translations are only available for the "
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"De moment, les traduccions localitzades només estan disponibles per a la "
+"branca \"latest\" (desenvolupament), però haurien de ser adequades per "
+"aprendre a utilitzar les versions estables de Godot tot i així."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -676,6 +680,7 @@ msgstr ""
 "learn-scripting>\"."
 
 #: ../../docs/about/faq.rst:68
+#, fuzzy
 msgid ""
 "If you are just starting out with either Godot or game development in "
 "general, GDScript is the recommended language to learn and use since it is "
@@ -684,8 +689,16 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"Si tot just esteu començant amb Godot o desenvolupament de jocs en general, "
+"GDScript és el llenguatge recomanat per aprendre i utilitzar ja que és natiu "
+"a Godot. Mentre que els llenguatges de scripting tendeixen a tenir menys "
+"rendiment que els idiomes de menor nivell a llarg termini, per prototipatge, "
+"desenvolupament de productes mínims viables (MVPs), i centrant-se en Time-to-"
+"Market (TTM), GDScript proporcionarà una forma ràpida, amigable i capaç de "
+"desenvolupant els teus jocs."
 
 #: ../../docs/about/faq.rst:75
+#, fuzzy
 msgid ""
 "Note that C# support is still relatively new, and as such, you may encounter "
 "some issues along the way. Our friendly and hard-working development "
@@ -695,6 +708,13 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"Tingueu en compte que el suport de C# és encara relativament nou, i com a "
+"tal, es pot trobar alguns problemes al llarg del camí. La nostra amable i "
+"treballadora comunitat de desenvolupament sempre està preparada per afrontar "
+"nous problemes a mesura que sorgeixen, però com que es tracta d'un projecte "
+"de codi obert, us recomanem que primer feu una diligència deguda. La cerca a "
+"través de debats sobre 'problemes oberts < https://github.com/godotengine/"
+"godot/issues > ' _ és una gran manera d'iniciar la seva solució de problemes."
 
 #: ../../docs/about/faq.rst:82
 #, fuzzy
@@ -714,6 +734,7 @@ msgid "What is GDScript and why should I use it?"
 msgstr "Què es GDScript i per què l'hauria d'utilitzar?"
 
 #: ../../docs/about/faq.rst:90
+#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -723,6 +744,14 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"GDScript és el llenguatge de scripting integrat de Godot. Es va construir "
+"des de zero per maximitzar el potencial de Godot en la menor quantitat de "
+"codi, oferint tant als desenvolupadors novells i experts per treure profit "
+"de les fortaleses de Godot el més ràpid possible. Si alguna vegada has "
+"escrit alguna cosa en un llenguatge com Python abans, llavors et sentiràs "
+"com a casa. Per a exemples, la història i una visió completa del poder que "
+"GDScript us ofereix, consulteu la guia: Ref: \"GDScript scripting < "
+"doc_gdscript >\"."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -737,6 +766,7 @@ msgstr ""
 "complexitat**"
 
 #: ../../docs/about/faq.rst:101
+#, fuzzy
 msgid ""
 "The original intent of creating a tightly integrated, custom scripting "
 "language for Godot was two-fold: first, it reduces the amount of time "
@@ -748,6 +778,16 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"La intenció original de crear un llenguatge de scripting personalitzat "
+"estretament integrat, per Godot era doble: en primer lloc, es redueix la "
+"quantitat de temps necessari per a posar-se en marxa amb Godot, donant als "
+"desenvolupadors una forma ràpida d'exposar-se al motor amb un enfocament en "
+"la productivitat; en segon lloc, redueix la càrrega global de manteniment, "
+"atenua la dimensionalitat dels problemes, i permet als desenvolupadors del "
+"motor centrar-se en eliminar errors i millorar les característiques "
+"relacionades amb el nucli del motor, en lloc de gastar molt de temps "
+"tractant d'aconseguir un petit conjunt de funcions incrementals que "
+"funcionin a través d'un ampli conjunt de llenguatges."
 
 #: ../../docs/about/faq.rst:109
 #, fuzzy
@@ -888,46 +928,72 @@ msgstr ""
 "<https://opensource.org/licenses/MIT>`_ proporcionada per Godot."
 
 #: ../../docs/about/faq.rst:159
+#, fuzzy
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
+"Serà [Introduiu aqui un SDK tancat com FMOD, GameWorks, etc.] suportat en "
+"Godot?"
 
 #: ../../docs/about/faq.rst:161
+#, fuzzy
 msgid ""
 "The aim of Godot is to create a free and open-source MIT-licensed engine "
 "that is modular and extendable. There are no plans for the core engine "
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"L'objectiu de Godot és crear un motor lliure i de codi obert amb llicència "
+"MIT que sigui modular i extensible. No hi ha plans per a la comunitat de "
+"desenvolupament del motor base per donar suport a qualsevol SDKs de tercers/"
+"amb codi tancat/propietari, ja que integrar-se amb aquests aniria en contra "
+"de l'esperit de Godot."
 
 #: ../../docs/about/faq.rst:166
+#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
+"Dit això, ja que Godot és de codi obert i modular, res evita que vostè o "
+"qualsevol altra persona interessada afegeixi d'aquestes bilioteques com a "
+"mòdul i distribueixi el seu joc amb elles-ja sigui de codi obert o tancat."
 
 #: ../../docs/about/faq.rst:170
+#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
+"Per veure com es podria proporcionar el suport per al SDK d'elecció, "
+"consulteu la pregunta de connectors que trobareu a continuació."
 
 #: ../../docs/about/faq.rst:173
+#, fuzzy
 msgid ""
 "If you know of a third-party SDK that is not supported by Godot but that "
 "offers free and open-source integration, consider starting the integration "
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"Si sabeu d'un SDK de tercers que Godot no admet, però que ofereix una "
+"integració lliure i de codi obert, considereu inici del treball d'integració "
+"vosaltres mateixos. Godot no és propietat d'una persona; pertany a la "
+"comunitat, i creix juntament amb ambiciosos contribuents comunitaris com "
+"vosaltres."
 
 #: ../../docs/about/faq.rst:179
+#, fuzzy
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
+"Com s'han de crear els actius per gestionar múltiples resolucions i ràtios "
+"d'aspecte?"
 
 #: ../../docs/about/faq.rst:181
+#, fuzzy
 msgid ""
 "This question pops up often and it's probably thanks to the misunderstanding "
 "created by Apple when they originally doubled the resolution of their "
@@ -937,16 +1003,30 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"Aquesta pregunta apareix sovint i és probablement gràcies al malentès creat "
+"per Apple quan originalment doblava la resolució dels seus dispositius. Va "
+"fer que la gent pensi que tenir els mateixos actius en diferents resolucions "
+"era una bona idea, així que molts van continuar cap a aquest camí. Allò "
+"originalment funcionava fins a un punt i només per a mecanismes de Apple, "
+"però llavors uns quants dispositius d'Android i Apple amb diferents "
+"resolucions i proporcions d'aspecte es van crear, amb una gamma molt àmplia "
+"de mides i DPIs."
 
 #: ../../docs/about/faq.rst:189
+#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
+"La manera més comuna i correcta d'aconseguir això es, en canvi, utilitzar "
+"una única resolució base per al joc i només manejar diferents proporcions "
+"d'aspecte de pantalla. Això és principalment necessitat per a 2d, ja que 3d "
+"és només una qüestió de Càmera XFov o YFov."
 
 #: ../../docs/about/faq.rst:193
+#, fuzzy
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -955,21 +1035,38 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"Trieu una única resolució de base per al vostre joc. Fins i tot si hi ha "
+"dispositius que van fins a 2K i dispositius que baixen a 400p, l'escala de "
+"maquinari regular en el dispositiu s'encarregarà d'això amb poc o cap cost "
+"de rendiment. Les opcions més comuns són o prop de 1080p (1920x1080) o 720p "
+"(1280x720). Tingueu en compte que com més gran sigui la resolució, més grans "
+"seran els vostres actius, més memòria utilitzaran i més temps trigarà per a "
+"la càrrega."
 
 #: ../../docs/about/faq.rst:201
+#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
+"Utilitzeu les opcions d'estirament en Godot; l'estirament en 2D funciona "
+"millor mantenint les proporcions d'aspecte. Consulteu el tutorial: Ref: "
+"'doc_multiple_resolutions'tutorial sobre com aconseguir-ho."
 
 #: ../../docs/about/faq.rst:205
+#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
+"Determineu una resolució mínima i després decidiu si voleu que el vostre joc "
+"s'estiri verticalment o horitzontalment per a diferents proporcions "
+"d'aspecte, o si hi ha una relació d'aspecte i voleu que apareguin barres "
+"negres en el seu lloc. Això també s'explica a: Ref: "
+"'doc_multiple_resolutions'."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -985,16 +1082,22 @@ msgstr ""
 "I això es tot! El teu joc hauria de funcionar en múltiples resolucions."
 
 #: ../../docs/about/faq.rst:216
+#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
+"Si es desitja que el vostre joc també funcioni en pantalles minúscules "
+"(menys de 300 píxels d'amplada), podeu utilitzar l'opció d'exportació per "
+"encongir imatges, i posar aquella compilació per ser utilitzada per a certes "
+"mides de pantalla a la Botiga App o Google Play."
 
 #: ../../docs/about/faq.rst:222
+#, fuzzy
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "Com puc estendre Godot?"
 
 #: ../../docs/about/faq.rst:224
 #, fuzzy
@@ -1042,10 +1145,13 @@ msgid "I would like to contribute! How can I get started?"
 msgstr "M'agradaria contribuir! Com puc començar?"
 
 #: ../../docs/about/faq.rst:241
+#, fuzzy
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"Fantastic! Com a projecte de codi obert, Godot es nodreix de la innovació i "
+"l'ambició de desenvolupadors com vosaltres."
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -1083,10 +1189,13 @@ msgstr ""
 "interessats en aprendre sobre coses com:"
 
 #: ../../docs/about/faq.rst:263
+#, fuzzy
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"La vostra experiència utilitzant el programari i els problemes que teniu "
+"(ens preocupem per això molt més que idees en com millorar-lo)."
 
 #: ../../docs/about/faq.rst:265
 #, fuzzy
@@ -1117,11 +1226,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:271
+#, fuzzy
 msgid ""
 "Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
+"Si us plau no sentiu que les vostres idees per Godot no són benvingudes. En "
+"el seu lloc, tracteu de reformular-les com un problema en primer lloc, de "
+"manera que els desenvolupadors i la comunitat tenen una base funcional per a "
+"la terra les seves idees sobre."
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -1133,10 +1247,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:281
+#, fuzzy
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
+"Punts de bonificació per aportar captures de pantalla, números concrets, "
+"casos de prova, o projectes d'exemple (si escau)."
 
 #: ../../docs/about/faq.rst:285
 #, fuzzy
@@ -1144,8 +1261,9 @@ msgid "How can I support Godot development or contribute?"
 msgstr "Com puc recolzar el desenvolupament de Godot o contribuir?"
 
 #: ../../docs/about/faq.rst:287
+#, fuzzy
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ""
+msgstr "Vegeu: Ref: 'doc_ways_to_contribute'."
 
 #: ../../docs/about/faq.rst:290
 #, fuzzy
@@ -1153,29 +1271,41 @@ msgid "Who is working on Godot? How can I contact you?"
 msgstr "Qui está treballant en Godot? Com puc contactar-hi?"
 
 #: ../../docs/about/faq.rst:292
+#, fuzzy
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
+"Vegueu la pàgina corresponent en el 'lloc web de Godot < https://godotengine."
+"org/contact > ' _."
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
 msgstr "Registre de canvis de la documentació"
 
 #: ../../docs/about/docs_changelog.rst:6
+#, fuzzy
 msgid ""
 "The documentation is continually being improved. The release of version 3.1 "
 "includes many new tutorials, many fixes and updates for old tutorials, and "
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"La documentació s'està millorant contínuament. El llançament de la versió "
+"3.1 inclou molts tutorials nous, moltes correccions i actualitzacions per "
+"als tutorials vells i moltes actualitzacions a la referencia de classes. "
+"Sota hi ha una llista de les classes noves afegides des de la versió 3.0."
 
 #: ../../docs/about/docs_changelog.rst:10
+#, fuzzy
 msgid ""
 "This document only contains new tutorials so not all changes are reflected, "
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"Aquest document només conté tutorials nous pel que no es reflecteixin tots "
+"els canvis, molts tutorials s'han actualitzat substancialment però no es "
+"reflecteixen en aquest document."
 
 #: ../../docs/about/docs_changelog.rst:14
 #, fuzzy
@@ -1218,8 +1348,9 @@ msgid ":ref:`doc_android_custom_build`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:45
+#, fuzzy
 msgid "Best Practices:"
-msgstr ""
+msgstr "Bones Pràctiques:"
 
 #: ../../docs/about/docs_changelog.rst:36
 msgid ":ref:`doc_introduction_best_practices`"
@@ -43899,7 +44030,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Locale"
-msgstr ""
+msgstr "Idioma"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Language and Variant"

@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-02 14:18+0200\n"
-"PO-Revision-Date: 2019-07-02 12:04+0000\n"
-"Last-Translator: FourmiSushi <neko@fourmisushi.soy>\n"
+"PO-Revision-Date: 2019-07-15 15:56+0000\n"
+"Last-Translator: John Smith <weblater_jp@susa.eek.jp>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
 "Language: ja\n"
@@ -752,6 +752,13 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"Godotのために緊密に統合されたカスタムスクリプト言語を作る当初の目的は2つあり"
+"ました:第一に、それはGodotを立ち上げて走らせるのに必要な時間を減らし、開発者"
+"が生産性に焦点を当ててエンジンに自分自身をさらす迅速な方法を提供します。;第2"
+"に、メンテナンスの全体的な負担を軽減し、問題の次元性を低減し、エンジンの開発"
+"者が、大きな言語セット全体で動作する小さな追加機能セットを得るために多くの時"
+"間を費やすのではなく、バグを取り除き、エンジンコアに関連する機能を改善するこ"
+"とに集中できるようにします。"
 
 #: ../../docs/about/faq.rst:109
 msgid ""
@@ -765,6 +772,13 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
+"Godotはオープンソースプロジェクトであるため、なじみのあるプログラミング言語を"
+"サポートすることで、より多くのユーザーを引きつけることよりも、より統合された"
+"シームレスなエクスペリエンスを優先することが最初から不可欠でした。あなたが"
+"Godotで別の言語(上記のサポートされるオプションのリストを参照してください。)を"
+"使用したいということは理解します。とはいえ、GDScriptをまだ試していない人は、"
+"**3日間**試してみてください。Godotと同じように、GDScriptがいかに強力であり、"
+"開発が迅速になるかを見れば、GDScriptも成長すると思います。"
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -782,7 +796,7 @@ msgstr "GDScript製作の背景にある動機とはなんだったのでしょ�
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr ""
+msgstr "Godot用のカスタムスクリプト言語を作成する主な理由は次のとおりです:"
 
 #: ../../docs/about/faq.rst:126
 msgid ""
@@ -2472,6 +2486,9 @@ msgid ""
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
+"しかし、シーンのインスタンス化の最大の利点は、優れた設計言語として機能するこ"
+"とです。これは、Godotと他のすべてのエンジンとの違いです。 Godotは、この概念に"
+"基づいて設計されました。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -3018,23 +3035,27 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr ""
+msgstr "スクリプト(続き)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr ""
+msgstr "プロセシング"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"Godotのいくつかのアクションはコールバックまたは仮想関数によってトリガされるた"
+"め、常に実行されるコードを記述する必要はありません。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
+"ただし、すべてのフレームでスクリプトを処理する必要がある場合もあります。処理"
+"には、アイドル処理と物理処理の2種類があります。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -3067,12 +3088,16 @@ msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
+"このパラメータを使用すると、ゲームのFPSに関係なく、常に同じ時間がかかるように"
+"することができます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
+"たとえば、移動速度を一定にし、フレームレートから独立させるために、移動が時間"
+"デルタで乗算されることがよくあります。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""
@@ -3083,6 +3108,10 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
+"``_physics_process()`` での物理処理は似ていますが、キャラクタの制御など、各物"
+"理ステップの前に実行する必要がある処理に使用する必要があります。常に物理ス"
+"テップの前に実行され、固定時間間隔(デフォルトでは毎秒60回)で呼び出されます。"
+"この間隔は、Physics->Common->Physics FpsのProject Settingsで変更できます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
@@ -3090,6 +3119,9 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
+"ただし、 ``_process()`` 関数は物理学と同期されません。フレームレートは一定で"
+"はなく、ハードウェアとゲームの最適化に依存します。その実行は、シングルスレッ"
+"ドのゲームの物理ステップの後に行われます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
 msgid ""
@@ -3099,7 +3131,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
-msgstr ""
+msgstr "これにより、各フレームが増加するカウンタが表示されます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
@@ -3131,6 +3163,8 @@ msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
+"上記のコードはグループ `` enemies`` のすべてのメンバーに対して関数 `` "
+"player_was_discovered``を呼び出します。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
 msgid ""
@@ -3151,7 +3185,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:157
 msgid "Notifications"
-msgstr ""
+msgstr "通知"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:158
 msgid ""
@@ -3168,26 +3202,31 @@ msgid ""
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overrideable functions."
 msgstr ""
+":ref:`Class Reference<toc-class-ref>`の各クラスのドキュメントには、受信可能な"
+"通知が記載されています。しかし、ほとんどの場合、GDScriptはより単純な上書き可"
+"能な関数を提供します。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
 msgid "Overrideable functions"
-msgstr ""
+msgstr "オーバーライド可能な関数"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
 msgid ""
 "Such overrideable functions, which are described as follows, can be applied "
 "to nodes:"
-msgstr ""
+msgstr "このような上書き可能な関数は、下記のような記述でノードに適用できます:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
 msgstr ""
+"前述したように、通知システムの代わりにこれらの機能を使用することをお勧めしま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
 msgid "Creating nodes"
-msgstr ""
+msgstr "ノード作成"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:278
 msgid ""
@@ -3199,6 +3238,8 @@ msgstr ""
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
 msgstr ""
+"シーンの内部または外部にあるノードを削除するには、 ``free()`` を使用する必要"
+"があります:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
 msgid ""
@@ -3214,6 +3255,10 @@ msgid ""
 "will crash the game. Running Godot with the debugger will often catch this "
 "case and warn you about it."
 msgstr ""
+"シグナルを発信している、または関数を呼び出しているために、現在 \"blocked\" に"
+"なっているノードを削除したい場合があります。これはゲームをクラッシュさせま"
+"す。デバッガでGodotを実行すると、このケースを検出して警告することがよくありま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
 msgid ""
@@ -3223,13 +3268,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
 msgid "Instancing scenes"
-msgstr ""
+msgstr "シーンのインスタンス化"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:347
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
+"コードからシーンをインスタンス化するには、2つの手順があります。 まず最初に"
+"ハードドライブからシーンをロードします:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:360
 msgid ""
@@ -3253,6 +3300,10 @@ msgid ""
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
+"この2段階のプロセスの利点は、パックされたシーンをロードして使用できる状態に保"
+"ち、必要なだけインスタンスを作成できることです。 これは、アクティブシーン内の"
+"複数の敵、弾丸、その他のエンティティをすばやくインスタンス化するのに特に便利"
+"です。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
@@ -3468,7 +3519,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
-msgstr ""
+msgstr "最初のゲーム"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
@@ -3533,7 +3584,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 msgid "Organizing the project"
-msgstr ""
+msgstr "プロジェクトの編成"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
 msgid ""
@@ -4943,11 +4994,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
 msgid "Godot’s design philosophy"
-msgstr ""
+msgstr "Godotのデザイン哲学"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:6
 msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
-msgstr ""
+msgstr "手が濡れたところで、Godotのデザインについて説明しましょう。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
 msgid ""
@@ -4965,16 +5016,22 @@ msgid ""
 "you need to try it out for yourself and understand its design and "
 "limitations."
 msgstr ""
+"このページは、Godotがどのように機能するのかを理解するのに役立ちます。これは利"
+"用可能な機能のリストでもエンジンの比較でもありません。自分のプロジェクトに適"
+"したエンジンがあるかどうかを知るには、自分で試してみて、その設計と制限を理解"
+"する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:19
 msgid ""
 "Please watch `Discover Godot 3, the Free game engine <https://youtu."
 "be/4v3qge-3CqQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
+"エンジンの機能の概要をお探しの場合は、Youtubeにある `Discover Godot 3, the "
+"Free game engine <https://youtu.be/4v3qge-3CqQ>` をご覧ください。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:23
 msgid "Object-oriented design and composition"
-msgstr ""
+msgstr "オブジェクト指向の設計と構成"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:25
 msgid ""
@@ -4982,6 +5039,9 @@ msgid ""
 "system and Node hierarchy. It tries to stay away from strict programming "
 "patterns to offer an intuitive way to structure your game."
 msgstr ""
+"Godotは、柔軟なシーンシステムとノード階層を備えたオブジェクト指向設計をコアに"
+"採用しています。ゲームを直感的に構築する方法を提供するために、厳密なプログラ"
+"ミング・パターンを避けています。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:29
 msgid ""
@@ -4991,10 +5051,15 @@ msgid ""
 "Change the BlinkingLight's color, save, and all the BrokenLanterns in the "
 "city will update instantly."
 msgstr ""
+"一つには、Godotはあなたがシーンを**構成または集約すること**を可能にします。入"
+"れ子になったプレハブのようなものです。BlinkingLightシーンと、BlinkingLightを"
+"使用するBrokenLanternシーンを作成できます。次に、BrokenLanternsでいっぱいの街"
+"を作成します。 BlinkingLightの色を変更して保存すると、市内のすべての"
+"BrokenLantersが即座に更新されます。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:36
 msgid "On top of that, you can **inherit** from any scene."
-msgstr ""
+msgstr "それに加えて、あらゆるシーンから**継承すること**ができます。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
 msgid ""
@@ -5020,6 +5085,10 @@ msgid ""
 "from their parents up to the Node class. Although the engine does feature "
 "components like collision shapes, they’re the exception, not the norm."
 msgstr ""
+"また、Godotにはノードと呼ばれるさまざまなタイプのオブジェクトがあり、それぞれ"
+"に特定の目的があります。ノードはツリーの一部であり、常に親からNodeクラスまで"
+"継承します。エンジンには衝突シェイプなどのコンポーネントがありますが、これは"
+"例外であり、標準ではありません。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:59
 msgid ""
@@ -5027,10 +5096,13 @@ msgid ""
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
+"SpriteはNode2D、CanvasItem、Nodeです。トランスフォームや、カスタムシェイプを"
+"描画してカスタムシェーダでレンダリングする機能など、3つの親クラスのすべてのプ"
+"ロパティと機能を備えています。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:64
 msgid "All-inclusive package"
-msgstr ""
+msgstr "オールインワン・パッケージ"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:66
 msgid ""
@@ -5039,6 +5111,10 @@ msgid ""
 "shader editor, a debugger, a profiler, the ability to hot-reload locally and "
 "on remote devices, etc."
 msgstr ""
+"Godotは最も一般的なニーズに答えるためにそれ自身のツールを提供しようとします。"
+"専用のスクリプトワークスペース、アニメーションエディタ、タイルマップエディ"
+"タ、シェーダエディタ、デバッガ、プロファイラ、ローカルおよびリモートデバイス"
+"上でのホットリロードなどが可能です。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:73
 msgid ""
@@ -5047,6 +5123,10 @@ msgid ""
 "import plugin for it. Or you can create one, like the `Tiled Map Importer "
 "<https://github.com/vnen/godot-tiled-importer>`__."
 msgstr ""
+"目標は、ゲームを作成するための完全なパッケージと継続的なユーザーエクスペリエ"
+"ンスを提供することです。外部プログラム用のインポートプラグインがある場合は、"
+"外部プログラムで作業できます。または、 `Tiled Map Importer <https://github."
+"com/vnen/godot-tiled-importer>` のように作成することもできます。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:78
 msgid ""
@@ -5055,6 +5135,9 @@ msgid ""
 "developers and game designers, and they’re tightly integrated in the engine "
 "and the editor."
 msgstr ""
+"それが、Godotが独自のプログラミング言語GDscriptとVisualScriptをC＃と一緒に提"
+"供している理由でもあります。これらはゲーム開発者やゲームデザイナーのニーズに"
+"合わせて設計されており、エンジンとエディタに緊密に統合されています。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
 msgid ""
@@ -5069,6 +5152,9 @@ msgid ""
 "languages like C, C++, Rust, or Python (using the Cython compiler) without "
 "recompiling the engine."
 msgstr ""
+"GDNativeを使用すると、エンジンを再コンパイルすることなく、C、C ++、Rust、また"
+"はPython（Cythonコンパイラを使用）などのコンパイル済み言語を使用して高性能"
+"コードを作成できます。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:93
 msgid ""
@@ -5076,6 +5162,9 @@ msgid ""
 "the editor. You can drag and drop nodes or resources into the graph to "
 "create new code blocks.*"
 msgstr ""
+"*VisualScriptは、エディタにうまく統合されたノードベースのプログラミング言語で"
+"す。ノードまたはリソースをグラフにドラッグアンドドロップして、新しいコードブ"
+"ロックを作成できます。*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:97
 msgid ""
@@ -5085,6 +5174,11 @@ msgid ""
 "extend the editor’s functionality using game code. See `The Godot editor is "
 "a Godot game`_ below."
 msgstr ""
+"3Dワークスペースには、2Dワークスペースほど多くのツールはありません。地形を編"
+"集したり、複雑なキャラクターをアニメートしたりするには、外部プログラムやアド"
+"オンが必要です。Godotは、ゲームコードを使用してエディタの機能を拡張するための"
+"完全なAPIを提供しています。下の `The Godot editor is a Godot game` を参照して"
+"ください。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
 msgid ""
@@ -5125,10 +5219,12 @@ msgid ""
 "This **does not affect the work you do with Godot** in any way: there’s no "
 "strings attached to the engine or anything you make with it."
 msgstr ""
+"これは、**Godotを使って行う作業には何の影響も与えません**。つまり、エンジンに"
+"は何の文字列も付いていませんし、エンジンを使って作るものもありません。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:130
 msgid "Community-driven"
-msgstr ""
+msgstr "コミュニティ主導"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:132
 msgid ""
@@ -5137,6 +5233,10 @@ msgid ""
 "drive the core updates. New features from the core developers often focus on "
 "what will benefit the most users first."
 msgstr ""
+"**Godotはそのコミュニティにより、コミュニティのために、そしてすべてのゲームク"
+"リエイターのために作られています。**コアアップデートを推進するのは、ユーザー"
+"のニーズとオープンな議論です。コア開発者が提供する新機能は、多くの場合、最も"
+"多くのユーザーにメリットをもたらすものに重点が置かれます。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
 msgid ""
@@ -5149,7 +5249,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:144
 msgid "The Godot editor is a Godot game"
-msgstr ""
+msgstr "GodotエディターはGodotのゲーム"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:146
 msgid ""
@@ -5158,6 +5258,11 @@ msgid ""
 "run game code in the editor. This means you can **use the same code** and "
 "scenes for your games, or **build plugins and extend the editor.**"
 msgstr ""
+"Godotエディタはゲームエンジン上で動作します。 エンジン独自のUIシステムを使用"
+"しているため、プロジェクトのテスト時にコードやシーンをホットリロードしたり、"
+"エディタでゲームコードを実行したりできます。つまり、**ゲームに同じコードと"
+"シーンを使用する++ことも、プラグインを構築してエディタを拡張することもできま"
+"す。**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
 msgid ""
@@ -5182,7 +5287,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:166
 msgid "Separate 2D and 3D engines"
-msgstr ""
+msgstr "2Dと3Dのエンジンを分割"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:168
 msgid ""
@@ -7846,11 +7951,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:4
 msgid "Splash screen"
-msgstr ""
+msgstr "スプラッシュ・スクリーン"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
-msgstr ""
+msgstr "チュートリアル"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
 msgid ""
@@ -7864,10 +7969,13 @@ msgid ""
 "can be placed directly in your project folder and Godot will import them "
 "automatically."
 msgstr ""
+"以下は、使用する素材のファイルです。 抽出されたファイルはあなたのプロジェクト"
+"フォルダに直接置くことができ、Godotはそれらを自動的にインポートします。"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
 msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 msgstr ""
+"ダウンロード :download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:21
 #: ../../docs/tutorials/3d/reflection_probes.rst:21
@@ -7876,13 +7984,15 @@ msgstr ""
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:16
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:53
 msgid "Setting up"
-msgstr ""
+msgstr "セットアップ"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:23
 msgid ""
 "Set the display resolution to 800x450 in Project Settings, and set up a new "
 "scene like this:"
 msgstr ""
+"Project Settingsで表示解像度を800 x 450に設定し、次のように新しいシーンを設定"
+"します:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:27
 msgid ""
@@ -7897,20 +8007,24 @@ msgid ""
 "several images for different states, but only the normal and pressed will be "
 "supplied in this example:"
 msgstr ""
+"ノード \"start\" は :ref:`TextureButton <class_TextureButton>` です。この例で"
+"は、さまざまな状態の複数のイメージを取得しますが、NormalとPressedのイメージだ"
+"けが提供されます:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:38
 msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
-msgstr ""
+msgstr "最後に、ノード \"copyright\" は :ref:`Label <class_Label>` です。"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:40
 msgid "Your final scene should look something like this."
-msgstr ""
+msgstr "最終的なシーンは次のようになります。"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:44
 msgid ""
 "Go ahead and run the project.  If you're satisfied with the results, "
 "continue to the next tutorial."
 msgstr ""
+"プロジェクトを実行します。結果に満足したら、次のチュートリアルに進みます。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:4
 msgid "Animations"
@@ -8363,7 +8477,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:4
 msgid "File system"
-msgstr ""
+msgstr "ファイルシステム"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
 msgid ""
@@ -8375,7 +8489,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
-msgstr ""
+msgstr "実装"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:17
 msgid ""
@@ -8387,6 +8501,13 @@ msgid ""
 "resources. For example, a font resource is often bundled together with the "
 "font textures."
 msgstr ""
+"ファイルシステムはディスク上にリソースを格納します。スクリプトからシーンPNGイ"
+"メージに至るまであらゆるものがエンジンのリソースとなります。ディスク上のほか"
+"のリソースを参照するプロパティーがリソースに含まれている場合は、それらのリ"
+"ソースへのパスも含まれます。リソースに組み込みのサブリソースがある場合、その"
+"リソースはバンドルされたすべてのサブリソースとともに1つのファイルに保存されま"
+"す。たとえば、フォントリソースは多くの場合、フォントテクスチャと一緒にバンド"
+"ルされています。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
 msgid ""
@@ -8401,7 +8522,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:39
 msgid "project.godot"
-msgstr ""
+msgstr "project.godotファイル"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
 msgid ""
@@ -8416,10 +8537,13 @@ msgid ""
 "ini format. Even an empty project.godot can function as a basic definition "
 "of a blank project."
 msgstr ""
+"このファイルには、win.ini形式を使用したプロジェクト構成がプレーンテキストで含"
+"まれています。空のproject.godotでも、空白のプロジェクトの基本的な定義として機"
+"能します。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:50
 msgid "Path delimiter"
-msgstr ""
+msgstr "パス区切り文字"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
 msgid ""
@@ -8428,6 +8552,10 @@ msgid ""
 "``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
 "godot``."
 msgstr ""
+"Godotでは、パスの区切り文字として ``/`` だけを使用できます。これは移植性のた"
+"めに行われます。Windowsでも、すべてのオペレーティングシステムがこれをサポート"
+"しているため、 ``c:\\project\\project.godot`` などのパスを ``c:/project/"
+"project.godot`` と入力する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:58
 #: ../../docs/tutorials/io/data_paths.rst:16
@@ -8440,6 +8568,9 @@ msgid ""
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
 "`` was created."
 msgstr ""
+"リソースにアクセスするときに、ホストOSファイルシステムのレイアウトを使用する"
+"と、面倒で移植性に欠けることがあります。この問題を解決するために、特別なパス "
+"``res://`` が作成されました。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
 msgid ""
@@ -8454,10 +8585,14 @@ msgid ""
 "phones or consoles, or running from DVD), the file system will become read-"
 "only and writing will no longer be permitted."
 msgstr ""
+"このファイルシステムは、エディタからプロジェクトをローカルで実行する場合にの"
+"み、読み取り/書き込み可能になります。エクスポートする場合、または異なるデバイ"
+"ス(スマートフォンやコンソール、DVDなど)で実行する場合、ファイルシステムは読み"
+"取り専用になり、書き込みは許可されなくなります。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:74
 msgid "User path"
-msgstr ""
+msgstr "ユーザー・パス"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
 msgid ""
@@ -8468,7 +8603,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:81
 msgid "Host file system"
-msgstr ""
+msgstr "ホストファイルシステム"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid ""
@@ -8480,7 +8615,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:89
 msgid "Drawbacks"
-msgstr ""
+msgstr "デメリット"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid ""
@@ -8490,6 +8625,10 @@ msgid ""
 "These references will have to be re-defined to point at the new asset "
 "location."
 msgstr ""
+"この単純なファイルシステム設計にはいくつかの欠点があります。最初の問題は、ア"
+"セットを移動すること（プロジェクト内でアセットの名前を変更したり、あるパスか"
+"ら別のパスにアセットを移動したりする）によりこれらのアセットへの既存の参照が"
+"失われることです。新しいアセットの場所を指すように再定義する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:96
 msgid ""
@@ -8734,7 +8873,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr ""
+msgstr "シングルトン(自動ロード)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:9
 msgid ""
@@ -8965,7 +9104,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "Differences"
-msgstr ""
+msgstr "違い"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Unity"
@@ -8983,19 +9122,19 @@ msgstr "ライセンス"
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid ""
 "Proprietary, closed, free license with revenue caps and usage restrictions"
-msgstr ""
+msgstr "収益上限と使用制限を備えた、独自のクローズドライセンス、無料ライセンス"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "MIT license, free and fully open source without any restriction"
-msgstr ""
+msgstr "MITライセンス、自由で完全にオープンなソースを制限なし"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "OS (editor)"
-msgstr ""
+msgstr "OS(エディタ)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, Linux (unofficial and unsupported)"
-msgstr ""
+msgstr "Windows、macOS、Linux(非公式およびサポートなし)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
@@ -9003,7 +9142,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "OS (export)"
-msgstr ""
+msgstr "OS(エクスポート)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**Desktop:** Windows, macOS, Linux"
@@ -9057,25 +9196,27 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid "Component/Scene (GameObject > Component)"
-msgstr ""
+msgstr "コンポーネント/シーン(ゲームオブジェクト>コンポーネント)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:35
 msgid "Prefabs"
-msgstr ""
+msgstr "プレハブ"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid ""
 ":ref:`Scene tree and nodes <doc_scenes_and_nodes>`, allowing scenes to be "
 "nested and/or inherit other scenes"
 msgstr ""
+":ref:`Scene tree and nodes <doc_scenes_and_nodes>` 、シーンをネストしたり、他"
+"のシーンを継承したりできます"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid "Third-party tools"
-msgstr ""
+msgstr "サードパーティ製ツール"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid "Visual Studio or VS Code"
-msgstr ""
+msgstr "Visual StudioまたはVisual Studio Code"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid ":ref:`External editors are possible <doc_external_editor>`"
@@ -9091,11 +9232,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:40
 msgid "Huge community"
-msgstr ""
+msgstr "巨大なコミュニティ"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:41
 msgid "Large assets store"
-msgstr ""
+msgstr "大規模なアセットストア"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:40
 msgid "Scene System"
@@ -9111,11 +9252,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:43
 msgid "Debug on Device"
-msgstr ""
+msgstr "デバイスでのデバッグ"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:50
 msgid "The editor"
-msgstr ""
+msgstr "エディタ"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:52
 msgid ""
@@ -15524,6 +15665,9 @@ msgid ""
 "that it should be executed before any use of said signals (with ``Connect`` "
 "or ``EmitSignal``)."
 msgstr ""
+"最後に、シグナルは `` AddUserSignal`` を呼び出すことで作成できますが、シグナ"
+"ルを使用する前に( `` Connect``または `` EmitSignal``を使って)実行する必要があ"
+"ることに注意してください。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
 msgid "API differences to GDScript"
@@ -16066,6 +16210,8 @@ msgid ""
 "Having well-defined and consistent coding conventions is important for every "
 "project, and Godot is no exception to this rule."
 msgstr ""
+"明確に定義された一貫したコーディング規約を持つことはすべてのプロジェクトに"
+"とって重要であり、Godotも例外ではありません。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:9
 msgid ""
@@ -16087,6 +16233,13 @@ msgid ""
 "`Framework Design Guidelines <https://docs.microsoft.com/en-us/dotnet/"
 "standard/design-guidelines/naming-guidelines>`_."
 msgstr ""
+"この記事は、標準コーディング規約やベスト・プラクティスに従う方法を網羅したガ"
+"イドではありません。ここで説明していない側面について不明な点がある場合は、 "
+"`C# Coding Conventions <https://docs.microsoft.com/en-us/dotnet/csharp/"
+"programming-guide/inside-a-program/coding-conventions>` や `Framework Design "
+"Guidelines <https://docs.microsoft.com/en-us/dotnet/standard/design-"
+"guidelines/naming-guidelines>` など、より包括的なドキュメントを参照してくださ"
+"い。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:21
 msgid "Language specification"
@@ -16170,7 +16323,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:87
 msgid "Between method, properties, and inner type declarations."
-msgstr ""
+msgstr "メソッド、プロパティ、内部型宣言の間。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:88
 msgid "At the end of each file."
@@ -16182,6 +16335,8 @@ msgid ""
 "relevance. In that case, consider inserting a blank line between the groups "
 "for easier reading."
 msgstr ""
+"フィールドと定数の宣言は、関連性に従ってグループ化できます。その場合は、読み"
+"やすくするためにグループ間に空白行を挿入することを検討してください。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
 msgid "Avoid inserting a blank line:"
@@ -16201,7 +16356,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:98
 msgid "Adjacent to another blank line."
-msgstr ""
+msgstr "別の空白行に隣接します。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:136
 msgid "Using spaces"
@@ -16213,7 +16368,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:140
 msgid "Around a binary and tertiary operator."
-msgstr ""
+msgstr "二項演算子と三次演算子の周囲。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:141
 msgid ""
@@ -16498,7 +16653,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:135
 #: ../../docs/tutorials/3d/using_gridmaps.rst:60
 msgid "Materials"
-msgstr ""
+msgstr "マテリアル"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:5
 msgid "Using existing Godot materials"
@@ -16996,7 +17151,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/index.rst:2
 msgid "Assets workflow"
-msgstr ""
+msgstr "アセット・ワークフロー"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
@@ -17162,7 +17317,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:28
 msgid "Detect 3D"
-msgstr ""
+msgstr "3Dの検出"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:30
 msgid ""
@@ -17172,6 +17327,11 @@ msgid ""
 "enabled and compression is changed to VRAM). Texture is also reimported "
 "automatically."
 msgstr ""
+"このオプションを使用すると、3Dでテクスチャ(これはデフォルトとして2D用にイン"
+"ポートされます)が使用されていることをGodotに認識させることができます。この場"
+"合、設定が変更され、テクスチャフラグが3D(ミップマップ、フィルタ、および繰り返"
+"しが有効になり、圧縮がVRAMに変更されます)によりわかりやすくなります。テクス"
+"チャも自動的に再読み込みされます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
 msgid "Compression"
@@ -17224,39 +17384,39 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Uncompressed"
-msgstr ""
+msgstr "圧縮なし"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Compress Lossless (PNG)"
-msgstr ""
+msgstr "ロスレス圧縮(PNG)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Compress Lossy (WebP)"
-msgstr ""
+msgstr "非可逆圧縮(WebP)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Compress VRAM"
-msgstr ""
+msgstr "VRAMを圧縮"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 msgid "Stored as raw pixels"
-msgstr ""
+msgstr "未加工のピクセルとして保存"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 msgid "Stored as PNG"
-msgstr ""
+msgstr "PNG形式で保存"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 msgid "Stored as WebP"
-msgstr ""
+msgstr "WebP形式で保存"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 msgid "Stored as S3TC/BC,PVRTC/ETC, depending on platform"
-msgstr ""
+msgstr "プラットフォームに応じてS3TC/BC、PVRTC/ETCとして保存"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "Size on Disk"
-msgstr ""
+msgstr "ディスク上のサイズ"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
@@ -17273,7 +17433,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "Memory Usage"
-msgstr ""
+msgstr "メモリ使用量"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|good| Small"
@@ -17281,7 +17441,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
 msgid "Performance"
-msgstr ""
+msgstr "パフォーマンス"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
@@ -17295,7 +17455,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "Quality Loss"
-msgstr ""
+msgstr "品質損失"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "|good| None"
@@ -17311,7 +17471,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "Load Time"
-msgstr ""
+msgstr "読み込み時間"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "|bad| Slow"
@@ -17319,7 +17479,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:76
 msgid "HDR Mode"
-msgstr ""
+msgstr "HDRモード"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:78
 msgid ""
@@ -17361,6 +17521,8 @@ msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
 msgstr ""
+"使用状況に応じて、イメージをテクスチャとして読み込むときに切り替えることがで"
+"きる設定が多数あります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:97
 msgid "Repeat"
@@ -17401,20 +17563,25 @@ msgid ""
 "older hardware (GLES2, mainly mobile), there are some requirements to use "
 "mipmaps:"
 msgstr ""
+"ピクセルが画面よりも小さくなると、ミップマップが始まります。これにより、テク"
+"スチャを縮小する際の粒状効果を低減するのに役立ちます。古いハードウェア "
+"(GLES2、主にモバイル) では、mipmaps を使用する要件がいくつかあります:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:114
 msgid "Texture width and height must be powers of 2"
-msgstr ""
+msgstr "テクスチャの幅と高さは 2 の力でなければなりません"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:115
 msgid "Repeat must be enabled"
-msgstr ""
+msgstr "繰り返しを有効にする必要があります"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:117
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
+"電話ゲームやアプリケーションを作成する際には、上記の注意を要し、完全な互換性"
+"を目指し、ミップマップが必要です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:119
 msgid ""
@@ -17424,7 +17591,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:122
 msgid "Anisotropic"
-msgstr ""
+msgstr "異方性"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:124
 msgid ""
@@ -17443,10 +17610,14 @@ msgid ""
 "look correct. When set to \"Detect\" mode, the texture will be marked as "
 "SRGB when used in albedo channels."
 msgstr ""
+"Godotは、3Dレンダリング時に線形色空間を使用します。アルベドまたは詳細チャネル"
+"にマップされたテクスチャは、色が正しく表示されるために、このオプションをオン"
+"にする必要があります。 \"Detect\" モードに設定すると、アルベド チャネルで使用"
+"するとテクスチャがSRGBとしてマークされます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:133
 msgid "Process"
-msgstr ""
+msgstr "プロセス"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:135
 msgid ""
@@ -17455,7 +17626,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:138
 msgid "Fix Alpha Border"
-msgstr ""
+msgstr "アルファ境界線を修正する"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:140
 msgid ""
@@ -17468,11 +17639,11 @@ msgstr ""
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
-msgstr ""
+msgstr "特定の値が必要ない限り、既定のままにしておくことをお勧めします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:148
 msgid "Premultiplied Alpha"
-msgstr ""
+msgstr "乗算済みアルファ"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid ""
@@ -17481,6 +17652,10 @@ msgid ""
 "mind that a material will need to be created that uses the PREMULT ALPHA "
 "blend mode on canvas items that need it."
 msgstr ""
+"暗くなった境界線を修正する別の方法は、乗算済みアルファを使用することです。 こ"
+"のオプションを有効にすると、テクスチャはこのフォーマットに変換されます。 必要"
+"なキャンバスアイテムにPREMULT ALPHAブレンドモードを使用するマテリアルを作成す"
+"る必要があることに注意してください。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:154
 msgid "HDR as sRGB"
@@ -17636,11 +17811,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
 msgid "Importing translations"
-msgstr ""
+msgstr "翻訳のインポート"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:7
 msgid "Games and internationalization"
-msgstr ""
+msgstr "ゲームと国際化"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
 msgid ""
@@ -17648,6 +17823,9 @@ msgid ""
 "profits™, nowadays games are released in several languages. To solve this, "
 "internationalized text must be supported in any modern game engine."
 msgstr ""
+"世界はさまざまな市場や文化に満ちており、収益を最大化するために、今日ではゲー"
+"ムは複数の言語でリリースされています。 これを解決するために、国際化されたテキ"
+"ストはどんな現代のゲームエンジンでもサポートされなければなりません。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:14
 msgid ""
@@ -17656,6 +17834,11 @@ msgid ""
 "use several orders of magnitude more text than applications, so they must "
 "support efficient methods for dealing with loads of multilingual text."
 msgstr ""
+"通常のデスクトップアプリケーションまたはモバイルアプリケーションでは、国際化"
+"されたテキストは通常、リソースファイル(またはGNUのもののための.poファイル)に"
+"配置されます。ただし、ゲームはアプリケーションよりも複数のテキストを使用でき"
+"るため、多言語テキストの負荷を処理するための効率的なメソッドをサポートする必"
+"要があります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
 msgid ""
@@ -17666,6 +17849,11 @@ msgid ""
 "if a game is released first in English, later in other languages, but a "
 "complete nightmare if working with many languages at the same time."
 msgstr ""
+"多言語ゲームとアプリケーションを生成するには、2つの方法があります。どちらも"
+"key:valueシステムに基づいています。1つ目は、1つの言語をキー(通常は英語)として"
+"使用し、2つ目は特定の識別子を使用することです。最初のアプローチは、ゲームが最"
+"初に英語でリリースされ、後で他の言語でリリースされた場合、開発が容易になりま"
+"すが、同時に多くの言語で作業する場合は完全な悪夢です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:28
 msgid ""
@@ -17674,6 +17862,10 @@ msgid ""
 "other languages. The unique ID can be a number, a string, or a string with a "
 "number (it's just a unique string anyway)."
 msgstr ""
+"一般に、ゲームは2番目のアプローチを使用し、各文字列に一意のIDが使用されます。"
+"これにより、他の言語に翻訳されている間にテキストを修正できます。一意のIDに"
+"は、数値、文字列、または数値を持つ文字列(とにかく一意の文字列にすぎません)を"
+"指定できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
 msgid ""
@@ -17684,7 +17876,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 msgid "Translation format"
-msgstr ""
+msgstr "翻訳形式"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
 msgid ""
@@ -17695,6 +17887,12 @@ msgid ""
 "arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
 "as follows:"
 msgstr ""
+"画像を完成させ、翻訳を効率的にサポートするために、GodotにはCSVファイルを読み"
+"取ることができる特別なインポーターがあります。すべてのスプレッドシートエディ"
+"タ(Libreoffice、Microsoft Office、Googleドキュメントなど)は、この形式にエクス"
+"ポートすることができるので、唯一の要件は、ファイルが特別な配置を持っているこ"
+"とです。CSV ファイルは UTF-8エンコーディングに保存し、次のようにフォーマット"
+"する必要があります:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid "<lang1>"
@@ -17734,6 +17932,10 @@ msgid ""
 "be unique and represent a string universally (they are usually in uppercase, "
 "to differentiate from other strings). Here's an example:"
 msgstr ""
+"\"lang\" タグは、エンジンでサポートされている :ref:`valid locales "
+"<doc_locales>` のいずれかである必要があります。\"KEY\" タグは一意で、文字列を"
+"普遍的に表す必要があります (通常は大文字で、他の文字列と区別します)。次に例を"
+"示します:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 #: ../../docs/tutorials/i18n/locales.rst:352
@@ -17812,6 +18014,8 @@ msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
+"GodotはデフォルトでCSVファイルを翻訳として扱います。インポートし、その横に 1"
+"つ以上の圧縮翻訳リソースファイルを生成します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid ""
@@ -17819,6 +18023,9 @@ msgid ""
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
+"読み込むと、project.godot(またはプロジェクト設定)で指定された、ゲームの実行時"
+"に読み込む翻訳の一覧にも翻訳が追加されます。Godotでは、実行時に翻訳を読み込"
+"み、削除することもできます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:4
 msgid "Importing 3D scenes"
@@ -17838,10 +18045,12 @@ msgid ""
 "Godot works with *scenes*. This means that the entire scene being worked on "
 "in your favorite 3D DCC will be transferred as close as possible."
 msgstr ""
+"Godotは*シーン*で動作します。つまり、お気に入りの 3D DCC で作業しているシーン"
+"全体が、可能な限り近くに転送されます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
 msgid "Godot supports the following 3D *scene file fomats*:"
-msgstr ""
+msgstr "Godotは、次の3D *scene file fomats*をサポートしています:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
 msgid "DAE (COLLADA), which is currently the most mature workflow."
@@ -17852,18 +18061,25 @@ msgid ""
 "GLTF 2.0. Both text and binary formats are supported. Godot has full support "
 "for it, but the format is new and gaining traction."
 msgstr ""
+"GLTF 2.0。 テキスト形式とバイナリ形式の両方がサポートされています。 Godotはそ"
+"れを完全にサポートしていますが、そのフォーマットは新しく、普及しつつありま"
+"す。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
 msgid ""
 "OBJ (Wavefront) formats. It is also fully supported, but pretty limited (no "
 "support for pivots, skeletons, etc)."
 msgstr ""
+"OBJ(Wavefront)フォーマット。これも完全にサポートされていますが、かなり制限さ"
+"れています(ピボット、スケルトンなどのサポートはありません)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:20
 msgid ""
 "Just copy the scene file together with the texture to the project "
 "repository, and Godot will do a full import."
 msgstr ""
+"シーンファイルとテクスチャをプロジェクト・リポジトリにコピーするだけで、Godot"
+"は完全なインポートを行います。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:22
 msgid ""
@@ -17874,7 +18090,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:26
 msgid "Why not FBX?"
-msgstr ""
+msgstr "なぜFBXではないのですか?"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:28
 msgid ""
@@ -17889,10 +18105,11 @@ msgid ""
 "The plan is, sometime in the future, to offer a binary plug-in using "
 "GDNative."
 msgstr ""
+"計画は、将来的には、GDNativeを使用してバイナリプラグインを提供することです。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:36
 msgid "Exporting DAE files from Maya and 3DS Max"
-msgstr ""
+msgstr "Mayaおよび3DS MaxからのDAEファイルのエクスポート"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:38
 msgid ""
@@ -17905,7 +18122,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:46
 msgid "Exporting DAE files from Blender"
-msgstr ""
+msgstr "BlenderからDAEファイルをエクスポートする"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:48
 msgid ""
@@ -17918,6 +18135,8 @@ msgid ""
 "Godot provides a `Python Plugin <https://github.com/godotengine/collada-"
 "exporter>`__ that will do a much better job of exporting the scenes."
 msgstr ""
+"Godot は `Python Plugin <https://github.com/godotengine/collada-exporter>` を"
+"提供しています。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:56
 msgid "Exporting ESCN files from Blender"
@@ -17939,31 +18158,40 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:67
 msgid "Import workflows"
-msgstr ""
+msgstr "ワークフローのインポート"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:69
 msgid ""
 "Godot scene importer allows different workflows regarding how data is "
 "imported. Depending on many options, it is possible to import a scene with:"
 msgstr ""
+"Godot シーンインポーターでは、データのインポート方法に関するさまざまなワーク"
+"フローを使用できます。多くのオプションに応じて、次の方法でシーンを読み込む場"
+"合があります:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:72
 msgid ""
 "External materials (default): Where each material is saved to a file "
 "resource. Modifications to them are kept."
 msgstr ""
+"外部マテリアル (デフォルト): 各マテリアルがファイル リソースに保存される場"
+"所。それらに対する変更は保持されます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:73
 msgid ""
 "External meshes: Where each mesh is saved to a different file. Many users "
 "prefer to deal with meshes directly."
 msgstr ""
+"外部メッシュ: 各メッシュが別のファイルに保存される場所。多くのユーザーは、直"
+"接メッシュを扱うことを好みます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:74
 msgid ""
 "External animations: Allowing saved animations to be modified and merged "
 "when sources change."
 msgstr ""
+"外部アニメーション: ソースが変更されたときに、保存したアニメーションを変更お"
+"よびマージできるようにします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:75
 msgid ""
@@ -17980,6 +18208,8 @@ msgid ""
 "As different developers have different needs, this import process is highly "
 "customizable."
 msgstr ""
+"開発者によってニーズが異なるように、このインポートプロセスは高度にカスタマイ"
+"ズ可能です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:83
 msgid "Import options"
@@ -17987,29 +18217,31 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
 msgid "The importer has several options, which will be discussed below:"
-msgstr ""
+msgstr "インポーターには、以下で説明するいくつかのオプションがあります:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:93
 msgid "Root Type"
-msgstr ""
+msgstr "ルートタイプ"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
 "this can be modified."
 msgstr ""
+"デフォルトでは、読み込まれたシーンのルート ノードのタイプは \"Spatial\" です"
+"が、これは変更できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:98
 msgid "Root Name"
-msgstr ""
+msgstr "ルート名"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:100
 msgid "Allows setting a specific name to the generated root node."
-msgstr ""
+msgstr "生成されたルート ノードに特定の名前を設定できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:103
 msgid "Custom Script"
-msgstr ""
+msgstr "カスタム・スクリプト"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:105
 msgid ""
@@ -18017,6 +18249,8 @@ msgid ""
 "This is great for post processing, changing materials, doing funny stuff "
 "with the geometry etc."
 msgstr ""
+"インポート後にシーン全体を処理する特別なスクリプトを用意できます。これは、後"
+"処理、材料の変更、ジオメトリなどで面白いものを行うための素晴らしいです。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
 msgid "Create a script like this:"
@@ -18034,7 +18268,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:199
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:239
 msgid "Storage"
-msgstr ""
+msgstr "ストレージ"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:127
 msgid ""
@@ -18042,6 +18276,9 @@ msgid ""
 "nodes below the root will each be a separate scene and instanced into the "
 "imported one."
 msgstr ""
+"デフォルトでは、Godot は 1 つのシーンを読み取りします。このオプションを使用す"
+"ると、ルートの下にあるノードがそれぞれ別々のシーンになり、インポートされた"
+"シーンにインスタンス化されることを指定できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:131
 msgid ""
@@ -18051,13 +18288,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:138
 msgid "Location"
-msgstr ""
+msgstr "場所"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:140
 msgid ""
 "Godot supports materials in meshes or nodes. By default, materials will be "
 "put on each node."
 msgstr ""
+"Godot は、メッシュまたはノード内のマテリアルをサポートします。デフォルトで"
+"は、マテリアルは各ノードに配置されます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:146
 msgid ""
@@ -18066,12 +18305,17 @@ msgid ""
 "because most 3D DCCs don't have the same material options as those present "
 "in Godot."
 msgstr ""
+"マテリアルは、シーン内または外部ファイルに格納できます。デフォルトでは、外部"
+"ファイルに保存されるため、編集が可能です。これは、ほとんどの3D DDC にはGodot"
+"のマテリアル・オプションと同じであるためです。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:150
 msgid ""
 "When materials are built-in, they will be lost each time the source scene is "
 "modified and re-imported."
 msgstr ""
+"マテリアルが組み込まれていると、ソース シーンが変更され、再インポートされるた"
+"びにマテリアルが失われます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:154
 msgid "Keep On Reimport"
@@ -18083,99 +18327,113 @@ msgid ""
 "edited ones and ignore the ones coming from the source scene. This option is "
 "only present if materials are saved as files."
 msgstr ""
+"Godotフィーチャーを使用するようにマテリアルを編集すると、インポーターは編集し"
+"たフィーチャーを保持し、ソース シーンから送信されたものを無視します。このオプ"
+"ションは、マテリアルがファイルとして保存されている場合にのみ存在します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:161
 msgid "Meshes"
-msgstr ""
+msgstr "メッシュ"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:164
 msgid "Compress"
-msgstr ""
+msgstr "圧縮"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:166
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
 "order to save space."
 msgstr ""
+"メッシュは、スペースを節約するためにメッシュの複数の側面に対してあまり正確で"
+"ない数値を使用するようにします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:179
 msgid "These are:"
-msgstr ""
+msgstr "これらは："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:170
 msgid ""
 "Transform Matrix (Location, rotation, and scale)             : 32-bit float "
 "to 16-bit signed integer."
 msgstr ""
+"変換マトリックス(位置、回転、およびスケール):32ビット浮動小数点数を16ビット符"
+"号付き整数にします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:171
 msgid ""
 "Vertices                                                     : 32-bit float "
 "to 16-bit signed integer."
-msgstr ""
+msgstr "頂点:32ビット浮動小数点数から16ビット符号付き整数にします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:172
 msgid ""
 "Normals                                                      : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "法線:32ビット浮動小数点数から32ビット符号なし整数にします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:173
 msgid ""
 "Tangents                                                     : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "接線:32ビット浮動小数点数から32ビット符号なし整数にします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:174
 msgid ""
 "Vertex Colors                                                : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr ""
+"頂点の色:32 ビット浮動小数点数から符号なしの整数に32 ビット浮動小数点数にしま"
+"す。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:175
 msgid ""
 "UV                                                           : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "UV:32ビット浮動小数点数から32ビット符号なし整数にします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:176
 msgid ""
 "UV2                                                          : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "UV2:32ビット浮動小数点数から32ビット符号なし整数にします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:177
 msgid ""
 "Vertex weights                                               : 32-bit float "
 "to 16-bit unsigned integer."
-msgstr ""
+msgstr "頂点ウェイト:32ビット浮動小数点数を16ビット符号なし整数にします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:178
 msgid ""
 "Armature bones                                               : 32-bit float "
 "to 16-bit unsigned integer."
 msgstr ""
+"アマチュア・ボーン: 32ビット浮動小数点数を16ビット符号なし整数にします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:179
 msgid ""
 "Array index                                                  : 32-bit or 16-"
 "bit unsigned integer based on how many elements there are."
-msgstr ""
+msgstr "配列インデックス:要素数に応じた32ビットまたは16ビットの符号なし整数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
 msgid "Additional info:"
-msgstr ""
+msgstr "追加情報:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:182
 msgid ""
 "UV2 = The second UV channel for detail textures and baked lightmap textures."
 msgstr ""
+"UV2 = 詳細テクスチャとベイク処理されたライトマップテクスチャの2番目のUVチャネ"
+"ル。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
 msgid ""
 "Array index = An array of numbers that number each element of the arrays "
 "above; i.e. they number the vertices and normals."
 msgstr ""
+"配列インデックス = 上記の配列の各要素に番号を付す数値の配列。つまり、頂点と法"
+"線に番号を付けます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:185
 msgid ""
@@ -18188,7 +18446,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:191
 msgid "Ensure Tangents"
-msgstr ""
+msgstr "接線を確認する"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:193
 msgid ""
@@ -18204,22 +18462,28 @@ msgid ""
 "does not have much practical use unless one wants to build objects with them "
 "directly."
 msgstr ""
+"メッシュは、組み込みではなく別々のファイル (リソース) に格納できます。オブ"
+"ジェクトを直接ビルドする場合を除き、これはあまり実用的ではありません。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:204
 msgid ""
 "This option is provided to help those who prefer working directly with "
 "meshes instead of scenes."
 msgstr ""
+"このオプションは、シーンの代わりに直接メッシュを操作することを好む人を支援す"
+"るために提供されています。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:208
 msgid "External Files"
-msgstr ""
+msgstr "外部ファイル"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:210
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
 "with the name of the scene."
 msgstr ""
+"生成されたメッシュとマテリアルは、必要に応じてシーンの名前を持つサブディレク"
+"トリに格納できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:214
 #, fuzzy
@@ -18236,7 +18500,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
 msgid "Import of animations is enabled by default."
-msgstr ""
+msgstr "アニメーションのインポートはデフォルトで有効になっています。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:226
 msgid "FPS"
@@ -18252,7 +18516,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:233
 msgid "Filter Script"
-msgstr ""
+msgstr "フィルタ・スクリプト"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:235
 msgid ""
@@ -18260,6 +18524,8 @@ msgid ""
 "which tracks from which animations should be kept. (@TODO this needs "
 "documentation)"
 msgstr ""
+"特殊な構文でフィルタスクリプトを指定して、どのトラックからアニメーションを保"
+"持するかを決定できます。(@TODOドキュメントが必要です)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:241
 msgid ""
@@ -18267,10 +18533,13 @@ msgid ""
 "a file instead. This allows adding custom tracks to the animations and "
 "keeping them after a reimport."
 msgstr ""
+"デフォルトでは、アニメーションは組み込みとして保存されます。代わりにファイル"
+"に保存できます。これにより、アニメーションにカスタムトラックを追加し、再読み"
+"込み後も保持できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:245
 msgid "Optimizer"
-msgstr ""
+msgstr "オプティマイザー"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:247
 msgid ""
@@ -18281,7 +18550,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:251
 msgid "Clips"
-msgstr ""
+msgstr "クリップ"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:253
 msgid ""
@@ -18311,21 +18580,21 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:267
 msgid "In inherited scenes, the only limitations for modifications are:"
-msgstr ""
+msgstr "継承されたシーンでは、変更の唯一の制限は次のとおりです:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:269
 msgid "Nodes can't be removed (but can be added anywhere)."
-msgstr ""
+msgstr "ノードは削除できません(ただし、どこにでも追加できます)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:270
 msgid ""
 "Sub-Resources can't be edited (save them externally as described above for "
 "this)"
-msgstr ""
+msgstr "サブリソースは編集できません(このために上記のように外部に保存します)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:272
 msgid "Other than that, everything is allowed!"
-msgstr ""
+msgstr "それ以外は、すべてが許可されています！"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:275
 msgid "Import hints"
@@ -18336,6 +18605,8 @@ msgid ""
 "Many times, when editing a scene, there are common tasks that need to be "
 "done after exporting:"
 msgstr ""
+"多くの場合、シーンを編集する場合、エクスポート後に実行する必要がある一般的な"
+"タスクがあります:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:279
 msgid "Adding collision detection to objects"
@@ -18343,13 +18614,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:280
 msgid "Setting objects as navigation meshes"
-msgstr ""
+msgstr "オブジェクトをナビゲーションメッシュとして設定する"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:281
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)"
 msgstr ""
+"ゲーム エンジンで使用されていないノードの削除 (モデリングに使用される特定のラ"
+"イトなど)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:283
 msgid ""
@@ -18357,10 +18630,13 @@ msgid ""
 "the names of the objects in your 3D modelling software. When imported, Godot "
 "will detect them and perform actions automatically:"
 msgstr ""
+"このワークフローを簡略化するために、Godotには3Dモデリング・ソフトウェアのオブ"
+"ジェクトの名前に追加できるサフィックスがいくつかあります。インポートすると、"
+"Godotはそれらを検出し、自動的にアクションを実行します:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:288
 msgid "Remove nodes (-noimp)"
-msgstr ""
+msgstr "ノードの削除 (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:290
 msgid ""
@@ -18370,19 +18646,23 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:294
 msgid "Create collisions (-col, -colonly, -convcolonly)"
-msgstr ""
+msgstr "衝突の作成 (-col、-colonly、-convcolonly)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:296
 msgid ""
 "Option \"-col\" will work only for Mesh nodes. If it is detected, a child "
 "static collision node will be added, using the same geometry as the mesh."
 msgstr ""
+"オプション \"-col\" はメッシュノードに対してのみ機能します。検出されると、"
+"メッシュと同じジオメトリを使用して、子静的衝突ノードが追加されます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:299
 msgid ""
 "However, it is often the case that the visual geometry is too complex or too "
 "un-smooth for collisions, which ends up not working well."
 msgstr ""
+"ただし、視覚的ジオメトリが複雑すぎたり、衝突に対してスムーズでなかったりし"
+"て、うまく機能しないことがよくあります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:302
 msgid ""
@@ -18390,6 +18670,9 @@ msgid ""
 "upon import and create a :ref:`class_staticbody` collision instead. This "
 "helps the visual mesh and actual collision to be separated."
 msgstr ""
+"これを解決するには、インポート時にメッシュを削除し、代わりに :ref:"
+"`class_staticbody` の衝突を作成する \"-colonly\" 修飾子が存在します。これによ"
+"り、ビジュアルメッシュと実際の衝突を分離できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:306
 msgid ""
@@ -18438,6 +18721,8 @@ msgid ""
 "A mesh node with this suffix will be converted to a navigation mesh. "
 "Original Mesh node will be removed."
 msgstr ""
+"このサフィックスを持つメッシュノードは、ナビゲーションメッシュに変換されま"
+"す。元のメッシュノードが削除されます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:330
 msgid "Create a VehicleBody (-vehicle)"
@@ -18461,11 +18746,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:340
 msgid "Rigid Body (-rigid)"
-msgstr ""
+msgstr "リジッドボディ(-rigid)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:342
 msgid "Creates a rigid body from this mesh."
-msgstr ""
+msgstr "このメッシュからリジッドボディを作成します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:345
 msgid "Animation loop (-loop, -cycle)"
@@ -23513,6 +23798,8 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:4
 msgid "Particle systems (2D)"
 msgstr ""
+"パーティクル・システム(2D\n"
+")"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:9
 msgid ""
@@ -23520,6 +23807,9 @@ msgid ""
 "Particle systems are used to simulate complex physical effects, such as "
 "sparks, fire, magic particles, smoke, mist, etc."
 msgstr ""
+"単純な(しかしほとんどの用途には十分に柔軟な)パーティクル・システムが提供され"
+"ています。パーティクル・システムは、火花、火、魔法の粒子、煙、霧などの複雑な"
+"物理的効果をシミュレートするために使用されます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:13
 msgid ""
@@ -23530,6 +23820,12 @@ msgid ""
 "essence, creating a particle system means setting base physics parameters "
 "and then adding randomness to them."
 msgstr ""
+"その考えは、 \"particle\" が一定の間隔でそして一定の寿命で放出されるというこ"
+"とです。 その寿命の間、すべての粒子は同じ基本的なふるまいを持ちます。 各パー"
+"ティクルを他のパーティクルとは異なるものにし、より有機的に見えるのは、各パラ"
+"メータに関連付けられた \"randomness\" です。基本的に、パーティクルシステムを"
+"作成することは、基本物理パラメータを設定してから、それらにランダム性を追加す"
+"ることを意味します。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:21
 msgid "Particles2D"
@@ -23554,6 +23850,9 @@ msgid ""
 "in your inspector panel. Click on the box next to ``Material``, and from the "
 "dropdown menu select ``New ParticlesMaterial``."
 msgstr ""
+"パーティクル・ノードにプロセス・マテリアルを追加するには、インスペクタパネル"
+"の ``Process Material`` に移動します。 ``Material`` の横のボックスをクリック"
+"し、ドロップダウン・メニューから ``New ParticlesMaterial`` を選択します。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:38
 msgid "Your Particles2D node should now be emitting white points downward."
@@ -23572,7 +23871,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:53
 msgid "Time parameters"
-msgstr ""
+msgstr "時間パラメータ"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:56
 msgid "Lifetime"
@@ -23684,6 +23983,8 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:129
 msgid "Drawing parameters"
 msgstr ""
+"描画\n"
+"パラメータ"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:132
 msgid "Visibility Rect"
@@ -23973,7 +24274,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D movement overview"
-msgstr ""
+msgstr "2D移動の概要"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:9
 msgid ""
@@ -24014,7 +24315,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:29
 msgid "8-way movement"
-msgstr ""
+msgstr "8方向移動"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid ""
@@ -24023,10 +24324,13 @@ msgid ""
 "way movement\" comes from the fact that the player can move diagonally by "
 "pressing two keys at the same time."
 msgstr ""
+"このシナリオでは、ユーザが8方向キー(上/左/下/右またはW/A/S/D)を押して、選択し"
+"た方向に移動するようにします。「8方向移動」という名称は、2つのキーを同時に押"
+"すことでプレイヤーが斜めに移動できることに由来しています。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:37
 msgid "Add a script to the kinematic body and add the following code:"
-msgstr ""
+msgstr "キネマティックボディにスクリプトを追加して、次のコードを追加します:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:101
 msgid ""
@@ -24035,12 +24339,17 @@ msgid ""
 "opposite keys cancel each other out, but will also result in diagonal "
 "movement being faster due to the two directions being added together."
 msgstr ""
+"``get_input()`` 関数では、4つのキーイベントをチェックし、それらを合計して速度"
+"ベクトルを取得します。これには、2つの反対方向のキーが互いに相殺するという利点"
+"がありますが、2つの方向が加算されるため、斜めの移動が速くなります。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:106
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
 msgstr ""
+"速度を*正規化*した場合、つまり速度の*長さ*を ``1`` に設定し、希望の速度で乗算"
+"した場合、これを防ぐことができます。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:109
 msgid ""
@@ -24050,7 +24359,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:113
 msgid "Rotation + movement"
-msgstr ""
+msgstr "回転+移動"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:115
 msgid ""
@@ -24059,6 +24368,9 @@ msgid ""
 "the character, while up/down moves it forward or backward in whatever "
 "direction it's facing."
 msgstr ""
+"このタイプの動きは、昔ながらのアーケードゲームの仕組みに似ているため、 "
+"\"Asteroids-style\" と呼ばれることもあります。左/右を押すとキャラクタが回転"
+"し、上/下を押すとキャラクタの向きに関係なく前後に移動します。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:190
 msgid ""
@@ -24067,6 +24379,9 @@ msgid ""
 "rotation. The rotation is applied directly to the body's ``rotation`` "
 "property."
 msgstr ""
+"ここでは、回転方向と速度を追跡するために2つの新しい変数を追加しました。 この"
+"場合も、両方のキーを同時に押すとキャンセルされ、回転しなくなります。回転は、"
+"ボディの ``rotation`` プロパティに直接適用されます。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:194
 msgid ""
@@ -24078,7 +24393,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:200
 msgid "Rotation + movement (mouse)"
-msgstr ""
+msgstr "回転+移動(マウス)"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:202
 msgid ""
@@ -24087,6 +24402,9 @@ msgid ""
 "character will always \"look at\" the mouse pointer. The forward/back inputs "
 "remain the same, however."
 msgstr ""
+"この動作スタイルは、前の動作スタイルのバリエーションです。 今回は、キーボード"
+"の代わりにマウスの位置によって方向が設定されます。 キャラクタは常にマウスポイ"
+"ンタを \"見ます\" 。ただし、フォワード/バック入力は同じままです。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:261
 msgid ""
@@ -24094,16 +24412,21 @@ msgid ""
 "point the player towards a given position. Without this function, you could "
 "get the same effect by setting the angle like this:"
 msgstr ""
+"ここでは、 :ref:`Node2D <class_Node2D>` ``look_at()`` メソッドを使用して、プ"
+"レイヤーを特定の位置に向けます。この関数を使用しない場合は、次のように角度を"
+"設定しても同じ効果が得られます:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:276
 msgid "Click-and-move"
-msgstr ""
+msgstr "クリックと移動"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:278
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
 msgstr ""
+"この最後の例では、マウスのみを使用してキャラクタを制御します。画面上でクリッ"
+"クすると、プレイヤーが目的の場所に移動します。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:335
 msgid ""
@@ -24112,18 +24435,25 @@ msgid ""
 "slightly past the position and tries to move back, only to move too far and "
 "repeat."
 msgstr ""
+"移動前に ``length()`` のチェックを行います。このテストを行わないと、ボディは"
+"ターゲット位置に到達したときに \"ジッタ\" 、その位置をわずかに超えて移動し、"
+"後ろに戻ろうとしますが、動きすぎて繰り返します。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:340
 msgid ""
 "Uncommenting the ``rotation`` line will also turn the body to point in its "
 "direction of motion if you prefer."
 msgstr ""
+"``rotation`` 線のコメントを解除すると、必要に応じてボディが移動方向を指すよう"
+"になります。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:343
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
 msgstr ""
+"このテクニックは、 \"following\" キャラクタの基礎としても使用できます。"
+"``target`` 位置には、移動先の任意のオブジェクトの位置を指定できます。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:349
 msgid ""
@@ -24131,16 +24461,20 @@ msgid ""
 "projects. Feel free to use them and experiment with them to see what you can "
 "make."
 msgstr ""
+"これらのコードサンプルは、独自のプロジェクトの開始点として便利です。ご自由に"
+"使って、どんなものが作れるか試してみてください。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:352
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"
 msgstr ""
+"このサンプルプロジェクトはこちらからダウンロードできます: :download:"
+"`2D_movement_demo.zip <files/2D_movement_demo.zip>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:4
 msgid "2D lights and shadows"
-msgstr ""
+msgstr "2Dライトとシャドウ"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:9
 msgid ""
@@ -24159,6 +24493,11 @@ msgid ""
 "downloaded from the Project Manager. Launch Godot and in the top bar select "
 "\"Templates\" and search for \"2D Lights and Shadows Demo\"."
 msgstr ""
+"このチュートリアルのすべてのリソースは、githubの `official demo repository "
+"<https://github.com/godotengine/godot-demo-projects>` にあります。始める前に"
+"ダウンロードすることをお勧めします。または、プロジェクトマネージャからダウン"
+"ロードすることもできます。 Godotを起動し、トップバーで \"Templates\" を選択し"
+"て \"2D Lights and Shadows Demo\" を検索してください。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:24
 msgid ""
@@ -24166,6 +24505,9 @@ msgid ""
 "casters, and one for the background. I've included links to them all here if "
 "you want to download them separately from the demo."
 msgstr ""
+"このデモでは、ライトに2つ、シャドウキャスタに1つ、バックグラウンドに1つ、合計"
+"4つのテクスチャを使用します。デモとは別にダウンロードしたい人向けにここにリン"
+"クを貼っておきます。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:28
 msgid ""
@@ -24174,6 +24516,9 @@ msgid ""
 "used in the demo. You do not necessarily need a background, but we use one "
 "for the demo."
 msgstr ""
+"最初はデモで使用されている背景画像 ( `bg.png <https://raw.githubusercontent."
+"com/godotengine/godot-demo-projects/master/2d/lights_and_shadows/bg.png>` )で"
+"す。 背景は必ずしも必要ではありませんが、デモ用に使用しています。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:31
 msgid ""
@@ -24182,6 +24527,10 @@ msgid ""
 "lights_and_shadows/caster.png>`_) to use as our shadow caster object. For a "
 "top down game this could be a wall or any other object that casts a shadow."
 msgstr ""
+"二つ目は私たちのシャドーキャスターオブジェクトとして使うための普通の黒いイ"
+"メージ( `caster.png <https://raw.githubusercontent.com/godotengine/godot-"
+"demo-projects/master/2d/lights_and_shadows/caster.png>` )です。トップダウン"
+"ゲームの場合、これは壁や影を落とすその他のオブジェクトです。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:35
 msgid ""
@@ -24192,6 +24541,11 @@ msgid ""
 "1024x1024 pixels, so you should use it to cover 1024x1024 pixels in your "
 "game."
 msgstr ""
+"次はライトそのものです( `light.png <https://raw.githubusercontent.com/"
+"godotengine/godot-demo-projects/master/2d/lights_and_shadows/light.png>` )。 "
+"リンクをクリックすると、その大きさがわかります。ライトに使用する画像は、ライ"
+"トがカバーする領域をカバーする必要があります。この画像は1024x1024ピクセルです"
+"ので、ゲーム内で1024x1024ピクセルをカバーするために使用してください。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:40
 msgid ""
@@ -24201,10 +24555,14 @@ msgid ""
 "light is and the larger light image to show the effect of the light upon the "
 "rest of the scene."
 msgstr ""
+"最後に、スポットライト画像( `spot.png <https://raw.githubusercontent.com/"
+"godotengine/godot-demo-projects/master/2d/lights_and_shadows/spot.png>` )があ"
+"ります。 デモは、光がどこにあるかを示すためにブロブを使用し、シーンの残りの部"
+"分に対する光の影響を示すためにより大きい光イメージを使用します。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:52
 msgid "The demo uses four different nodes:"
-msgstr ""
+msgstr "このデモでは、次の4つの異なるノードを使用します:"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:49
 msgid ":ref:`CanvasModulate <class_CanvasModulate>`"
@@ -24226,12 +24584,16 @@ msgstr ""
 msgid ""
 ":ref:`CanvasModulate<class_CanvasModulate>` is used to darken the scene."
 msgstr ""
+":ref:`CanvasModulate<class_CanvasModulate>` は、シーンを暗くするために使用し"
+"ます。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:56
 msgid ""
 ":ref:`Sprites <class_Sprite>` are used to display the textures for the light "
 "blobs, the background, and for the shadow casters."
 msgstr ""
+":ref:`Sprites <class_Sprite>` は、ライトブロブ、バックグラウンド、およびシャ"
+"ドウキャスタのテクスチャを表示するために使用されます。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:59
 msgid ""
@@ -24240,6 +24602,10 @@ msgid ""
 "to simulate lighting. But it can be used in other ways, for example masking "
 "out parts of the scene."
 msgstr ""
+":ref:`Light2Ds <class_Light2D>` はシーンのライティングに使用されます。ライト"
+"は通常、シーンの残りの部分に選択したテクスチャを追加してライトをシミュレート"
+"します。ただし、シーンの一部をマスキングするなど、他の方法で使用することもで"
+"きます。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:63
 msgid ""
@@ -24248,6 +24614,10 @@ msgid ""
 "covered by the :ref:`Light2D <class_Light2D>` and their direction is based "
 "on the center of the :ref:`Light <class_Light2D>`."
 msgstr ""
+":ref:`LightOccluder2Ds <class_LightOccluder2D>` は、シーンのどの部分がシャド"
+"ウを投影するかをシェーダに伝えるために使用されます。シャドウは :ref:`Light2D "
+"<class_Light2D>` で覆われた領域にのみ表示され、その方向は :ref:`Light "
+"<class_Light2D>` の中心に基づいています。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:70
 msgid ""
@@ -24255,6 +24625,8 @@ msgid ""
 "Texture. They use additive blending to add the color of their texture to the "
 "scene."
 msgstr ""
+":ref:`Lights <class_Light2D>` はそれぞれのテクスチャの全範囲をカバーします。"
+"加算ブレンドを使用して、シーンにテクスチャのカラーを追加します。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:75
 msgid ""
@@ -24267,12 +24639,16 @@ msgid ""
 "``Add`` adds the color of the light texture to the scene. It brightens the "
 "area under the light."
 msgstr ""
+"``Add`` を選択すると、ライトテクスチャのカラーがシーンに追加されます。ライト"
+"の下の領域を明るくします。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:79
 msgid ""
 "``Sub`` subtracts the color of the light from the scene. It darkens the area "
 "under the light."
 msgstr ""
+"``Sub`` を選択すると、シーンからライトのカラーが差し引かれます。光の下の部分"
+"が暗くなります。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:81
 msgid ""
@@ -24280,12 +24656,16 @@ msgid ""
 "resulting brightness is halfway between the color of the light and the color "
 "underneath."
 msgstr ""
+"``Mix`` は、ライトのカラーと下にあるシーンをミックスします。結果として生じる"
+"明るさは、ライトのカラーとその下のカラーの中間になります。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:84
 msgid ""
 "``Mask`` is used to mask out areas that are covered by the light. Masked out "
 "areas are hidden or revealed based on the color of the light."
 msgstr ""
+"``Mask`` は、ライトで覆われた領域をマスクするために使用します。マスクされた領"
+"域は、ライトのカラーに基づいて非表示または表示されます。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:87
 msgid ""
@@ -24295,22 +24675,31 @@ msgid ""
 "light source. A child :ref:`Sprite <class_Sprite>` is not necessary to make "
 "a :ref:`Light <class_Light2D>` work."
 msgstr ""
+"デモでは、ライトには :ref:`Light <class_Light2D>` 自体(ライトの効果)と、光源"
+"の位置を示すイメージである :ref:`Sprite <class_Sprite>` ブロブの2つのコンポー"
+"ネントがあります。 :ref:`Light <class_Light2D>` を機能させるのに子の :ref:"
+"`Sprite <class_Sprite>` は必要ありません。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:95
 msgid "Shadows"
-msgstr ""
+msgstr "シャドウ"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:97
 msgid ""
 "Shadows are made by intersecting a :ref:`Light <class_Light2D>` with a :ref:"
 "`LightOccluder2D <class_LightOccluder2D>`."
 msgstr ""
+"影は、 :ref:`Light <class_Light2D>` と :ref:`LightOccluder2D "
+"<class_LightOccluder2D>` を交差させることによって作成されます。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:99
 msgid ""
 "By default shadows are turned off. To turn them on click on the :ref:`Light "
 "<class_Light2D>` and under the Shadows section check ``Enabled``."
 msgstr ""
+"デフォルトでは影はオフになっています。オンにするには、 :ref:`Light "
+"<class_Light2D>` をクリックし、Shadowsセクションの ``Enabled`` をチェックしま"
+"す。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:102
 msgid ""
@@ -24320,6 +24709,11 @@ msgid ""
 "`LightOccluder2D <class_LightOccluder2D>` looks like a dark spot and in this "
 "demo the :ref:`Sprite <class_Sprite>` is just a black square."
 msgstr ""
+"このデモでは、テクスチャが適用された :ref:`Sprite <class_Sprite>` を使用して "
+"\"シャドウキャスタ\" を作成していますが、実際に必要なのは :ref:"
+"`LightOccluder2Ds <class_LightOccluder2D>` をいくつか使用することだけです。 :"
+"ref:`LightOccluder2Ds <class_LightOccluder2D>` 自体は暗いスポットのように見え"
+"ますが、このデモでは :ref:`Sprite <class_Sprite>` はただの黒い四角形です。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:110
 msgid ""
@@ -24327,6 +24721,8 @@ msgid ""
 "step by step through the process of making a scene like the one found in the "
 "demo."
 msgstr ""
+"使用するノードの基本について説明したので、デモで使用したようなシーンを作成す"
+"るプロセスを、順を追って説明します。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:113
 msgid ""
@@ -24336,6 +24732,11 @@ msgid ""
 "any background you choose. For this style of shadow it is most likely to be "
 "a floor texture."
 msgstr ""
+"最初に :ref:`Sprite <class_Sprite>` を追加し、そのテクスチャを `バックグラウ"
+"ンドイメージ <https://raw.githubusercontent.com/godotengine/godot-demo-"
+"projects/master/2d/lights_and_shadows/bg.png>` に設定します。あなたが作成する"
+"ゲームでは、任意の背景を選択できます。このタイプのシャドウでは、床のテクス"
+"チャが最も一般的です。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:118
 msgid ""
@@ -24346,6 +24747,11 @@ msgid ""
 "is set to ``add``. This means that each light adds its own color to whatever "
 "is underneath."
 msgstr ""
+"次に、3つの :ref:`Light2D's <class_Light2D>` を作成し、そのテクスチャを `ライ"
+"トイメージ <https://raw.githubusercontent.com/godotengine/godot-demo-"
+"projects/master/2d/lights_and_shadows/light.png>` に設定します。上部で色を変"
+"更できます。既定では、シャドウはオフになっており、 ``mode`` は ``add`` に設定"
+"されています。つまり、各ライトはその下にあるものに独自のカラーを追加します。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:124
 msgid ""
@@ -24377,6 +24783,10 @@ msgid ""
 "`CanvasModulate <class_CanvasModulate>` multiples the entire viewport by a "
 "specific color."
 msgstr ""
+"現在のシーンは明るすぎるはずです。これは、3つのライトすべてがシーンにカラーを"
+"追加しているためです。このため、デモではシーンで :ref:`CanvasModulate "
+"<class_CanvasModulate>` を使用します。 :ref:`CanvasModulate "
+"<class_CanvasModulate>` は、ビューポート全体を特定のカラーで乗算します。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:141
 msgid ""
@@ -24384,10 +24794,13 @@ msgid ""
 "color to ``rgb(70, 70, 70)``. This will make the scene sufficiently dark to "
 "see the effects of the lights distinctly."
 msgstr ""
+":ref:`CanvasModulate <class_CanvasModulate>` をシーンに追加し、そのカラーを "
+"``RGB(70, 70, 70)`` に設定します。これにより、シーンが十分暗くなり、ライトの"
+"効果がはっきりと見えます。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:146
 msgid "Now we add the shadow casters."
-msgstr ""
+msgstr "次に、シャドウキャスタを追加します。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:148
 msgid ""
@@ -24396,6 +24809,10 @@ msgid ""
 "used to group all the shadow casters together. This way we can show and hide "
 "them all at the same time."
 msgstr ""
+"このデモでは、 \"casters\" という名前の :ref:`Node <class_Node2D>` を使用して"
+"シャドウキャスタを編成します。 :ref:`Node2D <class_Node2D>` をシーンに追加し"
+"ます。すべてのシャドウキャスタをグループ化するために使用されます。このように"
+"して、すべてを同時に表示/非表示にできます。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:152
 msgid ""
@@ -24409,6 +24826,14 @@ msgid ""
 "could be an image of whatever object is casting the shadow: a wall, a "
 "magical chest, or anything else."
 msgstr ""
+"各シャドウキャスタは :ref:`Sprite <class_Sprite>` と :ref:`LightOccluder2D "
+"<class_LightOccluder2D>` の子で構成されています。デモでは、 :ref:`Sprite "
+"<class_Sprite>` には `キャスタイメージ <https://raw.githubusercontent.com/"
+"godotengine/godot-demo-projects/master/2d/lights_and_shadows/caster.png>` だ"
+"けにテクスチャが設定されています。すべてのマジックが発生するのは、子の :ref:"
+"`LightOccluder2D <class_LightOccluder2D>` です。あなたのゲームでは :ref:"
+"`Sprite <class_Sprite>` はブラックボックス以上のものになるかもしれません。壁"
+"や魔法の箱など、影を落としている物体の画像になるかもしれませんね。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:160
 msgid ""
@@ -24425,6 +24850,9 @@ msgid ""
 "polygon occludes light coming from all directions. An open polygon only "
 "occludes light from one direction"
 msgstr ""
+"1番目の設定の ``Closed`` は ``on`` または ``off`` に設定できます。閉じた"
+"Polygonは、すべての方向からの光を遮断します。開いたPolygonは1つの方向からの光"
+"のみを遮ります"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:168
 msgid ""
@@ -24435,6 +24863,11 @@ msgid ""
 "winding order is used to determine which side of the line is inside the "
 "polygon. Only outward facing lines cast shadows."
 msgstr ""
+"``Cull Mode`` では、非表示にする方向を選択できます。既定値は ``Disabled`` "
+"で、ライトがどちらの側にあってもオクルダがシャドウを投影します。他の2つの設"
+"定 (``Clockwise`` と``Counter-Clockwise`` ) は、polygonの頂点の巻上げ順序を示"
+"します。ワインディング順序は、ラインのどちら側がpolygonの内側にあるかを決定す"
+"るために使用されます。外向きの線だけが影を落とします。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:173
 msgid ""
@@ -24446,13 +24879,14 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:179
 msgid "``Cull Mode`` is set to ``Disabled``. All three lines cast shadows."
-msgstr ""
+msgstr "``Cull Mode`` は ``Disabled`` です。3本の線はすべて影を落とします。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:183
 msgid ""
 "``Cull Mode`` is set to ``Clockwise``. Only the top and right lines cast "
 "shadows."
 msgstr ""
+"``Cull Mode`` は ``Clockwise`` (時計回り)上部と右側の線だけが影を落とします。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:187
 msgid ""
@@ -24460,6 +24894,9 @@ msgid ""
 "shadow. If ``Closed`` was set to ``on`` there would be an additional "
 "vertical line on the left which would cast a shadow as well."
 msgstr ""
+"``Cull Mode`` は ``Counter-Clockwise`` (反時計回り)下の線だけが影を落としま"
+"す。 ``Closed`` が ``on`` に設定されている場合、左側に垂直なラインが追加さ"
+"れ、シャドウが投影されます。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:191
 msgid ""
@@ -24468,6 +24905,10 @@ msgid ""
 "<class_Light2D>` and under the Shadow section set ``Enable`` to ``on``. This "
 "turns on shadows with hard edges like in the image below."
 msgstr ""
+":ref:`LightOccluder2Ds <class_LightOccluder2D>` を追加しても、シャドウは表示"
+"されません。 :ref:`Light2Ds <class_Light2D>` に戻り、Shadowセクションで"
+"``Enable`` を ``on`` に設定します。下のイメージのように、ハードエッジのシャド"
+"ウがオンになります。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:197
 msgid ""
@@ -24487,6 +24928,9 @@ msgid ""
 "set to ``1.3``, ``filter smooth`` is set to ``11.1``, and ``filter`` is set "
 "to ``PCF7``."
 msgstr ""
+"これは、デモの設定でレンダリングされた影です。 ``gradient length`` を "
+"``1.3`` に、 ``filter smooth`` を ``11.1`` に、 ``filter`` を ``PCF7`` に設定"
+"します。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:211
 msgid ""
@@ -24494,6 +24938,8 @@ msgid ""
 "because the distance between samples is based on the variable ``filter "
 "smooth``."
 msgstr ""
+"``filter`` は ``PCF13`` に設定されています。サンプル間の距離が ``filter "
+"smooth`` に基づいてシャドウがどのように広くなるかに確認してください。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:214
 msgid ""
@@ -24513,10 +24959,12 @@ msgid ""
 "The different :ref:`Light <class_Light2D>` nodes in the demo use different "
 "values for filter smooth. Play around with it and see what you like."
 msgstr ""
+"デモのさまざまな :ref:`Light <class_Light2D>` では、filter smoothにさまざまな"
+"値を使用しています。いろいろやってみて、気に入ったものを見つけてください。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:228
 msgid "``filter smooth`` is set to ``0``."
-msgstr ""
+msgstr "``filter smooth`` を ``0`` に設定しています。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:230
 msgid ""
@@ -24528,11 +24976,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:236
 msgid "``gradient length`` is set to ``0``."
-msgstr ""
+msgstr "``gradient length`` を ``0``に設定しています。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:240
 msgid "``gradient length`` is set to ``10``."
-msgstr ""
+msgstr "``gradient length`` を ``10``に設定しています。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:242
 msgid ""
@@ -24544,7 +24992,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:4
 msgid "2D meshes"
-msgstr ""
+msgstr "2Dメッシュ"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:9
 msgid ""
@@ -24553,12 +25001,18 @@ msgid ""
 "it can't really display 3D meshes directly (although it can be done via "
 "``Viewport`` and ``ViewportTexture``)."
 msgstr ""
+"3Dでは、メッシュを使用してワールドを表示します。2Dでは、イメージが頻繁に使用"
+"されるため、これらはまれです。Godotの2Dエンジンは純粋な二次元エンジンなので、"
+"3Dメッシュを直接表示することはできません(これは ``Viewport`` と"
+"``ViewportTexture`` を介して行うことができます）。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:13
 msgid ""
 "If you are interested in displaying 3D meshes on a 2D viewport, see the :ref:"
 "`doc_viewport_as_texture` tutorial."
 msgstr ""
+"3Dメッシュを2Dビューポートに表示する方法については、 チュートリアルの :ref:"
+"`doc_viewport_as_texture` を参照してください。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:15
 msgid ""
@@ -24566,16 +25020,21 @@ msgid ""
 "or ignored) instead of 3D. You can experiment creating them yourself using "
 "``SurfaceTool`` from code and displaying them in a ``MeshInstance2D`` node."
 msgstr ""
+"2Dメッシュは、3Dではなく二次元ジオメトリ(Z軸は省略または無視できます)を含む"
+"メッシュです。 ``SurfaceTool`` を使用してコードから作成し、 "
+"``MeshInstance2D`` 2Dノードに表示することもできます。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:18
 msgid ""
 "Currently, the only way to generate a 2D mesh within the editor is by either "
 "importing an OBJ file as a mesh, or converting it from a Sprite."
 msgstr ""
+"現在、エディタ内で2Dメッシュを生成する唯一の方法は、OBJファイルをメッシュとし"
+"てインポートするか、それをSpriteから変換することです。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:21
 msgid "Optimizing pixels drawn"
-msgstr ""
+msgstr "描画するピクセルの最適化"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:23
 msgid ""
@@ -24583,6 +25042,9 @@ msgid ""
 "drawing large images with transparency, Godot will draw the whole quad to "
 "the screen. The large transparent areas will still be drawn."
 msgstr ""
+"このワークフローは、2D図面を最適化する場合に便利です。大きなイメージを透明で"
+"描画する場合、Godotは四角形全体を画面に描画します。大きな透明領域は描画されま"
+"す。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:25
 msgid ""
@@ -24591,16 +25053,20 @@ msgid ""
 "each other with large transparent areas (for example, when using "
 "``ParallaxBackground``)."
 msgstr ""
+"ただし、非常に大きな画像（通常は画面サイズ）を描画するとき、または大きな透明"
+"領域を使用して複数の画像を重ね合わせるとき(特に ``ParallaxBackground`` を使用"
+"するとき)、特にモバイルデバイスでパフォーマンスに影響を与える可能性がありま"
+"す。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:28
 msgid ""
 "Converting to a mesh will ensure that only the opaque parts will be drawn "
 "and the rest will be ignored."
-msgstr ""
+msgstr "メッシュに変換すると、不透明な部分だけが描画され、残りは無視されます。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:31
 msgid "Converting Sprites to 2D meshes"
-msgstr ""
+msgstr "スプライトを2Dメッシュに変換"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:33
 msgid ""
@@ -24608,31 +25074,37 @@ msgid ""
 "``MeshInstance2D``. Start with an image that contains large amounts of "
 "transparency on the edges, like this tree:"
 msgstr ""
+"``Sprite`` を ``MeshInstance2D`` に変換することでこの最適化を利用できます。下"
+"記の木の画像のように、端に大量の透過部分を含む画像から始めます:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:38
 msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
 msgstr ""
+"それを `` Sprite`` に入れて、メニューから \"Convert to 2D Mesh\" を選択してく"
+"ださい:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:42
 msgid ""
 "A dialog will appear, showing a preview of how the 2D mesh will be created:"
-msgstr ""
+msgstr "ダイアログが表示され、2Dメッシュの作成方法のプレビューが表示されます:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:46
 msgid ""
 "The default values are good enough for many cases, but you can change growth "
 "and simplification according to your needs:"
 msgstr ""
+"大体の場合はデフォルト値で十分ですが、必要に応じて拡大(growth)や単純化"
+"(simplification)を変更できます:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:50
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
 "replaced:"
-msgstr ""
+msgstr "最後に、 ``Convert 2D Mesh`` を押すとSpriteが置き換えられます:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:4
 msgid "Custom drawing in 2D"
-msgstr ""
+msgstr "2Dカスタム描画"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:7
 #: ../../docs/tutorials/io/encrypting_save_games.rst:7
@@ -24652,13 +25124,14 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:17
 msgid "But..."
-msgstr ""
+msgstr "しかし..."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:19
 msgid ""
 "Custom drawing manually in a node is *really* useful. Here are some examples "
 "why:"
 msgstr ""
+"ノードのカスタム描画は*非常に*便利です。次に、その理由の例をいくつか示します:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:22
 msgid ""
@@ -24666,12 +25139,16 @@ msgid ""
 "that draws a circle, an image with trails, a special kind of animated "
 "polygon, etc)."
 msgstr ""
+"ノードによって処理されない図形またはロジックを描画する(例:円、軌跡のあるイ"
+"メージ、特殊なアニメートされたポリゴンなどを描画するノードの作成など)。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:25
 msgid ""
 "Visualizations that are not that compatible with nodes: (example: a tetris "
 "board). The tetris example uses a custom draw function to draw the blocks."
 msgstr ""
+"ノードと互換性のない視覚化:(例:四面体ボード)。四面体の例では、カスタム描画関"
+"数を使用してブロックを描画します。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:28
 msgid ""
@@ -24684,10 +25161,12 @@ msgid ""
 "Making a custom UI control. There are plenty of controls available, but it's "
 "easy to run into the need to make a new, custom one."
 msgstr ""
+"カスタムUIコントロールの作成。利用できるコントロールはたくさんありますが、新"
+"しいカスタムコントロールを作るのも難しくはありません。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:35
 msgid "OK, how?"
-msgstr ""
+msgstr "はい、どのようにですか?"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:37
 msgid ""
@@ -24701,10 +25180,12 @@ msgid ""
 "Draw commands are described in the :ref:`CanvasItem <class_CanvasItem>` "
 "class reference. There are plenty of them."
 msgstr ""
+"描画のコマンドについては、 :ref:`CanvasItem <class_CanvasItem>` クラスリファ"
+"レンスを参照してください。たくさんあります。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:61
 msgid "Updating"
-msgstr ""
+msgstr "描画の更新"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:63
 msgid ""
@@ -24733,7 +25214,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:146
 msgid "An example: drawing circular arcs"
-msgstr ""
+msgstr "例:円弧の描画"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:148
 msgid ""
@@ -24746,7 +25227,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:154
 msgid "Arc function"
-msgstr ""
+msgstr "Arc関数"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:156
 msgid ""
@@ -24787,6 +25268,10 @@ msgid ""
 "include the last point. We first determine the angle of each point, between "
 "the starting and ending angles."
 msgstr ""
+"次のステップでは、円弧を構成する32個の点の実際の位置を計算します。これは最初"
+"のforループで行われ、位置を計算したいポイントの数に最後のポイントを含めるため"
+"に1を加えて繰り返します。最初に、開始角度と終了角度の間の各点の角度を決定しま"
+"す。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:210
 msgid ""
@@ -24834,11 +25319,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:263
 msgid "Result:"
-msgstr ""
+msgstr "結果:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:268
 msgid "Arc polygon function"
-msgstr ""
+msgstr "Arc polygon関数"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:270
 msgid ""
@@ -24850,7 +25335,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:310
 msgid "Dynamic custom drawing"
-msgstr ""
+msgstr "動的カスタム描画"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:312
 msgid ""
@@ -24870,7 +25355,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:340
 msgid "We make these values change in the _process(delta) function."
-msgstr ""
+msgstr "これらの値は_process(delta)関数で変更します。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:342
 msgid ""
@@ -24900,6 +25385,8 @@ msgstr ""
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
+"実行しましょう！動作はしますが、アークがものすごい速さで回転しています！何故"
+"でしょうか？"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:416
 msgid ""
@@ -24922,7 +25409,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:458
 msgid "Let's run again! This time, the rotation displays fine!"
-msgstr ""
+msgstr "もう一度実行しましょう！今度は、回転が正常に表示されます！"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:461
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:133
@@ -33321,6 +33808,8 @@ msgid ""
 "First, we need to define a few new class variables. Add the following class "
 "variables to ``Player.gd``:"
 msgstr ""
+"まず、いくつかの新しいクラス変数を定義する必要があります。 以下のクラス変数"
+"を `` Player.gd`` に追加してください:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:56
 msgid "Let's go over what each of these does:"
@@ -33331,6 +33820,8 @@ msgid ""
 "``JOYPAD_SENSITIVITY``: This is how fast the joypad's joysticks will move "
 "the camera."
 msgstr ""
+"``JOYPAD_SENSITIVITY`` :ジョイパッドのジョイスティックがカメラを動かす速度で"
+"す。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:59
 msgid ""
@@ -33375,6 +33866,9 @@ msgid ""
 "left and up/down. Because a wired Xbox 360 controller has different joystick "
 "axis mapping based on OS, we will use different axes based on the OS."
 msgstr ""
+"ジョイパッドが接続されている場合は、左/左と上/下のスティック軸を取得します。"
+"有線のXbox360コントローラはOSによってジョイスティックの軸マッピングが異なるた"
+"め、OSによって異なる軸を使用します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:121
 msgid ""
@@ -33460,6 +33954,9 @@ msgid ""
 "is exactly the same as the code in ``_input``. All we've done is change the "
 "values to use ``joypad_vec`` and ``JOYPAD_SENSITIVITY``."
 msgstr ""
+"プレイヤーの回転と ``rotation_helper`` を処理するコードが ``_input`` のコード"
+"と全く同じであることに注意してください。 ``joypad_vec`` と "
+"``JOYPAD_SENSITIVITY`` を使うように値を変更しただけです。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:233
 msgid ""
@@ -33472,13 +33969,14 @@ msgstr ""
 msgid ""
 "Finally, we clamp the camera's rotation so the player cannot look upside "
 "down."
-msgstr ""
+msgstr "最後に、プレーヤーが逆さまに見えないようにカメラの回転を固定します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:240
 msgid ""
 "The last thing we need to do is add ``process_view_input`` to "
 "``_physics_process``."
 msgstr ""
+"最後に、 `` _physics_process`` に `` process_view_input`` を追加します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:242
 msgid ""
@@ -33492,6 +33990,8 @@ msgid ""
 "to do some more axis managing, and because I prefer to use a shoulder "
 "buttons to fire."
 msgstr ""
+"ジョイパッドのトリガーを使用しないことにしたのは、軸の管理をもう少し行う必要"
+"があり、肩のボタンを使用して発射したいからです。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:246
 msgid ""
@@ -33500,6 +34000,10 @@ msgid ""
 "triggers, and check if it's over a certain value, say ``0.8`` for example. "
 "If it is, you add the same code as when the ``fire`` action was pressed."
 msgstr ""
+"トリガを使って起動したい場合は、 ``process_input`` で起動方法を変更する必要が"
+"あります。トリガーの軸の値を取得し、それが特定の値(例えば ``0.8`` )を超えてい"
+"るかどうかをチェックする必要があります。もしそうなら、 ``fire`` アクションが"
+"押された時と同じコードを追加します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:250
 msgid "Adding mouse scroll wheel input"
@@ -33516,7 +34020,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:457
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:526
 msgid "Open up ``Player.gd`` and add the following class variables:"
-msgstr ""
+msgstr "`` Player.gd`` を開き、以下のクラス変数を追加してください:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:261
 msgid "Let's go over what each of these new variables will be doing:"
@@ -33619,6 +34123,8 @@ msgid ""
 "Now that the player has health and ammo, we ideally need a way to replenish "
 "those resources."
 msgstr ""
+"プレイヤーは健康と弾薬を手に入れたので、これらのリソースを補充する方法が理想"
+"的に必要です。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:333
 msgid "Open up ``Health_Pickup.tscn``."
@@ -33664,7 +34170,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:405
 msgid ""
 "Let's go over what this script is doing, starting with its class variables:"
-msgstr ""
+msgstr "このスクリプトの動作を、クラス変数から説明します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:407
 msgid ""
@@ -47784,7 +48290,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:4
 msgid "GUI skinning"
-msgstr ""
+msgstr "GUIスキニング"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:7
 msgid "Oh, beautiful GUI!"
@@ -73806,6 +74312,9 @@ msgid ""
 "generated documentation, build Godot as described :ref:`here <toc-devel-"
 "compiling>`, run the editor and open the help for the page you modified."
 msgstr ""
+"生成したドキュメントで行った変更が正しいことを確認する必要がある場合は、 :"
+"ref:`here <toc-devel-compiling>` に従ってGodotをビルドし、エディタを実行して"
+"変更したページのヘルプを開きます。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:168
 msgid "How to write the class reference"
@@ -74159,6 +74668,8 @@ msgid ""
 "`Pull request meetings: #godotengine-meeting <http://webchat.freenode.net/?"
 "channels=#godotengine-meeting>`_"
 msgstr ""
+"`プルリクエストミーティング: #godotengine-meeting <http://webchat.freenode."
+"net/?channels=#godotengine-meeting>`_"
 
 #: ../../docs/community/channels.rst:24
 msgid ""
@@ -74171,6 +74682,8 @@ msgid ""
 "`Website and public relations: #godotengine-atelier <http://webchat.freenode."
 "net/?channels=#godotengine-atelier>`_"
 msgstr ""
+"`ウェブサイトと広報: #godotengine-atelier <http://webchat.freenode.net/?"
+"channels=#godotengine-atelier>`_"
 
 #: ../../docs/community/channels.rst:26
 msgid "`IRC logs <https://godot.eska.me/irc-logs/>`_"
@@ -74223,7 +74736,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:47
 msgid "`Forum (godotforums.org) <https://godotforums.org/>`_"
-msgstr ""
+msgstr "`フォーラム (godotforums.org) <https://godotforums.org/>`_"
 
 #: ../../docs/community/tutorials.rst:4
 msgid "Tutorials and resources"
@@ -74238,6 +74751,11 @@ msgid ""
 "<https://www.reddit.com/r/godot/comments/an0iq5/"
 "godot_tutorials_list_of_video_and_written/>`_."
 msgstr ""
+"これは、Godotコミュニティによって作成されたサードパーティのチュートリアルとリ"
+"ソースのリストです。参考資料としては、公式の `Godot Asset Library <https://"
+"godotengine.org/asset-library/asset>` もあります。また、この `huge list over "
+"at Reddit <https://www.reddit.com/r/godot/comments/an0iq5/"
+"godot_tutorials_list_of_video_and_written/>` もご覧ください。"
 
 #: ../../docs/community/tutorials.rst:8
 msgid ""
@@ -74245,10 +74763,13 @@ msgid ""
 "<https://github.com/godotengine/godot-docs/blob/master/community/resources."
 "rst>`_ as always."
 msgstr ""
+"ここに何か足りないものがあると思いますか？ いつものように `Pull Request "
+"<https://github.com/godotengine/godot-docs/blob/master/community/resources."
+"rst>` を送信してください。"
 
 #: ../../docs/community/tutorials.rst:11
 msgid "Where to start"
-msgstr ""
+msgstr "開始する場所"
 
 #: ../../docs/community/tutorials.rst:13
 msgid ""
@@ -74259,18 +74780,28 @@ msgid ""
 "playlists>`_ are well-regarded in the community and often recommended as a "
 "gentle introduction to beginners."
 msgstr ""
+"`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
+"playlists>` 、 `Game from Scratch <https://www.youtube.com/watch?"
+"v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>` 、 `KidsCanCode "
+"<https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/playlists>` による"
+"Godotのチュートリアルは、コミュニティで高く評価されており、初心者にはやさしい"
+"入門書としてよく勧められています。"
 
 #: ../../docs/community/tutorials.rst:15
 msgid ""
 "If you're interested in Visual Scripting, `Emilio's tutorials <https://www."
 "youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ may be worth a look."
 msgstr ""
+"Visual Scriptingに興味がある方は、 `Emilio's tutorials <https://www.youtube."
+"com/channel/UC9DR22-qohBDtZ74R3FxOZg>` をご覧ください。"
 
 #: ../../docs/community/tutorials.rst:17
 msgid ""
 "Some of the others mentioned below provide more advanced tutorials, e.g. on "
 "3D or shaders."
 msgstr ""
+"以下に示すその他のチュートリアルには、3Dやシェーダなど、より高度なチュートリ"
+"アルが用意されています。"
 
 #: ../../docs/community/tutorials.rst:20
 msgid "Video tutorials"
@@ -74358,7 +74889,7 @@ msgstr ""
 
 #: ../../docs/community/tutorials.rst:42
 msgid "Devlogs"
-msgstr ""
+msgstr "開発者"
 
 #: ../../docs/community/tutorials.rst:44
 msgid ""

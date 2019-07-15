@@ -23,6 +23,7 @@
 # Mario Rossi <mr_do@hotmail.it>, 2018.
 # MassiminoilTrace <omino.gis@gmail.com>, 2019.
 # Matteo <matteo.guglielmetti@hotmail.it>, 2018-2019.
+# Micila Micillotto <micillotto@gmail.com>, 2019.
 # Myself <whatamidoing.wt@gmail.com>, 2018.
 # Nicolas Bonet <nicolasbonet2004@gmail.com>, 2018.
 # Omar Ruggero Manca <o.r.manca1@outlook.it>, 2019.
@@ -41,8 +42,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-02 14:18+0200\n"
-"PO-Revision-Date: 2019-07-02 12:05+0000\n"
-"Last-Translator: Stefano Merazzi <asso99@hotmail.com>\n"
+"PO-Revision-Date: 2019-07-15 15:56+0000\n"
+"Last-Translator: Micila Micillotto <micillotto@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -1067,7 +1068,6 @@ msgstr ""
 "`doc_multiple_resolutions` tutorial su come ottenere questo risultato."
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -1077,7 +1077,7 @@ msgstr ""
 "Determina una risoluzione minima e quindi decidi se vuoi che il tuo gioco si "
 "adatti verticalmente o orizzontalmente per i diversi aspect ratio, o se ce "
 "n'è una minima e vuoi invece che appaiano delle barre nere. Questo è anche "
-"spiegato nello step precedente."
+"spiegato nello step precedente: :ref:`doc_multiple_resolutions` ."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -1551,9 +1551,8 @@ msgid ":ref:`doc_advanced_postprocessing`"
 msgstr ":ref:`Post-process avanzato <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:99
-#, fuzzy
 msgid "Your First Shader Series:"
-msgstr "Il tuo primo gioco"
+msgstr "La tua prima serie di Shader:"
 
 #: ../../docs/about/docs_changelog.rst:96
 #, fuzzy
@@ -1575,7 +1574,6 @@ msgid ":ref:`doc_your_second_spatial_shader`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:106
-#, fuzzy
 msgid "Shading Reference:"
 msgstr "Riferimenti allo Shading:"
 
@@ -1624,9 +1622,8 @@ msgstr ":ref:`CSG <doc_csg_tools>`"
 
 #: ../../docs/about/docs_changelog.rst:119
 #: ../../docs/tutorials/threads/index.rst:2
-#, fuzzy
 msgid "Multi-threading"
-msgstr "Multi-threading"
+msgstr "Il Multi-threading"
 
 #: ../../docs/about/docs_changelog.rst:121
 msgid ":ref:`doc_thread_safe_apis`"
@@ -1634,9 +1631,8 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:124
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "Animazione"
+msgstr "Ottimizzazione"
 
 #: ../../docs/about/docs_changelog.rst:126
 #, fuzzy
@@ -1650,9 +1646,8 @@ msgstr ":ref:`Shaders <doc_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:130
 #: ../../docs/tutorials/misc/index.rst:2
-#, fuzzy
 msgid "Miscellaneous"
-msgstr "Misto"
+msgstr "Varie"
 
 #: ../../docs/about/docs_changelog.rst:132
 msgid ":ref:`doc_jitter_stutter`"
@@ -1700,9 +1695,8 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:149
 #: ../../docs/development/cpp/index.rst:2
-#, fuzzy
 msgid "Engine development"
-msgstr "Sviluppo del motore grafico"
+msgstr "Sviluppo del motore"
 
 #: ../../docs/about/docs_changelog.rst:151
 msgid ":ref:`doc_binding_to_external_libraries`"
@@ -1710,7 +1704,6 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:154
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
 msgstr "Creazione di contenuti"
 
@@ -1927,13 +1920,12 @@ msgstr ""
 "**workspaces**, e il **playtest buttons**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
-#, fuzzy
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
-"Sul lato sinistro trovi il **FileSystem dock**, dove gestirai i file e le "
-"risorse del tuo progetto."
+"Sul lato sinistro troverai il **FileSystem dock**, dove potrai gestire i "
+"file e le risorse del tuo progetto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:153
@@ -1941,13 +1933,13 @@ msgid "|image11|"
 msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
-"Sulla destra c'è il pannello **Scena** che contiene tutti i contenuti attivi "
-"nella scena e il pannello **Inspector** nell'angolo in basso a destra."
+"Sulla destra ci sarà il pannello **Scena**, che conterrà tutti i contenuti "
+"attivi nella scena ed il pannello **Inspector**, nell'angolo in basso a "
+"destra."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:161
@@ -1955,13 +1947,12 @@ msgid "|image12|"
 msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you’ll find tools "
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"Al centro, in alto, si trova la **Toolbar**, dove si possono trovare gli "
+"Al centro, in alto, si troverà la **Toolbar**, dove si potranno trovare gli "
 "strumenti per muovere, ridimensionare o bloccare gli oggetti nella scena. La "
 "**Toolbar** cambia le sue funzioni quando si passa tra i differenti spazi di "
 "lavoro."
@@ -1998,18 +1989,15 @@ msgstr ""
 "2D, 3D, Script e AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
-#, fuzzy
 msgid ""
 "You’ll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press F1 to "
 "access it."
 msgstr ""
 "Userete l'area di lavoro **2D** per tutti i tipi di giochi. Oltre ai giochi "
-"2D, è qui che potrete creare le vostre interfacce. Premere F1 per accedervi. "
-"|image15|"
+"2D, è qui che potrete creare le vostre interfacce. Premere F1 per accedervi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
-#, fuzzy
 msgid "|image15|"
 msgstr "|image15|"
 
@@ -2188,7 +2176,6 @@ msgid "It has editable properties."
 msgstr "Ha delle proprietá modificabili."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
-#, fuzzy
 msgid "It can receive a callback to process every frame."
 msgstr ""
 "Può ricevere una chiamata a funzione (callback) per eseguire delle azioni "
@@ -2521,15 +2508,14 @@ msgstr ""
 "ricordata."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
-#, fuzzy
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
 "Inoltre è anche possibile aggiungere opzioni personalizzate e leggerle "
-"durante l'esecuzione (run-time) usando il singleton :ref:`ProjectSettings "
-"<class_ProjectSettings>`."
+"durante l'esecuzione (il run-time), usando il singleton :ref:"
+"`ProjectSettings <class_ProjectSettings>`."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:207
 msgid "To be continued..."
@@ -2696,27 +2682,26 @@ msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
+"Apri la scena ``Ball`` ed aggiungi un ``PhysicsMaterial`` cliccando sulla "
+"freccia verso il basso e selezionando \"New PhysicsMaterial\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
-#, fuzzy
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr ""
-"Poi, espandi il materiale cliccando su di esso ed imposta la proprietà "
-"``Bounce`` ad 1"
+"Poi, espandi il materiale cliccando su di esso, ed imposta la proprietà "
+"``Bounce`` ad ``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
-#, fuzzy
 msgid ""
 "Press \"Play\" and notice that all of the instanced balls are now much more "
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
-"Apri la scena ``Ball`` e cambia la proprietá ``Bounce`` nell'Inspector a "
-"`1`. Premi \"Play\" e noterai che tutte le palle istanziate rimbalzano di "
-"piú. Siccome le palle istanziate sono basate sulla scena salvata, i "
-"cambiamenti fatti a quella scena si ripercuoteranno a tutte le istanze."
+"Premi ''Play'' e ti renderai conto che tutte quelle sfere instanziate adesso "
+"rimbalzano di più. Questo perché le sfere instanziate si basano sulla scena "
+"salvata, e le modifiche a quella scena affliggeranno tutte le sue istanze."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
 #, fuzzy
@@ -2799,16 +2784,15 @@ msgid "Design language"
 msgstr "Linguaggio di design"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
-#, fuzzy
 msgid ""
 "But the greatest strength that comes with instancing scenes is that it works "
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
-"La grande forza che viene con l'instanziazione delle scene é che funziona "
-"come un eccellente linguaggio per il design. Questo é fondamentalmente "
-"quello che distingue Godot da tutti gli altri motori esistenti. Godot é "
-"stato disegnato fin dalle fondamenta attorno a questo concetto."
+"Il grande vantaggio che proviene dall'instanziazione delle scene é che "
+"funziona come un eccellente linguaggio per il design. Questo è ciò che "
+"distingue Godot da tutti gli altri motori esistenti. Godot é stato "
+"progettato con l'idea di questo concetto."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -2878,42 +2862,38 @@ msgstr ""
 "tipo open-world con molte risorse ed elementi annidati:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:53
-#, fuzzy
 msgid ""
 "Take a look at the room element. Let's say we started there. We could make a "
 "couple of different room scenes, with different arrangements of furniture "
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
-"Dai un'occhiata all'elemento stanza. Inizieremo da lì. Potremmo creare un "
-"paio di scene di stanze con diverse predisposizioni di arredamento (o di "
-"altre scene). Più tardi, potremmo creare una stanza per una casa, collegando "
-"altre stanze che formino i suoi interni."
+"Dai un'occhiata all'elemento \"stanza\". Diciamo che siamo partiti da lì. "
+"Potremmo creare un paio di scene \"stanza\", con diverse disposizioni di "
+"arredamento (o di altre scene) in esse. Più tardi, potremmo creare scena "
+"\"casa\", collegando altre stanze per formare i suoi interni."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:58
-#, fuzzy
 msgid ""
 "Then, we could make a citadel scene, which is made out of many instanced "
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
 "Poi, potremmo creare una stanza \"cittadella\", che è formata da diverse "
-"istanze di case. Ancora, potremmo iniziare a lavorare alla conformazione del "
-"mondo di gioco, aggiungendoci la cittadella."
+"istanze di case. Dopo, potremmo iniziare a lavorare alla conformazione del "
+"mondo di gioco, aggiungendo la cittadella al suo interno."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:62
-#, fuzzy
 msgid ""
 "Later, we could create scenes that represent guards (and other NPCs) and add "
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
-"Poi, potremmo creare scene che rappresentino guardie (e altri NPC) a "
-"aggiungere anche loro alla cittadella. Come risultato, saranno "
-"indirettamente aggiunte anche al complessivo mondo di gioco."
+"Poi, potremmo creare scene rappresentanti guardie (ed altri NPC) ed "
+"aggiungere anch'essi alla cittadella. Così, saranno indirettamente aggiunti  "
+"al complessivo mondo di gioco."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:66
-#, fuzzy
 msgid ""
 "With Godot, it's easy to iterate on your game like this, as all you need to "
 "do is create and instance more scenes. Furthermore, the editor UI is "
@@ -2922,54 +2902,49 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
-"Grazie a Godot, è semplice iterare sul tuo gioco in questo modo, tutto ciò "
-"che devi fare è creare e instanziare più scene. Inoltre, l'interfaccia "
-"grafica dell'editor è studiata per essere di facile utilizzo per "
-"programmatori e non programmatori, allo stesso modo. Un tipico processo "
-"produttivo può coinvolgere artisti 2D o 3D, level designer, game designer, "
-"animatori, tutti che lavorano con l'interfaccia dell'editor."
+"Grazie a Godot, è semplice creare giochi come questo, tutto ciò che devi "
+"fare è creare ed instanziare più scene. Inoltre, l'interfaccia grafica "
+"dell'editor è studiata per essere di facile utilizzo sia per programmatori "
+"che per non programmatori. Un tipico processo produttivo può coinvolgere "
+"artisti 2D o 3D, level designer, game designer, animatori, che lavorano "
+"tutti con l'interfaccia dell'editor."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"
 msgstr "Sovraccarico di informazioni!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:75
-#, fuzzy
 msgid ""
 "This has been a lot of high level information dropped on you all at once. "
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
-"Tutto ciò è stato un grande quantitativo di informazioni di alto livello "
-"dato tutto insieme. La parte importante di questo tutorial, però, è creare "
-"consapevolezza delle modalità con cui le scene e l'istanziazione sono usati "
-"in progetti reali."
+"Ti abbiamo dato troppe informazioni tutte d'un colpo. In ogni caso, la parte "
+"fondamentale di questo tutorial era quella di creare consapevolezza sulle "
+"modalità con cui scene e istanze sono usati in progetti reali."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:79
-#, fuzzy
 msgid ""
 "Everything discussed here will become second nature to you once you start "
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and go on to the next tutorial!"
 msgstr ""
-"Tutto quello che è stato discusso qui diventerà istintivo una volta che "
-"avrai iniziato a creare giochi e a mettere in pratica questi concetti. Per "
-"adesso non preoccupartene più di tanto, e prosegui con il prossimo tutorial!"
+"Tutto ciò detto qui diventerà istintivo una volta che avrai iniziato a "
+"creare giochi, e a mettere in pratica questi concetti. Per adesso non "
+"pensarci  troppo, e prosegui con il prossimo tutorial!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
-#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Prima di Godot 3.0, l'unico modo per scriptare un gioco era usare :ref:"
-"`doc_gdscript`. Al giorno d'oggi, Godot ha quattro (esatto, quattro!) "
-"linguaggi di programmazione ufficiali e la possibilità di aggiungerne di "
-"aggiuntivi dinamicamente!"
+"Prima di Godot 3.0, l'unico modo per scriptare un gioco era usare il  :ref:"
+"`GDScript<doc_gdscript>`. Oggi, Godot ha quattro (esatto, quattro!) "
+"linguaggi di programmazione ufficiali, e la possibilità di aggiungerne altri "
+"dinamicamente!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
@@ -2978,7 +2953,6 @@ msgstr ""
 "ma rende anche il nostro lavoro per supportare i linguaggi più complicato."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
-#, fuzzy
 msgid ""
 "The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
@@ -2986,12 +2960,12 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
-"I linguaggi \"principali\" in Godot, in ogni caso, sono GDScript e "
-"VisualScript. Il motivo principale per sceglierli è il loro livello di "
-"integrazione con Godot, in quanto ciò rende l'esperienza più fluida; "
-"entrambi hanno una brillante integrazione nell'editor, mentre C# e C++ hanno "
-"bisogno di un IDE esterno. Se sei un sostenitore dei linguaggi staticamente "
-"tipati, C# e C++ sono i linguaggi per te."
+"I linguaggi \"principali\" in Godot, comunque, sono GDScript e VisualScript. "
+"Il motivo principale per sceglierli è il loro livello di integrazione con "
+"Godot, in quanto ciò rende l'esperienza più fluida: entrambi hanno una "
+"brillante integrazione con l'editor, mentre C# e C++ hanno bisogno di un IDE "
+"esterno. Se sei un sostenitore dei linguaggi staticamente tipati, prosegui "
+"con C# e C++."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 #: ../../docs/getting_started/scripting/gdscript/index.rst:2
@@ -3009,15 +2983,14 @@ msgid "GDScript"
 msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript` è, come menzionato sopra, il linguaggio principale di "
-"Godot. Utilizzarlo ha alcuni vantaggi rispetto ad altri linguaggi a causa "
-"della sua forte integrazione con Godot:"
+"Il :ref:`GDScript<doc_gdscript>` è, come menzionato sopra, il linguaggio "
+"principalmente usato in Godot. Utilizzarlo ha alcuni vantaggi rispetto ad "
+"altri linguaggi, data la sua forte integrazione con Godot:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -3169,18 +3142,16 @@ msgstr ""
 "anche solo di riavviare) Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
-#, fuzzy
 msgid ""
 "Any C++ version can be used, and mixing compiler brands and versions for the "
 "generated shared libraries works perfectly, thanks to our use of an internal "
 "C API Bridge."
 msgstr ""
-"Ogni versione di C++ può essere usata, e mescolare diversi compilatori e "
-"versioni di questi per le librerie generate funziona perfettamente, grazie "
+"Qualsiasi versione di C++ può essere usata, e mescolare diversi compilatori "
+"e versioni di questi per le librerie generate funziona perfettamente, grazie "
 "all'utilizzo interno di un API bridge in C."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
-#, fuzzy
 msgid ""
 "This language is the best choice for performance and does not need to be "
 "used throughout an entire game, as other parts can be written in GDScript or "
@@ -3188,10 +3159,9 @@ msgid ""
 "mostly, Godot's actual C++ API."
 msgstr ""
 "Questo linguaggio è il migliore in quanto a performance e non deve essere "
-"per forza utilizzato in tutti il gioco, dato che le altre parti possono "
-"essere scritte in GDScript o Visual Script. In ogni caso l'API è chiara e "
-"semplice da usare in quanto somiglia, per lo più, all'effettiva API C++ di "
-"Godot."
+"per forza utilizzato in tutto il gioco, in quanto altre parti possono essere "
+"scritte in GDScript o Visual Script. In ogni caso l'API è chiara e semplice "
+"da usare in quanto somiglia, per lo più, all'effettiva API C++ di Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
 msgid ""
@@ -3228,17 +3198,16 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "Scrivere uno script che può accedere ad altri nodi nella scena."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
-"Prima di continuare, accertati di aver letto la parte su :ref:"
-"`doc_gdscript`del manuale. È un linguaggio studiato per essere semplice e la "
-"sua spiegazione è breve, non ci vorrà più di qualche minuto per avere una "
-"panoramica dei suoi concetti."
+"Prima di continuare, assicurati di aver letto il riferimento sul manuale "
+"del :ref:'GDScript<doc_gdscript>'. Si tratta di un linguaggio progettato per "
+"essere semplice, ed il riferimento è breve, quindi non ci vorranno più di "
+"pochi minuti per ottenere una panoramica dei concetti."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
@@ -3450,6 +3419,11 @@ msgid ""
 "select a node, the NodePath at the bottom will automatically update to point "
 "to a relative path from the emitting node to the selected node."
 msgstr ""
+"La sezione in alto a sinistra ci mostra una lista di tutti i nodi della "
+"scena con il nome del nodo emittente evidenziato in rosso. Seleziona il nodo "
+"\"Panel\" da qui. Quando selezioni un nodo, la sezione NodePath sul fondo "
+"della schermata si aggiornerà automaticamente per puntare una path relativa "
+"dal nodo emittente al nodo selezionato."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:213
 msgid ""
@@ -3458,16 +3432,20 @@ msgid ""
 "do have the \"Make Function\" check button checked, then the editor will "
 "generate the function for you before setting up the connection."
 msgstr ""
+"Per default, il nome del metodo conterrà il nome del nodo emittente (\"Button"
+"\", in questo caso), risultando in \"_on_[EmitterNode]_[signal_name]\". Se "
+"hai il tasto a due vie \"Make function\" su attivato, allora l'editor "
+"genererà la funzione per te, prima di impostare la connessione col nodo "
+"selezionato."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:218
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
-"Questo conclude la guida su come utilizzare l'Interfaccia grafica. Ad ogni "
-"modo, questo è un tutorial di scripting, quindi per amor di comprensione, "
+"E questo conclude la guida su come usare l'interfaccia grafica. Comunque, "
+"questo è un tutorial sulla codifica, quindi, per l'amore dell'imparare, "
 "approfondiamo il processo manuale!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:222
@@ -3477,12 +3455,19 @@ msgid ""
 "<class_Node_method_get_node>`. This function uses paths to fetch nodes "
 "anywhere in the scene, relative to the node that owns the script."
 msgstr ""
+"Per fare questo, introdurremo una funzione, probabilmente la più utilizzata "
+"dai programmatori di Godot: :ref:`Node.get_node() "
+"<class_Node_method_get_node>`. Questa funzione utilizza i percorsi per "
+"prendere nodi da qualsiasi posto nella scena, relativa al nodo proprietario "
+"dello script."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:227
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
+"Per convenienza, cancella tutto quanto sotto ``extends Panel``. Riepirai il "
+"resto dello script manualmente."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:230
 msgid ""
@@ -3490,29 +3475,36 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
+"Perché il Button e Label sono entrambi figli di Panel, dove lo script si "
+"trova, puoi prendere il Button scrivendo il seguente sotto la funzione "
+"``_ready()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:247
 msgid "Next, write a function which will be called when the button is pressed:"
 msgstr ""
+"Poi, scrivi una funzione che sarà chiamata quando il bottone sarà premuto:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:262
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
+"Finalmente, connetti il segnale \"pressed\" del bottone a ``_ready()``, "
+"usando :ref:`Object.connect() <class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:278
 msgid "The final script should look like this:"
-msgstr ""
+msgstr "Lo script finito dovrebbe essere così:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:311
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr ""
+"Esegui la scena e premi il pulsante. Dovresti avere il seguente risultato:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:315
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr ""
+msgstr "Hey! Congratulazioni nel codificare la tua prima scena."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:319
 msgid ""
@@ -3521,10 +3513,15 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
+"Una comune incomprensione riguardante questo tutorial è come "
+"``get_node(path)`` funzioni. Per un nodo dato, ``get_node(path)`` ricerca il "
+"proprio figlio immediato. Nel codice soprastante, questo significa che "
+"Button deve essere un figlio di Panel. Se Button invece fosse stato figlio "
+"di Label, il codice ottenuto sarebbe stato così:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:337
 msgid "Also, remember that nodes are referenced by name, not by type."
-msgstr ""
+msgstr "Inoltre, ricorda che i nodi sono riferiti ai nomi, non ai tipi."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:341
 msgid ""
@@ -3627,7 +3624,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
-msgstr ""
+msgstr "Gruppi"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
 msgid ""
@@ -14482,7 +14479,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr ""
+msgstr "Se stesso"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -16494,7 +16491,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr ""
+msgstr "Mesh"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -17977,7 +17974,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:226
 msgid "FPS"
-msgstr ""
+msgstr "FPS"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:228
 msgid ""
@@ -23390,7 +23387,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:146
 msgid "Local Coords"
-msgstr ""
+msgstr "Coordinate locali"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:148
 msgid ""
@@ -23537,7 +23534,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:276
 msgid "Color"
-msgstr ""
+msgstr "Colore"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:278
 msgid "Used to change the color of the particles being emitted."
@@ -23585,7 +23582,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:310
 msgid "Emission Mask"
-msgstr ""
+msgstr "Maschera Emissione"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:312
 msgid "Three types of emission masks can be generated from a texture:"
@@ -23612,7 +23609,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:331
 msgid "Emission Colors"
-msgstr ""
+msgstr "Colori Emissione"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:333
 msgid ""
@@ -26463,7 +26460,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:386
 msgid "Depth"
-msgstr ""
+msgstr "Profondità"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:390
 msgid ""
@@ -42609,9 +42606,8 @@ msgid "Once you are all set, you will get much better results:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "AnimationTree"
-msgstr "Creare contenuti"
+msgstr "AnimazioneAlbero"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -47482,7 +47478,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:27
 msgid ""
@@ -61626,7 +61622,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:267
 msgid "Future"
-msgstr ""
+msgstr "Futuro"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:269
 msgid ""
@@ -61773,7 +61769,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:121
 msgid "Testing"
-msgstr ""
+msgstr "Testing"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:123
 msgid ""
@@ -64969,7 +64965,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:15
 msgid "Particles"
-msgstr ""
+msgstr "Particelle"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:17
 msgid ""
@@ -65390,7 +65386,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid "Visible Navigation"
-msgstr ""
+msgstr "Navigazione Visibile"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -65437,7 +65433,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:66
 msgid "Debugger"
-msgstr ""
+msgstr "Debugger"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:68
 msgid "Monitor the game running process."
@@ -65963,7 +65959,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:145
 msgid "Target"
-msgstr ""
+msgstr "Target"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:147
 msgid "Target controls optimization and debug flags. Each mode means:"
@@ -67249,7 +67245,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:66
 msgid "Run"
-msgstr ""
+msgstr "Esegui"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:68
 msgid ""

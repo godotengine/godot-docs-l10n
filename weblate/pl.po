@@ -25,6 +25,7 @@
 # Przemysław Pierzga <przemyslawpierzga@gmail.com>, 2019.
 # Pytek1 <bpieniak1@gmail.com>, 2018.
 # Rafał Mikrut <synaptykq@gmail.com>, 2018.
+# Rafał Wyszomirski <rawyszo@gmail.com>, 2019.
 # RM <synaptykq@gmail.com>, 2018-2019.
 # Saran <saran@op.pl>, 2018.
 # Sebastian Pasich <sebastian.pasich@gmail.com>, 2018-2019.
@@ -37,7 +38,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-02 14:18+0200\n"
-"PO-Revision-Date: 2019-07-02 12:04+0000\n"
+"PO-Revision-Date: 2019-07-15 15:56+0000\n"
 "Last-Translator: Tomek <kobewi4e@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
@@ -1042,14 +1043,14 @@ msgstr ""
 "więcej pamięci będą zajmować i dłużej się ładować."
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Użyj opcji 'stretch' w Godot, '2D stretching' utrzymuje proporcje ekranu. "
-"Sprawdź samouczek :ref:`doc_multiple_resolutions` by dowiedzieć się więcej."
+"Użyj opcji 'stretch' w Godot; '2D stretching'  wraz z utrzymaniem proporcji "
+"ekranu działa najlepiej. Sprawdź samouczek :ref:`doc_multiple_resolutions` "
+"by dowiedzieć się więcej."
 
 #: ../../docs/about/faq.rst:205
 #, fuzzy
@@ -1470,7 +1471,7 @@ msgstr ":ref:`Ciało miękkie <doc_soft_body>`"
 #: ../../docs/tutorials/animation/index.rst:2
 #: ../../docs/development/file_formats/tscn.rst:375
 msgid "Animation"
-msgstr "Animacje"
+msgstr "Animacja"
 
 #: ../../docs/about/docs_changelog.rst:74
 #, fuzzy
@@ -1532,9 +1533,8 @@ msgid ":ref:`doc_advanced_postprocessing`"
 msgstr "Zaawansowany post-processing"
 
 #: ../../docs/about/docs_changelog.rst:99
-#, fuzzy
 msgid "Your First Shader Series:"
-msgstr "Twoja pierwsza gra"
+msgstr "Seria \"Twój pierwszy shader\":"
 
 #: ../../docs/about/docs_changelog.rst:96
 #, fuzzy
@@ -1557,9 +1557,8 @@ msgid ":ref:`doc_your_second_spatial_shader`"
 msgstr " :ref:`Shadery przestrzenne <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:106
-#, fuzzy
 msgid "Shading Reference:"
-msgstr "Zmiana aktualnej sceny"
+msgstr "O Shaderach:"
 
 #: ../../docs/about/docs_changelog.rst:102
 #, fuzzy
@@ -1661,7 +1660,7 @@ msgstr ":ref:`Różnice pomiędzy GLES2 i GLES3 <doc_gles2_gles3_differences>`"
 #: ../../docs/about/docs_changelog.rst:138
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "Informacje prawne"
 
 #: ../../docs/about/docs_changelog.rst:140
 #, fuzzy
@@ -3348,6 +3347,9 @@ msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
 msgstr ""
+"Mimo że będziemy tworzyć nasze połączenia poprzez kod przez resztę tego "
+"samouczka, na przyszłość przyjrzyjmy się jak dodać połączenie, korzystając "
+"z  interfejsu edytora."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:194
 msgid ""
@@ -3482,6 +3484,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scripting.rst:337
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr ""
+"Pamiętaj, że do referencji danego węzła odnosimy się po jego nazwie, nie "
+"typie."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:341
 msgid ""
@@ -3489,6 +3493,9 @@ msgid ""
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
+"Panel, znajdujący się po prawej stronie okna połączeń służy do wiązania "
+"określonych wartości do parametrów połączonych funkcji. Możesz dodawać i "
+"usuwać wartości różnych typów."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:345
 msgid ""
@@ -3496,6 +3503,10 @@ msgid ""
 "empty by default. Feel free to read up on the ``Object.connect`` method for "
 "more information."
 msgstr ""
+"Podejście z użyciem kodu również pozwala na takie przypisania poprzez użycie "
+"czwartego parametru,  ``Array``,  którego wartość domyślnie jest pusta. "
+"Możesz dowiedzieć się więcej na ten temat, czytając o metodzie ``Object."
+"connect``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
@@ -3510,12 +3521,17 @@ msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"Wiele akcji w Godot jest uruchamianych poprzez wywołania zwrotne i funkcje "
+"wirtualne, dla tego nie ma też potrzeby pisać kodu, który działa bez przerwy."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
+"Jednakże często zdarza się, że skrypt musi być przetworzony co każdą klatkę. "
+"Istnieją dwa rodzaje przetwarzania: bezczynne (idle processing) oraz "
+"procesów fizycznych (physics processing)."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -3524,10 +3540,14 @@ msgid ""
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
+"Bezczynne przetwarzanie jest aktywowane, gdy w skrypcie znajduje się metoda :"
+"ref:`Node._process() <class_Node_method__process>`. Może być ono włączane i "
+"wyłączane za pomocą funkcji :ref:`Node.set_process() "
+"<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Ta metoda wykona się za każdym razem, kiedy rysowana jest klatka:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -3535,15 +3555,17 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"Trzeba pamiętać, że częstotliwość z jaką będzie się wykonywać metoda "
+"``_process()`` zależy od tego w ilu klatkach na sekundę (FPS) działa Twoja "
+"aplikacja. Ta wartość może się zmieniać w zależności od czasu i urządzenia."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"Parametr delta, to liczba zmiennoprzecinkowa, zawierająca czas w sekundach "
+"Parametr delta to liczba zmiennoprzecinkowa, zawierająca czas w sekundach, "
 "jaki upłynął od poprzedniego wywołania ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
@@ -3595,8 +3617,8 @@ msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Prostym sposobem sprawdzenia tego jest utworzenie sceny z pojedynczym węzłem "
-"Label, z następującym skryptem:"
+"Prostym sposobem sprawdzenia tego, jak działa funkcja ``_process()`` jest "
+"utworzenie sceny z pojedynczym węzłem Label, z następującym skryptem:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -3624,9 +3646,10 @@ msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"A drugą z poziomu kodu. Skrypt poniżej dodałby aktualny węzeł do grupy "
+"``enemies``, gdy tylko pojawi się w drzewie sceny."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
-#, fuzzy
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
@@ -3645,18 +3668,16 @@ msgstr ""
 "kodzie każdego członka grupy ``przeciwnicy``(enemies)."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
-#, fuzzy
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
-"Możliwe jest również uzyskanie pełnej listy węzłów ``wrogów`` przez "
-"wywołanie :ref:`SceneTree.get_nodes_in_group() "
+"Możliwe jest również uzyskanie pełnej listy węzłów z grupy ``wrogowie`` "
+"przez wywołanie :ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -3788,9 +3809,10 @@ msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
+"Wstępne ładowanie (preloading) może być wygodniejsze, gdyż ma miejsce "
+"podczas parsowania (tylko GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
-#, fuzzy
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
@@ -3818,7 +3840,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "Rejstrowanie skryptów jako klasy"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
 msgid ""
@@ -3836,19 +3858,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
-#, fuzzy
 msgid "In Godot 3.1:"
-msgstr "Hej, Godette v3.11"
+msgstr "W Godot 3.1:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"Tylko GDScript i NativeScript, tj. C++ i inne języki wspierane przez "
+"GDNative, mogą rejestrować skrypty."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
 msgid "Only GDScript creates global variables for each named script."
-msgstr ""
+msgstr "Tylko GDScript tworzy globalne zmienne dla każdego nazwanego skryptu."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:4
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1469
@@ -3866,6 +3889,10 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"Sygnały w Godot są odpowednikiem wzorca *obserwatora*. Pozwalają węzłowi na "
+"wysyłanie wiadomości, na które inne węzły mogą nasłuchiwać i reagować.  "
+"Przykładowo, zamiast bez przerwy sprawdzać, czy przycisk jest w momencie "
+"przyciskania, to przycisk może wyemitować sygnał, kiedy zostanie wciśnięty."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
@@ -3882,6 +3909,11 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
+"Sygnały są sposobem na *rozdzielenie* Twoich obiektów, co powoduje, że "
+"pisany kod jest lepiej zorganizowany i łatwiej nim zarządzać. Zamiast "
+"wymuszać na obiektach, żeby zawsze spodziewały się określonych obiektów, "
+"mogą zamiast tego emitować sygnały, na które zareagują wszystkie "
+"zainteresowane obiekty."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
@@ -3891,9 +3923,8 @@ msgstr ""
 "Poniżej możesz zobaczyć przykłady, jak używać sygnałów w swoich projektach."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
-#, fuzzy
 msgid "Timer example"
-msgstr "Kilka przykładów:"
+msgstr "Przykład dla węzła Timer"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -3901,6 +3932,10 @@ msgid ""
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
 "<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
+"Żeby zobaczyć, jak działają sygnały, użyjmy węzła :ref:`Timer "
+"<class_Timer>`. Utwórz nową scenę z węzłem typu Node oraz jego dwoma węzłami-"
+"dziećmi: węzłem Timer oraz a :ref:`Sprite <class_Sprite>`. W doku sceny, "
+"zmień nazwę węzła z Node na TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -3909,9 +3944,12 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Dla tekstury węzła Sprite, możesz użyć ikony Godota lub jakiegokolwiek "
+"innego obrazu. Żeby to zrobić, naciśnij przycisk ``Załaduj`` w menu "
+"rozwijalnym atrybutu Tekstura, należącym do węzła Sprite. Dodaj skrypt do "
+"głównego węzła, ale nie dodawaj do niego jeszcze żadnego kodu."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
-#, fuzzy
 msgid "Your scene tree should look like this:"
 msgstr "Drzewo sceny powinno tak wyglądać:"
 
@@ -3921,14 +3959,23 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"We właściwościach węzła Timer, zaznacz pole \"Tak\", znajdujące się obok "
+"etykiety \"Autostart\". To spowoduje, że zegar wystartuje automatycznie, "
+"kiedy uruchomisz scenę. Możesz zostawić *Czas oczekiwania* na 1 sekundę."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:42
+#, fuzzy
 msgid ""
 "Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
 "and you'll see all of the signals that the selected node can emit. In the "
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
+"Obok zakładki \"Inspektor\" znajduje się zakładka z etykietą \"Węzeł\". "
+"Kliknij na tę zakładkę, żeby zobaczyć wszystkie sygnały, jakie ten węzeł "
+"może wyemitować. w przypadku węzła  typu Timer, zależy nam na sygnale "
+"\"timeout\". Ten sygnał jest emitowany za każdym razem, kiedy czas Timera "
+"osiąga ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
 msgid ""
@@ -3940,12 +3987,17 @@ msgstr ""
 "sygnał:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:54
+#, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is red "
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
+"Po lewej stronie znajdują się węzły w Twojej scenie - możesz wybrać węzeł, "
+"na którego sygnał chcesz \"nasłuchiwać\". Zauważ, że węzeł Timer jest "
+"zaznaczony na czerwono - to *nie* jest błąd, tylko podkreślenie, że to jest "
+"węzeł, który emituje sygnał. Wybierz główny węzeł."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
@@ -3961,6 +4013,11 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"Na dole okna znajduje się pole \"Metoda w węźle\". Jest to nazwa funkcji w "
+"skrypcie docelowego węzła, której chcesz użyć. Domyślnie Godot utworzy tę "
+"funkcję, korzystając z następującej konwencji : "
+"``_on_<nazwa_wezla>_<nazwa_sygnalu>`` . Oczywiście, jeśli chcesz, możesz "
+"zmienić tę nazwę według uznania."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
@@ -3974,12 +4031,18 @@ msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"Teraz możemy zastąpić tymczasowy kod jakimkolwiek innym, który ma być "
+"uruchomiony w momencie odebrania sygnału. Spowodujmy, żeby węzeł Sprite "
+"zaczął migać:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:111
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"Odtwórz scenę i zauważ, że węzeł Sprite miga z każdą sekundą. Możesz "
+"kontrolować czas migotania przy użyciu właściwości *Czas oczekiwania*, "
+"należącej do węzła Timer."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:115
 #, fuzzy
@@ -4001,6 +4064,8 @@ msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"Najpierw odłącz sygnał wybierając połączenie z zakładki \"Węzeł\", należącej "
+"do węzła Timer i kliknij *odłącz*."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:126
 msgid ""
@@ -4010,6 +4075,12 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
+"Aby dodać połączenie z poziomu kodu, może skorzystać z funkcji ``connect``. "
+"Wstawimy tę funkcję do metody ``_ready()`` po to, żeby połączenie zostało "
+"nawiązane zaraz o po uruchomieniu. Składnia tej funkcji wygląda tak "
+"następująco: ``<wezel_zrodlowy>.connect(<nazwa_sygnalu>, <docelowy_wezel>, "
+"<nazwa_funkcji_docelowej>)``. Poniżej znajduje się kod dla połączenia węzła "
+"Timer:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:159
 msgid "Custom signals"
@@ -4017,7 +4088,7 @@ msgstr "Niestandardowe sygnały"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:161
 msgid "You can also declare your own custom signals in Godot:"
-msgstr "Możesz także deklarować swoje niestandardowe sygnały w Godocie:"
+msgstr "W Godot możesz także zadeklarować własne rodzaje sygnałów:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:179
 msgid ""
@@ -4028,9 +4099,8 @@ msgstr ""
 "będą mogły być podłączone w taki sam sposób jak sygnały wbudowane w węzeł."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Aby wyemitować sygnał poprzez kod, użyj funkcji \"emit\":"
+msgstr "Aby wyemitować sygnał poprzez kod, użyj funkcji ``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
@@ -4051,10 +4121,9 @@ msgid ""
 "game including several uses of signals to connect different game components."
 msgstr ""
 "W następnej sekcji, :ref:`doc_your_first_game` zbudujesz kompletną grę z "
-"wykorzystaniem sygnałów aby połączyć różne elementy gry."
+"wykorzystaniem sygnałów, aby połączyć różne elementy gry."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
-#, fuzzy
 msgid "Your first game"
 msgstr "Twoja pierwsza gra"
 
@@ -4071,7 +4140,7 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
-"Ten samouczek pomoże ci stworzyć pierwszy projekt Godota. Dowiesz się, jak "
+"Ten samouczek pomoże ci stworzyć pierwszy projekt w Godot. Dowiesz się, jak "
 "działa edytor Godot, jak ustawić strukturę projektu i jak zbudować grę 2D."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
@@ -4080,7 +4149,7 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
-"Projekt ten jest wstępem do obsługi silnika Godota. Zakłada on, że masz już "
+"Projekt ten jest wstępem do obsługi silnika Godot. Zakłada on, że masz już "
 "pewne doświadczenie w programowaniu. Jeśli jesteś początkującym programistą, "
 "powinieneś zacząć od: :ref:`doc_scripting`."
 
@@ -4098,7 +4167,7 @@ msgid ""
 "2D until you have a good understanding of the game development process."
 msgstr ""
 "**Dlaczego 2D?** Gry 3D są znacznie bardziej złożone niż 2D. Powinieneś "
-"trzymać się 2D dopóki dobrze nie zrozumiesz procesu tworzenia gry."
+"trzymać się 2D, dopóki dobrze nie zrozumiesz procesu tworzenia gry."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
@@ -4128,23 +4197,21 @@ msgstr ""
 "konfiguracji projektu i korzystania z edytora."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
-#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
-"Ta gra będzie korzystać z trybu portretowego(pionowego), więc musimy "
+"Ta gra będzie korzystać z trybu portretowego (pionowego), więc musimy "
 "dostosować rozmiar okna gry. Kliknij Projekt -> Ustawienia projektu -> "
-"Display -> Window i ustaw \"Width\" na 480 oraz \"Height\" na 720."
+"Wyświetlanie -> Okno i ustaw \"Szerokość\" na 480 oraz \"Wysokość\" na 720."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 #, fuzzy
 msgid "Organizing the project"
-msgstr "Organizacja Projektu"
+msgstr "Organizacja projektu"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
-#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -4161,9 +4228,8 @@ msgstr ""
 "plików w lewym górnym rogu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
-#, fuzzy
 msgid "Player scene"
-msgstr "Scena Player(Gracz)"
+msgstr "Scena Player (Gracz)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
 msgid ""
@@ -4171,9 +4237,9 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
-"Pierwszą wykoną sceną będzie ``Player``. Jedną z zalet stworzenia oddzielnej "
-"sceny Player jest to, że możemy ją przetestować oddzielnie, nawet zanim "
-"utworzyliśmy inne części gry."
+"Pierwszą sceną, którą stworzymy, będzie ``Player``. Jedną z zalet stworzenia "
+"oddzielnej sceny Player jest to, że możemy ją przetestować oddzielnie, nawet "
+"zanim utworzyliśmy inne części gry."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 #, fuzzy
@@ -4197,7 +4263,7 @@ msgid ""
 msgstr ""
 "Za pomocą ``Area2D`` możemy wykrywać obiekty, które zachodzą na siebie. "
 "Zmień jego nazwę na ``Player`` klikając na nazwę węzła. Jest to główny węzeł "
-"sceny. Możemy dodać dodatkowe węzły do odtwarzacza, aby zwiększyć jego "
+"sceny. Możemy dodać dodatkowe węzły do gracza, aby zwiększyć jego "
 "funkcjonalność."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:75
@@ -4217,12 +4283,14 @@ msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
-"Zapisz scenę. Kliknij Scena -> Zapisz lub naciśnij ``Ctrl+S`` w oknie "
-"Linuksa lub ``Command+S`` na komputerze Mac."
+"Zapisz scenę. Kliknij Scena -> Zapisz lub naciśnij ``Ctrl+S`` w Windowsie/"
+"Linuksie lub ``Command+S`` na komputerze Mac."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:84
 msgid "For this project, we will be following the Godot naming conventions."
 msgstr ""
+"Dla tego projektu, będziemy korzystać z konwencji nazewnictwa, typowych dla "
+"Godota."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:86
 #, fuzzy
@@ -4241,14 +4309,16 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Klasy, eksportowane zmienne i metody używają PascalCase, pola "
+"prywatne używają _camelCase, natomiast zmienne lokalne i parametry "
+"korzystają z camelCase (Więcej na :ref:`doc_c_sharp_styleguide`).  Zwróć "
+"szczególną uwagę na nazwy metod przy łączeniu sygnałów."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:97
-#, fuzzy
 msgid "Sprite animation"
-msgstr "Animacja Sprita"
+msgstr "Animacja węzła Sprite"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -4316,7 +4386,6 @@ msgid "When you're finished, your ``Player`` scene should look like this:"
 msgstr "Po zakończeniu, scena ``Player`` powinna wyglądać w ten sposób:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:139
-#, fuzzy
 msgid "Moving the player"
 msgstr "Poruszanie graczem"
 
@@ -4327,8 +4396,8 @@ msgid ""
 "Script\" button:"
 msgstr ""
 "Teraz musimy dodać funkcjonalność, której nie możemy uzyskać z wbudowanego "
-"węzła, więc dodamy skrypt. Kliknij na węzeł ``Player`` i przycisk \"Dodaj "
-"skrypt\":"
+"węzła, więc dodamy skrypt. Kliknij na węzeł ``Player``, a następnie kliknij "
+"przycisk \"Dodaj skrypt\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:147
 msgid ""
@@ -4381,6 +4450,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Jeżeli używasz C#m musisz (prze)budować projekt, jeśli chcesz zobaczyć "
+"nowowyeksportowane zmienne czy sygnały. Takie przebudowanie może zostać "
+"uruchomione ręcznie - w tym celu otwórz Panel Mono klikając na tekst \"Mono"
+"\", znajdujący się na dole okna edytora, a następnie kliknij przycisk "
+"\"Zbuduj projekt\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:194
 msgid ""
@@ -4391,7 +4465,6 @@ msgstr ""
 "jest dobrym momentem, aby ustalić rozmiar okna gry:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:210
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
@@ -4401,19 +4474,19 @@ msgstr ""
 "Teraz możemy użyć funkcji ``_process()`` do zdefiniowania, co gracz będzie "
 "robił. ``_process()`` jest wywoływany co każda klatkę, więc użyjemy go do "
 "aktualizacji elementów naszej gry, które, jak się spodziewamy, będą się "
-"często zmieniać. Zrobimy to tak:"
+"często zmieniać. W przypadku naszego gracza, musimy zrobić, co następuje:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:215
 msgid "Check for input."
-msgstr "Sprawdza dane wejściowe."
+msgstr "Sprawdzić dane wejściowe."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:216
 msgid "Move in the given direction."
-msgstr "Przesuwa się w określonym kierunku."
+msgstr "Przesunąć gracza w określonym kierunku."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:217
 msgid "Play the appropriate animation."
-msgstr "Odtwarza odpowiednią animację."
+msgstr "Odtworzyć odpowiednią animację."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:219
 #, fuzzy
@@ -17127,7 +17200,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
-msgstr "Funkcje"
+msgstr "Funkcjonalności"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 #, fuzzy
@@ -18701,9 +18774,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
-#, fuzzy
 msgid "Mesh"
-msgstr "Siatki"
+msgstr "Siatka"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 #, fuzzy
@@ -26055,7 +26127,7 @@ msgstr "Ustawienia ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:186
 msgid "Spread"
-msgstr "Spread"
+msgstr "Rozpiętość"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:188
 msgid ""
@@ -26232,7 +26304,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:310
 msgid "Emission Mask"
-msgstr ""
+msgstr "Maska emisji"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:312
 msgid "Three types of emission masks can be generated from a texture:"
@@ -26259,7 +26331,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:331
 msgid "Emission Colors"
-msgstr ""
+msgstr "Kolory emisji"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:333
 msgid ""
@@ -46114,9 +46186,8 @@ msgid "Once you are all set, you will get much better results:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "AnimationTree"
-msgstr "Animacje"
+msgstr "Drzewo animacji"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -52000,7 +52071,7 @@ msgstr "maroon"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "navy"
-msgstr "navy"
+msgstr "granatowy"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:72
 msgid "purple"
@@ -52016,7 +52087,7 @@ msgstr "silver"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "teal"
-msgstr "teal"
+msgstr "morski"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:76
 msgid "white"
@@ -69981,7 +70052,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:145
 msgid "Target"
-msgstr ""
+msgstr "Cel"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:147
 msgid "Target controls optimization and debug flags. Each mode means:"
@@ -70715,11 +70786,11 @@ msgstr "X11, Xcursor, Xinerama, Xi i XRandR development libraries"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:19
 msgid "MesaGL development libraries"
-msgstr "MesaGL development libraries"
+msgstr "Biblioteki deweloperskie MesaGL"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:20
 msgid "ALSA development libraries"
-msgstr "ALSA development libraries"
+msgstr "Biblioteki deweloperskie ALSA"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:21
 #, fuzzy
@@ -77918,7 +77989,7 @@ msgstr "Wynik"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "[Class]"
-msgstr "[Class]"
+msgstr "[Klasa]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Link a class"
@@ -78164,7 +78235,6 @@ msgstr ""
 "contact>`_."
 
 #: ../../docs/community/channels.rst:13
-#, fuzzy
 msgid "Q&A"
 msgstr "Pytania i odpowiedzi"
 

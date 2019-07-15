@@ -7,6 +7,7 @@
 # Damar Inderajati <damarind@gmail.com>, 2018.
 # Evan Hyacinth <muhammad.ivan669@gmail.com>, 2018-2019.
 # Fajar Ru <kzofajar@gmail.com>, 2018.
+# herri siagian <herry.it.2007@gmail.com>, 2019.
 # Khairul Hidayat <khairulcyber4rt@gmail.com>, 2018.
 # Reza Hidayat Bayu Prabowo <rh.bayu.prabowo@gmail.com>, 2018.
 # Sandityas Noormina <bleedingfaceless@gmail.com>, 2019.
@@ -18,8 +19,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-02 14:18+0200\n"
-"PO-Revision-Date: 2019-07-02 12:05+0000\n"
-"Last-Translator: Sofyan Sugianto <sofyanartem@gmail.com>\n"
+"PO-Revision-Date: 2019-07-05 11:01+0000\n"
+"Last-Translator: herri siagian <herry.it.2007@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -357,7 +358,6 @@ msgid "About the documentation"
 msgstr "Tentang dokumentasi"
 
 #: ../../docs/about/introduction.rst:59
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -434,14 +434,12 @@ msgstr ""
 "semua pengguna baru."
 
 #: ../../docs/about/introduction.rst:91
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-"Disamping itu, bagian :ref:`sec-tutorials` dapat dibaca sesuai kebutuhan, "
-"dalam urutan yang bebas. Bagian ini terdapat banyak tutorial dan dokumentasi "
-"yang spesifik dengan fitur."
+"Bagian :ref:`sec-tutorials` dapat dibaca sesuai kebutuhan, dalam urutan yang "
+"bebas. Bagian tersebut berisi tutorial fitur-khusus dan dokumentasi."
 
 #: ../../docs/about/introduction.rst:93
 msgid ""
@@ -455,7 +453,6 @@ msgstr ""
 "berbasis C++."
 
 #: ../../docs/about/introduction.rst:96
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -467,8 +464,8 @@ msgstr ""
 "kontribusi untuk pengembangan engine dan mengenai komunitas, contohnya: "
 "Bagaimana melaporkan bug, membantu dalam dokumentasi, dan lainnya. Bagian "
 "ini juga terdapat berbagai kanal komunitas seperti IRC dan Discord dan "
-"terdapat banyak daftar rekomendasi tutorial dari pihak ketiga yang ada "
-"diluar dokumentasi ini."
+"berisi daftar rekomendasi tutorial dari pihak ketiga yang ada diluar "
+"dokumentasi ini."
 
 #: ../../docs/about/introduction.rst:101
 msgid ""
@@ -529,13 +526,12 @@ msgid "In short:"
 msgstr "Singkatnya:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
 "Anda bebas mengunduh dan menggunakan Godot untuk tujuan apapun, pribadi, non-"
-"komersil, komersil, maupun kegiatan lain;"
+"komersil, komersil, maupun kegiatan lain."
 
 #: ../../docs/about/faq.rst:14
 msgid ""
@@ -623,19 +619,16 @@ msgstr "Windows (dan UWP)"
 #: ../../docs/about/faq.rst:44
 #: ../../docs/getting_started/step_by_step/exporting.rst:186
 #: ../../docs/tutorials/misc/jitter_stutter.rst:84
-#, fuzzy
 msgid "Android"
 msgstr "Android"
 
 #: ../../docs/about/faq.rst:45
 #: ../../docs/getting_started/step_by_step/exporting.rst:238
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
-#, fuzzy
 msgid "iOS"
 msgstr "iOS"
 
 #: ../../docs/about/faq.rst:46
-#, fuzzy
 msgid "Web"
 msgstr "Web"
 
@@ -742,7 +735,6 @@ msgid "What is GDScript and why should I use it?"
 msgstr "Apa itu GDScript dan kenapa saya ingin menggunakanya?"
 
 #: ../../docs/about/faq.rst:90
-#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -887,32 +879,41 @@ msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
+"Sulitnya untuk megintegrasikan kode editor agar menyediakan kode completion, "
+"live editing, dll (semuanya itu). Ini didukung baik oleh GDScript."
 
 #: ../../docs/about/faq.rst:142
+#, fuzzy
 msgid "GDScript was designed to curtail the issues above and more."
-msgstr ""
+msgstr "GDScript dirancang  untuk mengurasi masalah diatas dan banyak lagi."
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "Apa jenis format model 3D yang didukung Godot?"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
+"Godot mendukung Collada melalui `OpenCollada<<https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_exporter(Maya, 3DSMax)."
 
 #: ../../docs/about/faq.rst:149
+#, fuzzy
 msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"Jika kamu menggunakan Blender, Lihat punya kami `Better Collada Exporter "
+"<https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "Pada Godot 3.0, glTF telah didukung."
 
 #: ../../docs/about/faq.rst:153
+#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -920,32 +921,53 @@ msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question below.)"
 msgstr ""
+"FBX SDK memiliki `restrictive license <https://www.blender.org/bf/"
+"Autodesk_FBX_License.rtf>`_, itu tidak kompatible dengan `open license "
+"<https://opensource.org/licenses/MIT>`_ yang disediakan oleh Godot. Yang "
+"telah dikatakan, dukungan FBX tetap bisa disediakan oleh pihak ke tiga "
+"sebagai plugin. (lihat pertanyaan plugins dibawah ini)."
 
 #: ../../docs/about/faq.rst:159
+#, fuzzy
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
+"Akankah sdk tertutup seperti FMOD, GameWorks, dll akan didukung didalam "
+"Godot?"
 
 #: ../../docs/about/faq.rst:161
+#, fuzzy
 msgid ""
 "The aim of Godot is to create a free and open-source MIT-licensed engine "
 "that is modular and extendable. There are no plans for the core engine "
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"Tujuan dari Godot adalah untuk menciptakan engine berlisensi MIT yang bebas "
+"dan terbuka , modular dan dapat dikembangkan. Tidak ada rencana untuk "
+"komunitas pengembang engine inti untuk mendukung pihak ketiga manapun, kode "
+"tertutup/hak milik SDK, berintegrasi dengan ini akan melawan etos dari Godot."
 
 #: ../../docs/about/faq.rst:166
+#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
+"Dikatakan, karena Godot bersifat kode terbuka dan modular, tidak ada yang "
+"mencegah mu atau siapapun yang tertarik menambahkan librari tersebut sebagai "
+"module dan mengirim game mu dengan mereka -- baik kode tertutup ataupun kode "
+"terbuka."
 
 #: ../../docs/about/faq.rst:170
+#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
+"Untuk melihat dukungan terhdapat SDK pilihan mu tetap disediakan, lihat pada "
+"bagian pertanyaan plugins dibawah ini."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -954,14 +976,21 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"Jika kamu tahu SDK pihak ketiga tidak didukung oleh Godot tetapi menawarkan "
+"integrasi yang bebas dan kode terbuka, pertimbangan untuk memulai integrasi "
+"sendiri. Godot tidak dimiliki oleh satu orang; itu milik komunitas, dan "
+"berkembang dengan ambisi kontributor komunitas seperti mu."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
+"Bagaimana seharusnya assets dibuat untuk menangani banyak resolusi dan aspek "
+"rasio?"
 
 #: ../../docs/about/faq.rst:181
+#, fuzzy
 msgid ""
 "This question pops up often and it's probably thanks to the misunderstanding "
 "created by Apple when they originally doubled the resolution of their "
@@ -971,16 +1000,30 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"Pertanyaan ini sering muncul dan mungkin harus berterimakasih untuk "
+"kesalahpahaman yang dibuat oleh Apple ketika mereka awalnya menggandakan "
+"resolusi dari perangkat mereka. hal itu membuat orang berfikir bahwa "
+"memiliki assets yang sama pada resolusi yang berbeda adalah dide yang baik, "
+"jadi banyak yang mengikuti jalan tersebut. Awalnya hal tersebut bekerja ke "
+"suatu titik tertentu dan hanya perangkat Apple, tetapi kemudian perangkat "
+"Android dan Apple dengan resolusi dan aspek rasio yang berbeda diciptakan,  "
+"dengan jangkauan ukuran dan DPIs yang sangat luas."
 
 #: ../../docs/about/faq.rst:189
+#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
+"cara yang paling umum dan layak untuk mencapai ini  adalah untuk sebagai "
+"gantinya, gunakan resolusi basis tunggal untuk game dan tangani hanya "
+"resolusi dan aspek rasio yang berbeda. Hal ini sangat diperlukan untuk 2D, "
+"seperti dalam 3D seperti masalah dari kamera XFov atau YFov"
 
 #: ../../docs/about/faq.rst:193
+#, fuzzy
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -989,13 +1032,24 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"Pilihlah resolusi basis tunggal untuk game kamu. Meskipun jika ada perangkat "
+"yang mimiliki resolusi diatas 2K dan dibawah 400p, scaling perangkat keras "
+"biasa pada perangkatmu  akan melakukkannya atau tidak ada performance yang "
+"menurun. Umunya pilihannya diantar 1080p (1920x1080) atau 720p (1280x720). "
+"Perlu diingat bahwa resolusi yang lebih tinggi, membuat asset mu lebih "
+"besar, dengan demikian banyak memory yang diperlukan dan waktu loadingnya "
+"juga lebih lama."
 
 #: ../../docs/about/faq.rst:201
+#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
+"Gunakan pilihan strecth pada Godot; stretching 2D akan tetap menjaga aspek "
+"rasio dan berkerja dengan baik. lihat :ref:`doc_multiple_resolutions "
+"tutorial tentang cara mencapai ini."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -1004,6 +1058,10 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
+"Tentukan resolusi minimal dan kemudian tentukan jika gamu kamu ingin melebar "
+"(stretch) secara vertikal atau horizontal untuk aspek rasio yang berbeda, "
+"atau jika ada satu aspek rasio dan kamu ingin menampilkan bar hitam sebagai "
+"gantinya. Hal ini juga dijelaskan di :ref:`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:210
 msgid ""

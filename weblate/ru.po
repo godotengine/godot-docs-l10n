@@ -68,6 +68,7 @@
 # stalker3204 <stalker3204@yandex.ru>, 2019.
 # S.traiker.D <l1evilone@gmail.com>, 2018.
 # teriva <spirin.cos@yandex.ru>, 2018.
+# Vladislav <onion.ring@mail.ru>, 2019.
 # wotanweb <pooding55@gmail.com>, 2018.
 # Yan <uvokinuvokines@gmail.com>, 2018.
 # Азиз Ганиев <ajganiev@gmail.com>, 2018.
@@ -99,8 +100,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-02 14:18+0200\n"
-"PO-Revision-Date: 2019-07-02 12:04+0000\n"
-"Last-Translator: Chaosus89 <chaosus89@gmail.com>\n"
+"PO-Revision-Date: 2019-07-15 15:55+0000\n"
+"Last-Translator: Vladislav <onion.ring@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -18696,6 +18697,10 @@ msgid ""
 "you to wait for a frame to pass, a fixed frame or a given amount of time "
 "until execution is resumed."
 msgstr ""
+"Узлы ожидания приостановят выполнение функции пока что-нибудь не случится "
+"(при этом может пройти не один кадр). Данные узлы по умолчанию позволяют "
+"дождаться окончания кадра, прохождения фиксированного количества кадров или "
+"определённого количества времени перед продолжением исполнения."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:298
@@ -18707,6 +18712,9 @@ msgid ""
 "This node completely suspends the execution of the script, and it will make "
 "the function return a value that can be used to resume execution."
 msgstr ""
+"Этот узел полностью приостанавливает выполнение скрипта, и функция "
+"возвращает значение, которое может быть использовано для возобновления "
+"выполнения."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:458
 msgid "Yield Signal"
@@ -18715,16 +18723,19 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Same as Yield, but will wait until a given signal is emitted."
 msgstr ""
+"То же, что и Yield, но будет ждать, пока данный сигнал не будет испущен."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
-msgstr ""
+msgstr "Индекс"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
 msgstr ""
+"Общий оператор индексирования, используется не часто, но он существует, на "
+"всякий случай."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
 msgid ""
@@ -18734,10 +18745,15 @@ msgid ""
 "the operator). It is always recommended to set the right type for operators "
 "to catch errors faster and make the graph easier to read."
 msgstr ""
+"Это в основном общие операторы, такие как сложение, умножение, сравнение и т."
+"д. По умолчанию, они принимают в принципе любой тип данных (и будут бросать "
+"ошибку во время выполнения, если подаваемые типы не соответствуют ожиданиям "
+"оператора). Всегда рекомендуется выбирать правильный тип, чтобы операторы "
+"быстрее улавливали ошибки и облегчали чтение графа."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:481
 msgid "Expression Node"
-msgstr ""
+msgstr "Узел Выражения"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid ""
@@ -61224,8 +61240,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
+#, fuzzy
 msgid "Asset Library"
-msgstr ""
+msgstr "Открыть библиотеку шаблонов"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
