@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"POT-Creation-Date: 2019-07-17 12:25+0200\n"
 "PO-Revision-Date: 2019-07-02 12:04+0000\n"
 "Last-Translator: gergely87 <gergely87@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/godot-engine/"
@@ -25757,10 +25757,10 @@ msgstr ""
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:153
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:195
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:221
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:266
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:280
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:299
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:352
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:267
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:281
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:300
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:353
 msgid "*This feature is only available when using the GLES3 backend.*"
 msgstr ""
 
@@ -27553,11 +27553,19 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:259
 msgid ""
+"**Ao Channel Affect:** If a value of zero is used, only the material's AO "
+"texture will be used for ambient occlusion; SSAO will not be applied. Values "
+"greater than 0 multiply the AO texture by the SSAO effect to varying "
+"degrees. This does not affect materials without an AO texture."
+msgstr ""
+
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:260
+msgid ""
 "**Quality:** Depending on quality, SSAO will take more samples over a sphere "
 "for every pixel. High quality only works well on modern GPUs."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:260
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:261
 msgid ""
 "**Blur:** Type of blur kernel used. The 1x1 kernel is a simple blur that "
 "preserves local detail better, but is not as efficient (generally works "
@@ -27566,65 +27574,65 @@ msgid ""
 "detail as well."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:261
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:262
 msgid ""
 "**Edge Sharpness**: This can be used to preserve the sharpness of edges "
 "(avoids areas without AO on creases)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:264
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:265
 msgid "Depth of Field / Far Blur"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:268
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:269
 msgid ""
 "This effect simulates focal distance on high end cameras. It blurs objects "
 "behind a given range. It has an initial **Distance** with a **Transition** "
 "region (in world units):"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:274
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:288
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:275
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:289
 msgid ""
 "The **Amount** parameter controls the amount of blur. For larger blurs, "
 "tweaking the **Quality** may be needed in order to avoid artifacts."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:278
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:279
 msgid "Depth of Field / Near Blur"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:282
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:283
 msgid ""
 "This effect simulates focal distance on high end cameras. It blurs objects "
 "close to the camera (acts in the opposite direction as far blur). It has an "
 "initial **Distance** with a **Transition** region (in world units):"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:291
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:292
 msgid ""
 "It is common to use both blurs together to focus the viewer's attention on a "
 "given object:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:297
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:298
 msgid "Glow"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:301
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:302
 msgid ""
 "In photography and film, when light amount exceeds the maximum supported by "
 "the media (be it analog or digital), it generally bleeds outwards to darker "
 "regions of the image. This is simulated in Godot with the **Glow** effect."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:307
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:308
 msgid ""
 "By default, even if the effect is enabled, it will be weak or invisible. One "
 "of two conditions need to happen for it to actually show:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:310
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:311
 msgid ""
 "The light in a pixel surpasses the **HDR Threshold** (where 0 is all light "
 "surpasses it, and 1.0 is light over the tonemapper **White** value). "
@@ -27634,27 +27642,27 @@ msgid ""
 "threshold."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:314
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:315
 msgid ""
 "The Bloom effect has a value set greater than 0. As it increases, it sends "
 "the whole screen to the glow processor at higher amounts."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:318
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:319
 msgid "Both will cause the light to start bleeding out of the brighter areas."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:320
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:321
 msgid "Once glow is visible, it can be controlled with a few extra parameters:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:322
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
 msgid ""
 "**Intensity** is an overall scale for the effect, it can be made stronger or "
 "weaker (0.0 removes it)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:324
 msgid ""
 "**Strength** is how strong the gaussian filter kernel is processed. Greater "
 "values make the filter saturate and expand outwards. In general, changing "
@@ -27662,78 +27670,78 @@ msgid ""
 "**Levels**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:325
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:326
 msgid "The **Blend Mode** of the effect can also be changed:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:327
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:328
 msgid ""
 "**Additive** is the strongest one, as it just adds the glow effect over the "
 "image with no blending involved. In general, it's too strong to be used, but "
 "can look good with low intensity Bloom (produces a dream-like effect)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:328
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:329
 msgid ""
 "**Screen** is the default one. It ensures glow never brights more than "
 "itself and works great as an all around."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:329
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:330
 msgid ""
 "**Softlight** is the weakest one, producing only a subtle color disturbance "
 "around the objects. This mode works best on dark scenes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:330
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:331
 msgid ""
 "**Replace** can be used to blur the whole screen or debug the effect. It "
 "just shows the glow effect without the image below."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:332
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:333
 msgid ""
 "To change the glow effect size and shape, Godot provides **Levels**. Smaller "
 "levels are strong glows that appear around objects, while large levels are "
 "hazy glows covering the whole screen:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:338
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:339
 msgid ""
 "The real strength of this system, though, is to combine levels to create "
 "more interesting glow patterns:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:343
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:344
 msgid ""
 "Finally, as the highest layers are created by stretching small blurred "
 "images, it is possible that some blockiness may be visible. Enabling "
 "**Bicubic Upscaling** gets rids of it, at a minimal performance cost."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:350
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:351
 msgid "Adjustments"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:354
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:355
 msgid ""
 "At the end of processing, Godot offers the possibility to do some standard "
 "image adjustments."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:359
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:360
 msgid ""
 "The first one is being able to change the typical Brightness, Contrast, and "
 "Saturation:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:364
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:365
 msgid ""
 "The second is by supplying a color correction gradient. A regular black to "
 "white gradient like the following one will produce no effect:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:369
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:370
 msgid ""
 "But creating custom ones will allow to map each channel to a different color:"
 msgstr ""
@@ -27878,110 +27886,10 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:104
 msgid ""
-"HDR is found in the :ref:`Environment <class_Environment>` resource. These "
-"are found most of the time inside a :ref:`WorldEnvironment "
-"<class_WorldEnvironment>` node or set in a camera. There are many parameters "
-"for HDR:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:112
-msgid "ToneMapper"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:114
-msgid ""
-"The ToneMapper is the heart of the algorithm. Many options for tonemappers "
-"are provided:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:117
-msgid ""
-"**Linear:** Simplest tonemapper. It does its job for adjusting scene "
-"brightness, but if the differences in light are too big, it will cause "
-"colors to be too saturated."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:120
-msgid "**Log:** Similar to linear but not as extreme."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:121
-msgid ""
-"**Reinhardt:** Classical tonemapper (modified, so it will not desaturate as "
-"much)"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:123
-msgid ""
-"**ReinhardtAutoWhite:** Same as above, but uses the max scene luminance to "
-"adjust the white value."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:127
-msgid "Exposure"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:129
-msgid ""
-"The same exposure parameter as in real cameras. Controls how much light "
-"enters the camera. Higher values will result in a brighter scene, and lower "
-"values will result in a darker scene."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:134
-msgid "White"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:136
-msgid "Maximum value of white."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:139
-msgid "Glow threshold"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:141
-msgid ""
-"Determines above which value (from 0 to 1 after the scene is tonemapped) "
-"light will start bleeding."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:145
-msgid "Glow scale"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:147
-msgid "Determines how much light will bleed."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:150
-msgid "Min luminance"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:152
-msgid ""
-"Lower bound value of light for the scene at which the tonemapper stops "
-"working. This allows dark scenes to remain dark."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:156
-msgid "Max luminance"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:158
-msgid ""
-"Upper bound value of light for the scene at which the tonemapper stops "
-"working. This allows bright scenes to remain saturated."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:162
-msgid "Exposure adjustment speed"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:164
-msgid ""
-"Auto-exposure will change slowly and will take a while to adjust (like in "
-"real cameras). Bigger values mean faster adjustment."
+"HDR setting can be found in the :ref:`Environment <class_Environment>` "
+"resource. These are found most of the time inside a :ref:`WorldEnvironment "
+"<class_WorldEnvironment>` node or set in a camera. For more information see :"
+"ref:`doc_environment_and_post_processing`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:4
@@ -65066,9 +64974,8 @@ msgid "This text reads as follows:"
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:22
-#, fuzzy
-msgid "Godot Engine"
-msgstr "A Godot Motorról"
+msgid "This game uses Godot Engine, available under the following license:"
+msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:24
 msgid ""
@@ -65087,14 +64994,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:29
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:88
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:90
 msgid ""
 "The above copyright notice and this permission notice shall be included in "
 "all copies or substantial portions of the Software."
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:31
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:90
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:92
 msgid ""
 "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR "
 "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
@@ -65105,73 +65012,80 @@ msgid ""
 "IN THE SOFTWARE."
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:35
-msgid "Inclusion"
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:34
+msgid ""
+"Your games do not need to be under the same license. You are free to release "
+"your Godot projects under any license and to create commercial games with "
+"the engine."
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:37
+msgid "Inclusion"
+msgstr ""
+
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:39
 msgid ""
 "The license does not specify how it has to be included, so anything is valid "
 "as long as it can be displayed under some condition. These are the most "
 "common approaches (only need to implement one of them, not all)."
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:40
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:42
 msgid "Credits screen"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:42
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:44
 msgid ""
 "Include the above license text somewhere in the credits screen. It can be at "
 "the bottom after showing the rest of the credits. Most large studios use "
 "this approach with open source licenses."
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:45
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:47
 #, fuzzy
 msgid "Licenses screen"
 msgstr "Licenc"
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:47
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:49
 msgid ""
 "Some games have a special menu (often in the settings) to display licenses."
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:50
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:52
 msgid "Output log"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:52
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:54
 msgid ""
 "Just printing the licensing text using a :ref:`print() "
 "<class_@GDScript_method_print>` function may be enough on platforms where a "
 "global output log is readable (as an example, mobile devices)."
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:55
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:57
 msgid "Accompanying file"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:57
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:59
 msgid ""
 "If the game is distributed on desktop operating systems, a file containing "
 "the license can be added to the software that is installed to the user PC."
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:60
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:62
 msgid "Printed manual"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:62
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:64
 msgid ""
 "If the game includes printed manuals, license text can be included there."
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:65
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:67
 msgid "Third Party licenses"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:67
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:69
 msgid ""
 "Godot itself contains software written by `third parties <https://github.com/"
 "godotengine/godot/blob/master/COPYRIGHT.txt>`_. Most of it does not require "
@@ -65179,38 +65093,38 @@ msgid ""
 "Here is a list of which ones require it:"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:70
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:72
 msgid "FreeType"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:72
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:74
 msgid ""
 "Godot uses `FreeType <https://www.freetype.org/>`_ to render fonts. Its "
 "license requires attribution, so the following text must be included "
 "together with the Godot license:"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:75
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:77
 msgid ""
 "Portions of this software are copyright © <year> The FreeType Project (www."
 "freetype.org).  All rights reserved."
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:79
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:81
 msgid "ENet"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:81
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:83
 msgid ""
 "If the project being created is a multiplayer game using the `ENet <http://"
 "enet.bespin.org/>`_ driver, ENet has similar licensing terms as Godot"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:84
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:86
 msgid "Copyright (c) 2002-2016 Lee Salzman"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:86
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:88
 msgid ""
 "Permission is hereby granted, free of charge, to any person obtaining a copy "
 "of this software and associated documentation files (the \"Software\"), to "
@@ -65220,33 +65134,33 @@ msgid ""
 "furnished to do so, subject to the following conditions:"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:93
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:95
 msgid "MBedTLS"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:95
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:97
 msgid ""
 "If the project is done with Godot 3.1 or above and it utilizes SSL (usually "
 "through HTTP requests), the `MBedTLS <https://tls.mbed.org>`_ Apache license "
 "needs to be complied by including the following text:"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:98
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:100
 msgid "MBedTLS is Copyright (C) 2013-2019 ARM"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:100
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:102
 msgid ""
 "Licensed under the Apache License, Version 2.0 (the \"License\"); you may "
 "not use this file except in compliance with the License. You may obtain a "
 "copy of the License at"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:102
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:104
 msgid "http://www.apache.org/licenses/LICENSE-2.0"
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:104
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:106
 msgid ""
 "Unless required by applicable law or agreed to in writing, software "
 "distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT "
@@ -65255,7 +65169,7 @@ msgid ""
 "under the License."
 msgstr ""
 
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:106
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:108
 msgid ""
 "Keep in mind that Godot 2.x and 3.0 use `OpenSSL <https://www.openssl.org>`_ "
 "instead."
@@ -73308,6 +73222,10 @@ msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Godot Engine"
+#~ msgstr "A Godot Motorról"
 
 #, fuzzy
 #~ msgid "There is a few things to note here."
