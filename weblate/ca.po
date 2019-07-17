@@ -5,14 +5,15 @@
 # Alejandro Álvarez Monllor <alvarezmonllor@gmail.com>, 2018.
 # roger <616steam@gmail.com>, 2019.
 # Roger Blanco Ribera <roger.blancoribera@gmail.com>, 2018.
+# Xavier Gomez <hiulit@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-15 18:11+0200\n"
-"PO-Revision-Date: 2019-07-12 03:01+0000\n"
-"Last-Translator: roger <616steam@gmail.com>\n"
+"PO-Revision-Date: 2019-07-17 07:18+0000\n"
+"Last-Translator: Xavier Gomez <hiulit@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ca/>\n"
 "Language: ca\n"
@@ -31,12 +32,11 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"La documentació de Godot està disponible en diversos llenguatges i versions. "
+"La documentació de Godot està disponible en diversos llengües i versions. "
 "Expandiu el panell \"Read the Docs\" al peu de la barra lateral per a veure "
 "la llista."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the development (master) branch. Looking for "
 "the documentation of the current **stable** branch? `Have a look here "
@@ -52,9 +52,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
-"Aquesta documentació està traduïda de la `original en angles <https://docs."
-"godotengine.org/en/latest>`_ per membres de la comunitat en `Weblate "
-"<https://hosted.weblate.org/projects/godot-engine/godot-docs>`_."
+"Aquesta documentació està traduïda de la `original en anglès <https://docs."
+"godotengine.org/en/latest>`_ per membres de la comunitat a `Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:20
 #, fuzzy
@@ -69,15 +69,14 @@ msgstr ""
 "comunitat proporcionant noves traduccions o revisant les existents a Weblate."
 
 #: ../../docs/index.rst:25
-#, fuzzy
 msgid ""
 "For the time being, localized translations are only available for the "
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
 "De moment, les traduccions localitzades només estan disponibles per a la "
-"branca \"latest\" (desenvolupament), però haurien de ser adequades per "
-"aprendre a utilitzar les versions estables de Godot tot i així."
+"branca \"latest\" (desenvolupament), però  tot i així haurien de ser "
+"adequades per aprendre a utilitzar les versions estables de Godot."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -909,6 +908,8 @@ msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"Si esteu fent servir Blender, feu un cop d'ull al nostro propi `Millor "
+"exportador de Collada <https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
@@ -1074,6 +1075,10 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"Per a les interfícies d'usuari, feu servir :ref:`ancoratge "
+"<doc_size_and_anchors>`per a determinar on els controls s'haurien de quedar "
+"estàtics i on s'haurien de moure. Si les interfícies d'usuari son més "
+"complexes, considereu aprendre sobre Contenidors."
 
 #: ../../docs/about/faq.rst:214
 #, fuzzy
@@ -73459,9 +73464,8 @@ msgid "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`__"
 msgstr ""
 
 #: ../../docs/community/tutorials.rst:36
-#, fuzzy
 msgid "Text tutorials"
-msgstr "Tutorials"
+msgstr "Tutorials en text"
 
 #: ../../docs/community/tutorials.rst:38
 msgid "`Godot Recipes by KidsCanCode <http://godotrecipes.com/>`__"
@@ -73473,31 +73477,39 @@ msgstr ""
 
 #: ../../docs/community/tutorials.rst:42
 msgid "Devlogs"
-msgstr ""
+msgstr "Registres de desenvolupament"
 
 #: ../../docs/community/tutorials.rst:44
 msgid ""
 "`Andrea Catania (Physics & AI) <https://www.youtube.com/channel/"
 "UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 msgstr ""
+"`Andrea Catania (Physics & AI) <https://www.youtube.com/channel/"
+"UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 
 #: ../../docs/community/tutorials.rst:45
 msgid ""
 "`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
 "vJC011lYw/videos>`_"
 msgstr ""
+"`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
+"vJC011lYw/videos>`_"
 
 #: ../../docs/community/tutorials.rst:50
 msgid ""
 "`awesome-godot: A curated list of resources by Calinou <https://github.com/"
 "Calinou/awesome-godot>`_"
 msgstr ""
+"`awesome-godot: Una llista de recursos curada per Calinou <https://github."
+"com/Calinou/awesome-godot>`_"
 
 #: ../../docs/community/tutorials.rst:51
 msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+"`Zeef Godot Engine: Un directori de recursos curat per Andre Schmitz "
+"<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 
 #~ msgid "Step-by-step"
 #~ msgstr "Pas a pas"
