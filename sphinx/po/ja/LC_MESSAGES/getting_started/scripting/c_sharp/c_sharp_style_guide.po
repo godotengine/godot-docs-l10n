@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"POT-Creation-Date: 2019-07-17 12:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,15 +119,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:60
 msgid "For simple property accessors."
-msgstr ""
+msgstr "単純なプロパティアクセサーの場合。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:61
 msgid "For simple object, array, or collection initializers."
-msgstr ""
+msgstr "単純なオブジェクト、配列、またはコレクションの初期化子の場合。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:62
 msgid "For abstract auto property, indexer, or event declarations."
-msgstr ""
+msgstr "抽象自動プロパティ、インデクサー、またはイベント宣言の場合。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:84
 msgid "Insert a blank line:"
@@ -194,11 +194,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
 msgid "Before and within a single line accessor block."
-msgstr ""
+msgstr "単一行アクセサーブロックの前および中。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:143
 msgid "Between accessors in a single line accessor block."
-msgstr ""
+msgstr "単一行アクセサーブロック内のアクセサー間。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
 msgid "After a comma which is not at the end of a line."
@@ -214,11 +214,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
 msgid "Around a colon in a type declaration."
-msgstr ""
+msgstr "型宣言のコロンの周囲。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:148
 msgid "Around a lambda arrow."
-msgstr ""
+msgstr "ラムダ矢印の周り。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:149
 msgid ""
@@ -236,7 +236,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
 msgid "Within single line initializer braces."
-msgstr ""
+msgstr "単一行のイニシライザー中かっこ内。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:156
 msgid ""
@@ -289,6 +289,8 @@ msgid ""
 "Lastly, consider choosing descriptive names and do not try to shorten them "
 "too much if it affects readability."
 msgstr ""
+"最後に、わかりやすい名前を選択することを検討し、読みやすさに影響を与える場合"
+"は、あまり短くしないでください。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:249
 msgid ""
@@ -317,11 +319,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:296
 msgid "Use explicit access modifiers."
-msgstr ""
+msgstr "明示的なアクセス修飾子を使用します。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:297
 msgid "Use properties instead of non-private fields."
-msgstr ""
+msgstr "非プライベートフィールドの代わりにプロパティを使用します。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:298
 msgid ""
@@ -349,9 +351,13 @@ msgid ""
 "Consider using null-conditional operators or type initializers to make the "
 "code more compact."
 msgstr ""
+"コードをよりコンパクトにするために、null条件演算子または型初期化を使用するこ"
+"とを検討してください。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
 msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."
 msgstr ""
+"値が異なるタイプである可能性がある場合は、セーフキャストを使用し、それ以外の"
+"場合は直接キャストを使用します。"

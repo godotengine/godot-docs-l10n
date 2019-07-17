@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"POT-Creation-Date: 2019-07-17 12:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,108 +161,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:104
 msgid ""
-"HDR is found in the :ref:`Environment <class_Environment>` resource. These "
-"are found most of the time inside a :ref:`WorldEnvironment "
-"<class_WorldEnvironment>` node or set in a camera. There are many parameters "
-"for HDR:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:112
-msgid "ToneMapper"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:114
-msgid ""
-"The ToneMapper is the heart of the algorithm. Many options for tonemappers "
-"are provided:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:117
-msgid ""
-"**Linear:** Simplest tonemapper. It does its job for adjusting scene "
-"brightness, but if the differences in light are too big, it will cause "
-"colors to be too saturated."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:120
-msgid "**Log:** Similar to linear but not as extreme."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:121
-msgid ""
-"**Reinhardt:** Classical tonemapper (modified, so it will not desaturate as "
-"much)"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:123
-msgid ""
-"**ReinhardtAutoWhite:** Same as above, but uses the max scene luminance to "
-"adjust the white value."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:127
-msgid "Exposure"
-msgstr "Експозиція"
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:129
-msgid ""
-"The same exposure parameter as in real cameras. Controls how much light "
-"enters the camera. Higher values will result in a brighter scene, and lower "
-"values will result in a darker scene."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:134
-msgid "White"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:136
-msgid "Maximum value of white."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:139
-msgid "Glow threshold"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:141
-msgid ""
-"Determines above which value (from 0 to 1 after the scene is tonemapped) "
-"light will start bleeding."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:145
-msgid "Glow scale"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:147
-msgid "Determines how much light will bleed."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:150
-msgid "Min luminance"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:152
-msgid ""
-"Lower bound value of light for the scene at which the tonemapper stops "
-"working. This allows dark scenes to remain dark."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:156
-msgid "Max luminance"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:158
-msgid ""
-"Upper bound value of light for the scene at which the tonemapper stops "
-"working. This allows bright scenes to remain saturated."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:162
-msgid "Exposure adjustment speed"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:164
-msgid ""
-"Auto-exposure will change slowly and will take a while to adjust (like in "
-"real cameras). Bigger values mean faster adjustment."
+"HDR setting can be found in the :ref:`Environment <class_Environment>` "
+"resource. These are found most of the time inside a :ref:`WorldEnvironment "
+"<class_WorldEnvironment>` node or set in a camera. For more information see :"
+"ref:`doc_environment_and_post_processing`."
 msgstr ""

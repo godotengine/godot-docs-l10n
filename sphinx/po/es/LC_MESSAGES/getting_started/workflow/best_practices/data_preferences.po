@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"POT-Creation-Date: 2019-07-17 12:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,27 +138,32 @@ msgid ""
 "for example, a :ref:`PoolStringArray <class_PoolStringArray>` would be "
 "something like a ``Vector<String>``."
 msgstr ""
-"Para los que no están familiarizados con C++, Vector e el nombre del objeto "
-"de arreglo tradicional en librerías C++. Es un tipo \"templated\", quiere "
-"decir que sus registros pueden contener sólo un tipo particuar (denotado por "
-"símbolos mayor y menor). Por ejemplo, un :ref:`PoolStringArray "
-"<class_PoolStringArray>` sería algo como ``Vector<String>``."
+"Para los que no están familiarizados con C++, Vector es el nombre del objeto "
+"array en las librerías tradicionales de C++. Se trata de un tipo de "
+"\"plantilla\", lo que significa que sus registros sólo pueden contener un "
+"tipo particular (indicado mediante corchetes angulares). Así, por ejemplo, "
+"un :ref:`PoolStringArray <class_PoolStringArray>` sería algo así como un "
+"``Vector<String>``."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:60
 msgid "Contiguous memory stores imply the following operation performance:"
 msgstr ""
+"Los almacenes de memoria contiguos implican el siguiente rendimiento de la "
+"operación:"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:62
 msgid "**Iterate:** Fastest. Great for loops."
-msgstr ""
+msgstr "**Iterate:** El más rápido. Ideal para loops."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:64
 msgid "Op: All it does is increment a counter to get to the next record."
 msgstr ""
+"Op: Lo único que hace es incrementar un contador para llegar al siguiente "
+"registro."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:66
 msgid "**Insert, Erase, Move:** Position-dependent. Generally slow."
-msgstr ""
+msgstr "**Insert, Erase, Move:** Depende de la posición. En general, es lento."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:68
 msgid ""

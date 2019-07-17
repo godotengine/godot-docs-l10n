@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"POT-Creation-Date: 2019-07-17 12:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:4
 msgid "One-click deploy"
-msgstr ""
+msgstr "ワンクリック展開"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
 msgid "Sounds good, what is it?"
-msgstr ""
+msgstr "いいですね、それは何ですか？"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
 msgid ""
@@ -33,6 +33,12 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, kitty ate "
 "the USB cable, etc.), it's good to let the user know that it exists."
 msgstr ""
+"この機能は、プラットフォームが正しく構成され、サポートされているデバイスがコ"
+"ンピュータに接続されると、自動的にポップアップ表示されます。多くのレベルで問"
+"題が発生する可能性があるため(プラットフォームが正しく設定されていない場合、"
+"SDKが正しくインストールされていない、デバイスが正しく設定されていない、デバイ"
+"スが不適切に設定されている可能性がある、キティがUSBケーブルを食べたなど)、そ"
+"れが存在することをユーザーに知らせるのは良いことです。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:16
 msgid ""
@@ -42,14 +48,19 @@ msgid ""
 "the device. This feature is called, in industry buzz-words, \"One Click "
 "Deploy\" (though, it's technically two clicks...)."
 msgstr ""
+"一部のプラットフォーム (このドキュメントの執筆時点では、AndroidとBlackberry10"
+"のみ)は、USBデバイスがコンピュータに接続されているタイミングを検出し、デバイ"
+"ス上でプロジェクトを自動的にエクスポート、インストール、および実行するように"
+"ユーザーに提供できます。この機能は、業界の流行語で \"One Click Deploy\" と呼"
+"ばれています(ただし、技術的には2回のクリックです...)。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
 msgid "Steps for one-click deploy"
-msgstr ""
+msgstr "ワンクリック展開の手順"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:25
 msgid "Configure target platform."
-msgstr ""
+msgstr "ターゲットプラットフォームを構成します。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
 msgid ""
@@ -59,7 +70,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:28
 msgid "Connect the device.."
-msgstr ""
+msgstr "デバイスを接続します。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:29
 msgid "And voilà!"
@@ -67,4 +78,4 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:33
 msgid "Click once.. and deploy!"
-msgstr ""
+msgstr "一度クリックします。展開!"

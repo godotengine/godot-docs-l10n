@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-15 18:11+0200\n"
+"POT-Creation-Date: 2019-07-17 12:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -287,10 +287,10 @@ msgstr "品质图"
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:153
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:195
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:221
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:266
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:280
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:299
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:352
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:267
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:281
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:300
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:353
 #, fuzzy
 msgid "*This feature is only available when using the GLES3 backend.*"
 msgstr "此选项仅适用于基于unix的平台。"
@@ -581,6 +581,14 @@ msgstr ""
 "喜欢这种效果。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:259
+msgid ""
+"**Ao Channel Affect:** If a value of zero is used, only the material's AO "
+"texture will be used for ambient occlusion; SSAO will not be applied. Values "
+"greater than 0 multiply the AO texture by the SSAO effect to varying "
+"degrees. This does not affect materials without an AO texture."
+msgstr ""
+
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:260
 #, fuzzy
 msgid ""
 "**Quality:** Depending on quality, SSAO will take more samples over a sphere "
@@ -589,7 +597,7 @@ msgstr ""
 "**质量:** 根据质量，SSAO将针对每个像素对球体进行更多采样。 高品质仅适用于现代"
 "GPU。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:260
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:261
 #, fuzzy
 msgid ""
 "**Blur:** Type of blur kernel used. The 1x1 kernel is a simple blur that "
@@ -602,17 +610,17 @@ msgstr ""
 "节，但效率不高(通常在上面的高质量设置下效果更好)，而3x3会更好地柔化图像(有一"
 "点像抖动效果)但不保留局部 细节也是如此。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:261
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:262
 msgid ""
 "**Edge Sharpness**: This can be used to preserve the sharpness of edges "
 "(avoids areas without AO on creases)."
 msgstr "**边缘清晰度**:这可用于保持边缘的清晰度(避免折痕处没有AO的区域)。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:264
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:265
 msgid "Depth of Field / Far Blur"
 msgstr "景深/远模糊"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:268
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:269
 msgid ""
 "This effect simulates focal distance on high end cameras. It blurs objects "
 "behind a given range. It has an initial **Distance** with a **Transition** "
@@ -621,8 +629,8 @@ msgstr ""
 "此效果可模拟高端相机的焦距。 它模糊了给定范围后面的物体。 它有一个** **距离"
 "**， **过渡** 区域(世界单位):"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:274
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:288
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:275
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:289
 msgid ""
 "The **Amount** parameter controls the amount of blur. For larger blurs, "
 "tweaking the **Quality** may be needed in order to avoid artifacts."
@@ -630,11 +638,11 @@ msgstr ""
 "** Amount **参数控制模糊量。 对于较大的模糊，可能需要调整 **质量** 以避免伪"
 "影。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:278
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:279
 msgid "Depth of Field / Near Blur"
 msgstr "景深/近模糊"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:282
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:283
 msgid ""
 "This effect simulates focal distance on high end cameras. It blurs objects "
 "close to the camera (acts in the opposite direction as far blur). It has an "
@@ -643,17 +651,17 @@ msgstr ""
 "此效果可模拟高端相机的焦距。 它使靠近相机的物体模糊(在远处模糊的相反方向上作"
 "用)。 它有一个** **距离**， **过渡** 区域(世界单位):"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:291
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:292
 msgid ""
 "It is common to use both blurs together to focus the viewer's attention on a "
 "given object:"
 msgstr "通常使用两种模糊将观众的注意力集中在给定对象上:"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:297
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:298
 msgid "Glow"
 msgstr "辉光"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:301
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:302
 msgid ""
 "In photography and film, when light amount exceeds the maximum supported by "
 "the media (be it analog or digital), it generally bleeds outwards to darker "
@@ -662,7 +670,7 @@ msgstr ""
 "在摄影和胶片中，当光量超过介质支持的最大值(无论是模拟还是数字)时，它通常会向"
 "外渗出到图像的较暗区域。 这是在Godot中用** Glow **效果模拟的。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:307
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:308
 msgid ""
 "By default, even if the effect is enabled, it will be weak or invisible. One "
 "of two conditions need to happen for it to actually show:"
@@ -670,7 +678,7 @@ msgstr ""
 "默认情况下，即使启用了效果，它也会变弱或不可见。 实际显示它需要发生的两个条件"
 "之一:"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:310
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:311
 #, fuzzy
 msgid ""
 "The light in a pixel surpasses the **HDR Threshold** (where 0 is all light "
@@ -685,7 +693,7 @@ msgstr ""
 "血。 还有一个额外的参数，** HDR Scale **，允许超出阈值的光线缩放(使亮度更高或"
 "更暗)。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:314
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:315
 msgid ""
 "The Bloom effect has a value set greater than 0. As it increases, it sends "
 "the whole screen to the glow processor at higher amounts."
@@ -693,21 +701,21 @@ msgstr ""
 "Bloom效果的值设置大于0.随着它的增加，它会以更高的数量将整个屏幕发送到辉光处理"
 "器。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:318
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:319
 msgid "Both will cause the light to start bleeding out of the brighter areas."
 msgstr "两者都会导致光从较亮的区域开始流血。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:320
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:321
 msgid "Once glow is visible, it can be controlled with a few extra parameters:"
 msgstr "一旦看到发光，就可以通过一些额外的参数来控制它:"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:322
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
 msgid ""
 "**Intensity** is an overall scale for the effect, it can be made stronger or "
 "weaker (0.0 removes it)."
 msgstr "**强度**是效果的整体比例，可以更强或更弱(0.0将其移除)。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:324
 #, fuzzy
 msgid ""
 "**Strength** is how strong the gaussian filter kernel is processed. Greater "
@@ -718,11 +726,11 @@ msgstr ""
 "**强度**是高斯滤波器内核处理的强度。 更大的值使滤波器饱和并向外扩展。 一般情"
 "况下，不需要更改它，因为可以使用 **级别** 更有效地调整大小。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:325
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:326
 msgid "The **Blend Mode** of the effect can also be changed:"
 msgstr "效果的 **混合模式** 也可以改变:"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:327
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:328
 #, fuzzy
 msgid ""
 "**Additive** is the strongest one, as it just adds the glow effect over the "
@@ -732,14 +740,14 @@ msgstr ""
 "**添加剂**是最强的，因为它只是在图像上添加了发光效果而不涉及混合。 一般来说，"
 "它太强大而无法使用，但在低强度Bloom下可以看起来很好(产生梦幻般的效果)。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:328
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:329
 msgid ""
 "**Screen** is the default one. It ensures glow never brights more than "
 "itself and works great as an all around."
 msgstr ""
 "**屏幕**是默认值。 它确保发光永远不会比自身更亮，并且可以很好地作为一个整体。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:329
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:330
 msgid ""
 "**Softlight** is the weakest one, producing only a subtle color disturbance "
 "around the objects. This mode works best on dark scenes."
@@ -747,13 +755,13 @@ msgstr ""
 "** Softlight **是最弱的一种，只会在物体周围产生微妙的色彩干扰。 此模式在黑暗"
 "场景中效果最佳。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:330
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:331
 msgid ""
 "**Replace** can be used to blur the whole screen or debug the effect. It "
 "just shows the glow effect without the image below."
 msgstr "**替换**可用于模糊整个屏幕或调试效果。 它只显示没有下图的发光效果。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:332
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:333
 #, fuzzy
 msgid ""
 "To change the glow effect size and shape, Godot provides **Levels**. Smaller "
@@ -763,13 +771,13 @@ msgstr ""
 "为了改变发光效果的大小和形状，Godot提供 **级别** 。 较小的水平是在物体周围出"
 "现的强烈发光，而大的水平是覆盖整个屏幕的朦胧发光:"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:338
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:339
 msgid ""
 "The real strength of this system, though, is to combine levels to create "
 "more interesting glow patterns:"
 msgstr "然而，这个系统的真正优势在于结合水平来创造更有趣的发光模式:"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:343
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:344
 msgid ""
 "Finally, as the highest layers are created by stretching small blurred "
 "images, it is possible that some blockiness may be visible. Enabling "
@@ -778,29 +786,29 @@ msgstr ""
 "最后，由于通过拉伸小的模糊图像来创建最高层，因此可能会看到一些块状。 启用** "
 "Bicubic Upscaling **会以最低的性能成本获取它。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:350
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:351
 msgid "Adjustments"
 msgstr "调整"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:354
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:355
 msgid ""
 "At the end of processing, Godot offers the possibility to do some standard "
 "image adjustments."
 msgstr "在处理结束时，Godot提供了进行一些标准图像调整的可能性。"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:359
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:360
 msgid ""
 "The first one is being able to change the typical Brightness, Contrast, and "
 "Saturation:"
 msgstr "第一个是能够改变典型的亮度，对比度和饱和度:"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:364
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:365
 msgid ""
 "The second is by supplying a color correction gradient. A regular black to "
 "white gradient like the following one will produce no effect:"
 msgstr "第二种是通过提供颜色校正梯度。 如下所示的常规黑色到白色渐变将不起作用:"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:369
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:370
 msgid ""
 "But creating custom ones will allow to map each channel to a different color:"
 msgstr "但是创建自定义的会允许将每个通道映射到不同的颜色:"
