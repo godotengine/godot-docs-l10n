@@ -33,7 +33,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-17 12:25+0200\n"
-"PO-Revision-Date: 2019-07-15 15:56+0000\n"
+"PO-Revision-Date: 2019-07-22 21:07+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -25454,6 +25454,9 @@ msgid ""
 "is identical to creating in-engine classes whereas handling scenes requires "
 "a change in API:"
 msgstr ""
+"하지만 어떤 것을 사용해야 하는지 결정하는 것은 딜레마가 됩니다. 스크립트 인스"
+"턴스를 만드는 것은 인 게임 클래스를 만드는 것과 동일하지만 씬을 다루려면 API"
+"를 변경해야 합니다:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:59
 msgid ""
@@ -25461,11 +25464,12 @@ msgid ""
 "differences between engine and script code. The larger and more complex the "
 "node, the more reason there is to build it as a scene."
 msgstr ""
+"또한 엔진과 스크립트 코드 간의 속도 차 때문에 스크립트가 씬에 비해 조금 더 느"
+"리게 작동합니다. 노드가 크고 복잡할수록, 씬으로 작업하는 것이 더 좋습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
-#, fuzzy
 msgid "Named types"
-msgstr "플레이스 홀더 유형"
+msgstr "명명된 타입"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:66
 msgid ""
@@ -25474,53 +25478,52 @@ msgid ""
 "dialog with an optional icon. In these cases, the user's ability to use the "
 "script is much more streamlined. Rather than having to..."
 msgstr ""
+"몇 가지 경우에서, 사용자는 편집기 자체 내에서 스크립트를 새로운 타입으로 등록"
+"할 수 있습니다. 노드 생성 또는 리소스 생성 대화상자에서 선택한 아이콘이 있는 "
+"새 타입으로 나타납니다. 이런 경우, 스크립트를 사용하는 사용자의 능력은 훨씬 "
+"더 간소화 되었습니다. 더 이상 다음과 같이 하지 않아도 됩니다..."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:71
 msgid "Know the base type of the script they would like to use."
-msgstr ""
+msgstr "사용하고 싶은 스크립트의 기본 타입을 알기."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
-#, fuzzy
 msgid "Create an instance of that base type."
-msgstr "커스텀 데이터 타입 생성하기"
+msgstr "기본 타입의 인스턴스를 생성하기."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:75
-#, fuzzy
 msgid "Add the script to the node."
-msgstr "함수에 이 코드를 추가하세요:"
+msgstr "노드에 스크립트를 추가하기."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
 msgid "(Drag-n-drop method)"
-msgstr ""
+msgstr "(드래그 앤 드롭 방식)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
-#, fuzzy
 msgid "Find the script in the FileSystem dock."
-msgstr "편집기에서 스크립트를 실행합니다."
+msgstr "파일 시스템 독에서 스크립트를 찾기."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:81
-#, fuzzy
 msgid "Drag and drop the script onto the node in the Scene dock."
-msgstr "씬의 다른 노드에 액세스 할 수 있는 스크립트를 작성함."
+msgstr "스크립트를 씬 독의 노드로 드래그 앤 드롭하기."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
 msgid "(Property method)"
-msgstr ""
+msgstr "(속성 방식)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:85
 msgid ""
 "Scroll down to the bottom of the Inspector to find the ``script`` property "
 "and select it."
-msgstr ""
+msgstr "인스펙터의 맨 아래로 내려서 ``script`` 속성을 찾고 선택하기."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:87
 msgid "Select \"Load\" from the dropdown."
-msgstr ""
+msgstr "드롭다운 메뉴에서 \"불러오기\" 선택하기."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:89
-#, fuzzy
 msgid "Select the script from the file dialog."
-msgstr "편집기에서 스크립트를 실행합니다."
+msgstr "파일 대화 상자에서 스크립트를 선택하기."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:91
 msgid ""
@@ -25529,87 +25532,96 @@ msgid ""
 "of the above work. The creation dialog even has a search bar to look up the "
 "type by name."
 msgstr ""
+"등록된 스크립트를 사용하면, 스크립트된 타입에서 다른 시스템 내 노드와 리소스"
+"와 같은 생성 옵션이 됩니다. 위의 작업을 하지 않아도 됩니다. 생성 대화 상자는 "
+"타입을 이름으로 찾아볼 수 있는 검색 상자도 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:96
-#, fuzzy
 msgid "There are two systems for registering types..."
-msgstr "6가지 패턴 타입이 있습니다:"
+msgstr "타입을 등록하는 데는 두 가지 시스템이 있습니다..."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:98
-#, fuzzy
 msgid ":ref:`Custom Types <doc_making_plugins>`"
-msgstr ":ref:`Easy to write Shaders <doc_shading_language>`"
+msgstr ":ref:`커스텀 타입 <doc_making_plugins>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:100
 msgid "Editor-only. Typenames are not accessible at runtime."
-msgstr ""
+msgstr "편집기만 가능. 런타임 도중 타입이름에 액세스할 수 없습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:102
 msgid "Does not support inherited custom types."
-msgstr ""
+msgstr "상속된 커스텀 타입을 지원하지 않습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:104
 msgid "An initializer tool. Creates the node with the script. Nothing more."
-msgstr ""
+msgstr "초기화 도구. 스크립트로 노드를 만듭니다. 더 이상은 없습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:106
 msgid ""
 "Editor has no type-awareness of the script or its relationship to other "
 "engine types or scripts."
 msgstr ""
+"편집기는 스크립트에 대한 타입 인식이나 다른 엔진 타입이나 스크립트 간의 관계"
+"가 없습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:109
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:127
 msgid "Allows users to define an icon."
-msgstr ""
+msgstr "사용자가 아이콘을 정의할 수 있도록 합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:111
 msgid ""
 "Works for all scripting languages because it deals with Script resources in "
 "abstract."
-msgstr ""
+msgstr "스크립트 리소스를 추상화하기 때문에 모든 스크립트 언어에서 작동합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:113
 msgid ""
 "Set up using :ref:`EditorPlugin.add_custom_type "
 "<class_EditorPlugin_method_add_custom_type>`."
 msgstr ""
+":ref:`EditorPlugin.add_custom_type "
+"<class_EditorPlugin_method_add_custom_type>`\\ 을 사용해 설정합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:115
 msgid ":ref:`Script Classes <doc_scripting_continued_class_name>`"
-msgstr ""
+msgstr ":ref:`스크립트 클래스 <doc_scripting_continued_class_name>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."
-msgstr ""
+msgstr "편집기와 런타임에 액세스할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:119
-#, fuzzy
 msgid "Displays inheritance relationships in full."
-msgstr "다중 상속은 허용되지 않습니다."
+msgstr "상속 관계를 전체적으로 표시합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:121
 msgid ""
 "Creates the node with the script, but can also change types or extend the "
 "type from the editor."
 msgstr ""
+"스크립트로 노드를 만듭니다, 하지만 편집기에서 타입을 바꾸거나 확장할 수도 있"
+"습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:124
 msgid ""
 "Editor is aware of inheritance relationships between scripts, script "
 "classes, and engine C++ classes."
 msgstr ""
+"편집기는 스크립트, 스크립트 클래스 및 엔진 C++ 클래스 간의 상속 관계를 인식합"
+"니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:129
 msgid ""
 "Engine developers must add support for languages manually (both name "
 "exposure and runtime accessibility)."
 msgstr ""
+"엔진 개발자는 수동으로 언어 지원을 추가해야 합니다 (이름 표시와 런타임 액세"
+"스 가능성 모두)."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
-#, fuzzy
 msgid "Godot 3.1+ only."
-msgstr "Godot 3.1에서는:"
+msgstr "Godot 3.1+에서만 가능합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
 msgid ""
@@ -25617,6 +25629,9 @@ msgid ""
 "scripting languages. Each scripting language must implement its own support "
 "for exposing this information."
 msgstr ""
+"편집기는 프로젝트 폴더를 스캔하고 모든 스크립팅 언어의 노출된 이름을 등록합니"
+"다.  각 스크립팅 언어가 이 정보가 노출되는 것을 자체적인 지원으로 구현해야 합"
+"니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:138
 msgid ""
@@ -25625,6 +25640,10 @@ msgid ""
 "script resource. Creating instances and accessing constants or static "
 "methods is viable from anywhere."
 msgstr ""
+"두 방법론 모두 생성 대화 상자에 이름을 추가할 수 있습니다, 하지만 특히 스크립"
+"트 클래스는 사용자가 스크립트 리소스를 불러오지 않고도 타입이름에 액세스할 "
+"수 있습니다. 인스턴스를 만들고 상수나 정적 메서드에 액세스하는 것은 어디서나 "
+"가능합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:143
 msgid ""
@@ -25633,15 +25652,18 @@ msgid ""
 "creating in-house tools for designers to use will find an easier time of "
 "things this way."
 msgstr ""
+"이러한 기능으로, 사람들은 사용자가 사용하기 쉽도록 그들의 타입이 씬이 없는 스"
+"크립트가 되길 원합니다. 플러그인을 개발하거나 디자이너를 위한 사내 도구를 만"
+"드는 사람들에게 이러한 방식은 더 쉬운 작업 시간을 찾을 수 있을 겁니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:148
 msgid ""
 "On the downside, it also means having to use largely imperative programming."
-msgstr ""
+msgstr "단점은 명령형 프로그래밍을 주로 사용해야 하는 것입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
 msgid "In the end, the best approach is to consider the following:"
-msgstr ""
+msgstr "마지막으로, 최선의 접근법은 다음을 고려해보는 것입니다:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
 msgid ""
@@ -25651,6 +25673,10 @@ msgid ""
 "chances are that it should probably be a script, likely one with a custom "
 "name/icon."
 msgstr ""
+"여러 다른 프로젝트에서 재 사용하며, (\"프로그래머\"라는 이름표가 없는 사람들"
+"을 포함한) 모든 실력 수준의 사람들이 사용할 수 있는 기본 도구를 만들고 싶다"
+"면, 아마 스크립트로 만들어야 할 것입니다, 커스텀 이름/아이콘을 줄 수 있으니까"
+"요."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:160
 msgid ""
@@ -25658,6 +25684,8 @@ msgid ""
 "should always be a scene. Scenes are easier to track/edit and provide more "
 "security than scripts."
 msgstr ""
+"게임에 특화된 개념을 만들고 시다면, 그것은 항상 씬이 되어야 합니다. 씬이 스크"
+"립트보다 더 쉽게 연결/편집하고 더 보안이 좋습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:164
 msgid ""
@@ -25665,10 +25693,12 @@ msgid ""
 "this in 3.1 by declaring a script class and giving it a scene as a constant. "
 "The script becomes, in effect, a namespace:"
 msgstr ""
+"씬에 이름을 주고 싶다면, 스크립트 클래스를 선언하고 상수로 씬을 지정하여 3.1"
+"에서 이 작업을 수행할 수 있습니다. 스크립트는 사실상 네임스페이스가 됩니다:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:4
 msgid "Autoloads versus internal nodes"
-msgstr ""
+msgstr "오토로드 대 내장 노드"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:6
 msgid ""
@@ -25677,6 +25707,10 @@ msgid ""
 "thrives by supporting ways to cut down the size of such objects. Instead it "
 "shifts content into individual nodes as much as possible."
 msgstr ""
+"다른 엔진에서는 전역으로 액세스 가능할 개체에 다양한 기능을 구성하는 \"관리자"
+"\" 클래스를 만들어 쓰는 것을 권장할 지도 모릅니다. Godot는 이러한 객체의 크기"
+"를 줄이는 방식을 지원하는 것으로 커집니다. 대신 내용물을 가능한 한 개별 노드"
+"로 이동시킵니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:11
 msgid ""
@@ -25687,6 +25721,11 @@ msgid ""
 "playing the sound, then the new sound interrupts the first sound, "
 "terminating it before it can play."
 msgstr ""
+"예를 들어, 한 개발자가 플랫포머 게임을 제작하면서 동전을 먹을 때 음향 효과가 "
+"나게 하려면 어떻게 해야 할까요? 글쎄요, 이를 위한 노드가 있습니다: :ref:"
+"`AudioStreamPlayer <class_AudioStreamPlayer>`. 하지만 소리가 재생되고 있는 도"
+"중 AudioStreamPlayer를 \"재생(play)\"하면, 새로운 소리는 첫 번째 소리가 끝나"
+"기 전에 재생하면서 방해가 된다는 것을, 테스트를 하면서 알게 됩니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:18
 msgid ""
@@ -25697,6 +25736,12 @@ msgid ""
 "access it from anywhere with `SFX.play(\"coin_pickup.ogg\")`. Little do they "
 "know, they've invited a great many complications into their code."
 msgstr ""
+"사용자는 SoundManager 오토로드 노드를 만들어 더 똑똑한 전체 시스템을 만드는 "
+"것이 최선의 해결책이라고 생각하는 경향이 있습니다. 이것은 새로운 음향 효과 요"
+"청이 들어올 때마다 순환하는 AudioStreamPlayer들의 풀을 만들어냅니다. 그런 다"
+"음 SoundManager를 오토로드로 만들어 어디서든 `SFX.play(\"coin_pickup.ogg\")`"
+"\\ 를 가지고 액세스하도록 합니다. 사용자는 거의 알지 못했습니다, 자신이 많은 "
+"복잡한 문제를 코드로 가지고 왔습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:25
 msgid ""
@@ -25704,12 +25749,17 @@ msgid ""
 "SFX has errors or doesn't have an AudioStreamPlayer available, everything "
 "will break."
 msgstr ""
+"**전역 상태**: 한 객체가 이제 모든 객체의 데이터를 담당합니다. SFX가 오류가 "
+"발생하거나 AudioStreamPlayer를 사용할 수 없다면, 전부 망가집니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:29
 msgid ""
 "**global access**: Now that any object can call `SFX.play(sound_path)` from "
 "anywhere, there's no longer an easy way to track where an SFX bug began."
 msgstr ""
+"**전역 액세스**: 이제 모든 객체가 어디서든 `SFX.play(sound_path)`\\ 를 호출"
+"할 수 있습니다, SFX 버그가 어디서 시작했는 지를 아는 쉬운 방법은 더 이상 없습"
+"니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:33
 msgid ""

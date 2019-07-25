@@ -11,6 +11,7 @@
 # ByonkoGalilei <byonko@qq.com>, 2019.
 # carlcc <carlmarxchen@foxmail.com>, 2018.
 # cavenzhong <cavenzhong@gmail.com>, 2018.
+# Chlorie <myosotis@mail.ustc.edu.cn>, 2019.
 # cloudapex <cloudapex@126.com>, 2018.
 # codentropy <taozhen2012@163.com>, 2019.
 # ColdThunder11 <lslyj27761@gmail.com>, 2019.
@@ -74,8 +75,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-17 12:25+0200\n"
-"PO-Revision-Date: 2019-07-15 15:57+0000\n"
-"Last-Translator: ColdThunder11 <lslyj27761@gmail.com>\n"
+"PO-Revision-Date: 2019-07-25 07:20+0000\n"
+"Last-Translator: ByonkoGalilei <byonko@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -11685,9 +11686,8 @@ msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
 msgstr "对于Visual Studio Code编辑器来说，您必须指向\"code.cmd\"文件。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
-#, fuzzy
 msgid "GDScript basics"
-msgstr "GDScript"
+msgstr "GDScript基础"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:9
 msgid ""
@@ -17333,9 +17333,8 @@ msgid "``TYPE_*``"
 msgstr "''Type_*''"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
-#, fuzzy
 msgid "``Variant.Type`` enum"
-msgstr "\"变量.类型\"枚举"
+msgstr "\"Variant.Type\"枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``OP_*``"
@@ -17343,56 +17342,49 @@ msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``Variant.Operator`` enum"
-msgstr "``变体.运算符`` 枚举"
+msgstr "``Variant.Operator`` 枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
-#, fuzzy
 msgid "Math functions"
-msgstr "静态函数"
+msgstr "数学函数"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:40
-#, fuzzy
 msgid ""
 "Math global functions, like ``abs``, ``acos``, ``asin``, ``atan`` and "
 "``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
 "``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
 msgstr ""
-"像 ``abs``， ``acos`` ， ``asin`` ，``atan`` 和 ``atan2`` 这样的数学函数位于 "
-"``Mathf`` 下面，作为 ``Abs`` ，``Acos ``， ``Asin`` ，``Atan`` 和 ``Atan2``，"
-"而不是全局范围。 ``PI`` 是 ``Mathf.Pi``"
+"如 ``abs``， ``acos`` ， ``asin`` ，``atan`` 和 ``atan2`` 这样的全局数学函数"
+"位于 ``Mathf`` 下，名称为 ``Abs`` ，``Acos ``， ``Asin`` ，``Atan`` 和 "
+"``Atan2``。 常数``PI`` 可以通过 ``Mathf.Pi``获得。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
-#, fuzzy
 msgid "Random functions"
-msgstr "变换函数"
+msgstr "随机函数"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:47
-#, fuzzy
 msgid ""
 "Random global functions, like ``rand_range`` and ``rand_seed``, are located "
 "under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
 msgstr ""
-"如“rand_range”和“rand_seed”等随机函数位于“Random”下，所以使用“Random."
-"RandRange”而不是“rand_range”。"
+"如``rand_range``和``rand_seed``等随机函数位于``GD``下，例如``GD.RandRange``以"
+"及``GD.RandSeed``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
-#, fuzzy
 msgid "Other functions"
-msgstr "弧函数"
+msgstr "其他函数"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:53
-#, fuzzy
 msgid ""
 "Many other global functions like ``print`` and ``var2str`` are located under "
 "``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
 msgstr ""
-"像 ``print`` ， ``var2str`` 和 ``weakref`` 这样的全局函数位于C#中的 ``GD`` "
-"下。"
+"一些其他的全局函数，如 ``print`` ， ``var2str`` 和 ``weakref`` 位于C#中的 "
+"``GD`` 下。例如：``GD.Print``，``GD.Var2Str``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:56
-#, fuzzy
 msgid "Exceptions:"
-msgstr "Actions"
+msgstr "异常："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``weakref(obj)``"
@@ -17420,8 +17412,8 @@ msgid ""
 "directive allows to access the members and nested types of a class without "
 "specifying the class name."
 msgstr ""
-"有时候，使用``使用静态``指令是很有用的。该指令允许在不指定类名的情况下，访问"
-"类的成员和嵌套类型。"
+"有时候，使用``using static``指令是很有用的。该指令允许在不指定类名的情况下，"
+"访问类的成员和嵌套类型。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:90
@@ -17827,6 +17819,9 @@ msgid ""
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield>`_."
 msgstr ""
+"要达到与GDScript中单参数``yield``类似的效果，可以使用C#的`yield 关键字 "
+"<https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/"
+"yield>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid ""
@@ -24926,13 +24921,13 @@ msgstr ""
 msgid ""
 "One can access all these custom notifications from the universal "
 "``_notification`` method."
-msgstr "您可以从通用的``_通知``方法访问所有这些自定义通知。"
+msgstr "您可以从通用的``_notification``方法访问所有这些自定义通知。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:65
 msgid ""
 "Methods in the documentation labeled as \"virtual\" are also intended to be "
 "overridden by scripts."
-msgstr "文档中标记为“虚拟”的方法也可以被脚本覆盖。"
+msgstr "文档中标记为“virtual”的方法也可以被脚本重写。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:68
 msgid ""
@@ -25049,7 +25044,7 @@ msgstr "因此，实例化脚本和场景将影响初始化*和*引擎调用设�
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:225
 msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
-msgstr ""
+msgstr "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:227
 msgid ""
@@ -48369,7 +48364,7 @@ msgstr "这种类型就被称为*二次贝塞尔*曲线。"
 #: ../../docs/tutorials/math/beziers_and_curves.rst:50
 #: ../../docs/tutorials/math/beziers_and_curves.rst:114
 msgid "*(Image credit: Wikipedia)*"
-msgstr ""
+msgstr "*（图像来源：维基百科）*"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:53
 msgid "Cubic Bezier"
@@ -49435,6 +49430,13 @@ msgid ""
 "small increments between each shot to create the illusion of movement when "
 "the images are played back quickly in sequence."
 msgstr ""
+"传统意义上，`剪影动画 <https://en.wikipedia.org/wiki/Cutout_animation>`__是一"
+"种`定格动画 <https://zh.wikipedia.org/zh-cn/%E5%AE%9A%E6%A0%BC%E5%8A"
+"%A8%E7%94%BB>`__ 。在剪影动画中，人们把纸片（或者其他的薄材料）剪成特殊的形"
+"状，来组合成角色和物体的二维形象。角色的身体通常是由几个部件组成的。这些部件"
+"在动画的每一帧中形成一种组合，之后对其摄影。动画制作者在两次摄影之间将这些部"
+"分进行很小幅度的移动和旋转，这样，当这些摄影的画面以很快的速度连续依次播放"
+"时，就可以造成这些角色和物体在连续运动的假象。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:18
 #, fuzzy
@@ -62587,9 +62589,8 @@ msgid "update on the fly (they can, but they need to be compiled)"
 msgstr "动态更新(可以，但是需要编译)"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:78
-#, fuzzy
 msgid "Structure of a shader"
-msgstr "标签图片"
+msgstr "着色器的结构"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:80
 msgid ""
@@ -62627,16 +62628,15 @@ msgstr ""
 "量。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:93
-#, fuzzy
 msgid ""
 "For more information about how shaders operate specifically in Godot see "
 "the :ref:`Shaders <doc_shaders>` doc."
-msgstr "有关在Godot中暂停的更多信息，请参阅 :ref:`doc_pausing_games`"
+msgstr ""
+"有关着色器如果在Godot中工作的更多信息，请参阅 :ref:`着色器 <doc_shaders>`。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:96
-#, fuzzy
 msgid "Technical overview"
-msgstr "零件概述"
+msgstr "技术概述"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:98
 msgid ""
@@ -62678,9 +62678,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:4
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:51
-#, fuzzy
 msgid "Your first CanvasItem shader"
-msgstr "画布项着色器"
+msgstr "你的第一个画布项着色器"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:9
 msgid ""
@@ -62689,6 +62688,9 @@ msgid ""
 "detailed description of what shaders are please see :ref:`What are shaders "
 "<doc_what_are_shaders>`."
 msgstr ""
+"着色器是在GPU上运行的，用来渲染图像的一种特殊的程序。现代渲染都是通过着色器实"
+"现的。若想了解关于着色器更详细的说明，请查看 :ref:`着色器是什么 "
+"<doc_what_are_shaders>`。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:13
 msgid ""
@@ -62696,6 +62698,8 @@ msgid ""
 "by walking you through the process of writing a shader with both vertex and "
 "fragment functions. This tutorial targets absolute beginners to shaders."
 msgstr ""
+"本教程将重点介绍实际编写着色器程序的各个方面，引导您走过使用顶点和片段函数编"
+"写着色器的整个流程。本教程面向着色器。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:17
 msgid ""
@@ -62703,6 +62707,8 @@ msgid ""
 "of how shaders work in Godot, see the :ref:`Shading Reference <toc-shading-"
 "reference>`."
 msgstr ""
+"如果你在着色器方面有一定的经验，只是想知道着色器在Godot中是如何运作的，请参"
+"阅:ref:`着色器参考 <toc-shading-reference>`."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:23
 msgid ""
@@ -62710,6 +62716,8 @@ msgid ""
 "objects in Godot, while :ref:`Spatial <doc_spatial_shader>` shaders are used "
 "to draw all 3D objects."
 msgstr ""
+":ref:画布项<doc_canvas_item_shader>`着色器用来绘制Godot中所有的2D对象，而:"
+"ref:`空间<doc_spatial_shader>`着色器用来绘制3D对象。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:26
 msgid ""
@@ -62718,6 +62726,9 @@ msgid ""
 "of :ref:`Resource <doc_resources>`. To draw multiple objects with the same "
 "material, the material must be attached to each object."
 msgstr ""
+"要使用着色器，它必须要被附加到一个:ref:`材质<class_material>`上，这个材质也必"
+"须附加在一个对象上。材质是一种:ref:`资源<doc_resources>`。若要使用同一材质绘"
+"制多个对象，该材质必须附加到每个对象上。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:30
 msgid ""
@@ -62728,12 +62739,19 @@ msgid ""
 "inherit their parent's material. This can be useful if you have a large "
 "number of nodes that you want to use the same material."
 msgstr ""
+"所有继承自:ref:`CanvasItem <class_canvasitem>`的对象都有一个材质属性，这包含"
+"所有的:ref:`GUI元素<class_Control>`, :ref:`精灵<class_sprite>`, :ref:`方块地"
+"图<class_tilemap>`, :ref:`2D网格实例<class_meshinstance2d>`等等。它们同时也可"
+"以选择性地继承其父类的材质。 如果你有要使用同一材质的很多节点，这个特性就可以"
+"派上用场。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:36
 msgid ""
 "To begin, create a Sprite node. You can use any CanvasItem, but for this "
 "tutorial we will use a Sprite."
 msgstr ""
+"首先，创建一个精灵节点。你其实可以用任意的画布项，但是在这个教程中我们用精"
+"灵。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:39
 msgid ""
@@ -62741,6 +62759,8 @@ msgid ""
 "select \"Load\", then select \"Icon.png\". For new projects, this is the "
 "Godot icon. You should now see the icon in the viewport."
 msgstr ""
+"在属性面板里，点击“材质”旁边写着“[空]”的地方然后选择“读取”，接着选中“Icon."
+"png”。对于新的项目，这个就是Godot的图标。你现在就会在视区中看到这个图标。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:42
 msgid ""
@@ -62751,6 +62771,10 @@ msgid ""
 "previews the output of spatial shaders. So what you are seeing is the output "
 "of the default Spatial Shader."
 msgstr ""
+"接下来，在属性面板下的画布项部分中，点击“材质”并选择“新着色器材质”。这会创建"
+"一个新的材质资源。然后点击新出现的球体。Godot目前还不知道你是要写画布项着色器"
+"还是空间着色器，它显示空间着色器的输出预览，所以你看到的是默认的空间着色器的"
+"输出。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:47
 msgid ""
@@ -62758,13 +62782,14 @@ msgid ""
 "shader resource and the shader editor will open. You are now ready to begin "
 "writing your first shader."
 msgstr ""
+"点击“着色器”并选中“新着色器”。最后，点击新创建的着色器资源，着色器编辑器就会"
+"打开。你现在就已经准备好开始写你的第一个着色器了。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:53
-#, fuzzy
 msgid ""
 "In Godot, all shaders start with a line specifying what type of shader they "
 "are. It uses the following format:"
-msgstr "任何着色器都需要指定此类型的第一行，格式如下:"
+msgstr "在Godot中，所有的着色器第一行都是指定着色器类型的，格式如下:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:60
 msgid ""
@@ -62776,7 +62801,7 @@ msgstr ""
 msgid ""
 "This line tells the engine which built-in variables and functionality to "
 "supply you with."
-msgstr ""
+msgstr "这一行告诉游戏引擎要提供你哪些内置变量以及函数。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:65
 msgid ""
@@ -62786,29 +62811,34 @@ msgid ""
 "functions are significantly more complex than vertex and fragment functions "
 "and so will not be covered here."
 msgstr ""
+"在Godot中，你可以重写三个函数来控制着色器的运作，它们是``vertex``（顶点函"
+"数），``fragment``（片段函数）和``light``（光照函数）。本教程会引导你写出一个"
+"包含顶点和片段函数的着色器。因为光照函数比另外两个函数要复杂非常多，所以在这"
+"里不会进行讲解。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:70
-#, fuzzy
 msgid "Your first fragment function"
-msgstr "您的第一个游戏"
+msgstr "您的第一个片段函数"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:72
 msgid ""
 "The fragment function runs for every pixel in a Sprite and determines what "
 "color that pixel should be."
-msgstr ""
+msgstr "片段函数对精灵中的每个像素进行操作，并且决定这个像素应该是什么颜色的。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:74
 msgid ""
 "They are restricted to the pixels covered by the Sprite, that means you "
 "cannot use one to, for example, create an outline around a Sprite."
 msgstr ""
+"它们限制在精灵覆盖的那些像素中，这也就意味着，你无法用片段函数来实现例如在精"
+"灵周围加边框的事情。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:77
 msgid ""
 "The most basic fragment function does nothing except assign a single color "
 "to every pixel."
-msgstr ""
+msgstr "最基础的片段函数仅仅给每个像素赋予一个颜色。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:79
 msgid ""
@@ -62818,16 +62848,20 @@ msgid ""
 "``COLOR`` is both an input variable to the fragment function and the final "
 "output from it."
 msgstr ""
+"我们向内置变量``COLOR``中写入一个``vec4``来做到这点。``vec4``是创建一个四维向"
+"量的简写形式。若想进一步了解向量，请参阅:ref:`向量数学教程"
+"<doc_vector_math>`。``COLOR``变量既是片段函数的一个输入，同时也是它的最终输"
+"出。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:91
 msgid ""
 "Congratulations! You're done. You have successfully written your first "
 "shader in Godot."
-msgstr ""
+msgstr "恭喜你！你成功在Godot中写出了你的第一个着色器。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:93
 msgid "Now let's make things more complex."
-msgstr ""
+msgstr "接着，我们来讨论更复杂的事情。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:95
 msgid ""
@@ -62836,26 +62870,31 @@ msgid ""
 "in your Sprite (without you knowing it!) and they tell the shader where to "
 "read from textures for each part of the mesh."
 msgstr ""
+"你可以使用片段函数中的很多输入来计算``COLOR``，``UV``就是其中的一个。你的精灵"
+"指定了UV坐标（在你不知情的情况下！），而它们告诉着色器，对于网格的每个部分从"
+"纹理的何处读取信息。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:99
 msgid ""
 "In the fragment function you can only read from ``UV``, but you can use it "
 "in other functions or to assign values to ``COLOR`` directly."
 msgstr ""
+"在片段函数中你只能从``UV``中读取，但是你可以在其他函数中使用，或者直接对"
+"``COLOR``赋值。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:102
 msgid "``UV`` varies between 0-1 from left-right and from top-bottom."
-msgstr ""
+msgstr "``UV``取值在0-1之间，从左到右，由上到下。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:115
 msgid "Using ``TEXTURE`` built-in"
-msgstr ""
+msgstr "使用内置变量``TEXTURE``"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:117
 msgid ""
 "When you want to adjust a color in a Sprite you cannot just adjust the color "
 "from the texture manually like in the code below."
-msgstr ""
+msgstr "当你想调整精灵中的颜色时，你不能像下面的代码那样手动修改纹理中的颜色。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:127
 msgid ""
@@ -63202,7 +63241,7 @@ msgstr ""
 msgid ""
 "This looks better, but it is still too spiky and repetitive, let's make it a "
 "little more interesting."
-msgstr ""
+msgstr "看起来效果好了一些，但它仍然过于尖锐和重复，我们把它变得更有趣一点。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:143
 #, fuzzy
@@ -63225,12 +63264,15 @@ msgid ""
 "Godot provides the :ref:`NoiseTexture <class_noisetexture>` resource for "
 "generating a noise texture that can be accessed from a shader."
 msgstr ""
+"Godot提供了:ref:`噪声纹理<class_noisetexture>` 资源，可以生成从着色器访问的噪"
+"声纹理。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:151
 msgid ""
 "To access a texture in a shader add the following code near the top of your "
 "shader, outside the ``vertex()`` function."
 msgstr ""
+"要在着色器中访问纹理，请在着色器顶部附近，“vertex()”函数外部添加以下代码。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:158
 msgid ""
@@ -63238,6 +63280,8 @@ msgid ""
 "inspecter under your material. You should see a section called \"Shader "
 "Params\". If you open it up you will see a section called \"noise\"."
 msgstr ""
+"这将允许您发送噪声纹理到着色器。现在看看材质下方的属性面板。您会看到名为“着色"
+"器参数”的区域。如果展开该区域，就会看到叫做“噪音”的部分。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:161
 msgid ""
@@ -63245,12 +63289,14 @@ msgid ""
 "Then in your NoiseTexture click beside where it says \"Noise\" and select "
 "\"New OpenSimplexNoise\"."
 msgstr ""
+"点击旁边写着“[空]”的地方，选择“新建噪声纹理”。在你的噪声纹理中，点击旁边的“噪"
+"声”，然后选择“新建开放式简单噪声”。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:164
 msgid ""
 ":ref:`OpenSimplexNoise <class_opensimplexnoise>` is used by the NoiseTexture "
 "to generate a heightmap."
-msgstr ""
+msgstr ":ref:`开放式简单噪声<class_opensimplexnoise>` 可从噪声纹理生成高度图。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:166
 #, fuzzy
@@ -63279,7 +63325,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:184
 msgid "Using this code you can see the texture creates random looking hills."
-msgstr ""
+msgstr "使用此代码，您可以看到纹理创建了随机外观的山峰。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:188
 msgid ""
@@ -63287,6 +63333,8 @@ msgid ""
 "will use a uniform. You already used a uniform above to pass in the noise "
 "texture, now let's learn how they work."
 msgstr ""
+"现在它太尖锐了，我们想让山峰变得柔和一点。为此，我们将使用制服值。你已经使用"
+"了上面的制服值来传入噪点纹理，现在让我们来学习它们是如何工作的。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:194
 #, fuzzy
@@ -63326,6 +63374,10 @@ msgid ""
 "``surface_get_material()``. While in the MeshInstance you would access the "
 "material using ``get_surface_material()`` or ``material_override``."
 msgstr ""
+"从空间节点更换制服值，与从画布组件节点更换制服值是不同的。在这里，我们将材质"
+"设置在平面网格资源中。在其他网格资源中，您可能需要首先通过调"
+"用“surface_get_material()”来访问材质。而在网格实例中，您将使"
+"用“get_surface_material()”或“material_override”访问材料。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:222
 #, fuzzy
@@ -63343,7 +63395,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:231
 msgid "Now it looks  much better."
-msgstr ""
+msgstr "现在看起来好多了。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:235
 #, fuzzy
@@ -70200,12 +70252,17 @@ msgid ""
 "our UI scenes will be instanced by ``main_screen_plugin.gd`` script, this "
 "one script will also connect each of them to the required signals."
 msgstr ""
+"所以，定义信号是向另一个场景传递信息的最佳方式。若在UI场景#1中的一个用户操作"
+"需要在另一个UI场景#2中引发事件，那么此用户操作就需要从场景#1中发射一个信号，"
+"并场景#2与该信号关联。我们所有的UI场景都由脚本``main_screen_plugin.gd``实例"
+"化，因此这个脚本会将每一个场景都关联到所需的信号上。"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:94
 msgid ""
 "If the ``main_screen_plugin.gd`` instantiates the UI scenes, won't they be "
 "brothers nodes then?"
 msgstr ""
+"如果是``main_screen_plugin.gd``实例化这些UI场景的话，他们不就是兄弟节点了吗？"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:97
 msgid ""
@@ -70215,6 +70272,10 @@ msgid ""
 "instantiated scene because it is a script, not a node! This script will only "
 "hold references to instantiated scenes."
 msgstr ""
+"并不是这样：这个脚本可能会把所有的UI场景都作为子节点添加到编辑器的场景树的同"
+"一节点上，但是它也有可能不这么做。并且，脚本``main_screen_plugin.gd``*不会*是"
+"任何实例化的场景的亲节点，因为它是脚本，不是节点！这个脚本只会保留到这些实例"
+"化场景的引用。"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:104
 #, fuzzy
@@ -87041,7 +87102,7 @@ msgstr ""
 msgid ""
 "Some of the others mentioned below provide more advanced tutorials, e.g. on "
 "3D or shaders."
-msgstr ""
+msgstr "以下的一些教程对如3D以及着色器等更加高深的话题进行讲解。"
 
 #: ../../docs/community/tutorials.rst:20
 msgid "Video tutorials"

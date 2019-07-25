@@ -54,6 +54,7 @@
 # Novikov Vladimir <valdemar.const@gmail.com>, 2018.
 # Omicron <omicron666.dev@gmail.com>, 2018.
 # Petr Kustov <zcaliptium@gmail.com>, 2018-2019.
+# Phoenix Emmerson <FeNikS.FenApp@gmail.com>, 2019.
 # PJ <Montigor0@gmail.com>, 2019.
 # Ratmir Karabut <rkarabut@gmail.com>, 2019.
 # Roman <Steel_hawk@list.ru>, 2018-2019.
@@ -100,8 +101,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-17 12:25+0200\n"
-"PO-Revision-Date: 2019-07-16 17:48+0000\n"
-"Last-Translator: Ruaguzov Michael <miha890r@gmail.com>\n"
+"PO-Revision-Date: 2019-07-25 07:19+0000\n"
+"Last-Translator: Chaosus89 <chaosus89@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -1409,7 +1410,7 @@ msgstr ":ref:`Шейдеры <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:32 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr ""
+msgstr "Математика"
 
 #: ../../docs/about/docs_changelog.rst:34
 #, fuzzy
@@ -1444,7 +1445,7 @@ msgstr "Локализация"
 #: ../../docs/about/docs_changelog.rst:154
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr "Затенение"
+msgstr "Шейдеры"
 
 #: ../../docs/about/docs_changelog.rst:54
 msgid "Your First Shader Series:"
@@ -3923,15 +3924,14 @@ msgstr ""
 "метод ``free()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
-"Когда узел освобождается, он также освобождает все свои дочерние узлы. Из-за "
-"этого удаление узлов вручную намного проще, чем кажется. Освободите базовый "
-"узел, и все остальное в поддереве исчезнет вместе с ним."
+"Когда узел удаляется, он также удаляет все свои дочерние узлы. Из-за этого "
+"удаление узлов вручную намного проще, чем кажется. Удалите базовый узел, и "
+"все остальные узлы будут удалены вместе с ним."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
@@ -4112,7 +4112,6 @@ msgstr ""
 "добавляйте в него никакого кода."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
-#, fuzzy
 msgid ""
 "For the Sprite's texture, you can use the Godot icon, or any other image you "
 "like. Do so by selecting ``Load`` in the Sprite's Texture attribute drop-"
@@ -4120,9 +4119,9 @@ msgid ""
 "yet."
 msgstr ""
 "Для текстуры Спрайта вы можете использовать иконку Godot, или любое другое "
-"изображение. Сделайте это с помощью выбора ``Загрузить`` в аттрибуте Sprite "
-"Texture в выпадающем меню. Прикрепите скрипт к корневому узлу, но пока не "
-"добавляйте код."
+"изображение. Сделайте это выбрав ``Загрузить`` в аттрибуте Sprite Texture в "
+"выпадающем меню. Прикрепите скрипт к корневому узлу, но пока не добавляйте "
+"код."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -18738,16 +18737,16 @@ msgid "Emit Signal"
 msgstr "Испускание сигнала"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
-#, fuzzy
 msgid ""
 "Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
-"Испускает сигнал из любого объекта. В целом, это не так полезно, так как.."
+"Издает сигналы от любого объекта. В общем, это не так полезно, так как "
+"перетаскивание сигнала на ``canvas`` работает лучше."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:439
 msgid "Get/Set"
-msgstr ""
+msgstr "Получать/Задавать"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
 msgid ""
@@ -18757,7 +18756,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
-msgstr ""
+msgstr "Ожидать"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid ""
@@ -18844,10 +18843,13 @@ msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
 msgstr ""
+"Выполнить математические и логические вычисления на основе пользовательских "
+"входных данных (например, «a * 5 + b», где a и b - пользовательские входные "
+"данные):"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:493
 msgid "Access local variables or properties:"
-msgstr ""
+msgstr "Доступ к локальным переменным или свойствам:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:498
 msgid ""
@@ -18858,7 +18860,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503
 msgid "Call API functions:"
-msgstr ""
+msgstr "Вызов API функций:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:508
 msgid ""
@@ -18879,7 +18881,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:321
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 msgid "C#"
-msgstr ""
+msgstr "C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:6
 msgid ""
@@ -18891,7 +18893,7 @@ msgid ""
 "godot-docs/issues>`_."
 msgstr ""
 "Поддержка C# была введена в Godot 3.0. Из-за новизны, вы можете столкнуться "
-"с какими-то проблемами, ила найти места где документация может быть "
+"с какими-то проблемами, или найти места где документация может быть "
 "улучшена. Пожалуйста сообщайте о проблемах с C# в Godot на `странице движка "
 "на GitHub  <https://github.com/godotengine/godot/issues>`_, а о проблемах с "
 "документацией на `странице GitHub документации <https://github.com/"
@@ -18924,7 +18926,7 @@ msgid ""
 msgstr ""
 "C# это высоко-уровневый язык программирования разработанный Microsoft. В "
 "Godot, он применён с использованием фреймворка Mono 5.x .NET, включающий "
-"поддержка C# 7.0. Mono это реализация Microsoft .NET Framework с открытым "
+"поддержку C# 7.0. Mono - это реализация Microsoft .NET Framework с открытым "
 "исходным кодом, базирующаяся на стандартах ECMA для C# и Common Language "
 "Runtime(CLR). Для  изучения его возможностей смотрите страницу "
 "`Совместимость <http://www.mono-project.com/docs/about-mono/compatibility/"
@@ -18978,7 +18980,7 @@ msgid ""
 "Godot."
 msgstr ""
 "Загрузите и установите последнюю версию `Mono SDK <http://www.mono-project."
-"com/download/>`_. Начиная с Godot 3.1 beta 3, номер версии не играет роли "
+"com/download/>`_. Начиная с Godot 3.1 beta 3, номер версии не играет роли, "
 "так как Godot поставляется с собственной сборкой Mono 5.18. Нам нужна Mono "
 "установка для NuGet и MSBuild которые нужны для использования C# в Godot."
 
@@ -43185,7 +43187,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:4
 msgid "Ray-casting"
-msgstr ""
+msgstr "Трассировка лучей"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:9
 msgid ""
@@ -43194,6 +43196,10 @@ msgid ""
 "AI, etc. to take place. This tutorial will explain how to do this in 2D and "
 "3D."
 msgstr ""
+"Одна из самых частых задач в разработке игр это трассировка луча (или "
+"собственного объекта с формой) и проверка того что он пересекает. Это "
+"позволяет создавать  сложные поведения, ИИ, итд. Это руководство объясняет "
+"как делать это в 2D и 3D пространстве."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:14
 msgid ""
@@ -43203,16 +43209,23 @@ msgid ""
 "`RayCast2D <class_RayCast2D>` will work, as they will return every frame "
 "what the result of a raycast is."
 msgstr ""
+"Godot сохраняет всю низкоуровневую игровую информацию в серверах, тогда как "
+"сцена это просто внешний интерфейс. Таким образом, трассировка лучей это "
+"низкоуровневый процесс. Для простых трассировок, можно использовать такие "
+"узлы как :ref:`RayCast <class_RayCast>` и :ref:`RayCast2D "
+"<class_RayCast2D>`, так как они будут возвращать результат в каждом кадре."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:21
 msgid ""
 "Many times, though, ray-casting needs to be a more interactive process so a "
 "way to do this by code must exist."
 msgstr ""
+"Во многих случаях, однако, трассировка лучей требует более сложной обработки "
+"так что должен существовать способ делать это через код."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:25
 msgid "Space"
-msgstr ""
+msgstr "Пространство"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:27
 msgid ""
@@ -43222,6 +43235,11 @@ msgid ""
 "<class_CanvasItem_method_get_world_2d>`. For 3D, it's :ref:`Spatial."
 "get_world().space <class_Spatial_method_get_world>`."
 msgstr ""
+"В пространстве физики, Godot хранит все низкоуровневые столкновения и "
+"физическую информацию в *пространстве*. Текущее 2d пространство (для 2D "
+"физики) может быть получено с помощью :ref:`CanvasItem.get_world_2d().space "
+"<class_CanvasItem_method_get_world_2d>`. Для 3D, это :ref:`Spatial."
+"get_world().space <class_Spatial_method_get_world>`."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:33
 msgid ""
@@ -43229,10 +43247,13 @@ msgid ""
 "`PhysicsServer <class_PhysicsServer>` and :ref:`Physics2DServer "
 "<class_Physics2DServer>` respectively for 3D and 2D."
 msgstr ""
+":ref:`RID <class_RID> полученного пространства может быть использован в :ref:"
+"`PhysicsServer <class_PhysicsServer>` и :ref:`Physics2DServer "
+"<class_Physics2DServer>` для 3D и 2D соответственно."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:38
 msgid "Accessing space"
-msgstr ""
+msgstr "Доступ к пространству"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:40
 msgid ""
@@ -43243,6 +43264,12 @@ msgid ""
 "it from outside this function may result in an error due to space being "
 "*locked*."
 msgstr ""
+"По умолчанию физика Godot запускается в том же потоке что и игровая логика, "
+"но также может быть запущена в отдельном потоку для более эффективной "
+"работы. В связи с этим, только доступ к пространству безопасен в функции "
+"обратного вызова :ref:`Node._physics_process() "
+"<class_Node_method__physics_process>`. Доступ вне этой функции приведет к "
+"ошибке из-за того что пространство *закрыто*."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:47
 msgid ""
@@ -43250,22 +43277,25 @@ msgid ""
 "<class_Physics2DDirectSpaceState>` and :ref:`PhysicsDirectSpaceState "
 "<class_PhysicsDirectSpaceState>` must be used."
 msgstr ""
+"Для выполнения запросов в физическом пространстве, нужно использовать :ref:"
+"`Physics2DDirectSpaceState <class_Physics2DDirectSpaceState>` and :ref:"
+"`PhysicsDirectSpaceState <class_PhysicsDirectSpaceState>`."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:52
 msgid "Use the following code in 2D:"
-msgstr ""
+msgstr "Используйте следующий код в 2D:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:69
 msgid "Or more directly:"
-msgstr ""
+msgstr "Или более прямо:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:84
 msgid "And in 3D:"
-msgstr ""
+msgstr "И для 3D:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:100
 msgid "Raycast query"
-msgstr ""
+msgstr "Запрос трассировки лучей"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:102
 msgid ""
@@ -43274,6 +43304,9 @@ msgid ""
 "<class_Physics2DDirectSpaceState_method_intersect_ray>` may be used. For "
 "example:"
 msgstr ""
+"Для выполнения такого запроса для 2D, можно использовать метод :ref:"
+"`Physics2DDirectSpaceState.intersect_ray() "
+"<class_Physics2DDirectSpaceState_method_intersect_ray>`. Например:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:123
 msgid ""
@@ -43281,20 +43314,25 @@ msgid ""
 "will be empty. If it did hit something, it will contain collision "
 "information:"
 msgstr ""
+"Результатом будет словарь. Если луч не столкнулся ни с чем, словарь будет "
+"пуст. Если же столкнулся, он будет содержать информацию о столкновении:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:137
 msgid ""
 "The ``result`` dictionary when a collision occurs contains the following "
 "data:"
 msgstr ""
+"Словарь ``result`` после столкновения будет содержать следующие данные:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:152
 msgid "The data is similar in 3D space, using Vector3 coordinates."
 msgstr ""
+"Те же данные подобны и для 3D пространства, но используют координаты в "
+"Vector3."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:155
 msgid "Collision exceptions"
-msgstr ""
+msgstr "Исключения столкновений"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:157
 msgid ""
@@ -43303,6 +43341,10 @@ msgid ""
 "has a collider, so the ray will only detect its parent's collider, as shown "
 "in the following image:"
 msgstr ""
+"Распространенный способ использования трассировки лучей это сбор данных об "
+"окружающем мире для персонажа. Одна из проблем с этим возникает когда у "
+"персонажа есть коллайдер, и луч будет сталкиваться с ним, как показано на "
+"следующем рисунке:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:164
 msgid ""
@@ -43310,14 +43352,18 @@ msgid ""
 "optional third parameter which is an array of exceptions. This is an example "
 "of how to use it from a KinematicBody2D or any other collision object node:"
 msgstr ""
+"Для избежания само-пересечения, функция ``intersect_ray()`` может принимать "
+"третий необязательный параметр который представляет массив исключений. Это  "
+"пример как использовать это для KinematicBody2D или любого другого узла "
+"столкновений:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:189
 msgid "The exceptions array can contain objects or RIDs."
-msgstr ""
+msgstr "Массивы исключения могут содержать объекты или RIDs."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
-msgstr ""
+msgstr "Маска столкновений"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:194
 msgid ""
@@ -43326,6 +43372,10 @@ msgid ""
 "exceptions. In this case, it is much more efficient to use the collision "
 "layer/mask system."
 msgstr ""
+"Метод исключений хорошо работает когда нужно исключить родительское тело, но "
+"очень неудобен если это нужно сделать для больших и/или динамических списков "
+"исключений. Для этого случая, гораздо эффективнее использовать систему слоев/"
+"масок столкновений."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:198
 msgid ""
@@ -43333,10 +43383,13 @@ msgid ""
 "For example, to use the same mask as the parent body, use the "
 "``collision_mask`` member variable:"
 msgstr ""
+"Необязательный четвертый параметр для ``intersect_ray()`` это маска "
+"столкновений. Например, для использования той же маски что и в родительском "
+"теле, используйте переменную ``collision_mask``:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:226
 msgid "3D ray casting from screen"
-msgstr ""
+msgstr "Трассировка лучей из экрана в 3D"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:228
 msgid ""
@@ -43346,6 +43399,11 @@ msgid ""
 "know when it was clicked, but in case there is any desire to do it manually, "
 "here's how."
 msgstr ""
+"Трассировка луча из экранного в 3D физическое пространство полезно для "
+"выбора объекта. Не требуется много усилий для выполнения этого поскольку :"
+"ref:`CollisionObject <class_CollisionObject>` имеет сигнал \"input_event\" "
+"который способен уведомить вас при клике, но в случае если вам понадобится "
+"сделать это вручную, здесь показано как."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:234
 msgid ""
@@ -43355,16 +43413,23 @@ msgid ""
 "because ``origin`` changes in orthogonal mode, while ``normal`` changes in "
 "perspective mode:"
 msgstr ""
+"Для трассировки луча с экрана, вам нужен узел ref:`Camera <class_Camera>`. "
+"``Camera`` может быть в двух режимах проекции: перспективном и "
+"ортогональном. Из-за этого, необходимо предоставить и начальную точку "
+"(``origin``) луча и направление (нормаль). Начальная точка (``origin``) "
+"изменяется в ортогональном режиме, а *нормаль* изменяется в перспективном:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:242
 msgid "To obtain it using a camera, the following code can be used:"
-msgstr ""
+msgstr "Для получения его через камеру, можно использовать следующий код:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:270
 msgid ""
 "Remember that during ``_input()``, the space may be locked, so in practice "
 "this query should be run in ``_physics_process()``."
 msgstr ""
+"Запомните что в течении ``_input()``, пространство может быть закрыто, так "
+"что на практике этот запрос должен запускаться в ``_physics_process()``."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:4
 msgid "Ragdoll system"

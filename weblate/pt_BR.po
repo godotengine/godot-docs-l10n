@@ -77,6 +77,7 @@
 # miketangogamer <miketangogamer@gmail.com>, 2018-2019.
 # Mosca Morta <ewersonffranco@gmail.com>, 2018.
 # Nataniel Sousa <natannada08@gmail.com>, 2019.
+# Nome Aleatorio <enviartrabalhopramim@gmail.com>, 2019.
 # Paulo Sergio Nogueira da Silva <paulozero357@gmail.com>, 2018.
 # Pedro Silva <pedrosgregorio9@gmail.com>, 2018.
 # Pietro Benati Carrara <piticarrara@gmail.com>, 2019.
@@ -108,8 +109,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-17 12:25+0200\n"
-"PO-Revision-Date: 2019-07-10 06:01+0000\n"
-"Last-Translator: Gustavo da Silva Santos <gustavo94.rb@gmail.com>\n"
+"PO-Revision-Date: 2019-07-22 21:07+0000\n"
+"Last-Translator: Nome Aleatorio <enviartrabalhopramim@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -6726,14 +6727,13 @@ msgstr ""
 "contêineres"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
-#, fuzzy
 msgid ""
 "The five most common containers (at a later time, you can learn more about "
 "containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
 "page)."
 msgstr ""
-"Os cinco contêineres mais comuns (outra hora, você pode ler mais sobre "
-"contêineres na pagina de documentação :ref:`GUI Containers "
+"Os cinco contêineres mais comuns (mais tarde, você poderá ler mais sobre "
+"contêineres na página de documentação :ref:`GUI Containers "
 "<doc_gui_containers>`)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
@@ -6746,20 +6746,18 @@ msgstr ""
 "<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
-#, fuzzy
 msgid ""
 "To design your UI, you'll use the Control nodes. These are the nodes with "
 "green icons in the editor. There are dozens of them, for creating anything "
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
-"Para desenhar sua UI, você irá usar os nós Controle. Eles são os os nós com "
-"ícones verdes no editor. Lá tem dezenas deles, para criar qualqeur coisa "
-"desde barras de life até aplicações complexas. O editor do Godot é "
-"construido usando nós Controle."
+"Para desenhar sua UI, você irá usar os nós de Controle. Eles são os nós com "
+"ícones verdes no editor. Existem dezenas deles, para criar qualquer coisa "
+"desde barras de vida até aplicações complexas. O próprio editor do Godot é "
+"construído usando nós Controle."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
-#, fuzzy
 msgid ""
 "Control nodes have unique properties that allow them to work well with one "
 "another. Other visual nodes, like Node2D and Sprite don't have these "
@@ -6767,8 +6765,8 @@ msgid ""
 "possible when building your UIs."
 msgstr ""
 "Os nós de Controle possuem propriedades exclusivas que permitem que eles "
-"funcionem bem um com o outro. Outros nós visuais, como Node2D e Sprite não "
-"possuem estas capacidades. Então para facilitar sua vida use os nós de "
+"funcionem bem uns com os outros. Outros nós visuais, como Node2D e Sprite "
+"não possuem estas capacidades. Então para facilitar sua vida use os nós de "
 "Controle sempre que possível quando for construir suas UIs."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
@@ -6810,16 +6808,18 @@ msgstr ""
 "tempo para aprender todos os nós que derivam dele."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:50
+#, fuzzy
 msgid "The 5 most common UI elements"
-msgstr "Os 5 elementos de interface do usuário mais comuns"
+msgstr "Os 5 elementos mais comuns de interface do usuário"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:52
+#, fuzzy
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
 "Godot vem com dezenas de nós de controle. Muitos deles estão aqui para ajudá-"
-"lo a criar plug-ins e aplicativos de editor."
+"lo a criar plug-ins de editor e aplicações."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:55
 msgid ""
@@ -6838,8 +6838,8 @@ msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
 msgstr ""
-"TextureRect: usado principalmente para fundos, ou tudo o que deveria ser uma "
-"imagem estática"
+"TextureRect: usado principalmente para planos de fundos, ou tudo o que "
+"deveria ser uma imagem estática"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:61
 msgid ""
@@ -6858,7 +6858,7 @@ msgstr "TextureButton: para criar botões"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:68
 msgid "The 5 most common Control nodes for UI design"
-msgstr "Os 5 nós de controle mais comuns para o design da interface do usuário"
+msgstr "Os 5 nós de Controle mais comuns para o design da interface de usuário"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
@@ -22585,7 +22585,7 @@ msgstr "こんにちは"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "ASK"
-msgstr ""
+msgstr "PERGUNTAR"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 #, fuzzy
@@ -22604,7 +22604,7 @@ msgstr "元気ですか"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
 msgid "BYE"
-msgstr ""
+msgstr "TCHAU (BYE)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
 #, fuzzy
@@ -22777,7 +22777,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:56
 msgid "Exporting ESCN files from Blender"
-msgstr ""
+msgstr "Exportando arquivos ESCN do Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:58
 msgid ""
@@ -22786,12 +22786,18 @@ msgid ""
 "of another name for a .tscn file (Godot scene file); it keeps as much "
 "information as possible from a Blender scene."
 msgstr ""
+"O mais poderoso, chamado `godot-blender-exporter <https://github.com/"
+"godotengine/godot-blender-exporter>`__. Ele usa um arquivo .escn, o qual é \n"
+"uma espécie de arquivo .tscn (arquivo Godot Scene); ele retém o máximo de "
+"informações possível sobre uma Blender Scene."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
 msgid ""
 "The ESCN exporter has a detailed `document <escn_exporter/index.html>`__ "
 "describing its functionality and usage."
 msgstr ""
+"O exportador ESCN tem um detalhado `document <escn_exporter/index.html>`__ "
+"descrevendo seu uso e funcionalidade."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:67
 msgid "Import workflows"
