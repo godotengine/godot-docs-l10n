@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 12:25+0200\n"
+"POT-Creation-Date: 2019-07-25 10:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,9 +110,8 @@ msgid "``TYPE_*``"
 msgstr "''Type_*''"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
-#, fuzzy
 msgid "``Variant.Type`` enum"
-msgstr "\"变量.类型\"枚举"
+msgstr "\"Variant.Type\"枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``OP_*``"
@@ -120,56 +119,49 @@ msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``Variant.Operator`` enum"
-msgstr "``变体.运算符`` 枚举"
+msgstr "``Variant.Operator`` 枚举"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
-#, fuzzy
 msgid "Math functions"
-msgstr "静态函数"
+msgstr "数学函数"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:40
-#, fuzzy
 msgid ""
 "Math global functions, like ``abs``, ``acos``, ``asin``, ``atan`` and "
 "``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
 "``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
 msgstr ""
-"像 ``abs``， ``acos`` ， ``asin`` ，``atan`` 和 ``atan2`` 这样的数学函数位于 "
-"``Mathf`` 下面，作为 ``Abs`` ，``Acos ``， ``Asin`` ，``Atan`` 和 ``Atan2``，"
-"而不是全局范围。 ``PI`` 是 ``Mathf.Pi``"
+"如 ``abs``， ``acos`` ， ``asin`` ，``atan`` 和 ``atan2`` 这样的全局数学函数"
+"位于 ``Mathf`` 下，名称为 ``Abs`` ，``Acos ``， ``Asin`` ，``Atan`` 和 "
+"``Atan2``。 常数``PI`` 可以通过 ``Mathf.Pi``获得。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
-#, fuzzy
 msgid "Random functions"
-msgstr "变换函数"
+msgstr "随机函数"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:47
-#, fuzzy
 msgid ""
 "Random global functions, like ``rand_range`` and ``rand_seed``, are located "
 "under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
 msgstr ""
-"如“rand_range”和“rand_seed”等随机函数位于“Random”下，所以使用“Random."
-"RandRange”而不是“rand_range”。"
+"如``rand_range``和``rand_seed``等随机函数位于``GD``下，例如``GD.RandRange``以"
+"及``GD.RandSeed``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
-#, fuzzy
 msgid "Other functions"
-msgstr "弧函数"
+msgstr "其他函数"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:53
-#, fuzzy
 msgid ""
 "Many other global functions like ``print`` and ``var2str`` are located under "
 "``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
 msgstr ""
-"像 ``print`` ， ``var2str`` 和 ``weakref`` 这样的全局函数位于C#中的 ``GD`` "
-"下。"
+"一些其他的全局函数，如 ``print`` ， ``var2str`` 和 ``weakref`` 位于C#中的 "
+"``GD`` 下。例如：``GD.Print``，``GD.Var2Str``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:56
-#, fuzzy
 msgid "Exceptions:"
-msgstr "Actions"
+msgstr "异常："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``weakref(obj)``"
@@ -197,8 +189,8 @@ msgid ""
 "directive allows to access the members and nested types of a class without "
 "specifying the class name."
 msgstr ""
-"有时候，使用``使用静态``指令是很有用的。该指令允许在不指定类名的情况下，访问"
-"类的成员和嵌套类型。"
+"有时候，使用``using static``指令是很有用的。该指令允许在不指定类名的情况下，"
+"访问类的成员和嵌套类型。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:90
@@ -604,6 +596,9 @@ msgid ""
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield>`_."
 msgstr ""
+"要达到与GDScript中单参数``yield``类似的效果，可以使用C#的`yield 关键字 "
+"<https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/"
+"yield>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid ""

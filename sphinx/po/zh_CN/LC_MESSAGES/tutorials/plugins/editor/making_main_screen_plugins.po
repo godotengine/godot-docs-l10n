@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 12:25+0200\n"
+"POT-Creation-Date: 2019-07-25 10:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,12 +123,17 @@ msgid ""
 "our UI scenes will be instanced by ``main_screen_plugin.gd`` script, this "
 "one script will also connect each of them to the required signals."
 msgstr ""
+"所以，定义信号是向另一个场景传递信息的最佳方式。若在UI场景#1中的一个用户操作"
+"需要在另一个UI场景#2中引发事件，那么此用户操作就需要从场景#1中发射一个信号，"
+"并场景#2与该信号关联。我们所有的UI场景都由脚本``main_screen_plugin.gd``实例"
+"化，因此这个脚本会将每一个场景都关联到所需的信号上。"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:94
 msgid ""
 "If the ``main_screen_plugin.gd`` instantiates the UI scenes, won't they be "
 "brothers nodes then?"
 msgstr ""
+"如果是``main_screen_plugin.gd``实例化这些UI场景的话，他们不就是兄弟节点了吗？"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:97
 msgid ""
@@ -138,6 +143,10 @@ msgid ""
 "instantiated scene because it is a script, not a node! This script will only "
 "hold references to instantiated scenes."
 msgstr ""
+"并不是这样：这个脚本可能会把所有的UI场景都作为子节点添加到编辑器的场景树的同"
+"一节点上，但是它也有可能不这么做。并且，脚本``main_screen_plugin.gd``*不会*是"
+"任何实例化的场景的亲节点，因为它是脚本，不是节点！这个脚本只会保留到这些实例"
+"化场景的引用。"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:104
 #, fuzzy

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 12:25+0200\n"
+"POT-Creation-Date: 2019-07-25 10:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,72 +170,95 @@ msgid ""
 "Op: Adding/removing/moving content involves moving the adjacent records over "
 "(to make room / fill space)."
 msgstr ""
+"Op: Añadir/eliminar/mover contenido implica mover los registros adyacentes "
+"(para hacer espacio / ocupar espacio)."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:71
 msgid "Fast add/remove *from the end*."
-msgstr ""
+msgstr "Añadir/eliminar rápidamente *desde el final*."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:73
 msgid "Slow add/remove *from an arbitrary position*."
-msgstr ""
+msgstr "Añadir/eliminar lentamente *desde una posición arbitraria*."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:75
 msgid "Slowest add/remove *from the front*."
-msgstr ""
+msgstr "Añadir/eliminar más lentamente *desde el frente*."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:77
 msgid "If doing many inserts/removals *from the front*, then..."
 msgstr ""
+"Si se hacen muchas inserciones/eliminaciones *desde el frente*, entonces..."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:79
 msgid "invert the array."
-msgstr ""
+msgstr "invertir el array."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:81
 msgid "do a loop which executes the Array changes *at the end*."
-msgstr ""
+msgstr "haz un bucle que ejecute los cambios del Array *al final*."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:83
 msgid "re-invert the array."
-msgstr ""
+msgstr "reinvierte el array."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:85
 msgid ""
 "This makes only 2 copies of the array (still constant time, but slow) versus "
 "copying roughly 1/2 of the array, on average, N times (linear time)."
 msgstr ""
+"Esto hace solo 2 copias del array (aun en tiempo constante, pero lento) en "
+"comparación a copiar alrededor de la mitad del array, en promedio, N veces "
+"(tiempo lineal)."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:88
 msgid ""
 "**Get, Set:** Fastest *by position*. Ex. can request 0th, 2nd, 10th record, "
 "etc. but cannot specify which record you want."
 msgstr ""
+"**Get, Set:** Más rápido *por posición*. Por ejemplo, puedes solicitar el "
+"registro 0º, 2º, 10º, etc., pero no puedes especificar qué registro deseas."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:91
+#, fuzzy
 msgid "Op: 1 addition operation from array start position up to desired index."
 msgstr ""
+"op: operacion de suma desde el comienzo del arreglo hasta la posicion del "
+"indice deseada"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:93
+#, fuzzy
 msgid "**Find:** Slowest. Identifies the index/position of a value."
-msgstr ""
+msgstr "**Find:** El mas lento. Identifica el  indice/posición de un valor"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:95
+#, fuzzy
 msgid ""
 "Op: Must iterate through array and compare values until one finds a match."
 msgstr ""
+"Op: Iterara a travez del arreglo y compara valores hasta encontrar una "
+"coincidencia"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:97
+#, fuzzy
 msgid ""
 "Performance is also dependent on whether one needs an exhaustive search."
 msgstr ""
+"El rendimiento también depende de si uno necesita una búsqueda exhaustiva"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:100
+#, fuzzy
 msgid ""
 "If kept ordered, custom search operations can bring it to logarithmic time "
 "(relatively fast). Laymen users won't be comfortable with this though. Done "
 "by re-sorting the Array after every edit and writing an ordered-aware search "
 "algorithm."
 msgstr ""
+"Si se mantienen ordenadas, las operaciones de búsqueda personalizadas pueden "
+"llevarse al tiempo logarítmico (relativamente rápido). Sin embargo, los "
+"usuarios no se sentirán cómodos con esto. Hecho al volver a ordenar el "
+"arreglo después de cada edición y escribir un algoritmo de búsqueda con "
+"conocimiento de orden."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
 msgid ""

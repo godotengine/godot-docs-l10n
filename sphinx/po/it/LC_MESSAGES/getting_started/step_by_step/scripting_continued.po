@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 12:25+0200\n"
+"POT-Creation-Date: 2019-07-25 10:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,13 +23,15 @@ msgstr "Scripting (continuazione)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr ""
+msgstr "Elaborazione"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"Molte azioni in Godot sono eseguite tramite callback di funzioni virtuali, "
+"non c'è necessità di scrivere codice che viene eseguito in ogni momento."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
@@ -38,7 +40,7 @@ msgid ""
 msgstr ""
 "In ogni caso, è comune che ci sia la necessità di eseguire uno script ad "
 "ogni frame. Ci sono due tipi di esecuzioni: durante il processo di "
-"inattività e durante il processo fisico"
+"inattività e durante il processo fisico."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -47,10 +49,14 @@ msgid ""
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
+"Il processo d'inattività si attiva quando il metodo :ref:`Node._process() "
+"<class_Node_method__process>` viene trovato nello script. Può essere "
+"attivato o fermato con la funzione :ref:`Node.set_process() "
+"<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Questo metodo verrà chiamato ogni volta che viene disegnato un frame:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -65,18 +71,25 @@ msgid ""
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
+"Per aiutare a gestire questa variabilità, il parametro ``delta`` contiene il "
+"tempo passato in secondi, come floating point, dalla precedente chiamata di "
+"``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
+"Questo parametro può essere usato per essere sicuri che gli oggetti abbiano "
+"la stessa quantità di tempo, incurante degli FPS del gioco."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
+"Per esempio, i movimenti sono spesso moltiplicati al tempo DELTA per rendere "
+"la velocità di movimento sia costante che indipendente dal frame rate."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""
@@ -87,6 +100,12 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
+"Il processo fisico con `` _physics_process () `` è simile, ma dovrebbe "
+"essere usato per processi che devono accadere prima di ogni step fisico, "
+"come controllare un personaggio. Viene sempre eseguito prima di un step "
+"fisico e viene chiamato a intervalli regolari: 60 volte al secondo di "
+"default. Puoi cambiare l'intervallo da Project Settings, sotto Physics -> "
+"Common -> Physics Fps."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
@@ -94,16 +113,22 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
+"La funzione ``_process()``,  però, non è sincronizzata con la fisica. I "
+"frame rateo non è costante ed esso dipende dall'hardware e dalla "
+"ottimizzazione del gioco. L'esecuzione avviene dopo i processi della fisica "
+"nei giochi a thread singolo."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
+"Un semplice modo per vedere la funzione ``_process()`` al lavoro è creando "
+"una scena con un singolo nodo Etichetta, con il seguente script:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
-msgstr ""
+msgstr "Il quale mostrerà un contatore che incrementa ad ogni frame."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
@@ -122,6 +147,9 @@ msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"ed il secondo modo è dal codice. Il seguente Script voule aggiungere al nodo "
+"corrente appartenente al gruppo \"enemies\" non appena esso appare "
+"nell'altero della scena."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -129,12 +157,18 @@ msgid ""
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_method_call_group>`:"
 msgstr ""
+"In questa maniera, se il giocatore è scoperto ad entrare furtivamente "
+"all'interno di una base nemica, tutti i nemici possono essere notificati del "
+"suono dell'allarme usando :ref:`SceneTree.call_group() "
+"<class_SceneTree_method_call_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
+"Il codice qua sopra chiama la funzione ``player_was_discovered`` su ogni "
+"membro del gruppo ``enemies``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
 msgid ""
@@ -142,6 +176,9 @@ msgid ""
 "ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
+"È anche possibile acquisire la lista completa di nodi ``enemies`` chiamando :"
+"ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
 msgid ""
@@ -151,10 +188,16 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you have some time!"
 msgstr ""
+"La classe :ref:`SceneTree <class_SceneTree>` fornisce molte funzioni utili, "
+"come l'integrazione con le scene, la gerarchia dei loro nodi ed anche un "
+"gruppo di nodi.  Essa permette di spostare facilmente le scene, oppure di "
+"ricaricarle, o anche di chiudere il gioco, metterlo in pausa o rimuoverlo "
+"dalla pausa. Può anche venire usato con segnali di interesse. Quindi, se hai "
+"tempo, prova a dargli una occhiata!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 msgid "Notifications"
-msgstr ""
+msgstr "Notifiche"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:158
 msgid ""
@@ -164,6 +207,12 @@ msgid ""
 "`Object._notification() <class_Object_method__notification>` function in "
 "your script:"
 msgstr ""
+"Godot ha un suo sistema di notifiche. Solitamente non sono necessarie per lo "
+"scripting, siccome è a basso livello e vengono fornite le funzioni "
+"virtuali.\n"
+"È comunque buono sapere che esistono. Per esempio, tu potresti aggiungere la "
+"funzione :ref:`Object._notification() <class_Object_method__notification>` "
+"al tuo script:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid ""
@@ -171,37 +220,48 @@ msgid ""
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overrideable functions."
 msgstr ""
+"La documentazione di ogni classe presente in :ref:`Class Reference <toc-"
+"class-ref>` mostra le notifiche che possono ricevere. Però, in molti casi "
+"GDScript fornisce funzioni più semplici e ignorabili."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
 msgid "Overrideable functions"
-msgstr ""
+msgstr "Funzioni sovrascrivibili"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
 msgid ""
 "Such overrideable functions, which are described as follows, can be applied "
 "to nodes:"
 msgstr ""
+"Tali funzioni sovrascrivibili, le quali sono descritte di seguito, possono "
+"essere applicate ai nodi:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
 msgstr ""
+"Come menzionato precedentemente, è meglio usare queste funzioni anziché il "
+"sistema di notifiche."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
 msgid "Creating nodes"
-msgstr ""
+msgstr "Creare nodi"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:278
 msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
+"Per creare un nodo nel codice, usare il metodo ``.new()``, come per ogni "
+"altro class-based datatype. Per esempio:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
 msgstr ""
+"Per eliminare un nodo, che sia dentro o fuori la scena, deve essere usato "
+"``free()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
 msgid ""
@@ -209,6 +269,9 @@ msgid ""
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
+"Quando un nodo viene liberato, vengono liberati anche i suoi nodi figli. Per "
+"questo motivo, eliminare manualmente i nodi è più semplice di quanto sembri. "
+"Libera il nodo base ed ogni suo sotto-nodo lo seguerà."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
@@ -217,28 +280,39 @@ msgid ""
 "will crash the game. Running Godot with the debugger will often catch this "
 "case and warn you about it."
 msgstr ""
+"Potrebbe verificarsi una situazione in cui noi vogliamo eliminare un nodo "
+"che è attualmente \"bloccato\", perchè sta emettendo un segnale o chiamando "
+"una funzione. Questo causerà il crash del gioco. Il debugger di Godot "
+"scoverà spesso queste situazioni e ti avvertirà."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
+"Il modo più sicuro per eliminare un nodo è usando :ref:`Node.queue_free() "
+"<class_Node_method_queue_free>`. Questo cancella i nodi in modo sicuro "
+"quando non vengono usati."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
 msgid "Instancing scenes"
-msgstr ""
+msgstr "Istanziare scene"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:347
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
+"Istanziare una scena da codice viene fatto in due passaggi. Il primo è "
+"caricare la scena dal tuo hard drive:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:360
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
+"Il precaricamento può essere più conveniente, siccome accade nella fase di "
+"analisi (solo GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
 msgid ""
@@ -248,6 +322,11 @@ msgid ""
 "must be called. This will return the tree of nodes that can be added to the "
 "active scene:"
 msgstr ""
+"Ma ``scene`` non è ancora un nodo. È impacchettato in una risorsa speciale "
+"chiamata :ref:`PackedScene <class_PackedScene>`. Per creare il nodo, bisogna "
+"chiamare la funzione :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`. Questo ritorna l'albero di nodi che "
+"possono essere aggiunti alla scena attiva:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid ""
@@ -256,10 +335,14 @@ msgid ""
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
+"Il vantaggio di questo processo diviso in due passaggi è che la PackedScene "
+"potrebbe essere caricata e pronta all'uso così che tu possa creare quante "
+"istanze desideri. È molto utile per istanziare velocemente un grande numero "
+"di nemici, proiettili e altre entità nella scena attiva."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "Registra script come classi"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
 msgid ""
@@ -267,6 +350,9 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
+"Godot ha una funzione \"Script Class\" per registrare singoli script con "
+"l'editor. Di default, puoi accedere agli script senza nome solo caricando "
+"direttamente il file."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
 msgid ""
@@ -275,17 +361,24 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
+"Puoi nominare uno script e registrarlo come un tipo nell'editor con la "
+"parola chiave ``class_name`` seguita dal nome della classe. Puoi aggiungere "
+"una virgola ed opzionalmente un percorso ad un'immagine da usare come icona. "
+"Potrai ora trovare il tuo nuovo tipo nella finestra di creazione di nodi o "
+"risorse."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
 msgid "In Godot 3.1:"
-msgstr ""
+msgstr "In Godot 3.1:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"Solo GDScript e NativeScript, cioè, C++ e altri linguaggi ramificati da "
+"GDNative, possono registrare gli script."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
 msgid "Only GDScript creates global variables for each named script."
-msgstr ""
+msgstr "Solo GDScript crea variabili globali per ogni script nominato."

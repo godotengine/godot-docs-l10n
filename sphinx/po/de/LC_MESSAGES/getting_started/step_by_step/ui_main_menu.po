@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 12:25+0200\n"
+"POT-Creation-Date: 2019-07-25 10:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -192,7 +192,7 @@ msgstr ""
 "nach unserer Vorlage verschachteln werden."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:88
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:280
 msgid "Break down the UI mockup"
 msgstr "Aufgliederung des UI-Entwurfs"
 
@@ -382,22 +382,24 @@ msgid "The file browser lets you find and load textures"
 msgstr "Die Dateiauswahl lässt dich Texturen finden und laden"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:167
+#, fuzzy
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
 "a separate node. Then, double click on each of the nodes in the Scene tab to "
-"rename them."
+"rename them. Nothing has been placed in containers yet so this should look "
+"messy."
 msgstr ""
 "Wende die Operation auf alle ``TextureRect``-Nodes an.  Du solltest das "
 "Logo, die Illustration, die drei Menüpunkte und die Versionsangabe jeweils "
 "als eigenen Knoten haben. Benenne die Knoten dann im Szenenfenster um, indem "
 "du sie doppelt anklickst."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:174
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:175
 msgid "The six nodes, with textures loaded"
 msgstr "Die sechs Nodes, mit geladenen Texturen"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:179
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
@@ -405,11 +407,11 @@ msgstr ""
 "Wenn dein Spiel Übersetzungen unterstützen soll, dann benutze ``Labels`` "
 "anstelle von ``TextureRect``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:182
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:183
 msgid "Add containers to place UI elements automatically"
 msgstr "Füge Container ein, um UI-Elemente automatisch zu platzieren"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:184
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:185
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -432,7 +434,7 @@ msgstr ""
 "wie er Kinder hat. Obwohl die Variable Größe des Split Containers "
 "abgeschaltet werden kann, empfehle ich den Gebrauch der Box Containers."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:195
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
 msgid ""
 "Select the ``MarginContainer`` and add an ``HBoxContainer``. Then, we need "
 "two containers as children of our ``HBoxContainer``: a ``VBoxContainer`` for "
@@ -444,7 +446,7 @@ msgstr ""
 "``HBoxContainer``: einen ``VBoxContainer`` für die Menüpunkte zur Linken und "
 "einen ``CenterContainer`` für die Illustration zur Rechten."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:202
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:203
 msgid ""
 "You should have four nested containers, and the TextureRect nodes sitting "
 "aside from it"
@@ -452,7 +454,7 @@ msgstr ""
 "Du solltest vier verschachtelte Container haben und den TextureRect-Node "
 "nebendran"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:206
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
@@ -463,23 +465,23 @@ msgstr ""
 "and-Drop in den ``VBoxContainer``. Die Nodes sollten sich selbstständig "
 "positionieren."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:212
 msgid "Containers automatically place and resize textures"
 msgstr "Container platzieren Texturen automatisch und passen deren Größe an"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:213
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "We're left with two problems to solve:"
 msgstr "Wir müssen noch zwei Probleme lösen:"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:215
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
 msgid "The characters on the right aren't centered"
 msgstr "Die Charaktere rechts sind nicht mittig"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
 msgid "There's no space between the logo and the other UI elements"
 msgstr "Zwischen dem Logo und den anderen Oberflächenelementen ist kein Platz"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the ``Size Flags`` category and click "
@@ -498,7 +500,7 @@ msgstr ""
 "``Horizontal``. Ziehe schließlich die Figuren in den ``CenterContainer``. "
 "Das Element wird automatisch zentriert."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:230
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer"
@@ -506,7 +508,7 @@ msgstr ""
 "Der Charakter-Node richtet sich mittig in der rechten Bildschirmhälft aus "
 "sobald du ihn in dem CenterContainer platzierst"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:233
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
@@ -523,14 +525,14 @@ msgstr ""
 "``Options``, und ziehe sie in den neuen ``VBoxContainer``. Das Layout der UI "
 "sollte sich, wenn überhaupt, kaum ändern."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:243
 msgid ""
 "Place the new container between the other two nodes to retain the UI's layout"
 msgstr ""
 "Platziere den neuen Container zwischen die anderen beiden Nodes, um das "
 "Layout der UI zu erhalten"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:246
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -548,7 +550,7 @@ msgstr ""
 "den ganzen verfügbaren senkrechten Raum ein. Aber er berücksichtigt seine "
 "Nachbarn, die Elemente ``Logo`` und ``Version``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:253
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:254
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the ``Alignment`` property to ``Center``."
@@ -556,13 +558,13 @@ msgstr ""
 "Um die Nodes im ``VBoxContainer`` zu zentrieren, gehe ganz nach oben im "
 "Inspektor und stelle die Eigenschaft ``Alignment`` auf ``Center``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:259
 msgid "The menu options should center vertically in the UI's left column"
 msgstr ""
 "Die Menüpunkte sollten in sich in der linken Spalte der Oberfläche sekrecht "
 "mittig ausrichten"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:260
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the ``Custom Constants`` category below ``Size Flags``, and click the "
@@ -576,17 +578,17 @@ msgstr ""
 "Eingabe drückst, wird die Eigenschaft ``Separation`` wirksam und Godot fügt "
 "30 Pixel zwischen den Menüpunkten ein."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:268
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:269
 msgid "The final interface"
 msgstr "Die fertige Oberfläche"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:270
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr ""
 "Ohne eine einzige Zeile Code haben wir ein ordentliches und dynamisches Menü."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:274
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
@@ -598,7 +600,7 @@ msgstr ""
 "zip <files/ui_main_menu_design.zip>`. In der nächsten Anleitung wirst du ein "
 "eine Spieleoberfläche mit Leisten und Gegenstandszählern erstellen."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:282
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
@@ -611,7 +613,7 @@ msgstr ""
 "Seitenverhältnisse. In Godot benutzen wir Container, um die Position und "
 "Größe der UI-Elemente zu steuern."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:287
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press the Q key to activate "
@@ -624,7 +626,7 @@ msgstr ""
 "den Container aus und ziehe an einer seiner Ecken, um die Größe zu ändern. "
 "Die UI-Komponenten darin sollten sich dynamisch anpassen."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:293
 msgid ""
 "You'll notice that although containers move sprites around, they don't scale "
 "them. This is normal. We want the UI system to handle different screen "
@@ -637,7 +639,7 @@ msgstr ""
 "auch das ganze Spiel an verschiedene Bildschirmauflösungen anpassen. Zu "
 "diesem Zweck vergrößert und verkleinert Godot das gesamte Fenster."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:298
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
 msgid ""
 "You can change the scale mode in the project settings: click the Project "
 "menu -> Project Settings. In the window's left column, look for the Display "

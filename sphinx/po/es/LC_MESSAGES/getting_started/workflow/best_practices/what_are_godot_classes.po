@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 12:25+0200\n"
+"POT-Creation-Date: 2019-07-25 10:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,39 +18,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
-msgid "What are Godot classes really?"
-msgstr "¿Qué son realmente las clases en Godot?"
+#, fuzzy
+msgid "Godot scenes and scripts are classes"
+msgstr "Registrar scripts como clases"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
-"Godot offers two main means of creating types: scripts and scenes. Both of "
-"these represent a \"class\" since Godot revolves around Object-Oriented "
-"design. *How* they do this may not be clear to beginner or intermediate "
-"users though."
+"In Godot, scripts and scenes can both be the equivalent of classes in an "
+"Object-Oriented programming language. The main difference is that scenes are "
+"`declarative code <https://en.wikipedia.org/wiki/Declarative_programming>`_, "
+"while scripts can contain `imperative code <https://en.wikipedia.org/wiki/"
+"Imperative_programming>`_."
 msgstr ""
-"Godot ofrece principalmente dos métodos para crear tipos: scripts y escenas. "
-"Ambos representan una \"clase\" ya que Godot se meneja alrededor de un "
-"diseño Orientado a Objetos. Sin embargo, *cómo* lo hacen, puede no ser claro "
-"para los usuarios principiantes o intermedios."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:11
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:12
 msgid ""
-"Godot Engine provides classes out-of-the-box (like :ref:`Node "
-"<class_Node>`), but user-created types are not actually classes. Instead "
-"they are resources that tell the engine a sequence of initializations to "
-"perform on an engine class."
+"As a result, many best practices in Godot boil down to applying Object-"
+"Oriented design principles to the scenes, nodes, or script that make up your "
+"game."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:15
+msgid ""
+"This guide explains how scripts and scenes work in the engine's core, to "
+"help you get a sense of how Godot works under the hood, and to help you "
+"better understand where some of this series' best practices come from."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:20
+#, fuzzy
+msgid "Making sense of classes in Godot"
+msgstr "Importando recursos en Godot 3.0+"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:22
+#, fuzzy
+msgid ""
+"Godot Engine provides built-in classes like :ref:`Node <class_Node>`. User-"
+"created types are not technically classes. Instead, they are resources that "
+"tell the engine a sequence of initializations to perform on one of the "
+"engine's built-in classes."
 msgstr ""
 "Godot Engine provee clases listas para usar (como :ref:`Node <class_Node>`), "
 "pero los tipos creados por el usuario no son realmente clases. Por el "
 "contrario, son recursos que le dicen al motor una secuencia de indicaciones "
 "para realizar en una clase del motor."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:16
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
+#, fuzzy
 msgid ""
 "Godot's internal classes have methods that register a class's data with a :"
 "ref:`ClassDB <class_ClassDB>`. This database provides runtime access to "
-"class information (also called \"reflection\"). Things stored in the ClassDB "
-"include, among other things..."
+"class information. ``ClassDB`` contains information about classes like:"
 msgstr ""
 "Las clases internas de Godot tienen métodos que registran los datos de una "
 "clase mediante :ref:`ClassDB <class_ClassDB>`. Esta base de datos provee "
@@ -58,30 +76,29 @@ msgstr ""
 "llamado \"reflección\"). Las cosas guardadas en ClassDB incluyen, entre "
 "otras cosas..."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:21
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
 msgid "properties"
 msgstr "Propiedades"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:23
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
 msgid "methods"
 msgstr "métodos"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:25
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:33
 msgid "constants"
 msgstr "Constantes"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
 msgid "signals"
 msgstr "señales"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:29
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
+#, fuzzy
 msgid ""
-"Furthermore, this ClassDB is what Objects actually check against when "
-"performing any operation. Access a property? Call a method? Emit a signal? "
-"It will check the database's records (and the records of the Object's base "
-"types) to see if the Object supports the operation. Every C++ Object defines "
-"a static `_bind_methods()` function that describes what C++ content it "
-"registers to the database and how."
+"This ``ClassDB`` is what Objects check against when performing an operation "
+"like accessing a property or calling a method. ``ClassDB`` checks the "
+"database's records and the records of the Object's base types to see if the "
+"Object supports the operation."
 msgstr ""
 "Además, ClassDB es lo que los Objetos usan para hacer chequeos cuando "
 "realizar alguna operación. ¿Acceder una propiedad? ¿Invocar un método? "
@@ -90,26 +107,23 @@ msgstr ""
 "operación. Cada Objeto de C++ define una función estática `_bind_methods()` "
 "que describe que contenido de C++ registra en la base de datos y como."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
-msgid ""
-"So, if the engine provides all of this data at startup, then how does a user "
-"define their own data? It'd be nice if users could define a custom set of "
-"data to be appended to an object's data. That way, users could inject their "
-"own properties and methods into the engine's Object query requests."
-msgstr ""
-"Entonces, si el motor provee todos estos datos al iniciar ¿cómo un usuario "
-"define sus propios datos? Seria bueno si los usuarios pudiesen definir un "
-"conjunto customizado de datos para agregarse a los de un objeto. De esa "
-"manera los usuario podrían inyectar sus propias propiedades y métodos en los "
-"pedidos de búsqueda de los Objetos del motor."
-
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
 msgid ""
-"*This* is what a :ref:`Script <class_Script>` is. Objects check their "
-"attached script before the database, so scripts can even override methods. "
-"If a script defines a `_get_property_list()` method, that data is appended "
-"to the list of properties the Object fetches from the ClassDB. The same "
-"holds true for other declarative code."
+"On the engine's side, every class defines a static ``_bind_methods()`` "
+"function that describes what C++ content it registers to the database and "
+"how. When you use the engine, you can extend the methods, properties, and "
+"signals available from the ``ClassDB`` by attaching a :ref:`Script "
+"<class_Script>` to your node."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:46
+#, fuzzy
+msgid ""
+"Objects check their attached script before the database. This is why scripts "
+"can override built-in methods. If a script defines a "
+"``_get_property_list()`` method, Godot appends that data to the list of "
+"properties the Object fetches from the ClassDB. The same is true for other "
+"declarative code."
 msgstr ""
 "*Esto* es un :ref:`Script <class_Script>`. Los Object revisan su script "
 "anexado antes que la base de datos del motor, de este modo, los scripts "
@@ -118,82 +132,72 @@ msgstr ""
 "que el Object obtiene de la ClassDB. Lo mismo aplica para otros códigos "
 "declarativos."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:47
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:51
 msgid ""
-"This can lead to some users' confusion when they see a script as being a "
-"class unto itself. In reality, the engine just auto-instantiates the base "
-"engine class and then adds the script to that object. This then allows the "
-"Object to defer to the Script's content where the engine logic deems "
+"Even scripts that don't inherit from a built-in type, i.e. scripts that "
+"don't start with the ``extends`` keyword, implicitly inherit from the "
+"engine's base :ref:`Reference <class_Reference>` class. This allows the "
+"Object to defer to the script's content where the engine logic deems "
 "appropriate."
 msgstr ""
-"Esto puede llevar a una confusión de los usuarios, de ver a un script es una "
-"clase en sí mismo. En realidad, el motor simplemente auto instancia la clase "
-"base y agrega el script al objeto. Esto permite que el Object difiera al "
-"contenido del Script cuando la lógica del motor lo vea apropiado."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:53
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid ""
-"A problem does present itself though. As the size of Objects increases, the "
-"scripts' necessary size to create them grows much, much larger. Creating "
-"node hierarchies demonstrates this. Each individual Node's logic could be "
-"several hundred lines of code in length."
+"As a result, you can instance scripts without the ``extends`` keyword from "
+"code, but you cannot attach them to a :ref:`Node <class_Node>`"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:63
+msgid "Scripting performances and PackedScene"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:65
+#, fuzzy
+msgid ""
+"As the size of Objects increases, the scripts' necessary size to create them "
+"grows much, much larger. Creating node hierarchies demonstrates this. Each "
+"individual Node's logic could be several hundred lines of code in length."
 msgstr ""
 "Esto también presenta un problema. Cuando el tamaño de los Object aumenta, "
 "el tamaño de los scripts necesarios para crearlos crece mucho. Esto se puede "
 "demostrar creando jerarquías de nodos. La lógica individual de cada Node "
 "puede ser de cientos de líneas de código en longitud."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
-msgid "let's see a simple example of creating a single Node as a child."
-msgstr "veamos un ejemplo simple de creación de un solo Node como un hijo."
-
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:98
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:69
 msgid ""
-"Notice that only two pieces of declarative code are involved in the creation "
-"of this child node: the variable declaration and the constructor "
-"declaration. Everything else about the child must be setup using imperative "
-"code. However, script code is much slower than engine C++ code. Each change "
-"must make a separate call to the scripting API which means a lot of C++ "
-"\"lookups\" within data structures to find the corresponding logic to "
-"execute."
+"Let's see a simple example of creating a single ``Node`` as a child. The "
+"code below creates a new ``Node``, changes its name, assigns a script to it, "
+"sets its future parent as its owner so it gets saved to disk along with it, "
+"and finally adds it as a child of the ``Main`` node:"
 msgstr ""
-"Nota que sólo dos porciones de código declarativo están involucradas en la "
-"creación de este nodo hijo: la declaración de una variable y la del "
-"constructor. Todo lo demás sobre el hijo debe hacerse usando código "
-"imperativo. Sin embargo, el código de script es mucho más lento que el "
-"código C++ del motor. Cada cambio debe hacer una llamada separada al API de "
-"scripting, lo que significan muchos C++ \"lookups\" (búsquedas) dentro de "
-"estructuras de datos para encontrar la lógica correspondiente para "
-"ejecutarlo."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:106
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:109
 msgid ""
-"To help offload the work, it would be convenient if one could batch up all "
-"operations involved in creating and setting up node hierarchies. The engine "
-"could then handle the construction using its fast C++ code, and the script "
-"code would be free from the perils of imperative code."
+"Script code like this is much slower than engine-side C++ code. Each change "
+"makes a separate call to the scripting API which leads to many \"look-ups\" "
+"on the back-end to find the logic to execute."
 msgstr ""
-"Para ayudar a aliviar la carga, puede ser conveniente hacer por lotes todas "
-"las operaciones que impliquen la creación y configuración de jerarquías de "
-"nodos. Entonces el motor podrá realizar la construcción usando su rápido "
-"código C++ y el script estará libre de los riesgos del código imperativo."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:111
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:113
 msgid ""
-"*This* is what a scene (:ref:`PackedScene <class_PackedScene>`) is: a "
-"resource that provides an advanced \"constructor\" serialization which is "
-"offloaded to the engine for batch processing."
+"Scenes help to avoid this performance issue. :ref:`PackedScene "
+"<class_PackedScene>`, the base type that scenes inherit from, are resources "
+"that use serialized data to create objects. The engine can process scenes in "
+"batches on the back-end and provide much better performance than scripts."
 msgstr ""
-"*Esto* es una escena (:ref:`PackedScene <class_PackedScene>`): un Resource "
-"que provee un \"constructor\" de serialización avazado que puede ser "
-"delegado al motor para procesamiento por lotes."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:115
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
+#, fuzzy
+msgid "Scenes and scripts are objects"
+msgstr "Objetos transparentes"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
+#, fuzzy
 msgid ""
-"Now, why is any of this important to scene organization? Because one must "
-"understand that scenes *are* objects. One often pairs a scene with a "
-"scripted root node that makes use of the sub-nodes. This means that the "
-"scene is often an extension of the script's declarative code."
+"Why is any of this important to scene organization? Because scenes *are* "
+"objects. One often pairs a scene with a scripted root node that makes use of "
+"the sub-nodes. This means that the scene is often an extension of the "
+"script's declarative code."
 msgstr ""
 "Ahora, por qué esto puede ser importante para la organización de una escena? "
 "Porque uno debe comprender que las escenas *son* objetos. Uno usualmente "
@@ -201,45 +205,42 @@ msgstr ""
 "Esto significa que la escena normalmente es es una extensión del código "
 "declarativo del script."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:120
-msgid "It helps to define..."
-msgstr "Esto ayuda a definir..."
-
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:122
-msgid "what objects are available to the script?"
-msgstr "¿qué objetos son accesibles para el script?"
-
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:124
-msgid "how are they organized?"
-msgstr "¿cómo están organizados?"
-
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
-msgid "how are they initialized?"
-msgstr "¿cómo son inicializados?"
+msgid "The content of a scene helps to define:"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
-msgid "what connections to each other do they have, if any?"
-msgstr "¿qué conexiones tienen entre sí, si es que tienen alguna?"
+#, fuzzy
+msgid "What nodes are available to the script"
+msgstr "¿qué objetos son accesibles para el script?"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
+#, fuzzy
+msgid "How they are organized"
+msgstr "¿cómo están organizados?"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
-msgid ""
-"As such, many Object-Oriented principles which apply to \"programming\", i."
-"e. scripts, *also* apply to scenes. Some scripts are designed to only work "
-"in one scene (which are often bundled into the scene itself). Other scripts "
-"are meant to be re-used between scenes."
-msgstr ""
-"De este modo, muchos principios de paradigna orientado a objetos aplicados a "
-"\"programación\", por ejemplo en scripts, *también* aplica a escenas. "
-"Algunos scripts son designados para funcionar en una escena (generalmente "
-"incluidos en la escena misma). Otros scripts están hechos para ser "
-"reutilizados en varias escenas."
+#, fuzzy
+msgid "How are they initialized"
+msgstr "¿cómo son inicializados?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:135
-msgid ""
-"**Regardless, the scene is always an extension of the root script, and can "
-"therefore be interpreted as a part of the class.** Most of the points "
-"covered in this series will build on this point, so keep it in mind."
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:131
+msgid "What signal connections they have with each other"
 msgstr ""
-"**A pesar de esto, la escena siempre es una extensión del script raíz, y "
-"puede ser interpretada como parte de la clase.** La mayoría de los puntos "
-"tratados aquí estarán basados en esto, así que tenlo en mente."
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:133
+msgid ""
+"Many Object-Oriented principles which apply to written code *also* apply to "
+"scenes."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:136
+msgid ""
+"The scene is *always an extension of the script attached to its root node*. "
+"You can see all the nodes it contains as part of a single class."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:139
+msgid ""
+"Most of the tips and techniques explained in this series will build on this."
+msgstr ""

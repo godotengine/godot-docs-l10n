@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 12:25+0200\n"
+"POT-Creation-Date: 2019-07-25 10:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,12 +32,19 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"I segnali sono la versione di Godot degli *observer* pattern. Consentono ad "
+"un nodo di inviare un messaggio che un altro nodo può ascoltare e "
+"rispondere. Per esempio, piuttosto che controllare in continuazione un "
+"bottone per verificare se è premuto, il bottone può emettere un segnale "
+"quando è premuto."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"Puoi scoprire di più relativamente agli observer pattern qui: http://"
+"gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
 msgid ""
@@ -46,16 +53,23 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
+"I segnali sono un modo per disaccoppiare i tuoi oggetti di gioco, il che "
+"comporta un codice meglio organizzato e più gestibile. Al posto di forzare "
+"gli oggetti di gioco ad aspettarsi che altri oggetti siano sempre presenti, "
+"possono invece emettere segnali che tutti gli oggetti interessati possono "
+"ascoltare e rispondere."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
+"Sotto puoi vedere alcuni esempi di come puoi usare i segnali nei tuoi "
+"progetti."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
 msgid "Timer example"
-msgstr ""
+msgstr "Esempio di Timer"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -63,6 +77,10 @@ msgid ""
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
 "<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
+"Per vedere come funzionano i segnali, proviamo ad usare un nodo :ref:`Timer "
+"<class_Timer>`. Creiamo una nuova scena con un Node e due figli: un Timer e "
+"un nodo :ref:`Sprite <class_Sprite>`. Nel pannello della scena, rinomina "
+"Node con TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -71,10 +89,14 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Per la texture dello Sprite, puoi usare l'icona di Godot, o qualsiasi altra "
+"immagine ti piaccia. Puoi farlo selezionando ``Load`` tra gli attibuti nel "
+"menu a tendina della Texture del nodo Sprite. Attacca uno script al nodo "
+"radice, ma non aggiungere nessun codice per ora."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
-msgstr ""
+msgstr "Il tuo albero di scena dovrebbe essere simile a questo:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:38
 msgid ""
@@ -82,6 +104,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"Nelle proprietà del nodo Timer, spunta la casella \"On\" vicino a "
+"*Autostart*. Questo farà in modo che il timer parta automaticamente quando "
+"viene avviata la scena. Puoi lasciare *Wait Time* impostato ad un secondo."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:42
 msgid ""
@@ -90,12 +115,18 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
+"Vicino alla tab \"Inspector\" ne è presente una chiamata \"Node\".  Clicca "
+"questa tab e vedrai tutti i segnali  che il nodo selezionato può emettere.  "
+"Nel caso del nodo Timer,  quello che c'interessa è \"timeout\". Questo "
+"segnale viene emesso ogni volta il Timer raggiunge ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
+"Clicca sul segnale \"timeout()\" e poi clicca \"Connect...\".  Vedrai la "
+"finestra seguente, dove puoi definire come connettere il segnale:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:54
 msgid ""
@@ -104,12 +135,19 @@ msgid ""
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
+"Nella parte sinistra, vedrai i nodi presenti nella scena e potrai "
+"selezionare quale vuoi che \"ascolti\" per il segnale. Nota che il nodo "
+"Timer è evidenziato in rosso - questo non è un errore, ma è un indicazione "
+"visiva che indica quale nodo stia emettendo il segnale. Seleziona il nodo "
+"base."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
+"Il nodo target *deve* avere uno script attaccato altrimenti riceverai un "
+"messaggio di errore."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:62
 msgid ""
@@ -118,28 +156,39 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"Nella parte bassa della finestra c'è un campo di testo \"Metodo nel nodo\". "
+"Questo è il nome della funzione che vuoi usare nello script del nodo target. "
+"Di default, Godot creerà questa funzione usando le convenzioni "
+"``_on_<node_name>_<signal_name>`` ma puoi cambiarlo se vuoi."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
+"Clicca \"Connetti\" e vedrai che la funzione è stata creata nello script:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:87
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"Ora possiamo sostituire il codice segnaposto con qualsiasi codice vogliamo "
+"eseguire quando il segnale viene ricevuto. Facciamo \"lampeggiare\" lo "
+"sprite:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:111
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"Esegui la scena e vedrai lo Sprite che lampeggia ogni secondo. Puoi cambiare "
+"il *Tempo di Attesa* del Timer nelle proprietà per alterare questa "
+"funzionalità."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:115
 msgid "Connecting signals in code"
-msgstr ""
+msgstr "Collegamento di segnali nel codice"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:117
 msgid ""
@@ -147,12 +196,17 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
+"Puoi anche connettere i segnali da codice invece che dall'editor. Questo è "
+"di solito necessario quando stai instanziando nodi da codice e quindi non "
+"puoi usare l'editor per fare la connessione."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"Per prima cosa, sconnetti il segnale selezionando la connessione nella tab "
+"\"Node\" del nodo timer e fai click su sconnetti."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:126
 msgid ""
@@ -162,25 +216,32 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
+"Per creare la connessione da codice, possiamo utilizzare la funzione "
+"``connect``. La inseriremo in ``_ready()`` cosi che la connessione venga "
+"creata durante l'esecuzione. La sintassi della funzione è ``<source_node>."
+"connect(<signal_name>, <target_node>, <target_function_name>)``. Qui c'è il "
+"codice per la connessione del nostro Timer:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:159
-#, fuzzy
 msgid "Custom signals"
-msgstr "Segnali in C#"
+msgstr "Segnali personalizzati"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:161
 msgid "You can also declare your own custom signals in Godot:"
-msgstr ""
+msgstr "Puoi anche dichiarare i tuoi segnali personalizzati in Godot:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:179
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
+"Una volta dichiarati, i tuoi segnali personalizzati appariranno "
+"nell'Ispettore e potranno essere connessi nello stesso modo di un segnale "
+"pre-costruito."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr ""
+msgstr "Per emettere un segnale da codice, usa la funzione ``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:208
 msgid "Conclusion"
@@ -193,9 +254,17 @@ msgid ""
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
+"Tanti dei Nodi di Godot forniscono segnali che puoi usare per rilevare "
+"eventi. Per esempio, un :ref:`Area2D <class_Area2D>` che rappresenta una "
+"moneta emette un segnale ``body_entered`` quando il corpo del giocatore "
+"entra nella sua collision shape, facendoti capire quando il giocatore l'ha "
+"raccolta."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
+"Nella prossima sezione, :ref:`doc_your_first_game`, creerai un gioco "
+"completo includendo l'uso di segnali per connettere differenti componenti di "
+"gioco."

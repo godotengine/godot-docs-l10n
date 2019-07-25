@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 12:25+0200\n"
+"POT-Creation-Date: 2019-07-25 10:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,9 +19,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:4
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:51
-#, fuzzy
 msgid "Your first CanvasItem shader"
-msgstr "画布项着色器"
+msgstr "你的第一个画布项着色器"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:7
 msgid "Introduction"
@@ -34,6 +33,9 @@ msgid ""
 "detailed description of what shaders are please see :ref:`What are shaders "
 "<doc_what_are_shaders>`."
 msgstr ""
+"着色器是在GPU上运行的，用来渲染图像的一种特殊的程序。现代渲染都是通过着色器实"
+"现的。若想了解关于着色器更详细的说明，请查看 :ref:`着色器是什么 "
+"<doc_what_are_shaders>`。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:13
 msgid ""
@@ -41,6 +43,8 @@ msgid ""
 "by walking you through the process of writing a shader with both vertex and "
 "fragment functions. This tutorial targets absolute beginners to shaders."
 msgstr ""
+"本教程将重点介绍实际编写着色器程序的各个方面，引导您走过使用顶点和片段函数编"
+"写着色器的整个流程。本教程面向着色器。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:17
 msgid ""
@@ -48,6 +52,8 @@ msgid ""
 "of how shaders work in Godot, see the :ref:`Shading Reference <toc-shading-"
 "reference>`."
 msgstr ""
+"如果你在着色器方面有一定的经验，只是想知道着色器在Godot中是如何运作的，请参"
+"阅:ref:`着色器参考 <toc-shading-reference>`."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:21
 msgid "Setup"
@@ -59,6 +65,8 @@ msgid ""
 "objects in Godot, while :ref:`Spatial <doc_spatial_shader>` shaders are used "
 "to draw all 3D objects."
 msgstr ""
+":ref:画布项<doc_canvas_item_shader>`着色器用来绘制Godot中所有的2D对象，而:"
+"ref:`空间<doc_spatial_shader>`着色器用来绘制3D对象。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:26
 msgid ""
@@ -67,6 +75,9 @@ msgid ""
 "of :ref:`Resource <doc_resources>`. To draw multiple objects with the same "
 "material, the material must be attached to each object."
 msgstr ""
+"要使用着色器，它必须要被附加到一个:ref:`材质<class_material>`上，这个材质也必"
+"须附加在一个对象上。材质是一种:ref:`资源<doc_resources>`。若要使用同一材质绘"
+"制多个对象，该材质必须附加到每个对象上。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:30
 msgid ""
@@ -77,12 +88,19 @@ msgid ""
 "inherit their parent's material. This can be useful if you have a large "
 "number of nodes that you want to use the same material."
 msgstr ""
+"所有继承自:ref:`CanvasItem <class_canvasitem>`的对象都有一个材质属性，这包含"
+"所有的:ref:`GUI元素<class_Control>`, :ref:`精灵<class_sprite>`, :ref:`方块地"
+"图<class_tilemap>`, :ref:`2D网格实例<class_meshinstance2d>`等等。它们同时也可"
+"以选择性地继承其父类的材质。 如果你有要使用同一材质的很多节点，这个特性就可以"
+"派上用场。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:36
 msgid ""
 "To begin, create a Sprite node. You can use any CanvasItem, but for this "
 "tutorial we will use a Sprite."
 msgstr ""
+"首先，创建一个精灵节点。你其实可以用任意的画布项，但是在这个教程中我们用精"
+"灵。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:39
 msgid ""
@@ -90,6 +108,8 @@ msgid ""
 "select \"Load\", then select \"Icon.png\". For new projects, this is the "
 "Godot icon. You should now see the icon in the viewport."
 msgstr ""
+"在属性面板里，点击“材质”旁边写着“[空]”的地方然后选择“读取”，接着选中“Icon."
+"png”。对于新的项目，这个就是Godot的图标。你现在就会在视区中看到这个图标。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:42
 msgid ""
@@ -100,6 +120,10 @@ msgid ""
 "previews the output of spatial shaders. So what you are seeing is the output "
 "of the default Spatial Shader."
 msgstr ""
+"接下来，在属性面板下的画布项部分中，点击“材质”并选择“新着色器材质”。这会创建"
+"一个新的材质资源。然后点击新出现的球体。Godot目前还不知道你是要写画布项着色器"
+"还是空间着色器，它显示空间着色器的输出预览，所以你看到的是默认的空间着色器的"
+"输出。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:47
 msgid ""
@@ -107,13 +131,14 @@ msgid ""
 "shader resource and the shader editor will open. You are now ready to begin "
 "writing your first shader."
 msgstr ""
+"点击“着色器”并选中“新着色器”。最后，点击新创建的着色器资源，着色器编辑器就会"
+"打开。你现在就已经准备好开始写你的第一个着色器了。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:53
-#, fuzzy
 msgid ""
 "In Godot, all shaders start with a line specifying what type of shader they "
 "are. It uses the following format:"
-msgstr "任何着色器都需要指定此类型的第一行，格式如下:"
+msgstr "在Godot中，所有的着色器第一行都是指定着色器类型的，格式如下:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:60
 msgid ""
@@ -125,7 +150,7 @@ msgstr ""
 msgid ""
 "This line tells the engine which built-in variables and functionality to "
 "supply you with."
-msgstr ""
+msgstr "这一行告诉游戏引擎要提供你哪些内置变量以及函数。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:65
 msgid ""
@@ -135,29 +160,34 @@ msgid ""
 "functions are significantly more complex than vertex and fragment functions "
 "and so will not be covered here."
 msgstr ""
+"在Godot中，你可以重写三个函数来控制着色器的运作，它们是``vertex``（顶点函"
+"数），``fragment``（片段函数）和``light``（光照函数）。本教程会引导你写出一个"
+"包含顶点和片段函数的着色器。因为光照函数比另外两个函数要复杂非常多，所以在这"
+"里不会进行讲解。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:70
-#, fuzzy
 msgid "Your first fragment function"
-msgstr "您的第一个游戏"
+msgstr "您的第一个片段函数"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:72
 msgid ""
 "The fragment function runs for every pixel in a Sprite and determines what "
 "color that pixel should be."
-msgstr ""
+msgstr "片段函数对精灵中的每个像素进行操作，并且决定这个像素应该是什么颜色的。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:74
 msgid ""
 "They are restricted to the pixels covered by the Sprite, that means you "
 "cannot use one to, for example, create an outline around a Sprite."
 msgstr ""
+"它们限制在精灵覆盖的那些像素中，这也就意味着，你无法用片段函数来实现例如在精"
+"灵周围加边框的事情。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:77
 msgid ""
 "The most basic fragment function does nothing except assign a single color "
 "to every pixel."
-msgstr ""
+msgstr "最基础的片段函数仅仅给每个像素赋予一个颜色。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:79
 msgid ""
@@ -167,16 +197,20 @@ msgid ""
 "``COLOR`` is both an input variable to the fragment function and the final "
 "output from it."
 msgstr ""
+"我们向内置变量``COLOR``中写入一个``vec4``来做到这点。``vec4``是创建一个四维向"
+"量的简写形式。若想进一步了解向量，请参阅:ref:`向量数学教程"
+"<doc_vector_math>`。``COLOR``变量既是片段函数的一个输入，同时也是它的最终输"
+"出。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:91
 msgid ""
 "Congratulations! You're done. You have successfully written your first "
 "shader in Godot."
-msgstr ""
+msgstr "恭喜你！你成功在Godot中写出了你的第一个着色器。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:93
 msgid "Now let's make things more complex."
-msgstr ""
+msgstr "接着，我们来讨论更复杂的事情。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:95
 msgid ""
@@ -185,26 +219,31 @@ msgid ""
 "in your Sprite (without you knowing it!) and they tell the shader where to "
 "read from textures for each part of the mesh."
 msgstr ""
+"你可以使用片段函数中的很多输入来计算``COLOR``，``UV``就是其中的一个。你的精灵"
+"指定了UV坐标（在你不知情的情况下！），而它们告诉着色器，对于网格的每个部分从"
+"纹理的何处读取信息。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:99
 msgid ""
 "In the fragment function you can only read from ``UV``, but you can use it "
 "in other functions or to assign values to ``COLOR`` directly."
 msgstr ""
+"在片段函数中你只能从``UV``中读取，但是你可以在其他函数中使用，或者直接对"
+"``COLOR``赋值。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:102
 msgid "``UV`` varies between 0-1 from left-right and from top-bottom."
-msgstr ""
+msgstr "``UV``取值在0-1之间，从左到右，由上到下。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:115
 msgid "Using ``TEXTURE`` built-in"
-msgstr ""
+msgstr "使用内置变量``TEXTURE``"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:117
 msgid ""
 "When you want to adjust a color in a Sprite you cannot just adjust the color "
 "from the texture manually like in the code below."
-msgstr ""
+msgstr "当你想调整精灵中的颜色时，你不能像下面的代码那样手动修改纹理中的颜色。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:127
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 12:25+0200\n"
+"POT-Creation-Date: 2019-07-25 10:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,7 +195,7 @@ msgstr ""
 "основе нашего макета."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:88
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:280
 #, fuzzy
 msgid "Break down the UI mockup"
 msgstr "Краш-тест UI макета"
@@ -391,22 +391,24 @@ msgid "The file browser lets you find and load textures"
 msgstr "Файловый проводник позволяет находить и загружать текстуры"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:167
+#, fuzzy
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
 "a separate node. Then, double click on each of the nodes in the Scene tab to "
-"rename them."
+"rename them. Nothing has been placed in containers yet so this should look "
+"messy."
 msgstr ""
 "Повторите операцию для всех ``TextureRect`` узлов. У вас должен быть "
 "логотип, иллюстрация, три варианта меню и информация о версии, каждая как "
 "отдельный узел. Затем дважды щелкните на каждом из узлов на вкладке сцена, "
 "чтобы переименовать их."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:174
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:175
 msgid "The six nodes, with textures loaded"
 msgstr "Шесть узлов с загруженными текстурами"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:179
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
@@ -414,11 +416,11 @@ msgstr ""
 "Если вы хотите добавить возможность локализации вашей игры, используйте "
 "``Labels`` для опций меню вместо ``TextureRect``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:182
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:183
 msgid "Add containers to place UI elements automatically"
 msgstr "Добавление контейнеров для автоматического размещения элементов UI"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:184
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:185
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -441,7 +443,7 @@ msgstr ""
 "изменение размера контейнера, я рекомендую использовать контейнеры для "
 "контейнеров."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:195
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
 msgid ""
 "Select the ``MarginContainer`` and add an ``HBoxContainer``. Then, we need "
 "two containers as children of our ``HBoxContainer``: a ``VBoxContainer`` for "
@@ -452,7 +454,7 @@ msgstr ""
 "два контейнера, как дети нашего ``HBoxContainer``: ``VBoxContainer`` для "
 "опций меню слева, и ``CenterContainer`` для картинки справа."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:202
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:203
 #, fuzzy
 msgid ""
 "You should have four nested containers, and the TextureRect nodes sitting "
@@ -461,7 +463,7 @@ msgstr ""
 "Вы должны иметь четыре вложенных контейнеров, и TextureRect узлы, "
 "находящиеся вне."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:206
 #, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
@@ -473,23 +475,23 @@ msgstr ""
 "``VBoxContainer``. Затем перетащите узел с картинкой в ``CenterContainer``. "
 "Узлы должны позиционироваться автоматически."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:211
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:212
 msgid "Containers automatically place and resize textures"
 msgstr "Контейнеры автоматически размещает и изменяет размер текстур"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:213
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "We're left with two problems to solve:"
 msgstr "Нам осталось решить две проблемы:"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:215
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
 msgid "The characters on the right aren't centered"
 msgstr "Картинка справа не центрирована"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
 msgid "There's no space between the logo and the other UI elements"
 msgstr "Между логотипом и другими элементами UI нет места"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
 #, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
@@ -509,7 +511,7 @@ msgstr ""
 "перетащить картинку в ``CenterContainer``. Картинка будет центрирована "
 "автоматически."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:230
 #, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
@@ -518,7 +520,7 @@ msgstr ""
 "Узел character будет центрирован в правой половине экрана, как только вы "
 "поместите его внутрь CenterContainer"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:233
 #, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
@@ -536,13 +538,13 @@ msgstr ""
 "перетащите их в новый ``VBoxContainer``. Макет UI должен едва измениться, "
 "если вообще изменится."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:243
 #, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's layout"
 msgstr "Поместите новый контейнер между двумя другими узлами"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:246
 #, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
@@ -560,7 +562,7 @@ msgstr ""
 "``Expand``. Контейнер расширится, чтобы взять все доступное вертикальное "
 "пространство. Но он уважает своих соседей, ``Logo`` и``Version``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:253
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:254
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the ``Alignment`` property to ``Center``."
@@ -568,11 +570,11 @@ msgstr ""
 "Чтобы центрировать узлы в `VBoxContainer``, прокрутите до верхней части "
 "инспектора и измените свойство ``Alignment`` на ``Center``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:259
 msgid "The menu options should center vertically in the UI's left column"
 msgstr "MenuOption должен центрироваться по вертикали в левом столбце"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:260
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
 #, fuzzy
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
@@ -587,16 +589,16 @@ msgstr ""
 "Установите его на 30. После нажатия клавиши Enter, свойство ``Separation`` "
 "становится активным и Godot добавляет 30 пикселей между MenuOptions."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:268
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:269
 msgid "The final interface"
 msgstr "Финальный интерфейс"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:270
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr "Без единой строки кода у нас есть точное и отзывчивое главное меню."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:274
 #, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
@@ -608,7 +610,7 @@ msgstr ""
 "сравнить с вашим собственным. В следующем курсе уроков вы создадите UI игры "
 "с шкалами и счетчиками предметов."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:282
 #, fuzzy
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
@@ -621,7 +623,7 @@ msgstr ""
 "различные размеры и соотношения. В Godot мы используем контейнеры для "
 "управления позицией и размера элемента UI."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:287
 #, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
@@ -635,7 +637,7 @@ msgstr ""
 "перетащите один из углов контейнера, чтобы изменить его размер. Компоненты "
 "UI должны \"течь\" внутри него."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:293
 msgid ""
 "You'll notice that although containers move sprites around, they don't scale "
 "them. This is normal. We want the UI system to handle different screen "
@@ -648,7 +650,7 @@ msgstr ""
 "адаптировалась к различным разрешениям экрана. Для этого Godot масштабирует "
 "все окно вверх и вниз."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:298
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
 #, fuzzy
 msgid ""
 "You can change the scale mode in the project settings: click the Project "

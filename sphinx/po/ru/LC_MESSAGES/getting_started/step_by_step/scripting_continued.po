@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 12:25+0200\n"
+"POT-Creation-Date: 2019-07-25 10:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -269,15 +269,14 @@ msgstr ""
 "метод ``free()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
-"Когда узел освобождается, он также освобождает все свои дочерние узлы. Из-за "
-"этого удаление узлов вручную намного проще, чем кажется. Освободите базовый "
-"узел, и все остальное в поддереве исчезнет вместе с ним."
+"Когда узел удаляется, он также удаляет все свои дочерние узлы. Из-за этого "
+"удаление узлов вручную намного проще, чем кажется. Удалите базовый узел, и "
+"все остальные узлы будут удалены вместе с ним."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
