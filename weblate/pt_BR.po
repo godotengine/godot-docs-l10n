@@ -77,10 +77,12 @@
 # miketangogamer <miketangogamer@gmail.com>, 2018-2019.
 # Mosca Morta <ewersonffranco@gmail.com>, 2018.
 # Nataniel Sousa <natannada08@gmail.com>, 2019.
+# Neymar Junior <wizureye@nextmail.in>, 2019.
 # Nome Aleatorio <enviartrabalhopramim@gmail.com>, 2019.
 # Paulo Sergio Nogueira da Silva <paulozero357@gmail.com>, 2018.
 # Pedro Silva <pedrosgregorio9@gmail.com>, 2018.
 # Pietro Benati Carrara <piticarrara@gmail.com>, 2019.
+# Rafael Roque <rafael.roquec@gmail.com>, 2019.
 # Raphael Nogueira Campos <raphaelncampos@gmail.com>, 2019.
 # Rarysson Guilherme <r_guilherme12@hotmail.com>, 2019.
 # Renato Lacerda <renato.ac.lacerda@gmail.com>, 2018.
@@ -109,8 +111,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-25 10:21+0200\n"
-"PO-Revision-Date: 2019-07-22 21:07+0000\n"
-"Last-Translator: Nome Aleatorio <enviartrabalhopramim@gmail.com>\n"
+"PO-Revision-Date: 2019-07-28 20:46+0000\n"
+"Last-Translator: Rafael Roque <rafael.roquec@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -6808,9 +6810,8 @@ msgstr ""
 "tempo para aprender todos os nós que derivam dele."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:50
-#, fuzzy
 msgid "The 5 most common UI elements"
-msgstr "Os 5 elementos mais comuns de interface do usuário"
+msgstr "Os 5 elementos de interface do usuário mais comuns"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:52
 #, fuzzy
@@ -13244,7 +13245,7 @@ msgstr "{projeto} --goto {arquivo}:{linha}:{col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "Vim (gVim)"
-msgstr ""
+msgstr "Vim (gVim)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "``\"+call cursor({line}, {col})\" {file}``"
@@ -21305,6 +21306,9 @@ msgid ""
 "Blender. Make sure that the skeleton is reset to its T-pose or default rest "
 "pose."
 msgstr ""
+"É importante que a malha não seja deformada pelos ossos quando estiver "
+"exportando no Blender. Tenha certeza que o esqueleto esteja setado em pose "
+"tipo T ou pose de descanso."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:22
 msgid "Bone Weights"
@@ -22569,7 +22573,7 @@ msgstr "ja"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "GREET"
-msgstr ""
+msgstr "SAUDAÇÃO"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 #, fuzzy
@@ -22716,6 +22720,9 @@ msgid ""
 "sure that the skeleton is reset to its T-pose or default rest pose before "
 "exporting with your favorite 3D editor."
 msgstr ""
+"É importante que a malha não esteja deformada pelos ossos quando for "
+"exportar. Tenha certeza que o esqueleto esteja setado em pose tipo T ou pose "
+"de descanso padrão antes de exportar usando seu editor 3D favorito."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:26
 msgid "Why not FBX?"
@@ -22804,47 +22811,60 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:67
 msgid "Import workflows"
-msgstr ""
+msgstr "Importar fluxos de trabalho"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:69
 msgid ""
 "Godot scene importer allows different workflows regarding how data is "
 "imported. Depending on many options, it is possible to import a scene with:"
 msgstr ""
+"O importador de cenas do Godot permite diferentes fluxos de trabalho a "
+"respeito de como os dados são importados. Dependendo de muitas opções, é "
+"possível importar a cena usando:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:72
 msgid ""
 "External materials (default): Where each material is saved to a file "
 "resource. Modifications to them are kept."
 msgstr ""
+"Materiais externos (padrão): Onde cada material é salvado em um arquivo. "
+"Modificações serão mantidas."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:73
 msgid ""
 "External meshes: Where each mesh is saved to a different file. Many users "
 "prefer to deal with meshes directly."
 msgstr ""
+"Malhas externas: Onde cada malha é salva em diferentes arquivos. Vários "
+"usuários preferem lidar com malhas diretamente."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:74
 msgid ""
 "External animations: Allowing saved animations to be modified and merged "
 "when sources change."
 msgstr ""
+"Animações externas:  Permitir que animações salvas sejam modificadas e "
+"mescladas quando fonte for alterada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:75
 msgid ""
 "External scenes: Save each of the root nodes of the imported scenes as a "
 "separate scene."
 msgstr ""
+"Cenas externas: Salve cada um dos nós raiz das cenas importadas em uma cena "
+"separada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:76
 msgid "Single scene: A single scene file with everything built in."
-msgstr ""
+msgstr "Cena única: Um único arquivo de cena com tudo configurado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:80
 msgid ""
 "As different developers have different needs, this import process is highly "
 "customizable."
 msgstr ""
+"O processo de importação é altamente customizável, já que diferentes "
+"desenvolvedores possuem diferentes necessidades."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:83
 #, fuzzy
@@ -22853,29 +22873,31 @@ msgstr "As opções de importação são vastas:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
 msgid "The importer has several options, which will be discussed below:"
-msgstr ""
+msgstr "O importador possui diversas opções, que serão discutidas logo abaixo:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:93
 msgid "Root Type"
-msgstr ""
+msgstr "Tipo da Raiz"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
 "this can be modified."
 msgstr ""
+"Por padrão, o tipo do nó raiz nas cenas importadas é \"Espacial\", mas isso "
+"pode ser modificado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:98
 msgid "Root Name"
-msgstr ""
+msgstr "Nome da Raiz"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:100
 msgid "Allows setting a specific name to the generated root node."
-msgstr ""
+msgstr "Permite setar um nome específico para o nó raiz gerado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:103
 msgid "Custom Script"
-msgstr ""
+msgstr "Script Personalizado"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:105
 msgid ""
@@ -22885,9 +22907,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
-#, fuzzy
 msgid "Create a script like this:"
-msgstr "Crie um script que pareça isto:"
+msgstr "Crie um script dessa forma:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:120
 msgid ""
@@ -22895,13 +22916,16 @@ msgid ""
 "parameter is actually the root node of the scene). The scene that will "
 "finally be used must be returned. It can be a different one."
 msgstr ""
+"A função ``post_import`` recebe a cena importada como argumento (o parâmetro "
+"é o nó raiz da cena). A cena que será utilizada tem que ser retornada. Pode "
+"ser uma diferente."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:125
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:144
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:199
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:239
 msgid "Storage"
-msgstr ""
+msgstr "Armazenamento"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:127
 msgid ""
@@ -22909,22 +22933,29 @@ msgid ""
 "nodes below the root will each be a separate scene and instanced into the "
 "imported one."
 msgstr ""
+"Por padrão, o Godot importa uma única cena. Essa opção permite especificar "
+"que cada um dos nós abaixo da raiz serão uma cena separada e a instancia na "
+"cena importada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:131
 msgid ""
 "Of course, instancing such imported scenes in other places manually works, "
 "too."
 msgstr ""
+"Claro, instanciar essas cenas importadas em outros lugares manualmente "
+"também funciona."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:138
 msgid "Location"
-msgstr ""
+msgstr "Localização"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:140
 msgid ""
 "Godot supports materials in meshes or nodes. By default, materials will be "
 "put on each node."
 msgstr ""
+"Godot tem suporte a materiais em malha ou em nós. Por padrão, materiais "
+"serão colocados em cada um dos nós."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:146
 msgid ""
@@ -22933,12 +22964,18 @@ msgid ""
 "because most 3D DCCs don't have the same material options as those present "
 "in Godot."
 msgstr ""
+"Materiais podem ser armazenados na cena ou em um arquivo externo. Por "
+"padrão, eles são armazenados em arquivos externos para que seja possível "
+"editá-los. Isso acontece porquê a maioria dos DCCs 3D não possuem as mesmas "
+"opções de material que o Godot."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:150
 msgid ""
 "When materials are built-in, they will be lost each time the source scene is "
 "modified and re-imported."
 msgstr ""
+"Quando os materiais são compilados, eles serão perdidos toda vez que a cena "
+"principal for modificada ou importada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:154
 msgid "Keep On Reimport"

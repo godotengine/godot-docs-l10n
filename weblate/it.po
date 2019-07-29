@@ -44,8 +44,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-25 10:21+0200\n"
-"PO-Revision-Date: 2019-07-25 07:20+0000\n"
-"Last-Translator: Mirko Soppelsa <miknsop@gmail.com>\n"
+"PO-Revision-Date: 2019-07-29 19:20+0000\n"
+"Last-Translator: Marco Galli <mrcgll98@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -2206,17 +2206,17 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
-"Creare giochi con Godot é praticamente la stessa cosa. Usare il motore é "
-"come stare in una cucina. In questa cucina i *nodi* sono come un frigorifero "
-"pieno di ingredienti freschi con cui cucinare."
+"Creare giochi in Godot ti fa sentire più o meno allo stesso modo. Usando il "
+"programma si ha l'impressione di essere in cucina. In essa, i *nodi* sono "
+"come un frigorifero pieno di ingredienti freschi con cui cucinare."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
-"Ci sono diversi tipi di nodi. Alcuni mostrano immagini, altri riproducono "
-"suoni, altri ancora mostrano modelli 3D, ecc. Sono a dozzine."
+"Ci sono molti tipi di nodi. Alcuni mostrano immagini, altri riproducono "
+"suoni, altri nodi visualizzano modelli 3D, ecc. Ne esistono decine."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
@@ -2305,8 +2305,8 @@ msgid ""
 "A scene is composed of a group of nodes organized hierarchically (in tree "
 "fashion). Furthermore, a scene:"
 msgstr ""
-"Una scena é composta da un gruppo di nodi organizzato in maniera gerarchica "
-"(a mo' di albero). Ampliando, una scena:"
+"Una scena è composta da un gruppo di nodi organizzati in una gerarchia "
+"(simile ad un albero). Inoltre una scena:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has one root node."
@@ -3066,12 +3066,12 @@ msgid ""
 "It's simple, elegant, and designed to be familiar for users of other "
 "languages such as Lua, Python, Squirrel, etc."
 msgstr ""
-"È semplice, elegante, e studiato per essere familiare agli utilizzatori di "
-"altri linguaggi come Lua, Python, Squirrel, ecc."
+"É semplice, elegante, e progettato per essere familiare agli utenti di altri "
+"linguaggi quali Lua, Python, Squirrel, ecc."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
 msgid "Loads and compiles blazingly fast."
-msgstr "Viene caricato e compilato alla velocità della luce."
+msgstr "Ha un tempo di caricamento e di compilazione estremamente veloce."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
@@ -3087,8 +3087,8 @@ msgid ""
 "Has vector types built-in (such as Vectors, transforms, etc.), making it "
 "efficient for heavy use of linear algebra."
 msgstr ""
-"Ha i tipi per i vettori integrati (come i Vector, Transform, ecc), in modo "
-"da rendere efficiente l'uso intensivo dell'algebra lineare."
+"Offre nativamente diversi tipi di Vettori (come Vettori, trasformazioni, "
+"ecc.), rendendolo efficace nei calcoli complessi di algebra lineare."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
 msgid ""
@@ -3123,8 +3123,8 @@ msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
-"Se sei incerto e hai esperienza nella programmazione, specialmente con i "
-"linguaggi dinamici, GDScript è la scelta giusta!"
+"Se sei indeciso e hai già esperienza con la programmazione, specialmente con "
+"linguaggi a tipizzazione dinamica, ti consiglio di usare GDScript!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 #: ../../docs/getting_started/scripting/visual_script/index.rst:2
@@ -3340,17 +3340,17 @@ msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
-"Apparirà la finestra di creazione dello script. Questa finestra ti "
-"permetterà di impostare il linguaggio dello script, il nome della classe e "
-"altre opzioni pertinenti."
+"Apparirà la finestra di creazione dello script. Questa finestra ti permette "
+"di impostare il linguaggio dello script, il nome della classe e altre "
+"opzioni relative."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"Usando GDScript, il file stesso rappresenta la classe, quindi il campo del "
-"nome della classe non è modificabile."
+"Con GDScript, il file stesso rappresenta la classe, quindi il campo del nome "
+"della classe non è modificabile."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
 msgid ""
@@ -3685,8 +3685,8 @@ msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
-"Per esempio, i movimenti sono spesso moltiplicati al tempo DELTA per rendere "
-"la velocità di movimento sia costante che indipendente dal frame rate."
+"Per esempio, il movimento è spesso moltiplicato con un tempo delta per "
+"rendere il movimento costante ed indipendente dal frame rate."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""
@@ -3725,7 +3725,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
-msgstr "Il quale mostrerà un contatore che incrementa ad ogni frame."
+msgstr "Che mostrerà un contatore che incrementa ad ogni frame."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
@@ -3851,8 +3851,8 @@ msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
-"Per creare un nodo nel codice, usare il metodo ``.new()``, come per ogni "
-"altro class-based datatype. Per esempio:"
+"Per creare un nodo da codice, usare il metodo ``.new()``, come per ogni "
+"altro dato di tipo classe. Per esempio:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
 msgid ""
@@ -4418,6 +4418,10 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Le classi, le variabili export e i metodi usano PascalCase, i campi "
+"privati usano _camelCase, le variabili locali e i parametri usano camelCase "
+"(Vedi :ref:`doc_c_sharp_styleguide`). Bisogna dare attenzione a scrivere il "
+"nome dei metodi correttamente quando si connettono i segnali."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:97
 msgid "Sprite animation"
@@ -4488,7 +4492,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:138
 msgid "Moving the player"
-msgstr ""
+msgstr "Muovere il giocatore"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:140
 msgid ""
@@ -4701,7 +4705,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:343
 msgid "Choosing animations"
-msgstr ""
+msgstr "Scegliere le animazioni"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:345
 msgid ""
@@ -4741,6 +4745,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:419
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
 msgstr ""
+"Aggiungere quanto di seguito in cima allo script, dopo ``extends Area2d``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:433
 msgid ""
@@ -4767,10 +4772,13 @@ msgid ""
 "you can also give the name of an existing function that you want to link the "
 "signal to."
 msgstr ""
+"Quando connetti un segnale, invece che Godot crei una funzione per te, puoi "
+"assegnare il nome di una funzione già esistente che vuoi connettere al "
+"segnale."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:453
 msgid "Add this code to the function:"
-msgstr ""
+msgstr "Aggiungi questo codice alla funzione:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:472
 msgid ""
@@ -62500,11 +62508,11 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:183
 msgid "``Error award_achievement(Variant p_params);``"
-msgstr ""
+msgstr "``Error award_achievement(Variant p_params);``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:184
 msgid "``void reset_achievements();``"
-msgstr ""
+msgstr "``void reset_achievements();``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:185
 msgid "``void request_achievements();``"
@@ -74199,7 +74207,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:26
 msgid "`IRC logs <https://godot.eska.me/irc-logs/>`_"
-msgstr ""
+msgstr "`IRC logs <https://godot.eska.me/irc-logs/>`_"
 
 #: ../../docs/community/channels.rst:29
 msgid "Other chats"
@@ -74252,9 +74260,8 @@ msgid "`Forum (godotforums.org) <https://godotforums.org/>`_"
 msgstr "`Forum (godotforums.org) <https://godotforums.org/>`_"
 
 #: ../../docs/community/tutorials.rst:4
-#, fuzzy
 msgid "Tutorials and resources"
-msgstr "Creare un nuovo progetto"
+msgstr "Tutorial e risorse"
 
 #: ../../docs/community/tutorials.rst:6
 msgid ""

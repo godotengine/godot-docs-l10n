@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-25 10:21+0200\n"
-"PO-Revision-Date: 2019-07-17 07:18+0000\n"
+"PO-Revision-Date: 2019-07-29 19:20+0000\n"
 "Last-Translator: John Smith <weblater_jp@susa.eek.jp>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
@@ -1171,7 +1171,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:103
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "プロジェクトワークフロー"
 
 #: ../../docs/about/docs_changelog.rst:19
 msgid ":ref:`doc_android_custom_build`"
@@ -2329,6 +2329,8 @@ msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
+"この変更により、通常の再生ボタン (またはF5) を押すと、どのシーンがアクティブ"
+"に編集されているかにかかわらず、このシーンが実行されます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:198
 msgid ""
@@ -2337,6 +2339,10 @@ msgid ""
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
+"プロジェクト設定ダイアログには、project.godotファイルに保存できる多くのオプ"
+"ションが表示され、既定値が表示されます。値を変更すると、目盛りは名前の左側に"
+"マークされます。つまり、プロパティはproject.godotファイルに保存され、記憶され"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""
@@ -2347,7 +2353,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:207
 msgid "To be continued..."
-msgstr ""
+msgstr "続く..."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
 msgid ""
@@ -2358,7 +2364,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr ""
+msgstr "インスタンス"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:9
 msgid ""
@@ -2368,6 +2374,11 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
+"1つのシーンを作成してノードを追加すると、小規模なプロジェクトでは機能します"
+"が、プロジェクトのサイズと複雑さが増すにつれて、ノードの数がすぐに管理できな"
+"くなる可能性があります。これに対処するために、Godot はプロジェクトを任意の数"
+"のシーンに分割することを許可します。これにより、ゲームのさまざまなコンポーネ"
+"ントを整理するのに役立つ強力なツールが提供されます。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
@@ -2381,6 +2392,8 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"必要な数のシーンを作成し、ディスクに保存できます。この方法で保存されたシーン"
+"は「パックされたシーン」と呼ばれ、 ``.tscn`` の拡張子を持ちます。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
@@ -2390,7 +2403,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
-msgstr ""
+msgstr "上の図では、シーンBがインスタンスとしてシーンAに追加されました。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
@@ -2518,19 +2531,21 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
-msgstr ""
+msgstr "インスタンス化 (続き)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
-msgstr ""
+msgstr "要約"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
 msgstr ""
+"インスタンス化には便利な使い方がたくさんあります。インスタンス化を使用する"
+"と、次のようになります:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
-msgstr ""
+msgstr "シーンを細分化し、管理を容易にする機能。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
@@ -2541,10 +2556,12 @@ msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
+"複雑なゲームフローやUIを整理して埋め込む方法 (Godotでは、UI要素もノードで"
+"す)。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:17
 msgid "Design language"
-msgstr ""
+msgstr "デザイン言語"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
 msgid ""
@@ -2564,10 +2581,14 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
+"Godotでゲームを作る場合、推奨されるアプローチは、MVCやエンティティ-関係図のよ"
+"うな最も一般的なデザインパターンを無視し、代わりにあなたのシーンをより自然な"
+"方法で考えることです。ゲームの中で目に見える要素、つまりプログラマーだけでな"
+"く誰もが命名できる要素を想像することから始めましょう。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:30
 msgid "For example, here's how a simple shooter game could be imagined:"
-msgstr ""
+msgstr "たとえば、単純なシューティングゲームを想像する方法を次に示します:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:34
 msgid ""
@@ -2583,6 +2604,9 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"このような図を作成したら、図にリストされている各要素に対してシーンを作成する"
+"ことをお勧めします。所有関係にはインスタンス化(コードで、またはエディタで直"
+"接)を使用します。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
 msgid ""
@@ -2600,6 +2624,8 @@ msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
+"アセットとネストされた要素が多いオープンワールド型ゲームの例をもう1つ見てみま"
+"しょう:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:53
 msgid ""
@@ -2608,6 +2634,9 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"部屋の要素を見てみましょう。そこから始めたとしましょう。家具(シーンも)の配置"
+"が異なる複数の異なる部屋のシーンを作成できます。後で、部屋を接続して内部を構"
+"成する家のシーンを作成できます。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:58
 msgid ""
@@ -2615,6 +2644,8 @@ msgid ""
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"その後、我々は多くのインスタンス化された家から作られた要塞のシーンを作ること"
+"ができました。その後、世界地図の地形に取り組み始め、要塞を追加しました。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:62
 msgid ""
@@ -2622,6 +2653,8 @@ msgid ""
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"後で、衛兵(及び他のNPC)を表すシーンを作成し、要塞に追加することもできます。そ"
+"の結果、ゲームの世界全体に間接的に追加されます。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:66
 msgid ""
@@ -2632,10 +2665,16 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"Godotを使用すると、より多くのシーンを作成してインスタンス化するだけでよいの"
+"で、このようにゲームを簡単に繰り返すことができます。 さらに、エディターのUI"
+"は、プログラマーにとっても非プログラマーにとっても使いやすいように設計されて"
+"います。 典型的なチーム開発プロセスには、2Dまたは3Dアーティスト、レベルデザイ"
+"ナー、ゲームデザイナー、アニメーターが関与します。これらはすべてエディターイ"
+"ンターフェイスで作業できます。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"
-msgstr ""
+msgstr "情報過多!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:75
 msgid ""
@@ -2643,6 +2682,9 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"たくさんの高度な情報が一度に出てきましたね。 ただし、このチュートリアルの重要"
+"な部分は、実際のプロジェクトでシーンとインスタンス化がどのように使用されてい"
+"るかを認識することです。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:79
 msgid ""
@@ -3625,7 +3667,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 #: ../../docs/development/cpp/configuring_an_ide.rst:182
 msgid "Project setup"
-msgstr ""
+msgstr "プロジェクトの設定"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -4729,7 +4771,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid "Exporting"
-msgstr ""
+msgstr "エクスポート"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:9
 msgid ""
@@ -5364,7 +5406,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr ""
+msgstr "コントロールノードを使用したインターフェイスの設計"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -5377,11 +5419,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
-msgstr ""
+msgstr "Godotのエディタは、エンジンのUIフレームワークで作られています"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:16
 msgid "This guide will get you started with UI design. You will learn:"
-msgstr ""
+msgstr "このガイドでは、UI設計を開始します。次の内容を学習します:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
 msgid "The five most useful control nodes to build your games' interface"
@@ -5389,12 +5431,13 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
-msgstr ""
+msgstr "UI要素のアンカーを使用する方法"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:20
 msgid ""
 "How to efficiently place and arrange your user interface using containers"
 msgstr ""
+"コンテナを使用してユーザーインターフェイスを効率的に配置および配置する方法"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
 msgid ""
@@ -5427,15 +5470,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
-msgstr ""
+msgstr "すべてのコントロールノードは、同じメインプロパティを共有します:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:38
 msgid "Anchor"
-msgstr ""
+msgstr "アンカー"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Bounding rectangle"
-msgstr ""
+msgstr "境界矩形"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Focus and focus neighbor"
@@ -5444,64 +5487,70 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 #: ../../docs/tutorials/gui/gui_containers.rst:38
 msgid "Size flags"
-msgstr ""
+msgstr "サイズフラグ"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Margin"
-msgstr ""
+msgstr "マージン"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "The optional UI theme"
-msgstr ""
+msgstr "オプションのUIテーマ"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:45
 msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
 msgstr ""
+"コントロールノードの基本を理解すると、そこから派生するすべてのノードを学習す"
+"る時間が少なくなります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:50
 msgid "The 5 most common UI elements"
-msgstr ""
+msgstr "最も一般的な5つのUI要素"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:52
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
+"Godotには多数のコントロールノードが付属しています。 それらの多くは、エディタ"
+"プラグインやアプリケーションを構築するのを助けるために用意されています。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:55
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
 msgstr ""
+"ほとんどのゲームでは、必要なUI要素は5種類で、コンテナは多くありません。5つの"
+"コントロールノードは次のとおりです:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:58
 msgid "Label: for displaying text"
-msgstr ""
+msgstr "Label:テキストを表示する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
-msgstr ""
+msgstr "TextureRect:背景、または静止画像であるべきものすべてに主に使用"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:61
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
-msgstr ""
+msgstr "TextureProgress:ライフバー、ロードバー、水平、垂直または放射状のもの"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:63
 msgid "NinePatchRect: for scalable panels"
-msgstr ""
+msgstr "NinePatchRect: スケーラブルなパネル用"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "TextureButton: to create buttons"
-msgstr ""
+msgstr "TextureButton: ボタンを作成する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:68
 msgid "The 5 most common Control nodes for UI design"
-msgstr ""
+msgstr "UI設計の最も一般的な5つのコントロールノード"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
@@ -5557,7 +5606,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureRect modulated with a red color"
-msgstr ""
+msgstr "赤で変調されたTextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:98
 msgid "TextureButton"
@@ -5582,10 +5631,17 @@ msgid ""
 "``modulate`` property, to change its color, and ``Resize`` and ``Stretch`` "
 "modes to change its scale behavior."
 msgstr ""
+"Base Buttonセクションには、ボタンの動作を変更するチェックボックスがいくつかあ"
+"ります。 ``Toggle Mode`` がオンの場合、ボタンを押すとアクティブ状態と通常状態"
+"が切り替わります。 ``Disabled`` を選択すると、デフォルトで無効になります。こ"
+"の場合、 ``Disabled`` テクスチャが使用されます。TextureButtonには、テクスチャ"
+"フレームと共通するプロパティがいくつかあります。 ``modulate`` プロパティを使"
+"用してカラーを変更したり、 ``Resize`` および ``Stretch`` モードを使用してス"
+"ケール動作を変更したりできます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureButton and its 5 texture slots"
-msgstr ""
+msgstr "TextureButtonとその5つのテクスチャスロット"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
 msgid "TextureProgress"
@@ -5605,6 +5661,9 @@ msgid ""
 "``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
 "the gauge."
 msgstr ""
+"``Mode`` プロパティは、バーが伸びる方向 (水平、垂直、または放射状) を制御しま"
+"す。radialに設定すると、 ``Initial Angle`` と ``Fill Degrees`` プロパティで"
+"ゲージの範囲を制限できます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
 msgid ""
@@ -5619,7 +5678,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"
-msgstr ""
+msgstr "TextureProgressバー、3分の2が塗りつぶされました"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:146
 msgid ""
@@ -5632,7 +5691,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "Picture of a Label"
-msgstr ""
+msgstr "ラベルの画像"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
 msgid "NinePatchRect"
@@ -5648,28 +5707,34 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "NinePatchRect scaled with the min\\_size property"
-msgstr ""
+msgstr "min\\_sizeプロパティでスケーリングされたNinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:170
 msgid "There are two workflows to build responsive UIs"
-msgstr ""
+msgstr "応答性の高いUIを構築するための2つのワークフローがあります"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:172
 msgid ""
 "There are two workflows to build scalable and flexible interfaces in Godot:"
 msgstr ""
+"Godotには、スケーラブルで柔軟なインターフェイスを構築するための 2 つのワーク"
+"フローがあります:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
 msgid ""
 "You have many container nodes at your disposal that scale and place UI "
 "elements for you. They take control over their children."
 msgstr ""
+"UI要素をスケールして配置するコンテナノードが多数あります。それらは子を制御し"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
 msgid ""
 "On the other side, you have the layout menu. It helps you to anchor, place "
 "and resize a UI element within its parent."
 msgstr ""
+"反対側には、レイアウトメニューがあります。これは、親のUI要素を固定、配置、お"
+"よびサイズ変更するのに役立ちます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
 msgid ""
@@ -5687,10 +5752,12 @@ msgid ""
 "As you create UIs for your games and tools, you'll develop a sense for what "
 "fits best in each situation."
 msgstr ""
+"ゲームやツールに合わせてUIを作成すると、それぞれの状況に最も適したものに対す"
+"る感覚が高まります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:183
 msgid "Place UI elements precisely with anchors"
-msgstr ""
+msgstr "アンカーを使用してUI要素を正確に配置する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:185
 msgid ""
@@ -5699,14 +5766,17 @@ msgid ""
 "Top, Right and Bottom edges of the node. Change any of the 4 anchors to "
 "change the reference point of the margins."
 msgstr ""
+"コントロールノードには位置とサイズがありますが、アンカーと余白もあります。ア"
+"ンカーは、ノードの左端、上端、右端、下端の原点または参照点を定義します。余白"
+"の基準点を変更するには、4つのアンカーのいずれかを変更します。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
 msgid "The anchor property"
-msgstr ""
+msgstr "アンカーのプロパティ"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:195
 msgid "How to change the anchor"
-msgstr ""
+msgstr "アンカーを変更する方法"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
 msgid ""
@@ -5720,11 +5790,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "The layout menu in the viewport"
-msgstr ""
+msgstr "ビューポートのレイアウトメニュー"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:209
 msgid "Anchors are relative to the parent container"
-msgstr ""
+msgstr "アンカーは親コンテナに対して相対的です"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:211
 msgid ""
@@ -5736,16 +5806,23 @@ msgid ""
 "position in pixels, while anchors are relative to the parent container's "
 "size."
 msgstr ""
+"各アンカーは0から1の間の値です。左アンカーと上端アンカーの場合、値0は余白なし"
+"でノードのエッジが親の左端と上端に位置合わせされることを意味します。右端と下"
+"端の場合、値が1の場合、親コンテナーの右端と下端に位置合わせされます。一方、余"
+"白はアンカー位置(ピクセル単位)を表し、アンカーは親コンテナーのサイズに対して"
+"相対的です。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:221
 msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
 msgstr ""
+"余白はアンカー位置に対して相対的であり、アンカーに対して相対的です。実際に"
+"は、コンテナの余白を更新することがよくあります"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:226
 msgid "Margins change with the anchor"
-msgstr ""
+msgstr "アンカーによって余白が変化する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:228
 msgid ""
@@ -5756,10 +5833,15 @@ msgid ""
 "there's no parent, the margins will be relative to the node's own bounding "
 "Rectangle, set in the Rect section, in the inspector."
 msgstr ""
+"コントロールノードを移動またはサイズ変更すると、余白が自動的に更新されます。"
+"これらは、コントロールノードのエッジからアンカーまでの距離を表します。そのた"
+"め、コントロール ノードは常にコンテナ内に配置する必要があります。親がない場"
+"合、余白は、インスペクタのRectセクションで設定されたノード独自の境界矩形に対"
+"して相対的になります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:238
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
-msgstr ""
+msgstr "「Full Rect」アンカーに設定されたセンターコンテナの余白"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:240
 msgid ""
@@ -5770,10 +5852,17 @@ msgid ""
 "border of the screen? Use the MarginContainer. Want to build a vertical "
 "menu? Use the VBoxContainer. More on these below."
 msgstr ""
+"アンカーを変更するか、コンテナ内にコントロールノードをネストしてみてくださ"
+"い。余白が更新されます。 余白を手動で編集する必要はほとんどありません。 あな"
+"たを助けるために常に最初にコンテナを見つけるようにしてください。 Godotはあな"
+"たのためのすべての一般的なケースを解決するためにノードを持っています。 ライフ"
+"バーと画面の境界の間にスペースを追加する必要がありますか？ MarginContainerを"
+"使用してください。 垂直メニューを作りたいですか？ VBoxContainerを使用してくだ"
+"さい。 これらの詳細は下記をご覧ください。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:249
 msgid "Use size tags to change how UI elements fill the available space"
-msgstr ""
+msgstr "サイズタグを使用して、UI要素が使用可能な領域を埋める方法を変更する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:251
 msgid ""
@@ -5785,10 +5874,17 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
+"各コントロールノードにはサイズフラグがあります。UI要素のスケーリング方法をコ"
+"ンテナに指示します。「Fill」フラグをHorizontalまたはVerticalプロパティに追加"
+"すると、ノードのバウンディングボックスは可能な限りのスペースを使用しますが、"
+"兄弟を考慮してサイズを保持します。HBoxContainerに3つのTextureRectノードがあ"
+"り、両方の軸に「Fill」フラグが設定されている場合、それぞれが使用可能なスペー"
+"スの最大3分の1を使用しますが、それ以上は使用できません。コンテナがノードを引"
+"き継ぎ、自動的にサイズが変更されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:261
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
-msgstr ""
+msgstr "HBoxContainer内の3つのUI要素は、水平方向に整列します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:263
 msgid ""
@@ -5796,21 +5892,26 @@ msgid ""
 "against its siblings. Its bounding rectangle will grow against the edges of "
 "its parent, or until it's blocked by another UI node."
 msgstr ""
+"「Expand」フラグを使用すると、UI要素は可能な限りのスペースを使用して、兄弟要"
+"素をプッシュできます。そのバウンディングボックスは、親のエッジに向かって、ま"
+"たは別のUIノードによってブロックされるまで大きくなります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
-msgstr ""
+msgstr "上記と同じ例ですが、中央ノードには「Expand」サイズフラグがあります"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:272
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
+"サイズタグの効果はインターフェイスの設定方法によって大きく異なるため、サイズ"
+"タグを理解するにはある程度の練習が必要です。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:276
 msgid "Arrange control nodes automatically with containers"
-msgstr ""
+msgstr "コンテナを使用してコントロールノードを自動的に配置する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:278
 msgid ""
@@ -5826,33 +5927,38 @@ msgid ""
 "elements. To change them, navigate down to the Custom Constants section in "
 "the Inspector."
 msgstr ""
+"コンテナには、UI要素の配置方法を制御するための特別なプロパティがいくつかあり"
+"ます。変更するには、インスペクタのカスタム定数セクションに移動します。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:289
 msgid "The 5 most useful containers"
-msgstr ""
+msgstr "最も有用な5つのコンテナ"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
+"ツールを構築する場合は、すべてのコンテナが必要になる場合があります。しかし、"
+"ほとんどのゲームでは、一握りで十分です:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
 msgid "MarginContainer, to add margins around part of the UI"
-msgstr ""
+msgstr "MarginContainer、UIの一部に余白を追加します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 msgid "CenterContainer, to center its children in its bounding box"
-msgstr ""
+msgstr "CenterContainerは、その子を境界ボックスに中央に配置します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:296
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
-msgstr ""
+msgstr "VboxContainerおよびHboxContainer、行または列にUI要素を配置します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:298
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
 msgstr ""
+"GridContainer、グリッドのようなパターンでコントロールノードを配置します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:300
 msgid ""
@@ -5862,11 +5968,17 @@ msgid ""
 "want a single container nested inside it. If you use textures and buttons "
 "instead, they'll stack up."
 msgstr ""
+"CenterContainerは、すべての子をバウンディング矩形の内側にセンタリングします。"
+"これは、オプションをビューポートの中央に表示しておきたい場合に、タイトルスク"
+"リーンでよく使用する方法です。すべてを中央に配置するため、1つのコンテナを内部"
+"にネストしたい場合があります。代わりにテクスチャとボタンを使用すると、それら"
+"が重なってしまいます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
 msgstr ""
+"CenterContainerのアクション。ライフバーは、親コンテナ内に配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:311
 msgid ""
@@ -5877,10 +5989,17 @@ msgid ""
 "click the corresponding value box and type any number. It will activate "
 "automatically."
 msgstr ""
+"MarginContainerは、子ノードの任意の側に余白を追加します。ビューポート全体を含"
+"むMarginContainerを追加して、ウィンドウのエッジとUIの間に分離を追加します。コ"
+"ンテナの上部、左、右、下側に余白を設定できます。チェックボックスをオンにする"
+"必要はありません: 対応する値のボックスをクリックし、任意の数を入力すると、自"
+"動的に有効になります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:320
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
 msgstr ""
+"MarginContainer は、ゲームユーザーインターフェイスの周囲に 40ピクセルのマージ"
+"ンを追加します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:322
 msgid ""
@@ -5891,10 +6010,15 @@ msgid ""
 "rows and columns of different sizes, as you can nest them to your heart's "
 "content."
 msgstr ""
+"ボックスコンテナには、VBoxContainerとHBoxContainerの2つがあります。"
+"BoxContainerノード自体はヘルパー クラスなので追加できませんが、垂直および水平"
+"のボックスコンテナを使用できます。ノードは行または列に配置されます。ショップ"
+"内のアイテムを並べて作成したり、さまざまなサイズの行と列を持つ複雑なグリッド"
+"を構築したりするために使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:331
 msgid "The HBoxContainer horizontally aligns UI elements"
-msgstr ""
+msgstr "HBoxContainerはUI要素を水平方向に揃えます"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:333
 msgid ""
@@ -5905,6 +6029,11 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainerは、子を自動的に列に配置し、それらを次々に置きます。分割パラメー"
+"タを使用すると、子の間にギャップが残ります。HBoxContainerは、UI要素を一列に並"
+"べます。これはVBoxContainerに似ていますが、スクリプトから最初の子ノードの前ま"
+"たは最後の子ノードの後にspacerコントロールノードを追加する ``add_spacer`` メ"
+"ソッドが追加されています。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:340
 msgid ""
@@ -5917,10 +6046,16 @@ msgid ""
 "set the vertical and horizontal separation between the rows and columns "
 "respectively."
 msgstr ""
+"GridContainerを使用すると、グリッドのようなパターンでUI要素を配置できます。列"
+"の数のみを制御でき、子の数に基づいて行数を単独で設定します。9つの子と3つの列"
+"がある場合は、9÷ 3= 3行があります。さらに3つの子を追加すると、4行になります。"
+"つまり、テクスチャとボタンを追加すると、新しい行が作成されます。ボックスコン"
+"テナと同様に、行と列の間の垂直方向と水平方向の分離をそれぞれ設定する2つのプロ"
+"パティがあります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:351
 msgid "A GridContainer with 2 columns. It sizes each column automatically."
-msgstr ""
+msgstr "2つの列を持つGridContainer。各列のサイズは自動的に設定されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:353
 msgid ""
@@ -8098,7 +8233,7 @@ msgstr "アニメーション"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:9
 msgid "Godot's animation system is extremely powerful and flexible."
-msgstr ""
+msgstr "Godotのアニメーションシステムは非常に強力で柔軟です。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:11
 msgid ""
@@ -8110,7 +8245,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/animations.rst:16
 msgid "Add an animation player"
-msgstr ""
+msgstr "アニメーションプレーヤーを追加する"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:18
 msgid ""
@@ -8122,14 +8257,17 @@ msgstr ""
 msgid ""
 "When a node of this type is selected, the animation editor panel will appear:"
 msgstr ""
+"このタイプのノードを選択すると、アニメーションエディタ・パネルが表示されます:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:28
 msgid "The animation editor panel stays visible until manually hidden."
 msgstr ""
+"アニメーション エディタ・パネルは、手動で非表示になるまで表示されたままになり"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:31
 msgid "Creating the animation"
-msgstr ""
+msgstr "アニメーションの作成"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:33
 msgid ""
@@ -8146,11 +8284,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/animations.rst:48
 msgid "Editing the animation"
-msgstr ""
+msgstr "アニメーションの編集"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:50
 msgid "The logo will appear from the top of the screen."
-msgstr ""
+msgstr "ロゴが画面の上部から表示されます。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:52
 msgid ""
@@ -8162,10 +8300,11 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/animations.rst:58
 msgid "When the dialog appears, confirm that you are creating a new track."
 msgstr ""
+"ダイアログが表示されたら、新しいトラックを作成していることを確認します。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:60
 msgid "The keyframe will be added in the animation player editor:"
-msgstr ""
+msgstr "キーフレームは、アニメーションプレーヤー・エディタに追加されます:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:64
 msgid "Move the editor cursor forward in time by clicking here:"
@@ -8182,17 +8321,21 @@ msgid ""
 "Pressing \"Play selected animation from start. (Shift-D)\" on the animation "
 "panel will make the logo descend."
 msgstr ""
+"アニメーションパネルの「選択したアニメーションを最初から再生(Shift + D)」を押"
+"すとロゴが下がります。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:78
 msgid ""
 "Click the \"Autoplay on Load\" button to set the animation to start "
 "automatically when the scene starts."
 msgstr ""
+"「ロード時の自動再生」 ボタンをクリックすると、シーンの開始時にアニメーション"
+"が自動的に開始されます。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:83
 msgid ""
 "And finally, when running the scene, the animation should look like this:"
-msgstr ""
+msgstr "最後に、シーンを実行すると、アニメーションは次のようになります:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:4
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:58
@@ -9050,7 +9193,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid "Custom scene switcher"
-msgstr ""
+msgstr "カスタムシーン・スイッチャー"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
@@ -9147,7 +9290,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/index.rst:2
 msgid "Editor manual"
-msgstr ""
+msgstr "エディター・マニュアル"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
 #, fuzzy
@@ -9160,6 +9303,9 @@ msgid ""
 "Unity user, and aims to help you migrate your existing Unity experience into "
 "the world of Godot."
 msgstr ""
+"このガイドでは、Unityユーザーの観点からGodotエンジンの概要を説明し、既存の"
+"UnityエクスペリエンスをGodotの世界に移行する手助けをすることを目的としていま"
+"す。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:15
 msgid ""
@@ -9310,11 +9456,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:41
 msgid ":ref:`Animation Pipeline <doc_animations>`"
-msgstr ""
+msgstr ":ref:`アニメーションパイプライン<doc_animations>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:42
 msgid ":ref:`Easy to write Shaders <doc_shading_language>`"
-msgstr ""
+msgstr ":ref:`シェーダーを書きやすい<doc_shading_language>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:43
 msgid "Debug on Device"
@@ -9400,7 +9546,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:89
 msgid "The scene system"
-msgstr ""
+msgstr "シーンシステム"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:91
 msgid ""
@@ -9429,22 +9575,23 @@ msgid ""
 "For example, think of a platformer level. You would compose it with multiple "
 "elements:"
 msgstr ""
+"たとえば、プラットフォーマーレベルを考えてみましょう。複数の要素で構成します:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:101
 msgid "Bricks"
-msgstr ""
+msgstr "レンガ"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:102
 msgid "Coins"
-msgstr ""
+msgstr "コイン"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:103
 msgid "The player"
-msgstr ""
+msgstr "プレーヤー"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:104
 msgid "The enemies"
-msgstr ""
+msgstr "敵"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:106
 msgid ""
@@ -9546,7 +9693,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/unity_to_godot.rst:146
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:4
 msgid "Project organization"
-msgstr ""
+msgstr "プロジェクトの構成"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:150
 msgid ""
@@ -9571,7 +9718,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:161
 msgid "Where are my prefabs?"
-msgstr ""
+msgstr "プレハブはどこですか?"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:163
 msgid ""
@@ -9606,7 +9753,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:184
 msgid "Glossary correspondence"
-msgstr ""
+msgstr "用語集の対応"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:186
 msgid "GameObject -> Node"
@@ -9622,11 +9769,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:192
 msgid "Scripting: GDScript, C# and Visual Script"
-msgstr ""
+msgstr "スクリプト: GDScript、C#、ビジュアルスクリプト"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:195
 msgid "Design"
-msgstr ""
+msgstr "デザイン"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
 msgid ""
@@ -9667,6 +9814,8 @@ msgid ""
 "either add a new node between your target node and its current parent, then "
 "add a script to this new node."
 msgstr ""
+"ターゲットノードと現在の親ノードの間に新しいノードを追加し、この新しいノード"
+"にスクリプトを追加します。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:214
 msgid ""
@@ -9741,7 +9890,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:248
 msgid "Using Godot in C++"
-msgstr ""
+msgstr "C++でGodotを使用する"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:250
 msgid ""
@@ -9975,7 +10124,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
-msgstr ""
+msgstr "外部テキストエディタの使用"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
 msgid ""
@@ -9995,11 +10144,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
-msgstr ""
+msgstr "Execフラグのフィールド"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Is replaced with"
-msgstr ""
+msgstr "に置き換えられます"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "``{project}``"
@@ -10007,7 +10156,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "The absolute path to the project directory"
-msgstr ""
+msgstr "プロジェクトディレクトリへの絶対パス"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "``{file}``"
@@ -10015,7 +10164,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "The absolute path to the file"
-msgstr ""
+msgstr "ファイルへの絶対パス"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "``{col}``"
@@ -10023,7 +10172,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The column number of the error"
-msgstr ""
+msgstr "エラーの列番号"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "``{line}``"
@@ -10031,15 +10180,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The line number of the error"
-msgstr ""
+msgstr "エラーの行番号"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
 msgid "Some example Exec Flags for various editors include:"
-msgstr ""
+msgstr "さまざまなエディターの Execフラグの例を次に示します:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Exec Flags"
-msgstr ""
+msgstr "Execフラグ"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "Geany/Kate"
@@ -12384,12 +12533,12 @@ msgid ""
 "resulting object will continue execution and return whatever the function "
 "returns. Once resumed, the state object becomes invalid. Here is an example:"
 msgstr ""
-"GDScriptは、 ``yield`` 組み込み関数によって `coroutines <https://en."
-"wikipedia.org/wiki/Coroutine>` をサポートしています。 ``yield()`` をコールす"
-"ると、同じ関数の現在のfrozen状態を戻り値として、すぐに現在の関数から戻りま"
-"す。結果として得られたオブジェクトに対して ``resume`` を呼び出すと、実行が継"
-"続され、関数が返す内容が戻されます。再開すると、状態オブジェクトは無効になり"
-"ます。次に例を示します:"
+"GDScriptは、 ``yield`` 組み込み関数によって[コルーチン]<https://ja.wikipedia."
+"org/wiki/%E3%82%B3%E3%83%AB%E3%83%BC%E3%83%81%E3%83%B3>をサポートしていま"
+"す。 ``yield()`` をコールすると、同じ関数の現在のfrozen状態を戻り値として、す"
+"ぐに現在の関数から戻ります。結果として得られたオブジェクトに対して "
+"``resume`` を呼び出すと、実行が継続され、関数が返す内容が戻されます。再開する"
+"と、状態オブジェクトは無効になります。次に例を示します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1652
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1676
@@ -16747,7 +16896,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:14
 msgid "Organization"
-msgstr ""
+msgstr "構成"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
 msgid ""
@@ -16776,7 +16925,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:47
 msgid "Importing"
-msgstr ""
+msgstr "インポート"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:49
 msgid ""
@@ -17356,11 +17505,11 @@ msgstr "アセット・ワークフロー"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
-msgstr ""
+msgstr "インポートプロセス"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr ""
+msgstr "Godot 3.0+ でのアセットのインポート"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -17381,11 +17530,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid "This allows changing all the import parameters transparently."
-msgstr ""
+msgstr "これにより、すべてのインポートパラメータを透過的に変更できます。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:23
 msgid "Changing import parameters"
-msgstr ""
+msgstr "インポートパラメータの変更"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:25
 msgid ""
@@ -17409,7 +17558,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
 msgid "Automatic reimport"
-msgstr ""
+msgstr "自動再インポート"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
@@ -17417,21 +17566,27 @@ msgid ""
 "automatic reimport of it, applying the preset configured for that specific "
 "asset."
 msgstr ""
+"ソースアセットのMD5チェックサムが変更されると、Godot はそのアセットの自動再イ"
+"ンポートを実行し、その特定のアセットに設定されたプリセットを適用します。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
 msgid "Files generated"
-msgstr ""
+msgstr "生成されたファイル"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
+"インポートすると、インポート設定を含む<asset> .importファイルが追加されま"
+"す。 必ずこれらをあなたのバージョン管理システムにコミットしてください!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:53
 msgid ""
 "Additionally, extra assets will be preset in the hidden res://.import folder:"
 msgstr ""
+"さらに、追加のアセットは、隠しrフォルダの「res://.import」にプリセットされま"
+"す:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:57
 msgid ""
@@ -17444,7 +17599,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid "Changing import resource type"
-msgstr ""
+msgstr "インポートリソースの種類の変更"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:66
 msgid ""
@@ -17454,7 +17609,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:74
 msgid "Changing default import parameters"
-msgstr ""
+msgstr "デフォルトのインポートパラメータの変更"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
@@ -17463,22 +17618,30 @@ msgid ""
 "some resource types offering presets, the default setting can be saved and "
 "cleared too:"
 msgstr ""
+"ゲームの種類によって、必要なデフォルトが異なる場合があります。プロジェクトご"
+"とにデフォルトを変更するには、「プリセット..」メニューを使用します。プリセッ"
+"トを提供する一部のリソースタイプのほかに、デフォルト設定を保存したり消去した"
+"りすることもできます:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:84
 msgid "Simplicity is key!"
-msgstr ""
+msgstr "シンプルさが鍵!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:86
 msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
 msgstr ""
+"これは非常に単純なワークフローであり、慣れるまでにはほとんど時間がかかりませ"
+"ん。また、より正確なリソースの処理方法も強制します。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
 msgstr ""
+"インポート可能なアセットの種類はたくさんありますので、そのすべてを操作する方"
+"法を理解するために読んでください!"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:4
 msgid "Importing images"
@@ -17494,12 +17657,17 @@ msgid ""
 "imported. The reason behind this is the large amount of configuration "
 "parameters that image files can be imported with."
 msgstr ""
+"Godot 3+ では、イメージファイルはネイティブリソースではなくなり、インポートす"
+"る必要があります。その背景には、イメージファイルをインポートできる構成パラ"
+"メータが大量に含まれることが理由です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:13
 msgid ""
 "This small tutorial will explain what these parameters are and how to best "
 "make use of them."
 msgstr ""
+"この小さなチュートリアルでは、これらのパラメータが何であるか、およびそれらを"
+"最大限に活用する方法について説明します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:17
 msgid "Importing textures"
@@ -17511,10 +17679,13 @@ msgid ""
 "stored in video memory and can't be accessed directly. This is what makes "
 "drawing them efficient."
 msgstr ""
+"Godotのデフォルトのアクションは、イメージをテクスチャとして読み込む方法です。"
+"テクスチャはビデオメモリに格納され、直接アクセスすることはできません。これが"
+"それらを効率的に描く理由です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:23
 msgid "Import options are vast:"
-msgstr ""
+msgstr "インポートオプションは豊富です:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:28
 msgid "Detect 3D"
@@ -17544,10 +17715,13 @@ msgid ""
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
+"画像は、ゲーム内で最大のアセットの 1 つです。それらを効率的に処理するには、圧"
+"縮する必要があります。Godot は、ユースケースに応じて、いくつかの圧縮方法を提"
+"供します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:40
 msgid "Compress Mode"
-msgstr ""
+msgstr "圧縮モード"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
 msgid ""
@@ -17555,6 +17729,9 @@ msgid ""
 "File on disk is reduced and video memory usage is also reduced considerably. "
 "For 3D, it may present unwanted artifacts, though."
 msgstr ""
+"VRAM圧縮:これは3Dアセットの最も一般的な圧縮モードです。ディスク上のファイルが"
+"削減され、ビデオメモリの使用量も大幅に削減されます。ただし、3Dの場合は、不要"
+"なアーティファクトが表示される場合があります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
 msgid ""
@@ -17563,6 +17740,9 @@ msgid ""
 "decent. It will use considerably more amount of video memory than VRAM, "
 "though."
 msgstr ""
+"ロスレス圧縮:これは2Dアセットで最も一般的な圧縮です。これは、人為的な影響を受"
+"けずにアセットを表示するものであり、ディスク圧縮は適切です。ただし、VRAMより"
+"もかなり多くのビデオメモリを使用します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
 msgid ""
@@ -17570,18 +17750,23 @@ msgid ""
 "can be a great choice. It has some artifacting, but less than VRAM and the "
 "file size is almost a tenth of Lossless."
 msgstr ""
+"非可逆圧縮:大きな2Dアセットを多く使用するゲームでは、非可逆圧縮が適していま"
+"す。多少の不自然さはありますが、VRAMより小さく、ファイルサイズはロスレスの10"
+"分の1程度です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid ""
 "Uncompressed: Only useful for formats that can't be compressed (like, raw "
 "float)."
-msgstr ""
+msgstr "圧縮なし:圧縮できない書式 (生の浮動小数点型など) にのみ役立ちます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages ( |good| = Best, |bad| =Worst ):"
 msgstr ""
+"この表では、4つのオプションのそれぞれについて、それぞれの長所と短所と共に説明"
+"しています(|良い|=ベスト、|悪い|=最悪):"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Uncompressed"
@@ -17622,15 +17807,15 @@ msgstr "ディスク上のサイズ"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|bad| Large"
-msgstr ""
+msgstr "|悪い|大きい"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|regular| Small"
-msgstr ""
+msgstr "|普通|小さい"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|good| Very Small"
-msgstr ""
+msgstr "|良い|非常に小さい"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "Memory Usage"
@@ -17638,7 +17823,7 @@ msgstr "メモリ使用量"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|good| Small"
-msgstr ""
+msgstr "|良い|小さい"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
 msgid "Performance"
@@ -17647,12 +17832,12 @@ msgstr "パフォーマンス"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "|regular| Normal"
-msgstr ""
+msgstr "|普通|通常"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "|good| Fast"
-msgstr ""
+msgstr "|良い|高速"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "Quality Loss"
@@ -17660,15 +17845,15 @@ msgstr "品質損失"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "|good| None"
-msgstr ""
+msgstr "|良い|なし"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "|regular| Slight"
-msgstr ""
+msgstr "|普通|わずか"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "|bad| Moderate"
-msgstr ""
+msgstr "|悪い|中程度"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "Load Time"
@@ -17676,7 +17861,7 @@ msgstr "読み込み時間"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "|bad| Slow"
-msgstr ""
+msgstr "|悪い|遅い"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:76
 msgid "HDR Mode"
@@ -17699,7 +17884,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Normal Map"
-msgstr ""
+msgstr "通常のマップ"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid ""
@@ -17882,7 +18067,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:4
 msgid "Importing audio samples"
-msgstr ""
+msgstr "オーディオサンプルのインポート"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
 msgid "Why import?"
@@ -17893,6 +18078,9 @@ msgid ""
 "Raw audio data in general is large and undesired. Godot provides two main "
 "options to import your audio data: WAV and OGG Vorbis."
 msgstr ""
+"一般的に生のオーディオデータは大きく、望ましくありません。Godot は、オーディ"
+"オ データをインポートするための2つの主要なオプションを提供します: WAV と OGG "
+"Vorbisです。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
@@ -17913,7 +18101,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:20
 msgid "Here is a comparative chart."
-msgstr ""
+msgstr "比較グラフを次に表示します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "Format"
@@ -17921,11 +18109,11 @@ msgstr "フォーマット"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "1 Second of Audio"
-msgstr ""
+msgstr "1秒のオーディオ"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
 msgid "WAV 24 bits, 96 kHz, Stereo"
-msgstr ""
+msgstr "WAV 24ビット、96kHz、ステレオ"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
 msgid "576kb"
@@ -17933,7 +18121,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
 msgid "WAV 16 bits, 44 kHz, Mono"
-msgstr ""
+msgstr "WAV 16ビット、44kHz、モノラル"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
 msgid "88kb"
@@ -17941,7 +18129,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
 msgid "WAV 16 bits, IMA-ADPCM, Mono"
-msgstr ""
+msgstr "WAV 16ビット、IMA-ADPCM、モノラル"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
 msgid "22kb"
@@ -17949,7 +18137,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
 msgid "OGG 128kbps, Stereo"
-msgstr ""
+msgstr "OGG 128kbps、ステレオ"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
 msgid "16kb"
@@ -17957,7 +18145,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 msgid "OGG Vorbis 96kbps, Stereo"
-msgstr ""
+msgstr "OGG Vorbis 96kbps、ステレオ"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 msgid "12kb"
@@ -17983,11 +18171,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:49
 msgid "As you can see above, sound effects become huge with reverb added."
-msgstr ""
+msgstr "このように、リバーブを追加するとサウンド効果が大きくなります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
 msgid "Trimming"
-msgstr ""
+msgstr "トリミング"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:54
 msgid ""
@@ -18000,10 +18188,12 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
 msgid "Importing as WAV with the Trimming option enabled solves this."
 msgstr ""
+"トリミングオプションを有効にしてWAVとしてインポートすると、この問題が解決され"
+"ます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
 msgid "Looping"
-msgstr ""
+msgstr "ループ"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:65
 msgid ""
@@ -18017,6 +18207,8 @@ msgid ""
 "As an alternative, the import screen has a \"loop\" option that enables "
 "looping for the entire sample when importing."
 msgstr ""
+"別の方法として、インポート画面には「ループ」オプションがあり、インポート時に"
+"サンプル全体のループを有効にします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
 msgid "Importing translations"
@@ -19753,7 +19945,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:4
 msgid "Exporting for PC"
-msgstr ""
+msgstr "PC用エクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:6
 msgid ""
@@ -19773,7 +19965,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:4
 msgid "Exporting for iOS"
-msgstr ""
+msgstr "iOS用のエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:6
 msgid ""
@@ -19781,6 +19973,9 @@ msgid ""
 "build and deploy to an iOS device, build a release for the App Store, and do "
 "everything else you can normally do with Xcode."
 msgstr ""
+"これらは、XcodeでGodotプロジェクトを読み込む手順です。これにより、iOS デバイ"
+"スにビルドして展開し、AppStore用のリリースをビルドし、Xcodeで通常実行できるそ"
+"の他のすべてを実行できます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:11
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:15
@@ -19794,28 +19989,34 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_web.rst:9
 #: ../../docs/development/compiling/compiling_with_mono.rst:9
 msgid "Requirements"
-msgstr ""
+msgstr "必要条件"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:13
 msgid ""
 "You must export for iOS from a computer running macOS with Xcode installed."
 msgstr ""
+"XcodeがインストールされているmacOSを実行しているコンピュータからiOS用にエクス"
+"ポートする必要があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:14
 msgid ""
 "Download the Godot export templates. Use the Godot menu: Editor > Manage "
 "Export Templates"
 msgstr ""
+"Godotエクスポートテンプレートをダウンロードします。Godotメニューを使用する: "
+"エディタ > エクスポート テンプレートの管理"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:17
 msgid "Export a Godot project to Xcode"
-msgstr ""
+msgstr "GodotプロジェクトをXcodeにエクスポートする"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:19
 msgid ""
 "In the Godot editor, open the **Export** window from the **Project** menu. "
 "When the Export window opens, click **Add..** and select **iOS**."
 msgstr ""
+"Godotエディタで、**Project**メニューから**Export**ウィンドウを開きます。エク"
+"スポートウィンドウが開いたら、 **Add..** をクリックし、**iOS**を選択します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:22
 msgid ""
@@ -19825,37 +20026,42 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:25
 msgid "In the **Application** category * **App Store Team ID**"
-msgstr ""
+msgstr "**Application** カテゴリの **App Store Team ID**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:27
 msgid "Everything in the **Required Icons** category"
-msgstr ""
+msgstr "**Required Icons** カテゴリのすべて"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:28
 msgid "Everything in the **Landscape Launch Screens** category"
-msgstr ""
+msgstr "**Landscape Launch Screens***のすべて"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:29
 msgid "Everything in the **Portrait Launch Screens** category"
-msgstr ""
+msgstr "**Portrait Launch Screens**カテゴリのすべて"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:31
 msgid ""
 "After you click **Export Project**, there are still two important options "
 "left:"
 msgstr ""
+"**Export Project**をクリックした後、2つの重要なオプションが残っています:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:33
 msgid ""
 "**Path** is an empty folder that will contain the exported Xcode project "
 "files."
 msgstr ""
+"**Path** は、エクスポートされたXcodeプロジェクトファイルを含む空のフォルダで"
+"す。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:34
 msgid ""
 "**File** will be the name of the Xcode project and several project specific "
 "files and directories."
 msgstr ""
+"**File** は、Xcodeプロジェクトといくつかのプロジェクト固有のファイルとディレ"
+"クトリの名前になります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:38
 msgid ""
@@ -19863,6 +20069,9 @@ msgid ""
 "project's name. When you see **exported_xcode_project_name** in the "
 "following steps, replace it with the name you used instead."
 msgstr ""
+"このチュートリアルでは、 **exported_xcode_project_name** を使用しますが、プロ"
+"ジェクトの名前を使用します。次の手順で **exported_xcode_project_name** が表示"
+"された場合は、代わりに使用した名前に置き換えます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:42
 msgid ""
@@ -19872,43 +20081,51 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:45
 msgid "When the export completes, the output folder should look like this:"
-msgstr ""
+msgstr "エクスポートが完了すると、出力フォルダは次のようになります:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:49
 msgid ""
 "Opening **exported_xcode_project_name.xcodeproj** lets you build and deploy "
 "like any other iOS app."
 msgstr ""
+"**exported_xcode_project_name.xcodeproj** を開くと、他のiOSアプリと同様にビル"
+"ドおよびデプロイできます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:53
 msgid "Active development considerations"
-msgstr ""
+msgstr "積極的な開発に関する考慮事項"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:55
 msgid ""
 "The above method creates an exported project that you can build for release, "
 "but you have to re-export every time you make a change in Godot."
 msgstr ""
+"上記の方法では、リリース用にビルドできるエクスポートされたプロジェクトを作成"
+"しますが、Godotを変更するたびに再エクスポートする必要があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:58
 msgid ""
 "While developing, you can speed this process up by linking your Godot "
 "project files directly into your app."
 msgstr ""
+"開発中は、Godotプロジェクトファイルをアプリに直接リンクすることで、このプロセ"
+"スを高速化できます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:61
 msgid "In the following example:"
-msgstr ""
+msgstr "次の例を参照してください:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:63
 msgid ""
 "**exported_xcode_project_name** is the name of the exported iOS application "
 "(as above)."
 msgstr ""
+"**exported_xcode_project_name** は、エクスポートされたiOSアプリケーションの名"
+"前です(上記のように)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:64
 msgid "**godot_project_to_export** is the name of the Godot project."
-msgstr ""
+msgstr "**godot_project_to_export** はGodotプロジェクトの名前です。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:67
 msgid "Steps to link a Godot project folder to Xcode"
@@ -19917,10 +20134,12 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:69
 msgid "Start from an exported iOS project (follow the steps above)."
 msgstr ""
+"エクスポートされたiOSプロジェクトから開始します (上記の手順に従います)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:70
 msgid "In Finder, drag the Godot project folder into the Xcode file browser."
 msgstr ""
+"Finderで、GodotプロジェクトフォルダをXcodeファイルブラウザにドラッグします。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:74
 msgid ""
@@ -19928,14 +20147,20 @@ msgid ""
 "means you will be able to continue to edit your Godot project in its current "
 "location."
 msgstr ""
+"3. ダイアログで**Create folder references** が選択されていることを確認しま"
+"す。つまり、現在の場所で Godot プロジェクトを編集し続けることができるというこ"
+"とです。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:79
 msgid "See the **godot_project_to_export** folder in the Xcode file browser."
 msgstr ""
+"Xcodeファイルブラウザの **godot_project_to_export** フォルダを参照してくださ"
+"い。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:80
 msgid "Delete **exported_xcode_project_name.pck** from the Xcode project."
 msgstr ""
+"Xcodeプロジェクトから **exported_xcode_project_name.pck** を削除します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:84
 msgid ""
@@ -19949,21 +20174,25 @@ msgid ""
 "That's it! You can now edit your project in the Godot editor and build it in "
 "Xcode when you want to run it on a device."
 msgstr ""
+"以上です!Godotエディタでプロジェクトを編集し、デバイス上で実行するときにXcode"
+"でビルドできるようになりました。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:94
 #: ../../docs/tutorials/platform/services_for_ios.rst:4
 msgid "Services for iOS"
-msgstr ""
+msgstr "iOS向けサービス"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:96
 msgid ""
 "Special iOS services can be used in Godot. Check out the :ref:"
 "`doc_services_for_ios` page."
 msgstr ""
+"特別なiOSサービスをGodotで使用することができます。:"
+"ref:'doc_services_for_ios' ページを確認してください。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
 msgid "Exporting for Universal Windows Platform"
-msgstr ""
+msgstr "ユニバーサルWindowsプラットフォームのエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:6
 msgid ""
@@ -19978,16 +20207,21 @@ msgid ""
 "trusted signature. Currently, Godot does not support signing of packages, so "
 "you need to use external tools to do so."
 msgstr ""
+"ただし、アプリをインストールして実行する場合は、信頼できる署名を使用して署名"
+"する必要があります。現在、Godot はパッケージの署名をサポートしていないため、"
+"外部ツールを使用する必要があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
 msgid ""
 "Also, make sure the Publisher Name you set when exporting the package "
 "matches the name used on the certificate."
 msgstr ""
+"また、パッケージをエクスポートするときに設定した発行元名が証明書で使用される"
+"名前と一致していることを確認します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:18
 msgid "Limitations on Xbox One"
-msgstr ""
+msgstr "XboxOneの制限事項"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:20
 msgid ""
@@ -19997,47 +20231,51 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "Submitted as an \"App\""
-msgstr ""
+msgstr "\"アプリケーション\"として提出"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:23
 msgid "available memory is 1GB"
-msgstr ""
+msgstr "使用可能なメモリは1GBです"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:24
 msgid "share of 2-4 CPU cores"
-msgstr ""
+msgstr "2-4 CPUコアの共有"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "shared access of GPU power (45%)"
-msgstr ""
+msgstr "GPUパワーの共有アクセス(45%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid ""
 "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www."
 "xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
+"\"ゲーム\"として提出(`Xbox Liveクリエイタープログラムhttps://www.xbox.com/en-"
+"US/developers/creators-program>'__ を通じて)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:28
 msgid "available memory is 5GB"
-msgstr ""
+msgstr "使用可能なメモリは5GBです"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:29
 msgid "4 exclusive CPU cores and 2 shared CPU cores"
-msgstr ""
+msgstr "4つの排他的なCPUコアと2つの共有CPUコア"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid "exclusive access to GPU power (100%)"
-msgstr ""
+msgstr "GPU電源への排他的アクセス(100%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
 msgid ""
 "Exceeding these memory limitations will cause allocation failures and the "
 "application will crash."
 msgstr ""
+"これらのメモリ制限を超えると、割り当てエラーが発生し、アプリケーションがク"
+"ラッシュします。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:35
 msgid "Creating a signing certificate"
-msgstr ""
+msgstr "署名証明書の作成"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:37
 msgid ""
@@ -20046,6 +20284,9 @@ msgid ""
 "Developer Prompts, since it comes with these tools and they can be located "
 "in the path."
 msgstr ""
+"これには、Windows SDKに付属の ``MakeCert.exe`` と ``Pvk2Pfx.exe`` ツールが必"
+"要です。Visual Studioを使用する場合は、これらのツールが付属しており、パス内に"
+"配置できるため、開発者プロンプトの 1 つを開くことができます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:41
 msgid ""
@@ -20053,28 +20294,37 @@ msgid ""
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
 "aspx>`__."
 msgstr ""
+"詳細な手順については、`マイクロソフトのドキュメント <https://msdn.microsoft."
+"com/en-us/library/windows/desktop/jj835832(v=vs.85).aspx>`__から詳細な手順を"
+"参照できます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:44
 msgid "First, run ``MakeCert`` to create a private key::"
-msgstr ""
+msgstr "まず、 ``MakeCert`` を実行して秘密鍵を作成します:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:48
 msgid ""
 "Where ``publisherName`` matches the Publisher Name of your package and "
 "``expirationDate`` is in the ``mm/dd/yyyy`` format."
 msgstr ""
+"ここで、 ``publisherName`` はパッケージのパブリッシャー名と一致し、 "
+"``expirationDate`` は ``mm/dd/yyyy`` 形式です。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:51
 msgid ""
 "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx."
 "exe``::"
 msgstr ""
+"次に、 ``Pvk2Pfx.exe`` を使ってPersonal Information Exchange(.pfx)ファイルを"
+"作成します:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:55
 msgid ""
 "If you don't specify a password with ``/po`` argument, the PFX will have the "
 "same password as the private key."
 msgstr ""
+"``/po`` 引数を持つパスワードを指定しない場合、PFXは秘密キーと同じパスワードを"
+"持ちます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:58
 msgid ""
@@ -20082,50 +20332,61 @@ msgid ""
 "your app. Open the Command Prompt as Administrator and run the following "
 "command::"
 msgstr ""
+"また、アプリをインストールするには、この証明書を信頼する必要があります:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
 msgid "Signing the package"
-msgstr ""
+msgstr "パッケージへの署名"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
 msgstr ""
+"最後に、Windows SDK またはVisual Studioから ``SignTool.exe`` を使用します:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
 msgid "Installing the package"
-msgstr ""
+msgstr "パッケージのインストール"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:73
 msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
 msgstr ""
+"Windows10周年記念アップデートの時点で、Windowsエクスプローラから``.appx``ファ"
+"イルをダブルクリックするだけでパッケージをインストールすることができます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:76
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
 msgstr ""
+"また、 ``Add-AppxPackage`` PowerShell cmdletを使用してインストールすることも"
+"可能です。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:78
 msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."
 msgstr ""
+"既にインストールされているアプリを更新する場合は、新しいパッケージのバージョ"
+"ン番号を更新するか、前のパッケージを最初にアンインストールする必要がありま"
+"す。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:4
 msgid "Exporting for Android"
-msgstr ""
+msgstr "Androidへのエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for it. "
 "The following steps detail what is needed to setup the SDK and the engine."
 msgstr ""
+"Android向けのエクスポートは、Godotをコンパイルするよりも要件が少ないです。次"
+"の手順では、SDKとエンジンのセットアップに必要なものについて詳しく説明します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
-msgstr ""
+msgstr "Android SDKをダウンロード"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
 msgid ""
@@ -20135,7 +20396,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid "Install OpenJDK or Oracle JDK"
-msgstr ""
+msgstr "OpenJDKまたはOracleJDKのインストール"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
 msgid ""
@@ -20147,7 +20408,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
 msgid "Create a debug.keystore"
-msgstr ""
+msgstr "デバッグキーストアを作成する"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:23
 msgid ""
@@ -20156,16 +20417,23 @@ msgid ""
 "or eclipse probably generated one for you (on Linux and macOS, you can find "
 "it in the ``~/.android`` directory)."
 msgstr ""
+"Androidでは、デバイスにインストールし、リリースされていないAPKを配布するため"
+"のデバッグキーストアファイルが必要です。以前にSDKを使用してプロジェクトをビル"
+"ドしたことがある場合は、antまたはeclipseによってプロジェクトが生成される可能"
+"性があります(LinuxとmacOSの場合、 ``〜/.android`` ディレクトリに見つけること"
+"ができます)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose:"
 msgstr ""
+"見つからない場合、または生成する必要がある場合は、JDKのkeytoolコマンドを使用"
+"します:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
 msgid "Make sure you have adb"
-msgstr ""
+msgstr "アンドロイドデバッグブリッジ(adb)を持っていることを確認します"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:38
 msgid ""
@@ -20174,10 +20442,14 @@ msgid ""
 "one (any) of the Android API levels for it to be installed in the SDK "
 "directory."
 msgstr ""
+"アンドロイドデバッグブリッジ(adb)は、Androidデバイスと通信するために使用され"
+"るコマンドラインツールです。SDKと共にインストールされますが、SDKディレクトリ"
+"にインストールするには、Android APIレベルの1つ(任意)をインストールする必要が"
+"あります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:43
 msgid "Setting it up in Godot"
-msgstr ""
+msgstr "Godotで設定する"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid ""
@@ -20187,27 +20459,27 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:51
 msgid "Scroll down to the section where the Android settings are located:"
-msgstr ""
+msgstr "Androidの設定が配置されているセクションまで下にスクロールします:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:55
 msgid "In that screen, the path to 3 files needs to be set:"
-msgstr ""
+msgstr "この画面では、3つのファイルへのパスを設定する必要があります:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
 msgid "The *adb* executable (adb.exe on Windows)"
-msgstr ""
+msgstr "*adb* 実行可能ファイル(Windows上のadb.exe)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
 msgid "The *jarsigner* executable (from JDK 6 or 8)"
-msgstr ""
+msgstr "*jarsigner* 実行可能ファイル (JDK6または8から)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:59
 msgid "The debug *keystore*"
-msgstr ""
+msgstr "デバッグ*キーストア*"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
 msgid "Once that is configured, everything is ready to export to Android!"
-msgstr ""
+msgstr "設定が完了すれば、Androidにエクスポートできるようになります!"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
 msgid "Exporting for Google Play Store"
@@ -20260,7 +20532,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:4
 msgid "Exporting for the Web"
-msgstr ""
+msgstr "Webのエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:6
 msgid ""
@@ -20321,7 +20593,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
 msgid "Limitations"
-msgstr ""
+msgstr "制限事項"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
 msgid ""
@@ -20330,10 +20602,13 @@ msgid ""
 "list of limitations you should be aware of when porting a Godot game to the "
 "web."
 msgstr ""
+"セキュリティとプライバシーの理由から、ネイティブ プラットフォームで簡単に動作"
+"する多くの機能は、Web プラットフォーム上でより複雑になります。Godotゲームを"
+"Webに移植する際に注意する必要がある制限事項の一覧を次に示します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
 msgid "Using cookies for data persistence"
-msgstr ""
+msgstr "データ永続化のためのクッキーの使用"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:50
 msgid ""
@@ -20349,10 +20624,13 @@ msgid ""
 "``user://`` file system is persistent, but can give false positives in some "
 "cases."
 msgstr ""
+"``OS.is_userfs_persistent()`` というメソッドを使うと、 ``user://`` ファイルシ"
+"ステムが永続的かどうかをチェックすることができますが、場合によっては誤検出す"
+"ることもあります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
 msgid "Full screen and mouse capture"
-msgstr ""
+msgstr "フルスクリーンとマウスキャプチャ"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
 msgid ""
@@ -20398,7 +20676,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
-msgstr ""
+msgstr "``StreamPeer`` へのアクセスおよび変更はできません"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
 msgid "Threaded/Blocking mode is not available"
@@ -20408,14 +20686,15 @@ msgstr ""
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr ""
+"フレームごとに複数回進行できないため、ループ内のポーリングはフリーズしま"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
 msgid "No chunked responses"
-msgstr ""
+msgstr "チャンク応答なし"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
 msgid "Host verification cannot be disabled"
-msgstr ""
+msgstr "ホスト検証を無効にできません"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
 msgid ""
@@ -20425,7 +20704,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid "Exported ``.html`` file must not be reused"
-msgstr ""
+msgstr "エクスポートされた ``.html`` ファイルを再利用することはできません"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
 msgid ""
@@ -20433,6 +20712,9 @@ msgid ""
 "file** specifically for the given export options. It must not be reused in "
 "further exports."
 msgstr ""
+"エクスポート時に、特定のエクスポートオプション用に**生成されたHTMLファイル**"
+"に複数のテキスト プレースホルダが置き換えられます。以後のエクスポートで再利用"
+"してはなりません。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
 msgid "Boot splash is not displayed"
@@ -20447,18 +20729,18 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
 msgid "Unimplemented functionality"
-msgstr ""
+msgstr "実装されていない機能"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:111
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
-msgstr ""
+msgstr "現在、HTML5 プラットフォームでは次の機能を使用できません:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:7
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:7
 msgid "Threads"
-msgstr ""
+msgstr "スレッド"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
@@ -20467,7 +20749,7 @@ msgstr "GDNative"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
 msgid "Clipboard synchronisation between engine and operating system"
-msgstr ""
+msgstr "エンジンとオペレーティングシステム間のクリップボード同期"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
 msgid ""
@@ -20485,7 +20767,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 msgid "Serving the files"
-msgstr ""
+msgstr "ファイルの提供"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:127
 msgid ""
@@ -20500,6 +20782,9 @@ msgid ""
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
 "never depended on by default."
 msgstr ""
+"生成された ``.html`` ファイルは、Apacheサーバーで ``DirectoryIndex`` として使"
+"用でき、いつでも ``index.html`` などの名前に変更できますが、その名前はデフォ"
+"ルトでは全く依存しません。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:135
 msgid ""
@@ -20539,10 +20824,13 @@ msgid ""
 "WebAssembly module compresses particularly well, down to around a quarter of "
 "its original size with gzip compression."
 msgstr ""
+"サーバー側の圧縮でファイルを配信することは、通常はサイズが大きい ``.pck`` "
+"ファイルと ``.wasm`` ファイルで特に推奨されます。WebAssemblyモジュールは、"
+"gzip圧縮によって元のサイズの約4分の1にまで圧縮されています。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
 msgid "Export options"
-msgstr ""
+msgstr "エクスポートオプション"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:163
 msgid ""
@@ -20566,7 +20854,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:177
 msgid "Calling JavaScript from script"
-msgstr ""
+msgstr "スクリプトからJavaScriptを呼び出す"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
 msgid ""
@@ -20582,6 +20870,8 @@ msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
 msgstr ""
+"最後のJavaScriptステートメントの値はGDScriptの値に変換され、特定の状況下では "
+"``eval()`` によって返されます:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
@@ -20603,7 +20893,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid "Any other JavaScript value is returned as ``null``."
-msgstr ""
+msgstr "その他の JavaScriptの値は ``null`` として返されます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:207
 msgid ""
@@ -20625,6 +20915,9 @@ msgid ""
 "specifies whether to execute the code in the global execution context, "
 "defaulting to ``false`` to prevent polluting the global namespace::"
 msgstr ""
+"``eval`` メソッドはグローバルな実行コンテキストでコードを実行するかどうかを指"
+"定する2番目のオプションのブール引数も受け入れます。デフォルトではグローバルな"
+"名前空間を汚染しないように ``false`` になります:"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:4
 msgid "One-click deploy"
@@ -21053,7 +21346,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
 msgid "Changing the taskbar icon"
-msgstr ""
+msgstr "タスクバー・アイコンの変更"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
@@ -21069,11 +21362,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:22
 msgid "This is also the icon that gets displayed in the Godot project list."
-msgstr ""
+msgstr "これは、Godot プロジェクトリストに表示されるアイコンでもあります。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:27
 msgid "Changing the file icon"
-msgstr ""
+msgstr "ファイル・アイコンの変更"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:29
 msgid ""
@@ -21119,7 +21412,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
 msgid "Testing the result"
-msgstr ""
+msgstr "結果のテスト"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:64
 msgid ""
@@ -57250,7 +57543,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:12
 msgid "Preparing scene"
-msgstr ""
+msgstr "シーンの準備"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:14
 msgid ""
@@ -57262,13 +57555,15 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:16
 msgid "Button.pressed: When the button is pressed, we will start the request."
-msgstr ""
+msgstr "Button.pressed:ボタンを押すと、要求が開始されます。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:17
 msgid ""
 "HTTPRequest.request_completed: When the request is completed, we will get "
 "the requested data as an argument."
 msgstr ""
+"HTTPRequest.request_completed: 要求が完了すると、要求されたデータが引数として"
+"取得されます。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:24
 msgid ""
@@ -57276,6 +57571,9 @@ msgid ""
 "API mocker; it returns a pre-defined JSON string, which we will then parse "
 "to get access to the data."
 msgstr ""
+"以下は、それを動作させるために必要なすべてのコードです。URLはオンラインAPI"
+"モッカーを指します。定義済みのJSON文字列を返し、データにアクセスするために解"
+"析します。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:40
 msgid ""
@@ -63400,15 +63698,17 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:15
 msgid "Loading files from a different directory"
-msgstr ""
+msgstr "別のディレクトリからファイルを読み込む"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:16
 msgid "Loading a ``.zip`` file instead of a ``.pck`` file as main pack"
 msgstr ""
+"``.pck`` ファイルの代わりに ``.zip`` ファイルをメインパックとして読み込む"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:17
 msgid "Loading engine files from a different directory than the main pack file"
 msgstr ""
+"メインパックファイルとは異なるディレクトリからエンジンファイルを読み込む"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:18
 msgid ""
@@ -63420,12 +63720,16 @@ msgid ""
 "Loading some extra files before the engine starts, so they are available in "
 "the file system later"
 msgstr ""
+"エンジンが起動する前に追加ファイルをロードして、後でファイル・システムで使用"
+"できるようにする"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:21
 msgid ""
 "Passing custom \"command line\" arguments, e.g. ``-s`` to start a MainLoop "
 "script"
 msgstr ""
+"MainLoopスクリプトを起動するためにカスタム \"コマンド ライン\" 引数を渡す場"
+"合 ( ``-s`` など)"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:23
 msgid ""
@@ -63438,7 +63742,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:29
 msgid "Placeholder substitution"
-msgstr ""
+msgstr "プレースホルダ置換"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:31
 msgid ""
@@ -63448,7 +63752,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
 msgid "Placeholder"
-msgstr ""
+msgstr "プレースホルダ"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
 msgid "Substituted by"
@@ -63463,6 +63767,8 @@ msgid ""
 "Basename of exported files without suffixes, e.g. ``game`` when exporting "
 "``game.html``"
 msgstr ""
+"拡張子のないエクスポートされたファイルのベース名、例えば `` game.html`` をエ"
+"クスポートする際の `` game``"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
 msgid "``$GODOT_DEBUG_ENABLED``"
@@ -63470,7 +63776,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
 msgid "``true`` if debugging, ``false`` otherwise"
-msgstr ""
+msgstr "デバッグする場合は ``true`` 、それ以外の場合は ``false``"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
 msgid "``$GODOT_HEAD_INCLUDE``"
@@ -63479,7 +63785,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
 msgid ""
 "Custom string to include just before the end of the HTML ``<head>`` element"
-msgstr ""
+msgstr "HTMLの `` <head> `` 要素の直前に含めるカスタム文字列"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:46
 msgid ""
@@ -63487,18 +63793,25 @@ msgid ""
 "file defines a global ``Engine`` object used to start the engine, :ref:`see "
 "below <doc_javascript_engine_object>` for details."
 msgstr ""
+"HTMLファイルは、JavaScriptファイル ``$GODOT_BASENAME.js`` を評価する必要があ"
+"ります。このファイルは、エンジンの起動に使用されるグローバル ``Engine`` オブ"
+"ジェクトを定義します:ref:`下記参照 <doc_javascript_engine_object>` 。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:50
 msgid ""
 "The boot splash image is exported as ``$GODOT_BASENAME.png`` and can be used "
 "e.g. in ``<img />`` elements."
 msgstr ""
+"ブートスプラッシュイメージは ``$GODOT_BASENAME.png`` としてエクスポートさ"
+"れ、 ``<img />`` 要素などで使用できます。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:53
 msgid ""
 "``$GODOT_DEBUG_ENABLED`` can be useful to optionally display e.g. an output "
 "console or other debug tools."
 msgstr ""
+"``$GODOT_DEBUG_ENABLED`` は、出力コンソールやその他のデバッグ ツールを必要に"
+"応じて表示する場合に便利です。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:56
 msgid ""
@@ -63508,13 +63821,15 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:62
 msgid "The ``Engine`` object"
-msgstr ""
+msgstr "``Engine`` オブジェクト"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:64
 msgid ""
 "The JavaScript global object ``Engine`` is defined by ``$GODOT_BASENAME.js`` "
 "and serves as an interface to the engine start-up process."
 msgstr ""
+"JavaScriptグローバルオブジェクト ``Engine`` は ``$GODOT_BASENAME.js`` によっ"
+"て定義され、エンジンの起動プロセスへのインターフェイスとして機能します。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:67
 msgid ""
@@ -63595,7 +63910,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:120
 msgid "Starting an ``Engine`` instance"
-msgstr ""
+msgstr "``Engine`` インスタンスの開始"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:122
 msgid ":js:class:`Engine` also acts a class:"
@@ -63713,6 +64028,8 @@ msgid ""
 "If the engine isn't loaded yet, the base path of the passed URL will be used "
 "to load the engine."
 msgstr ""
+"エンジンがまだ読み込まれていない場合は、渡されたURLの基本パスを使用してエンジ"
+"ンを読み込みます。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:196
 msgid ""
@@ -63732,13 +64049,15 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:206
 msgid "Configuring start-up behaviour"
-msgstr ""
+msgstr "起動時の動作の設定"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:208
 msgid ""
 "Beside starting the engine, other methods of the engine instance allow "
 "configuring the behavior:"
 msgstr ""
+"エンジンを起動する以外に、エンジン・インスタンスの他のメソッドを使用して動作"
+"を構成できます:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:213
 msgid ""
@@ -63793,6 +64112,10 @@ msgid ""
 "specified locale, or at least use the locale requested in the HTTP ``Accept-"
 "Language`` header. This method allows specifying such a custom locale string."
 msgstr ""
+"デフォルトでは、エンジンはJavaScript環境から使用するロケールを推測しようとし"
+"ます。通常は、サーバ側でユーザが指定したロケールを使用するか、少なくともHTTP"
+"の ``Accept-Language`` ヘッダで要求されたロケールを使用することをお勧めしま"
+"す。このメソッドでは、そのようなカスタムロケール文字列を指定できます。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:252
 msgid "For example, with PHP:"
@@ -63837,11 +64160,11 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:280
 msgid "Customizing the presentation"
-msgstr ""
+msgstr "プレゼンテーションのカスタマイズ"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:282
 msgid "The following methods are used to implement the presentation:"
-msgstr ""
+msgstr "プレゼンテーションを実装するには、次のメソッドを使用します:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:286
 msgid "Set the callback for displaying download progress."
@@ -63855,21 +64178,23 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:299
 msgid "If the total is 0, it couldn't be calculated. Possible reasons include:"
-msgstr ""
+msgstr "合計が0の場合は、計算できません。考えられる理由は次のとおりです:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:302
 msgid "Files are delivered with server-side chunked compression"
-msgstr ""
+msgstr "ファイルは、サーバー側のチャンク圧縮で配信されます"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:303
 msgid "Files are delivered with server-side compression on Chromium"
-msgstr ""
+msgstr "ファイルはChromium上のサーバー側の圧縮で配信されます"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:304
 msgid ""
 "Not all file downloads have started yet (usually on servers without multi-"
 "threading)"
 msgstr ""
+"すべてのファイルのダウンロードがまだ開始されていません(通常はマルチスレッドを"
+"使用しないサーバー)"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:308
 msgid ""
@@ -63907,7 +64232,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:350
 msgid "Accessing the Emscripten ``Module``"
-msgstr ""
+msgstr "Emscripten ``Module`` へのアクセス"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:352
 msgid ""
@@ -63916,6 +64241,10 @@ msgid ""
 "documentation for information on how to use it: https://kripken.github.io/"
 "emscripten-site/docs/api_reference/module.html"
 msgstr ""
+"自分のしていることがわかっていれば、ランタイム環境(Emscripten ``Module`` )に "
+"``engine.rtenv`` としてアクセスできます。使用方法については、公式のEmscripten"
+"ドキュメントをご確認ください: https://kripken.github.io/emscripten-site/docs/"
+"api_reference/module.html"
 
 #: ../../docs/tutorials/platform/consoles.rst:4
 msgid "Console support in Godot"

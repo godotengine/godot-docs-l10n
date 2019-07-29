@@ -100,8 +100,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-25 10:21+0200\n"
-"PO-Revision-Date: 2019-07-25 07:20+0000\n"
-"Last-Translator: Hugo Locurcio <hugo.locurcio@hugo.pro>\n"
+"PO-Revision-Date: 2019-07-29 19:20+0000\n"
+"Last-Translator: Rémi Verschelde <akien@godotengine.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -70949,7 +70949,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:4
 msgid "GDNative C example"
-msgstr ""
+msgstr "Exemple de GDNative en C"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:8
 msgid ""
@@ -70958,6 +70958,10 @@ msgid ""
 "GDNative, understanding the contents of this tutorial will help you in "
 "understanding all that is to come after this."
 msgstr ""
+"Ce tutoriel est une introduction aux bases nécessaires à la création de "
+"modules avec GDNative. Il sert de porte d'entrée dans l'univers de GDNative, "
+"et la compréhension du contenu de ce tutoriel vous permettra de mieux "
+"comprendre tout ce qui s'ensuit."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:10
 msgid ""
@@ -70965,12 +70969,18 @@ msgid ""
 "we'll be describing here by following this link: https://github.com/"
 "GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo"
 msgstr ""
+"Avant de commencer, vous pouvez télécharger le code source de l'objet "
+"exemple que nous décrivons ci-dessous en suivant ce lien : https://github."
+"com/GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:13
 msgid ""
 "This example project also contains a SConstruct file that makes compiling a "
 "little easier but in this tutorial we'll be doing things by hand."
 msgstr ""
+"Ce projet exemple contient entre autres un fichier SConstruct qui rend "
+"l'étape de compilation plus accessible, mais pour ce tutoriel nous ferons la "
+"compilation manuellement."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:15
 msgid ""
@@ -70981,33 +70991,43 @@ msgid ""
 "fashion as you would write a GDScript file. We'll be creating the C "
 "equivalent of this GDScript:"
 msgstr ""
+":ref:`GDNative <class_GDNative>` peut être utilisé pour créer divers types "
+"de fonctionnalités supplémentaires pour Godot, allant de PluginScript aux "
+"interfaces ARVR. Dans ce tutoriel, nous nous intéressons à la création d'un "
+"module :ref:`NativeScript <class_NativeScript>`. NativeScript vous permet de "
+"décrire la logique d'un nœud en C ou C++ de la même manière que vous le "
+"feriez avec un fichier GDScript. Nous allons coder l'équivalent en C de ce "
+"GDScript :"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:29
 msgid ""
 "We'll be writing separate tutorials on the other types of GDNative modules "
 "and explain what each of them is for as we go through them."
 msgstr ""
+"Des tutoriels sur les autres types de modules GDNative seront écrit "
+"prochainement pour expliquer leur intérêt et utilisation graduellement."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:32
 msgid "Prerequisites"
-msgstr ""
+msgstr "Prérequis"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:33
 msgid "Before we start you'll need a few things."
-msgstr ""
+msgstr "Avant de commencer, il vous faut un certain nombre de composants."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:35
 msgid "A Godot 3.0 executable"
-msgstr ""
+msgstr "Un exécutable de Godot 3.0"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:36
 msgid "A C compiler"
-msgstr ""
+msgstr "Un compilateur pour C"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:37
 msgid ""
 "A copy of this repository: https://github.com/GodotNativeTools/godot_headers"
 msgstr ""
+"Une copie de ce dépôt : https://github.com/GodotNativeTools/godot_headers"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:39
 msgid ""
