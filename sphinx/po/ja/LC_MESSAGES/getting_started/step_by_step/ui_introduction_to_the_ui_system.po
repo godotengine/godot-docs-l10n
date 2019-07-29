@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr ""
+msgstr "コントロールノードを使用したインターフェイスの設計"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -32,11 +32,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
-msgstr ""
+msgstr "Godotのエディタは、エンジンのUIフレームワークで作られています"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:16
 msgid "This guide will get you started with UI design. You will learn:"
-msgstr ""
+msgstr "このガイドでは、UI設計を開始します。次の内容を学習します:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
 msgid "The five most useful control nodes to build your games' interface"
@@ -44,12 +44,13 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
-msgstr ""
+msgstr "UI要素のアンカーを使用する方法"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:20
 msgid ""
 "How to efficiently place and arrange your user interface using containers"
 msgstr ""
+"コンテナを使用してユーザーインターフェイスを効率的に配置および配置する方法"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
 msgid ""
@@ -82,15 +83,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
-msgstr ""
+msgstr "すべてのコントロールノードは、同じメインプロパティを共有します:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:38
 msgid "Anchor"
-msgstr ""
+msgstr "アンカー"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Bounding rectangle"
-msgstr ""
+msgstr "境界矩形"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Focus and focus neighbor"
@@ -98,64 +99,70 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 msgid "Size flags"
-msgstr ""
+msgstr "サイズフラグ"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Margin"
-msgstr ""
+msgstr "マージン"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "The optional UI theme"
-msgstr ""
+msgstr "オプションのUIテーマ"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:45
 msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
 msgstr ""
+"コントロールノードの基本を理解すると、そこから派生するすべてのノードを学習す"
+"る時間が少なくなります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:50
 msgid "The 5 most common UI elements"
-msgstr ""
+msgstr "最も一般的な5つのUI要素"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:52
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
+"Godotには多数のコントロールノードが付属しています。 それらの多くは、エディタ"
+"プラグインやアプリケーションを構築するのを助けるために用意されています。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:55
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
 msgstr ""
+"ほとんどのゲームでは、必要なUI要素は5種類で、コンテナは多くありません。5つの"
+"コントロールノードは次のとおりです:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:58
 msgid "Label: for displaying text"
-msgstr ""
+msgstr "Label:テキストを表示する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
-msgstr ""
+msgstr "TextureRect:背景、または静止画像であるべきものすべてに主に使用"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:61
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
-msgstr ""
+msgstr "TextureProgress:ライフバー、ロードバー、水平、垂直または放射状のもの"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:63
 msgid "NinePatchRect: for scalable panels"
-msgstr ""
+msgstr "NinePatchRect: スケーラブルなパネル用"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "TextureButton: to create buttons"
-msgstr ""
+msgstr "TextureButton: ボタンを作成する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:68
 msgid "The 5 most common Control nodes for UI design"
-msgstr ""
+msgstr "UI設計の最も一般的な5つのコントロールノード"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
@@ -211,7 +218,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureRect modulated with a red color"
-msgstr ""
+msgstr "赤で変調されたTextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:98
 msgid "TextureButton"
@@ -236,10 +243,17 @@ msgid ""
 "``modulate`` property, to change its color, and ``Resize`` and ``Stretch`` "
 "modes to change its scale behavior."
 msgstr ""
+"Base Buttonセクションには、ボタンの動作を変更するチェックボックスがいくつかあ"
+"ります。 ``Toggle Mode`` がオンの場合、ボタンを押すとアクティブ状態と通常状態"
+"が切り替わります。 ``Disabled`` を選択すると、デフォルトで無効になります。こ"
+"の場合、 ``Disabled`` テクスチャが使用されます。TextureButtonには、テクスチャ"
+"フレームと共通するプロパティがいくつかあります。 ``modulate`` プロパティを使"
+"用してカラーを変更したり、 ``Resize`` および ``Stretch`` モードを使用してス"
+"ケール動作を変更したりできます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureButton and its 5 texture slots"
-msgstr ""
+msgstr "TextureButtonとその5つのテクスチャスロット"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
 msgid "TextureProgress"
@@ -259,6 +273,9 @@ msgid ""
 "``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
 "the gauge."
 msgstr ""
+"``Mode`` プロパティは、バーが伸びる方向 (水平、垂直、または放射状) を制御しま"
+"す。radialに設定すると、 ``Initial Angle`` と ``Fill Degrees`` プロパティで"
+"ゲージの範囲を制限できます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
 msgid ""
@@ -273,7 +290,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"
-msgstr ""
+msgstr "TextureProgressバー、3分の2が塗りつぶされました"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:144
 msgid "Label"
@@ -290,7 +307,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "Picture of a Label"
-msgstr ""
+msgstr "ラベルの画像"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
 msgid "NinePatchRect"
@@ -306,28 +323,34 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "NinePatchRect scaled with the min\\_size property"
-msgstr ""
+msgstr "min\\_sizeプロパティでスケーリングされたNinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:170
 msgid "There are two workflows to build responsive UIs"
-msgstr ""
+msgstr "応答性の高いUIを構築するための2つのワークフローがあります"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:172
 msgid ""
 "There are two workflows to build scalable and flexible interfaces in Godot:"
 msgstr ""
+"Godotには、スケーラブルで柔軟なインターフェイスを構築するための 2 つのワーク"
+"フローがあります:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
 msgid ""
 "You have many container nodes at your disposal that scale and place UI "
 "elements for you. They take control over their children."
 msgstr ""
+"UI要素をスケールして配置するコンテナノードが多数あります。それらは子を制御し"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
 msgid ""
 "On the other side, you have the layout menu. It helps you to anchor, place "
 "and resize a UI element within its parent."
 msgstr ""
+"反対側には、レイアウトメニューがあります。これは、親のUI要素を固定、配置、お"
+"よびサイズ変更するのに役立ちます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
 msgid ""
@@ -345,10 +368,12 @@ msgid ""
 "As you create UIs for your games and tools, you'll develop a sense for what "
 "fits best in each situation."
 msgstr ""
+"ゲームやツールに合わせてUIを作成すると、それぞれの状況に最も適したものに対す"
+"る感覚が高まります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:183
 msgid "Place UI elements precisely with anchors"
-msgstr ""
+msgstr "アンカーを使用してUI要素を正確に配置する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:185
 msgid ""
@@ -357,14 +382,17 @@ msgid ""
 "Top, Right and Bottom edges of the node. Change any of the 4 anchors to "
 "change the reference point of the margins."
 msgstr ""
+"コントロールノードには位置とサイズがありますが、アンカーと余白もあります。ア"
+"ンカーは、ノードの左端、上端、右端、下端の原点または参照点を定義します。余白"
+"の基準点を変更するには、4つのアンカーのいずれかを変更します。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
 msgid "The anchor property"
-msgstr ""
+msgstr "アンカーのプロパティ"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:195
 msgid "How to change the anchor"
-msgstr ""
+msgstr "アンカーを変更する方法"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
 msgid ""
@@ -378,11 +406,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "The layout menu in the viewport"
-msgstr ""
+msgstr "ビューポートのレイアウトメニュー"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:209
 msgid "Anchors are relative to the parent container"
-msgstr ""
+msgstr "アンカーは親コンテナに対して相対的です"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:211
 msgid ""
@@ -394,16 +422,23 @@ msgid ""
 "position in pixels, while anchors are relative to the parent container's "
 "size."
 msgstr ""
+"各アンカーは0から1の間の値です。左アンカーと上端アンカーの場合、値0は余白なし"
+"でノードのエッジが親の左端と上端に位置合わせされることを意味します。右端と下"
+"端の場合、値が1の場合、親コンテナーの右端と下端に位置合わせされます。一方、余"
+"白はアンカー位置(ピクセル単位)を表し、アンカーは親コンテナーのサイズに対して"
+"相対的です。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:221
 msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
 msgstr ""
+"余白はアンカー位置に対して相対的であり、アンカーに対して相対的です。実際に"
+"は、コンテナの余白を更新することがよくあります"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:226
 msgid "Margins change with the anchor"
-msgstr ""
+msgstr "アンカーによって余白が変化する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:228
 msgid ""
@@ -414,10 +449,15 @@ msgid ""
 "there's no parent, the margins will be relative to the node's own bounding "
 "Rectangle, set in the Rect section, in the inspector."
 msgstr ""
+"コントロールノードを移動またはサイズ変更すると、余白が自動的に更新されます。"
+"これらは、コントロールノードのエッジからアンカーまでの距離を表します。そのた"
+"め、コントロール ノードは常にコンテナ内に配置する必要があります。親がない場"
+"合、余白は、インスペクタのRectセクションで設定されたノード独自の境界矩形に対"
+"して相対的になります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:238
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
-msgstr ""
+msgstr "「Full Rect」アンカーに設定されたセンターコンテナの余白"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:240
 msgid ""
@@ -428,10 +468,17 @@ msgid ""
 "border of the screen? Use the MarginContainer. Want to build a vertical "
 "menu? Use the VBoxContainer. More on these below."
 msgstr ""
+"アンカーを変更するか、コンテナ内にコントロールノードをネストしてみてくださ"
+"い。余白が更新されます。 余白を手動で編集する必要はほとんどありません。 あな"
+"たを助けるために常に最初にコンテナを見つけるようにしてください。 Godotはあな"
+"たのためのすべての一般的なケースを解決するためにノードを持っています。 ライフ"
+"バーと画面の境界の間にスペースを追加する必要がありますか？ MarginContainerを"
+"使用してください。 垂直メニューを作りたいですか？ VBoxContainerを使用してくだ"
+"さい。 これらの詳細は下記をご覧ください。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:249
 msgid "Use size tags to change how UI elements fill the available space"
-msgstr ""
+msgstr "サイズタグを使用して、UI要素が使用可能な領域を埋める方法を変更する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:251
 msgid ""
@@ -443,10 +490,17 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
+"各コントロールノードにはサイズフラグがあります。UI要素のスケーリング方法をコ"
+"ンテナに指示します。「Fill」フラグをHorizontalまたはVerticalプロパティに追加"
+"すると、ノードのバウンディングボックスは可能な限りのスペースを使用しますが、"
+"兄弟を考慮してサイズを保持します。HBoxContainerに3つのTextureRectノードがあ"
+"り、両方の軸に「Fill」フラグが設定されている場合、それぞれが使用可能なスペー"
+"スの最大3分の1を使用しますが、それ以上は使用できません。コンテナがノードを引"
+"き継ぎ、自動的にサイズが変更されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:261
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
-msgstr ""
+msgstr "HBoxContainer内の3つのUI要素は、水平方向に整列します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:263
 msgid ""
@@ -454,21 +508,26 @@ msgid ""
 "against its siblings. Its bounding rectangle will grow against the edges of "
 "its parent, or until it's blocked by another UI node."
 msgstr ""
+"「Expand」フラグを使用すると、UI要素は可能な限りのスペースを使用して、兄弟要"
+"素をプッシュできます。そのバウンディングボックスは、親のエッジに向かって、ま"
+"たは別のUIノードによってブロックされるまで大きくなります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
-msgstr ""
+msgstr "上記と同じ例ですが、中央ノードには「Expand」サイズフラグがあります"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:272
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
+"サイズタグの効果はインターフェイスの設定方法によって大きく異なるため、サイズ"
+"タグを理解するにはある程度の練習が必要です。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:276
 msgid "Arrange control nodes automatically with containers"
-msgstr ""
+msgstr "コンテナを使用してコントロールノードを自動的に配置する"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:278
 msgid ""
@@ -484,33 +543,38 @@ msgid ""
 "elements. To change them, navigate down to the Custom Constants section in "
 "the Inspector."
 msgstr ""
+"コンテナには、UI要素の配置方法を制御するための特別なプロパティがいくつかあり"
+"ます。変更するには、インスペクタのカスタム定数セクションに移動します。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:289
 msgid "The 5 most useful containers"
-msgstr ""
+msgstr "最も有用な5つのコンテナ"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
+"ツールを構築する場合は、すべてのコンテナが必要になる場合があります。しかし、"
+"ほとんどのゲームでは、一握りで十分です:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
 msgid "MarginContainer, to add margins around part of the UI"
-msgstr ""
+msgstr "MarginContainer、UIの一部に余白を追加します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 msgid "CenterContainer, to center its children in its bounding box"
-msgstr ""
+msgstr "CenterContainerは、その子を境界ボックスに中央に配置します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:296
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
-msgstr ""
+msgstr "VboxContainerおよびHboxContainer、行または列にUI要素を配置します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:298
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
 msgstr ""
+"GridContainer、グリッドのようなパターンでコントロールノードを配置します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:300
 msgid ""
@@ -520,11 +584,17 @@ msgid ""
 "want a single container nested inside it. If you use textures and buttons "
 "instead, they'll stack up."
 msgstr ""
+"CenterContainerは、すべての子をバウンディング矩形の内側にセンタリングします。"
+"これは、オプションをビューポートの中央に表示しておきたい場合に、タイトルスク"
+"リーンでよく使用する方法です。すべてを中央に配置するため、1つのコンテナを内部"
+"にネストしたい場合があります。代わりにテクスチャとボタンを使用すると、それら"
+"が重なってしまいます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
 msgstr ""
+"CenterContainerのアクション。ライフバーは、親コンテナ内に配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:311
 msgid ""
@@ -535,10 +605,17 @@ msgid ""
 "click the corresponding value box and type any number. It will activate "
 "automatically."
 msgstr ""
+"MarginContainerは、子ノードの任意の側に余白を追加します。ビューポート全体を含"
+"むMarginContainerを追加して、ウィンドウのエッジとUIの間に分離を追加します。コ"
+"ンテナの上部、左、右、下側に余白を設定できます。チェックボックスをオンにする"
+"必要はありません: 対応する値のボックスをクリックし、任意の数を入力すると、自"
+"動的に有効になります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:320
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
 msgstr ""
+"MarginContainer は、ゲームユーザーインターフェイスの周囲に 40ピクセルのマージ"
+"ンを追加します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:322
 msgid ""
@@ -549,10 +626,15 @@ msgid ""
 "rows and columns of different sizes, as you can nest them to your heart's "
 "content."
 msgstr ""
+"ボックスコンテナには、VBoxContainerとHBoxContainerの2つがあります。"
+"BoxContainerノード自体はヘルパー クラスなので追加できませんが、垂直および水平"
+"のボックスコンテナを使用できます。ノードは行または列に配置されます。ショップ"
+"内のアイテムを並べて作成したり、さまざまなサイズの行と列を持つ複雑なグリッド"
+"を構築したりするために使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:331
 msgid "The HBoxContainer horizontally aligns UI elements"
-msgstr ""
+msgstr "HBoxContainerはUI要素を水平方向に揃えます"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:333
 msgid ""
@@ -563,6 +645,11 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainerは、子を自動的に列に配置し、それらを次々に置きます。分割パラメー"
+"タを使用すると、子の間にギャップが残ります。HBoxContainerは、UI要素を一列に並"
+"べます。これはVBoxContainerに似ていますが、スクリプトから最初の子ノードの前ま"
+"たは最後の子ノードの後にspacerコントロールノードを追加する ``add_spacer`` メ"
+"ソッドが追加されています。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:340
 msgid ""
@@ -575,10 +662,16 @@ msgid ""
 "set the vertical and horizontal separation between the rows and columns "
 "respectively."
 msgstr ""
+"GridContainerを使用すると、グリッドのようなパターンでUI要素を配置できます。列"
+"の数のみを制御でき、子の数に基づいて行数を単独で設定します。9つの子と3つの列"
+"がある場合は、9÷ 3= 3行があります。さらに3つの子を追加すると、4行になります。"
+"つまり、テクスチャとボタンを追加すると、新しい行が作成されます。ボックスコン"
+"テナと同様に、行と列の間の垂直方向と水平方向の分離をそれぞれ設定する2つのプロ"
+"パティがあります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:351
 msgid "A GridContainer with 2 columns. It sizes each column automatically."
-msgstr ""
+msgstr "2つの列を持つGridContainer。各列のサイズは自動的に設定されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:353
 msgid ""

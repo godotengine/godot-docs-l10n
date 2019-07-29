@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 "Godot中“扩展”节点的更好方法。 这相当于在GDScript中编写脚本，而是在C++中编写脚"
 "本。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:18
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:17
 msgid ""
 "Godot 3.1 saw the introduction of the NativeScript 1.1 additions that "
 "enabled the GDNative team to build a nicer C++ bindings library. These "
@@ -58,43 +58,45 @@ msgstr ""
 "个也支持Godot 3.0的C++ GDNative插件，您需要使用3.0分支和NativeScript 1.0语"
 "法。 我们将在这篇文章中并排展示它们。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:26
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:24
+#, fuzzy
 msgid ""
 "You can download the full example we'll be creating in this tutorial `on "
-"GitHub <https://github.com/BastiaanOlij/gdnative_cpp_example>`_."
+"GitHub <https://github.com/BastiaanOlij/gdnative_cpp_example>`__."
 msgstr ""
 "您可以在 `GitHub <https://github.com/BastiaanOlij/gdnative_cpp_example>`_ 上"
 "下载我们将在本教程中创建的完整示例。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:30
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:28
 msgid "Setting up the project"
 msgstr "设置项目"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:32
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:30
 msgid "There are a few prerequisites you'll need:"
 msgstr "您需要一些先决条件:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:34
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:32
 msgid "a Godot 3.x executable,"
 msgstr "Godot 3.x可执行文件，"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:35
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:33
 msgid "a C++ compiler,"
 msgstr "一个C++编译器，"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:36
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:34
 msgid "SCons as a build tool,"
 msgstr "SCons作为构建工具，"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:37
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:35
+#, fuzzy
 msgid ""
 "a copy of the `godot-cpp repository <https://github.com/GodotNativeTools/"
-"godot-cpp>`_."
+"godot-cpp>`__."
 msgstr ""
 "`godot-cpp repository <https://github.com/GodotNativeTools/godot-cpp>`_ 的副"
 "本。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:39
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:38
 msgid ""
 "See also :ref:`Compiling <toc-devel-compiling>` as the build tools are "
 "identical to the ones you need to compile Godot from source."
@@ -102,7 +104,7 @@ msgstr ""
 "另请参阅 :ref:`编译 <toc-devel-compiling>` 因为构建工具与从源代码编译Godot所"
 "需的构建工具相同。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:42
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:41
 msgid ""
 "You can download these repositories from GitHub or let Git do the work for "
 "you. Note that these repositories now have different branches for different "
@@ -117,13 +119,13 @@ msgstr ""
 "版本中运行(除了3.0和3.1之间的ARVR接口的一次重大更改)，但反之亦然，因此请确保"
 "下载正确的分支。还要注意，您用于生成“api.json”的Godot版本将成为最低版本。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:52
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:49
 msgid ""
 "If you are versioning your project using Git, it is a good idea to add them "
 "as Git submodules:"
 msgstr "如果您使用Git对项目进行版本控制，最好将它们添加为Git子模块:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:74
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:71
 msgid ""
 "If you decide to just download the repositories or clone them into your "
 "project folder, make sure to keep the folder layout identical to the one "
@@ -133,11 +135,11 @@ msgstr ""
 "如果您决定只下载存储库或将它们克隆到项目文件夹中，请确保文件夹布局与此处描述"
 "的相同，因为我们将在此处展示的代码假定项目遵循此布局。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:79
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:76
 msgid "Do make sure you clone recursive to pull in both repositories:"
 msgstr "确保克隆递归以拉入两个存储库:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:94
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:93
 msgid ""
 "``godot-cpp`` now includes ``godot_headers`` as a nested submodule, if "
 "you've manually downloaded them please make sure to place ``godot_headers`` "
@@ -146,7 +148,7 @@ msgstr ""
 "``godot-cpp``现在包含``godot_headers``作为嵌套子模块，如果您手动下载它们，请"
 "确保将 ``godot_headers`` 放在 ``godot-cpp`` 文件夹中。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:96
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:97
 msgid ""
 "You don't have to do it this way but we've found it easiest to manage. If "
 "you decide to just download the repositories or just clone them into your "
@@ -158,7 +160,7 @@ msgstr ""
 "到您的文件夹中，请确保文件夹布局与我们在此处设置的相同，因为我们将在此处展示"
 "的代码假定项目具有此布局。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:98
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:102
 msgid ""
 "If you cloned the example from the link specified in the introduction, the "
 "submodules are not automatically initialized. You will need to execute the "
@@ -166,21 +168,21 @@ msgid ""
 msgstr ""
 "如果从介绍中指定的链接克隆示例，子模块不会自动初始化。 您需要执行以下命令:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:107
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:111
 msgid "This will clone these two repositories into your project folder."
 msgstr "这会将这两个存储库克隆到您的项目文件夹中。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:110
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:114
 msgid "Building the C++ bindings"
 msgstr "构建C++绑定"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:112
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:116
 msgid ""
 "Now that we've downloaded our prerequisites, it is time to build the C++ "
 "bindings."
 msgstr "现在我们已经下载了我们的先决条件，现在是构建C++绑定的时候了。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:115
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:119
 msgid ""
 "The repository contains a copy of the metadata for the current Godot "
 "release, but if you need to build these bindings for a newer version of "
@@ -189,7 +191,7 @@ msgstr ""
 "存储库包含当前Godot版本的元数据副本，但如果您需要为较新版本的Godot构建这些绑"
 "定，只需调用Godot可执行文件:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:123
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:127
 msgid ""
 "Place the resulting ``api.json`` file in the project folder and add "
 "``use_custom_api_file=yes custom_api_file=../api.json`` to the scons command "
@@ -198,7 +200,7 @@ msgstr ""
 "将生成的 ``api.json`` 文件放在项目文件夹中，并将``use_custom_api_file = yes "
 "custom_api_file = .. / api.json``添加到下面的scons命令中。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:125
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:131
 msgid ""
 "To generate and compile the bindings, use this command (replacing "
 "``<platform>`` with ``windows``, ``x11`` or ``osx`` depending on your OS):"
@@ -206,7 +208,7 @@ msgstr ""
 "要生成和编译绑定，请使用此命令(根据您的操作系统将 ``<platform>`` 替换为 "
 "``windows`` ，``x11``或``osx``):"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:134
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:140
 msgid ""
 "This step will take a while. When it is completed, you should have static "
 "libraries that can be compiled into your project stored in ``godot-cpp/bin/"
@@ -215,13 +217,13 @@ msgstr ""
 "这一步将需要一段时间。 完成后，您应该有一个静态库，可以编译到您的项目中，存储"
 "在``godot-cpp / bin /``中。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:137
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:143
 msgid ""
 "At some point in the future, compiled binaries will be available, making "
 "this step optional."
 msgstr "在将来的某个时刻，已编译的二进制文件将可用，使此步骤可选。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:140
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:148
 #, fuzzy
 msgid ""
 "You may need to add ``bits=64`` to the command on Windows or Linux. We're "
@@ -230,11 +232,11 @@ msgstr ""
 "您可能需要在Windows上的命令中添加 ``bits=64`` 。 我们仍在努力进行更好的自动检"
 "测。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:143
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:152
 msgid "Creating a simple plugin"
 msgstr "创建一个简单的插件"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:145
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:154
 msgid ""
 "Now it's time to build an actual plugin. We'll start by creating an empty "
 "Godot project in which we'll place a few files."
@@ -242,7 +244,7 @@ msgstr ""
 "现在是构建实际插件的时候了。 我们首先创建一个空的Godot项目，我们将在其中放置"
 "一些文件。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:148
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:157
 msgid ""
 "Open Godot and create a new project. For this example, we will place it in a "
 "folder called ``demo`` inside our GDNative module's folder structure."
@@ -250,7 +252,7 @@ msgstr ""
 "打开Godot并创建一个新项目。 对于这个示例，我们将它放在我们的GDNative模块的文"
 "件夹结构中名为 ``demo`` 的文件夹中。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:151
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:160
 msgid ""
 "In our demo project, we'll create a scene containing a Node called \"Main\" "
 "and we'll save it as ``main.tscn``. We'll come back to that later."
@@ -258,7 +260,7 @@ msgstr ""
 "在我们的演示项目中，我们将创建一个包含名为“Main”的节点的场景，我们将其保存为 "
 "``main.tscn`` 。 我们稍后再回过头来看看。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:154
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:163
 msgid ""
 "Back in the top-level GDNative module folder, we're also going to create a "
 "subfolder called ``src`` in which we'll place our source files."
@@ -266,7 +268,7 @@ msgstr ""
 "回到顶级GDNative模块文件夹，我们还将创建一个名为 ``src`` 的子文件夹，我们将在"
 "其中放置源文件。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:157
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:166
 msgid ""
 "You should now have ``demo``, ``godot-cpp``, ``godot_headers``, and ``src`` "
 "directories in your GDNative module."
@@ -274,7 +276,7 @@ msgstr ""
 "您现在应该在您的GDNative模块中有 ``demo`` ，``godot-cpp``， "
 "``godot_headers`` 和``src``目录。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:160
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:169
 msgid ""
 "In the ``src`` folder, we'll start with creating our header file for the "
 "GDNative node we'll be creating. We will name it ``gdexample.h``:"
@@ -282,7 +284,7 @@ msgstr ""
 "在 ``src`` 文件夹中，我们将首先为我们将要创建的GDNative节点创建头文件。 我们"
 "将它命名为``gdexample.h``:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:224
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:233
 msgid ""
 "There are a few things of note to the above. We're including ``Godot.hpp`` "
 "which contains all our basic definitions. After that, we include ``Sprite."
@@ -293,14 +295,14 @@ msgstr ""
 "后，我们包含 ``Sprite.hpp`` ，它包含对Sprite类的绑定。 我们将在我们的模块中扩"
 "展这个类。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:229
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:238
 msgid ""
 "We're using the namespace ``godot``, since everything in GDNative is defined "
 "within this namespace."
 msgstr ""
 "我们使用命名空间 ``godot`` ，因为GDNative中的所有内容都在此命名空间中定义。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:232
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:241
 msgid ""
 "Then we have our class definition, which inherits from our Sprite through a "
 "container class. We'll see a few side effects of this later on. The "
@@ -310,11 +312,11 @@ msgstr ""
 "副作用。 这也是NativeScript 1.1中将要改进的主要部分。 ``GODOT_CLASS`` 宏为我"
 "们设置了一些内部事物。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:236
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:245
 msgid "After that, we declare a single member variable called ``time_passed``."
 msgstr "之后，我们声明一个名为 ``time_passed`` 的成员变量。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:238
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:247
 msgid ""
 "In the next block we're defining our methods, we obviously have our "
 "constructor and destructor defined, but there are two other functions that "
@@ -323,7 +325,7 @@ msgstr ""
 "在下一个块中我们定义了我们的方法，我们显然已经定义了构造函数和析构函数，但是"
 "还有其他两个函数可能看起来很熟悉。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:242
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:251
 msgid ""
 "The first is ``_register_methods``, which is a static function that Godot "
 "will call to find out which methods can be called on our NativeScript and "
@@ -339,11 +341,11 @@ msgstr ""
 "个是我们的 ``_init`` 函数，它是在Godot正确设置我们的对象之后调用的。 即使您没"
 "有在其中放置任何代码，它也必须存在。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:251
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:258
 msgid "Let's implement our functions by creating our ``gdexample.cpp`` file:"
 msgstr "所以，让我们通过创建 ``gdexample.cpp`` 文件来实现我们的函数:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:311
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:318
 msgid ""
 "This one should be straightforward. We're implementing each method of our "
 "class that we defined in our header file. Note that the ``register_method`` "
@@ -355,7 +357,7 @@ msgstr ""
 "``register_method`` 调用 **必须** 公开 ``_process`` 方法，否则Godot将无法使用"
 "它。 但是，我们不必告诉Godot我们的构造函数，析构函数和 ``_init`` 函数。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:317
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:324
 msgid ""
 "The other method of note is our ``_process`` function, which simply keeps "
 "track of how much time has passed and calculates a new position for our "
@@ -371,7 +373,7 @@ msgstr ""
 "类; ``owner``指向我们脚本所涉及的实际Sprite节点。 在即将发布的NativeScript "
 "1.1中，可以在我们的类上直接调用 ``set_position`` 。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:326
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:332
 msgid ""
 "There is one more C++ file we need; we'll name it ``gdlibrary.cpp``. Our "
 "GDNative plugin can contain multiple NativeScripts, each with their own "
@@ -384,7 +386,7 @@ msgstr ""
 "现了 ``GDExample`` 一样。 我们现在需要的是一小段代码，告诉Godot我们的GDNative"
 "插件中的所有NativeScripts。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:350
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:356
 msgid ""
 "Note that we are not using the ``godot`` namespace here, since the three "
 "functions implemented here need to be defined without a namespace."
@@ -392,7 +394,7 @@ msgstr ""
 "请注意，我们这里没有使用 ``godot`` 命名空间，因为这里实现的三个函数需要在没有"
 "命名空间的情况下定义。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:353
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:359
 msgid ""
 "The ``godot_gdnative_init`` and ``godot_gdnative_terminate`` functions get "
 "called respectively when Godot loads our plugin and when it unloads it. All "
@@ -404,7 +406,7 @@ msgstr ""
 "``godot_gdnative_terminate``函数。 我们在这里所做的只是解析我们的绑定模块中的"
 "函数来初始化它们，但您可能需要根据需要设置更多内容。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:359
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:365
 msgid ""
 "The important function is the third function called "
 "``godot_nativescript_init``. We first call a function in our bindings "
@@ -415,11 +417,11 @@ msgstr ""
 "中调用一个函数来执行它常用的东西。 之后，我们为库中的每个类调用函数 "
 "``register_class`` 。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:365
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:371
 msgid "Compiling the plugin"
 msgstr "编译插件"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:367
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:373
 msgid ""
 "We cannot easily write by hand a ``SConstruct`` file that SCons would use "
 "for building. For the purpose of this example, just use :download:`this "
@@ -432,7 +434,7 @@ msgstr ""
 "SConstruct>` 我们已经准备好了。 我们将在后续教程中介绍如何使用这些构建文件的"
 "更可定制的详细示例。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:373
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:381
 #, fuzzy
 msgid ""
 "This ``SConstruct`` file was written to be used with the latest ``godot-"
@@ -442,7 +444,7 @@ msgstr ""
 "这个 ``SConstruct`` 文件被编写为与最新的godot-cpp主机一起使用，您可能需要使用"
 "旧版本进行小的更改，或者参考Godot 3.0文档中的 ``SConstruct`` 文件。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:378
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:385
 msgid ""
 "Once you've downloaded the ``SConstruct`` file, place it in your GDNative "
 "module folder besides ``godot-cpp``, ``godot_headers`` and ``demo``, then "
@@ -451,11 +453,11 @@ msgstr ""
 "一旦您下载了 ``SConstruct`` 文件，除了 ``godot-cpp`` ，``godot_headers``和"
 "``demo``之外，把它放在您的GDNative模块文件夹中，然后运行:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:386
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:392
 msgid "You should now be able to find the module in ``demo/bin/<platform>``."
 msgstr "您现在应该能够在``demo / bin / <platform>``中找到该模块。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:390
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:396
 msgid ""
 "Here, we've compiled both godot-cpp and our gdexample library as debug "
 "builds. For optimized builds, you should compile them using the "
@@ -464,11 +466,11 @@ msgstr ""
 "在这里，我们编译了godot-cpp和我们的gdexample库作为调试版本。 对于优化的构建，"
 "您应该使用``target = release``开关编译它们。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:395
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:401
 msgid "Using the GDNative module"
 msgstr "使用GDNative模块"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:397
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:403
 msgid ""
 "Before we jump back into Godot, we need to create two more files in ``demo/"
 "bin/``. Both can be created using the Godot editor, but it may be faster to "
@@ -477,7 +479,7 @@ msgstr ""
 "在我们跳回Godot之前，我们需要在``demo / bin /``中再创建两个文件。 两者都可以"
 "使用Godot编辑器创建，但直接创建它们可能会更快。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:401
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:407
 msgid ""
 "The first one is a file that lets Godot know what dynamic libraries should "
 "be loaded for each platform and is called ``gdexample.gdnlib``."
@@ -485,7 +487,7 @@ msgstr ""
 "第一个是一个文件，让Godot知道应该为每个平台加载什么动态库，并称为 "
 "``gdexample.gdnlib`` 。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:425
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:431
 msgid ""
 "This file contains a ``general`` section that controls how the module is "
 "loaded. It also contains a prefix section which should be left on ``godot_`` "
@@ -499,7 +501,7 @@ msgstr ""
 "数。 这是为iPhone平台添加的，因为它不允许部署动态库，但GDNative模块是静态链接"
 "的。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:432
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:437
 msgid ""
 "The ``entry`` section is the important bit: it tells Godot the location of "
 "the dynamic library in the project's filesystem for each supported platform. "
@@ -511,7 +513,7 @@ msgstr ""
 "置。 导出项目时，它也会导致* just *导出文件，这意味着数据包不会包含与目标平台"
 "不兼容的库。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:438
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:443
 msgid ""
 "Finally, the ``dependencies`` section allows you to name additional dynamic "
 "libraries that should be included as well. This is important when your "
@@ -521,14 +523,14 @@ msgstr ""
 "最后， ``dependencies`` 部分允许您命名应包含的其他动态库。 当您的GDNative插件"
 "实现其他人的库并要求您为项目提供第三方动态库时，这一点非常重要。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:443
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:448
 msgid ""
 "If you double click on the ``gdexample.gdnlib`` file within Godot, you'll "
 "see there are far more options to set:"
 msgstr ""
 "如果您双击Godot中的 ``gdexample.gdnlib`` 文件，您会看到还有更多的选项要设置:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:448
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:453
 msgid ""
 "The second file we need to create is a file used by each NativeScript we've "
 "added to our plugin. We'll name it ``gdexample.gdns`` for our gdexample "
@@ -537,7 +539,7 @@ msgstr ""
 "我们需要创建的第二个文件是我们添加到插件中的每个NativeScript使用的文件。 我们"
 "将它命名为 ``gdexample.gdns`` 用于我们的gdexample NativeScript。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:465
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:470
 msgid ""
 "This is a standard Godot resource; you could just create it directly in your "
 "scene, but saving it to a file makes it much easier to reuse it in other "
@@ -551,7 +553,7 @@ msgstr ""
 "含我们的NativeScript。 它还定义了 ``class_name`` ，它标识了我们想要使用的插件"
 "中的NativeScript。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:472
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:476
 msgid ""
 "Time to jump back into Godot. We load up the main scene we created way back "
 "in the beginning and now add a Sprite to our scene:"
@@ -559,7 +561,7 @@ msgstr ""
 "是时候跳回Godot了。 我们在开始时加载我们创建的主场景，现在为场景添加一个"
 "Sprite:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:477
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:481
 msgid ""
 "We're going to assign the Godot logo to this sprite as our texture, disable "
 "the ``centered`` property and drag our ``gdexample.gdns`` file onto the "
@@ -568,15 +570,15 @@ msgstr ""
 "我们要将Godot徽标指定给这个精灵作为我们的纹理，禁用 ``centered`` 属性并将我们"
 "的 ``gdexample.gdns`` 文件拖到精灵的 ``script`` 属性中:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:483
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:487
 msgid "We're finally ready to run the project:"
 msgstr "我们终于准备好运行这个项目了:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:488
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:492
 msgid "Adding properties"
 msgstr "添加属性"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:490
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:494
 msgid ""
 "GDScript allows you to add properties to your script using the ``export`` "
 "keyword. In GDNative you have to register the properties and there are two "
@@ -587,7 +589,7 @@ msgstr ""
 "属性，有两种方法可以执行此操作。 您可以直接绑定到成员，也可以使用setter和"
 "getter函数。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:496
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:501
 msgid ""
 "There is a third option, just like in GDScript you can directly implement "
 "the ``_get_property_list``, ``_get`` and ``_set`` methods of an object but "
@@ -597,19 +599,19 @@ msgstr ""
 "``_get_property_list`` ， ``_get`` 和 ``_set`` 方法，但这远远超出了本教程的范"
 "围。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:500
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:505
 msgid ""
 "We'll examine both starting with the direct bind. Lets add a property that "
 "allows us to control the amplitude of our wave."
 msgstr ""
 "我们将从直接绑定开始检查两者。 让我们添加一个允许我们控制波浪幅度的属性。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:503
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:508
 msgid ""
 "In our ``gdexample.h`` file we simply need to add a member variable like so:"
 msgstr "在我们的 ``gdexample.h`` 文件中，我们只需添加一个成员变量，如下所示:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:513
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:518
 msgid ""
 "In our ``gdexample.cpp`` file we need to make a number of changes, we will "
 "only show the methods we end up changing, don't remove the lines we're "
@@ -618,7 +620,7 @@ msgstr ""
 "在我们的 ``gdexample.cpp`` 文件中，我们需要进行一些更改，我们只会显示我们最终"
 "更改的方法，不要删除我们省略的行:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:565
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:570
 msgid ""
 "Once you compile the module with these changes in place you will see that a "
 "property has been added to our interface. You can now change this property "
@@ -628,7 +630,7 @@ msgstr ""
 "一旦您使用这些更改编译模块，您将看到已将属性添加到我们的界面。 您现在可以更改"
 "此属性，当您运行项目时，您将看到我们的Godot图标沿着更大的数字移动。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:571
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:577
 msgid ""
 "The ``reloadable`` property in the ``gdexample.gdnlib`` file must be set to "
 "``true`` for the Godot editor to automatically pick up the newly added "
@@ -637,7 +639,7 @@ msgstr ""
 "“gdexample.gdnlib”文件中的“可重新读取”(reloadable)属性必须设定为“真”，Godot编"
 "辑器才能自动获取到新添加的属性。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:574
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:581
 msgid ""
 "However, this setting should be used with care especially when tool classes "
 "are used, as the editor might hold objects then that have script instances "
@@ -646,7 +648,7 @@ msgstr ""
 "但是，使用该设置时要特别小心，特别是在使用工具类时，因为编辑器可能会持有对"
 "象，然后将脚本实例附加到对象上，这些对象由GDNative库管理。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:577
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:585
 msgid ""
 "Lets do the same but for the speed of our animation and use a setter and "
 "getter function. Our ``gdexample.h`` header file again only needs a few more "
@@ -655,7 +657,7 @@ msgstr ""
 "让我们做同样的事情但是为了我们动画的速度并使用setter和getter函数。 我们的 "
 "``gdexample.h`` 头文件再次只需要几行代码:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:591
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:600
 msgid ""
 "This requires a few more changes to our ``gdexample.cpp`` file, again we're "
 "only showing the methods that have changed so don't remove anything we're "
@@ -664,7 +666,7 @@ msgstr ""
 "这需要对我们的 ``gdexample.cpp`` 文件进行一些更改，同样我们只显示已更改的方"
 "法，所以不要删除我们忽略的任何内容:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:663
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:672
 msgid ""
 "Now when the project is compiled we'll see another property called speed. "
 "Changing its value will make the animation go faster or slower."
@@ -672,7 +674,7 @@ msgstr ""
 "现在，当编译项目时，我们将看到另一个名为speed的属性。 更改其值将使动画更快或"
 "更慢。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:666
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:675
 msgid ""
 "For this example there is no obvious advantage of using a setter and getter. "
 "It is just more code to write. For a simple example as this there may be a "
@@ -683,14 +685,14 @@ msgstr ""
 "一个简单的示例，如果您想对改变的变量做出反应，那么设置器可能有充分的理由，但"
 "在很多情况下只需绑定变量就足够了。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:671
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:680
 msgid ""
 "Getters and setters become far more useful in more complex scenarios where "
 "you need to make additional choices based on the state of your object."
 msgstr ""
 "在需要根据对象状态做出其他选择的更复杂场景中，getter和setter变得更加有用。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:677
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:685
 msgid ""
 "For simplicity we've left out the optional parameters in the "
 "register_property<class, type> method call. These parameters are "
@@ -701,20 +703,21 @@ msgstr ""
 "这些参数是 ``rpc_mode`` ， ``usage`` ， ``hint`` 和 ``hint_string`` 。 这些可"
 "用于进一步配置属性在Godot方面的显示和设置方式。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:683
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:690
+#, fuzzy
 msgid ""
 "Modern C++ compilers are able to infer the class and variable type and allow "
 "you to omit the ``<GDExample, float>`` part of our ``register_property`` "
-"method. we've had mixed experiences with this however."
+"method. We've had mixed experiences with this however."
 msgstr ""
 "现代C++编译器能够推断出类和变量类型，并允许您省略 ``register_property`` 方法"
 "的 ``<GDExample，float>`` 部分。 然而，我们对此有过不同的经历。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:689
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:695
 msgid "Signals"
 msgstr "信号"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:691
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:697
 msgid ""
 "Last but not least, signals fully work in GDNative as well. Having your "
 "module react to a signal given out by another object requires you to call "
@@ -725,11 +728,11 @@ msgstr ""
 "出反应，需要在该对象上调用 ``connect`` 。 我们想不出一个摆动Godot图标的好示"
 "例，我们需要展示一个更完整的示例。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:697
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:702
 msgid "This however is the required syntax:"
 msgstr "但这是必需的语法:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:708
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:713
 msgid ""
 "Note that you can only call ``my_method`` if you've previously registered it "
 "in your ``_register_methods`` method."
@@ -737,7 +740,7 @@ msgstr ""
 "请注意，如果您之前在 ``_register_methods`` 方法中注册了它，则只能调用 "
 "``my_method`` 。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:711
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:716
 msgid ""
 "Having your object sending out signals is far more common. For our wobbling "
 "Godot icon we'll do something silly just to show how it works. We're going "
@@ -747,14 +750,14 @@ msgstr ""
 "让对象发出信号更为常见。 对于我们摇摆不定的Godot图标，我们会做一些愚蠢的事情"
 "来展示它是如何工作的。 每过一秒钟我们就会发出一个信号并传递新的位置。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:716
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:720
 msgid ""
 "In our ``gdexample.h`` header file we just need to define a new member "
 "``time_emit``:"
 msgstr ""
 "在我们的 ``gdexample.h`` 头文件中，我们只需要定义一个新成员 ``time_emit`` :"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:726
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:731
 msgid ""
 "The changes in ``gdexample.cpp`` are a bit more elaborate this time. First "
 "you'll need to set ``time_emit = 0.0;`` in either our ``_init`` method or in "
@@ -764,7 +767,7 @@ msgstr ""
 "我们的构造函数中设置``time_emit = 0.0;``。 但另外两个需要改变，我们将逐一看"
 "待。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:730
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:735
 msgid ""
 "In our ``_register_methods`` method we need to declare our signal and we do "
 "this as follows:"
@@ -772,7 +775,7 @@ msgstr ""
 "在我们的 ``_register_methods`` 方法中，我们需要声明我们的信号，我们按如下方式"
 "执行:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:757
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:762
 msgid ""
 "Here we see a nice improvement in the latest version of godot-cpp where our "
 "``register_signal`` method can be a single call first taking the signals "
@@ -783,7 +786,7 @@ msgstr ""
 "``register_signal`` 方法可以是一个单独的调用，首先取信号名称，然后有一对值来"
 "指定参数名称和每个参数的类型我们将 发送此信号。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:762
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:767
 msgid ""
 "For NativeScript 1.0 we first build a dictionary in which we tell Godot "
 "about the types of arguments we will pass to our signal, and then register "
@@ -792,11 +795,11 @@ msgstr ""
 "对于NativeScript 1.0，我们首先构建一个字典，在其中我们告诉Godot我们将传递给信"
 "号的参数类型，然后注册它。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:765
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:770
 msgid "Next we'll need to change our ``_process`` method:"
 msgstr "接下来我们需要更改 ``_process`` 方法:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:811
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:816
 msgid ""
 "After a second has passed we emit our signal and reset our counter. Again in "
 "the new version of godot-cpp we can add our parameter values directly to "
@@ -807,7 +810,7 @@ msgstr ""
 "可以将参数值直接添加到 ``emit_signal`` 。在NativeScript 1.0中我们首先构建一个"
 "值数组，然后调用 ``emit_signal`` 。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:817
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:821
 msgid ""
 "Once compiled we can go into Godot and select our sprite node. On our "
 "``Node`` tab we find our new signal and link it up by pressing connect. "
@@ -817,15 +820,15 @@ msgstr ""
 "上，我们找到了我们的新信号并通过按连接将其链接起来。我们在主节点上添加了一个"
 "脚本并实现了这样的信号:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:828
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:832
 msgid "Every second we simply output our position to the console."
 msgstr "每一秒我们只需将我们的位置输出到控制台。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:832
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:835
 msgid "NativeScript 1.1 vs NativeScript 1.0"
 msgstr "原生脚本1.1与原生脚本1.0"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:834
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:837
 msgid ""
 "So far in our example above there doesn't seem to be a lot of difference "
 "between the old and new syntax. The class is defined slightly differently "
@@ -836,7 +839,7 @@ msgstr ""
 "有不同，我们不再使用 ``owner`` 成员来调用对象Godot一侧的方法。很多改进都隐藏"
 "在引擎盖下。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:839
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:842
 msgid ""
 "This example only deals with simple variables and simple methods. Especially "
 "once you start passing references to other objects or when you start calling "
@@ -846,11 +849,11 @@ msgstr ""
 "此示例仅处理简单变量和简单方法。特别是一旦开始传递对其他对象的引用，或者当您"
 "开始调用需要更复杂参数的方法时，NativeScript 1.1确实开始显示它的好处。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:845
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:848
 msgid "Next steps"
 msgstr "下一步"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:847
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:850
 msgid ""
 "The above is only a simple example, but we hope it shows you the basics. You "
 "can build upon this example to create full-fledged scripts to control nodes "
@@ -859,7 +862,7 @@ msgstr ""
 "以上只是一个简单的示例，但我们希望它向您展示基础知识。 您可以在此示例的基础上"
 "构建完整的脚本，以使用C++控制Godot中的节点。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:851
+#: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:854
 msgid ""
 "You should be able to edit and recompile the plugin while the Godot editor "
 "remains open; just rerun the project after the library has finished building."

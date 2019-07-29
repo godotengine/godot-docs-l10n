@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,19 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:4
 msgid "Exporting for Android"
-msgstr ""
+msgstr "Androidへのエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for it. "
 "The following steps detail what is needed to setup the SDK and the engine."
 msgstr ""
+"Android向けのエクスポートは、Godotをコンパイルするよりも要件が少ないです。次"
+"の手順では、SDKとエンジンのセットアップに必要なものについて詳しく説明します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
-msgstr ""
+msgstr "Android SDKをダウンロード"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
 msgid ""
@@ -39,7 +41,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid "Install OpenJDK or Oracle JDK"
-msgstr ""
+msgstr "OpenJDKまたはOracleJDKのインストール"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
 msgid ""
@@ -51,7 +53,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
 msgid "Create a debug.keystore"
-msgstr ""
+msgstr "デバッグキーストアを作成する"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:23
 msgid ""
@@ -60,16 +62,23 @@ msgid ""
 "or eclipse probably generated one for you (on Linux and macOS, you can find "
 "it in the ``~/.android`` directory)."
 msgstr ""
+"Androidでは、デバイスにインストールし、リリースされていないAPKを配布するため"
+"のデバッグキーストアファイルが必要です。以前にSDKを使用してプロジェクトをビル"
+"ドしたことがある場合は、antまたはeclipseによってプロジェクトが生成される可能"
+"性があります(LinuxとmacOSの場合、 ``〜/.android`` ディレクトリに見つけること"
+"ができます)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose:"
 msgstr ""
+"見つからない場合、または生成する必要がある場合は、JDKのkeytoolコマンドを使用"
+"します:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
 msgid "Make sure you have adb"
-msgstr ""
+msgstr "アンドロイドデバッグブリッジ(adb)を持っていることを確認します"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:38
 msgid ""
@@ -78,10 +87,14 @@ msgid ""
 "one (any) of the Android API levels for it to be installed in the SDK "
 "directory."
 msgstr ""
+"アンドロイドデバッグブリッジ(adb)は、Androidデバイスと通信するために使用され"
+"るコマンドラインツールです。SDKと共にインストールされますが、SDKディレクトリ"
+"にインストールするには、Android APIレベルの1つ(任意)をインストールする必要が"
+"あります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:43
 msgid "Setting it up in Godot"
-msgstr ""
+msgstr "Godotで設定する"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid ""
@@ -91,27 +104,27 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:51
 msgid "Scroll down to the section where the Android settings are located:"
-msgstr ""
+msgstr "Androidの設定が配置されているセクションまで下にスクロールします:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:55
 msgid "In that screen, the path to 3 files needs to be set:"
-msgstr ""
+msgstr "この画面では、3つのファイルへのパスを設定する必要があります:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
 msgid "The *adb* executable (adb.exe on Windows)"
-msgstr ""
+msgstr "*adb* 実行可能ファイル(Windows上のadb.exe)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
 msgid "The *jarsigner* executable (from JDK 6 or 8)"
-msgstr ""
+msgstr "*jarsigner* 実行可能ファイル (JDK6または8から)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:59
 msgid "The debug *keystore*"
-msgstr ""
+msgstr "デバッグ*キーストア*"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
 msgid "Once that is configured, everything is ready to export to Android!"
-msgstr ""
+msgstr "設定が完了すれば、Androidにエクスポートできるようになります!"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
 msgid "Exporting for Google Play Store"

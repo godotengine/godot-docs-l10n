@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,19 +19,21 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
-msgstr ""
+msgstr "インスタンス化 (続き)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
-msgstr ""
+msgstr "要約"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
 msgstr ""
+"インスタンス化には便利な使い方がたくさんあります。インスタンス化を使用する"
+"と、次のようになります:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
-msgstr ""
+msgstr "シーンを細分化し、管理を容易にする機能。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
@@ -42,10 +44,12 @@ msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
+"複雑なゲームフローやUIを整理して埋め込む方法 (Godotでは、UI要素もノードで"
+"す)。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:17
 msgid "Design language"
-msgstr ""
+msgstr "デザイン言語"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
 msgid ""
@@ -65,10 +69,14 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
+"Godotでゲームを作る場合、推奨されるアプローチは、MVCやエンティティ-関係図のよ"
+"うな最も一般的なデザインパターンを無視し、代わりにあなたのシーンをより自然な"
+"方法で考えることです。ゲームの中で目に見える要素、つまりプログラマーだけでな"
+"く誰もが命名できる要素を想像することから始めましょう。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:30
 msgid "For example, here's how a simple shooter game could be imagined:"
-msgstr ""
+msgstr "たとえば、単純なシューティングゲームを想像する方法を次に示します:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:34
 msgid ""
@@ -84,6 +92,9 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"このような図を作成したら、図にリストされている各要素に対してシーンを作成する"
+"ことをお勧めします。所有関係にはインスタンス化(コードで、またはエディタで直"
+"接)を使用します。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
 msgid ""
@@ -101,6 +112,8 @@ msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
+"アセットとネストされた要素が多いオープンワールド型ゲームの例をもう1つ見てみま"
+"しょう:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:53
 msgid ""
@@ -109,6 +122,9 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"部屋の要素を見てみましょう。そこから始めたとしましょう。家具(シーンも)の配置"
+"が異なる複数の異なる部屋のシーンを作成できます。後で、部屋を接続して内部を構"
+"成する家のシーンを作成できます。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:58
 msgid ""
@@ -116,6 +132,8 @@ msgid ""
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"その後、我々は多くのインスタンス化された家から作られた要塞のシーンを作ること"
+"ができました。その後、世界地図の地形に取り組み始め、要塞を追加しました。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:62
 msgid ""
@@ -123,6 +141,8 @@ msgid ""
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"後で、衛兵(及び他のNPC)を表すシーンを作成し、要塞に追加することもできます。そ"
+"の結果、ゲームの世界全体に間接的に追加されます。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:66
 msgid ""
@@ -133,10 +153,16 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"Godotを使用すると、より多くのシーンを作成してインスタンス化するだけでよいの"
+"で、このようにゲームを簡単に繰り返すことができます。 さらに、エディターのUI"
+"は、プログラマーにとっても非プログラマーにとっても使いやすいように設計されて"
+"います。 典型的なチーム開発プロセスには、2Dまたは3Dアーティスト、レベルデザイ"
+"ナー、ゲームデザイナー、アニメーターが関与します。これらはすべてエディターイ"
+"ンターフェイスで作業できます。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"
-msgstr ""
+msgstr "情報過多!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:75
 msgid ""
@@ -144,6 +170,9 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"たくさんの高度な情報が一度に出てきましたね。 ただし、このチュートリアルの重要"
+"な部分は、実際のプロジェクトでシーンとインスタンス化がどのように使用されてい"
+"るかを認識することです。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:79
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,127 +25,153 @@ msgstr "GDNative C示例"
 msgid "Introduction"
 msgstr "简介"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:8
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:9
+#, fuzzy
 msgid ""
 "This tutorial will introduce you to the bare minimum required to create "
 "GDNative modules. This should be your starting point into the world of "
-"GDNative, understanding the contents of this tutorial will help you in "
+"GDNative. Understanding the contents of this tutorial will help you in "
 "understanding all that is to come after this."
 msgstr ""
 "本教程将向您介绍创建GDNative模块所需的最低要求。 这应该是您进入GDNative世界的"
 "起点，了解本教程的内容将有助于您理解此后的所有内容。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:10
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:14
+#, fuzzy
 msgid ""
-"Before we begin, you can download the source code to the example object "
-"we'll be describing here by following this link: https://github.com/"
-"GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo"
+"Before we begin, you can download the source code to the example object we "
+"describe below in the `GDNative-demos repository <https://github.com/"
+"GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo>`_."
 msgstr ""
 "在开始之前，您可以通过以下链接将源代码下载到我们将在此处描述的示例对象: "
 "https://github.com/GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:13
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:18
+#, fuzzy
 msgid ""
 "This example project also contains a SConstruct file that makes compiling a "
-"little easier but in this tutorial we'll be doing things by hand."
+"little easier, but in this tutorial we'll be doing things by hand to "
+"understand the process."
 msgstr ""
 "此示例项目还包含一个SConstruct文件，使编译更容易，但在本教程中，我们将手动执"
 "行操作。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:15
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:22
+#, fuzzy
 msgid ""
 ":ref:`GDNative <class_GDNative>` can be used to create several types of "
-"additions to Godot, from PluginScript to ARVR interfaces. In this tutorial "
-"we are going to look at creating a :ref:`NativeScript <class_NativeScript>` "
-"module. NativeScript allows you to write logic in C or C++ in similar "
-"fashion as you would write a GDScript file. We'll be creating the C "
-"equivalent of this GDScript:"
+"additions to Godot, using interfaces such as :ref:`PluginScript "
+"<class_PluginScript>` or :ref:`ARVRInterfaceGDNative "
+"<class_ARVRInterfaceGDNative>`. In this tutorial we are going to look at "
+"creating a :ref:`NativeScript <class_NativeScript>` module. NativeScript "
+"allows you to write logic in C or C++ in a similar fashion as you would "
+"write a GDScript file. We'll be creating the C equivalent of this GDScript:"
 msgstr ""
 ":ref:`GDNative <class_GDNative>` 可用于创建Godot的几种类型的添加，从"
 "PluginScript到ARVR接口。 在本教程中，我们将介绍如何创建 :ref:`NativeScript "
 "<class_NativeScript>` 模块。 NativeScript允许您以与编写GDScript文件类似的方式"
 "在C或C++中编写逻辑。 我们将创建此GDScript的C等价物:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:29
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:43
+#, fuzzy
 msgid ""
-"We'll be writing separate tutorials on the other types of GDNative modules "
-"and explain what each of them is for as we go through them."
+"Future tutorials will focus on the other types of GDNative modules and "
+"explain when and how to use each of them."
 msgstr ""
 "我们将在其他类型的GDNative模块上编写单独的教程，并在我们完成它们时解释它们的"
 "用途。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:32
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:47
 msgid "Prerequisites"
 msgstr "先决条件"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:33
-msgid "Before we start you'll need a few things."
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:49
+#, fuzzy
+msgid "Before we start you'll need a few things:"
 msgstr "在我们开始之前，您需要一些东西。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:35
-msgid "A Godot 3.0 executable"
-msgstr "Godot 3.0可执行文件"
-
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:36
-msgid "A C compiler"
-msgstr "一个C编译器"
-
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:37
-msgid ""
-"A copy of this repository: https://github.com/GodotNativeTools/godot_headers"
-msgstr "此存储库的副本:https://github.com/GodotNativeTools/godot_headers"
-
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:39
-msgid ""
-"The first two pretty much speak for themselves. On Linux, you'll likely have "
-"a C compiler, on macOS, it's easiest to install Xcode from the Mac App Store "
-"and, on Windows, we've tested this with both MSVC 2015 and 2017."
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:51
+msgid "A Godot executable for your target version."
 msgstr ""
-"前两个几乎可以说明一切。 在Linux上，您可能有一个C编译器，在macOS上，最容易从"
-"Mac App Store安装Xcode，而在Windows上，我们已经用MSVC 2015和2017测试了它。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:41
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:52
 msgid ""
-"For number 3, we suggest that you create a folder somewhere that you use to "
-"store your code, open up a terminal and CD into that folder. Then execute:"
+"A C compiler. On Linux, install ``gcc`` or ``clang`` from your package "
+"manager. On macOS, you can install Xcode from the Mac App Store. On Windows, "
+"you can use Visual Studio 2015 or later, or MinGW-w64."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
+#, fuzzy
+msgid ""
+"A Git clone of the `godot_headers repository <https://github.com/"
+"GodotNativeTools/godot_headers>`_: these are the C headers for Godot's "
+"public API exposed to GDNative."
+msgstr ""
+"`godot_headers repository <https://github.com/GodotNativeTools/"
+"godot_headers>`_ 的副本，"
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:59
+#, fuzzy
+msgid ""
+"For the latter, we suggest that you create a dedicated folder for this "
+"GDNative example project, open a terminal in that folder and execute:"
 msgstr ""
 "对于3号，我们建议您在某处创建一个用于存储代码的文件夹，打开终端并将CD打开到该"
 "文件夹中。 然后执行:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:47
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:66
 msgid "This will download the required files into that folder."
 msgstr "这会将所需文件下载到该文件夹中。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:49
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:70
 msgid ""
-"On this repository you will now find different branches. As Godot evolves, "
-"so does GDNative. With the exception of one breaking change in ARVR between "
-"3.0 and 3.1, GDNative modules build for older versions of Godot will work "
-"with newer versions of Godot but not the other way around."
+"If you plan to use Git for your GDNative project, you can also add "
+"``godot_headers`` as a Git submodule."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:75
+#, fuzzy
+msgid ""
+"The ``godot_headers`` repository has different branches. As Godot evolves, "
+"so does GDNative. While we try to preserve compatibility between version, "
+"you should always build your GDNative module against headers matching the "
+"Godot stable branch (e.g. ``3.1``) and ideally actual release (e.g. ``3.1.1-"
+"stable``) that you use. GDNative modules built against older versions of the "
+"Godot headers *may* work with newer versions of the engine, but not the "
+"other way around."
 msgstr ""
 "在此存储库中，您将找到不同的分支。 随着Godot的进化，GDNative也是如此。 除了"
 "ARVR在3.0和3.1之间的一次重大变化之外，为旧版本的Godot构建的GDNative模块将与较"
 "新版本的Godot一起使用，但不是相反。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:51
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:83
+#, fuzzy
 msgid ""
-"The master branch of the ``godot_headers`` repository is kept in line with "
-"the master branch of Godot and thus contains the GDNative class and "
-"structure definitions that will work with the latest Godot master."
+"The ``master`` branch of the ``godot_headers`` repository is kept in line "
+"with the ``master`` branch of Godot and thus contains the GDNative class and "
+"structure definitions that will work with the latest development builds."
 msgstr ""
 "“godot_headers”库的主分支与Godot的主分支保持一致，因此包含GDNative类和结构定"
 "义，可与最新的Godot主机一起使用。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:53
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:87
 msgid ""
-"The 3.0 branch of the ``godot_headers`` repository contains the GDNative "
-"class and structure definitions that will work with Godot 3.0. You can clone "
-"this branch by executing:"
+"If you want to write a GDNative module for a stable version of Godot, look "
+"at the available Git tags (with ``git tags``) for the one matching your "
+"engine version. In the ``godot_headers`` repository, such tags are prefixed "
+"with ``godot-``, so you can e.g. checkout the ``godot-3.1.1-stable`` tag for "
+"use with Godot 3.1.1. In your cloned repository, you can do:"
 msgstr ""
-"``godot_headers``存储库的3.0分支包含可与Godot 3.0一起使用的GDNative类和结构定"
-"义。 您可以通过执行以下命令克隆此分支:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:59
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:97
+msgid ""
+"If a tag matching your stable release is missing for any reason, you can "
+"fall back to the matching stable branch (e.g. ``3.1``), which you would also "
+"check out with ``git checkout 3.1``."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:101
 msgid ""
 "If you are building Godot from source with your own changes that impact "
 "GDNative, you can find the updated class and structure definition in "
@@ -154,54 +180,59 @@ msgstr ""
 "如果您使用您自己的影响GDNative的更改从源代码构建Godot，您可以在"
 "``<godotsource> / modules / gdnative / include`中找到更新的类和结构定义"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:62
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:106
 msgid "Our C source"
 msgstr "我们的C源"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:63
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:108
+#, fuzzy
 msgid ""
-"Let's start by writing our main code. Ideally, we want to end up with a file "
-"structure that looks something like this:"
+"Let's start by writing our main code. Eventually, we want to end up with a "
+"file structure that looks along those lines:"
 msgstr ""
 "让我们从编写主代码开始。 理想情况下，我们希望最终得到一个类似于下面的文件结"
 "构:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:81
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:127
 #, fuzzy
 msgid ""
-"Open up Godot and create a new project called simple. This will create the "
-"``simple`` folder and ``project.godot`` file. Then manually create a ``bin`` "
-"and ``src`` subfolder in this folder."
+"Open up Godot and create a new project called \"simple\" alongside your "
+"``godot_headers`` Git clone. This will create the ``simple`` folder and "
+"``project.godot`` file. Then manually create ``bin`` and ``src`` subfolders "
+"in this folder."
 msgstr ""
 "打开Godot并创建一个名为simple的新项目。 这将创建简单的文件夹和project.godot文"
 "件。 然后在此文件夹中手动创建bin和src子文件夹。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:83
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:132
 #, fuzzy
 msgid ""
 "We're going to start by having a look at what our ``simple.c`` file "
 "contains. Now, for our example here we're making a single C source file "
 "without a header to keep things simple. Once you start writing bigger "
-"projects it is advisable you break your project up into multiple files. That "
+"projects it is advisable to break your project up into multiple files. That "
 "however falls outside of the scope of this tutorial."
 msgstr ""
 "我们首先看一下simple.c文件包含的内容。 现在，对于我们的示例，我们在制作一个没"
 "有标题的单个C源文件，以保持简单。 一旦开始编写更大的项目，建议您将项目分解为"
 "多个文件。 但是，这超出了本教程的范围。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:85
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:138
+#, fuzzy
 msgid ""
 "We'll be looking at the source code bit by bit so all the parts below should "
-"all be put together into one big file. I'll explain each section as we add "
-"it."
+"all be put together into one big file. Each section will be explained as we "
+"add it."
 msgstr ""
 "我们将逐位查看源代码，因此下面的所有部分都应该放在一个大文件中。 我会在添加它"
 "时解释每个部分。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:87
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:150
+#, fuzzy
 msgid ""
-"The below code includes our header files that we need and then defines two "
-"pointers to two different structs. GDNative supports a large collection for "
+"The above code includes the GDNative API struct header and a standard header "
+"that we will use further down for string operations. It then defines two "
+"pointers to two different structs. GDNative supports a large collection of "
 "functions for calling back into the main Godot executable. In order for your "
 "module to have access to these functions, GDNative provides your application "
 "with a struct containing pointers to all these functions."
@@ -210,7 +241,7 @@ msgstr ""
 "支持大型集合，用于回调主Godot可执行文件的函数。 为了让您的模块能够访问这些函"
 "数，GDNative为您的应用程序提供了一个包含指向所有这些函数的指针的结构。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:90
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:157
 msgid ""
 "To keep this implementation modular and easily extendable, the core "
 "functions are available directly through the \"core\" API struct, but "
@@ -220,7 +251,7 @@ msgstr ""
 "为了保持这种实现模块化和易于扩展，核心功能可直接通过“核心”API结构提供，但其他"
 "功能有自己的“GDNative结构”，可通过扩展访问。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:92
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:161
 msgid ""
 "In our example, we access one of these extension to gain access to the "
 "functions specifically needed for NativeScript."
@@ -228,7 +259,7 @@ msgstr ""
 "在我们的示例中，我们访问其中一个扩展，以获取对NativeScript特别需要的函数的访"
 "问权限。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:104
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:164
 msgid ""
 "A NativeScript behaves like any other script in Godot. Because the "
 "NativeScript API is rather low level, it requires the library to specify "
@@ -242,36 +273,38 @@ msgstr ""
 "NativeScript实例时，将调用库给定的构造函数。 当该实例被销毁时，将执行给定的析"
 "构函数。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:106
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:177
+#, fuzzy
 msgid ""
 "These are forward declarations for the functions we'll be implementing for "
 "our object. A constructor and destructor is needed. Additionally, the object "
-"will have a single method called get_data."
+"will have a single method called ``get_data``."
 msgstr ""
 "这些是我们将为对象实现的函数的前向声明。 需要构造函数和析构函数。 此外，该对"
 "象将有一个名为get_data的方法。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:115
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:181
+#, fuzzy
 msgid ""
 "Next up is the first of the entry points Godot will call when our dynamic "
-"library is loaded. These methods are all prefixed with Godot (you can change "
-"this later on) followed by their name. ``gdnative_init`` is a function that "
-"initialises our dynamic library. Godot will give it a pointer to a structure "
-"that contains various bits of information we may find useful amongst which "
-"the pointers to our API structures."
+"library is loaded. These methods are all prefixed with ``godot_`` (you can "
+"change this later on) followed by their name. ``gdnative_init`` is a "
+"function that initializes our dynamic library. Godot will give it a pointer "
+"to a structure that contains various bits of information we may find useful "
+"among which the pointers to our API structures."
 msgstr ""
 "接下来是Godot在加载动态库时会调用的第一个入口点。 这些方法都以Godot为前缀(您"
 "可以稍后更改)，然后是其名称。 ``gdnative_init``是一个初始化动态库的函数。 "
 "Godot会给它一个指向结构的指针，该结构包含我们可能会发现有用的各种信息，其中指"
 "向我们的API结构的指针。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:117
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:188
 msgid ""
 "For any additional API structures we need to loop through our extensions "
 "array and check the type of extension."
 msgstr "对于任何其他API结构，我们需要遍历扩展数组并检查扩展的类型。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:135
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:207
 msgid ""
 "Next up is ``gdnative_terminate`` which is called before the library is "
 "unloaded. Godot will unload the library when no object uses it anymore. "
@@ -282,22 +315,24 @@ msgstr ""
 "时，Godot将卸载库。 在这里，您可以进行任何需要清理的清理工作。 对于我们的示"
 "例，我们只是要清除我们的API指针。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:144
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:219
+#, fuzzy
 msgid ""
 "Finally we have ``nativescript_init`` which is the most important function "
 "we'll need today. This function will be called by Godot as part of loading a "
-"GDNative library and communicates back to Godot what objects we make "
-"available to Godot."
+"GDNative library and communicates back to the engine what objects we make "
+"available."
 msgstr ""
 "最后我们有 ``nativescript_init`` 这是我们今天需要的最重要的功能。 Godot会调用"
 "此函数作为加载GDNative库的一部分，并向Godot传达我们向Godot提供的对象。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:146
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:244
+#, fuzzy
 msgid ""
-"We first tell Godot which classes are implemented by calling "
+"We first tell the engine which classes are implemented by calling "
 "``nativescript_register_class``. The first parameter here is the handle "
 "pointer given to us. The second is the name of our object class. The third "
-"is the type of object in Godot that we 'inherit' from, this is not true "
+"is the type of object in Godot that we 'inherit' from; this is not true "
 "inheritance but it's close enough. Finally, our fourth and fifth parameters "
 "are descriptions for our constructor and destructor."
 msgstr ""
@@ -306,16 +341,18 @@ msgstr ""
 "们“继承”的对象类型，这不是真正的继承，但它足够接近。 最后，我们的第四个和第五"
 "个参数是我们的构造函数和析构函数的描述。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:148
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:251
+#, fuzzy
 msgid ""
 "We then tell Godot about our methods (well our one method in this case), by "
 "calling ``nativescript_register_method`` for each method of our class. In "
 "our case, that is just ``get_data``. Our first parameter is yet again our "
 "handle pointer. The second is again the name of the object class we're "
 "registering. The third is the name of our function as it will be known to "
-"GDScript. The fourth is our attributes setting. The fifth and final "
-"parameter is a description of which function to call when the method gets "
-"called."
+"GDScript. The fourth is our attributes setting (see "
+"``godot_method_rpc_mode`` enum in ``godot_headers/nativescript/"
+"godot_nativescript.h`` for possible values). The fifth and final parameter "
+"is a description of which function to call when the method gets called."
 msgstr ""
 "然后我们通过为我们类的每个方法调用 ``nativescript_register_method`` 来告诉"
 "Godot我们的方法(在这种情况下我们的方法)。 在我们的示例中，那只是 "
@@ -323,17 +360,19 @@ msgstr ""
 "象类的名称。 第三个是我们函数的名称，因为它将为GDScript所知。 第四是我们的属"
 "性设置。 第五个也是最后一个参数是调用方法时要调用的函数的描述。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:150
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:261
+#, fuzzy
 msgid ""
-"The descriptions contain the function pointers to the functions themselves. "
-"The other two fields in these structs are for specifying per-method "
-"userdata. The value in the ``method_data`` field will be passed on every "
-"function call as the ``p_method_data`` argument. This is useful to reuse one "
-"function for different methods on possibly multiple different script-"
-"classes. If the ``method_data`` value is a pointer to memory that needs to "
-"be freed, the ``free_func`` field can contain a pointer to a function that "
-"will free that memory. That free function gets called when the script itself "
-"(not instance!) gets unloaded (so usually at library-unload time)."
+"The description struct ``instance_method`` contains the function pointer to "
+"the function itself as first field. The other two fields in these structs "
+"are for specifying per-method userdata. The second is the ``method_data`` "
+"field which is passed on every function call as the ``p_method_data`` "
+"argument. This is useful to reuse one function for different methods on "
+"possibly multiple different script-classes. If the ``method_data`` value is "
+"a pointer to memory that needs to be freed, the third ``free_func`` field "
+"can contain a pointer to a function that will free that memory. That free "
+"function gets called when the script itself (not instance!) gets unloaded "
+"(so usually at library-unload time)."
 msgstr ""
 "描述包含函数本身的函数指针。 这些结构中的其他两个字段用于指定每个方法的"
 "userdata。 ``method_data``字段中的值将作为``p_method_data``参数在每次函数调用"
@@ -342,7 +381,7 @@ msgstr ""
 "包含一个指向一个释放该内存的函数的指针。 当脚本本身(不是实例！)被卸载时(通常"
 "在库卸载时)，调用该自由函数。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:173
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:271
 msgid ""
 "Now, it's time to start working on the functions of our object. First, we "
 "define a structure that we use to store the member data of an instance of "
@@ -351,7 +390,7 @@ msgstr ""
 "现在，是时候开始处理我们对象的功能了。 首先，我们定义一个结构，用于存储"
 "GDNative类实例的成员数据。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:181
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:281
 msgid ""
 "And then, we define our constructor. All we do in our constructor is "
 "allocate memory for our structure and fill it with some data. Note that we "
@@ -363,7 +402,7 @@ msgstr ""
 "些数据填充它。 请注意，我们使用Godot的内存函数，以便跟踪内存，然后将指针返回"
 "到我们的新结构。 如果实例化多个对象，则此指针将充当我们的实例标识符。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:183
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:287
 msgid ""
 "This pointer will be passed to any of our functions related to our object as "
 "a parameter called ``p_user_data``, and can both be used to identify our "
@@ -372,15 +411,16 @@ msgstr ""
 "该指针将作为名为 ``p_user_data`` 的参数传递给与我们的对象相关的任何函数，并且"
 "可以用于标识我们的实例并访问其成员数据。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:194
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:300
 msgid ""
 "Our destructor is called when Godot is done with our object and we free our "
 "instances' member data."
 msgstr "当Godot完成我们的对象时，我们会调用析构函数，并释放实例的成员数据。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:202
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:309
+#, fuzzy
 msgid ""
-"And finally, we implement our get_data function. Data is always sent and "
+"And finally, we implement our ``get_data`` function. Data is always sent and "
 "returned as variants so in order to return our data, which is a string, we "
 "first need to convert our C string to a Godot string object, and then copy "
 "that string object into the variant we are returning."
@@ -389,7 +429,7 @@ msgstr ""
 "数据，这是一个字符串，我们首先需要将我们的C字符串转换为Godot字符串对象，然后"
 "将该字符串对象复制到我们返回的变量中。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:204
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:330
 msgid ""
 "Strings are heap-allocated in Godot, so they have a destructor which frees "
 "the memory. Destructors are named ``godot_TYPENAME_destroy``. When a Variant "
@@ -405,242 +445,311 @@ msgstr ""
 "漏，因为ref-count永远不会为零，并且内存永远不会被释放。 返回的变体会被Godot自"
 "动销毁。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:206
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:339
+#, fuzzy
 msgid ""
-"(In more complex operations it can be confusing the keep track of which "
-"value needs to be deallocated and which does not. As a general rule: call "
-"godot_XXX_destroy when a C++ destructor would be called instead. The String "
-"destructor would be called in C++ after the Variant was created, so the same "
-"is necessary in C)"
+"In more complex operations it can be confusing the keep track of which value "
+"needs to be deallocated and which does not. As a general rule: call "
+"``godot_TYPENAME_destroy`` when a C++ destructor would be called instead. "
+"The String destructor would be called in C++ after the Variant was created, "
+"so the same is necessary in C."
 msgstr ""
 "(在更复杂的操作中，可能会混淆跟踪哪个值需要被释放，哪些不需要。一般来说:当调"
 "用C++析构函数时调用godot_XXX_destroy。字符串析构函数将在C++之后调用 Variant已"
 "创建，因此在C)中也是如此"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:208
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:345
 msgid "The variant we return is destroyed automatically by Godot."
 msgstr "我们返回的变体由Godot自动销毁。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:226
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:347
 msgid "And that is the whole source code of our module."
 msgstr "这就是我们模块的完整源代码。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:228
-#, fuzzy
-msgid ""
-"If you add a blank ``.gdignore`` file to the src folder, Godot will not try "
-"to import the compiler-generated temporary files."
-msgstr ""
-"如果将空白.gdignore文件添加到src文件夹，Godot将不会尝试导入编译器生成的临时文"
-"件。"
-
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:231
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:350
 msgid "Compiling"
 msgstr "开始编译"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:232
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:352
+#, fuzzy
 msgid ""
 "We now need to compile our source code. As mentioned our example project on "
-"GitHub contains a Scons configuration that does all the hard work for you "
+"GitHub contains a SCons configuration that does all the hard work for you, "
 "but for our tutorial here we are going to call the compilers directly."
 msgstr ""
 "我们现在需要编译我们的源代码。 如上所述，我们在GitHub上的示例项目包含一个"
 "Scons配置，它可以为您完成所有艰苦的工作，但是对于我们的教程，我们将直接调用编"
 "译器。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:234
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:356
+#, fuzzy
 msgid ""
-"Assuming you are sticking to the folder structure suggested above it is best "
-"to CD into the src subfolder in a terminal session and execute the commands "
-"from there. Make sure to create the bin folder before you proceed."
+"Assuming you are sticking to the folder structure suggested above, it is "
+"best to open a terminal session in the ``src`` folder and execute the "
+"commands from there. Make sure to create the ``bin`` folder before you "
+"proceed."
 msgstr ""
 "假设您坚持上面建议的文件夹结构，最好将CD放入终端会话中的src子文件夹并从那里执"
 "行命令。 确保在继续之前创建bin文件夹。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:236
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:360
 msgid "On Linux:"
 msgstr "在Linux上:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:243
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:367
 msgid "On macOS:"
 msgstr "在macOS上:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:250
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:374
 msgid "On Windows:"
 msgstr "在Windows上:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:257
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:383
+#, fuzzy
 msgid ""
-"on the Windows build you also end up with a libsimple.lib library. This is a "
-"library that you can compile into a project to provide access to the DLL. We "
-"get it as a bonus and we do not need it :) When exporting your game for "
-"release this file will be ignored."
+"On the Windows build you also end up with a ``libsimple.lib`` library. This "
+"is a library that you can compile into a project to provide access to the "
+"DLL. We get it as a byproduct and we do not need it :) When exporting your "
+"game for release this file will be ignored."
 msgstr ""
 "在Windows构建中，您最终还会得到一个libsimple.lib库。 这是一个可以编译到项目中"
 "以提供对DLL的访问的库。 我们得到它作为奖励，我们不需要它:)当导出您的游戏发布"
 "时，这个文件将被忽略。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:260
-msgid "Creating our GDNLIB file"
-msgstr "创建我们的DGNLIB文件"
-
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:261
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:390
+#, fuzzy
 msgid ""
-"With our module compiled we now need to create a gdnlib file for our module "
-"which we place alongside our dynamic libraries. This file tells Godot what "
-"dynamic libraries are part of our module and need to be loaded per platform. "
-"At the time of writing this tutorial work is still being done on making this "
-"configurable from within Godot so for now grab your favourite text editor, "
-"create a file called libsimple.gdnlib and add the following into this file:"
+"If you add a blank ``.gdignore`` file to the ``src`` folder, Godot will not "
+"try to import the compiler-generated files. This is necessary on Windows "
+"were compiled objects have the ``.obj`` extension, which is also a 3D model "
+"format supported by the engine."
 msgstr ""
-"编译完模块后，我们现在需要为我们的模块创建一个gdnlib文件，我们将它们与动态库"
-"放在一起。 这个文件告诉Godot什么动态库是我们模块的一部分，需要按平台加载。 在"
-"撰写本教程时，仍然需要完成从Godot中进行配置的工作，现在抓住您喜欢的文本编辑"
-"器，创建一个名为libsimple.gdnlib的文件，并将以下内容添加到此文件中:"
+"如果将空白.gdignore文件添加到src文件夹，Godot将不会尝试导入编译器生成的临时文"
+"件。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:283
-msgid "This file contains 3 sections."
-msgstr "该文件包含3个部分。"
-
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:285
-msgid ""
-"The **general** section contains some info that tells Godot how to use our "
-"module."
-msgstr "** general **部分包含一些信息，告诉Godot如何使用我们的模块。"
-
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:287
-msgid ""
-"If singleton is true our library is automatically loaded and a function "
-"called godot_singleton_init is called. We'll leave that for another tutorial."
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:396
+msgid "Creating the GDNativeLibrary (``.gdnlib``) file"
 msgstr ""
-"如果singleton为true，则自动加载库并调用名为godot_singleton_init的函数。 我们"
-"将把它留给另一个教程。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:289
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:398
 msgid ""
-"If load_once is true our library is loaded only once and each individual "
-"script that uses our library will use the same data. Any variable you define "
-"globally will be accessible from any instance of your object you create. If "
-"load_once is false a new copy of the library is loaded into memory each time "
-"a script access the library."
+"With our module compiled, we now need to create a corresponding :ref:"
+"`GDNativeLibrary <class_GDNativeLibrary>` resource with ``.gdnlib`` "
+"extension which we place alongside our dynamic libraries. This file tells "
+"Godot what dynamic libraries are part of our module and need to be loaded "
+"per platform."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:404
+msgid ""
+"We can use Godot to generate this file, so open the \"simple\" project in "
+"the editor."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:407
+msgid "Start by clicking the create resource button in the Inspector:"
+msgstr "首先单击属性面板中的创建资源按钮:"
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:411
+#, fuzzy
+msgid "And select ``GDNativeLibrary``:"
+msgstr "并选择NativeScript:"
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:415
+msgid ""
+"You should see a contextual editor appear in the bottom panel. Use the "
+"\"Expand Bottom Panel\" button in the bottom right to expand it to full "
+"height:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:421
+#, fuzzy
+msgid "General properties"
+msgstr "节点属性"
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:423
+msgid ""
+"In the Inspector, you have various properties to control loading the library."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:425
+#, fuzzy
+msgid ""
+"If *Load Once* is enabled, our library is loaded only once and each "
+"individual script that uses our library will use the same data. Any variable "
+"you define globally will be accessible from any instance of your object you "
+"create. If *Load Once* is disabled, a new copy of the library is loaded into "
+"memory each time a script accesses the library."
 msgstr ""
 "如果load_once为true，则我们的库只加载一次，并且使用我们库的每个单独脚本将使用"
 "相同的数据。 您可以从您创建的对象的任何实例访问您全局定义的任何变量。 如果"
 "load_once为false，则每次脚本访问库时，都会将新的库副本加载到内存中。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:291
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:431
+#, fuzzy
 msgid ""
-"The symbol_prefix is a prefix for our core functions. So the Godot in "
-"godot_nativescript_init for instance. If you use multiple GDnative libraries "
-"that you wish to statically link you'll have to use different prefixes. This "
-"again is a subject to dive into deeper in a separate tutorial, it is only "
-"needed at this time for deployment to iOS as this platform does not like "
-"dynamic libraries."
+"If *Singleton* is enabled, our library is automatically loaded and a "
+"function called ``godot_singleton_init`` is called. We'll leave that for "
+"another tutorial."
+msgstr ""
+"如果singleton为true，则自动加载库并调用名为godot_singleton_init的函数。 我们"
+"将把它留给另一个教程。"
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:435
+#, fuzzy
+msgid ""
+"The *Symbol Prefix* is a prefix for our core functions, such as ``godot_`` "
+"in ``godot_nativescript_init`` seen earlier. If you use multiple GDNative "
+"libraries that you wish to statically link, you will have to use different "
+"prefixes. This again is a subject to dive into deeper in a separate "
+"tutorial, it is only needed at this time for deployment to iOS as this "
+"platform does not like dynamic libraries."
 msgstr ""
 "symbol_prefix是我们核心功能的前缀。 所以Godot在godot_nativescript_init中就是"
 "这样。 如果您使用多个想要静态链接的GDnative库，则必须使用不同的前缀。 这又是"
 "一个深入了解单独教程的主题，此时只需要部署到iOS，因为这个平台不喜欢动态库。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:293
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:442
 msgid ""
-"The **entry** section tells us for each platform and feature combination "
-"which dynamic library has to be loaded. This also informs the exporter which "
-"files need to be exported when exporting to a specific platform."
+"*Reloadable* defines whether the library should be reloaded when the editor "
+"loses and gains focus, typically to pick up new or modified symbols from any "
+"change made to the library externally."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:447
+#, fuzzy
+msgid "Platform libraries"
+msgstr "平台名称。"
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:449
+msgid ""
+"The GDNativeLibrary editor plugin lets you configure two things for each "
+"platform and architecture that you aim to support."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:452
+#, fuzzy
+msgid ""
+"The *Dynamic Library* column (``entry`` section in the saved file) tells us "
+"for each platform and feature combination which dynamic library has to be "
+"loaded. This also informs the exporter which files need to be exported when "
+"exporting to a specific platform."
 msgstr ""
 "**条目**部分告诉我们每个平台和功能组合必须加载哪个动态库。 这还会通知导出器在"
 "导出到特定平台时需要导出哪些文件。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:295
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:457
+#, fuzzy
 msgid ""
-"The **dependencies** section tells Godot what other files need to be "
-"exported for each platform in order for our library to work. Say that your "
-"GDNative module uses another DLL to implement functionality from a 3rd party "
-"library, this is where you list that DLL."
+"The *Dependencies* column (also ``dependencies`` section) tells Godot what "
+"other files need to be exported for each platform in order for our library "
+"to work. Say that your GDNative module uses another DLL to implement "
+"functionality from a 3rd party library, this is where you list that DLL."
 msgstr ""
 "** dependencies **部分告诉Godot每个平台需要导出哪些其他文件才能使我们的库工"
 "作。 假设您的GDNative模块使用另一个DLL来实现第三方库的功能，这是您列出该DLL的"
 "位置。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:298
-msgid "Putting it all together"
-msgstr "把它们放在一起"
-
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:299
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:462
 msgid ""
-"Now that we should have a working GDNative library it is time to fire up "
-"Godot and use it. Open up the sample project if you haven't left it open "
-"after creating the project all the way at the beginning of this tutorial."
+"For our example, we only built libraries for Linux, macOS and/or Windows, so "
+"you can link them in the relevant fields by clicking the folder button. If "
+"you built all three libraries, you should have something like this:"
 msgstr ""
-"现在我们应该有一个有效的GDNative库，现在是时候启动Godot并使用它了。 如果在本"
-"教程开始时一直创建项目后没有将其打开，请打开示例项目。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:302
-msgid "Creating our GDNS file"
-msgstr "创建我们的GDNS文件"
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:469
+#, fuzzy
+msgid "Saving the resource"
+msgstr "获取资源"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:303
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:471
 msgid ""
-"With our GDNLIB file we've told Godot how to load our library, now we need "
-"to tell it about our \"Simple\" object class. This we do by creating a GDNS "
-"resource file."
+"We can then save our GDNativeLibrary resource as ``bin/libsimple.gdnlib`` "
+"with the Save button in the Inspector:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:476
+msgid ""
+"The file is saved in a text-based format and should have contents similar to "
+"this:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:503
+msgid "Creating the NativeScript (``.gdns``) file"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:505
+#, fuzzy
+msgid ""
+"With our ``.gdnlib`` file we've told Godot how to load our library, now we "
+"need to tell it about our \"Simple\" object class. We do this by creating a :"
+"ref:`NativeScript <class_NativeScript>` resource file with ``.gdns`` "
+"extension."
 msgstr ""
 "通过我们的GDNLIB文件，我们告诉Godot如何加载我们的库，现在我们需要告诉它我们"
 "的“简单”对象类。 我们这样做是通过创建GDNS资源文件。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:305
-msgid "Start by clicking the create resource button in the Inspector:"
-msgstr "首先单击属性面板中的创建资源按钮:"
-
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:309
-msgid "And select NativeScript:"
-msgstr "并选择NativeScript:"
-
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:313
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:509
 msgid ""
-"Press Create, now the inspector will show a few fields we need to enter. In "
-"Class Name we enter \"SIMPLE\" which is the object class name we used in our "
-"C source when calling godot_nativescript_register_class. We also need to "
-"select our GDNLIB file by clicking on Library and selecting Load:"
+"Like done for the GDNativeLibrary resource, click the button to create a new "
+"resource in the Inspector and select ``NativeScript``:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:514
+#, fuzzy
+msgid ""
+"The inspector will show a few properties that we need to fill. As *Class "
+"Name* we enter \"Simple\" which is the object class name that we declared in "
+"our C source when calling ``godot_nativescript_register_class``. We also "
+"need to select our ``.gdnlib`` file by clicking on *Library* and selecting "
+"*Load*:"
 msgstr ""
 "按Create，现在属性面板将显示我们需要输入的几个字段。 在Class Name中，我们输"
 "入“SIMPLE”，这是我们在调用godot_nativescript_register_class时在C源代码中使用"
 "的对象类名。 我们还需要通过单击Library并选择Load来选择我们的GDNLIB文件:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:317
-msgid "Finally click on the save icon and save this as bin/simple.gdns:"
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:521
+#, fuzzy
+msgid "Finally click on the save icon and save this as ``bin/simple.gdns``:"
 msgstr "最后点击保存图标并将其另存为bin / simple.gdns:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:321
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:525
+#, fuzzy
 msgid ""
-"Now it's time to build our scene. Add a control node to your scene as your "
-"root and call it main. Then add a button and a label as subnodes. Place them "
-"somewhere nice on screen and give your button a name."
+"Now it's time to build our scene. Add a Control node to your scene as your "
+"root and call it ``main``. Then add a Button and a Label as child nodes. "
+"Place them somewhere nice on screen and give your button a name."
 msgstr ""
 "现在是时候建立我们的场景了。 将一个控制节点作为根添加到场景中并将其命名为"
 "main。 然后添加一个按钮和一个标签作为子节点。 将它们放在屏幕上的好地方，并为"
 "您的按钮命名。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:325
-msgid "Select the control node and create a script for the control node:"
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:531
+#, fuzzy
+msgid "Select the control node and attach a script to it:"
 msgstr "选择控制节点并为控制节点创建脚本:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:329
-msgid "Next link up the pressed signal on the button to your script:"
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:535
+#, fuzzy
+msgid "Next link up the ``pressed`` signal on the button to your script:"
 msgstr "接下来将按钮上的按下信号链接到您的脚本:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:333
-msgid "Don't forget to save your scene, call it main.tscn."
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:539
+#, fuzzy
+msgid "Don't forget to save your scene, call it ``main.tscn``."
 msgstr "不要忘记保存您的场景，称之为main.tscn。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:335
-msgid "Now we can implement our main.gd code:"
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:541
+#, fuzzy
+msgid "Now we can implement our ``main.gd`` code:"
 msgstr "现在我们可以实现main.gd代码:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:347
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:553
+#, fuzzy
 msgid ""
 "After all that, our project should work. The first time you run it Godot "
-"will ask you what your main scene is and you select your main.tscn file and "
-"presto:"
+"will ask you what your main scene is and you select your ``main.tscn`` file "
+"and presto:"
 msgstr ""
 "毕竟，我们的项目应该有效。 第一次运行时，Godot将询问您的主要场景是什么，然后"
 "选择main.tscn文件并预先输入:"

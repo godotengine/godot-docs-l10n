@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:4
 msgid "Exporting for the Web"
-msgstr ""
+msgstr "Webのエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:6
 msgid ""
@@ -80,7 +80,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
 msgid "Limitations"
-msgstr ""
+msgstr "制限事項"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
 msgid ""
@@ -89,10 +89,13 @@ msgid ""
 "list of limitations you should be aware of when porting a Godot game to the "
 "web."
 msgstr ""
+"セキュリティとプライバシーの理由から、ネイティブ プラットフォームで簡単に動作"
+"する多くの機能は、Web プラットフォーム上でより複雑になります。Godotゲームを"
+"Webに移植する際に注意する必要がある制限事項の一覧を次に示します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
 msgid "Using cookies for data persistence"
-msgstr ""
+msgstr "データ永続化のためのクッキーの使用"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:50
 msgid ""
@@ -108,10 +111,13 @@ msgid ""
 "``user://`` file system is persistent, but can give false positives in some "
 "cases."
 msgstr ""
+"``OS.is_userfs_persistent()`` というメソッドを使うと、 ``user://`` ファイルシ"
+"ステムが永続的かどうかをチェックすることができますが、場合によっては誤検出す"
+"ることもあります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
 msgid "Full screen and mouse capture"
-msgstr ""
+msgstr "フルスクリーンとマウスキャプチャ"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
 msgid ""
@@ -157,7 +163,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
-msgstr ""
+msgstr "``StreamPeer`` へのアクセスおよび変更はできません"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
 msgid "Threaded/Blocking mode is not available"
@@ -167,14 +173,15 @@ msgstr ""
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr ""
+"フレームごとに複数回進行できないため、ループ内のポーリングはフリーズしま"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
 msgid "No chunked responses"
-msgstr ""
+msgstr "チャンク応答なし"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
 msgid "Host verification cannot be disabled"
-msgstr ""
+msgstr "ホスト検証を無効にできません"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
 msgid ""
@@ -184,7 +191,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid "Exported ``.html`` file must not be reused"
-msgstr ""
+msgstr "エクスポートされた ``.html`` ファイルを再利用することはできません"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
 msgid ""
@@ -192,6 +199,9 @@ msgid ""
 "file** specifically for the given export options. It must not be reused in "
 "further exports."
 msgstr ""
+"エクスポート時に、特定のエクスポートオプション用に**生成されたHTMLファイル**"
+"に複数のテキスト プレースホルダが置き換えられます。以後のエクスポートで再利用"
+"してはなりません。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
 msgid "Boot splash is not displayed"
@@ -206,16 +216,16 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
 msgid "Unimplemented functionality"
-msgstr ""
+msgstr "実装されていない機能"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:111
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
-msgstr ""
+msgstr "現在、HTML5 プラットフォームでは次の機能を使用できません:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
 msgid "Threads"
-msgstr ""
+msgstr "スレッド"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
 msgid "GDNative"
@@ -227,7 +237,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
 msgid "Clipboard synchronisation between engine and operating system"
-msgstr ""
+msgstr "エンジンとオペレーティングシステム間のクリップボード同期"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
 msgid ""
@@ -245,7 +255,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 msgid "Serving the files"
-msgstr ""
+msgstr "ファイルの提供"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:127
 msgid ""
@@ -260,6 +270,9 @@ msgid ""
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
 "never depended on by default."
 msgstr ""
+"生成された ``.html`` ファイルは、Apacheサーバーで ``DirectoryIndex`` として使"
+"用でき、いつでも ``index.html`` などの名前に変更できますが、その名前はデフォ"
+"ルトでは全く依存しません。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:135
 msgid ""
@@ -299,10 +312,13 @@ msgid ""
 "WebAssembly module compresses particularly well, down to around a quarter of "
 "its original size with gzip compression."
 msgstr ""
+"サーバー側の圧縮でファイルを配信することは、通常はサイズが大きい ``.pck`` "
+"ファイルと ``.wasm`` ファイルで特に推奨されます。WebAssemblyモジュールは、"
+"gzip圧縮によって元のサイズの約4分の1にまで圧縮されています。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
 msgid "Export options"
-msgstr ""
+msgstr "エクスポートオプション"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:163
 msgid ""
@@ -326,7 +342,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:177
 msgid "Calling JavaScript from script"
-msgstr ""
+msgstr "スクリプトからJavaScriptを呼び出す"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
 msgid ""
@@ -342,6 +358,8 @@ msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
 msgstr ""
+"最後のJavaScriptステートメントの値はGDScriptの値に変換され、特定の状況下では "
+"``eval()`` によって返されます:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
@@ -363,7 +381,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid "Any other JavaScript value is returned as ``null``."
-msgstr ""
+msgstr "その他の JavaScriptの値は ``null`` として返されます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:207
 msgid ""
@@ -385,3 +403,6 @@ msgid ""
 "specifies whether to execute the code in the global execution context, "
 "defaulting to ``false`` to prevent polluting the global namespace::"
 msgstr ""
+"``eval`` メソッドはグローバルな実行コンテキストでコードを実行するかどうかを指"
+"定する2番目のオプションのブール引数も受け入れます。デフォルトではグローバルな"
+"名前空間を汚染しないように ``false`` になります:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:4
 msgid "Exporting for iOS"
-msgstr ""
+msgstr "iOS用のエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:6
 msgid ""
@@ -27,31 +27,40 @@ msgid ""
 "build and deploy to an iOS device, build a release for the App Store, and do "
 "everything else you can normally do with Xcode."
 msgstr ""
+"これらは、XcodeでGodotプロジェクトを読み込む手順です。これにより、iOS デバイ"
+"スにビルドして展開し、AppStore用のリリースをビルドし、Xcodeで通常実行できるそ"
+"の他のすべてを実行できます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:11
 msgid "Requirements"
-msgstr ""
+msgstr "必要条件"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:13
 msgid ""
 "You must export for iOS from a computer running macOS with Xcode installed."
 msgstr ""
+"XcodeがインストールされているmacOSを実行しているコンピュータからiOS用にエクス"
+"ポートする必要があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:14
 msgid ""
 "Download the Godot export templates. Use the Godot menu: Editor > Manage "
 "Export Templates"
 msgstr ""
+"Godotエクスポートテンプレートをダウンロードします。Godotメニューを使用する: "
+"エディタ > エクスポート テンプレートの管理"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:17
 msgid "Export a Godot project to Xcode"
-msgstr ""
+msgstr "GodotプロジェクトをXcodeにエクスポートする"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:19
 msgid ""
 "In the Godot editor, open the **Export** window from the **Project** menu. "
 "When the Export window opens, click **Add..** and select **iOS**."
 msgstr ""
+"Godotエディタで、**Project**メニューから**Export**ウィンドウを開きます。エク"
+"スポートウィンドウが開いたら、 **Add..** をクリックし、**iOS**を選択します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:22
 msgid ""
@@ -61,37 +70,42 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:25
 msgid "In the **Application** category * **App Store Team ID**"
-msgstr ""
+msgstr "**Application** カテゴリの **App Store Team ID**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:27
 msgid "Everything in the **Required Icons** category"
-msgstr ""
+msgstr "**Required Icons** カテゴリのすべて"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:28
 msgid "Everything in the **Landscape Launch Screens** category"
-msgstr ""
+msgstr "**Landscape Launch Screens***のすべて"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:29
 msgid "Everything in the **Portrait Launch Screens** category"
-msgstr ""
+msgstr "**Portrait Launch Screens**カテゴリのすべて"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:31
 msgid ""
 "After you click **Export Project**, there are still two important options "
 "left:"
 msgstr ""
+"**Export Project**をクリックした後、2つの重要なオプションが残っています:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:33
 msgid ""
 "**Path** is an empty folder that will contain the exported Xcode project "
 "files."
 msgstr ""
+"**Path** は、エクスポートされたXcodeプロジェクトファイルを含む空のフォルダで"
+"す。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:34
 msgid ""
 "**File** will be the name of the Xcode project and several project specific "
 "files and directories."
 msgstr ""
+"**File** は、Xcodeプロジェクトといくつかのプロジェクト固有のファイルとディレ"
+"クトリの名前になります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:38
 msgid ""
@@ -99,6 +113,9 @@ msgid ""
 "project's name. When you see **exported_xcode_project_name** in the "
 "following steps, replace it with the name you used instead."
 msgstr ""
+"このチュートリアルでは、 **exported_xcode_project_name** を使用しますが、プロ"
+"ジェクトの名前を使用します。次の手順で **exported_xcode_project_name** が表示"
+"された場合は、代わりに使用した名前に置き換えます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:42
 msgid ""
@@ -108,43 +125,51 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:45
 msgid "When the export completes, the output folder should look like this:"
-msgstr ""
+msgstr "エクスポートが完了すると、出力フォルダは次のようになります:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:49
 msgid ""
 "Opening **exported_xcode_project_name.xcodeproj** lets you build and deploy "
 "like any other iOS app."
 msgstr ""
+"**exported_xcode_project_name.xcodeproj** を開くと、他のiOSアプリと同様にビル"
+"ドおよびデプロイできます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:53
 msgid "Active development considerations"
-msgstr ""
+msgstr "積極的な開発に関する考慮事項"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:55
 msgid ""
 "The above method creates an exported project that you can build for release, "
 "but you have to re-export every time you make a change in Godot."
 msgstr ""
+"上記の方法では、リリース用にビルドできるエクスポートされたプロジェクトを作成"
+"しますが、Godotを変更するたびに再エクスポートする必要があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:58
 msgid ""
 "While developing, you can speed this process up by linking your Godot "
 "project files directly into your app."
 msgstr ""
+"開発中は、Godotプロジェクトファイルをアプリに直接リンクすることで、このプロセ"
+"スを高速化できます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:61
 msgid "In the following example:"
-msgstr ""
+msgstr "次の例を参照してください:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:63
 msgid ""
 "**exported_xcode_project_name** is the name of the exported iOS application "
 "(as above)."
 msgstr ""
+"**exported_xcode_project_name** は、エクスポートされたiOSアプリケーションの名"
+"前です(上記のように)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:64
 msgid "**godot_project_to_export** is the name of the Godot project."
-msgstr ""
+msgstr "**godot_project_to_export** はGodotプロジェクトの名前です。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:67
 msgid "Steps to link a Godot project folder to Xcode"
@@ -153,10 +178,12 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:69
 msgid "Start from an exported iOS project (follow the steps above)."
 msgstr ""
+"エクスポートされたiOSプロジェクトから開始します (上記の手順に従います)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:70
 msgid "In Finder, drag the Godot project folder into the Xcode file browser."
 msgstr ""
+"Finderで、GodotプロジェクトフォルダをXcodeファイルブラウザにドラッグします。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:74
 msgid ""
@@ -164,14 +191,20 @@ msgid ""
 "means you will be able to continue to edit your Godot project in its current "
 "location."
 msgstr ""
+"3. ダイアログで**Create folder references** が選択されていることを確認しま"
+"す。つまり、現在の場所で Godot プロジェクトを編集し続けることができるというこ"
+"とです。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:79
 msgid "See the **godot_project_to_export** folder in the Xcode file browser."
 msgstr ""
+"Xcodeファイルブラウザの **godot_project_to_export** フォルダを参照してくださ"
+"い。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:80
 msgid "Delete **exported_xcode_project_name.pck** from the Xcode project."
 msgstr ""
+"Xcodeプロジェクトから **exported_xcode_project_name.pck** を削除します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:84
 msgid ""
@@ -185,13 +218,17 @@ msgid ""
 "That's it! You can now edit your project in the Godot editor and build it in "
 "Xcode when you want to run it on a device."
 msgstr ""
+"以上です!Godotエディタでプロジェクトを編集し、デバイス上で実行するときにXcode"
+"でビルドできるようになりました。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:94
 msgid "Services for iOS"
-msgstr ""
+msgstr "iOS向けサービス"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:96
 msgid ""
 "Special iOS services can be used in Godot. Check out the :ref:"
 "`doc_services_for_ios` page."
 msgstr ""
+"特別なiOSサービスをGodotで使用することができます。:"
+"ref:'doc_services_for_ios' ページを確認してください。"

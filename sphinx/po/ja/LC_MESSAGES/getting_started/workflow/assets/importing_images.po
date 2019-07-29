@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,12 +31,17 @@ msgid ""
 "imported. The reason behind this is the large amount of configuration "
 "parameters that image files can be imported with."
 msgstr ""
+"Godot 3+ では、イメージファイルはネイティブリソースではなくなり、インポートす"
+"る必要があります。その背景には、イメージファイルをインポートできる構成パラ"
+"メータが大量に含まれることが理由です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:13
 msgid ""
 "This small tutorial will explain what these parameters are and how to best "
 "make use of them."
 msgstr ""
+"この小さなチュートリアルでは、これらのパラメータが何であるか、およびそれらを"
+"最大限に活用する方法について説明します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:17
 msgid "Importing textures"
@@ -48,10 +53,13 @@ msgid ""
 "stored in video memory and can't be accessed directly. This is what makes "
 "drawing them efficient."
 msgstr ""
+"Godotのデフォルトのアクションは、イメージをテクスチャとして読み込む方法です。"
+"テクスチャはビデオメモリに格納され、直接アクセスすることはできません。これが"
+"それらを効率的に描く理由です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:23
 msgid "Import options are vast:"
-msgstr ""
+msgstr "インポートオプションは豊富です:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:28
 msgid "Detect 3D"
@@ -81,10 +89,13 @@ msgid ""
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
+"画像は、ゲーム内で最大のアセットの 1 つです。それらを効率的に処理するには、圧"
+"縮する必要があります。Godot は、ユースケースに応じて、いくつかの圧縮方法を提"
+"供します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:40
 msgid "Compress Mode"
-msgstr ""
+msgstr "圧縮モード"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
 msgid ""
@@ -92,6 +103,9 @@ msgid ""
 "File on disk is reduced and video memory usage is also reduced considerably. "
 "For 3D, it may present unwanted artifacts, though."
 msgstr ""
+"VRAM圧縮:これは3Dアセットの最も一般的な圧縮モードです。ディスク上のファイルが"
+"削減され、ビデオメモリの使用量も大幅に削減されます。ただし、3Dの場合は、不要"
+"なアーティファクトが表示される場合があります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
 msgid ""
@@ -100,6 +114,9 @@ msgid ""
 "decent. It will use considerably more amount of video memory than VRAM, "
 "though."
 msgstr ""
+"ロスレス圧縮:これは2Dアセットで最も一般的な圧縮です。これは、人為的な影響を受"
+"けずにアセットを表示するものであり、ディスク圧縮は適切です。ただし、VRAMより"
+"もかなり多くのビデオメモリを使用します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
 msgid ""
@@ -107,18 +124,23 @@ msgid ""
 "can be a great choice. It has some artifacting, but less than VRAM and the "
 "file size is almost a tenth of Lossless."
 msgstr ""
+"非可逆圧縮:大きな2Dアセットを多く使用するゲームでは、非可逆圧縮が適していま"
+"す。多少の不自然さはありますが、VRAMより小さく、ファイルサイズはロスレスの10"
+"分の1程度です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid ""
 "Uncompressed: Only useful for formats that can't be compressed (like, raw "
 "float)."
-msgstr ""
+msgstr "圧縮なし:圧縮できない書式 (生の浮動小数点型など) にのみ役立ちます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages ( |good| = Best, |bad| =Worst ):"
 msgstr ""
+"この表では、4つのオプションのそれぞれについて、それぞれの長所と短所と共に説明"
+"しています(|良い|=ベスト、|悪い|=最悪):"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Uncompressed"
@@ -163,15 +185,15 @@ msgstr "ディスク上のサイズ"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|bad| Large"
-msgstr ""
+msgstr "|悪い|大きい"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|regular| Small"
-msgstr ""
+msgstr "|普通|小さい"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|good| Very Small"
-msgstr ""
+msgstr "|良い|非常に小さい"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "Memory Usage"
@@ -179,7 +201,7 @@ msgstr "メモリ使用量"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|good| Small"
-msgstr ""
+msgstr "|良い|小さい"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
 msgid "Performance"
@@ -188,12 +210,12 @@ msgstr "パフォーマンス"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "|regular| Normal"
-msgstr ""
+msgstr "|普通|通常"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "|good| Fast"
-msgstr ""
+msgstr "|良い|高速"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "Quality Loss"
@@ -201,15 +223,15 @@ msgstr "品質損失"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "|good| None"
-msgstr ""
+msgstr "|良い|なし"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "|regular| Slight"
-msgstr ""
+msgstr "|普通|わずか"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "|bad| Moderate"
-msgstr ""
+msgstr "|悪い|中程度"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "Load Time"
@@ -217,7 +239,7 @@ msgstr "読み込み時間"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "|bad| Slow"
-msgstr ""
+msgstr "|悪い|遅い"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:76
 msgid "HDR Mode"
@@ -240,7 +262,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Normal Map"
-msgstr ""
+msgstr "通常のマップ"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,6 +199,10 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Le classi, le variabili export e i metodi usano PascalCase, i campi "
+"privati usano _camelCase, le variabili locali e i parametri usano camelCase "
+"(Vedi :ref:`doc_c_sharp_styleguide`). Bisogna dare attenzione a scrivere il "
+"nome dei metodi correttamente quando si connettono i segnali."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:97
 msgid "Sprite animation"
@@ -269,7 +273,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:138
 msgid "Moving the player"
-msgstr ""
+msgstr "Muovere il giocatore"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:140
 msgid ""
@@ -482,7 +486,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:343
 msgid "Choosing animations"
-msgstr ""
+msgstr "Scegliere le animazioni"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:345
 msgid ""
@@ -522,6 +526,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:419
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
 msgstr ""
+"Aggiungere quanto di seguito in cima allo script, dopo ``extends Area2d``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:433
 msgid ""
@@ -548,10 +553,13 @@ msgid ""
 "you can also give the name of an existing function that you want to link the "
 "signal to."
 msgstr ""
+"Quando connetti un segnale, invece che Godot crei una funzione per te, puoi "
+"assegnare il nome di una funzione già esistente che vuoi connettere al "
+"segnale."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:453
 msgid "Add this code to the function:"
-msgstr ""
+msgstr "Aggiungi questo codice alla funzione:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:472
 msgid ""
@@ -943,7 +951,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:893
 msgid ""
-"Click on the ``ScoreLabel`` and type a number into the _Text_ field in the "
+"Click on the ``ScoreLabel`` and type a number into the *Text* field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
 "well. There is a font file included in the game assets called \"Xolonium-"
 "Regular.ttf\". To use this font, do the following for each of the three "
@@ -1237,11 +1245,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1216
 msgid ""
-"In the ``HUD`` scene, select the ``StartButton`` and find its _Shortcut_ "
+"In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
-"\"Shortcut\" item. A second _Shortcut_ property will appear. Select \"New "
+"\"Shortcut\" item. A second *Shortcut* property will appear. Select \"New "
 "InputEventAction\" and click the new \"InputEvent\". Finally, in the "
-"_Action_ property, type the name \"ui_select\". This is the default input "
+"*Action* property, type the name ``ui_select``. This is the default input "
 "event associated with the spacebar."
 msgstr ""
 

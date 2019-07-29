@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,15 +40,17 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:15
 msgid "Loading files from a different directory"
-msgstr ""
+msgstr "別のディレクトリからファイルを読み込む"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:16
 msgid "Loading a ``.zip`` file instead of a ``.pck`` file as main pack"
 msgstr ""
+"``.pck`` ファイルの代わりに ``.zip`` ファイルをメインパックとして読み込む"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:17
 msgid "Loading engine files from a different directory than the main pack file"
 msgstr ""
+"メインパックファイルとは異なるディレクトリからエンジンファイルを読み込む"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:18
 msgid ""
@@ -60,12 +62,16 @@ msgid ""
 "Loading some extra files before the engine starts, so they are available in "
 "the file system later"
 msgstr ""
+"エンジンが起動する前に追加ファイルをロードして、後でファイル・システムで使用"
+"できるようにする"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:21
 msgid ""
 "Passing custom \"command line\" arguments, e.g. ``-s`` to start a MainLoop "
 "script"
 msgstr ""
+"MainLoopスクリプトを起動するためにカスタム \"コマンド ライン\" 引数を渡す場"
+"合 ( ``-s`` など)"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:23
 msgid ""
@@ -78,7 +84,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:29
 msgid "Placeholder substitution"
-msgstr ""
+msgstr "プレースホルダ置換"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:31
 msgid ""
@@ -88,7 +94,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
 msgid "Placeholder"
-msgstr ""
+msgstr "プレースホルダ"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:35
 msgid "Substituted by"
@@ -103,6 +109,8 @@ msgid ""
 "Basename of exported files without suffixes, e.g. ``game`` when exporting "
 "``game.html``"
 msgstr ""
+"拡張子のないエクスポートされたファイルのベース名、例えば `` game.html`` をエ"
+"クスポートする際の `` game``"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
 msgid "``$GODOT_DEBUG_ENABLED``"
@@ -110,7 +118,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
 msgid "``true`` if debugging, ``false`` otherwise"
-msgstr ""
+msgstr "デバッグする場合は ``true`` 、それ以外の場合は ``false``"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
 msgid "``$GODOT_HEAD_INCLUDE``"
@@ -119,7 +127,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
 msgid ""
 "Custom string to include just before the end of the HTML ``<head>`` element"
-msgstr ""
+msgstr "HTMLの `` <head> `` 要素の直前に含めるカスタム文字列"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:46
 msgid ""
@@ -127,18 +135,25 @@ msgid ""
 "file defines a global ``Engine`` object used to start the engine, :ref:`see "
 "below <doc_javascript_engine_object>` for details."
 msgstr ""
+"HTMLファイルは、JavaScriptファイル ``$GODOT_BASENAME.js`` を評価する必要があ"
+"ります。このファイルは、エンジンの起動に使用されるグローバル ``Engine`` オブ"
+"ジェクトを定義します:ref:`下記参照 <doc_javascript_engine_object>` 。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:50
 msgid ""
 "The boot splash image is exported as ``$GODOT_BASENAME.png`` and can be used "
 "e.g. in ``<img />`` elements."
 msgstr ""
+"ブートスプラッシュイメージは ``$GODOT_BASENAME.png`` としてエクスポートさ"
+"れ、 ``<img />`` 要素などで使用できます。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:53
 msgid ""
 "``$GODOT_DEBUG_ENABLED`` can be useful to optionally display e.g. an output "
 "console or other debug tools."
 msgstr ""
+"``$GODOT_DEBUG_ENABLED`` は、出力コンソールやその他のデバッグ ツールを必要に"
+"応じて表示する場合に便利です。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:56
 msgid ""
@@ -148,13 +163,15 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:62
 msgid "The ``Engine`` object"
-msgstr ""
+msgstr "``Engine`` オブジェクト"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:64
 msgid ""
 "The JavaScript global object ``Engine`` is defined by ``$GODOT_BASENAME.js`` "
 "and serves as an interface to the engine start-up process."
 msgstr ""
+"JavaScriptグローバルオブジェクト ``Engine`` は ``$GODOT_BASENAME.js`` によっ"
+"て定義され、エンジンの起動プロセスへのインターフェイスとして機能します。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:67
 msgid ""
@@ -235,7 +252,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:120
 msgid "Starting an ``Engine`` instance"
-msgstr ""
+msgstr "``Engine`` インスタンスの開始"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:122
 msgid ":js:class:`Engine` also acts a class:"
@@ -353,6 +370,8 @@ msgid ""
 "If the engine isn't loaded yet, the base path of the passed URL will be used "
 "to load the engine."
 msgstr ""
+"エンジンがまだ読み込まれていない場合は、渡されたURLの基本パスを使用してエンジ"
+"ンを読み込みます。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:196
 msgid ""
@@ -372,13 +391,15 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:206
 msgid "Configuring start-up behaviour"
-msgstr ""
+msgstr "起動時の動作の設定"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:208
 msgid ""
 "Beside starting the engine, other methods of the engine instance allow "
 "configuring the behavior:"
 msgstr ""
+"エンジンを起動する以外に、エンジン・インスタンスの他のメソッドを使用して動作"
+"を構成できます:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:213
 msgid ""
@@ -433,6 +454,10 @@ msgid ""
 "specified locale, or at least use the locale requested in the HTTP ``Accept-"
 "Language`` header. This method allows specifying such a custom locale string."
 msgstr ""
+"デフォルトでは、エンジンはJavaScript環境から使用するロケールを推測しようとし"
+"ます。通常は、サーバ側でユーザが指定したロケールを使用するか、少なくともHTTP"
+"の ``Accept-Language`` ヘッダで要求されたロケールを使用することをお勧めしま"
+"す。このメソッドでは、そのようなカスタムロケール文字列を指定できます。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:252
 msgid "For example, with PHP:"
@@ -477,11 +502,11 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:280
 msgid "Customizing the presentation"
-msgstr ""
+msgstr "プレゼンテーションのカスタマイズ"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:282
 msgid "The following methods are used to implement the presentation:"
-msgstr ""
+msgstr "プレゼンテーションを実装するには、次のメソッドを使用します:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:286
 msgid "Set the callback for displaying download progress."
@@ -495,21 +520,23 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:299
 msgid "If the total is 0, it couldn't be calculated. Possible reasons include:"
-msgstr ""
+msgstr "合計が0の場合は、計算できません。考えられる理由は次のとおりです:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:302
 msgid "Files are delivered with server-side chunked compression"
-msgstr ""
+msgstr "ファイルは、サーバー側のチャンク圧縮で配信されます"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:303
 msgid "Files are delivered with server-side compression on Chromium"
-msgstr ""
+msgstr "ファイルはChromium上のサーバー側の圧縮で配信されます"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:304
 msgid ""
 "Not all file downloads have started yet (usually on servers without multi-"
 "threading)"
 msgstr ""
+"すべてのファイルのダウンロードがまだ開始されていません(通常はマルチスレッドを"
+"使用しないサーバー)"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:308
 msgid ""
@@ -547,7 +574,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:350
 msgid "Accessing the Emscripten ``Module``"
-msgstr ""
+msgstr "Emscripten ``Module`` へのアクセス"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:352
 msgid ""
@@ -556,3 +583,7 @@ msgid ""
 "documentation for information on how to use it: https://kripken.github.io/"
 "emscripten-site/docs/api_reference/module.html"
 msgstr ""
+"自分のしていることがわかっていれば、ランタイム環境(Emscripten ``Module`` )に "
+"``engine.rtenv`` としてアクセスできます。使用方法については、公式のEmscripten"
+"ドキュメントをご確認ください: https://kripken.github.io/emscripten-site/docs/"
+"api_reference/module.html"

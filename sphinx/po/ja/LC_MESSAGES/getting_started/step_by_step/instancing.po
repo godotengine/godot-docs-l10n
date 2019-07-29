@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr ""
+msgstr "インスタンス"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:7
 msgid "Introduction"
@@ -33,6 +33,11 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
+"1つのシーンを作成してノードを追加すると、小規模なプロジェクトでは機能します"
+"が、プロジェクトのサイズと複雑さが増すにつれて、ノードの数がすぐに管理できな"
+"くなる可能性があります。これに対処するために、Godot はプロジェクトを任意の数"
+"のシーンに分割することを許可します。これにより、ゲームのさまざまなコンポーネ"
+"ントを整理するのに役立つ強力なツールが提供されます。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
@@ -46,6 +51,8 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"必要な数のシーンを作成し、ディスクに保存できます。この方法で保存されたシーン"
+"は「パックされたシーン」と呼ばれ、 ``.tscn`` の拡張子を持ちます。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
@@ -55,7 +62,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
-msgstr ""
+msgstr "上の図では、シーンBがインスタンスとしてシーンAに追加されました。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"

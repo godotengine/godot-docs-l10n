@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:12
 msgid "Preparing scene"
-msgstr ""
+msgstr "シーンの準備"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:14
 msgid ""
@@ -49,13 +49,15 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:16
 msgid "Button.pressed: When the button is pressed, we will start the request."
-msgstr ""
+msgstr "Button.pressed:ボタンを押すと、要求が開始されます。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:17
 msgid ""
 "HTTPRequest.request_completed: When the request is completed, we will get "
 "the requested data as an argument."
 msgstr ""
+"HTTPRequest.request_completed: 要求が完了すると、要求されたデータが引数として"
+"取得されます。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
@@ -67,6 +69,9 @@ msgid ""
 "API mocker; it returns a pre-defined JSON string, which we will then parse "
 "to get access to the data."
 msgstr ""
+"以下は、それを動作させるために必要なすべてのコードです。URLはオンラインAPI"
+"モッカーを指します。定義済みのJSON文字列を返し、データにアクセスするために解"
+"析します。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:40
 msgid ""

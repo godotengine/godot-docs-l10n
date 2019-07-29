@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:21+0200\n"
+"POT-Creation-Date: 2019-07-29 21:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
-msgstr ""
+msgstr "インポートプロセス"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr ""
+msgstr "Godot 3.0+ でのアセットのインポート"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -44,11 +44,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid "This allows changing all the import parameters transparently."
-msgstr ""
+msgstr "これにより、すべてのインポートパラメータを透過的に変更できます。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:23
 msgid "Changing import parameters"
-msgstr ""
+msgstr "インポートパラメータの変更"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:25
 msgid ""
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
 msgid "Automatic reimport"
-msgstr ""
+msgstr "自動再インポート"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
@@ -80,21 +80,27 @@ msgid ""
 "automatic reimport of it, applying the preset configured for that specific "
 "asset."
 msgstr ""
+"ソースアセットのMD5チェックサムが変更されると、Godot はそのアセットの自動再イ"
+"ンポートを実行し、その特定のアセットに設定されたプリセットを適用します。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
 msgid "Files generated"
-msgstr ""
+msgstr "生成されたファイル"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
+"インポートすると、インポート設定を含む<asset> .importファイルが追加されま"
+"す。 必ずこれらをあなたのバージョン管理システムにコミットしてください!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:53
 msgid ""
 "Additionally, extra assets will be preset in the hidden res://.import folder:"
 msgstr ""
+"さらに、追加のアセットは、隠しrフォルダの「res://.import」にプリセットされま"
+"す:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:57
 msgid ""
@@ -107,7 +113,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid "Changing import resource type"
-msgstr ""
+msgstr "インポートリソースの種類の変更"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:66
 msgid ""
@@ -117,7 +123,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:74
 msgid "Changing default import parameters"
-msgstr ""
+msgstr "デフォルトのインポートパラメータの変更"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
@@ -126,19 +132,27 @@ msgid ""
 "some resource types offering presets, the default setting can be saved and "
 "cleared too:"
 msgstr ""
+"ゲームの種類によって、必要なデフォルトが異なる場合があります。プロジェクトご"
+"とにデフォルトを変更するには、「プリセット..」メニューを使用します。プリセッ"
+"トを提供する一部のリソースタイプのほかに、デフォルト設定を保存したり消去した"
+"りすることもできます:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:84
 msgid "Simplicity is key!"
-msgstr ""
+msgstr "シンプルさが鍵!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:86
 msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
 msgstr ""
+"これは非常に単純なワークフローであり、慣れるまでにはほとんど時間がかかりませ"
+"ん。また、より正確なリソースの処理方法も強制します。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
 msgstr ""
+"インポート可能なアセットの種類はたくさんありますので、そのすべてを操作する方"
+"法を理解するために読んでください!"
