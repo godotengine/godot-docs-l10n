@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -267,30 +267,37 @@ msgid ""
 "node. :ref:`Changing scenes manually <doc_change_scenes_manually>` gives "
 "users full control over how their game world transitions."
 msgstr ""
+"При смене уровней можно извлечь из узла \"World\" дочерние элементы. :ref:"
+"`Смена сцен вручную <doc_change_scenes_manally>' дает пользователям полный "
+"контроль над тем, как они меняют игровой мир."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:283
 msgid ""
 "The next step is to consider what gameplay systems one's project requires. "
 "If one has a system that..."
 msgstr ""
+"Следующий шаг - обдумать, какие игровые системы требуются для вашего "
+"проекта. Если есть система, которая...."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:286
 msgid "tracks all of its data internally"
-msgstr ""
+msgstr "отслеживает все свои данные изнутри"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:287
 msgid "should be globally accessible"
-msgstr ""
+msgstr "должна быть доступна глобально"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:288
 msgid "should exist in isolation"
-msgstr ""
+msgstr "может существовать изолированно"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:290
 msgid ""
 "... then one should create an :ref:`autoload 'singleton' node "
 "<doc_singletons_autoload>`."
 msgstr ""
+"...то следует создать :ref:`автозагрузочный узел 'singleton' "
+"<doc_singletons_autoload>'."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:294
 msgid ""

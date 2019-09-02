@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,8 +149,8 @@ msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
-"Sowohl 32- als auch 64-Bit Binaries werden je nach Bedarf unterstützt; dabei "
-"ist 64 Bit der Standard."
+"Sowohl 32- als auch 64-Bit Binaries werden unterstützt, wohingegen 64 Bit "
+"der Standard ist."
 
 #: ../../docs/about/faq.rst:51
 msgid ""
@@ -168,8 +168,11 @@ msgid ""
 "build scripts or export templates at this time."
 msgstr ""
 "Darüberhinaus gibt es einige inoffizielle Dritt-Anbieter, die an der "
-"Kompilierung für bestimmte Konsolen arbeiten. Allerdings ist nichts davon "
-"standardmäßig in den Build-Skripten oder Exportvorlagen enthalten."
+"Kompilierung für bestimmte Konsolen arbeiten.(Laut manchen Nutzern lässt "
+"sich Godot auch erfolgreich auf ARM-basierten Systemen mit Linux, wie dem "
+"Raspberry Pi kompilieren und verwenden. Außerdem gibt es Ports für Konsolen "
+"von Drittanbietern.) Allerdings ist nichts davon standardmäßig in den "
+"Buildskripten oder Exportvorlagen enthalten."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
@@ -190,9 +193,8 @@ msgid ""
 "<toc-learn-scripting>` section."
 msgstr ""
 "Die offiziell unterstützten Sprachen für Godot sind GDScript, Visual "
-"Scripting, C# und C++. Genaueres zu jeder Sprache findet sich in der "
-"jeweiligen Unterkategorie im :ref:`Scripting <toc-learn-scripting>`-"
-"Abschnitt."
+"Scripting, C# und C++. Genaueres zu jeder Sprache ist in der jeweiligen "
+"Unterkategorie im :ref:`scripting <toc-learn-scripting>`-Abschnitt."
 
 #: ../../docs/about/faq.rst:68
 msgid ""
@@ -203,13 +205,12 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
-"Wenn Du gerade erst mit Godot oder Spieleentwicklung im Allgemeinen "
-"anfängst, ist GDScript die empfohlene Sprache, da sie einfach zu lernen und "
-"gut in Godot integriert ist. Zwar neigen Skriptsprachen dazu, längerfristig "
-"weniger performant als systemnahe Sprachen zu sein, doch für das Erstellen "
-"von Prototypen oder eines Minimum Viable Products (MVP) sowie eine kurze "
-"Zeitspanne der Time-To-Market (TTP) stellt GDScript einen schnellen, "
-"benutzerfreundlichen und leistungsstarken Weg dar, Spiele zu entwickeln."
+"Wenn Du gerade beginnst, Godot oder generell Spielentwicklung zu lernen, "
+"empfehlen wir, GDScript zu lernen und zu nutzen, da es nativ von Godot "
+"unterstützt wird. Scripting-Sprachen sind insgesamt weniger performant als "
+"Sprachen wie C oder Rust, aber zum schreiben von Prototypen, Minimal-Viable-"
+"Products und bezogen auf die Time-To-Market bietet dir GDScript einen "
+"schnellen, freundlichen und mächtigen Weg, deine Spiele zu entwickeln."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -273,9 +274,9 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
-"Es gibt mehrere Gründe, GDScript zu verwenden -- besonders dann, wenn Du "
-"einen Prototyp entwickelst, in Alpha- oder Beta-Phasen Deines Projektes "
-"bist, oder nicht gerade den nächsten AAA-Titel entwickelst -- doch der am "
+"Es gibt mehrere Gründe GDScript zu verwenden -- besonders wenn Du einen "
+"Prototypen entwirfst, in Alpha- oder Beta-Phasen deines Projektes steckst, "
+"oder Du nicht gerade den nächsten AAA-Titel entwickelst -- aber der "
 "überzeugendste Grund ist die allgemeine **Verringerung der Komplexität.**"
 
 #: ../../docs/about/faq.rst:101
@@ -290,17 +291,17 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
-"Die ursprüngliche Intention der Entwicklung einer eigenen, integrierten "
-"Skriptsprache für Godot folgte aus zwei Gründen: erstens der Zeitersparnis, "
-"die für die Einarbeitung in Godot erforderlich ist (was den Entwicklern eine "
-"schnelle Möglichkeit bietet, sich mit der Engine mit einem Fokus auf "
-"Produktivität auseinanderzusetzen); zweitens der Reduzierung der allgemeinen "
-"Wartungslast, Verringerung der Dimensionalität von Problemen und den Engine-"
-"Entwicklern zu ermöglichen, sich auf das Beheben von Fehlern und die "
-"Verbesserung von Funktionen im Zusammenhang mit dem Engine-Kern zu "
-"konzentrieren -- anstatt viel Zeit damit zu verbringen, eine kleine Menge an "
-"wachsender Funktionalität über eine große Anzahl von Sprachen hinweg nutzbar "
-"zu machen."
+"Die ursprüngliche Absicht, eine eng integrierte, benutzerdefinierte "
+"Skriptsprache für Godot zu entwickeln, ergab sich aus zwei Gründen: Erstens "
+"reduziert sie die Zeit, die für die Inbetriebnahme und den Betrieb mit Godot "
+"erforderlich ist, und gibt Entwicklern eine schnelle Möglichkeit, sich mit "
+"der Engine mit Produktivitätsfokus auseinanderzusetzen; Zweitens reduziert "
+"sie die allgemeine Wartungslast, verringert die Dimensionalität von "
+"Problemen und ermöglicht es den Entwicklern der Engine, sich auf das Beheben "
+"von Fehlern und die Verbesserung von Funktionen im Zusammenhang mit dem "
+"Engine Kern zu konzentrieren , anstatt viel Zeit damit zu verbringen einen "
+"kleinen Satz inkrementeller Funktionen über eine große Anzahl von Sprachen "
+"hinweg zu nutzen."
 
 #: ../../docs/about/faq.rst:109
 msgid ""
@@ -314,16 +315,16 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"Da es sich bei Godot um ein Open Source-Projekt handelt, war es von Anfang "
-"an unerlässlich, eine stärker integrierte und nahtlose Erfahrung gegenüber "
-"der Gewinnung zusätzlicher Benutzer durch die Unterstützung vertrauterer "
-"Programmiersprachen vorzuziehen - vor allem wenn die Unterstützung dieser "
-"vertrauteren Sprachen zu einer schlechteren Erfahrung führen würde. Wir "
-"verstehen, wenn Du lieber eine andere Sprache in Godot verwenden möchtest "
-"(Liste der unterstützten Optionen siehe oben). Aber wenn du GDScript noch "
-"nicht ausprobiert hast, versuche es für **drei Tage**. Genau wie Godot: "
-"Sobald du siehst, wie mächtig es ist und wie schnell du damit entwickeln "
-"kannst, glauben wir, dass auch Du GDScript schätzen wirst."
+"Eine stark integrieretes Erlebnis ist wichtiger als die Gewinnung "
+"zusätzlicher Benutzer, da es sich bei Godot um ein Open-Source-Projekt "
+"handelt. Daher verzichtet Godot darauf, mehr (vertraute) Programmiersprachen "
+"zu unterstützen, da diese zu einem schlechteren Ergebnis führen würde, da "
+"sie nicht in der gleichen Weise mit der Umgebung integriert werden können. "
+"Wir verstehen, wenn du lieber deine andere Sprache in Godot verwenden "
+"möchtest (Liste der unterstützten Optionen oben). Doch wenn du GDScript noch "
+"nicht ausprobiert hast, versuche es wenigstens für **drei Tage**. Sobald du "
+"siehst, wie mächtig die Sprache ist und wie schnell sie wächst, sind wir "
+"sicher, dass du GDScript mögen wirst und es mit deinen Fähigkeiten wächst."
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -368,11 +369,11 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
-"Viele bestehende Sprachen haben furchtbare Schnittstellen für die Anbindung "
-"an C++, was zu einer Menge Code, Bugs, Flaschenhälsen \n"
-"und einer grundsätzlichen Ineffizienz führt (Lua, Python, Squirrel, JS, "
-"etc.). Wir wollten uns auf eine großartige Engine konzentrieren, nicht auf "
-"eine große Anzahl von Anpassungen."
+"Viele bestehende Sprachen haben ineffiziente Schnittstellen für die "
+"Einbindung von C++, was zu einer großen Menge Code, Bugs, Engpässen und "
+"allgemeiner Ineffizienz führt (Lua, Python, Squirrel, JS, etc.). Wir wollten "
+"uns auf eine großartige Engine konzentrieren, nicht auf eine große Anzahl "
+"von Scriptsprachen."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
@@ -395,9 +396,9 @@ msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
-"Die Schwierigkeit, sich so in den Code-Editor zu integrieren, dass "
-"Autovervollständigung, Live-Bearbeitung usw. bereitgestellt werden kann. "
-"Dies alles funktioniert sehr zuverlässig mit GDScript."
+"Schwierigkeiten bei der Integration in den Code-Editor zur Code-"
+"Vervollständigung, Live-Bearbeitung, etc. (all dies). Dies wird von GDScript "
+"unterstützt."
 
 #: ../../docs/about/faq.rst:142
 msgid "GDScript was designed to curtail the issues above and more."
@@ -425,7 +426,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr "Seit Godot 3.0 wird glTF unterstützt."
+msgstr "Ab Godot 3.0 wird gITF unterstützt."
 
 #: ../../docs/about/faq.rst:153
 msgid ""
@@ -525,11 +526,10 @@ msgid ""
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
-"Der gängigste als auch sinnvollste Weg, dies zu erreichen, ist es "
-"stattdessen eine einzelne Grundauflösung für das Spiel zu verwenden und nur "
-"mit unterschiedlichen Seitenverhältnissen (Aspect Ratios) zu arbeiten. Dies "
-"ist vor allen Dingen bei 2D-Anwendungen relevant, bei 3D sind die \"Field of "
-"View\"-Einstellungen der Kamera von Interesse (XFov und YFov)."
+"Der einfachste Weg, dies zu erreichen, ist eine einfache Basis-Auflösung für "
+"das Spiel zu verwenden und nur mit verschiedenen Bildschirm-Größen "
+"klarzukommen. Dies wird am meisten für 2D benötigt, denn in 3D ist es "
+"einfach eine Frage der Kamera (XFov und YFov)."
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -566,11 +566,11 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
-"Bestimme eine Minimalauflösung und entscheide dann, ob das Spiel für "
-"unterschiedliche Seitenverhältnisse horizontal oder vertikal ausgedehnt "
-"werden soll, oder ob es nur ein Seitenverhältnis gibt, und anstatt der "
-"Ausdehnung schwarze Seitenbalken erscheinen sollen. Dies wird auch unter :"
-"ref:`doc_multiple_resolutions` erklärt."
+"Setze eine minimale Auflösung und entscheide dann, ob das Spiel horizontal "
+"oder vertikal gestreckt werden soll (bei unterschiedlichen "
+"Seitenverhältnissen), oder ob um eine fixe Auflösung herum schwarze Balken "
+"gezeichnet werden sollen. Das wird auch in :ref:`doc_multiple_resolutions` "
+"erklärt."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -637,10 +637,10 @@ msgid ""
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
-"Du kannst auch einen Blick auf die GDScript-Implementierung werfen, die "
-"Godot-Module und auch auf die `inoffizielle Python-Unterstützung <https://"
-"github.com/touilleMan/godot-python>`_ für Godot. Letzteres zeigt Dir, wie "
-"eine Fremdbibliothek mit der Engine interagiert."
+"Du kannst auch einen Blick auf die GDScript Implementierung werfen, die "
+"Godot-Module und die `inoffizielle Python-Unterstützung <https://github.com/"
+"touilleMan/godot-python>`_ für Godot. Dies ist ein guter Startpunkt um zu "
+"sehen wie eine weitere dritt anbitter Library mit Godot integriert."
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
@@ -735,8 +735,8 @@ msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr ""
-"Stellen, an denen Dir klare Anweisungen in Form von Tutorials fehlen oder wo "
-"die Dokumentation einfach noch nicht ausführlich genug war."
+"Teile, wo Ihnen verständliche Tutorials fehlten oder wo die Dokumentation "
+"einfach noch nicht ausführlich genug war."
 
 #: ../../docs/about/faq.rst:271
 msgid ""
@@ -744,10 +744,10 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
-"Bitte habe nicht das Gefühl, Deine Ideen seien unerwünscht. Stattdessen ist "
-"es besser, sie zunächst als Problem neu zu formulieren, sodass die "
-"Entwickler und Gemeinschaft eine solide Grundlage haben, auf der sie deine "
-"Idee ausdiskutieren können."
+"Bitte habe nicht das Gefühl, dass deine Ideen nicht willkommen wären. "
+"Versuche stattdessen zuerst, sie als Problem neu zu formulieren, sodass die "
+"Entwickler und Gemeinschaft einen festen Boden haben, auf dem sie deine Idee "
+"diskutieren können."
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -769,24 +769,129 @@ msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
-"Bonuspunkte gibt es für Bildschirmfotos, konkrete Zahlen, Testfälle und "
-"Beispielprojekte (falls zutreffend)."
+"Bonuspunkte gibt es für Bildschirmfotos, konkrete Zahlen, Testfälle oder "
+"Beispielprojekte (falls machbar)."
 
-#: ../../docs/about/faq.rst:285
+#: ../../docs/about/faq.rst:286
+msgid "Why does Godot not use STL (Standard Template Library)"
+msgstr ""
+
+#: ../../docs/about/faq.rst:288
+msgid ""
+"Like many other libraries (Qt as an example), Godot does not make use of "
+"STL. We believe STL is a great general purpose library, but we had special "
+"requirements for Godot."
+msgstr ""
+
+#: ../../docs/about/faq.rst:292
+msgid ""
+"STL templates create very large symbols, which results in huge debug "
+"binaries. We use few templates with very short names instead."
+msgstr ""
+
+#: ../../docs/about/faq.rst:293
+msgid ""
+"Most of our containers cater to special needs, like Vector, which uses copy "
+"on write and we use to pass data around, or the RID system, which requires "
+"O(1) access time for performance. Likewise, our hash map implementations are "
+"designed to integrate seamlessly with internal engine types."
+msgstr ""
+
+#: ../../docs/about/faq.rst:294
+msgid ""
+"Our containers have memory tracking built-in, which helps better track "
+"memory usage."
+msgstr ""
+
+#: ../../docs/about/faq.rst:295
+msgid ""
+"For large arrays, we use pooled memory, which can be mapped to either a "
+"preallocated buffer or virtual memory."
+msgstr ""
+
+#: ../../docs/about/faq.rst:296
+msgid ""
+"We use our custom String type, as the one provided by STL is too basic and "
+"lacks proper internationalization support."
+msgstr ""
+
+#: ../../docs/about/faq.rst:299
+msgid "Why does Godot not use exceptions?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:301
+msgid ""
+"We believe games should not crash, no matter what. If an unexpected "
+"situation happens, Godot will print an error (which can be traced even to "
+"script), but then it will try to recover as gracefully as possible and keep "
+"going."
+msgstr ""
+
+#: ../../docs/about/faq.rst:306
+msgid ""
+"Additionally, exceptions significantly increase binary size for the "
+"executable."
+msgstr ""
+
+#: ../../docs/about/faq.rst:310
+msgid "Why does Godot not enforce RTTI?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:312
+msgid ""
+"Godot provides its own type-casting system, which can optionally use RTTI "
+"internally. Disabling RTTI in Godot means considerably smaller binary sizes "
+"can be achieved, at a little performance cost."
+msgstr ""
+
+#: ../../docs/about/faq.rst:317
+msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:319
+msgid ""
+"While Godot internally for a lot of the heavy performance tasks attempts to "
+"use cache coherency as best as possible, we believe most users don't really "
+"need to be forced to use DoD practices."
+msgstr ""
+
+#: ../../docs/about/faq.rst:323
+msgid ""
+"DoD is mostly a cache coherency optimization that can only gain you "
+"significant performance improvements when dealing with dozens of thousands "
+"of objects (which are processed every frame with little modification). As "
+"in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
+"help you, and you should consider a different approach to optimization."
+msgstr ""
+
+#: ../../docs/about/faq.rst:330
+msgid ""
+"The vast majority of games do not need this and Godot provides handy helpers "
+"to do the job for most cases when you do."
+msgstr ""
+
+#: ../../docs/about/faq.rst:333
+msgid ""
+"If a game that really needs to process such large amount of objects is "
+"needed, our recommendation is to use C++ and GDNative for the high "
+"performance parts and GDScript (or C#) for the rest of the game."
+msgstr ""
+
+#: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
 msgstr ""
 "Wie kann ich die Entwicklung der Godot Engine unterstützen oder einen "
 "(finanziellen) Beitrag leisten?"
 
-#: ../../docs/about/faq.rst:287
+#: ../../docs/about/faq.rst:340
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr "Siehe :ref:`doc_ways_to_contribute`."
 
-#: ../../docs/about/faq.rst:290
+#: ../../docs/about/faq.rst:343
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Wer arbeitet an Godot? Wie kann ich euch kontaktieren?"
 
-#: ../../docs/about/faq.rst:292
+#: ../../docs/about/faq.rst:345
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."

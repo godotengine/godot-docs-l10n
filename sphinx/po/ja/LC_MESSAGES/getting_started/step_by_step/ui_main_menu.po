@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,21 +19,23 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
 msgid "Design a title screen"
-msgstr ""
+msgstr "タイトル画面のデザイン"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:6
 msgid ""
 "In the next two tutorials, you will build two responsive UI (user interface) "
 "scenes step-by-step using the engine's UI system:"
 msgstr ""
+"次の2つのチュートリアルでは、エンジンのUIシステムを使用して2つのレスポンシブ"
+"UI(ユーザーインターフェイス)シーンを段階的に構築します:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
 msgid "A main menu"
-msgstr ""
+msgstr "メインメニュー"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
 msgid "A game UI with a health bar, energy bar, bomb and money counters"
-msgstr ""
+msgstr "ヘルスバー、エネルギーバー、爆弾、マネーカウンターを備えたゲームUI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
 msgid ""
@@ -44,7 +46,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create"
-msgstr ""
+msgstr "作成するGUI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -57,7 +59,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:33
 msgid "How to design your game UI"
-msgstr ""
+msgstr "ゲームUIの設計方法"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:35
 msgid ""
@@ -69,10 +71,13 @@ msgid ""
 "sure the players can find their way around the interface using those "
 "placeholders."
 msgstr ""
+"優れたUIを設計するには、まず大まかなモックアップを作成します。必要なのはペン"
+"と紙だけです。この段階では、凝った最終的なグラフィックスは使用しないでくださ"
+"い。何を選択すればどこに進むか分かる程度の大まかな図で十分です。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:45
 msgid "The UI's rough plan or mockup"
-msgstr ""
+msgstr "UIの大まかな計画またはモックアップ"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:47
 msgid ""
@@ -86,10 +91,14 @@ msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback"
 msgstr ""
+"グラフィックがプレーヤーのエクスペリエンスの認識を歪め、貴重なフィードバック"
+"を見逃す可能性があります"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:53
 msgid "If the User Experience doesn't work, you'll have to redo some sprites"
 msgstr ""
+"ユーザーエクスペリエンスが機能しない時にいくつかのスプライトをやり直さないと"
+"いけなくなる場合があります"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:57
 msgid ""
@@ -99,22 +108,31 @@ msgid ""
 "visuals away, it's a lot easier to size and place UI elements properly. It "
 "helps you refine the design foundation you'll build upon."
 msgstr ""
+"まず、シンプルなテキストとボックスを使用してインタフェースを動作させるように"
+"してください。テクスチャは後で簡単に置き換えることができます。プロのUXデザイ"
+"ナーは、グレースケールのアウトラインやボックスを使って作業することがよくあり"
+"ます。カラーや派手なビジュアルを排除すれば、UI要素のサイズや配置を適切に行う"
+"ことがずっと簡単になります。これにより、設計基盤を洗練させることができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:64
 msgid "There are two ways to design your UI in Godot. You can:"
-msgstr ""
+msgstr "GodotでUIをデザインするには2つの方法があります。次のことができます:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:66
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes"
 msgstr ""
+"すべてを1つのシーンに構築し、最終的にはいくつかのブランチを再利用可能なシーン"
+"として保存します"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:68
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes"
 msgstr ""
+".再利用可能なコンポーネントのテンプレートシーンを作成し、ベースシーンから継承"
+"する特定のコンポーネントを作成する"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:71
 msgid ""
@@ -123,31 +141,39 @@ msgid ""
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
+"最初の方法を使用します。最初のバージョンのUIが期待どおりに動作しない場合があ"
+"るためです。パーツを廃棄してコンポーネントを再設計することがあります。すべて"
+"が正常に機能していることが確認できたら、次に示すように、一部のパーツを再利用"
+"可能にすることは容易です。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:78
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders"
 msgstr ""
+"Godotにあるファイル グラフィックはラフデザインよりもきれいに見えますが、それ"
+"でもプレースホルダーです"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:82
 msgid "Design the main menu"
-msgstr ""
+msgstr "メインメニューのデザイン"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:84
 msgid ""
 "Before we jump into the editor, we want to plan how we'll nest containers "
 "based on our mockup image."
 msgstr ""
+"エディターに入る前に、モックアップイメージに基づいてコンテナーをネストする方"
+"法を計画します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:88
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:280
 msgid "Break down the UI mockup"
-msgstr ""
+msgstr "UIモックアップを分割"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:90
 msgid "Here are my three rules of thumb to find the right containers:"
-msgstr ""
+msgstr "適切なコンテナを見つけるための3つの経験則を以下に示します:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:92
 msgid ""
@@ -155,22 +181,28 @@ msgid ""
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button"
 msgstr ""
+"UIを、すべてを含む最大のボックスから、ラベルの付いたバー、パネル、ボタンな"
+"ど、1つのウィジェットを含む最小のボックスまでネストされたボックスに分割します"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:95
 msgid "If there's some padding around an area, use a ``MarginContainer``"
-msgstr ""
+msgstr "領域の周囲に余白がある場合は、``MarginContainer``を使用します"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``"
 msgstr ""
+"要素が行または列に配置されている場合は、 ``HBoxContainer`` または "
+"``VBoxContainer`` を使用します"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:99
 msgid ""
 "These rules are enough to get us started, and work well for simple "
 "interfaces."
 msgstr ""
+"これらの規則は、私たちが始めるために十分なものであり、単純なインターフェース"
+"に対してはうまく機能します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:102
 msgid ""
@@ -181,10 +213,15 @@ msgid ""
 "with a ``VBoxContainer``. And in the right column, we'll center the "
 "illustration with a ``CenterContainer``."
 msgstr ""
+"メインメニューでは、最大のボックスはゲームウィンドウ全体です。ウィンドウの端"
+"と最初のコンポーネントの間には余白があります。これは ``MarginContainer`` にす"
+"る必要があります。次に、画面は2列に分割されているので、 ``HBoxContainer`` を"
+"使用します。左側の列では、 ``VBoxContainer`` を使用して行を管理します。 右側"
+"の列では、 ``CenterContainer`` を使用して図の中央に配置します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:111
 msgid "Interface building blocks, broken down using the three rules of thumb"
-msgstr ""
+msgstr "3つの経験則に基づいて分類されたインタフェース構成要素"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:115
 msgid ""
@@ -192,16 +229,21 @@ msgid ""
 "Although we could place UI elements by hand, containers are faster, more "
 "precise, and **responsive**."
 msgstr ""
+"コンテナはウィンドウの解像度と幅と高さの比率に適応します。UI要素を手動で配置"
+"することもできますが、コンテナの方が高速で、正確で、\\ **応答性に優れています"
+"**\\ 。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:120
 msgid "Prepare the Main Menu scene"
-msgstr ""
+msgstr "メインメニューシーンの準備"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:122
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on the Scene menu -> New Scene."
 msgstr ""
+"メインメニューを作りましょう。単一のシーンで構築します。空のシーンを作成する"
+"には、「シーンメニュー ->新規シーン」をクリックします。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:125
 msgid ""
@@ -211,6 +253,12 @@ msgid ""
 "interfaces, as you often need padding around the UI. Press ``Meta+S`` to "
 "save the scene to the disk. Name it *MainMenu*."
 msgstr ""
+"シーンを保存する前に、ルートノードを追加する必要があります。UIのルートは、最"
+"も外側のコンテナまたは要素である必要があります。この例では、 "
+"``MarginContainer`` です。UIの周囲にパディングが必要になることが多いため、 "
+"``MarginContainer`` はほとんどのインタフェースの開始点として適しています。"
+"シーンをディスクに保存するには、 ``Meta+S`` を押します。\\ *MainMenu*\\ とい"
+"う名前を付けます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:131
 msgid ""
@@ -218,54 +266,62 @@ msgid ""
 "the margins' size. Scroll down the ``Control`` class, to the ``Custom "
 "Constants`` section. Unfold it. Set the margins as such:"
 msgstr ""
+"もう一度 ``MarginContainer`` を選択し、インスペクタに進んで余白のサイズを定義"
+"します。 ``Control`` クラスを下にスクロールして ``Custom Constants`` セクショ"
+"ンに移動します。余白を次のように設定します:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:135
 msgid "Margin Right: *120*"
-msgstr ""
+msgstr "右マージン:\\ *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
 msgid "Margin Top: *80*"
-msgstr ""
+msgstr "上マージン:\\ *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:137
 msgid "Margin Left: *120*"
-msgstr ""
+msgstr "左マージン:\\ *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:138
 msgid "Margin Bottom: *80*"
-msgstr ""
+msgstr "下マージン:\\ *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:140
+#, fuzzy
 msgid ""
-"We want the container to fit the window. In the Viewport, open the "
-"``Layout`` menu and select the last option, ``Full Rect``."
+"We want the container to fit the window. In the toolbar above the Viewport, "
+"open the ``Layout`` menu and select the last option, ``Full Rect``."
 msgstr ""
+"コンテナをウィンドウに合わせます。 ビューポート ``でLayout`` メニューを開き、"
+"最後のオプション ``Full Rect`` を選択します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:144
 msgid "Add the UI sprites"
-msgstr ""
+msgstr "UIスプライトを追加する"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:146
 msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
 msgstr ""
+"``MarginContainer`` を選択し、UI要素を ``TextureRect`` ノードとして作成しま"
+"す。必要なもの:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:149
 msgid "The title, or logo"
-msgstr ""
+msgstr "タイトルまたはロゴ"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
 msgid "The three text options, as individual nodes"
-msgstr ""
+msgstr "個別のノードとしての3つのテキストオプション"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
 msgid "The version note"
-msgstr ""
+msgstr "バージョンノート"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
 msgid "And the main menu’s illustration"
-msgstr ""
+msgstr "メインメニューのイラスト"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:154
 msgid ""
@@ -274,6 +330,10 @@ msgid ""
 "the new node selected, press ``Meta+D`` five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
+"``Add Node`` ボタンをクリックするか、キーボードの ``Meta+A`` キーを押しま"
+"す。 ``TextureRect`` と入力して対応するノードを検索し、Enterキーを押します。"
+"新しいノードを選択した状態で ``Meta+D`` を5回押して、追加の ``TextureRect`` "
+"インスタンスを5つ作成します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:159
 msgid ""
@@ -285,6 +345,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid "The file browser lets you find and load textures"
 msgstr ""
+"ファイルブラウザを使用すると、テクスチャを検索してロードすることができます"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:167
 msgid ""
@@ -297,17 +358,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:175
 msgid "The six nodes, with textures loaded"
-msgstr ""
+msgstr "テクスチャがロードされた6つのノード"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:179
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
 msgstr ""
+"ゲームでローカライズをサポートしたい場合は、 ``TextureRect`` の代わりにメ"
+"ニューオプションに ``Labels`` を使用してください。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:183
 msgid "Add containers to place UI elements automatically"
-msgstr ""
+msgstr "UI要素を自動的に配置するコンテナを追加する"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:185
 msgid ""
@@ -321,6 +384,14 @@ msgid ""
 "as it has children. Although you can deactivate the split container's resize "
 "behaviour, I recommend to favour box containers."
 msgstr ""
+"メインメニューは画面の端にマージンがあります。2つの部分に分かれており、左側に"
+"はロゴとメニューオプションがあります。右側に文字があります。これを実現するに"
+"は、 ``HSplitContainer`` または ``HBoxContainer`` という2つのコンテナのいずれ"
+"かを使用します。コンテナを分割すると、領域が左右または上下に分割されます。ま"
+"た、インタラクティブなバーを使用して、左右の領域のサイズを変更することもでき"
+"ます。一方、 ``HBoxContainer`` は、子を持つ列と同じ数の列に分割します。分割コ"
+"ンテナのサイズ変更動作を無効にすることもできますが、ボックスコンテナを優先す"
+"ることをお勧めします。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
 msgid ""
@@ -329,12 +400,17 @@ msgid ""
 "the menu options on the left, and a ``CenterContainer`` for the illustration "
 "on the right."
 msgstr ""
+"``MarginContainer`` を選択し、 ``HBoxContainerを追加します`` 。次に、 "
+"``HBoxContainer`` の子として2つのコンテナーが必要です。左側にメニューオプショ"
+"ン用の ``VBoxContainer`` 、右側にイラスト用の ``CenterContainer`` がありま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:203
 msgid ""
 "You should have four nested containers, and the TextureRect nodes sitting "
 "aside from it"
 msgstr ""
+"4つの入れ子になったコンテナと、それとは別にTextureRectノードがあるはずです"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:206
 msgid ""
@@ -342,22 +418,25 @@ msgid ""
 "left side: the logo, the menu options and the version note. Drag and drop "
 "them into the ``VBoxContainer``. The nodes should position automatically."
 msgstr ""
+"ノードツリーで、左側にあるすべての `` TextureRect``ノードを選択します：ロゴ、"
+"メニューオプション、バージョンノートです。それらを `` VBoxContainer``にドラッ"
+"グアンドドロップします。ノードは自動的に配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:212
 msgid "Containers automatically place and resize textures"
-msgstr ""
+msgstr "コンテナは自動的にテクスチャを配置してサイズを変更します"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "We're left with two problems to solve:"
-msgstr ""
+msgstr "解決すべき2つの問題が残されています:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
 msgid "The characters on the right aren't centered"
-msgstr ""
+msgstr "右側の文字が中央に配置されていません"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
 msgid "There's no space between the logo and the other UI elements"
-msgstr ""
+msgstr "ロゴと他のUI要素の間にスペースがありません"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
 msgid ""
@@ -370,12 +449,22 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
+"文字を右に中央揃えするには、最初に''CenterContainer''を選択します。次に、イン"
+"スペクタで''Size Flags''カテゴリまで下にスクロールし、''Vertical''プロパティ"
+"の右側のフィールドをクリックして、''Fill''に加えて''Expand''をチェックしま"
+"す。 `` Horizontal``プロパティについても同じことを行います。これによ"
+"り、''CenterContainer''は、隣接する''VBoxContainer''を尊重しながら、使用可能"
+"なすべてのスペースに拡張されます。最後に、Charactersノードを `` "
+"CenterContainer``にドラッグアンドドロップします。 Characters要素は自動的に中"
+"央に配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:230
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer"
 msgstr ""
+"キャラクターノードは、CenterContainer内に配置するとすぐに画面の右半分の中央に"
+"配置されます"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:233
 msgid ""
@@ -386,11 +475,18 @@ msgid ""
 "and ``Options``, and drag and drop them inside the new ``VBoxContainer``. "
 "The UI's layout should barely change, if at all."
 msgstr ""
+"メニューオプションと左側のロゴを区切るために、最後のコンテナとそのサイズフラ"
+"グを使用します。 ``VBoxContainer`` を選択し、 ``Meta+A`` キーを押して内部に新"
+"しいノードを追加します。別の ``VBoxContainer`` を追加し、「メニューオプショ"
+"ン」という名前を付けます。 ``Continue`` 、 ``NewGame`` 、 ``Options`` の3つの"
+"メニューオプションをすべて選択し、新しい ``VBoxContainer`` 内にドラッグ&ド"
+"ロップします。UIのレイアウトはほとんど変わらないはずです。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:243
 msgid ""
 "Place the new container between the other two nodes to retain the UI's layout"
 msgstr ""
+"新しいコンテナを他の2つのノードの間に配置して、UIのレイアウトを保持します"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:246
 msgid ""
@@ -408,10 +504,13 @@ msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the ``Alignment`` property to ``Center``."
 msgstr ""
+"ノードを ``VBoxContainer`` の中央に配置するには、インスペクタの一番上までスク"
+"ロールし、 ``Alignment`` プロパティを ``Center`` に変更します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:259
 msgid "The menu options should center vertically in the UI's left column"
 msgstr ""
+"メニューオプションは、UIの左カラムの縦方向の中央に配置する必要があります"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
 msgid ""
@@ -421,15 +520,20 @@ msgid ""
 "enter, the ``Separation`` property becomes active and Godot adds 30 pixels "
 "between menu options."
 msgstr ""
+"最後に、メニューオプション間に区切りを追加します。 ``Size Flags`` の下の "
+"``Custom Constants`` カテゴリを展開し、 ``Separation`` パラメータの横のフィー"
+"ルドをクリックします。30に設定します。Enterキーを押すと、 ``Separation`` プロ"
+"パティがアクティブになり、Godotによりメニューオプション間に30ピクセルが追加さ"
+"れます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:269
 msgid "The final interface"
-msgstr ""
+msgstr "最後のインターフェイス"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
-msgstr ""
+msgstr "コードが1行もなくても、正確で応答性の高いメインメニューができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:274
 msgid ""
@@ -454,6 +558,10 @@ msgid ""
 "the Select Mode, select the container and click and drag on one of the "
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
+"ネストの順序が重要です。UIがさまざまな画面比率にうまく適応しているかどうかを"
+"確認するには、ルートノードを選択し、Qキーを押して「Select Mode」をアクティブ"
+"にし、コンテナを選択し、コンテナのコーナーの1つをクリック&ドラッグしてサイズ"
+"を変更します。UIコンポーネントはその内部を流れる必要があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:293
 msgid ""
@@ -462,6 +570,10 @@ msgid ""
 "ratios, but we also need the entire game to adapt to different screen "
 "resolutions. To do this, Godot scales the entire window up and down."
 msgstr ""
+"コンテナはスプライトを動かしていますが、スケーリングはしていません。これは正"
+"常です。UIシステムがさまざまな画面比率を処理できるようにしたいのですが、ゲー"
+"ム全体をさまざまな画面解像度に適応させる必要もあります。これを行うために、"
+"Godotはウィンドウ全体を上下にスケーリングします。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
 msgid ""
@@ -472,3 +584,8 @@ msgid ""
 "control the screen size. For more information, see :ref:"
 "`doc_multiple_resolutions`."
 msgstr ""
+"プロジェクト設定でスケールモードを変更するには、「プロジェクトメニュー->プロ"
+"ジェクト設定」をクリックします。ウィンドウの左側のカラムで、Displayカテゴリを"
+"探します。Windowサブカテゴリをクリックします。ウィンドウの右側に、Stretchセク"
+"ションがあります。Mode、Aspect、Shrinkの3つの設定は、画面サイズを制御します。"
+"詳細については、\\ :ref:`doc_multiple_resolutions`を参照してください。"

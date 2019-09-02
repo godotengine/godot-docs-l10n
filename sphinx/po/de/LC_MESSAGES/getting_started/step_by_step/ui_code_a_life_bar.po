@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,53 +19,62 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:4
 msgid "Control the game's UI with code"
-msgstr ""
+msgstr "Kontrolliere das Spiele-UI mit Code"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:7
 msgid "Intro"
-msgstr ""
+msgstr "Intro"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
 msgid ""
 "In this tutorial, you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
+"In diesem Tutorial werden wir einen Charakter mit einer Lebensbar verbinden "
+"und den Gesundheitsverlust animieren (dam -dam -dam DAM!)."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:14
 msgid ""
 "Here's what you'll create: the bar and the counter animate when the "
 "character takes a hit. They fade when it dies."
 msgstr ""
+"Hier ist, was du erschaffen wirst: eine Bar und einen Zähler wirst du "
+"animieren, wenn der Charakter Schaden nimmt. Sie verblassen, wenn es stirbt."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:18
 msgid "You will learn:"
-msgstr ""
+msgstr "Sie werden lernen:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:20
 msgid "How to **connect** a character to a GUI with signals"
 msgstr ""
+"Wie man einen Charakter mit einer GUI **verbindet**, indem man Signale "
+"benutzt"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:21
 msgid "How to **control** a GUI with GDscript"
-msgstr ""
+msgstr "Wie man eine GUI mit GDScript **kontrolliert**"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
 msgstr ""
+"Wie man eine Lebensbar mit  einer :ref:`Tween <class_Tween>`-Node animiert"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:25
 msgid ""
 "If you want to learn how to set up the interface instead, check out the step-"
 "by-step UI tutorials:"
 msgstr ""
+"Wenn du stattdessen lernen willst, wie man ein Interface konfiguriert, werfe "
+"einen Blick auf das Schritt-für-Schritt UI-Tutorial:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid "Create a main menu screen"
-msgstr ""
+msgstr "Erstelle einen Hauptmenü-Bildschirm"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
 msgid "Create a game user interface"
-msgstr ""
+msgstr "Erstelle eine Spielbenutzeroberfläche"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -93,6 +102,10 @@ msgid ""
 "constant time intervals. We want the life bar to update when the Player "
 "takes damage."
 msgstr ""
+"Wenn erstmal das Haupt-Gameplay und die UI fertig sind, wirst du es nötig "
+"haben, diese irgendwie zu verbinden. In unserem Beispiel haben wir den "
+"Feind, der den Spieler mit einem konstanten Zeitintervall attackiert. Wir "
+"möchten, dass die Lebensbar updatet, wenn der Spieler Schaden nimmt."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:45
 msgid "To do this, we will use **signals**."
@@ -177,6 +190,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
 msgid "The scene tree, with the GUI scene set to display its children"
 msgstr ""
+"Der Szenenbaum mit der GUI Szene ist so gesetzt, dass die Kinder angezeigt "
+"werden"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
 msgid ""
@@ -184,11 +199,16 @@ msgid ""
 "comes with a barebones script where we get the path to nodes that exist "
 "inside the scene:"
 msgstr ""
+"Die GUI-Szene kapselt die gesamte grafische Benutzeroberfläche des Spiels "
+"ein. Es wird mit einem Barebones-Skript geliefert, in dem der Pfad zu den "
+"Knoten in der Szene angegeben wird:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:105
 msgid ""
 "``number_label`` displays a life count as a number. It's a ``Label`` node"
 msgstr ""
+"``number_label```zeigt einen Lebenszähler als eine Nummer. Es ist eine "
+"``Label``-Node"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
@@ -199,6 +219,8 @@ msgid ""
 "``tween`` is a component-style node that can animate and control any value "
 "or method from any other node"
 msgstr ""
+"``tween`` ist eine Node im Komponentenstil, die man animieren und ihr "
+"verschiedene Werte oder Methoden von anderen Nodes zuweisen kann"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
 msgid ""
@@ -230,14 +252,18 @@ msgid ""
 "the scene in the editor. You'll see the LifeBar and EnergyBar are sub-scenes "
 "themselves."
 msgstr ""
+"Klicke auf das Bearbeiten-Szenen-Icon auf der rechten Seite der Node in dem "
+"Szenenbaum, um die Szene im Editor zu öffnen. Du wirst eine LifeBar und "
+"EnergieBar sehen, die selbst Unterszenen sind."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:121
 msgid "The scene tree, with the Player scene set to display its children"
 msgstr ""
+"Der Szenenbaum, mit der Spielerszene ausgewählt, um die Kinder anzuzeigen"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:124
 msgid "Set up the Lifebar with the Player's max\\_health"
-msgstr ""
+msgstr "Setze die Lifebar so mit der maximalen Gesundheit des Spielers"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:126
 msgid ""
@@ -247,6 +273,12 @@ msgid ""
 "player's health to the GUI every time they take damage. The GUI will then "
 "update the ``Lifebar`` and ``Number`` nodes with this value."
 msgstr ""
+"Wir müssen der GUI irgendwie mitteilen, wie der aktuelle Gesundheitszustand "
+"des Players ist, die Textur des Lebensbalkens aktualisieren und den "
+"verbleibenden Gesundheitszustand im HP-Zähler in der oberen linken Ecke des "
+"Bildschirms anzeigen. Dazu senden wir die Gesundheit des Spielers bei jedem "
+"Schaden an die GUI. Die GUI aktualisiert dann die Knoten `` Lifebar`` und `` "
+"Number`` mit diesem Wert."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:132
 msgid ""
@@ -255,6 +287,10 @@ msgid ""
 "step is thus to tell the ``GUI`` what the green character's ``max_health`` "
 "is."
 msgstr ""
+"Wir könnten hier anhalten, um die Zahl anzuzeigen, aber wir müssen den "
+"``max_value`` des Balkens initialisieren, damit er in den richtigen "
+"Proportionen aktualisiert wird. Der erste Schritt besteht also darin, der "
+"``GUI`` zu sagen, was das ``max_health`` des grünen Zeichens ist."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:139
 msgid ""
@@ -263,6 +299,11 @@ msgid ""
 "to change its `max_value` property. You send a percentage from the `Player` "
 "to the `GUI` instead:  `health / max_health * 100`."
 msgstr ""
+"Die Leiste, eine `TextureProgress`, hat standardmäßig einen `Maximalwert` "
+"von `100`. Wenn Sie nicht die Gesundheit des Charakters mit einer Number "
+"anzeigen wollen, brauchen Sie nicht ihre `Maximalwert` Eigenschaft ändern. "
+"Sie senden einen Prozentsatz von dem `Spieler` stattdessen zur `GUI`:.."
+"`health/max_health * 100`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:143
 msgid ""
@@ -271,6 +312,10 @@ msgid ""
 "``Player``'s ``max_health`` in a new variable and use it to set the "
 "``bar``'s ``max_value``:"
 msgstr ""
+"Klicke das Skript Icon rechts neben ``GUI`` im Szenen Reiter um sein Skript "
+"zu öffnen. In der ``_ready`` Funktion werden wir eine neue Variable namens "
+"``max_health`` (maximales leben) für den ``Player`` (Spieler) speichern und "
+"ihr den Wert von ``bar``s (Balken) ``max_value`` (maximaler Wert)  geben:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:164
 msgid ""
@@ -565,29 +610,32 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:383
 msgid "The starting value"
-msgstr ""
+msgstr "Der Start Wert"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:384
 msgid "The end value"
-msgstr ""
+msgstr "Der End-Wert"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:385
 msgid "The animation's duration in seconds"
-msgstr ""
+msgstr "Die Animationsdauer in Sekunden"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:386
 msgid "The type of the transition"
-msgstr ""
+msgstr "Der Typ des Übergangs"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:387
 msgid "The easing to use in combination with the equation."
-msgstr ""
+msgstr "Die einfache Handhabung in Kombination mit der Gleichung."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:389
 msgid ""
 "The last two arguments combined correspond to an easing equation. This "
 "controls how the value evolves from the start to the end point."
 msgstr ""
+"Die letzten beiden kombinierten Argumente entsprechen einer "
+"Lockerungsgleichung. Das steuert, wie sich der Wert vom Anfang bis zum Ende "
+"entwickelt."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:393
 msgid ""
@@ -597,6 +645,12 @@ msgid ""
 "not to animate text directly. We're going to use it to animate a new ``GUI`` "
 "variable named ``animated_health``."
 msgstr ""
+"Klicke auf das Skript Symbol neben der ``GUI`` Node, um es wieder zu öffnen. "
+"Die ``Number`` Node benötigt Text, damit es sich selbst aktualisiert und die "
+"``Bar`` benötigt einen float oder integer. Wir können "
+"``interpolate_property`` nutzen, um eine Nummer, aber nicht direkt einen "
+"Text zu animieren. Wir werden es stattdessen nutzen, um eine neue ``GUI`` "
+"Variable namens ``animated_health`` zu animieren."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:399
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,10 +41,11 @@ msgstr ""
 "**디버그 정보를 보기 위해선** 보통 :kbd:`F12` 키로 열 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
+#, fuzzy
 msgid ""
-"Many browsers, Chromium-based browsers specifically, will not load exported "
-"projects when **opened locally** per ``file://`` protocol. To get around "
-"this, use a local server."
+"Many browsers, including Firefox and Chromium-based browsers, will not load "
+"exported projects when **opened locally** per ``file://`` protocol. To get "
+"around this, use a local server."
 msgstr ""
 "많은 브라우저, 특히 크로뮴 기반 브라우저들이 ``file://`` 프로토콜마다 **지역"
 "으로 열릴 때** 내보낸 프로젝트를 불러오지 않습니다. 이 문제를 해결하려면, 지"
@@ -66,9 +67,10 @@ msgid "WebGL 2"
 msgstr "WebGL 2"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
+#, fuzzy
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
-"HTML5 export uses *WebGL 2* when the *GLES3* option selected."
+"HTML5 export uses *WebGL 2* when the *GLES3* option is selected."
 msgstr ""
 "*OpenGL ES 3* 렌더러가 *Vulkan*\\ 을 위해 Godot에서 사라질 때까지는, HTML5 내"
 "보내기는 *GLES3* 옵션이 선택되어있다면 *WebGL 2*\\ 을 사용합니다."
@@ -201,7 +203,7 @@ msgstr "HTTP 클래스는 HTML5 플랫폼에 여러 제한을 갖고 있습니�
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
-msgstr "``StreamPeer``\\ 로 액세스하거나 바꾸는 것이 불가능합니다"
+msgstr "``StreamPeer``\\ 로 접근하거나 바꾸는 것이 불가능합니다"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
 msgid "Threaded/Blocking mode is not available"
@@ -347,8 +349,8 @@ msgstr ""
 "``.html`` 파일 옆의 다른 내보낸 파일은 그대로 전달되지만, 이름은 바뀌지 않습"
 "니다. ``.wasm`` 파일은 엔진을 구현하는 이진 WebAssembly 모듈입니다. ``.pck`` "
 "파일은 Godot 메인 팩으로 게임을 갖고 있습니다. ``.js`` 파일은 시작 코드가 있"
-"으며 ``.html`` 파일이 엔진에 액세스하는 데 사용됩니다. ``.png`` 파일은 부팅 "
-"스플래시 이미지입니다. 기본 HTML 페이지에서는 쓰이지 않지만,  :ref:`커스텀 "
+"으며 ``.html`` 파일이 엔진에 접근하는 데 사용됩니다. ``.png`` 파일은 부팅 스"
+"플래시 이미지입니다. 기본 HTML 페이지에서는 쓰이지 않지만,  :ref:`커스텀 "
 "HTML 페이지 <doc_customizing_html5_shell>`\\ 를 위해 포함됩니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:147

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:4
-msgid "High dynamic range"
-msgstr "高动态范围"
+msgid "Light transport in game engines"
+msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:7
 msgid "Introduction"
@@ -33,173 +33,175 @@ msgid ""
 "game runs."
 msgstr ""
 "通常情况下，艺术家会进行所有3D建模，然后进行所有纹理处理，在3D DCC中查看他们"
-"令人敬畏的模型并说“看起来很棒，可以进行整合！” 然后进入游戏，设置灯光并运行游"
-"戏。"
+"令人敬畏的模型并说``看起来很棒，可以进行整合！`` 然后进入游戏，设置灯光并运行"
+"游戏。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:14
-#, fuzzy
 msgid ""
-"So at what point does all this HDR business come into play? The idea is that "
-"instead of dealing with colors that go from black to white (0 to 1), we use "
-"colors whiter than white (for example, 0 to 8 times white)."
+"So at what point does all this \"HDR\" business come into play? To "
+"understand the answer, we need to look at how displays behave."
 msgstr ""
-"那么所有这些HDR东西的来源是从哪里来的？ 我们的想法是，不使用从黑色到白色(0到"
-"1)的颜色，而是使用比白色更白的颜色(例如，白色的0到8倍)。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:18
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:17
 msgid ""
-"To be more practical, imagine that in a regular scene, the intensity of a "
-"light (generally 1.0) is set to 5.0. The whole scene will turn very bright "
-"(towards white) and look horrible."
+"Your display outputs linear light ratios from some maximum to some minimum "
+"intensity. Modern game engines perform complex math on linear light values "
+"in their respective scenes. So what's the problem?"
 msgstr ""
-"更实际的是，想象一下在常规场景中，光的强度(通常为1.0)设置为5.0。 整个场景将变"
-"得非常明亮(朝向白色)并且看起来很可怕。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:22
-#, fuzzy
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:21
 msgid ""
-"After this, the luminance of the scene is computed by averaging the "
-"luminance of every pixel of it, and this value is used to bring the scene "
-"back to normal ranges. This last operation is called tone-mapping. Finally, "
-"we are at a similar place from where we started:"
+"The display has a limited range of intensity, depending on the display type. "
+"The game engine renders to an unlimited range of intensity values, however. "
+"While \"maximum intensity\" means something to an sRGB display, it has no "
+"bearing in the game engine; there is only a potentially infinitely wide "
+"range of intensity values generated per frame of rendering."
 msgstr ""
-"在此之后，通过平均场景的每个像素的亮度来计算场景的亮度，并且该值用于使场景回"
-"到正常范围。 最后一个操作称为色调映射。 最后，我们在与我们开始的地方类似的地"
-"方:"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:30
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:27
 msgid ""
-"Except the scene is more contrasted because there is a higher light range at "
-"play. What is this all useful for? The idea is that the scene luminance will "
-"change while you move through the world, allowing situations like this to "
-"happen:"
+"This means that some transformation of the scene light intensity, also known "
+"as _scene referred_ light ratios, need to be transformed and mapped to fit "
+"within the particular output range of the chosen display. This can be most "
+"easily understood if we consider virtually photographing our game engine "
+"scene through a virtual camera. Here, our virtual camera would apply a "
+"particular camera rendering transform to the scene data, and the output "
+"would be ready for display on a particular display type."
 msgstr ""
-"除了场景更加对比，因为在比赛中有更高的光线范围。 这有什么用呢？ 我们的想法"
-"是，当您在世界各地移动时，场景亮度会发生变化，从而允许这样的情况发生:"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:37
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:36
+msgid "Computer displays"
+msgstr ""
+
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:38
 msgid ""
-"Additionally, it is possible to set a threshold value to send to the glow "
-"buffer depending on the pixel luminance. This allows for more realistic "
-"light bleeding effects in the scene."
+"Almost all displays require a nonlinear encoding for the code values sent to "
+"them. The display in turn, using its unique transfer characteristic, "
+"\"decodes\" the code value into linear light ratios of output, and projects "
+"the ratios out of the uniquely colored lights at each reddish, greenish, and "
+"blueish emission site."
 msgstr ""
-"另外，可以根据像素亮度设置阈值以发送到辉光缓冲器。 这允许场景中更逼真的光线流"
-"失效果。"
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:42
-msgid "Linear color space"
-msgstr "线性色彩空间"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:44
 msgid ""
-"The problem with this technique is that computer monitors apply a gamma "
-"curve to adapt better to the way the human eye sees. Artists create their "
-"art on the screen too, so their art has an implicit gamma curve applied to "
-"it."
+"For a majority of computer displays, the specifications of the display are "
+"outlined in accordance with IEC 61966-2-1, also known as the 1996 sRGB "
+"specification. This specification outlines how an sRGB display is to behave, "
+"including the color of the lights in the LED pixels as well as the transfer "
+"characteristics of the input (OETF) and output (EOTF)."
 msgstr ""
-"该技术的问题在于计算机监视器应用伽马曲线以更好地适应人眼看到的方式。 艺术家也"
-"在屏幕上创作他们的艺术，因此他们的艺术有一个隐含的伽玛曲线应用于它。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:49
-#, fuzzy
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:50
 msgid ""
-"The color space where images created on computer monitors exist is called "
-"\"sRGB\". All visual content that people have on their computers or download "
-"from the internet (such as pictures, movies, etc.) is in this colorspace."
+"Not all displays use the same OETF and EOTF as a computer display however, "
+"for example, television broadcast displays use the BT.1886 EOTF. It should "
+"be noted that Godot is limited in its pixel management chain, and only "
+"supports sRGB displays currently."
 msgstr ""
-"存在于计算机监视器中的图像的颜色空间称为“sRGB”。 人们在他们的计算机上或从互联"
-"网上下载的所有视觉内容(例如图片，电影等)都在这个颜色空间中。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:56
-#, fuzzy
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:55
 msgid ""
-"The mathematics of HDR require that we multiply the scene by different "
-"values to adjust the luminance and exposure to different light ranges, and "
-"this curve gets in the way, as we need colors in linear space for this."
+"The sRGB standard is based around the nonlinear relationship between the "
+"current to light output of common desktop computing CRT displays."
 msgstr ""
-"HDR的数学要求我们将场景乘以不同的值来调整亮度和曝光到不同的光范围，这条曲线会"
-"妨碍我们在线性空间中需要颜色。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:62
-msgid "Linear color space & asset pipeline"
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:60
+msgid ""
+"The mathematics of a scene referred model require that we multiply the scene "
+"by different values to adjust the intensities and exposure to different "
+"light ranges. The transfer function of the display cannot appropriately "
+"render the wider dynamic range of the game engine's scene output using the "
+"simple transfer function of the display however, and therefore a more "
+"complex approach to encoding is required."
+msgstr ""
+
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:68
+#, fuzzy
+msgid "Scene linear & asset pipelines"
 msgstr "线性色彩空间和资源管道"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:64
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:70
+#, fuzzy
 msgid ""
-"Working in HDR is not just pressing a switch. First, imported image assets "
-"must be converted to linear space on import. There are two ways to do this:"
+"Working in scene linear sRGB is not as simple as just pressing a switch. "
+"First, imported image assets must be converted to linear light ratios on "
+"import. Even when linearized, those assets may not be perfectly well suited "
+"for use as textures, depending on how they were generated."
 msgstr ""
 "在HDR中工作不仅仅是按下开关。 首先，导入的图像资源必须在导入时转换为线性空"
 "间。 有两种方法可以做到这一点:"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:69
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:75
 #, fuzzy
-msgid "sRGB -> linear conversion on image import"
+msgid "There are two ways to do this:"
+msgstr "获取证书有两种方法:"
+
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:78
+#, fuzzy
+msgid "sRGB transfer function to display linear ratios on image import"
 msgstr "SRGB ->图像导入的线性转换"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:71
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:80
 #, fuzzy
 msgid ""
-"This is the most compatible way of using linear-space assets, and it will "
-"work everywhere, including all mobile devices. The main issue with this is "
-"loss of quality, as sRGB exists to avoid this same problem. Using 8 bits per "
-"channel to represent linear colors is inefficient from the point of view of "
-"the human eye. These textures might later be compressed too, which makes the "
-"problem worse."
+"This is the easiest, but not the most ideal, method of using sRGB assets. "
+"One issue with this is loss of quality. Using 8 bit per channel to represent "
+"linear light ratios is not a sufficient but depth to quantise the values "
+"correctly. These textures might later be compressed too, which can "
+"exacerbate the problem."
 msgstr ""
 "这是使用线性空间资源最兼容的方式，它可以在包括所有移动设备在内的任何地方使"
 "用。 这个问题的主要问题是质量下降，因为存在sRGB以避免同样的问题。 从人眼的角"
 "度来看，每个通道使用8位来表示线性颜色是低效的。 这些纹理可能会在以后被压缩，"
 "这会使问题变得更糟。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:78
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:86
 #, fuzzy
-msgid "In any case, though, this is the easy solution that works everywhere."
-msgstr "无论如何，这是一个随处可用的简单解决方案。"
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:81
-msgid "Hardware sRGB -> linear conversion"
+msgid "Hardware sRGB transfer function to display linear conversion"
 msgstr "硬件sRGB ->线性转换"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:83
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:88
+#, fuzzy
 msgid ""
-"This is the most correct way to use assets in linear-space, as the texture "
-"sampler on the GPU will do the conversion after reading the texel using "
-"floating point. This works fine on PC and consoles, but most mobile devices "
-"do no support it, or do not support it on compressed texture format (iOS for "
-"example)."
+"The GPU will do the conversion after reading the texel using floating point. "
+"This works fine on PC and consoles, but most mobile devices do no support "
+"it, or do not support it on compressed texture format (iOS for example)."
 msgstr ""
 "这是在线性空间中使用资源的最正确方法，因为GPU上的纹理采样器将在使用浮点读取纹"
 "素后执行转换。 这在PC和控制台上运行良好，但大多数移动设备不支持它，或者不支持"
 "压缩纹理格式(例如iOS)。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:90
-msgid "Linear -> sRGB at the end"
-msgstr "线性 -> sRGB结尾"
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:94
+msgid "Scene linear to display referred nonlinear"
+msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:92
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:96
+#, fuzzy
 msgid ""
-"After all the rendering is done, the linear-space rendered image must be "
-"converted back to sRGB. To do this, simply enable sRGB conversion in the "
-"current :ref:`Environment <class_Environment>` (more on that below)."
+"After all the rendering is done, the scene linear render requires "
+"transforming to a suitable output such as an sRGB display. To do this, "
+"enable sRGB conversion in the current :ref:`Environment <class_Environment>` "
+"(more on that below)."
 msgstr ""
 "完成所有渲染后，必须将线性空间渲染图像转换回sRGB。 要做到这一点，只需在当前启"
 "用sRGB转换 :ref:`Environment <class_Environment>` (更多内容见下文)。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:96
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:100
+#, fuzzy
 msgid ""
-"Keep in mind that sRGB -> Linear and Linear -> sRGB conversions must always "
-"be **both** enabled. Failing to enable one of them will result in horrible "
-"visuals suitable only for avant-garde experimental indie games."
+"Keep in mind that sRGB -> Display Linear and Display Linear -> sRGB "
+"conversions must always be **both** enabled. Failing to enable one of them "
+"will result in horrible visuals suitable only for avant-garde experimental "
+"indie games."
 msgstr ""
 "请记住，sRGB ->线性和线性 -> sRGB转换必须始终 **都** 启用。 未能启用其中一个"
 "将导致可怕的视觉效果仅适用于前卫的实验性独立游戏。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:102
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:106
 msgid "Parameters of HDR"
 msgstr "HDR的参数"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:104
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:108
 #, fuzzy
 msgid ""
 "HDR setting can be found in the :ref:`Environment <class_Environment>` "

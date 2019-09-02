@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,6 @@ msgid "To do this, we will use **signals**."
 msgstr "Для этого мы будем использовать **сигналы**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
-#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
@@ -145,7 +144,6 @@ msgstr ""
 "`end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
-#, fuzzy
 msgid ""
 "Load the ``start`` project in Godot. In the ``FileSystem`` dock, double "
 "click on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 "
@@ -183,12 +181,10 @@ msgstr ""
 "Сцена содержит спрайт с фоном игры, графический интерфейс и два персонажа."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
-#, fuzzy
 msgid "The scene tree, with the GUI scene set to display its children"
 msgstr "Дерево сцены, с GUI которая отображает своих детей"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
-#, fuzzy
 msgid ""
 "The GUI scene encapsulates all of the game's Graphical User Interface. It "
 "comes with a barebones script where we get the path to nodes that exist "
@@ -209,13 +205,12 @@ msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
 msgstr "``bar`` - это сама шкала здоровья. Этот узле - ``TextureProgress``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
-#, fuzzy
 msgid ""
 "``tween`` is a component-style node that can animate and control any value "
 "or method from any other node"
 msgstr ""
-"``tween`` это компонент узла, который может анимировать и управлять любым "
-"значением или методом из любого другого узла"
+"`tween` компонент узла, который может анимировать и контролировать любое "
+"значение или метод из любого другого узла"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
 msgid ""
@@ -431,7 +426,6 @@ msgstr ""
 "*сразу после* изменений."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
-#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
@@ -454,7 +448,6 @@ msgstr ""
 "бесплатно."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
-#, fuzzy
 msgid ""
 "With this in mind, let's connect the ``GUI`` to the ``Player``. Click on the "
 "``Player`` node in the scene dock to select it. Head down to the Inspector "
@@ -518,7 +511,6 @@ msgstr ""
 "редактора имеет два преимущества:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
-#, fuzzy
 msgid "Godot can write new callback functions for you in the connected script"
 msgstr ""
 "Godot может написать новые функции обратного вызова для вас в подключенном "
@@ -564,12 +556,10 @@ msgstr ""
 "\"Сделать функцию\" будет сохранять его. Вы можете заменить имя на другое."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
-#, fuzzy
 msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot напишет метод обратного вызова для вас и доставит вас к нему"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
-#, fuzzy
 msgid ""
 "Inside the parentheses after the function name, add a ``player_health`` "
 "argument. When the player emits the ``health_changed`` signal, it will send "
@@ -580,7 +570,6 @@ msgstr ""
 "вместе с ним. Код должен выглядеть так:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
-#, fuzzy
 msgid ""
 "The engine does not convert PascalCase to snake_case, for C# examples we'll "
 "be using PascalCase for method names & camelCase for method parameters, "
@@ -602,7 +591,6 @@ msgstr ""
 "посылает значение своего здоровья"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
-#, fuzzy
 msgid ""
 "Inside ``_on_Player_health_changed``, let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
@@ -655,7 +643,6 @@ msgstr ""
 "задайте свойству ``value`` узла ``TextureProgress`` значение ``new_value``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
-#, fuzzy
 msgid ""
 "``str`` is a built-in function that converts about any value to text. "
 "``Number``'s ``text`` property requires a string, so we can't assign it to "
@@ -746,12 +733,10 @@ msgid "The type of the transition"
 msgstr "Тип перехода"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:387
-#, fuzzy
 msgid "The easing to use in combination with the equation."
 msgstr "Легкость использования в сочетании с уравнением."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:389
-#, fuzzy
 msgid ""
 "The last two arguments combined correspond to an easing equation. This "
 "controls how the value evolves from the start to the end point."
@@ -760,7 +745,6 @@ msgstr ""
 "<#>`__. Этот параметр определяет, как изменяется значение от начала до конца."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:393
-#, fuzzy
 msgid ""
 "Click the script icon next to the ``GUI`` node to open it again. The "
 "``Number`` node needs text to update itself, and the ``Bar`` needs a float "
@@ -802,7 +786,6 @@ msgstr ""
 "строки. Вот почему мы пишем это как ``\"animated_health\"``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:435
-#, fuzzy
 msgid ""
 "The starting point is the current value the bar's at. We still have to code "
 "this part, but it's going to be ``animated_health``. The end point of the "
@@ -837,7 +820,6 @@ msgstr ""
 "узел не активен. Добавьте этот код после последней строки:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
-#, fuzzy
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -890,7 +872,6 @@ msgstr ""
 "`TextureProgress`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
-#, fuzzy
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
@@ -916,7 +897,6 @@ msgstr ""
 "``bar.value``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
-#, fuzzy
 msgid "Try the game again to see a nice blocky animation."
 msgstr "Запустите игру еще раз, чтобы увидеть хорошую блочную анимацию."
 
@@ -925,7 +905,6 @@ msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "Округляя animated\\_health, мы убиваем двух зайцев одним выстрелом"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
-#, fuzzy
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -946,7 +925,6 @@ msgid "Fade the bar when the Player dies"
 msgstr "Исчезновение шкал, когда игрок умирает"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
-#, fuzzy
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
@@ -977,12 +955,10 @@ msgstr ""
 "Найдите сигнал ``died``, выберите его и нажмите кнопку Connect (Подключить)."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
-#, fuzzy
 msgid "The signal should already have the Enemy connected to it"
 msgstr "Сигнал должен быть уже подключен к Врагу."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
-#, fuzzy
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -1013,12 +989,11 @@ msgstr ""
 "разумно: чем больше связей вы добавляете, тем сложнее их отслеживать."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
-#, fuzzy
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
 msgstr ""
-"Чтобы анимировать исчезновение на елементе UI, мы должны использовать его "
+"Чтобы анимировать исчезновение на элементе UI, мы должны использовать его "
 "свойство ``modulate``. ``modulate`` - это ``Color``, который умножает цвета "
 "наших текстур."
 
@@ -1033,7 +1008,6 @@ msgstr ""
 "изменять его цвет с помощью `modulate`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
-#, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
@@ -1045,7 +1019,6 @@ msgstr ""
 "прозрачным."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
-#, fuzzy
 msgid ""
 "We're going to tween between two color values: from a white with an alpha of "
 "``1``, that is to say at full opacity, to a pure white with an alpha value "
@@ -1076,7 +1049,6 @@ msgid ""
 msgstr "Затем снова вызываем метод ``interpolate_property`` узла ``Tween``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
-#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "

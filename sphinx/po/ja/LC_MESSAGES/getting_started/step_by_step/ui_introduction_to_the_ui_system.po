@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,6 +64,9 @@ msgid ""
 "To learn how to control the interface and connect it to other scripts, read :"
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
 msgstr ""
+"インターフェイスを制御し、他のスクリプトに接続する方法については、\\ :ref:`最"
+"初のゲームUIをGodotで構築する <doc_ui_game_user_interface>`\\ を参照してくだ"
+"さい。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
 msgid ""
@@ -166,7 +169,7 @@ msgstr "UI設計の最も一般的な5つのコントロールノード"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
-msgstr ""
+msgstr "\\ TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:73
 msgid ""
@@ -222,7 +225,7 @@ msgstr "赤で変調されたTextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:98
 msgid "TextureButton"
-msgstr ""
+msgstr "\\ TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
 msgid ""
@@ -232,6 +235,11 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 2-bit, pure black and white image."
 msgstr ""
+"**TextureButton**\\ はTextureRectと似ていますが、ボタンの状態ごとに1つずつ、"
+"合計5つのテクスチャスロットがある点が異なります。通常は、Normal、Pressed、"
+"Hoverの各テクスチャを使用します。Focusedは、インタフェースがキーボードの入力"
+"を監視する場合に便利です。6番目のイメージスロットであるクリックマスクを使用す"
+"ると、2ビットの純粋な白黒イメージを使用してクリック可能領域を定義できます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""
@@ -257,7 +265,7 @@ msgstr "TextureButtonとその5つのテクスチャスロット"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
 msgid "TextureProgress"
-msgstr ""
+msgstr "\\ TextureProgress"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:122
 msgid ""
@@ -265,6 +273,9 @@ msgid ""
 "Under and Over textures sandwich the Progress one, which displays the bar's "
 "value."
 msgstr ""
+"**TextureProgress**\\ は、最大3つのスプライトをレイヤ化してプログレスバーを作"
+"成します。UnderテクスチャとOverテクスチャはProgressテクスチャを挟んでおり、"
+"バーの値を表示します。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:126
 msgid ""
@@ -294,7 +305,7 @@ msgstr "TextureProgressバー、3分の2が塗りつぶされました"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:144
 msgid "Label"
-msgstr ""
+msgstr "\\ Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:146
 msgid ""
@@ -311,7 +322,7 @@ msgstr "ラベルの画像"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
 msgid "NinePatchRect"
-msgstr ""
+msgstr "\\ NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:160
 msgid ""
@@ -323,7 +334,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "NinePatchRect scaled with the min\\_size property"
-msgstr "min\\_sizeプロパティでスケーリングされたNinePatchRect"
+msgstr "\\ min\\_sizeプロパティでスケーリングされたNinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:170
 msgid "There are two workflows to build responsive UIs"

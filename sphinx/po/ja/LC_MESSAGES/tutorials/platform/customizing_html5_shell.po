@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,10 @@ msgid ""
 "custom HTML page is specified in the export options as ``Html/Custom Html "
 "Shell``."
 msgstr ""
+"エクスポートテンプレートに付属しているデフォルトのHTMLページではなく、カスタ"
+"ムHTML ページを使用することもできます。これにより、最終的なWebプレゼンテー"
+"ションと動作を大幅にカスタマイズできます。カスタムHTMLページへのパスは、エク"
+"スポートオプションで ``Html/Custom Html Shell`` として指定されます。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:11
 msgid ""
@@ -102,7 +106,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:37
 msgid "``$GODOT_BASENAME``"
-msgstr ""
+msgstr "\\ ``$GODOT_BASENAME``"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:37
 msgid ""
@@ -114,7 +118,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
 msgid "``$GODOT_DEBUG_ENABLED``"
-msgstr ""
+msgstr "\\ ``$GODOT_DEBUG_ENABLED``"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:40
 msgid "``true`` if debugging, ``false`` otherwise"
@@ -122,7 +126,7 @@ msgstr "デバッグする場合は ``true`` 、それ以外の場合は ``false
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
 msgid "``$GODOT_HEAD_INCLUDE``"
-msgstr ""
+msgstr "\\ ``$GODOT_HEAD_INCLUDE``"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:42
 msgid ""
@@ -137,7 +141,7 @@ msgid ""
 msgstr ""
 "HTMLファイルは、JavaScriptファイル ``$GODOT_BASENAME.js`` を評価する必要があ"
 "ります。このファイルは、エンジンの起動に使用されるグローバル ``Engine`` オブ"
-"ジェクトを定義します:ref:`下記参照 <doc_javascript_engine_object>` 。"
+"ジェクトを定義します\\ :ref:`下記参照 <doc_javascript_engine_object>` 。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:50
 msgid ""
@@ -464,7 +468,6 @@ msgid "For example, with PHP:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:258
-#, fuzzy
 msgid "Locale."
 msgstr "ロケール"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,36 +249,43 @@ msgid ""
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:92
-msgid "Flags"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+msgid ""
+"Note that RGTC compression affects the resulting normal map image. You will "
+"have to adjust custom shaders that use the normal map to take this into "
+"account."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
+msgid "Flags"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
 msgid "Repeat"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
 "\"loop\"."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "Repeating can optionally be set to mirrored mode."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:104
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:106
 msgid "Filter"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:106
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:108
 msgid ""
 "When pixels become larger than the screen pixels, this option enables linear "
 "interpolation for them. The result is a smoother (less blocky) texture. This "
@@ -286,11 +293,11 @@ msgid ""
 "making pixel perfect games."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:109
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:111
 msgid "Mipmaps"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:111
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:113
 msgid ""
 "When pixels become smaller than the screen, mipmaps kick in. This helps "
 "reduce the grainy effect when shrinking the textures. Keep in mind that, in "
@@ -298,41 +305,41 @@ msgid ""
 "mipmaps:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:114
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:116
 msgid "Texture width and height must be powers of 2"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:115
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:117
 msgid "Repeat must be enabled"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:117
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:119
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:119
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:121
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:122
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:124
 msgid "Anisotropic"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:124
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:126
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:127
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:129
 msgid "SRGB"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:129
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:131
 msgid ""
 "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or "
 "detail channels need to have this option turned on in order for colors to "
@@ -340,37 +347,37 @@ msgid ""
 "SRGB when used in albedo channels."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:133
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:135
 msgid "Process"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:135
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:137
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:138
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:140
 msgid "Fix Alpha Border"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:140
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:142
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
 "transparency to non transparency. It helps mitigate the outline effect when "
 "exporting images from Photoshop and the like."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:145
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:147
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:148
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid "Premultiplied Alpha"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:152
 msgid ""
 "An alternative to fix darkened borders is to use premultiplied alpha. By "
 "enabling this option, the texture will be converted to this format. Keep in "
@@ -378,22 +385,22 @@ msgid ""
 "blend mode on canvas items that need it."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:154
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:156
 msgid "HDR as sRGB"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:156
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 msgid ""
 "A few HDR files are broken and contain sRGB color data. It is advised not to "
 "use them, but, in the worst-case scenario, toggling this option on will make "
 "them look right."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:159
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:161
 msgid "Invert Color"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:161
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:163
 msgid ""
 "Reverses the image's color. This is useful, for example, to convert a height "
 "map generated by external programs to depth map to use with :ref:"

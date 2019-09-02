@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,7 +148,6 @@ msgid "The 5 most common UI elements"
 msgstr "Os 5 elementos de interface do usuário mais comuns"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:52
-#, fuzzy
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
@@ -210,7 +209,6 @@ msgstr ""
 "Defina a propriedade Stretch Mode para alterar seu comportamento:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
-#, fuzzy
 msgid ""
 "``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
@@ -228,32 +226,28 @@ msgstr ""
 "``Scale`` redimensiona a textura para caber no retângulo delimitador do nó"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
-#, fuzzy
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr "``Tile`` faz a textura repetir, mas não vai escalar"
+msgstr "``Tile`` repete a textura, mas não faz com que ela escale."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
-#, fuzzy
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
-"``Keep`` e ``Keep Centered`` forçam a textura a permanecer no tamanho "
-"original, no canto superior esquerdo ou no centro do quadro, respectivamente"
+"``Keep`` e ``Keep Centered`` forçam a textura a permanecer no seu tamanho "
+"original, no canto superior esquerdo ou no centro do quadro, respectivamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
-#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
-"``Keep Aspect`` e ``Keep Aspect Centered`` dimensiona a textura, mas força-a "
-"a manter sua proporção original, no canto superior esquerdo ou no centro do "
-"quadro, respectivamente"
+"``Keep Aspect`` e ``Keep Aspect Centered`` dimensiona a textura, mas a força-"
+"a a manter sua proporção original, no canto superior esquerdo ou no centro "
+"do quadro, respectivamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
@@ -261,10 +255,9 @@ msgid ""
 msgstr ""
 "``Keep Aspect Covered`` funciona da mesma forma que ``Keep Aspect "
 "Centered``, mas o lado mais curto se ajusta ao retângulo delimitador e o "
-"outro fica preso aos limites do nó"
+"outro se encaixa aos limites do nó."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
-#, fuzzy
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
@@ -372,7 +365,6 @@ msgid "Label"
 msgstr "Rótulo"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:146
-#, fuzzy
 msgid ""
 "**Label** prints text to the screen. You'll find all its properties in the "
 "Label section, in the Inspector. Write the text in the ``Text`` property, "
@@ -382,7 +374,7 @@ msgid ""
 msgstr ""
 "O **Label** exibe texto na tela. Você encontrará todas as suas propriedades "
 "na seção Label, no Inspetor. Escreva o texto na propriedade ``Text`` e "
-"verifique o Autowrap se você quer que ele respeite o tamanho da caixa de "
+"verifique o Autowrap se você quiser que ele respeite o tamanho da caixa de "
 "texto. Se o Autowrap estiver desativado, você não poderá dimensionar o nó. "
 "Você pode alinhar o texto horizontalmente e verticalmente com Align e "
 "Valign, respectivamente."
@@ -403,10 +395,10 @@ msgid ""
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
-"**NinePatchRect** tem uma textura dividida em 3 linhas e 3 colunas. O centro "
-"e os lados ladrilham quando você escala a textura, mas nunca escala os "
-"cantos. É útil para criar painéis, caixas de diálogo e fundos dimensionáveis "
-"para sua interface do usuário."
+"**NinePatchRect** divide uma textura em 3 linhas e 3 colunas. O centro e os "
+"lados são ladrilhados quando você dimensiona a textura, mas nunca dimensiona "
+"os cantos. É útil criar painéis, caixas de diálogo e planos de fundo "
+"escaláveis para sua interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "NinePatchRect scaled with the min\\_size property"
@@ -443,7 +435,6 @@ msgstr ""
 "pai."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
-#, fuzzy
 msgid ""
 "The two approaches are not always compatible. Because a container controls "
 "its children, you cannot use the layout menu on them. Each container has a "
@@ -455,11 +446,11 @@ msgid ""
 msgstr ""
 "As duas abordagens nem sempre são compatíveis. Como um contêiner controla "
 "seus filhos, você não pode usar o menu de layout neles. Cada contêiner tem "
-"um efeito específico, portanto, você pode precisar aninhar vários deles para "
-"obter uma interface de trabalho. Com a abordagem de layout você trabalha de "
-"baixo para cima, nos filhos. Como você não insere contêineres extras na "
-"cena, pode criar hierarquias mais limpas, mas é mais difícil organizar itens "
-"em uma linha, coluna, grade, etc."
+"um efeito específico, então você pode precisar aninhar vários deles para "
+"obter uma interface funcional. Com a abordagem de layout você trabalha de "
+"baixo para cima nos filhos. Como você não insere contêineres extras na cena, "
+"pode criar hierarquias mais limpas, mas é mais difícil organizar itens em "
+"uma linha, coluna, grade, etc."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:179
 msgid ""
@@ -494,7 +485,6 @@ msgid "How to change the anchor"
 msgstr "Como alterar a âncora"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
-#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
@@ -648,7 +638,6 @@ msgid "Arrange control nodes automatically with containers"
 msgstr "Organize nós de controle automaticamente com contêineres"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:278
-#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
@@ -659,7 +648,7 @@ msgstr ""
 "incluindo outros contêineres em linhas, colunas e mais. Use-os para "
 "adicionar preenchimento ao redor da interface ou dos nós centrais em seus "
 "retângulos delimitadores. Todos os contêineres internos são atualizados no "
-"editor para que você possa ver o efeito instantaneamente."
+"editor, assim você vê o efeito instantaneamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:284
 msgid ""

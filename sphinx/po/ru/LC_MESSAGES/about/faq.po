@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Вы можете бесплатно скачивать и использовать Godot для любых целей, личных, "
+"Вы можете бесплатно скачивать и использовать Godot для любых целей: личных, "
 "некоммерческих, коммерческих или иных."
 
 #: ../../docs/about/faq.rst:14
@@ -57,8 +57,8 @@ msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Вы можете свободно модифицировать, распространять и пересобирать Godot в "
-"любых целях, как коммерческих, так и некоммерческих."
+"Вы можете свободно изменять, распространять  и пересобирать Godot по любой "
+"причине, как не коммерчески, так и коммерчески."
 
 #: ../../docs/about/faq.rst:16
 msgid ""
@@ -261,7 +261,8 @@ msgstr ""
 "как можно быстрее использовать сильные стороны Godot. Если вы когда нибудь "
 "писали что нибудь на языке, вроде Python, то тут вы почувствуете себя как "
 "дома. Примеры, история и полный обзор возможностей, предлагаемых GDScript, "
-"ждут вас в `GDScript scripting guide <gdscript_basics>`_."
+"ждут вас в :ref:`Руководство по программированию на GDScript "
+"<gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -270,10 +271,11 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
-"Есть несколько причин использовать GDScript -- особенно когда вы "
-"прототипируете, в альфа/бета состояниях вашего проекта или создании игры не "
-"AAA класса -- но наиболее существенной причиной является общее **снижение "
-"сложности.**"
+"Есть несколько причин использовать GDScript: например, когда вы "
+"прототипируете свой проект, либо он находится на стадии альфа/бета "
+"тестирования, либо работаете над созданием игры не AAA класса. В этих и "
+"подобных случаях, если вам необходимо **снижение сложности** в разработке "
+"проекта, то GDScript поможет в короткие сроки достичь ваших целей. "
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -364,9 +366,10 @@ msgid ""
 "engine, not a great amount of integrations."
 msgstr ""
 "Многие существующие языки имеют ужасные интерфейсы для привязки к C ++, что "
-"приводит к большому количеству кода, ошибкам, узким местам и общей "
-"неэффективности (Lua, Python, Squirrel, JS и т. Д.). Мы хотели "
-"сосредоточиться на отличном движке, а не на большом количестве интеграций."
+"приводит к большому количеству кода, ошибкам, \"бутылочным горлышкам\" и "
+"общей неэффективности (Lua, Python, Squirrel, JS и т. Д.). Мы хотели "
+"сосредоточиться на качественном движке, а не на большом количестве "
+"интеграций."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
@@ -432,7 +435,7 @@ msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question below.)"
 msgstr ""
-"SDK для FBX имеет очень `ограниченную лицензию <http://www.blender.org/bf/"
+"SDK для FBX имеет `ограничительную лицензию <http://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, которая несовместима с `открытой лицензией "
 "<http://opensource.org/licenses/MIT>`_ движка Godot. Как уже было сказано, "
 "поддержка FBX все еще возможна, с помощью сторонних плагинов. (См. Вопрос о "
@@ -474,8 +477,8 @@ msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
-"Чтобы узнать как еще можно обеспечить поддержку вашего SDK, взгляните на "
-"вопрос о плагинах выше."
+"Чтобы узнать, как еще можно обеспечить поддержку вашего SDK, прочтите в "
+"вопросах о плагинах выше."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -552,9 +555,9 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Используйте варианты растягивания в Godot. 2D растяжение с сохранением "
-"пропорций работает лучше всего. Проверьте :ref:`doc_multiple_resolutions` "
-"урок о том, как этого достичь."
+"Используйте варианты растяжения в Godot. 2D растяжение с сохранением "
+"пропорций работает лучше всего. Проверьте урок :ref:"
+"`doc_multiple_resolutions` о том, как этого достичь."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -563,10 +566,10 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
-"Определите минимальное разрешение, а затем решите, хотите ли вы, чтобы ваша "
+"Определите минимальное разрешение и затем решите: хотите ли Вы, чтобы ваша "
 "игра растягивалась вертикально или горизонтально для разных соотношений "
-"сторон или была в одном минимальном разрешении, с отображением черных шкал "
-"прогресса по краям. Это также объяснялось в :ref:`doc_multiple_resolutions`."
+"сторон, или была в одном разрешении с отображением черных полос по краям. "
+"Это также объясняется в :ref:`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -606,8 +609,8 @@ msgid ""
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
 "Для расширения Godot, например, для создания плагинов редактора Godot или "
-"добавления поддержки дополнительных языков, взгляните на :ref:`EditorPlugins "
-"<doc_making_plugins>` и инструмент-скрипты (tool скрипты)."
+"добавления поддержки дополнительных языков, взгляните на :ref:`Редактор "
+"плагинов <doc_making_plugins>` и инструментальные скрипты (tool скрипты)."
 
 #: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
@@ -755,7 +758,7 @@ msgstr ""
 "Хороший способ подхода к обмену идеями и проблемами с сообществом — это "
 "набор пользовательских историй.  Объясните, что вы пытаетесь сделать, какое "
 "поведение вы ожидаете, а затем, какое поведение на самом деле произошло. "
-"Обрамление проблем и идей таким образом поможет всему сообществу "
+"Описание круга проблем и идей таким образом поможет всему сообществу "
 "сосредоточиться на улучшении опыта разработчиков в целом."
 
 #: ../../docs/about/faq.rst:281
@@ -766,19 +769,124 @@ msgstr ""
 "Плюс в карму за предоставление скриншотов, конкретных значений, тестовых "
 "случаев или проектов-примеров (если возможно)."
 
-#: ../../docs/about/faq.rst:285
+#: ../../docs/about/faq.rst:286
+msgid "Why does Godot not use STL (Standard Template Library)"
+msgstr ""
+
+#: ../../docs/about/faq.rst:288
+msgid ""
+"Like many other libraries (Qt as an example), Godot does not make use of "
+"STL. We believe STL is a great general purpose library, but we had special "
+"requirements for Godot."
+msgstr ""
+
+#: ../../docs/about/faq.rst:292
+msgid ""
+"STL templates create very large symbols, which results in huge debug "
+"binaries. We use few templates with very short names instead."
+msgstr ""
+
+#: ../../docs/about/faq.rst:293
+msgid ""
+"Most of our containers cater to special needs, like Vector, which uses copy "
+"on write and we use to pass data around, or the RID system, which requires "
+"O(1) access time for performance. Likewise, our hash map implementations are "
+"designed to integrate seamlessly with internal engine types."
+msgstr ""
+
+#: ../../docs/about/faq.rst:294
+msgid ""
+"Our containers have memory tracking built-in, which helps better track "
+"memory usage."
+msgstr ""
+
+#: ../../docs/about/faq.rst:295
+msgid ""
+"For large arrays, we use pooled memory, which can be mapped to either a "
+"preallocated buffer or virtual memory."
+msgstr ""
+
+#: ../../docs/about/faq.rst:296
+msgid ""
+"We use our custom String type, as the one provided by STL is too basic and "
+"lacks proper internationalization support."
+msgstr ""
+
+#: ../../docs/about/faq.rst:299
+msgid "Why does Godot not use exceptions?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:301
+msgid ""
+"We believe games should not crash, no matter what. If an unexpected "
+"situation happens, Godot will print an error (which can be traced even to "
+"script), but then it will try to recover as gracefully as possible and keep "
+"going."
+msgstr ""
+
+#: ../../docs/about/faq.rst:306
+msgid ""
+"Additionally, exceptions significantly increase binary size for the "
+"executable."
+msgstr ""
+
+#: ../../docs/about/faq.rst:310
+msgid "Why does Godot not enforce RTTI?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:312
+msgid ""
+"Godot provides its own type-casting system, which can optionally use RTTI "
+"internally. Disabling RTTI in Godot means considerably smaller binary sizes "
+"can be achieved, at a little performance cost."
+msgstr ""
+
+#: ../../docs/about/faq.rst:317
+msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:319
+msgid ""
+"While Godot internally for a lot of the heavy performance tasks attempts to "
+"use cache coherency as best as possible, we believe most users don't really "
+"need to be forced to use DoD practices."
+msgstr ""
+
+#: ../../docs/about/faq.rst:323
+msgid ""
+"DoD is mostly a cache coherency optimization that can only gain you "
+"significant performance improvements when dealing with dozens of thousands "
+"of objects (which are processed every frame with little modification). As "
+"in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
+"help you, and you should consider a different approach to optimization."
+msgstr ""
+
+#: ../../docs/about/faq.rst:330
+msgid ""
+"The vast majority of games do not need this and Godot provides handy helpers "
+"to do the job for most cases when you do."
+msgstr ""
+
+#: ../../docs/about/faq.rst:333
+msgid ""
+"If a game that really needs to process such large amount of objects is "
+"needed, our recommendation is to use C++ and GDNative for the high "
+"performance parts and GDScript (or C#) for the rest of the game."
+msgstr ""
+
+#: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
 msgstr "Как я могу поддержать разработку Godot или внести свой вклад?"
 
-#: ../../docs/about/faq.rst:287
+#: ../../docs/about/faq.rst:340
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr "Смотрите :ref:`doc_ways_to_contribute`."
 
-#: ../../docs/about/faq.rst:290
+#: ../../docs/about/faq.rst:343
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Кто работает над Godot? Как я могу связаться с вами?"
 
-#: ../../docs/about/faq.rst:292
+#: ../../docs/about/faq.rst:345
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,8 +55,8 @@ msgid ""
 "full of fresh ingredients with which to cook."
 msgstr ""
 "Godotでのゲーム作りもとても似た感覚です。このエンジンを使うときはキッチンにい"
-"るような感覚になります。このキッチンでは、*ノード*は料理に使う、冷蔵庫にいっ"
-"ぱいの新鮮な材料です。"
+"るような感覚になります。このキッチンでは、*ノード*\\ は料理に使う、冷蔵庫に"
+"いっぱいの新鮮な材料です。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
@@ -79,7 +79,7 @@ msgid ""
 msgstr ""
 "まずは基本から始めましょう。ノードはゲームを構築する際に基礎となる要素です。"
 "上で触れたように、ノードはさまざまな機能に特化することができます。しかし、ど"
-"のようなノードも常に以下の性質をもっています。"
+"のようなノードも常に以下の性質をもっています:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
@@ -107,7 +107,7 @@ msgid ""
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
 "この最後のものが重要です。ノードは他のノードたちを子に持てます。こうやって配"
-"置していくと、ノードは**ツリー**になります。"
+"置していくと、ノードは\\ **ツリー**\\ になります。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -158,7 +158,7 @@ msgstr "ディスクに保存し、また読み込める。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr "*インスタンス化*できる (詳しくは後で)。"
+msgstr "*インスタンス化*\\ できる(詳しくは後で)。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
@@ -175,9 +175,9 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
-"基本的に、Godotエディターは**シーンエディター**です。2Dおよび3Dのシーンや、"
-"ユーザーインターフェースを編集するツールを多く備えていますが、しかし基礎とし"
-"ているのは、シーンやそれを構成するノードを編集するという概念だけです。"
+"基本的に、Godotエディターは\\ **シーンエディター**\\ です。2Dおよび3Dのシーン"
+"や、ユーザーインターフェースを編集するツールを多く備えていますが、しかし基礎"
+"としているのは、シーンやそれを構成するノードを編集するという概念だけです。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 msgid "Creating a new project"
@@ -207,7 +207,7 @@ msgid ""
 "a path for the project and specify the project name \"New Project\":"
 msgstr ""
 "新しいプロジェクトを作るには「新規プロジェクト」をクリックします。プロジェク"
-"トを置くパスを指定し、名前を「新しいプロジェクト」にしてください。"
+"トを置くパスを指定し、名前を「新しいプロジェクト」にしてください:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 msgid "Editor"
@@ -219,7 +219,7 @@ msgid ""
 "Godot editor:"
 msgstr ""
 "「新しいプロジェクト」を作成したら、それを開きましょう。これでGodotエディタが"
-"開きます。"
+"開きます:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
 msgid ""
@@ -242,19 +242,19 @@ msgid ""
 "can be created:"
 msgstr ""
 "するとノード作成のダイアログが開いて、作成できるノードの長いリストが表示され"
-"ます。"
+"ます:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
-"そこからまず「Label」ノードを選択します。検索するのが恐らく一番早いでしょう。"
+"そこからまず「Label」ノードを選択します。検索するのが恐らく一番早いでしょう:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
-"最後に、Labelを作ります！　作成ボタンを押したときに、色々なことが起こります。"
+"最後に、Labelを作ります！　作成ボタンを押したときに、色々なことが起こります:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:124
 msgid ""
@@ -262,8 +262,8 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
-"まず初めに、シーンが2Dエディタに切り替わり (Labelは2Dノードのため)、選択され"
-"た状態でLabelがビューポート左上の角にあらわれます。"
+"まず初めに、シーンが2Dエディタに切り替わり(Labelは2Dノードのため)、選択された"
+"状態でLabelがビューポート左上の角にあらわれます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:127
 msgid ""
@@ -405,6 +405,8 @@ msgid ""
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
+"ちなみに :ref:`プロジェクト設定 <class_ProjectSettings>`シングルトンを使っ"
+"て、実行時に、カスタム設定オプションの追加と確認も可能です。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:207
 msgid "To be continued..."
@@ -416,3 +418,6 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
+"このチュートリアルはシーンとノードについて説明しました。ここまでは、まだ、一"
+"つのシーンと一つのノードだけですが。心配いりません。次のチュートリアルではこ"
+"れを拡張します。"

@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/networking/websocket.rst:4
+msgid "WebSocket"
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:7
+msgid "HTML5 and WebSocket"
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:9
+msgid ""
+"The WebSocket protocol was standardized in 2011 with the original goal of "
+"allowing browsers to create stable and bidirectional connections with a "
+"server. Before that, browsers used to only suppport HTTPRequests, which is "
+"not well suited for bidirectional communication."
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:12
+msgid ""
+"The protocol is quite simple, message based, and a very powerful tool to "
+"send push notifications to browsers, and has been used to implement chats, "
+"turn-based games, etc. It still uses a TCP connection, which is good for "
+"reliability but not for latency, so not good for real-time applications like "
+"VoIP and fast-paced games (see :ref:`WebRTC <doc_webrtc>` for those use "
+"cases)."
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:14
+msgid ""
+"Due to its simplicity, its wide compatibility, and being easier to use than "
+"a raw TCP connection, WebSocket soon started to spread outside the browsers, "
+"in native applications as a mean to communicate with network servers."
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:16
+msgid "Godot supports WebSocket in both native and HTML5 exports."
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:19
+#, fuzzy
+msgid "Using WebSocket in Godot"
+msgstr "Godot에서 NuGet 패키지 사용하기"
+
+#: ../../docs/tutorials/networking/websocket.rst:21
+msgid ""
+"WebSocket is implemented in Godot via three main classes :ref:"
+"`WebSocketClient <class_WebSocketClient>`, :ref:`WebSocketServer "
+"<class_WebSocketServer>`, and :ref:`WebSocketPeer <class_WebSocketPeer>`. "
+"The WebSocket implementation is compatibile with the High Level Multiplayer. "
+"See section on :ref:`high-level multiplayer <doc_high_level_multiplayer>` "
+"for more details."
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:24
+#, fuzzy
+msgid "Minimal client example"
+msgstr "타이머(Timer) 예제"
+
+#: ../../docs/tutorials/networking/websocket.rst:26
+msgid ""
+"This example will show you how to create a WebSocket connection to a remote "
+"server, and how to send and receive data."
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:79
+#, fuzzy
+msgid "This will print:"
+msgstr "이렇게 프린트 될 것입니다:"
+
+#: ../../docs/tutorials/networking/websocket.rst:87
+#, fuzzy
+msgid "Minimal server example"
+msgstr "타이머(Timer) 예제"
+
+#: ../../docs/tutorials/networking/websocket.rst:89
+msgid ""
+"This example will show you how to create a WebSocket server that listen for "
+"remote connections, and how to send and receive data."
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:145
+msgid "This will print (when a client connects) something similar to this:"
+msgstr ""
+
+#: ../../docs/tutorials/networking/websocket.rst:153
+#, fuzzy
+msgid "Advanced chat demo"
+msgstr "고급 벡터 연산"
+
+#: ../../docs/tutorials/networking/websocket.rst:155
+msgid ""
+"A more advanced chat demo which optionally uses the multiplayer mid-level "
+"abstraction and a high level multiplayer demo are available in the `godot "
+"demo projects <https://github.com/godotengine/godot-demo-projects>`_ under "
+"`networking/websocket_chat` and `networking/websocket_multiplayer`."
+msgstr ""

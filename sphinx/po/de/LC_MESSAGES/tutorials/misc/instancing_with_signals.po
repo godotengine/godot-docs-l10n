@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:4
-#, fuzzy
 msgid "Instancing with signals"
-msgstr "Szenen in­s­tan­zi­ie­ren"
+msgstr "Szenen in­s­tan­ti­ie­ren"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:6
 msgid ""
@@ -42,7 +41,6 @@ msgid "Shooting example"
 msgstr "Beispiel für Geschosse"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:18
-#, fuzzy
 msgid ""
 "Consider a player character that can rotate and shoot towards the mouse. "
 "Every time the mouse button is clicked, we create an instance of the bullet "
@@ -86,9 +84,8 @@ msgstr ""
 "weiter oben im Baum sein kann."
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:58
-#, fuzzy
 msgid "You could do this by adding the bullet to the main scene directly:"
-msgstr "Du kannst dies tun, indem Du das Geschoss direkt hinzufügst:"
+msgstr "Sie können dies tun, indem man das Geschoss direkt hinzufügt:"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:71
 #, fuzzy
@@ -124,16 +121,16 @@ msgstr ""
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:83
 msgid "Here is the code for the player using signals to emit the bullet:"
 msgstr ""
-"Hier ist der Code für den Spieler, der Signale verwendet, um Geschosse "
-"abzufeuern:"
+"Source Code für die Spielfigur, die unter Verwendung von Events Geschosse "
+"abfeuert:"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:128
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
 msgstr ""
-"In der Hauptszene verbinden wir das Signal des Spielers (es erscheint in "
-"\"Node\"-Registerkarte)."
+"In der Main-Szene verbinden wir dann das Spieler-Signal (dieses wird im "
+"\"Node\"-Tab auftauchen)."
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:152
 msgid ""

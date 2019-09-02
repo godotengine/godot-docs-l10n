@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:4
 msgid "Control the game's UI with code"
-msgstr ""
+msgstr "コードを使用してゲームのUIを制御する"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:7
 msgid "Intro"
-msgstr ""
+msgstr "イントロ"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
 msgid ""
@@ -36,36 +36,42 @@ msgid ""
 "Here's what you'll create: the bar and the counter animate when the "
 "character takes a hit. They fade when it dies."
 msgstr ""
+"ここで作成するのは、キャラクタがヒットしたときにバーとカウンターをアニメー"
+"ションするものです。プレイヤーが死ぬとと消えます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:18
 msgid "You will learn:"
-msgstr ""
+msgstr "次の方法について学習します:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:20
 msgid "How to **connect** a character to a GUI with signals"
-msgstr ""
+msgstr "シグナルを使ってキャラクターをGUIに**接続**する方法"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:21
 msgid "How to **control** a GUI with GDscript"
-msgstr ""
+msgstr "GDscriptを使用してGUIを**制御する**方法"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
 msgstr ""
+":ref:`Tween <class_Tween>`\\ ノードを持つライフ バーを\\ **アニメーション化す"
+"る**\\ 方法"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:25
 msgid ""
 "If you want to learn how to set up the interface instead, check out the step-"
 "by-step UI tutorials:"
 msgstr ""
+"代わりにインターフェイスを設定する方法を学びたい場合は、ステップバイステップ"
+"のUIチュートリアルを参照してください:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid "Create a main menu screen"
-msgstr ""
+msgstr "メインメニュー画面の作成"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
 msgid "Create a game user interface"
-msgstr ""
+msgstr "ゲーム ユーザーインターフェイスの作成"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -77,6 +83,13 @@ msgid ""
 "manageable, and allows different team members to work on different parts of "
 "the game."
 msgstr ""
+"ゲームをコーディングするときには、最初にゲームプレイのコアとなる部分、つまり"
+"動作のメカニズム、プレイヤーの入力、勝敗条件を構築しなければなりません。その"
+"後にUIを設計します。可能であれば、プロジェクトを構成するすべての要素を別々に"
+"しておきます。各キャラクタは、独自のスクリプトを持つ独自のシーンに存在する必"
+"要があり、UI要素も同様です。これにより、バグを防ぎ、プロジェクトを管理しやす"
+"くし、さまざまなチームメンバーがゲームのさまざまな部分で作業できるようになり"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:40
 msgid ""
@@ -85,10 +98,13 @@ msgid ""
 "constant time intervals. We want the life bar to update when the Player "
 "takes damage."
 msgstr ""
+"中核となるゲームプレーとUIの準備ができたら、何らかの方法でそれらを接続する必"
+"要があります。この例では、一定の時間間隔でプレーヤーを攻撃する敵がいます。プ"
+"レイヤーがダメージを受けたときにライフバーが更新されるようにします。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:45
 msgid "To do this, we will use **signals**."
-msgstr ""
+msgstr "これを行うには、**シグナル**を使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
 msgid ""
@@ -104,7 +120,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:53
 msgid "Download and explore the start project"
-msgstr ""
+msgstr "スタートプロジェクトをダウンロードして参照する"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:55
 msgid ""
@@ -112,6 +128,10 @@ msgid ""
 "ui_code_life_bar.zip>`. It contains all the assets and scripts you need to "
 "get started. Extract the .zip archive to get two folders: `start` and `end`."
 msgstr ""
+"Godotプロジェクトをダウンロード(:download:`ui_code_life_bar.zip <files/"
+"ui_code_life_bar.zip>`)してください。チュートリアルに必要なすべての素材やスク"
+"リプトが入っています。zipアーカイブを解凍して、2つのフォルダー`start`と`end`"
+"を取得します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
 msgid ""
@@ -132,14 +152,19 @@ msgid ""
 "prototype and test the gameplay, chances are it won't work well and you'll "
 "have to re-create it from scratch."
 msgstr ""
+"これは、ゲームのコーディング方法の典型です。最初にコアゲームプレイを実装し、"
+"プレーヤーの死を処理してから、インターフェイスを追加します。それは、UIがゲー"
+"ム内で起こっていることに耳を傾けているからです。ゲームプレイのプロトタイプを"
+"作成してテストする前にUIを設計すると、うまく機能しない可能性があり、そうなる"
+"と最初から作成し直す必要がある場合があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:71
 msgid "The scene contains a background sprite, a GUI, and two characters."
-msgstr ""
+msgstr "シーンには、背景スプライト、GUI、および2つの文字が含まれています。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
 msgid "The scene tree, with the GUI scene set to display its children"
-msgstr ""
+msgstr "子を表示するように設定されたGUIシーンを含むシーンツリー"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
 msgid ""
@@ -152,22 +177,29 @@ msgstr ""
 msgid ""
 "``number_label`` displays a life count as a number. It's a ``Label`` node"
 msgstr ""
+"``number_label`` は、残り体力を数値として表示します。 これは ``Label`` ノード"
+"です"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
 msgstr ""
+"``bar``はライフバーそのものです。 これは ``TextureProgress`` ノードです"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
 msgid ""
 "``tween`` is a component-style node that can animate and control any value "
 "or method from any other node"
 msgstr ""
+"``tween`` は、他の任意のノードから任意の値またはメソッドをアニメートおよび制"
+"御できるコンポーネントスタイルのノードです"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
 msgid ""
 "The project uses a simple organisation that works for game jams and tiny "
 "games."
 msgstr ""
+"このプロジェクトは、ゲームジャムや小さなゲームに適したシンプルな構造を使用し"
+"ています。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 msgid ""
@@ -178,6 +210,11 @@ msgid ""
 "In the `scripts/` folder you will find the enemy, the player, and the GUI "
 "controller scripts."
 msgstr ""
+"プロジェクトのルートの`res ://`フォルダに`LevelMockup`があります。これがメイ"
+"ンのゲームシーンであり、ここで作業します。ゲームを構成するすべてのコンポーネ"
+"ントは、`scenes/`フォルダにあります。`assets/`フォルダには、ゲームのスプライ"
+"トとHPカウンタのフォントが含まれています。`scripts/`フォルダには、敵のスクリ"
+"プト、プレイヤーのスクリプト、GUIコントローラのスクリプトがあります。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:117
 msgid ""
@@ -185,14 +222,16 @@ msgid ""
 "the scene in the editor. You'll see the LifeBar and EnergyBar are sub-scenes "
 "themselves."
 msgstr ""
+"シーンツリーのノードの右側にあるシーン編集アイコンをクリックして、エディタで"
+"シーンを開きます。 「LifeBar」と「EnergyBar」はそれ自体サブシーンです。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:121
 msgid "The scene tree, with the Player scene set to display its children"
-msgstr ""
+msgstr "プレーヤシーンがその子を表示するように設定されたシーンツリー"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:124
 msgid "Set up the Lifebar with the Player's max\\_health"
-msgstr ""
+msgstr "プレーヤーのmax\\_healthを使用してライフバーをセットアップする"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:126
 msgid ""
@@ -202,6 +241,10 @@ msgid ""
 "player's health to the GUI every time they take damage. The GUI will then "
 "update the ``Lifebar`` and ``Number`` nodes with this value."
 msgstr ""
+"プレイヤーの現在の状態を何らかの方法でGUIに伝え、ライフバーのテクスチャを更新"
+"し、残りの状態を画面左上のHPカウンターに表示する必要があります。そのために、"
+"プレイヤーがダメージを受けるたびに、プレイヤーのヘルス情報をGUIに送信します。"
+"GUIは、この値で ``Lifebar`` ノードと ``Number`` ノードを更新します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:132
 msgid ""
@@ -210,6 +253,9 @@ msgid ""
 "step is thus to tell the ``GUI`` what the green character's ``max_health`` "
 "is."
 msgstr ""
+"ここで数字を表示することもできますが、正しい比率で更新するには、バーの"
+"max_valueを初期化する必要があります。最初のステップは、 ``GUI`` に緑のキャラ"
+"クタの ``max_health`` を伝えることです。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:139
 msgid ""
@@ -218,6 +264,10 @@ msgid ""
 "to change its `max_value` property. You send a percentage from the `Player` "
 "to the `GUI` instead:  `health / max_health * 100`."
 msgstr ""
+"バーの`TextureProgres`sでは、デフォルトで`max_value`が`100`になっています。 "
+"キャラクターの健康状態を数字で表示する必要がない場合は、その`max_value`プロパ"
+"ティを変更する必要はありません。代わりに、`プレーヤー`から`GUI`にパーセンテー"
+"ジを送信します。`health / max_health * 100`。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:143
 msgid ""
@@ -226,6 +276,9 @@ msgid ""
 "``Player``'s ``max_health`` in a new variable and use it to set the "
 "``bar``'s ``max_value``:"
 msgstr ""
+"シーンドックの ``GUI`` の右側にあるスクリプトアイコンをクリックしてスクリプト"
+"を開きます。 ``_ready`` 関数では、プレーヤーの ``max_health`` を新しい変数に"
+"格納し、それを使って ``bar`` の ``max_value`` を設定します:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:164
 msgid ""
@@ -234,6 +287,10 @@ msgid ""
 "from there. It gives us access to the node. The second part of the "
 "statement, ``.max_health``, accesses the ``max_health`` on the Player node."
 msgstr ""
+"内訳を見てみましょう。 ``$\"../Characters/Player\"`` は、シーンツリーの1つ上"
+"のノードに移動し、そこから ``Characters/Player`` ノードを取得する短縮形です。"
+"それは私達にノードへのアクセスを与えます。ステートメントの2番目の部分、 ``."
+"max_health`` は、Playerノード上の ``max_health`` にアクセスします。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:170
 msgid ""
@@ -241,6 +298,9 @@ msgid ""
 "the two lines into one, but we'll need to use ``player_max_health`` again "
 "later in the tutorial."
 msgstr ""
+"2行目は、この値を ``bar.max_value`` に割り当てます。 2行を1つにまとめることも"
+"できますが、チュートリアルの後半では ``player_max_health`` をもう一度使用する"
+"必要があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:174
 msgid ""
@@ -248,6 +308,9 @@ msgid ""
 "game, so we could work with this. Why do we still use ``max_health``? There "
 "are two reasons:"
 msgstr ""
+"``Player.gd`` はゲーム開始時に ``health`` を ``max_health`` に設定するので、"
+"これで作業できます。なぜ ``max_health`` を使用しているのですか？ 2つの理由が"
+"あります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:178
 msgid ""
@@ -255,6 +318,9 @@ msgid ""
 "``max_health``: a future version of the game may load a level where the "
 "player already lost some health."
 msgstr ""
+"``health`` が常に ``max_health`` と等しいという保証はありません。体力が回復し"
+"ないで次のステージに進むようなゲームでは、プレイヤーがすでに ``health`` を幾"
+"ばくか失った状態が読み込まれる可能性があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
 msgid ""
@@ -266,16 +332,25 @@ msgid ""
 "to set everything up and prepare the game session. Learn more about _ready: :"
 "doc:`scripting_continued`"
 msgstr ""
+"ゲームでシーンを開くと、Godotは [シーン](Scene) ドッキング内の順序に従って、"
+"上から下にノードを1つずつ作成します。`GUI`と`Player`は同じノードブランチの一"
+"部ではありません。相互にアクセスするときに両方が存在することを確認するには、"
+"`_ready`関数を使用する必要があります。Godotは、すべてのノードをロードした直"
+"後、ゲームを開始する前に`_ready`を呼び出します。すべてを設定してゲームセッ"
+"ションを準備するのに最適な機能です。_readyの詳細は:doc:`scripting_continued`"
+"を参照して下さい"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
 msgid "Update health with a signal when the player takes a hit"
-msgstr ""
+msgstr "プレーヤーがヒットしたときにシグナルでヘルスを更新する"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:190
 msgid ""
 "Our GUI is ready to receive the ``health`` value updates from the "
 "``Player``. To achieve this we're going to use **signals**."
 msgstr ""
+"GUIは ``Player`` から ``health`` 値の更新を受け取る準備ができています。これを"
+"実現するために、\\ **シグナル**\\ を使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:195
 msgid ""
@@ -284,6 +359,10 @@ msgid ""
 "can also create your own using the `signal` keyword. On the `Player` node, "
 "you'll find two signals we created for you: `died` and `health_changed`."
 msgstr ""
+"`enter_tree` や `exit_tree` のように、すべてのノードがそれぞれ作成されたり破"
+"棄されたりしたときに出力する便利な組み込みシグナルがたくさんあります。 "
+"`signal` キーワードを使用して独自のものを作成することもできます。 `Player` "
+"ノードには、作成した2つのシグナル `died` と `health_changed` が表示されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:197
 msgid ""
@@ -306,6 +385,10 @@ msgid ""
 "information. And you will update the state of your connected node *right "
 "after* the change happened."
 msgstr ""
+"特定のフレームで、更新「前」に別のノードのプロパティを参照すると、最後のフ"
+"レームから値が取得されます。これは、修正が難しい不明瞭なバグにつながります。"
+"一方、信号は変化が起こった直後に発せられます。新しい情報を**確実**に入手でき"
+"ます。また、変更が行われた「直後」に、接続されたノードの状態を更新します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
 msgid ""
@@ -318,6 +401,15 @@ msgid ""
 "gameprogrammingpatterns.com/observer.html>`_. The `full book <http://"
 "gameprogrammingpatterns.com/contents.html>`_ is available online for free."
 msgstr ""
+"Observerパターンは、シグナルの派生元であるにもかかわらず、ノードのブランチ間"
+"に結合を追加します。しかし、一般的には、2つの異なるクラス間で通信するために"
+"ノードに直接アクセスするよりも軽量で安全です。親ノードが子から値を取得するこ"
+"とは問題ありません。しかし、2つの別々のブランチを使って作業している場合には、"
+"シグナルを優先する必要があります。Observerパターンの詳細については、Game "
+"Programming Patternsの`Observer pattern <http://gameprogrammingpatterns.com/"
+"observer.html>`_\\ を参照してください。`full book <http://"
+"gameprogrammingpatterns.com/contents.html>`_\\ はオンラインで無料で入手できま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
 msgid ""
@@ -339,11 +431,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:228
 msgid "``health_changed`` is emitted when the character got hit."
-msgstr ""
+msgstr "``health_changed`` は、キャラクタがヒットしたときに放出されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:232
 msgid "We're connecting to the health\\_changed signal"
-msgstr ""
+msgstr "「health\\_changed」シグナルに接続しています"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
 msgid ""
@@ -358,7 +450,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:244
 msgid "The Connect Signal window with the GUI node selected"
-msgstr ""
+msgstr "GUIノードが選択された「Connect Signal」ウィンドウ"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:248
 msgid ""
@@ -369,12 +461,13 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
 msgid "Godot can write new callback functions for you in the connected script"
 msgstr ""
+"Godotは接続されたスクリプトで新しいコールバック関数を書くことができます"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:251
 msgid ""
 "An emitter icon appears next to the node that emits the signal in the Scene "
 "dock"
-msgstr ""
+msgstr "シーンドックで信号を放出するノードの横にエミッタアイコンが表示されます"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
 msgid ""
@@ -395,10 +488,14 @@ msgid ""
 "method already, the \"Make Function\" option will keep it. You may replace "
 "the name with anything you'd like."
 msgstr ""
+"エディタからノードを接続すると、Godotは ``_on_EmitterName_signal_name`` のパ"
+"ターンでメソッド名を生成します。既にメソッドを作成している場合は、「関数を作"
+"成」オプションを選択するとメソッドが保持されます。この名前は任意の名前に置き"
+"換えることができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
 msgid "Godot writes the callback method for you and takes you to it"
-msgstr ""
+msgstr "Godotがコールバック・メソッドを作成し、呼び出します"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
 msgid ""
@@ -420,6 +517,8 @@ msgid ""
 "In Player.gd, when the Player emits the health\\_changed signal, it also "
 "sends its health value"
 msgstr ""
+"Player.gdでは、Playerがhealth\\_changedシグナルを放出すると、そのヘルス値も送"
+"信します"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
 msgid ""
@@ -432,6 +531,8 @@ msgid ""
 "We could directly update the health value on `LifeBar` and `Number`. There "
 "are two reasons to use this method instead:"
 msgstr ""
+"`LifeBar`と`Number`のヘルス値を直接更新できます。 代わりにこの方法を使用する"
+"理由は2つあります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
 msgid ""
@@ -441,26 +542,29 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
 msgid "We will reuse this method a bit later"
-msgstr ""
+msgstr "この方法は少し後で再利用します"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:312
 msgid ""
 "Create a new ``update_health`` method below ``_on_Player_health_changed``. "
 "It takes a new\\_value as its only argument:"
 msgstr ""
+"``_on_Player_health_changed`` の下に新しい ``update_health`` メソッドを作成し"
+"ます。唯一の引数としてnew\\_valueを取ります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:327
 msgid "This method needs to:"
-msgstr ""
+msgstr "このメソッドは以下を行う必要があります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:329
 msgid ""
 "set the ``Number`` node's ``text`` to ``new_value`` converted to a string"
 msgstr ""
+"``Number`` ノードの ``text`` を文字列に変換された ``new_value`` に設定します"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:331
 msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
-msgstr ""
+msgstr "``TextureProgress`` の ``value`` を ``new_value`` に設定します"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
 msgid ""
@@ -476,16 +580,20 @@ msgid ""
 "of the game. Press F5 to test the game: the life bar updates with every "
 "attack!"
 msgstr ""
+"また、 ``_ready`` 関数の最後で ``update_health`` を呼び出して、ゲームの開始時"
+"に適切な値で ``Number`` ノードの ``text`` を初期化します。F5キーを押してゲー"
+"ムをテストします。攻撃を受けるたびにライフバーが更新されます!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""
 "Both the Number node and the TextureProgress update when the Player takes a "
 "hit"
 msgstr ""
+"Playerがヒットすると、NumberノードとTextureProgressの両方が更新されます"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:365
 msgid "Animate the loss of life with the Tween node"
-msgstr ""
+msgstr "Tweenノードを使用した、自機損失のアニメーション"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:367
 msgid ""
@@ -503,40 +611,45 @@ msgid ""
 "``tween`` variable. Let's now use it. We have to make some changes to "
 "``update_health``."
 msgstr ""
+"``GUI`` シーンには、 ``tween`` 変数に格納されている ``Tween`` 子ノードが既に"
+"含まれています。それでは、それを使用してみましょう。 ``update_health`` にいく"
+"つかの変更を加える必要があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:378
 msgid ""
 "We will use the ``Tween`` node's ``interpolate_property`` method. It takes "
 "seven arguments:"
 msgstr ""
+"``Tween`` ノードの ``interpolate_property`` メソッドを使用します。引数は7つあ"
+"ります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:381
 msgid "A reference to the node who owns the property to animate"
-msgstr ""
+msgstr "アニメーションするプロパティを所有するノードへの参照"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:382
 msgid "The property's identifier as a string"
-msgstr ""
+msgstr "文字列としてのプロパティの識別子"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:383
 msgid "The starting value"
-msgstr ""
+msgstr "開始値"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:384
 msgid "The end value"
-msgstr ""
+msgstr "終了値"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:385
 msgid "The animation's duration in seconds"
-msgstr ""
+msgstr "アニメーションの継続時間(秒)"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:386
 msgid "The type of the transition"
-msgstr ""
+msgstr "トランジションのタイプ"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:387
 msgid "The easing to use in combination with the equation."
-msgstr ""
+msgstr "方程式と組み合わせて使用するイージング。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:389
 msgid ""
@@ -552,6 +665,12 @@ msgid ""
 "not to animate text directly. We're going to use it to animate a new ``GUI`` "
 "variable named ``animated_health``."
 msgstr ""
+"``GUI`` ノードの横にあるスクリプト・アイコンをクリックして再度開きます。 "
+"``Number`` ノード自体を更新するにはテキストが必要で、 ``Bar`` には浮動小数点"
+"または整数が必要です。 ``interpolate_property`` を使用して数値をアニメーショ"
+"ンすることはできますが、テキストを直接アニメーションさせることはできません。"
+"これを使用して、 ``animated_health`` という名前の新しい ``GUI変数`` をアニ"
+"メーション化します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:399
 msgid ""
@@ -561,10 +680,14 @@ msgid ""
 "``animated_health`` value. Call the ``Tween`` node's "
 "``interpolate_property`` method:"
 msgstr ""
+"スクリプトの先頭で、新しい変数を定義し、 ``animated_health`` という名前を付"
+"け、値を0に設定します。 ``update_health`` メソッドに戻り、その内容をクリアし"
+"ます。 ``animated_health`` 値をアニメートします。 ``Tween`` ノードの "
+"``interpolate_property`` メソッドを呼び出します:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:421
 msgid "Let's break down the call:"
-msgstr ""
+msgstr "呼出を中断しましょう:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:427
 msgid ""
@@ -572,6 +695,9 @@ msgid ""
 "``Tween``'s interpolate\\_property takes the property's name as a string. "
 "That's why we write it as ``\"animated_health\"``."
 msgstr ""
+"``animated_health`` を ``self`` 、つまり ``GUI`` ノードをターゲットにしま"
+"す。 ``Tween`` の ``interpolation_property`` は、プロパティの名前を文字列とし"
+"て取得します。 ですので ``\"animated_health\"`` とします。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:435
 msgid ""
@@ -580,6 +706,10 @@ msgid ""
 "animation is the ``Player``'s ``health`` after the ``health_changed``: "
 "that's ``new_value``. And ``0.6`` is the animation's duration in seconds."
 msgstr ""
+"開始点は、バーの現在の値です。この部分はまだコーディングする必要があります"
+"が、 ``animated_health`` になります。アニメーションの終了点は、 "
+"``health_changed`` 後の ``Player`` の ``health`` 、つまり ``new_value`` で"
+"す。 ``0.6`` はアニメーションの秒単位の長さです。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:445
 msgid ""
@@ -588,6 +718,9 @@ msgid ""
 "do anything with a linear transition, but we must provide this last argument "
 "or we'll get an error."
 msgstr ""
+"最後の2つの引数は、 ``Tween`` クラスの定数です。 ``TRANS_LINEAR`` は、アニ"
+"メーションがリニアでなければならないことを意味します。 ``EASE_IN`` は線形遷移"
+"では何も行いませんが、この最後の引数を指定しないとエラーが発生します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:450
 msgid ""
@@ -595,6 +728,9 @@ msgid ""
 "``tween.start()``. We only have to do this once if the node is not active. "
 "Add this code after the last line:"
 msgstr ""
+"``tween.start()`` で ``Tween`` ノードをアクティブにするまでアニメーションは再"
+"生されません。ノードがアクティブでない場合は、これを一度だけ実行する必要があ"
+"ります。 最後の行の後にこのコードを追加します:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
 msgid ""
@@ -608,17 +744,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:472
 msgid "Assign the animated\\_health to the LifeBar"
-msgstr ""
+msgstr "LifeBarにanimated\\_healthを割り当て"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:474
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
 msgstr ""
+"``animated_health`` 変数はアニメーションされますが、実際の ``Bar`` ノードと"
+"``Number`` ノードは更新されません。これを修正しましょう。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:477
 msgid "So far, the update\\_health method looks like this:"
-msgstr ""
+msgstr "これまでのところ、update\\_healthメソッドは次のようになります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
 msgid ""
@@ -626,12 +764,17 @@ msgid ""
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
 "``TextureProgress`` nodes like before, inside of ``_process``:"
 msgstr ""
+"この例では、 ``number_label`` はテキストを取るため、 ``_process`` メソッドを"
+"使ってアニメーションする必要があります。前と同じように、 ``_process`` 内の "
+"``Number`` ノードと ``TextureProgress`` ノードを更新します:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:523
 msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
 msgstr ""
+"`number_label`と`bar`は、`Number`ノードと`TextureProgress`ノードへの参照を格"
+"納する変数です。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
 msgid ""
@@ -639,6 +782,10 @@ msgid ""
 "number and looks like a mess. And considering the style of the game, it'd be "
 "nice for the life bar to animate in a choppier fashion."
 msgstr ""
+"ゲームをプレイして、バーがスムーズにアニメーションされるのを確認します。しか"
+"し、テキストに小数点以下が表示され、混乱しているように見えます。また、ゲーム"
+"のスタイルを考慮すると、ライフバーがより途切れやすい方法でアニメーションされ"
+"るとよいでしょう。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
 msgid "The animation is smooth, but the number is broken"
@@ -650,10 +797,15 @@ msgid ""
 "variable named ``round_value`` to store the rounded ``animated_health``. "
 "Then assign it to ``number_label.text`` and ``bar.value``:"
 msgstr ""
+"``animated_health`` を四捨五入することで両方の問題を解決できます。 "
+"``round_value`` という名前のローカル変数を使用して、丸められた "
+"``animated_health`` を格納します。 それを ``number_label.text`` と ``bar."
+"value`` に割り当てます:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
 msgid "Try the game again to see a nice blocky animation."
 msgstr ""
+"もう一度ゲームを実行すると、ブロックのようなアニメーションが表示されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
@@ -671,7 +823,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
 msgid "Fade the bar when the Player dies"
-msgstr ""
+msgstr "自機損失時にバーを消す"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
 msgid ""
@@ -680,6 +832,10 @@ msgid ""
 "well when the character died. We will reuse the same ``Tween`` node as it "
 "manages multiple animations in parallel for us."
 msgstr ""
+"緑のキャラクタが消滅すると、消滅アニメーションが再生されて消えます。この時点"
+"では、インタフェースは表示されません。キャラクターが死んだら、バーも消去しま"
+"しょう。複数のアニメーションを並行して管理するため、同じ ``Tween`` ノードを再"
+"利用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
 msgid ""
@@ -691,11 +847,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:583
 msgid "Find the ``died`` signal, select it, and click the Connect button."
-msgstr ""
+msgstr "``died`` シグナルを見つけて選択し、接続ボタンをクリックします。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
 msgid "The signal should already have the Enemy connected to it"
-msgstr ""
+msgstr "シグナルにはすでに敵が接続しているはずです"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
 msgid ""
@@ -705,10 +861,14 @@ msgid ""
 "the bottom of the window. This will take you to the ``GUI.gd`` file in the "
 "Script Workspace."
 msgstr ""
+"シグナルの接続ウィンドウで、 ``GUI`` ノードにもう一度接続します。ノードへのパ"
+"スは ``../../GUI`` 、ノード内のメソッドは ``_on_Player_died`` と表示されま"
+"す。関数作成オプションをオンのままにして、ウィンドウ下部の接続をクリックしま"
+"す。 これにより、スクリプトワークスペースの ``GUI.gd`` ファイルに移動します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:597
 msgid "You should get these values in the Connecting Signal window"
-msgstr ""
+msgstr "これらの値は、シグナルの接続ウィンドウに表示されます"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:601
 msgid ""
@@ -716,12 +876,17 @@ msgid ""
 "information, we emit a new signal. Use them wisely: the more connections you "
 "add, the harder they are to track."
 msgstr ""
+"GUIが新しい情報を必要とするたびに、新しいシグナルを発信します。より多くのコネ"
+"クションを追加すればするほど、それらを追跡するのは難しくなります。上手く使い"
+"ましょう。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
 msgstr ""
+"UI要素でフェードをアニメーションするには、その ``modulate`` プロパティを使用"
+"する必要があります。 ``modulate`` はテクスチャの色を乗算する ``Color`` です。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:609
 msgid ""
@@ -729,6 +894,9 @@ msgid ""
 "from it. It lets you toggle the visibility of the node, assign a shader to "
 "it, and modify it using a color with `modulate`."
 msgstr ""
+"`modulate`は`CanvasItem`クラスから取得され、すべての2DノードとUIノードはこれ"
+"を継承します。ノードの表示/非表示を切り替え、シェーダを割り当て、 `modulate`"
+"で色を使用して修正することができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
 msgid ""
@@ -745,6 +913,11 @@ msgid ""
 "``_on_Player_died`` method and name them ``start_color`` and ``end_color``. "
 "Use the ``Color()`` constructor to build two ``Color`` values."
 msgstr ""
+"2つのカラー値の間でTweenを行います。1つはアルファが ``1`` の白、つまり完全に"
+"不透明な状態、もう1つはアルファが ``0`` の完全に透明な白です。 "
+"``_on_Player_die`` メソッドの先頭に2つの変数を追加し、それぞれに "
+"``start_color`` と ``end_color`` という名前を付けます。 ``Color()`` コンスト"
+"ラクタを使用して、2つの ``Color`` 値を構築します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:637
 msgid ""
@@ -752,12 +925,16 @@ msgid ""
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
 "the alpha channel."
 msgstr ""
+"``Color(1.0、1.0、1.0)``は白に対応します。 4番目の引数、``start_color``と"
+"``end_color``のそれぞれ``1.0``と``0.0``は、アルファチャンネルです。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
 msgstr ""
+"次に、``Tween``ノードの``interpolate_property``メソッドをもう一度呼び出す必要"
+"があります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
 msgid ""
@@ -769,11 +946,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
 msgid "And that is it. You may now play the game to see the final result!"
-msgstr ""
+msgstr "以上です。これでゲームをプレイして最終結果を確認できます!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
 msgid "The final result. Congratulations for getting there!"
-msgstr ""
+msgstr "最終結果。上手くいきましたね!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
 msgid ""
@@ -783,3 +960,7 @@ msgid ""
 "signal to forward the information from the `Player` to the `GUI` and let the "
 "`GUI` process it."
 msgstr ""
+"まったく同じテクニックを使用して、プレイヤーが毒になったときにバーの色を変更"
+"し、体力が低下したときにバーを赤にし、彼らがクリティカルヒットしたときにUIを"
+"振動させることができます。 `Player`からの情報を`GUI`に転送し、`GUI`に処理させ"
+"ます。"

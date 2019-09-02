@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -432,12 +432,15 @@ msgid ""
 "First, turn wireframe off. To do so, click in the upper-left of the Viewport "
 "again, where it says \"Perspective\", and select \"Display Normal\"."
 msgstr ""
+"首先，关闭线框显示。若恢复显示，再次点击视窗左上方的“透视”按钮，选择“正常显"
+"示”。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:246
 msgid ""
 "Note how the mesh color goes flat. This is because the lighting on it is "
 "flat. Let's add a light!"
 msgstr ""
+"注意网格颜色是如何变得平滑的。这是因为它的光线是平滑的。让我们加一盏灯吧!"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:248
 #, fuzzy
@@ -451,6 +454,8 @@ msgid ""
 "because the light shader uses the normals from the :ref:`Mesh <class_mesh>` "
 "to calculate light."
 msgstr ""
+"你会看到光线影响了地形，但这看起来很奇怪。问题是光线对地形的影响就像在平面上"
+"一样。这是因为光着色器使用:ref:`网格 <class_mesh>`中的法线来计算光。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:256
 msgid ""
@@ -459,6 +464,9 @@ msgid ""
 "can recalculate the normals in the shader or use a normal texture that "
 "corresponds to our noise. Godot makes both easy for us."
 msgstr ""
+"法线存储在网格中，但是我们在着色器中改变网格的形状，所以法线不再正确。为了解"
+"决这个问题，我们可以在着色器中重新计算法线，或者使用与我们的噪声相对应的法线"
+"纹理。Godot让这一切变得很简单。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:260
 msgid ""
@@ -467,18 +475,24 @@ msgid ""
 "lighting calculations for us. We will cover this method in the next part of "
 "this tutorial, for now we will read normals from a texture."
 msgstr ""
+"您可以在顶点函数中手动计算新的法线，然后只需设置“法线”。设置“法线”后，Godot将"
+"为我们完成所有困难的光照计算。我们将在本教程的下一部分介绍这种方法，现在我们"
+"将从纹理中读取法线。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:264
 msgid ""
 "Instead we will rely on the NoiseTexture again to calculate normals for us. "
 "We do that by passing in a second noise texture."
 msgstr ""
+"相反，我们将再次依靠噪声来计算法线。我们通过传入第二个噪声纹理来做到这一点。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:271
 msgid ""
 "Set this second uniform texture to another NoiseTexture with another "
 "OpenSimplexNoise. But this time, check off \"As Normalmap\"."
 msgstr ""
+"使用另一个开放式简单噪声将第二个均匀纹理设置为另一个噪声纹理。但这一次，勾"
+"选“作为法线贴图”。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:276
 msgid ""
@@ -486,6 +500,8 @@ msgid ""
 "to assign it in the ``fragment()`` function. The ``fragment()`` function "
 "will be explained in more detail in the next part of this tutorial."
 msgstr ""
+"因为这是一个法线映射而不是每个顶点的法线。我们将在“fragment()”函数中分配"
+"它。“fragment()”函数将在本教程的下一部分详细解释。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:284
 msgid ""
@@ -494,6 +510,8 @@ msgid ""
 "``NORMALMAP``. This way Godot will handle the wrapping the texture around "
 "the mesh automatically."
 msgstr ""
+"当我们有法线对应于一个特定顶点时，我们设置“法线”，但如果你有一个来自纹理的法"
+"线贴图，要使用“法线贴图”设置法线。这样，Godot将自动处理环绕网格的纹理。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:288
 msgid ""
@@ -502,23 +520,27 @@ msgid ""
 "xz`` position from the ``vertex()`` function to the ``fragment()`` function. "
 "We do that with varyings."
 msgstr ""
+"最后，为了确保我们从相同的地方读取噪声纹理和法线贴图纹理，我们要通过“VERTEX."
+"xz”从“vertex()”函数到“fragment()”函数的位置。我们用偏差值来做。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:292
 msgid ""
 "Above the ``vertex()`` define a ``vec2`` called ``vertex_position``. And "
 "inside the ``vertex()`` function assign ``VERTEX.xz`` to ``vertex_position``."
 msgstr ""
+"在``vertex()``上定义一个叫做``vertex_position``的``vec2``。并且在 "
+"``vertex()`` 函数内分配``VERTEX.xz``到``vertex_position``。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:304
 msgid ""
 "And now we can access ``vertex_position`` from the ``fragment()`` function."
-msgstr ""
+msgstr "现在我们可以从“fragment()”函数中访问“顶点_位置”。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:312
 msgid ""
 "With the normals in place the light now reacts to the height of the mesh "
 "dynamically."
-msgstr ""
+msgstr "法线就位后，光线就会对网格的高度做出动态反应。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:316
 #, fuzzy
@@ -531,6 +553,8 @@ msgid ""
 "Here is the full code for this tutorial. You can see it is not very long as "
 "Godot handles most of the difficult stuff for you."
 msgstr ""
+"以下是本教程的完整代码。您可以看到，Godot会为您处理大多数繁琐的事情，本教程篇"
+"幅不会太长。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:343
 msgid ""
@@ -539,3 +563,6 @@ msgid ""
 "a fragment function to accompany this vertex function and we will cover a "
 "more advanced technique to turn this terrain into an ocean of moving waves."
 msgstr ""
+"这就是这部分的全部内容。希望您现在已了解Godot中顶点着色器的基本知识。在本教程"
+"的下一部分中，我们将编写一个片段函数来配合这个顶点函数，并且我们将介绍一种更"
+"高级的技术来将这个地形转换成一个移动的波浪海洋。"

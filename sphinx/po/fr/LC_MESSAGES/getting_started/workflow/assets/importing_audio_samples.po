@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,10 @@ msgid "Why import?"
 msgstr "Pourquoi importer ?"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
+#, fuzzy
 msgid ""
 "Raw audio data in general is large and undesired. Godot provides two main "
-"options to import your audio data: WAV and OGG Vorbis."
+"options to import your audio data: WAV and Ogg Vorbis."
 msgstr ""
 "Les données audio brutes en général sont lourdes et indésirables. Godot "
 "propose deux options principales pour importer vos données audio : WAV et "
@@ -41,7 +42,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:14
 #, fuzzy
 msgid ""
-"Wav files use raw data or light compression, make few demands on the CPU to "
+"WAV files use raw data or light compression, make few demands on the CPU to "
 "play back (hundreds of simultaneous voices in this format are fine), but "
 "take up significant space."
 msgstr ""
@@ -67,53 +68,60 @@ msgid "Format"
 msgstr "Format"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
-msgid "1 Second of Audio"
+#, fuzzy
+msgid "1 second of audio"
 msgstr "1 seconde d'audio"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
-msgid "WAV 24 bits, 96 kHz, Stereo"
+#, fuzzy
+msgid "WAV 24-bit, 96 kHz, stereo"
 msgstr "WAV 24 bits, 96 kHz, Stéréo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
-msgid "576kb"
-msgstr "576kb"
+msgid "576 KB"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
-msgid "WAV 16 bits, 44 kHz, Mono"
+#, fuzzy
+msgid "WAV 16-bit, 44 kHz, mono"
 msgstr "WAV 16 bits, 44 kHz, Mono"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
-msgid "88kb"
-msgstr "88kb"
+msgid "88 KB"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
-msgid "WAV 16 bits, IMA-ADPCM, Mono"
+#, fuzzy
+msgid "WAV 16-bit, IMA-ADPCM, mono"
 msgstr "WAV 16 bits, IMA-ADPCM, Mono"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
-msgid "22kb"
-msgstr "22kb"
+msgid "22 KB"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
-msgid "OGG 128kbps, Stereo"
-msgstr "OGG 128kbps, Stéréo"
+#, fuzzy
+msgid "Ogg Vorbis 128 Kb/s, stereo"
+msgstr "OGG Vorbis 96kbps, Stéréo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
-msgid "16kb"
-msgstr "16kb"
+msgid "16 KB"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
-msgid "OGG Vorbis 96kbps, Stereo"
+#, fuzzy
+msgid "Ogg Vorbis 96 Kb/s, stereo"
 msgstr "OGG Vorbis 96kbps, Stéréo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
-msgid "12kb"
-msgstr "12kb"
+msgid "12 KB"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:36
+#, fuzzy
 msgid ""
-"Consider using WAV for short and repetitive sound effects, and OGG for "
-"music, speech, and long sound effects."
+"Consider using WAV for short and repetitive sound effects, and Ogg Vorbis "
+"for music, speech, and long sound effects."
 msgstr ""
 "En général, il est recommandé d'utiliser WAV pour la plupart des effets "
 "sonores, en particulier ceux qui sont courts et répétitifs, et OGG pour la "
@@ -124,10 +132,12 @@ msgid "Best practices"
 msgstr "Les meilleures pratiques"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:42
+#, fuzzy
 msgid ""
-"Godot 3+ has an amazing bus system with built-in effects. This saves SFX "
-"artists the need to add reverb to the sound effects, reducing their size "
-"greatly and ensuring correct trimming. Say no to SFX with baked reverb!"
+"Godot has an :ref:`extensive bus system <doc_audio_buses>` with built-in "
+"effects. This saves SFX artists the need to add reverb to the sound effects, "
+"reducing their size greatly and ensuring correct trimming. Say no to SFX "
+"with baked reverb!"
 msgstr ""
 "Godot 3+ a un système de bus incroyable avec des effets intégrés. Cela évite "
 "aux artistes SFX d’avoir besoin d’ajouter de la réverbération aux effets "
@@ -157,7 +167,8 @@ msgstr ""
 "taille et ajoutent une latence au moment de leur lecture."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
-msgid "Importing as WAV with the Trimming option enabled solves this."
+#, fuzzy
+msgid "Importing as WAV with the **Trimming** option enabled solves this."
 msgstr ""
 "L'importation en WAV avec l'option de rognage activée résout ce problème."
 
@@ -166,9 +177,10 @@ msgid "Looping"
 msgstr "Boucler"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:65
+#, fuzzy
 msgid ""
 "Godot supports looping in the samples (tools such as Sound Forge or Audition "
-"can add loop points to wav files). This is useful for sound effects, such as "
+"can add loop points to WAV files). This is useful for sound effects, such as "
 "engines, machine guns etc. Ping-pong looping is also supported."
 msgstr ""
 "Godot prend en charge le bouclage dans les échantillons (des outils tels que "
@@ -177,8 +189,9 @@ msgstr ""
 "mitrailleuses, etc. Le bouclage de ping-pong est également pris en charge."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:70
+#, fuzzy
 msgid ""
-"As an alternative, the import screen has a \"loop\" option that enables "
+"As an alternative, the Import dock has a **Loop** option that enables "
 "looping for the entire sample when importing."
 msgstr ""
 "Comme alternative, l'écran d'importation a une option \"Boucle\" qui permet "

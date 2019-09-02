@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:4
 msgid "Introduction to the buildsystem"
-msgstr ""
+msgstr "ビルドシステムの説明"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:9
 msgid "SCons"
@@ -34,6 +34,11 @@ msgid ""
 "There are many reasons why we have chosen SCons over other alternatives, for "
 "example:"
 msgstr ""
+"Godotはビルドするために`SCons <https://www.scons.org/>`__を使用します。私たち"
+"はそれが好きなので他のものに変えるつもりはありません。他のビルドシステムが"
+"Godotをビルドすることができるかさえ、確信がありません。ビルドシステムをCMake"
+"やVisual Studioに変更するようリクエストをよく受けますが、そうする気はありませ"
+"ん。他のシステムではなくSConsを選ぶのには多くの理由があります。例えば。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:18
 msgid ""
@@ -192,7 +197,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:138
 msgid "Target"
-msgstr ""
+msgstr "ターゲット"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:140
 msgid "Target controls optimization and debug flags. Each mode means:"

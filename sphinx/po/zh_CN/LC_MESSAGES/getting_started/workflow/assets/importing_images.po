@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -272,21 +272,28 @@ msgstr ""
 "用”将使Godot导入 RGTC 压缩的图像。 默认情况下，它被设置为“Detect”，这意味着如"
 "果纹理一旦被用作法线贴图，则会将其更改为“Enabled”并自动重新导入。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:92
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+msgid ""
+"Note that RGTC compression affects the resulting normal map image. You will "
+"have to adjust custom shaders that use the normal map to take this into "
+"account."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Flags"
 msgstr "标志"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
 msgstr "根据使用情况，将图像作为纹理导入时可以切换很多设置。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
 msgid "Repeat"
 msgstr "重复"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
@@ -295,15 +302,15 @@ msgstr ""
 "这种设置在 3D 中比 2D 更常用(因此它通常在 2D 中禁用)。 它使得UV坐标超出了0,0 "
 "- 1,1范围“循环”。 重复可选为设置成镜像模式。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "Repeating can optionally be set to mirrored mode."
 msgstr "可以选择将重复设置为镜像模式。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:104
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:106
 msgid "Filter"
 msgstr "过滤器"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:106
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:108
 msgid ""
 "When pixels become larger than the screen pixels, this option enables linear "
 "interpolation for them. The result is a smoother (less blocky) texture. This "
@@ -313,11 +320,11 @@ msgstr ""
 "当像素大于屏幕像素时，此选项可为它们启用线性插值。结果是更平滑的(更少块状)纹"
 "理。此设置可以在 2D 和 3D 中常用，但在制作像素匹配的游戏时通常会被禁用。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:109
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:111
 msgid "Mipmaps"
 msgstr "Mipmaps"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:111
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:113
 msgid ""
 "When pixels become smaller than the screen, mipmaps kick in. This helps "
 "reduce the grainy effect when shrinking the textures. Keep in mind that, in "
@@ -327,22 +334,22 @@ msgstr ""
 "当像素变得比屏幕小时，mipmap 会启用。这有助于减少纹理收缩时的颗粒感效应。 请"
 "记住，在较旧的硬件(GLES2，主要是移动设备)中，使用 mipmap 需要满足一些要求:"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:114
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:116
 msgid "Texture width and height must be powers of 2"
 msgstr "纹理宽度和高度必须是2的幂"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:115
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:117
 msgid "Repeat must be enabled"
 msgstr "必须启用Repeat"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:117
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:119
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
 "在制作手机游戏和应用程序时，希望完全兼容并使用 mipmap，请牢记以上内容。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:119
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:121
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
@@ -350,22 +357,22 @@ msgstr ""
 "在 3D 模式下，应该打开 mipmap，因为这也会提高性能(更小大小的纹理用于更远的对"
 "象)。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:122
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:124
 msgid "Anisotropic"
 msgstr "各向异性"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:124
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:126
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
 msgstr ""
 "当纹理几乎与视图平行时(如地板)，该选项通过减少模糊程度使它们具有更多细节。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:127
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:129
 msgid "SRGB"
 msgstr "SRGB 色彩空间"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:129
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:131
 msgid ""
 "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or "
 "detail channels need to have this option turned on in order for colors to "
@@ -373,23 +380,23 @@ msgid ""
 "SRGB when used in albedo channels."
 msgstr ""
 "渲染 3D 图像时，Godot使用线性颜色空间。 映射到 albedo (反照率)或细节通道的纹"
-"理需要打开此选项才能使颜色看起来正确。 当设置为“Detect”模式时，纹理将在反照率"
-"通道中使用时标记为 SRGB 。"
+"理需要打开此选项才能使颜色看起来正确。 当设置为``Detect``模式时，纹理将在反照"
+"率通道中使用时标记为 SRGB 。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:133
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:135
 msgid "Process"
 msgstr "过程"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:135
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:137
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr "当作为纹理导入时, 某些特殊过程可以应用于图像。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:138
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:140
 msgid "Fix Alpha Border"
 msgstr "修复 Alpha 边框"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:140
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:142
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
 "transparency to non transparency. It helps mitigate the outline effect when "
@@ -398,17 +405,17 @@ msgstr ""
 "这将周围相同颜色的像素从透明转换为非透明。 它有助于减轻从 Photoshop 等导出图"
 "像时的轮廓效果。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:145
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:147
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
 msgstr "除非需要特定的值，否则最好在默认情况下保持开启。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:148
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid "Premultiplied Alpha"
 msgstr "预乘Alpha"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:152
 msgid ""
 "An alternative to fix darkened borders is to use premultiplied alpha. By "
 "enabling this option, the texture will be converted to this format. Keep in "
@@ -418,11 +425,11 @@ msgstr ""
 "修复黑暗边界的替代方法是使用预乘alpha。 通过启用此选项，纹理将转换为此格式。 "
 "请记住，在画布物体上使用预乘 ALPHA 混合模式需要创建一个材质。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:154
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:156
 msgid "HDR as sRGB"
 msgstr "HDR 转为 SRGB"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:156
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 msgid ""
 "A few HDR files are broken and contain sRGB color data. It is advised not to "
 "use them, but, in the worst-case scenario, toggling this option on will make "
@@ -431,11 +438,11 @@ msgstr ""
 "一些 HDR 文件可能被破坏并包含 SRGB 颜色数据。 一般不建议使用它们，但在最坏的"
 "情况下，切换此选项将使它们看起来正确。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:159
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:161
 msgid "Invert Color"
 msgstr "反转颜色"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:161
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:163
 msgid ""
 "Reverses the image's color. This is useful, for example, to convert a height "
 "map generated by external programs to depth map to use with :ref:"

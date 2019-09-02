@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:4
 msgid "Your first Spatial shader: part 2"
-msgstr ""
+msgstr "您的第一个空间着色器：第2部分"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:6
 msgid ""
@@ -33,12 +33,18 @@ msgid ""
 "allows you to ignore all these parameters and write a fully customized "
 "shader."
 msgstr ""
+"从高级设置开始，Godot所做的是为用户提供一组可选设置的参数(“环境光遮蔽”、“次表"
+"面散射强度”、“边缘”等等)这些参数对应不同的复杂效应(环境遮挡、次表面散射、边缘"
+"照明等等)如果没有写入，代码在编译之前被抛出，因此着色器不会产生额外特性的成"
+"本。这使得用户很容易拥有复杂的支持PBR着色，而不需要编写复杂的着色器。当然，"
+"Godot还允许您忽略所有这些参数，并编写一个完全定制的着色器。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:13
 msgid ""
 "For a full list of these parameters see the :ref:`spatial shader "
 "<doc_spatial_shader>` reference doc."
 msgstr ""
+"有关这些参数的完整列表，请参见:ref:`空间着色器<doc_spatial_shader>`参考文档。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:15
 #, fuzzy
@@ -55,7 +61,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:20
 msgid "Your first spatial fragment function"
-msgstr ""
+msgstr "第一个空间片段函数"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:22
 msgid ""
@@ -66,12 +72,16 @@ msgid ""
 "the shader, directly below ``shader_type``, and they specify what sort of "
 "functionality you want the built-in aspects of the shader to have."
 msgstr ""
+"如本教程前一部分所述。在Godot中，片段函数的标准用法是设置不同的材质属性，然后"
+"让Godot处理剩下的部分。为了提供更大的灵活性，Godot还提供了渲染模式。渲染模式"
+"设置在着色器的顶部，直接在“着色_方式”下面，它们指定了你想要着色器的内置方面具"
+"有什么样的功能。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:28
 msgid ""
 "For example, if you do not want to have lights affect an object, set the "
 "render mode to ``unshaded``:"
-msgstr ""
+msgstr "例如，如果你不想让灯光影响一个物体，设置渲染模式为“无阴影”："
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:35
 msgid ""
@@ -79,12 +89,14 @@ msgid ""
 "to use toon shading instead of more-realistic PBR shading, set the diffuse "
 "mode and specular mode to toon:"
 msgstr ""
+"您还可以将多个渲染模式堆叠在一起。例如，如果你想使用卡通材质而不是更真实的PBR"
+"材质，将漫反射模式和高光模式设置为卡通："
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:42
 msgid ""
 "This model of built-in functionality allows you to write complex custom "
 "shaders by changing only a few parameters."
-msgstr ""
+msgstr "这个内置功能模型允许您通过更改几个参数来编写复杂的自定义着色器。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:45
 #, fuzzy
@@ -97,32 +109,32 @@ msgstr ":参考:`空间着色器<文档_空间着色器>`"
 msgid ""
 "In this part of the tutorial, we will walk through how to take the bumpy "
 "terrain from the previous part and turn it into an ocean."
-msgstr ""
+msgstr "在本教程的这一部分中，我们将介绍如何将前一部分的崎岖地形变成海洋。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:50
 msgid ""
 "First let's set the color of the water. We do that by setting ``ALBEDO``."
-msgstr ""
+msgstr "首先让我们设置水的颜色，我们通过设置“反射率”来做到这一点。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:52
 msgid "``ALBEDO`` is a ``vec3`` that contains the color of the object."
-msgstr ""
+msgstr "“反射率”是一种与物体颜色相关的“三维数组”。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:54
 msgid "Let's set it to a nice shade of blue."
-msgstr ""
+msgstr "我们把它调成蓝色。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:64
 msgid ""
 "We set it to a very dark shade of blue because most of the blueness of the "
 "water will come from reflections from the sky."
-msgstr ""
+msgstr "我们把它设置为非常深的蓝色，因为大部分的蓝色的水将来自于从天空的反射。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:67
 msgid ""
 "The PBR model that Godot uses relies on two main parameters: ``METALLIC`` "
 "and ``ROUGHNESS``."
-msgstr ""
+msgstr "PBR模型的Godot用户两个主要参数：“金属度”和“粗糙度”。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:69
 msgid ""
@@ -130,6 +142,8 @@ msgid ""
 "``ROUGHNESS`` will make a material appear like a shiny plastic, while a high "
 "roughness makes the material appear more solid in color."
 msgstr ""
+"粗糙度是指材料表面的光滑程度。低“粗糙度”会使材料看起来像闪亮的塑料，而高粗糙"
+"度使材料在颜色上看起来更坚实。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:73
 msgid ""

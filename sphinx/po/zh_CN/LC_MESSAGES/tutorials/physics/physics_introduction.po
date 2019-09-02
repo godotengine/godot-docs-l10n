@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,7 +159,7 @@ msgstr ""
 msgid ""
 "In order to detect collisions, at least one ``Shape2D`` must be assigned to "
 "the object."
-msgstr "为了检测碰撞，必须至少为对象分配一个“Shape2D”。"
+msgstr "为了检测碰撞，必须至少为对象分配一个``Shape2D``。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:64
 msgid ""
@@ -196,8 +196,9 @@ msgid ""
 "a body's state variables such as ``position`` or ``linear velocity`` may not "
 "be accurate for the current frame."
 msgstr ""
-"物理引擎可能会产生多个线程以提高性能，因此它可以使用最多一个帧来处理物理。 因"
-"此，物体状态变量(如“位置”)或“线速度”的值可能对当前帧不准确。"
+"物理引擎可能会产生多个线程以提高性能，所以它能使用最多一个帧来处理物理。 因"
+"此，物体状态的变量的值，如 ``position`` 或 ``linear velocity`` ，可能在当前帧"
+"不完全准确。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:84
 #, fuzzy
@@ -217,7 +218,6 @@ msgid "Collision layers and masks"
 msgstr "碰撞层与遮罩"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:92
-#, fuzzy
 msgid ""
 "One of the most powerful, but frequently misunderstood, collision features "
 "is the collision layer system. This system allows you to build up complex "
@@ -226,8 +226,8 @@ msgid ""
 "can interact with."
 msgstr ""
 "碰撞层系统是最强大但经常被误解的碰撞特征之一。 该系统允许您在各种对象之间建立"
-"复杂的交互。 关键概念是 **层** 和 **遮罩** 。 每个 ``CollisionObject2D`` 都有"
-"20个不同的物理层，它可以与之交互。"
+"复杂的交互。 关键概念是 **层(layers)** 和 **遮罩(masks)** 。 每个 "
+"``CollisionObject2D`` 都有20个不同的物理层可以相互作用。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:98
 msgid "Let's look at each of the properties in turn:"
@@ -241,7 +241,8 @@ msgstr "collision_layer"
 msgid ""
 "This describes the layers that the object appears **in**. By default, all "
 "bodies are on layer ``1``."
-msgstr "这描述了对象在 **中出现的图层** 。 默认情况下，所有实体都在图层“1”上。"
+msgstr ""
+"这描述了对象在 **中出现的图层** 。 默认情况下，所有实体都在图层``1``上。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:107
 msgid "collision_mask"
@@ -269,7 +270,7 @@ msgid ""
 "assigned in Project Settings -> Layer Names."
 msgstr ""
 "跟踪您正在使用每个图层的内容可能很困难，因此您可能会发现为您正在使用的图层指"
-"定名称很有用。 可以在“项目设置” ->“图层名称”中指定名称。"
+"定名称很有用。 可以在``项目设置`` ->``图层名称``中指定名称。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:117
 msgid "**Example:**"
@@ -293,9 +294,9 @@ msgid ""
 "should interact with. For example, the Player's settings would look like "
 "this:"
 msgstr ""
-"首先命名1-4层“墙”，“游戏角色”，“敌人”和“硬币”，然后使用“图层”属性将每个节点类"
-"型放在其各自的图层中。 然后通过选择应与之交互的图层来设置每个节点的“Mask”属"
-"性。 例如，游戏角色的设置如下所示:"
+"首先命名1-4层``墙``，``游戏角色``，``敌人``和``硬币``，然后使用``图层``属性将"
+"每个节点类型放在其各自的图层中。 然后通过选择应与之交互的图层来设置每个节点的"
+"``Mask``属性。 例如，游戏角色的设置如下所示:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:133
 msgid "Area2D"
@@ -360,7 +361,7 @@ msgstr "``StaticBody2D``节点最常用于属于环境的对象或不需要任�
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:161
 msgid "Example uses for ``StaticBody2D``:"
-msgstr "“StaticBody2D”的示例用法:"
+msgstr "``StaticBody2D``的示例用法:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:163
 msgid "Platforms (including moving platforms)"
@@ -396,8 +397,8 @@ msgid ""
 "You can modify a rigid body's behavior via  properties such as \"Mass\", "
 "\"Friction\", or \"Bounce\", which can be set in the Inspector."
 msgstr ""
-"您可以通过“质量”，“摩擦力”或“弹跳”等属性修改刚体的行为，这些属性可以在属性面"
-"板中设置。"
+"您可以通过``质量``，``摩擦力``或``弹跳``等属性修改刚体的行为，这些属性可以在"
+"属性面板中设置。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:179
 msgid ""
@@ -405,8 +406,8 @@ msgid ""
 "`Project Settings -> Physics`, or by entering an :ref:`Area2D "
 "<class_Area2D>` that is overriding the global physics properties."
 msgstr ""
-"物体的行为也受到“项目设置 ->物理学”中设置的世界属性的影响，或者通过输入覆盖全"
-"局物理属性的 :ref:`Area2D <class_Area2D>` 。"
+"物体的行为也受到``项目设置 ->物理学``中设置的世界属性的影响，或者通过输入覆盖"
+"全局物理属性的 :ref:`Area2D <class_Area2D>` 。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:183
 #, fuzzy
@@ -469,9 +470,9 @@ msgid ""
 "create RigidBody2Ds and adjust their properties. Stacking, falling, and "
 "bouncing would automatically be calculated by the physics engine."
 msgstr ""
-"使用刚体的一个好处是，可以“免费”获得许多行为而无需编写任何代码。 例如，如果您"
-"正在制作一个带有下降块的“愤怒的小鸟”式游戏，您只需要创建RigidBody2D并调整它们"
-"的属性。 堆叠，下降和弹跳将由物理引擎自动计算。"
+"使用刚体的一个好处是，可以``免费``获得许多行为而无需编写任何代码。 例如，如果"
+"您正在制作一个带有下降块的``愤怒的小鸟``式游戏，您只需要创建RigidBody2D并调整"
+"它们的属性。 堆叠，下降和弹跳将由物理引擎自动计算。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:207
 #, fuzzy
@@ -496,7 +497,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:216
 msgid "For example, here is the code for an \"Asteroids\" style spaceship:"
-msgstr "例如，以下是“小行星”式宇宙飞船的代码:"
+msgstr "例如，以下是``小行星``式宇宙飞船的代码:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:261
 msgid ""

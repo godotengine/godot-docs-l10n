@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,32 +18,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:4
-#, fuzzy
 msgid "Godot interfaces"
-msgstr "인터페이스 변경"
+msgstr "Godot 인터페이스"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:6
 msgid ""
 "Often one needs scripts that rely on other objects for features. There are 2 "
 "parts to this process:"
 msgstr ""
+"기능을 위해 다른 객체에 의존하는 스크립트가 필요한 경우가 종종 있습니다. 이 "
+"과정에는 2부분이 있습니다:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:9
 msgid "Acquiring a reference to the object that presumably has the features."
-msgstr ""
+msgstr "아마도 기능을 갖는 객체에 대한 참조를 얻기."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:11
 msgid "Accessing the data or logic from the object."
-msgstr ""
+msgstr "객체에서 데이터 또는 논리에 접근하기."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:13
 msgid "The rest of this tutorial outlines the various ways of doing all this."
 msgstr ""
+"이 튜토리얼의 나머지 부분에서는 이 모든 작업을 하는 다양한 방법을 간략하게 설"
+"명합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:16
-#, fuzzy
 msgid "Acquiring object references"
-msgstr "속성 참조"
+msgstr "객체 참조 얻기"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:18
 msgid ""
@@ -51,6 +53,8 @@ msgid ""
 "them is to get a reference to an existing object from another acquired "
 "instance."
 msgstr ""
+"모든 :ref:`객체 <class_Object>\\ 에 있어, 객체를 참조하는 가장 기본이 되는 방"
+"식은 획득한 다른 인스턴스로부터 존재하는 객체로 참조를 가져오는 것이다."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:32
 msgid ""
@@ -58,6 +62,9 @@ msgid ""
 "While users often access :ref:`Node <class_Node>` and :ref:`Resource "
 "<class_Resource>` this way, alternative measures are available."
 msgstr ""
+":ref:`참조 <class_Reference>` 객체에게도 같은 원리가 적용됩니다. 사용자들은 "
+"종종 :ref:`노드 <class_Node>`\\ 와 :ref:`리소스 <class_Resource>`\\ 를 이런 "
+"방식으로 연결하지만, 대체 조치가 가능합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:36
 msgid ""

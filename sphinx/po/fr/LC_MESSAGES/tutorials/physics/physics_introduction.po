@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:4
 msgid "Physics introduction"
-msgstr ""
+msgstr "Introduction à la physique"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:6
 msgid ""
@@ -28,6 +28,11 @@ msgid ""
 "When a collision is detected, you typically want something to happen. This "
 "is known as **collision response**."
 msgstr ""
+"Dans le développement d'un jeu, vous avez souvent besoin de savoir quand "
+"deux objets du jeu se croisent ou entrent en contact. C'est ce qu'on appelle "
+"la **détection des collisions**. Lorsqu'une collision est détectée, vous "
+"voulez généralement que quelque chose se produise. C'est ce qu'on appelle la "
+"**réponse à la collision**."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:11
 msgid ""
@@ -36,6 +41,11 @@ msgid ""
 "project can be confusing. You can avoid problems and simplify development if "
 "you understand how each works and what their pros and cons are."
 msgstr ""
+"Godot offre un certain nombre d'objets de collision en 2D et 3D pour fournir "
+"à la fois la détection et la réponse aux collisions. Essayer de décider "
+"lequel utiliser pour votre projet peut prêter à confusion. Vous pouvez "
+"éviter les problèmes et simplifier le développement si vous comprenez "
+"comment chacun fonctionne et quels sont ses avantages et ses inconvénients."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:16
 msgid "In this guide, you will learn:"
@@ -43,15 +53,15 @@ msgstr "Dans ce guide, vous apprendrez :"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:18
 msgid "Godot's four collision object types"
-msgstr ""
+msgstr "Les quatre types d'objets de collision de Godot"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:19
 msgid "How each collision object works"
-msgstr ""
+msgstr "Comment chaque objet de collision fonctionne"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:20
 msgid "When and why to choose one type over another"
-msgstr ""
+msgstr "Quand et pourquoi choisir un type plutôt qu'un autre"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:22
 msgid ""
@@ -59,6 +69,9 @@ msgid ""
 "collision shape has a direct equivalent in 3D and in most cases they work in "
 "much the same way."
 msgstr ""
+"Les exemples de ce document utilisent des objets 2D. Chaque objet physique "
+"2D et chaque forme de collision a un équivalent direct en 3D et dans la "
+"plupart des cas, ils fonctionnent de la même manière."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:27
 msgid "Collision objects"
@@ -69,10 +82,12 @@ msgid ""
 "Godot offers four kinds of physics bodies, extending :ref:`CollisionObject2D "
 "<class_CollisionObject2D>`:"
 msgstr ""
+"Godot offre 4 types de corps physiques, qui sont des extensions de :ref:"
+"`CollisionObject2D <class_CollisionObject2D>` :"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:35
 msgid ":ref:`Area2D <class_Area2D>`"
-msgstr ""
+msgstr ":ref:`Area2D  (Zone 2D)<class_Area2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:32
 msgid ""
@@ -81,15 +96,22 @@ msgid ""
 "``Area2D`` can also be used to override physics properties, such as gravity "
 "or damping, in a defined area."
 msgstr ""
+"Les nœuds ``Area2D``` fournissent **la détection** et **l'influence**. Ils "
+"peuvent détecter quand les objets se chevauchent et peuvent émettre des "
+"signaux quand des corps entrent ou sortent. Un ``Area2D`` peut aussi être "
+"utilisé pour outrepasser les propriétés physiques, telles que la gravité ou "
+"l'amortissement, dans une zone définie."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:37
 msgid ""
 "The other three bodies extend :ref:`PhysicsBody2D <class_PhysicsBody2D>`:"
 msgstr ""
+"Les 3 autres corps sont des extensions de :ref:`PhysicsBody2D "
+"<class_PhysicsBody2D>` :"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:43
 msgid ":ref:`StaticBody2D <class_StaticBody2D>`"
-msgstr ""
+msgstr ":ref:`StaticBody2D  (Corps statique 2D)<class_StaticBody2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:40
 msgid ""
@@ -98,10 +120,15 @@ msgid ""
 "collision. They are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
 msgstr ""
+"Un corps statique est un corps qui n'est pas déplacé par le moteur physique. "
+"Il participe à la détection des collisions, mais ne bouge pas en réponse à "
+"la collision. Ils sont le plus souvent utilisés pour des objets qui font "
+"partie de l'environnement ou qui n'ont pas besoin d'avoir un comportement "
+"dynamique."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:48
 msgid ":ref:`RigidBody2D <class_RigidBody2D>`"
-msgstr ""
+msgstr ":ref:`RigidBody2D (Corps rigide 2D) <class_RigidBody2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:46
 msgid ""
@@ -110,16 +137,23 @@ msgid ""
 "impulses, etc.) and the physics engine calculates the resulting movement. :"
 "ref:`Read more about using rigid bodies. <doc_rigid_body>`"
 msgstr ""
+"C'est le nœud qui implémente la physique 2D simulée. Vous ne contrôlez pas "
+"directement un ``RigidBody2D``, mais vous lui appliquez des forces (gravité, "
+"impulsions, etc.) et le moteur physique calcule le mouvement résultant. :ref:"
+"`En savoir plus sur l'utilisation des RigidBody. <doc_rigid_body>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:52
 msgid ":ref:`KinematicBody2D <class_KinematicBody2D>`"
-msgstr ""
+msgstr ":ref:`KinematicBody2D (Corps cinématique 2D)<class_KinematicBody2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:51
 msgid ""
 "A body that provides collision detection, but no physics. All movement and "
 "collision response must be implemented in code."
 msgstr ""
+"Un corps qui fournit la détection de collision, mais n'a pas de physique. "
+"Toute réponse au mouvement ou à la collision doit être implémentée dans le "
+"code."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
 msgid "Collision shapes"

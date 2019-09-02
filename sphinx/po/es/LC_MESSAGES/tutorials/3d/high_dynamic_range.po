@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:4
-msgid "High dynamic range"
+msgid "Light transport in game engines"
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:7
@@ -35,131 +35,149 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:14
 msgid ""
-"So at what point does all this HDR business come into play? The idea is that "
-"instead of dealing with colors that go from black to white (0 to 1), we use "
-"colors whiter than white (for example, 0 to 8 times white)."
+"So at what point does all this \"HDR\" business come into play? To "
+"understand the answer, we need to look at how displays behave."
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:18
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:17
 msgid ""
-"To be more practical, imagine that in a regular scene, the intensity of a "
-"light (generally 1.0) is set to 5.0. The whole scene will turn very bright "
-"(towards white) and look horrible."
+"Your display outputs linear light ratios from some maximum to some minimum "
+"intensity. Modern game engines perform complex math on linear light values "
+"in their respective scenes. So what's the problem?"
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:22
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:21
 msgid ""
-"After this, the luminance of the scene is computed by averaging the "
-"luminance of every pixel of it, and this value is used to bring the scene "
-"back to normal ranges. This last operation is called tone-mapping. Finally, "
-"we are at a similar place from where we started:"
+"The display has a limited range of intensity, depending on the display type. "
+"The game engine renders to an unlimited range of intensity values, however. "
+"While \"maximum intensity\" means something to an sRGB display, it has no "
+"bearing in the game engine; there is only a potentially infinitely wide "
+"range of intensity values generated per frame of rendering."
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:30
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:27
 msgid ""
-"Except the scene is more contrasted because there is a higher light range at "
-"play. What is this all useful for? The idea is that the scene luminance will "
-"change while you move through the world, allowing situations like this to "
-"happen:"
+"This means that some transformation of the scene light intensity, also known "
+"as _scene referred_ light ratios, need to be transformed and mapped to fit "
+"within the particular output range of the chosen display. This can be most "
+"easily understood if we consider virtually photographing our game engine "
+"scene through a virtual camera. Here, our virtual camera would apply a "
+"particular camera rendering transform to the scene data, and the output "
+"would be ready for display on a particular display type."
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:37
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:36
+msgid "Computer displays"
+msgstr ""
+
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:38
 msgid ""
-"Additionally, it is possible to set a threshold value to send to the glow "
-"buffer depending on the pixel luminance. This allows for more realistic "
-"light bleeding effects in the scene."
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:42
-msgid "Linear color space"
+"Almost all displays require a nonlinear encoding for the code values sent to "
+"them. The display in turn, using its unique transfer characteristic, "
+"\"decodes\" the code value into linear light ratios of output, and projects "
+"the ratios out of the uniquely colored lights at each reddish, greenish, and "
+"blueish emission site."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:44
 msgid ""
-"The problem with this technique is that computer monitors apply a gamma "
-"curve to adapt better to the way the human eye sees. Artists create their "
-"art on the screen too, so their art has an implicit gamma curve applied to "
-"it."
+"For a majority of computer displays, the specifications of the display are "
+"outlined in accordance with IEC 61966-2-1, also known as the 1996 sRGB "
+"specification. This specification outlines how an sRGB display is to behave, "
+"including the color of the lights in the LED pixels as well as the transfer "
+"characteristics of the input (OETF) and output (EOTF)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:49
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:50
 msgid ""
-"The color space where images created on computer monitors exist is called "
-"\"sRGB\". All visual content that people have on their computers or download "
-"from the internet (such as pictures, movies, etc.) is in this colorspace."
+"Not all displays use the same OETF and EOTF as a computer display however, "
+"for example, television broadcast displays use the BT.1886 EOTF. It should "
+"be noted that Godot is limited in its pixel management chain, and only "
+"supports sRGB displays currently."
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:56
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:55
 msgid ""
-"The mathematics of HDR require that we multiply the scene by different "
-"values to adjust the luminance and exposure to different light ranges, and "
-"this curve gets in the way, as we need colors in linear space for this."
+"The sRGB standard is based around the nonlinear relationship between the "
+"current to light output of common desktop computing CRT displays."
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:62
-msgid "Linear color space & asset pipeline"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:64
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:60
 msgid ""
-"Working in HDR is not just pressing a switch. First, imported image assets "
-"must be converted to linear space on import. There are two ways to do this:"
+"The mathematics of a scene referred model require that we multiply the scene "
+"by different values to adjust the intensities and exposure to different "
+"light ranges. The transfer function of the display cannot appropriately "
+"render the wider dynamic range of the game engine's scene output using the "
+"simple transfer function of the display however, and therefore a more "
+"complex approach to encoding is required."
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:69
-msgid "sRGB -> linear conversion on image import"
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:68
+msgid "Scene linear & asset pipelines"
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:71
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:70
 msgid ""
-"This is the most compatible way of using linear-space assets, and it will "
-"work everywhere, including all mobile devices. The main issue with this is "
-"loss of quality, as sRGB exists to avoid this same problem. Using 8 bits per "
-"channel to represent linear colors is inefficient from the point of view of "
-"the human eye. These textures might later be compressed too, which makes the "
-"problem worse."
+"Working in scene linear sRGB is not as simple as just pressing a switch. "
+"First, imported image assets must be converted to linear light ratios on "
+"import. Even when linearized, those assets may not be perfectly well suited "
+"for use as textures, depending on how they were generated."
 msgstr ""
+
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:75
+#, fuzzy
+msgid "There are two ways to do this:"
+msgstr "Hay dos formas de obtener certificados:"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:78
-msgid "In any case, though, this is the easy solution that works everywhere."
+msgid "sRGB transfer function to display linear ratios on image import"
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:81
-msgid "Hardware sRGB -> linear conversion"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:83
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:80
 msgid ""
-"This is the most correct way to use assets in linear-space, as the texture "
-"sampler on the GPU will do the conversion after reading the texel using "
-"floating point. This works fine on PC and consoles, but most mobile devices "
-"do no support it, or do not support it on compressed texture format (iOS for "
-"example)."
+"This is the easiest, but not the most ideal, method of using sRGB assets. "
+"One issue with this is loss of quality. Using 8 bit per channel to represent "
+"linear light ratios is not a sufficient but depth to quantise the values "
+"correctly. These textures might later be compressed too, which can "
+"exacerbate the problem."
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:90
-msgid "Linear -> sRGB at the end"
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:86
+msgid "Hardware sRGB transfer function to display linear conversion"
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:92
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:88
 msgid ""
-"After all the rendering is done, the linear-space rendered image must be "
-"converted back to sRGB. To do this, simply enable sRGB conversion in the "
-"current :ref:`Environment <class_Environment>` (more on that below)."
+"The GPU will do the conversion after reading the texel using floating point. "
+"This works fine on PC and consoles, but most mobile devices do no support "
+"it, or do not support it on compressed texture format (iOS for example)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:94
+msgid "Scene linear to display referred nonlinear"
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:96
 msgid ""
-"Keep in mind that sRGB -> Linear and Linear -> sRGB conversions must always "
-"be **both** enabled. Failing to enable one of them will result in horrible "
-"visuals suitable only for avant-garde experimental indie games."
+"After all the rendering is done, the scene linear render requires "
+"transforming to a suitable output such as an sRGB display. To do this, "
+"enable sRGB conversion in the current :ref:`Environment <class_Environment>` "
+"(more on that below)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:102
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:100
+msgid ""
+"Keep in mind that sRGB -> Display Linear and Display Linear -> sRGB "
+"conversions must always be **both** enabled. Failing to enable one of them "
+"will result in horrible visuals suitable only for avant-garde experimental "
+"indie games."
+msgstr ""
+
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:106
 msgid "Parameters of HDR"
 msgstr ""
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:104
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:108
 msgid ""
 "HDR setting can be found in the :ref:`Environment <class_Environment>` "
 "resource. These are found most of the time inside a :ref:`WorldEnvironment "

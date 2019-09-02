@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -365,44 +365,89 @@ msgid ""
 "on."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:414
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:416
+#, fuzzy
+msgid "Adding custom editor icons"
+msgstr "Alimentation d'événements d'entrées personnalisés"
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:418
+msgid ""
+"Similarly to how you can write self-contained documentation within a module, "
+"you can also create your own custom icons for classes to appear in the "
+"editor."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:421
+msgid ""
+"For the actual process of creating editor icons to be integrated within the "
+"engine, please refer to :ref:`doc_editor_icons` first."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:424
+msgid "Once you've created your icon(s), proceed with the following steps:"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:426
+msgid ""
+"Make a new directory in the root of the module named ``icons``. This is the "
+"default path for the engine to look for module's editor icons."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:429
+msgid ""
+"Move your newly created ``svg`` icons (optimized or not) into that folder."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:431
+msgid ""
+"Recompile the engine and run the editor. Now the icon(s) will appear in "
+"editor's interface where appropriate."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:434
+msgid ""
+"If you'd like to store your icons somewhere else within your module, add the "
+"following code snippet to ``config.py`` to override the default path:"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:443
 msgid "Summing up"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:416
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:445
 msgid "Remember to:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:418
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:447
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:419
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:448
 msgid ""
 "use ``_bind_methods`` to bind your functions to scripting, and to allow them "
 "to work as callbacks for signals."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:422
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:451
 msgid ""
 "But this is not all, depending what you do, you will be greeted with some "
 "(hopefully positive) surprises."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:425
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:454
 msgid ""
 "If you inherit from :ref:`class_Node` (or any derived node type, such as "
 "Sprite), your new class will appear in the editor, in the inheritance tree "
 "in the \"Add Node\" dialog."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:428
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:457
 msgid ""
 "If you inherit from :ref:`class_Resource`, it will appear in the resource "
 "list, and all the exposed properties can be serialized when saved/loaded."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:431
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:460
 msgid ""
 "By this same logic, you can extend the Editor and almost any area of the "
 "engine."

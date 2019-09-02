@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
+#, fuzzy
+msgid "GDScript exports"
+msgstr "GDScriptフォーマット文字列"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
+#, fuzzy
+msgid "Introduction to exports"
+msgstr "はじめに"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
+#, fuzzy
+msgid ""
+"In Godot, class members can be exported. This means their value gets saved "
+"along with the resource (such as the :ref:`scene <class_PackedScene>`) "
+"they're attached to. They will also be available for editing in the property "
+"editor. Exporting is done by using the ``export`` keyword::"
+msgstr ""
+"クラスメンバーはエクスポートできます。つまりそれらの値は、それらが関連付けら"
+"れているリソース( \\ :ref:`scene <class_PackedScene>` など)と共に保存されま"
+"す。プロパティエディタで編集することもできます。エクスポートは ``export`` "
+"キーワードを使用して行われます:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
+#, fuzzy
+msgid ""
+"An exported variable must be initialized to a constant expression or have an "
+"export hint in the form of an argument to the ``export`` keyword (see the "
+"*Examples* section below)."
+msgstr ""
+"エクスポートされた変数は、定数式で初期化するか、exportキーワードの引数の形式"
+"でエクスポート・ヒントを持つ必要があります(下記参照)。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
+msgid ""
+"One of the fundamental benefits of exporting member variables is to have "
+"them visible and editable in the editor. This way, artists and game "
+"designers can modify values that later influence how the program runs. For "
+"this, a special export syntax is provided."
+msgstr ""
+"メンバー変数をエクスポートする基本的な利点の1つは、エディタで表示および編集で"
+"きることです。このようにして、アーティストやゲームデザイナーは後でプログラム"
+"の実行方法に影響する値を変更できます。このために特別なエクスポート構文が用意"
+"されています。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:29
+msgid ""
+"Exporting properties can also be done in other languages such as C#. The "
+"syntax varies depending on the language."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
+msgid "Examples"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
+#, fuzzy
+msgid ""
+"It must be noted that even if the script is not being run while in the "
+"editor, the exported properties are still editable. This can be used in "
+"conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
+msgstr ""
+"スクリプトがエディタで実行されていない場合でも、エクスポートされたプロパティ"
+"はまだ編集可能です( \"tool\" については下記を参照)。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
+msgid "Exporting bit flags"
+msgstr "ビットフラグ・エクスポート"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
+#, fuzzy
+msgid ""
+"Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
+"values in one property. By using the export hint ``int, FLAGS``, they can be "
+"set from the editor::"
+msgstr ""
+"ビットフラグとして使用される整数は、1つのプロパティに複数の ``true``/"
+"``false`` (ブール値)値を格納できます。エクスポートヒント ``int, FLAGS`` を使"
+"用して、エディタから設定できます:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
+#, fuzzy
+msgid ""
+"Restricting the flags to a certain number of named flags is also possible. "
+"The syntax is similar to the enumeration syntax::"
+msgstr ""
+"フラグを特定の数の名前付きフラグに制限することもできます。構文は列挙構文に似"
+"ています:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:139
+msgid ""
+"In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
+"value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
+"defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
+msgstr ""
+"この例では、 ``Fire`` の値は1、 ``Water`` の値は2、 ``Earth`` の値は4、 "
+"``Wind`` は値8に対応します。通常、定数はそれに応じて定義する必要があります"
+"(例： ``const ELEMENT_WIND = 8`` など)。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:144
+msgid ""
+"Using bit flags requires some understanding of bitwise operations. If in "
+"doubt, boolean variables should be exported instead."
+msgstr ""
+"ビットフラグを使用するには、ビット単位の操作についてある程度理解する必要があ"
+"ります。疑わしい場合は、代わりにブール変数をエクスポートしてください。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:148
+msgid "Exporting arrays"
+msgstr "配列のエクスポート"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+#, fuzzy
+msgid ""
+"Exporting arrays works, but with an important caveat: while regular arrays "
+"are created local to every class instance, exported arrays are *shared* "
+"between all instances. This means that editing them in one instance will "
+"cause them to change in all other instances. Exported arrays can have "
+"initializers, but they must be constant expressions."
+msgstr ""
+"通常の配列はすべてのクラスインスタンスに対してローカルに作成されますが、エク"
+"スポートされた配列はすべてのインスタンス間で共有されます。つまり、1つのインス"
+"タンスで編集すると、*他のすべてのインスタンスで変更されます*。エクスポートさ"
+"れた配列は初期化子を持つことができますが、それらは定数式でなければなりませ"
+"ん。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:4
 msgid "Cross-compiling for iOS on Linux"
-msgstr ""
+msgstr "Linux上のiOS用のクロスコンパイル"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:8
 msgid ""
@@ -27,10 +27,12 @@ msgid ""
 "once you have the environment properly configured it will be easy to compile "
 "Godot for iOS anytime you want."
 msgstr ""
+"この手順は多少複雑で多くのステップを必要としますが、一度環境を適切に設定すれ"
+"ば、いつでも好きな時にiOS用のGodotをコンパイルすることが容易になります。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:13
 msgid "Disclaimer"
-msgstr ""
+msgstr "免責事項"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:15
 msgid ""
@@ -45,6 +47,15 @@ msgid ""
 "any code, which means it should be OK to use the procedure described here "
 "and cross-compiling the binary."
 msgstr ""
+"Linux環境でiOS用にコンパイルすることは可能ですが、Appleは使用するツールに非常"
+"に制限をかけており(特にハードウェア的に)、開発にはほとんど自社の製品しか使用"
+"できません。ですので、これは\\ **公式ではありません**\\ 。しかし、\\ `2010年"
+"にAppleが出した声明 <http://www.apple.com/pr/library/2010/09/09Statement-by-"
+"Apple-on-App-Store-Review-Guidelines.html>`_\\ によると、\\ `App Storeのレ"
+"ビューガイドライン <https://developer.apple.com/app-store/review/guidelines/"
+">`_\\ の一部を緩和し、コードをダウンロードしない限り、あらゆるツールを使える"
+"ようにしたとのことです。つまり、ここで説明する手順を使用してバイナリをクロス"
+"コンパイルしてもかまいません。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:27
 msgid "Requirements"
@@ -55,6 +66,8 @@ msgid ""
 "`XCode with the iOS SDK <https://developer.apple.com/xcode/download>`__ (a "
 "dmg image)"
 msgstr ""
+"`XCode with the iOS SDK <https://developer.apple.com/xcode/download>`_\\ (dmg"
+"イメージ)"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:31
 msgid ""
@@ -62,6 +75,9 @@ msgid ""
 "installed and in the ``PATH``. It has to be version >= 3.5 to target "
 "``arm64`` architecture."
 msgstr ""
+"`Clang >= 3.5 <http://clang.llvm.org>`_ がインストールされ、 ``PATH`` にイン"
+"ストールされている開発マシン用。。``arm64`` アーキテクチャをターゲットにする"
+"には、バージョンが 3.5 以降である必要があります。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:34
 msgid ""
@@ -74,12 +90,16 @@ msgid ""
 "`darling-dmg <https://github.com/darlinghq/darling-dmg>`__, which needs to "
 "be built from source. The procedure for that is explained below."
 msgstr ""
+"`darling-dmg <https://github.com/darlinghq/darling-dmg>`_ 、 ソースから構築す"
+"る必要があります。そのための手順を以下に説明します。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:40
 msgid ""
 "For building darling-dmg, you'll need the development packages of the "
 "following libraries: fuse, icu, openssl, zlib, bzip2."
 msgstr ""
+"「darling-dmg」を構築するには、fuse、icu、openssl、zlib、bzip2というライブラ"
+"リの開発パッケージが必要です。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:43
 msgid ""
@@ -87,50 +107,52 @@ msgid ""
 "needed build tools. The procedure for building is quite peculiar and is "
 "described below."
 msgstr ""
+"`cctools-port <https://github.com/tpoechtrager/cctools-port>`_ 必要なビルド"
+"ツール。ビルドの手順は非常に独特であり、以下に説明します。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:47
 msgid "This also has some extra dependencies: automake, autogen, libtool."
-msgstr ""
+msgstr "これには、automake、autogen、libtoolなどの追加の依存関係もあります。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:50
 msgid "Configuring the environment"
-msgstr ""
+msgstr "環境のコンフィグ"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:53
 msgid "darling-dmg"
-msgstr ""
+msgstr "\\ darling-dmg"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:55
 msgid "Clone the repository on your machine:"
-msgstr ""
+msgstr "マシン上のリポジトリのクローンを作成します:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:61
 msgid "Build it:"
-msgstr ""
+msgstr "それを構築します:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:73
 msgid "Preparing the SDK"
-msgstr ""
+msgstr "SDKの準備"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:75
 msgid "Mount the XCode image:"
-msgstr ""
+msgstr "XCodeイメージをマウントする:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:84
 msgid "Extract the iOS SDK:"
-msgstr ""
+msgstr "\\ iOS SDK を抽出する:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:93
 msgid "Pack the SDK:"
-msgstr ""
+msgstr "SDKをパックする:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:101
 msgid "Toolchain"
-msgstr ""
+msgstr "ツールチェーン"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:103
 msgid "Build cctools:"
-msgstr ""
+msgstr "ビルドcctools:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:111
 msgid ""
@@ -139,16 +161,21 @@ msgid ""
 "toolchain binaries, so you must copy to such subdirectory, akin to the "
 "following commands:"
 msgstr ""
+"ツールをより良い場所にコピーします。ビルド用のSConsスクリプトは、ツールチェー"
+"ンバイナリに指定するディレクトリ内の ``usr/bin`` の下に置かれるので、次のコマ"
+"ンドに似たサブディレクトリにコピーする必要があります:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:121
 msgid ""
 "Now you should have the iOS toolchain binaries in ``/home/user/iostoolchain/"
 "usr/bin``."
 msgstr ""
+"\\ iOSツールチェーンバイナリが ``/home/user/iostoolchain/usr/bin`` にあるはず"
+"です。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:125
 msgid "Compiling Godot for iPhone"
-msgstr ""
+msgstr "\\ iPhone用ゴドットのコンパイル"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:127
 msgid ""

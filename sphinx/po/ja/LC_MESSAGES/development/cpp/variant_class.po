@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
-msgstr ""
+msgstr "バリアントクラス"
 
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
@@ -33,55 +33,69 @@ msgid ""
 "information for long periods of time, instead they are used mainly for "
 "communication, editing, serialization and generally moving data around."
 msgstr ""
+"バリアントはGodotの最も重要なデータ型であり、エンジンで最も重要なクラスで"
+"す。 バリアント型は20バイトしか使用せず、その中にほぼすべてのエンジンデータ型"
+"を格納できます。 バリアントは、情報を長期間保持するために使用されることはほと"
+"んどなく、代わりに主に通信、編集、シリアル化、および一般的なデータの移動に使"
+"用されます。"
 
 #: ../../docs/development/cpp/variant_class.rst:16
 msgid "A Variant can:"
-msgstr ""
+msgstr "バリアントは次のことができます:"
 
 #: ../../docs/development/cpp/variant_class.rst:18
 msgid "Store almost any datatype"
-msgstr ""
+msgstr "ほぼすべてのデータ型を格納する"
 
 #: ../../docs/development/cpp/variant_class.rst:19
 msgid ""
 "Perform operations between many variants (GDScript uses Variant as its "
 "atomic/native datatype)."
 msgstr ""
+"多くのバリアント間で操作を実行します (GDScript はバリアントをアトミック/ネイ"
+"ティブデータ型として使用します)。"
 
 #: ../../docs/development/cpp/variant_class.rst:21
 msgid "Be hashed, so it can be compared quickly to other variants"
-msgstr ""
+msgstr "ハッシュ化して、他のバリアントとすばやく比較できます"
 
 #: ../../docs/development/cpp/variant_class.rst:22
 msgid "Be used to convert safely between datatypes"
-msgstr ""
+msgstr "データ型間の安全な変換に使用します"
 
 #: ../../docs/development/cpp/variant_class.rst:23
 msgid ""
 "Be used to abstract calling methods and their arguments (Godot exports all "
 "its functions through variants)"
 msgstr ""
+"呼び出しメソッドとその引数を抽象化するために使用されます(Godot はバリアントを"
+"介してすべての関数をエクスポートします)"
 
 #: ../../docs/development/cpp/variant_class.rst:25
 msgid "Be used to defer calls or move data between threads."
 msgstr ""
+"呼び出しを延期したり、スレッド間でデータを移動したりするために使用します。"
 
 #: ../../docs/development/cpp/variant_class.rst:26
 msgid "Be serialized as binary and stored to disk, or transferred via network."
 msgstr ""
+"バイナリとしてシリアル化され、ディスクに保存されるか、ネットワーク経由で転送"
+"されます。"
 
 #: ../../docs/development/cpp/variant_class.rst:28
 msgid ""
 "Be serialized to text and use it for printing values and editable settings."
-msgstr ""
+msgstr "テキストにシリアル化し、値と編集可能な設定を印刷するために使用します。"
 
 #: ../../docs/development/cpp/variant_class.rst:30
 msgid "Work as an exported property, so the editor can edit it universally."
 msgstr ""
+"エクスポートされたプロパティとして機能し、エディタがユニバーサルに編集できる"
+"ようにします。"
 
 #: ../../docs/development/cpp/variant_class.rst:31
 msgid "Be used for dictionaries, arrays, parsers, etc."
-msgstr ""
+msgstr "辞書、配列、パーサーなどに使用できます。"
 
 #: ../../docs/development/cpp/variant_class.rst:33
 msgid ""
@@ -89,21 +103,26 @@ msgid ""
 "much easier task, as it allows for highly dynamic constructs not common of C+"
 "+ with little effort. Become a friend of Variant today."
 msgstr ""
+"基本的に、Variantクラスのおかげで、Godot自体を書くのは、C++には一般的ではない"
+"非常に動的な構成体を簡単に作成できるので、ずっと簡単な作業でした。今日は"
+"Variantの友達になってください。"
 
 #: ../../docs/development/cpp/variant_class.rst:38
 #: ../../docs/development/cpp/variant_class.rst:57
 msgid "References:"
-msgstr ""
+msgstr "参照："
 
 #: ../../docs/development/cpp/variant_class.rst:40
 msgid ""
 "`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
 "variant.h>`__"
 msgstr ""
+"`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant.h>`_"
 
 #: ../../docs/development/cpp/variant_class.rst:43
 msgid "Containers: Dictionary and Array"
-msgstr ""
+msgstr "コンテナ: 辞書と配列"
 
 #: ../../docs/development/cpp/variant_class.rst:45
 msgid ""
@@ -112,26 +131,38 @@ msgid ""
 "Of course, a Variant can also hold a Dictionary and an Array inside, making "
 "it even more flexible."
 msgstr ""
+"どちらもバリアントを使用して実装されます。ディクショナリは、キーとして使用さ"
+"れる任意のデータ型を他の任意のデータ型に一致させることができます。配列には、"
+"バリアント型の配列だけが格納されます。もちろん、バリアント型にはDictionaryと"
+"Arrayを格納できるため、より柔軟性があります。"
 
 #: ../../docs/development/cpp/variant_class.rst:50
 msgid ""
 "Modifications to a container will modify all references to it. A Mutex "
 "should be created to lock it if multi threaded access is desired."
 msgstr ""
+"コンテナを変更すると、コンテナへのすべての参照が変更されます。マルチスレッド"
+"アクセスが必要な場合は、Mutexを作成してロックする必要があります。"
 
 #: ../../docs/development/cpp/variant_class.rst:54
 msgid ""
 "Copy-on-write (COW) mode support for containers was dropped with Godot 3.0."
 msgstr ""
+"Godot 3.0 では、コンテナの書き込みコピー(COW)モードのサポートが削除されまし"
+"た。"
 
 #: ../../docs/development/cpp/variant_class.rst:59
 msgid ""
 "`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
 "dictionary.h>`__"
 msgstr ""
+"`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
+"dictionary.h>`_"
 
 #: ../../docs/development/cpp/variant_class.rst:60
 msgid ""
 "`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
 "h>`__"
 msgstr ""
+"`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
+"h>`_"

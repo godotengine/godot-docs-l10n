@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
 msgstr ""
-"Diese Methode wird jedes Mal aufgerufen, wenn ein Frame gezeichnet wird:"
+"Diese Methode wird jedesmal aufgerufen, wenn ein Bild gezeichnet wurde:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 #, fuzzy
@@ -161,9 +161,8 @@ msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
-"Und die zweite Möglichkeit ist programmatisch. Das folgende Skript würde die "
-"aktuelle Node zur Gruppe ``enemies`` hinzufügen, sobald diese im Szenenbaum "
-"auftaucht."
+"Die zweite Möglichkeit erfolgt via Code. Das folgende Script fügt die "
+"aktuelle Node zur Gruppe \"enemies\" wenn sie im Scenetree erstellt wurden."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -194,7 +193,6 @@ msgstr ""
 "<class_SceneTree_method_get_nodes_in_group>` zu erhalten:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -205,8 +203,8 @@ msgstr ""
 "Die :ref:`SceneTree <class_SceneTree>` -Klasse stellt viele nützliche "
 "Methoden bereit, z. B. die Interaktion mit Szenen, deren Node-Hierarchie und "
 "Node-Gruppen. Du kannst Szenen einfach wechseln oder neu laden, das Spiel "
-"beenden oder das Spiel pausieren und stoppen. Sie kommt sogar mit "
-"interessanten Signalen. Also schau es dir an, wenn du Zeit hast!"
+"beenden, pausieren und fortsetzen. Sie kommt sogar mit interessanten "
+"Signalen. Also schau es dir an, wenn du Zeit hast!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 msgid "Notifications"

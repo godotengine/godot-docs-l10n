@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr "История изменений документации"
+msgstr "Журнал изменений документации"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -31,7 +31,8 @@ msgstr ""
 "Документация постоянно совершенствуется. Релиз версии 3.1 включает в себя "
 "множество новых обучающих разделов, множество исправлений и обновлений для "
 "старых обучающих разделов, а также множество обновлений справочника классов. "
-"Ниже приведен список новых учебных разделов, добавленных в версии 3.0."
+"Ниже приведен список новых учебных разделов, добавленных, начиная с версии "
+"3.0."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -39,8 +40,9 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
-"Этот документ содержит только новые руководства, многие руководства были "
-"существенно обновлены, но не вошли в этот документ."
+"Этот документ содержит только новые учебные разделы, поэтому отражаются не "
+"все изменения, многие учебные разделы были существенно обновлены, но не "
+"отражены в этом документе."
 
 #: ../../docs/about/docs_changelog.rst:14
 #, fuzzy
@@ -48,7 +50,7 @@ msgid "New tutorials since version 3.1"
 msgstr "Новые руководства, начиная с версии 3.0"
 
 #: ../../docs/about/docs_changelog.rst:17
-#: ../../docs/about/docs_changelog.rst:104
+#: ../../docs/about/docs_changelog.rst:110
 msgid "Project workflow"
 msgstr "Рабочий процесс проекта"
 
@@ -59,7 +61,7 @@ msgstr ""
 ":ref:`Кастомизированные сборки для Андройда <doc_android_custom_build>`"
 
 #: ../../docs/about/docs_changelog.rst:22
-#: ../../docs/about/docs_changelog.rst:120
+#: ../../docs/about/docs_changelog.rst:126
 msgid "2D"
 msgstr "2D"
 
@@ -110,13 +112,13 @@ msgid ":ref:`doc_localization_using_gettext`"
 msgstr "Локализация"
 
 #: ../../docs/about/docs_changelog.rst:48
-#: ../../docs/about/docs_changelog.rst:156
+#: ../../docs/about/docs_changelog.rst:162
 msgid "Shading"
-msgstr "Шейдеры"
+msgstr "Шейдинг"
 
 #: ../../docs/about/docs_changelog.rst:50
 msgid "Your First Shader Series:"
-msgstr "Ваш Первый Ряд Шейдеров:"
+msgstr "Ваш Первый Набор Шейдеров:"
 
 #: ../../docs/about/docs_changelog.rst:52
 #, fuzzy
@@ -149,7 +151,7 @@ msgid ":ref:`doc_webrtc`"
 msgstr ":ref:`Экспорт <doc_exporting>`"
 
 #: ../../docs/about/docs_changelog.rst:63
-#: ../../docs/about/docs_changelog.rst:176
+#: ../../docs/about/docs_changelog.rst:182
 msgid "Plugins"
 msgstr "Плагины"
 
@@ -163,351 +165,380 @@ msgstr ":ref:`Создание плагинов для Андройд <doc_andro
 msgid ":ref:`doc_inspector_plugins`"
 msgstr ":ref:`Плагины для 3D-гизмо <doc_spatial_gizmo_plugins>`"
 
-#: ../../docs/about/docs_changelog.rst:69
-#: ../../docs/about/docs_changelog.rst:187
+#: ../../docs/about/docs_changelog.rst:67
+#, fuzzy
+msgid ":ref:`doc_visual_shader_plugins`"
+msgstr ":ref:`Плагины для 3D-гизмо <doc_spatial_gizmo_plugins>`"
+
+#: ../../docs/about/docs_changelog.rst:70
+#: ../../docs/about/docs_changelog.rst:193
 msgid "Multi-threading"
 msgstr "Много-поточность"
 
-#: ../../docs/about/docs_changelog.rst:71
+#: ../../docs/about/docs_changelog.rst:72
 #, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
 msgstr ":ref:`Использование MultiMesh <doc_using_multimesh>`"
 
-#: ../../docs/about/docs_changelog.rst:74
-#: ../../docs/about/docs_changelog.rst:192
+#: ../../docs/about/docs_changelog.rst:75
+#: ../../docs/about/docs_changelog.rst:198
 msgid "Creating content"
 msgstr "Создание контента"
 
-#: ../../docs/about/docs_changelog.rst:76
+#: ../../docs/about/docs_changelog.rst:82
+msgid "Procedural geometry series:"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:78
 #, fuzzy
-msgid ":ref:`doc_procedural_geometry`"
+msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
 msgstr ":ref:`Точечные шейдеры <doc_particle_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:79
+#, fuzzy
+msgid ":ref:`doc_arraymesh`"
+msgstr ":ref:`2D сетки <doc_2d_meshes>`"
+
+#: ../../docs/about/docs_changelog.rst:80
+#, fuzzy
+msgid ":ref:`doc_surfacetool`"
+msgstr ":ref:`CSG <doc_csg_tools>`"
+
+#: ../../docs/about/docs_changelog.rst:81
+#, fuzzy
+msgid ":ref:`doc_meshdatatool`"
+msgstr ":ref:`CSG <doc_csg_tools>`"
+
+#: ../../docs/about/docs_changelog.rst:82
+#, fuzzy
+msgid ":ref:`doc_immediategeometry`"
+msgstr ":ref:`Точечные шейдеры <doc_particle_shader>`"
+
+#: ../../docs/about/docs_changelog.rst:85
 msgid "Optimization"
 msgstr "Оптимизация"
 
-#: ../../docs/about/docs_changelog.rst:81
+#: ../../docs/about/docs_changelog.rst:87
 #, fuzzy
 msgid ":ref:`doc_using_multimesh`"
 msgstr ":ref:`Использование MultiMesh <doc_using_multimesh>`"
 
-#: ../../docs/about/docs_changelog.rst:82
+#: ../../docs/about/docs_changelog.rst:88
 #, fuzzy
 msgid ":ref:`doc_using_servers`"
 msgstr ":ref:`Использование серверов <doc_using_servers>`"
 
-#: ../../docs/about/docs_changelog.rst:85
+#: ../../docs/about/docs_changelog.rst:91
 msgid "Legal"
-msgstr "Легализация"
+msgstr "Законность"
 
-#: ../../docs/about/docs_changelog.rst:87
+#: ../../docs/about/docs_changelog.rst:93
 #, fuzzy
 msgid ":ref:`doc_complying_with_licenses`"
 msgstr ":ref:`Соответствие с Лицензиями <doc_complying_with_licenses>`"
 
-#: ../../docs/about/docs_changelog.rst:90
+#: ../../docs/about/docs_changelog.rst:96
 msgid "New tutorials since version 3.0"
-msgstr "Новые руководства, начиная с версии 3.0"
+msgstr "Новые учебные разделы в версии 3.0"
 
-#: ../../docs/about/docs_changelog.rst:93
+#: ../../docs/about/docs_changelog.rst:99
 msgid "Step by step"
 msgstr "Шаг за шагом"
 
-#: ../../docs/about/docs_changelog.rst:95
+#: ../../docs/about/docs_changelog.rst:101
 #, fuzzy
 msgid ":ref:`doc_signals`"
 msgstr ":ref:`Сигналы <doc_signals>`"
 
-#: ../../docs/about/docs_changelog.rst:96
+#: ../../docs/about/docs_changelog.rst:102
 #, fuzzy
 msgid ":ref:`doc_exporting`"
 msgstr ":ref:`Экспорт <doc_exporting>`"
 
-#: ../../docs/about/docs_changelog.rst:99
+#: ../../docs/about/docs_changelog.rst:105
 msgid "Scripting"
 msgstr "Написание скриптов"
 
-#: ../../docs/about/docs_changelog.rst:101
+#: ../../docs/about/docs_changelog.rst:107
 #, fuzzy
 msgid ":ref:`doc_gdscript_static_typing`"
 msgstr ":ref:`Типизированный GDscript <doc_gdscript_static_typing>`"
 
-#: ../../docs/about/docs_changelog.rst:106
+#: ../../docs/about/docs_changelog.rst:112
 msgid "Best Practices:"
 msgstr "Лучшие практики:"
 
-#: ../../docs/about/docs_changelog.rst:108
+#: ../../docs/about/docs_changelog.rst:114
 #, fuzzy
 msgid ":ref:`doc_introduction_best_practices`"
 msgstr ":ref:`Введение <doc_introduction_best_practices>`"
 
-#: ../../docs/about/docs_changelog.rst:109
+#: ../../docs/about/docs_changelog.rst:115
 #, fuzzy
 msgid ":ref:`doc_what_are_godot_classes`"
 msgstr ":ref:`Что такое Godot классы <doc_what_are_godot_classes>`"
 
-#: ../../docs/about/docs_changelog.rst:110
+#: ../../docs/about/docs_changelog.rst:116
 #, fuzzy
 msgid ":ref:`doc_scene_organization`"
 msgstr ":ref:`Организация сцены <doc_scene_organization>`"
 
-#: ../../docs/about/docs_changelog.rst:111
+#: ../../docs/about/docs_changelog.rst:117
 #, fuzzy
 msgid ":ref:`doc_scenes_versus_scripts`"
 msgstr ":ref:`Зависимость сцен от скриптов <doc_scenes_versus_scripts>`"
 
-#: ../../docs/about/docs_changelog.rst:112
+#: ../../docs/about/docs_changelog.rst:118
 #, fuzzy
 msgid ":ref:`doc_autoloads_versus_internal_nodes`"
 msgstr ""
 ":ref:`Автозагрузка против внутренних узлов "
 "<doc_autoloads_versus_internal_nodes>`"
 
-#: ../../docs/about/docs_changelog.rst:113
+#: ../../docs/about/docs_changelog.rst:119
 #, fuzzy
 msgid ":ref:`doc_node_alternatives`"
 msgstr ":ref:`Альтернативы узлам <doc_node_alternatives>`"
 
-#: ../../docs/about/docs_changelog.rst:114
+#: ../../docs/about/docs_changelog.rst:120
 #, fuzzy
 msgid ":ref:`doc_godot_interfaces`"
 msgstr "Интерфейсы Godot"
 
-#: ../../docs/about/docs_changelog.rst:115
+#: ../../docs/about/docs_changelog.rst:121
 #, fuzzy
 msgid ":ref:`doc_godot_notifications`"
 msgstr ":ref:`Godot оповещения <doc_animations>`"
 
-#: ../../docs/about/docs_changelog.rst:116
+#: ../../docs/about/docs_changelog.rst:122
 #, fuzzy
 msgid ":ref:`doc_data_preferences`"
 msgstr ":ref:`Настройки данных <doc_data_preferences>`"
 
-#: ../../docs/about/docs_changelog.rst:117
+#: ../../docs/about/docs_changelog.rst:123
 #, fuzzy
 msgid ":ref:`doc_logic_preferences`"
 msgstr ":ref:`Настройки логики <doc_logic_preferences>`"
 
-#: ../../docs/about/docs_changelog.rst:122
+#: ../../docs/about/docs_changelog.rst:128
 #, fuzzy
 msgid ":ref:`doc_2d_lights_and_shadows`"
 msgstr ":ref:`2D освещение и тени <doc_2d_lights_and_shadows>`"
 
-#: ../../docs/about/docs_changelog.rst:123
+#: ../../docs/about/docs_changelog.rst:129
 #, fuzzy
 msgid ":ref:`doc_2d_meshes`"
 msgstr ":ref:`2D сетки <doc_2d_meshes>`"
 
-#: ../../docs/about/docs_changelog.rst:126
+#: ../../docs/about/docs_changelog.rst:132
 msgid "3D"
 msgstr "3D"
 
-#: ../../docs/about/docs_changelog.rst:128
+#: ../../docs/about/docs_changelog.rst:134
 #, fuzzy
 msgid ":ref:`doc_csg_tools`"
 msgstr ":ref:`CSG <doc_csg_tools>`"
 
-#: ../../docs/about/docs_changelog.rst:129
+#: ../../docs/about/docs_changelog.rst:135
 #, fuzzy
 msgid ":ref:`doc_animating_thousands_of_fish`"
 msgstr ""
 ":ref:`Анимация тысячи рыб при помощи MultiMesh "
 "<doc_animating_thousands_of_fish>`"
 
-#: ../../docs/about/docs_changelog.rst:130
+#: ../../docs/about/docs_changelog.rst:136
 #, fuzzy
 msgid ":ref:`doc_controlling_thousands_of_fish`"
 msgstr ""
 ":ref:`Управление тысячами рыб с помощью Particles "
 "<doc_controlling_thousands_of_fish>`"
 
-#: ../../docs/about/docs_changelog.rst:133
+#: ../../docs/about/docs_changelog.rst:139
 msgid "Physics"
 msgstr "Физика"
 
-#: ../../docs/about/docs_changelog.rst:135
+#: ../../docs/about/docs_changelog.rst:141
 #, fuzzy
 msgid ":ref:`doc_ragdoll_system`"
 msgstr ":ref:`Система Ragdoll <doc_ragdoll_system>`"
 
-#: ../../docs/about/docs_changelog.rst:136
+#: ../../docs/about/docs_changelog.rst:142
 #, fuzzy
 msgid ":ref:`doc_soft_body`"
 msgstr ":ref:`Мягкое тело <doc_soft_body>`"
 
-#: ../../docs/about/docs_changelog.rst:139
+#: ../../docs/about/docs_changelog.rst:145
 msgid "Animation"
 msgstr "Анимация"
 
-#: ../../docs/about/docs_changelog.rst:141
+#: ../../docs/about/docs_changelog.rst:147
 #, fuzzy
 msgid ":ref:`doc_2d_skeletons`"
 msgstr ":ref:`2D скелеты <doc_2d_skeletons>`"
 
-#: ../../docs/about/docs_changelog.rst:142
+#: ../../docs/about/docs_changelog.rst:148
 #, fuzzy
 msgid ":ref:`doc_animation_tree`"
 msgstr ":ref:`Дерево анимаций <doc_animation_tree>`"
 
-#: ../../docs/about/docs_changelog.rst:145
+#: ../../docs/about/docs_changelog.rst:151
 msgid "GUI"
 msgstr "Интерфейс"
 
-#: ../../docs/about/docs_changelog.rst:147
+#: ../../docs/about/docs_changelog.rst:153
 #, fuzzy
 msgid ":ref:`doc_gui_containers`"
 msgstr ":ref:`Контейнеры <doc_gui_containers>`"
 
-#: ../../docs/about/docs_changelog.rst:150
+#: ../../docs/about/docs_changelog.rst:156
 msgid "Viewports"
 msgstr "Окна просмотра"
 
-#: ../../docs/about/docs_changelog.rst:152
+#: ../../docs/about/docs_changelog.rst:158
 #, fuzzy
 msgid ":ref:`doc_viewport_as_texture`"
 msgstr ""
 ":ref:`Использование Viewport в качестве текстуры <doc_viewport_as_texture>`"
 
-#: ../../docs/about/docs_changelog.rst:153
+#: ../../docs/about/docs_changelog.rst:159
 #, fuzzy
 msgid ":ref:`doc_custom_postprocessing`"
 msgstr ":ref:`Пользовательская пост-обработка <doc_custom_postprocessing>`"
 
-#: ../../docs/about/docs_changelog.rst:158
+#: ../../docs/about/docs_changelog.rst:164
 #, fuzzy
 msgid ":ref:`doc_intro_to_shaders_water_workshop`"
 msgstr ""
 ":ref:`Введение в шейдеры: 2D и 3D вода (7 видео уроков) "
 "<doc_intro_to_shaders_water_workshop>`"
 
-#: ../../docs/about/docs_changelog.rst:159
+#: ../../docs/about/docs_changelog.rst:165
 #, fuzzy
 msgid ":ref:`doc_migrating_to_godot_shader_language`"
 msgstr ""
 ":ref:`Переход к языку шейдинга Godot "
 "<doc_migrating_to_godot_shader_language>`"
 
-#: ../../docs/about/docs_changelog.rst:160
+#: ../../docs/about/docs_changelog.rst:166
 #, fuzzy
 msgid ":ref:`doc_advanced_postprocessing`"
 msgstr "Функции и Переменные"
 
-#: ../../docs/about/docs_changelog.rst:162
+#: ../../docs/about/docs_changelog.rst:168
 msgid "Shading Reference:"
 msgstr "Справка по шейдингу:"
 
-#: ../../docs/about/docs_changelog.rst:164
+#: ../../docs/about/docs_changelog.rst:170
 #, fuzzy
 msgid ":ref:`doc_shaders`"
 msgstr ":ref:`Шейдеры <doc_shading_language>`"
 
-#: ../../docs/about/docs_changelog.rst:165
+#: ../../docs/about/docs_changelog.rst:171
 #, fuzzy
 msgid ":ref:`doc_shading_language`"
 msgstr ":ref:`Язык шейдинга <doc_shading_language>`"
 
-#: ../../docs/about/docs_changelog.rst:166
+#: ../../docs/about/docs_changelog.rst:172
 #, fuzzy
 msgid ":ref:`doc_spatial_shader`"
 msgstr ":ref:`Пространственные шейдеры <doc_spatial_shader>`"
 
-#: ../../docs/about/docs_changelog.rst:167
+#: ../../docs/about/docs_changelog.rst:173
 #, fuzzy
 msgid ":ref:`doc_canvas_item_shader`"
 msgstr ":ref:`Шейдеры элементов канваза <doc_canvas_item_shader>`"
 
-#: ../../docs/about/docs_changelog.rst:168
+#: ../../docs/about/docs_changelog.rst:174
 #, fuzzy
 msgid ":ref:`doc_particle_shader`"
 msgstr ":ref:`Точечные шейдеры <doc_particle_shader>`"
 
-#: ../../docs/about/docs_changelog.rst:171
+#: ../../docs/about/docs_changelog.rst:177
 msgid "VR"
-msgstr "VR"
+msgstr "Виртуальная реальность"
 
-#: ../../docs/about/docs_changelog.rst:173
+#: ../../docs/about/docs_changelog.rst:179
 #, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial`"
 msgstr ":ref:`Первоначальное обучение VR <doc_vr_starter_tutorial>`"
 
-#: ../../docs/about/docs_changelog.rst:178
+#: ../../docs/about/docs_changelog.rst:184
 #, fuzzy
 msgid ":ref:`doc_making_main_screen_plugins`"
 msgstr ""
 ":ref:`Создание плагинов главного экрана <doc_making_main_screen_plugins>`"
 
-#: ../../docs/about/docs_changelog.rst:179
+#: ../../docs/about/docs_changelog.rst:185
 #, fuzzy
 msgid ":ref:`doc_spatial_gizmo_plugins`"
 msgstr ":ref:`Плагины для 3D-гизмо <doc_spatial_gizmo_plugins>`"
 
-#: ../../docs/about/docs_changelog.rst:182
+#: ../../docs/about/docs_changelog.rst:188
 msgid "Platform-specific"
 msgstr "Особенности разных платформ"
 
-#: ../../docs/about/docs_changelog.rst:184
+#: ../../docs/about/docs_changelog.rst:190
 #, fuzzy
 msgid ":ref:`doc_customizing_html5_shell`"
 msgstr ""
 ":ref:`Пользовательская настройка веб экспорта HTML страницы "
 "<doc_customizing_html5_shell>`"
 
-#: ../../docs/about/docs_changelog.rst:189
+#: ../../docs/about/docs_changelog.rst:195
 #, fuzzy
 msgid ":ref:`doc_thread_safe_apis`"
 msgstr ":ref:`API безопасности потоков <doc_thread_safe_apis>`"
 
-#: ../../docs/about/docs_changelog.rst:194
+#: ../../docs/about/docs_changelog.rst:200
 #, fuzzy
 msgid ":ref:`doc_making_trees`"
 msgstr ":ref:`Создание деревьев <doc_animations>`"
 
-#: ../../docs/about/docs_changelog.rst:197
+#: ../../docs/about/docs_changelog.rst:203
 msgid "Miscellaneous"
 msgstr "Разное"
 
-#: ../../docs/about/docs_changelog.rst:199
+#: ../../docs/about/docs_changelog.rst:205
 #, fuzzy
 msgid ":ref:`doc_jitter_stutter`"
 msgstr ":ref:`Исправление джиттеров и задержек <doc_jitter_stutter>`"
 
-#: ../../docs/about/docs_changelog.rst:200
+#: ../../docs/about/docs_changelog.rst:206
 #, fuzzy
 msgid ":ref:`doc_running_code_in_the_editor`"
 msgstr ":ref:`Запуск кода в редакторе <doc_running_code_in_the_editor>`"
 
-#: ../../docs/about/docs_changelog.rst:201
+#: ../../docs/about/docs_changelog.rst:207
 #, fuzzy
 msgid ":ref:`doc_change_scenes_manually`"
 msgstr ":ref:`Изменение сцен вручную <doc_change_scenes_manually>`"
 
-#: ../../docs/about/docs_changelog.rst:202
+#: ../../docs/about/docs_changelog.rst:208
 #, fuzzy
 msgid ":ref:`doc_gles2_gles3_differences`"
 msgstr ":ref:`Отличия между GLES3 и GLES3 <doc_gles2_gles3_differences>`"
 
-#: ../../docs/about/docs_changelog.rst:205
+#: ../../docs/about/docs_changelog.rst:211
 msgid "Compiling"
 msgstr "Компиляция"
 
-#: ../../docs/about/docs_changelog.rst:207
+#: ../../docs/about/docs_changelog.rst:213
 #, fuzzy
 msgid ":ref:`doc_optimizing_for_size`"
 msgstr ":ref:`Оптимизация размера сборки <doc_optimizing_for_size>`"
 
-#: ../../docs/about/docs_changelog.rst:208
+#: ../../docs/about/docs_changelog.rst:214
 #, fuzzy
 msgid ":ref:`doc_compiling_with_script_encryption_key`"
 msgstr ""
 ":ref:`Компиляция с ключом шифрования скрипта "
 "<doc_compiling_with_script_encryption_key>`"
 
-#: ../../docs/about/docs_changelog.rst:211
+#: ../../docs/about/docs_changelog.rst:217
 msgid "Engine development"
 msgstr "Разработка движка"
 
-#: ../../docs/about/docs_changelog.rst:213
+#: ../../docs/about/docs_changelog.rst:219
 #, fuzzy
 msgid ":ref:`doc_binding_to_external_libraries`"
 msgstr "Связывание внешних библиотек"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,10 +49,12 @@ msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
 msgstr ""
+"Wo der Exporter nach der ``.tres`` Datei sucht, wird durch die \"Material "
+"Search Paths\" Option bestimmt:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:34
 msgid "This can take the value of:"
-msgstr ""
+msgstr "Das kann den Wert annehmen von:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:26
 msgid ""
@@ -61,6 +63,10 @@ msgid ""
 "will throw an error. This is useful for most projects where naming conflicts "
 "are unlikely."
 msgstr ""
+"Projektverzeichnis - Versucht das ``project.Godot`` zu finden und sucht "
+"rekursiv durch Unterverzeichnisse. Wenn ``project.Godot`` nicht gefunden "
+"wird, wirt ein Fehler ausgegeben. Das ist nützlich für die Projekte, bei "
+"denen Namenskonflikte unwahrscheinlich sind."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:30
 msgid ""
@@ -74,9 +80,8 @@ msgid "None - Do not search for materials. Export them from the Blender file."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
-#, fuzzy
 msgid "Export of Cycles/EEVEE materials"
-msgstr "Blender-Materialien exportieren"
+msgstr "exportieren von Cycles/EEVEE Materialien"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
 msgid ""

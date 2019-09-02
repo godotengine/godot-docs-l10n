@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:4
+msgid "Visual Shader Plugins"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:7
+msgid "Introduction"
+msgstr "Introduction"
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:9
+msgid ""
+"Visual Shader Plugins are used to create custom Visual Shader nodes in "
+"GDScript."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:11
+msgid ""
+"The creation process is different from EditorPlugins - you simply create and "
+"save a script file and it will be ready to use."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:14
+msgid "Visual Shader Plugin"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:16
+msgid ""
+"This short tutorial will explain how to make a Perlin-3D noise node "
+"(original code from https://github.com/curly-brace/Godot-3.0-Noise-Shaders/"
+"blob/master/assets/gpu_noise_shaders/classic_perlin3d.tres)."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:18
+msgid ""
+"Create a sprite and assign a :ref:`ShaderMaterial <class_ShaderMaterial>` to "
+"its material slot:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:22
+msgid ""
+"Assign :ref:`VisualShader <class_VisualShader>` to the shader slot of the "
+"material:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:26
+msgid ""
+"Don't forget to change its mode to CanvasItem (if you are using a sprite):"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:30
+msgid ""
+"Create a script which derives from :ref:`VisualShaderNodeCustom "
+"<class_VisualShaderNodeCustom>`. This is all you need to initialize your "
+"plugin."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:181
+msgid ""
+"Save it and open the visual shader. You should see your new node type inside "
+"the member's dialog (if you can't see your new node, try restarting the "
+"editor):"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:185
+msgid "Place it on a graph and connect the required ports:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:189
+msgid ""
+"That is everything you need to do, as you can see it is very easy to create "
+"your own custom VisualShader nodes!"
+msgstr ""

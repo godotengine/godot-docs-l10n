@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
+#, fuzzy
+msgid "GDScript exports"
+msgstr "GDScript"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
+#, fuzzy
+msgid "Introduction to exports"
+msgstr "Введение в 3D"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
+#, fuzzy
+msgid ""
+"In Godot, class members can be exported. This means their value gets saved "
+"along with the resource (such as the :ref:`scene <class_PackedScene>`) "
+"they're attached to. They will also be available for editing in the property "
+"editor. Exporting is done by using the ``export`` keyword::"
+msgstr ""
+"Члены класса (переменные и тд) могут быть экспортированы. Это означает, что "
+"их значение сохраняется вместе с ресурсом (например, :ref:`сцена "
+"<class_PackedScene>`), к которому они прикреплены. Они также будут доступны "
+"для редактирования свойств в редакторе (инспекторе). Экспорт осуществляется "
+"с помощью ключевого слова ``export``::"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
+#, fuzzy
+msgid ""
+"An exported variable must be initialized to a constant expression or have an "
+"export hint in the form of an argument to the ``export`` keyword (see the "
+"*Examples* section below)."
+msgstr ""
+"Экспортируемая переменная должна быть инициализирована в постоянное "
+"выражение (Константу) или иметь подсказку на экспорт в виде аргумента к "
+"ключевому слову экспорта (см. ниже)."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
+msgid ""
+"One of the fundamental benefits of exporting member variables is to have "
+"them visible and editable in the editor. This way, artists and game "
+"designers can modify values that later influence how the program runs. For "
+"this, a special export syntax is provided."
+msgstr ""
+"Одним из фундаментальных преимуществ экспорта переменных (членов класса) "
+"является то, что они видны и редактируются в редакторе. Таким образом, "
+"художники и гейм-дизайнеры могут изменять значения, которые впоследствии "
+"будут влиять на работу программы. Для этого предусмотрен специальный "
+"синтаксис экспорта."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:29
+msgid ""
+"Exporting properties can also be done in other languages such as C#. The "
+"syntax varies depending on the language."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
+msgid "Examples"
+msgstr "Примеры"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
+#, fuzzy
+msgid ""
+"It must be noted that even if the script is not being run while in the "
+"editor, the exported properties are still editable. This can be used in "
+"conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
+msgstr ""
+"Следует отметить, что даже если во время работы в редакторе скрипт не "
+"выполняется, экспортируемые свойства все равно можно редактировать (см. ниже "
+"слово \"tool\")."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
+msgid "Exporting bit flags"
+msgstr "Экспорт битовых флагов"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
+#, fuzzy
+msgid ""
+"Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
+"values in one property. By using the export hint ``int, FLAGS``, they can be "
+"set from the editor::"
+msgstr ""
+"Целые числа, используемые в качестве битовых флагов, могут хранить несколько "
+"``true``/``false`` (булевых) значений в одном свойстве. Используя подсказку "
+"экспорта ``int, FLAGS``, их можно настроить в редакторе:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
+#, fuzzy
+msgid ""
+"Restricting the flags to a certain number of named flags is also possible. "
+"The syntax is similar to the enumeration syntax::"
+msgstr ""
+"Также возможно ограничение флагов определенным количеством именованных "
+"флагов. Синтаксис аналогичен синтаксису перечисления:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:139
+msgid ""
+"In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
+"value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
+"defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
+msgstr ""
+"В этом примере у ``Fire`` значение 1, у ``Water`` - 2, у ``Earth`` - 4 и у "
+"``Wind`` - 8. Обычно константы должны быть определены соответствующим "
+"образом (например, ``const ELEMENT_WIND = 8`` и так далее)."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:144
+#, fuzzy
+msgid ""
+"Using bit flags requires some understanding of bitwise operations. If in "
+"doubt, boolean variables should be exported instead."
+msgstr ""
+"Использование битовых флагов требует некоторого понимания побитовых "
+"операций. Если вы сомневаетесь, вместо этого следует экспортировать булевые "
+"переменные."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:148
+msgid "Exporting arrays"
+msgstr "Экспорт массивов"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+#, fuzzy
+msgid ""
+"Exporting arrays works, but with an important caveat: while regular arrays "
+"are created local to every class instance, exported arrays are *shared* "
+"between all instances. This means that editing them in one instance will "
+"cause them to change in all other instances. Exported arrays can have "
+"initializers, but they must be constant expressions."
+msgstr ""
+"Экспорт массивов работает, но с важной оговоркой: хотя обычные массивы "
+"создаются локально для каждого экземпляра класса, экспортируемые массивы "
+"являются *общими* для всех экземпляров. Это означает, что их редактирование "
+"в одном из экземпляров приведет к их изменению во всех других экземплярах. "
+"Экспортируемые массивы могут иметь инициализаторы, но они должны быть "
+"постоянными выражениями."

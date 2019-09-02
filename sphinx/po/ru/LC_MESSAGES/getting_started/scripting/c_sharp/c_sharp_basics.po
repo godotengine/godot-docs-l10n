@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -265,6 +265,11 @@ msgid ""
 "csproj`` file and look for the ``ItemGroup``, there should be a line "
 "included like the following:"
 msgstr ""
+"Например, если вы создали скрипт (например, `` Test.cs``) и удалили его в "
+"Godot, компиляция завершится неудачно, поскольку ожидается, что "
+"отсутствующий файл все еще будет  в файле проекта C #. На данный момент вы "
+"можете просто открыть файл `` .csproj`` и найти `` ItemGroup``, там должна "
+"быть строка, подобная следующей:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
 msgid ""
@@ -272,15 +277,20 @@ msgid ""
 "for renaming and moving things, simply rename and move them in the project "
 "file if needed."
 msgstr ""
+"Просто удалите эту строку, и ваш проект должен снова компилироваться "
+"правильно. То же самое для переименования и перемещения, просто переименуйте "
+"и переместите их в файле проекта, если это необходимо."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
 msgid "Example"
-msgstr ""
+msgstr "Пример"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:143
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr ""
+"Это пустой C# скрипт с некоторыми комментариями, чтобы продемонстрировать, "
+"как он работает."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:170
 msgid ""
@@ -290,6 +300,11 @@ msgid ""
 "class reference pages for :ref:`@GDScript <class_@gdscript>` and :ref:"
 "`@GlobalScope <class_@globalscope>`."
 msgstr ""
+"Как видите, функции, которые в GDScript имеют глобальную область видимости, "
+"такие как функция ``print``, здесь доступны из класса ``GD``, который в свою "
+"очередь является частью пространства имен ``Godot``. Вы можете ознакомиться "
+"со списком методов класса ``GD`` на страницах справки класса :ref:`@GDScript "
+"<class_@gdscript>` и :ref:`@GlobalScope <class_@globalscope>`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
 msgid ""
@@ -301,7 +316,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
 msgid "General differences between C# and GDScript"
-msgstr ""
+msgstr "Основные различия между C# и GDScript"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:185
 msgid ""
@@ -310,6 +325,10 @@ msgid ""
 "properties. In general, the C# Godot API strives to be as idiomatic as is "
 "reasonably possible."
 msgstr ""
+"В GDScript/C++ в API языка C# вместо `snake_case` используется "
+"``PascalCase``. Там, где это возможно, поля и получатели/установщики были "
+"преобразованы в свойства. В целом, C# Godot API старается быть максимально "
+"идиоматическим, насколько это возможно."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
 #, fuzzy
@@ -320,7 +339,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:192
 msgid "Current gotchas and known issues"
-msgstr ""
+msgstr "Текущие ограничения и известные проблемы"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
 msgid ""
@@ -330,6 +349,12 @@ msgid ""
 "a look over the official `issue tracker for Mono issues <https://github.com/"
 "godotengine/godot/labels/topic%3Amono>`_."
 msgstr ""
+"Поскольку поддержка C# введена относительно недавно, в ней всё ещё "
+"присутствуют \"детские болячки\" и проблемы, которые необходимо устранить. "
+"Ниже вы найдёте список наиболее важных проблем, о существовании которых вам "
+"следовало бы знать, при использовании C# вместе с Godot. Если есть какие-то "
+"сомнения, вы также можете заглянуть на `официальный трекер проблем/запросов "
+"Mono <https://github.com/godotengine/godot/labels/topic%3Amono>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
 msgid ""
@@ -337,17 +362,24 @@ msgid ""
 "when things are deleted, renamed or moved in Godot (`#12917 <https://github."
 "com/godotengine/godot/issues/12917>`_)."
 msgstr ""
+"Как объяснялось выше, проект C# не всегда  автоматически синхронизируется "
+"при удалении, переименовании или перемещении объектов в Godot (`#12917 "
+"<https://github.com/godotengine/godot/issues/12917>`_)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:203
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
+"Написание плагинов редактора возможно, но в настоящее время это довольно "
+"запутанно."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr ""
+"В данный момент, при выполнении горячей-перезагруки, состояние не "
+"сохраняется и не восстанавливается, за исключением экспортируемых переменных."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
 msgid ""
@@ -358,16 +390,25 @@ msgid ""
 "github.com/godotengine/godot/issues/20270>`_ `#20271 <https://github.com/"
 "godotengine/godot/issues/20271>`_)."
 msgstr ""
+"Экспорт Mono проектов доступен только для настольных платформ (Linux, "
+"Windows and macOS). Android, iOS, HTML5 и UWP в настоящий момент не "
+"поддерживаются (`#20267 <https://github.com/godotengine/godot/"
+"issues/20267>`_, `#20268 <https://github.com/godotengine/godot/"
+"issues/20268>`_ `#20270 <https://github.com/godotengine/godot/"
+"issues/20270>`_ `#20271 <https://github.com/godotengine/godot/"
+"issues/20271>`_)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
+"Прикрепленные C# скрипты должны относиться к классу, который имеет имя "
+"класса, соответствующее имени файла."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
 msgid "Performance of C# in Godot"
-msgstr ""
+msgstr "Производительность C# в Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
 msgid ""
@@ -382,7 +423,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:226
 msgid "Using NuGet packages in Godot"
-msgstr ""
+msgstr "Использование пакетов NuGet в Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
 msgid ""
@@ -391,6 +432,11 @@ msgid ""
 "They can also be added manually by adding the package reference in the ``."
 "csproj`` file located in the project root:"
 msgstr ""
+"`NuGet <https://www.nuget.org/>`_ пакеты могут быть установлены и "
+"использованы вместе с Godot, как и в любом другом C# проекте. Множество IDE "
+"способны добавлять пакеты напрямую. Если необходимо, вы можете добавить их "
+"вручную, добавив ссылку на пакет в ``.csproj`` файл, который расположен в "
+"корне проекта:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:243
 msgid ""
@@ -398,3 +444,6 @@ msgid ""
 "of the project directory. To ensure that NuGet packages will be available "
 "for msbuild to use, run:"
 msgstr ""
+"Всякий раз, когда пакеты были добавлены или модифицированы, следует "
+"запусткать ``nuget restore``в корневой папке проекта. Чтобы убедиться, что "
+"пакеты NuGet будут доступны в msbuild, выполните:"

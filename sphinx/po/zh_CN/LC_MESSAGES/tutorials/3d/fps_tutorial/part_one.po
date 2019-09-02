@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -194,7 +194,7 @@ msgid ""
 "The skybox is created by **StumpyStrust** on OpenGameArt. The skybox used is "
 "licensed under ``CC0``."
 msgstr ""
-"天空盒由OpenGameArt上的** StumpyStrust **创建。 使用的天空盒在“CC0”下获得许"
+"天空盒由OpenGameArt上的** StumpyStrust **创建。 使用的天空盒在``CC0``下获得许"
 "可。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:62
@@ -315,8 +315,8 @@ msgid ""
 "We are adding a small square to the 'feet' of the player so the player does "
 "not feel like they are balancing on a single point."
 msgstr ""
-"我们在游戏角色的“脚”上添加一个小方块，这样游戏角色就不会觉得他们在单点上保持"
-"平衡。"
+"我们在游戏角色的``脚``上添加一个小方块，这样游戏角色就不会觉得他们在单点上保"
+"持平衡。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:116
 msgid ""
@@ -486,8 +486,8 @@ msgid ""
 "``0.05`` works well for my mouse, but you may need to change it based on how "
 "sensitive your mouse is."
 msgstr ""
-"``MOUSE_SENSITIVITY``:鼠标的敏感程度。 我发现“0.05”的值适用于我的鼠标，但您可"
-"能需要根据鼠标的敏感程度进行更改。"
+"``MOUSE_SENSITIVITY``:鼠标的敏感程度。 我发现``0.05``的值适用于我的鼠标，但您"
+"可能需要根据鼠标的敏感程度进行更改。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:406
 msgid ""
@@ -612,7 +612,7 @@ msgid ""
 "towards. Because we do not want the player's previous input to effect the "
 "player beyond a single ``process_movement`` call, we reset ``dir``."
 msgstr ""
-"``dir``将用于存储游戏角色打算移动的方向。 因为我们不希望游戏角色以前的输入影"
+"``dir`` 将用于存储游戏角色打算移动的方向。 因为我们不希望游戏角色以前的输入影"
 "响游戏角色超过单个 ``process_movement`` 调用，所以我们重置 ``dir`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:454
@@ -833,7 +833,7 @@ msgid ""
 "``input_movement_vector``. This makes it where ``input_movement_vector``'s "
 "values are within a ``1`` radius unit circle."
 msgstr ""
-"在我们检查了每个定向运动动作之后，我们将 ``input_movement_vector`` 标准化。 "
+"在我们检查了每个定向运动动作之后，我们将 ``input_movement_vector`` 归一化。 "
 "这使得 ``input_movement_vector`` 的值在“1”半径单位圆内。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:592
@@ -895,8 +895,8 @@ msgid ""
 "until you terminate the runtime."
 msgstr ""
 "然后我们检查 ``ui_cancel`` 动作。 这样我们就可以在按下 ``escape`` 按钮时释放/"
-"捕获鼠标光标。 我们这样做是因为否则我们无法释放光标，这意味着它会在您终止运行"
-"时停止。"
+"捕获鼠标光标。 如果我们不这样做将无法释放光标，这意味着它（光标）在您终止运行"
+"之前会一直受困（无法显示以及正常使用）。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:613
 #, fuzzy
@@ -1056,7 +1056,7 @@ msgid ""
 "Then we rotate the entire :ref:`KinematicBody <class_KinematicBody>` on the "
 "``Y`` axis by the relative mouse motion's ``X`` value."
 msgstr ""
-"然后我们通过相对鼠标运动的“X”值旋转整个 :ref:`KinematicBody "
+"然后我们通过相对鼠标运动的``X``值旋转整个 :ref:`KinematicBody "
 "<class_KinematicBody>` 在 ``Y`` 轴上。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:665
@@ -1066,7 +1066,7 @@ msgid ""
 "Right and Left movement is ``1`` and ``-1`` respectively."
 msgstr ""
 "Godot将相对鼠标运动转换为 :ref:`Vector2 <class_Vector2>` 其中鼠标上下移动分别"
-"为“1”和“-1”。 左右移动分别是“1”和“-1”。"
+"为``1``和``-1``。 左右移动分别是``1``和``-1``。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:669
 msgid ""
@@ -1074,8 +1074,8 @@ msgid ""
 "motion's ``X`` value by ``-1`` so mouse motion going left and right rotates "
 "the player left and right in the same direction."
 msgstr ""
-"由于我们如何旋转游戏角色，我们将相对鼠标移动的“X”值乘以“-1”，因此鼠标左右移动"
-"会使游戏角色左右向同一方向旋转。"
+"由于我们如何旋转游戏角色，我们将相对鼠标移动的``X``值乘以``-1``，因此鼠标左右"
+"移动会使游戏角色左右向同一方向旋转。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:673
 msgid ""

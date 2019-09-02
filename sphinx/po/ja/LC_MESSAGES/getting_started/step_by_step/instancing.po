@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,6 +44,8 @@ msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
+":ref:`doc_scenes_and_nodes`では、シーンはツリー構造で編成されたノードのコレク"
+"ションであり、単一のノードがツリールートであることを学びました。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -66,19 +68,23 @@ msgstr "上の図では、シーンBがインスタンスとしてシーンAに�
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
-msgstr ""
+msgstr "インスタンス化の例"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
+"インスタンス化のしくみを学ぶには、サンプル プロジェクトをダウンロードして始め"
+"ましょう: :download:`instancing.zip <files/instancing.zip>`\\ 。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
+"このプロジェクトを任意の場所で解凍します。次に、Godotを開き、[インポート]ボタ"
+"ンを使用してこのプロジェクトをプロジェクト管理者に追加します:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -86,6 +92,9 @@ msgid ""
 "can find inside it. After doing this, the new project will appear on the "
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
+"抽出したフォルダを参照し、その中にある「project.godot」ファイルを開きます。こ"
+"れを行うと、新しいプロジェクトがプロジェクトの一覧に表示されます。[編集]ボタ"
+"ンを押してプロジェクトを編集します。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -94,10 +103,14 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
+"このプロジェクトには、「Ball.tscn」と「Main.tscn」の2つのシーンがあります。"
+"ボール シーンは\\ :ref:`RigidBody2D <class_RigidBody2D>`\\ を使用して物理動作"
+"を提供し、メイン シーンにはボールが衝突する障害物のセットがあります (\\ :ref:"
+"`StaticBody2D <class_StaticBody2D>`\\ を使用)。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr ""
+msgstr "``Main`` シーンを開き、ルート ノードを選択します:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
@@ -105,6 +118,9 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
+"``Main`` の子として ``Ball`` シーンのインスタンスを追加したいと思います。「リ"
+"ンク」の形のボタン(ホバーテキストに「シーンファイルをノードとしてインスタンス"
+"設定する」と表示)をクリックし、 ``Ball.tscn`` ファイルを選択します。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -112,10 +128,12 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
+"ボールは画面領域の左上隅に配置されます(画面座標では ``(0,0)`` です)。ボールを"
+"クリックし、シーンの上部中央付近にドラッグします:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr ""
+msgstr "「再生」を押して、ボールが画面の下部に落ちるのを確認します:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple instances"
@@ -127,14 +145,16 @@ msgid ""
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (Ctrl-D):"
 msgstr ""
+"シーンに必要な数のインスタンスを追加するには、[インスタンス]ボタンをもう一度"
+"使用するか、ボール インスタンスをクリックして [複製](またはCtrl-D)を押します:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr ""
+msgstr "シーンを再び実行し、ボールのすべてが落ちます。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"
-msgstr ""
+msgstr "インスタンスの編集"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
 msgid ""
@@ -173,10 +193,15 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
+"調整されたプロパティの横に灰色の「元に戻す」ボタンが表示されます。 このボタン"
+"が表示されている場合は、インスタンス化されたシーンのプロパティを変更して、保"
+"存されたシーンの値を上書きすることを意味します。 そのプロパティが元のシーンで"
+"変更されても、カスタム値は残ります。 元に戻すボタンを押すと、保存されている"
+"シーンの値にプロパティが復元されます。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:123
 msgid "Conclusion"
-msgstr ""
+msgstr "結論"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:125
 msgid ""

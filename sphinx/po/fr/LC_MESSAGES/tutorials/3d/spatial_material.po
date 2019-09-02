@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -276,7 +276,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:125
 msgid "Vertex Color"
-msgstr "Couleur de vertex"
+msgstr "Couleur de sommet"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:127
 msgid ""
@@ -306,7 +306,7 @@ msgid ""
 "Most 3D DCCs will likely export vertex colors as sRGB, so toggling this "
 "option on will help them look correct."
 msgstr ""
-"La plupart des DCC 3D exporteront probablement les couleurs de vertex comme "
+"La plupart des DCC 3D exporteront probablement les couleurs de sommet comme "
 "sRVB, donc activer cette option les aidera à paraître corrects."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:144
@@ -613,8 +613,8 @@ msgid ""
 "make it black and unshaded, reverse culling (Cull Front), and add some grow:"
 msgstr ""
 "Cette option est communément utilisée pour créer des contours simplement. "
-"Ajoutez un second matériau, de couleur noire et sans ombrage, inverser son "
-"mode de Culling et ajouter du repoussement :"
+"Ajoutez un second \"material\", de couleur noire et sans ombres, inversez "
+"son \"culling\" (Cull Front) et augmentez le \"grow\" :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:271
 msgid "Use Alpha Scissor"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "エクスポート"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
 msgid "Overview"
-msgstr ""
+msgstr "概要"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:9
 msgid ""
@@ -32,6 +32,11 @@ msgid ""
 "Godot just so they can open your project. Instead, you can *export* your "
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
+"動作するゲームを作成したら、他の人にシェアしたいでしょう。でも、友達にGodotを"
+"ダウンロードして\n"
+"あなたのプロジェクトを開くように頼むのは現実的ではないですね。代わりに、あな"
+"たは自分のプロジェクトをエクスポートして誰でも動作させることのできるパッケー"
+"ジにすることができます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 msgid ""
@@ -40,6 +45,9 @@ msgid ""
 "a variety of platforms. First, however, we need to make some changes to the "
 "way the game works."
 msgstr ""
+"エクスポートの方法はプラットホームごとに異なります。このチュートリアルでは"
+"\"Dodge the Creeps\"をいろいろなプラットフォーム用にエクスポートする方法を学"
+"びます。最初にゲームの仕組みを少し変える必要があります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
 msgid ""
@@ -49,7 +57,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 msgid "Preparing the project"
-msgstr ""
+msgstr "プロジェクトの準備"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
 msgid ""
@@ -59,6 +67,10 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
+"\"Dodge the Creeps\"ではプレイヤーキャラクターをキーボードでコントロールしま"
+"した。これはPCなら良いのですが、スマートフォンやタブレットではタッチスクリー"
+"ンの入力に対応する必要があります。クリックイベントをタッチイベントと同じに扱"
+"うことでゲームをクリックして移動するようにできます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
 msgid ""
@@ -68,6 +80,11 @@ msgid ""
 "input, you can do that in the \"Project Settings\" under *Input Devices* and "
 "*Pointing*"
 msgstr ""
+"デフォルトでGodotはタッチ入力からマウス入力をエミュレートします。マウスイベン"
+"ト対応にプログラムされていればタッチも\n"
+"同じように動作します。なんらかの理由でこのようにしたくないときやマウス入力か"
+"らタッチをエミュレートしたいときは入力装置とポインティングの下のプロジェクト"
+"設定で設定できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
 msgid ""
@@ -115,9 +132,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:141
-#, fuzzy
 msgid "Export presets"
-msgstr "エクスポート"
+msgstr "プリセットのエクスポート"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:143
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,8 @@ msgid ""
 "This page provides an overview of the commonly used features of both C# and "
 "Godot and how they are used together."
 msgstr ""
+"На этой странице представлен обзор наиболее часто используемых функций C# и "
+"Godot, а также того, как они используются вместе."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:10
 #, fuzzy
@@ -36,16 +38,20 @@ msgstr "Информация о версии"
 msgid ""
 "C# is a statically typed language. Therefore, you can't do the following:"
 msgstr ""
+"C# - это статически типизированный язык. Следовательно, вы не можете сделать "
+"следующее:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:19
 msgid ""
 "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
 "convert it to the desired derived type, ``Sprite`` in this case."
 msgstr ""
+"Метод ``GetNode()`` возвращает экземпляр ``Node``. Вы должны однозначно "
+"преобразовать его в желаемый производный тип, ``Sprite`` в данном случае."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:22
 msgid "For this, you have various options in C#."
-msgstr ""
+msgstr "Для этого в C# имеются различные опции."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
 msgid "**Casting and Type Checking**"

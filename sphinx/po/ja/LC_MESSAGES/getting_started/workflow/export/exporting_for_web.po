@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,11 +36,15 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
+#, fuzzy
 msgid ""
-"Many browsers, Chromium-based browsers specifically, will not load exported "
-"projects when **opened locally** per ``file://`` protocol. To get around "
-"this, use a local server."
+"Many browsers, including Firefox and Chromium-based browsers, will not load "
+"exported projects when **opened locally** per ``file://`` protocol. To get "
+"around this, use a local server."
 msgstr ""
+"多くのブラウザ、特にChromiumベースのブラウザは、 ``file://`` プロトコルごとに"
+"\\ **ローカルで開いたとき**\\ に、エクスポートされたプロジェクトをロードしま"
+"せん。 これを回避するには、ローカルサーバーを使用します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
 msgid ""
@@ -56,7 +60,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
-"HTML5 export uses *WebGL 2* when the *GLES3* option selected."
+"HTML5 export uses *WebGL 2* when the *GLES3* option is selected."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
@@ -104,6 +108,10 @@ msgid ""
 "``iframe``, **third-party** cookies must also be enabled. Incognito/private "
 "browsing mode also prevents persistence."
 msgstr ""
+"``user://`` ファイルシステムの永続性が必要な場合、ユーザーは\\ **Cookie(特に"
+"IndexedDB)を許可する**\\ 必要があります。 ``iframe`` で提供されているゲームを"
+"再生する場合は、\\ **サードパーティ**\\ のCookieも有効にする必要があります。"
+"Incognito/privateブラウジングモードも永続性を妨げます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
 msgid ""
@@ -233,7 +241,7 @@ msgstr "GDNative"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 msgid "C#"
-msgstr ""
+msgstr "\\ C#"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
 msgid "Clipboard synchronisation between engine and operating system"
@@ -263,6 +271,9 @@ msgid ""
 "server, including a default HTML page for presentation. A custom HTML file "
 "can be used, see :ref:`doc_customizing_html5_shell`."
 msgstr ""
+"Web用にエクスポートすると、プレゼンテーション用のデフォルトのHTMLページなど、"
+"Webサーバーから提供される複数のファイルが生成されます。 カスタムHTMLファイル"
+"を使用できます。\\ :ref:`doc_customizing_html5_shell`\\ を参照して下さい。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:131
 msgid ""
@@ -291,6 +302,14 @@ msgid ""
 "image. It is not used in the default HTML page, but is included for :ref:"
 "`custom HTML pages <doc_customizing_html5_shell>`."
 msgstr ""
+"エクスポートされた他のファイルは、 ``.html`` ファイルの横にある名前のままで提"
+"供されます。 ``.wasm`` ファイルは、エンジンを実装するバイナリWebAssemblyモ"
+"ジュールです。 ``.pck`` ファイルは、ゲームを含むGodotメインパックです。 ``."
+"js`` ファイルには起動コードが含まれており、エンジンにアクセスするために ``."
+"html`` ファイルによって使用されます。 ``.png`` ファイルには、ブートスプラッ"
+"シュイメージが含まれています。 デフォルトのHTMLページでは使用されませんが、 "
+"\\ :ref:`カスタムHTMLページ <doc_customizing_html5_shell>`\\ に含まれていま"
+"す。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:147
 msgid ""
@@ -326,12 +345,18 @@ msgid ""
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
 "the game in the default browser for testing."
 msgstr ""
+"実行可能なWeb書き出しテンプレートが使用可能な場合は、エディタの [シーンを停"
+"止] ボタンと [編集したシーンを再生] ボタンの間にボタンが表示され、既定のブラ"
+"ウザでゲームをすばやく開いてテストできます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:167
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
 msgstr ""
+"カスタムHTMLシェルファイルへのパスが指定されている場合、デフォルトのHTMLペー"
+"ジの代わりにそれが使用されます。\\ :ref:`doc_customizing_html5_shell`\\ を参"
+"照してください。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
 msgid ""
@@ -339,6 +364,9 @@ msgid ""
 "HTML page. This allows to, for example, load webfonts and third-party "
 "JavaScript APIs, include CSS, or run JavaScript code."
 msgstr ""
+"**Head Include**\\ は、生成されたHTMLページの ``<head>`` 要素に追加されます。"
+"これにより、たとえば、WebfontsやサードパーティのJavaScript APIをロードした"
+"り、CSSを組み込んだり、JavaScriptコードを実行したりできます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:177
 msgid "Calling JavaScript from script"
@@ -363,21 +391,23 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
-msgstr ""
+msgstr "JavaScript番号はGDScriptとして返されます :ref:`class_float`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
-msgstr ""
+msgstr "JavaScriptブール値はGDScriptとして返されます :ref:`class_bool`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:195
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
-msgstr ""
+msgstr "JavaScript文字列はGDScriptとして返されます :ref:`class_String`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
 msgstr ""
+"JavaScriptのArrayBuffer、TypedArray、DataViewはGDScriptとして返されます :ref:"
+"`class_PoolByteArray`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid "Any other JavaScript value is returned as ``null``."
@@ -390,6 +420,10 @@ msgid ""
 "eval`` will also return ``null``.  The availability of the singleton can be "
 "checked with the ``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
+"HTML5エクスポートテンプレートは、シングルトンをサポートせずに構築できます。 "
+"このようなテンプレートおよびHTML5以外のプラットフォームでは、 ``JavaScript."
+"eval`` を呼び出すと ``null`` も返されます。 シングルトンの可用性は、 "
+"``JavaScript`` :ref:`feature tag <doc_feature_tags>`\\ で確認できます:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:220
 msgid ""

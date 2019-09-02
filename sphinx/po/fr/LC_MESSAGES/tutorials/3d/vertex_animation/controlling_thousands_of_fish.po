@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:4
 msgid "Controlling thousands of fish with Particles"
-msgstr ""
+msgstr "Contrôler des milliers de poissons avec des particules"
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:6
 msgid ""
@@ -28,6 +28,10 @@ msgid ""
 "static objects around the scene. But it is still difficult to move the "
 "objects around the scene."
 msgstr ""
+"Le problème avec les :ref:`MeshInstances <class_MeshInstance>` est qu'il est "
+"coûteux de mettre à jour leurs tableaux de transforms. Ils sont idéaux pour "
+"placer de nombreux objets statiques partout dans la scène, mais ça reste "
+"difficile de déplacer ces objets."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:10
 msgid ""
@@ -36,6 +40,10 @@ msgid ""
 "acceleration by computing and setting the per-instance information in a :ref:"
 "`Shader <class_Shader>`."
 msgstr ""
+"Pour faire bouger de manière intéressante chaque instance, nous allons "
+"utiliser un noeud de :ref:`Particles <class_Particles>`. Les particules "
+"profitent de l'accélération GPU en calculant et en définissant les "
+"informations par instance dans un :ref:`Shader <class_Shader>`."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:14
 msgid ""
@@ -43,6 +51,9 @@ msgid ""
 "<class_CPUParticles>`, which do the same thing as Particles, but do not "
 "benefit from GPU acceleration."
 msgstr ""
+"Les particules ne sont pas disponibles dans GLES2, utilisez plutôt :ref:"
+"`CPUParticles <class_CPUParticles>`, qui font la même chose que les "
+"particules, mais ne bénéficient pas de l'accélération GPU."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:17
 msgid ""
@@ -51,10 +62,14 @@ msgid ""
 "\"Process Material\" create a new :ref:`ShaderMaterial "
 "<class_ShaderMaterial>`."
 msgstr ""
+"Créez d'abord un nœud Particles. Ensuite, sous \"Draw Passes\" définissez le "
+"\"Draw Pass 1\" de la particule sur votre :ref:`Mesh <class_Mesh>`. Puis "
+"sous \"Process Material\" créez un nouveau :ref:`ShaderMaterial "
+"<class_ShaderMaterial>`."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:21
 msgid "Set the ``shader_type`` to ``particles``."
-msgstr ""
+msgstr "Définissez le ``shader_type`` sur ``particles``."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:27
 msgid "Then add the following two functions:"
@@ -66,6 +81,9 @@ msgid ""
 "<class_ParticlesMaterial>`. They are used to generate a random number from  "
 "each particle's ``RANDOM_SEED``."
 msgstr ""
+"Ces fonctions proviennent du :ref:`ParticlesMaterial "
+"<class_ParticlesMaterial>` par défaut. Elles sont utilisées pour générer un "
+"nombre aléatoire à partir du ``RANDOM_SEED`` de chaque particule."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:54
 msgid ""
@@ -74,12 +92,19 @@ msgid ""
 "accessed in the Spatial shader of the mesh, and also in the particle shader "
 "the next time it is run."
 msgstr ""
+"Ce qui est unique avec les shaders de particules, c'est que certaines des "
+"variables intégrées sont sauvegardées d'une frame à l'autre. ``TRANSFORM``, "
+"``COLOR`` et ``CUSTOM`` sont tous accessibles dans le shader spatial du "
+"maillage, ainsi que dans le shader de particules lors de sa prochaine "
+"exécution."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:58
 msgid ""
 "Next, setup your ``vertex`` function. Particles shaders only contain a "
 "vertex function and no others."
 msgstr ""
+"Ensuite, configurez votre fonction ``vertex``. Les shaders de particules ne "
+"contiennent qu'une fonction vertex et aucune autre."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:61
 msgid ""
@@ -90,75 +115,104 @@ msgid ""
 "in variable ``RESTART`` which becomes true for one frame when the particle "
 "system is restarted."
 msgstr ""
+"Nous allons d’abord faire la distinction entre le code devant être exécuté "
+"uniquement au démarrage du système de particules et le code devant toujours "
+"être exécuté. Nous voulons attribuer à chaque poisson une position aléatoire "
+"et un décalage d'animation aléatoire lors de la première exécution du "
+"système. Nous encapsulons donc ce code dans une instruction `` if`` "
+"vérifiant la variable intégrée `` RESTART`` qui devient vraie pour une frame "
+"lorsque le système de particules est redémarré."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:66
 msgid "From a high level, this looks like:"
-msgstr ""
+msgstr "D'un niveau supérieur, cela ressemble à :"
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:78
 msgid ""
 "Next, we need to generate 4 random numbers: 3 to create a random position "
 "and one for the random offset of the swim cycle."
 msgstr ""
+"Ensuite, nous devons générer 4 nombres aléatoires : 3 pour créer une "
+"position aléatoire et un autre pour le décalage aléatoire du cycle de nage."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:81
 msgid ""
 "First, generate 4 seeds inside the ``RESTART`` block using the ``hash`` "
 "function provided above:"
 msgstr ""
+"Tout d'abord, générez 4 graines à l'intérieur du bloc ``RESTART``à l'aide de "
+"la fonction ``hash`` fournie ci-dessus :"
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:90
 msgid ""
 "Then, use those seeds to generate random numbers using ``rand_from_seed``:"
 msgstr ""
+"Ensuite, utilisez ces graines pour générer des nombres aléatoires à l'aide "
+"de ``rand_from_seed`` :"
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:99
 msgid ""
 "Finally, assign ``position`` to ``TRANSFORM[3].xyz``, which is the part of "
 "the transform that holds the position information."
 msgstr ""
+"Enfin, affectez ``position`` à ``TRANSFORM[3].xyz``, qui est la partie du "
+"transform qui contient l'information de position."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:106
 msgid "Remember, all this code so far goes inside the ``RESTART`` block."
 msgstr ""
+"Rappelez-vous, tout ce code jusqu'à présent va à l'intérieur du bloc "
+"``RESTART``."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:108
 msgid ""
 "The vertex shader for your mesh can stay the exact same as it was in the "
 "previous tutorial."
 msgstr ""
+"Le vertex shader de votre maillage peut rester exactement le même que dans "
+"le tutoriel précédent."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:110
 msgid ""
 "Now you can move each fish individually each frame, either by adding to the "
 "``TRANSFORM`` directly or by writing to ``VELOCITY``."
 msgstr ""
+"Vous pouvez maintenant déplacer chaque poisson individuellement à chaque "
+"image, soit en ajoutant directement à son \"TRANSFORM\", soit en réécrivant "
+"sa \"VELOCITY\"."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:113
 msgid "Let's transform the fish by setting their ``VELOCITY``."
-msgstr ""
+msgstr "Faisons avancer les poissons en définissant leurs ``VELOCITY``."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:119
 msgid ""
 "This is the most basic way to set ``VELOCITY`` every particle (or fish) will "
 "have the same velocity."
 msgstr ""
+"C'est la façon la plus simple de régler ``VELOCITY`` : chaque particule (ou "
+"poisson) aura la même vitesse."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:121
 msgid ""
 "Just by setting ``VELOCITY`` you can make the fish swim however you want. "
 "For example, try the code below."
 msgstr ""
+"Juste en définissant ``VELOCITY`` vous pouvez faire nager les poissons comme "
+"vous voulez. Par exemple, essayez le code ci-dessous."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:128
 msgid "This will give each fish a unique speed between ``2`` and ``10``."
-msgstr ""
+msgstr "Cela donnera à chaque poisson une vitesse unique entre ``2``et ``10``."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:130
 msgid ""
 "If you used ``CUSTOM.y`` in the last tutorial, you can also set the speed of "
 "the swim animation based on the ``VELOCITY``. Just use ``CUSTOM.y``."
 msgstr ""
+"Si vous avez utilisé ``CUSTOM.y`` dans le dernier tutoriel, vous pouvez "
+"également définir la vitesse de l'animation de nage en fonction de la "
+"``VELOCITY``. Utilisez simplement ``CUSTOM.y``."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:137
 msgid "This code gives you the following behavior:"
@@ -172,3 +226,10 @@ msgid ""
 "Please refer to the :ref:`Particles Shader Reference <doc_particle_shader>` "
 "for more information on particle shaders."
 msgstr ""
+"En utilisant un ParticlesMaterial (matériau de particules), vous pouvez "
+"rendre le comportement du poisson aussi simple ou complexe que vous le "
+"souhaitez. Dans ce tutoriel, nous ne réglons que Velocity, mais dans vos "
+"propres Shaders vous pouvez aussi régler ``COLOR``, la rotation, l'échelle "
+"(via ``TRANSFORM``). Pour plus d'informations sur les shaders de particules, "
+"reportez-vous à la page :ref:`Particles Shader Reference "
+"<doc_particle_shader>`."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,18 +101,44 @@ msgid ""
 "Create a new ShaderMaterial in some object of your choice. Go to the "
 "\"Material\" property and create a ShaderMaterial."
 msgstr ""
-"在您选择的某个对象中创建一个新的ShaderMaterial。 转到“材质”属性并创建"
+"在您选择的某个对象中创建一个新的ShaderMaterial。 转到``材质``属性并创建"
 "ShaderMaterial。"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:39
-msgid "Edit the newly created shader, and the shader editor will open:"
+msgid ""
+"Next, click on the shader material to see its properties. From here you can "
+"create a shader or visual shader. Regular shaders use code to set their "
+"properties while a visual shader uses a node based workflow."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shader_materials.rst:43
+msgid ""
+"There is no way to convert between the two, so if you decide you want to "
+"change to a visual shader or vice versa, you will have to start from scratch."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shader_materials.rst:46
+msgid "Choose one of them and you can start editing your shader."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shader_materials.rst:50
+#, fuzzy
+msgid ""
+"If you create a regular shader click on it and the shader editor will open."
 msgstr "编辑新创建的着色器，着色器编辑器将打开:"
 
-#: ../../docs/tutorials/shading/shader_materials.rst:44
+#: ../../docs/tutorials/shading/shader_materials.rst:54
+#, fuzzy
+msgid ""
+"If you create a visual shader the visual shader editor will open "
+"automatically."
+msgstr "编辑新创建的着色器，着色器编辑器将打开:"
+
+#: ../../docs/tutorials/shading/shader_materials.rst:59
 msgid "Converting to ShaderMaterial"
 msgstr "转换为ShaderMaterial"
 
-#: ../../docs/tutorials/shading/shader_materials.rst:46
+#: ../../docs/tutorials/shading/shader_materials.rst:61
 #, fuzzy
 msgid ""
 "It is possible to convert from SpatialMaterial, CanvasItemMaterial and "
@@ -121,3 +147,9 @@ msgid ""
 msgstr ""
 "可以将SpatialMaterial，CanvasItemMaterial和ParticlesMaterial转换为"
 "ShaderMaterial。 要执行此操作，请转到材质属性并启用转换选项。"
+
+#: ../../docs/tutorials/shading/shader_materials.rst:69
+msgid ""
+"Using the convert option will turn the SpatialMaterial into a ShaderMaterial "
+"with a text shader, not a visual shader."
+msgstr ""

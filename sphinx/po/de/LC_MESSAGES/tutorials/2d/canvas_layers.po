@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Viewport and Canvas items"
 msgstr "Viewport und CanvasItem"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
-#, fuzzy
 msgid ""
 "Regular 2D nodes, such as :ref:`Node2D <class_Node2D>` or :ref:`Control "
 "<class_Control>` both inherit from :ref:`CanvasItem <class_CanvasItem>`, "
@@ -37,12 +36,11 @@ msgstr ""
 "Reguläre 2D-Nodes wie :ref:`Node2D <class_Node2D>` und :ref:`Control "
 "<class_Control>` sind abgeleitet von :ref:`CanvasItem <class_CanvasItem>` "
 "auf dem auch sämtliche andere 2D-Nodes basieren. CanvasItems können in einer "
-"Baumhierarchie strukturiert werden und kopieren ihre Transformation "
-"dementsprechend. Das heißt, wird ein übergeordneter Node bewegt, bewegen "
+"Baumhierarchie strukturiert werden und kopieren ihre Transformation von der "
+"übergeordneten Node. Das heißt, wird ein übergeordneter Node bewegt, bewegen "
 "sich alle untergeordneten Nodes in gleicher Weise."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
-#, fuzzy
 msgid ""
 "CanvasItem nodes, and nodes inheriting from them, are direct or indirect "
 "children of a :ref:`Viewport <class_Viewport>`, and will be displayed "
@@ -53,7 +51,6 @@ msgstr ""
 "dargestellt."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
-#, fuzzy
 msgid ""
 "A Viewport has the property :ref:`Viewport.canvas_transform "
 "<class_Viewport_property_canvas_transform>`, which allows applying a custom :"
@@ -61,7 +58,7 @@ msgid ""
 "it contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
-"Viewport enthält die Eigenschaft :ref:`Viewport.canvas_transform "
+"Ein Viewport enthält die Eigenschaft :ref:`Viewport.canvas_transform "
 "<class_Viewport_property_canvas_transform>`, die es erlaubt, die gesamte "
 "CanvasItem-Hierarchie durch ein eigenes :ref:`Transform2D "
 "<class_Transform2D>` zu beeinflussen. Bestehende Nodes wie :ref:`Camera2D "
@@ -75,14 +72,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:28
-#, fuzzy
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
 "to the canvas transform. Examples of this are:"
 msgstr ""
-"Doch das ist noch nicht alles. Oft gibt es Situationen, in denen in einem "
-"Spiel oder einer Anwendung nicht *alles* durch Canvas Transform beeinflusst "
-"werden soll. Dazu zählen beispielsweise:"
+"Normalerweise wollen wir nicht, dass *alles* im Spiel durch Canvas Transform "
+"beeinflusst werden soll. Dazu zählen beispielsweise:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid ""
@@ -101,7 +96,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:34
-#, fuzzy
 msgid ""
 "**Transitions**: We may want visual effects used for transitions (fades, "
 "blends) to remain at a fixed screen location."
@@ -120,7 +114,6 @@ msgid "CanvasLayers"
 msgstr "CanvasLayers"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:41
-#, fuzzy
 msgid ""
 "The answer is :ref:`CanvasLayer <class_CanvasLayer>`, which is a node that "
 "adds a separate 2D rendering layer for all its children and grand-children. "

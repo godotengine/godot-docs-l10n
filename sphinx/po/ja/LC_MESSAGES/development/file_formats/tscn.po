@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,17 +55,17 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:23
 msgid "File Descriptor"
-msgstr ""
+msgstr "ファイル記述子"
 
 #: ../../docs/development/file_formats/tscn.rst:24
 #: ../../docs/development/file_formats/tscn.rst:273
 msgid "External resources"
-msgstr ""
+msgstr "外部リソース"
 
 #: ../../docs/development/file_formats/tscn.rst:25
 #: ../../docs/development/file_formats/tscn.rst:295
 msgid "Internal resources"
-msgstr ""
+msgstr "内部リソース"
 
 #: ../../docs/development/file_formats/tscn.rst:26
 msgid "Nodes"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:43
 msgid "Entries inside the file"
-msgstr ""
+msgstr "ファイル内のエントリ"
 
 #: ../../docs/development/file_formats/tscn.rst:45
 msgid ""
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:71
 msgid "Other valid keywords include:"
-msgstr ""
+msgstr "その他の有効なキーワードは次のとおりです:"
 
 #: ../../docs/development/file_formats/tscn.rst:73
 msgid "``instance``"
@@ -187,7 +187,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:134
 msgid "NodePath"
-msgstr ""
+msgstr "\\ NodePath"
 
 #: ../../docs/development/file_formats/tscn.rst:136
 msgid ""
@@ -200,7 +200,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:161
 msgid "Skeleton"
-msgstr ""
+msgstr "スケルトン"
 
 #: ../../docs/development/file_formats/tscn.rst:163
 msgid ""
@@ -302,6 +302,9 @@ msgid ""
 "node will have an accompanying ArrayMesh resource. The ArrayMesh resource "
 "may be either internal or external to the TSCN file."
 msgstr ""
+"リソースは、ノードを構成するコンポーネントです。たとえば、MeshInstanceノード"
+"には、付随するArrayMeshリソースがあります。ArrayMeshリソースは、TSCNファイル"
+"の内部または外部のいずれかである場合があります。"
 
 #: ../../docs/development/file_formats/tscn.rst:263
 msgid ""
@@ -333,7 +336,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:282
 msgid "Some example external resources are:"
-msgstr ""
+msgstr "外部リソースの例を次に示します:"
 
 #: ../../docs/development/file_formats/tscn.rst:290
 msgid ""

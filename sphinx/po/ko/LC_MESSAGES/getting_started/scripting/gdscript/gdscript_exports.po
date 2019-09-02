@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
+#, fuzzy
+msgid "GDScript exports"
+msgstr "GDScript"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
+#, fuzzy
+msgid "Introduction to exports"
+msgstr "3D 소개"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
+#, fuzzy
+msgid ""
+"In Godot, class members can be exported. This means their value gets saved "
+"along with the resource (such as the :ref:`scene <class_PackedScene>`) "
+"they're attached to. They will also be available for editing in the property "
+"editor. Exporting is done by using the ``export`` keyword::"
+msgstr ""
+"클래스 멤버는 내보내질 수 있습니다. 즉, 값이 첨부된 리소스와 함께 저장됩니다 "
+"(예 the :ref:`scene <class_PackedScene>`). 그들은 또한 속성 편집기에서 편집하"
+"는 것이 가능합니다. 내보내는 것은 ``export`` 키워드를 사용합니다::"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
+#, fuzzy
+msgid ""
+"An exported variable must be initialized to a constant expression or have an "
+"export hint in the form of an argument to the ``export`` keyword (see the "
+"*Examples* section below)."
+msgstr ""
+"내보낸 변수는 상수 표현식으로 초기화 되거나 내보내기 힌트를 export 키워드에 "
+"인수의 형태로 가져야 합니다 (하단을 참고하세요)."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
+msgid ""
+"One of the fundamental benefits of exporting member variables is to have "
+"them visible and editable in the editor. This way, artists and game "
+"designers can modify values that later influence how the program runs. For "
+"this, a special export syntax is provided."
+msgstr ""
+"멤버 변수 내보내기의 기본적인 이점은 편집기에서 보이고 편집할 수 있는 것입니"
+"다. 이 방법으로 아티스트와 게임 디자이너가 프로그램이 실행 방법에 영향을 주"
+"는 값을 수정할 수 있습니다. 이를 위해, 특수 내보내기 문법이 제공됩니다."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:29
+msgid ""
+"Exporting properties can also be done in other languages such as C#. The "
+"syntax varies depending on the language."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
+msgid "Examples"
+msgstr "예제"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
+#, fuzzy
+msgid ""
+"It must be noted that even if the script is not being run while in the "
+"editor, the exported properties are still editable. This can be used in "
+"conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
+msgstr ""
+"심지어 스크립트가 편집기에서 실행되지 않더라도, 내보낸 속성은 여전히 편집 가"
+"능합니다 (아래 \"툴\"을 참고하세요)."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
+msgid "Exporting bit flags"
+msgstr "비트 플래그(bit flags) 내보내기"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
+#, fuzzy
+msgid ""
+"Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
+"values in one property. By using the export hint ``int, FLAGS``, they can be "
+"set from the editor::"
+msgstr ""
+"비트 플래그로 사용되는 정수는 한 속성에 많은 ``참``/``거짓`` (불리언) 값을 저"
+"장할 수 있습니다. 내보내기 힌트 ``int, FLAGS``\\ 를 사용하여, 이를 편집기에"
+"서 설정할 수 있습니다:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
+#, fuzzy
+msgid ""
+"Restricting the flags to a certain number of named flags is also possible. "
+"The syntax is similar to the enumeration syntax::"
+msgstr ""
+"플래그를 특정 수의 명명된 플래그로 제한하는 것도 가능합니다. 문법은 열거 문법"
+"과 비슷합니다:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:139
+msgid ""
+"In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
+"value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
+"defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
+msgstr ""
+"이 예제에서, ``Fire`` 는 값 1, ``Water`` 는 값 2, ``Earth`` 는 값 4, 그리고 "
+"``Wind`` 는 값 8에 해당합니다. 일반적으로, 상수는 이에 따라 정의되어야 합니"
+"다 (예 ``const ELEMENT_WIND = 8`` 등등)."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:144
+msgid ""
+"Using bit flags requires some understanding of bitwise operations. If in "
+"doubt, boolean variables should be exported instead."
+msgstr ""
+"비트 플래그를 사용하려면 비트 연산에 대한 이해가 필요합니다. 의심스럽다면, "
+"불 변수를 대신 내보내어야 합니다."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:148
+msgid "Exporting arrays"
+msgstr "배열 내보내기"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+#, fuzzy
+msgid ""
+"Exporting arrays works, but with an important caveat: while regular arrays "
+"are created local to every class instance, exported arrays are *shared* "
+"between all instances. This means that editing them in one instance will "
+"cause them to change in all other instances. Exported arrays can have "
+"initializers, but they must be constant expressions."
+msgstr ""
+"배열을 내보낼 수 있지만 중요한 주의 사항이 있습니다: 정규 배열은 모든 클래스 "
+"인스턴스에 지역으로 만들어 지지만, 내보낸 배열은 모든 인스턴스 간에 *공유됩니"
+"다*. 즉, 한 인스턴스에서 배열을 편집하면 다른 인스턴스에서도 영향을 줍니다. "
+"내보낸 배열은 이니셜라이저를 가질 수 있지만, 반드시 상수 표현식이 되어야 합니"
+"다."

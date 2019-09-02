@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,22 +19,24 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:4
 msgid "Core types"
-msgstr ""
+msgstr "コアタイプ"
 
 #: ../../docs/development/cpp/core_types.rst:6
 msgid ""
 "Godot has a rich set of classes and templates that compose its core, and "
 "everything is built upon them."
 msgstr ""
+"Godot には、そのコアを構成する豊富なクラスとテンプレートのセットがあり、すべ"
+"てがその上に構築されています。"
 
 #: ../../docs/development/cpp/core_types.rst:9
 msgid ""
 "This reference will try to list them in order for their better understanding."
-msgstr ""
+msgstr "このリファレンスでは、理解を深めるためにそれらをリストしようとします。"
 
 #: ../../docs/development/cpp/core_types.rst:13
 msgid "Definitions"
-msgstr ""
+msgstr "定義"
 
 #: ../../docs/development/cpp/core_types.rst:15
 msgid ""
@@ -43,6 +45,9 @@ msgid ""
 "Reinventing the wheel for those is not fun, as it makes code more difficult "
 "to read."
 msgstr ""
+"Godot は、現在すべてのコンパイラでサポートされている標準のC98データ型 "
+"( ``uint8_t``、 ``uint32_t`` 、 ``int64_t`` など) を使用します。それらのホ"
+"イールを再発明するのは楽しくありません。コードを読みにくくするからです。"
 
 #: ../../docs/development/cpp/core_types.rst:20
 msgid ""
@@ -52,12 +57,19 @@ msgid ""
 "at least a 32 bits bus and can do such operations in one cycle. It makes "
 "code more readable too."
 msgstr ""
+"一般に、大きな構造体や配列を使用しない限り、特定のタスクで最も効率的なデータ"
+"型を使用するようには注意が必要です。 ``int`` は、必要な場合を除き、ほとんどの"
+"コードで使用されます。これは、今日ではすべてのデバイスが少なくとも32ビットバ"
+"スを持っており、1サイクルでそのような操作を行うことができるので行われます。"
+"コードも読みやすくなります。"
 
 #: ../../docs/development/cpp/core_types.rst:26
 msgid ""
 "For files or memory sizes, ``size_t`` is used, which is warranted to be 64 "
 "bits."
 msgstr ""
+"ファイルまたはメモリサイズの場合は、 ``size_t`` が使用され、64ビットであるこ"
+"とが保証されます。"
 
 #: ../../docs/development/cpp/core_types.rst:29
 msgid ""
@@ -66,6 +78,9 @@ msgid ""
 "However, by default, this has not been forced and CharType maps directly to "
 "wchar_t."
 msgstr ""
+"Unicode文字の場合、多くのアーキテクチャには4バイトの長いwchar_tがあり、2バイ"
+"トが必要な場合があるため、wchar_tの代わりにCharTypeが使用されます。ただし、デ"
+"フォルトでは、これは強制されておらず、CharTypeはwchar_tに直接マップされます。"
 
 #: ../../docs/development/cpp/core_types.rst:35
 #: ../../docs/development/cpp/core_types.rst:132
@@ -76,17 +91,19 @@ msgstr ""
 #: ../../docs/development/cpp/core_types.rst:220
 #: ../../docs/development/cpp/core_types.rst:233
 msgid "References:"
-msgstr ""
+msgstr "参照："
 
 #: ../../docs/development/cpp/core_types.rst:37
 msgid ""
 "`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
 "typedefs.h>`__"
 msgstr ""
+"`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
+"typedefs.h>`_"
 
 #: ../../docs/development/cpp/core_types.rst:40
 msgid "Memory model"
-msgstr ""
+msgstr "メモリモデル"
 
 #: ../../docs/development/cpp/core_types.rst:42
 msgid ""
@@ -112,6 +129,11 @@ msgid ""
 "Modern operating systems use paged memory, which helps mitigate the problem "
 "of segmentation but doesn't solve it."
 msgstr ""
+"セグメンテーションでは、ほとんどの一般的な割り当てには小さすぎるホールがゆっ"
+"くりと作成されるため、メモリが浪費されます。ヒープとセグメンテーションについ"
+"ては多くの文献があるため、ここではこのトピックについては詳しく説明しません。"
+"最近のオペレーティング・システムはページ・メモリーを使用するため、セグメン"
+"テーションの問題は緩和されますが、解決されません。"
 
 #: ../../docs/development/cpp/core_types.rst:58
 msgid ""
@@ -133,10 +155,17 @@ msgid ""
 "rearranged and compacted on demand. Depending on the need of the game, the "
 "programmer can configure the dynamic memory pool size."
 msgstr ""
+"Godot は、動的に割り当てることができるすべてのオブジェクトが小さいことを保証"
+"します(最大で数kb未満)。ただし、割り当てが大きすぎる場合 (イメージやメッシュ"
+"ジオメトリ、大きな配列など)はどうなりますか。この場合、Godot には動的メモリ"
+"プールを使用するオプションがあります。このメモリにアクセスするにはロックする"
+"必要があり、割り当てがメモリ不足になった場合、プールはオンデマンドで再配置お"
+"よび圧縮されます。ゲームの必要性に応じて、プログラマは動的メモリ プール のサ"
+"イズを構成できます。"
 
 #: ../../docs/development/cpp/core_types.rst:74
 msgid "Allocating memory"
-msgstr ""
+msgstr "メモリの割り当て"
 
 #: ../../docs/development/cpp/core_types.rst:76
 msgid ""
@@ -144,10 +173,13 @@ msgid ""
 "debug. Because of this, the regular C and C++ library calls should not be "
 "used. Instead, a few other ones are provided."
 msgstr ""
+"Godot には、特にデバッグ中にゲーム内のメモリ使用量を追跡するための多くのツー"
+"ルがあります。このため、通常のCおよびC++ライブラリ呼び出しは使用しないでくだ"
+"さい。代わりに、他にもいくつか用意されています。"
 
 #: ../../docs/development/cpp/core_types.rst:80
 msgid "For C-style allocation, Godot provides a few macros:"
-msgstr ""
+msgstr "Cスタイルの割り当てでは、Godotはいくつかのマクロを提供します:"
 
 #: ../../docs/development/cpp/core_types.rst:88
 msgid ""
@@ -157,17 +189,19 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:91
 msgid "For C++-style allocation, special macros are provided:"
-msgstr ""
+msgstr "C++スタイルの割り当てでは、特別なマクロが提供されます:"
 
 #: ../../docs/development/cpp/core_types.rst:101
 msgid "which are equivalent to new, delete, new[] and delete[]."
-msgstr ""
+msgstr "これは、new、delete、new[]およびdelete[]と同じです。"
 
 #: ../../docs/development/cpp/core_types.rst:103
 msgid ""
 "memnew/memdelete also use a little C++ magic and notify Objects right after "
 "they are created, and right before they are deleted."
 msgstr ""
+"memnew/memdeleteはまた、小さなC++マジックを使用し、オブジェクトが作成された直"
+"後に、そして削除される直前にオブジェクトに通知します。"
 
 #: ../../docs/development/cpp/core_types.rst:106
 msgid ""
@@ -195,6 +229,8 @@ msgid ""
 "`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
 "memory.h>`__"
 msgstr ""
+"`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
+"memory.h>`_"
 
 #: ../../docs/development/cpp/core_types.rst:135
 msgid ""
@@ -204,19 +240,19 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:138
 msgid "Containers"
-msgstr ""
+msgstr "コンテナ"
 
 #: ../../docs/development/cpp/core_types.rst:140
 msgid "Godot provides also a set of common containers:"
-msgstr ""
+msgstr "Godot には、一般的なコンテナのセットも用意されています:"
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
-msgstr ""
+msgstr "\\ Vector"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
-msgstr ""
+msgstr "\\ List"
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
@@ -224,7 +260,7 @@ msgstr "設定"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
-msgstr ""
+msgstr "\\ Map"
 
 #: ../../docs/development/cpp/core_types.rst:147
 msgid ""
@@ -236,41 +272,48 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:158
 msgid "The Vector<> class also has a few nice features:"
-msgstr ""
+msgstr "Vector<> クラスには、いくつかの優れた機能もあります:"
 
 #: ../../docs/development/cpp/core_types.rst:160
 msgid ""
 "It does copy on write, so making copies of it is cheap as long as they are "
 "not modified."
 msgstr ""
+"書き込み時にコピーするので、変更しない限りコピーを作成する方が安価です。"
 
 #: ../../docs/development/cpp/core_types.rst:162
 msgid ""
 "It supports multi-threading, by using atomic operations on the reference "
 "counter."
 msgstr ""
+"参照カウンタでアトミック操作を使用して、マルチスレッドをサポートします。"
 
 #: ../../docs/development/cpp/core_types.rst:168
 msgid ""
 "`core/vector.h <https://github.com/godotengine/godot/blob/master/core/vector."
 "h>`__"
 msgstr ""
+"`core/vector.h <https://github.com/godotengine/godot/blob/master/core/vector."
+"h>`_"
 
 #: ../../docs/development/cpp/core_types.rst:169
 msgid ""
 "`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
 "h>`__"
 msgstr ""
+"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list.h>`_"
 
 #: ../../docs/development/cpp/core_types.rst:170
 msgid ""
 "`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
 msgstr ""
+"`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`_"
 
 #: ../../docs/development/cpp/core_types.rst:171
 msgid ""
 "`core/map.h <https://github.com/godotengine/godot/blob/master/core/map.h>`__"
 msgstr ""
+"`core/map.h <https://github.com/godotengine/godot/blob/master/core/map.h>`_"
 
 #: ../../docs/development/cpp/core_types.rst:174
 msgid "String"
@@ -283,16 +326,21 @@ msgid ""
 "and utf8 parsing/extracting, as well as helpers for conversion and "
 "visualization."
 msgstr ""
+"GodotはStringクラスも提供しています。このクラスには、膨大な量の機能、すべての"
+"関数(類似ケース操作)での完全なUnicodeサポート、utf8解析/抽出、そして変換と視"
+"覚化のためのヘルパーがあります。"
 
 #: ../../docs/development/cpp/core_types.rst:184
 msgid ""
 "`core/ustring.h <https://github.com/godotengine/godot/blob/master/core/"
 "ustring.h>`__"
 msgstr ""
+"`core/ustring.h <https://github.com/godotengine/godot/blob/master/core/"
+"ustring.h>`_"
 
 #: ../../docs/development/cpp/core_types.rst:187
 msgid "StringName"
-msgstr ""
+msgstr "\\ StringName"
 
 #: ../../docs/development/cpp/core_types.rst:189
 msgid ""
@@ -306,7 +354,7 @@ msgstr ""
 msgid ""
 "Creation of a StringName (especially a new one) is slow, but comparison is "
 "fast."
-msgstr ""
+msgstr "StringName(特に新しい文字列)の作成は遅くなりますが、比較は高速です。"
 
 #: ../../docs/development/cpp/core_types.rst:200
 msgid ""
@@ -330,13 +378,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:214
 msgid "NodePath"
-msgstr ""
+msgstr "\\ NodePath"
 
 #: ../../docs/development/cpp/core_types.rst:216
 msgid ""
 "This is a special datatype used for storing paths in a scene tree and "
 "referencing them fast."
 msgstr ""
+"これは、シーンツリーにパスを格納し、高速に参照するために使用される特別なデー"
+"タ型です。"
 
 #: ../../docs/development/cpp/core_types.rst:222
 msgid ""
@@ -354,8 +404,12 @@ msgid ""
 "RIDs are opaque, meaning that the data they reference can't be accessed "
 "directly. RIDs are unique, even for different types of referenced data."
 msgstr ""
+"RIDはリソースIDです。 サーバーはこれらを使用して、保存されているデータを参照"
+"します。 RIDは不透明です。つまり、RIDが参照するデータに直接アクセスすることは"
+"できません。 RIDは、さまざまな種類の参照データに対しても一意です。"
 
 #: ../../docs/development/cpp/core_types.rst:235
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 msgstr ""
+"`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`_"

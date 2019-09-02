@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
+#, fuzzy
+msgid "GDScript exports"
+msgstr "GDScript"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
+#, fuzzy
+msgid "Introduction to exports"
+msgstr "Wprowadzenie do 3D"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
+#, fuzzy
+msgid ""
+"In Godot, class members can be exported. This means their value gets saved "
+"along with the resource (such as the :ref:`scene <class_PackedScene>`) "
+"they're attached to. They will also be available for editing in the property "
+"editor. Exporting is done by using the ``export`` keyword::"
+msgstr ""
+"Elementy klasy mogą być eksportowane. Oznacza to, że ich wartość jest "
+"zapisywana wraz z zasobem (np. :ref:`scene <class_PackedScene>`), do którego "
+"są dołączone. Będą one również dostępne do edycji w edytorze nieruchomości. "
+"Eksport odbywa się za pomocą słowa kluczowego ``export`` ::"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
+msgid ""
+"An exported variable must be initialized to a constant expression or have an "
+"export hint in the form of an argument to the ``export`` keyword (see the "
+"*Examples* section below)."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
+#, fuzzy
+msgid ""
+"One of the fundamental benefits of exporting member variables is to have "
+"them visible and editable in the editor. This way, artists and game "
+"designers can modify values that later influence how the program runs. For "
+"this, a special export syntax is provided."
+msgstr ""
+"Jedną z podstawowych korzyści płynących z eksportowania zmiennych jest ich "
+"widoczność i możliwość edycji w edytorze. W ten sposób artyści i projektanci "
+"gier mogą modyfikować wartości, które później wpływają na sposób działania "
+"programu. W tym celu dostarczana jest specjalna składnia eksportu."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:29
+msgid ""
+"Exporting properties can also be done in other languages such as C#. The "
+"syntax varies depending on the language."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
+msgid "Examples"
+msgstr "Przykłady"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
+msgid ""
+"It must be noted that even if the script is not being run while in the "
+"editor, the exported properties are still editable. This can be used in "
+"conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
+msgid "Exporting bit flags"
+msgstr "Eksport bitowych flag"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
+msgid ""
+"Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
+"values in one property. By using the export hint ``int, FLAGS``, they can be "
+"set from the editor::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
+msgid ""
+"Restricting the flags to a certain number of named flags is also possible. "
+"The syntax is similar to the enumeration syntax::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:139
+msgid ""
+"In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
+"value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
+"defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
+msgstr ""
+"W tym przykładzie ``Fire`` ma wartość 1, ``Water`` ma wartość 2, ``Earth`` "
+"ma wartość 4, a ``Wind`` odpowiada wartości 8. Zazwyczaj stałe powinny być "
+"odpowiednio zdefiniowane (np. ``const ``ELEMENT_WIND = 8``)."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:144
+msgid ""
+"Using bit flags requires some understanding of bitwise operations. If in "
+"doubt, boolean variables should be exported instead."
+msgstr ""
+"Korzystanie z flag bitowych wymaga pewnego zrozumienia operacji bitowych. W "
+"razie wątpliwości należy wyeksportować je jako bool."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:148
+msgid "Exporting arrays"
+msgstr "Eksportowanie tablic"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+msgid ""
+"Exporting arrays works, but with an important caveat: while regular arrays "
+"are created local to every class instance, exported arrays are *shared* "
+"between all instances. This means that editing them in one instance will "
+"cause them to change in all other instances. Exported arrays can have "
+"initializers, but they must be constant expressions."
+msgstr ""

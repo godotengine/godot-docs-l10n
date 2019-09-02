@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:4
 msgid "Configuring an IDE"
-msgstr ""
+msgstr "IDE konfigurieren"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:6
 msgid ""
 "We assume that you already `cloned <https://github.com/godotengine/godot>`_ "
 "and :ref:`compiled <toc-devel-compiling>` Godot."
 msgstr ""
+"Wir nehmen an, dass du bereits Godot `geklont <https://github.com/"
+"godotengine/godot>`_ und :ref:`kompiliert <toc-devel-compiling>` hast."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:9
 msgid ""
@@ -33,6 +35,10 @@ msgid ""
 "on the command line, but if you want to work with an IDE (Integrated "
 "Development Environment), here are setup instructions for some popular ones:"
 msgstr ""
+"Du kannst an Godot einfach mit beliebigem Texteditor und dem Aufruf von "
+"``scons`` auf der Kommandozeile entwickeln, aber falls du mit einer IDE "
+"(Integrierte Entwicklungsumgebung) arbeiten möchtest, sind hier Anleitungen "
+"zur Einrichtung für einige populäre IDEs:"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:13
 msgid ""
@@ -49,11 +55,13 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:15
 msgid ":ref:`Xcode <doc_configuring_an_ide_xcode>` (macOS)"
-msgstr ":ref:`Xcode <doc_configuring_an_ide_xcode>` (macOS)"
+msgstr ":ref:`Xcode <doc_configuring_an_ide_xcode>` (macOS -  Apple)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:16
 msgid ":ref:`Visual Studio <doc_compiling_for_windows_install_vs>` (Windows)"
-msgstr ":ref:`Visual Studio <doc_compiling_for_windows_install_vs>` (Windows)"
+msgstr ""
+":ref:`Visual Studio <doc_compiling_for_windows_install_vs>` (Windows - "
+"Microsoft)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:17
 msgid ""
@@ -67,10 +75,12 @@ msgstr ""
 msgid ""
 "It is possible to use other IDEs, but their setup is not documented yet."
 msgstr ""
+"Es ist möglich andere IDEs zu verwenden, aber die Einrichtung ist noch nicht "
+"dokumentiert."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:24
 msgid "Qt Creator"
-msgstr "Qt Creator"
+msgstr "QT Creator"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:27
 msgid "Importing the project"
@@ -83,6 +93,7 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide.rst:33
 msgid "Set the path to your Godot root directory and enter the project name."
 msgstr ""
+"Setze den Pfad zu deinem Godot Stammverzeichnis und gib den Projektnamen ein."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:37
 msgid ""
@@ -91,6 +102,10 @@ msgid ""
 "for buildsystem files, \\*.java for Android development, \\*.mm for macOS. "
 "Click \"Next\"."
 msgstr ""
+"Hier kannst du wählen welche Verzeichnisse und Dateien für das Projekt "
+"sichtbar sind. C/C++ Dateien werden automatisch hinzugefügt. Potentiell "
+"nützliche Ergänzungen: \\*.py für buildsystem Dateien, \\*.java für Android "
+"Entwicklung, \\*.mm für macOS. Klicke \"Next\"."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:43
 msgid "Click *Finish*."
@@ -209,7 +224,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:117
 msgid "KDevelop"
-msgstr "KDevelop"
+msgstr "K-Develop"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:119
 msgid ""
@@ -385,9 +400,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:231
-#, fuzzy
 msgid "Scheme setup"
-msgstr "Eine Szene aufsetzen"
+msgstr "Schema-Setup"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:233
 msgid "Edit Build Scheme of External Build Target:"

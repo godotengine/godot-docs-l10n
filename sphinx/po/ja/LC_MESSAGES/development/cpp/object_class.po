@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:4
 msgid "Object class"
-msgstr ""
+msgstr "オブジェクトクラス"
 
 #: ../../docs/development/cpp/object_class.rst:7
 msgid "General definition"
-msgstr ""
+msgstr "一般的な定義"
 
 #: ../../docs/development/cpp/object_class.rst:9
 msgid ""
@@ -32,10 +32,14 @@ msgid ""
 "reflection and editable properties, and declaring them is a matter of using "
 "a single macro like this."
 msgstr ""
+":ref:`Object <class_object>`\\ は、ほとんどすべての基本クラスです。Godotのほ"
+"とんどのクラスは、直接的または間接的に継承されます。オブジェクトはリフレク"
+"ションと編集可能なプロパティを提供し、それらを宣言することは、このような単一"
+"のマクロを使用する必要があります。"
 
 #: ../../docs/development/cpp/object_class.rst:21
 msgid "This makes Objects gain a lot of functionality, like for example"
-msgstr ""
+msgstr "これにより、オブジェクトは、例えば、多くの機能を得ることができます"
 
 #: ../../docs/development/cpp/object_class.rst:31
 #: ../../docs/development/cpp/object_class.rst:89
@@ -44,17 +48,19 @@ msgstr ""
 #: ../../docs/development/cpp/object_class.rst:288
 #: ../../docs/development/cpp/object_class.rst:307
 msgid "References:"
-msgstr ""
+msgstr "参照："
 
 #: ../../docs/development/cpp/object_class.rst:33
 msgid ""
 "`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
 "h>`__"
 msgstr ""
+"`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
+"h>`_"
 
 #: ../../docs/development/cpp/object_class.rst:36
 msgid "Registering an Object"
-msgstr ""
+msgstr "オブジェクトの登録"
 
 #: ../../docs/development/cpp/object_class.rst:38
 msgid ""
@@ -62,20 +68,25 @@ msgid ""
 "that inherit from Object, as well as dynamic bindings to all their methods "
 "properties and integer constants."
 msgstr ""
+"ClassDB は、Objectから継承する登録済みクラスのリスト全体と、すべてのメソッド"
+"プロパティと整数定数への動的バインディングを保持する静的クラスです。"
 
 #: ../../docs/development/cpp/object_class.rst:42
 msgid "Classes are registered by calling:"
-msgstr ""
+msgstr "クラスは呼び出しによって登録されます:"
 
 #: ../../docs/development/cpp/object_class.rst:48
 msgid ""
 "Registering it will allow the class to be instanced by scripts, code, or "
 "creating them again when deserializing."
 msgstr ""
+"登録すると、クラスをスクリプト、コードでインスタンス化したり、デシリアライズ"
+"時に再度作成したりできます。"
 
 #: ../../docs/development/cpp/object_class.rst:51
 msgid "Registering as virtual is the same but it can't be instanced."
 msgstr ""
+"仮想として登録することは同じですが、インスタンス化することはできません。"
 
 #: ../../docs/development/cpp/object_class.rst:57
 msgid ""
@@ -85,16 +96,23 @@ msgid ""
 "only called once. If an Object derived class is instanced but has not been "
 "registered, it will be registered as virtual automatically."
 msgstr ""
+"オブジェクトから派生したクラスは、静的な関数である ``static void "
+"_bind_methods()`` を上書きすることができます。1つのクラスが登録されると、この"
+"静的関数が呼び出され、すべてのオブジェクトのメソッド、プロパティ、定数などが"
+"登録されます。この関数は1回だけ呼び出されます。オブジェクト派生クラスがインス"
+"タンス化されていても登録されていない場合は、仮想として自動的に登録されます。"
 
 #: ../../docs/development/cpp/object_class.rst:64
 msgid ""
 "Inside ``_bind_methods``, there are a couple of things that can be done. "
 "Registering functions is one:"
 msgstr ""
+"``_bind_methods`` の内部には、実行できる事がいくつかあります。関数の登録は次"
+"の 1 つです:"
 
 #: ../../docs/development/cpp/object_class.rst:71
 msgid "Default values for arguments can be passed in reverse order:"
-msgstr ""
+msgstr "引数の既定値は、逆の順序で渡すことができます:"
 
 #: ../../docs/development/cpp/object_class.rst:77
 msgid ""
@@ -103,10 +121,15 @@ msgid ""
 "compiling on release, the macro ignores them, so the strings are unused and "
 "optimized away."
 msgstr ""
+"``D_METHOD`` は、効率を高めるために「メソッド名」をStringNameに変換するマクロ"
+"です。引数名はイントロスペクションに使用されますが、リリース時にコンパイルす"
+"るとマクロはそれらを無視するので、文字列は使用されず、最適化されます。"
 
 #: ../../docs/development/cpp/object_class.rst:82
 msgid "Check ``_bind_methods`` of Control or Object for more examples."
 msgstr ""
+"その他の例については、コントロールまたはオブジェクトの ``_bind_methods`` を確"
+"認してください。"
 
 #: ../../docs/development/cpp/object_class.rst:84
 msgid ""
@@ -114,12 +137,17 @@ msgid ""
 "documented as thoroughly, the ``D_METHOD()`` macro can safely be ignored and "
 "a string passing the name can be passed for brevity."
 msgstr ""
+"十分に文書化されていないモジュールや機能を追加するだけなら、 ``D_METHOD()`` "
+"マクロは無視しても問題なく、簡潔にするために名前を渡す文字列を渡すことができ"
+"ます。"
 
 #: ../../docs/development/cpp/object_class.rst:91
 msgid ""
 "`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
 "class_db.h>`__"
 msgstr ""
+"`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
+"class_db.h>`_"
 
 #: ../../docs/development/cpp/object_class.rst:94
 msgid "Constants"
@@ -127,43 +155,49 @@ msgstr "定数"
 
 #: ../../docs/development/cpp/object_class.rst:96
 msgid "Classes often have enums such as:"
-msgstr ""
+msgstr "クラスには、多くの場合、次のような列挙型があります:"
 
 #: ../../docs/development/cpp/object_class.rst:105
 msgid ""
 "For these to work when binding to methods, the enum must be declared "
 "convertible to int, for this a macro is provided:"
 msgstr ""
+"メソッドにバインドするときにこれらを動作させるには、enumをintに変換できるよう"
+"に宣言する必要があります。これにはマクロが用意されています:"
 
 #: ../../docs/development/cpp/object_class.rst:112
 msgid "The constants can also be bound inside ``_bind_methods``, by using:"
 msgstr ""
+"定数は、次の方法を使用して ``_bind_methods`` 内でバインドすることもできます:"
 
 #: ../../docs/development/cpp/object_class.rst:120
 msgid "Properties (set/get)"
-msgstr ""
+msgstr "プロパティ (設定/取得)"
 
 #: ../../docs/development/cpp/object_class.rst:122
 msgid "Objects export properties, properties are useful for the following:"
 msgstr ""
+"オブジェクトはプロパティをエクスポートし、プロパティは次の場合に役立ちます:"
 
 #: ../../docs/development/cpp/object_class.rst:124
 msgid "Serializing and deserializing the object."
-msgstr ""
+msgstr "オブジェクトのシリアル化と逆シリアル化。"
 
 #: ../../docs/development/cpp/object_class.rst:125
 msgid "Creating a list of editable values for the Object derived class."
-msgstr ""
+msgstr "オブジェクト派生クラスの編集可能な値のリストを作成します。"
 
 #: ../../docs/development/cpp/object_class.rst:127
 msgid ""
 "Properties are usually defined by the PropertyInfo() class. Usually "
 "constructed as:"
 msgstr ""
+"プロパティは通常、PropertyInfo()クラスによって定義されます。通常は次のように"
+"構築されます:"
 
 #: ../../docs/development/cpp/object_class.rst:134
 msgid "For example:"
-msgstr ""
+msgstr "例:"
 
 #: ../../docs/development/cpp/object_class.rst:140
 msgid ""
@@ -171,10 +205,13 @@ msgid ""
 "from 0 to 49 in steps of 1 (integers). It is only usable for the editor "
 "(edit value visually) but won't be serialized."
 msgstr ""
+"これは「amount」という名前の整数プロパティであり、ヒントは範囲です。範囲は0か"
+"ら49まで1のステップ（整数）です。 エディタ(値を視覚的に編集)でのみ使用できま"
+"すが、シリアル化されません。"
 
 #: ../../docs/development/cpp/object_class.rst:144
 msgid "Another example:"
-msgstr ""
+msgstr "別の例:"
 
 #: ../../docs/development/cpp/object_class.rst:150
 msgid ""
@@ -182,12 +219,15 @@ msgid ""
 "allow the defined hint ones. Since no usage flags were specified, the "
 "default ones are PROPERTY_USAGE_STORAGE and PROPERTY_USAGE_EDITOR."
 msgstr ""
+"これは文字列プロパティであり、任意の文字列を受け取ることができますが、エディ"
+"ターは定義されたヒントのみを許可します。使用状況フラグが指定されていないた"
+"め、既定のフラグは PROPERTY_USAGE_STORAGE および PROPERTY_USAGE_EDITOR です。"
 
 #: ../../docs/development/cpp/object_class.rst:154
 msgid ""
 "There are plenty of hints and usage flags available in object.h, give them a "
 "check."
-msgstr ""
+msgstr "「object.h」には多くのヒントと使用フラグがあります。"
 
 #: ../../docs/development/cpp/object_class.rst:157
 msgid ""
@@ -197,26 +237,36 @@ msgid ""
 "such as \"animation/frame\" which also make indexing impossible unless using "
 "operator []."
 msgstr ""
+"プロパティはC#プロパティのように動作し、インデックス作成を使用してスクリプト"
+"からアクセスすることもできますが、読みやすさには関数の使用が推奨されるため、"
+"一般的にこの使用方法はお勧めできません。また、多くのプロパティは、演算子[]を"
+"使用しない限りインデックス作成を不可能にする「アニメーション/フレーム」などの"
+"カテゴリにバインドされています。"
 
 #: ../../docs/development/cpp/object_class.rst:163
 msgid ""
 "From ``_bind_methods()``, properties can be created and bound as long as set/"
 "get functions exist. Example:"
 msgstr ""
+"``_bind_methods()`` から、set/get 関数が存在する限り、プロパティを作成してバ"
+"インドできます。例："
 
 #: ../../docs/development/cpp/object_class.rst:170
 msgid "This creates the property using the setter and the getter."
-msgstr ""
+msgstr "これにより、セッターとゲッターを使用してプロパティが作成されます。"
 
 #: ../../docs/development/cpp/object_class.rst:173
 msgid "Binding properties using ``_set``/``_get``/``_get_property_list``"
 msgstr ""
+"``_set``/``_get``/``_get_property_list`` を使用してプロパティをバインドします"
 
 #: ../../docs/development/cpp/object_class.rst:175
 msgid ""
 "An additional method of creating properties exists when more flexibility is "
 "desired (i.e. adding or removing properties on context)."
 msgstr ""
+"より柔軟な必要がある場合(つまり、コンテキスト上のプロパティの追加または削除)"
+"に、プロパティを作成する追加の方法が存在します。"
 
 #: ../../docs/development/cpp/object_class.rst:178
 msgid ""
@@ -224,21 +274,26 @@ msgid ""
 "are NOT virtual, DO NOT make them virtual, they are called for every "
 "override and the previous ones are not invalidated (multilevel call)."
 msgstr ""
+"次の関数はObject派生クラスでオーバーライドできます。これらの関数は仮想ではあ"
+"りません。仮想にしないでください。オーバーライドのたびに呼び出され、前の関数"
+"は無効になりません(多重レベル呼出し)。"
 
 #: ../../docs/development/cpp/object_class.rst:189
 msgid ""
 "This is also a little less efficient since ``p_property`` must be compared "
 "against the desired names in serial order."
 msgstr ""
+"また、 ``p_property`` を必要な名前と順番に比較しなければならないため、これは"
+"少し効率が悪くなります。"
 
 #: ../../docs/development/cpp/object_class.rst:193
 msgid "Dynamic casting"
-msgstr ""
+msgstr "動的キャスト"
 
 #: ../../docs/development/cpp/object_class.rst:195
 msgid ""
 "Godot provides dynamic casting between Object-derived classes, for example:"
-msgstr ""
+msgstr "Godotは、オブジェクト派生クラス間の動的キャストを提供します。例:"
 
 #: ../../docs/development/cpp/object_class.rst:205
 msgid ""
@@ -257,22 +312,28 @@ msgid ""
 "Objects can have a set of signals defined (similar to Delegates in other "
 "languages). Connecting to them is rather easy:"
 msgstr ""
+"オブジェクトは、一連のシグナルを定義できます(他の言語のデリゲートと同様)。そ"
+"れらに接続する方がかなり簡単です:"
 
 #: ../../docs/development/cpp/object_class.rst:222
 msgid ""
 "The method ``_node_entered_tree`` must be registered to the class using "
 "``ClassDB::register_method`` (explained before)."
 msgstr ""
+"メソッド ``_node_entered_tree`` は、 ``ClassDB::register_method`` を使用して"
+"クラスに登録する必要があります(前に説明しました)。"
 
 #: ../../docs/development/cpp/object_class.rst:225
 msgid ""
 "Adding signals to a class is done in ``_bind_methods``, using the "
 "``ADD_SIGNAL`` macro, for example:"
 msgstr ""
+"クラスへのシグナルの追加は ``_bind_methods`` で行われ、``ADD_SIGNAL`` マクロ"
+"を使用します。例:"
 
 #: ../../docs/development/cpp/object_class.rst:233
 msgid "References"
-msgstr ""
+msgstr "参照"
 
 #: ../../docs/development/cpp/object_class.rst:235
 msgid ""
@@ -280,18 +341,25 @@ msgid ""
 "reference count. It is the base for reference counted object types. "
 "Declaring them must be done using Ref<> template. For example:"
 msgstr ""
+":ref:`Reference <class_reference>`\\ はオブジェクトから継承され、参照カウント"
+"を保持します。参照カウントオブジェクトタイプのベースです。これらの宣言は、"
+"Ref<> template を使用して行う必要があります。例:"
 
 #: ../../docs/development/cpp/object_class.rst:247
 msgid ""
 "``myref`` is reference counted. It will be freed when no more Ref<> "
 "templates point to it."
 msgstr ""
+"``myref`` は参照カウントされます。Ref<>templates が参照を指定しなくなったとき"
+"に解放されます。"
 
 #: ../../docs/development/cpp/object_class.rst:253
 msgid ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
 "reference.h>`__"
 msgstr ""
+"`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
+"reference.h>`_"
 
 #: ../../docs/development/cpp/object_class.rst:256
 msgid "Resources:"
@@ -305,24 +373,32 @@ msgid ""
 "This is normally done by the resource loader though. No two different "
 "resources can have the same path, attempt to do so will result in an error."
 msgstr ""
+":ref:`Resource <class_resource>`\\ はReferenceを継承するため、すべてのリソー"
+"スが参照カウントされます。 リソースには、オプションでディスク上のファイルを参"
+"照するパスを含めることができます。 これは ``resource.set_path(path)`` で設定"
+"できます。 これは通常、リソースローダーによって行われます。 2つの異なるリソー"
+"スが同じパスを持つことはできません。そうしようとするとエラーになります。"
 
 #: ../../docs/development/cpp/object_class.rst:264
 msgid "Resources without a path are fine too."
-msgstr ""
+msgstr "パスのないリソースも問題ありません。"
 
 #: ../../docs/development/cpp/object_class.rst:269
 msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
 "resource.h>`__"
 msgstr ""
+"`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
+"resource.h>`_"
 
 #: ../../docs/development/cpp/object_class.rst:272
 msgid "Resource loading"
-msgstr ""
+msgstr "リソースの読み込み"
 
 #: ../../docs/development/cpp/object_class.rst:274
 msgid "Resources can be loaded with the ResourceLoader API, like this:"
 msgstr ""
+"リソースは、次のようにResourceLoader APIを使用して読み込むことができます:"
 
 #: ../../docs/development/cpp/object_class.rst:280
 msgid ""
@@ -330,24 +406,29 @@ msgid ""
 "the resource loader will return that reference. This means that there can be "
 "only one resource loaded from a file referenced on disk at the same time."
 msgstr ""
+"そのリソースへの参照が以前に読み込まれ、メモリ内にある場合、リソースローダー"
+"はその参照を返します。つまり、ディスク上で参照されているファイルから同時に読"
+"み込まれるリソースは 1 つだけです。"
 
 #: ../../docs/development/cpp/object_class.rst:285
 msgid "resourceinteractiveloader (TODO)"
-msgstr ""
+msgstr "リソースインタラクティブローダー (TODO)"
 
 #: ../../docs/development/cpp/object_class.rst:290
 msgid ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_loader.h>`__"
 msgstr ""
+"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/resource_loader.h>`_"
 
 #: ../../docs/development/cpp/object_class.rst:293
 msgid "Resource saving"
-msgstr ""
+msgstr "リソースの保存"
 
 #: ../../docs/development/cpp/object_class.rst:295
 msgid "Saving a resource can be done with the resource saver API:"
-msgstr ""
+msgstr "リソースの保存は、リソースセーバー API を使用して行うことができます:"
 
 #: ../../docs/development/cpp/object_class.rst:301
 msgid ""
@@ -356,9 +437,15 @@ msgid ""
 "bundled with the saved resource and assigned sub-IDs, like \"res://"
 "someresource.res::1\". This also helps to cache them when loaded."
 msgstr ""
+"インスタンスが保存されます。ファイルへのパスを持つサブリソースは、そのリソー"
+"スへの参照として保存されます。パスのないサブリソースは、保存されたリソースに"
+"バンドルされ、割り当てられたサブID(「res://someresource.res::1」 など)が割り"
+"当てられます。これは、読み込み時にキャッシュするのにも役立ちます。"
 
 #: ../../docs/development/cpp/object_class.rst:309
 msgid ""
 "`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_saver.h>`__"
 msgstr ""
+"`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/resource_saver.h>`_"

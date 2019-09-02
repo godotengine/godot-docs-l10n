@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -261,8 +261,8 @@ msgid ""
 "axis is used as a \"pointing towards\" direction. This convention roughly "
 "means that:"
 msgstr ""
-"Y坐标用于“向上”，但对于大多数需要对齐的物体(如灯光，摄像机，胶囊碰撞体，载具"
-"等)，Z轴用作“指向”方向。 这个约定大致意味着:"
+"Y坐标用于``向上``，但对于大多数需要对齐的物体(如灯光，摄像机，胶囊碰撞体，载"
+"具等)，Z轴用作``指向``方向。 这个约定大致意味着:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:145
 msgid "**X** is sides"
@@ -296,14 +296,15 @@ msgid "Some useful keybindings:"
 msgstr "一些有用的键盘绑定:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
+#, fuzzy
 msgid ""
-"To snap placement or rotation, press the \"s\" key while moving, scaling or "
-"rotating."
+"To snap placement or rotation, press the \"Ctrl\" key while moving, scaling "
+"or rotating."
 msgstr "要快速移动或旋转，请在移动，缩放或旋转时按下“s”键。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:164
 msgid "To center the view on the selected object, press the \"f\" key."
-msgstr "要将视图居中在所选对象上，请按“f”键。"
+msgstr "要将视图居中在所选对象上，请按``f``键。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid "View menu"
@@ -389,8 +390,8 @@ msgid ""
 "of any other camera in the scene. If the property is set, it will become "
 "active, replacing the previous camera."
 msgstr ""
-"如果相机具有“ *当前* ”属性设置，则无论场景中是否有其他相机，都会使用它。 如果"
-"该属性已设置，它将变为活动状态，取代之前的摄像头。"
+"如果相机具有`` *当前* ``属性设置，则无论场景中是否有其他相机，都会使用它。 如"
+"果该属性已设置，它将变为活动状态，取代之前的摄像头。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:219
 msgid ""

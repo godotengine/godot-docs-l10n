@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,7 +253,6 @@ msgstr ""
 "``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:124
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -263,9 +262,9 @@ msgid ""
 "cover the sprite:"
 msgstr ""
 "Наконец, добавьте :ref:`CollisionShape2D <class_CollisionShape2D>` в "
-"качестве потомка в ``Player``. Это позволит задать игроку \"hitbox\" или, "
-"иначе говоря, границы зоны определения столкновений. Для этого персонажа "
-"лучше всего подходит узел ``CapsuleShape2D``, поэтому далее идем в "
+"качестве дочернего узла в ``Player``. Это позволит задать игроку \"Hitbox\" "
+"или, иначе говоря, границы зоны определения столкновений. Для этого "
+"персонажа лучше всего подходит узел ``CapsuleShape2D``, поэтому далее идем в "
 "Инспектор, и в разделе \"Shape\" щелкаем \"[empty]\"\" -> \"New "
 "CapsuleShape2D\". Подгоните размер фигуры под размер изображения:"
 
@@ -1213,7 +1212,6 @@ msgid "MessageLabel"
 msgstr "MessageLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:934
-#, fuzzy
 msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "Text: ``Уворачивайся от крипов!``"
 
@@ -1404,15 +1402,14 @@ msgstr ""
 "в ``Main.gd``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
-#, fuzzy
 msgid ""
 "This line tells the new Mob node (referenced by the ``mob`` variable) to "
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
 "its ``_on_start_game()`` function."
 msgstr ""
-"Эта строка говорит новому узлу Mob (...) отвечать на все сигналы "
-"``start_game``, отправленные ``HUD``, исполнением функции "
-"``_on_start_game()``."
+"Эта строка говорит новому узлу Mob (определённому переменной ``mob`` ) "
+"отвечать на все сигналы ``start_game``, отправленные узлом ``HUD``, "
+"исполнением функции ``_on_start_game()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1172
 msgid "Finishing up"

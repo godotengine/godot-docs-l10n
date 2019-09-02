@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,10 +44,11 @@ msgid "Resource path"
 msgstr "资源路径"
 
 #: ../../docs/tutorials/io/data_paths.rst:18
+#, fuzzy
 msgid ""
-"As mentioned before, Godot considers that a project exists in any given "
-"folder that contains a ``project.godot`` text file, even if such file is "
-"empty."
+"As mentioned in the :ref:`doc_command_line_tutorial`, Godot considers that a "
+"project exists in any given folder that contains a ``project.godot`` text "
+"file, even if such file is empty."
 msgstr ""
 "如前所述，Godot认为一个项目文件夹中包含一个 ``project.godot`` 文本文件，即使"
 "该文件是空的。"
@@ -96,3 +97,115 @@ msgstr ""
 "Name`` 路径，在Windows上使用 ``%APPDATA%/Name`` 路径来表示用户路径。 "
 "``Name`` 取自项目设置中定义的应用程序名称，但它可被 :ref:`feature tags "
 "<doc_feature_tags>` 命令覆写 。"
+
+#: ../../docs/tutorials/io/data_paths.rst:45
+#, fuzzy
+msgid "Editor data paths"
+msgstr "数据路径"
+
+#: ../../docs/tutorials/io/data_paths.rst:47
+msgid ""
+"The editor uses different paths for user data, user settings and cache "
+"depending on the platform. By default, these paths are:"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:51
+msgid "Type"
+msgstr "类型"
+
+#: ../../docs/tutorials/io/data_paths.rst:51
+msgid "Location"
+msgstr "位置"
+
+#: ../../docs/tutorials/io/data_paths.rst:53
+#, fuzzy
+msgid "User data"
+msgstr "用户路径"
+
+#: ../../docs/tutorials/io/data_paths.rst:53
+#: ../../docs/tutorials/io/data_paths.rst:57
+#, fuzzy
+msgid "Windows: ``%APPDATA%\\Godot\\``"
+msgstr "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
+
+#: ../../docs/tutorials/io/data_paths.rst:54
+#: ../../docs/tutorials/io/data_paths.rst:58
+#, fuzzy
+msgid "macOS: ``~/Library/Application Support/Godot/``"
+msgstr ""
+"macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
+
+#: ../../docs/tutorials/io/data_paths.rst:55
+#, fuzzy
+msgid "Linux: ``~/.local/share/godot/``"
+msgstr "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
+
+#: ../../docs/tutorials/io/data_paths.rst:57
+#, fuzzy
+msgid "User settings"
+msgstr "跟踪设置"
+
+#: ../../docs/tutorials/io/data_paths.rst:59
+msgid "Linux: ``~/.config/godot/``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:61
+msgid "Cache"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:61
+#, fuzzy
+msgid "Windows: ``%TEMP%\\Godot\\``"
+msgstr "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
+
+#: ../../docs/tutorials/io/data_paths.rst:62
+msgid "macOS: ``~/Library/Caches/Godot/``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:63
+msgid "Linux: ``~/.cache/godot/``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:66
+msgid "**User data** contains export templates and project-specific data."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:67
+msgid ""
+"**User settings** contains editor settings, text editor themes, script "
+"templates, etc."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:69
+msgid ""
+"**Cache** contains temporary data. It can safely be removed when Godot is "
+"closed."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:72
+msgid ""
+"Godot complies with the `XDG Base Directory Specification <https://"
+"specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`__ on "
+"all platforms. Environment variables can be overridden as per the "
+"specification to change the editor (and project) data paths."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:78
+#, fuzzy
+msgid "Self-contained mode"
+msgstr "自包含模式"
+
+#: ../../docs/tutorials/io/data_paths.rst:80
+msgid ""
+"If you create a file called ``._sc_`` or ``_sc_`` in the same directory as "
+"the editor binary, Godot will enable *self-contained mode*. This will make "
+"Godot write all user data to a directory named ``editor_data/`` in the same "
+"directory as the editor binary. This is useful to create a \"portable\" "
+"installation, which can then be placed on an USB drive."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:86
+msgid ""
+"The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "
+"uses self-contained mode by default."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,6 @@ msgstr ""
 "erleichtern. Du wirst folgendes lernen:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
 msgstr ""
 "Die fünf nützlichsten Control-Nodes, um die Benutzeroberfläche Deines "
@@ -199,7 +198,7 @@ msgstr "Die 5 häufigsten Control-Nodes für UI Design"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
-msgstr "TextureRect"
+msgstr "TextureRect (Textur-Rechteck)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:73
 msgid ""
@@ -213,52 +212,46 @@ msgstr ""
 "sein Verhalten zu ändern:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
-#, fuzzy
 msgid ""
 "``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
 "``Scale on Expand (compat)`` skaliert die Textur um sich an den "
-"Begrenzungsrahmen des Nodes anzupassen, nur wenn die ``expand`` Eigenschaft "
-"``true`` ist; ansonsten verhält es sich wie der ``Keep`` Modus. Dem "
-"Standardmodus für Abwärtskompatibilität."
+"Begrenzungsrahmen des Nodes anzupassen, allerdings nur wenn die ``expand`` "
+"Eigenschaft ``true`` ist; ansonsten verhält es sich wie der ``Keep`` Modus. "
+"Dem Standardmodus für Abwärtskompatibilität."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
 "``Scale`` skaliert die Textur, um sich dem Begrenzungsrahmen des Nodes "
-"anzupassen"
+"anzupassen."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
-#, fuzzy
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr "``Tile`` wiederholt die Textur, sie wird allerdings nicht skaliert"
+msgstr "``Tile`` wiederholt die Textur, sie wird allerdings nicht skaliert."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
-#, fuzzy
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
-"``Keep`` und ``Keep Centered`` zwingen die Textur ihre ursprüngliche Größe "
-"beizubehalten und platzieren sie in der linken oberen Ecke bzw. in der Mitte "
-"des Rahmens"
+"``Keep`` und ``Keep Centered`` zwingt die Textur ihre ursprüngliche Größe "
+"beizubehalten und platziert sie in der linken oberen Ecke bzw. in der Mitte "
+"des Rahmens."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
-#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
-"``Keep Aspect`` und ``Keep Aspect Centered`` skalieren die Textur, aber "
-"erzwingen das originale Seitenverhältnis und platzieren sie in der linken "
-"oberen Ecke bzw. in der Mitte des Rahmens"
+"``Keep Aspect`` und ``Keep Aspect Centered`` skaliert die Textur, aber "
+"erzwingen das originale Seitenverhältnis und platziert sie in der linken "
+"oberen Ecke bzw. in der Mitte des Rahmens."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
@@ -266,7 +259,7 @@ msgid ""
 msgstr ""
 "``Keep Aspect Covered`` funktioniert genau wie ``Keep Aspect Centered`` "
 "allerdings wird die kürzere Seite in den Begrenzungsrahmen eingepasst und "
-"die längere an der Node-Begrenzung abgeschnitten"
+"die längere an der Node-Begrenzung abgeschnitten."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
 msgid ""
@@ -282,7 +275,7 @@ msgstr "TextureRect moduliert mit einer roten Farbe"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:98
 msgid "TextureButton"
-msgstr "TextureButton"
+msgstr "TextureButton (Textur-Knopf)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
 msgid ""
@@ -323,7 +316,7 @@ msgstr "TextureButton und seine 5 Textur Slots"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
 msgid "TextureProgress"
-msgstr "TextureProgress"
+msgstr "TextureProgress (Texturfortschritt)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:122
 msgid ""
@@ -396,7 +389,7 @@ msgstr "Bild eines Labels"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
 msgid "NinePatchRect"
-msgstr "NinePatchRect"
+msgstr "NinePatchRect (Rechteck)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:160
 msgid ""
@@ -495,7 +488,6 @@ msgid "How to change the anchor"
 msgstr "Wie man den Anker ändert"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
-#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
@@ -506,10 +498,10 @@ msgid ""
 msgstr ""
 "Wie jede Eigenschaft, lassen sich die 4 Anker Punkte im Inspektor editieren, "
 "dies ist allerdings nicht die bequemste Möglichkeit. Wenn du eine Control "
-"Node auswählst, erscheint das layout Menü über der Hauptansicht, in der "
+"Node auswählst, erscheint das Layout Menü über der Hauptansicht in der "
 "Werkzeugleiste. Es enthält eine Liste von Symbolen um alle 4 Anker mit einem "
-"einzigen Klick zu setzen, statt die 4 Eigenschaften im Inspektor zu "
-"verwenden. Das layout Menü erscheint nur wenn du eine Control Node auswählst."
+"einzigen Klick zu setzen, anstatt die 4 Eigenschaften im Inspektor zu "
+"verwenden. Das Layout Menü erscheint nur wenn du eine Control Node auswählst."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "The layout menu in the viewport"

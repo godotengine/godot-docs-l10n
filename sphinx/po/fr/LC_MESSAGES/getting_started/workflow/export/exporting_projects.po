@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -316,24 +316,17 @@ msgstr ""
 "répertoire à partir duquel la commande a été invoquée."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
+#, fuzzy
 msgid ""
-"You can also configure it to export only the PCK or ZIP file (allowing a "
-"single export to be used with multiple Godot executables). This takes place "
-"if:"
+"You can also configure it to export only the PCK or ZIP file, allowing a "
+"single export to be used with multiple Godot executables. This takes place "
+"if the target name ends with ``.pck`` or ``.zip``."
 msgstr ""
 "Vous pouvez également le configurer pour exporter uniquement le fichier.pck "
 "ou.zip (ce qui permet d'utiliser une seule exportation avec plusieurs "
 "exécutables Godot). Cela se produit si :"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
-msgid "the export preset is not marked as runnable,"
-msgstr "Le préréglage d'exportation n'est pas marqué comme exécutable"
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:157
-msgid "the target name ends with ``.pck`` or ``.zip``."
-msgstr "Le nom de la cible se termine par `.pck` ou par `.zip`."
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:159
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,8 +133,8 @@ msgid ""
 "means that their type is not fixed, and is only modified through assignment. "
 "Example:"
 msgstr ""
-"动态类型语言中的所有变量都是“变体”的。这意味着它们的类型不是固定的，而是通过"
-"赋值修改的。示例:"
+"动态类型语言中的所有变量都是``变体``的。这意味着它们的类型不是固定的，而是通"
+"过赋值修改的。示例:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:58
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:80
@@ -351,9 +351,9 @@ msgid ""
 "and ``_iter_get`` functions in your script. An example implementation of a "
 "forward iterator follows:"
 msgstr ""
-"如果默认的迭代器不能完全满足您的需求，您可以通过在脚本中覆盖Variant类"
-"的“_iter_init”、“_iter_next”和“_iter_get”函数来创建自定义迭代器。前向迭代器的"
-"一个示例实现如下:"
+"如果默认的迭代器不能完全满足您的需求，您可以通过在脚本中覆盖Variant类的"
+"``_iter_init``、``_iter_next``和``_iter_get``函数来创建自定义迭代器。前向迭代"
+"器的一个示例实现如下:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:454
 msgid "And it can be used like any other iterator:"
@@ -445,7 +445,7 @@ msgstr "*\"如果物体可以被砸碎，不要在意它是什么，只管砸碎
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:514
 msgid "Yes, we should call it Hulk typing instead."
-msgstr "是的，称它为“绿巨人”类型适合更合适。"
+msgstr "是的，称它为``绿巨人``类型适合更合适。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
 msgid ""

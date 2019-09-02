@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,7 +208,6 @@ msgstr ""
 "наши две шкалы слева и отделять их от двух счетчиков справа."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
-#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
 "``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
@@ -228,7 +227,6 @@ msgid "You should have 4 containers that look like this"
 msgstr "У нас должны быть 4 контейнера, которые выглядят так"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
-#, fuzzy
 msgid ""
 "We can work this way because we first broke down our UI design and took a "
 "few moments to think about the containers we'd use. When you follow a "
@@ -311,9 +309,9 @@ msgid ""
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
 "down to the res://assets/GUI folder."
 msgstr ""
-"Наша сцена по-прежнему пуста. Самое время, чтобы поместить в неё какие-"
-"нибудь текстуры. Для загрузки текстур, направляйтесь в файловую систему "
-"слева от окна. Перейдите вниз к папке res://assets/GUI."
+"Наша сцена всё ещё пустая. Значит, пришло время закинуть в неё немного "
+"текстур. Чтобы загрузить текстуры head to the FileSystem dock to the left of "
+"the viewport. Browse down to the res://assets/GUI folder."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:141
 msgid "You should see a list of textures that we'll use to skin our interface."
@@ -341,7 +339,6 @@ msgstr ""
 "``Background`` вместе с его родительскими контейнерами."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:153
-#, fuzzy
 msgid ""
 "Next, select the ``Title`` and drag and drop ``label_HP.png`` into its "
 "``Texture`` slot. Select the ``Number`` node, click the field next to the "
@@ -349,18 +346,17 @@ msgid ""
 "viewport. They should stack up in the top-left corner of their parent "
 "``MarginContainer``."
 msgstr ""
-"Далее, выберите ``Title`` и перетащите ``label_HP.png`` в его слот "
-"``Texture``. Выберите узел ``Number``, щелкните на поле рядом с свойством "
-"``Text`` и введите ``10``. Таким образом, мы можем видеть оба узла на "
-"видовом экране. Они должны складываться в верхнем левом углу своего родителя "
+"Далее, выберите ``Title`` и перетащите ``label_HP.png`` в слот ``Texture``. "
+"Выберите узел ``Number``, щелкните на поле рядом с свойством ``Text`` и "
+"введите ``10``. Таким образом, мы можем видеть оба узла на видовом экране. "
+"Они должны складываться в верхнем левом углу своего родителя "
 "``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:161
 msgid "If you select both nodes, you should see something like this"
-msgstr "Если вы выберите оба узла, вы должны увидеть что-то такое"
+msgstr "Если вы выберите оба узла, вы должны увидеть что-то такое:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:163
-#, fuzzy
 msgid ""
 "As they have a container as their direct parent, we cannot move them freely: "
 "the ``Count`` node will always reset their anchors, their size and position. "
@@ -398,7 +394,6 @@ msgstr ""
 "контроль Count который является MarginContainer'ом"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
-#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -448,7 +443,6 @@ msgstr ""
 "Редактировать."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:207
-#, fuzzy
 msgid ""
 "You will enter the ``Dynamic Font`` resource. Unfold the ``Font`` category "
 "and click the field next to ``Font Data``. Click the ``Load`` button. In the "
@@ -466,7 +460,6 @@ msgstr ""
 "или``28``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
-#, fuzzy
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -541,12 +534,10 @@ msgstr ""
 "ли? Это благодаря нашей хорошей установке контейнера."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
-#, fuzzy
 msgid "Design the bomb and emerald counters"
 msgstr "Разработка счетчика бомб и кристаллов"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
-#, fuzzy
 msgid ""
 "The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
@@ -567,7 +558,6 @@ msgstr ""
 "сейчас, мы исправим его в ближайшее время."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
-#, fuzzy
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -587,7 +577,6 @@ msgid "Here's how your node tree should look so far"
 msgstr "Вот так древо узлов должно выглядеть на данный момент"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:275
-#, fuzzy
 msgid ""
 "With the ``Icon`` node selected, in the inspector, scroll to the top to see "
 "the ``Texture`` slot. Head to the FileSystem dock on the left and select the "
@@ -604,12 +593,10 @@ msgstr ""
 "соответствии с размером ``Background'a``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:285
-#, fuzzy
 msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr "Узлы привязаны ко всему Background'у, но их положение свободное"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -646,7 +633,6 @@ msgstr ""
 "размера его дочерних. Поля контейнера также учитываются."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:305
-#, fuzzy
 msgid ""
 "Select the Icon, click the Layout menu, and select ``Full Rect`` to re-"
 "center it. We need it to anchor to the ``Background``'s right edge. Open the "
@@ -682,7 +668,6 @@ msgstr ""
 "Теперь наш счетчик работает, как должен."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
-#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
 "so, we need to set the ``Bars`` container take all the available horizontal "
@@ -707,7 +692,6 @@ msgstr ""
 "своего родителя, толкая все остальные объекты"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:335
-#, fuzzy
 msgid "Turn the bar and counter into reusable UI components"
 msgstr "Добавление панели и счетчика в UI"
 
@@ -725,7 +709,6 @@ msgstr ""
 "с помощью наследования сцен."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
-#, fuzzy
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
@@ -742,7 +725,6 @@ msgstr ""
 "один узел ``Bar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
-#, fuzzy
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
@@ -760,7 +742,6 @@ msgstr ""
 "сцену`` или ``Соединить со сценой``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
-#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -784,9 +765,8 @@ msgid "With no extra changes, our Bar is ready to use"
 msgstr "Без каких-либо лишних изменений, наша шкала готова к использованию"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
-#, fuzzy
 msgid "Use scene inheritance to create the remaining elements"
-msgstr "Использование Наследования для создания оставшихся элементов"
+msgstr "Использование наследования для создания оставшихся элементов"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
 msgid ""
@@ -812,7 +792,6 @@ msgstr ""
 "будем иметь только контейнеры и один узел для каждого компонента UI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
-#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -876,7 +855,6 @@ msgstr ""
 "родительская сцена"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:418
-#, fuzzy
 msgid ""
 "First, rename the root or top level node to ``LifeBar``. We always want the "
 "root to describe exactly what this UI component is. The name differentiates "
@@ -893,7 +871,6 @@ msgstr ""
 "``Number`` узлы."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:427
-#, fuzzy
 msgid ""
 "If you've ever done web design, it's the same spirit as working with CSS: "
 "you create a base class, and add variations with modifier classes. From a "
@@ -1001,7 +978,6 @@ msgstr ""
 "исходный узел."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:481
-#, fuzzy
 msgid ""
 "Scroll down to the ``Custom Font`` section and open ``Font``. Lower the "
 "``Size`` to a smaller value like ``20`` or ``22``. You may also need to "
@@ -1028,7 +1004,6 @@ msgstr ""
 "поместите его на слот текстуры ``Progress``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:494
-#, fuzzy
 msgid ""
 "You can resize the node vertically so that its bounding rectangle fits the "
 "gauge. Do the same with the ``Count`` node until its size aligns with that "
@@ -1062,7 +1037,6 @@ msgid "The Count looks better now it's a bit smaller"
 msgstr "Теперь счётчик выглядит лучше потому-что стал меньше"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
-#, fuzzy
 msgid ""
 "The Count node's size affects the position of the TextureProgress. As we'll "
 "align our bars vertically in a moment, we're better off using the Counter's "
@@ -1077,7 +1051,6 @@ msgstr ""
 "выравниваться идеально."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-#, fuzzy
 msgid "Prepare the bomb and emerald counters"
 msgstr "Подготовка счётчиков бомб и кристаллов"
 
@@ -1094,12 +1067,10 @@ msgstr ""
 "как ``BombCounter.tscn``. На этом работа с этой сценой завершена."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:529
-#, fuzzy
 msgid "The bomb counter is the same as the original Counter scene"
 msgstr "Счетчик бомбы делаем так же как и предыдущую сцену"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``EmeraldCounter`` and save the scene as "
@@ -1124,12 +1095,10 @@ msgstr ""
 "элементы нашего интерфейса."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The emerald counter should look something like this"
 msgstr "Так должен выглядеть счётчик кристаллов"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
-#, fuzzy
 msgid "Add the UI components to the final GUI"
 msgstr "Финальное добавление компонентов GUI"
 
@@ -1152,7 +1121,6 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "LifeBar и EnergyBar выравниваются автоматически"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
-#, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
 "scenes onto the ``Counters`` node. They'll resize automatically."
@@ -1161,13 +1129,11 @@ msgstr ""
 "``Counters``. Они автоматически изменят свой размер."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
-#, fuzzy
 msgid "The nodes resize to take all the available vertical space"
 msgstr ""
 "Измените размер узлов, чтобы охватить всё доступное пространство по вертикали"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
-#, fuzzy
 msgid ""
 "To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -1196,7 +1162,6 @@ msgstr ""
 "высоты фона у счетчиков."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
-#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -1221,7 +1186,6 @@ msgid "The 2 bars align perfectly"
 msgstr "2 шкалы идеально выравниваются"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
-#, fuzzy
 msgid ""
 "We could have set up the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
@@ -1263,7 +1227,6 @@ msgstr ""
 "самой игре."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
-#, fuzzy
 msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
 "the final project here: :download:`ui_gui_design.zip <files/ui_gui_design."
@@ -1273,7 +1236,6 @@ msgstr ""
 "`здесь <#>`__."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
-#, fuzzy
 msgid ""
 "**A final note about Responsive Design**. If you resize the GUI, you'll see "
 "the nodes move, but the textures and text won't scale. The GUI also has a "
@@ -1287,9 +1249,9 @@ msgstr ""
 "** Заключительное примечание об Отзывчивом Дизайне **. Если вы изменяете "
 "размер GUI, вы увидите, что узлы перемещаются, но текстуры и текст не будут "
 "масштабироваться. GUI также имеет минимальный размер, основанный на "
-"текстурах внутри него. В играх нам не нужен интерфейс, чтобы быть таким же "
-"гибким, как и веб-сайт. Вы почти никогда не будете поддерживать как "
-"портретный так и ландшафтный ориентации экрана. Или первый или второй. В "
-"ландшафтной ориентации наиболее распространенные коэффициенты варьируются от "
-"4:3 до 16:9. Они близки друг к другу. Вот почему для элементов GUI "
-"достаточно перемещаться только по горизонтали, когда мы изменяем размер окна."
+"текстурах внутри него. В играх нам не нужен очень гибкий интерфейс, как веб-"
+"сайт. Вы почти никогда не будете поддерживать как портретный так и "
+"ландшафтный ориентации экрана. Или первый или второй. В ландшафтной "
+"ориентации наиболее распространенные коэффициенты варьируются от 4:3 до "
+"16:9. Они близки друг к другу. Вот почему для элементов GUI достаточно "
+"перемещаться только по горизонтали, когда мы изменяем размер окна."

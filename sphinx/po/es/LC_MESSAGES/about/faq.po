@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,7 +91,7 @@ msgid ""
 "files in the Godot repository."
 msgstr ""
 "Para más detalles, revisa los archivos  `COPYRIGHT.txt <https://github.com/"
-"godotengine/godot/blob/master/COPYRIGHT.txt>`_ al igual que la `LICENCIA.txt "
+"godotengine/godot/blob/master/COPYRIGHT.txt>`_ al igual que `LICENSE.txt "
 "<https://github.com/godotengine/godot/blob/master/LICENSE.txt>`_ y "
 "`LOGO_LICENSE.txt <https://github.com/godotengine/godot/blob/master/"
 "LOGO_LICENSE.md>`_  en el repositorio de Godot."
@@ -166,21 +166,23 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"Adicionalmente, hay algún trabajo no oficial de terceros siendo hecho para "
-"compilar para algunas consolas. Sin embargo, esto no está incluido en los "
-"scripts de compilación o en las plantillas de exportación."
+"Además, hay algunos trabajos no oficiales de terceros que se están llevando "
+"a cabo para compilar en algunas consolas. Sin embargo, nada de esto está "
+"incluido en los scripts de compilación o en las plantillas de exportación "
+"por defecto en este momento."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
-"Para más sobre esto, mira las secciones de :ref:`exportando <toc-learn-"
-"workflow-export>` y de :ref:`compilado Godot tu mismo <toc-devel-compiling>`."
+"Para más información sobre este tema, consulta las secciones sobre :ref:"
+"`exportación <toc-learn-workflow-export>` y :ref:`compilación de Godot <toc-"
+"devel-compiling>`."
 
 #: ../../docs/about/faq.rst:62
 msgid "Which programming languages are supported in Godot?"
-msgstr "¿Qué lenguajes de programación soporta Godot?"
+msgstr "¿Qué lenguajes de programación están soportados en Godot?"
 
 #: ../../docs/about/faq.rst:64
 msgid ""
@@ -201,13 +203,13 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
-"Si apenas estás empezando, ya sea con Godot o con desarrollo de juegos en "
-"general, GDScript es el lenguaje recomendado para aprender y usar, ya que es "
-"nativo a Godot. Aunque los lenguajes de scripting tienden a tener un menor "
-"rendimiento a la larga que lenguajes de nivel más bajo, para prototipos, "
-"desarrollo de Productos Viables Mínimos (MVPs) y centrarse en el Plazo para "
-"la comercialización (TTM), GDScript preveerá un modo rápido, amigable y "
-"capaz de desarrollar tus juegos."
+"Si estás empezando con Godot o con el desarrollo de juegos en general, "
+"GDScript es el lenguaje recomendado para aprender y usar ya que es nativo de "
+"Godot. Mientras que los lenguajes de scripting tienden a ser menos "
+"eficientes que los lenguajes de bajo nivel a largo plazo, para la creación "
+"de prototipos, el desarrollo de Productos Mínimos Viables (MVPs) y el "
+"enfoque en el Plazo de Comercialización (TTM), GDScript proveerá de una "
+"manera rápida, amigable y capaz para el desarrollo de tus videojuegos."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -219,14 +221,14 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
-"Nótese que el soporte de C# sigue siendo relativamente nuevo y, por lo "
-"tanto, podrías encontrar algunos problemas en el camino. Nuestra amigable y "
-"trabajadora comunidad de desarrollo está lista para resolver nuevos "
-"problemas en cuanto aparecen, pero debido a que este es un proyecto de "
-"código abierto, recomendamos que primero hagas las comprobaciones debidas. "
-"Buscando a través de discusiones en `los issues abiertos <https://github.com/"
-"godotengine/godot/issues>`_ es una gran manera de empezar a solucionar "
-"problemas."
+"Hay que tener en cuenta que el soporte para C# todavía es relativamente "
+"nuevo y como tal, es posible que encuentres algunos inconvenientes en el "
+"camino. Nuestra amigable y trabajadora comunidad de desarrollo siempre está "
+"dispuesta a abordar nuevos problemas a medida que surjan, pero como se trata "
+"de un proyecto de código abierto, recomendamos que primero hagas tú mismo "
+"las comprobaciones necesarias. Buscar en las discusiones sobre `problemas "
+"abiertos <https://github.com/godotengine/godot/issues>`_ es una buena manera "
+"de empezar a resolver problemas."
 
 #: ../../docs/about/faq.rst:82
 msgid ""
@@ -766,19 +768,124 @@ msgstr ""
 "Puntos extras por traer capturas de pantallas, números concretos, casos de "
 "pruebas o proyectos de ejemplos (Si se aplica)."
 
-#: ../../docs/about/faq.rst:285
+#: ../../docs/about/faq.rst:286
+msgid "Why does Godot not use STL (Standard Template Library)"
+msgstr ""
+
+#: ../../docs/about/faq.rst:288
+msgid ""
+"Like many other libraries (Qt as an example), Godot does not make use of "
+"STL. We believe STL is a great general purpose library, but we had special "
+"requirements for Godot."
+msgstr ""
+
+#: ../../docs/about/faq.rst:292
+msgid ""
+"STL templates create very large symbols, which results in huge debug "
+"binaries. We use few templates with very short names instead."
+msgstr ""
+
+#: ../../docs/about/faq.rst:293
+msgid ""
+"Most of our containers cater to special needs, like Vector, which uses copy "
+"on write and we use to pass data around, or the RID system, which requires "
+"O(1) access time for performance. Likewise, our hash map implementations are "
+"designed to integrate seamlessly with internal engine types."
+msgstr ""
+
+#: ../../docs/about/faq.rst:294
+msgid ""
+"Our containers have memory tracking built-in, which helps better track "
+"memory usage."
+msgstr ""
+
+#: ../../docs/about/faq.rst:295
+msgid ""
+"For large arrays, we use pooled memory, which can be mapped to either a "
+"preallocated buffer or virtual memory."
+msgstr ""
+
+#: ../../docs/about/faq.rst:296
+msgid ""
+"We use our custom String type, as the one provided by STL is too basic and "
+"lacks proper internationalization support."
+msgstr ""
+
+#: ../../docs/about/faq.rst:299
+msgid "Why does Godot not use exceptions?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:301
+msgid ""
+"We believe games should not crash, no matter what. If an unexpected "
+"situation happens, Godot will print an error (which can be traced even to "
+"script), but then it will try to recover as gracefully as possible and keep "
+"going."
+msgstr ""
+
+#: ../../docs/about/faq.rst:306
+msgid ""
+"Additionally, exceptions significantly increase binary size for the "
+"executable."
+msgstr ""
+
+#: ../../docs/about/faq.rst:310
+msgid "Why does Godot not enforce RTTI?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:312
+msgid ""
+"Godot provides its own type-casting system, which can optionally use RTTI "
+"internally. Disabling RTTI in Godot means considerably smaller binary sizes "
+"can be achieved, at a little performance cost."
+msgstr ""
+
+#: ../../docs/about/faq.rst:317
+msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:319
+msgid ""
+"While Godot internally for a lot of the heavy performance tasks attempts to "
+"use cache coherency as best as possible, we believe most users don't really "
+"need to be forced to use DoD practices."
+msgstr ""
+
+#: ../../docs/about/faq.rst:323
+msgid ""
+"DoD is mostly a cache coherency optimization that can only gain you "
+"significant performance improvements when dealing with dozens of thousands "
+"of objects (which are processed every frame with little modification). As "
+"in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
+"help you, and you should consider a different approach to optimization."
+msgstr ""
+
+#: ../../docs/about/faq.rst:330
+msgid ""
+"The vast majority of games do not need this and Godot provides handy helpers "
+"to do the job for most cases when you do."
+msgstr ""
+
+#: ../../docs/about/faq.rst:333
+msgid ""
+"If a game that really needs to process such large amount of objects is "
+"needed, our recommendation is to use C++ and GDNative for the high "
+"performance parts and GDScript (or C#) for the rest of the game."
+msgstr ""
+
+#: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
 msgstr "¿Cómo puedo apoyar el desarrollo de Godot o contribuir?"
 
-#: ../../docs/about/faq.rst:287
+#: ../../docs/about/faq.rst:340
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr "Mira :ref:`doc_ways_to_contribute`."
 
-#: ../../docs/about/faq.rst:290
+#: ../../docs/about/faq.rst:343
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "¿Quien esta trabajando en Godot? ¿Como puedo ponerme en contacto?"
 
-#: ../../docs/about/faq.rst:292
+#: ../../docs/about/faq.rst:345
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."

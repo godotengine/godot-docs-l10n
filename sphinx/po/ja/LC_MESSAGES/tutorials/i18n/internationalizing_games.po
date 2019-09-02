@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:4
 msgid "Internationalizing games"
-msgstr ""
+msgstr "ゲームの国際化"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:7
 msgid "Introduction"
@@ -34,6 +34,12 @@ msgid ""
 "offers many tools to make this process more straightforward, so this "
 "tutorial is more like a collection of tips and tricks."
 msgstr ""
+"Sería excelente que el mundo hablara solo un idioma(世界が一つの言語しか話さ"
+"なかったら素晴らしいことだ)。残念ながら、私たちの開発者にとっては、そうではあ"
+"りません。インディーズのゲームやニッチなゲームは通常ローカライズを必要としま"
+"せんが、より大規模な市場をターゲットにしたゲームは、多くの場合、ローカライズ"
+"を必要とします。Godot は、このプロセスをより簡単にするための多くのツールを提"
+"供しています。このチュートリアルは、ヒントとコツを集めたようなものです。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:17
 msgid ""
@@ -44,16 +50,24 @@ msgid ""
 "covered in the :ref:`doc_importing_translations` tutorial, so this one could "
 "be seen more like a follow-up to that one."
 msgstr ""
+"ローカライズは通常、仕事のために雇われた特定のスタジオによって行われ、このた"
+"めに利用可能なソフトウェアとファイル形式の膨大な量にもかかわらず、今日にロー"
+"カライズを行う最も一般的な方法は、まだスプレッドシートです。スプレッドシート"
+"の作成とインポートのプロセスについては、\\ :ref:`doc_importing_translations`"
+"チュートリアルですでに説明されています。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:25
 msgid ""
 "We will be using the official demo as an example; you can `download it from "
 "the Asset Library <https://godotengine.org/asset-library/asset/134>`_."
 msgstr ""
+"公式デモを例に使用します。アセットライブラリからダウンロードできます。"
+"`download it from the Asset Library <https://godotengine.org/asset-library/"
+"asset/134>`_\\ 。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:29
 msgid "Configuring the imported translation"
-msgstr ""
+msgstr "インポートされた翻訳の構成"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:31
 msgid ""
@@ -61,14 +75,19 @@ msgid ""
 "still have to be added to the project. This is done in **Project → Project "
 "Settings → Localization**:"
 msgstr ""
+"翻訳は変更時に更新および再インポートできますが、プロジェクトに追加する必要が"
+"あります。これは**プロジェクト → プロジェクト設定 → ローカリゼーション**で行"
+"われま:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:37
 msgid "The above dialog is used to add or remove translations project-wide."
 msgstr ""
+"上記のダイアログは、プロジェクト全体の翻訳を追加または削除するために使用され"
+"ます。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:40
 msgid "Localizing resources"
-msgstr ""
+msgstr "リソースのローカライズ"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:42
 msgid ""
@@ -76,16 +95,18 @@ msgid ""
 "(resources) depending on the current language. The **Remaps** tab can be "
 "used for this:"
 msgstr ""
+"また、現在の言語に応じて、アセット(リソース)の代替バージョンを使用するように"
+"Godotに指示することもできます。**Remaps**\\ タブは、次の場合に使用できます:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:48
 msgid ""
 "Select the resource to be remapped, then add some alternatives for each "
 "locale."
-msgstr ""
+msgstr "リマップするリソースを選択し、ロケールごとに代替手段を追加します。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:52
 msgid "Converting keys to text"
-msgstr ""
+msgstr "キーをテキストに変換する"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:54
 msgid ""
@@ -95,6 +116,10 @@ msgid ""
 "\"MAIN_SCREEN_GREETING1\" and that key exists in the current translation, "
 "then the text will automatically be translated."
 msgstr ""
+"\\ :ref:`Button <class_Button>`や\\ :ref:`Label <class_Label>`などの一部のコ"
+"ントロールは、テキストが翻訳キーと一致する場合に自動的に翻訳を取得します。た"
+"とえば、ラベルのテキストが「MAIN_SCREEN_GREETING1」で、そのキーが現在の翻訳に"
+"存在する場合、テキストは自動的に翻訳されます。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:59
 msgid ""
@@ -105,7 +130,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:69
 msgid "Making controls resizable"
-msgstr ""
+msgstr "コントロールのサイズを変更可能にする"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:71
 msgid ""
@@ -115,10 +140,15 @@ msgid ""
 "<class_Container>` can be useful, as well as the text wrapping options "
 "available in :ref:`Label <class_Label>`."
 msgstr ""
+"異なる言語で同じテキストの長さが大きく異なる場合があります。このためには、コ"
+"ントロール サイズを動的に調整すると役立つ可能性があるため、\\ :ref:"
+"`doc_size_and_anchors`のチュートリアルを必ずお読みください。\\ :ref:"
+"`Container <class_Container>`だけでなく、\\ :ref:`Label <class_Label>`で使用"
+"できるテキストの折り返しオプションも便利です。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:78
 msgid "TranslationServer"
-msgstr ""
+msgstr "翻訳サーバー"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:80
 msgid ""
@@ -127,20 +157,25 @@ msgid ""
 "removed during run-time; the current language can also be changed at run-"
 "time."
 msgstr ""
+"Godot には、\\ :ref:`TranslationServer <class_TranslationServer>`と呼ばれる低"
+"レベルの翻訳管理を処理するサーバーがあります。翻訳は、実行時に追加または削除"
+"できます。現在の言語は、実行時に変更することもできます。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:86
 msgid "Command line"
-msgstr ""
+msgstr "コマンドライン"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:88
 msgid ""
 "Language can be tested when running Godot from the command line. For "
 "example, to test a game in French, the following argument can be supplied:"
 msgstr ""
+"コマンドラインからGodotを実行するときに、言語をテストできます。たとえば、フラ"
+"ンス語でゲームをテストするには、次の引数を指定できます:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:97
 msgid "Translating the project name"
-msgstr ""
+msgstr "プロジェクト名の翻訳"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:99
 msgid ""
@@ -150,9 +185,16 @@ msgid ""
 "Settings** and append the locale identifier to it. For instance, for "
 "Spanish, this would be ``application/name_es``:"
 msgstr ""
+"異なるオペレーティングシステムやプラットフォームにエクスポートするときに、プ"
+"ロジェクト名がアプリ名になります。複数の言語でプロジェクト名を指定するには、"
+"**プロジェクト設定**で新しい設定``application/name``を作成し、ロケール識別子"
+"を追加します。たとえば、スペイン語の場合、これは``application/name_es``になり"
+"ます:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:107
 msgid ""
 "If you are unsure about the language code to use, refer to the :ref:`list of "
 "locale codes <doc_locales>`."
 msgstr ""
+"使用する言語コードが不明な場合は、\\ :ref:`list of locale codes "
+"<doc_locales>`を参照して下さい。"

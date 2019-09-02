@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -641,9 +641,9 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
-"Jedes mal wenn ein Gegner den Spieler trifft, wird ein Signal ermittelt. Wir "
-"müssen die Spielerkollision deaktivieren, damit das \"Hit\" Signal nicht "
-"mehr ausgelößt wird."
+"Jedes Mal, wenn ein Feind den Spieler trifft, wird das Signal ausgesendet. "
+"Wir müssen die Kollision des Spielers deaktivieren, damit das ``Treffer``-"
+"Signal nicht mehr als einmal ausgelöst wird."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:476
 msgid ""
@@ -1223,7 +1223,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:925
 msgid "ScoreLabel"
-msgstr "ScoreLabel"
+msgstr "ScoreLabel (HighScore)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:927
 msgid "*Text* : ``0``"
@@ -1240,7 +1240,7 @@ msgstr "*Align* : \"Center\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:932
 msgid "MessageLabel"
-msgstr "MessageLabel"
+msgstr "MessageLabel (Nachrichten)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:934
 msgid "*Text* : ``Dodge the Creeps!``"
@@ -1252,7 +1252,7 @@ msgstr "*Layout* : \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:939
 msgid "StartButton"
-msgstr "StartButton"
+msgstr "StartButton (Startknopf)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:941
 msgid "*Text* : ``Start``"
@@ -1292,9 +1292,10 @@ msgid ""
 "as \"Get Ready\". On the ``MessageTimer``, set the ``Wait Time`` to ``2`` "
 "and set the ``One Shot`` property to \"On\"."
 msgstr ""
-"Diese Funktion wird aufgerufen, wenn kurzzeitig eine Nachricht eingeblendet "
-"werden soll, wie z.B. \"Get Ready\". Für den ``MessageTimer`` setze ``Wait "
-"Time`` auf ``2`` und die Eigenschaft ``One Shot`` auf \"On\"."
+"Diese Funktion wird aufgerufen, wenn wir eine Nachricht vorübergehend "
+"anzeigen möchten, z.B. \"Get Ready\". Stellen Sie im ``MessageTimer`` die "
+"``Wartezeit`` auf ``2``` und stellen Sie die ``Einmalige Aufnahme`` "
+"Eigenschaft auf \"Ein\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1020
 msgid ""
@@ -1436,8 +1437,8 @@ msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
-"Füge dann in ``Main.gd`` eine neue Zeile ans Ende der Funktion "
-"``_on_MobTimer_timeout()`` an."
+"Dann füge eine neue Zeile in ``Main.gd`` Am Ende der "
+"``_on_MobTimer_timeout()`` Funktion ein."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
 msgid ""

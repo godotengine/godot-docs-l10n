@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,8 +54,8 @@ msgid ""
 "drawing them efficient."
 msgstr ""
 "Godot에서 기본 값 행동은 이미지를 텍스처로 가져오는 것입니다. 텍스처는 비디"
-"오 메모리에 저장되며 직접 액세스 할 수 없습니다. 이것이 효율적으로 그리는 것"
-"입니다."
+"오 메모리에 저장되며 직접 접근할 수 없습니다. 이것이 효율적으로 그리는 것입니"
+"다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:23
 msgid "Import options are vast:"
@@ -286,11 +286,18 @@ msgstr ""
 "\"로 설정하는데, 텍스처가 노말맵으로 사용된다면 자동으로 \"Enabled\"로 바뀌"
 "며 다시 가져온다는 것을 뜻합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:92
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+msgid ""
+"Note that RGTC compression affects the resulting normal map image. You will "
+"have to adjust custom shaders that use the normal map to take this into "
+"account."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Flags"
 msgstr "플래그"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
@@ -298,11 +305,11 @@ msgstr ""
 "사용 사례에 따라, 이미지를 텍스처로 가져올 때 쓸 수 있는 많은 설정이 있습니"
 "다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
 msgid "Repeat"
 msgstr "Repeat(반복)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
@@ -311,15 +318,15 @@ msgstr ""
 "이 설정은 3D에 가장 일반적으로 사용하며, 그렇기에 기본적으로 2D에서는 꺼져있"
 "습니다. 0,0 - 1,1 범위를 넘는 UV 좌표를 \"loop\"로 설정합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "Repeating can optionally be set to mirrored mode."
 msgstr "반복은 선택에 따라 거울 모드로 설정할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:104
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:106
 msgid "Filter"
 msgstr "Filter(필터)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:106
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:108
 msgid ""
 "When pixels become larger than the screen pixels, this option enables linear "
 "interpolation for them. The result is a smoother (less blocky) texture. This "
@@ -330,11 +337,11 @@ msgstr ""
 "는 더 부드러운 (덜 각진) 텍스처가 됩니다. 이 설정은 보통은 2D와 3D에 사용될 "
 "수 있지만, 픽셀 퍼펙트 게임을 만들 때는 보통 비활성화합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:109
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:111
 msgid "Mipmaps"
 msgstr "Mipmaps(밉맵)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:111
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:113
 msgid ""
 "When pixels become smaller than the screen, mipmaps kick in. This helps "
 "reduce the grainy effect when shrinking the textures. Keep in mind that, in "
@@ -345,15 +352,15 @@ msgstr ""
 "과를 줄여줍니다. 명심하세요, 오래된 하드웨어 (GLES2, 주로 모바일)에서, 밉맵"
 "을 사용하려면 몇 가지 요구 사항이 있습니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:114
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:116
 msgid "Texture width and height must be powers of 2"
 msgstr "텍스처 가로와 세로는 반드시 2의 제곱이어야 합니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:115
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:117
 msgid "Repeat must be enabled"
 msgstr "Repeat가 활성화되어 있어야 합니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:117
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:119
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
@@ -361,7 +368,7 @@ msgstr ""
 "스마트폰 게임과 애플리케이션을 만들 때, 완전한 호환성과 밉맵이 필요하다면 위"
 "의 내용을 명심하세요."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:119
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:121
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
@@ -369,11 +376,11 @@ msgstr ""
 "3D 작업에서, 밉맵은 켜져 있어야 성능이 향상됩니다 (더 작은 버전의 텍스처는 멀"
 "리 있는 객체에 사용됩니다)."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:122
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:124
 msgid "Anisotropic"
 msgstr "Anisotropic(비등방성)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:124
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:126
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
@@ -381,11 +388,11 @@ msgstr ""
 "텍스처가 (바닥과 같이) 화면과 거의 평행할 때, 이 설정은 흐려지는 것을 줄여서 "
 "더 세세하게 표현하도록 만듭니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:127
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:129
 msgid "SRGB"
 msgstr "SRGB"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:129
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:131
 msgid ""
 "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or "
 "detail channels need to have this option turned on in order for colors to "
@@ -397,20 +404,20 @@ msgstr ""
 "합니다. \"Detect\" 모드로 설정할 때, 텍스처는 반사율 채널을 사용할 때 SRGB로 "
 "표시될 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:133
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:135
 msgid "Process"
 msgstr "Process(가공)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:135
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:137
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr "이미지를 텍스처로 가져올 때, 일부 특수 가공을 적용할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:138
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:140
 msgid "Fix Alpha Border"
 msgstr "Fix Alpha Border(알파 테두리 수정)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:140
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:142
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
 "transparency to non transparency. It helps mitigate the outline effect when "
@@ -420,17 +427,17 @@ msgstr ""
 "니다. 포토샵 등에서 이미지를 가져올 때 테두리 효과를 완화하는데 도움을 줍니"
 "다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:145
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:147
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
 msgstr "특정한 값이 필요하지 않다면, 기본 값으로 두는 것이 좋습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:148
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid "Premultiplied Alpha"
 msgstr "Premultiplied Alpha(미리 곱하기 알파)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:152
 msgid ""
 "An alternative to fix darkened borders is to use premultiplied alpha. By "
 "enabling this option, the texture will be converted to this format. Keep in "
@@ -441,11 +448,11 @@ msgstr ""
 "설정을 키면, 텍스처는 이 형식으로 변환될 것입니다. 이 텍스처가 필요한 캔버스 "
 "항목에 PREMULT ALPHA 블렌드 모드를 사용하는 머티리얼을 만들어야 합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:154
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:156
 msgid "HDR as sRGB"
 msgstr "HDR as sRGB(sRGB로서의 HDR)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:156
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 msgid ""
 "A few HDR files are broken and contain sRGB color data. It is advised not to "
 "use them, but, in the worst-case scenario, toggling this option on will make "
@@ -454,11 +461,11 @@ msgstr ""
 "몇 몇 HDR 파일은 손상되고 sRGB 색상 데이터를 갖고 있습니다. 사용하지 않는 것"
 "이 좋지만, 최악의 경우에서, 이 설정을 켜면 좋게 보이게 만듭니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:159
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:161
 msgid "Invert Color"
 msgstr "Invert Color(색상 반전)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:161
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:163
 msgid ""
 "Reverses the image's color. This is useful, for example, to convert a height "
 "map generated by external programs to depth map to use with :ref:"

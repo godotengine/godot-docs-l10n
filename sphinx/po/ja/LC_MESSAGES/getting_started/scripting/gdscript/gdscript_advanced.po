@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:28
 msgid "Easier to read the code (less clutter)."
-msgstr "コードがより読みやすいです（混乱が少なくなります）。"
+msgstr "コードがより読みやすいです(混乱が少なくなります)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:29
 msgid "No compilation is required to test."
@@ -96,7 +96,7 @@ msgstr "静的型付き言語よりもパフォーマンスが劣ります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:36
 msgid "More difficult to refactor (symbols can't be traced)"
-msgstr "リファクタリングするのがより難しい（シンボルは辿ることができない）"
+msgstr "リファクタリングするのがより難しい(シンボルは辿ることができない)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:37
 msgid ""
@@ -105,13 +105,13 @@ msgid ""
 "parsing is more strict)."
 msgstr ""
 "静的型付け言語のコンパイル時に通常検出されるエラーの中には、コードの実行中に"
-"のみ発生するものがあります（式の構文解析がより厳密なため）。"
+"のみ発生するものがあります(式の構文解析がより厳密なため)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:40
 msgid ""
 "Less flexibility for code-completion (some variable types are only known at "
 "run-time)."
-msgstr "コード補完の柔軟性が低い（一部の変数型は実行時にのみ認識されます）。"
+msgstr "コード補完の柔軟性が低い(一部の変数型は実行時にのみ認識されます)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
 msgid ""
@@ -124,10 +124,10 @@ msgid ""
 "need a performance boost."
 msgstr ""
 "これは、実際には、Godot + GDScriptはゲームを迅速かつ効率的に作成するために設"
-"計された組み合わせです。非常に計算集約的で、エンジンの組み込みツール（ベクト"
-"ル型、Physics Engine、Mathライブラリなど）の恩恵を受けることができないゲーム"
-"には、C ++を使用する場合もあります。GDScriptでゲームの大部分を作成し、パ"
-"フォーマンスの向上が必要な部分にC++の一部を追加することができます。"
+"計された組み合わせです。非常に計算集約的で、エンジンの組み込みツール(ベクトル"
+"型、Physics Engine、Mathライブラリなど)の恩恵を受けることができないゲームに"
+"は、C ++を使用する場合もあります。GDScriptでゲームの大部分を作成し、パフォー"
+"マンスの向上が必要な部分にC++の一部を追加することができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
@@ -201,7 +201,7 @@ msgstr "Java:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:154
 msgid "GDScript:"
-msgstr "GDScript:"
+msgstr "\\ GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:166
 msgid ""
@@ -212,12 +212,12 @@ msgid ""
 "not used, but manual memory management is allowed too if inheriting manually "
 "from :ref:`class_Object`."
 msgstr ""
-"GDScriptでは、基本型（int、float、string、およびベクトル型）のみが値によって"
-"関数に渡されます（値はコピーされます）。それ以外のもの（インスタンス、配列、"
-"辞書など）は参照として渡されます。 :ref:`class_Reference` を継承していないク"
-"ラス（何も指定されていない場合のデフォルト）は、使用されていないときは解放さ"
-"れますが、 :ref:`class_Object` から手動で継承している場合は手動のメモリ管理も"
-"可能です。"
+"GDScriptでは、基本型(int、float、string、およびベクトル型)のみが値によって関"
+"数に渡されます(値はコピーされます)。それ以外のもの(インスタンス、配列、辞書な"
+"ど)は参照として渡されます。 \\ :ref:`class_Reference` を継承していないクラス"
+"(何も指定されていない場合のデフォルト)は、使用されていないときは解放されます"
+"が、 \\ :ref:`class_Object` から手動で継承している場合は手動のメモリ管理も可"
+"能です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:174
 msgid "Arrays"
@@ -325,8 +325,8 @@ msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
 "allow iterating the keys:"
 msgstr ""
-"コンテナのデータ型（配列と辞書）は反復可能です。 辞書ではキーを繰り返すことが"
-"できます:"
+"コンテナのデータ型(配列と辞書)は反復可能です。 辞書ではキーを繰り返すことがで"
+"きます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:356
 msgid "Iterating with indices is also possible:"
@@ -358,7 +358,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
-msgstr "while（）ループはどこでも同じです:"
+msgstr "while()ループはどこでも同じです:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:421
 msgid "Custom iterators"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,7 +127,8 @@ msgid ""
 "Let's call the 3 vectors \"X\", \"Y\" and \"Origin\", and let's also "
 "superimpose them over the ship so it makes more sense:"
 msgstr ""
-"我们称这三个向量为“X”“Y”和“原点”，我们也把它们叠加在飞船上，这样更有意义:"
+"我们称这三个向量为``X````Y``和``原点``，我们也把它们叠加在飞船上，这样更有意"
+"义:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:70
 msgid ""
@@ -215,8 +216,8 @@ msgid ""
 "*these directions*.\""
 msgstr ""
 "基础更有趣。 基础是来自新的转换位置的OCS中的X和Y的方向。 它以二维或三维方式告"
-"知已发生的变化。 原点(偏移)和基础(方向)通信“嘿，您的设计的原始X轴和Y轴正好 *"
-"在这里* ，指向 *这些方向* 。”"
+"知已发生的变化。 原点(偏移)和基础(方向)通信``嘿，您的设计的原始X轴和Y轴正好 *"
+"在这里* ，指向 *这些方向* 。``"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:139
 msgid ""
@@ -258,9 +259,9 @@ msgid ""
 "and \"Origin\" is element 2. It's not divided in basis/origin for "
 "convenience, due to its simplicity."
 msgstr ""
-":ref:`class_Transform2D` 是一个3x2矩阵。 它有3个Vector2元素，用于2D。 “X”轴是"
-"第0个元素，“Y”轴是第1个元素，“Origin”是第2个元素.它不是为了方便而在基础/原点"
-"上划分，是因为这样简单。"
+":ref:`class_Transform2D` 是一个3x2矩阵。 它有3个Vector2元素，用于2D。 ``X``轴"
+"是第0个元素，``Y``轴是第1个元素，``Origin``是第2个元素.它不是为了方便而在基"
+"础/原点上划分，是因为这样简单。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:179
 msgid ""
@@ -275,7 +276,7 @@ msgstr "单位矩阵"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:185
 msgid "An important transform is the \"identity\" matrix. This means:"
-msgstr "一个重要的变换是“单位”矩阵。 这意味着:"
+msgstr "一个重要的变换是``单位``矩阵。 这意味着:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:187
 msgid "'X' Points right: Vector2(1,0)"
@@ -411,8 +412,8 @@ msgid ""
 "position (either 2D or 3D) from \"designer\" coordinate system to the OCS, "
 "the \"xform\" method is used."
 msgstr ""
-"变换是在坐标系之间切换的行为。 要将位置(2D或3D)从“设计者”坐标系转换为OCS，请"
-"使用“xform”方法。"
+"变换是在坐标系之间切换的行为。 要将位置(2D或3D)从``设计者``坐标系转换为OCS，"
+"请使用``xform``方法。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:357
 msgid "And only for basis (no translation):"
@@ -426,7 +427,7 @@ msgstr "逆变换"
 msgid ""
 "To do the opposite operation (what we did up there with the rocket), the "
 "\"xform_inv\" method is used:"
-msgstr "为了进行相反的操作(我们用火箭做了什么)，使用了“xform_inv”方法:"
+msgstr "为了进行相反的操作(我们用火箭做了什么)，使用了``xform_inv``方法:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:383
 msgid "Only for Basis:"
@@ -483,7 +484,7 @@ msgstr "矩阵乘法"
 msgid ""
 "Matrices can be multiplied. Multiplication of two matrices \"chains"
 "\" (concatenates) their transforms."
-msgstr "矩阵可以做乘法。 两个矩阵的乘法 “链”(连接)它们的变换。"
+msgstr "矩阵可以做乘法。 两个矩阵的乘法 ``链``(连接)它们的变换。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:464
 msgid ""

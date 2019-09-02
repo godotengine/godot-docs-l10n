@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -192,7 +192,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:94
 msgid "Accessing scene nodes"
-msgstr "씬 노드 액세스하기"
+msgstr "씬 노드 접근하기"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:96
 msgid ""
@@ -201,9 +201,9 @@ msgid ""
 "dropping into the canvas will ask you to *call a method* (sometimes referred "
 "to as *member function*) on this node."
 msgstr ""
-"흔한 작업들 중 하나로는 씬 트리 노드(Scene Tree Nodes)에 액세스하는 것이 있습"
-"니다 (다시 한번 말하건데, *Visual Script Nodes*\\ 로 착각하지 마십시오). 씬 "
-"트리에서 캔버스로 드래그 하여 놓으면 이 노드에서 \"메서드 호출(call a "
+"흔한 작업들 중 하나로는 씬 트리 노드(Scene Tree Nodes)에 접근하는 것이 있습니"
+"다 (다시 한번 말하건데, *Visual Script Nodes*\\ 로 착각하지 마십시오). 씬 트"
+"리에서 캔버스로 드래그 하여 놓으면 이 노드에서 \"메서드 호출(call a "
 "method)\" (*멤버 함수(member function)*\\ 라고 하기도 함) 여부를 물어봅니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:102
@@ -214,11 +214,11 @@ msgid ""
 "position in local coordinates to the control. Another common use case is "
 "queueing a node for deletion, which is done with the *queue_free* method."
 msgstr ""
-"대부분의 경우 속성에 액세스하는 것이 좋지만 (아래에 자세히 설명되어 있음), 때"
-"로는 *메서드 호출*\\ 도 유용할 수 있습니다. 메서드는 객체에서 특정 작업을 실"
-"행합니다. 위의 경우로는, 마우스 포인터는 컨트롤에 대한 지역 좌표의 위치로 비"
-"틀 수 있습니다. 또 다른 일반적인 사용 사례는 노드를 삭제하기 위해 대기하는 것"
-"으로, *queue_free* 메서드를 사용하여 이루어집니다."
+"대부분의 경우 속성에 접근하는 것이 좋지만 (아래에 자세히 설명되어 있음), 때로"
+"는 *메서드 호출*\\ 도 유용할 수 있습니다. 메서드는 객체에서 특정 작업을 실행"
+"합니다. 위의 경우로는, 마우스 포인터는 컨트롤에 대한 지역 좌표의 위치로 비틀 "
+"수 있습니다. 또 다른 일반적인 사용 사례는 노드를 삭제하기 위해 대기하는 것으"
+"로, *queue_free* 메서드를 사용하여 이루어집니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:109
 msgid ""
@@ -230,7 +230,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:113
 msgid "Accessing scene node properties"
-msgstr "씬 노드 속성 액세스하기"
+msgstr "씬 노드 속성 접근하기"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:115
 msgid ""
@@ -447,9 +447,9 @@ msgid ""
 "Godot is accessed via these nodes, so they are some of the most important "
 "ones to use and pretty diverse."
 msgstr ""
-"데이터 노드는 정보에 대한 모든 종류의 액세스를 처리합니다. Godot에서는 어떤 "
-"정보도 이 노드를 통해 액세스 되므로, 그들은 중요하게 쓰이는 것들 중 하나로서 "
-"꽤 다양합니다."
+"데이터 노드는 정보에 대한 모든 종류의 접근를 처리합니다. Godot에서는 어떤 정"
+"보도 이 노드를 통해 접근되므로, 그들은 중요하게 쓰이는 것들 중 하나로서 꽤 다"
+"양합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:236
 msgid ""
@@ -485,9 +485,9 @@ msgid ""
 "have several purposes, but in general, they are useful for low-level access "
 "or OS-related access."
 msgstr ""
-"엔진 싱글톤은 전역 인터페이스입니다 (즉 씬 노드와 달리, 참조 없이 액세스 될 "
-"수 있고 항상 이용 가능합니다). 그들은 여러 목적을 지니지만, 대개 로우 레벨 액"
-"세스나 OS 관련 액세스에 유용합니다."
+"엔진 싱글톤은 전역 인터페이스입니다 (즉 씬 노드와 달리, 참조 없이 접근할 수 "
+"있고 항상 이용 가능합니다). 그들은 여러 목적을 지니지만, 대개 로우 레벨 접근"
+"이나 OS 관련 접근에 유용합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:257
 msgid ""
@@ -560,7 +560,7 @@ msgid ""
 msgstr ""
 "이 노드는 활성화된 씬을 갖고 있는 SceneTree를 참조한다는 점에서 싱글톤 노드"
 "와 비슷하지만, 오직 노드가 씬에 있고 활성화된 상태이어야만 작동합니다, 그렇"
-"지 않고 액세스하면 오류를 반환합니다."
+"지 않고 접근하면 오류를 반환합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
 msgid ""
@@ -927,7 +927,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:493
 msgid "Access local variables or properties:"
-msgstr "지역 변수나 속성을 액세스:"
+msgstr "지역 변수나 속성을 접근:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:498
 msgid ""

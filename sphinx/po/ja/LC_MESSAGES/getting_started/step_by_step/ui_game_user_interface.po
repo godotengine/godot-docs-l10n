@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
 msgid "Design the GUI"
-msgstr ""
+msgstr "GUIの設計"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
 msgid ""
@@ -32,23 +32,23 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
 msgid "The final result"
-msgstr ""
+msgstr "最終結果"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:15
 msgid "You'll also learn to:"
-msgstr ""
+msgstr "また、次の方法についても学習します:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:17
 msgid "Create flexible UI components"
-msgstr ""
+msgstr "柔軟なUIコンポーネントの作成"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:18
 msgid "Use scene inheritance"
-msgstr ""
+msgstr "シーンの継承を使用する"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:19
 msgid "Build a complex UI"
-msgstr ""
+msgstr "複雑なUIを構築する"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:21
 msgid ""
@@ -56,6 +56,10 @@ msgid ""
 "ui_gui_design.zip>` and extract the archive. Import the `start/` project in "
 "Godot to follow this tutorial. The `end/` folder contains the final result."
 msgstr ""
+"プロジェクトファイル:download:`ui_gui_design.zip <files/ui_gui_design.zip>`を"
+"ダウンロードします。アーカイブを解凍します。このチュートリアルに従って、Godot"
+"に`start/`プロジェクトをインポートしてください。 `end/`フォルダには最終結果が"
+"含まれています。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
 msgid ""
@@ -65,7 +69,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
 msgid "Breaking down the UI"
-msgstr ""
+msgstr "UIの分解"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:30
 msgid ""
@@ -73,14 +77,16 @@ msgid ""
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
 "up to three columns:"
 msgstr ""
+"最後のUIを分解し、使用するコンテナを計画します。:doc:`ui_main_menu`と同様に "
+"``MarginContainer`` から始まります。次に、最大3つの列を表示できます:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
 msgid "The life and energy counters on the left"
-msgstr ""
+msgstr "左側の生命とエネルギーカウンター"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:35
 msgid "The life and energy bars"
-msgstr ""
+msgstr "生命とエネルギーバー"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
@@ -92,10 +98,12 @@ msgid ""
 "But the bar's label and the gauge are two parts of the same UI element. If "
 "we think of them this way, we're left with two columns:"
 msgstr ""
+"しかし、バーのラベルとゲージは同じUI要素の2つの部分です。このように考えると、"
+"2つの列が残ります:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:41
 msgid "The life and energy bars on the left"
-msgstr ""
+msgstr "左側の生命とエネルギーバー"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
 msgid ""
@@ -109,7 +117,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
-msgstr ""
+msgstr "たった4つのコンテナできれいなUIレイアウトが得られます"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:55
 msgid ""
@@ -117,10 +125,13 @@ msgid ""
 "gives us the main GUI scene's structure. With this plan in place, we can "
 "jump into Godot and create our GUI."
 msgstr ""
+"個々のUIコンポーネントの内部に追加のコンテナが必要になりますが、これによって"
+"メインのGUIシーンの構造がわかります。この計画が整ったら、GodotでGUIを作成でき"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:60
 msgid "Create the base GUI"
-msgstr ""
+msgstr "基本GUIの作成"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:62
 msgid ""
@@ -134,7 +145,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:69
 msgid "For now, let's start with a few containers."
-msgstr ""
+msgstr "では、いくつかのコンテナーから始めましょう。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
 msgid ""
@@ -163,6 +174,11 @@ msgid ""
 "``HBoxContainer`` node. This one will contain our two bars on the left and "
 "separate them from the two counters on the right."
 msgstr ""
+"``MarginContainer`` を選択した状態で、インスペクタに移動し、下にスクロールし"
+"てカスタム定数のセクションを表示します。展開し、各 ``Margin`` プロパティの横"
+"のフィールドをクリックします。すべてを ``20`` ピクセルに設定します。次に、 "
+"``HBoxContainer`` ノードを追加します。これは、左側に2本のバーがあり、右側の2"
+"つのカウンターと分けてあります。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
 msgid ""
@@ -175,7 +191,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
-msgstr ""
+msgstr "このようなコンテナを4つ用意します"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
 msgid ""
@@ -184,10 +200,13 @@ msgid ""
 "tutorial like this, it may seem weird. But once you're working on real "
 "games, you'll see it's an efficient workflow."
 msgstr ""
+"最初にUIデザインを分解し、私たちが使うコンテナについて少し考えたので、このよ"
+"うにすることができます。チュートリアルでは奇妙に思えるかもしれません。しかし"
+"実際のゲームで作業してみると、効率的なワークフローであることがわかります。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:105
 msgid "Create the bars' base"
-msgstr ""
+msgstr "バーのベースを作成する"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:107
 msgid ""
@@ -196,6 +215,10 @@ msgid ""
 "the ``HBoxContainer`` is the perfect tool for the job. Select the ``Bars`` "
 "node and add a new ``HBoxContainer`` inside of it. Name it ``Bar``."
 msgstr ""
+"各バーは、水平方向に整列する2つのサブ要素に分割されます。左側がヘルス・カウン"
+"トのラベル、右側がゲージです。繰り返しになりますが、 ``HBoxContainer`` はこの"
+"作業に最適なツールです。 ``Bars`` ノードを選択し、その中に新しい "
+"``HBoxContainer`` を追加します。 ``Bar`` という名前を付けます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:113
 msgid ""
@@ -209,27 +232,39 @@ msgid ""
 "between the life count and the gauge. Select the ``Bar`` and add a "
 "``MarginContainer``. Name it ``Count``. Inside of it, add three nodes:"
 msgstr ""
+"ラベル自体には少なくとも3つのノードが必要です。 ``NinePatchRect`` は背景用"
+"で、その上に ``HP`` または ``EP`` のテクスチャを追加し、 ``Label`` は値用で右"
+"側に追加します。必要に応じて ``Control`` ノードをネストできます。 "
+"``NinePatchRect`` を他の2つの要素の親として使用することもできます。通常は、代"
+"わりにコンテナを使用します。コンテナの役割は、UIコンポーネントの編成を支援す"
+"ることです。ライフカウントとゲージの間にスペースを入れるために、後で "
+"``MarginContainer`` が必要になります。 ``Bar`` を選択し、 "
+"``MarginContainer`` を追加します。 ``Count`` という名前を付けます。その内部"
+"に、次の3つのノードを追加します:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:124
 msgid "A ``NinePatchRect`` named ``Background``"
-msgstr ""
+msgstr "``Background`` という名前の ``NinePatchRect``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:125
 msgid "A ``TextureRect`` named ``Title``"
-msgstr ""
+msgstr "``Title`` という名前の ``TextureRect``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
 msgid "And a ``Label`` named ``Number``"
-msgstr ""
+msgstr "``Number`` という名前の ``Label``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:128
 msgid "To add the nodes as siblings, always select the ``Count`` node first."
 msgstr ""
+"ノードを兄弟として追加するには、必ず最初に ``Count`` ノードを選択します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:132
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
 msgstr ""
+"シーンツリーは次のようになります。いくつかのテクスチャを追加する準備ができま"
+"した"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
 msgid ""
@@ -237,10 +272,13 @@ msgid ""
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
 "down to the res://assets/GUI folder."
 msgstr ""
+"シーンはまだ空です。テクスチャをいくつか投入します。テクスチャをロードするに"
+"は、ビューポートの左側にあるファイルシステムドックに移動します。「res://"
+"assets/GUI」フォルダに移動します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:141
 msgid "You should see a list of textures that we'll use to skin our interface."
-msgstr ""
+msgstr "インターフェースのスキンに使用するテクスチャのリストが表示されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:144
 msgid ""
@@ -252,6 +290,12 @@ msgid ""
 "Inspector, scroll down to the Rect section. Set ``Min Size`` to (100, 40). "
 "You should see the ``Background`` resize along with its parent containers."
 msgstr ""
+"シーンDockで背景を選択します。インスペクタに ``Texture`` プロパティが表示され"
+"ます。タブで、 ``label_HP_bg.png`` をクリックし、テクスチャスロットにドラッグ"
+"します。つぶれたままです。親の ``MarginContainer`` は、コンテナ内の要素が最小"
+"サイズになるまで、サイズを0にします。 ``Background`` ノードを選択します。イン"
+"スペクタで、矩形セクションまでスクロールします。 ``Min Size`` を(100、40)に設"
+"定します。親コンテナとともに ``Background`` のサイズが変更されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:153
 msgid ""
@@ -261,10 +305,15 @@ msgid ""
 "viewport. They should stack up in the top-left corner of their parent "
 "``MarginContainer``."
 msgstr ""
+"次に、 ``Title`` を選択し、 ``label_HP.png`` を ``Texture`` スロットにドラッ"
+"グ&ドロップします。 ``Number`` ノードを選択し、 ``Text`` プロパティの横の"
+"フィールドをクリックして ``10`` と入力します。これで、ビューポートに両方の"
+"ノードが表示されます。これらのコンテナは、親の ``MarginContainer`` の左上隅に"
+"積み重ねられます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:161
 msgid "If you select both nodes, you should see something like this"
-msgstr ""
+msgstr "両方のノードを選択すると、次のように表示されます"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:163
 msgid ""
@@ -274,6 +323,11 @@ msgid ""
 "three textures and press Ctrl Up or Ctrl Down to reorder them in the Scene "
 "dock. They'll snap back to their previous size and position."
 msgstr ""
+"これらは直接の親としてコンテナを持つため、自由に移動することはできません。 "
+"``Count`` ノードは常にアンカー、サイズ、位置をリセットします。ビューポート内"
+"でノードを移動し、サイズを変更してみます。次に、3つのテクスチャのいずれかを選"
+"択し、Ctrlキーを押しながら上キーまたは下キーを押して、シーンDock内で順番を変"
+"更します。元のサイズと位置に戻ります。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:170
 msgid ""
@@ -283,12 +337,19 @@ msgid ""
 "parent for the ``Title`` and ``Number``. Select both the ``Title`` and "
 "``Number``, and drag and drop them onto ``Background``."
 msgstr ""
+"親コンテナは、直接の子のサイズ、スケール、マージン、アンカーを制御します。"
+"ノードを変更するには、通常のControlまたは別のUI要素内にノードをネストする必要"
+"があります。 ``Title`` とナンバーの親として ``Background`` を使用します。 "
+"``Title`` と ``Number`` の両方を選択し、 ``Background`` にドラッグ&ドロップし"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:179
 msgid ""
 "By using the Background node as the two textures' parent, we take control "
 "away from the Count MarginContainer"
 msgstr ""
+"バックグラウンドノードを2つのテクスチャの親として使用することで、Count "
+"MarginContainerから制御を取り除きます"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
 msgid ""
@@ -309,10 +370,12 @@ msgid ""
 "Here's how the nodes' bounding boxes should look in the viewport. Keep it "
 "rough, you don't need to place them too precisely for now."
 msgstr ""
+"ビューポートでノードのバウンディングボックスがどのように表示されるかを次に示"
+"します。今の作業の所で正確に配置する必要はありません。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:199
 msgid "Replace the Label's font"
-msgstr ""
+msgstr "ラベルのフォントを置き換える"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:201
 msgid ""
@@ -321,6 +384,11 @@ msgid ""
 "the ``Custom Font`` category. Click the field next to the ``Font`` property "
 "and click on ``New Dynamic Font``. Click on the field again and select Edit."
 msgstr ""
+"ラベルのフォントが小さすぎます。変更する必要があります。 ``Number`` ノードを"
+"選択し、インスペクタで ``Control`` クラスまでスクロールして、 ``Custom "
+"Font`` カテゴリを見つけます。 ``Font`` プロパティの横にあるフィールドをクリッ"
+"クして、 ``New Dynamic Font`` をクリックします。フィールドをもう一度クリック"
+"して編集を選択します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:207
 msgid ""
@@ -331,6 +399,12 @@ msgid ""
 "viewport. Unfold the settings category to change the font size. Set the "
 "``Size`` property to a higher value, like ``24`` or ``28``."
 msgstr ""
+"``Dynamic Font`` リソースを入力します。 ``Font`` カテゴリを展開し、 ``Font "
+"Data`` の横のフィールドをクリックします。 ``Load`` ボタンをクリックしてくださ"
+"い。ファイルブラウザで、 `assets/font` フォルダに移動し、 ``Comfortaa-Bold."
+"ttf`` をダブルクリックして開きます。ビューポートにフォントの更新が表示されま"
+"す。フォントサイズを変更するには、設定カテゴリを開きます。 ``Size`` プロパ"
+"ティを ``24`` または ``28`` のように高い値に設定します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
 msgid ""
@@ -343,10 +417,18 @@ msgid ""
 "``Custom Font`` category again and tweak the ``Bottom`` property until the "
 "text aligns with the ``Title`` node. I used a value of ``2`` pixels."
 msgstr ""
+"ここで、テキストのベースライン、つまり数字の下端を、左側のHPテクスチャに揃え"
+"る必要があります。これを行うには、 ``DynamicFont`` リソースの ``Extra "
+"Spacing`` カテゴリで ``Bottom`` プロパティを調整します。テキストに下のパディ"
+"ングを追加します。シーンタブの ``Number`` ノードをクリックしてノードのプロパ"
+"ティに戻り、 ``VAlign`` を ``Bottom`` に変更します。テキストのベースラインを"
+"調整するには、もう一度 ``Custom Font`` カテゴリの下のフォントフィールドをク"
+"リックし、テキストが ``Title`` ノードに揃うまで ``Bottom`` プロパティを微調整"
+"します。今回は ``2`` ピクセルの値を使用しました。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:227
 msgid "With a Bottom value of 2 pixels, the Number aligns with the Title"
-msgstr ""
+msgstr "下の値を2ピクセルに設定すると、 NumberはTitleに揃えて配置されます"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:229
 msgid ""
@@ -356,13 +438,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:233
 msgid "Add the progress bar"
-msgstr ""
+msgstr "プログレスバーを追加する"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:235
 msgid ""
 "We need one last element to complete our life bar: the gauge itself. Godot "
 "ships with a ``TextureProgress`` node that has everything we need."
 msgstr ""
+"ライフ・バーを完成させるには、ゲージそのものという最後の要素が必要です。Godot"
+"には、必要なものがすべて含まれた ``TextureProgress`` ノードが付属しています。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:238
 msgid ""
@@ -373,16 +457,25 @@ msgid ""
 "onto the ``Progress`` slot. Under the ``Range`` class in the inspector, "
 "change the ``Value`` property to ``50`` to see the gauge fill up."
 msgstr ""
+"Barノードを選択し、その中に ``TextureProgress`` を追加します。 ``Gauge`` と名"
+"前を付けます。インスペクタで、 ``Textures`` セクションを展開します。ファイル"
+"システムドックに移動し、 ``lifebar_bg.png`` テクスチャを ``Under`` スロットに"
+"ドラッグ&ドロップします。 ``lifebar_fill.png`` イメージについても同じ操作を行"
+"い、 ``Progress`` スロットにドロップします。インスペクタの ``Range`` クラス"
+"で ``Value`` プロパティを ``50`` に変更してゲージがいっぱいになったことを確認"
+"します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:246
 msgid "With only five ``Control`` nodes, our first bar is ready to use."
-msgstr ""
+msgstr "5つの ``Control`` ノードだけで、最初のバーを使用する準備が整いました。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:250
 msgid ""
 "That's it, our life bar is ready. This last part was quick, wasn't it? "
 "That's thanks to our robust container setup."
 msgstr ""
+"これで、ライフバーの準備は整いました。 この最後の部分は速かったですよね。 こ"
+"れは、堅牢なコンテナ設定のおかげです。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
 msgid "Design the bomb and emerald counters"
@@ -401,6 +494,10 @@ msgid ""
 "bottom of the scene tree. You should see it resize automatically. Don't "
 "worry about this for now, we'll fix the size soon."
 msgstr ""
+"``Bar`` ノードの ``Count`` を選択し、Ctrl+Dを押して複製します。シーンツリーの"
+"一番下にある ``Counters`` \\  ``HBoxContainer`` の下に、新しいノードをドラッ"
+"グ&ドロップします。自動的にサイズが変更されます。後ですぐにサイズを変更しま"
+"しょう。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
 msgid ""
@@ -414,7 +511,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:273
 msgid "Here's how your node tree should look so far"
-msgstr ""
+msgstr "ノード ツリーの外観を次に表示します"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:275
 msgid ""
@@ -425,10 +522,17 @@ msgid ""
 "in the toolbar at the top of the viewport and select ``Full Rect``. Both "
 "nodes will update to fit the size of the ``Background``."
 msgstr ""
+"``Icon`` ノードを選択した状態で、インスペクタで一番上までスクロールして "
+"``Texture`` スロットを表示します。左側のファイルシステムドックに移動し、 "
+"``bombs_icon.png`` を選択します。これを ``Texture`` スロットにドラッグ&ドロッ"
+"プします。シーンタブで、 ``Icon`` ノードと ``Number`` ノードの両方を選択しま"
+"す。ビューポートの上部にあるツールバーのレイアウトメニューをクリックし、 "
+"``Full Rect`` を選択します。両方のノードが ``Background`` のサイズに合わせて"
+"更新されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:285
 msgid "The nodes anchor to the entire Background, but their position is off"
-msgstr ""
+msgstr "ノードはBackground全体に固定されていますが、位置がずれています"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
 msgid ""
@@ -438,10 +542,14 @@ msgid ""
 "resize its left edge a little bit to add some padding between the left edge "
 "of the ``Background`` and the text."
 msgstr ""
+"``Number`` の ``Align`` プロパティを変更して、背景の左側と中央に移動します。 "
+"``Number`` ノードを選択し、その ``Align`` プロパティを ``left`` に、 "
+"``VAlign`` プロパティを ``center`` に変更します。 次に、その左端を少しサイズ"
+"変更して、 ``Background`` の左端とテキストの間に余白を追加します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
 msgid "The Number node aligned to the left and centre"
-msgstr ""
+msgstr "左中央に揃えられたNumberノード"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:297
 msgid ""
@@ -453,6 +561,12 @@ msgid ""
 "container cannot be smaller than the minimal size of its children. The "
 "container's margins also weigh in."
 msgstr ""
+"アイコンとBackgroundを重ねるには、いくつかの微調整が必要です。まず、私たちの"
+"Backgroundは少し高すぎます。これは、最上位のGUIノードによって制御されるマージ"
+"ン・コンテナ内にあるためです。シーンツリーの一番上にあるGUIノードを選択し、で"
+"きるだけ細くなるように垂直方向に縮小します。 表示されるゲージを確認して小さく"
+"なりすぎないようにします。コンテナは、その最小サイズよりも小さくすることはで"
+"きません。 コンテナの余白も考慮に入れます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:305
 msgid ""
@@ -461,12 +575,18 @@ msgid ""
 "Layout menu again and select ``Center Right``. Move the icon up so it is "
 "centered vertically with the ``Background``."
 msgstr ""
+"アイコンを選択し、レイアウトメニューをクリックして、 ``Full Rect`` を選択して"
+"中央に戻します。 ``Background`` の右端に固定するために必要です。 もう一度レイ"
+"アウトメニューを開き、 ``Center Right`` を選択します。アイコンを "
+"``Background`` と垂直になるように上に動かします。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:313
 msgid ""
 "The bomb icon anchors to the Background's right edge. Resize the Counter "
 "container to see the Icon node stick to its right side"
 msgstr ""
+"爆弾アイコンがBackgroundの右端に固定されます。カウンターコンテナのサイズを変"
+"更して、Iconノードが右側に表示されます"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:316
 msgid ""
@@ -476,6 +596,11 @@ msgid ""
 "the ``Extra Spacing`` section, change the ``Bottom`` value to ``0`` to reset "
 "the font's baseline. Our counter now works as expected."
 msgstr ""
+"Barの ``Count`` から ``Counter`` を複製したため、 ``Number`` ノードのフォント"
+"はオフになっています。 ``Number`` ノードを再度選択し、 ``Font`` プロパティに"
+"移動してクリックし、 ``DynamicFont`` リソースにアクセスします。 ``Extra "
+"Spacing`` セクションで、 ``Bottom`` 値を ``0`` に変更してフォントのベースライ"
+"ンをリセットします。カウンターは正常に作動します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
 msgid ""
@@ -492,10 +617,12 @@ msgid ""
 "An expanding container eats all the space it can from its parent, pushing "
 "everything else along the way"
 msgstr ""
+"膨張するコンテナは親からできる限りのスペースを食いつぶし、他のすべてを押しの"
+"けていく"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:335
 msgid "Turn the bar and counter into reusable UI components"
-msgstr ""
+msgstr "バーとカウンタを再利用可能なUIコンポーネントに変える"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:337
 msgid ""
@@ -504,6 +631,11 @@ msgid ""
 "we could have a single scene to store a UI element's template, and child "
 "scenes to work on variations. Godot lets us do this with Inherited Scenes."
 msgstr ""
+"バーが1つとカウンターウィジェットが1つあります。しかし、それぞれ2つ必要です。"
+"後でバーのデザインや機能を変更する必要があるかもしれません。 UI要素のテンプ"
+"レートを格納するための単一のシーンと、バリエーションを処理するための子シーン"
+"があるとしたら素晴らしいことです。Godotはこれを継承されたシーンで可能にしてい"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
 msgid ""
@@ -538,7 +670,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
 msgid "With no extra changes, our Bar is ready to use"
-msgstr ""
+msgstr "追加の変更なしで、私たちのバーは使用する準備ができています"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
 msgid "Use scene inheritance to create the remaining elements"
@@ -552,12 +684,18 @@ msgid ""
 "called EP and is yellow. Godot gives us a powerful tool to create a common "
 "base to reuse for all bars in the game: **inherited scenes**."
 msgstr ""
+"同じように機能する2本のバーが必要です。一方がHPラベルを付けて緑色であるものと"
+"もう一方はEPと呼ばれ黄色であるものです。Godotは、ゲーム内のすべてのバーに再利"
+"用するための共通の基盤、つまり\\ **継承されたシーン**\\ を作成するための強力"
+"なツールを提供しています。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:383
 msgid ""
 "Inherited scenes help us keep the GUI scene clean. In the end, we will only "
 "have containers and one node for each UI component."
 msgstr ""
+"継承されたシーンは、GUIシーンをきれいに保つのに役立ちます。最終的には、各UIコ"
+"ンポーネントに対してコンテナとノードを1つだけ持つことになります。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
 msgid ""
@@ -575,6 +713,8 @@ msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
+"上書きしたプロパティの横にリロードアイコンが表示されます。クリックすると、値"
+"が親シーンのデフォルトにリセットされます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:400
 msgid ""
@@ -583,10 +723,14 @@ msgid ""
 "override properties, resources and add extra nodes and scripts to extend its "
 "functionality."
 msgstr ""
+"シーンの継承は、ノードツリーやGDScriptの ``extends`` キーワードのようなものと"
+"考えてください。継承されたシーンは親と同じようにすべてを実行しますが、プロパ"
+"ティ、リソースを上書きし、ノードやスクリプトを追加して機能を拡張することもで"
+"きます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:406
 msgid "Inherit the Bar Scene to build the LifeBar"
-msgstr ""
+msgstr "Barシーンを継承してライフバーを構築する"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
 msgid ""
@@ -595,10 +739,17 @@ msgid ""
 "like your ``Bar``, but with all nodes except the root in grey. Press ``Meta"
 "+S`` to save the new inherited scene and name it ``LifeBar``."
 msgstr ""
+"``Scene->New Inherited Scene`` に移動して、新しいタイプの ``Bar`` を作成しま"
+"す。 ``Bar`` シーンを選択して開きます。新しい「未保存」タブが表示されます。こ"
+"れはバーと似ていますが、ルート以外のすべてのノードがグレーで表示されていま"
+"す。 ``Meta+S`` を押して、新しい継承されたシーンを保存し、 ``LifeBar`` という"
+"名前を付けます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
 msgstr ""
+"グレーアウトしているノードの名前は変更できません。これは、親シーンがあること"
+"を示しています"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:418
 msgid ""
@@ -609,6 +760,12 @@ msgid ""
 "works with all inherited scenes. Like our ``TextureProgress`` and ``Number`` "
 "nodes."
 msgstr ""
+"まず、ルートまたは最上位ノードの名前を ``LifeBar`` に変更します。私たちは常"
+"に、このUIコンポーネントが何であるかを、ルートが正確に記述することを望んでい"
+"ます。この名前は、次に作成する ``EnergyBar`` とは異なります。シーン内の他の"
+"ノードは、コンポーネントの構造を広義の用語で記述する必要があるため、継承され"
+"たすべてのシーンで機能します。 ``TextureProgress`` ノードや ``Number`` ノード"
+"と同様です。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:427
 msgid ""
@@ -620,16 +777,25 @@ msgid ""
 "we create an inherited scene and change the name of the top level node, "
 "we're doing the same thing."
 msgstr ""
+"Webデザインをしたことがある人なら、CSSを使って作業するのと同じ精神です。ベー"
+"スクラスを作成し、修飾子クラスを使ってバリエーションを追加します。基本ボタ"
+"ン・クラスからは、ユーザーがプロンプトを受け入れたり拒否したりできるように、"
+"ボタン・グリーンとボタン・レッドのバリエーションができます。新しいクラスに"
+"は、親要素の名前と、親要素の変更方法を説明する追加のキーワードが含まれます。"
+"継承されたシーンを作成して最上位ノードの名前を変更する場合も、同じことを行い"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
 msgid "Design the EnergyBar"
-msgstr ""
+msgstr "エネルギーバーの設計"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:438
 msgid ""
 "We already setup the ``LifeBar``'s design with the main ``Bar`` scene. Now "
 "we need the ``EnergyBar``."
 msgstr ""
+"``LifeBar`` のデザインはメインの ``Bar`` シーンですでに設定されています。 今"
+"度は ``EnergyBar`` が必要です。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:441
 msgid ""
@@ -638,6 +804,10 @@ msgid ""
 "``EnergyBar``. Save the new scene as ``EnergyBar.tscn``. We need to replace "
 "the HP texture with EP one, and to change the textures on the gauge."
 msgstr ""
+"新しい継承シーンを作成して、もう一度 ``Bar.tscn`` シーンを選択して開きます。 "
+"`` Bar`` ルートノードをダブルクリックして ``EnergyBar`` に名前を変更します。 "
+"新しいシーンを ``EnergyBar.tscn`` という名前で保存します。 HPのテクスチャをEP"
+"のテクスチャに置き換え、ゲージのテクスチャを変更する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
 msgid ""
@@ -646,6 +816,10 @@ msgid ""
 "slot. Select the ``Number`` node and change the ``Text`` property to a "
 "different value like ``14``."
 msgstr ""
+"左側のファイルシステムドックに進み、シーンツリーの ``Title`` ノードを選択し"
+"て、 ``label_EP.png`` ファイルをテクスチャスロットにドラッグ＆ドロップしま"
+"す。 ``Number`` ノードを選択し、 ``Text`` プロパティを ``14`` のような別の値"
+"に変更します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:452
 msgid ""
@@ -656,10 +830,16 @@ msgid ""
 "``40`` and switch back to the ``LifeBar`` or the ``Bar`` scenes. You will "
 "see the text increased in size."
 msgstr ""
+"EPテクスチャはHPテクスチャよりも小さいことがわかります。 ``Number`` のフォン"
+"トサイズを適切なサイズに更新する必要があります。フォントはリソースです。この"
+"リソースを使用するプロジェクト全体のすべてのノードは、変更するプロパティーの"
+"影響を受けます。サイズを ``40`` などの大きな値に変更し、 ``LifeBar`` または "
+"``Bar`` のシーンに戻すことができます。テキストのサイズが大きくなります。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:461
 msgid "If we change the font resource, all the nodes that use it are affected"
 msgstr ""
+"フォントリソースを変更すると、それを使用するすべてのノードが影響を受けます"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:464
 msgid ""
@@ -669,10 +849,16 @@ msgid ""
 "select the ``Make Sub-Resources Unique`` option. Godot will find all the "
 "resources this node uses and create unique copies for us."
 msgstr ""
+"このノードのフォントサイズだけを変更するには、フォントリソースのコピーを作成"
+"する必要があります。 ``Number`` ノードを再度選択し、インスペクタの右上にある"
+"レンチとドライバのアイコンをクリックします。ドロップダウンメニューから "
+"``Make Sub-Resources Unique`` オプションを選択します。このノードが使用するす"
+"べてのリソースを検索し、固有のコピーを作成します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:472
 msgid "Use this option to create unique copies of the resources for one node"
 msgstr ""
+"このオプションを使用して、1つのノードのリソースの固有のコピーを作成します"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
 msgid ""
@@ -681,6 +867,9 @@ msgid ""
 "Unique`` before you can tweak the resources without affecting the source "
 "node."
 msgstr ""
+"``Meta+D`` を使用してシーンツリーからノードを複製すると、ノードはそのリソース"
+"を元のノードと共有します。ソースノードに影響を与えずにリソースを微調整するに"
+"は、 ``Make Sub-Resources Unique`` を使用する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:481
 msgid ""
@@ -689,10 +878,14 @@ msgid ""
 "adjust the ``Bottom`` spacing value to align the text's baseline with the EP "
 "label on the left."
 msgstr ""
+"``Custom Font`` セクションまでスクロールして ``Font`` を開きます。 ``Size`` "
+"を ``20`` または ``22`` のような小さい値に下げます。テキストのベースラインを"
+"左側のEPラベルに合わせるために、 ``Bottom`` の間隔値を調整する必要があるかも"
+"しれません。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:488
 msgid "The EP Count widget, with a smaller font than its HP counterpart"
-msgstr ""
+msgstr "HPのものよりも小さなフォントを持つEP Countウィジェット"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:490
 msgid ""
@@ -700,6 +893,9 @@ msgid ""
 "file onto the ``Under`` slot and do the same for ``energy_bar_fill.png`` and "
 "drop it onto the ``Progress`` texture slot."
 msgstr ""
+"ここで、 ``TextureProgress`` ノードを選択します。 ``energy_bar_bg.png`` ファ"
+"イルを ``Under`` スロットにドラッグし、 ``energy_bar_fill.png`` に対しても同"
+"じ操作を行い、 ``Progress`` テクスチャスロットにドロップします。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:494
 msgid ""
@@ -710,6 +906,11 @@ msgid ""
 "That is also the size the ``Bar`` container will have. You may downscale "
 "this one as well."
 msgstr ""
+"境界の長方形がゲージに合うように、ノードのサイズを垂直方向に変更できます。 "
+"``Count`` ノードについても、サイズがバーのサイズに合うまで同じ操作を繰り返し"
+"ます。 ``TextureProgress`` の最小サイズはそのテクスチャに基づいて設定されるた"
+"め、その下の ``Count`` ノードは縮小できません。これは、 ``Bar`` コンテナのサ"
+"イズでもあります。こちらも縮小して構いません。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:501
 msgid ""
@@ -718,10 +919,14 @@ msgid ""
 "``Min Size`` property down to ``80`` pixels. It should resize automatically "
 "and the ``Title`` and ``Number`` nodes should reposition as well."
 msgstr ""
+"最後に、 ``Background`` コンテナの最小サイズが少し大きくなっています。選択"
+"し、 ``Rect`` セクションで ``Min Size`` プロパティを ``80`` ピクセルに変更し"
+"ます。自動的にサイズが変更され、 ``Title`` ノードと ``Number`` ノードも再配置"
+"されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:509
 msgid "The Count looks better now it's a bit smaller"
-msgstr ""
+msgstr "Countは少し小さくなり、見た目が良くなりました"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
 msgid ""
@@ -731,6 +936,10 @@ msgid ""
 "the LifeBar's Count nodes are one hundred pixels wide, so both gauges will "
 "align perfectly."
 msgstr ""
+"Countノードのサイズは、TextureProgressの位置に影響します。すぐにバーを縦に揃"
+"えるので、Counterの左マージンを使用してEPラベルのサイズを変更した方がよいで"
+"しょう。これにより、EnergyBarのCountノードとLifeBarのCountノードの両方が100ピ"
+"クセル幅になり、両方のゲージが完全に位置合わせされます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
 msgid "Prepare the bomb and emerald counters"
@@ -743,10 +952,14 @@ msgid ""
 "``BombCounter`` too. Save the new scene as ``BombCounter.tscn``. That's all "
 "for this scene."
 msgstr ""
+"カウンターを片付けましょう。 ``Scene -> New Inherited Scene`` に移動し、 "
+"``Counter.tscn`` をベースとして選択します。ルートノードの名前も "
+"``BombCounter`` に変更します。新しいシーンを ``BombCounter.tscn`` として保存"
+"します。これですべてです。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:529
 msgid "The bomb counter is the same as the original Counter scene"
-msgstr ""
+msgstr "爆弾カウンターはオリジナルのカウンターシーンと同じです"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
 msgid ""
@@ -768,7 +981,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
-msgstr ""
+msgstr "最終的なGUIにUIコンポーネントを追加する"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:549
 msgid ""
@@ -778,10 +991,15 @@ msgid ""
 "container in the scene tree. Do the same for the ``EnergyBar``. You should "
 "see them align vertically."
 msgstr ""
+"すべてのUI要素をメインGUIシーンに追加します。 ``GUI.tscn`` シーンを再度開"
+"き、 ``Bar`` ノードと ``Counter`` ノードを削除します。ファイルシステムドック"
+"で ``LifeBar.tscn`` を見つけて、シーンツリーの ``Bars`` コンテナにドラッグア"
+"ンドドロップします。 ``EnergyBar`` についても同じ操作を行います。縦に並んでい"
+"るのが見えるはずです。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:557
 msgid "The LifeBar and the EnergyBar align automatically"
-msgstr ""
+msgstr "LifeBarとEnergyBarは自動的に配置されます"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
 msgid ""
@@ -791,7 +1009,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
 msgid "The nodes resize to take all the available vertical space"
-msgstr ""
+msgstr "ノードのサイズが変更され、使用可能なすべての垂直スペースが使用されます"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
 msgid ""
@@ -805,13 +1023,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
 msgid "Now both counters have a decent size"
-msgstr ""
+msgstr "両方のカウンタが適切なサイズになりました"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:579
 msgid ""
 "Change the ``Min Size`` property of the ``Counters`` container to control "
 "the height of the counters' background."
 msgstr ""
+"``Counters`` コンテナの ``Min Size`` プロパティを変更して、カウンタの背景の高"
+"さを制御します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
 msgid ""
@@ -827,7 +1047,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:593
 msgid "The 2 bars align perfectly"
-msgstr ""
+msgstr "2本のバーがぴったり揃います"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
 msgid ""
@@ -838,17 +1058,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
 msgid "Place the GUI onto the game's mockup"
-msgstr ""
+msgstr "GUIをゲームのモックアップに配置する"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
 msgid ""
 "To wrap up the tutorial we're going to insert the GUI onto the game's mockup "
 "scene."
 msgstr ""
+"チュートリアルを締めくくるために、ゲームのモックアップシーンにGUIを挿入しま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:607
 msgid "Head to the FileSystem dock and open ``LevelMockup.tscn``."
-msgstr ""
+msgstr "ファイルシステムドックに進み、 ``LevelMockup.tscn`` を開きます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:609
 msgid ""
@@ -859,6 +1081,12 @@ msgid ""
 "possible vertically. Now you can see how the interface looks in the context "
 "of the game."
 msgstr ""
+"``GUI.tscn`` シーンを ``bg`` ノードの直下と ``Characters`` の直上にドラッグ＆"
+"ドロップします。GUIはビューポート全体に合うように拡大縮小されます。レイアウト"
+"メニューに進み、 ``Center Top`` オプションを選択して、ゲームウィンドウの上端"
+"に固定します。 次にGUIを垂直方向にできるだけ小さくするためにサイズを変更しま"
+"す。これで、ゲームのコンテキストでインターフェイスがどのように見えるかを確認"
+"できます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
 msgid ""
@@ -878,3 +1106,10 @@ msgid ""
 "16:9. They are close to one another. That's why it’s enough for the GUI "
 "elements to only move horizontally when we change the window size."
 msgstr ""
+"**レスポンシブデザイン**に関する最後の注意事項。GUI のサイズを変更すると、"
+"ノードが移動しますが、テクスチャとテキストはスケーリングしません。GUIには、内"
+"部のテクスチャに基づいて最小サイズも使用されます。ゲームでは、Webサイトほど柔"
+"軟なインターフェイスは必要ありませんが、横向きと縦向きの両方をサポートするこ"
+"とはほとんどありません。横向きでは、最も一般的な比率の範囲は 4:3～16:9 です。"
+"彼らはお互いに近いため、GUI要素はウィンドウサイズを変更する場合にのみ水平方向"
+"に移動するだけで十分です。"

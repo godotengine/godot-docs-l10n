@@ -1,0 +1,259 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:2
+#, fuzzy
+msgid "Procedural geometry"
+msgstr ":ref:`RID<class_rid>`"
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:4
+msgid ""
+"There are many ways to procedurally generate geometry in Godot. In this "
+"tutorial series we will explore a few of them. Each technique has its own "
+"benefits and drawbacks, so it is best to understand each one and how it can "
+"be useful in a given situation."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:18
+#, fuzzy
+msgid "What is geometry?"
+msgstr "Що це за програма?"
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:20
+msgid ""
+"Geometry is a fancy way of saying shape. In computer graphics, geometry is "
+"typically represented by an array of positions called \"vertices\". In "
+"Godot, geometry is represented by Meshes."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:24
+#, fuzzy
+msgid "What is a Mesh?"
+msgstr "Що це за програма?"
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:26
+msgid ""
+"Many things in Godot have mesh in their name: the :ref:`Mesh <class_Mesh>`, "
+"the :ref:`ArrayMesh <class_ArrayMesh>`, the :ref:`MeshInstance "
+"<class_MeshInstance>`, the :ref:`MultiMesh <class_MultiMesh>`, and the :ref:"
+"`MultiMeshInstance <class_MultiMeshInstance>`. While they are all related, "
+"they have slightly different uses."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:30
+msgid ""
+"Meshes and ArrayMeshes are resources that are drawn using a MeshInstance "
+"node. Resources like Meshes and ArrayMeshes cannot be added to the scene "
+"directly. A MeshInstance represents one instance of a mesh in your scene. "
+"You can reuse a single mesh in multiple MeshInstances to draw it in "
+"different parts of your scene with different materials or transformations "
+"(scale, rotation, position etc.)."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:36
+msgid ""
+"If you are going to draw the same object many times, it can be helpful to "
+"use a MultiMesh with a MultiMeshInstance. The MultiMeshInstance draws meshes "
+"thousands of times very cheaply. It takes advantage of hardware instancing "
+"in order to do so. The drawback with using a MultiMeshInstance is that you "
+"are limited to one material for all instances. It uses an instance array to "
+"store different colors and transformations for each instance, but all the "
+"instances use the same material."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:44
+#, fuzzy
+msgid "What a Mesh is"
+msgstr "Частинки"
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:46
+msgid ""
+"A Mesh is composed of one or more surfaces. A surface is an array composed "
+"of multiple sub-arrays containing vertices, normals, UVs, etc. Normally the "
+"process of constructing surfaces and meshes is hidden from the user in the :"
+"ref:`VisualServer <class_VisualServer>`, but with ArrayMeshes, the user can "
+"construct a Mesh manually by passing in an array containing the surface "
+"information."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:52
+#, fuzzy
+msgid "Surfaces"
+msgstr "Цільова поверхня"
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:54
+msgid ""
+"Each surface has its own material. Alternatively, you can override the "
+"material for all surfaces in the Mesh when you use a MeshInstance using "
+"``MeshInstance.override_material``."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:58
+msgid "Surface array"
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:60
+msgid ""
+"The surface array is an array of length ``ArrayMesh.ARRAY_MAX``. Each "
+"position in the array is filled with a sub-array containing per-vertex "
+"information. For example, the array located at ``ArrayMesh.ARRAY_NORMAL`` is "
+"a :ref:`PoolVector3Array <class_PoolVector3Array>` of vertex normals."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:64
+msgid ""
+"The surface array can be indexed or non-indexed. Creating a non-indexed "
+"array is as easy as not assigning an array at the index ``ArrayMesh."
+"ARRAY_INDEX``. A non-indexed array stores unique vertex information for "
+"every triangle, meaning that when two triangle share a vertex, the vertex is "
+"duplicated in the array. An indexed surface array only stores vertex "
+"information for each unique vertex and then also stores an array of indices "
+"which maps out how to construct the triangles from the vertex array. In "
+"general, using an indexed array is faster, but it means you have to share "
+"vertex data between triangles, which is not always desired (e.g. when you "
+"want per-face normals)."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:73
+msgid "Tools"
+msgstr "Інструменти"
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:75
+msgid ""
+"Godot provides different ways of accessing and working with geometry. More "
+"information on each will be provided in the following tutorials."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:79
+msgid "ArrayMesh"
+msgstr "ArrayMesh"
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:81
+msgid ""
+"The ArrayMesh resource extends Mesh to add a few different quality of life "
+"functions, and most importantly, the ability to construct a Mesh surface "
+"through scripting."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:84
+msgid ""
+"For more information about the ArrayMesh, please see the :ref:`ArrayMesh "
+"tutorial <doc_arraymesh>`."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:87
+msgid "MeshDataTool"
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:89
+msgid ""
+"The MeshDataTool is a resource that converts Mesh data into arrays of "
+"vertices, faces, and edges that can be modified at runtime."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:92
+msgid ""
+"For more information about the MeshDataTool, please see the :ref:"
+"`MeshDataTool tutorial <doc_meshdatatool>`."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:95
+msgid "SurfaceTool"
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:97
+msgid ""
+"The SurfaceTool allows the creation of Meshes using an OpenGL 1.x immediate "
+"mode style interface."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:99
+msgid ""
+"For more information about the SurfaceTool, please see the :ref:`SurfaceTool "
+"tutorial <doc_surfacetool>`."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:102
+msgid "ImmediateGeometry"
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:104
+msgid ""
+"ImmediateGeometry is a node that uses an immediate mode style interface "
+"(like SurfaceTool) to draw objects. The difference between ImmediateGeometry "
+"and the SurfaceTool is that ImmediateGeometry is a node itself that can be "
+"added to the scene tree and is drawn directly from the code. The SurfaceTool "
+"generates a Mesh that needs to be added a MeshInstance to be seen."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:109
+msgid ""
+"ImmediateGeometry is useful for prototyping because of the straightforward "
+"API, but it is slow because the geometry is rebuilt every frame. It is most "
+"useful for quickly adding simple geometry to debug visually (e.g. by drawing "
+"lines to visualize physics raycasts etc.)."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:113
+msgid ""
+"For more information about ImmediateGeometry, please see the :ref:"
+"`ImmediateGeometry tutorial <doc_immediategeometry>`."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:116
+#, fuzzy
+msgid "Which one should I use?"
+msgstr "Що таке GDScript і чому я повинен, це використовувати?"
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:118
+msgid ""
+"Which method you use depends on what you are trying to do and what kind of "
+"procedure you are comfortable with."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:120
+msgid ""
+"Both SurfaceTool and ArrayMesh are excellent for generating static geometry "
+"(meshes) that don't change over time."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:122
+msgid ""
+"Using an ArrayMesh is slightly faster than using a SurfaceTool, but the API "
+"is more a little more challenging. Additionally, SurfaceTool has a few "
+"quality of life methods such as ``generate_normals()`` and ``index()``."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:125
+msgid ""
+"ImmediateGeometry regenerates the mesh every frame, so it is much slower "
+"than ArrayMesh or SurfaceTool. However, if you need the geometry to change "
+"every frame anyway it provides a much easier interface that may even be a "
+"little faster than generating an ArrayMesh every frame."
+msgstr ""
+
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:129
+msgid ""
+"The MeshDataTool is not fast, but it gives you access to all kinds of "
+"properties of the mesh that you don't get with the others (edges, faces, "
+"etc.). It is incredibly useful when you need that sort of data to transform "
+"the mesh, but it is not a good idea to use if that information is not "
+"needed. The MeshDataTool is best used if you are going to be using an "
+"algorithm that requires access to the face or edge array."
+msgstr ""

@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
+#, fuzzy
+msgid "GDScript exports"
+msgstr "GDScript"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
+#, fuzzy
+msgid "Introduction to exports"
+msgstr "3D简介"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
+#, fuzzy
+msgid ""
+"In Godot, class members can be exported. This means their value gets saved "
+"along with the resource (such as the :ref:`scene <class_PackedScene>`) "
+"they're attached to. They will also be available for editing in the property "
+"editor. Exporting is done by using the ``export`` keyword::"
+msgstr ""
+"类成员可以导出。这意味着它们的值与它们所连接的资源一起被保存(例如 :ref:"
+"`scene <class_PackedScene>`)。它们还可以在属性面板中进行编辑。导出是通过使用"
+"``导出``关键字::"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
+#, fuzzy
+msgid ""
+"An exported variable must be initialized to a constant expression or have an "
+"export hint in the form of an argument to the ``export`` keyword (see the "
+"*Examples* section below)."
+msgstr ""
+"导出的变量必须初始化为常量表达式，或者以导出关键字参数的形式具有导出提示(参见"
+"下面)。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
+msgid ""
+"One of the fundamental benefits of exporting member variables is to have "
+"them visible and editable in the editor. This way, artists and game "
+"designers can modify values that later influence how the program runs. For "
+"this, a special export syntax is provided."
+msgstr ""
+"导出成员变量的基本好处之一是使它们在编辑器中可见并可编辑。通过这种方式，艺术"
+"家和游戏设计师可以修改影响程序运行的值。为此，提供了一种特殊的导出语法。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:29
+msgid ""
+"Exporting properties can also be done in other languages such as C#. The "
+"syntax varies depending on the language."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
+msgid "Examples"
+msgstr "示例"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
+#, fuzzy
+msgid ""
+"It must be noted that even if the script is not being run while in the "
+"editor, the exported properties are still editable. This can be used in "
+"conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
+msgstr ""
+"必须注意的是，即使脚本在编辑器中没有运行，导出的属性仍然是可编辑的(参见下面的"
+"``工具``)。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
+msgid "Exporting bit flags"
+msgstr "导出位标志"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
+#, fuzzy
+msgid ""
+"Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
+"values in one property. By using the export hint ``int, FLAGS``, they can be "
+"set from the editor::"
+msgstr ""
+"作为位标志的整数可以在一个属性中存储多个``true``/``false``(boolean)值。通过使"
+"用导出提示' ' int, FLAGS ' '，它们可以从编辑器中设置:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
+#, fuzzy
+msgid ""
+"Restricting the flags to a certain number of named flags is also possible. "
+"The syntax is similar to the enumeration syntax::"
+msgstr "也可以将标志限制为指定数量的标志。语法类似于枚举语法:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:139
+msgid ""
+"In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
+"value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
+"defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
+msgstr ""
+"在这个示例中， ``Fire`` 的值是1， ``Water`` 的值是2， ``Earth`` 的值是4， "
+"``Wind`` 的值是8。通常，常数应该相应地定义。(例如: ``const ELEMENT_WIND = "
+"8`` ，以此类推)。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:144
+msgid ""
+"Using bit flags requires some understanding of bitwise operations. If in "
+"doubt, boolean variables should be exported instead."
+msgstr "使用位标志需要了解位操作。如果有疑问，应该导出布尔变量。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:148
+msgid "Exporting arrays"
+msgstr "导出数组"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+#, fuzzy
+msgid ""
+"Exporting arrays works, but with an important caveat: while regular arrays "
+"are created local to every class instance, exported arrays are *shared* "
+"between all instances. This means that editing them in one instance will "
+"cause them to change in all other instances. Exported arrays can have "
+"initializers, but they must be constant expressions."
+msgstr ""
+"导出数组是可行的，但有一个重要的注意事项:虽然常规数组是在每个类实例本地创建"
+"的，但导出的数组是在所有实例之间“共享”的。这意味着在一个实例中编辑它们将导致"
+"在所有其他实例中更改它们。导出的数组可以有初始化器，但它们必须是常量表达式。"

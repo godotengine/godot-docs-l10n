@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -289,8 +289,8 @@ msgid ""
 "shadowing when objects are perpendicular to the light. The only downside is "
 "that it makes the shadow a bit thinner."
 msgstr ""
-"当“物体垂直于光线”时，**“Normal Bias”**参数可用于修复自阴影的特殊情况。 唯一"
-"的缺点是它使阴影更薄。"
+"当``物体垂直于光线``时，**``Normal Bias``**参数可用于修复自阴影的特殊情况。 "
+"唯一的缺点是它使阴影更薄。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:126
 msgid ""
@@ -298,8 +298,8 @@ msgid ""
 "that are far away. If self shadowing occurs only on the splits far away, "
 "this value can fix them."
 msgstr ""
-"**“偏差分割比例”**参数可以控制远处分裂的额外偏差。 如果仅在远处的分割上发生自"
-"阴影，则此值可以修复它们。"
+"**``偏差分割比例``**参数可以控制远处分裂的额外偏差。 如果仅在远处的分割上发生"
+"自阴影，则此值可以修复它们。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:129
 msgid "Finally, the **\"Depth Range\"** has two settings:"
@@ -327,7 +327,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:134
 msgid "Just experiment which setting works better for your scene."
-msgstr "只是尝试哪种设置更适合您的场景。"
+msgstr "尝试哪种设置更适合您的场景。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:136
 msgid ""
@@ -336,11 +336,12 @@ msgid ""
 msgstr "可以在项目设置 ->渲染 ->质量中更改方向灯的阴影贴图大小:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:140
-#, fuzzy
 msgid ""
 "Increasing it can solve bias problems, but decrease performance. Shadow "
 "mapping is an art of tweaking."
-msgstr "增加它可以解决偏差问题，但会降低性能。 阴影贴图是一种调整艺术。"
+msgstr ""
+"增加它可以解决偏差问题，但会降低性能。 阴影贴图（Shadow mapping）是一门调整的"
+"艺术。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:143
 msgid "Omni light"
@@ -353,14 +354,13 @@ msgid ""
 msgstr "全光是一种点光源，可在所有方向上发射光，直至给定半径。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:150
-#, fuzzy
 msgid ""
 "In real life, light attenuation is an inverse function, which means omni "
 "lights don't have a radius. This is a problem because it means computing "
 "several omni lights would become demanding."
 msgstr ""
 "在现实生活中，光衰减是反函数，这意味着全向光没有半径。 这是一个问题，因为这意"
-"味着计算几个全向灯会变得很苛刻。"
+"味着计算几个全向灯会变得很困难。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:153
 msgid ""
@@ -415,8 +415,8 @@ msgid ""
 "reflectors, spots, etc. This type of light is also attenuated towards the "
 "opposite direction it points to."
 msgstr ""
-"聚光灯类似于全向灯，除了它们只发光到锥形(或“截止”)。 它们可用于模拟手电筒，汽"
-"车灯，反射器，光点等。这种类型的光也会向其指向的相反方向衰减。"
+"聚光灯类似于全向灯，除了它们只发光到锥形(或``截止``)。 它们可用于模拟手电筒，"
+"汽车灯，反射器，光点等。这种类型的光也会向其指向的相反方向衰减。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:188
 msgid ""

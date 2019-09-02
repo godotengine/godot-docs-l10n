@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,13 +66,12 @@ msgid "Creating the animation"
 msgstr "创建动画"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:33
-#, fuzzy
 msgid ""
 "It's time to create a new animation! Press the Animation button then select "
 "new from the menu. Name the animation \"intro\" when the dialog appears."
 msgstr ""
-"是时候创建一个新的动画了!当对话框出现时，按下新的动画按钮并将动画命名为"
-"`intro`。"
+"来创建一个新的动画吧！按下动画按钮，然后在菜单中选择新建。在对话框中输入动画"
+"名称 \"intro\"。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:40
 msgid ""
@@ -92,14 +91,13 @@ msgid "The logo will appear from the top of the screen."
 msgstr "标志将出现在屏幕的顶部。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:52
-#, fuzzy
 msgid ""
 "With the animation editor panel open, select the \"logo\" node and set the "
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
 "next to the property to add a keyframe:"
 msgstr ""
 "打开动画编辑器面板，选择`logo`节点，将`Rect / Position`属性设置为"
-"`(118，-400)`，按下属性旁边的按键:"
+"`(118，-400)`，之后按下属性旁边的钥匙按钮，以增加一个关键帧："
 
 #: ../../docs/getting_started/step_by_step/animations.rst:58
 msgid "When the dialog appears, confirm that you are creating a new track."
@@ -110,30 +108,28 @@ msgid "The keyframe will be added in the animation player editor:"
 msgstr "关键帧将添加到动画播放器编辑器:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:64
-#, fuzzy
 msgid "Move the editor cursor forward in time by clicking here:"
-msgstr "点击这里，将编辑器光标移到末尾:"
+msgstr "点击这里，将编辑器的光标移到末尾:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:68
-#, fuzzy
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes with different values, the animation happens."
 msgstr ""
-"将logo的位置改为·(118,0)·，并再次添加一个关键帧。有了两个关键帧，动画就发生"
-"了。"
+"将logo的位置改为``(118, 0)``，并再次添加一个关键帧。当两个关键帧的值不同时，"
+"动画就产生了。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:73
 msgid ""
 "Pressing \"Play selected animation from start. (Shift-D)\" on the animation "
 "panel will make the logo descend."
-msgstr "按下“从开始播放播放选定动画。(SHIFT-D)“动画面板将使标志下降。"
+msgstr "按下``从开始播放播放选定动画。(SHIFT-D)``动画面板将使标志下降。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:78
 msgid ""
 "Click the \"Autoplay on Load\" button to set the animation to start "
 "automatically when the scene starts."
-msgstr "点击“Autoplay on Load 自动加载”按钮，设置动画在场景开始时自动启动。"
+msgstr "点击``Autoplay on Load 自动加载``按钮，设置动画在场景开始时自动启动。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:83
 msgid ""

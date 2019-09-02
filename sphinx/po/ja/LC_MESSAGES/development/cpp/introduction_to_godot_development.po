@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:4
 msgid "Introduction to Godot development"
-msgstr ""
+msgstr "Godot開発入門"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:6
 msgid ""
@@ -27,10 +27,12 @@ msgid ""
 "source code, and give useful tips for extending/fixing the engine on the C++ "
 "side."
 msgstr ""
+"このページでは、Godotエンジンのソースコードのグローバルな構成を紹介し、C++側"
+"でエンジンを拡張/修正するための有用なヒントを提供します。"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:11
 msgid "Architecture diagram"
-msgstr ""
+msgstr "アーキテクチャ図"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:13
 msgid ""
@@ -38,10 +40,12 @@ msgid ""
 "core components down to the abstracted drivers, via the scene structure and "
 "the servers."
 msgstr ""
+"次の図は、Godotが使用するアーキテクチャを、コアコンポーネントから抽象化された"
+"ドライバーまで、シーン構造とサーバーを介して記述します。"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:20
 msgid "Debugging the editor with gdb"
-msgstr ""
+msgstr "「gdb」を使用したエディタのデバッグ"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:22
 msgid ""
@@ -52,7 +56,12 @@ msgid ""
 "e`` argument to Godot Engine's binary from within your project's folder. "
 "Typically:"
 msgstr ""
+"Godotエンジンのエディタに影響を与えるバグを記述したり修正したりする場合は、バ"
+"イナリはデフォルトでプロジェクトマネージャーを最初に実行し、プロジェクトを選"
+"択すると別のプロセスでのみエディターを実行することに注意してください。 プロ"
+"ジェクトを直接起動するには、プロジェクトのフォルダー内からGodot Engineのバイ"
+"ナリに `` -e`` 引数を渡してエディターを実行する必要があります。 通常:"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:35
 msgid "Or:"
-msgstr ""
+msgstr "または："

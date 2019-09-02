@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,7 +174,7 @@ msgstr "UI设计中最常见的5个控制节点"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
-msgstr "材质矩形"
+msgstr "纹理矩形"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:73
 msgid ""
@@ -186,51 +186,46 @@ msgstr ""
 "模式。设置拉伸模式属性来改变其行为:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
-#, fuzzy
 msgid ""
 "``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
 "`Scale On Expand (compat)`缩放纹理以适应节点的边框，仅当`Expand`属性为`true`;"
-"否则，它的行为就像`Keep`mode。向后兼容的默认模式。"
+"否则，它的行为就像`Keep`模式。默认向后兼容。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr "`Scale`缩放纹理以适应节点的边框。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
-#, fuzzy
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr "`Tile`使纹理重复，但它不会缩放"
+msgstr "``Tile``构造纹理副本，但它不会缩放。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
-#, fuzzy
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
-"`Keep`和`Keep Centered`迫使纹理保持其原始大小，分别在左上角或框架的中心"
+"``Keep``和``Keep Centered``迫使纹理保持其原始大小，分别在左上角或框架的中心。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
-#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
-"`Keep Aspect`和`Keep Aspect center`缩放纹理，但迫使它保持其原来的长宽比，分别"
-"在左上角或框架的中心"
+"``Keep Aspect`` 和``Keep Aspect Centered``缩放纹理，但迫使它保持其原来的长宽"
+"比，分别在左上角或框架的中心。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node's limits."
 msgstr ""
-"`Keep Aspect Covered`的工作方式就像`Keep Aspect Centered`一样，但较短的边符合"
-"矩形的边框，而另一边则与节点的限制相结合"
+"``Keep Aspect Covered``的工作方式就像``Keep Aspect Centered``一样，但较短的边"
+"才会匹配矩形的边框，而另一个边则剪切到节点范围。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
 msgid ""
@@ -430,7 +425,6 @@ msgid "How to change the anchor"
 msgstr "如何更换锚"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
-#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
@@ -440,9 +434,9 @@ msgid ""
 "a control node."
 msgstr ""
 "与任何属性一样，您可以在属性面板中编辑4个锚点，但这不是最方便的方法。当您选择"
-"控件节点时，布局菜单会出现在工具栏的视区上方。它为您提供了一个图标列表，通过"
-"单击就可以设置所有4个锚点，而不是使用属性面板的4个属性。布局菜单只会在选择控"
-"件节点时显示。"
+"控件节点时，布局菜单会出现在工具栏的视区上方。它为您提供了一个图标列表，在此"
+"通过单击就可以设置所有4个锚点，而不必在属性面板去设置4个属性。布局菜单只会在"
+"选择控件节点时显示。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "The layout menu in the viewport"
@@ -495,7 +489,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:238
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
-msgstr "将CenterContainer中的边距设置为“Full Rect”锚"
+msgstr "将CenterContainer中的边距设置为``Full Rect``锚"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:240
 msgid ""
@@ -525,11 +519,11 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
-"每个控件节点都有大小标志。它们告诉容器UI元素应该如何伸缩。如果将“填充”标志添"
-"加到水平或垂直属性中，节点的边界框将占用它能占用的所有空间，但它将尊重其兄弟"
-"节点并保留其大小。如果HBoxContainer中有3个textur节点，且两个轴上都有“填充”标"
-"志，那么它们将占用三分之一的可用空间，但仅此而已。容器将接管节点并自动调整其"
-"大小。"
+"每个控件节点都有大小标志。它们告诉容器UI元素应该如何伸缩。如果将``填充``标志"
+"添加到水平或垂直属性中，节点的边界框将占用它能占用的所有空间，但它将尊重其兄"
+"弟节点并保留其大小。如果HBoxContainer中有3个textur节点，且两个轴上都有``填充"
+"``标志，那么它们将占用三分之一的可用空间，但仅此而已。容器将接管节点并自动调"
+"整其大小。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:261
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
@@ -541,13 +535,13 @@ msgid ""
 "against its siblings. Its bounding rectangle will grow against the edges of "
 "its parent, or until it's blocked by another UI node."
 msgstr ""
-"“Expand(展开)”标志允许UI元素获得它所能获得的所有空间，并对其兄弟元素进行推"
+"``Expand(展开)``标志允许UI元素获得它所能获得的所有空间，并对其兄弟元素进行推"
 "送。它的边框会随着父节点的边缘增长，或者直到被另一个UI节点阻塞为止。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
-msgstr "与上面的示例相同，但是中心节点有“Expand(展开)”大小标志"
+msgstr "与上面的示例相同，但是中心节点有``Expand(展开)``大小标志"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:272
 msgid ""

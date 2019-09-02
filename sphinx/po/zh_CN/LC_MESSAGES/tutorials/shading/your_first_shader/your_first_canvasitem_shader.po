@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -254,6 +254,10 @@ msgid ""
 "that can be accessed in the shader using ``TEXTURE``. Use it together with "
 "``UV`` and ``texture`` to draw the Sprite."
 msgstr ""
+"默认的片段函数从纹理中读取并显示它。当你覆盖了默认的片段函数，你就失去了这个"
+"功能，所以你必须自己实现它。你使用“纹理”函数从纹理中读取。某些节点，比如精"
+"灵，有一个专用的纹理变量，可以在着色器中使用“纹理”访问。使用它与“UV”和“纹"
+"理”一起绘制精灵。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:142
 #, fuzzy
@@ -264,12 +268,12 @@ msgstr "制服"
 msgid ""
 "Uniform input is used to pass data into a shader that will be the same "
 "across the entire shader."
-msgstr ""
+msgstr "统一值输入用于将数据传递到整个着色器中相同的着色器中。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:146
 msgid ""
 "You can use uniforms by defining them at the top of your shader like so:"
-msgstr ""
+msgstr "你可以使用统一值定义他们在你的着色器顶部这样："
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:152
 #, fuzzy
@@ -281,7 +285,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:154
 msgid "Add a uniform to change the amount of blue in our Sprite."
-msgstr ""
+msgstr "添加一个统一值来改变精灵中蓝色的数量。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:165
 msgid ""
@@ -291,6 +295,9 @@ msgid ""
 "uniform you just declared. If you change the value in the editor, it will "
 "overwrite the default value you provided in the shader."
 msgstr ""
+"现在，您可以从编辑器中更改精灵中的蓝色数量。回顾一下创建着色器的属性面板。您"
+"可以看到一个名为“着色器参数”的部分。展开这个部分，你会看到你刚刚声明的统一"
+"值。如果在编辑器中更改该值，它将覆盖着色器中提供的默认值。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:171
 #, fuzzy
@@ -303,12 +310,16 @@ msgid ""
 "which is called on the node's material resource. With a Sprite node, the "
 "following code can be used to set the ``blue`` uniform."
 msgstr ""
+"可以使用函数“set_shader_param()”从代码中更改统一值，该函数在节点的材质资源上"
+"调用。使用精灵节点，以下代码可用于设置“蓝色”统一值。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:181
 msgid ""
 "Note that the name of the uniform is a string. The string must match exactly "
 "with how it is written in the shader, including spelling and case."
 msgstr ""
+"注意，统一值的名称是一个字符串。字符串必须与它在着色器中的书写方式完全匹配，"
+"包括拼写和大小写。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:185
 #, fuzzy
@@ -317,13 +328,13 @@ msgstr "顶点函数的颜色。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:187
 msgid "Now that we have a fragment function, let's write a vertex function."
-msgstr ""
+msgstr "现在我们有了一个片段函数，我们再写一个顶点函数。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:189
 msgid ""
 "Use the vertex function to calculate where on the screen each vertex should "
 "end up."
-msgstr ""
+msgstr "使用顶点函数计算屏幕上每个顶点的结束位置。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:191
 msgid ""
@@ -333,16 +344,19 @@ msgid ""
 "that is initially presented in local-space (i.e. not relative to the camera, "
 "viewport, or parent nodes)."
 msgstr ""
+"顶点函数中最重要的变量是顶点。最初，它指定模型中的顶点坐标，但你也要写进去决"
+"定在哪里画那些顶点。“顶点”是一个“二维向量”，它最初出现在局部空间中(即与摄像"
+"机、视图或父节点无关)。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:196
 msgid "You can offset the vertices by directly adding to ``VERTEX``."
-msgstr ""
+msgstr "您可以通过直接添加到“顶点”来偏移顶点。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:204
 msgid ""
 "Combined with the ``TIME`` built-in variable, this can be used for simple "
 "animation."
-msgstr ""
+msgstr "与内置变量“时间”相结合，可用于简单的动画。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:214
 msgid "Conclusion"

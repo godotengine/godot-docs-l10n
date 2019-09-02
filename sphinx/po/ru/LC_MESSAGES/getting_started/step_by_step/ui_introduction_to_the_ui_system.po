@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,11 +52,8 @@ msgstr ""
 "что вы узнаете:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
-msgstr ""
-"Какие пять узлов контроля наиболее рентабельные для использования в создании "
-"интерфейса своих игр"
+msgstr "Пять самых полезных узлов для проектирования интерфейса своих игр"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
@@ -124,7 +121,6 @@ msgid "Bounding rectangle"
 msgstr "Ограничительные рамки"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
-#, fuzzy
 msgid "Focus and focus neighbor"
 msgstr "Фокус и фокус соседей"
 
@@ -216,40 +212,35 @@ msgstr ""
 "Изменить режим растяжения можно с помощью свойства Stretch Mode:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
-#, fuzzy
 msgid ""
 "``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
-"\"Scale On Expand (compat)` масштабирует текстуру в соответствии с "
-"ограничивающим прямоугольником узла, только если свойство `expand` имеет "
-"значение `true`; в противном случае оно ведет себя как режим `Keep`. Режим "
-"по умолчанию для обратной совместимости."
+"``Scale On Expand (compat)`` масштабирует текстуру в соответствии с "
+"ограничивающим прямоугольником узла, только если свойство ``expand`` имеет "
+"значение ``true``; в противном случае оно ведет себя как в режиме ``Keep``. "
+"Режим по умолчанию для обратной совместимости."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
 "\"Scale\" масштабирует текстуру по размеру ограничивающего прямоугольника "
-"узла"
+"узла."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
-#, fuzzy
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr "``Tile`` повторяет текстуру, но не масштабируется"
+msgstr "``Tile`` повторяет текстуру, но не масштабирует. "
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
-#, fuzzy
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
 "\"Keep` и\" Keep Centered \" заставляют текстуру оставаться в исходном "
-"размере, в левом верхнем углу или в центре кадра соответственно"
+"размере, в левом верхнем углу, или в центре кадра, соответственно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
-#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
@@ -257,10 +248,9 @@ msgid ""
 msgstr ""
 "\"Keep Aspect\" и \"Keep Aspect Centered\" масштабируют текстуру, но "
 "заставляют ее сохранять исходное соотношение сторон в левом верхнем углу или "
-"в центре кадра соответственно"
+"в центре кадра."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
@@ -268,10 +258,9 @@ msgid ""
 msgstr ""
 "``Keep Aspect Covered`` работает так же, как ``Keep Aspect Centered``, но "
 "более короткая сторона совпадает с ограничивающим прямоугольником, а другая "
-"отсекается границами узла"
+"отсекается границами узла."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
-#, fuzzy
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
@@ -442,7 +431,6 @@ msgstr ""
 "разместить и изменить размер элемента внутри его родителя."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
-#, fuzzy
 msgid ""
 "The two approaches are not always compatible. Because a container controls "
 "its children, you cannot use the layout menu on them. Each container has a "
@@ -453,7 +441,7 @@ msgid ""
 "grid, etc."
 msgstr ""
 "Эти два подхода не всегда совместимы. Потому что контейнер управляет своими "
-"потомками, вы не можете использовать макет меню на них. Каждый контейнер "
+"потомками. Вы не можете использовать макет меню на них. Каждый контейнер "
 "имеет специфичный эффект, так что вам потребуется вложить их несколько, "
 "чтобы получить работающий интерфейс. С подходом макета вы работает снизу "
 "вверх, на потомков. Если вы не добавляете дополнительные контейнеры в сцену, "
@@ -492,7 +480,6 @@ msgid "How to change the anchor"
 msgstr "Как изменять якорь"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
-#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
@@ -643,7 +630,6 @@ msgid "Arrange control nodes automatically with containers"
 msgstr "Автоматическая организация управляющих узлов с контейнерами"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:278
-#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
@@ -654,7 +640,7 @@ msgstr ""
 "заключая другие контейнеры в строки, столбцы и прочее. Используйте их, чтобы "
 "добавить отступы вокруг вашего интерфейса или центральных узлов в их "
 "ограничивающих прямоугольниках. Все встроенные контейнеры обновятся в "
-"редакторе, так что увидите эффект мгновенно."
+"редакторе так, что вы увидите эффект мгновенно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:284
 msgid ""
@@ -685,7 +671,6 @@ msgstr ""
 "интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
-#, fuzzy
 msgid "CenterContainer, to center its children in its bounding box"
 msgstr "CenterContainer, центрирует своих детей в ограниченных рамках"
 
@@ -745,7 +730,6 @@ msgstr ""
 "пользовательского интерфейса(GUI)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:322
-#, fuzzy
 msgid ""
 "There are two BoxContainers: VBoxContainer and HBoxContainer. You cannot add "
 "the BoxContainer node itself, as it is a helper class, but you can use "
@@ -808,7 +792,6 @@ msgid "A GridContainer with 2 columns. It sizes each column automatically."
 msgstr "GridContainer с 2 колонками. Он вычисляет их размер автоматически."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:353
-#, fuzzy
 msgid ""
 "Godot's UI system is complex, and has a lot more to offer. To learn how to "
 "design more advanced interfaces, head to the :ref:`GUI section <toc-learn-"

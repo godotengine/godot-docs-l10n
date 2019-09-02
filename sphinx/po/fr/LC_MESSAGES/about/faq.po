@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,13 +222,13 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
-"Il est important de noter que le support du langage C# est récent, et que "
-"par conséquent, il est possible de rencontrer des bugs. Notre communauté "
-"accueillante et laborieuse est toujours prête à aborder les problèmes qui se "
-"présentent, mais comme il s'agit d'un projet open source, nous vous "
-"recommandons de faire d'abord les vérifications nécessaires par vous même. "
-"Une bonne manière de résoudre les problèmes consiste à chercher parmi les "
-"`problèmes connus <https://github.com/godotengine/godot/issues>`."
+"Notez que le support du langage C# est récent et que, par conséquent, il est "
+"possible de rencontrer des bugs. Notre communauté active et bienveillante "
+"est toujours prête à s'attaquer aux problèmes qui se présentent, mais comme "
+"il s'agit d'un projet open source, nous vous recommandons de faire les "
+"vérifications nécessaires par vous même. Chercher parmi les `problèmes "
+"connus <https://github.com/godotengine/godot/issues>`est un très bon moyen "
+"d'arriver à vous dépanner."
 
 #: ../../docs/about/faq.rst:82
 msgid ""
@@ -275,10 +275,10 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
-"L'utilisation de GDScript présente de nombreux avantages — notamment pour le "
-"prototypage, dans les phase alpha ou bêta de votre projet, particulièrement "
-"si celui-ci n'a pas vocation à être le prochain blockbuster — mais l'atout "
-"le plus remarquable est la **réduction de la complexité** générale."
+"L'utilisation de GDScript présente de nombreux avantages lors du prototypage "
+"dans les phase alpha ou bêta de votre projet ou dans le cas où vous ne créez "
+"pas le prochain blockbuster, mais l'avantage le plus évident est la "
+"**réduction de la complexité** générale."
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -477,8 +477,8 @@ msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
-"Pour voir comment la prise en charge de votre kit de développement préféré "
-"pourrait encore être fourni, regardez la question des plugins ci-dessus."
+"Pour voir comment votre SDK préféré pourrait être supporté, jetez un œil à "
+"la question des plugins ci-dessous."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -555,8 +555,8 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Utilisez les options d'étirement dans Godot, l'étirement 2D conservant "
-"l'aspect originel fonctionne le mieux. Consultez le tutoriel :ref:"
+"Utilisez les options d'étirement dans Godot ; l'étirement 2D avec maintien "
+"de l'aspect fonctionne le mieux. Consultez le tutoriel :ref:"
 "`doc_multiple_resolutions` sur la façon d'y parvenir."
 
 #: ../../docs/about/faq.rst:205
@@ -778,19 +778,124 @@ msgstr ""
 "Point bonus si vous ajoutez des captures d'écran, des chiffres concrets, des "
 "cas de test ou des exemples de projets le cas échéant."
 
-#: ../../docs/about/faq.rst:285
+#: ../../docs/about/faq.rst:286
+msgid "Why does Godot not use STL (Standard Template Library)"
+msgstr ""
+
+#: ../../docs/about/faq.rst:288
+msgid ""
+"Like many other libraries (Qt as an example), Godot does not make use of "
+"STL. We believe STL is a great general purpose library, but we had special "
+"requirements for Godot."
+msgstr ""
+
+#: ../../docs/about/faq.rst:292
+msgid ""
+"STL templates create very large symbols, which results in huge debug "
+"binaries. We use few templates with very short names instead."
+msgstr ""
+
+#: ../../docs/about/faq.rst:293
+msgid ""
+"Most of our containers cater to special needs, like Vector, which uses copy "
+"on write and we use to pass data around, or the RID system, which requires "
+"O(1) access time for performance. Likewise, our hash map implementations are "
+"designed to integrate seamlessly with internal engine types."
+msgstr ""
+
+#: ../../docs/about/faq.rst:294
+msgid ""
+"Our containers have memory tracking built-in, which helps better track "
+"memory usage."
+msgstr ""
+
+#: ../../docs/about/faq.rst:295
+msgid ""
+"For large arrays, we use pooled memory, which can be mapped to either a "
+"preallocated buffer or virtual memory."
+msgstr ""
+
+#: ../../docs/about/faq.rst:296
+msgid ""
+"We use our custom String type, as the one provided by STL is too basic and "
+"lacks proper internationalization support."
+msgstr ""
+
+#: ../../docs/about/faq.rst:299
+msgid "Why does Godot not use exceptions?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:301
+msgid ""
+"We believe games should not crash, no matter what. If an unexpected "
+"situation happens, Godot will print an error (which can be traced even to "
+"script), but then it will try to recover as gracefully as possible and keep "
+"going."
+msgstr ""
+
+#: ../../docs/about/faq.rst:306
+msgid ""
+"Additionally, exceptions significantly increase binary size for the "
+"executable."
+msgstr ""
+
+#: ../../docs/about/faq.rst:310
+msgid "Why does Godot not enforce RTTI?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:312
+msgid ""
+"Godot provides its own type-casting system, which can optionally use RTTI "
+"internally. Disabling RTTI in Godot means considerably smaller binary sizes "
+"can be achieved, at a little performance cost."
+msgstr ""
+
+#: ../../docs/about/faq.rst:317
+msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:319
+msgid ""
+"While Godot internally for a lot of the heavy performance tasks attempts to "
+"use cache coherency as best as possible, we believe most users don't really "
+"need to be forced to use DoD practices."
+msgstr ""
+
+#: ../../docs/about/faq.rst:323
+msgid ""
+"DoD is mostly a cache coherency optimization that can only gain you "
+"significant performance improvements when dealing with dozens of thousands "
+"of objects (which are processed every frame with little modification). As "
+"in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
+"help you, and you should consider a different approach to optimization."
+msgstr ""
+
+#: ../../docs/about/faq.rst:330
+msgid ""
+"The vast majority of games do not need this and Godot provides handy helpers "
+"to do the job for most cases when you do."
+msgstr ""
+
+#: ../../docs/about/faq.rst:333
+msgid ""
+"If a game that really needs to process such large amount of objects is "
+"needed, our recommendation is to use C++ and GDNative for the high "
+"performance parts and GDScript (or C#) for the rest of the game."
+msgstr ""
+
+#: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
 msgstr "Comment puis-je soutenir le développement de Godot ou y contribuer ?"
 
-#: ../../docs/about/faq.rst:287
+#: ../../docs/about/faq.rst:340
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr "Voir :ref:`doc_ways_to_contribute`."
 
-#: ../../docs/about/faq.rst:290
+#: ../../docs/about/faq.rst:343
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Qui travaille sur Godot ? Comment puis-je vous contacter ?"
 
-#: ../../docs/about/faq.rst:292
+#: ../../docs/about/faq.rst:345
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,28 +149,60 @@ msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
-msgid "Release: Enter the path to the keystore file you just generated."
+msgid "**Release:** Enter the path to the keystore file you just generated."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
-msgid "Release User: Replace with the key alias."
+msgid "**Release User:** Replace with the key alias."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 msgid ""
-"Release Password: Key password. Note that the keystore password and the key "
-"password currently have to be the same."
+"**Release Password:** Key password. Note that the keystore password and the "
+"key password currently have to be the same."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
 msgid ""
-"**Now your export_presets.cfg file contains sensitive info;** if using a "
-"Version Control System, it is a good idea to remove it from public "
-"repositories."
+"**Your export_presets.cfg file now contains sensitive information.** If you "
+"use a version control system, you should remove it from public repositories "
+"and add it to your ``.gitignore`` file or equivalent."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
 msgid ""
-"Don't forget to disable the ``Export With Debug`` button while choosing the "
-"APK's name."
+"Don't forget to uncheck the **Export With Debug** checkbox while choosing "
+"the APK's name."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:93
+msgid "Optimizing the APK size"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95
+msgid ""
+"By default, the APK will contain native libraries for both ARMv7 and ARMv8 "
+"architectures. This increases its size significantly. To create a smaller "
+"APK, uncheck either **Armeabi-v 7a** or **Arm 64 -v 8a** in your project's "
+"Android export preset. This will create an APK that only contains a library "
+"for a single architecture. Note that applications targeting ARMv7 can also "
+"run on ARMv8 devices, but the opposite is not true."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
+msgid ""
+"Since August 2019, Google Play requires all applications to be available in "
+"64-bit form. This means you cannot upload an APK that contains *just* an "
+"ARMv7 library. To solve this, you can upload several APKs to Google Play "
+"using its `Multiple APK support <https://developer.android.com/google/play/"
+"publishing/multiple-apks>`__. Each APK should target a single architecture; "
+"creating an APK for ARMv7 and ARMv8 is usually sufficient to cover most "
+"devices in use today."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:109
+msgid ""
+"You can optimize the size further by compiling an Android export template "
+"with only the features you need. See :ref:`doc_optimizing_for_size` for more "
+"information."
 msgstr ""

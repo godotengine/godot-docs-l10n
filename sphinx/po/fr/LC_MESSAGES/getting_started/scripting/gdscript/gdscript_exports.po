@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
+#, fuzzy
+msgid "GDScript exports"
+msgstr "Type GDScript"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
+#, fuzzy
+msgid "Introduction to exports"
+msgstr "Introduction à la 3D"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
+#, fuzzy
+msgid ""
+"In Godot, class members can be exported. This means their value gets saved "
+"along with the resource (such as the :ref:`scene <class_PackedScene>`) "
+"they're attached to. They will also be available for editing in the property "
+"editor. Exporting is done by using the ``export`` keyword::"
+msgstr ""
+"Les membres de classe peuvent être exportés. Cela signifie que leur valeur "
+"est sauvegardée avec la ressource (par exemple la :ref:`scène "
+"<class_PackedScene>`) à laquelle ils sont attachés. Ils seront également "
+"disponibles pour l'édition dans l'éditeur de propriétés. L'exportation se "
+"fait en utilisant le mot clé ``export`` :"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
+#, fuzzy
+msgid ""
+"An exported variable must be initialized to a constant expression or have an "
+"export hint in the form of an argument to the ``export`` keyword (see the "
+"*Examples* section below)."
+msgstr ""
+"Une variable exportée doit être initialisée à une expression constante ou "
+"avoir une indication d'exportation sous la forme d'un argument au mot-clé "
+"d'exportation (voir ci-dessous)."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
+msgid ""
+"One of the fundamental benefits of exporting member variables is to have "
+"them visible and editable in the editor. This way, artists and game "
+"designers can modify values that later influence how the program runs. For "
+"this, a special export syntax is provided."
+msgstr ""
+"L'un des avantages fondamentaux de l'exportation des variables membres est "
+"de les rendre visibles et modifiables dans l'éditeur. De cette façon, les "
+"artistes et les game designers peuvent modifier les valeurs qui "
+"influenceront plus tard le fonctionnement du programme. Pour cela, une "
+"syntaxe spéciale d'exportation est fournie."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:29
+msgid ""
+"Exporting properties can also be done in other languages such as C#. The "
+"syntax varies depending on the language."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
+msgid "Examples"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
+#, fuzzy
+msgid ""
+"It must be noted that even if the script is not being run while in the "
+"editor, the exported properties are still editable. This can be used in "
+"conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
+msgstr ""
+"Il faut noter que même si le script n'est pas exécuté alors qu'il est en "
+"cours d'édition, les propriétés exportées sont toujours modifiables (voir ci-"
+"dessous pour \"outil\")."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
+msgid "Exporting bit flags"
+msgstr "Exportation des indicateurs binaires"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
+#, fuzzy
+msgid ""
+"Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
+"values in one property. By using the export hint ``int, FLAGS``, they can be "
+"set from the editor::"
+msgstr ""
+"Les nombres entiers utilisés comme bits de drapeaux peuvent stocker "
+"plusieurs valeurs ``vrai``/``false`` (booléen) en une propriété. En "
+"utilisant l'indication d'exportation ``int, FLAGS``, ils peuvent être "
+"changés dans l'éditeur :"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
+#, fuzzy
+msgid ""
+"Restricting the flags to a certain number of named flags is also possible. "
+"The syntax is similar to the enumeration syntax::"
+msgstr ""
+"Limiter les drapeaux à un certain nombre de drapeaux nommés est également "
+"possible. La syntaxe est très similaire à la syntaxe d'énumération :"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:139
+msgid ""
+"In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
+"value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
+"defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
+msgstr ""
+"Dans cet exemple, ``Feu`` a la valeur 1, ``Eau`` a la valeur 2, ``Terre`` a "
+"la valeur 4 et ``Vent`` correspond à la valeur 8. Généralement, les "
+"constantes doivent être définies en conséquence (p. ex. ``const ELEMENT_VENT "
+"= 8`` et ainsi de suite)."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:144
+msgid ""
+"Using bit flags requires some understanding of bitwise operations. If in "
+"doubt, boolean variables should be exported instead."
+msgstr ""
+"L'utilisation de drapeaux de bits nécessite une certaine compréhension des "
+"opérations sur les bits. En cas de doute, les variables booléennes doivent "
+"être exportées à la place."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:148
+msgid "Exporting arrays"
+msgstr "Exportation de tableaux"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+#, fuzzy
+msgid ""
+"Exporting arrays works, but with an important caveat: while regular arrays "
+"are created local to every class instance, exported arrays are *shared* "
+"between all instances. This means that editing them in one instance will "
+"cause them to change in all other instances. Exported arrays can have "
+"initializers, but they must be constant expressions."
+msgstr ""
+"L'exportation des tableaux fonctionne mais avec une mise en garde "
+"importante : alors que les tableaux réguliers sont créés en local pour "
+"chaque instance de classe, les tableaux exportés sont *partagés* entre "
+"toutes les instances. Cela signifie que le fait de les éditer dans une "
+"instance les fera changer dans toutes les autres instances. Les tableaux "
+"exportés peuvent avoir des initialisateurs, mais ceux-ci doivent être des "
+"expressions constantes."

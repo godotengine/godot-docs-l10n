@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -268,23 +268,16 @@ msgstr ""
 "录。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
+#, fuzzy
 msgid ""
-"You can also configure it to export only the PCK or ZIP file (allowing a "
-"single export to be used with multiple Godot executables). This takes place "
-"if:"
+"You can also configure it to export only the PCK or ZIP file, allowing a "
+"single export to be used with multiple Godot executables. This takes place "
+"if the target name ends with ``.pck`` or ``.zip``."
 msgstr ""
 "您也可以将其配置为仅导出.pck或.zip文件(允许将单个导出与多个 Godot 可执行文件"
 "一起使用)。 这发生在以下情况下:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
-msgid "the export preset is not marked as runnable,"
-msgstr "导出预设未标记为可执行的"
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:157
-msgid "the target name ends with ``.pck`` or ``.zip``."
-msgstr "目标名称以 ``.pck`` 或 ``.zip``结尾。"
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:159
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"

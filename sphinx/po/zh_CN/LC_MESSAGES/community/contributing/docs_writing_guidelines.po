@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 21:34+0200\n"
+"POT-Creation-Date: 2019-09-02 11:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,7 @@ msgstr "如果它有用，请提及返回哪些方法"
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:27
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:332
 msgid "Use \"if true\" to describe booleans"
-msgstr "使用“if true”来描述布尔值"
+msgstr "使用``if true``来描述布尔值"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:31
 msgid ""
@@ -154,14 +154,14 @@ msgid ""
 "**Do** explain what's the consequence of this \"set\": use precise verbs "
 "like ``place``, ``position``, ``rotate``, ``fade``, etc."
 msgstr ""
-"**请** 解释这个“集合”的后果是什么:使用精确的动词，如 ``place`` ，"
+"**请** 解释这个``集合``的后果是什么:使用精确的动词，如 ``place`` ，"
 "``position``， ``rotate`` ，``fade``等。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:98
 msgid ""
 "The progressive forms describe continuous actions. E.g. \"is calling\", \"is "
 "moving\"."
-msgstr "渐进形式描述了连续行动。 例如。 “正在呼唤”，“正在移动”。"
+msgstr "渐进形式描述了连续行动。 例如。 ``正在呼唤``，``正在移动``。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:101
 msgid "**Don't** use the progressive form for instant changes."
@@ -276,9 +276,9 @@ msgid ""
 "cringe. Here's the old brief description, the first sentence on the Timer "
 "node's page:"
 msgstr ""
-"“简单”永远不会有帮助。 请记住，对于其他用户来说，任何事情都可能很复杂或令人沮"
-"丧。 没有什么比这更好的了 *它很简单* 让您畏缩。 这是旧的简要说明，即Timer节点"
-"页面上的第一句话:"
+"``简单``永远不会有帮助。 请记住，对于其他用户来说，任何事情都可能很复杂或令人"
+"沮丧。 没有什么比这更好的了 *它很简单* 让您畏缩。 这是旧的简要说明，即Timer节"
+"点页面上的第一句话:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:188
 msgid "**Do** explain what the node does instead:"
@@ -286,7 +286,7 @@ msgstr "**请** 解释节点的作用:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:195
 msgid "**Don't** use \"basic\", it is too vague:"
-msgstr "**不要** 使用“basic”，它太模糊了:"
+msgstr "**不要** 使用``basic``，它太模糊了:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:202
 msgid "**Do** use the brief description to offer an overview of the node:"
@@ -301,8 +301,8 @@ msgid ""
 "**Don't** use words like \"the former\", \"the latter\", etc. They're not "
 "the most common in English, and they require you to check the reference."
 msgstr ""
-"**不要** 使用“前者”，“后者”等词语。它们不是英语中最常见的词语，它们要求您查看"
-"参考文献。"
+"**不要** 使用``前者``，``后者``等词语。它们不是英语中最常见的词语，它们要求您"
+"查看参考文献。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:221
 msgid "**Do** repeat words. They remove all ambiguity:"
@@ -324,7 +324,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:236
 msgid "**Don't** write \"of the X\":"
-msgstr "**不要**写“X”:"
+msgstr "**不要**写``X``:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:242
 msgid ""
@@ -345,8 +345,8 @@ msgid ""
 "The 'Oxford comma' is an optional comma before the word 'and' at the end of "
 "a list: *We sell books, videos, and magazines.*"
 msgstr ""
-"“牛津逗号”是列表末尾“和”之前的可选逗号:*We sell books, videos, and magazines."
-"*"
+"``牛津逗号``是列表末尾``和``之前的可选逗号:*We sell books, videos, and "
+"magazines.*"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:257
 msgid ""
@@ -380,7 +380,7 @@ msgstr "简要说明是参考文献中最重要的一句话。 这是用户与�
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:283
 msgid "It's the only description in the \"Create New Node\" dialog."
-msgstr "这是“创建新节点”对话框中的唯一描述。"
+msgstr "这是``创建新节点``对话框中的唯一描述。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:284
 msgid "It's at the top of every page in the reference"
@@ -425,8 +425,8 @@ msgid ""
 "external collider can influence the method and the body that calls ``move``. "
 "In this case, you can use the passive voice."
 msgstr ""
-"注意“陈述句”规则的例外:使用移动方法，外部对撞机可以影响调用“移动”的方法和主"
-"体。 在这种情况下，您可以使用被动语态。"
+"注意``陈述句``规则的例外:使用移动方法，外部对撞机可以影响调用``移动``的方法和"
+"主体。 在这种情况下，您可以使用被动语态。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:334
 msgid ""
@@ -445,7 +445,7 @@ msgstr "也包括布尔值，变量名和带有“[code][/code]”的方法。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:340
 msgid "**Do** start with \"if true\":"
-msgstr "**请以“if true”开头**:"
+msgstr "**请以``if true``开头**:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:349
 #, fuzzy
@@ -489,9 +489,9 @@ msgid ""
 "the 2D or the 3D space, is the ``viewport``. At its top, you find a list of "
 "``tools`` inside the ``toolbar``."
 msgstr ""
-"在编辑器的左上角是“主菜单”。 在中心，按钮改变了“工作区”。 右上角的按钮"
-"是“playtest buttons”。 显示2D或3D空间的中心区域是“viewport”。 在它的顶部，您"
-"会在 ``toolbar`` 中找到一个 ``tools`` 列表。"
+"在编辑器的左上角是``主菜单``。 在中心，按钮改变了``工作区``。 右上角的按钮是"
+"``playtest buttons``。 显示2D或3D空间的中心区域是``viewport``。 在它的顶部，"
+"您会在 ``toolbar`` 中找到一个 ``tools`` 列表。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:373
 msgid ""
@@ -501,7 +501,7 @@ msgid ""
 "``Inspector dock``. With the default layout you may call the tabbed docks "
 "``tabs``: the ``Scene tab``, the ``Node tab``..."
 msgstr ""
-"视区两侧的标签或可停靠面板是“docks”。 您有``FileSystem dock``，``Scene "
+"视区两侧的标签或可停靠面板是``docks``。 您有``FileSystem dock``，``Scene "
 "dock``，它包含您的场景树，``Import dock``，``node dock``，以及 ``Inspector`` "
 "或``Inspectordock``。 使用默认布局，您可以调用选项卡式底座``tabs``:``Scene "
 "tab``，``Node tab`` ..."
@@ -510,7 +510,7 @@ msgstr ""
 msgid ""
 "The Animation, Debugger, etc. at the bottom of the viewport are ``panels``. "
 "Together they make up the ``bottom panels``."
-msgstr "视区底部的动画，调试器等是“面板”。 他们一起构成了“底板”。"
+msgstr "视区底部的动画，调试器等是``面板``。 他们一起构成了``底板``。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:382
 msgid ""
@@ -519,9 +519,9 @@ msgid ""
 "class``. And individual lines with key-value pairs are ``properties``. E.g. "
 "``position`` or ``modulate color`` are both ``properties``."
 msgstr ""
-"属性面板的可折叠区域是“部分”。 您无法折叠的节点的父类名称是“类”，例如 "
-"``KinematicBody2D class``。 具有键值对的单独行是“属性”。 例如。 ``position``"
-"或``modulate color``都是``properties``。"
+"属性面板的可折叠区域是``部分``。 您无法折叠的节点的父类名称是``类``，例如 "
+"``KinematicBody2D class``。 具有键值对的单独行是``属性``。 例如。 "
+"``position``或``modulate color``都是``properties``。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:389
 msgid "Image contribution guidelines"
