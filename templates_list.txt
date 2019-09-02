@@ -32,6 +32,7 @@ getting_started/scripting/index.pot
 getting_started/scripting/gdscript/index.pot
 getting_started/scripting/gdscript/gdscript_basics.pot
 getting_started/scripting/gdscript/gdscript_advanced.pot
+getting_started/scripting/gdscript/gdscript_exports.pot
 getting_started/scripting/gdscript/gdscript_styleguide.pot
 getting_started/scripting/gdscript/static_typing.pot
 getting_started/scripting/gdscript/gdscript_format_string.pot
@@ -124,6 +125,7 @@ tutorials/audio/sync_with_audio.pot
 tutorials/physics/index.pot
 tutorials/physics/physics_introduction.pot
 tutorials/physics/rigid_body.pot
+tutorials/physics/using_area_2d.pot
 tutorials/physics/using_kinematic_body_2d.pot
 tutorials/physics/ray-casting.pot
 tutorials/physics/ragdoll_system.pot
@@ -187,6 +189,7 @@ tutorials/networking/high_level_multiplayer.pot
 tutorials/networking/http_request_class.pot
 tutorials/networking/http_client_class.pot
 tutorials/networking/ssl_certificates.pot
+tutorials/networking/websocket.pot
 tutorials/networking/webrtc.pot
 tutorials/assetlib/index.pot
 tutorials/assetlib/what_is_assetlib.pot
@@ -202,6 +205,7 @@ tutorials/plugins/editor/making_main_screen_plugins.pot
 tutorials/plugins/editor/import_plugins.pot
 tutorials/plugins/editor/spatial_gizmos.pot
 tutorials/plugins/editor/inspector_plugins.pot
+tutorials/plugins/editor/visual_shader_plugins.pot
 tutorials/plugins/gdnative/index.pot
 tutorials/plugins/gdnative/gdnative-c-example.pot
 tutorials/plugins/gdnative/gdnative-cpp-example.pot
@@ -216,7 +220,11 @@ tutorials/threads/index.pot
 tutorials/threads/using_multiple_threads.pot
 tutorials/threads/thread_safe_apis.pot
 tutorials/content/index.pot
-tutorials/content/procedural_geometry.pot
+tutorials/content/procedural_geometry/index.pot
+tutorials/content/procedural_geometry/arraymesh.pot
+tutorials/content/procedural_geometry/meshdatatool.pot
+tutorials/content/procedural_geometry/surfacetool.pot
+tutorials/content/procedural_geometry/immediategeometry.pot
 tutorials/content/making_trees.pot
 tutorials/optimization/index.pot
 tutorials/optimization/using_servers.pot
@@ -260,6 +268,9 @@ development/cpp/binding_to_external_libraries.pot
 development/cpp/custom_resource_format_loaders.pot
 development/cpp/custom_audiostreams.pot
 development/cpp/custom_godot_servers.pot
+development/editor/index.pot
+development/editor/introduction.pot
+development/editor/creating_icons.pot
 development/file_formats/index.pot
 development/file_formats/tscn.pot
 community/contributing/index.pot
