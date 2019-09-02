@@ -22,14 +22,15 @@
 # Reimer Chamale <rchamale10@gmail.com>, 2019.
 # Ricardo Illescas <riktothepast@gmail.com>, 2018.
 # Serg InputOutput <serg.inputoutput@gmail.com>, 2019.
+# tan(x) <thannia.rz@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-29 21:34+0200\n"
-"PO-Revision-Date: 2019-07-17 07:19+0000\n"
-"Last-Translator: Carlos Miranda <carlosandrmiranda@gmail.com>\n"
+"PO-Revision-Date: 2019-09-01 08:27+0000\n"
+"Last-Translator: tan(x) <thannia.rz@gmail.com>\n"
 "Language-Team: Spanish (Mexico) <https://hosted.weblate.org/projects/godot-"
 "engine/godot-docs/es_MX/>\n"
 "Language: es_MX\n"
@@ -37,7 +38,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -1383,12 +1384,11 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:156
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr ""
+msgstr "Sombreado"
 
 #: ../../docs/about/docs_changelog.rst:50
-#, fuzzy
 msgid "Your First Shader Series:"
-msgstr "Tu primer juego"
+msgstr "Tu primera serie de sombreadores:"
 
 #: ../../docs/about/docs_changelog.rst:52
 #, fuzzy
@@ -1424,7 +1424,7 @@ msgstr "Referencia :ref:`Exportando <doc_exporting>`"
 #: ../../docs/about/docs_changelog.rst:176
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #: ../../docs/about/docs_changelog.rst:65
 #, fuzzy
@@ -1440,7 +1440,7 @@ msgstr "Android"
 #: ../../docs/about/docs_changelog.rst:187
 #: ../../docs/tutorials/threads/index.rst:2
 msgid "Multi-threading"
-msgstr ""
+msgstr "Multihilo"
 
 #: ../../docs/about/docs_changelog.rst:71
 #, fuzzy
@@ -1461,9 +1461,8 @@ msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/about/docs_changelog.rst:79
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "Notificaciones"
+msgstr "Mejoramiento o optimizacion"
 
 #: ../../docs/about/docs_changelog.rst:81
 #, fuzzy
@@ -1597,7 +1596,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:133
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "Físicas"
 
 #: ../../docs/about/docs_changelog.rst:135
 msgid ":ref:`doc_ragdoll_system`"
@@ -1612,7 +1611,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/index.rst:2
 #: ../../docs/development/file_formats/tscn.rst:375
 msgid "Animation"
-msgstr ""
+msgstr "Animación"
 
 #: ../../docs/about/docs_changelog.rst:141
 msgid ":ref:`doc_2d_skeletons`"
@@ -1625,7 +1624,7 @@ msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/about/docs_changelog.rst:145 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
-msgstr ""
+msgstr "GUI (interfaz gráfica del usuario)"
 
 #: ../../docs/about/docs_changelog.rst:147
 #, fuzzy
@@ -1636,7 +1635,7 @@ msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr ""
+msgstr "Vista de puertos"
 
 #: ../../docs/about/docs_changelog.rst:152
 msgid ":ref:`doc_viewport_as_texture`"
@@ -1660,7 +1659,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:162
 msgid "Shading Reference:"
-msgstr ""
+msgstr "Referencia de sombreado:"
 
 #: ../../docs/about/docs_changelog.rst:164
 #, fuzzy
@@ -1687,7 +1686,7 @@ msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/about/docs_changelog.rst:171 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr ""
+msgstr "VR (Realidad Virtual (RV))"
 
 #: ../../docs/about/docs_changelog.rst:173
 msgid ":ref:`doc_vr_starter_tutorial`"
@@ -1705,7 +1704,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:182
 #: ../../docs/tutorials/platform/index.rst:2
 msgid "Platform-specific"
-msgstr ""
+msgstr "Plataforma específica"
 
 #: ../../docs/about/docs_changelog.rst:184
 msgid ":ref:`doc_customizing_html5_shell`"
@@ -1750,7 +1749,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 #: ../../docs/development/compiling/compiling_for_uwp.rst:24
 msgid "Compiling"
-msgstr ""
+msgstr "Compilando"
 
 #: ../../docs/about/docs_changelog.rst:207
 msgid ":ref:`doc_optimizing_for_size`"
@@ -4164,7 +4163,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:115
 msgid "Connecting signals in code"
-msgstr "Conexión de señales en código"
+msgstr "Conectando señales en el código"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:117
 msgid ""
@@ -4172,7 +4171,7 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
-"También puede hacer la conexión de señal en código en lugar de con el "
+"También puedes hacer la conexión de señal en código en lugar de con el "
 "editor. Esto suele ser necesario cuando instales nodos a través de un código "
 "y, por lo tanto, no puedes usar el editor para establecer la conexión."
 
@@ -4230,7 +4229,7 @@ msgstr ""
 "Muchos de los tipos de nodos incorporados de Godot proporcionan señales que "
 "puede utilizar para detectar eventos. Por ejemplo, una :ref:`Area2D "
 "<class_Area2D>` que representa una moneda emite una señal ``body_entered`` "
-"cada vez que el cuerpo físico del jugador ingresa en su forma de colisión, "
+"cada vez que el cuerpo físico del jugador ingresa en su forma de colisión; "
 "lo que le permite saber cuándo lo recogió el jugador."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
@@ -4251,7 +4250,7 @@ msgstr "Tu primer juego"
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:10
 msgid "Overview"
-msgstr "Visión de conjunto"
+msgstr "Resumen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:9
 msgid ""
@@ -74759,9 +74758,8 @@ msgid "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`__"
 msgstr ""
 
 #: ../../docs/community/tutorials.rst:36
-#, fuzzy
 msgid "Text tutorials"
-msgstr "Tutoriales"
+msgstr "Tutoriales Escritos"
 
 #: ../../docs/community/tutorials.rst:38
 msgid "`Godot Recipes by KidsCanCode <http://godotrecipes.com/>`__"
@@ -74780,12 +74778,16 @@ msgid ""
 "`Andrea Catania (Physics & AI) <https://www.youtube.com/channel/"
 "UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 msgstr ""
+"`Andrea Catania (Fisica e Inteligencia Artificial) <https://www.youtube.com/"
+"channel/UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 
 #: ../../docs/community/tutorials.rst:45
 msgid ""
 "`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
 "vJC011lYw/videos>`_"
 msgstr ""
+"`Bastiaan Olij (Realidad Aumenatada y Realidad virtual) <https://www.youtube."
+"com/channel/UCrbLJYzJjDf2p-vJC011lYw/videos>`_"
 
 #: ../../docs/community/tutorials.rst:50
 msgid ""

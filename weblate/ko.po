@@ -11,6 +11,7 @@
 # geun-tak Jeong <beroberos@gmail.com>, 2018.
 # Hyun Cho (C.H) <uncaose@gmail.com>, 2018.
 # Jesse Y. Cho <jesse.cho@protonmail.ch>, 2018.
+# Junho Jang <mibe.jjh@gmail.com>, 2019.
 # Kuiprux <kuiprux@gmail.com>, 2018.
 # LeeJiWon <minie0324@naver.com>, 2018.
 # leesang0612 <onessidotti@gmail.com>, 2018.
@@ -33,8 +34,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-29 21:34+0200\n"
-"PO-Revision-Date: 2019-07-22 21:07+0000\n"
-"Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
+"PO-Revision-Date: 2019-09-01 08:26+0000\n"
+"Last-Translator: moolow <copyhyeon@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
 "Language: ko\n"
@@ -42,11 +43,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
-msgstr "Godot 문서 – *master* 분기"
+msgstr "Godot 문서 – *master* 브랜치"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -3109,7 +3110,7 @@ msgstr "시그널을 통해 UI 요소들을 연결함."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:98
 msgid "Writing a script that can access other nodes in the scene."
-msgstr "씬의 다른 노드에 액세스 할 수 있는 스크립트를 작성함."
+msgstr "씬의 다른 노드에 접근할 수 있는 스크립트를 작성함."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
 msgid ""
@@ -3133,7 +3134,7 @@ msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
 msgstr ""
-"씬 탭에서 액세스 하는 \"하위 노드 추가\" 대화 상자를 사용하여 (아니면 ``Ctrl"
+"씬 탭에서 접근하는 \"하위 노드 추가\" 대화 상자를 사용하여 (아니면 ``Ctrl"
 "+A`` 를 눌러), 다음 노드로 계층을 생성합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
@@ -3766,7 +3767,7 @@ msgid ""
 msgstr ""
 "Godot는 편집기에 각각의 스크립트를 등록하기 위한 \"스크립트 클래스\" 기능을 "
 "갖고 있습니다. 기본적으로, 당신은 파일을 직접 불러와서 이름이 없는 스크립트"
-"에 액세스 할 수 있습니다."
+"에 접근할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
 msgid ""
@@ -9116,7 +9117,7 @@ msgstr ""
 "분석해봅시다. ``$\"../Characters/Player\"`` 는 씬 트리의 한 노드를 불러옵니"
 "다, 그리고 ``Characters/Player`` 노드를 검색하는 속기입니다. 그것은 노드에게 "
 "진입로를 제공합니다. 명령문의 두 번째 부분은, ``.max_health`` 로, Player 노드"
-"에 ``max_health`` 를 액세스 합니다."
+"에 ``max_health`` 를 접근합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:170
 msgid ""
@@ -9200,9 +9201,9 @@ msgid ""
 "code runs."
 msgstr ""
 "왜 ``_process`` 함수에서 ``Player`` 노드를 바로 가져오지 않고 체력 값을 보"
-"죠? 그 방법으로 노드를 액세스 하는 것은 그들을 단단히 연결합니다. 그걸 원한다"
-"면 작동은 할 것입니다. 게임이 커질 수록, 많은 연결을 갖게 될 것입니다. 그 방"
-"법으로 노드를 가져오는 것은 복잡해질 것입니다. 그 뿐만이 아니라: 당신은 "
+"죠? 그 방법으로 노드를 접근하는 것은 그들을 단단히 연결합니다. 그걸 원한다면 "
+"작동은 할 것입니다. 게임이 커질 수록, 많은 연결을 갖게 될 것입니다. 그 방법으"
+"로 노드를 가져오는 것은 복잡해질 것입니다. 그 뿐만이 아니라: 당신은 "
 "``_process`` 함수에서 끊임없는 상태 변화를 들어야 합니다. 이 확인은 1초 당 60"
 "회이고 코드의 작동 순서 때문에 게임이 꺼질 수도 있습니다."
 
@@ -9233,10 +9234,10 @@ msgid ""
 "gameprogrammingpatterns.com/contents.html>`_ is available online for free."
 msgstr ""
 "시그널이 파생된, 옵저버 패턴은, 여전히 노드 분기 간의 연결을 추가합니다. 하지"
-"만 일반적으로 두 개의 분리된 클래스 사이를 연결하기 위해 직접 노드를 액세스 "
-"하는 것보다 더 가볍고 더 안전합니다. 부모 노드가 자식 노드의 값을 가져올 수 "
-"있습니다. 하지만 별도의 가지에서 이 작업을 한다면 시그널을 더 선호할 것입니"
-"다. 더 많은 정보는 `Observer pattern <http://gameprogrammingpatterns.com/"
+"만 일반적으로 두 개의 분리된 클래스 사이를 연결하기 위해 직접 노드를 접근하"
+"는 것보다 더 가볍고 더 안전합니다. 부모 노드가 자식 노드의 값을 가져올 수 있"
+"습니다. 하지만 별도의 가지에서 이 작업을 한다면 시그널을 더 선호할 것입니다. "
+"더 많은 정보는 `Observer pattern <http://gameprogrammingpatterns.com/"
 "observer.html>`_ 에서 Game Programming Patterns 를 읽어보세요. `전체 책 "
 "<http://gameprogrammingpatterns.com/contents.html>`_ 은 온라인에서 무료로 이"
 "용할 수 있습니다."
@@ -10537,9 +10538,9 @@ msgid ""
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
-"파일 시스템은 애셋을 저장하고 액세스하는 방법을 관리합니다. 잘 설계된 파일 시"
-"스템은 여러 개발자가 협업하며 같은 소스 파일과 애셋을 편집할 수 있습니다. "
-"Godot는 모든 애셋을 파일 시스템에 파일의 형태로 저장합니다."
+"파일 시스템은 애셋을 저장하고 접근하는 방법을 관리합니다. 잘 설계된 파일 시스"
+"템은 여러 개발자가 협업하며 같은 소스 파일과 애셋을 편집할 수 있습니다. Godot"
+"는 모든 애셋을 파일 시스템에 파일의 형태로 저장합니다."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
@@ -10626,9 +10627,9 @@ msgid ""
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
 "`` was created."
 msgstr ""
-"리소스를 액세스 할 때, 호스트 OS 파일 시스템 레이아웃을 사용하는 것은 성가시"
-"고 휴대성이 떨어질 수 있습니다. 이 문제를 해결하기 위해, ``res://`` 라는 특"
-"수 경로가 만들어졌습니다."
+"리소스를 접근할 때, 호스트 OS 파일 시스템 레이아웃을 사용하는 것은 성가시고 "
+"휴대성이 떨어질 수 있습니다. 이 문제를 해결하기 위해, ``res://`` 라는 특수 경"
+"로가 만들어졌습니다."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
 msgid ""
@@ -10917,8 +10918,8 @@ msgid ""
 msgstr ""
 "노드는 *씬 트리*\\ 에 들어가면 활성화됩니다. 노드는 입력을 받거나 처리하고, "
 "2D와 3D 표현을 보여주고, 알림을 받고 보내거나, 소리를 재생하는 등을 실행하기 "
-"위한 것들 모두에 액세스합니다. 노드가 *씬 트리*\\ 에서 제거될 때, 능력을 잃습"
-"니다."
+"위한 것들 모두에 접근합니다. 노드가 *씬 트리*\\ 에서 제거될 때, 능력을 잃습니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:106
 msgid "Tree order"
@@ -11133,16 +11134,16 @@ msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
 msgstr ""
-"위의 경우, 어느 노드든지 \"PlayerVariables\" 라는 싱글톤을 액세스 할 수 있습"
-"니다:"
+"위의 경우, 어느 노드든지 \"PlayerVariables\" 라는 싱글톤을 접근할 수 있습니"
+"다:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
 msgid ""
 "If the \"Enable\" column is checked (default true) then the singleton can "
 "simply be accessed directly:"
 msgstr ""
-"\"Enable\" 항목이 체크 되어 있다면 (기본값은 true) 싱글톤은 쉽게 직접 액세스 "
-"될 수 있습니다:"
+"\"Enable\" 항목이 체크 되어 있다면 (기본값은 true) 싱글톤을 쉽게 직접 접근할 "
+"수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -11150,9 +11151,9 @@ msgid ""
 "any other node in the scene tree. In fact, if you look at the running scene "
 "tree, you'll see the autoloaded nodes appear:"
 msgstr ""
-"씬 트리에서 다른 노드와 마찬가지로 오토로드 객체 (스크립트 혹은 씬)는 액세스"
-"됩니다. 사실, 실행하는 씬 트리를 보신다면, 오토로드 된 노드가 나타나는 것을 "
-"보실 수 있습니다:"
+"씬 트리에서 다른 노드와 마찬가지로 오토로드 객체 (스크립트 혹은 씬)는 접근됩"
+"니다. 사실, 실행하는 씬 트리를 보신다면, 오토로드 된 노드가 나타나는 것을 보"
+"실 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid "Custom scene switcher"
@@ -11985,9 +11986,9 @@ msgid ""
 "functions on all nodes in this group. See more in the :ref:`scripting "
 "documentation <doc_scripting_continued>`."
 msgstr ""
-"스크립트를 통해 노드에 액세스하고 노드에서 내장 함수나 사용자가 정의한 함수"
-"를 호출하여 노드를 제어할 수 있습니다. 그리고 노드를 그룹에 배치하거나 이 그"
-"룹에 있는 모든 노드에서 함수를 호출할 수도 있습니다. 자세한 것은 :ref:`스크립"
+"스크립트를 통해 노드에 접근하고 노드에서 내장 함수나 사용자가 정의한 함수를 "
+"호출하여 노드를 제어할 수 있습니다. 그리고 노드를 그룹에 배치하거나 이 그룹"
+"에 있는 모든 노드에서 함수를 호출할 수도 있습니다. 자세한 것은 :ref:`스크립"
 "팅 문서 <doc_scripting_continued>`\\ 를 참고하세요."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:226
@@ -13355,8 +13356,8 @@ msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as "
 "array."
 msgstr ""
-"2D 벡터 타입으로 ``x``\\ 와 ``y`` 필드를 가지고 있습니다. 배열로 액세스할 수"
-"도 있습니다."
+"2D 벡터 타입으로 ``x``\\ 와 ``y`` 필드를 가지고 있습니다. 배열로 접근할 수도 "
+"있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid ":ref:`Rect2 <class_Rect2>`"
@@ -13438,7 +13439,7 @@ msgid ""
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
 msgstr ""
 "3x3 행렬로 3D 회전과 규모에 사용됩니다. 3개의 벡터 필드 (``x``, ``y`` 그리고 "
-"``z``)를 가지며 3D 벡터의 배열로 액세스할 수도 있습니다."
+"``z``)를 가지며 3D 벡터의 배열로 접근할 수도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:435
 msgid ":ref:`Transform <class_Transform>`"
@@ -13465,7 +13466,7 @@ msgid ""
 "be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
 msgstr ""
 "색상 데이터 타입으로 ``r``, ``g``, ``b``, 그리고 ``a`` 필드를 갖습니다. 색조/"
-"채도/명도를 위한 ``h``, ``s``, 그리고 ``v``\\ 로 액세스할 수도 있습니다."
+"채도/명도를 위한 ``h``, ``s``, 그리고 ``v``\\ 로 접근할 수도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:450
 msgid ":ref:`NodePath <class_NodePath>`"
@@ -14495,9 +14496,9 @@ msgstr ""
 "*외부* 소스에 의해 (즉, 클래스에서의 지역 사용이 아닌) ``variable``\\ 의 값"
 "이 수정될 때는, 언제나 *setter* 함수 (위의 ``setterfunc``)는 호출됩니다. 이것"
 "은 값이 변경되기 *전에* 발생합니다. *setter*\\ 는 새로운 값으로 무엇을 해야 "
-"할 지 결정해야 합니다. 반대로, ``variable``\\ 이 액세스될 때, *getter* 함수 "
-"(위의 ``getterfunc``)는 원하는 값을 ``return``\\ 해야 합니다. 아래에 있는 것"
-"은 예제입니다:"
+"할 지 결정해야 합니다. 반대로, ``variable``\\ 이 접근될 때, *getter* 함수 (위"
+"의 ``getterfunc``)는 원하는 값을 ``return``\\ 해야 합니다. 아래에 있는 것은 "
+"예제입니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1403
 msgid "Either of the *setter* or *getter* functions can be omitted:"
@@ -14516,8 +14517,8 @@ msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
-"말한 대로 *지역* 액세스는 setter와 getter를 작동시키지 *않을* 것입니다. 여기"
-"에 그 예가 나와 있습니다:"
+"말한 대로 *지역* 접근는 setter와 getter를 작동시키지 *않을* 것입니다. 여기에 "
+"그 예가 나와 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1430
 msgid "Tool mode"
@@ -17019,7 +17020,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:94
 msgid "Accessing scene nodes"
-msgstr "씬 노드 액세스하기"
+msgstr "씬 노드 접근하기"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:96
 msgid ""
@@ -17028,9 +17029,9 @@ msgid ""
 "dropping into the canvas will ask you to *call a method* (sometimes referred "
 "to as *member function*) on this node."
 msgstr ""
-"흔한 작업들 중 하나로는 씬 트리 노드(Scene Tree Nodes)에 액세스하는 것이 있습"
-"니다 (다시 한번 말하건데, *Visual Script Nodes*\\ 로 착각하지 마십시오). 씬 "
-"트리에서 캔버스로 드래그 하여 놓으면 이 노드에서 \"메서드 호출(call a "
+"흔한 작업들 중 하나로는 씬 트리 노드(Scene Tree Nodes)에 접근하는 것이 있습니"
+"다 (다시 한번 말하건데, *Visual Script Nodes*\\ 로 착각하지 마십시오). 씬 트"
+"리에서 캔버스로 드래그 하여 놓으면 이 노드에서 \"메서드 호출(call a "
 "method)\" (*멤버 함수(member function)*\\ 라고 하기도 함) 여부를 물어봅니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:102
@@ -17041,11 +17042,11 @@ msgid ""
 "position in local coordinates to the control. Another common use case is "
 "queueing a node for deletion, which is done with the *queue_free* method."
 msgstr ""
-"대부분의 경우 속성에 액세스하는 것이 좋지만 (아래에 자세히 설명되어 있음), 때"
-"로는 *메서드 호출*\\ 도 유용할 수 있습니다. 메서드는 객체에서 특정 작업을 실"
-"행합니다. 위의 경우로는, 마우스 포인터는 컨트롤에 대한 지역 좌표의 위치로 비"
-"틀 수 있습니다. 또 다른 일반적인 사용 사례는 노드를 삭제하기 위해 대기하는 것"
-"으로, *queue_free* 메서드를 사용하여 이루어집니다."
+"대부분의 경우 속성에 접근하는 것이 좋지만 (아래에 자세히 설명되어 있음), 때로"
+"는 *메서드 호출*\\ 도 유용할 수 있습니다. 메서드는 객체에서 특정 작업을 실행"
+"합니다. 위의 경우로는, 마우스 포인터는 컨트롤에 대한 지역 좌표의 위치로 비틀 "
+"수 있습니다. 또 다른 일반적인 사용 사례는 노드를 삭제하기 위해 대기하는 것으"
+"로, *queue_free* 메서드를 사용하여 이루어집니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:109
 msgid ""
@@ -17057,7 +17058,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:113
 msgid "Accessing scene node properties"
-msgstr "씬 노드 속성 액세스하기"
+msgstr "씬 노드 속성 접근하기"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:115
 msgid ""
@@ -17258,9 +17259,9 @@ msgid ""
 "Godot is accessed via these nodes, so they are some of the most important "
 "ones to use and pretty diverse."
 msgstr ""
-"데이터 노드는 정보에 대한 모든 종류의 액세스를 처리합니다. Godot에서는 어떤 "
-"정보도 이 노드를 통해 액세스 되므로, 그들은 중요하게 쓰이는 것들 중 하나로서 "
-"꽤 다양합니다."
+"데이터 노드는 정보에 대한 모든 종류의 접근를 처리합니다. Godot에서는 어떤 정"
+"보도 이 노드를 통해 접근되므로, 그들은 중요하게 쓰이는 것들 중 하나로서 꽤 다"
+"양합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:236
 msgid ""
@@ -17296,9 +17297,9 @@ msgid ""
 "have several purposes, but in general, they are useful for low-level access "
 "or OS-related access."
 msgstr ""
-"엔진 싱글톤은 전역 인터페이스입니다 (즉 씬 노드와 달리, 참조 없이 액세스 될 "
-"수 있고 항상 이용 가능합니다). 그들은 여러 목적을 지니지만, 대개 로우 레벨 액"
-"세스나 OS 관련 액세스에 유용합니다."
+"엔진 싱글톤은 전역 인터페이스입니다 (즉 씬 노드와 달리, 참조 없이 접근할 수 "
+"있고 항상 이용 가능합니다). 그들은 여러 목적을 지니지만, 대개 로우 레벨 접근"
+"이나 OS 관련 접근에 유용합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:257
 msgid ""
@@ -17367,7 +17368,7 @@ msgid ""
 msgstr ""
 "이 노드는 활성화된 씬을 갖고 있는 SceneTree를 참조한다는 점에서 싱글톤 노드"
 "와 비슷하지만, 오직 노드가 씬에 있고 활성화된 상태이어야만 작동합니다, 그렇"
-"지 않고 액세스하면 오류를 반환합니다."
+"지 않고 접근하면 오류를 반환합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
 msgid ""
@@ -17723,7 +17724,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:493
 msgid "Access local variables or properties:"
-msgstr "지역 변수나 속성을 액세스:"
+msgstr "지역 변수나 속성을 접근:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:498
 msgid ""
@@ -18488,8 +18489,8 @@ msgid ""
 "specifying the class name."
 msgstr ""
 "때로는 ``using static`` 지시문을 사용하는 게 유용할 수 있습니다. 이 지시문이"
-"면 클래스 이름을 지정하지 않고도 클래스의 멤버와 중첩된 타입에 액세스할 수 있"
-"습니다."
+"면 클래스 이름을 지정하지 않고도 클래스의 멤버와 중첩된 타입에 접근할 수 있습"
+"니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:90
@@ -18556,9 +18557,9 @@ msgid ""
 "is ``Godot.Object``."
 msgstr ""
 "하지만, 일부 드문 경우가 있어 충분하지 않습니다. 예를 들어 ``Connect``\\ 처"
-"럼 기본 클래스 ``Godot.Object``\\ 의 멤버로 액세스해야하는 경우가 있습니다. "
-"이런 경우를 위해, 싱글톤 인스턴스를 반환하는 ``Singleton`` 정적 속성을 제공합"
-"니다. 인스턴스의 타입은 ``Godot.Object``\\ 입니다."
+"럼 기본 클래스 ``Godot.Object``\\ 의 멤버로 접근해야하는 경우가 있습니다. 이"
+"런 경우를 위해, 싱글톤 인스턴스를 반환하는 ``Singleton`` 정적 속성을 제공합니"
+"다. 인스턴스의 타입은 ``Godot.Object``\\ 입니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
@@ -19298,7 +19299,7 @@ msgstr "기타 고려 사항"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:296
 msgid "Use explicit access modifiers."
-msgstr "명시적 액세스 모디파이어를 사용하세요."
+msgstr "명시적 접근 모디파이어를 사용하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:297
 msgid "Use properties instead of non-private fields."
@@ -19409,9 +19410,9 @@ msgid ""
 "project. While this can be useful in large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
-"3.0 버전 이전의 Godot에서는 프로젝트 밖에서 파일을 액세스하는 것으로 가져왔습"
-"니다. 이것이 큰 규모의 프로젝트에는 유용하지만, 대부분의 개발자들에게는 조직"
-"의 번거로움을 초래했습니다."
+"3.0 버전 이전의 Godot에서는 프로젝트 밖에서 파일을 접근하는 것으로 가져왔습니"
+"다. 이것이 큰 규모의 프로젝트에는 유용하지만, 대부분의 개발자들에게는 조직의 "
+"번거로움을 초래했습니다."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:53
 msgid ""
@@ -20318,8 +20319,8 @@ msgid ""
 "drawing them efficient."
 msgstr ""
 "Godot에서 기본 값 행동은 이미지를 텍스처로 가져오는 것입니다. 텍스처는 비디"
-"오 메모리에 저장되며 직접 액세스 할 수 없습니다. 이것이 효율적으로 그리는 것"
-"입니다."
+"오 메모리에 저장되며 직접 접근할 수 없습니다. 이것이 효율적으로 그리는 것입니"
+"다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:23
 msgid "Import options are vast:"
@@ -22506,9 +22507,9 @@ msgid ""
 msgstr ""
 "개발자는 Godot로 정확한 API 콘텐츠를 프로젝트에 추가하기 위한 GUI 도구를 빌드"
 "합니다. Godot 도구는 도구를 쓰는 엔진의 빌드에서 실행되거나 엔진 또는 게임 파"
-"일에 액세스할 수 있어야 합니다. 그런 다음 도구는 Godot 실행 파일을 사용하여 "
-"명령행에서 :ref:`OS.execute() <class_OS_method_execute>`\\ 로 PCK 파일을 내보"
-"냅니다. (보안을 위해) 게임에는 도구 빌드를 사용하지 않으면서 모딩 도구에는 도"
+"일에 접근할 수 있어야 합니다. 그런 다음 도구는 Godot 실행 파일을 사용하여 명"
+"령행에서 :ref:`OS.execute() <class_OS_method_execute>`\\ 로 PCK 파일을 내보냅"
+"니다. (보안을 위해) 게임에는 도구 빌드를 사용하지 않으면서 모딩 도구에는 도"
 "구 사용 엔진 빌드를 *사용하는 것*\\ 으로 이해하면 됩니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:90
@@ -23203,7 +23204,7 @@ msgstr "2-4 CPU 코어의 점유율"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "shared access of GPU power (45%)"
-msgstr "GPU 전력의 공유 액세스 (45%)"
+msgstr "GPU 전력의 공유 접근 (45%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid ""
@@ -23223,7 +23224,7 @@ msgstr "4개의 전용 CPU 코어와 2개의 공유 CPU 코어"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid "exclusive access to GPU power (100%)"
-msgstr "GPU 전력에 대한 독점적 액세스 (100%)"
+msgstr "GPU 전력에 대한 독점적 접근 (100%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
 msgid ""
@@ -23688,7 +23689,7 @@ msgstr "HTTP 클래스는 HTML5 플랫폼에 여러 제한을 갖고 있습니�
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
-msgstr "``StreamPeer``\\ 로 액세스하거나 바꾸는 것이 불가능합니다"
+msgstr "``StreamPeer``\\ 로 접근하거나 바꾸는 것이 불가능합니다"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
 msgid "Threaded/Blocking mode is not available"
@@ -23833,8 +23834,8 @@ msgstr ""
 "``.html`` 파일 옆의 다른 내보낸 파일은 그대로 전달되지만, 이름은 바뀌지 않습"
 "니다. ``.wasm`` 파일은 엔진을 구현하는 이진 WebAssembly 모듈입니다. ``.pck`` "
 "파일은 Godot 메인 팩으로 게임을 갖고 있습니다. ``.js`` 파일은 시작 코드가 있"
-"으며 ``.html`` 파일이 엔진에 액세스하는 데 사용됩니다. ``.png`` 파일은 부팅 "
-"스플래시 이미지입니다. 기본 HTML 페이지에서는 쓰이지 않지만,  :ref:`커스텀 "
+"으며 ``.html`` 파일이 엔진에 접근하는 데 사용됩니다. ``.png`` 파일은 부팅 스"
+"플래시 이미지입니다. 기본 HTML 페이지에서는 쓰이지 않지만,  :ref:`커스텀 "
 "HTML 페이지 <doc_customizing_html5_shell>`\\ 를 위해 포함됩니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:147
@@ -25050,9 +25051,9 @@ msgid ""
 "keeps the child **loosely coupled** to its environment. One can re-use it in "
 "another context without any extra changes to its API."
 msgstr ""
-"이런 설정은 자식 노드로부터의 액세스 소스를 숨깁니다. 이것은 차례차례로 자식"
-"을 환경에 **느슨하게 결합합니다**. API에 다른 추가 변경사항없이 다른 컨텍스트"
-"에 재사용할 수 있습니다."
+"이런 설정은 자식 노드로부터의 접근 소스를 숨깁니다. 이것은 차례대로 자식을 환"
+"경에 **느슨하게 결합합니다**. API에 다른 추가 변경사항 없이 다른 컨텍스트에 "
+"재 사용할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:157
 msgid ""
@@ -25257,7 +25258,7 @@ msgstr "모든 데이터를 내부적으로 추적하고"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:287
 msgid "should be globally accessible"
-msgstr "전역으로 액세스해야 하고"
+msgstr "전역으로 접근해야 하고"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:288
 msgid "should exist in isolation"
@@ -25334,8 +25335,8 @@ msgstr ""
 "`RemoteTransform <class_RemoteTransform>` / :ref:`RemoteTransform2D "
 "<class_RemoteTransform2D>`노드를 사용할 수 있습니다. 이것으로 대상 노드는 조"
 "건부로 선택된  Remote\\* 노드의 변형 요소를 상속할 수 있습니다. ``대상``  :"
-"ref:`NodePath <class_NodePath>`\\ 에 액세스하려면 다음 방식 중 하나를 사용하"
-"세요:"
+"ref:`NodePath <class_NodePath>`\\ 에 접근하려면 다음 방식 중 하나를 사용하세"
+"요:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:327
 msgid ""
@@ -25645,7 +25646,7 @@ msgstr ":ref:`커스텀 타입 <doc_making_plugins>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:100
 msgid "Editor-only. Typenames are not accessible at runtime."
-msgstr "편집기만 가능. 런타임 도중 타입이름에 액세스할 수 없습니다."
+msgstr "편집기만 가능. 런타임 도중 타입이름에 접근할 수 없습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:102
 msgid "Does not support inherited custom types."
@@ -25688,7 +25689,7 @@ msgstr ":ref:`스크립트 클래스 <doc_scripting_continued_class_name>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."
-msgstr "편집기와 런타임에 액세스할 수 있습니다."
+msgstr "편집기와 런타임에 접근할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:119
 msgid "Displays inheritance relationships in full."
@@ -25715,8 +25716,8 @@ msgid ""
 "Engine developers must add support for languages manually (both name "
 "exposure and runtime accessibility)."
 msgstr ""
-"엔진 개발자는 수동으로 언어 지원을 추가해야 합니다 (이름 표시와 런타임 액세"
-"스 가능성 모두)."
+"엔진 개발자는 수동으로 언어 지원을 추가해야 합니다 (이름 표시와 런타임 접근 "
+"가능성 모두)."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
 msgid "Godot 3.1+ only."
@@ -25740,9 +25741,9 @@ msgid ""
 "methods is viable from anywhere."
 msgstr ""
 "두 방법론 모두 생성 대화 상자에 이름을 추가할 수 있습니다, 하지만 특히 스크립"
-"트 클래스는 사용자가 스크립트 리소스를 불러오지 않고도 타입이름에 액세스할 "
-"수 있습니다. 인스턴스를 만들고 상수나 정적 메서드에 액세스하는 것은 어디서나 "
-"가능합니다."
+"트 클래스는 사용자가 스크립트 리소스를 불러오지 않고도 타입이름에 접근할 수 "
+"있습니다. 인스턴스를 만들고 상수나 정적 메서드에 접근하는 것은 어디서나 가능"
+"합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:143
 msgid ""
@@ -25806,7 +25807,7 @@ msgid ""
 "thrives by supporting ways to cut down the size of such objects. Instead it "
 "shifts content into individual nodes as much as possible."
 msgstr ""
-"다른 엔진에서는 전역으로 액세스 가능할 개체에 다양한 기능을 구성하는 \"관리자"
+"다른 엔진에서는 전역으로 접근 가능할 개체에 다양한 기능을 구성하는 \"관리자"
 "\" 클래스를 만들어 쓰는 것을 권장할 지도 모릅니다. Godot는 이러한 객체의 크기"
 "를 줄이는 방식을 지원하는 것으로 커집니다. 대신 내용물을 가능한 한 개별 노드"
 "로 이동시킵니다."
@@ -25837,10 +25838,10 @@ msgid ""
 msgstr ""
 "사용자는 SoundManager 오토로드 노드를 만들어 더 똑똑한 전체 시스템을 만드는 "
 "것이 최선의 해결책이라고 생각하는 경향이 있습니다. 이것은 새로운 음향 효과 요"
-"청이 들어올 때마다 순환하는 AudioStreamPlayer들의 풀을 만들어냅니다. 그런 다"
-"음 SoundManager를 오토로드로 만들어 어디서든 `SFX.play(\"coin_pickup.ogg\")`"
-"\\ 를 가지고 액세스하도록 합니다. 사용자는 거의 알지 못했습니다, 자신이 많은 "
-"복잡한 문제를 코드로 가지고 왔습니다."
+"청이 들어올 때마다 순환하는 AudioStreamPlayer들의 풀(Pool)을 만들어냅니다. 그"
+"런 다음 SoundManager를 오토로드로 만들어 어디서든 `SFX.play(\"coin_pickup.ogg"
+"\")`\\ 를 가지고 접근하도록 합니다. 사용자는 거의 알지 못했습니다, 자신이 많"
+"은 복잡한 문제를 코드로 가지고 왔습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:25
 msgid ""
@@ -25856,35 +25857,41 @@ msgid ""
 "**global access**: Now that any object can call `SFX.play(sound_path)` from "
 "anywhere, there's no longer an easy way to track where an SFX bug began."
 msgstr ""
-"**전역 액세스**: 이제 모든 객체가 어디서든 `SFX.play(sound_path)`\\ 를 호출"
-"할 수 있습니다, SFX 버그가 어디서 시작했는 지를 아는 쉬운 방법은 더 이상 없습"
-"니다."
+"**전역 접근**: 이제 모든 객체가 어디서든 `SFX.play(sound_path)`\\ 를 호출할 "
+"수 있습니다, SFX 버그가 어디서 시작했는 지를 아는 쉬운 방법은 더 이상 없습니"
+"다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:33
 msgid ""
 "**global resource allocation**: If all objects' data and processing is "
 "centralized from the start, then one must either..."
 msgstr ""
+"**전역 리소스 할당**: 모든 객체의 데이터와 처리가 처음부터 중앙 집중화 된다"
+"면, 다음 중 하나를 거쳐야 합니다..."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:36
 msgid "risk under-allocating resources which might lead to faulty behavior."
-msgstr ""
+msgstr "결함있는 행동으로 이어질 수 있는 자원을 과소 할당하게 됩니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:38
 msgid ""
 "Ex: Have too few AudioStreamPlayers in the object pool. Sound doesn't play "
 "or it interrupts another sound."
 msgstr ""
+"예: 객체 풀에 AudioStreamPlayer가 너무 적게 있습니다. 소리가 재생되지 않거나 "
+"다른 소리를 방해할 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:41
 msgid "over-allocate resources and use more memory/processing than it needs."
-msgstr ""
+msgstr "과다 할당한 리소스로 필요보다 많은 메모리/처리를 사용합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:43
 msgid ""
 "Ex: Have an arbitrarily large number of AudioStreamPlayers, with many of "
 "them idling away and not doing anything."
 msgstr ""
+"예: 임의로 많은 수의 AudioStreamPlayer가 있습니다, 이들 중 대부분이 휴식 상태"
+"이고 아무 것도 하지 않습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:46
 msgid ""
@@ -25893,18 +25900,26 @@ msgid ""
 "though; it is now coupled to each object, just as a child node would have "
 "been. One has added an unnecessary middleman to the equation."
 msgstr ""
+"AudioStreamPlayer이 필요한 각 객체마다 얼마나 많이, 그리고 어떤 소리가 필요한"
+"지 등록하게 됩니다. 이것은 제 3자를 사용하는 목적을 없애버립니다; 이제 소리"
+"는 자식 노드처럼 각 객체에 연결되어버립니다. 누군가는 여기에 불필요한 중개자"
+"를 추가합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:52
 msgid ""
 "Contrast this with each scene keeping as many AudioStreamPlayer nodes as it "
 "needs within itself and all these problems go away."
 msgstr ""
+"이것과 반대로 각 씬이 필요한 만큼의 AudioStreamPlayer 노드를 유지하면 이 문제"
+"는 사라집니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:55
 msgid ""
 "Each scene manages its own state information. If there is a problem with the "
 "data, it will only cause issues in that one scene."
 msgstr ""
+"각 씬은 자체적인 상태 정보를 관리합니다. 데이터에 문제가 생기면, 해당 데이터"
+"가 있는 씬 내에서만 사고를 일으킵니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:58
 msgid ""
@@ -25913,18 +25928,26 @@ msgid ""
 "in the code it's making the problematic call (locate where the code "
 "references the given node) is going to be much easier."
 msgstr ""
+"각 씬은 자체 노드에만 접근합니다. 이제 버그가 나타나면 (아마 씬의 루트 노드이"
+"겠지만) 어떤 노드에 책임이 있는 지를 추적하기 쉬워지고, 코드에서 문제가 되는 "
+"호출 (주어진 코드를 참조하는 코드가 위치한 곳)을 훨씬 더 쉽게 찾을 수 있습니"
+"다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:63
 msgid ""
 "Each scene knows exactly how many resources it needs for the task it "
 "performs. No waste of memory or processing due to a lack of information."
 msgstr ""
+"각 씬은 실행하기 위해 얼마나 많은 리소스가 필요한지 확실하게 압니다. 정보 부"
+"족으로 인한 메모리나 처리의 낭비가 없습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:66
 msgid ""
 "The typical justifications for the Autoload include, \"I have common Xs that "
 "involve many nodes across many scenes, and I want each scene to have X.\""
 msgstr ""
+"오토로드의 일반적인 정당성은 이런 것입니다, \"나는 여러 씬에 많은 노드가 있"
+"는 X들을 갖고 있습니다, 그리고 각 씬이 X를 갖고 있도록 하고 싶습니다.\""
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:69
 msgid ""
@@ -25932,6 +25955,8 @@ msgid ""
 "<class_Node>` that deals with providing that feature for an individual scene "
 "or node subtree."
 msgstr ""
+"X가 함수라면, 각 씬이나 노드 하위 트리에 기능을 제공하는 :ref:`Node "
+"<class_Node>`\\ 의 새로운 타입을 만드는 것으로 해결합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:73
 msgid ""
@@ -25940,10 +25965,14 @@ msgid ""
 "object to which each node has access (nodes within a scene can use "
 "`get_owner()` to fetch the scene root for example)."
 msgstr ""
+"X가 데이터라면, 해결 방법은 두 가지로, 1) :ref:`Resource <class_Resource>`\\ "
+"의 새로운 타입을 만들어 데이터를 공유하거나, 2) 각 노드가 접근할 수 있는 객체"
+"에 데이터를 저장하는 것입니다 (예를 들어 씬이 있는 노드는 `get_owner()`\\ 를 "
+"사용하여 씬 루트를 가져올 수 있습니다)."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:78
 msgid "So when *should* one use an autoload?"
-msgstr ""
+msgstr "그러면 언제 오토로드를 *사용해야 할까요*?"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:80
 msgid ""
@@ -25955,6 +25984,11 @@ msgid ""
 "class within a scene, then it will function in place of a formal singleton "
 "API."
 msgstr ""
+"**정적 데이터**: 클래스에 반드시 연관되어야 하는 (그래서 오직 하나의 데이터 "
+"사본만 있는) 정적 데이터가 필요하다면, 오토로드가 좋은 기회입니다. 정적 데이"
+"터는 Godot의 스크립팅 API에 존재하지 않기 때문에, 오토로드 싱글톤이 차선책이 "
+"됩니다. 클래스를 오토로드로 생성하고, 씬 내에서 클래스의 사본을 생성하지 않는"
+"다면, 그것은 형식적인 싱글톤 API를 대신할 것입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:88
 msgid ""
@@ -25965,6 +25999,11 @@ msgid ""
 "to load and create constants to access other Script or PackedScene "
 "resources, resulting in something like ``MyAutoload.MyNode.new()``."
 msgstr ""
+"**편의**: 오토로드된 노드는 GDScript에 그들의 이름으로 된 전역 변수를 갖습니"
+"다. 이것은 항상 존재해야 하지만 객체 인스턴스 정보가 필요한 객체를 정의하는 "
+"데 매우 편리합니다. 대안은 네임스페이스 스크립트를 만드는 것입니다: 스크립트"
+"는 다른 스크립트나 PackedScene 리소스에 접근하기 위해 상수를 불러오고 생성하"
+"는 것으로도, ``MyAutoload.MyNode.new()``\\ 와 같은 결과를 낳습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:95
 msgid ""
@@ -25973,6 +26012,10 @@ msgid ""
 "name from GDScript. Using an autoload to get to a namespace script becomes "
 "unnecessary, e.g. ``MyScriptClass.MyPreloadedScript.new()``."
 msgstr ""
+"Godot 3.1에서 스크립트 클래스를 도입하면서 이런 이유의 정당성은 의문이 됩니"
+"다. 스크립트 클래스로 GDScript에서 명시적 이름을 사용해 스크립트에 접근할 수 "
+"있습니다. 오토로드를 사용하여 네임스페이스 스크립트를 갖는 행위는 불필요해졌"
+"습니다, 예시:  ``MyScriptClass.MyPreloadedScript.new()``."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:100
 msgid ""
@@ -25981,10 +26024,14 @@ msgid ""
 "handles a broad-scoped task. For example a targeting system, quest system, "
 "or dialogue system would be great use cases of singleton implementations."
 msgstr ""
+"싱글톤이 자체 정보를 관리하고 있고, 다른 객체의 데이터에 침범하지 않는다면, "
+"넓은 범위의 작업을 다루기 위해 \"시스템\" 클래스를 만드는 것이 좋은 방법입니"
+"다. 예를 들어 타겟팅 시스템, 퀘스트 시스템, 아니면 대화 상자 시스템이 대표적"
+"인 싱글톤 구현 사례입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:4
 msgid "When and how to avoid using nodes for everything"
-msgstr ""
+msgstr "노드를 모든 용도로 사용하는 것을 피하는 시기와 방법"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:7
 msgid ""
@@ -25993,6 +26040,9 @@ msgid ""
 "behavior though, the larger the strain each one adds to a project's "
 "performance."
 msgstr ""
+"노드는 생산하기 저렴하지만 한계가 있습니다. 한 프로젝트는 모든 작업을 하는 "
+"수 만 개의 노드로 이루어질 수 있습니다. 행동이 더 복잡할 수록, 프로젝트 성능"
+"에 추가하는 각 변형은 더 커집니다."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:12
 msgid ""
@@ -26000,6 +26050,8 @@ msgid ""
 "Be sure to keep these in mind as options when designing how you wish to "
 "build your project's features."
 msgstr ""
+"Godot는 노드가 사용하는 API를 만들기 위한 더 가벼운 객체를 제공합니다. 어떻"
+"게 프로젝트의 기능을 만들고 싶은 지를 설계할 때 옵션으로 다음을 명심하세요."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:16
 msgid ""
@@ -26008,6 +26060,10 @@ msgid ""
 "difficult to create one's own custom data structures, even node structures, "
 "that are also lighter than the :ref:`Node <class_Node>` class."
 msgstr ""
+":ref:`객체 <class_Object>`: 궁극의 경량 객체로, 오리지널 객체는 수동으로 메모"
+"리 관리를 하는데 사용해야 합니다. 말인 즉슨, 자체 커스텀 데이터 구조를 만드"
+"는 것이 그리 어렵지 않습니다, 심지어 커스텀 노드 구조도 만들 수 있는데 :ref:`"
+"노드 <class_Node>`\\ 클래스보다 가볍죠."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:21
 msgid ""
@@ -26016,6 +26072,9 @@ msgid ""
 "columns. The data that it uses to generate its visualization though is "
 "actually a tree of :ref:`TreeItem <class_TreeItem>` Objects."
 msgstr ""
+"**예시:** :ref:`Tree <class_Tree>` 노드를 참고하세요. 이 노드는 임의의 수의 "
+"행과 열이 있는 콘텐츠 테이블의 하이 레벨 맞춤 설정을 제공합니다. 시각화에 사"
+"용하는 데이터는 사실 :ref:`TreeItem <class_TreeItem>` 객체들의 트리입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:26
 msgid ""
@@ -26024,6 +26083,9 @@ msgid ""
 "the entire Node library, one creates an abbreviated set of Objects from "
 "which a node can generate and manage the appropriate sub-nodes."
 msgstr ""
+"**이점:** API를 더 작은 유효 범위의 객체로 단순화하여 접근성과 반복 시간을 향"
+"상시켜 줍니다. 전체 노드 라이브러리에서 작업하는 대신, 한 노드가 적절한 하위 "
+"노드를 생성하고 관리할 수 있는 단축된 객체들의 집합을 만듭니다."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:31
 msgid ""
@@ -26032,6 +26094,10 @@ msgid ""
 "example, if the object's creator decides to delete it out of nowhere, this "
 "would trigger an error state when one next accesses it."
 msgstr ""
+"객체들을 다룰 때는 조심해야 합니다. 객체를 변수 안에 저장할 수 있지만, 객체"
+"의 참조는 경고 없이 올바르지 않게 될 수 있습니다. 예를 들어 객체의 생성자가 "
+"객체를 아무 곳에도 삭제하지 않기로 결정하면, 다음에 객체에 접근하려 하면 오"
+"류 상태가 발동합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:36
 msgid ""
@@ -26040,16 +26106,21 @@ msgid ""
 "further references to themselves exist. These are useful in the majority of "
 "cases where one needs data in a custom class."
 msgstr ""
+":ref:`참조 <class_Reference>`: 객체보다 오직 조금 더 복잡함. 참조는 자신을 참"
+"조하는 지를 추적해서 더 이상 참조하지 않으면 불러온 메모리를 삭제합니다.  이"
+"는 데이터가 필요한 커스텀 클래스에 있어 대부분의 경우에 유용합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:41
 msgid ""
 "**Example:** See the :ref:`File <class_File>` object. It functions just like "
 "a regular Object except that one need not delete it themselves."
 msgstr ""
+"**예시:** :ref:`File <class_File>` 객체를 참고하세요. 이것은 자기 자신을 삭제"
+"할 필요가 없다는 것 빼면 보통 객체처럼 작동합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:44
 msgid "**Advantages:** same as the Object."
-msgstr ""
+msgstr "**이점:** 객체와 같음."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:46
 msgid ""
@@ -26057,6 +26128,9 @@ msgid ""
 "They have the innate ability to serialize/deserialize (i.e. save and load) "
 "their object properties to/from Godot resource files."
 msgstr ""
+":ref:`리소스 <class_Resource>`: 참조보다 오직 조금 더 복잡함. 리소스는 그들"
+"의 객체 속성을 Godot 리소스 파일로 직렬화, 혹은 그 반대로 비직렬화하는데 타고"
+"났습니다 (예를 들어, 저장 및 불러오기)."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:50
 msgid ""
@@ -26064,6 +26138,9 @@ msgid ""
 "each of the :ref:`AudioEffect <class_AudioEffect>` classes. Each of these "
 "can be save and loaded, therefore they extend from Resource."
 msgstr ""
+"**예시:** 스크립트, PackedScene (씬 파일 용), 그리고 각 :ref:`AudioEffect "
+"<class_AudioEffect>` 클래스와 같은 다른 타입들. 각각은 저장되고 불러와 질 수 "
+"있습니다. 따라서 이들은 리소스에서 분화된 것들입니다."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:54
 msgid ""
@@ -26076,34 +26153,42 @@ msgid ""
 "usability front, but also improve performance if one plans to have many such "
 "Resources/Nodes in their scenes."
 msgstr ""
+"**이점:** 기본의 데이터 저장 방법보다 :ref:`리소스 <class_Resource>`\\ 가 갖"
+"는 이점 대부분은 :ref:`이미 말했습니다. <doc_resources>` 노드를 통한 리소스 "
+"사용의 관점에서, 주요 이점은 인스펙터 호환성에 있습니다. 객체/참조처럼 가벼우"
+"면서도, 리소스는 인스펙터에서 볼 수 있고, 속성을 내보낼 수 있습니다. 이를 통"
+"해 사용성 측면에서 하위 노드와 같은 목적을 달성할 수 있으면서도, 씬에 그러한 "
+"리소스/노드를 갖게 한다면 성능을 향상시킬 수 있습니다."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:4
-#, fuzzy
 msgid "Godot interfaces"
-msgstr "인터페이스 변경"
+msgstr "Godot 인터페이스"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:6
 msgid ""
 "Often one needs scripts that rely on other objects for features. There are 2 "
 "parts to this process:"
 msgstr ""
+"기능을 위해 다른 객체에 의존하는 스크립트가 필요한 경우가 종종 있습니다. 이 "
+"과정에는 2부분이 있습니다:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:9
 msgid "Acquiring a reference to the object that presumably has the features."
-msgstr ""
+msgstr "아마도 기능을 갖는 객체에 대한 참조를 얻기."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:11
 msgid "Accessing the data or logic from the object."
-msgstr ""
+msgstr "객체에서 데이터 또는 논리에 접근하기."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:13
 msgid "The rest of this tutorial outlines the various ways of doing all this."
 msgstr ""
+"이 튜토리얼의 나머지 부분에서는 이 모든 작업을 하는 다양한 방법을 간략하게 설"
+"명합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:16
-#, fuzzy
 msgid "Acquiring object references"
-msgstr "속성 참조"
+msgstr "객체 참조 얻기"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:18
 msgid ""
@@ -26111,6 +26196,8 @@ msgid ""
 "them is to get a reference to an existing object from another acquired "
 "instance."
 msgstr ""
+"모든 :ref:`객체 <class_Object>\\ 에 있어, 객체를 참조하는 가장 기본이 되는 방"
+"식은 획득한 다른 인스턴스로부터 존재하는 객체로 참조를 가져오는 것이다."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:32
 msgid ""
@@ -26118,6 +26205,9 @@ msgid ""
 "While users often access :ref:`Node <class_Node>` and :ref:`Resource "
 "<class_Resource>` this way, alternative measures are available."
 msgstr ""
+":ref:`참조 <class_Reference>` 객체에게도 같은 원리가 적용됩니다. 사용자들은 "
+"종종 :ref:`노드 <class_Node>`\\ 와 :ref:`리소스 <class_Resource>`\\ 를 이런 "
+"방식으로 연결하지만, 대체 조치가 가능합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:36
 msgid ""
@@ -43078,8 +43168,8 @@ msgid ""
 "<class_Node_method__physics_process>` callback, which is called before each "
 "physics step at a constant frame rate (60 times per second by default)."
 msgstr ""
-"이러한 부정확성을 피하기 위해, 바디의 속성에 액세스 해야 하는 모든 코드는 각 "
-"물리 단계 전에 일정한 프레임률 (기본 초당 60회)로 호출되는 :ref:`Node."
+"이러한 부정확성을 피하기 위해, 바디의 속성에 접근해야 하는 모든 코드는 각 물"
+"리 단계 전에 일정한 프레임률 (기본 초당 60회)로 호출되는 :ref:`Node."
 "_physics_process() <class_Node_method__physics_process>` 콜백에서 실행되어야 "
 "합니다."
 
@@ -43375,8 +43465,8 @@ msgstr ""
 "하는 경우 ``_physics_process()`` 대신 :ref:`_integrate_forces() "
 "<class_RigidBody2D_method__integrate_forces>` 콜백을 사용해야 합니다. 이 콜백"
 "에서는 안전하게 속성을 변경하고 물리 엔진과 동기화할 수 있는 :ref:"
-"`Physics2DDirectBodyState <class_Physics2DDirectBodyState>`\\ 에 액세스 할 "
-"수 있습니다."
+"`Physics2DDirectBodyState <class_Physics2DDirectBodyState>`\\ 에 접근할 수 있"
+"습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:216
 msgid "For example, here is the code for an \"Asteroids\" style spaceship:"
@@ -44211,9 +44301,8 @@ msgid ""
 msgstr ""
 "물리 세계에서 Godot은 모든 낮은 수준의 충돌과 물리학 정보를 한 *공간* 에 저장"
 "합니다. 현재 2D 공간(2D 물리용)은 :ref:`CanvasItem.get_world_2d().space "
-"<class_CanvasItem_method_get_world_2d>` 에 액세스하여 얻을 수 있습니다. 3D의 "
-"경우 :ref:`Spatial.get_world().space <class_Spatial_method_get_world>` 입니"
-"다."
+"<class_CanvasItem_method_get_world_2d>` 에 접근하여 얻을 수 있습니다. 3D의 경"
+"우 :ref:`Spatial.get_world().space <class_Spatial_method_get_world>` 입니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:33
 msgid ""
@@ -44241,9 +44330,9 @@ msgid ""
 msgstr ""
 "Godot은 기본적으로 게임 로직과 동일한 스레드에서 실행되지만, 보다 효율적으로 "
 "작동하기 위해 별도의 스레드에서 실행되도록 설정할 수 있습니다. 이러한 이유"
-"로, 공간에 액세스하는 시간은 :ref:`Node._physics_process() "
+"로, 공간에 접근하는 시간은 :ref:`Node._physics_process() "
 "<class_Node_method__physics_process>` 콜백 함수 동안은 안전합니다. 이 함수 외"
-"부에서 액세스할 경우 공간이 *잠겨* 있기 때문에 오류가 발생할 수 있습니다."
+"부에서 접근할 경우 공간이 *잠겨* 있기 때문에 오류가 발생할 수 있습니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:47
 msgid ""
@@ -46322,7 +46411,7 @@ msgid ""
 msgstr ""
 "고도는 3x3 매트릭스의 특별한 유형을 가지고 있습니다. 이름 :ref:`Basis "
 "<class_basis>`. 이것은 3D 회전 및 스케일을 나타내는 데 사용할 수 있습니다. 다"
-"음과 같이 하위 벡터에 액세스할 수 있습니다:"
+"음과 같이 하위 벡터에 접근할 수 있습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:635
 msgid "Or, alternatively as:"
@@ -48021,7 +48110,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:271
 #, fuzzy
 msgid "Setting keyframes and excluding properties"
-msgstr "씬 노드 속성 액세스하기"
+msgstr "씬 노드 속성 접근하기"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:273
 msgid ""
@@ -62518,7 +62607,7 @@ msgstr "애셋 라이브러리"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
-msgstr ""
+msgstr "애셋 라이브러리에 대하여"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:6
 msgid ""

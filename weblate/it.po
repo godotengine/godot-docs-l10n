@@ -5,6 +5,7 @@
 # Alessandro Zoppi <alessandro.zoppi@live.it>, 2019.
 # Alessio Corridori <alessiocorridori@hotmail.com>, 2018.
 # Andrea Brunato <andrewlloys@gmail.com>, 2018.
+# Carlo Ciarrocchi <carlo.ciarrocchi2@gmail.com>, 2019.
 # cento <a.cento@icloud.com>, 2018.
 # Christian Biffi <creixx@virgilio.it>, 2019.
 # Daniele Tolomelli <daniel.tolomelli@gmail.com>, 2018.
@@ -14,6 +15,7 @@
 # Davide Wayan Mores <moresdavidewayan@gmail.com>, 2018.
 # Giacomo Bella <foliestere@gmail.com>, 2018-2019.
 # Giuseppe Guerra <me@nyodev.xyz>, 2019.
+# Giuseppe Tomasello <g.tomas98@gmail.com>, 2019.
 # Hairic95 <hairic95@gmail.com>, 2019.
 # Luana Pau <ezhael@gmail.com>, 2018.
 # Luca meremma <oea44041@bcaoo.com>, 2019.
@@ -44,8 +46,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-29 21:34+0200\n"
-"PO-Revision-Date: 2019-07-29 19:20+0000\n"
-"Last-Translator: Marco Galli <mrcgll98@gmail.com>\n"
+"PO-Revision-Date: 2019-09-01 08:26+0000\n"
+"Last-Translator: Mirko Soppelsa <miknsop@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -53,7 +55,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -375,7 +377,7 @@ msgid ""
 msgstr ""
 "Per un'occhiata più approfondita al motore, siete incoraggiati a leggere "
 "ulteriormente questa documentazione, in particolar modo il tutorial :ref:"
-"`Step by step <toc-learn-step_by_step>` ."
+"`Passo Passo <toc-learn-step_by_step>` ."
 
 #: ../../docs/about/introduction.rst:57
 msgid "About the documentation"
@@ -456,7 +458,7 @@ msgstr ""
 "La sezione :ref:`sec-learn` è la principale ragione per l'esistenza di "
 "questa documentazione visto che contiene tutte le informazioni necessarie su "
 "come utilizzare il motore per creare videogiochi. Inizia con il tutorial :"
-"ref:`Step by step <toc-learn-step_by_step>` che dovrebbe essere il punto di "
+"ref:`Passo Passo <toc-learn-step_by_step>` che dovrebbe essere il punto di "
 "inizio per tutti i nuovi utenti."
 
 #: ../../docs/about/introduction.rst:91
@@ -686,13 +688,13 @@ msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
-"Per avere maggiori informazioni  a questo riguardo fare riferimento alle "
+"Per avere maggiori informazioni  a questo riguardo, fare riferimento alle "
 "sezioni :ref:`exporting <toc-learn-workflow-export>`e :ref:`compiling Godot "
 "yourself <toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:62
 msgid "Which programming languages are supported in Godot?"
-msgstr "Quali sono i linguaggi sono supportati in Godot?"
+msgstr "Quali sono i linguaggi di programmazione supportati in Godot?"
 
 #: ../../docs/about/faq.rst:64
 msgid ""
@@ -747,12 +749,12 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Per quanto riguarda nuovi linguaggi, il supporto è possibile tramite terze "
-"parti utilizzando i servizi GDNative / NativeScript / PluginScript. (Vedere "
-"domanda sui plugin qui sotto.) Attualmente sono in corso lavori, ad esempio, "
-"su binding non ufficiali per usare Godot con `Python <https://github.com/"
-"touilleMan/godot-python>`_ o con `Nim <https://github.com/pragmagic/godot-"
-"nim>`_."
+"Per quanto riguarda nuovi linguaggi di programmazione, il supporto è "
+"possibile tramite terze parti utilizzando i servizi GDNative / "
+"NativeScript / PluginScript. (Vedere domanda sui plugin qui sotto.) "
+"Attualmente sono in corso lavori, ad esempio, su binding non ufficiali per "
+"usare Godot con `Python <https://github.com/touilleMan/godot-python>`_ o con "
+"`Nim <https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -830,7 +832,7 @@ msgstr ""
 "un'esperienza peggiore. Capiamo se volete utilizzare un altro linguaggio in "
 "Godot (vedere la lista delle opzioni supportate sopra). Detto questo, se non "
 "avete ancora provato GDScript, provatelo per **tre giorni**. Esattamente "
-"come per Godot, una volta che avrete constatato quanto potente é, e quanto "
+"come per Godot, una volta che avrete constatato quanto è potente, e quanto "
 "velocizza lo sviluppo, pensiamo che GDScript vi piacerá sempre di piú."
 
 #: ../../docs/about/faq.rst:118
@@ -880,7 +882,8 @@ msgid ""
 msgstr ""
 "L'interfaccia per il binding con C++ è orrible, e risulta in una quantità "
 "enorme di codice, bug, colli di bottiglia e inefficienze in generale (Lua, "
-"Python, Squirrel, JS, ecc.)."
+"Python, Squirrel, JS, ecc.). Volevamo concentrarci nel fare un ottimo motore "
+"di gioco, non su una grande quantità di integrazioni."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
@@ -969,7 +972,7 @@ msgstr ""
 "Godot ha l'obiettivo di creare una motore per videogiochi libero, open "
 "source, modulare ed estensibile. Non é previsto, da parte della comunitá di "
 "sviluppo del motore, il supporto per SDK di terze parti, a codice chiuso o "
-"proprietari in quanto integrarli andrebbe contro lo spitito di Godot."
+"proprietari in quanto integrarli andrebbe contro lo spirito di Godot."
 
 #: ../../docs/about/faq.rst:166
 msgid ""
@@ -988,7 +991,7 @@ msgid ""
 "the Plugins question below."
 msgstr ""
 "Per vedere come possa essere fornito il supporto per il SDK scelto, vedere "
-"la domanda sui Plugins poco sopra."
+"la domanda sui Plugins poco sotto."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -1066,7 +1069,7 @@ msgid ""
 "achieve this."
 msgstr ""
 "Utilizza le opzioni di adattamento in Godot; l'allungamento 2D con il "
-"mantenimento dell'aspetto da i migliori risultati. Controlla il :ref:"
+"mantenimento dell'aspetto dà i migliori risultati. Controlla il :ref:"
 "`doc_multiple_resolutions` tutorial su come ottenere questo risultato."
 
 #: ../../docs/about/faq.rst:205
@@ -1105,8 +1108,8 @@ msgstr ""
 "Se davvero desideri che il tuo gioco funzioni anche su vecchi device con "
 "piccoli schermi (meno di 300 pixel in larghezza), puoi usare l'opzione di "
 "esportazione per ridurre la dimensione delle immagini, e impostarla per "
-"essere usata con schermi di determinate dimesioni nell'App Store o in Google "
-"Play."
+"essere usata con schermi di determinate dimensioni nell' App Store o in "
+"Google Play."
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
@@ -1119,7 +1122,7 @@ msgid ""
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
 "Per  estendere Godot, ad esempio creando plugin per Godot Editor o "
-"aggiungere supporto per ulteriori linguaggi fai riferimento a :ref:"
+"aggiungere supporto per ulteriori linguaggi, fai riferimento a :ref:"
 "`EditorPlugins <doc_making_plugins>` e ai tool script."
 
 #: ../../docs/about/faq.rst:228
@@ -1265,11 +1268,11 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
-"Un buon modo per iniziare a codividere le tue idee e problemi con la "
-"comunitá é attraverso un insieme di situazioni di utilizzo. Spiega cosa stai "
-"cercando di fare, quale comportamento ti aspetti e quale comportamento ha "
+"Un buon modo per iniziare a condividere le tue idee e problemi con la "
+"comunità è attraverso un insieme di situazioni di utilizzo. Spiega cosa stai "
+"cercando di fare, quale comportamento ti aspetti e quale comportamento hai "
 "effettivamente riscontrato. Inquadrare problemi e idee in questo modo aiuta "
-"l'intera comunitá a concentrarsi sul migliorare l'esperienza degli "
+"l'intera comunità a concentrarsi sul migliorare l'esperienza degli "
 "sviluppatori in modo organico."
 
 #: ../../docs/about/faq.rst:281
@@ -1985,15 +1988,15 @@ msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
-"In alto, da sinistra a destra, è possibile visualizzare i **menu "
-"principali**, le **aree di lavoro**, e i **pulsanti playtest**."
+"In alto, da sinistra a destra, sono visibili i **menù principali**, gli "
+"**spazi di lavoro**, e i **bottoni di playtest**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
-"Sul lato sinistro troverai il **FileSystem dock**, dove potrai gestire i "
+"Sul lato sinistro troverai il pannello **FileSystem**, dove potrai gestire i "
 "file e le risorse del tuo progetto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
@@ -2037,7 +2040,7 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
-"Il pannello in basso è dedicato al debug , all'editor per le animazioni e il "
+"Il pannello in basso è dedicato al debug, all'editor per le animazioni e il "
 "mixer audio...Visto che occupano molto spazio, vengono mantenuti chiusi di "
 "default."
 
@@ -2048,7 +2051,7 @@ msgstr "|image14|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid "The workspaces"
-msgstr "Spazi di lavoro"
+msgstr "Gli spazi di lavoro"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid ""
@@ -2075,8 +2078,8 @@ msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
-"Nell'area di lavoro **3D** è possibile lavorare con mesh, luci e livelli di "
-"progettazione per giochi 3D. Premere F2 per accedervi."
+"Nell'area di lavoro **3D** è possibile lavorare con mesh, luci e progettare "
+"livelli per giochi 3D. Premere F2 per accedervi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
 msgid "|image16|"
@@ -2107,9 +2110,9 @@ msgid ""
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
 "to search the reference."
 msgstr ""
-"L'area di lavoro **Script** è un editor di codice completo con un debugger, "
-"un ricco auto-completamento e un codice di riferimento integrato. Premere F3 "
-"per accedervi e F4 per cercare nella documentazione."
+"La finestra **Script** è un editor di codice con un debugger, "
+"autocompletamento, e documentazione del codice integrata. Premi F3 per "
+"accedervi, e F4 per cercare nella documentazione."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:125
 msgid "|image17|"
@@ -2133,7 +2136,7 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio for instance."
 msgstr ""
-"L'interfaccia di Godot vive in una sola finestra. Non è possibile dividerlo "
+"L'interfaccia di Godot vive in una sola finestra. Non è possibile dividerla "
 "in più schermate, anche se è possibile lavorare con un editor di codice "
 "esterno come Atom o Visual Studio, per esempio."
 
@@ -2157,8 +2160,8 @@ msgstr "|image18|"
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
-"Fare clic sull'icona a tre punti nella parte superiore di qualsiasi dock per "
-"modificarne la posizione."
+"Fare clic sull'icona con i tre punti nella parte superiore di qualsiasi dock "
+"per modificarne la posizione."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid "|image19|"
@@ -2263,7 +2266,7 @@ msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
-"L'ultimo attributo é importante. I nodi posso avere altri nodi come figli. "
+"Quest'ultimo è importante. I nodi possono avere altri nodi come figli. "
 "Quando sono organizzati in questo modo, i nodi diventano un **albero**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
@@ -2318,7 +2321,7 @@ msgstr "puó essere salvata su disco e ri-caricata."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr "puó essere *instanziata* (maggiori dettagli piú avanti)."
+msgstr "può essere *istanziato* (maggiori spiegazioni a breve)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
@@ -4485,6 +4488,12 @@ msgid ""
 "\"New CapsuleShape2D\".  Using the two size handles, resize the shape to "
 "cover the sprite:"
 msgstr ""
+"Infine, aggiungi un :ref:`CollisionShape2D <class_CollisionShape2D>` come "
+"figlio di ``Player``. Questo determinerà la \"hitbox\" del giocatore, in "
+"altre parole i limiti dell'area di collisione. Per questo personaggio, un "
+"nodo ``CapsuleShape2D`` è la scelta migliore, quindi vicino a \"Shape\" nel "
+"Inspector, clicca \"[empty]\"\" -> \"New CapsuleShape2D\".  Usando le due "
+"maniglie di dimensione, ridimensiona la forma in modo da coprire la sprite:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:133
 msgid "When you're finished, your ``Player`` scene should look like this:"
@@ -4557,6 +4566,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Se stai usando C#,  devi (ri)costruire l'assemblaggio del progetto ogni "
+"volta che vuoi vedere le nuove variabili esportate o i segnali. Questa "
+"costruzione può essere attivata facendo click sulla parola \"Mono\" in "
+"basso, nella finestra dell' editor, per rivelare il panello Mono,  quindi "
+"fare click sul pulsante \"Build Project\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -4626,6 +4640,13 @@ msgid ""
 "``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
+"Iniziamo impostando la ``velocity`` a ``(0, 0)`` - di default il giocatore "
+"non dovrebbe muoversi. Poi controlliamo ogni input e aggiungiamo/sottraiamo "
+"da ``velocity`` per ottenere una direzione globale. Per esempio, se tieni "
+"premuto ``right`` e ``down`` allo stesso tempo, il vettore ``velocity`` che "
+"otterremo sarà ``(1, 1)``. In questo caso, dato che stiamo sommando un "
+"movimento orizzontale e uno verticale, il giocatore si muoverà *più* "
+"*velocemente* rispetto al solo movimento orizzontale."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:294
 msgid ""
@@ -4633,6 +4654,10 @@ msgid ""
 "*length* to ``1``, and multiply by the desired speed. This means no more "
 "fast diagonal movement."
 msgstr ""
+"Possiamo prevenire ciò *normalizzando* la velocità, che significa impostare "
+"la sua *lunghezza* a ``1``, dopodiché possiamo moltiplicare il vettore per "
+"la velocità desiderata. In questo modo possiamo evitare i movimenti "
+"diagonali a velocità maggiore."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:298
 msgid ""
@@ -4695,6 +4720,11 @@ msgid ""
 "scene can be closed by clicking ``Output`` (which should be highlighted in "
 "blue) in the lower left of the Bottom Panel."
 msgstr ""
+"Clicca \"Play Scene\" (``F6``) e conferma che puoi muovere il giocatore "
+"sullo schermo in tutte le direzioni. La console di output che si aprirà "
+"all'avvio della scena può essere chiusa facendo click su ``Output`` (il "
+"quale dovrebbe essere evidenziato in blu) in basso a sinistra del pannello "
+"inferiore."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:338
 msgid ""
@@ -4703,6 +4733,11 @@ msgid ""
 "are case-sensitive and ``$NodeName`` or ``get_node(\"NodeName\")`` must "
 "match the name you see in the scene tree."
 msgstr ""
+"Se nel pannello \"Debugger\" ricevi un errore che fa riferimento a una "
+"\"null instance\" significa che probabilmente hai sbagliato a scrivere il "
+"nome del nodo. I nomi dei nodi sono case-sensitive (distinguono tra "
+"maiuscole e minuscole) ``$NodeName`` e ``get_node(\"NodeName\")`` devono "
+"corrispondere esattamente al nome che vedi nell'albero di scena."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:343
 msgid "Choosing animations"
@@ -4717,6 +4752,13 @@ msgid ""
 "``flip_v`` for downward movement. Let's place this code at the end of our "
 "``_process()`` function:"
 msgstr ""
+"Ora che il giocatore si può muovere, abbiamo bisogno di cambiare "
+"l'animazione eseguita da AnimatedSprite in base alla direzione. Abbiamo "
+"l'animazione \"right\", che deve essere specchiata orizzontalmente usando la "
+"proprietà ``flip_h`` per ottenere il movimento a sinistra, e un animazione "
+"\"up\",  la quale deve essere capovolta verticalmente  con ``flip_v`` per "
+"ottenere il movimento verso il basso. Aggiungiamo questo pezzo di codice "
+"alla fine della funzione ``_process()``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:379
 msgid ""
@@ -4724,6 +4766,8 @@ msgid ""
 "programmers. Consider this code versus the shortened boolean assignment "
 "above:"
 msgstr ""
+"L'assegnazione di booleane nel codice qui sopra è un'abbreviazione comune "
+"usata dai programmatori. Paragona il codice precedente con il seguente:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:398
 msgid ""
@@ -4731,10 +4775,13 @@ msgid ""
 "the directions. When you're sure the movement is working correctly, add this "
 "line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
+"Avvia nuovamente la scena e per ogni direzione controlla che le animazioni "
+"siano corrette. Terminato il controllo aggiungi la seguente linea di codice "
+"a ``_ready()``, così che il giocatore sia nascosto all'avvio del gioco:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:413
 msgid "Preparing for collisions"
-msgstr ""
+msgstr "Preparazione per le collisioni"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:415
 msgid ""
@@ -4742,6 +4789,9 @@ msgid ""
 "any enemies yet! That's OK, because we're going to use Godot's *signal* "
 "functionality to make it work."
 msgstr ""
+"Vogliamo che il  ``Player`` rilevi quando viene colpito da un nemico, ma non "
+"abbiamo ancora creato nemici! Non c'è problema, perché useremo la "
+"funzionalità *segnali* di Godot per fare in modo che funzioni."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:419
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
@@ -4755,6 +4805,11 @@ msgid ""
 "detect the collision. Select the ``Player`` node and click the \"Node\" tab "
 "next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
+"Questo definisce un segnale personalizzato chiamato \"hit\" che il giocatore "
+"emetterà  quando entra a contatto con un nemico. Useremo ``Area2D``per "
+"rilevare la collisione. Seleziona il nodo ``Player`` e fai click "
+"sull'etichetta \"Node\", vicino a \"Inspector\", per vedere la lista di "
+"segnali che il giocatore può emettere:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:440
 msgid ""
@@ -4800,10 +4855,12 @@ msgid ""
 "The last piece for our player is to add a function we can call to reset the "
 "player when starting a new game."
 msgstr ""
+"L'ultimo pezzo da aggiungere al nostro giocatore è una funzione che possiamo "
+"chiamare per resettarlo quando si comincia una nuova partita."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:502
 msgid "Enemy scene"
-msgstr ""
+msgstr "Scena nemico"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:504
 msgid ""
@@ -4829,31 +4886,35 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:517
 msgid "The Mob scene will use the following nodes:"
-msgstr ""
+msgstr "La scena \"Mob\" userà i seguenti nodi:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:519
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (chiamato ``Mob``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:521
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
-msgstr ""
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:522
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
-msgstr ""
+msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:523
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
 msgstr ""
+":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (chiamato "
+"``Visibility``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:525
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
 msgstr ""
+"Non dimenticare di impostare i nodi figli in modo che non possano essere "
+"selezionati, come hai fatto con la scena del Giocatore."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:528
 msgid ""
@@ -4862,6 +4923,11 @@ msgid ""
 "``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
+"Nelle proprietà di :ref:`RigidBody2D <class_RigidBody2D>`, imposta ``Gravity "
+"Scale`` a ``0`` in modo che il nemico non cada verso il basso. Inoltre, "
+"sotto la sezione ``PhysicsBody2D``, clicca sulla proprietà  ``Mask`` e "
+"deseleziona la prima casella. Questo farà in modo che i nemici non collidano "
+"tra di loro."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:535
 msgid ""
@@ -4871,17 +4937,26 @@ msgid ""
 "\"Speed (FPS)\" setting as shown below. We'll select one of these animations "
 "randomly so that the mobs will have some variety."
 msgstr ""
+"Imposta :ref:`AnimatedSprite <class_AnimatedSprite>` come hai fatto per il "
+"giocatore. Questa volta abbiamo 3 animazioni: ``fly``, ``swim`` e ``walk``. "
+"Imposta la proprietà ``Playing`` nell'Inspector su \"On\" e regola la "
+"proprietà \"Speed (FPS)\" come mostrato sotto. Selezioneremo casualmente una "
+"di queste animazione in modo che i nemici abbiamo un po' di varietà."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:542
 msgid ""
 "``fly`` should be set to 3 FPS, with ``swim`` and ``walk`` set to 4 FPS."
 msgstr ""
+"``fly`` andrebbe impostato a 3 FPS, mentre ``swim`` e ``walk`` a 4 FPS."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:544
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
+"Come per le immagini del giocatore, anche quelle del nemico dovranno essere "
+"rimpicciolite. Imposta la proprietà ``Scale`` dell' ``AnimatedSprite`` a "
+"``(0.75, 0.75)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:547
 msgid ""
@@ -4891,13 +4966,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:552
-#, fuzzy
 msgid "Enemy script"
-msgstr "Descrizione"
+msgstr "Script del nemico"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:554
 msgid "Add a script to the ``Mob`` and add the following member variables:"
-msgstr ""
+msgstr "Aggiungere uno script a ``Mob`` e le seguenti variabili membro:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:580
 msgid ""
@@ -74470,7 +74544,7 @@ msgid ""
 "If you're interested in Visual Scripting, `Emilio's tutorials <https://www."
 "youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ may be worth a look."
 msgstr ""
-"Se sei interessato  al Visual Scripting, `Emilio's tutorials <https://www."
+"Se sei interessato al Visual Scripting, `Emilio's tutorials <https://www."
 "youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ potrebbe essere interessante."
 
 #: ../../docs/community/tutorials.rst:17

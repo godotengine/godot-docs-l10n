@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # agrocs <apittakis@csd.auth.gr>, 2019.
+# Ahilleas Balaktsis <ahibala@gmail.com>, 2019.
 # Andy <bookoftrust@gmail.com>, 2018.
 # George Tsiamasiotis <gtsiam@windowslive.com>, 2018-2019.
 # Konstantinos Poulopoulos <aatyrael@gmail.com>, 2018.
@@ -14,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-29 21:34+0200\n"
-"PO-Revision-Date: 2019-07-02 12:04+0000\n"
+"PO-Revision-Date: 2019-09-01 08:25+0000\n"
 "Last-Translator: George Tsiamasiotis <gtsiam@windowslive.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/el/>\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -295,7 +296,6 @@ msgid "About Godot Engine"
 msgstr "Σχετικά με τη Godot"
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
@@ -307,7 +307,6 @@ msgstr ""
 "σύντομη περιγραφή σχετικά με την Godot."
 
 #: ../../docs/about/introduction.rst:38
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -325,7 +324,6 @@ msgstr ""
 "καθώς και τις φορητές (Android,  IOS) και τις διαδικτυακές (HTML5)."
 
 #: ../../docs/about/introduction.rst:45
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -358,7 +356,6 @@ msgid "About the documentation"
 msgstr "Σχετικά με την τεκμηρίωση"
 
 #: ../../docs/about/introduction.rst:59
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -399,7 +396,6 @@ msgstr ""
 "\"Juan Linietsky, Ariel Manzur και η κοινότητα της Godot\"."
 
 #: ../../docs/about/introduction.rst:77
-#, fuzzy
 msgid "Organization of the documentation"
 msgstr "Οργάνωση της τεκμηρίωσης"
 
@@ -437,7 +433,6 @@ msgstr ""
 "εισαγωγής για όλους τους νέους χρήστες."
 
 #: ../../docs/about/introduction.rst:91
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
@@ -457,7 +452,6 @@ msgstr ""
 "επεξεργαστή."
 
 #: ../../docs/about/introduction.rst:96
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -512,7 +506,6 @@ msgstr ""
 "Τι μπορώ να κάνω με την Godot? Τι κοστίζει? Ποίοι είναι οι όροι της άδειας?"
 
 #: ../../docs/about/faq.rst:9
-#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
@@ -527,7 +520,6 @@ msgid "In short:"
 msgstr "Σε συντομία:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
@@ -544,7 +536,6 @@ msgstr ""
 "όπως θελήσετε, για κάθε λόγο, μη εμπορικό και εμπορικό."
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
@@ -580,7 +571,6 @@ msgstr ""
 "αποθετήριο κώδικα της Godot."
 
 #: ../../docs/about/faq.rst:28
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
@@ -670,7 +660,6 @@ msgstr ""
 "workflow-export>` και :ref:`Μεταγλώτηση της Godot <toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:62
-#, fuzzy
 msgid "Which programming languages are supported in Godot?"
 msgstr "Ποιες γλώσσες υποστηρίζονται από την Godot?"
 
@@ -694,14 +683,14 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
-"Εάν μόλις τώρα ξεκινάτε είτε με τη Godot είτε με την ανάπτυξη παιχνιδιών "
+"Εάν μόλις τώρα ξεκινάτε είτε με τη μηχανή Godot ή με την ανάπτυξη παιχνιδιών "
 "γενικά, η GDScript είναι η προτεινόμενη γλώσσα για να μάθετε και να "
-"χρησιμοποιήσετε από τη στιγμή που είναι μητρική στη Gobot. Ενώ οι γλώσσες "
-"scripting, έχουν την τάση να είναι λιγότερι αποδοτικές σε σχέση με τις "
-"χαμηλού επιπέδου γλώσσες μακροπρόθεσμα, για το προτότυπο, την ανάπτυξη "
-"Minimum Viable Products(MVPs), επικεντρώνοντας στο Time-To-Market (TTM), η "
-"GDScript θα παρέχει έναν γρήγορο, φιλικό, και ικανό τρόπο για να αναπτύξετε "
-"τα παιχνίδια σας."
+"χρησιμοποιήσετε από τη στιγμή που είναι απευθείας συγγενής με την μηχανή "
+"Godot. Ενώ οι γλώσσες scripting, έχουν την τάση να είναι λιγότερο αποδοτικές "
+"σε σχέση με τις χαμηλού επιπέδου γλώσσες μακροπρόθεσμα, για το πρωτότυπο, "
+"την ανάπτυξη Minimum Viable Products(MVPs), επικεντρώνοντας στο Time-To-"
+"Market (TTM), η GDScript θα παρέχει έναν γρήγορο, φιλικό, και ικανό τρόπο "
+"για να αναπτύξετε τα παιχνίδια σας."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -13261,7 +13250,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr ""
+msgstr "Αναπλήρωση"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -13455,7 +13444,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
-msgstr ""
+msgstr "Πρόθεμα"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"

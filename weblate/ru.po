@@ -13,6 +13,7 @@
 # Alex <snimalovo@gmail.com>, 2018.
 # Allan Nordhøy <epost@anotheragency.no>, 2019.
 # Anatolich <rva.moscow@gmail.com>, 2018.
+# Andrey Khodko <andrei.khodko@gmail.com>, 2019.
 # Andrii Doroshenko <xrayez@gmail.com>, 2018.
 # Anton <rokketjump@gmail.com>, 2019.
 # Anton Ivanov <sylaralastr@gmail.com>, 2018.
@@ -41,9 +42,11 @@
 # JackLite <jackkdlite@gmail.com>, 2018.
 # jpVm5jYYRE1VIKL <fuxfwgc4a2i1gr@gmail.com>, 2019.
 # Kenta Akiyama <kentaakiyamagd@gmail.com>, 2018.
+# keryxified <keryxified@yandex.ru>, 2019.
 # LAT_Rio <AlSenya@yandex.ru>, 2018.
 # LeLuCh B0й <alekx@alumni.nottingham.ac.uk>, 2019.
 # luckyuk <im-kerber@mail.ru>, 2018-2019.
+# Maxim Samburskiy <alpacones@outlook.com>, 2019.
 # Mintormo <adenos@mail.ru>, 2018.
 # mirrorrim <hieronymus1100@gmail.com>, 2019.
 # N1 <salminvadim32@gmail.com>, 2019.
@@ -58,9 +61,11 @@
 # PJ <Montigor0@gmail.com>, 2019.
 # Ratmir Karabut <rkarabut@gmail.com>, 2019.
 # Roman <Steel_hawk@list.ru>, 2018-2019.
+# Roman Cherneckiy <grein.vrn@gmail.com>, 2019.
 # Ruaguzov Michael <miha890r@gmail.com>, 2019.
 # sample text <sampletext32@bk.ru>, 2018.
 # Sam Serious <samserious25@gmail.com>, 2019.
+# ScratchTrash <leonidussaks@gmail.com>, 2019.
 # Sergey <maligin.serega2010@yandex.ru>, 2018.
 # Sergey Grinev <sgreenyov@gmail.com>, 2018.
 # Shohrukh Nuriddinov <shohrukhnuriddinov1999@gmail.com>, 2019.
@@ -84,11 +89,12 @@
 # Влад Афонин (Midnightcoder) <afonin.com123@gmail.com>, 2018.
 # Дарисон ДиДжей Младший <xd02-02@mail.ru>, 2019.
 # Дмитрий <Aress.87@mail.ru>, 2019.
-# Дмитрий Ефимов <daefimov@gmail.com>, 2018.
+# Дмитрий Ефимов <daefimov@gmail.com>, 2018-2019.
 # Егор Бураков <fend.q@mail.ru>, 2018.
 # Егор Рябуха (REgorion) <ryrgor@gmail.com>, 2018.
 # Игорь Д <protorian.di@gmail.com>, 2018-2019.
 # Игорь Патиевич <ipcorps@gmail.com>, 2018.
+# Константин Рин <email.to.rean@gmail.com>, 2019.
 # Лошаденко Максим Юриевич <vidos4all@gmail.com>, 2018.
 # Михаил <gagaran480@gmail.com>, 2018.
 # Озвучивает R2 <magabumbum@gmail.com>, 2018.
@@ -101,8 +107,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-29 21:34+0200\n"
-"PO-Revision-Date: 2019-07-25 07:19+0000\n"
-"Last-Translator: Chaosus89 <chaosus89@gmail.com>\n"
+"PO-Revision-Date: 2019-09-01 08:25+0000\n"
+"Last-Translator: keryxified <keryxified@yandex.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -111,7 +117,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -239,7 +245,7 @@ msgstr "Начало работы"
 
 #: ../../docs/index.rst:77
 msgid "Tutorials"
-msgstr "Уроки"
+msgstr "Обучающие разделы"
 
 #: ../../docs/index.rst:107
 msgid "Development"
@@ -381,8 +387,8 @@ msgid ""
 "if you need a quick writeup about Godot Engine."
 msgstr ""
 "Игровой движок - это сложный инструмент, и поэтому довольно сложно описать "
-"его несколькими словами. Это небольшой конспект, который можно использовать "
-"как краткое описание Godot Engine."
+"его несколькими словами. Это небольшой конспект, который Вы вольны "
+"использовать как краткое описание Godot Engine."
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -393,13 +399,12 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot Engine это многофункциональный, кросс-платформенный движок для "
-"создания 2D и 3D игр в единой среде разработки. Он предоставляет "
-"внушительный набор инструментов, чтобы пользователи могли сосредоточиться на "
-"создании игр без необходимости изобретения велосипедов. Игры могут быть "
-"экспортированы одним нажатием на многие платформы, включая главные "
-"настольные платформы (Linux, macOS, Windows),а также мобильные (Android, "
-"iOS) и веб-платформы (HTML5)."
+"Godot - это полноценный, кросс-платформенный движок для создания 2D и 3D игр "
+"в удобной среде разработки. Он предоставляет внушительный набор необходимых "
+"инструментов, чтобы пользователи могли сосредоточиться на создании игр не "
+"изобретая велосипед. Одним кликом игры могут быть экспортированы на "
+"множество платформ, включая основные десктопные (Linux, macOS, Windows), а "
+"так же мобильные (Android, iOS) и веб-платформы (HTML5)."
 
 #: ../../docs/about/introduction.rst:45
 msgid ""
@@ -410,12 +415,12 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot полностью бесплатен и его исходный код открыт под лицензией MIT. "
-"Никаких обязательств или выплат - ничего. Игры пользователей принадлежат им "
-"до последней строчки кода движка. Разработка Godot полностью независима и "
-"контролируется сообществом, давая пользователям возможность изменять движок "
-"в соответствиями с их пожеланиями. При поддержке `Software Freedom "
-"Conservancy <https://sfconservancy.org>`_ not-for-profit."
+"Godot абсолютно бесплатен, с открытым исходным кодом в соответствии с "
+"лицензией MIT. Никаких лицензионных платежей, и т. д. и т.п. Разработка "
+"Godot полностью независима и управляется сообществом, давая возможность "
+"пользователям создать свой инструмент, чтобы он соответствовал их ожиданиям. "
+"Это поддерживается некоммерческой `Software Freedom Conservancy <https://"
+"sfconservancy.org>`_ not-for-profit."
 
 #: ../../docs/about/introduction.rst:52
 msgid ""
@@ -424,8 +429,8 @@ msgid ""
 "step_by_step>` tutorial."
 msgstr ""
 "Для дальнейшего изучения возможностей мы рекомендуем более подробное "
-"изучение документации, особенно руководства :ref:`Шаг за шагом <toc-learn-"
-"step_by_step>`."
+"изучение документации, особенно обучающего раздела :ref:`Пошаговое обучение "
+"<toc-learn-step_by_step>`."
 
 #: ../../docs/about/introduction.rst:57
 msgid "About the documentation"
@@ -475,7 +480,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:77
 msgid "Organization of the documentation"
-msgstr "Структура документации"
+msgstr "Создание документации"
 
 #: ../../docs/about/introduction.rst:79
 msgid ""
@@ -514,8 +519,9 @@ msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-"При необходимости, секцию :ref:`sec-tutorials` можно читать в любом порядке. "
-"Она содержит руководства и документацию по конкретным возможностям движка."
+"Секцию :ref:`sec-tutorials` можно читать по мере необходимости, в любом "
+"порядке. Она содержит руководства и документацию по конкретным возможностям "
+"движка."
 
 #: ../../docs/about/introduction.rst:93
 msgid ""
@@ -602,7 +608,7 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Вы можете бесплатно скачивать и использовать Godot для любых целей, личных, "
+"Вы можете бесплатно скачивать и использовать Godot для любых целей: личных, "
 "некоммерческих, коммерческих или иных."
 
 #: ../../docs/about/faq.rst:14
@@ -610,8 +616,8 @@ msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Вы можете свободно модифицировать, распространять и пересобирать Godot в "
-"любых целях, как коммерческих, так и некоммерческих."
+"Вы можете свободно изменять, распространять  и пересобирать Godot по любой "
+"причине, как не коммерчески, так и коммерчески."
 
 #: ../../docs/about/faq.rst:16
 msgid ""
@@ -821,7 +827,8 @@ msgstr ""
 "как можно быстрее использовать сильные стороны Godot. Если вы когда нибудь "
 "писали что нибудь на языке, вроде Python, то тут вы почувствуете себя как "
 "дома. Примеры, история и полный обзор возможностей, предлагаемых GDScript, "
-"ждут вас в `GDScript scripting guide <gdscript_basics>`_."
+"ждут вас в :ref:`Руководство по программированию на GDScript "
+"<gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -830,10 +837,11 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
-"Есть несколько причин использовать GDScript -- особенно когда вы "
-"прототипируете, в альфа/бета состояниях вашего проекта или создании игры не "
-"AAA класса -- но наиболее существенной причиной является общее **снижение "
-"сложности.**"
+"Есть несколько причин использовать GDScript: например, когда вы "
+"прототипируете свой проект, либо он находится на стадии альфа/бета "
+"тестирования, либо работаете над созданием игры не AAA класса. В этих и "
+"подобных случаях, если вам необходимо **снижение сложности** в разработке "
+"проекта, то GDScript поможет в короткие сроки достичь ваших целей. "
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -924,9 +932,10 @@ msgid ""
 "engine, not a great amount of integrations."
 msgstr ""
 "Многие существующие языки имеют ужасные интерфейсы для привязки к C ++, что "
-"приводит к большому количеству кода, ошибкам, узким местам и общей "
-"неэффективности (Lua, Python, Squirrel, JS и т. Д.). Мы хотели "
-"сосредоточиться на отличном движке, а не на большом количестве интеграций."
+"приводит к большому количеству кода, ошибкам, \"бутылочным горлышкам\" и "
+"общей неэффективности (Lua, Python, Squirrel, JS и т. Д.). Мы хотели "
+"сосредоточиться на качественном движке, а не на большом количестве "
+"интеграций."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
@@ -992,7 +1001,7 @@ msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question below.)"
 msgstr ""
-"SDK для FBX имеет очень `ограниченную лицензию <http://www.blender.org/bf/"
+"SDK для FBX имеет `ограничительную лицензию <http://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, которая несовместима с `открытой лицензией "
 "<http://opensource.org/licenses/MIT>`_ движка Godot. Как уже было сказано, "
 "поддержка FBX все еще возможна, с помощью сторонних плагинов. (См. Вопрос о "
@@ -1034,8 +1043,8 @@ msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
-"Чтобы узнать как еще можно обеспечить поддержку вашего SDK, взгляните на "
-"вопрос о плагинах выше."
+"Чтобы узнать, как еще можно обеспечить поддержку вашего SDK, прочтите в "
+"вопросах о плагинах выше."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -1112,9 +1121,9 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Используйте варианты растягивания в Godot. 2D растяжение с сохранением "
-"пропорций работает лучше всего. Проверьте :ref:`doc_multiple_resolutions` "
-"урок о том, как этого достичь."
+"Используйте варианты растяжения в Godot. 2D растяжение с сохранением "
+"пропорций работает лучше всего. Проверьте урок :ref:"
+"`doc_multiple_resolutions` о том, как этого достичь."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -1123,10 +1132,10 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
-"Определите минимальное разрешение, а затем решите, хотите ли вы, чтобы ваша "
+"Определите минимальное разрешение и затем решите: хотите ли Вы, чтобы ваша "
 "игра растягивалась вертикально или горизонтально для разных соотношений "
-"сторон или была в одном минимальном разрешении, с отображением черных шкал "
-"прогресса по краям. Это также объяснялось в :ref:`doc_multiple_resolutions`."
+"сторон, или была в одном разрешении с отображением черных полос по краям. "
+"Это также объясняется в :ref:`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -1166,8 +1175,8 @@ msgid ""
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
 "Для расширения Godot, например, для создания плагинов редактора Godot или "
-"добавления поддержки дополнительных языков, взгляните на :ref:`EditorPlugins "
-"<doc_making_plugins>` и инструмент-скрипты (tool скрипты)."
+"добавления поддержки дополнительных языков, взгляните на :ref:`Редактор "
+"плагинов <doc_making_plugins>` и инструментальные скрипты (tool скрипты)."
 
 #: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
@@ -1315,7 +1324,7 @@ msgstr ""
 "Хороший способ подхода к обмену идеями и проблемами с сообществом — это "
 "набор пользовательских историй.  Объясните, что вы пытаетесь сделать, какое "
 "поведение вы ожидаете, а затем, какое поведение на самом деле произошло. "
-"Обрамление проблем и идей таким образом поможет всему сообществу "
+"Описание круга проблем и идей таким образом поможет всему сообществу "
 "сосредоточиться на улучшении опыта разработчиков в целом."
 
 #: ../../docs/about/faq.rst:281
@@ -1348,7 +1357,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr "История изменений документации"
+msgstr "Журнал изменений документации"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -1360,7 +1369,8 @@ msgstr ""
 "Документация постоянно совершенствуется. Релиз версии 3.1 включает в себя "
 "множество новых обучающих разделов, множество исправлений и обновлений для "
 "старых обучающих разделов, а также множество обновлений справочника классов. "
-"Ниже приведен список новых учебных разделов, добавленных в версии 3.0."
+"Ниже приведен список новых учебных разделов, добавленных, начиная с версии "
+"3.0."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -1368,8 +1378,9 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
-"Этот документ содержит только новые руководства, многие руководства были "
-"существенно обновлены, но не вошли в этот документ."
+"Этот документ содержит только новые учебные разделы, поэтому отражаются не "
+"все изменения, многие учебные разделы были существенно обновлены, но не "
+"отражены в этом документе."
 
 #: ../../docs/about/docs_changelog.rst:14
 #, fuzzy
@@ -1445,11 +1456,11 @@ msgstr "Локализация"
 #: ../../docs/about/docs_changelog.rst:156
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr "Шейдеры"
+msgstr "Шейдинг"
 
 #: ../../docs/about/docs_changelog.rst:50
 msgid "Your First Shader Series:"
-msgstr "Ваш Первый Ряд Шейдеров:"
+msgstr "Ваш Первый Набор Шейдеров:"
 
 #: ../../docs/about/docs_changelog.rst:52
 #, fuzzy
@@ -1538,7 +1549,7 @@ msgstr ":ref:`Использование серверов <doc_using_servers>`"
 #: ../../docs/about/docs_changelog.rst:85
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr "Легализация"
+msgstr "Законность"
 
 #: ../../docs/about/docs_changelog.rst:87
 #, fuzzy
@@ -1547,7 +1558,7 @@ msgstr ":ref:`Соответствие с Лицензиями <doc_complying_wi
 
 #: ../../docs/about/docs_changelog.rst:90
 msgid "New tutorials since version 3.0"
-msgstr "Новые руководства, начиная с версии 3.0"
+msgstr "Новые учебные разделы в версии 3.0"
 
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/getting_started/step_by_step/index.rst:2
@@ -1774,7 +1785,7 @@ msgstr ":ref:`Точечные шейдеры <doc_particle_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:171 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr "VR"
+msgstr "Виртуальная реальность"
 
 #: ../../docs/about/docs_changelog.rst:173
 #, fuzzy
@@ -2173,8 +2184,8 @@ msgid ""
 "to search the reference."
 msgstr ""
 "Рабочая область **Script** - это полноценный редактор кода с отладчиком, "
-"богатым автодополнением и встроенной ссылкой на код. Нажмите F3 для доступа "
-"к нему, а F4 - для поиска ссылки."
+"богатым автодополнением и встроенной документацией. Нажмите F3 для доступа к "
+"нему, а F4 - для поиска по документации."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:125
 msgid "|image17|"
@@ -2198,9 +2209,9 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio for instance."
 msgstr ""
-"Интерфейс Godot живет в одном окне. Вы не можете разделить его на несколько "
-"экранов, хотя вы можете работать с внешним редактором кода, например Atom "
-"или Visual Studio."
+"Весь интерфейс Godot располагается в одном окне. Вы не можете разделить его "
+"на несколько экранов, но можете задействовать внешний редактор кода, "
+"например Atom или Visual Studio."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
 msgid "Move and resize docks"
@@ -2281,8 +2292,9 @@ msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
+"\n"
 "Существует множество типов узлов. Некоторые показывают изображения, другие "
-"воспроизводят звук, другие узлы отображают 3D-модели и т.д. Их десятки."
+"играют звук, другие узлы отображают 3D-модели и т. д.. Их десятки."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:110
@@ -2383,7 +2395,7 @@ msgstr "могут быть сохранены на диск и загружен
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr "могут быть *инстанцированы* (подробнее об этом позже)."
+msgstr "могут быть *интегрированы* (подробнее об этом позже)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
@@ -2431,8 +2443,8 @@ msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name \"New Project\":"
 msgstr ""
-"Чтобы создать новый проект, нажмите \"Новый проект\". Выберите и создайте "
-"путь для проекта, укажите его название \"Новый проект\":"
+"Чтобы создать новый проект, нажмите \"Новый проект\". Задайте путь для "
+"проекта и укажите его название \"Новый проект\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 #: ../../docs/getting_started/editor/external_editor.rst:32
@@ -2602,8 +2614,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
-"Чтобы открыть это диалоговое окно, выберите меню Проект -> Настройки "
-"проекта. Попробуйте прямо сейчас."
+"Чтобы открыть это окно, выберите «Проект -> Настройки проекта». Попробуй "
+"сейчас."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:190
 msgid ""
@@ -3842,7 +3854,6 @@ msgstr ""
 "`SceneTree.get_nodes_in_group() <class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -3854,7 +3865,7 @@ msgstr ""
 "методов, таких как взаимодействие со сценами, иерархия узлов и групп узлов. "
 "Он позволяет вам легко переключать сцены или перезагружать их, выходить из "
 "игры или делать паузу и продолжать далее. У него также есть интересные "
-"сигналы. Поэтому ознакомьтесь с ним, когда будет время!"
+"сигналы. Ознакомьтесь с ним, когда будет время!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:157
@@ -4535,7 +4546,6 @@ msgstr ""
 "``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:124
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -4545,9 +4555,9 @@ msgid ""
 "cover the sprite:"
 msgstr ""
 "Наконец, добавьте :ref:`CollisionShape2D <class_CollisionShape2D>` в "
-"качестве потомка в ``Player``. Это позволит задать игроку \"hitbox\" или, "
-"иначе говоря, границы зоны определения столкновений. Для этого персонажа "
-"лучше всего подходит узел ``CapsuleShape2D``, поэтому далее идем в "
+"качестве дочернего узла в ``Player``. Это позволит задать игроку \"Hitbox\" "
+"или, иначе говоря, границы зоны определения столкновений. Для этого "
+"персонажа лучше всего подходит узел ``CapsuleShape2D``, поэтому далее идем в "
 "Инспектор, и в разделе \"Shape\" щелкаем \"[empty]\"\" -> \"New "
 "CapsuleShape2D\". Подгоните размер фигуры под размер изображения:"
 
@@ -5496,7 +5506,6 @@ msgid "MessageLabel"
 msgstr "MessageLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:934
-#, fuzzy
 msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "Text: ``Уворачивайся от крипов!``"
 
@@ -5687,15 +5696,14 @@ msgstr ""
 "в ``Main.gd``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
-#, fuzzy
 msgid ""
 "This line tells the new Mob node (referenced by the ``mob`` variable) to "
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
 "its ``_on_start_game()`` function."
 msgstr ""
-"Эта строка говорит новому узлу Mob (...) отвечать на все сигналы "
-"``start_game``, отправленные ``HUD``, исполнением функции "
-"``_on_start_game()``."
+"Эта строка говорит новому узлу Mob (определённому переменной ``mob`` ) "
+"отвечать на все сигналы ``start_game``, отправленные узлом ``HUD``, "
+"исполнением функции ``_on_start_game()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1172
 msgid "Finishing up"
@@ -5906,15 +5914,16 @@ msgstr ""
 "в *Input Devices* и *Pointing*"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
-#, fuzzy
 msgid ""
 "Before we change the input method, in the project settings go to *Display*, "
 "then click on *Window*. In the *Stretch* options, set *Mode* to \"2d\" and "
 "*Aspect* to \"keep\". This ensures that the game scales consistently on "
 "different sized screens."
 msgstr ""
-"В разделе *Stretch*, измените *Mode* на «2d» и *Aspect* на \"keep\".Теперь "
-"игра будет масштабируется на экранах разных размеров."
+"Прежде чем мы изменим метод ввода, в настройках проекта перейдите в "
+"*Display*, затем кликните на *Window*. В разделе *Stretch*, измените *Mode* "
+"на \"2d\" и *Aspect* на \"keep\". Теперь игра будет масштабироваться на "
+"экранах разных размеров."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:44
 msgid ""
@@ -6377,7 +6386,6 @@ msgstr ""
 "либо только код, либо то и другое одновременно."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
-#, fuzzy
 msgid ""
 "It’s different from prefabs you find in several 3D engines, as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
@@ -6386,10 +6394,11 @@ msgid ""
 "matches the game’s design."
 msgstr ""
 "Это отличается от префабов, которые можно найти в некоторых 3D движках, так "
-"как вы можете наследовать и расширять любую сцену. Вы можете создать \"Мага"
-"\" который наследует вашего \"Персонажа\". Изменить \"Персонаж\" в редакторе "
-"и \"Маг\" также будет обновлен. Это помогает вам строить ваши проекты таким "
-"образом, что их структура соответствует игровому дизайну."
+"как вы можете наследовать и расширять любую сцену. К примеру, вы можете "
+"создать сцену \"Маг\", которая будет потомком вашей сцены \"Персонаж\". И "
+"если вы измените сцену \"Персонаж\" в редакторе, то и сцена \"Маг\" также "
+"будет обновлена. Это позволит вам организовать проект таким образом, чтобы "
+"его структура соответствовала игровому дизайну."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:51
 msgid ""
@@ -6399,10 +6408,10 @@ msgid ""
 "components like collision shapes, they’re the exception, not the norm."
 msgstr ""
 "Также обратите внимание, что Godot предлагает множество различных типов "
-"объектов, называемых узлами, каждый с определенной целью. Узлы являются "
-"частью дерева и всегда наследуются от родителей вплоть до класса Node. Хотя "
-"в движке есть компоненты, например формы столкновения, они являются скорее "
-"исключением, чем нормой."
+"объектов, называемых узлами, каждый из которых служит определенной цели. "
+"Узлы являются частью дерева и всегда наследуются от своих родителей вплоть "
+"до класса Node. Несмотря на то, что движок поддерживает компоненты, "
+"например, формы столкновения, они скорее являются исключением, нежели нормой."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:59
 msgid ""
@@ -6410,9 +6419,10 @@ msgid ""
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
-"Sprite - это Node2D, CanvasItem и Node. Он имеет все свойства и функции трех "
-"родительских классов, таких как преобразования или возможность рисовать "
-"пользовательские фигуры и рендериться с помощью настраиваемого шейдера."
+"Sprite наследуется от классов Node2D, CanvasItem и Node. Благодаря этому он "
+"имеет их свойства и особенности, что позволяет ему, к примеру, выполнять "
+"преобразования, отрисовывать произвольные фигуры или использовать сторонние "
+"шейдеры."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:64
 msgid "All-inclusive package"
@@ -6538,7 +6548,6 @@ msgstr ""
 "плагин."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
-#, fuzzy
 msgid ""
 "On the other hand, an open codebase means you can **learn from and extend "
 "the engine** to your heart’s content. You can also debug games easily, as "
@@ -6546,9 +6555,9 @@ msgid ""
 "engine itself."
 msgstr ""
 "С другой стороны, открытая кодовая база означает, что вы можете **изучать и "
-"расширять движок** как пожелает ваше сердце. Вы также можете легко "
-"отлаживать игры, поскольку Godot будет печатать ошибки с трассировкой стека, "
-"даже если они исходят из самого движка."
+"расширять движок** как вам угодно. Вы также можете легко отлаживать игры, "
+"поскольку Godot будет печатать ошибки с трассировкой стека, даже если они "
+"исходят из самого движка."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:126
 msgid ""
@@ -6606,7 +6615,6 @@ msgstr ""
 "игр или **создавать плагины и расширять редактор.**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
-#, fuzzy
 msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
@@ -6688,11 +6696,8 @@ msgstr ""
 "что вы узнаете:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
-msgstr ""
-"Какие пять узлов контроля наиболее рентабельные для использования в создании "
-"интерфейса своих игр"
+msgstr "Пять самых полезных узлов для проектирования интерфейса своих игр"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
@@ -6760,7 +6765,6 @@ msgid "Bounding rectangle"
 msgstr "Ограничительные рамки"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
-#, fuzzy
 msgid "Focus and focus neighbor"
 msgstr "Фокус и фокус соседей"
 
@@ -6853,40 +6857,35 @@ msgstr ""
 "Изменить режим растяжения можно с помощью свойства Stretch Mode:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
-#, fuzzy
 msgid ""
 "``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
-"\"Scale On Expand (compat)` масштабирует текстуру в соответствии с "
-"ограничивающим прямоугольником узла, только если свойство `expand` имеет "
-"значение `true`; в противном случае оно ведет себя как режим `Keep`. Режим "
-"по умолчанию для обратной совместимости."
+"``Scale On Expand (compat)`` масштабирует текстуру в соответствии с "
+"ограничивающим прямоугольником узла, только если свойство ``expand`` имеет "
+"значение ``true``; в противном случае оно ведет себя как в режиме ``Keep``. "
+"Режим по умолчанию для обратной совместимости."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
 "\"Scale\" масштабирует текстуру по размеру ограничивающего прямоугольника "
-"узла"
+"узла."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
-#, fuzzy
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr "``Tile`` повторяет текстуру, но не масштабируется"
+msgstr "``Tile`` повторяет текстуру, но не масштабирует. "
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
-#, fuzzy
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
 "\"Keep` и\" Keep Centered \" заставляют текстуру оставаться в исходном "
-"размере, в левом верхнем углу или в центре кадра соответственно"
+"размере, в левом верхнем углу, или в центре кадра, соответственно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
-#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
@@ -6894,10 +6893,9 @@ msgid ""
 msgstr ""
 "\"Keep Aspect\" и \"Keep Aspect Centered\" масштабируют текстуру, но "
 "заставляют ее сохранять исходное соотношение сторон в левом верхнем углу или "
-"в центре кадра соответственно"
+"в центре кадра."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
@@ -6905,10 +6903,9 @@ msgid ""
 msgstr ""
 "``Keep Aspect Covered`` работает так же, как ``Keep Aspect Centered``, но "
 "более короткая сторона совпадает с ограничивающим прямоугольником, а другая "
-"отсекается границами узла"
+"отсекается границами узла."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
-#, fuzzy
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
@@ -7075,7 +7072,6 @@ msgstr ""
 "разместить и изменить размер элемента внутри его родителя."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
-#, fuzzy
 msgid ""
 "The two approaches are not always compatible. Because a container controls "
 "its children, you cannot use the layout menu on them. Each container has a "
@@ -7086,7 +7082,7 @@ msgid ""
 "grid, etc."
 msgstr ""
 "Эти два подхода не всегда совместимы. Потому что контейнер управляет своими "
-"потомками, вы не можете использовать макет меню на них. Каждый контейнер "
+"потомками. Вы не можете использовать макет меню на них. Каждый контейнер "
 "имеет специфичный эффект, так что вам потребуется вложить их несколько, "
 "чтобы получить работающий интерфейс. С подходом макета вы работает снизу "
 "вверх, на потомков. Если вы не добавляете дополнительные контейнеры в сцену, "
@@ -7125,7 +7121,6 @@ msgid "How to change the anchor"
 msgstr "Как изменять якорь"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
-#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
@@ -7276,7 +7271,6 @@ msgid "Arrange control nodes automatically with containers"
 msgstr "Автоматическая организация управляющих узлов с контейнерами"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:278
-#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
@@ -7287,7 +7281,7 @@ msgstr ""
 "заключая другие контейнеры в строки, столбцы и прочее. Используйте их, чтобы "
 "добавить отступы вокруг вашего интерфейса или центральных узлов в их "
 "ограничивающих прямоугольниках. Все встроенные контейнеры обновятся в "
-"редакторе, так что увидите эффект мгновенно."
+"редакторе так, что вы увидите эффект мгновенно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:284
 msgid ""
@@ -7318,7 +7312,6 @@ msgstr ""
 "интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
-#, fuzzy
 msgid "CenterContainer, to center its children in its bounding box"
 msgstr "CenterContainer, центрирует своих детей в ограниченных рамках"
 
@@ -7378,7 +7371,6 @@ msgstr ""
 "пользовательского интерфейса(GUI)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:322
-#, fuzzy
 msgid ""
 "There are two BoxContainers: VBoxContainer and HBoxContainer. You cannot add "
 "the BoxContainer node itself, as it is a helper class, but you can use "
@@ -7441,7 +7433,6 @@ msgid "A GridContainer with 2 columns. It sizes each column automatically."
 msgstr "GridContainer с 2 колонками. Он вычисляет их размер автоматически."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:353
-#, fuzzy
 msgid ""
 "Godot's UI system is complex, and has a lot more to offer. To learn how to "
 "design more advanced interfaces, head to the :ref:`GUI section <toc-learn-"
@@ -7475,23 +7466,21 @@ msgstr ""
 "денег"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
-"Вы научитесь разработать UI эффективно, а так же использовать Узлы "
-"управления Godot. Эта страница фокусируется на визуальной части: все что вы "
-"можете сделать с помощью редактора. Для того, чтобы научиться писать код для "
-"шкалы здоровья, читайте :doc:`ui_code_a_life_bar`"
+"Вы научитесь разрабатывать UI эффективно, а так же использовать \"Узлы "
+"управления Godot\". Эта страница фокусируется на визуальной части: все что "
+"вы можете сделать с помощью редактора. Для того, чтобы научиться писать код "
+"для шкалы здоровья, читайте :doc:`ui_code_a_life_bar`"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create"
 msgstr "Графический интерфейс, который вы будете создавать"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
-#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_main_menu_design.zip <files/"
 "ui_main_menu_design.zip>` and extract the archive. Import the ``start/`` "
@@ -7510,7 +7499,6 @@ msgid "How to design your game UI"
 msgstr "Как разработать UI для вашей игры"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:35
-#, fuzzy
 msgid ""
 "To design a good UI, you want to come up with a rough mockup first: a plain "
 "drawing version that focuses on the placement of your UI components, their "
@@ -7520,40 +7508,38 @@ msgid ""
 "sure the players can find their way around the interface using those "
 "placeholders."
 msgstr ""
-"Чтобы создать хороший UI, вы должны сначала набросать грубый макет: простой "
-"рисунок, фокусирующийся на размещение элементов вашего UI, их размере и "
-"взаимодействии с пользователем. Ручка и бумага - это все что вам нужно. На "
-"этом этапе не нужно использовать необычную и окончательную графику. Здесь "
-"нужны простые спрайты-заполнители и вы сможете успешно перейти к Godot. Вы "
-"должны убедиться, что пользователи смогут легко ориентироваться в вашем "
-"интерфейсе, использующем эти заполнители."
+"Для проектирования хорошего пользовательского интерфейса следует начать с "
+"наброска: начните с бумажной версии и сфокусируйтесь на размещении "
+"компонентов пользовательского интерфейса, их размерах и взаимодействии с "
+"игроком. Не тратьте время на создание финального варианта графики на этом "
+"этапе. Далее подготовьте спрайты-заглушки и разместите из в Godot. Вы должны "
+"убедиться в том, что разработанный интерфейс удобен и понятен даже в таком "
+"виде."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:45
 msgid "The UI's rough plan or mockup"
 msgstr "Примерный план или макет UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:47
-#, fuzzy
 msgid ""
 "Placeholder doesn't have to mean ugly, but you should keep the graphics "
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
-"Заполнители не обязаны быть уродливыми, но вам следует стараться "
-"использовать простую графику для них. Избегайте специальных эффектов, "
-"анимаций и излишне детализированных иллюстраций до тех пор, пока ваш UI не "
-"используется игроками. В противном случае:"
+"Заполнители не должны быть уродливыми, но вам следует стараться использовать "
+"простую графику для них. Избегайте специальных эффектов, анимаций и излишне "
+"детализированных иллюстраций до тех пор, пока ваш UI не используется "
+"игроками. В противном случае:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:51
-#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback"
 msgstr ""
-"Графика может исказить игровой опыт и вы потеряете ценную обратную связь"
+"Слишком сильный упор на графику на этой стадии может исказить восприятие "
+"тестерами вашего интерфейса и вы лишитесь ценных отзывов"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:53
-#, fuzzy
 msgid "If the User Experience doesn't work, you'll have to redo some sprites"
 msgstr ""
 "Если пользовательский интерфейс работает не должным образом, переделайте "
@@ -7609,13 +7595,11 @@ msgstr ""
 "части многоразовыми, как показано ниже."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:78
-#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders"
 msgstr ""
-"Файлы вы найдете в Godot. Графика выглядит лучше, чем при грубом дизайне, но "
-"они все еще являются спрайтов"
+"Графика выглядит лучше, чем в грубом дизайне, но является еще незавершенной"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:82
 msgid "Design the main menu"
@@ -7631,7 +7615,6 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:88
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:280
-#, fuzzy
 msgid "Break down the UI mockup"
 msgstr "Краш-тест UI макета"
 
@@ -7641,15 +7624,14 @@ msgstr ""
 "Это мои три правила большого пальца, чтобы подобрать правильный контейнер:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:92
-#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button"
 msgstr ""
-"Разбейте UI на вложенные прямоугольники, от самого большого, содержащего "
-"все, до самых маленьких, которые охватывают один виджет, например, шкала с "
-"ярлыком(label), панелью или кнопкой"
+"Разбейте пользовательский интерфейс на вложенные контейнеры, от большого, в "
+"котором содержится все, до маленького, содержащего один виджет с полоской "
+"состояния и ее названием, панелью или кнопкой"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:95
 msgid "If there's some padding around an area, use a ``MarginContainer``"
@@ -7673,7 +7655,6 @@ msgstr ""
 "интерфейсами."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:102
-#, fuzzy
 msgid ""
 "For the main menu, the largest box is the entire game window. There's "
 "padding between the edges of the window and the first components: this "
@@ -7682,16 +7663,15 @@ msgid ""
 "with a ``VBoxContainer``. And in the right column, we'll center the "
 "illustration with a ``CenterContainer``."
 msgstr ""
-"Главное меню, крупнейшее всей окно игры. Есть отступы между краями окна и "
-"первого элемента: это должен быть ``MarginContainer``. Затем, экран "
+"Главное меню, это крупнейшее окно всей игры. Есть отступы между краями окна "
+"и первого элемента: это должен быть ``MarginContainer``. Затем, экран "
 "разделяется на две колонки, так что мы будем использовать ``HBoxContainer``. "
 "В левой колонке мы будем управлять строками с помощью ``VBoxContainer``. И в "
-"правой колонке, мы будем в центре иллюстрации с ``CenterContainer``."
+"правой колонке будет иллюстрация в центре  ``CenterContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:111
-#, fuzzy
 msgid "Interface building blocks, broken down using the three rules of thumb"
-msgstr "Блоки интерфейса, сломались с помощью трёх правил"
+msgstr "Блоки интерфейса разбиты с помощью трёх правил"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:115
 msgid ""
@@ -7741,52 +7721,45 @@ msgstr ""
 "``Custom Constants``. Разверните её. Установите такие отступы:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:135
-#, fuzzy
 msgid "Margin Right: *120*"
 msgstr "Margin Right: *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
-#, fuzzy
 msgid "Margin Top: *80*"
 msgstr "Margin Top: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:137
-#, fuzzy
 msgid "Margin Left: *120*"
 msgstr "Margin Left: *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:138
-#, fuzzy
 msgid "Margin Bottom: *80*"
 msgstr "Margin Bottom: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:140
-#, fuzzy
 msgid ""
 "We want the container to fit the window. In the Viewport, open the "
 "``Layout`` menu and select the last option, ``Full Rect``."
 msgstr ""
 "Мы хотим, чтобы контейнер соответствовал окну. В окне просмотра откройте "
-"меню ``Макет`` и выберите последний вариант, ``Full Rect``."
+"меню ``Layout`` и выберите последний вариант, ``Full Rect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:144
 msgid "Add the UI sprites"
 msgstr "Добавление спрайтов"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:146
-#, fuzzy
 msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
 msgstr ""
-"Выберите``MarginContainer`` и создайте узел ``TextureRect``. Нам нужно:"
+"Выберите``MarginContainer`` и создайте узел ``TextureRect``.  Нам нужно:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:149
 msgid "The title, or logo"
 msgstr "Название или логотип"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
-#, fuzzy
 msgid "The three text options, as individual nodes"
 msgstr "Три варианта текста, как отдельные узлы"
 
@@ -7811,14 +7784,13 @@ msgstr ""
 "дополнительных экземпляров ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:159
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the ``Texture`` "
 "property and click ``[empty]`` -> ``Load``. A file browser opens and lets "
 "you pick a sprite to load into the texture slot."
 msgstr ""
-"Щелкните каждый из узлов, чтобы выбрать его. В инспекторе щелкните значок "
-"``<null>`` справа от свойства Texture и выберите ``Загрузить``. Откроется "
+"Щелкните на каждый из узлов, чтобы выбрать его. В инспекторе щелкните значок "
+"``Texture`` справа от свойства Texture и выберите ``Load``. Откроется "
 "проводник, который позволяет выбрать спрайт для загрузки в слот текстуры."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
@@ -7890,16 +7862,14 @@ msgstr ""
 "опций меню слева, и ``CenterContainer`` для картинки справа."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:203
-#, fuzzy
 msgid ""
 "You should have four nested containers, and the TextureRect nodes sitting "
 "aside from it"
 msgstr ""
-"Вы должны иметь четыре вложенных контейнеров, и TextureRect узлы, "
-"находящиеся вне."
+"Вы должны иметь четыре вложенных контейнеров и TextureRect узлы, находящиеся "
+"вне."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:206
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
@@ -7927,7 +7897,6 @@ msgid "There's no space between the logo and the other UI elements"
 msgstr "Между логотипом и другими элементами UI нет места"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the ``Size Flags`` category and click "
@@ -7947,7 +7916,6 @@ msgstr ""
 "автоматически."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:230
-#, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer"
@@ -7956,7 +7924,6 @@ msgstr ""
 "поместите его внутрь CenterContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:233
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
@@ -7974,13 +7941,11 @@ msgstr ""
 "если вообще изменится."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:243
-#, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's layout"
 msgstr "Поместите новый контейнер между двумя другими узлами"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:246
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -8010,7 +7975,6 @@ msgid "The menu options should center vertically in the UI's left column"
 msgstr "MenuOption должен центрироваться по вертикали в левом столбце"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
-#, fuzzy
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the ``Custom Constants`` category below ``Size Flags``, and click the "
@@ -8034,7 +7998,6 @@ msgid ""
 msgstr "Без единой строки кода у нас есть точное и отзывчивое главное меню."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:274
-#, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
@@ -8043,23 +8006,21 @@ msgid ""
 msgstr ""
 "Поздравляем с завершением! Вы можете скачать `final menu <#>`__, чтобы "
 "сравнить с вашим собственным. В следующем курсе уроков вы создадите UI игры "
-"с шкалами и счетчиками предметов."
+"с шкалами и инвентарем."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:282
-#, fuzzy
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
 "ratios. In Godot, we use containers to control the position and the size of "
 "UI elements."
 msgstr ""
-"Отзывчивый UI это способ сделать так чтобы наши UI элементы менялись в "
-"зависимости от разных экранов. Экраны TV и компьютерных дисплеев имеют "
-"различные размеры и соотношения. В Godot мы используем контейнеры для "
-"управления позицией и размера элемента UI."
+"Гибкий пользовательский интерфейс - это способ сделать так, чтобы наши UI "
+"элементы менялись в зависимости от разных экранов. Экраны TV и компьютерных "
+"дисплеев имеют различные размеры и соотношения. В Godot мы используем "
+"контейнеры для управления позицией и размера элемента UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:287
-#, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press the Q key to activate "
@@ -8068,9 +8029,9 @@ msgid ""
 msgstr ""
 "Порядок, в котором вы разберёте вопросы. Чтобы убедиться, что UI хорошо "
 "адаптируется к разным соотношениям экрана, выберите корневой узел, нажмите "
-"клавишу Q, чтобы активировать Режим Выделения, выберите контейнер, нажмите и "
-"перетащите один из углов контейнера, чтобы изменить его размер. Компоненты "
-"UI должны \"течь\" внутри него."
+"клавишу Q, чтобы активировать \"Режим Выделения\". Выберите контейнер, "
+"нажмите и перетащите один из углов контейнера, чтобы изменить его размер. "
+"Компоненты UI должны \"течь\" внутри него."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:293
 msgid ""
@@ -8086,7 +8047,6 @@ msgstr ""
 "все окно вверх и вниз."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
-#, fuzzy
 msgid ""
 "You can change the scale mode in the project settings: click the Project "
 "menu -> Project Settings. In the window's left column, look for the Display "
@@ -8292,7 +8252,6 @@ msgstr ""
 "наши две шкалы слева и отделять их от двух счетчиков справа."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
-#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
 "``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
@@ -8312,7 +8271,6 @@ msgid "You should have 4 containers that look like this"
 msgstr "У нас должны быть 4 контейнера, которые выглядят так"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
-#, fuzzy
 msgid ""
 "We can work this way because we first broke down our UI design and took a "
 "few moments to think about the containers we'd use. When you follow a "
@@ -8395,9 +8353,9 @@ msgid ""
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
 "down to the res://assets/GUI folder."
 msgstr ""
-"Наша сцена по-прежнему пуста. Самое время, чтобы поместить в неё какие-"
-"нибудь текстуры. Для загрузки текстур, направляйтесь в файловую систему "
-"слева от окна. Перейдите вниз к папке res://assets/GUI."
+"Наша сцена всё ещё пустая. Значит, пришло время закинуть в неё немного "
+"текстур. Чтобы загрузить текстуры head to the FileSystem dock to the left of "
+"the viewport. Browse down to the res://assets/GUI folder."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:141
 msgid "You should see a list of textures that we'll use to skin our interface."
@@ -8425,7 +8383,6 @@ msgstr ""
 "``Background`` вместе с его родительскими контейнерами."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:153
-#, fuzzy
 msgid ""
 "Next, select the ``Title`` and drag and drop ``label_HP.png`` into its "
 "``Texture`` slot. Select the ``Number`` node, click the field next to the "
@@ -8433,18 +8390,17 @@ msgid ""
 "viewport. They should stack up in the top-left corner of their parent "
 "``MarginContainer``."
 msgstr ""
-"Далее, выберите ``Title`` и перетащите ``label_HP.png`` в его слот "
-"``Texture``. Выберите узел ``Number``, щелкните на поле рядом с свойством "
-"``Text`` и введите ``10``. Таким образом, мы можем видеть оба узла на "
-"видовом экране. Они должны складываться в верхнем левом углу своего родителя "
+"Далее, выберите ``Title`` и перетащите ``label_HP.png`` в слот ``Texture``. "
+"Выберите узел ``Number``, щелкните на поле рядом с свойством ``Text`` и "
+"введите ``10``. Таким образом, мы можем видеть оба узла на видовом экране. "
+"Они должны складываться в верхнем левом углу своего родителя "
 "``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:161
 msgid "If you select both nodes, you should see something like this"
-msgstr "Если вы выберите оба узла, вы должны увидеть что-то такое"
+msgstr "Если вы выберите оба узла, вы должны увидеть что-то такое:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:163
-#, fuzzy
 msgid ""
 "As they have a container as their direct parent, we cannot move them freely: "
 "the ``Count`` node will always reset their anchors, their size and position. "
@@ -8482,7 +8438,6 @@ msgstr ""
 "контроль Count который является MarginContainer'ом"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
-#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -8532,7 +8487,6 @@ msgstr ""
 "Редактировать."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:207
-#, fuzzy
 msgid ""
 "You will enter the ``Dynamic Font`` resource. Unfold the ``Font`` category "
 "and click the field next to ``Font Data``. Click the ``Load`` button. In the "
@@ -8550,7 +8504,6 @@ msgstr ""
 "или``28``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
-#, fuzzy
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -8625,12 +8578,10 @@ msgstr ""
 "ли? Это благодаря нашей хорошей установке контейнера."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
-#, fuzzy
 msgid "Design the bomb and emerald counters"
 msgstr "Разработка счетчика бомб и кристаллов"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
-#, fuzzy
 msgid ""
 "The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
@@ -8651,7 +8602,6 @@ msgstr ""
 "сейчас, мы исправим его в ближайшее время."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
-#, fuzzy
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -8671,7 +8621,6 @@ msgid "Here's how your node tree should look so far"
 msgstr "Вот так древо узлов должно выглядеть на данный момент"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:275
-#, fuzzy
 msgid ""
 "With the ``Icon`` node selected, in the inspector, scroll to the top to see "
 "the ``Texture`` slot. Head to the FileSystem dock on the left and select the "
@@ -8688,12 +8637,10 @@ msgstr ""
 "соответствии с размером ``Background'a``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:285
-#, fuzzy
 msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr "Узлы привязаны ко всему Background'у, но их положение свободное"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -8730,7 +8677,6 @@ msgstr ""
 "размера его дочерних. Поля контейнера также учитываются."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:305
-#, fuzzy
 msgid ""
 "Select the Icon, click the Layout menu, and select ``Full Rect`` to re-"
 "center it. We need it to anchor to the ``Background``'s right edge. Open the "
@@ -8766,7 +8712,6 @@ msgstr ""
 "Теперь наш счетчик работает, как должен."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
-#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
 "so, we need to set the ``Bars`` container take all the available horizontal "
@@ -8791,7 +8736,6 @@ msgstr ""
 "своего родителя, толкая все остальные объекты"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:335
-#, fuzzy
 msgid "Turn the bar and counter into reusable UI components"
 msgstr "Добавление панели и счетчика в UI"
 
@@ -8809,7 +8753,6 @@ msgstr ""
 "с помощью наследования сцен."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
-#, fuzzy
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
@@ -8826,7 +8769,6 @@ msgstr ""
 "один узел ``Bar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
-#, fuzzy
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
@@ -8844,7 +8786,6 @@ msgstr ""
 "сцену`` или ``Соединить со сценой``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
-#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -8868,9 +8809,8 @@ msgid "With no extra changes, our Bar is ready to use"
 msgstr "Без каких-либо лишних изменений, наша шкала готова к использованию"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
-#, fuzzy
 msgid "Use scene inheritance to create the remaining elements"
-msgstr "Использование Наследования для создания оставшихся элементов"
+msgstr "Использование наследования для создания оставшихся элементов"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
 msgid ""
@@ -8896,7 +8836,6 @@ msgstr ""
 "будем иметь только контейнеры и один узел для каждого компонента UI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
-#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -8960,7 +8899,6 @@ msgstr ""
 "родительская сцена"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:418
-#, fuzzy
 msgid ""
 "First, rename the root or top level node to ``LifeBar``. We always want the "
 "root to describe exactly what this UI component is. The name differentiates "
@@ -8977,7 +8915,6 @@ msgstr ""
 "``Number`` узлы."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:427
-#, fuzzy
 msgid ""
 "If you've ever done web design, it's the same spirit as working with CSS: "
 "you create a base class, and add variations with modifier classes. From a "
@@ -9085,7 +9022,6 @@ msgstr ""
 "исходный узел."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:481
-#, fuzzy
 msgid ""
 "Scroll down to the ``Custom Font`` section and open ``Font``. Lower the "
 "``Size`` to a smaller value like ``20`` or ``22``. You may also need to "
@@ -9112,7 +9048,6 @@ msgstr ""
 "поместите его на слот текстуры ``Progress``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:494
-#, fuzzy
 msgid ""
 "You can resize the node vertically so that its bounding rectangle fits the "
 "gauge. Do the same with the ``Count`` node until its size aligns with that "
@@ -9146,7 +9081,6 @@ msgid "The Count looks better now it's a bit smaller"
 msgstr "Теперь счётчик выглядит лучше потому-что стал меньше"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
-#, fuzzy
 msgid ""
 "The Count node's size affects the position of the TextureProgress. As we'll "
 "align our bars vertically in a moment, we're better off using the Counter's "
@@ -9161,7 +9095,6 @@ msgstr ""
 "выравниваться идеально."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-#, fuzzy
 msgid "Prepare the bomb and emerald counters"
 msgstr "Подготовка счётчиков бомб и кристаллов"
 
@@ -9178,12 +9111,10 @@ msgstr ""
 "как ``BombCounter.tscn``. На этом работа с этой сценой завершена."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:529
-#, fuzzy
 msgid "The bomb counter is the same as the original Counter scene"
 msgstr "Счетчик бомбы делаем так же как и предыдущую сцену"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``EmeraldCounter`` and save the scene as "
@@ -9208,12 +9139,10 @@ msgstr ""
 "элементы нашего интерфейса."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The emerald counter should look something like this"
 msgstr "Так должен выглядеть счётчик кристаллов"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
-#, fuzzy
 msgid "Add the UI components to the final GUI"
 msgstr "Финальное добавление компонентов GUI"
 
@@ -9236,7 +9165,6 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "LifeBar и EnergyBar выравниваются автоматически"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
-#, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
 "scenes onto the ``Counters`` node. They'll resize automatically."
@@ -9245,13 +9173,11 @@ msgstr ""
 "``Counters``. Они автоматически изменят свой размер."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
-#, fuzzy
 msgid "The nodes resize to take all the available vertical space"
 msgstr ""
 "Измените размер узлов, чтобы охватить всё доступное пространство по вертикали"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
-#, fuzzy
 msgid ""
 "To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -9280,7 +9206,6 @@ msgstr ""
 "высоты фона у счетчиков."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
-#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -9305,7 +9230,6 @@ msgid "The 2 bars align perfectly"
 msgstr "2 шкалы идеально выравниваются"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
-#, fuzzy
 msgid ""
 "We could have set up the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
@@ -9347,7 +9271,6 @@ msgstr ""
 "самой игре."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
-#, fuzzy
 msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
 "the final project here: :download:`ui_gui_design.zip <files/ui_gui_design."
@@ -9357,7 +9280,6 @@ msgstr ""
 "`здесь <#>`__."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
-#, fuzzy
 msgid ""
 "**A final note about Responsive Design**. If you resize the GUI, you'll see "
 "the nodes move, but the textures and text won't scale. The GUI also has a "
@@ -9371,12 +9293,12 @@ msgstr ""
 "** Заключительное примечание об Отзывчивом Дизайне **. Если вы изменяете "
 "размер GUI, вы увидите, что узлы перемещаются, но текстуры и текст не будут "
 "масштабироваться. GUI также имеет минимальный размер, основанный на "
-"текстурах внутри него. В играх нам не нужен интерфейс, чтобы быть таким же "
-"гибким, как и веб-сайт. Вы почти никогда не будете поддерживать как "
-"портретный так и ландшафтный ориентации экрана. Или первый или второй. В "
-"ландшафтной ориентации наиболее распространенные коэффициенты варьируются от "
-"4:3 до 16:9. Они близки друг к другу. Вот почему для элементов GUI "
-"достаточно перемещаться только по горизонтали, когда мы изменяем размер окна."
+"текстурах внутри него. В играх нам не нужен очень гибкий интерфейс, как веб-"
+"сайт. Вы почти никогда не будете поддерживать как портретный так и "
+"ландшафтный ориентации экрана. Или первый или второй. В ландшафтной "
+"ориентации наиболее распространенные коэффициенты варьируются от 4:3 до "
+"16:9. Они близки друг к другу. Вот почему для элементов GUI достаточно "
+"перемещаться только по горизонтали, когда мы изменяем размер окна."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:4
 msgid "Control the game's UI with code"
@@ -9471,7 +9393,6 @@ msgid "To do this, we will use **signals**."
 msgstr "Для этого мы будем использовать **сигналы**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
-#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
@@ -9507,7 +9428,6 @@ msgstr ""
 "`end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
-#, fuzzy
 msgid ""
 "Load the ``start`` project in Godot. In the ``FileSystem`` dock, double "
 "click on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 "
@@ -9545,12 +9465,10 @@ msgstr ""
 "Сцена содержит спрайт с фоном игры, графический интерфейс и два персонажа."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
-#, fuzzy
 msgid "The scene tree, with the GUI scene set to display its children"
 msgstr "Дерево сцены, с GUI которая отображает своих детей"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
-#, fuzzy
 msgid ""
 "The GUI scene encapsulates all of the game's Graphical User Interface. It "
 "comes with a barebones script where we get the path to nodes that exist "
@@ -9571,13 +9489,12 @@ msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
 msgstr "``bar`` - это сама шкала здоровья. Этот узле - ``TextureProgress``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
-#, fuzzy
 msgid ""
 "``tween`` is a component-style node that can animate and control any value "
 "or method from any other node"
 msgstr ""
-"``tween`` это компонент узла, который может анимировать и управлять любым "
-"значением или методом из любого другого узла"
+"`tween` компонент узла, который может анимировать и контролировать любое "
+"значение или метод из любого другого узла"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
 msgid ""
@@ -9793,7 +9710,6 @@ msgstr ""
 "*сразу после* изменений."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
-#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
@@ -9816,7 +9732,6 @@ msgstr ""
 "бесплатно."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
-#, fuzzy
 msgid ""
 "With this in mind, let's connect the ``GUI`` to the ``Player``. Click on the "
 "``Player`` node in the scene dock to select it. Head down to the Inspector "
@@ -9880,7 +9795,6 @@ msgstr ""
 "редактора имеет два преимущества:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
-#, fuzzy
 msgid "Godot can write new callback functions for you in the connected script"
 msgstr ""
 "Godot может написать новые функции обратного вызова для вас в подключенном "
@@ -9926,12 +9840,10 @@ msgstr ""
 "\"Сделать функцию\" будет сохранять его. Вы можете заменить имя на другое."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
-#, fuzzy
 msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot напишет метод обратного вызова для вас и доставит вас к нему"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
-#, fuzzy
 msgid ""
 "Inside the parentheses after the function name, add a ``player_health`` "
 "argument. When the player emits the ``health_changed`` signal, it will send "
@@ -9942,7 +9854,6 @@ msgstr ""
 "вместе с ним. Код должен выглядеть так:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
-#, fuzzy
 msgid ""
 "The engine does not convert PascalCase to snake_case, for C# examples we'll "
 "be using PascalCase for method names & camelCase for method parameters, "
@@ -9964,7 +9875,6 @@ msgstr ""
 "посылает значение своего здоровья"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
-#, fuzzy
 msgid ""
 "Inside ``_on_Player_health_changed``, let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
@@ -10017,7 +9927,6 @@ msgstr ""
 "задайте свойству ``value`` узла ``TextureProgress`` значение ``new_value``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
-#, fuzzy
 msgid ""
 "``str`` is a built-in function that converts about any value to text. "
 "``Number``'s ``text`` property requires a string, so we can't assign it to "
@@ -10108,12 +10017,10 @@ msgid "The type of the transition"
 msgstr "Тип перехода"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:387
-#, fuzzy
 msgid "The easing to use in combination with the equation."
 msgstr "Легкость использования в сочетании с уравнением."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:389
-#, fuzzy
 msgid ""
 "The last two arguments combined correspond to an easing equation. This "
 "controls how the value evolves from the start to the end point."
@@ -10122,7 +10029,6 @@ msgstr ""
 "<#>`__. Этот параметр определяет, как изменяется значение от начала до конца."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:393
-#, fuzzy
 msgid ""
 "Click the script icon next to the ``GUI`` node to open it again. The "
 "``Number`` node needs text to update itself, and the ``Bar`` needs a float "
@@ -10164,7 +10070,6 @@ msgstr ""
 "строки. Вот почему мы пишем это как ``\"animated_health\"``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:435
-#, fuzzy
 msgid ""
 "The starting point is the current value the bar's at. We still have to code "
 "this part, but it's going to be ``animated_health``. The end point of the "
@@ -10199,7 +10104,6 @@ msgstr ""
 "узел не активен. Добавьте этот код после последней строки:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
-#, fuzzy
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -10252,7 +10156,6 @@ msgstr ""
 "`TextureProgress`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
-#, fuzzy
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
@@ -10278,7 +10181,6 @@ msgstr ""
 "``bar.value``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
-#, fuzzy
 msgid "Try the game again to see a nice blocky animation."
 msgstr "Запустите игру еще раз, чтобы увидеть хорошую блочную анимацию."
 
@@ -10287,7 +10189,6 @@ msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "Округляя animated\\_health, мы убиваем двух зайцев одним выстрелом"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
-#, fuzzy
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -10308,7 +10209,6 @@ msgid "Fade the bar when the Player dies"
 msgstr "Исчезновение шкал, когда игрок умирает"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
-#, fuzzy
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
@@ -10339,12 +10239,10 @@ msgstr ""
 "Найдите сигнал ``died``, выберите его и нажмите кнопку Connect (Подключить)."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
-#, fuzzy
 msgid "The signal should already have the Enemy connected to it"
 msgstr "Сигнал должен быть уже подключен к Врагу."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
-#, fuzzy
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -10375,12 +10273,11 @@ msgstr ""
 "разумно: чем больше связей вы добавляете, тем сложнее их отслеживать."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
-#, fuzzy
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
 msgstr ""
-"Чтобы анимировать исчезновение на елементе UI, мы должны использовать его "
+"Чтобы анимировать исчезновение на элементе UI, мы должны использовать его "
 "свойство ``modulate``. ``modulate`` - это ``Color``, который умножает цвета "
 "наших текстур."
 
@@ -10395,7 +10292,6 @@ msgstr ""
 "изменять его цвет с помощью `modulate`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
-#, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
@@ -10407,7 +10303,6 @@ msgstr ""
 "прозрачным."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
-#, fuzzy
 msgid ""
 "We're going to tween between two color values: from a white with an alpha of "
 "``1``, that is to say at full opacity, to a pure white with an alpha value "
@@ -10438,7 +10333,6 @@ msgid ""
 msgstr "Затем снова вызываем метод ``interpolate_property`` узла ``Tween``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
-#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
@@ -10482,7 +10376,6 @@ msgid "Tutorial"
 msgstr "Учебное пособие"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
-#, fuzzy
 msgid ""
 "This is a simple tutorial to establish the basic idea of how the GUI "
 "subsystem works. The goal is to create a simple, static splash screen."
@@ -10580,9 +10473,8 @@ msgstr ""
 "<files/robisplash.zip>`."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:16
-#, fuzzy
 msgid "Add an animation player"
-msgstr "Добавление Animation Player"
+msgstr "Добавление анимации персонажу"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:18
 msgid ""
@@ -10608,7 +10500,6 @@ msgid "Creating the animation"
 msgstr "Создание анимации"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:33
-#, fuzzy
 msgid ""
 "It's time to create a new animation! Press the Animation button then select "
 "new from the menu. Name the animation \"intro\" when the dialog appears."
@@ -10636,7 +10527,6 @@ msgid "The logo will appear from the top of the screen."
 msgstr "Мы хотим чтобы logo появился вверху экрана."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:52
-#, fuzzy
 msgid ""
 "With the animation editor panel open, select the \"logo\" node and set the "
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
@@ -10652,7 +10542,6 @@ msgstr ""
 "Когда появится диалоговое окно, подтвердите, что вы создаете новую дорожку."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:60
-#, fuzzy
 msgid "The keyframe will be added in the animation player editor:"
 msgstr "Ключевой кадр будет добавлен в редактор плеера анимации:"
 
@@ -18759,6 +18648,9 @@ msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
+"Общий узел получения/установки. Перетаскивание свойств из Инспектора "
+"работает лучше, так как они выглядят правильно настроенными при "
+"перетаскивании."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
@@ -18779,7 +18671,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:298
 msgid "Yield"
-msgstr ""
+msgstr "Ключевое слово Yield"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -18863,6 +18755,9 @@ msgid ""
 "such as sin(),cos(),print(), as well as constructors, such as Vector3(x,y,z),"
 "Rect2(..), etc.:"
 msgstr ""
+"Используйте большинство существующих встроенных функций, доступных для "
+"GDScript, таких как sin (), cos (), print (), а также конструкторы, такие "
+"как Vector3(x, y, z), Rect2(..) , и так далее.:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503
 msgid "Call API functions:"
@@ -18873,6 +18768,8 @@ msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"
 msgstr ""
+"Используйте последовательный режим, который имеет больше смысла в случае "
+"соблюдения порядка обработки:"
 
 #: ../../docs/getting_started/scripting/c_sharp/index.rst:2
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:30
@@ -19129,6 +19026,11 @@ msgid ""
 "csproj`` file and look for the ``ItemGroup``, there should be a line "
 "included like the following:"
 msgstr ""
+"Например, если вы создали скрипт (например, `` Test.cs``) и удалили его в "
+"Godot, компиляция завершится неудачно, поскольку ожидается, что "
+"отсутствующий файл все еще будет  в файле проекта C #. На данный момент вы "
+"можете просто открыть файл `` .csproj`` и найти `` ItemGroup``, там должна "
+"быть строка, подобная следующей:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
 msgid ""
@@ -19136,17 +19038,22 @@ msgid ""
 "for renaming and moving things, simply rename and move them in the project "
 "file if needed."
 msgstr ""
+"Просто удалите эту строку, и ваш проект должен снова компилироваться "
+"правильно. То же самое для переименования и перемещения, просто переименуйте "
+"и переместите их в файле проекта, если это необходимо."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
 #: ../../docs/tutorials/io/background_loading.rst:87
 #: ../../docs/tutorials/misc/pausing_games.rst:80
 msgid "Example"
-msgstr ""
+msgstr "Пример"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:143
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr ""
+"Это пустой C# скрипт с некоторыми комментариями, чтобы продемонстрировать, "
+"как он работает."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:170
 msgid ""
@@ -19156,6 +19063,11 @@ msgid ""
 "class reference pages for :ref:`@GDScript <class_@gdscript>` and :ref:"
 "`@GlobalScope <class_@globalscope>`."
 msgstr ""
+"Как видите, функции, которые в GDScript имеют глобальную область видимости, "
+"такие как функция ``print``, здесь доступны из класса ``GD``, который в свою "
+"очередь является частью пространства имен ``Godot``. Вы можете ознакомиться "
+"со списком методов класса ``GD`` на страницах справки класса :ref:`@GDScript "
+"<class_@gdscript>` и :ref:`@GlobalScope <class_@globalscope>`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
 msgid ""
@@ -19167,7 +19079,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
 msgid "General differences between C# and GDScript"
-msgstr ""
+msgstr "Основные различия между C# и GDScript"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:185
 msgid ""
@@ -19176,6 +19088,10 @@ msgid ""
 "properties. In general, the C# Godot API strives to be as idiomatic as is "
 "reasonably possible."
 msgstr ""
+"В GDScript/C++ в API языка C# вместо `snake_case` используется "
+"``PascalCase``. Там, где это возможно, поля и получатели/установщики были "
+"преобразованы в свойства. В целом, C# Godot API старается быть максимально "
+"идиоматическим, насколько это возможно."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
 #, fuzzy
@@ -19186,7 +19102,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:192
 msgid "Current gotchas and known issues"
-msgstr ""
+msgstr "Текущие ограничения и известные проблемы"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
 msgid ""
@@ -19196,6 +19112,12 @@ msgid ""
 "a look over the official `issue tracker for Mono issues <https://github.com/"
 "godotengine/godot/labels/topic%3Amono>`_."
 msgstr ""
+"Поскольку поддержка C# введена относительно недавно, в ней всё ещё "
+"присутствуют \"детские болячки\" и проблемы, которые необходимо устранить. "
+"Ниже вы найдёте список наиболее важных проблем, о существовании которых вам "
+"следовало бы знать, при использовании C# вместе с Godot. Если есть какие-то "
+"сомнения, вы также можете заглянуть на `официальный трекер проблем/запросов "
+"Mono <https://github.com/godotengine/godot/labels/topic%3Amono>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
 msgid ""
@@ -19203,17 +19125,24 @@ msgid ""
 "when things are deleted, renamed or moved in Godot (`#12917 <https://github."
 "com/godotengine/godot/issues/12917>`_)."
 msgstr ""
+"Как объяснялось выше, проект C# не всегда  автоматически синхронизируется "
+"при удалении, переименовании или перемещении объектов в Godot (`#12917 "
+"<https://github.com/godotengine/godot/issues/12917>`_)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:203
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
+"Написание плагинов редактора возможно, но в настоящее время это довольно "
+"запутанно."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr ""
+"В данный момент, при выполнении горячей-перезагруки, состояние не "
+"сохраняется и не восстанавливается, за исключением экспортируемых переменных."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
 msgid ""
@@ -19224,16 +19153,25 @@ msgid ""
 "github.com/godotengine/godot/issues/20270>`_ `#20271 <https://github.com/"
 "godotengine/godot/issues/20271>`_)."
 msgstr ""
+"Экспорт Mono проектов доступен только для настольных платформ (Linux, "
+"Windows and macOS). Android, iOS, HTML5 и UWP в настоящий момент не "
+"поддерживаются (`#20267 <https://github.com/godotengine/godot/"
+"issues/20267>`_, `#20268 <https://github.com/godotengine/godot/"
+"issues/20268>`_ `#20270 <https://github.com/godotengine/godot/"
+"issues/20270>`_ `#20271 <https://github.com/godotengine/godot/"
+"issues/20271>`_)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
+"Прикрепленные C# скрипты должны относиться к классу, который имеет имя "
+"класса, соответствующее имени файла."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
 msgid "Performance of C# in Godot"
-msgstr ""
+msgstr "Производительность C# в Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
 msgid ""
@@ -19248,7 +19186,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:226
 msgid "Using NuGet packages in Godot"
-msgstr ""
+msgstr "Использование пакетов NuGet в Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
 msgid ""
@@ -19257,6 +19195,11 @@ msgid ""
 "They can also be added manually by adding the package reference in the ``."
 "csproj`` file located in the project root:"
 msgstr ""
+"`NuGet <https://www.nuget.org/>`_ пакеты могут быть установлены и "
+"использованы вместе с Godot, как и в любом другом C# проекте. Множество IDE "
+"способны добавлять пакеты напрямую. Если необходимо, вы можете добавить их "
+"вручную, добавив ссылку на пакет в ``.csproj`` файл, который расположен в "
+"корне проекта:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:243
 msgid ""
@@ -19264,6 +19207,9 @@ msgid ""
 "of the project directory. To ensure that NuGet packages will be available "
 "for msbuild to use, run:"
 msgstr ""
+"Всякий раз, когда пакеты были добавлены или модифицированы, следует "
+"запусткать ``nuget restore``в корневой папке проекта. Чтобы убедиться, что "
+"пакеты NuGet будут доступны в msbuild, выполните:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
@@ -19274,6 +19220,8 @@ msgid ""
 "This page provides an overview of the commonly used features of both C# and "
 "Godot and how they are used together."
 msgstr ""
+"На этой странице представлен обзор наиболее часто используемых функций C# и "
+"Godot, а также того, как они используются вместе."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:10
 #, fuzzy
@@ -19284,16 +19232,20 @@ msgstr "Информация о версии"
 msgid ""
 "C# is a statically typed language. Therefore, you can't do the following:"
 msgstr ""
+"C# - это статически типизированный язык. Следовательно, вы не можете сделать "
+"следующее:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:19
 msgid ""
 "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
 "convert it to the desired derived type, ``Sprite`` in this case."
 msgstr ""
+"Метод ``GetNode()`` возвращает экземпляр ``Node``. Вы должны однозначно "
+"преобразовать его в желаемый производный тип, ``Sprite`` в данном случае."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:22
 msgid "For this, you have various options in C#."
-msgstr ""
+msgstr "Для этого в C# имеются различные опции."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
 msgid "**Casting and Type Checking**"
@@ -25136,30 +25088,37 @@ msgid ""
 "node. :ref:`Changing scenes manually <doc_change_scenes_manually>` gives "
 "users full control over how their game world transitions."
 msgstr ""
+"При смене уровней можно извлечь из узла \"World\" дочерние элементы. :ref:"
+"`Смена сцен вручную <doc_change_scenes_manally>' дает пользователям полный "
+"контроль над тем, как они меняют игровой мир."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:283
 msgid ""
 "The next step is to consider what gameplay systems one's project requires. "
 "If one has a system that..."
 msgstr ""
+"Следующий шаг - обдумать, какие игровые системы требуются для вашего "
+"проекта. Если есть система, которая...."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:286
 msgid "tracks all of its data internally"
-msgstr ""
+msgstr "отслеживает все свои данные изнутри"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:287
 msgid "should be globally accessible"
-msgstr ""
+msgstr "должна быть доступна глобально"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:288
 msgid "should exist in isolation"
-msgstr ""
+msgstr "может существовать изолированно"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:290
 msgid ""
 "... then one should create an :ref:`autoload 'singleton' node "
 "<doc_singletons_autoload>`."
 msgstr ""
+"...то следует создать :ref:`автозагрузочный узел 'singleton' "
+"<doc_singletons_autoload>'."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:294
 msgid ""
@@ -47367,9 +47326,8 @@ msgid "Once you are all set, you will get much better results:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "AnimationTree"
-msgstr "Анимация"
+msgstr "Дерево анимации"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -75046,7 +75004,7 @@ msgstr "Godot предоставляет следующий набор конт�
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
-msgstr ""
+msgstr "Вектор"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"

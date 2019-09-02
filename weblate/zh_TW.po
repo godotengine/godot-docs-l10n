@@ -2,10 +2,12 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Bluesir Bruce <a5566740293@gmail.com>, 2019.
 # Cliffs Dover <bottle@dancingbottle.com>, 2018.
 # cnieFIT <dtotncq@gmail.com>, 2019.
 # Eric K <eric900601@gmail.com>, 2019.
 # ken l <macauhome@gmail.com>, 2018.
+# Kenneth Lo <closer.tw@gmail.com>, 2019.
 # Kisaragi Hiu <mail@kisaragi-hiu.com>, 2018.
 # Matt <chchwy@gmail.com>, 2018.
 # Otis Kao <momoslim@gmail.com>, 2019.
@@ -16,8 +18,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-07-29 21:34+0200\n"
-"PO-Revision-Date: 2019-04-29 11:44+0000\n"
-"Last-Translator: cnieFIT <dtotncq@gmail.com>\n"
+"PO-Revision-Date: 2019-09-01 08:27+0000\n"
+"Last-Translator: Kenneth Lo <closer.tw@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -25,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -53,8 +55,8 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
-"您可以於我們的 `Weblate <https://hosted.weblate.org/projects/godot-engine/"
-"godot-docs>`_ 上，協助 Godot 文本的翻譯與校對。"
+"您可以在我們的 `Weblate <https://hosted.weblate.org/projects/godot-engine/"
+"godot-docs>`_ 上，協助翻譯與校對 Godot 文件。"
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -97,6 +99,7 @@ msgstr ""
 "上角的搜索功能。"
 
 #: ../../docs/index.rst:38
+#, fuzzy
 msgid ""
 "Godot Engine is an open source project developed by a community of "
 "volunteers. The documentation team can always use your feedback and help to "
@@ -104,12 +107,11 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
-"Godot引擎是一個由志願者社群開發的開源項目。文件團隊可以隨時使用您的回饋，並幫"
-"助改進教程和類別參考。如果您不明白某些內容，或無法在文件中找到您要尋找的內"
-"容，請告知我們來讓文件變的更好！"
+"Godot引擎是一個由志願者社群開發的開源項目。文件團隊可以隨時接受您的意見回饋，"
+"並幫助改進教程和類別參考。如果您不明白某些內容，或無法在文件中找到您要尋找的"
+"內容，請告知我們來讓文件變的更好！"
 
 #: ../../docs/index.rst:45
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -120,7 +122,7 @@ msgid ""
 msgstr ""
 "在`GitHub 儲存庫<https://github.com/godotengine/godot-docs/issues>`_提交問題"
 "或pull request，幫助我們`將文件 <https://hosted.weblate.org/engage/godot-"
-"engine/>`_翻譯到您的語言，或者在`Discord <https://discord.gg/zH7NUgz>`_上的"
+"engine/>`_翻譯成您的語言，或者在`Discord <https://discord.gg/zH7NUgz>`_上的"
 "``#documentation``頻道，或是`irc.freenode.net <http://webchat.freenode.net/?"
 "channels=#godotengine-doc>`_上的``#godotengine-doc`` 頻道和我們討論!"
 
@@ -250,8 +252,8 @@ msgid ""
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"本頁旨在提供本引擎、及文件內容之總覽。讓初學者知道從何開始，也為查找特定功能"
-"的資訊時提供指引。"
+"本頁旨在提供本引擎及文件內容之總覽。讓初學者知道從何開始，也為查找特定功能的"
+"資訊時提供指引。"
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
@@ -312,9 +314,9 @@ msgid ""
 msgstr ""
 "Godot 是完全自由、免費並且開源的，以非常寬鬆的 MIT 條款發佈。沒有限制，也沒有"
 "授權金。使用者的遊戲是他們自己的，直到引擎代碼的最後一行。Godot 的開發流程完"
-"全是獨立並且社群導向的，讓使用者們幫忙改進他們的引擎往他們所希望的方向。它被"
-"非營利的 `軟體自由保護組織 (Software Freedom Conservancy) <https://"
-"sfconservancy.org>`_ 所支援。"
+"全是獨立並且社群導向的，讓使用者們以所希望的方向幫忙改進他們的引擎。它被非營"
+"利的 `軟體自由保護組織 (Software Freedom Conservancy) <https://sfconservancy."
+"org>`_ 所支援。"
 
 #: ../../docs/about/introduction.rst:52
 msgid ""
@@ -3203,7 +3205,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:695
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
-msgstr "信號"
+msgstr "訊號"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:9
 msgid ""
@@ -17415,8 +17417,9 @@ msgid "Import of animations is enabled by default."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:262
+#, fuzzy
 msgid "FPS"
-msgstr ""
+msgstr "每秒張數"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:264
 msgid ""
