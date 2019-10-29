@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,7 @@ msgid "We then add 2 children to this Panel node: first a ``Button`` node. Place
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:114
-msgid "Now we need to define a behaviour when this button is pressed. This is covered by the :ref:`Handling a signal <doc_scripting_handling_a_signal>` page, so this part will not be described in details in this tutorial. Select the Button node and click the ``Node`` side dock. Select the ``pressed()`` signal and click the ``Connect`` button (you can also double-click the ``pressed()`` signal instead). In the window that opened, select the Panel node (we will centralize all behaviors in its attached script). Keep the default function name, make sure that the ``Make function`` toggle is ON and hit ``Connect``. This creates an ``on_Button_pressed()`` function in the ``main_panel.gd`` script, that will be called every time the button is pressed."
+msgid "Now we need to define a behaviour when this button is pressed. This is covered by the :ref:`Handling a signal <doc_scripting_handling_a_signal>` page, so this part will not be described in details in this tutorial. Select the Button node and click the ``Node`` side dock. Select the ``pressed()`` signal and click the ``Connect`` button (you can also double-click the ``pressed()`` signal instead). In the window that opened, select the Panel node (we will centralize all behaviors in its attached script). Keep the default function name, make sure that the ``Make function`` toggle is ON and hit ``Connect``. This creates an ``_on_Button_pressed()`` function in the ``main_panel.gd`` script, that will be called every time the button is pressed."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:126
