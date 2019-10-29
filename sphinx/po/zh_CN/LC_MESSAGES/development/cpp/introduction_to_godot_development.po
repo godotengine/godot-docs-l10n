@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:4
 msgid "Introduction to Godot development"
-msgstr "Godot 引擎开发介绍"
+msgstr "Godot开发简介"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:6
 msgid ""
@@ -27,8 +27,8 @@ msgid ""
 "source code, and give useful tips for extending/fixing the engine on the C++ "
 "side."
 msgstr ""
-"本文旨在介绍 Godot 引擎的整体源代码的组织架构，以方便您在 C++ 端对引擎进行扩"
-"展/修复。"
+"本文旨在介绍Godot引擎源代码的全局架构，并提供有关在C++端扩展/修复引擎的有用技"
+"巧。"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:11
 msgid "Architecture diagram"
@@ -39,13 +39,11 @@ msgid ""
 "The following diagram describes the architecture used by Godot, from the "
 "core components down to the abstracted drivers, via the scene structure and "
 "the servers."
-msgstr ""
-"下图描述了 Godot 使用的架构，展示了从核心组件到抽象驱动的架构、场景结构和服务"
-"服务结构。"
+msgstr "下图描述了Godot使用的架构，从核心组件到抽象驱动，经过场景架构和服务。"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:20
 msgid "Debugging the editor with gdb"
-msgstr "使用 gdb 调试编辑器"
+msgstr "使用gdb调试编辑器"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:22
 msgid ""
@@ -56,11 +54,11 @@ msgid ""
 "e`` argument to Godot Engine's binary from within your project's folder. "
 "Typically:"
 msgstr ""
-"如果您想修正 Godot 引擎的 bug 您在调试时需要注意，从您编译好的二进制文件启动 "
-"Godot 引擎的编辑器，这将会启动项目管理器。当您在项目管理器中选择打开的项目"
-"后，编辑器是从另一个进程启动的。 要直接通过编辑器启动您的项目，您需要在您的项"
-"目目录下执行编辑器的时候传递 ``-e`` 参数。 通常是这样:"
+"如果要编写或纠正影响Godot引擎编辑器的bug，请记住，默认情况下，二进制文件将首"
+"先运行项目管理器，然后仅在选择项目后才在另一个进程中运行编辑器。要直接启动项"
+"目，您需要通过将 ``-e`` 参数传递给项目文件夹中Godot引擎的二进制文件来运行编辑"
+"器。通常："
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:35
 msgid "Or:"
-msgstr "或者:"
+msgstr "或者："

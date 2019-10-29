@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr "视区"
+msgstr "视图"
 
 #: ../../docs/tutorials/viewports/viewports.rst:7
 msgid "Introduction"
@@ -179,11 +179,20 @@ msgstr ""
 "每个视区只能有一个激活的摄像机, 因此, 如果有多个摄像机时, 请确保您需要的那个"
 "摄像机的“current”属性被设置上，或者通过调用以下语句来使其成为当前摄像机:"
 
-#: ../../docs/tutorials/viewports/viewports.rst:84
+#: ../../docs/tutorials/viewports/viewports.rst:83
+msgid ""
+"By default, cameras will render all objects in their world. In 3D, cameras "
+"can use their :ref:`cull_mask <class_Camera_property_cull_mask>` property "
+"combined with the :ref:`VisualInstance's <class_VisualInstance>` :ref:`layer "
+"<class_VisualInstance_property_layers>` property to restrict which objects "
+"are rendered."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:89
 msgid "Scale & stretching"
 msgstr "缩放和拉伸"
 
-#: ../../docs/tutorials/viewports/viewports.rst:86
+#: ../../docs/tutorials/viewports/viewports.rst:91
 #, fuzzy
 msgid ""
 ":ref:`Viewports <class_Viewport>` have a \"size\" property, which represents "
@@ -197,7 +206,7 @@ msgstr ""
 "<class_viewportcontainer>` 的子节点 :ref:`Viewports <class_Viewport>` ，这些"
 "值被覆盖，但是在其他情况下，它设置了视区的分辨率。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:90
+#: ../../docs/tutorials/viewports/viewports.rst:95
 #, fuzzy
 msgid ""
 "It is also possible to scale the 2D content and make the :ref:`Viewport "
@@ -207,7 +216,7 @@ msgstr ""
 "通过调用以下语句，还可以缩放2D内容, 使其忽略 :ref:`Viewport "
 "<class_Viewport>` 中已指定的视区分辨率:"
 
-#: ../../docs/tutorials/viewports/viewports.rst:98
+#: ../../docs/tutorials/viewports/viewports.rst:103
 msgid ""
 "The root :ref:`Viewport <class_Viewport>` uses this for the stretch options "
 "in the project settings. For more information on scaling and stretching "
@@ -217,11 +226,11 @@ msgstr ""
 "和拉伸的更多信息，请访问 :ref:`Multiple Resolutions Tutorial "
 "<doc_multiple_resolutions>`"
 
-#: ../../docs/tutorials/viewports/viewports.rst:102
+#: ../../docs/tutorials/viewports/viewports.rst:107
 msgid "Worlds"
 msgstr "世界"
 
-#: ../../docs/tutorials/viewports/viewports.rst:104
+#: ../../docs/tutorials/viewports/viewports.rst:109
 #, fuzzy
 msgid ""
 "For 3D, a :ref:`Viewport <class_Viewport>` will contain a :ref:`World "
@@ -248,7 +257,7 @@ msgstr ""
 "视区交互。这在某些情形下尤为有用, 例如, 您可能希望在游戏中以三维视角来看的上"
 "方显示一个单独的字符(比如星际争霸)。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:116
+#: ../../docs/tutorials/viewports/viewports.rst:121
 msgid ""
 "As a helper for situations where you want to create :ref:`Viewports "
 "<class_Viewport>` that display single objects and don't want to create a :"
@@ -261,7 +270,7 @@ msgstr ""
 "使用自己的 :ref:`World <class_World>`。 当您想要在2D :ref:`World "
 "<class_World2D>` 中实例化3D角色或对象时，这非常有用。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:121
+#: ../../docs/tutorials/viewports/viewports.rst:126
 msgid ""
 "For 2D, each :ref:`Viewport <class_Viewport>` always contains its own :ref:"
 "`World2D <class_World2D>`. This suffices in most cases, but in case sharing "
@@ -272,7 +281,7 @@ msgstr ""
 "<class_World2D>` 。 这在大多数情况下都足够了，但是如果需要共享它们，可以手动"
 "设置 :ref:`Viewport的 <class_Viewport>` :ref:`World2D <class_World2D>` 。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:125
+#: ../../docs/tutorials/viewports/viewports.rst:130
 #, fuzzy
 msgid ""
 "For an example of how this works, see the demo projects `3D in 2D <https://"
@@ -285,11 +294,11 @@ msgstr ""
 "3D <https://github.com/godotengine/godot-demo-projects/tree/master/"
 "viewport/2d_in_3d>`_ 。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:128
+#: ../../docs/tutorials/viewports/viewports.rst:133
 msgid "Capture"
 msgstr "截图"
 
-#: ../../docs/tutorials/viewports/viewports.rst:130
+#: ../../docs/tutorials/viewports/viewports.rst:135
 #, fuzzy
 msgid ""
 "It is possible to query a capture of the :ref:`Viewport <class_Viewport>` "
@@ -299,7 +308,7 @@ msgstr ""
 "可以查询 :ref:`Viewport <class_Viewport>` 内容的捕获。 对于root :ref:"
 "`Viewport <class_Viewport>` 这实际上是一个屏幕截图。 这是通过以下代码完成的:"
 
-#: ../../docs/tutorials/viewports/viewports.rst:147
+#: ../../docs/tutorials/viewports/viewports.rst:152
 #, fuzzy
 msgid ""
 "But if you use this in _ready() or from the first frame of the :ref:"
@@ -310,19 +319,6 @@ msgstr ""
 "但是如果您在_ready()或者从 :ref:`Viewport的<class_Viewport>` 初始化的第一帧中"
 "使用它，您将获得一个空纹理，因为没有什么可以作为纹理。 您可以使用(例如)处理"
 "它:"
-
-#: ../../docs/tutorials/viewports/viewports.rst:158
-#, fuzzy
-msgid ""
-"If the returned image is empty, capture still didn't happen, wait a little "
-"more, as Godot's rendering API is asynchronous. For a working example of "
-"this, check out the `Screen Capture example <https://github.com/godotengine/"
-"godot-demo-projects/tree/master/viewport/screen_capture>`_ in the demo "
-"projects"
-msgstr ""
-"如果返回的图像为空，则捕获仍然没有发生，等待一点，因为Godot的渲染API是异步"
-"的。 有关此示例，请查看演示项目中的 `屏幕捕获示例 <https://github.com/"
-"godotengine/godot-demo-projects/tree/master/viewport/screen_capture>`_"
 
 #: ../../docs/tutorials/viewports/viewports.rst:163
 msgid "Viewport Container"
@@ -379,13 +375,24 @@ msgid ""
 "If you know how the :ref:`Viewport <class_Viewport>` is going to be used, "
 "you can set its Usage to either 3D or 2D. Godot will then restrict how the :"
 "ref:`Viewport <class_Viewport>` is drawn to in accordance with your choice; "
-"default is 3D."
+"default is 3D. The 2D usage mode is slightly faster and uses less memory "
+"compared to the 3D one. It's a good idea to set the :ref:`Viewport "
+"<class_Viewport>`'s Usage property to 2D if your viewport doesn't render "
+"anything in 3D."
 msgstr ""
 "如果您知道如何使用 :ref:`Viewport <class_Viewport>` ，您可以将其用法设置为3D"
 "或2D。 然后Godot将限制如何 :ref:`Viewport <class_Viewport>` 根据您的选择绘"
 "制，默认为3D。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:184
+#: ../../docs/tutorials/viewports/viewports.rst:187
+msgid ""
+"If you need to render 3D shadows in the viewport, make sure to set the "
+"viewport's *Shadow Atlas Size* property to a value higher than 0. Otherwise, "
+"shadows won't be rendered. For reference, the Project Settings define it to "
+"4096 by default."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:190
 msgid ""
 "Godot also provides a way of customizing how everything is drawn inside :ref:"
 "`Viewports <class_Viewport>` using “Debug Draw”. Debug Draw allows you to "
@@ -396,11 +403,11 @@ msgstr ""
 "使用“Debug Draw”。 Debug Draw允许您指定以下四个选项之一 :ref:`Viewport "
 "<class_Viewport>` 将显示在其中绘制的内容。 默认情况下禁用Debug Draw。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:190
+#: ../../docs/tutorials/viewports/viewports.rst:196
 msgid "*A scene drawn with Debug Draw disabled*"
 msgstr "*禁用Debug Draw绘制的场景*"
 
-#: ../../docs/tutorials/viewports/viewports.rst:192
+#: ../../docs/tutorials/viewports/viewports.rst:198
 msgid ""
 "The other three options are Unshaded, Overdraw, and Wireframe. Unshaded "
 "draws the scene without using lighting information so all the objects appear "
@@ -409,34 +416,37 @@ msgstr ""
 "其他三个选项是Unhaded，Overdraw和Wireframe。 无阴影在不使用光照信息的情况下绘"
 "制场景，因此所有对象都显示为其反照率颜色的扁平颜色。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:198
+#: ../../docs/tutorials/viewports/viewports.rst:204
 msgid "*The same scene with Debug Draw set to Unshaded*"
 msgstr "* Debug Draw设置为Unshaded *的相同场景"
 
-#: ../../docs/tutorials/viewports/viewports.rst:200
+#: ../../docs/tutorials/viewports/viewports.rst:206
 msgid ""
 "Overdraw draws the meshes semi-transparent with an additive blend so you can "
 "see how the meshes overlap."
 msgstr "Overdraw使用添加剂混合绘制半透明的网格，以便您可以看到网格重叠的方式。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:204
+#: ../../docs/tutorials/viewports/viewports.rst:210
 msgid "*The same scene with Debug Draw set to Overdraw*"
 msgstr "* Debug Draw设置为Overdraw的同一场景*"
 
-#: ../../docs/tutorials/viewports/viewports.rst:206
+#: ../../docs/tutorials/viewports/viewports.rst:212
 msgid ""
 "Lastly, Wireframe draws the scene using only the edges of triangles in the "
-"meshes. NOTE: As of this writing (v3.0.2), wireframe mode is not functional "
-"and currently renders the scene normally."
+"meshes."
 msgstr ""
-"最后，Wireframe仅使用网格中三角形的边缘绘制场景。 注意:在撰写本文时(v3.0.2)，"
-"线框模式不起作用，并且当前正常渲染场景。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:210
+#: ../../docs/tutorials/viewports/viewports.rst:216
+msgid ""
+"The effects of the Wireframe mode are only visible in the editor, not while "
+"the project is running."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:219
 msgid "Render target"
 msgstr "渲染目标"
 
-#: ../../docs/tutorials/viewports/viewports.rst:212
+#: ../../docs/tutorials/viewports/viewports.rst:221
 #, fuzzy
 msgid ""
 "When rendering to a :ref:`Viewport <class_Viewport>`, whatever is inside "
@@ -449,17 +459,17 @@ msgstr ""
 "显示。 要显示内容，您必须绘制 :ref:`Viewport的<class_Viewport>` :ref:"
 "`ViewportTexture <class_ViewportTexture>` 某处。 这可以通过代码使用(例如):"
 
-#: ../../docs/tutorials/viewports/viewports.rst:222
+#: ../../docs/tutorials/viewports/viewports.rst:231
 msgid ""
 "Or it can be assigned in the editor by selecting \"New ViewportTexture\""
 msgstr "或者可以通过选择“New ViewportTexture”在编辑器中指定它"
 
-#: ../../docs/tutorials/viewports/viewports.rst:226
+#: ../../docs/tutorials/viewports/viewports.rst:235
 msgid ""
 "and then selecting the :ref:`Viewport <class_Viewport>` you want to use."
 msgstr "然后选择您想要使用的 :ref:`Viewport <class_Viewport>。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:230
+#: ../../docs/tutorials/viewports/viewports.rst:239
 #, fuzzy
 msgid ""
 "Every frame, the :ref:`Viewport <class_Viewport>`'s texture is cleared away "
@@ -474,7 +484,7 @@ msgstr ""
 "或下一帧来更改。 顾名思义，Never表示纹理永远不会被清除，而下一帧将清除下一帧"
 "的纹理，然后将自己设置为Never。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:235
+#: ../../docs/tutorials/viewports/viewports.rst:244
 #, fuzzy
 msgid ""
 "By default, re-rendering of the :ref:`Viewport <class_Viewport>` happens "
@@ -491,7 +501,7 @@ msgstr ""
 "动渲染(一次)或始终渲染。 这种灵活性允许用户渲染一次图像然后使用纹理而不会产生"
 "渲染每一帧的成本。"
 
-#: ../../docs/tutorials/viewports/viewports.rst:243
+#: ../../docs/tutorials/viewports/viewports.rst:252
 msgid ""
 "Make sure to check the Viewport demos! Viewport folder in the demos archive "
 "available to download, or https://github.com/godotengine/godot-demo-projects/"

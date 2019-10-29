@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -186,7 +186,7 @@ msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:42
 msgid ":ref:`Easy to write Shaders <doc_shading_language>`"
-msgstr ""
+msgstr ":ref:`Helposti kirjoitettevat sävyttimet <doc_shading_language>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:43
 msgid "Debug on Device"
@@ -197,18 +197,16 @@ msgid "The editor"
 msgstr "Editori"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:52
-#, fuzzy
 msgid ""
 "Godot Engine provides a rich-featured editor that allows you to build your "
 "games. The pictures below display the default layouts of both editors with "
 "colored blocks to indicate common functionalities."
 msgstr ""
 "Godot Engine tarjoaa peliesi tekemiseen ominaisuuksiltaan monipuolisen "
-"editorin. Alla olevat kuvat esittävät molemmat editorit, yleiset "
-"toiminnallisuudet väritetyillä alueilla osoitettuna."
+"editorin. Alla olevat kuvat esittävät molempien editorien oletusasettelut, "
+"yleiset toiminnallisuudet väritetyillä lohkoilla osoitettuna."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:58
-#, fuzzy
 msgid ""
 "While both editors may seem similar, there are many differences below the "
 "surface. Both let you organize the project using the filesystem, but Godot's "
@@ -220,12 +218,11 @@ msgstr ""
 "eroavaisuuksia. Molemmat antavat sinun organisoida projektin "
 "tiedostojärjestelmää käyttäen, mutta Godotin lähestymistapa on "
 "yksinkertaisempi yhdellä asetustiedostolla, minimalistisella "
-"tekstiformaatilla ja ilman metadataa. Kaikki tämä vaikuttaa siihen, että "
-"Godot on paljon ystävällisempi sellaisille versionhallintajärjestelmille, "
-"kuten Git, Subversion ja Mercurial."
+"tekstiformaatilla ja ilman metadataa. Tämä tekee Godotista ystävällisemmän "
+"sellaisille versionhallintajärjestelmille, kuten Git, Subversion ja "
+"Mercurial."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:63
-#, fuzzy
 msgid ""
 "Godot's Scene panel is similar to Unity's Hierarchy panel but, as each node "
 "has a specific function, the approach used by Godot is more visually "
@@ -233,11 +230,10 @@ msgid ""
 msgstr ""
 "Godotin Skene-paneeli on samankaltainen kuin Unityn Hierarchy-paneeli, mutta "
 "koska jokaisella solmulla on tietty tehtävä, Godotin käyttämä lähestymistapa "
-"on visuaalisesti kuvaavampi. Toisin sanoen, on helpompi ymmärtää yhdellä "
-"vilkaisulla mitä jokin tietty skene tekee."
+"on visuaalisesti kuvaavampi. On helpompi ymmärtää yhdellä vilkaisulla mitä "
+"jokin tietty skene tekee."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:67
-#, fuzzy
 msgid ""
 "The Inspector in Godot is more minimal, it shows only properties. Thanks to "
 "this, objects can expose more useful parameters to the user without having "
@@ -246,26 +242,26 @@ msgid ""
 "or even links to resources in real-time is possible without needing to write "
 "code."
 msgstr ""
-"Godotin tarkastelija on minimalistisempi ja suunniteltu näyttämään "
-"ainoastaan ominaisuuksia. Siitä johtuen, objektit voivat esitellä paljon "
-"suuremman joukon hyödyllisiä parametreja käyttäjälle, ilman että "
-"toiminnallisuutta tarvitsee piilottaa kielen ohjelmointirajapintoihin. Godot "
-"sallii minkä tahansa parametrin animoinnin visuaalisesti, joten värien, "
-"tekstuurien, enumeraatioiden ja jopa resurssilinkkien muuttaminen "
-"reaaliajassa on mahdollista ilman koodia."
+"Godotin Tarkastelija on minimaalisempi ja näyttää ainoastaan ominaisuuksia. "
+"Sen ansiosta objektit voivat esitellä hyödyllisempiä parametreja käyttäjälle "
+"ilman, että toiminnallisuutta tarvitsee piilottaa kielen "
+"ohjelmointirajapintoihin. Lisäetuna Godot sallii minkä tahansa parametrin "
+"animoinnin visuaalisesti. Värien, tekstuurien, enumeraatioiden ja jopa "
+"resurssilinkkien muuttaminen reaaliajassa on mahdollista ilman koodin "
+"kirjoittamista."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:72
-#, fuzzy
 msgid ""
 "The Toolbar at the top of the screen is similar in both editors, offering "
 "control over project playback. Projects in Godot run in a separate window, "
 "rather than inside the editor (but the tree and objects can still be "
 "explored in the debugger window)."
 msgstr ""
-"Lopuksi, ruudun ylälaidassa oleva työkalupalkki on samanlainen siinä "
-"mielessä, että se mahdollistaa projektin toiston ohjaamisen, mutta Godotissa "
-"projektit suoritetaan erillisessä ikkunassa; niitä ei suoriteta editorin "
-"sisällä (mutta puuta ja objekteja voi silti tutkailla debuggeri-ikkunassa)."
+"Ruudun ylälaidassa oleva työkalupalkki on molemmissa editoreissa "
+"samanlainen, mahdollistaen projektin toiston ohjaamisen. Godotissa projektit "
+"suoritetaan erillisessä ikkunassa sen sijaan, että niitä ajettaisiin "
+"editorin sisällä (mutta puuta ja objekteja voi silti tutkailla debuggeri-"
+"ikkunassa)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:76
 msgid ""
@@ -602,9 +598,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:231
-#, fuzzy
 msgid "Script serialization"
-msgstr "Spriten animaatio"
+msgstr "Skriptin serialisointi"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
 msgid "Unity can handle script serialization in two ways:"

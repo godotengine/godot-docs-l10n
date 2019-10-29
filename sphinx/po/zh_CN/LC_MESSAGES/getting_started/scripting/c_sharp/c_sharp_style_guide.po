@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,8 @@ msgstr "C# 风格指南"
 msgid ""
 "Having well-defined and consistent coding conventions is important for every "
 "project, and Godot is no exception to this rule."
-msgstr "具有明确定义和一致的编码约定对于每个项目都很重要，Godot也不例外。"
+msgstr ""
+"对于每个项目而言，拥有定义良好且一致的编码约定非常重要，Godot也不例外。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:9
 msgid ""
@@ -36,9 +37,10 @@ msgid ""
 "users of the language, we encourage you to do the same, especially if you do "
 "not have such a guide yet."
 msgstr ""
-"这个页面包含一个编码风格指南，Godot本身的开发人员和贡献者也是如此。 因此，它"
-"主要面向那些想要为项目做出贡献的人，但由于本文中提到的惯例和指南是该语言用户"
-"最广泛采用的那些，我们鼓励您这样做，特别是如果您 还没有这样的指南。"
+"该页面包含一个编码风格指南，Godot本身的开发人员和贡献者都遵循该指南。因此，它"
+"主要用于希望为该项目做出贡献的人员，但是由于本文中提到的约定和准则是该语言用"
+"户最广泛采用的约定和准则，因此我们建议您也这样做，尤其是如果您还没有这样的指"
+"南。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:14
 msgid ""
@@ -50,26 +52,24 @@ msgid ""
 "`Framework Design Guidelines <https://docs.microsoft.com/en-us/dotnet/"
 "standard/design-guidelines/naming-guidelines>`_."
 msgstr ""
-"本文绝不是关于如何遵循标准编码约定或最佳实践的详尽指南。 如果您不确定此处未涉"
+"本文绝不是关于如何遵循标准编码约定或最佳实践的详尽指南。如果您不确定此处未涉"
 "及的方面，请参阅更全面的文档，例如 `C#编码约定 <https://docs.microsoft.com/"
 "en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions>`_ "
 "或 `框架设计指南 <https://docs.microsoft.com/en-us/dotnet/standard/design-"
-"guidelines/naming-guidelines>`_ 。"
+"guidelines/naming-guidelines>`_。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:21
 msgid "Language specification"
 msgstr "语言规范"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:23
-#, fuzzy
 msgid ""
 "Godot currently uses **C# version 7.0** in its engine and example source "
 "code. So, before we move to a newer version, care must be taken to avoid "
 "mixing language features only available in C# 7.1 or later."
 msgstr ""
-"目前，Godot在其引擎和示例源代码中使用C#6.0版。 因此，在我们迁移到更新版本之"
-"前，必须注意避免混合仅在C#7.0或更高版本中可用的语言功能，例如模式匹配或get / "
-"set访问器中的表达式身份成员。"
+"Godot当前在其引擎和示例源代码中使用 **C# 7.0 版本**。因此，在我们迁移使用较新"
+"版本之前，必须注意避免混合仅在 C# 7.1 或更高版本中可用的语言功能。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:27
 msgid ""
@@ -82,55 +82,49 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
 msgid "Formatting conventions"
-msgstr "命名约定"
+msgstr "格式约定"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:33
-#, fuzzy
 msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
-msgstr ""
-"如果您创建一个新文件，请确保它使用换行符( *LF* )来断行，而不是 *CRLF* 或 "
-"*CR* 。"
+msgstr "使用换行符（**LF**）来换行，而不是 ``CRLF`` 或 ``CR``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
-#, fuzzy
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_."
 msgstr ""
-"使用没有字节顺序标记的UTF-8编码(BOM <https://en.wikipedia.org/wiki/"
-"Byte_order_mark>)。"
+"使用不带 `字节顺序标记（BOM） <https://en.wikipedia.org/wiki/"
+"Byte_order_mark>`_ 的 **UTF-8** 编码。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:35
-#, fuzzy
 msgid ""
 "Use **4 spaces** instead of tabs for indentation (which is referred to as "
 "\"soft tabs\")."
-msgstr "使用4个空格而不是标签进行缩进(称为 '软标签' )。"
+msgstr "使用 **4空格** 代替制表符进行缩进（称为“软制表符”）。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
 msgid ""
 "Consider breaking a line into several if it's longer than 100 characters."
-msgstr ""
+msgstr "如果长度超过100个字符，请考虑将其分成几行。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:39
 msgid "Line breaks and blank lines"
 msgstr "换行符和空白行"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:41
-#, fuzzy
 msgid ""
 "For a general indentation rule, follow `the \"Allman Style\" <https://en."
 "wikipedia.org/wiki/Indentation_style#Allman_style>`_ which recommends "
 "placing the brace associated with a control statement on the next line, "
 "indented to the same level:"
 msgstr ""
-"对于一般缩进规则，请遵循 `The Allman Style <https://en.wikipedia.org/wiki/"
-"Indentation_style#Allman_style>`_ ，它建议将与控制语句关联的大括号放在下一"
-"行，缩进到同一水平:"
+"对于一般缩进规则，请遵循 `Allman风格 <https://en.wikipedia.org/wiki/"
+"Indentation_style#Allman_style>`_，它建议将与控制语句关联的大括号放在下一行，"
+"缩进到同一级别："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:58
 msgid "However, you may choose to omit line breaks inside brackets:"
-msgstr "但是，您可以选择省略括号内的换行符:"
+msgstr "但是，您可以选择省略括号内的换行符："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:60
 msgid "For simple property accessors."
@@ -138,29 +132,27 @@ msgstr "对于简单的属性访问者。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:61
 msgid "For simple object, array, or collection initializers."
-msgstr "对于简单对象，数组或集合初始值设定项。"
+msgstr "对于简单对象、数组、或集合初始化。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:62
 msgid "For abstract auto property, indexer, or event declarations."
-msgstr "对于抽象的自动属性，索引器或事件声明。"
+msgstr "对于抽象的自动属性、索引器、或事件声明。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:84
 msgid "Insert a blank line:"
-msgstr "插入一个空行:"
+msgstr "插入一个空行："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:86
-#, fuzzy
 msgid "After a list of ``using`` statements."
-msgstr "之后 *using* 语句列表。"
+msgstr "在一列 ``using`` 语句之后。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:87
 msgid "Between method, properties, and inner type declarations."
-msgstr "在方法，属性和内部类型声明之间。"
+msgstr "在方法、属性、和内部类型声明之间。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:88
-#, fuzzy
 msgid "At the end of each file."
-msgstr "这是该类的 cpp 文件。"
+msgstr "在每个文件的末尾。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:90
 msgid ""
@@ -168,12 +160,12 @@ msgid ""
 "relevance. In that case, consider inserting a blank line between the groups "
 "for easier reading."
 msgstr ""
-"字段和常量声明可以根据相关性组合在一起。 在这种情况下，请考虑在组之间插入一个"
-"空行以便于阅读。"
+"字段声明和常量声明可以根据相关性编组在一起。在这种情况下，请考虑在编组之间插"
+"入空白行以便于阅读。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
 msgid "Avoid inserting a blank line:"
-msgstr "避免插入空行:"
+msgstr "避免插入空白行："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
 msgid "After ``{``, the opening brace."
@@ -181,16 +173,15 @@ msgstr "在开括号 ``{`` 之后。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:96
 msgid "Before ``}``, the closing brace."
-msgstr "在结束括号 ``}`` 之前。"
+msgstr "在闭合括号 ``}`` 之前。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:97
-#, fuzzy
 msgid "After a comment block or a single-line comment."
-msgstr "发表评论后，或单行评论。"
+msgstr "在注释块或单行注释之后。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:98
 msgid "Adjacent to another blank line."
-msgstr "毗邻另一条空白行。"
+msgstr "与另一个空白行相邻。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:136
 msgid "Using spaces"
@@ -198,20 +189,19 @@ msgstr "使用空格"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:138
 msgid "Insert a space:"
-msgstr "插入空格:"
+msgstr "插入空格："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:140
 msgid "Around a binary and tertiary operator."
 msgstr "围绕二元和三元运算符。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:141
-#, fuzzy
 msgid ""
 "Between an opening parenthesis and ``if``, ``for``, ``foreach``, ``catch``, "
 "``while``, ``lock`` or ``using`` keywords."
 msgstr ""
-"在左括号和 *if*, *for*, *foreach*, *catch*, *while*, *lock* 或 *using* 关键字"
-"之间。"
+"在左括号和 ``if``、 ``for``、 ``foreach``、 ``catch``、 ``while``、 ``lock`` "
+"或 ``using`` 关键字之间。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
 msgid "Before and within a single line accessor block."
@@ -223,17 +213,15 @@ msgstr "在单行访问器块中的访问器之间。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
 msgid "After a comma which is not at the end of a line."
-msgstr ""
+msgstr "在不是在行尾的逗号之后。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:145
-#, fuzzy
 msgid "After a semicolon in a ``for`` statement."
-msgstr "在 *for* 语句中使用分号后。"
+msgstr "在 ``for`` 语句中的分号之后。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
-#, fuzzy
 msgid "After a colon in a single line ``case`` statement."
-msgstr "在单行 *case* 语句中冒号后。"
+msgstr "在单行 ``case`` 语句中的冒号之后。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
 msgid "Around a colon in a type declaration."
@@ -244,15 +232,14 @@ msgid "Around a lambda arrow."
 msgstr "围绕一个lambda箭头。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:149
-#, fuzzy
 msgid ""
 "After a single-line comment symbol (``//``), and before it if used at the "
 "end of a line."
-msgstr "在单行注释符号('//')之后，如果在行结束时使用它。"
+msgstr "在单行注释符号（``//``）之后，并且如果在行末使用，则在它之前。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
 msgid "Do not use a space:"
-msgstr "不要使用空间:"
+msgstr "不要使用空格："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
 msgid "After type cast parentheses."
@@ -260,57 +247,52 @@ msgstr "在类型转换括号后。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
 msgid "Within single line initializer braces."
-msgstr "在单行初始化程序括号内。"
+msgstr "在单行初始化括号内侧。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:156
 msgid ""
 "The following example shows a proper use of spaces, according to some of the "
 "above mentioned conventions:"
-msgstr "根据上面提到的一些约定，以下示例显示了空格的正确使用:"
+msgstr "下面的示例根据上述的一些约定显示了对空格的正确使用："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:191
 msgid "Naming conventions"
 msgstr "命名约定"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:193
-#, fuzzy
 msgid ""
 "Use **PascalCase** for all namespaces, type names and member level "
 "identifiers (i.e. methods, properties, constants, events), except for "
 "private fields:"
 msgstr ""
-"对所有名称空间，类型名称和成员级别标识符(即方法，属性，常量，事件)使用 "
-"*PascalCase* ，私有字段除外:"
+"对所有名称空间、类型名称、和成员级别标识符（即方法、属性、常量、事件）使用 "
+"**PascalCase**，私有字段除外："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:214
-#, fuzzy
 msgid ""
 "Use **camelCase** for all other identifiers (i.e. local variables, method "
 "arguments), and use an underscore (``_``) as a prefix for private fields "
 "(but not for methods or properties, as explained above):"
 msgstr ""
-"对所有其他标识符(即局部变量，方法参数)使用 *camelCase* ，并使用下划线('_')作"
-"为私有字段的前缀(但不适用于方法或属性，如上所述):"
+"将 **camelCase** 用于所有其他标识符（即局部变量、方法参数），并使用下划线"
+"（``_``）作为私有字段的前缀（但不能用于方法或属性，如上所述）："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:228
-#, fuzzy
 msgid ""
 "There's an exception with acronyms which consist of two letters, like "
 "``UI``, which should be written in uppercase letters where PascalCase would "
 "be expected, and in lowercase letters otherwise."
 msgstr ""
-"首字母缩略词有一个例外，它由两个字母组成，例如 *'UI'* ，当使用Pascal案例时，"
-"应使用大写字母书写，否则使用小写字母。"
+"首字母缩略词有一个例外情况：它由两个字母组成，例如 ``UI``，应当使用PascalCase"
+"的大写字母，否则使用小写字母。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:231
-#, fuzzy
 msgid ""
 "Note that ``id`` is **not** an acronym, so it should be treated as a normal "
 "identifier:"
-msgstr "请注意，*'id'* **不是** 首字母缩略词，因此应将其视为普通标识符:"
+msgstr "请注意，``id`` **不是** 首字母缩略词，因此应将其视为普通标识符："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:242
-#, fuzzy
 msgid ""
 "It is generally discouraged to use a type name as a prefix of an identifier, "
 "like ``string strText`` or ``float fPower``, for example. An exception is "
@@ -318,45 +300,43 @@ msgid ""
 "letter ``I`` prefixed to their names, like ``IInventoryHolder`` or "
 "``IDamageable``."
 msgstr ""
-"例如，通常不鼓励使用类型名称作为标识符的前缀，例如*'string strText'*或"
-"*'float fPower'*。 但是，有一个关于接口的例外，在这种情况下，它们**应该使用大"
-"写 *'I'* 作为前缀命名，如 *'IInventoryHolder'* 或 *'IDamageable'*。"
+"通常不建议将类型名称用作标识符的前缀，例如，``string strText`` 或 ``float "
+"fPower``。但是，对于接口来说是个例外，实际上，接口 **应该** 在其名称前加上大"
+"写字母 ``I``，例如 ``IInventoryHolder`` 或 ``IDamageable``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:246
 msgid ""
 "Lastly, consider choosing descriptive names and do not try to shorten them "
 "too much if it affects readability."
-msgstr "最后，考虑选择描述性名称，如果它影响可读性，不要试图将它们缩短太多。"
+msgstr ""
+"最后，考虑选择描述性名称，如果它影响可读性，请不要尝试过多地缩短描述性名称。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:249
-#, fuzzy
 msgid ""
 "For instance, if you want to write code to find a nearby enemy and hit it "
 "with a weapon, prefer:"
-msgstr "例如，如果您想编写一个代码来寻找附近的敌人并用武器击中，那就更喜欢了"
+msgstr "例如，如果您想编写代码来查找附近的敌人并用武器击中它，请选择："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:255
-#, fuzzy
 msgid "Rather than:"
-msgstr "而不是，"
+msgstr "而不是："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:262
 msgid "Implicitly typed local variables"
-msgstr "隐式输入的局部变量"
+msgstr "隐式类型的局部变量"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:264
-#, fuzzy
 msgid ""
 "Consider using implicitly typing (``var``) for declaration of a local "
 "variable, but do so **only when the type is evident** from the right side of "
 "the assignment:"
 msgstr ""
-"考虑使用隐式输入(*'var'*)来声明局部变量，但只有在类型明显的情况下** **才能从"
-"赋值的右侧执行:"
+"考虑使用隐式类型化（``var``）声明局部变量，但是 **仅当类型明显时** 即可从右侧"
+"的赋值推断类型："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:294
 msgid "Other considerations"
-msgstr "其他考虑"
+msgstr "其他注意事项"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:296
 msgid "Use explicit access modifiers."
@@ -364,32 +344,28 @@ msgstr "使用显式访问修饰符。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:297
 msgid "Use properties instead of non-private fields."
-msgstr "使用属性而不是非私有字段。"
+msgstr "使用属性而代替非私有字段。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:298
-#, fuzzy
 msgid ""
 "Use modifiers in this order: ``public``/``protected``/``private``/"
 "``internal``/``virtual``/``override``/``abstract``/``new``/``static``/"
 "``readonly``."
 msgstr ""
-"按此顺序使用修饰符:*'public / protected / private / internal virtual / "
-"override / abstract / new static readonly'*。"
+"按此顺序使用修饰符： ``public``/``protected``/``private``/``internal``/"
+"``virtual``/``override``/``abstract``/``new``/``static``/``readonly``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
-#, fuzzy
 msgid ""
 "Avoid using fully-qualified names or ``this.`` prefix for members when it's "
 "not necessary."
-msgstr "在没有必要的情况下，避免使用完全限定名称或 *'this.'* 前缀。"
+msgstr "避免在不必要时，为成员使用完全限定的名称或 ``this.`` 前缀。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:301
-#, fuzzy
 msgid "Remove unused ``using`` statements and unnecessary parentheses."
-msgstr "删除未使用的 *'using'* 语句和不必要的括号。"
+msgstr "删除未使用的 ``using`` 语句和不必要的括号。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
-#, fuzzy
 msgid "Consider omitting the default initial value for a type."
 msgstr "考虑省略类型的默认初始值。"
 
@@ -403,4 +379,5 @@ msgstr "考虑使用空条件运算符或类型初始化器来使代码更紧凑
 msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."
-msgstr "当值可能是不同类型时使用安全演员，否则使用直接演员。"
+msgstr ""
+"当值可能会成为另一种不同的类型，请使用安全类型转换，否则使用直接类型转换。"

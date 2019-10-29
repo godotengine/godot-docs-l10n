@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,9 @@ msgid ""
 "the style of game you're making, you may have special requirements, but in "
 "general the movement in most 2D games is based on a small number of designs."
 msgstr ""
+"初心者はみんな、こう考えます。「どうやってキャラクターを動かすの？」作成して"
+"いるゲームのスタイルによっては、特別な要件がある場合がありますが、一般的に、"
+"ほとんどの2Dゲームの動きは少数のデザインに基づいています。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:13
 msgid ""
@@ -38,10 +41,12 @@ msgid ""
 "but the principles will apply to other node types (Area2D, RigidBody2D) as "
 "well."
 msgstr ""
+"この例ではKinematicBody2Dを使用しますが、同じことが他のノードタイプ（Area2D、"
+"RigidBody2D）にも適用されます。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:17
 msgid "Setup"
-msgstr ""
+msgstr "セットアップ"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:19
 msgid ""
@@ -50,6 +55,9 @@ msgid ""
 "You can use the Godot icon (\"icon.png\") for the Sprite's texture or use "
 "any other 2D image you have."
 msgstr ""
+"以下の各例では、同じシーン設定を使用しています。スプライトとCollisionShape2D"
+"の2つの子を持つKinematicBody2Dから始めます。スプライトのテクスチャにGodotアイ"
+"コン（ \"icon.png\"）を使用するか、他の2Dイメージを使用できます。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:23
 msgid ""
@@ -57,6 +65,8 @@ msgid ""
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
 "details):"
 msgstr ""
+"[プロジェクト]-> [プロジェクト設定]を開き、[入力マップ]タブを選択します。次の"
+"入力アクションを追加します（詳細については、InputEventを参照してください）："
 
 #: ../../docs/tutorials/2d/2d_movement.rst:29
 msgid "8-way movement"
@@ -101,6 +111,8 @@ msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
 msgstr ""
+"以前にベクトル演算を使用したことがない場合、あるいは忘れてしまった場合は、ベ"
+"クトル演算でGodotのベクトル使用の説明をみることができます。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:113
 msgid "Rotation + movement"
@@ -135,6 +147,9 @@ msgid ""
 "function that you can use in many circumstances where you would otherwise "
 "need to apply trigonometric functions."
 msgstr ""
+"速度を設定するには、ボディと同じ方向を指すようにVector2.rotated()メソッドを使"
+"用します。 rotated()は、三角関数を適用する必要がある多くの状況で使用できる便"
+"利なベクトル関数です。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:200
 msgid "Rotation + movement (mouse)"

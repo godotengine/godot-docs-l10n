@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,9 +32,9 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
-"한번 당신이 더이상 게임 개발자가 아니라고 상상해보세요. 이제, 당신은 셰프입니"
-"다! 힙스터 복장을 벗어 던지고 토크와 더블 브레스트 재킷을 입는다고 말이죠. 이"
-"제 게임을 만드는 대신, 손님을 위한 새롭고 맛있는 레시피를 만들어 봅시다."
+"한번 당신이 더 이상 게임 개발자가 아니라고 상상해보세요. 이제 당신은 셰프입니"
+"다! 힙스터 복장을 벗어 던지고 토크와 더블 브레스트 재킷을 입는다고요. 이제 게"
+"임을 만드는 게 아니라, 손님을 위해 새롭고 맛있는 레시피를 만드는 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -43,9 +43,9 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
-"그럼, 어떻게 셰프가 레시피를 만들까요? 레시피는 두 가지 과정으로 나뉩니다: 첫"
-"째는 재료이고 둘째는 요리하는 방법입니다. 이렇게 한다면, 누구나 레시피에 따라"
-"서 훌륭한 음식을 맛 볼 수 있을 겁니다."
+"그럼 어떻게 셰프가 레시피를 만들까요? 레시피는 두 가지 과정으로 나누어 집니"
+"다: 첫번째는 재료, 두번째는 요리하는 방법입니다. 이 과정으로 누구나 레시피를 "
+"따라서 훌륭한 음식을 맛 볼 수 있을 겁니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -53,21 +53,21 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
-"Godot에서 게임을 만드는 것도 꽤나 요리하는 느낌입니다. 주방에서 요리를 하듯"
-"이 엔진을 사용합니다. 주방으로 본다면, *노드*\\ 는 요리를 하기 위한 신선한 재"
-"료들이 가득 찬 냉장고로 볼 수 있습니다."
+"Godot에서 게임을 만드는 것도 꽤나 요리하는 느낌입니다. 엔진은 주방과 같습니"
+"다. 주방으로 친다면 *노드(Node)*\\ 는 요리를 하기 위해 신선한 재료들이 가득 "
+"찬 냉장고로 볼 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
-"많은 타입의 노드들이 있습니다. 어떤거는 이미지를 보여주고, 아니면 소리를 재생"
-"하거나 혹은 3D 모델을 보여주는 것이 있습니다. 그것도 수십 개나 있습니다."
+"많은 유형의 노드가 있습니다. 이미지를 보여주는 노드, 소리를 재생하는 노드, "
+"3D 모델을 보여주는 노드 등이 있습니다. 그것도 수십 개나 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 msgid "Nodes"
-msgstr "노드(Nodes)"
+msgstr "노드(Node)"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -76,9 +76,9 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
-"일단 기초로 한번 시작해봅시다. 노드는 게임을 만들기 위한 기본 건축 벽돌들 입"
-"니다. 위에서 언급했듯이, 노드는 다양한 특수 기능을 실행할 수 있습니다. 하지"
-"만, 주어진 노드들은 항상 이러한 성질들을 가집니다:"
+"일단 기초로 한번 시작해봅시다. 노드는 게임을 만들기 위한 기초 건축 벽돌입니"
+"다. 앞서 말했듯이 노드는 다양한 특수 기능을 작업할 수 있습니다. 하지만 어떤 "
+"노드든지 항상 이러한 성질을 갖습니다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
@@ -86,19 +86,19 @@ msgstr "이름이 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr "편집할 수 있는 속성들을 갖고 있습니다."
+msgstr "편집할 수 있는 속성을 갖습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
-msgstr "모든 프레임을 처리하기 위한 콜백을 수신할 수 있습니다."
+msgstr "각 프레임을 처리하기 위한 콜백을 받을 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr "(더 많은 기능을 위해) 확장될 수 있습니다."
+msgstr "(더 많은 기능을 갖기 위해) 확장될 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to another node as a child."
-msgstr "다른 노드에 자식으로 추가될 수 있습니다."
+msgstr "다른 노드의 자식으로 추가될 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
@@ -106,7 +106,7 @@ msgid ""
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
 "마지막이 중요합니다. 노드는 다른 노드를 자식으로 가질 수 있습니다. 이런 식으"
-"로 배열된다면, 노드들은 **트리** 형태가 됩니다."
+"로 배열된다면 노드들은 **트리(Tree)**\\ 가 됩니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -114,9 +114,9 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
-"Godot에서, 이런 방식으로 노드들을 배열하는 것은 프로젝트를 조직화하기에 강력"
-"한 도구를 만듭니다. 각각의 노드들이 다른 기능을 가지고 있기에, 그들을 묶는 것"
-"으로 훨씬 복잡한 기능을 만들 수 있습니다."
+"Godot에서 이런 방식으로 노드들을 배열하는 것은 프로젝트를 조직화하는데 강력"
+"한 도구가 됩니다. 각 노드들이 다른 기능을 가지고 있기에, 그들을 묶는 것으로 "
+"훨씬 복잡한 기능을 구현할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -124,13 +124,13 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
-"이해하지 못해도 걱정하지 마세요. 우리는 몇 가지 섹션에서 계속 이것에 대해 알"
-"아볼 것입니다. 여기서 기억할 점은 노드가 있다는 것과 그것이 서로 배열될 수 있"
+"와닿지 않더라도 걱정하지 마세요. 앞으로 몇 몇 섹션에서 계속 노드에 대해 알아"
+"볼 것입니다. 여기서 기억할 점은 노드가 있고 이런 방식으로 서로 배열될 수 있"
 "는 점입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
-msgstr "씬(Scenes)"
+msgstr "씬(Scene)"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
@@ -145,11 +145,11 @@ msgid ""
 "A scene is composed of a group of nodes organized hierarchically (in tree "
 "fashion). Furthermore, a scene:"
 msgstr ""
-"씬은 계층적으로 (트리 형식으로) 조직된 노드 그룹으로 구성됩니다. 또한 씬은:"
+"씬은 계층 구조로 (트리 형식으로) 조직된 노드 그룹으로 구성됩니다. 또한 씬은:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has one root node."
-msgstr "항상 하나의 루트 노드를 가집니다."
+msgstr "항상 하나의 루트 노드를 갖습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
@@ -157,15 +157,15 @@ msgstr "디스크에 저장하고 다시 불러올 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr "*인스턴스(Instance)* 할 수 있습니다 (더 자세한 점은 나중에)."
+msgstr "*인스턴스(Instance)*\\ 될수 있습니다 (더 자세한 설명은 나중에)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
-"게임을 실행한다는 것은 씬을 실행한다는 것입니다. 한 프로젝트는 여러 씬 들로 "
-"이루어지지만, 게임을 시작하면, 하나의 씬만 메인 씬으로 선택됩니다."
+"게임을 실행한다는 것은 씬을 실행하는 것입니다. 한 프로젝트는 여러 씬으로 이루"
+"어지지만, 게임을 시작하면 그 중 하나의 씬만 메인 씬으로 선택됩니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -173,9 +173,9 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
-"기본적으로 Godot 편집기는 **씬 편집기** 입니다. 2D와 3D 씬을 편집하기 위한 도"
-"구들과 사용자 인터페이스들이 많이 있지만, 편집기는 씬을 편집하는 것과 씬을 구"
-"성하는 노드들이란 개념을 기반으로 둡니다."
+"기본적으로 Godot 편집기는 **씬 편집기**\\ 입니다. 사용자 인터페이스말고도 2D"
+"와 3D 씬을 편집하기 위한 도구가 많이 있지만, 편집기는 씬을 편집하는 것과 씬"
+"을 구성하는 노드들이란 개념으로 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 msgid "Creating a new project"
@@ -187,172 +187,212 @@ msgid ""
 "a long tradition in tutorials, we'll start with a \"Hello World\" project. "
 "This will introduce us to using the editor."
 msgstr ""
-"예제를 통해 이런 추상적인 개념들을 더 구체화 시켜봅시다. 튜토리얼의 오랜 전통"
-"에 따라, 우리는 \"Hello World\" 프로젝트를 시작할 겁니다. 이를 통해 편집기를 "
-"사용하는 법을 설명하겠습니다."
+"예제를 통해 이런 추상적인 개념들을 더 구체화해봅시다. 튜토리얼의 오랜 전통에 "
+"따라 \"Hello World\" 프로젝트를 시작하겠습니다. 이를 통해 편집기를 사용하는 "
+"법을 알게 될 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
 msgid ""
 "If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
-"프로젝트 외부에서 Godot 실행 파일을 실행하면, 프로젝트 매니저가 뜹니다. 이걸"
-"로 개발자들은 프로젝트들을 관리할 수 있습니다."
+"프로젝트 외부에서 Godot 실행 파일을 실행하면, 프로젝트 매니저가 뜹니다. 개발"
+"자는 프로젝트 매니저로 프로젝트들을 관리할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
+#, fuzzy
 msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
-"a path for the project and specify the project name \"New Project\":"
+"a path for the project and specify the project name."
 msgstr ""
-"새 프로젝트를 만드려면, \"새 프로젝트\" 버튼을 누르세요. 프로젝트를 만들 경로"
-"를 고르고 프로젝트 명을 \"새 프로젝트\" 로 지정하세요:"
+"새 프로젝트를 만드려면, \"새 프로젝트(NewProject)\" 버튼을 클릭하세요. 프로젝"
+"트의 경로를 지정하고 프로젝트 이름을 \"New Project\"로 하세요:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:91
+msgid ""
+"You can also select the rendering backend at this stage (OpenGL ES 3.0 or "
+"OpenGL ES 2.0). The advantages and disadvantages of each are listed to help "
+"you choose, and you can refer to :ref:`doc_gles2_gles3_differences` for more "
+"details. Note that you can change the backend from the project settings if "
+"you change your mind later on. For this tutorial either backend is fine."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:100
 msgid "Editor"
 msgstr "편집기"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:96
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:102
 msgid ""
 "Once you've created the \"New Project\", then open it. This will open the "
 "Godot editor:"
 msgstr ""
-"\"새 프로젝트\"를 만들면, 프로젝트를 엽니다. 그러면 Godot 편집기가 켜질 것입"
-"니다:"
+"\"Nee Project\"를 만들고 프로젝트를 엽니다. 그러면 Godot 편집기가 열립니다:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:107
 msgid ""
 "As mentioned before, making games in Godot feels like being in a kitchen, so "
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
-"앞에서 말했듯이, Godot로 게임을 만드는 것은 주방에서 요리하는 느낌입니다, 그"
-"렇다면 한번 냉장고를 열고 프로젝트에 신선한 노드들을 추가해 봅시다. 실행을 누"
-"르면 \"Hello World!\"가 화면에 나오게 할 것입니다."
+"앞서 말했듯이, Godot로 게임을 만드는 것은 주방에 있는 것과 같은 느낌입니다. "
+"그렇다면 한번 냉장고를 열고 프로젝트에 신선한 노드들을 추가해 봅시다. 실행을 "
+"누르면 \"Hello World!\"가 화면에 나오게 할 것입니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:112
 msgid ""
-"To do this, press the \"New Node\" button (which looks like a plus symbol):"
+"To do this we need to add a Label node. Press the \"Add Child Node\" button "
+"at the top left of the scene dock (the icon represents a plus symbol). This "
+"button is the main way to add new nodes to a scene, and will always add the "
+"chosen node as a child of the currently selected node (or, in an empty "
+"scene, as the \"root\" node)."
 msgstr ""
-"그러기 위해, \"새 노드\" 버튼을 누르세요 (더하기 아이콘처럼 생겼습니다):"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
+msgid ""
+"In an empty scene (without root node), the scene dock shows several options "
+"to quickly add a root node to the scene. \"2D Scene\" adds a Node2D node, "
+"\"3D Scene\" adds a Spatial node, \"User Interface\" adds a Control node, "
+"and \"Custom Node\" which lets you select any node (so it is equivalent to "
+"pressing the \"Add Child Node\" button). You can also press the star-shaped "
+"icon to toggle the display of your favorited nodes."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:128
+msgid ""
+"Note that these presets are here for convenience and are not mandatory for "
+"the different types of scenes. Not every 3D scene needs a Spatial node as "
+"its root node, likewise not every GUI or 2D scene needs a Control node or "
+"Node2D as their root node."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
+msgid ""
+"Now, to add a label node to this scene you can click on the Custom Node "
+"button or the Add Node button at the top. In scenes that aren't empty you "
+"use the add node button to create every child node."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:139
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
-msgstr "그러면 당신이 만들 수 있는 긴 노드 대화 상자가 나옵니다:"
+msgstr ""
+"그러면 만들 수 있는 노드 목록이 길게 나열된 Node 만들기 대화 상자가 열립니다:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:144
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
-"거기서, \"Label\" 노드를 먼저 선택하세요. 검색으로 더 빨리 찾을 수도 있습니"
-"다:"
+"거기서 \"Label\" 노드를 먼저 선택하세요. 검색이 가장 빠른 방법일 것입니다:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:149
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
-"그리고 마침내, Label을 생성합니다! 생성 버튼을 누르는 순간 많은 작업이 이루어"
-"집니다:"
+"마지막으로 Label을 만듭니다! 만들기(Create) 버튼을 누르는 순간 많은 일이 일어"
+"납니다:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:124
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:153
 msgid ""
 "First of all, the scene changes to the 2D editor (because Label is a 2D Node "
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
-"먼저, 씬이 2D 편집기로 바뀝니다 (Label은 2D 노드 타입이기 때문입니다), 그리"
-"고 Label이 선택 된 채로, 뷰포트의 왼쪽 위에 보입니다."
+"먼저 씬이 2D 편집기로 바뀝니다 (Label은 2D 노드 유형이기 때문입니다), 그리고 "
+"Label은 선택된 상태이며, 뷰포트의 왼쪽 위에 나타납니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:127
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:156
 msgid ""
 "The node appears in the scene tree editor (box in the top right corner), and "
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
-"노드는 씬 트리 편집기에 나타납니다 (오른쪽 위 상자), 그리고 라벨 속성은 인스"
+"노드는 씬 트리 편집기에 나타납니다 (오른쪽 위 상자), 그리고 Label 속성은 인스"
 "펙터에 나타납니다 (오른쪽 아래 상자)."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:160
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr ""
-"다음 작업은 라벨 내의 \"Text\" 속성을 바꾸는 것입니다. \"Hello, World!\" 라"
+"다음 단계는 Label 내의 \"Text\" 속성을 바꾸는 것입니다. \"Hello, World!\"라"
 "고 입력합니다:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:165
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
-"오케이, 씬을 실행할 준비를 마쳤습니다! 위 버튼들 중 씬 실행 버튼을 눌르세요 "
-"(단축키로 F6을 누르세요):"
+"좋아요, 씬을 실행할 준비가 되었습니다! 상단 메뉴에서 버튼 중 씬 실행(PLAY "
+"SCENE) 버튼을 누르세요 (혹은 F6 키를 누르세요):"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
 msgid "Aaaand... Oops."
-msgstr "그리고오... 이런."
+msgstr "그러며언... 어이쿠."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:174
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
-"씬은 실행하려면 저장을 해야 합니다, 따라서 씬 -> 씬 저장에서 hello.tscn 같은 "
-"이름의 씬을 저장합니다:"
+"씬은 실행하려면 저장을 해야 합니다. 따라서 씬(Scene) -> 저장하기(Save)에서 "
+"Hello.tscn같은 이름을 짓고 씬을 저장합니다:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:179
+#, fuzzy
 msgid ""
 "And here's when something funny happens. The file dialog is a special file "
 "dialog, and only allows you to save inside the project. The project root is "
-"\"res://\" which means \"resource path\". This means that files can only be "
+"``res://`` which means \"resource path\". This means that files can only be "
 "saved inside the project. For the future, when doing file operations in "
-"Godot, remember that \"res://\" is the resource path, and no matter the "
+"Godot, remember that ``res://`` is the resource path, and no matter the "
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
-"그러면 재미난 일이 발생합니다. 파일 대화 상자는 특별하기 때문에, 프로젝트 안"
-"에만 저장할 수 있습니다. 프로젝트 경로는 \"res://\"로 \"리소스 경로\"를 의미"
+"그러면 재미난 일이 일어납니다. 파일 대화 상자는 특별하기 때문에, 프로젝트 안"
+"에만 저장할 수 있습니다. 프로젝트 루트는 \"res://\"로 \"리소스 경로\"를 의미"
 "합니다. 즉, 파일은 프로젝트 안에만 저장할 수 있다는 것입니다. 나중에 Godot에"
-"서 파일을 관리할 때 \"res://\"가 리소스 경로 임을 기억하세요, 그리고 이것으"
-"로 어떤 플랫폼이나 설치 경로와 관계없이 게임 내에서 리소스 파일을 찾을 수 있"
+"서 파일을 관리할 때 \"res://\"가 리소스 경로라는 사실을 기억하세요. 이것이라"
+"면 어떤 플랫폼이나 설치 경로와 관계없이 게임 내에서 리소스 파일을 찾을 수 있"
 "습니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
 "씬을 저장하고 씬을 다시 실행하면, \"Hello, World\" 데모가 마침내 실행됩니다:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:192
 msgid "Success!"
 msgstr "성공!"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:167
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
 msgid ""
 "If this doesn't immediately work and you have a hiDPI display on at least "
 "one of your monitors, go to **Project → Project Settings → Display → "
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
+"이것이 즉시 작동하지 않고 모니터 중 하나에 hiDPI 화면을 갖는 경우, **프로젝트"
+"(Project) → 프로젝트 설정(Project Settings) → Display → Window**\\ 로 갑니"
+"다. 그런 다음 **Dpi** 아래에 있는 **Allow Hidpi** 설정을 켜줍니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
 msgid "Configuring the project"
-msgstr "프로젝트 구성하기"
+msgstr "프로젝트 설정하기"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:177
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:206
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
-"좋아요, 프로젝트를 구성할 때군요. 지금은 할 수 있는 일은 여기 있는 씬을 실행"
-"하는 것 밖에 없습니다. 하지만, 프로젝트는 여러 씬을 가질 수 있기 때문에, 하나"
-"를 메인 씬으로 지정해야 합니다. 언제나 프로젝트를 실행할 때 준비가 된 씬 말이"
-"죠."
+"좋아요. 프로젝트를 설정할 시간입니다. 지금 할 수 있는 일은 현재 씬을 실행하"
+"는 것 뿐입니다. 하지만 프로젝트는 여러 개의 씬을 갖기 때문에 한 씬을 메인 씬"
+"으로 설정해야 합니다. 프로젝트를 실행하면 언제나 불러오는 씬이죠."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:211
 msgid ""
 "These settings are all stored in a project.godot file, which is a plaintext "
 "file in win.ini format (for easy editing). There are dozens of settings that "
@@ -360,62 +400,64 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
-"이 설정들은 모두 project.godot 파일 내에 들어갑니다, 이것은 win.ini 형식으로 "
-"된 텍스트 문서입니다 (편집을 쉽게 하기 위한 겁니다). 당신이 프로젝트를 실행하"
-"는 방법을 바꿀 수 있는 많은 설정들이 이 파일 안에 있습니다. 프로젝트를 간단"
-"히 하기 위해, Godot는 project.godot 파일을 편집하기 위한 프로젝트 설정 대화 "
-"상자를 제공합니다."
+"이 설정들은 모두 project.godot 파일에 저장됩니다. (편집을 쉽게 하기 위해) "
+"win.ini 형식으로 된 텍스트 파일입니다. 이 파일에는 프로젝트를 실행하는 방법"
+"을 바꾸는 수 십 개의 설정이 있습니다. Godot는 이 과정을 간소화하기 위해 "
+"project.godot 파일을 편집하는 프로젝트 설정(Project Settings) 대화 상자를 제"
+"공합니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:217
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
-msgstr "대화 상자에 들어가기 위해, 프로젝트 -> 프로젝트 설정으로 가세요."
+msgstr ""
+"대화 상자에 들어가려면 프로젝트(Project) -> 프로젝트 설정(Project Settings)으"
+"로 가세요."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:190
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:219
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
-"창을 열었다면, 메인 씬을 선택합니다. 'Application/Run/Main Scene' 속성으로 가"
+"창을 열었다면 메인 씬을 선택합니다. 'Application/Run/Main Scene' 속성으로 가"
 "서 'hello.tscn'을 선택합니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:224
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
-"이제 변경했으니, 평범한 실행 버튼을 누를 때 (혹은F5를 누를 때), 어떤 씬을 편"
-"집하는 도중이더라도, 설정한 씬이 실행될 것입니다."
+"이 변경 사항으로, 이제 아무 씬이든 편집하는 도중 기본 실행(Play) 버튼을 누르"
+"면 (혹은 F5 키를 누르면) 설정한 씬이 실행됩니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:198
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:227
 msgid ""
 "The project settings dialog provides a lot of options that can be saved to a "
 "project.godot file and shows their default values. If you change a value, a "
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
-"프로젝트 설정 대화 상자는 많은 설정을 제공하고 이것들을 project.godot 파일에 "
-"저장하거나 기본 값으로 되돌릴 수 있습니다. 값을 변경하게 되면, 이름 왼쪽에 체"
-"크 표시가 뜹니다. 이는 그 속성이 project.godot 파일에 저장되었다는 것입니다."
+"프로젝트 설정 대화 상자는 많은 설정을 제공하고 project.godot 파일에 저장하거"
+"나 기본 값으로 되돌릴 수 있습니다. 값을 변경하면 이름 왼쪽에 체크 표시가 뜹니"
+"다. 이는 그 속성이 project.godot 파일에 저장되었다는 뜻입니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:232
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
-"또한, :ref:`ProjectSettings <class_ProjectSettings>` 싱글톤(singleton)을 사용"
-"해서 런타임에 쓰이는 사용자 구성 옵션을 추가할 수도 있습니다."
+"여담으로 :ref:`ProjectSettings <class_ProjectSettings>` 싱글톤(Singleton)을 "
+"사용해서 맞춤 옵션을 추가하고 이를 런타임 도중 읽도록 할 수도 있습니다."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:207
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:236
 msgid "To be continued..."
 msgstr "계속..."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:238
 msgid ""
 "This tutorial talked about \"scenes and nodes\", but so far there has been "
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
 "이 튜토리얼은 \"씬과 노드\"에 대해서만, 그러니까 단 *하나의* 씬과 *하나의* 노"
-"드만을 설명했습니다! 걱정하지 마세요, 다음 튜토리얼로 가서 개념을 확장시킬 겁"
-"니다..."
+"드만을 설명했습니다! 걱정하지 마세요. 다음 튜토리얼로 가서 개념을 확장해봅시"
+"다..."

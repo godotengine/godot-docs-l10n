@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,15 +23,16 @@ msgstr "Scripting (continuazione)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr "Elaborazione"
+msgstr "Processare"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
-"Molte azioni in Godot sono eseguite tramite callback di funzioni virtuali, "
-"non c'è necessità di scrivere codice che viene eseguito in ogni momento."
+"Non c'è necessità di eseguire codice che viene eseguito in ogni momento, "
+"dato che molte azioni in Godot vengono eseguite tramite callback di funzioni "
+"virtuali."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
@@ -64,6 +65,9 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"È importante tenere a mente che la frequenza con cui ``_process()``sarà "
+"chiamato dipende da quanti fotogrammi al secondo (FPS) è in esecuzione la "
+"vostra applicazione. Questo valore può variare nel tempo e nei dispositivi."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -80,8 +84,8 @@ msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
-"Questo parametro può essere usato per essere sicuri che gli oggetti abbiano "
-"la stessa quantità di tempo, incurante degli FPS del gioco."
+"Questo parametro può essere usato per essere sicuri che le cose ci mettano "
+"sempre la stessa durata di tempo, indifferentemente dagli FPS del gioco."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
@@ -113,10 +117,10 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
-"La funzione ``_process()``,  però, non è sincronizzata con la fisica. I "
-"frame rateo non è costante ed esso dipende dall'hardware e dalla "
-"ottimizzazione del gioco. L'esecuzione avviene dopo i processi della fisica "
-"nei giochi a thread singolo."
+"Tuttavia la funzione ``_process()`` non è sincronizzata con la fisica. Il "
+"suo frame rate non è costante e dipende dall'hardware e dall'ottimizzazione "
+"del gioco. Viene eseguito dopo il passaggio della fisica nei giochi a thread "
+"singolo."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
 msgid ""
@@ -128,7 +132,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
-msgstr "Che mostrerà un contatore che incrementa ad ogni frame."
+msgstr "Il quale mostrerà il contatore incrementare ogni frame."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
@@ -141,15 +145,19 @@ msgid ""
 "for organizing large scenes. There are two ways to add nodes to groups. The "
 "first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
+"I gruppi in Godot funzionano come tag che potreste aver trovato in altri "
+"software. Un nodo può essere aggiunto a quanti gruppi si desidera. Questa è "
+"una funzione utile per organizzare scene di grandi dimensioni. Ci sono due "
+"modi per aggiungere nodi ai gruppi. Il primo è dall'interfaccia utente, "
+"usando il pulsante Gruppi sotto il pannello Nodi:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
-"ed il secondo modo è dal codice. Il seguente Script voule aggiungere al nodo "
-"corrente appartenente al gruppo \"enemies\" non appena esso appare "
-"nell'altero della scena."
+"Ed il secondo modo è da codice. Il seguente script vorrebbe aggiungere il "
+"nodo corrente al gruppo ``enemies`` appena appare nell'albero di scena."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -241,8 +249,8 @@ msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
 msgstr ""
-"Come menzionato precedentemente, è meglio usare queste funzioni anziché il "
-"sistema di notifiche."
+"Come detto prima, è meglio usare queste funzioni invece delle notifiche di "
+"sistema."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
 msgid "Creating nodes"
@@ -296,7 +304,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
 msgid "Instancing scenes"
-msgstr "Istanziare scene"
+msgstr "Instanziare  scene"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:347
 msgid ""

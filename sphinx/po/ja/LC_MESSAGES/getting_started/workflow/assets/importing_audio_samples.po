@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,12 @@ msgid "Why import?"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
-#, fuzzy
 msgid ""
 "Raw audio data in general is large and undesired. Godot provides two main "
 "options to import your audio data: WAV and Ogg Vorbis."
 msgstr ""
-"一般的に生のオーディオデータは大きく、望ましくありません。Godot は、オーディ"
-"オ データをインポートするための2つの主要なオプションを提供します: WAV と OGG "
+"一般に生のオーディオデータは大きく、望ましくありません。Godot は、オーディオ "
+"データをインポートするための2つの主要なオプションを提供します: WAV と  Ogg "
 "Vorbisです。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
@@ -61,54 +60,48 @@ msgid "Format"
 msgstr "フォーマット"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
-#, fuzzy
 msgid "1 second of audio"
-msgstr "1秒のオーディオ"
+msgstr "1秒間のオーディオ"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
-#, fuzzy
 msgid "WAV 24-bit, 96 kHz, stereo"
-msgstr "WAV 24ビット、96kHz、ステレオ"
+msgstr "WAV 24ビット、96 kHz、ステレオ"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
 msgid "576 KB"
-msgstr ""
+msgstr "576 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
-#, fuzzy
 msgid "WAV 16-bit, 44 kHz, mono"
-msgstr "WAV 16ビット、44kHz、モノラル"
+msgstr "WAV 16ビット、44 kHz、モノラル"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
 msgid "88 KB"
-msgstr ""
+msgstr "88 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
-#, fuzzy
 msgid "WAV 16-bit, IMA-ADPCM, mono"
 msgstr "WAV 16ビット、IMA-ADPCM、モノラル"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
 msgid "22 KB"
-msgstr ""
+msgstr "22 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
-#, fuzzy
 msgid "Ogg Vorbis 128 Kb/s, stereo"
-msgstr "OGG Vorbis 96kbps、ステレオ"
+msgstr "Ogg Vorbis 128   Kb/s、ステレオ"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
 msgid "16 KB"
-msgstr ""
+msgstr "16 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
-#, fuzzy
 msgid "Ogg Vorbis 96 Kb/s, stereo"
-msgstr "OGG Vorbis 96kbps、ステレオ"
+msgstr "Ogg Vorbis 96 Kb/s、ステレオ"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 msgid "12 KB"
-msgstr ""
+msgstr "12 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:36
 msgid ""
@@ -145,11 +138,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
-#, fuzzy
 msgid "Importing as WAV with the **Trimming** option enabled solves this."
 msgstr ""
-"トリミングオプションを有効にしてWAVとしてインポートすると、この問題が解決され"
-"ます。"
+"**トリミング**オプションを有効にしてWAVとしてインポートすると、この問題が解決"
+"されます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
 msgid "Looping"
@@ -161,12 +153,14 @@ msgid ""
 "can add loop points to WAV files). This is useful for sound effects, such as "
 "engines, machine guns etc. Ping-pong looping is also supported."
 msgstr ""
+"Godotはサンプルのループをサポートしています。(Sound Forgeや AuditionはWAVファ"
+"イルにループポイントを追加する事が出来ます)。これは、エンジンやマシンガン等の"
+"サウンドエフェクトに有用です。ピンポンループもサポートしています。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:70
-#, fuzzy
 msgid ""
 "As an alternative, the Import dock has a **Loop** option that enables "
 "looping for the entire sample when importing."
 msgstr ""
-"別の方法として、インポート画面には「ループ」オプションがあり、インポート時に"
+"別の方法として、インポート画面には**ループ**オプションがあり、インポート時に"
 "サンプル全体のループを有効にします。"

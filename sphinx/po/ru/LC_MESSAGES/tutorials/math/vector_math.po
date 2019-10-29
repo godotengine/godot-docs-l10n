@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,21 +149,21 @@ msgstr ""
 "<class_Vector3>` для 2D и 3D соответственно. Математические правила, "
 "рассказанные в этой статье, применяются к обоим типам."
 
-#: ../../docs/tutorials/math/vector_math.rst:80
+#: ../../docs/tutorials/math/vector_math.rst:81
 msgid "Member access"
 msgstr "Доступ к полям"
 
-#: ../../docs/tutorials/math/vector_math.rst:82
+#: ../../docs/tutorials/math/vector_math.rst:83
 msgid ""
 "The individual components of the vector can be accessed directly by name."
 msgstr ""
 "К отдельным компонентам вектора можно обращаться непосредственно по имени."
 
-#: ../../docs/tutorials/math/vector_math.rst:103
+#: ../../docs/tutorials/math/vector_math.rst:105
 msgid "Adding vectors"
 msgstr "Сложение векторов"
 
-#: ../../docs/tutorials/math/vector_math.rst:105
+#: ../../docs/tutorials/math/vector_math.rst:107
 msgid ""
 "When adding or subtracting two vectors, the corresponding components are "
 "added:"
@@ -171,7 +171,7 @@ msgstr ""
 "Когда два вектора складываются или вычитаются, складываются соответствующие "
 "компоненты :"
 
-#: ../../docs/tutorials/math/vector_math.rst:116
+#: ../../docs/tutorials/math/vector_math.rst:118
 msgid ""
 "We can also see this visually by adding the second vector at the end of the "
 "first:"
@@ -179,16 +179,16 @@ msgstr ""
 "Мы также можем посмотреть визуально на добавление второго вектора к концу "
 "первого:"
 
-#: ../../docs/tutorials/math/vector_math.rst:121
+#: ../../docs/tutorials/math/vector_math.rst:123
 msgid "Note that adding ``a + b`` gives the same result as ``b + a``."
 msgstr ""
 "Отметьте что сложение ``a + b`` даёт такой же результат что и ``b + a``."
 
-#: ../../docs/tutorials/math/vector_math.rst:123
+#: ../../docs/tutorials/math/vector_math.rst:126
 msgid "Scalar multiplication"
 msgstr "Скалярное перемножение"
 
-#: ../../docs/tutorials/math/vector_math.rst:125
+#: ../../docs/tutorials/math/vector_math.rst:128
 msgid ""
 "Vectors represent both direction and magnitude. A value representing only "
 "magnitude is called a **scalar**."
@@ -196,11 +196,11 @@ msgstr ""
 "Векторы представляют направление и длину(магнитуду). Значение представленное "
 "только длиной называется **скаляром**."
 
-#: ../../docs/tutorials/math/vector_math.rst:128
+#: ../../docs/tutorials/math/vector_math.rst:131
 msgid "A vector can be multiplied by a **scalar**:"
 msgstr "Вектор может быть умножен на **скаляр**:"
 
-#: ../../docs/tutorials/math/vector_math.rst:143
+#: ../../docs/tutorials/math/vector_math.rst:146
 msgid ""
 "Multiplying a vector by a scalar does not change its direction, only its "
 "magnitude. This is how you **scale** a vector."
@@ -208,21 +208,21 @@ msgstr ""
 "Умножение вектора на скаляр не меняет направление, только длину. Это как бы "
 "**увеличение** вектора."
 
-#: ../../docs/tutorials/math/vector_math.rst:147
+#: ../../docs/tutorials/math/vector_math.rst:150
 msgid "Practical applications"
 msgstr "Практические применения"
 
-#: ../../docs/tutorials/math/vector_math.rst:149
+#: ../../docs/tutorials/math/vector_math.rst:152
 msgid "Let's look at two common uses for vector addition and subtraction."
 msgstr ""
 "Давайте посмотрим на два обычных приёма использования для векторного "
 "сложения и вычитания."
 
-#: ../../docs/tutorials/math/vector_math.rst:151
+#: ../../docs/tutorials/math/vector_math.rst:155
 msgid "Movement"
 msgstr "Движение"
 
-#: ../../docs/tutorials/math/vector_math.rst:153
+#: ../../docs/tutorials/math/vector_math.rst:157
 msgid ""
 "A vector can represent **any** quantity with a magnitude and direction. "
 "Typical examples are: position, velocity, acceleration, and force. In this "
@@ -238,7 +238,7 @@ msgstr ""
 "шаге. Вы можете найти его позицию на шаге 2 добавляя скорость к текущей "
 "позиции."
 
-#: ../../docs/tutorials/math/vector_math.rst:161
+#: ../../docs/tutorials/math/vector_math.rst:165
 msgid ""
 "Velocity measures the **change** in position per unit of time. The new "
 "position is found by adding velocity to the previous position."
@@ -246,11 +246,11 @@ msgstr ""
 "Скорость вычисляет **изменение** позиции за единицу времени. Новая позиция "
 "находится добавление скорости к предыдущей позиции."
 
-#: ../../docs/tutorials/math/vector_math.rst:164
+#: ../../docs/tutorials/math/vector_math.rst:169
 msgid "Pointing toward a target"
 msgstr "Направление в сторону цели"
 
-#: ../../docs/tutorials/math/vector_math.rst:166
+#: ../../docs/tutorials/math/vector_math.rst:171
 msgid ""
 "In this scenario, you have a tank that wishes to point its turret at a "
 "robot. Subtracting the tank's position from the robot's position gives the "
@@ -260,16 +260,16 @@ msgstr ""
 "Вычитание позиции танка из позиции робота, даёт вектор направленный от танка "
 "на робота."
 
-#: ../../docs/tutorials/math/vector_math.rst:172
+#: ../../docs/tutorials/math/vector_math.rst:177
 msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
 msgstr ""
 "Для нахождения вектора направления от ``A`` до ``B`` используйте ``B - A``."
 
-#: ../../docs/tutorials/math/vector_math.rst:175
+#: ../../docs/tutorials/math/vector_math.rst:180
 msgid "Unit vectors"
 msgstr "Единичные векторы"
 
-#: ../../docs/tutorials/math/vector_math.rst:177
+#: ../../docs/tutorials/math/vector_math.rst:182
 msgid ""
 "A vector with **magnitude** of ``1`` is called a **unit vector**. They are "
 "also sometimes referred to as **direction vectors** or **normals**. Unit "
@@ -279,11 +279,11 @@ msgstr ""
 "иногда называются **векторами направления** или **нормалями**. Единичные "
 "векторы полезны когда вам нужно сохранить трэк направления."
 
-#: ../../docs/tutorials/math/vector_math.rst:182
+#: ../../docs/tutorials/math/vector_math.rst:187
 msgid "Normalization"
 msgstr "Нормализация"
 
-#: ../../docs/tutorials/math/vector_math.rst:184
+#: ../../docs/tutorials/math/vector_math.rst:189
 msgid ""
 "**Normalizing** a vector means reducing its length to ``1`` while preserving "
 "its direction. This is done by dividing each of its components by its "
@@ -293,7 +293,7 @@ msgstr ""
 "с сохранением его направления. Это может быть достигнуто делением каждого из "
 "его компонентов на длину:"
 
-#: ../../docs/tutorials/math/vector_math.rst:203
+#: ../../docs/tutorials/math/vector_math.rst:208
 msgid ""
 "Because this is such a common operation, ``Vector2`` and ``Vector3`` provide "
 "a method for normalizing:"
@@ -301,7 +301,7 @@ msgstr ""
 "Поскольку это настолько обыденная операция, ``Vector2`` и ``Vector3`` имеют "
 "встроенный метод для нормализации:"
 
-#: ../../docs/tutorials/math/vector_math.rst:216
+#: ../../docs/tutorials/math/vector_math.rst:221
 msgid ""
 "Because normalization involves dividing by the vector's length, you cannot "
 "normalize a vector of length ``0``. Attempting to do so will result in an "
@@ -311,11 +311,11 @@ msgstr ""
 "нормализовать вектор с длиной равной ``0``. Попытка сделать это закончится "
 "ошибкой."
 
-#: ../../docs/tutorials/math/vector_math.rst:221
+#: ../../docs/tutorials/math/vector_math.rst:226
 msgid "Reflection"
 msgstr "Отражение"
 
-#: ../../docs/tutorials/math/vector_math.rst:223
+#: ../../docs/tutorials/math/vector_math.rst:228
 msgid ""
 "A common use of unit vectors is to indicate **normals**. Normal vectors are "
 "unit vectors aligned perpendicularly to a surface, defining its direction. "
@@ -327,7 +327,7 @@ msgstr ""
 "перпендикулярно поверхности, определяющей их направление. Они обычно "
 "используются в обработке света, коллизий, и других операциях с поверхностями."
 
-#: ../../docs/tutorials/math/vector_math.rst:228
+#: ../../docs/tutorials/math/vector_math.rst:233
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
@@ -335,7 +335,7 @@ msgstr ""
 "Например, представьте что вы движете шар, который вы хотите отражать от стен "
 "или других объектов:"
 
-#: ../../docs/tutorials/math/vector_math.rst:233
+#: ../../docs/tutorials/math/vector_math.rst:238
 msgid ""
 "The surface normal has a value of ``(0, -1)`` because this is a horizontal "
 "surface. When the ball collides, we take its remaining motion (the amount "
@@ -352,11 +352,11 @@ msgstr ""
 "вычисления этого. Приведём пример диаграммы показанной выше на GDScript "
 "используя :ref:`KinematicBody2D <class_KinematicBody2D>`:"
 
-#: ../../docs/tutorials/math/vector_math.rst:263
+#: ../../docs/tutorials/math/vector_math.rst:268
 msgid "Dot product"
 msgstr "Скалярное произведение"
 
-#: ../../docs/tutorials/math/vector_math.rst:265
+#: ../../docs/tutorials/math/vector_math.rst:270
 msgid ""
 "The **dot product** is one of the most important concepts in vector math, "
 "but is often misunderstood. Dot product is an operation on two vectors that "
@@ -368,24 +368,24 @@ msgstr ""
 "операция над двумя векторами которая возвращает **скаляр**. В отличии от "
 "вектора, который содержит длину и направление, скаляр содержит только длину."
 
-#: ../../docs/tutorials/math/vector_math.rst:270
+#: ../../docs/tutorials/math/vector_math.rst:275
 msgid "The formula for dot product takes two common forms:"
 msgstr "Формула скалярного произведения имеет две распространённых формы:"
 
-#: ../../docs/tutorials/math/vector_math.rst:272
+#: ../../docs/tutorials/math/vector_math.rst:277
 msgid ""
 "A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:276
+#: ../../docs/tutorials/math/vector_math.rst:281
 msgid "and"
 msgstr "и"
 
-#: ../../docs/tutorials/math/vector_math.rst:278
+#: ../../docs/tutorials/math/vector_math.rst:283
 msgid "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:282
+#: ../../docs/tutorials/math/vector_math.rst:287
 msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
@@ -393,7 +393,7 @@ msgstr ""
 "Также, в большинстве случаев лучше использовать встроенный метод. Обратите "
 "внимание, что порядок двух векторов не имеет значения:"
 
-#: ../../docs/tutorials/math/vector_math.rst:296
+#: ../../docs/tutorials/math/vector_math.rst:301
 msgid ""
 "The dot product is most useful when used with unit vectors, making the first "
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
@@ -403,7 +403,7 @@ msgstr ""
 "сокращая первую формулу до ``cosθ``. Это означает что мы можем использовать "
 "скалярное произведение чтобы получить угол между двумя векторами:"
 
-#: ../../docs/tutorials/math/vector_math.rst:302
+#: ../../docs/tutorials/math/vector_math.rst:307
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
@@ -411,11 +411,11 @@ msgstr ""
 "Когда используются единичные вектора, результат будет всегда между ``-1`` "
 "(180°) и``1`` (0°)."
 
-#: ../../docs/tutorials/math/vector_math.rst:306
+#: ../../docs/tutorials/math/vector_math.rst:311
 msgid "Facing"
 msgstr "Направление взгляда"
 
-#: ../../docs/tutorials/math/vector_math.rst:308
+#: ../../docs/tutorials/math/vector_math.rst:313
 msgid ""
 "We can use this fact to detect whether an object is facing toward another "
 "object. In the diagram below, the player ``P`` is trying to avoid the "
@@ -427,7 +427,7 @@ msgstr ""
 "избежать взгляда зомби ``A`` и ``B``. Могут ли зомби его увидеть если их "
 "угол обзора равен **180°** ?"
 
-#: ../../docs/tutorials/math/vector_math.rst:314
+#: ../../docs/tutorials/math/vector_math.rst:319
 msgid ""
 "The green arrows ``fA`` and ``fB`` are **unit vectors** representing the "
 "zombies' facing directions and the blue semicircle represents its field of "
@@ -441,15 +441,15 @@ msgstr ""
 "использующего ``P - A`` и нормализующего его. Если угол между этим вектором "
 "и вектором взгляда меньше 90°, то зомби увидит игрока."
 
-#: ../../docs/tutorials/math/vector_math.rst:321
+#: ../../docs/tutorials/math/vector_math.rst:326
 msgid "In code it would look like this:"
 msgstr "В коде это бы выглядело как:"
 
-#: ../../docs/tutorials/math/vector_math.rst:339
+#: ../../docs/tutorials/math/vector_math.rst:344
 msgid "Cross product"
 msgstr "Векторное произведение"
 
-#: ../../docs/tutorials/math/vector_math.rst:341
+#: ../../docs/tutorials/math/vector_math.rst:346
 msgid ""
 "Like the dot product, the **cross product** is an operation on two vectors. "
 "However, the result of the cross product is a vector with a direction that "
@@ -463,21 +463,21 @@ msgstr ""
 "зависит от их относительного угла. Если два вектора параллельны, в "
 "результате вы получите нулевой вектор."
 
-#: ../../docs/tutorials/math/vector_math.rst:346
+#: ../../docs/tutorials/math/vector_math.rst:351
 msgid ""
 "\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
 "\\right \\|\\ |\\sin(a,b)|"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:352
+#: ../../docs/tutorials/math/vector_math.rst:357
 msgid "The cross product is calculated like this:"
 msgstr "Векторное произведение вычисляется так:"
 
-#: ../../docs/tutorials/math/vector_math.rst:371
+#: ../../docs/tutorials/math/vector_math.rst:376
 msgid "With Godot, you can use the built-in method:"
 msgstr "В Godot, вы можете использовать встроенный метод:"
 
-#: ../../docs/tutorials/math/vector_math.rst:382
+#: ../../docs/tutorials/math/vector_math.rst:387
 msgid ""
 "In the cross product, order matters. ``a.cross(b)`` does not give the same "
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
@@ -487,11 +487,11 @@ msgstr ""
 "такого же результата что и ``b.cross(a)``. Получаемые векторы имеют "
 "**противоположные** направления."
 
-#: ../../docs/tutorials/math/vector_math.rst:387
+#: ../../docs/tutorials/math/vector_math.rst:392
 msgid "Calculating normals"
 msgstr "Расчитывание нормалей"
 
-#: ../../docs/tutorials/math/vector_math.rst:389
+#: ../../docs/tutorials/math/vector_math.rst:394
 msgid ""
 "One common use of cross products is to find the surface normal of a plane or "
 "surface in 3D space. If we have the triangle ``ABC`` we can use vector "
@@ -504,15 +504,15 @@ msgstr ""
 "``AB`` и ``AC``. Используя векторное произведение, ``AB x AC`` возвращает "
 "вектор перпендикулярный обоим векторам: нормаль поверхности."
 
-#: ../../docs/tutorials/math/vector_math.rst:394
+#: ../../docs/tutorials/math/vector_math.rst:399
 msgid "Here is a function to calculate a triangle's normal:"
 msgstr "Здесь показана функция для вычисления нормали треугольника:"
 
-#: ../../docs/tutorials/math/vector_math.rst:418
+#: ../../docs/tutorials/math/vector_math.rst:423
 msgid "Pointing to a target"
 msgstr "Направление на цель"
 
-#: ../../docs/tutorials/math/vector_math.rst:420
+#: ../../docs/tutorials/math/vector_math.rst:425
 msgid ""
 "In the dot product section above, we saw how it could be used to find the "
 "angle between two vectors. However, in 3D, this is not enough information. "
@@ -527,11 +527,11 @@ msgstr ""
 "направлением цели. В результате мы получим перпендикулярный вектор оси "
 "вращения."
 
-#: ../../docs/tutorials/math/vector_math.rst:428
+#: ../../docs/tutorials/math/vector_math.rst:433
 msgid "More information"
 msgstr "Дополнительная информация"
 
-#: ../../docs/tutorials/math/vector_math.rst:430
+#: ../../docs/tutorials/math/vector_math.rst:435
 msgid ""
 "For more information on using vector math in Godot, see the following "
 "articles:"
@@ -539,10 +539,10 @@ msgstr ""
 "Для большей информации об использовании векторной алгебры в Godot, смотрите "
 "следующие статьи:"
 
-#: ../../docs/tutorials/math/vector_math.rst:432
+#: ../../docs/tutorials/math/vector_math.rst:437
 msgid ":ref:`doc_vectors_advanced`"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:433
+#: ../../docs/tutorials/math/vector_math.rst:438
 msgid ":ref:`doc_matrices_and_transforms`"
 msgstr ""

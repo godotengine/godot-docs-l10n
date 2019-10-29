@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,12 +31,17 @@ msgid ""
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
+"Godot 3.0以前は、ゲームのスクリプトを作成するための唯一の選択肢はGDScriptを使"
+"用することだけでした。現在、Godotには4つの（ええ、4つ！）公式言語と、追加のス"
+"クリプト言語を動的に追加する機能があります！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
+"これは素晴らしいことです。提供される柔軟性が大きいからこそです。しかし言語を"
+"サポートする作業がより困難になります。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
 msgid ""
@@ -46,6 +51,11 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
+"ただし、Godotの「主要な」言語はGDScriptとVisualScriptです。それらを選択する主"
+"な理由は、Godotとの統合レベルです。これにより、よりスムーズになります。どちら"
+"も洗練されたエディターと統合されています。一方、C＃とC ++は別のIDEで編集する"
+"必要があります。静的に型付けされた言語の大ファンであれば、C＃とC ++を使用して"
+"ください。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
@@ -57,6 +67,8 @@ msgid ""
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
+"上記のように、GDScriptはGodotで使用されるメインの言語です。 Godotとの高度な統"
+"合により、他の言語と比較していくつかの利点があります。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -248,7 +260,7 @@ msgstr "スクリプトを作成し、ノードにアタッチします。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:97
 msgid "Hooking up UI elements via signals."
-msgstr "信号を介して UI 要素をフックします。"
+msgstr "シグナルを介して UI 要素をフックします。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:98
 msgid "Writing a script that can access other nodes in the scene."
@@ -261,6 +273,8 @@ msgid ""
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
+"次へ進む前に、GDScriptリファレンスを必ずお読みください。シンプルに設計された"
+"言語であり、リファレンスは短いため、概要を把握するのに数分しかかかりません。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"
@@ -328,6 +342,8 @@ msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
+"GDScriptではファイルがクラスを表します。そのためクラス名のフィールドは編集で"
+"きません。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
 msgid ""
@@ -359,6 +375,9 @@ msgid ""
 "highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
+"スクリプトを編集するには、上の画像で強調表示されている2つのボタンのいずれかを"
+"選択します。これにより、スクリプトエディタにデフォルトのテンプレートが含まれ"
+"て表示されます。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -419,6 +438,8 @@ msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
 msgstr ""
+"このチュートリアルの残りの部分ではコードを使用しますが、今後のためにエディ"
+"ターインターフェースがどのように機能するかについて説明します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:194
 msgid ""
@@ -454,6 +475,10 @@ msgid ""
 "select a node, the NodePath at the bottom will automatically update to point "
 "to a relative path from the emitting node to the selected node."
 msgstr ""
+"左上のセクションには、シーンのノードのリストが表示され、シグナルを出すノード"
+"の名前が赤で強調表示されます。ここで「パネル」ノードを選択します。ノードを選"
+"択すると、下部のNodePathが自動的に更新され、シグナルを出すノードから選択した"
+"ノードへの相対パスを指します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:213
 msgid ""
@@ -462,6 +487,10 @@ msgid ""
 "do have the \"Make Function\" check button checked, then the editor will "
 "generate the function for you before setting up the connection."
 msgstr ""
+"デフォルトでは、メソッド名にはシグナルを出すノードの名前（この場合は「ボタ"
+"ン」）が含まれ、_on_ [EmitterNode] _ [signal_name]になります。 [関数の作成]"
+"チェックボックスがオンになっている場合、エディターは接続を設定する前に関数を"
+"生成します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:218
 msgid ""
@@ -469,6 +498,9 @@ msgid ""
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
+"これで、ビジュアルインターフェイスの使用方法に関するガイドは終了です。ただ"
+"し、これはスクリプトのチュートリアルなので、学習のために、手動で行う方法に飛"
+"び込みましょう!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:222
 msgid ""
@@ -477,6 +509,9 @@ msgid ""
 "<class_Node_method_get_node>`. This function uses paths to fetch nodes "
 "anywhere in the scene, relative to the node that owns the script."
 msgstr ""
+"これを実現するために、おそらくGodotプログラマーが最も使用する関数Node."
+"get_node（）を導入します。この関数は、パスを使用して、スクリプトを持つノード"
+"に関連する、シーン内の任意の場所のノードを見つけます。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:227
 msgid ""
@@ -504,6 +539,8 @@ msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
+"最後に、Object.connect（）を使用して、ボタンの「pressed」シグナルを_ready（）"
+"に接続します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:278
 msgid "The final script should look like this:"

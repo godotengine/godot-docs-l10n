@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -130,7 +130,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:62
 #, fuzzy
-msgid "Creating the PO template"
+msgid "Creating the PO template (POT) manually"
 msgstr "스켈레톤(Skeleton) 정리하기"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:64
@@ -161,28 +161,69 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:89
+#, fuzzy
+msgid "Creating the PO template (POT) using pybabel"
+msgstr "스켈레톤(Skeleton) 정리하기"
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:91
+msgid ""
+"The Python tool pybabel has support for Godot and can be used to "
+"automatically create and update the POT file from your scene files and "
+"scripts."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:94
+msgid "After installing ``babel`` and ``babel-godot``, for example using pip:"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:100
+msgid ""
+"Write a mapping file (for example ``babelrc``) which will indicate which "
+"files pybabel needs to process (note that we process GDScript as Python, "
+"which is generally sufficient):"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:112
+msgid "You can then run pybabel like so:"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:118
+msgid ""
+"Use the ``-k`` option to specify what needs to be extracted. In this case, "
+"arguments to :ref:`tr() <class_Object_method_tr>` will be translated, as "
+"well as properties named \"text\" (commonly used by Control nodes) and "
+"LineEdit's \"placeholder_text\" property."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:124
 msgid "Creating a messages file from a PO template"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:91
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:126
 msgid ""
 "The ``msginit`` command is used to turn a PO template into a messages file. "
 "For instance, to create a French localization file, use the following "
 "command while in the ``locale`` directory:"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:100
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:134
 msgid ""
 "The command above will create a file named ``fr.po`` in the same directory "
 "as the PO template."
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:104
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:137
+msgid ""
+"Alternatively, you can do that graphically using Poedit, or by uploading the "
+"POT file to your web platform of choice."
+msgstr ""
+
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:141
 #, fuzzy
 msgid "Loading a messages file in Godot"
 msgstr "Godot 3.0+에서 에셋 가져오기"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:106
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:143
 msgid ""
 "To register a messages file as a translation in a project, open the "
 "**Project Settings**, then go to the **Localization** tab. In "
@@ -191,17 +232,17 @@ msgid ""
 "property in the messages file."
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:112
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:149
 msgid ""
 "See :ref:`doc_internationalizing_games` for more information on importing "
 "and testing translations in Godot."
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:116
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:153
 msgid "Updating message files to follow the PO template"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:118
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:155
 msgid ""
 "After updating the PO template, you will have to update message files so "
 "that they contain new strings, while removing strings that are no longer "
@@ -209,23 +250,23 @@ msgid ""
 "automatically using the ``msgmerge`` tool:"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:129
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:165
 msgid ""
 "If you want to keep a backup of the original message file (which would be "
 "saved as ``fr.po~`` in this example), remove the ``--backup=none`` argument."
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:133
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:169
 msgid "Checking the validity of a PO file or template"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:135
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:171
 msgid ""
 "It is possible to check whether a gettext file's syntax is valid by running "
 "the command below:"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:142
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:178
 msgid ""
 "If there are syntax errors or warnings, they will be displayed in the "
 "console. Otherwise, ``msgfmt`` won't output anything."

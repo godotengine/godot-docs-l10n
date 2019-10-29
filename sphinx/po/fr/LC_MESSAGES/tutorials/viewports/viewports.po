@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr "Vue d'écran"
+msgstr "Fenêtre d'aperçu (Viewports)"
 
 #: ../../docs/tutorials/viewports/viewports.rst:7
 msgid "Introduction"
@@ -141,11 +141,20 @@ msgid ""
 "\" property set, or make it the current camera by calling:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:84
+#: ../../docs/tutorials/viewports/viewports.rst:83
+msgid ""
+"By default, cameras will render all objects in their world. In 3D, cameras "
+"can use their :ref:`cull_mask <class_Camera_property_cull_mask>` property "
+"combined with the :ref:`VisualInstance's <class_VisualInstance>` :ref:`layer "
+"<class_VisualInstance_property_layers>` property to restrict which objects "
+"are rendered."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:89
 msgid "Scale & stretching"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:86
+#: ../../docs/tutorials/viewports/viewports.rst:91
 msgid ""
 ":ref:`Viewports <class_Viewport>` have a \"size\" property, which represents "
 "the size of the :ref:`Viewport <class_Viewport>` in pixels. For :ref:"
@@ -154,25 +163,25 @@ msgid ""
 "this sets their resolution."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:90
+#: ../../docs/tutorials/viewports/viewports.rst:95
 msgid ""
 "It is also possible to scale the 2D content and make the :ref:`Viewport "
 "<class_Viewport>` resolution different from the one specified in size, by "
 "calling:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:98
+#: ../../docs/tutorials/viewports/viewports.rst:103
 msgid ""
 "The root :ref:`Viewport <class_Viewport>` uses this for the stretch options "
 "in the project settings. For more information on scaling and stretching "
 "visit the :ref:`Multiple Resolutions Tutorial <doc_multiple_resolutions>`"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:102
+#: ../../docs/tutorials/viewports/viewports.rst:107
 msgid "Worlds"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:104
+#: ../../docs/tutorials/viewports/viewports.rst:109
 msgid ""
 "For 3D, a :ref:`Viewport <class_Viewport>` will contain a :ref:`World "
 "<class_World>`. This is basically the universe that links physics and "
@@ -191,7 +200,7 @@ msgid ""
 "(like in StarCraft)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:116
+#: ../../docs/tutorials/viewports/viewports.rst:121
 msgid ""
 "As a helper for situations where you want to create :ref:`Viewports "
 "<class_Viewport>` that display single objects and don't want to create a :"
@@ -200,7 +209,7 @@ msgid ""
 "instance 3D characters or objects in a 2D :ref:`World <class_World2D>`."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:121
+#: ../../docs/tutorials/viewports/viewports.rst:126
 msgid ""
 "For 2D, each :ref:`Viewport <class_Viewport>` always contains its own :ref:"
 "`World2D <class_World2D>`. This suffices in most cases, but in case sharing "
@@ -208,7 +217,7 @@ msgid ""
 "<class_Viewport>` :ref:`World2D <class_World2D>` manually."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:125
+#: ../../docs/tutorials/viewports/viewports.rst:130
 msgid ""
 "For an example of how this works, see the demo projects `3D in 2D <https://"
 "github.com/godotengine/godot-demo-projects/tree/master/viewport/3d_in_2d>`_ "
@@ -216,32 +225,23 @@ msgid ""
 "master/viewport/2d_in_3d>`_ respectively."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:128
+#: ../../docs/tutorials/viewports/viewports.rst:133
 msgid "Capture"
 msgstr "Capturer"
 
-#: ../../docs/tutorials/viewports/viewports.rst:130
+#: ../../docs/tutorials/viewports/viewports.rst:135
 msgid ""
 "It is possible to query a capture of the :ref:`Viewport <class_Viewport>` "
 "contents. For the root :ref:`Viewport <class_Viewport>`, this is effectively "
 "a screen capture. This is done with the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:147
+#: ../../docs/tutorials/viewports/viewports.rst:152
 msgid ""
 "But if you use this in _ready() or from the first frame of the :ref:"
 "`Viewport's <class_Viewport>` initialization, you will get an empty texture "
 "because there is nothing to get as texture. You can deal with it using (for "
 "example):"
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:158
-msgid ""
-"If the returned image is empty, capture still didn't happen, wait a little "
-"more, as Godot's rendering API is asynchronous. For a working example of "
-"this, check out the `Screen Capture example <https://github.com/godotengine/"
-"godot-demo-projects/tree/master/viewport/screen_capture>`_ in the demo "
-"projects"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:163
@@ -284,10 +284,21 @@ msgid ""
 "If you know how the :ref:`Viewport <class_Viewport>` is going to be used, "
 "you can set its Usage to either 3D or 2D. Godot will then restrict how the :"
 "ref:`Viewport <class_Viewport>` is drawn to in accordance with your choice; "
-"default is 3D."
+"default is 3D. The 2D usage mode is slightly faster and uses less memory "
+"compared to the 3D one. It's a good idea to set the :ref:`Viewport "
+"<class_Viewport>`'s Usage property to 2D if your viewport doesn't render "
+"anything in 3D."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:184
+#: ../../docs/tutorials/viewports/viewports.rst:187
+msgid ""
+"If you need to render 3D shadows in the viewport, make sure to set the "
+"viewport's *Shadow Atlas Size* property to a value higher than 0. Otherwise, "
+"shadows won't be rendered. For reference, the Project Settings define it to "
+"4096 by default."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:190
 msgid ""
 "Godot also provides a way of customizing how everything is drawn inside :ref:"
 "`Viewports <class_Viewport>` using “Debug Draw”. Debug Draw allows you to "
@@ -295,43 +306,48 @@ msgid ""
 "will display things drawn inside it. Debug Draw is disabled by default."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:190
+#: ../../docs/tutorials/viewports/viewports.rst:196
 msgid "*A scene drawn with Debug Draw disabled*"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:192
+#: ../../docs/tutorials/viewports/viewports.rst:198
 msgid ""
 "The other three options are Unshaded, Overdraw, and Wireframe. Unshaded "
 "draws the scene without using lighting information so all the objects appear "
 "flatly colored the color of their albedo."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:198
+#: ../../docs/tutorials/viewports/viewports.rst:204
 msgid "*The same scene with Debug Draw set to Unshaded*"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:200
+#: ../../docs/tutorials/viewports/viewports.rst:206
 msgid ""
 "Overdraw draws the meshes semi-transparent with an additive blend so you can "
 "see how the meshes overlap."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:204
+#: ../../docs/tutorials/viewports/viewports.rst:210
 msgid "*The same scene with Debug Draw set to Overdraw*"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:206
+#: ../../docs/tutorials/viewports/viewports.rst:212
 msgid ""
 "Lastly, Wireframe draws the scene using only the edges of triangles in the "
-"meshes. NOTE: As of this writing (v3.0.2), wireframe mode is not functional "
-"and currently renders the scene normally."
+"meshes."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:210
+#: ../../docs/tutorials/viewports/viewports.rst:216
+msgid ""
+"The effects of the Wireframe mode are only visible in the editor, not while "
+"the project is running."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:219
 msgid "Render target"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:212
+#: ../../docs/tutorials/viewports/viewports.rst:221
 msgid ""
 "When rendering to a :ref:`Viewport <class_Viewport>`, whatever is inside "
 "will not be visible in the scene editor. To display the contents, you have "
@@ -340,17 +356,17 @@ msgid ""
 "(for example):"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:222
+#: ../../docs/tutorials/viewports/viewports.rst:231
 msgid ""
 "Or it can be assigned in the editor by selecting \"New ViewportTexture\""
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:226
+#: ../../docs/tutorials/viewports/viewports.rst:235
 msgid ""
 "and then selecting the :ref:`Viewport <class_Viewport>` you want to use."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:230
+#: ../../docs/tutorials/viewports/viewports.rst:239
 msgid ""
 "Every frame, the :ref:`Viewport <class_Viewport>`'s texture is cleared away "
 "with the default clear color (or a transparent color if Transparent BG is "
@@ -360,7 +376,7 @@ msgid ""
 "itself to Never."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:235
+#: ../../docs/tutorials/viewports/viewports.rst:244
 msgid ""
 "By default, re-rendering of the :ref:`Viewport <class_Viewport>` happens "
 "when the :ref:`Viewport <class_Viewport>`'s :ref:`ViewportTexture "
@@ -371,7 +387,7 @@ msgid ""
 "without incurring the cost of rendering every frame."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:243
+#: ../../docs/tutorials/viewports/viewports.rst:252
 msgid ""
 "Make sure to check the Viewport demos! Viewport folder in the demos archive "
 "available to download, or https://github.com/godotengine/godot-demo-projects/"

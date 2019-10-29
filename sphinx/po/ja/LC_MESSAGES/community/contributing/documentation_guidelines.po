@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:4
 msgid "Documentation guidelines"
-msgstr ""
+msgstr "ドキュメントのガイドライン"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:6
 msgid ""
@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:14
 msgid "How to contribute"
-msgstr ""
+msgstr "貢献する方法"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:16
 msgid ""
@@ -44,6 +44,12 @@ msgid ""
 "in a pull request and getting it merged will trigger a rebuild of the online "
 "documentation."
 msgstr ""
+"ドキュメントページの作成または変更は、主に\\ `godot-docs GitHub リポジトリ "
+"<https://github.com/godotengine/godot-docs>`_\\ を介して行われます。HTML(また"
+"はPDFおよびEPUB)ドキュメントは、そのリポジトリの.rst ファイル "
+"(reStructuredTextマークアップ言語) から生成されます。プルリクエストでこれらの"
+"ページを変更し、マージすると、オンラインドキュメントの再構築がトリガーされま"
+"す。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:23
 msgid ""
@@ -51,6 +57,9 @@ msgid ""
 "ref:`doc_pr_workflow` page. Most of what it describes regarding the main "
 "godotengine/godot repository is also valid for the docs repository."
 msgstr ""
+"Gitの使用状況とプル要求ワークフローの詳細については、\\ :ref:"
+"`doc_pr_workflow`\\ ページを参照してください。メインの godotengine/godot リポ"
+"ジトリに関する記述のほとんどは、ドキュメントリポジトリにも有効です。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:28
 msgid ""
@@ -58,6 +67,9 @@ msgid ""
 "please read it. In particular, it contains some tips and tricks and links to "
 "reference documentation about the reStructuredText markup language."
 msgstr ""
+"README.mdファイルには、あなたが開始するために必要なすべての情報が含まれていま"
+"すので、それを読んでください。特に、reStructuredTextマークアップ言語に関する"
+"参考資料へのヒントとコツとリンクが含まれています。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:32
 msgid ""
@@ -67,134 +79,143 @@ msgid ""
 "used to generate the in-editor documentation as well as the API reference of "
 "the online docs. Read more here: :ref:`doc_updating_the_class_reference`."
 msgstr ""
+"**APIリファレンス**\\ を編集する場合は、godot-docsリポジトリで\\ *行ってはな"
+"らない*\\ ことに注意してください。 代わりに、Godotのメインリポジトリの ``doc/"
+"classes/*`` XMLファイルを編集する必要があります。 これらのファイルは、後でエ"
+"ディタ内のドキュメントとオンラインドキュメントのAPIリファレンスを生成するため"
+"に使用されます。 詳細はこちら:\\ :ref:`doc_updating_the_class_reference`\\ 。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:40
-msgid "The 'Edit on Github' link"
+msgid "The 'Edit on GitHub' link"
 msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:42
 msgid ""
-"If you're reading documentation on ``docs.godotengine.org`` you'll see an "
-"'Edit on GitHub' hyperlink at the top right of the page. Once you've created "
-"a GitHub account you can propose changes to a page you're reading as follows:"
-msgstr ""
-
-#: ../../docs/community/contributing/documentation_guidelines.rst:44
-msgid ""
-"Copy the URL that the GitHub link points to. Part of the URL refers to a "
-"version name such as '3.1' or 'latest'. Swap this part for the word 'master' "
-"so that the result looks something like this: ``https://github.com/"
-"godotengine/godot-docs/blob/master/community/contributing/"
-"docs_writing_guidelines.rst``"
-msgstr ""
-
-#: ../../docs/community/contributing/documentation_guidelines.rst:45
-msgid "Load that URL in your browser."
+"If you're reading documentation on ``docs.godotengine.org``, you'll see an "
+"**Edit on GitHub** hyperlink at the top right of the page. Once you've "
+"created a GitHub account, you can propose changes to a page you're reading "
+"as follows:"
 msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:46
-msgid ""
-"On the GitHub page you're taken to, click the pencil icon. It has the "
-"tooltip \"Edit the file in a fork of this project\"."
-msgstr ""
-
-#: ../../docs/community/contributing/documentation_guidelines.rst:47
-msgid "Complete all the edits you want to make for that page."
+msgid "Click the **Edit on GitHub** button."
 msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:48
 msgid ""
-"Summarise the changes you made in the form at the bottom of the page and "
-"click the button labelled 'Propose file change' when done."
+"On the GitHub page you're taken to, click the pencil icon in the top-right "
+"corner near the **Raw**, **Blame** and **History** buttons. It has the "
+"tooltip \"Edit the file in a fork of this project\"."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:49
+#: ../../docs/community/contributing/documentation_guidelines.rst:52
+msgid "Complete all the edits you want to make for that page."
+msgstr ""
+
+#: ../../docs/community/contributing/documentation_guidelines.rst:54
 msgid ""
-"On the following screens, click the 'Create pull request' buttons until you "
-"see a message like ``Open. yourGitHubUsername wants to merge 1 commit into "
-"godotengine:master from yourGitHubUsername:patch-6``"
+"Summarise the changes you made in the form at the bottom of the page and "
+"click the button labelled **Propose file change** when done."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:50
+#: ../../docs/community/contributing/documentation_guidelines.rst:57
+msgid ""
+"On the following screens, click the **Create pull request** button until you "
+"see a message like ``Open. yourGitHubUsername wants to merge 1 commit into "
+"godotengine:master from yourGitHubUsername:patch-6``."
+msgstr ""
+
+#: ../../docs/community/contributing/documentation_guidelines.rst:61
 msgid ""
 "A reviewer will evaluate your changes and incorporate them into the docs if "
 "they're judged to improve them. You might also be asked to make "
 "modifications to your changes before they're included."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:53
+#: ../../docs/community/contributing/documentation_guidelines.rst:66
 msgid "What makes good documentation?"
-msgstr ""
+msgstr "優れたドキュメントとは何ですか?"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:55
+#: ../../docs/community/contributing/documentation_guidelines.rst:68
 msgid ""
 "Documentation should be well written in plain English, using well-formed "
 "sentences and various levels of sections and subsections. It should be clear "
 "and objective. Also have a look at the :ref:`doc_docs_writing_guidelines`."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:59
+#: ../../docs/community/contributing/documentation_guidelines.rst:72
 msgid ""
 "We differentiate tutorial pages from other documentation pages by these "
 "definitions:"
-msgstr ""
+msgstr "チュートリアルページを他のドキュメントページと区別します:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:62
+#: ../../docs/community/contributing/documentation_guidelines.rst:75
 msgid ""
 "Tutorial: a page aiming at explaining how to use one or more concepts in the "
 "editor or scripts in order to achieve a specific goal with a learning "
 "purpose (e.g. \"Making a simple 2d Pong game\", \"Applying forces to an "
 "object\")."
 msgstr ""
+"チュートリアル:学習目的で特定の目標を達成するためにエディタまたはスクリプトで"
+"1つ以上の概念を使用する方法を説明することを目的としたページ(例:「シンプルな2D"
+"卓球ゲームを作る」、「オブジェクトに力を適用する」など)。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:66
+#: ../../docs/community/contributing/documentation_guidelines.rst:79
 msgid ""
 "Documentation: a page describing precisely one and only one concept at a "
 "time, if possible exhaustively (e.g. the list of methods of the Sprite "
 "class, or an overview of the input management in Godot)."
 msgstr ""
+"ドキュメント:可能であれば、一度に1つだけの概念を正確に記述するページ (Sprite"
+"クラスのメソッドの一覧やGodotの入力管理の概要など)。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:70
+#: ../../docs/community/contributing/documentation_guidelines.rst:83
 msgid ""
 "You are free to write the kind of documentation you wish, as long as you "
 "respect the following rules (and the ones on the repo)."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:74
+#: ../../docs/community/contributing/documentation_guidelines.rst:87
 msgid "Titles"
-msgstr ""
+msgstr "タイトル"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:76
+#: ../../docs/community/contributing/documentation_guidelines.rst:89
 msgid "Always begin pages with their title and a Sphinx reference name:"
-msgstr ""
+msgstr "常にタイトルと Sphinx参照名でページを開始します:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:85
+#: ../../docs/community/contributing/documentation_guidelines.rst:98
 msgid ""
 "The reference allows to link to this page using the ``:ref:`` format, e.g. "
 "``:ref:`doc_insert_your_title_here``` would link to the above example page "
 "(note the lack of leading underscore in the reference)."
 msgstr ""
+"このリファレンスでは ``:ref:`` 形式を使用してこのページにリンクすることができ"
+"ます。例えば　``:ref:`doc_insert_your_title_here``` とすると、上記の例のペー"
+"ジにリンクします(参照の先頭にアンダースコアがないことに注意してください)。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:89
+#: ../../docs/community/contributing/documentation_guidelines.rst:102
 msgid ""
 "Also, avoid American CamelCase titles: title's first word should begin with "
 "a capitalized letter, and every following word should not. Thus, this is a "
 "good example:"
 msgstr ""
+"また、アメリカのキャメルケースのタイトルは避けてください。タイトルの最初の単"
+"語は大文字で始める必要があり、その後に続く単語はすべて大文字で始めるべきでは"
+"ありません。たとえば、次のようになります:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:93
+#: ../../docs/community/contributing/documentation_guidelines.rst:106
 msgid "Insert your title here"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:95
+#: ../../docs/community/contributing/documentation_guidelines.rst:108
 msgid "And this is a bad example:"
 msgstr "これは悪い例です:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:97
+#: ../../docs/community/contributing/documentation_guidelines.rst:110
 msgid "Insert Your Title Here"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:99
+#: ../../docs/community/contributing/documentation_guidelines.rst:112
 msgid ""
 "Only project, people and node class names should have capitalized first "
 "letter."
@@ -202,28 +223,28 @@ msgstr ""
 "プロジェクト名、ユーザー名、およびノードクラス名だけは先頭を大文字にしてくだ"
 "さい。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:103
+#: ../../docs/community/contributing/documentation_guidelines.rst:116
 msgid "Translating existing pages"
 msgstr "既存のページの翻訳"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:105
+#: ../../docs/community/contributing/documentation_guidelines.rst:118
 msgid ""
 "You can help to translate the official Godot documentation on our `Hosted "
 "Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:112
+#: ../../docs/community/contributing/documentation_guidelines.rst:125
 msgid ""
 "There also is the official `Godot I18N repository <https://github.com/"
 "godotengine/godot-docs-l10n>`_. where you can see when the data was last "
 "synced."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:115
+#: ../../docs/community/contributing/documentation_guidelines.rst:128
 msgid "License"
 msgstr "ライセンス"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:117
+#: ../../docs/community/contributing/documentation_guidelines.rst:130
 msgid ""
 "This documentation and every page it contains is published under the terms "
 "of the `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://"
@@ -235,7 +256,7 @@ msgstr ""
 "<https://creativecommons.org/licenses/by/3.0/>`_\\ )ライセンスの下、管理され"
 "ております。"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:120
+#: ../../docs/community/contributing/documentation_guidelines.rst:133
 msgid ""
 "By contributing to the documentation on the GitHub repository, you agree "
 "that your changes are distributed under this license."

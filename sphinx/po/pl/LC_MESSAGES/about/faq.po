@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -553,17 +553,16 @@ msgstr ""
 "by dowiedzieć się więcej."
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
-"Określ minimalną rozdzielczość, a następnie zdecyduj, czy gra ma rozciągać "
-"się pionowo czy poziomo dla różnych proporcji, czy też ma być minimalna "
-"rozdzielczość, a w miejsce brakujących pikselów mają pojawić się czarne "
-"paski. Jest to wyjaśnione w poprzednim kroku."
+"Określ minimalną rozdzielczość, a następnie zdecyduj, czy chcesz, żeby gra "
+"rozciągała się pionowo czy poziomo dla różnych proporcji, czy używała jednej "
+"proporcji i czarnych pasków. Jest to wyjaśnione w :ref:"
+"`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -763,20 +762,26 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "Dlaczego Godot nie używa STL (standard Template Library)"
 
 #: ../../docs/about/faq.rst:288
+#, fuzzy
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"Jak wiele innych bibliotek (Qt na przykład), Godot nie używa STL. Uważamy, "
+"że STL jest świetną bibllioteką do zastosowań ogólnych, ale mieliśmy "
+"specjalne wymagania dla Godot'a."
 
 #: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"Szablony STL tworzą bardzo dużo symbolów, czego rezultatem są bardzo duże "
+"debug binaries. W zamian używamy szablonów w małą ilością nazw."
 
 #: ../../docs/about/faq.rst:293
 msgid ""
@@ -787,10 +792,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:294
+#, fuzzy
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"Nasze kontenery posiadają wbudowane śledzenie pamięci, co pozwala na lepsze "
+"śledzenie zużycia pamięci."
 
 #: ../../docs/about/faq.rst:295
 msgid ""

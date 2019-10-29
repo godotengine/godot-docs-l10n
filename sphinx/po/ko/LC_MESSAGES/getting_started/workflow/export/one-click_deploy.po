@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,55 +26,59 @@ msgid "Sounds good, what is it?"
 msgstr "좋은거 같은데요, 이게 뭔가요?"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
+#, fuzzy
 msgid ""
 "This feature will pop up automatically once a platform is properly "
 "configured and a supported device is connected to the computer. Since things "
 "can go wrong at many levels (platform may not be configured correctly, SDK "
-"may be incorrectly installed, device may be improperly configured, kitty ate "
-"the USB cable, etc.), it's good to let the user know that it exists."
+"may be incorrectly installed, device may be improperly configured, etc.), "
+"it's good to let the user know that it exists."
 msgstr ""
 "이 기능은 플랫폼을 올바르게 구성하고 지원하는 기기가 컴퓨터에 연결되어 있으"
 "면 나타납니다. 여러 단계에서 작업이 잘못될 수 있기 때문에 (플랫폼이 잘못 구성"
 "할 수도 있고, SDK가 올바르지 않게 설치되거나, 기기가 잘못 구성될 수도 있고, "
 "냥이가 USB 선을 먹어버리는 등), 사용자는 이 기능을 알아두는 것이 좋습니다."
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:16
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:15
+#, fuzzy
 msgid ""
-"Some platforms (at the time of this writing, only Android and Blackberry 10) "
-"can detect when a USB device is connected to the computer, and offer the "
-"user to automatically export, install and run the project (in debug mode) on "
-"the device. This feature is called, in industry buzz-words, \"One Click "
-"Deploy\" (though, it's technically two clicks...)."
+"Some platforms (at the time of this writing, only Android) can detect when a "
+"USB device is connected to the computer, and offer the user to automatically "
+"export, install and run the project (in debug mode) on the device. This "
+"feature is called, in industry buzzwords, \"One-Click Deploy\"."
 msgstr ""
 "일부 플랫폼 (이 글을 쓰는 시점에는 Android와 블랙베리 10)은 USB 기기가 컴퓨터"
 "가 연결되는 지를 감지할 수 있으며, 사용자가 자동으로 내보낼 수 있도록 기기에 "
 "프로젝트를 (디버그 모드로) 설치하고 실행합니다. 이 기능은 업계 속어로, \"원 "
 "클릭 배포\"라고 합니다 (물론 기술적으로는 두 번 클릭합니다...)."
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:21
 msgid "Steps for one-click deploy"
 msgstr "원 클릭 배포 단계"
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:25
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
 msgid "Configure target platform."
 msgstr "대상 플랫폼을 설정한다."
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:24
+#, fuzzy
 msgid ""
-"Configure device (make sure it's in developer mode, likes the computer, usb "
-"cable is plugged, usb is recognized, etc.)."
+"Configure device (make sure it's in developer mode, likes the computer, USB "
+"cable is plugged, USB is recognized, etc.)."
 msgstr ""
 "기기를 설정한다 (개발자 모드인지, 컴퓨터를 좋아하는지, usb 선이 꽂혀있고 usb"
 "는 감지되는 지 등을 확인해야 합니다)."
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:28
-msgid "Connect the device.."
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
+#, fuzzy
+msgid "Connect the device..."
 msgstr "기기를 연결합니다.."
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:29
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:27
 msgid "And voilà!"
 msgstr "그리고 짜잔!"
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:33
-msgid "Click once.. and deploy!"
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:31
+#, fuzzy
+msgid "Click once... and deploy!"
 msgstr "한번 클릭하세요.. 그러면 배포합니다!"

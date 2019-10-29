@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "はじめに"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:9
-#, fuzzy
 msgid ""
 "*GDScript* is a high-level, dynamically typed programming language used to "
 "create content. It uses a syntax similar to `Python <https://en.wikipedia."
@@ -36,17 +35,16 @@ msgid ""
 "creation and integration."
 msgstr ""
 "*GDScript*は、コンテンツの作成に使用される高水準の動的型付けプログラミング言"
-"語です。 `Python <https://en.wikipedia.org/wiki/Python_"
-"%28programming_language%29>`に似た構文を使用します(ブロックはインデントベース"
-"で、多くのキーワードは似ています)。その目標は、Godot Engine用に最適化され、緊"
-"密に統合され、コンテンツの作成と統合に大きな柔軟性を与えることです。"
+"語です。`Python <https://en.wikipedia.org/wiki/Python_%28programming_language"
+"%29>`に似た構文を使用します(ブロックはインデントベースで、多くのキーワードは"
+"似ています)。その目標は、Godot Engine用に最適化され、緊密に統合され、コンテン"
+"ツの作成と統合に大きな柔軟性を与えることです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:17
 msgid "History"
 msgstr "歴史"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:19
-#, fuzzy
 msgid ""
 "In the early days, the engine used the `Lua <https://www.lua.org>`__ "
 "scripting language. Lua is fast, but creating bindings to an object oriented "
@@ -551,27 +549,24 @@ msgid "``x[index]``"
 msgstr "``x[index]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:249
-#, fuzzy
 msgid "Subscription (highest priority)"
-msgstr "サブスクリプション、最高優先度"
+msgstr "サブスクリプション(最優先)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:251
 msgid "``x.attribute``"
 msgstr "``x.attribute``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:251
-#, fuzzy
 msgid "Attribute reference"
-msgstr "属性参照"
+msgstr "要素参照"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
 msgid "``is``"
 msgstr "``is``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
-#, fuzzy
 msgid "Instance type checker"
-msgstr "インスタンスタイプチェッカー"
+msgstr "インスタンス型チェッカー"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:255
 msgid "``~``"
@@ -586,9 +581,8 @@ msgid "``-x``"
 msgstr "``-x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:257
-#, fuzzy
 msgid "Negative / Unary negation"
-msgstr "否定/単項否定"
+msgstr "負 / 単項否定"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:259
 msgid "``*`` ``/`` ``%``"
@@ -612,9 +606,8 @@ msgid "``+``"
 msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:267
-#, fuzzy
 msgid "Addition / Concatenation of arrays"
-msgstr "配列の追加/連結"
+msgstr "加算 / 配列の連結"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:269
 msgid "``-``"
@@ -629,7 +622,6 @@ msgid "``<<`` ``>>``"
 msgstr "``<<`` ``>>``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:271
-#, fuzzy
 msgid "Bit shifting"
 msgstr "ビットシフト"
 
@@ -670,9 +662,8 @@ msgid "``in``"
 msgstr "``in``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:281
-#, fuzzy
 msgid "Content test"
-msgstr "コンテンツテスト"
+msgstr "中身検査"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
 msgid "``!`` ``not``"
@@ -711,9 +702,8 @@ msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
 msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
-#, fuzzy
 msgid "Assignment (lowest priority)"
-msgstr "割り当て、最低優先度"
+msgstr "代入、優先度最低"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "Literals"
@@ -740,25 +730,22 @@ msgid "``0x8F51``"
 msgstr "``0x8F51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:302
-#, fuzzy
 msgid "Base 16 (hexadecimal) integer"
 msgstr "16進整数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:304
 msgid "``0b101010``"
-msgstr ""
+msgstr "``0b101010``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:304
-#, fuzzy
 msgid "Base 2 (binary) integer"
-msgstr "16進整数"
+msgstr "2進整数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:306
 msgid "``3.14``, ``58.1e-10``"
 msgstr "``3.14``, ``58.1e-10``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:306
-#, fuzzy
 msgid "Floating-point number (real)"
 msgstr "浮動小数点数(実数)"
 
@@ -783,14 +770,12 @@ msgid "``@\"Node/Label\"``"
 msgstr "``@\"Node/Label\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:312
-#, fuzzy
 msgid ":ref:`class_NodePath` or StringName"
-msgstr "ノードのパスまたはStringName"
+msgstr ":ref:`class_NodePath`\\ かStringName"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:314
-#, fuzzy
 msgid "``$NodePath``"
-msgstr "リソースのパス"
+msgstr "``$NodePath``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:314
 msgid "Shorthand for ``get_node(\"NodePath\")``"
@@ -798,7 +783,7 @@ msgstr "``get_node( \"NodePath\")`` の短縮形"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:318
 msgid "Comments"
-msgstr "Comments"
+msgstr "コメント"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:320
 msgid ""
@@ -811,7 +796,6 @@ msgid "Built-in types"
 msgstr "組み込み型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:332
-#, fuzzy
 msgid ""
 "Built-in types are stack-allocated. They are passed as values. This means a "
 "copy is created on each assignment or when passing them as arguments to "
@@ -821,9 +805,9 @@ msgid ""
 msgstr ""
 "組み込み型はスタック割り当て型です。これらは値として渡されます。つまり、割り"
 "当てごとに、または関数に引数として渡すときにコピーが作成されます。唯一の例外"
-"は ``Array``\\ s と ``Dictionaries`` で、これらは参照によって渡され、共有され"
-"ます。( ``PoolArray``\\ s は ``PoolByteArray`` のように値として渡されるわけで"
-"はありませんが、どちらを使用するかを決定する際にはこの点を考慮してください)"
+"は ``Array`` と ``Dictionary`` で、これらは参照によって渡され、共有されます。"
+"( ``PoolArray``\\ s は ``PoolByteArray`` のように値として渡されるわけではあり"
+"ませんが、どちらを使用するかを決定する際にはこの点を考慮してください。)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:339
 msgid "Basic built-in types"
@@ -850,7 +834,6 @@ msgid "bool"
 msgstr "bool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:352
-#, fuzzy
 msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
 msgstr ""
 "Booleanデータ型には、 ``true`` または ``false`` のみを含めることができます。"
@@ -864,6 +847,8 @@ msgid ""
 "Short for \"integer\", it stores whole numbers (positive and negative). It "
 "is stored as a 64-bit value, equivalent to \"int64_t\" in C++."
 msgstr ""
+"integer型は、整数(正と負)を格納します。それは64-bit の値で格納し、\n"
+"C++の\"int64_t\"と同等です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:361
 msgid "float"
@@ -876,13 +861,17 @@ msgid ""
 "data structures such as Vector2, Vector3, and PoolRealArray store 32-bit "
 "single-precision \"float\" values."
 msgstr ""
+"小数を含んだ実数を格納し、浮動小数点の値を使います。それは64-bitの値で格納"
+"し、\n"
+" C++の\"double\"と同等です。ノート：現在、Vector2と\\Vector3とPoolRealArray "
+"のようなデータ構造\n"
+"は32-bit単精度\"浮動\"の値です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:369
 msgid ":ref:`String <class_String>`"
 msgstr "\\ :ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:371
-#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Strings can contain `standard C escape sequences <https://en."
@@ -892,8 +881,7 @@ msgstr ""
 "`Unicode形式 <https://en.wikipedia.org/wiki/Unicode>`_\\ の文字列。文字列に"
 "は、 `標準のCエスケープシーケンス <https://en.wikipedia.org/wiki/"
 "Escape_sequences_in_C>`_\\ を含めることができます。GDScriptは、 \\ :ref:"
-"`format strings aka printf functionality <doc_gdscript_printf>` をサポートし"
-"ています。"
+"`doc_gdscript_printf`\\ もサポートしています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:377
 msgid "Vector built-in types"
@@ -915,7 +903,6 @@ msgid ":ref:`Rect2 <class_Rect2>`"
 msgstr "\\ :ref:`Rect2 <class_Rect2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
-#, fuzzy
 msgid ""
 "2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
 "Also contains an ``end`` field which is ``position + size``."
@@ -940,9 +927,8 @@ msgid ":ref:`Transform2D <class_Transform2D>`"
 msgstr "\\ :ref:`Transform2D <class_Transform2D>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:400
-#, fuzzy
 msgid "3×2 matrix used for 2D transforms."
-msgstr "2D変換に使用される3x2行列です。"
+msgstr "2次元変換に使用される3x2行列です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:403
 msgid ":ref:`Plane <class_Plane>`"
@@ -973,15 +959,14 @@ msgid ":ref:`AABB <class_AABB>`"
 msgstr "\\ :ref:`AABB <class_AABB>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:417
-#, fuzzy
 msgid ""
 "Axis-aligned bounding box (or 3D box) contains 2 vectors fields: "
 "``position`` and ``size``. Also contains an ``end`` field which is "
 "``position + size``."
 msgstr ""
-"Axis-alignedバウンディングボックス(または3Dボックス)には、 ``position`` と "
-"``size`` の2つのベクトルフィールドがあります。または、 ``position+size`` であ"
-"る ``end`` フィールドを含みます。"
+"座標軸に平行な直方体(または3Dボックス)には、 ``position`` と ``size`` の2つの"
+"ベクトルフィールドがあります。または、 ``position+size`` である ``end`` "
+"フィールドを含みます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:422
 msgid ":ref:`Basis <class_Basis>`"
@@ -1059,22 +1044,20 @@ msgstr "組み込み型コンテナ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:463
 msgid ":ref:`Array <class_Array>`"
-msgstr "\\ :ref:`Array <class_Array>`"
+msgstr "\\ :ref:`配列<class_Array>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:465
-#, fuzzy
 msgid ""
 "Generic sequence of arbitrary object types, including other arrays or "
 "dictionaries (see below). The array can resize dynamically. Arrays are "
 "indexed starting from index ``0``. Negative indices count from the end."
 msgstr ""
 "他の配列や辞書(下記参照)を含む、任意のオブジェクトタイプの一般的なシーケン"
-"ス。配列のサイズは動的に変更できます。配列にはインデックス ``0`` から始まるイ"
-"ンデックスが付けられます。Godot 2.1以降のインデックスは、Pythonと同様に負の数"
-"にすることができ、最後から数えます。"
+"ス、他の配列や辞書を含みます。(下を見てください)。配列のサイズは動的に変更で"
+"きます。配列にはインデックス ``0`` から始まるインデックスが付けられます。マイ"
+"ナスのインデックスは最後から数えます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:479
-#, fuzzy
 msgid ""
 "GDScript arrays are allocated linearly in memory for speed. Large arrays "
 "(more than tens of thousands of elements) may however cause memory "
@@ -1083,12 +1066,12 @@ msgid ""
 "use less memory, but are atomic and tend to run slower than generic arrays. "
 "They are therefore only recommended to use for large data sets:"
 msgstr ""
-"GDScript配列は速度を上げるためにメモリ内で線形に割り当てられます。大規模な配"
-"列(数万要素以上)は、メモリの断片化を引き起こす可能性があります。 これが問題に"
-"なる場合は、特殊なタイプの配列が利用可能です。これらは単一のデータ型のみを受"
-"け入れます。この配列はメモリの断片化を回避し、メモリの使用量も少なくなります"
-"が原始的であり、一般的な配列より実行速度が遅くなりがちです。 したがって、それ"
-"らは大規模なデータセットにのみ使用することをお勧めします:"
+"GDScriptの配列は速度を上げるためにメモリ内で線形に割り当てられます。大規模な"
+"配列(数万要素以上)は、メモリの断片化を引き起こす可能性があります。 これが問題"
+"になる場合は、特殊なタイプの配列が利用可能です。これらは単一のデータ型のみを"
+"受け入れます。この配列はメモリの断片化を回避し、メモリの使用量も少なくなりま"
+"すが原始的であり、一般的な配列より実行速度が遅くなりがちです。 したがって、そ"
+"れらは大規模なデータセットにのみ使用することをお勧めします:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:486
 msgid ""
@@ -1215,14 +1198,12 @@ msgid "Valid types are:"
 msgstr "有効なタイプは以下のとおりです:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:572
-#, fuzzy
 msgid "Built-in types (Array, Vector2, int, String, etc.)."
-msgstr "組み込み型(Array、Vector2、int、Stringなど)"
+msgstr "組み込み型(Array、Vector2、int、Stringなど)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:573
-#, fuzzy
 msgid "Engine classes (Node, Resource, Reference, etc.)."
-msgstr "エンジンクラス(Node、Resource、Referenceなど)"
+msgstr "エンジンクラス(Node、Resource、Referenceなど)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:574
 msgid ""
@@ -1233,15 +1214,14 @@ msgstr ""
 "my_script.gd\")`` を宣言した場合は ``MyScript`` )。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:575
-#, fuzzy
 msgid ""
 "Other classes in the same script, respecting scope (``InnerClass."
 "NestedClass`` if you declared ``class NestedClass`` inside the ``class "
 "InnerClass`` in the same scope)."
 msgstr ""
-"同じスクリプト内の他のクラス、スコープを尊重します(同じスコープ内の ``class "
-"InnerClass`` で ``class NestedClass`` を宣言した場合は ``InnerClass."
-"NestedClass`` )"
+"同じスクリプト内の他のクラス、スコープを尊重します(``InnerClass."
+"NestedClass`` もし ``class InnerClass`` 内で ``class NestedClass`` を宣言した"
+"場合は は同じスコープです)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:576
 msgid "Script classes declared with the ``class_name`` keyword."
@@ -1284,13 +1264,12 @@ msgstr ""
 "が発生します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:609
-#, fuzzy
 msgid ""
 "Casting is also useful to have better type-safe variables when interacting "
 "with the scene tree::"
 msgstr ""
-"また、キャストは、ツリーと対話するときに、より安全な型保証変数を用意するのに"
-"も役立ちます:"
+"また、キャストは、シーンツリーと対話するときに、より安全な型保証変数を用意す"
+"るのにも役立ちます::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:619
 msgid "Constants"
@@ -1334,6 +1313,13 @@ msgid ""
 "dictionary of that name."
 msgstr ""
 "列挙型に名前を渡すと、その名前の定数辞書内にすべてのキーが配置されます。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:652
+msgid ""
+"In Godot 3.1 and later, keys in a named enum are not registered as global "
+"constants. They should be accessed prefixed by the enum's name (``Name."
+"KEY``); see an example below."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:672
 msgid "Functions"
@@ -1406,12 +1392,10 @@ msgstr ""
 "合、関数には有効な戻り値がないからです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:723
-#, fuzzy
 msgid "Referencing functions"
 msgstr "関数の参照"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:725
-#, fuzzy
 msgid ""
 "Contrary to Python, functions are *not* first-class objects in GDScript. "
 "This means they cannot be stored in variables, passed as an argument to "
@@ -1423,7 +1407,6 @@ msgstr ""
 "はできません。 これはパフォーマンス上の理由からです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:729
-#, fuzzy
 msgid ""
 "To reference a function by name at run-time, (e.g. to store it in a "
 "variable, or pass it to another function as an argument) one must use the "
@@ -1431,14 +1414,13 @@ msgid ""
 msgstr ""
 "実行時に名前で関数を参照するには(たとえば、変数に格納したり、引数として別の関"
 "数に渡したりするには)、 ``call`` または ``funcref`` ヘルパーを使用する必要が"
-"あります:"
+"あります::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:743
 msgid "Static functions"
 msgstr "静的関数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:745
-#, fuzzy
 msgid ""
 "A function can be declared static. When a function is static, it has no "
 "access to the instance member variables or ``self``. This is mainly useful "
@@ -1446,7 +1428,7 @@ msgid ""
 msgstr ""
 "関数は静的として宣言できます。静的関数は、インスタンス・メンバー変数または "
 "``self`` にアクセスできません。これは主に、ヘルパー関数のライブラリを作成する"
-"のに便利です:"
+"のに便利です::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:754
 msgid "Statements and control flow"
@@ -1482,13 +1464,12 @@ msgid "Short statements can be written on the same line as the condition::"
 msgstr "短いステートメントは、条件と同じ行に記述できます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:784
-#, fuzzy
 msgid ""
 "Sometimes, you might want to assign a different initial value based on a "
 "boolean expression. In this case, ternary-if expressions come in handy::"
 msgstr ""
 "場合によっては、ブール式に基づいて異なる初期値を割り当てたいことがあります。 "
-"この場合、3項式が便利です:"
+"この場合、3項式が便利です::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:793
 msgid ""
@@ -1519,9 +1500,8 @@ msgstr ""
 "見られる ``switch`` 文と同等ですが、いくつかの追加機能を提供します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:842
-#, fuzzy
 msgid "Basic syntax::"
-msgstr "基本の構文:"
+msgstr "基本の構文::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:853
 msgid "**Crash-course for people who are familiar with switch statements**:"
@@ -1529,14 +1509,12 @@ msgstr ""
 "**switchステートメントに精通しているユーザー向けのクラッシュ・コース**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:855
-#, fuzzy
 msgid "Replace ``switch`` with ``match``."
-msgstr "``match`` する ``switch`` を置換します"
+msgstr "``match`` する ``switch`` を置換します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:856
-#, fuzzy
 msgid "Remove ``case``."
-msgstr "``case`` を削除します"
+msgstr "``case`` を削除します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:857
 msgid ""
@@ -1572,27 +1550,22 @@ msgid "There are 6 pattern types:"
 msgstr "6種類のパターンがあります:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:879
-#, fuzzy
 msgid "Constant pattern"
 msgstr "定数パターン"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:870
-#, fuzzy
 msgid "Constant primitives, like numbers and strings::"
 msgstr "数値や文字列のような定数プリミティブ:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:891
-#, fuzzy
 msgid "Variable pattern"
 msgstr "変数パターン"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:882
-#, fuzzy
 msgid "Matches the contents of a variable/enum::"
 msgstr "変数/列挙型の内容と一致:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:905
-#, fuzzy
 msgid "Wildcard pattern"
 msgstr "ワイルドカードパターン"
 
@@ -1603,21 +1576,18 @@ msgstr ""
 "す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:896
-#, fuzzy
 msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages::"
 msgstr ""
 "他の言語における ``switch`` ステートメントでの ``default`` と同等のものとして"
-"使用できます:"
+"使用できます::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:918
-#, fuzzy
 msgid "Binding pattern"
 msgstr "バインディングパターン"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:908
-#, fuzzy
 msgid ""
 "A binding pattern introduces a new variable. Like the wildcard pattern, it "
 "matches everything - and also gives that value a name. It's especially "
@@ -1628,12 +1598,10 @@ msgstr ""
 "利です:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:939
-#, fuzzy
 msgid "Array pattern"
 msgstr "配列パターン"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:921
-#, fuzzy
 msgid ""
 "Matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
@@ -1650,21 +1618,18 @@ msgstr ""
 "ん、そうでなければパターンは一致しません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
-#, fuzzy
 msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``."
 msgstr ""
 "**オープンエンド配列**: 最後のサブパターンを `` ..`` にすることで配列をパター"
-"ンよりも大きくすることができます"
+"ンよりも大きくすることができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:927
-#, fuzzy
 msgid "Every subpattern has to be comma-separated."
 msgstr "各サブパターンはカンマで区切る必要があります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:966
-#, fuzzy
 msgid "Dictionary pattern"
 msgstr "辞書パターン"
 
@@ -1685,13 +1650,12 @@ msgstr ""
 "ん、そうでなければパターンは一致しません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:946
-#, fuzzy
 msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``."
 msgstr ""
 "**オープンエンド辞書**: 最後のサブパターンを `` ..`` にすることで辞書をパター"
-"ンよりも大きくすることができます"
+"ンよりも大きくすることができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:948
 msgid "Every subpattern has to be comma separated."
@@ -1703,30 +1667,26 @@ msgid ""
 msgstr "値を指定しないと、キーの存在のみがチェックされます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:952
-#, fuzzy
 msgid "A value pattern is separated from the key pattern with a ``:``."
-msgstr "値パターンは、キーパターンとは ``:`` で区別されます:"
+msgstr "値パターンは、キーパターンとは ``:`` で区別されます:。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
-#, fuzzy
 msgid "Multiple patterns"
-msgstr "組み合わせパターン:"
+msgstr "組み合わせパターン"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:969
-#, fuzzy
 msgid ""
 "You can also specify multiple patterns separated by a comma. These patterns "
 "aren't allowed to have any bindings in them."
 msgstr ""
 "複数のパターンをカンマで区切って指定することもできます。 これらのパターンに"
-"は、バインディングを含めることはできません:"
+"は、バインディングを含めることはできません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:982
 msgid "Classes"
 msgstr "クラス"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:984
-#, fuzzy
 msgid ""
 "By default, all script files are unnamed classes. In this case, you can only "
 "reference them using the file's path, using either a relative or an absolute "
@@ -1735,10 +1695,9 @@ msgstr ""
 "デフォルトでは、すべてのスクリプトファイルは名前のないクラスです。この場合、"
 "相対パスまたは絶対パスを使用して、ファイルのパスを使用してのみそれらを参照で"
 "きます。 たとえば、スクリプトファイルに ``character.gd`` という名前を付けたと"
-"します"
+"します::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:997
-#, fuzzy
 msgid ""
 "Instead, you can give your class a name to register it as a new type in "
 "Godot's editor. For that, you use the ``class_name`` keyword. You can add an "
@@ -1748,7 +1707,7 @@ msgstr ""
 "代わりに、Godotのエディタで新しいタイプとして登録するためにクラスに名前を付け"
 "ることができます。それには、 'class_name' キーワードを使用します。 アイコンと"
 "して使用するために、オプションのコンマに続けて画像へのパスを追加できます。あ"
-"なたのクラスはエディタに新しいアイコンで表示されます:"
+"なたのクラスはエディタに新しいアイコンで表示されます::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1010
 msgid "Here's a class file example:"
@@ -1774,19 +1733,16 @@ msgid "Inheritance"
 msgstr "継承"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1039
-#, fuzzy
 msgid "A class (stored as a file) can inherit from:"
-msgstr "クラス(ファイルとして格納されている)は以下から継承することができます"
+msgstr "クラス(ファイルとして格納されている)は以下から継承することができます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1041
-#, fuzzy
 msgid "A global class."
-msgstr "グローバルクラス"
+msgstr "グローバルクラス。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1042
-#, fuzzy
 msgid "Another class file."
-msgstr "他のクラスファイル"
+msgstr "他のクラスファイル。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1043
 msgid "An inner class inside another class file."
@@ -1797,42 +1753,37 @@ msgid "Multiple inheritance is not allowed."
 msgstr "多重継承はできません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1047
-#, fuzzy
 msgid "Inheritance uses the ``extends`` keyword::"
-msgstr "継承は ``extends`` キーワードを使用します:"
+msgstr "継承は ``extends`` キーワードを使用します::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1059
-#, fuzzy
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used::"
 msgstr ""
 "特定のインスタンスが特定のクラスを継承するかどうかを確認するには、 ``is`` "
-"キーワードを使用します:"
+"キーワードを使用します::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1071
-#, fuzzy
 msgid ""
 "To call a function in a *parent class* (i.e. one ``extend``-ed in your "
 "current class), prepend ``.`` to the function name::"
 msgstr ""
 "基本クラス(つまり、現在のクラスで拡張されたクラス)で関数を呼び出すには、 関数"
-"名の前に ``.`` を付けます:"
+"名の前に ``.`` を付けます::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1076
-#, fuzzy
 msgid ""
 "This is especially useful because functions in extending classes replace "
 "functions with the same name in their parent classes. If you still want to "
 "call them, you can prefix them with ``.`` (like the ``super`` keyword in "
 "other languages)::"
 msgstr ""
-"これはクラスを拡張する関数が基本クラス内の同じ名前の関数を置き換えるため、特"
-"に便利です。それらを呼び出したいのであれば、 ``.`` を他の言語の ``super`` "
-"キーワードのように使うことができます:"
+"これはクラスを拡張する関数を親クラス内の同じ名前の関数を置き換えるために特に"
+"便利です。 それらを呼び出したいのであれば、 前に``.`` を付けて下さい(他の言語"
+"の ``super`` キーワードのように)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1084
-#, fuzzy
 msgid ""
 "Default functions like  ``_init``, and most notifications such as "
 "``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, etc. "
@@ -1840,16 +1791,15 @@ msgid ""
 "them explicitly when overloading them."
 msgstr ""
 "``_init`` などのデフォルト関数と、 ``_enter_tree`` 、 ``_exit_tree`` 、 "
-"``_process`` 、 ``_physics_process`` などのほとんどの通知は、すべての基本クラ"
-"スで自動的に呼び出されます。そのため、何らかの方法でそれらをオーバーロードす"
-"るときに関数を明示的に呼び出す必要があるだけです。"
+"``_process`` 、 ``_physics_process`` などのほとんどの通知は、すべての親クラス"
+"で自動的に呼び出されます。それらの関数をオーバーロードしたときに明示的に呼び"
+"出す必要はありません。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1091
 msgid "Class Constructor"
 msgstr "クラスコンストラクタ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1093
-#, fuzzy
 msgid ""
 "The class constructor, called on class instantiation, is named ``_init``. As "
 "mentioned earlier, the constructors of parent classes are called "
@@ -1862,7 +1812,6 @@ msgstr ""
 "ん。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1098
-#, fuzzy
 msgid ""
 "Unlike the call of a regular function, like in the above example with ``."
 "some_func``, if the constructor from the inherited class takes arguments, "
@@ -1870,50 +1819,46 @@ msgid ""
 msgstr ""
 "``.some_func`` を使用した上記の例のように、通常の関数の呼び出しとは異なり、継"
 "承したクラスのコンストラクタが引数を取得する場合、それらは次のように渡されま"
-"す:"
+"す::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1105
-#, fuzzy
 msgid "This is better explained through examples. Consider this scenario::"
 msgstr ""
 "これは、例を使って説明した方がわかりやすいです。次のようなシナリオがあるとし"
-"ます:"
+"ます::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1125
 msgid "There are a few things to keep in mind here:"
 msgstr "留意すべきことがいくつかあります:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1127
-#, fuzzy
 msgid ""
 "If the inherited class (``State.gd``) defines a ``_init`` constructor that "
 "takes arguments (``e`` in this case), then the inheriting class (``Idle."
 "gd``) *must* define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``."
 msgstr ""
-"継承クラス( ``State.gd`` )が引数をとる ``_init`` コンストラクタ(この場合は "
-"``e`` )を定義する場合、継承クラス( ``Idle.gd`` )も_initを定義し、 ``State."
-"gd`` から ``_init`` に適切なパラメータを渡す*必要*があります"
+"継承クラス(``State.gd``)が ``_init`` コンストラクタを定義し、それが引数を取る"
+"場合(このケースは ``e``)、``State.gd`` \n"
+"の継承クラス(``Idle.gd``)も_initを定義し、 ``State.gd`` から ``_init`` に適切"
+"なパラメータを渡す*必要*があります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1130
-#, fuzzy
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the parent class "
 "``State.gd``."
 msgstr ""
-"``Idle.gd`` は、基本クラス ``State.gd`` と異なる数の引数を持つことができます"
+"``Idle.gd`` は、親クラス ``State.gd`` と異なる数の引数を持つことができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1131
-#, fuzzy
 msgid ""
 "In the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``."
 msgstr ""
 "上の例では、 ``State.gd`` コンストラクタに渡される ``e`` は、 ``Idle.gd`` に"
-"渡されるのと同じ ``e`` です"
+"渡されるのと同じ ``e`` です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1133
-#, fuzzy
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
@@ -1921,8 +1866,8 @@ msgid ""
 "constructor as well, not just variables. eg.::"
 msgstr ""
 "``Idle.gd`` の ``_init`` コンストラクタが0の引数を取る場合、何もしなくても "
-"``State.gd`` 基本クラスに値を渡す必要があります。つまり変数だけでなく、基本コ"
-"ンストラクターにもリテラルを渡すことができます。 例:"
+"``State.gd`` 親クラスに値を渡す必要があります。つまり変数だけでなく、基本コン"
+"ストラクターにもリテラルを渡すことができます。 例::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
 msgid "Inner classes"
@@ -1963,6 +1908,8 @@ msgstr "エクスポート"
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
 msgstr ""
+"エキスポートについてのドキュメントは :ref:`doc_gdscript_exports`に移動しまし"
+"た。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1190
 msgid "Setters/getters"
@@ -1987,7 +1934,6 @@ msgstr ""
 "用意されています。変数定義の直後に使用されます:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1202
-#, fuzzy
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -1996,42 +1942,40 @@ msgid ""
 "``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
 "``return`` the desired value. Below is an example::"
 msgstr ""
-"``variable`` の値が*外部*ソース(つまり、クラス内のローカルでの使用によるもの"
-"ではありません)によって変更されると、必ず*setter*関数(上記の ``setterfunc`` )"
+"``variable`` の値が*外部*ソースによって変更されると(つまり、クラス内のローカ"
+"ルでの使用によるものではありません)、必ず*setter*関数(上記の ``setterfunc`` )"
 "が呼び出されます。これは、値が変更される*前*に発生します。*setter*は、新しい"
 "値の処理方法を決定する必要があります。逆に、 ``variable`` がアクセスされる"
 "と、*getter*関数(上記の ``getterfunc`` )は目的の値を ``return`` する必要があ"
-"ります。次に例を示します:"
+"ります。次に例を示します::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1216
-#, fuzzy
 msgid "Either of the *setter* or *getter* functions can be omitted::"
-msgstr "*setter* または *getter* 関数のどちらかを省略することができます:"
+msgstr "*setter* または *getter* 関数のどちらかを省略することができます::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1223
-#, fuzzy
 msgid ""
 "Setters and getters are useful when :ref:`exporting variables "
 "<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
 "validating input."
 msgstr ""
-"Get/Settersは、ツールスクリプトまたはプラグインのエディタに入力を検証するため"
-"に変数を書き出す場合に特に便利です。"
+"Settersとgetters は、ツールスクリプトまたはプラグインのエディタへ、検証中の入"
+"力をするために: ref:`変数を書き出す: <doc_gdscript_exports>`場合に特に便利で"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1226
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
-"前述したように、*ローカル*・アクセスはセッターとゲッターを*起動しません*。こ"
-"の例を次に示します:"
+"前述したように、*ローカル*アクセスはsetter とgetterを*起動しません*。この例を"
+"次に示します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1243
 msgid "Tool mode"
 msgstr "ツールモード"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1245
-#, fuzzy
 msgid ""
 "By default, scripts don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
@@ -2039,10 +1983,11 @@ msgid ""
 "doing so). For this, the ``tool`` keyword exists and must be placed at the "
 "top of the file::"
 msgstr ""
-"スクリプトは、デフォルトではエディタ内では実行されず、エクスポートされたプロ"
-"パティのみを変更できます。場合によっては、(ゲームコードを実行しないか手動で実"
-"行しない限り)エディタ内で実行することが望ましい場合があります。これには、 "
-"``tool`` キーワードが存在し、ファイルの先頭に配置する必要があります:"
+"デフォルトでは、スクリプトはエディタ内では実行されずエクスポートされたプロパ"
+"ティのみを変更できます(ゲームコードの実行あるいは手動でそのようになるのを回避"
+"しない限り)。場合によっては、エディタ内で実行することが望ましい場合がありま"
+"す。これには、 ``tool`` キーワードが存在し、ファイルの先頭に配置する必要があ"
+"ります::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
 msgid ""
@@ -2086,14 +2031,13 @@ msgid "Signals"
 msgstr "シグナル"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
-#, fuzzy
 msgid ""
 "Signals are a tool to emit messages from an object that other objects can "
 "react to. To create custom signals for a class, use the ``signal`` keyword."
 msgstr ""
-"シグナルは、他のオブジェクトが一般的な方法で受信できるオブジェクトから通知"
-"メッセージを送信する方法です。 ``signal`` キーワードを使用して、クラスのカス"
-"タムシグナルを作成します。"
+"シグナルはオブジェクトから通知メッセージを送信する手段で、他のオブジェクトは"
+"それを受信することが出来ます。 クラスのカスタムシグナルを作るには``signal`` "
+"キーワードを使用します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1294
 msgid ""
@@ -2103,15 +2047,19 @@ msgid ""
 "`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ in "
 "the Game Programming Patterns ebook."
 msgstr ""
+"シグナルは`コールバック<https://en.wikipedia.org/wiki/"
+"Callback_(computer_programming)>`_ 機構です。これはオブザーバーとしても振る舞"
+"う、一般的なプログラミングパターンです。より多くの情報を得るためにGame "
+"Programming Patterns ebookの`Observer tutorial <https://"
+"gameprogrammingpatterns.com/observer.html>`_ / を見てください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1301
-#, fuzzy
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
 "signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
 msgstr ""
-":ref:`class_Button` や :ref:`class_RigidBody` などのノードの組み込み信号を接"
-"続するのと同じ方法で、これらの信号をメソッドに接続できます。"
+":ref:`class_Button` や :ref:`class_RigidBody` の様ななノードの組み込みシグナ"
+"ルを接続するのと同じ方法で、これらのシグナルをメソッドに接続できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1304
 msgid ""
@@ -2119,10 +2067,14 @@ msgid ""
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
 "signal, the game node's ``_on_Character_health_depleted`` is called::"
 msgstr ""
+"下の例では、我々は``Character``ノードから``Game``ノードへ``health_depleted``"
+"シグナルを接続します。\n"
+"``Character``ノードがシグナルを送信したとき、gameノードの"
+"``_on_Character_health_depleted``が呼ばれます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1317
 msgid "You can emit as many arguments as you want along with a signal."
-msgstr ""
+msgstr "あなたが望むシグナルと一緒に多くの引数を送信することができます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
 msgid ""
@@ -2130,6 +2082,9 @@ msgid ""
 "screen to react to health changes with an animation, but we want to keep the "
 "user interface separate from the player in our scene tree."
 msgstr ""
+"ここに有用な例を示します。アニメーションを伴った、体力の変化を受信するライフ"
+"バーをスクリーン上に配置しようとしますが、シーンツリー上にあるプレイヤーから"
+"はそのユーザーインターフェースを分けたいします。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1323
 msgid ""
@@ -2139,12 +2094,19 @@ msgid ""
 "``Lifebar`` using the :ref:`Object.connect() <class_Object_method_connect>` "
 "method::"
 msgstr ""
+"``Character.gd`` スクリプト内で ``health_changed`` シグナルを定義し :ref:"
+"`Object.emit_signal() <class_Object_method_emit_signal>`を使って送信し、それ"
+"をシーンツリーの上層の ``Game`` ノードから、 :ref:`Object.connect() "
+"<class_Object_method_connect>` メソッドを使って``Lifebar`` へ接続します::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1363
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
 msgstr ""
+"シグナルを使うにはクラスが ``Object`` クラスを直接継承する、もしくは  "
+"`Node``、 ``KinematicBody``、``Control``... 等を通じて他の形式の``Object`` ク"
+"ラスの継承をする必要があります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1366
 msgid ""
@@ -2152,18 +2114,23 @@ msgid ""
 "then connect the character, that emits the signal, to the receiver, the "
 "``Lifebar`` node in this case."
 msgstr ""
+"``Game`` ノード内で ``Character`` ノードと ``Lifebar`` ノードを取得し、そし"
+"て character と受信者を接続し 、 character にシグナルを受信者へ送信させます、"
+"受信者はこのケースでは``Lifebar`` ノードです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1380
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
 msgstr ""
+"これは``Character`` ノードとのカップリングをせずに ``Lifebar`` に体力の変化を"
+"受信することを可能にします。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1383
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
-msgstr ""
+msgstr "signalを定義後の括弧内に追加の引数名を書くことが出来ます::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1389
 msgid ""
@@ -2172,19 +2139,21 @@ msgid ""
 "of arguments when you emit signals; it's up to you to emit the correct "
 "values."
 msgstr ""
+"これらの引数はエディタのノードドックに表示され、Godot はこれらを使いコール"
+"バック関数を生成します。しかし、シグナルを送信する際に、異なる個数の引数を送"
+"信することもできます。その上限は正しい値の個数までです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1395
-#, fuzzy
 msgid ""
 "GDScript can bind an array of values to connections between a signal and a "
 "method. When the signal is emitted, the callback method receives the bound "
 "values. These bound arguments are unique to each connection, and the values "
 "will stay the same."
 msgstr ""
-"GDScriptは、シグナルとメソッド間の接続に引数をバインドすることができます。シ"
-"グナルが発生し、接続メソッドが呼び出されると、バインドされた引数がメソッドに"
-"与えられます。これらのバインドされた引数は、シグナルやメソッドではなく接続に"
-"固有のもので、各接続には一意のバインドがあります。"
+"GDScriptは、シグナルとメソッド間の接続に値の配列をバインドすることができま"
+"す。シグナルが送信された時、コールバックメソッドがバインドされた値を受け取り"
+"ます。これらのバインドされた引数は、それぞれの接続に固有のもので、同じ値が維"
+"持されます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1400
 msgid ""
@@ -2192,6 +2161,9 @@ msgid ""
 "connection if the emitted signal itself doesn't give you access to all the "
 "data that you need."
 msgstr ""
+"もし、送信されたシグナル自身が必要とするデータへのアクセスをあなたに与えな"
+"かったとしても、決まった情報を接続に追加するために値の配列を使うことが出来ま"
+"す。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
 msgid ""
@@ -2201,19 +2173,25 @@ msgid ""
 "that took damage. So when we connect the signal to the in-game console, we "
 "can add the character's name in the binds array argument::"
 msgstr ""
+"上の例に基づいて、``Player1 took 22 damage.`` のようにスクリーン上にそれぞれ"
+"のキャラクターの受けたダメージのログを表示したいとします 。  "
+"``health_changed`` シグナルはダメージを受けたキャラクターの名前を我々に与えま"
+"せん。その場合、ゲーム内のコンソールにシグナルを接続する事により、バインドさ"
+"れた引数の配列にあるキャラクターの名前を追加することができます::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1418
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
 msgstr ""
+"``BattleLog`` ノードはバインドされた追加の引数の配列内の要素を、送信者ごとに"
+"受け取ります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1430
 msgid "Coroutines with yield"
 msgstr "コルーチン(yield関数による)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
-#, fuzzy
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the :ref:`yield<class_@GDScript_method_yield>` built-in "
@@ -2223,32 +2201,30 @@ msgid ""
 "and return whatever the function returns. Once resumed, the state object "
 "becomes invalid. Here is an example::"
 msgstr ""
-"GDScriptは、 ``yield`` 組み込み関数によって`コルーチン<https://ja.wikipedia."
-"org/wiki/%E3%82%B3%E3%83%AB%E3%83%BC%E3%83%81%E3%83%B3>`_\\ をサポートしてい"
-"ます。 ``yield()`` をコールすると、同じ関数の現在のfrozen状態を戻り値として、"
-"すぐに現在の関数から戻ります。結果として得られたオブジェクトに対して "
-"``resume`` を呼び出すと、実行が継続され、関数が返す内容が戻されます。再開する"
-"と、状態オブジェクトは無効になります。次に例を示します:"
+"GDScriptは、 :ref:`yield<class_@GDScript_method_yield>` \\  組み込み関数に"
+"よって`コルーチン<https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%AB%E3%83%BC"
+"%E3%83%81%E3%83%B3>`_\\ をサポートしています。 ``yield()`` をコールすると、同"
+"じ関数の現在のfrozen状態を戻り値として、すぐに現在の関数から戻ります。結果と"
+"して得られたオブジェクトに対して ``resume()`` を呼び出すと、実行が継続され、"
+"関数が返す内容が戻されます。１回resumeすると、状態オブジェクトは無効になりま"
+"す。次に例を示します::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1452
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1472
-#, fuzzy
 msgid "Will print::"
-msgstr "以下のように表示されます:"
+msgstr "以下のように表示されます::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1458
-#, fuzzy
 msgid ""
 "It is also possible to pass values between ``yield()`` and ``resume()``, for "
 "example::"
-msgstr "次のように、yield()とresume()の間に値を渡すこともできます:"
+msgstr "次のように、yield()とresume()の間に値を渡すこともできます::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1479
 msgid "Coroutines & signals"
 msgstr "コルーチンとシグナル"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
-#, fuzzy
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
@@ -2256,16 +2232,15 @@ msgid ""
 msgstr ""
 "``yield`` を使うことの本当の強みはシグナルと組み合わせることです。 ``yield`` "
 "は、オブジェクトとシグナルの2つの引数を受け付けることができます。シグナルを受"
-"信すると、実行が再開されます。次に例を示します:"
+"信すると、実行が再開されます。次に例を示します::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1494
-#, fuzzy
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example::"
 msgstr ""
 "コルーチン自体は、次のように無効な状態に遷移するときに ``completed`` シグナル"
-"を使用します。例:"
+"を使用します。例::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1505
 msgid ""
@@ -2277,19 +2252,17 @@ msgid "Onready keyword"
 msgstr "Onreadyキーワード"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1510
-#, fuzzy
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
 "entering the active scene tree, the sub-nodes can only be obtained when a "
 "call to ``Node._ready()`` is made."
 msgstr ""
-"ノードを使用する場合、シーンの一部への参照した値を変数に保持することが一般的"
-"です。シーンはアクティブなシーンツリーに入ったときにのみ設定されるので、サブ"
-"ノードは Node._ready() への呼び出しが行われた時にのみ取得できます。"
+"ノードを使用する場合、シーンの一部への参照を変数に保持することが一般的です。"
+"シーンはアクティブなシーンツリーに入ったときにのみ設定されるので、サブノード"
+"は ``Node._ready()`` への呼び出しが行われた時にのみ取得できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1522
-#, fuzzy
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2299,7 +2272,7 @@ msgstr ""
 "これは特にノードと外部参照が重なっている場合には少し面倒になります。このため"
 "に、GDScriptには ``onready`` キーワードがあります。これは_readyが呼び出される"
 "までメンバー変数の初期化を遅らせるものです。 上記のコードを単一行に置き換える"
-"ことができます:"
+"ことができます::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1530
 msgid "Assert keyword"
@@ -2314,9 +2287,15 @@ msgid ""
 "have side effects. Otherwise, the behavior of the script would vary "
 "depending on whether the project is run in a debug build."
 msgstr ""
+"``assert`` キーワードはデバックビルド内で状態をチェックする為に使う事が出来ま"
+"す。これらの assert は非デバッグビルドでは無視されます。これはリリースモード"
+"でのプロジェクトのエクスポートでは引数として渡された式が評価されない事を意味"
+"します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1544
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."
 msgstr ""
+"エディタ上でプロジェクトが実行されている時に、assertion エラーが発生した場合"
+"プロジェクトは停止します。"

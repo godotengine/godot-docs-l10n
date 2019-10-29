@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,6 +36,14 @@ msgid ""
 "Finally, you can add collision, occlusion, and navigation shapes to tiles, "
 "adding additional functionality to the TileMap."
 msgstr ""
+"タイルマップは、タイルを枡目状に並べてゲームのレイアウトを作成するために使用"
+"します。 TileMapノードでレベルを設計することには、いくつかの利点があります。 "
+"1つは、タイルを枡目状に「ペイント」することでレイアウトを描画できるようにする"
+"ことです。これは、個々のスプライトノードを1つずつ配置するよりもはるかに高速で"
+"す。\n"
+"第二に、多数のタイルを描画するために最適化されているため、はるかに大きなレベ"
+"ルが可能です。最後に、コリジョン、オクルージョン、ナビゲーションシェイプをタ"
+"イルに追加して、TileMapに機能を追加できます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid "Project setup"
@@ -48,10 +56,14 @@ msgid ""
 "nl/assets/abstract-platformer>`_ but for this demo we'll stick to this small "
 "set."
 msgstr ""
+"このデモでは、Kenneyの「Abstract Platformer」アートパックから取得した次のタイ"
+"ルを使用します。ここで完全なセットを見つけることができますが、このデモではこ"
+"の小さなセットを使います。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid "Create a new project and place the above image in the project folder."
 msgstr ""
+"新しいプロジェクトを作成し、プロジェクトフォルダーに上記の画像を配置します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:31
 msgid ""
@@ -61,6 +73,11 @@ msgid ""
 "the Import tab. Turn off ``Filter`` and click \"Reimport\". See :ref:"
 "`doc_import_images` for details."
 msgstr ""
+"タイルセットを使用する場合、隣接するタイルが一致することが重要です。 Godotの"
+"デフォルトでは、補間された「フィルター」モードを使用して2D画像をインポートし"
+"ます。これにより、タイル間の境界が見苦しくなります。画像を選択し、[インポー"
+"ト]タブをクリックします。フィルターをオフにして、「再インポート」をクリックし"
+"ます。詳細については、画像のインポートを参照してください。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
 msgid "TileMap node"
@@ -72,12 +89,17 @@ msgid ""
 "TileMap uses a square grid of tiles. You can also use a perspective-based "
 "\"Isometric\" mode or define your own custom tile shape."
 msgstr ""
+"シーンに新しいTileMapノードを追加します。デフォルトでは、TileMapはタイルの正"
+"方形グリッドを使用します。パースペクティブベースの「アイソメ」モードを使用し"
+"たり、独自のカスタムタイル形状を定義することもできます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid ""
 "Under the \"Cell\" section in the Inspector are many properties you can "
 "adjust to customize your tilemap's behavior:"
 msgstr ""
+"インスペクターの[セル]セクションに、タイルマップの動作をカスタマイズするため"
+"に調整できる多くのプロパティがあります。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:52
 msgid "``Cell Size``"
@@ -88,6 +110,8 @@ msgid ""
 "This defines the size of the grid. This should match the pixel size of your "
 "tiles. The default value is ``(64, 64)``."
 msgstr ""
+"これで、グリッドのサイズを定義します。タイルのピクセルサイズと一致させる必要"
+"があります。デフォルト値は（64、64）です。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:56
 msgid "``YSort``"
@@ -98,6 +122,8 @@ msgid ""
 "This causes tiles to be drawn in order of their ``Y`` position, so that "
 "\"lower\" tiles are drawn on top of \"higher\" ones."
 msgstr ""
+"これにより、タイルがY位置の順に描画されるため、「低い」タイルが「高い」タイル"
+"の上に描画されます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid "``Half Offset`` and ``Tile Origin``"
@@ -107,7 +133,7 @@ msgstr ""
 msgid ""
 "These properties affect the position of the tile relative to the grid "
 "position."
-msgstr ""
+msgstr "これらのプロパティは、グリッドの位置に対するタイルの位置に影響します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:63
 msgid "``Quadrant``"
@@ -118,6 +144,9 @@ msgid ""
 "Defines the chunk size used for batched drawing. This can negatively affect "
 "performance. Don't change it unless you know what you're doing."
 msgstr ""
+"バッチ描画に使用されるチャンクサイズを定義します。これはパフォーマンスに悪影"
+"響を及ぼす可能性があります。何をしているか分からない限り、変更しないでくださ"
+"い。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "``Custom Transform``"
@@ -126,15 +155,18 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
 msgstr ""
+"タイルの形状を変更するために使用されます。正方形でないタイルがある場合にこれ"
+"を使用します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:68
 msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
+"これらのオプションはすべて、このデモのデフォルトのままにしておくことができま"
+"す。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
-#, fuzzy
 msgid "Creating a TileSet"
-msgstr "コンテンツの作成"
+msgstr "タイルセットの作成"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
@@ -144,18 +176,23 @@ msgid ""
 "other properties. When the game runs, the TileMap combines the individual "
 "tiles into a single object."
 msgstr ""
+"タイルマップを構成したら、TileSetを追加します。 TileSetは、タイルに関するデー"
+"タ（テクスチャ、衝突形状、その他のプロパティ）を含むリソースです。ゲームを実"
+"行すると、TileMapは個々のタイルを1つのオブジェクトに結合します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:79
 msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
 "TileSet\"."
 msgstr ""
+"新しいTileSetを追加するには、「Tile Set」プロパティをクリックして、「New "
+"TileSet」を選択します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
 msgid ""
 "When you do this, the \"TileSet\" panel will open at the bottom of the "
 "editor window:"
-msgstr ""
+msgstr "すると、エディターウィンドウの下部に[タイルセット]パネルが開きます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:89
 msgid ""
@@ -163,6 +200,8 @@ msgid ""
 "the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
 "image."
 msgstr ""
+"最初に、タイルに使用するテクスチャを追加する必要があります。 [テクスチャを"
+"TileSetに追加]ボタンをクリックして、tilesheet.png画像を選択します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
@@ -170,6 +209,9 @@ msgid ""
 "want. Click the \"Enable Snap\" button to make it easier to select the "
 "entire tile. A yellow rectangle appears around the selected tile."
 msgstr ""
+"次に、[新しい単一のタイル]をクリックし、画像内にドラッグして目的のタイルを選"
+"択します。 [スナップを有効にする]ボタンをクリックして、タイル全体を選択しやす"
+"くします。選択したタイルの周りに黄色の長方形が表示されます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:98
 msgid ""
@@ -177,17 +219,21 @@ msgid ""
 "created tile now appears on the right side. Click in the viewport and you "
 "can place tiles. Right-click to remove them."
 msgstr ""
+"シーンツリーでTileMapをクリックすると、新しく作成されたタイルが右側に表示され"
+"ることがわかります。ビューポートをクリックすると、タイルを配置できます。右ク"
+"リックしてそれらを削除します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:104
 msgid ""
 "It's easy to accidentally select and move the tilemap node. To avoid this, "
 "use the node's lock button:"
 msgstr ""
+"誤ってタイルマップノードを選択して移動してしまうことがあります。これを回避す"
+"るには、ノードのロックボタンを使用します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:110
-#, fuzzy
 msgid "Collision Shapes"
-msgstr "コリジョン形状の表示"
+msgstr "コリジョン形状"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:112
 msgid ""
@@ -195,6 +241,8 @@ msgid ""
 "obstacles, for example - then you'll need to add collision shapes to any "
 "tiles that you want to be considered \"solid\"."
 msgstr ""
+"壁、床、またはその他の障害物などの衝突を必要とするマップを作成している場合"
+"は、「ソリッド」と見なされるタイルに衝突形状を追加する必要があります。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:116
 msgid ""
@@ -204,11 +252,17 @@ msgid ""
 "button. Make sure you still have grid snap enabled, then click and drag in "
 "the tile. A square collision shape appears in light blue:"
 msgstr ""
+"エディターウィンドウの下部にある[タイルセット]をクリックして、タイルセット"
+"ツールに戻ります。以前に定義したタイルをクリックします（黄色のアウトライ"
+"ン）。 [衝突]タブを選択し、[新しい長方形の作成]ボタンをクリックします。グリッ"
+"ドスナップが有効になっていることを確認してから、タイルをクリックしてドラッグ"
+"します。正方形の衝突形状が水色で表示されます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:124
 msgid ""
 "You can add occlusion and navigation shapes to the tile in the same way."
 msgstr ""
+"同じ方法で、オクルージョンとナビゲーションシェイプをタイルに追加できます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:127
 msgid "Atlas tiles"
@@ -220,6 +274,9 @@ msgid ""
 "tiles all at once using an atlas. Click \"New Atlas\" and drag to select the "
 "entire tile sheet."
 msgstr ""
+"個々のタイルを1つずつ追加するのではなく、アトラスを使用してタイルのグループを"
+"一度に定義できます。 [新しいアトラス]をクリックし、ドラッグしてタイルシート全"
+"体を選択します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:135
 msgid ""
@@ -227,6 +284,9 @@ msgid ""
 "settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
 "You can find this in the Inspector:"
 msgstr ""
+"まだ設定していない場合は、スナップ設定の「ステップ」を（64、64）に変更してく"
+"ださい。変更しないと、タイルが細かく切り刻まれます。これはインスペクターで見"
+"つけることができます："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:141
 msgid ""
@@ -234,6 +294,8 @@ msgid ""
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
 "represent the atlas."
 msgstr ""
+"アトラスを定義したら、以前と同様に個々のタイルに衝突形状を追加できます。 [ア"
+"イコン]をクリックして、アトラスを表すタイルの1つを選択することもできます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:145
 msgid ""
@@ -247,6 +309,8 @@ msgid ""
 "grouping similar tiles together when you're working with a large number of "
 "tiles."
 msgstr ""
+"これは、タイルを定義するときの時間を節約することに加えて、多数のタイルで作業"
+"しているときに類似のタイルをグループ化することで役立ちます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:154
 msgid "Tips and tricks"
@@ -258,19 +322,26 @@ msgid ""
 "may notice lines appearing between your tiles. To fix this, open Project "
 "Settings and enable \"Use Pixel Snap\" in the \"Rendering/Quality\" section."
 msgstr ""
+"Camera2Dを使用してレベルをスクロールしている場合、タイル間に線が表示される場"
+"合があります。これを修正するには、プロジェクト設定を開き、「レンダリング/品"
+"質」セクションで「ピクセルスナップを使用」を有効にします。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:160
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr ""
+"エディターの右上にあるアイコンを使用して、タイルを反転および回転できます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:162
 msgid ""
 "To draw straight lines, hold <Shift> while clicking and dragging a tile."
 msgstr ""
+"直線を描くには、<Shift>を押しながらタイルをクリックしてドラッグします。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:164
 msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."
 msgstr ""
+"コピー、貼り付け、バケット塗りつぶしなどのツールは、右上の「タイルマップ」メ"
+"ニューにあります。"

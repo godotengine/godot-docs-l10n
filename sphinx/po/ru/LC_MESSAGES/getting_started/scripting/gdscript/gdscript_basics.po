@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
-#, fuzzy
 msgid "GDScript basics"
-msgstr "GDScript"
+msgstr "Основы GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:7
 msgid "Introduction"
@@ -755,13 +754,13 @@ msgid "Base 16 (hexadecimal) integer"
 msgstr "Целое число в шестнадцатеричной системе счисления"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:304
+#, fuzzy
 msgid "``0b101010``"
-msgstr ""
+msgstr "``0b101010``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:304
-#, fuzzy
 msgid "Base 2 (binary) integer"
-msgstr "Целое число в шестнадцатеричной системе счисления"
+msgstr "Целое число в двоичной системе счисления"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:306
 msgid "``3.14``, ``58.1e-10``"
@@ -878,18 +877,26 @@ msgid ""
 "Short for \"integer\", it stores whole numbers (positive and negative). It "
 "is stored as a 64-bit value, equivalent to \"int64_t\" in C++."
 msgstr ""
+"Сокращённо от \"integer\", содержит целые числа (положительные и "
+"отрицательные). Хранится как 64-битное значение, эквивалент \"int64_t\" в C+"
+"+."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:361
 msgid "float"
 msgstr "float"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:363
+#, fuzzy
 msgid ""
 "Stores real numbers, including decimals, using floating-point values. It is "
 "stored as a 64-bit value, equivalent to \"double\" in C++. Note: Currently, "
 "data structures such as Vector2, Vector3, and PoolRealArray store 32-bit "
 "single-precision \"float\" values."
 msgstr ""
+"Содержит действительные числа, включая десятичные, используя значения с "
+"плавающей запятой. Хранится как 64-битное значение, эквивалент \"double\" в C"
+"++. Примечание: В настоящее время структуры данных, такие как Vector2, "
+"Vector3 и PoolRealArray хранятся как 32-битные плавающие одинарные значения."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:369
 msgid ":ref:`String <class_String>`"
@@ -1366,6 +1373,13 @@ msgid ""
 msgstr ""
 "Если вы передадите имя перечислению, оно поместит все значения в постоянный "
 "словарь (constant dictionary) с этим именем."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:652
+msgid ""
+"In Godot 3.1 and later, keys in a named enum are not registered as global "
+"constants. They should be accessed prefixed by the enum's name (``Name."
+"KEY``); see an example below."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:672
 msgid "Functions"
@@ -2011,9 +2025,10 @@ msgid "Exports"
 msgstr "Экспорт"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1187
+#, fuzzy
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
-msgstr ""
+msgstr "Документация об экспорте перемещена в :ref:`doc_gdscript_exports`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1190
 msgid "Setters/getters"
@@ -2102,6 +2117,10 @@ msgid ""
 "script (especially the script's owner itself). As tool scripts run their "
 "code in the editor, misusing them may lead to crashing the editor."
 msgstr ""
+"Будьте осторожны при освобождении узлов с помощью ``queue_free()`` или "
+"``free()`` в скрипт инструмента (особенно самого владельца скрипта). Так как "
+"скрипт инструмента запускает свой код в редакторе, неправильное их "
+"использование может привести к крашу редактора."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1263
 msgid "Memory management"
@@ -2170,24 +2189,35 @@ msgstr ""
 "`class_Button` или :ref:`class_RigidBody`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1304
+#, fuzzy
 msgid ""
 "In the example below, we connect the ``health_depleted`` signal from a "
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
 "signal, the game node's ``_on_Character_health_depleted`` is called::"
 msgstr ""
+"В примере ниже мы соединили сигнал ``health_depleted`` от узла ``Character`` "
+"с узлом ``Game``. Когда узел ``Character`` отправляет сигнал, вызывается "
+"игровой узел ``_on_Character_health_depleted``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1317
+#, fuzzy
 msgid "You can emit as many arguments as you want along with a signal."
 msgstr ""
+"Вы можете отправлять вместе с сигналом столько аргументов, сколько хотите."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
+#, fuzzy
 msgid ""
 "Here is an example where this is useful. Let's say we want a life bar on "
 "screen to react to health changes with an animation, but we want to keep the "
 "user interface separate from the player in our scene tree."
 msgstr ""
+"Вот пример, где это может быть полезным. Допустим, мы хотим, чтобы полоса "
+"здоровья на экране реагировала на изменения здоровья анимацией, но мы хотим "
+"сохранять интерфейс отдельно от проигрывателя в дереве сцен."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1323
+#, fuzzy
 msgid ""
 "In our ``Character.gd`` script, we define a ``health_changed`` signal and "
 "emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
@@ -2195,12 +2225,21 @@ msgid ""
 "``Lifebar`` using the :ref:`Object.connect() <class_Object_method_connect>` "
 "method::"
 msgstr ""
+"В нашем скрипте ``Character.gd`` мы определяем сигнал ``health_changed`` и "
+"отправляем его вместе с :ref:`Object.emit_signal() "
+"<class_Object_method_emit_signal>`, и узел ``Game`` выше по дереву сцен мы "
+"соединяем с ``Lifebar`` используя метод :ref:`Object.connect() "
+"<class_Object_method_connect>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1363
+#, fuzzy
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
 msgstr ""
+"Чтобы использовать сигналы, ваш класс должен расширить класс ``Object``или "
+"любой другой тип, расширяя его в виде ``Node``, ``KinematicBody``, "
+"``Control``..."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1366
 msgid ""
@@ -2208,26 +2247,38 @@ msgid ""
 "then connect the character, that emits the signal, to the receiver, the "
 "``Lifebar`` node in this case."
 msgstr ""
+"В узле ``Game`` мы берём узлы ``Character`` и ``Lifebar``, затем соединяем "
+"символ, отправляющий сигнал, с получателем, в нашем случае с узлом "
+"``Lifebar``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1380
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
 msgstr ""
+"Это позволяет ``Lifebar`` реагировать на изменения здоровья без соединения с "
+"узлом ``Character``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1383
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
 msgstr ""
+"Вы можете написать дополнительные аргументы в скобках после определения "
+"сигнала::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1389
+#, fuzzy
 msgid ""
 "These arguments show up in the editor's node dock, and Godot can use them to "
 "generate callback functions for you. However, you can still emit any number "
 "of arguments when you emit signals; it's up to you to emit the correct "
 "values."
 msgstr ""
+"Эти аргументы показываются в доке узла редактора и Godot может использовать "
+"их, чтобы производить для вас функции обратного вызова. Однако, вы всё ещё "
+"можете отправлять любое число аргументов при отправке сигналов; отправка "
+"правильных значений зависит от вас."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1395
 #, fuzzy
@@ -2249,8 +2300,12 @@ msgid ""
 "connection if the emitted signal itself doesn't give you access to all the "
 "data that you need."
 msgstr ""
+"Вы можете использовать это множество значений чтобы добавить дополнительную "
+"постоянную информацию в соединение, если сам отправляемый сигнал не даёт вам "
+"доступ ко всем данным, которые вам нужны."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
+#, fuzzy
 msgid ""
 "Building on the example above, let's say we want to display a log of the "
 "damage taken by each character on the screen, like ``Player1 took 22 damage."
@@ -2258,12 +2313,19 @@ msgid ""
 "that took damage. So when we connect the signal to the in-game console, we "
 "can add the character's name in the binds array argument::"
 msgstr ""
+"Основываясь на предыдущем примере, представим, что мы хотим показать лог "
+"урона, полученного всеми персонажами на экране, вроде ``Игрок1 получил 22 "
+"единицы урона``. Сигнал ``health_changed`` не выдаёт имя получившего урон "
+"персонажа. Так что, когда мы соединим сигнал с внутриигровой консолью, мы "
+"можем добавить имя персонажа в связку аргумента множества::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1418
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
 msgstr ""
+"Наш узел ``BattleLog`` получает каждый элемент в связке массива как "
+"дополнительный аргумент::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1430
 #, fuzzy
@@ -2377,7 +2439,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1544
+#, fuzzy
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."
 msgstr ""
+"Когда запускаешь проект через редактор, первый будет остановлен, если "
+"произойдёт ошибка утверждения."

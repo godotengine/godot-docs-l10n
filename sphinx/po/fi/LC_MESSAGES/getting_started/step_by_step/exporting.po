@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,16 +84,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
-#, fuzzy
 msgid ""
 "Before we change the input method, in the project settings go to *Display*, "
 "then click on *Window*. In the *Stretch* options, set *Mode* to \"2d\" and "
 "*Aspect* to \"keep\". This ensures that the game scales consistently on "
 "different sized screens."
 msgstr ""
-"*Stretch* osiossa, aseta *Mode* arvoksi \"2d\" ja *Aspect* arvoksi \"keep\". "
-"Tämä varmistaa, että peli skaalautuu johdonmukaisesti erikokoisille "
-"ruuduille."
+"Ennen kuin vaihdamme syötetapaa, mene projektin asetuksissa kohtaan "
+"*Display* ja napsauta sitten *Window*. *Stretch* valinnoissa, aseta *Mode* "
+"arvoksi \"2d\" ja *Aspect* arvoksi \"keep\". Tämä varmistaa, että peli "
+"skaalautuu johdonmukaisesti erikokoisille ruuduille."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:44
 msgid ""
@@ -183,13 +183,12 @@ msgstr ""
 "pelistäsi, kuten esimerkiksi `.apk` Androidille tai `.exe` Windowsille."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:157
-#, fuzzy
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
 "\"Resurssit\" ja \"Ominaisuudet\" välilehdillä voit räätälöidä pelisi "
-"viennin kullekin alustalle. Voimme jättää nuo asetukset rauhaan toistaiseksi."
+"viennin kullekin alustalle. Voimme jättää nuo asetukset toistaiseksi rauhaan."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:161
 msgid "Exporting by platform"
@@ -225,17 +224,16 @@ msgid "Click \"Save\" and the engine will build the export files."
 msgstr "Napsauta \"Tallenna\" ja pelimoottori rakentaa vientitiedostot."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:176
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
 "either case, the compressed file contains a macOS `.app` that you can double-"
 "click and run."
 msgstr ""
-"Jos teet viennin MacOS:lle MacOS-tietokoneella, saat '.dmg' tiedoston, kun "
-"taas Linuxin tai Windowsin käyttö tuottaa '.zip' tiedoston. Kummassakin "
-"tapauksessa pakattu tiedosto sisältää MacOS:n '.app' tiedoston, jonka voit "
-"ajaa kaksoisnapsauttamalla."
+"Jos teet viennin macOS:lle macOS-tietokoneella, saat `.dmg` tiedoston, kun "
+"taas Linuxin tai Windowsin käyttö tuottaa `.zip` tiedoston. Kummassakin "
+"tapauksessa pakattu tiedosto sisältää macOS `.app` tiedoston, jonka voit "
+"ajaa kaksoisnapsautuksella."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:181
 msgid ""
@@ -292,13 +290,12 @@ msgstr ""
 "komentorivityökalun, jota Godot käyttää keskustellakseen laitteesi kanssa."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:204
-#, fuzzy
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
 msgstr ""
-"Seuraavaksi, luo \"debug keystore\" suorittamalla seuraava komento "
-"järjestelmäsi komentorivillä:"
+"Seuraavaksi, luo debug keystore suorittamalla seuraava komento järjestelmäsi "
+"komentorivillä:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:211
 msgid ""
@@ -358,7 +355,6 @@ msgid "iOS"
 msgstr "iOS"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:240
-#, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
@@ -428,7 +424,7 @@ msgstr "Kun vienti on valmis, saat seuraavat tiedostot sisältävän kansion:"
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
-"you don't have one set up on your computer, you can use Google to find "
+"you don't have one set up on your computer, you can search online to find "
 "suggestions for your specific OS."
 msgstr ""
 "Voit pelata peliä avaamalla `.html` tiedoston selaimessasi. Et kuitenkaan "
@@ -456,12 +452,13 @@ msgstr ""
 "asentoon, kun viet projektisi."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:287
+#, fuzzy
 msgid ""
-"Browser support for WASM is not very widespread. Firefox and Chrome both "
-"support it, but you may still find some things that don't work. Make sure "
-"you have updated your browser to the most recent version, and report any "
-"bugs you find at the `Godot Github repository <https://github.com/"
-"godotengine/godot/issues>`_."
+"While WASM is supported in all major browsers, it is still an emerging "
+"technology and you may find some things that don't work. Make sure you have "
+"updated your browser to the most recent version, and report any bugs you "
+"find at the `Godot Github repository <https://github.com/godotengine/godot/"
+"issues>`_."
 msgstr ""
 "Selainten WASM-tuki ei ole kovin laajalle levinnyttä. Firefox ja Chrome "
 "molemmat tukevat sitä, mutta voit silti törmätä joihinkin asioihin, jotka "

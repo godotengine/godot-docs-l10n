@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,8 @@ msgid ""
 "profits™, nowadays games are released in several languages. To solve this, "
 "internationalized text must be supported in any modern game engine."
 msgstr ""
-"世界充满了不同的市场和文化，为了实现利润最大化，现在的游戏以多种语言发布。 为"
-"了解决这个问题，任何现代游戏引擎都必须支持国际化文本。"
+"世界上充满了不同的市场和文化，并且为了最大化利润，当今的游戏以多种语言发行。"
+"为了解决这个问题，任何现代游戏引擎都必须支持国际化的文本。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:14
 msgid ""
@@ -42,8 +42,8 @@ msgid ""
 "support efficient methods for dealing with loads of multilingual text."
 msgstr ""
 "在常规的桌面或移动应用程序中，国际化文本通常位于资源文件中（或用于GNU内容的 ."
-"po 文件）。 然而，游戏可以使用比应用程序多几个数量级的文本，因此它们必须支持"
-"能高效处理多语言文本加载的方法。"
+"po 文件）。然而，游戏可以使用比应用程序多几个数量级的文本，因此它们必须支持能"
+"高效处理多语言文本加载的方法。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
 msgid ""
@@ -54,10 +54,10 @@ msgid ""
 "if a game is released first in English, later in other languages, but a "
 "complete nightmare if working with many languages at the same time."
 msgstr ""
-"有两种方法来生成多语言的游戏和应用程序。 两者都基于键值对系统。 第一种是使用"
-"其中一种语言作为``键``（通常是英语），第二种是使用特定的标识符。 如果首先用英"
-"语发布游戏，后来以其他语言发布游戏，则第一种方法可能更易于开发，但如果同时使"
-"用多种语言则完全是一场噩梦。"
+"有两种方法来生成多语言的游戏和应用程序。两者都基于键值对系统。第一种是使用其"
+"中一种语言作为 ``键`` （通常是英语），第二种是使用特定的标识符。如果首先用英"
+"语发布游戏，后来以其他语言发布游戏，则第一种方法可能更易于开发；但是如果同时"
+"使用多种语言，则完全是一场噩梦。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:28
 msgid ""
@@ -66,9 +66,9 @@ msgid ""
 "other languages. The unique ID can be a number, a string, or a string with a "
 "number (it's just a unique string anyway)."
 msgstr ""
-"一般来说，游戏使用第二种方法，并为每个字符串使用唯一的ID。 这允许您在翻译为其"
-"他语言的同时修改文本。 唯一ID可以是数字，字符串或带有数字的字符串(无论如何它"
-"只是一个唯一的字符串)。"
+"一般来说，游戏使用第二种方法，并为每个字符串使用唯一的ID。这允许您在翻译为其"
+"他语言时修改文本。唯一ID可以是数字、字符串、或带有数字的字符串（无论如何，它"
+"只是一个唯一的字符串）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
 msgid ""
@@ -76,6 +76,8 @@ msgid ""
 "translations written in the gettext ``.po`` format. See :ref:"
 "`doc_localization_using_gettext` for details."
 msgstr ""
+"如果您需要更强大的文件格式，Godot还支持加载以gettext ``.po`` 格式编写的翻译。"
+"有关详细信息，请参见 :ref:`doc_localization_using_gettext`。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 msgid "Translation format"
@@ -90,16 +92,15 @@ msgid ""
 "arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
 "as follows:"
 msgstr ""
-"为了完成这副图景并提供高效的翻译支持，Godot 设计了一个特殊的导入器，可以读取"
-"CSV文件。 所有电子表格编辑器（无论是 Libreoffice，Microsoft Office，Google "
-"Docs等）都可以导出为这种格式，因此唯一的要求是这些文件有特殊的安排。 CSV 文件"
-"必须以 UTF-8 编码格式保存，且具备如下格式："
+"为了完成这幅图景并提供高效的翻译支持，Godot有一个特殊的导入器，可以读取CSV文"
+"件。所有电子表格编辑器（可以是Libreoffice、Microsoft Office、Google Docs等）"
+"都可以导出为这种格式，因此唯一的要求是文件必须具有特殊的排列方式。CSV文件必须"
+"以UTF-8编码保存，并按照以下格式设置："
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
-#, fuzzy
 msgid "keys"
-msgstr "keys"
+msgstr "键"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid "<lang1>"
@@ -132,7 +133,6 @@ msgid "KEYN"
 msgstr "KEYN"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
-#, fuzzy
 msgid ""
 "The \"lang\" tags must represent a language, which must be one of the :ref:"
 "`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags must "
@@ -142,9 +142,11 @@ msgid ""
 "and \"Key1\" will be different keys. The top-left cell is ignored and can be "
 "left empty or having any content. Here's an example:"
 msgstr ""
-"<lang*> 标签必须表示一种语言, 它必须选自 :ref:`valid locales <doc_locales>` "
-"中的Locale列的有效值才能被引擎支持。KEY 标签必须是唯一的, 并普遍地代表某个字"
-"符串 (它们通常是全大写, 以区别于其他字符串)。下面是一个示例:"
+"``lang`` 标签必须代表一种语言，该语言必须是引擎支持的 :ref:`有效地区语言 "
+"<doc_locales>` 之一。``KEY`` 标签必须是唯一的，并且必须代表一个通用字符串（它"
+"们通常以大写形式与其他字符串区分开）。这些键将在运行时由匹配的翻译的字符串替"
+"换。特别注意，``KEY1`` 和 ``Key1`` 将是不同的键。左上方的单元格将被忽略，可以"
+"保留为空或包含任何内容。这是一个例子："
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "en"
@@ -167,9 +169,8 @@ msgid "Hello, friend!"
 msgstr "Hello, friend!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
-#, fuzzy
 msgid "Hola, amigo!"
-msgstr "Hola, Amigo!"
+msgstr "Hola, amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
 msgid "こんにちは"
@@ -196,9 +197,8 @@ msgid "BYE"
 msgstr "BYE"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
-#, fuzzy
 msgid "Goodbye"
-msgstr "Good Bye"
+msgstr "Goodbye"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
 msgid "Adiós"
@@ -216,18 +216,20 @@ msgid ""
 "with double quotes, so that the comma is not parsed as delimiter. "
 "Alternatively, you can select another delimiter in the import options."
 msgstr ""
+"相同的示例在下面显示为逗号分隔的纯文本文件，这应该是在电子表格中编辑以上示例"
+"的结果。在编辑纯文本版本时，请确保将任何包含逗号的信息，用双引号括起来，以便"
+"不会将逗号解析为定界符。或者，您可以在导入选项中选择另一种定界符。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:91
-#, fuzzy
 msgid "CSV importer"
-msgstr "CSV导入器"
+msgstr "CSV 导入器"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:93
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
-"Godot 将 CSV 文件默认作为译文处理。它将导入该文件并在其旁边位置生成一个或多个"
+"Godot 将 CSV 文件默认作为译文处理。它将导入它们，并在其旁边位置生成一个或多个"
 "压缩过的翻译资源文件。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:96
@@ -236,8 +238,8 @@ msgid ""
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
-"导入过程还会将翻译添加到在游戏运行时加载的翻译列表中, 在 project.godot文件 "
-"(或项目设置) 中指定。Godot还允许在运行时加载和删除翻译。"
+"导入还会将翻译添加到，要在游戏运行时加载的翻译列表中，在 ``project.godot`` "
+"（或项目设置）中指定。Godot还允许在运行时加载和删除翻译。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:101
 msgid ""
@@ -245,7 +247,9 @@ msgid ""
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
+"选择 ``.csv`` 文件并访问导入停靠面板，以定义导入选项。您可以切换导入翻译的压"
+"缩，并选择在解析CSV文件时使用的定界符。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
 msgid "Be sure to click \"Reimport\" after any change to these options."
-msgstr ""
+msgstr "对这些选项进行任何更改后，请务必点击 ``重新导入``。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgid ""
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming styleguide."
 msgstr ""
 "GDScriptはPythonに近いので、このガイドはPythonの `PEP 8 <https://www.python."
-"org/dev/peps/pep-0008/>` プログラミングスタイルガイドに触発されています。"
+"org/dev/peps/pep-0008/>`__ プログラミングスタイルガイドに触発されています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:18
 msgid ""
@@ -79,7 +79,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:96
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:120
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:140
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:222
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:160
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:242
 msgid "**Good**:"
 msgstr "**良い例**："
 
@@ -87,8 +88,9 @@ msgstr "**良い例**："
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:106
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:150
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:230
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:170
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:250
 msgid "**Bad**:"
 msgstr "**悪い例**："
 
@@ -106,7 +108,7 @@ msgstr "空白行"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:72
 msgid "Surround functions and class definitions with two blank lines:"
-msgstr ""
+msgstr "関数とクラスの定義は2つの空白行で囲んで下さい:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:87
 msgid "Use one blank line inside functions to separate logical sections."
@@ -137,26 +139,37 @@ msgstr ""
 "低下するだけです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:135
+#, fuzzy
+msgid "Comment spacing"
+msgstr "コメント"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+msgid ""
+"Normal comments should start with a space, but comments which are disabled "
+"code should not. This helps differentiate text comments from disabled code."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:155
 msgid "Whitespace"
 msgstr "スペース"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:157
 msgid ""
 "Always use one space around operators and after commas. Avoid extra spaces "
 "in dictionary references and function calls, or to create \"columns.\""
 msgstr ""
 "演算子の前後およびコンマの後には常に1つのスペースを使用してください。辞書参照"
-"や関数呼び出しに余分なスペースを入れないようにするか、 列 を作成します。"
+"や関数呼び出しに余分なスペースを入れないようにするか、\"列\"を作成します。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:160
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:180
 msgid "**NEVER**:"
 msgstr "**最も悪い例**："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:169
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:189
 msgid "Naming conventions"
 msgstr "命名規則"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:171
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:191
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, which is ugly."
@@ -164,27 +177,27 @@ msgstr ""
 "これらの命名規則は、Godot Engineスタイルに従います。これらを破ると、コードは"
 "組み込みの命名規則と衝突することになりますが、これは醜いことです。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:196
 msgid "Classes and nodes"
 msgstr "クラスとノード"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:198
 msgid "Use PascalCase: ``extends KinematicBody``"
 msgstr "PascalCaseを使用: ``extends KinematicBody``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:180
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:200
 msgid "Also when loading a class into a constant or variable:"
 msgstr "クラスを定数または変数にロードする場合も、次のようになります:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:187
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:207
 msgid "Functions and variables"
 msgstr "関数と変数"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:189
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:209
 msgid "Use snake\\_case: ``get_node()``"
 msgstr "snake\\_caseを使用: ``get_node()``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:191
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:211
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods (functions the user "
 "must override), private functions, and private variables: ``func _ready()``"
@@ -193,19 +206,19 @@ msgstr ""
 "およびプライベート変数の後に単一のアンダースコア (\\_) を追加します: ``func "
 "_ready()``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:196
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:216
 msgid "Signals"
 msgstr "シグナル"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:198
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:218
 msgid "Use past tense:"
 msgstr "過去形を使用:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:206
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:226
 msgid "Constants"
 msgstr "定数"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:208
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:228
 msgid ""
 "Use CONSTANT\\_CASE, all caps, with an underscore (\\_) to separate words: "
 "``const MAX_SPEED = 200``"
@@ -213,33 +226,38 @@ msgstr ""
 "定数には大文字を使用します。単語の区切りにはアンダースコア(\\_)を使用します: "
 "``const MAX_SPEED = 200``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:212
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:232
 msgid "Static typing"
-msgstr ""
+msgstr "静的型付け"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:214
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:234
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
+"Godot 3.1から、GDScriptはオプショナルな静的型付けをサポートしています。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:217
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:237
 msgid "Type hints"
-msgstr ""
+msgstr "タイプヒント"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:219
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:239
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
+"変数名の後にコロンをスペースを挟まずに配置し、可能ならばGDScript コンパイラに"
+"変数の型を推測させます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
+"コンパイラにタイプヒントを推測させる場合、コロンとイコールは一緒に書いて下さ"
+"い: ``:=``。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:264
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
-msgstr ""
+msgstr "関数の定義をする時の戻り値の型の矢印の両側にスペースを追加します。"

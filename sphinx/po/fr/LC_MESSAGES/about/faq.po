@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:4
 msgid "Frequently asked questions"
-msgstr "Foire aux questions"
+msgstr "Question fréquentes"
 
 #: ../../docs/about/faq.rst:7
 msgid ""
@@ -222,13 +222,13 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
-"Notez que le support du langage C# est récent et que, par conséquent, il est "
-"possible de rencontrer des bugs. Notre communauté active et bienveillante "
-"est toujours prête à s'attaquer aux problèmes qui se présentent, mais comme "
-"il s'agit d'un projet open source, nous vous recommandons de faire les "
-"vérifications nécessaires par vous même. Chercher parmi les `problèmes "
-"connus <https://github.com/godotengine/godot/issues>`est un très bon moyen "
-"d'arriver à vous dépanner."
+"Notez que le support du langage C# est toujours relativement récent, et par "
+"conséquent, il est possible de rencontrer divers problèmes. Notre "
+"sympathique et très active communauté est toujours prête à aborder les "
+"problèmes qui se présentent, mais comme il s'agit d'un projet open source, "
+"nous vous recommandons de faire d'abord les vérifications nécessaires. "
+"Chercher parmi les `problèmes connus <https://github.com/godotengine/godot/"
+"issues>`est déjà un très bon moyen pour commencer votre dépannage."
 
 #: ../../docs/about/faq.rst:82
 msgid ""
@@ -780,7 +780,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "Pourquoi Godot n'utilise pas la STL (Standard Template Library)"
 
 #: ../../docs/about/faq.rst:288
 msgid ""
@@ -788,12 +788,18 @@ msgid ""
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"Comme beaucoup d'autres bibliothèques (Qt par exemple), Godot n'utilise pas "
+"la STL. Nous pensons que la STL est une très bonne bibliothèque pour un "
+"usage général, mais nous avons des besoins spécifiques pour Godot."
 
 #: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"Les modèles STL créent beaucoup symboles, ce qui fait que les binaires de "
+"débogages sont très lourds. À la place, nous utilisons peu de modèle et avec "
+"des noms courts."
 
 #: ../../docs/about/faq.rst:293
 msgid ""
@@ -802,28 +808,42 @@ msgid ""
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"La plupart des conteneurs répondent a des besoins spécifiques. Par exemple "
+"il y a le conteneur Vector, qui utilise le \"copy on write\" (copie l'objet "
+"lorsqu'il est modifié) et que nous utilisons pour manipuler des données. Ou "
+"encore, il y a le système de RID, avec un temps d'accès d'une complexité en "
+"O(1). De la même manière, l'implémentation des HashMap (table de hashage),"
+"est conçue pour s'intégrer parfaitement avec les types internes au moteur."
 
 #: ../../docs/about/faq.rst:294
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"Les conteneurs intègrent un système de traçage de la mémoire, ce qui permet "
+"le suivi de l'utilisation de la mémoire au cours du temps."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"Pour les grands tableaux, nous utilisons un pool de mémoire (réservoir en "
+"quelque sorte), qui peut être attaché soit à de la mémoire virtuelle, soit à "
+"une mémoire tampon."
 
 #: ../../docs/about/faq.rst:296
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"La gestion des String offerte par la STL étant basique et ne permettant pas "
+"de supporter l'internationalisation (i18n pour l'abbréviation), nous "
+"utilisons notre propre type de String (chaîne de caractère)."
 
 #: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "Pourquoi n'y a-t-il pas de gestion d'exceptions dans Godot ?"
 
 #: ../../docs/about/faq.rst:301
 msgid ""
@@ -832,16 +852,23 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"Nous pensons que les jeux ne doivent pas planter, peu importe la raison. "
+"Dans le cas où une erreur se produit, Godot va afficher un message d'erreur "
+"(qui va vous permettre de remonter jusqu'au script fautif), puis il va "
+"essayer de continuer de fonctionner en mode dégradé."
 
 #: ../../docs/about/faq.rst:306
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
+"De plus, gérer des exceptions nécessiterait d'avoir des fichiers exécutables "
+"bien plus lourds."
 
 #: ../../docs/about/faq.rst:310
 msgid "Why does Godot not enforce RTTI?"
 msgstr ""
+"Pourquoi Godot Engine ne renforce pas le RTTI (Run-time type information) ?"
 
 #: ../../docs/about/faq.rst:312
 msgid ""
@@ -849,10 +876,16 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
+"Godot a possède son propre système de casting, qui peut occasionnellement "
+"utiliser le RTTI en interne. Désactiver le RTTI dans Godot Engine réduit "
+"considérablement la taille des fichiers binaires mais impact légèrement les "
+"performances."
 
 #: ../../docs/about/faq.rst:317
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
+"Pourquoi Godot Engine ne force t il pas les utilisateurs a implémenter le "
+"DoD (Data oriented Design) ?"
 
 #: ../../docs/about/faq.rst:319
 msgid ""
@@ -860,6 +893,9 @@ msgid ""
 "use cache coherency as best as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"Pour les taches coûteuses en terme de performance, Godot Engine en interne "
+"essaiera d'utiliser au mieux le cache. Malgré cela, nous pensons que la "
+"plupart des utilisateurs ne devraient pas être forcés à pratiquer la DoD."
 
 #: ../../docs/about/faq.rst:323
 msgid ""
@@ -869,12 +905,20 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"Le DoD est efficace lorsque vous l'utilisez pour manipuler des douzaines de "
+"milliers d'objets (qui sont traités à chaque frame avec peu de "
+"modifications). Dans le cas où vous êtes amené à déplacer des centaines de "
+"Sprites (ou d'ennemis), le DoD ne vous sera pas utile et vous devrez adopter "
+"une approche différente."
 
 #: ../../docs/about/faq.rst:330
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"Dans la plupart des cas, vous n'aurez pas besoin du DoD. Et Godot va vous "
+"fournir des fonctions pratiques pour vous aider dans ce que vous voulez "
+"faire."
 
 #: ../../docs/about/faq.rst:333
 msgid ""
@@ -882,6 +926,10 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"Si pour un jeu, vous avez besoin de manipuler un grand nombre d'objets, nous "
+"vous recommandons d'utiliser du C++ ou un module écrit en GDNative. Pour les "
+"autres parties du jeu, qui ne sont pas autant demandantes en terme de "
+"performance, le GDScript ou le C# feront l'affaire."
 
 #: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"

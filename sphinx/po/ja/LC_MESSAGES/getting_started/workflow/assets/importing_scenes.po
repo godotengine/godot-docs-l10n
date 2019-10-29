@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,21 +39,21 @@ msgstr ""
 "全体が、可能な限り近くに転送されます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
-msgid "Godot supports the following 3D *scene file fomats*:"
+#, fuzzy
+msgid "Godot supports the following 3D *scene file formats*:"
 msgstr "Godotは、次の3D *scene file fomats*をサポートしています:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
 msgid "DAE (COLLADA), which is currently the most mature workflow."
-msgstr ""
+msgstr "DAE (COLLADA)。現時点で最も安定しているワークフローです。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
-#, fuzzy
 msgid ""
 "glTF 2.0. Both text and binary formats are supported. Godot has full support "
 "for it, but the format is new and gaining traction."
 msgstr ""
-"GLTF 2.0。 テキスト形式とバイナリ形式の両方がサポートされています。 Godotはそ"
-"れを完全にサポートしていますが、そのフォーマットは新しく、普及しつつありま"
+"glTF 2.0。 テキスト形式とバイナリ形式の両方がサポートされています。 Godotはそ"
+"れを完全にサポートしていますが、このフォーマットは新しく、普及途上にありま"
 "す。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
@@ -67,6 +67,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:19
 msgid "ESCN, a Godot specific format that Blender can export with a plugin."
 msgstr ""
+"ESCN。Godot専用のフォーマットで、Blenderにプラグインを入れることでエクスポー"
+"トできます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:21
 msgid ""
@@ -82,6 +84,9 @@ msgid ""
 "sure that the skeleton is reset to its T-pose or default rest pose before "
 "exporting with your favorite 3D editor."
 msgstr ""
+"これは重要なことですが、エクスポートする際にボーンがメッシュを変形させないよ"
+"うにしてください。お使いの3Dエディタからエクスポートする前にまず、スケルトン"
+"がTポーズなどデフォルトのポーズになっていること確認しましょう。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:27
 msgid "Why not FBX?"
@@ -94,6 +99,10 @@ msgid ""
 "format requires the use of a closed library from Autodesk, which is "
 "distributed with more restrictive licensing terms than Godot."
 msgstr ""
+"ほとんどのゲームエンジンは、業界標準の一つといえるFBXフォーマットによる3Dシー"
+"ンのインポートに対応しています。しかしながら、このフォーマットにはGodotよりも"
+"制限されたライセンス下で配布される、Autodeskによるオープンでないライブラリが"
+"必要なのです。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:34
 msgid ""
@@ -114,6 +123,11 @@ msgid ""
 "OpenCOLLADA-Tools>`__ plugins. They work well, although they are not always "
 "up-to date with the latest version of the software."
 msgstr ""
+"AutodeskはMayaと3DS MaxをCOLLADAに対応させましたが、しかしデフォルトでは壊れ"
+"ており、使わないほうが良いでしょう。COLLADAでのエクスポートするのに一番良いの"
+"は`OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-"
+"Tools>`__ プラグインを使用することです。常にソフトの最新版に対応しているとは"
+"限りませんが、これはうまく動きます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:47
 msgid "Exporting DAE files from Blender"
@@ -124,6 +138,8 @@ msgid ""
 "Blender has built-in COLLADA support too, but it's also broken and should "
 "not be used."
 msgstr ""
+"Blenderも標準でCOLLADAに対応していますが、しかしこれもまた壊れており、使うべ"
+"きではありません。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:52
 msgid ""
@@ -134,9 +150,8 @@ msgstr ""
 "提供しています。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:57
-#, fuzzy
 msgid "Exporting glTF 2.0 files from Blender"
-msgstr "BlenderからDAEファイルをエクスポートする"
+msgstr "BlenderからglTF 2.0ファイルをエクスポートする"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:59
 msgid ""
@@ -281,14 +296,12 @@ msgid "Allows setting a specific name to the generated root node."
 msgstr "生成されたルート ノードに特定の名前を設定できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:123
-#, fuzzy
 msgid "Root Scale"
-msgstr "ルート名"
+msgstr "ルートの大きさ"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:125
-#, fuzzy
 msgid "The scale of the root node."
-msgstr "常にルートノードをひとつ持つ。"
+msgstr "ルートノードの大きさ。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:128
 msgid "Custom Script"
@@ -567,9 +580,8 @@ msgstr ""
 "トリに格納できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:250
-#, fuzzy
 msgid "Animation options"
-msgstr "アニメーション"
+msgstr "アニメーションオプション"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:252
 msgid ""

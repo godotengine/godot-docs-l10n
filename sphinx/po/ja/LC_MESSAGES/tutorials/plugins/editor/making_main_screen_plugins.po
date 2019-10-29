@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,9 +41,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:18
-#, fuzzy
 msgid "Creating a main screen plugin"
-msgstr "アニメーション"
+msgstr "メインスクリーンのプラグインの作成"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:19
 msgid ""
@@ -164,7 +163,7 @@ msgid ""
 "``pressed()`` signal instead). In the window that opened, select the Panel "
 "node (we will centralize all behaviors in its attached script). Keep the "
 "default function name, make sure that the ``Make function`` toggle is ON and "
-"hit ``Connect``. This creates an ``on_Button_pressed()`` function in the "
+"hit ``Connect``. This creates an ``_on_Button_pressed()`` function in the "
 "``main_panel.gd`` script, that will be called every time the button is "
 "pressed."
 msgstr ""

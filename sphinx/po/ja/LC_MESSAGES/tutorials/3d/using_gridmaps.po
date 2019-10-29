@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,23 +42,27 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:19
 msgid "Example project"
-msgstr ""
+msgstr "サンプル・プロジェクト"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:21
 msgid ""
 "To learn how GridMaps work, start by downloading the sample project: :"
 "download:`gridmap_demo.zip <files/gridmap_demo.zip>`."
 msgstr ""
+"GridMapsの仕組みをくわしく知るには、サンプル・プロジェクト :download:"
+"`gridmap_demo.zip <files/gridmap_demo.zip>`\\ をダウンロードしてください。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:24
 msgid ""
 "Unzip this project and add it to the Project Manager using the \"Import\" "
 "button."
 msgstr ""
+"このプロジェクトを解凍してから、『インポート』ボタンでプロジェクトマネー"
+"ジャーに追加します。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:28
 msgid "Creating a MeshLibrary"
-msgstr ""
+msgstr "MeshLibraryの作成"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:30
 msgid ""
@@ -67,22 +71,29 @@ msgid ""
 "\"MeshLibrary_Source.tscn\" scene to see an example of how to set up the "
 "mesh library."
 msgstr ""
+"まず初めに、:ref:`class_MeshLibrary`\\ が必要になります。これはグリッドマップ"
+"で使用するメッシュを集めたものです。『MeshLibrary_Source.tscn』シーンを開い"
+"て、MeshLibraryのセットアップ方法を見てみましょう。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:36
 msgid ""
 "As you can see, this scene has a :ref:`class_Spatial` node as its root, and "
 "a number of :ref:`class_MeshInstance` node children."
 msgstr ""
+"ご覧のとおり、ルートには:ref:`class_Spatial`\\ ノードがあり、そしていくつか"
+"の :ref:`class_MeshInstance`\\ ノードが子になっています。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:39
 msgid ""
 "If you don't need any physics in your scene, then you're done. However, in "
 "most cases you'll want to assign collision bodies to the meshes."
 msgstr ""
+"もし、あなたのシーンに物理演算が不要であれば、これで完了です。しかし、ほとん"
+"どの場合はメッシュにコリジョンを追加したくなるでしょう。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:43
 msgid "Collisions"
-msgstr ""
+msgstr "コリジョン"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:45
 msgid ""
@@ -90,6 +101,10 @@ msgid ""
 "`class_CollisionShape` to each mesh. Alternatively, you can use the \"Mesh\" "
 "menu to automatically create the collision body based on the mesh data."
 msgstr ""
+"それぞれのメッシュに手動で:ref:`class_StaticBody`\\ と:ref:"
+"`class_CollisionShape`\\ を追加するという方法もありますが、『メッシュ』メ"
+"ニューを選択すれば、メッシュデータからコリジョンを自動生成することもできま"
+"す。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:51
 msgid ""

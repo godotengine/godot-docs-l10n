@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -372,7 +372,7 @@ msgstr "Як розпочати гру"
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
 msgid ""
 "To ignore specific warnings in one file, insert a special comment of the "
-"form ``#warning-ignore:warning-id``, or click on the ignore link to the "
+"form ``# warning-ignore:warning-id``, or click on the ignore link to the "
 "right of the warning’s description. Godot will add a comment above the "
 "corresponding line and the code won’t trigger the corresponding warning "
 "anymore:"
@@ -384,6 +384,13 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:340
 msgid ""
+"You can also choose to ignore not just one but all warnings of a certain "
+"type in this file with ``# warning-ignore-all:warning-id``. To ignore all "
+"warnings of all types in a file add the comment ``# warnings-disable`` to it."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:344
+msgid ""
 "Warnings won’t prevent the game from running, but you can turn them into "
 "errors if you’d like. This way your game won’t compile unless you fix all "
 "warnings. Head to the ``GDScript`` section of the Project Settings to turn "
@@ -391,46 +398,46 @@ msgid ""
 "as errors turned on:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:349
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:353
 msgid "warnings as errors"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:352
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:356
 msgid "Cases where you can’t specify types"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:354
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:358
 msgid ""
 "To wrap up this introduction, let’s cover a few cases where you can’t use "
 "type hints. All the examples below **will trigger errors**."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:357
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:361
 msgid "You can’t use Enums as types:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:364
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:368
 msgid ""
 "You can’t specify the type of individual members in an array. This will give "
 "you an error:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:371
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:375
 msgid ""
 "You can’t force the assignment of types in a ``for`` loop, as each element "
 "the ``for`` keyword loops over already has a different type. So you "
 "**cannot** write:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:385
 msgid "Two scripts can’t depend on each other in a cyclic fashion:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:400
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:404
 msgid "Summary"
 msgstr "Резюме"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:402
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:406
 msgid ""
 "Typed GDScript is a powerful tool. Available as of version 3.1 of Godot, it "
 "helps you write more structured code, avoid common errors, and create "

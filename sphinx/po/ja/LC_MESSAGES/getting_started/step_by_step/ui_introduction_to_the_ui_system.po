@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,11 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
+"パソコンのディスプレイ、携帯電話、TV画面などは、あらゆる形と大きさをしていま"
+"す。ゲームを公開する前に、異なるアスペクト比と解像度に対応させなければなりま"
+"せん。すべてのプラットフォームに対応するレスポンシブなインターフェースは、作"
+"るのが大変な場合もあります。うれしいことに、Godotにはレスポンシブなインター"
+"フェースをデザインして管理するための、強力なツール群が用意されています。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -41,6 +46,8 @@ msgstr "このガイドでは、UI設計を開始します。次の内容を学�
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
 msgid "The five most useful control nodes to build your games' interface"
 msgstr ""
+"あなたのゲームのインターフェースを作るのに、特に使える５つのコントロール・"
+"ノード"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
@@ -53,11 +60,13 @@ msgstr ""
 "コンテナを使用してユーザーインターフェイスを効率的に配置および配置する方法"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
+#, fuzzy
 msgid ""
-"The five most common containers (at a later time, you can learn more about "
-"containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
-"page)."
+"The five most common containers (you can learn more about containers in the :"
+"ref:`GUI Containers <doc_gui_containers>` documentation page)."
 msgstr ""
+"とりわけよく使う５つのコンテナ (この後、コンテナについてもっと知りたければ"
+"\\ :ref:`GUIコンテナ <doc_gui_containers>`\\ を参照してください)。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -75,6 +84,10 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"UIを設計するためにコントロール・ノードを使います。エディター内に緑のアイコン"
+"のノードがあります。ライフバーから複雑なアプリケーションまでなんでも作れるよ"
+"うにたくさんあります。Godotエディターそのものもコントロール・ノードを用いて作"
+"られています。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -83,6 +96,10 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"コントロールノードは、コントロールノード同士で上手く機能するために一意のプロ"
+"パティを持ちます。Node2Dやスプライトといった他のヴィジュアルノードはそのよう"
+"な特徴を持ちません。UI作成を楽するためには可能な限りコントロールノードを用い"
+"たほうが良いでしょう。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
@@ -98,7 +115,7 @@ msgstr "境界矩形"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Focus and focus neighbor"
-msgstr ""
+msgstr "フォーカスと、フォーカスの周辺"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 msgid "Size flags"
@@ -177,6 +194,9 @@ msgid ""
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
+"**TextureRect** はテクスチャや画像をUI内に表示します。Spriteノードと同じよう"
+"に見えますが、しかし複数のスケーリング・モードが用意されています。Stretch "
+"Modeプロパティで以下のように動作を変更できます："
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
 msgid ""
@@ -184,20 +204,25 @@ msgid ""
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
+"``Scale On Expand (compat)`` は、``Expand``プロパティがオンのときにのみテクス"
+"チャを長方形の境界まで拡縮します。それ以外では``Keep``モードと同じ動作をしま"
+"す。後方互換のため、これがデフォルトのモードになっています。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
-msgstr ""
+msgstr "``Scale``は、テクスチャを長方形の境界に合わせて拡縮します。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr ""
+msgstr "``Tile``は、拡縮させる代わりに、テクスチャを繰り返して並べます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
+"``Keep``と``Keep Centered``は、強制的にテクスチャを本来のサイズのままにし、前"
+"者はフレームの左上に、後者は中央に表示します。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
 msgid ""
@@ -205,6 +230,9 @@ msgid ""
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
+"``Keep Aspect``と``Keep Aspect Centered`` は、テクスチャを拡縮しますが、しか"
+"し元のアスペクト比は保ったままにします。前者はフレームの左上、後者は中央に表"
+"示されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
 msgid ""
@@ -212,12 +240,16 @@ msgid ""
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node's limits."
 msgstr ""
+"``Keep Aspect Covered``は``Keep Aspect Centered``と同じように動作しますが、し"
+"かし余白の部分を境界線に合わせる一方、はみ出た部分は除いて表示します。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
+"Spriteノードと同じく、TextureRectの色は調節できます。``Modulate``プロパティを"
+"クリックして、カラーピッカーを使用してください。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureRect modulated with a red color"
@@ -298,6 +330,14 @@ msgid ""
 "the default of ``0`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
+"バーをアニメーションさせるには、Rangeセクションを見る必要があるでしょう。  "
+"ゲージの範囲を定めるために、``Min`` と ``Max`` プロパティを設定してください。"
+"例えば、キャラクターのライフを表するためには、 ``Min`` を ``0,``に、 そして "
+"``Max`` をキャラクターの最大のライフに設定する必要があるでしょう。  バーを更"
+"新するためには、``Value``プロパティ変更してください。もし``Min`` と``Max`` "
+"を それぞれデフォルトの``0`` と``100,``に、そして ``Value`` プロパティを "
+"``40``にしたならば、 40%の``Progress``テクスチャが現れ、残りの60%は隠れたまま"
+"になります。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"

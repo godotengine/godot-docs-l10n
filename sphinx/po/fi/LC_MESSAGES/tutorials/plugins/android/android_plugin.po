@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:4
-#, fuzzy
 msgid "Creating Android plugins"
-msgstr "Solmujen luonti"
+msgstr "Android-liitännäisten luonti"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:7
 msgid "Introduction"
@@ -129,8 +128,8 @@ msgstr ""
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:44
 msgid ""
 "Most of these APIs allow communication via REST/JSON APIs. If the API is "
-"relatively simple and does not require complex authenthication, this may be "
-"a better idea than writing a specific Android plugin."
+"relatively simple and does not require complex authentication, this may be a "
+"better idea than writing a specific Android plugin."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:47
@@ -146,14 +145,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:53
-#, fuzzy
 msgid "Android plugin"
-msgstr "Android"
+msgstr "Android-liitännäinen"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:55
 msgid ""
-"Writing an Android plugin is now possible begining Godot 3.2. It's also "
-"pretty easy! Re-compiling the engine is no longer needed."
+"Writing an Android plugin is now possible, beginning with Godot 3.2. It's "
+"also pretty easy! Re-compiling the engine is no longer needed."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:57
@@ -175,7 +173,7 @@ msgid "Once created, there are certain rules to follow, but they are simple."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:64
-msgid "Android Directories"
+msgid "Android directories"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:66
@@ -300,11 +298,11 @@ msgstr ""
 msgid "A singleton object template follows:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:236
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:239
 msgid "Calling back to Godot"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:238
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:241
 msgid ""
 "Calling back to Godot from Java is a little more difficult. The instance ID "
 "of the script must be known first, this is obtained by calling "
@@ -312,53 +310,71 @@ msgid ""
 "passed to Java."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:243
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:246
 msgid ""
 "From Java, use the ``calldeferred`` function to communicate back with Godot. "
 "Java will most likely run in a separate thread, so calls are deferred:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:251
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:254
 msgid "Godot will detect this singleton and initialize it at the proper time."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:255
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:257
+msgid "Using it from GDScript"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:259
+msgid ""
+"First you will need to add your singleton into the android modules to be "
+"loaded. Go to \"Project > Project Settings\". Then on the tab \"General\" go "
+"to the \"Android\" section, and fill the Modules part with your module name. "
+"The module should include the full Java path. For our example: ``org/"
+"godotengine/godot/MySingleton``."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:265
+#, fuzzy
+msgid "Then, from your script:"
+msgstr "Skriptin rooli"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:274
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:258
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:277
 msgid "Godot crashes upon load"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:260
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:279
 msgid "Check ``adb logcat`` for possible problems, then:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:262
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:281
 msgid "Make sure libgodot_android.so is in the ``libs/armeabi`` folder"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:263
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:282
 msgid ""
 "Check that the methods used in the Java singleton only use simple Java "
 "datatypes, more complex ones are not supported."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:267
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:286
 msgid "Future"
 msgstr "Tuleva"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:269
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:288
 msgid ""
 "Godot has an experimental Java API Wrapper that allows to use the entire "
 "Java API from GDScript."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:272
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:291
 msgid "It's simple to use and it's used like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:278
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:297
 msgid ""
 "This is most likely not functional yet, if you want to test it and help us "
 "make it work, contact us on irc.freenode.org:#godotengine-devel."

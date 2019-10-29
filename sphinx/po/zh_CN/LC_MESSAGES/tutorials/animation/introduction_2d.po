@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:4
 msgid "Introduction to the 2D animation features"
-msgstr "2D动画特征介绍"
+msgstr "2D动画功能简介"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 msgid "Overview"
@@ -33,7 +33,7 @@ msgstr ":ref:`class_AnimationPlayer` 节点允许您创建从简单到复杂的�
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:12
 msgid "In this guide you learn to:"
-msgstr "在本指南中，您将学会:"
+msgstr "在本指南中，您将学会："
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:14
 msgid "Work with the Animation Panel"
@@ -52,16 +52,14 @@ msgid "Call functions with the powerful Call Function Tracks"
 msgstr "使用功能强大的Call Function Tracks调用函数"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:19
-#, fuzzy
 msgid ""
 "In Godot, you can animate anything available in the Inspector, such as Node "
 "transforms, sprites, UI elements, particles, visibility and color of "
 "materials, and so on. You can also modify values of script variables and "
 "call any function."
 msgstr ""
-"在Godot中，您可以为Inspector中找到的任何内容制作动画。 动画是属性随时间的变"
-"化。 这意味着您可以为自然界中的任何视觉效果设置动画:精灵，UI元素，粒子，可见"
-"性和纹理颜色。 但不仅如此。 您还可以控制与游戏相关的值并调用任何函数。"
+"在Godot中，你可以为属性面板中可用的任何内容设置动画。例如节点转换，子画面，UI"
+"元素，粒子，材质的可见性和颜色等等。您还可以修改脚本变量的值并调用任何函数。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:25
 msgid "Create an AnimationPlayer node"
@@ -88,20 +86,19 @@ msgid "The AnimationPlayer node"
 msgstr "AnimationPlayer节点"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:39
-#, fuzzy
 msgid ""
 "After creating one click on the AnimationPlayer node in the Node tab to open "
 "the Animation Panel at the bottom of the viewport."
-msgstr "单击Node选项卡中的AnimationPlayer节点，打开视图底部的动画面板。"
+msgstr ""
+"创建后，单击节点选项卡中的AnimationPlayer节点，打开视窗底部的动画面板。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:45
 msgid "The animation panel position"
 msgstr "动画面板位置"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:47
-#, fuzzy
 msgid "It consists of four parts:"
-msgstr "它由五部分组成:"
+msgstr "它由四部分组成："
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:52
 msgid "The animation panel"
@@ -109,7 +106,7 @@ msgstr "动画面板"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:54
 msgid "Animation controls (i.e. add, load, save, and delete animations)"
-msgstr "动画控件(即添加、加载、保存和删除动画)"
+msgstr "动画控件（即添加、加载、保存和删除动画）"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:55
 msgid "The tracks listing"
@@ -145,7 +142,7 @@ msgstr "关键帧定义属性在某一时间点的值。"
 msgid ""
 "Diamond shapes represent keyframes in the timeline. A line between two "
 "keyframes indicates that the value hasn't changed."
-msgstr ""
+msgstr "菱形代表时间轴中的关键帧。两个关键帧之间的线表示该值未更改。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:74
 msgid "Keyframes in Godot"
@@ -165,7 +162,7 @@ msgstr "只需两个关键帧就可以获得一个平滑运动"
 msgid ""
 "The timeline lets you insert keyframes and change their timing. It also "
 "defines how long the animation is."
-msgstr "时间轴可以插入关键帧并更改它们的时序。它还定义动画的时间。"
+msgstr "时间轴可以让你插入关键帧并更改它们的时序。它还定义动画的时间。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:90
 msgid "The timeline in the animation panel"
@@ -177,8 +174,8 @@ msgid ""
 "tracks reference node properties. Their name or id is a path to the node and "
 "the affected property."
 msgstr ""
-"动画面板的每一行都是一个动画轨道。普通和转换轨道参考节点属性。它们的名称或id"
-"是到节点和受影响属性的路径。"
+"动画面板的每一行都是一个动画轨道。普通和转换轨道引用节点属性。它们的名称或id"
+"是指向节点和受影响属性的路径。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:99
 msgid "Example of Normal animation tracks"
@@ -192,25 +189,23 @@ msgid ""
 "+D) to see the changes instantly."
 msgstr ""
 "如果您让错误的属性变成了动画，您可以随时编辑轨道的路径。双击它并输入新的路"
-"径。使用``从开始播放``按钮|从开始播放|(默认快捷方式:Shift+D) 播放动画，可以立"
+"径。使用“从开始播放”按钮|从开始播放|（默认快捷方式：Shift+D）播放动画，可以立"
 "即看到变化。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:109
 msgid "Tutorial: Creating a simple animation"
-msgstr "教程:创建一个简单的动画"
+msgstr "教程：创建一个简单的动画"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:112
 msgid "Scene setup"
-msgstr "建立场景"
+msgstr "场景设置"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:114
-#, fuzzy
 msgid ""
 "For this tutorial, we'll going to create an AnimationPlayer node and a "
 "sprite node as its child."
 msgstr ""
-"在本教程中，我们将创建一个AnimationPlayer节点和一个精灵节点作为"
-"AnimationPlayer节点的子节点。"
+"在本教程中，我们将创建一个AnimationPlayer节点和作为其子节点的Sprite节点。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:120
 msgid "Our scene setup"
@@ -564,9 +559,8 @@ msgid ""
 msgstr "当这个动作“看起来不正确”时，您通常会以这种方式调整您的动画。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:334
-#, fuzzy
 msgid "Advanced: Call Method tracks"
-msgstr "高级:调用Func轨道"
+msgstr "高级：调用方法轨道"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:336
 #, fuzzy
@@ -650,9 +644,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:383
+#, fuzzy
 msgid ""
 "When Godot reaches the keyframe, Godot calls the :ref:"
-"`class_AnimationPlayer` node's \"play\" function and the stream plays."
+"`class_AudioStreamPlayer` node's \"play\" function and the stream plays."
 msgstr ""
 "当Godot到达关键帧时，Godot调用 :ref:`class_AnimationPlayer`节点的“play”函数并"
 "播放流。"

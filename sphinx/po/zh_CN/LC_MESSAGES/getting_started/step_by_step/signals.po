@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,17 +32,16 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
-"信号是Godot版本的观察者模式。它允许一个节点发送消息到其他节点，令其他节点也可"
-"以监听和响应这个消息。举个示例，当按键按下时信号就会发出，而不是不停地检查按"
-"键是否被按压。"
+"信号是Godot的 *观察者* 模式的版本。它们允许一个节点发出其他节点可以监听和响应"
+"的消息。例如，与其持续检查按钮是否被按下，不如在按下按钮时发出信号。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"您可以在这里查看更多关于观察者模式: http://gameprogrammingpatterns.com/"
-"observer.html"
+"您可以在 `这里 <http://gameprogrammingpatterns.com/observer.html>`__ 阅读有关"
+"观察者模式的更多信息"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
 msgid ""
@@ -51,29 +50,31 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
-"信号是一种 *解耦* 游戏对象的方法，它使代码更有条理，更易于管理。我们可以发送"
-"任何关注的对象都能订阅并响应的信号，而不是强制游戏对象去期望其他对象始终存"
-"在。"
+"信号是一种使游戏对象 *解耦* 的方法，从而可以使代码组织得更好，更易于管理。游"
+"戏对象可以发出所有感兴趣的对象可以订阅并响应的信号，而非强制游戏对象期望其他"
+"对象始终存在。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
-msgstr "接下来您可以看到一些如何在自己的项目中使用信号的示例。"
+msgstr "接下来，您可以看到一些有关如何在自己的项目中使用信号的示例。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
 msgid "Timer example"
 msgstr "计时器示例"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
+#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
-"Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
-"<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
+"Create a new scene with a Node2D and two children: a Timer and a :ref:"
+"`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
-"要查看信号是如何工作的，我们可以尝试使用 :ref:`Timer <class_Timer>` 节点。使"
-"用一个节点和两个子节点来创建一个新场景：一个Timer，和一个 :ref:`Sprite "
-"<class_Sprite>` 。在场景驳接（ Scene dock）中，重命名节点为TimerExample。"
+"要查看信号如何工作，让我们尝试使用一个 :ref:`Timer <class_Timer>` 节点。使用"
+"一个 ``Node`` 和两个子节点：一个 ``Timer`` 和一个 :ref:`Sprite "
+"<class_Sprite>`，来创建一个新场景。在场景停靠面板中，重命名 ``Node`` 为 "
+"``TimerExample``。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -82,12 +83,13 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
-"对于精灵纹理来说，你可以使用Godot图标，或任何你喜欢的图片。通过在精灵的纹理属"
-"性下拉菜单中选择“加载”来实现。将脚本附加到根节点，现在不要向它添加任何代码。"
+"对于 ``Sprite`` 的纹理，可以使用Godot图标，或您喜欢的任何其他图像。为此，请"
+"在 ``Sprite`` 的 ``Texture`` 属性下拉菜单中选择 ``Load``。将脚本附加到根节"
+"点，但尚未添加任何代码。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
-msgstr "您的场景树应该是这样的:"
+msgstr "您的场景树应该是这样的："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:38
 msgid ""
@@ -95,8 +97,8 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
-"在Timer节点的属性中，勾选 *自动启动* 旁边的选框。这会令计时器在您运行场景时自"
-"动启动。您可以将 *等待时间* 保留为1秒。"
+"在 ``Timer`` 节点的属性中，勾选 *自动启动* 旁边的选框。这会令计时器在您运行场"
+"景时自动启动。您可以将 *等待时间* 保留为1秒。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:42
 msgid ""
@@ -105,88 +107,92 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
-"在 \"属性面板\" 选项卡旁边是一个标记为 \"节点\" 的标签。单击此选项卡，您将看"
-"到所选节点可以发出的所有信号。在计时器节点的情况下，我们关心的是\"超时\"。每"
+"在 \"属性检查器\" 选项卡旁边是一个标记为 \"节点\" 的选项卡。单击此选项卡，您"
+"将看到所选节点可以发出的所有信号。对于 ``Timer`` 节点，我们关注的是“超时”。每"
 "当计时器到达 ``0`` 时，就会发出这个信号。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
+#, fuzzy
 msgid ""
-"Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
-"following window, where you can define how you want to connect the signal:"
+"Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
+"the signals panel. You'll see the following window, where you can define how "
+"you want to connect the signal:"
 msgstr ""
-"点击 \"timeout()\" 信号，点击 \"Connect...\"。您将看到以下窗口，您可以在其中"
-"定义如何连接信号:"
+"点击 ``timeout()`` 信号，点击 ``连接到（Connect...）``。您将看到以下窗口，您"
+"可以在其中定义如何连接信号："
 
-#: ../../docs/getting_started/step_by_step/signals.rst:54
+#: ../../docs/getting_started/step_by_step/signals.rst:55
+#, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
-"that you want to \"listen\" for the signal. Note that the Timer node is red "
-"- this is *not* an error, but is a visual indication that it's the node that "
-"is emitting the signal. Select the root node."
+"that you want to \"listen\" for the signal. Note that the Timer node is "
+"blue, this is a visual indication that it's the node that is emitting the "
+"signal. Select the root node."
 msgstr ""
-"在左侧，您将看到您场景中的节点，并可以选择您想要“侦听”的节点信号。需要留意的"
-"是，定时器节点变红——这不是一个错误，但它是节点发出信号的视觉提示。选择根节"
-"点。"
+"在左侧，您将看到场景中的节点，并可以选择要“监听”信号的节点。请注意，"
+"``Timer`` 节点为红色——这 *不是* 错误，而是直观的指示，它是发出信号的节点。选"
+"择根节点。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:59
+#: ../../docs/getting_started/step_by_step/signals.rst:60
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr "目标节点 *必须* 附加一个脚本，否则您将收到一条错误消息。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:62
+#: ../../docs/getting_started/step_by_step/signals.rst:63
+#, fuzzy
 msgid ""
-"On the bottom of the window is a field labeled \"Method In Node\". This is "
+"On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"在窗口的底部有一个“节点中的方法”标签。这是您在目标节点脚本中要使用的函数名。"
-"默认情况下，Godot将会按命名规则' ' _on_<node_name>_<signal_name> ' ' '创建这"
-"个函数，但您可以按您的意愿更改它。"
+"窗口底部是一个标有“节点中方法”的字段。这是您要使用的目标节点脚本中的函数名"
+"称。默认情况下，Godot将使用命名约定 ``_on_<node_name>_<signal_name>`` 创建此"
+"函数，但是您可以根据需要更改它。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:67
+#: ../../docs/getting_started/step_by_step/signals.rst:68
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
-msgstr "单击“Connect”，您将看到该函数已在脚本中创建:"
+msgstr "单击 ``连接（Connect）``，您将看到该函数已在脚本中创建："
 
-#: ../../docs/getting_started/step_by_step/signals.rst:87
+#: ../../docs/getting_started/step_by_step/signals.rst:88
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
-"现在，我们可以将占位符代码替换为接收到信号时要运行的任何代码。让我们让精灵闪"
-"烁:"
+"现在，我们可以用接收信号时要运行的任何代码替换占位符代码。让我们让 "
+"``Sprite`` 闪烁一下："
 
-#: ../../docs/getting_started/step_by_step/signals.rst:111
+#: ../../docs/getting_started/step_by_step/signals.rst:112
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
-"运行这个场景，您会看到精灵每秒钟都在闪烁。您可以更改计时器的 *等待时间* 属性"
-"来改变这一点。"
+"运行场景，您将看到 ``Sprite`` 每秒闪烁一次。您可以更改计时器的 *等待时间* 属"
+"性来更改此设置。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:115
+#: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid "Connecting signals in code"
-msgstr "连接代码中的信号"
+msgstr "用代码连接信号"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:117
+#: ../../docs/getting_started/step_by_step/signals.rst:118
 msgid ""
 "You can also make the signal connection in code rather than with the editor. "
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
-"您还可以在代码中进行信号连接而不是在编辑器中。当您通过代码实例化节点时，您并"
-"不能使用编辑器进行连接，因此这通常是必要的。"
+"您还可以用在代码进行信号连接而不是用编辑器。当您通过代码实例化节点时，通常这"
+"是必需的，因为您无法使用编辑器进行连接。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:121
+#: ../../docs/getting_started/step_by_step/signals.rst:122
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
-msgstr "首先，在计时器的“节点”选项卡中选中’链接‘，并单击’断开连接‘来断开信号。"
+msgstr "首先，通过在 ``计时器`` 的“节点”选项卡中选择连接并点击断开来断开信号。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:126
+#: ../../docs/getting_started/step_by_step/signals.rst:127
 msgid ""
 "To make the connection in code, we can use the ``connect`` function. We'll "
 "put it in ``_ready()`` so that the connection will be made on run. The "
@@ -194,50 +200,50 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
-"要在代码中进行连接，我们可以使用 ``connect`` 函数。我们将把它放在 "
-"``_ready()`` 函数中，这样连接就会在运行时进行。函数的语法是 ``<source_node>."
-"connect(<signal_name>, <target_node>, <target_function_name>)`` 。下面是我们"
-"的计时器连接的代码:"
+"要使用代码进行连接，我们可以使用 ``connect`` 函数。将把它放在 ``_ready()`` 函"
+"数中，这样连接就会在运行时创建。函数的语法是 ``<source_node>."
+"connect(<signal_name>, <target_node>, <target_function_name>)``。下面是我们的"
+"计时器连接的代码："
 
-#: ../../docs/getting_started/step_by_step/signals.rst:159
+#: ../../docs/getting_started/step_by_step/signals.rst:160
 msgid "Custom signals"
 msgstr "自定义信号"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:161
+#: ../../docs/getting_started/step_by_step/signals.rst:162
 msgid "You can also declare your own custom signals in Godot:"
-msgstr "您也可以在Godot中声明您的的自定义信号:"
+msgstr "您还可以在Godot中声明自己的自定义信号："
 
-#: ../../docs/getting_started/step_by_step/signals.rst:179
+#: ../../docs/getting_started/step_by_step/signals.rst:180
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
-"一旦声明，您的自定义信号就会出现在属性面板中，并且可以用与节点内置信号以相同"
-"的方式进行连接。"
+"声明后，您的自定义信号将出现在检查器中，并且可以按照与节点的内置信号相同的方"
+"式进行连接。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:182
+#: ../../docs/getting_started/step_by_step/signals.rst:183
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "要通过代码发出信号，使用 ``emit_signal`` 函数:"
+msgstr "要通过代码发出信号，使用 ``emit_signal`` 函数："
 
-#: ../../docs/getting_started/step_by_step/signals.rst:208
+#: ../../docs/getting_started/step_by_step/signals.rst:209
 msgid "Conclusion"
 msgstr "总结"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:210
+#: ../../docs/getting_started/step_by_step/signals.rst:211
 msgid ""
 "Many of Godot's built-in node types provide signals you can use to detect "
 "events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
-"Godot的许多内置节点类型都提供可以用来检测事件的信号。例如，代表硬币的 :ref:"
+"Godot的许多内置节点类型提供了可用于检测事件的信号。例如，代表硬币的 :ref:"
 "`Area2D <class_Area2D>` 在游戏角色的物理体进入碰撞形状时发出 "
-"``body_entered`` 信号，让您知道游戏角色什么时候收集它。"
+"``body_entered`` 信号，让您知道游戏角色何时收集了它。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:215
+#: ../../docs/getting_started/step_by_step/signals.rst:216
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
-"在下一节 :ref:`doc_your_first_game` 中，您将构建一个完整的游戏，其中包括连接"
-"不同游戏组件的几种信号用法。"
+"在下一节 :ref:`doc_your_first_game` 中，您将构建一个完整的游戏，其中包括使用"
+"多种信号来连接不同的游戏组件。"

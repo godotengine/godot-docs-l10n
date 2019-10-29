@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/getting_source.rst:4
 msgid "Getting the source"
-msgstr ""
+msgstr "ソースの取得"
 
 #: ../../docs/development/compiling/getting_source.rst:7
 msgid "Downloading the Godot source code"
-msgstr ""
+msgstr "Godotのソースコードをダウンロードする"
 
 #: ../../docs/development/compiling/getting_source.rst:9
 msgid ""
@@ -31,6 +31,9 @@ msgid ""
 "<doc_introduction_to_the_buildsystem>` and compiling Godot, you need to "
 "actually download the Godot source code."
 msgstr ""
+":ref:`SConsビルドシステムに入り <doc_introduction_to_the_buildsystem>`\\  、"
+"Godotをコンパイルする前に、Godotソースコードを実際にダウンロードする必要があ"
+"ります。"
 
 #: ../../docs/development/compiling/getting_source.rst:12
 msgid ""
@@ -38,30 +41,41 @@ msgid ""
 "godot>`__ and while you can manually download it via the website, in general "
 "you want to do it via the ``git`` version control system."
 msgstr ""
+"ソースコードは\\ `GitHub <https://github.com/godotengine/godot>`_\\ で入手で"
+"きます。Webサイトから手動でダウンロードできますが、一般的には ``git`` バー"
+"ジョン管理システムを使用してダウンロードします。"
 
 #: ../../docs/development/compiling/getting_source.rst:16
 msgid ""
 "If you don't know much about ``git`` yet, there are a great number of "
 "`tutorials <https://git-scm.com/book>`__ available on various websites."
 msgstr ""
+"まだgitについてよく知らない場合は、さまざまなWebサイトで多数の\\ `チュートリ"
+"アル <https://git-scm.com/book>`_\\ を利用できます。"
 
 #: ../../docs/development/compiling/getting_source.rst:19
 msgid ""
 "In general, you need to install ``git`` and/or one of the various GUI "
 "clients."
 msgstr ""
+"一般に、 ``git`` やさまざまなGUIクライアントの1つをインストールする必要があり"
+"ます。"
 
 #: ../../docs/development/compiling/getting_source.rst:21
 msgid ""
 "Afterwards, to get the latest development version of the Godot source code "
 "(the unstable ``master`` branch), you can use ``git clone``."
 msgstr ""
+"その後、Godotソースコード(不安定な ``master`` ブランチ)の最新の開発バージョン"
+"を入手するために、 ``git clone`` を使うことができます。"
 
 #: ../../docs/development/compiling/getting_source.rst:24
 msgid ""
 "If you are using the ``git`` command line client, this is done by entering "
 "the following in a terminal:"
 msgstr ""
+"``git`` コマンドラインクライアントを使用している場合は、ターミナルに次のコマ"
+"ンドラインクライアントを入力します:"
 
 #: ../../docs/development/compiling/getting_source.rst:31
 msgid ""
@@ -70,14 +84,19 @@ msgid ""
 "want. You can then download and extract the source from the download link on "
 "the page."
 msgstr ""
+"安定版リリースの場合は、\\ `リリースページ <https://github.com/godotengine/"
+"godot/releases>`_\\ にアクセスして、目的のリリースのリンクをクリックします。"
+"次に、ページのダウンロードリンクからソースをダウンロードして抽出できます。"
 
 #: ../../docs/development/compiling/getting_source.rst:35
 msgid ""
 "There are also generally branches besides ``master`` for each major version."
-msgstr ""
+msgstr "通常、各メジャーバージョンには ``master`` 以外のブランチもあります。"
 
 #: ../../docs/development/compiling/getting_source.rst:37
 msgid ""
 "After downloading the Godot source code, you can :ref:`continue to compiling "
 "Godot <doc_introduction_to_the_buildsystem>`."
 msgstr ""
+"Godot のソース コードをダウンロードした後、\\ :ref:`Godotのコンパイルを続行で"
+"きます <doc_introduction_to_the_buildsystem>`\\ 。"

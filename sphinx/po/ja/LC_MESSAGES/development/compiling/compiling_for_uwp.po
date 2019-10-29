@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:4
 msgid "Compiling for Universal Windows Platform"
-msgstr ""
+msgstr "ユニバーサルWindowsプラットフォームのコンパイル"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:9
 msgid "Requirements"
@@ -28,6 +28,8 @@ msgstr "必要条件"
 #: ../../docs/development/compiling/compiling_for_uwp.rst:11
 msgid "SCons (see :ref:`doc_compiling_for_windows` for more details)."
 msgstr ""
+"SCons (詳細については、\\ :ref:`doc_compiling_for_windows`\\ を参照してくださ"
+"い)。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:12
 msgid ""
@@ -35,16 +37,22 @@ msgid ""
 "`doc_compiling_for_windows` about the caveats of installing it and the "
 "various prompts."
 msgstr ""
+"Visual Studio 2015 update2。以前のバージョンで動作する場合があります。インス"
+"トールの注意点とさまざまなプロンプトについては、\\ :ref:"
+"`doc_compiling_for_windows`\\ を参照してください。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:15
 msgid "Windows 10 SDK (can be selected in Visual Studio installation)."
-msgstr ""
+msgstr "Windows 10 SDK (Visual Studio のインストールで選択できます)。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:16
 msgid ""
 "`ANGLE source <https://github.com/Microsoft/angle>`__. Use the ``ms_master`` "
 "(default) branch. Keep it in a path without spaces to avoid problems."
 msgstr ""
+"`ANGLE source <https://github.com/Microsoft/angle>`_\\ 。ms_master(デフォル"
+"ト)ブランチを使用します。問題を避けるため、スペースのないパスに保管してくださ"
+"い。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:20
 msgid ""
@@ -62,6 +70,9 @@ msgid ""
 "you want to build. Check :ref:`doc_compiling_for_windows` to see how these "
 "prompts work."
 msgstr ""
+"ビルドするターゲットアーキテクチャに対して、適切な Visual Studioプロンプトを"
+"開く必要があります。これらのプロンプトがどのように動作するかを確認するに"
+"は、\\ :ref:`doc_compiling_for_windows`\\ をチェックしてください。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:30
 msgid ""
@@ -69,6 +80,9 @@ msgid ""
 "and ARM (32-bits). For the latter, you can run ``vcvarsall.bat`` with "
 "``x86_arm`` or ``amd64_arm`` as argument to set the environment."
 msgstr ""
+"UWPには、x86(32ビット)、x64(64ビット)、ARM(32ビット)の3つのターゲットアーキテ"
+"クチャがあります。後者の場合、 ``x86_arm`` または ``amd64_arm`` を引数として "
+"``vcvarsall.bat`` を実行して、環境を設定できます。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:34
 msgid ""
@@ -76,15 +90,19 @@ msgid ""
 "source code. The build process will also build ANGLE to produce the required "
 "DLLs for the selected architecture."
 msgstr ""
+"ANGLEソースコードをダウンロードしたディレクトリに ``ANGLE_SRC_PATH`` を設定し"
+"ます。ビルドプロセスでは、選択したアーキテクチャに必要なDLLを生成するために"
+"ANGLEも構築されます。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:38
 msgid ""
 "Once you're set, run the SCons command similarly to the other platforms::"
 msgstr ""
+"設定が完了したら、SConsコマンドを他のプラットフォームと同様に実行します:"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:43
 msgid "Creating UWP export templates"
-msgstr ""
+msgstr "UWPエクスポートテンプレートの作成"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:45
 msgid ""
@@ -92,16 +110,21 @@ msgid ""
 "You need all three architectures with ``debug`` and ``release`` templates to "
 "be able to export."
 msgstr ""
+"エディタを使用してエクスポートするには、テンプレートを適切にビルドする必要が"
+"あります。エクスポートするには、 ``debug`` と ``release`` テンプレートを持つ "
+"3 つのアーキテクチャがすべて必要です。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:49
 msgid ""
 "Open the command prompt for one architecture and run SCons twice (once for "
 "each target)::"
 msgstr ""
+"1つのアーキテクチャのコマンドプロンプトを開き、SConsを2回実行します(ターゲッ"
+"トごとに1回):"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:55
 msgid "Repeat for the other architectures."
-msgstr ""
+msgstr "他のアーキテクチャについても同じ手順を繰り返します。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:57
 msgid ""
@@ -109,6 +132,8 @@ msgid ""
 "like ``godot.uwp.opt.debug.32.x86.exe`` (with variations for each target/"
 "arch)."
 msgstr ""
+"最後に ``bin`` フォルダには ``godot.uwp.opt.debug.32.x86.exe`` (ターゲット/"
+"アーチごとに異なる)という名前の ``.exe`` バイナリが入っています。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:61
 msgid ""
@@ -118,12 +143,19 @@ msgid ""
 "``x64`` or ``ARM``), get the ``libEGL.dll`` and the ``libGLESv2.dll``, "
 "putting them along with the executable."
 msgstr ""
+"これらのいずれかをGodotソースフォルダ内の ``misc/dist/uwp_template`` にコピー"
+"し、バイナリの名前を ``godot.uwp.exe`` に変更します。ANGLEソースから、 "
+"``winrt/10/src/Release _% arch%`` (ここで、 ``%arch%`` は ``Win32`` 、 "
+"``x64`` または ``ARM`` です。)で ``libEGL.dll`` と ``libGLESv2.dll`` を取得"
+"し、実行ファイルとともに配置します。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:67
 msgid ""
 "Add the files in the ``uwp_template`` folder to a ZIP. Rename the resulting "
 "Zip according to the target/architecture of the template::"
 msgstr ""
+"``uwp_template`` フォルダ内のファイルをZIPに追加します。テンプレートのター"
+"ゲット/アーキテクチャに従って、結果の Zip の名前を変更します:"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:77
 msgid ""
@@ -133,10 +165,13 @@ msgid ""
 "of Godot 3. If you don't want to replace the templates, you can set the "
 "\"Custom Package\" property in the export window."
 msgstr ""
+"これらのテンプレートをGodot 設定パスの ``[バージョン名]\\templates`` フォルダ"
+"に移動します。テンプレートを置き換えたくない場合は、エクスポートウィンドウで"
+"「カスタム パッケージ」プロパティを設定できます。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:84
 msgid "Running UWP apps with Visual Studio"
-msgstr ""
+msgstr "Visual Studioを使用してUWPアプリを実行する"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:86
 msgid ""
@@ -145,6 +180,9 @@ msgid ""
 "the easiest way if you are testing on a device such as a Windows Phone or an "
 "Xbox One."
 msgstr ""
+"UWPポートをデバッグする場合、またはパッケージ化と署名なしでアプリを実行する場"
+"合は、Visual Studioを使用してアプリをデプロイして起動できます。Windows Phone"
+"やXbox Oneなどのデバイスでテストを行う場合は、最も簡単な方法です。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:91
 msgid ""
@@ -152,6 +190,9 @@ msgid ""
 "``install.bat`` script file. This will install the Visual Studio project "
 "templates for ANGLE apps."
 msgstr ""
+"ANGLEソースフォルダ内で ``templates`` を開き、 ``install.bat`` スクリプトファ"
+"イルをダブルクリックします。ANGLEアプリのVisual Studioプロジェクト テンプレー"
+"トがインストールされます。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:95
 msgid ""
@@ -160,6 +201,10 @@ msgid ""
 "also need to build it for ARM if you plan to run on a device. You can also "
 "use MSBuild if you're comfortable with the command line."
 msgstr ""
+"Godotをまだビルドしていない場合は、ANGLEソースから ``winrt/10/src/angle."
+"sln`` ソリューションを開き、Release/Win32ターゲットにビルドします。デバイスで"
+"実行する場合は、ARM用にビルドする必要がある場合もあります。コマンドラインに慣"
+"れていれば、MSBuildを使用することもできます。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:100
 msgid ""
@@ -183,6 +228,9 @@ msgid ""
 "the Godot executable for UWP you have. In the \"Properties\" window, set "
 "\"Content\" to ``True`` so it's included in the project."
 msgstr ""
+"同じ「バイナリ」フィルタで、「追加> 既存のアイテム」 を選択し、使用している"
+"UWPのGodot実行可能ファイルをポイントします。「プロパティ」ウィンドウで、プロ"
+"ジェクトに含まれるように「コンテンツ」を ``True`` に設定します。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:114
 msgid ""
@@ -193,6 +241,12 @@ msgid ""
 "the ``EntryPoint`` attribute to ``GodotUWP.App``. This will ensure that the "
 "Godot executable is correctly called when the app starts."
 msgstr ""
+"``Package.appxmanifest`` ファイルを右クリックして、「アプリケーションから開"
+"く...> XML（テキスト）エディター」を選択します。 ``Package/Applications/"
+"Application`` 要素で、 ``Executable`` 属性を ``$targetnametoken$.exe`` から "
+"``godot.uwp.exe`` (またはGodot実行可能ファイルが呼び出されるもの)に置き換えま"
+"す。 また、 ``EntryPoint`` 属性を ``GodotUWP.App`` に変更します。 これによ"
+"り、アプリの起動時にGodot実行可能ファイルが正しく呼び出されます。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:121
 msgid ""
@@ -202,6 +256,11 @@ msgid ""
 "> Existing Item\" command and set their \"Content\" property to ``True`` so "
 "they're copied to the app."
 msgstr ""
+"Visual Studioプロジェクトフォルダに ``game`` という名前のフォルダ(フィルタ\\ "
+"*ではない*\\ ) を作成し、 ``data.pck`` ファイルまたはGodotプロジェクトファイ"
+"ルを配置できます。その後、必ず[追加 > 既存のアイテム] コマンドですべてを含"
+"め、アプリにコピーできるように「コンテンツ」プロパティを ``True`` に設定しま"
+"す。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:127
 msgid ""
@@ -211,6 +270,11 @@ msgid ""
 "by right-clicking the project (*not* the solution) in the \"Solution Explorer"
 "\" and selecting \"Build\"."
 msgstr ""
+"ワークフローを容易にするために、「ソリューションプロパティ」を開き、「構成」"
+"セクションでアプリの「ビルド」オプションのチェックを解除します。必要なファイ"
+"ルを生成するには、少なくとも1回ビルドする必要がありますが、[ソリューション エ"
+"クスプローラ] でプロジェクト(ソリューション\\ *ではない*\\ ) を右クリックし、"
+"「ビルド」を選択します。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:133
 msgid ""
@@ -218,3 +282,5 @@ msgid ""
 "the \"Start Without Debugging\" from the \"Debug\" menu (Ctrl+F5) to make it "
 "launch faster."
 msgstr ""
+"これで、プロジェクトを実行するだけで、アプリが開きます。「デバッグ」メニュー"
+"(Ctrl+F5)の「デバッグなしで開始」を使用して、起動を高速化することもできます。"

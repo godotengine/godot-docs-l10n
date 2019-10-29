@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,15 +26,14 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "A file system manages how assets are stored and how they are accessed. A "
 "well-designed file system also allows multiple developers to edit the same "
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
-"文件系统也是游戏引擎开发的热门话题之一。文件系统掌管着资源(assets)的存取。一"
-"个好的文件系统能让团队中的成员们共同编辑相同的源文件和资源。"
+"文件系统管理资源的存储方式和访问方式。精心设计的文件系统还允许多个开发人员在"
+"协作时编辑相同的源文件和资源。Godot将所有资源作为文件存储在其文件系统中。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
@@ -50,27 +49,23 @@ msgid ""
 "resources. For example, a font resource is often bundled together with the "
 "font textures."
 msgstr ""
-"文件系统将资源(resources)存储在硬盘上。无论是某一个脚本(script)、还是某一个场"
-"景(scene)、抑或是某一张PNG图片，任何东西，对于Godot引擎来说,都是一个资源"
-"(resource)。如果一个资源包含着一些指向硬盘上的其他资源的属性(properties)，那"
-"么指向那些资源的路径(paths)也同样包含在该资源当中。如果一个资源内建有一些子资"
-"源(sub-resources)，那么所有的子资源都会和它一起打包在一个文件当中。"
+"文件系统将资源存储在磁盘上。从脚本到场景或PNG图像的任何内容都是引擎的资源。如"
+"果一个资源包含引用磁盘上其他资源的属性，则它还将包括这些资源的路径。如果一个"
+"资源具有内置的子资源，则该资源与所有捆绑的子资源一起保存在单个文件中。例如，"
+"字体资源通常与字体纹理捆绑在一起。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
-#, fuzzy
 msgid ""
 "The Godot file system avoids using metadata files. Existing asset managers "
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
-"总的来讲，Godot的文件系统并未使用元数据文件，理由很简单，现在的各种资源管理系"
-"统和版本控制系统都远比我们自己实现的要好得多，所以Godot尽量去参与到SVN, Git, "
-"Mercurial, Perforce等当中。"
+"Godot文件系统避免使用元数据文件。现有的资源管理器和VCS比我们能够实现的任何东"
+"西都要好，因此Godot会尽力与SVN、Git、Mercurial、Perforce等一起使用。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:28
-#, fuzzy
 msgid "Example of file system contents:"
-msgstr "举个示例，一个文件系统内有:"
+msgstr "文件系统内容示例："
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:39
 msgid "project.godot"
@@ -82,9 +77,8 @@ msgid ""
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
-"文件project.godot是一个项目描述文件，您总能在当前项目的根目录下找到它。事实"
-"上，Godot正是根据它的位置定义当前项目根目录的位置。这正是在您打开某个项目时，"
-"Godot最先寻找的文件。"
+"``project.godot`` 文件是项目描述文件，可以始终在项目的根目录下找到。实际上，"
+"其位置定义了根的位置。这是Godot打开项目时要查找的第一个文件。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
 msgid ""
@@ -92,8 +86,8 @@ msgid ""
 "ini format. Even an empty project.godot can function as a basic definition "
 "of a blank project."
 msgstr ""
-"这个文件是一个普通的文本文件，以win.ini的格式写着当前项目的各种配置信息。即使"
-"是一个空的project.godot文件也可做为某个空项目的基本定义。"
+"该文件使用 ``win.ini`` 格式以纯文本格式包含项目配置。甚至一个空的 ``project."
+"godot`` 都可以用作空项目的基本定义。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:50
 msgid "Path delimiter"
@@ -106,9 +100,9 @@ msgid ""
 "``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
 "godot``."
 msgstr ""
-"Godot只支持用 ``/`` 做路径分隔符。这是为了最求更好的可移植性。所有的操作系统"
-"都支持它，就算是Windows，所以像是 ``c:\\project\\project.godot`` 这种路径，在"
-"Godot中必须写作 ``c:/project/project.godot`` 。"
+"Godot只支持用 ``/`` 做路径分隔符。这样做出于可移植性的原因。所有操作系统甚至"
+"Windows都支持此功能，因此诸如 ``c:\\project\\project.godot`` 之类的路径需要键"
+"入为 ``c:/project/project.godot``。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:58
 msgid "Resource path"
@@ -120,17 +114,16 @@ msgid ""
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
 "`` was created."
 msgstr ""
-"当您需要去取用资源时，使用主机操作系统的文件系统布局可能会又繁琐又导致项目不"
-"可移植。为了解决这个问题，我们创建了专有路径 ``res://`` 。"
+"访问资源时，使用主机OS文件系统布局可能很麻烦且不可移植。为了解决这个问题，创"
+"建了特殊路径 ``res://``。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
-#, fuzzy
 msgid ""
 "The path ``res://`` will always point at the project root (where project."
 "godot is located, so ``res://project.godot`` is always valid)."
 msgstr ""
-"路径``res://``将始终指向项目根(project.godot所在的位置, 因此实际上``res://"
-"project.godot``始终有效)。"
+"路径 ``res://`` 将始终指向项目根目录（``project.godot`` 所在的位置，因此 "
+"``res://project.godot`` 将始终有效）。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
 msgid ""
@@ -139,38 +132,37 @@ msgid ""
 "phones or consoles, or running from DVD), the file system will become read-"
 "only and writing will no longer be permitted."
 msgstr ""
-"只有在从编辑器本地运行项目时, 此文件系统才是读写的。导出或在不同设备 (如手机"
-"或控制台) 上运行时, 文件系统将变为只读, 不再允许写入。"
+"仅当从编辑器本地运行项目时，此文件系统才是读写的。导出时或在其他设备（例如电"
+"话或控制台，或从DVD运行）上运行时，文件系统将变为只读状态，并且将不再允许写"
+"入。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:74
 msgid "User path"
 msgstr "用户路径"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
-#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
 "special path ``user://`` that is always writable."
 msgstr ""
-"对于保存游戏状态或下载内容包等各种任务, 通常仍然需要写入磁盘。为此, 引擎确保"
-"有一个始终可写的特殊路径``user://``。"
+"诸如保存游戏状态或下载内容包之类的任务仍需要写入磁盘。为此，引擎确保存在始终"
+"可写的特殊路径 ``user://``。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:81
 msgid "Host file system"
 msgstr "主机文件系统"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
-#, fuzzy
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
 "on all platforms. However, using host file system paths can be useful when "
 "writing development tools in Godot."
 msgstr ""
-"或者, 也可以使用主机文件系统路径, 但不建议对已发布的产品使用此路径, 因为不能"
-"保证这些路径在所有平台上都能正常工作。但是, 在 godot 中编写开发工具时, 使用主"
-"机文件系统路径非常有用!"
+"另外，也可以使用主机文件系统路径，但是不建议将其用于已发布的产品，因为不能保"
+"证这些路径在所有平台上都可以使用。但是，在Godot中编写开发工具时，使用主机文件"
+"系统路径可能会很有用。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:89
 msgid "Drawbacks"
@@ -184,9 +176,9 @@ msgid ""
 "These references will have to be re-defined to point at the new asset "
 "location."
 msgstr ""
-"这种简单的文件系统设计有一些缺点。第一个问题是, 移动资源 (重命名它们或将它们"
-"从项目内的一个路径移动到另一个路径) 将破坏对这些资源的现有引用。必须重新定义"
-"这些引用, 以指向新的资源位置。"
+"这种简单的文件系统设计有一些缺点。第一个问题是，资源四处移动（重新命名资源或"
+"将其从项目中的一条路径移动到另一条路径）将破坏现有对这些资源的引用。这些引用"
+"将必须重新定义以指向新资源的位置。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:96
 msgid ""
@@ -195,12 +187,11 @@ msgid ""
 "dependencies will have to be fixed manually (Godot detects this and helps "
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
-"若要避免这种情况, 请在文件系统面板上的Godot内执行所有操作、删除和重命名操作。"
-"永远不要从Godot外部移动资源, 否则必须手动修复依赖项(Godot检测到这一点, 并帮助"
-"您修复它们, 但为什么要走艰难的路线？)。"
+"为避免这种情况，请在Godot中的文件系统停靠面板上，进行所有移动、删除和重命名操"
+"作。切勿从Godot外部移动资源，否则必须手动修复依赖关系（Godot会检测到此问题并"
+"帮助您修复它们，但是为什么要走这条艰难的路线呢？）。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:101
-#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -209,18 +200,17 @@ msgid ""
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
-"第二种情况是, 在Windows和macOS文件和路径名下不区分大小写。如果在不区分大小写"
-"的主机文件系统中工作的开发人员将资源另存为“myfile.PNG”, 但随后将其引用"
-"为“myfile.png”, 它将在他们的平台上正常工作, 但在其他平台上不行, 如Linux、"
-"Android等。这也可能适用于导出的二进制文件, 这些二进制文件使用压缩包来存储所有"
-"文件。"
+"第二个是在Windows和macOS下，文件名和路径名不区分大小写。如果开发人员在不区分"
+"大小写的主机文件系统中工作，将资源保存为 ``myfile.PNG``，然后将其引用为 "
+"``myfile.png``，则该资源将在该平台上正常工作，但在其他平台（例如Linux、"
+"Android等）上无法正常工作。这也适用于导出的二进制文件，该文件使用压缩包存储所"
+"有文件。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:107
-#, fuzzy
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot. One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
-"建议您的团队在使用Godot时明确定义文件的命名约定!一个简单的万无一失的约定是只"
-"允许小写文件和路径名。"
+"建议您的团队在使用Godot一起工作时明确定义文件的命名约定。一种简单的万无一失的"
+"约定是仅允许使用小写的文件名和路径名。"

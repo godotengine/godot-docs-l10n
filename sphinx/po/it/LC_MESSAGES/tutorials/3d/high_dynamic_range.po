@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:27
 msgid ""
 "This means that some transformation of the scene light intensity, also known "
-"as _scene referred_ light ratios, need to be transformed and mapped to fit "
+"as scene-referred light ratios, need to be transformed and mapped to fit "
 "within the particular output range of the chosen display. This can be most "
 "easily understood if we consider virtually photographing our game engine "
 "scene through a virtual camera. Here, our virtual camera would apply a "
@@ -125,9 +125,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:75
-#, fuzzy
 msgid "There are two ways to do this:"
-msgstr "Non ci sono restrizioni di utilizzo per Godot"
+msgstr "Ci sono due modi per farlo:"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:78
 msgid "sRGB transfer function to display linear ratios on image import"

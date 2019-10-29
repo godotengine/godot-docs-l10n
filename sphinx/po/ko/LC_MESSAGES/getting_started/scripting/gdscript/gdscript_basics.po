@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1295,7 +1295,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:619
 msgid "Constants"
-msgstr "상수(Constant)"
+msgstr "상수"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:621
 msgid ""
@@ -1336,6 +1336,13 @@ msgid ""
 msgstr ""
 "이넘에 이름을 전달하면, 이넘은 해당 이름의 상수 딕셔너리 안에 모든 키를 넣습"
 "니다."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:652
+msgid ""
+"In Godot 3.1 and later, keys in a named enum are not registered as global "
+"constants. They should be accessed prefixed by the enum's name (``Name."
+"KEY``); see an example below."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:672
 msgid "Functions"

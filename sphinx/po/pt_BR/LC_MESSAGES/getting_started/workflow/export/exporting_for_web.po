@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -188,54 +188,56 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
 msgid ""
-"On export, several text placeholders are replaced in the **generated HTML "
-"file** specifically for the given export options. It must not be reused in "
-"further exports."
+"Each project must generate their own HTML file. On export, several text "
+"placeholders are replaced in the **generated HTML file** specifically for "
+"the given export options. Any direct modifications to the **generated HTML "
+"file** will be lost in future exports. To customize the generated file, see :"
+"ref:`doc_customizing_html5_shell`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid "Boot splash is not displayed"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:104
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:103
 msgid ""
 "The default HTML page does not display the boot splash while loading. "
 "However, the image is exported as a PNG file, so :ref:`custom HTML pages "
 "<doc_customizing_html5_shell>` can display it."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:108
 msgid "Unimplemented functionality"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:111
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:110
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
 msgid "Threads"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
 msgid "GDNative"
 msgstr "GDNative"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
 msgid "C#"
 msgstr "C#"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 msgid "Clipboard synchronisation between engine and operating system"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:118
 msgid ""
 "Check the `list of open HTML5 issues on Github <https://github.com/"
 "godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`__ to see "
@@ -243,32 +245,32 @@ msgid ""
 "to communicate your interest."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:124
 msgid "Serving the files"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:127
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid ""
 "Exporting for the web generates several files to be served from a web "
 "server, including a default HTML page for presentation. A custom HTML file "
 "can be used, see :ref:`doc_customizing_html5_shell`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:131
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:130
 msgid ""
 "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache "
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
 "never depended on by default."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:135
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
 msgid ""
 "The HTML page draws the game at maximum size within the browser window. This "
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
 "common on most web game hosting sites."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:139
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:138
 msgid ""
 "The other exported files are served as they are, next to the ``.html`` file, "
 "names unchanged. The ``.wasm`` file is a binary WebAssembly module "
@@ -279,20 +281,20 @@ msgid ""
 "`custom HTML pages <doc_customizing_html5_shell>`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:147
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:146
 msgid ""
 "The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
 "`application/wasm`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:151
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:150
 msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:155
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:154
 msgid ""
 "Delivering the files with server-side compression is recommended especially "
 "for the ``.pck`` and ``.wasm`` files, which are usually large in size. The "
@@ -300,35 +302,35 @@ msgid ""
 "its original size with gzip compression."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:160
 msgid "Export options"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:163
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:162
 msgid ""
 "If a runnable web export template is available, a button appears between the "
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
 "the game in the default browser for testing."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:167
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:166
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:169
 msgid ""
 "**Head Include** is appended into the ``<head>`` element of the generated "
 "HTML page. This allows to, for example, load webfonts and third-party "
 "JavaScript APIs, include CSS, or run JavaScript code."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:177
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:176
 msgid "Calling JavaScript from script"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:178
 msgid ""
 "In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
@@ -337,35 +339,35 @@ msgid ""
 "possible with script languages integrated into Godot."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:190
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:189
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:192
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:195
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:195
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:204
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:207
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:206
 msgid ""
 "HTML5 export templates may be built without support for the singleton. With "
 "such templates, and on platforms other than HTML5, calling ``JavaScript."
@@ -373,13 +375,13 @@ msgid ""
 "checked with the ``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:220
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:219
 msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:223
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:222
 msgid ""
 "The ``eval`` method also accepts a second, optional Boolean argument, which "
 "specifies whether to execute the code in the global execution context, "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,19 +174,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
-#, fuzzy
 msgid ""
 "Press \"Play\" and notice that all of the instanced balls are now much more "
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
-"Avaa ``Ball`` skene ja vaihda ``Bounce`` ominaisuus Tarkastelijassa arvoon "
-"`1`. Paina \"Pelaa\" ja huomaa kuinka pallojen ilmentymät ovat nyt paljon "
+"Paina \"Pelaa\" ja huomaa kuinka pallojen ilmentymät ovat nyt paljon "
 "kimpoavampia. Koska pallojen ilmentymät perustuvat tallennettuun skeneen, "
 "muutokset tuohon skeneen vaikuttavat kaikkiin ilmentymiin."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
@@ -195,8 +192,11 @@ msgid ""
 "its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
 "Voit säätää myös yksittäisiä ilmentymiä. Aseta kimpoavuus takaisin arvoon "
-"``0.5`` ja valitse sen jälkeen yksi pallon ilmentymä ``Main`` skenessä. "
-"Aseta sen ``Bounce`` arvoon ``1`` ja paina \"Pelaa\"."
+"``0`` ja valitse sen jälkeen yksi pallon ilmentymä ``Main`` skenessä. "
+"Sellaiset resurssit kuten ``PhysicsMaterial`` ovat aina oletusarvoisesti "
+"jaettuja resurssien välillä, joten meidän täytyy tehdä siitä uniikki. "
+"Napsauta nuolta alas ja valitse \"Tee ainutlaatuinen\". Aseta sen ``Bounce`` "
+"arvoon ``1`` ja paina \"Pelaa\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:115
 msgid ""
@@ -219,7 +219,6 @@ msgid "Conclusion"
 msgstr "Lopputulos"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:125
-#, fuzzy
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "

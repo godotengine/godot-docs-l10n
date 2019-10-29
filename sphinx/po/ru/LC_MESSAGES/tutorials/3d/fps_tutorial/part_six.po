@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1239,22 +1239,28 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:951
 msgid ""
+"We add the ``new_audio`` into the ``created_audio`` list to hold all created "
+"audios."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:953
+msgid ""
 "We then call ``play_sound``, passing in the audio clip associated with "
 "``sound_name`` and the sound position."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:955
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:957
 msgid ""
 "Before we leave ``Globals.gd``, we need to add a few lines of code to "
 "``load_new_scene`` so when the player changes scenes, all the audio is "
 "destroyed."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:957
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:959
 msgid "Add the following to ``load_new_scene``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:966
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:968
 msgid ""
 "Now, before ``Globals.gd`` changes scenes, it goes through each simple audio "
 "player in ``created_sounds`` and frees/destroys them. Once ``Globals.gd`` "
@@ -1263,7 +1269,7 @@ msgid ""
 "destroyed) simple audio players."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:971
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:973
 msgid ""
 "Let's change ``create_sound`` in ``Player.gd`` to use this new system. "
 "First, remove ``simple_audio_player`` from ``Player.gd``'s class variables "
@@ -1271,17 +1277,17 @@ msgid ""
 "gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:974
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:976
 msgid "Now, change ``create_sound`` to the following:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:981
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:983
 msgid ""
 "Now, whenever ``create_sound`` is called, we simply call ``play_sound`` in "
 "``Globals.gd``, passing in all the arguments received."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:985
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:987
 msgid ""
 "Now all the sounds in our FPS can be played from anywhere. All we have to do "
 "is get the ``Globals.gd`` singleton, and call ``play_sound``, pass in the "
@@ -1289,7 +1295,7 @@ msgid ""
 "the position from which to play the sound."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:988
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:990
 msgid ""
 "For example, if you want to play an explosion sound when the grenade "
 "explodes you'd need to add a new sound to ``audio_clips`` in ``Globals.gd``, "
@@ -1299,74 +1305,74 @@ msgid ""
 "the bodies within its blast radius."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:994
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:996
 msgid "Final notes"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:998
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1000
 msgid "Now you have a fully working single player FPS!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1000
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1002
 msgid ""
 "At this point, you have a good base to build more complicated FPS games."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1002
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1004
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1004
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1006
 msgid ""
 "You can download the finished project for the entire tutorial here: :"
 "download:`Godot_FPS_Part_6.zip <files/Godot_FPS_Finished.zip>`"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1006
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1008
 msgid ""
 "The finished project source files contain the same code, just written in a "
 "different order. This is because the finished project source files are what "
 "the tutorial is based on."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1009
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1011
 msgid ""
 "The finished project code was written in the order that features were "
 "created, not necessarily in a order that is ideal for learning."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1012
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1014
 msgid ""
 "Other than that, the source is exactly the same, just with helpful comments "
 "explaining what each part does."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1015
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1017
 msgid ""
 "The finished project source is hosted on Github as well: https://github.com/"
 "TwistedTwigleg/Godot_FPS_Tutorial"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1017
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1019
 msgid ""
 "**Please note that the code in Github may or may not be in sync with the "
 "tutorial in the documentation**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1019
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1021
 msgid ""
 "The code in the documentation is likely better managed and/or more up to "
 "date. If you are unsure of which to use, use the project(s) provided in the "
 "documentation, as they are maintained by the Godot community."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1022
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1024
 msgid ""
 "You can download all the ``.blend`` files used in this tutorial here: :"
 "download:`Godot_FPS_BlenderFiles.zip <files/Godot_FPS_BlenderFiles.zip>`"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1024
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1026
 msgid ""
 "All assets provided in the started assets (unless otherwise noted) were "
 "**originally created by TwistedTwigleg, with changes/additions by the Godot "
@@ -1374,7 +1380,7 @@ msgid ""
 "under the ``MIT`` license."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1027
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1029
 #, fuzzy
 msgid ""
 "Feel free to use these assets however you want! All original assets belong "
@@ -1384,14 +1390,14 @@ msgstr ""
 "Можете использовать эти ассеты как захотите! Все оригинальные материалы "
 "принадлежат сообществу Godot, с остальными в списке  ниже:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1029
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1031
 msgid ""
 "The skybox is created by **StumpyStrust** and can be found at OpenGameArt."
 "org. https://opengameart.org/content/space-skyboxes-0 . The skybox is "
 "licensed under the ``CC0`` license."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1032
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1034
 #, fuzzy
 msgid ""
 "The font used is **Titillium-Regular**, and is licensed under the ``SIL Open "
@@ -1400,19 +1406,19 @@ msgstr ""
 "Использовался шрифт **Titillium-Regular**, под лицензией ``SIL Open Font "
 "License, Version 1.1``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1034
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1036
 msgid ""
 "The skybox was converted to a 360 equirectangular image using this tool: "
 "https://www.360toolkit.co/convert-cubemap-to-spherical-equirectangular.html"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1036
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1038
 msgid ""
 "While no sounds are provided, you can find many game ready sounds at https://"
 "gamesounds.xyz/"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1038
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1040
 msgid ""
 "**OpenGameArt.org, 360toolkit.co, the creator(s) of Titillium-Regular, "
 "StumpyStrust, and GameSounds.xyz are in no way involved in this tutorial.**"

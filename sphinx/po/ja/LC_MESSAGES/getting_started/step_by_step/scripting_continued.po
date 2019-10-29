@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,10 +48,13 @@ msgid ""
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
+"メソッドNode._process（）がスクリプトにそんざいすると、アイドル処理がアクティ"
+"ブになります。 Node.set_process（）関数を使用して、オンとオフを切り替えること"
+"ができます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "このメソッドはフレームが描画されるたびに呼ばれます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -59,6 +62,9 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"_process（）が呼び出される頻度は、アプリケーションが実行されている1秒あたりの"
+"フレーム数（FPS）に依存します。このレートは、時間とデバイスによって異なりま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -66,6 +72,8 @@ msgid ""
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
+"この変動を管理しやすくするために、デルタパラメーターには、_process（）の前回"
+"の呼び出し以降の経過時間（秒単位）が浮動小数点として含まれています。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -112,6 +120,8 @@ msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
+"次のスクリプトを使用して、ひとつのLabelノードを持つシーンを作成すると、動作中"
+"の_process（）関数を簡単に確認できます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -128,12 +138,18 @@ msgid ""
 "for organizing large scenes. There are two ways to add nodes to groups. The "
 "first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
+"Godotのグループは、他のソフトウェアのタグのように機能します。ノードは、必要な"
+"数だけグループに追加できます。これは、大きなシーンを整理するのに便利な機能で"
+"す。グループにノードを追加するには2つの方法があります。 1つ目は、[ノード]パネ"
+"ルの下の[グループ]ボタンを使用したUIからです。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"2番目の方法はコードからです。次のスクリプトは、シーンツリーに表示されるとすぐ"
+"に現在のノードを敵グループに追加します。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -141,6 +157,8 @@ msgid ""
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_method_call_group>`:"
 msgstr ""
+"このようにして、プレイヤーが秘密の基地に忍び込んでいることが発見された場合、"
+"SceneTree.call_group（）を使用して、すべての敵にアラーム音が通知されます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
 msgid ""
@@ -156,6 +174,8 @@ msgid ""
 "ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
+"またSceneTree.get_nodes_in_group（）を呼び出して、敵のノードの完全なリストを"
+"取得することもできます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
 msgid ""
@@ -165,6 +185,10 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you have some time!"
 msgstr ""
+"SceneTreeクラスは、シーン、ノードの階層、ノードのグループとの対話など、多くの"
+"便利なメソッドを提供します。シーンを簡単に切り替えたり、リロードしたり、ゲー"
+"ムを終了したり、一時停止したり、一時停止を解除したりできます。興味深いシグナ"
+"ルもあります。時間があればぜひご覧ください！"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 msgid "Notifications"
@@ -178,6 +202,10 @@ msgid ""
 "`Object._notification() <class_Object_method__notification>` function in "
 "your script:"
 msgstr ""
+"Godotには通知システムがあります。これらは低レベルであり、それらのほとんどに仮"
+"想機能が提供されているため、通常はスクリプトには必要ありません。それらが存在"
+"することを知っていれば良いのです。たとえば、スクリプトにObject."
+"_notification（）関数を追加できます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid ""
@@ -216,6 +244,8 @@ msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
+"コードからノードを作成するには、他のクラスベースのデータ型と同様に、.new（）"
+"メソッドを呼び出します。例えば："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
 msgid ""
@@ -230,6 +260,9 @@ msgid ""
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
+"ノードが解放されると、そのすべての子ノードも解放されます。このため、ノードを"
+"手動で削除するのは見た目よりずっと簡単です。ベースノードを解放すると、サブツ"
+"リー内のその他すべてのものがなくなります。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
@@ -248,6 +281,8 @@ msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
+"ノードを削除する最も安全な方法は、Node.queue_free（）を使用することです。これ"
+"により、アイドル中にノードが安全に消去されます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
 msgid "Instancing scenes"
@@ -266,6 +301,7 @@ msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
+"プロフラムの解析時に動作するため、プリロードはより便利です（GDScriptのみ）："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
 msgid ""
@@ -275,6 +311,10 @@ msgid ""
 "must be called. This will return the tree of nodes that can be added to the "
 "active scene:"
 msgstr ""
+"しかし、シーンはまだノードではありません。 PackedSceneと呼ばれる特別なリソー"
+"スにパックされています。実際のノードを作成するには、PackedScene.instance（）"
+"関数を呼び出す必要があります。これにより、アクティブシーンに追加できるノード"
+"のツリーが返されます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid ""
@@ -290,7 +330,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "スクリプトをクラスとして登録する"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
 msgid ""
@@ -298,6 +338,9 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
+"Godotには、エディターに個々のスクリプトを登録するための「スクリプトクラス」機"
+"能があります。デフォルトでは、ファイルを直接ロードすることでのみ名前のないス"
+"クリプトにアクセスできます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
 msgid ""
@@ -306,17 +349,23 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
+"class_nameキーワードの後にクラスの名前を付けて、スクリプトに名前を付けて、エ"
+"ディターにタイプとして登録できます。スクリプトに名前の後にカンマとアイコンと"
+"して使用する画像のパスを追加できます。これで、ノードまたはリソース作成ダイア"
+"ログで新しいタイプを見ることができます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
 msgid "In Godot 3.1:"
-msgstr ""
+msgstr "Godot 3.1の場合:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"スクリプトを登録できるのは、GDScriptおよびNativeScript、つまりC++およびその他"
+"のGDNativeを使用した言語のみです。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
 msgid "Only GDScript creates global variables for each named script."
-msgstr ""
+msgstr "GDScriptのみが、名前付きスクリプトごとにグローバル変数を作成します。"

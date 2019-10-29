@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:96
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:120
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:140
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:222
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:160
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:242
 msgid "**Good**:"
 msgstr "**Bom**:"
 
@@ -92,8 +93,9 @@ msgstr "**Bom**:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:106
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:150
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:230
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:170
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:250
 msgid "**Bad**:"
 msgstr "**Ruim**:"
 
@@ -147,10 +149,21 @@ msgstr ""
 "a legibilidade."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:135
+#, fuzzy
+msgid "Comment spacing"
+msgstr "Comentários"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+msgid ""
+"Normal comments should start with a space, but comments which are disabled "
+"code should not. This helps differentiate text comments from disabled code."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:155
 msgid "Whitespace"
 msgstr "Espaço em branco"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:157
 msgid ""
 "Always use one space around operators and after commas. Avoid extra spaces "
 "in dictionary references and function calls, or to create \"columns.\""
@@ -159,16 +172,16 @@ msgstr ""
 "espaços extras em referências de dicionário e chamadas de função ou crie "
 "\"colunas.\""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:160
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:180
 msgid "**NEVER**:"
 msgstr "**NUNCA**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:169
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:189
 #, fuzzy
 msgid "Naming conventions"
 msgstr "Convenções de nomes"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:171
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:191
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, which is ugly."
@@ -177,29 +190,29 @@ msgstr ""
 "fazer com que o seu código brigue com as convenções de nomeação embutidas, o "
 "que é feio."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:196
 #, fuzzy
 msgid "Classes and nodes"
 msgstr "Classes e Nós"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:198
 msgid "Use PascalCase: ``extends KinematicBody``"
 msgstr "Utilize PascalCase: ``extends KinematicBody``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:180
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:200
 msgid "Also when loading a class into a constant or variable:"
 msgstr "Inclusive ao carregar uma classe em uma constante ou variável:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:187
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:207
 #, fuzzy
 msgid "Functions and variables"
 msgstr "Funções e Variáveis"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:189
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:209
 msgid "Use snake\\_case: ``get_node()``"
 msgstr "Utilize snake\\_case: ``get_node()``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:191
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:211
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods (functions the user "
 "must override), private functions, and private variables: ``func _ready()``"
@@ -208,19 +221,19 @@ msgstr ""
 "usuário deve sobrescrever), funções privadas e variáveis privadas: ``func "
 "_ready()``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:196
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:216
 msgid "Signals"
 msgstr "Sinais"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:198
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:218
 msgid "Use past tense:"
 msgstr "Utilize o tempo pretérito:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:206
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:226
 msgid "Constants"
 msgstr "Constantes"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:208
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:228
 msgid ""
 "Use CONSTANT\\_CASE, all caps, with an underscore (\\_) to separate words: "
 "``const MAX_SPEED = 200``"
@@ -228,35 +241,35 @@ msgstr ""
 "Utilize CONSTANT\\_CASE, com todas as letras maiúsculas e um sublinhado para "
 "separas as palavras: ``const MAX_SPEED = 200``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:212
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:232
 #, fuzzy
 msgid "Static typing"
 msgstr "Funções estáticas"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:214
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:234
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:217
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:237
 #, fuzzy
 msgid "Type hints"
 msgstr "Tipo"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:219
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:239
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:264
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr ""

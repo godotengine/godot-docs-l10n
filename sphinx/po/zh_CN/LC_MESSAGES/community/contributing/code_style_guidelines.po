@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,9 +29,9 @@ msgid ""
 "best setup your system as outlined below to ensure all your commits follow "
 "the guidelines."
 msgstr ""
-"在贡献给Godot的源代码时，您需要遵循下面概述的样式指南。其中一些是通过持续集成"
-"过程进行检查的，评审人员将要求您修复潜在的问题，因此最好按照下面概述的方式设"
-"置系统，以确保所有提交都遵循指导原则。"
+"在给Godot的源代码做贡献时，您需要遵循下面概述的样式指南。其中一些是通过持续集"
+"成过程进行检查的，评审人员将要求您修复潜在的问题，因此最好按照下面概述的方式"
+"设置系统，以确保所有提交都遵循指导原则。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:15
 msgid "C++ and Objective-C"
@@ -46,16 +46,16 @@ msgid ""
 msgstr ""
 "没有书面的指导方针，但是开发人员默认的代码风格是通过 `clang-format <http://"
 "clang.llvm.org/docs/ClangFormat.html>`__ 代码美化器强制执行的，它可以满足我们"
-"所有的约定。举几个示例:"
+"所有的约定。举几个示例："
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:22
 msgid ""
 "Indentation and alignment are both tab based (respectively one and two tabs)"
-msgstr "缩进和对齐都是基于标签的(分别是一个和两个标签)"
+msgstr "缩进和对齐都是基于制表符的(分别是一个和两个制表符)"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:23
 msgid "One space around math and assignments operators as well as after commas"
-msgstr "数学和作业运算符以及逗号后面的一个空格"
+msgstr "数学和赋值运算符以及逗号后面有一个空格"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:24
 msgid ""
@@ -65,7 +65,7 @@ msgstr "指针和引用运算符附加到变量标识符，而不是类型名称
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:26
 msgid "See further down regarding header includes"
-msgstr "有关标题包括，请参见下文"
+msgstr "有关标头引入，请参见下文"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:28
 msgid ""
@@ -73,8 +73,8 @@ msgid ""
 "github.com/godotengine/godot/blob/master/.clang-format>`__ file of the Godot "
 "repository."
 msgstr ""
-"clang格式使用的规则在Godot存储库的 `.clang-format <https://github.com/"
-"godotengine/godot/blob/master/.clang-format>`__ 文件中列出。"
+"Clang格式使用的规则在Godot存储库的 `.clang-format <https://github.com/"
+"godotengine/godot/blob/master/.clang-format>`__ 文件中进行了概述。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:32
 msgid ""
@@ -85,8 +85,8 @@ msgid ""
 "all your commits."
 msgstr ""
 "只要您确保您的样式与周围的代码匹配，并且您没有引入尾随空格或基于空格的缩进，"
-"您应该没问题。 如果您计划定期投稿，我们强烈建议您在本地设置clang-format以检查"
-"并自动修复所有提交。"
+"就应该没问题。 但如果您计划定期贡献，我们强烈建议您在本地设置clang-format以检"
+"查并自动修复所有提交。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:37
 msgid ""
@@ -96,9 +96,9 @@ msgid ""
 "own style guides (or lack thereof), and don't want to introduce differences "
 "that would make syncing with upstream repositories harder."
 msgstr ""
-"Godot的代码风格应该*不适用于第三方代码，即包含在Godot的源代码树中，但不是专门"
-"为我们的项目编写的。 这样的代码通常来自不同的上游项目，具有自己的样式指南(或"
-"缺少样式指南)，并且不希望引入会使上游存储库同步变得更难的差异。"
+"Godot的代码风格应该 *不* 适用于第三方代码，即包含在Godot的源代码树中，但不是"
+"专门为我们的项目编写的代码。这样的代码通常来自不同的上游项目，具有自己的样式"
+"指南(或缺少样式指南)，并且不希望引入会使上游存储库同步变得更难的差异。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:44
 msgid ""
@@ -109,25 +109,24 @@ msgid ""
 "clang-format to ignore a chunk of code."
 msgstr ""
 "第三方代码通常包含在 ``thirdparty /`` 文件夹中，因此可以轻松地从格式化脚本中"
-"排除。 对于需要将第三方代码段直接包含在Godot文件中的极少数情况，您可以使用 "
-"``/* clang-format off  */`` 和 ``/* clang-format on */`` 来告诉clang-format忽"
-"略一大块代码。"
+"排除。对于需要将第三方代码段直接包含在Godot文件中的极少数情况，您可以使用 ``/"
+"* clang-format off */`` 和 ``/* clang-format on */`` 来告诉clang-format忽略一"
+"个代码块。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:52
 msgid "Using clang-format locally"
-msgstr "在本地使用clang格式"
+msgstr "在本地使用clang-format"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:54
-#, fuzzy
 msgid ""
 "First of all, you will need to install clang-format. As of now, you need to "
 "use **clang-format 8.x** to be compatible with Godot's format. Later "
 "versions might be suitable, but previous versions had bugs that will cause "
 "formatting changes to the current code base."
 msgstr ""
-"首先，您需要安装clang-format。 截至目前，您需要使用** clang-format 6.x **与"
-"Godot的格式兼容。 更高版本可能是合适的，但以前的版本有错误，将导致格式更改当"
-"前代码库。"
+"首先，您需要安装clang-format。截至目前，您需要使用 **clang-format 8.x** 与"
+"Godot的格式兼容。更高版本可能是合适的，但以前的版本有错误，将导致当前代码库的"
+"格式更改。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:60
 msgid "Installation"
@@ -135,7 +134,7 @@ msgstr "安装"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:62
 msgid "Here's how to install clang-format:"
-msgstr "以下是如何安装clang-format:"
+msgstr "以下是如何安装clang-format："
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:64
 msgid ""
@@ -145,10 +144,10 @@ msgid ""
 "releases.llvm.org/download.html>`__, or if you are on a Debian derivative, "
 "use the `upstream repos <http://apt.llvm.org/>`__."
 msgstr ""
-"Linux:它通常可以通过您的发行版打包的clang工具链开箱即用。 如果您的发行版不是"
-"必需的版本，您可以从 `LLVM网站 <http://releases.llvm.org/download.html>`__ 下"
-"载预编译版本，或者如果您使用的是Debian衍生版本， 使用 `upstream repos "
-"<http://apt.llvm.org/>`__。"
+"Linux：通常会随您的发行版打包的clang工具链一起提供。如果您的分发版本不是必需"
+"的版本，您可以从 `LLVM网站 <http://releases.llvm.org/download.html>`__ 下载预"
+"编译的版本，或者，如果您使用的是Debian衍生版本，请使用 `上游仓库 <http://apt."
+"llvm.org/>`__。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:69
 msgid ""
@@ -157,14 +156,14 @@ msgid ""
 "path to the binary's folder to your system's ``PATH`` environment variable "
 "to be able to call ``clang-format`` out of the box."
 msgstr ""
-"macOS和Windows:您可以从 `LLVM网站 <http://releases.llvm.org/download."
-"html>`__ 下载预编译的二进制文件。 您可能需要将二进制文件夹的路径添加到系统的 "
-"``PATH`` 环境变量中，以便能够开箱即可调用 ``clang-format`` 。"
+"macOS和Windows：您可以从 `LLVM网站 <http://releases.llvm.org/download."
+"html>`__ 下载预编译的二进制文件。您可能需要将二进制文件的文件夹的路径添加到系"
+"统的 ``PATH`` 环境变量中，以便能够直接调用 ``clang-format``。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:74
 msgid ""
 "You then have different possibilities to apply clang-format to your changes:"
-msgstr "然后，您可以将clang-format应用于更改:"
+msgstr "然后，您就有不同的可能性将clang-format应用于您的更改："
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:77
 msgid "Manual usage"
@@ -174,14 +173,14 @@ msgstr "手动使用"
 msgid ""
 "You can apply clang-format manually one or more files with the following "
 "command:"
-msgstr "您可以使用以下命令手动应用clang-format一个或多个文件:"
+msgstr "您可以使用以下命令手动将clang-format应用于一个或多个文件："
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:86
 msgid ""
 "``-i`` means that the changes should be written directly to the file (by "
 "default clang-format would only output the fixed version to the terminal)."
 msgstr ""
-"``-i``表示更改应直接写入文件(默认情况下，clang-format只会将固定版本输出到终"
+"``-i`` 表示更改应直接写入文件(默认情况下，clang-format只会将固定版本输出到终"
 "端)。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:88
@@ -191,9 +190,9 @@ msgid ""
 "don't run clang-format on compiled objects (.o and .a files) that are in "
 "Godot's tree. So better use ``core/*.{cpp,h}`` than ``core/*``."
 msgstr ""
-"该路径可以指向多个文件，可以是一个接一个，也可以使用通配符(如典型的Unix "
-"shell)。 在globbing时要小心，这样就不会在Godot树中的编译对象(.o和.a文件)上运"
-"行clang-format。 所以最好使用``core / *。{cpp，h}``而不是``core / *``。"
+"该路径可以指向几个文件，一个接一个，也可以使用如在典型的Unix shell中的通配"
+"符。在通配时要小心，以免对Godot树中的已编译对象(.o和.a文件)运行clang格式。因"
+"此，最好使用 ``core/*.{cpp,h}`` 而不是 ``core/*``。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:94
 msgid "Pre-commit hook"
@@ -205,16 +204,16 @@ msgid ""
 "format automatically on all your commits to check them, and let you apply "
 "its changes in the final commit."
 msgstr ""
-"为了便于使用，我们为Git提供了一个预提交挂钩，它将在所有提交中自动运行clang-"
-"format以检查它们，并允许您在最终提交中应用其更改。"
+"为了易于使用，我们为Git提供了一个预提交钩子，它将在您的所有提交上自动运行"
+"clang-format来检查它们，并允许您在最终提交中应用其更改。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:100
 msgid ""
 "This \"hook\" is a script which can be found in ``misc/hooks``, refer to "
 "that folder's README.md for installation instructions."
 msgstr ""
-"这个``钩子``是一个可以在``misc / hooks``中找到的脚本，请参阅该文件夹的README."
-"md以获取安装说明。"
+"这个 ``钩子`` 是一个可以在 ``misc/hooks`` 中找到的脚本，请参阅该文件夹的"
+"README.md以获取安装说明。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:103
 msgid ""
@@ -223,9 +222,9 @@ msgid ""
 "hook was tested on Linux and macOS, but should also work in the Git Shell on "
 "Windows."
 msgstr ""
-"如果您的clang格式不在 ``PATH`` 中，您可能需要编辑 ``pre-commit-clang-"
-"format`` 来指向正确的二进制格式才能工作。 钩子在Linux和macOS上测试过，但也应"
-"该在Windows上的Git Shell中运行。"
+"如果您的clang-format不在 ``PATH`` 中，您可能需要编辑 ``pre-commit-clang-"
+"format`` 来指向正确的二进制格式才能工作。钩子在Linux和macOS上测试过，但也应该"
+"在Windows上的Git Shell中运行。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:109
 msgid "IDE plugin"
@@ -236,68 +235,69 @@ msgid ""
 "Most IDEs or code editors have beautifier plugins that can be configured to "
 "run clang-format automatically, for example each time you save a file."
 msgstr ""
-"大多数IDE或代码编辑器都有美化插件，可以配置为自动运行clang格式，例如每次保存"
-"文件时。"
+"大多数IDE或代码编辑器都有美化插件，可以配置为自动运行clang-format，例如每次保"
+"存文件时。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:114
 msgid "Here is a non-exhaustive list of beautifier plugins for some IDEs:"
-msgstr "以下是某些IDE的美化插件的非详尽列表:"
+msgstr "以下是一些IDE的美化插件的非详尽列表："
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:116
 msgid ""
 "Qt Creator: `Beautifier plugin <http://doc.qt.io/qtcreator/creator-"
 "beautifier.html>`__"
 msgstr ""
-"Qt Creator: `美化插件 <http://doc.qt.io/qtcreator/creator-beautifier.html>`__"
+"Qt Creator： `美化插件 <http://doc.qt.io/qtcreator/creator-beautifier."
+"html>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:117
 msgid ""
 "Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
 "items?itemName=xaver.clang-format>`__"
 msgstr ""
-"Visual Studio Code: `Clang-格式 <https://marketplace.visualstudio.com/items?"
-"itemName=xaver.clang-format>`__"
+"Visual Studio Code： `Clang-Format <https://marketplace.visualstudio.com/"
+"items?itemName=xaver.clang-format>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:118
 msgid ""
 "Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
 "itemName=LLVMExtensions.ClangFormat>`__"
 msgstr ""
-"Visual Studio: `Clang格式 <https://marketplace.visualstudio.com/items?"
+"Visual Studio： `ClangFormat <https://marketplace.visualstudio.com/items?"
 "itemName=LLVMExtensions.ClangFormat>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:119
 msgid "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
-msgstr "vim: `vim-clang-格式 <https://github.com/rhysd/vim-clang-format>`__"
+msgstr "vim： `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:121
 msgid "(Pull requests welcome to extend this list with tested plugins.)"
-msgstr "(拉请求欢迎使用经过测试的插件扩展此列表。)"
+msgstr "(欢迎拉取请求以使用测试过的插件来扩展此列表。)"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:124
 msgid "Header includes"
-msgstr "标题包括"
+msgstr "标头引入"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:126
 msgid ""
 "When adding new C++ or Objective-C files or including new headers in "
 "existing ones, the following rules should be followed:"
 msgstr ""
-"添加新的C++或Objective-C文件或在现有文件中包含新标头时，应遵循以下规则:"
+"当添加新的C++或Objective-C文件或在现有文件中引入新的标头时，应遵循以下规则："
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:129
 msgid ""
 "The first lines in the file should be Godot's copyright header and MIT "
 "license, copy-pasted from another file. Make sure to adjust the filename."
 msgstr ""
-"文件中的第一行应该是Godot的版权标题和MIT许可证，从另一个文件复制粘贴。 确保调"
+"文件中的第一行应该是Godot的版权标头和MIT许可证，从另一个文件复制粘贴。确保调"
 "整文件名。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:131
 msgid ""
 "In a ``.h`` header, include guards should be used with the form "
 "``FILENAME_H``."
-msgstr "在 ``.h`` 头文件中，include guard应该与 ``FILENAME_H`` 形式一起使用。"
+msgstr "在 ``.h`` 头文件中，引入防护应该与 ``FILENAME_H`` 形式一起使用。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:134
 msgid ""
@@ -305,8 +305,8 @@ msgid ""
 "one where the class is declared (e.g. ``#include \"filename.h\"``), followed "
 "by an empty line for separation."
 msgstr ""
-"在 ``.cpp`` 文件中(例如 ``filename.cpp`` )，第一个include应该是声明类的那个"
-"(例如 ``#include“filename.h”`` )，然后是 空行分离。"
+"在 ``.cpp`` 文件(如 ``filename.cpp`` )中，第一个引入应该是声明类的那个(例如 "
+"``#include \"filename.h\"``)，然后使用空行分隔。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:137
 msgid ""
@@ -316,9 +316,9 @@ msgid ""
 "The block of Godot header includes should then be followed by an empty line "
 "for separation."
 msgstr ""
-"然后来自Godot自己的代码库的标题，按字母顺序(由`clang-format``强制执行)包含相"
-"对于根文件夹的路径。 这些包括应该用引号来完成，例如 ``#include“core / object."
-"h”``。 然后应该在一个空行之后进行分离。"
+"然后来自Godot自己的代码库的标头，按字母顺序(由 ``clang-format`` 强制)引入，并"
+"具有相对于根文件夹的路径。这些引入应该用引号来完成，例如 ``#include \"core/"
+"object.h\"``。然后，Godot标头引入的块应用一个空行以进行分隔。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:142
 msgid ""
@@ -327,8 +327,8 @@ msgid ""
 "g. ``#include <png.h>``. The block of thirdparty headers should also be "
 "followed by an empty line for separation."
 msgstr ""
-"最后，第三方标题(来自 ``thirdparty`` 或来自系统的包含路径)接下来应该包含在<和"
-">符号中，例如 ``#include <png.h>``。 第三方标题块后面还应跟一个空行进行分隔。"
+"最后，第三方标头(来自 ``第三方`` 或系统的引入路径)接下来应该在<和>符号中引"
+"入，例如 ``#include <png.h>``。第三方标头块后面还应跟一个空行进行分隔。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:146
 msgid ""
@@ -336,12 +336,12 @@ msgid ""
 "them, i.e. in the `.h` header if used in the declarative code or in the `."
 "cpp` if used only in the imperative code."
 msgstr ""
-"Godot和第三方标题应该包含在需要它们的文件中，即如果在声明性代码中使用`.h`标"
-"题，或者如果仅在命令式代码中使用则在`.cpp`中。"
+"Godot和第三方标头应该在需要它们的文件中引入，即如果在声明性代码中使用则在 `."
+"h` 头文件中引入，或者如果仅在命令式代码中使用则在 `.cpp` 中引入。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:150
 msgid "Example:"
-msgstr "例:"
+msgstr "示例："
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:238
 msgid "Java"
@@ -354,9 +354,9 @@ msgid ""
 "that this style guide only applies to code written and maintained by Godot, "
 "not thirdparty code such as the ``java/src/com/google`` subfolder."
 msgstr ""
-"Godot的Java代码(主要在``platform / android``中)也通过``clang-format``强制执"
-"行，因此请参阅上面的说明进行设置。 请记住，此样式指南仅适用于Godot编写和维护"
-"的代码，而不适用于第三方代码，例如``java / src / com / google``子文件夹。"
+"Godot的Java代码(主要在 ``platform/android`` 中)也通过 ``clang-format`` 强制执"
+"行格式化，因此请参阅上面的说明进行设置。请记住，此样式指南仅适用于Godot编写和"
+"维护的代码，而不适用于第三方代码，例如 ``java/src/com/google`` 子文件夹。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:246
 msgid "Python"
@@ -377,5 +377,5 @@ msgid ""
 "`autopep8 <https://pypi.org/project/autopep8/>`__."
 msgstr ""
 "对于那些，我们遵循 `PEP-8样式指南 <https://www.python.org/dev/peps/pep-0008/"
-">`__ ，但这并不像C++代码那样强制执行。 如果您如此倾向，可以使用 `autopep8 "
+">`__ ，但这并不像C++代码那样强制执行。如果您如此倾向，可以使用 `autopep8 "
 "<https://pypi.org/project/autopep8/>`__ 来检查和格式化您的Python更改。"

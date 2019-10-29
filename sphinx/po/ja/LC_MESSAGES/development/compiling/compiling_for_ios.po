@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:4
 msgid "Compiling for iOS"
-msgstr ""
+msgstr "\\ iOS用のコンパイル"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:9
 msgid "Requirements"
@@ -30,6 +30,8 @@ msgid ""
 "SCons (you can get it from macports, you should be able to run ``scons`` in "
 "a terminal when installed)"
 msgstr ""
+"SCons(macportsから取得できます。インストールすると、ターミナルで `` scons`` "
+"を実行できるはずです)"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:13
 msgid ""
@@ -49,24 +51,28 @@ msgstr "コンパイル"
 #: ../../docs/development/compiling/compiling_for_ios.rst:21
 msgid "Open a Terminal, go to the root dir of the engine source code and type:"
 msgstr ""
+"ターミナルを開き、エンジンソースコードのルートディレクトリに移動し、次のよう"
+"に入力します:"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:27
 msgid "for a debug build, or:"
-msgstr ""
+msgstr "デバッグビルドの場合、または次の場合:"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:33
 msgid ""
 "for a release build (check ``platform/iphone/detect.py`` for the compiler "
 "flags used for each configuration)."
 msgstr ""
+"リリース ビルドの場合 (各構成で使用されるコンパイラフラグについては、 "
+"``platform/iphone/detect.py`` を参照してください)。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:36
 msgid "Alternatively, you can run"
-msgstr ""
+msgstr "または、次の操作を実行できます"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:42
 msgid "for a Simulator executable."
-msgstr ""
+msgstr "シミュレータ実行可能ファイルの場合。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:44
 msgid ""
@@ -100,6 +106,8 @@ msgid ""
 "To run on a device or simulator, follow these instructions: :ref:"
 "`doc_exporting_for_ios`."
 msgstr ""
+"デバイスまたはシミュレーターで実行するには、次の手順に従います:\\  :ref:"
+"`doc_exporting_for_ios`\\ 。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:71
 msgid ""
@@ -107,3 +115,5 @@ msgid ""
 "\"executable name\" property on Info.plist accordingly if you use an "
 "alternative build."
 msgstr ""
+"実行可能ファイルをXcodeプロジェクトに置き換えたり追加したり、代替ビルドを使用"
+"する場合は、それに応じてInfo.plist の「実行可能名」プロパティを変更します。"

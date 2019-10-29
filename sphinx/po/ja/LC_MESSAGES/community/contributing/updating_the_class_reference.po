@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:4
 msgid "Contribute to the Class Reference"
-msgstr ""
+msgstr "クラスリファレンスへの貢献"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:6
 msgid ""
@@ -36,6 +36,10 @@ msgid ""
 "write the entire reference on their own. Godot needs you, and all of us, to "
 "contribute."
 msgstr ""
+"しかし、それは不完全です。メソッド、変数、シグナルの中には、説明がないものも"
+"あります。最近のリリースで変更され、更新が必要なものもあります。開発者だけで"
+"リファレンス全体を作成することはできません。Godotには、あなたと私たちのすべて"
+"の貢献が必要です。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:12
 msgid ""
@@ -44,6 +48,9 @@ msgid ""
 "comment in an existing one) to let others know so they don't start working "
 "on the same thing too."
 msgstr ""
+"**重要:**\\ 大規模な変更や大きな貢献を計画している場合は、問題(または既存の1"
+"のコメント)を作成して他の人に知らせ、同じ作業を開始しないようにすることをお勧"
+"めします。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:15
 msgid ""
@@ -53,7 +60,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:19
 msgid "How to contribute"
-msgstr ""
+msgstr "貢献する方法"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:21
 msgid ""
@@ -61,30 +68,35 @@ msgid ""
 "repository: `doc/classes/ <https://github.com/godotengine/godot/tree/master/"
 "doc/classes>`_."
 msgstr ""
+"クラスリファレンスは、GodotのGitHubリポジトリにある次のXMLファイルにありま"
+"す: `ドキュメント/クラス/ <https://github.com/godotengine/godot/tree/master/"
+"doc/classes>`_\\ 。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:23
 msgid "There are 5 steps to update the class reference (full guide below):"
 msgstr ""
+"クラスリファレンスを更新するには、次の5つの手順があります(以下の完全なガイ"
+"ド):"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:25
 msgid "Fork `Godot's repository <https://github.com/godotengine/godot>`_"
-msgstr ""
+msgstr "フォーク `Godotのリポジトリ <https://github.com/godotengine/godot>`_"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:26
 msgid "Clone your fork on your computer"
-msgstr ""
+msgstr "コンピュータでフォークのクローンを作成する"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:27
 msgid "Edit the class file in ``doc/classes/`` to write documentation"
-msgstr ""
+msgstr "``doc/classes/`` でクラス ファイルを編集してドキュメントを作成する"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:28
 msgid "Commit your changes and push them to your fork"
-msgstr ""
+msgstr "変更をコミットし、フォークにプッシュする"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:29
 msgid "Make a pull request on the Godot repository"
-msgstr ""
+msgstr "Godotリポジトリでプルリクエストを行う"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:31
 msgid ""
@@ -93,28 +105,35 @@ msgid ""
 "hosted in the `godot-docs <https://github.com/godotengine/godot-docs>`_ "
 "repository."
 msgstr ""
+"APIリファレンスを編集するには、常にこれらのXMLファイルを使用してください。\\ "
+"`godot-docs <https://github.com/godotengine/godot-docs>`_\\ リポジトリでホス"
+"トされている\\ :ref:`オンラインドキュメントで <toc-class-ref>`\\ 生成された."
+"rstファイルを編集しないでください。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:34
 msgid "Get started with GitHub"
-msgstr ""
+msgstr "GitHubを使い始める"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:36
 msgid ""
 "If you're new to git and GitHub, this guide will help you get started. "
 "You'll learn to:"
 msgstr ""
+"GitとGitHubを使用するのが初めての場合は、このガイドを参考にしてください。次の"
+"方法について学習します:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:38
 msgid "Fork and clone Godot's repository"
-msgstr ""
+msgstr "フォークとクローンGodotのリポジトリ"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:39
 msgid "Keep your fork up to date with other contributors"
-msgstr ""
+msgstr "他の貢献者とあなたのフォークを最新の状態に保つ"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:40
 msgid "Create a pull request so your improvements end in the official docs"
 msgstr ""
+"プルリクエストを作成して、公式ドキュメントで改善が終了できるようにします"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:42
 msgid ""
@@ -122,18 +141,22 @@ msgid ""
 "`GitHub's interactive guide <https://try.github.io/levels/1/challenges/1>`_. "
 "You'll learn some essential vocabulary and get a sense for the tool."
 msgstr ""
+"Godotが使用するバージョン管理システムであるgitを初めて使用する場合は、`GitHub"
+"のインタラクティブガイド <https://try.github.io/levels/1/challenges/1>`_\\ を"
+"ご覧ください。 いくつかの重要な語彙を学び、ツールの意味が理解できるようになり"
+"ます。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:45
 msgid "Fork Godot"
-msgstr ""
+msgstr "フォーク Godot"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:47
 msgid "Fork the Godot Engine into a GitHub repository of your own."
-msgstr ""
+msgstr "Godotエンジンを独自のGitHubリポジトリにフォークします。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:49
 msgid "Clone the repository on your computer:"
-msgstr ""
+msgstr "コンピュータ上にリポジトリのクローンを作成します:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:55
 msgid ""
@@ -141,16 +164,21 @@ msgid ""
 "your improvements with other docs writers, and it's easier to cleanup your "
 "repository clean if you have any issues with git."
 msgstr ""
+"新しいブランチを作成して、変更を加えます。 改善点を他のドキュメントライターと"
+"同期するのがはるかに簡単になり、gitに問題がある場合はリポジトリをクリーンアッ"
+"プするのが簡単になります。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:61
 msgid ""
 "The new branch is the same as your master branch, until you start to write "
 "API docs. In the ``doc/`` folder, you'll find the class reference."
 msgstr ""
+"新しいブランチは、APIドキュメントの作成を開始するまで、masterブランチと同じで"
+"す。 ``doc/`` フォルダには、クラス参照が表示されます。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:64
 msgid "How to keep your local clone up-to-date"
-msgstr ""
+msgstr "ローカルのクローンを最新の状態に保つ方法"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:66
 msgid ""
@@ -158,16 +186,21 @@ msgid ""
 "will fall behind it, and you'll have to synchronize it. Especially if other "
 "contributors update the class reference while you work on it."
 msgstr ""
+"他の人々もGodotのドキュメントに貢献しています。ローカルリポジトリではその貢献"
+"が反映されない為、能動的に同期する必要があります。特に、作業中に他の貢献者が"
+"クラス参照を更新した場合には注意してください。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:68
 msgid ""
 "First add an ``upstream`` git *remote* to work with. Remotes are links to "
 "online repositories you can download new files from."
 msgstr ""
+"まず、 ``upstream`` のgit\\ *リモート*\\ を追加します。「Remotes」 は、新しい"
+"ファイルをダウンロードできるオンライン・リポジトリへのリンクです。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:74
 msgid "You can check the list of all remote servers with:"
-msgstr ""
+msgstr "すべてのリモート サーバーの一覧を次のように確認できます:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:80
 msgid ""
@@ -180,18 +213,24 @@ msgid ""
 "Each time you want to sync your branch to the state of the upstream "
 "repository, enter:"
 msgstr ""
+"ブランチをアップストリームリポジトリの状態に同期するたびに、次のように入力し"
+"ます:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:96
 msgid ""
 "This command will first ``fetch``, or download the latest version of the "
 "Godot repository. Then, it will reapply your local changes on top."
 msgstr ""
+"このコマンドは、最初に ``fetch`` を行うか、Godotリポジトリの最新バージョンを"
+"ダウンロードします。次に、ローカルの変更が再度適用されます。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:98
 msgid ""
 "If you made changes you don't want to keep in your local branch, use the "
 "following commands instead:"
 msgstr ""
+"ローカルブランチに残したくない変更を加えた場合は、代わりに次のコマンドを使用"
+"します:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:105
 msgid ""
@@ -199,12 +238,17 @@ msgid ""
 "``upstream master`` branch. It will discard all local changes. Make sure to "
 "only run this *before* you make important changes."
 msgstr ""
+"**警告:**\\ 上記のコマンドは、ブランチを ``upstream master`` ブランチの状態に"
+"リセットします。 ローカルの変更はすべて破棄されます。 重要な変更を行う\\ *前*"
+"\\ にのみ、これを実行するようにしてください。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:107
 msgid ""
 "Another option is to delete the branch you're working on, synchronize the "
 "master branch with the Godot repository, and create a brand new branch:"
 msgstr ""
+"もう1つのオプションは、作業中のブランチを削除し、masterブランチをGodotリポジ"
+"トリと同期し、新しいブランチを作成することです:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:116
 msgid ""
@@ -212,10 +256,13 @@ msgid ""
 "freenode.net/?channels=#godotengine>`_ and ask for help. Experienced git "
 "users will give you a hand."
 msgstr ""
+"もし今、迷っているなら、\\ `IRCチャンネル <http://webchat.freenode.net/?"
+"channels=#godotengine>`_\\ に来て助けを求めてください。経験豊富なgitユーザが"
+"お手伝いします。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:119
 msgid "Updating the documentation template"
-msgstr ""
+msgstr "ドキュメントテンプレートの更新"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:121
 msgid ""
@@ -225,6 +272,10 @@ msgid ""
 "`doc_introduction_to_the_buildsystem` page), and then run the following "
 "command (assuming 64-bit Linux):"
 msgstr ""
+"ソースコードでクラスが変更されると、ドキュメントテンプレートが古くなる可能性"
+"があります。最新バージョンを編集していることを確認するには、まずGodotをコンパ"
+"イルする必要があります (\\ :ref:`doc_introduction_to_the_buildsystem`\\ ペー"
+"ジに従ってから)。次のコマンドを実行します (64ビットLinuxを想定):"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:127
 msgid ""
@@ -234,10 +285,14 @@ msgid ""
 "to document, please commit those changes first before starting to edit the "
 "template:"
 msgstr ""
+"ドキュメント/クラスのxmlファイルは、現在のGodot エンジン機能を使用して最新の"
+"状態にする必要があります。その後、 ``git diff`` コマンドを使用して変更された"
+"内容を確認できます。ドキュメント化するクラス以外のクラスに変更がある場合は、"
+"テンプレートの編集を開始する前に、まずこれらの変更をコミットしてください:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:134
 msgid "You are now ready to edit this file to add stuff."
-msgstr ""
+msgstr "これで、このファイルを編集して追加する準備が整いました。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:136
 msgid ""
@@ -245,22 +300,26 @@ msgid ""
 "forcefully need to go through these steps (unless you know that the class "
 "you plan to edit *has* been modified recently)."
 msgstr ""
+"**注意:**\\ 最近、別の貢献者がこれを行った場合は、これらの手順を強制的に実行"
+"する必要はありません(編集しようとしているクラスが最近\\ *変更されたこと*\\ が"
+"わかっている場合を除きます)。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:139
 msgid "Push and request a pull of your changes"
-msgstr ""
+msgstr "変更のプルをプッシュしてリクエストする"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:141
 msgid ""
 "Once your modifications are finished, push your changes on your GitHub "
 "repository:"
-msgstr ""
+msgstr "変更が完了したら、GitHubリポジトリで変更をプッシュします:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:150
 msgid ""
 "When it's done, you can ask for a Pull Request via the GitHub UI of your "
 "Godot fork."
 msgstr ""
+"完了したら、GodotフォークのGitHubUIを介してプルリクエストを要求できます。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:154
 msgid ""
@@ -273,16 +332,25 @@ msgid ""
 "version of the repository cleanly. Also, it's harder to keep clean indents "
 "from GitHub. And they're very important in the docs."
 msgstr ""
+"GitHubでファイルを編集できますが、お勧めしません。 何百人もの貢献者がGodotで"
+"作業しているので、gitの履歴はクリーンなままでなければなりません。 各コミット"
+"は、クラス参照に加えた関連するすべての改善、新機能、バグ修正をバンドルする必"
+"要があります... GitHubから編集すると、保存するたびに新しいブランチとプルリク"
+"エストが作成されます。 変更をレビューする前に数日が経過すると、リポジトリの最"
+"新バージョンに完全に更新できなくなります。 また、GitHubのインデントをきれいに"
+"保つことは困難です。 そして、それらはドキュメントで非常に重要です。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:156
 msgid ""
 "TL;DR: If you don't know what you're doing exactly, do not edit files from "
 "GitHub."
 msgstr ""
+"TL;DR:自分が何をしているか正確にわからない場合は、GitHubからファイルを編集し"
+"ないでください。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:159
 msgid "How to edit class XML"
-msgstr ""
+msgstr "クラスXMLを編集する方法"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:161
 msgid ""
@@ -291,6 +359,10 @@ msgid ""
 "constants and methods you'll find in the class reference. Godot generates "
 "and updates the XML automatically."
 msgstr ""
+"選択したクラスのファイルを ``doc/class/`` で編集して、クラス参照を更新しま"
+"す。フォルダには、各クラスのXMLファイルが含まれています。XMLには、クラス参照"
+"に含まれる定数とメソッドが一覧表示されます。GodotはXMLを自動的に生成して更新"
+"します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:163
 msgid ""
@@ -298,6 +370,9 @@ msgid ""
 "sure that it doesn't change the indent style: tabs for the XML, and 4 spaces "
 "inside BBcode-style blocks. More on that below."
 msgstr ""
+"お気に入りのテキストエディタを使用して編集します。コードエディタを使用する場"
+"合は、インデントスタイル(XMLのタブ、およびBBcodeスタイルのブロック内の4つのス"
+"ペース) が変更されないようにしてください。詳しくは以下をご覧ください。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:165
 msgid ""
@@ -311,7 +386,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:168
 msgid "How to write the class reference"
-msgstr ""
+msgstr "クラス参照の書き方"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:170
 msgid ""
@@ -321,10 +396,16 @@ msgid ""
 "constants and signals are in separate categories or XML nodes. For each, "
 "learn how they work in Godot's source code, and fill their <description>."
 msgstr ""
+"各クラスには、簡単な説明と長い説明があります。 簡単な説明は常にページの上部に"
+"あり、完全な説明はメソッド、変数、定数のリストの下にあります。 メソッド、メン"
+"バー変数、定数、およびシグナルは、個別のカテゴリーまたはXMLノードにありま"
+"す。 それぞれについて、Godotのソースコードでどのように機能するかを学習し、"
+"<description>を入力します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:172
 msgid "Our job is to add the missing text between these marks:"
 msgstr ""
+"私たちの仕事は、これらのマークの間に不足しているテキストを追加することです:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:174
 msgid "<description></description>"
@@ -357,34 +438,41 @@ msgid ""
 "and easy to read. **Do not leave empty lines** in the descriptions: each "
 "line in the XML file will result in a new paragraph."
 msgstr ""
+"明確でシンプルな言語で書きます。常に\\ :ref:`書き込みガイドライン "
+"<doc_docs_writing_guidelines>`\\ に従って説明を短く読みやすくします。説明に"
+"\\ **空の行を残さないようにしてください**\\ 。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:183
 msgid "Here's how a class looks like in XML:"
-msgstr ""
+msgstr "XMLでのクラスの外観を次のようにします:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:222
 msgid ""
 "Use a code editor like Vim, Atom, Code, Notepad++ or anything similar to "
 "edit the file quickly. Use the search function to find classes fast."
 msgstr ""
+"Vim、Atom、Code、Notepad++などのコードエディタを使用して、ファイルをすばやく"
+"編集できます。検索機能を使用して、クラスを高速に検索します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:226
 msgid "Improve formatting with BBcode style tags"
-msgstr ""
+msgstr "BBcodeスタイルタグを使用した書式設定を改善する"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:228
 msgid ""
 "Godot's class reference supports BBcode-like tags. They add nice formatting "
 "to the text. Here's the list of available tags:"
 msgstr ""
+"Godotのクラス参照は、BBcodeのようなタグをサポートしています。これらは、テキス"
+"トに素敵な書式を追加します。使用可能なタグの一覧を次に表示します:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 msgid "Tag"
-msgstr ""
+msgstr "タグ"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 msgid "Effect"
-msgstr ""
+msgstr "効果"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 msgid "Usage"
@@ -392,7 +480,7 @@ msgstr "使用"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 msgid "Result"
-msgstr ""
+msgstr "結果"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "[Class]"
@@ -400,7 +488,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Link a class"
-msgstr ""
+msgstr "クラスをリンクする"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Move the [Sprite]."
@@ -416,7 +504,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 msgid "Link to a method in this class"
-msgstr ""
+msgstr "このクラスのメソッドへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 msgid "Call [method hide]."
@@ -433,7 +521,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Link to another class's method"
-msgstr ""
+msgstr "別のクラスのメソッドへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Call [method Spatial.hide]."
@@ -445,7 +533,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Link to a member in this class"
-msgstr ""
+msgstr "このクラスのメンバーへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Get [member scale]."
@@ -462,7 +550,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "Link to another class's member"
-msgstr ""
+msgstr "別のクラスのメンバーへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "Get [member Node2D.scale]."
@@ -474,7 +562,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Link to a signal in this class"
-msgstr ""
+msgstr "このクラスのシグナルへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Emit [signal renamed]."
@@ -491,7 +579,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Link to another class's signal"
-msgstr ""
+msgstr "別のクラスのシグナルへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Emit [signal Node.renamed]."
@@ -503,7 +591,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Bold"
-msgstr ""
+msgstr "太字"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Some [b]bold[/b] text."
@@ -519,7 +607,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Italic"
-msgstr ""
+msgstr "斜体"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Some [i]italic[/i] text."
@@ -535,7 +623,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:251
 msgid "Monospace"
-msgstr ""
+msgstr "モノスペース"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:251
 msgid "Some [code]monospace[/code] text."
@@ -551,7 +639,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:253
 msgid "Multiline preformatted block"
-msgstr ""
+msgstr "マルチラインプリフォーマットブロック"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:253
 msgid "*See below.*"
@@ -566,17 +654,19 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:266
 msgid "Will display as:"
-msgstr ""
+msgstr "次のように表示されます:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:276
 msgid "I don't know what this method does!"
-msgstr ""
+msgstr "私はこの方法が何をするか分からない!"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:278
 msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
+"大丈夫ですよ。そのままにしておき、変更のプルを要求したときにスキップしたメ"
+"ソッドをリストします。他の人が担当します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:280
 msgid ""
@@ -584,6 +674,9 @@ msgid ""
 "code on GitHub. Also, if you have doubts, feel free to ask on the `Q&A "
 "website <https://godotengine.org/qa/>`__ and on IRC (freenode, #godotengine)."
 msgstr ""
+"GitHubのGodotのソースコードでメソッドの実装を見ることができます。 また、疑問"
+"がある場合は、\\ `Q＆A Webサイト <https://godotengine.org/qa/>`_\\ および"
+"IRC（freenode、＃godotengine）でお気軽にお問い合わせください。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:284
 msgid "Localization"

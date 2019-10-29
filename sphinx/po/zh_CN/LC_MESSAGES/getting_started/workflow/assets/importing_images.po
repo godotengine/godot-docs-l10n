@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "导入图像"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
 msgid "Why import them?"
-msgstr "为什么要导入它们？"
+msgstr "为什么导入它们？"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
 msgid ""
@@ -31,8 +31,8 @@ msgid ""
 "imported. The reason behind this is the large amount of configuration "
 "parameters that image files can be imported with."
 msgstr ""
-"在 Godot 3+ 中，图像文件不再是内置类型资源，它们必须被导入。 这背后的原因是可"
-"以导入图像文件的大量配置参数。"
+"在 Godot 3+ 中，图像文件不再是本地资源，它们必须被导入。这背后的原因是可以导"
+"入图像文件的大量配置参数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:13
 msgid ""
@@ -50,12 +50,12 @@ msgid ""
 "stored in video memory and can't be accessed directly. This is what makes "
 "drawing them efficient."
 msgstr ""
-"Godot 中的默认操作是将图像导入为纹理。 纹理存储在显存中，不能直接访问。 这就"
-"是使得绘制它们变得高效的原因。"
+"Godot 中的默认操作是将图像导入为纹理。纹理存储在显存中，不能直接访问。这就是"
+"使得绘制它们变得高效的原因。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:23
 msgid "Import options are vast:"
-msgstr "导入选项非常广泛:"
+msgstr "导入选项非常多："
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:28
 msgid "Detect 3D"
@@ -69,9 +69,10 @@ msgid ""
 "enabled and compression is changed to VRAM). Texture is also reimported "
 "automatically."
 msgstr ""
-"这个选项让 Godot 知道在 3D 中何时使用纹理(默认情况下导入为 2D )。 如果开启这"
-"个选项，设置会发生改变，所以纹理标记对 3D 更友好( mipmap ，过滤器和repeat变为"
-"启用，压缩变为 VRAM )。 纹理也自动重新导入。"
+"这个选项让 Godot 知道在 3D 中何时使用纹理（默认情况下导入为 2D）。如果开启这"
+"个选项，设置会发生改变，所以纹理标记对 3D 更友好（``贴图（mipmap）``、``过滤"
+"器（filter）`` 和 ``重复（repeat）`` 变为启用，``压缩（compression）`` 变为 "
+"``显存（VRAM）``）。纹理也自动重新导入。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
 msgid "Compression"
@@ -83,8 +84,8 @@ msgid ""
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
-"图像是游戏中最大的资源之一。为了有效地被处理, 需要压缩它们。根据用户的需求, "
-"Godot 提供了几种压缩方法。"
+"图像是游戏中最大的素材之一。为了有效地处理它们，它们被需要压缩。Godot根据使用"
+"情况提供了几种压缩方法。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:40
 msgid "Compress Mode"
@@ -96,8 +97,8 @@ msgid ""
 "File on disk is reduced and video memory usage is also reduced considerably. "
 "For 3D, it may present unwanted artifacts, though."
 msgstr ""
-"VRAM 压缩:这是 3D 资源最常见的压缩模式。 磁盘上的文件减少，显存使用量也大大减"
-"少。 但对 3D 来说，它可能会因此出现不期望的失真。"
+"VRAM压缩：这是3D素材最常见的压缩模式。磁盘上的文件减小了，显存使用量也大大减"
+"少了。但对 3D 来说，它可能会因此出现不期望的失真。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
 msgid ""
@@ -106,8 +107,8 @@ msgid ""
 "decent. It will use considerably more amount of video memory than VRAM, "
 "though."
 msgstr ""
-"无损压缩:这是 2D 资源最常见的压缩。 这说明资源没有任何形式的失真，并且磁盘压"
-"缩率也不错。 不过，它将使用比 VRAM 更多的显存。"
+"无损压缩：这是2D素材最常见的压缩。这说明素材没有任何形式的失真，并且磁盘压缩"
+"率也不错。但是，它将使用比VRAM多得多的显存。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
 msgid ""
@@ -115,22 +116,22 @@ msgid ""
 "can be a great choice. It has some artifacting, but less than VRAM and the "
 "file size is almost a tenth of Lossless."
 msgstr ""
-"有损压缩:对于拥有大量 2D 资源的游戏，有损压缩可能是一个不错的选择。 它有一些"
-"失真，但少于 VRAM ，文件大小几乎是Lossless的十分之一。"
+"有损压缩：对于拥有大量大型2D素材的游戏，有损压缩可能是一个不错的选择。它有一"
+"些失真，但少于 VRAM ，文件大小几乎是无损的十分之一。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid ""
 "Uncompressed: Only useful for formats that can't be compressed (like, raw "
 "float)."
-msgstr "未压缩:仅适用于无法压缩的格式(如raw float)。"
+msgstr "未压缩：仅适用于无法压缩的格式（例如 ``raw float``）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages ( |good| = Best, |bad| =Worst ):"
 msgstr ""
-"在这张表中，四个选项中的每一个都描述了它们的优缺点(| good | = 最好的，| bad "
-"| = 最差的):"
+"在这张表中，四个选项中的每一个都描述了它们的优缺点（ |good| = 最好的， |bad| "
+"= 最差的）："
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Uncompressed"
@@ -138,15 +139,15 @@ msgstr "未压缩"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Compress Lossless (PNG)"
-msgstr "无损压缩( PNG )"
+msgstr "无损压缩（PNG）"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Compress Lossy (WebP)"
-msgstr "有损压缩( WebP )"
+msgstr "有损压缩（WebP）"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Compress VRAM"
-msgstr "压缩 VRAM"
+msgstr "VRAM压缩"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 msgid "Description"
@@ -166,32 +167,32 @@ msgstr "存储为 WebP"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 msgid "Stored as S3TC/BC,PVRTC/ETC, depending on platform"
-msgstr "存储为 S3TC/BC,PVRTC/ETC, 具体取决于平台"
+msgstr "存储为 S3TC/BC、PVRTC/ETC，具体取决于平台"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "Size on Disk"
-msgstr "占用磁盘大小"
+msgstr "磁盘占用"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|bad| Large"
-msgstr "|糟糕| 大"
+msgstr "|bad| 巨大"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|regular| Small"
-msgstr "|常规|小"
+msgstr "|regular| 小"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|good| Very Small"
-msgstr "|好|非常小"
+msgstr "|good| 非常小"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "Memory Usage"
-msgstr "内存使用情况"
+msgstr "内存占用"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|good| Small"
-msgstr "|好| 小"
+msgstr "|good| 小"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
 msgid "Performance"
@@ -200,28 +201,28 @@ msgstr "性能"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "|regular| Normal"
-msgstr "|常规|普通"
+msgstr "|regular| 普通"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "|good| Fast"
-msgstr "|良好|快速"
+msgstr "|good| 快"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "Quality Loss"
-msgstr "质量损耗"
+msgstr "质量损失"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "|good| None"
-msgstr "|良好|无"
+msgstr "|good| 无"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "|regular| Slight"
-msgstr "|常规|轻微"
+msgstr "|regular| 轻微"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "|bad| Moderate"
-msgstr "|糟糕|中等"
+msgstr "|bad| 中等"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "Load Time"
@@ -229,7 +230,7 @@ msgstr "加载时间"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid "|bad| Slow"
-msgstr "|糟糕| 缓慢"
+msgstr "|bad| 慢"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:76
 msgid "HDR Mode"
@@ -243,15 +244,15 @@ msgid ""
 "2.x. Modern PCs support the BC6H VRAM format, but there are still plenty "
 "that do not."
 msgstr ""
-"Godot支持高动态范围图像纹理(如 .HDR或 .EXR)。 这些图像作为高动态范围 EPR 投影"
-"全景天空是非常有用的(如果您试着去找，互联网上有很多)，它取代了Godot 2.x的 "
-"Cubemaps 。 现代个人电脑支持 BC6H VRAM 格式，但仍有很多电脑不支持。"
+"Godot支持高动态范围纹理（如 ``.HDR`` 或 ``.EXR``）。这些在高动态范围等矩形全"
+"景天空中很有用（如果您要搜索，则互联网上有很多），它代替了Godot 2.x中的立方体"
+"贴图。现代个人电脑支持 BC6H VRAM 格式，但仍有很多电脑不支持。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:81
 msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
 "textures, enable the \"Force RGBE\" option."
-msgstr "如果您希望 Godot 确保完全兼容各种纹理，请启用“强制 RGBE ”选项。"
+msgstr "如果您希望 Godot 确保完全兼容各种纹理，请启用 ``强制 RGBE`` 选项。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Normal Map"
@@ -267,10 +268,10 @@ msgid ""
 "which means that if the texture is ever used as a normal map, it will be "
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
-"当使用纹理作为法线贴图时，只需要红色和绿色通道。 鉴于常规纹理压缩算法产生的失"
-"真在法线贴图中看起来不太好，RGTC 压缩格式最适合这种数据。 将此选项强制为“已启"
-"用”将使Godot导入 RGTC 压缩的图像。 默认情况下，它被设置为“Detect”，这意味着如"
-"果纹理一旦被用作法线贴图，则会将其更改为“Enabled”并自动重新导入。"
+"将纹理用作法线贴图时，仅需要红色和绿色通道。鉴于常规纹理压缩算法产生的失真在"
+"法线贴图中看起来不太好，RGTC 压缩格式最适合这种数据。将此选项强制为 ``已启用"
+"`` 将使Godot导入 RGTC 压缩的图像。默认情况下，它被设置为 ``Detect``，这意味着"
+"如果纹理一旦被用作法线贴图，则会将其更改为 ``Enabled`` 并自动重新导入。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid ""
@@ -278,6 +279,8 @@ msgid ""
 "have to adjust custom shaders that use the normal map to take this into "
 "account."
 msgstr ""
+"请注意，RGTC压缩会影响生成的法线贴图图像。您必须在调整使用法线贴图的自定义着"
+"色器时，考虑到这一点。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Flags"
@@ -287,7 +290,7 @@ msgstr "标志"
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
-msgstr "根据使用情况，将图像作为纹理导入时可以切换很多设置。"
+msgstr "根据使用情况，很多设置在将图像作为纹理导入时，可以被切换。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:99
 msgid "Repeat"
@@ -299,8 +302,8 @@ msgid ""
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
 "\"loop\"."
 msgstr ""
-"这种设置在 3D 中比 2D 更常用(因此它通常在 2D 中禁用)。 它使得UV坐标超出了0,0 "
-"- 1,1范围“循环”。 重复可选为设置成镜像模式。"
+"此设置最常用于3D，因此通常在2D中被禁用。它将超出 0,0 -1,1 范围的UV坐标设置为 "
+"``循环``。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "Repeating can optionally be set to mirrored mode."
@@ -317,8 +320,8 @@ msgid ""
 "setting can be commonly used in 2D and 3D, but it's usually disabled when "
 "making pixel perfect games."
 msgstr ""
-"当像素大于屏幕像素时，此选项可为它们启用线性插值。结果是更平滑的(更少块状)纹"
-"理。此设置可以在 2D 和 3D 中常用，但在制作像素匹配的游戏时通常会被禁用。"
+"当像素大于屏幕像素时，此选项可为它们启用线性插值。结果是更平滑的（更少块状）"
+"纹理。此设置通常可用于2D和3D，但在制作像素完美游戏时通常会禁用此设置。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:111
 msgid "Mipmaps"
@@ -331,8 +334,9 @@ msgid ""
 "older hardware (GLES2, mainly mobile), there are some requirements to use "
 "mipmaps:"
 msgstr ""
-"当像素变得比屏幕小时，mipmap 会启用。这有助于减少纹理收缩时的颗粒感效应。 请"
-"记住，在较旧的硬件(GLES2，主要是移动设备)中，使用 mipmap 需要满足一些要求:"
+"当像素变得比屏幕小时，``mipmap`` 会启用。这有助于减少纹理收缩时的颗粒感效应。"
+"请记住，在较旧的硬件（GLES2，主要是移动设备）中，使用 ``mipmap`` 需要满足一些"
+"要求："
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:116
 msgid "Texture width and height must be powers of 2"
@@ -340,22 +344,22 @@ msgstr "纹理宽度和高度必须是2的幂"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:117
 msgid "Repeat must be enabled"
-msgstr "必须启用Repeat"
+msgstr "必须启用 ``Repeat``"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:119
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
-"在制作手机游戏和应用程序时，希望完全兼容并使用 mipmap，请牢记以上内容。"
+"在制作手机游戏和应用程序时，希望完全兼容并使用 ``mipmap``，请牢记以上内容。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:121
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
-"在 3D 模式下，应该打开 mipmap，因为这也会提高性能(更小大小的纹理用于更远的对"
-"象)。"
+"在 3D 模式下，应该打开 ``mipmap``，因为这也会提高性能（更小大小的纹理用于更远"
+"的对象）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:124
 msgid "Anisotropic"
@@ -366,11 +370,11 @@ msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
 msgstr ""
-"当纹理几乎与视图平行时(如地板)，该选项通过减少模糊程度使它们具有更多细节。"
+"当纹理几乎与视图平行时（如地板），该选项通过减少模糊程度使它们具有更多细节。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:129
 msgid "SRGB"
-msgstr "SRGB 色彩空间"
+msgstr "SRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:131
 msgid ""
@@ -379,9 +383,9 @@ msgid ""
 "look correct. When set to \"Detect\" mode, the texture will be marked as "
 "SRGB when used in albedo channels."
 msgstr ""
-"渲染 3D 图像时，Godot使用线性颜色空间。 映射到 albedo (反照率)或细节通道的纹"
-"理需要打开此选项才能使颜色看起来正确。 当设置为``Detect``模式时，纹理将在反照"
-"率通道中使用时标记为 SRGB 。"
+"渲染 3D 图像时，Godot使用线性色彩空间。映射到 ``albedo`` （反照率）或细节通道"
+"的纹理需要打开此选项，才能使颜色看起来正确。当设置为 ``Detect`` 模式时，纹理"
+"当在反照率通道中使用时，将被标记为 SRGB 。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:135
 msgid "Process"
@@ -390,11 +394,11 @@ msgstr "过程"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:137
 msgid ""
 "Some special processes can be applied to images when imported as textures."
-msgstr "当作为纹理导入时, 某些特殊过程可以应用于图像。"
+msgstr "当作为纹理导入时，某些特殊过程可以应用于图像。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:140
 msgid "Fix Alpha Border"
-msgstr "修复 Alpha 边框"
+msgstr "修复 Alpha 边界"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:142
 msgid ""
@@ -402,14 +406,14 @@ msgid ""
 "transparency to non transparency. It helps mitigate the outline effect when "
 "exporting images from Photoshop and the like."
 msgstr ""
-"这将周围相同颜色的像素从透明转换为非透明。 它有助于减轻从 Photoshop 等导出图"
-"像时的轮廓效果。"
+"这样会使周围颜色相同的像素从透明过渡到非透明。从Photoshop等导出图像时，它有助"
+"于减轻轮廓效果。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:147
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
-msgstr "除非需要特定的值，否则最好在默认情况下保持开启。"
+msgstr "除非需要特定的值，否则最好在保持默认值。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid "Premultiplied Alpha"
@@ -422,8 +426,9 @@ msgid ""
 "mind that a material will need to be created that uses the PREMULT ALPHA "
 "blend mode on canvas items that need it."
 msgstr ""
-"修复黑暗边界的替代方法是使用预乘alpha。 通过启用此选项，纹理将转换为此格式。 "
-"请记住，在画布物体上使用预乘 ALPHA 混合模式需要创建一个材质。"
+"修复深色边界的替代方法是使用预乘alpha。通过启用此选项，纹理将被转换为此格式。"
+"请记住，在画布物体上使用预乘 ALPHA 混合模式需要创建一个材质。请记住，在画布上"
+"的使用PREMULT ALPHA混合模式的项目，需要创建一个材质，而该材质需要它。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:156
 msgid "HDR as sRGB"
@@ -435,8 +440,8 @@ msgid ""
 "use them, but, in the worst-case scenario, toggling this option on will make "
 "them look right."
 msgstr ""
-"一些 HDR 文件可能被破坏并包含 SRGB 颜色数据。 一般不建议使用它们，但在最坏的"
-"情况下，切换此选项将使它们看起来正确。"
+"一些HDR文件已损坏，并包含sRGB颜色数据。建议不要使用它们，但是在最坏的情况下，"
+"启用此选项会使它们看起来正确。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:161
 msgid "Invert Color"
@@ -448,5 +453,5 @@ msgid ""
 "map generated by external programs to depth map to use with :ref:"
 "`doc_spatial_material`."
 msgstr ""
-"反转图像的颜色。 例如，将外部程序生成的高度图转换为深度图以用于 :ref:"
-"`doc_spatial_material` 非常有用。"
+"反转图像的颜色。例如，将外部程序生成的高度图转换为深度图以用于 :ref:"
+"`doc_spatial_material`，将非常有用。"

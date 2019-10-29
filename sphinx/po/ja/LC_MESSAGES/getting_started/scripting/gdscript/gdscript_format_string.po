@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -198,7 +198,8 @@ msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
-"単一の**10進整数**。整数または実数(圧倒されるだろう)を指定してください。"
+"単一の**10進整数**。整数または実数(floorで切り捨てられます)を指定してくださ"
+"い。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
@@ -209,7 +210,8 @@ msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
-"単一の**8進整数**。整数または実数(圧倒されるだろう)を指定してください。"
+"単一の**8進整数**。整数または実数(floorで切り捨てられます)を指定してくださ"
+"い。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
@@ -220,8 +222,8 @@ msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
-"単一の**小文字の16進整数**。整数または実数(圧倒されるだろう)を指定してくださ"
-"い。"
+"単一の**小文字の16進整数**。整数または実数(floorで切り捨てられます)を指定して"
+"ください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
@@ -232,8 +234,8 @@ msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
-"単一の**大文字の16進整数**。整数または実数(圧倒されるだろう)を指定してくださ"
-"い。"
+"単一の**大文字の16進整数**。整数または実数(floorで切り捨てられます)を指定して"
+"ください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
@@ -265,7 +267,7 @@ msgstr "数値指定子で、正の場合は**+記号を表示**します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid "Integer"
-msgstr ""
+msgstr "整数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,7 +110,7 @@ msgstr "geany/kate"
 #: ../../docs/getting_started/editor/external_editor.rst:34
 #, fuzzy
 msgid "``{file} --line {line} --column {col}``"
-msgstr "{file} --line {line} --column {col}"
+msgstr "``{file} --line {line} --column {col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 #, fuzzy
@@ -120,36 +120,38 @@ msgstr "atom/sublime text"
 #: ../../docs/getting_started/editor/external_editor.rst:36
 #, fuzzy
 msgid "``{file}:{line}``"
-msgstr "{file}:{line}"
+msgstr "``{file}:{line}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 #, fuzzy
 msgid "JetBrains Rider"
-msgstr "jetbrains rider"
+msgstr "JetBrains rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 #, fuzzy
 msgid "``--line {line} {file}``"
-msgstr "--line {line} {file}"
+msgstr "``--line {line} {file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 #, fuzzy
 msgid "Visual Studio Code"
-msgstr "Visual Studio или VS Code"
+msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 #, fuzzy
 msgid "``{project} --goto {file}:{line}:{col}``"
-msgstr "{project} --goto {file}:{line}:{col}"
+msgstr "``{project} --goto {file}:{line}:{col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "Vim (gVim)"
 msgstr "Vim (gVim)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
+#, fuzzy
 msgid "``\"+call cursor({line}, {col})\" {file}``"
-msgstr ""
+msgstr "``\"+call cursor({line}, {col})\" {file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:45
+#, fuzzy
 msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
-msgstr ""
+msgstr "Для кода Visual Studio вам нужно указать на файл ``code.cmd``."

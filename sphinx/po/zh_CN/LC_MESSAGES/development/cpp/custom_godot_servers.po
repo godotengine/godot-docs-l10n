@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
 msgid "Custom Godot servers"
-msgstr "自定义Godot服务器"
+msgstr "自定义Godot服务"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:7
 msgid "Introduction"
@@ -33,16 +33,16 @@ msgid ""
 "engine and other modules. In addition, the server claims ownership for its "
 "RID allocations."
 msgstr ""
-"Godot将多线程实现为服务器。 服务器是守护进程，用于管理数据，进程和推送结果。 "
-"服务器实现中介模式，该模式解释引擎和其他模块的资源ID和过程数据。 此外，服务器"
-"声明其RID分配的所有权。"
+"Godot将多线程实现为服务。服务是守护进程，用于管理数据、进程和推送结果。服务实"
+"现中介者模式，该模式为引擎和其他模块解释资源ID和过程数据。此外，服务要求对其"
+"RID分配拥有所有权。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:15
 msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to :ref:`doc_custom_modules_in_c++`."
 msgstr ""
-"本指南假设读者知道如何创建C++模块和Godot数据类型。 如果没有，请参考 :ref:"
+"本指南假设读者知道如何创建C++模块和Godot数据类型。如果没有，请参考 :ref:"
 "`doc_custom_modules_in_c++`。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:19
@@ -55,8 +55,8 @@ msgid ""
 "`Why does Godot use servers and RIDs? <https://godotengine.org/article/why-"
 "does-godot-use-servers-and-rids>`__"
 msgstr ""
-"`Why does Godot use servers and RIDs? <https://godotengine.org/article/why-"
-"does-godot-use-servers-and-rids>`__"
+"`为什么Godot使用服务与RID？ <https://godotengine.org/article/why-does-godot-"
+"use-servers-and-rids>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:22
 msgid "`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
@@ -64,11 +64,11 @@ msgstr "`单例模式 <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:23
 msgid "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
-msgstr "`Mediator 模式 <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
+msgstr "`中介模式 <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:26
 msgid "What for?"
-msgstr "用于做什么？"
+msgstr "可以做什么？"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:28
 msgid "Adding artificial intelligence."
@@ -92,18 +92,18 @@ msgstr "添加自定义VoIP协议。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:33
 msgid "And more..."
-msgstr "和更多..."
+msgstr "以及更多..."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:36
 msgid "Creating a Godot server"
-msgstr "创建Godot服务器"
+msgstr "创建Godot服务"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:38
 msgid ""
 "At minimum, a server must have a static instance, a sleep timer, a thread "
 "loop, an initialization state and a cleanup procedure."
 msgstr ""
-"服务器必须至少具有静态实例，睡眠定时器，线程循环，初始化状态和清理过程。"
+"至少，服务必须具有静态实例、睡眠计时器、线程循环、初始化状态、和清理过程。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:274
 msgid "Custom managed resource data"
@@ -116,13 +116,13 @@ msgid ""
 "called. During debug mode only, RID_Owner maintains a list of RIDs. In "
 "practice, RIDs are similar to writing object-oriented C code."
 msgstr ""
-"Godot服务器实现了中介模式。 所有数据类型都继承 ``RID_Data`` 。 ```RID_Owner "
-"<MyRID_Data>``在调用``make_rid``时拥有对象。 仅在调试模式期间，RID_Owner维护"
-"RID列表。 实际上，RID类似于编写面向对象的C代码。"
+"Godot服务实现了中介模式。所有数据类型都继承 ``RID_Data`` 。```RID_Owner "
+"<MyRID_Data>`` 在调用 ``make_rid`` 时拥有对象。仅在调试模式期间，RID_Owner维"
+"护RID列表。实际上，RID类似于编写面向对象的C代码。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:318
 msgid ":ref:`RID<class_rid>`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`RID <class_RID>`"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:319
 msgid ""
@@ -132,7 +132,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:322
 msgid "Registering the class in GDScript"
-msgstr "在GDScript中注册课程"
+msgstr "在GDScript中注册类"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:324
 msgid ""
@@ -140,8 +140,8 @@ msgid ""
 "static instance and ``init()`` creates the managed thread; "
 "``unregister_types.cpp`` cleans up the server."
 msgstr ""
-"服务器分配在 ``register_types.cpp`` 中。 构造函数设置静态实例， ``init()`` 创"
-"建托管线程; ``unregister_types.cpp``清理服务器。"
+"服务在 ``register_types.cpp`` 中分配。构造函数设置静态实例，``init()`` 创建托"
+"管线程； ``unregister_types.cpp`` 清理服务。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:328
 msgid ""
@@ -150,8 +150,8 @@ msgid ""
 "Therefore, a dummy class must be created to reference the proper Godot "
 "server."
 msgstr ""
-"由于Godot服务器类创建了一个实例并将其绑定到静态单例，因此绑定该类可能不会引用"
-"正确的实例。 因此，必须创建一个虚拟类来引用正确的Godot服务器。"
+"由于Godot服务类创建了一个实例并将其绑定到静态单例，因此绑定该类可能不会引用正"
+"确的实例。因此，必须创建一个虚拟类来引用正确的Godot服务。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:332
 msgid ""
@@ -159,7 +159,7 @@ msgid ""
 "is used to register the dummy class in GDScript."
 msgstr ""
 "在 ``register_server_types()`` 中，``Engine :: get_singleton() -> "
-"add_singleton``用于在GDScript中注册虚拟类。"
+"add_singleton`` 用于在GDScript中注册虚拟类。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:376
 msgid ""
@@ -177,7 +177,7 @@ msgstr "绑定方法"
 msgid ""
 "The dummy class binds singleton methods to GDScript. In most cases, the "
 "dummy class methods wraps around."
-msgstr "虚拟类将单例方法绑定到GDScript。 在大多数情况下，虚拟类方法包含在内。"
+msgstr "虚拟类将单例方法绑定到GDScript。在大多数情况下，虚拟类方法封装在内。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:389
 msgid "Binding Signals"
@@ -202,14 +202,14 @@ msgid ""
 "flushed whenever either ``SceneTree::idle`` or ``SceneTree::iteration`` is "
 "executed."
 msgstr ""
-"为了将命令发送到SceneTree，MessageQueue是一个线程安全缓冲区，用于对其他线程进"
-"行队列设置和调用方法。 要排队命令，获取目标对象RID并使用 ``push_call``, "
-"``push_set``, 或 ``push_notification`` 来执行所需的行为。 只要执行 "
-"``SceneTree :: idle`` 或 ``SceneTree :: iteration`` ，队列就会被刷新。"
+"为了将命令发送到SceneTree中，MessageQueue是线程安全的缓冲区，用于将其他线程的"
+"设置和调用方法排队。要对命令进行排队，请获取目标对象RID并使用 "
+"``push_call``、 ``push_set``、或 ``push_notification`` 执行所需的行为。每当执"
+"行 ``SceneTree::idle`` 或 ``SceneTree::iteration`` 时，都会刷新队列。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:475
 msgid "References:"
-msgstr "参阅资料:"
+msgstr "参考："
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:477
 msgid ""
@@ -225,7 +225,7 @@ msgstr "总结"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:482
 msgid "Here is the GDScript sample code:"
-msgstr "这是GDScript示例代码:"
+msgstr "这是GDScript示例代码："
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:506
 msgid "Notes"
@@ -236,7 +236,7 @@ msgid ""
 "The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
 "%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
 msgstr ""
-"实际的 `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
+"实际的 `希尔伯特旅馆悖论 <https://en.wikipedia.org/wiki/Hilbert"
 "%27s_paradox_of_the_Grand_Hotel>`__ 是不可能的。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:509

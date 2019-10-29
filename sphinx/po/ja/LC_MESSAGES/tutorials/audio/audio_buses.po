@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,9 +19,8 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:4
 #: ../../docs/tutorials/audio/audio_buses.rst:48
-#, fuzzy
 msgid "Audio buses"
-msgstr "オーディオ"
+msgstr "オーディオバス"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:7
 msgid "Introduction"
@@ -53,7 +52,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:23
 msgid "For those unfamiliar with it, it can be explained with a few facts:"
-msgstr ""
+msgstr "それに不慣れな人のために、いくつかの事実で説明できます:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:25
 msgid ""
@@ -71,7 +70,7 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_buses.rst:30
 msgid ""
 "Since the scale is logarithmic, true zero (no audio) can't be represented."
-msgstr ""
+msgstr "スケールは対数であるため、真のゼロ(オーディオなし)は表現できません。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:31
 msgid ""
@@ -106,6 +105,8 @@ msgid ""
 "This can take a bit getting used to, but it's friendlier in the end and will "
 "allow you to communicate better with audio professionals."
 msgstr ""
+"これには少し慣れる必要がありますが、最終的には使いやすくなり、オーディオプロ"
+"フェッショナルとのコミュニケーションが向上します。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:50
 msgid "Audio buses can be found in the bottom panel of the Godot editor:"
@@ -165,6 +166,8 @@ msgid ""
 "Audio buses can contain all sorts of effects. These effects modify the sound "
 "in one way or another and are applied in order."
 msgstr ""
+"オーディオバスには、あらゆる種類のエフェクトを含めることができます。これらの"
+"エフェクトは、何かの方法でサウンドを変更し、順番に適用されます。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:94
 msgid ""
@@ -174,7 +177,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:98
 msgid "Amplify"
-msgstr ""
+msgstr "アンプ"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:100
 msgid ""
@@ -185,7 +188,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:105
 msgid "BandLimit and BandPass"
-msgstr ""
+msgstr "バンドリミットとバンドパス"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:107
 msgid ""
@@ -198,20 +201,20 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:114
 msgid "Chorus"
-msgstr ""
+msgstr "コーラス"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:116
 msgid ""
 "The Chorus effect duplicates the incoming audio, delays the duplicate "
 "slightly and uses an LFO to continuously modulate the pitch of the "
-"duplicated signal before mixing the duplicatated signal(s) and the original "
+"duplicated signal before mixing the duplicated signal(s) and the original "
 "together again. This creates a shimmering effect and adds stereo width to "
 "the sound."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:122
 msgid "Compressor"
-msgstr ""
+msgstr "コンプレッサー"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:124
 msgid ""
@@ -261,7 +264,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:152
 msgid "Delay"
-msgstr ""
+msgstr "ディレイ"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:154
 msgid ""
@@ -272,7 +275,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:159
 msgid "Distortion"
-msgstr ""
+msgstr "ディストーション"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:161
 msgid ""
@@ -306,7 +309,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:180
 msgid "HighPassFilter, HighShelfFilter"
-msgstr ""
+msgstr "ハイパスフィルター、ハイシェルフフィルター"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:182
 msgid ""
@@ -317,7 +320,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:189
 msgid "Limiter"
-msgstr ""
+msgstr "リミッター"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:191
 msgid ""
@@ -328,7 +331,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:196
 msgid "LowPassFilter, LowShelfFilter"
-msgstr ""
+msgstr "ローパスフィルター、ローシェルフフィルタ"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:198
 msgid ""
@@ -341,7 +344,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:204
 msgid "NotchFilter"
-msgstr ""
+msgstr "ノッチフィルター"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:206
 msgid ""
@@ -351,7 +354,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:210
 msgid "Panner"
-msgstr ""
+msgstr "パン"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:212
 msgid ""
@@ -361,7 +364,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:216
 msgid "Phaser"
-msgstr ""
+msgstr "フェイザー"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:218
 msgid ""
@@ -372,7 +375,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:223
 msgid "PitchShift"
-msgstr ""
+msgstr "ピッチシフト"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:225
 msgid ""
@@ -393,7 +396,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:235
 msgid "Reverb"
-msgstr ""
+msgstr "リバーブ"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:237
 msgid ""
@@ -406,7 +409,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:244
 msgid "StereoEnhance"
-msgstr ""
+msgstr "ステレオエンハンス"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:246
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:4
 msgid "Splash screen"
-msgstr "闪屏"
+msgstr "启动画面"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
@@ -30,8 +30,8 @@ msgid ""
 "This is a simple tutorial to establish the basic idea of how the GUI "
 "subsystem works. The goal is to create a simple, static splash screen."
 msgstr ""
-"这是一个简单的教程，用来建立GUI子系统如何工作的基本概念。目标是创建一个简单的"
-"静态启动屏幕。"
+"这是一个简单的教程，可建立有关GUI子系统如何工作的基本概念。目标是创建一个简单"
+"的静态启动画面。"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:15
 msgid ""
@@ -39,7 +39,7 @@ msgid ""
 "can be placed directly in your project folder and Godot will import them "
 "automatically."
 msgstr ""
-"下面是一个包含将要使用的资源的文件。提取的文件可以直接放在项目文件夹中，Godot"
+"下面是一个包含将要使用的资源的文件。解压的文件可以直接放在项目文件夹中，Godot"
 "会自动导入它们。"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
@@ -54,7 +54,7 @@ msgstr "设置"
 msgid ""
 "Set the display resolution to 800x450 in Project Settings, and set up a new "
 "scene like this:"
-msgstr "在项目设置中设置显示分辨率为800x450，新建场景如下:"
+msgstr "在项目设置中将显示分辨率设置为800x450，然后设置一个新场景，如下所示："
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:27
 msgid ""
@@ -62,8 +62,8 @@ msgid ""
 "<class_TextureRect>` type. To display an image, drag the corresponding asset "
 "to the texture property."
 msgstr ""
-"节点 `background` 和 `logo` 的类型为 :ref:`TextureRect <class_TextureRect>` "
-"类型。若要显示图像，请将对应的资源拖动到纹理属性。"
+"节点 ``background`` 和 ``logo`` 是 :ref:`TextureRect <class_TextureRect>` 类"
+"型。要显示图像，请将相应的资源拖动到 ``texture（纹理）`` 属性。"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:32
 msgid ""
@@ -71,19 +71,20 @@ msgid ""
 "several images for different states, but only the normal and pressed will be "
 "supplied in this example:"
 msgstr ""
-"节点`start`是 :ref:`TextureButton <class_TextureButton>` 。它为不同的状态拍了"
-"几张照片，但是在这个示例中只提供了正常的和按下的图像:"
+"节点 ``start`` 是一个 :ref:`TextureButton <class_TextureButton>` 。它为不同的"
+"状态采用几张图像，但是在此示例中仅提供 ``正常（normal）`` 和 ``按下"
+"（pressed）`` 状态的图像："
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:38
 msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
-msgstr "最后，节点 `copyright` 是一个 :ref:`Label <class_Label>`。"
+msgstr "最后，节点 ``copyright`` 是一个 :ref:`Label <class_Label>`。"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:40
 msgid "Your final scene should look something like this."
-msgstr "您最后的场景应该是这样的。"
+msgstr "您最终的场景应该是这样的。"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:44
 msgid ""
 "Go ahead and run the project.  If you're satisfied with the results, "
 "continue to the next tutorial."
-msgstr "继续运行这个项目。如果您对结果满意，请继续学习下一个教程。"
+msgstr "继续运行这个项目。如果您对结果感到满意，请继续下一个教程。"

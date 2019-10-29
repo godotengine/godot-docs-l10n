@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,6 +53,10 @@ msgid ""
 "reconfiguring and rebuilding the project each time. SCons can do this with "
 "no sweat, without breaking the builds."
 msgstr ""
+"開発者は、多くの場合、複数のプラットフォーム \\ **を同時にコンパイルする必要"
+"があります**\\ 、または同じプラットフォームの異なるターゲットをコンパイルする"
+"必要があります。毎回プロジェクトを再構成して再構築する余裕はありません。SCons"
+"は、ビルドを壊すことなく、労なくこれを行うことができます。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:24
 msgid ""
@@ -60,6 +64,9 @@ msgid ""
 "additions, removals etc. You have more chances to die struck by lightning "
 "than needing to clean and rebuild in SCons."
 msgstr ""
+"変更、構成、追加、削除などの回数にかかわらず、SConsはビルドを中断することは"
+"\\ *ありません*\\ 。SConsでクリーニングとリビルドを行うよりも、落雷で死亡する"
+"可能性の方が高くなります。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:27
 msgid ""
@@ -69,6 +76,11 @@ msgid ""
 "write in an actual programming language (like Python) rather than using a "
 "mostly macro-based language only meant for building."
 msgstr ""
+"Godotビルドプロセスは簡単ではありません。いくつかのファイルはコード(バイン"
+"ダー)によって生成され、他のファイルは解析(シェーダ)であり、他のファイルはカス"
+"タマイズ(プラグイン)を提供する必要があります。これには、構築のみを意図したマ"
+"クロベースの言語を使用するのではなく、実際のプログラミング言語(Pythonなど)で"
+"記述する方が簡単な複雑なロジックが必要です。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:32
 msgid ""
@@ -82,10 +94,12 @@ msgid ""
 "So, please try to keep an open mind and get at least a little familiar with "
 "it if you are planning to build Godot yourself."
 msgstr ""
+"ですので、あなたがGodotを自分で構築することを計画している場合は、オープンマイ"
+"ンドを維持し、少なくともそれに少し精通してみてください。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:40
 msgid "Setup"
-msgstr ""
+msgstr "セットアップ"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:42
 msgid ""
@@ -94,6 +108,10 @@ msgid ""
 "`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`, :ref:"
 "`doc_compiling_for_windows` and :ref:`doc_compiling_for_x11`."
 msgstr ""
+"以下のドキュメントを参照して下さい: :ref:`doc_compiling_for_android`\\ 、\\ :"
+"ref:`doc_compiling_for_ios`\\ 、\\ :ref:`doc_compiling_for_osx`\\ 、\\ :ref:"
+"`doc_compiling_for_uwp`\\ 、\\ :ref:`doc_compiling_for_web`\\  、\\ :ref:"
+"`doc_compiling_for_windows`\\ 及び\\ :ref:`doc_compiling_for_x11`\\ 。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:47
 msgid ""
@@ -101,10 +119,14 @@ msgid ""
 "Tools Command Prompt for VS 2017`` or similar, depending on your install, "
 "instead of the standard Windows command prompt to enter the commands below."
 msgstr ""
+"**Windows/Visual Studio**\\ の場合、以下のコマンドを入力するには、標準の"
+"Windowsコマンドプロンプトではなく、インストールに応じてx86_x64Cross Tools "
+"Command Prompt for VS2017または同様のコマンドプロンプトを使用する必要がありま"
+"す。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:52
 msgid "Platform selection"
-msgstr ""
+msgstr "プラットフォームの選択"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:54
 msgid ""
@@ -113,6 +135,10 @@ msgid ""
 "available platforms. The build requirements for each platform are described "
 "in the rest of this tutorial section."
 msgstr ""
+"Godot のビルドシステムは、ビルド可能なプラットフォームを検出することによって"
+"開始されます。検出されない場合、使用可能なプラットフォームの一覧に表示されま"
+"せん。各プラットフォームのビルド要件については、このチュートリアルの残りの部"
+"分で説明します。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:59
 msgid ""
@@ -141,11 +167,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:89
 msgid "Example for using 4 cores:"
-msgstr ""
+msgstr "4つのコアを使用する例:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:96
 msgid "Resulting binary"
-msgstr ""
+msgstr "結果のバイナリ"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:98
 msgid ""
@@ -154,20 +180,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:103
-#, fuzzy
 msgid "For the previous build attempt, the result would look like this::"
-msgstr "エクスポートが完了すると、出力フォルダは次のようになります:"
+msgstr "前ビルドを試みると、結果は次のようになります::"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:108
 msgid ""
 "This means that the binary is for X11, is not optimized, has tools (the "
 "whole editor) compiled in, and is meant for 64 bits."
 msgstr ""
+"これは、バイナリがX11用であり、最適化されておらず、ツール(エディター全体)が組"
+"み込まれており、64ビット用であることを意味します。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:111
-#, fuzzy
 msgid "A Windows binary with the same configuration will look like this::"
-msgstr "最後に、シーンを実行すると、アニメーションは次のようになります:"
+msgstr "同じ設定のWindowsバイナリは次のようになります::"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:116
 msgid ""
@@ -183,6 +209,8 @@ msgid ""
 "Aside from that, there are a few standard options that can be set in all "
 "build targets, and which will be explained below."
 msgstr ""
+"それとは別に、すべてのビルドターゲットで設定できるいくつかの標準オプションが"
+"あり、以下で説明します。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:126
 msgid "Tools"
@@ -194,6 +222,9 @@ msgid ""
 "disabled for everything else. Disabling tools produces a binary that can run "
 "projects but that does not include the editor or the project manager."
 msgstr ""
+"ツールは、すべてのPCターゲット(Linux、Windows、macOS)でデフォルトで有効になっ"
+"ています。ツールを無効にすると、プロジェクトを実行できるバイナリが生成されま"
+"すが、編集者やプロジェクト マネージャは含まれません。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:138
 msgid "Target"
@@ -202,12 +233,16 @@ msgstr "ターゲット"
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:140
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr ""
+"ターゲットは最適化フラグとデバッグフラグを制御します。各モードの意味は次のと"
+"おりです:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:142
 msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
 msgstr ""
+"**debug**\\ : C++デバッグシンボル、ランタイムチェック(チェックを実行してエ"
+"ラーを報告する)を使用してビルドし、最適化なしでビルドします。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid ""
@@ -232,13 +267,16 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:161
 msgid "Bits"
-msgstr ""
+msgstr "ビット"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:163
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
 msgstr ""
+"ビットは、バイナリを実行するCPUまたはOSのバージョンを制御するためのものです。"
+"主にデスクトッププラットフォームに焦点が当てられており、それ以外の場所では無"
+"視されています。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
 msgid "**32**: Build binaries for 32-bit platforms."
@@ -261,7 +299,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:180
 msgid "Other build options"
-msgstr ""
+msgstr "その他のビルドオプション"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:182
 msgid ""
@@ -269,12 +307,17 @@ msgid ""
 "Godot should be built (compiler, debug options, etc.) as well as the "
 "features to include/disable."
 msgstr ""
+"Godotのビルド方法 (コンパイラ、デバッグ オプションなど)と、インクルード/無効"
+"化する機能を構成するために使用できるビルドオプションは他にもいくつかありま"
+"す。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:186
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
 msgstr ""
+"コンパイルするバージョンの各オプションの詳細については、 ``scons --help`` の"
+"出力を確認してください。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
 msgid "Export templates"
@@ -287,6 +330,10 @@ msgid ""
 "build them yourself (in case you want newer ones, you are using custom "
 "modules, or simply don't trust your own shadow)."
 msgstr ""
+"公式エクスポートテンプレートは、Godot Engineサイトからダウンロードできます: "
+"`godotengine.org <https://godotengine.org/>`_\\ 。ただし、新しいモジュールが"
+"必要な場合、カスタム モジュールを使用している場合、または単に自分のシャドウを"
+"信頼しない場合は、自分でビルドすることもできます。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:197
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:4
 msgid "Import plugins"
-msgstr ""
+msgstr "プラグインのインポート"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:7
 msgid "Introduction"
@@ -42,6 +42,11 @@ msgid ""
 "color, and the resulting color will be used as the albedo (main color) of "
 "the imported material."
 msgstr ""
+"このチュートリアルでは、単純なインポートプラグインを作成して、カスタムテキス"
+"トファイルをマテリアルリソースとしてロードする方法を示します。 このテキスト"
+"ファイルには、色の3つのチャネルを表すコンマで区切られた3つの数値が含まれ、結"
+"果の色はインポートされたマテリアルのアルベド(メインカラー)として使用されま"
+"す。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:20
 msgid ""
@@ -49,28 +54,38 @@ msgid ""
 "doubt, refer to the :ref:`doc_making_plugins` page. This also assumes you "
 "are acquainted with Godot's import system."
 msgstr ""
+"このチュートリアルでは、汎用プラグインの作成方法を理解していることを前提とし"
+"ています。よく理解していない場合は、\\ :ref:`doc_making_plugins`\\ ページを参"
+"照してください。また、Godotのインポートシステムに精通していることを前提として"
+"います。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:24
 msgid ""
 "The sample file to import contains only a line representing the pure blue "
 "color (zero red, zero green, and full blue):"
 msgstr ""
+"インポートするサンプルファイルには、純粋な青色(赤がゼロ、緑がゼロ、青がフル)"
+"を表す行のみが含まれています:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:32
 msgid "Configuration"
-msgstr ""
+msgstr "構成"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:34
 msgid ""
 "First we need a generic plugin that will handle the initialization and "
 "destruction of our import plugin. Let's add the ``plugin.cfg`` file first:"
 msgstr ""
+"まず、インポートプラグインの初期化と破棄を処理する汎用プラグインが必要です。"
+"最初に ``plugin.cfg`` ファイルを追加してみましょう:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:47
 msgid ""
 "Then we need the ``material_import.gd`` file to add and remove the import "
 "plugin when needed:"
 msgstr ""
+"次に、必要に応じてインポート プラグインを追加および削除する "
+"``material_import.gd`` ファイルが必要です:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:66
 msgid ""
@@ -90,10 +105,13 @@ msgid ""
 "explicitly released from the memory with the ``free()`` function. It will be "
 "released automatically by the engine when it goes out of scope."
 msgstr ""
+"インポートプラグインは参照型なので、 ``free()`` 関数を使用してメモリから明示"
+"的に解放する必要はありません。スコープ外になると、エンジンによって自動的に解"
+"放されます。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:80
 msgid "The EditorImportPlugin class"
-msgstr ""
+msgstr "エディタインポートプラグイン クラス"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:82
 msgid ""
@@ -104,7 +122,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:87
 msgid "Let's begin to code our plugin, one method at time:"
-msgstr ""
+msgstr "プラグインのコーディングを始めましょう:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:98
 msgid ""
@@ -129,6 +147,9 @@ msgid ""
 "\"Import as Silly Material\"*. Yes, this one is a bit silly, but you "
 "certainly can come up with a descriptive name for your plugin."
 msgstr ""
+"この名前は、「名前を付けてインポート」の続きとして選択する必要があります。 例"
+"えば、 \\ *「愚かな素材としてインポート」*\\ 。 はい、これは少しばかげていま"
+"すが、プラグインにわかりやすい名前を付けることができます。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:122
 msgid ""
@@ -146,6 +167,10 @@ msgid ""
 "and should not be imported. You have to be careful when importing to "
 "validate the data. Never expect the file to be well-formed."
 msgstr ""
+"``.json`` や ``.txt`` などの一般的な拡張機能は、多くのプラグインで使用される"
+"場合があります。また、プロジェクト内には、ゲームのデータにすぎず、インポート"
+"してはならないファイルが存在する可能性もあります。データを検証するには、イン"
+"ポート時に注意が必要です。ファイルが整形式であることを期待しないでください。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:138
 msgid ""
@@ -155,6 +180,11 @@ msgid ""
 "valid extensions for the same resource), you need to inform what will be the "
 "used in the import."
 msgstr ""
+"インポートされたファイルは、プロジェクトのルートにある ``.import`` フォルダに"
+"保存されます。インポートするリソースの種類と一致する必要がありますが、Godotは"
+"使用する内容を知ることができないため(同じリソースに対して複数の有効な拡張機能"
+"が存在する可能性があるため)、インポートで使用される内容を通知する必要がありま"
+"す。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:144
 msgid ""
@@ -163,6 +193,10 @@ msgid ""
 "resources can use the ``res`` extension. However, this is not enforced in "
 "any way by the engine."
 msgstr ""
+"マテリアルを読み込むので、このようなリソースタイプには特別な拡張子を使用しま"
+"す。シーンをインポートする場合は、``scn`` を使うことができます。汎用リソース"
+"は ``res`` 拡張子を使用できます。ただし、これはエンジンによって強制されませ"
+"ん。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:154
 msgid ""
@@ -170,12 +204,18 @@ msgid ""
 "property slot it belongs to. This allows drag and drop from the FileSystem "
 "dock to a property in the Inspector."
 msgstr ""
+"インポートされたリソースには特定のタイプがあるため、エディタはリソースがどの"
+"プロパティスロットに属しているかを知ることができます。これにより、 「ファイル"
+"システム」 ドックから 「インスペクタ」 のプロパティーにドラッグ&ドロップでき"
+"ます。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:158
 msgid ""
 "In our case it's a :ref:`class_SpatialMaterial`, which can be applied to 3D "
 "objects."
 msgstr ""
+"この例では、3Dオブジェクトに適用できる\\ :ref:`class_SpatialMaterial`\\ で"
+"す。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:161
 msgid ""
@@ -183,10 +223,13 @@ msgid ""
 "create multiple import plugins. You can abstract the import code on another "
 "file to avoid duplication in this regard."
 msgstr ""
+"同じ拡張子から異なるタイプをインポートする必要がある場合は、複数のインポート"
+"プラグインを作成する必要があります。インポートコードを別のファイルに抽象化し"
+"て、重複を避けることができます。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:166
 msgid "Options and presets"
-msgstr ""
+msgstr "オプションとプリセット"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:168
 msgid ""
@@ -195,18 +238,25 @@ msgid ""
 "can also create different presets to make it easier for the user. The "
 "following image shows how the options will appear in the editor:"
 msgstr ""
+"プラグインは、ユーザーがリソースのインポート方法を制御できるように、さまざま"
+"なオプションを提供できます。選択したオプションのセットが一般的な場合は、異な"
+"るプリセットを作成して、ユーザーが簡単に使用できるようにすることもできます。"
+"次の図は、エディタでオプションがどのように表示されるかを示しています:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:175
 msgid ""
 "Since there might be many presets and they are identified with a number, "
 "it's a good practice to use an enum so you can refer to them using names."
 msgstr ""
+"プリセットが多く、数値で識別される可能性があるため、名前を使用して参照できる"
+"ように列挙型を使用することをお知めします。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:187
 msgid ""
 "Now that the enum is defined, let's keep looking at the methods of an import "
 "plugin:"
 msgstr ""
+"列挙型が定義されたので、インポート プラグインのメソッドを見てみましょう:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:195
 msgid ""
@@ -232,12 +282,18 @@ msgid ""
 "pattern to return something too. Although Godot won't ask for presets beyond "
 "the preset count you defined, it's always better to be on the safe side."
 msgstr ""
+"ここで ``match`` ステートメントを使用して、コードをより構造化できます。 これ"
+"により、将来的に新しいプリセットを簡単に追加できます。catch allも何かを返す時"
+"に使います。Godotでは、定義したプリセット数を超えるプリセットは要求されません"
+"が、常に安全側にあることをお勧めします。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:220
 msgid ""
 "If you have only one preset you could simply return its name directly, but "
 "if you do this you have to be careful when you add more presets."
 msgstr ""
+"プリセットが1つしかない場合は、名前を直接返すだけですが、これを行う場合は、プ"
+"リセットを追加するときに注意する必要があります。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:235
 msgid ""
@@ -274,6 +330,8 @@ msgid ""
 "The name of the option. When showed, underscores become spaces and first "
 "letters are capitalized."
 msgstr ""
+"オプションの名前。表示すると、アンダースコアはスペースになり、最初の文字は大"
+"文字になります。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "``default_value``"
@@ -281,11 +339,11 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "Any"
-msgstr ""
+msgstr "任意"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "The default value of the option for this preset."
-msgstr ""
+msgstr "このプリセットのオプションの既定値。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 msgid "``property_hint``"
@@ -294,7 +352,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:252
 msgid "Enum value"
-msgstr ""
+msgstr "列挙値"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 msgid ""
@@ -311,6 +369,8 @@ msgid ""
 "The hint text of the property. The same as you'd add in the ``export`` "
 "statement in GDScript."
 msgstr ""
+"プロパティのヒントテキスト。GDScriptの ``export`` ステートメントに追加するの"
+"と同じです。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:252
 msgid "``usage``"
@@ -327,6 +387,8 @@ msgid ""
 "The ``name`` and ``default_value`` keys are **mandatory**, the rest are "
 "optional."
 msgstr ""
+"``name`` キーと ``default_value`` キーは\\ **必須**\\ で、残りは省略可能で"
+"す。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:257
 msgid ""
@@ -343,6 +405,9 @@ msgid ""
 "(by making ``get_preset_count`` return zero). You have to return an array "
 "even it's empty, otherwise you can get errors."
 msgstr ""
+"``get_import_options`` メソッドは、プリセットを定義しない場合でも呼び出されま"
+"す( ``get_preset_count`` を0にして返す)。空であっても配列を返さなければなら"
+"ず、さもないとエラーが発生します。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:273
 msgid ""
@@ -357,10 +422,12 @@ msgid ""
 "If you need to make certain option visible only if another is set with a "
 "certain value, you can add the logic in this method."
 msgstr ""
+"特定のオプションを表示する必要がある場合は、別のオプションが特定の値で設定さ"
+"れている場合にのみ、このメソッドにロジックを追加できます。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:282
 msgid "The ``import`` method"
-msgstr ""
+msgstr "``import`` メソッド"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:284
 msgid ""
@@ -382,6 +449,8 @@ msgid ""
 "If there's an error when opening the file, we return it to let the editor "
 "know that the import wasn't successful."
 msgstr ""
+"ファイルを開くときにエラーが発生した場合は、それを返して、インポートが失敗し"
+"たことをエディタに知らせます。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:319
 msgid ""
@@ -389,6 +458,9 @@ msgid ""
 "that are separated by a comma. If there are more or less than the three "
 "values, it considers the file invalid and reports an error."
 msgstr ""
+"このコードは、前に読み込んだファイルの行を取得し、コンマで区切られた断片に分"
+"割します。 3つよりも多いまたは少ない場合、ファイルは無効であると見なされ、エ"
+"ラーが報告されます。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:323
 msgid ""
@@ -423,7 +495,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:352
 msgid "Platform variants and generated files"
-msgstr ""
+msgstr "プラットフォームバリアントと生成されたファイル"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:354
 msgid ""
@@ -433,6 +505,10 @@ msgid ""
 "your import method. Both of them are arrays that you can fill with "
 "information."
 msgstr ""
+"お気付きかもしれませんが、このプラグインは ``import`` メソッドの2つの引数を無"
+"視しています。これらは\\ *戻り引数*\\ (したがって、名前の先頭に ``r`` があり"
+"ます)で、これはエディタがimportメソッドを呼び出した後にこれらの引数から読み込"
+"むことを意味します。どちらも情報を格納できる配列です。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:359
 msgid ""
@@ -449,12 +525,17 @@ msgid ""
 "before the extension, and then push the tag to the ``r_platform_variants`` "
 "array so the editor can know that you did."
 msgstr ""
+"プラットフォームバリアントをインポートするには、拡張機能の前に機能タグを付け"
+"て保存してから、タグを ``r_platform_variants`` 配列にプッシュして、エディタが"
+"それを認識できるようにする必要があります。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:368
 msgid ""
 "For an example, let's say we save a different material for mobile platform. "
 "We would need to do something like the following:"
 msgstr ""
+"たとえば、モバイルプラットフォーム用に別のマテリアルを保存したとします。次の"
+"ような操作を行う必要があります:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:376
 msgid ""
@@ -463,6 +544,9 @@ msgid ""
 "to understand the dependencies and make sure the extra file is not "
 "inadvertently deleted."
 msgstr ""
+"``r_gen_files`` 引数は、インポートプロセス中に生成され、保持する必要がある追"
+"加のファイル用です。 エディターはこれを見て依存関係を理解し、余分なファイルが"
+"誤って削除されないようにします。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:381
 msgid ""
@@ -470,10 +554,12 @@ msgid ""
 "save. As an example, let's create another material for the next pass and "
 "save it in a different file:"
 msgstr ""
+"これは配列でもあるので、保存するファイルの完全なパスで埋められます。たとえ"
+"ば、次のパス用に別のマテリアルを作成し、別のファイルに保存してみましょう:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:397
 msgid "Trying the plugin"
-msgstr ""
+msgstr "プラグインを試す"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:399
 msgid ""
@@ -490,6 +576,10 @@ msgid ""
 "dock. If you select it and focus the Import dock, you can see the only "
 "option to select there."
 msgstr ""
+"すべてがうまくいけば、インポートプラグインがエディタに追加され、ファイルシス"
+"テムがスキャンされ、カスタムリソースがファイルシステムドックに表示されます。"
+"選択して「インポート」ドックにフォーカスを合わせると、選択する唯一のオプショ"
+"ンが表示されます。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:409
 msgid ""
@@ -505,6 +595,9 @@ msgid ""
 "\"Reimport\". This will update the imported material and should "
 "automatically update the view showing the red color instead."
 msgstr ""
+"「インポートドック]」に移動し、「とにかく赤を使用」 オプションを有効にし、"
+"「再インポート」をクリックします。これにより、読み込まれたマテリアルが更新さ"
+"れ、代わりに赤い色を示すビューが自動的に更新されます。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:420
 msgid ""
@@ -513,3 +606,8 @@ msgid ""
 "data in a custom format and then use it in Godot as if they were native "
 "resources. This shows how the import system is powerful and extendable."
 msgstr ""
+"以上です!最初のインポートプラグインが完了しました。自分の好きなフォーマットの"
+"プラグインを作ってみましょう。これは、カスタム・フォーマットでデータを作成"
+"し、それをあたかもネイティブ・リソースであるかのようにGodotで使用する場合に非"
+"常に便利です。これは、インポート・システムがいかに強力で拡張可能であるかを示"
+"しています。"

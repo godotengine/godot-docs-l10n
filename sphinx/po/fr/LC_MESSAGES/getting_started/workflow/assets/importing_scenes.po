@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,8 @@ msgstr ""
 "fidèlement que possible."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
-msgid "Godot supports the following 3D *scene file fomats*:"
+#, fuzzy
+msgid "Godot supports the following 3D *scene file formats*:"
 msgstr ""
 "Godot prend en charge les *formats de fichiers de scènes* 3D suivants :"
 
@@ -70,6 +71,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:19
 msgid "ESCN, a Godot specific format that Blender can export with a plugin."
 msgstr ""
+"ESCN, un format spécifique à Godot que Blender peut exporter à l'aide d'un "
+"plugin."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:21
 msgid ""
@@ -165,6 +168,9 @@ msgid ""
 "glb`` file), glTF embedded (``.gltf`` file), and with textures (``gltf`` + "
 "``.bin`` + textures)."
 msgstr ""
+"Il y a trois façons d'exporter les fichiers glTF depuis Blender. En tant que "
+"binaire glTF (fichier ``.glb``), glTF intégré (fichier ``.gltf``), et avec "
+"textures (``gltf`` + ``.bin``+ textures)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:62
 msgid ""
@@ -172,6 +178,10 @@ msgid ""
 "mesh and textures set up in Blender. When brought into Godot the textures "
 "are part of the object's material file."
 msgstr ""
+"glTF fichiers binaires sont les plus petits des trois options. Ils "
+"comprennent le maillage et les textures mis en place dans Blender. "
+"Lorsqu'elles sont introduites dans Godot, les textures font partie du "
+"fichier matériel de l'objet."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:65
 msgid ""
@@ -179,6 +189,10 @@ msgid ""
 "provide extra functionality in Godot, and shouldn't be used since they have "
 "a larger file size."
 msgstr ""
+"Les fichiers intégrés glTF fonctionnent de la même manière que les fichiers "
+"binaires. Ils n'offrent pas de fonctionnalités supplémentaires dans Godot, "
+"et ne devraient pas être utilisés car ils ont une taille de fichier plus "
+"grande."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:68
 msgid ""
@@ -189,12 +203,21 @@ msgid ""
 "files separate from the material file. If you don't need either of those "
 "glTF binary files are fine."
 msgstr ""
+"Il y a deux raisons d'utiliser glTF avec les textures séparées. La première "
+"est d'avoir la description de la scène dans un format textuel et les données "
+"binaires dans un fichier binaire séparé. Cela peut être utile pour le "
+"contrôle de la version si vous souhaitez passer en revue les modifications "
+"dans un format basé sur le texte. La deuxième est que vous avez besoin des "
+"fichiers de texture séparés du fichier matériel. Si vous n'avez besoin ni de "
+"l'un ni de l'autre, les fichiers binaires glTF sont très bien."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:73
 msgid ""
 "Blender does not export emissive textures with the glTF file. If your model "
 "uses one it must be brought in separately."
 msgstr ""
+"Blender n'exporte pas de textures émistives avec le fichier glTF. Si votre "
+"modèle en utilise un, il doit être introduit séparément."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:76
 msgid "Exporting ESCN files from Blender"
@@ -602,15 +625,16 @@ msgstr "Pré-calcul"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:235
 msgid "Whether or not the mesh is used in baked lightmaps."
-msgstr ""
+msgstr "Que le maillage soit utilisé ou non dans les lumières préparées."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:237
 msgid "**Disabled:** The mesh is not used in baked lightmaps."
 msgstr ""
+"**Désactivé:** Le maillage n'est pas utilisé dans les lumières préparées."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
 msgid "**Enable:** The mesh is used in baked lightmaps."
-msgstr ""
+msgstr "**Activer:** Le maillage est utilisé dans les lumières préparées."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:239
 msgid ""

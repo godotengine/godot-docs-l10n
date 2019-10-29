@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,6 +36,17 @@ msgid ""
 "Finally, you can add collision, occlusion, and navigation shapes to tiles, "
 "adding additional functionality to the TileMap."
 msgstr ""
+"Un catalogue de tuile (littéralement une \"carte de tuile\") est une grille "
+"utilisé pour créer la présentation/le fond graphique d'un jeu. Il y à "
+"plusieurs bénéfices à utiliser le nœud :ref:`TileMap <class_TileMap>` pour "
+"concevoir vos niveaux. Pour commencer, ça rend possible de dessiner le "
+"*layout* en \"peignant\" les tuiles sur la grille, ce qui est beaucoup plus "
+"rapide que de placer individuellement chacune des tuiles sous formes de "
+"Sprites  :ref:`Sprite <class_Sprite>`. Secondement, les tuiles permettent "
+"d'avoir des niveaux bien plus larges car elles sont optimisées pour être "
+"dessinés en grand nombre. Finalement, vous pouvez ajouter des collisions, "
+"des occlusions, et des formes de navigations aux tuiles, ajoutant des "
+"fonctionnalités  supplémentaires au catalogue de tuile."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid "Project setup"
@@ -48,10 +59,16 @@ msgid ""
 "nl/assets/abstract-platformer>`_ but for this demo we'll stick to this small "
 "set."
 msgstr ""
+"Pour cette démo, on va utiliser les tuiles prises du pack d'art \"Abstract "
+"Platformer\" de Kenney. Vous pouvez trouver le pack complet `ici <https://"
+"kenney.nl/assets/abstract-platformer>` mais pour cette démo on gardera ce "
+"petit pack."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid "Create a new project and place the above image in the project folder."
 msgstr ""
+"Créez un nouveau projet et placez l'image ci dessus dans le dossier du "
+"projet."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:31
 msgid ""
@@ -61,6 +78,13 @@ msgid ""
 "the Import tab. Turn off ``Filter`` and click \"Reimport\". See :ref:"
 "`doc_import_images` for details."
 msgstr ""
+"Quand vous utilisez un tileset (littéralement, un ensemble de tuiles), il "
+"est important que les tuiles côtes à côtes s'accordent ensemble. Le "
+"comportement par défaut de Godot est d'importer les images 2D en utilisant "
+"un mode \"filtre interpolé\" ce qui a pour résultats de très laides bordures "
+"entre les tuiles. Sélectionne l'image et clique sur l'onglet import. "
+"Désactive ``Filter`` et clique \"Reimporter\". Pour plus de détail, va voir :"
+"ref:`doc_import_images`."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
 #, fuzzy
@@ -73,53 +97,72 @@ msgid ""
 "TileMap uses a square grid of tiles. You can also use a perspective-based "
 "\"Isometric\" mode or define your own custom tile shape."
 msgstr ""
+"Ajoute un nouveau nœud  :ref:`TileMap <class_TileMap>` à la scène. Par "
+"défaut, un catalogue de tuiles utilise une grille carrée de tuiles. Vous "
+"pouvez aussi utilisé le mode \"isométrique\" basé sur la perspective ou "
+"définir vos propres forme de tuiles."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid ""
 "Under the \"Cell\" section in the Inspector are many properties you can "
 "adjust to customize your tilemap's behavior:"
 msgstr ""
+"Dans la section \"Cell\" (pour cellule) de l'inspecteur, il y a de "
+"nombreuses propriétés que vous pouvez ajuster pour customisez le "
+"comportement de votre catalogue de tuiles:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:52
 #, fuzzy
 msgid "``Cell Size``"
-msgstr "``Center``"
+msgstr "``Taille de la cellule``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:51
 msgid ""
 "This defines the size of the grid. This should match the pixel size of your "
 "tiles. The default value is ``(64, 64)``."
 msgstr ""
+"Ceci détermine la taille de la grille, ce qui devrai correspondre à la "
+"taille en pixel de chaque tuiles. La valeur par défaut est ``(64, 64)``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:56
+#, fuzzy
 msgid "``YSort``"
-msgstr ""
+msgstr "``YSort``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:55
 msgid ""
 "This causes tiles to be drawn in order of their ``Y`` position, so that "
 "\"lower\" tiles are drawn on top of \"higher\" ones."
 msgstr ""
+"Ceci provoque le dessin des tuiles à être dans l'ordre de leurs position "
+"selon l'axe Y, ce qui provoquent les tuiles qui sont plus bas à être "
+"dessinées par dessus les tuiles les plus hautes."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid "``Half Offset`` and ``Tile Origin``"
-msgstr ""
+msgstr "``Demi décalage`` et ``Origine des Tuiles``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid ""
 "These properties affect the position of the tile relative to the grid "
 "position."
 msgstr ""
+"Ces propriétés affectent la position des tuiles par rapport à la position de "
+"la grille."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:63
 msgid "``Quadrant``"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
+#, fuzzy
 msgid ""
 "Defines the chunk size used for batched drawing. This can negatively affect "
 "performance. Don't change it unless you know what you're doing."
 msgstr ""
+"Définis la taille des morceaux utilisé pour le \"dessin en lots\". Cette "
+"option peut affecter négativement les performances, ne pas changer si vous "
+"ne savez pas ce que vous faites."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 #, fuzzy
@@ -129,10 +172,14 @@ msgstr "Transformation"
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
 msgstr ""
+"Utilisé pour changer la forme de la tuile, à utiliser si vous avez des "
+"tuiles non carrés ."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:68
 msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
+"Chacune de ces options peut être laissée à son paramètre par défaut pour "
+"cette démo."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
 #, fuzzy
@@ -147,21 +194,28 @@ msgid ""
 "other properties. When the game runs, the TileMap combines the individual "
 "tiles into a single object."
 msgstr ""
+"Une fois votre catalogue de tuiles configuré, il est temps d'ajouter un :ref:"
+"`TileSet <class_TileSet>`. Un jeu de tuile est une `Resource "
+"<class_Resource>` qui contient les données à propos de vos tuiles, leurs "
+"textures, formes de collisions et autres propriétés. Lorsque le jeu tourne, "
+"le catalogue de tuile combine chaque tuile dans un unique objet."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:79
+#, fuzzy
 msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
 "TileSet\"."
 msgstr ""
+"Pour créer un nouveau jeu de tuile, cliquez sur la propriété \"Tile Set\" et "
+"sélectionnez \"New TileSet\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
-#, fuzzy
 msgid ""
 "When you do this, the \"TileSet\" panel will open at the bottom of the "
 "editor window:"
 msgstr ""
-"Cliquez sur la nouvelle ressource SpriteFrames et vous verrez un nouveau "
-"panneau apparaît en bas de la fenêtre de l'éditeur :"
+"Quand vous faites ça, vous verrez apparaître un nouveau panel \"TileSet\" en "
+"bas de la fenêtre de l'éditeur:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:89
 msgid ""
@@ -169,6 +223,9 @@ msgid ""
 "the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
 "image."
 msgstr ""
+"Commencez par ajouter la/les textures que vous utiliserez pour vos tuiles : "
+"cliquez sur le bouton \"Ajouter des textures au tileset\" et sélectionner "
+"l'image  ``tilesheet.png``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
@@ -176,6 +233,10 @@ msgid ""
 "want. Click the \"Enable Snap\" button to make it easier to select the "
 "entire tile. A yellow rectangle appears around the selected tile."
 msgstr ""
+"Ensuite, cliquez sur \"New Single Tile\" et glissez-y l'image pour "
+"sélectionner la tuiles que vous voulez. Cliquez sur \"activez l'aimantation "
+"et afficher la grille\" pour qu'il soit plus facile de sélectionner la tuile "
+"en entier. Un rectangle jaune apparaît  autour de la tuile sélectionnée."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:98
 msgid ""
@@ -183,15 +244,18 @@ msgid ""
 "created tile now appears on the right side. Click in the viewport and you "
 "can place tiles. Right-click to remove them."
 msgstr ""
+"Cliquez sur le catalogue de tuile (TileMap) dans l'arbre de scène et vous "
+"verrez la tuile nouvellement crée apparaître sur le coté droit. Cliquez dans "
+"la fenêtre d'affichage et vous pouvez placer des tuiles. Clique-droit pour "
+"les enlever."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:104
-#, fuzzy
 msgid ""
 "It's easy to accidentally select and move the tilemap node. To avoid this, "
 "use the node's lock button:"
 msgstr ""
 "Il est facile de sélectionner et de déplacer accidentellement le nœud "
-"tilemap. Pour éviter cela, utilisez le bouton de verrouillage du nœud :"
+"TileMap. Pour éviter cela, utilisez le bouton de verrouillage du nœud :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:110
 msgid "Collision Shapes"
@@ -203,6 +267,9 @@ msgid ""
 "obstacles, for example - then you'll need to add collision shapes to any "
 "tiles that you want to be considered \"solid\"."
 msgstr ""
+"Si vous créer un terrain qui a besoin de collisions -murs, sol, obstacles, "
+"par exemples- vous aurez besoin d'ajouter des formes de collisions à chaque "
+"tuile que vous voulez considérer \"solide\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:116
 msgid ""
@@ -212,15 +279,23 @@ msgid ""
 "button. Make sure you still have grid snap enabled, then click and drag in "
 "the tile. A square collision shape appears in light blue:"
 msgstr ""
+"Cliquez sur \"TileSet\" en bas de la fenêtre de l'éditeur pour retourner sur "
+"l'outil tileset. Cliquez sur la tuile que vous avez précédemment définie "
+"(souligné en jaune). Sélectionnez l'onglet \"Collision\" et cliquez sur le "
+"bouton \"Créer un nouveau rectangle\". Assurez vous d'avoir la grille "
+"toujours activée puis cliquez-glissez sur la tuile : Une forme de collision "
+"carré apparaît en bleu clair :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:124
 msgid ""
 "You can add occlusion and navigation shapes to the tile in the same way."
 msgstr ""
+"Vous pouvez ajouter de l'occlusion et des formes de navigation à la tuiles "
+"de la même manière."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:127
 msgid "Atlas tiles"
-msgstr ""
+msgstr "Atlas de Tuile"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:129
 msgid ""
@@ -228,26 +303,41 @@ msgid ""
 "tiles all at once using an atlas. Click \"New Atlas\" and drag to select the "
 "entire tile sheet."
 msgstr ""
+"Plutôt que d'ajouter une tuile à la fois, vous pouvez définir un groupe de "
+"tuiles en utilisant un Atlas. Cliquez sur le bouton \"New Atlas\" dans "
+"l'onglet TileSet et cliquez-glissez pour sélectionner l'entière feuille de "
+"tuile."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:135
+#, fuzzy
 msgid ""
 "If you haven't already, make sure to change the \"Step\" in the snap "
 "settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
 "You can find this in the Inspector:"
 msgstr ""
+"Si ce n'est pas encore fait, assure toi de changer le \"pas de la grille\" "
+"dans configurer le magnétisme intelligent à `(64, 64)`, autrement tes tuiles "
+"risques d'être coupées en pièces plus petites. Tu peut trouver ça dans "
+"l'inspecteur :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:141
+#, fuzzy
 msgid ""
 "Once you've defined the atlas you can add collision shapes to the individual "
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
 "represent the atlas."
 msgstr ""
+"Une fois définis votre Atlas, vous pouvez ajouter des formes de collisions "
+"au tuiles individuelles comme avant. Vous pouvez aussi cliquez sur l'\"Icon"
+"\"pour sélectionner une des tuiles que représente l'atlas."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:145
 msgid ""
 "Back in the TileMap, you can select the atlas tile and you'll see all of the "
 "tiles it contains:"
 msgstr ""
+"De retour au catalogue de tuile, vous pouvez sélectionner l'atlas et vous "
+"verrez toutes les tuiles qu'il contient :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:150
 msgid ""
@@ -255,10 +345,13 @@ msgid ""
 "grouping similar tiles together when you're working with a large number of "
 "tiles."
 msgstr ""
+"En plus d'économiser du temps au moment de définir les tuiles, ça peut "
+"permettre de grouper les tuiles similaires ensemble quand vous travailler "
+"avec un large nombre de tuile."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:154
 msgid "Tips and tricks"
-msgstr ""
+msgstr "Trucs et Astuces"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:156
 msgid ""
@@ -266,19 +359,29 @@ msgid ""
 "may notice lines appearing between your tiles. To fix this, open Project "
 "Settings and enable \"Use Pixel Snap\" in the \"Rendering/Quality\" section."
 msgstr ""
+"Si vous utilisez une  :ref:`Camera2D <class_Camera2D>` pour faire défiler "
+"votre niveau, vous risquez de remarquer que des lignes apparaissent entre "
+"vos tuiles. Pour empêcher ça, ouvrez \"Projet -> Paramètres de Projet\" et "
+"dans la section \"Rendering -> Quality\"activez \"Use Pixel Snap\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:160
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr ""
+"Vous pouvez basculer et tourner vos tuiles en utilisant les icônes en haut à "
+"droite de l'éditeur."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:162
 msgid ""
 "To draw straight lines, hold <Shift> while clicking and dragging a tile."
 msgstr ""
+"pour faire des ligne droite, restez appuyé sur Maj (majuscule) en cliquant "
+"glissant une tuile."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:164
 msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."
 msgstr ""
+"Des outils comme copier, coller et remplir peuvent être trouvés dans le menu "
+"\"TileMap\" en haut à droite."

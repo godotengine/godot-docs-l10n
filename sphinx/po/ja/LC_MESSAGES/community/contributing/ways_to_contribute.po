@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:4
 msgid "Ways to contribute"
-msgstr ""
+msgstr "貢献する方法"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:6
 msgid ""
@@ -28,6 +28,10 @@ msgid ""
 "working *pro bono* on their free time, out of personal interest and for the "
 "love of creating a libre engine of exceptional quality."
 msgstr ""
+"Godot Engineは、非営利のコミュニティ主導の無料のオープンソースプロジェクトで"
+"す。 ほとんどすべての開発者(ただし、主任開発者のJuan、詳細は下記)は、個人的な"
+"興味から、そして非常に優れた品質のlibreエンジンを作成するために、自由時間に無"
+"償で取り組んでいます。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:11
 msgid ""
@@ -36,6 +40,10 @@ msgid ""
 "such a big project, making it possible for everybody to bring something "
 "positive to the engine, regardless of their skill set:"
 msgstr ""
+"これは、Godotが成功するためには、エンジンに貢献して関与するためにできるだけ多"
+"くのユーザーが必要であることを意味します。 このような大きなプロジェクトに貢献"
+"するには、スキルセットに関係なく、誰もがエンジンに前向きなものをもたらすこと"
+"ができるようにする多くの方法があります:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:16
 msgid ""
@@ -47,6 +55,13 @@ msgid ""
 "the word about our great engine, which has no marketing budget and can "
 "therefore only rely on its community to become more mainstream."
 msgstr ""
+"**コミュニティの一員になりましょう**\\ 。 Godotに貢献し、これを改善するための"
+"最善の方法は、単にエンジンを使用して、口コミ、ゲーム、ブログ投稿、チュートリ"
+"アル、ビデオ、デモ、gamedevのクレジットまたはスプラッシュ画面で宣伝することで"
+"す フリーソフトウェアイベント、Q＆A、IRC、フォーラム、Discordなどのサポート。"
+"参加してください！ユーザーであり、支持者であることは、マーケティング予算がな"
+"く、そのため、より主流になるためにコミュニティに頼ることしかできない私たちの"
+"素晴らしいエンジンについての評判を広めるのに役立ちます。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:25
 msgid ""
@@ -57,6 +72,12 @@ msgid ""
 "will draw attention to Godot. So keep working on your awesome projects, each "
 "new game increases our credibility on the gamedev market!"
 msgstr ""
+"**ゲームを作りましょう**\\ 。 Godotが関連するマーケットプレーヤーであることを"
+"新規ユーザー、特に業界全体に納得させるには、Godotで作成した素晴らしいゲームが"
+"必要であることは周知の事実です。 このエンジンには2Dと3Dの両方のゲームに多くの"
+"可能性があることがわかっていますが、その若さから、Godotに注目を集める大きなリ"
+"リースはまだありません。 素晴らしいプロジェクトに取り組み続けてください。新し"
+"いゲームはゲーム開発市場での私たちの信頼を高めます!"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:32
 msgid ""
@@ -84,7 +105,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:54
 msgid "Contributing code"
-msgstr ""
+msgstr "コードの提供"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:56
 msgid ""
@@ -104,10 +125,17 @@ msgid ""
 "called \"pull request\" (PR), i.e. a proposal to directly merge one or more "
 "git commits (patches) into the main development branch."
 msgstr ""
+"そのため、誰もが\\ `Godotのソースコード <https://github.com/godotengine/"
+"godot>`_\\ を変更し、パッチ(すぐに適用できる方法で変更を説明するテキストファ"
+"イル)の形で上流のプロジェクトにそれらの変更を送り返す権利があります。 いわゆ"
+"る「プルリクエスト」(PR)、つまり、1つ以上のgitコミット(パッチ)をメイン開発ブ"
+"ランチに直接マージする提案を使用します。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:68
 msgid "Contributing code changes upstream has two big advantages:"
 msgstr ""
+"コードの変更をアップストリームに提供するには、次の 2 つの大きな利点がありま"
+"す:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:70
 msgid ""
@@ -119,6 +147,12 @@ msgid ""
 "in some cases it might still be relevant to keep your changes only for your "
 "own project, if they are too specific."
 msgstr ""
+"独自のコードは他の開発者によってレビューおよび改善され、アップストリームプロ"
+"ジェクトで直接維持されるため、新しいバージョンに移行するたびに独自の変更を再"
+"適用する必要はありません。 一方、変更は、プロジェクトだけでなく、すべてのユー"
+"ザーにとって有益であるように十分に汎用的である必要があるため、責任が伴いま"
+"す。 そのため、場合によっては、変更があまりにも具体的である場合は、自分のプロ"
+"ジェクトのみに変更を保持することが適切な場合があります。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:78
 msgid ""
@@ -127,6 +161,9 @@ msgid ""
 "the time of this writing, more than 300 developers have contributed code "
 "changes to the engine!"
 msgstr ""
+"コミュニティ全体があなたの仕事の恩恵を受け、他の貢献者も同じように振る舞い、"
+"あなたに有益なコードを提供します。この執筆時点では、300人以上の開発者がエンジ"
+"ンにコード変更を投稿しています!"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:83
 msgid ""
@@ -135,6 +172,9 @@ msgid ""
 "to use in the C++ code (indentation, brackets, etc.) or the git and PR "
 "workflow."
 msgstr ""
+"優れたコラボレーションと全体的な品質を確保するために、Godot開発者は、C++コー"
+"ド(インデント、括弧など)やgitおよびPRワークフローで使用するスタイルなど、コー"
+"ドの貢献に関するいくつかのルールを適用します。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:87
 msgid ""
@@ -150,16 +190,21 @@ msgid ""
 "Technical details about the PR workflow are outlined in a specific section, :"
 "ref:`doc_pr_workflow`."
 msgstr ""
+"PR ワークフローに関する技術的な詳細については、以下のセクションで概説されてい"
+"ます:\\  :ref:`doc_pr_workflow`\\ 。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:92
 msgid ""
 "Details about the code style guidelines and the ``clang-format`` tool used "
 "to enforce them are outlined in :ref:`doc_code_style_guidelines`."
 msgstr ""
+"コードスタイルガイドラインと、それらを適用するために使用される ``clang-"
+"format`` ツールの詳細については、\\ :ref:`doc_code_style_guidelines`\\ で説明"
+"されています。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:97
 msgid "Testing and reporting issues"
-msgstr ""
+msgstr "テストとレポートの問題"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:99
 msgid ""
@@ -168,20 +213,26 @@ msgid ""
 "to report issues discovered in stable releases, so that they can be fixed in "
 "the development branch and in future maintenance releases."
 msgstr ""
+"エンジンに貢献するもう1つの優れた方法は、開発リリースまたは開発ブランチをテス"
+"トし、問題を報告することです。また、安定したリリースで発見された問題を報告し"
+"て、開発ブランチや将来のメンテナンスリリースで修正できるようにすることも役立"
+"ちます。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:105
 msgid "Testing development versions"
-msgstr ""
+msgstr "開発バージョンのテスト"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:107
 msgid "To help with the testing, you have several possibilities:"
-msgstr ""
+msgstr "テストを支援するために、いくつかの可能性があります:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:109
 msgid ""
 "Compile the engine from source yourself, following the instructions of the :"
 "ref:`Compiling <toc-devel-compiling>` page for your platform."
 msgstr ""
+"プラットフォームの\\ :ref:`コンパイル <toc-devel-compiling>`\\ ページの指示に"
+"従って、ソースからエンジンを自分でコンパイルします。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:112
 msgid ""
@@ -197,6 +248,9 @@ msgid ""
 "use official binaries or to compile yourself though, to be sure about the "
 "provenance of your binaries."
 msgstr ""
+"開発ブランチの「信頼できる」非公式ビルドをテストします。 信頼できるプロバイ"
+"ダーをコミュニティメンバーに尋ねてください。 可能な限り、公式のバイナリを使用"
+"するか、自分でコンパイルして、バイナリの出所を確認するのが最善です。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:120
 msgid ""
@@ -205,10 +259,13 @@ msgid ""
 "especially when using some niche features of the engine which might get less "
 "testing by the developers."
 msgstr ""
+"前述のように、特に開発者によるテストが少なくなる可能性のあるエンジンのニッチ"
+"な機能を使用する場合は、安定したリリースにまだ存在する可能性のあるバグに目を"
+"離さないようにしておくと便利です。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:126
 msgid "Filing an issue on GitHub"
-msgstr ""
+msgstr "GitHubで問題を提起する"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:128
 msgid ""
@@ -217,6 +274,9 @@ msgid ""
 "GitHub account to be able to open a new issue there, and click on the \"New "
 "issue\" button."
 msgstr ""
+"Godotは、バグレポートと機能強化の提案に\\ `GitHubの課題追跡 <https://github."
+"com/godotengine/godot/issues>`_\\ を使用します。そこで新規発行を開始するには"
+"GitHubアカウントが必要で、「新規発行」ボタンをクリックします。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:132
 msgid ""
@@ -235,6 +295,9 @@ msgid ""
 "and hopefully fix it. Here are some of the most important infos that you "
 "should always provide:"
 msgstr ""
+"したがって、他のGodotの貢献者がバグを理解し、バグを特定し、うまくいけば修正で"
+"きるように、関連する情報は何かを常に自問する必要があります。常に提供する必要"
+"がある最も重要な情報の一部を次に指定します:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:144
 msgid ""
@@ -243,6 +306,9 @@ msgid ""
 "bugs related to OS interfaces, such as file management, input, window "
 "management, audio, etc."
 msgstr ""
+"**オペレーティングシステム** バグはシステム固有の場合があります。これは、ファ"
+"イル管理、入力、ウィンドウ管理、オーディオなど、OS インターフェイスに関連する"
+"すべてのバグに特に関連します。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:149
 msgid ""
@@ -250,6 +316,8 @@ msgid ""
 "certain processors, graphic cards, etc. If you are able to, it can be "
 "helpful to include information on your hardware."
 msgstr ""
+"**ハードウェア** バグはハードウェア固有の場合があります。可能な場合は、ハード"
+"ウェアに関する情報を含めるのが役立ちます。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:153
 msgid ""
@@ -259,6 +327,11 @@ msgid ""
 "experiencing a known issue fixed in a later version, so knowing this from "
 "the start helps to speed up the diagnosis."
 msgstr ""
+"**Godotのバージョン** これは必須です。いくつかの問題は現在の安定版リリースに"
+"関連しているかもしれませんが、開発ブランチでは修正されています。また、古い"
+"バージョンのGodotを使用していて、新しいバージョンで修正された既知の問題が発生"
+"している可能性もあるため、このことを最初から知っておくと、診断の迅速化に役立"
+"ちます。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:159
 msgid ""
@@ -273,6 +346,14 @@ msgid ""
 "of issues in the tracker, and developers can only dedicate little time to "
 "each issue."
 msgstr ""
+"**バグを再現する方法** ほとんどの場合、バグは再現可能であり、すなわちいくつか"
+"の手順に従うことによって確実にそれらをトリガすることが可能です。誰もが問題を"
+"再現し、それを確認できるように、常にこれらの手順をできるだけ明確に記述してく"
+"ださい。理想的には、この問題を箱から取り除くデモ プロジェクトを作成し、それを"
+"圧縮して問題に添付します (ドラッグアンドドロップでこれを行うことができます)。"
+"問題を再現するのは些細なことだと思っても、それを再現できる最小限のプロジェク"
+"トを追加することは大きな付加価値です。トラッカーには何千もの問題があり、開発"
+"者は各問題に少しの時間しかかからないように注意する必要があります。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:170
 msgid ""
@@ -280,15 +361,18 @@ msgid ""
 "area prefilled with our issue template. Please try to follow it so that all "
 "issues are consistent and provide the required information."
 msgstr ""
+"「新規発行」ボタンをクリックすると、問題テンプレートがあらかじめ入力されたテ"
+"キスト領域が表示されます。すべての問題が一貫性を保ち、必要な情報を提供するよ"
+"うに、それに従ってください。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:175
 msgid "Contributing to the documentation"
-msgstr ""
+msgstr "ドキュメントへの貢献"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:177
 msgid ""
 "There are two separate resources referred to as \"documentation\" in Godot:"
-msgstr ""
+msgstr "Godotには、「ドキュメント」と呼ばれる2つの別個のリソースがあります:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:179
 msgid ""
@@ -299,6 +383,12 @@ msgid ""
 "the `doc/base/classes.xml` in Godot's git repository, and make a pull "
 "request. See :ref:`doc_updating_the_class_reference` for more details."
 msgstr ""
+"**クラスリファレンス** これは、GDScriptおよびその他のスクリプト言語に公開され"
+"ている完全なGodot APIのドキュメントです。 オフラインで、Godotのコードエディ"
+"ターで直接、またはオンラインで\\ :ref:`Godot API <toc-class-ref>`\\ で参照で"
+"きます。 クラス参照に貢献するには、Godotのgitリポジトリで `doc/base/classes."
+"xml` を編集し、プルリクエストを行う必要があります。\\ :ref:"
+"`doc_updating_the_class_reference`\\ を参照してください。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:187
 msgid ""

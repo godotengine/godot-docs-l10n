@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:4
 msgid "Audio streams"
-msgstr "Audio streams"
+msgstr "Flux audio"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:7
 msgid "Introduction"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:14
 msgid "AudioStream"
-msgstr "AudioStream"
+msgstr "Flux audio"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:16
 #, fuzzy
@@ -144,6 +144,11 @@ msgid ""
 "different reverb or sound qualities to handle action happening in a "
 "particular parts of your game world."
 msgstr ""
+"Les Area2D peuvent être utilisés pour dévier le son depuis n'importe lequel "
+"des AudioStreamPlayer2D qu'elles contiennent jusqu'à certains bus "
+"spécifiques. Cela rend possible de créer des bu avec différentes "
+"réverbération ou qualité sonore pour gérer les actions qui se produisent à "
+"certains endroits spécifiques de votre monde de jeu."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:65
 msgid "AudioStreamPlayer3D"
@@ -165,33 +170,49 @@ msgstr ""
 msgid ""
 "Similar to AudioStreamPlayer2D, an Area can divert the sound to an audio bus."
 msgstr ""
+"Similairement à un AudioStreamPlayer2D, une Area peut dévier le son vers un "
+"bus audio."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:75
 msgid ""
 "Unlike for 2D, the 3D version of AudioStreamPlayer has a few more advanced "
 "options:"
 msgstr ""
+"Contrairement à sa version 2D, l'AudioStreamPlayer a quelques options plus "
+"avancée :"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:80
 msgid "Reverb buses"
-msgstr ""
+msgstr "Bus de réverbération"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:82
+#, fuzzy
 msgid ""
 "Godot allows for 3D audio streams that enter a specific Area node to send "
 "dry and wet audio to separate buses. This is useful when you have several "
 "reverb configurations for different types of rooms. This is done by enabling "
 "this type of reverb in the **Reverb Bus** section of the Area's properties:"
 msgstr ""
+"Godot permet aux audio streams 3D qui entrent dans un nœud spécifique "
+"d'envoyer des sons secs et mouillés à de différents bus. Ceci est utile "
+"quand vous avez plusieurs configuration de réverbération pour différents "
+"type de pièces. L'effet est obtenu en activant ce type de réverbération dans "
+"la section **Reverb bus** des propriétés de l'Area :"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:89
+#, fuzzy
 msgid ""
 "At the same time, a special bus layout is created where each area receives "
 "the reverb info from each area. A Reverb effect needs to be created and "
 "configured in each reverb bus to complete the setup for the desired effect:"
 msgstr ""
+"Au même moment, un arrière-plan spécial pour bus est crée où chaque Area "
+"reçoit l'information des réverbérations depuis chacune des Area. Un effet de "
+"réverbération a besoin d'être crée et configuré dans chaque bus de "
+"réverbération pour finir la mise en place de l'effet désiré :"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:95
+#, fuzzy
 msgid ""
 "The Area's **Reverb Bus** section also has a parameter named **Uniformity**. "
 "Some types of rooms bounce sounds more than others (like a warehouse), so "
@@ -199,10 +220,15 @@ msgid ""
 "source may be far away. Playing around with this parameter can simulate that "
 "effect."
 msgstr ""
+"La section **Reverb bus** de l'Area a aussi un paramètre **Uniformity**. "
+"Certains types de pièces réfléchissent plus les sons que d'autres (comme un "
+"entrepôts par exemple), donc la réverbération peut être entendu quasi-"
+"uniformément à travers la pièce, même si la source de son est très éloignée. "
+"Jouer avec ce paramètre peut provoquer cet effet."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:102
 msgid "Doppler"
-msgstr "Doppler"
+msgstr "Effet Doppler"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:104
 msgid ""
@@ -211,6 +237,11 @@ msgid ""
 "Godot can track velocity changes in the AudioStreamPlayer3D and Camera "
 "nodes. Both nodes have this property, which must be enabled manually:"
 msgstr ""
+"Lorsque la vitesse relative entre une source et un récepteur de son change, "
+"ceci est perçu comme une augmentation ou diminution de la fréquence du son "
+"émis. Godot peut garder la traces de ces changements de vitesse dans les "
+"nœuds AudioStreamPlayer3D et Camera. Chacun de ces nœuds ont cette "
+"propriétés qui doit être activé manuellement :"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:111
 msgid ""

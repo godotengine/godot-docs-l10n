@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -411,7 +411,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:219
 msgid "Screen-Space Ambient Occlusion (SSAO)"
-msgstr ""
+msgstr "スクリーンスペース・アンビエント・オクルージョン (SSAO)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:223
 msgid ""
@@ -422,6 +422,12 @@ msgid ""
 "methods proposed previously act more on a larger scale (large regions) than "
 "at the smaller geometry level."
 msgstr ""
+"**Ambient** の節でも触れましたが、光源ノードから(その範囲外にあるか、遮られて"
+"いるといった理由で) 光が届かないエリアは、環境光が照らします。Godotは"
+"GIProbe、ReflectionProbe、Skyや、あるいは環境色を指定することで、これをシミュ"
+"レートすることができます。しかしこれらの方法はすべて、小さなジオメトリ・レベ"
+"ルではなく、より大きなスケール (大きな領域)にて効果が表れるという欠点がありま"
+"す。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:230
 msgid ""

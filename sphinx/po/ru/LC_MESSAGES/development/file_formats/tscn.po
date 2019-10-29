@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,27 +46,26 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:19
-#, fuzzy
 msgid "File structure"
-msgstr "Структура Узла"
+msgstr "Структура файла"
 
 #: ../../docs/development/file_formats/tscn.rst:21
 msgid "There are five main sections inside the TSCN file:"
-msgstr ""
+msgstr "TSCN-файл состоит из пяти основных секций:"
 
 #: ../../docs/development/file_formats/tscn.rst:23
 msgid "File Descriptor"
-msgstr ""
+msgstr "Дескриптор файла"
 
 #: ../../docs/development/file_formats/tscn.rst:24
 #: ../../docs/development/file_formats/tscn.rst:273
 msgid "External resources"
-msgstr ""
+msgstr "Внешние ресурсы"
 
 #: ../../docs/development/file_formats/tscn.rst:25
 #: ../../docs/development/file_formats/tscn.rst:295
 msgid "Internal resources"
-msgstr ""
+msgstr "Внутренние ресурсы"
 
 #: ../../docs/development/file_formats/tscn.rst:26
 msgid "Nodes"
@@ -83,6 +82,11 @@ msgid ""
 "(in theory) be the number of resources within the file. However, in "
 "practice, its value seems not to matter."
 msgstr ""
+"Дескриптор файла выглядит следующим образом ``[gd_scene load_steps=1 "
+"format=2]`` и должен располагаться в начале файла. Дескриптор имеет "
+"несколько параметров. Первый параметр - ``load_steps``. Теоретически, он "
+"должен отображать количество ресурсов внутри файла, однако, на практике, он "
+"ни на что не влияет."
 
 #: ../../docs/development/file_formats/tscn.rst:34
 msgid ""

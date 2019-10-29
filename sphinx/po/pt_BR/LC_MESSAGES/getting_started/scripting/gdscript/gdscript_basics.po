@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -758,7 +758,7 @@ msgstr "Inteiro Base 16 (hexadecimal)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:304
 msgid "``0b101010``"
-msgstr ""
+msgstr "``0b101010``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:304
 #, fuzzy
@@ -880,6 +880,9 @@ msgid ""
 "Short for \"integer\", it stores whole numbers (positive and negative). It "
 "is stored as a 64-bit value, equivalent to \"int64_t\" in C++."
 msgstr ""
+"Abreviação de \"inteiro\", armazena valores inteiros(positivos e negativos). "
+"Ele é armazenado como um valor de 64 bits, equivalente a  \"int64_t \" em C+"
+"+."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:361
 msgid "float"
@@ -892,6 +895,11 @@ msgid ""
 "data structures such as Vector2, Vector3, and PoolRealArray store 32-bit "
 "single-precision \"float\" values."
 msgstr ""
+"Armazena números reais, incluindo decimais, usando valores de ponto "
+"flutuante. Ele é armazenado como um valor de 64 bits, equivalente a \"Double "
+"\" em C++. Observação: atualmente, estruturas de dados, como Vector2, "
+"Vector3 e PoolRealArray armazenam 32 bit de ponto flutuante, ou seja 32 "
+"números após a virgula."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:369
 msgid ":ref:`String <class_String>`"
@@ -1363,6 +1371,13 @@ msgid ""
 msgstr ""
 "Se você passar um nome para um enum, ele também ira colocar todos os valores "
 "dentro de um dicionário constante com aquela nome."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:652
+msgid ""
+"In Godot 3.1 and later, keys in a named enum are not registered as global "
+"constants. They should be accessed prefixed by the enum's name (``Name."
+"KEY``); see an example below."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:672
 msgid "Functions"
@@ -2018,6 +2033,8 @@ msgstr "Exportações"
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
 msgstr ""
+"A documentação sobre a exportação foi movida para  :ref:"
+"`doc_gdscript_exports`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1190
 msgid "Setters/getters"
@@ -2182,7 +2199,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1317
 msgid "You can emit as many arguments as you want along with a signal."
-msgstr ""
+msgstr "Você pode emitir quantos argumentos desejar com um sinal."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
 msgid ""
@@ -2190,6 +2207,9 @@ msgid ""
 "screen to react to health changes with an animation, but we want to keep the "
 "user interface separate from the player in our scene tree."
 msgstr ""
+"Aqui está um exemplo em que isso é útil. Digamos que queremos que uma barra "
+"de vida na tela reaja às mudanças de saúde com uma animação, mas queremos "
+"manter a interface do usuário separada do player em nossa árvore de cenas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1323
 msgid ""
@@ -2199,12 +2219,19 @@ msgid ""
 "``Lifebar`` using the :ref:`Object.connect() <class_Object_method_connect>` "
 "method::"
 msgstr ""
+"Em nosso script `` Character.gd``, definimos um sinal `` health_changed`` e "
+"o emitimos com: ref: `Object.emit_signal () "
+"<class_Object_method_emit_signal>` e no nó `` Game`` acima na árvore de "
+"cenas, nós a conectamos à `` Lifebar`` usando o método: ref: `Object.connect "
+"() <class_Object_method_connect>` ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1363
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
 msgstr ""
+"Para usar sinais, sua classe precisa estender a classe do``Object`` ou "
+"alguma classe como``Node``, ``KinematicBody``, ``Control``..."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1366
 msgid ""
@@ -2212,18 +2239,25 @@ msgid ""
 "then connect the character, that emits the signal, to the receiver, the "
 "``Lifebar`` node in this case."
 msgstr ""
+"No nó `` Game``, obtemos os nós `` Character`` e `` Lifebar``, em seguida, "
+"conectamos o personagem, que emite o sinal ao receptor`` Lifebar`` nesse "
+"caso."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1380
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
 msgstr ""
+"Isso permite que a ``Lifebar`` reaja às alterações de saúde sem acoplá-la ao "
+"nó `` Character``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1383
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
 msgstr ""
+"Você pode escrever nomes de argumento opcionais entre parênteses após a "
+"definição do sinal::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1389
 msgid ""
@@ -2251,6 +2285,9 @@ msgid ""
 "connection if the emitted signal itself doesn't give you access to all the "
 "data that you need."
 msgstr ""
+"Você pode usar essa matriz de valores para adicionar informações extras "
+"constantes à conexão, se o próprio sinal emitido não der acesso a todos os "
+"dados necessários."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
 msgid ""
@@ -2266,6 +2303,8 @@ msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
 msgstr ""
+"Nosso nó ``BattleLog `` recebe cada elemento na matriz de vínculos como um "
+"argumento extra::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1430
 msgid "Coroutines with yield"
@@ -2379,9 +2418,18 @@ msgid ""
 "have side effects. Otherwise, the behavior of the script would vary "
 "depending on whether the project is run in a debug build."
 msgstr ""
+"A palavra-chave `` assert`` pode ser usada para testar quando a compilação é "
+"para a depuração. Essas asserções são ignoradas em compilações sem "
+"depuração. Isso significa que a expressão passada como argumento não não vai "
+"ser compilada no projeto final. Por esse motivo, elas ** não ** devem conter "
+"expressões que sejam importantes para o código funcionar. Caso contrário, o "
+"comportamento do script variará dependendo se esta compilando em modo "
+"deputação ou não."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1544
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."
 msgstr ""
+"Se ocorrer um erro de asserção enquanto estiver no modo de edição, o projeto "
+"sera pausado."

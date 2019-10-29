@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,13 +29,13 @@ msgid ""
 "class reference, the goal is to make it easy to read for everyone and "
 "precise."
 msgstr ""
-"Godot社区富裕而国际化。 用户来自世界各地。 他们中的一些人很年轻，很多人不是母"
-"语为英语的人。 这就是为什么我们都必须使用清晰和通用的语言写作。 对于类型参"
-"考，目标是让每个人都能轻松阅读和精确。"
+"Godot社区丰富且具国际化。用户来自世界各地。他们中的一些人很年轻，很多人不是母"
+"语为英语的人。这就是为什么我们都必须使用清晰和通用的语言写作。对于类参考手"
+"册，目标是让每个人都能轻松和精确阅读。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:12
 msgid "In summary, always try to:"
-msgstr "总之，总是尝试:"
+msgstr "总之，始终尝试："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:14
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:39
@@ -61,7 +61,8 @@ msgid ""
 "Ban these 8 words: obvious, simple, basic, easy, actual, just, clear, and "
 "however"
 msgstr ""
-"禁止这8个字:obvious, simple, basic, easy, actual, just, clear, and however"
+"禁止这8个词：显然(obvious)、简单(simple)、基本(basic)、容易(easy)、实际"
+"(actual)、仅仅(just)、明显(clear)、然而(however)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:19
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:210
@@ -71,7 +72,7 @@ msgstr "使用显式引用"
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:20
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:231
 msgid "Use 's to show possession"
-msgstr "用's表示所有权"
+msgstr "用 ``'s`` 表示所有权"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:21
 msgid "Use the Oxford comma"
@@ -79,22 +80,22 @@ msgstr "使用牛津逗号"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:23
 msgid "There are 3 rules to describe classes:"
-msgstr "描述类有3个规则:"
+msgstr "描述类有3个规则："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:25
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:278
 msgid "Give an overview of the node in the brief description"
-msgstr "在简要说明中概述节点"
+msgstr "在简述中概述节点"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:26
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:307
 msgid "Mention what methods return if it's useful"
-msgstr "如果它有用，请提及返回哪些方法"
+msgstr "如果它有用，请提及方法返回什么"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:27
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:332
 msgid "Use \"if true\" to describe booleans"
-msgstr "使用``if true``来描述布尔值"
+msgstr "使用 ``if true`` 来描述布尔值"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:31
 msgid ""
@@ -102,12 +103,12 @@ msgid ""
 "smallest and clearest sentences possible. These guidelines will help you "
 "work towards that goal."
 msgstr ""
-"技术作家的工作是将尽可能多的信息打包成尽可能最小和最清晰的句子。 这些指南将帮"
+"技术作家的工作是将尽可能多的信息打包成尽可能最小和最清晰的句子。这些指南将帮"
 "助您实现这一目标。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:36
 msgid "7 rules for a clear english"
-msgstr "清晰英语的7条规则"
+msgstr "英语清晰的7条规则"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:41
 msgid ""
@@ -115,76 +116,79 @@ msgid ""
 "you describe as the subject. It's natural to write using the passive voice, "
 "but it's harder to read and produces longer sentences."
 msgstr ""
-"尽可能使用陈述句型。 将您描述的类，方法和常量作为主题。 使用被动语态编写是很"
-"自然的，但它更难阅读并产生更长的句子。"
+"尽可能使用陈述句型。将您描述的类、方法和常量作为主题。使用被动语态编写是很自"
+"然的，但它更难阅读并会产生更长的句子。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:47
 msgid "Passive:"
-msgstr "被动句:"
+msgstr "被动句："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:53
 msgid "Active:"
-msgstr "主动句:"
+msgstr "主动句："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:59
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:313
 msgid "**Don't** use the passive voice:"
-msgstr "**不要** 使用被动语态:"
+msgstr "**不要** 使用被动句型："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:66
 msgid "**Do** use the node's name as a noun:"
-msgstr "**请** 使用节点的名称作为名词:"
+msgstr "**请** 使用节点的名称作为名词："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:76
 msgid ""
 "Favor precise yet common verbs over generic ones like ``make``, ``set``, and "
 "any expression you can replace with a single word."
 msgstr ""
-"赞成精确而常用的动词而非普通的动词，比如 ``make`` ， ``set`` ，以及任何可以用"
-"单个单词替换的表达式。"
+"优先使用精确而通用的动词，而不要使用诸如 ``make``、``set`` 以及可以用一个单词"
+"替换的任何表达之类的通用动词。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:79
 msgid ""
 "**Don't** repeat the method's name. It already states it sets the pivot "
 "value to a new one:"
-msgstr "**不要** 重复方法的名称。 它已经声明它将枢轴值设置为新值:"
+msgstr "**不要** 重复方法的名称。它已经声明会将 ``pivot`` 值设置为新值："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:87
 msgid ""
 "**Do** explain what's the consequence of this \"set\": use precise verbs "
 "like ``place``, ``position``, ``rotate``, ``fade``, etc."
 msgstr ""
-"**请** 解释这个``集合``的后果是什么:使用精确的动词，如 ``place`` ，"
-"``position``， ``rotate`` ，``fade``等。"
+"**请** 解释这个 ``set`` 的含义是什么：使用精确的动词，如 ``place``、"
+"``position``、 ``rotate``、``fade`` 等。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:98
 msgid ""
 "The progressive forms describe continuous actions. E.g. \"is calling\", \"is "
 "moving\"."
-msgstr "渐进形式描述了连续行动。 例如。 ``正在呼唤``，``正在移动``。"
+msgstr ""
+"渐进形式描述了连续行动。例如：``正在呼唤(is calling)``、``正在移动(is "
+"moving)``。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:101
 msgid "**Don't** use the progressive form for instant changes."
-msgstr "**不要** 使用渐进形式进行即时更改。"
+msgstr "**不要** 使用渐进形式描述即时更改。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:108
 msgid "**Do** use simple present, preterit or future."
-msgstr "**请** 使用简单的礼物，preterit或将来。"
+msgstr "**请** 使用简单的现在、过去或将来。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:115
 msgid ""
 "You may use the progressive tense to describe actions that are continuous in "
 "time. Anything like animation or coroutines."
 msgstr ""
-"您可以使用渐进式时态来描述在时间上连续的动作。 任何像动画或协同程序的东西。"
+"您可以使用渐进式时态来描述在时间上连续的动作。任何像动画或协同程序的东西。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:120
 msgid ""
 "Verbs can turn into adjectival nouns with -ing. This is not a conjugation, "
 "so you may use them: ``the remaining movement``, ``the missing file``, etc."
 msgstr ""
-"动词可以变成带有-ing的形容词名词。 这不是一个共轭，所以您可以使用它们: ``剩余"
-"的运动`` ，``缺少的文件``等等。"
+"动词可以变成带有-ing的形容词名词。这不是一个动词时态变换，所以您可以使用它"
+"们：``剩余的运动(the remaining movement)``、``缺少的文件(the missing file)`` "
+"等等。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:125
 msgid "Remove unnecessary adverbs and adjectives"
@@ -194,57 +198,57 @@ msgstr "删除不必要的副词和形容词"
 msgid ""
 "Write as few adjectives and adverbs as possible. Only use them if they add "
 "key information to the description."
-msgstr "写尽可能少的形容词和副词。 只有在将关键信息添加到描述中时才使用它们。"
+msgstr "写尽可能少的形容词和副词。仅当它们在说明中添加关键信息时，才使用它们。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:130
 msgid ""
 "**Don't** use redundant or meaningless adverbs. Words that lengthen the "
 "documentation but don't add any information:"
-msgstr "**不要** 使用冗余或无意义的副词。 延长文档但不添加任何信息的单词:"
+msgstr "**不要** 使用冗余或无意义的副词。延长文档长度但不添加任何信息的词："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:137
 msgid "**Do** write short sentences in a simple, descriptive language:"
-msgstr "*用* 一种简单的描述性语言写短句:"
+msgstr "*用* 一种简单的描述性语言写短句："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:144
 msgid "Ban these 8 words"
-msgstr "禁止这8个字"
+msgstr "禁止这8个词"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:146
 msgid "**Don't** ever use these 8 banned words:"
-msgstr "**不要** 使用这8个被禁止的词:"
+msgstr "**不要** 使用这8个被禁止的词："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:148
 msgid "obvious"
-msgstr "obvious"
+msgstr "显然(obvious)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:149
 msgid "simple"
-msgstr "simple"
+msgstr "简单(simple)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:150
 msgid "basic"
-msgstr "basic"
+msgstr "基本(basic)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:151
 msgid "easy"
-msgstr "easy"
+msgstr "容易(easy)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:152
 msgid "actual"
-msgstr "actual"
+msgstr "实际(actual)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:153
 msgid "just"
-msgstr "just"
+msgstr "仅仅(just)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:154
 msgid "clear"
-msgstr "clear"
+msgstr "明显(clear)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:155
 msgid "however (some uses)"
-msgstr "however (some uses)"
+msgstr "however(某些用法)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:157
 msgid ""
@@ -254,20 +258,20 @@ msgid ""
 "corresponding adverbs either: obviously, simply, basically, easily, "
 "actually, clearly."
 msgstr ""
-"游戏创建和编程并不简单，对于第一次学习使用API的人来说，没有什么比这更容易"
-"了。 列表中的其他单词，如 ``just`` 或``actual``，不会在句子中添加任何信息。 "
-"也不要使用相应的副词:obviously, simply, basically, easily, actually, "
-"clearly。"
+"游戏的创建和编程并不简单，对于初次学习使用API的人来说，更是如此。列表中的其他"
+"单词，如 ``just`` 或 ``actual``，不会在句子中添加任何信息。也不要使用相应的副"
+"词：obviously、simply、basically、easily、actually、clearly。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:163
 msgid ""
 "**Don't** example. The banned words lengthen the description and take "
 "attention away from the most important info:"
-msgstr "**不要** 示例。 被禁止的单词会延长描述并将注意力从最重要的信息上移开:"
+msgstr ""
+"**不要** 举例。禁止使用的单词加长了说明，并让注意力从最重要信息上移开："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:171
 msgid "**Do** remove them:"
-msgstr "**请** 删除它们:"
+msgstr "**请** 删除它们："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:178
 msgid ""
@@ -276,61 +280,60 @@ msgid ""
 "cringe. Here's the old brief description, the first sentence on the Timer "
 "node's page:"
 msgstr ""
-"``简单``永远不会有帮助。 请记住，对于其他用户来说，任何事情都可能很复杂或令人"
-"沮丧。 没有什么比这更好的了 *它很简单* 让您畏缩。 这是旧的简要说明，即Timer节"
-"点页面上的第一句话:"
+"``简单`` 永远不会有帮助。请记住，对于其他用户来说，任何事情都可能很复杂或令人"
+"沮丧。没有什么像老套的 *它很简单* 让您畏缩的了。这是旧的简述，即Timer节点页面"
+"上的第一句话："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:188
 msgid "**Do** explain what the node does instead:"
-msgstr "**请** 解释节点的作用:"
+msgstr "**请** 代替为解释节点的作用："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:195
 msgid "**Don't** use \"basic\", it is too vague:"
-msgstr "**不要** 使用``basic``，它太模糊了:"
+msgstr "**不要** 使用 ``基本(basic)``，它太模糊了："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:202
 msgid "**Do** use the brief description to offer an overview of the node:"
-msgstr "**请** 使用简要说明来概述节点:"
+msgstr "**请** 使用简述来概述节点："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:212
 msgid "Favor explicit references over implicit ones."
-msgstr "支持隐式引用而不是隐式引用。"
+msgstr "支持显式引用而不是隐式引用。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:214
 msgid ""
 "**Don't** use words like \"the former\", \"the latter\", etc. They're not "
 "the most common in English, and they require you to check the reference."
 msgstr ""
-"**不要** 使用``前者``，``后者``等词语。它们不是英语中最常见的词语，它们要求您"
-"查看参考文献。"
+"**不要** 使用如 ``前者(the former)``，``后者(the latter)`` 等词语。它们不是英"
+"语中最常见的词语，它们要求您查看引用文献。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:221
 msgid "**Do** repeat words. They remove all ambiguity:"
-msgstr "**做** 重复的话。 他们删除所有歧义:"
+msgstr "**请** 重复单词。他们消除了所有歧义："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:227
 msgid ""
 "If you need to repeat the same variable name 3 or 4 times, you probably need "
 "to rephrase your description."
-msgstr "如果您需要重复相同的变量名3或4次，您可能需要重新描述您的描述。"
+msgstr "如果需要重复相同的变量名3到4次，则你可能需要修改你的描述。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:233
 msgid ""
 "Avoid \"The milk **of** the cow\". It feels unnatural in English. Write "
 "\"The cow's milk\" instead."
 msgstr ""
-"避免 \"The milk **of** the cow\"。 英语感觉不自然。 写一下\"The cow's milk"
-"\" 。"
+"避免“The milk **of** the cow”。英语里感觉不自然。使用“The cow's milk”代替。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:236
 msgid "**Don't** write \"of the X\":"
-msgstr "**不要**写``X``:"
+msgstr "**不要** 写 \"of the X\"："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:242
 msgid ""
 "**Do** use ``'s``. It lets you put the main subject at the start of the "
 "sentence, and keep it short:"
-msgstr "**请**使用 ``'s`` 。 它允许您将主要主题放在句子的开头，并保持简短:"
+msgstr "**请** 使用 ``'s`` 。它使您可以将主要主题放在句子的开头，并使其简短："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:250
 msgid "Use the Oxford comma to enumerate anything"
@@ -338,14 +341,14 @@ msgstr "使用牛津逗号枚举任何内容"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:252
 msgid "From the Oxford dictionary:"
-msgstr "来自牛津词典:"
+msgstr "来自牛津词典："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:254
 msgid ""
 "The 'Oxford comma' is an optional comma before the word 'and' at the end of "
 "a list: *We sell books, videos, and magazines.*"
 msgstr ""
-"``牛津逗号``是列表末尾``和``之前的可选逗号:*We sell books, videos, and "
+"``牛津逗号`` 是列表末尾 ``and`` 之前的可选逗号：*We sell books, videos, and "
 "magazines.*"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:257
@@ -354,19 +357,21 @@ msgid ""
 "of a sentence when the items in a list are not single words: *These items "
 "are available in black and white, red and yellow, and blue and green.*"
 msgstr ""
-"[...]并非所有作家和出版商都使用它，但当列表中的项目不是单个单词时，它可以澄清"
-"句子的含义:*这些项目有黑色和白色，红色和黄色，以及蓝色和 绿色。*"
+"[...]并非所有作家和出版商都使用它，但是当列表中的项目不是单个单词时，它可以阐"
+"明句子的含义：*These items are available in black and white, red and yellow, "
+"and blue and green.(这些物品黑白相间、红黄相间、蓝绿相间)*"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:260
 msgid "**Don't** leave the last element of a list without a comma:"
-msgstr "**不要**没有逗号留下列表的最后一个元素:"
+msgstr "**不要** 让列表的最后一个元素不带逗号："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:266
 msgid ""
 "**Do** add a comma before `and` or `or`, for the last element of a list with "
 "more than two elements."
 msgstr ""
-"**对于包含两个以上元素的列表的最后一个元素，请在`和`或`或`之前添加逗号。"
+"*请* 在 ``and`` 或 ``or`` 之前添加逗号，特别是对于超过两个元素的列表的最后一"
+"个元素之前。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:275
 msgid "How to write methods and classes"
@@ -376,35 +381,35 @@ msgstr "如何编写方法和类"
 msgid ""
 "The brief description is the reference's most important sentence. It's the "
 "user's first contact with a node:"
-msgstr "简要说明是参考文献中最重要的一句话。 这是用户与节点的第一次接触:"
+msgstr "简述是参考手册中最重要的一句话。这是用户与节点的第一次接触："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:283
 msgid "It's the only description in the \"Create New Node\" dialog."
-msgstr "这是``创建新节点``对话框中的唯一描述。"
+msgstr "这是 ``创建新节点`` 对话框中的唯一描述。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:284
 msgid "It's at the top of every page in the reference"
-msgstr "它位于参考中每个页面的顶部"
+msgstr "它位于参考手册中每个页面的顶部"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:286
 msgid ""
 "The brief description should explain the node's role and its functionality, "
 "in up to 200 characters."
-msgstr "简要说明应解释节点的角色及其功能，最多200个字符。"
+msgstr "简述应解释节点的角色及其功能，最多200个字符。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:289
 msgid "**Don't** write tiny and vague summaries:"
-msgstr "**不要**写出微小而模糊的摘要:"
+msgstr "**不要** 写一些简短而含糊的摘要："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:296
 msgid "**Do** give an overview of the node's functionality:"
-msgstr "**请**概述节点的功能:"
+msgstr "**请** 概述节点的功能："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:303
 msgid ""
 "Use the node's full description to provide more information, and a code "
 "example, if possible."
-msgstr "如果可能，请使用节点的完整描述来提供更多信息和代码示例。"
+msgstr "如果可能的话，请使用节点的完整描述来提供更多信息和代码示例。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:309
 msgid ""
@@ -412,12 +417,12 @@ msgid ""
 "description, ideally on a new line. No need to mention the return values for "
 "any method whose name starts with ``set`` or ``get``."
 msgstr ""
-"一些方法返回重要的值。 在描述的最后描述它们，理想情况是在新的一行。 无需提及"
-"名称以 ``set`` 或``get``开头的任何方法的返回值。"
+"一些方法返回重要值。在描述的结尾，最好在新行上描述它们。对于名称以 ``set`` "
+"或 ``get`` 开头的任何方法，无需提及其返回值。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:320
 msgid "**Do** always use \"Returns\"."
-msgstr "**总是** 使用 \"Returns\"。"
+msgstr "**总是** 使用 ``Returns``。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:327
 msgid ""
@@ -425,8 +430,8 @@ msgid ""
 "external collider can influence the method and the body that calls ``move``. "
 "In this case, you can use the passive voice."
 msgstr ""
-"注意``陈述句``规则的例外:使用移动方法，外部对撞机可以影响调用``移动``的方法和"
-"主体。 在这种情况下，您可以使用被动语态。"
+"注意 ``陈述句`` 规则的例外：通过移动方法，外部对撞可以影响方法和调用 ``移动"
+"`` 的主体。在这种情况下，您可以使用被动语态。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:334
 msgid ""
@@ -434,35 +439,33 @@ msgid ""
 "stay explicit. ``Controls whether or not`` may be ambiguous and won't work "
 "for every member variable."
 msgstr ""
-"对于布尔成员变量，总是使用``if true``和/或``if false``来保持显式。 ``控制是否"
-"``可能不明确，不适用于每个成员变量。"
+"对于布尔成员变量，总是使用 ``if true`` 和/或 ``if false`` 来保持显式。``控制"
+"是否`` 可能不明确，且不适用于每个成员变量。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:338
 msgid ""
 "Also surround boolean values, variable names and methods with ``[code][/"
 "code]``."
-msgstr "也包括布尔值，变量名和带有“[code][/code]”的方法。"
+msgstr "布尔值、变量名和方法围绕着 ``[code][/code]``。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:340
 msgid "**Do** start with \"if true\":"
-msgstr "**请以``if true``开头**:"
+msgstr "**请** 以 ``if true`` 开头："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:349
-#, fuzzy
 msgid "Use ``[code]`` around arguments"
-msgstr "在参数周围使用[code]"
+msgstr "在参数周围使用 ``[code]``"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:351
-#, fuzzy
 msgid ""
 "In the class reference, always surround arguments with ``[code][/code]``. In "
 "the documentation and in Godot, it will display like ``this``. When you edit "
 "XML files in the Godot repository, replace existing arguments written like "
 "'this' or \\`this\\` with ``[code]this[/code]``."
 msgstr ""
-"在类型参考中，始终使用[code][/code]包围参数。 在文档和Godot中，它将显示"
-"为“this``。 在Godot存储库中编辑XML文件时，用[code]this[/code]替换现在的参数，"
-"如'this'或\\`this \\`。"
+"在类参考手册中，始终使用 ``[code][/code]`` 包围参数。在文档和Godot中，它将显"
+"示为 ``this``。在Godot存储库中编辑XML文件时，用 ``[code]this[/code]`` 替换现"
+"在的参数，如 ``'this'`` 或 ```this``` 。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:355
 msgid "Common vocabulary to use in godot's docs"
@@ -474,7 +477,7 @@ msgid ""
 "They're used in the sources, in the documentation, and you should always use "
 "them instead of synonyms, so the users know what you're talking about."
 msgstr ""
-"开发人员选择了一些特定的单词来引用界面的区域。 它们在文档中的源代码中使用，您"
+"开发人员选择了一些特定的单词来引用界面的区域。它们在文档以及源代码中使用，您"
 "应该始终使用它们而不是同义词，因此用户知道您在谈论什么。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:365
@@ -489,9 +492,10 @@ msgid ""
 "the 2D or the 3D space, is the ``viewport``. At its top, you find a list of "
 "``tools`` inside the ``toolbar``."
 msgstr ""
-"在编辑器的左上角是``主菜单``。 在中心，按钮改变了``工作区``。 右上角的按钮是"
-"``playtest buttons``。 显示2D或3D空间的中心区域是``viewport``。 在它的顶部，"
-"您会在 ``toolbar`` 中找到一个 ``tools`` 列表。"
+"在编辑器的左上角是 ``主菜单(main menus)``。在中心，按钮改变了 ``工作区"
+"(workspace)``。右上角的按钮是 ``播放测试按钮(playtest buttons)``。显示在2D或"
+"3D空间中心区域的是 ``视图(viewport)``。在它的顶部，您会在 ``工具栏"
+"(toolbar)`` 中找到一个 ``工具(tools)`` 列表。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:373
 msgid ""
@@ -501,16 +505,20 @@ msgid ""
 "``Inspector dock``. With the default layout you may call the tabbed docks "
 "``tabs``: the ``Scene tab``, the ``Node tab``..."
 msgstr ""
-"视区两侧的标签或可停靠面板是``docks``。 您有``FileSystem dock``，``Scene "
-"dock``，它包含您的场景树，``Import dock``，``node dock``，以及 ``Inspector`` "
-"或``Inspectordock``。 使用默认布局，您可以调用选项卡式底座``tabs``:``Scene "
-"tab``，``Node tab`` ..."
+"视图两侧的选项卡或可停靠面板是 ``停靠面板(docks)``。有 ``文件系统停靠面板"
+"(FileSystem dock)``、包含您的场景树的 ``场景停靠面板(Scene dock)``、``导入停"
+"靠面板(Import dock)``、``节点停靠面板(node dock)``、以及 ``属性检查器"
+"(Inspector)`` 或 ``检查器停靠面板(Inspector dock)``。使用默认布局，您可以调用"
+"选项卡式停靠面板 ``选项卡(tabs)``：``场景选项卡(Scene tab)``、``节点选项卡"
+"(Node tab)``……"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:379
 msgid ""
 "The Animation, Debugger, etc. at the bottom of the viewport are ``panels``. "
 "Together they make up the ``bottom panels``."
-msgstr "视区底部的动画，调试器等是``面板``。 他们一起构成了``底板``。"
+msgstr ""
+"视图底部的动画、调试器等是 ``面板(panels)``。它们一起构成了 ``底部面板"
+"(bottom panels)``。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:382
 msgid ""
@@ -519,9 +527,10 @@ msgid ""
 "class``. And individual lines with key-value pairs are ``properties``. E.g. "
 "``position`` or ``modulate color`` are both ``properties``."
 msgstr ""
-"属性面板的可折叠区域是``部分``。 您无法折叠的节点的父类名称是``类``，例如 "
-"``KinematicBody2D class``。 具有键值对的单独行是``属性``。 例如。 "
-"``position``或``modulate color``都是``properties``。"
+"属性检查器的可折叠区域是 ``部分(sections)``。您无法折叠的节点的父类名称是 ``"
+"类(Classes)``，例如 ``KinematicBody2D class``。具有键值对的单独行是 ``属性"
+"(properties)``。例如，``位置(position)`` 或 ``调整颜色(modulate color)`` 都"
+"是 ``属性(properties)``。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:389
 msgid "Image contribution guidelines"
@@ -531,7 +540,7 @@ msgstr "图像贡献指南"
 msgid ""
 "A significant part of the documentation is images, and there are several "
 "important guidelines to follow."
-msgstr "文档的重要部分是图像，有几个重要的指导原则需要遵循。"
+msgstr "文档中很重要的一部分是图像，并且要遵循几个重要的准则。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:394
 msgid ""
@@ -556,7 +565,7 @@ msgid ""
 "When you need to highlight an area of the editor to show something, like a "
 "button or option, use a 2 pixel thick outline without a bevel."
 msgstr ""
-"当您需要突出显示编辑器的某个区域以显示某些内容(如按钮或选项)时，请使用不带斜"
+"当您需要突出显示编辑器的某个区域以显示某些内容，如按钮或选项时，请使用不带斜"
 "角的2像素粗轮廓。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:404
@@ -567,6 +576,6 @@ msgid ""
 "use a lossy one, such as `pngquant <https://pngquant.org/>`_ where almost no "
 "image quality is lost during compression."
 msgstr ""
-"在添加或替换文档中的任何图像之前，应通过png压缩器运行它们以节省大小。 应该在"
-"Krita或Photoshop等程序中内置无损压缩器。 但是您也应该使用有损的，例如"
-"`pngquant <https://pngquant.org/>`_ ，在压缩过程中几乎不会丢失图像质量。"
+"在添加或替换文档中的任何图像之前，应通过png压缩器运行它们以节省大小。应该使用"
+"在Krita或Photoshop等程序中内置的无损压缩器。但是您也可以使用有损的压缩器，例"
+"如 `pngquant <https://pngquant.org/>`_ ，在压缩过程中几乎不会丢失图像质量。"

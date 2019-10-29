@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,27 +19,28 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr "스크립팅(계속)"
+msgstr "스크립팅 (계속)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr "프로세싱(Processing)"
+msgstr "처리(Process)하기"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
-"Godot의 여러 작업은 콜백 또는 가상 함수에 의해 트리거 되므로, 항상 실행되는 "
-"코드를 작성할 필요는 없습니다."
+"Godot에서 여러 작업은 콜백 또는 가상 함수로 조작됩니다. 그래서 항상 실행되는 "
+"코드를 작성할 필요가 없습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
-"그러나 여전히 모든 프레임에서 스크립트를 처리해야 하는 경우가 많습니다. 프로"
-"세싱에는 두가지 유형이 있습니다: 정적 프로세싱과 동적 프로세싱입니다."
+"하지만 여전히 모든 프레임에서 처리하는 스크립트가 필요한 경우가 많습니다. 처"
+"리(Process)에는 두가지 유형이 있습니다: 정적 처리(Idel Processing)와 동적 처"
+"리(Physics Processing)."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -48,25 +49,24 @@ msgid ""
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
-"정적 프로세싱은 스크립트에서 :ref:`Node._process() "
-"<class_Node_method__process>`\\ 라는 메서드가 발견되면 활성화됩니다. :ref:"
-"`Node.set_process() <class_Node_method_set_process>`\\ 를 사용해서 이 기능을 "
-"끄거나 켤 수 있습니다."
+"정적 처리는 스크립트에서 메서드 :ref:`Node._process() "
+"<class_Node_method__process>`\\ 가 발견되면 활성화됩니다. :ref:`Node."
+"set_process() <class_Node_method_set_process>`\\ 를 사용해서 이 기능을 껐다 "
+"켰다 할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
 msgstr "이 메서드는 매 프레임마다 호출됩니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
-#, fuzzy
 msgid ""
 "It's important to bear in mind that the frequency with which ``_process()`` "
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
-"``_process()``\\ 가 호출되는 비중은 응용프로그램이 초 당 몇 프레임 (FPS)으로 "
-"실행하는 지에 따라 다르다는 것을 마음에 두는 것이 중요합니다. 이 비율은 시간"
-"과 기기에 따라 다를 수 있습니다."
+"``_process()``\\ 가 호출되는 비중은 응용 프로그램이 초 당 몇 프레임 (FPS)으"
+"로 실행되는지에 따라 다르다는 것을 마음에 새기는 것이 중요합니다. 이 비율은 "
+"시간과 기기에 따라 다를 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -74,7 +74,7 @@ msgid ""
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"이 변동성을 다루는 것을 돕기 위해, ``_process()``\\ 가 호출된 이후부터 "
+"이 가변성을 다루는 것을 돕기 위해, ``_process()``\\ 가 호출된 이후부터 "
 "``delta`` 매개 변수는 경과된 시간을 초 단위, 즉 실수의 형태로 갖습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
@@ -82,7 +82,7 @@ msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
-"이 매개 변수를 사용하면 게임의 초당 프레임 수와 관계 없이, 항상 동일한 시간"
+"이 매개 변수를 사용하면 게임의 초 당 프레임 수와 관계 없이, 항상 동일한 시간"
 "이 소요되도록 할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
@@ -90,8 +90,8 @@ msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
-"예를 들어 이동은 시간 델타를 곱해서 이동 속도를 일정하게 하는 동시에 프레임률"
-"과 따로 독립시킵니다."
+"예를 들어 이동은 시간 delta와 곱해서 이동 속도를 일정하게 하고 프레임 비율과 "
+"무관하게 합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""
@@ -102,11 +102,11 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
-"``_physics_process()`` 를 이용한 물리 처리는 이와 유사하지만, 이것은 캐릭터"
-"를 조작하는 과정 같이, 각각의 물리 단계 이전에서 반드시 발생하는 과정에 사용"
-"되어야 합니다. 이것은 항상 물리 단계 이전에 실행되며 고정된 시간 간격으로 호"
-"출됩니다: 기본은 초당 60회 입니다. 프로젝트 설정의 Physics -> Common -> "
-"Physics Fps에서 시간 간격을 변경할 수 있습니다."
+"``_physics_process()``\\ 를 이용한 동적 처리도 이와 유사합니다. 하지만 이것"
+"은 각 동적 단계 이전에서 발생해야 하는 과정에서 사용해야 합니다. 예를 들면 캐"
+"릭터 조종하는 것이 있죠. 이것은 항상 동적 단계 이전에 실행되며 고정된 시간 간"
+"격으로 호출됩니다: 기본은 초 당 60회. 프로젝트 설정(Project Settings)에서 "
+"Physics -> Common -> Physics Fps에서 시간 간격을 변경할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
@@ -114,17 +114,17 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
-"그러나 ``_proceed()`` 함수는 물리와 동기화되지 않습니다. 프레임률이 일정하지 "
-"않고 하드웨어와 게임 최적화에 의존하기 때문입니다. 이것은 단일 스레드 게임의 "
-"물리 단계를 거친 후에 실행됩니다."
+"그러나 ``_proceed()`` 함수는 동적과 동기화되지 않습니다. 프레임 비율이 일정하"
+"지 않고 하드웨어와 게임 최적화에 의존하기 때문이죠. 이것은 단일 스레드 게임"
+"의 동적 단계를 거친 후에 실행됩니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"``_process()`` 함수가 작동하는 것을 보는 간단한 방법은 하나의 Label 노드로 "
-"된 씬을 생성하고, 다음 스크립트를 넣는 것입니다:"
+"간단하게 ``_process()`` 함수가 작동하는 것을 보려면 Label 노드 하나로 된 씬"
+"을 만들고, 다음 스크립트를 넣습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -132,28 +132,27 @@ msgstr "위 스크립트는 프레임 당 증가하는 카운터를 보여 줍�
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
-msgstr "그룹"
+msgstr "그룹(Group)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
 "for organizing large scenes. There are two ways to add nodes to groups. The "
 "first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"Godot에서 그룹은 다른 소프트웨어에서 접했을 태그와 비슷합니다. 노드는 많은 그"
-"룹에 원하는 만큼 추가될 수 있습니다. 거대한 씬을 조직하는데 유용한 기능입니"
-"다. 노드를 그룹에 추가하는 두가지 방법이 있습니다. 첫번째는 UI에서 하는 것으"
-"로, 노드 패널 하단의 그룹 버튼을 사용합니다:"
+"Godot에서 그룹은 다른 소프트웨어에서 접했을 법한태그와 비슷합니다. 노드는 많"
+"은 그룹에 원하는 만큼 추가될 수 있습니다. 이는 거대한 씬을 조직하는데 유용한 "
+"기능입니다. 노드를 그룹에 추가하는 두 가지 방법이 있습니다. 먼저 첫 번째는 UI"
+"에서 하는 것입니다. 노드(Node) 패널 하단의 그룹(Groups) 버튼을 사용합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
-"두번째 방법은 코드에서 하는 것입니다. 다음 코드는 씬 트리가 나타나면 "
-"``enemies``\\ 라는 그룹에 현재 노드를 추가할 것입니다."
+"두 번째 방법은 코드에서 하는 것입니다. 다음 스크립트는 현재 노드가 씬 트리에 "
+"나타나면 ``enemies``\\ 라는 그룹에 노드가 추가되는 스크립트입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -161,16 +160,17 @@ msgid ""
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_method_call_group>`:"
 msgstr ""
-"이렇게 하면 플레이어가 비밀 기지에 몰래 들어간 것이 발견될 경우, :ref:"
+"이렇게 하면 플레이어가 비밀 기지에 몰래 들어간 것이 발각될 경우, :ref:"
 "`SceneTree.call_group() <class_SceneTree_method_call_group>`\\ 을 사용하여 모"
-"든 적에게 경보가 울린다는 사실을 알릴 수 있습니다:"
+"든 적이 경보가 울린다는 사실을 인지할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
-"위의 코드는 모든 ``enemies`` 의 ``player_was_discovered`` 함수를 호출합니다."
+"위의 코드는 그룹 ``enemies``\\ 의 모든 구성원이``player_was_discovered`` 함수"
+"를 호출합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
 msgid ""
@@ -190,15 +190,15 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you have some time!"
 msgstr ""
-":ref:`SceneTree <class_SceneTree>` 클래스는 씬들끼리, 노드 계층끼리, 그리고 "
-"노드의 그룹들끼리 상호작용하는 많은 유용한 메서드를 제공합니다. 이것으로 쉽"
-"게 씬을 바꾸거나 다시 불러올 수 있고, 게임을 끄거나 일시정지를 키고 끄는 행위"
-"를 할 수 있습니다. 심지어 흥미로운 시그널도 동반됩니다. 시간이 된다면 한번 확"
-"인해보세요!"
+":ref:`SceneTree <class_SceneTree>` 클래스는 씬끼리, 노드 계층끼리, 그리고 노"
+"드의 그룹끼리 상호작용하는 많은 유용한 메서드를 제공합니다. 이것으로 쉽게 씬"
+"을 바꾸거나 다시 불러올 수 있고, 게임을 끄거나 일시정지를 켜고 끄는 행위를 "
+"할 수 있습니다. 심지어 흥미로운 시그널도 함께 제공됩니다. 시간이 된다면 한번 "
+"확인해보세요!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 msgid "Notifications"
-msgstr "알림(Notifications)"
+msgstr "알림(Notification)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:158
 msgid ""
@@ -208,11 +208,10 @@ msgid ""
 "`Object._notification() <class_Object_method__notification>` function in "
 "your script:"
 msgstr ""
-"Godot에는 알림(notification) 시스템이 있습니다. 보통은 스크립팅에 쓰이진 않습"
-"니다, 너무 로우 레벨이며 대부분의 경우 가상 함수를 제공하기 때문이죠. 그냥 존"
-"재한다는 것 만으로도 좋은 일입니다. 예를 들어 스크립트에 :ref:`Object."
-"_notification() <class_Object_method__notification>` 함수를 추가할 수 있습니"
-"다:"
+"Godot에는 알림 시스템이 있습니다. 보통은 스크립팅에 쓰이지 않습니다. 너무 로"
+"우 레벨이며 대부분은 가상 함수에서 제공하기 때문이죠. 그냥 존재한다는 것 만으"
+"로도 좋은 일입니다. 예를 들어 스크립트에 :ref:`Object._notification() "
+"<class_Object_method__notification>` 함수를 추가할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid ""
@@ -220,44 +219,44 @@ msgid ""
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overrideable functions."
 msgstr ""
-":ref:`Class Reference <toc-class-ref>` 의 각 클래스에 대한 문서는 수신 가능"
-"한 알림을 보여 줍니다. 그러나 대부분의 경우 GDScript가 보다 단순한 오버라이"
-"딩 할 수 있는 함수들을 제공합니다."
+":ref:`Class Reference <toc-class-ref>`\\ 의 각 클래스에 대한 문서는 받을 수 "
+"있는 알림을 보여 줍니다. 하지만 대부분은 GDScript에서 더 단순한 오버라이딩할 "
+"수 있는 함수를 제공합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
 msgid "Overrideable functions"
-msgstr "오버라이딩(Overriding) 가능한 함수들"
+msgstr "오버라이딩(Overriding)할 수 있는 함수"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
 msgid ""
 "Such overrideable functions, which are described as follows, can be applied "
 "to nodes:"
-msgstr "다음과 같이 오버라이딩 가능한 함수들을 노드에 적용할 수 있습니다:"
+msgstr "다음 오버라이딩할 수 있는 함수를 노드에 적용할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
 msgstr ""
-"앞서 언급했듯이, 이러한 기능은 알림 시스템 대신 사용하는 것이 좋습니다."
+"앞서 언급했듯이, 이러한 함수는 알림 시스템 대신 사용하는 것이 좋습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
 msgid "Creating nodes"
-msgstr "노드 생성하기"
+msgstr "노드 만들기"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:278
 msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
-"코드를 사용하여 노드를 생성하려면 다른 클래스 기반 데이터 유형과 마찬가지로 "
-"``.new()`` 메서드를 호출해야 합니다. 예를 들어:"
+"다른 클래스 기반 데이터 유형과 마찬가지로, 코드로 노드를 만들려면 ``.new()`` "
+"메서드를 호출해야 합니다. 예를 들어:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
 msgstr ""
-"씬 내부 또는 외부에 있는 노드를 삭제하려면 ``free()`` 를 사용해야 합니다:"
+"씬 내부 또는 외부에 있는 노드를 삭제하려면 ``free()``\\ 를 사용해야 합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
 msgid ""
@@ -266,8 +265,8 @@ msgid ""
 "and everything else in the subtree goes away with it."
 msgstr ""
 "노드가 삭제되면 모든 하위 노드도 삭제됩니다. 따라서 수동으로 노드를 삭제하는 "
-"것이 나타내는 것보다 훨씬 간단합니다. 기본 노드를 삭제하면 하위 트리에 있는 "
-"다른 모든 것이 삭제됩니다."
+"것이 수동으로 나타내는 것보다 훨씬 간단합니다. 기본 노드를 삭제하면 하위 트리"
+"에 있는 다른 모든 것이 삭제됩니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
@@ -276,9 +275,10 @@ msgid ""
 "will crash the game. Running Godot with the debugger will often catch this "
 "case and warn you about it."
 msgstr ""
-"신호를 보내거나 함수를 호출하기 때문에 현재 \"차단된\" 노드를 삭제하려는 경우"
-"가 발생할 수 있습니다. 이것은 게임을 망칠 것입니다. 디버거로 Godot를 실행하"
-"면 이 경우를 발견하고 경고를 표시하는 경우가 많습니다."
+"현재 \"차단된\" 노드를 삭제하려는 상황이 발생할 수 있습니다. 차단된 노드는 시"
+"그널을 방출하고 있거나 함수를 호출하고 있죠. 이것은 게임을 망칠 것입니다. 디"
+"버거(Debugger)로 Godot를 실행하면 이 경우를 발견하고 경고를 표시하는 경우가 "
+"많습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
 msgid ""
@@ -286,8 +286,8 @@ msgid ""
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
 "노드를 삭제하는 가장 안전한 방법은 :ref:`Node.queue_free() "
-"<class_Node_method_queue_free>`\\ 를 사용하는 것입니다. 이것은 대기 상태에서"
-"도 노드를 안전하게 지웁니다."
+"<class_Node_method_queue_free>`\\ 를 사용하는 것입니다. 이것은 대기 상태일 "
+"때 노드를 안전하게 삭제합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
 msgid "Instancing scenes"
@@ -298,7 +298,7 @@ msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
-"코드에서 씬을 인스턴스 하는 작업은 두 단계로 이루어집니다. 첫 번째 방법은 하"
+"코드에서 씬을 인스턴스하는 작업은 두 단계로 이루어집니다. 첫 번째 방법은 하"
 "드 드라이브에서 씬을 불러오는 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:360
@@ -306,8 +306,8 @@ msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
-"프리로드(Preload) 하면 문법 분석 시간에 일어나므로 더 편리할 수 있습니다 "
-"(GDScript만):"
+"(GDScript인 경우라면) 구문 분석 시간 동안 프리로드(Preload)를 할 수 있어서 "
+"더 편리합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
 msgid ""
@@ -317,10 +317,11 @@ msgid ""
 "must be called. This will return the tree of nodes that can be added to the "
 "active scene:"
 msgstr ""
-"그러나 ``씬`` 은 아직 하나의 노드가 아닙니다. 이것은 :ref:`PackedScene "
-"<class_PackedScene>`\\ 이라는 특수 리소스에 들어 있습니다. 실제 노드를 생성하"
-"려면, :ref:`PackedScene.instance() <class_PackedScene_method_instance>` 함수"
-"가 호출되어야 합니다. 그러면 활성 씬에 추가할 수 있는 노드 트리를 반환합니다:"
+"그러나 ``씬(Scene)``\\ 은 아직 노드가 아닙니다. 이것은 :ref:`PackedScene "
+"<class_PackedScene>`\\(포장된 씬)이라는 특수 리소스에 들어 있습니다. 실제 노"
+"드를 만들려면 :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>` 함수를 호출해야 합니다. 그러면 "
+"PackedScene은 활성 씬에 추가할 수 있는 노드 트리를 반환합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid ""
@@ -329,13 +330,14 @@ msgid ""
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
-"이 두 단계 프로세스의 이점은 포장된 씬이 불러온 상태로 유지되어 원하는 만큼"
-"의 인스턴스를 생성할 수 있다는 것입니다. 이 기능은 특히 활성화된 씬에서 여러 "
-"적, 글머리 기호 및 다른 도면 요소를 신속하게 인스턴스 하는 데 유용합니다."
+"이 두 단계 처리의 이점은 PackedScene이 불러온 상태로 유지되고 언제나 사용될 "
+"준비를 합니다. 이렇게 해서 인스턴스를 원하는 만큼 만들 수 있습니다. 이것은 특"
+"히 활성 씬에서 많은 적, 총알, 그 외 다른 개체를 신속하게 인스턴스하는 데 유용"
+"합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
-msgstr "클래스로 스크립트를 등록하기"
+msgstr "클래스로 스크립트 등록하기"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
 msgid ""
@@ -343,9 +345,9 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
-"Godot는 편집기에 각각의 스크립트를 등록하기 위한 \"스크립트 클래스\" 기능을 "
-"갖고 있습니다. 기본적으로, 당신은 파일을 직접 불러와서 이름이 없는 스크립트"
-"에 접근할 수 있습니다."
+"Godot는 편집기에 각 스크립트를 등록하기 위한 \"스크립트 클래스(Script "
+"Class)\" 기능을 갖고 있습니다. 기본적으로 이름이 없는 스크립트에 접근하려면 "
+"파일을 직접 불러와야 합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
 msgid ""

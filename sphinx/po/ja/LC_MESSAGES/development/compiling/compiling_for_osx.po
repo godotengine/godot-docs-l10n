@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,18 +29,19 @@ msgstr "必要条件"
 msgid ""
 "For compiling under Linux or other Unix variants, the following is required:"
 msgstr ""
+"Linux またはその他の Unix バリアントでコンパイルするには、次のことが必要です:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:14
 msgid "Python 2.7+ or Python 3.5+"
-msgstr ""
+msgstr "Python 2.7+ または Python 3.5+"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:15
 msgid "SCons build system"
-msgstr ""
+msgstr "SConsビルドシステム"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:16
 msgid "Xcode (or the more lightweight Command Line Tools for Xcode)"
-msgstr ""
+msgstr "Xcode(または Xcode用のより軽量なコマンドラインツール)"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:17
 msgid "*Optional* - yasm (for WebM SIMD optimizations)"
@@ -60,6 +61,8 @@ msgstr "コンパイル"
 msgid ""
 "Start a terminal, go to the root dir of the engine source code and type:"
 msgstr ""
+"ターミナルを起動し、エンジンソースコードのルートディレクトリに移動し、次のよ"
+"うに入力します:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:31
 msgid ""
@@ -67,6 +70,10 @@ msgid ""
 "\" subdirectory. This executable file contains the whole engine and runs "
 "without any dependencies. Executing it will bring up the project manager."
 msgstr ""
+"すべてがうまくいけば、結果として得られるバイナリ実行可能ファイルは「bin」サブ"
+"ディレクトリに配置されます。この実行可能ファイルにはエンジン全体が含まれてお"
+"り、依存関係なしで実行されます。実行すると、プロジェクトマネージャが呼び出さ"
+"れます。"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:36
 msgid ""
@@ -74,10 +81,13 @@ msgid ""
 "located in ``misc/dist/osx_tools.app``. Typically, for a \".64\" optimised "
 "binary built with `scons p=osx target=release_debug`:"
 msgstr ""
+"公式ビルドのように.appを作成するには、 ``misc/dist/osx_tools.app`` にあるテン"
+"プレートを使用する必要があります。 通常、 `scons p=osx target=release_debug` "
+"でビルドされた「 .64」\"最適化バイナリの場合:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:48
 msgid "Compiling for 32 and 64-bit"
-msgstr ""
+msgstr "32ビットと64 ビット用のコンパイル"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:50
 msgid ""
@@ -86,10 +96,14 @@ msgid ""
 "\".fat\" executable which contains both 32 and 64-bit code, you can do so by "
 "specifying the bits in the scons command like so:"
 msgstr ""
+"10.6以降のすべてのmacOSバージョンは64ビット排他的なので、実行可能ファイルはほ"
+"とんどのユーザーにとってデフォルトでは「.64」ファイルになります。32ビットコー"
+"ドと64ビット コードの両方を含む「.fat」実行可能ファイルをコンパイルする場合"
+"は、次のようにscons コマンドのビットを指定します:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:60
 msgid "Cross-compiling"
-msgstr ""
+msgstr "クロスコンパイル"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:62
 msgid ""
@@ -105,18 +119,25 @@ msgid ""
 "somewhere on your machine (or download a zip file and extract it somewhere), "
 "e.g.:"
 msgstr ""
+"`OSXCrossリポジトリ <https://github.com/tpoechtrager/osxcross>`_ をマシン上の"
+"どこかにクローンします(またはzipファイルをダウンロードしてどこかに解凍しま"
+"す)。例:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:75
 msgid ""
 "Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
 "osxcross#packaging-the-sdk"
 msgstr ""
+"以下のURLの内容に従ってSDKをパッケージ化します:https://github.com/"
+"tpoechtrager/osxcross#packaging-the-sdk"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:77
 msgid ""
 "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
 "osxcross#installation"
 msgstr ""
+"OSXCrossをインストールするには、以下の手順に従ってください:https://github."
+"com/tpoechtrager/osxcross#installation"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:80
 msgid ""
@@ -124,10 +145,12 @@ msgid ""
 "OSXCross installation (the same place where you cloned the repository/"
 "extracted the zip), e.g.:"
 msgstr ""
+"その後、OSXCrossインストールへのパスとして``OSXCROSS_ROOT`` を定義する必要が"
+"あります(リポジトリを複製/解凍したのと同じ場所)。例:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:88
 msgid "Now you can compile with SCons like you normally would:"
-msgstr ""
+msgstr "これで、通常どおりにSConsを使用してコンパイルできます:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:94
 msgid ""
@@ -135,3 +158,5 @@ msgid ""
 "SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` "
 "argument:"
 msgstr ""
+"OSXCrossSDKバージョンがSConsビルドシステムで想定されるものと異なる場合は、 "
+"``osxcross_sdk`` 引数を持つカスタムバージョンを指定できます:"

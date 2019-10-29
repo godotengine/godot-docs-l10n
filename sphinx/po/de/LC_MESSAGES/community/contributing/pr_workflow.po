@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -260,11 +260,11 @@ msgstr ""
 msgid ""
 "However, if you had local commits, this method will create a so-called "
 "\"merge commit\", and you will soon hear from fellow contributors that those "
-"are not wanted in PRs. Then how to update the branch without creating a "
-"merge commit? You will have to use the ``--rebase`` option, so that your "
-"local commits are replayed on top of the updated upstream ``master`` branch. "
-"It will effectively modify the Git history of your branch, but that is for "
-"the greater good."
+"are not wanted in PRs. To update the branch without creating a merge commit, "
+"you will have to use the ``--rebase`` option, so that your local commits are "
+"replayed on top of the updated upstream ``master`` branch. It will "
+"effectively modify the Git history of your branch, but that is for the "
+"greater good."
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:201
@@ -272,16 +272,42 @@ msgid "Therefore, the command that you should (almost) always use is:"
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:208
+msgid ""
+"If you have already pushed the merge commit without using ``rebase``, or "
+"have made any other changes that have resulted in undesired history, you may "
+"use a hard reset to revert to a specific commit and try again:"
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:216
+msgid ""
+"Once you have done this, you may run ``--rebase`` to merge master correctly."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:218
+msgid ""
+"If you have already pushed the wrong commits to your remote branch, you will "
+"have to force push by using ``git push --force``."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:221
+msgid ""
+"``git reset --hard`` can be a dangerous operation, especially if you have "
+"untracked or uncommitted changes. However, if you have committed changes "
+"that you reset using ``git reset --hard``, you may still be able to recover "
+"them by resetting to a commit ID found with the ``git reflog`` command."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:228
 msgid "Making changes"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:210
+#: ../../docs/community/contributing/pr_workflow.rst:230
 msgid ""
 "You would then do your changes to our example's ``editor/project_manager."
 "cpp`` file with your usual development environment (text editor, IDE, etc.)."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:214
+#: ../../docs/community/contributing/pr_workflow.rst:234
 msgid ""
 "By default, those changes are *unstaged*. The staging area is a layer "
 "between your working directory (where you make your modifications) and the "
@@ -291,45 +317,45 @@ msgid ""
 "them with the ``git commit`` command."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:221
+#: ../../docs/community/contributing/pr_workflow.rst:241
 msgid ""
 "There are various commands you should know to review your current work, "
 "before staging it, while it is staged, and after it has been committed."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:224
+#: ../../docs/community/contributing/pr_workflow.rst:244
 msgid ""
 "``git diff`` will show you the current unstaged changes, i.e. the "
 "differences between your working directory and the staging area."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:226
+#: ../../docs/community/contributing/pr_workflow.rst:246
 msgid ""
 "``git checkout -- <files>`` will undo the unstaged changes to the given "
 "files."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:228
+#: ../../docs/community/contributing/pr_workflow.rst:248
 msgid "``git add <files>`` will *stage* the changes on the listed files."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:229
+#: ../../docs/community/contributing/pr_workflow.rst:249
 msgid ""
 "``git diff --staged`` will show the current staged changes, i.e. the "
 "differences between the staging area and the last commit."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:231
+#: ../../docs/community/contributing/pr_workflow.rst:251
 msgid "``git reset HEAD <files>`` will *unstage* changes to the listed files."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:232
+#: ../../docs/community/contributing/pr_workflow.rst:252
 msgid ""
 "``git status`` will show you what are the currently staged and unstaged "
 "modifications."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:234
+#: ../../docs/community/contributing/pr_workflow.rst:254
 msgid ""
 "``git commit`` will commit the staged files. It will open a text editor (you "
 "can define the one you want to use with the ``GIT_EDITOR`` environment "
@@ -338,40 +364,40 @@ msgid ""
 "write the log directly."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:239
+#: ../../docs/community/contributing/pr_workflow.rst:259
 msgid ""
 "``git log`` will show you the last commits of your current branch. If you "
 "did local commits, they should be shown at the top."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:241
+#: ../../docs/community/contributing/pr_workflow.rst:261
 msgid ""
 "``git show`` will show you the changes of the last commit. You can also "
 "specify a commit hash to see the changes for that commit."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:244
+#: ../../docs/community/contributing/pr_workflow.rst:264
 msgid ""
 "That's a lot to memorize! Don't worry, just check this cheat sheet when you "
 "need to make changes, and learn by doing."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:247
+#: ../../docs/community/contributing/pr_workflow.rst:267
 msgid "Here's how the shell history could look like on our example:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:279
+#: ../../docs/community/contributing/pr_workflow.rst:299
 msgid ""
 "With this, we should have two new commits in our ``better-project-manager`` "
 "branch which were not in the ``master`` branch. They are still only local "
 "though, the remote fork does not know about them, nor does the upstream repo."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:284
+#: ../../docs/community/contributing/pr_workflow.rst:304
 msgid "Pushing changes to a remote"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:286
+#: ../../docs/community/contributing/pr_workflow.rst:306
 msgid ""
 "That's where ``git push`` will come into play. In Git, a commit is always "
 "done in the local repository (unlike Subversion where a commit will modify "
@@ -379,25 +405,25 @@ msgid ""
 "remote branch to share them with the world. The syntax for this is:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:295
+#: ../../docs/community/contributing/pr_workflow.rst:315
 msgid ""
 "The part about the remote branch can be omitted if you want it to have the "
 "same name as the local branch, which is our case in this example, so we will "
 "do:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:303
+#: ../../docs/community/contributing/pr_workflow.rst:323
 msgid ""
 "Git will ask you for your username and password, and the changes will be "
 "sent to your remote. If you check the fork's page on GitHub, you should see "
 "a new branch with your added commits."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:308
+#: ../../docs/community/contributing/pr_workflow.rst:328
 msgid "Issuing a pull request"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:310
+#: ../../docs/community/contributing/pr_workflow.rst:330
 msgid ""
 "When you load your fork's branch on GitHub, you should see a line saying *"
 "\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
@@ -405,7 +431,7 @@ msgid ""
 "upstream ``master`` branch."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:317
+#: ../../docs/community/contributing/pr_workflow.rst:337
 msgid ""
 "On that line, there is a \"Pull request\" link. Clicking it will open a form "
 "that will let you issue a pull request on the godotengine/godot upstream "
@@ -415,7 +441,7 @@ msgid ""
 "support :)"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:323
+#: ../../docs/community/contributing/pr_workflow.rst:343
 msgid ""
 "Use an explicit title for the PR and put the necessary details in the "
 "comment area. You can drag and drop screenshots, GIFs or zipped projects if "
@@ -423,33 +449,33 @@ msgid ""
 "request\", and tadaa!"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:329
+#: ../../docs/community/contributing/pr_workflow.rst:349
 msgid "Modifying a pull request"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:331
+#: ../../docs/community/contributing/pr_workflow.rst:351
 msgid ""
 "While it is reviewed by other contributors, you will often need to make "
 "changes to your yet-unmerged PR, either because contributors requested them, "
 "or because you found issues yourself while testing."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:335
+#: ../../docs/community/contributing/pr_workflow.rst:355
 msgid ""
 "The good news is that you can modify a pull request simply by acting on the "
 "branch you made the pull request from. You can e.g. make a new commit on "
 "that branch, push it to your fork, and the PR will be updated automatically:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:350
+#: ../../docs/community/contributing/pr_workflow.rst:370
 msgid "That should do the trick, but..."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:353
+#: ../../docs/community/contributing/pr_workflow.rst:373
 msgid "Mastering the PR workflow: the rebase"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:355
+#: ../../docs/community/contributing/pr_workflow.rst:375
 msgid ""
 "On the situation outlined above, your fellow contributors who are "
 "particularly pedantic regarding the Git history might ask your to *rebase* "
@@ -458,14 +484,14 @@ msgid ""
 "issue in the first one."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:360
+#: ../../docs/community/contributing/pr_workflow.rst:380
 msgid ""
 "Once the PR is merged, it is not relevant for a changelog reader that the PR "
 "author made mistakes; instead, we want to keep only commits that bring from "
 "one working state to another working state."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:364
+#: ../../docs/community/contributing/pr_workflow.rst:384
 msgid ""
 "To squash those two commits together, we will have to *rewrite history*. "
 "Right, we have that power. You may read that it's a bad practice, and it's "
@@ -473,7 +499,7 @@ msgid ""
 "can do whatever you want, and everything is allowed to get neat PRs :)"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:369
+#: ../../docs/community/contributing/pr_workflow.rst:389
 msgid ""
 "We will use the *interactive rebase* ``git rebase -i`` to do this. This "
 "command takes a commit hash as argument, and will let you modify all commits "
@@ -482,11 +508,11 @@ msgid ""
 "do:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:380
+#: ../../docs/community/contributing/pr_workflow.rst:400
 msgid "This will open a text editor with:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:387
+#: ../../docs/community/contributing/pr_workflow.rst:407
 msgid ""
 "The editor will also show instructions regarding how you can act on those "
 "commits. In particular, it should tell you that \"pick\" means to use that "
@@ -497,7 +523,7 @@ msgid ""
 "\"Fix a typo\" commit, so we use:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:400
+#: ../../docs/community/contributing/pr_workflow.rst:420
 msgid ""
 "Upon saving and quitting the editor, the rebase will occur. The second "
 "commit will be melded into the first one, and ``git log`` and ``git show`` "
@@ -505,7 +531,7 @@ msgid ""
 "previous commits."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:405
+#: ../../docs/community/contributing/pr_workflow.rst:425
 msgid ""
 "You could have avoided this rebase by using ``git commit --amend`` when "
 "fixing the typo. This command will write the staged changes directly into "
@@ -514,7 +540,7 @@ msgid ""
 "then a rebase to mark it as \"fixup\"."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:411
+#: ../../docs/community/contributing/pr_workflow.rst:431
 msgid ""
 "But! You rewrote the history, and now your local and remote branches have "
 "diverged. Indeed, commit 1b4aad7 in the above example will have changed, and "
@@ -522,25 +548,25 @@ msgid ""
 "it will raise an error:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:425
+#: ../../docs/community/contributing/pr_workflow.rst:445
 msgid ""
 "This is a sane behaviour, Git will not let you push changes that would "
 "override remote content. But that's actually what we want to do here, so we "
 "will have to *force* it:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:433
+#: ../../docs/community/contributing/pr_workflow.rst:453
 msgid ""
 "And tadaa! Git will happily *replace* your remote branch with what you had "
 "locally (so make sure that's what you wanted, using ``git log``). This will "
 "also update the PR accordingly."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:438
+#: ../../docs/community/contributing/pr_workflow.rst:458
 msgid "Deleting a Git branch"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:440
+#: ../../docs/community/contributing/pr_workflow.rst:460
 msgid ""
 "After your pull request gets merged, there's one last thing you should do: "
 "delete your Git branch for the PR. There won't be issues if you don't delete "
@@ -548,16 +574,16 @@ msgid ""
 "once for the local branch and another for the remote branch on GitHub."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:445
+#: ../../docs/community/contributing/pr_workflow.rst:465
 msgid "To delete our better project manager branch locally, use this command:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:451
+#: ../../docs/community/contributing/pr_workflow.rst:471
 msgid ""
 "Alternatively, if the branch hadn't been merged yet and we wanted to delete "
 "it anyway, instead of ``-d`` you would use ``-D``."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:454
+#: ../../docs/community/contributing/pr_workflow.rst:474
 msgid "Next, to delete the remote branch on GitHub use this command:"
 msgstr ""

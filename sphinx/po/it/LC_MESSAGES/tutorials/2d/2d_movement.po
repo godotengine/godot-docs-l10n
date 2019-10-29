@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,10 +93,13 @@ msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
 msgstr ""
+"Se non hai esperienza di matematica vettoriale, o necessiti di un ripasso, "
+"puoi dare un'occhiata alla spiegazione sull'utilizzo dei vettori in Godot a :"
+"ref:`doc_vector_math`."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:113
 msgid "Rotation + movement"
-msgstr ""
+msgstr "Rotazione + movimento"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:115
 msgid ""
@@ -105,6 +108,10 @@ msgid ""
 "the character, while up/down moves it forward or backward in whatever "
 "direction it's facing."
 msgstr ""
+"Questo tipo di movimento viene chiamato a volte \"Stile-Asteroids\" perché è "
+"riconducibile al classico gioco arcade. Premendo sinistra/destra si ruota il "
+"personaggio mentre su/giù si muove in avanti o indietro nella direzione in "
+"cui sta puntando."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:190
 msgid ""
@@ -113,6 +120,10 @@ msgid ""
 "rotation. The rotation is applied directly to the body's ``rotation`` "
 "property."
 msgstr ""
+"Qui abbiamo aggiunto due nuove variabili per controllare la rotazione e la "
+"velocità. Come previsto, premendo entrambi i tasti contemporaneamente "
+"l'effetto sarà nullo in quanto non avverrà alcuna rotazione. Questa verrà "
+"applicata direttamente alla proprietà ``rotation`` del corpo."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:194
 msgid ""
@@ -121,10 +132,14 @@ msgid ""
 "function that you can use in many circumstances where you would otherwise "
 "need to apply trigonometric functions."
 msgstr ""
+"Per impostare la velocità, utilizzeremo il metodo ``Vector2.rotated()``, in "
+"modo che punti nella stessa direzione del corpo. ``rotated()`` è una "
+"funzione vettoriale che si puo' utliizzare in molti casi in sostituzione di "
+"funzioni trigonometriche."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:200
 msgid "Rotation + movement (mouse)"
-msgstr ""
+msgstr "Rotazione + movimento (mouse)"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:202
 msgid ""
@@ -133,6 +148,10 @@ msgid ""
 "character will always \"look at\" the mouse pointer. The forward/back inputs "
 "remain the same, however."
 msgstr ""
+"Questo metodo di spostamento è molto simile al precedente. Questa volta, la "
+"direzione è determinata dalla posizione del mouse anzichè dalla tastiera. Il "
+"personaggio guarderà (\"look_at\") sempre al puntatore del mouse. Comunque "
+"gli input avanti/indietro non varieranno."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:261
 msgid ""
@@ -140,16 +159,23 @@ msgid ""
 "point the player towards a given position. Without this function, you could "
 "get the same effect by setting the angle like this:"
 msgstr ""
+"Qui utilizziamo il metodo :ref:`Node2D <class_Node2D>` ``look_at()`` per "
+"puntare il personaggio verso una posizione prestabilita. Se non si vuole "
+"utilizzare questa funzione, si puo' ottenere lo stesso risultato impostando "
+"l'angolo come segue:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:276
 msgid "Click-and-move"
-msgstr ""
+msgstr "Clicca e muovi (Click-and-move)"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:278
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
 msgstr ""
+"Questo ultimo esempio utilizza solo il mouse per controllare il personaggio. "
+"Cliccando sullo schermo provocherà lo spostamento del giocatore verso la "
+"posizione designata."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:335
 msgid ""
@@ -158,18 +184,28 @@ msgid ""
 "slightly past the position and tries to move back, only to move too far and "
 "repeat."
 msgstr ""
+"Notare il controllo``length()`` che abbiamo impostato prima dello "
+"spostamento. Senza questo test, il corpo \"vibrerà\" appena raggiungerà la "
+"destinazione, in quanto lo spostamento sarà leggermente troppo e proverà a "
+"tornare indietro, ma ancora sarà superiore al necessario, tornerà indietro, "
+"a ripetizione."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:340
 msgid ""
 "Uncommenting the ``rotation`` line will also turn the body to point in its "
 "direction of motion if you prefer."
 msgstr ""
+"Togliendo il commento a lla riga ``rotation`` provocherà anche la rotazione "
+"del personaggio nella direzione di movimento che preferisci."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:343
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
 msgstr ""
+"Questa tecnica puo' anche essere utilizzata come base per un personaggio "
+"\"che segue\". La posizione ``target`` puo' essere quella di qualsiasi "
+"oggetto si desideri raggiungere."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:347
 msgid "Summary"
@@ -181,9 +217,14 @@ msgid ""
 "projects. Feel free to use them and experiment with them to see what you can "
 "make."
 msgstr ""
+"Troverai questi esempi di codice utili come punto di partenza per i tuoi "
+"progetti personali. Sentiti libero di utilizzarli e sperimentare con questi "
+"per scoprire cosa puoi fare."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:352
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"
 msgstr ""
+"Puoi scaricare questi progetti di esempio qui: :download:`2D_movement_demo."
+"zip <files/2D_movement_demo.zip>`"

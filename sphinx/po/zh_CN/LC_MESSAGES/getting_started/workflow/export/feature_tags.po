@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
 "is represented as a string, which can refer to many of the following:"
 msgstr ""
-"Godot 有一个特殊的系统来标记功能的可用性。 每个 *特性* 表示为一个字符串，它可"
-"以引用以下许多内容:"
+"Godot 有一个特殊的系统来标记功能的可用性。每个 *功能* 均表示为一个字符串，可"
+"以引用以下各项："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:12
 msgid "Platform name."
@@ -39,25 +39,25 @@ msgstr "平台名称。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:13
 msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
-msgstr "平台架构(64位或32位，x86或ARM)。"
+msgstr "平台体系结构（64位或32位，x86或ARM）。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
 msgid "Platform type (desktop, mobile, Web)."
-msgstr "平台类型 (台式机，手机，网页)。"
+msgstr "平台类型（桌面，移动，Web）。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
 msgid "Supported texture compression algorithms on the platform."
-msgstr "支持平台的纹理压缩。"
+msgstr "平台上支持的纹理压缩算法。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
-msgstr "构建是 ``debug`` 还是 ``release`` ( ``debug`` 包括编辑器)。"
+msgstr "构建是 ``debug`` 还是 ``release`` （``debug`` 包括编辑器）。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
 "Whether the project is running from the editor or a \"standalone\" binary."
-msgstr "项目是从编辑器运行还是“独立”二进制文件运行。"
+msgstr "项目是从编辑器运行还是从 ``独立`` 二进制文件运行。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:18
 msgid "Many more things."
@@ -65,7 +65,7 @@ msgstr "更多的东西。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:20
 msgid "Features can be queried at run-time from the singleton API by calling:"
-msgstr "通过调用以下功能可以在运行时查询单例API:"
+msgstr "功能可以在运行时从单例API查询，通过调用："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:28
 msgid "Default features"
@@ -75,11 +75,11 @@ msgstr "默认功能"
 msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are **case-"
 "sensitive**:"
-msgstr "以下是 Godot 中大多数功能标签的列表。 请记住它们 *区分大小写* :"
+msgstr "这是Godot中大多数功能标签的列表。请记住它们 *区分大小写*："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Feature tag**"
-msgstr "** 功能标签 **"
+msgstr "**功能标签**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Description**"
@@ -147,11 +147,11 @@ msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
-msgstr "在X11上运行(Linux / BSD桌面)"
+msgstr "在X11上运行（Linux/BSD桌面）"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "**Server**"
-msgstr "**服务器**"
+msgstr "**Server**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "Running on the headless server platform"
@@ -159,23 +159,23 @@ msgstr "在无头服务器平台上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "**debug**"
-msgstr "**调试**"
+msgstr "**debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "Running on a debug build (including the editor)"
-msgstr "在调试版本(包括编辑器)上运行"
+msgstr "在调试版本（包括编辑器）上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
-msgstr "**发布**"
+msgstr "**release**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "Running on a release build"
-msgstr "以发布版本运行"
+msgstr "在发布版本上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "**editor**"
-msgstr "**编辑器**"
+msgstr "**editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "Running on an editor build"
@@ -183,11 +183,11 @@ msgstr "在编辑器构建上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "**standalone**"
-msgstr "**独立平台**"
+msgstr "**standalone**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "Running on a non-editor build"
-msgstr "在非编辑器构建上运行"
+msgstr "在无编辑器构建上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
@@ -195,7 +195,7 @@ msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "Running on a 64-bit build (any architecture)"
-msgstr "在64位版本(任何架构)上运行"
+msgstr "在64位版本构建（任何架构）上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
@@ -203,7 +203,7 @@ msgstr "**32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "Running on a 32-bit build (any architecture)"
-msgstr "以32位运行"
+msgstr "在32位版本构建（任何架构）上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "**x86_64**"
@@ -211,7 +211,7 @@ msgstr "**x86_64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "Running on a 64-bit x86 build"
-msgstr "以64位运行"
+msgstr "在64位 x86架构构建上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "**x86**"
@@ -219,7 +219,7 @@ msgstr "**x86**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "Running on a 32-bit x86 build"
-msgstr "以32位 x86 运行"
+msgstr "在32位 x86架构构建上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "**arm64**"
@@ -227,7 +227,7 @@ msgstr "**arm64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "Running on a 64-bit ARM build"
-msgstr "以64位 ARM 运行"
+msgstr "在64位 ARM架构构建上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "**arm**"
@@ -235,7 +235,7 @@ msgstr "**arm**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "Running on a 32-bit ARM build"
-msgstr "以32位 ARM运行"
+msgstr "在32位 ARM架构构建上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "**mobile**"
@@ -251,7 +251,7 @@ msgstr "**pc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "Host OS is a PC platform (desktop/laptop)"
-msgstr "宿主操作系统是 PC 平台 (台式机/笔记本电脑)"
+msgstr "宿主操作系统是 PC 平台（台式机/笔记本电脑）"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "**web**"
@@ -301,12 +301,11 @@ msgstr "自定义功能"
 msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
-msgstr ""
-"可以向构建添加自定义功能，使用用于生成它的 *export preset * 中的相关字段:"
+msgstr "可以向构建添加自定义功能；使用 *导出预设* 中用于生成它的相关字段："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Overriding project settings"
-msgstr "重载项目设置"
+msgstr "覆盖项目设置"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
 msgid ""
@@ -314,8 +313,8 @@ msgid ""
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
-"功能可用于重载 *Project Settings* 中的特定配置值。 这样可以在构建时更好地定制"
-"任意配置。"
+"功能可用于覆盖 *项目设置* 中的特定配置值。这样可以在构建时，更好地定制任意配"
+"置。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
 msgid ""
@@ -323,29 +322,26 @@ msgid ""
 "the game (which was customized in a special export preset, which, in turn, "
 "includes only demo levels)."
 msgstr ""
-"在下面的示例中，为游戏的演示版本添加了一个不同的图标(在特定的导出预设中进行了"
-"自定义，而该预设仅包含演示关卡)。"
+"在下面的示例中，为游戏的演示版本添加了一个不同的图标（在特定的导出预设中进行"
+"了自定义，而该预设仅包含演示关卡）。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid "After overriding, a new field is added for this specific configuration:"
-msgstr "重写后, 将为此特定配置添加一个新字段:"
+msgstr "覆盖后, 将为此特定配置添加一个新字段："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:113
 msgid "Default overrides"
-msgstr "默认重载"
+msgstr "默认覆盖"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:115
 msgid ""
 "There are already a lot of settings that come with overrides by default; "
 "they can be found in many sections of the project settings."
-msgstr ""
-"默认情况下，已有很多设置与其重载一起出现，它们可以在项目设置的许多地方中找"
-"到。"
+msgstr "默认情况下，已有很多覆盖的设置；它们可以在项目设置的许多地方中找到。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:121
-#, fuzzy
 msgid "Customizing the build"
-msgstr "自定义生成"
+msgstr "自定义构建"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:123
 msgid ""
@@ -353,5 +349,5 @@ msgid ""
 "custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
-"通过编写自定义的 **ExportPlugin**，功能标签也可用于定制构建过程。 它们也被用"
-"来指定在 **GDNative** 中加载和导出哪个共享库。"
+"通过编写自定义 **ExportPlugin**，功能标签也可以用于自定义构建过程。它们还用于"
+"指定在 **GDNative** 中加载和导出哪个共享库。"

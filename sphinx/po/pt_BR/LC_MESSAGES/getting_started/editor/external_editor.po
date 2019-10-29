@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,6 @@ msgstr ""
 "Editor -> Editor de Texto -> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:12
-#, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
 "allow you to integrate the editor with Godot, passing it the file path to "
@@ -43,8 +42,9 @@ msgid ""
 "placeholders in the flags string:"
 msgstr ""
 "Existem dois campos: o caminho do executável e os sinalizadores da linha de "
-"comando. As flags permitem integrar melhor o editor com godot. Godot irá "
-"substituir o seguinte dentro do parâmetro flags:"
+"comando. As flags permitem integrar melhor o editor com godot, passando o "
+"caminho do arquivo para abrir e outros argumentos relevantes. Godot irá "
+"substituir os seguintes  espaços reservados dentro do texto da flag:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
@@ -152,5 +152,7 @@ msgid "``\"+call cursor({line}, {col})\" {file}``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:45
+#, fuzzy
 msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
 msgstr ""
+"Para Visual Studio Code você precisa apontar para o arquivo ``code.cmd``."

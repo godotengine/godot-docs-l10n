@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,13 +29,12 @@ msgstr "需求"
 msgid ""
 "SCons (you can get it from macports, you should be able to run ``scons`` in "
 "a terminal when installed)"
-msgstr ""
-"SCons(您可以从macports获得它，您应该能够在安装时在终端中运行 ``scons`` )"
+msgstr "SCons（您可以从macports获得它，安装后应该可以在终端上运行 ``scons``）"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:13
 msgid ""
 "Xcode 10.0 (or later) with the iOS (10.0) SDK and the command line tools."
-msgstr "Xcode 10.0(或更高版本)，使用iOS (10.0) SDK和命令行工具。"
+msgstr "Xcode 10.0（或更高版本）以及iOS（10.0）SDK和命令行工具。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:15
 msgid ""
@@ -51,19 +50,19 @@ msgstr "开始编译"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:21
 msgid "Open a Terminal, go to the root dir of the engine source code and type:"
-msgstr "打开终端，转到引擎源代码的根目录并键入:"
+msgstr "打开终端，转到引擎源代码的根目录并键入："
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:27
 msgid "for a debug build, or:"
-msgstr "用于调试版本，或:"
+msgstr "针对调试版本，或："
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:33
 msgid ""
 "for a release build (check ``platform/iphone/detect.py`` for the compiler "
 "flags used for each configuration)."
 msgstr ""
-"对于发布版本(检查``platform / iphone / detect.py``以获取用于每个配置的编译器"
-"标志)。"
+"对于发布版本（检查 ``platform/iphone/detect.py`` 以获取用于每种配置的编译器标"
+"志）。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:36
 msgid "Alternatively, you can run"
@@ -80,9 +79,9 @@ msgid ""
 "to create a bundle in which there are both 32-bit and 64-bit binaries, so "
 "every device will be able to run the game."
 msgstr ""
-"对于最新的设备，当你上传到苹果商店时，苹果官方需要64位版本的应用程序二进制文"
-"件。最好的方法是创建一个包，其中包含32位和64位的二进制文件，这样每个设备都可"
-"以运行游戏。"
+"对于最新的设备，当您上载到苹果商店时，苹果要求64位版本的应用程序二进制文件。"
+"提供这些功能的最好方法是创建一个包，其中包含32位和64位二进制文件，这样每个设"
+"备都可以运行游戏。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:47
 msgid ""
@@ -91,8 +90,9 @@ msgid ""
 "\"universal\" binary. All those steps can be performed with following "
 "commands:"
 msgstr ""
-"可以分三步完成：首先编译32位版本，再编译64位版本，然后使用“lipo”命令将它们绑"
-"定到一个“通用”二进制文件中。所有这些步骤都可以通过以下命令执行:"
+"可以分三步完成：首先编译32位版本，再编译64位版本，然后使用 ``lipo`` 命令将它"
+"们绑定到一个“通用（universal）”二进制文件中。所有这些步骤都可以通过以下命令执"
+"行："
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:56
 msgid ""
@@ -100,8 +100,8 @@ msgid ""
 "linker errors with dependencies), you'll need to build and lipo the "
 "``x86_64`` architecture as well."
 msgstr ""
-"如果您还想提供一个模拟器构建(为了减少任何依赖项链接器错误的机会)，您还需要构"
-"建和修改“x86_64”体系结构。"
+"如果您还想提供一个模拟器构建（减少具有依赖项的任何链接器错误的机会），您还需"
+"要构建和 ``lipo`` ``x86_64`` 体系结构。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:66
 msgid "Run"
@@ -112,7 +112,7 @@ msgid ""
 "To run on a device or simulator, follow these instructions: :ref:"
 "`doc_exporting_for_ios`."
 msgstr ""
-"要在设备或模拟器上运行，请按照以下说明操作: :ref:`doc_exporting_for_ios`。"
+"要在设备或模拟器上运行，请按照以下说明操作：:ref:`doc_exporting_for_ios`。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:71
 msgid ""
@@ -121,4 +121,4 @@ msgid ""
 "alternative build."
 msgstr ""
 "将您的可执行文件替换或添加到Xcode项目，如果您使用替代版本，则相应地更改Info."
-"plist上的``可执行文件名称``属性。"
+"plist上的 ``可执行文件名称`` 属性。"

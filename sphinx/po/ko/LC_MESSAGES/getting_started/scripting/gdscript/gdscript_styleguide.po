@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,8 @@ msgstr "각 들여쓰기 수준은 그것을 포함하는 블록보다 한 단�
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:96
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:120
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:140
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:222
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:160
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:242
 msgid "**Good**:"
 msgstr "**좋음**:"
 
@@ -87,8 +88,9 @@ msgstr "**좋음**:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:106
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:150
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:230
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:170
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:250
 msgid "**Bad**:"
 msgstr "**나쁨**:"
 
@@ -138,10 +140,21 @@ msgstr ""
 "면, 가독성만 떨어뜨릴 것입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:135
+#, fuzzy
+msgid "Comment spacing"
+msgstr "주석(Comment)"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+msgid ""
+"Normal comments should start with a space, but comments which are disabled "
+"code should not. This helps differentiate text comments from disabled code."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:155
 msgid "Whitespace"
 msgstr "공백"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:157
 msgid ""
 "Always use one space around operators and after commas. Avoid extra spaces "
 "in dictionary references and function calls, or to create \"columns.\""
@@ -149,15 +162,15 @@ msgstr ""
 "연산자와 쉼표 뒤에 하나의 빈칸을 반드시 사용합니다. 사전 참조나 함수 호출에 "
 "여분의 공백을 피하거나, \"열\"을 생성하십시오."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:160
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:180
 msgid "**NEVER**:"
 msgstr "**절대 금지**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:169
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:189
 msgid "Naming conventions"
 msgstr "명명 규칙"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:171
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:191
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, which is ugly."
@@ -165,27 +178,27 @@ msgstr ""
 "이러한 명명 규칙은 Godot 엔진 스타일을 따릅니다. 이 규칙을 깬다면 코드가 보기"
 "에도 못생기고, 내장된 명명 규칙으로 충돌하게 됩니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:196
 msgid "Classes and nodes"
 msgstr "클래스와 노드"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:198
 msgid "Use PascalCase: ``extends KinematicBody``"
 msgstr "파스칼 표기법(PascalCase)을 사용: ``extends KinematicBody``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:180
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:200
 msgid "Also when loading a class into a constant or variable:"
 msgstr "또한 상수나 변수 안으로 클래스를 불러올 때 사용:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:187
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:207
 msgid "Functions and variables"
 msgstr "함수와 변수"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:189
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:209
 msgid "Use snake\\_case: ``get_node()``"
 msgstr "스네이크 표기법(snake\\_case)을 사용: ``get_node()``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:191
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:211
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods (functions the user "
 "must override), private functions, and private variables: ``func _ready()``"
@@ -193,19 +206,19 @@ msgstr ""
 "가상 메서드 (사용자가 치환해야 하는 함수), 개인 함수, 그리고 개인 함수에 단"
 "일 밑줄 (\\_)을 추가하십시오: ``func _ready()``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:196
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:216
 msgid "Signals"
 msgstr "시그널"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:198
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:218
 msgid "Use past tense:"
 msgstr "과거 시제 사용:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:206
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:226
 msgid "Constants"
-msgstr "상수(Constant)"
+msgstr "상수"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:208
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:228
 msgid ""
 "Use CONSTANT\\_CASE, all caps, with an underscore (\\_) to separate words: "
 "``const MAX_SPEED = 200``"
@@ -213,35 +226,35 @@ msgstr ""
 "CONSTANT\\_CASE 사용, 모두 대문자로, 밑줄 (\\_)로 단어를 분리함: ``const "
 "MAX_SPEED = 200``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:212
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:232
 #, fuzzy
 msgid "Static typing"
 msgstr "정적 함수"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:214
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:234
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:217
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:237
 #, fuzzy
 msgid "Type hints"
 msgstr "타입(Types)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:219
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:239
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:264
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,7 +190,6 @@ msgstr ""
 "cena afetam todas as instâncias."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
@@ -200,7 +199,10 @@ msgid ""
 msgstr ""
 "Você também pode ajustar instâncias individualmente. Configure o valor de "
 "quique de volta para ``0`` e então, na cena ``Main``, selecione uma das "
-"bolas instanciadas. Defina seu ``Bounce`` para ``1`` e pressione \"Rodar\"."
+"bolas instanciadas. Recursos como ``PhysicsMaterial`` são compartilhados "
+"entre as instâncias por padrão, então nós precisamos fazer com que a "
+"instância seja única. Clique na seta que aponta para baixo e selecione "
+"\"Make Unique\". Defina seu ``Bounce`` para ``1`` e pressione \"Rodar\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:115
 msgid ""

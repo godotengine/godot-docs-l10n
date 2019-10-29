@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,28 +29,28 @@ msgstr "本页概述了C#和Godot的常用功能以及它们如何一起使用�
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:10
 msgid "Type conversion and casting"
-msgstr "类型转换和铸造"
+msgstr "类型转换和强制转换"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
 msgid ""
 "C# is a statically typed language. Therefore, you can't do the following:"
-msgstr "C#是一种静态类型语言。 因此，您无法执行以下操作:"
+msgstr "C#是一种静态类型语言。因此，您无法执行以下操作："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:19
 msgid ""
 "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
 "convert it to the desired derived type, ``Sprite`` in this case."
 msgstr ""
-"方法 ``GetNode()`` 返回一个 ``Node`` 实例。 在这种情况下，您必须将其显式转换"
-"为所需的派生类型， ``Sprite`` 。"
+"方法 ``GetNode()`` 返回一个 ``Node`` 实例。在这种情况下，您必须将其显式转换为"
+"所需的派生类型， ``Sprite``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:22
 msgid "For this, you have various options in C#."
-msgstr "为此，您在C#中有多种选择。"
+msgstr "为此，在C#中有多种选择。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
 msgid "**Casting and Type Checking**"
-msgstr "**铸造和型式检查**"
+msgstr "**强制转换和类型检查**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
 msgid ""
@@ -58,7 +58,7 @@ msgid ""
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
 "sure it won't fail."
 msgstr ""
-"如果返回的节点无法转换为Sprite，则抛出 ``InvalidCastException`` 。 如果您非常"
+"如果返回的节点无法转换为Sprite，则抛出 ``InvalidCastException`` 。如果您非常"
 "确定它不会失败，您可以使用它而不是 ``as`` 运算符。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:34
@@ -70,33 +70,33 @@ msgid ""
 "The ``as`` operator returns null if the node cannot be cast to Sprite, and "
 "for that reason, it cannot be used with value types."
 msgstr ""
-"如果节点无法转换为Sprite，则 ``as`` 运算符返回null，因此它不能与值类型一起使"
-"用。"
+"如果节点无法转换为 ``Sprite``，则 ``as`` 运算符返回 ``null``，因此它不能与值"
+"类型一起使用。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:45
 msgid "**Using the generic methods**"
-msgstr "**使用通用方法**"
+msgstr "**使用泛型方法**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid ""
 "Generic methods are also provided to make this type conversion transparent."
-msgstr "还提供了通用方法以使该类型转换透明。"
+msgstr "还提供了泛型方法以使该类型转换透明。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
 msgid ""
 "``GetNode<T>()`` casts the node before returning it. It will throw an "
 "``InvalidCastException`` if the node cannot be cast to the desired type."
 msgstr ""
-"``GetNode <T>()`` 在返回之前强制转换节点。 如果节点无法转换为所需类型，它将抛"
-"出一个 ``InvalidCastException``。"
+"``GetNode <T>()`` 在返回之前强制转换节点。如果节点无法强制转换为所需类型，它"
+"将抛出一个 ``InvalidCastException``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:56
 msgid ""
 "``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
 "the node cannot be cast to the desired type."
 msgstr ""
-"``GetNodeOrNull <T>()`` 使用 ``as`` 运算符，如果节点无法转换为所需类型，则返"
-"回 ``null``。"
+"``GetNodeOrNull <T>()`` 使用 ``as`` 运算符，如果节点无法强制转换为所需类型，"
+"则返回 ``null``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:64
 msgid "**Type checking using the IS operator**"
@@ -108,8 +108,8 @@ msgid ""
 "The ``is`` operator returns false if the node cannot be cast to Sprite, "
 "otherwise it returns true."
 msgstr ""
-"要检查节点是否可以转换为Sprite，可以使用 ``is`` 运算符。 如果节点无法转换为"
-"Sprite，则 ``is`` 运算符返回false，否则返回true。"
+"要检查节点是否可以强制转换为 ``Sprite``，可以使用 ``is`` 运算符。如果节点无法"
+"转换为 ``Sprite``，则 ``is`` 运算符返回 ``false``，否则返回 ``true``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:77
 msgid ""
@@ -117,7 +117,7 @@ msgid ""
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 msgstr ""
 "对于更高级的类型检查，您可以查看 `模式匹配 <https://docs.microsoft.com/en-us/"
-"dotnet/csharp/pattern-matching>`_ 。"
+"dotnet/csharp/pattern-matching>`_。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:82
 msgid "C# signals"
@@ -128,19 +128,21 @@ msgid ""
 "For a complete C# example, see the **Handling a signal** section in the step "
 "by step :ref:`doc_scripting` tutorial."
 msgstr ""
-"有关完整的C#示例，请参阅步骤中的 **处理信号** 部分 :ref:`doc_scripting`教程。"
+"有关完整的C#示例，请参阅逐步 :ref:`doc_scripting` 教程中的 **处理信号** 部"
+"分。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:86
 msgid ""
 "Declaring a signal in C# is done with the ``[Signal]`` attribute on a "
 "delegate."
-msgstr "在C#中声明一个信号是通过委托上的 ``[Signal]`` 属性完成的。"
+msgstr ""
+"在C#中声明一个信号是通过一个 ``delegate`` 上的 ``[Signal]`` 属性完成的。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:96
 msgid ""
 "These signals can then be connected either in the editor or from code with "
 "``Connect``."
-msgstr "然后可以在编辑器中或通过``Connect``连接代码连接这些信号。"
+msgstr "然后可以在编辑器中或通过 ``Connect`` 连接代码连接这些信号。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:116
 msgid "Emitting signals is done with the ``EmitSignal`` method."
@@ -150,13 +152,15 @@ msgstr "发射信号是通过 ``EmitSignal`` 方法完成的。"
 msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
-msgstr "请注意，您始终可以使用 ``nameof`` 关键字引用信号名称(应用于委托本身)。"
+msgstr ""
+"请注意，您始终可以使用 ``nameof`` 关键字引用信号名称（应用于 ``委托"
+"（delegate）`` 本身）。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
 msgid ""
 "It is possible to bind values when establishing a connection by passing an "
 "object array."
-msgstr "通过传递对象数组，可以在建立连接时绑定值。"
+msgstr "建立连接时可以通过传递对象数组来绑定值。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:148
 msgid ""
@@ -168,9 +172,10 @@ msgid ""
 "`Godot.Object` or one of its subclasses."
 msgstr ""
 "信号支持所有 `内置类型 <https://docs.microsoft.com/en-us/dotnet/csharp/"
-"language-reference/keywords/built-in-types-table>`_ 的参数和绑定值 派生自的"
-"类 :ref:`Godot.Object <class_Object>`。 因此，任何 ``Node`` 或 ``Reference`` "
-"都将自动兼容，但自定义数据对象需要从 `Godot.Object` 或其子类之一扩展。"
+"language-reference/keywords/built-in-types-table>`_ 的参数和绑定值，以及从 :"
+"ref:`Godot.Object <class_Object>` 派生的类。因此，任何 ``Node`` 或 "
+"``Reference`` 将自动兼容，但是自定义数据对象将需要从 ``Godot.Object`` 或其子"
+"类之中扩展。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:160
 msgid ""
@@ -179,4 +184,4 @@ msgid ""
 "or ``EmitSignal``)."
 msgstr ""
 "最后，可以通过调用 ``AddUserSignal`` 来创建信号，但要注意它应该在使用所述信号"
-"之前执行(使用 ``Connect`` 或 ``EmitSignal`` )。"
+"之前执行（使用 ``Connect`` 或 ``EmitSignal``）。"

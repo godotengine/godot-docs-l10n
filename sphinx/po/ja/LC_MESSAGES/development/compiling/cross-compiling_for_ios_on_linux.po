@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -184,22 +184,29 @@ msgid ""
 "stay anywhere you want since you have to provide their paths to the SCons "
 "build command."
 msgstr ""
+"上記のステップを完了したら、ビルドされたツールチェーンとiPhoneOS SDKディレク"
+"トリーという2つのものを環境に残しておく必要があります。これらはSConsのbuildコ"
+"マンドにパスを指定する必要があるため、任意の場所に置くことができます。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:132
 msgid ""
 "For the iPhone platform to be detected, you need the ``OSXCROSS_IOS`` "
 "environment variable defined to anything."
 msgstr ""
+"\\ iPhoneプラットフォームを検出するには、 ``OSXCROSS_IOS`` 環境変数を何かに定"
+"義する必要があります。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:139
 msgid ""
 "Now you can compile for iPhone using SCons like the standard Godot way, with "
 "some additional arguments to provide the correct paths:"
 msgstr ""
+"これで、標準的なGodotの方法のようにSConsを使ってiPhone用にコンパイルでき、正"
+"しいパスを提供するためのいくつかの引数を追加することができます:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:148
 msgid "Producing fat binaries"
-msgstr ""
+msgstr "ファットバイナリの生成"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:150
 msgid ""
@@ -208,8 +215,13 @@ msgid ""
 "executable. The following example assumes you are in the root Godot source "
 "directory:"
 msgstr ""
+"Appleでは、1 つのファイルに両方のアーキテクチャ ( ``armv7`` 及び ``arm64`` ) "
+"を含むファットバイナリを必要とします。これを行うには、 ``arm-apple-darwin11-"
+"lipo`` 実行可能ファイルを使用します。次の例では、ルートGodotソースディレクト"
+"リに入っていると仮定します:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:159
 msgid ""
 "Then you will have an iOS fat binary in ``bin/godot.iphone.opt.debug.fat``."
 msgstr ""
+"次に、 ``bin/godot.iphone.opt.debug.fat`` にiOSのファットバイナリがあります。"

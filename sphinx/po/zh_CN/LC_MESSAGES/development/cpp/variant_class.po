@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
-msgstr "变量类"
+msgstr "Variant类"
 
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
@@ -33,29 +33,28 @@ msgid ""
 "information for long periods of time, instead they are used mainly for "
 "communication, editing, serialization and generally moving data around."
 msgstr ""
-"Variant 是 Godot引 擎中最重要的数据类型，也是引擎中最重要的类。 一个 Variant "
-"对象值占用 20 个字节内存，但它能够存储引擎中几乎所有的数据类型。 Variant 很少"
-"用于长时间保存信息，而主要用于通信，编辑，序列化 和移动数据。"
+"Variant 是 Godot 中最重要的数据类型，也是引擎中最重要的类。Variant仅占用20个"
+"字节，并且几乎可以在其中存储任何引擎数据类型。Variant 很少用于长时间保存信"
+"息，而主要用于通信、编辑、序列化和移动数据。"
 
 #: ../../docs/development/cpp/variant_class.rst:16
 msgid "A Variant can:"
-msgstr "一个变种可以:"
+msgstr "一个Variant可以："
 
 #: ../../docs/development/cpp/variant_class.rst:18
 msgid "Store almost any datatype"
-msgstr "存储任意类型的数据"
+msgstr "存储几乎所有数据类型"
 
 #: ../../docs/development/cpp/variant_class.rst:19
 msgid ""
 "Perform operations between many variants (GDScript uses Variant as its "
 "atomic/native datatype)."
 msgstr ""
-"在多个 Variant 对象间执行操作符运算 (GDScript 使用 Variant 作为原生最基础的数"
-"据类型)。"
+"在许多Variant对象之间执行操作（GDScript使用Variant作为其原子/原生数据类型）。"
 
 #: ../../docs/development/cpp/variant_class.rst:21
 msgid "Be hashed, so it can be compared quickly to other variants"
-msgstr "经过哈希处理，因此它能够与其他 Variant 对象进行快速比较"
+msgstr "被散列，因此可以快速将其与其他Variant对象进行比较"
 
 #: ../../docs/development/cpp/variant_class.rst:22
 msgid "Be used to convert safely between datatypes"
@@ -65,7 +64,7 @@ msgstr "用于在数据类型之间安全地转换"
 msgid ""
 "Be used to abstract calling methods and their arguments (Godot exports all "
 "its functions through variants)"
-msgstr "用于抽象调用方法及其参数(Godot通过变体导出其所有函数)"
+msgstr "用于抽象调用方法及其参数（Godot通过Variant对象导出其所有函数）"
 
 #: ../../docs/development/cpp/variant_class.rst:25
 msgid "Be used to defer calls or move data between threads."
@@ -73,20 +72,20 @@ msgstr "用于推迟调用或在线程之间交换数据。"
 
 #: ../../docs/development/cpp/variant_class.rst:26
 msgid "Be serialized as binary and stored to disk, or transferred via network."
-msgstr "支持序列化为二进制格式，能被存储到磁盘或通过网络进行传输。"
+msgstr "被序列化为二进制并存储到磁盘，或通过网络传输。"
 
 #: ../../docs/development/cpp/variant_class.rst:28
 msgid ""
 "Be serialized to text and use it for printing values and editable settings."
-msgstr "能被序列化为文本，用于输出值和编辑配置。"
+msgstr "被序列化为文本，并将其用于打印值和可编辑的设置。"
 
 #: ../../docs/development/cpp/variant_class.rst:30
 msgid "Work as an exported property, so the editor can edit it universally."
-msgstr "作为导出的属性， 这样编辑器能够使用统一的方式进行修改值。"
+msgstr "用作导出的属性，因此编辑器可以对其进行普通地编辑。"
 
 #: ../../docs/development/cpp/variant_class.rst:31
 msgid "Be used for dictionaries, arrays, parsers, etc."
-msgstr "能被用于字典、数组、解析器等等常用工具中。"
+msgstr "用于字典、数组、解析器等。"
 
 #: ../../docs/development/cpp/variant_class.rst:33
 msgid ""
@@ -94,14 +93,13 @@ msgid ""
 "much easier task, as it allows for highly dynamic constructs not common of C+"
 "+ with little effort. Become a friend of Variant today."
 msgstr ""
-"基本上归功于Variant类，编写 Godot 本身变成了一件更加轻松的工作，因为它允许使"
-"用 C++ 中不常见的高度动态构造，并只需要写很少的代码。 今天就和 Variant 成为朋"
-"友吧。"
+"基本上，由于有了Variant类，编写Godot本身就容易得多，因为它可以轻松完成C++不常"
+"见的高度动态的结构。今天就成为Variant的朋友吧。"
 
 #: ../../docs/development/cpp/variant_class.rst:38
 #: ../../docs/development/cpp/variant_class.rst:57
 msgid "References:"
-msgstr "参阅资料:"
+msgstr "参考："
 
 #: ../../docs/development/cpp/variant_class.rst:40
 msgid ""
@@ -113,7 +111,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:43
 msgid "Containers: Dictionary and Array"
-msgstr "容器: 字典(Dictionary) 和 数组(Array)"
+msgstr "容器：字典（Dictionary）和数组（Array）"
 
 #: ../../docs/development/cpp/variant_class.rst:45
 msgid ""
@@ -121,19 +119,24 @@ msgid ""
 "used as key to any other datatype. An Array just holds an array of Variants. "
 "Of course, a Variant can also hold a Dictionary and an Array inside, making "
 "it even more flexible."
-msgstr "他们都是使用 Variant 实现的。"
+msgstr ""
+"他们都是使用 Variant 实现的。字典可以将用作键的任何数据类型与任何其他数据类型"
+"进行匹配。数组仅包含Variant数组。当然，Variant还可以在内部容纳一个Dictionary"
+"和一个Array，从而使其更加灵活。"
 
 #: ../../docs/development/cpp/variant_class.rst:50
 msgid ""
 "Modifications to a container will modify all references to it. A Mutex "
 "should be created to lock it if multi threaded access is desired."
 msgstr ""
-"对容器的修改将修改对它的所有引用。 如果需要多线程访问，应创建互斥锁以锁定它。"
+"对容器的修改将修改对该容器的所有引用。如果需要多线程访问，则应创建一个互斥锁"
+"以将其锁定。"
 
 #: ../../docs/development/cpp/variant_class.rst:54
 msgid ""
 "Copy-on-write (COW) mode support for containers was dropped with Godot 3.0."
-msgstr "Godot 3.0 删除了对容器的写时拷贝(COW)模式支持。"
+msgstr ""
+"Godot 3.0 删除了对容器的写时拷贝（:abbr:`COW(Copy-on-write)`）模式支持。"
 
 #: ../../docs/development/cpp/variant_class.rst:59
 msgid ""

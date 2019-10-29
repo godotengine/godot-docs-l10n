@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,10 +33,9 @@ msgid ""
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
 "動作するゲームを作成したら、他の人にシェアしたいでしょう。でも、友達にGodotを"
-"ダウンロードして\n"
-"あなたのプロジェクトを開くように頼むのは現実的ではないですね。代わりに、あな"
-"たは自分のプロジェクトをエクスポートして誰でも動作させることのできるパッケー"
-"ジにすることができます。"
+"ダウンロードして、あなたのプロジェクトを開くように頼むのは現実的ではないです"
+"ね。代わりに、あなたは自分のプロジェクトをエクスポートして誰でも動作させるこ"
+"とのできるパッケージにすることができます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 msgid ""
@@ -54,6 +53,8 @@ msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
+"自分でまだ「這うものをよけろ」を作成していない場合は、このチュートリアルを続"
+"ける前に:ref: `doc_your_first_game`をお読みください。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 msgid "Preparing the project"
@@ -81,10 +82,9 @@ msgid ""
 "*Pointing*"
 msgstr ""
 "デフォルトでGodotはタッチ入力からマウス入力をエミュレートします。マウスイベン"
-"ト対応にプログラムされていればタッチも\n"
-"同じように動作します。なんらかの理由でこのようにしたくないときやマウス入力か"
-"らタッチをエミュレートしたいときは入力装置とポインティングの下のプロジェクト"
-"設定で設定できます。"
+"ト対応にプログラムされていれば、タッチも同じように動作します。なんらかの理由"
+"でこのようにしたくないときや、マウス入力からタッチをエミュレートしたいとき"
+"は、入力装置とポインティングの下のプロジェクト設定で設定できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
 msgid ""
@@ -93,6 +93,10 @@ msgid ""
 "*Aspect* to \"keep\". This ensures that the game scales consistently on "
 "different sized screens."
 msgstr ""
+"入力方法を変更する前に、プロジェクト設定で* Display *に移動し、* Window *をク"
+"リックします。 * Stretch *オプションで、* Mode *を \"2d\"に、* Aspect *を "
+"\"keep\"に設定します。 これにより、さまざまなサイズの画面でゲームが一貫してス"
+"ケーリングされます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:44
 msgid ""
@@ -100,12 +104,17 @@ msgid ""
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
+"次に、「Player.gd」スクリプトを変更して、入力メソッドを変更する必要がありま"
+"す。 キー入力を削除し、タッチ（またはクリック）イベントで設定された「ターゲッ"
+"ト」にプレーヤーを移動させます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
 "Here is the full script for the player, with comments noting what we've "
 "changed:"
 msgstr ""
+"プレーヤーの完全なスクリプトを以下に示します。変更点はコメントに記載されてい"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:123
 msgid "Export templates"
@@ -118,18 +127,28 @@ msgid ""
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
+"エクスポートするには、http://godotengine.org/download から* export templates "
+"*をダウンロードする必要があります。 これらのテンプレートは、各プラットフォー"
+"ム用にエディターがプリコンパイルされていない最適化されたバージョンのエンジン"
+"です。 * Editor-> Manage Export Templates *をクリックして、Godotでダウンロー"
+"ドすることもできます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:132
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
+"表示されるウィンドウで、[ダウンロード]をクリックして、ご使用のGodotのバージョ"
+"ンに一致するテンプレートバージョンを取得できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:137
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
+"Godotをアップグレードする場合、新しいバージョンに一致するテンプレートをダウン"
+"ロードする必要があります。そうしないと、エクスポートされたプロジェクトが正し"
+"く機能しない場合があります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:141
 msgid "Export presets"
@@ -140,12 +159,15 @@ msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*:"
 msgstr ""
+"次に、* Project-> Export *をクリックして、エクスポート設定を構成できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:147
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
+"[追加...]をクリックしてプラットフォームを選択し、新しいエクスポートプリセット"
+"を作成します。 さまざまな設定で好きなだけプリセットを作成できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:150
 msgid ""
@@ -153,32 +175,42 @@ msgid ""
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
+"ウィンドウの下部には2つのボタンがあります。 「PCK / ZIPのエクスポート」は、プ"
+"ロジェクトのデータのパックバージョンのみを作成します。 これには実行可能ファイ"
+"ルが含まれていないため、プロジェクトを単独で実行することはできません。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:154
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
+"2番目のボタン「プロジェクトのエクスポート」は、Androidの場合は `.apk`、"
+"Windowsの場合は` .exe`など、ゲームの完全な実行可能バージョンを作成します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:157
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
+"[リソース]タブと[機能]タブでは、プラットフォームごとにゲームをエクスポートす"
+"る方法をカスタマイズできます。 今のところ、これらの設定はそのままにしておきま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:161
 msgid "Exporting by platform"
-msgstr ""
+msgstr "プラットフォーム別のエクスポート"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:163
 msgid ""
 "In this section, we'll walk through the process for each platform, including "
 "any additional software or requirements you'll need."
 msgstr ""
+"このセクションでは、必要な追加のソフトウェアまたは要件を含む、各プラット"
+"フォームのプロセスを説明します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:167
 msgid "PC (Linux/macOS/Windows)"
-msgstr ""
+msgstr "PC (Linux/macOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:169
 msgid ""
@@ -187,10 +219,16 @@ msgid ""
 "you want to make. Then click \"Export Project\" and choose a name and "
 "destination folder. Choose a location *outside* of your project folder."
 msgstr ""
+"PCプラットフォームへのエクスポートは３つのサポートされたオペレーションシステ"
+"ムで同じ様に動きます。プリセットを作るためにエクスポートウィンドウを開きAdd.."
+"\"をクリックします。その後 \"エクスポートプロジェクト\" をクリックし、名前と"
+"保存フォルダーを選びます。あなたのプロジェクトの *外側* の場所を選んで下さ"
+"い。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:174
 msgid "Click \"Save\" and the engine will build the export files."
 msgstr ""
+"\"保存\" をクリックするとエンジンはエクスポートファイルをビルドします。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:176
 msgid ""
@@ -199,6 +237,10 @@ msgid ""
 "either case, the compressed file contains a macOS `.app` that you can double-"
 "click and run."
 msgstr ""
+"macOSへとエクスポートする際、macOSマシン上でエクスポートすると、`.dmg`ファイ"
+"ルができますが、LinuxあるいはWindowsの場合は`.zip`ファイルが作られます。いず"
+"れの場合も、この圧縮ファイルの中にはmacOS用`.app`が含まれていて、ダブルクリッ"
+"クすると実行できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:181
 msgid ""
@@ -206,6 +248,9 @@ msgid ""
 "than the default one, you need to change it manually. See: :ref:"
 "`doc_changing_application_icon_for_windows`."
 msgstr ""
+"Windows上では、エクスポートされた実行ファイルのアイコンをデフォルトから変えた"
+"い場合、手動で変更する必要があります。\\ :ref:"
+"`doc_changing_application_icon_for_windows`\\ を参照してください。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:186
 msgid "Android"
@@ -218,21 +263,28 @@ msgid ""
 "art than science, and you may need to do some experimenting and searching "
 "for help in order to get everything working."
 msgstr ""
+"モバイル機器には幅広い性能差があります。ほとんどの場合、Godotのデフォルト設定"
+"は有効ですが、しかしモバイル開発は時として科学よりも芸術に近くなるので、すべ"
+"て完璧に動かすには、多少の試行や人の助けが必要になるかもしれません。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:194
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
 msgstr ""
+"Androidへエクスポートできるようにするには、下記のソフトウェアをダウンロードす"
+"る必要があります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:197
 msgid "Android SDK: https://developer.android.com/studio/"
-msgstr ""
+msgstr "\\ Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:198
 msgid ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 msgstr ""
+"\\ Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index."
+"html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:200
 msgid ""
@@ -240,12 +292,17 @@ msgid ""
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
 "command-line tool that Godot uses to communicate with your device."
 msgstr ""
+"Android Studioを最初に起動したときは、*Configure -> SDK Manager* をクリックし"
+"て\"Android SDK Platform Tools\"をインストールしてください。これにより、Godot"
+"がデバイスと通信するのに使うコマンドラインツール`adb`がインストールされます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:204
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
 msgstr ""
+"次は、デバッグ用キーストア(keystore) を生成する下記のコマンドを、コマンドライ"
+"ンから実行してください："
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:211
 msgid ""
@@ -254,24 +311,34 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
+"Godotの*エディタ → エディタ設定*をクリックし、一覧から*Export / Android*を選"
+"択してください。ここでadb (Android SDK)、jarsigner (Java SDK)、および作成した"
+"キーストアへのパスを指定します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:217
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above)."
 msgstr ""
+"これでエクスポートの準備がととのいました。*プロジェクト → エクスポート*をク"
+"リックして、Androidのプリセットを追加してください (上記参照)。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:220
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
+"『プロジェクトのエクスポート』ボタンをクリックすると、Godotはデバイスに送信で"
+"きるAPKをビルドします。コマンドラインでするには、下記のように実行してくださ"
+"い："
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:227
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
 msgstr ""
+"デバイスを*デベロッパー・モード*にする必要があるかもしれません。デバイスのド"
+"キュメンテーションを参照してください。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:230
 msgid ""
@@ -279,12 +346,16 @@ msgid ""
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
 "area:"
 msgstr ""
+"システムが対応している場合、互換性のあるAndroidデバイスを接続すると、Godotの"
+"テストプレイ用ボタンの場所に『ワンクリック・デプロイ』ボタンが現れます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:235
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
 msgstr ""
+"このボタンをクリックすると、一度にAPKがビルドされてあなたのデバイスにコピーさ"
+"れます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:238
 msgid "iOS"
@@ -295,6 +366,8 @@ msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
 msgstr ""
+"ゲームをiOS用にビルドするには、XcodeがインストールされたmacOSの走るコンピュー"
+"タが必要になります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:243
 msgid ""
@@ -303,20 +376,28 @@ msgid ""
 "can find by logging in to your Apple developer account and looking in the "
 "\"Membership\" section."
 msgstr ""
+"エクスポートする前に、必ずしなければならないプロジェクト設定がいくつかありま"
+"す。一つ目に必要なのは『App Store Team ID』で、Appleデベロッパー・アカウント"
+"にログインしてから『メンバーシップ』のセクションを探すとあります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:247
 msgid "You must also provide icons and splash screen images as shown below:"
 msgstr ""
+"アイコンとスプラッシュスクリーンも下の画像のように指定する必要があります："
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:251
 msgid "Click \"Export Project\" and select a destination folder."
 msgstr ""
+"『プロジェクトのエクスポート』をクリックして、エクスポート先のフォルダを選択"
+"します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:253
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
 msgstr ""
+"プロジェクトのエクスポートに成功すると、選択した場所に、以下の通りにフォルダ"
+"とファイルが作られます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:258
 msgid ""
@@ -324,30 +405,40 @@ msgid ""
 "build procedure is beyond the scope of this tutorial. See https://help.apple."
 "com/xcode/mac/current/#/devc8c2a6be1 for more information."
 msgstr ""
+"このプロジェクトをXcodeで開いて、iOS向けにビルドします。Xcodeのビルド手順につ"
+"いてはこのチュートリアルの範疇を超えるので、https://help.apple.com/xcode/mac/"
+"current/#/devc8c2a6be1 を参考にしてください(英語)。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:264
 msgid "HTML5 (web)"
-msgstr ""
+msgstr "HTML5 (ウェブ)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:266
 msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
 msgstr ""
+"HTML5のプリセットにて『プロジェクトのエクスポート』をクリックします。設定はデ"
+"フォルトから変える必要はありません。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:269
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"
-msgstr ""
+msgstr "エクスポートが完了すると、下記のファイルがあるフォルダが作られます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:274
+#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
-"you don't have one set up on your computer, you can use Google to find "
+"you don't have one set up on your computer, you can search online to find "
 "suggestions for your specific OS."
 msgstr ""
+"`.html`ファイルをブラウザーで見るとゲームをプレイできます。しかし、このファイ"
+"ルを直接開くことはできないので、ウェブサーバー上に置く必要があります。もし用"
+"意していないのであれば、お使いのOSに適したセットアップ法をGoogleで検索してみ"
+"てください。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
 msgid ""
@@ -355,6 +446,8 @@ msgid ""
 "have to wait a few moments while the game loads before you see the start "
 "screen."
 msgstr ""
+"htmlファイルを置いた場所のURLをブラウザで開いてみてください。ゲームがロードさ"
+"れてスタートスクリーンが表示されるまで、しばらくかかるかもしれません。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:284
 msgid ""
@@ -362,12 +455,20 @@ msgid ""
 "can disable it by setting \"Export With Debug\" off when you export the "
 "project."
 msgstr ""
+"下にあるコンソール・ウィンドウは、なにか問題があればそれを知らせてくれます。"
+"プロジェクトのエクスポート時に『デバッグ付きエクスポート』のチェックを外す"
+"と、無効にできます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:287
+#, fuzzy
 msgid ""
-"Browser support for WASM is not very widespread. Firefox and Chrome both "
-"support it, but you may still find some things that don't work. Make sure "
-"you have updated your browser to the most recent version, and report any "
-"bugs you find at the `Godot Github repository <https://github.com/"
-"godotengine/godot/issues>`_."
+"While WASM is supported in all major browsers, it is still an emerging "
+"technology and you may find some things that don't work. Make sure you have "
+"updated your browser to the most recent version, and report any bugs you "
+"find at the `Godot Github repository <https://github.com/godotengine/godot/"
+"issues>`_."
 msgstr ""
+"まだブラウザがWASMに完全対応しているとはいえません。FirefoxおよびChromeは対応"
+"していますが、まだうまく動かない場合があるかもしれません。まず最新版のブラウ"
+"ザにアップデートし、もしバグがあれば`Godot Github repository <https://github."
+"com/godotengine/godot/issues>`_ までご報告ください(英語)。"

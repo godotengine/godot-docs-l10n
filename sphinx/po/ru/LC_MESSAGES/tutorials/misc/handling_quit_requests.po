@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,10 @@ msgid "Quitting"
 msgstr "Выход"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:9
+#, fuzzy
 msgid ""
 "Most platforms have the option to request the application to quit. On "
-"desktops, this is usually done with the \"x\" icon on the window titlebar. "
+"desktops, this is usually done with the \"x\" icon on the window title bar. "
 "On Android, the back button is used to quit when on the main screen (and to "
 "go back otherwise)."
 msgstr ""
@@ -42,19 +43,36 @@ msgid "Handling the notification"
 msgstr "Обработка уведомления"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:17
+#, fuzzy
 msgid ""
-"The :ref:`MainLoop <class_MainLoop>` has a special notification that is sent "
-"to all nodes when quit is requested: MainLoop.NOTIFICATION_WM_QUIT."
+"On desktop platforms, the :ref:`MainLoop <class_MainLoop>` has a special "
+"``MainLoop.NOTIFICATION_WM_QUIT_REQUEST`` notification that is sent to all "
+"nodes when quitting is requested."
 msgstr ""
 ":ref:`Главный цикл <class_MainLoop>` имеет специальное уведомление которое "
 "отсылается всем нодам когда запрашивается выход: MainLoop."
 "NOTIFICATION_WM_QUIT."
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:21
-msgid "Handling it is done as follows (on any node):"
+msgid ""
+"On Android, ``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` is sent instead. "
+"Pressing the Back button will exit the application if **Application > Config "
+"> Quit On Go Back** is checked in the Project Settings (which is the "
+"default)."
+msgstr ""
+
+#: ../../docs/tutorials/misc/handling_quit_requests.rst:28
+msgid ""
+"``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` isn't supported on iOS, as iOS "
+"devices don't have a physical Back button."
+msgstr ""
+
+#: ../../docs/tutorials/misc/handling_quit_requests.rst:31
+#, fuzzy
+msgid "Handling the notification is done as follows (on any node):"
 msgstr "Обрабатывайте это следующим образом(на любой ноде):"
 
-#: ../../docs/tutorials/misc/handling_quit_requests.rst:38
+#: ../../docs/tutorials/misc/handling_quit_requests.rst:48
 msgid ""
 "When developing mobile apps, quitting is not desired unless the user is on "
 "the main screen, so the behavior can be changed."
@@ -62,7 +80,7 @@ msgstr ""
 "При разработке мобильных приложений, выход часто не желателен, если "
 "пользователь не на главном экране, так что это поведение может быть изменено."
 
-#: ../../docs/tutorials/misc/handling_quit_requests.rst:41
+#: ../../docs/tutorials/misc/handling_quit_requests.rst:51
 msgid ""
 "It is important to note that by default, Godot apps have the built-in "
 "behavior to quit when quit is requested, this can be changed:"

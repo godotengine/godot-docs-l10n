@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,36 +18,45 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:4
-msgid "Inspector Plugins"
-msgstr ""
+#, fuzzy
+msgid "Inspector plugins"
+msgstr ":ref:`doc_inspector_plugins`"
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:7
-msgid "Introduction"
-msgstr "Введение"
-
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:9
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:6
 msgid ""
-"Godot 3.1 comes with a new inspector. Adding plugins to it is now possible."
+"The inspector dock supports custom plugins to create your own widgets for "
+"editing properties. This tutorial explains how to use the :ref:"
+"`class_EditorInspectorPlugin` and :ref:`class_EditorProperty` classes to "
+"write such plugins with the example of creating a custom value editor."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:11
-msgid "This tutorial will explain the process."
-msgstr ""
-
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:15
-msgid "Inspector Plugin"
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:13
+msgid ""
+"To register these scripts as a new editor plugin, you have to create a "
+"``plugin.cfg`` file as described in :ref:`doc_making_plugins`."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:17
+#, fuzzy
+msgid "EditorInspectorPlugin"
+msgstr ":ref:`doc_inspector_plugins`"
+
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:19
 msgid ""
-"This short tutorial will explain how to make a simple value editor. Create "
-"an EditorInspectorPlugin first. This is needed to initialize your plugin."
+"We start by creating a script extending the :ref:"
+"`class_EditorInspectorPlugin` class. This is needed to initialize the plugin "
+"and add the custom property editor that we'll later define."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:43
-msgid "Editor"
-msgstr "Редактор"
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:51
+#, fuzzy
+msgid "EditorProperty"
+msgstr "Разработка движка"
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:46
-msgid "Here is an editor for editing integers"
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:53
+msgid ""
+"Next, we define the actual :ref:`class_EditorProperty` custom value editor "
+"that we want instantiated to edit integers. This is a custom :ref:"
+"`class_Control` and we can add any kinds of additional nodes to make "
+"advanced widgets to embed in the inspector."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,19 +26,17 @@ msgid "Introduction"
 msgstr "Johdanto"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
-#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Ennen Godotin versiota 3.0 ainoa vaihtoehto pelin skriptaukseen oli käyttää :"
-"ref:`doc_gdscript` kieltä. Nykyään Godotissa on neljä (kyllä, neljä!) "
-"virallista kieltä sekä mahdollisuus lisätä ylimääräisiä skriptikieliä "
-"dynaamisesti!"
+"Ennen Godotin versiota 3.0 ainoa vaihtoehto pelin skriptaukseen oli "
+"käyttää  :ref:`GDScript<doc_gdscript>` kieltä. Nykyään Godotissa on neljä "
+"(kyllä, neljä!) virallista kieltä sekä mahdollisuus lisätä ylimääräisiä "
+"skriptikieliä dynaamisesti!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
@@ -47,7 +45,6 @@ msgstr ""
 "mutta se tekee myös työstämme kielien tukemiseksi vaikeampaa."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
-#, fuzzy
 msgid ""
 "The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
@@ -67,14 +64,13 @@ msgid "GDScript"
 msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript` on, kuten yllä mainittu, Godotin pääkieli. Sen käytöllä "
-"on joitakin myönteisiä näkökohtia muihin kieliin nähden johtuen sen "
+":ref:`GDScript<doc_gdscript>` on, kuten yllä mainittu, Godotin pääkieli. Sen "
+"käytöllä on joitakin myönteisiä näkökohtia muihin kieliin nähden johtuen sen "
 "korkeasta integraatiosta Godotiin:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
@@ -282,15 +278,14 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "Muita skenen solmuja käsittelevän skriptin kirjoittamista."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
-"Ennen jatkamista, varmista, että olet lukenut :ref:`doc_gdscript` "
-"lähdeaineiston. Kieli on suunniteltu yksinkertaiseksi ja lähdeaineisto on "
+"Ennen jatkamista, varmista, että olet lukenut :ref:`GDScript<doc_gdscript>` "
+"lähdeaineiston. Se on yksinkertaiseksi suunniteltu kieli ja lähdeaineisto on "
 "lyhyt, joten käsitteistä saa yleiskuvan muutamassa minuutissa."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
@@ -354,12 +349,11 @@ msgstr ""
 "luokan nimen ja muita oleellisia asetuksia."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
-#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"GDScriptissä tiedosto itse edustaa luokkaa, joten luokan nimi ei ole "
+"GDScriptissä tiedosto itse edustaa luokkaa, joten luokan nimikenttä ei ole "
 "muokattavissa."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
@@ -387,7 +381,6 @@ msgstr ""
 "Script-ominaisuutena Tarkastelussa:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
-#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
@@ -395,7 +388,7 @@ msgid ""
 msgstr ""
 "Skriptin muokkaamiseksi käytä jompaa kumpaa näistä painikkeista, jotka on "
 "esitetty korostettuna yllä olevassa kuvassa. Tämä vie sinut "
-"skriptieditoriin, jossa skriptille on luotu pohjaksi oletusmalli:"
+"skriptieditoriin, johon on lisätty valmis skriptipohja:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -491,7 +484,6 @@ msgstr ""
 "to Node) ja laukaistavan metodin nimi."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:208
-#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
@@ -500,11 +492,11 @@ msgid ""
 msgstr ""
 "Ylhäällä vasemmalla oleva osio näyttää luettelon kaikista skenesi solmuista, "
 "lähettävän solmun nimi punaisella korostettuna. Valitse siitä \"Panel\" "
-"solmu. Kun valitset solmun, polku solmuun alhaalla päivittyy automaattisesti "
-"osoittamaan suhteellista polkua lähettävästä solmusta valittuun solmuun."
+"solmu. Kun valitset solmun, alhaalla oleva polku solmuun päivittyy "
+"automaattisesti osoittamaan suhteellista polkua lähettävästä solmusta "
+"valittuun solmuun."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:213
-#, fuzzy
 msgid ""
 "By default, the method name will contain the emitting node's name (\"Button"
 "\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``. If you "
@@ -513,11 +505,10 @@ msgid ""
 msgstr ""
 "Oletusarvoisesti metodin nimi sisältää lähettävän solmun nimen (tässä "
 "tapauksessa \"Button\"), tuloksena ollen "
-"\"_on_[LähettäväSolmu]_[signaalin_nimi]\". Jos \"Tee funktio\" valintaruutu "
+"``_on_[LähettäväSolmu]_[signaalin_nimi]``. Jos \"Tee funktio\" valintaruutu "
 "on päällä, editori luo funktion sinulle ennen kytkennän asettamista."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:218
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
@@ -528,7 +519,6 @@ msgstr ""
 "prosessiin!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:222
-#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
@@ -537,8 +527,8 @@ msgid ""
 msgstr ""
 "Päämäärän saavuttamiseksi esittelemme funktion, joka on todennäköisesti "
 "Godot-ohjelmoijien eniten käyttämä funktio: :ref:`Node.get_node() "
-"<class_Node_method_get_node>`. Tämä funktio käyttää polkuja nouttaakseen "
-"solmuja mistä tahansa skenestä, suhteessa solmuun, joka omistaa skriptin."
+"<class_Node_method_get_node>`. Tämä funktio käyttää polkuja noutaakseen "
+"solmuja mistä tahansa skenestä, suhteessa solmuun joka omistaa skriptin."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:227
 msgid ""
@@ -564,7 +554,6 @@ msgstr ""
 "Seuraavaksi, kirjoita funktio, jota kutsutaan, kun painiketta on painettu:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:262
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."

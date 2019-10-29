@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,6 @@ msgid "In short:"
 msgstr "Коротко:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
@@ -407,7 +406,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Починаючи з Godot 3.0, glTF підтримується."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -417,7 +415,9 @@ msgid ""
 msgstr ""
 "FBX SDK розповсюджується відповідно до `обмежувальних умов ліцензування "
 "<https://www.blender.org/bf/Autodesk_FBX_License.rtf>`_, які не сумісні з "
-"`відкритою ліцензією <https://opensource.org/licenses/MIT>`_ наданою Godot."
+"`відкритою ліцензією <https://opensource.org/licenses/MIT>`_ наданою Godot. "
+"Незважаючи на це, підтримка FBX все ще може надаватися сторонніми особами як "
+"плагін.  (Див. Питання плагінів нижче.)"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -435,7 +435,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:166
-#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
@@ -444,16 +443,15 @@ msgstr ""
 "Тим не менш, оскільки він з відкритим джерелом, та модульний, ніщо не "
 "заважає вам або будь-кому іншому зацікавленому додавати ці бібліотеки в "
 "якості модуля та поширювати вашу гру за допомогою них як відкритого, так і "
-"закритого джерела. Все дозволено."
+"закритого джерела."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
 "Щоб дізнатись, як може бути надана підтримка вашого SDK, перегляньте "
-"запитання про плаґіни вище."
+"запитання про плагіни вище."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -490,7 +488,6 @@ msgstr ""
 "співвідношенням сторін, з дуже широким діапазоном розмірів та DPI."
 
 #: ../../docs/about/faq.rst:189
-#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
@@ -520,7 +517,6 @@ msgstr ""
 "довшим буде час для завантаження."
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
@@ -531,7 +527,6 @@ msgstr ""
 "про те, як це досягти."
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -585,7 +580,6 @@ msgstr ""
 "`Плаґіни редактора <doc_making_plugins>` та інструментарій скриптів."
 
 #: ../../docs/about/faq.rst:228
-#, fuzzy
 msgid "Also, see the official blog posts on these topics:"
 msgstr "Також див. дописи в офіційному блозі за цими темами:"
 
@@ -602,7 +596,6 @@ msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 msgstr "`GDNative тут! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
-#, fuzzy
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
@@ -611,7 +604,8 @@ msgid ""
 msgstr ""
 "Ви також можете поглянути на реалізацію GDScript, модулів Godot, а також на "
 "`неофіційну підтримку Python <https://github.com/touilleMan/godot-python>`_ "
-"для Godot."
+"для Godot. Це було б хорошою початковою точкою для того, щоб побачити, як "
+"інша стороння бібліотека інтегрується з Godot."
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
@@ -673,7 +667,6 @@ msgstr ""
 "вашого проекту."
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr ""

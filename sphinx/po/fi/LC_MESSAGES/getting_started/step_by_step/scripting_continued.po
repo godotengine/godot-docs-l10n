@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,6 @@ msgstr ""
 "fysiikkaprosessointia."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
-#, fuzzy
 msgid ""
 "Idle processing is activated when the method :ref:`Node._process() "
 "<class_Node_method__process>` is found in a script. It can be turned off and "
@@ -57,7 +56,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Tätä metodia kutsutaan jokaisella ruudun piirtokerralla:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -65,16 +64,19 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"On hyvä pitää mielessä, että taajuus jolla ``_process()`` metodia kutsutaan "
+"riippuu siitä kuinka monta ruutua per sekunti (FPS) sovelluksesi kykenee "
+"käsittelemään. Tämä nopeus voi vaihdella eri hetkillä ja laitteilla."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"Delta-parametri sisältää liukulukuna kuluneen ajan sekunneissa siitä, kun "
-"``_process()`` funktiota edellisen kerran kutsuttiin."
+"Tämän vaihtelevuuden hallitsemiseksi ``delta`` parametri sisältää "
+"liukulukuna kuluneen ajan sekunneissa siitä, kun ``_process()`` funktiota "
+"edellisen kerran kutsuttiin."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -120,13 +122,12 @@ msgstr ""
 "fysiikkavaiheen jälkeen."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Yksinkertainen tapa kokeilla tätä, on luoda skene, jossa on yksittäinen "
-"Label solmu, seuraavalla skriptillä:"
+"Yksinkertainen tapa nähdä ``_process()`` funktio toiminnassa, on luoda "
+"skene, jossa on yksittäinen Label solmu seuraavalla skriptillä varustettuna:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -137,26 +138,27 @@ msgid "Groups"
 msgstr "Ryhmät"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
 "for organizing large scenes. There are two ways to add nodes to groups. The "
 "first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"Solmut voidaan lisätä ryhmiin, niin moniin kuin on tarpeen solmua kohden, "
-"mikä on käyttökelpoinen ominaisuus suurten skenejen järjestelemiseen. Tähän "
-"on kaksi eri tapaa. Ensimmäinen on käyttöliittymästä, Ryhmät-painikkeesta "
-"Solmu-paneelilla:"
+"Ryhmät Godotissa toimivat kuin tägit joihin olet voinut törmätä muissa "
+"ohjelmistoissa. Solmu voidaan lisätä niin moneen ryhmään kuin halutaan. Tämä "
+"on hyödyllinen ominaisuus laajojen skenejen järjestelemiseksi. On kaksi "
+"tapaa lisätä solmu ryhmään. Ensimmäinen on käyttöliittymästä, Ryhmät-"
+"painikkeesta Solmu-paneelilla:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"Toinen tapa on koodista käsin. Seuraava skripti lisää nykyisen solmun "
+"``enemies`` ryhmään heti kun se ilmestyy skenepuuhun."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
-#, fuzzy
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
@@ -175,7 +177,6 @@ msgstr ""
 "ryhmän jokaiselle jäsenelle."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
-#, fuzzy
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() "
@@ -186,7 +187,6 @@ msgstr ""
 "<class_SceneTree_method_get_nodes_in_group>` funktiota:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -205,7 +205,6 @@ msgid "Notifications"
 msgstr "Ilmoitukset (notifications)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:158
-#, fuzzy
 msgid ""
 "Godot has a system of notifications. These are usually not needed for "
 "scripting, as it's too low-level and virtual functions are provided for most "
@@ -213,11 +212,11 @@ msgid ""
 "`Object._notification() <class_Object_method__notification>` function in "
 "your script:"
 msgstr ""
-"Godotissa on järjestelmä ilmoituksille (notification). Niitä ei yleensä "
-"tarvita skriptauksessa, koska ne ovat liian alhaisen tason koodia ja "
-"useimmille on tarjolla vastaava virtuaalifunktio. On silti hyvä olla "
-"tietoinen niiden olemassaolosta. Voit esimerkiksi lisätä :ref:`Object."
-"_notification() <class_Object_method__notification>` funktion skriptiisi:"
+"Godotissa on järjestelmä ilmoituksille. Niitä ei yleensä tarvita "
+"skriptauksessa, koska ne ovat liian alhaisen tason koodia ja useimmille on "
+"tarjolla vastaava virtuaalifunktio. On silti hyvä olla tietoinen niiden "
+"olemassaolosta. Voit esimerkiksi lisätä :ref:`Object._notification() "
+"<class_Object_method__notification>` funktion skriptiisi:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid ""
@@ -267,14 +266,13 @@ msgstr ""
 "käytettävä ``free()`` metodia:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
-"Kun solmu vapautetaan, myös kaikki sen alisolmut vapautetaan. Tästä johtuen, "
-"solmujen manuaalinen tuhoaminen on paljon helpompaa kuin miltä vaikuttaa. "
+"Kun solmu vapautetaan, myös kaikki sen alisolmut vapautetaan. Tästä johtuen "
+"solmujen manuaalinen tuhoaminen on paljon helpompaa kuin miltä se vaikuttaa. "
 "Vapauta pohjasolmu ja kaikki muu alipuussa menee sen mukana."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
@@ -290,7 +288,6 @@ msgstr ""
 "tämäntyyppisen tapauksen ja varoittaa sinua siitä."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
-#, fuzzy
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
@@ -320,7 +317,6 @@ msgstr ""
 "jäsennysaikana (vain GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
-#, fuzzy
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "

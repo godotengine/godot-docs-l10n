@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,9 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
-"이 튜토리얼에서는 Godot의 인터페이스에 대해서 알아볼 것입니다. **프로젝트 매"
-"니저, 독, 작업 공간**, 그 외에 엔진을 사용하는 데에 필요한 것들을 살펴봅시다."
+"이 튜토리얼에서는 Godot의 인터페이스에 대하여 알아봅니다. 먼저 **프로젝트 매"
+"니저, 독, 작업 공간**/을 알아보고, 그 후 엔진을 시작하려면 알아야 할 것들을 "
+"알아봅니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
@@ -39,8 +40,8 @@ msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "It lets you create, remove, import or play game projects."
 msgstr ""
-"Godot를 실행하시면 제일 처음에 프로젝트 매니저가 표시됩니다. 프로젝트 매니저"
-"에서는 게임 프로젝트를 생성, 삭제, 불러오거나 실행해 볼 수 있습니다."
+"Godot를 실행해서 처음에 보이는 화면은 프로젝트 매니저입니다. 여기서 게임 프로"
+"젝트를 만들고, 삭제하고, 가져오거나 게임을 실행할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:16
 msgid "|image0|"
@@ -50,217 +51,220 @@ msgstr "|image0|"
 msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
-msgstr ""
-"창의 우측 상단의 지구본 아이콘을 눌러 편집기에서 사용할 언어를 변경하실 수 있"
-"습니다."
+msgstr "오른쪽 위에는 편집기의 언어를 바꿀 수 있는 드롭 다운 메뉴가 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 msgid "|image1|"
 msgstr "|image1|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:23
+#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
-"and demos to help you get started faster."
+"and demos to help you get started faster. Just select the template or demo "
+"you want, click download, once it's finished downloading click install and "
+"choose where you want the project to go."
 msgstr ""
-"**템플릿(Templates)** 탭에서는 빠른 시작에 도움을 줄 오픈 소스 템플릿과 데모"
-"를 다운로드 할 수 있습니다."
+"**템플릿(Templates)** 탭에서 빠르게 시작할 수 있는 오픈 소스 프로젝트 템플릿"
+"을 다운로드할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:28
 msgid "|image2|"
 msgstr "|image2|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-msgid "Create or import a project"
-msgstr "프로젝트를 생성하거나 가져오기"
-
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
+msgid "Create or import a project"
+msgstr "프로젝트를 만들거나 가져오기"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:33
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Give "
 "it a name and choose an empty folder on your computer to save it."
 msgstr ""
-"새 프로젝트를 만들려면, 오른쪽의 ``새 프로젝트`` 버튼을 누르세요. 이름을 지어"
-"주고 저장할 빈 폴더를 선택하세요."
+"새 프로젝트를 만들려면, 오른쪽의 ``새 프로젝트(New Project)`` 버튼을 누르세"
+"요. 이름을 지어주고 컴퓨터의 빈 폴더를 선택하여 저장하세요."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:34
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:36
 msgid "|image3|"
 msgstr "|image3|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:36
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
-"찾아보기 버튼을 눌러 Godot의 파일 브라우저를 열고 위치를 선택하거나 경로를 입"
-"력하세요."
+"찾아보기(Browse) 버튼을 눌러서 Godot 파일 브라우저를 열어서 위치를 지정하거"
+"나, 프로젝트 경로 영역에 폴더의 경로를 입력하세요."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:39
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:41
 msgid "|image4|"
 msgstr "|image4|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:41
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:43
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"오른쪽에 초록 불이 들어오면, 엔진이 빈 폴더를 감지했다는 것이므로 ``생성`` "
-"을 누릅니다. Godot는 프로젝트를 만들고 편집기에서 열어볼 것입니다."
+"오른쪽에 초록불이 들어오면, 엔진이 빈 폴더를 감지했다는 것입니다. ``만들기"
+"(Create)`` 를 클릭하세요. Godot는 프로젝트를 만들고 편집기에서 이 프로젝트를 "
+"열 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:47
 msgid ""
 "The next time you’ll open Godot, you’ll see your new project in the list. "
 "Double click on it to open it in the editor."
 msgstr ""
-"다음 번에 Godot를 키게 된다면, 당신의 새 프로젝트가 목록에 있을 겁니다. 더블 "
-"클릭으로 편집기를 실행시킵니다."
+"다음 번에 Godot를 키게 된다면, 새 프로젝트가 목록에 있습니다. 더블 클릭으로 "
+"프로젝트를 열 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:50
 msgid "|image5|"
 msgstr "|image5|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:50
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:52
 msgid ""
 "You can import existing projects in a similar way, using the Import button. "
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
-"가져오기 버튼을 통해, 비슷한 방법으로 존재하는 프로젝트를 가져올 수 있습니"
-"다. ``project.godot`` 파일이 들어있는 프로젝트의 폴더를 선택해서 가져옵니다."
+"이와 비슷하게, 가져오기(Import) 버튼으로도 존재하는 프로젝트를 가져올 수 있습"
+"니다. 프로젝트나 ``project.godot`` 파일이 들어있는 폴더 위치를 지정하면 가져"
+"오고 편집합니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
 msgid "|image7|"
 msgstr "|image7|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
-msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr "폴더 경로가 올바르다면 녹색 체크 표시가 나타납니다."
-
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
+msgid "When the folder path is correct, you'll see a green checkmark."
+msgstr "폴더 경로가 올바르다면 초록색 체크 표시가 나타납니다."
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:60
 msgid "|image8|"
 msgstr "|image8|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid "Your first look at Godot’s editor"
 msgstr "Godot 편집기와의 첫 만남"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:65
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
-"Godot에 오신 것을 환영합니다! 프로젝트를 열고 당신은 3d 뷰포트가 켜진 편집기"
-"의 인터페이스를 보고 계실 겁니다. 맨 위 인터페이스를 통해 현재 작업 공간을 바"
-"꿀 수 있습니다. 2D를 눌러 2D 작업 공간으로 바꾸세요."
+"Godot에 온 것을 환영합니다! 프로젝트를 열어 본다면 3D 뷰포트로 되어있는 편집"
+"기의 인터페이스를 보고 있겠군요. 인터페이스 상단에서 현재 작업 공간을 바꿀 "
+"수 있습니다. 2D를 클릭해서 2D 작업 공간으로 바꾸세요."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
 msgid "|image9|"
 msgstr "|image9|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
-msgid "Now you should see this interface, with empty docks on the right side."
-msgstr "이제 인터페이스의 오른쪽에 빈 독이 있는 것을 확인할 수 있습니다."
-
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
+msgid "Now you should see this interface, with empty docks on the right side."
+msgstr "이제 인터페이스에는 오른편에 빈 독이 있는 것을 볼 수 있습니다."
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:74
 msgid "|image10|"
 msgstr "|image10|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:74
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:76
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
-"맨 위에 있는 메뉴들은, 왼쪽부터 **주 메뉴(main menus)**, **작업 공간"
-"(workspaces)** **실행 및 테스트 버튼들(playtest buttons)** 입니다."
+"맨 위에 있는 메뉴들은 왼쪽부터 **기본 메뉴(main menus)**, **작업 공간"
+"(workspaces)**, **실행 및 테스트 버튼(playtest buttons)**\\ 입니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:79
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
-"왼쪽에는 **파일 시스템 독(FileSystem dock)**\\ 이 있는데, 여기서 당신은 프로"
-"젝트 파일이나 애셋들을 관리할 수 있습니다."
+"왼편에는 **파일 시스템 독(FileSystem dock)**\\ 이 있습니다. 여기서 프로젝트 "
+"파일이나 애셋을 관리할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid "|image11|"
 msgstr "|image11|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:84
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
-"오른쪽에는 활성화된 씬의 내용물들을 보여주는 **씬 독(Scene dock)** 이 있고 바"
-"로 아래에는 **인스펙터(Inspector)** 가 있습니다."
+"오른편에는 현재 씬의 내용을 나열해주는 **씬 독(Scene dock)**\\ 이 있고 오른"
+"쪽 아래에는 **인스펙터(Inspector)**\\ 가 있습니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid "|image12|"
 msgstr "|image12|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:89
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you’ll find tools "
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"이동, 규모, 오브젝트 잠금 등을 할 수 있는 **툴바(Toolbar)** 가 가운데 바로 위"
-"에 있습니다. 툴바는 작업 공간마다 그 구성이 다릅니다."
+"가운데 바로 위에는 이동, 크기 조절, 씬 객체 잠금을 할 수 있는 **툴바"
+"(Toolbar)**\\ 가 있습니다. 툴바는 작업 공간마다 달라집니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 msgid "|image13|"
 msgstr "|image13|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
 "The **Bottom Panel** is the host for the debug console, the animation "
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
-"**하단 패널(Bottom Panel)** 은 디버그 콘솔이나 애니메이션 편집, 오디오 믹서 "
-"등이 있고... 그렇다 보니 많은 공간을 차지합니다. 때문에 기본적으로 닫혀 있는 "
-"상태입니다."
+"**하단 패널(Bottom Panel)**\\ 은 디버그 콘솔이나 애니메이션 편집, 오디오 믹"
+"서 등이 있고... 그렇다 보니 많은 공간을 차지합니다. 때문에 기본적으로 닫혀 있"
+"는 상태입니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:99
 msgid "|image14|"
 msgstr "|image14|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid "The workspaces"
 msgstr "작업 공간(Workspace)"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:104
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
-"4개의 작업 공간 버튼을 볼 수 있습니다: 2D, 3D, Script 그리고 AssetLib 입니다."
+"위에서 4개의 작업 공간 버튼을 볼 수 있습니다: 2D, 3D, Script 그리고 AssetLib."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:107
 msgid ""
 "You’ll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press F1 to "
 "access it."
 msgstr ""
-"당신은 모든 게임을 만들기 위해 **2D 작업 공간**\\ 을 사용하게 됩니다. 2D 게"
-"임 외에도 인터페이스를 만들기 위한 곳이죠. F1 키를 눌러 들어갑니다."
+"모든 종류의 게임을 만들려면 **2D 작업 공간(2D workspace)**\\ 을 사용하게 될 "
+"겁니다. 2D 게임 외에도 인터페이스를 만들려고 말이죠. F1 키를 눌러 들어갑니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
 msgid "|image15|"
 msgstr "|image15|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:112
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
-"**3D 작업 공간**\\ 에서는, 3D 게임을 위한 메시와 빛, 레벨 디자인을 할 수 있습"
-"니다. F2 키를 눌러 들어갑니다."
+"**3D 작업 공간(3D workspace)**\\ 에서는 3D 게임 용 메시와 조명, 레벨 설계를 "
+"할 수 있습니다. F2 키를 눌러 들어갑니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid "|image16|"
 msgstr "|image16|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
 msgid ""
 "Notice the text [perspective] under the toolbar, it is a button that opens a "
 "list of options related to the 3D viewport."
@@ -268,83 +272,80 @@ msgstr ""
 "툴바 아래에 [원근보기] 텍스트를 보십시오, 이것은 3D 뷰포트와 관련된 설정 목"
 "록 버튼입니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:119
 msgid "|image20|"
 msgstr "|image20|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:119
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:121
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
 "**3D 작업 공간**에 대해 더 알아보려면 :ref:`doc_introduction_to_3d`\\ 을 읽어"
 "보세요."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:121
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:123
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
 "to search the reference."
 msgstr ""
-"**Script** 작업 공간은 디버거, 많은 자동 완성 기능, 내장 코드 설명이 있는 완"
-"전한 코드 편집기입니다. F3 키로 들어가고, F4를 눌러 원하는 참조를 검색할 수 "
-"있습니다."
+"**Script** 작업 공간은 디버거, 많은 자동 완성 기능, 내장 코드 참조가 있는 완"
+"전한 코드 편집기입니다. F3 키로 들어가고, F4 키로 참조를 검색합니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:125
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:127
 msgid "|image17|"
 msgstr "|image17|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:127
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
-"마지막으로 **AssetLib**\\ 은 프로젝트에 쓰일 무료 애드온, 스크립트 그리고 애"
-"셋들이 있는 라이브러리입니다."
-
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
-msgid "Modify the interface"
-msgstr "인터페이스 변경"
+"마지막으로 **AssetLib**\\ 은 프로젝트에 쓸 무료 애드온, 스크립트 그리고 애셋"
+"이 있는 라이브러리입니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
+msgid "Modify the interface"
+msgstr "인터페이스 수정"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:135
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio for instance."
 msgstr ""
-"Godot의 인터페이스는 하나의 화면에 있습니다. 비록 여러개의 화면으로 분할 시"
-"킬 수는 없지만 대신 Atom과 Visual Studio와 같은 외부 코드 편집기를 사용할 수 "
-"있습니다."
+"Godot의 인터페이스는 하나의 창에 있습니다. 비록 여러 개의 창으로 나눌 수는 없"
+"지만, 대신 Atom이나 Visual Studio와 같은 외부 코드 편집기를 사용할 수 있습니"
+"다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
 msgid "Move and resize docks"
 msgstr "독의 이동과 크기 조절"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
-msgstr ""
-"아무 독이나 패널의 모서리를 클릭해서 드래그하면 크기를 조절할 수 있습니다."
+msgstr "독이나 패널의 크기를 조절하려면 모서리를 클릭한 뒤 드래그하세요."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:143
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid "|image18|"
 msgstr "|image18|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
-"아무 독의 꼭대기에 있는 점 세개가 있는 아이콘을 누르면 그것의 위치를 바꿀 수 "
-"있습니다."
+"독의 위에 있는 점 세 개로 된 아이콘을 누르면 독의 위치를 바꿀 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid "|image19|"
 msgstr "|image19|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:152
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
-"더 보기 좋은 편집기를 만들고 싶다면 ``편집기`` 메뉴의 ``편집기 설정`` 으로 가"
-"십시오."
+"보기 좋은 편집기를 만들고 싶다면 ``편집기(Editir)`` 메뉴의 ``편집기 설정"
+"(Editor Settings)``\\ 으로 가세요."

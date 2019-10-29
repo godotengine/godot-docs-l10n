@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
-#, fuzzy
 msgid "GDScript basics"
-msgstr "GDScript"
+msgstr "Basi di GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:7
 msgid "Introduction"
@@ -393,9 +392,8 @@ msgid "Coroutine support. See `Coroutines with yield`_."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
-#, fuzzy
 msgid "assert"
-msgstr "Classi"
+msgstr "Assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid ""
@@ -443,18 +441,16 @@ msgid "PI"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
-#, fuzzy
 msgid "PI constant."
-msgstr "Costanti"
+msgstr "Costante PI."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "TAU"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
-#, fuzzy
 msgid "TAU constant."
-msgstr "Costanti"
+msgstr "Costante TAU."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "INF"
@@ -556,9 +552,8 @@ msgid "``-``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:269
-#, fuzzy
 msgid "Subtraction"
-msgstr "Introduzione"
+msgstr "Sottrazione"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:271
 msgid "``<<`` ``>>``"
@@ -1162,6 +1157,13 @@ msgid ""
 "dictionary of that name."
 msgstr ""
 
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:652
+msgid ""
+"In Godot 3.1 and later, keys in a named enum are not registered as global "
+"constants. They should be accessed prefixed by the enum's name (``Name."
+"KEY``); see an example below."
+msgstr ""
+
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:672
 msgid "Functions"
 msgstr ""
@@ -1216,9 +1218,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:723
-#, fuzzy
 msgid "Referencing functions"
-msgstr "Continua..."
+msgstr "Funzioni di riferimento"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:725
 msgid ""
@@ -1301,9 +1302,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:842
-#, fuzzy
 msgid "Basic syntax::"
-msgstr "Impostazione della scena"
+msgstr "Sintassi di base::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:853
 msgid "**Crash-course for people who are familiar with switch statements**:"
@@ -1345,9 +1345,8 @@ msgid "There are 6 pattern types:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:879
-#, fuzzy
 msgid "Constant pattern"
-msgstr "Costanti"
+msgstr "Modello costante"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:870
 msgid "Constant primitives, like numbers and strings::"
@@ -1376,9 +1375,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:918
-#, fuzzy
 msgid "Binding pattern"
-msgstr "Segnali in C#"
+msgstr "'Binding pattern'"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:908
 msgid ""
@@ -1449,9 +1447,8 @@ msgid "A value pattern is separated from the key pattern with a ``:``."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
-#, fuzzy
 msgid "Multiple patterns"
-msgstr "Istanze multiple"
+msgstr "Modelli multipli"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:969
 msgid ""
@@ -1471,18 +1468,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:997
-#, fuzzy
 msgid ""
 "Instead, you can give your class a name to register it as a new type in "
 "Godot's editor. For that, you use the ``class_name`` keyword. You can add an "
 "optional comma followed by a path to an image, to use it as an icon. Your "
 "class will then appear with its new icon in the editor::"
 msgstr ""
-"Puoi nominare uno script e registrarlo come un tipo nell'editor con la "
-"parola chiave ``class_name`` seguita dal nome della classe. Puoi aggiungere "
-"una virgola ed opzionalmente un percorso ad un'immagine da usare come icona. "
-"Potrai ora trovare il tuo nuovo tipo nella finestra di creazione di nodi o "
-"risorse."
+"Invece, potete dare alla vostra classe un nome per registrarla come nuovo "
+"tipo nell'editor di Godot. Per questo, si usa la parola chiave "
+"``class_name``. Puoi aggiungere una virgola opzionale seguita da un "
+"percorso  e ad un'immagine, per usarla come icona. La tua classe apparirà "
+"con la sua nuova icona nell'editor::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1010
 msgid "Here's a class file example:"
@@ -1578,9 +1574,8 @@ msgid "This is better explained through examples. Consider this scenario::"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1125
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "Non ci sono restrizioni di utilizzo per Godot"
+msgstr "Ci sono alcune cose da tenere a mente:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1127
 msgid ""

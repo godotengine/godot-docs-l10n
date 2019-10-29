@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,26 +149,26 @@ msgstr ""
 "<class_Vector3>를 지원합니다. 이 문서에서 논의된 동일한 수학적 규칙은 두 가"
 "지 유형 모두에 적용됩니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:80
+#: ../../docs/tutorials/math/vector_math.rst:81
 msgid "Member access"
 msgstr "멤버 접근"
 
-#: ../../docs/tutorials/math/vector_math.rst:82
+#: ../../docs/tutorials/math/vector_math.rst:83
 msgid ""
 "The individual components of the vector can be accessed directly by name."
 msgstr "벡터의 각각의 구성요소는 이름으로 직접 접근할 수 있다."
 
-#: ../../docs/tutorials/math/vector_math.rst:103
+#: ../../docs/tutorials/math/vector_math.rst:105
 msgid "Adding vectors"
 msgstr "벡터의 합"
 
-#: ../../docs/tutorials/math/vector_math.rst:105
+#: ../../docs/tutorials/math/vector_math.rst:107
 msgid ""
 "When adding or subtracting two vectors, the corresponding components are "
 "added:"
 msgstr "두 벡터를 더하거나 뺼 떄, 해당하는 구성요소는 더해집니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:116
+#: ../../docs/tutorials/math/vector_math.rst:118
 msgid ""
 "We can also see this visually by adding the second vector at the end of the "
 "first:"
@@ -176,15 +176,15 @@ msgstr ""
 "첫번째 벡터의 끝에 두번째 벡터를 더함으로써 우리는 시각적으로도 이것을 확인"
 "할 수 있습니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:121
+#: ../../docs/tutorials/math/vector_math.rst:123
 msgid "Note that adding ``a + b`` gives the same result as ``b + a``."
 msgstr "즉 더하기 a+b는 b+a 와 같은 결과 값을 갖는다."
 
-#: ../../docs/tutorials/math/vector_math.rst:123
+#: ../../docs/tutorials/math/vector_math.rst:126
 msgid "Scalar multiplication"
 msgstr "스칼라 곱"
 
-#: ../../docs/tutorials/math/vector_math.rst:125
+#: ../../docs/tutorials/math/vector_math.rst:128
 msgid ""
 "Vectors represent both direction and magnitude. A value representing only "
 "magnitude is called a **scalar**."
@@ -192,11 +192,11 @@ msgstr ""
 "벡터는 방향과 크기 둘 다를 나타냅니다. 크기만 나타내고 있는 값을  **스칼라**"
 "라고 합니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:128
+#: ../../docs/tutorials/math/vector_math.rst:131
 msgid "A vector can be multiplied by a **scalar**:"
 msgstr "벡터는 스칼라에 의해 곱해질 수 있습니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:143
+#: ../../docs/tutorials/math/vector_math.rst:146
 msgid ""
 "Multiplying a vector by a scalar does not change its direction, only its "
 "magnitude. This is how you **scale** a vector."
@@ -204,19 +204,19 @@ msgstr ""
 "벡터에 스칼라를 곱하는 것은 벡터의 방향을 바꾸지는 않고, 이것의 크기만 바꿉니"
 "다. 이것이 바로 벡터의 크기를 조정하는 방법입니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:147
+#: ../../docs/tutorials/math/vector_math.rst:150
 msgid "Practical applications"
 msgstr "실용적인 응용"
 
-#: ../../docs/tutorials/math/vector_math.rst:149
+#: ../../docs/tutorials/math/vector_math.rst:152
 msgid "Let's look at two common uses for vector addition and subtraction."
 msgstr "벡터 덧셈과 뺄셈의 두 가지 일반적인 용법을 살펴보자."
 
-#: ../../docs/tutorials/math/vector_math.rst:151
+#: ../../docs/tutorials/math/vector_math.rst:155
 msgid "Movement"
 msgstr "이동"
 
-#: ../../docs/tutorials/math/vector_math.rst:153
+#: ../../docs/tutorials/math/vector_math.rst:157
 msgid ""
 "A vector can represent **any** quantity with a magnitude and direction. "
 "Typical examples are: position, velocity, acceleration, and force. In this "
@@ -232,7 +232,7 @@ msgstr ""
 "속도 벡터는 배가 각 단계를 이동하는 정도를 나타냅니다.\n"
 "현재 위치에 속도를 더함으로써 2단계의 위치를 찾을 수 있습니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:161
+#: ../../docs/tutorials/math/vector_math.rst:165
 msgid ""
 "Velocity measures the **change** in position per unit of time. The new "
 "position is found by adding velocity to the previous position."
@@ -240,11 +240,11 @@ msgstr ""
 "속도는 시간 단위당 위치의 변화를 측정합니다. 새로운 위치는 이전 위치에 속도"
 "를 더함으로써 찾을 수 있습니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:164
+#: ../../docs/tutorials/math/vector_math.rst:169
 msgid "Pointing toward a target"
 msgstr "표적을 향하기"
 
-#: ../../docs/tutorials/math/vector_math.rst:166
+#: ../../docs/tutorials/math/vector_math.rst:171
 msgid ""
 "In this scenario, you have a tank that wishes to point its turret at a "
 "robot. Subtracting the tank's position from the robot's position gives the "
@@ -255,15 +255,15 @@ msgstr ""
 "로봇의 위치에서 탱크의 위치를 빼면 벡터가 탱크에서 로봇으로 가리킬 수 있습니"
 "다."
 
-#: ../../docs/tutorials/math/vector_math.rst:172
+#: ../../docs/tutorials/math/vector_math.rst:177
 msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
 msgstr "\"A\"에서 \"B\"로 향하는 벡터를 찾으려면 \"B - A\"를 사용합니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:175
+#: ../../docs/tutorials/math/vector_math.rst:180
 msgid "Unit vectors"
 msgstr "단위 벡터"
 
-#: ../../docs/tutorials/math/vector_math.rst:177
+#: ../../docs/tutorials/math/vector_math.rst:182
 msgid ""
 "A vector with **magnitude** of ``1`` is called a **unit vector**. They are "
 "also sometimes referred to as **direction vectors** or **normals**. Unit "
@@ -273,11 +273,11 @@ msgstr ""
 "벡터** 또는 **법선벡터** 라고도 합니다. 단위 벡터는 방향을 추적해야 할 때 유"
 "용합니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:182
+#: ../../docs/tutorials/math/vector_math.rst:187
 msgid "Normalization"
 msgstr "표준화"
 
-#: ../../docs/tutorials/math/vector_math.rst:184
+#: ../../docs/tutorials/math/vector_math.rst:189
 msgid ""
 "**Normalizing** a vector means reducing its length to ``1`` while preserving "
 "its direction. This is done by dividing each of its components by its "
@@ -286,7 +286,7 @@ msgstr ""
 "벡터를 **표준화** 한다는 것의 의미는 벡터의 방향은 유지하면서 벡터의 길이를 1"
 "로 줄이는 것입니다. 이것은 각 벡터를 그것의 크기로 나누면서 이루어집니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:203
+#: ../../docs/tutorials/math/vector_math.rst:208
 msgid ""
 "Because this is such a common operation, ``Vector2`` and ``Vector3`` provide "
 "a method for normalizing:"
@@ -294,7 +294,7 @@ msgstr ""
 "이것은 일반적인 계산이기 때문에, ``vector2`` 와 ``vector3`` 는 표준화하는 방"
 "법을 제공합니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:216
+#: ../../docs/tutorials/math/vector_math.rst:221
 msgid ""
 "Because normalization involves dividing by the vector's length, you cannot "
 "normalize a vector of length ``0``. Attempting to do so will result in an "
@@ -303,11 +303,11 @@ msgstr ""
 "표준화는 벡터 길이로 나누어지기 때문에 길이 \"0\"의 벡터를 표준화할 수 없습니"
 "다. 이렇게 시도한다면 오류가 발생할 것입니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:221
+#: ../../docs/tutorials/math/vector_math.rst:226
 msgid "Reflection"
 msgstr "반사"
 
-#: ../../docs/tutorials/math/vector_math.rst:223
+#: ../../docs/tutorials/math/vector_math.rst:228
 msgid ""
 "A common use of unit vectors is to indicate **normals**. Normal vectors are "
 "unit vectors aligned perpendicularly to a surface, defining its direction. "
@@ -318,7 +318,7 @@ msgstr ""
 "면에 수직으로 정렬된 단위 벡터를 말하며, 방향을 정의합니다. 이 장치는 일반적"
 "으로 조명, 충돌 및 표면과 관련된 기타 작업에 사용됩니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:228
+#: ../../docs/tutorials/math/vector_math.rst:233
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
@@ -326,7 +326,7 @@ msgstr ""
 "예를 들어, 우리가 벽이나 다른 물체에서 튀기길 원하는 움직이는 공을 가지고 있"
 "다고 상상해 보세요:"
 
-#: ../../docs/tutorials/math/vector_math.rst:233
+#: ../../docs/tutorials/math/vector_math.rst:238
 msgid ""
 "The surface normal has a value of ``(0, -1)`` because this is a horizontal "
 "surface. When the ball collides, we take its remaining motion (the amount "
@@ -343,11 +343,11 @@ msgstr ""
 " 위 다이어그램의 GDScript 예제는 :ref:\"KinemicalBody2D "
 "<class_KinemicalBody2D>를 이용하는 것입니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:263
+#: ../../docs/tutorials/math/vector_math.rst:268
 msgid "Dot product"
 msgstr "내적"
 
-#: ../../docs/tutorials/math/vector_math.rst:265
+#: ../../docs/tutorials/math/vector_math.rst:270
 msgid ""
 "The **dot product** is one of the most important concepts in vector math, "
 "but is often misunderstood. Dot product is an operation on two vectors that "
@@ -359,24 +359,24 @@ msgstr ""
 "내적은 두 벡터를 **스칼라** 로 반환해주는 연산입니다.  크기와 방향 모두를 포"
 "함하는 벡터와는 다르게 스칼라 값은 오직 크기만 갖습니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:270
+#: ../../docs/tutorials/math/vector_math.rst:275
 msgid "The formula for dot product takes two common forms:"
 msgstr "내적의 공식은 두가지 형식을 취한다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:272
+#: ../../docs/tutorials/math/vector_math.rst:277
 msgid ""
 "A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:276
+#: ../../docs/tutorials/math/vector_math.rst:281
 msgid "and"
 msgstr "그리고"
 
-#: ../../docs/tutorials/math/vector_math.rst:278
+#: ../../docs/tutorials/math/vector_math.rst:283
 msgid "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
 msgstr "A·B = Ax Bx + Ay By"
 
-#: ../../docs/tutorials/math/vector_math.rst:282
+#: ../../docs/tutorials/math/vector_math.rst:287
 msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
@@ -384,7 +384,7 @@ msgstr ""
 "그러나, 대부분의 경우에서 기본 방법을 사용하는 것이 가장 쉽습니다. \n"
 "두 벡터의 순서는 중요하지 않습니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:296
+#: ../../docs/tutorials/math/vector_math.rst:301
 msgid ""
 "The dot product is most useful when used with unit vectors, making the first "
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
@@ -393,17 +393,17 @@ msgstr ""
 "내적은 첫 번째 공식을 cosθ로 줄이면서 단위벡터를 사용할 때 가장 유용합니다.\n"
 "즉, 단위벡터를 사용하여 두 벡터 간의 각도에 대해 설명할 수 있습니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:302
+#: ../../docs/tutorials/math/vector_math.rst:307
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
 msgstr "단위벡터를 사용할때, 결과는 항상 -1(180°)에서 1(0°) 사이일 것이다."
 
-#: ../../docs/tutorials/math/vector_math.rst:306
+#: ../../docs/tutorials/math/vector_math.rst:311
 msgid "Facing"
 msgstr "직면"
 
-#: ../../docs/tutorials/math/vector_math.rst:308
+#: ../../docs/tutorials/math/vector_math.rst:313
 msgid ""
 "We can use this fact to detect whether an object is facing toward another "
 "object. In the diagram below, the player ``P`` is trying to avoid the "
@@ -415,7 +415,7 @@ msgstr ""
 "아래 그림에서 ``P`` 선수는 좀비 ``A`` 와 ``B`` 를 피하려고 합니다.\n"
 "좀비의 시야가 **180°** 라고 가정하면 플레이어를 볼 수 있을까요?"
 
-#: ../../docs/tutorials/math/vector_math.rst:314
+#: ../../docs/tutorials/math/vector_math.rst:319
 msgid ""
 "The green arrows ``fA`` and ``fB`` are **unit vectors** representing the "
 "zombies' facing directions and the blue semicircle represents its field of "
@@ -430,15 +430,15 @@ msgstr ""
 "이 벡터와 마주보는 벡터 사이의 각도가 90° 미만일 경우 좀비는 플레이어를 볼 "
 "수 있습니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:321
+#: ../../docs/tutorials/math/vector_math.rst:326
 msgid "In code it would look like this:"
 msgstr "코드에서는 이렇게 보일 것이다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:339
+#: ../../docs/tutorials/math/vector_math.rst:344
 msgid "Cross product"
 msgstr "외적"
 
-#: ../../docs/tutorials/math/vector_math.rst:341
+#: ../../docs/tutorials/math/vector_math.rst:346
 #, fuzzy
 msgid ""
 "Like the dot product, the **cross product** is an operation on two vectors. "
@@ -451,21 +451,21 @@ msgstr ""
 "직의 방향을 가진 벡터입니다. 그것의 크기는 그것들의 상대적인 각도에 의존합니"
 "다. 만약 두 벡터가 평행이라면, 외적의 결과는 0벡터일 것입니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:346
+#: ../../docs/tutorials/math/vector_math.rst:351
 msgid ""
 "\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
 "\\right \\|\\ |\\sin(a,b)|"
 msgstr "||a X b|| = ||a|| ||b|| |sin(a,b)|"
 
-#: ../../docs/tutorials/math/vector_math.rst:352
+#: ../../docs/tutorials/math/vector_math.rst:357
 msgid "The cross product is calculated like this:"
 msgstr "외적은 이렇게 계산된다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:371
+#: ../../docs/tutorials/math/vector_math.rst:376
 msgid "With Godot, you can use the built-in method:"
 msgstr "고도에서는, 기본 방법을 사용할 수 있습니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:382
+#: ../../docs/tutorials/math/vector_math.rst:387
 msgid ""
 "In the cross product, order matters. ``a.cross(b)`` does not give the same "
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
@@ -474,11 +474,11 @@ msgstr ""
 "외적에서는, 순서가 중요합니다. \"a.cross(b)\"는 \"b.cross(a)\"와 같은 결가가 "
 "나오지 않습니다.  결과 벡터는 **반대쪽** 방향을 가리킵니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:387
+#: ../../docs/tutorials/math/vector_math.rst:392
 msgid "Calculating normals"
 msgstr "법선 계산하기"
 
-#: ../../docs/tutorials/math/vector_math.rst:389
+#: ../../docs/tutorials/math/vector_math.rst:394
 msgid ""
 "One common use of cross products is to find the surface normal of a plane or "
 "surface in 3D space. If we have the triangle ``ABC`` we can use vector "
@@ -490,15 +490,15 @@ msgstr ""
 "를 찾을 수 있습니다. 외적을 이용하여 \"AB x AC\"는 두 가지 모두에 수직인 벡터"
 "를 생성합니다: 표면에 수직방향."
 
-#: ../../docs/tutorials/math/vector_math.rst:394
+#: ../../docs/tutorials/math/vector_math.rst:399
 msgid "Here is a function to calculate a triangle's normal:"
 msgstr "이것은 삼각형에 수직인 평면을 계산하는 함수이다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:418
+#: ../../docs/tutorials/math/vector_math.rst:423
 msgid "Pointing to a target"
 msgstr "대상 가리키기"
 
-#: ../../docs/tutorials/math/vector_math.rst:420
+#: ../../docs/tutorials/math/vector_math.rst:425
 #, fuzzy
 msgid ""
 "In the dot product section above, we saw how it could be used to find the "
@@ -514,11 +514,11 @@ msgstr ""
 "우리는 현재 마주보는 방향과 목표 방향의 외적을 계산함으로써 그것을 발견할 수 "
 "있습니다. 결과 수직 벡터는 회전의 축입니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:428
+#: ../../docs/tutorials/math/vector_math.rst:433
 msgid "More information"
 msgstr "더 많은 정보"
 
-#: ../../docs/tutorials/math/vector_math.rst:430
+#: ../../docs/tutorials/math/vector_math.rst:435
 msgid ""
 "For more information on using vector math in Godot, see the following "
 "articles:"
@@ -526,10 +526,10 @@ msgstr ""
 "고도에서 벡터 수학을 이용하는 것에 대해 더 많은 정보를 원한다면, 다음 글들을 "
 "봐주십시오:"
 
-#: ../../docs/tutorials/math/vector_math.rst:432
+#: ../../docs/tutorials/math/vector_math.rst:437
 msgid ":ref:`doc_vectors_advanced`"
 msgstr ":ref:`doc_vectors_advanced`"
 
-#: ../../docs/tutorials/math/vector_math.rst:433
+#: ../../docs/tutorials/math/vector_math.rst:438
 msgid ":ref:`doc_matrices_and_transforms`"
 msgstr ":ref:`doc_matrices_and_transforms`"

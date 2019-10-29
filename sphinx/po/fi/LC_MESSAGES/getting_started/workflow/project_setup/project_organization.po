@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,6 @@ msgid "Organization"
 msgstr "Järjestys"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
-#, fuzzy
 msgid ""
 "Godot is scene-based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
@@ -47,7 +46,6 @@ msgstr ""
 "sellaisenaan ilman metadataa tai asset-tietokantaa."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:19
-#, fuzzy
 msgid ""
 "Unlike other engines, many resources are contained within the scene itself, "
 "so the amount of files in the filesystem is considerably lower."
@@ -57,31 +55,29 @@ msgstr ""
 "alhaisempi."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
-#, fuzzy
 msgid ""
 "Considering that, the most common approach is to group assets as close to "
 "scenes as possible; when a project grows, it makes it more maintainable."
 msgstr ""
-"Ottaen sen huomioon, yleisin lähestymistapa on ryhmitellä assetit lähelle "
-"skenejä, niin että kun projekti kasvaa, se on helpommin ylläpidettävissä."
+"Se huomioiden, yleisin lähestymistapa on ryhmitellä assetit niin lähelle "
+"skenejä kuin mahdollista; kun projekti kasvaa, se on näin helpommin "
+"ylläpidettävissä."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:26
-#, fuzzy
 msgid ""
 "As an example, one can usually place into a single folder their basic "
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
 "They can then use a separate folder to store built levels that use them."
 msgstr ""
-"Esimerkkinä, perustana toimivat spritejen kuvat, 3D-skenemallit tai meshit, "
-"materiaalit, ym. voi yleensä järjestää yhteen paikkaan, kun taas niistä "
-"rakennetuille kentille voi käyttää erillistä kansiota."
+"Esimerkkinä, perusassetteina toimivat spritejen kuvat, 3D-mallien meshit, "
+"materiaalit, musiikit, ym. voi yleensä sijoittaa yhteen kansioon. Niistä "
+"rakennetuille kentille voi taas käyttää erillistä kansiota."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:47
 msgid "Importing"
 msgstr "Tuonti"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:49
-#, fuzzy
 msgid ""
 "Godot versions prior to 3.0 did the import process from files outside the "
 "project. While this can be useful in large projects, it resulted in an "
@@ -92,17 +88,15 @@ msgstr ""
 "johti useimmilla kehittäjillä järjestämisen sekamelskaan."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:53
-#, fuzzy
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
-msgstr "Tästä syystä, assetit tuodaan nykyään läpinäkyvästi projektikansiosta."
+msgstr "Tästä syystä assetit tuodaan nykyään läpinäkyvästi projektikansiosta."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:56
-#, fuzzy
 msgid ""
 "If a folder shouldn't be imported into Godot, an exception can be made with "
 "a .gdignore file."
 msgstr ""
-"Jos kansiota ei pidä tuoda Godotiin, sille voidaan tehdä poikkeus .gdignore "
-"tiedostolla."
+"Jos kansiota ei ole tarkoitus tuoda Godotiin, sille voidaan tehdä poikkeus ."
+"gdignore tiedostolla."

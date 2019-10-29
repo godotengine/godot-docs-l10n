@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr ""
+msgstr "Disegnare interfacce con i nodi Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -29,33 +29,42 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
+"Schermi di computer, cellulari, e televisori sono di tutte le forme e "
+"dimensioni. Per pubblicare un gioco, avrai bisogno di supportare diverse "
+"proporzioni e risoluzioni di schermi. Può essere complicato costruire "
+"interfacce reattive che si adattano a tutte le piattaforme. Per fortuna, "
+"Godot è munito di strumenti robusti per progettare e gestire un'Interfaccia "
+"Utente reattiva."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
-msgstr ""
+msgstr "L'editor di Godot è creato con il framework UI del motore stesso"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:16
 msgid "This guide will get you started with UI design. You will learn:"
-msgstr ""
+msgstr "Questa guida ti insegnerà le basi della progettazione UI. Imparerai:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
 msgid "The five most useful control nodes to build your games' interface"
 msgstr ""
+"I cinque nodi di controllo più utili per costruire l'interfaccia dei tuoi "
+"giochi"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
-msgstr ""
+msgstr "Come lavorare con l'ancora degli elementi UI"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:20
 msgid ""
 "How to efficiently place and arrange your user interface using containers"
 msgstr ""
+"Come piazzare e ordinare efficientemente la tua interfaccia utente usando i "
+"contenitori"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
 msgid ""
-"The five most common containers (at a later time, you can learn more about "
-"containers in the :ref:`GUI Containers <doc_gui_containers>` documentation "
-"page)."
+"The five most common containers (you can learn more about containers in the :"
+"ref:`GUI Containers <doc_gui_containers>` documentation page)."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
@@ -79,14 +88,18 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"I nodi di controllo hanno proprietá uniche che consentono loro di funzionare "
+"bene insieme. Altri nodi visuali, come Node2D e Sprite non hanno queste "
+"capacitá. Per questo per renderti la vita piú facile usa i nodi Control "
+"ovunque sia possibile per costruire le tue UI."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
-msgstr ""
+msgstr "Tutti i nodi di controllo condividono le stesse proprietá principali:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:38
 msgid "Anchor"
-msgstr ""
+msgstr "Ancora"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Bounding rectangle"
@@ -106,29 +119,35 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "The optional UI theme"
-msgstr ""
+msgstr "Il tema di UI opzionale"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:45
 msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
 msgstr ""
+"Una volta che capisci le basi del nodo Control, ci metterai meno tempo ad "
+"imparare tutti i nodi che derivano da esso."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:50
 msgid "The 5 most common UI elements"
-msgstr ""
+msgstr "I 5 elementi UI piú comuni"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:52
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
+"Godot viene fornito con dozzine di nodi di controllo. Molti di loro sono qui "
+"per aiutarti a costruire plugin dell'editor e applicazioni."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:55
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
 msgstr ""
+"Per la maggior parte dei giochi, avrai bisogno solo di cinque tipi di "
+"elementi UI, e alcuni Container. Questi cinque nodi Control sono:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:58
 msgid "Label: for displaying text"
@@ -159,7 +178,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
-msgstr ""
+msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:73
 msgid ""

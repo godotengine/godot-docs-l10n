@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/editor/creating_icons.rst:4
-#, fuzzy
 msgid "Editor icons"
-msgstr "编辑器插件"
+msgstr "编辑器图标"
 
 #: ../../docs/development/editor/creating_icons.rst:6
 msgid ""
@@ -29,11 +28,12 @@ msgid ""
 "from. Yet in most cases it is recommended to create icons for new classes to "
 "improve the user experience."
 msgstr ""
+"当创建一个新类并进行脚本编写时，编辑器的界面将使用默认图标显示它，该图标表示"
+"该类继承的基类。但是在大多数情况下，建议为新类创建图标以改善用户体验。"
 
 #: ../../docs/development/editor/creating_icons.rst:12
-#, fuzzy
 msgid "Creating icons"
-msgstr "创造内容"
+msgstr "创建图标"
 
 #: ../../docs/development/editor/creating_icons.rst:14
 msgid ""
@@ -41,12 +41,14 @@ msgid ""
 "installed. For instance, you can use the open-source `Inkscape <https://"
 "inkscape.org/>`_ editor."
 msgstr ""
+"为了创建新图标，首先需要安装矢量图形编辑器。例如，您可以使用开源的 `Inkscape "
+"<https://inkscape.org/>`_ 编辑器。"
 
 #: ../../docs/development/editor/creating_icons.rst:17
 msgid ""
 "Clone the ``godot-design`` repository containing all the original editor "
 "icons:"
-msgstr ""
+msgstr "克隆包含所有原始编辑器图标的 ``godot-design`` 存储库："
 
 #: ../../docs/development/editor/creating_icons.rst:23
 msgid ""
@@ -54,6 +56,8 @@ msgid ""
 "can use ``engine/icons/inkscape_template.svg`` with default icon properties "
 "already set up."
 msgstr ""
+"图标必须在矢量图形编辑器中以 ``svg`` 格式创建。您可以在已设置默认图标属性的情"
+"况下使用 ``engine/icons/inkscape_template.svg``。"
 
 #: ../../docs/development/editor/creating_icons.rst:27
 msgid ""
@@ -61,10 +65,12 @@ msgid ""
 "icons/svg/`` folder. But in order for the engine to automatically pick up "
 "the icons, each icon's filename:"
 msgstr ""
+"对图标的设计感到满意后，将图标保存在 ``engine/icons/svg/`` 文件夹中。但是，为"
+"了使引擎自动提取图标，每个图标的文件名："
 
 #: ../../docs/development/editor/creating_icons.rst:31
 msgid "Must be prefixed with ``icon_``."
-msgstr ""
+msgstr "必须以 ``icon_`` 为前缀。"
 
 #: ../../docs/development/editor/creating_icons.rst:33
 msgid ""
@@ -73,56 +79,53 @@ msgid ""
 "have all letters, numbers, and special characters separated as distinct "
 "words. Some examples:"
 msgstr ""
+"``PascalCase`` 的名称应转换为 ``snake_case``，因此每当大小写变化时单词都由 "
+"``_`` 分隔，并且大写首字母缩写词还必须将所有字母、数字、和特殊字符分隔为不同"
+"的单词。一些示例："
 
 #: ../../docs/development/editor/creating_icons.rst:39
-#, fuzzy
 msgid "Name"
-msgstr "根名称"
+msgstr "名称"
 
 #: ../../docs/development/editor/creating_icons.rst:39
-#, fuzzy
 msgid "Filename"
-msgstr "Vietnamese"
+msgstr "文件名称"
 
 #: ../../docs/development/editor/creating_icons.rst:41
-#, fuzzy
 msgid "``Polygon2D``"
-msgstr "CSGPolygon"
+msgstr "``Polygon2D``"
 
 #: ../../docs/development/editor/creating_icons.rst:41
 msgid "``icon_polygon_2_d.svg``"
-msgstr ""
+msgstr "``icon_polygon_2_d.svg``"
 
 #: ../../docs/development/editor/creating_icons.rst:43
-#, fuzzy
 msgid "``CSGPolygon``"
-msgstr "CSGPolygon"
+msgstr "``CSGPolygon``"
 
 #: ../../docs/development/editor/creating_icons.rst:43
 msgid "``icon_c_s_g_polygon.svg``"
-msgstr ""
+msgstr "``icon_c_s_g_polygon.svg``"
 
 #: ../../docs/development/editor/creating_icons.rst:45
-#, fuzzy
 msgid "``CPUParticles2D``"
-msgstr "Particles2D"
+msgstr "``CPUParticles2D``"
 
 #: ../../docs/development/editor/creating_icons.rst:45
 msgid "``icon_c_p_u_particles_2_d.svg``"
-msgstr ""
+msgstr "``icon_c_p_u_particles_2_d.svg``"
 
 #: ../../docs/development/editor/creating_icons.rst:47
 msgid "``C#``"
-msgstr ""
+msgstr "``C#``"
 
 #: ../../docs/development/editor/creating_icons.rst:47
 msgid "``icon_c_#.svg``"
-msgstr ""
+msgstr "``icon_c_#.svg``"
 
 #: ../../docs/development/editor/creating_icons.rst:51
-#, fuzzy
 msgid "Icon optimization"
-msgstr "优化"
+msgstr "图标优化"
 
 #: ../../docs/development/editor/creating_icons.rst:53
 msgid ""
@@ -130,27 +133,28 @@ msgid ""
 "in size, so they can be efficiently parsed. Editor icons must be first "
 "optimized before being added to the engine, to do so:"
 msgstr ""
+"因为编辑器是在运行时渲染 ``svg`` 的，所以它们的尺寸必须很小，以便可以有效地对"
+"其进行解析。必须先对编辑器图标进行优化，然后才能将其添加到引擎中："
 
 #: ../../docs/development/editor/creating_icons.rst:57
 msgid "Add them to the ``engine/icons/svg`` folder."
-msgstr ""
+msgstr "将它们添加到 ``engine/icons/svg`` 文件夹中。"
 
 #: ../../docs/development/editor/creating_icons.rst:59
 msgid ""
 "Run the ``optimize.py`` script. You must have the ``scour`` package "
 "installed:"
-msgstr ""
+msgstr "运行 ``optimize.py`` 脚本。您必须安装了 ``scour`` 软件包："
 
 #: ../../docs/development/editor/creating_icons.rst:66
 msgid ""
 "The optimized icons will be generated in the ``engine/icons/optimized`` "
 "folder."
-msgstr ""
+msgstr "优化的图标将在 ``engine/icons/optimized`` 目录中生成。"
 
 #: ../../docs/development/editor/creating_icons.rst:69
-#, fuzzy
 msgid "Integrating and sharing the icons"
-msgstr "四元数插值"
+msgstr "集成和分享图标"
 
 #: ../../docs/development/editor/creating_icons.rst:71
 msgid ""
@@ -161,6 +165,10 @@ msgid ""
 "``godot-design`` repository so that the icon can be improved upon by other "
 "contributors."
 msgstr ""
+"如果您为引擎本身做贡献，则应该发一个拉取请求，以将优化的图标添加到主存储库中"
+"的 ``godot/editor/icons`` 中。重新编译引擎，以确保它确实获取了新的类图标。合"
+"并后，不要忘记将图标的原始版本添加到 ``godot-design`` 存储库中，以便其他贡献"
+"者可以改进图标。"
 
 #: ../../docs/development/editor/creating_icons.rst:77
 msgid ""
@@ -169,12 +177,16 @@ msgid ""
 "don't need to make a separate pull request for your icons to be available "
 "within the editor as they can be self-contained."
 msgstr ""
+"也可以在模块内创建自定义图标。如果您要创建自己的模块，并且不打算将其与Godot集"
+"成，则不需要单独的拉取请求即可在编辑器中使用图标，因为它们可以独立存在。"
 
 #: ../../docs/development/editor/creating_icons.rst:82
 msgid ""
 "For specific instructions on how to create module icons, refer to :ref:"
 "`Creating custom module icons<doc_custom_module_icons>`."
 msgstr ""
+"有关如何创建模块图标的特定说明，请参考 :ref:`创建自定义模块图标 "
+"<doc_custom_module_icons>`。"
 
 #: ../../docs/development/editor/creating_icons.rst:86
 msgid "Troubleshooting"
@@ -182,27 +194,29 @@ msgstr "故障排除"
 
 #: ../../docs/development/editor/creating_icons.rst:88
 msgid "If icons don't appear in the editor make sure that:"
-msgstr ""
+msgstr "如果图标未出现在编辑器中，请确保："
 
 #: ../../docs/development/editor/creating_icons.rst:90
 msgid ""
 "Each icon's filename matches the naming requirement as described previously."
-msgstr ""
+msgstr "每个图标的文件名都符合前面所述的命名要求。"
 
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid ""
 "``modules/svg`` is enabled (should be enabled by default). Without it, icons "
 "won't appear in the editor at all."
 msgstr ""
+"启用了 ``modules/svg`` （默认情况下应该启用）。没有它，图标将根本不会出现在编"
+"辑器中。"
 
 #: ../../docs/development/editor/creating_icons.rst:96
 msgid "References:"
-msgstr "参阅资料:"
+msgstr "参考："
 
 #: ../../docs/development/editor/creating_icons.rst:98
-#, fuzzy
 msgid ""
 "`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
 "icons>`__"
 msgstr ""
-"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
+"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
+"icons>`__"

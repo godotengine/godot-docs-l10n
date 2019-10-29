@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,18 +27,17 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
-#, fuzzy
 msgid ""
 "In previous tutorials, everything revolved around the concept of nodes. "
 "Scenes are collections of nodes. They become active once they enter the "
 "*scene tree*."
 msgstr ""
-"在前面的教程中, 一切都围绕节点的概念展开。场景只是节点的集合。一旦进入 *场景"
-"树* , 它们就会被激活。"
+"在之前的教程中，所有内容都围绕节点的概念展开。场景是节点的集合。一旦进入 *场"
+"景树*，它们就会被激活。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:14
 msgid "MainLoop"
-msgstr "主循环"
+msgstr "``主循环（MainLoop）``"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -47,8 +46,8 @@ msgid ""
 "Afterwards, all drivers, servers, scripting languages, scene system, etc are "
 "loaded."
 msgstr ""
-"Godot内部的工作方式如下所示。有 :ref:`OS <class_OS>` 类, 它是在开始时运行的唯"
-"一实例。之后, 加载所有驱动程序、服务器、脚本语言、场景系统等。"
+"Godot内部的工作方式如下所示。有 :ref:`OS <class_OS>` 类，它是在开始时运行的唯"
+"一实例。之后，加载所有驱动程序、服务、脚本语言、场景系统等。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:21
 msgid ""
@@ -57,9 +56,9 @@ msgid ""
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
-"初始化完成后, 需要向 :ref:`OS <class_OS>` 提供一个 :ref:`MainLoop "
-"<class_MainLoop>` 来运行。到目前为止, 所有这些都是内部工作 (您可以检查main/"
-"main.cpp文件在源代码中, 如果您曾经有兴趣看到它是如何在内部工作)。"
+"初始化完成后，需要为 :ref:`OS <class_OS>` 提供一个 :ref:`MainLoop "
+"<class_MainLoop>` 来运行。至此，所有这些都是内部工作（如果您有兴趣查看内部如"
+"何工作，则可以在源代码中查看 ``main/main.cpp`` 文件）。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:27
 msgid ""
@@ -68,94 +67,90 @@ msgid ""
 "(physics-synchronized callback), and input. Again, this is low level and "
 "when making games in Godot, writing your own MainLoop seldom makes sense."
 msgstr ""
-"用户程序或游戏从主循环开始。此类有几个方法, 用于初始化、空闲 (框架同步回调)、"
-"固定 (物理同步回调) 和输入。同样, 这是低级别的, 在Godot中制作游戏时, 编写自己"
-"的主循环意义不大。"
+"用户程序或游戏将在 ``主循环（MainLoop）`` 中启动。该类具有一些方法，用于初始"
+"化、空闲（帧同步回调）、固定（物理同步回调）、和输入。同样，这是低级的，并且"
+"在Godot中制作游戏时，编写自己的 ``主循环（MainLoop）`` 意义不大。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
-msgstr ""
-"解释Godot如何工作的方法之一是, 它是一个高级的游戏引擎, 超过了一个低级中间件。"
+msgstr "解释Godot的工作方式的一种方法是，它是基于低级中间件的高级游戏引擎。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:38
 msgid ""
 "The scene system is the game engine, while the :ref:`OS <class_OS>` and "
 "servers are the low level API."
-msgstr "场景系统是游戏引擎, 而 :ref:`OS <class_OS>` 和服务器是低级API。"
+msgstr "场景系统是游戏引擎，而 :ref:`OS <class_OS>` 和服务是底层API。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
-#, fuzzy
 msgid ""
 "The scene system provides its own main loop to OS, :ref:`SceneTree "
 "<class_SceneTree>`. This is automatically instanced and set when running a "
 "scene, no need to do any extra work."
 msgstr ""
-"在任何情况下, 场景系统都为操作系统 :ref:`SceneTree <class_SceneTree>` 提供了"
-"自己的主循环。这是在运行场景时自动进行实例化和设置的, 无需执行任何额外的工"
-"作。"
+"场景系统为OS提供了自己的主循环，即 :ref:`SceneTree <class_SceneTree>`。运行场"
+"景时会自动实例化并设置该场景，无需执行任何其他工作。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
 "It's important to know that this class exists because it has a few important "
 "uses:"
-msgstr "重要的是要知道此类的存在, 因为它有几个重要的用途:"
+msgstr "重要的是要知道此类的存在，因为它有一些重要的用途："
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:49
+#, fuzzy
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
 "added as a child when it's first opened to become part of the *Scene Tree* "
-"(more on that next)"
+"(more on that next)."
 msgstr ""
-"它包含根 :ref:`Viewport <class_Viewport>`, 当场景第一次打开时, 场景将作为子对"
-"象添加到其中 (接下来会有更多)"
+"它包含根 :ref:`Viewport <class_Viewport>`，当场景第一次打开成为 *Scene Tree* "
+"的一部分时，会将场景作为子级添加到其中（接下来会有更多）"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:52
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
 "in a group or get a list of them."
-msgstr "它包含有关组的信息, 并具有调用组中的所有节点或获取它们的列表的方法。"
+msgstr "它包含有关编组的信息，并具有调用编组中所有节点或获取它们的列表的方法。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:54
 msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
-msgstr "它包含一些全局状态功能, 如设置暂停模式或退出进程。"
+msgstr "它包含一些全局状态功能，例如设置暂停模式或退出进程。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "When a node is part of the Scene Tree, the :ref:`SceneTree "
 "<class_SceneTree>` singleton can be obtained by calling :ref:`Node."
 "get_tree() <class_Node_method_get_tree>`."
 msgstr ""
-"当节点是场景树的一部分时, 只需调用 :ref:`Node.get_tree() "
-"<class_Node_method_get_tree>` 即可获得 :ref:`场景树 <class_SceneTree>` 单例。"
+"当节点是场景树的一部分时，可以通过调用 :ref:`Node.get_tree() "
+"<class_Node_method_get_tree>` 获得 :ref:`SceneTree <class_SceneTree>` 单例。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:63
 msgid "Root viewport"
-msgstr "根视区"
+msgstr "根视图"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
 msgid ""
 "The root :ref:`Viewport <class_Viewport>` is always at the top of the scene. "
 "From a node, it can be obtained in two different ways:"
 msgstr ""
-"根 :ref:`Viewport <class_Viewport>` 始终位于场景的顶部。从节点中, 可以通过两"
-"种不同的方式获得它:"
+"根 :ref:`Viewport <class_Viewport>` 始终位于场景的顶部。从一个节点，可以通过"
+"两种不同的方式获得它："
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:80
-#, fuzzy
 msgid ""
 "This node contains the main viewport. Anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
 "sense that the top of all nodes is always a node of this type otherwise "
 "nothing would be seen."
 msgstr ""
-"此节点包含主视区, 默认情况下, 任何作为 :ref:`Viewport <class_Viewport>` 子视"
-"区的内容都将在其中绘制, 因此, 所有节点的顶部始终是此类型的节点是有意义的, 否"
-"则不会看到任何内容！"
+"此节点包含主视图。默认情况下，将在其内部绘制 :ref:`Viewport "
+"<class_Viewport>` 的子项，因此有意义的是所有节点的顶部始终是这种类型的节点，"
+"否则将看不到任何东西。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:85
 msgid ""
@@ -163,8 +158,8 @@ msgid ""
 "and such), this one is the only one that is never created by the user. It's "
 "created automatically inside SceneTree."
 msgstr ""
-"虽然可以在场景中创建其他视区 (用于拆分屏幕效果等), 但这是唯一一个从未由用户创"
-"建的视区。它是在``场景树``内自动创建的。"
+"尽管可以在场景中创建其他视图（用于分屏效果等），但该视图是唯一不由用户创建的"
+"视图。它是在 ``SceneTree`` 内部自动创建的。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:90
 msgid "Scene tree"
@@ -174,50 +169,48 @@ msgstr "场景树"
 msgid ""
 "When a node is connected, directly or indirectly, to the root viewport, it "
 "becomes part of the *scene tree*."
-msgstr "当节点直接或间接连接到根视区时, 它将成为 *场景树* 的一部分。"
+msgstr "当节点直接或间接连接到根视图时，它成为 *场景树* 的一部分。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:95
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
 msgstr ""
-"这意味着, 正如在前面的教程中所解释的, 它将得到 _enter_tree() 和 _ready() 回"
-"调 (以及_exit_tree())。"
+"这意味着，如之前教程中所述，它将获得 ``_enter_tree()`` 和 ``_ready()`` 回调函"
+"数（以及 ``_exit_tree()``）。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:100
-#, fuzzy
 msgid ""
 "When nodes enter the *Scene Tree*, they become active. They get access to "
 "everything they need to process, get input, display 2D and 3D visuals, "
 "receive and send notifications, play sounds, etc. When they are removed from "
 "the *scene tree*, they lose these abilities."
 msgstr ""
-"当节点进入 *场景树* 时, 它们将变为活动状态。他们可以访问处理、获取输入、显示"
-"2d 和3d、通知、播放声音、组等所需的一切。当它们从 *场景树* 中删除时, 它们将失"
-"去访问权限。"
+"当节点进入 *场景树* 时，它们将变为活动状态。它们可以访问需要处理的所有内容，"
+"获取输入、显示2D和3D视觉效果、接收和发送通知、播放声音等。当它们从 *场景树* "
+"中删除时，它们将失去这些功能。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:106
 msgid "Tree order"
 msgstr "树顺序"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:108
-#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
 "with a lower rank in the tree order will get notified before the current "
 "node."
 msgstr ""
-"Godot中的大多数节点操作 (如绘制2d、处理或获取通知) 都是按树顺序完成的。这意味"
-"着在树顺序中排名较小的家长和兄弟姐妹将在当前节点之前收到通知。"
+"Godot中的大多数节点操作（例如绘制2D、处理、或获取通知）均以树顺序完成。这意味"
+"着在树顺序中具有较低排名的父级和同胞将在当前节点之前得到通知。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
 msgid "\"Becoming active\" by entering the *Scene Tree*"
-msgstr "通过进入 *场景树* \"被激活\""
+msgstr "``变为活动状态`` 通过进入 *场景树*"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:118
 msgid "A scene is loaded from disk or created by scripting."
-msgstr "场景是从磁盘加载或通过脚本创建的。"
+msgstr "从磁盘加载场景或通过脚本创建场景。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:119
 msgid ""
@@ -225,16 +218,16 @@ msgid ""
 "child of the \"root\" Viewport (from SceneTree), or to any child or "
 "grandchild of it."
 msgstr ""
-"该场景的根节点 (只记得一个根节点？) 被添加为“根”视区 (从场景树) 的子节点, 或"
-"添加到该场景的任何子节点或孙子。"
+"该场景的根节点（只有一个根，还记得吗？）被添加为 ``root`` 视图（来自 "
+"``SceneTree``）的子级，或者被添加到 ``root`` 视图的任何子级或孙级。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:122
 msgid ""
 "Every node of the newly added scene, will receive the \"enter_tree\" "
 "notification ( _enter_tree() callback in GDScript) in top-to-bottom order."
 msgstr ""
-"新添加的场景的每个节点都将按从上到底顺序收到``enter_tree``通知(GDScript中的 "
-"_enter_tree 回调)。"
+"新添加的场景的每个节点都将按照从上到下的顺序接收 ``enter_tree`` 通知"
+"（GDScript中的 ``_enter_tree()`` 回调函数）。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:125
 msgid ""
@@ -242,44 +235,41 @@ msgid ""
 "provided for convenience, when a node and all its children are inside the "
 "active scene."
 msgstr ""
-"当节点及其所有子节点位于活动场景中时, 为方便起见, 提供了一个额外的通知, 即"
-"``ready``(GDScript中的 _ready() 回调)。"
+"当节点及其所有子节点都位于活动场景中时，为方便起见，会提供一个额外的通知 "
+"``ready`` （GDScript中的 ``_ready()`` 回调函数）。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:128
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
 msgstr ""
-"删除场景 (或其中一部分) 后, 它们将按从下到上的顺序收到``退出场景``通知"
-"(GDScript中的 _exit_tree() 回调)"
+"删除场景（或场景的一部分）后，它们将按照从下到上的顺序收到 ``退出场景（exit "
+"scene）`` 通知（GDScript中的 ``_exit_tree()`` 回调函数）"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:133
 msgid "Changing current scene"
 msgstr "更改当前场景"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:135
-#, fuzzy
 msgid ""
 "After a scene is loaded, it is often desired to change this scene for "
 "another one. The simple way to do this is to use the :ref:`SceneTree."
 "change_scene() <class_SceneTree_method_change_scene>` function:"
 msgstr ""
-"加载场景后, 通常需要将此场景更改为另一个场景。简单的方法是使用 :ref:"
-"`SceneTree.change_scene() <class_SceneTree_method_change_scene>` 方法:"
+"加载场景后，通常需要更改该场景为另一个场景。简单的方法是使用 :ref:`SceneTree."
+"change_scene() <class_SceneTree_method_change_scene>` 函数："
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:153
-#, fuzzy
 msgid ""
 "Rather than using file paths, one can also use ready-made :ref:`PackedScene "
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
 "change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
-"除了使用文件路径, 也可以通过使用等效函数 :ref:`SceneTree."
-"change_scene_to(PackedScene scene)<class_SceneTree_method_change_scene_to>` "
-"来利用现成的 :ref:`PackedScene <class_PackedScene>` 资源:"
+"除了使用文件路径之外，还可以使用等效的函数 :ref:`SceneTree."
+"change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>` "
+"来使用现成的 :ref:`PackedScene <class_PackedScene>` 资源："
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:174
-#, fuzzy
 msgid ""
 "These are quick and useful ways to switch scenes but have the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
@@ -288,7 +278,7 @@ msgid ""
 "(background) loading. This must be done manually using autoloads (see next "
 "chapter) and :ref:`doc_background_loading`."
 msgstr ""
-"这是一个快速和有用的方式来切换场景, 但有一个缺点, 游戏将停止, 直到新的场景加"
-"载并运行。在游戏中的某个时刻, 可能需要创建适当的加载屏幕, 其中包含进度条、动"
-"画指示器或线程 (后台) 加载。这必须使用自动加载手动完成 (请参阅下一章) 和 :"
-"ref:`doc_background_loading` 。"
+"这些是切换场景的快速而有用的方法，但缺点是游戏将停止直到新场景被加载并运行。"
+"在游戏开发的某个时刻，最好使用进度条、动画化的指示器或线程（背景）加载来创建"
+"适当的加载画面。必须使用自动加载功能（请参阅下一章）和 :ref:"
+"`doc_background_loading` 手动完成此操作。"

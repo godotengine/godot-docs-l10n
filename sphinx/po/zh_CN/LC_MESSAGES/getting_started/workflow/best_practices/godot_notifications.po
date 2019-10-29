@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:4
-#, fuzzy
 msgid "Godot notifications"
-msgstr "推送通知"
+msgstr "Godot通知"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:6
 msgid ""
@@ -30,55 +29,56 @@ msgid ""
 "it. For example, if the engine tells a :ref:`CanvasItem <class_CanvasItem>` "
 "to \"draw\", it will call ``_notification(NOTIFICATION_DRAW)``."
 msgstr ""
-"Godot中的每个对象都实现了一个:参考:`_通知 <类_对象_方法__通知>`方法。目的是允"
-"许对象响应可能与之相关的各种引擎级回调。例如，如果引擎告诉:参考:`画布组件<类_"
-"画布组件>`来“绘制”，它将调用``_通知(通知_绘制)``。"
+"Godot中的每个对象都实现 :ref:`_notification "
+"<class_Object_method__notification>` 方法。其目的是允许对象响应可能与之相关的"
+"各种引擎级回调。例如，如果引擎告诉一个 :ref:`CanvasItem <class_CanvasItem>` "
+"去 ``绘制``，它将调用 ``_notification(NOTIFICATION_DRAW)``。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:13
 msgid ""
 "Some of these notifications, like draw, are useful to override in scripts. "
 "So much so that Godot exposes many of them with dedicated functions:"
 msgstr ""
-"其中一些通知，与绘制类似，在脚本中重写也是有效的。以至于Godot公开了其中许多专"
-"用函数："
+"这些通知中的某些通知，例如 ``draw``，可用于在脚本中覆盖。如此之多，以至于"
+"Godot公开了许多具有专用功能的通知："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:16
 msgid "``_ready()`` : NOTIFICATION_READY"
-msgstr ""
+msgstr "``_ready()`` : NOTIFICATION_READY"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:18
 msgid "``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
-msgstr ""
+msgstr "``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:20
 msgid "``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
-msgstr ""
+msgstr "``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:22
 msgid "``_process(delta)`` : NOTIFICATION_PROCESS"
-msgstr ""
+msgstr "``_process(delta)`` : NOTIFICATION_PROCESS"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:24
 msgid "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
-msgstr ""
+msgstr "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:26
 msgid "``_input()`` : NOTIFICATION_INPUT"
-msgstr ""
+msgstr "``_input()`` : NOTIFICATION_INPUT"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:28
 msgid "``_unhandled_input()`` : NOTIFICATION_UNHANDLED_INPUT"
-msgstr ""
+msgstr "``_unhandled_input()`` : NOTIFICATION_UNHANDLED_INPUT"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:30
 msgid "``_draw()`` : NOTIFICATION_DRAW"
-msgstr ""
+msgstr "``_draw()`` : NOTIFICATION_DRAW"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:32
 msgid ""
 "What users might *not* realize is that notifications exist for types other "
 "than Node alone:"
-msgstr "用户可能*没有*意识到，除了节点之外，还有其他类型的通知："
+msgstr "用户可能 *不会* 意识到，通知仅针对 ``Node`` 以外的类型存在："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:35
 msgid ""
@@ -86,6 +86,9 @@ msgid ""
 "<class_Object_constant_NOTIFICATION_POSTINITIALIZE>`: a callback that "
 "triggers during object initialization. Not accessible to scripts."
 msgstr ""
+":ref:`Object::NOTIFICATION_POSTINITIALIZE "
+"<class_Object_constant_NOTIFICATION_POSTINITIALIZE>`：在对象初始化期间触发的"
+"回调。脚本无法访问。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:38
 msgid ""
@@ -93,6 +96,9 @@ msgid ""
 "<class_Object_constant_NOTIFICATION_PREDELETE>`: a callback that triggers "
 "before the engine deletes an Object, i.e. a 'destructor'."
 msgstr ""
+":ref:`Object::NOTIFICATION_PREDELETE "
+"<class_Object_constant_NOTIFICATION_PREDELETE>`：在引擎删除对象之前触发的回"
+"调，即一个 ``析构函数``。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:42
 msgid ""
@@ -101,13 +107,17 @@ msgid ""
 "triggers when the mouse enters the window in the operating system that "
 "displays the game content."
 msgstr ""
+":ref:`MainLoop::NOTIFICATION_WM_MOUSE_ENTER "
+"<class_MainLoop_constant_NOTIFICATION_WM_MOUSE_ENTER>`：当鼠标进入，显示游戏"
+"内容的操作系统窗口时，触发的回调。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:46
 msgid ""
 "And many of the callbacks that *do* exist in Nodes don't have any dedicated "
 "methods, but are still quite useful."
 msgstr ""
-"而且，节点中*确实*存在的许多回调函数没有任何专用的方法，但仍然非常有用。"
+"而且，在节点中 *确实* 存在许多回调，都没有任何专用方法，但是它们仍然非常有"
+"用。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:49
 msgid ""
@@ -115,6 +125,9 @@ msgid ""
 "<class_Node_constant_NOTIFICATION_PARENTED>`: a callback that triggers "
 "anytime one adds a child node to another node."
 msgstr ""
+":ref:`Node::NOTIFICATION_PARENTED "
+"<class_Node_constant_NOTIFICATION_PARENTED>`：任何时候将一个子节点添加到另一"
+"个节点时，都会触发的回调。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:52
 msgid ""
@@ -122,6 +135,9 @@ msgid ""
 "<class_Node_constant_NOTIFICATION_UNPARENTED>`: a callback that triggers "
 "anytime one removes a child node from another node."
 msgstr ""
+":ref:`Node::NOTIFICATION_UNPARENTED "
+"<class_Node_constant_NOTIFICATION_UNPARENTED>`：任何时候从另一个节点删除一个"
+"子节点时，都会触发的回调。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:56
 msgid ""
@@ -130,18 +146,22 @@ msgid ""
 "after a Popup node completes any ``popup*`` method. Note the difference from "
 "its ``about_to_show`` signal which triggers *before* its appearance."
 msgstr ""
+":ref:`Popup::NOTIFICATION_POST_POPUP "
+"<class_Popup_constant_NOTIFICATION_POST_POPUP>`：在 ``Popup`` 节点完成任何 "
+"``popup*`` 方法之后，触发的一个回调。请注意与它的 ``about_to_show`` 信号的区"
+"别，后者在前者出现 *之前* 触发。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:61
 msgid ""
 "One can access all these custom notifications from the universal "
 "``_notification`` method."
-msgstr "您可以从通用的``_notification``方法访问所有这些自定义通知。"
+msgstr "您可以从通用的 ``_notification`` 方法，访问所有这些自定义通知。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:65
 msgid ""
 "Methods in the documentation labeled as \"virtual\" are also intended to be "
 "overridden by scripts."
-msgstr "文档中标记为“virtual”的方法也可以被脚本重写。"
+msgstr "文档中标记为 ``虚拟（virtual）`` 的方法，也打算被脚本重写。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:68
 msgid ""
@@ -149,6 +169,9 @@ msgid ""
 "Object. While it has no ``NOTIFICATION_*`` equivalent, the engine still "
 "calls the method. Most languages (except C#) rely on it as a constructor."
 msgstr ""
+"一个经典的例子是 ``Object`` 中的 :ref:`_init <class_Object_method__init>` 方"
+"法。虽然它没有等效的 ``NOTIFICATION_*``，但是引擎仍然调用该方法。大多数语言"
+"（C#除外）都将其用作构造函数。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:73
 msgid ""
@@ -158,7 +181,7 @@ msgstr "那么，在哪种情况下应该使用这些通知或虚函数呢？"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:77
 msgid "_process vs. _physics_process vs. \\*_input"
-msgstr ""
+msgstr "``_process`` VS ``_physics_process`` VS ``*_input``"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:79
 msgid ""
@@ -169,10 +192,10 @@ msgid ""
 "the evaluations to update. If they don't need to execute every frame, then "
 "implementing a Timer-yield-timeout loop is another option."
 msgstr ""
-"当需要帧与帧之间的帧间时间间隔时，使用“_处理”。如果更新对象数据的代码需要尽可"
-"能频繁地更新，这是正确的地方。这里经常执行循环逻辑检查和数据缓存，但这取决于"
-"更新评估的频率。如果它们不需要执行每一帧，那么使用定时器-暂停-超时循环是另一"
-"个选项。"
+"当需要帧之间依赖于帧速率的 ``deltatime`` 时，请使用 ``_process``。如果更新对"
+"象数据的代码，需要尽可能频繁地更新，那么这是正确放置这些代码的地方。经常在这"
+"里执行循环逻辑检查和数据缓存，但它取决于需要更新估算的频率。如果他们不需要执"
+"行每一帧，那么执行一个 ``Timer-yield-timeout`` 循环是另一种选择。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:97
 msgid ""
@@ -181,9 +204,10 @@ msgid ""
 "how fast or slow time advances, this is the right place. Recurring kinematic "
 "and object transform operations should execute here."
 msgstr ""
-"当需要帧与帧之间独立的时间间隔时，使用``_物理_处理``。如果代码需要持续一致的"
-"更新，无论时间进展得多快或多慢，这是正确的地方。重复的动力学学和对象变换操作"
-"应该在这里执行。"
+"当一个帧之间需要独立于帧速率的 ``deltatime`` 时，请使用 "
+"``_physics_process``。如果不管时间是快还是慢，代码需要随着时间的推移进行一致"
+"的更新，那么这是正确的放置这些代码的地方。重复的运动学和对象变换操作，应在此"
+"处执行。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:102
 msgid ""
@@ -193,9 +217,9 @@ msgid ""
 "by default). In contrast, ``*_input`` callbacks will trigger only on frames "
 "in which the engine has actually detected the input."
 msgstr ""
-"虽然有可能达到最好的性能，应避免在这些回调期间进行输入检查。“_处理”和“_物理_"
-"处理”将在任何机会触发（默认情况下，它们不会“休息”）。相反，“*_输入”回调只会在"
-"引擎实际检测到输入的帧上触发。"
+"为了获得最佳性能，应尽可能避免在这些回调期间，进行输入检查。``_process`` 和 "
+"``_physics_process`` 将在每个机会触发（默认情况下它们不会 ``休息``）。相反，"
+"``*_input`` 回调仅在，引擎实际检测到输入的帧上触发。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:108
 msgid ""
@@ -203,12 +227,12 @@ msgid ""
 "one wants to use delta time, one can fetch it from the related deltatime "
 "methods as needed."
 msgstr ""
-"可以检查输入回调中的输入操作。如果想使用增量时间，可以根据需要从相关的增量时"
-"间方法获取它。"
+"可以同样检查输入回调中的输入动作。如果要使用增量时间，则可以根据需要从相关的"
+"增量时间方法中获取它。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:156
 msgid "_init vs. initialization vs. export"
-msgstr ""
+msgstr "``_init`` VS ``initialization`` VS ``export``"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:158
 msgid ""
@@ -218,20 +242,20 @@ msgid ""
 "but after a script creates and initializes its properties."
 msgstr ""
 "如果脚本初始化它自己的节点子树，没有场景，代码应该在这里执行。其他属性或独立"
-"于场景树的初始化也应该在这里运行。这在``_准备``或``_进入_树``之前触发，但是在"
-"脚本创建并初始化其属性之后。"
+"于 ``SceneTree`` 的 ``initialization`` 也应在此处运行。这会在 ``_ready`` 或 "
+"``_enter_tree`` 之前触发，但是会在脚本创建并初始化其属性之后触发。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:163
 msgid ""
 "Scripts have three types of property assignments that can occur during "
 "instantiation:"
-msgstr "脚本有三种类型的属性分配，可以在实例化过程中发生："
+msgstr "脚本具有实例化期间，可能发生的三种类型的属性分配："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:210
 msgid ""
 "When instantiating a scene, property values will set up according to the "
 "following sequence:"
-msgstr "当实例化一个场景时，属性值将按照以下顺序设置："
+msgstr "当实例化一个场景时，将根据以下顺序设置属性值："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:213
 msgid ""
@@ -239,7 +263,8 @@ msgid ""
 "initialization value or the init assignment value. Init assignments take "
 "priority over initialization values."
 msgstr ""
-"**初始值赋值：**实例化将分配初始化值或初始化赋值。初始化赋值优先于初始化值。"
+"**初始值赋值**：``instantiation`` 将分配 ``instantiation`` 值或 ``init`` 分配"
+"值。``init`` 分配的优先级高于 ``initialization`` 值。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:217
 msgid ""
@@ -247,18 +272,19 @@ msgid ""
 "script, Godot will assign the exported value to replace the initial value "
 "defined in the script."
 msgstr ""
-"**导出值赋值：**如果从一个场景而不是脚本中，Godot将分配导出的值来替换脚本中定"
-"义的初始值。"
+"**导出值赋值**：如果从一个场景而不是脚本中实例化，Godot将分配导出的值，来替换"
+"脚本中定义的初始值。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:221
 msgid ""
 "As a result, instantiating a script versus a scene will affect both the "
 "initialization *and* the number of times the engine calls the setter."
-msgstr "因此，实例化脚本和场景将影响初始化*和*引擎调用设值函数的次数。"
+msgstr ""
+"因此，实例化脚本和场景，将影响初始化，*和* 引擎调用 ``setter`` 的次数。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:225
 msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
-msgstr "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
+msgstr "``_ready`` VS ``_enter_tree`` VS ``NOTIFICATION_PARENTED``"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:227
 msgid ""
@@ -269,10 +295,10 @@ msgid ""
 "will call this method once all child nodes have finished calling theirs. "
 "This then causes a reverse cascade going up back to the tree's root."
 msgstr ""
-"当实例化连接到第一个执行场景时，Godot将实例化树下的节点(调用``_初始化``)并从"
-"根向下构建树。这会导致``_进入_树``调用级联到树的下面。当树构建完成，叶子节点"
-"调用``_准备``。一旦所有子节点都完成了对它们的子节点的调用，节点就会调用这个方"
-"法。这将导致反向级联回到树的根部。"
+"当实例化连接到第一个执行场景的场景时，Godot将实例化树下的节点（进行 "
+"``_init`` 调用），并构建从根向下的树。这导致 ``_enter_tree`` 调用，向下级联"
+"树。当树构建完成，叶子节点调用 ``_ready``。一旦所有子节点都完成了对它们的子节"
+"点的调用，一个节点就会调用这个方法。然后，这将导致反向级联回到树的根部。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:234
 msgid ""
@@ -280,8 +306,9 @@ msgid ""
 "the SceneTree upon creation, so no ``_enter_tree`` callbacks trigger. "
 "Instead, only the ``_init`` and later ``_ready`` calls occur."
 msgstr ""
-"在实例化脚本或独立场景时，节点不会在创建时添加到场景树，所以没有``_进入_树``"
-"的回调触发器。相反，只发生``_初始化``和之后的``_准备``调用。"
+"在实例化一个脚本或一个独立场景时，节点不会在创建时添加到场景树，所以没有 "
+"``_enter_tree`` 的回调触发器。相反，只发生 ``_init`` 和之后的 ``_ready`` 调"
+"用。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:238
 msgid ""
@@ -292,7 +319,8 @@ msgid ""
 "to a custom signal on the parent node without failing. Useful on data-"
 "centric nodes that one might create at runtime."
 msgstr ""
-"如果一个节点需要触发作为另一个节点的父节点发生的行为，不管它是否出现在主要/活"
-"动场景中，可以使用:参考:`父级<类_节点_常数_通知_父级>`通知。例如，以下是将节"
-"点连接到父节点上的自定义信号，而代码段不出错的方法。可以在运行时创建以数据为"
-"中心的节点。"
+"如果需要触发作为节点设置父级到另一个节点而发生的行为，无论它是否作为在主要/活"
+"动场景中的部分发生，都可以使用 :ref:`PARENTED "
+"<class_Node_constant_NOTIFICATION_PARENTED>` 通知。例如，这有一个将节点的方"
+"法，连接到父节点上的自定义信号，而不会失败的代码段。在运行时可能创建的，以数"
+"据为中心的节点上有用。"

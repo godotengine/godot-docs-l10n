@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,10 +32,11 @@ msgid ""
 "referring to *Node* here, it will be implied that a *Visual Script Node* is "
 "referred to unless indicated otherwise."
 msgstr ""
-"在继续之前，必须注意 *节点* 术语需要谨慎使用。 当引用 *可视化脚本节点* (或通"
-"常为 *节点* )时，此文本是指与线连接的小方框，它是图的一部分。 当引用 *场景节"
-"点* 时，它暗指构成场景的元素，它是树的一部分。 他们的命名类似，但他们的功能是"
-"不同的。 在此处谈到 *节点* 时，除非另有说明，否则将暗指 *可视化脚本节点* 。"
+"在继续之前，必须注意 *节点（Node）* 术语需要谨慎使用。当指代 *可视化脚本节点"
+"* （或通常称为 *节点*）时，此文本将指代用线连接的小盒子，它们是图的一部分。当"
+"指代 *场景节点* 时，它暗指构成场景的元素，它是树的一部分。它们的命名类似，但"
+"功能是不同的。除非另有说明，否则在此处指代 *节点* 时，将暗示指代了 *可视化脚"
+"本节点*。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:15
 msgid "Node properties"
@@ -47,8 +48,8 @@ msgid ""
 "properties. In Godot, though, we try to avoid bloating the nodes with "
 "editable controls for the sake of readability."
 msgstr ""
-"与大多数可视化脚本实现一样，每个节点都具有可编辑的属性。 但是，在Godot中，为"
-"了便于阅读，我们尽量避免使用可编辑的控件来复杂化节点。"
+"与大多数可视化脚本实现一样，每个节点都具有可编辑的属性。但是，在Godot中，为了"
+"便于阅读，我们尽量避免使用可编辑的控件来复杂化节点。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:20
 msgid ""
@@ -56,8 +57,8 @@ msgid ""
 "via the *Inspector*. To edit them, select any node and edit its properties "
 "in the *Inspector*."
 msgstr ""
-"节点仍然以文本形式显示所需信息，但编辑是通过 *属性面板* 完成的。 要编辑它们，"
-"请选择任何节点并在 *属性面板* 中编辑其属性。"
+"节点仍将所需信息显示为文本，但编辑是通过 *属性检查器* 完成的。要编辑它们，请"
+"选择任何节点并在 *属性检查器* 中编辑其属性。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:25
 msgid "Ports and connections"
@@ -67,7 +68,8 @@ msgstr "端口和连接"
 msgid ""
 "Programming in Godot Visual Scripting is done via *Nodes* and *Port "
 "Connections* inside each function."
-msgstr "Godot的可视化编程，是通过每个函数内的 *节点* 和 *端口连接* 来完成的。"
+msgstr ""
+"Godot可视化脚本中的编程是通过 *节点* 和每个函数内的 *端口连接* 完成的。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:31
 msgid "Ports"
@@ -79,8 +81,8 @@ msgid ""
 "appear to the left and right of nodes and which can be used to make "
 "*Connections*: There are two types of *Ports*: *Sequence* and *Data*."
 msgstr ""
-"Godot可视化编程中的节点有 *端口* 。 它们是出现在节点左侧和右侧的端点，可用于"
-"制作 *连接* :有两种类型的 *端口* : *顺序* 和 *数据* 。"
+"Godot可视脚本中的节点具有 *端口*。这些端点出现在节点的左侧和右侧，并可用于建"
+"立 *连接*：*端口* 有两种类型：*序列* 和 *数据*。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:40
 msgid ""
@@ -92,10 +94,10 @@ msgid ""
 "following the white lines. Not every *Node* has *Sequence Ports*. In fact, "
 "most do not."
 msgstr ""
-"*顺序端口* 表示执行操作的顺序。 通常当 *节点* 完成处理时，它将从右边的一个端"
-"口进入下一个节点。 如果没有连接，则该函数可能结束，或者可能尝试另一个输出 *顺"
-"序端口*(这取决于节点)。 多亏了这一点，您可以通过遵循白线来跟踪函数内的逻辑流"
-"程。 并非每个 *节点* 都有 *顺序端口* 。 事实上，大多数没有。"
+"*序列端口* 指示执行操作的顺序。通常，当一个 *节点* 完成处理后，它将从右侧的端"
+"口之一转到下一个节点。如果未连接任何内容，则该函数可能会终止，或者可能尝试另"
+"一个输出 *序列端口* （取决于节点）。因此，您可以遵循白线来遵循函数中的逻辑流"
+"程。并非每个 *节点* 都有 *序列端口*。实际上，大多数都没有。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:46
 msgid ""
@@ -105,9 +107,9 @@ msgid ""
 "considered an output, while, a port on the left side is an input. Connecting "
 "them allows information to flow to the next node."
 msgstr ""
-"*数据端口* 包含具有类型的值。 类型可以是任何常规的Godot类型，例如布尔值，整"
-"数，字符串，Vector3，数组，任何对象或场景节点等。节点右侧的 *数据端口* 被视为"
-"输出， 而左侧的端口是输入。 连接它们，从而使得信息流到下一个节点。"
+"*数据端口* 端口包含类型化的值。类型可以是任何常规Godot类型，例如布尔、整数、"
+"字符串、Vector3、数组、任何对象或场景节点等。节点右侧的 *数据端口* 被视为输"
+"出， 而左侧的端口是输入。连接它们可以使信息流动到下一个节点。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:51
 msgid ""
@@ -115,8 +117,8 @@ msgid ""
 "Pay special attention to colors and icons, as each type has a different "
 "representation:"
 msgstr ""
-"但并非所有的 *数据端口* 类型都兼容并且允许连接。 要特别注意颜色和图标，因为每"
-"种类型都有不同的表示形式:"
+"但并非所有的 *数据端口* 类型都兼容并且允许连接。要特别注意颜色和图标，因为每"
+"种类型都有不同的表示形式："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:58
 msgid "Connections"
@@ -126,7 +128,7 @@ msgstr "连接"
 msgid ""
 "Connecting is a relatively simple process. Drag an *Output Port* towards an "
 "*Input Port*."
-msgstr "连接是一个相对简单的过程。 将 *输出端口* 拖向 *输入端口* 。"
+msgstr "连接是一个相对简单的过程。将 *输出端口* 拖向 *输入端口* 。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:65
 msgid ""
@@ -134,8 +136,8 @@ msgid ""
 "happens by dragging the *Input* away, while for *Sequence Ports*, this "
 "happens by dragging the *Output* away."
 msgstr ""
-"断开连接需要一点练习。 断开 *数据端口* 是通过拖离 *输入* 来实现的，而对于 *顺"
-"序端口*，则通过拖离 *输出* 来实现。"
+"断开连接需要一点练习。在 *数据端口* 断开是通过拖走 *输入* 来实现的，而对于 *"
+"序列端口*，则通过拖走 *输出* 来实现。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:71
 msgid ""
@@ -143,8 +145,8 @@ msgid ""
 "(A single output port can connect to many inputs), while *Sequence Ports* "
 "are N:1 (Many sequence outputs can be connected to a single input)."
 msgstr ""
-"这在开始时可能看起来很奇怪，但它发生是因为 *数据端口* 是1:N(单个输出端口可以"
-"连接到许多输入)，而 *顺序端口* 是 N:1(许多顺序输出可以连接到单个输入)。"
+"乍一看这很奇怪，但是发生的原因是 *数据端口* 为 ``1:N`` （单个输出端口可以连接"
+"到许多输入），而 *序列端口* 为 ``N:1`` （许多序列输出可以连接到单个输入）。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:75
 msgid ""
@@ -152,12 +154,12 @@ msgid ""
 "also context sensitive, it will supply a list of most common operations. For "
 "sequences, it will be conditional nodes:"
 msgstr ""
-"连接到空白区域(拖动以连接但是在空白区域上按下)也是上下文敏感的，它将提供最常"
-"见操作的列表。 对顺序，它将是条件节点:"
+"连接到空白区域（拖动以进行连接，但在空白区域上未按下）也是上下文相关的，它将"
+"提供最常用操作的列表。对序列，它将是条件节点："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:81
 msgid "While, for data, a contextual set/get/call menu will open:"
-msgstr "而对于数据，将打开上下文设置/获取/调用菜单:"
+msgstr "而对于数据，将打开上下文设置/获取/调用菜单："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:87
 msgid "Adding nodes"
@@ -169,8 +171,8 @@ msgid ""
 "each type of node does, let's take a short look at how nodes are most "
 "commonly added and dealt with."
 msgstr ""
-"最后！ 我们到了有趣的部分！ 但是，在更详细地解释每种类型节点的作用之前，让我"
-"们简单地看一下节点最常添加和处理的方式。"
+"最后！我们到了有趣的部分！但是，在更详细地解释每种类型节点的作用之前，让我们"
+"简单地看一下最常添加和处理节点的方式。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:94
 msgid "Accessing scene nodes"
@@ -183,8 +185,8 @@ msgid ""
 "dropping into the canvas will ask you to *call a method* (sometimes referred "
 "to as *member function*) on this node."
 msgstr ""
-"最常见的任务之一是访问场景树节点(同样，不要误认为是 *可视脚本节点 * )。 从场"
-"景树拖动并放入画布将要求您 *在此节点上调用方法* (有时称为 *成员函数* )。"
+"最常见的任务之一是访问场景树节点（同样，不要与 *可视化脚本节点* 混淆）。从场"
+"景树中拖放到画布上，将要求您在此节点上 *调用方法* （有时称为 *成员函数*）。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:102
 msgid ""
@@ -194,17 +196,17 @@ msgid ""
 "position in local coordinates to the control. Another common use case is "
 "queueing a node for deletion, which is done with the *queue_free* method."
 msgstr ""
-"虽然在大多数情况下需要访问属性(下面有更多内容)，但有时 *调用方法* 也很有用。 "
-"方法对对象执行特定操作。 在上述情况下，鼠标指针可以扭曲到控件的本地坐标中的位"
-"置。 另一个常见用例是将节点排队以进行删除，这是使用 *queue_free* 方法完成的。"
+"虽然在大多数情况下都需要访问属性（在下面进行更多介绍），但有时 *调用方法* 也"
+"可能有用。方法对对象执行特定的操作。在上述情况下，可以将鼠标指针映射到控件的"
+"局部坐标中。另一个常见用例是使用 ``queue_free`` 方法对要删除的节点进行排队。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:109
 msgid ""
 "Care must be taken that this only works if the scene being edited contains "
 "your *Visual Script* in one of the nodes! Otherwise, a warning will be shown."
 msgstr ""
-"必须注意，这只适用于正在编辑的场景在其中一个节点中包含 *可视化脚本* 的情况！ "
-"否则，将显示警告。"
+"必须注意，仅当正在编辑的场景在其中一个节点中包含您的 *可视化脚本* 时，这才起"
+"作用！否则，将出现一个警告。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:113
 msgid "Accessing scene node properties"
@@ -217,22 +219,23 @@ msgid ""
 "Name* of the property you want to edit (hint, *not* the value!) and drag it "
 "to the canvas:"
 msgstr ""
-"这是在可视化脚本中编辑 *场景节点* 的最常用方法。 从 *场景树* 中选择 *场景节点"
-"* ，转到属性面板，找到要编辑的属性的名称(提示， *不* 是值！)并将其拖到画布上:"
+"这是在可视化脚本中编辑 *场景节点* 的最常用方法。从 *场景树* 中选择 *场景节点"
+"* ，转到属性检查器，找到要编辑的属性的 *名称* （提示，*不* 是值！）并将其拖到"
+"画布上："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:120
 msgid ""
 "The result is that this value can be changed from your script by writing to "
 "a *Data Port*."
-msgstr "结果是可以通过写入 *数据端口* 从脚本更改此值。"
+msgstr "结果是可以通过写入 *数据端口* 从脚本中更改此值。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
 msgid ""
 "If instead reading this value is desired, drag the node again but hold the "
 "*Control* key (or Command on Mac). This will create a getter:"
 msgstr ""
-"如果需要读取此值，请再次拖动节点，但按住 *Control* 键(或Mac上的Command)。 这"
-"将创建一个getter:"
+"如果需要读取该值，请再次拖动该节点，但按住 *Control* 键（或在Mac上为 "
+"*Command*）。这将创建一个 ``getter``："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:127
 msgid "In this case, the value can be read from a *Data Port*."
@@ -248,19 +251,19 @@ msgid ""
 "This value can be read from any of the functions of the script or from other "
 "scripts via the method described in the previous step."
 msgstr ""
-"变量是脚本本地的内存容器，可以容纳一个值。 可以通过上一步中描述的方法从脚本的"
-"任何功能或其他脚本中读取此值。"
+"变量是脚本本地的，可以保存值的内存容器。可以通过上一步中描述的方法从脚本的任"
+"何函数或从其他脚本中读取此值。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:135
 msgid ""
 "To add a Variable, push the \"+\" button on the *Variables* section of the "
 "Members panel. Double-click the new variable to rename it:"
 msgstr ""
-"要添加变量，请按成员面板的 *变量* 部分中的``+``按钮。 双击新变量以重命名它:"
+"要添加变量，请按成员面板的 *变量* 部分中的 ``+`` 按钮。双击新变量以重命名它："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:140
 msgid "Right-clicking the variable allows you to configure its properties:"
-msgstr "右键单击该变量可以配置其属性:"
+msgstr "右键单击该变量可以配置其属性："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:147
 msgid ""
@@ -270,19 +273,19 @@ msgid ""
 "makes it available to other scripts via the method described in the previous "
 "step."
 msgstr ""
-"如上所示，可以更改变量的类型和初始值，以及一些属性提示。 选择“导出”选项会在选"
-"择节点时使属性面板中的变量可见。 这也可以通过上一步中描述的方法将其提供给其他"
-"脚本。"
+"如上所示，可以更改变量的类型和初始值，以及一些属性提示。选择 ``导出`` 选项会"
+"在选择节点时使属性面板中的变量可见。通过上一步中描述的方法，这也使其可用于其"
+"他脚本。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
 msgid ""
 "To use the variable in the script, simply drag it to the canvas to create a "
 "getter:"
-msgstr "要在脚本中使用该变量，只需将其拖到画布上即可创建一个getter:"
+msgstr "要在脚本中使用该变量，只需将其拖到画布上即可创建一个 ``getter``："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
-msgstr "同样，按住 *Control* (Mac上的 *Command* )删除一个setter:"
+msgstr "同样，按住 *Control* （Mac上的 *Command* ）删除一个 ``setter``："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 msgid "Signals"
@@ -294,14 +297,14 @@ msgid ""
 "this, do the same steps you did for variables in the previous step, except "
 "for *Signals*:"
 msgstr ""
-"也可以在脚本中创建自己的信号并使用它们。 为此，除了 *Signals* 之外，执行与上"
-"一步中的变量相同的步骤:"
+"也可以在脚本中创建自己的信号并使用它们。为此，除了 *信号* 之外，执行与上一步"
+"中的变量相同的步骤："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:171
 msgid ""
 "A signal can also be edited via the right-click menu to customize its "
 "arguments:"
-msgstr "也可以通过右键单击菜单编辑信号以自定义其参数:"
+msgstr "也可以通过右键单击菜单来编辑信号以自定义其参数："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
 msgid ""
@@ -309,18 +312,18 @@ msgid ""
 "built-in node signals. This allows you to connect it from another script "
 "from another *Scene Node*:"
 msgstr ""
-"您创建的信号将与内置节点信号一起显示在Inspector中。 这允许您从另一个 *Scene "
-"Node* 的另一个脚本连接它:"
+"您创建的信号将与内置节点信号一起出现在属性检查器中。这使您可以从另一个 *场景"
+"节点* 中的另一个脚本连接它："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:181
 msgid "Finally, to emit the signal, simply drag it to the canvas:"
-msgstr "最后，要发出信号，只需将其拖到画布上:"
+msgstr "最后，要发出信号，只需将其拖动到画布上："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:186
 msgid ""
 "Remember that emitting a signal is a sequenced operation, so it must come "
 "from a Sequence port."
-msgstr "请记住，发出信号是一个有序操作，因此它必须来自一个Sequence端口。"
+msgstr "请记住，发出信号是一种顺序操作，因此它必须来自序列端口。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:190
 msgid "Adding more nodes"
@@ -333,11 +336,11 @@ msgid ""
 "all available node types:"
 msgstr ""
 "既然已经涵盖了基础知识，那么让我们讨论一下可用于画布的大量实用程序节点！ 在成"
-"员面板下方，存在所有可用节点类型的列表:"
+"员面板下方，存在所有可用节点类型的列表："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:198
 msgid "Ctrl-F (Command-F on Mac) allows you to search the list."
-msgstr "Ctrl-F(Mac上的Command-F)允许您搜索列表。"
+msgstr "Ctrl-F（Mac上的Command-F）允许您搜索列表。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:200
 msgid ""
@@ -346,9 +349,9 @@ msgid ""
 "automatically), these are added without any \"contextual\" information, so "
 "this has to be done manually."
 msgstr ""
-"其中任何一个都可以拖到现场。 与节点(例如，从Inspector拖动属性将上下文设置为正"
-"在自动编辑的节点)不同，这些节点在没有任何``上下文``信息的情况下添加，因此必须"
-"手动完成。"
+"它们中的任何一个都可以拖到场景中。与节点不同（例如，从属性检查器中拖动属性会"
+"自动将上下文设置为在编辑的节点），这些节点的添加没有任何“上下文”信息，因此必"
+"须手动完成。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:206
 msgid ""
@@ -356,8 +359,8 @@ msgid ""
 "they are documented there. That mentioned, a brief overview of node types "
 "follows:"
 msgstr ""
-"请记住，您可以检查每个节点的类参考，因为它们在那里记录。 提到的，节点类型的简"
-"要概述如下:"
+"请记住，您可以检查类参考以了解每个节点的功能，因为在那里有文档记录。提到的，"
+"节点类型的简要概述如下："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:211
 msgid "Constants"
@@ -369,7 +372,7 @@ msgid ""
 "time, can be useful as reference values. Most of the time they are integer "
 "or float."
 msgstr ""
-"常量节点是提供值的节点，这些值虽然不随时间变化，但可用作参考值。 大多数情况下"
+"常量节点是提供值的节点，这些值虽然不随时间变化，但可用作参考值。大多数情况下"
 "它们是整数或浮点数。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:219
@@ -379,9 +382,9 @@ msgid ""
 "this node is not used that often because of default input values in *Data "
 "Ports*, but it's good to know it exists."
 msgstr ""
-"第一个是“常量”，它允许您选择任何类型的任何值作为常量，从整数(42)到字符串"
-"(“Hello！”)。 通常，由于 *Data Ports* 中的默认输入值，通常不使用此节点，但知"
-"道它存在是很好的。"
+"第一个是 ``常量``，它允许您选择任何类型的任何值作为常量，从整数（``42``）到字"
+"符串（``Hello!``）。通常，由于 *数据节点* 中的默认输入值，通常不使用此节点，"
+"但知道它存在是很好的。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:221
 msgid ""
@@ -389,14 +392,14 @@ msgid ""
 "constants for global types in Godot. In there you can find some useful "
 "constants to refer to key names, joystick or mouse buttons, etc."
 msgstr ""
-"第二个是GlobalConstant节点，它包含Godot中全局类型的一长串常量。 在那里您可以"
-"找到一些有用的常量来引用键名，操纵杆或鼠标按钮等。"
+"第二个是 ``GlobalConstant`` 节点，其中包含Godot中用于全局类型的一长串常量。在"
+"这里，您可以找到一些有用的常量来引用键名、操纵杆或鼠标按钮等。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:224
 msgid ""
 "The third one is MathConstant, which provides typical mathematical "
 "constants, such as PI, E, etc."
-msgstr "第三个是MathConstant，它提供典型的数学常数，如PI，E等。"
+msgstr "第三个是 ``MathConstant``，它提供典型的数学常数，如PI、E等。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
@@ -408,18 +411,18 @@ msgid ""
 "Godot is accessed via these nodes, so they are some of the most important "
 "ones to use and pretty diverse."
 msgstr ""
-"数据节点处理各种信息访问。 Godot中的任何信息都可以通过这些节点访问，因此它们"
-"是一些最重要的使用和非常多样化的节点。"
+"数据节点处理各种对信息的访问。Godot中的任何信息都可以通过这些节点进行访问，因"
+"此它们是一些最重要的节点，并且种类繁多。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:236
 msgid ""
 "There are many types of nodes of interest here, so a short attempt to "
 "describe them will follow:"
-msgstr "这里有许多类型的感兴趣的节点，因此将对其进行简短的描述:"
+msgstr "这里有趣的节点有很多类型，因此下面将简要描述它们："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr "动作"
+msgstr "动作（``Action``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -428,13 +431,13 @@ msgid ""
 "below, the control is moved to the right when the \"move_right\" action is "
 "pressed."
 msgstr ""
-"在处理来自设备的输入时，动作节点是至关重要的。 您可以在 (@TODO ACTION TUTE "
-"LINK) 中阅读有关操作的更多信息。 在下面的示例中，当按下``move_right``动作时，"
-"控件将移动到右侧。"
+"在处理来自设备的输入时，动作节点至关重要。您可以在（@TODO ACTION TUTE LINK）"
+"中阅读有关动作的更多信息。在下面的示例中，当按下 ``move_right`` 动作时，控件"
+"将移动到右侧。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:249
 msgid "Engine Singleton"
-msgstr "引擎单例"
+msgstr "引擎单例（``Singleton``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
 msgid ""
@@ -443,15 +446,15 @@ msgid ""
 "have several purposes, but in general, they are useful for low-level access "
 "or OS-related access."
 msgstr ""
-"引擎单例是全局接口(意味着它们可以在没有引用的情况下访问，与场景节点不同，它们"
-"始终可用)。 它们有多种用途，但通常它们对于低级访问或与操作系统相关的访问很有"
+"引擎单例是全局接口（这意味着无需引用即可访问它们；与场景节点不同，它们始终可"
+"用）。它们有多种用途，但总的来说，它们对于低级访问或与操作系统相关的访问很有"
 "用。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:257
 msgid ""
 "Remember that dragging a connection to empty space will help you call "
 "functions or set/get properties on these:"
-msgstr "请记住，将连接拖动到空白区域将帮助您调用函数或设置/获取以下属性:"
+msgstr "请记住，将连接拖动到空白区域将有助于您调用以下函数或设置/获取属性："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:263
 msgid "Local Variables"
@@ -463,16 +466,16 @@ msgid ""
 "they all have the same name and type when using them and they will reference "
 "the same piece of memory."
 msgstr ""
-"这些节点可用作图形的临时存储。 确保它们在使用时都具有相同的名称和类型，它们将"
-"引用相同的内存。"
+"这些节点可以用作图形的临时存储。确保它们在使用时都具有相同的名称和类型，并且"
+"它们将引用相同的内存。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:270
 msgid ""
 "As it can be seen above, there are two nodes available: A simple getter, and "
 "a sequenced getter (setting requires a sequence port)."
 msgstr ""
-"从上面可以看出，有两个节点可用:一个简单的getter和一个有序的getter(设置需要一"
-"个序列端口)。"
+"从上面可以看到，有两个可用的节点：一个简单的 ``getter`` 和一个有序的 "
+"``getter`` （设置需要一个序列端口）。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
@@ -484,8 +487,8 @@ msgid ""
 "node by dragging the actual node from the scene tree to the canvas (this "
 "will create it and configure it)."
 msgstr ""
-"这只是对树中节点的引用，但通过将实际节点从场景树拖动到画布(这将创建并配置"
-"它)，可以更轻松地使用此节点。"
+"这只是对树中节点的引用，但是通过将实际节点从场景树拖动到画布上（这将创建并配"
+"置它），将更易于使用此节点。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
@@ -498,8 +501,8 @@ msgid ""
 "nodes (or event the node itself that has the script) from the Scene Tree to "
 "the canvas for this."
 msgstr ""
-"在极少数情况下，可能需要将此场景节点作为参数传递。 它可用于调用函数和设置/获"
-"取属性，或将节点(或将具有脚本的节点本身的事件)从“场景树”拖动到画布。"
+"在极少数情况下，可能需要将此场景节点作为参数传递。为此，可以调用函数并设置/获"
+"取属性，或将节点（或甚至具有脚本的节点本身）从场景树拖到画布上。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
@@ -512,9 +515,9 @@ msgid ""
 "when the node is sitting in the scene and active, otherwise accessing it "
 "will return an error."
 msgstr ""
-"此节点类似于Singleton节点，因为它引用包含活动场景的SceneTree。 但是，"
-"SceneTree仅在节点位于场景中并且处于活动状态时才起作用，否则访问它将作为错误返"
-"回。"
+"此节点类似于 ``Singleton`` 节点，因为它引用包含活动场景的 ``SceneTree``。但"
+"是，``SceneTree`` 仅在节点位于场景中并且处于活动状态时才起作用，否则访问它将"
+"返回一个错误。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
 msgid ""
@@ -522,12 +525,12 @@ msgid ""
 "calling groups, make timers, or even load another scene. It's a good class "
 "to get familiar with."
 msgstr ""
-"SceneTree允许许多低级别的事情，比如设置拉伸选项，调用组，制作计时器，甚至加载"
-"另一个场景。 熟悉这是一个很好的课程。"
+"``SceneTree`` 允许许多低级别的事情，比如设置拉伸选项、调用编组、制作计时器、"
+"甚至加载另一个场景。这是一个适合熟悉的类。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
-msgstr "预载"
+msgstr "预加载（``Preload``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
 msgid ""
@@ -535,8 +538,8 @@ msgid ""
 "resource loaded and ready to use. Rather than instancing the node, it's "
 "simpler to drag the desired resource from the filesystem dock to the canvas."
 msgstr ""
-"这与GDScript中的preload()功能相同。 它维护此资源已加载并可以使用。 而不是实例"
-"化节点，将所需资源从文件系统停靠点拖到画布上更简单。"
+"这与GDScript中的 ``preload()`` 功能相同。它维护此资源已加载并可以使用。与实例"
+"化节点相比，将所需的资源从文件系统停靠面板拖到画布上更为简单。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
@@ -547,12 +550,12 @@ msgid ""
 "This node is a simple helper to get a string with a path to a resource you "
 "can pick. It's useful in functions that load things from disk."
 msgstr ""
-"此节点是一个简单的帮助器，用于获取包含可以选择的资源的路径的字符串。 它在从磁"
-"盘加载东西的函数中很有用。"
+"此节点是一个简单的帮助器，用于获取您选择的资源的路径的字符串。它在从磁盘加载"
+"东西的函数中很有用。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
 msgid "Comment"
-msgstr "注释"
+msgstr "注释（``Comment``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:315
 msgid ""
@@ -560,22 +563,22 @@ msgid ""
 "will not try to get focus or be brought to top when selecting it. It can "
 "also be used to write text on it."
 msgstr ""
-"Comment节点用作可以调整大小以放置其他节点的节点。 在选择它时，它不会试图获得"
-"焦点或被放到首位。 它也可以用来在上面写文字。"
+"``Comment`` 节点用作可以调整大小以放置其他节点的节点。在选择它时，它不会试图"
+"获得焦点或被放到顶层。它也可以用来在上面写文字。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:322
 msgid "Flow Control"
-msgstr "流程控制"
+msgstr "流控制"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:324
 msgid ""
 "Flow control nodes allow the execution to take different branches, usually "
 "depending on a given condition."
-msgstr "流控制节点允许执行采用不同的分支，通常取决于给定的条件。"
+msgstr "流控制节点通常根据给定条件，允许执行以采取不同的分支。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
 msgid "Condition"
-msgstr "Condition"
+msgstr "条件（``Condition``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
 msgid ""
@@ -584,20 +587,20 @@ msgid ""
 "them, it goes via the \"done\" port. Leaving sequence ports disconnected is "
 "fine if not all of them are used."
 msgstr ""
-"这是一个检查bool端口的简单节点。 如果为true，它将通过``true``序列端口。 如果"
-"是假的话，第二个。 在找到其中任何一个后，它通过``done``端口。 如果不是全部使"
-"用，则断开序列端口的连接是很好的。"
+"这是一个检查布尔端口的简单节点。如果为 ``true``，它将通过 ``true`` 序列端口。"
+"如果为 ``false``，则通过第二个。在找到其中任何一个后，它通过 ``done`` 端口。"
+"如果未使用所有序列端口，则将它们保持断开状态是可以的。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
-msgstr "迭代器"
+msgstr "迭代器（``Iterator``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:341
 msgid ""
 "Some data types in Godot (ie, arrays, dictionaries) are iterable. This means "
 "that a bit of code can run for each element that it has."
 msgstr ""
-"Godot中的一些数据类型(即数组，字典)是可迭代的。 这意味着可以为它拥有的每个元"
+"Godot中的某些数据类型（即数组、字典）是可迭代的。这意味着可以为它具有的每个元"
 "素运行一些代码。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:344
@@ -606,38 +609,38 @@ msgid ""
 "via the \"each\" sequence port, making the element available in the \"elem\" "
 "data port."
 msgstr ""
-"Iterator节点遍历所有元素，并且对于每个元素，它通过``each``序列端口，使元素在"
-"``elem``数据端口中可用。"
+"``Iterator`` 节点遍历所有元素，并且对于每个元素，它通过 ``each`` 序列端口，从"
+"而使元素在 ``elem`` 数据端口中可用。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:347
 msgid "When done, it goes via the \"exit\" sequence port."
-msgstr "完成后，它通过``exit``序列端口。"
+msgstr "完成后，它将通过 ``exit`` 序列端口。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:351
 msgid "Return"
-msgstr "Return"
+msgstr "返回（``Return``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:353
 msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
 "add the Return node for you. A return node forces the function to end."
 msgstr ""
-"某些函数可以返回值。 一般来说，对于虚拟的，Godot会为您添加Return节点。 返回节"
-"点强制函数结束。"
+"某些函数可以返回值。一般来说，对于虚函数，Godot会为您添加 ``Return`` 节点。返"
+"回节点强制函数结束。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
 msgid "Sequence"
-msgstr "Sequence"
+msgstr "序列（``Sequence``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:360
 msgid ""
 "This node is useful mostly for organizing your graph. It calls its sequence "
 "ports in order."
-msgstr "此节点主要用于组织图形。 它按顺序调用其序列端口。"
+msgstr "此节点主要用于组织图形。它按顺序调用其序列端口。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:364
 msgid "TypeCast"
-msgstr "类型转换"
+msgstr "类型转换（``TypeCast``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:366
 msgid ""
@@ -645,26 +648,24 @@ msgid ""
 "other objects to the type you desire. Afterwards, you can even drag the "
 "object output to get full completion."
 msgstr ""
-"这是一个有用且常用的节点。 您可以使用它将参数或其他对象转换为您想要的类型。 "
-"之后，您甚至可以拖动对象输出以完全完成。"
+"这是一个有用且常用的节点。您可以使用它将参数或其他对象转换为您想要的类型。之"
+"后，您甚至可以拖动对象输出以完全完成。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:372
 msgid ""
 "It is also possible to cast to a script, which will allow complete script "
 "properties and functions:"
-msgstr ""
-"也可以转换为脚本，这将允许完整的脚本属性和功能:也可以转换为脚本，这将允许完整"
-"的脚本属性和功能:"
+msgstr "也可以转换为脚本，这将允许完整的脚本属性和功能："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:378
 msgid "Switch"
-msgstr "选择"
+msgstr "选择（``Switch``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:380
 msgid ""
 "The Switch node is similar to the Condition node, but it matches many values "
 "at the same time."
-msgstr "Switch节点类似于Condition节点，但它同时匹配许多值。"
+msgstr "``Switch`` 节点类似于 ``Condition`` 节点，但它同时匹配许多值。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
@@ -675,8 +676,8 @@ msgid ""
 "This is a more primitive form of iteration. \"repeat\" sequence output will "
 "be called as long as the condition in the \"cond\" data port is met."
 msgstr ""
-"这是一种更原始的迭代形式。 只要满足``cond``数据端口中的条件，就会调用``重复``"
-"序列输出。"
+"这是一种更原始的迭代形式。只要满足 ``cond`` 数据端口中的条件，就会调用 ``重复"
+"`` 序列输出。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 msgid "Functions"
@@ -687,24 +688,23 @@ msgid ""
 "Functions are simple helpers, most of the time deterministic. They take some "
 "arguments as input and return an output. They are almost never sequenced."
 msgstr ""
-"这是一个有用且常用的节点。 您可以使用它将参数或其他对象转换为您想要的类型。 "
-"之后，您甚至可以拖动对象输出以完全完成。"
+"函数是简单的帮助器，大多数情况下都是确定的。它们将一些参数作为输入并返回输"
+"出。它们几乎从未排序。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:398
 msgid "Built-In"
 msgstr "内置"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
-#, fuzzy
 msgid ""
 "There is a list of built-in helpers. The list is almost identical to the one "
 "from :ref:`GDScript<class_@GDScript>`. Most of them are mathematical "
 "functions, but others can be useful helpers. Make sure to take a look at the "
 "list at some point."
 msgstr ""
-"有一个内置帮助器列表。 该列表几乎与GDScript中的列表相同 (@TODO, link to "
-"gdscript methods?) 。 其中大多数是数学函数，但其他人可能是有用的助手。 请务必"
-"在某个时候查看列表。"
+"有一个内置帮助器列表。该列表与 :ref:`GDScript<class_@GDScript>` 中的列表几乎"
+"相同。它们中的大多数是数学函数，但其他函数可能是有用的帮助器。请确保一定要看"
+"一下清单。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:404
 msgid "By Type"
@@ -716,20 +716,19 @@ msgid ""
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
 "most cases just search the list of nodes, it should be faster."
 msgstr ""
-"这些是基本类型可用的方法。例如，如果您想要一个点积，您可以搜索``点``而不是"
-"Vector3类型。在大多数情况下，只需搜索节点列表，就应该更快。"
+"这些是基本类型可用的方法。例如，如果您想要一个点积，您可以搜索 ``点（dot）`` "
+"而不是 ``Vector3`` 类型。在大多数情况下，只需搜索节点列表即可，它应该更快。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:411
 msgid "Call"
-msgstr "调用"
+msgstr "调用（``Call``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
 msgstr ""
-"这是通用调用节点。它很少直接使用，而是通过拖动到已配置的节点上的空白空间来使"
-"用。"
+"这是通用调用节点。很少直接使用它，而是通过拖动到已配置的节点上的空白处。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
@@ -742,7 +741,7 @@ msgid ""
 "be used."
 msgstr ""
 "这些是创建Godot基本数据类型所需的所有函数。例如，如果需要从3个浮点数中创建一"
-"个Vector3，则必须使用构造函数。"
+"个 ``Vector3``，则必须使用构造函数。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:425
 msgid "Destructor"
@@ -752,7 +751,8 @@ msgstr "析构函数"
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
-msgstr "这与构造函数相反，它允许将任何基本类型(即Vector3)分离到子元素中。"
+msgstr ""
+"这与构造函数相反，它允许将任何基本类型（即 ``Vector3``）分离到子元素中。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:433
 msgid "Emit Signal"
@@ -774,12 +774,12 @@ msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
-"通用的Getter/Setter节点。从属性面板中拖拽属性效果更好，因为在拖放时它们就被正"
-"确配置。"
+"通用的 ``Getter/Setter`` 节点。从属性检查器中拖拽属性效果更好，因为在拖放时它"
+"们就被正确配置。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
-msgstr "等待"
+msgstr "等待（``Wait``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid ""
@@ -788,12 +788,12 @@ msgid ""
 "you to wait for a frame to pass, a fixed frame or a given amount of time "
 "until execution is resumed."
 msgstr ""
-"等待节点将暂停执行函数直到发生某些事情(实际上，许多帧可以通过，直到恢复)。默"
-"认节点允许您等待帧通过、固定帧或给定的时间量，直到执行恢复为止。"
+"``Wait`` 节点将暂停执行函数直到发生某些事情（实际上，直到恢复，可以经过许多"
+"帧）。默认节点允许您等待经过一帧、一固定帧或给定的时间量，直到恢复执行为止。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 msgid "Yield"
-msgstr "Yield"
+msgstr "避让（``Yield``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -803,11 +803,11 @@ msgstr "这个节点完全暂停脚本的执行，它将使函数返回一个值
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:458
 msgid "Yield Signal"
-msgstr "Yield 信号"
+msgstr "``Yield`` 信号"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Same as Yield, but will wait until a given signal is emitted."
-msgstr "与Yield相同，但要等到一个给定的信号发出。"
+msgstr "与 ``Yield`` 相同，但要等到一个给定的信号发出。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
@@ -817,7 +817,7 @@ msgstr "索引"
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
-msgstr "泛型索引操作符，不常用，但它的存在是好的，以防万一。"
+msgstr "通用索引操作符，不常用，但它的存在是好的，以防万一。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:470
 msgid "Operators"
@@ -831,13 +831,14 @@ msgid ""
 "the operator). It is always recommended to set the right type for operators "
 "to catch errors faster and make the graph easier to read."
 msgstr ""
-"这些操作符主要是通用的操作符，如加法、乘法、比较等。默认情况下，这些操作符主"
-"要接受任何数据类型(如果输入的类型与操作符不匹配，则会在运行时出错)。建议始终"
-"为操作符设置正确的类型，以更快地捕捉错误并使图形更易于阅读。"
+"这些大多是通用运算符，例如加法、乘法、比较等。默认情况下，默认情况下，它们大"
+"多数都接受任何数据类型（如果输入的类型与操作符期望的类型不匹配，则在运行时将"
+"引发错误）。始终建议为操作符设置正确的类型，以更快地发现错误并使图形更易于阅"
+"读。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:481
 msgid "Expression Node"
-msgstr "表达式节点"
+msgstr "表达式（``Expression``）节点"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid ""
@@ -845,23 +846,24 @@ msgid ""
 "used, it allows you to enormously simplify visual scripts that are math or "
 "logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
-"在运算符中， *Expression* 节点是最强大的。 如果使用得当，它可以让您获得数学或"
-"逻辑繁重的视觉可视化脚本。 在其上键入任何表达式，它将实时执行。"
+"在运算符中， ``Expression`` 节点是最强大的。如果使用得当，它可以极大地简化数"
+"学或逻辑繁重的可视化脚本。在上面键入的任何表达式，它将实时执行。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:486
 msgid "Expression nodes can:"
-msgstr "表达式节点可以:"
+msgstr "表达式节点可以："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
 msgstr ""
-"基于自定义输入执行数学和逻辑表达式(例如:``a*5 + b``，其中a和b是自定义输入):"
+"根据自定义输入，执行数学和逻辑表达式（例如： ``a*5+b``，其中 ``a`` 和 ``b`` "
+"为自定义输入）："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:493
 msgid "Access local variables or properties:"
-msgstr "访问局部变量或属性:"
+msgstr "访问局部变量或属性："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:498
 msgid ""
@@ -869,15 +871,15 @@ msgid ""
 "such as sin(),cos(),print(), as well as constructors, such as Vector3(x,y,z),"
 "Rect2(..), etc.:"
 msgstr ""
-"使用GDScript可用的大多数现有内置函数，例如 sin(),cos(),print()，以及构造函"
-"数，例如Vector3(x，y，z)，Rect2(..) 等:"
+"使用GDScript可用的大多数现有内置函数，例如 ``sin()``、``cos()``、"
+"``print()``，以及构造函数，例如 ``Vector3(x，y，z)``、``Rect2(..)`` 等："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503
 msgid "Call API functions:"
-msgstr "调用API函数:"
+msgstr "调用API函数："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:508
 msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"
-msgstr "使用顺序模式，在遵守处理顺序的情况下更有意义:"
+msgstr "使用顺序模式，这在遵守处理顺序的情况下更有意义："

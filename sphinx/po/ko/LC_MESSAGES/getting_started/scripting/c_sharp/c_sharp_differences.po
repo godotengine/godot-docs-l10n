@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:22
 msgid "Constants"
-msgstr "상수(Constant)"
+msgstr "상수"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:24
 msgid ""
@@ -68,27 +68,27 @@ msgstr "특별한 경우:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:30
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:59
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:188
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:203
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:215
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:199
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:214
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:226
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:234
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:249
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:261
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:321
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:237
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:245
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:260
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:272
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 msgid "GDScript"
 msgstr "GDScript"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:30
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:59
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:188
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:203
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:215
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:199
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:214
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:226
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:234
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:249
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:261
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:321
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:237
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:245
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:260
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:272
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 msgid "C#"
 msgstr "C#"
 
@@ -189,11 +189,11 @@ msgstr ""
 "니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:90
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:121
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:92
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:132
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:144
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:305
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:143
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:316
 msgid "Example:"
 msgstr "예시:"
 
@@ -203,14 +203,17 @@ msgstr "Export 키워드"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:88
 msgid ""
-"Use the ``[Export]`` attribute instead of the GDScript ``export`` keyword."
-msgstr "GDScript의 ``export`` 키워드 대신 ``[Export]`` 속성을 사용합니다."
+"Use the ``[Export]`` attribute instead of the GDScript ``export`` keyword. "
+"This attribute can also be provided with optional :ref:"
+"`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
+"parameters. Default values can be set by assigning a value."
+msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:103
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:114
 msgid "Signal keyword"
 msgstr "Signal 키워드"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:105
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:116
 msgid ""
 "Use the ``[Signal]`` attribute to declare a signal instead of the GDScript "
 "``signal`` keyword. This attribute should be used on a `delegate`, whose "
@@ -220,15 +223,15 @@ msgstr ""
 "합니다. 이 속성은 `delegate`\\ 에 사용되어야 하며, 이름은 시그널을 정의하는 "
 "데 사용됩니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:113
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
 msgid "See also: :ref:`c_sharp_signals`"
 msgstr "이것도 보세요: :ref:`c_sharp_signals`"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:116
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
 msgstr "Singletons"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:118
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:129
 msgid ""
 "Singletons are available as static classes rather than using the singleton "
 "pattern. This is to make code less verbose than it would be with an "
@@ -238,7 +241,7 @@ msgstr ""
 "로 ``Instance`` 속성으로 작업하는 것과 비슷하면서도 더 적은 문장의 코드를 만"
 "들 수 있습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:138
 msgid ""
 "However, in some very rare cases this is not enough. For example, you may "
 "want to access a member from the base class ``Godot.Object``, like "
@@ -251,11 +254,11 @@ msgstr ""
 "런 경우를 위해, 싱글톤 인스턴스를 반환하는 ``Singleton`` 정적 속성을 제공합니"
 "다. 인스턴스의 타입은 ``Godot.Object``\\ 입니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:150
 msgid "String"
 msgstr "String"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:141
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:152
 msgid ""
 "Use ``System.String`` (``string``). Most of Godot's String methods are "
 "provided by the ``StringExtensions`` class as extension methods."
@@ -263,11 +266,11 @@ msgstr ""
 "``System.String`` (``string``)을 사용합니다. 모든 Godot 문자열 메서드는 "
 "``StringExtensions`` 클래스에서 확장 메서드 형태로 제공됩니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:151
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:162
 msgid "There are a few differences, though:"
 msgstr "하지만 몇 가지 차이점은 있습니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:153
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:164
 msgid ""
 "``erase``: Strings are immutable in C#, so we cannot modify the string "
 "passed to the extension method. For this reason, ``Erase`` was added as an "
@@ -279,7 +282,7 @@ msgstr ""
 "``StringBuilder``\\ 의 확장 메서드 형태로 추가되었습니다. 이를 대체하기 위해 "
 "``string.Remove``\\ 를 사용할 수 있습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:157
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:168
 msgid ""
 "``IsSubsequenceOf``/``IsSubsequenceOfi``: An additional method is provided, "
 "which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
@@ -289,7 +292,7 @@ msgstr ""
 "(overload)인 추가 메서드를 제공하여, 명시적으로 대소문자를 구분할 수 있습니"
 "다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:168
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:179
 msgid ""
 "``Match``/``Matchn``/``ExprMatch``: An additional method is provided besides "
 "``Match`` and ``Matchn``, which allows you to explicitly specify case "
@@ -298,11 +301,11 @@ msgstr ""
 "``Match``/``Matchn``/``ExprMatch``: ``Match``\\ 와 ``Matchn``\\ 이외에 추가 "
 "메서드를 제공하여, 명시적으로 대소문자를 구분할 수 있습니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:179
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 msgid "Basis"
 msgstr "Basis"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:181
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:192
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Basis()`` initializes all primitive members to their default value. Use "
@@ -312,26 +315,26 @@ msgstr ""
 "Basis()``\\ 는 모든 기본 멤버를 기본 값으로 초기화합니다. GDScript와 C++에서 "
 "``Basis()``\\ 에 해당하는 것으로 ``Basis.Identity``\\ 를 사용합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:185
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:231
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:196
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:242
 msgid "The following method was converted to a property with a different name:"
 msgstr "다음 메서드들는 다른 이름으로 변경된 속성들입니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:206
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:201
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
 msgid "``get_scale()``"
 msgstr "``get_scale()``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:206
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:201
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
 msgid "``Scale``"
 msgstr "``Scale``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:194
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
 msgid "Transform2D"
 msgstr "Transform2D"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:196
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:207
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Transform2D()`` initializes all primitive members to their default value. "
@@ -343,69 +346,69 @@ msgstr ""
 "+에서 ``Transform2D()``\\ 에 해당하는 것으로 ``Transform2D.Identity``\\ 를 사"
 "용해주세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:200
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:211
 msgid ""
 "The following methods were converted to properties with their respective "
 "names changed:"
 msgstr "다음 메서드들은 관련된 이름으로 변경된 속성들입니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:216
 msgid "``get_rotation()``"
 msgstr "``get_rotation()``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:216
 msgid "``Rotation``"
 msgstr "``Rotation``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:210
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:221
 msgid "Plane"
 msgstr "Plane"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:212
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
 msgid ""
 "The following method was converted to a property with a *slightly* different "
 "name:"
 msgstr "다음 메서드는 *약간* 다른 이름으로 변경된 속성입니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``center()``"
 msgstr "``center()``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``Center``"
 msgstr "``Center``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:221
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:232
 msgid "Rect2"
 msgstr "Rect2"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:234
 msgid ""
 "The following field was converted to a property with a *slightly* different "
 "name:"
 msgstr "다음 영역은 *약간* 다른 이름으로 변경된 속성입니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
 msgid "``end``"
 msgstr "``end``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
 msgid "``End``"
 msgstr "``End``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:236
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:247
 msgid "``get_area()``"
 msgstr "``get_area()``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:236
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:247
 msgid "``Area``"
 msgstr "``Area``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:240
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
 msgid "Quat"
 msgstr "Quat"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:242
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:253
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Quat()`` initializes all primitive members to their default value. Please "
@@ -415,32 +418,32 @@ msgstr ""
 "Quat()``\\ 는 모든 기본 멤버를 기본 값으로 초기화합니다. GDScript와 C++에서 "
 "``Quat()``\\ 에 해당하는 것으로 ``Quat.Identity``\\ 를 사용해주세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:246
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:257
 msgid ""
 "The following methods were converted to a property with a different name:"
 msgstr "다음 메서드는 다른 이름으로 변경된 속성들입니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
 msgid "``length()``"
 msgstr "``length()``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
 msgid "``Length``"
 msgstr "``Length``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``length_squared()``"
 msgstr "``length_squared()``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``LengthSquared``"
 msgstr "``LengthSquared``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:256
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
 msgid "Array"
 msgstr "배열"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:258
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
 msgid ""
 "*This is temporary. PoolArrays will need their own types to be used the way "
 "they are meant to.*"
@@ -448,72 +451,72 @@ msgstr ""
 "*이것은 일시적인 것입니다. PoolArray도 자신을 의미하는 자체적인 타입이 필요"
 "할 것입니다.*"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
 msgid "``Array``"
 msgstr "``Array``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
 #, fuzzy
 msgid "``Godot.Collections.Array``"
 msgstr "``Godot.Array``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
 msgid "``PoolIntArray``"
 msgstr "``PoolIntArray``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
 msgid "``int[]``"
 msgstr "``int[]``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:265
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:276
 msgid "``PoolByteArray``"
 msgstr "``PoolByteArray``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:265
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:276
 msgid "``byte[]``"
 msgstr "``byte[]``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:266
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
 msgid "``PoolFloatArray``"
 msgstr "``PoolFloatArray``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:266
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
 msgid "``float[]``"
 msgstr "``float[]``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:278
 msgid "``PoolStringArray``"
 msgstr "``PoolStringArray``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:278
 msgid "``String[]``"
 msgstr "``String[]``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:268
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 msgid "``PoolColorArray``"
 msgstr "``PoolColorArray``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:268
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 msgid "``Color[]``"
 msgstr "``Color[]``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:280
 msgid "``PoolVector2Array``"
 msgstr "``PoolVector2Array``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:280
 msgid "``Vector2[]``"
 msgstr "``Vector2[]``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:270
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid "``PoolVector3Array``"
 msgstr "``PoolVector3Array``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:270
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid "``Vector3[]``"
 msgstr "``Vector3[]``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:273
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:284
 #, fuzzy
 msgid ""
 "``Godot.Collections.Array<T>`` is a type-safe wrapper around ``Godot."
@@ -523,16 +526,16 @@ msgstr ""
 "``Godot.Array<T>``\\ 는 ``Godot.Array``\\ 를 둘러싸는 타입 안전 포장지입니"
 "다. 만들기 위해 ``Godot.Array<T>(Godot.Array)`` 생성자를 사용합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:288
 msgid "Dictionary"
 msgstr "딕셔너리"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:290
 #, fuzzy
 msgid "Use ``Godot.Collections.Dictionary``."
 msgstr "``Godot.Dictionary``\\ 를 사용합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:292
 #, fuzzy
 msgid ""
 "``Godot.Collections.Dictionary<T>`` is a type-safe wrapper around ``Godot."
@@ -543,19 +546,19 @@ msgstr ""
 "장지입니다. 만들기 위해 ``Godot.Dictionary<T>(Godot.Dictionary)`` 생성자를 사"
 "용합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:285
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:296
 msgid "Variant"
 msgstr "Variant"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:287
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:298
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
 msgstr "``Variant`` 대신 ``System.Object`` (``object``)를 사용하세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:290
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:301
 msgid "Communicating with other scripting languages"
 msgstr "다른 스크립팅 언어와 소통하기"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:292
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid ""
 "The methods ``object Object.Call(string method, params object[] args)``, "
 "``object Object.Get(string field)`` and ``object Object.Set(string field, "
@@ -567,11 +570,11 @@ msgstr ""
 "value)``\\ 는 Variant API를 통해 다른 스크립팅 언어의 인스턴스와 소통하기 위"
 "해 제공됩니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:298
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:309
 msgid "Yield"
 msgstr "Yield"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:300
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:311
 msgid ""
 "Something similar to GDScript's ``yield`` with a single parameter can be "
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
@@ -581,7 +584,7 @@ msgstr ""
 "<https://docs.microsoft.com/ko/dotnet/csharp/language-reference/keywords/"
 "yield>`_."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:314
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
@@ -589,11 +592,11 @@ msgstr ""
 "async/await와 ``Godot.Object.ToSignal``\\로 시그널에서 yield와 동일한 효과를 "
 "얻을 수 있습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:313
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:324
 msgid "Other differences"
 msgstr "다른 차이점"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:315
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
 msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
@@ -601,43 +604,43 @@ msgstr ""
 "GDScript에서 쓰이는 ``preload``\\ 는 C#에서 사용할 수 없습니다. 대신 ``GD."
 "Load`` 또는 ``ResourceLoader.Load``\\ 를 사용합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:329
 msgid "Other differences:"
 msgstr "다른 차이점:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
 msgid "``Color8``"
 msgstr "``Color8``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
 msgid "``Color.Color8``"
 msgstr "``Color.Color8``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:324
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 msgid "``is_inf``"
 msgstr "``is_inf``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:324
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 msgid "``float.IsInfinity``"
 msgstr "``float.IsInfinity``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:325
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:336
 msgid "``is_nan``"
 msgstr "``is_nan``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:325
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:336
 msgid "``float.IsNaN``"
 msgstr "``float.IsNaN``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:337
 msgid "``dict2inst``"
 msgstr "``dict2inst``"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:327
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:337
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:338
 msgid "TODO"
 msgstr "TODO"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:327
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:338
 msgid "``inst2dict``"
 msgstr "``inst2dict``"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -336,6 +336,7 @@ msgstr "Tonemap"
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:353
 msgid "*This feature is only available when using the GLES3 backend.*"
 msgstr ""
+"*Cette fonction est disponible uniquement en utilisant l'arrière-plan GLES3*"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:141
 msgid ""
@@ -678,12 +679,18 @@ msgstr ""
 "Certains artistes préfèrent cet effet."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:259
+#, fuzzy
 msgid ""
 "**Ao Channel Affect:** If a value of zero is used, only the material's AO "
 "texture will be used for ambient occlusion; SSAO will not be applied. Values "
 "greater than 0 multiply the AO texture by the SSAO effect to varying "
 "degrees. This does not affect materials without an AO texture."
 msgstr ""
+"**Ao Channel Affect:** Si une valeur de zero est utilisée, seul le matériel "
+"de la texture AO sera utilisé pour l'occlusion ambiante; la SSAO ne sera pas "
+"appliqué. Des valeurs supérieures à zero multiplie la texture AO avec "
+"l'effet SSAO à des degrés variables. Cela n'affecte pas les matériel qui ne "
+"possède pas de texture AO."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:260
 msgid ""

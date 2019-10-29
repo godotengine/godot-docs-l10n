@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,6 +61,8 @@ msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
+"セーブしたシーンは、他のノードと同じように別のシーンでインスタンス化できま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
@@ -137,7 +139,7 @@ msgstr "「再生」を押して、ボールが画面の下部に落ちるのを
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple instances"
-msgstr ""
+msgstr "複数のインスタンス"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
 msgid ""
@@ -161,12 +163,14 @@ msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
+"ボールのシーンを開いて、下向きの矢印をクリックし、New PhysicsMaterialを選ん"
+"で、PhysicsMaterialを追加します。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
-msgstr ""
+msgstr "そして、PhysicsMaterialを押してBounceプロパティを1にします。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
 msgid ""
@@ -174,6 +178,9 @@ msgid ""
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
+"Playを押してください。インスタンス化された全部のボールがより弾むようになりま"
+"した。インスタンス化されたボールはセーブした同じシーンに基づくので、そのシー"
+"ンを変更するとすべてのインスタンスに影響を与えます。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
 msgid ""
@@ -183,6 +190,11 @@ msgid ""
 "to make it unique. Click on the down arrow and select \"Make Unique\". Set "
 "its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
+"個々のインスタンスを調整することもできます。 bounceの値を0に戻して、メイン"
+"シーンでインスタンス化したボールを一つ選んでください。PhysicsMaterial のよう"
+"なリソースはデフォルトでインスタンス間で共有されます。したがって、それをユ"
+"ニークにする必要があります。下向きの矢印を押して、Make Uniqueを選んでくださ"
+"い。そのBounceを1にセットしてPlayを押してください。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:115
 msgid ""
@@ -209,3 +221,6 @@ msgid ""
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_instancing_continued`."
 msgstr ""
+"同じオブジェクトのコピーを作りたいとき、インスタンス化は便利です。また"
+"GDScriptを使ってコードでインスタンスを作ることもできます。:ref:"
+"`doc_instancing`の続きを御覧ください。"

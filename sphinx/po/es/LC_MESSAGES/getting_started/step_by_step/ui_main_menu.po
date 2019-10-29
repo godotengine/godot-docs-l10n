@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,6 +67,12 @@ msgstr ""
 "``start/`` en Godot para seguir este tutorial. La carpeta ``end/`` contiene "
 "el resultado final. Encontrarás todos los sprites en la carpeta ``start/"
 "assets/main_menu``."
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
+msgid ""
+"Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
+"UI system works"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:33
 msgid "How to design your game UI"
@@ -313,14 +319,13 @@ msgid "Margin Bottom: *80*"
 msgstr "Margin Bottom: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:140
-#, fuzzy
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the ``Layout`` menu and select the last option, ``Full Rect``."
 msgstr ""
-"Queremos que el container quepa en la ventana. En la ventana de "
-"visualización, abre el menú ``Disposición`` y selecciona la última opción, "
-"``Full Rect``."
+"Queremos que el container se ajuste a la ventana. En la barra de "
+"herramientas encima del Viewport, abre el menú ``Layout`` y selecciona la "
+"última opción, ``Full Rect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:144
 msgid "Add the UI sprites"
@@ -378,7 +383,6 @@ msgid "The file browser lets you find and load textures"
 msgstr "El navegador de archivos te permite encontrar y cargar texturas"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:167
-#, fuzzy
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
@@ -386,10 +390,12 @@ msgid ""
 "rename them. Nothing has been placed in containers yet so this should look "
 "messy."
 msgstr ""
-"Repite la operación para todos los nodos ``TextureRect``. Debe tener el "
+"Repite la operación con todos los nodos ``TextureRect``. Debe tener el "
 "logotipo, la ilustración, las tres opciones de menú y la nota de versión, "
 "cada una como un nodo separado. A continuación, haz doble clic en cada uno "
-"de los nodos de la pestaña Escenas para cambiarles el nombre."
+"de los nodos de la pestaña Escenas para cambiarles el nombre. Todavía no se "
+"ha colocado nada en los contenedores, por lo que esto debería parecer un "
+"desastre."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:175
 msgid "The six nodes, with textures loaded"

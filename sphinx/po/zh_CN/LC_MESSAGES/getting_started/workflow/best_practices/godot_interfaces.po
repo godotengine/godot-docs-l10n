@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,32 +18,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:4
-#, fuzzy
 msgid "Godot interfaces"
-msgstr "调整界面"
+msgstr "Godot接口"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:6
 msgid ""
 "Often one needs scripts that rely on other objects for features. There are 2 "
 "parts to this process:"
-msgstr "通常需要依赖于其他对象的脚本来提供特性。这个过程分为两部分："
+msgstr "通常，需要依赖于功能的其他对象的脚本。这个过程分为两部分："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:9
 msgid "Acquiring a reference to the object that presumably has the features."
-msgstr "获取对可能具有这些特性的对象的引用。"
+msgstr "获取对可能具有这些功能的对象的引用。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:11
 msgid "Accessing the data or logic from the object."
-msgstr "处理来自对象的数据或逻辑。"
+msgstr "从对象访问数据或逻辑。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:13
 msgid "The rest of this tutorial outlines the various ways of doing all this."
-msgstr "本教程的其余部分，概述了实现这一切的各种方法。"
+msgstr "本教程的其余部分，概述了完成所有这些操作的各种方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:16
-#, fuzzy
 msgid "Acquiring object references"
-msgstr "动画面板参考"
+msgstr "获取对象引用"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:18
 msgid ""
@@ -51,8 +49,8 @@ msgid ""
 "them is to get a reference to an existing object from another acquired "
 "instance."
 msgstr ""
-"对所有:参考:`对象<类_对象>`来说，引用它们最基本的方法，是从另一个获取的实例中"
-"获取对现有对象的引用。"
+"对所有 :ref:`Object <class_Object>` 来说，引用它们最基本的方法，是从另一个获"
+"取的实例中，获取对现有对象的引用。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:32
 msgid ""
@@ -60,18 +58,18 @@ msgid ""
 "While users often access :ref:`Node <class_Node>` and :ref:`Resource "
 "<class_Resource>` this way, alternative measures are available."
 msgstr ""
-"同样的原则也适用于:参考:`引用<类_引用>`对象。虽然用户经常以这种方式访问:参考:"
-"`节点<类_节点>`和:参考:`资源<类_资源>`，还可以采取其他措施。"
+"同样的原则也适用于 :ref:`Reference <class_Reference>` 对象。虽然用户经常以这"
+"种方式访问 :ref:`Node <class_Node>` 和 :ref:`Resource <class_Resource>`，还可"
+"以采取其他措施。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:36
 msgid ""
 "Instead of property or method access, one can get Resources by load access."
-msgstr "而不是属性或方法访问，可以通过加载访问获得资源。"
+msgstr "代替属性或方法访问，可以通过加载访问获得 ``Resource``。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:115
-#, fuzzy
 msgid "Note the following:"
-msgstr "使用以下名称:"
+msgstr "请注意以下几点："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:117
 msgid "There are many ways in which a language can load such resources."
@@ -90,8 +88,9 @@ msgid ""
 "<class_Resource_method_duplicate>` an existing reference or instantiate one "
 "from scratch with ``new()``."
 msgstr ""
-"请记住，加载资源将获取引擎维护的缓存资源实例。要获取一个新对象，必须:参考:`复"
-"制<类_资源_方法_复制>`一个现有引用，或者使用``new()``从头实例化一个引用。"
+"请记住，加载资源将获取引擎维护的缓存资源实例。要获取一个新对象，必须 :ref:`复"
+"制 <class_Resource_method_duplicate>` 一个现有引用，或者使用 ``new()`` 从头实"
+"例化一个引用。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:127
 msgid "Nodes likewise have an alternative access point: the SceneTree."
@@ -99,7 +98,7 @@ msgstr "节点也有一个可选的访问点：场景树。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:242
 msgid "Accessing data or logic from an object"
-msgstr "处理来自对象的数据或逻辑"
+msgstr "从对象访问数据或逻辑"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
 msgid ""
@@ -108,8 +107,8 @@ msgid ""
 "**type**. It instead checks that the object **implements** the individual "
 "method."
 msgstr ""
-"Godot的脚本API是隐藏类型。这意味着如果脚本执行某个操作，Godot不验证它是否支持"
-"**类型**操作。相反，它检查对象**实现**的单独方法。"
+"Godot的脚本API是鸭子类型。这意味着，如果脚本执行操作，则Godot不会通过 **类型"
+"** 验证其是否支持该操作。相反，它检查对象是否 **实现** 了单个方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:248
 msgid ""
@@ -119,9 +118,10 @@ msgid ""
 "`CanvasItem.visible <class_CanvasItem_property_visible>`, then Godot would "
 "do the following checks, in order:"
 msgstr ""
-"例如，:参考:`画布组件 <类_画布组件>`类有一个“可见性”的属性。暴露给脚本API的所"
-"有属性，实际上都是绑定到名称的设值函数和取值函数对。如果有人试图访问:参考:`画"
-"布组件.可见性 <类_画布组件_属性_可见性>`，那么Godot会按照以下顺序进行检查："
+"例如，:ref:`CanvasItem <class_CanvasItem>` 类有一个 ``visible`` 的属性。实际"
+"上，脚本API公开的所有属性，都是绑定到名称的 ``setter`` 和 ``getter`` 对。如果"
+"有人试图访问 :ref:`CanvasItem.visible <class_CanvasItem_property_visible>`，"
+"那么Godot会按照以下顺序进行检查："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:254
 msgid ""
@@ -130,8 +130,8 @@ msgid ""
 "a property defined on a base object by overriding the setter method for the "
 "property."
 msgstr ""
-"如果对象附加了脚本，它将尝试通过脚本设置属性。这就为脚本提供了重写基础对象上"
-"定义的属性的机会，方法是重写属性的设值函数方法。"
+"如果对象附加了脚本，它将尝试通过脚本设置属性。通过覆盖属性的 ``setter`` 方"
+"法，这为脚本提供了覆盖基础对象上定义的属性的机会。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:259
 msgid ""
@@ -141,15 +141,18 @@ msgid ""
 "getter. For more information about HashMaps, see the :ref:`data preferences "
 "<doc_data_preferences>` docs."
 msgstr ""
-"如果脚本没有该属性，它在类数据库中对画布组件类及其所有继承类型执行“可见性”属"
-"性的哈希表查找。如果找到，它将调用绑定的设值函数或取值函数。有关哈希表的更多"
-"信息，参见:参考:`数据偏好<文档_数据_偏好>`文档。"
+"如果脚本没有该属性，它在 ``ClassDB`` 中对 ``CanvasItem`` 类及其所有继承的类型"
+"执行 ``visible`` 属性的哈希表查找。如果找到，它将调用绑定的 ``setter`` 或 "
+"``getter``。有关哈希表的更多信息，参见 :ref:`数据偏好 "
+"<doc_data_preferences>` 文档。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:265
 msgid ""
 "If not found, it does an explicit check to see if the user wants to access "
 "the \"script\" or \"meta\" properties."
-msgstr "如果没有找到，它会显式地检查用户是否想要访问“脚本”或“元”属性。"
+msgstr ""
+"如果没有找到，它会进行显式检查，以查看用户是否要访问 ``script`` 或 ``meta`` "
+"属性。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:268
 msgid ""
@@ -158,9 +161,9 @@ msgid ""
 "execute logic that gives the impression that the Object has a property. This "
 "is also the case with the ``_get_property_list`` method."
 msgstr ""
-"如果没有，它将检查画布组件中的``_设值``/``_取值``实现(取决于访问的类型)及其继"
-"承类型。这些方法可以执行逻辑，从而给人一种对象具有属性的印象。``_获取_属性_列"
-"表``方法也是如此。"
+"如果没有，它将在 ``CanvasItem`` 及其继承的类型中检查 ``_set``/``_get`` 实现"
+"（取决于访问类型）。这些方法可以执行逻辑，从而给人一种对象具有属性的印象。"
+"``_get_property_list`` 方法也是如此。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:273
 msgid ""
@@ -169,6 +172,9 @@ msgid ""
 "the name of the tile with ID 1, i.e. :ref:`TileSet.tile_get_name(1) "
 "<class_TileSet_method_tile_get_name>`."
 msgstr ""
+"请注意，即使对于非合法的符号名称，例如 :ref:`TileSet <class_TileSet>` 的 ``1/"
+"tile_name`` 属性，这种情况也会发生。这是指ID为1的 ``tile`` 的名称，即 :ref:"
+"`TileSet.tile_get_name(1) <class_TileSet_method_tile_get_name>`。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:278
 msgid ""
@@ -176,22 +182,22 @@ msgid ""
 "script, the object's class, or any class that object inherits, but only for "
 "things which extend Object."
 msgstr ""
-"因此，这个隐藏类型系统可以在脚本中找到一个属性，对象的类，或对象继承的任何"
-"类，但仅适用于扩展对象的对象。"
+"因此，这个鸭子类型的系统可以在脚本、对象的类、或对象继承的任何类、但只能用于"
+"扩展Object的对象中，定位属性。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:282
 msgid ""
 "Godot provides a variety of options for performing runtime checks on these "
 "accesses:"
-msgstr "Godot提供了多种选项，来执行这些访问的运行时检查："
+msgstr "Godot提供了多种选项，来对这些访问，执行运行时检查："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:285
 msgid ""
 "A duck-typed property access. These will property check (as described "
 "above). If the operation isn't supported by the object, execution will halt."
 msgstr ""
-"隐藏类型的属性访问。这些将检查属性(如上所述)。如果对象不支持该操作，将停止执"
-"行。"
+"鸭子类型属性的访问。这些将进行属性检查（如上所述）。如果对象不支持该操作，则"
+"执行将停止。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:313
 msgid ""
@@ -199,8 +205,9 @@ msgid ""
 "<class_CanvasItem_property_visible>`, one can access the methods, "
 "``set_visible`` and ``is_visible`` like any other method."
 msgstr ""
-"一种检查方法。在:参考:`画布组件.可见性 <类_画布组件_属性_可见性>`的情况下，我"
-"们可以访问这些方法，``设置_可见性``和``为_可见性``与任何其他方法一样。"
+"一个方法检查。在 :ref:`CanvasItem.visible "
+"<class_CanvasItem_property_visible>` 的情况下，我们可以像访问任何其他方法一"
+"样，访问这些方法，``set_visible`` 和 ``is_visible`` 。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:445
 msgid ""
@@ -208,6 +215,9 @@ msgid ""
 "useful in cases where one needs the max level of freedom from dependencies. "
 "In this case, one relies on an external context to setup the method."
 msgstr ""
+"将访问权限外包给 :ref:`FuncRef <class_FuncRef>`。在人们需要最大程度地摆脱依赖"
+"的情况下，这些方法可能会很有用。在这种情况下，需要依靠外部上下文来设置此方"
+"法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:504
 msgid ""

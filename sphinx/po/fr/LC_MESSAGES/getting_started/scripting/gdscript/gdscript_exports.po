@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,6 @@ msgstr ""
 "fait en utilisant le mot clé ``export`` :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
-#, fuzzy
 msgid ""
 "An exported variable must be initialized to a constant expression or have an "
 "export hint in the form of an argument to the ``export`` keyword (see the "
@@ -50,7 +49,7 @@ msgid ""
 msgstr ""
 "Une variable exportée doit être initialisée à une expression constante ou "
 "avoir une indication d'exportation sous la forme d'un argument au mot-clé "
-"d'exportation (voir ci-dessous)."
+"d'exportation (voir les examples  ci-dessous)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
 msgid ""
@@ -70,10 +69,12 @@ msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
 "syntax varies depending on the language."
 msgstr ""
+"L'export de propriété fonctionne également dans d'autres langages comme le "
+"C#. La syntaxe varie en fonction du langage."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
 msgid "Examples"
-msgstr ""
+msgstr "Exemples"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
 #, fuzzy
@@ -91,14 +92,13 @@ msgid "Exporting bit flags"
 msgstr "Exportation des indicateurs binaires"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
 "set from the editor::"
 msgstr ""
-"Les nombres entiers utilisés comme bits de drapeaux peuvent stocker "
-"plusieurs valeurs ``vrai``/``false`` (booléen) en une propriété. En "
+"Les nombres entiers utilisés comme bits de drapeaux (bitflags) peuvent "
+"stocker plusieurs valeurs ``vrai``/``faux`` (booléen) en une propriété. En "
 "utilisant l'indication d'exportation ``int, FLAGS``, ils peuvent être "
 "changés dans l'éditeur :"
 
@@ -136,7 +136,6 @@ msgid "Exporting arrays"
 msgstr "Exportation de tableaux"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
-#, fuzzy
 msgid ""
 "Exporting arrays works, but with an important caveat: while regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -145,9 +144,9 @@ msgid ""
 "initializers, but they must be constant expressions."
 msgstr ""
 "L'exportation des tableaux fonctionne mais avec une mise en garde "
-"importante : alors que les tableaux réguliers sont créés en local pour "
-"chaque instance de classe, les tableaux exportés sont *partagés* entre "
-"toutes les instances. Cela signifie que le fait de les éditer dans une "
-"instance les fera changer dans toutes les autres instances. Les tableaux "
-"exportés peuvent avoir des initialisateurs, mais ceux-ci doivent être des "
-"expressions constantes."
+"importante : alors que les tableaux normaux sont créés en local pour chaque "
+"instance de classe, les tableaux exportés sont *partagés* entre toutes les "
+"instances. Cela signifie que le fait de les éditer dans une instance les "
+"fera changer dans toutes les autres instances. Les tableaux exportés peuvent "
+"avoir des initialisateurs, mais ceux-ci doivent être des expressions "
+"constantes."

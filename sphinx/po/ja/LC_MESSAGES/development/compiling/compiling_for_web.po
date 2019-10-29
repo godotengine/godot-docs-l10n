@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:4
 msgid "Compiling for the Web"
-msgstr ""
+msgstr "Web用のコンパイル"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:9
 msgid "Requirements"
@@ -27,7 +27,7 @@ msgstr "必要条件"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:11
 msgid "To compile export templates for the Web, the following is required:"
-msgstr ""
+msgstr "Webのエクスポートテンプレートをコンパイルするには、次のことが必要です:"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:13
 msgid ""
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:16
 msgid "`Python 2.7+ or Python 3.5+ <https://www.python.org/>`__"
-msgstr ""
+msgstr "`Python 2.7+ 若しくは Python 3.5+ <https://www.python.org/>`_"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:17
 msgid "`SCons <https://www.scons.org>`__ build system"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:23
 msgid "Building export templates"
-msgstr ""
+msgstr "エクスポートテンプレートの構築"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:25
 msgid ""
@@ -64,6 +64,12 @@ msgid ""
 "``emsdk activate latest``, or by your package manager. It's also created "
 "when starting Emscripten's ``emcc`` program if the file doesn't exist."
 msgstr ""
+"開始する前に、Emscripten構成ファイルが存在することを確認し、すべての設定を正"
+"しく指定します。このファイルは、UNIX ライクなシステムでは``~/.emscripten`` 、"
+"Windows では ``%USERPROFILE%\\.emscripten`` として使用できます。通常は"
+"Emscripten SDKで書かれていて、例えば ``emsdk activate latest`` を起動した時"
+"や、またはパッケージマネージャによって呼び出す場合、また、ファイルが存在しな"
+"い場合、Emscriptenの ``emcc`` プログラムを開始するときに作成されます。"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:32
 msgid ""
@@ -79,6 +85,10 @@ msgid ""
 "``target`` as either ``release`` for a release build or ``release_debug`` "
 "for a debug build::"
 msgstr ""
+"ターミナルを開き、エンジンソース コードのルートディレクトリに移動します。次"
+"に、SConsにJavaScriptプラットフォームの構築を指示します。 ``target`` をリリー"
+"ス ビルドの ``release`` またはデバッグ ビルドの ``release_debug`` として指定"
+"します:"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:43
 msgid ""
@@ -86,6 +96,10 @@ msgid ""
 "built into the engine. Since ``eval()`` calls can be a security concern, the "
 "``javascript_eval`` option can be used to build without the singleton::"
 msgstr ""
+"デフォルトでは、\\ :ref:`JavaScriptシングルトン <doc_javascript_eval>`\\ がエ"
+"ンジンに組み込まれます。 ``eval()`` '呼び出しはセキュリティ上の問題になる可能"
+"性があるため、 ``javascript_eval`` オプションを使用してシングルトンなしでビル"
+"ドできます:"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:50
 msgid ""
@@ -94,20 +108,26 @@ msgid ""
 "``godot.javascript.opt.zip`` for release or ``godot.javascript.opt.debug."
 "zip`` for debug."
 msgstr ""
+"これで、エンジンはEmscriptenによってWebAssemblyにコンパイルされます。完了する"
+"と、結果のファイルは ``bin`` サブディレクトリに配置されます。名前は ``godot."
+"javascript.opt.zip`` (リリース用)か、``godot.javascript.opt.debug.zip``(デ"
+"バッグ用)です。"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:55
 msgid ""
 "Finally, rename the zip archive to ``webassembly_release.zip`` for the "
 "release template::"
 msgstr ""
+"最後に、リリース テンプレートのzipアーカイブの名前を ``webassembly_release."
+"zip`` に変更します:"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:60
 msgid "And ``webassembly_debug.zip`` for the debug template::"
-msgstr ""
+msgstr "デバッグテンプレートの ``webassembly_debug.zip`` :"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:65
 msgid "Building per asm.js translation or LLVM backend"
-msgstr ""
+msgstr "\\ asm.js変換または LLVMバックエンドごとのビルド"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:67
 msgid ""
@@ -117,6 +137,11 @@ msgid ""
 "tool called ``asm2wasm``. Emscripten automatically takes care of both "
 "processes, we simply run SCons."
 msgstr ""
+"WebAssemblyは2つの方法でコンパイルできます。デフォルトでは、EmscriptenのLLVM"
+"の\\ *fastcomp*\\ フォークを使用して、JavaScriptの高度に最適化可能なサブセッ"
+"トであるasm.jsに最初にコンパイルします。 このコードは、 ``asm2wasm`` という"
+"ツールを使用してWebAssemblyに変換されます。 Emscriptenは両方のプロセスを自動"
+"的に処理します。SConsを実行するだけです。"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:73
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -372,6 +372,11 @@ msgstr ""
 msgid "ivec2 **textureSize** ( sampler2D_type s, int lod )"
 msgstr ""
 
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:170
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:172
+msgid "See workaround below"
+msgstr ""
+
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:172
 msgid "ivec2 **textureSize** ( samplerCube s, int lod )"
 msgstr ""
@@ -441,7 +446,17 @@ msgstr ""
 msgid "vec_type **fwidth** ( vec_type )"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:199
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:200
+msgid "``textureSize()`` workaround"
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:202
+msgid ""
+"GLES2 does not support ``textureSize()``. You can get the size of a texture "
+"the old fashioned way by passing in a uniform with the texture size yourself."
+msgstr ""
+
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:218
 msgid ""
 "Godot also provides many built-in variables and render modes. Some cannot be "
 "supported in GLES2. Below is a list of built-in variables and render modes "
@@ -449,31 +464,31 @@ msgid ""
 "using the GLES2 backend."
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:204
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:223
 #, fuzzy
 msgid "Variable / Render Mode"
 msgstr "Обробка"
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:206
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:225
 msgid "``ensure_correct_normals``"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:208
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:227
 msgid "``INSTANCE_ID``"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:210
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:229
 msgid "``DEPTH``"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:212
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:231
 msgid "``ANISOTROPY``"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:214
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:233
 msgid "``ANISOTROPY_FLOW``"
 msgstr ""
 
-#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:216
+#: ../../docs/tutorials/misc/gles2_gles3_differences.rst:235
 msgid "``SSS_STRENGTH``"
 msgstr ""

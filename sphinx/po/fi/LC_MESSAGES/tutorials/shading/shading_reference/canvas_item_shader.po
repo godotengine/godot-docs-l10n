@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
 msgid "Vertex built-ins"
-msgstr ""
+msgstr "Kärkipisteen valmismuuttujat"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:41
 msgid ""
@@ -173,6 +173,8 @@ msgid ""
 "Other built-ins, such as UV and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr ""
+"Muut valmismuuttujat, kuten UV ja COLOR, kulkevat myös fragment funktion "
+"läpi ellei niitä muokata."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:87
 msgid ""
@@ -299,7 +301,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:123
 msgid "Fragment built-ins"
-msgstr ""
+msgstr "Kuvapisteen valmismuuttujat"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:125
 msgid ""
@@ -430,9 +432,8 @@ msgid "Screen texture, mipmaps contain gaussian blurred versions."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
-#, fuzzy
 msgid "Light built-ins"
-msgstr "valon animaatio"
+msgstr "Valon valmismuuttujat"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:186
 msgid ""
@@ -497,46 +498,57 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
 msgid ""
-"Vector from light to fragment, can be modified to alter shadow computation."
+"Vector from light to fragment in local coordinates. It can be modified to "
+"alter illumination direction when normal maps are used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:224
+msgid "inout vec2 **SHADOW_VEC**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:224
+msgid ""
+"Vector from light to fragment in local coordinates. It can be modified to "
+"alter shadow computation."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid "inout float **LIGHT_HEIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid "Height of Light. Only effective when normals are used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
 msgid "inout vec4 **LIGHT_COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
 msgid "Color of Light."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
 msgid "in vec2 **LIGHT_UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
 msgid "UV for Light texture."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
 msgid "out vec4 **SHADOW_COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
 msgid "Shadow Color of Light."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:235
 msgid "inout vec4 **LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:235
 msgid ""
 "Value from the Light texture and output color. Can be modified. If not used, "
 "the light function is ignored."

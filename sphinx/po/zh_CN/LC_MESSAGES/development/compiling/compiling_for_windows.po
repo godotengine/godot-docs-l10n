@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,47 +27,47 @@ msgstr "需求"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:11
 msgid "For compiling under Windows, the following is required:"
-msgstr "要在Windows下进行编译，需要以下内容:"
+msgstr "要在Windows下进行编译，需要以下内容："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:13
-#, fuzzy
 msgid ""
 "`Visual Studio Community <https://www.visualstudio.com/vs/community/>`_, "
 "version 2015 (14.0) or later. **Make sure to read \"Installing Visual Studio "
 "caveats\" below or you will have to run/download the installer again.**"
 msgstr ""
-"Visual C++，`Visual Studio社区 <https://www.visualstudio.com/vs/community/"
-">`__ (推荐)，版本2013(12.0)或更高版本。 **请确保阅读下面的安装Visual Studio警"
-"告，或者您必须再次运行/下载安装程序。**"
+"`Visual Studio社区版 <https://www.visualstudio.com/vs/community/>`_，版本"
+"2015 （14.0） 或更高版本。**请务必阅读下面的“安装Visual Studio注意事项”，否则"
+"您将不得不再次运行/下载安装程序。**"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:17
 msgid "MinGW-w64 can be used as an alternative to Visual Studio."
-msgstr ""
+msgstr "MinGW-w64可以替代Visual Studio。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:18
-#, fuzzy
 msgid ""
 "`Python 3.5+ (recommended) or Python 2.7+. <https://www.python.org/downloads/"
 "windows/>`_"
-msgstr "`Python 2.7+或Python 3.5+ <https://www.python.org/downloads/>`__"
+msgstr ""
+"`Python 3.5+ （推荐） 或 Python 2.7+ <https://www.python.org/downloads/"
+"windows/>`_"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:19
-#, fuzzy
 msgid "`SCons <https://www.scons.org>`_ build system."
-msgstr "`SCons <https://www.scons.org>`__构建系统。"
+msgstr "`SCons <https://www.scons.org>`__ 构建系统。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:20
-#, fuzzy
 msgid ""
 "*Optional* - `yasm <https://yasm.tortall.net/>`_ (for WebM SIMD "
 "optimizations)"
-msgstr "*可选* - yasm(用于WebM SIMD优化)"
+msgstr "*可选* - `yasm <https://yasm.tortall.net/>`_ （用于WebM SIMD优化）"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:22
 msgid ""
 "If you have `Scoop <https://scoop.sh/>`_ installed, you can easily install "
 "MinGW and other dependencies using the following command::"
 msgstr ""
+"如果您已安装 `Scoop <https://scoop.sh/>`_，则可以使用以下命令轻松安装MinGW和"
+"其他依赖项："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:27
 msgid ""
@@ -87,85 +87,86 @@ msgid ""
 "Python installer. The SCons installer should then detect and use the "
 "existing Python installation."
 msgstr ""
+"首先，请确保启用Python安装程序中的将Python添加到 ``PATH`` 选项。然后，SCons安"
+"装程序应检测并使用现有的Python安装。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:37
-#, fuzzy
 msgid ""
 "To check whether you have installed Python and SCons correctly, you can type "
 "``python --version`` and ``scons --version`` into a command prompt (``cmd."
 "exe``)."
 msgstr ""
-"要检查是否已正确安装Python和SCons，可以在Windows命令提示符(``cmd.exe``)中键入"
-"``python --version``和``scons --version``。"
+"要检查是否已正确安装Python和SCons，可以在命令提示符 （``cmd.exe``） 中键入 "
+"``python --version`` 和 ``scons --version``。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:41
-#, fuzzy
 msgid ""
 "If the commands above don't work, make sure to add Python to your ``PATH`` "
 "environment variable after installing it, then check again. You can do so by "
 "running the Python installer again and enabling the option to add Python to "
 "the ``PATH``."
 msgstr ""
-"如果上面的命令不起作用，请确保在安装后将Python添加到PATH环境变量中，然后再次"
-"检查。"
+"如果上面的命令不起作用，请确保在安装后将Python添加到 ``PATH`` 环境变量中，然"
+"后再次检查。为此，您可以再次运行Python安装程序并启用将Python添加到 ``PATH`` "
+"的选项。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:49
 msgid "Installing Visual Studio caveats"
-msgstr "安装Visual Studio警告"
+msgstr "安装Visual Studio注意事项"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:51
 msgid ""
 "If installing Visual Studio 2017 or 2019, make sure to enable **C++** in the "
 "list of workflows to install."
 msgstr ""
+"如果安装Visual Studio 2017或2019，请确保启用要安装的工作流程列表中的 **C+"
+"+** 。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:54
 msgid ""
 "If installing Visual Studio 2015, make sure to run a **Custom** installation "
 "instead of **Typical** and select **C++** as a language there."
 msgstr ""
+"如果安装Visual Studio 2015，请确保运行 **自定义** 安装而不是 **典型** 安装，"
+"然后选择 **C++** 作为语言。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:57
-#, fuzzy
 msgid ""
 "If you've already made the mistake of installing Visual Studio without C++ "
 "support, run the installer again; it should present you a **Modify** button. "
 "Running the installer from *Add/Remove Programs* will only give you a "
 "**Repair** option, which won't let you install C++ tools."
 msgstr ""
-"如果您已经错误地安装了 **典型** ，安装，重新运行从Internet下载的可执行安装程"
-"序，它将为您提供 **修改** 按钮选项。 从“添加/删除程序”运行安装只会为您提供“修"
-"复”选项，该选项对您的问题无效。"
+"如果您已经犯了在没有C++支持的情况下安装Visual Studio的错误，请再次运行安装程"
+"序；它将为您提供一个 **修改** 按钮。从 *添加/删除程序* 中运行安装程序只会给您"
+"提供 **修复** 选项，而该选项将不允许您安装C++工具。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:63
 msgid "Downloading Godot's source"
-msgstr "下载Godot的来源"
+msgstr "下载Godot的源代码"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:65
-#, fuzzy
 msgid ""
 "Godot's source code is `hosted on GitHub <https://github.com/godotengine/"
 "godot>`_. Downloading it (cloning) using `Git <https://git-scm.com/>`_ is "
 "recommended."
 msgstr ""
-"`Godot的 <https://github.com/godotengine/godot>`__来源托管在GitHub上。 建议通"
-"过`Git <https://git-scm.com/>`__下载(克隆)。"
+"Godot的源代码位于 `GitHub <https://github.com/godotengine/godot>`_ 上。建议使"
+"用 `Git <https://git-scm.com/>`_ 下载（克隆）。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:68
-#, fuzzy
 msgid ""
 "The tutorial will assume from now on that you placed the source code in ``C:"
 "\\godot``."
-msgstr "从现在开始，本教程将假设您将源放入``C:\\ godot``。"
+msgstr "从现在开始，本教程将假设您将源代码放在 ``C:\\ godot``。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:72
 msgid "Compiling"
 msgstr "开始编译"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:75
-#, fuzzy
 msgid "Selecting a compiler"
-msgstr "一个C编译器"
+msgstr "选择编译器"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:77
 msgid ""
@@ -174,6 +175,9 @@ msgid ""
 "use MinGW instead. If you already have Visual Studio installed and want to "
 "use MinGW, pass ``use_mingw=yes`` to the SCons command line."
 msgstr ""
+"SCons将自动查找并使用现有的Visual Studio安装。如果您没有安装Visual Studio，它"
+"将尝试改用MinGW。如果您已经安装了Visual Studio，并且想使用MinGW，请将 "
+"``use_mingw=yes`` 传递给SCons命令行。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:82
 msgid ""
@@ -182,63 +186,66 @@ msgid ""
 "can produce more optimized binaries using link-time optimization (see "
 "below), making it a better choice for production use."
 msgstr ""
+"在开发过程中，通常最好使用Visual Studio编译器，因为它比MinGW更快地链接Godot二"
+"进制文件。但是，MinGW可以使用链接时间优化（请参见下文）来生成更多优化的二进制"
+"文件，从而使其成为生产使用的更好选择。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:88
 msgid "Running SCons"
 msgstr "运行SCons"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:90
-#, fuzzy
 msgid ""
 "After opening a command prompt, change to the root directory of the engine "
 "source code (using ``cd``) and type::"
-msgstr "打开终端，转到引擎源代码的根目录并键入:"
+msgstr "打开命令提示符后，转到引擎源代码的根目录（使用 ``cd``），然后键入："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:95
 msgid "You can specify a number of CPU threads to use to speed up the build::"
-msgstr ""
+msgstr "您可以指定CPU线程数来加速构建："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:99
-#, fuzzy
 msgid ""
 "In general, it is OK to have at least as many threads compiling Godot as you "
 "have cores in your CPU, if not one or two more. Feel free to add the -j "
 "option to any SCons command you see below."
 msgstr ""
-"一般情况下，如果不是一两个核心，那么至少可以在CPU中拥有与核心一样多的线程来编"
-"译Godot。 如果您设置了“Pywin32 Python Extension”，请随意将-j选项添加到您在下"
-"面看到的任何SCons命令中。"
+"通常，编译Godot的线程数与CPU内核的数量（即使不超过一个或两个）可以一样多。随"
+"时将 -j 选项添加到您在下面看到的任何SCons命令中。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:103
 msgid ""
 "When compiling with multiple CPU threads, SCons may warn about pywin32 being "
 "missing. You can safely ignore this warning."
 msgstr ""
+"使用多个CPU线程进行编译时，SCons可能会警告pywin32丢失。您可以放心地忽略此警"
+"告。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:106
-#, fuzzy
 msgid ""
 "If all goes well, the resulting binary executable will be placed in ``C:"
 "\\godot\\bin\\`` with the name ``godot.windows.tools.32.exe`` or ``godot."
 "windows.tools.64.exe``."
 msgstr ""
-"如果一切顺利，生成的二进制可执行文件将放在``C:\\ godot \\ bin \\``中，名称为"
-"``godot.windows.tools.32.exe``或``godot.windows.tools。64.exe``。 SCons将自动"
-"检测环境(提示)的设置编译器体系结构，并将构建相应的可执行文件。"
+"如果一切顺利，将生成的二进制可执行文件位于 ``C:\\godot\\bin\\`` ，其名称为 "
+"``godot.windows.tools.32.exe`` 或 ``godot.windows.tools.64.exe``。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:110
+#, fuzzy
 msgid ""
 "By default, SCons will build a binary matching your CPU architecture, but "
-"this can be overriden using ``bits=64`` or ``bits=32``."
+"this can be overridden using ``bits=64`` or ``bits=32``."
 msgstr ""
+"默认情况下，SCons将构建与您的CPU体系结构匹配的二进制文件，但是可以使用 "
+"``bits=64`` 或 ``bits=32`` 来覆盖它。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:113
-#, fuzzy
 msgid ""
 "This executable file contains the whole engine and runs without any "
 "dependencies. Running it will bring up the Project Manager."
 msgstr ""
-"此可执行文件包含整个引擎，并且运行时没有任何依赖性。 执行它将调出项目经理。"
+"该可执行文件包含整个引擎，并且运行时没有任何依赖关系。运行它会启动项目管理"
+"器。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:116
 msgid ""
@@ -246,8 +253,8 @@ msgid ""
 "executable smaller and faster by adding the SCons option "
 "``target=release_debug``."
 msgstr ""
-"如果您正在编译Godot用于生产用途，那么您可以通过添加SCons选项``target = "
-"release_debug``来使最终的可执行文件更小更快。"
+"如果您正在编译Godot用于生产用途，那么您可以通过添加SCons选项 "
+"``target=release_debug`` 来使最终的可执行文件更小更快。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:120
 msgid ""
@@ -256,6 +263,9 @@ msgid ""
 "optimization is a memory-intensive process, this will require about 3 GB of "
 "available RAM while compiling."
 msgstr ""
+"如果要使用MinGW编译Godot，则可以通过添加SCons选项 ``use_lto=yes`` 使二进制文"
+"件变得更小、更快。由于链接时间优化是一个占用大量内存的过程，因此编译时将需要"
+"大约3 GB的可用RAM。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:126
 msgid "Development in Visual Studio or other IDEs"
@@ -271,26 +281,22 @@ msgstr ""
 "擎，通常需要使用IDE。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:132
-#, fuzzy
 msgid ""
 "You can create a Visual Studio solution via SCons by running SCons with the "
 "``vsproj=yes`` parameter, like this::"
 msgstr ""
-"您可以通过使用``vsproj = yes``参数运行SCons来创建Visual Studio解决方案，如下"
-"所示:"
+"您可以通过使用 ``vsproj=yes`` 参数运行SCons来创建Visual Studio解决方案，如下"
+"所示："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:137
-#, fuzzy
 msgid ""
 "You will be able to open Godot's source in a Visual Studio solution now, and "
 "able to build Godot using Visual Studio's **Build** button."
 msgstr ""
-"您现在可以在Visual Studio解决方案中打开Godot的源代码，并能够通过Visual "
-"Studio ** Build **按钮构建Godot。 但是，请确保已安装Pywin32，以便并行(-j)构建"
-"正常工作。"
+"您现在可以在Visual Studio解决方案中打开Godot的源代码，并能够通过Visual Studio"
+"的 **构建** 按钮构建Godot。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:140
-#, fuzzy
 msgid ""
 "If you need to edit the build commands, they are located in \"Godot\" "
 "project settings, NMAKE sheet. SCons is called at the end of the commands. "
@@ -298,34 +304,32 @@ msgid ""
 "configurations (debug, release_debug, release) or architectures (Win32/x64); "
 "they are equivalent."
 msgstr ""
-"如果需要编辑编译命令，它们位于“Godot”项目设置，NMAKE表中。 在命令结束时调用"
-"SCons。 如果出错，请从其他构建配置(debug，release_debug，release)或体系结构"
-"(Win32 / x64)中复制命令。 它们是等价的。"
+"如果需要编辑构建命令，它们位于“Godot”项目设置，NMAKE表中。在命令结束时调用"
+"SCons。如果出错，请从其他构建配置（debug，release_debug，release）或体系结构"
+"（Win32 / x64）中复制命令。它们是等价的。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:147
 msgid "Cross-compiling for Windows from other operating systems"
-msgstr "从其他操作系统交叉编译Windows"
+msgstr "从其他操作系统为Windows交叉编译"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:149
-#, fuzzy
 msgid ""
 "If you are a Linux or macOS user, you need to install `MinGW-w64 <https://"
 "mingw-w64.org/doku.php>`_, which typically comes in 32-bit and 64-bit "
 "variants. The package names may differ based on your distribution, here are "
 "some known ones:"
 msgstr ""
-"如果您是Linux或macOS用户，则需要安装`MinGW-w64 <https://mingw-w64.org/doku."
-"php>`_ ，它通常包含32位和64位变体。 包名称可能因您的发行版而异，以下是一些已"
-"知的发行版:"
+"如果您是Linux或macOS用户，则需要安装 `MinGW-w64 <https://mingw-w64.org/doku."
+"php>`_，它通常包含32位和64位变体。包名称可能因您的发行版而异，以下是一些已知"
+"的发行版："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:155
-#, fuzzy
 msgid "**Arch Linux**"
-msgstr "**Arch**"
+msgstr "**Arch Linux**"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:155
 msgid "Install `mingw-w64-gcc from the AUR`_."
-msgstr ""
+msgstr "安装 `AUR中的mingw-w64-gcc`_。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:157
 msgid "**Debian** / **Ubuntu**"
@@ -344,67 +348,60 @@ msgid "**Mageia**"
 msgstr "**Mageia**"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:178
-#, fuzzy
 msgid ""
 "Before attempting the compilation, SCons will check for the following "
 "binaries in your ``PATH`` environment variable::"
-msgstr "在允许您尝试编译之前，SCons将在您的``$ PATH``中检查以下二进制文件:"
+msgstr "在尝试编译之前，SCons将在 ``PATH`` 环境变量中检查以下二进制文件："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:184
-#, fuzzy
 msgid ""
 "If the binaries are not located in the ``PATH`` (e.g. ``/usr/bin``), you can "
 "define the following environment variables to give a hint to the build "
 "system::"
 msgstr ""
-"如果二进制文件不在``$ PATH``中(例如``/ usr / bin``)，您可以定义以下环境变量来"
-"给构建系统一个提示:"
+"如果这些二进制文件不在 ``PATH`` 中（例如 ``/usr/bin``），则可以定义以下环境变"
+"量来提示以构建系统："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:191
-#, fuzzy
 msgid ""
 "To make sure you are doing things correctly, executing the following in the "
 "shell should result in a working compiler (the version output may differ "
 "based on your system)::"
 msgstr ""
-"为了确保您正确地执行操作，在shell中执行以下操作应该会生成一个正常工作的编译器"
-"(版本输出可能因您的系统而异):"
+"为了确保您做的事正确，在shell中执行以下操作将导致编译器正常工作（版本输出可能"
+"因您的系统而异）："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:199
 msgid "Troubleshooting"
 msgstr "故障排除"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:201
-#, fuzzy
 msgid ""
 "Cross-compiling from some Ubuntu versions may lead to `this bug <https://"
 "github.com/godotengine/godot/issues/9258>`_, due to a default configuration "
 "lacking support for POSIX threading."
 msgstr ""
-"某些版本的Ubuntu的交叉编译可能会导致 `此错误 <https://github.com/godotengine/"
-"godot/issues/9258>`_ ，因为默认配置缺乏对POSIX线程的支持。"
+"由于默认配置不支持POSIX线程，因此从某些Ubuntu版本进行交叉编译可能会导致 `此"
+"bug <https://github.com/godotengine/godot/issues/9258>`_ 。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:205
-#, fuzzy
 msgid ""
 "You can change that configuration following those instructions, for 64-bit::"
-msgstr "您可以按照这些说明更改该配置，对于32位:"
+msgstr "您可以按照以下说明针对64位更改该配置："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:213
-#, fuzzy
 msgid "And for 32-bit::"
-msgstr "而对于64位:"
+msgstr "对于32位："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:221
 msgid "Creating Windows export templates"
 msgstr "创建Windows导出模板"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:223
-#, fuzzy
 msgid ""
 "Windows export templates are created by compiling Godot without the editor, "
 "with the following flags::"
-msgstr "Windows导出模板是通过将Godot编译为release来创建的，具有以下标志:"
+msgstr "Windows导出模板是通过编译不使用编辑器的Godot来创建的，带有以下标志："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:231
 msgid ""
@@ -412,27 +409,26 @@ msgid ""
 "following location, replacing ``<version>`` with the version identifier "
 "(such as ``3.1.1.stable`` or ``3.2.dev``)::"
 msgstr ""
+"如果计划替换标准导出模板，复制模板到以下位置，并用版本标识符（例如 ``3.1.1."
+"stable`` 或 ``3.2.dev``）替换 ``<version>``："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:237
-#, fuzzy
 msgid "With the following names::"
-msgstr "使用以下名称:"
+msgstr "使用以下名称："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:244
-#, fuzzy
 msgid ""
 "However, if you are using custom modules or custom engine code, you may "
 "instead want to configure your binaries as custom export templates here:"
 msgstr ""
-"此外，如果您正在开发自定义模块或修改引擎的其他 C++ 代码，则可以在此处将您编译"
-"好的二进制文件配置为自定义导出模板:"
+"此外，如果您使用的是自定义模块或自定义引擎代码，则可能需要在此处将二进制文件"
+"配置为自定义导出模板："
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:250
-#, fuzzy
 msgid ""
 "You don't need to copy them in this case, just reference the resulting files "
 "in the ``bin\\`` directory of your Godot source folder, so the next time you "
 "build, you will automatically have the custom templates referenced."
 msgstr ""
-"您甚至不需要复制它们，您只需要在Godot源文件夹的``bin \\``目录中引用结果文件，"
-"这样您下次构建时就会自动引用自定义模板。"
+"在这种情况下，您不需要复制它们，只需引用在Godot源文件夹的 ``bin\\`` 目录中生"
+"成的文件，因此下次构建时，将自动引用自定义模板。"

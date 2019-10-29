@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
 msgid "Exporting for Universal Windows Platform"
-msgstr "导出到通用Windows平台"
+msgstr "为通用Windows平台导出"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:6
 msgid ""
@@ -27,9 +27,8 @@ msgid ""
 "installed as a Windows App or submitted to the Windows Store. Exporting UWP "
 "packages also works from any platform, not only from Windows."
 msgstr ""
-"导出为 ``.appx`` 包没有额外的要求，它可以作为Windows应用程序被安装或提交到"
-"Windows应用商店。 导出UWP软件包的功能也可以在任何平台上成功运行，而不仅仅是"
-"Windows。"
+"导出一个 ``.appx`` 包没有额外的要求，它可以作为Windows应用程序被安装，或提交"
+"到Windows应用商店。也可以在任何平台上，而不仅仅是从Windows上，导出UWP软件包。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
 msgid ""
@@ -37,14 +36,14 @@ msgid ""
 "trusted signature. Currently, Godot does not support signing of packages, so "
 "you need to use external tools to do so."
 msgstr ""
-"但是，如果要安装并运行应用程序，则需要使用可信签名对其进行签名。 目前，Godot"
-"不支持签名包，因此您需要使用外部工具来执行此操作。"
+"但是，如果要安装并运行应用程序，则需要使用可信签名对其进行签名。目前，Godot不"
+"支持签名包，因此您需要使用外部工具来执行此操作。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
 msgid ""
 "Also, make sure the Publisher Name you set when exporting the package "
 "matches the name used on the certificate."
-msgstr "此外，请确保导出包时设置的发布者名称与证书上使用的名称相匹配。"
+msgstr "此外，请确保导出包时，设置的发布者名称，与证书上使用的名称相匹配。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:18
 msgid "Limitations on Xbox One"
@@ -56,11 +55,11 @@ msgid ""
 "windows/uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
 "如 `UWP文档 <https://docs.microsoft.com/en-us/windows/uwp/xbox-apps/system-"
-"resource-allocation>`__ 中所述:"
+"resource-allocation>`__ 中所述："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "Submitted as an \"App\""
-msgstr "提交为``App``"
+msgstr "提交为 ``App``"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:23
 msgid "available memory is 1GB"
@@ -68,19 +67,19 @@ msgstr "可用内存为1GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:24
 msgid "share of 2-4 CPU cores"
-msgstr "分享2-4个CPU核"
+msgstr "共享2-4个CPU核"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "shared access of GPU power (45%)"
-msgstr "共享GPU功率(45％)"
+msgstr "共享GPU能力（45％）"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid ""
 "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www."
 "xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
-"提交为``游戏``(通过 `Xbox Live Creators Program <https://www.xbox.com/en-US/"
-"developers/creators-program>`__)"
+"提交为 ``游戏`` （通过 `Xbox Live创意者计划 <https://www.xbox.com/zh-CN/"
+"developers/creators-program>`__）"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:28
 msgid "available memory is 5GB"
@@ -88,17 +87,17 @@ msgstr "可用内存为5GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:29
 msgid "4 exclusive CPU cores and 2 shared CPU cores"
-msgstr "4个独有的CPU内核和2个共享CPU内核"
+msgstr "4个专用CPU内核和2个共享CPU内核"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid "exclusive access to GPU power (100%)"
-msgstr "独家访问GPU功率(100％)"
+msgstr "独享GPU能力（100％）"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
 msgid ""
 "Exceeding these memory limitations will cause allocation failures and the "
 "application will crash."
-msgstr "超出这些内存限制将导致分配失败，应用程序将崩溃。"
+msgstr "超过这些内存限制将导致分配失败，并且应用程序将崩溃。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:35
 msgid "Creating a signing certificate"
@@ -111,9 +110,9 @@ msgid ""
 "Developer Prompts, since it comes with these tools and they can be located "
 "in the path."
 msgstr ""
-"这需要Windows SDK附带的 ``MakeCert.exe`` 和 ``Pvk2Pfx.exe`` 工具。 如果您使用"
-"Visual Studio，则可以打开其中一个Developer Prompts，因为它附带了这些工具，并"
-"且它们可以位于路径中。"
+"这需要Windows SDK附带的 ``MakeCert.exe`` 和 ``Pvk2Pfx.exe`` 工具。如果您使用"
+"Visual Studio，则可以打开其中一个开发者命令提示符，因为它附带了这些工具，并且"
+"它们可以在路径中定位。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:41
 msgid ""
@@ -126,21 +125,21 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:44
 msgid "First, run ``MakeCert`` to create a private key::"
-msgstr "首先，运行 ``MakeCert`` 来创建私钥::"
+msgstr "首先，运行 ``MakeCert`` 来创建私钥："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:48
 msgid ""
 "Where ``publisherName`` matches the Publisher Name of your package and "
 "``expirationDate`` is in the ``mm/dd/yyyy`` format."
 msgstr ""
-"其中 ``publisherName`` 匹配包的发布者名称， ``expirationDate` `是 ``mm / "
-"dd / yyyy`` 格式。"
+"其中 ``publisherName`` 匹配包的发布者名称，``expirationDate` `是 ``mm/dd/"
+"yyyy`` 格式。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:51
 msgid ""
 "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx."
 "exe``::"
-msgstr "接下来，使用 ``Pvk2Pfx.exe`` 创建个人信息交换(.pfx)文件::"
+msgstr "接下来，使用 ``Pvk2Pfx.exe`` 创建个人信息交换（.pfx）文件："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:55
 msgid ""
@@ -154,16 +153,16 @@ msgid ""
 "your app. Open the Command Prompt as Administrator and run the following "
 "command::"
 msgstr ""
-"您还需要信任此证书才能安装您的应用。 以管理员身份打开命令提示符并运行以下命"
-"令::"
+"您还需要信任此证书才能安装您的应用。以管理员身份打开命令提示符并运行以下命"
+"令："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
 msgid "Signing the package"
-msgstr "签署包"
+msgstr "签名包"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
-msgstr "最后，使用Windows SDK或Visual Studio中的 ``SignTool.exe`` ::"
+msgstr "最后，使用Windows SDK或Visual Studio中的 ``SignTool.exe``："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
 msgid "Installing the package"

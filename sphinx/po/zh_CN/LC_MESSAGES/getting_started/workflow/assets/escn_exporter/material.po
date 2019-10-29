@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,9 +33,9 @@ msgid ""
 "means that you cannot see your model with the material applied inside "
 "Blender."
 msgstr ""
-"出口商可以处理材质的一种方法是尝试将Blender材质与现有的Godot材质相匹配。 这样"
-"做的好处是能够使用Godot材质系统的所有功能，但这意味着您无法使用Blender中应用"
-"的材质看到您的模型。"
+"导出器处理材质的一种方法，是尝试将Blender材质与现有的Godot材质进行匹配。这具"
+"有能够使用Godot材质系统的所有功能的优点，但这意味着您可以看到模型，但不附带在"
+"Blender中应用的材质。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:12
 msgid ""
@@ -46,20 +46,21 @@ msgid ""
 "is not a ``SpatialMaterial`` or ``ShaderMaterial`` or if it cannot be found, "
 "then the exporter will fall back to exporting the material from Blender."
 msgstr ""
-"为此，导出器会尝试查找名称与Blender中的材质名称相匹配的Godot材质。 因此，如果"
-"您在Blender中使用材质名称 ``PurpleDots`` 导出对象，则导出器将搜索文件 "
-"``PurpleDots.tres`` 并将其分配给该对象。 如果此文件不是 ``SpatialMaterial`` "
-"或 ``ShaderMaterial`` ，或者如果找不到，则导出器将退回到从Blender导出材质。"
+"为此，导出器会尝试查找名称与Blender中的材质名称相匹配的Godot材质。因此，如果"
+"您在Blender中导出一个对象，它使用名为 ``PurpleDots`` 的材质，则导出器将搜索文"
+"件 ``PurpleDots.tres`` 并将其分配给该对象。如果此文件不是 "
+"``SpatialMaterial`` 或 ``ShaderMaterial`` ，或者如果找不到，则导出器将退回到"
+"从Blender导出材质。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:20
 msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
-msgstr "导出器搜索 ``.tres`` 文件的位置由“材质搜索路径”选项确定:"
+msgstr "导出器搜索 ``.tres`` 文件的位置由 ``材质搜索路径`` 选项确定："
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:34
 msgid "This can take the value of:"
-msgstr "这可以取以下值:"
+msgstr "这可以取以下值："
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:26
 msgid ""
@@ -68,9 +69,8 @@ msgid ""
 "will throw an error. This is useful for most projects where naming conflicts "
 "are unlikely."
 msgstr ""
-"项目目录 - 尝试查找 ``project.Godot`` 并递归搜索子目录。 如果找不到 "
-"``project.Godot`` ，则会抛出错误。 这对于不太可能存在命名冲突的大多数项目非常"
-"有用。"
+"项目目录——尝试查找 ``project.Godot`` 并递归搜索子目录。如果找不到 ``project."
+"Godot`` ，则会抛出错误。这对于不太可能存在命名冲突的大多数项目非常有用。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:30
 msgid ""
@@ -78,17 +78,16 @@ msgid ""
 "location. This is useful for projects where you may have duplicate material "
 "names and need more control over what material gets assigned."
 msgstr ""
-"导出目录 - 在导出位置的子目录中查找材质。 这对于您可能具有重复材质名称并需要"
-"更多控制所分配材质的项目非常有用。"
+"导出目录——在导出位置的子目录中查找材质。这对于您可能具有重复材质名称并需要更"
+"多控制所分配材质的项目非常有用。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
 msgid "None - Do not search for materials. Export them from the Blender file."
-msgstr "无 - 不搜索材质。 从Blender文件中导出它们。"
+msgstr "无——不搜索材质。从Blender文件中导出它们。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
-#, fuzzy
 msgid "Export of Cycles/EEVEE materials"
-msgstr "导出Blender材质"
+msgstr "导出Cycles/EEVEE材质"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
 msgid ""
@@ -96,12 +95,12 @@ msgid ""
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
-"导出器支持将Cycles/EEVEE材质节点树转换为Godot着色器材质。注意，由于实现上的困"
-"难，一些着色器节点还不受支持，如下所示："
+"导出器具有一个基本支持，可以将Cycles/EEVEE材质节点树转换为Godot着色器材质。请"
+"注意，由于实现上的困难，尚不支持某些着色器节点，它们是："
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid "all the ``noisy textures``"
-msgstr "所有``噪声纹理``"
+msgstr "所有 ``噪声纹理``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
 msgid "``generated texture coordinates``"
@@ -109,15 +108,15 @@ msgstr "``生成纹理坐标``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
-msgstr "``组节点``"
+msgstr "``编组节点``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
-"着色器节点除了``条理化BSDF``, ``漫射``, ``光泽度``, ``玻璃``, ``添加着色器``"
-"以及``混合着色器``"
+"着色器节点除了 ``条理化BSDF``、 ``漫射``、 ``光泽度``、 ``玻璃``、 ``添加着色"
+"器``以及``混合着色器``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
 msgid ""
@@ -125,24 +124,23 @@ msgid ""
 "output shader node, it is the only one guarantee to be exactly correctly. "
 "Others are just based on approximation."
 msgstr ""
-"如果可能，可以尝试使用具有GGX分布的条理化BSDF节点作为输出着色器节点，这是唯一"
-"能保证完全正确的方法。其他的只是基于近似。"
+"如果可能，请尝试使用具有GGX分布的 ``PrincipledBSDF`` 节点作为输出着色器节点，"
+"这是唯一能保证完全正确的方法。其他仅基于近似值。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
-#, fuzzy
 msgid ""
 "Sometimes materials may not be valid for exporting (e.g. has some "
 "unsupported node) or it is using Blender Internal Engine, only the diffuse "
 "color and a few flags (e.g. unshaded) are exported and form a Spatial "
 "Material."
 msgstr ""
-"处理材质的另一种方式是让导出器从Blender中导出它们。 目前仅导出漫反射颜色和一"
-"些标志(例如，无阴影)。"
+"有时，材质可能对于导出无效（例如，具有某些不受支持的节点），或者使用的是"
+"Blender内置引擎，仅导出漫反射颜色和一些标记（例如，无阴影）并形成一个空间材"
+"质。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
-#, fuzzy
 msgid "Generate external materials"
-msgstr "着色器材质"
+msgstr "生成外部材质"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
 msgid ""
@@ -150,11 +148,11 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
-"材质导出的默认配置，将把所有材质保存在``escn``文件内部。有一个选项是，当在"
-"Godot中打开``escn``文件时，可以生成外部``.material``文件。"
+"材料导出的默认配置会将所有材质保留在 ``escn`` 文件内部。有一个选项可以确保，"
+"在Godot中打开 ``escn`` 文件时生成外部 ``.material`` 文件。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
-msgstr "``.material``文件可以作为外部资源，分配给任何材质槽。"
+msgstr "``.material`` 文件可以分配到任何材料插槽，以作为一个外部资源。"

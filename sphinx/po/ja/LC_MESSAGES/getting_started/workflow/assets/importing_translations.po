@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,6 +81,9 @@ msgid ""
 "translations written in the gettext ``.po`` format. See :ref:"
 "`doc_localization_using_gettext` for details."
 msgstr ""
+"もっと強力なファイル形式を必要としているなら、gettext ``.po`` 形式に書かれた"
+"翻訳の読み込みもGodotはサポートしています。詳細は:ref:"
+"`doc_localization_using_gettext` を見て下さい。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 msgid "Translation format"
@@ -105,40 +108,39 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "keys"
-msgstr ""
+msgstr "\\ keys"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid "<lang1>"
-msgstr ""
+msgstr "\\ <lang1>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid "<lang2>"
-msgstr ""
+msgstr "\\ <lang2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid "<langN>"
-msgstr ""
+msgstr "\\ <langN>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 msgid "KEY1"
-msgstr ""
+msgstr "\\ KEY1"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
 msgid "string"
-msgstr ""
+msgstr "\\ string"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 msgid "KEY2"
-msgstr ""
+msgstr "\\ KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
 msgid "KEYN"
-msgstr ""
+msgstr "\\ KEYN"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
-#, fuzzy
 msgid ""
 "The \"lang\" tags must represent a language, which must be one of the :ref:"
 "`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags must "
@@ -149,9 +151,12 @@ msgid ""
 "left empty or having any content. Here's an example:"
 msgstr ""
 "\"lang\" タグは、エンジンでサポートされている \\ :ref:`valid locales "
-"<doc_locales>` のいずれかである必要があります。\"KEY\" タグは一意で、文字列を"
-"普遍的に表す必要があります (通常は大文字で、他の文字列と区別します)。次に例を"
-"示します:"
+"<doc_locales>` のいずれかの言語である必要があります。\"KEY\" タグは一意で、文"
+"字列を普遍的に表す必要があります (通常は大文字で、他の文字列と区別します)。ラ"
+"ンタイムにおいて、これらのキーは一致した翻訳文字列により置き換えられま"
+"す。\"KEY1\" と \"Key1\" が異なるキーであるという事に注意して下さい。一番左上"
+"のセルは無視され、 空白もしくは別のコンテンツを持っています。次に例を示しま"
+"す:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "en"
@@ -174,9 +179,8 @@ msgid "Hello, friend!"
 msgstr "\\ Hello, friend!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
-#, fuzzy
 msgid "Hola, amigo!"
-msgstr "\\ Hola, Amigo!"
+msgstr "\\ Hola, amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
 msgid "こんにちは"
@@ -203,9 +207,8 @@ msgid "BYE"
 msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
-#, fuzzy
 msgid "Goodbye"
-msgstr "\\ Good Bye"
+msgstr "\\ Goodbye"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
 msgid "Adiós"

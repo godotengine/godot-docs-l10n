@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1597,13 +1597,19 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:951
 msgid ""
+"We add the ``new_audio`` into the ``created_audio`` list to hold all created "
+"audios."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:953
+msgid ""
 "We then call ``play_sound``, passing in the audio clip associated with "
 "``sound_name`` and the sound position."
 msgstr ""
 "然后我们调用 ``play_sound`` ，传入与 ``sound_name`` 相关的音频片段和声音位"
 "置。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:955
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:957
 #, fuzzy
 msgid ""
 "Before we leave ``Globals.gd``, we need to add a few lines of code to "
@@ -1613,11 +1619,11 @@ msgstr ""
 "在我们离开 ``Globals.gd`` 之前，我们需要在 ``load_new_scene`` 中添加几行代"
 "码，这样当播放器改变场景时，所有的音频都会被破坏。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:957
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:959
 msgid "Add the following to ``load_new_scene``:"
 msgstr "将以下内容添加到``load_new_scene``:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:966
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:968
 #, fuzzy
 msgid ""
 "Now, before ``Globals.gd`` changes scenes, it goes through each simple audio "
@@ -1631,7 +1637,7 @@ msgstr ""
 "的所有声音，我们就会清除 ``created_audio`` ，这样它就不再拥有对任何(noew释放/"
 "毁坏)简单音频播放器的任何引用。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:971
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:973
 #, fuzzy
 msgid ""
 "Let's change ``create_sound`` in ``Player.gd`` to use this new system. "
@@ -1643,11 +1649,11 @@ msgstr ""
 "``Player.gd`` 的类变量中删除 ``simple_audio_player`` ，因为我们将不再直接在 "
 "``Player.gd`` 中实例化/产生声音。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:974
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:976
 msgid "Now, change ``create_sound`` to the following:"
 msgstr "现在，将 ``create_sound`` 更改为以下内容:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:981
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:983
 #, fuzzy
 msgid ""
 "Now, whenever ``create_sound`` is called, we simply call ``play_sound`` in "
@@ -1656,7 +1662,7 @@ msgstr ""
 "现在每当调用 ``create_sound`` 时，我们只需在 ``Globals.gd`` 中调用 "
 "``play_sound`` ，传入所有收到的参数。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:985
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:987
 #, fuzzy
 msgid ""
 "Now all the sounds in our FPS can be played from anywhere. All we have to do "
@@ -1668,7 +1674,7 @@ msgstr ""
 "``Globals.gd`` 单例，并调用 ``play_sound`` ，传入我们想要播放的声音的名称，无"
 "论我们是否想要它循环，以及 播放声音。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:988
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:990
 #, fuzzy
 msgid ""
 "For example, if you want to play an explosion sound when the grenade "
@@ -1684,24 +1690,24 @@ msgstr ""
 "global_transform.origin)``的东西，就在手榴弹损坏其爆炸半径范围内的所有物体之"
 "后。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:994
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:996
 msgid "Final notes"
 msgstr "最后的笔记"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:998
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1000
 msgid "Now you have a fully working single player FPS!"
 msgstr "现在您有一个完全工作的单人FPS！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1000
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1002
 msgid ""
 "At this point, you have a good base to build more complicated FPS games."
 msgstr "在此之上，你已打下构建更复杂的FPS游戏的良好基础。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1002
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1004
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr "如果您迷路了，请务必再次阅读代码！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1004
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1006
 msgid ""
 "You can download the finished project for the entire tutorial here: :"
 "download:`Godot_FPS_Part_6.zip <files/Godot_FPS_Finished.zip>`"
@@ -1709,7 +1715,7 @@ msgstr ""
 "您可以在这里下载整个教程的完成项目: :download:`Godot_FPS_Part_6.zip <files / "
 "Godot_FPS_Finished.zip>`"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1006
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1008
 msgid ""
 "The finished project source files contain the same code, just written in a "
 "different order. This is because the finished project source files are what "
@@ -1718,19 +1724,19 @@ msgstr ""
 "完成的项目源文件包含相同的代码，只是书写顺序稍有不同。因为本教程的撰写基于已"
 "完成的项目源文件。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1009
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1011
 msgid ""
 "The finished project code was written in the order that features were "
 "created, not necessarily in a order that is ideal for learning."
 msgstr "完成的项目代码是按照创建功能的顺序编写的，不一定是理想的学习顺序。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1012
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1014
 msgid ""
 "Other than that, the source is exactly the same, just with helpful comments "
 "explaining what each part does."
 msgstr "除此之外，源代码完全相同，只是提供有用的评论，解释每个部分的作用。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1015
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1017
 msgid ""
 "The finished project source is hosted on Github as well: https://github.com/"
 "TwistedTwigleg/Godot_FPS_Tutorial"
@@ -1738,13 +1744,13 @@ msgstr ""
 "完成的项目源也托管在Github上:https://github.com/TwistedTwigleg/"
 "Godot_FPS_Tutorial"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1017
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1019
 msgid ""
 "**Please note that the code in Github may or may not be in sync with the "
 "tutorial in the documentation**."
 msgstr "**请注意，Github中的代码可能与文档中的教程同步也可能不同步**。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1019
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1021
 msgid ""
 "The code in the documentation is likely better managed and/or more up to "
 "date. If you are unsure of which to use, use the project(s) provided in the "
@@ -1753,7 +1759,7 @@ msgstr ""
 "文档中的代码可能会随时更新至最新版。如果您不确定使用哪个，请使用文档中提供的"
 "项目，因为它们是由Godot社区负责维护的。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1022
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1024
 #, fuzzy
 msgid ""
 "You can download all the ``.blend`` files used in this tutorial here: :"
@@ -1762,7 +1768,7 @@ msgstr ""
 "您可以在这里下载本教程中使用的所有 ``.blend`` 文件: :download:"
 "`Godot_FPS_BlenderFiles.zip <files / Godot_FPS_BlenderFiles.zip>`"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1024
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1026
 msgid ""
 "All assets provided in the started assets (unless otherwise noted) were "
 "**originally created by TwistedTwigleg, with changes/additions by the Godot "
@@ -1772,7 +1778,7 @@ msgstr ""
 "启动资源中提供的所有资源(除非另有说明)最初由TwistedTwigleg创建，由Godot社区进"
 "行更改/添加。**本教程提供的所有原始资源均在“MIT”许可下发布。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1027
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1029
 msgid ""
 "Feel free to use these assets however you want! All original assets belong "
 "to the Godot community, with the other assets belonging to those listed "
@@ -1781,7 +1787,7 @@ msgstr ""
 "您可以随意使用这些资源！ 所有原始资源均属于Godot社区，其他资源属于以下列出的"
 "资源:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1029
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1031
 msgid ""
 "The skybox is created by **StumpyStrust** and can be found at OpenGameArt."
 "org. https://opengameart.org/content/space-skyboxes-0 . The skybox is "
@@ -1790,7 +1796,7 @@ msgstr ""
 "天空盒由** StumpyStrust **创建，可以在OpenGameArt.org找到。 https://"
 "opengameart.org/content/space-skyboxes-0。 天空盒根据“CC0”许可证授权。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1032
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1034
 msgid ""
 "The font used is **Titillium-Regular**, and is licensed under the ``SIL Open "
 "Font License, Version 1.1``."
@@ -1798,7 +1804,7 @@ msgstr ""
 "使用的字体是** Titillium-Regular **，并根据``SIL Open Font License，Version "
 "1.1`许可。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1034
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1036
 msgid ""
 "The skybox was converted to a 360 equirectangular image using this tool: "
 "https://www.360toolkit.co/convert-cubemap-to-spherical-equirectangular.html"
@@ -1806,14 +1812,14 @@ msgstr ""
 "使用此工具将天空盒转换为360 equirectangular图像:https://www.360toolkit.co/"
 "convert-cubemap-to-spherical-equirectangular.html"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1036
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1038
 msgid ""
 "While no sounds are provided, you can find many game ready sounds at https://"
 "gamesounds.xyz/"
 msgstr ""
 "虽然没有提供声音，但您可以在https://gamesounds.xyz/找到许多游戏就绪声音"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1038
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1040
 msgid ""
 "**OpenGameArt.org, 360toolkit.co, the creator(s) of Titillium-Regular, "
 "StumpyStrust, and GameSounds.xyz are in no way involved in this tutorial.**"

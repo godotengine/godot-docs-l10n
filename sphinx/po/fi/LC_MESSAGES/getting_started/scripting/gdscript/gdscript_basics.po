@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
-#, fuzzy
 msgid "GDScript basics"
-msgstr "GDScript"
+msgstr "GDScriptin perusteet"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:7
 msgid "Introduction"
@@ -479,28 +478,27 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:247
 msgid "**Operator**"
-msgstr ""
+msgstr "**Operaattori**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:247
 msgid "**Description**"
-msgstr ""
+msgstr "**Kuvaus**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:249
 msgid "``x[index]``"
-msgstr ""
+msgstr "``x[indeksi]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:249
 msgid "Subscription (highest priority)"
-msgstr ""
+msgstr "Indeksipohjainen haku (korkein prioriteetti)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:251
 msgid "``x.attribute``"
-msgstr ""
+msgstr "``x.attribute``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:251
-#, fuzzy
 msgid "Attribute reference"
-msgstr "Eroavaisuudet"
+msgstr "Attribuuttiviittaus"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
 msgid "``is``"
@@ -602,9 +600,8 @@ msgid "``in``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:281
-#, fuzzy
 msgid "Content test"
-msgstr "Kappaleen tyyppi"
+msgstr "Sisältötesti"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
 msgid "``!`` ``not``"
@@ -1160,6 +1157,13 @@ msgid ""
 "dictionary of that name."
 msgstr ""
 
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:652
+msgid ""
+"In Godot 3.1 and later, keys in a named enum are not registered as global "
+"constants. They should be accessed prefixed by the enum's name (``Name."
+"KEY``); see an example below."
+msgstr ""
+
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:672
 msgid "Functions"
 msgstr ""
@@ -1214,9 +1218,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:723
-#, fuzzy
 msgid "Referencing functions"
-msgstr "Prosessointi"
+msgstr "Funktioihin viittaminen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:725
 msgid ""
@@ -1299,9 +1302,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:842
-#, fuzzy
 msgid "Basic syntax::"
-msgstr "Skenen järjestely"
+msgstr "Perussyntaksi::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:853
 msgid "**Crash-course for people who are familiar with switch statements**:"
@@ -1337,46 +1339,51 @@ msgid ""
 "use ``continue`` to stop execution in the current block and check the ones "
 "below it."
 msgstr ""
+"Kuvioita verrataan ylhäältä alaspäin. Jos vastaava kuvio löytyy, suoritetaan "
+"sitä vastaava koodilohko. Sen jälkeen suoritus jatkuu ``match`` lausekkeen "
+"alta. Jos haluat suorituksen jatkuvan seuraavaan kuvioon (fall through), "
+"voit käyttää ``continue`` avainsanaa lopettaaksesi suorituksen "
+"kyseenomaisessa koodilohkossa ja tarkistaa sen alla olevat."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:867
 msgid "There are 6 pattern types:"
-msgstr ""
+msgstr "Kuvioita on kuutta eri tyyppiä:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:879
-#, fuzzy
 msgid "Constant pattern"
-msgstr "Vakiot"
+msgstr "Vakiokuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:870
 msgid "Constant primitives, like numbers and strings::"
-msgstr ""
+msgstr "Vakioprimitiivit, kuten numerot ja merkkijonot::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:891
-#, fuzzy
 msgid "Variable pattern"
-msgstr "Muuttuja"
+msgstr "Muuttujakuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:882
 msgid "Matches the contents of a variable/enum::"
-msgstr ""
+msgstr "Vertaa muuttujan tai enumeraation sisältöä::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:905
 msgid "Wildcard pattern"
-msgstr ""
+msgstr "Jokerikuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:894
 msgid "This pattern matches everything. It's written as a single underscore."
-msgstr ""
+msgstr "Tämä kuvio vastaa kaikkea. Se kirjoitetaan yhtenä alaviivana."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:896
 msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages::"
 msgstr ""
+"Sitä voidaan käyttää muiden kielten ``switch`` lausekkeissa esiintyvän "
+"``default`` avainsanan vastineena:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:918
 msgid "Binding pattern"
-msgstr ""
+msgstr "Sidontakuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:908
 msgid ""
@@ -1384,78 +1391,94 @@ msgid ""
 "matches everything - and also gives that value a name. It's especially "
 "useful in array and dictionary patterns::"
 msgstr ""
+"Sidontakuviota esittelee uuden muuttujan. Kuten jokerikuviossa, se vastaa "
+"mitä tahansa arvoa – ja antaa sille arvolle myös nimen. Se on erityisen "
+"hyödyllinen taulukko- ja hakurakennekuvioissa::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:939
 msgid "Array pattern"
-msgstr ""
+msgstr "Taulukkokuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:921
 msgid ""
 "Matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
 msgstr ""
+"Vertailee taulukkoa. Jokainen taulukon alkio on kuvio itsessään, joten voit "
+"yhdistellä niissä eri kuvioita."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:923
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
 "pattern, otherwise the pattern doesn't match."
 msgstr ""
+"Taulukon kokoa vertaillaan ensiksi; sen tulee olla samankokoinen kuin kuvion "
+"taulukko tai muutoin kuvio ei ole vastaava."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
 msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``."
 msgstr ""
+"**Avoin taulukko**: Taulukko voi olla suurempi kuin kuvion taulukko "
+"asettamalla viimeiseksi alikuvioksi ``..``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:927
 msgid "Every subpattern has to be comma-separated."
-msgstr ""
+msgstr "Jokainen alikuvio on eroteltava pilkulla."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:966
 msgid "Dictionary pattern"
-msgstr ""
+msgstr "Hakurakennekuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:942
 msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
 msgstr ""
+"Toimii samaan tapaan kuin taulukkokuvio. Jokaisen avaimen on oltava "
+"vakiokuvio."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:944
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
 "the pattern, otherwise the pattern doesn't match."
 msgstr ""
+"Hakurakenteen kokoa vertaillaan ensiksi; sen on oltava samankokoinen kuin "
+"kuvion hakurakenne tai muutoin kuvio ei ole vastaava."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:946
 msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``."
 msgstr ""
+"**Avoin hakurakenne**: Hakurakenne voi olla suurempi kuin kuvion hakurakenne "
+"asettamalla viimeiseksi alikuvioksi ``..``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:948
 msgid "Every subpattern has to be comma separated."
-msgstr ""
+msgstr "Jokainen alikuvio on eroteltava pilkulla."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:950
 msgid ""
 "If you don't specify a value, then only the existence of the key is checked."
-msgstr ""
+msgstr "Jos et määrittele arvoa, ainoastaan avaimen olemassaolo tarkistetaan."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:952
 msgid "A value pattern is separated from the key pattern with a ``:``."
-msgstr ""
+msgstr "Arvokuvio erotellaan avainkuviosta ``:`` merkillä."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
-#, fuzzy
 msgid "Multiple patterns"
-msgstr "Useat ilmentymät"
+msgstr "Useita kuvioita"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:969
 msgid ""
 "You can also specify multiple patterns separated by a comma. These patterns "
 "aren't allowed to have any bindings in them."
 msgstr ""
+"Voit myös määritellä useita kuvioita pilkulla eroteltuna. Näillä kuvioilla "
+"ei saa olla mitään sidontoja."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:982
 msgid "Classes"
@@ -1467,23 +1490,27 @@ msgid ""
 "reference them using the file's path, using either a relative or an absolute "
 "path. For example, if you name a script file ``character.gd``::"
 msgstr ""
+"Kaikki skriptit ovat oletusarvoisesti nimettömiä luokkia. Tässä tapauksessa "
+"voit viitata niihin vain käyttämällä tiedoston polkua, käyttäen joko "
+"suhteellista tai absoluuttista polkua. Esimerkiksi, jos annat "
+"skriptitiedostolle nimeksi ``character.gd``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:997
-#, fuzzy
 msgid ""
 "Instead, you can give your class a name to register it as a new type in "
 "Godot's editor. For that, you use the ``class_name`` keyword. You can add an "
 "optional comma followed by a path to an image, to use it as an icon. Your "
 "class will then appear with its new icon in the editor::"
 msgstr ""
-"Voit nimetä skriptin ja rekisteröidä sen tyypiksi editorissa ``class_name`` "
-"avainsanalla, jota seuraa luokan nimi. Voit lisätä pilkun ja valinnaisen "
-"polun ikonina käytettävään kuvaan. Löydät tämän jälkeen uuden tyyppisi "
-"Solmu- tai Resurssinluontidialogista."
+"Sen sijaan, voit antaa luokallesi nimen rekisteröidäksesi sen uudeksi "
+"tyypiksi Godotin editoriin. Se tehdään käyttämällä ``class_name`` "
+"avainsanaa. Voit lisätä valinnaisen pilkun ja sitä seuraavan polun ikonina "
+"käytettävään kuvaan. Luokkasi ilmestyy sitten uuden ikoninsa kanssa näkyviin "
+"editoriin::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1010
 msgid "Here's a class file example:"
-msgstr ""
+msgstr "Tässä on esimerkki luokkatiedostosta:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1029
 msgid ""
@@ -1494,40 +1521,48 @@ msgid ""
 "of thread safety, since scripts can be initialized in separate threads "
 "without the user knowing."
 msgstr ""
+"Godotin luokkien syntaksi on suppea: se voi sisältää jäsenmuuttujia ja -"
+"funktioita. Voit käyttää staattisia funktioita, mutta et staattisia "
+"jäsenmuuttujia. Samaan tapaan, pelimoottori alustaa muuttujat joka kerta, "
+"kun luot ilmentymän, ja tämä sisältää taulukot ja hakurakenteet. Tämä "
+"tehdään säieturvallisuuden hengessä, sillä skriptit saatetaan alustaa eri "
+"säikeistä ilman, että käyttäjä tietää siitä."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1037
 msgid "Inheritance"
-msgstr ""
+msgstr "Perintä"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1039
 msgid "A class (stored as a file) can inherit from:"
-msgstr ""
+msgstr "Luokka (tallennettuna tiedostoon) voi periytyä seuraavista:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1041
 msgid "A global class."
-msgstr ""
+msgstr "Globaali luokka."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1042
 msgid "Another class file."
-msgstr ""
+msgstr "Toinen luokkatiedosto."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1043
 msgid "An inner class inside another class file."
-msgstr ""
+msgstr "Toisen luokkatiedoston sisällä oleva sisäluokka."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1045
 msgid "Multiple inheritance is not allowed."
-msgstr ""
+msgstr "Moniperintä ei ole sallittua."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1047
 msgid "Inheritance uses the ``extends`` keyword::"
-msgstr ""
+msgstr "Perintä käyttää ``extends`` avainsanaa::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1059
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used::"
 msgstr ""
+"Tarkistaaksesi periytyykö tietty ilmentymä jostakin luokasta, voit käyttää "
+"``is`` avainsanaa:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1071
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,16 +58,15 @@ msgid "This method will be called every time a frame is drawn:"
 msgstr "Этот метод будет вызван каждый раз в момент прорисовки фрейма:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
-#, fuzzy
 msgid ""
 "It's important to bear in mind that the frequency with which ``_process()`` "
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
-"Важно понимать что частота с которой будет вызываться ``_process()`` зависит "
-"от того сколько кадров в секунду (FPS) выполняется в вашем приложении на "
-"текущий момент. Это величина может меняться во времени и зависит от "
-"аппаратуры."
+"Важно помнить, что частота, с которой будет вызываться функция "
+"``_process()``, зависит от количества кадров в секунду (FPS), на котором "
+"работает ваше приложение. Эта скорость может изменяться с течением времени и "
+"устройствами."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -138,18 +137,17 @@ msgid "Groups"
 msgstr "Группы"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
 "for organizing large scenes. There are two ways to add nodes to groups. The "
 "first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"Группы в Godot работают как теги, с которыми вы могли встретиться в других "
-"программах. Узел может находиться в стольких группах, в скольких захотите. "
-"Это очень полезная механика для организации огромных сцен. Есть два способа "
-"добавлять узлы в группы. Во-первых, через UI, используя кнопку Groups под "
-"панелью Узла:"
+"Группы в Godot работают как теги, с которыми вы могли столкнуться в других "
+"программах. Узел может быть добавлен в любое количество групп по желанию. "
+"Это полезная функция для организации больших сцен. Существует два способа "
+"добавления узлов в группы. Первый - из пользовательского интерфейса, с "
+"помощью кнопки Группы под панелью Узел(Node):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,6 +36,10 @@ msgid ""
 "Finally, you can add collision, occlusion, and navigation shapes to tiles, "
 "adding additional functionality to the TileMap."
 msgstr ""
+"瓦片地图是用于创建游戏布局的瓦片网格。使用TileMap <class_TileMap>节点设计关卡"
+"有很多好处。首先，它们可以通过将图块“绘制”到网格上来绘制布局，这比逐个放置单"
+"个：ref：`Sprite <class_Sprite>`节点快得多；其次，它们允许更大的级别，因为最"
+"后，您可以为图块添加碰撞，遮挡和导航形状，从而为TileMap添加其他功能。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid "Project setup"
@@ -48,10 +52,13 @@ msgid ""
 "nl/assets/abstract-platformer>`_ but for this demo we'll stick to this small "
 "set."
 msgstr ""
+"在本演示中，我们将使用肯尼的“抽象平台游戏”艺术包中的以下图块。您可以在此处"
+"<https://kenney.nl/assets/abstract-platformer> _找到完整的集合，但是对于本演"
+"示，我们将坚持使用这一小集合。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid "Create a new project and place the above image in the project folder."
-msgstr ""
+msgstr "创建一个新项目并将上面的图像放置在项目文件夹中。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:31
 msgid ""
@@ -61,6 +68,9 @@ msgid ""
 "the Import tab. Turn off ``Filter`` and click \"Reimport\". See :ref:"
 "`doc_import_images` for details."
 msgstr ""
+"使用图块集时，重要的是相邻的图块匹配。 Godot的默认设置是使用插值的“滤镜”模式"
+"导入2D图像，这将导致图块之间的边界难看。选择图像，然后单击导入选项卡。关闭“过"
+"滤器”，然后单击“重新导入”。有关详细信息，请参见doc_import_images。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
 #, fuzzy
@@ -73,12 +83,15 @@ msgid ""
 "TileMap uses a square grid of tiles. You can also use a perspective-based "
 "\"Isometric\" mode or define your own custom tile shape."
 msgstr ""
+"在场景中添加一个新的TileMap <class_TileMap>节点。默认情况下，TileMap使用正方"
+"形的图块网格。您还可以使用基于透视图的“等轴测”模式或定义自己的自定义图块形"
+"状。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid ""
 "Under the \"Cell\" section in the Inspector are many properties you can "
 "adjust to customize your tilemap's behavior:"
-msgstr ""
+msgstr "在检查器的“单元”部分下，您可以调整许多属性以自定义图块贴图的行为："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:52
 #, fuzzy
@@ -90,36 +103,40 @@ msgid ""
 "This defines the size of the grid. This should match the pixel size of your "
 "tiles. The default value is ``(64, 64)``."
 msgstr ""
+"这定义了网格的大小。这应与您的图块的像素大小匹配。默认值为``（64，64）''。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:56
 msgid "``YSort``"
-msgstr ""
+msgstr "YSort"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:55
 msgid ""
 "This causes tiles to be drawn in order of their ``Y`` position, so that "
 "\"lower\" tiles are drawn on top of \"higher\" ones."
 msgstr ""
+"这将导致以“ Y”位置的顺序绘制图块，以便在“较高”图块的顶部绘制“较低”图块。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid "``Half Offset`` and ``Tile Origin``"
-msgstr ""
+msgstr "“半偏移”和“原始砖块”"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid ""
 "These properties affect the position of the tile relative to the grid "
 "position."
-msgstr ""
+msgstr "这些属性影响砖块相对于网格位置的位置。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:63
 msgid "``Quadrant``"
-msgstr ""
+msgstr "“象限”"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
 msgid ""
 "Defines the chunk size used for batched drawing. This can negatively affect "
 "performance. Don't change it unless you know what you're doing."
 msgstr ""
+"定义用于批处理绘图的块大小。这可能会对性能产生负面影响。除非你知道你在做什"
+"么，否则不要改变它。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 #, fuzzy
@@ -128,11 +145,11 @@ msgstr "变换"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
-msgstr ""
+msgstr "用来改变砖块的形状。如果您有非正方形的砖块，请使用此选项。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:68
 msgid "All of these options can be left at their defaults for this demo."
-msgstr ""
+msgstr "在这个演示中，所有这些选项都可以保持默认值。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
 #, fuzzy
@@ -147,12 +164,15 @@ msgid ""
 "other properties. When the game runs, the TileMap combines the individual "
 "tiles into a single object."
 msgstr ""
+"一旦你配置好你的砖块图，是时候添加一个:ref:`砖块集 <class_TileSet>`了。砖块集"
+"是一个:ref:`资源 <class_Resource>`，它包含了砖块的所有数据——纹理，碰撞形状和"
+"其他属性。当游戏运行时，砖块图将单个块合并成一个对象。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:79
 msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
 "TileSet\"."
-msgstr ""
+msgstr "若要添加新砖块集，请单击“砖块集”属性并选择“新建砖块集”。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
 #, fuzzy
@@ -167,6 +187,8 @@ msgid ""
 "the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
 "image."
 msgstr ""
+"首先，您需要添加用于砖块的纹理。点击“添加纹理到砖块集”按钮，选择``tilesheet."
+"png``的形象。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
@@ -174,6 +196,8 @@ msgid ""
 "want. Click the \"Enable Snap\" button to make it easier to select the "
 "entire tile. A yellow rectangle appears around the selected tile."
 msgstr ""
+"接下来，点击“新建单个砖块”，拖动图像来选择你想要的砖块。单击“使用吸附”按钮可"
+"以更容易地选择整个砖块。一个黄色矩形出现在选定的平铺区域周围。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:98
 msgid ""
@@ -181,6 +205,8 @@ msgid ""
 "created tile now appears on the right side. Click in the viewport and you "
 "can place tiles. Right-click to remove them."
 msgstr ""
+"单击场景树中的砖块图，您将看到新创建的砖块现在出现在右侧。单击视图，您可以放"
+"置砖块。右键单击以删除它们。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:104
 #, fuzzy
@@ -201,6 +227,8 @@ msgid ""
 "obstacles, for example - then you'll need to add collision shapes to any "
 "tiles that you want to be considered \"solid\"."
 msgstr ""
+"如果你在制作需要碰撞的地图——墙壁，地板，或其他障碍，例如-然后你需要添加碰撞形"
+"状到任何你想被认为是“固体”的砖块。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:116
 msgid ""
@@ -210,15 +238,18 @@ msgid ""
 "button. Make sure you still have grid snap enabled, then click and drag in "
 "the tile. A square collision shape appears in light blue:"
 msgstr ""
+"单击编辑器窗口底部的“砖块集”返回到砖块集工具。单击之前定义的砖块(用黄色表"
+"示)。选择“碰撞”标签并点击“创建一个新矩形”按钮。确保你仍然启用了网格对齐，然后"
+"单击并拖动砖块。出现淡蓝色的矩形碰撞框："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:124
 msgid ""
 "You can add occlusion and navigation shapes to the tile in the same way."
-msgstr ""
+msgstr "您可以以相同的方式向砖块添加遮挡和导航形状。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:127
 msgid "Atlas tiles"
-msgstr ""
+msgstr "砖块地图集"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:129
 msgid ""
@@ -226,6 +257,8 @@ msgid ""
 "tiles all at once using an atlas. Click \"New Atlas\" and drag to select the "
 "entire tile sheet."
 msgstr ""
+"而不是一次添加一个砖块，您可以使用地图集一次性定义一组砖块。单击“新建图集”并"
+"拖动以选择整个砖块列表。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:135
 msgid ""
@@ -233,6 +266,8 @@ msgid ""
 "settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
 "You can find this in the Inspector:"
 msgstr ""
+"如果你还没有设置，请确保将吸附设置中的“步长”更改为“(64,64)”，或者你的砖块可能"
+"被切成小块。你可以在属性面板中找到："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:141
 msgid ""
@@ -240,12 +275,14 @@ msgid ""
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
 "represent the atlas."
 msgstr ""
+"一旦你定义了图集，你就可以像以前一样将碰撞形状添加到各个砖块上。你也可以点"
+"击“图标”来选择其中一个代表地图集。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:145
 msgid ""
 "Back in the TileMap, you can select the atlas tile and you'll see all of the "
 "tiles it contains:"
-msgstr ""
+msgstr "回到砖块图，你可以选择图集砖块，你会看到它包含的所有砖块："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:150
 msgid ""
@@ -253,10 +290,12 @@ msgid ""
 "grouping similar tiles together when you're working with a large number of "
 "tiles."
 msgstr ""
+"除了节省定义砖块的时间外，这可以帮助您在处理大量砖块时将类似的砖块分组在一"
+"起。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:154
 msgid "Tips and tricks"
-msgstr ""
+msgstr "提示和技巧"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:156
 msgid ""
@@ -264,19 +303,23 @@ msgid ""
 "may notice lines appearing between your tiles. To fix this, open Project "
 "Settings and enable \"Use Pixel Snap\" in the \"Rendering/Quality\" section."
 msgstr ""
+"如果您使用的是Camera2D <class_Camera2D>来滚动你的关卡，则可能会注意到在图块之"
+"间出现了线条。要解决此问题，请打开“项目设置”，然后在“渲染/质量”部分中启用“使"
+"用像素吸附”。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:160
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
-msgstr ""
+msgstr "您可以使用编辑器右上方的图标来翻转和旋转图块。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:162
 msgid ""
 "To draw straight lines, hold <Shift> while clicking and dragging a tile."
-msgstr ""
+msgstr "要绘制直线，请在单击并拖动图块时按住<Shift>。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:164
 msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."
 msgstr ""
+"可以在右上角的“ TileMap”菜单中找到诸如复制，粘贴和存储桶填充之类的工具。"

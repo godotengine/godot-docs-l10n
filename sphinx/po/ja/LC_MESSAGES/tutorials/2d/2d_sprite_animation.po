@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:4
-#, fuzzy
 msgid "2D Sprite animation"
-msgstr "アニメーション"
+msgstr "2Dスプライトアニメーション"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:7
 msgid "Introduction"
@@ -34,6 +33,11 @@ msgid ""
 "sheet containing all the animation's frames. Depending on which type of "
 "assets you have, you can choose one of the following solutions."
 msgstr ""
+"このチュートリアルでは、2Dアニメーションキャラクターを作成する2つの異なる方法"
+"を学習します。通常、アニメーションキャラクターを作成またはダウンロードする場"
+"合、2つの方法のいずれかが使用されます。個別の画像として、またはすべてのアニ"
+"メーションフレームを含む単一のスプライトシートとして。アセットのタイプに応じ"
+"て、次のソリューションのいずれかを選択できます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:15
 msgid ""
@@ -42,6 +46,9 @@ msgid ""
 "`AnimationPlayer <class_AnimationPlayer>` along with the *Animation* "
 "property of :ref:`Sprite <class_Sprite>`."
 msgstr ""
+"最初に、AnimatedSpriteを使用して、個々の画像のコレクションをアニメーション化"
+"します。次に、スプライトシートを使用するには、AnimationPlayerとSpriteの"
+"Animationプロパティを使用します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:20
 msgid "Art for the following examples by https://opengameart.org/users/ansimuz"
@@ -57,6 +64,8 @@ msgid ""
 "your character's animation frames. For this example, we'll use the following "
 "animation:"
 msgstr ""
+"このシナリオでは、キャラクターのアニメーションフレームを1つづつ含む複数の画像"
+"を使います。この例では、次のアニメーションを使用します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:31
 msgid ""
@@ -69,6 +78,8 @@ msgid ""
 "Unzip the images and place them in your project folder. Set up your scene "
 "tree with the following nodes:"
 msgstr ""
+"画像を解凍し、プロジェクトフォルダーに配置します。次のノードを使用してシーン"
+"ツリーを設定します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:39
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:109
@@ -79,18 +90,26 @@ msgid ""
 "CollisionShape2D. See :ref:`Physics Introduction <doc_physics_introduction>` "
 "for more information."
 msgstr ""
+"ルートノードは、Area2DまたはRigidBody2Dにすることもできます。アニメーションは"
+"引き続き同じ方法で作成されます。アニメーションが完成したら、CollisionShape2D"
+"にシェイプを割り当てることができます。詳細については、物理の概要を参照してく"
+"ださい。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:46
 msgid ""
 "Now select the ``AnimatedSprite`` and in its *SpriteFrames* property, select "
 "\"New SpriteFrames\"."
 msgstr ""
+"次に、AnimatedSpriteを選択し、そのSpriteFramesプロパティで「New "
+"SpriteFrames」を選択します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:51
 msgid ""
 "Click on the new SpriteFrames resource and you'll see a new panel appear at "
 "the bottom of the editor window:"
 msgstr ""
+"新しいSpriteFramesリソースをクリックすると、エディターウィンドウの下部に新し"
+"いパネルが表示されます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:56
 msgid ""
@@ -98,6 +117,9 @@ msgid ""
 "the center part of the SpriteFrames panel. On the left side, change the name "
 "of the animation from \"default\" to \"run\"."
 msgstr ""
+"左側のFileSystemドックから、8つの個別の画像をSpriteFramesパネルの中央部分にド"
+"ラッグします。左側で、アニメーションの名前を「デフォルト」から「run」に変更し"
+"ます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:62
 msgid ""
@@ -105,17 +127,21 @@ msgid ""
 "now see the animation playing in the viewport. However, it is a bit slow. To "
 "fix this, change the *Speed (FPS)* setting in the SpriteFrames panel."
 msgstr ""
+"インスペクターに戻り、Playingプロパティのボックスをチェックします。これで、"
+"ビューポートでアニメーションが再生されます。しかし、それは少し遅いです。これ"
+"を修正するには、SpriteFramesパネルのSpeed（FPS）設定を変更します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:66
 msgid ""
 "You can add additional animations by clicking the \"New Animation\" button "
 "and adding additional images."
 msgstr ""
+"[新しいアニメーション]ボタンをクリックして画像を追加すると、アニメーションを"
+"追加できます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:70
-#, fuzzy
 msgid "Controlling the animation"
-msgstr "アニメーション"
+msgstr "アニメーションのコントロール"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:72
 msgid ""
@@ -124,11 +150,13 @@ msgid ""
 "animation while the right arrow key is held, and stop it when the key is "
 "released."
 msgstr ""
+"アニメーションが完了すると、play()メソッドとstop()メソッドを使用して、コード"
+"でアニメーションを制御できます。右矢印キーを押したままアニメーションを再生"
+"し、キーを放したときにアニメーションを停止する簡単な例を次に示します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:90
-#, fuzzy
 msgid "Sprite sheet with AnimationPlayer"
-msgstr "アニメーション"
+msgstr "アニメーションプレイヤーのスプライトシート"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:92
 msgid ""

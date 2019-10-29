@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -324,6 +324,11 @@ msgid ""
 "from there. It gives us access to the node. The second part of the "
 "statement, ``.max_health``, accesses the ``max_health`` on the Player node."
 msgstr ""
+"Schauen wir uns das mal genauer an. ``$\"../Characters/Player\"``` ist eine "
+"Abkürzung, die im Szenenbaum einen Node nach oben geht und von dort aus den "
+"Node ``Characters/Player`` abruft. Das gibt uns Zugang zum Node. Der zweite "
+"Teil der Anweisung, ``.max_health``, greift auf die ``max_health``-Variable "
+"auf dem Player-Node zu."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:170
 msgid ""
@@ -331,6 +336,9 @@ msgid ""
 "the two lines into one, but we'll need to use ``player_max_health`` again "
 "later in the tutorial."
 msgstr ""
+"Die zweite Zeile weist den Wert ``bar.max_value`` zu. Die zwei Zeilen "
+"könnten auch zu einer Kombiniert werden, doch ``player_max_health`` wird "
+"später in der Anleitung noch gebraucht werden."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:174
 msgid ""
@@ -338,6 +346,9 @@ msgid ""
 "game, so we could work with this. Why do we still use ``max_health``? There "
 "are two reasons:"
 msgstr ""
+"Am Anfang des Spieles wird ``health`` auf ``max_health`` gesetzt, damit wir "
+"es gebrauchen können. Warum brauchen wir ``max_health`` immer noch? Es gibt "
+"zwei Gründe:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:178
 msgid ""
@@ -345,6 +356,10 @@ msgid ""
 "``max_health``: a future version of the game may load a level where the "
 "player already lost some health."
 msgstr ""
+"Wir können nicht davon ausgehen, dass ``health`` in jedem Fall "
+"``max_health`` entspricht: Eine spätere Version des Spiels könnte "
+"beispielsweise einen Level laden, in welchem der Spieler bereits etwas "
+"Gesundheit verloren hat."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
 msgid ""
@@ -531,7 +546,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
 msgid "We will reuse this method a bit later"
-msgstr ""
+msgstr "Wir werden diese Methode etwas später wiederverwenden"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:312
 msgid ""

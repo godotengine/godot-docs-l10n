@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:4
-#, fuzzy
 msgid "Your first Spatial shader"
-msgstr "Il tuo primo gioco"
+msgstr "Il tuo primo shader spaziale"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:6
 msgid ""
@@ -178,7 +177,7 @@ msgid ""
 "Notice how there is already error? This is because the shader editor reloads "
 "shaders on the fly. The first thing Godot shaders need is a declaration of "
 "what type of shader they are. We set the variable ``shader_type`` to "
-"``spatial`` becuase this is a spatial shader."
+"``spatial`` because this is a spatial shader."
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:100
@@ -268,9 +267,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:166
-#, fuzzy
 msgid "Once you set it up and should look like this."
-msgstr "L'albero della scena dovrebbe essere simile a questo:"
+msgstr "Una volta che l'hai installato e dovrebbe avere questo aspetto."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:170
 msgid ""
@@ -415,7 +413,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:276
 msgid ""
-"Now, becuase this is a normalmap and not a per-vertex normal. We are going "
+"Now, because this is a normalmap and not a per-vertex normal, we are going "
 "to assign it in the ``fragment()`` function. The ``fragment()`` function "
 "will be explained in more detail in the next part of this tutorial."
 msgstr ""

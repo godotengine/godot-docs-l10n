@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,9 +76,9 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
-"ロゴやアイコンには通常、同じクリエイティブ・コモンズライセンスが適用されま"
-"す。ただし、Godotのソースコードと共に含まれるサードパーティー製ライブラリは、"
-"違うライセンスを使用しているかもしれません。"
+"ロゴ、アイコンはクリエイティブ・コモンズ・ライセンス下で管理しています。補足"
+"としてサードパーティライブラリには、Godotのソースコードとは違うライセンスを含"
+"んでいる可能性があります。"
 
 #: ../../docs/about/faq.rst:24
 msgid ""
@@ -318,20 +318,20 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr "GDScript製作の背景にある動機とはなんだったのでしょうか？"
+msgstr "GDScriptを作った動機はどのようなものですか？"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr "Godot用のカスタムスクリプト言語を作成する主な理由は次のとおりです:"
+msgstr "Godot専用のスクリプト言語を作った主な理由は以下の通りです。"
 
 #: ../../docs/about/faq.rst:126
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
-"ほとんどのスクリプトVMでスレッドのサポートが不十分で、Godot はスレッド(Lua、"
-"Python、Squirrel、JS、AS など)を使用します。"
+"ほとんどのスクリプトVMではスレッドサポートが不十分で、Godotはスレッド（Lua、"
+"Python、Squirrel、JS、ASなど）を使用します。"
 
 #: ../../docs/about/faq.rst:128
 msgid ""
@@ -405,7 +405,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr "Godot3.0の時点では、glTFがサポートされています。"
+msgstr "Godot 3.0の時点で、glTFをサポートしています。"
 
 #: ../../docs/about/faq.rst:153
 msgid ""
@@ -474,8 +474,8 @@ msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
-"複数の解像度やアスペクト比に対応するアセットはどのように作成する必要がありま"
-"すか?"
+"複数の解像度やアスペクト比に対応するアセットを作成するにはどうすればよいです"
+"か？"
 
 #: ../../docs/about/faq.rst:181
 msgid ""
@@ -553,7 +553,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:214
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr "以上です!ゲームは複数の解像度で動作する必要があります。"
+msgstr "これで終わりです！あなたのゲームは複数の解像度で動くことでしょう。"
 
 #: ../../docs/about/faq.rst:216
 msgid ""
@@ -627,6 +627,10 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"まずはじめに見るべきは`issues <https://github.com/godotengine/godot/issues>`"
+"です。あなたの共感を呼ぶIssueを見つけ、`How to Contribute <https://github."
+"com/godotengine/godot/blob/master/CONTRIBUTING.md#contributing-pull-"
+"requests>`でforkや編集の方法を学び、そしてプルリクエストを提出してください。"
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
@@ -644,6 +648,13 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"Godotにアイデアをもたらしたいと思うかもしれません。たとえば、大規模なコアの変"
+"更、他のゲームエンジンの動作の模倣、またはエディターに組み込みたい代替ワーク"
+"フローをもたらすようなものです。これらは素晴らしく、そのようなやる気のある"
+"人々が貢献したいと思っていることに感謝していますが、Godotの焦点は「ロードマッ"
+"プ<https://github.com/godotengine/godot-roadmap/blob/ master / ROADMAP.md> "
+"`_、`バグをつぶして問題に対処する<https://github.com/godotengine/godot/"
+"issues> `_、およびGodotコミュニティメンバー間の会話です。"
 
 #: ../../docs/about/faq.rst:260
 msgid ""
@@ -665,7 +676,7 @@ msgstr ""
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
-msgstr "プロジェクトに必要なため、実装してほしい機能。"
+msgstr "あなたのプロジェクトで必要としているため実装してほしい機能。"
 
 #: ../../docs/about/faq.rst:267
 msgid ""
@@ -674,7 +685,7 @@ msgstr "使い方を学ぶにあたって理解しにくかった概念。"
 
 #: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
-msgstr "ワークフローの最適化したい部分。"
+msgstr "あなたの作業フローにおいて、最適化したい部分。"
 
 #: ../../docs/about/faq.rst:269
 msgid ""
@@ -690,6 +701,9 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
+"Godotに対するあなたのアイデアが歓迎されないとは思わないでください。代わりに、"
+"それらを最初に問題として再定式化してみてください。そうすれば、開発者とコミュ"
+"ニティは、あなたのアイデアを土台にするための機能的基盤を持ちます。"
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -699,16 +713,23 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"コミュニティでアイデアや問題を共有するための良い方法は、ユーザーのストーリー"
+"として共有することです。あなたが 何をしようとしているのか、どのような行動が起"
+"こると予想されるのか、そして実際にどのような行動が起こったのかを説明してくだ"
+"さい。 この方法で問題やアイデアを立案すると、コミュニティ全体が開発者エクスペ"
+"リエンス全体の改善に集中できるようになります。"
 
 #: ../../docs/about/faq.rst:281
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
+"スクリーンショット、具体的な数字、テストケース、またはサンプルプロジェクト"
+"（該当する場合）をもたらすボーナスポイント。"
 
 #: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "なぜGodotはSTL (Standard Template Library)を使わないのですか"
 
 #: ../../docs/about/faq.rst:288
 msgid ""
@@ -716,12 +737,18 @@ msgid ""
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"他のライブラリのように(例えばQt)、GodotはSTLを使いません。私たちはSTLが素晴ら"
+"しい標準的な目的のためのライブラリだと信じています、しかし、私たちはGodotのた"
+"めに特別に必要とはしていません。"
 
 #: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"STLテンプレートは非常に大きなシンボルを作ります、そして巨大のデバッグバイナ"
+"リーを結果として生じます。私たちは、代わりにいくつかのテンプレートをとても短"
+"い名前と共に使います。"
 
 #: ../../docs/about/faq.rst:293
 msgid ""
@@ -730,28 +757,38 @@ msgid ""
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"私たちのコンテナのほとんどは、コピーオンライトを使用してデータの受け渡しに使"
+"用するベクターやパフォーマンスのためにO(1)アクセス時間を必要とするRIDシステム"
+"など、特別なニーズに対応しています。同様に、ハッシュマップの実装は、内部エン"
+"ジンタイプとシームレスに統合するように設計されています。"
 
 #: ../../docs/about/faq.rst:294
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"コンテナにはメモリトラッキングが組み込まれているため、メモリ使用量を追跡でき"
+"ます。"
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"大規模な配列の場合、プールメモリを使用します。これは、事前に割り当てられた"
+"バッファまたは仮想メモリのいずれかにマップできます。"
 
 #: ../../docs/about/faq.rst:296
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"STLが提供するものは基本的で適切な国際化サポートが不足しているため、私たちはカ"
+"スタムString型を使用します。"
 
 #: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "なぜGodotは例外を使わないのですか？"
 
 #: ../../docs/about/faq.rst:301
 msgid ""
@@ -760,16 +797,19 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"私たちは、ゲームが何であれ、クラッシュすべきではないと考えています。予期しな"
+"い状況が発生した場合、Godotはエラーを出力します（スクリプトまでトレース可能）"
+"が、その後、可能な限り正常に回復し、動き続けます。"
 
 #: ../../docs/about/faq.rst:306
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
-msgstr ""
+msgstr "さらに、例外により、実行ファイルのバイナリサイズが大幅に増加します。"
 
 #: ../../docs/about/faq.rst:310
 msgid "Why does Godot not enforce RTTI?"
-msgstr ""
+msgstr "GodotがRTTIを強制しないのはなぜですか？"
 
 #: ../../docs/about/faq.rst:312
 msgid ""
@@ -777,10 +817,14 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
+"Godotには独自の型キャストシステムがあり、オプションで内部でRTTIを使用できま"
+"す。 GodotでRTTIを無効にすると、わずかなパフォーマンスコストで、かなり小さい"
+"バイナリサイズを実現できます。"
 
 #: ../../docs/about/faq.rst:317
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
+"GodotがユーザーにDoD（データ指向設計）の実装を強制しないのはなぜですか？"
 
 #: ../../docs/about/faq.rst:319
 msgid ""
@@ -788,6 +832,9 @@ msgid ""
 "use cache coherency as best as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"多くの重いパフォーマンスタスクのためにGodotが内部的に可能な限り最高のキャッ"
+"シュコヒーレンシーを使用しようとしていますが、ほとんどのユーザーはDoDプラク"
+"ティスを強制する必要はほとんどないと考えています。"
 
 #: ../../docs/about/faq.rst:323
 msgid ""
@@ -797,12 +844,19 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"DoDは主にキャッシュコヒーレンシ最適化であり、何十万ものオブジェクト（ほとんど"
+"変更なしでフレームごとに処理される）を処理する場合にのみ、大幅なパフォーマン"
+"スの向上が得られます。たとえば、フレームごとに数百のスプライトまたは敵を移動"
+"する場合、DoDは役に立ちません。最適化の別のアプローチを検討する必要がありま"
+"す。"
 
 #: ../../docs/about/faq.rst:330
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"ゲームの大部分はこれを必要としません、そして、あなたがそうするとき、Dodotはほ"
+"とんどの場合仕事をするために便利なヘルパーを提供します。"
 
 #: ../../docs/about/faq.rst:333
 msgid ""
@@ -810,6 +864,9 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"このような大量のオブジェクトを本当に処理する必要があるゲームが必要な場合、推"
+"奨されるのは、高性能部分にはC ++とGDNativeを、残りのゲームにはGDScript（また"
+"はC＃）を使用することです。"
 
 #: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"

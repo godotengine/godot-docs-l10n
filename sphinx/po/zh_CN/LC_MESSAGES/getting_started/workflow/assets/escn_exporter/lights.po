@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,25 +25,26 @@ msgstr "灯光"
 msgid ""
 "By default, lamps in Blender have shadows enabled. This can cause "
 "performance issues in Godot."
-msgstr "默认情况下，Blender中的灯泡启用了阴影。 这可能会导致Godot的性能问题。"
+msgstr ""
+"默认情况下，Blender中的灯泡已经启用了阴影。这在Godot中可能会导致性能问题。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:8
 msgid ""
 "Lamps are exported using their \"Blender Render\" settings. When Blender 2.8 "
 "is released, this will be removed and this part of the exporter will change."
 msgstr ""
-"使用“Blender Render”设置导出灯。 当Blender 2.8发布时，这将被删除，导出器的这"
-"一部分将会改变。"
+"灯泡导出时，使用其 ``Blender渲染`` 设置。发行Blender 2.8后，将删除它，并且导"
+"出器的这一部分将更改。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:11
 msgid ""
 "Sun, point and spot lamps are all exported from Blender along with many of "
 "their properties:"
-msgstr "太阳光，点光源和聚光灯都是从Blender导出的，带有许多属性:"
+msgstr "太阳灯、点光源和聚光灯均从Blender导出，并具有许多特性："
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
 msgid "There are some things to note:"
-msgstr "有一些事情需要注意:"
+msgstr "有一些事情需要注意："
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
 msgid ""
@@ -51,15 +52,15 @@ msgid ""
 "clamped by the attenuation distance. To most closely match between the "
 "viewport and Godot, enable the \"Sphere\" checkbox. (Highlighted green)"
 msgstr ""
-"在Blender中，一盏灯一直照射到无限远处。 在Godot中，它被衰减距离钳制。 要在视"
-"区和Godot之间进行最紧密匹配，请启用“球体”复选框。 (以绿色高亮显示)"
+"在Blender中，灯将光线投射到无穷远。在Godot中，它受衰减距离的限制。要在视图和"
+"Godot之间最紧密地匹配，启用 ``球体（Sphere）`` 复选框。(以绿色高亮显示)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:21
 msgid ""
 "Light attenuation models differ between Godot and Blender. The exporter "
 "attempts to make them match, but it isn't always very good."
 msgstr ""
-"Godot和Blender之间的光衰减模型不同。 导出器试图使它们匹配，但并不总是很好。"
+"Godot和Blender之间的光衰减模型不同。导出器试图使它们匹配，但并不总是很好。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:23
 msgid ""
@@ -67,7 +68,7 @@ msgid ""
 "The exporter attempts to make them similar, but it doesn't always look the "
 "same."
 msgstr ""
-"Godot和Blender之间的聚光角度衰减模型也有所不同。 导出器试图使它们相似，但它看"
+"Godot和Blender之间的聚光角度衰减模型也有所不同。导出器试图使它们相似，但它看"
 "起来并不总是相同。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:26

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -587,6 +587,8 @@ msgid ""
 "greater than 0 multiply the AO texture by the SSAO effect to varying "
 "degrees. This does not affect materials without an AO texture."
 msgstr ""
+"** Ao通道影响：**如果使用零值，则仅将材质的AO纹理用于环境光遮挡； SSAO将不适"
+"用。大于0的值会在不同程度上将AO纹理乘以SSAO效果。这不会影响没有AO纹理的材料。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:260
 #, fuzzy

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:4
 msgid "Compiling for X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11のコンパイル (Linux、\\*BSD)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:9
 msgid "Requirements"
@@ -29,10 +29,11 @@ msgstr "必要条件"
 msgid ""
 "For compiling under Linux or other Unix variants, the following is required:"
 msgstr ""
+"Linux またはその他の Unix バリアントでコンパイルするには、次のことが必要です:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:14
 msgid "GCC or Clang"
-msgstr ""
+msgstr "GCCまたはClang"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:15
 msgid "Python 3 or 2.7+"
@@ -44,19 +45,19 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:17
 msgid "pkg-config (used to detect the dependencies below)"
-msgstr ""
+msgstr "pkg-config (以下の依存関係を検出するために使用)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:18
 msgid "X11, Xcursor, Xinerama, Xi and XRandR development libraries"
-msgstr ""
+msgstr "X11、Xcursor、Xinerama、XiおよびXRandR開発ライブラリ"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:19
 msgid "MesaGL development libraries"
-msgstr ""
+msgstr "MesaGL開発ライブラリ"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:20
 msgid "ALSA development libraries"
-msgstr ""
+msgstr "ALSA開発ライブラリ"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:21
 msgid "PulseAudio development libraries"
@@ -78,7 +79,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:29
 msgid "Distro-specific oneliners"
-msgstr ""
+msgstr "Distro-specificワンライナー"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:31
 msgid "**Arch Linux**"
@@ -124,6 +125,8 @@ msgstr "コンパイル"
 msgid ""
 "Start a terminal, go to the root dir of the engine source code and type:"
 msgstr ""
+"ターミナルを起動し、エンジンソースコードのルートディレクトリに移動し、次のよ"
+"うに入力します:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:87
 msgid ""
@@ -139,16 +142,22 @@ msgid ""
 "\" subdirectory. This executable file contains the whole engine and runs "
 "without any dependencies. Executing it will bring up the project manager."
 msgstr ""
+"すべてがうまくいけば、結果として得られるバイナリ実行可能ファイルは「bin」サブ"
+"ディレクトリに配置されます。この実行可能ファイルにはエンジン全体が含まれてお"
+"り、依存関係なしで実行されます。実行すると、プロジェクトマネージャが呼び出さ"
+"れます。"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:98
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr ""
+"GCCではなくClangを使用してコンパイルする場合は、次のコマンドを使用します:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:104
 msgid ""
 "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would "
 "not build."
 msgstr ""
+"Clangを使うことはOpenBSDの要件のようで、そうしないとフォントが作れません。"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:107
 msgid ""
@@ -159,7 +168,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:112
 msgid "Building export templates"
-msgstr ""
+msgstr "エクスポートテンプレートの構築"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:114
 msgid ""
@@ -175,14 +184,16 @@ msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
 msgstr ""
+"X11(Linux、\\*BSD)エクスポートテンプレートをビルドするには、次のパラメーター"
+"を使用してビルド システムを実行します:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:125
 msgid "(32 bits)"
-msgstr ""
+msgstr "(32ビット)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:132
 msgid "(64 bits)"
-msgstr ""
+msgstr "(64ビット)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:139
 msgid ""
@@ -194,12 +205,16 @@ msgstr ""
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
+"標準のエクスポート テンプレートを作成するには、結果のファイルを次の場所にコ"
+"ピーする必要があります:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:148
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
 msgstr ""
+"そして、このように命名されます (Godotでは\\*BSD の場合も「Linux X11」と見なさ"
+"れます):"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:157
 msgid ""
@@ -207,6 +222,8 @@ msgid ""
 "might instead want to configure your binaries as custom export templates "
 "here:"
 msgstr ""
+"ただし、カスタムモジュールまたはカスタムC++ コードを作成する場合は、ここでカ"
+"スタムエクスポート テンプレートとしてバイナリを構成する必要があります:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:163
 msgid ""

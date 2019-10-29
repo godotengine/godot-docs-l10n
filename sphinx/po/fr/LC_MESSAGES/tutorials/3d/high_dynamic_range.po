@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:4
 msgid "Light transport in game engines"
-msgstr ""
+msgstr "Transport de lumière dans les moteurs de jeu"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:7
 msgid "Introduction"
@@ -38,19 +38,28 @@ msgstr ""
 "l'éclairage est installé et le jeu fonctionne."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:14
+#, fuzzy
 msgid ""
 "So at what point does all this \"HDR\" business come into play? To "
 "understand the answer, we need to look at how displays behave."
 msgstr ""
+"Donc, à quel moment intervient ce woubli bougli d' \"HDR\"? Pour comprendre "
+"la réponse, Nous avons besoin de regarder comment se comporte un affichage."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:17
+#, fuzzy
 msgid ""
 "Your display outputs linear light ratios from some maximum to some minimum "
 "intensity. Modern game engines perform complex math on linear light values "
 "in their respective scenes. So what's the problem?"
 msgstr ""
+"La sortie de l'affichage est faites de ratios de lumière linéaire allant "
+"d'un certain maximum à un certain minimum d'intensité. Les moteurs de jeu "
+"modernes utilisent des mathématiques complexes sur ces valeurs de lumières "
+"linéaires dans leurs scènes respectives. Donc quel est le problème?"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:21
+#, fuzzy
 msgid ""
 "The display has a limited range of intensity, depending on the display type. "
 "The game engine renders to an unlimited range of intensity values, however. "
@@ -58,23 +67,40 @@ msgid ""
 "bearing in the game engine; there is only a potentially infinitely wide "
 "range of intensity values generated per frame of rendering."
 msgstr ""
+"L'affichage à une gamme limitée d'intensités, qui dépend du type "
+"d'affichage. Cependant, le moteur de jeu dessine pour une gamme illimitée de "
+"valeurs d'intensité. Tandis que \"intensité maximum\" a un sens pour un "
+"affichage sRGB, il n'en a pas pour le moteur de jeu; il n'y à qu'une "
+"potentiellement infiniment grande gamme de valeurs d'intensités générées par "
+"images affichées."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:27
+#, fuzzy
 msgid ""
 "This means that some transformation of the scene light intensity, also known "
-"as _scene referred_ light ratios, need to be transformed and mapped to fit "
+"as scene-referred light ratios, need to be transformed and mapped to fit "
 "within the particular output range of the chosen display. This can be most "
 "easily understood if we consider virtually photographing our game engine "
 "scene through a virtual camera. Here, our virtual camera would apply a "
 "particular camera rendering transform to the scene data, and the output "
 "would be ready for display on a particular display type."
 msgstr ""
+"Ça signifie que certaines transformation de l'intensité de la lumière de la "
+"scène, connu aussi sous le nom de  _scene referred_ light ratios, ont besoin "
+"d'être transformées et mappé pour appartenir à la gamme particulière "
+"d'intensité choisie pour cet affichage. Ceci peut être plus facilement "
+"compris si on considère virtuellement photographier notre scène du moteur de "
+"jeu à travers une caméra virtuelle. Ici, notre caméra virtuelle applique une "
+"transformation particulière aux données de la scène, et le résultat est prêt "
+"à être affiché pour un type d'affichage particulier."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:36
+#, fuzzy
 msgid "Computer displays"
-msgstr ""
+msgstr "Affichage d'ordinateur"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:38
+#, fuzzy
 msgid ""
 "Almost all displays require a nonlinear encoding for the code values sent to "
 "them. The display in turn, using its unique transfer characteristic, "
@@ -82,6 +108,11 @@ msgid ""
 "the ratios out of the uniquely colored lights at each reddish, greenish, and "
 "blueish emission site."
 msgstr ""
+"Pratiquement chaque type d'affichage requiert un encodage non-linéaire pour "
+"les valeurs que le code leurs envoi. L'affichage, à son tour, passant par "
+"ses uniques caractéristiques de tranfert , \"décode\" les valeurs du code en "
+"des ratio linéaires de lumières et projettent ces ratios depuis les lumières "
+"uniquement colorés à chaque spot d'émission rougeâtre, verdâtre ou bleuâtre ."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:44
 msgid ""
@@ -91,6 +122,12 @@ msgid ""
 "including the color of the lights in the LED pixels as well as the transfer "
 "characteristics of the input (OETF) and output (EOTF)."
 msgstr ""
+"Pour une majorité des affichages faits par ordinateur, les spécifications de "
+"l'affichage sont soulignés en accord avec IEC 61966-2-1, connu aussi sous le "
+"nom des spécifications sRGB de 1996. Ces spécifications indiquent comment un "
+"affichage sRGB devrait se comporter, y compris la couleur de la lumière dans "
+"les LED des pixel ainsi que les caractéristiques du transfert de l'entrée "
+"(OETF) à la sortie (EOTF)."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:50
 msgid ""
@@ -99,14 +136,22 @@ msgid ""
 "be noted that Godot is limited in its pixel management chain, and only "
 "supports sRGB displays currently."
 msgstr ""
+"Cependant, tous les affichage n'utilisent pas les même OETF et EOTF qu'un "
+"affichage d'ordinateur, par exemples, un affichage d'émission télé utilise "
+"le BT.1886 EOTF. Notez bien que Godot est limité dans sa chaîne de gestion "
+"des pixel, et ne tolère que l'affichage sRGB pour le moment."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:55
+#, fuzzy
 msgid ""
 "The sRGB standard is based around the nonlinear relationship between the "
 "current to light output of common desktop computing CRT displays."
 msgstr ""
+"Le standard sRGB est basé autour de la relation non linéaire entre le "
+"courant pour éclairer la sortie de l'affichage CRT d'un bureau commun."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:60
+#, fuzzy
 msgid ""
 "The mathematics of a scene referred model require that we multiply the scene "
 "by different values to adjust the intensities and exposure to different "
@@ -115,6 +160,12 @@ msgid ""
 "simple transfer function of the display however, and therefore a more "
 "complex approach to encoding is required."
 msgstr ""
+"Les mathématiques d'une scène modèle de référence requièrent qu'on multiplie "
+"la scène par différentes valeurs pour ajuster les intensités et exposition "
+"de différentes gamme de lumière. Cependant, La fonction transfert de "
+"l'affichage ne peut pas traiter de manière approprié la gamme dynamique et "
+"grande du résultat de la scène du moteur de jeu avec la simple fonction de "
+"transfert, une approche plus complexe est donc nécessaire."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:68
 #, fuzzy

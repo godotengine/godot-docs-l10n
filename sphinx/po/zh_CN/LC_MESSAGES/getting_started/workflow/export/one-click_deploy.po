@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-02 11:13+0200\n"
+"POT-Creation-Date: 2019-10-29 12:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,52 +26,57 @@ msgid "Sounds good, what is it?"
 msgstr "听起来不错，这是什么？"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
+#, fuzzy
 msgid ""
 "This feature will pop up automatically once a platform is properly "
 "configured and a supported device is connected to the computer. Since things "
 "can go wrong at many levels (platform may not be configured correctly, SDK "
-"may be incorrectly installed, device may be improperly configured, kitty ate "
-"the USB cable, etc.), it's good to let the user know that it exists."
+"may be incorrectly installed, device may be improperly configured, etc.), "
+"it's good to let the user know that it exists."
 msgstr ""
-"正确配置平台并将支持的设备连接到计算机后，此功能将自动弹出。 由于在许多层面上"
-"可能出现问题(平台可能未正确配置，SDK可能安装不正确，设备可能配置不当，小猫吃"
-"了USB线等)，最好让用户知道它存在。"
+"正确配置平台，并将支持的设备连接到计算机后，此功能将自动弹出。 由于可能会在许"
+"多层面上出错（平台可能配置不正确，SDK可能安装不正确，设备可能配置不正确，小猫"
+"吃了USB线等），所以最好让用户知道它的存在。"
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:16
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:15
+#, fuzzy
 msgid ""
-"Some platforms (at the time of this writing, only Android and Blackberry 10) "
-"can detect when a USB device is connected to the computer, and offer the "
-"user to automatically export, install and run the project (in debug mode) on "
-"the device. This feature is called, in industry buzz-words, \"One Click "
-"Deploy\" (though, it's technically two clicks...)."
+"Some platforms (at the time of this writing, only Android) can detect when a "
+"USB device is connected to the computer, and offer the user to automatically "
+"export, install and run the project (in debug mode) on the device. This "
+"feature is called, in industry buzzwords, \"One-Click Deploy\"."
 msgstr ""
-"某些平台(在撰写本文时，只有Android和Blackberry 10)可以检测USB设备何时连接到计"
-"算机，并为用户提供在设备上自动导出，安装和运行项目(在调试模式下)。 在行业热门"
-"话题中，这个功能被称为``一键部署``(但是，从技术上讲，这是两次点击......)。"
+"某些平台（在撰写本文时，仅Android和Blackberry 10）可以检测到USB设备何时连接到"
+"计算机，并为用户提供了在设备上自动导出、安装和运行项目（以调试模式）的功能。"
+"用业界流行的术语来说，此功能称为 ``一键部署`` （尽管从技术上讲，它是两次单"
+"击...）。"
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:21
 msgid "Steps for one-click deploy"
 msgstr "一键部署的步骤"
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:25
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
 msgid "Configure target platform."
 msgstr "配置目标平台。"
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:24
+#, fuzzy
 msgid ""
-"Configure device (make sure it's in developer mode, likes the computer, usb "
-"cable is plugged, usb is recognized, etc.)."
+"Configure device (make sure it's in developer mode, likes the computer, USB "
+"cable is plugged, USB is recognized, etc.)."
 msgstr ""
-"配置设备(确保它处于开发人员模式，就像计算机，usb被识别，usb电缆被插入等)。"
+"配置设备（确保它处于开发人员模式，就像计算机，已插入USB电缆，已识别USB等）。"
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:28
-msgid "Connect the device.."
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
+#, fuzzy
+msgid "Connect the device..."
 msgstr "连接设备.."
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:29
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:27
 msgid "And voilà!"
 msgstr "瞧！"
 
-#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:33
-msgid "Click once.. and deploy!"
+#: ../../docs/getting_started/workflow/export/one-click_deploy.rst:31
+#, fuzzy
+msgid "Click once... and deploy!"
 msgstr "点击一次..然后部署！"
