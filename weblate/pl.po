@@ -17,6 +17,7 @@
 # KolegaLiterat <jawor34@gmail.com>, 2018.
 # luluu9 <maxmax89_89@o2.pl>, 2018.
 # Maciej <WriteToFeniks@gmail.com>, 2019.
+# Michael <michael0march@gmail.com>, 2019.
 # Myver <igormakarowicz@gmail.com>, 2019.
 # Patryk Majos <psychobutterpl@gmail.com>, 2019.
 # Paweł Litwinowicz <spam@litwinowicz.eu>, 2018.
@@ -32,14 +33,15 @@
 # silicius <silicius42@gmail.com>, 2018.
 # Szymon Nowakowski <smnbdg13@gmail.com>, 2019.
 # Tomek <kobewi4e@gmail.com>, 2018-2019.
+# Zamulacz <mcichocki@protonmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-09-02 11:13+0200\n"
-"PO-Revision-Date: 2019-09-01 08:26+0000\n"
-"Last-Translator: Tomek <kobewi4e@gmail.com>\n"
+"PO-Revision-Date: 2019-10-18 18:03+0000\n"
+"Last-Translator: Michael <michael0march@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -48,7 +50,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 3.9.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -160,7 +162,7 @@ msgstr ""
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -277,10 +279,11 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Witaj w oficjalnej dokumentacji Godota, darmowego, otwartoźródłowego i "
-"rozwijanego przez społeczność silnika do tworzenie gier 2D oraz 3D. Jest to "
-"potężne, lecz przyjazne dla użytkownika narzędzie. Za jego pomocą możesz "
-"stworzyć dowolny rodzaj gry, na różne platformę i bez żadnych ograniczeń."
+"Witaj w oficjalnej dokumentacji silnika Godot, darmowego i rozwijanego przez "
+"społeczność silnika open-source do tworzenie gier 2D oraz 3D. Za tymi "
+"słowami stoi potężne, lecz przyjazne użytkownikowi narzędzie, dzięki któremu "
+"możesz stworzyć dowolny rodzaj gry, na dowolną platformę i bez żadnych "
+"ograniczeń."
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -289,13 +292,13 @@ msgid ""
 "where to look if you need info on a specific feature."
 msgstr ""
 "Na tej stronie znajduje się opis możliwości silnika oraz zawartości "
-"dokumentacji. Dzięki temu dowiesz się, od czego zacząć, jeśli jesteś na "
-"początku drogi, lub gdzie szukać informacji, jeśli potrzebujesz wiedzy na "
-"dany temat."
+"dokumentacji. Dzięki temu dowiesz się, od czego zacząć, jeśli jesteś "
+"początkujący, lub gdzie szukać informacji, jeśli potrzebujesz wiedzy na dany "
+"temat."
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Zanim zaczniesz"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -303,6 +306,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"The :ref:`Kursy i zasoby <doc_community_tutorials>` strona z listą kursów "
+"wideo sponsorowana przez społeczność. Jeśli wolisz materiały wideo zamiast "
+"tekstu, może warto się im przyjrzeć."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -321,9 +327,9 @@ msgid ""
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"Silnik gry to skomplikowane narzędzie, więc trudno je zaprezentować używając "
-"zaledwie kilku słów. Poniżej podajemy opis, którego możesz swobodnie użyć, "
-"jeśli chcesz szybko przedstawić czym jest Godot Engine."
+"Silnik gry to złożone narzędzie, które trudno opisać w kilku słowach. Oto "
+"streszczenie najważniejszych informacji, z którego możesz swobodnie "
+"korzystać, jeśli chcesz szybko przedstawić czym jest Godot Engine."
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -336,8 +342,8 @@ msgid ""
 msgstr ""
 "Godot Engine to rozbudowany, wieloplatformowy silnik do tworzenia gier 2D i "
 "3D z poziomu ujednoliconego interfejsu. Dzięki kompleksowemu zestawowi "
-"narzędzi, użytkownicy mogą skupić się na tworzeniu, bez konieczności "
-"wynajdowania koła na nowo. Ponadto, za pomocą jednego kliknięcia możesz "
+"narzędzi, użytkownicy mogą skupić się na tworzeniu gier, bez konieczności "
+"odkrywania na nowo Ameryki. Ponadto, za pomocą jednego kliknięcia możesz "
 "wyeksportować projekt na wiele platform, w tym na najpopularnejsze systemy "
 "na komputery stacjonarne (Linux, macOS, Windows) i mobilne (Android i iOS), "
 "jak również platformę webową (HTML5)."
@@ -386,8 +392,8 @@ msgstr ""
 "reorganizowana przez członków społeczności z użyciem plików tekstowych w "
 "języku  `reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_, "
 "a następnie kompilowana do statycznej strony internetowej lub dokumentu "
-"offline przy pomocy otwartoźródłowych narzędzi `Sphinx <http://www.sphinx-"
-"doc.org>`_ oraz `ReadTheDocs <https://readthedocs.org/>`_ ."
+"offline przy pomocy narzędzi open source`Sphinx <http://www.sphinx-doc."
+"org>`_ oraz `ReadTheDocs <https://readthedocs.org/>`_ ."
 
 #: ../../docs/about/introduction.rst:66
 msgid ""
@@ -397,11 +403,11 @@ msgid ""
 "on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`_."
 msgstr ""
-"Możesz wspomóc dokumentację Godota poprzez stworzenie informacji o błędach "
-"lub tworzenie kodu edytora poprzez pull requesty w naszym repozytorium "
-"źródłowym na GitHubie <https://github.com/godotengine/godot-docs>`_, lub "
-"poprzez tłumaczenie go do twojego języka za pomocą `Hosted Weblate <https://"
-"hosted.weblate.org/projects/godot-engine/godot-docs/>`_."
+"Możesz wspomóc dokumentację Godot'a poprzez otwieranie spraw lub wysyłanie "
+"aktualizacji poprzez pull request'y`na naszym repozytorium źródłowym na "
+"GitHub'ie <https://github.com/godotengine/godot-docs>`_, lub poprzez "
+"tłumaczenie go do twojego języka za pomocą `Hosted Weblate <https://hosted."
+"weblate.org/projects/godot-engine/godot-docs/>`_."
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -434,9 +440,9 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
-"Rozdział :ref:`sec-general` zawiera wprowadzenie, jak również informacje na "
-"temat silnika, jego historii, licencjonowania, autorów, itp. Zawiera "
-"również :ref:`doc_faq`."
+"Sekcja :ref:'sec-general' zawiera zarówno to wprowadzenie, jak i informacje "
+"na temat silnika, jego historii, jego licencjonowania, autorów itp. Zawiera "
+"także :ref:'doc_faq'."
 
 #: ../../docs/about/introduction.rst:86
 msgid ""
@@ -1055,17 +1061,16 @@ msgstr ""
 "by dowiedzieć się więcej."
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
-"Określ minimalną rozdzielczość, a następnie zdecyduj, czy gra ma rozciągać "
-"się pionowo czy poziomo dla różnych proporcji, czy też ma być minimalna "
-"rozdzielczość, a w miejsce brakujących pikselów mają pojawić się czarne "
-"paski. Jest to wyjaśnione w poprzednim kroku."
+"Określ minimalną rozdzielczość, a następnie zdecyduj, czy chcesz, żeby gra "
+"rozciągała się pionowo czy poziomo dla różnych proporcji, czy używała jednej "
+"proporcji i czarnych pasków. Jest to wyjaśnione w :ref:"
+"`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -1265,20 +1270,26 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "Dlaczego Godot nie używa STL (standard Template Library)"
 
 #: ../../docs/about/faq.rst:288
+#, fuzzy
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"Jak wiele innych bibliotek (Qt na przykład), Godot nie używa STL. Uważamy, "
+"że STL jest świetną bibllioteką do zastosowań ogólnych, ale mieliśmy "
+"specjalne wymagania dla Godot'a."
 
 #: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"Szablony STL tworzą bardzo dużo symbolów, czego rezultatem są bardzo duże "
+"debug binaries. W zamian używamy szablonów w małą ilością nazw."
 
 #: ../../docs/about/faq.rst:293
 msgid ""
@@ -1289,10 +1300,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:294
+#, fuzzy
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"Nasze kontenery posiadają wbudowane śledzenie pamięci, co pozwala na lepsze "
+"śledzenie zużycia pamięci."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
@@ -76412,9 +76426,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:39
-#, fuzzy
 msgid "Name"
-msgstr "Nazwa głównego węzła"
+msgstr "Nazwa"
 
 #: ../../docs/development/editor/creating_icons.rst:39
 #, fuzzy

@@ -13,15 +13,19 @@
 # Emre Altinagac <emrealtinagac@gmail.com>, 2019.
 # Gökhan Ersümer <gokhanersumer@gmail.com>, 2019.
 # Güner Acet <kurama632@gmail.com>, 2019.
+# H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2019.
 # İlker Civelek <ilkercivelek34@gmail.com>, 2018.
 # Mehmet Akif Duba <dubamehmetakif@gmail.com>, 2019.
 # Mertcan Duman <mertcan.dmn16@gmail.com>, 2019.
 # monolifed <monolifed@gmail.com>, 2018.
+# Mustafa Turhan <odunluzikkim@gmail.com>, 2019.
 # H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2018.
 # Halil Üneş <halilunes@gmail.com>, 2018.
+# Oguz Ersen <oguzersen@protonmail.com>, 2019.
 # Oğuzhan Özdemir <ozdemiroguzhan0@gmail.com>, 2018.
 # Ömer YAZICIOĞLU <oyazicioglu@gmail.com>, 2019.
 # Onur Sanır <onursanir@gmail.com>, 2018.
+# rayray61 <laladodo000@gmail.com>, 2019.
 # Tuna Soncul <tsoncul@gmail.com>, 2018.
 #
 msgid ""
@@ -29,8 +33,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-09-02 11:13+0200\n"
-"PO-Revision-Date: 2019-07-15 15:55+0000\n"
-"Last-Translator: Mehmet Akif Duba <dubamehmetakif@gmail.com>\n"
+"PO-Revision-Date: 2019-10-27 07:48+0000\n"
+"Last-Translator: Oguz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -38,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -284,28 +288,35 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Başlamadan önce"
 
 #: ../../docs/about/introduction.rst:23
+#, fuzzy
 msgid ""
 "The :ref:`Tutorials and resources <doc_community_tutorials>` page lists "
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+": ref: `Öğreticiler ve kaynaklar <doc_community_tutorials>` sayfası, "
+"topluluk tarafından sağlanan video eğitimlerini listeler. Videoyu metne "
+"tercih ederseniz, bunlar bir göz atmaya değer olabilir."
 
 #: ../../docs/about/introduction.rst:27
+#, fuzzy
 msgid ""
 "In case you have trouble with one of the tutorials or your project, you can "
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Öğreticilerden biriyle veya projenizle ilgili sorun yaşamanız durumunda, "
+"çeşitli konularda yardım bulabilirsiniz: ref: `Topluluk kanalları "
+"<doc_community_channels>`, özellikle Godot Discord topluluğu, S&C ve IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
 msgstr "Godot Engine Hakkında"
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
@@ -313,7 +324,7 @@ msgid ""
 msgstr ""
 "Bir oyun motoru karmaşık bir araçtır ve bu nedenle Godot'u birkaç kelimeyle "
 "sunmak zordur. İşte Godot Engine hakkında hızlı bir yazılıma ihtiyaç "
-"duyduğunuzda tekrar kullanmakta olduğunuz hızlı bir özet."
+"duyduğunuzda tekrar kullanmakta özgür olduğunuz hızlı bir özet."
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -356,7 +367,6 @@ msgid "About the documentation"
 msgstr "Belgeleme hakkında"
 
 #: ../../docs/about/introduction.rst:59
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -365,12 +375,12 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"Bu dokümantasyon, Godot Engine topluluğunun üyeleri tarafından sürekli "
-"olarak yazılmakta, düzeltilmekte ve yenilenmektedir. `reStructuredText "
-"<http://www.sphinx-doc.org/en/stable/rest.html>`_ biçimlendirme dilinde "
-"metin dosyaları aracılığıyla düzenlenir ve ardından açık kaynak `Sphinx "
-"<http://www.sphinx-doc.org>`_ ve `ReadTheDocs <https://readthedocs.org/>`_ "
-"araçlarını kullanarak statik bir web sitesi / çevrimdışı belgeye derlenir."
+"Bu belgeler, Godot Engine topluluğunun üyeleri tarafından sürekli olarak "
+"yazılmakta, düzeltilmekte ve yenilenmektedir. `reStructuredText <http://www."
+"sphinx-doc.org/en/stable/rest.html>`_ biçimlendirme dilinde metin dosyaları "
+"aracılığıyla düzenlenir ve ardından açık kaynak `Sphinx <http://www.sphinx-"
+"doc.org>`_ ve `ReadTheDocs <https://readthedocs.org/>`_ araçlarını "
+"kullanarak sabit bir web sitesi / çevrimdışı belgeye derlenir."
 
 #: ../../docs/about/introduction.rst:66
 msgid ""
@@ -530,8 +540,9 @@ msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Godot'u canınızın istediği gibi düzenleyebilir, yeniden dağıtabilir ve "
-"yeniden düzenleyebilirsiniz"
+"Herhangi bir nedenle, hem ticari olarak hem de ticari olmadan Godot'u "
+"içinizden geldiği gibi değiştirme, dağıtma, yeniden dağıtma ve yeniden "
+"düzenlemekte özgürsünüz."
 
 #: ../../docs/about/faq.rst:16
 msgid ""
@@ -836,12 +847,17 @@ msgstr ""
 "Godot'a uyarlamanın oldukça verimsiz olması (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:130
+#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
+"Pek çok dil C ++ 'a bağlanmak için korkunç arayüzlere sahipler, bu da büyük "
+"miktarda kod, hata, darboğaz ve genel verimsizlikle sonuçlanıyor (Lua, "
+"Python, Squirrel, JS, vb.) Harika bir motora odaklanmak istedik. Tonla "
+"soruna değil"
 
 #: ../../docs/about/faq.rst:133
 #, fuzzy
@@ -854,10 +870,13 @@ msgstr ""
 "yoktur."
 
 #: ../../docs/about/faq.rst:136
+#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
+"Çöp toplayıcı, hız kaybına ya da gereksiz yere büyük bellek kullanımına(Lua, "
+"Python, JS, AS, vb.) sebep olur"
 
 #: ../../docs/about/faq.rst:138
 msgid ""
@@ -16120,7 +16139,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr ""
+msgstr "Örgü"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -16156,7 +16175,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
 #: ../../docs/development/file_formats/tscn.rst:161
 msgid "Skeleton"
-msgstr ""
+msgstr "İskelet"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
@@ -23406,7 +23425,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:310
 msgid "Emission Mask"
-msgstr ""
+msgstr "Emisyon Maskesi"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:312
 msgid "Three types of emission masks can be generated from a texture:"
@@ -23433,7 +23452,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:331
 msgid "Emission Colors"
-msgstr ""
+msgstr "Emisyon Renkleri"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:333
 msgid ""
@@ -42415,9 +42434,8 @@ msgid "Once you are all set, you will get much better results:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "AnimationTree"
-msgstr "Animasyon"
+msgstr "AnimasyonAğacı"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -47387,7 +47405,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:27
 msgid ""
@@ -47659,7 +47677,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:112
 #: ../../docs/tutorials/viewports/viewports.rst:38
 msgid "Input"
-msgstr ""
+msgstr "Giriş"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:114
 msgid ""
@@ -56601,7 +56619,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
 msgid "Asset Library"
-msgstr ""
+msgstr "Varlık Kütüphanesi"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
@@ -66424,7 +66442,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
 msgid "Small Deploy with Network FS"
-msgstr ""
+msgstr "Ağ DS ile Küçük Dağıtım"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid ""
@@ -67025,7 +67043,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:138
 msgid "Target"
-msgstr ""
+msgstr "Hedef"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:140
 msgid "Target controls optimization and debug flags. Each mode means:"
@@ -69868,7 +69886,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
-msgstr ""
+msgstr "Vektör"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
@@ -71496,7 +71514,7 @@ msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid "Name"
-msgstr ""
+msgstr "İsim"
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid "Filename"
@@ -74843,7 +74861,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
-msgstr ""
+msgstr "S&C"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"

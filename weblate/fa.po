@@ -2,9 +2,11 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Ali Khomami P <a.khomami@outlook.com>, 2019.
 # Alireza Firouzi <pikhosh@gmail.com>, 2019.
 # Amir Hossein Mafi <theotheramir@gmail.com>, 2018.
 # Dante Marshal <Marshal.Devilhunter@gmail.com>, 2018.
+# Focus <saeeddashticlash@gmail.com>, 2019.
 # hdteav <hdteav@gmail.com>, 2019.
 # Kiarash Bahrami <kbbtc1337@gmail.com>, 2019.
 # Mahdi <sadisticwarlock@gmail.com>, 2018.
@@ -17,8 +19,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-09-02 11:13+0200\n"
-"PO-Revision-Date: 2019-05-21 11:16+0000\n"
-"Last-Translator: hdteav <hdteav@gmail.com>\n"
+"PO-Revision-Date: 2019-09-26 11:59+0000\n"
+"Last-Translator: Focus <saeeddashticlash@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fa/>\n"
 "Language: fa\n"
@@ -26,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7-dev\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -136,7 +138,7 @@ msgstr ""
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "ویجت صفحه وب"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -272,7 +274,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "پیش از آغاز"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -280,6 +282,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"صفحه: ref: `آموزش ها و منابع <doc_community_tutorials>\" آموزش های ویدئویی "
+"را که توسط انجمن کمک می کند لیست می کند. اگر فیلم را به متن ترجیح می دهید ، "
+"ممکن است اینها ارزش دیدن داشته باشند."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -287,6 +292,9 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"اگر با یکی از آموزش ها یا پروژه خود مشکلی دارید ، می توانید در مورد موارد "
+"مختلف کمک کنید: Ref: `کانالهای انجمن <doc_community_channels>» ، به ویژه "
+"انجمن Godot Discord ، پرسش و پاسخ و IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -453,6 +461,10 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
+"بخش: ref: 'sec-community' اطلاعات مربوط به کمک به توسعه موتور و عمر جامعه آن "
+"را ارائه می دهد ، به عنوان مثال. نحوه گزارش اشکالات ، کمک به مستندات ، و "
+"غیره همچنین به کانالهای مختلف اجتماعی مانند IRC و Discord اشاره دارد و حاوی "
+"لیستی از آموزشهای توصیه شده شخص ثالث در خارج از این اسناد است."
 
 #: ../../docs/about/introduction.rst:101
 msgid ""
@@ -462,6 +474,11 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
+"سرانجام ،: ref: `sec-class-ref` اسناد مربوط به API Godot است ، که مستقیماً در "
+"داخل ویرایشگر اسکریپت موتور نیز موجود است. به طور خودکار از یک پرونده در "
+"مخزن منبع اصلی تولید می شود ، بنابراین فایل های تولید شده از اسناد مستلزم "
+"تغییر نیستند. برای جزئیات بیشتر به این بخش مراجعه کنید: Ref: "
+"`doc_updating_the_class_reference`"
 
 #: ../../docs/about/introduction.rst:107
 msgid ""
@@ -469,6 +486,8 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
+"علاوه بر این اسناد همچنین ممکن است بخواهید به پروژه های مختلف نمایشی Godot "
+"<https://github.com/godotengine/godot-demo-projects> `_ نگاهی بیندازید."
 
 #: ../../docs/about/introduction.rst:110
 msgid "Have fun reading and making games with Godot Engine!"
@@ -493,6 +512,10 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
+"Godot نرم افزار منبع آزاد و منبع آزاد <https://en.wikipedia.org/wiki/"
+"Free_and_open-source_software> `_ است که تحت\" OSI- تأیید شده <<https://"
+"opensource.org/licenses/MIT> `_ موجود است مجوز MIT این بدان معناست که هم "
+"مانند \"گفتار آزاد\" و هم در \"آبجو آزاد\" رایگان است."
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -503,12 +526,16 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
+"شما می توانید Godot را برای هر منظور ، شخصی ، غیرانتفاعی ، تجاری یا موارد "
+"دیگری بارگیری و استفاده کنید."
 
 #: ../../docs/about/faq.rst:14
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
+"شما به هر دلیلی ، غیر از نظر تجاری و تجاری ، می توانید گودوت را به محتوای "
+"قلب خود تغییر داده ، توزیع ، توزیع و توزیع مجدد کنید."
 
 #: ../../docs/about/faq.rst:16
 #, fuzzy
@@ -528,6 +555,9 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
+"نمادها و ایکون ها معمولاً تحت مجوز Creative Commons قرار دارند. توجه داشته "
+"باشید که برخی از کتابخانه های شخص ثالث با کد منبع گودوت ممکن است دارای "
+"مجوزهای متفاوتی باشند."
 
 #: ../../docs/about/faq.rst:24
 msgid ""
@@ -537,71 +567,81 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"برای جزئیات کامل ، به \"COPYRIGHT.txt <https://github.com/godotengine/godot/"
+"blob/master/COPYRIGHT.txt>` _ و همچنین \"LICENSE.txt <https://github.com "
+"مراجعه کنید. /godotengine/godot/blob/master/LICENSE.txt>`_ و `LOGO_LICENSE."
+"txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>` _ "
+"پرونده ها در مخزن گودوت."
 
 #: ../../docs/about/faq.rst:28
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
+"همچنین ، به صفحه مجوز در وب سایت Godot <https://godotengine.org/license> `_ "
+"مراجعه کنید."
 
 #: ../../docs/about/faq.rst:31
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "کدام سیستم عامل توسط Godot پشتیبانی می شود؟"
 
 #: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
-msgstr ""
+msgstr "** برای ویرایشگر: **"
 
 #: ../../docs/about/faq.rst:35
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:39
 #: ../../docs/tutorials/misc/jitter_stutter.rst:53
 msgid "Windows"
-msgstr ""
+msgstr "ویندوز"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 #: ../../docs/tutorials/misc/jitter_stutter.rst:78
 msgid "macOS"
-msgstr ""
+msgstr "مک او اس"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "(X11 (Linux, \\*BSD"
 
 #: ../../docs/about/faq.rst:39
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "** برای صادر بازی های خود: **"
 
 #: ../../docs/about/faq.rst:41
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "(Windows (and UWP"
 
 #: ../../docs/about/faq.rst:44
 #: ../../docs/getting_started/step_by_step/exporting.rst:186
 #: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "Android"
-msgstr ""
+msgstr "اندروید"
 
 #: ../../docs/about/faq.rst:45
 #: ../../docs/getting_started/step_by_step/exporting.rst:238
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
 msgid "iOS"
-msgstr ""
+msgstr "آی او اس"
 
 #: ../../docs/about/faq.rst:46
 msgid "Web"
-msgstr ""
+msgstr "وب"
 
 #: ../../docs/about/faq.rst:48
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
+"هر دو باینری 32 و 64 بیتی در جایی پشتیبانی می شوند که 64 پیش فرض آن است."
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"برخی از کاربران همچنین ساختمان و استفاده از Godot را با موفقیت در سیستمهای "
+"مبتنی بر ARM با لینوکس ، مانند Raspberry Pi گزارش می دهند."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
@@ -609,16 +649,22 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
+"علاوه بر این ، کارهای غیر رسمی شخص ثالث در ساخت برخی از کنسول ها انجام می "
+"شود. با این حال ، هیچ یک از این موارد در اسکریپت های ساخت پیش فرض یا الگوهای "
+"صادراتی در این زمان گنجانده نشده است."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"برای اطلاعات بیشتر در این مورد ، به بخشهای زیر مراجعه کنید: Ref: `eksporting "
+"<toc-learn-workflow-export>\" و: ref: `گردآوری Godot خودتان <toc-devel-"
+"compiling>\"."
 
 #: ../../docs/about/faq.rst:62
 msgid "Which programming languages are supported in Godot?"
-msgstr ""
+msgstr "از کدام زبانهای برنامه نویسی در Godot پشتیبانی می شود؟"
 
 #: ../../docs/about/faq.rst:64
 msgid ""
@@ -626,6 +672,9 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"زبانهای رسمی پشتیبانی شده برای Godot عبارتند از: GDScript ، Visual "
+"Scriptting ، C # و C ++. زیر شاخه های مربوط به هر زبان را در بخش: ref: "
+"`scripting <toc-learn-scripting>\" مشاهده کنید."
 
 #: ../../docs/about/faq.rst:68
 msgid ""
@@ -636,6 +685,12 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"اگر تازه شروع به کار با Godot یا توسعه بازی کرده اید ، GDScript زبان "
+"پیشنهادی برای یادگیری و استفاده است زیرا مخصوص گودوت طراحی شده است. در حالی "
+"که در طولانی مدت زبانهای اسکریپتیت نسبت به زبانهای سطح پایین عملکرد کمتری "
+"دارند ، برای نمونه سازی ، تولید حداقل محصولات قابل دوام (MVP) و تمرکز روی "
+"Time-to-Market (TTM) ، GDScript روشی سریع ، دوستانه و توانمند برای توسعه "
+"بازی های شما ارائه می دهد."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -647,6 +702,12 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"توجه داشته باشید که پشتیبانی C # هنوز هم نسبتاً جدید است و به همین ترتیب ، "
+"ممکن است در طول مسیر با برخی مسائل روبرو شوید. جامعه توسعه دوستانه و سخت کوش "
+"ما همیشه آماده است تا با بروز مشکلات جدید برطرف شود ، اما از آنجا که این یک "
+"پروژه منبع باز است ، توصیه می کنیم  شروع خودتان را با دقت انجام دهید. جستجوی "
+"بحث در مورد \"موضوعات باز\" <https://github.com/godotengine/godot/issues> `_ "
+"یک راه عالی برای شروع عیب یابی شما است."
 
 #: ../../docs/about/faq.rst:82
 msgid ""
@@ -656,10 +717,16 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"درمورد زبانهای جدید ، پشتیبانی از طریق اشخاص ثالث با استفاده از امکانات "
+"GDNative / NativeScript / PluginScript امکان پذیر است. (به سؤال در مورد "
+"افزونه های زیر مراجعه کنید.) در حال حاضر کار در حال انجام است ، به عنوان "
+"مثال ، در مورد تعهدات غیر رسمی برای Godot به `پایتون <https://github.com/"
+"touilleMan/godot-python>` _ و `Nim <https: // github.com/pragmagic/godot-"
+"nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "GDScript چیست و چرا باید از آن استفاده کنم؟"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -671,6 +738,13 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"GDScript زبان برنامه نویسی یکپارچه Godot است. در این زبان از حد اکثر قدرت "
+"گودوت استفاده میشود و کد کمتری نوشته میشود ، به توسعه دهندگان تازه کار و "
+"متخصص نیز امکان می دهد تا از نقاط قوت گودوت در سریعترین زمان ممکن بهره "
+"ببرند. اگر قبلاً چیزی را به زبانی مانند پایتون نوشتید ، حس در خانه بودن را "
+"احساس می کنید. به عنوان مثال ، تاریخچه ، و یک مرور کامل درباره قدرت GDScript "
+"به شما ارائه می دهد ، زیر را بررسی کنید: Ref: `راهنمای اسکریپتینگ GDScript "
+"<doc_gdscript>."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -679,6 +753,9 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"دلایل مختلفی برای استفاده از GDScript وجود دارد - به ویژه هنگامی که در حال "
+"نمونه سازی هستید ، در مراحل آلفا / بتا پروژه خود ، یا در حال ایجاد عنوان "
+"بعدی AAA نیستید - اما برجسته ترین دلیل کاهش کلی پیچیدگی است. **"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -692,6 +769,14 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"هدف اصلی ایجاد یک زبان اسکریپتینگ کاملاً یکپارچه و سفارشی برای Godot دو "
+"برابری بود: اول این که زمان لازم برای بلند شدن و دویدن با Godot را کاهش می "
+"دهد و به توسعه دهندگان راه سریع می دهد تا خود را با تمرکز در معرض موتور قرار "
+"دهند. در بهره وری؛ دوم ، این باعث کاهش بار کلی تعمیر و نگهداری می شود ، "
+"ابعاد بعدی مسائل را کاهش می دهد و به توسعه دهندگان موتور اجازه می دهد تا بر "
+"روی اشکالات خرد شده و بهبود ویژگی های مربوط به هسته موتور تمرکز کنند - به "
+"جای اینکه زمان زیادی را برای تلاش برای بدست آوردن وقت صرف کنند. مجموعه ای از "
+"ویژگی های افزایشی که در مجموعه زیادی از زبانها کار می کنند."
 
 #: ../../docs/about/faq.rst:109
 msgid ""
@@ -705,6 +790,14 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
+"از آنجا که گودوت یک پروژه منبع باز است ، از ابتدا ضروری است یک تجربه یکپارچه "
+"تر و یکپارچه تر را در جذب کاربران اضافی با پشتیبانی از زبانهای برنامه نویسی "
+"آشنا تر اولویت بندی کنید - به ویژه هنگامی که پشتیبانی از این زبانهای آشنا "
+"باعث بدتر شدن تجربه می شود. ما می دانیم که آیا ترجیح می دهید از زبان دیگری "
+"در Godot استفاده کنید (به لیست گزینه های پشتیبانی شده در بالا مراجعه کنید). "
+"گفته می شود ، اگر GDScript را امتحان نکرده اید ، آن را برای ** سه روز ** "
+"امتحان کنید. ** درست مثل گودوت ، هنگامی که دیدید چقدر قدرتمند است و توسعه "
+"شما سریع می شود ، فکر می کنیم GDScript روی شما رشد خواهد کرد."
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -712,77 +805,100 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"اطلاعات بیشتر در مورد راحتی با GDScript یا زبانهای تایپ شده پویا را می "
+"توانید در آموزش: ref: `doc_gdscript_more_efficiently` پیدا کنید."
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "انگیزه ایجاد GDScript چیست؟"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr ""
+msgstr "دلایل اصلی ایجاد یک زبان برنامه نویسی سفارشی برای Godot عبارتند از:"
 
 #: ../../docs/about/faq.rst:126
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
+"پشتیبانی موضعی ضعیف در اکثر VM های اسکریپت وجود دارد و گودوت از موضوعات "
+"استفاده می کند(Lua, Python, Squirrel, JS, AS, etc.)"
 
 #: ../../docs/about/faq.rst:128
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"پشتیبانی ضعیف از کلاس در اکثر VM های سازنده اسکریپت و تطبیق با نحوه کار "
+"گودوت بسیار ناکارآمد است (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:130
+#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
+"بسیاری از زبانهای موجود رابط های وحشتناکی برای اتصال به C ++ دارند و در "
+"نتیجه مقدار زیادی کد ، اشکالات ، تنگناها و ناکارآمدی عمومی (Lua ، Python ، "
+"Squirrel ، JS و غیره) ما می خواستیم روی یک موتور عالی تمرکز کنیم ، نه مقدار "
+"زیادی ادغام"
 
 #: ../../docs/about/faq.rst:133
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"هیچ نوع وکتور بومی (vector3 ، matrix4 و غیره) وجود ندارد و در نتیجه استفاده "
+"از انواع سفارشی باعث کاهش عملکرد می شود"
 
 #: ../../docs/about/faq.rst:136
+#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
+"جمع آوری زباله منجر به اصطبل یا استفاده غیرمعمول از حافظه بزرگ (Lua ، "
+"Python ، JS ، AS و غیره) می شود."
 
 #: ../../docs/about/faq.rst:138
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
+"مشکل در ادغام با ویرایشگر کد برای تهیه تکمیل کد ، ویرایش زنده و غیره (همه "
+"آنها). این به خوبی توسط GDScript پشتیبانی می شود."
 
 #: ../../docs/about/faq.rst:142
 msgid "GDScript was designed to curtail the issues above and more."
-msgstr ""
+msgstr "GDScript برای محدود کردن موارد فوق و موارد دیگر طراحی شده است."
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "چه نوع از قالب های مدل سه بعدی از Godot پشتیبانی می کند؟"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
+"Godot از طریق \"OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/"
+"wiki/OpenCOLLADA-Tools>` صادر کننده (مایا ، 3DSMax) از Collada پشتیبانی می "
+"کند."
 
 #: ../../docs/about/faq.rst:149
 msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"اگر از Blender استفاده می کنید ، به \"صادر کننده Better Collada\" <https://"
+"godotengine.org/download> `_ نگاهی بیندازید."
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "در مورد Godot 3.0 ، glTF پشتیبانی می شود."
 
 #: ../../docs/about/faq.rst:153
 msgid ""
@@ -792,11 +908,16 @@ msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question below.)"
 msgstr ""
+"FBX SDK دارای مجوز محدود کننده ای است <https://www.blender.org/bf/"
+"Autodesk_FBX_License.rtf> `_ ، که با\" مجوز باز \"ناسازگار است. ارائه شده "
+"توسط گودوت. گفته می شود ، پشتیبانی FBX هنوز هم می تواند توسط اشخاص ثالث به "
+"عنوان افزونه ارائه شود. (سؤال پلاگین ها را در زیر مشاهده کنید.)"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
+"آیا [SDK بسته مانند FMOD ، GameWorks ، و غیره] را در گودوت پشتیبانی می کنید؟"
 
 #: ../../docs/about/faq.rst:161
 msgid ""
@@ -805,6 +926,10 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"هدف گودوت ایجاد یک موتور دارای مجوز MIT رایگان و منبع باز است که مدولار و "
+"قابل تمدید است. هیچ برنامه ای برای جامعه اصلی تولید موتور برای پشتیبانی از "
+"SDK های شخص ثالث ، منبع بسته / اختصاصی وجود ندارد ، زیرا ادغام با اینها خلاف "
+"اخلاق گودوت خواهد بود."
 
 #: ../../docs/about/faq.rst:166
 msgid ""
@@ -812,12 +937,17 @@ msgid ""
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
+"این گفته ، زیرا Godot منبع باز و مدولار است ، هیچ چیز مانع شما یا هر شخص "
+"دیگری نمی شود که آن کتابخانه ها را به عنوان ماژول اضافه کنید و بازی خود را "
+"با آنها - به صورت منبع باز یا بسته - ارسال کنید."
 
 #: ../../docs/about/faq.rst:170
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
+"برای دیدن اینکه چگونه می توان پشتیبانی SDK مورد نظر خود را ارائه داد ، به "
+"سؤال پلاگین های زیر توجه کنید."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -826,12 +956,18 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"اگر از SDK شخص ثالث اطلاع دارید که توسط Godot پشتیبانی نمی شود اما یکپارچه "
+"سازی رایگان و منبع باز را ارائه می دهد ، خودتان شروع به کار کنید. گودوت "
+"متعلق به یک نفر نیست؛ متعلق به جامعه است ، و در کنار همفکران  جامعه مانند "
+"شما رشد می کند."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
+"چگونه باید دارایی یا (assets) ایجاد شود تا چندین رزولیشن و نسبت ابعاد را "
+"کنترل کند؟"
 
 #: ../../docs/about/faq.rst:181
 msgid ""
@@ -843,6 +979,13 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"این سؤال غالباً مطرح می شود و احتمالاً به لطف سوء تفاهم ایجاد شده توسط اپل "
+"هنگامی که در ابتدا وضوح دستگاه های خود را دو برابر کرده است. این باعث می شد "
+"مردم فکر کنند که داشتن دارایی (assets)های یکسان در رزولیشن های مختلف ایده "
+"خوبی است ، بنابراین بسیاری به آن مسیر ادامه دادند. این در ابتدا تا حدودی و "
+"فقط برای دستگاه های اپل کار می کرد ، اما پس از آن چندین دستگاه اندرویدی و "
+"اپل با وضوح متفاوت و نسبت ابعاد ، با اندازه ها و DPI های بسیار گسترده ای "
+"ایجاد شدند."
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -851,6 +994,10 @@ msgid ""
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
+"رایج ترین و مناسب ترین راه برای دستیابی به این هدف ، در عوض استفاده از یک "
+"رزولوشن پایه واحد برای بازی است و فقط نسبت های مختلف صفحه را کنترل می کند. "
+"این بیشتر برای 2D مورد نیاز است ، زیرا در 3D فقط موضوع دوربین XFov یا YFov "
+"است."
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -861,6 +1008,13 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"یک رزولوشن پایه واحد برای بازی خود انتخاب کنید. حتی اگر دستگاه هایی وجود "
+"داشته باشد که از 2K بالا برود و دستگاه هایی که تا 400p پایین می آیند ، مقیاس "
+"گذاری سخت افزاری منظم در دستگاه شما با کمترین هزینه و یا هیچ هزینه عملکردی "
+"از این امر مراقبت می کند. بیشترین انتخاب ها یا نزدیک به 1080p (1920x1080) یا "
+"720p (1280x720) هستند. به خاطر داشته باشید هر چه وضوح تصویر بالاتر باشد ، "
+"دارایی (assets) شما بزرگتر است ، حافظه بیشتری از آنها خواهد گرفت و مدت زمان "
+"لود شدن بیشتر خواهد بود."
 
 #: ../../docs/about/faq.rst:201
 msgid ""
@@ -868,6 +1022,9 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
+"از گزینه های کشش در گودوت استفاده کنید. کشش 2D در حالی که نسبت های ابعادی را "
+"حفظ می کند بهتر عمل می کند. در مورد چگونگی دستیابی به این موضوع ، آموزش: "
+"ref: `doc_multiple_resolutions» را بررسی کنید."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -876,6 +1033,10 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
+"حداقل وضوح تصویر را تعیین کنید و سپس تصمیم بگیرید که آیا می خواهید بازی شما "
+"به نسبت عمودی یا افقی به نسبت ابعاد مختلف کشیده شود یا اگر یک نسبت ابعاد "
+"وجود دارد یا می خواهید به جای آن میله های سیاه ظاهر شوید. این همچنین در "
+"توضیح داده شده است: Ref: `doc_multiple_resolutions»."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -883,10 +1044,13 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"برای رابط های کاربر ، از: ref: `لنگر دادن <doc_size_and_anchors>» استفاده "
+"کنید تا مشخص شود که کنترل ها در کجا باید بمانند و حرکت کنند. اگر UI ها "
+"پیچیده تر هستند ، یادگیری در مورد Containers را در نظر بگیرید."
 
 #: ../../docs/about/faq.rst:214
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr ""
+msgstr "و همین! بازی شما باید با وضوح چندگانه کار کند."
 
 #: ../../docs/about/faq.rst:216
 msgid ""
@@ -895,10 +1059,14 @@ msgid ""
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
+"اگر تمایل به ساخت بازی شما بر روی دستگاههای قدیمی با صفحه نمایشهای کوچک (عرض "
+"کمتر از 300 پیکسل) وجود دارد ، می توانید از گزینه Export برای کوچک کردن "
+"تصاویر استفاده کنید ، و تنظیم کنید که ساخته شده برای اندازه های خاص صفحه در "
+"App Store یا Google Play استفاده شود."
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "چگونه می توان گودوت را گسترش داد؟"
 
 #: ../../docs/about/faq.rst:224
 msgid ""
@@ -906,20 +1074,25 @@ msgid ""
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
+"برای گسترش Godot ، مانند ایجاد افزونه های Godot Editor یا اضافه کردن "
+"پشتیبانی از زبان های اضافی ، به: Ref: `EditorPlugins <doc_making_plugins> و "
+"اسکریپت های ابزار نگاهی بیندازید."
 
 #: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
-msgstr ""
+msgstr "همچنین ، پست های رسمی وبلاگ را در این موضوعات مشاهده کنید:"
 
 #: ../../docs/about/faq.rst:230
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
+"` نگاهی به معماری   <https://godotengine.org/article/look-gdnative-"
+"architecture>`_"
 
 #: ../../docs/about/faq.rst:231
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr ""
+msgstr "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
 msgid ""
@@ -928,16 +1101,22 @@ msgid ""
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
+"همچنین می توانید نگاهی به اجرای GDScript ، ماژول های Godot و همچنین پشتیبانی "
+"'غیر رسمی پایتون <https://github.com/touilleMan/godot-python> `_ برای Godot "
+"بیندازید. این یک نقطه شروع خوب برای دیدن چگونگی ادغام کتابخانه شخص ثالث با "
+"گودوت خواهد بود."
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "من می خواهم مشارکت کنم! چگونه می توانم شروع کنم؟"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"عالی! به عنوان یک پروژه منبع باز ، Godot از نوآوری و جاه طلبی برای توسعه "
+"دهندگان مانند شما رونق می گیرد."
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -947,10 +1126,15 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"اولین جایی که برای شروع کار در بخش های <https://github.com/godotengine/godot/"
+"issues> `_ است. موضوعی را پیدا کنید که با شما طنین انداز باشد ، سپس به "
+"\"نحوه کمک به <https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
+"md#contributing-pull-requests>\" _ مراجعه کنید تا یاد بگیرید چگونه چنگال ، "
+"اصلاح ، و ارسال درخواست (PR) را با تغییرات خود ارسال کنید."
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "من ایده خوبی برای Godot دارم. چگونه می توانم آن را به اشتراک بگذارم؟"
 
 #: ../../docs/about/faq.rst:251
 msgid ""
@@ -964,39 +1148,54 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"این ممکن است وسوسه انگیز باشد که بخواهیم ایده هایی را به Godot بیاوریم ، "
+"مانند مواردی که منجر به تغییرات اساسی در هسته می شوند ، نوعی تقلید از کاری "
+"که موتور بازی دیگری انجام می دهد یا جریان کاری جایگزین که می خواهید در "
+"ویرایشگر ایجاد کنید. اینها عالی هستند و ما از اینکه چنین افرادی با انگیزه می "
+"خواهند مشارکت داشته باشند ، سپاسگزاریم ، اما تمرکز گودوت همیشه عملکرد اصلی "
+"است همانطور که در نقشه راه شرح داده شده است. master / ROADMAP.md> `_ ،` رفع "
+"اشکالات و پرداختن به مشکلات <https://github.com/godotengine/godot/issues> `_ "
+"و گفتگوهای بین اعضای جامعه گودوت."
 
 #: ../../docs/about/faq.rst:260
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
+"بیشتر توسعه دهندگان در انجمن Godot بیشتر علاقه مند خواهند شد در مورد چیزهایی "
+"مانند:"
 
 #: ../../docs/about/faq.rst:263
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"تجربه شما با استفاده از نرم افزار و مشکلاتی که دارید (ما بیش از ایده هایی در "
+"مورد چگونگی بهبود آن به این مهم اهمیت می دهیم)."
 
 #: ../../docs/about/faq.rst:265
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
+"ویژگی هایی که مایلید آنها را اجرا کنید زیرا به آنها برای پروژه خود نیاز "
+"دارید."
 
 #: ../../docs/about/faq.rst:267
 msgid ""
 "The concepts that were difficult to understand while learning the software."
-msgstr ""
+msgstr "مفاهیمی که درک آن هنگام یادگیری نرم افزار دشوار بود."
 
 #: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
-msgstr ""
+msgstr "قسمت هایی از گردش کار شما را می خواهید بهینه سازی کنید."
 
 #: ../../docs/about/faq.rst:269
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr ""
+"بخش هایی که آموزش های واضح را از دست داده اید یا جایی که مستندات مشخص نیست."
 
 #: ../../docs/about/faq.rst:271
 msgid ""
@@ -1004,6 +1203,9 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
+"لطفا احساس نکنید که ایده های شما برای Godot ناخواسته است. در عوض ، ابتدا سعی "
+"کنید آنها را به عنوان یک مشکل اصلاح کنید ، بنابراین توسعه دهندگان و جامعه یک "
+"پایه عملکردی دارند تا بتوانند ایده های خود را پایه گذاری کنند."
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -1013,16 +1215,23 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"یک راه خوب برای نزدیک کردن به اشتراک گذاری ایده ها و مشکلات خود با جامعه ، "
+"مجموعه ای از داستان های کاربر است. آنچه را که می خواهید انجام دهید ، چه "
+"رفتاری را که انتظار دارید اتفاق بیفتد و سپس واقعاً چه رفتاری رخ داده توضیح "
+"دهید. ایجاد مشکلات و ایده ها به این روش به کل جامعه کمک می کند تا در بهبود "
+"تجربیات توسعه دهنده به طور کلی متمرکز شوند."
 
 #: ../../docs/about/faq.rst:281
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
+"امتیاز جایزه برای عکس گرفتن از تصاویر ، شماره های بتونی ، موارد آزمایش یا "
+"پروژه های مثال (در صورت وجود)."
 
 #: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "چرا گودوت از STL استفاده نمی کند (کتابخانه الگوی استاندارد)"
 
 #: ../../docs/about/faq.rst:288
 msgid ""
@@ -1030,12 +1239,18 @@ msgid ""
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"مانند بسیاری از کتابخانه های دیگر (Qt به عنوان نمونه) ، Godot از STL استفاده "
+"نمی کند. ما معتقدیم که STL یک کتابخانه کلی عالی است ، اما ما برای Godot "
+"الزامات خاصی داشتیم."
 
 #: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"الگوهای STL نمادهای بسیار بزرگی ایجاد می کنند ، که منجر به باینری های اشکال "
+"زدایی عظیم می شود. در عوض ما از قالب های معدودی با نام های بسیار کوتاه "
+"استفاده می کنیم"
 
 #: ../../docs/about/faq.rst:293
 msgid ""
@@ -1044,28 +1259,38 @@ msgid ""
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"بیشتر کانتینرهای ما نیازهای ویژه ای دارند ، مانند وکتور ، که از کپی کردن در "
+"نوشتن استفاده می کند و ما برای انتقال داده به اطراف یا سیستم RID استفاده می "
+"کنیم ، که برای عملکرد به زمان دسترسی O (1) نیاز دارد. به همین ترتیب ، پیاده "
+"سازی های نقشه هش ما طراحی شده اند تا یکپارچه با انواع موتور داخلی ادغام شوند."
 
 #: ../../docs/about/faq.rst:294
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"containers   ما ردیابی حافظه داخلی دارند ، که به ردیابی بهتر استفاده از "
+"حافظه کمک می کند."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"برای آرایه های بزرگ ، ما از حافظه جمع شده استفاده می کنیم ، که می تواند به "
+"صورت یک بافر از پیش تعیین شده یا حافظه مجازی نقشه برداری شود."
 
 #: ../../docs/about/faq.rst:296
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"ما از نوع عادی String استفاده می کنیم ، زیرا نمونه ارائه شده توسط STL بسیار "
+"اساسی است و فاقد پشتیبانی بین المللی مناسب است."
 
 #: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "چرا گودوت از استثنائات استفاده نمی کند؟"
 
 #: ../../docs/about/faq.rst:301
 msgid ""
@@ -1074,6 +1299,9 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"ما اعتقاد داریم که بازی ها نباید خراب شوند. اگر یک وضعیت غیر منتظره اتفاق "
+"بیفتد ، گودوت خطایی را چاپ می کند (که حتی در اسکریپت نیز قابل ردیابی است) ، "
+"اما پس از آن سعی می شود تا حد ممکن بهبود یابد و ادامه یابد."
 
 #: ../../docs/about/faq.rst:306
 msgid ""
@@ -1091,6 +1319,9 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
+"گودوت سیستم ریخته گری نوع خود را ارائه می دهد ، که می تواند RTTI را به صورت "
+"اختیاری در داخل استفاده کند. غیرفعال کردن RTTI در گودوت به معنای اندازه "
+"باینری قابل ملاحظه ای کوچکتر با کمی هزینه عملکرد است."
 
 #: ../../docs/about/faq.rst:317
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
@@ -48337,7 +48568,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:128
 msgid "Capture"
-msgstr ""
+msgstr "گرفتن"
 
 #: ../../docs/tutorials/viewports/viewports.rst:130
 msgid ""

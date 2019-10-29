@@ -18,8 +18,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-09-02 11:13+0200\n"
-"PO-Revision-Date: 2019-07-17 07:19+0000\n"
-"Last-Translator: Touko Jaakkola <grulps@gmail.com>\n"
+"PO-Revision-Date: 2019-10-25 20:21+0000\n"
+"Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
 "Language: fi\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -261,15 +261,14 @@ msgstr ""
 "minkäänlaisia käyttörajoituksia."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"Tämän sivun tarkoitus on antaa laaja kuva pelimoottorista ja tämän "
-"dokumentaation sisällöstä, jotta tietäsit mistä aloittaa jos olet "
-"aloittelija tai mistä tietoa tiettystä ominaisuudesta löytyy."
+"Tämä sivu antaa laajan kuvan pelimoottorista ja tämän dokumentaation "
+"sisällöstä, jotta tietäsit mistä aloittaa, jos olet aloittelija, tai mistä "
+"tietoa tietystä ominaisuudesta löytyy."
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
@@ -294,18 +293,16 @@ msgid "About Godot Engine"
 msgstr "Tietoa Godot Enginestä"
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
 "Pelimoottori on monimutkainen työkalu, joten on vaikeaa esitellä Godot "
-"muutamalla sanalla. Tässä on kuitenkin meidän PR-esitys, jota voit vapaasti "
-"käyttää jos tarvitset lyhyen kirjoitelman Godot Enginestä."
+"muutamalla sanalla. Tässä on pikainen yhteenveto, jota voit vapaasti "
+"uudelleenkäyttää jos tarvitset lyhyen selostuksen Godot Enginestä."
 
 #: ../../docs/about/introduction.rst:38
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -315,12 +312,12 @@ msgid ""
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
 "Godot Engine on ominaisuuksia täynnä oleva, monialustainen pelimoottori 2D "
-"ja 3D-pelien tekemiseen yhdistetyllä käyttöliittymällä. Se sisältää kattavan "
-"määrän yleisimpiä työkaluja, jotta käyttäjä voi keskittyä pelien tekemiseen "
-"keksimättä pyörää uudelleen. Pelit voidaan jakaa napin painalluksella "
-"useille alustoille, sisältäen niin isot työpöytäkäyttöliittymät (Linux, "
-"macOS, Windows) kuin mobiililaitteet (Android, iOS) ja web-pohjaiset (HTML5) "
-"alustat."
+"ja 3D-pelien tekemiseen yhdistetyllä käyttöliittymällä. Se tarjoaa kattavan "
+"määrän yleisimpiä työkaluja, joten käyttäjät voivat keskittyä pelien "
+"tekemiseen ilman että pyörää tarvitsee keksiä uudelleen. Pelit voidaan jakaa "
+"napin painalluksella useille alustoille, sisältäen niin isot työpöytäalustat "
+"(Linux, macOS, Windows) kuin mobiililaitteet (Android, iOS) ja web-pohjaiset "
+"(HTML5) alustat."
 
 #: ../../docs/about/introduction.rst:45
 msgid ""
@@ -353,7 +350,6 @@ msgid "About the documentation"
 msgstr "Dokumentaatiosta"
 
 #: ../../docs/about/introduction.rst:59
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -431,14 +427,13 @@ msgstr ""
 "jonka tulisi olla aloituspiste kaikille uusille käyttäjille."
 
 #: ../../docs/about/introduction.rst:91
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-":ref:`sec-tutorials` osuutta voidaan toisaalta lukea tarvittaessa ja missä "
-"tahansa järjestyksessä. Se sisältää monia ominaisuuskohtaisia tutoriaaleja "
-"ja dokumentaatiota."
+":ref:`sec-tutorials` osuutta voidaan lukea tarvittaessa ja missä tahansa "
+"järjestyksessä. Se sisältää ominaisuuskohtaisia tutoriaaleja ja "
+"dokumentaatiota."
 
 #: ../../docs/about/introduction.rst:93
 msgid ""
@@ -451,7 +446,6 @@ msgstr ""
 "editorin liitännäisten kehittämisestä."
 
 #: ../../docs/about/introduction.rst:96
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -460,10 +454,10 @@ msgid ""
 "tutorials outside of this documentation."
 msgstr ""
 ":ref:`sec-community` osuudesta löytyy tietoa pelimoottorin kehittämiseen "
-"osallistumisesta ja yhteisön tavoista, esim. kuinka raportoida bugeja, "
-"auttaa dokumentoinnissa, jne. Se sisältää myös reitit erilaisiin "
-"yhteisökanaviin, kuten IRC ja Discord, sekä listan suositelluista tämän "
-"dokumentaation ulkopuolisista kolmannen osapuolen oppaista."
+"osallistumisesta ja yhteisön elosta, esim. kuinka raportoida bugeja, auttaa "
+"dokumentoinnissa, jne. Se sisältää myös reitit erilaisiin yhteisökanaviin, "
+"kuten IRC ja Discord, sekä listan suositelluista tämän dokumentaation "
+"ulkopuolisista kolmannen osapuolen oppaista."
 
 #: ../../docs/about/introduction.rst:101
 msgid ""
@@ -520,13 +514,12 @@ msgid "In short:"
 msgstr "Lyhyesti:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Olet vapaa lataamaan ja käyttämään Godotia mihin tahansa tarkoitukseen, "
-"henkilökohtaiseen, yleishyödylliseen, kaupalliseen tai muuhun;"
+"Olet vapaa lataamaan ja käyttämään Godotia mihin tahansa tarkoitukseen; "
+"henkilökohtaiseen, yleishyödylliseen, kaupalliseen tai muuhun."
 
 #: ../../docs/about/faq.rst:14
 msgid ""
@@ -729,7 +722,6 @@ msgid "What is GDScript and why should I use it?"
 msgstr "Mikä on GDScript ja miksi minun pitäisi käyttää sitä?"
 
 #: ../../docs/about/faq.rst:90
-#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -745,8 +737,8 @@ msgstr ""
 "hyödyntää Godotin vahvuuksia niin nopeasti kuin mahdollista. Jos olet "
 "koskaan aiemmin kirjoittanut mitään Pythonin kaltaisilla kielillä, tunnet "
 "olevasi kuin kotona. Nähdäksesi esimerkkejä, historiaa ja täyden katsauksen "
-"GDScriptin tarjoamaan tehoon, vilkaise `GDScript skriptausopasta "
-"<gdscript_basics>`_."
+"GDScriptin tarjoamaan tehoon, vilkaise :ref:`GDScript skriptausopasta "
+"<doc_gdscript>`_."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -908,7 +900,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "glTF on tuettu Godotin versiosta 3.0 lähtien."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -954,7 +945,6 @@ msgstr ""
 "lähdekoodina."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
@@ -1031,18 +1021,16 @@ msgstr ""
 "ja sitä enemmän muistia ne vievät sekä sitä kauemmin niiden lataus kestää."
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Käytä Godotin venytysvalintoja, 2D-venytys kuvasuhde säilyttäen toimii "
+"Käytä Godotin venytysvalintoja; 2D-venytys kuvasuhde säilyttäen toimii "
 "parhaiten. Tarkista :ref:`doc_multiple_resolutions` oppaasta kuinka tämä "
 "saadaan aikaan."
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -1050,9 +1038,9 @@ msgid ""
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
 "Määritä pienin näyttötarkkuus ja päätä sitten haluatko pelisi venyvän pysty- "
-"vai vaakasuunnassa eri kuvasuhteille, vai onko olemassa pienin mahdollinen "
-"ja haluat sen sijaan mustien reunusten ilmestyvän. Tämä on selitetty myös "
-"edellisessä vaiheessa."
+"vai vaakasuunnassa eri kuvasuhteille, vai onko sen sijaan olemassa yksi "
+"kuvasuhde ja haluat mustien reunusten ilmestyvän. Tämä on selitetty myös "
+"osiossa :ref:`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -1416,9 +1404,8 @@ msgid "2D"
 msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:24
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2
@@ -1426,23 +1413,20 @@ msgid "Audio"
 msgstr "Äänet"
 
 #: ../../docs/about/docs_changelog.rst:29
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_sync_with_audio`"
 
 #: ../../docs/about/docs_changelog.rst:32 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:35
-#, fuzzy
 msgid ":ref:`doc_interpolation`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_interpolation`"
 
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -1450,18 +1434,16 @@ msgid "Inputs"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:40
-#, fuzzy
 msgid ":ref:`doc_input_examples`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_input_examples`"
 
 #: ../../docs/about/docs_changelog.rst:43 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:45
-#, fuzzy
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr "Kääntäminen"
+msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:48
 #: ../../docs/about/docs_changelog.rst:162
@@ -1470,24 +1452,20 @@ msgid "Shading"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:50
-#, fuzzy
 msgid "Your First Shader Series:"
-msgstr "Ensimmäinen pelisi"
+msgstr "Ensimmäinen sävytinjaksosi:"
 
 #: ../../docs/about/docs_changelog.rst:52
-#, fuzzy
 msgid ":ref:`doc_what_are_shaders`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_what_are_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:53
-#, fuzzy
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr "Ensimmäinen pelisi"
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:54
-#, fuzzy
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr "Ensimmäinen pelisi"
+msgstr ":ref:`doc_your_first_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid ":ref:`doc_your_second_spatial_shader`"
@@ -1499,9 +1477,8 @@ msgid "Networking"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:60
-#, fuzzy
 msgid ":ref:`doc_webrtc`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:63
 #: ../../docs/about/docs_changelog.rst:182
@@ -1510,19 +1487,16 @@ msgid "Plugins"
 msgstr "Liitännäiset"
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_android_plugin`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:66
-#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:67
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_visual_shader_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:70
 #: ../../docs/about/docs_changelog.rst:193
@@ -1531,14 +1505,12 @@ msgid "Multi-threading"
 msgstr "Monisäikeisyys"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:75
 #: ../../docs/about/docs_changelog.rst:198
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
 msgstr "Sisällön luominen"
 
@@ -1547,29 +1519,24 @@ msgid "Procedural geometry series:"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:78
-#, fuzzy
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`Proseduraalinen geometria <toc-procedural_geometry>`"
 
 #: ../../docs/about/docs_changelog.rst:79
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_arraymesh`"
 
 #: ../../docs/about/docs_changelog.rst:80
-#, fuzzy
 msgid ":ref:`doc_surfacetool`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_surfacetool`"
 
 #: ../../docs/about/docs_changelog.rst:81
-#, fuzzy
 msgid ":ref:`doc_meshdatatool`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_meshdatatool`"
 
 #: ../../docs/about/docs_changelog.rst:82
-#, fuzzy
 msgid ":ref:`doc_immediategeometry`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_immediategeometry`"
 
 #: ../../docs/about/docs_changelog.rst:85
 #: ../../docs/tutorials/optimization/index.rst:2
@@ -1577,14 +1544,12 @@ msgid "Optimization"
 msgstr "Optimointi"
 
 #: ../../docs/about/docs_changelog.rst:87
-#, fuzzy
 msgid ":ref:`doc_using_multimesh`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_using_multimesh`"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`doc_using_servers`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_using_servers`"
 
 #: ../../docs/about/docs_changelog.rst:91
 #: ../../docs/tutorials/legal/index.rst:2
@@ -1592,9 +1557,8 @@ msgid "Legal"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:93
-#, fuzzy
 msgid ":ref:`doc_complying_with_licenses`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_complying_with_licenses`"
 
 #: ../../docs/about/docs_changelog.rst:96
 msgid "New tutorials since version 3.0"
@@ -1608,9 +1572,8 @@ msgid "Step by step"
 msgstr "Kohta kohdalta"
 
 #: ../../docs/about/docs_changelog.rst:101
-#, fuzzy
 msgid ":ref:`doc_signals`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_signals`"
 
 #: ../../docs/about/docs_changelog.rst:102
 msgid ":ref:`doc_exporting`"
@@ -1640,9 +1603,8 @@ msgid ":ref:`doc_what_are_godot_classes`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:116
-#, fuzzy
 msgid ":ref:`doc_scene_organization`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_scene_organization`"
 
 #: ../../docs/about/docs_changelog.rst:117
 msgid ":ref:`doc_scenes_versus_scripts`"
@@ -1657,33 +1619,28 @@ msgid ":ref:`doc_node_alternatives`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:120
-#, fuzzy
 msgid ":ref:`doc_godot_interfaces`"
-msgstr "Muokkaa käyttöliittymää"
+msgstr ":ref:`doc_godot_interfaces`"
 
 #: ../../docs/about/docs_changelog.rst:121
-#, fuzzy
 msgid ":ref:`doc_godot_notifications`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_godot_notifications`"
 
 #: ../../docs/about/docs_changelog.rst:122
-#, fuzzy
 msgid ":ref:`doc_data_preferences`"
-msgstr "Eroavaisuudet"
+msgstr ":ref:`doc_data_preferences`"
 
 #: ../../docs/about/docs_changelog.rst:123
-#, fuzzy
 msgid ":ref:`doc_logic_preferences`"
-msgstr "Eroavaisuudet"
+msgstr ":ref:`doc_logic_preferences`"
 
 #: ../../docs/about/docs_changelog.rst:128
 msgid ":ref:`doc_2d_lights_and_shadows`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:129
-#, fuzzy
 msgid ":ref:`doc_2d_meshes`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_2d_meshes`"
 
 #: ../../docs/about/docs_changelog.rst:132 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
@@ -1694,9 +1651,8 @@ msgid ":ref:`doc_csg_tools`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:135
-#, fuzzy
 msgid ":ref:`doc_animating_thousands_of_fish`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_animating_thousands_of_fish`"
 
 #: ../../docs/about/docs_changelog.rst:136
 msgid ":ref:`doc_controlling_thousands_of_fish`"
@@ -1727,18 +1683,16 @@ msgid ":ref:`doc_2d_skeletons`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:148
-#, fuzzy
 msgid ":ref:`doc_animation_tree`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_animation_tree`"
 
 #: ../../docs/about/docs_changelog.rst:151 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:153
-#, fuzzy
 msgid ":ref:`doc_gui_containers`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_gui_containers`"
 
 #: ../../docs/about/docs_changelog.rst:156
 #: ../../docs/tutorials/viewports/index.rst:2
@@ -1771,27 +1725,24 @@ msgid "Shading Reference:"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:170
-#, fuzzy
 msgid ":ref:`doc_shaders`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:171
 msgid ":ref:`doc_shading_language`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:172
-#, fuzzy
 msgid ":ref:`doc_spatial_shader`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:173
 msgid ":ref:`doc_canvas_item_shader`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:174
-#, fuzzy
 msgid ":ref:`doc_particle_shader`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_particle_shader`"
 
 #: ../../docs/about/docs_changelog.rst:177 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
@@ -1802,14 +1753,12 @@ msgid ":ref:`doc_vr_starter_tutorial`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:184
-#, fuzzy
 msgid ":ref:`doc_making_main_screen_plugins`"
-msgstr "Animaatioiden valinta"
+msgstr ":ref:`doc_making_main_screen_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:185
-#, fuzzy
 msgid ":ref:`doc_spatial_gizmo_plugins`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_spatial_gizmo_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:188
 #: ../../docs/tutorials/platform/index.rst:2
@@ -1825,9 +1774,8 @@ msgid ":ref:`doc_thread_safe_apis`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:200
-#, fuzzy
 msgid ":ref:`doc_making_trees`"
-msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
+msgstr ":ref:`doc_making_trees`"
 
 #: ../../docs/about/docs_changelog.rst:203
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1875,9 +1823,8 @@ msgid "Engine development"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:219
-#, fuzzy
 msgid ":ref:`doc_binding_to_external_libraries`"
-msgstr ":ref:`Ulkoiset editorit ovat mahdollisia <doc_external_editor>`"
+msgstr ":ref:`doc_binding_to_external_libraries`"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
@@ -2129,7 +2076,6 @@ msgstr ""
 "Ylhäällä näet painikkeet neljälle työtilalle: 2D, 3D, Script ja AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
-#, fuzzy
 msgid ""
 "You’ll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press F1 to "
@@ -2137,12 +2083,11 @@ msgid ""
 msgstr ""
 "Tulet käyttämään **2D-työtilaa** kaiken tyyppisille peleille. 2D-pelien "
 "lisäksi rakennat siinä myös pelisi käyttöliittymät. Paina F1 päästäksesi "
-"tilaan. |image15|"
+"tilaan."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
 msgid ""
@@ -2533,13 +2478,12 @@ msgid "Aaaand... Oops."
 msgstr "Jaaaaa... Hups."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
-#, fuzzy
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
 "Skenet täytyy tallentaa ennen kuin ne voidaan ajaa, joten tallenna skene "
-"joksikin, kuten hello.tscn, valikossa Skene -> Tallenna skene:"
+"joksikin, kuten Hello.tscn, valikossa Skene -> Tallenna skene:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -2616,13 +2560,12 @@ msgstr ""
 "Kokeile sitä nyt."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:190
-#, fuzzy
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
-"Kun ikkuna aukeaa, valitaanpa pääskene. Etsi `Application/Run/Main Scene` "
-"ominaisuus ja napsauta sitä valitaksesi 'hello.tscn' tiedoston."
+"Kunhan ikkuna aukeaa, valitkaamme pääskene. Etsi `Application/Run/Main "
+"Scene` ominaisuus ja napsauta sitä valitaksesi 'Hello.tscn' tiedoston."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
@@ -2822,19 +2765,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
-#, fuzzy
 msgid ""
 "Press \"Play\" and notice that all of the instanced balls are now much more "
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
-"Avaa ``Ball`` skene ja vaihda ``Bounce`` ominaisuus Tarkastelijassa arvoon "
-"`1`. Paina \"Pelaa\" ja huomaa kuinka pallojen ilmentymät ovat nyt paljon "
+"Paina \"Pelaa\" ja huomaa kuinka pallojen ilmentymät ovat nyt paljon "
 "kimpoavampia. Koska pallojen ilmentymät perustuvat tallennettuun skeneen, "
 "muutokset tuohon skeneen vaikuttavat kaikkiin ilmentymiin."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
@@ -2843,8 +2783,11 @@ msgid ""
 "its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
 "Voit säätää myös yksittäisiä ilmentymiä. Aseta kimpoavuus takaisin arvoon "
-"``0.5`` ja valitse sen jälkeen yksi pallon ilmentymä ``Main`` skenessä. "
-"Aseta sen ``Bounce`` arvoon ``1`` ja paina \"Pelaa\"."
+"``0`` ja valitse sen jälkeen yksi pallon ilmentymä ``Main`` skenessä. "
+"Sellaiset resurssit kuten ``PhysicsMaterial`` ovat aina oletusarvoisesti "
+"jaettuja resurssien välillä, joten meidän täytyy tehdä siitä uniikki. "
+"Napsauta nuolta alas ja valitse \"Tee ainutlaatuinen\". Aseta sen ``Bounce`` "
+"arvoon ``1`` ja paina \"Pelaa\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:115
 msgid ""
@@ -2870,7 +2813,6 @@ msgid "Conclusion"
 msgstr "Lopputulos"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:125
-#, fuzzy
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "
@@ -2901,6 +2843,7 @@ msgstr "Mahdollisuus jakaa skenet osiin ja tehdä niistä helpommin hallittavia.
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
 msgstr ""
+"Työkalu, jolla hallita ja muokata useita solmun ilmentymiä samalla kertaa."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:13
 msgid ""
@@ -2915,16 +2858,15 @@ msgid "Design language"
 msgstr "Suunnittelukieli"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
-#, fuzzy
 msgid ""
 "But the greatest strength that comes with instancing scenes is that it works "
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
 "Mutta suurin skeneilmentymien luonnista tuleva vahvuus on, että se toimii "
-"erinomaisena suunnittelukielenä. Tämä on pitkälti se, mikä erottaa Godotin "
-"kaikista muista olemassa olevista pelimoottoreista. Godot on suunniteltu "
-"alusta saakka tämän ajatuksen ympärille."
+"erinomaisena suunnittelukielenä. Tämä erottaa Godotin kaikista muista "
+"olemassa olevista pelimoottoreista. Godot on suunniteltu alusta saakka tämän "
+"ajatuksen ympärille."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -2966,7 +2908,6 @@ msgstr ""
 "(joko koodista tai suoraan editorista käsin) omistajuussuhteita varten."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
-#, fuzzy
 msgid ""
 "A lot of time spent in programming games (or software in general) is on "
 "designing an architecture and fitting game components to that architecture. "
@@ -2981,7 +2922,7 @@ msgstr ""
 "arkkitehtuuriin. Skeneihin pohjautuva suunnittelu korvaa tuon "
 "lähestymistavan ja tekee kehittämisestä paljon nopeampaa ja "
 "suoraviivaisempaa, antaen sinun keskittyä pelilogiikkaan itseensä. Koska "
-"useimmat pelikomponentit käyvät suoraan skeneen, skenejen ilmentymiin "
+"useimmat pelikomponentit sopivat suoraan skeneiksi, skenejen ilmentymiin "
 "pohjautuvan suunnittelun käyttö tarkoittaa, että hyvin vähän muuta "
 "arkkitehtuurista koodia tarvitaan."
 
@@ -3065,19 +3006,17 @@ msgstr ""
 "liikaa, vaan jatka seuraavaan oppaaseen!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
-#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Ennen Godotin versiota 3.0 ainoa vaihtoehto pelin skriptaukseen oli käyttää :"
-"ref:`doc_gdscript` kieltä. Nykyään Godotissa on neljä (kyllä, neljä!) "
-"virallista kieltä sekä mahdollisuus lisätä ylimääräisiä skriptikieliä "
-"dynaamisesti!"
+"Ennen Godotin versiota 3.0 ainoa vaihtoehto pelin skriptaukseen oli "
+"käyttää  :ref:`GDScript<doc_gdscript>` kieltä. Nykyään Godotissa on neljä "
+"(kyllä, neljä!) virallista kieltä sekä mahdollisuus lisätä ylimääräisiä "
+"skriptikieliä dynaamisesti!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
@@ -3086,7 +3025,6 @@ msgstr ""
 "mutta se tekee myös työstämme kielien tukemiseksi vaikeampaa."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
-#, fuzzy
 msgid ""
 "The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
@@ -3117,14 +3055,13 @@ msgid "GDScript"
 msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript` on, kuten yllä mainittu, Godotin pääkieli. Sen käytöllä "
-"on joitakin myönteisiä näkökohtia muihin kieliin nähden johtuen sen "
+":ref:`GDScript<doc_gdscript>` on, kuten yllä mainittu, Godotin pääkieli. Sen "
+"käytöllä on joitakin myönteisiä näkökohtia muihin kieliin nähden johtuen sen "
 "korkeasta integraatiosta Godotiin:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
@@ -3333,15 +3270,14 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "Muita skenen solmuja käsittelevän skriptin kirjoittamista."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
-"Ennen jatkamista, varmista, että olet lukenut :ref:`doc_gdscript` "
-"lähdeaineiston. Kieli on suunniteltu yksinkertaiseksi ja lähdeaineisto on "
+"Ennen jatkamista, varmista, että olet lukenut :ref:`GDScript<doc_gdscript>` "
+"lähdeaineiston. Se on yksinkertaiseksi suunniteltu kieli ja lähdeaineisto on "
 "lyhyt, joten käsitteistä saa yleiskuvan muutamassa minuutissa."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
@@ -3408,12 +3344,11 @@ msgstr ""
 "luokan nimen ja muita oleellisia asetuksia."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
-#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"GDScriptissä tiedosto itse edustaa luokkaa, joten luokan nimi ei ole "
+"GDScriptissä tiedosto itse edustaa luokkaa, joten luokan nimikenttä ei ole "
 "muokattavissa."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
@@ -3441,7 +3376,6 @@ msgstr ""
 "Script-ominaisuutena Tarkastelussa:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
-#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
@@ -3449,7 +3383,7 @@ msgid ""
 msgstr ""
 "Skriptin muokkaamiseksi käytä jompaa kumpaa näistä painikkeista, jotka on "
 "esitetty korostettuna yllä olevassa kuvassa. Tämä vie sinut "
-"skriptieditoriin, jossa skriptille on luotu pohjaksi oletusmalli:"
+"skriptieditoriin, johon on lisätty valmis skriptipohja:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -3545,7 +3479,6 @@ msgstr ""
 "to Node) ja laukaistavan metodin nimi."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:208
-#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
@@ -3554,11 +3487,11 @@ msgid ""
 msgstr ""
 "Ylhäällä vasemmalla oleva osio näyttää luettelon kaikista skenesi solmuista, "
 "lähettävän solmun nimi punaisella korostettuna. Valitse siitä \"Panel\" "
-"solmu. Kun valitset solmun, polku solmuun alhaalla päivittyy automaattisesti "
-"osoittamaan suhteellista polkua lähettävästä solmusta valittuun solmuun."
+"solmu. Kun valitset solmun, alhaalla oleva polku solmuun päivittyy "
+"automaattisesti osoittamaan suhteellista polkua lähettävästä solmusta "
+"valittuun solmuun."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:213
-#, fuzzy
 msgid ""
 "By default, the method name will contain the emitting node's name (\"Button"
 "\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``. If you "
@@ -3567,11 +3500,10 @@ msgid ""
 msgstr ""
 "Oletusarvoisesti metodin nimi sisältää lähettävän solmun nimen (tässä "
 "tapauksessa \"Button\"), tuloksena ollen "
-"\"_on_[LähettäväSolmu]_[signaalin_nimi]\". Jos \"Tee funktio\" valintaruutu "
+"``_on_[LähettäväSolmu]_[signaalin_nimi]``. Jos \"Tee funktio\" valintaruutu "
 "on päällä, editori luo funktion sinulle ennen kytkennän asettamista."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:218
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
@@ -3582,7 +3514,6 @@ msgstr ""
 "prosessiin!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:222
-#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
@@ -3591,8 +3522,8 @@ msgid ""
 msgstr ""
 "Päämäärän saavuttamiseksi esittelemme funktion, joka on todennäköisesti "
 "Godot-ohjelmoijien eniten käyttämä funktio: :ref:`Node.get_node() "
-"<class_Node_method_get_node>`. Tämä funktio käyttää polkuja nouttaakseen "
-"solmuja mistä tahansa skenestä, suhteessa solmuun, joka omistaa skriptin."
+"<class_Node_method_get_node>`. Tämä funktio käyttää polkuja noutaakseen "
+"solmuja mistä tahansa skenestä, suhteessa solmuun joka omistaa skriptin."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:227
 msgid ""
@@ -3618,7 +3549,6 @@ msgstr ""
 "Seuraavaksi, kirjoita funktio, jota kutsutaan, kun painiketta on painettu:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:262
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
@@ -3703,7 +3633,6 @@ msgstr ""
 "fysiikkaprosessointia."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
-#, fuzzy
 msgid ""
 "Idle processing is activated when the method :ref:`Node._process() "
 "<class_Node_method__process>` is found in a script. It can be turned off and "
@@ -3716,7 +3645,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Tätä metodia kutsutaan jokaisella ruudun piirtokerralla:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -3724,16 +3653,19 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"On hyvä pitää mielessä, että taajuus jolla ``_process()`` metodia kutsutaan "
+"riippuu siitä kuinka monta ruutua per sekunti (FPS) sovelluksesi kykenee "
+"käsittelemään. Tämä nopeus voi vaihdella eri hetkillä ja laitteilla."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"Delta-parametri sisältää liukulukuna kuluneen ajan sekunneissa siitä, kun "
-"``_process()`` funktiota edellisen kerran kutsuttiin."
+"Tämän vaihtelevuuden hallitsemiseksi ``delta`` parametri sisältää "
+"liukulukuna kuluneen ajan sekunneissa siitä, kun ``_process()`` funktiota "
+"edellisen kerran kutsuttiin."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -3779,13 +3711,12 @@ msgstr ""
 "fysiikkavaiheen jälkeen."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Yksinkertainen tapa kokeilla tätä, on luoda skene, jossa on yksittäinen "
-"Label solmu, seuraavalla skriptillä:"
+"Yksinkertainen tapa nähdä ``_process()`` funktio toiminnassa, on luoda "
+"skene, jossa on yksittäinen Label solmu seuraavalla skriptillä varustettuna:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -3796,26 +3727,27 @@ msgid "Groups"
 msgstr "Ryhmät"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
 "for organizing large scenes. There are two ways to add nodes to groups. The "
 "first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"Solmut voidaan lisätä ryhmiin, niin moniin kuin on tarpeen solmua kohden, "
-"mikä on käyttökelpoinen ominaisuus suurten skenejen järjestelemiseen. Tähän "
-"on kaksi eri tapaa. Ensimmäinen on käyttöliittymästä, Ryhmät-painikkeesta "
-"Solmu-paneelilla:"
+"Ryhmät Godotissa toimivat kuin tägit joihin olet voinut törmätä muissa "
+"ohjelmistoissa. Solmu voidaan lisätä niin moneen ryhmään kuin halutaan. Tämä "
+"on hyödyllinen ominaisuus laajojen skenejen järjestelemiseksi. On kaksi "
+"tapaa lisätä solmu ryhmään. Ensimmäinen on käyttöliittymästä, Ryhmät-"
+"painikkeesta Solmu-paneelilla:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"Toinen tapa on koodista käsin. Seuraava skripti lisää nykyisen solmun "
+"``enemies`` ryhmään heti kun se ilmestyy skenepuuhun."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
-#, fuzzy
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
@@ -3834,7 +3766,6 @@ msgstr ""
 "ryhmän jokaiselle jäsenelle."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
-#, fuzzy
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() "
@@ -3845,7 +3776,6 @@ msgstr ""
 "<class_SceneTree_method_get_nodes_in_group>` funktiota:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
 "like interacting with scenes, their node hierarchy and groups of nodes. It "
@@ -3865,7 +3795,6 @@ msgid "Notifications"
 msgstr "Ilmoitukset (notifications)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:158
-#, fuzzy
 msgid ""
 "Godot has a system of notifications. These are usually not needed for "
 "scripting, as it's too low-level and virtual functions are provided for most "
@@ -3873,11 +3802,11 @@ msgid ""
 "`Object._notification() <class_Object_method__notification>` function in "
 "your script:"
 msgstr ""
-"Godotissa on järjestelmä ilmoituksille (notification). Niitä ei yleensä "
-"tarvita skriptauksessa, koska ne ovat liian alhaisen tason koodia ja "
-"useimmille on tarjolla vastaava virtuaalifunktio. On silti hyvä olla "
-"tietoinen niiden olemassaolosta. Voit esimerkiksi lisätä :ref:`Object."
-"_notification() <class_Object_method__notification>` funktion skriptiisi:"
+"Godotissa on järjestelmä ilmoituksille. Niitä ei yleensä tarvita "
+"skriptauksessa, koska ne ovat liian alhaisen tason koodia ja useimmille on "
+"tarjolla vastaava virtuaalifunktio. On silti hyvä olla tietoinen niiden "
+"olemassaolosta. Voit esimerkiksi lisätä :ref:`Object._notification() "
+"<class_Object_method__notification>` funktion skriptiisi:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid ""
@@ -3927,14 +3856,13 @@ msgstr ""
 "käytettävä ``free()`` metodia:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
-#, fuzzy
 msgid ""
 "When a node is freed, it also frees all its child nodes. Because of this, "
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
-"Kun solmu vapautetaan, myös kaikki sen alisolmut vapautetaan. Tästä johtuen, "
-"solmujen manuaalinen tuhoaminen on paljon helpompaa kuin miltä vaikuttaa. "
+"Kun solmu vapautetaan, myös kaikki sen alisolmut vapautetaan. Tästä johtuen "
+"solmujen manuaalinen tuhoaminen on paljon helpompaa kuin miltä se vaikuttaa. "
 "Vapauta pohjasolmu ja kaikki muu alipuussa menee sen mukana."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
@@ -3950,7 +3878,6 @@ msgstr ""
 "tämäntyyppisen tapauksen ja varoittaa sinua siitä."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
-#, fuzzy
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
@@ -3980,7 +3907,6 @@ msgstr ""
 "jäsennysaikana (vain GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
-#, fuzzy
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
@@ -4078,17 +4004,17 @@ msgstr ""
 "com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
-"Signaalien avulla pelin objektit voidaan *erottaa* toisistaan, mikä pitää "
-"koodin paremmin järjestyksessä ja hallittavampana. Objektien ei ole pakko "
-"olettaa, että muita objekteja on läsnä, vaan ne voivat lähettää signaaleja, "
-"joita toiset objektit voivat kuunnella ja vastata."
+"Signaalien avulla pelin objektit voidaan *erottaa* toisistaan, mikä johtaa "
+"paremmin järjestettyyn ja hallittavampaan koodiin. Sen sijaan, että "
+"objektien on pakko olettaa, että muut objektit ovat aina läsnä, ne voivat "
+"lähettää signaaleja, joita kaikki kiinnostuneet objektit voivat kirjautua "
+"kuuntelemaan ja vastaamaan."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
@@ -4103,17 +4029,15 @@ msgid "Timer example"
 msgstr "Ajastin-esimerkki"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
 "<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
-"Käyttämällä :ref:`Timer <class_Timer>`-solmua, nähdään, miten signaalit "
-"käytännössä toimivat. Luo uusi skene ja lisää Node-solmu ja kaksi alisolmua: "
-"Timer ja :ref:`Sprite <class_Sprite>`. Sprite-solmun tekstuurina voi käyttää "
-"Godot-kuvaketta tai mitä tahansa haluamaasi kuvaa. Liitä juurisolmuun "
-"skripti, mutta älä lisää siihen vielä koodia."
+"Nähdäksemme kuinka signaalit toimivat, kokeilkaamme :ref:`Timer "
+"<class_Timer>` solmua. Luo uusi skene Node solmulla ja lisää sille kaksi "
+"alisolmua: Timer ja :ref:`Sprite <class_Sprite>`. Nimeä solmu Skene-"
+"telakalla TimerExample-nimiseksi."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -4124,9 +4048,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
-#, fuzzy
 msgid "Your scene tree should look like this:"
-msgstr "Skenepuun pitäisi näyttää tältä:"
+msgstr "Skenepuusi pitäisi näyttää tältä:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:38
 msgid ""
@@ -4267,9 +4190,8 @@ msgstr ""
 "tavoin."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
-#, fuzzy
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Signaalin lähettäminen koodin kautta onnistuu ``emit`-funktiolla:"
+msgstr "Signaalin lähettämiseksi koodin kautta, käytä ``emit``-funktiota:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
@@ -4278,11 +4200,11 @@ msgid ""
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
-"Monista Godotiin sisäänrakennetuista solmutyypeistä löytyy signaaleja "
-"tapahtumien havaitsemiseen. Esimerkiksi kolikkoa ilmentävä :ref:`Area2D "
-"<class_Area2D>`-solmu lähettää ``body_entered`-signaalin kun pelihahmon "
-"fysiikkakappale siirtyy sen törmäysmuodon sisään. Tämän avulla saadaan "
-"selville milloin pelaaja on kerännyt kolikon."
+"Monista Godotin valmiista solmutyypeistä löytyy signaaleja tapahtumien "
+"havaitsemiseen. Esimerkiksi kolikkoa ilmentävä :ref:`Area2D <class_Area2D>`-"
+"solmu lähettää ``body_entered`-signaalin kun pelihahmon fysiikkakappale "
+"siirtyy sen törmäysmuodon sisään. Tämän avulla saadaan selville milloin "
+"pelaaja on kerännyt kolikon."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
 msgid ""
@@ -4369,7 +4291,6 @@ msgstr ""
 "kuinka projekti pystytetään ja kuinka editoria käytetään."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
-#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
@@ -4377,14 +4298,13 @@ msgid ""
 msgstr ""
 "Tämä peli käyttää potrettitilaa, joten meidän täytyy säätää peli-ikkunan "
 "kokoa. Napsauta Projekti -> Projektin asetukset -> Display -> Window, ja "
-"aseta \"Width\" arvoon 480 ja \"Height\" arvoon 720."
+"aseta \"Width\" arvoon ``480`` ja \"Height\" arvoon ``720``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 msgid "Organizing the project"
 msgstr "Projektin järjestäminen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
-#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -4393,12 +4313,12 @@ msgid ""
 "and scripts in the project's root folder, referred to as ``res://``.  You "
 "can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
-"Teemme tähän projektiin 3 itsenäistä skeneä: ``Player``, ``Mob``, ja "
+"Teemme tähän projektiin kolme itsenäistä skeneä: ``Player``, ``Mob``, ja "
 "``HUD``, jotka yhdistämme pelin ``Main`` skeneen. Suuremmassa projektissa "
 "voisi olla hyödyllistä tehdä kansioita eri skeneille ja niiden skripteille, "
 "mutta tätä suhteellisen pientä peliä varten voit tallentaa skenesi ja "
 "skriptisi juurikansioon, johon viitataan ``res://``. Näet projektisi kansiot "
-"Tiedostojärjestelmä-telakassa vasemmassa yläkulmassa:"
+"Tiedostojärjestelmä-telakassa vasemmassa alakulmassa:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
@@ -4461,17 +4381,16 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:84
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr ""
+msgstr "Tässä projektissa noudatamme Godotin nimeämiskäytäntöjä."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:86
-#, fuzzy
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"Noudatamme tässä projektissa Godotin nimeämiskäytäntöjä. Luokat (solmut) "
-"käyttävät ``PascalCase`` tyyliä, muuttujat ja funktiot käyttävät "
-"``snake_case`` tyyliä, ja vakiot käyttävät ``ALL_CAPS`` tyyliä."
+"**GDScript**: Luokat (solmut) käyttävät PascalCase tyyliä, muuttujat ja "
+"funktiot käyttävät snake_case tyyliä, ja vakiot käyttävät ALL_CAPS tyyliä "
+"(katso :ref:`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:90
 msgid ""
@@ -4480,13 +4399,17 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Luokat, vientimuuttujat ja metodit käyttävät PascalCase tyyliä, "
+"yksityiset kentät käyttävät _camelCase tyyliä, paikalliset muuttujat ja "
+"parametrit käyttävät camelCase tyyliä  (katso :ref:"
+"`doc_c_sharp_styleguide`). Ole huolellinen ja kirjoita metodien nimet "
+"tarkasti kytkiessäsi signaaleja."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:97
 msgid "Sprite animation"
 msgstr "Spriten animaatio"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -4503,8 +4426,8 @@ msgstr ""
 "varoitusmerkki. ``AnimatedSprite`` tarvitsee :ref:`SpriteFrames "
 "<class_SpriteFrames>` resurssin, joka on lista animaatioista, joita se voi "
 "toistaa. Luodaksesi sellaisen, etsi ``Frames`` ominaisuus Tarkastelijasta ja "
-"napsauta \"<null>\" -> \"New SpriteFrames\". Seuraavaksi, napsauta samasta "
-"paikasta ``<SpriteFrames>`` avataksesi \"SpriteFrames\" paneelin:"
+"napsauta \"[empty]\" -> \"New SpriteFrames\". Tämän pitäisi automaattisesti "
+"avata SpriteFrames paneelin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
@@ -4533,7 +4456,6 @@ msgstr ""
 "otsikon alta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:124
-#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -4545,8 +4467,9 @@ msgstr ""
 "Lisää lopuksi :ref:`CollisionShape2D <class_CollisionShape2D>` ``Player`` "
 "solmun alle. Tämä määrittelee pelaajan \"osumalaatikon\" tai törmäysalueen "
 "rajat. Tälle hahmolle sopii parhaiten ``CapsuleShape2D`` solmu, joten "
-"napsauta Tarkastelijassa \"Shape\" ominaisuuden vierestä \"<null>\"\" -> "
-"\"New CapsuleShape2D\". Venytä muoto kattamaan koko sprite:"
+"napsauta Tarkastelijassa \"Shape\" ominaisuuden vierestä \"[empty]\" -> "
+"\"New CapsuleShape2D\". Käyttäen kahta kahvaa, venytä muoto kattamaan koko "
+"sprite:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:133
 msgid "When you're finished, your ``Player`` scene should look like this:"
@@ -4596,7 +4519,6 @@ msgstr ""
 "Aloita luomalla ne jäsenmuuttujat, jotka tämä objekti tulee tarvitsemaan:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:178
-#, fuzzy
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
@@ -4607,9 +4529,8 @@ msgid ""
 msgstr ""
 "Käyttäen ``export`` avainsanaa ensimmäiselle muuttujalle ``speed`` antaa "
 "meidän asettaa sen arvon Tarkastelijassa. Se voi olla kätevää arvoille, "
-"joita haluat säätää kuin ne olisivat solmun sisäänrakennettuja "
-"ominaisuuksia. Napsauta ``Player`` solmua ja aseta nopeusominaisuudeksi "
-"``400``."
+"joita haluat säätää kuin ne olisivat solmun valmiita ominaisuuksia. Napsauta "
+"``Player`` solmua ja aseta nopeusominaisuudeksi ``400``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:185
 msgid ""
@@ -4628,7 +4549,6 @@ msgstr ""
 "hyvä hetki hakea peli-ikkunan koko:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:209
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
@@ -4638,7 +4558,7 @@ msgstr ""
 "Nyt voimme käyttää ``_process()`` funktiota määrittelemään mitä pelaaja "
 "tekee. ``_process()`` funktiota kutsutaan jokaisella ruudunpäivityksellä, "
 "joten käytämme sitä päivittämään pelimme niitä osasia joiden odotamme "
-"muuttuvan usein. Teemme siinä seuraavaa:"
+"muuttuvan usein. Pelaajan osalta teemme siinä seuraavaa:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:214
 msgid "Check for input."
@@ -4653,7 +4573,6 @@ msgid "Play the appropriate animation."
 msgstr "Toista asiaankuuluva animaatio."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:218
-#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -4679,7 +4598,6 @@ msgstr ""
 "painettu ja ``false`` jos ei ole."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:287
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -4688,12 +4606,13 @@ msgid ""
 "``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
-"Tarkistamme kunkin syötteen ja kasvatamme/vähennämme ``velocity`` "
-"ominaisuutta saadaksemme lopullisen suunnan. Jos esimerkiksi painat "
-"``oikealle`` ja ``alas`` samanaikasesti, lopputuloksena oleva ``velocity`` "
-"vektori on ``(1, 1)``. Tässä tapauksessa, koska kasvatamme sekä vaaka- että "
-"pystyliikettä, pelihahmo liikkuisi *nopeammin* kuin jos se liikkuisi vain "
-"vaakasuuntaisesti."
+"Aloitamme asettamalla ``velocity`` arvoksi ``(0, 0)`` – lähtökohtaisesti "
+"pelihahmon ei pitäisi olla liikkeessä. Tarkistamme sitten kunkin syötteen ja "
+"kasvatamme/vähennämme ``velocity`` arvoa saadaksemme lopullisen suunnan. Jos "
+"esimerkiksi painat ``oikealle`` ja ``alas`` samanaikasesti, lopputuloksena "
+"oleva ``velocity`` vektori on ``(1, 1)``. Tässä tapauksessa, koska "
+"kasvatamme sekä vaaka- että pystyliikettä, pelihahmo liikkuisi *nopeammin* "
+"kuin jos se liikkuisi vain vaakasuuntaisesti."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:294
 msgid ""
@@ -4724,15 +4643,15 @@ msgstr ""
 "AnimatedSprite animaation."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:305
-#, fuzzy
 msgid ""
 "In GDScript, ``$`` returns the node at the relative path from the current "
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
-"``$`` palauttaa solmun, joka löytyy suhteellisesta polusta tähän solmuun "
-"nähden, tai palauttaa ``null`` jos solmua ei löydy. Koska AnimatedSprite on "
-"nykyisen solmun alisolmu, voimme käyttää ``$AnimatedSprite`` syntaksia."
+"GDScriptissä, ``$`` palauttaa solmun, joka löytyy suhteellisesta polusta "
+"nykyiseen solmuun nähden, tai palauttaa ``null`` jos solmua ei löydy. Koska "
+"AnimatedSprite on nykyisen solmun alisolmu, voimme käyttää ``"
+"$AnimatedSprite`` syntaksia."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:308
 msgid ""
@@ -4745,15 +4664,14 @@ msgstr ""
 "\").play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position "
 "and use ``clamp()`` to prevent it from leaving the screen by adding the "
 "following to the bottom of the ``_process`` function:"
 msgstr ""
-"Nyt kun meillä on liikkumisen suunta, voimme päivittää ``Player`` solmun "
-"sijainnin ja käyttää ``clamp()`` funktiota estämään sitä poistumasta "
-"ruudulta lisäämällä seuraavan ``_process`` funktion loppuun:"
+"Nyt kun meillä on liikkumisen suunta, voimme päivittää pelaajan sijainnin ja "
+"käyttää ``clamp()`` funktiota estämään sitä poistumasta ruudulta lisäämällä "
+"seuraavan ``_process`` funktion loppuun:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:331
 msgid "*Clamping* a value means restricting it to a given range."
@@ -4814,7 +4732,6 @@ msgstr ""
 "sijoituksiin verrattuna:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:398
-#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
@@ -4856,7 +4773,6 @@ msgstr ""
 "pelaaja voi lähettää:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:440
-#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered( Object "
@@ -4871,8 +4787,8 @@ msgstr ""
 "body )`` signaalin; se lähetetään kappaleen osuessa pelaajaan. Napsauta "
 "\"Yhdistä...\" ja sen jälkeen \"Yhdistä\" uudelleen \"Yhdistetään signaalia"
 "\" ikkunassa. Meidän ei tarvitse muuttaa mitään näistä asetuksista – Godot "
-"luo automaattisesti funktion nimeltä ``_on_Player_body_entered`` pelaajasi "
-"skriptiin."
+"luo automaattisesti funktion pelaajasi skriptiin. Tätä funktiota kutsutaan "
+"aina, kun signaali lähetetään – se *käsittelee* signaalin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:449
 msgid ""
@@ -5034,7 +4950,6 @@ msgid "Add a script to the ``Mob`` and add the following member variables:"
 msgstr "Lisää ``Mob`` solmulle skripti ja lisää seuraavat jäsenmuuttujat:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:580
-#, fuzzy
 msgid ""
 "When we spawn a mob, we'll pick a random value between ``min_speed`` and "
 "``max_speed`` for how fast each mob will move (it would be boring if they "
@@ -5043,11 +4958,12 @@ msgid ""
 "sure you've spelled these the same in the script and in the SpriteFrames "
 "resource."
 msgstr ""
-"Valitsemme vihulaisen liikkumisen nopeudeksi satunnaisen arvon ``min_speed`` "
-"ja ``max_speed`` väliltä (olisi tylsää, jos ne kaikki liikkuisivat samalla "
-"nopeudella). Aseta arvot ``150`` ja ``250`` Tarkastelijassa. Meillä on myös "
-"kolmen animaation nimet sisältävä taulukko, jota käytämme valitsemaan yhden "
-"niistä satunnaisesti."
+"Kun synnytämme vihulaisen, valitsemme sen liikkumisen nopeudeksi satunnaisen "
+"arvon ``min_speed`` ja ``max_speed`` väliltä (olisi tylsää, jos ne kaikki "
+"liikkuisivat samalla nopeudella). Meillä on myös kolmen animaation nimet "
+"sisältävä taulukko, jota käytämme valitsemaan yhden niistä satunnaisesti. "
+"Varmista, että olet kirjoittanut ne samalla tavalla skriptiin ja "
+"SpriteFrames resurssiin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:586
 msgid ""
@@ -5103,13 +5019,12 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr "Katso :ref:`doc_instancing` oppiaksesi enemmän ilmentymistä."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:641
-#, fuzzy
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
-"Lisää nyt seuraavat solmut ``Main`` solmun alisolmuiksi ja nimeä ne "
-"kuvauksen mukaisesti (arvot ovat sekunteina):"
+"Lisää nyt seuraavat solmut ``Main`` solmun alisolmuiksi ja nimeä ne kuten "
+"esitetty (arvot ovat sekunteina):"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:644
 msgid ""
@@ -5232,7 +5147,6 @@ msgid "Main script"
 msgstr "Pääskripti"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:691
-#, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
@@ -5265,7 +5179,6 @@ msgstr ""
 "peliä varten:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:771
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``) to the main script. "
@@ -5273,11 +5186,10 @@ msgid ""
 "increment the score by 1."
 msgstr ""
 "Yhdistä nyt kunkin Timer solmun (``StartTimer``, ``ScoreTimer`` ja "
-"``MobTimer``) ``timeout()`` signaali. ``StartTimer`` käynnistää kaksi muuta "
-"ajastinta. ``ScoreTimer`` kasvattaa pistelaskuria yhdellä."
+"``MobTimer``) ``timeout()`` signaali pääskriptiin. ``StartTimer`` käynnistää "
+"kaksi muuta ajastinta. ``ScoreTimer`` kasvattaa pistelaskuria yhdellä."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:798
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -5285,7 +5197,7 @@ msgid ""
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
 "``_on_MobTimer_timeout()`` funktiossa luomme vihollisilmentymän, valitsemme "
-"satunnaisen aloituspaikan ``Path2D`` varrelta, ja panemme vihollisen "
+"satunnaisen aloituspaikan ``Path2D`` varrelta, ja sysäämme vihollisen "
 "liikkeelle. ``PathFollow2D`` solmu kiertyy automaattisesti seuratessaan "
 "polkua, joten hyödynnämme sitä valitsemaan sekä vihollisen suunnan että "
 "sijainnin."
@@ -5398,7 +5310,6 @@ msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` nimeltä ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:893
-#, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the *Text* field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -5406,17 +5317,17 @@ msgid ""
 "Regular.ttf\". To use this font, do the following for each of the three "
 "``Control`` nodes:"
 msgstr ""
-"``Control`` solmujen oletuskirjasin on pieni, eikä skaalaudu hyvin. Pelin "
-"asseteissa on mukana kirjasintiedosto nimeltään \"Xolonium-Regular.ttf\". "
-"Käyttääksesi tätä kirjasintyyppiä, tee kullekin kolmelle ``Control`` "
-"solmulle seuraava:"
+"Napsauta ``ScoreLabel`` solmua ja kirjoita Tarkastelijassa *Text* kenttään "
+"jokin numero. ``Control`` solmujen oletuskirjasin on pieni, eikä skaalaudu "
+"hyvin. Pelin asseteissa on mukana kirjasintiedosto nimeltään \"Xolonium-"
+"Regular.ttf\". Käyttääksesi tätä kirjasintyyppiä, tee kullekin kolmelle "
+"``Control`` solmulle seuraava:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:899
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr "\"Custom Fonts\" alla, valitse \"New DynamicFont\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:903
-#, fuzzy
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -5424,8 +5335,7 @@ msgid ""
 msgstr ""
 "Napsauta lisäämääsi \"DynamicFont\" kirjasinta, valitse \"Font Data\" alta "
 "\"Load\" ja valitse \"Xolonium-Regular.ttf\" tiedosto. Sinun täytyy myös "
-"asettaa kirjasimen koko ``Size`` ominaisuudesta. Asetus ``64`` toimii tässä "
-"hyvin."
+"asettaa kirjasimen koko ``Size`` ominaisuudesta. Asetus ``64`` toimii hyvin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:909
 msgid ""
@@ -5464,9 +5374,8 @@ msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:927
-#, fuzzy
 msgid "*Text* : ``0``"
-msgstr "Text: ``0``"
+msgstr "*Text* : ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
 msgid "*Layout* : \"Top Wide\""
@@ -5482,33 +5391,28 @@ msgid "MessageLabel"
 msgstr "MessageLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:934
-#, fuzzy
 msgid "*Text* : ``Dodge the Creeps!``"
-msgstr "Text: ``Dodge the Creeps!``"
+msgstr "*Text* : ``Dodge the Creeps!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:935
-#, fuzzy
 msgid "*Layout* : \"HCenter Wide\""
-msgstr "``Layout``: \"Center\""
+msgstr "*Layout* : \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:939
 msgid "StartButton"
 msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:941
-#, fuzzy
 msgid "*Text* : ``Start``"
-msgstr "Text: ``Start``"
+msgstr "*Text* : ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:942
-#, fuzzy
 msgid "*Layout* : \"Center Bottom\""
-msgstr "``Layout``: \"Center Bottom\""
+msgstr "*Layout* : \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:943
-#, fuzzy
 msgid "*Margin* :"
-msgstr "``Margin``:"
+msgstr "*Margin* :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid "Top: ``-200``"
@@ -5541,14 +5445,14 @@ msgstr ""
 "ja aseta ``One Shot`` ominaisuudeksi \"On\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1020
-#, fuzzy
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
 "show the \"Start\" button."
 msgstr ""
 "Tätä funktiota kutsutaan kun pelaaja häviää. Se näyttää \"Game Over\" kahden "
-"sekunnin ajan, palaa sitten alkuruutuun ja näyttää \"Start\" painikkeen."
+"sekunnin ajan, ja palaa sitten alkuruutuun ja näyttää \"Start\" painikkeen "
+"lyhyen tauon jälkeen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid ""
@@ -5559,7 +5463,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1042
-#, fuzzy
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr ""
 "Tätä funktiota kutsutaan ``Main`` solmussa aina kun pistemäärä muuttuu."
@@ -5708,12 +5611,11 @@ msgstr ""
 "solmua niin, että se kattaa koko ruudun."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
-#, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."
 msgstr ""
-"Voit lisätä myös taustakuvan, jos käytössäsi on sellainen, käyttämällä "
+"Voit lisätä myös taustakuvan, jos sinulla on sellainen, käyttämällä "
 "``Sprite`` solmua."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1192
@@ -5788,18 +5690,12 @@ msgid "Project files"
 msgstr "Projektin tiedostot"
 
 #: ../../docs/<generated>:1
-#, fuzzy
 msgid "You can find a completed version of this project at these locations:"
-msgstr ""
-"Löydät valmiin version tästä projektista täältä: https://github.com/"
-"kidscancode/Godot3_dodge/releases"
+msgstr "Löydät valmiin version tästä projektista näistä osoitteista:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1231
-#, fuzzy
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
-"Löydät valmiin version tästä projektista täältä: https://github.com/"
-"kidscancode/Godot3_dodge/releases"
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1232
 msgid "https://github.com/godotengine/godot-demo-projects"
@@ -5869,16 +5765,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
-#, fuzzy
 msgid ""
 "Before we change the input method, in the project settings go to *Display*, "
 "then click on *Window*. In the *Stretch* options, set *Mode* to \"2d\" and "
 "*Aspect* to \"keep\". This ensures that the game scales consistently on "
 "different sized screens."
 msgstr ""
-"*Stretch* osiossa, aseta *Mode* arvoksi \"2d\" ja *Aspect* arvoksi \"keep\". "
-"Tämä varmistaa, että peli skaalautuu johdonmukaisesti erikokoisille "
-"ruuduille."
+"Ennen kuin vaihdamme syötetapaa, mene projektin asetuksissa kohtaan "
+"*Display* ja napsauta sitten *Window*. *Stretch* valinnoissa, aseta *Mode* "
+"arvoksi \"2d\" ja *Aspect* arvoksi \"keep\". Tämä varmistaa, että peli "
+"skaalautuu johdonmukaisesti erikokoisille ruuduille."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:44
 msgid ""
@@ -5971,13 +5867,12 @@ msgstr ""
 "pelistäsi, kuten esimerkiksi `.apk` Androidille tai `.exe` Windowsille."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:157
-#, fuzzy
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
 "\"Resurssit\" ja \"Ominaisuudet\" välilehdillä voit räätälöidä pelisi "
-"viennin kullekin alustalle. Voimme jättää nuo asetukset rauhaan toistaiseksi."
+"viennin kullekin alustalle. Voimme jättää nuo asetukset toistaiseksi rauhaan."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:161
 msgid "Exporting by platform"
@@ -6013,17 +5908,16 @@ msgid "Click \"Save\" and the engine will build the export files."
 msgstr "Napsauta \"Tallenna\" ja pelimoottori rakentaa vientitiedostot."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:176
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
 "either case, the compressed file contains a macOS `.app` that you can double-"
 "click and run."
 msgstr ""
-"Jos teet viennin MacOS:lle MacOS-tietokoneella, saat '.dmg' tiedoston, kun "
-"taas Linuxin tai Windowsin käyttö tuottaa '.zip' tiedoston. Kummassakin "
-"tapauksessa pakattu tiedosto sisältää MacOS:n '.app' tiedoston, jonka voit "
-"ajaa kaksoisnapsauttamalla."
+"Jos teet viennin macOS:lle macOS-tietokoneella, saat `.dmg` tiedoston, kun "
+"taas Linuxin tai Windowsin käyttö tuottaa `.zip` tiedoston. Kummassakin "
+"tapauksessa pakattu tiedosto sisältää macOS `.app` tiedoston, jonka voit "
+"ajaa kaksoisnapsautuksella."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:181
 msgid ""
@@ -6076,13 +5970,12 @@ msgstr ""
 "komentorivityökalun, jota Godot käyttää keskustellakseen laitteesi kanssa."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:204
-#, fuzzy
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
 msgstr ""
-"Seuraavaksi, luo \"debug keystore\" suorittamalla seuraava komento "
-"järjestelmäsi komentorivillä:"
+"Seuraavaksi, luo debug keystore suorittamalla seuraava komento järjestelmäsi "
+"komentorivillä:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:211
 msgid ""
@@ -6138,7 +6031,6 @@ msgstr ""
 "yhdellä kertaa."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:240
-#, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
@@ -6204,7 +6096,6 @@ msgid ""
 msgstr "Kun vienti on valmis, saat seuraavat tiedostot sisältävän kansion:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:274
-#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
@@ -6370,6 +6261,10 @@ msgid ""
 "types and offers a static language's quality of auto-completion. It is also "
 "optimized for gameplay code with built-in types like Vectors and Colors."
 msgstr ""
+"GDScript antaa sinun kirjoittaa yksinkertaista Pythonin kaltaista koodia, "
+"kuitenkin tunnistaen tyypit ja tarjoten staattisen kielen "
+"automaattitäydennyksen tason. Se on myös optimoitu pelikoodille, joka "
+"käyttää Vector ja Color kaltaisia valmiita tyyppejä."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:87
 msgid ""
@@ -8268,9 +8163,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The emerald counter should look something like this"
-msgstr "Skenepuun pitäisi näyttää tältä:"
+msgstr "Smaragdilaskurin pitäisi näyttää kutakuinkin tältä"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
@@ -9494,9 +9388,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:151
-#, fuzzy
 msgid "Creating your own resources"
-msgstr "Solmujen luonti"
+msgstr "Omien resurssiesi luonti"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
 msgid ""
@@ -10428,7 +10321,7 @@ msgstr ":ref:`Animaatiolinjasto <doc_animations>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:42
 msgid ":ref:`Easy to write Shaders <doc_shading_language>`"
-msgstr ""
+msgstr ":ref:`Helposti kirjoitettevat sävyttimet <doc_shading_language>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:43
 msgid "Debug on Device"
@@ -10439,18 +10332,16 @@ msgid "The editor"
 msgstr "Editori"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:52
-#, fuzzy
 msgid ""
 "Godot Engine provides a rich-featured editor that allows you to build your "
 "games. The pictures below display the default layouts of both editors with "
 "colored blocks to indicate common functionalities."
 msgstr ""
 "Godot Engine tarjoaa peliesi tekemiseen ominaisuuksiltaan monipuolisen "
-"editorin. Alla olevat kuvat esittävät molemmat editorit, yleiset "
-"toiminnallisuudet väritetyillä alueilla osoitettuna."
+"editorin. Alla olevat kuvat esittävät molempien editorien oletusasettelut, "
+"yleiset toiminnallisuudet väritetyillä lohkoilla osoitettuna."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:58
-#, fuzzy
 msgid ""
 "While both editors may seem similar, there are many differences below the "
 "surface. Both let you organize the project using the filesystem, but Godot's "
@@ -10462,12 +10353,11 @@ msgstr ""
 "eroavaisuuksia. Molemmat antavat sinun organisoida projektin "
 "tiedostojärjestelmää käyttäen, mutta Godotin lähestymistapa on "
 "yksinkertaisempi yhdellä asetustiedostolla, minimalistisella "
-"tekstiformaatilla ja ilman metadataa. Kaikki tämä vaikuttaa siihen, että "
-"Godot on paljon ystävällisempi sellaisille versionhallintajärjestelmille, "
-"kuten Git, Subversion ja Mercurial."
+"tekstiformaatilla ja ilman metadataa. Tämä tekee Godotista ystävällisemmän "
+"sellaisille versionhallintajärjestelmille, kuten Git, Subversion ja "
+"Mercurial."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:63
-#, fuzzy
 msgid ""
 "Godot's Scene panel is similar to Unity's Hierarchy panel but, as each node "
 "has a specific function, the approach used by Godot is more visually "
@@ -10475,11 +10365,10 @@ msgid ""
 msgstr ""
 "Godotin Skene-paneeli on samankaltainen kuin Unityn Hierarchy-paneeli, mutta "
 "koska jokaisella solmulla on tietty tehtävä, Godotin käyttämä lähestymistapa "
-"on visuaalisesti kuvaavampi. Toisin sanoen, on helpompi ymmärtää yhdellä "
-"vilkaisulla mitä jokin tietty skene tekee."
+"on visuaalisesti kuvaavampi. On helpompi ymmärtää yhdellä vilkaisulla mitä "
+"jokin tietty skene tekee."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:67
-#, fuzzy
 msgid ""
 "The Inspector in Godot is more minimal, it shows only properties. Thanks to "
 "this, objects can expose more useful parameters to the user without having "
@@ -10488,26 +10377,26 @@ msgid ""
 "or even links to resources in real-time is possible without needing to write "
 "code."
 msgstr ""
-"Godotin tarkastelija on minimalistisempi ja suunniteltu näyttämään "
-"ainoastaan ominaisuuksia. Siitä johtuen, objektit voivat esitellä paljon "
-"suuremman joukon hyödyllisiä parametreja käyttäjälle, ilman että "
-"toiminnallisuutta tarvitsee piilottaa kielen ohjelmointirajapintoihin. Godot "
-"sallii minkä tahansa parametrin animoinnin visuaalisesti, joten värien, "
-"tekstuurien, enumeraatioiden ja jopa resurssilinkkien muuttaminen "
-"reaaliajassa on mahdollista ilman koodia."
+"Godotin Tarkastelija on minimaalisempi ja näyttää ainoastaan ominaisuuksia. "
+"Sen ansiosta objektit voivat esitellä hyödyllisempiä parametreja käyttäjälle "
+"ilman, että toiminnallisuutta tarvitsee piilottaa kielen "
+"ohjelmointirajapintoihin. Lisäetuna Godot sallii minkä tahansa parametrin "
+"animoinnin visuaalisesti. Värien, tekstuurien, enumeraatioiden ja jopa "
+"resurssilinkkien muuttaminen reaaliajassa on mahdollista ilman koodin "
+"kirjoittamista."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:72
-#, fuzzy
 msgid ""
 "The Toolbar at the top of the screen is similar in both editors, offering "
 "control over project playback. Projects in Godot run in a separate window, "
 "rather than inside the editor (but the tree and objects can still be "
 "explored in the debugger window)."
 msgstr ""
-"Lopuksi, ruudun ylälaidassa oleva työkalupalkki on samanlainen siinä "
-"mielessä, että se mahdollistaa projektin toiston ohjaamisen, mutta Godotissa "
-"projektit suoritetaan erillisessä ikkunassa; niitä ei suoriteta editorin "
-"sisällä (mutta puuta ja objekteja voi silti tutkailla debuggeri-ikkunassa)."
+"Ruudun ylälaidassa oleva työkalupalkki on molemmissa editoreissa "
+"samanlainen, mahdollistaen projektin toiston ohjaamisen. Godotissa projektit "
+"suoritetaan erillisessä ikkunassa sen sijaan, että niitä ajettaisiin "
+"editorin sisällä (mutta puuta ja objekteja voi silti tutkailla debuggeri-"
+"ikkunassa)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:76
 msgid ""
@@ -10845,9 +10734,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:231
-#, fuzzy
 msgid "Script serialization"
-msgstr "Spriten animaatio"
+msgstr "Skriptin serialisointi"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
 msgid "Unity can handle script serialization in two ways:"
@@ -11165,9 +11053,8 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 #: ../../docs/development/cpp/configuring_an_ide.rst:267
-#, fuzzy
 msgid "Visual Studio Code"
-msgstr "Visual Studio tai VS Code"
+msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "``{project} --goto {file}:{line}:{col}``"
@@ -11186,9 +11073,8 @@ msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
-#, fuzzy
 msgid "GDScript basics"
-msgstr "GDScript"
+msgstr "GDScriptin perusteet"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:9
 msgid ""
@@ -11696,29 +11582,28 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:247
 msgid "**Operator**"
-msgstr ""
+msgstr "**Operaattori**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:247
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Description**"
-msgstr ""
+msgstr "**Kuvaus**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:249
 msgid "``x[index]``"
-msgstr ""
+msgstr "``x[indeksi]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:249
 msgid "Subscription (highest priority)"
-msgstr ""
+msgstr "Indeksipohjainen haku (korkein prioriteetti)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:251
 msgid "``x.attribute``"
-msgstr ""
+msgstr "``x.attribute``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:251
-#, fuzzy
 msgid "Attribute reference"
-msgstr "Eroavaisuudet"
+msgstr "Attribuuttiviittaus"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
 msgid "``is``"
@@ -11822,9 +11707,8 @@ msgid "``in``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:281
-#, fuzzy
 msgid "Content test"
-msgstr "Kappaleen tyyppi"
+msgstr "Sisältötesti"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
 msgid "``!`` ``not``"
@@ -12461,9 +12345,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:723
-#, fuzzy
 msgid "Referencing functions"
-msgstr "Prosessointi"
+msgstr "Funktioihin viittaminen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:725
 msgid ""
@@ -12546,9 +12429,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:842
-#, fuzzy
 msgid "Basic syntax::"
-msgstr "Skenen järjestely"
+msgstr "Perussyntaksi::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:853
 msgid "**Crash-course for people who are familiar with switch statements**:"
@@ -12584,46 +12466,51 @@ msgid ""
 "use ``continue`` to stop execution in the current block and check the ones "
 "below it."
 msgstr ""
+"Kuvioita verrataan ylhäältä alaspäin. Jos vastaava kuvio löytyy, suoritetaan "
+"sitä vastaava koodilohko. Sen jälkeen suoritus jatkuu ``match`` lausekkeen "
+"alta. Jos haluat suorituksen jatkuvan seuraavaan kuvioon (fall through), "
+"voit käyttää ``continue`` avainsanaa lopettaaksesi suorituksen "
+"kyseenomaisessa koodilohkossa ja tarkistaa sen alla olevat."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:867
 msgid "There are 6 pattern types:"
-msgstr ""
+msgstr "Kuvioita on kuutta eri tyyppiä:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:879
-#, fuzzy
 msgid "Constant pattern"
-msgstr "Vakiot"
+msgstr "Vakiokuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:870
 msgid "Constant primitives, like numbers and strings::"
-msgstr ""
+msgstr "Vakioprimitiivit, kuten numerot ja merkkijonot::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:891
-#, fuzzy
 msgid "Variable pattern"
-msgstr "Muuttuja"
+msgstr "Muuttujakuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:882
 msgid "Matches the contents of a variable/enum::"
-msgstr ""
+msgstr "Vertaa muuttujan tai enumeraation sisältöä::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:905
 msgid "Wildcard pattern"
-msgstr ""
+msgstr "Jokerikuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:894
 msgid "This pattern matches everything. It's written as a single underscore."
-msgstr ""
+msgstr "Tämä kuvio vastaa kaikkea. Se kirjoitetaan yhtenä alaviivana."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:896
 msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages::"
 msgstr ""
+"Sitä voidaan käyttää muiden kielten ``switch`` lausekkeissa esiintyvän "
+"``default`` avainsanan vastineena:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:918
 msgid "Binding pattern"
-msgstr ""
+msgstr "Sidontakuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:908
 msgid ""
@@ -12631,78 +12518,94 @@ msgid ""
 "matches everything - and also gives that value a name. It's especially "
 "useful in array and dictionary patterns::"
 msgstr ""
+"Sidontakuviota esittelee uuden muuttujan. Kuten jokerikuviossa, se vastaa "
+"mitä tahansa arvoa – ja antaa sille arvolle myös nimen. Se on erityisen "
+"hyödyllinen taulukko- ja hakurakennekuvioissa::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:939
 msgid "Array pattern"
-msgstr ""
+msgstr "Taulukkokuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:921
 msgid ""
 "Matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
 msgstr ""
+"Vertailee taulukkoa. Jokainen taulukon alkio on kuvio itsessään, joten voit "
+"yhdistellä niissä eri kuvioita."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:923
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
 "pattern, otherwise the pattern doesn't match."
 msgstr ""
+"Taulukon kokoa vertaillaan ensiksi; sen tulee olla samankokoinen kuin kuvion "
+"taulukko tai muutoin kuvio ei ole vastaava."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
 msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``."
 msgstr ""
+"**Avoin taulukko**: Taulukko voi olla suurempi kuin kuvion taulukko "
+"asettamalla viimeiseksi alikuvioksi ``..``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:927
 msgid "Every subpattern has to be comma-separated."
-msgstr ""
+msgstr "Jokainen alikuvio on eroteltava pilkulla."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:966
 msgid "Dictionary pattern"
-msgstr ""
+msgstr "Hakurakennekuvio"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:942
 msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
 msgstr ""
+"Toimii samaan tapaan kuin taulukkokuvio. Jokaisen avaimen on oltava "
+"vakiokuvio."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:944
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
 "the pattern, otherwise the pattern doesn't match."
 msgstr ""
+"Hakurakenteen kokoa vertaillaan ensiksi; sen on oltava samankokoinen kuin "
+"kuvion hakurakenne tai muutoin kuvio ei ole vastaava."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:946
 msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``."
 msgstr ""
+"**Avoin hakurakenne**: Hakurakenne voi olla suurempi kuin kuvion hakurakenne "
+"asettamalla viimeiseksi alikuvioksi ``..``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:948
 msgid "Every subpattern has to be comma separated."
-msgstr ""
+msgstr "Jokainen alikuvio on eroteltava pilkulla."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:950
 msgid ""
 "If you don't specify a value, then only the existence of the key is checked."
-msgstr ""
+msgstr "Jos et määrittele arvoa, ainoastaan avaimen olemassaolo tarkistetaan."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:952
 msgid "A value pattern is separated from the key pattern with a ``:``."
-msgstr ""
+msgstr "Arvokuvio erotellaan avainkuviosta ``:`` merkillä."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
-#, fuzzy
 msgid "Multiple patterns"
-msgstr "Useat ilmentymät"
+msgstr "Useita kuvioita"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:969
 msgid ""
 "You can also specify multiple patterns separated by a comma. These patterns "
 "aren't allowed to have any bindings in them."
 msgstr ""
+"Voit myös määritellä useita kuvioita pilkulla eroteltuna. Näillä kuvioilla "
+"ei saa olla mitään sidontoja."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:982
 msgid "Classes"
@@ -12714,23 +12617,27 @@ msgid ""
 "reference them using the file's path, using either a relative or an absolute "
 "path. For example, if you name a script file ``character.gd``::"
 msgstr ""
+"Kaikki skriptit ovat oletusarvoisesti nimettömiä luokkia. Tässä tapauksessa "
+"voit viitata niihin vain käyttämällä tiedoston polkua, käyttäen joko "
+"suhteellista tai absoluuttista polkua. Esimerkiksi, jos annat "
+"skriptitiedostolle nimeksi ``character.gd``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:997
-#, fuzzy
 msgid ""
 "Instead, you can give your class a name to register it as a new type in "
 "Godot's editor. For that, you use the ``class_name`` keyword. You can add an "
 "optional comma followed by a path to an image, to use it as an icon. Your "
 "class will then appear with its new icon in the editor::"
 msgstr ""
-"Voit nimetä skriptin ja rekisteröidä sen tyypiksi editorissa ``class_name`` "
-"avainsanalla, jota seuraa luokan nimi. Voit lisätä pilkun ja valinnaisen "
-"polun ikonina käytettävään kuvaan. Löydät tämän jälkeen uuden tyyppisi "
-"Solmu- tai Resurssinluontidialogista."
+"Sen sijaan, voit antaa luokallesi nimen rekisteröidäksesi sen uudeksi "
+"tyypiksi Godotin editoriin. Se tehdään käyttämällä ``class_name`` "
+"avainsanaa. Voit lisätä valinnaisen pilkun ja sitä seuraavan polun ikonina "
+"käytettävään kuvaan. Luokkasi ilmestyy sitten uuden ikoninsa kanssa näkyviin "
+"editoriin::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1010
 msgid "Here's a class file example:"
-msgstr ""
+msgstr "Tässä on esimerkki luokkatiedostosta:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1029
 msgid ""
@@ -12741,40 +12648,48 @@ msgid ""
 "of thread safety, since scripts can be initialized in separate threads "
 "without the user knowing."
 msgstr ""
+"Godotin luokkien syntaksi on suppea: se voi sisältää jäsenmuuttujia ja -"
+"funktioita. Voit käyttää staattisia funktioita, mutta et staattisia "
+"jäsenmuuttujia. Samaan tapaan, pelimoottori alustaa muuttujat joka kerta, "
+"kun luot ilmentymän, ja tämä sisältää taulukot ja hakurakenteet. Tämä "
+"tehdään säieturvallisuuden hengessä, sillä skriptit saatetaan alustaa eri "
+"säikeistä ilman, että käyttäjä tietää siitä."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1037
 msgid "Inheritance"
-msgstr ""
+msgstr "Perintä"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1039
 msgid "A class (stored as a file) can inherit from:"
-msgstr ""
+msgstr "Luokka (tallennettuna tiedostoon) voi periytyä seuraavista:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1041
 msgid "A global class."
-msgstr ""
+msgstr "Globaali luokka."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1042
 msgid "Another class file."
-msgstr ""
+msgstr "Toinen luokkatiedosto."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1043
 msgid "An inner class inside another class file."
-msgstr ""
+msgstr "Toisen luokkatiedoston sisällä oleva sisäluokka."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1045
 msgid "Multiple inheritance is not allowed."
-msgstr ""
+msgstr "Moniperintä ei ole sallittua."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1047
 msgid "Inheritance uses the ``extends`` keyword::"
-msgstr ""
+msgstr "Perintä käyttää ``extends`` avainsanaa::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1059
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used::"
 msgstr ""
+"Tarkistaaksesi periytyykö tietty ilmentymä jostakin luokasta, voit käyttää "
+"``is`` avainsanaa:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1071
 msgid ""
@@ -13200,6 +13115,7 @@ msgid ""
 "GDScript is a Dynamically Typed language. As such, its main advantages are "
 "that:"
 msgstr ""
+"GDScript on dynaamisesti tyypitetty kieli. Sellaisena sen päähyödyt ovat:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:25
 msgid "The language is simple and easy to learn."
@@ -13562,14 +13478,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
-#, fuzzy
 msgid "GDScript exports"
-msgstr "GDScript"
+msgstr "Vienti GDScripteistä"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
-#, fuzzy
 msgid "Introduction to exports"
-msgstr "Tutustuminen Godotin editoriin"
+msgstr "Johdanto vienteihin"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
 msgid ""
@@ -13674,6 +13588,9 @@ msgid ""
 "Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming styleguide."
 msgstr ""
+"Koska GDScript on lähellä Pythonia, tämä opas on ottanut vaikutteita "
+"Pythonin `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`__ "
+"ohjelmointityylioppaasta."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:18
 msgid ""
@@ -13682,9 +13599,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:22
-#, fuzzy
 msgid "Code structure"
-msgstr "Solmurakenne"
+msgstr "Koodin rakenne"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:25
 msgid "Indentation"
@@ -13784,9 +13700,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
-#, fuzzy
 msgid "Classes and nodes"
-msgstr "Skenet ja solmut"
+msgstr "Luokat ja solmut"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
 msgid "Use PascalCase: ``extends KinematicBody``"
@@ -13831,9 +13746,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:217
-#, fuzzy
 msgid "Type hints"
-msgstr "Tyypit"
+msgstr "Tyyppivihjeet"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:219
 msgid ""
@@ -13884,7 +13798,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:20
 msgid "Typed GDScript is available since Godot 3.1."
-msgstr ""
+msgstr "Tyypitetty GDScript on käytettävissä Godotin versiosta 3.1 lähtien."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:23
 msgid "A brief look at static typing"
@@ -13913,6 +13827,12 @@ msgid ""
 "issues at runtime, but lets you decide whether or not you want to leave the "
 "code as it is. More on that in a moment."
 msgstr ""
+"Toinen merkittävä etu tyypitetystä GDScriptistä on uusi "
+"**varoitusjärjestelmä**. Versiosta 3.1 lähtien, Godot näyttää varoituksia "
+"koodistasi samalla kun kirjotat sitä: pelimoottori tunnistaa osia "
+"koodistasi, jotka voivat johtaa ajonaikaisiin ongelmiin, mutta antaa sinun "
+"päättää haluatko jättää koodisi sellaiseksi kuin se on. Siitä lisää hetken "
+"päästä."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:54
 msgid ""
@@ -13995,9 +13915,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:117
-#, fuzzy
 msgid "Custom variable types"
-msgstr "Mukautettujen tietotyyppien luonti"
+msgstr "Mukautetut muuttujatyypit"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:119
 msgid ""
@@ -14020,9 +13939,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:145
-#, fuzzy
 msgid "Variable casting"
-msgstr "Muuttuja"
+msgstr "Muuttujan tyyppimuunnos"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:147
 msgid ""
@@ -14171,9 +14089,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:307
-#, fuzzy
 msgid "Warning system"
-msgstr "Skenejärjestelmä"
+msgstr "Varoitusjärjestelmä"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:309
 msgid ""
@@ -14189,9 +14106,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
-#, fuzzy
 msgid "warning system project settings"
-msgstr "Projektin valmistelu"
+msgstr "varoitusjärjestelmän projektikohtaiset asetukset"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:321
 msgid ""
@@ -14200,9 +14116,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
-#, fuzzy
 msgid "warning system example"
-msgstr "Ilmentymien luonti esimerkin avulla"
+msgstr "varoitusjärjestelmän esimerkki"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
 msgid ""
@@ -14214,9 +14129,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
-#, fuzzy
 msgid "warning system ignore example"
-msgstr "Ilmentymien luonti esimerkin avulla"
+msgstr "varoitusjärjestelmän sivuutusesimerkki"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:340
 msgid ""
@@ -14276,6 +14190,11 @@ msgid ""
 "scalable systems. In the future, static types will also bring you a nice "
 "performance boost thanks to upcoming compiler optimizations."
 msgstr ""
+"Tyypitetty GDScript on voimakas työkalu. Godotin versiosta 3.1 lähtien "
+"käytettävissä olevana se auttaa sinua kirjoittamaan jäsennetympää koodia, "
+"välttämään yleisiä virheitä ja luomaan skaalautuvia järjestelmiä. "
+"Tulevaisuudessa staattiset tyypit tuovat myös mukavan suorituskykylisän "
+"kääntäjäoptimointien ansiosta."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
@@ -14827,9 +14746,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
-#, fuzzy
 msgid "Creating a script"
-msgstr "Skriptin lisäys"
+msgstr "Skriptin luonti"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
 msgid ""
@@ -14851,9 +14769,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:43
-#, fuzzy
 msgid "Adding a function"
-msgstr "Skriptin lisäys"
+msgstr "Funktion lisäys"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:45
 msgid ""
@@ -14878,9 +14795,8 @@ msgid "There are three main ways to add functions in a script:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:56
-#, fuzzy
 msgid "Overriding a virtual function"
-msgstr "Ylikirjoitettavat funktiot"
+msgstr "Virtuaalifunktion ylikirjoitus"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:58
 msgid ""
@@ -14908,9 +14824,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:83
-#, fuzzy
 msgid "Connecting a signal to a function"
-msgstr "HUD- ja Main-skenejen liittäminen"
+msgstr "Signaalin yhdistäminen funktioon"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:85
 msgid ""
@@ -14992,9 +14907,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:15
-#, fuzzy
 msgid "Node properties"
-msgstr "Sillä on muokattavia ominaisuuksia."
+msgstr "Solmun ominaisuudet"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:17
 msgid ""
@@ -15011,9 +14925,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:25
-#, fuzzy
 msgid "Ports and connections"
-msgstr "connection"
+msgstr "Portit ja yhteydet"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:27
 msgid ""
@@ -15096,9 +15009,8 @@ msgid "While, for data, a contextual set/get/call menu will open:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:87
-#, fuzzy
 msgid "Adding nodes"
-msgstr "Solmujen luonti"
+msgstr "Solmujen lisäys"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:89
 msgid ""
@@ -15229,9 +15141,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:190
-#, fuzzy
 msgid "Adding more nodes"
-msgstr "Efektien lisäys"
+msgstr "Lisäsolmujen lisäys"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:192
 msgid ""
@@ -15739,9 +15650,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:36
-#, fuzzy
 msgid "Setting up C# for Godot"
-msgstr "Projektin perustus"
+msgstr "C# asennus Godotiin"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:41
 msgid ""
@@ -15776,9 +15686,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:65
-#, fuzzy
 msgid "Additional notes"
-msgstr "Solmujen luonti"
+msgstr "Lisähuomautukset"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
 msgid ""
@@ -16089,9 +15998,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:82
-#, fuzzy
 msgid "C# signals"
-msgstr "Signaalit"
+msgstr "C# signaalit"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
 msgid ""
@@ -16153,9 +16061,8 @@ msgid "This is a (incomplete) list of API differences between C# and GDScript."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:9
-#, fuzzy
 msgid "General differences"
-msgstr "Eroavaisuudet"
+msgstr "Yleiset eroavaisuudet"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:11
 msgid ""
@@ -16210,9 +16117,8 @@ msgid "``Variant.Operator`` enum"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
-#, fuzzy
 msgid "Math functions"
-msgstr "Ylikirjoitettavat funktiot"
+msgstr "Matematiikkafunktiot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:40
 msgid ""
@@ -16222,9 +16128,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
-#, fuzzy
 msgid "Random functions"
-msgstr "Ylikirjoitettavat funktiot"
+msgstr "Satunnaisfunktiot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:47
 msgid ""
@@ -16233,9 +16138,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
-#, fuzzy
 msgid "Other functions"
-msgstr "Prosessointi"
+msgstr "Muut funktiot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:53
 msgid ""
@@ -16347,9 +16251,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:151
-#, fuzzy
 msgid "There are a few differences, though:"
-msgstr "Muutama asia täytyy pitää mielessä:"
+msgstr "Muutamia eroavaisuuksia kuitenkin on:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:153
 msgid ""
@@ -16425,9 +16328,8 @@ msgid "``get_rotation()``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
-#, fuzzy
 msgid "``Rotation``"
-msgstr "Tuonti"
+msgstr "``Rotation``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:210
 msgid "Plane"
@@ -16490,14 +16392,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
-#, fuzzy
 msgid "``length()``"
-msgstr "length"
+msgstr "``length()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
-#, fuzzy
 msgid "``Length``"
-msgstr "length"
+msgstr "``Length``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:252
 msgid "``length_squared()``"
@@ -16558,9 +16458,8 @@ msgid "``PoolColorArray``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:268
-#, fuzzy
 msgid "``Color[]``"
-msgstr "Väri"
+msgstr "``Color[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
 msgid "``PoolVector2Array``"
@@ -16644,9 +16543,8 @@ msgid "Other differences:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
-#, fuzzy
 msgid "``Color8``"
-msgstr "Väri"
+msgstr "``Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
 msgid "``Color.Color8``"
@@ -16731,9 +16629,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
-#, fuzzy
 msgid "Formatting conventions"
-msgstr "3D-sisällön luominen"
+msgstr "Muotoilutavat"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:33
 msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
@@ -16828,9 +16725,8 @@ msgid "Adjacent to another blank line."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:136
-#, fuzzy
 msgid "Using spaces"
-msgstr "Skenejen instantiointi"
+msgstr "Välilyöntien käyttö"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:138
 msgid "Insert a space:"
@@ -17019,7 +16915,6 @@ msgid "Organization"
 msgstr "Järjestys"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
-#, fuzzy
 msgid ""
 "Godot is scene-based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
@@ -17028,7 +16923,6 @@ msgstr ""
 "sellaisenaan ilman metadataa tai asset-tietokantaa."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:19
-#, fuzzy
 msgid ""
 "Unlike other engines, many resources are contained within the scene itself, "
 "so the amount of files in the filesystem is considerably lower."
@@ -17038,31 +16932,29 @@ msgstr ""
 "alhaisempi."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
-#, fuzzy
 msgid ""
 "Considering that, the most common approach is to group assets as close to "
 "scenes as possible; when a project grows, it makes it more maintainable."
 msgstr ""
-"Ottaen sen huomioon, yleisin lähestymistapa on ryhmitellä assetit lähelle "
-"skenejä, niin että kun projekti kasvaa, se on helpommin ylläpidettävissä."
+"Se huomioiden, yleisin lähestymistapa on ryhmitellä assetit niin lähelle "
+"skenejä kuin mahdollista; kun projekti kasvaa, se on näin helpommin "
+"ylläpidettävissä."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:26
-#, fuzzy
 msgid ""
 "As an example, one can usually place into a single folder their basic "
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
 "They can then use a separate folder to store built levels that use them."
 msgstr ""
-"Esimerkkinä, perustana toimivat spritejen kuvat, 3D-skenemallit tai meshit, "
-"materiaalit, ym. voi yleensä järjestää yhteen paikkaan, kun taas niistä "
-"rakennetuille kentille voi käyttää erillistä kansiota."
+"Esimerkkinä, perusassetteina toimivat spritejen kuvat, 3D-mallien meshit, "
+"materiaalit, musiikit, ym. voi yleensä sijoittaa yhteen kansioon. Niistä "
+"rakennetuille kentille voi taas käyttää erillistä kansiota."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:47
 msgid "Importing"
 msgstr "Tuonti"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:49
-#, fuzzy
 msgid ""
 "Godot versions prior to 3.0 did the import process from files outside the "
 "project. While this can be useful in large projects, it resulted in an "
@@ -17073,20 +16965,18 @@ msgstr ""
 "johti useimmilla kehittäjillä järjestämisen sekamelskaan."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:53
-#, fuzzy
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
-msgstr "Tästä syystä, assetit tuodaan nykyään läpinäkyvästi projektikansiosta."
+msgstr "Tästä syystä assetit tuodaan nykyään läpinäkyvästi projektikansiosta."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:56
-#, fuzzy
 msgid ""
 "If a folder shouldn't be imported into Godot, an exception can be made with "
 "a .gdignore file."
 msgstr ""
-"Jos kansiota ei pidä tuoda Godotiin, sille voidaan tehdä poikkeus .gdignore "
-"tiedostolla."
+"Jos kansiota ei ole tarkoitus tuoda Godotiin, sille voidaan tehdä poikkeus ."
+"gdignore tiedostolla."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
 msgid "Blender ESCN exporter"
@@ -17261,9 +17151,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:2
-#, fuzzy
 msgid "Physics properties"
-msgstr "Sillä on muokattavia ominaisuuksia."
+msgstr "Fysiikkaominaisuudet"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:4
 msgid ""
@@ -17278,7 +17167,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:14
-#, fuzzy
 msgid "Body type"
 msgstr "Kappaleen tyyppi"
 
@@ -17291,9 +17179,8 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:23
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
-#, fuzzy
 msgid "Collision shapes"
-msgstr "Näytä törmäysmuodot"
+msgstr "Törmäysmuodot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:25
 msgid ""
@@ -17769,9 +17656,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:4
-#, fuzzy
 msgid "Importing images"
-msgstr "Tuonti"
+msgstr "Kuvien tuonti"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
 msgid "Why import them?"
@@ -17791,9 +17677,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:17
-#, fuzzy
 msgid "Importing textures"
-msgstr "Tuonti"
+msgstr "Tekstuurien tuonti"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:19
 msgid ""
@@ -18162,9 +18047,8 @@ msgid "Importing audio samples"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
-#, fuzzy
 msgid "Why import?"
-msgstr "imported"
+msgstr "Miksi tuoda?"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
 msgid ""
@@ -18361,7 +18245,6 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
-#, fuzzy
 msgid "keys"
 msgstr "keys (avainruudut)"
 
@@ -18480,9 +18363,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:91
-#, fuzzy
 msgid "CSV importer"
-msgstr "imported"
+msgstr "CSV-tuoja"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:93
 msgid ""
@@ -18509,9 +18391,8 @@ msgid "Be sure to click \"Reimport\" after any change to these options."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:4
-#, fuzzy
 msgid "Importing 3D scenes"
-msgstr "Skenen skriptaus"
+msgstr "3D-skenejen tuonti"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:7
 msgid "Godot scene importer"
@@ -18716,9 +18597,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:103
-#, fuzzy
 msgid "Import options"
-msgstr "Tuonti"
+msgstr "Tuontiasetukset"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:105
 msgid "The importer has several options, which will be discussed below:"
@@ -18743,14 +18623,12 @@ msgid "Allows setting a specific name to the generated root node."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:123
-#, fuzzy
 msgid "Root Scale"
-msgstr "Kielialue"
+msgstr "Juuriskaala"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:125
-#, fuzzy
 msgid "The scale of the root node."
-msgstr "Skriptin rooli"
+msgstr "Juurisolmun skaala."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:128
 msgid "Custom Script"
@@ -18764,9 +18642,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:134
-#, fuzzy
 msgid "Create a script like this:"
-msgstr "Lopullisen skriptin pitäisi näyttää tältä:"
+msgstr "Luo seuraavanlainen skripti:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:145
 msgid ""
@@ -18995,9 +18872,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:250
-#, fuzzy
 msgid "Animation options"
-msgstr "Animaatiot"
+msgstr "Animaatiovalinnat"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:252
 msgid ""
@@ -19101,9 +18977,8 @@ msgid "Other than that, everything is allowed!"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:311
-#, fuzzy
 msgid "Import hints"
-msgstr "Tuonti"
+msgstr "Tuontivihjeet"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:313
 msgid ""
@@ -19267,9 +19142,8 @@ msgid "Exporting projects"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:9
-#, fuzzy
 msgid "Why export?"
-msgstr "Käyttöjärjestelmät (vienti)"
+msgstr "Miksi viedä?"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:11
 msgid ""
@@ -19566,14 +19440,12 @@ msgid "PCK files usually contain, but are not limited to:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:42
-#, fuzzy
 msgid "scripts"
-msgstr "Pääskripti"
+msgstr "skriptit"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:43
-#, fuzzy
 msgid "scenes"
-msgstr "Skenet"
+msgstr "skenet"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:44
 msgid "shaders"
@@ -19584,14 +19456,12 @@ msgid "models"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:46
-#, fuzzy
 msgid "textures"
-msgstr "Ominaisuudet"
+msgstr "tekstuurit"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:47
-#, fuzzy
 msgid "sound effects"
-msgstr "Ääniefektit"
+msgstr "ääniefektit"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:48
 msgid "music"
@@ -20465,9 +20335,8 @@ msgid "Once that is configured, everything is ready to export to Android!"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
-#, fuzzy
 msgid "Exporting for Google Play Store"
-msgstr "Vienti alustottain"
+msgstr "Vienti Google Play -kauppaan"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
@@ -21094,9 +20963,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:72
-#, fuzzy
 msgid "Accepting the Licenses"
-msgstr "Skenen pystytys"
+msgstr "Lisenssien hyväksyminen"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:74
 msgid ""
@@ -21133,9 +21001,8 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:96
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:166
-#, fuzzy
 msgid "Generating the Keystore"
-msgstr "Skenen pystytys"
+msgstr "Keystoren luonti"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:98
 msgid ""
@@ -21175,9 +21042,8 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:123
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:190
-#, fuzzy
 msgid "Setting up Godot"
-msgstr "Projektin perustus"
+msgstr "Godotin asennus"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:125
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:192
@@ -21247,9 +21113,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:159
-#, fuzzy
 msgid "Android SDK"
-msgstr "Android"
+msgstr "Android SDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:160
 msgid "Android SDK Platform"
@@ -21487,9 +21352,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
-#, fuzzy
 msgid "Godot scenes and scripts are classes"
-msgstr "Skriptien rekisteröinti luokiksi"
+msgstr "Godotin skenet ja skriptit ovat luokkia"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
@@ -21534,24 +21398,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
-#, fuzzy
 msgid "properties"
-msgstr "Sillä on muokattavia ominaisuuksia."
+msgstr "ominaisuudet"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
-#, fuzzy
 msgid "methods"
-msgstr "'method' (metodi)"
+msgstr "metodit"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:33
-#, fuzzy
 msgid "constants"
-msgstr "Vakiot"
+msgstr "vakiot"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
-#, fuzzy
 msgid "signals"
-msgstr "Signaalit"
+msgstr "signaalit"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
 msgid ""
@@ -21629,9 +21489,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
-#, fuzzy
 msgid "Scenes and scripts are objects"
-msgstr "Skenet ja solmut"
+msgstr "Skenet ja skriptit ovat objekteja"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
 msgid ""
@@ -21646,9 +21505,8 @@ msgid "The content of a scene helps to define:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
-#, fuzzy
 msgid "What nodes are available to the script"
-msgstr "Skriptin rooli"
+msgstr "Mitkä solmut ovat käytettävissä skriptissä"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
 msgid "How they are organized"
@@ -21680,9 +21538,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
-#, fuzzy
 msgid "Scene organization"
-msgstr "Järjestys"
+msgstr "Skenen järjestys"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:6
 msgid ""
@@ -21873,9 +21730,8 @@ msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:251
-#, fuzzy
 msgid "Choosing a node tree structure"
-msgstr "Solmurakenne"
+msgstr "Solmupuurakenteen valinta"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:253
 msgid ""
@@ -22057,9 +21913,8 @@ msgid "Instantiate and add the new room."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:349
-#, fuzzy
 msgid "Re-add the player."
-msgstr "Pelaajan liikuttaminen"
+msgstr "Pelaajan lisääminen uudelleen."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:351
 msgid ""
@@ -22183,9 +22038,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
-#, fuzzy
 msgid "Named types"
-msgstr "Kappaleen tyyppi"
+msgstr "Nimetyt tyypit"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:66
 msgid ""
@@ -22200,14 +22054,12 @@ msgid "Know the base type of the script they would like to use."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
-#, fuzzy
 msgid "Create an instance of that base type."
-msgstr "Mukautettujen tietotyyppien luonti"
+msgstr "Luo tuon perustyypin ilmentymä."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:75
-#, fuzzy
 msgid "Add the script to the node."
-msgstr "Lisää tämä koodi funktioon:"
+msgstr "Lisää skripti solmulle."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
 msgid "(Drag-n-drop method)"
@@ -22218,9 +22070,8 @@ msgid "Find the script in the FileSystem dock."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:81
-#, fuzzy
 msgid "Drag and drop the script onto the node in the Scene dock."
-msgstr "Muita skenen solmuja käsittelevän skriptin kirjoittamista."
+msgstr "Raahaa skriptin solmun päälle Skene-telakassa."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
 msgid "(Property method)"
@@ -22322,9 +22173,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
-#, fuzzy
 msgid "Godot 3.1+ only."
-msgstr "Godot 3.1 versiossa:"
+msgstr "Vain Godot 3.1+."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
 msgid ""
@@ -22644,9 +22494,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:4
-#, fuzzy
 msgid "Godot interfaces"
-msgstr "Muokkaa käyttöliittymää"
+msgstr "Godotin käyttöliittymät"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:6
 msgid ""
@@ -22690,9 +22539,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:115
-#, fuzzy
 msgid "Note the following:"
-msgstr "Lisää seuraava koodi:"
+msgstr "Huomaa seuraava:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:117
 msgid "There are many ways in which a language can load such resources."
@@ -22816,9 +22664,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:4
-#, fuzzy
 msgid "Godot notifications"
-msgstr "Ilmoitukset (notifications)"
+msgstr "Godot-ilmoitukset"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:6
 msgid ""
@@ -23062,9 +22909,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:4
-#, fuzzy
 msgid "Data preferences"
-msgstr "Eroavaisuudet"
+msgstr "Data-asetukset"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:6
 msgid ""
@@ -23194,9 +23040,8 @@ msgid "If doing many inserts/removals *from the front*, then..."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:79
-#, fuzzy
 msgid "invert the array."
-msgstr "Taulukko kärkipisteiden indeksejä"
+msgstr "käännä taulukon järjestys."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:81
 msgid "do a loop which executes the Array changes *at the end*."
@@ -23592,9 +23437,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:4
-#, fuzzy
 msgid "Logic preferences"
-msgstr "Eroavaisuudet"
+msgstr "Logiikka-asetukset"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:6
 msgid ""
@@ -23761,7 +23605,6 @@ msgid "Viewport and Canvas items"
 msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
-#, fuzzy
 msgid ""
 "Regular 2D nodes, such as :ref:`Node2D <class_Node2D>` or :ref:`Control "
 "<class_Control>` both inherit from :ref:`CanvasItem <class_CanvasItem>`, "
@@ -23772,22 +23615,21 @@ msgstr ""
 "Tavalliset 2D-solmut, kuten :ref:`Node2D <class_Node2D>` ja :ref:`Control "
 "<class_Control>`, periytyvät :ref:`CanvasItem <class_CanvasItem>` solmusta, "
 "joka on kaikkien 2D-solmujen perusta. CanvasItemit voidaan järjestää "
-"puurakenteisiin ja ne perivät muunnoksensa ylemmältä tasolta. Tämä "
+"puurakenteisiin. Kukin solmu perii muunnoksensa ylemmältä tasolta. Tämä "
 "tarkoittaa, että siirtämällä yhtä solmua myös kaikki sen alisolmut siirtyvät "
-"sen mukana."
+"mukana."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
-#, fuzzy
 msgid ""
 "CanvasItem nodes, and nodes inheriting from them, are direct or indirect "
 "children of a :ref:`Viewport <class_Viewport>`, and will be displayed "
 "through it."
 msgstr ""
-"Nämä solmut asetetaan suoraan tai epäsuorasti :ref:`Viewport "
-"<class_Viewport>` solmun alle, jolloin ne näytetään sen lävitse."
+"CanvasItem solmut ja kaikki siitä periytyvät solmut ovat suoraan tai "
+"epäsuorasti :ref:`Viewport <class_Viewport>` solmun alisolmuja, ja ne "
+"näytetään sen lävitse."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
-#, fuzzy
 msgid ""
 "A Viewport has the property :ref:`Viewport.canvas_transform "
 "<class_Viewport_property_canvas_transform>`, which allows applying a custom :"
@@ -23796,8 +23638,8 @@ msgid ""
 "that transform."
 msgstr ""
 "Viewport-solmulla on ominaisuus :ref:`Viewport.canvas_transform "
-"<class_Viewport_property_canvas_transform>`, joka mahdollistaa koko "
-"CanvasItem-hierarkian muuntamisen mukautetulla :ref:`Transform2D "
+"<class_Viewport_property_canvas_transform>`, joka mahdollistaa sen "
+"sisältämän CanvasItem-hierarkian muuntamisen mukautetulla :ref:`Transform2D "
 "<class_Transform2D>` muunnoksella. Sellaiset solmut kuten :ref:`Camera2D "
 "<class_Camera2D>` toimivat muuttamalla tuota muunnosta."
 
@@ -24102,9 +23944,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
-#, fuzzy
 msgid "TileMap node"
-msgstr "Kamerasolmu"
+msgstr "TileMap-solmu"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:39
 msgid ""
@@ -24160,9 +24001,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
-#, fuzzy
 msgid "``Custom Transform``"
-msgstr "Muunna"
+msgstr "``Custom Transform``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
@@ -24173,9 +24013,8 @@ msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
-#, fuzzy
 msgid "Creating a TileSet"
-msgstr "Skriptin lisäys"
+msgstr "TileSet-solmun luonti"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
@@ -24226,9 +24065,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:110
-#, fuzzy
 msgid "Collision Shapes"
-msgstr "Näytä törmäysmuodot"
+msgstr "Törmäysmuodot"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:112
 msgid ""
@@ -24693,9 +24531,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:288
-#, fuzzy
 msgid "Emission Shapes"
-msgstr "Näytä törmäysmuodot"
+msgstr "Emissiomuodot"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:290
 msgid ""
@@ -25749,9 +25586,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:4
-#, fuzzy
 msgid "2D Sprite animation"
-msgstr "Spriten animaatio"
+msgstr "2D-spriten animaatio"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
 msgid ""
@@ -25840,9 +25676,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:70
-#, fuzzy
 msgid "Controlling the animation"
-msgstr "Animaatioiden valinta"
+msgstr "Animaation ohjaaminen"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:72
 msgid ""
@@ -25853,9 +25688,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:90
-#, fuzzy
 msgid "Sprite sheet with AnimationPlayer"
-msgstr "Animaatiotoistin (AnimationPlayer)"
+msgstr "Sprite-arkki animaatiotoistimella"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:92
 msgid ""
@@ -28378,9 +28212,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:28
-#, fuzzy
 msgid "The main downsides of ``GIProbe`` are:"
-msgstr "GIProben keskeisimmät haittapuolet ovat:"
+msgstr "``GIProbe`` keskeisimmät haittapuolet ovat:"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:30
 msgid ""
@@ -29671,9 +29504,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:75
-#, fuzzy
 msgid "There are two ways to do this:"
-msgstr "Joitakin asioita on otettava huomioon:"
+msgstr "On kaksi tapaa tehdä tämä:"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:78
 msgid "sRGB transfer function to display linear ratios on image import"
@@ -30058,9 +29890,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:17
-#, fuzzy
 msgid "Introduction to CSG nodes"
-msgstr "Tutustuminen Godotin editoriin"
+msgstr "Tutustuminen CSG-solmuihin"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:19
 msgid ""
@@ -30073,32 +29904,28 @@ msgid ":ref:`CSGBox <class_CSGBox>`"
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:23
-#, fuzzy
 msgid ":ref:`CSGCylinder <class_CSGCylinder>` (also supports cone)"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`CSGCylinder <class_CSGCylinder>` (tukee myös kartiota)"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:24
-#, fuzzy
 msgid ":ref:`CSGSphere <class_CSGSphere>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`CSGSphere <class_CSGSphere>`"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:25
 msgid ":ref:`CSGTorus <class_CSGTorus>`"
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:26
-#, fuzzy
 msgid ":ref:`CSGPolygon <class_CSGPolygon>`"
-msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:27
 msgid ":ref:`CSGMesh <class_CSGMesh>`"
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:28
-#, fuzzy
 msgid ":ref:`CSGCombiner <class_CSGcombiner>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:35
 msgid "CSG tools features"
@@ -30194,9 +30021,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:90
-#, fuzzy
 msgid "Processing order"
-msgstr "Prosessointi"
+msgstr "Käsittelyjärjestys"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:92
 msgid ""
@@ -30343,11 +30169,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:183
-#, fuzzy
 msgid ""
 "Undo the re-parent after observing the effect. The bed you've built should "
 "look like this:"
-msgstr "Skenepuun pitäisi näyttää tältä:"
+msgstr ""
+"Kumoa isännän vaihto pantuasi merkille vaikutuksen. Rakentamasi sängyn "
+"pitäisi näyttää tältä:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:188
 msgid "Create a CSGCombiner and name it ``lamp``."
@@ -30395,11 +30222,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:230
-#, fuzzy
 msgid ""
 "Position your furniture in your room as you like and your scene should look "
 "this:"
-msgstr "Kun olet valmis, ``Player`` skenesi pitäisi näyttää tältä:"
+msgstr ""
+"Sijoita huonekalut huoneeseesi kuten haluat ja skenesi pitäisi näyttää tältä:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:235
 msgid ""
@@ -30595,9 +30422,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:7
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:7
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:7
-#, fuzzy
 msgid "Part overview"
-msgstr "Yleiskatsaus"
+msgstr "Osion yleiskatsaus"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:69
 msgid ""
@@ -32160,9 +31986,8 @@ msgid "Here's the script that will control our bullet:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:473
-#, fuzzy
 msgid "Let's go through the script:"
-msgstr "Skriptin rooli"
+msgstr "Käydään skripti läpi:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:477
 msgid "First we define a few class variables:"
@@ -37654,9 +37479,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:18
-#, fuzzy
 msgid "Animating one Fish"
-msgstr "Animaatiot"
+msgstr "Yhden kalan animointi"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:20
 msgid ""
@@ -37741,9 +37565,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:69
-#, fuzzy
 msgid "The resulting animation should look something like this:"
-msgstr "Skenepuun pitäisi näyttää tältä:"
+msgstr "Tuloksena olevan animaation pitäisi näyttää kutakuinkin tältä:"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:73
 msgid ""
@@ -37763,9 +37586,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:91
-#, fuzzy
 msgid "With only the pivot applied you should see something like this:"
-msgstr "Skenepuun pitäisi näyttää tältä:"
+msgstr ""
+"Siirtämällä ainoastaan napapistettä, lopputuloksen pitäisi näyttää "
+"kutakuinkin tältä:"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:95
 msgid ""
@@ -38049,9 +37873,8 @@ msgid "Set the ``shader_type`` to ``particles``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:27
-#, fuzzy
 msgid "Then add the following two functions:"
-msgstr "Lisää seuraava koodi:"
+msgstr "Lisää sitten seuraavat kaksi funktiota:"
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:51
 msgid ""
@@ -38154,9 +37977,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:137
-#, fuzzy
 msgid "This code gives you the following behavior:"
-msgstr "Mob skene käyttää seuraavia solmuja:"
+msgstr "Tämä koodi antaa sinulle seuraavanlaisen käytöksen:"
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:141
 msgid ""
@@ -38955,9 +38777,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:27
-#, fuzzy
 msgid "Collision objects"
-msgstr "Näytä törmäysmuodot"
+msgstr "Törmäyskappaleet"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:29
 msgid ""
@@ -39067,9 +38888,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:90
-#, fuzzy
 msgid "Collision layers and masks"
-msgstr "Näytä törmäysmuodot"
+msgstr "Törmäyskerrokset ja -maskit"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:92
 msgid ""
@@ -39532,9 +39352,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:19
-#, fuzzy
 msgid "What is an area?"
-msgstr "Partikkelit"
+msgstr "Mikä on alue?"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:21
 msgid ""
@@ -39545,9 +39364,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:27
-#, fuzzy
 msgid "Area properties"
-msgstr "Sillä on muokattavia ominaisuuksia."
+msgstr "Alueen ominaisuudet"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:29
 msgid "Areas have many properties you can use to customize their behavior."
@@ -39583,9 +39401,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:48
-#, fuzzy
 msgid "Overlap detection"
-msgstr "Ylikirjoitettavat funktiot"
+msgstr "Päällekkäisyyden tunnistaminen"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:50
 msgid ""
@@ -39625,9 +39442,8 @@ msgid "Now our player can collect the coins!"
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:92
-#, fuzzy
 msgid "Some other usage examples:"
-msgstr "Ilmentymien luonti esimerkin avulla"
+msgstr "Muita käyttöesimerkkejä:"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:94
 msgid ""
@@ -40311,14 +40127,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:16
-#, fuzzy
 msgid "Setting up the ragdoll"
-msgstr "Projektin perustus"
+msgstr "Rättinuken pohjustaminen"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:19
-#, fuzzy
 msgid "Creating physical bones"
-msgstr "Solmujen luonti"
+msgstr "Fyysisten luiden luonti"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:21
 msgid ""
@@ -40348,9 +40162,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:34
-#, fuzzy
 msgid "Cleaning up the skeleton"
-msgstr "Skenen pystytys"
+msgstr "Luurangon siivoaminen"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:36
 msgid ""
@@ -40375,9 +40188,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:43
-#, fuzzy
 msgid "Collision shape adjustment"
-msgstr "Näytä törmäysmuodot"
+msgstr "Törmäysmuotojen säätö"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:45
 msgid ""
@@ -40550,9 +40362,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:110
-#, fuzzy
 msgid "Moving the kinematic character"
-msgstr "Muokkaa käyttöliittymää"
+msgstr "Kinemaattisen hahmon liikuttaminen"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:112
 msgid ""
@@ -40615,9 +40426,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/soft_body.rst:10
-#, fuzzy
 msgid "Basic set-up"
-msgstr "Skenen järjestely"
+msgstr "Perusjärjestely"
 
 #: ../../docs/tutorials/physics/soft_body.rst:12
 msgid ""
@@ -40650,9 +40460,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/soft_body.rst:26
-#, fuzzy
 msgid "Play the scene to view the simulation."
-msgstr "Toista asiaankuuluva animaatio."
+msgstr "Pelaa skeneä nähdäksesi simulaation."
 
 #: ../../docs/tutorials/physics/soft_body.rst:28
 msgid ""
@@ -41983,9 +41792,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:33
-#, fuzzy
 msgid "Vector interpolation"
-msgstr "Lisää tietoa"
+msgstr "Vektorin interpolointi"
 
 #: ../../docs/tutorials/math/interpolation.rst:35
 msgid ""
@@ -42010,14 +41818,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:50
-#, fuzzy
 msgid "It will produce the following motion:"
-msgstr "Mob skene käyttää seuraavia solmuja:"
+msgstr "Se tuottaa seuraavanlaisen liikkeen:"
 
 #: ../../docs/tutorials/math/interpolation.rst:55
-#, fuzzy
 msgid "Transform interpolation"
-msgstr "Järjestys"
+msgstr "Muunnoksen interpolointi"
 
 #: ../../docs/tutorials/math/interpolation.rst:57
 msgid ""
@@ -42033,18 +41839,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:64
-#, fuzzy
 msgid "Using the following pseudocode:"
-msgstr "Lisää seuraava koodi:"
+msgstr "Käyttäen seuraavaa pseudokoodia:"
 
 #: ../../docs/tutorials/math/interpolation.rst:76
 msgid "And again, it will produce the following motion:"
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:82
-#, fuzzy
 msgid "Smoothing motion"
-msgstr "Tuonti"
+msgstr "Liikkeen tasoittaminen"
 
 #: ../../docs/tutorials/math/interpolation.rst:84
 msgid ""
@@ -42149,9 +41953,8 @@ msgid "And to one:"
 msgstr ""
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:94
-#, fuzzy
 msgid "Here is the full function:"
-msgstr "Lisää seuraava koodi:"
+msgstr "Tässä koko funktio:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:110
 msgid ""
@@ -42165,9 +41968,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:120
-#, fuzzy
 msgid "Adding control points"
-msgstr "Valojen lisäys"
+msgstr "Ohjauspisteiden lisäys"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:122
 msgid ""
@@ -43216,9 +43018,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:221
-#, fuzzy
 msgid "Your final skeleton should look something like this:"
-msgstr "Skenepuun pitäisi näyttää tältä:"
+msgstr "Lopullisen luurankosi pitäisi näyttää kutakuinkin tältä:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:225
 msgid ""
@@ -43274,9 +43075,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:264
-#, fuzzy
 msgid "Animation tips"
-msgstr "Animaatiot"
+msgstr "Animaatiovinkit"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:266
 msgid ""
@@ -43320,9 +43120,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:294
-#, fuzzy
 msgid "Creating a rest pose"
-msgstr "Skriptin lisäys"
+msgstr "Lepoasennon luonti"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:296
 msgid ""
@@ -43337,9 +43136,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:302
-#, fuzzy
 msgid "Create a new animation, rename it \"rest\"."
-msgstr "Animaatioiden valinta"
+msgstr "Luo uusi animaatio ja anna sille nimeksi \"rest\"."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:304
 msgid "Select all nodes in your rig (box selection should work fine)."
@@ -43452,9 +43250,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:4
-#, fuzzy
 msgid "2D skeletons"
-msgstr "Luuranko"
+msgstr "2D-luurangot"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:9
 msgid ""
@@ -43520,9 +43317,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:41
-#, fuzzy
 msgid "Creating the polygons"
-msgstr "Planeetan värjäys"
+msgstr "Polygonien luonti"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:43
 msgid ""
@@ -43591,9 +43387,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:85
-#, fuzzy
 msgid "Creating the skeleton"
-msgstr "Skenen pystytys"
+msgstr "Luurangon luonti"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:87
 msgid ""
@@ -43646,9 +43441,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:120
-#, fuzzy
 msgid "Deforming the polygons"
-msgstr "Planeetan värjäys"
+msgstr "Polygonien vääntäminen"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:122
 msgid ""
@@ -43714,9 +43508,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:162
-#, fuzzy
 msgid "Internal vertices"
-msgstr "Sisäiset resurssit"
+msgstr "Sisäiset kärkipisteet"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:164
 msgid ""
@@ -43783,9 +43576,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:19
-#, fuzzy
 msgid "Creating an AnimationTree"
-msgstr "Animaatioiden valinta"
+msgstr "Animaatiopuun (AnimationTree) luonti"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:21
 msgid ""
@@ -43828,9 +43620,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:40
-#, fuzzy
 msgid "Creating a tree"
-msgstr "Skriptin lisäys"
+msgstr "Puun luonti"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:42
 msgid ""
@@ -43970,9 +43761,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:107
-#, fuzzy
 msgid "Transition"
-msgstr "Järjestys"
+msgstr "Transition (siirtymä)"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:109
 msgid ""
@@ -44039,9 +43829,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:148
-#, fuzzy
 msgid "There are many types of transitions:"
-msgstr "Joitakin asioita on otettava huomioon:"
+msgstr "Siirtymiä on olemassa useita eri tyyppisiä:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:152
 msgid ""
@@ -44104,9 +43893,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:170
-#, fuzzy
 msgid "Root motion"
-msgstr "Tuonti"
+msgstr "Juuriliike"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:172
 msgid ""
@@ -44547,9 +44335,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:4
-#, fuzzy
 msgid "Input examples"
-msgstr "Ilmentymien luonti esimerkin avulla"
+msgstr "Syöte-esimerkkejä"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:9
 msgid ""
@@ -44673,9 +44460,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:119
-#, fuzzy
 msgid "Capturing actions"
-msgstr "Ylikirjoitettavat funktiot"
+msgstr "Toimintojen sieppaaminen"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:121
 msgid ""
@@ -44744,9 +44530,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:202
-#, fuzzy
 msgid "Mouse motion"
-msgstr "Tuonti"
+msgstr "Hiiren liike"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:204
 msgid ""
@@ -45227,9 +45012,8 @@ msgid "Linux: ``~/.local/share/godot/``"
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:57
-#, fuzzy
 msgid "User settings"
-msgstr "Testaus"
+msgstr "Käyttäjäasetukset"
 
 #: ../../docs/tutorials/io/data_paths.rst:59
 msgid "Linux: ``~/.config/godot/``"
@@ -45613,9 +45397,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:4
-#, fuzzy
 msgid "Localization using gettext"
-msgstr "Kääntäminen"
+msgstr "Lokalisointi gettext avulla"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:6
 msgid ""
@@ -45721,9 +45504,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:62
-#, fuzzy
 msgid "Creating the PO template"
-msgstr "Skenen pystytys"
+msgstr "PO-pohjan luonti"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:64
 msgid ""
@@ -49099,9 +48881,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:42
-#, fuzzy
 msgid "Centering a control"
-msgstr "Skriptin lisäys"
+msgstr "Ohjaimen keskitys"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:44
 msgid ""
@@ -49230,9 +49011,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:60
-#, fuzzy
 msgid "Container types"
-msgstr "Kappaleen tyyppi"
+msgstr "Container-tyypit"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:62
 msgid ""
@@ -49387,9 +49167,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:162
-#, fuzzy
 msgid "Creating custom Containers"
-msgstr "Mukautettujen tietotyyppien luonti"
+msgstr "Mukautettujen Container-tyyppien luonti"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:164
 msgid ""
@@ -50364,9 +50143,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:253
-#, fuzzy
 msgid "Handling aspect ratios"
-msgstr "Signaalin käsittely"
+msgstr "Kuvasuhteiden käsittely"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:255
 msgid ""
@@ -50426,9 +50204,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:23
-#, fuzzy
 msgid "During the course of this tutorial, we'll cover the following topics:"
-msgstr "Mob skene käyttää seuraavia solmuja:"
+msgstr "Tämän oppaan aikana käymme läpi seuraavat aiheet:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:25
 msgid "How to use a :ref:`Viewport <class_Viewport>` as a render texture"
@@ -51051,9 +50828,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:66
-#, fuzzy
 msgid "Processor functions"
-msgstr "Prosessointi"
+msgstr "Käsittelyfunktiot"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:68
 msgid ""
@@ -51528,9 +51304,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:197
-#, fuzzy
 msgid "Local arrays"
-msgstr "Paikalliset koordinaatit"
+msgstr "Paikalliset taulukot"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:199
 msgid ""
@@ -52089,14 +51864,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:515
-#, fuzzy
 msgid "GDScript type"
-msgstr "GDScript"
+msgstr "GDScript tyyppi"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:515
-#, fuzzy
 msgid "GLSL type"
-msgstr "Tyyppi (\"type\")"
+msgstr "GLSL tyyppi"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
 msgid "**Vector2**"
@@ -52107,19 +51880,16 @@ msgid "**Vector3**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
-#, fuzzy
 msgid "**Color**"
-msgstr "Väri"
+msgstr "**Color**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
-#, fuzzy
 msgid "**Transform**"
-msgstr "Muunna"
+msgstr "**Transform**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:531
-#, fuzzy
 msgid "**Transform2D**"
-msgstr "Muunna"
+msgstr "**Transform2D**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:534
 msgid ""
@@ -52140,9 +51910,8 @@ msgid "Uniforms can also be assigned default values:"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:551
-#, fuzzy
 msgid "Built-in functions"
-msgstr "Ylikirjoitettavat funktiot"
+msgstr "Sisäänrakennetut funktiot"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:553
 msgid ""
@@ -52464,9 +52233,8 @@ msgid "vec_type **mix** ( float a, float b, float c )"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:638
-#, fuzzy
 msgid "Linear Interpolate"
-msgstr "Lisää tietoa"
+msgstr "Lineaari-interpolaatio"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:640
 msgid "vec_type **mix** ( vec_type a, vec_type b, float c )"
@@ -53210,7 +52978,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
 msgid "Vertex built-ins"
-msgstr ""
+msgstr "Kärkipisteen valmismuuttujat"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:83
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:41
@@ -53246,6 +53014,8 @@ msgid ""
 "Other built-ins, such as UV, UV2 and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr ""
+"Muut valmismuuttujat, kuten UV, UV2 ja COLOR, kulkevat myös fragment "
+"funktion läpi ellei niitä muokata."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:110
 msgid ""
@@ -53509,7 +53279,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:172
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:123
 msgid "Fragment built-ins"
-msgstr ""
+msgstr "Kuvapisteen valmismuuttujat"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:174
 msgid ""
@@ -53829,9 +53599,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:268
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
-#, fuzzy
 msgid "Light built-ins"
-msgstr "valon animaatio"
+msgstr "Valon valmismuuttujat"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:270
 msgid ""
@@ -53931,9 +53700,8 @@ msgid "in vec3 **TRANSMISSION**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:337
-#, fuzzy
 msgid "Transmission mask from fragment function."
-msgstr "Ensimmäinen pelisi"
+msgstr "Välitysmaski fragment funktiolta."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:339
 msgid "out vec3 **DIFFUSE_LIGHT**"
@@ -54036,6 +53804,8 @@ msgid ""
 "Other built-ins, such as UV and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr ""
+"Muut valmismuuttujat, kuten UV ja COLOR, kulkevat myös fragment funktion "
+"läpi ellei niitä muokata."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:97
 msgid "Image space to view space transform."
@@ -54303,9 +54073,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:4
-#, fuzzy
 msgid "Particle shaders"
-msgstr "Partikkelit"
+msgstr "Partikkelisävyttimet"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:6
 msgid ""
@@ -54474,9 +54243,8 @@ msgid "Random seed used as base for random."
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/index.rst:2
-#, fuzzy
 msgid "Your first shader"
-msgstr "Ensimmäinen pelisi"
+msgstr "Ensimmäinen sävyttimesi"
 
 #: ../../docs/tutorials/shading/your_first_shader/index.rst:4
 msgid ""
@@ -54507,9 +54275,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:4
-#, fuzzy
 msgid "What are shaders?"
-msgstr "Partikkelit"
+msgstr "Mitä sävyttimet ovat?"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:9
 msgid ""
@@ -54664,9 +54431,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:96
-#, fuzzy
 msgid "Technical overview"
-msgstr "Yleiskatsaus"
+msgstr "Tekninen yleiskatsaus"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:98
 msgid ""
@@ -54697,9 +54463,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:4
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:51
-#, fuzzy
 msgid "Your first CanvasItem shader"
-msgstr "Ensimmäinen pelisi"
+msgstr "Ensimmäinen CanvasItem sävyttimesi"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:9
 msgid ""
@@ -54806,9 +54571,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:70
-#, fuzzy
 msgid "Your first fragment function"
-msgstr "Ensimmäinen pelisi"
+msgstr "Ensimmäinen fragment funktiosi"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:72
 msgid ""
@@ -54886,9 +54650,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:142
-#, fuzzy
 msgid "Uniform input"
-msgstr "Tarkista syöte."
+msgstr "Uniform-syöte"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:144
 msgid ""
@@ -54985,9 +54748,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:4
-#, fuzzy
 msgid "Your first Spatial shader"
-msgstr "Ensimmäinen pelisi"
+msgstr "Ensimmäinen Spatial sävyttimesi"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:6
 msgid ""
@@ -56758,9 +56520,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:76
-#, fuzzy
 msgid "Depth texture"
-msgstr "Tuonti"
+msgstr "Syvyystekstuuri"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:78
 msgid ""
@@ -56820,9 +56581,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:146
-#, fuzzy
 msgid "An optimization"
-msgstr "Animaatio"
+msgstr "Optimointi"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:148
 msgid ""
@@ -57764,9 +57524,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/websocket.rst:24
-#, fuzzy
 msgid "Minimal client example"
-msgstr "Ajastin-esimerkki"
+msgstr "Minimaalinen asiakasohjelman esimerkki"
 
 #: ../../docs/tutorials/networking/websocket.rst:26
 msgid ""
@@ -57780,9 +57539,8 @@ msgid "This will print:"
 msgstr ""
 
 #: ../../docs/tutorials/networking/websocket.rst:87
-#, fuzzy
 msgid "Minimal server example"
-msgstr "Ajastin-esimerkki"
+msgstr "Minimaalinen palvelinohjelman esimerkki"
 
 #: ../../docs/tutorials/networking/websocket.rst:89
 msgid ""
@@ -57914,9 +57672,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/webrtc.rst:99
-#, fuzzy
 msgid "Local signaling example"
-msgstr "Ilmentymien luonti esimerkin avulla"
+msgstr "Paikallinen signaloinnin esimerkki"
 
 #: ../../docs/tutorials/networking/webrtc.rst:101
 msgid ""
@@ -57936,9 +57693,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/webrtc.rst:177
-#, fuzzy
 msgid "Then you can use it like this:"
-msgstr "Lopullisen skriptin pitäisi näyttää tältä:"
+msgstr "Sen jälkeen voit käyttää sitä näin:"
 
 #: ../../docs/tutorials/networking/webrtc.rst:198
 msgid "This will print something similar to this:"
@@ -60587,9 +60343,8 @@ msgid "Making plugins"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:7
-#, fuzzy
 msgid "About plugins"
-msgstr "Liitännäiset"
+msgstr "Liitännäisistä"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:9
 msgid ""
@@ -60869,9 +60624,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:18
-#, fuzzy
 msgid "Creating a main screen plugin"
-msgstr "Animaatioiden valinta"
+msgstr "Pääruudun liitännäisen luonti"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:19
 msgid ""
@@ -60961,9 +60715,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:104
-#, fuzzy
 msgid "Main screen scene"
-msgstr "Pääskene"
+msgstr "Pääruudun skene"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:106
 msgid ""
@@ -61655,9 +61408,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:112
-#, fuzzy
 msgid "So the final plugin would look somewhat like this:"
-msgstr "Lopullisen skriptin pitäisi näyttää tältä:"
+msgstr "Lopullisen liitännäinen näyttäisi siis kutakuinkin tältä:"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:148
 msgid ""
@@ -62209,9 +61961,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:421
-#, fuzzy
 msgid "General properties"
-msgstr "Sillä on muokattavia ominaisuuksia."
+msgstr "Yleiset ominaisuudet"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:423
 msgid ""
@@ -62285,9 +62036,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:469
-#, fuzzy
 msgid "Saving the resource"
-msgstr "Skenen pystytys"
+msgstr "Resurssin tallennus"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:471
 msgid ""
@@ -62797,9 +62547,8 @@ msgid "We're finally ready to run the project:"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:492
-#, fuzzy
 msgid "Adding properties"
-msgstr "Sillä on muokattavia ominaisuuksia."
+msgstr "Ominaisuuksien lisääminen"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:494
 msgid ""
@@ -63026,14 +62775,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/index.rst:2
-#, fuzzy
 msgid "Android plugins"
-msgstr "Liitännäiset"
+msgstr "Android-liitännäiset"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:4
-#, fuzzy
 msgid "Creating Android plugins"
-msgstr "Solmujen luonti"
+msgstr "Android-liitännäisten luonti"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:9
 msgid ""
@@ -63155,9 +62902,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:53
-#, fuzzy
 msgid "Android plugin"
-msgstr "Android"
+msgstr "Android-liitännäinen"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:55
 msgid ""
@@ -64020,9 +63766,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:69
-#, fuzzy
 msgid "The object itself has only the following methods:"
-msgstr "Mob skene käyttää seuraavia solmuja:"
+msgstr "Objektilla itsellään on vain seuraavat metodit:"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:73
 msgid "Load the engine from the passed base path."
@@ -64297,9 +64042,8 @@ msgid "For example, with PHP:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:258
-#, fuzzy
 msgid "Locale."
-msgstr "Kielialue"
+msgstr "Kielialue."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:261
 msgid "List of :ref:`locales <doc_locales>`."
@@ -64503,14 +64247,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:18
-#, fuzzy
 msgid "Creating a Thread"
-msgstr "Skriptin lisäys"
+msgstr "Säikeen luonti"
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:20
-#, fuzzy
 msgid "Creating a thread is very simple, just use the following code:"
-msgstr "Mob skene käyttää seuraavia solmuja:"
+msgstr "Säikeen luominen on hyvin helppoa, käytä vain seuraavaa koodia:"
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:45
 msgid ""
@@ -64655,9 +64397,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:2
-#, fuzzy
 msgid "Procedural geometry"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr "Proseduraalinen geometria"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:4
 msgid ""
@@ -64679,9 +64420,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:24
-#, fuzzy
 msgid "What is a Mesh?"
-msgstr "Partikkelit"
+msgstr "Mikä on Mesh?"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:26
 msgid ""
@@ -64714,9 +64454,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:44
-#, fuzzy
 msgid "What a Mesh is"
-msgstr "Partikkelit"
+msgstr "Mikä Mesh on"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:46
 msgid ""
@@ -64850,9 +64589,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:116
-#, fuzzy
 msgid "Which one should I use?"
-msgstr "Mikä on GDScript ja miksi minun pitäisi käyttää sitä?"
+msgstr "Mitä minun tulisi käyttää?"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:118
 msgid ""
@@ -64892,9 +64630,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:4
-#, fuzzy
 msgid "Using the ArrayMesh"
-msgstr "ArrayMesh"
+msgstr "ArrayMesh käyttö"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:6
 msgid ""
@@ -65055,9 +64792,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:134
-#, fuzzy
 msgid "Generating geometry"
-msgstr "Skenen pystytys"
+msgstr "Geometrian luominen"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:136
 msgid ""
@@ -65185,9 +64921,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:4
-#, fuzzy
 msgid "Using the SurfaceTool"
-msgstr "Skenen pystytys"
+msgstr "SurfaceTool käyttö"
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:6
 msgid ""
@@ -65612,9 +65347,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:84
-#, fuzzy
 msgid "Creating a sprite"
-msgstr "Skriptin lisäys"
+msgstr "Spriten luonti"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:86
 msgid ""
@@ -65663,9 +65397,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:180
-#, fuzzy
 msgid "Getting data from the servers"
-msgstr "Skenen pystytys"
+msgstr "Datan vastaanottaminen servereiltä"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:182
 msgid ""
@@ -65704,9 +65437,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:15
-#, fuzzy
 msgid "MultiMeshes"
-msgstr "Useat ilmentymät"
+msgstr "MultiMeshit"
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:17
 msgid ""
@@ -65764,9 +65496,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:48
-#, fuzzy
 msgid "Multimesh example"
-msgstr "Ajastin-esimerkki"
+msgstr "Multimesh-esimerkki"
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:50
 msgid ""
@@ -67158,9 +66889,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:66
-#, fuzzy
 msgid "Processing stops."
-msgstr "Prosessointi"
+msgstr "Käsittely loppuu."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:68
 msgid ""
@@ -67200,9 +66930,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:87
-#, fuzzy
 msgid "Processing continues."
-msgstr "Prosessointi"
+msgstr "Käsittely jatkuu."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:89
 msgid ""
@@ -67338,9 +67067,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:37
-#, fuzzy
 msgid "Color space"
-msgstr "Väri"
+msgstr "Väriavaruus"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:39
 msgid ""
@@ -67356,9 +67084,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:47
-#, fuzzy
 msgid "HDR"
-msgstr "Heijastusnäyttö (HUD)"
+msgstr "HDR"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
 msgid ""
@@ -67665,9 +67392,8 @@ msgid "``SSS_STRENGTH``"
 msgstr ""
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:4
-#, fuzzy
 msgid "Instancing with signals"
-msgstr "Skenejen instantiointi"
+msgstr "Ilmentymien luonti signaaleilla"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:6
 msgid ""
@@ -67685,9 +67411,8 @@ msgid "Below we'll consider an example of such a situation: firing bullets."
 msgstr ""
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:16
-#, fuzzy
 msgid "Shooting example"
-msgstr "Ilmentymien luonti esimerkin avulla"
+msgstr "Ammuskeluesimerkki"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:18
 #, fuzzy
@@ -67992,9 +67717,10 @@ msgid "This text reads as follows:"
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:22
-#, fuzzy
 msgid "This game uses Godot Engine, available under the following license:"
-msgstr "Mob skene käyttää seuraavia solmuja:"
+msgstr ""
+"Peli käyttää Godot pelimoottoria, joka on saatavilla seuraavan lisenssin "
+"alaisena:"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:24
 msgid ""
@@ -68039,9 +67765,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:37
-#, fuzzy
 msgid "Inclusion"
-msgstr "Lopputulos"
+msgstr "Liittäminen"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:39
 msgid ""
@@ -68049,6 +67774,9 @@ msgid ""
 "as long as it can be displayed under some condition. These are the most "
 "common approaches (only need to implement one of them, not all)."
 msgstr ""
+"Lisenssi ei määrittele kuinka se tulee liittää, joten mikä tahansa tapa käy "
+"kunhan sitä voidaan tarkastella jollain tapaa. Nämä ovat yleisimpiä "
+"lähestymistapoja (riittää että toteuttaa yhden niistä, ei kaikkia)."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:42
 msgid "Credits screen"
@@ -68062,9 +67790,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:47
-#, fuzzy
 msgid "Licenses screen"
-msgstr "Lisenssi"
+msgstr "Lisenssiruutu"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:49
 msgid ""
@@ -68102,9 +67829,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:67
-#, fuzzy
 msgid "Third Party licenses"
-msgstr "Kolmannen osapuolen työkalut"
+msgstr "Kolmannen osapuolen lisenssit"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:69
 msgid ""
@@ -68115,9 +67841,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:72
-#, fuzzy
 msgid "FreeType"
-msgstr "Tyyppi"
+msgstr "FreeType"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:74
 msgid ""
@@ -68670,9 +68395,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:75
-#, fuzzy
 msgid "Selecting a compiler"
-msgstr "Ilmentymien luonti esimerkin avulla"
+msgstr "Kääntäjän valinta"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:77
 msgid ""
@@ -68878,9 +68602,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:237
-#, fuzzy
 msgid "With the following names::"
-msgstr "Lisää seuraava koodi:"
+msgstr "Seuraavilla nimillä:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:244
 msgid ""
@@ -69176,11 +68899,12 @@ msgid "`SCons <https://scons.org/pages/download.html>`_ build system"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:26
-#, fuzzy
 msgid ""
 "`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
 "(command-line tools are sufficient)"
-msgstr "Android SDK: https://developer.android.com/studio/"
+msgstr ""
+"`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
+"(komentorivityökalut ovat riittävät)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:28
 msgid ""
@@ -69189,10 +68913,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:30
-#, fuzzy
 msgid ""
 "`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 or later"
-msgstr "Android SDK: https://developer.android.com/studio/"
+msgstr ""
+"`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 tai uudempi"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:31
 msgid "Gradle (will be downloaded and installed automatically if missing)"
@@ -70203,9 +69927,8 @@ msgid "``Mono`` (optional)"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:189
-#, fuzzy
 msgid "``Tools``"
-msgstr "Työkalut"
+msgstr "``Tools``"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:191
 msgid ""
@@ -70254,9 +69977,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:214
-#, fuzzy
 msgid "Targeting Android"
-msgstr "Solmujen luonti"
+msgstr "Androidille kohdentaminen"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:216
 msgid ""
@@ -70754,9 +70476,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:117
-#, fuzzy
 msgid "KDevelop"
-msgstr "Kehitys"
+msgstr "KDevelop"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:119
 msgid ""
@@ -70928,9 +70649,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:231
-#, fuzzy
 msgid "Scheme setup"
-msgstr "Skenen järjestely"
+msgstr "Skeeman järjestely"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:233
 msgid "Edit Build Scheme of External Build Target:"
@@ -72218,9 +71938,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:416
-#, fuzzy
 msgid "Adding custom editor icons"
-msgstr "Valojen lisäys"
+msgstr "Omien editori-ikonien lisäys"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:418
 msgid ""
@@ -72386,9 +72105,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:183
-#, fuzzy
 msgid "The final module should look like this:"
-msgstr "Lopullisen skriptin pitäisi näyttää tältä:"
+msgstr "Lopullisen moduulin pitäisi näyttää tältä:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:212
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
@@ -72832,9 +72550,8 @@ msgid "Connecting signal example code is pretty hacky."
 msgstr ""
 
 #: ../../docs/development/editor/index.rst:2
-#, fuzzy
 msgid "Editor development"
-msgstr "Kehitys"
+msgstr "Editorin kehitys"
 
 #: ../../docs/development/editor/introduction.rst:6
 msgid ""
@@ -72845,9 +72562,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:4
-#, fuzzy
 msgid "Editor icons"
-msgstr "Editori"
+msgstr "Editorin ikonit"
 
 #: ../../docs/development/editor/creating_icons.rst:6
 msgid ""
@@ -72858,9 +72574,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:12
-#, fuzzy
 msgid "Creating icons"
-msgstr "Sisällön luominen"
+msgstr "Ikonien luominen"
 
 #: ../../docs/development/editor/creating_icons.rst:14
 msgid ""
@@ -72903,12 +72618,11 @@ msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid "Name"
-msgstr ""
+msgstr "Nimi"
 
 #: ../../docs/development/editor/creating_icons.rst:39
-#, fuzzy
 msgid "Filename"
-msgstr "name"
+msgstr "Tiedostonimi"
 
 #: ../../docs/development/editor/creating_icons.rst:41
 msgid "``Polygon2D``"
@@ -72927,9 +72641,8 @@ msgid "``icon_c_s_g_polygon.svg``"
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:45
-#, fuzzy
 msgid "``CPUParticles2D``"
-msgstr "Partikkelit"
+msgstr "``CPUParticles2D``"
 
 #: ../../docs/development/editor/creating_icons.rst:45
 msgid "``icon_c_p_u_particles_2_d.svg``"
@@ -72944,9 +72657,8 @@ msgid "``icon_c_#.svg``"
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:51
-#, fuzzy
 msgid "Icon optimization"
-msgstr "Animaatio"
+msgstr "Ikonin optimointi"
 
 #: ../../docs/development/editor/creating_icons.rst:53
 msgid ""
@@ -73056,7 +72768,6 @@ msgstr ""
 "ohjelmasta, eikä käyttäjän tule voida muokata sitä Godotissa."
 
 #: ../../docs/development/file_formats/tscn.rst:14
-#, fuzzy
 msgid ""
 "For those looking for a complete description, the parsing is handled in the "
 "file `resource_format_text.cpp <https://github.com/godotengine/godot/blob/"
@@ -73064,16 +72775,15 @@ msgid ""
 "``ResourceFormatLoaderText`` class."
 msgstr ""
 "Jos etsit täydellistä kuvausta, jäsennys on käsitelty tiedostossa "
-"`scene_format_text.cpp <https://github.com/godotengine/godot/blob/master/"
-"scene/resources/scene_format_text.cpp>`_, luokassa :code:"
-"`ResourceFormatLoaderText`"
+"`resource_format_text.cpp <https://github.com/godotengine/godot/blob/master/"
+"scene/resources/resource_format_text.cpp>`_, luokassa "
+"``ResourceFormatLoaderText``."
 
 #: ../../docs/development/file_formats/tscn.rst:19
 msgid "File structure"
 msgstr "Tiedoston rakenne"
 
 #: ../../docs/development/file_formats/tscn.rst:21
-#, fuzzy
 msgid "There are five main sections inside the TSCN file:"
 msgstr "TSCN-tiedosto sisältää viisi pääosiota:"
 
@@ -73138,24 +72848,20 @@ msgstr ""
 "key=value ...]`, missä resource_type on jokin seuraavista:"
 
 #: ../../docs/development/file_formats/tscn.rst:49
-#, fuzzy
 msgid "``ext_resource``"
-msgstr "ext_resource"
+msgstr "``ext_resource``"
 
 #: ../../docs/development/file_formats/tscn.rst:50
-#, fuzzy
 msgid "``sub_resource``"
-msgstr "sub_resource"
+msgstr "``sub_resource`` (aliresurssi)"
 
 #: ../../docs/development/file_formats/tscn.rst:51
-#, fuzzy
 msgid "``node``"
-msgstr "node"
+msgstr "``node`` (solmu)"
 
 #: ../../docs/development/file_formats/tscn.rst:52
-#, fuzzy
 msgid "``connection``"
-msgstr "connection"
+msgstr "``connection`` (yhteys)"
 
 #: ../../docs/development/file_formats/tscn.rst:54
 #, fuzzy
@@ -73189,29 +72895,24 @@ msgid "Other valid keywords include:"
 msgstr "Muita avainsanoja ovat:"
 
 #: ../../docs/development/file_formats/tscn.rst:73
-#, fuzzy
 msgid "``instance``"
-msgstr "instance (ilmentymä)"
+msgstr "``instance`` (ilmentymä)"
 
 #: ../../docs/development/file_formats/tscn.rst:74
-#, fuzzy
 msgid "``instance_placeholder``"
-msgstr "instance_placeholder (ilmentymän paikanpitäjä)"
+msgstr "``instance_placeholder`` (ilmentymän paikanpitäjä)"
 
 #: ../../docs/development/file_formats/tscn.rst:75
-#, fuzzy
 msgid "``owner``"
-msgstr "owner (omistaja)"
+msgstr "``owner``"
 
 #: ../../docs/development/file_formats/tscn.rst:76
-#, fuzzy
 msgid "``index`` (if two nodes have the same name)"
-msgstr "index (jos kahdella solmulla on sama nimi)"
+msgstr "``index`` (jos kahdella solmulla on sama nimi)"
 
 #: ../../docs/development/file_formats/tscn.rst:77
-#, fuzzy
 msgid "``groups``"
-msgstr "groups (ryhmät)"
+msgstr "``groups``"
 
 #: ../../docs/development/file_formats/tscn.rst:79
 #, fuzzy
@@ -73272,35 +72973,29 @@ msgstr ""
 "Luiden attribuutit ovat"
 
 #: ../../docs/development/file_formats/tscn.rst:168
-#, fuzzy
 msgid "``parent``"
-msgstr "parent"
+msgstr "``parent``"
 
 #: ../../docs/development/file_formats/tscn.rst:169
-#, fuzzy
 msgid "``rest``"
-msgstr "rest"
+msgstr "``rest``"
 
 #: ../../docs/development/file_formats/tscn.rst:170
-#, fuzzy
 msgid "``pose``"
-msgstr "pose"
+msgstr "``pose``"
 
 #: ../../docs/development/file_formats/tscn.rst:171
 #: ../../docs/development/file_formats/tscn.rst:391
-#, fuzzy
 msgid "``enabled``"
-msgstr "enabled"
+msgstr "``enabled``"
 
 #: ../../docs/development/file_formats/tscn.rst:172
-#, fuzzy
 msgid "``bound_children``"
-msgstr "bound_children"
+msgstr "``bound_children``"
 
 #: ../../docs/development/file_formats/tscn.rst:174
-#, fuzzy
 msgid "``name`` must be the first attribute of each bone."
-msgstr ":code:`name` täytyy olla jokaisen luun ensimmäinen attribuutti"
+msgstr "``name`` täytyy olla jokaisen luun ensimmäinen attribuutti."
 
 #: ../../docs/development/file_formats/tscn.rst:175
 #, fuzzy
@@ -73312,9 +73007,8 @@ msgstr ""
 "luulistasta muodostuu puu"
 
 #: ../../docs/development/file_formats/tscn.rst:177
-#, fuzzy
 msgid "``rest`` is the transform matrix of bone in its \"resting\" position."
-msgstr ":code:`rest` on luun muunnosmatriisi lepoasennossa"
+msgstr "``rest`` on luun muunnosmatriisi lepoasennossa."
 
 #: ../../docs/development/file_formats/tscn.rst:178
 #, fuzzy
@@ -73322,18 +73016,16 @@ msgid "``pose`` is the pose matrix; use ``rest`` as the basis."
 msgstr ":code:`pose` on asentomatriisi, joka käyttää :code:`rest` pohjanaan"
 
 #: ../../docs/development/file_formats/tscn.rst:179
-#, fuzzy
 msgid ""
 "``bound_children`` is a list of ``NodePath()`` which point to "
 "BoneAttachments belonging to this bone."
 msgstr ""
-":code:`bound_children` on lista NodePath() rakenteita, jotka viittaavat "
-"BoneAttachment-solmuihin, jotka kuuluvat tälle luulle"
+"``bound_children`` on lista ``NodePath()`` rakenteita, jotka viittaavat "
+"tälle luulle kuuluviin BoneAttachment-solmuihin."
 
 #: ../../docs/development/file_formats/tscn.rst:182
-#, fuzzy
 msgid "Here's an example of a skeleton node with two bones:"
-msgstr "Esimerkki skeleton-solmusta kahdella luulla:"
+msgstr "Tässä esimerkki skeleton-solmusta kahdella luulla:"
 
 #: ../../docs/development/file_formats/tscn.rst:203
 msgid "BoneAttachment"
@@ -73481,65 +73173,54 @@ msgstr ""
 "resursseja, toisia voi tutkia vain lukemalla Godotin lähdekoodia."
 
 #: ../../docs/development/file_formats/tscn.rst:323
-#, fuzzy
 msgid ""
 "ArrayMesh consists of several surfaces, each in the format ``surface"
 "\\Index={}``. Each surface is a set of vertices and a material."
 msgstr ""
-"ArrayMesh koostuu useista pinnoista, jotka ovat muodossa :code:`surface"
-"\\Index={}`. Kullakin pinnalla on joukko kärkipisteitä ja materiaali."
+"ArrayMesh koostuu useista pinnoista, jotka kukin ovat muotoa ``surface"
+"\\Index={}``. Kullakin pinnalla on joukko kärkipisteitä ja materiaali."
 
 #: ../../docs/development/file_formats/tscn.rst:326
-#, fuzzy
 msgid "TSCN files support two surface formats:"
-msgstr "TSCN tukee kahta erilaista pinnan formaattia,"
+msgstr "TSCN-tiedostot tukevat kahta erilaista pinnan formaattia:"
 
 #: ../../docs/development/file_formats/tscn.rst:328
-#, fuzzy
 msgid "For the old format, each surface has three essential keys:"
-msgstr "vanhassa formaatissa kullakin pinnalla on kolme olennaista avainta:"
+msgstr "Vanhassa formaatissa kullakin pinnalla on kolme olennaista avainta:"
 
 #: ../../docs/development/file_formats/tscn.rst:330
-#, fuzzy
 msgid "``primitive``"
-msgstr "primitive"
+msgstr "``primitive``"
 
 #: ../../docs/development/file_formats/tscn.rst:331
-#, fuzzy
 msgid "``arrays``"
-msgstr "arrays"
+msgstr "``arrays``"
 
 #: ../../docs/development/file_formats/tscn.rst:332
-#, fuzzy
 msgid "``morph_arrays``"
-msgstr "morph_arrays"
+msgstr "``morph_arrays``"
 
 #: ../../docs/development/file_formats/tscn.rst:334
-#, fuzzy
 msgid ""
 "``primitive`` is an enumerate variable, ``primitive=4`` which is "
 "``PRIMITIVE_TRIANGLES`` is frequently used."
 msgstr ""
-":code:`primitive` on enumeroitu muuttuja, :code:`primitive=4` joka on "
+"``primitive`` on enumeroitu muuttuja; ``primitive=4`` joka on "
 "PRIMITIVE_TRIANGLES on usein käytetty."
 
 #: ../../docs/development/file_formats/tscn.rst:337
-#, fuzzy
 msgid "``arrays`` is a two-dimensional array, it contains:"
-msgstr ""
-":code:`arrays` kuten nimikin vihjaa, on taulukko taulukoita, joka sisältää:"
+msgstr "``arrays`` on kaksiulotteinen taulukko, joka sisältää:"
 
 #: ../../docs/development/file_formats/tscn.rst:339
-#, fuzzy
 msgid "Vertex positions array"
-msgstr "Taulukko kärkipisteiden värejä"
+msgstr "Taulukko kärkipisteiden sijainteja"
 
 #: ../../docs/development/file_formats/tscn.rst:340
 msgid "Tangents array"
 msgstr "Taulukko tangentteja"
 
 #: ../../docs/development/file_formats/tscn.rst:341
-#, fuzzy
 msgid "Vertex colors array"
 msgstr "Taulukko kärkipisteiden värejä"
 
@@ -73552,120 +73233,102 @@ msgid "UV array 2"
 msgstr "UV-taulukko 2"
 
 #: ../../docs/development/file_formats/tscn.rst:344
-#, fuzzy
 msgid "Bone indexes array"
 msgstr "Taulukko luuindeksejä"
 
 #: ../../docs/development/file_formats/tscn.rst:345
-#, fuzzy
 msgid "Bone weights array"
 msgstr "Taulukko luiden painoja"
 
 #: ../../docs/development/file_formats/tscn.rst:346
-#, fuzzy
 msgid "Vertex indexes array"
 msgstr "Taulukko kärkipisteiden indeksejä"
 
 #: ../../docs/development/file_formats/tscn.rst:348
-#, fuzzy
 msgid ""
 "``morph_arrays`` is an array of morphs. Each morph is exactly an ``arrays`` "
 "without the vertex indexes array."
 msgstr ""
-":code:`morph_arrays` on taulukko morpheja. Kukin morph on tarkalleen :code:"
-"`arrays` ilman kärkipisteiden indeksitaulukkoa."
+"``morph_arrays`` on taulukko morpheja. Kukin morph on tarkalleen ``arrays`` "
+"ilman kärkipisteiden indeksitaulukkoa."
 
 #: ../../docs/development/file_formats/tscn.rst:351
 msgid "An example of ArrayMesh:"
 msgstr "Esimerkki ArrayMeshistä:"
 
 #: ../../docs/development/file_formats/tscn.rst:377
-#, fuzzy
 msgid ""
 "An animation resource consists of tracks. Besides, it has ``length``, "
 "``loop`` and ``step`` applied to all the tracks."
 msgstr ""
 "Animaatioresurssi koostuu raidoista. Lisäksi kullakin raidalla on pituus "
-"('length'), kierto ('loop') ja askellus ('step')."
+"(``length``), kierto (``loop``) ja askellus (``step``)."
 
 #: ../../docs/development/file_formats/tscn.rst:380
-#, fuzzy
 msgid "``length`` and ``step`` are both durations in seconds."
-msgstr "Sekä :code:`length` että :code:`step` ilmaisevat aikaa sekunteina"
+msgstr "Sekä ``length`` että ``step`` ilmaisevat aikaa sekunteina."
 
 #: ../../docs/development/file_formats/tscn.rst:382
-#, fuzzy
 msgid ""
 "Each track is described by a list of key-value pairs in the format ``tracks/"
 "Id/Attribute``. Each track includes:"
 msgstr ""
-"Kukin raita on kuvattu listana (avain, arvo) pareja :code:`tracks/Id/"
-"Attribute` muodossa, sisältäen:"
+"Kukin raita on kuvattu listana avain-arvo pareja ``tracks/Id/Attribute``. "
+"Kukin raita sisältää:"
 
 #: ../../docs/development/file_formats/tscn.rst:385
-#, fuzzy
 msgid "``type``"
-msgstr "type (tyyppi)"
+msgstr "``type`` (tyyppi)"
 
 #: ../../docs/development/file_formats/tscn.rst:386
-#, fuzzy
 msgid "``path``"
-msgstr "``$NodePath``"
+msgstr "``path`` (polku)"
 
 #: ../../docs/development/file_formats/tscn.rst:387
-#, fuzzy
 msgid "``interp``"
-msgstr "interp (interpolaatio)"
+msgstr "``interp`` (interpolaatio)"
 
 #: ../../docs/development/file_formats/tscn.rst:388
-#, fuzzy
 msgid "``keys``"
-msgstr "keys (avainruudut)"
+msgstr "``keys`` (avainruudut)"
 
 #: ../../docs/development/file_formats/tscn.rst:389
-#, fuzzy
 msgid "``loop_wrap``"
-msgstr "loop_wrap (kierron tyyppi)"
+msgstr "``loop_wrap`` (kierron tyyppi)"
 
 #: ../../docs/development/file_formats/tscn.rst:390
-#, fuzzy
 msgid "``imported``"
-msgstr "imported"
+msgstr "``imported`` (tuotu)"
 
 #: ../../docs/development/file_formats/tscn.rst:393
-#, fuzzy
 msgid ""
 "The ``type`` must be the first attribute of each track. The value of "
 "``type`` can be:"
 msgstr ""
-"Kunkin raidan ensimmäisen attribuutin on oltava :code:`type`. :code:`type` "
-"arvo voi olla:"
+"Kunkin raidan ensimmäisen attribuutin on oltava ``type``. ``type`` arvo voi "
+"olla:"
 
 #: ../../docs/development/file_formats/tscn.rst:396
-#, fuzzy
 msgid "``transform``"
-msgstr "'transform' (muunnos)"
+msgstr "``transform`` (muunnos)"
 
 #: ../../docs/development/file_formats/tscn.rst:397
-#, fuzzy
 msgid "``value``"
-msgstr "'value' (arvo)"
+msgstr "``value`` (arvo)"
 
 #: ../../docs/development/file_formats/tscn.rst:398
-#, fuzzy
 msgid "``method``"
-msgstr "'method' (metodi)"
+msgstr "``method`` (metodi)"
 
 #: ../../docs/development/file_formats/tscn.rst:400
-#, fuzzy
 msgid ""
 "The ``path`` has the format ``NodePath(Path/To/Node:attribute)``. It's the "
 "path to the animated node or attribute, relative to the root node defined in "
 "the AnimationPlayer."
 msgstr ""
-"Attribuutilla :code:`path` muoto on :code:`NodePath(Path/To/Node:"
-"Attribute)`. Se on polku animaation juurisolmusta (AnimationPlayer solmun "
-"ominaisuus) animoituun solmuun tai attribuuttiin."
+"``path`` muoto on ``NodePath(Path/To/Node:Attribute)``. Se on polku "
+"AnimationPlayer solmussa määritellystä juurisolmusta animoituun solmuun tai "
+"attribuuttiin."
 
 #: ../../docs/development/file_formats/tscn.rst:404
 #, fuzzy
@@ -76402,9 +76065,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/channels.rst:4
-#, fuzzy
 msgid "Community channels"
-msgstr "Yhteisö"
+msgstr "Yhteisökanavat"
 
 #: ../../docs/community/channels.rst:6
 msgid ""
@@ -76419,13 +76081,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/channels.rst:10
-#, fuzzy
 msgid ""
 "A brief overview over these and other channels is also available on the "
 "`Godot website <https://godotengine.org/community>`_."
 msgstr ""
-"Katso aiheesta kertovaa sivua `Godotin verkkosivustolla <https://godotengine."
-"org/contact>`_."
+"Lyhyt yhteenveto näistä ja muista kanavista on saatavilla myös `Godotin "
+"verkkosivustolla <https://godotengine.org/community>`_."
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
@@ -76528,9 +76189,8 @@ msgid "`Forum (godotforums.org) <https://godotforums.org/>`_"
 msgstr ""
 
 #: ../../docs/community/tutorials.rst:4
-#, fuzzy
 msgid "Tutorials and resources"
-msgstr "Ulkoiset resurssit"
+msgstr "Oppaat ja resurssit"
 
 #: ../../docs/community/tutorials.rst:6
 msgid ""
@@ -76653,9 +76313,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/tutorials.rst:38
-#, fuzzy
 msgid "Text tutorials"
-msgstr "Tutoriaalit"
+msgstr "Tekstioppaat"
 
 #: ../../docs/community/tutorials.rst:40
 msgid "`Godot Recipes by KidsCanCode <http://godotrecipes.com/>`__"

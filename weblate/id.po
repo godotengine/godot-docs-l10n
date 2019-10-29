@@ -5,6 +5,7 @@
 # Alficiro <alfiboy2003@gmail.com>, 2019.
 # Bagus Aji Santoso <lobothijau@gmail.com>, 2018.
 # Damar Inderajati <damarind@gmail.com>, 2018.
+# Dimzt <dimas12345yuio@gmail.com>, 2019.
 # Evan Hyacinth <muhammad.ivan669@gmail.com>, 2018-2019.
 # Fajar Ru <kzofajar@gmail.com>, 2018.
 # herri siagian <herry.it.2007@gmail.com>, 2019.
@@ -20,8 +21,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-09-02 11:13+0200\n"
-"PO-Revision-Date: 2019-09-01 08:26+0000\n"
-"Last-Translator: Sofyan Sugianto <sofyanartem@gmail.com>\n"
+"PO-Revision-Date: 2019-10-27 07:48+0000\n"
+"Last-Translator: Dimzt <dimas12345yuio@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -29,7 +30,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 3.9.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -143,7 +144,7 @@ msgstr ""
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -280,7 +281,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Sebelum kamu memulai"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -885,9 +886,8 @@ msgstr ""
 "live editing, dll (semuanya itu). Ini didukung baik oleh GDScript."
 
 #: ../../docs/about/faq.rst:142
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above and more."
-msgstr "GDScript dirancang  untuk mengurasi masalah diatas dan banyak lagi."
+msgstr "GDScript dirancang  untuk mengurangi masalah diatas dan banyak lagi."
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
@@ -929,12 +929,11 @@ msgstr ""
 "sebagai plugin. (lihat pertanyaan plugins dibawah ini)."
 
 #: ../../docs/about/faq.rst:159
-#, fuzzy
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
-"Akankah sdk tertutup seperti FMOD, GameWorks, dll akan didukung didalam "
-"Godot?"
+"Akankah [memasukkan SDK tertutup seperti FMOD, GameWorks, dll] akan didukung "
+"didalam Godot?"
 
 #: ../../docs/about/faq.rst:161
 #, fuzzy
@@ -962,12 +961,11 @@ msgstr ""
 "terbuka."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
-"Untuk melihat dukungan terhdapat SDK pilihan mu tetap disediakan, lihat pada "
+"Untuk melihat dukungan terhadap SDK pilihan mu tetap disediakan, lihat pada "
 "bagian pertanyaan plugins dibawah ini."
 
 #: ../../docs/about/faq.rst:173
@@ -1042,14 +1040,13 @@ msgstr ""
 "juga lebih lama."
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
 "Gunakan pilihan strecth pada Godot; stretching 2D akan tetap menjaga aspek "
-"rasio dan berkerja dengan baik. lihat :ref:`doc_multiple_resolutions "
+"rasio dan berkerja dengan baik. lihat :ref:`doc_multiple_resolutions` "
 "tutorial tentang cara mencapai ini."
 
 #: ../../docs/about/faq.rst:205
@@ -1080,12 +1077,17 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "Dan itu dia! Game Anda harus dapat bekerja dalam berbagai resolusi."
 
 #: ../../docs/about/faq.rst:216
+#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
+"Jika ada keinginan untuk membuat game Anda juga berfungsi pada perangkat "
+"lama dengan layar kecil (lebarnya kurang dari 300 piksel), Anda dapat "
+"menggunakan opsi ekspor untuk mengecilkan gambar, dan mengatur bahwa build "
+"akan digunakan untuk ukuran layar tertentu di App. Store atau Google Play."
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
@@ -1111,6 +1113,8 @@ msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
+"`Lihat pada GDNative arsitektur <https://godotengine.org/article/look-"
+"gdnative-architecture>`_"
 
 #: ../../docs/about/faq.rst:231
 #, fuzzy
@@ -8963,7 +8967,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
-msgstr ""
+msgstr "Muat Otomatis"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:41
 msgid ""
@@ -13317,7 +13321,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr ""
+msgstr "Padding"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -13511,7 +13515,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
-msgstr ""
+msgstr "Awalan"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
@@ -14084,7 +14088,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Aksi"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -44468,7 +44472,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Locale"
-msgstr ""
+msgstr "Pelokalan"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Language and Variant"
@@ -70339,7 +70343,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:256
 msgid "Resources:"
-msgstr ""
+msgstr "Sumber daya:"
 
 #: ../../docs/development/cpp/object_class.rst:258
 msgid ""
@@ -71444,7 +71448,7 @@ msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid "Name"
-msgstr ""
+msgstr "Nama"
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid "Filename"
@@ -74742,7 +74746,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:284
 msgid "Localization"
-msgstr ""
+msgstr "Lokalisasi"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:286
 msgid ""
@@ -74796,7 +74800,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
-msgstr ""
+msgstr "Tanya Jawab"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"

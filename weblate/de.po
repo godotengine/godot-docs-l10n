@@ -8,6 +8,7 @@
 # Andreas Binczyk <andreas.binczyk@gmail.com>, 2019.
 # Andreas During <anduring@web.de>, 2019.
 # Arthur S. Muszynski <artism90@gmail.com>, 2018-2019.
+# Benedikt <benedikt.29+webl@pm.me>, 2019.
 # Carsten Nikiel <carsten@nikiel.de>, 2018-2019.
 # CatgamerHD <katzenspieler.catgamerhd04@gmail.com>, 2019.
 # chillhelm <wilhelm@neubert.online>, 2018.
@@ -44,14 +45,17 @@
 # Lorenz <lorenzhundler@gmail.com>, 2019.
 # M. Feil <git@sgdw.de>, 2018.
 # Manuel Schade <sprivat@protonmail.com>, 2019.
+# Marc <projectleviathan@arcor.de>, 2019.
 # Mario Zeilinger <mario.zeilinger@gmail.com>, 2019.
 # Mark B <berezun.mark@gmail.com>, 2018.
 # Martin <martinreininger@gmx.net>, 2019.
 # Martin Majewski <mail@martinmajewski.net>, 2019.
+# Martin Neumann <trumpeling@gmail.com>, 2019.
 # Martin Ziegler <martin.zie@gmx.de>, 2018.
 # Mathias Schmalisch <mathias.schmalisch@gmail.com>, 2018-2019.
 # McDonnough <psbaechli@gmail.com>, 2019.
 # Moritz Jannasch <moritz.jannasch@gmail.com>, 2019.
+# Nathan Reiner <nathan.reiner@icloud.com>, 2019.
 # Neicul <neicul@gmx.de>, 2018-2019.
 # Nijco <heijnk@posteo.de>, 2018.
 # nimradium <nimra242001@gmail.com>, 2018-2019.
@@ -77,6 +81,7 @@
 # Thomas Karcher <t_karcher@posteo.de>, 2019.
 # Timo Schwarzer <account@timoschwarzer.com>, 2018.
 # Tobias Möhring <dasbente@gmail.com>, 2019.
+# Tobias <terces86@gmail.com>, 2019.
 # Tom - Henry Coursow <tom.coursow@gmail.com>, 2019.
 # Übersetzer124 <cloud1@mag-keinen-spam.de>, 2018.
 # ZSte <ZStephanie@t-online.de>, 2018.
@@ -86,8 +91,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-09-02 11:13+0200\n"
-"PO-Revision-Date: 2019-09-01 08:25+0000\n"
-"Last-Translator: Mathias Schmalisch <mathias.schmalisch@gmail.com>\n"
+"PO-Revision-Date: 2019-10-14 02:52+0000\n"
+"Last-Translator: Marc <projectleviathan@arcor.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -210,7 +215,7 @@ msgstr ""
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -347,7 +352,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Bevor es losgeht"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -355,6 +360,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"Die :ref:`Tutorials and resources <doc_community_tutorials>` Seite enthält "
+"von der Community erstellte Video-Tutorials. Falls Sie lieber Videos "
+"anschauen anstatt Texte zu lesen, mögen diese einen Blick wert sein."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -362,6 +370,9 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Falls Sie Probleme mit einem der Tutorials oder einem Projekt haben, "
+"befinden sich hier diverse :ref:`Community channels "
+"<doc_community_channels>`, speziell die Godot Discord Community, Q&A und IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -1336,7 +1347,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "Warum verwendet Godot nicht STL (Standard Template Library)"
 
 #: ../../docs/about/faq.rst:288
 msgid ""
@@ -1344,12 +1355,18 @@ msgid ""
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"Wie viele andere Bibliotheken (zum Beispiel QT) verzichtet auch Godot auf "
+"den Einsatz der STL. Wir glauben, dass die STL eine großartige Allzweck-"
+"Bibliothek ist, allerdings hatten wir besondere Anforderungen für Godot."
 
 #: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"STL-Vorlagen erzeugen sehr große Symbole und diese führen zu großen Debug-"
+"Binärdateien. Wir verwenden stattdessen nur wenige Vorlagen mit sehr kurzen "
+"Namen."
 
 #: ../../docs/about/faq.rst:293
 msgid ""
@@ -1358,28 +1375,41 @@ msgid ""
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"Die meisten unserer Container sind für spezielle Anforderungen ausgelegt, "
+"wie z.B. Vector, welcher Copy on Write verwendet und wir verwenden, um Daten "
+"weiterzugeben, oder das RID-System, das O(1)-Zugriffszeit für die Leistung "
+"benötigt. Ebenso sind unsere Hash-Map-Implementierungen so konzipiert, dass "
+"sie sich nahtlos in die internen Enginetypen integrieren lassen."
 
 #: ../../docs/about/faq.rst:294
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"Unsere Container wurden \"memory tracking\" mit eingebaut, was dabei hilft, "
+"den Speichergebrauch besser verfolgen zu können."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"Für den Gebrauch von großen Arrays, benutzen wir zusammengelegten Speicher, "
+"der entweder einem vorab zugewiesenen Buffer oder einem virtuellen Speicher "
+"zugeordnet werden kann."
 
 #: ../../docs/about/faq.rst:296
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"Wir verwenden unsere eigene angepasste String Klasse, da die von STL "
+"bereitgestellte zu einfach ist und Internationalisierung nur unzureichend "
+"unterstützt wird."
 
 #: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "Weshalb braucht Godot keine \"exceptions\"?"
 
 #: ../../docs/about/faq.rst:301
 msgid ""
@@ -1388,16 +1418,22 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"Wir glauben Spiele sollten nicht Abstürzen, egal was auch passiert. Wenn "
+"eine unerwartete Situation auftritt, dann schreibt Godot eine Fehlermeldung, "
+"versucht dies danach aber so gut es geht wieder auszugleichen und weiter zu "
+"laufen."
 
 #: ../../docs/about/faq.rst:306
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
+"Zusätzlich erhöhen sogenannte \"exceptions\" die Größe des schlussendlichen "
+"ausführbaren Programm erheblich."
 
 #: ../../docs/about/faq.rst:310
 msgid "Why does Godot not enforce RTTI?"
-msgstr ""
+msgstr "Weshalb erzwingt Godot keine RTTI?"
 
 #: ../../docs/about/faq.rst:312
 msgid ""
@@ -1405,10 +1441,16 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
+"Godot stellt sein eigenes Type-Casting-System bereit, welches, nach "
+"Belieben, von der RTTI internen Gebrauch machen kann. Deaktiviertes RTTI in "
+"Godot bedeutet deutlich kleinere Größe, der ausführbaren Programmen, mit dem "
+"Nachteil einer wenig schlechteren Leistung."
 
 #: ../../docs/about/faq.rst:317
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
+"Weshalb zwingt Godot seine Benutzer nicht zum anwenden von DoD (Data "
+"oriented Design)?"
 
 #: ../../docs/about/faq.rst:319
 msgid ""
@@ -1416,6 +1458,10 @@ msgid ""
 "use cache coherency as best as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"Während Godot intern versucht, die Cache-Zusammenhänge für viele Aufgaben "
+"mit hoher Leistung so gut wie möglich zu nutzen, sind wir der Meinung, dass "
+"die meisten Benutzer nicht dazu gezwungen werden müssen, DoD-Methoden zu "
+"gebrauchen."
 
 #: ../../docs/about/faq.rst:323
 msgid ""
@@ -1425,12 +1471,19 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"DoD ist größtenteils eine Cache-Zusammenhang-Optimierung, mit welcher nur "
+"eine erhebliche Leistungssteigerung erlangt werden kann, wenn diese mehrere "
+"tausende Objekte berechnen muss. Wenn wenige Hundert  Sprites oder Gegner "
+"pro Bild bewegt werden, wird DoD keine Hilfe sein und eine andere "
+"Herangehensweise der Optimierung sollte in Erwägung gezogen werden."
 
 #: ../../docs/about/faq.rst:330
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"Die größte Mehrheit der Spiele brauchen dies nicht und Godot stellt "
+"praktische Hilfen bereit, um die Arbeit in den meisten Fällen zu erledigen."
 
 #: ../../docs/about/faq.rst:333
 msgid ""
@@ -1438,6 +1491,9 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"Falls ein Spiel, das wirklich eine solch große Anzahl von Objekten benötigt, "
+"wird von uns empfohlen C++ und GDNative für den Hochleistungsteil des Spiels "
+"zu gebrauchen und für den Rest GDScript (oder C#)."
 
 #: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
@@ -1488,9 +1544,8 @@ msgstr ""
 "in diesem Dokument angezeigt."
 
 #: ../../docs/about/docs_changelog.rst:14
-#, fuzzy
 msgid "New tutorials since version 3.1"
-msgstr "Neue Tutorials seit Version 3.0"
+msgstr "Neue Tutorials seit Version 3.1"
 
 #: ../../docs/about/docs_changelog.rst:17
 #: ../../docs/about/docs_changelog.rst:110
@@ -1509,9 +1564,8 @@ msgid "2D"
 msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:24
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr ":ref:`Szenenorganisation <doc_scene_organization>`"
+msgstr ":ref:`2D-Sprite-Animation<doc_2d_sprite_animation>`"
 
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2
@@ -1519,18 +1573,16 @@ msgid "Audio"
 msgstr "Audio"
 
 #: ../../docs/about/docs_changelog.rst:29
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr ":ref:`Shader <doc_shaders>`"
+msgstr ":ref:`Audiosynchronisation <doc_sync_with_audio>`"
 
 #: ../../docs/about/docs_changelog.rst:32 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr ""
+msgstr "Mathematik"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr ":ref:`Shader <doc_shaders>`"
+msgstr ":ref:`Beziers und Curvers <doc_beziers_and_curves>`"
 
 #: ../../docs/about/docs_changelog.rst:35
 #, fuzzy
@@ -1540,7 +1592,7 @@ msgstr ":ref:`Exportieren <doc_exporting>`"
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
 msgid "Inputs"
-msgstr ""
+msgstr "Eingaben"
 
 #: ../../docs/about/docs_changelog.rst:40
 #, fuzzy
@@ -1560,11 +1612,11 @@ msgstr "Lokalisierung"
 #: ../../docs/about/docs_changelog.rst:162
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr "Shader"
+msgstr "Shading"
 
 #: ../../docs/about/docs_changelog.rst:50
 msgid "Your First Shader Series:"
-msgstr "Deine ersten Shader:"
+msgstr "Deine erste Shader-Serie:"
 
 #: ../../docs/about/docs_changelog.rst:52
 #, fuzzy
@@ -1590,7 +1642,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:58
 #: ../../docs/tutorials/networking/index.rst:2
 msgid "Networking"
-msgstr ""
+msgstr "Networking"
 
 #: ../../docs/about/docs_changelog.rst:60
 #, fuzzy
@@ -1625,9 +1677,8 @@ msgid "Multi-threading"
 msgstr "Multi-Threading"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr ":ref:`Verwendung von MultiMesh's <doc_making_trees>`"
+msgstr ":ref:`Verwendung mehreren Threads<doc_using_multiple_threads>`"
 
 #: ../../docs/about/docs_changelog.rst:75
 #: ../../docs/about/docs_changelog.rst:198
@@ -1637,17 +1688,15 @@ msgstr "Inhalte erstellen"
 
 #: ../../docs/about/docs_changelog.rst:82
 msgid "Procedural geometry series:"
-msgstr ""
+msgstr "Verfahrensgeometrie-Reihe:"
 
 #: ../../docs/about/docs_changelog.rst:78
-#, fuzzy
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ":ref:`Partikelshader <doc_particle_shader>`"
+msgstr ":ref:`Prozedurale Geometrien <toc-procedural_geometry>`"
 
 #: ../../docs/about/docs_changelog.rst:79
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr ":ref:`2D Meshes <doc_2d_meshes>`"
+msgstr ":ref:`Arraymesh <doc_arraymesh>`"
 
 #: ../../docs/about/docs_changelog.rst:80
 #, fuzzy
@@ -2726,6 +2775,9 @@ msgid ""
 "one of your monitors, go to **Project → Project Settings → Display → "
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
+"Falls dies nicht sofort funktioniert und ein hiDPI-Display gebraucht wird, "
+"kann dies unter **Projekt → Projekteinstellungen → Display → Window** "
+"aktiviert werden, indem unter **Dpi**, **Allow Hidpi** eingeschaltet wird."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
 msgid "Configuring the project"
@@ -9928,6 +9980,11 @@ msgid ""
 "from there. It gives us access to the node. The second part of the "
 "statement, ``.max_health``, accesses the ``max_health`` on the Player node."
 msgstr ""
+"Schauen wir uns das mal genauer an. ``$\"../Characters/Player\"``` ist eine "
+"Abkürzung, die im Szenenbaum einen Node nach oben geht und von dort aus den "
+"Node ``Characters/Player`` abruft. Das gibt uns Zugang zum Node. Der zweite "
+"Teil der Anweisung, ``.max_health``, greift auf die ``max_health``-Variable "
+"auf dem Player-Node zu."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:170
 msgid ""
@@ -9935,6 +9992,9 @@ msgid ""
 "the two lines into one, but we'll need to use ``player_max_health`` again "
 "later in the tutorial."
 msgstr ""
+"Die zweite Zeile weist den Wert ``bar.max_value`` zu. Die zwei Zeilen "
+"könnten auch zu einer Kombiniert werden, doch ``player_max_health`` wird "
+"später in der Anleitung noch gebraucht werden."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:174
 msgid ""
@@ -9942,6 +10002,9 @@ msgid ""
 "game, so we could work with this. Why do we still use ``max_health``? There "
 "are two reasons:"
 msgstr ""
+"Am Anfang des Spieles wird ``health`` auf ``max_health`` gesetzt, damit wir "
+"es gebrauchen können. Warum brauchen wir ``max_health`` immer noch? Es gibt "
+"zwei Gründe:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:178
 msgid ""
@@ -9949,6 +10012,10 @@ msgid ""
 "``max_health``: a future version of the game may load a level where the "
 "player already lost some health."
 msgstr ""
+"Wir können nicht davon ausgehen, dass ``health`` in jedem Fall "
+"``max_health`` entspricht: Eine spätere Version des Spiels könnte "
+"beispielsweise einen Level laden, in welchem der Spieler bereits etwas "
+"Gesundheit verloren hat."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
 msgid ""
@@ -10135,7 +10202,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
 msgid "We will reuse this method a bit later"
-msgstr ""
+msgstr "Wir werden diese Methode etwas später wiederverwenden"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:312
 msgid ""
@@ -11810,6 +11877,9 @@ msgid ""
 "Unity user, and aims to help you migrate your existing Unity experience into "
 "the world of Godot."
 msgstr ""
+"Dieses Handbuch bietet einen Überblick über die Godot Engine aus der Sicht "
+"eines Unity-Benutzers und soll Ihnen helfen, Ihre vorhandene Unity-Erfahrung "
+"in die Welt von Godot zu migrieren."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:15
 msgid ""
@@ -11820,15 +11890,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "Differences"
-msgstr ""
+msgstr "Unterschiede"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Unity"
-msgstr ""
+msgstr "Unity"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Godot"
-msgstr ""
+msgstr "Godot"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 #: ../../docs/community/contributing/documentation_guidelines.rst:115
@@ -11850,7 +11920,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, Linux (unofficial and unsupported)"
-msgstr ""
+msgstr "Windows, macOS, Linux (inoffiziell und nicht unterstützt)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
@@ -11862,7 +11932,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**Desktop:** Windows, macOS, Linux"
-msgstr ""
+msgstr "**Desktop:** Windows, macOS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:28
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
@@ -11874,25 +11944,27 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
-msgstr ""
+msgstr "**Konsolen:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
 msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
 "HoloLens"
 msgstr ""
+"**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
+"HoloLens"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "**TV:** Android TV, Samsung SMART TV, tvOS"
-msgstr ""
+msgstr "**TV:** Android TV, Samsung SMART TV, tvOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**Desktop:** Windows, macOS, X11"
-msgstr ""
+msgstr "**Desktop:** Windows, macOS, X11"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:28
 msgid "**Mobile:** Android, iOS"
-msgstr ""
+msgstr "**Mobil:** Android, iOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "**Web:** WebAssembly"
@@ -11900,15 +11972,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "**Console:** See :ref:`doc_consoles`"
-msgstr ""
+msgstr "**Konsolen:** See :ref:`doc_consoles`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
 msgid "**VR:** Oculus Rift, SteamVR"
-msgstr ""
+msgstr "**VR:** Oculus Rift, SteamVR"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid "Scene system"
-msgstr ""
+msgstr "Szenensystem"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid "Component/Scene (GameObject > Component)"
@@ -69812,7 +69884,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Visible Collision Shapes"
-msgstr "Collision Shapes sichtbar"
+msgstr "Collision-Shapes sichtbar"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
 msgid ""
@@ -74898,7 +74970,7 @@ msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid "Filename"

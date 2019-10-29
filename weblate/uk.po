@@ -6,6 +6,7 @@
 # Ihor Starchenko <scottpilgrim765@yahoo.com>, 2019.
 # Yuri Chornoivan <yurchor@ukr.net>, 2018-2019.
 # Александр <ol-vin@mail.ru>, 2018.
+# Богдан Матвіїв <bomtvv@gmail.com>, 2019.
 # Максим Якимчук <xpinovo@gmail.com>, 2018-2019.
 #
 msgid ""
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-09-02 11:13+0200\n"
-"PO-Revision-Date: 2019-08-15 23:23+0000\n"
-"Last-Translator: Ihor Starchenko <scottpilgrim765@yahoo.com>\n"
+"PO-Revision-Date: 2019-10-12 06:02+0000\n"
+"Last-Translator: Богдан Матвіїв <bomtvv@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
 "Language: uk\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.9-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -54,9 +55,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
-"Ця документація перекладена з оригінальної англійської <https://docs."
-"godotengine.org/en/latest> учасниками спільноти на Weblate <https://hosted."
-"weblate.org/projects/godot-engine/godot-docs>"
+"Ця документація перекладена з `оригінальної англійської  <https://docs."
+"godotengine.org/en/latest>`_  учасниками спільноти  на `Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -75,6 +76,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"На даний момент локалізовані переклади доступні лише для гілки \"latest"
+"\" (розробка), але вони повинні підходити для вивчення стабільних релізів "
+"Godot."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -256,19 +260,18 @@ msgstr ""
 "платформі і без будь-яких обмежень використання."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"Ця сторінка призначена для широкого представлення рушія та вмісту цієї "
+"Ця сторінка призначена для широкого представлення двіжка та вмісту цієї "
 "документації, щоб ви знали, з чого почати, якщо ви є новачком або де шукати, "
 "якщо вам потрібна інформація про певну функцію."
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Перед початком"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -289,18 +292,16 @@ msgid "About Godot Engine"
 msgstr "Про Godot Engine"
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"Ігровий рушій є складним інструментом, і тому важко представити Godot "
+"Ігровий двіжок є складним інструментом, і тому важко представити Godot "
 "кількома словами. Проте тут наша PR-презентація, яку ви можете вільно "
 "використовувати, якщо вам потрібний швидкий опис про Godot Engine."
 
 #: ../../docs/about/introduction.rst:38
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -309,13 +310,13 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot Engine - це багатофункціональний, багатоплатформовий ігровий рушій для "
-"створення 2D та 3D-ігор з уніфікованим інтерфейсом. Він надає повний набір "
-"загальних інструментів, завдяки чому користувачі можуть зосередити увагу на "
-"створенні ігор без необхідності винаходити колесо. Ігри можна експортувати "
-"одним клацанням на декілька платформ, включаючи основні настільні платформи "
-"(Linux, macOS, Windows), а також мобільні пристрої (Android, iOS) та веб-"
-"платформи (HTML5)."
+"Godot Engine - це багатофункціональний, багатоплатформовий ігровий двіжок "
+"для створення 2D та 3D-ігор з уніфікованим інтерфейсом. Він надає повний "
+"набір загальних інструментів, завдяки чому користувачі можуть зосередити "
+"увагу на створенні ігор без необхідності винаходити колесо. Ігри можна "
+"експортувати одним клацанням на декілька платформ, включаючи основні "
+"настільні платформи (Linux, macOS, Windows), а також мобільні пристрої "
+"(Android, iOS) та веб-платформи (HTML5)."
 
 #: ../../docs/about/introduction.rst:45
 msgid ""
@@ -347,7 +348,6 @@ msgid "About the documentation"
 msgstr "Про документацію"
 
 #: ../../docs/about/introduction.rst:59
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -359,10 +359,10 @@ msgstr ""
 "Ця документація постійно пишеться, коректується, редагується та "
 "перекроюється членами спільноти Godot Engine. Вона редагується за допомогою "
 "текстових файлів на мові розмітки `reStructuredText <http://www.sphinx-doc."
-"org/en/stable/rest.html>`_, а потім складається у статичний веб-сайт/"
-"автономний документ за допомогою інструментів з відкритим вихідним кодом "
-"`Sphinx <http://www.sphinx-doc.org>`_ та `ReadTheDocs <https://readthedocs."
-"org/>`_."
+"org/en/stable/rest.html>`_markup language, а потім складається у статичний "
+"веб-сайт/автономний документ за допомогою інструментів з відкритим вихідним "
+"кодом `Sphinx <http://www.sphinx-doc.org>`_ та `ReadTheDocs <https://"
+"readthedocs.org/>`_інструменти."
 
 #: ../../docs/about/introduction.rst:66
 msgid ""
@@ -426,7 +426,6 @@ msgstr ""
 "користувачів."
 
 #: ../../docs/about/introduction.rst:91
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
@@ -446,7 +445,6 @@ msgstr ""
 "+ або плаґінів редактора."
 
 #: ../../docs/about/introduction.rst:96
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -455,7 +453,7 @@ msgid ""
 "tutorials outside of this documentation."
 msgstr ""
 "Розділ :ref:`sec-community` надає інформацію, що стосується сприяння "
-"розвитку рушія та життя його спільноти, наприклад, як повідомити про "
+"розвитку двіжка та життя його спільноти, наприклад, як повідомити про "
 "помилки, допомогти з документацією, тощо. Він також вказує на різні канали "
 "спільноти, такі як IRC та Discord, і містить список рекомендованих сторонніх "
 "навчальних посібників за межами цієї документації."
@@ -515,7 +513,6 @@ msgid "In short:"
 msgstr "Коротко:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
@@ -885,7 +882,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Починаючи з Godot 3.0, glTF підтримується."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -895,7 +891,9 @@ msgid ""
 msgstr ""
 "FBX SDK розповсюджується відповідно до `обмежувальних умов ліцензування "
 "<https://www.blender.org/bf/Autodesk_FBX_License.rtf>`_, які не сумісні з "
-"`відкритою ліцензією <https://opensource.org/licenses/MIT>`_ наданою Godot."
+"`відкритою ліцензією <https://opensource.org/licenses/MIT>`_ наданою Godot. "
+"Незважаючи на це, підтримка FBX все ще може надаватися сторонніми особами як "
+"плагін.  (Див. Питання плагінів нижче.)"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -913,7 +911,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:166
-#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
@@ -922,16 +919,15 @@ msgstr ""
 "Тим не менш, оскільки він з відкритим джерелом, та модульний, ніщо не "
 "заважає вам або будь-кому іншому зацікавленому додавати ці бібліотеки в "
 "якості модуля та поширювати вашу гру за допомогою них як відкритого, так і "
-"закритого джерела. Все дозволено."
+"закритого джерела."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
 "Щоб дізнатись, як може бути надана підтримка вашого SDK, перегляньте "
-"запитання про плаґіни вище."
+"запитання про плагіни вище."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -968,7 +964,6 @@ msgstr ""
 "співвідношенням сторін, з дуже широким діапазоном розмірів та DPI."
 
 #: ../../docs/about/faq.rst:189
-#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
@@ -998,7 +993,6 @@ msgstr ""
 "довшим буде час для завантаження."
 
 #: ../../docs/about/faq.rst:201
-#, fuzzy
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
@@ -1009,7 +1003,6 @@ msgstr ""
 "про те, як це досягти."
 
 #: ../../docs/about/faq.rst:205
-#, fuzzy
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -1063,7 +1056,6 @@ msgstr ""
 "`Плаґіни редактора <doc_making_plugins>` та інструментарій скриптів."
 
 #: ../../docs/about/faq.rst:228
-#, fuzzy
 msgid "Also, see the official blog posts on these topics:"
 msgstr "Також див. дописи в офіційному блозі за цими темами:"
 
@@ -1080,7 +1072,6 @@ msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 msgstr "`GDNative тут! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
-#, fuzzy
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
@@ -1089,7 +1080,8 @@ msgid ""
 msgstr ""
 "Ви також можете поглянути на реалізацію GDScript, модулів Godot, а також на "
 "`неофіційну підтримку Python <https://github.com/touilleMan/godot-python>`_ "
-"для Godot."
+"для Godot. Це було б хорошою початковою точкою для того, щоб побачити, як "
+"інша стороння бібліотека інтегрується з Godot."
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
@@ -1151,7 +1143,6 @@ msgstr ""
 "вашого проекту."
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr ""
@@ -1318,9 +1309,8 @@ msgstr ""
 "contact>`_."
 
 #: ../../docs/about/docs_changelog.rst:4
-#, fuzzy
 msgid "Documentation changelog"
-msgstr "Настанови щодо документації"
+msgstr "Журнал змін щодо документації"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -1357,9 +1347,8 @@ msgid "2D"
 msgstr "Двовимірна графіка (2D)"
 
 #: ../../docs/about/docs_changelog.rst:24
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr "Організація"
+msgstr ":ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2
@@ -1367,23 +1356,20 @@ msgid "Audio"
 msgstr "Аудіо"
 
 #: ../../docs/about/docs_changelog.rst:29
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`doc_sync_with_audio`"
 
 #: ../../docs/about/docs_changelog.rst:32 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
 msgstr "Математика"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:35
-#, fuzzy
 msgid ":ref:`doc_interpolation`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`doc_interpolation`"
 
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -1391,18 +1377,16 @@ msgid "Inputs"
 msgstr "Пристрої введення"
 
 #: ../../docs/about/docs_changelog.rst:40
-#, fuzzy
 msgid ":ref:`doc_input_examples`"
-msgstr ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`doc_input_examples`"
 
 #: ../../docs/about/docs_changelog.rst:43 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
 msgstr "Інтернаціоналізація"
 
 #: ../../docs/about/docs_changelog.rst:45
-#, fuzzy
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr "Локалізація"
+msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:48
 #: ../../docs/about/docs_changelog.rst:162
@@ -1415,9 +1399,8 @@ msgid "Your First Shader Series:"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:52
-#, fuzzy
 msgid ":ref:`doc_what_are_shaders`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`doc_what_are_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:53
 msgid ":ref:`doc_your_first_canvasitem_shader`"
@@ -1437,9 +1420,8 @@ msgid "Networking"
 msgstr "Робота у мережі"
 
 #: ../../docs/about/docs_changelog.rst:60
-#, fuzzy
 msgid ":ref:`doc_webrtc`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:63
 #: ../../docs/about/docs_changelog.rst:182
@@ -1448,83 +1430,69 @@ msgid "Plugins"
 msgstr "Плаґіни (додатки)"
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_android_plugin`"
-msgstr "Android"
+msgstr ":ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:66
-#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr "Створення додатків"
+msgstr ":ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:67
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr "Створення додатків"
+msgstr ":ref:`doc_visual_shader_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:70
 #: ../../docs/about/docs_changelog.rst:193
 #: ../../docs/tutorials/threads/index.rst:2
-#, fuzzy
 msgid "Multi-threading"
-msgstr "Багаторядковий рядок"
+msgstr "Багатопотоковість"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:75
 #: ../../docs/about/docs_changelog.rst:198
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
-msgstr "Як створити дані"
+msgstr "Створення контенту"
 
 #: ../../docs/about/docs_changelog.rst:82
 msgid "Procedural geometry series:"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:78
-#, fuzzy
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`Процедурна геометрія <toc-procedural_geometry>`"
 
 #: ../../docs/about/docs_changelog.rst:79
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`doc_arraymesh`"
 
 #: ../../docs/about/docs_changelog.rst:80
-#, fuzzy
 msgid ":ref:`doc_surfacetool`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`doc_surfacetool`"
 
 #: ../../docs/about/docs_changelog.rst:81
-#, fuzzy
 msgid ":ref:`doc_meshdatatool`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`doc_meshdatatool`"
 
 #: ../../docs/about/docs_changelog.rst:82
-#, fuzzy
 msgid ":ref:`doc_immediategeometry`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`doc_immediategeometry`"
 
 #: ../../docs/about/docs_changelog.rst:85
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "Анімація"
+msgstr "Оптимізація"
 
 #: ../../docs/about/docs_changelog.rst:87
-#, fuzzy
 msgid ":ref:`doc_using_multimesh`"
-msgstr ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`doc_using_multimesh`"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`doc_using_servers`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`doc_using_servers`"
 
 #: ../../docs/about/docs_changelog.rst:91
 #: ../../docs/tutorials/legal/index.rst:2
@@ -1532,9 +1500,8 @@ msgid "Legal"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:93
-#, fuzzy
 msgid ":ref:`doc_complying_with_licenses`"
-msgstr "Компіляція нашого додатка"
+msgstr ":ref:`doc_complying_with_licenses`"
 
 #: ../../docs/about/docs_changelog.rst:96
 msgid "New tutorials since version 3.0"
@@ -1548,14 +1515,12 @@ msgid "Step by step"
 msgstr "Крок-за-кроком"
 
 #: ../../docs/about/docs_changelog.rst:101
-#, fuzzy
 msgid ":ref:`doc_signals`"
-msgstr ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`doc_signals`"
 
 #: ../../docs/about/docs_changelog.rst:102
-#, fuzzy
 msgid ":ref:`doc_exporting`"
-msgstr ":ref:`RID<class_rid>`"
+msgstr ":ref:`doc_exporting`"
 
 #: ../../docs/about/docs_changelog.rst:105
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
@@ -17252,9 +17217,8 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
-#, fuzzy
 msgid "keys"
-msgstr "keys"
+msgstr "Ключі"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid "<lang1>"
@@ -57347,7 +57311,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:35
 msgid "**Category**:"
-msgstr ""
+msgstr "**Категорія**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:32
 msgid ""
@@ -57374,7 +57338,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:48
 msgid "**Version**:"
-msgstr ""
+msgstr "**Версія**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:44
 msgid ""
@@ -57444,7 +57408,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:74
 msgid "**License**:"
-msgstr ""
+msgstr "**Ліцензія**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:72
 msgid ""
@@ -57456,7 +57420,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:80
 msgid "**Description**:"
-msgstr ""
+msgstr "**Опис**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:77
 msgid ""
@@ -57475,7 +57439,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:86
 msgid "**Type**:"
-msgstr ""
+msgstr "**Тип**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:87
 msgid "Either an image, or a video."
@@ -64971,7 +64935,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:7
 msgid "Quitting"
-msgstr ""
+msgstr "Вихід"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:9
 msgid ""
@@ -71959,7 +71923,7 @@ msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid "Name"
-msgstr ""
+msgstr "Назва"
 
 #: ../../docs/development/editor/creating_icons.rst:39
 #, fuzzy

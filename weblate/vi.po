@@ -4,7 +4,9 @@
 #
 # 01lifeleft <01lifeleft@gmail.com>, 2018.
 # 38569459 <xxx38569459@gmail.com>, 2018.
+# Dũng Đinh <dqdthanhthanh@gmail.com>, 2019.
 # mth2610 <mth2610@gmail.com>, 2018.
+# Peter Anh <peteranh3105@gmail.com>, 2019.
 # Steve Dang <itsnguu@outlook.com>, 2019.
 # TyTYct Hihi <tytyct@gmail.com>, 2019.
 #
@@ -13,8 +15,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-09-02 11:13+0200\n"
-"PO-Revision-Date: 2019-07-29 19:20+0000\n"
-"Last-Translator: Steve Dang <itsnguu@outlook.com>\n"
+"PO-Revision-Date: 2019-10-22 13:30+0000\n"
+"Last-Translator: Dũng Đinh <dqdthanhthanh@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/vi/>\n"
 "Language: vi\n"
@@ -22,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.8-dev\n"
+"X-Generator: Weblate 3.9.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -269,7 +271,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Trước khi bạn bắt đầu"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -277,6 +279,8 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"Trang \"Các hướng dẫn và tài liệu\" có liệt kê các video hướng dẫn được cộng "
+"đồng thực hiện. Hãy xem thử qua nếu bạn thích xem video hơn là đọc văn bản."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -284,6 +288,10 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Nếu bạn gặp khó khắn với một trong số các bài hướng dẫn hoặc dự án của bạn, "
+"bạn có thể tìm kiếm giúp đỡ trên các :ref:`Kênh cộng "
+"đồng<doc_community_channels>`, đặc biệt là Discord cộng đồng của Godot, Q&A "
+"và IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -421,13 +429,13 @@ msgstr ""
 "hướng dẫn mà nên là điểm xuất phát cho tất cả người dùng mới."
 
 #: ../../docs/about/introduction.rst:91
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-"Mặt khác, phần :ref:`sec-tutorials` có thể được đọc khi nào cần, theo bất kỳ "
-"thứ tự nào. Nó chứa nhiều bài hướng dẫn và tài liệu cụ thể."
+"Phần :ref:`sec-tutorials` có thể được đọc khi nào cần, theo bất kỳ thứ tự "
+"nào. Nó chứa nhiều bài hướng dẫn và tài liệu liên quan đến các tính năng cụ "
+"thể."
 
 #: ../../docs/about/introduction.rst:93
 #, fuzzy
@@ -827,6 +835,8 @@ msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"Poor class-extending support in most script VMs, and adapting to the way "
+"Godot works is highly inefficient (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:130
 #, fuzzy
@@ -1769,7 +1779,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr "Hướng dẫn Godot's editor"
+msgstr "Hướng dẫn Godot editor"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1777,23 +1787,27 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"Hướng dẫn này sẽ đưa bạn qua giao diện Godot. Chúng tôi sẽ xem xét **Project "
+"Manager, docks, workspaces** và mọi thứ bạn cần biết để bắt đầu với công cụ."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
-msgstr ""
+msgstr "Project manager (Quản lý dự án)"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "It lets you create, remove, import or play game projects."
 msgstr ""
+"Khi bạn khởi chạy Godot, cửa sổ đầu tiên bạn sẽ thấy là Project Manager. Nó "
+"cho phép bạn tạo, xóa, import hoặc chơi các dự án trò chơi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:16
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:49
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:16
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:22
 msgid "|image0|"
-msgstr "|hình0|"
+msgstr "| hình ảnh0 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:18
 msgid ""
@@ -1846,12 +1860,14 @@ msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
+"Nhấp vào nút Browse để mở trình duyệt tệp Godot, và chọn một vị trí hoặc "
+"nhập đường dẫn thư mục trong trường Đường dẫn dự án."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:39
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:88
 msgid "|image4|"
-msgstr ""
+msgstr "| hình ảnh4 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:41
 msgid ""
@@ -1859,18 +1875,24 @@ msgid ""
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
+"Khi bạn thấy dấu tick màu xanh bên phải, điều đó có nghĩa là engine phát "
+"hiện một thư mục trống và bạn có thể nhấp vào `` Create``. Godot sẽ tạo dự "
+"án cho bạn và mở nó trong trình chỉnh sửa."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
+#, fuzzy
 msgid ""
 "The next time you’ll open Godot, you’ll see your new project in the list. "
 "Double click on it to open it in the editor."
 msgstr ""
+"Lần tới khi bạn mở Godot, bạn sẽ thấy dự án mới của mình trong danh sách. "
+"Nhấp đúp chuột vào nó để mở nó trong trình chỉnh sửa."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:92
 msgid "|image5|"
-msgstr ""
+msgstr "| hình ảnh 5 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:50
 msgid ""
@@ -1878,24 +1900,27 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
+"Bạn có thể nhập các dự án hiện có theo cách tương tự, sử dụng nút Import. "
+"Định vị thư mục chứa dự án hoặc tệp `` project.godot`` để nhập và chỉnh sửa "
+"nó."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:113
 msgid "|image7|"
-msgstr ""
+msgstr "| hình7 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
 msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr ""
+msgstr "Khi đường dẫn thư mục chính xác, bạn sẽ thấy dấu kiểm màu xanh lục."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:121
 msgid "|image8|"
-msgstr ""
+msgstr "| hình ảnh 8 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
-msgstr ""
+msgstr "Cái nhìn đầu tiên của bạn về editor (trình soạn thảo) của Godot,"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -1903,48 +1928,59 @@ msgid ""
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
+"Chào mừng bạn đến Godot! Với dự án mở của bạn, bạn sẽ thấy giao diện của "
+"editor với 3D viewport đang hoạt động. Bạn có thể thay đổi không gian làm "
+"việc hiện tại ở phía trên của giao diện. Nhấp vào 2D để chuyển sang không "
+"gian làm việc 2D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:142
 msgid "|image9|"
-msgstr ""
+msgstr "| hình ảnh9 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
 msgid "Now you should see this interface, with empty docks on the right side."
 msgstr ""
+"Bây giờ bạn sẽ thấy giao diện này, với các cửa sổ trống ở phía bên phải."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:148
 msgid "|image10|"
-msgstr ""
+msgstr "| hình10 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:74
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
+"Ở trên cùng, từ trái sang phải, bạn có thể thấy **main menus**, the "
+"**workspaces**, and the **playtest buttons**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
+"Ở phía bên trái, bạn có **FileSystem dock**, nơi bạn sẽ quản lý các file và "
+"tài sản dự án của mình."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:153
 msgid "|image11|"
-msgstr ""
+msgstr "| hình11 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
+"Ở phía bên phải, bạn sẽ tìm thấy **Scene dock**, trong đó danh sách nội dung "
+"scene đang được chọn và **Inspector** ở góc dưới bên phải."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:161
 msgid "|image12|"
-msgstr ""
+msgstr "| hình ảnh 12 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -1952,11 +1988,14 @@ msgid ""
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
+"Ở trung tâm, bạn có ** Thanh công cụ ** ở trên cùng, nơi bạn sẽ tìm các công "
+"cụ để di chuyển, thu phóng tỷ lệ hoặc khóa các đối tượng trong scene của "
+"bạn. Nó thay đổi khi bạn chuyển đến các không gian làm việc khác nhau."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:168
 msgid "|image13|"
-msgstr ""
+msgstr "| hình13 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 msgid ""
@@ -1964,20 +2003,24 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
+"** Bảng điều khiển dưới cùng ** là máy chủ lưu trữ cho bảng điều khiển gỡ "
+"lỗi (debug,) trình chỉnh sửa animation, bộ trộn âm thanh."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:115
 msgid "|image14|"
-msgstr ""
+msgstr "| hình14 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid "The workspaces"
-msgstr ""
+msgstr "Không gian làm việc"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
+"Bạn có thể thấy bốn nút về không gian làm việc ở trên cùng: 2D, 3D, Script "
+"và AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
 msgid ""
@@ -1985,57 +2028,73 @@ msgid ""
 "games, the 2D workspace is where you'll build your interfaces. Press F1 to "
 "access it."
 msgstr ""
+"Bạn có thể sử dụng ** không gian làm việc 2D ** cho tất cả các loại trò "
+"chơi. Ngoài các trò chơi 2D, không gian làm việc 2D là nơi bạn sẽ xây dựng "
+"giao diện của mình. Nhấn F1 để truy cập nó."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
-#, fuzzy
 msgid "|image15|"
-msgstr "|hình1|"
+msgstr "| hình ảnh 15 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
+"Trong ** không gian làm việc 3D **, bạn có thể làm việc với các lưới, đèn và "
+"design level cho các trò chơi 3D. Nhấn F2 để truy cập nó."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
 msgid "|image16|"
-msgstr ""
+msgstr "| hình16 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid ""
 "Notice the text [perspective] under the toolbar, it is a button that opens a "
 "list of options related to the 3D viewport."
 msgstr ""
+"Lưu ý văn bản [perspective] dưới thanh công cụ, đó là nút mở danh sách các "
+"tùy chọn liên quan đến chế độ xem 3D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
 msgid "|image20|"
-msgstr ""
+msgstr "| hình ảnh 20 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:119
+#, fuzzy
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
+"Đọc: Ref: ' doc_introduction_to_3d ' để biết thêm chi tiết về * * 3D "
+"Workspace * *."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:121
+#, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
 "to search the reference."
 msgstr ""
+"* * Script * * Workspace là một trình soạn thảo mã hoàn chỉnh với trình gỡ "
+"lỗi, hoàn thành tự động phong phú và tham chiếu mã được tích hợp sẵn. Nhấn "
+"F3 để truy cập nó, và F4 để tìm kiếm tham chiếu."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:125
 msgid "|image17|"
-msgstr ""
+msgstr "| hình ảnh 17 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:127
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
+"Cuối cùng, ** AssetLib ** là một thư viện các tiện ích, script và tài sản "
+"miễn phí để sử dụng trong các dự án của bạn."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
+#, fuzzy
 msgid "Modify the interface"
-msgstr ""
+msgstr "Sửa đổi giao diện"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""
@@ -2043,39 +2102,48 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio for instance."
 msgstr ""
+"Giao diện của Godot ở trong một cửa sổ duy nhất. Bạn không thể chia nhỏ trên "
+"nhiều màn hình mặc dù bạn có thể làm việc với một trình soạn thảo mã bên "
+"ngoài như Atom hoặc Visual Studio chẳng hạn."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
 msgid "Move and resize docks"
-msgstr ""
+msgstr "Di chuyển và thay đổi kích thước các cửa sổ"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr ""
+"Nhấp và kéo trên mép của bất kỳ cửa sổ hoặc bảng điều khiển để thay đổi kích "
+"thước nó theo chiều ngang hoặc chiều dọc."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:143
 msgid "|image18|"
-msgstr ""
+msgstr "| hình ảnh 18 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
+"Nhấp vào biểu tượng ba chấm ở đầu bất kỳ cửa sổ nào để thay đổi vị trí của "
+"nó."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid "|image19|"
-msgstr ""
+msgstr "| hình ảnh19 |"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
+"Chuyển đến trình đơn `` Editor`` và `` Editor Settings`` để tinh chỉnh giao "
+"diện của editor."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr ""
+msgstr "Các scene và node"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
 msgid ""
@@ -2084,14 +2152,22 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"Hãy tưởng tượng trong một giây rằng bạn không còn là nhà phát triển trò chơi "
+"nữa. Thay vào đó, bạn là một đầu bếp! Bây giờ, thay vì làm trò chơi, bạn tạo "
+"ra các công thức mới và món ngon cho khách của bạn."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
+#, fuzzy
 msgid ""
 "So, how does a chef create a recipe? Recipes are divided into two sections: "
 "the first is the ingredients and the second is the instructions to prepare "
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
+"Vì vậy, làm thế nào để một đầu bếp tạo ra một công thức? Bí quyết được chia "
+"thành hai phần: phần thứ nhất là nguyên liệu và phần thứ hai là hướng dẫn để "
+"chuẩn bị. Bằng cách này, bất cứ ai cũng có thể làm theo công thức và thưởng "
+"thức sáng tạo tuyệt vời của bạn."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -2099,19 +2175,24 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
+"Làm các trò chơi trong Godot  khá giống như vậy. Sử dụng engine cho cảm giác "
+"như đang ở trong bếp. Trong nhà bếp này, * các node * giống như một tủ lạnh "
+"chứa đầy các nguyên liệu tươi để nấu."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
+"Có nhiều loại node. Một số hiển thị hình ảnh, một số khác phát âm thanh, các "
+"nút khác hiển thị mô hình 3D, v.v ... Có hàng tá trong số chúng."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:110
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:46
 #: ../../docs/development/file_formats/tscn.rst:26
 msgid "Nodes"
-msgstr ""
+msgstr "Node"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -2120,32 +2201,39 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
+"Nhưng hãy bắt đầu với những điều cơ bản. Các node là các khối xây dựng cơ "
+"bản để tạo ra một trò chơi. Như đã đề cập ở trên, một node có thể thực hiện "
+"một loạt các chức năng chuyên biệt. Tuy nhiên, bất kỳ node đã cho nào luôn "
+"có các thuộc tính sau:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr ""
+msgstr "Nó có một cái tên."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr ""
+msgstr "Nó có thuộc tính có thể chỉnh sửa."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
+#, fuzzy
 msgid "It can receive a callback to process every frame."
-msgstr ""
+msgstr "Nó có thể nhận được một callback để xử lý mọi frame."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr ""
+msgstr "Nó có thể được mở rộng (để có nhiều hàm nhiều chức năng hơn)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to another node as a child."
-msgstr ""
+msgstr "Nó có thể được thêm vào một node khác như là một node con."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
+"Điều cuối cùng là quan trọng. Các node có thể có các node khác như con. Khi "
+"được sắp xếp theo cách này, các nút trở thành một tree **."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -2153,6 +2241,9 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
+"Trong Godot, khả năng sắp xếp các node theo cách này tạo ra một công cụ mạnh "
+"mẽ để tổ chức các dự án. Vì các node khác nhau có các chức năng, hàm khác "
+"nhau, việc kết hợp chúng cho phép tạo ra các chức năng phức tạp hơn."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -2160,41 +2251,51 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
+"Đừng lo lắng nếu điều này khó hiểu. Chúng ta sẽ tiếp tục khám phá điều này "
+"trong vài phần tiếp theo. Thực tế quan trọng nhất cần nhớ bây giờ là các "
+"node tồn tại và có thể được sắp xếp sử dụng theo cách này."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:75
 msgid "Scenes"
-msgstr ""
+msgstr "Scene (còn gọi là cảnh)"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
 "Now that the concept of nodes has been defined, the next logical step is to "
 "explain what a Scene is."
 msgstr ""
+"Bây giờ khái niệm về các node đã được định nghĩa, bước tiếp theo là logic là "
+"giải thích một Scene là gì."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
 msgid ""
 "A scene is composed of a group of nodes organized hierarchically (in tree "
 "fashion). Furthermore, a scene:"
 msgstr ""
+"Một scene bao gồm một nhóm các node được tổ chức theo thứ bậc (theo kiểu "
+"cây). Hơn nữa, một scene:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has one root node."
-msgstr ""
+msgstr "luôn có một node gốc (root node)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr ""
+msgstr "có thể được lưu vào đĩa và tải lại."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr ""
+msgstr "có thể  *instance* (nhiều hơn về điều đó sau)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
+"Chạy một trò chơi có nghĩa là chạy một scene. Một dự án có thể chứa một vài "
+"scene, nhưng để trò chơi bắt đầu, một trong số chúng phải được chọn làm main "
+"scene (cảnh chính)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -2202,10 +2303,13 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
+"Về cơ bản, trình soạn thảo Godot là **scene editor**. Nó có nhiều công cụ để "
+"chỉnh sửa scene 2D và 3D cũng như giao diện người dùng, nhưng trình chỉnh "
+"sửa dựa trên khái niệm chỉnh sửa scene và các node tạo ra nó."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 msgid "Creating a new project"
-msgstr ""
+msgstr "Tạo một dự án mới"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
 msgid ""
@@ -2213,31 +2317,39 @@ msgid ""
 "a long tradition in tutorials, we'll start with a \"Hello World\" project. "
 "This will introduce us to using the editor."
 msgstr ""
+"Hãy làm cho các khái niệm trừu tượng này cụ thể hơn với một ví dụ. Theo "
+"truyền thống lâu đời trong hướng dẫn, chúng ta sẽ bắt đầu với dự án \"Hello "
+"World\". Điều này sẽ giới thiệu cho chúng tôi sử dụng editor."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
 msgid ""
 "If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
+"Nếu bạn chạy Godot thực thi bên ngoài dự án, Project Manager sẽ xuất hiện. "
+"Điều này giúp các nhà phát triển quản lý các dự án của họ."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
 msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name \"New Project\":"
 msgstr ""
+"Để tạo một dự án mới, nhấp vào tùy chọn \"New Project\" . Chọn và tạo đường "
+"dẫn cho dự án và chỉ định tên dự án \"New Project\" :"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 #: ../../docs/getting_started/editor/external_editor.rst:32
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:43
 #: ../../docs/development/compiling/compiling_with_mono.rst:182
 msgid "Editor"
-msgstr "Trình biên tập"
+msgstr "Editor (trình biên tập)"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:96
 msgid ""
 "Once you've created the \"New Project\", then open it. This will open the "
 "Godot editor:"
 msgstr ""
+"Khi bạn đã tạo \"New Project\" , hãy mở nó. Điều này sẽ mở editor của Godot:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
 msgid ""
@@ -2245,27 +2357,35 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
+"Như đã đề cập trước đây, làm các trò chơi trong Godot có cảm giác như đang ở "
+"trong bếp, vì vậy hãy mở tủ lạnh và thêm một số node mới vào dự án. Chúng ta "
+"sẽ bắt đầu với thông báo \"Hello World\" mà chúng ta sẽ đưa lên màn hình."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
 msgid ""
 "To do this, press the \"New Node\" button (which looks like a plus symbol):"
 msgstr ""
+"Để thực hiện việc này, nhấn nút \"New Node\"\" (trông giống như một biểu "
+"tượng dấu cộng):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
+"Điều này sẽ mở hộp thoại Create Node, hiển thị danh sách dài các node có thể "
+"được tạo:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
+"Từ đó, chọn node \"Lable\" trước. Tìm kiếm nó có lẽ là cách nhanh nhất:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
-msgstr ""
+msgstr "Và cuối cùng, tạo Lable! Rất nhiều điều xảy ra khi nhấn Create:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:124
 msgid ""
@@ -2273,6 +2393,8 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
+"Trước hết, scene thay đổi thành editor 2D (vì label là loại node 2D) và "
+"label xuất hiện, được chọn, ở góc trên cùng bên trái của cửa sổ viewport."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:127
 msgid ""
@@ -2280,28 +2402,36 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
+"Node xuất hiện trong scene tree editor (hộp ở góc trên cùng bên phải) và các "
+"thuộc tính label xuất hiện trong Inspector (hộp ở góc dưới bên phải)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr ""
+"Bước tiếp theo sẽ là thay đổi Thuộc tính \"Text\" của label. Hãy thay đổi nó "
+"thành \"Hello World\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
+"Ok, mọi thứ đã sẵn sàng để chạy sceneh! Nhấn nút PLAY SCENE trên thanh trên "
+"cùng (hoặc nhấn F6):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid "Aaaand... Oops."
-msgstr ""
+msgstr "Aaaand ... Rất tiếc."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
+"Các scene cần được lưu để được chạy, vì vậy hãy lưu scene vào một cái gì đó "
+"như Hello.tscn trong Scene -> Save:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -2313,12 +2443,21 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
+"Và đây là khi một cái gì đó buồn cười xảy ra. Hộp thoại chứa file là một hộp "
+"thoại file đặc biệt và chỉ cho phép bạn lưu bên trong dự án. Dự án gốc là "
+"\"res: //\" có nghĩa là \"đường dẫn tài nguyên - resource path\". Điều này "
+"có nghĩa là các file chỉ có thể được lưu trong dự án. Trong tương lai, khi "
+"thực hiện các thao tác file trong Godot, hãy nhớ rằng \"res: //\" là đường "
+"dẫn tài nguyên và bất kể nền tảng hoặc vị trí cài đặt, đó là cách để xác "
+"định vị trí các tệp tài nguyên từ bên trong trò chơi."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
+"Sau khi lưu scene và nhấn lại run scene, bản demo \"Hello World\" cuối cùng "
+"sẽ thực hiện:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
@@ -2330,10 +2469,14 @@ msgid ""
 "one of your monitors, go to **Project → Project Settings → Display → "
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
+"Nếu điều này không hoạt động ngay lập tức và bạn có màn hình hiDPI trên ít "
+"nhất một màn hình của mình, hãy truy cập **Project → Project Settings → "
+"Display → Window** then enable **Allow Hidpi** under **Dpi**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
+#, fuzzy
 msgid "Configuring the project"
-msgstr ""
+msgstr "Cấu hình dự án"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:177
 msgid ""
@@ -2342,6 +2485,10 @@ msgid ""
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
+"Ok, đã đến lúc chỉnh cấu hình dự án. Ngay bây giờ, cách duy nhất để chạy một "
+"cái gì đó là thực hiện scena hiện tại. Các dự án, tuy nhiên, có thể có một "
+"vài scene, vì vậy một trong số chúng phải được đặt làm main scene. Đây là "
+"scene sẽ được tải bất cứ khi nào dự án được chạy."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
 msgid ""
@@ -2351,22 +2498,33 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
+"Các cài đặt này đều được lưu trữ trong file project.godot, đây là file văn "
+"bản gốc ở định dạng win.ini (để chỉnh sửa dễ dàng). Có hàng tá cài đặt mà "
+"bạn có thể thay đổi trong file này để thay đổi cách thực hiện dự án. Để đơn "
+"giản hóa quá trình này, Godot cung cấp hộp thoại cài đặt dự án, hoạt động "
+"như một loại lối vào để chỉnh sửa file project.godot."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
+#, fuzzy
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
+"Để truy cập hộp thoại đó, chọn Project -> Project Settings. Thử ngay bây giờ."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:190
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
+"Khi cửa sổ mở, hãy chọn một main scene. Xác định vị trí thuộc tính "
+"`Application / Run / Main Scene` và nhấp vào nó để chọn 'Hello.tscn'."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
+"Bây giờ, với thay đổi này, khi bạn nhấn nút Play thông thường (hoặc F5), "
+"scene này sẽ chạy, bất kể scene nào đang được tích cực chỉnh sửa."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:198
 msgid ""
@@ -2375,17 +2533,25 @@ msgid ""
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
+"Hộp thoại project settings cung cấp rất nhiều tùy chọn có thể được lưu vào "
+"file project.godot và hiển thị các giá trị mặc định của chúng. Nếu bạn thay "
+"đổi một giá trị, một đánh dấu được đánh dấu bên trái tên của nó. Điều này có "
+"nghĩa là thuộc tính sẽ được lưu vào tệp project.godot và ghi nhớ."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
+#, fuzzy
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
+"Là một lưu ý phụ, cũng có thể thêm các tùy chọn cấu hình tùy chỉnh và đọc "
+"chúng trong thời gian chạy bằng cách sử dụng: ref: `ProjectSinstall "
+"<class_ProjectSinstall>` singleton."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:207
 msgid "To be continued..."
-msgstr ""
+msgstr "Còn tiếp..."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
 msgid ""
@@ -2393,10 +2559,13 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
+"Hướng dẫn này nói về \"scene và node\", nhưng cho đến nay chỉ có duy nhất * "
+"một * scene và * một * node ! Đừng lo lắng, hướng dẫn tiếp theo sẽ mở rộng "
+"về điều đó ..."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr ""
+msgstr "Instance (thực thể)"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:9
 msgid ""
@@ -2406,12 +2575,21 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
+"Tạo một scene đơn lẻ và thêm các node vào nó có thể hoạt động cho các dự án "
+"nhỏ, nhưng khi một dự án tăng kích thước và độ phức tạp, số lượng node có "
+"thể nhanh chóng trở nên không thể quản lý được. Để giải quyết vấn đề này, "
+"Godot cho phép tách một dự án thành bất kỳ nhiều scene . Điều này cung cấp "
+"cho bạn một công cụ mạnh mẽ giúp bạn sắp xếp các thành phần khác nhau trong "
+"trò chơi của bạn."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
+"Trong: ref: `doc_scene_and_node` bạn đã học được rằng một scene là một tập "
+"hợp các node được tổ chức trong cấu trúc tree, với một node là gốc cây (tree "
+"root)."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -2419,32 +2597,42 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"Bạn có thể tạo bao nhiêu scene tùy thích và lưu chúng vào ổ. Các scene được "
+"lưu theo cách này được gọi là \"Packed Scenes\" (cảnh đã được đóng gói) và "
+"có phần mở rộng tên tệp `` .tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
+"Khi một scene đã được lưu, nó có thể được chuyển sang một scene khác như thể "
+"đó là bất kỳ node nào khác."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
 msgstr ""
+"Trong hình trên, Cảnh B được thêm vào Cảnh A như một  instance (thực thể)."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
-msgstr ""
+msgstr "Ví dụ về instance"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
+"Để tìm hiểu cách hoạt động của instance, hãy bắt đầu bằng cách tải xuống một "
+"dự án mẫu :: download: `instance.zip <files / instance.zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
+"Giải nén dự án này bất cứ nơi nào bạn muốn. Sau đó mở Godot và thêm dự án "
+"này vào project manager bằng nút 'Import':"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -2452,6 +2640,10 @@ msgid ""
 "can find inside it. After doing this, the new project will appear on the "
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
+"Duyệt đến thư mục bạn đã trích xuất và mở tệp \"project.godot\" mà bạn có "
+"thể tìm thấy bên trong nó. Sau khi làm điều này, dự án mới sẽ xuất hiện "
+"trong danh sách các dự án (list of projects). Chỉnh sửa dự án bằng cách nhấn "
+"nút 'Edit'."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -2460,10 +2652,15 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
+"Dự án này chứa hai scene: \"Ball. tscn\" và \"Main. tscn\". Ball scene sử "
+"dụng một: Ref: ' RigidBody2D < class_RigidBody2D > ' để cung cấp hành vi vật "
+"lý (physics behavior) trong khi main scene có một tập hợp các chướng ngại "
+"vật (obstacle) cho bóng để va chạm (collide) với (sử dụng: Ref: ' "
+"StaticBody2D < class_StaticBody2D > ')."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr ""
+msgstr "Mở `` Main`` scene, rồi chọn node gốc:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
@@ -2471,6 +2668,9 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
+"Chúng tôi muốn thêm một instance của `` Ball`` scene khi còn là một con của "
+"`` Main``. Nhấp vào nút hình \"liên kết\" (văn bản ghi chú của nó có nội "
+"dung \"Instance a scene file as a Node.\") Và chọn file `` Ball.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -2478,14 +2678,17 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
+"Quả bóng sẽ được đặt ở góc trên cùng bên trái của khu vực màn hình (đây là "
+"`` (0, 0) `` trong tọa độ màn hình). Nhấp và kéo quả bóng ở đâu đó gần trung "
+"tâm trên cùng của scene:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr ""
+msgstr "Nhấn \"Play\" và xem bóng rơi xuống dưới màn hình:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple instances"
-msgstr ""
+msgstr "Nhiều instance"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
 msgid ""
@@ -2493,26 +2696,33 @@ msgid ""
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (Ctrl-D):"
 msgstr ""
+"Bạn có thể thêm bao nhiêu instance tùy thích vào một scene, bằng cách sử "
+"dụng lại nút \"Instance\" hoặc bằng cách nhấp vào ball instance và nhấn "
+"\"Duplicate\" (Nhân đôi) (Ctrl-D):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr ""
+msgstr "Chạy lại scene và tất cả các quả bóng sẽ rơi xuống."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"
-msgstr ""
+msgstr "Chỉnh sửa instance"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
 msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
+"Mở `` Ball`` scene và thêm `` PhysicsMaterial ' (thêm vật liệu vật lý) bằng "
+"cách nhấp vào mũi tên xuống và chọn \"New PhysicsMaterial\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr ""
+"Sau đó, mở rộng material (vật liệu) bằng cách nhấp vào nó và đặt thuộc tính "
+"`` Bounce`` thành` `1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
 msgid ""
@@ -2520,6 +2730,9 @@ msgid ""
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
+"Nhấn \"Play\" và nhận thấy rằng tất cả các quả bóng được instance bây giờ "
+"nảy hơn nhiều. Vì các quả bóng được điều khiển dựa trên scene đã lưu, nên "
+"các thay đổi đối với scene đó sẽ ảnh hưởng đến tất cả các trường hợp."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
 msgid ""
@@ -2529,6 +2742,12 @@ msgid ""
 "to make it unique. Click on the down arrow and select \"Make Unique\". Set "
 "its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
+"Bạn cũng có thể điều chỉnh các instance riêng lẻ. Đặt giá trị Bounce trở lại "
+"`` 0`` và sau đó trong `` Main`` scene, chọn một trong những quả bóng được "
+"instance. Các tài nguyên như `` PhysicsMaterial`` được chia sẻ giữa các "
+"instance theo mặc định, vì vậy chúng ta cần làm cho nó trở nên độc nhất duy "
+"nhất. Nhấp vào mũi tên xuống và chọn \"Make Unique\". Đặt `` Bounce`` thành "
+"`` 1`` và nhấn \"Play\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:115
 msgid ""
@@ -2539,13 +2758,19 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
+"Lưu ý rằng nút \"revert\" (trở lại) màu xám xuất hiện bên cạnh thuộc tính "
+"được điều chỉnh. Khi có nút này, điều đó có nghĩa là bạn đã sửa đổi một "
+"thuộc tính trong cảnh được kích hoạt để ghi đè giá trị của nó trong scene đã "
+"lưu. Ngay cả khi thuộc tính đó được sửa đổi trong cảnh ban đầu, giá trị tùy "
+"chỉnh sẽ vẫn còn. Nhấn nút revert sẽ khôi phục thuộc tính về giá trị trong "
+"cảnh đã lưu."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:123
 #: ../../docs/getting_started/step_by_step/signals.rst:208
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:214
 msgid "Conclusion"
-msgstr ""
+msgstr "Kết luận"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:125
 msgid ""
@@ -2553,36 +2778,44 @@ msgid ""
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_instancing_continued`."
 msgstr ""
+"Instance có thể hữu ích khi bạn muốn tạo nhiều bản sao của cùng một đối "
+"tượng. Cũng có thể tạo các instance trong code (mã) bằng cách sử dụng "
+"GDScript, xem: ref: `doc_instANCE_continued`."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
-msgstr ""
+msgstr "Instance (tiếp theo)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
+#, fuzzy
 msgid "Recap"
-msgstr ""
+msgstr "Tóm tắt"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
 msgstr ""
+"Instance có nhiều công dụng tiện dụng. Trong nháy mắt, với instance bạn có:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
-msgstr ""
+msgstr "Khả năng chia nhỏ các scene và làm cho chúng dễ quản lý hơn."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
-msgstr ""
+msgstr "Một công cụ để quản lý và chỉnh sửa nhiều instance node cùng một lúc."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:13
 msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
+"Một cách để tổ chức và nhúng các phần trò chơi phức tạp hoặc thậm chí các UI "
+"(trong Godot, thành phần UI cũng là các node)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:17
+#, fuzzy
 msgid "Design language"
-msgstr ""
+msgstr "Ngôn ngữ thiết kế"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
 msgid ""
@@ -2590,6 +2823,10 @@ msgid ""
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
+"Nhưng sức mạnh lớn nhất đi kèm với các instance scene là nó hoạt động như "
+"một ngôn ngữ thiết kế tuyệt vời. Điều này phân biệt Godot với tất cả các "
+"engine khác ngoài kia. Godot được thiết kế từ mặt đất xung quanh khái niệm "
+"này."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -2599,17 +2836,29 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
+"Khi làm trò chơi với Godot, cách tiếp cận được đề xuất là loại bỏ hầu hết "
+"các mẫu thiết kế phổ biến, chẳng hạn như sơ đồ MVC hoặc sơ đồ Entity-"
+"Relationship diagrams, và thay vào đó hãy nghĩ về các scene của bạn theo "
+"cách tự nhiên hơn. Bắt đầu bằng cách tưởng tượng các yếu tố có thể nhìn thấy "
+"trong trò chơi của bạn, những yếu tố có thể được đặt tên không chỉ bởi một "
+"lập trình viên, mà bởi bất kỳ ai."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:30
+#, fuzzy
 msgid "For example, here's how a simple shooter game could be imagined:"
 msgstr ""
+"Ví dụ, đây là cách một trò chơi bắn súng đơn giản có thể được tưởng tượng:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:34
+#, fuzzy
 msgid ""
 "You can come up with a diagram like this for almost any kind of game. Write "
 "down the parts of the game that you can visualize, and then add arrows to "
 "represent ownership of one component by another."
 msgstr ""
+"Bạn có thể đưa ra một sơ đồ như thế này cho hầu hết mọi loại trò chơi. Viết "
+"xuống các phần của trò chơi mà bạn có thể hình dung, sau đó thêm mũi tên để "
+"thể hiện quyền sở hữu của một thành phần khác."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:38
 msgid ""
@@ -2618,6 +2867,10 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"Khi bạn có một sơ đồ như thế này, quy trình được đề xuất để tạo trò chơi là "
+"tạo scene cho từng thành phần được liệt kê trong sơ đồ. Bạn sẽ sử dụng "
+"instance (bằng code hoặc trực tiếp trong editor - trình chỉnh sửa) cho các "
+"mối quan hệ sở hữu."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
 msgid ""
@@ -2629,12 +2882,22 @@ msgid ""
 "design based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
+"Rất nhiều thời gian dành cho các trò chơi lập trình (hoặc phần mềm nói "
+"chung) là dành cho việc thiết kế một kiến trúc và các thành phần trò chơi "
+"phù hợp với kiến trúc đó. Thiết kế dựa trên các scene thay thế cách tiếp cận "
+"đó và làm cho sự phát triển nhanh hơn và đơn giản hơn, cho phép bạn tập "
+"trung vào logic trò chơi. Bởi vì hầu hết các thành phần trò chơi ánh xạ trực "
+"tiếp đến một scene, sử dụng thiết kế dựa trên khởi tạo scene có nghĩa là cần "
+"ít những kiến trúc khác."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:48
+#, fuzzy
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
+"Chúng ta hãy xem xét thêm một ví dụ, hơi phức tạp hơn, ví dụ về một trò chơi "
+"kiểu thế giới mở với nhiều tài sản và các yếu tố lồng nhau:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:53
 msgid ""
@@ -2643,6 +2906,10 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"Hãy nhìn vào yếu tố của căn phòng. Hãy nói rằng chúng ta đã bắt đầu ở đó. "
+"Chúng tôi có thể tạo ra một vài scene căn phòng khác nhau, với sự sắp xếp "
+"khác nhau của đồ nội thất (cũng là cảnh) trong đó. Sau đó, chúng tôi có thể "
+"làm một scene nhà, kết nối các phòng để tạo nên nội thất của nó."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:58
 msgid ""
@@ -2650,6 +2917,10 @@ msgid ""
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"Sau đó, chúng ta có thể tạo nên một khung cảnh thành cổ (citadel), được tạo "
+"nên từ nhiều ngôi nhà có instance. Sau đó, chúng ta có thể bắt đầu làm việc "
+"trên địa hình bản đồ thế giới (world map terrain), và thêm tòa thành "
+"(citadel) vào đó."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:62
 msgid ""
@@ -2657,6 +2928,9 @@ msgid ""
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"Sau đó, chúng ta có thể tạo ra các scene đại diện cho lính canh (guard) (và "
+"các NPC khác) và thêm chúng vào thành cổ. Kết quả là, họ sẽ được gián tiếp "
+"thêm vào tổng thể trò chơi thế giới."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:66
 msgid ""
@@ -2667,10 +2941,17 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"Với Godot, thật dễ dàng để lặp lại trò chơi của bạn như thế này, vì tất cả "
+"những gì bạn cần làm là tạo và ví dụ nhiều scene hơn. Hơn nữa, UI editor "
+"được thiết kế thân thiện với người dùng cho cả lập trình viên và người không "
+"lập trình. Một quy trình phát triển nhóm điển hình có thể có sự tham gia của "
+"các nghệ sĩ 2D hoặc 3D, nhà thiết kế cấp độ, nhà thiết kế trò chơi và nhà "
+"làm phim hoạt hình, tất cả đều làm việc với giao diện editor."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
+#, fuzzy
 msgid "Information overload!"
-msgstr ""
+msgstr "Quá tải thông tin!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:75
 msgid ""
@@ -2678,13 +2959,20 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"Rất nhiều thông tin cấp cao, khó rơi vào bạn tất cả cùng một lúc. Tuy nhiên, "
+"phần quan trọng của hướng dẫn này là tạo ra nhận thức về cách các scene và "
+"instance được sử dụng trong các dự án thực tế."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:79
+#, fuzzy
 msgid ""
 "Everything discussed here will become second nature to you once you start "
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and go on to the next tutorial!"
 msgstr ""
+"Mọi thứ được thảo luận ở đây sẽ trở thành bản chất thứ hai đối với bạn một "
+"khi bạn bắt đầu làm game và đưa những khái niệm này vào thực tế. Ngay bây "
+"giờ, đừng lo lắng về nó quá nhiều, và đi đến hướng dẫn tiếp theo!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
 msgid ""
@@ -2692,12 +2980,20 @@ msgid ""
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
+"Trước Godot 3.0, lựa chọn duy nhất để viết (script) kịch bản cho một trò "
+"chơi là sử dụng: ref: `GDScript <doc_gdscript>`. Ngày nay, Godot có bốn ngôn "
+"ngữ chính thức (vâng, bốn!) Và khả năng thêm ngôn ngữ kịch bản bổ sung một "
+"cách linh hoạt!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
+#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
+"Điều này thật tuyệt, chủ yếu là do số lượng lớn tính linh hoạt được cung "
+"cấp, nhưng nó cũng làm cho công việc hỗ trợ ngôn ngữ của chúng tôi trở nên "
+"khó khăn hơn."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
 msgid ""
@@ -2707,6 +3003,12 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
+"Tuy nhiên, ngôn ngữ \"chính\" trong Godot là GDScript và VisualScript. Lý do "
+"chính để chọn chúng là mức độ tích hợp của chúng với Godot, vì điều này làm "
+"cho trải nghiệm mượt mà hơn; cả hai đều có tích hợp trình soạn thảo khéo "
+"léo, trong khi C # và C ++ cần được chỉnh sửa trong một IDE riêng. Nếu bạn "
+"là một fan hâm mộ lớn của các ngôn ngữ tĩnh, thay vào đó hãy sử dụng C # và "
+"C ++."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 #: ../../docs/getting_started/scripting/gdscript/index.rst:2
@@ -2720,49 +3022,70 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:249
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:261
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:321
+#, fuzzy
 msgid "GDScript"
-msgstr ""
+msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
+#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
+": ref: `GDScript <doc_gdscript>`, như đã đề cập ở trên, ngôn ngữ chính được "
+"sử dụng trong Godot. Sử dụng nó có một số điểm tích cực so với các ngôn ngữ "
+"khác do tích hợp cao với Godot:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
+#, fuzzy
 msgid ""
 "It's simple, elegant, and designed to be familiar for users of other "
 "languages such as Lua, Python, Squirrel, etc."
 msgstr ""
+"Nó đơn giản, thanh lịch và được thiết kế quen thuộc với người dùng các ngôn "
+"ngữ khác như Lua, Python, Squirrel, v.v."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
+#, fuzzy
 msgid "Loads and compiles blazingly fast."
-msgstr ""
+msgstr "Tải và biên dịch nhanh chóng."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
 "The editor integration is a pleasure to work with, with code completion for "
 "nodes, signals, and many other items pertaining to the scene being edited."
 msgstr ""
+"Tích hợp trình chỉnh sửa là một niềm vui để làm việc, với việc hoàn thành mã "
+"cho các node, signal (tín hiệu ) và nhiều mục khác liên quan đến scene đang "
+"được chỉnh sửa."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:31
+#, fuzzy
 msgid ""
 "Has vector types built-in (such as Vectors, transforms, etc.), making it "
 "efficient for heavy use of linear algebra."
 msgstr ""
+"Có các loại vectơ tích hợp (như vectơ, biến đổi, v.v.), làm cho nó hiệu quả "
+"khi sử dụng nhiều đại số tuyến tính."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
 msgid ""
 "Supports multiple threads as efficiently as statically typed languages - one "
 "of the limitations that made us avoid VMs such as Lua, Squirrel, etc."
 msgstr ""
+"Hỗ trợ nhiều luồng hiệu quả như các ngôn ngữ được nhập tĩnh - một trong "
+"những hạn chế khiến chúng tôi tránh các VMs như Lua, Squirrel, v.v."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:33
+#, fuzzy
 msgid ""
 "Uses no garbage collector, so it trades a small bit of automation (most "
 "objects are reference counted anyway), by determinism."
 msgstr ""
+"Sử dụng không có trình thu gom rác, do đó, nó giao dịch một chút tự động hóa "
+"(hầu hết các đối tượng đều được tham chiếu tính theo cách nào), theo tính "
+"xác định."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:34
 msgid ""
@@ -2770,24 +3093,34 @@ msgid ""
 "GDNative) if more performance is required, all without recompiling the "
 "engine."
 msgstr ""
+"Bản chất động của nó giúp dễ dàng tối ưu hóa các phần mã trong C ++ (thông "
+"qua GDNative) nếu cần nhiều hiệu suất hơn, tất cả mà không cần biên dịch lại "
+"engine."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:36
+#, fuzzy
 msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
+"Nếu bạn chưa quyết định và có kinh nghiệm về lập trình, đặc biệt là các ngôn "
+"ngữ được nhập động, hãy truy cập GDScript!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 #: ../../docs/getting_started/scripting/visual_script/index.rst:2
 msgid "VisualScript"
-msgstr ""
+msgstr "VisualScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:42
+#, fuzzy
 msgid ""
 "Beginning with 3.0, Godot offers :ref:`Visual "
 "Scripting<doc_what_is_visual_script>`. This is a typical implementation of a "
 "\"blocks and connections\" language, but adapted to how Godot works."
 msgstr ""
+"Bắt đầu với 3.0, Godot cung cấp: ref: `Visual Scripting "
+"<doc_what_is_visual_script>`. Đây là cách triển khai điển hình của ngôn ngữ "
+"\"khối và kết nối\", nhưng thích nghi với cách thức hoạt động của Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:46
 msgid ""
@@ -2795,31 +3128,47 @@ msgid ""
 "experienced developers who want to make parts of the code more accessible to "
 "others, like game designers or artists."
 msgstr ""
+"Visual script là một công cụ tuyệt vời cho những người không chuyên lập "
+"trình, hoặc thậm chí cho các nhà phát triển có kinh nghiệm muốn làm cho các "
+"phần của mã dễ tiếp cận hơn với những người khác, như các nhà thiết kế trò "
+"chơi hoặc nghệ sĩ."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:50
+#, fuzzy
 msgid ""
 "It can also be used by programmers to build state machines or custom visual "
 "node workflows - for example, a dialogue system."
 msgstr ""
+"Nó cũng có thể được sử dụng bởi các lập trình viên để xây dựng các máy trạng "
+"thái hoặc quy trình làm việc của nút trực quan tùy chỉnh - ví dụ: một hệ "
+"thống đối thoại."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:55
 msgid ".NET / C#"
-msgstr ""
+msgstr ".NET / C #"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:57
+#, fuzzy
 msgid ""
 "As Microsoft's C# is a favorite amongst game developers, we have added "
 "official support for it. C# is a mature language with tons of code written "
 "for it, and support was added thanks to a generous donation from Microsoft."
 msgstr ""
+"Vì C # của Microsoft được các nhà phát triển trò chơi yêu thích, chúng tôi "
+"đã thêm hỗ trợ chính thức cho nó. C # là một ngôn ngữ trưởng thành với hàng "
+"tấn mã được viết cho nó và hỗ trợ đã được thêm vào nhờ vào sự đóng góp hào "
+"phóng từ Microsoft."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:62
 msgid ""
 "It has an excellent tradeoff between performance and ease of use, although "
 "one must be aware of its garbage collector."
 msgstr ""
+"Nó có một sự đánh đổi tuyệt vời giữa hiệu suất và dễ sử dụng, mặc dù người "
+"ta phải nhận thức được công cụ thu gom rác của nó."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:65
+#, fuzzy
 msgid ""
 "Since Godot uses the `Mono <https://mono-project.com>`_ .NET runtime, in "
 "theory any third-party .NET library or framework can be used for scripting "
@@ -2827,41 +3176,63 @@ msgid ""
 "programming language, such as F#, Boo or ClojureCLR. In practice however, C# "
 "is the only officially supported .NET option."
 msgstr ""
+"Vì Godot sử dụng `Mono <https://mono-project.com>` _ .NET runtime, theo lý "
+"thuyết, mọi thư viện hoặc khung .NET của bên thứ ba đều có thể được sử dụng "
+"để viết kịch bản trong Godot, cũng như bất kỳ Cơ sở hạ tầng ngôn ngữ chung "
+"nào- ngôn ngữ lập trình tuân thủ, chẳng hạn như F #, Boo hoặc ClojureCLR. "
+"Tuy nhiên, trên thực tế, C # là tùy chọn .NET được hỗ trợ chính thức duy "
+"nhất."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:71
 msgid "GDNative / C++"
-msgstr ""
+msgstr "GDNative / C ++"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:73
+#, fuzzy
 msgid ""
 "Finally, one of our brightest additions for the 3.0 release: GDNative allows "
 "scripting in C++ without needing to recompile (or even restart) Godot."
 msgstr ""
+"Cuối cùng, một trong những bổ sung sáng giá nhất của chúng tôi cho phiên bản "
+"3.0: GDNative cho phép tạo kịch bản trong C ++ mà không cần phải biên dịch "
+"lại (hoặc thậm chí khởi động lại) Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
+#, fuzzy
 msgid ""
 "Any C++ version can be used, and mixing compiler brands and versions for the "
 "generated shared libraries works perfectly, thanks to our use of an internal "
 "C API Bridge."
 msgstr ""
+"Bất kỳ phiên bản C ++ nào cũng có thể được sử dụng và trộn các thương hiệu "
+"và phiên bản trình biên dịch cho các thư viện chia sẻ được tạo ra hoạt động "
+"hoàn hảo, nhờ vào việc chúng tôi sử dụng Cầu API C nội bộ."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
+#, fuzzy
 msgid ""
 "This language is the best choice for performance and does not need to be "
 "used throughout an entire game, as other parts can be written in GDScript or "
 "Visual Script. However the API is clear and easy to use as it resembles, "
 "mostly, Godot's actual C++ API."
 msgstr ""
+"Ngôn ngữ này là lựa chọn tốt nhất cho hiệu suất và không cần sử dụng trong "
+"toàn bộ trò chơi, vì các phần khác có thể được viết bằng GDScript hoặc "
+"Visual Script. Tuy nhiên, API rõ ràng và dễ sử dụng vì nó giống với API C ++ "
+"thực tế của Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
+#, fuzzy
 msgid ""
 "More languages can be made available through the GDNative interface, but "
 "keep in mind we don't have official support for them."
 msgstr ""
+"Nhiều ngôn ngữ có thể được cung cấp qua giao diện GDNative, nhưng hãy nhớ "
+"rằng chúng tôi không có hỗ trợ chính thức cho chúng."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
 msgid "Scripting a scene"
-msgstr ""
+msgstr "Script một scene"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:92
 msgid ""
@@ -2869,87 +3240,106 @@ msgid ""
 "button and a label, where pressing the button will update the label. This "
 "will demonstrate:"
 msgstr ""
+"Đối với phần còn lại của hướng dẫn này, chúng tôi sẽ thiết lập một cảnh GUI "
+"bao gồm một nút và label, trong đó nhấn nút sẽ cập nhật label. Điều này sẽ "
+"chứng minh:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:96
 msgid "Writing a script and attaching it to a node."
-msgstr ""
+msgstr "Viết một script (kịch bản) và gắn nó vào một node."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:97
 msgid "Hooking up UI elements via signals."
-msgstr ""
+msgstr "Kết nối các yếu tố UI thông qua các signal (tín hiệu)."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:98
 msgid "Writing a script that can access other nodes in the scene."
-msgstr ""
+msgstr "Viết một script có thể truy cập các node khác trong scene."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
+#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
+"Trước khi tiếp tục, vui lòng đảm bảo đọc: ref: `GDScript <doc_gdscript>`. Đó "
+"là một ngôn ngữ được thiết kế đơn giản và tài liệu tham khảo ngắn, vì vậy sẽ "
+"không mất hơn vài phút để có cái nhìn tổng quan về các khái niệm."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
 #: ../../docs/tutorials/animation/introduction_2d.rst:112
 msgid "Scene setup"
-msgstr ""
+msgstr "Thiết lập scene"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
 msgstr ""
+"Sử dụng hộp thoại \"Add Child Node\" được truy cập từ tab Scene (hoặc bằng "
+"cách nhấn `` Ctrl + A``) để tạo cấu trúc phân cấp với các node sau:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
 msgid "Panel"
-msgstr ""
+msgstr "Panel (bảng)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:112
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:144
 msgid "Label"
-msgstr ""
+msgstr "Label (nhãn)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr ""
+msgstr "Button (nút, phím)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"
-msgstr ""
+msgstr "Scene tree nên trông như thế này:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
 msgid ""
 "Use the 2D editor to position and resize the Button and Label so that they "
 "look like the image below. You can set the text from the Inspector tab."
 msgstr ""
+"Sử dụng editor 2D để chỉnh vị trí và thay đổi kích thước Button và Label sao "
+"cho chúng trông giống như hình ảnh bên dưới. Bạn có thể đặt văn bản từ tab "
+"Inspector."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:124
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
-msgstr ""
+msgstr "Cuối cùng, lưu scene với một tên như `` sayhello.tscn``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:129
 msgid "Adding a script"
-msgstr ""
+msgstr "Thêm một script"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:131
 msgid ""
 "Right click on the Panel node, then select \"Attach Script\" from the "
 "context menu:"
 msgstr ""
+"Nhấp chuột phải vào node Panel, sau đó chọn \"Attach Script\" từ menu "
+"context:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:136
 msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
+"Hộp thoại tạo script sẽ bật lên. Hộp thoại này cho phép bạn đặt ngôn ngữ của "
+"scritp, tên lớp (class) và các tùy chọn liên quan khác."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
+#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
+"Trong GDScript, chính tệp đại diện cho lớp, vì vậy trường tên lớp không thể "
+"chỉnh sửa."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
 msgid ""
@@ -2957,10 +3347,13 @@ msgid ""
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
+"Node chúng ta đính kèm script vào là một panel, vì vậy trường Kế thừa sẽ tự "
+"động được điền vào \"Panel\". Đây là những gì chúng ta muốn, vì mục tiêu của "
+"script là mở rộng chức năng của node Panel của chúng ta."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:146
 msgid "Finally, enter a path name for the script and select Create:"
-msgstr ""
+msgstr "Cuối cùng, nhập tên đường dẫn cho tập lệnh và chọn Create:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:150
 msgid ""
@@ -2968,6 +3361,9 @@ msgid ""
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
 "script property under Inspector:"
 msgstr ""
+"Script sau đó sẽ được tạo và thêm vào node. Bạn có thể thấy đây là biểu "
+"tượng \"Open script\" bên cạnh node trong tab Scene, cũng như trong thuộc "
+"tính script trong Inspector:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
 msgid ""
@@ -2975,6 +3371,9 @@ msgid ""
 "highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
+"Để chỉnh sửa script, chọn một trong hai nút này, cả hai nút được tô sáng đỏ "
+"trong hình trên. Điều này sẽ đưa bạn đến trình chỉnh sửa script, trong đó "
+"một mẫu mặc định (default template) sẽ được đưa vào:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -2982,10 +3381,13 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
+"Không có quá nhiều. Hàm `` _ ready() `` được gọi khi node và tất cả các phần "
+"tử con của nó đi vào scene hoạt động. ** Lưu ý: ** `` _ready() `` không phải "
+"là hàm constructor; thay vào đó, hàm constructor là `` _init () ``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:166
 msgid "The role of the script"
-msgstr ""
+msgstr "Vai trò của script"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:168
 msgid ""
@@ -2994,10 +3396,15 @@ msgid ""
 "siblings, and so on. The local scope of the script is the node. In other "
 "words, the script inherits the functions provided by that node."
 msgstr ""
+"Một script thêm hành vi (behavior) cho một node. Nó được sử dụng để kiểm "
+"soát cách thức hoạt động của node cũng như cách nó tương tác với các node "
+"khác: con, cha mẹ, anh chị em, (children, parent, siblings) v.v. Phạm vi "
+"thừa kế của script là node. Nói cách khác, script kế thừa các hàm được cung "
+"cấp bởi node đó."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:179
 msgid "Handling a signal"
-msgstr ""
+msgstr "Xử lý tín hiệu (signal)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:181
 msgid ""
@@ -3006,6 +3413,11 @@ msgid ""
 "mostly in GUI nodes, although other nodes have them too, and you can even "
 "define custom signals in your own scripts."
 msgstr ""
+"Signal được \"phát ra\" (emit) khi một số loại hành động cụ thể xảy ra và "
+"chúng có thể được kết nối (connect) với bất kỳ chức năng nào của bất kỳ "
+"trường hợp script nào. Signal được sử dụng chủ yếu trong các node GUI, mặc "
+"dù các node khác cũng có chúng và thậm chí bạn có thể xác định signal tùy "
+"chỉnh trong script của riêng mình."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:186
 msgid ""
@@ -3014,18 +3426,28 @@ msgid ""
 "the second part. For the first part, Godot provides two ways to create "
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
+"Trong bước này, chúng tôi sẽ kết nối signal \"pressed\" với chức năng, hàm "
+"tùy chỉnh. Hình thành các kết nối là phần đầu tiên và xác định chức năng tùy "
+"chỉnh là phần thứ hai. Đối với phần đầu tiên, Godot cung cấp hai cách để tạo "
+"kết nối: thông qua giao diện trực quan mà trình soạn thảo cung cấp hoặc "
+"thông qua code."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:191
 msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
 msgstr ""
+"Mặc dù chúng tôi sẽ sử dụng phương thức code cho phần còn lại của loạt bài "
+"hướng dẫn này, chúng ta hãy trình bày cách giao diện trình soạn thảo hoạt "
+"động để tham khảo trong tương lai."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:194
 msgid ""
 "Select the Button node in the scene tree and then select the \"Node\" tab. "
 "Next, make sure that you have \"Signals\" selected."
 msgstr ""
+"Chọn Button node trong scene tree và sau đó chọn tab \"Node\". Tiếp theo, "
+"hãy chắc chắn rằng bạn đã chọn \"Signals\"."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:199
 msgid ""
@@ -3033,6 +3455,8 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
+"Nếu sau đó bạn chọn \"pressed()\" trong \"BaseButton\" và nhấp vào nút "
+"\"Connect...\" ở dưới cùng bên phải, bạn sẽ mở hộp thoại tạo kết nối."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:204
 msgid ""
@@ -3040,6 +3464,10 @@ msgid ""
 "node which implements the method you want to trigger (represented here as a "
 "NodePath) and the name of the method to trigger."
 msgstr ""
+"Ở phía dưới bên trái là những điều quan trọng bạn cần để tạo kết nối: một "
+"node thực hiện method (phương thức) bạn muốn trigger (kích hoạt) (được biểu "
+"thị ở đây là NodePath) và tên của  method to trigger (phương thức để kích "
+"hoạt)."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:208
 msgid ""
@@ -3048,6 +3476,10 @@ msgid ""
 "select a node, the NodePath at the bottom will automatically update to point "
 "to a relative path from the emitting node to the selected node."
 msgstr ""
+"Phần trên cùng bên trái hiển thị danh sách các node của scene của bạn với "
+"tên của node phát ra được tô sáng màu đỏ. Chọn node \"Panel\" ở đây. Khi bạn "
+"chọn một node, NodePath ở phía dưới sẽ tự động cập nhật để trỏ đến một đường "
+"dẫn tương đối từ nút phát đến node đã chọn."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:213
 msgid ""
@@ -3056,6 +3488,10 @@ msgid ""
 "do have the \"Make Function\" check button checked, then the editor will "
 "generate the function for you before setting up the connection."
 msgstr ""
+"Theo default (mặc định), tên method sẽ chứa tên của node phát (\"Button\" "
+"trong trường hợp này), dẫn đến `` _on_ [EmitterNode] _ [signal_name] ``. Nếu "
+"bạn đã chọn node kiểm tra \"Make Function\", thì trình chỉnh sửa sẽ tạo chức "
+"năng cho bạn trước khi thiết lập kết nối."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:218
 msgid ""
@@ -3063,6 +3499,9 @@ msgid ""
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
+"Và điều đó kết luận hướng dẫn về cách sử dụng giao diện trực quan. Tuy "
+"nhiên, đây là một hướng dẫn về script, vì vậy để học hỏi, hãy đi sâu vào quy "
+"trình thủ công!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:222
 msgid ""
@@ -3071,12 +3510,18 @@ msgid ""
 "<class_Node_method_get_node>`. This function uses paths to fetch nodes "
 "anywhere in the scene, relative to the node that owns the script."
 msgstr ""
+"Để thực hiện điều này, chúng tôi sẽ giới thiệu một hàm có lẽ được các lập "
+"trình viên Godot sử dụng nhiều nhất :: ref: `Node.get_node () "
+"<class_Node_method_get_node>`. Hàm này sử dụng các đường dẫn để tìm nạp các "
+"node ở bất cứ đâu trong scene, liên quan đến node sở hữu script."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:227
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
+"Để thuận tiện, hãy xóa mọi thứ bên dưới `` extends Panel``. Bạn sẽ điền phần "
+"còn lại của script theo cách thủ công."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:230
 msgid ""
@@ -3084,29 +3529,34 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
+"Vì Button và Label  là anh em trong Bảng  nơi script được đính kèm, bạn có "
+"thể tìm nạp Button bằng cách nhập nội dung bên dưới hàm `` _ready() ``:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:247
+#, fuzzy
 msgid "Next, write a function which will be called when the button is pressed:"
-msgstr ""
+msgstr "Tiếp theo, viết một hàm sẽ được gọi khi nhấn nút:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:262
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
+"Cuối cùng, kết nối signal \"pressed\" của node với ``_ready() `` bằng cách "
+"sử dụng: ref: `Object.connect () <class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:278
 msgid "The final script should look like this:"
-msgstr ""
+msgstr "Script cuối cùng sẽ trông như thế này:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:311
 msgid ""
 "Run the scene and press the button. You should get the following result:"
-msgstr ""
+msgstr "Chạy scene và nhấn nút. Bạn sẽ nhận được kết quả sau:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:315
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr ""
+msgstr "Tại sao, xin chào! Chúc mừng việc script scene đầu tiên của bạn."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:319
 msgid ""
@@ -3115,17 +3565,28 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
+"Một sự hiểu lầm phổ biến liên quan đến hướng dẫn này là cách `` get_node "
+"(path) `` hoạt động. Đối với một node đã cho, `` get_node (path) `` tìm kiếm "
+"các phần tử con ngay lập tức của nó. Trong đoạn code trên, điều này có nghĩa "
+"là Button phải là con của Panel. Nếu Button thay vì là con của Label, code "
+"để có được nó sẽ là:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:337
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr ""
+"Ngoài ra, hãy nhớ rằng các node được tham chiếu theo tên, không phải theo "
+"loại."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:341
+#, fuzzy
 msgid ""
 "The right-hand panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
+"Bảng bên phải của hộp thoại kết nối là để liên kết các giá trị cụ thể với "
+"các tham số của chức năng được kết nối. Bạn có thể thêm và loại bỏ các giá "
+"trị của các loại khác nhau."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:345
 msgid ""
@@ -3133,26 +3594,35 @@ msgid ""
 "empty by default. Feel free to read up on the ``Object.connect`` method for "
 "more information."
 msgstr ""
+"Cách tiếp cận code cũng cho phép điều này với tham số `` Array`` thứ 4 trống "
+"theo mặc định. Vui lòng đọc lên phương thức `` Object.connect`` để biết thêm "
+"thông tin."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr ""
+msgstr "Viết script (tiếp theo)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
+#, fuzzy
 msgid "Processing"
-msgstr ""
+msgstr "Đang xử lý"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"Một số hành động trong Godot được kích hoạt bởi các callback hoặc các hàm "
+"ảo, do đó không cần phải viết code chạy mọi lúc."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
+"Tuy nhiên, thông thường vẫn cần một script được xử lý trên mọi frame. Có hai "
+"loại xử lý: xử lý nhàn rỗi và xử lý vật lý (idle processing and physics "
+"processing)."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -3161,10 +3631,14 @@ msgid ""
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
+"Idle processing rỗi được kích hoạt khi phương thức: ref: `Node._ process () "
+"<class_Node_method__ process>` được tìm thấy trong một script. Nó có thể "
+"được tắt và bật với hàm: ref: `Node.set_ process () <class_Node_method_set_ "
+"process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "Phương thức này sẽ được gọi mỗi khi một frame được vẽ:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -3172,25 +3646,37 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"Điều quan trọng là phải nhớ rằng tần số mà `` _ process() `` sẽ được gọi phụ "
+"thuộc vào số lượng frame (khung hình) mỗi giây (FPS) mà ứng dụng của bạn "
+"đang chạy. Tỷ lệ này có thể thay đổi theo thời gian và thiết bị."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+#, fuzzy
 msgid ""
 "To help manage this variability the ``delta`` parameter contains the time "
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
+"Để giúp quản lý sự biến đổi này, tham số `` delta`` chứa thời gian trôi qua "
+"tính bằng giây, như một điểm nổi, vì cuộc gọi trước đó đến `` _ process () "
+"``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
+#, fuzzy
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
+"Tham số này có thể được sử dụng để đảm bảo mọi thứ luôn mất cùng thời gian, "
+"bất kể FPS của trò chơi."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
+"Ví dụ, chuyển động thường được nhân với delta thời gian để làm cho tốc độ di "
+"chuyển không đổi và độc lập với tốc độ khung hình."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""
@@ -3201,6 +3687,12 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
+"Physics processing với `` _physics_ process () `` là tương tự, nhưng nó nên "
+"được sử dụng cho các quá trình phải xảy ra trước mỗi bước vật lý, chẳng hạn "
+"như điều khiển một ký tự. Nó luôn chạy trước một bước vật lý và nó được gọi "
+"theo các khoảng thời gian cố định: 60 lần mỗi giây theo mặc định. Bạn có thể "
+"thay đổi khoảng thời gian từ Cài đặt dự án, trong Physics -> Common -> "
+"Physics Fps."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
@@ -3208,20 +3700,26 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
+"Tuy nhiên, hàm `` _ process() `` không được đồng bộ hóa với vật lý. Tốc độ "
+"khung hình của nó không phải là hằng số và phụ thuộc vào tối ưu hóa phần "
+"cứng và trò chơi. Việc thực hiện của nó được thực hiện sau bước vật lý trên "
+"các trò chơi đơn luồng."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
+"Một cách đơn giản để xem hàm `` _ process () `` tại nơi làm việc là tạo một "
+"scene với một node Label duy nhất, với đoạn script sau:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
-msgstr ""
+msgstr "Mà sẽ hiển thị một bộ đếm tăng dẫn sau mỗi từng khung."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
-msgstr "Nhóm"
+msgstr "Nhóm (Groups)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
 msgid ""
@@ -3230,25 +3728,38 @@ msgid ""
 "for organizing large scenes. There are two ways to add nodes to groups. The "
 "first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
+"Groups trong Godot làm việc như thẻ bạn có thể đã đi qua trong phần mềm "
+"khác. Một node có thể được thêm vào nhiều nhóm như mong muốn. Đây là một "
+"tính năng hữu ích để tổ chức các scene lớn. Có hai cách để thêm các node vào "
+"groups. Đầu tiên là từ giao diện người dùng UI, sử dụng nút Groups bên cạnh "
+"bảng Node:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"Và cách thứ hai là từ code. Đoạn script sau sẽ thêm nút hiện tại vào nhóm `` "
+"enemies`` ngay khi nó xuất hiện trong cây scene."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
+#, fuzzy
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_method_call_group>`:"
 msgstr ""
+"Bằng cách này, nếu người chơi bị phát hiện lẻn vào một căn cứ bí mật, tất cả "
+"kẻ thù có thể được thông báo về âm thanh báo động của nó bằng cách sử dụng: "
+"ref: `SceneTree.call_group () <class_SceneTree_method_call_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
+"Đoạn code trên gọi hàm `` player_was_discovered`` trên mọi thành viên của "
+"nhóm `` enemies``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
 msgid ""
@@ -3256,6 +3767,9 @@ msgid ""
 "ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
+"Cũng có thể lấy danh sách đầy đủ các node``enemies`` bằng cách gọi: ref: "
+"`SceneTree.get_nodes_in_group () "
+"<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
 msgid ""
@@ -3265,11 +3779,16 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you have some time!"
 msgstr ""
+"Lớp: ref: `SceneTree <class_SceneTree>` cung cấp nhiều phương thức hữu ích, "
+"như tương tác với các scene, phân cấp node của chúng và các nhóm node. Nó "
+"cho phép bạn dễ dàng chuyển scene hoặc tải lại chúng, thoát khỏi trò chơi "
+"hoặc tạm dừng và bỏ tạm dừng nó. Nó thậm chí đi kèm với các signal thú vị. "
+"Vì vậy, hãy kiểm tra nó nếu bạn có thời gian!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:157
 msgid "Notifications"
-msgstr ""
+msgstr "Thông báo"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:158
 msgid ""
@@ -3279,44 +3798,60 @@ msgid ""
 "`Object._notification() <class_Object_method__notification>` function in "
 "your script:"
 msgstr ""
+"Godot có một hệ thống thông báo. Chúng thường không cần thiết cho script, vì "
+"nó quá thấp và các hàm ảo được cung cấp cho hầu hết chúng. Thật tốt khi biết "
+"chúng tồn tại. Ví dụ: bạn có thể thêm một hàm: ref: `Object._notification () "
+"<class_Object_method__notification>` trong tập lệnh của bạn:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
+#, fuzzy
 msgid ""
 "The documentation of each class in the :ref:`Class Reference <toc-class-"
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overrideable functions."
 msgstr ""
+"Tài liệu của mỗi lớp trong: ref: `Class Reference <toc-class-ref>` hiển thị "
+"các thông báo mà nó có thể nhận được. Tuy nhiên, trong hầu hết các trường "
+"hợp, GDScript cung cấp các hàm ghi đè đơn giản hơn."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
 msgid "Overrideable functions"
-msgstr ""
+msgstr "Hàm chồng chéo (Overrideable functions)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
 msgid ""
 "Such overrideable functions, which are described as follows, can be applied "
 "to nodes:"
 msgstr ""
+"Các overrideable functions như vậy, được mô tả như sau, có thể được áp dụng "
+"cho các node:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
 msgstr ""
+"Như đã đề cập trước đây, tốt hơn là sử dụng các hàm này thay vì hệ thống "
+"thông báo."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
 msgid "Creating nodes"
-msgstr ""
+msgstr "Tạo các node"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:278
 msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
+"Để tạo một node từ code, hãy gọi phương thức `` .new () ``, giống như với "
+"bất kỳ kiểu dữ liệu dựa trên lớp nào khác. Ví dụ:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
 msgstr ""
+"Để xóa một node, có thể là bên trong hoặc bên ngoài scene, `` free () `` "
+"phải được sử dụng:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
 msgid ""
@@ -3324,6 +3859,10 @@ msgid ""
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
+"Khi một node được giải phóng, nó cũng giải phóng tất cả các node con của nó. "
+"Bởi vì điều này, việc xóa các nút thủ công đơn giản hơn nhiều so với nó xuất "
+"hiện. Giải phóng node cơ sở và mọi thứ khác trong cây con (subtree) sẽ biến "
+"mất cùng với nó."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
@@ -3332,28 +3871,40 @@ msgid ""
 "will crash the game. Running Godot with the debugger will often catch this "
 "case and warn you about it."
 msgstr ""
+"Một tình huống có thể xảy ra khi chúng ta muốn xóa một node hiện đang bị "
+"\"blocked\", bởi vì nó đang phát ra signal hoặc gọi một hàm. Điều này sẽ làm "
+"hỏng trò chơi (crash game). Chạy Godot với trình gỡ lỗi thường sẽ bắt trường "
+"hợp này và cảnh báo bạn về nó."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
+"Cách an toàn nhất để xóa một node là sử dụng: ref: `Node.queue_free () "
+"<class_Node_method_queue_free>`. Điều này xóa node an toàn trong thời gian "
+"rảnh."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
 msgid "Instancing scenes"
-msgstr ""
+msgstr "Instance  scene"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:347
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
+"Instance một scene từ code được thực hiện trong hai bước. Đầu tiên là tải "
+"scene từ ổ cứng của bạn:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:360
+#, fuzzy
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
+"Tải trước nó có thể thuận tiện hơn, vì nó xảy ra vào thời gian phân tích cú "
+"pháp (chỉ GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
 msgid ""
@@ -3363,6 +3914,11 @@ msgid ""
 "must be called. This will return the tree of nodes that can be added to the "
 "active scene:"
 msgstr ""
+"Nhưng `` scene`` chưa phải là một node. Nó được đóng gói trong một tài "
+"nguyên đặc biệt gọi là: ref: `PackedScene <class_PackedScene>`. Để tạo node "
+"thực sự, hàm: ref: `PackedScene.instance () "
+"<class_PackedScene_method_instance>` phải được gọi. Điều này sẽ trả về cây "
+"node có thể được thêm vào scene đang chọn:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid ""
@@ -3371,10 +3927,14 @@ msgid ""
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
+"Ưu điểm của quy trình hai bước này là một scene được đóng gói có thể được "
+"tải và sẵn sàng sử dụng để bạn có thể tạo nhiều instance như mong muốn. Điều "
+"này đặc biệt hữu ích để nhanh chóng instance một số kẻ thù, đạn và các thực "
+"thể khác trong scene được chọn."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "Đăng ký script như các lớp"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
 msgid ""
@@ -3382,6 +3942,9 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
+"Godot có tính năng \"Lớp script\" để đăng ký các script riêng lẻ với Trình "
+"chỉnh sửa. Theo mặc định, bạn chỉ có thể truy cập các script chưa được đặt "
+"tên bằng cách tải file trực tiếp."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
 msgid ""
@@ -3390,20 +3953,28 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
+"Bạn có thể đặt tên cho một script và đăng ký nó dưới dạng một loại trong "
+"trình soạn thảo với từ khóa ``class_name`` theo sau là tên của lớp. Bạn có "
+"thể thêm dấu phẩy và đường dẫn tùy chọn vào hình ảnh để sử dụng làm biểu "
+"tượng. Sau đó, bạn sẽ tìm thấy loại mới của mình trong hộp thoại Node hoặc "
+"Resource creation,."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
+#, fuzzy
 msgid "In Godot 3.1:"
-msgstr ""
+msgstr "Trong Godot 3.1:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"Chỉ GDScript và NativeScript, tức là, C ++ và các ngôn ngữ được cung cấp bởi "
+"GDNative khác, mới có thể đăng ký script."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
 msgid "Only GDScript creates global variables for each named script."
-msgstr ""
+msgstr "Chỉ GDScript tạo các biến toàn cục cho mỗi script được đặt tên."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:4
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1280
@@ -3412,7 +3983,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:695
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
-msgstr "Tín hiệu"
+msgstr "Tín hiệu (Signal)"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:9
 msgid ""
@@ -3421,12 +3992,18 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"Signal là phiên bản của Godot của mẫu * quan sát viên * (observer* pattern). "
+"Chúng cho phép một node gửi đi một thông điệp mà các node khác có thể lắng "
+"nghe và phản hồi. Ví dụ, thay vì liên tục kiểm tra một nút để xem nếu nó "
+"được nhấn, nút có thể phát ra tín hiệu khi nhấn."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"Bạn có thể đọc thêm về observer pattern ở đây: http://gameprogrammingpotypes."
+"com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
 msgid ""
@@ -3435,16 +4012,21 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
+"Signal là một cách để * tách rời * các đối tượng trò chơi của bạn, điều này "
+"dẫn đến mã được tổ chức tốt hơn và dễ quản lý hơn. Thay vì buộc các đối "
+"tượng trò chơi phải mong đợi các đối tượng khác luôn có mặt, thay vào đó "
+"chúng có thể phát ra các tín hiệu mà tất cả các đối tượng quan tâm có thể "
+"đăng ký và phản hồi."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
-msgstr ""
+msgstr "Dưới đây có vài ví dụ về cách dùng signal trong dự án của bạn."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
 msgid "Timer example"
-msgstr ""
+msgstr "Ví dụ timer"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -3452,6 +4034,10 @@ msgid ""
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
 "<class_Sprite>`. In the Scene dock, rename Node to TimerExample."
 msgstr ""
+"Để xem signals hoạt động thế nào, hãy thử sử dụng một nút « Trọng tài ».Hãy "
+"tạo một scene mới với một  Node và hai node con: một Timer và một tên :ref:"
+"`Sprite <class_Sprite>`. Ở màn hình scene, hãy thay đổi tên node thành điển "
+"TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -3460,10 +4046,14 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Đối với texture của Sprite, bạn có thể sử dụng icon Godot hoặc bất kỳ hình "
+"ảnh nào khác mà bạn thích. Làm như vậy bằng cách chọn `` Load`` trong menu "
+"thả xuống thuộc tính Texture của Sprite. Đính kèm script vào nút gốc, nhưng "
+"chưa thêm bất kỳ mã nào vào nó."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
-msgstr ""
+msgstr "Scene tree của bạn sẽ trông như thế này:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:38
 msgid ""
@@ -3471,6 +4061,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"Trong bảng thuộc tính của nút Timer, đánh dấu vào ô \"On\" bên cạnh * "
+"Autostart *. Điều này sẽ khiến bộ hẹn giờ bắt đầu tự động khi bạn chạy cảnh. "
+"Bạn có thể để * Wait Time * trong 1 giây."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:42
 msgid ""
@@ -3479,12 +4072,18 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
+"Bên cạnh tab \"Inspector\" là một tab có nhãn \"Node\". Nhấp vào tab này và "
+"bạn sẽ thấy tất cả các signal mà nút được chọn có thể phát ra. Trong trường "
+"hợp node Timer, cái chúng ta quan tâm là \"timeout\". Tín hiệu này được phát "
+"ra bất cứ khi nào Timer đạt đến `` 0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
+"Nhấp vào tín hiệu  \"timeout()\" signal và nhấp vào \"Connect...\". Bạn sẽ "
+"thấy cửa sổ sau, nơi bạn có thể xác định cách bạn muốn kết nối signal:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:54
 msgid ""
@@ -3493,12 +4092,18 @@ msgid ""
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
+"Ở phía bên trái, bạn sẽ thấy các node trong scene của mình và có thể chọn "
+"node mà bạn muốn \"nghe\" cho tín hiệu. Lưu ý rằng node Timer có màu đỏ - "
+"đây không phải là * lỗi, nhưng là một dấu hiệu trực quan cho thấy đó là node "
+"phát ra signal. Chọn node gốc."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
+"Node đích * phải * có script được đính kèm hoặc bạn sẽ nhận được thông báo "
+"lỗi."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:62
 msgid ""
@@ -3507,28 +4112,39 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"Ở dưới cùng của cửa sổ là một trường có nhãn \"Method In Node\" (phương thức "
+"trong nút). Đây là tên của hàm trong tập lệnh của node đích mà bạn muốn sử "
+"dụng. Theo mặc định, Godot sẽ tạo chức năng này bằng cách sử dụng quy ước "
+"đặt tên ``_on_<node_name>_<signal_name>`` nhưng bạn có thể thay đổi nó nếu "
+"muốn."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
+"Nhấp vào \"Connect\" và bạn sẽ thấy rằng   function (hàm) đã được tạo trong "
+"script:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:87
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"Bây giờ chúng tôi có thể thay thế mã giữ chỗ bằng bất kỳ mã nào chúng tôi "
+"muốn chạy khi nhận được signal. Hãy làm cho Sprite nhấp nháy:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:111
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"Chạy scene và bạn sẽ thấy Sprite nhấp nháy và tắt mỗi giây. Bạn có thể thay "
+"đổi thuộc tính *Wait Time* của Timer để thay đổi điều này."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:115
 msgid "Connecting signals in code"
-msgstr ""
+msgstr "Kết nối signal trong mã"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:117
 msgid ""
@@ -3536,12 +4152,17 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
+"Bạn cũng có thể thực hiện kết nối tín hiệu trong mã thay vì với trình chỉnh "
+"sửa. Điều này thường là cần thiết khi bạn kích hoạt các node thông qua mã và "
+"vì vậy bạn không thể sử dụng trình chỉnh sửa để tạo kết nối."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"Đầu tiên, ngắt kết nối tín hiệu bằng cách chọn kết nối trong tab \"Node\" "
+"của Timer và nhấp vào disconnect."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:126
 msgid ""
@@ -3551,24 +4172,30 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
+"Để tạo kết nối trong mã, chúng ta có thể sử dụng hàm ``connect``. Chúng tôi "
+"sẽ đặt nó trong ``_ready()`` để kết nối sẽ được thực hiện khi chạy. Cú pháp "
+"của hàm là `` <source_node> .connect (<signal_name>, <target_node>, "
+"<target_feft_name>) ``. Đây là mã cho kết nối Timer của chúng tôi:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:159
 msgid "Custom signals"
-msgstr ""
+msgstr "Tùy chỉnh signals (Custom signals)"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:161
 msgid "You can also declare your own custom signals in Godot:"
-msgstr ""
+msgstr "Bạn cũng có thể khai báo các custom signal của riêng bạn trong Godot:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:179
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
+"Sau khi được khai báo, các tín hiệu tùy chỉnh của bạn sẽ xuất hiện trong "
+"Inspector và có thể được kết nối giống như các tín hiệu tích hợp của node."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:182
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr ""
+msgstr "Để phát signal qua mã, hãy sử dụng hàm ``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
@@ -3577,23 +4204,33 @@ msgid ""
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
+"Nhiều loại node tích hợp của Godot cung cấp tín hiệu bạn có thể sử dụng để "
+"phát hiện các sự kiện. Ví dụ: an: ref: `Area2D <class_Area2D>` đại diện cho "
+"một đồng xu sẽ phát ra tín hiệu `` body_entered`` bất cứ khi nào cơ thể vật "
+"lý của người chơi (nhân vật) đi vào hình dạng va chạm của nó (đồng xu), cho "
+"phép bạn biết khi nào đồng xu được thu thập."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
+#, fuzzy
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
+"Trong phần tiếp theo ,: ref: `doc_your_first_game`, bạn sẽ xây dựng một trò "
+"chơi hoàn chỉnh bao gồm một số cách sử dụng tín hiệu để kết nối các thành "
+"phần trò chơi khác nhau."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
+#, fuzzy
 msgid "Your first game"
-msgstr ""
+msgstr "Trò chơi đầu tiên của bạn"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:10
 msgid "Overview"
-msgstr ""
+msgstr "Tổng quan"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:9
 msgid ""
@@ -3601,6 +4238,9 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
+"Hướng dẫn này sẽ chỉ bạn cách thực hiện dự án Godot đầu tiên của bạn. Bạn sẽ "
+"tìm hiểu cách trình soạn thảo Godot hoạt động, cách cấu trúc một dự án và "
+"cách xây dựng một trò chơi 2D."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -3608,39 +4248,55 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
+"Dự án này là một giới thiệu về Godot engine. Nó giả định rằng bạn đã có một "
+"số kinh nghiệm lập trình. Nếu bạn chưa quen với lập trình hoàn toàn, bạn nên "
+"bắt đầu ở đây :: ref: `doc_scripting`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
+#, fuzzy
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
+"Trò chơi có tên là \"Dodge the Creeps!\". Nhân vật của bạn phải di chuyển và "
+"tránh kẻ thù càng lâu càng tốt. Đây là bản xem trước của kết quả cuối cùng:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
+"**Tại sao 2D? ** Trò chơi 3D phức tạp hơn nhiều so với trò chơi 2D. Bạn nên "
+"bám sát 2D cho đến khi bạn hiểu rõ về quy trình phát triển trò chơi."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 #: ../../docs/development/cpp/configuring_an_ide.rst:182
 msgid "Project setup"
-msgstr ""
+msgstr "Thiết lập dự án"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
+#, fuzzy
 msgid ""
 "Launch Godot and create a new project. Then, download :download:"
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
+"Khởi động Godot và tạo một dự án mới. Sau đó, tải xuống: download: "
+"`dodge_assets.zip <files / dodge_assets.zip>` - hình ảnh và âm thanh bạn sẽ "
+"sử dụng để tạo trò chơi. Giải nén các tệp này vào thư mục dự án của bạn."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
+#, fuzzy
 msgid ""
 "For this tutorial, we will assume you are familiar with the editor. If you "
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
+"Đối với hướng dẫn này, chúng tôi sẽ cho rằng bạn quen thuộc với trình soạn "
+"thảo. Nếu bạn chưa đọc: ref: `doc_scenes_and_nodes`, hãy làm ngay bây giờ để "
+"được giải thích về việc thiết lập dự án và sử dụng trình soạn thảo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
 msgid ""
@@ -3648,10 +4304,14 @@ msgid ""
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
+"Trò chơi này sẽ sử dụng chế độ dọc, vì vậy chúng tôi cần điều chỉnh kích "
+"thước của cửa sổ trò chơi. Nhấp vào Project -> Project Settings -> Display -"
+"> Window và đặt \"Width\" thành `` 480`` và \"Height\" thành `` 720``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
+#, fuzzy
 msgid "Organizing the project"
-msgstr ""
+msgstr "Tổ chức dự án"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
 msgid ""
@@ -3662,27 +4322,40 @@ msgid ""
 "and scripts in the project's root folder, referred to as ``res://``.  You "
 "can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
+"Trong dự án này, chúng tôi sẽ thực hiện 3 cảnh độc lập: `` Player``, `` "
+"Mob`` và `` HUD``, chúng tôi sẽ kết hợp vào cảnh `` Main`` của trò chơi. "
+"Trong một dự án lớn hơn, có thể hữu ích khi tạo các thư mục để chứa các cảnh "
+"khác nhau và tập lệnh của chúng, nhưng đối với trò chơi tương đối nhỏ này, "
+"bạn có thể lưu cảnh và tập lệnh của mình trong thư mục gốc của dự án, được "
+"gọi là `` res: // ``. Bạn có thể thấy các thư mục dự án của mình trong "
+"FileSystem Dock ở góc dưới bên trái:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
-msgstr ""
+msgstr "Cảnh người chơi"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
+#, fuzzy
 msgid ""
 "The first scene we will make defines the ``Player`` object. One of the "
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
+"Cảnh đầu tiên chúng ta sẽ định nghĩa đối tượng `` Player``. Một trong những "
+"lợi ích của việc tạo cảnh Người chơi riêng là chúng tôi có thể kiểm tra "
+"riêng, ngay cả trước khi chúng tôi tạo các phần khác của trò chơi."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 msgid "Node structure"
-msgstr ""
+msgstr "Cấu trúc node"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:65
 msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
+"Để bắt đầu, nhấp vào node \"Add/Create a New Node\" và thêm node: ref: "
+"`Area2D <class_Area2D>` vào cảnh."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid ""
@@ -3691,6 +4364,10 @@ msgid ""
 "scene's root node. We can add additional nodes to the player to add "
 "functionality."
 msgstr ""
+"Với `` Area2D``, chúng ta có thể phát hiện các đối tượng chồng lấp hoặc chạy "
+"vào player. Thay đổi tên của nó thành `` Player`` bằng cách nhấp vào tên của "
+"node. Đây là node gốc của cảnh. Chúng tôi có thể thêm các node bổ sung cho "
+"player để thêm chức năng."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:75
 msgid ""
@@ -3699,22 +4376,32 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
+"Trước khi chúng tôi thêm bất kỳ node con khác nào vào node `` Player``, "
+"chúng tôi muốn đảm bảo rằng chúng tôi không vô tình di chuyển hoặc thay đổi "
+"kích thước chúng bằng cách nhấp vào chúng. Chọn nút và nhấp vào biểu tượng ở "
+"bên phải của khóa; tooltip của nó nói \"Chắc chắn rằng con của đối tượng "
+"không thể chọn được.\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:82
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
+"Lưu lại cảnh. Nhấp vào Scene -> Save hoặc nhấn `` Ctrl + S`` trên Windows / "
+"Linux hoặc `` Command + S`` trên Mac."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:84
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr ""
+msgstr "Đối với dự án này, chúng tôi sẽ tuân theo các quy ước đặt tên Godot."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:86
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
+"**GDScript**: Các lớp (node) sử dụng PascalCase, các biến và hàm sử dụng "
+"snake_case và các hằng sử dụng ALL_CAPS (Xem: ref: "
+"`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:90
 msgid ""
@@ -3723,10 +4410,14 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C #**: Các lớp, biến xuất và phương thức sử dụng PascalCase, trường riêng "
+"sử dụng _camelCase, biến cục bộ và tham số sử dụng camelCase (Xem: ref: "
+"`doc_c_sharp_styleguide`). Hãy cẩn thận để nhập tên phương thức chính xác "
+"khi kết nối tín hiệu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:97
 msgid "Sprite animation"
-msgstr ""
+msgstr "Hoạt hình Sprite (Sprite animation)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
 msgid ""
@@ -3739,6 +4430,14 @@ msgid ""
 "click \"[empty]\" -> \"New SpriteFrames\". This should automatically open "
 "the SpriteFrames panel."
 msgstr ""
+"Nhấp vào node ``Player`` và thêm node: ref: `AnimatedSprite "
+"<class_AnimatedSprite>` như là node con. ``AnimatedSprite`` sẽ xử lý sự xuất "
+"hiện và hình ảnh động cho player của chúng tôi. Lưu ý rằng có một biểu tượng "
+"cảnh báo bên cạnh node. Một``AnimatedSprite`` yêu cầu tài nguyên: ref: "
+"`SpriteFrames <class_SpriteFrames>`, đây là danh sách các hình ảnh động mà "
+"nó có thể hiển thị. Để tạo một cái, hãy tìm thuộc tính ``Frames`` trong  "
+"Inspector  và bấm \"[empty]\" -> \"New SpriteFrames\". Điều này sẽ tự động "
+"mở bảng SpriteFrames."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
@@ -3748,6 +4447,11 @@ msgid ""
 "``playerGrey_up[1/2]`` and ``playerGrey_walk[1/2]``, into the \"Animation "
 "Frames\" side of the panel:"
 msgstr ""
+"Bên trái là danh sách các hình ảnh động. Nhấp vào \"default\" và đổi tên "
+"thành \"right\". Sau đó nhấp vào nút \"Add\" để tạo hình động thứ hai có tên "
+"\"up\". Kéo hai hình ảnh cho mỗi hình ảnh động, được đặt tên là "
+"``playerGrey_up [1/2] `` và ``playerGrey_walk [1/2] ``, vào bên cạnh "
+"\"Animation Frames\" vào bên cạnh của bảng:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:117
 msgid ""
@@ -3756,6 +4460,10 @@ msgid ""
 "property to ``(0.5, 0.5)``. You can find it in the Inspector under the "
 "``Node2D`` heading."
 msgstr ""
+"Hình ảnh player hơi lớn so với cửa sổ trò chơi, vì vậy chúng tôi cần thu nhỏ "
+"chúng xuống. Nhấp vào node ``AnimatedSprite`` và đặt thuộc tính ``Scale`` "
+"thành `` (0,5, 0,5) ``. Bạn có thể tìm thấy nó trong Inspector dưới tiêu đề "
+"`` Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:124
 msgid ""
@@ -3766,14 +4474,21 @@ msgid ""
 "\"New CapsuleShape2D\".  Using the two size handles, resize the shape to "
 "cover the sprite:"
 msgstr ""
+"Cuối cùng, thêm một: ref: `CollisionShape2D <class_CollisionShape2D>` khi là "
+"con của `` Player``. Điều này sẽ xác định \"hitbox\" của player, hoặc giới "
+"hạn của khu vực va chạm của nó. Đối với nhân vật này, node `` "
+"CapsuleShape2D`` mang lại sự phù hợp nhất, vì vậy, bên cạnh \"Shape\" trong "
+"Inspector, nhấp vào \"[empty]\" \"->\"New CapsuleShape2D\". Sử dụng hai tay "
+"cầm kích thước, thay đổi kích thước hình dạng thành che sprite:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:133
+#, fuzzy
 msgid "When you're finished, your ``Player`` scene should look like this:"
-msgstr ""
+msgstr "Khi bạn kết thúc, cảnh `` Player`` của bạn sẽ giống như thế này:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:138
 msgid "Moving the player"
-msgstr ""
+msgstr "Di chuyển player"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:140
 msgid ""
@@ -3781,28 +4496,39 @@ msgid ""
 "node, so we'll add a script. Click the ``Player`` node and click the \"Add "
 "Script\" button:"
 msgstr ""
+"Bây giờ chúng tôi cần thêm một số chức năng mà chúng tôi không thể có được "
+"từ một node tích hợp, vì vậy chúng tôi sẽ thêm một tập lệnh. Nhấp vào nút `` "
+"Player`` và nhấp vào nút \"Thêm tập lệnh\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:146
 msgid ""
 "In the script settings window, you can leave the default settings alone. "
 "Just click \"Create\":"
 msgstr ""
+"Trong cửa sổ cài đặt tập lệnh, bạn có thể để các cài đặt mặc định. Chỉ cần "
+"nhấp vào \"Create\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:149
 msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the `language` drop down menu before hitting create."
 msgstr ""
+"Nếu bạn đang tạo tập lệnh C # hoặc các ngôn ngữ khác, hãy chọn ngôn ngữ từ "
+"trình đơn thả xuống `language 'trước khi nhấn tạo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:154
 msgid ""
 "If this is your first time encountering GDScript, please read :ref:"
 "`doc_scripting` before continuing."
 msgstr ""
+"Nếu đây là lần đầu tiên bạn làm việc với GDScript, vui lòng đọc: ref: "
+"`doc_scripting` trước khi tiếp tục."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:157
+#, fuzzy
 msgid "Start by declaring the member variables this object will need:"
 msgstr ""
+"Bắt đầu bằng cách khai báo các biến thành viên mà đối tượng này sẽ cần:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:178
 msgid ""
@@ -3813,6 +4539,12 @@ msgid ""
 "Variables\" section of the Inspector. Remember, if you change the value "
 "here, it will override the value written in the script."
 msgstr ""
+"Sử dụng từ khóa ``export`` trên biến đầu tiên ``speed`` cho phép chúng ta "
+"đặt giá trị của nó trong Inspector. Điều này có thể hữu ích cho các giá trị "
+"mà bạn muốn có thể điều chỉnh giống như các thuộc tính tích hợp của node. "
+"Nhấp vào node ``Player`` và bạn sẽ thấy thuộc tính hiện xuất hiện trong phần "
+"\"Script Variables\" của Inspector. Hãy nhớ rằng, nếu bạn thay đổi giá trị ở "
+"đây, nó sẽ ghi đè giá trị được ghi trong tập lệnh."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:185
 msgid ""
@@ -3821,12 +4553,19 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Nếu bạn đang sử dụng C #, bạn cần (tái) xây dựng các cụm dự án bất cứ khi "
+"nào bạn muốn xem các biến hoặc tín hiệu xuất mới. Bản dựng này có thể được "
+"kích hoạt thủ công bằng cách nhấp vào từ \"Mono\" ở dưới cùng của cửa sổ "
+"trình chỉnh sửa để hiển thị Bảng điều khiển Mono, sau đó nhấp vào nút "
+"\"Build Project\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
 "The ``_ready()`` function is called when a node enters the scene tree, which "
 "is a good time to find the size of the game window:"
 msgstr ""
+"Hàm ``_ready()`` được gọi khi một node đi vào scene tree, đây là thời điểm "
+"tốt để tìm kích thước của cửa sổ trò chơi:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:209
 msgid ""
@@ -3835,18 +4574,23 @@ msgid ""
 "of our game, which we expect will change often. For the player, we need to "
 "do the following:"
 msgstr ""
+"Bây giờ chúng ta có thể sử dụng hàm `` _ process () `` để xác định những gì "
+"player sẽ làm. `` _ process () `` được gọi trên mọi khung hình, vì vậy chúng "
+"tôi sẽ sử dụng nó để cập nhật các yếu tố trong trò chơi của chúng tôi, điều "
+"mà chúng tôi mong đợi sẽ thay đổi thường xuyên. Đối với player, chúng ta cần "
+"làm như sau:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:214
 msgid "Check for input."
-msgstr ""
+msgstr "Kiểm tra đầu vào."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:215
 msgid "Move in the given direction."
-msgstr ""
+msgstr "Di chuyển theo hướng đã cho."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:216
 msgid "Play the appropriate animation."
-msgstr ""
+msgstr "Bật hoạt hình thích hợp."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:218
 msgid ""
@@ -3857,12 +4601,21 @@ msgid ""
 "we will use the default events that are assigned to the arrow keys on the "
 "keyboard."
 msgstr ""
+"Đầu tiên, chúng ta cần kiểm tra các nút đầu vào - player có đang bấm 1 phím "
+"nào không ? Đối với trò chơi này, chúng tôi có 4 đầu vào hướng để kiểm tra. "
+"Các hành động đầu vào được xác định trong Project Settings trong \"Input Map"
+"\". Tại đây, bạn có thể xác định các sự kiện tùy chỉnh và gán các phím, sự "
+"kiện chuột hoặc các đầu vào khác cho chúng. Đối với bản demo này, chúng tôi "
+"sẽ sử dụng các sự kiện mặc định được gán cho các phím mũi tên trên bàn phím."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:225
 msgid ""
 "You can detect whether a key is pressed using ``Input.is_action_pressed()``, "
 "which returns ``true`` if it is pressed or ``false`` if it isn't."
 msgstr ""
+"Bạn có thể phát hiện liệu một phím được nhấn bằng cách sử dụng `` Input."
+"is_action_pressed ()``, sẽ trả về `` true`` nếu nó được nhấn hoặc `` false`` "
+"nếu không."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:287
 msgid ""
@@ -3873,6 +4626,13 @@ msgid ""
 "``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
+"Chúng ta bắt đầu bằng cách đặt ``velocity`` thành ``(0, 0)`` - theo mặc "
+"định, player không nên di chuyển. Sau đó, chúng ta kiểm tra từng đầu vào và "
+"cộng / trừ từ ``velocity`` để có được tổng hướng. Ví dụ: nếu bạn giữ "
+"``right`` và ``down`` cùng một lúc,  vectơ ``velocity`` sẽ là ``(1, 1)``. "
+"Trong trường hợp này, vì chúng ta đang thêm một chuyển động ngang và dọc, "
+"player sẽ di chuyển * nhanh hơn * so với khi nó chỉ di chuyển theo chiều "
+"ngang."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:294
 msgid ""
@@ -3880,19 +4640,30 @@ msgid ""
 "*length* to ``1``, and multiply by the desired speed. This means no more "
 "fast diagonal movement."
 msgstr ""
+"Chúng ta có thể ngăn chặn điều đó nếu chúng ta *normalize* (bình thường hóa) "
+"vận tốc, có nghĩa là chúng ta đặt *length* (chiều dài) của nó thành `` 1`` "
+"và nhân với tốc độ mong muốn. Điều này có nghĩa là không có chuyển động chéo "
+"nhanh hơn."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:298
+#, fuzzy
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
 "know but won't be necessary for the rest of this tutorial."
 msgstr ""
+"Nếu bạn chưa bao giờ sử dụng toán học vectơ trước đây hoặc cần làm mới, bạn "
+"có thể xem giải thích về việc sử dụng vectơ trong Godot tại: ref: "
+"`doc_vector_math`. Thật tốt khi biết nhưng sẽ không cần thiết cho phần còn "
+"lại của hướng dẫn này."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:302
 msgid ""
 "We also check whether the player is moving so we can start or stop the "
 "AnimatedSprite animation."
 msgstr ""
+"Chúng tôi cũng kiểm tra xem player có di chuyển hay không để chúng tôi có "
+"thể bắt đầu hoặc dừng hoạt hình AnimatedSprite."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:305
 msgid ""
@@ -3900,6 +4671,9 @@ msgid ""
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
+"Trong GDScript, ``$`` trả về node tại đường dẫn tương đối từ node hiện tại "
+"hoặc trả về ``null`` nếu không tìm thấy node. Vì AnimatedSprite là con của "
+"node hiện tại, chúng ta có thể sử dụng ``$ AnimatedSprite``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:308
 msgid ""
@@ -3907,6 +4681,9 @@ msgid ""
 "$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
+"``$`` là viết tắt của ``get_node ()``. Vì vậy, trong đoạn mã trên, ``$ "
+"AnimatedSprite.play ()`` giống như ``get_node (\"AnimatedSprite\"). Play "
+"()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
 msgid ""
@@ -3914,10 +4691,14 @@ msgid ""
 "and use ``clamp()`` to prevent it from leaving the screen by adding the "
 "following to the bottom of the ``_process`` function:"
 msgstr ""
+"Bây giờ chúng ta đã có hướng di chuyển, chúng ta có thể cập nhật vị trí của "
+"player và sử dụng ``clamp()`` để ngăn không cho nó rời khỏi màn hình bằng "
+"cách thêm phần sau vào dưới cùng của hàm ``_ process``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:331
 msgid "*Clamping* a value means restricting it to a given range."
 msgstr ""
+"*Clamp* một giá trị có nghĩa là giới hạn nó trong một phạm vi nhất định."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:333
 msgid ""
@@ -3926,6 +4707,10 @@ msgid ""
 "scene can be closed by clicking ``Output`` (which should be highlighted in "
 "blue) in the lower left of the Bottom Panel."
 msgstr ""
+"Nhấp vào \"Play Scene\" (`` F6``) và xác nhận bạn có thể di chuyển player "
+"xung quanh màn hình theo mọi hướng. Có thể đóng đầu ra giao diện điều khiển "
+"mở khi phát cảnh bằng cách nhấp vào ``Output`` (được tô sáng màu xanh lam) ở "
+"phía dưới bên trái của Bảng dưới cùng."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:338
 msgid ""
@@ -3934,10 +4719,14 @@ msgid ""
 "are case-sensitive and ``$NodeName`` or ``get_node(\"NodeName\")`` must "
 "match the name you see in the scene tree."
 msgstr ""
+"Nếu bạn gặp lỗi trong bảng \"Debugger\" đề cập đến \"null instance\", điều "
+"này có thể có nghĩa là bạn đã viết sai tên node. Tên node có phân biệt chữ "
+"hoa chữ thường và ``$NodeName`` hoặc ``get_node (\"NodeName\")`` phải khớp "
+"với tên bạn nhìn thấy trong scene tree."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:343
 msgid "Choosing animations"
-msgstr ""
+msgstr "Chọn hình ảnh động (animation)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:345
 msgid ""
@@ -3948,6 +4737,12 @@ msgid ""
 "``flip_v`` for downward movement. Let's place this code at the end of our "
 "``_process()`` function:"
 msgstr ""
+"Bây giờ player có thể di chuyển, chúng ta cần thay đổi hoạt hình nào mà "
+"AnimatedSprite đang phát dựa trên hướng mà player sẽ di chuyển. Chúng ta có "
+"một hình động \"right\", nên được lật theo chiều ngang bằng cách sử dụng "
+"thuộc tính ``flip_h`` cho chuyển động bên trái và một hình động \"up\", nên "
+"được lật theo chiều dọc với `` flip_v`` cho chuyển động đi xuống. Chúng ta "
+"hãy đặt mã này vào cuối hàm ``_ process ()`` của chúng ta:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:379
 msgid ""
@@ -3955,6 +4750,8 @@ msgid ""
 "programmers. Consider this code versus the shortened boolean assignment "
 "above:"
 msgstr ""
+"Các phép gán boolean trong đoạn mã trên là một cách viết tắt phổ biến cho "
+"các lập trình viên. Xem xét mã này so với phép gán boolean rút gọn ở trên:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:398
 msgid ""
@@ -3962,10 +4759,13 @@ msgid ""
 "the directions. When you're sure the movement is working correctly, add this "
 "line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
+"Phát lại cảnh và kiểm tra xem các hình động có chính xác theo từng hướng "
+"không. Khi bạn chắc chắn rằng chuyển động đang hoạt động chính xác, hãy thêm "
+"dòng này vào ``_ready()``, để player sẽ bị ẩn khi trò chơi bắt đầu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:413
 msgid "Preparing for collisions"
-msgstr ""
+msgstr "Chuẩn bị va chạm"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:415
 msgid ""
@@ -3973,10 +4773,13 @@ msgid ""
 "any enemies yet! That's OK, because we're going to use Godot's *signal* "
 "functionality to make it work."
 msgstr ""
+"Chúng ta muốn `` Player`` phát hiện khi nó tấn công kẻ thù, nhưng chúng tôi "
+"chưa tạo ra bất kỳ kẻ thù nào! Không sao, vì chúng ta sẽ sử dụng chức năng * "
+"signal * của Godot để làm cho nó hoạt động."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:419
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
-msgstr ""
+msgstr "Thêm phần sau vào đầu tập lệnh, sau ``extends Area2d``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:433
 msgid ""
@@ -3985,6 +4788,11 @@ msgid ""
 "detect the collision. Select the ``Player`` node and click the \"Node\" tab "
 "next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
+"Điều này xác định một tín hiệu tùy chỉnh được gọi là \"hit\" mà chúng ta sẽ "
+"có người chơi phát ra (gửi đi) khi nó va chạm với kẻ thù. Chúng tôi sẽ sử "
+"dụng ``Area2D`` để phát hiện va chạm. Chọn nút ``Player`` và nhấp vào tab "
+"\"Node\" bên cạnh tab Inspector để xem danh sách các signal mà player có thể "
+"phát ra:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:440
 msgid ""
@@ -3996,17 +4804,28 @@ msgid ""
 "automatically create a function in your player's script. This function will "
 "be called whenever the signal is emitted - it *handles* the signal."
 msgstr ""
+"Lưu ý tín hiệu \"hit\" tùy chỉnh của chúng ta là có! Vì kẻ thù của chúng ta "
+"sẽ là các node `` RigidBody2D``, nên chúng ta muốn tín hiệu ``body_entered "
+"(Object body)``; điều này sẽ được phát ra khi một cơ thể tiếp xúc với "
+"player. Nhấp vào \"Connect..\" và sau đó \"Connect\" lại trên cửa sổ "
+"\"Connecting Signal\". Chúng ta không cần thay đổi bất kỳ cài đặt nào trong "
+"số này - Godot sẽ tự động tạo một chức năng trong tập lệnh củaplayer của "
+"bạn. Hàm này sẽ được gọi bất cứ khi nào tín hiệu được phát ra - nó * xử lý * "
+"tín hiệu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:449
+#, fuzzy
 msgid ""
 "When connecting a signal, instead of having Godot create a function for you, "
 "you can also give the name of an existing function that you want to link the "
 "signal to."
 msgstr ""
+"Khi kết nối tín hiệu, thay vì Godot tạo chức năng cho bạn, bạn cũng có thể "
+"đặt tên của chức năng hiện có mà bạn muốn liên kết tín hiệu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:453
 msgid "Add this code to the function:"
-msgstr ""
+msgstr "Thêm mã này vào hàm:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:472
 msgid ""
@@ -4014,6 +4833,9 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"Mỗi khi kẻ địch tấn công player, tín hiệu sẽ được phát ra. Chúng ta cần phải "
+"vô hiệu hóa va chạm của player để không kích hoạt tín hiệu `` hit`` nhiều "
+"lần."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:476
 msgid ""
@@ -4021,16 +4843,22 @@ msgid ""
 "middle of the engine's collision processing. Using ``set_deferred()`` allows "
 "us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"Vô hiệu hóa hình dạng va chạm của khu vực có thể gây ra lỗi nếu nó xảy ra ở "
+"giữa quá trình xử lý va chạm của engine. Sử dụng ``set_deferred()`` cho phép "
+"chúng ta chờ Godot chờ để vô hiệu hóa hình dạng cho đến khi an toàn để làm "
+"như vậy."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:481
 msgid ""
 "The last piece for our player is to add a function we can call to reset the "
 "player when starting a new game."
 msgstr ""
+"Phần cuối cùng cho player của chúng ta là thêm một chức năng mà chúng ta có "
+"thể gọi để đặt lại player khi bắt đầu trò chơi mới."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:502
 msgid "Enemy scene"
-msgstr ""
+msgstr "Cảnh kẻ thù"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:504
 msgid ""
@@ -4039,48 +4867,58 @@ msgid ""
 "the screen and move in a random direction in a straight line, then despawn "
 "when they go offscreen."
 msgstr ""
+"Bây giờ là lúc để làm cho kẻ thù, player của chúng ta sẽ phải né tránh. Hành "
+"vi của chúng sẽ không phức tạp lắm: các mob sẽ sinh sản ngẫu nhiên ở các "
+"cạnh của màn hình và di chuyển theo hướng ngẫu nhiên theo một đường thẳng, "
+"sau đó biến mất khi chúng rời khỏi màn hình."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:509
 msgid ""
 "We will build this into a ``Mob`` scene, which we can then *instance* to "
 "create any number of independent mobs in the game."
 msgstr ""
+"Chúng tôi sẽ xây dựng cảnh này thành một cảnh `` Mob``, sau đó chúng tôi có "
+"thể *instance* để tạo bất kỳ số lượng mob độc lập nào trong trò chơi."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:513
 msgid "Node setup"
-msgstr ""
+msgstr "Thiết lập node"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:515
 msgid "Click Scene -> New Scene and we'll create the Mob."
-msgstr ""
+msgstr "Nhấp vào Scene -> New Scene và chúng tôi sẽ tạo Mob."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:517
 msgid "The Mob scene will use the following nodes:"
-msgstr ""
+msgstr "Cảnh Mob sẽ sử dụng các node sau:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:519
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (tên là `` Mob``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:521
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
-msgstr ""
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:522
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
-msgstr ""
+msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:523
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
 msgstr ""
+":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (tên là "
+"``Visibility``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:525
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
 msgstr ""
+"Đừng quên đặt children để chúng không thể được chọn, giống như bạn đã làm "
+"với cảnh Player."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:528
 msgid ""
@@ -4089,6 +4927,10 @@ msgid ""
 "``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
+"Trong các thuộc tính: ref:`RigidBody2D <class_RigidBody2D>`, đặt ``Gravity "
+"Scale`` thành ``0``, vì vậy mob sẽ không rơi xuống. Ngoài ra, trong phần "
+"``ChemistryBody2D``, nhấp vào thuộc tính ``Mask`` và bỏ chọn hộp đầu tiên. "
+"Điều này sẽ đảm bảo các mob không va chạm với nhau."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:535
 msgid ""
@@ -4098,17 +4940,26 @@ msgid ""
 "\"Speed (FPS)\" setting as shown below. We'll select one of these animations "
 "randomly so that the mobs will have some variety."
 msgstr ""
+"Thiết lập: ref: `AnimatedSprite <class_AnimatedSprite>` giống như bạn đã làm "
+"cho player. Lần này, chúng ta có 3 hình ảnh động: ``fly``, ``swim`` và "
+"``walk``. Đặt thuộc tính ``Playing`` trong Inspector thành \"On\" và điều "
+"chỉnh cài đặt \"Speed (FPS)\" như hiển thị bên dưới. Chúng tôi sẽ chọn một "
+"trong những hình ảnh động này một cách ngẫu nhiên để mob sẽ có một số loại."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:542
 msgid ""
 "``fly`` should be set to 3 FPS, with ``swim`` and ``walk`` set to 4 FPS."
 msgstr ""
+"``fly`` nên được đặt thành 3 FPS, với ``swim`` và ``walk`` được đặt thành 4 "
+"FPS."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:544
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
+"Giống như hình ảnh player, những hình ảnh mob này cần được thu nhỏ lại. Đặt "
+"thuộc tính ``Scale`` của ``AnimatedSprite`` thành `` (0,75, 0,75) ``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:547
 msgid ""
@@ -4116,14 +4967,18 @@ msgid ""
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
 "property to ``90`` under ``Node2D``."
 msgstr ""
+"Như trong cảnh ``Player``, thêm ``CapsuleShape2D`` cho việc va chạm. Để căn "
+"chỉnh hình dạng với hình ảnh, bạn sẽ cần đặt thuộc tính ``Rotation Độ 'thành "
+"``90`` bên dưới ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:552
 msgid "Enemy script"
-msgstr ""
+msgstr "Kịch bản kẻ thù"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:554
+#, fuzzy
 msgid "Add a script to the ``Mob`` and add the following member variables:"
-msgstr ""
+msgstr "Thêm một tập lệnh vào `` Mob`` và thêm các biến thành viên sau:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:580
 msgid ""
@@ -4134,12 +4989,20 @@ msgid ""
 "sure you've spelled these the same in the script and in the SpriteFrames "
 "resource."
 msgstr ""
+"Khi chúng ta sinh ra một mob, chúng ta sẽ chọn một giá trị ngẫu nhiên giữa "
+"``min_speed`` và ``max_speed`` cho mỗi mob sẽ di chuyển nhanh như thế nào "
+"(sẽ rất nhàm chán nếu tất cả chúng đều di chuyển với cùng tốc độ). Chúng ta "
+"cũng có một mảng chứa tên của ba hình ảnh động, chúng tôi sẽ sử dụng để chọn "
+"một hình ảnh ngẫu nhiên. Hãy chắc chắn rằng bạn đã đánh vần những thứ này "
+"giống nhau trong tập lệnh và trong tài nguyên SpriteFrames."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:586
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we randomly choose "
 "one of the three animation types:"
 msgstr ""
+"Bây giờ hãy xem phần còn lại của kịch bản. Trong ``_ready()``, chúng ta chọn "
+"ngẫu nhiên một trong ba loại hoạt hình:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:605
 msgid ""
@@ -4148,6 +5011,11 @@ msgid ""
 "``randomize()`` in our ``Main`` scene, so we won't need it here. ``randi() % "
 "n`` is the standard way to get a random integer between ``0`` and ``n-1``."
 msgstr ""
+"Bạn phải sử dụng ``Randomize()`` nếu bạn muốn chuỗi số \"ngẫu nhiên\" của "
+"mình khác nhau mỗi khi bạn chạy cảnh. Chúng ta sẽ sử dụng ``Randomize()`` "
+"trong cảnh ``Main`` của chúng ta, vì vậy chúng ta sẽ không cần nó ở đây. "
+"``randi ()% n`` là cách tiêu chuẩn để lấy một số nguyên ngẫu nhiên giữa "
+"``0`` và ``n-1``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:611
 msgid ""
@@ -4155,14 +5023,17 @@ msgid ""
 "screen. Connect the ``screen_exited()`` signal of the ``Visibility`` node "
 "and add this code:"
 msgstr ""
+"Phần cuối cùng là làm cho mob tự xóa khi họ rời khỏi màn hình. Kết nối tín "
+"hiệu ``screen_exited()`` của node ``Visibility`` và thêm mã này:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:628
+#, fuzzy
 msgid "This completes the `Mob` scene."
-msgstr ""
+msgstr "Điều này hoàn thành cảnh `Mob`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:631
 msgid "Main scene"
-msgstr ""
+msgstr "Cảnh chính"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:633
 msgid ""
@@ -4170,67 +5041,83 @@ msgid ""
 "`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
 "your saved ``Player.tscn``."
 msgstr ""
+"Bây giờ là lúc kết nối tất cả lại với nhau. Tạo một cảnh mới và thêm một: "
+"ref: `Node <class_Node>` có tên ``Main``. Nhấp vào nút \"Instance\" và chọn "
+"`` Player.tscn`` đã lưu của bạn."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:639
 msgid "See :ref:`doc_instancing` to learn more about instancing."
-msgstr ""
+msgstr "Xem: ref:`doc_instancing` để tìm hiểu thêm về cách sử dụng instance."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:641
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
+"Bây giờ, thêm các node sau dưới dạng con của ``Main`` và đặt tên cho chúng "
+"như được hiển thị (các giá trị được tính bằng giây):"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:644
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
 msgstr ""
+":ref:`Timer <class_Timer>` (được đặt tên là ``MobTimer``) - để kiểm soát tần "
+"suất mob sinh sản"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:645
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
 msgstr ""
+":ref: `Timer <class_Timer>` (được đặt tên là ``ScoreTimer``) - để tăng điểm "
+"mỗi giây"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:646
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
 msgstr ""
+":ref: `Timer <class_Timer>` (được đặt tên là ``StartTimer``) - để trì hoãn "
+"trước khi bắt đầu"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:647
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
 msgstr ""
+":ref: `Position2D <class_Pocation2D>` (được đặt tên là ``StartPocation``) - "
+"để chỉ vị trí bắt đầu của người chơi"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:649
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
-msgstr ""
+msgstr "Đặt thuộc tính ``Wait Time`` của mỗi nút ``Timer`` như sau:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:652
 msgid "``MobTimer``: ``0.5``"
-msgstr ""
+msgstr "``MobTimer``: ``0,5``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:653
 msgid "``ScoreTimer``: ``1``"
-msgstr ""
+msgstr "``ScoreTimer``: ``1``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:654
 msgid "``StartTimer``: ``2``"
-msgstr ""
+msgstr "``StartTimer``: ``2``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:656
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
 msgstr ""
+"Ngoài ra, đặt thuộc tính ``One Shot`` của ` `StartTimer`` thành \"On\" và "
+"đặt ` `Position`` của node ` `StartPocation`` thành` `(240, 450)` `."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:660
+#, fuzzy
 msgid "Spawning mobs"
-msgstr ""
+msgstr "Mob sinh sản"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:662
 msgid ""
@@ -4239,6 +5126,10 @@ msgid ""
 "<class_Path2D>` node named ``MobPath`` as a child of ``Main``. When you "
 "select ``Path2D``, you will see some new buttons at the top of the editor:"
 msgstr ""
+"Node Main sẽ sinh ra mob mới và chúng ta muốn chúng xuất hiện ở một vị trí "
+"ngẫu nhiên trên cạnh màn hình. Thêm một node: ref: `Path2D <class_Path2D>` "
+"có tên `` MobPath`` như  con của `` Main``. Khi bạn chọn ``Path2D``, bạn sẽ "
+"thấy một số nút mới ở đầu trình soạn thảo:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:669
 msgid ""
@@ -4248,18 +5139,27 @@ msgid ""
 "\"Snapping options\" button to the left of the \"Lock\" button, appearing as "
 "a series of three vertical dots."
 msgstr ""
+"Chọn điểm giữa (\"Add Point\") và vẽ đường dẫn bằng cách nhấp để thêm các "
+"điểm ở các góc được hiển thị. Để có các điểm được gắn vào grid (lưới), hãy "
+"đảm bảo đã chọn \"Snap to Grid\". Tùy chọn này có thể được tìm thấy dưới nút "
+"\"Snapping options\" ở bên trái nút \"Lock\", xuất hiện dưới dạng một loạt "
+"ba dấu chấm dọc."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:677
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
 msgstr ""
+"Vẽ đường dẫn theo thứ tự *clockwise* (*theo chiều kim đồng hồ*) hoặc mob của "
+"bạn sẽ sinh ra chỉ *ra ngoài* thay vì *vào trong*!"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:680
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
 msgstr ""
+"Sau khi đặt điểm ``4`` trong ảnh, nhấp vào nút \"Close Curve\" và đường cong "
+"của bạn sẽ hoàn tất."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:683
 msgid ""
@@ -4268,22 +5168,31 @@ msgid ""
 "will automatically rotate and follow the path as it moves, so we can use it "
 "to select a random position and direction along the path."
 msgstr ""
+"Bây giờ, đường dẫn đã được xác định, hãy thêm một node: ref: `PathFollow2D "
+"<class_PathFollow2D>` làm con của ``MobPath`` và đặt tên cho nó là "
+"``MobSpawnLocation``. Node này sẽ tự động xoay và đi theo đường dẫn khi nó "
+"di chuyển, vì vậy chúng ta có thể sử dụng nó để chọn một vị trí và hướng "
+"ngẫu nhiên dọc theo đường dẫn."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:689
 msgid "Main script"
-msgstr ""
+msgstr "Kịch bản cho Main scene"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:691
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
+"Thêm một tập lệnh vào ``Main``. Ở đầu tập lệnh, chúng tôi sử dụng ``export "
+"(PackedScene)`` để cho phép chúng ta chọn cảnh Mob mà chúng ta muốn."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:731
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property under the Script Variables of the ``Main`` node."
 msgstr ""
+"Kéo ``Mob.tscn`` từ bảng \"FileSystem\" và thả nó vào thuộc tính ``Mob`` "
+"trong Biến Script của nút `` Main``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:734
 msgid ""
@@ -4293,6 +5202,11 @@ msgid ""
 "bottom of the \"Connecting Signal\" window. Add the following code, as well "
 "as a ``new_game`` function to set everything up for a new game:"
 msgstr ""
+"Tiếp theo, nhấp vào player và kết nối tín hiệu ``hit``. Chúng ta muốn tạo "
+"một hàm mới có tên ``game_over``, sẽ xử lý những gì cần xảy ra khi trò chơi "
+"kết thúc. Nhập \"game_over\" vào hộp \"Method In Node\" ở cuối cửa sổ "
+"\"Connecting Signal\". Thêm mã sau đây, cũng như hàm ``new_game`` để thiết "
+"lập mọi thứ cho trò chơi mới:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:771
 msgid ""
@@ -4301,6 +5215,9 @@ msgid ""
 "``StartTimer`` will start the other two timers. ``ScoreTimer`` will "
 "increment the score by 1."
 msgstr ""
+"Bây giờ kết nối tín hiệu ``timeout()`` của từng node Timer (``StartTimer``, "
+"``ScoreTimer`` và ``MobTimer``) với tập lệnh main. ``StartTimer`` sẽ bắt đầu "
+"hai bộ định thời khác. ``ScoreTimer`` sẽ tăng số điểm lên 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:798
 msgid ""
