@@ -6,6 +6,7 @@
 # Ihor Starchenko <scottpilgrim765@yahoo.com>, 2019.
 # Yuri Chornoivan <yurchor@ukr.net>, 2018-2019.
 # Александр <ol-vin@mail.ru>, 2018.
+# Богдан Альфавіцький <bromandarin@gmail.com>, 2019.
 # Богдан Матвіїв <bomtvv@gmail.com>, 2019.
 # Максим Якимчук <xpinovo@gmail.com>, 2018-2019.
 #
@@ -14,8 +15,8 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-10-29 12:54+0100\n"
-"PO-Revision-Date: 2019-10-12 06:02+0000\n"
-"Last-Translator: Богдан Матвіїв <bomtvv@gmail.com>\n"
+"PO-Revision-Date: 2019-12-03 07:09+0000\n"
+"Last-Translator: Богдан Альфавіцький <bromandarin@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
 "Language: uk\n"
@@ -24,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 3.10-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -35,8 +36,8 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"Документація \"Godot\" доступна різними мовами та для різних версій. "
-"Розгорніть панель \"Read the Docs\" внизу бічної секції, щоб переглянути "
+"Документація Godot доступна на різних мовах і версіях. Розгорніть панель "
+"\"Прочитати документи\" в нижній частині бічної панелі, щоб переглянути "
 "список."
 
 #: ../../docs/index.rst:10
@@ -67,8 +68,8 @@ msgid ""
 "Weblate."
 msgstr ""
 "Залежно від ступеня завершеності перекладу, ви можете знайти параграфи або "
-"цілі сторінки, які до сих пір англійською мовою. Ви можете допомогти "
-"спільноті, шляхом надання нових перекладів або перевіряти існуючі на Weblate."
+"цілі сторінки все ще англійською мовою. Ви можете допомогти спільноті шляхом "
+"надання нових перекладів або перевіряти існуючі на Weblate."
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -277,6 +278,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"Сторінка :ref:`Посібники та ресурси<doc_community_tutorials>` перечислює "
+"відеоуроки, надані спільнотою. Якщо ви надаєте перевагу відео, а не тексту, "
+"то, можливо, варто на неї глянути."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -284,6 +288,10 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Якщо у вас виникнуть проблеми з одним з уроків або з вашим проектом, то ви "
+"зможете знайти допомогу на різних :ref:`Каналах спільноти "
+"<doc_community_channels>`, особливо у спільноті Godot Discord, запитаннях та "
+"відповідях (Q&A) і IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -730,6 +738,13 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"GDScript - це інтегрована у Godot скриптова мова. Її було створено з нуля з "
+"метою максимально розкрити потенціал Godot з мінімальною кількістю коду, що "
+"дозволяє як початківцям, так і досвідченим розробникам якнайшвидше "
+"зосередитися на сильних сторонах Godot. Якщо ви маєте досвід з мовами, "
+"схожими на Python, ви почуватимете себе як вдома. Приклади коду, історія та "
+"повний огляд можливостей, які пропонує вам GDScript знаходяться у розділі "
+"`GDScript scripting guide <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -738,8 +753,13 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"Є декілька причин використовувати GDScript -- особливо, якщо ви займаєтесь "
+"прототипуванням, знаходитесь в альфа/беті стадіях розробки вашого проекту "
+"або створюєте гру не AAA-класу. Проте, найбільш суттєвою причиною є загальне "
+"**зменшення складності.**"
 
 #: ../../docs/about/faq.rst:101
+#, fuzzy
 msgid ""
 "The original intent of creating a tightly integrated, custom scripting "
 "language for Godot was two-fold: first, it reduces the amount of time "
@@ -751,9 +771,17 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"Оригінальний намір створення щільно інтегрованої скриптової мови для Godot "
+"був подвійним: по-перше, це зменшує кількість часу, необхідного, щоб "
+"розпочати роботу з Godot, надаючи розробникам швидкий спосіб доступу до "
+"двигуна з акцентом на продуктивність; по-друге, це зменшує загальне "
+"навантаження на технічне обслуговування, зменшує розмірність проблем, і "
+"дозволяє розробникам двигуна зосередитися на усуненні помилок і покращенні "
+"функцій, пов'язаних з ядром двигуна, а не витрачати багато часу, намагаючись "
+"отримати невеликий набір додаткових функцій, що працюють через великий набір "
+"мов."
 
 #: ../../docs/about/faq.rst:109
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -765,14 +793,15 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"Коротка відповідь полягає в тому, що ми вважаємо, що додаткова складність як "
-"з вашої сторони (коли ви вперше вивчаєте Godot та GDScript), так із нашої "
-"сторони (технічне обслуговування) коштує більш інтегрованого та бездоганного "
-"досвіду щодо залучення додаткових користувачів з більш знайомими мовами "
-"програмування, які призводять до гіршого досвіду. Ми зрозуміємо, якщо ви "
-"бажаєте скористатися іншою мовою в Godot (див. список підтримуваних "
-"варіантів вище), але ми настійно рекомендуємо вам спробувати це та побачити "
-"переваги для себе."
+"Оскільки Godot є проектом з відкритим вихідним кодом, з самого початку було "
+"необхідно надавати перевагу більш інтегрованому і безшовний досвіду над "
+"залученням додаткових користувачів, підтримуючи більш знайомі мови "
+"програмування, особливо якщо підтримка цих більш знайомих мов призведе до "
+"гіршого досвіду. Ми розуміємо, якщо ви хотіли б використовувати іншу мову в "
+"Godot (див. список підтримуваних варіантів вище). Тому, якщо ви ще не "
+"спробували GDScript, спробуйте його протягом **трьох днів**. Так само, як "
+"Godot, як тільки ви побачите, наскільки потужнию і швидкою стає ваша "
+"розробка, ми думаємо, GDScript виросте у ваших очах."
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -803,13 +832,12 @@ msgstr ""
 "ін.)."
 
 #: ../../docs/about/faq.rst:128
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
-"У більшості віртуальних машин для скриптів немає хорошої підтримки класу "
-"розширення, а адаптація до шляху роботи Godot дуже неефективна (Lua, Python, "
+"У більшості скриптових віртуальних машин немає хорошої підтримки розширення "
+"класів, а адаптація до способу роботи Godot дуже неефективна (Lua, Python, "
 "JS)."
 
 #: ../../docs/about/faq.rst:130
@@ -908,6 +936,11 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"Мета Godot полягає у створенні вільного і з відкритим вихідним кодом, MIT "
+"ліцензованого двигуна, який є модульним і розширюваним. Спільнота "
+"розробників двигуна не планує підтримувати будь-які сторонні, приватні/з "
+"закритим вихідним кодом SDK, оскільки інтеграція з ними буде суперечити "
+"ідеалу Godot."
 
 #: ../../docs/about/faq.rst:166
 msgid ""
@@ -935,6 +968,10 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"Якщо ви знаєте стороннє SDK, яке не підтримується Godot, але при цьому надає "
+"вільну інтеграцію, та є з відкритим кодом, розгляньте можливість інтеграції "
+"самостійно. Godot не належить одній людині; він належить спільноті, і росте "
+"разом з амбіційними учасниками спільноти, такими, як ви."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
@@ -67483,9 +67520,8 @@ msgid "Profiles the performance of any function call in the running game."
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
-#, fuzzy
 msgid "Network Profiler"
-msgstr "Засіб профілювання"
+msgstr "Засіб профілювання мережі"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:135
 msgid ""

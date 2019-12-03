@@ -6,6 +6,7 @@
 # Bas van Schoubroeck <basvanschoubroeck@hotmail.com>, 2018.
 # dem son <anthony1sep@gmail.com>, 2018.
 # Erwin <erwinschmidt@gmail.com>, 2018.
+# Filip Van Raemdonck <arrawn@gmail.com>, 2019.
 # frank <frankvprive@gmail.com>, 2018.
 # Gaetan Deglorie <sharkithepointed@gmail.com>, 2018-2019.
 # jaron maene <jaron.maene@gmail.com>, 2018.
@@ -15,6 +16,7 @@
 # Peter <pshijma@gmail.com>, 2018.
 # Stijn Hinlopen <f.a.hinlopen@gmail.com>, 2019.
 # Tahar Meijs <tntmeijs@gmail.com>, 2018.
+# Tirrin <lensenjoe@gmail.com>, 2019.
 # Willem <studiebolmail@gmail.com>, 2018.
 # Wouter Buckens <wou.buc@gmail.com>, 2019.
 # Xoronic <stefgijsberts.sg@gmail.com>, 2019.
@@ -24,8 +26,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-10-29 12:54+0100\n"
-"PO-Revision-Date: 2019-04-29 11:45+0000\n"
-"Last-Translator: Xoronic <stefgijsberts.sg@gmail.com>\n"
+"PO-Revision-Date: 2019-12-03 07:10+0000\n"
+"Last-Translator: Filip Van Raemdonck <arrawn@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/nl/>\n"
 "Language: nl\n"
@@ -33,7 +35,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.10-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -98,9 +100,9 @@ msgid ""
 "offer."
 msgstr ""
 "Welkom bij de officiële documentatie van de Godot Engine, de gratis en open "
-"source  community gedreven 2D en 3D game enigine! Als dit de eerste keer is "
-"dat je de documentatie lees, adviseren we je om de :ref:`introductie pagina "
-"<doc_about_intro>`  te lezen om een goed overzicht te krijgen wat deze "
+"source community gedreven 2D en 3D game engine! Als dit de eerste keer is "
+"dat je de documentatie leest, adviseren we je om de :ref:`introductie pagina "
+"<doc_about_intro>` te lezen om een goed overzicht te krijgen van wat deze "
 "documentatie je te bieden heeft."
 
 #: ../../docs/index.rst:34
@@ -128,7 +130,6 @@ msgstr ""
 "dan de documentatie te verbeteren door het ons te laten weten!"
 
 #: ../../docs/index.rst:45
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -137,7 +138,7 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Rapporteer een probleem of maak een \"pull\" verzoek op de `GitHub "
+"Rapporteer een probleem of maak een \"pull request\" op de `GitHub "
 "repository <https://github.com/godotengine/godot-docs/issues>`_, help ons "
 "`met het vertalen van de documentatie <https://hosted.weblate.org/engage/"
 "godot-engine/>`_ in jouw taal, of discussieer met ons in het "
@@ -147,7 +148,7 @@ msgstr ""
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -283,7 +284,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Voordat je begint"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -291,6 +292,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"De :ref:`Tutorials and resources <doc_community_tutorials>` pagina bevat een "
+"lijst video tutorials die gemaakt zijn door de community. Als je videos "
+"handiger vindt kunnen ze misschien van pas komen."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -298,6 +302,9 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Wanneer je problemen hebt met een tutorial of met je project kun je hulp "
+"vinden in de verschillende :ref:`Community channels "
+"<doc_community_channels>`, vooral in de Godot Discord community, Q&A en IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -429,28 +436,24 @@ msgstr ""
 "`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
 "games. It starts with the :ref:`Step by step <toc-learn-step_by_step>` "
 "tutorial which should be the entry point for all new users."
 msgstr ""
-"De :ref:`sec-learn` sectie is de voornamelijke *raison d'être* van deze "
-"documentatie, want het bevat alle noodzakelijke informatie voor het gebruik "
-"van de engine om games te maken. Het begint met de :ref:`Step by step <toc-"
-"learn-step_by_step>` tutorial, welke het beginpunt zou moeten zijn voor alle "
-"nieuwe gebruikers."
+"De :ref:`sec-learn` sectie is de *raison d'être* van deze documentatie, "
+"omdat ze alle noodzakelijke informatie bevat om spellen te ontwikkelen met "
+"de engine. Het begint met de :ref:`Step by step <toc-learn-step_by_step>` "
+"tutorial, welke het startpunt zou moeten zijn voor alle nieuwe gebruikers."
 
 #: ../../docs/about/introduction.rst:91
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-"De :ref:`sec-tutorials` sectie, anderzijds, kan wanneer nodig gelezen "
-"worden, in willekeurige volgorde. Het gaat over vele feature-specifieke "
-"tutorials en documentaties."
+"De :ref:`sec-tutorials` sectie kan gelezen worden in elke gewenste volgorde. "
+"Het bevat functiespecifieke tutorials en documentatie."
 
 #: ../../docs/about/introduction.rst:93
 msgid ""
@@ -463,7 +466,6 @@ msgstr ""
 "de engine, ontwikkelen van C++ modules of editor plugins."
 
 #: ../../docs/about/introduction.rst:96
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -471,11 +473,12 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
-"De :ref:`sec-community` geeft informatie gerelateerd aan bijdragen aan "
-"engine-ontwikkeling en het onderhouden van de community, bijvoorbeeld hoe "
-"bugs gemeld kunnen worden, hulp met de documentatie, etc. Het verwijst ook "
-"naar verschillende communitykanalen als IRC en Discord, en bevat een lijst "
-"van aangeraden third-party tutorials buiten deze documentatie."
+"De sectie :ref:`sec-community` bevat informatie over hoe mee te doen aan "
+"ontwikkeling van de engine en deel te nemen aan de community, bijvoorbeeld "
+"hoe bugs gemeld kunnen worden, bij te dragen met de documentatie, etc. Het "
+"verwijst ook naar verschillende communitykanalen als IRC en Discord, en "
+"bevat een lijst van aangeraden third-party tutorials buiten deze "
+"documentatie."
 
 #: ../../docs/about/introduction.rst:101
 msgid ""
@@ -534,20 +537,20 @@ msgid "In short:"
 msgstr "In het kort:"
 
 #: ../../docs/about/faq.rst:13
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Je bent vrij om Godot te downloaden en gebruiken voor eender welk doeleinde, "
-"persoonlijk, non-profit, commercieel of andere;"
+"Je bent vrij om Godot te downloaden en gebruiken voor eender welk doeleinde: "
+"persoonlijk, non-profit, commercieel of andere."
 
 #: ../../docs/about/faq.rst:14
-#, fuzzy
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
-msgstr "Je kunt Godot naar wens aanpassen, (her)distributeren en remixen"
+msgstr ""
+"Je kan Godot naar wens aanpassen, (her)distribueren en remixen, ongeacht "
+"voor welke reden, zowel niet-commercieel als commercieel."
 
 #: ../../docs/about/faq.rst:16
 msgid ""
@@ -557,7 +560,7 @@ msgid ""
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
 "De volledige inhoud van deze begeleidende documentatie valt onder de "
-"tolerante Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
+"liberale Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
 "creativecommons.org/licenses/by/3.0/>`_) licentie, met attributie naar "
 "\"Juan Linietsky, Ariel Manzur and the Godot Engine community\"."
 
@@ -645,7 +648,7 @@ msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
-"Bijde 32- en 64-bit binaries zijn ondersteund waar het nodig is, waar 64 de "
+"Zowel 32- als 64-bit binaries zijn ondersteund waar het nodig is, waar 64 de "
 "standaard is."
 
 #: ../../docs/about/faq.rst:51
@@ -662,18 +665,21 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
+"Bovendien wordt voor sommige consoles niet-officieel werk gedaan door "
+"derden. Hiervan is echter momenteel niks opgenomen in de standaard build-"
+"scripts of exportsjablonen."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
-"Voor meer informatie over dit, zie de secties op :ref:`exporteren <toc-learn-"
-"workflow-export>` en :ref:`Zelf Godot compileren<toc-devel-compiling>`."
+"Voor meer informatie hierover, zie de secties over :ref:`exporteren <toc-"
+"learn-workflow-export>` en :ref:`Zelf Godot compileren<toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:62
 msgid "Which programming languages are supported in Godot?"
-msgstr "Welke programeer talen zijn ondersteund in Godot?"
+msgstr "Welke programmeertalen worden ondersteund in Godot?"
 
 #: ../../docs/about/faq.rst:64
 msgid ""
@@ -686,7 +692,6 @@ msgstr ""
 "learn-scripting>` sectie."
 
 #: ../../docs/about/faq.rst:68
-#, fuzzy
 msgid ""
 "If you are just starting out with either Godot or game development in "
 "general, GDScript is the recommended language to learn and use since it is "
@@ -699,7 +704,8 @@ msgstr ""
 "taal om te leren en te gebruiken, aangezien het ingebouwd is in Godot. "
 "Hoewel scripting talen vaak minder performant zijn dan talen op een lager "
 "niveau, biedt GDScript een snelle, gebruiksvriendelijk en capabele manier om "
-"games te ontwikkelen voor prototypes en minimaal vatbare producten (MVP's)."
+"games te ontwikkelen voor prototypes en minimaal vatbare producten (MVP's) "
+"en een vlugge Time-To-Market."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -727,6 +733,11 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"Voor nieuwe programmeertalen is ondersteuning mogelijk via derden met behulp "
+"van GDNative / NativeScript / PluginScript. (Zie de vraag over plug-ins "
+"hieronder.) Zo wordt bijvoorbeeld momenteel gewerkt aan onofficiële "
+"koppelingen voor Godot met `Python <https://github.com/touilleMan/godot-"
+"python>` _ en `Nim <https: // github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -773,6 +784,15 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"De oorspronkelijke bedoeling van het creëren van een strak geïntegreerde, "
+"aangepaste scripttaal voor Godot was tweeledig: enerzijds vermindert het de "
+"hoeveelheid tijd die nodig is om aan de slag te gaan met Godot, zodat "
+"spelontwikkelaars zich snel kunnen vertrouwd maken met de engine en focussen "
+"op productiviteit; anderszijds vergemakkelijkt het het onderhoud, vermindert "
+"het de complexiteit van problemen en laat het de engine-ontwikkelaars toe om "
+"zich te concentreren op oplossen van bugs en verbeteren van functionaliteit "
+"- in plaats van veel tijd te besteden om te proberen een beperkte functieset "
+"correct te laten werken in een groot aantal programmeertalen."
 
 #: ../../docs/about/faq.rst:109
 msgid ""
@@ -786,6 +806,16 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
+"Aangezien Godot een opensource project is, was een meer geïntegreerde en "
+"naadloze ervaring van meet af aan een noodzakelijke prioriteit over het "
+"aantrekken van extra gebruikers door ondersteuning van meer bekende "
+"programmeertalen, vooral wanneer die ondersteuning in een slechtere ervaring "
+"zou resulteren. We hebben er begrip voor als je liever een andere taal zou "
+"gebruiken met Godot (zie de lijst met ondersteunde opties hierboven). Dat "
+"gezegd zijnde, als je GDScript nog niet eerder hebt geprobeerd, test het dan "
+"eens uit gedurende ***drie dagen***. Wij geloven dat GDScript je zal "
+"bevallen eens je hebt ondervonden hoe krachtig het is en hoe snel je "
+"ontwikkeling erdoor wordt."
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -793,27 +823,37 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"Meer informatie over vertrouwd worden met GDScript of dynamically typed "
+"programmeertalen is te vinden in de :ref:`doc_gdscript_more_efficiently` "
+"tutorial."
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "Wat waren de redenen voor het creëren van GDScript?"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
 msgstr ""
+"De hoofdreden voor de creatie van een scripting taal speciaal voor Godot "
+"waren:"
 
 #: ../../docs/about/faq.rst:126
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
+"Slechte thread support in de meeste script VMs en Godot gebruikt threads "
+"(Lua, Python, Squirrel, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:128
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"Zwakke ondersteuning om klassen uit te breiden in de meeste script VMs, en "
+"aanpassing aan de manier waarop Godot werkt is erg inefficiënt (Lua, Python, "
+"JS)."
 
 #: ../../docs/about/faq.rst:130
 msgid ""
@@ -822,48 +862,66 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
+"Veel bestaande programmeertalen hebben vreselijke interfaces om met C++ te "
+"koppelen, wat resulteert in een grote hoeveelheid code, bugs, bottlenecks en "
+"algemene inefficiëntie (Lua, Python, Squirrel, JS, enz.) We wilden ons "
+"concentreren op een geweldige engine en niet op een hoog aantal integraties."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"Geen ingebouwde vector types (vector3, matrix4, enz.), wat resulteert in "
+"sterk verminderde prestaties bij gebruik van aangepaste types (Lua, Python, "
+"Squirrel, JS, AS, enz.)."
 
 #: ../../docs/about/faq.rst:136
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
+"Vertragingen ofwel een onnodig hoog geheugengebruik door de garbage "
+"collector (Lua, Python, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:138
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
+"Moeilijke integratie met de broncode editor voor het verstrekken van code "
+"completion, live editing, etc. (allemaal). Dit wordt uitstekend ondersteund "
+"door GDScript."
 
 #: ../../docs/about/faq.rst:142
 msgid "GDScript was designed to curtail the issues above and more."
 msgstr ""
+"GDScript werd ontworpen om bovenstaande en bijkomende problemen tot een "
+"minimum te beperken."
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "Wat voor soort 3D-model formaten ondersteunt Godot?"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
+"Godot ondersteunt Collada via de `OpenCollada <https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_exporteur (Maya, 3DSMax)."
 
 #: ../../docs/about/faq.rst:149
 msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"Als je Blender gebruikt, kijk dan eens naar onze eigen `Better Collada "
+"Exporter <https://godotengine.org/download>` _."
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "Vanaf Godot 3.0 wordt glTF ondersteund."
 
 #: ../../docs/about/faq.rst:153
 msgid ""
@@ -873,11 +931,18 @@ msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question below.)"
 msgstr ""
+"De FBX SDK heeft een `beperkende licentie <https://www.blender.org/bf/"
+"Autodesk_FBX_License.rtf>`_, die niet compatibel is met de `open licentie "
+"<https://opensource.org/licenses/MIT>`_ van Godot zelf. FBX-ondersteuning "
+"kan echter nog steeds als plugin door derden worden geleverd. (Zie de vraag "
+"over Plugins hieronder)"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
+"Zal [noem een gesloten SDK zoals FMOD, GameWorks, etc.] ooit worden "
+"ondersteund in Godot?"
 
 #: ../../docs/about/faq.rst:161
 msgid ""
@@ -886,6 +951,10 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"Het objectief van Godot is om een vrije en open-source engine met MIT-"
+"licentie te maken, die modulair en uitbreidbaar is. De kernontwikkelaars van "
+"de engine hebben geen plannen om closed-source/merkgebonden SDKs te "
+"ondersteunen, aangezien dit zou indruisen tegen Godot's ethos."
 
 #: ../../docs/about/faq.rst:166
 msgid ""
@@ -893,12 +962,17 @@ msgid ""
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
+"Dit gezegd zijnde, aangezien Godot open-source is en modulair, is er niets "
+"wat jou of eender wie belemmert om deze bibliotheken als een module toe te "
+"voegen en samen met je spel als open- of closed-source te distribueren."
 
 #: ../../docs/about/faq.rst:170
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
+"Zie de Plugins vraag verderop om te leren hoe de SDK die je hebt gekozen "
+"toch nog kan worden ondersteund."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -907,12 +981,19 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"Als je een SDK van derden kent die niet door Godot wordt ondersteund, maar "
+"die gratis en open-source integratie biedt, overweeg dan om het "
+"integratiewerk zelf te starten. Godot is niet de eigendom van één persoon; "
+"het is van de gemeenschap en groeit dankzij ambitieuze vrijwilligers zoals "
+"jijzelf."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
+"Hoe moeten assets worden gemaakt om meerdere resoluties en hoogte-breedte "
+"verhoudingen aan te kunnen?"
 
 #: ../../docs/about/faq.rst:181
 msgid ""
@@ -924,6 +1005,14 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"Deze vraag komt regelmatig terug en is waarschijnlijk te danken aan het "
+"misverstand dat Apple heeft gecreëerd toen ze de resolutie van hun "
+"toestellen verdubbelden. Het liet mensen veronderstellen dat het een goed "
+"idee was om dezelfde assets in verschillende resoluties te hebben, dus "
+"gingen velen die weg op. Dat werkte oorspronkelijk ook tot op zekere hoogte, "
+"maar enkel voor Apple toestellen. Nadien werd een veelvoud Android- en Apple-"
+"toestellen met verschillende resoluties en beeldverhoudingen gemaakt, met "
+"een brede waaier aan formaten en DPI's."
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -932,6 +1021,10 @@ msgid ""
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
+"De meest courante en meest geschikte werkwijze om hiermee om te gaan, is om "
+"een enkele basisresolutie te gebruiken voor het spel en alleen verschillende "
+"schermverhoudingen te aan te passen. Dit is vooral nodig voor 2D, want bij "
+"3D is het enkel kwestie van de XFov of YFov van de camera aan te passen."
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -942,6 +1035,13 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"Kies een basisresolutie voor je game. Ook al zijn er toestellen die tot 2K "
+"gaan en toestellen die tot 400p gaan, toch zal gewone hardware-schaling in "
+"uw toestel daarvoor zorgen met weinig of geen impact op prestaties. De meest "
+"voorkomende keuzes zijn ofwel in de buurt van 1080p (1920x1080) of 720p "
+"(1280x720). Houd er rekening mee dat hoe hoger de resolutie, hoe groter uw "
+"assets, hoe meer geheugen er nodig zal zijn en hoe langer het duurt om ze te "
+"laden."
 
 #: ../../docs/about/faq.rst:201
 msgid ""
@@ -949,6 +1049,9 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
+"Gebruik de uitrekmogelijkheden van Godot; 2D-uitrekken met behoud van "
+"beeldverhoudingen werkt het beste. Bekijk de: ref: "
+"`doc_multiple_resolutions` tutorial hierover hoe dit te bereiken."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -957,6 +1060,10 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
+"Bepaal een minimum resolutie en bepaal vervolgens of je je spel verticaal of "
+"horizontaal wilt uitrekken voor verschillende hoogte-breedte verhoudingen, "
+"ofwel dat er één hoogte-breedte verhouding is en dat je zwarte balken wilt "
+"weergeven. Dit wordt ook uitgelegd in :ref:`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -964,10 +1071,14 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"Gebruik voor gebruikersinterfaces de :ref:`anchoring <doc_size_and_anchors>` "
+"om te bepalen waar besturingselementen moeten blijven of verschuiven. "
+"Overweeg om meer te leren over containers als de gebruikersinterface "
+"complexer is."
 
 #: ../../docs/about/faq.rst:214
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr ""
+msgstr "En dat is het dan! Je spel zou in meerdere resoluties moeten werken."
 
 #: ../../docs/about/faq.rst:216
 msgid ""
@@ -976,10 +1087,14 @@ msgid ""
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
+"Als je je spel ook wilt laten werken op oude toestellen met kleine schermen "
+"(minder dan 300 pixels breed), kan je de exportoptie gebruiken om "
+"afbeeldingen te verkleinen en deze te gebruiken voor specifieke "
+"schermformaten in de App Store of Google Play."
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "Hoe kan ik Godot uitbreiden?"
 
 #: ../../docs/about/faq.rst:224
 msgid ""
@@ -987,20 +1102,25 @@ msgid ""
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
+"Om Godot uit te breiden, bvb. met het maken van Godot Editor plugins of om "
+"ondersteuning voor bijkomende programmeertalen toe te voegen, gelieve de :"
+"ref:`EditorPlugins <doc_making_plugins>` en de tool scripts te raadplegen."
 
 #: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
-msgstr ""
+msgstr "Zie ook de officiële blog posts over deze onderwerpen:"
 
 #: ../../docs/about/faq.rst:230
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
+"`Een blik op de GDNative-architectuur <https://godotengine.org/article/look-"
+"gdnative-architecture>` _"
 
 #: ../../docs/about/faq.rst:231
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr ""
+msgstr "`GDNative is hier! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
 msgid ""
@@ -1009,16 +1129,22 @@ msgid ""
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
+"Je kan ook een kijkje nemen in de GDScript-implementatie, de Godot-modules, "
+"evenals de `onofficiële Python-ondersteuning <https://github.com/touilleMan/"
+"godot-python>` _ voor Godot. Dit is een goed uitgangspunt om te zien hoe een "
+"externe bibliotheek integreert met Godot."
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "Ik wil graag bijdragen! Waar kan ik beginnen?"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"Geweldig! Als open-sourceproject groeit Godot dankzij de innovatie en "
+"ambitie van ontwikkelaars zoals jij."
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -1028,10 +1154,16 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"De eerste plaats om te beginnen is in de `issues <https://github.com/"
+"godotengine/godot/issues>` _. Zoek een probleem dat je aanspreekt en ga "
+"vervolgens naar de `How to Contribute <https://github.com/godotengine/godot/"
+"blob/master/CONTRIBUTING.md#contributing-pull-requests>` _ handleiding om te "
+"leren hoe de broncode te forken, aanpassen, en een Pull Request (PR) met de "
+"wijzigingen te maken."
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "Ik heb een geweldig idee voor Godot. Hoe kan ik het delen?"
 
 #: ../../docs/about/faq.rst:251
 msgid ""
@@ -1045,39 +1177,58 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"Het is misschien verleidelijk om ideeën naar Godot te willen brengen, die "
+"resulteren in enorme kernveranderingen, als een soort nabootsing van wat een "
+"andere game-engine doet, of alternatieve workflows die je graag ingebouwd "
+"zou willen zien in de editor. Deze zijn geweldig en we zijn dankbaar dat "
+"zulke gemotiveerde mensen willen bijdragen, maar Godot's focus is en blijft "
+"de kernfunctionaliteit zoals beschreven in de `Roadmap <https://github.com/"
+"godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, `squashing bugs and "
+"addressing issues <https://github.com/godotengine/godot/issues>`_, en in "
+"conversatie tussen Godot gemeenschapsleden."
 
 #: ../../docs/about/faq.rst:260
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
+"De meeste ontwikkelaars in de Godot community zullen meer geïnteresseerd "
+"zijn om te leren over dingen zoals:"
 
 #: ../../docs/about/faq.rst:263
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"Jouw ervaring van het gebruik van de software en de problemen die je had (we "
+"geven hier veel meer om dan ideeën voor verbetering )."
 
 #: ../../docs/about/faq.rst:265
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
+"De functionaliteit die je geïmplementeerd zou willen zien omdat je ze nodig "
+"hebt voor je project."
 
 #: ../../docs/about/faq.rst:267
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr ""
+"De concepten die moeilijk te begrijpen waren tijdens het leren van de "
+"software."
 
 #: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
-msgstr ""
+msgstr "De onderdelen van de werkwijze die je geoptimaliseerd zou willen zien."
 
 #: ../../docs/about/faq.rst:269
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr ""
+"Delen waar een duidelijke tutorial nodig is of waar de documentatie niet "
+"duidelijk was."
 
 #: ../../docs/about/faq.rst:271
 msgid ""
@@ -1085,6 +1236,10 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
+"Krijg alsjeblief niet de indruk dat je ideeën voor Godot niet welkom zijn. "
+"Probeer ze daarentegen eerst te herformuleren als een probleem, zodat de "
+"ontwikkelaars en de community een goed aanknopingspunt hebben om over je "
+"ideeën te discussiëren."
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -1094,16 +1249,23 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"Een goede manier om je ideeën of problemen te delen met de community is als "
+"een gebruikerscenario. Leg uit wat je probeert te doen, welk resultaat je "
+"had verwacht, en wat er effectief gebeurde. Problemen en ideeën op deze "
+"manier kaderen, helpt de community om gefocust te blijven op het verbeteren "
+"van de ontwikkelaarsbeleving."
 
 #: ../../docs/about/faq.rst:281
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
+"Bonus punten als je schermafdrukken, concrete cijfers, test cases of "
+"voorbeeldprojecten (indien van toepassing) aanlevert."
 
 #: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "Waarom gebruikt Godot STL (Standard Template Library) niet"
 
 #: ../../docs/about/faq.rst:288
 msgid ""
@@ -1111,12 +1273,18 @@ msgid ""
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"Net als veel andere bibliotheken (Qt als voorbeeld) maakt Godot geen gebruik "
+"van de STL. Wij geloven dat de STL een geweldige bibliotheek voor algemeen "
+"gebruik is, maar we hadden specifieke vereisten voor Godot."
 
 #: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"STL-sjablonen creëren zeer grote symbolen, wat resulteert in enorme debug-"
+"binaries. In plaats daarvan gebruiken we weinig sjablonen met zeer korte "
+"namen."
 
 #: ../../docs/about/faq.rst:293
 msgid ""
@@ -1125,28 +1293,39 @@ msgid ""
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"De meeste van onze containers voorzien in speciale behoeften, zoals Vector, "
+"die gebruik maakt van copy-on-write en die we gebruiken om gegevens door te "
+"geven, of het RID-systeem, dat O(1) toegangstijd nodig heeft voor "
+"performantie. Ook onze HashMap-implementaties zijn ontworpen om naadloos te "
+"integreren met interne engine typen."
 
 #: ../../docs/about/faq.rst:294
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"Onze containers hebben ingebouwde geheugen-tracking, wat helpt om het "
+"geheugengebruik beter op te volgen."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"Voor grote arrays gebruiken we gepoold geheugen, dat kan worden toegewezen "
+"aan een vooraf toegewezen buffer of virtueel geheugen."
 
 #: ../../docs/about/faq.rst:296
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"We gebruiken ons eigen aangepaste String-type, omdat het STL-type te "
+"eenvoudig is en geen goede ondersteuning voor internationalisering biedt."
 
 #: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "Waarom gebruikt Godot geen exceptions?"
 
 #: ../../docs/about/faq.rst:301
 msgid ""
@@ -1155,16 +1334,22 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"We vinden dat spelletjes niet mogen crashen, wat er ook gebeurt. Wanneer "
+"zich een onverwachte situatie voordoet, zal Godot een fout afdrukken (die "
+"zelfs naar script kan worden getraceerd), maar dan zal Godot proberen om zo "
+"goed mogelijk te herstellen en verder te gaan."
 
 #: ../../docs/about/faq.rst:306
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
+"Bovendien vergroten exceptions aanzienlijk de grootte van het uitvoerbaar "
+"bestand."
 
 #: ../../docs/about/faq.rst:310
 msgid "Why does Godot not enforce RTTI?"
-msgstr ""
+msgstr "Waarom dwingt Godot geen RTTI (Run-time type information) af?"
 
 #: ../../docs/about/faq.rst:312
 msgid ""
@@ -1172,10 +1357,16 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
+"Godot voorziet in een eigen type-casting methodiek, die optioneel intern van "
+"RTTI kan gebruikmaken. Het uitschakelen van RTTI in Godot betekent dat "
+"aanzienlijk kleiner binaire formaten kunnen worden bereikt, tegen een kleine "
+"performantie kost."
 
 #: ../../docs/about/faq.rst:317
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
+"Waarom dwingt Godot gebruikers niet om DoD (Data Oriented Design) te "
+"implementeren?"
 
 #: ../../docs/about/faq.rst:319
 msgid ""
@@ -1183,6 +1374,10 @@ msgid ""
 "use cache coherency as best as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"Hoewel Godot intern voor veel van de zware uitvoeringstaken probeert de "
+"cache-coherentie zo goed mogelijk te gebruiken, zijn we van mening dat de "
+"meeste gebruikers niet echt gedwongen moeten worden DoD-methoden te "
+"gebruiken."
 
 #: ../../docs/about/faq.rst:323
 msgid ""
@@ -1192,12 +1387,20 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"DoD is hoofdzakelijk een cache-coherentieoptimalisatie die alleen "
+"aanzienlijke prestatieverbeteringen kan opleveren als het gaat om tientallen "
+"duizenden objecten (die elk frame met weinig aanpassingen worden verwerkt). "
+"Als je een paar honderd sprites of vijanden per frame verplaatst, zal DoD je "
+"niet helpen en moet je een andere benadering van optimalisatie overwegen."
 
 #: ../../docs/about/faq.rst:330
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"De overgrote meerderheid van spellen heeft dit niet nodig, en Godot biedt "
+"handige helpers om het werk te verlichten in de meeste gevallen wanneer je "
+"het toch nodig hebt."
 
 #: ../../docs/about/faq.rst:333
 msgid ""
@@ -1205,28 +1408,33 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"Als een spel echt zoveel objecten moet verwerken, raden we aan om C ++ en "
+"GDNative te gebruiken voor de prestatiegerichte onderdelen en GDScript (of C "
+"#) voor de rest van de game."
 
 #: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
-msgstr ""
+msgstr "Hoe kan ik Godot-ontwikkeling steunen of bijdragen?"
 
 #: ../../docs/about/faq.rst:340
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ""
+msgstr "Zie :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:343
 msgid "Who is working on Godot? How can I contact you?"
-msgstr ""
+msgstr "Wie werkt er mee aan Godot? Hoe kan ik contact met jullie opnemen?"
 
 #: ../../docs/about/faq.rst:345
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
+"Zie de overeenkomstige pagina op de `Godot-website <https://godotengine.org/"
+"contact>`_."
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr ""
+msgstr "Documentatie changelog"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -1235,6 +1443,10 @@ msgid ""
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"De documentatie wordt voortdurend verbeterd. De release van versie 3.1 bevat "
+"veel nieuwe tutorials, veel fixes en updates voor oude tutorials en veel "
+"updates voor de klassenreferentie. Hieronder is een lijst met nieuwe "
+"tutorials toegevoegd sinds versie 3.0."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -1242,30 +1454,32 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"Dit document bevat alleen nieuwe tutorials, dus niet alle wijzigingen worden "
+"weergegeven, veel tutorials zijn substantieel bijgewerkt, maar worden niet "
+"weergegeven in dit document."
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.1"
-msgstr ""
+msgstr "Nieuwe tutorials sinds versie 3.1"
 
 #: ../../docs/about/docs_changelog.rst:17
 #: ../../docs/about/docs_changelog.rst:110
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "De workflow van het Project"
 
 #: ../../docs/about/docs_changelog.rst:19
 msgid ":ref:`doc_android_custom_build`"
-msgstr ""
+msgstr ":ref:`Compileren voor Android <doc_android_custom_build>`"
 
 #: ../../docs/about/docs_changelog.rst:22
 #: ../../docs/about/docs_changelog.rst:126 ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:24
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr "Android"
+msgstr ":ref:`2D sprite animatie <doc_2d_sprite_animation>`"
 
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2
@@ -1273,77 +1487,74 @@ msgid "Audio"
 msgstr "Audio"
 
 #: ../../docs/about/docs_changelog.rst:29
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr "Android"
+msgstr ":ref:`Audiosynchronizatie <doc_sync_with_audio>`"
 
 #: ../../docs/about/docs_changelog.rst:32 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr ""
+msgstr "Wiskunde"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr "Aan de slag"
+msgstr ":ref:`Bezier curven <doc_beziers_and_curves>`"
 
 #: ../../docs/about/docs_changelog.rst:35
-#, fuzzy
 msgid ":ref:`doc_interpolation`"
-msgstr "Android"
+msgstr ":ref:`Interpolatie <doc_interpolation>`"
 
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
 msgid "Inputs"
-msgstr ""
+msgstr "Invoerapparaten"
 
 #: ../../docs/about/docs_changelog.rst:40
-#, fuzzy
 msgid ":ref:`doc_input_examples`"
-msgstr "Android"
+msgstr ":ref:`Invoer, voorbeelden <doc_input_examples>`"
 
 #: ../../docs/about/docs_changelog.rst:43 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
-msgstr ""
+msgstr "Internationalisering"
 
 #: ../../docs/about/docs_changelog.rst:45
-#, fuzzy
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr "Lokalisatie"
+msgstr ""
+":ref:`Lokalisatie met hulp van gettext <doc_localization_using_gettext>`"
 
 #: ../../docs/about/docs_changelog.rst:48
 #: ../../docs/about/docs_changelog.rst:162
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr ""
+msgstr "Shading"
 
 #: ../../docs/about/docs_changelog.rst:50
 msgid "Your First Shader Series:"
-msgstr ""
+msgstr "Je eerste Shader-serie:"
 
 #: ../../docs/about/docs_changelog.rst:52
 msgid ":ref:`doc_what_are_shaders`"
-msgstr ""
+msgstr ":ref:`Wat zijn Shaders? <doc_what_are_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:53
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr ""
+msgstr ":ref:`Je eerste CanvasItem-shader <doc_your_first_canvasitem_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:54
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr ""
+msgstr ":ref:`Je eerste Spatial-shader <doc_your_first_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid ":ref:`doc_your_second_spatial_shader`"
 msgstr ""
+":ref:`Je eerste Spatial-shader: deel 2 <doc_your_second_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:58
 #: ../../docs/tutorials/networking/index.rst:2
 msgid "Networking"
-msgstr ""
+msgstr "Networking"
 
 #: ../../docs/about/docs_changelog.rst:60
 msgid ":ref:`doc_webrtc`"
-msgstr ""
+msgstr ":ref:`WebRTC <doc_webrtc>`"
 
 #: ../../docs/about/docs_changelog.rst:63
 #: ../../docs/about/docs_changelog.rst:182
@@ -1352,199 +1563,195 @@ msgid "Plugins"
 msgstr "Plugins"
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_android_plugin`"
-msgstr "Android"
+msgstr ":ref:`Android-plugins ontwikkelen <doc_android_plugin>`"
 
 #: ../../docs/about/docs_changelog.rst:66
-#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr "Android"
+msgstr ":ref:`Inspector plugins <doc_inspector_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:67
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr "Android"
+msgstr ":ref:`Visuele Shader Plugins <doc_visual_shader_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:70
 #: ../../docs/about/docs_changelog.rst:193
 #: ../../docs/tutorials/threads/index.rst:2
 msgid "Multi-threading"
-msgstr ""
+msgstr "Multi-threading"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr "Aan de slag"
+msgstr ":ref:`Multithreading <doc_using_multiple_threads>`"
 
 #: ../../docs/about/docs_changelog.rst:75
 #: ../../docs/about/docs_changelog.rst:198
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
-msgstr "Content Maken"
+msgstr "Het creëren van content"
 
 #: ../../docs/about/docs_changelog.rst:82
 msgid "Procedural geometry series:"
-msgstr ""
+msgstr "Procedurele geometrie-serie:"
 
 #: ../../docs/about/docs_changelog.rst:78
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ""
+msgstr ":ref:`Procedurele geometrie <toc-procedural_geometry>`"
 
 #: ../../docs/about/docs_changelog.rst:79
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr "Android"
+msgstr ":ref:`ArrayMesh <doc_arraymesh>`"
 
 #: ../../docs/about/docs_changelog.rst:80
-#, fuzzy
 msgid ":ref:`doc_surfacetool`"
-msgstr "Android"
+msgstr ":ref:`SurfaceTool <doc_surfacetool>`"
 
 #: ../../docs/about/docs_changelog.rst:81
-#, fuzzy
 msgid ":ref:`doc_meshdatatool`"
-msgstr "Android"
+msgstr ":ref:`MeshDataTool <doc_meshdatatool>`"
 
 #: ../../docs/about/docs_changelog.rst:82
-#, fuzzy
 msgid ":ref:`doc_immediategeometry`"
-msgstr "Android"
+msgstr ":ref:`ImmediateGeometry <doc_immediategeometry>`"
 
 #: ../../docs/about/docs_changelog.rst:85
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "Animatie"
+msgstr "Optimalisatie"
 
 #: ../../docs/about/docs_changelog.rst:87
 msgid ":ref:`doc_using_multimesh`"
-msgstr ""
+msgstr ":ref:`Gebruik van MultiMesh <doc_using_multimesh>`"
 
 #: ../../docs/about/docs_changelog.rst:88
 msgid ":ref:`doc_using_servers`"
-msgstr ""
+msgstr ":ref:`Servers gebruiken <doc_using_servers>`"
 
 #: ../../docs/about/docs_changelog.rst:91
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "Juridisch"
 
 #: ../../docs/about/docs_changelog.rst:93
 msgid ":ref:`doc_complying_with_licenses`"
-msgstr ""
+msgstr ":ref:`Voldoen aan licentievoorwaarden <doc_complying_with_licenses>`"
 
 #: ../../docs/about/docs_changelog.rst:96
 msgid "New tutorials since version 3.0"
-msgstr ""
+msgstr "Nieuwe zelfstudies sinds versie 3.0"
 
 #: ../../docs/about/docs_changelog.rst:99
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:18
 msgid "Step by step"
-msgstr ""
+msgstr "Stap voor stap"
 
 #: ../../docs/about/docs_changelog.rst:101
 msgid ":ref:`doc_signals`"
-msgstr ""
+msgstr ":ref:`Signalen <doc_signals>`"
 
 #: ../../docs/about/docs_changelog.rst:102
 msgid ":ref:`doc_exporting`"
-msgstr ""
+msgstr ":ref:`Exporteren <doc_exporting>`"
 
 #: ../../docs/about/docs_changelog.rst:105
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr ""
+msgstr "Scripting"
 
 #: ../../docs/about/docs_changelog.rst:107
 msgid ":ref:`doc_gdscript_static_typing`"
-msgstr ""
+msgstr ":ref:`Statische typering <doc_gdscript_static_typing>`"
 
 #: ../../docs/about/docs_changelog.rst:112
 msgid "Best Practices:"
-msgstr ""
+msgstr "Best Practices:"
 
 #: ../../docs/about/docs_changelog.rst:114
 msgid ":ref:`doc_introduction_best_practices`"
-msgstr ""
+msgstr ":ref:`Inleiding <doc_introduction_best_practices>`"
 
 #: ../../docs/about/docs_changelog.rst:115
 msgid ":ref:`doc_what_are_godot_classes`"
-msgstr ""
+msgstr ":ref:`Wat zijn Godot klassen<doc_what_are_godot_classes>`"
 
 #: ../../docs/about/docs_changelog.rst:116
 msgid ":ref:`doc_scene_organization`"
-msgstr ""
+msgstr ":ref:`Scenes organiseren <doc_scene_organization>`"
 
 #: ../../docs/about/docs_changelog.rst:117
 msgid ":ref:`doc_scenes_versus_scripts`"
-msgstr ""
+msgstr ":ref:`Scenes versus scripts <doc_scenes_versus_scripts>`"
 
 #: ../../docs/about/docs_changelog.rst:118
 msgid ":ref:`doc_autoloads_versus_internal_nodes`"
 msgstr ""
+":ref:`Autoloads vs. interne knooppunten "
+"<doc_autoloads_versus_internal_nodes>`"
 
 #: ../../docs/about/docs_changelog.rst:119
 msgid ":ref:`doc_node_alternatives`"
-msgstr ""
+msgstr ":ref:`Alternatieven voor knooppunten <doc_node_alternatives>`"
 
 #: ../../docs/about/docs_changelog.rst:120
 msgid ":ref:`doc_godot_interfaces`"
-msgstr ""
+msgstr ":ref:`Godot interfaces <doc_godot_interfaces>`"
 
 #: ../../docs/about/docs_changelog.rst:121
 msgid ":ref:`doc_godot_notifications`"
-msgstr ""
+msgstr ":ref:`Meldingen in Godot <doc_godot_notifications>`"
 
 #: ../../docs/about/docs_changelog.rst:122
 msgid ":ref:`doc_data_preferences`"
-msgstr ""
+msgstr ":ref:`Keuze van datatypes <doc_data_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:123
 msgid ":ref:`doc_logic_preferences`"
-msgstr ""
+msgstr ":ref:`Programmalogica <doc_logic_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:128
 msgid ":ref:`doc_2d_lights_and_shadows`"
-msgstr ""
+msgstr ":ref:`2D - licht en schaduw <doc_2d_lights_and_shadows>`"
 
 #: ../../docs/about/docs_changelog.rst:129
 msgid ":ref:`doc_2d_meshes`"
-msgstr ""
+msgstr ":ref:`2D - Meshes <doc_2d_meshes>`"
 
 #: ../../docs/about/docs_changelog.rst:132 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:134
 msgid ":ref:`doc_csg_tools`"
-msgstr ""
+msgstr ":ref:`Constructive Solid Geometry (CSG) hulpmiddelen <doc_csg_tools>`"
 
 #: ../../docs/about/docs_changelog.rst:135
 msgid ":ref:`doc_animating_thousands_of_fish`"
 msgstr ""
+":ref:`Animatie van duizenden vissen met MultiMeshInstance "
+"<doc_animating_thousands_of_fish>`"
 
 #: ../../docs/about/docs_changelog.rst:136
 msgid ":ref:`doc_controlling_thousands_of_fish`"
 msgstr ""
+":ref:`Duizenden vissen besturen met Particles "
+"<doc_controlling_thousands_of_fish>`"
 
 #: ../../docs/about/docs_changelog.rst:139
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "Fysica"
 
 #: ../../docs/about/docs_changelog.rst:141
 msgid ":ref:`doc_ragdoll_system`"
-msgstr ""
+msgstr ":ref:`Lappenpop animatie <doc_ragdoll_system>`"
 
 #: ../../docs/about/docs_changelog.rst:142
 msgid ":ref:`doc_soft_body`"
-msgstr ""
+msgstr ":ref:`Soft-body dynamica <doc_soft_body>`"
 
 #: ../../docs/about/docs_changelog.rst:145
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:2
@@ -1555,124 +1762,128 @@ msgstr "Animatie"
 
 #: ../../docs/about/docs_changelog.rst:147
 msgid ":ref:`doc_2d_skeletons`"
-msgstr ""
+msgstr ":ref:`2D skeletten <doc_2d_skeletons>`"
 
 #: ../../docs/about/docs_changelog.rst:148
 msgid ":ref:`doc_animation_tree`"
-msgstr ""
+msgstr ":ref:`AnimationTree <doc_animation_tree>`"
 
 #: ../../docs/about/docs_changelog.rst:151 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
-msgstr ""
+msgstr "Grafische gebruikersomgeving"
 
 #: ../../docs/about/docs_changelog.rst:153
 msgid ":ref:`doc_gui_containers`"
-msgstr ""
+msgstr ":ref:`Containers <doc_gui_containers>`"
 
 #: ../../docs/about/docs_changelog.rst:156
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr ""
+msgstr "Viewports"
 
 #: ../../docs/about/docs_changelog.rst:158
 msgid ":ref:`doc_viewport_as_texture`"
-msgstr ""
+msgstr ":ref:`Viewport als texture gebruiken <doc_viewport_as_texture>`"
 
 #: ../../docs/about/docs_changelog.rst:159
 msgid ":ref:`doc_custom_postprocessing`"
-msgstr ""
+msgstr ":ref:`Specifieke nabewerking <doc_custom_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:164
 msgid ":ref:`doc_intro_to_shaders_water_workshop`"
 msgstr ""
+":ref:`Inleiding tot shaders: werken met water "
+"<doc_intro_to_shaders_water_workshop>`"
 
 #: ../../docs/about/docs_changelog.rst:165
 msgid ":ref:`doc_migrating_to_godot_shader_language`"
 msgstr ""
+":ref:`Migratie naar de Godot shader-taal "
+"<doc_migrating_to_godot_shader_language>`"
 
 #: ../../docs/about/docs_changelog.rst:166
 msgid ":ref:`doc_advanced_postprocessing`"
-msgstr ""
+msgstr ":ref:`Nabewerking voor gevorderden <doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:168
 msgid "Shading Reference:"
-msgstr ""
+msgstr "Referentielijst Shading:"
 
 #: ../../docs/about/docs_changelog.rst:170
 msgid ":ref:`doc_shaders`"
-msgstr ""
+msgstr ":ref:`Shaders <doc_shaders>`"
 
 #: ../../docs/about/docs_changelog.rst:171
 msgid ":ref:`doc_shading_language`"
-msgstr ""
+msgstr ":ref:`Shading taal <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:172
 msgid ":ref:`doc_spatial_shader`"
-msgstr ""
+msgstr ":ref:`Spatial-shader <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:173
 msgid ":ref:`doc_canvas_item_shader`"
-msgstr ""
+msgstr ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:174
 msgid ":ref:`doc_particle_shader`"
-msgstr ""
+msgstr ":ref:`Particle shaders <doc_particle_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:177 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr ""
+msgstr "Virtuele realiteit"
 
 #: ../../docs/about/docs_changelog.rst:179
 msgid ":ref:`doc_vr_starter_tutorial`"
-msgstr ""
+msgstr ":ref:`VR inleiding <doc_vr_starter_tutorial>`"
 
 #: ../../docs/about/docs_changelog.rst:184
-#, fuzzy
 msgid ":ref:`doc_making_main_screen_plugins`"
-msgstr "Aan de slag"
+msgstr ":ref:`Godot editor plugins maken <doc_making_main_screen_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:185
 msgid ":ref:`doc_spatial_gizmo_plugins`"
-msgstr ""
+msgstr ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:188
 #: ../../docs/tutorials/platform/index.rst:2
 msgid "Platform-specific"
-msgstr ""
+msgstr "Platform-gebonden"
 
 #: ../../docs/about/docs_changelog.rst:190
 msgid ":ref:`doc_customizing_html5_shell`"
-msgstr ""
+msgstr ":ref:`HTML5 Shell aanpassen <doc_customizing_html5_shell>`"
 
 #: ../../docs/about/docs_changelog.rst:195
 msgid ":ref:`doc_thread_safe_apis`"
-msgstr ""
+msgstr ":ref:`Thread-safe APIs <doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:200
 msgid ":ref:`doc_making_trees`"
-msgstr ""
+msgstr ":ref:`Bomen en vegetatie <doc_making_trees>`"
 
 #: ../../docs/about/docs_changelog.rst:203
 #: ../../docs/tutorials/misc/index.rst:2
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Diverse"
 
 #: ../../docs/about/docs_changelog.rst:205
 msgid ":ref:`doc_jitter_stutter`"
-msgstr ""
+msgstr ":ref:`Gestotter oplossen <doc_jitter_stutter>`"
 
 #: ../../docs/about/docs_changelog.rst:206
 msgid ":ref:`doc_running_code_in_the_editor`"
 msgstr ""
+":ref:`Scriptcode uitvoeren in de editor <doc_running_code_in_the_editor>`"
 
 #: ../../docs/about/docs_changelog.rst:207
 msgid ":ref:`doc_change_scenes_manually`"
-msgstr ""
+msgstr ":ref:`Manueel van scene wisselen <doc_change_scenes_manually>`"
 
 #: ../../docs/about/docs_changelog.rst:208
 msgid ":ref:`doc_gles2_gles3_differences`"
-msgstr ""
+msgstr ":ref:`Verschillen tussen GLES2 en GLES3 <doc_gles2_gles3_differences>`"
 
 #: ../../docs/about/docs_changelog.rst:211
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:350
@@ -1683,28 +1894,31 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 #: ../../docs/development/compiling/compiling_for_uwp.rst:24
 msgid "Compiling"
-msgstr ""
+msgstr "Compileren"
 
 #: ../../docs/about/docs_changelog.rst:213
 msgid ":ref:`doc_optimizing_for_size`"
-msgstr ""
+msgstr ":ref:`Optimaliseren voor grootte <doc_optimizing_for_size>`"
 
 #: ../../docs/about/docs_changelog.rst:214
 msgid ":ref:`doc_compiling_with_script_encryption_key`"
 msgstr ""
+":ref:`Compilatie met scriptversleuteling "
+"<doc_compiling_with_script_encryption_key>`"
 
 #: ../../docs/about/docs_changelog.rst:217
 #: ../../docs/development/cpp/index.rst:2
 msgid "Engine development"
-msgstr ""
+msgstr "Engine ontwikkeling"
 
 #: ../../docs/about/docs_changelog.rst:219
 msgid ":ref:`doc_binding_to_external_libraries`"
 msgstr ""
+":ref:`Externe bibliotheken gebruiken <doc_binding_to_external_libraries>`"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr ""
+msgstr "Inleiding tot Godot’s editor"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1712,35 +1926,43 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"In deze zelfstudie wordt je door de interface van Godot geleid. We tonen je "
+"de **Project Manager, Docks, Werkruimtes** en alles wat je moet weten om aan "
+"de slag te gaan met de spelmotor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
-msgstr ""
+msgstr "Project manager"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "It lets you create, remove, import or play game projects."
 msgstr ""
+"Wanneer je Godot start, is de Project Manager het eerste venster dat je te "
+"zien krijgt. Het laat je toe om spelprojecten te maken, verwijderen, "
+"importeren of spelen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:16
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:49
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:16
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:22
 msgid "|image0|"
-msgstr ""
+msgstr "|image0|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:18
 msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
+"In de rechterbovenhoek vind je een uitvouwmenu dat toelaat om de taal van de "
+"editor te wijzigen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:48
 msgid "|image1|"
-msgstr ""
+msgstr "|image1|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:23
 msgid ""
@@ -1749,40 +1971,49 @@ msgid ""
 "you want, click download, once it's finished downloading click install and "
 "choose where you want the project to go."
 msgstr ""
+"Vanaf het tabblad **Sjablonen** kun je open source projectsjablonen en "
+"demo's downloaden om sneller van start te gaan. Selecteer gewoon de sjabloon "
+"of demo die je wenst, klik op download, klik op installeren zodra het klaar "
+"is met downloaden en kies waar het project moet bewaard worden."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:28
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:58
 msgid "|image2|"
-msgstr ""
+msgstr "|image2|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 msgid "Create or import a project"
-msgstr ""
+msgstr "Een project aanmaken of importeren"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:33
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Give "
 "it a name and choose an empty folder on your computer to save it."
 msgstr ""
+"Klik rechts op de knop ``Nieuw project`` om een nieuw project aan te maken. "
+"Geef het project een naam en kies een lege map op de computer om het op te "
+"slaan."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:36
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:83
 msgid "|image3|"
-msgstr ""
+msgstr "|image3|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
+"Klik op de knop Bladeren om de bestandsbrowser van Godot te openen en een "
+"locatie te kiezen of typ het pad van de map in het veld Projectpad."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:41
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:88
 msgid "|image4|"
-msgstr ""
+msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:43
 msgid ""
@@ -1790,18 +2021,23 @@ msgid ""
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
+"Als je het groene vinkje aan de rechterkant ziet, betekent dit dat de engine "
+"een lege map detecteert en kan je klikken op ``Maken``. Godot zal het "
+"project voor je aanmaken en openen in de editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:47
 msgid ""
 "The next time you’ll open Godot, you’ll see your new project in the list. "
 "Double click on it to open it in the editor."
 msgstr ""
+"De volgende keer dat je Godot opent, zie je het nieuwe project in de lijst. "
+"Dubbelklik erop om het te openen in de editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:50
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:92
 msgid "|image5|"
-msgstr ""
+msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:52
 msgid ""
@@ -1816,38 +2052,36 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:113
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
-#, fuzzy
 msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr "Als het pad naar de map juist is zie je een groen vinkje."
+msgstr "Als het pad naar de map juist is, zie je een groen vinkje."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:60
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:121
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid "Your first look at Godot’s editor"
 msgstr "Je eerste blik op Godots editor"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:65
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
-"Welkom in Godot! Met je project geopend zou je de editors interface moeten "
-"zien met de 3d viewport actief. Je kan de huidige workspace veranderen aan "
+"Welkom in Godot! Met het project geopend zou je de editor interface moeten "
+"zien met de 3d viewport actief. Je kan de huidige werkruimte veranderen aan "
 "de bovenkant van de interface. Klik op 2d om te switchen naar de 2d "
-"workspace."
+"werkruimte."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:142
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
 msgid "Now you should see this interface, with empty docks on the right side."
@@ -1857,7 +2091,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:74
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:148
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:76
 msgid ""
@@ -1868,48 +2102,45 @@ msgstr ""
 "**workspaces**, en de **playtest buttons** zien."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:79
-#, fuzzy
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
-"Links heb je de **FileSystem dock**, waar je je projectbestanden en assets "
+"Links vind je de **FileSystem dock**, waar je je projectbestanden en assets "
 "beheert."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:153
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:84
-#, fuzzy
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
 "Rechts vind je de **Scene dock** die de inhoud van de actieve scene "
-"weergeeft en de **Inspector** in de rechteronderhoek."
+"weergeeft, en in de rechteronderhoek de **Inspecteur**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:161
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:89
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you’ll find tools "
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"In het midden hebben we de **Toolbar** bovenaan, waar je tools vindt om je "
-"sceneobjecten te verplaatsen, schalen of vastzetten. Het verandert als je "
-"tussen verschillende workspaces switched."
+"In het midden bovenaan hebben we de **Werkbalk**, waar je gereedschap kan "
+"vinden om je scene-objecten te verplaatsen, schalen of vastzetten. De "
+"werkbalk verandert als je tussen verschillende workspaces wisselt."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:168
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
@@ -1917,20 +2148,25 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
+"Het **Onderste Paneel** bevat de debug console, animatie editor, audio "
+"mixer, enz. Zij zijn breed en kunnen veel ruimte innemen, daarom zijn ze "
+"standaard toegevouwen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:99
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:115
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid "The workspaces"
-msgstr ""
+msgstr "De werkruimtes"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:104
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
+"Bovenaan zie je vier knoppen voor werkruimtes: 2D, 3D, Script, en Asset-"
+"bibliotheek."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:107
 msgid ""
@@ -1938,35 +2174,44 @@ msgid ""
 "games, the 2D workspace is where you'll build your interfaces. Press F1 to "
 "access it."
 msgstr ""
+"Voor eender welk soort spel, zal je altijd de **2D werkruimte** nodig "
+"hebben. Ze dient namelijk ook om gebruikersomgevingen te ontwerpen, niet "
+"enkel voor 2D spellen. Druk op F1 om er naartoe te wisselen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
 msgid "|image15|"
-msgstr ""
+msgstr "|image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:112
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
+"In de **3D werkruimte** kan je meshes, licht en levels ontwerpen voor 3D "
+"spellen. Druk op F3 om er naartoe te wisselen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid "|image16|"
-msgstr ""
+msgstr "|image16|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
 msgid ""
 "Notice the text [perspective] under the toolbar, it is a button that opens a "
 "list of options related to the 3D viewport."
 msgstr ""
+"Merk ook de [Perspectief] knop op onder de werkbalk, deze laat je toe om een "
+"optielijst voor het 3D venster te tonen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:119
 msgid "|image20|"
-msgstr ""
+msgstr "|image20|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:121
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
+"Lees :ref:`doc_introduction_to_3d` als je meer wil weten over de **3D "
+"werkruimte**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:123
 msgid ""
@@ -1974,20 +2219,26 @@ msgid ""
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
 "to search the reference."
 msgstr ""
+"De **Script** werkruimte is een programmacode editor compleet met debugger, "
+"automatische aanvulling van code, en een ingebouwd naslagwerk voor "
+"programmacode. Druk op F3 om er naartoe te gaan, en op F4 om te zoeken in de "
+"index."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:127
 msgid "|image17|"
-msgstr ""
+msgstr "|image17|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
+"De **AssetLib** tenslotte is een bibliotheek van vrije aanvullingen, scripts "
+"en assets om te gebruiken in je projecten."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid "Modify the interface"
-msgstr ""
+msgstr "De omgeving personaliseren"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:135
 msgid ""
@@ -1995,39 +2246,48 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio for instance."
 msgstr ""
+"De Godot gebruiksomgeving is beperkt tot één venster. Je kan het niet "
+"opsplitsen in meerdere venster, maar je kan bijvoorbeeld wel een externe "
+"programmacode editor configureren zoals Atom of Visual Studio."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
 msgid "Move and resize docks"
-msgstr ""
+msgstr "Docks verplaatsen en herschalen"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr ""
+"Klik en sleep met de rand van eender welke dock of paneel om het horizontaal "
+"of verticaal van grootte te veranderen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid "|image18|"
-msgstr ""
+msgstr "|image18|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
+"Klik op het icoontje met drie punten aan de bovenkant van eender welke dock "
+"om deze te verplaatsen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid "|image19|"
-msgstr ""
+msgstr "|image19|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:152
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
+"Ga naar het ``Editor`` menu en de ``Editor Instellingen`` om de stijl van de "
+"editor aan te passen."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr ""
+msgstr "Scenes en knooppunten"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
 msgid ""
@@ -2036,6 +2296,10 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"Stel je even voor dat je geen spelontwikkelaar meer bent. In plaats daarvan "
+"ben je een chef-kok! Verander je hipster-outfit voor een toque en een jas "
+"met dubbele rij knopen. In plaats van spelletjes te maken, maak je nieuwe en "
+"heerlijke recepten voor je gasten."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -2044,6 +2308,10 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
+"Dus, hoe creëert een chef-kok een recept? Recepten zijn in twee "
+"onderverdeeld: het eerste deel zijn de ingrediënten en het tweede deel zijn "
+"de instructies om het te bereiden. Op deze manier kan iedereen het recept "
+"volgen en genieten van je prachtige creatie."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -2051,19 +2319,25 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
+"Spelletjes maken in Godot werkt ongeveer hetzelfde. Het gebruik van de motor "
+"voelt aan alsof je in een keuken bent. In deze keuken zijn *knooppunten* als "
+"een koelkast vol verse ingrediënten om mee te koken."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
+"Er zijn vele soorten knooppunten. Sommige tonen beelden, andere spelen "
+"geluid af, andere knooppunten tonen 3D-modellen, enz. Zo zijn er tientallen "
+"van."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:110
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:46
 #: ../../docs/development/file_formats/tscn.rst:26
 msgid "Nodes"
-msgstr ""
+msgstr "Knooppunten"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -2072,32 +2346,38 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
+"Maar laten we met de basis beginnen. Knooppunten zijn de fundamentele "
+"bouwstenen voor het maken van een spel. Zoals hierboven vermeld, kan een "
+"knooppunt een verscheidenheid aan gespecialiseerde functies uitvoeren. "
+"Echter, elk knooppunt heeft altijd de volgende kenmerken:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr ""
+msgstr "Het heeft een naam."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr ""
+msgstr "Het heeft aanpasbare eigenschappen."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
-msgstr ""
+msgstr "Het kan een callback ontvangen om elk frame te verwerken."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr ""
+msgstr "Het kan uitgebreid worden (om meer functies te hebben)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to another node as a child."
-msgstr ""
+msgstr "Het kan als kind worden toegevoegd aan een ander knooppunt."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
+"De laatste is belangrijk. Knooppunten kunnen als kind andere knopen hebben. "
+"Als de knooppunten zo gerangschikt worden, vormen ze een **boom**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -2105,6 +2385,10 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
+"In Godot creëert de mogelijkheid om knooppunten op deze manier te "
+"rangschikken een krachtig hulpmiddel voor het organiseren van projecten. "
+"Omdat verschillende knooppunten verschillende functies hebben, maakt het "
+"combineren ervan het mogelijk om complexere functionaliteit te creëren."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -2112,41 +2396,53 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
+"Maak je geen zorgen als dit nog niet duidelijk is. We zullen hier in de "
+"volgende secties dieper op ingaan. Het belangrijkste feit om vooralsnog niet "
+"te vergeten, is dat er knooppunten bestaan en ze op deze manier gerangschikt "
+"kunnen worden."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:75
 msgid "Scenes"
-msgstr ""
+msgstr "Scènes"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
 "Now that the concept of nodes has been defined, the next logical step is to "
 "explain what a Scene is."
 msgstr ""
+"Nu het concept van knooppunten is beschreven, is de volgende logische stap "
+"om uit te leggen wat een scène is."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
 msgid ""
 "A scene is composed of a group of nodes organized hierarchically (in tree "
 "fashion). Furthermore, a scene:"
 msgstr ""
+"Een scène bestaat uit een groep knooppunten die hiërarchisch is "
+"georganiseerd, in een boomstructuur. Daarnaast heeft een scène volgende "
+"kenmerken:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has one root node."
-msgstr ""
+msgstr "ze heeft altijd één hoofdknooppunt."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr ""
+msgstr "ze kan worden opgeslagen en opnieuw geladen."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr ""
+msgstr "ze kan *geïnstantieerd worden* (hierover later meer)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
+"Een spelletje spelen betekent een scène uitvoeren. Een project kan meerdere "
+"scènes bevatten, maar om het spel te starten, moet één ervan als hoofdscène "
+"worden geselecteerd."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -2154,10 +2450,14 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
+"In essentie is de Godot editor dus een **scène editor**. Hij bevat veel "
+"tools voor het bewerken van 2D- en 3D-scènes en gebruikersinterfaces, maar "
+"het basisconcept van de editor is het bewerken van een scène en de "
+"knooppunten waaruit deze is samengesteld."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 msgid "Creating a new project"
-msgstr ""
+msgstr "Een nieuw project maken"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
 msgid ""
@@ -2165,18 +2465,26 @@ msgid ""
 "a long tradition in tutorials, we'll start with a \"Hello World\" project. "
 "This will introduce us to using the editor."
 msgstr ""
+"Laat ons deze abstracte concepten wat concreter maken met een voorbeeld. In "
+"navolging van een lange traditie in zelfstudie, zullen we beginnen met een "
+"\"Hello World\" project. Dit zal ons laten kennismaken met het gebruik van "
+"de editor."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
 msgid ""
 "If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
+"Als je Godot opstart buiten een project, verschijnt de Project Manager. Dit "
+"helpt spelontwikkelaars bij het beheren van hun projecten."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
 msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name."
 msgstr ""
+"Klik op de optie \"Nieuw project\" om een nieuw project te maken. Kies en "
+"maak een pad voor het project en geef de projectnaam op."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:91
 msgid ""
@@ -2186,19 +2494,26 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
+"Je kunt in deze fase ook de rendering backend selecteren (OpenGL ES 3.0 of "
+"OpenGL ES 2.0). De voor- en nadelen van elk van deze opties worden opgesomd "
+"om je te helpen kiezen, en je :ref:`doc_gles2_gles3_differences` nalezen "
+"voor meer details hierover. Merk op dat je de backend van de "
+"projectinstellingen kunt wijzigen als je later van gedachten verandert. Voor "
+"deze zelfstudie is elk van beide backend's geschikt."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:100
 #: ../../docs/getting_started/editor/external_editor.rst:32
 #: ../../docs/development/compiling/compiling_with_mono.rst:182
-#, fuzzy
 msgid "Editor"
-msgstr "Verwerker"
+msgstr "Editor"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:102
 msgid ""
 "Once you've created the \"New Project\", then open it. This will open the "
 "Godot editor:"
 msgstr ""
+"Open het \"nieuwe project\" nadat je het hebt gemaakt. Dit opent de Godot-"
+"editor:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:107
 msgid ""
@@ -2206,6 +2521,10 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
+"Zoals eerder vermeld, voelt het maken van games in Godot alsof je in een "
+"keuken bent, dus laten we de koelkast openen en wat nieuwe knooppunten aan "
+"het project toevoegen. We beginnen met een bericht \"Hello World\" dat we op "
+"het scherm plaatsen."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:112
 msgid ""
@@ -2215,6 +2534,12 @@ msgid ""
 "chosen node as a child of the currently selected node (or, in an empty "
 "scene, as the \"root\" node)."
 msgstr ""
+"Daarvoor moeten we een Label node toevoegen. Druk op de knop \"Kindknooppunt "
+"toevoegen\" linksboven in het scènedock (het pictogram staat voor een plus-"
+"symbool). Deze knop is de belangrijkste manier om nieuwe knooppunten toe te "
+"voegen aan een scène, en zal altijd het gekozen knooppunt toevoegen als een "
+"kind van het huidige geselecteerde knooppunt - of, in een lege scène, als "
+"het hoofdknooppunt."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid ""
@@ -2225,6 +2550,14 @@ msgid ""
 "pressing the \"Add Child Node\" button). You can also press the star-shaped "
 "icon to toggle the display of your favorited nodes."
 msgstr ""
+"In een lege scène (zonder hoofdknooppunt), toont het scène-dock "
+"verschillende opties om snel een hoofdknooppunt aan de scène toe te voegen. "
+"\"2D Scene\" voegt een Node2D knooppunt toe, \"3D Scene\" voegt een Spatial "
+"knooppunt toe, \"Gebruikersomgeving\" voegt een Control knooppunt toe, en "
+"\"Custom Node\" laat je toe eender welk soort knooppunt te selecteren (dus "
+"dit is equivalent aan het indrukken van de knop \"Kindknooppunt toevoegen"
+"\"). Je kan ook op het stervormige pictogram drukken om de weergave van je "
+"favoriete nodes in te schakelen."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:128
 msgid ""
@@ -2233,29 +2566,43 @@ msgid ""
 "its root node, likewise not every GUI or 2D scene needs a Control node or "
 "Node2D as their root node."
 msgstr ""
+"Merk op dat deze presets hier zijn voor je gemak en niet verplicht zijn voor "
+"de verschillende soorten scènes. Niet elke 3D-scène heeft een Spatial node "
+"nodig als hoofdknooppunt, en niet elke GUI- of 2D-scène heeft een Control "
+"knooppunt of Node2D nodig als hoofdknooppunt."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
+#, fuzzy
 msgid ""
 "Now, to add a label node to this scene you can click on the Custom Node "
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
+"Om nu een label knooppunt aan deze scène toe te voegen, kan je klikken op de "
+"knop \"Custom Node\" ofwel op de knop \"Kinderknooppunt toevoegen\" bovenaan "
+"het scène-dock. In scènes die niet leeg zijn, gebruik je de kinderknooppunt-"
+"knop om bijkomende knopen aan te maken."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:139
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
+"Dit opent het dialoogvenster \"Nieuw knooppunt maken\", waarin de lange "
+"lijst wordt getoond van knooppunten die kunnen worden gemaakt:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:144
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
+"Kies hier het \"Label\" knooppunt. Dit gaat makkelijkst door ernaar te "
+"zoeken:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:149
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
+"En maak nu het label! Er gebeurt heel wat wanneer je op \"Maken\" klikt:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:153
 msgid ""
@@ -2263,6 +2610,9 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
+"Eerst gaat de scène over naar de 2D-editor (omdat Label een 2D-knooptype "
+"is), verschijnt het Label in de linkerbovenhoek van het scène-venster en "
+"wordt het geselecteerd."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:156
 msgid ""
@@ -2270,28 +2620,37 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
+"Het knooppunt wordt weergegeven in de inspecteur (dock rechtsboven) en de "
+"label eigenschappen worden weergegeven in het infovenster (dock in de "
+"rechterbenedenhoek)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:160
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr ""
+"Onze volgende stap zal zijn om de \"Tekst\" eigenschap van het label te "
+"wijzigen. Laten we het veranderen in \"Hello World\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:165
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
+"Nu is alles klaar om de scène uit te voeren! Druk op de knop \"Speel scène\" "
+"in de bovenste balk (of druk op F6):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
 msgid "Aaaand... Oops."
-msgstr ""
+msgstr "En... Oeps!"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:174
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
+"Scènes moeten opgeslagen worden om te kunnen uitvoeren, dus bewaar eerst de "
+"scène naar iets als Hello.tscn in Scène -> opslaan:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:179
 msgid ""
@@ -2303,27 +2662,41 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
+"En nu gebeurt iets grappig. Het bestandsdialoogvenster is een speciaal "
+"dialoogvenster en laat je enkel toe om binnen het project op te slaan. De "
+"hoofdmap van het project is ``res://``, wat staat voor \"resource path"
+"\" (hulpbron pad). Dit betekent dat bestanden alleen binnen het project "
+"kunnen worden opgeslagen. Wanneer je in de toekomst bestandsoperaties doet "
+"in Godot, onthoud dan dat ``res://`` het pad is voor de hulpbronnen, en de "
+"manier is om te bepalen waar de bronbestanden zich in het spel bevinden, "
+"ongeacht het platform of de installatie locatie van het spel."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
+"Na het opslaan van de scène en het opnieuw indrukken van de afspeelknop, zou "
+"de \"Hello World\" demo eindelijk uitgevoerd moeten worden:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:192
 msgid "Success!"
-msgstr "Geslaagd!"
+msgstr "Gelukt!"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+#, fuzzy
 msgid ""
 "If this doesn't immediately work and you have a hiDPI display on at least "
 "one of your monitors, go to **Project → Project Settings → Display → "
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
+"Als dit toch niet direct werkt en je hebt een hiDPI display op minstens één "
+"van je beeldschermen, ga dan naar **Project → Project Settings → Project "
+"Settings → Display → Window** en schakel **Allow Hidpi** in onder **Dpi**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
 msgid "Configuring the project"
-msgstr ""
+msgstr "Het project configureren"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:206
 msgid ""
@@ -2332,6 +2705,10 @@ msgid ""
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
+"OK, het is tijd om het project te configureren. Op dit moment is de huidige "
+"scène afspelen de enige manier om iets te doen. Projecten kunnen echter "
+"meerdere scènes hebben, dus één ervan moet de hoofdrol spelen. Dat is de "
+"scène die zal worden geladen telkens wanneer het project wordt uitgevoerd."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:211
 msgid ""
@@ -2341,22 +2718,37 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
+"Al deze instellingen worden opgeslagen in een \"project.godot\" bestand, dat "
+"leesbare tekst in de win.ini indeling bevat (om makkelijk te bewerken). Er "
+"zijn tientallen instellingen die je in dit bestand kan wijzigen om aan te "
+"passen hoe een project wordt uitgevoerd. Om dit proces te vereenvoudigen, "
+"biedt Godot een dialoogvenster Projectinstellingen, dat dienst doet als een "
+"soort hulpmiddel om een project.godot-bestand te bewerken."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:217
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
+"Om dat dialoogvenster te openen, selecteert u Project -> "
+"Projectinstellingen. Probeer dit nu."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:219
+#, fuzzy
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
+"Zodra het venster wordt geopend, gaan we een hoofd scène selecteren. Zoek de "
+"eigenschap `Application/Run/Main scene` en klik erop om 'Hello.tscn' te "
+"selecteren."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:224
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
+"Dankzij deze aanpassing zal nu deze scène worden afgespeeld wanneer je op de "
+"gewone Speel-knop (of F5-toets) drukt, ongeacht welke scène op dat moment "
+"bewerkt wordt."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:227
 msgid ""
@@ -2365,6 +2757,11 @@ msgid ""
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
+"Het projectinstellingen dialoogvenster bevat een heleboel opties die kunnen "
+"opgeslagen worden in een project.godot bestand en toont hun standaard "
+"waarden. Als u een waarde wijzigt, wordt een vinkje gezet links van de naam. "
+"Dit betekent dat de eigenschap wordt opgeslagen in het project.godot bestand "
+"en onthouden."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:232
 msgid ""
@@ -2372,10 +2769,13 @@ msgid ""
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
+"Het is trouwens ook mogelijk om aangepaste configuratieopties toe te voegen "
+"en ze in te lezen tijdens de uitvoering van het spel met behulp van de :ref:"
+"`ProjectSettings <class_ProjectSettings>` singleton."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:236
 msgid "To be continued..."
-msgstr ""
+msgstr "Wordt vervolgd..."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:238
 msgid ""
@@ -2383,6 +2783,9 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
+"In deze zelfstudie werd gesproken over \"scènes en knooppunten\", maar tot "
+"nu toe is er slechts *één* scène en *één* knooppunt*! Maak je geen zorgen, "
+"de volgende zelfstudie zal daar dieper op ingaan..."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
@@ -2888,10 +3291,14 @@ msgid "Scene setup"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
+#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
 msgstr ""
+"Gebruik het dialoogvenster \"Kindknooppunt toevoegen\" dat toegankelijk is "
+"vanuit het tabblad Scène (of door op ``Ctrl+A`` te drukken) om een "
+"hiërarchie te creëren met de volgende knooppunten:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
 msgid "Panel"
@@ -2904,7 +3311,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr ""
+msgstr "Knop"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"
@@ -3578,14 +3985,14 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
-msgstr ""
+msgstr "Je eerste game"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:10
 msgid "Overview"
-msgstr ""
+msgstr "Overzicht"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:9
 msgid ""
@@ -3593,6 +4000,9 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
+"Deze tutorial begeleidt je tijdens het maken van je eerste Godot project. Je "
+"leert hoe de Godot Editor werkt, hoe je een project structureert en hoe je "
+"een 2D game maakt."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -3600,18 +4010,26 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
+"Dit project is een introductie tot de Godot engine. Er wordt verwacht dat je "
+"al enige programmeerervaring hebt. Heb je nog nooit geprogrammeerd, begin "
+"dan hier :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
+"De game heet \"Dodge the Creeps!\". Je personage moet bewegen om zo lang "
+"mogelijk de vijanden te ontwijken. Hier is een voorproefje van het "
+"eindresultaat:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
+"**Waarom 2D?** 3D games zijn veel complexer dan 2D games. Het is beter om in "
+"2D te werken tot je genoeg kennis hebt van het maken van games."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
@@ -3619,7 +4037,7 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide.rst:183
 #: ../../docs/development/cpp/configuring_an_ide.rst:310
 msgid "Project setup"
-msgstr ""
+msgstr "Projectconfiguratie"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -3627,6 +4045,10 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
+"Start Godot en creëer een nieuw project. Download daarna :download:"
+"`dodge_assets.zip <files/dodge_assets.zip>` - de afbeeldingen en audio die "
+"je nodig hebt om je game te maken. Unzip deze bestanden naar je "
+"projectfolder."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
 msgid ""
@@ -3634,6 +4056,9 @@ msgid ""
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
+"In deze tutorial verwachten we dat je bekend bent met de editor. Als je :ref:"
+"`doc_scenes_and_nodes` nog niet gelezen hebt, doe dat dan nu voor een uitleg "
+"van de editor en hoe je een project creëert."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
 msgid ""
@@ -3641,10 +4066,13 @@ msgid ""
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
+"Deze game gebruikt portretmodus, dus we moeten de grootte van het game "
+"venster aanpassen. Klik op Project -> Project Settings -> Display -> Window "
+"en zet \"Width\" naar ``480`` en \"Height\" naar ``720``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 msgid "Organizing the project"
-msgstr ""
+msgstr "Projectorganisatie"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
 msgid ""
@@ -3655,10 +4083,16 @@ msgid ""
 "and scripts in the project's root folder, referred to as ``res://``.  You "
 "can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
+"In dit project maken we 3 verschillende scenes: ``Player``,``Mob`` en "
+"``HUD``, die we combineren tot de ``Main`` scene van de game. In een groter "
+"project is het misschien handiger om folders aan te maken voor de scenes en "
+"scripts, maar voor deze kleine game kun je ze gewoon in de root folder van "
+"het project opslaan, die in het project wordt aangeduid met ``res://``. Je "
+"kan je projectfolders linksonder in het bestandssysteempaneel zien:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
-msgstr ""
+msgstr "Speler-scene"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
 msgid ""
@@ -3666,10 +4100,13 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
+"De eerste scene die we maken definieert het ``Player`` object. Een van de "
+"voordelen van een aparte Speler-scene is dat we hem apart kunnen testen, "
+"zelfs voordat we andere onderdelen van het spel hebben gemaakt."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 msgid "Node structure"
-msgstr ""
+msgstr "Nodestructuur"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:65
 msgid ""
@@ -5840,6 +6277,7 @@ msgid "The HBoxContainer horizontally aligns UI elements"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:333
+#, fuzzy
 msgid ""
 "VBoxContainer automatically arranges its children into a column. It puts "
 "them one after the other. If you use the separation parameter, it will leave "
@@ -5848,6 +6286,13 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainer rangschikt de onderliggende knopen automatisch in een kolom. "
+"Het rangschikt ze de ene na de andere. Als je de scheiding parameter "
+"gebruikt, wordt er een ruimte tussen de onderliggende knopen gelaten. "
+"HBoxContainer rangschikt UI-elementen in een rij. Het is vergelijkbaar met "
+"de VBoxContainer, met een extra ``add_spacer`` methode om een spacer "
+"knooppunt vóór het eerste of na het laatste kind toe te voegen vanuit een "
+"script."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:340
 msgid ""
@@ -10257,7 +10702,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "self"
-msgstr ""
+msgstr "zelf"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "Refers to current class instance."
@@ -11179,7 +11624,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:372
 msgid "Functions"
-msgstr ""
+msgstr "Functies"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:674
 msgid ""
@@ -14064,7 +14509,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Actie"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -14122,7 +14567,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr ""
+msgstr "Zelf"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -14762,7 +15207,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
-msgstr ""
+msgstr "Functionaliteiten"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -16128,7 +16573,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr ""
+msgstr "Mesh"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -16164,7 +16609,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
 #: ../../docs/development/file_formats/tscn.rst:161
 msgid "Skeleton"
-msgstr ""
+msgstr "Skelet"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
@@ -17728,7 +18173,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:262
 msgid "FPS"
-msgstr ""
+msgstr "FPS"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:264
 msgid ""
@@ -17737,6 +18182,10 @@ msgid ""
 "specify the frames per second used to edit them. Failing to do this may "
 "result in shaky animations."
 msgstr ""
+"De meeste 3D exportformaten slaan de animatietijdlijn op in seconden in "
+"plaats van frames. Gelieve te specifiëren hoeveel frames per seconde zijn "
+"gebruikt om ze te bewerken, opdat dat animaties zo getrouw mogelijk worden "
+"geïmporteerd. Dit niet doen kan leiden tot stotterende animaties."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:269
 msgid "Filter Script"
@@ -19462,7 +19911,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
 msgid "GDNative"
-msgstr "GDInheems"
+msgstr "GDNative"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 msgid "Clipboard synchronisation between engine and operating system"
@@ -22674,7 +23123,7 @@ msgstr "Type"
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:342
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:703
 msgid "Transform"
-msgstr ""
+msgstr "Transformatie"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
@@ -23354,7 +23803,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:288
 msgid "Color"
-msgstr ""
+msgstr "Kleur"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:290
 msgid "Used to change the color of the particles being emitted."
@@ -23402,7 +23851,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:322
 msgid "Emission Mask"
-msgstr ""
+msgstr "Emissie Masker"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:324
 msgid "Three types of emission masks can be generated from a texture:"
@@ -23429,7 +23878,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:343
 msgid "Emission Colors"
-msgstr ""
+msgstr "Emissie Kleuren"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:345
 msgid ""
@@ -39400,7 +39849,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:4
 msgid "Vector math"
-msgstr ""
+msgstr "Vectorwiskunde"
 
 #: ../../docs/tutorials/math/vector_math.rst:9
 msgid ""
@@ -39410,6 +39859,11 @@ msgid ""
 "Godot uses them extensively. Developing a good understanding of vector math "
 "is essential to becoming a strong game developer."
 msgstr ""
+"Deze tutorial is een korte en praktische introductie tot lineaire algebra in "
+"de context van game ontwikkeling. Lineaire algebra is de studie van vectoren "
+"en hun applicaties. Vectoren hebben veel toepassingen in 2D en 3D "
+"ontwikkeling en worden veel gebruikt in Godot. Een goede kennis van "
+"vectorwiskunde is essentieel om een goede game ontwikkelaar te worden."
 
 #: ../../docs/tutorials/math/vector_math.rst:15
 msgid ""
@@ -39487,6 +39941,9 @@ msgid ""
 "<class_Vector3>` for 2D and 3D usage, respectively. The same mathematical "
 "rules discussed in this article apply to both types."
 msgstr ""
+"Godot ondersteunt beide :ref:`Vector2 <class_Vector2>` en :ref:`Vector3 "
+"<class_Vector3>` voor gebruik in 2D en 3D. De wiskundige regels vermeld in "
+"dit artikel zijn op beide types van toepassing."
 
 #: ../../docs/tutorials/math/vector_math.rst:81
 msgid "Member access"
@@ -42404,7 +42861,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
 msgid "AnimationTree"
-msgstr ""
+msgstr "AnimatieBoom"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -44523,7 +44980,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Locale"
-msgstr "Locale"
+msgstr "Localisatie"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Language and Variant"
@@ -47417,7 +47874,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
 msgid "Theme"
-msgstr ""
+msgstr "Thema"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:27
 msgid ""
@@ -55208,19 +55665,20 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:94
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:160
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:220
+#, fuzzy
 msgid "COLOR"
-msgstr ""
+msgstr "COLOR"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:94
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:160
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:220
 msgid "Output color for each pixel."
-msgstr ""
+msgstr "Kleur voor elke pixel."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:96
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:222
 msgid "gl_FragCoord"
-msgstr ""
+msgstr "gl_FragCoord"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:96
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:98
@@ -55228,12 +55686,12 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:176
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:222
 msgid "vec4"
-msgstr ""
+msgstr "vec4"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:96
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:222
 msgid "FRAGCOORD"
-msgstr ""
+msgstr "FRAGCOORD"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:96
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:162
@@ -56859,7 +57317,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
 msgid "Asset Library"
-msgstr ""
+msgstr "Asset bibliotheek"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
@@ -65162,23 +65620,24 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "transform"
-msgstr ""
+msgstr "transformatie"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
+#, fuzzy
 msgid "14"
-msgstr ""
+msgstr "14"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "color"
-msgstr ""
+msgstr "kleur"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "15"
-msgstr ""
+msgstr "15"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "node path"
-msgstr ""
+msgstr "knooppunt pad"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:151
@@ -65190,35 +65649,35 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:272
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:303
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
 msgid "rid"
-msgstr ""
+msgstr "rid"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "17"
-msgstr ""
+msgstr "17"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "object"
-msgstr ""
+msgstr "object"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "dictionary"
-msgstr ""
+msgstr "woordenboek"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "19"
-msgstr ""
+msgstr "19"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "array"
-msgstr ""
+msgstr "reeks"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:65
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:181
@@ -66249,7 +66708,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:15
 msgid "Particles"
-msgstr ""
+msgstr "Partikels"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:17
 msgid ""
@@ -66717,7 +67176,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
-msgstr ""
+msgstr "Debuggen"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -66748,7 +67207,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
 msgid "Deploy with Remote Debug"
-msgstr ""
+msgstr "Opstarten met debugging op afstand"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:26
 msgid ""
@@ -66758,7 +67217,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid "Small Deploy with Network FS"
-msgstr ""
+msgstr "Klein uitvoerbaar bestand opstarten met netwerk bestandsserver"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:31
 msgid ""
@@ -66770,7 +67229,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
 msgid "Visible Collision Shapes"
-msgstr ""
+msgstr "Toon collision shapes"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:37
 msgid ""
@@ -66891,7 +67350,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:108
 msgid "Debugger"
-msgstr ""
+msgstr "Debugger"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:110
 msgid ""
@@ -66952,7 +67411,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
 msgid "Network Profiler"
-msgstr ""
+msgstr "Netwerk Profiler"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:135
 msgid ""
@@ -68547,7 +69006,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:66
 msgid "Run"
-msgstr ""
+msgstr "Opstarten"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:68
 msgid ""
@@ -70369,7 +70828,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
-msgstr ""
+msgstr "Vector"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
@@ -72004,7 +72463,7 @@ msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid "Filename"
@@ -75362,7 +75821,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
-msgstr ""
+msgstr "Vragen en antwoorden"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"

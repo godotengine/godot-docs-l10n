@@ -22,7 +22,7 @@ for file in weblate/*.po; do
         found_year=$(grep "$author_year" <<< "$found_name")
 	  fi
       if [ -z "$found_name" -o -z "$found_year" ]; then
-        new_authors+=$author$'\n'
+        new_authors+="# "$author$'\n'
       fi
     done <<< "$authors"
     if [ ! -z "$new_authors" ]; then

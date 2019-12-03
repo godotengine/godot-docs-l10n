@@ -5,6 +5,7 @@
 # burontsan <dullboy_375@yahoo.co.jp>, 2019.
 # Elmer Elmer <dendoupoppo@gmail.com>, 2019.
 # FourmiSushi <neko@fourmisushi.soy>, 2019.
+# FUJIYAMA Isuke <isuke770@gmail.com>, 2019.
 # Hidetsugu Takahashi <manzyun@gmail.com>, 2018-2019.
 # John Smith <weblater_jp@susa.eek.jp>, 2019.
 # Kazuki Miyanishi <mozukichi.0807@gmail.com>, 2018-2019.
@@ -25,8 +26,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-10-29 12:54+0100\n"
-"PO-Revision-Date: 2019-10-29 11:33+0000\n"
-"Last-Translator: kazuma kondo <kazmax7@gmail.com>\n"
+"PO-Revision-Date: 2019-12-03 07:10+0000\n"
+"Last-Translator: Wataru Onuki <watonu@magadou.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
 "Language: ja\n"
@@ -34,7 +35,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 3.10-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -85,8 +86,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
-"現時点では、翻訳版は「最新」(開発中)ブランチのみで提供されますが、しかし安定"
-"版Godotの使い方を学ぶのにも適しているはずです。"
+"現時点では、翻訳版は \"latest\" (開発中)ブランチのみで提供されますが、しかし"
+"安定版Godotの使い方を学ぶのにも適しているはずです。"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -259,9 +260,9 @@ msgid ""
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
 "コミュニティ開発の無料でオープンソースの2D/3Dゲームエンジン、Godot Engine の"
-"公式ドキュメントにようこそ！　この長い言葉の背後に、どんな使用制限も無い、い"
-"くつかのプラットフォームを対象とした様々なジャンルのゲームを作ることが出来る"
-"パワフルでユーザーフレンドリーなゲームエンジンを知ることになるでしょう。"
+"公式ドキュメントにようこそ！この長い言葉の背後に、どんな使用制限も無い、いく"
+"つかのプラットフォームを対象とした様々なジャンルのゲームを作ることが出来るパ"
+"ワフルでユーザーフレンドリーなゲームエンジンを知ることになるでしょう。"
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -365,10 +366,10 @@ msgid ""
 "readthedocs.org/>`_ tools."
 msgstr ""
 "このドキュメントは、Godot Engineコミュニティのメンバーによって継続的に作成、"
-"修正、編集、改訂されています。これは `reStructuredText<http://www.sphinx-doc."
-"org/en/stable/rest.html>`_\\ マークアップ言語でテキストファイルを介して編集さ"
-"れ、オープンソースの `Sphinx<http://www.sphinx-doc.org>`_\\ と "
-"`ReadTheDocs<https://readthedocs.org/>`_\\ toolsを使って静的なWebサイト/オフ"
+"修正、編集、改訂されています。これは `reStructuredText <http://www.sphinx-"
+"doc.org/en/stable/rest.html>`_\\ マークアップ言語でテキストファイルを介して編"
+"集され、オープンソースの `Sphinx <http://www.sphinx-doc.org>`_\\ と "
+"`ReadTheDocs <https://readthedocs.org/>`_\\ toolsを使って静的なWebサイト/オフ"
 "ライン文書にコンパイルされます。"
 
 #: ../../docs/about/introduction.rst:66
@@ -421,17 +422,16 @@ msgstr ""
 "す。"
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
 "games. It starts with the :ref:`Step by step <toc-learn-step_by_step>` "
 "tutorial which should be the entry point for all new users."
 msgstr ""
-":ref:`sec-learn`\\ セクションは、このドキュメントの主な\\ *存在意義*\\ です。"
-"エンジンを使ってゲームを作るのに必要なすべての情報が入っているからです。それ"
-"は、:ref:`ステップバイステップ <toc-learn-step_by_step>`\\ から始まるこれらの"
-"チュートリアルは、すべての新規ユーザーのための入り口です。"
+":ref:`sec-learn`\\ セクションは、このドキュメントの主な\\ *存在意義*\\ で、エ"
+"ンジンを使ってゲームを作るのに必要なすべての情報が入っています。それは、:ref:"
+"`ステップバイステップ <toc-learn-step_by_step>`\\ から始まるこれらのチュート"
+"リアルは、すべての新規ユーザーのための入り口です。"
 
 #: ../../docs/about/introduction.rst:91
 msgid ""
@@ -1073,7 +1073,7 @@ msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
-"`GDNativeアーキテクチャを参照<https://godotengine.org/article/look-gdnative-"
+"`GDNativeアーキテクチャを参照 <https://godotengine.org/article/look-gdnative-"
 "architecture>`_"
 
 #: ../../docs/about/faq.rst:231
@@ -1088,8 +1088,8 @@ msgid ""
 "another third-party library integrates with Godot."
 msgstr ""
 "GDScriptの実装、Godotモジュール、およびGodotの `非公式Pythonサポート<https://"
-"github.com/touilleMan/godot-python>` _もご覧ください。これは、別のサードパー"
-"ティライブラリがどのようにGodotに統合されるかを知る良い出発点です。"
+"github.com/touilleMan/godot-python>`_\\ もご覧ください。これは、別のサード"
+"パーティライブラリがどのようにGodotに統合されるかを知る良い出発点です。"
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
@@ -1410,7 +1410,7 @@ msgstr "プロジェクトワークフロー"
 
 #: ../../docs/about/docs_changelog.rst:19
 msgid ":ref:`doc_android_custom_build`"
-msgstr "/:ref:`doc_android_custom_build`"
+msgstr "\\ :ref:`doc_android_custom_build`"
 
 #: ../../docs/about/docs_changelog.rst:22
 #: ../../docs/about/docs_changelog.rst:126 ../../docs/tutorials/2d/index.rst:2
@@ -1419,7 +1419,7 @@ msgstr "\\ 2D"
 
 #: ../../docs/about/docs_changelog.rst:24
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr ":ref:`doc_2d_sprite_animation`"
+msgstr "\\ :ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2
@@ -1436,11 +1436,11 @@ msgstr "数学"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr ":ref:`doc_ways_to_contribute`"
+msgstr "\\ :ref:`doc_ways_to_contribute`"
 
 #: ../../docs/about/docs_changelog.rst:35
 msgid ":ref:`doc_interpolation`"
-msgstr ":ref:`doc_interpolation`"
+msgstr "\\ :ref:`doc_interpolation`"
 
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -1449,7 +1449,7 @@ msgstr "入力"
 
 #: ../../docs/about/docs_changelog.rst:40
 msgid ":ref:`doc_input_examples`"
-msgstr ":ref:`doc_input_examples`"
+msgstr "\\ :ref:`doc_input_examples`"
 
 #: ../../docs/about/docs_changelog.rst:43 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
@@ -1457,7 +1457,7 @@ msgstr "国際化"
 
 #: ../../docs/about/docs_changelog.rst:45
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr ":ref:`doc_localization_using_gettext`"
+msgstr "\\ :ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:48
 #: ../../docs/about/docs_changelog.rst:162
@@ -1492,7 +1492,7 @@ msgstr "ネットワーク"
 
 #: ../../docs/about/docs_changelog.rst:60
 msgid ":ref:`doc_webrtc`"
-msgstr ":ref:`doc_webrtc`"
+msgstr "\\ :ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:63
 #: ../../docs/about/docs_changelog.rst:182
@@ -1502,15 +1502,15 @@ msgstr "プラグイン"
 
 #: ../../docs/about/docs_changelog.rst:65
 msgid ":ref:`doc_android_plugin`"
-msgstr ":ref:`doc_android_plugin`"
+msgstr "\\ :ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:66
 msgid ":ref:`doc_inspector_plugins`"
-msgstr ":ref:`doc_inspector_plugins`"
+msgstr "\\ :ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:67
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr ":ref:`doc_visual_shader_plugins`"
+msgstr "\\ :ref:`doc_visual_shader_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:70
 #: ../../docs/about/docs_changelog.rst:193
@@ -1520,7 +1520,7 @@ msgstr "マルチスレッド"
 
 #: ../../docs/about/docs_changelog.rst:72
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr ":ref:`doc_using_multiple_threads`"
+msgstr "\\ :ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:75
 #: ../../docs/about/docs_changelog.rst:198
@@ -1530,27 +1530,27 @@ msgstr "コンテンツの作成"
 
 #: ../../docs/about/docs_changelog.rst:82
 msgid "Procedural geometry series:"
-msgstr "手続き型ジオメトリシリーズ："
+msgstr "手続き型幾何学シリーズ:"
 
 #: ../../docs/about/docs_changelog.rst:78
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ":ref:`Procedural geometry <toc-procedural_geometry>`"
+msgstr "手続き型幾何学\\ :ref:`手続き型幾何学 <toc-procedural_geometry>`\\"
 
 #: ../../docs/about/docs_changelog.rst:79
 msgid ":ref:`doc_arraymesh`"
-msgstr ":ref:`doc_arraymesh`"
+msgstr "\\ :ref:`doc_arraymesh`"
 
 #: ../../docs/about/docs_changelog.rst:80
 msgid ":ref:`doc_surfacetool`"
-msgstr ":ref:`doc_surfacetool`"
+msgstr "\\ :ref:`doc_surfacetool`"
 
 #: ../../docs/about/docs_changelog.rst:81
 msgid ":ref:`doc_meshdatatool`"
-msgstr ":ref:`doc_meshdatatool`"
+msgstr "\\ :ref:`doc_meshdatatool`"
 
 #: ../../docs/about/docs_changelog.rst:82
 msgid ":ref:`doc_immediategeometry`"
-msgstr ":ref:`doc_immediategeometry`"
+msgstr "\\ :ref:`doc_immediategeometry`"
 
 #: ../../docs/about/docs_changelog.rst:85
 #: ../../docs/tutorials/optimization/index.rst:2
@@ -1587,7 +1587,7 @@ msgstr "ステップ・バイ・ステップ"
 
 #: ../../docs/about/docs_changelog.rst:101
 msgid ":ref:`doc_signals`"
-msgstr ":ref:`doc_signals`"
+msgstr "\\ :ref:`doc_signals`"
 
 #: ../../docs/about/docs_changelog.rst:102
 msgid ":ref:`doc_exporting`"
@@ -1618,7 +1618,7 @@ msgstr "\\:ref:`doc_what_are_godot_classes`"
 
 #: ../../docs/about/docs_changelog.rst:116
 msgid ":ref:`doc_scene_organization`"
-msgstr ":ref:`doc_scene_organization`"
+msgstr "\\ :ref:`doc_scene_organization`"
 
 #: ../../docs/about/docs_changelog.rst:117
 msgid ":ref:`doc_scenes_versus_scripts`"
@@ -1698,7 +1698,7 @@ msgstr "\\:ref:`doc_2d_skeletons`"
 
 #: ../../docs/about/docs_changelog.rst:148
 msgid ":ref:`doc_animation_tree`"
-msgstr ":ref:`doc_animation_tree`"
+msgstr "\\ :ref:`doc_animation_tree`"
 
 #: ../../docs/about/docs_changelog.rst:151 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
@@ -1706,7 +1706,7 @@ msgstr "\\ GUI"
 
 #: ../../docs/about/docs_changelog.rst:153
 msgid ":ref:`doc_gui_containers`"
-msgstr ":ref:`doc_gui_containers`"
+msgstr "\\ :ref:`doc_gui_containers`"
 
 #: ../../docs/about/docs_changelog.rst:156
 #: ../../docs/tutorials/viewports/index.rst:2
@@ -1756,23 +1756,23 @@ msgstr "\\:ref:`doc_canvas_item_shader`"
 
 #: ../../docs/about/docs_changelog.rst:174
 msgid ":ref:`doc_particle_shader`"
-msgstr ":ref:`doc_particle_shader`"
+msgstr "\\ :ref:`doc_particle_shader`"
 
 #: ../../docs/about/docs_changelog.rst:177 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr "VR"
+msgstr "\\ VR"
 
 #: ../../docs/about/docs_changelog.rst:179
 msgid ":ref:`doc_vr_starter_tutorial`"
-msgstr ":ref:`doc_vr_starter_tutorial`"
+msgstr "\\ :ref:`doc_vr_starter_tutorial`"
 
 #: ../../docs/about/docs_changelog.rst:184
 msgid ":ref:`doc_making_main_screen_plugins`"
-msgstr ":ref:`doc_making_main_screen_plugins`"
+msgstr "\\ :ref:`doc_making_main_screen_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:185
 msgid ":ref:`doc_spatial_gizmo_plugins`"
-msgstr ":ref:`doc_spatial_gizmo_plugins`"
+msgstr "\\ :ref:`doc_spatial_gizmo_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:188
 #: ../../docs/tutorials/platform/index.rst:2
@@ -1802,15 +1802,15 @@ msgstr "\\:ref:`doc_jitter_stutter`"
 
 #: ../../docs/about/docs_changelog.rst:206
 msgid ":ref:`doc_running_code_in_the_editor`"
-msgstr ":ref:`doc_running_code_in_the_editor`"
+msgstr "\\ :ref:`doc_running_code_in_the_editor`"
 
 #: ../../docs/about/docs_changelog.rst:207
 msgid ":ref:`doc_change_scenes_manually`"
-msgstr ":ref:`doc_change_scenes_manually`"
+msgstr "\\ :ref:`doc_change_scenes_manually`"
 
 #: ../../docs/about/docs_changelog.rst:208
 msgid ":ref:`doc_gles2_gles3_differences`"
-msgstr ":ref:`doc_gles2_gles3_differences`"
+msgstr "\\ :ref:`doc_gles2_gles3_differences`"
 
 #: ../../docs/about/docs_changelog.rst:211
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:350
@@ -1825,11 +1825,11 @@ msgstr "コンパイル"
 
 #: ../../docs/about/docs_changelog.rst:213
 msgid ":ref:`doc_optimizing_for_size`"
-msgstr ":ref:`doc_optimizing_for_size`"
+msgstr "\\ :ref:`doc_optimizing_for_size`"
 
 #: ../../docs/about/docs_changelog.rst:214
 msgid ":ref:`doc_compiling_with_script_encryption_key`"
-msgstr ":ref:`doc_compiling_with_script_encryption_key`"
+msgstr "\\ :ref:`doc_compiling_with_script_encryption_key`"
 
 #: ../../docs/about/docs_changelog.rst:217
 #: ../../docs/development/cpp/index.rst:2
@@ -1838,7 +1838,7 @@ msgstr "エンジン開発"
 
 #: ../../docs/about/docs_changelog.rst:219
 msgid ":ref:`doc_binding_to_external_libraries`"
-msgstr ":ref:`doc_binding_to_external_libraries`"
+msgstr "\\ :ref:`doc_binding_to_external_libraries`"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
@@ -1871,7 +1871,7 @@ msgstr ""
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:16
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:22
 msgid "|image0|"
-msgstr "|image0|"
+msgstr "\\ |image0|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:18
 msgid ""
@@ -1885,10 +1885,9 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:48
 msgid "|image1|"
-msgstr "|image1|"
+msgstr "\\ |image1|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:23
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos to help you get started faster. Just select the template or demo "
@@ -1896,13 +1895,15 @@ msgid ""
 "choose where you want the project to go."
 msgstr ""
 "**テンプレート**\\ タブからオープンソースプロジェクトテンプレートやデモをダウ"
-"ンロードでき、すばやく開発を始めることができます。"
+"ンロードでき、すばやく開発を始めることができます。欲しいテンプレートもしくは"
+"デモを選びダウンロードをクリックし,一度ダウンロードが終わったらインストールを"
+"クリックしプロジェクトの保存場所を選んで下さい。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:28
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:58
 msgid "|image2|"
-msgstr "|image2|"
+msgstr "\\ |image2|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 msgid "Create or import a project"
@@ -1920,7 +1921,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:83
 msgid "|image3|"
-msgstr "|image3|"
+msgstr "\\ |image3|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid ""
@@ -1934,7 +1935,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:88
 msgid "|image4|"
-msgstr "|image4|"
+msgstr "\\ |image4|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:43
 msgid ""
@@ -1957,7 +1958,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:92
 msgid "|image5|"
-msgstr "|image5|"
+msgstr "\\ |image5|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:52
 msgid ""
@@ -1972,7 +1973,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:113
 msgid "|image7|"
-msgstr "|image7|"
+msgstr "\\ |image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 msgid "When the folder path is correct, you'll see a green checkmark."
@@ -1981,7 +1982,7 @@ msgstr "フォルダパスが正しいときには、緑色のチェックマー
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:60
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:121
 msgid "|image8|"
-msgstr "|image8|"
+msgstr "\\ |image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid "Your first look at Godot’s editor"
@@ -1993,15 +1994,15 @@ msgid ""
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
-"Godotへようこそ！　プロジェクトが開かれるとエディタのインターフェイスが3D"
-"ビューポートが有効化された状態で表示します。このワークスペースを上方向のイン"
-"ターフェイスで変更することができます。2Dワークスペースに変更するために、2Dを"
-"クリックします。"
+"Godotへようこそ！プロジェクトが開かれるとエディタのインターフェイスが3Dビュー"
+"ポートが有効化された状態で表示します。このワークスペースを上方向のインター"
+"フェイスで変更することができます。2Dワークスペースに変更するために、2Dをク"
+"リックします。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:142
 msgid "|image9|"
-msgstr "|image9|"
+msgstr "\\ |image9|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
 msgid "Now you should see this interface, with empty docks on the right side."
@@ -2010,7 +2011,7 @@ msgstr "こちらのインターフェイスになり、右側のドックは空
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:74
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:148
 msgid "|image10|"
-msgstr "|image10|"
+msgstr "\\ |image10|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:76
 msgid ""
@@ -2031,7 +2032,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:153
 msgid "|image11|"
-msgstr "|image11|"
+msgstr "\\ |image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:84
 msgid ""
@@ -2044,7 +2045,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:161
 msgid "|image12|"
-msgstr "|image12|"
+msgstr "\\ |image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:89
 msgid ""
@@ -2059,7 +2060,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:168
 msgid "|image13|"
-msgstr "|image13|"
+msgstr "\\ |image13|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
@@ -2074,7 +2075,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:99
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:115
 msgid "|image14|"
-msgstr "|image14|"
+msgstr "\\ |image14|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid "The workspaces"
@@ -2099,7 +2100,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
 msgid "|image15|"
-msgstr "|image15|"
+msgstr "\\ |image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:112
 msgid ""
@@ -2111,7 +2112,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid "|image16|"
-msgstr "|image16|"
+msgstr "\\ |image16|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
 msgid ""
@@ -2123,7 +2124,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:119
 msgid "|image20|"
-msgstr "|image20|"
+msgstr "\\ |image20|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:121
 msgid ""
@@ -2144,7 +2145,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:127
 msgid "|image17|"
-msgstr "|image17|"
+msgstr "\\ |image17|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
@@ -2182,7 +2183,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid "|image18|"
-msgstr "|image18|"
+msgstr "\\ |image18|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
 msgid ""
@@ -2192,7 +2193,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid "|image19|"
-msgstr "|image19|"
+msgstr "\\ |image19|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:152
 msgid ""
@@ -2214,9 +2215,9 @@ msgid ""
 "for your guests."
 msgstr ""
 "ちょっとの間、ゲーム開発者でない自分を想像してみてください。代わりにあなたは"
-"今、シェフです！　ヒップスターの服から、コック帽とダブル仕立てのジャケットに"
-"着替えましょう。これからゲームをつくる代わりに、ゲストのために新たに美味しい"
-"レシピを考えるのです。"
+"今、シェフです！ヒップスターの服から、コック帽とダブル仕立てのジャケットに着"
+"替えましょう。これからゲームをつくる代わりに、ゲストのために新たに美味しいレ"
+"シピを考えるのです。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -2387,13 +2388,12 @@ msgstr ""
 "ジャーが現れます。これは開発者がプロジェクトを管理するためのものです。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
-#, fuzzy
 msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name."
 msgstr ""
 "新しいプロジェクトを作るには「新規プロジェクト」をクリックします。プロジェク"
-"トを置くパスを指定し、名前を「新しいプロジェクト」にしてください:"
+"トを置くパスを指定し、プロジェクト名を指定してください."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:91
 msgid ""
@@ -2403,6 +2403,12 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
+"この段階でレンダリングバックエンド(OpenGL ES 3.0かOpenGL ES 2.0)を選ぶことも"
+"できます。それぞれの利点と欠点は一覧化されており、選ぶ際に参考にしてくださ"
+"い。詳細は :ref:`doc_gles2_gles3_differences` をご覧ください。気が変わったら"
+"後からでもプロジェクト設定からレンダリングバックエンドを切り替えることができ"
+"ます。このチュートリアルにおいてはどちらのレンダリングバックエンドでも問題は"
+"ありません。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:100
 #: ../../docs/getting_started/editor/external_editor.rst:32
@@ -2436,6 +2442,10 @@ msgid ""
 "chosen node as a child of the currently selected node (or, in an empty "
 "scene, as the \"root\" node)."
 msgstr ""
+"これを行うためには、ラベルノードを追加する必要があります。シーンドックの左上"
+"にある「子ノードを追加する」ボタン(プラスアイコン)を押してください。このボタ"
+"ンが新規ノードをシーンに追加する主な方法です。選ばれたノードは常にいま選択中"
+"のノードの子ノード(空のシーンの場合はルートノードとして)として追加されます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid ""
@@ -2446,6 +2456,12 @@ msgid ""
 "pressing the \"Add Child Node\" button). You can also press the star-shaped "
 "icon to toggle the display of your favorited nodes."
 msgstr ""
+"(ルートノードを除いて)空のシーンの場合、素早くルートノードをシーンに追加する"
+"方法がいくつかシーンドックにあります。例えば「2Dシーン」はNode2Dノードを、"
+"「3Dシーン」はSpatialノードを、「ユーザーインターフェイス」はControlノード"
+"を、そして「カスタムノード」は好きなノード(この場合は「子ノードを追加」ボタン"
+"と一緒です)をそれぞれ追加します。また、星の形のアイコンをを押すことでフェイバ"
+"リットノードの表示と非表示を切り替えることもできます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:128
 msgid ""
@@ -2454,6 +2470,11 @@ msgid ""
 "its root node, likewise not every GUI or 2D scene needs a Control node or "
 "Node2D as their root node."
 msgstr ""
+"これらのプリセットは利便性のためにここにあり、シーンの異なる型の為に必ず設定"
+"しなければならないわけではなりません。全ての3Dシーンがルートノードとして"
+"Spatialノードを必要としているわけではありません。同様に全てのGUIシーンや2D"
+"シーンが、コントロールノードやNode2Dノードをルートノードに必要としているわけ"
+"ではありません。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
 msgid ""
@@ -2461,6 +2482,9 @@ msgid ""
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
+"今、このシーンにラベルノードを追加するために、「カスタムノード」ボタンか、上"
+"にある「ノードを追加」ボタンををクリックすることができます。空ではないシーン"
+"では子ノードを作る際に「ノードを追加」ボタンを使うことが出来ます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:139
 msgid ""
@@ -2480,7 +2504,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:149
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
-"最後に、Labelを作ります！　作成ボタンを押したときに、色々なことが起こります:"
+"最後に、Labelを作ります！作成ボタンを押したときに、色々なことが起こります:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:153
 msgid ""
@@ -2513,8 +2537,8 @@ msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
-"OK、これでシーンを動かす準備が整いました！　上のバーにあるシーン再生ボタン(あ"
-"るいはF6キー)を押してください："
+"OK、これでシーンを動かす準備が整いました！上のバーにあるシーン再生ボタン(ある"
+"いはF6キー)を押してください："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
 msgid "Aaaand... Oops."
@@ -2529,7 +2553,6 @@ msgstr ""
 "Hello.tscn のような名前を付けてから保存してください："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:179
-#, fuzzy
 msgid ""
 "And here's when something funny happens. The file dialog is a special file "
 "dialog, and only allows you to save inside the project. The project root is "
@@ -2539,11 +2562,12 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
-"ここで変わったことが起こります。これはプロジェクトの中にのみ保存できる、特殊"
-"なファイルダイアログです。プロジェクトのルートは「res://」で、これは『リソー"
-"スのパス』を意味します。これ以降、Godotでファイル操作するときは「res://」がリ"
-"ソースのパスであることを覚えておきましょう。プラットフォームやインストール場"
-"所にかかわらず、ゲーム内にあるリソースファイルを見つけるための手段です。"
+"ここで変わったことが起こります。これはプロジェクト内にのみ保存が許される、特"
+"殊なファイルダイアログです。プロジェクトのルートは「res://」で、『リソースの"
+"パス』を意味します。これはプロジェクト内にのみに保存できることを意味します。"
+"Godotでファイル操作するときは「res://」がリソースのパスであることを覚えておき"
+"ましょう。プラットフォームやインストール場所にかかわらず、ゲーム内にあるリ"
+"ソースファイルを見つけるための手段です。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""
@@ -2564,8 +2588,8 @@ msgid ""
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
 "これがすぐに機能せず、少なくとも1つのモニターに高DPIディスプレイがある場合"
-"は、**プロジェクト→プロジェクト設定→ディスプレイ→ウィンドウ**に進み、** Dpi "
-"**で** Alid Hidpi **を有効にします。"
+"は、**プロジェクト→プロジェクト設定→Display→Window*に進み、** Dpi **で** "
+"Allow Hidpi **をオンにします。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
 msgid "Configuring the project"
@@ -2637,7 +2661,7 @@ msgid ""
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
-"ちなみに :ref:`プロジェクト設定 <class_ProjectSettings>`シングルトンを使っ"
+"ちなみに :ref:`プロジェクト設定 <class_ProjectSettings>`\\ シングルトンを使っ"
 "て、実行時に、カスタム設定オプションの追加と確認も可能です。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:236
@@ -2677,8 +2701,8 @@ msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
-":ref:`doc_scenes_and_nodes`では、シーンはツリー構造で編成されたノードのコレク"
-"ションであり、単一のノードがツリールートであることを学びました。"
+":ref:`doc_scenes_and_nodes`\\ では、シーンはツリー構造で編成されたノードのコ"
+"レクションであり、単一のノードがツリールートであることを学びました。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -2796,7 +2820,7 @@ msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
-"ボールのシーンを開いて、下向きの矢印をクリックし、New PhysicsMaterialを選ん"
+"ボールのシーンを開いて、下向きの矢印をクリックし、新規 PhysicsMaterialを選ん"
 "で、PhysicsMaterialを追加します。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
@@ -2859,7 +2883,7 @@ msgid ""
 msgstr ""
 "同じオブジェクトのコピーを作りたいとき、インスタンス化は便利です。また"
 "GDScriptを使ってコードでインスタンスを作ることもできます。:ref:"
-"`doc_instancing`の続きを御覧ください。"
+"`doc_instancing`\\ を御覧ください。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
@@ -3006,12 +3030,11 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
-"Godotを使用すると、より多くのシーンを作成してインスタンス化するだけでよいの"
-"で、このようにゲームを簡単に繰り返すことができます。 さらに、エディターのUI"
-"は、プログラマーにとっても非プログラマーにとっても使いやすいように設計されて"
-"います。 典型的なチーム開発プロセスには、2Dまたは3Dアーティスト、レベルデザイ"
-"ナー、ゲームデザイナー、アニメーターが関与します。これらはすべてエディターイ"
-"ンターフェイスで作業できます。"
+"Godotなら、シーンの作成・インスタンス化を繰り返す事で簡単に上記の事が出来ま"
+"す。 さらに、エディターのUIは、プログラマーにとっても非プログラマーにとっても"
+"使いやすいように設計されています。 典型的なチーム開発プロセスには、2Dまたは3D"
+"アーティスト、レベルデザイナー、ゲームデザイナー、アニメーターが関与します。"
+"これらはすべてエディターインターフェイスで作業できます。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"
@@ -3312,8 +3335,8 @@ msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
 msgstr ""
-"シーンタブからアクセスする「子ノードの追加」ダイアログ(または ``Ctrl+A`` )を"
-"押して、次のノードを持つ階層を作成します:"
+"シーンタブから「子ノードの追加」ダイアログにアクセスし(または ``Ctrl+A``を押"
+"して )、次のノードを持つ階層を作成します:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
 msgid "Panel"
@@ -3353,25 +3376,24 @@ msgid ""
 "Right click on the Panel node, then select \"Attach Script\" from the "
 "context menu:"
 msgstr ""
-"パネルノードを右クリックし、コンテキストメニューから「スクリプトを添付」を選"
-"択します:"
+"パネルノードを右クリックし、コンテキストメニューから「スクリプトをアタッチ」"
+"を選択します:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:136
 msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
-"スクリプト作成ダイアログがポップアップ表示されます。このダイアログボックスを"
-"使用すると、スクリプトの言語、クラス名、およびその他の関連するオプションを設"
-"定できます。"
+"スクリプト作成ダイアログが表示されます。このダイアログボックスを使用すると、"
+"スクリプトの言語、クラス名、およびその他の関連するオプションを設定できます。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"GDScriptではファイルがクラスを表します。そのためクラス名のフィールドは編集で"
-"きません。"
+"GDScriptではファイル自身がクラスを表します。そのためクラス名のフィールドは編"
+"集できません。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
 msgid ""
@@ -3405,7 +3427,7 @@ msgid ""
 msgstr ""
 "スクリプトを編集するには、上の画像で強調表示されている2つのボタンのいずれかを"
 "選択します。これにより、スクリプトエディタにデフォルトのテンプレートが含まれ"
-"て表示されます。"
+"て表示されます:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -3413,9 +3435,10 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
-"それほど多くはありません。 ``_ready()`` 関数は、ノードとそのすべての子がアク"
-"ティブなシーンに入ると呼び出されます。\\ **注:**\\  ``_ready()`` はコンストラ"
-"クタではありません。コンストラクタは ``_init()`` です。"
+"テンプレートの内容はそれほど多くはありません。 ``_ready()`` 関数は、ノードと"
+"そのすべての子がアクティブなシーンに入ると呼び出されます。\\ **注:**\\ "
+"``_ready()`` はコンストラクタではありません。コンストラクタは ``_init()`` で"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:166
 msgid "The role of the script"
@@ -3456,9 +3479,9 @@ msgid ""
 "the second part. For the first part, Godot provides two ways to create "
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
-"このステップでは、「peressed」シグナルをカスタム関数に接続します。接続の形成"
-"は最初の部分であり、カスタム関数の定義は2番目の部分です。最初の部分では、"
-"Godotは接続を作成する2つの方法を提供します。エディタが提供するビジュアルイン"
+"このステップでは、「pressed」シグナルをカスタム関数に接続します。最初のパート"
+"は接続の形成で、2番目のパートはカスタム関数の定義です。最初のパートでは、"
+"Godotは接続を作成する2つの方法を提供します: エディタが提供するビジュアルイン"
 "タフェースを使用する方法と、コードを使用する方法です。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:191
@@ -3516,9 +3539,9 @@ msgid ""
 "generate the function for you before setting up the connection."
 msgstr ""
 "デフォルトでは、メソッド名にはシグナルを出すノードの名前（この場合は「ボタ"
-"ン」）が含まれ、_on_ [EmitterNode] _ [signal_name]になります。 [関数の作成]"
-"チェックボックスがオンになっている場合、エディターは接続を設定する前に関数を"
-"生成します。"
+"ン」）が含まれ、_on_ [発信ノード] _ [シグナル名]になります。 「関数を作成」"
+"チェックボタンがオンになっている場合、エディターは接続を設定する前に関数を生"
+"成します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:218
 msgid ""
@@ -3537,9 +3560,10 @@ msgid ""
 "<class_Node_method_get_node>`. This function uses paths to fetch nodes "
 "anywhere in the scene, relative to the node that owns the script."
 msgstr ""
-"これを実現するために、おそらくGodotプログラマーが最も使用する関数Node."
-"get_node（）を導入します。この関数は、パスを使用して、スクリプトを持つノード"
-"に関連する、シーン内の任意の場所のノードを見つけます。"
+"これを実現するために、おそらくGodotプログラマーが最も使用する: :ref:`Node."
+"get_node() <class_Node_method_get_node>`\\ を導入します。この関数は、パスを使"
+"用して、スクリプトを持つノードに関連する、シーン内の任意の場所のノードを見つ"
+"けます。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:227
 msgid ""
@@ -3581,7 +3605,7 @@ msgstr "シーンを実行し、ボタンを押します。次の結果が得ら
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:315
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr "あら、こんにちは!最初のシーンのスクリプト作成、おめでとうございます。"
+msgstr "あら、hello!最初のシーンのスクリプト作成、おめでとうございます。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:319
 msgid ""
@@ -3614,9 +3638,9 @@ msgid ""
 "empty by default. Feel free to read up on the ``Object.connect`` method for "
 "more information."
 msgstr ""
-"コードアプローチでは、既定では空の4番目の ``Array`` パラメータを使用して、こ"
-"れも有効にします。詳細については、 ``Object.connect`` メソッドをお読みくださ"
-"い。"
+"コードアプローチでは、デフォルトでは空の、4番目の ``Array`` パラメータを使用"
+"して、これも有効にします。詳細については、 ``Object.connect`` メソッドをお読"
+"みください。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
@@ -3631,8 +3655,8 @@ msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
-"Godotのいくつかのアクションはコールバックまたは仮想関数によってトリガされるた"
-"め、常に実行されるコードを記述する必要はありません。"
+"Godotのいくつかのアクションはコールバックまたは仮想関数によってトリガーされる"
+"ため、常に実行されるコードを記述する必要はありません。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
@@ -3649,8 +3673,9 @@ msgid ""
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
-"メソッドNode._process（）がスクリプトにそんざいすると、アイドル処理がアクティ"
-"ブになります。 Node.set_process（）関数を使用して、オンとオフを切り替えること"
+"メソッド:ref:`Node._process() <class_Node_method__process>`\\ がスクリプトに"
+"存在すると、アイドル処理がアクティブになります。:ref:`Node.set_process() "
+"<class_Node_method_set_process>`\\ 関数を使用して、オンとオフを切り替えること"
 "ができます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
@@ -3663,9 +3688,9 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
-"_process（）が呼び出される頻度は、アプリケーションが実行されている1秒あたりの"
-"フレーム数（FPS）に依存します。このレートは、時間とデバイスによって異なりま"
-"す。"
+"次の事を心に留めておく事は重要です。_process()が呼び出される頻度は、アプリ"
+"ケーションが実行されている1秒あたりのフレーム数（FPS）に依存します。このレー"
+"トは、時間とデバイスによって異なります。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -3673,8 +3698,8 @@ msgid ""
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
-"この変動を管理しやすくするために、デルタパラメーターには、_process（）の前回"
-"の呼び出し以降の経過時間（秒単位）が浮動小数点として含まれています。"
+"この変動を管理しやすくするために、``delta``パラメーターには、``_process()``の"
+"前回の呼び出し以降の経過秒数が浮動小数点として含まれています。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -3701,10 +3726,11 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
-"``_physics_process()`` での物理処理は似ていますが、キャラクタの制御など、各物"
-"理ステップの前に実行する必要がある処理に使用する必要があります。常に物理ス"
-"テップの前に実行され、固定時間間隔(デフォルトでは毎秒60回)で呼び出されます。"
-"この間隔は、Physics->Common->Physics FpsのProject Settingsで変更できます。"
+"``_physics_process()`` での物理処理は似ていますが、これはキャラクタの制御な"
+"ど、各物理ステップの前に実行する必要がある処理に使用する必要があります。常に"
+"物理ステップの前に実行され、固定時間間隔(デフォルトでは毎秒60回)で呼び出され"
+"ます。この間隔は、Physics->Common->Physics FpsのProject Settingsで変更できま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
@@ -3722,7 +3748,7 @@ msgid ""
 "with a single Label node, with the following script:"
 msgstr ""
 "次のスクリプトを使用して、ひとつのLabelノードを持つシーンを作成すると、動作中"
-"の_process（）関数を簡単に確認できます。"
+"の_process()関数を簡単に確認できます:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -3750,7 +3776,7 @@ msgid ""
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
 "2番目の方法はコードからです。次のスクリプトは、シーンツリーに表示されるとすぐ"
-"に現在のノードを敵グループに追加します。"
+"に現在のノードを``enemies``グループに追加します。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -3758,8 +3784,9 @@ msgid ""
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_method_call_group>`:"
 msgstr ""
-"このようにして、プレイヤーが秘密の基地に忍び込んでいることが発見された場合、"
-"SceneTree.call_group（）を使用して、すべての敵にアラーム音が通知されます。"
+"このようにして、プレイヤーが秘密の基地に忍び込んでいることが発見された場"
+"合、 :ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`\\ を使"
+"用して、すべての敵にアラーム音を通知する事が出来ます:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
 msgid ""
@@ -3775,8 +3802,9 @@ msgid ""
 "ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
-"またSceneTree.get_nodes_in_group（）を呼び出して、敵のノードの完全なリストを"
-"取得することもできます。"
+"また:ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>`\\ を呼び出して、敵のノードの完全"
+"なリストを取得することもできます:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
 msgid ""
@@ -3786,10 +3814,10 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you have some time!"
 msgstr ""
-"SceneTreeクラスは、シーン、ノードの階層、ノードのグループとの対話など、多くの"
-"便利なメソッドを提供します。シーンを簡単に切り替えたり、リロードしたり、ゲー"
-"ムを終了したり、一時停止したり、一時停止を解除したりできます。興味深いシグナ"
-"ルもあります。時間があればぜひご覧ください！"
+":ref:`SceneTree <class_SceneTree>`\\ クラスは、シーン、ノードの階層、ノードの"
+"グループとの対話など、多くの便利なメソッドを提供します。シーンを簡単に切り替"
+"えたり、リロードしたり、ゲームを終了したり、一時停止したり、一時停止を解除し"
+"たりできます。興味深いシグナルもあります。時間があればぜひご覧ください！"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:157
@@ -3805,9 +3833,9 @@ msgid ""
 "your script:"
 msgstr ""
 "Godotには通知システムがあります。これらは低レベルであり、それらのほとんどに仮"
-"想機能が提供されているため、通常はスクリプトには必要ありません。それらが存在"
-"することを知っていれば良いのです。たとえば、スクリプトにObject."
-"_notification（）関数を追加できます。"
+"想k関数が提供されているため、通常はスクリプトには必要ありません。それらが存在"
+"することを知っていれば良いのです。例えば、スクリプトに :ref:`Object."
+"_notification() <class_Object_method__notification>` \\ 関数を追加できます:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid ""
@@ -3816,8 +3844,8 @@ msgid ""
 "GDScript provides simpler overrideable functions."
 msgstr ""
 ":ref:`Class Reference<toc-class-ref>`\\ の各クラスのドキュメントには、受信可"
-"能な通知が記載されています。しかし、ほとんどの場合、GDScriptはより単純な上書"
-"き可能な関数を提供します。"
+"能な通知が記載されています。しかし、ほとんどの場合、GDScriptはより単純なオー"
+"バーライド可能な関数を提供します。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
 msgid "Overrideable functions"
@@ -3827,7 +3855,8 @@ msgstr "オーバーライド可能な関数"
 msgid ""
 "Such overrideable functions, which are described as follows, can be applied "
 "to nodes:"
-msgstr "このような上書き可能な関数は、下記のような記述でノードに適用できます:"
+msgstr ""
+"このようなオーバーライド可能な関数は、下記のような記述でノードに適用できます:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
@@ -3846,8 +3875,8 @@ msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
-"コードからノードを作成するには、他のクラスベースのデータ型と同様に、.new（）"
-"メソッドを呼び出します。例えば："
+"コードからノードを作成するには、他のクラスベースのデータ型と同様に、``."
+"new()``メソッドを呼び出します。例えば:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
 msgid ""
@@ -3883,8 +3912,9 @@ msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
-"ノードを削除する最も安全な方法は、Node.queue_free（）を使用することです。これ"
-"により、アイドル中にノードが安全に消去されます。"
+"ノードを削除する最も安全な方法は、 :ref:`Node.queue_free() "
+"<class_Node_method_queue_free>`\\ を使用することです。これにより、アイドル中"
+"にノードが安全に消去されます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
 msgid "Instancing scenes"
@@ -3902,8 +3932,7 @@ msgstr ""
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
-msgstr ""
-"プロフラムの解析時に動作するため、プリロードはより便利です（GDScriptのみ）："
+msgstr "プリロードは解析時に動作するため便利です（GDScriptのみ）:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
 msgid ""
@@ -3913,10 +3942,11 @@ msgid ""
 "must be called. This will return the tree of nodes that can be added to the "
 "active scene:"
 msgstr ""
-"しかし、シーンはまだノードではありません。 PackedSceneと呼ばれる特別なリソー"
-"スにパックされています。実際のノードを作成するには、PackedScene.instance（）"
-"関数を呼び出す必要があります。これにより、アクティブシーンに追加できるノード"
-"のツリーが返されます。"
+"しかし、``シーン``はまだノードではありません。 :ref:`PackedScene "
+"<class_PackedScene>`\\ と呼ばれる特別なリソースにパックされています。実際の"
+"ノードを作成するには、:ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`\\ 関数を呼び出す必要があります。これによ"
+"り、アクティブシーンに追加できるノードのツリーが返されます:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid ""
@@ -3927,8 +3957,7 @@ msgid ""
 msgstr ""
 "この2段階のプロセスの利点は、パックされたシーンをロードして使用できる状態に保"
 "ち、必要なだけインスタンスを作成できることです。 これは、アクティブシーン内の"
-"複数の敵、弾丸、その他のエンティティをすばやくインスタンス化するのに特に便利"
-"です。"
+"複数の敵、弾丸、その他の存在をすばやくインスタンス化するのに特に便利です。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
@@ -3951,10 +3980,10 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
-"class_nameキーワードの後にクラスの名前を付けて、スクリプトに名前を付けて、エ"
-"ディターにタイプとして登録できます。スクリプトに名前の後にカンマとアイコンと"
-"して使用する画像のパスを追加できます。これで、ノードまたはリソース作成ダイア"
-"ログで新しいタイプを見ることができます。"
+"``class_name``キーワードの後にクラスの名前を付けた後に、スクリプトに名前を付"
+"け、エディターにタイプとして登録できます。カンマを追加した後にアイコンとして"
+"使用する画像のパスを追加できます。これで、ノードまたはリソース作成ダイアログ"
+"で新しいタイプを見つける事ができます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
 msgid "In Godot 3.1:"
@@ -3988,10 +4017,10 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
-"シグナルは、Godotの* observer *パターンのバージョンです。これにより、ノード"
-"は、他のノードがリッスンして応答できるメッセージを送信できます。たとえば、ボ"
-"タンが押されているかどうかを継続的に確認するのではなく、ボタンが押されたとき"
-"に信号を発することができます。"
+"シグナルは、* observer *パターンのGodotバージョンです。これにより、ノードは、"
+"他のノードが聞いて応答できるメッセージを送信できます。例えば、ボタンが押され"
+"ているかどうかを継続的に確認するのではなく、ボタンが押されたときに信号を発す"
+"ることができます。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
@@ -4025,16 +4054,15 @@ msgid "Timer example"
 msgstr "タイマーの例"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
-"シグナルがどのように機能するかを見るために、:ref: `Timer <class_Timer>`ノード"
-"を使用してみましょう。 Nodeと2つの子:Timerと:ref: `Sprite <class_Sprite>`で新"
-"しいシーンを作成します。 Sceneドックで、Nodeの名前をTimerExampleに変更しま"
-"す。"
+"シグナルがどのように機能するかを見るために、:ref: `Timer <class_Timer>`\\ "
+"ノードを使用してみましょう。 Node2Dと2つの子:Timerと:ref: `Sprite "
+"<class_Sprite>`\\ で新しいシーンを作成します。 Sceneドックで、Node2Dの名前を"
+"TimerExampleに変更します。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -4044,13 +4072,13 @@ msgid ""
 "yet."
 msgstr ""
 "スプライトのテクスチャには、Godotアイコン、またはその他の好きな画像を使用でき"
-"ます。そのためには、スプライトのテクスチャ属性ドロップダウンメニューで「ロー"
-"ド」を選択します。ルートノードにスクリプトを添付しますが、まだコードを追加し"
+"ます。そのためには、スプライトのテクスチャ属性ドロップダウンメニューで``ロー"
+"ド``を選択します。ルートノードにスクリプトを添付しますが、まだコードを追加し"
 "ないでください。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
-msgstr "シーンツリーは次のようになります。"
+msgstr "シーンツリーは次のようになります:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:38
 msgid ""
@@ -4058,9 +4086,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
-"Timerノードのプロパティで、* Autostart *の横にある[オン]ボックスをオンにしま"
-"す。これにより、シーンの実行時にタイマーが自動的に開始されます。 * Wait Time "
-"*は1秒のままにしておきましょう。"
+"Timerノードのプロパティで、* Autostart *の横にある「オン」ボックスをクリック"
+"します。これにより、シーンの実行時にタイマーが自動的に開始されます。 * Wait "
+"Time *は1秒のままにしておきましょう。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:42
 msgid ""
@@ -4072,41 +4100,37 @@ msgstr ""
 "「インスペクタ」タブの隣には、「ノード」というラベルの付いたタブがあります。 "
 "このタブをクリックすると、選択したノードが発信できるすべての信号が表示されま"
 "す。 Timerノードの場合、関係するのは「timeout」です。 このシグナルは、タイ"
-"マーが「0」に到達するたびに出力されます。"
+"マーが``0``に到達するたびに出力されます。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
-#, fuzzy
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
 "the signals panel. You'll see the following window, where you can define how "
 "you want to connect the signal:"
 msgstr ""
-"「timeout（）」シグナルをクリックし、「接続...」をクリックします。 次のウィン"
-"ドウが表示され、信号の接続方法を定義できます。"
+"シグナルパネルの下にある「timeout()」シグナルをクリックし、「接続...」をク"
+"リックします。 次のウィンドウが表示され、信号の接続方法を定義できます:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:55
-#, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is "
 "blue, this is a visual indication that it's the node that is emitting the "
 "signal. Select the root node."
 msgstr ""
-"左側でシーンのノードを見ることができます。信号として監視したいノードを選択で"
-"きます。\n"
-"タイマーノードは赤色です。エラーではありません。ノードが信号を発していること"
-"意味します。ルートノードを選択してください。"
+"左側でシーンのノードを見ることができます。信号として「監視」したいノードを選"
+"択できます。タイマーノードは青色で、ノードが信号を発していること意味します。"
+"ルートノードを選択してください。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:60
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
-"ターゲットノードにはスクリプトが添付されている必要があります。そうしないと、"
-"エラーメッセージが表示されます。"
+"ターゲットノードにはスクリプトが添付されている*必要*があります。そうしない"
+"と、エラーメッセージが表示されます。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
@@ -4114,15 +4138,16 @@ msgid ""
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
 "ウィンドウの下部には、「Method In Node」というラベルのフィールドがあります。 "
-"これは、使用するターゲットノードのスクリプト内の関数の名前です。 デフォルトで"
-"は、Godotは `` _on_ <node_name> _ <signal_name> ``という命名規則を使用してこ"
+"これは、使用したいターゲットノードのスクリプト内の関数の名前です。 デフォルト"
+"では、Godotは `` _on_ <ノード名> _ <シグナル名> ``という命名規則を使用してこ"
 "の関数を作成しますが、必要に応じて変更できます。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:68
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
-msgstr "[接続]をクリックすると、スクリプトで関数が作成されたことがわかります。"
+msgstr ""
+"「接続」をクリックすると、スクリプトで関数が作成されたことがわかります:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:88
 msgid ""
@@ -4130,7 +4155,7 @@ msgid ""
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
 "これで、仮置きのコードを、シグナルの受信時に実行したいコードに置き換えること"
-"ができます。 スプライトを点滅させましょう："
+"ができます。 スプライトを点滅させましょう:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:112
 msgid ""
@@ -4171,9 +4196,9 @@ msgid ""
 "connection:"
 msgstr ""
 "コードで接続するために、 `` connect``関数を使用できます。 接続が実行時に行わ"
-"れるように、その関数を_ready（）に入れます。 関数の構文は `` <source_node> ."
-"connect（<signal_name>、<target_node>、<target_function_name>） ``です。 タイ"
-"マー接続のコードは次のとおりです。"
+"れるように、その関数を_ready()に入れます。 関数の構文は `` <ソースノード> ."
+"connect(<シグナル名>、<ターゲットノード>、<ターゲット関数名>) ``です。 タイ"
+"マー接続のコードは次のとおりです:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:160
 msgid "Custom signals"
@@ -4181,7 +4206,7 @@ msgstr "カスタムシグナル"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:162
 msgid "You can also declare your own custom signals in Godot:"
-msgstr "Godotで独自のカスタムシグナルを宣言することもできます。"
+msgstr "Godotで独自のカスタムシグナルを宣言することもできます:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:180
 msgid ""
@@ -4194,7 +4219,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/signals.rst:183
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
 msgstr ""
-"コードを介してシグナルを発信するには、 `` emit_signal``関数を使用します："
+"コードを介してシグナルを発信するには、 `` emit_signal``関数を使用します:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:211
 msgid ""
@@ -4204,7 +4229,7 @@ msgid ""
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
 "Godotの組み込みノードタイプの多くは、イベントの検出に使用できる信号を提供しま"
-"す。 たとえば、コインの見た目をした：ref： `Area2D <class_Area2D>`は、プレー"
+"す。 たとえば、コインの見た目をした :ref:`Area2D <class_Area2D>`\\ は、プレイ"
 "ヤーの物理ボディが衝突形状に入るたびに `` body_entered``シグナルを発し、プ"
 "レーヤーがそれを収集したタイミングを知ることができます。"
 
@@ -4213,8 +4238,8 @@ msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
-"次のセクション:ref: `doc_your_first_game`では、さまざまなゲームコンポーネント"
-"を接続するシグナルのいくつかの使用法を含む、完全なゲームを構築します。"
+"次のセクション:ref:`doc_your_first_game`\\ では、さまざまなゲームコンポーネン"
+"トを接続するシグナルのいくつかの使用法を含む、完全なゲームを構築します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
@@ -4234,8 +4259,8 @@ msgid ""
 "to build a 2D game."
 msgstr ""
 "このチュートリアルではあなたの最初のGodotのプロジェクトの作りかたを紹介しま"
-"す。\n"
-"エディターの使い方、プロジェクトの構成方法、２Dゲームの作りかたを学びます。"
+"す。エディターの使い方、プロジェクトの構成方法、２Dゲームの作りかたを学びま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -4245,16 +4270,16 @@ msgid ""
 msgstr ""
 "このプロジェクトはGodotエンジンの紹介用です。あなたがこれまでにプログラムの経"
 "験があるものとして書かれています。\n"
-"もし、あなたがまったくプログラムの経験がない場合はここからスタートしてくださ"
-"い。"
+"もし、あなたがまったくプログラムの経験がない場合はここ:\\ :ref:"
+"`doc_scripting`\\ からスタートしてください。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
-"このゲームは「這うものをよけろ」といいます。あなたのキャラクターはできるだけ"
-"長く動いて敵を避けなければなりません。\n"
+"このゲームは「這うものをよけろ！」といいます。あなたのキャラクターはできるだ"
+"け長く動いて敵を避けなければなりません。\n"
 "いかが最終結果のプレビューです:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
@@ -4262,8 +4287,8 @@ msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
-"なぜ、２Dのなのか？３Dゲームは２Dより複雑です。ゲーム開発のプロセスをよく理解"
-"するまでは２Dのほうが適しています。"
+"**なぜ2D？** 3Dゲームは2Dより複雑です。ゲーム開発のプロセスをよく理解するまで"
+"は2Dのほうが適しています。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
@@ -4280,8 +4305,8 @@ msgid ""
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
 "Godotを起動して新しいプロジェクトを作ります。:download:`dodge_assets.zip "
-"<files/dodge_assets.zip>` をダウンロードします。これにゲームを作るのに使う画"
-"像と音楽が含まれます。あなたのプロジェクトのフォルダーに展開します。"
+"<files/dodge_assets.zip>`\\ をダウンロードします。-これにゲームを作るのに使う"
+"画像と音楽が含まれます。あなたのプロジェクトのフォルダーに展開します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
 msgid ""
@@ -4300,9 +4325,8 @@ msgid ""
 "\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
 "このゲームはポートレートモードを使いますので、ゲーム画面のサイズを設定する必"
-"要があります。\n"
-"Project -> Project Settings -> Display -> Windowの順にクリックして \"Width\" "
-"を480に,\"Height\"を720にセットします。"
+"要があります。プロジェクト -> プロジェクト設定 -> Display -> Windowの順にク"
+"リックして 「Width」 を480に,「Height」を720にセットします。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 msgid "Organizing the project"
@@ -4317,16 +4341,16 @@ msgid ""
 "and scripts in the project's root folder, referred to as ``res://``.  You "
 "can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
-"このプロジェクトでは、「Player」、「Mob」、「HUD」の3つの独立したシーンを作成"
-"し、これらをゲームの「メイン」シーンに結合します。大規模なプロジェクトでは、"
-"さまざまなシーンとそのスクリプトを保持するフォルダーを作成すると便利かもしれ"
-"ませんが、この比較的小さなゲームでは、「res：//」と呼ばれるプロジェクトのルー"
-"トフォルダーにシーンとスクリプトを保存します。プロジェクトフォルダーは、左下"
-"隅の「ファイルシステム」 ドックで確認できます。"
+"このプロジェクトでは、 ``Player`` 、 ``Mob`` 、 ``HUD`` の3つの独立したシーン"
+"を作成し、これらをゲームの ``メイン`` シーンに結合します。大規模なプロジェク"
+"トでは、さまざまなシーンとそのスクリプトを保持するフォルダを作成すると便利か"
+"もしれませんが、この比較的小さなゲームでは、 ``res://`` と呼ばれるプロジェク"
+"トのルートフォルダーにシーンとスクリプトを保存します。プロジェクトフォルダー"
+"は、左下隅の「ファイルシステム」 ドックで確認できます:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
-msgstr "「Player」シーン"
+msgstr "Playerシーン"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
 msgid ""
@@ -4334,9 +4358,9 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
-"最初のシーンでは、 ``Player`` オブジェクトを定義します。「Player」 シーンを独"
-"立して作成する利点の 1 つは、ゲームの他の部分を作成する前でも、別々にテストで"
-"きることです。"
+"最初のシーンでは、 ``Player`` オブジェクトを定義します。Player シーンを独立し"
+"て作成する利点の 1 つは、ゲームの他の部分を作成する前でも、別々にテストできる"
+"ことです。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 msgid "Node structure"
@@ -4347,7 +4371,7 @@ msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
-"まず、[新しいノードを追加/作成]ボタンをクリックし、\\ :ref:`Area2D "
+"まず、「新しいノードを追加/作成」ボタンをクリックし、\\ :ref:`Area2D "
 "<class_Area2D>`\\ ノードをシーンに追加します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
@@ -4357,8 +4381,8 @@ msgid ""
 "scene's root node. We can add additional nodes to the player to add "
 "functionality."
 msgstr ""
-"``Area2D`` を使用すると、プレイヤーに重なり合ったり、プレイヤーに実行されたり"
-"するオブジェクトを検出できます。ノードの名前をクリックして、その名前を "
+"``Area2D`` を使用すると、プレイヤーに重なり合ったり、プレイヤーに衝突したりす"
+"るオブジェクトを検出できます。ノードの名前をクリックして、その名前を "
 "``Player`` に変更します。これはシーンのルートノードです。プレイヤーにノードを"
 "追加して機能を追加できます。"
 
@@ -4371,16 +4395,16 @@ msgid ""
 msgstr ""
 "``Player`` ノードに子を追加する前に、子をクリックして誤って移動したりサイズを"
 "変更したりしないようにします。ノードを選択し、ロックの右側にあるアイコンをク"
-"リックします。ツールチップには「オブジェクトの子が選択できないようにする。」"
-"と書いてあります"
+"リックします。ツールチップには「オブジェクトの子を選択不可にする。」と書いて"
+"あります"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:82
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
-"シーンを保存します。[シーン -> セーブ] をクリックするか、Windows/Linux で "
-"``Ctrl +S`` を押すか、Mac で ``Command+S`` を押します。"
+"シーンを保存します。シーン -> シーンを保存 をクリックするか、Windows/Linux "
+"で ``Ctrl +S`` を押すか、Mac で ``Command+S`` を押します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:84
 msgid "For this project, we will be following the Godot naming conventions."
@@ -4391,8 +4415,9 @@ msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"** GDScript **:クラス（ノード）はPascalCaseを使用し、変数と関数はsnake_caseを"
-"使用し、定数はALL_CAPSを使用します（:ref: `doc_gdscript_styleguide`を参照）。"
+"** GDScript **: クラス（ノード）はPascalCaseを使用し、変数と関数はsnake_case"
+"を使用し、定数はALL_CAPSを使用します（:ref: `doc_gdscript_styleguide`\\ を参"
+"照）。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:90
 msgid ""
@@ -4401,10 +4426,10 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
-"** C＃**:クラス、export変数、メソッドはPascalCaseを使用し、プライベートフィー"
-"ルドは_camelCaseを使用し、ローカル変数とパラメーターはcamelCaseを使用します"
-"（:ref: `doc_c_sharp_styleguide`を参照）。シグナルを接続するときは、メソッド"
-"名を正確に入力してください。"
+"** C＃**: クラス、export変数、メソッドはPascalCaseを使用し、プライベート"
+"フィールドは_camelCaseを使用し、ローカル変数とパラメーターはcamelCaseを使用し"
+"ます（:ref: `doc_c_sharp_styleguide`\\ を参照）。シグナルを接続するときは、メ"
+"ソッド名を正確に入力してください。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:97
 msgid "Sprite animation"
@@ -4421,13 +4446,13 @@ msgid ""
 "click \"[empty]\" -> \"New SpriteFrames\". This should automatically open "
 "the SpriteFrames panel."
 msgstr ""
-"「Player」ノードをクリックし、:ref: `AnimatedSprite <class_AnimatedSprite>`"
-"ノードを子として追加します。 `` AnimatedSprite``は、Playerの外観とアニメー"
-"ションを処理します。ノードの横に警告マークがあることに注意してください。 `` "
-"AnimatedSprite``には:ref: `SpriteFrames <class_SpriteFrames>`リソースが必要で"
-"す。これは、表示できるアニメーションのリストです。作成するには、インスペク"
-"ターで `` Frames``プロパティを見つけ、「[empty]」->「New SpriteFrames」をク"
-"リックします。これにより、SpriteFramesパネルが自動的に開きます。"
+"``Player``ノードをクリックし、:ref: `AnimatedSprite <class_AnimatedSprite>`"
+"\\ ノードを子として追加します。 `` AnimatedSprite`` は、Playerの外観とアニ"
+"メーションを処理します。ノードの横に警告マークがあることに注意してください。 "
+"`` AnimatedSprite`` には:ref: `SpriteFrames <class_SpriteFrames>`\\ リソース"
+"が必要です。これは、表示できるアニメーションのリストです。作成するには、イン"
+"スペクターで `` Frames`` プロパティを見つけ、「[空]」->「新規 SpriteFrames」"
+"をクリックします。これにより、SpriteFramesパネルが自動的に開きます。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
@@ -4437,9 +4462,9 @@ msgid ""
 "``playerGrey_up[1/2]`` and ``playerGrey_walk[1/2]``, into the \"Animation "
 "Frames\" side of the panel:"
 msgstr ""
-"左側にはアニメーションの一覧があります。「デフォルト」をクリックし、「right」"
-"に名前を変更します。次に、「追加」ボタンをクリックして、「up」という名前の 2 "
-"番目のアニメーションを作成します。 ``playerGrey_up[1/2]`` と "
+"左側にはアニメーションの一覧があります。「default」をクリックし、「right」に"
+"名前を変更します。次に、「追加」ボタンをクリックして、「up」という名前の 2 番"
+"目のアニメーションを作成します。 ``playerGrey_up[1/2]`` と "
 "``playerGrey_walk[1/2]`` という名前の各アニメーションの 2 つの画像をパネルの "
 "「アニメーション フレーム」側にドラッグします:"
 
@@ -4452,7 +4477,7 @@ msgid ""
 msgstr ""
 "プレイヤーの画像はゲームウィンドウに対して少し大きすぎるため、縮小する必要が"
 "あります。 ``AnimatedSprite`` ノードをクリックし、 ``Scale`` プロパティを "
-"``(0.5,0.5)`` に設定します。インスペクタには ``Node2D`` の見出しがあります。"
+"``(0.5,0.5)`` に設定します。``Node2D`` の下のインスペクタにあります。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:124
 msgid ""
@@ -4463,12 +4488,12 @@ msgid ""
 "\"New CapsuleShape2D\".  Using the two size handles, resize the shape to "
 "cover the sprite:"
 msgstr ""
-"最後に、:ref: `CollisionShape2D <class_CollisionShape2D>`を `` Player``の子と"
-"して追加します。これにより、プレーヤーの「ヒットボックス」、またはその衝突領"
-"域の境界が決定されます。このキャラクターでは、「CapsuleShape2D」ノードがうま"
-"くフィットするので、インスペクターの「Shape」の隣で「[empty]」をクリックしま"
-"す->「New CapsuleShape2D」。2つのサイズハンドルを使用して、スプライトを覆うよ"
-"うにシェイプのサイズを変更します。"
+"最後に、 :ref:`CollisionShape2D <class_CollisionShape2D>`\\ を `` Player`` の"
+"子として追加します。これにより、プレイヤーの「ヒットボックス」、またはその衝"
+"突領域の境界が決定されます。このキャラクターでは、「CapsuleShape2D」ノードが"
+"うまくフィットするので、インスペクターの「Shape」の隣で「[空]」->「新規 "
+"CapsuleShape2D」をクリックします。2つのサイズハンドルを使用して、スプライトを"
+"覆うようにシェイプのサイズを変更します:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:133
 msgid "When you're finished, your ``Player`` scene should look like this:"
@@ -4476,7 +4501,7 @@ msgstr "完了すると、 ``Player`` シーンは次のようになります:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:138
 msgid "Moving the player"
-msgstr "Playerを動かす"
+msgstr "プレイヤーを動かす"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:140
 msgid ""
@@ -4501,7 +4526,7 @@ msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the `language` drop down menu before hitting create."
 msgstr ""
-"C#スクリプトまたはその他の言語を作成する場合は、作成を実行する前に [言語] ド"
+"C#スクリプトまたはその他の言語を作成する場合は、作成を実行する前に「言語」ド"
 "ロップダウン メニューから言語を選択します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:154
@@ -4525,11 +4550,12 @@ msgid ""
 "Variables\" section of the Inspector. Remember, if you change the value "
 "here, it will override the value written in the script."
 msgstr ""
-"最初の変数 `` speed``で `` export``キーワードを使用すると、インスペクターでそ"
+"最初の変数 ``speed`` で ``export`` キーワードを使用すると、インスペクターでそ"
 "の値を設定できるようになります。これは、値をノードの組み込みプロパティのよう"
-"に調整できるようにする場合に便利です。 「Player」ノードをクリックすると、イン"
-"スペクターの「スクリプト変数」セクションにプロパティが表示されます。ここで値"
-"を変更すると、スクリプトに記述された値が上書きされることに注意してください。"
+"に調整できるようにする場合に便利です。 ``Player`` ノードをクリックすると、イ"
+"ンスペクターの「スクリプト変数」セクションにプロパティが表示されます。ここで"
+"値を変更すると、スクリプトに記述された値が上書きされることに注意してくださ"
+"い。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:185
 msgid ""
@@ -4538,7 +4564,7 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
-"C＃を使用している場合、新しいエクスポート変数またはシグナルを表示する場合は、"
+"C#を使用している場合、新しいエクスポート変数またはシグナルを表示する場合は、"
 "プロジェクトアセンブリを（再）ビルドする必要があります。このビルドは、エディ"
 "ターウィンドウの下部にある「Mono」をクリックしてMonoパネルを表示し、「Build "
 "Project」ボタンをクリックして手動でトリガーできます。"
@@ -4558,10 +4584,10 @@ msgid ""
 "of our game, which we expect will change often. For the player, we need to "
 "do the following:"
 msgstr ""
-"これで `` _process（） ``関数を使用して、プレーヤーが何をするかを定義できま"
-"す。 `` _process（） ``はフレームごとに呼び出されるため、これを使用してゲーム"
-"の要素を更新しますが、これは頻繁に変更されることが予想されます。プレーヤーの"
-"場合、次のことを行う必要があります。"
+"これで `` _process()`` 関数を使用して、プレイヤーが何をするかを定義できま"
+"す。 `` _process()`` はフレームごとに呼び出されるため、これを使用してゲームの"
+"要素を更新しますが、これは頻繁に変更されることが予想されます。プレイヤーの場"
+"合、次のことを行う必要があります:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:214
 msgid "Check for input."
@@ -4584,7 +4610,7 @@ msgid ""
 "we will use the default events that are assigned to the arrow keys on the "
 "keyboard."
 msgstr ""
-"まず、入力をチェックする必要があります - プレーヤーはキーを押していますか？こ"
+"まず、入力をチェックする必要があります - プレイヤーはキーを押していますか？こ"
 "のゲームでは、4方向の入力チェックがあります。入力アクションは、プロジェクト設"
 "定の「インプットマップ」で定義されます。ここで、カスタムイベントを定義し、異"
 "なるキー、マウスイベント、またはその他の入力を割り当てることができます。この"
@@ -4609,12 +4635,12 @@ msgid ""
 "``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
-"まず`` velocity``を ``（0、0） ``に設定することから始めます - デフォルトで"
-"は、プレイヤーは動いてはいけません。次に、各入力をチェックし、「速度」から加"
-"算/減算して全体の方向を取得します。たとえば、「右」と「下」を同時に押した場"
-"合、結果の「速度」ベクトルは「（1、1）」になります。この場合、水平方向と垂直"
-"方向の動きを追加しているため、プレーヤーは水平方向に移動した場合よりも*速く*"
-"移動します。"
+"まず ``velocity`` を ``(0, 0)`` に設定することから始めます - デフォルトでは、"
+"プレイヤーは動いてはいけません。次に、各入力をチェックし、 ``velocity`` から"
+"加算/減算して全体の方向を取得します。たとえば、 ``右`` と ``下`` を同時に押し"
+"た場合、結果の ``velocity`` ベクトルは ``(1, 1)`` になります。この場合、水平"
+"方向と垂直方向の動きを追加しているため、プレイヤーは水平方向に移動した場合よ"
+"りも *速く* 移動します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:294
 msgid ""
@@ -4622,9 +4648,9 @@ msgid ""
 "*length* to ``1``, and multiply by the desired speed. This means no more "
 "fast diagonal movement."
 msgstr ""
-"速度を\\ *正規化*\\ すると、これを防ぐことができます。つまり、速度の「長さ」"
-"を ``1`` に設定し、希望の速度を乗算します。これは、これ以上速い対角移動がない"
-"ことを意味します。"
+"速度を*正規化*すると、これを防ぐことができます。つまり、速度の*長さ*を ``1`` "
+"に設定し、希望の速度を乗算します。これは、これ以上速い対角移動がないことを意"
+"味します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:298
 msgid ""
@@ -4632,8 +4658,10 @@ msgid ""
 "explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
 "know but won't be necessary for the rest of this tutorial."
 msgstr ""
-"以前にベクトル演算を使用したことがない場合、あるいは忘れてしまった場合は、ベ"
-"クトル演算でGodotのベクトル使用の説明をみることができます。"
+"以前にベクトル演算を使用したことがない場合、あるいは忘れてしまった場合は、:"
+"ref:`doc_vector_math`\\ でGodotのベクトル使用の説明をみることができます。これ"
+"は知っておくと良いですが、このチュートリアルの残りの部分では必要ないでしょ"
+"う。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:302
 msgid ""
@@ -4649,9 +4677,9 @@ msgid ""
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
-"GDScriptでは、「$」は現在のノードからの相対パスにあるノードを返し、ノードが見"
-"つからない場合は「null」を返します。 AnimatedSpriteは現在のノードの子であるた"
-"め、「$ AnimatedSprite」を使用できます。"
+"GDScriptでは、 ``$`` は現在のノードからの相対パスにあるノードを返し、ノードが"
+"見つからない場合は ``null`` を返します。 AnimatedSpriteはカレントノードの子で"
+"あるため、 ``$AnimatedSprite`` を使用できます。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:308
 msgid ""
@@ -4659,20 +4687,20 @@ msgid ""
 "$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
-"``$`` は ``get_node()`` の省略形です。 したがって、上記のコードでは、 ``"
+"``$`` は ``get_node()`` の省略形です。したがって、上記のコードでは、 ``"
 "$AnimatedSprite.play()`` は ``get_node(\"AnimatedSprite\").play()`` と同じで"
 "す。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position. "
 "We can also use ``clamp()`` to prevent it from leaving the screen. "
 "*Clamping* a value means restricting it to a given range. Add the following "
 "to the bottom of the ``_process`` function:"
 msgstr ""
-"移動方向がわかったので、プレーヤーの位置を更新し、「clamp（）」を使用して、"
-"「_ process」関数の下部に以下を追加することで、画面から離れないようにします。"
+"移動方向がわかったので、プレイヤーの位置を更新します。 ``clamp()`` を使用し"
+"て、画面から離れないようにします。*Clamp*の意味は長さに制限をかける事です。 "
+"``_process`` 関数の下部に追加して下さい。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:332
 msgid ""
@@ -4681,6 +4709,9 @@ msgid ""
 "this value ensures that your movement will remain consistent even if the "
 "frame rate changes."
 msgstr ""
+"`_process()` 関数の `delta` パラメータは *フレームの長さ* - 前のフレームが完"
+"了するまでに要した時間を参照します。この値を使うことで、動きの処理はフレーム"
+"レートの変動の影響を受けなくなります。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:337
 msgid ""
@@ -4689,8 +4720,8 @@ msgid ""
 "scene can be closed by clicking ``Output`` (which should be highlighted in "
 "blue) in the lower left of the Bottom Panel."
 msgstr ""
-"「シーンの再生」（「F6」）をクリックし、画面上のプレーヤーが全方向に移動でき"
-"ることを確認します。シーンの再生時に開くコンソール出力は、下部パネルの左下に"
+"「シーンを実行」（「F6」）をクリックし、画面上のプレイヤーが全方向に移動でき"
+"ることを確認します。シーンの実行時に開くコンソール出力は、下部パネルの左下に"
 "ある「出力」（青で強調表示されているはず）をクリックして閉じることができま"
 "す。"
 
@@ -4720,10 +4751,10 @@ msgid ""
 "``_process()`` function:"
 msgstr ""
 "プレイヤーを移動できるようになったので、方向に基づいてAnimatedSpriteが再生す"
-"るアニメーションを変更する必要があります。左への動きには ``flip_h`` プロパ"
-"ティを使用して水平にフリップする「right」アニメーションと、下への動きには "
-"``flip_v`` を使用して垂直にフリップする「up」アニメーションがあります。この"
-"コードを ``_process()`` 関数の最後に配置します:"
+"るアニメーションを変更する必要があります。左への動きには \n"
+" ``flip_h`` プロパティを使用して水平にフリップする「right」アニメーションと、"
+"下への動きには ``flip_v`` を使用して垂直にフリップする「up」アニメーションが"
+"あります。このコードを ``_process()`` 関数の最後に配置します:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:383
 msgid ""
@@ -4732,7 +4763,7 @@ msgid ""
 "above:"
 msgstr ""
 "上記のコードのブール値の割り当ては、プログラマーの一般的な略記です。以下の"
-"コードを使うか上記の短縮されたブール値を使うかを検討してみてください。"
+"コードを使うか上記の短縮されたブール値を使うかを検討してみてください:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:402
 msgid ""
@@ -4741,8 +4772,8 @@ msgid ""
 "line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
 "シーンをもう一度再生し、アニメーションが各方向で正しいことを確認します。動き"
-"が正しく機能していることを確認したら、次の行を `` _ready（） ``に追加して、"
-"ゲームの開始時にプレイヤーが非表示になるようにします："
+"が正しく機能していることを確認したら、次の行を `` _ready()`` に追加して、ゲー"
+"ムの開始時にプレイヤーが非表示になるようにします:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:417
 msgid "Preparing for collisions"
@@ -4755,7 +4786,7 @@ msgid ""
 "functionality to make it work."
 msgstr ""
 "``Player`` には敵に攻撃されたことを検知してもらいたいのですが、まだ敵を作って"
-"いません!Godotの\\ *シグナル機能*\\ を使って動作させるので、大丈夫です。"
+"いません！Godotの\\ *シグナル*\\ 機能を使って動作させるので、大丈夫です。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:423
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
@@ -4768,10 +4799,10 @@ msgid ""
 "detect the collision. Select the ``Player`` node and click the \"Node\" tab "
 "next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
-"これは、プレイヤーが敵と衝突したときにプレイヤーが発信(送信)する「ヒット」と"
+"これは、プレイヤーが敵と衝突したときにプレイヤーが発信する(送り出す)\"hit\"と"
 "呼ばれるカスタムシグナルを定義します。衝突を検出するために ``Area2D`` を使用"
 "します。 ``Player`` ノードを選択し、インスペクタタブの横にある「ノード」タブ"
-"をクリックすると、プレイヤーが発するシグナルのリストが表示されます:"
+"をクリックすると、プレイヤーが発信するシグナルのリストが表示されます:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:444
 msgid ""
@@ -4783,12 +4814,12 @@ msgid ""
 "automatically create a function in your player's script. This function will "
 "be called whenever the signal is emitted - it *handles* the signal."
 msgstr ""
-"カスタムの「hit」シグナルもありますね！敵は `` RigidBody2D``ノードになるた"
-"め、 `` body_entered（Object body） ``シグナルが必要です。これは、ボディがプ"
-"レーヤーに接触したときに発信されます。 「接続」をクリックし、「シグナルの接"
-"続」ウィンドウで再度「接続」をクリックします。これらの設定を変更する必要はあ"
-"りません。Godotはプレーヤーのスクリプトに関数を自動的に作成します。この関数"
-"は、シグナルが発信されるたびに呼び出され - シグナルを「処理」します。"
+"カスタムの「hit」シグナルもありますね！敵は ``RigidBody2D`` ノードになるた"
+"め、 ``body_entered( Object body )`` シグナルが必要です。これは、ボディがプレ"
+"イヤーに接触したときに発信されます。「接続」をクリックし、「シグナルの接続」"
+"ウィンドウで再度「接続」をクリックします。これらの設定を変更する必要はありま"
+"せん。Godotはプレイヤーのスクリプトに関数を自動的に作成します。この関数は、シ"
+"グナルが発信されるたびに呼び出され - シグナルを「処理」します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:453
 msgid ""
@@ -4809,8 +4840,8 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
-"敵がプレイヤーに当たるたびに、信号が発せられます。プレーヤーの衝突を無効にし"
-"て、「ヒット」シグナルを複数回トリガーしないようにする必要があります。"
+"敵がプレイヤーに当たるたびに、シグナルが発せられます。プレイヤーの衝突を無効"
+"にして、「ヒット」シグナルを複数回トリガーしないようにする必要があります。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:480
 msgid ""
@@ -4819,8 +4850,8 @@ msgid ""
 "us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
 "領域のコリジョン形状を無効にすると、エンジンの衝突処理の途中で発生した場合に"
-"エラーが発生する可能性があります。 `` set_deferred（） ``を使用すると、安全に"
-"図形を無効にできるようになるまでGodotを待機させることができます。"
+"エラーが発生する可能性があります。 ``set_deferred()`` を使用すると、安全に図"
+"形を無効にできるようになるまでGodotを待機させることができます。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:485
 msgid ""
@@ -4841,7 +4872,7 @@ msgid ""
 "the screen and move in a random direction in a straight line, then despawn "
 "when they go offscreen."
 msgstr ""
-"次はプレーヤーが避けるべき敵を作りましょう。敵の行動はあまり複雑ではありませ"
+"次はプレイヤーが避けるべき敵を作りましょう。敵の行動はあまり複雑ではありませ"
 "ん。mobsは画面の端でランダムに生まれ、ランダムな方向に一直線に動きます。画面"
 "から出ると消えます。"
 
@@ -4850,8 +4881,8 @@ msgid ""
 "We will build this into a ``Mob`` scene, which we can then *instance* to "
 "create any number of independent mobs in the game."
 msgstr ""
-"これを ``Mob`` シーンに組み込み、\\ インスタンス化\\ して、ゲーム内に任意の数"
-"の独立したモブを作成します。"
+"これを ``Mob`` シーンに組み込み、*インスタンス化*して、ゲーム内に任意の数の独"
+"立したモブを作成します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:517
 msgid "Node setup"
@@ -4859,7 +4890,7 @@ msgstr "ノードの設定"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:519
 msgid "Click Scene -> New Scene and we'll create the Mob."
-msgstr "[シーン -> 新しいシーン]をクリックすると、モブが作成されます。"
+msgstr "[シーン -> 新規シーン]をクリックすると、モブが作成されます。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:521
 msgid "The Mob scene will use the following nodes:"
@@ -4867,31 +4898,31 @@ msgstr "Mobシーンでは、次のノードが使用されます:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:523
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
-msgstr ":ref:`RigidBody2D <class_RigidBody2D>` ( ``Mob`` という名前)"
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>`\\ ( ``Mob`` という名前)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:525
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
-msgstr "\\ :ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr "\\ :ref:`AnimatedSprite <class_AnimatedSprite>`\\"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:526
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
-msgstr "\\ :ref:`CollisionShape2D <class_CollisionShape2D>`"
+msgstr "\\ :ref:`CollisionShape2D <class_CollisionShape2D>`\\"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:527
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
 msgstr ""
-":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` ( ``Visibility`` と"
-"いう名前)"
+":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`\\ ( ``Visibility`` "
+"という名前)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:529
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
 msgstr ""
-"プレイヤーシーンと同様に、選択できないように子を設定することを忘れないでくだ"
-"さい。"
+"Playerシーンと同様に、選択できないように子を設定することを忘れないでくださ"
+"い。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:532
 msgid ""
@@ -4914,11 +4945,11 @@ msgid ""
 "\"Speed (FPS)\" setting as shown below. We'll select one of these animations "
 "randomly so that the mobs will have some variety."
 msgstr ""
-"プレイヤーに対して行ったように :ref:`AnimatedSprite <class_AnimatedSprite>` "
+"プレイヤーに対して行ったように :ref:`AnimatedSprite <class_AnimatedSprite>\\ "
 "を設定します。 今回、3つのアニメーションがあります： ``fly`` 、 ``swim`` 、 "
-"``walk`` 。 インスペクターの[再生]プロパティを[オン]に設定し、以下に示すよう"
-"に[速度(FPS)]設定を調整します。 これらのアニメーションのいずれかをランダムに"
-"選択して、モブにさまざまなバリエーションを持たせます。"
+"``walk`` 。 インスペクターの ``Playing`` プロパティを「オン」に設定し、以下に"
+"示すように「速度(FPS)」設定を調整します。 これらのアニメーションのいずれかを"
+"ランダムに選択して、モブにさまざまなバリエーションを持たせます。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:546
 msgid ""
@@ -4933,7 +4964,7 @@ msgid ""
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
 "プレイヤーの画像と同様に、これらのモブ画像は縮小する必要があります。 "
-"``AnimatedSprite`` の ``Scale`` プロパティを ``(0.75,0.75)`` に設定します。"
+"``AnimatedSprite`` の ``Scale`` プロパティを ``(0.75, 0.75)`` に設定します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:551
 msgid ""
@@ -4941,13 +4972,13 @@ msgid ""
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
 "property to ``90`` under ``Node2D``."
 msgstr ""
-"``Player`` シーンと同様に、衝突に ``CapsuleShape2D`` を追加します。図形をイ"
-"メージに合わせるには、 ``Node2D`` の下に ``Rotation Degrees`` プロパティを "
-"``90'`` に設定する必要があります。"
+"``Player`` シーンと同様に、コリジョンに ``CapsuleShape2D`` を追加します。図形"
+"をイメージに合わせるには、 ``Node2D`` の下に ``Rotation Degrees`` プロパティ"
+"を ``90`` に設定する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:556
 msgid "Enemy script"
-msgstr "「Enemy」スクリプト"
+msgstr "Enemyスクリプト"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:558
 msgid "Add a script to the ``Mob`` and add the following member variables:"
@@ -4962,11 +4993,11 @@ msgid ""
 "sure you've spelled these the same in the script and in the SpriteFrames "
 "resource."
 msgstr ""
-"モブをスポーンするとき、各モブの移動速度について `` min_speed``と `` "
-"max_speed``の間のランダムな値を選択します（すべて同じ速度で移動していると退屈"
-"になります）。 また、3つのアニメーションの名前を含む配列があり、これを使用し"
-"てランダムなアニメーションを選択します。 スクリプトとSpriteFramesリソースでこ"
-"れらのスペルが同じであることを確認してください。"
+"モブを生み出す時、各モブの移動速度について ``min_speed`` と ``max_speed`` の"
+"間のランダムな値を選択します（すべて同じ速度で移動していると退屈になりま"
+"す）。 また、3つのアニメーションの名前を含む配列があり、これを使用してランダ"
+"ムなアニメーションを選択します。 スクリプトとSpriteFramesリソースでこれらのス"
+"ペルが同じであることを確認してください。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:590
 msgid ""
@@ -4984,9 +5015,9 @@ msgid ""
 "n`` is the standard way to get a random integer between ``0`` and ``n-1``."
 msgstr ""
 "シーンを実行するたびに「ランダム」な数字のシーケンスを異なるようにするには、 "
-"``randomize()`` を使用する必要があります。 ``Main`` シーンでは "
-"``randomize()`` を使用するので、ここでは必要はありません。 ``randi() % n`` "
-"は、 ``'0`` と ``n-1`` の間のランダム整数を取得する標準的な方法です。"
+"``randomize()`` を使用する必要があります。 ``Main`` シーンで ``randomize()`` "
+"を使用するので、ここでは必要はありません。 ``randi() % n`` は、 ``0`` と "
+"``n-1`` の間のランダム整数を取得する標準的な方法です。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:615
 msgid ""
@@ -5013,8 +5044,8 @@ msgid ""
 "your saved ``Player.tscn``."
 msgstr ""
 "さあ、すべてをまとめましょう。 新しいシーンを作成し、 ``Main`` という名前の"
-"\\ :ref:`Node <class_Node>`\\ を追加します。 [インスタンス]ボタンをクリックし"
-"て、保存した ``Player.tscn`` を選択します。"
+"\\ :ref:`Node <class_Node>`\\ を追加します。 「インスタンス」ボタンをクリック"
+"して、保存した ``Player.tscn`` を選択します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:643
 msgid "See :ref:`doc_instancing` to learn more about instancing."
@@ -5026,9 +5057,7 @@ msgstr ""
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
-msgstr ""
-"次に``Main``の子供として以下のノードを追加します。示されている名前をつけま"
-"す。値は秒単位です。"
+msgstr "次に ``Main`` の子供として以下のノードを追加します（値は秒単位です）。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:648
 msgid ""
@@ -5059,8 +5088,8 @@ msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
 msgstr ""
-":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - プレーヤーの"
-"開始位置を示す"
+"\\ :ref:`Position2D <class_Position2D>`\\ (``StartPosition``と名付けられた) "
+"- プレイヤーの開始位置を示す"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:653
 msgid ""
@@ -5089,7 +5118,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:664
 msgid "Spawning mobs"
-msgstr "モブのスポーン"
+msgstr "モブの生成"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:666
 msgid ""
@@ -5122,7 +5151,7 @@ msgid ""
 "*outwards* instead of *inwards*!"
 msgstr ""
 "*時計回り*\\ にパスを描画します。そうしないと、モブは\\ *内側*\\ ではなく\\ *"
-"外側*\\ を向いてスポーンします!"
+"外側*\\ を向いてスポーンします！"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:684
 msgid ""
@@ -5153,7 +5182,7 @@ msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
-"スクリプトを `` Main``に追加します。 スクリプトの上部で、"
+"スクリプトを `` Main`` に追加します。 スクリプトの上部で、"
 "「export（PackedScene）」を使用して、インスタンス化するMobシーンを選択できる"
 "ようにします。"
 
@@ -5173,11 +5202,11 @@ msgid ""
 "bottom of the \"Connecting Signal\" window. Add the following code, as well "
 "as a ``new_game`` function to set everything up for a new game:"
 msgstr ""
-"次に、プレーヤーをクリックして、 ``hit`` シグナルを接続します。 ゲームが終了"
-"したときに必要なことを処理する `` game_over`` という名前の新しい関数を作成し"
-"ます。 [信号の接続]ウィンドウの下部にある[ノード内のメソッド]ボックスに"
-"「game_over」と入力します。 次のコードと、新しいゲームのすべてを設定する `` "
-"new_game`` 関数を追加します:"
+"次に、プレイヤーをクリックして、 ``hit`` シグナルを接続します。 ゲームが終了"
+"したときに必要なことを処理する ``game_over`` という名前の新しい関数を作成しま"
+"す。 [信号の接続]ウィンドウの下部にある[ノード内のメソッド]ボックスに"
+"「game_over」と入力します。 次のコードと、新しいゲームのすべてを設定する "
+"``new_game`` 関数を追加します:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:775
 msgid ""
@@ -5186,10 +5215,9 @@ msgid ""
 "``StartTimer`` will start the other two timers. ``ScoreTimer`` will "
 "increment the score by 1."
 msgstr ""
-"次に、各Timerノード（ `` StartTimer``、 `` ScoreTimer``、および `` "
-"MobTimer``）の `` timeout（） ``シグナルをメインスクリプトに接続します。 `` "
-"StartTimer``は他の2つのタイマーを開始します。 `` ScoreTimer``はスコアを1増や"
-"します。"
+"次に、各Timerノード（ ``StartTimer``、 ``ScoreTimer``、および ``MobTimer`` ）"
+"の `` timeout()`` シグナルをメインスクリプトに接続します。 `` StartTimer`` は"
+"他の2つのタイマーを開始します。 `` ScoreTimer`` はスコアを1増やします。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:802
 msgid ""
@@ -5198,9 +5226,10 @@ msgid ""
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
-"`` _on_MobTimer_timeout（） ``では、mobインスタンスを作成し、 `` Path2D``に"
-"沿ってランダムな開始位置を選択し、mobを動かします。 `` PathFollow2D``ノードは"
-"パスに沿って自動的に回転するので、それを使用してmobの方向と位置を選択します。"
+"`` _on_MobTimer_timeout()`` では、mobインスタンスを作成し、 `` Path2D`` に"
+"沿ってランダムな開始位置を選択し、mobを動かします。 `` PathFollow2D`` ノード"
+"はパスに沿って自動的に回転するので、それを使用してmobの方向と位置を選択しま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:808
 msgid ""
@@ -5215,7 +5244,7 @@ msgid ""
 "switch to node view then click on ``timeout()`` and connect the signal."
 msgstr ""
 "シーンウィンドウで「MobTimer」をクリックし、インスペクターウィンドウに移動し"
-"てノードビューに切り替え、「timeout（）」をクリックして信号を接続します。"
+"てノードビューに切り替え、「timeout()」をクリックして信号を接続します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:814
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1071
@@ -5257,7 +5286,7 @@ msgid ""
 "isn't covered up by any game elements like the player or mobs."
 msgstr ""
 ":ref:`CanvasLayer <class_CanvasLayer>`\\ ノードを使用すると、ゲームの他の部分"
-"よりも上のレイヤにUI要素を描画することができるため、表示される情報がプレー"
+"よりも上のレイヤにUI要素を描画することができるため、表示される情報がプレイ"
 "ヤーやモブなどのゲーム要素によって隠されることがなくなります。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:880
@@ -5270,7 +5299,7 @@ msgstr "``ScoreTimer`` によって変更されるスコア。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:883
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
-msgstr "「ゲームオーバー」や「準備をしろ」 などのメッセージ"
+msgstr "「ゲームオーバー」や「準備をしろ！」 などのメッセージ"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:884
 msgid "A \"Start\" button to begin the game."
@@ -5314,10 +5343,10 @@ msgid ""
 "Regular.ttf\". To use this font, do the following for each of the three "
 "``Control`` nodes:"
 msgstr ""
-"`` ScoreLabel``をクリックし、インスペクターの* Text *フィールドに数字を入力し"
-"ます。 `` Control``ノードのデフォルトのフォントは小さく、うまくスケールしませ"
+"「ScoreLabel」 をクリックし、インスペクターの*Text*フィールドに数字を入力しま"
+"す。 ``Control`` ノードのデフォルトのフォントは小さく、うまくスケールしませ"
 "ん。 「Xolonium-Regular.ttf」というゲームアセットに含まれるフォントファイルが"
-"あります。 このフォントを使用するには、3つの `` Control``ノードのそれぞれに対"
+"あります。 このフォントを使用するには、3つの ``Control``ノードのそれぞれに対"
 "して以下を実行します："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:903
@@ -5332,7 +5361,7 @@ msgid ""
 msgstr ""
 "追加した「DynamicFont」をクリックし、「Font / Font Data」の下で「Load」を選択"
 "し、「Xolonium-Regular.ttf」ファイルを選択します。 また、フォントの「サイズ」"
-"も設定する必要があります。 `` 64``の設定はうまく機能します。"
+"も設定する必要があります。 ``64`` の設定はうまく機能します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:913
 msgid ""
@@ -5351,13 +5380,12 @@ msgstr ""
 "さい。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:920
-#, fuzzy
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
 msgstr ""
-"次に示すようにノードを配置します。「アンカー」ボタンをクリックして、コント"
-"ロールノードのアンカーを設定します:"
+"以下に示すようにノードを配置します。「レイアウト」ボタンをクリックして、コン"
+"トロールノードのレイアウトを設定します:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:925
 msgid ""
@@ -5398,7 +5426,7 @@ msgstr "\\*Layout* : \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:941
 msgid "*Autowrap* : \"On\""
-msgstr ""
+msgstr "\\*Autowrap* : \"On\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:944
 msgid "StartButton"
@@ -5452,7 +5480,7 @@ msgid ""
 "for 2 seconds, then return to the title screen and, after a brief pause, "
 "show the \"Start\" button."
 msgstr ""
-"この関数は、プレーヤーが負けたときに呼び出されます。 2秒間「Game Over」と表示"
+"この関数は、プレイヤーが負けたときに呼び出されます。 2秒間「Game Over」と表示"
 "され、タイトル画面に戻り、少し間を置いて「Start」ボタンが表示されます。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1033
@@ -5463,13 +5491,13 @@ msgid ""
 "bit of time before showing the \"Start\" button."
 msgstr ""
 "一時停止する必要がある場合、タイマーノードを使用する代わりに、SceneTreeの `` "
-"create_timer（） ``関数を使用します。 これは、上記のコードのように、「開始」"
-"ボタンを表示する前に少し時間を置きたい場合など、遅延させるのに非常に役立ちま"
+"create_timer()`` 関数を使用します。 これは、上記のコードのように、「開始」ボ"
+"タンを表示する前に少し時間を置きたい場合など、遅延させるのに非常に役立ちま"
 "す。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1051
 msgid "This function is called by ``Main`` whenever the score changes."
-msgstr "この関数はスコアが変わるたびに `` Main``によって呼び出されます。"
+msgstr "この関数はスコアが変わるたびに `` Main`` によって呼び出されます。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1053
 msgid ""
@@ -5477,7 +5505,7 @@ msgid ""
 "signal of ``StartButton``."
 msgstr ""
 "``MessageTimer`` の ``timeout()`` シグナルと ``StartButton`` の "
-"``pressed()`` 信号を接続します。"
+"``pressed()`` シグナルを接続します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1080
 msgid "Connecting HUD to Main"
@@ -5527,16 +5555,17 @@ msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
-"最後に、これを ``on_ScoreTimer_timeout()`` に追加して、変更されたスコアと同期"
-"して表示を維持します:"
+"最後に、これを ``_on_ScoreTimer_timeout()`` に追加して、変更されたスコアと同"
+"期して表示を維持します:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
 msgstr ""
-"これでプレイの準備が整いました![プロジェクトの再生] ボタンをクリックします。"
-"メインシーンを選択するように求められますので、 ``Main.tscn`` を選択します。"
+"これでプレイの準備が整いました！「プロジェクトの再生」 ボタンをクリックしま"
+"す。メインシーンを選択するように求められますので、 ``Main.tscn`` を選択しま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1137
 msgid "Removing old creeps"
@@ -5560,26 +5589,26 @@ msgid ""
 "``Mob`` nodes in the ``Main`` scene tree until we run the game. Instead "
 "we'll use code."
 msgstr ""
-"残りの「這うもの」を除去するために、「HUD」ノードによってすでに放出されている"
-"「start_game」シグナルを使用します。 ゲームを実行するまで `` Main``シーンツ"
-"リーには `` Mob``ノードがないため、エディターを使用して必要な方法でシグナルを"
-"Mobに接続することはできません。 代わりに、コードを使用します。"
+"残りの「這うもの」を除去するために、 ``HUD`` ノードによってすでに放出されてい"
+"る ``start_game`` シグナルを使用します。 ゲームを実行するまで `` Main`` シー"
+"ンツリーには `` Mob`` ノードがないため、エディターを使用して必要な方法でシグ"
+"ナルをMobに接続することはできません。 代わりに、コードを使用します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1148
 msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
 msgstr ""
-"`` Mob.gd``に新しい関数を追加することから始めます。 `` queue_free（） ``は現"
-"在のフレームの最後にある現在のノードを削除します。"
+"`` Mob.gd`` に新しい関数を追加することから始めます。 ``queue_free()`` は現在"
+"のフレームの最後にある現在のノードを削除します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
-"次に `` Main.gd``で、最後に `` _on_MobTimer_timeout（） ``関数内に新しい行を"
-"追加します。"
+"次に `` Main.gd`` で、最後に `` _on_MobTimer_timeout()`` 関数内に新しい行を追"
+"加します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1176
 msgid ""
@@ -5587,9 +5616,9 @@ msgid ""
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
 "its ``_on_start_game()`` function."
 msgstr ""
-"この行は、新しいMobノード（「mob」変数によって参照される）に、「_ "
-"on_start_game（）」関数を実行することにより、「HUD」ノードによって発行された"
-"「start_game」シグナルに応答するように指示します。"
+"この行は、新しいMobノード（ ``mob`` 変数によって参照される）に、 ``_ "
+"on_start_game()`` 関数を実行することにより、 ``HUD`` ノードによって発行され"
+"た ``start_game`` シグナルに応答するように指示します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
 msgid "Finishing up"
@@ -5631,7 +5660,7 @@ msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."
 msgstr ""
-"`` Sprite``ノードを使用して、背景画像がある場合はそれを追加することもできま"
+"``Sprite`` ノードを使用して、背景画像がある場合はそれを追加することもできま"
 "す。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1201
@@ -5646,8 +5675,8 @@ msgid ""
 "for when the player loses."
 msgstr ""
 "サウンドと音楽は、ゲーム体験に魅力を与える唯一の最も効果的な方法です。ゲーム"
-"アセットフォルダには、BGMの「House In a Forest Loop.ogg」と、プレイヤーが負け"
-"たときの「gameover.wav」の2つのサウンドファイルがあります。"
+"アセットフォルダには、BGMの ``House In a Forest Loop.ogg`` と、プレイヤーが負"
+"けたときの ``gameover.wav`` の2つのサウンドファイルがあります。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1208
 msgid ""
@@ -5684,8 +5713,8 @@ msgid ""
 "do this is using the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
 "ゲームはキーボードコントロールで再生されるため、キーボードのキーを押してゲー"
-"ムを開始できると便利です。 これを行う1つの方法は、「ボタン」ノードの「ショー"
-"トカット」プロパティを使用することです。"
+"ムを開始できると便利です。 これを行う1つの方法は、 ``ボタン`` ノードの"
+"「ショートカット」プロパティを使用することです。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1225
 msgid ""
@@ -5696,11 +5725,11 @@ msgid ""
 "*Action* property, type the name ``ui_select``. This is the default input "
 "event associated with the spacebar."
 msgstr ""
-"「HUD」シーンで「StartButton」を選択し、インスペクターでその* Shortcut *プロ"
-"パティを見つけます。 [新しいショートカット]を選択し、[ショートカット]項目をク"
-"リックします。 2番目の* Shortcut *プロパティが表示されます。 [新しい"
-"InputEventAction]を選択し、新しい[InputEvent]をクリックします。 最後に、* "
-"Action *プロパティに「ui_select」という名前を入力します。 これは、スペース"
+"``HUD`` シーンで ``StartButton`` を選択し、インスペクターでその*Shortcut*プロ"
+"パティを見つけます。 「新しいショートカット」を選択し、「ショートカット」項目"
+"をクリックします。 2番目の*Shortcut*プロパティが表示されます。「新しい"
+"InputEventAction」を選択し、新しい「InputEvent」をクリックします。 最後に、"
+"*Action*プロパティに ``ui_select`` という名前を入力します。 これは、スペース"
 "バーに関連付けられたデフォルトの入力イベントです。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1233
@@ -5741,8 +5770,8 @@ msgid ""
 msgstr ""
 "動作するゲームを作成したら、他の人にシェアしたいでしょう。でも、友達にGodotを"
 "ダウンロードして、あなたのプロジェクトを開くように頼むのは現実的ではないです"
-"ね。代わりに、あなたは自分のプロジェクトをエクスポートして誰でも動作させるこ"
-"とのできるパッケージにすることができます。"
+"ね。代わりに、あなたは自分のプロジェクトを*エクスポート*して誰でも動作させる"
+"ことのできる*パッケージ*にすることができます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 msgid ""
@@ -5752,7 +5781,7 @@ msgid ""
 "way the game works."
 msgstr ""
 "エクスポートの方法はプラットホームごとに異なります。このチュートリアルでは"
-"\"Dodge the Creeps\"をいろいろなプラットフォーム用にエクスポートする方法を学"
+"「這うものをよけろ」をいろいろなプラットフォーム用にエクスポートする方法を学"
 "びます。最初にゲームの仕組みを少し変える必要があります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
@@ -5761,7 +5790,7 @@ msgid ""
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
 "自分でまだ「這うものをよけろ」を作成していない場合は、このチュートリアルを続"
-"ける前に:ref: `doc_your_first_game`をお読みください。"
+"ける前に :ref: `doc_your_first_game` をお読みください。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 msgid "Preparing the project"
@@ -5775,7 +5804,7 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
-"\"Dodge the Creeps\"ではプレイヤーキャラクターをキーボードでコントロールしま"
+"「這うものをよけろ」ではプレイヤーキャラクターをキーボードでコントロールしま"
 "した。これはPCなら良いのですが、スマートフォンやタブレットではタッチスクリー"
 "ンの入力に対応する必要があります。クリックイベントをタッチイベントと同じに扱"
 "うことでゲームをクリックして移動するようにできます。"
@@ -5791,7 +5820,8 @@ msgstr ""
 "デフォルトでGodotはタッチ入力からマウス入力をエミュレートします。マウスイベン"
 "ト対応にプログラムされていれば、タッチも同じように動作します。なんらかの理由"
 "でこのようにしたくないときや、マウス入力からタッチをエミュレートしたいとき"
-"は、入力装置とポインティングの下のプロジェクト設定で設定できます。"
+"は、「入力装置」と「ポインティング」の下の「プロジェクト設定」で設定できま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:38
 msgid ""
@@ -5811,16 +5841,16 @@ msgid ""
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
-"次に、「Player.gd」スクリプトを変更して、入力メソッドを変更する必要がありま"
+"次に、 ``Player.gd`` スクリプトを変更して、入力メソッドを変更する必要がありま"
 "す。 キー入力を削除し、タッチ（またはクリック）イベントで設定された「ターゲッ"
-"ト」にプレーヤーを移動させます。"
+"ト」にプレイヤーを移動させます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
 "Here is the full script for the player, with comments noting what we've "
 "changed:"
 msgstr ""
-"プレーヤーの完全なスクリプトを以下に示します。変更点はコメントに記載されてい"
+"プレイヤーの完全なスクリプトを以下に示します。変更点はコメントに記載されてい"
 "ます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:123
@@ -5837,19 +5867,19 @@ msgid ""
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
-"エクスポートするには、http://godotengine.org/download から* export templates "
-"*をダウンロードする必要があります。 これらのテンプレートは、各プラットフォー"
-"ム用にエディターがプリコンパイルされていない最適化されたバージョンのエンジン"
-"です。 * Editor-> Manage Export Templates *をクリックして、Godotでダウンロー"
-"ドすることもできます。"
+"エクスポートするには、http://godotengine.org/download から*export templates*"
+"をダウンロードする必要があります。これらのテンプレートは、各プラットフォーム"
+"用にエディターがプリコンパイルされていない最適化されたバージョンのエンジンで"
+"す。*Editor-> Manage Export Templates*をクリックして、Godotでダウンロードする"
+"こともできます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:132
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
-"表示されるウィンドウで、[ダウンロード]をクリックして、ご使用のGodotのバージョ"
-"ンに一致するテンプレートバージョンを取得できます。"
+"表示されるウィンドウで、「ダウンロード」をクリックして、ご使用のGodotのバー"
+"ジョンに一致するテンプレートバージョンを取得できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:137
 msgid ""
@@ -5869,15 +5899,15 @@ msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*:"
 msgstr ""
-"次に、* Project-> Export *をクリックして、エクスポート設定を構成できます。"
+"次に、*Project-> Export*をクリックして、エクスポート設定を構成できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:147
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
-"[追加...]をクリックしてプラットフォームを選択し、新しいエクスポートプリセット"
-"を作成します。 さまざまな設定で好きなだけプリセットを作成できます。"
+"「追加...」をクリックしてプラットフォームを選択し、新しいエクスポートプリセッ"
+"トを作成します。 さまざまな設定で好きなだけプリセットを作成できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:150
 msgid ""
@@ -5894,17 +5924,17 @@ msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
-"2番目のボタン「プロジェクトのエクスポート」は、Androidの場合は `.apk`、"
-"Windowsの場合は` .exe`など、ゲームの完全な実行可能バージョンを作成します。"
+"2番目のボタン「プロジェクトのエクスポート」は、Androidの場合は `.apk` 、"
+"Windowsの場合は ` .exe` など、ゲームの完全な実行可能バージョンを作成します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:157
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
-"[リソース]タブと[機能]タブでは、プラットフォームごとにゲームをエクスポートす"
-"る方法をカスタマイズできます。 今のところ、これらの設定はそのままにしておきま"
-"す。"
+"「リソース」タブと「機能」タブでは、プラットフォームごとにゲームをエクスポー"
+"トする方法をカスタマイズできます。 今のところ、これらの設定はそのままにしてお"
+"きます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:161
 msgid "Exporting by platform"
@@ -5930,15 +5960,14 @@ msgid ""
 "destination folder. Choose a location *outside* of your project folder."
 msgstr ""
 "PCプラットフォームへのエクスポートは３つのサポートされたオペレーションシステ"
-"ムで同じ様に動きます。プリセットを作るためにエクスポートウィンドウを開きAdd.."
-"\"をクリックします。その後 \"エクスポートプロジェクト\" をクリックし、名前と"
-"保存フォルダーを選びます。あなたのプロジェクトの *外側* の場所を選んで下さ"
-"い。"
+"ムで同じ様に動きます。プリセットを作るためにエクスポートウィンドウを開き"
+"「Add..」をクリックします。その後 「エクスポートプロジェクト」 をクリックし、"
+"名前と保存フォルダーを選びます。あなたのプロジェクトの *外側* の場所を選んで"
+"下さい。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:174
 msgid "Click \"Save\" and the engine will build the export files."
-msgstr ""
-"\"保存\" をクリックするとエンジンはエクスポートファイルをビルドします。"
+msgstr "「保存」をクリックするとエンジンはエクスポートファイルをビルドします。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:176
 msgid ""
@@ -5947,10 +5976,10 @@ msgid ""
 "either case, the compressed file contains a macOS `.app` that you can double-"
 "click and run."
 msgstr ""
-"macOSへとエクスポートする際、macOSマシン上でエクスポートすると、`.dmg`ファイ"
-"ルができますが、LinuxあるいはWindowsの場合は`.zip`ファイルが作られます。いず"
-"れの場合も、この圧縮ファイルの中にはmacOS用`.app`が含まれていて、ダブルクリッ"
-"クすると実行できます。"
+"macOSへとエクスポートする際、macOSマシン上でエクスポートすると、 `.dmg` ファ"
+"イルができますが、LinuxあるいはWindowsの場合は `.zip` ファイルが作られます。"
+"いずれの場合も、この圧縮ファイルの中にはmacOS用 `.app` が含まれていて、ダブル"
+"クリックすると実行できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:181
 msgid ""
@@ -6000,7 +6029,8 @@ msgid ""
 msgstr ""
 "Android Studioを最初に起動したときは、*Configure -> SDK Manager* をクリックし"
 "て\"Android SDK Platform Tools\"をインストールしてください。これにより、Godot"
-"がデバイスと通信するのに使うコマンドラインツール`adb`がインストールされます。"
+"がデバイスと通信するのに使うコマンドラインツール `adb` がインストールされま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:204
 msgid ""
@@ -6017,16 +6047,16 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
-"Godotの*エディタ → エディタ設定*をクリックし、一覧から*Export / Android*を選"
-"択してください。ここでadb (Android SDK)、jarsigner (Java SDK)、および作成した"
-"キーストアへのパスを指定します。"
+"Godotの「エディタ → エディタ設定」をクリックし、一覧から「Export / Android」"
+"を選択してください。ここでadb (Android SDK)、jarsigner (Java SDK)、および作成"
+"したキーストアへのパスを指定します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:217
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above)."
 msgstr ""
-"これでエクスポートの準備がととのいました。*プロジェクト → エクスポート*をク"
+"これでエクスポートの準備がととのいました。「プロジェクト → エクスポート」をク"
 "リックして、Androidのプリセットを追加してください (上記参照)。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:220
@@ -6034,7 +6064,7 @@ msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
-"『プロジェクトのエクスポート』ボタンをクリックすると、Godotはデバイスに送信で"
+"「プロジェクトのエクスポート」ボタンをクリックすると、Godotはデバイスに送信で"
 "きるAPKをビルドします。コマンドラインでするには、下記のように実行してくださ"
 "い："
 
@@ -6053,7 +6083,7 @@ msgid ""
 "area:"
 msgstr ""
 "システムが対応している場合、互換性のあるAndroidデバイスを接続すると、Godotの"
-"テストプレイ用ボタンの場所に『ワンクリック・デプロイ』ボタンが現れます。"
+"テストプレイ用ボタンの場所に「ワンクリック・デプロイ」ボタンが現れます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:235
 msgid ""
@@ -6090,7 +6120,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/exporting.rst:251
 msgid "Click \"Export Project\" and select a destination folder."
 msgstr ""
-"『プロジェクトのエクスポート』をクリックして、エクスポート先のフォルダを選択"
+"「プロジェクトのエクスポート」をクリックして、エクスポート先のフォルダを選択"
 "します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:253
@@ -6120,7 +6150,7 @@ msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
 msgstr ""
-"HTML5のプリセットにて『プロジェクトのエクスポート』をクリックします。設定はデ"
+"HTML5のプリセットにて「プロジェクトのエクスポート」をクリックします。設定はデ"
 "フォルトから変える必要はありません。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:269
@@ -6130,17 +6160,16 @@ msgid ""
 msgstr "エクスポートが完了すると、下記のファイルがあるフォルダが作られます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:274
-#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
 "you don't have one set up on your computer, you can search online to find "
 "suggestions for your specific OS."
 msgstr ""
-"`.html`ファイルをブラウザーで見るとゲームをプレイできます。しかし、このファイ"
-"ルを直接開くことはできないので、ウェブサーバー上に置く必要があります。もし用"
-"意していないのであれば、お使いのOSに適したセットアップ法をGoogleで検索してみ"
-"てください。"
+"`.html` ファイルをブラウザーで見るとゲームをプレイできます。しかし、このファ"
+"イルを直接開くことはできないので、ウェブサーバー上に置く必要があります。もし"
+"用意していないのであれば、お使いのOSに適したセットアップ法をオンラインで検索"
+"してみてください。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
 msgid ""
@@ -6158,11 +6187,10 @@ msgid ""
 "project."
 msgstr ""
 "下にあるコンソール・ウィンドウは、なにか問題があればそれを知らせてくれます。"
-"プロジェクトのエクスポート時に『デバッグ付きエクスポート』のチェックを外す"
+"プロジェクトのエクスポート時に「デバッグ付きエクスポート」のチェックを外す"
 "と、無効にできます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:287
-#, fuzzy
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "
 "technology and you may find some things that don't work. Make sure you have "
@@ -6170,10 +6198,10 @@ msgid ""
 "find at the `Godot Github repository <https://github.com/godotengine/godot/"
 "issues>`_."
 msgstr ""
-"まだブラウザがWASMに完全対応しているとはいえません。FirefoxおよびChromeは対応"
-"していますが、まだうまく動かない場合があるかもしれません。まず最新版のブラウ"
-"ザにアップデートし、もしバグがあれば`Godot Github repository <https://github."
-"com/godotengine/godot/issues>`_ までご報告ください(英語)。"
+"まだ全てのメジャーなブラウザがWASMに対応しているとはいえません。これは新しい"
+"テクノロジーで上手く動かない事をいくらか見つけるかもしれません。まず最新版の"
+"ブラウザにアップデートし、もしバグがあれば`Godot Github repository <https://"
+"github.com/godotengine/godot/issues>`_ \\ までご報告ください(英語)。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
 msgid "Godot’s design philosophy"
@@ -6568,13 +6596,12 @@ msgstr ""
 "コンテナを使用してユーザーインターフェイスを効率的に配置および配置する方法"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
-#, fuzzy
 msgid ""
 "The five most common containers (you can learn more about containers in the :"
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
 msgstr ""
 "とりわけよく使う５つのコンテナ (この後、コンテナについてもっと知りたければ"
-"\\ :ref:`GUIコンテナ <doc_gui_containers>`\\ を参照してください)。"
+"\\ :ref:`GUI Containers <doc_gui_containers>` \\ を参照してください)。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -6860,6 +6887,11 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign, respectively."
 msgstr ""
+"**Label** はスクリーンにテキストを表示します。インスペクタのLabelセクションで"
+"全てのプロパティを確認できるでしょう。``Text``プロパティでテキストを書き、も"
+"しテキストボックスの大きさを重視しないならAutowrapにチェックを入れてくださ"
+"い。もし Autowrapがオフのとき、ノードを拡大することはできないでしょう。Align"
+"とValignを用いることでそれぞれ横方向と縦方向に整列させることができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "Picture of a Label"
@@ -6876,6 +6908,9 @@ msgid ""
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
+"**NinePatchRect** は3行と3列に分割されたテクスチャを受け取ります。 中央と横の"
+"タイルは拡大されますが、隅のタイルは拡大されません。パネルやダイアログボック"
+"スや拡大可能なUI用の背景を作るさいに便利です。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "NinePatchRect scaled with the min\\_size property"
@@ -6918,6 +6953,13 @@ msgid ""
 "cleaner hierarchies, but it's harder to arrange items in a row, column, "
 "grid, etc."
 msgstr ""
+"２つのアプローチはいつも相性が良いわけではありません。コンテナは子ノードを操"
+"作し、それらのレイアウトメニューを使えないからです。それぞれのコンテナは特定"
+"の効果を持ち、操作画面にたどり着くまでにいくつかのノードをたどらなければなら"
+"ないかもしれません。レイアウトアプローチでは子ノードの下の画面から行うことが"
+"できます。シーンに追加のコンテナを挿入しないなら、見通しのよい階層を構成でき"
+"るでしょう。しかし、縦、横、グリッド等にアイテムを配置することは難しくなるで"
+"しょう。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:179
 msgid ""
@@ -6959,6 +7001,12 @@ msgid ""
 "inspector's 4 properties. The layout menu will only show up when you select "
 "a control node."
 msgstr ""
+"他のプロパティと同じく、４個あるアンカーポイントをインスペクタで編集すること"
+"もできますが、最適な方法ではありません。コントロールノードを選択すると、"
+"ビューポートの上にあるツールバーに『レイアウト』メニューが現れます。インスペ"
+"クタに４個あるプロパティの代わりに、このアイコン付きのリストから選べば、一発"
+"ですべてのアンカーを設定できます。『レイアウト』メニューは、コントロールノー"
+"ドを選択したときにのみ出てきます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "The layout menu in the viewport"
@@ -7092,6 +7140,10 @@ msgid ""
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor, so you can see the effect instantly."
 msgstr ""
+"コンテナは、子になったコントロールノード(他のコンテナも可)をすべて、自動的に"
+"縦や横などに並べます。インターフェースの周りにパディングを追加したり、ノード"
+"を四角形の中央に配置するのに使えます。組み込みのコンテナは、すべてエディタの"
+"中で更新されるので、すぐに反映された結果を見ることができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:284
 msgid ""
@@ -7235,6 +7287,9 @@ msgid ""
 "design more advanced interfaces, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
+"GodotのUIシステムは複雑で、さらに多くの機能があります。より高度なインター"
+"フェースをデザインする方法を学ぶには、ドキュメントの:ref:`GUIの節 <toc-learn-"
+"features-gui>`\\ へと進んでください。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
 msgid "Design a title screen"
@@ -7254,7 +7309,7 @@ msgstr "メインメニュー"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
 msgid "A game UI with a health bar, energy bar, bomb and money counters"
-msgstr "ヘルスバー、エネルギーバー、爆弾、マネーカウンターを備えたゲームUI"
+msgstr "体力バー、エネルギーバー、爆弾、マネーカウンターを備えたゲームUI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
 msgid ""
@@ -7262,6 +7317,10 @@ msgid ""
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
+"ここでは効率的にゲームUIをデザインする方法と、Godotのコントロールノードの使い"
+"方を紹介します。このページでは視覚面に主眼を置き、すべてエディタ操作のみで完"
+"結します。ライフバーのコードの書き方を知るには、次を見て下さい:doc:"
+"`ui_code_a_life_bar`\\"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create"
@@ -7275,12 +7334,19 @@ msgid ""
 "final result. You'll find all the sprites in the ``start/assets/main_menu`` "
 "folder."
 msgstr ""
+"プロジェクト用ファイル :download:`ui_main_menu_design.zip <files/"
+"ui_main_menu_design.zip>`\\ をダウンロードして、解凍してください。チュートリ"
+"アルのために、Godotで``start/``プロジェクトをインポートしてください。``end/``"
+"フォルダには最終結果が入っています。``start/assets/main_menu``フォルダにはす"
+"べてのスプライトがあります。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
 msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
 "UI system works"
 msgstr ""
+"GodotのUIシステムの仕組みを知るには、まず:doc:"
+"`ui_introduction_to_the_ui_system`\\ を見て下さい"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:33
 msgid "How to design your game UI"
@@ -7310,13 +7376,16 @@ msgid ""
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
+"プレースホルダは醜くなければならない訳ではなく、シンプルかつクリーンなグラ"
+"フィックスが維持できます。プレイヤーがUIをテストプレイする前は、特別なエフェ"
+"クト、アニメーション、詳細なイラストは避けて下さい。でなければ:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:51
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback"
 msgstr ""
-"グラフィックがプレーヤーのエクスペリエンスの認識を歪め、貴重なフィードバック"
+"グラフィックがプレイヤーのエクスペリエンスの認識を歪め、貴重なフィードバック"
 "を見逃す可能性があります"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:53
@@ -7377,7 +7446,7 @@ msgid ""
 "design, but they're still placeholders"
 msgstr ""
 "Godotにあるファイル グラフィックはラフデザインよりもきれいに見えますが、それ"
-"でもプレースホルダーです"
+"でもプレースホルダです"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:82
 msgid "Design the main menu"
@@ -7411,7 +7480,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:95
 msgid "If there's some padding around an area, use a ``MarginContainer``"
-msgstr "領域の周囲に余白がある場合は、``MarginContainer``を使用します"
+msgstr "領域の周囲に余白がある場合は、``MarginContainer`` を使用します"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
 msgid ""
@@ -7624,7 +7693,7 @@ msgid ""
 "the menu options on the left, and a ``CenterContainer`` for the illustration "
 "on the right."
 msgstr ""
-"``MarginContainer`` を選択し、 ``HBoxContainerを追加します`` 。次に、 "
+"``MarginContainer`` を選択し、 ``HBoxContainer`` を追加します。次に、 "
 "``HBoxContainer`` の子として2つのコンテナーが必要です。左側にメニューオプショ"
 "ン用の ``VBoxContainer`` 、右側にイラスト用の ``CenterContainer`` がありま"
 "す。"
@@ -7642,9 +7711,9 @@ msgid ""
 "left side: the logo, the menu options and the version note. Drag and drop "
 "them into the ``VBoxContainer``. The nodes should position automatically."
 msgstr ""
-"ノードツリーで、左側にあるすべての `` TextureRect``ノードを選択します：ロゴ、"
-"メニューオプション、バージョンノートです。それらを `` VBoxContainer``にドラッ"
-"グアンドドロップします。ノードは自動的に配置されます。"
+"ノードツリーで、左側にあるすべての `` TextureRect`` ノードを選択します：ロ"
+"ゴ、メニューオプション、バージョンノートです。それらを `` VBoxContainer`` に"
+"ドラッグアンドドロップします。ノードは自動的に配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:212
 msgid "Containers automatically place and resize textures"
@@ -7673,14 +7742,14 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
-"文字を右に中央揃えするには、最初に''CenterContainer''を選択します。次に、イン"
-"スペクタで''Size Flags''カテゴリまで下にスクロールし、''Vertical''プロパティ"
-"の右側のフィールドをクリックして、''Fill''に加えて''Expand''をチェックしま"
-"す。 `` Horizontal``プロパティについても同じことを行います。これによ"
-"り、''CenterContainer''は、隣接する''VBoxContainer''を尊重しながら、使用可能"
-"なすべてのスペースに拡張されます。最後に、Charactersノードを `` "
-"CenterContainer``にドラッグアンドドロップします。 Characters要素は自動的に中"
-"央に配置されます。"
+"文字を右に中央揃えするには、最初に ``CenterContainer`` を選択します。次に、イ"
+"ンスペクタで ``Size Flags`` カテゴリまで下にスクロールし、 ``Vertical`` プロ"
+"パティの右側のフィールドをクリックして、 ``Fill`` に加えて ``Expand`` を"
+"チェックします。 ``Horizontal`` プロパティについても同じことを行います。これ"
+"により、 ``CenterContainer`` は、隣接する ``VBoxContainer`` を尊重しながら、"
+"使用可能なすべてのスペースに拡張されます。最後に、Charactersノードを "
+"``CenterContainer`` にドラッグアンドドロップします。Characters要素は自動的に"
+"中央に配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:230
 msgid ""
@@ -7812,7 +7881,7 @@ msgstr ""
 "ジェクト設定」をクリックします。ウィンドウの左側のカラムで、Displayカテゴリを"
 "探します。Windowサブカテゴリをクリックします。ウィンドウの右側に、Stretchセク"
 "ションがあります。Mode、Aspect、Shrinkの3つの設定は、画面サイズを制御します。"
-"詳細については、\\ :ref:`doc_multiple_resolutions`を参照してください。"
+"詳細については、\\ :ref:`doc_multiple_resolutions`\\ を参照してください。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
 msgid "Design the GUI"
@@ -7853,10 +7922,10 @@ msgid ""
 "ui_gui_design.zip>` and extract the archive. Import the `start/` project in "
 "Godot to follow this tutorial. The `end/` folder contains the final result."
 msgstr ""
-"プロジェクトファイル:download:`ui_gui_design.zip <files/ui_gui_design.zip>`を"
-"ダウンロードします。アーカイブを解凍します。このチュートリアルに従って、Godot"
-"に`start/`プロジェクトをインポートしてください。 `end/`フォルダには最終結果が"
-"含まれています。"
+"プロジェクトファイル:download:`ui_gui_design.zip <files/ui_gui_design.zip>`"
+"\\ をダウンロードします。アーカイブを解凍します。このチュートリアルに従って、"
+"Godotに `start/` プロジェクトをインポートしてください。 `end/` フォルダには最"
+"終結果が含まれています。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
 msgid ""
@@ -7874,7 +7943,7 @@ msgid ""
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
 "up to three columns:"
 msgstr ""
-"最後のUIを分解し、使用するコンテナを計画します。:doc:`ui_main_menu`と同様に "
+"最後のUIを分解し、使用するコンテナを計画します。:doc:`ui_main_menu` と同様に "
 "``MarginContainer`` から始まります。次に、最大3つの列を表示できます:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
@@ -8012,9 +8081,9 @@ msgid ""
 "the ``HBoxContainer`` is the perfect tool for the job. Select the ``Bars`` "
 "node and add a new ``HBoxContainer`` inside of it. Name it ``Bar``."
 msgstr ""
-"各バーは、水平方向に整列する2つのサブ要素に分割されます。左側がヘルス・カウン"
-"トのラベル、右側がゲージです。繰り返しになりますが、 ``HBoxContainer`` はこの"
-"作業に最適なツールです。 ``Bars`` ノードを選択し、その中に新しい "
+"各バーは、水平方向に整列する2つのサブ要素に分割されます。左側が体力・カウント"
+"のラベル、右側がゲージです。繰り返しになりますが、 ``HBoxContainer`` はこの作"
+"業に最適なツールです。 ``Bars`` ノードを選択し、その中に新しい "
 "``HBoxContainer`` を追加します。 ``Bar`` という名前を付けます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:113
@@ -8204,7 +8273,6 @@ msgstr ""
 "ティを ``24`` または ``28`` のように高い値に設定します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
-#, fuzzy
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -8219,7 +8287,7 @@ msgstr ""
 "る必要があります。これを行うには、 ``DynamicFont`` リソースの ``Extra "
 "Spacing`` カテゴリで ``Bottom`` プロパティを調整します。テキストに下のパディ"
 "ングを追加します。シーンタブの ``Number`` ノードをクリックしてノードのプロパ"
-"ティに戻り、 ``VAlign`` を ``Bottom`` に変更します。テキストのベースラインを"
+"ティに戻り、 ``Valign`` を ``Bottom`` に変更します。テキストのベースラインを"
 "調整するには、もう一度 ``Custom Font`` カテゴリの下のフォントフィールドをク"
 "リックし、テキストが ``Title`` ノードに揃うまで ``Bottom`` プロパティを微調整"
 "します。今回は ``2`` ピクセルの値を使用しました。"
@@ -8333,7 +8401,6 @@ msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr "ノードはBackground全体に固定されていますが、位置がずれています"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -8341,10 +8408,10 @@ msgid ""
 "resize its left edge a little bit to add some padding between the left edge "
 "of the ``Background`` and the text."
 msgstr ""
-"``Number`` の ``Align`` プロパティを変更して、背景の左側と中央に移動します。 "
-"``Number`` ノードを選択し、その ``Align`` プロパティを ``left`` に、 "
-"``VAlign`` プロパティを ``center`` に変更します。 次に、その左端を少しサイズ"
-"変更して、 ``Background`` の左端とテキストの間に余白を追加します。"
+"``Number`` の ``Align`` プロパティを変更して、``Background``の左側と中央に移"
+"動します。 ``Number`` ノードを選択し、その ``Align`` プロパティを ``left`` "
+"に、 ``Valign`` プロパティを ``center`` に変更します。 次に、その左端を少しサ"
+"イズ変更して、 ``Background`` の左端とテキストの間に余白を追加します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
 msgid "The Number node aligned to the left and centre"
@@ -8905,7 +8972,7 @@ msgid ""
 "16:9. They are close to one another. That's why it’s enough for the GUI "
 "elements to only move horizontally when we change the window size."
 msgstr ""
-"**レスポンシブデザイン**に関する最後の注意事項。GUI のサイズを変更すると、"
+"**レスポンシブデザインに関する最後の注意事項** 。GUI のサイズを変更すると、"
 "ノードが移動しますが、テクスチャとテキストはスケーリングしません。GUIには、内"
 "部のテクスチャに基づいて最小サイズも使用されます。ゲームでは、Webサイトほど柔"
 "軟なインターフェイスは必要ありませんが、横向きと縦向きの両方をサポートするこ"
@@ -8942,11 +9009,11 @@ msgstr "次の方法について学習します:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:20
 msgid "How to **connect** a character to a GUI with signals"
-msgstr "シグナルを使ってキャラクターをGUIに**接続**する方法"
+msgstr "シグナルを使ってキャラクターをGUIに **接続** する方法"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:21
 msgid "How to **control** a GUI with GDscript"
-msgstr "GDscriptを使用してGUIを**制御する**方法"
+msgstr "GDscriptを使用してGUIを **制御する** 方法"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
@@ -8995,13 +9062,13 @@ msgid ""
 "constant time intervals. We want the life bar to update when the Player "
 "takes damage."
 msgstr ""
-"中核となるゲームプレーとUIの準備ができたら、何らかの方法でそれらを接続する必"
-"要があります。この例では、一定の時間間隔でプレーヤーを攻撃する敵がいます。プ"
+"中核となるゲームプレイとUIの準備ができたら、何らかの方法でそれらを接続する必"
+"要があります。この例では、一定の時間間隔でプレイヤーを攻撃する敵がいます。プ"
 "レイヤーがダメージを受けたときにライフバーが更新されるようにします。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:45
 msgid "To do this, we will use **signals**."
-msgstr "これを行うには、**シグナル**を使用します。"
+msgstr "これを行うには、 **シグナル** を使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
 msgid ""
@@ -9027,8 +9094,8 @@ msgid ""
 msgstr ""
 "Godotプロジェクトをダウンロード(:download:`ui_code_life_bar.zip <files/"
 "ui_code_life_bar.zip>`)してください。チュートリアルに必要なすべての素材やスク"
-"リプトが入っています。zipアーカイブを解凍して、2つのフォルダー`start`と`end`"
-"を取得します。"
+"リプトが入っています。zipアーカイブを解凍して、2つのフォルダー `start` と "
+"`end` を取得します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
 msgid ""
@@ -9050,7 +9117,7 @@ msgid ""
 "have to re-create it from scratch."
 msgstr ""
 "これは、ゲームのコーディング方法の典型です。最初にコアゲームプレイを実装し、"
-"プレーヤーの死を処理してから、インターフェイスを追加します。それは、UIがゲー"
+"プレイヤーの死を処理してから、インターフェイスを追加します。それは、UIがゲー"
 "ム内で起こっていることに耳を傾けているからです。ゲームプレイのプロトタイプを"
 "作成してテストする前にUIを設計すると、うまく機能しない可能性があり、そうなる"
 "と最初から作成し直す必要がある場合があります。"
@@ -9080,7 +9147,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
 msgstr ""
-"``bar``はライフバーそのものです。 これは ``TextureProgress`` ノードです"
+"``bar`` はライフバーそのものです。 これは ``TextureProgress`` ノードです"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
 msgid ""
@@ -9107,11 +9174,12 @@ msgid ""
 "In the `scripts/` folder you will find the enemy, the player, and the GUI "
 "controller scripts."
 msgstr ""
-"プロジェクトのルートの`res ://`フォルダに`LevelMockup`があります。これがメイ"
-"ンのゲームシーンであり、ここで作業します。ゲームを構成するすべてのコンポーネ"
-"ントは、`scenes/`フォルダにあります。`assets/`フォルダには、ゲームのスプライ"
-"トとHPカウンタのフォントが含まれています。`scripts/`フォルダには、敵のスクリ"
-"プト、プレイヤーのスクリプト、GUIコントローラのスクリプトがあります。"
+"プロジェクトのルートの `res ://` フォルダに `LevelMockup` があります。これが"
+"メインのゲームシーンであり、ここで作業します。ゲームを構成するすべてのコン"
+"ポーネントは、 `scenes/` フォルダにあります。 `assets/` フォルダには、ゲーム"
+"のスプライトとHPカウンタのフォントが含まれています。 `scripts/` フォルダに"
+"は、敵のスクリプト、プレイヤーのスクリプト、GUIコントローラのスクリプトがあり"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:117
 msgid ""
@@ -9128,7 +9196,7 @@ msgstr "プレーヤシーンがその子を表示するように設定された
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:124
 msgid "Set up the Lifebar with the Player's max\\_health"
-msgstr "プレーヤーのmax\\_healthを使用してライフバーをセットアップする"
+msgstr "プレイヤーのmax\\_healthを使用してライフバーをセットアップする"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:126
 msgid ""
@@ -9139,9 +9207,9 @@ msgid ""
 "update the ``Lifebar`` and ``Number`` nodes with this value."
 msgstr ""
 "プレイヤーの現在の状態を何らかの方法でGUIに伝え、ライフバーのテクスチャを更新"
-"し、残りの状態を画面左上のHPカウンターに表示する必要があります。そのために、"
-"プレイヤーがダメージを受けるたびに、プレイヤーのヘルス情報をGUIに送信します。"
-"GUIは、この値で ``Lifebar`` ノードと ``Number`` ノードを更新します。"
+"し、残りの体力を画面左上のHPカウンターに表示する必要があります。そのために、"
+"プレイヤーがダメージを受けるたびに、プレイヤーの体力をGUIに送信します。GUI"
+"は、この値で ``Lifebar`` ノードと ``Number`` ノードを更新します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:132
 msgid ""
@@ -9161,10 +9229,10 @@ msgid ""
 "to change its `max_value` property. You send a percentage from the `Player` "
 "to the `GUI` instead:  `health / max_health * 100`."
 msgstr ""
-"バーの`TextureProgres`sでは、デフォルトで`max_value`が`100`になっています。 "
-"キャラクターの健康状態を数字で表示する必要がない場合は、その`max_value`プロパ"
-"ティを変更する必要はありません。代わりに、`プレーヤー`から`GUI`にパーセンテー"
-"ジを送信します。`health / max_health * 100`。"
+"バーの `TextureProgress` では、デフォルトで `max_value` が `100` になっていま"
+"す。 キャラクターの体力を数字で表示する必要がない場合は、その `max_value` プ"
+"ロパティを変更する必要はありません。代わりに、 `Player ` から `GUI` にパーセ"
+"ンテージを送信します。 `health / max_health * 100` 。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:143
 msgid ""
@@ -9174,7 +9242,7 @@ msgid ""
 "``bar``'s ``max_value``:"
 msgstr ""
 "シーンドックの ``GUI`` の右側にあるスクリプトアイコンをクリックしてスクリプト"
-"を開きます。 ``_ready`` 関数では、プレーヤーの ``max_health`` を新しい変数に"
+"を開きます。 ``_ready`` 関数では、プレイヤーの ``max_health`` を新しい変数に"
 "格納し、それを使って ``bar`` の ``max_value`` を設定します:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:164
@@ -9216,8 +9284,8 @@ msgid ""
 "player already lost some health."
 msgstr ""
 "``health`` が常に ``max_health`` と等しいという保証はありません。体力が回復し"
-"ないで次のステージに進むようなゲームでは、プレイヤーがすでに ``health`` を幾"
-"ばくか失った状態が読み込まれる可能性があります。"
+"ないで次のステージに進むようなゲームでは、プレイヤーがすでに体力をいくらか"
+"失った状態が読み込まれる可能性があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
 msgid ""
@@ -9229,17 +9297,17 @@ msgid ""
 "to set everything up and prepare the game session. Learn more about _ready: :"
 "doc:`scripting_continued`"
 msgstr ""
-"ゲームでシーンを開くと、Godotは [シーン](Scene) ドッキング内の順序に従って、"
-"上から下にノードを1つずつ作成します。`GUI`と`Player`は同じノードブランチの一"
-"部ではありません。相互にアクセスするときに両方が存在することを確認するには、"
-"`_ready`関数を使用する必要があります。Godotは、すべてのノードをロードした直"
-"後、ゲームを開始する前に`_ready`を呼び出します。すべてを設定してゲームセッ"
-"ションを準備するのに最適な機能です。_readyの詳細は:doc:`scripting_continued`"
-"を参照して下さい"
+"ゲームでシーンを開くと、Godotはシーン・ドック内の順序に従って、上から下にノー"
+"ドを1つずつ作成します。 `GUI` と `Player` は同じノードブランチの一部ではあり"
+"ません。相互にアクセスするときに両方が存在することを確認するには、 `_ready` "
+"関数を使用する必要があります。Godotは、すべてのノードをロードした直後、ゲーム"
+"を開始する前に `_ready` を呼び出します。すべてを設定してゲームセッションを準"
+"備するのに最適な機能です。_readyの詳細は:doc:`scripting_continued`を参照して"
+"下さい。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
 msgid "Update health with a signal when the player takes a hit"
-msgstr "プレーヤーがヒットしたときにシグナルでヘルスを更新する"
+msgstr "プレイヤーがヒットしたときにシグナルで体力を更新する"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:190
 msgid ""
@@ -9284,8 +9352,8 @@ msgid ""
 msgstr ""
 "特定のフレームで、更新「前」に別のノードのプロパティを参照すると、最後のフ"
 "レームから値が取得されます。これは、修正が難しい不明瞭なバグにつながります。"
-"一方、信号は変化が起こった直後に発せられます。新しい情報を**確実**に入手でき"
-"ます。また、変更が行われた「直後」に、接続されたノードの状態を更新します。"
+"一方、信号は変化が起こった直後に発せられます。新しい情報を **確実** に入手で"
+"きます。また、変更が行われた「直後」に、接続されたノードの状態を更新します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
 msgid ""
@@ -9414,8 +9482,8 @@ msgid ""
 "In Player.gd, when the Player emits the health\\_changed signal, it also "
 "sends its health value"
 msgstr ""
-"Player.gdでは、Playerがhealth\\_changedシグナルを放出すると、そのヘルス値も送"
-"信します"
+"Player.gdでは、Playerがhealth\\_changedシグナルを放出すると、その体力値も送信"
+"します"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
 msgid ""
@@ -9428,8 +9496,8 @@ msgid ""
 "We could directly update the health value on `LifeBar` and `Number`. There "
 "are two reasons to use this method instead:"
 msgstr ""
-"`LifeBar`と`Number`のヘルス値を直接更新できます。 代わりにこの方法を使用する"
-"理由は2つあります:"
+"`LifeBar`と`Number`の体力値を直接更新できます。 代わりにこの方法を使用する理"
+"由は2つあります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
 msgid ""
@@ -9670,8 +9738,8 @@ msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
 msgstr ""
-"`number_label`と`bar`は、`Number`ノードと`TextureProgress`ノードへの参照を格"
-"納する変数です。"
+"`number_label` と `bar` は、 `Number` ノードと `TextureProgress` ノードへの参"
+"照を格納する変数です。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
 msgid ""
@@ -9795,9 +9863,9 @@ msgid ""
 "from it. It lets you toggle the visibility of the node, assign a shader to "
 "it, and modify it using a color with `modulate`."
 msgstr ""
-"`modulate`は`CanvasItem`クラスから取得され、すべての2DノードとUIノードはこれ"
-"を継承します。ノードの表示/非表示を切り替え、シェーダを割り当て、 `modulate`"
-"で色を使用して修正することができます。"
+"`modulate` は `CanvasItem` クラスから取得され、すべての2DノードとUIノードはこ"
+"れを継承します。ノードの表示/非表示を切り替え、シェーダを割り当て、 "
+"`modulate` で色を使用して修正することができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
 msgid ""
@@ -9829,16 +9897,16 @@ msgid ""
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
 "the alpha channel."
 msgstr ""
-"``Color(1.0、1.0、1.0)``は白に対応します。 4番目の引数、``start_color``と"
-"``end_color``のそれぞれ``1.0``と``0.0``は、アルファチャンネルです。"
+"``Color(1.0、1.0、1.0)`` は白に対応します。 4番目の引数、 ``start_color`` と "
+"``end_color`` のそれぞれ ``1.0`` と ``0.0`` は、アルファチャンネルです。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
 msgstr ""
-"次に、``Tween``ノードの``interpolate_property``メソッドをもう一度呼び出す必要"
-"があります:"
+"次に、 ``Tween`` ノードの ``interpolate_property`` メソッドをもう一度呼び出す"
+"必要があります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
 msgid ""
@@ -9854,11 +9922,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
 msgid "And that is it. You may now play the game to see the final result!"
-msgstr "以上です。これでゲームをプレイして最終結果を確認できます!"
+msgstr "以上です。これでゲームをプレイして最終結果を確認できます！"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
 msgid "The final result. Congratulations for getting there!"
-msgstr "最終結果。上手くいきましたね!"
+msgstr "最終結果。上手くいきましたね！"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
 msgid ""
@@ -9926,9 +9994,8 @@ msgid ""
 "<class_TextureRect>` type. To display an image, drag the corresponding asset "
 "to the texture property."
 msgstr ""
-"ノード「背景」と「ロゴ」は：ref： `TextureRect <class_TextureRect>`タイプで"
-"す。画像を表示するには、対応するアセットをテクスチャプロパティにドラッグしま"
-"す。"
+"ノード「背景」と「ロゴ」は :ref:`TextureRect <class_TextureRect>`\\ 型です。"
+"画像を表示するには、対応するアセットをテクスチャプロパティにドラッグします。"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:32
 msgid ""
@@ -9936,9 +10003,9 @@ msgid ""
 "several images for different states, but only the normal and pressed will be "
 "supplied in this example:"
 msgstr ""
-"ノード \"start\" は \\ :ref:`TextureButton <class_TextureButton>` です。この"
-"例では、さまざまな状態の複数のイメージを取得しますが、NormalとPressedのイメー"
-"ジだけが提供されます:"
+"ノード \"start\" は \\ :ref:`TextureButton <class_TextureButton>`\\ です。こ"
+"の例では、さまざまな状態の複数のイメージを取得しますが、NormalとPressedのイ"
+"メージだけが提供されます:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:38
 msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
@@ -10059,6 +10126,8 @@ msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes with different values, the animation happens."
 msgstr ""
+"ロゴの位置を``(118, 0)``に変更し、またキーフレームを追加してください。値の異"
+"なるキーフレームがふたつあれば、アニメーションができます。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:73
 msgid ""
@@ -10099,6 +10168,10 @@ msgid ""
 "features rely on it. There is another datatype that is just as important: :"
 "ref:`Resource <class_Resource>`."
 msgstr ""
+"ここまでのチュートリアルではGodotの、エンジンのほとんどの機能が頼りにしてい"
+"る、:ref:`Node <class_Node>`\\ (ノード)クラスについて主に紹介してきました。も"
+"うひとつ、同じくらい重要なデータ型は:ref:`Resource <class_Resource>`\\ (リ"
+"ソース)です。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
 msgid ""
@@ -10107,6 +10180,10 @@ msgid ""
 "containers**. They don't do anything on their own: instead, nodes use the "
 "data contained in resources."
 msgstr ""
+"*Node* は、機能を提供します。例えばスプライトや3Dモデルの表示、物理演算、ユー"
+"ザーインターフェースの配置などです。一方、**Resource**は**データの格納**に使"
+"います。それ自身はなにもしませんが、代わりにノードが、データの入ったリソース"
+"を使用します。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 msgid ""
@@ -10117,6 +10194,12 @@ msgid ""
 "<class_AudioStream>`, :ref:`Font <class_Font>`, :ref:`Translation "
 "<class_Translation>`."
 msgstr ""
+"Godotが保存したり、ディスクから読み込んだりするものは、すべてリソースです。こ"
+"れは、シーン(.tscnや.scnファイル)や、画像、スクリプトなどが該当します。リソー"
+"スの例は、:ref:`Texture <class_Texture>`\\ 、:ref:`Script <class_Script>`"
+"\\ 、:ref:`Mesh <class_Mesh>`\\ 、:ref:`Animation <class_Animation>`\\ 、:"
+"ref:`AudioStream <class_AudioStream>`\\ 、:ref:`Font <class_Font>`\\ 、:ref:"
+"`Translation <class_Translation>`\\ などです。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
 msgid ""
@@ -10125,6 +10208,9 @@ msgid ""
 "again will return the same copy every time. As resources only contain data, "
 "there is no need to duplicate them."
 msgstr ""
+"エンジンがリソースをディスクから読み込む際に、**読み込むのは一度きり**です。"
+"もしメモリ上にすでにリソースのコピーがあれば、読み込む代わりに毎回そのコピー"
+"を返します。リソースはデータのみを含むので、重複させても意味はないのです。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
 msgid ""
@@ -10133,6 +10219,10 @@ msgid ""
 "these types can become a resource. This means that both nodes and resources "
 "can contain resources as properties:"
 msgstr ""
+"ノードとリソースにかかわらず、すべてのオブジェクトは、自身のプロパティをエク"
+"スポートできます。プロパティには、String、整数(int)、Vector2など、さまざまな"
+"種類がありますが、これらすべての型はリソースになることができます。つまり、"
+"ノードとリソースはいずれも、他のリソースをプロパティとして持てるのです。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:39
 msgid "External vs built-in"
@@ -10140,17 +10230,17 @@ msgstr "外部と組み込みの比較"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:41
 msgid "There are two ways to save resources. They can be:"
-msgstr ""
+msgstr "リソースを保存する方法はふたつあります。それは："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
 msgid "**External** to a scene, saved on the disk as individual files."
-msgstr ""
+msgstr "シーンの**外部**。個別のファイルとしてディスクに保存。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
 msgid ""
 "**Built-in**, saved inside the \\*.tscn or the \\*.scn file they're attached "
 "to."
-msgstr ""
+msgstr "**内蔵**。使用する\\*.tscnあるいは\\*.scnファイルの中に保存。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
 msgid ""
@@ -10165,6 +10255,8 @@ msgid ""
 "Clicking the resource preview allows us to view and edit the resource's "
 "properties."
 msgstr ""
+"リソースのプレビューをクリックすると、リソースのプロパティを表示して編集でき"
+"るようになります。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
 msgid ""
@@ -10173,6 +10265,10 @@ msgid ""
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes a built-in resource."
 msgstr ""
+"Pathプロパティはリソースの元々の場所を表しています。この例の場合は、元は"
+"``robi.png``と名付けられたPNG画像です。このように、元がファイルであれば、外部"
+"リソースになります。Pathを消去するか、あるいはこの場所にない場合は、内部リ"
+"ソースになります。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
 msgid ""
@@ -10180,12 +10276,17 @@ msgid ""
 "scene. In the example above, if you erase the path \\`\"res://robi.png\"\\` "
 "and save, Godot will save the image inside the .tscn scene file."
 msgstr ""
+"リソースの内部と外部の切り替えは、シーンを保存するときに行われます。上記の例"
+"の場合、もしパス\\`\"res://robi.png\"\\`を消去してから保存すると、Godotは画像"
+"を .tscn シーンファイルの内部に保存します。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
 msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
+"もし内部リソースを保存した場合でも、複数のシーンをインスタンス化したときは、"
+"エンジンがそのコピーを読み込むのは一度だけです。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
 msgid "Loading resources from code"
@@ -10196,6 +10297,8 @@ msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
 msgstr ""
+"コードにてリソースを読み込む方法は、ふたつあります。ひとつ目は ``load()`` 関"
+"数で、いつでも使えます："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
 msgid ""
@@ -10203,6 +10306,9 @@ msgid ""
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
+"もうひとつは ``preload()`` です。この関数は``load()``とは違い、コンパイル時に"
+"ファイルをディスクから読み込んでロードします。そのため、パスが変数の場合は"
+"preloadは呼べません。パスは定数の文字列である必要があります。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
@@ -10214,12 +10320,17 @@ msgid ""
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
 "packed inside a resource."
 msgstr ""
+"シーンもまたリソースですが、しかし注意点があります。シーンは、 :ref:"
+"`PackedScene <class_PackedScene>`\\ 型のリソースとしてディスクに保存されま"
+"す。リソースの内部にシーンが入れ込まれるのです。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instance() <class_PackedScene_method_instance>` method."
 msgstr ""
+"シーンのインスタンスを得るには、 :ref:`PackedScene.instance() "
+"class_PackedScene_method_instance>`\\ メソッドを使う必要があります。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
 msgid ""
@@ -10227,6 +10338,8 @@ msgid ""
 "returns the root node of the scene. You can then add it as a child of any "
 "other node."
 msgstr ""
+"このメソッドは、シーンの階層どおりにノードを作成し、それらを設定してから、そ"
+"のシーンのルートノードを返します。これは他のノードの子にすることができます。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
 msgid ""
@@ -10236,6 +10349,11 @@ msgid ""
 "each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
 msgstr ""
+"この方法には、いくつかの利点があります。 :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`\\ メソッドは高速なので、新しい敵、弾丸、"
+"エフェクトなどを、ディスクから再び読み出すことなく作成できます。覚えていただ"
+"きたいのは、ほとんどの場合、画像やメッシュなどは全て、シーンのインスタンス間"
+"で共有されます。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
 msgid "Freeing resources"
@@ -10248,6 +10366,10 @@ msgid ""
 "node, the engine frees all the resources it owns as well if no other node "
 "uses them."
 msgstr ""
+"``リソース(Resource)``が使われなくなったときは、自動的に解放されます。ほとん"
+"どの場合、リソースはノードに格納されているので、ノードを解放した際には、それ"
+"が持つリソースも同様に、他のノードに使用されていない限り、すべてエンジンに"
+"よって解放されます。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:151
 msgid "Creating your own resources"
@@ -10852,7 +10974,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr "シングルトン(自動ロード)"
+msgstr "シングルトン(自動読み込み)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:9
 msgid ""
@@ -10860,17 +10982,17 @@ msgid ""
 "no method for storing information (e.g. a player's score or inventory) that "
 "is needed by more than one scene."
 msgstr ""
-"Godotのシーンシステムは、強力で柔軟性がある一方、欠点があります:2つ以上のシー"
-"ンに必要とされる文字列情報の為のメソッドが存在しません(例えばプレイヤーのスコ"
-"アもしくはインベントリ)。"
+"Godotのシーンシステムは、強力で柔軟性がある一方、欠点があります: 複数のシーン"
+"に必要とされる文字列情報の為のメソッドが存在しません(例えばプレイヤーのスコア"
+"やインベントリ等)。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:13
 msgid ""
 "It's possible to address this with some workarounds, but they come with "
 "their own limitations:"
 msgstr ""
-"それはいくつかの回避策によって取り組むことが出来ます、しかしそれらは、それら"
-"自身の制限と共ににやって来ます:"
+"それを処理出来るにいくつかの代替方法がありますが、それらの方法はそれら自身の"
+"制限も伴います:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
 msgid ""
@@ -10888,6 +11010,8 @@ msgid ""
 "that require it, but frequently saving and loading data is cumbersome and "
 "may be slow."
 msgstr ""
+"情報はディスクの ``user://` に保存が可能で、シーンが必要とするならばロード出"
+"来ますが、頻繁にデータをセーブとロードする事は面倒でさらに遅くもなります。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
 msgid ""
@@ -10897,32 +11021,38 @@ msgid ""
 "same scene or class for multiple singletons, so long as they have different "
 "names."
 msgstr ""
+"`Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_\\ は"
+"シーン同士の絶え間ない情報の供給を必要とする一般的なユースケースを解決するた"
+"めにとても有用なツールです。我々のケースでは異なる名前を付けるならば、同じ"
+"シーンもしくはクラスを複数のシングルトンの為に再利用する事が可能です。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
-msgstr ""
+msgstr "このコンセプトを使うと、オブジェクトを以下のように作る事が出来ます:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
 msgid "Are always loaded, no matter which scene is currently running"
-msgstr ""
+msgstr "シーンが現在実行中でも問題なく、いつでもロードされます"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Can store global variables, such as player information"
-msgstr ""
+msgstr "プレイヤー情報のようなグローバル変数を保管できます"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
 msgid "Can handle switching scenes and between-scene transitions"
-msgstr ""
+msgstr "シーンの切り替えと、シーン遷移同士の切り替えを操作する事ができます"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
 msgid ""
 "Act like a singleton, since GDScript does not support global variables by "
 "design"
 msgstr ""
+"シングルトンのように動作します、デザインによりGDScript からはグローバル変数を"
+"サポートしません"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
-msgstr ""
+msgstr "自動読み込みされたノードとスクリプトは我々にこれらの特徴を与えます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
@@ -10935,12 +11065,18 @@ msgid ""
 "and the script will be attached to it. This node will be added to the root "
 "viewport before any other scenes are loaded."
 msgstr ""
+":ref:`Node <class_Node>`を継承したシーンもしくはスクリプトは自動読み込みに"
+"よってロードする事が出来ます。ノート:スクリプトを自動読み込みする時、ノードが"
+"作られそれにスクリプトがアタッチされます。このノードは他のシーンがロードされ"
+"る前にルートビューポートに追加されます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:48
 msgid ""
 "To autoload a scene or script, select ``Project -> Project Settings`` from "
 "the menu and switch to the \"AutoLoad\" tab."
 msgstr ""
+"シーンもしくはスクリプトを自動読み込みするには、メニューから``プロジェクト -"
+"> プロジェクト設定`` を選び\"自動読み込み\"タブに切り替えて下さい。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
 msgid ""
@@ -10949,18 +11085,25 @@ msgid ""
 "order of the entries as they are added to the global scene tree can be "
 "manipulated using the up/down arrow keys."
 msgstr ""
+"ここにシーンとスクリプト追加する事が出来ます。リストへの登録は名前を必要と"
+"し、それはノードの``name`` プロパティとして割り当てられます。登録の順序はグ"
+"ローバルシーンツリーに追加され、それは上下の矢印キーで操作できます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
 msgstr ""
+"これの意味する所は以下のようにすれば\"PlayerVariables\"と名付けられたシングル"
+"トンにアクセス出来るという事です:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
 msgid ""
 "If the \"Enable\" column is checked (default true) then the singleton can "
 "simply be accessed directly:"
 msgstr ""
+"もし\"有効\"チェックがオンなら(デフォルトでオン)シングルトンは単純に、直接ア"
+"クセス出来ます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -10968,6 +11111,9 @@ msgid ""
 "any other node in the scene tree. In fact, if you look at the running scene "
 "tree, you'll see the autoloaded nodes appear:"
 msgstr ""
+"自動読み込みオブジェクトはちょうどシーンツリーの中の他のノードの様にアクセス"
+"される事を心に留めて下さい。実際には、もし実行中のシーンツリーを見たら、自動"
+"読み込みされたノードが現れるでしょう:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid "Custom scene switcher"
@@ -10981,12 +11127,20 @@ msgid ""
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
+"このチュートリアルは自動読み込みを使ったシーンスイッチャーの構築を実演しま"
+"す。基本的なシーンの切り替えをする為に、\\ :ref:`SceneTree.change_scene() "
+"<class_SceneTree_method_change_scene>`\\ メソッドを使う事が出来ます(詳細は"
+"\\ :ref:`doc_scene_tree`\\ を見てください).。しかし、あなたがシーンの変更の"
+"際、より複雑なふるまいを必要としているならば、このメソッドはさらなる機能性を"
+"提供します。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
 msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
+"はじめに、ここ:\\ :download:`autoload.zip <files/autoload.zip>`\\ からテンプ"
+"レートをダウンロードしGodotで開いて下さい。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""
@@ -10995,16 +11149,22 @@ msgid ""
 "``pressed()`` signal connected. When you run the project, it starts in "
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
+"プロジェクトは2つのシーンを含みます:``Scene1.tscn`` と``Scene2.tscn``。それぞ"
+"れのシーンはラベル表示されたシーンの名前と``pressed()``シグナルを接続されたボ"
+"タンを含みます。プロジェクトを実行した時に、 ``Scene1.tscn``の中で開始されま"
+"す。しかし、押すためのボタンがありません。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid "Global.gd"
-msgstr ""
+msgstr "\\ Global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:112
 msgid ""
 "Switch to the \"Script\" tab and create a new script called Global.gd. Make "
 "sure it inherits from ``Node``:"
 msgstr ""
+"\"Script\" タブに切り替えGlobal.gdという新しいスクリプトを作成して下さい。 "
+"``Node`` が継承される事を確かめて下さい。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
 msgid ""
@@ -11013,12 +11173,18 @@ msgid ""
 "the script by clicking the browse button or typing its path: ``res://Global."
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
+"次のステップはスクリプトを自動読み込みリストに追加する事です。メニューから ``"
+"プロジェクト> プロジェクト設定``と開き、\"自動読み込み\"タブへ切り替えブラウ"
+"ズボタンをクリックするか次のようにパスを入力します: ``res://Global.gd`` 。追"
+"加をクリックし自動読み込みリストへ追加して下さい:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
 msgstr ""
+"これでスクリプトはプロジェクトのシーンを実行する時は、毎回ロードされる様にな"
+"りました。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
 msgid ""
@@ -11027,12 +11193,18 @@ msgid ""
 "``global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
+"スクリプトに戻り、 `_ready()` 関数内でカレントシーンを持って来る必要がありま"
+"す。両方のカレントシーン(片方はボタンを含む)と ``global.gd`` はルートの子供で"
+"す。しかし自動読み込みされたノードはいつも1番です。つまりルートの最後の子供は"
+"いつもロードされたシーンになります。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:158
 msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
 msgstr ""
+"今、我々はシーンを遷移させる為の関数を必要としています。この関数はカレント"
+"シーンを開放し、要求されたものに置き換える必要があります。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
 msgid ""
@@ -11041,11 +11213,15 @@ msgid ""
 "completed. Thus, the current scene will not be removed while it is still "
 "being used (i.e. its code is still running)."
 msgstr ""
+"\\ :ref:`Object.call_deferred() <class_Object_method_call_deferred>`\\ の使用"
+"時は、カレントシーンが完了してから、2つ目の関数のすべてのコードが1回だけ実行"
+"されます。従って、カレントシーンは使用されている間には削除されません (すなわ"
+"ち、カレントシーンのコードはまだ実行中です)。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
-msgstr ""
+msgstr "最後に、2つのシーンの空のコールバック関数を満たさなければなりません。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:252
 #: ../../docs/tutorials/math/vector_math.rst:281
@@ -11057,6 +11233,8 @@ msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button."
 msgstr ""
+"プロジェクトの実行とテストをするとボタンを押す事によりシーンの間を切り替えら"
+"れます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
 msgid ""
@@ -11065,6 +11243,10 @@ msgid ""
 "appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`"
 msgstr ""
+"ノート:シーンが小さい時この遷移は瞬時に行われます。しかし、シーンがより複雑な"
+"場合、表示されるのに大量の時間がかかります。これの操作を学ぶには、次のチュー"
+"トリアルを見て下さい:\n"
+"\\ :ref:ref:`doc_background_loading`\\"
 
 #: ../../docs/getting_started/editor/index.rst:2
 msgid "Editor manual"
@@ -11367,7 +11549,7 @@ msgstr "コイン"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:103
 msgid "The player"
-msgstr "プレーヤー"
+msgstr "プレイヤー"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:104
 msgid "The enemies"
@@ -14919,7 +15101,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
 msgid "Exporting bit flags"
-msgstr "ビットフラグ・エクスポート"
+msgstr "ビットフラグのエクスポート"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
 msgid ""
@@ -14977,7 +15159,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:4
 msgid "GDScript style guide"
-msgstr "GDScriptスタイル・ガイド"
+msgstr "GDScriptスタイルガイド"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:9
 msgid ""
@@ -14986,10 +15168,10 @@ msgid ""
 "projects, discussions, and tutorials. Hopefully, this will also encourage "
 "development of auto-formatting tools."
 msgstr ""
-"このスタイル・ガイドには、エレガントなGDScriptを作成するための規則が記載され"
-"ています。目標は、クリーンで読みやすいコードの作成を奨励し、プロジェクト、"
-"ディスカッション、およびチュートリアル間の一貫性を促進することです。うまくい"
-"けば、これも自動フォーマットツールの開発を促進するでしょう。"
+"このスタイルガイドには、エレガントなGDScriptを作成するための規則が記載されて"
+"います。目標は、クリーンで読みやすいコードの作成を奨励し、プロジェクト、ディ"
+"スカッション、およびチュートリアル間の一貫性を促進することです。うまくいけ"
+"ば、これも自動フォーマットツールの開発を促進するでしょう。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:14
 msgid ""
@@ -15093,15 +15275,16 @@ msgstr ""
 "低下するだけです。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:135
-#, fuzzy
 msgid "Comment spacing"
-msgstr "コメント"
+msgstr "コメントスペース"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
 msgid ""
 "Normal comments should start with a space, but comments which are disabled "
 "code should not. This helps differentiate text comments from disabled code."
 msgstr ""
+"無効なコードではない、通常のコメントは一つのスペースと共に始めるべきです。こ"
+"れは無効なコードからテキストコメントを差別化する助けになります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:155
 msgid "Whitespace"
@@ -15456,7 +15639,7 @@ msgid ""
 "use this type. This forces the variable to stick to the ``PlayerController`` "
 "type:"
 msgstr ""
-"この ``PhysicsBody2D`` がプレーヤーであるかどうかを確認するには、 ``as`` キャ"
+"この ``PhysicsBody2D`` がプレイヤーであるかどうかを確認するには、 ``as`` キャ"
 "ストキーワードを使用し、再度コロン ``:`` を使用して変数にこの型を使用させま"
 "す。これにより、変数は ``PlayerController`` タイプに固定されます:"
 
@@ -15660,7 +15843,6 @@ msgid "warning system example"
 msgstr "警報システム例"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
-#, fuzzy
 msgid ""
 "To ignore specific warnings in one file, insert a special comment of the "
 "form ``# warning-ignore:warning-id``, or click on the ignore link to the "
@@ -15819,11 +16001,11 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
-"上記の例で見られる ``%s`` は最も単純なプレースホルダーで、ほとんどの場合で機"
-"能します。暗黙の文字列変換または ``str()`` が変換するのと同じ方法で値を変換し"
-"ます。 文字列は変更されません。ブール値は ``\"True\"`` または ``\"False\"`` "
-"に変わります。整数または実数は10進数になります。他の型は通常、人間が読める文"
-"字列でデータを返します。"
+"上記の例で見られる ``%s`` は最も単純なプレースホルダで、ほとんどの場合で機能"
+"します。暗黙の文字列変換または ``str()`` が変換するのと同じ方法で値を変換しま"
+"す。 文字列は変更されません。ブール値は ``\"True\"`` または ``\"False\"`` に"
+"変わります。整数または実数は10進数になります。他の型は通常、人間が読める文字"
+"列でデータを返します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
@@ -18451,7 +18633,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:4
 msgid "C# style guide"
-msgstr ""
+msgstr "C#スタイルガイド"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:6
 msgid ""
@@ -20387,9 +20569,9 @@ msgstr ""
 "全体が、可能な限り近くに転送されます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
-#, fuzzy
 msgid "Godot supports the following 3D *scene file formats*:"
-msgstr "Godotは、次の3D *scene file fomats*をサポートしています:"
+msgstr ""
+"Godotは、次の3D *シーンファイルフォーマット*への対応をサポートしています:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
 msgid "DAE (COLLADA), which is currently the most mature workflow."
@@ -22735,7 +22917,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
-msgstr ""
+msgstr ":ref:`class_HTTPClient` と :ref:`class_HTTPRequest`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
@@ -22753,7 +22935,7 @@ msgstr ""
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr ""
-"フレームごとに複数回進行できないため、ループ内のポーリングはフリーズしま"
+"フレームごとに複数回進行できないため、ループ内のポーリングはフリーズします"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
 msgid "No chunked responses"
@@ -22768,13 +22950,14 @@ msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`__"
 msgstr ""
+"`同一生成元ポリシー <https://developer.mozilla.org/en-US/docs/Web/Security/"
+"Same-origin_policy>`__\\ に従います"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid "Exported ``.html`` file must not be reused"
 msgstr "エクスポートされた ``.html`` ファイルを再利用することはできません"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
-#, fuzzy
 msgid ""
 "Each project must generate their own HTML file. On export, several text "
 "placeholders are replaced in the **generated HTML file** specifically for "
@@ -22782,9 +22965,11 @@ msgid ""
 "file** will be lost in future exports. To customize the generated file, see :"
 "ref:`doc_customizing_html5_shell`."
 msgstr ""
-"エクスポート時に、特定のエクスポートオプション用に**生成されたHTMLファイル**"
-"に複数のテキスト プレースホルダが置き換えられます。以後のエクスポートで再利用"
-"してはなりません。"
+"それぞれのプロジェクトはそれ自身のHTMLファイルを生成しなければなりません。エ"
+"クスポート時に、特定のエクスポートオプション用に**生成されたHTMLファイル**に"
+"複数のテキスト プレースホルダが置き換えられます。他の直接の**生成されたHTML"
+"ファイル**への変更は以後のエクスポートでは失われます。生成されたファイルのカ"
+"スタマイズは、\\ :ref:`doc_customizing_html5_shell`\\ を見て下さい。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid "Boot splash is not displayed"
@@ -23024,7 +23209,6 @@ msgid "Sounds good, what is it?"
 msgstr "いいですね、それは何ですか？"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
-#, fuzzy
 msgid ""
 "This feature will pop up automatically once a platform is properly "
 "configured and a supported device is connected to the computer. Since things "
@@ -23032,26 +23216,25 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, etc.), "
 "it's good to let the user know that it exists."
 msgstr ""
-"この機能は、プラットフォームが正しく構成され、サポートされているデバイスがコ"
-"ンピュータに接続されると、自動的にポップアップ表示されます。多くのレベルで問"
-"題が発生する可能性があるため(プラットフォームが正しく設定されていない場合、"
+"これの特徴は、プラットフォームが正しく構成され、サポートされているデバイスが"
+"コンピュータに接続されると、自動的にポップアップ表示される事です。多くのレベ"
+"ルで問題が発生する可能性があるため(プラットフォームが正しく設定されていない、"
 "SDKが正しくインストールされていない、デバイスが正しく設定されていない、デバイ"
-"スが不適切に設定されている可能性がある、キティがUSBケーブルを食べたなど)、そ"
-"れが存在することをユーザーに知らせるのは良いことです。"
+"スが不適切に設定されている可能性がある、等)、それが存在することをユーザーに知"
+"らせるのは良いことです。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:15
-#, fuzzy
 msgid ""
 "Some platforms (at the time of this writing, only Android) can detect when a "
 "USB device is connected to the computer, and offer the user to automatically "
 "export, install and run the project (in debug mode) on the device. This "
 "feature is called, in industry buzzwords, \"One-Click Deploy\"."
 msgstr ""
-"一部のプラットフォーム (このドキュメントの執筆時点では、AndroidとBlackberry10"
-"のみ)は、USBデバイスがコンピュータに接続されているタイミングを検出し、デバイ"
-"ス上でプロジェクトを自動的にエクスポート、インストール、および実行するように"
-"ユーザーに提供できます。この機能は、業界の流行語で \"One Click Deploy\" と呼"
-"ばれています(ただし、技術的には2回のクリックです...)。"
+"一部のプラットフォーム (このドキュメントの執筆時点では、Androidのみ)は、USBデ"
+"バイスがコンピュータに接続されているタイミングを検出し、デバイス上でプロジェ"
+"クトを自動的にエクスポート、インストール、および実行するようにユーザーに提供"
+"できます(デバッグモードで)。この機能は、業界の流行語で \"One Click Deploy\" "
+"と呼ばれています。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:21
 msgid "Steps for one-click deploy"
@@ -23068,18 +23251,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
-#, fuzzy
 msgid "Connect the device..."
-msgstr "デバイスを接続します。"
+msgstr "デバイスを接続します..."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:27
 msgid "And voilà!"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:31
-#, fuzzy
 msgid "Click once... and deploy!"
-msgstr "一度クリックします。展開!"
+msgstr "一度クリックします...そして展開!"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
 msgid "Custom builds for Android"
@@ -23154,9 +23335,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:46
-#, fuzzy
 msgid "Install a JDK"
-msgstr "インストール手順"
+msgstr "JDKのインストール"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:48
 msgid ""
@@ -23167,9 +23347,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:55
-#, fuzzy
 msgid "Download the command-line tools"
-msgstr "Android SDKをダウンロード"
+msgstr "コマンドラインツールをダウンロード"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:57
 msgid ""
@@ -23216,9 +23395,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:97
-#, fuzzy
 msgid "Accepting the licenses"
-msgstr "ファイルの提供"
+msgstr "ライセンスへの同意"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:99
 msgid ""
@@ -23255,7 +23433,6 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:126
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:210
-#, fuzzy
 msgid "Generating the keystore"
 msgstr "キーストアの作成"
 
@@ -23334,9 +23511,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:183
-#, fuzzy
 msgid "Download and install Android Studio"
-msgstr "Android SDKをダウンロード"
+msgstr "Android Studioのダウンロードとインストール"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:185
 msgid ""
@@ -26564,9 +26740,8 @@ msgstr ""
 "ることを意味します。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:21
-#, fuzzy
 msgid "Particle nodes"
-msgstr "パーティクルシェーダー"
+msgstr "パーティクルノード"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:23
 msgid ""
@@ -29361,7 +29536,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:134
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:108
 msgid "Texture compression"
-msgstr ""
+msgstr "テクスチャ圧縮"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:136
 msgid ""
@@ -29369,12 +29544,17 @@ msgid ""
 "compression). Video RAM compression is not as efficient in size as PNG or "
 "JPG when stored, but increases performance enormously when drawing."
 msgstr ""
+"Godotは、3Dモデルをインポートする際にテクスチャを圧縮することができます(VRAM"
+"圧縮)。PNGやJPGとくらべると、Video RAM圧縮はサイズの点で及びませんが、しかし"
+"描写性能は非常に向上します。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:140
 msgid ""
 "This is because the main goal of texture compression is bandwidth reduction "
 "between memory and the GPU."
 msgstr ""
+"なぜならテクスチャ圧縮は、メモリとGPU間の帯域を減らすことを一番の目的としてい"
+"るからです。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:143
 msgid ""
@@ -29383,12 +29563,17 @@ msgid ""
 "on shapes inside the textures, so the artifacts resulting from 2D "
 "compression are more noticeable."
 msgstr ""
+"3Dでは、オブジェクトの形状は、テクスチャよりもジオメトリによるところが大きい"
+"ので、普通は圧縮しても見分けはつきません。2Dの場合、圧縮はテクスチャ内に描か"
+"れた形状も変化させてしまうため、違いがより目立つようになります。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:148
 msgid ""
 "As a warning, most Android devices do not support texture compression of "
 "textures with transparency (only opaque), so keep this in mind."
 msgstr ""
+"注意すべき点として、Androidデバイスでは透過のあるテクスチャの圧縮はサポートさ"
+"れていません (非透過のみ) ので、気をつけてください。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:152
 msgid "Transparent objects"
@@ -32321,16 +32506,22 @@ msgid ""
 "mesh has a physics body and collision shape assigned, your mesh library is "
 "ready to be used."
 msgstr ""
+"シンプルなメッシュには『凸状』コリジョン ボディのほうが合うでしょう。より複雑"
+"な形なら『静的三角形メッシュの作成』を選択します。それぞれのメッシュに物理ボ"
+"ディとコリジョン シェイプが割り当てられたら、メッシュ ライブラリは使えるよう"
+"になります。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:62
 msgid ""
 "Only the materials from within the meshes are used when generating the mesh "
 "library. Materials set on the node will be ignored."
 msgstr ""
+"メッシュライブラリの生成時には、メッシュ内にあるマテリアルのみが使用され、"
+"ノードに設定したマテリアルは無視されます。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:66
 msgid "Exporting the MeshLibrary"
-msgstr ""
+msgstr "MeshLibraryのエクスポート"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:68
 msgid ""
@@ -36750,7 +36941,7 @@ msgstr ""
 msgid ""
 "Finally, we clamp the camera's rotation so the player cannot look upside "
 "down."
-msgstr "最後に、プレーヤーが逆さまに見えないようにカメラの回転を固定します。"
+msgstr "最後に、プレイヤーが逆さまに見えないようにカメラの回転を固定します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:240
 msgid ""
@@ -36904,7 +37095,7 @@ msgid ""
 "Now that the player has health and ammo, we ideally need a way to replenish "
 "those resources."
 msgstr ""
-"プレイヤーは健康と弾薬を手に入れたので、これらのリソースを補充する方法が理想"
+"プレイヤーは体力と弾薬を手に入れたので、これらのリソースを補充する方法が理想"
 "的に必要です。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:333
@@ -41122,7 +41313,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:4
 msgid "Audio streams"
-msgstr ""
+msgstr "オーディオストリーム"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:9
 msgid ""
@@ -41133,7 +41324,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:14
 msgid "AudioStream"
-msgstr "オーディオストリーム"
+msgstr "\\ AudioStream"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:16
 msgid ""
@@ -41180,7 +41371,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:43
 msgid "AudioStreamPlayer"
-msgstr "オーディオストリームプレーヤー"
+msgstr "\\ AudioStreamPlayer"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:45
 msgid ""
@@ -41190,7 +41381,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:49
 msgid "AudioStreamPlayer2D"
-msgstr "オーディオストリームプレーヤー2D"
+msgstr "\\ AudioStreamPlayer2D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:51
 msgid ""
@@ -41209,7 +41400,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:65
 msgid "AudioStreamPlayer3D"
-msgstr "オーディオストリームプレーヤー3D"
+msgstr "\\ AudioStreamPlayer3D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:67
 msgid ""
@@ -47915,7 +48106,6 @@ msgid "Saving games"
 msgstr "ゲームの保存"
 
 #: ../../docs/tutorials/io/saving_games.rst:9
-#, fuzzy
 msgid ""
 "Save games can be complicated. For example, it may be desirable to store "
 "information from multiple objects across multiple levels. Advanced save game "
@@ -47923,10 +48113,11 @@ msgid ""
 "objects. This will allow the save function to scale as the game grows more "
 "complex."
 msgstr ""
-"ゲームを保存するのは複雑です。 現在のレベルまたはレベルで獲得した星の数よりも"
-"多くの情報を保存することが望ましい場合があります。 より高度なセーブゲームで"
-"は、任意の数のオブジェクトに関する追加情報を保存する必要があります。 これによ"
-"り、ゲームがより複雑になるにつれて、保存機能を拡張できます。"
+"ゲームを保存するのは複雑です。例えば、 複数のレベルにまたがった複数のオブジェ"
+"クトによる情報が保存される事が望ましい場合があります。 より高度なゲームシステ"
+"ムのセーブでは、任意の数のオブジェクトに関する追加情報の保存ができる必要があ"
+"ります。 これにより、ゲームがより複雑に成長するにつれて、保存機能を拡張できま"
+"す。"
 
 #: ../../docs/tutorials/io/saving_games.rst:17
 msgid ""
@@ -48118,11 +48309,11 @@ msgid ""
 "tutorial is more like a collection of tips and tricks."
 msgstr ""
 "Sería excelente que el mundo hablara solo un idioma(世界が一つの言語しか話さ"
-"なかったら素晴らしいことだ)。残念ながら、私たちの開発者にとっては、そうではあ"
-"りません。インディーズのゲームやニッチなゲームは通常ローカライズを必要としま"
-"せんが、より大規模な市場をターゲットにしたゲームは、多くの場合、ローカライズ"
-"を必要とします。Godot は、このプロセスをより簡単にするための多くのツールを提"
-"供しています。このチュートリアルは、ヒントとコツを集めたようなものです。"
+"なかったら素晴らしいことだ)。残念ながら、私たち開発者にとっては、そうではあり"
+"ません。インディーズのゲームやニッチなゲームは通常ローカライズを必要としませ"
+"んが、より大規模な市場をターゲットにしたゲームは、多くの場合、ローカライズを"
+"必要とします。Godot は、このプロセスをより簡単にするための多くのツールを提供"
+"しています。このチュートリアルは、ヒントとコツを集めたようなものです。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:17
 msgid ""
@@ -48137,7 +48328,7 @@ msgstr ""
 "めに利用可能なソフトウェアとファイル形式の膨大な量にもかかわらず、今日にロー"
 "カライズを行う最も一般的な方法は、まだスプレッドシートです。スプレッドシート"
 "の作成とインポートのプロセスについては、\\ :ref:`doc_importing_translations`"
-"チュートリアルですでに説明されています。"
+"\\ チュートリアルですでに説明されています。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:25
 msgid ""
@@ -48199,10 +48390,10 @@ msgid ""
 "\"MAIN_SCREEN_GREETING1\" and that key exists in the current translation, "
 "then the text will automatically be translated."
 msgstr ""
-"\\ :ref:`Button <class_Button>`や\\ :ref:`Label <class_Label>`などの一部のコ"
-"ントロールは、テキストが翻訳キーと一致する場合に自動的に翻訳を取得します。た"
-"とえば、ラベルのテキストが「MAIN_SCREEN_GREETING1」で、そのキーが現在の翻訳に"
-"存在する場合、テキストは自動的に翻訳されます。"
+"\\ :ref:`Button <class_Button>`\\ や\\ :ref:`Label <class_Label>`\\ などの一"
+"部のコントロールは、テキストが翻訳キーと一致する場合に自動的に翻訳を取得しま"
+"す。たとえば、ラベルのテキストが「MAIN_SCREEN_GREETING1」で、そのキーが現在の"
+"翻訳に存在する場合、テキストは自動的に翻訳されます。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:59
 msgid ""
@@ -48390,9 +48581,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:62
-#, fuzzy
 msgid "Creating the PO template (POT) manually"
-msgstr "POテンプレートの作成"
+msgstr "POテンプレート (POT)の手動作成"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:64
 msgid ""
@@ -48422,9 +48612,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:89
-#, fuzzy
 msgid "Creating the PO template (POT) using pybabel"
-msgstr "POテンプレートの作成"
+msgstr "pybabelを使ったPOテンプレート(POT)の作成"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:91
 msgid ""
@@ -52131,9 +52320,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:22
-#, fuzzy
 msgid "Using BBCode"
-msgstr "モジュールの使用"
+msgstr "BBCodeの使用"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:24
 msgid ""
@@ -52434,9 +52622,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:112
-#, fuzzy
 msgid "Animation effects"
-msgstr "アニメーションのコツ"
+msgstr "アニメーションエフェクト"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:114
 msgid ""
@@ -52598,9 +52785,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:209
-#, fuzzy
 msgid "Here are some examples of custom effects:"
-msgstr "簡単な動作例を次に示します:"
+msgstr "カスタムエフェクトの例を次に示します:"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:212
 msgid "Ghost"
@@ -52615,10 +52801,8 @@ msgid "Matrix"
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:294
-#, fuzzy
 msgid "This will add a few new BBCode commands, which can be used like so:"
-msgstr ""
-"新しい関数が追加され、名前をダブルクリックするだけで名前を変更できます:"
+msgstr "いくつかの新しいBBCodeコマンドが追加され、その様に使う事が出来ます:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:9
 msgid ""
@@ -63577,14 +63761,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:44
-#, fuzzy
 msgid "To continue with the example, use the following values::"
-msgstr "Mobシーンでは、次のノードが使用されます:"
+msgstr "例に続いて、以下の値を使って下さい::"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:55
-#, fuzzy
 msgid "You should end up with a directory structure like this:"
-msgstr "このようなコンテナを4つ用意します"
+msgstr "最後にディレクトリの構造はこの様になっています:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:59
 msgid ""
@@ -64751,9 +64933,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:4
-#, fuzzy
 msgid "Inspector plugins"
-msgstr "プラグインのインポート"
+msgstr "インスペクタプラグイン"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:6
 msgid ""
@@ -64770,9 +64951,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:17
-#, fuzzy
 msgid "EditorInspectorPlugin"
-msgstr "エディタプラグイン"
+msgstr "エディタインスペクタプラグイン"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:19
 msgid ""
@@ -64782,9 +64962,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:51
-#, fuzzy
 msgid "EditorProperty"
-msgstr "エディタの開発"
+msgstr "エディタプロパティ"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:53
 msgid ""
@@ -64795,9 +64974,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:4
-#, fuzzy
 msgid "Visual Shader plugins"
-msgstr ":ref:`doc_visual_shader_plugins`"
+msgstr "ビジュアルシェーダープラグイン"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:6
 msgid ""
@@ -66429,9 +66607,8 @@ msgid "Godot will detect this singleton and initialize it at the proper time."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:257
-#, fuzzy
 msgid "Using it from GDScript"
-msgstr "GDScriptに読み込む"
+msgstr "GDScriptから使う"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:259
 msgid ""
@@ -66443,9 +66620,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:265
-#, fuzzy
 msgid "Then, from your script:"
-msgstr "スクリプトの役割"
+msgstr "この時、あなたのスクリプトから:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:274
 #: ../../docs/development/compiling/compiling_for_windows.rst:199
@@ -71047,9 +71223,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:74
-#, fuzzy
 msgid "Debug project settings"
-msgstr "プロジェクト設定のオーバーライド"
+msgstr "デバッグプロジェクトの設定"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:76
 msgid ""
@@ -71058,9 +71233,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:80
-#, fuzzy
 msgid "Settings"
-msgstr "文字列"
+msgstr "設定"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:82
 msgid ""
@@ -71160,9 +71334,8 @@ msgid "Profiles the performance of any function call in the running game."
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
-#, fuzzy
 msgid "Network Profiler"
-msgstr "プロファイラー"
+msgstr "ネットワークプロファイラー"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:135
 msgid ""
@@ -72672,9 +72845,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:141
-#, fuzzy
 msgid "Cleaning the generated export templates"
-msgstr "エクスポートテンプレートの使用"
+msgstr "エクスポートテンプレートのクリーニング"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:143
 msgid ""
@@ -74104,13 +74276,12 @@ msgid "Configuring an IDE"
 msgstr "IDEの構成"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:6
-#, fuzzy
 msgid ""
 "We assume that you have already `cloned <https://github.com/godotengine/"
 "godot>`_ and :ref:`compiled <toc-devel-compiling>` Godot."
 msgstr ""
-"すでにGodotの\\ `クローンを作成し <https://github.com/godotengine/godot>`_ "
-"\\ 、\\ :ref:`コンパイルした <toc-devel-compiling>`\\ とします。"
+"すでにGodotの\\ `クローンを作成 <https://github.com/godotengine/godot>`_ \\ "
+"し、\\ :ref:`コンパイル <toc-devel-compiling>`\\ したとします。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:9
 msgid ""
@@ -74649,9 +74820,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:305
-#, fuzzy
 msgid "Android Studio"
-msgstr "Android SDK"
+msgstr "\\ Android Studio"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:307
 msgid ""
@@ -78177,7 +78347,6 @@ msgstr ""
 "新する必要があります。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:194
-#, fuzzy
 msgid ""
 "However, if you had local commits, this method will create a so-called "
 "\"merge commit\", and you will soon hear from fellow contributors that those "
@@ -78187,12 +78356,12 @@ msgid ""
 "effectively modify the Git history of your branch, but that is for the "
 "greater good."
 msgstr ""
-"ただし、ローカル コミットがある場合、このメソッドはいわゆる「マージ コミッ"
-"ト」を作成し、すぐに仲間の貢献者から、それらがPRで望まれないと聞きます。マー"
-"ジコミットを作成せずにブランチを更新するにはどうすればよいですか?ローカルコ"
-"ミットが更新されたアップストリーム ``master`` ブランチの上で再生できるよう"
-"に、 ``--rebase`` オプションを使用する必要があります。ブランチの Git履歴は効"
-"果的に変更されますが、それはより大きな利益のためです。"
+"ただし、もしローカル コミットがあり、このメソッドがいわゆる「マージ コミッ"
+"ト」を作成し、すぐに仲間の貢献者からそれらがPRで望まれないと聞いたとします。"
+"マージコミットを作成せずにブランチを更新するには、``--rebase`` オプションを使"
+"い、ローカルコミットが更新されたアップストリーム ``master`` ブランチの上で再"
+"生できるようにする必要があります。ブランチの Git履歴は効果的に変更されます"
+"が、それはより大きな利益のためです。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:201
 msgid "Therefore, the command that you should (almost) always use is:"
@@ -78585,9 +78754,9 @@ msgid ""
 "locally (so make sure that's what you wanted, using ``git log``). This will "
 "also update the PR accordingly."
 msgstr ""
-"じゃじゃーん！ Gitは、リモートブランチをローカルで持っていたもので喜んで\\ *"
-"置換*\\ します(したがって、 ``git log`` を使用して、それが目的のものであるこ"
-"とを確認してください) これにより、それに応じてPRも更新されます。"
+"じゃじゃーん！Gitは、リモートブランチをローカルで持っていたもので喜んで\\ *置"
+"換*\\ します(したがって、 ``git log`` を使用して、それが目的のものであること"
+"を確認してください) これにより、それに応じてPRも更新されます。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:458
 msgid "Deleting a Git branch"
@@ -78626,7 +78795,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:4
 msgid "Code style guidelines"
-msgstr "コードスタイルのガイドライン"
+msgstr "コードスタイルガイドライン"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:8
 msgid ""

@@ -5,6 +5,7 @@
 # 01lifeleft <01lifeleft@gmail.com>, 2018.
 # 38569459 <xxx38569459@gmail.com>, 2018.
 # Dũng Đinh <dqdthanhthanh@gmail.com>, 2019.
+# Kê Luyện <tranminhluyen.1993@gmail.com>, 2019.
 # mth2610 <mth2610@gmail.com>, 2018.
 # Peter Anh <peteranh3105@gmail.com>, 2019.
 # Steve Dang <itsnguu@outlook.com>, 2019.
@@ -15,8 +16,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-10-29 12:54+0100\n"
-"PO-Revision-Date: 2019-10-22 13:30+0000\n"
-"Last-Translator: Dũng Đinh <dqdthanhthanh@gmail.com>\n"
+"PO-Revision-Date: 2019-12-03 07:10+0000\n"
+"Last-Translator: Kê Luyện <tranminhluyen.1993@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/vi/>\n"
 "Language: vi\n"
@@ -24,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1-dev\n"
+"X-Generator: Weblate 3.10-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -921,6 +922,11 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"Mục đích của Godot là tạo ra một công cụ được cấp phép MIT miễn phí và nguồn "
+"mở, có tính mô-đun và có thể mở rộng. Không có kế hoạch nào cho cộng đồng "
+"phát triển động cơ cốt lõi để hỗ trợ bất kỳ SDK độc quyền, nguồn đóng / độc "
+"quyền của bên thứ ba nào, vì việc tích hợp với chúng sẽ đi ngược lại các tôn "
+"chỉ của Godot."
 
 #: ../../docs/about/faq.rst:166
 msgid ""
@@ -928,6 +934,9 @@ msgid ""
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
+"Như đã nói, bởi vì Godot là mã nguồn mở và mô-đun, không có gì ngăn cản bạn "
+"hoặc bất kỳ ai thích thú với việc thêm các thư viện đó dưới dạng mô-đun và "
+"trao đổi trò chơi của bạn - dưới dạng nguồn mở hoặc nguồn đóng."
 
 #: ../../docs/about/faq.rst:170
 msgid ""
@@ -942,12 +951,18 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"Nếu bạn biết tới một SDK bên thứ ba nào không được hỗ trợ bởi GOdot nhưng "
+"được cung cấp dưới dạng mã nguồn mở, hãy xem xét và tự mình tích hợp. Godot "
+"không được sở hữu bởi một cá nhân mà thuộc về cả cộng đồng, và nó sẽ phát "
+"triển với tham vọng của công động giống như bạn."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
+"Làm sao để assets được tạo ra và kiểm soát được đúng với nhiều màn hình và "
+"độ tỉ lệ màn hình khác nhau?"
 
 #: ../../docs/about/faq.rst:181
 #, fuzzy
@@ -1073,6 +1088,10 @@ msgid ""
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
+"Bạn có thể xem qua cách GDScript được thực thi, đó cũng là 1 Mô-đun của "
+"Godot, đường dẫn `unofficial Python support <https://github.com/touilleMan/"
+"godot-python>`_ for Godot. Đây có lẽ là cách khá tốt để hiểu cách mà một thư "
+"viện bên thứ ba được tích hợp vào Godot."
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
@@ -1156,6 +1175,9 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
+"Đừng nghĩ rẳng những ý tưởng của bạn cho Godot là vô ích. Bạn nên thử giải "
+"quyết nó như một vấn đề trước, sau đó các nhà phát triển và cộng đồng sẽ có "
+"một chức năng dựa trên ý tưởng đó."
 
 #: ../../docs/about/faq.rst:275
 msgid ""

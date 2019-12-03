@@ -5,6 +5,7 @@
 # Bluesir Bruce <a5566740293@gmail.com>, 2019.
 # Cliffs Dover <bottle@dancingbottle.com>, 2018.
 # cnieFIT <dtotncq@gmail.com>, 2019.
+# Daniel Liu <lbtdata314@gmail.com>, 2019.
 # Eric K <eric900601@gmail.com>, 2019.
 # ken l <macauhome@gmail.com>, 2018.
 # Kenneth Lo <closer.tw@gmail.com>, 2019.
@@ -18,8 +19,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-10-29 12:54+0100\n"
-"PO-Revision-Date: 2019-09-01 08:27+0000\n"
-"Last-Translator: Kenneth Lo <closer.tw@gmail.com>\n"
+"PO-Revision-Date: 2019-12-03 07:11+0000\n"
+"Last-Translator: Daniel Liu <lbtdata314@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -27,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 3.10-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -258,7 +259,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "在你開始之前"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -266,6 +267,8 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+":ref:`教學與資源 <doc_community_tutorials>` 頁列出了社群貢獻的影片教學。如果"
+"你喜歡影片教學而非文件，這些資源你應該會感性趣。"
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -273,6 +276,9 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"如果在某篇教學或你的專案中遇到問題，你可以在下列途徑中尋求幫助： :ref:`社群頻"
+"道 <doc_community_channels>` ，特別是Godot的Discord社群、問答（Q&A）和網路即"
+"時聊天室（IRC）。"
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -842,7 +848,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "從Godot3.0開始，支持glTF。"
 
 #: ../../docs/about/faq.rst:153
 msgid ""
@@ -852,11 +858,15 @@ msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question below.)"
 msgstr ""
+"FBX SDK具有 `限制性授權<https://www.blender.org/bf/Autodesk_FBX_License."
+"rtf>`_，這和Godot提供的 `開放授權 <https://opensource.org/licenses/MIT>`_ 不"
+"相容。儘管如此，仍然可以由第3方外掛提供對FBX的支援。（參見下方有關插件的問"
+"題）"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
-msgstr ""
+msgstr "能否在Godot中加入閉源SDK，例如：FMOD、GameWorks等？"
 
 #: ../../docs/about/faq.rst:161
 msgid ""
@@ -912,6 +922,10 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"這個問題很常見，可能要歸功於蘋果公司。蘋果一開始將它們設備的解析度加倍，讓人"
+"覺得不同解析度使用相同的資源是個好主意，所以很多人就這麼做下去了。起初只有蘋"
+"果設備這麼做，但安卓和後來的蘋果設備又有了不同的解析度和長寬比，它們的大小和"
+"DPI變得多種多樣。"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -920,6 +934,8 @@ msgid ""
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
+"最常見且最恰當的處理方法是，為遊戲使用單一基本解析度，並僅處理不同的屏幕長寬"
+"比。這主要是2D遊戲所需要做的，因為在3D遊戲中它只是相機 XFov或YFov的問題。"
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -930,6 +946,10 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"為遊戲選擇一個基本解析度。即使有高達2K的設備和低至400p的設備，設備中的常規硬"
+"件縮放也會在很少或沒有性能成本的情況下解決這個問題。最常見的選擇是接近"
+"1080p(1920x1080)或720p(1280x720)。請記住，解析度越高，資源量越大，佔用的內存"
+"就越多，加載所需的時間也就越長。"
 
 #: ../../docs/about/faq.rst:201
 msgid ""
@@ -937,6 +957,8 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
+"調整Godot中的拉伸(Stretch)選項；2D保持長寬比時拉伸效果最好。參閱教學 :ref:"
+"`doc_multiple_resolutions` 來學習如何實現它。"
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -945,6 +967,8 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
+"確定最低解析度，然後確定是要針對不同的寬高比垂直或水平拉伸遊戲，還是要有一個"
+"寬高比並且要顯示黑條。這也在 :ref:`doc_multiple_resolutions` 有更清楚的說明。"
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -952,10 +976,12 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"對於使用者界面，請使用 :ref:`anchoring <doc_size_and_anchors>` 來確定控件應保"
+"留和移動的位置。如果使用者界面較為複雜，請考慮學習有關容器的知識。"
 
 #: ../../docs/about/faq.rst:214
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr ""
+msgstr "就是這樣！您的遊戲應能在多種解析度下正常運行。"
 
 #: ../../docs/about/faq.rst:216
 msgid ""
@@ -964,10 +990,13 @@ msgid ""
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
+"如果希望您的遊戲也能在具有小螢幕（寬度小於300像素）的古老設備上運行，則可以使"
+"用導出選項來縮小圖像，並在App Store或Google Play中將構建版本設置為用於特定螢"
+"幕尺寸。"
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "如何擴充Godot?"
 
 #: ../../docs/about/faq.rst:224
 msgid ""
@@ -975,20 +1004,24 @@ msgid ""
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
+"想要擴展Godot，例如創建Godot Editor插件或添加對其他語言的支援，請參閱 :ref:"
+"`EditorPlugins <doc_making_plugins>` 和工具腳本。"
 
 #: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
-msgstr ""
+msgstr "另外，請參閱有關這些主題的官方部落格："
 
 #: ../../docs/about/faq.rst:230
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
+"`GDNative架構概覽 <https://godotengine.org/article/look-gdnative-"
+"architecture>`_"
 
 #: ../../docs/about/faq.rst:231
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr ""
+msgstr "`GDNative來了! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
 msgid ""
@@ -997,16 +1030,20 @@ msgid ""
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
+"您還可以查看GDScript實現、Godot模塊以及Godot的 `unofficial Python support "
+"<https://github.com/touilleMan/godot-python>`_ 。這是您了解如何整合第三方庫到"
+"Godot的良好起點。"
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "我想要貢獻！我該從何開始？"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"這真是太棒了！作為一個開源的專案，Godot得益於像您這樣的開發者的創新和雄心。"
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -1016,10 +1053,14 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"可以藉由在 `問題列表 <https://github.com/godotengine/godot/issues>`_ 中找到一"
+"個與您產稱共鳴的問題開始，然後繼續閱讀 `貢獻指南 <https://github.com/"
+"godotengine/godot/blob/master/CONTRIBUTING.md#contributing-pull-"
+"requests>`_ ，學習如何fork專案、修改和提交 Pull Request (PR) 到Godot。"
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "我有關於Godot的好主意。我該如何分享它？"
 
 #: ../../docs/about/faq.rst:251
 msgid ""

@@ -5,6 +5,7 @@
 # Adrian FHS <adrianfhs014@gmail.com>, 2018.
 # Alec Marsicovetere <alecm.mobile@gmail.com>, 2019.
 # Alvaro Antonio Baena Rubio <aabaenar@gmail.com>, 2018.
+# Andy A. Jesús Ramos <c-acola@hotmail.com>, 2019.
 # Api Api dev <apidev1@hotmail.com>, 2018-2019.
 # Carlos Miranda <carlosandrmiranda@gmail.com>, 2019.
 # Gato Wormius <gatowormius@gmail.com>, 2018.
@@ -19,6 +20,7 @@
 # Kisetsu 0w0 <plasticdoll9@gmail.com>, 2018.
 # Lukas <crakernet0@gmail.com>, 2018.
 # Miguel Alejandro Aguayo L <maalmike@gmail.com>, 2018.
+# Rafael Dávila Mendoza <rafaeld_mendoza@hotmail.com>, 2019.
 # Reimer Chamale <rchamale10@gmail.com>, 2019.
 # Ricardo Illescas <riktothepast@gmail.com>, 2018.
 # Serg InputOutput <serg.inputoutput@gmail.com>, 2019.
@@ -29,8 +31,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-10-29 12:54+0100\n"
-"PO-Revision-Date: 2019-09-01 08:27+0000\n"
-"Last-Translator: tan(x) <thannia.rz@gmail.com>\n"
+"PO-Revision-Date: 2019-12-03 07:11+0000\n"
+"Last-Translator: Rafael Dávila Mendoza <rafaeld_mendoza@hotmail.com>\n"
 "Language-Team: Spanish (Mexico) <https://hosted.weblate.org/projects/godot-"
 "engine/godot-docs/es_MX/>\n"
 "Language: es_MX\n"
@@ -38,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 3.10-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -151,8 +153,9 @@ msgstr ""
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:55
+#, fuzzy
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -288,7 +291,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Antes de que empieces"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -296,6 +299,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"La página :ref:`Tutorials and resources <doc_community_tutorials>` enumera "
+"los videos tutoriales aportados por la comunidad. Si prefiere los videos al "
+"texto, vale la pena echarle un vistazo."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -303,6 +309,10 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"En caso de que tenga problemas con uno de los tutoriales o su proyecto, "
+"puede encontrar ayuda sobre los distintos :ref:`Community channels "
+"<doc_community_channels>`, especialmente la comunidad de Godot Discord, Q&A "
+"e IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -433,7 +443,6 @@ msgstr ""
 "También contiene el :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
@@ -442,8 +451,8 @@ msgid ""
 msgstr ""
 "La sección :ref:`sec-learn`, es la principal *raison d'être* de esta "
 "documentación, ya que contiene toda la información necesaria sobre el uso "
-"del motor para hacer juegos. Comienza con el tutorial Paso a paso :ref: <toc-"
-"learn-step_by_step>`que debería ser el punto de entrada para todos los "
+"del motor para hacer juegos. Comienza con el tutorial :ref:`Step by step "
+"<toc-learn-step_by_step>` que debería ser el punto de entrada para todos los "
 "usuarios nuevos."
 
 #: ../../docs/about/introduction.rst:91
@@ -1269,7 +1278,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "Por qué Godot no usa STL (Standard Template Library)"
 
 #: ../../docs/about/faq.rst:288
 msgid ""
@@ -1277,42 +1286,60 @@ msgid ""
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"Al igual que muchas otras bibliotecas (Qt como ejemplo), Godot no utiliza "
+"STL. Creemos que STL es una gran biblioteca de uso general, pero teníamos "
+"requisitos especiales para Godot."
 
 #: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"Las plantillas STL crean símbolos muy grandes, lo que da como resultado "
+"enormes binarios de depuración. Utilizamos pocas plantillas con nombres muy "
+"cortos en su lugar."
 
 #: ../../docs/about/faq.rst:293
+#, fuzzy
 msgid ""
 "Most of our containers cater to special needs, like Vector, which uses copy "
 "on write and we use to pass data around, or the RID system, which requires "
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"La mayoría de nuestros contenedores satisfacen necesidades especiales, como "
+"Vector, que usa copia en escritura y nosotros usamos para pasar datos, o el "
+"sistema RID, que requiere O(1) tiempo de acceso para el rendimiento. Del "
+"mismo modo, nuestras implementaciones de mapas hash están diseñadas para "
+"integrarse perfectamente con los tipos de motores internos."
 
 #: ../../docs/about/faq.rst:294
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"Nuestros contenedores tienen seguimiento de memoria incorporado, lo que "
+"ayuda a rastrear mejor el uso de memoria."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"Para arreglos grandes, utilizamos memoria agrupada, que se puede asignar a "
+"un búfer preasignado o memoria virtual."
 
 #: ../../docs/about/faq.rst:296
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"Utilizamos nuestro tipo de String personalizado, ya que el proporcionado por "
+"STL es demasiado básico y carece de soporte de internacionalización adecuado."
 
 #: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "¿Por qué Godot no usa excepciones?"
 
 #: ../../docs/about/faq.rst:301
 msgid ""
@@ -1321,16 +1348,22 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"Creemos que los juegos no deberían fallar, pase lo que pase. Si ocurre una "
+"situación inesperada, Godot imprimirá un error (que puede rastrearse incluso "
+"hasta el script), pero luego intentará recuperarse con la mayor gracia "
+"posible y continuar."
 
 #: ../../docs/about/faq.rst:306
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
+"Además, las excepciones aumentan significativamente el tamaño binario del "
+"ejecutable."
 
 #: ../../docs/about/faq.rst:310
 msgid "Why does Godot not enforce RTTI?"
-msgstr ""
+msgstr "¿Por qué Godot no hace cumplir RTTI?"
 
 #: ../../docs/about/faq.rst:312
 msgid ""
@@ -1338,10 +1371,16 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
+"Godot proporciona su propio sistema de conversión de tipos, que "
+"opcionalmente puede usar RTTI internamente. Deshabilitar RTTI en Godot "
+"significa que se pueden lograr tamaños binarios considerablemente más "
+"pequeños, a un bajo costo de rendimiento."
 
 #: ../../docs/about/faq.rst:317
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
+"¿Por qué Godot no obliga a los usuarios a implementar DoD (diseño orientado "
+"a datos)?"
 
 #: ../../docs/about/faq.rst:319
 msgid ""
@@ -1349,6 +1388,9 @@ msgid ""
 "use cache coherency as best as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"Si bien Godot internamente para muchas de las tareas de alto rendimiento "
+"intenta usar la coherencia de caché lo mejor posible, creemos que la mayoría "
+"de los usuarios realmente no necesitan ser obligados a usar prácticas DoD."
 
 #: ../../docs/about/faq.rst:323
 msgid ""
@@ -1358,12 +1400,21 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"DoD es principalmente una optimización de coherencia de caché que solo puede "
+"obtener mejoras significativas en el rendimiento cuando se trata de docenas "
+"de miles de objetos (que se procesan en cada cuadro con poca modificación). "
+"Como en el caso, si está moviendo unos cientos de sprites o enemigos por "
+"cuadro, DoD no lo ayudará, y debe considerar un enfoque diferente para la "
+"optimización."
 
 #: ../../docs/about/faq.rst:330
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"La gran mayoría de los juegos no necesitan esto y Godot proporciona "
+"ayudantes útiles para hacer el trabajo en la mayoría de los casos cuando lo "
+"haces."
 
 #: ../../docs/about/faq.rst:333
 msgid ""
@@ -1371,6 +1422,9 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"Si se necesita un juego que realmente necesita procesar una cantidad tan "
+"grande de objetos, nuestra recomendación es usar C ++ y GDNative para las "
+"partes de alto rendimiento y GDScript (o C #) para el resto del juego."
 
 #: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
@@ -1420,9 +1474,8 @@ msgstr ""
 "no se reflejan en este documento."
 
 #: ../../docs/about/docs_changelog.rst:14
-#, fuzzy
 msgid "New tutorials since version 3.1"
-msgstr "Nuevos tutoriales desde la versión 3.0"
+msgstr "Nuevos tutoriales desde la versión 3.1"
 
 #: ../../docs/about/docs_changelog.rst:17
 #: ../../docs/about/docs_changelog.rst:110
@@ -1448,21 +1501,21 @@ msgstr "Referencia :ref: `Organización de la escena <doc_scene_organization>`"
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 #: ../../docs/about/docs_changelog.rst:29
 #, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_sync_with_audio`"
 
 #: ../../docs/about/docs_changelog.rst:32 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr ""
+msgstr "Matemáticas"
 
 #: ../../docs/about/docs_changelog.rst:34
 #, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:35
 #, fuzzy
@@ -1472,7 +1525,7 @@ msgstr "Referencia :ref:`Exportando <doc_exporting>`"
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
 msgid "Inputs"
-msgstr ""
+msgstr "Entradas"
 
 #: ../../docs/about/docs_changelog.rst:40
 #, fuzzy
@@ -1481,11 +1534,12 @@ msgstr "referencia :ref: `Señales <doc_signals>`"
 
 #: ../../docs/about/docs_changelog.rst:43 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
-msgstr ""
+msgstr "Internacionalizacion"
 
 #: ../../docs/about/docs_changelog.rst:45
+#, fuzzy
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr ""
+msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:48
 #: ../../docs/about/docs_changelog.rst:162
@@ -1506,21 +1560,22 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:53
 #, fuzzy
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr "Tu primer juego"
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:54
 #, fuzzy
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr "Tu primer juego"
+msgstr ":ref:`doc_your_first_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:55
+#, fuzzy
 msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_second_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:58
 #: ../../docs/tutorials/networking/index.rst:2
 msgid "Networking"
-msgstr ""
+msgstr "Redes"
 
 #: ../../docs/about/docs_changelog.rst:60
 #, fuzzy
@@ -1568,12 +1623,11 @@ msgstr "Creando contenido"
 
 #: ../../docs/about/docs_changelog.rst:82
 msgid "Procedural geometry series:"
-msgstr ""
+msgstr "Serie de geometría procesal:"
 
 #: ../../docs/about/docs_changelog.rst:78
-#, fuzzy
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ": ref: `Geometría procesal <toc-procedural_geometry>`"
 
 #: ../../docs/about/docs_changelog.rst:79
 #, fuzzy
@@ -1612,8 +1666,9 @@ msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/about/docs_changelog.rst:91
 #: ../../docs/tutorials/legal/index.rst:2
+#, fuzzy
 msgid "Legal"
-msgstr ""
+msgstr "Legal"
 
 #: ../../docs/about/docs_changelog.rst:93
 msgid ":ref:`doc_complying_with_licenses`"
