@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -933,7 +933,7 @@ msgid "Because the player may have shifted ``weapon_change_number`` outside of t
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1056
-msgid "Then we check to make sure the player is not already changing weapons. If the player is not, we then check to see if the weapon the player wants to change to is a new weapon and not the weapon the player is currently using. If the weapon the player is wanting to change to is a new weapon, we then set ``changing_weapon_name`` to the weapon at ``weapon_change_number`` and set ``changing_weapon`` to true."
+msgid "Then we check to make sure the player is not already changing weapons. If the player is not, we then check to see if the weapon the player wants to change to is a new weapon and not the weapon the player is currently using. If the weapon the player is wanting to change to is a new weapon, we then set ``changing_weapon_name`` to the weapon at ``weapon_change_number`` and set ``changing_weapon`` to ``true``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1060
@@ -941,7 +941,7 @@ msgid "For firing the weapon we first check to see if the ``fire`` action is pre
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1064
-msgid "If the current weapon node does not equal null, and the player is in its ``IDLE_ANIM_NAME`` state, we set the player's animation to the current weapon's ``FIRE_ANIM_NAME``."
+msgid "If the current weapon node does not equal ``null``, and the player is in its ``IDLE_ANIM_NAME`` state, we set the player's animation to the current weapon's ``FIRE_ANIM_NAME``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1069

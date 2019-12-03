@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgid "Next, setup your ``vertex`` function. Particles shaders only contain a ve
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:61
-msgid "First we will distinguish between code that needs to be run only when the particle system starts and code that should always run. We want to give each fish a random position and a random animation offset when the system is first run so we wrap that code in an ``if`` statement that checks the built-in variable ``RESTART`` which becomes true for one frame when the particle system is restarted."
+msgid "First we will distinguish between code that needs to be run only when the particle system starts and code that should always run. We want to give each fish a random position and a random animation offset when the system is first run so we wrap that code in an ``if`` statement that checks the built-in variable ``RESTART`` which becomes ``true`` for one frame when the particle system is restarted."
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:66

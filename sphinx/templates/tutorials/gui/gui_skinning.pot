@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,34 +133,34 @@ msgid "Example: theming a button"
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:137
-msgid "Take some assets (:download:`skin_assets.zip <files/skin_assets.zip>`), go to the \"theme\" menu and select \"Add Class Item\":"
+msgid "Download these assets (:download:`skin_assets.zip <files/skin_assets.zip>`) and add them to your project. Open the theme editor, click on \"Edit Theme\" and select \"Add Class Items\":"
 msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:142
+#: ../../docs/tutorials/gui/gui_skinning.rst:143
 msgid "A menu will appear prompting the type of control to create. Select \"Button\":"
 msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:147
+#: ../../docs/tutorials/gui/gui_skinning.rst:148
 msgid "Immediately, all button theme options will appear in the property editor, where they can be edited:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:152
+#: ../../docs/tutorials/gui/gui_skinning.rst:153
 msgid "From ``Styles``, open the \"Normal\" drop-down menu next to where it probably says \"null\" and create a \"New StyleBoxTexture\", then edit it. A texture stylebox basically contains a texture and the size of the margins that will not stretch when the texture is stretched. This is called \"3x3\" stretching:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:160
+#: ../../docs/tutorials/gui/gui_skinning.rst:161
 msgid "Repeat the steps and add the other assets. There is no hover or disabled image in the example files, so use the same stylebox as in normal. Set the supplied font as the button font and change the font color to black. Soon, your button will look different and retro:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:167
+#: ../../docs/tutorials/gui/gui_skinning.rst:168
 msgid "Save this theme to the .theme file. Go to the 2D editor and create a few buttons:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:172
+#: ../../docs/tutorials/gui/gui_skinning.rst:173
 msgid "Now, go to the root node of the scene and locate the \"theme\" property, replace it with the theme that was just created. It should look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:177
+#: ../../docs/tutorials/gui/gui_skinning.rst:178
 msgid "Congratulations! You have created a reusable GUI Theme!"
 msgstr ""
 

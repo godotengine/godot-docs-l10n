@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,26 +65,26 @@ msgid "Saving and reading data"
 msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:126
-msgid "As covered in the :ref:`doc_filesystem` tutorial, we'll need to open a file so we can write to it or read from it. Now that we have a way to call our groups and get their relevant data, let's use to_json() to convert it into an easily stored string and store them in a file. Doing it this way ensures that each line is its own object, so we have an easy way to pull the data out of the file as well."
+msgid "As covered in the :ref:`doc_filesystem` tutorial, we'll need to open a file so we can write to it or read from it. Now that we have a way to call our groups and get their relevant data, let's use :ref:`to_json() <class_@GDScript_method_to_json>` to convert it into an easily stored string and store them in a file. Doing it this way ensures that each line is its own object, so we have an easy way to pull the data out of the file as well."
 msgstr ""
 
-#: ../../docs/tutorials/io/saving_games.rst:201
+#: ../../docs/tutorials/io/saving_games.rst:202
 msgid "Game saved! Loading is fairly simple as well. For that, we'll read each line, use parse_json() to read it back to a dict, and then iterate over the dict to read our values. But we'll need to first create the object and we can use the filename and parent values to achieve that. Here is our load function:"
 msgstr ""
 
-#: ../../docs/tutorials/io/saving_games.rst:291
+#: ../../docs/tutorials/io/saving_games.rst:292
 msgid "Now we can save and load an arbitrary number of objects laid out almost anywhere across the scene tree! Each object can store different data depending on what it needs to save."
 msgstr ""
 
-#: ../../docs/tutorials/io/saving_games.rst:296
+#: ../../docs/tutorials/io/saving_games.rst:297
 msgid "Some notes"
 msgstr ""
 
-#: ../../docs/tutorials/io/saving_games.rst:298
+#: ../../docs/tutorials/io/saving_games.rst:299
 msgid "We have glossed over setting up the game state for loading. It's ultimately up to the project creator where much of this logic goes. This is often complicated and will need to be heavily customized based on the needs of the individual project."
 msgstr ""
 
-#: ../../docs/tutorials/io/saving_games.rst:303
-msgid "Additionally, our implementation assumes no Persist objects are children of other Persist objects. Otherwise, invalid paths would be created. To accommodate nested Persist objects, consider saving objects in stages. Load parent objects first so they are available for the add_child() call when child objects are loaded. You will also need a way to link children to parents as the NodePath will likely be invalid."
+#: ../../docs/tutorials/io/saving_games.rst:304
+msgid "Additionally, our implementation assumes no Persist objects are children of other Persist objects. Otherwise, invalid paths would be created. To accommodate nested Persist objects, consider saving objects in stages. Load parent objects first so they are available for the :ref:`add_child() <class_node_method_add_child>` call when child objects are loaded. You will also need a way to link children to parents as the :ref:`NodePath <class_nodepath>` will likely be invalid."
 msgstr ""
 
