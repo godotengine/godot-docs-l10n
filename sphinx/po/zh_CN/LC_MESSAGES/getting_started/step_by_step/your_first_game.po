@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -447,6 +447,8 @@ msgid ""
 "this value ensures that your movement will remain consistent even if the "
 "frame rate changes."
 msgstr ""
+"`_process()` 函数的 `delta` 参数是*帧长度*——完成上一帧所花费的时间。使用这个"
+"值的话，可以保证你的移动不会被帧率的变化所影响。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:337
 msgid ""
@@ -935,19 +937,7 @@ msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr "注意，必须使用 ``add_child()`` 将新实例添加到场景中。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:811
-msgid ""
-"Now click on ``MobTimer`` in the scene window then head to inspector window, "
-"switch to node view then click on ``timeout()`` and connect the signal."
-msgstr ""
-"现在在场景窗口中单击 ``MobTimer``，然后转到属性检查器窗口，切换到节点视图，然"
-"后点击 ``timeout()`` 并连接信号。"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:814
-msgid "Add the following code:"
-msgstr "添加以下代码："
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:862
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:857
 msgid ""
 "In functions requiring angles, GDScript uses *radians*, not degrees. If "
 "you're more comfortable working with degrees, you'll need to use the "
@@ -956,11 +946,11 @@ msgstr ""
 "在需要角度的函数中，GDScript使用 *弧度*，而不是角度。如果您更喜欢使用角度，则"
 "需要使用 ``deg2rad()`` 和 ``rad2deg()`` 函数在角度和弧度之间进行转换。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:868
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:863
 msgid "HUD"
 msgstr "HUD"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:870
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:865
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -973,7 +963,7 @@ msgstr ""
 "<class_CanvasLayer>` 节点。``HUD`` 表示 ``平视显示（heads-up display）``，这"
 "是一种信息显示，显示为游戏视图顶部的叠加层。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:876
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:871
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
@@ -983,23 +973,23 @@ msgstr ""
 "制UI元素， 以便其显示的信息不会被任何游戏元素覆盖，比如 ``Player`` 或 "
 "``mobs``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:880
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:875
 msgid "The HUD displays the following information:"
 msgstr "HUD显示以下信息："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:882
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:877
 msgid "Score, changed by ``ScoreTimer``."
 msgstr "得分，由 ``ScoreTimer`` 更改。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:883
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:878
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr "一条消息，例如 ``Game Over`` 或 ``Get Ready！``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:884
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:879
 msgid "A \"Start\" button to begin the game."
 msgstr "一个 ``Start`` 按钮来开始游戏。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:886
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:881
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
@@ -1009,27 +999,27 @@ msgstr ""
 "`Control <class_Control>` 的两种节点： :ref:`Label <class_Label>` 和 :ref:"
 "`Button <class_Button>` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:890
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:885
 msgid "Create the following as children of the ``HUD`` node:"
 msgstr "创建以下节点作为 ``HUD`` 的子节点："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:892
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:887
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr ":ref:`Label <class_Label>` 命名为 ``ScoreLabel``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:893
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:888
 msgid ":ref:`Label <class_Label>` named ``MessageLabel``."
 msgstr ":ref:`Label <class_Label>` 命名为 ``MessageLabel``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:894
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:889
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
 msgstr ":ref:`Button <class_Button>` 命名为 ``StartButton``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:895
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:890
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` 命名为 ``MessageTimer`` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:897
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:892
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the *Text* field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -1042,11 +1032,11 @@ msgstr ""
 "Regular.ttf`` 的字体文件。要使用此字体，请对三个 ``Control`` 节点中的每一个执"
 "行以下操作："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:903
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:898
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr "在 ``自定义字体`` 的下拉选项中，选择 ``新建DynamicFont``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:907
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:902
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -1056,7 +1046,7 @@ msgstr ""
 "``Load`` 并选择 ``Xolonium-Regular.ttf`` 文件。您还必须设置字体的 ``Size`` 。"
 "设置为 ``64`` 就可以了。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:913
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:908
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -1070,87 +1060,87 @@ msgstr ""
 "新。它们表示从 ``Control`` 节点的边缘到其锚点的距离。详情请参阅 :ref:"
 "`doc_design_interfaces_with_the_control_nodes` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:920
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 #, fuzzy
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
 msgstr "按如下图所示排列节点。点击“布局”按钮以设置 ``Control`` 节点的布局："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:925
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:920
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
 msgstr "您可以拖动节点以手动放置它们，或者要进行更精确的放置，请使用以下设置："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:929
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:924
 msgid "ScoreLabel"
 msgstr "``ScoreLabel``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:931
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:926
 msgid "*Text* : ``0``"
 msgstr "*Text* : ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:932
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:927
 msgid "*Layout* : \"Top Wide\""
 msgstr "*布局*： \"顶部宽度\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:940
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:928
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
 msgid "*Align* : \"Center\""
 msgstr "*对齐*： \"居中\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:936
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:931
 msgid "MessageLabel"
 msgstr "``MessageLabel``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "*文本*： ``Dodge the Creeps!``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:939
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:934
 msgid "*Layout* : \"HCenter Wide\""
 msgstr "*布局*： \"水平中心宽\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:941
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:936
 msgid "*Autowrap* : \"On\""
-msgstr ""
+msgstr "*自动换行*：“开”"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:944
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:939
 msgid "StartButton"
 msgstr "``StartButton``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:946
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:941
 msgid "*Text* : ``Start``"
 msgstr "*文本*： ``Start``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:947
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:942
 msgid "*Layout* : \"Center Bottom\""
 msgstr "*布局*： \"中心底部\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:948
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:943
 msgid "*Margin* :"
 msgstr "*边距*："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:950
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid "Top: ``-200``"
 msgstr "顶部： ``-200``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:951
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Bottom: ``-100``"
 msgstr "底部： ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:953
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:948
 msgid "Now add this script to ``HUD``:"
 msgstr "现将这个脚本添加到 ``HUD``："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:972
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:967
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr "``start_game`` 信号通知 ``Main`` 节点，按钮已经被按下。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:994
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:989
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\". On the ``MessageTimer``, set the ``Wait Time`` to ``2`` "
@@ -1160,7 +1150,7 @@ msgstr ""
 "``MessageTimer`` 中，将 ``Wait Time`` 设置为 ``2`` 并将 ``One Shot`` 属性设置"
 "为 ``On``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1029
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
@@ -1169,7 +1159,7 @@ msgstr ""
 "当 ``Player`` 输掉时调用这个函数。它将显示 ``Game Over`` 2秒，然后返回标题屏"
 "幕并显示 ``Start`` 按钮。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1033
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1028
 msgid ""
 "When you need to pause for a brief time, an alternative to using a Timer "
 "node is to use the SceneTree's ``create_timer()`` function. This can be very "
@@ -1180,11 +1170,11 @@ msgstr ""
 "``create_timer()`` 函数。这对于延迟非常有用，例如在上面的代码中，在这里我们需"
 "要等待一点时间，然后再显示 ``开始`` 按钮。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1051
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1046
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr "每当分数改变，这个函数会被 ``Main`` 调用。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1053
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1048
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton``."
@@ -1192,11 +1182,11 @@ msgstr ""
 "连接 ``MessageTimer`` 的 ``timeout()`` 信号和 ``StartButton`` 的 "
 "``pressed()`` 信号。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1080
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1075
 msgid "Connecting HUD to Main"
 msgstr "将HUD场景连接到Main场景"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1082
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1077
 msgid ""
 "Now that we're done creating the ``HUD`` scene, save it and go back to "
 "``Main``. Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` "
@@ -1207,7 +1197,7 @@ msgstr ""
 "的做法一样，在 ``Main`` 场景中实例化 ``HUD`` 场景， 并把它放置到场景树的底"
 "部。完整的场景树看起来应该像这样，所以确保您没有错过任何东西："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1089
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1084
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
@@ -1215,7 +1205,7 @@ msgstr ""
 "现在我们需要将 ``HUD`` 功能与我们的 ``Main`` 脚本连接起来。这需要在 ``Main`` "
 "场景中添加一些内容："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1092
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1087
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function."
@@ -1223,17 +1213,17 @@ msgstr ""
 "在 ``Node`` 选项卡中， 将HUD的 ``start_game`` 信号连接到 ``new_game()`` 函"
 "数。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1095
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1090
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
 msgstr "在 ``new_game()`` 函数中， 更新分数显示并显示 ``Get Ready`` 消息："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1110
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1105
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "在 ``game_over()`` 中我们需要调用相应的 ``HUD`` 函数："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1121
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1116
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
@@ -1241,7 +1231,7 @@ msgstr ""
 "最后，将下面的代码添加到 ``_on_ScoreTimer_timeout()`` 以保持不断变化的分数的"
 "同步显示："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1128
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
@@ -1249,11 +1239,11 @@ msgstr ""
 "现在您可以开始游戏了！点击 ``开始项目`` 按钮。将要求您选择一个主场景，因此选"
 "择 ``Main.tscn``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1137
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1132
 msgid "Removing old creeps"
 msgstr "删除旧的小怪"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1139
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1134
 msgid ""
 "If you play until \"Game Over\" and then start a new game the creeps from "
 "the previous game are still on screen. It would be better if they all "
@@ -1262,7 +1252,7 @@ msgstr ""
 "如果你一直玩到 ``游戏结束``，然后重新开始新游戏，上次游戏的小怪仍然显示在屏幕"
 "上。假如它们在新游戏开始时被清除，我们的游戏就会更完善。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1143
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1138
 msgid ""
 "We'll use the ``start_game`` signal that's already being emitted by the "
 "``HUD`` node to remove the remaining creeps. We can't use the editor to "
@@ -1274,7 +1264,7 @@ msgstr ""
 "法使用编辑器按照需要的方式将信号连接到 ``Mob``，因为在运行游戏之前，``Main`` "
 "场景树中没有 ``Mob`` 节点。 因此，我们将使用代码。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1148
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1143
 msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
@@ -1282,14 +1272,14 @@ msgstr ""
 "首先向 ``Mob.gd`` 添加一个新函数。``queue_free()`` 将在当前帧的末尾删除当前节"
 "点。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1159
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
 "然后在 ``Main.gd`` 中，``_on_MobTimer_timeout()`` 函数中的末尾，添加新的行。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1176
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1171
 msgid ""
 "This line tells the new Mob node (referenced by the ``mob`` variable) to "
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
@@ -1298,11 +1288,11 @@ msgstr ""
 "该行告诉新的 ``Mob`` 节点（由 ``mob`` 变量引用）通过运行它的 "
 "``_on_start_game()`` 函数来响应 ``HUD`` 节点发出的任何 ``start_game`` 信号。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1176
 msgid "Finishing up"
 msgstr "完成了"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1183
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1178
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -1311,11 +1301,11 @@ msgstr ""
 "现在，我们已经完成了游戏的所有功能。以下是一些剩余的步骤，可以添加更多“果"
 "汁”以改善游戏体验。随心所欲地扩展游戏玩法。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1183
 msgid "Background"
 msgstr "背景"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1190
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1329,17 +1319,17 @@ msgstr ""
 "其绘制在其他节点之后。``ColorRect`` 只有一个属性： ``Color``。选择您喜欢的颜"
 "色，然后拖动 ``ColorRect`` 的大小，使其覆盖屏幕。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1197
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1192
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."
 msgstr "如果您有背景图片，您也可以通过使用 ``Sprite`` 节点来添加背景图片。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1201
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1196
 msgid "Sound effects"
 msgstr "音效"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1203
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1198
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -1350,7 +1340,7 @@ msgstr ""
 "声音文件： ``House in a Forest Loop.ogg`` 用于背景音乐，而 ``gameover.wav`` "
 "用于当玩家失败时。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1208
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1203
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -1362,7 +1352,7 @@ msgstr ""
 "``DeathSound``。在每个节点选项上，点击 ``Stream`` 属性， 选择 ``加载``，然后"
 "选择相应的音频文件。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1213
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1208
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -1370,15 +1360,15 @@ msgstr ""
 "要播放音乐，在 ``new_game()`` 函数中添加 ``$Music.play()``，在 "
 "``game_over()`` 函数中添加 ``$Music.stop()`` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1216
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1211
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr "最后， 在 ``game_over()`` 函数中添加 ``$DeathSound.play()`` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1219
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1214
 msgid "Keyboard Shortcut"
 msgstr "键盘快捷键"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1216
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. One way to "
@@ -1387,7 +1377,7 @@ msgstr ""
 "由于游戏是使用键盘控制运行的，因此如果我们也可以通过按键盘上的键来启动游戏，"
 "将非常方便。一种方法是使用 ``Button`` 节点的 ``快捷键`` 属性。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1225
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1220
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1401,13 +1391,13 @@ msgstr ""
 "选择 ``新建InputEventAction``，然后点击新的 ``InputEvent``。最后，在 "
 "*Action* 属性中，键入名称 ``ui_select``。这是与空格键关联的默认输入事件。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1233
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1228
 msgid ""
 "Now when the start button appears, you can either click it or press the "
 "spacebar to start the game."
 msgstr "现在，当开始按钮出现时，您可以点击它或按空格键来启动游戏。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1237
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1232
 msgid "Project files"
 msgstr "项目文件"
 
@@ -1415,10 +1405,10 @@ msgstr "项目文件"
 msgid "You can find a completed version of this project at these locations:"
 msgstr "您可以在以下位置找到该项目的完整版本："
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1240
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1235
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1241
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1236
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"

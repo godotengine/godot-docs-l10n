@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -624,13 +624,12 @@ msgstr ""
 "nous capturons le curseur de la souris."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:430
-#, fuzzy
 msgid ""
 "See :ref:`Input documentation <class_Input>` for the various mouse modes. We "
 "will only be using ``MOUSE_MODE_CAPTURED`` and ``MOUSE_MODE_VISIBLE`` in "
 "this tutorial series."
 msgstr ""
-"voir :ref:`Documentation d'entrée <class_Input>` pour les différents modes "
+"Voir :ref:`Documentation d'entrée <class_Input>` pour les différents modes "
 "de souris. Nous utiliserons seulement ``MOUSE_MODE_CAPTURED``et "
 "``MOUSE_MODE_VISIBLE`` dans cette série de tutoriels."
 
@@ -1034,13 +1033,12 @@ msgid "Now let's look at ``process_movement``:"
 msgstr "Regardons maintenant le ``process_movement`` :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:621
-#, fuzzy
 msgid ""
 "First we ensure that ``dir`` does not have any movement on the ``Y`` axis by "
 "setting its ``Y`` value to zero."
 msgstr ""
-"Tout d'abord, nous nous assurons que ``dir`` n'a pas de mouvement sur l'axe "
-"``Y`` en réglant sa valeur ``Y`` à zéro."
+"Premièrement, nous nous assurons que ``dir`` ne bouge pas sur l'axe ``Y`` en "
+"réglant sa valeur ``Y`` sur zéro."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:623
 msgid ""
@@ -1324,12 +1322,13 @@ msgid "Let's go over the additions:"
 msgstr "Revoyons les ajouts :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:782
+#, fuzzy
 msgid ""
-"We set ``is_sprinting`` to true when the player is holding down the "
-"``movement_sprint`` action, and false when the ``movement_sprint`` action is "
-"released. In ``process_movement`` we'll add the code that makes the player "
-"faster when they sprint. Here in ``process_input`` we are just going to "
-"change the ``is_sprinting`` variable."
+"We set ``is_sprinting`` to ``true`` when the player is holding down the "
+"``movement_sprint`` action, and ``false`` when the ``movement_sprint`` "
+"action is released. In ``process_movement`` we'll add the code that makes "
+"the player faster when they sprint. Here in ``process_input`` we are just "
+"going to change the ``is_sprinting`` variable."
 msgstr ""
 "Nous réglons ``is_sprinting`` sur true lorsque le joueur maintient l'action "
 "``movement_sprint``, et false lorsque l'action ``movement_sprint`` est "

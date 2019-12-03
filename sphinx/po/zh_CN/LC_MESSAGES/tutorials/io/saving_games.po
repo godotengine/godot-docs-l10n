@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,10 +121,10 @@ msgstr "保存和读取数据"
 msgid ""
 "As covered in the :ref:`doc_filesystem` tutorial, we'll need to open a file "
 "so we can write to it or read from it. Now that we have a way to call our "
-"groups and get their relevant data, let's use to_json() to convert it into "
-"an easily stored string and store them in a file. Doing it this way ensures "
-"that each line is its own object, so we have an easy way to pull the data "
-"out of the file as well."
+"groups and get their relevant data, let's use :ref:`to_json() "
+"<class_@GDScript_method_to_json>` to convert it into an easily stored string "
+"and store them in a file. Doing it this way ensures that each line is its "
+"own object, so we have an easy way to pull the data out of the file as well."
 msgstr ""
 "正如在 :ref:`doc_filesystem` 教程中所述，我们需要打开一个文件并向其中写入数"
 "据，然后可以从中读取数据。 既然我们有办法调用我们的组并获取它们的相关数据，那"
@@ -132,7 +132,7 @@ msgstr ""
 "吧。 这样做可以确保每一行都是自包含的对象，因此我们也可以轻松地将数据从文件中"
 "提取出来。"
 
-#: ../../docs/tutorials/io/saving_games.rst:201
+#: ../../docs/tutorials/io/saving_games.rst:202
 #, fuzzy
 msgid ""
 "Game saved! Loading is fairly simple as well. For that, we'll read each "
@@ -145,7 +145,7 @@ msgstr ""
 "回到一个字典中，然后遍历字典以读取保存的值。 首先我们需要创建对象，这可以通过"
 "使用文件名和父值来实现。 这就是我们的加载函数:"
 
-#: ../../docs/tutorials/io/saving_games.rst:291
+#: ../../docs/tutorials/io/saving_games.rst:292
 #, fuzzy
 msgid ""
 "Now we can save and load an arbitrary number of objects laid out almost "
@@ -155,11 +155,11 @@ msgstr ""
 "现在我们可以保存和加载几乎任何位于场景树中的任意数量的对象了！ 每个对象可以根"
 "据需要保存的内容存储不同的数据。"
 
-#: ../../docs/tutorials/io/saving_games.rst:296
+#: ../../docs/tutorials/io/saving_games.rst:297
 msgid "Some notes"
 msgstr "一些注释"
 
-#: ../../docs/tutorials/io/saving_games.rst:298
+#: ../../docs/tutorials/io/saving_games.rst:299
 #, fuzzy
 msgid ""
 "We have glossed over setting up the game state for loading. It's ultimately "
@@ -170,15 +170,16 @@ msgstr ""
 "我们可能已经忽略了一个步骤，但将游戏状态设置到适合以加载数据可能很复杂。 需要"
 "根据单个项目的需求对此步骤进行大量定制。"
 
-#: ../../docs/tutorials/io/saving_games.rst:303
+#: ../../docs/tutorials/io/saving_games.rst:304
 #, fuzzy
 msgid ""
 "Additionally, our implementation assumes no Persist objects are children of "
 "other Persist objects. Otherwise, invalid paths would be created. To "
 "accommodate nested Persist objects, consider saving objects in stages. Load "
-"parent objects first so they are available for the add_child() call when "
-"child objects are loaded. You will also need a way to link children to "
-"parents as the NodePath will likely be invalid."
+"parent objects first so they are available for the :ref:`add_child() "
+"<class_node_method_add_child>` call when child objects are loaded. You will "
+"also need a way to link children to parents as the :ref:`NodePath "
+"<class_nodepath>` will likely be invalid."
 msgstr ""
 "此实现假定没有Persist对象是其他Persist对象的子对象。 这样做会产生无效路径。 "
 "如果这是项目的需求之一，则需要考虑这一点。 分阶段保存对象(父对象优先)，以便在"

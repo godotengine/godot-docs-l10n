@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:4
 msgid "Matrices and transforms"
-msgstr ""
+msgstr "Matrices et transformations"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:7
 msgid "Introduction"
@@ -30,28 +30,38 @@ msgid ""
 "Before reading this tutorial, it is advised to read the previous one about :"
 "ref:`doc_vector_math` as this one is a direct continuation."
 msgstr ""
+"Avant de lire ce tutoriel, il est conseillé de lire le précédent sur :ref:"
+"`doc_vector_math` car celui-ci est une suite directe."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:12
 msgid ""
 "This tutorial will be about *transformations* and will cover a little about "
 "matrices (but not in-depth)."
 msgstr ""
+"Ce tutoriel portera sur les *transformations* et couvrira un peu les "
+"matrices (mais pas en profondeur)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:15
 msgid ""
 "Transformations are most of the time applied as translation, rotation and "
 "scale so they will be considered as priority here."
 msgstr ""
+"Les transformations sont la plupart du temps appliquées comme translation, "
+"rotation et mise à l'échelle, donc elles seront considérées comme "
+"prioritaires ici."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:19
 msgid "Oriented coordinate system (OCS)"
-msgstr ""
+msgstr "Système de coordonnées orienté (OCS)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:21
 msgid ""
 "Imagine we have a spaceship somewhere in space. In Godot this is easy, just "
 "move the ship somewhere and rotate it:"
 msgstr ""
+"Imaginez que nous avons un vaisseau spatial quelque part dans l'espace. Dans "
+"Godot c'est facile, il suffit de déplacer le vaisseau quelque part et de le "
+"faire tourner :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:26
 msgid ""
@@ -59,6 +69,10 @@ msgid ""
 "remember, we are grown ups here and don't use angles (plus, angles are not "
 "even that useful when working in 3D)."
 msgstr ""
+"Ok, donc en 2D cela semble simple, une position et un angle pour une "
+"rotation. Mais n'oubliez pas que nous sommes des adultes ici et que nous "
+"n'utilisons pas d'angles (en plus, les angles ne sont même pas très utiles "
+"lorsque nous travaillons en 3D)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:30
 msgid ""
@@ -66,22 +80,31 @@ msgid ""
 "it for 2D in a drawing such as Paint.net, Gimp, Photoshop, etc. or in 3D "
 "through a 3D DCC tool such as Blender, Max, Maya, etc."
 msgstr ""
+"Nous devrions nous rendre compte qu'à un moment donné, quelqu'un a *conçu* "
+"ce vaisseau spatial. Que ce soit en 2D dans un dessin comme Paint.net, Gimp, "
+"Photoshop, etc. ou en 3D avec un outil DCC 3D comme Blender, Max, Maya, etc."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:35
 msgid ""
 "When it was designed, it was not rotated. It was designed in its own "
 "*coordinate system*."
 msgstr ""
+"Quand il a été conçu, il n’a pas été tourné. Il a été conçu dans son propre "
+"* système de coordonnées *."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:40
 msgid ""
 "This means that the tip of the ship has a coordinate, the fin has another, "
 "etc. Be it in pixels (2D) or vertices (3D)."
 msgstr ""
+"Cela signifie que l'avant du vaisseau a une coordonnée, la dérive en a une "
+"autre, etc. Que ce soit en pixels (2D) ou en sommets (3D)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:43
 msgid "So, let's recall again that the ship was somewhere in space:"
 msgstr ""
+"Donc, rappelons-nous encore une fois que le vaisseau était quelque part dans "
+"l'espace :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:47
 msgid ""
@@ -90,6 +113,11 @@ msgid ""
 "was *transformed* from their original position to the new one. This allows "
 "the ship to be displayed where it is."
 msgstr ""
+"Comment est-ce arrivé là ? Qu'est-ce qui l'a déplacé et tourné de l'endroit "
+"désigné vers sa position actuelle ? La réponse est... une "
+"**transformation**, le vaisseau a été *transformé* depuis sa position "
+"originelle vers la nouvelle. Cela permet au vaisseau d'être affiché là où il "
+"est."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:52
 msgid ""
@@ -97,6 +125,9 @@ msgid ""
 "this puzzle, we will superimpose the ship's original design position at "
 "their current position:"
 msgstr ""
+"Mais la transformation est un terme trop générique pour décrire ce "
+"processus. Pour résoudre ce casse-tête, nous allons superposer la position "
+"de conception originale du navire à sa position actuelle :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:58
 msgid ""
@@ -105,49 +136,67 @@ msgid ""
 "a unit vector pointing towards X positive, a unit vector pointing towards Y "
 "positive and a translation."
 msgstr ""
+"Ainsi, nous pouvons constater que \"l'espace de conception\" a été lui aussi "
+"transformé. Comment représenter au mieux cette transformation ? Utilisons "
+"pour cela (en 2D) 3 vecteurs, un vecteur unitaire pointant vers X positif, "
+"un vecteur unitaire pointant vers Y positif et une translation."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:65
 msgid ""
 "Let's call the 3 vectors \"X\", \"Y\" and \"Origin\", and let's also "
 "superimpose them over the ship so it makes more sense:"
 msgstr ""
+"Appelons les 3 vecteurs \"X\", \"Y\" et \"Origine\", et superposons les "
+"aussi au vaisseau, pour que cela ait plus de sens :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:70
 msgid ""
 "Ok, this is nicer, but it still does not make sense. What do X,Y and Origin "
 "have to do with how the ship got there?"
 msgstr ""
+"Ok, c'est mieux, mais ça n'a toujours pas de sens. Qu'est-ce que X,Y et "
+"Origine ont à faire avec comment le vaisseau est arrivé là ?"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:73
 msgid "Well, let's take the point from top tip of the ship as reference:"
-msgstr ""
+msgstr "Bien, prenons le point du dessus du vaisseau comme référence :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:77
 msgid ""
 "And let's apply the following operation to it (and to all the points in the "
 "ship too, but we'll track the top tip as our reference point):"
 msgstr ""
+"Et appliquons lui l'opération suivante (et à tous les points du vaisseau "
+"aussi, mais nous suivrons le point du dessus comme notre point de "
+"référence) :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:89
 msgid "Doing this to the selected point will move it back to the center:"
-msgstr ""
+msgstr "Faire cela au point sélectionné le ramènera au centre :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:93
 msgid ""
 "This was expected, but then let's do something more interesting. Use the dot "
 "product of X and the point, and add it to the dot product of Y and the point:"
 msgstr ""
+"C'était attendu, mais faisons quelque chose de plus intéressant. Utilisions "
+"le produit scalaire de X et du point, et ajoutons le au produit scalaire de "
+"Y et du point :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:106
 msgid ""
 "Then what we have is.. wait a minute, it's the ship in its design position!"
 msgstr ""
+"Alors ce que nous avons est... attendez une minute, c'est le vaisseau dans "
+"sa position initiale de conception !"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:111
 msgid ""
 "How did this black magic happen? The ship was lost in space, and now it's "
 "back home!"
 msgstr ""
+"Comment cette magie noir est arrivée ? Le vaisseau était perdu dans "
+"l'espace, et maintenant il est de retour au bercail !"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:114
 msgid ""
@@ -157,6 +206,12 @@ msgid ""
 "a direction or plane was one of the uses for the dot product. This was "
 "enough to obtain back the design coordinates for every point in the ship."
 msgstr ""
+"Cela peut paraître étrange, mais cela a beaucoup de logique. Rappelez-vous, "
+"comme nous l'avons vu dans le :ref:`doc_vector_math`, ce qui s'est passé est "
+"que la distance à l'axe X, et la distance à l'axe Y ont été calculées. Le "
+"calcul de la distance dans une direction ou un plan était l'une des "
+"utilisations du produit scalaire. C'était suffisant pour obtenir les "
+"coordonnées de conception de chaque point du navire."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:121
 msgid ""
@@ -362,43 +417,52 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:369
 msgid "Inverse transform"
-msgstr ""
+msgstr "Transformation inverse"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:371
 msgid ""
 "To do the opposite operation (what we did up there with the rocket), the "
 "\"xform_inv\" method is used:"
 msgstr ""
+"Pour effectuer l'opération contraire (ce que nous avons fait avec la fusée), "
+"la méthode \"xform_inv\" est utilisée :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:383
 msgid "Only for Basis:"
-msgstr ""
+msgstr "Uniquement pour les bases :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:395
 msgid "Orthonormal matrices"
-msgstr ""
+msgstr "Matrices orthonormées"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:397
 msgid ""
 "However, if the matrix has been scaled (vectors are not unit length), or the "
 "basis vectors are not orthogonal (90°), the inverse transform will not work."
 msgstr ""
+"Cependant, si la matrice a été mise à l'échelle (vecteurs qui ne sont pas à "
+"l'échelle unitaire), ou si les vecteurs de bases ne sont pas orthogonaux "
+"(90°), le transform inverse ne fonctionnera pas."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:401
 msgid ""
 "In other words, inverse transform is only valid in *orthonormal* matrices. "
 "For this, these cases an affine inverse must be computed."
 msgstr ""
+"En d'autres termes, le transform inverse est valide uniquement en matrices "
+"\"orthonormées\". Pour ce cas là, une inverse affine doit être calculée."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:404
 msgid ""
 "The transform, or inverse transform of an identity matrix will return the "
 "position unchanged:"
 msgstr ""
+"Le transform, ou transform inverse de l'identité d'une matrice renverra la "
+"position inchangée :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:419
 msgid "Affine inverse"
-msgstr ""
+msgstr "Affine inverse"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:421
 msgid ""
@@ -410,11 +474,11 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:441
 msgid "If the matrix is orthonormal, then:"
-msgstr ""
+msgstr "Si la matrice est orthonormée, alors :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:459
 msgid "Matrix multiplication"
-msgstr ""
+msgstr "Multiplication de matrice"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:461
 msgid ""
@@ -426,6 +490,7 @@ msgstr ""
 msgid ""
 "However, as per convention, multiplication takes place in reverse order."
 msgstr ""
+"Cependant, t par convention, les multiplication ont lieu en sens inverse."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:467
 msgid "Example:"
@@ -433,15 +498,15 @@ msgstr "Exemple :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:478
 msgid "To make it a little clearer, this:"
-msgstr ""
+msgstr "Pour rendre ceci un peu plus clair, cela :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:491
 msgid "Is the same as:"
-msgstr ""
+msgstr "Et pareil que :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:504
 msgid "However, this is not the same:"
-msgstr ""
+msgstr "Cependant, ce n'est pas identique :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:517
 msgid "Because in matrix math, A * B is not the same as B * A."
@@ -449,7 +514,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:520
 msgid "Multiplication by inverse"
-msgstr ""
+msgstr "Multiplication par l'inverse"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:522
 msgid "Multiplying a matrix by its inverse, results in identity:"
@@ -457,7 +522,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:536
 msgid "Multiplication by identity"
-msgstr ""
+msgstr "Multiplication par l'identité"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:538
 msgid "Multiplying a matrix by identity, will result in the unchanged matrix:"
@@ -465,7 +530,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:552
 msgid "Matrix tips"
-msgstr ""
+msgstr "Les astuces de matrice"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:554
 msgid ""
@@ -475,7 +540,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:566
 msgid "For 3 levels:"
-msgstr ""
+msgstr "Pour 3 niveaux :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:577
 msgid ""
@@ -561,4 +626,4 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:715
 msgid "An example:"
-msgstr ""
+msgstr "Un exemple :"

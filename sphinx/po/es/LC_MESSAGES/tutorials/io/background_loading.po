@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -231,7 +231,8 @@ msgid "Remove a resource from the queue, discarding any loading done."
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:246
-msgid "Returns true if a resource is fully loaded and ready to be retrieved."
+msgid ""
+"Returns ``true`` if a resource is fully loaded and ready to be retrieved."
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:252
@@ -245,9 +246,9 @@ msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:262
 msgid ""
-"Returns the fully loaded resource, or null on error. If the resource is not "
-"fully loaded (``is_ready`` returns false), it will block your thread and "
-"finish the load. If the resource is not on the queue, it will call "
+"Returns the fully loaded resource, or ``null`` on error. If the resource is "
+"not fully loaded (``is_ready`` returns ``false``), it will block your thread "
+"and finish the load. If the resource is not on the queue, it will call "
 "``ResourceLoader::load`` to load it normally and return it."
 msgstr ""
 

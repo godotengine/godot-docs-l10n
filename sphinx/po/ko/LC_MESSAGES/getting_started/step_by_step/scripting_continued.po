@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,7 +132,7 @@ msgstr "위 스크립트는 프레임 당 증가하는 카운터를 보여 줍�
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
-msgstr "그룹(Group)"
+msgstr "그룹"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
 msgid ""
@@ -337,7 +337,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
-msgstr "클래스로 스크립트 등록하기"
+msgstr "스크립트를 클래스로 등록하기"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
 msgid ""
@@ -345,7 +345,7 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
-"Godot는 편집기에 각 스크립트를 등록하기 위한 \"스크립트 클래스(Script "
+"Godot는 편집기의 각 스크립트를 등록하기 위한 \"스크립트 클래스(Script "
 "Class)\" 기능을 갖고 있습니다. 기본적으로 이름이 없는 스크립트에 접근하려면 "
 "파일을 직접 불러와야 합니다."
 
@@ -356,10 +356,10 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
-"스크립트에 이름을 짓고 클래스의 이름과 함께 ``class_name`` 키워드를 통해 편집"
-"기의 타입으로 등록할 수 있습니다. 쉼표나 이미지로 향하는 선택적인 경로를 추가"
-"해 아이콘으로도 사용할 수 있습니다. 그런 뒤 노드나 리소스 생성 대화 상자에서 "
-"당신의 새 타입을 찾으실 수 있습니다."
+"스크립트에 이름을 짓고 클래스의 이름을 뜻하는 ``class_name`` 키워드로 스크립"
+"트를 유형으로 등록할 수 있습니다. 쉼표와 이미지로 향하는 경로를 선택적으로 추"
+"가하면 아이콘으로도 사용할 수 있습니다. 그런 다음 노드(Node)나 리소스"
+"(Resource) 만들기 대화 상자에서 당신의 새 유형을 찾을 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
 msgid "In Godot 3.1:"
@@ -370,8 +370,8 @@ msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
-"오직 GDScript와 NativeScript만, 즉, C++와 다른 GDNative의 영향을 받는 언어"
-"만, 스크립트로 등록이 가능합니다."
+"오직 GDScript와 NativeScript만 가능합니다. 즉, C++와 다른 GDNative의 영향을 "
+"받는 언어만 스크립트를 등록할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
 msgid "Only GDScript creates global variables for each named script."

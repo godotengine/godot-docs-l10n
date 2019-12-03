@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -239,26 +239,28 @@ msgid "Example: theming a button"
 msgstr "示例:指定一个按钮的主题"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:137
+#, fuzzy
 msgid ""
-"Take some assets (:download:`skin_assets.zip <files/skin_assets.zip>`), go "
-"to the \"theme\" menu and select \"Add Class Item\":"
+"Download these assets (:download:`skin_assets.zip <files/skin_assets.zip>`) "
+"and add them to your project. Open the theme editor, click on \"Edit Theme\" "
+"and select \"Add Class Items\":"
 msgstr ""
 "首先获取这份资源 (:download:`skin_assets.zip <files/skin_assets.zip>`), 转到 "
 "\"Theme\" 菜单并选择 \"Add Class Items\":"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:142
+#: ../../docs/tutorials/gui/gui_skinning.rst:143
 msgid ""
 "A menu will appear prompting the type of control to create. Select \"Button"
 "\":"
 msgstr "然后将出现一个菜单, 提示要创建的控件类型。选择 \"Button\":"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:147
+#: ../../docs/tutorials/gui/gui_skinning.rst:148
 msgid ""
 "Immediately, all button theme options will appear in the property editor, "
 "where they can be edited:"
 msgstr "所有按钮主题选项都将立刻显示在属性面板中, 可以在其中进行编辑:"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:152
+#: ../../docs/tutorials/gui/gui_skinning.rst:153
 #, fuzzy
 msgid ""
 "From ``Styles``, open the \"Normal\" drop-down menu next to where it "
@@ -271,7 +273,7 @@ msgstr ""
 "纹理 stylebox 基本上包本身含纹理和“纹理拉伸保留边距”，拉伸时，边距范围内不受"
 "拉伸影响。这被称为 \"3x3\" 拉伸(译注:九宫格拉伸):"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:160
+#: ../../docs/tutorials/gui/gui_skinning.rst:161
 msgid ""
 "Repeat the steps and add the other assets. There is no hover or disabled "
 "image in the example files, so use the same stylebox as in normal. Set the "
@@ -282,14 +284,14 @@ msgstr ""
 "使用与“Normal”状态相同的 stylebox。将提供的字体设置为按钮字体, 并将字体颜色更"
 "改为黑色。很快地, 您的按钮将看起来不同了，并且变得复古:"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:167
+#: ../../docs/tutorials/gui/gui_skinning.rst:168
 #, fuzzy
 msgid ""
 "Save this theme to the .theme file. Go to the 2D editor and create a few "
 "buttons:"
 msgstr "将此主题保存到 .thm 文件中。转到 2D 编辑器并创建几个按钮:"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:172
+#: ../../docs/tutorials/gui/gui_skinning.rst:173
 #, fuzzy
 msgid ""
 "Now, go to the root node of the scene and locate the \"theme\" property, "
@@ -298,6 +300,6 @@ msgstr ""
 "现在, 转到场景的根节点并找到 \"Theme\" 属性, 将其替换为刚刚创建的主题。它应该"
 "看起来像这样:"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:177
+#: ../../docs/tutorials/gui/gui_skinning.rst:178
 msgid "Congratulations! You have created a reusable GUI Theme!"
 msgstr "恭喜咯！您已经创建了一个可反复使用的 GUI 主题!"

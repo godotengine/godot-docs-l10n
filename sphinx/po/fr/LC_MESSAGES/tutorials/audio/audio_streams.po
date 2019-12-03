@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,102 +26,97 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:9
-#, fuzzy
 msgid ""
 "As you might have already read in :ref:`doc_audio_buses`, sound is sent to "
 "each bus via an AudioStreamPlayer node. There are different kinds of "
 "AudioStreamPlayers. Each one loads an AudioStream and plays it back."
 msgstr ""
-"Il y a différent type d'AudioStreamPlayer. Chacun d'eux charge un "
-"AudioStream et le joue."
+"Comme vous l'avez peut-être déjà lu dans :ref:`doc_audio_buses`, le son est "
+"envoyé à chaque bus via un nœud AudioStreamPlayer. Il existe différents "
+"types de AudioStreamPlayers. Chacun charge un AudioStream et le lit."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:14
 msgid "AudioStream"
 msgstr "Flux audio"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:16
-#, fuzzy
 msgid ""
 "An audio stream is an abstract object that emits sound. The sound can come "
 "from many places, but is most commonly loaded from the filesystem. Audio "
 "files such as WAV (``.wav``) or Ogg Vorbis (``.ogg``) can be loaded as "
 "AudioStreams and placed inside an AudioStreamPlayer."
 msgstr ""
-"Un AudioStream est un objet abstrait qui émet du son. Le son peut être "
-"import depuis divers endroit, le plus commun reste les fichiers. Les "
-"fichiers, comme des .wav ou .org peuvent être chargés comme AudioStream et "
-"placé dans un AudioStreamPlayer."
+"Un flux audio est un objet abstrait qui émet un son. Le son peut provenir de "
+"plusieurs endroits, mais il est le plus souvent chargé depuis le système de "
+"fichiers. Les fichiers audio tels que WAV (``.wav``) ou Ogg Vorbis (``."
+"ogg``) peuvent être chargés comme AudioStreams et placés dans un "
+"AudioStreamPlayer."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:21
-#, fuzzy
 msgid ""
 "Here is a comparison of the two file types to help you choose the one that "
 "fits your use case best:"
 msgstr ""
-"Ci-dessous, la descriptions des deux types de fichiers. Pour vous aidez à "
-"choisir celui qui vous conviendra le mieux :"
+"Voici une comparaison des deux types de fichiers pour vous aider à choisir "
+"celui qui convient le mieux à votre cas d'utilisation :"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:24
-#, fuzzy
 msgid ""
 "WAV files are quite large, but use little CPU power to play back. Hundreds "
 "of them can be played simultaneously with little impact on performance. This "
 "format is usually best for short sound effects."
 msgstr ""
-"Les fichiers audio de type *.wav\"* sont gros, mais utilisent peu de charge "
-"CPU pour pouvoir être joués. Une centaines d'entre eux peuvent être joués "
-"simultanément avec peu d'impact sur les performances. C'est le format usuel "
-"pour les petits effets sonores."
+"Les fichiers WAV sont assez volumineux, mais utilisent peu de puissance CPU "
+"pour les lire. Des centaines d'entre eux peuvent être joués simultanément "
+"avec peu d'impact sur les performances. Ce format est généralement "
+"préférable pour les effets sonores courts."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:27
-#, fuzzy
 msgid ""
 "Ogg Vorbis files are much smaller, but use considerably more CPU power to "
 "play back, so only a few can be played back at once (especially on mobile). "
 "This format works well for music, long sound effect sequences, and voice at "
 "relatively low bitrates."
 msgstr ""
-"Les fichiers audio de type *.ogg* sont plus petits, cependant ils utilisent "
-"beaucoup plus de charge CPU pour être joués. De cette façon peu d'entre eux "
-"peuvent l'être en simultané (surtout sur mobile!). C'est le format parfait "
-"pour les musiques, les longs effets sonores, et les voix (de qualité faible)."
+"Les fichiers Ogg Vorbis sont beaucoup plus petits, mais utilisent beaucoup "
+"plus de puissance CPU pour les lire, de sorte que seuls quelques-uns peuvent "
+"être lus en même temps (surtout sur mobile). Ce format convient bien à la "
+"musique, aux longues séquences d'effets sonores et à la voix à des débits "
+"binaires relativement faibles."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:32
-#, fuzzy
 msgid ""
 "Keep in mind Ogg Vorbis files don't contain looping information. If looping "
 "an Ogg Vorbis file is desired, it must be set up using the import options:"
 msgstr ""
-"Gardez à l'esprit que ni l'un ni l'autre (.wav ou .ogg) ne contiennent "
-"habituellement les informations pour faire une boucle sonore. Si vous "
-"souhaitez le faire, il faut le préciser à l'import de chaque fichiers, tel "
-"que ci-dessous :"
+"Gardez à l'esprit que les fichiers Ogg Vorbis ne contiennent pas "
+"d'informations de boucle. Si vous souhaitez mettre en boucle un fichier Ogg "
+"Vorbis, vous devez le configurer à l'aide des options d'importation :"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:37
-#, fuzzy
 msgid ""
 "There are other types of AudioStreamPlayer, such as AudioStreamRandomPitch. "
 "This one makes a random adjustment to the sound's pitch every time it's "
 "played back. This can be helpful for adding variation to sounds that are "
 "played back often."
 msgstr ""
-"Note : Il y a d'autre type d'AudioStreamPlayer, comme "
-"AudioStreamRandomPitch. Celui-ci fait un ajustement aléatoire sur le pitch à "
-"chaque fois qu'il est joué. Cela peut-être intéressant pour les sons qui "
-"sont souvent joué."
+"Il existe d'autres types d'AudioStreamPlayer, comme AudioStreamRandomPitch. "
+"Celui-ci effectue un ajustement aléatoire de la hauteur du son à chaque fois "
+"qu'il est joué. Ceci peut être utile pour ajouter des variations aux sons "
+"qui sont lus souvent."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:43
 msgid "AudioStreamPlayer"
 msgstr "AudioStreamPlayer (=LecteurAudio)"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:45
-#, fuzzy
 msgid ""
 "This is the standard, non-positional stream player. It can play to any bus. "
 "In 5.1 sound setups, it can send audio to stereo mix or front speakers."
 msgstr ""
-"C'est le lecteur audio standard ; Il peut jouer sur tout les bus. En son "
-"5.1, il peut envoyer dans le mix stéréo ou aux hauts-parleurs."
+"C'est le lecteur de flux standard non positionnel. Il peut jouer sur "
+"n'importe quel bus. Dans les configurations de son 5.1, il peut envoyer de "
+"l'audio au mixage stéréo ou aux enceintes avant."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:49
 msgid "AudioStreamPlayer2D"
@@ -155,16 +150,16 @@ msgid "AudioStreamPlayer3D"
 msgstr "AudioStreamPlayer3D (=LecteurAudio3d)"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:67
-#, fuzzy
 msgid ""
 "This is a variant of AudioStreamPlayer, but emits sound in a 3D positional "
 "environment. Depending on the location of the player relative to the screen, "
 "it can position sound in stereo, 5.1 or 7.1 depending on the chosen audio "
 "setup."
 msgstr ""
-"C'est une variante de l' \"AudioStreamPlayer\", il émet des son pour un "
-"environnement 2d. Quand il est proche du bord gauche de l'écran, le \"Panning"
-"\" va vers la gauche. Quand il est proche du droit, le \"Panning\" le suit."
+"Il s'agit d'une variante d'AudioStreamPlayer, mais qui émet du son dans un "
+"environnement positionnel 3D. Selon l'emplacement du joueur par rapport à "
+"l'écran, il peut positionner le son en stéréo, 5.1 ou 7.1 selon la "
+"configuration audio choisie."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:71
 msgid ""
@@ -186,7 +181,6 @@ msgid "Reverb buses"
 msgstr "Bus de réverbération"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:82
-#, fuzzy
 msgid ""
 "Godot allows for 3D audio streams that enter a specific Area node to send "
 "dry and wet audio to separate buses. This is useful when you have several "
@@ -200,19 +194,17 @@ msgstr ""
 "la section **Reverb bus** des propriétés de l'Area :"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:89
-#, fuzzy
 msgid ""
 "At the same time, a special bus layout is created where each area receives "
 "the reverb info from each area. A Reverb effect needs to be created and "
 "configured in each reverb bus to complete the setup for the desired effect:"
 msgstr ""
-"Au même moment, un arrière-plan spécial pour bus est crée où chaque Area "
+"Au même moment, une disposition de bus spéciale est crée où chaque Area "
 "reçoit l'information des réverbérations depuis chacune des Area. Un effet de "
 "réverbération a besoin d'être crée et configuré dans chaque bus de "
 "réverbération pour finir la mise en place de l'effet désiré :"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:95
-#, fuzzy
 msgid ""
 "The Area's **Reverb Bus** section also has a parameter named **Uniformity**. "
 "Some types of rooms bounce sounds more than others (like a warehouse), so "
@@ -220,11 +212,11 @@ msgid ""
 "source may be far away. Playing around with this parameter can simulate that "
 "effect."
 msgstr ""
-"La section **Reverb bus** de l'Area a aussi un paramètre **Uniformity**. "
-"Certains types de pièces réfléchissent plus les sons que d'autres (comme un "
-"entrepôts par exemple), donc la réverbération peut être entendu quasi-"
-"uniformément à travers la pièce, même si la source de son est très éloignée. "
-"Jouer avec ce paramètre peut provoquer cet effet."
+"La section **Reverb bus** de l'Area a aussi un paramètre nommé "
+"**Uniformity**. Certains types de pièces réfléchissent plus les sons que "
+"d'autres (comme un entrepôts par exemple), donc la réverbération peut être "
+"entendu quasi-uniformément à travers la pièce, même si la source de son est "
+"très éloignée. Jouer avec ce paramètre peut simuler cet effet."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:102
 msgid "Doppler"
@@ -249,3 +241,7 @@ msgid ""
 "for objects moved using ``_process``, or **Physics** for objects moved using "
 "``_physics_process``. The tracking will happen automatically."
 msgstr ""
+"Activez-le en le paramétrant en fonction de la façon dont les objets seront "
+"déplacés : utilisez **Idle** pour les objets déplacés avec ``_process``, ou "
+"**Physics** pour les objets déplacés avec ``_physics_process``. Le suivi se "
+"fera automatiquement."

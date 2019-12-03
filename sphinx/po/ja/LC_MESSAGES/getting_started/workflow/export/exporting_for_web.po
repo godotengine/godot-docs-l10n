@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,7 +162,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
-msgstr ""
+msgstr ":ref:`class_HTTPClient` と :ref:`class_HTTPRequest`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
@@ -180,7 +180,7 @@ msgstr ""
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr ""
-"フレームごとに複数回進行できないため、ループ内のポーリングはフリーズしま"
+"フレームごとに複数回進行できないため、ループ内のポーリングはフリーズします"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
 msgid "No chunked responses"
@@ -195,13 +195,14 @@ msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`__"
 msgstr ""
+"`同一生成元ポリシー <https://developer.mozilla.org/en-US/docs/Web/Security/"
+"Same-origin_policy>`__\\ に従います"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid "Exported ``.html`` file must not be reused"
 msgstr "エクスポートされた ``.html`` ファイルを再利用することはできません"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
-#, fuzzy
 msgid ""
 "Each project must generate their own HTML file. On export, several text "
 "placeholders are replaced in the **generated HTML file** specifically for "
@@ -209,9 +210,11 @@ msgid ""
 "file** will be lost in future exports. To customize the generated file, see :"
 "ref:`doc_customizing_html5_shell`."
 msgstr ""
-"エクスポート時に、特定のエクスポートオプション用に**生成されたHTMLファイル**"
-"に複数のテキスト プレースホルダが置き換えられます。以後のエクスポートで再利用"
-"してはなりません。"
+"それぞれのプロジェクトはそれ自身のHTMLファイルを生成しなければなりません。エ"
+"クスポート時に、特定のエクスポートオプション用に**生成されたHTMLファイル**に"
+"複数のテキスト プレースホルダが置き換えられます。他の直接の**生成されたHTML"
+"ファイル**への変更は以後のエクスポートでは失われます。生成されたファイルのカ"
+"スタマイズは、\\ :ref:`doc_customizing_html5_shell`\\ を見て下さい。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid "Boot splash is not displayed"

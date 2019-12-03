@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,11 +94,9 @@ msgid "Formatting conventions"
 msgstr "Conventions de formatage"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:33
-#, fuzzy
 msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
 msgstr ""
-"Si vous créez un nouveau fichier, assurez-vous qu'il utilise le caractères "
-"de saut de ligne (*LF*) pour les retours à la ligne, et non *CRLF* ou *CR*."
+"Utilisez le saut de ligne (**LF**) pour briser les lignes, et non CRLF ou CR."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
 msgid ""
@@ -329,7 +327,6 @@ msgstr ""
 "un identificateur normal :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:242
-#, fuzzy
 msgid ""
 "It is generally discouraged to use a type name as a prefix of an identifier, "
 "like ``string strText`` or ``float fPower``, for example. An exception is "
@@ -338,10 +335,10 @@ msgid ""
 "``IDamageable``."
 msgstr ""
 "Il est généralement déconseillé d'utiliser un nom de type comme préfixe d'un "
-"identificateur comme *'string strText'* ou *'float fPower'*, par exemple. "
-"Cependant, il y a une exception à propos des interfaces, cas où elles "
-"**devraient** être nommées en utilisant un préfixe *'I'* majuscule , comme "
-"*'IInventoryHolder'* ou *'IDamageable'*."
+"identificateur, comme ``string strText`` ou ``float fPower``, par exemple. "
+"Une exception est toutefois faite pour les interfaces, qui **devraient**, en "
+"fait, avoir une lettre majuscule ``I`` préfixée à leur nom, comme "
+"``IInventoryHolder`` ou ``IDamageable``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:246
 msgid ""
@@ -352,31 +349,28 @@ msgstr ""
 "raccourcir trop si cela affecte la lisibilité."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:249
-#, fuzzy
 msgid ""
 "For instance, if you want to write code to find a nearby enemy and hit it "
 "with a weapon, prefer:"
 msgstr ""
 "Par exemple, si vous voulez écrire un code pour trouver un ennemi proche et "
-"le frapper avec une arme, préférez"
+"le frapper avec une arme, préférez :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:255
-#, fuzzy
 msgid "Rather than:"
-msgstr "Plutôt que,"
+msgstr "Plutôt que :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:262
 msgid "Implicitly typed local variables"
 msgstr "Variables locales implicitement typées"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:264
-#, fuzzy
 msgid ""
 "Consider using implicitly typing (``var``) for declaration of a local "
 "variable, but do so **only when the type is evident** from the right side of "
 "the assignment:"
 msgstr ""
-"Envisagez d'utiliser la saisie implicite (*'var'*) pour la déclaration d'une "
+"Envisagez d'utiliser la saisie implicite (``var``) pour la déclaration d'une "
 "variable locale, mais faites-le **seulement lorsque le type est évident** du "
 "côté droit de l'assignation :"
 
@@ -393,33 +387,30 @@ msgid "Use properties instead of non-private fields."
 msgstr "Utilisez des propriétés au lieu de champs non privés."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:298
-#, fuzzy
 msgid ""
 "Use modifiers in this order: ``public``/``protected``/``private``/"
 "``internal``/``virtual``/``override``/``abstract``/``new``/``static``/"
 "``readonly``."
 msgstr ""
-"Utilisez les modificateurs dans cet ordre : *'public/protected/private/"
-"internal virtual/override/abstract/new static readonly'*."
+"Utilisez les modificateurs dans cet ordre : ``public``/``protected``/"
+"``private``/``internal``/``virtual``/``override``/``abstract``/``new``/"
+"``static``/``readonly``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
-#, fuzzy
 msgid ""
 "Avoid using fully-qualified names or ``this.`` prefix for members when it's "
 "not necessary."
 msgstr ""
-"Évitez d'utiliser des noms complets ou le préfixe *'this.'* pour les membres "
+"Évitez d'utiliser des noms complets ou le préfixe ``this.`` pour les membres "
 "lorsque ce n'est pas nécessaire."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:301
-#, fuzzy
 msgid "Remove unused ``using`` statements and unnecessary parentheses."
 msgstr ""
-"Enlevez les instructions *'using'* non utilisées et les parenthèses non "
+"Enlevez les instructions ``using`` non utilisées et les parenthèses non "
 "nécessaires."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
-#, fuzzy
 msgid "Consider omitting the default initial value for a type."
 msgstr "Envisagez d'omettre la valeur initiale par défaut pour un type."
 

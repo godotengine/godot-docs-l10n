@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,13 +189,12 @@ msgstr ""
 "当Godot程序在项目之外运行时，项目管理器就出现了，它帮助开发者管理他们的项目。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
-#, fuzzy
 msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name."
 msgstr ""
-"要创建一个新项目，点击 :menuselection:`新建项目(New Project)` 选项。为该项目"
-"选择并创建一个路径，然后指定项目名为“New Project”："
+"要创建一个新项目，点击菜单栏的新建项目(New Project) 选项。为该项目选择并创建"
+"一个路径，然后指定一个项目名称。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:91
 msgid ""
@@ -205,6 +204,10 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
+"在这个步骤你可以选择渲染后端（opengl es3.0 或者 opengl es2.0）。两者的优缺点"
+"已经列出帮助你做出选择，详细内容请参考:ref:`doc_gles2_gles3_differences`。你"
+"也可以在之后任何时候通过项目设置面板来更改渲染后端。对于本样例内容，两者任选"
+"其一都是ok的。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:100
 msgid "Editor"
@@ -233,6 +236,9 @@ msgid ""
 "chosen node as a child of the currently selected node (or, in an empty "
 "scene, as the \"root\" node)."
 msgstr ""
+"为此，我们需要添加 Label（标签）节点。点击场景面板左上角的“添加子节点”按钮"
+"（加号图标）。这是往场景中添加新节点的主要方式，会把新建的节点加到当前所选节"
+"点下，成为其子节点（如果是空场景，新建节点则会成为根节点）。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid ""
@@ -243,6 +249,10 @@ msgid ""
 "pressing the \"Add Child Node\" button). You can also press the star-shaped "
 "icon to toggle the display of your favorited nodes."
 msgstr ""
+"在（没有根节点的）空场景中，场景面板会显示一些快速添加根节点的选项。“2D 场"
+"景”会添加 Node2D 节点，“3D 场景”会添加 Spatial 节点，“用户界面”会添加 "
+"Control 节点，“自定义节点”则会让你自己选择节点类型（所以和点击“添加子节点”按"
+"钮的效果是一致的）。点击星形按钮可以切换是否显示收藏的节点。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:128
 msgid ""
@@ -251,6 +261,9 @@ msgid ""
 "its root node, likewise not every GUI or 2D scene needs a Control node or "
 "Node2D as their root node."
 msgstr ""
+"此处的预设仅仅是为了方便，而不是对各类场景的强制要求。不是所有的 3D 场景都要"
+"以 Spatial 节点为根节点，同样，GUI 和 2D 场景的根节点也不一定要是 Control 节"
+"点和 Node2D 节点。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
 msgid ""
@@ -258,6 +271,8 @@ msgid ""
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
+"所以，往这个场景里添加标签节点的话，无论是点击自定义节点按钮，还是点击顶部的"
+"添加节点按钮都可以。而如果是往非空场景里添加子节点，就得使用添加节点按钮。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:139
 msgid ""
@@ -320,7 +335,6 @@ msgstr ""
 "(Save)` 中将场景保存成文件如Hello.tscn："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:179
-#, fuzzy
 msgid ""
 "And here's when something funny happens. The file dialog is a special file "
 "dialog, and only allows you to save inside the project. The project root is "
@@ -331,9 +345,10 @@ msgid ""
 "are from inside the game."
 msgstr ""
 "然后，有趣的事情发生了。这个文件对话框是一个特别的文件对话框，只允许保存在项"
-"目内。项目根目录是 ``res://``，意为 ``资源路径``。这也就意味着，文件只可以被"
-"保存到项目的内部。以后，当在Godot进行文件操作的时候，记住 ``res://`` 就是资源"
-"的路径，无论哪种平台和安装位置，它都是定位游戏内部的资源文件位置的方式。"
+"目内。项目根目录是 ``res://``，意为“资源路径”（resource path）。这也就意味"
+"着，文件只可以被保存到项目的内部。以后，当在Godot进行文件操作的时候，记住 "
+"``res://`` 就是资源的路径，无论哪种平台和安装位置，它都是定位游戏内部的资源文"
+"件位置的方式。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""

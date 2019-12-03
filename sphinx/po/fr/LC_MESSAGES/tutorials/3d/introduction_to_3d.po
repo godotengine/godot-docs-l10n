@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,6 @@ msgstr ""
 "pour tout ce qui est 3D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
-#, fuzzy
 msgid ""
 "Spatial nodes have a local transform, which is relative to the parent node "
 "(as long as the parent node is also of **or inherits from** the type "
@@ -78,9 +77,9 @@ msgid ""
 "representing location, Euler rotation (x,y and z angles) and scale."
 msgstr ""
 "Les nœuds spatiaux ont une transformation locale, qui est relative au nœud "
-"parent (tant que le nœud parent est également de **ou hérite** du type "
+"parent (tant que le nœud parent est également du **ou hérite du** type "
 "Spatial). Cette transformation est accessible sous la forme d'une "
-"transformation 4x3 :ref:`Transform <class_Transform>`, ou 3 :ref:`Vector3 "
+"transformation 4x3 <class_Transform <class_Transform>`, ou 3 <class_Vector3 "
 "<class_Vector3>` membres représentant la position, la rotation d'Euler "
 "(angles x,y et z) et l'échelle."
 
@@ -333,13 +332,12 @@ msgid "Some useful keybindings:"
 msgstr "Quelques raccourcis clavier utiles :"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
-#, fuzzy
 msgid ""
 "To snap placement or rotation, press the \"Ctrl\" key while moving, scaling "
 "or rotating."
 msgstr ""
-"Pour enclencher le placement ou la rotation, appuyez sur la touche \"s\" "
-"pendant le déplacement, la mise à l'échelle ou la rotation."
+"Pour aligner le placement ou la rotation, appuyez sur la touche \"Ctrl\" "
+"tout en vous déplaçant, en redimensionnant ou en tournant."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:164
 msgid "To center the view on the selected object, press the \"f\" key."

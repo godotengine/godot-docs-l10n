@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,13 +46,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:15
-#, fuzzy
 msgid ""
 "This guide is available as a `video tutorial on YouTube <https://www.youtube."
 "com/watch?v=5jeHXxeX-JY>`_."
 msgstr ""
-"Vous pouvez regarder le `tutoriel vidéo sur Youtube <https://www.youtube.com/"
-"watch?v=y1E_y9AIqow>`_."
+"Ce guide est disponible sous forme de `tutoriel vidéo sur YouTube <https://"
+"www.youtube.com/watch?v=5jeHXxeX-JY>`_."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:19
 msgid "How to contribute"
@@ -102,13 +101,12 @@ msgid "Get started with GitHub"
 msgstr "Débuter avec Github"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:36
-#, fuzzy
 msgid ""
 "If you're new to git and GitHub, this guide will help you get started. "
 "You'll learn to:"
 msgstr ""
-"Si vous débutez avec git et GitHub, ce guide vous aidera à démarrer. Tu "
-"apprendras à faire :"
+"Si vous débutez avec git et GitHub, ce guide vous aidera à démarrer. Vous "
+"apprendrez à :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:38
 msgid "Fork and clone Godot's repository"
@@ -194,7 +192,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:98
-#, fuzzy
 msgid ""
 "If you made changes you don't want to keep in your local branch, use the "
 "following commands instead:"
@@ -223,7 +220,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:119
-#, fuzzy
 msgid "Updating the documentation template"
 msgstr "Mise à jour du modèle de documentation"
 
@@ -246,12 +242,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:134
-#, fuzzy
 msgid "You are now ready to edit this file to add stuff."
 msgstr "Vous êtes maintenant prêt à éditer ce fichier pour ajouter des choses."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:136
-#, fuzzy
 msgid ""
 "**Note:** If this has been done recently by another contributor, you don't "
 "forcefully need to go through these steps (unless you know that the class "
@@ -266,7 +260,6 @@ msgid "Push and request a pull of your changes"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:141
-#, fuzzy
 msgid ""
 "Once your modifications are finished, push your changes on your GitHub "
 "repository:"
@@ -293,7 +286,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:156
-#, fuzzy
 msgid ""
 "TL;DR: If you don't know what you're doing exactly, do not edit files from "
 "GitHub."
@@ -302,7 +294,6 @@ msgstr ""
 "les fichiers de GitHub."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:159
-#, fuzzy
 msgid "How to edit class XML"
 msgstr "Comment modifier la classe XML"
 
@@ -315,7 +306,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:163
-#, fuzzy
 msgid ""
 "Edit it using your favourite text editor. If you use a code editor, make "
 "sure that it doesn't change the indent style: tabs for the XML, and 4 spaces "
@@ -327,7 +317,6 @@ msgstr ""
 "Plus d'informations à ce sujet ci-dessous."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:165
-#, fuzzy
 msgid ""
 "If you need to check that the modifications you've made are correct in the "
 "generated documentation, build Godot as described :ref:`here <toc-devel-"
@@ -339,7 +328,6 @@ msgstr ""
 "page que vous avez modifiée."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:168
-#, fuzzy
 msgid "How to write the class reference"
 msgstr "Comment écrire la référence de classe"
 
@@ -353,7 +341,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:172
-#, fuzzy
 msgid "Our job is to add the missing text between these marks:"
 msgstr "Notre travail consiste à ajouter le texte manquant entre ces marques :"
 
@@ -382,41 +369,35 @@ msgid "<signal></signal>"
 msgstr "<signal></signal>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:181
-#, fuzzy
 msgid ""
 "Write in a clear and simple language. Always follow the :ref:`writing "
 "guidelines <doc_docs_writing_guidelines>` to keep your descriptions short "
 "and easy to read. **Do not leave empty lines** in the descriptions: each "
 "line in the XML file will result in a new paragraph."
 msgstr ""
-"Écrivez dans un langage clair et simple. Suivez toujours les :ref:"
-"`directives d'écriture <doc_docs_writing_guidelines>` pour que vos "
-"descriptions soient courtes et faciles à lire. **Ne laissez pas de lignes "
-"vides** dans les descriptions: chaque ligne du fichier XML donnera lieu à un "
-"nouveau paragraphe."
+"Écrivez dans un langage clair et simple. Suivez toujours les directives "
+"<doc_docs_writing_guidelines>` pour garder vos descriptions courtes et "
+"faciles à lire. **Ne laissez pas de lignes vides** dans les descriptions : "
+"chaque ligne du fichier XML donnera lieu à un nouveau paragraphe."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:183
-#, fuzzy
 msgid "Here's how a class looks like in XML:"
 msgstr "Voici à quoi ressemble une classe en XML :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:222
-#, fuzzy
 msgid ""
 "Use a code editor like Vim, Atom, Code, Notepad++ or anything similar to "
 "edit the file quickly. Use the search function to find classes fast."
 msgstr ""
 "Utilisez un éditeur de code comme Vim, Atom, Code, Notepad+++ ou autre pour "
 "éditer le fichier rapidement. Utilisez la fonction de recherche pour trouver "
-"les classes rapidement."
+"rapidement des classes."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:226
-#, fuzzy
 msgid "Improve formatting with BBcode style tags"
-msgstr "Améliorer le formatage avec des balises de style BBcode"
+msgstr "Améliorez le formatage avec les balises de style BBcode"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:228
-#, fuzzy
 msgid ""
 "Godot's class reference supports BBcode-like tags. They add nice formatting "
 "to the text. Here's the list of available tags:"
@@ -541,7 +522,7 @@ msgstr "Lien vers le signal d'une autre classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Emit [signal Node.renamed]."
-msgstr ""
+msgstr "Émettre [signal Node.renamed]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "[b] [/b]"
@@ -646,7 +627,6 @@ msgid "Localization"
 msgstr "Localisation"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:286
-#, fuzzy
 msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
@@ -655,24 +635,22 @@ msgstr ""
 "Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:289
-#, fuzzy
 msgid ""
 "Translated strings are synced manually by documentation maintainers in the "
 "`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`__ "
 "repository."
 msgstr ""
 "Les chaînes traduites sont synchronisées manuellement par les responsables "
-"de la documentation dans le `godot-docs-l10n <https://github.com/godotengine/"
-"godot-docs-l10n>`__ dépôt."
+"de la documentation dans le dossier `godot-docs-l10n <https://github.com/"
+"godotengine/godot-docs-l10n>`__."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:293
-#, fuzzy
 msgid ""
 "Languages with a good level of completion have their own localized instances "
 "of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "
 "think that a new language is complete enough to get its own instance."
 msgstr ""
-"Les langues avec un bon niveau de complétion ont leurs propres instance "
-"localisé sur ReadTheDocs. Ouvrez une *issue* sur le dépôt ``godot-docs-"
-"l10n`` si vous pensez qu'une nouvelle langue a une traduction suffisamment "
-"complète pour obtenir sa propre instance"
+"Les langues avec un bon niveau d'achèvement ont leurs propres instances "
+"localisées de ReadTheDocs. Ouvrez un problème sur le dépôt ``godot-docs-"
+"l10n`` si vous pensez qu'un nouveau langage est assez complet pour obtenir "
+"sa propre instance."

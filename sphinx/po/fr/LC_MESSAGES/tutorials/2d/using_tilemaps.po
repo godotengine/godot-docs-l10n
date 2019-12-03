@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,9 +87,8 @@ msgstr ""
 "ref:`doc_import_images`."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
-#, fuzzy
 msgid "TileMap node"
-msgstr "Nœud Camera"
+msgstr "Nœud TileMap"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:39
 msgid ""
@@ -109,12 +108,11 @@ msgid ""
 msgstr ""
 "Dans la section \"Cell\" (pour cellule) de l'inspecteur, il y a de "
 "nombreuses propriétés que vous pouvez ajuster pour customisez le "
-"comportement de votre catalogue de tuiles:"
+"comportement de votre catalogue de tuiles :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:52
-#, fuzzy
 msgid "``Cell Size``"
-msgstr "``Taille de la cellule``"
+msgstr "``Taille de cellule``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:51
 msgid ""
@@ -125,7 +123,6 @@ msgstr ""
 "taille en pixel de chaque tuiles. La valeur par défaut est ``(64, 64)``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:56
-#, fuzzy
 msgid "``YSort``"
 msgstr "``YSort``"
 
@@ -152,22 +149,20 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:63
 msgid "``Quadrant``"
-msgstr ""
+msgstr "``Quadrant``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
-#, fuzzy
 msgid ""
 "Defines the chunk size used for batched drawing. This can negatively affect "
 "performance. Don't change it unless you know what you're doing."
 msgstr ""
-"Définis la taille des morceaux utilisé pour le \"dessin en lots\". Cette "
-"option peut affecter négativement les performances, ne pas changer si vous "
+"Définit la taille des morceaux utilisés pour le dessin par lots. Cela peut "
+"avoir une incidence négative sur les performances. Ne le changez pas si vous "
 "ne savez pas ce que vous faites."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
-#, fuzzy
 msgid "``Custom Transform``"
-msgstr "Transformation"
+msgstr "``Transformation Personnalisée``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
@@ -182,9 +177,8 @@ msgstr ""
 "cette démo."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
-#, fuzzy
 msgid "Creating a TileSet"
-msgstr "Exporter un jeu de tuiles"
+msgstr "Créer un jeu de tuiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
@@ -201,7 +195,6 @@ msgstr ""
 "le catalogue de tuile combine chaque tuile dans un unique objet."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:79
-#, fuzzy
 msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
 "TileSet\"."
@@ -215,7 +208,7 @@ msgid ""
 "editor window:"
 msgstr ""
 "Quand vous faites ça, vous verrez apparaître un nouveau panel \"TileSet\" en "
-"bas de la fenêtre de l'éditeur:"
+"bas de la fenêtre de l'éditeur :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:89
 msgid ""
@@ -309,27 +302,25 @@ msgstr ""
 "tuile."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:135
-#, fuzzy
 msgid ""
 "If you haven't already, make sure to change the \"Step\" in the snap "
 "settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
 "You can find this in the Inspector:"
 msgstr ""
-"Si ce n'est pas encore fait, assure toi de changer le \"pas de la grille\" "
-"dans configurer le magnétisme intelligent à `(64, 64)`, autrement tes tuiles "
-"risques d'être coupées en pièces plus petites. Tu peut trouver ça dans "
-"l'inspecteur :"
+"Si vous ne l'avez pas déjà fait, assurez-vous de changer les paramètres de "
+"\"Step\" dans les réglages de snap à `(64, 64)`, ou vos tuiles peuvent être "
+"coupées en plus petits morceaux. Vous pouvez trouver ceci dans l'inspecteur :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:141
-#, fuzzy
 msgid ""
 "Once you've defined the atlas you can add collision shapes to the individual "
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
 "represent the atlas."
 msgstr ""
-"Une fois définis votre Atlas, vous pouvez ajouter des formes de collisions "
-"au tuiles individuelles comme avant. Vous pouvez aussi cliquez sur l'\"Icon"
-"\"pour sélectionner une des tuiles que représente l'atlas."
+"Une fois que vous avez défini l'atlas, vous pouvez ajouter des formes de "
+"collision aux tuiles individuelles comme auparavant. Vous pouvez également "
+"cliquer sur \"Icon\" pour sélectionner une des tuiles pour représenter "
+"l'atlas."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:145
 msgid ""

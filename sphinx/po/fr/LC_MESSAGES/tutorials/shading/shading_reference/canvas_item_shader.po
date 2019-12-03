@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:23
 msgid "Subtractive blend mode."
-msgstr ""
+msgstr "Mode de mélange soustractif."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:25
 msgid "**blend_mul**"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:25
 msgid "Multiplicative blend mode."
-msgstr ""
+msgstr "Mode de mélange multiplicatif."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:27
 msgid "**blend_premul_alpha**"
@@ -99,11 +99,13 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:31
 msgid "**unshaded**"
-msgstr ""
+msgstr "**sans ombre**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:31
 msgid "Result is just albedo. No lighting/shading happens in material."
 msgstr ""
+"Le résultat est juste l'albedo. Pas d'éclairage/d'ombres n'a lieu dans le "
+"matériau."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:33
 msgid "**light_only**"
@@ -247,7 +249,7 @@ msgstr "in bool **AT_LIGHT_PASS**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
-msgid "True if this is a light pass."
+msgid "``true`` if this is a light pass."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
@@ -443,6 +445,14 @@ msgid ""
 "occur for that object; this can be useful when you only want the object "
 "visible where it is covered by light."
 msgstr ""
+"Les fonctions du processeur de lumière fonctionnent différemment en 2D qu'en "
+"3D. Dans les shaders de CanvasItem, le shader est appelé une fois pour "
+"l'objet dessiné, puis une fois pour chaque lumière touchant cet objet dans "
+"la scène. Utilisez le mode render_mode ``unshaded`` si vous ne voulez pas "
+"que la lumière soit calculée pour cet objet. Utilisez le mode render_mode "
+"``light_only`` si vous voulez que seule la lumière soit calculée pour cet "
+"objet ; ceci peut être utile lorsque vous voulez que l'objet ne soit visible "
+"que là où il est couvert de lumière."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:192
 msgid ""
@@ -503,9 +513,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:224
-#, fuzzy
 msgid "inout vec2 **SHADOW_VEC**"
-msgstr "inout vec2 **LIGHT_VEC**"
+msgstr "inout vec2 **SHADOW_VEC**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:224
 msgid ""

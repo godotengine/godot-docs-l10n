@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -412,7 +412,6 @@ msgstr ""
 "prenons le contrôle du Count MarginContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
-#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -429,13 +428,13 @@ msgstr ""
 "``Stretch Mode`` pour ``Keep Centered``. Trouvez ensuite la catégorie "
 "``Rect`` dans l'inspecteur et changez la propriété ``Size`` en (50, 40) pour "
 "qu'il ne prenne que la moitié gauche de l'arrière-plan.  Ensuite, "
-"sélectionnez le noeud ``Number``. Dans la barre d'outil de la fenêtre "
+"sélectionnez le nœud ``Number``. Dans la barre d'outil de la fenêtre "
 "d'affichage, cliquez sur le menu ``Layout`` et cliquez sur ``Full Rect``. Le "
-"nœud sera redimensionné pour s'adapter à l'arrière-plan. Rendez-vous dans "
+"nœud sera redimensionné pour s'adapter au ``Background``. Rendez-vous dans "
 "l'inspecteur et changez sa propriété ``Align`` en ``Right`` et la propriété "
 "``VAlign`` en ``Center``. Le texte doit s'accrocher au centre du bord droit "
-"de l'arrière-plan. Redimensionner le nœud horizontalement pour qu'il prenne "
-"la moitié droite de l'arrière-plan et qu'il y ait un peu de place avec le "
+"de ``Background``. Redimensionner le nœud horizontalement pour qu'il prenne "
+"la moitié droite de``Background`` et qu'il y ait un peu de place avec le "
 "bord droit."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:195
@@ -482,7 +481,6 @@ msgstr ""
 "propriété ``Size`` pour une valeur plus grande, comme ``24`` ou ``28``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
-#, fuzzy
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -631,7 +629,6 @@ msgstr ""
 "désactivée"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -641,9 +638,9 @@ msgid ""
 msgstr ""
 "Changeons les propriétés d'alignement de ``Number`` pour le déplacer vers la "
 "gauche et le centre de ``Background``. Sélectionnez le nœud ``Number```, "
-"changez sa propriété ``Align`` pour \"left\" et la propriété ``VAlign``` "
-"pour \"center\". Puis redimensionner un peu son bord gauche pour ajouter un "
-"peu de place entre le bord gauche de l'arrière-plan et le texte."
+"changez sa propriété ``Align`` pour gauche et la propriété ``VAlign``` pour "
+"centre. Puis redimensionner un peu son bord gauche pour ajouter un peu de "
+"place entre le bord gauche de ``Background`` et le texte."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
 msgid "The Number node aligned to the left and centre"

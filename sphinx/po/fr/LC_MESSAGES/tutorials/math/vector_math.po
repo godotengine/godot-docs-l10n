@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:4
 msgid "Vector math"
-msgstr ""
+msgstr "Mathématiques vectorielles"
 
 #: ../../docs/tutorials/math/vector_math.rst:7
 msgid "Introduction"
@@ -33,6 +33,12 @@ msgid ""
 "Godot uses them extensively. Developing a good understanding of vector math "
 "is essential to becoming a strong game developer."
 msgstr ""
+"Ce tutoriel est une introduction courte et pratique à l'algèbre linéaire "
+"telle qu'elle s'applique au développement de jeux. L'algèbre linéaire est "
+"l'étude des vecteurs et de leurs utilisations. Les vecteurs ont de "
+"nombreuses applications dans le développement 2D et 3D et Godot les utilise "
+"largement. Développer une bonne compréhension des mathématiques vectorielles "
+"est essentiel pour devenir un bon développeur de jeux."
 
 #: ../../docs/tutorials/math/vector_math.rst:15
 msgid ""
@@ -40,10 +46,14 @@ msgid ""
 "be looking at how it is applied to game development. For a broader look at "
 "the mathematics, see https://www.khanacademy.org/math/linear-algebra"
 msgstr ""
+"Ce tutoriel n'est** pas** un manuel formel sur l'algèbre linéaire. Nous "
+"n'examinerons que la façon dont il est appliqué au développement de jeux. "
+"Pour un regard plus large sur les mathématiques, voir https://www."
+"khanacademy.org/math/linear-algebra"
 
 #: ../../docs/tutorials/math/vector_math.rst:21
 msgid "Coordinate systems (2D)"
-msgstr ""
+msgstr "Systèmes de coordonnées (2D)"
 
 #: ../../docs/tutorials/math/vector_math.rst:23
 msgid ""
@@ -51,6 +61,9 @@ msgid ""
 "vertical axis (``y``). A particular position in 2D space is written as a "
 "pair of values such as ``(4, 3)``."
 msgstr ""
+"Dans l'espace 2D, les coordonnées sont définies par un axe horizontal "
+"(``x``) et un axe vertical (``y``). Une position particulière dans l'espace "
+"2D s'écrit comme une paire de valeurs telles que ``(4, 3)``."
 
 #: ../../docs/tutorials/math/vector_math.rst:29
 msgid ""
@@ -59,6 +72,11 @@ msgid ""
 "in math class. However, this is common in most computer graphics "
 "applications."
 msgstr ""
+"Si vous êtes nouveau dans l'infographie, il peut sembler étrange que les "
+"points positifs de l'axe ``y`` soient orientés vers le **bas** plutôt que "
+"vers le haut, comme vous l'avez probablement appris en cours de "
+"mathématiques. Cependant, c'est commun dans la plupart des applications "
+"d'infographie."
 
 #: ../../docs/tutorials/math/vector_math.rst:34
 msgid ""
@@ -67,6 +85,10 @@ msgid ""
 "from the ``(0, 0)`` point, or **origin**. Draw an arrow pointing from the "
 "origin to the point:"
 msgstr ""
+"Toute position dans le plan 2D peut être identifiée par une paire de "
+"chiffres de cette façon. Cependant, on peut aussi considérer la position "
+"``(4, 3)`` comme un **décalage** du point ``(0, 0)``, ou **origine**. "
+"Dessinez une flèche pointant de l'origine vers le point :"
 
 #: ../../docs/tutorials/math/vector_math.rst:41
 msgid ""
@@ -76,6 +98,11 @@ msgid ""
 "is a **position vector** - it denotes a position in space, relative to the "
 "origin."
 msgstr ""
+"C'est un **vecteur**. Un vecteur représente beaucoup d'informations utiles. "
+"En plus de nous dire que le point est à ``(0, 0)``, nous pouvons aussi le "
+"considérer comme un angle ``θ`` et une longueur (ou une magnitude) ``m``. "
+"Dans ce cas, la flèche est un **vecteur de position** - elle indique une "
+"position dans l'espace, par rapport à l'origine."
 
 #: ../../docs/tutorials/math/vector_math.rst:47
 msgid ""
@@ -83,6 +110,9 @@ msgid ""
 "**relative** direction and magnitude. There is no concept of a vector's "
 "position. The following two vectors are identical:"
 msgstr ""
+"Un point très important à considérer au sujet des vecteurs est qu'ils ne "
+"représentent que la direction et l'amplitude **relative**. Il n'y a pas de "
+"notion de position d'un vecteur. Les deux vecteurs suivants sont identiques :"
 
 #: ../../docs/tutorials/math/vector_math.rst:53
 msgid ""
@@ -90,6 +120,9 @@ msgid ""
 "starting point. It does not matter where on the plane you draw the vector, "
 "it always represents a relative direction and magnitude."
 msgstr ""
+"Les deux vecteurs représentent un point 4 unités à droite et 3 unités en "
+"dessous d'un point de départ. Peu importe où dans le plan vous dessinez le "
+"vecteur, il représente toujours une direction et une magnitude relatives."
 
 #: ../../docs/tutorials/math/vector_math.rst:58
 msgid "Vector operations"
@@ -103,6 +136,12 @@ msgid ""
 "corner of the screen, so to place a 2D node named ``Node2D`` 400 pixels to "
 "the right and 300 pixels down, use the following code:"
 msgstr ""
+"Vous pouvez utiliser l'une ou l'autre méthode (coordonnées x et y ou angle "
+"et magnitude) pour faire référence à un vecteur, mais pour des raisons "
+"pratiques, les programmeurs utilisent généralement la notation des "
+"coordonnées. Par exemple, dans Godot, l'origine est le coin supérieur gauche "
+"de l'écran, donc pour placer un nœud 2D nommé ``Node2D`` 400 pixels à droite "
+"et 300 pixels en bas, utilisez le code suivant :"
 
 #: ../../docs/tutorials/math/vector_math.rst:76
 msgid ""
@@ -110,67 +149,82 @@ msgid ""
 "<class_Vector3>` for 2D and 3D usage, respectively. The same mathematical "
 "rules discussed in this article apply to both types."
 msgstr ""
+"Godot supporte à la fois :ref:`Vector2 <class_Vector2>` et :ref:`Vector3 "
+"<class_Vector3>` pour une utilisation 2D et 3D, respectivement. Les mêmes "
+"règles mathématiques discutées dans cet article s'appliquent aux deux types."
 
 #: ../../docs/tutorials/math/vector_math.rst:81
 msgid "Member access"
-msgstr ""
+msgstr "Accès aux membres"
 
 #: ../../docs/tutorials/math/vector_math.rst:83
 msgid ""
 "The individual components of the vector can be accessed directly by name."
 msgstr ""
+"Les composants individuels du vecteur sont directement accessibles par leur "
+"nom."
 
 #: ../../docs/tutorials/math/vector_math.rst:105
 msgid "Adding vectors"
-msgstr ""
+msgstr "Additionner des vecteurs"
 
 #: ../../docs/tutorials/math/vector_math.rst:107
 msgid ""
 "When adding or subtracting two vectors, the corresponding components are "
 "added:"
 msgstr ""
+"Lors de l'addition ou de la soustraction de deux vecteurs, les composants "
+"correspondants sont ajoutés :"
 
 #: ../../docs/tutorials/math/vector_math.rst:118
 msgid ""
 "We can also see this visually by adding the second vector at the end of the "
 "first:"
 msgstr ""
+"Nous pouvons aussi le voir visuellement en ajoutant le deuxième vecteur à la "
+"fin du premier :"
 
 #: ../../docs/tutorials/math/vector_math.rst:123
 msgid "Note that adding ``a + b`` gives the same result as ``b + a``."
-msgstr ""
+msgstr "Notez que l'ajout de ``a + b`` donne le même résultat que ``b + a``."
 
 #: ../../docs/tutorials/math/vector_math.rst:126
 msgid "Scalar multiplication"
-msgstr ""
+msgstr "Multiplication scalaire"
 
 #: ../../docs/tutorials/math/vector_math.rst:128
 msgid ""
 "Vectors represent both direction and magnitude. A value representing only "
 "magnitude is called a **scalar**."
 msgstr ""
+"Les vecteurs représentent à la fois la direction et la magnitude. Une valeur "
+"ne représentant que la magnitude est appelée **scalaire**."
 
 #: ../../docs/tutorials/math/vector_math.rst:131
 msgid "A vector can be multiplied by a **scalar**:"
-msgstr ""
+msgstr "Un vecteur peut être multiplié par un **scalaire** :"
 
 #: ../../docs/tutorials/math/vector_math.rst:146
 msgid ""
 "Multiplying a vector by a scalar does not change its direction, only its "
 "magnitude. This is how you **scale** a vector."
 msgstr ""
+"Multiplier un vecteur par un scalaire ne change pas sa direction, seulement "
+"sa magnitude. C'est ainsi que vous mettez à **l'échelle** un vecteur."
 
 #: ../../docs/tutorials/math/vector_math.rst:150
 msgid "Practical applications"
-msgstr ""
+msgstr "Applications pratiques"
 
 #: ../../docs/tutorials/math/vector_math.rst:152
 msgid "Let's look at two common uses for vector addition and subtraction."
 msgstr ""
+"Examinons deux utilisations courantes de l'addition et de la soustraction de "
+"vecteurs."
 
 #: ../../docs/tutorials/math/vector_math.rst:155
 msgid "Movement"
-msgstr ""
+msgstr "Mouvement"
 
 #: ../../docs/tutorials/math/vector_math.rst:157
 msgid ""
@@ -181,16 +235,26 @@ msgid ""
 "ship moves each step. We can find the position for step 2 by adding the "
 "velocity to the current position."
 msgstr ""
+"Un vecteur peut représenter **n'importe quelle** quantité avec une magnitude "
+"et une direction. Les exemples typiques sont : la position, la vitesse, "
+"l'accélération et la force. Dans cette image, le vaisseau à l'étape 1 a un "
+"vecteur de position de ``(1,3)``et un vecteur de vitesse de ``(2,1)``. Le "
+"vecteur vitesse représente la distance parcourue par le vaisseau à chaque "
+"pas. Nous pouvons trouver la position de l'étape 2 en ajoutant la vitesse à "
+"la position actuelle."
 
 #: ../../docs/tutorials/math/vector_math.rst:165
 msgid ""
 "Velocity measures the **change** in position per unit of time. The new "
 "position is found by adding velocity to the previous position."
 msgstr ""
+"La vitesse mesure le **changement** de position par unité de temps. La "
+"nouvelle position est trouvée en ajoutant la vitesse à la position "
+"précédente."
 
 #: ../../docs/tutorials/math/vector_math.rst:169
 msgid "Pointing toward a target"
-msgstr ""
+msgstr "Pointer vers une cible"
 
 #: ../../docs/tutorials/math/vector_math.rst:171
 msgid ""
@@ -198,14 +262,18 @@ msgid ""
 "robot. Subtracting the tank's position from the robot's position gives the "
 "vector pointing from the tank to the robot."
 msgstr ""
+"Dans ce scénario, vous avez un tank qui souhaite diriger sa tourelle vers un "
+"robot. En soustrayant la position du tank de la position du robot, on "
+"obtient le vecteur pointant du tank vers le robot."
 
 #: ../../docs/tutorials/math/vector_math.rst:177
 msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
 msgstr ""
+"Pour trouver un vecteur pointant de ``A`` vers ``B`` utilisez ``B - A``."
 
 #: ../../docs/tutorials/math/vector_math.rst:180
 msgid "Unit vectors"
-msgstr ""
+msgstr "Vecteurs unitaires"
 
 #: ../../docs/tutorials/math/vector_math.rst:182
 msgid ""
@@ -213,10 +281,14 @@ msgid ""
 "also sometimes referred to as **direction vectors** or **normals**. Unit "
 "vectors are helpful when you need to keep track of a direction."
 msgstr ""
+"Un vecteur avec une **magnitude** de ``1`` est appelé un **vecteur "
+"unitaire**. Ils sont aussi parfois appelés **vecteurs de direction** ou "
+"**normales**. Les vecteurs unitaires sont utiles lorsque vous avez besoin de "
+"suivre une direction."
 
 #: ../../docs/tutorials/math/vector_math.rst:187
 msgid "Normalization"
-msgstr ""
+msgstr "Normalisation"
 
 #: ../../docs/tutorials/math/vector_math.rst:189
 msgid ""
@@ -224,12 +296,17 @@ msgid ""
 "its direction. This is done by dividing each of its components by its "
 "magnitude:"
 msgstr ""
+"**Normaliser** un vecteur, c'est réduire sa longueur à ``1`` tout en "
+"conservant sa direction. Pour ce faire, on divise chacune de ses composantes "
+"par son ampleur :"
 
 #: ../../docs/tutorials/math/vector_math.rst:208
 msgid ""
 "Because this is such a common operation, ``Vector2`` and ``Vector3`` provide "
 "a method for normalizing:"
 msgstr ""
+"Comme il s'agit d'une opération très courante, ``Vector2`` et ``Vector3`` "
+"fournissent une méthode de normalisation :"
 
 #: ../../docs/tutorials/math/vector_math.rst:221
 msgid ""
@@ -237,10 +314,13 @@ msgid ""
 "normalize a vector of length ``0``. Attempting to do so will result in an "
 "error."
 msgstr ""
+"Parce que la normalisation implique de diviser par la longueur du vecteur, "
+"vous ne pouvez pas normaliser un vecteur de longueur ``0``. Toute tentative "
+"en ce sens entraînera une erreur."
 
 #: ../../docs/tutorials/math/vector_math.rst:226
 msgid "Reflection"
-msgstr ""
+msgstr "Réflexion"
 
 #: ../../docs/tutorials/math/vector_math.rst:228
 msgid ""
@@ -249,12 +329,19 @@ msgid ""
 "They are commonly used for lighting, collisions, and other operations "
 "involving surfaces."
 msgstr ""
+"Une utilisation courante des vecteurs unitaires est d'indiquer les "
+"**normales**. Les vecteurs normales sont des vecteurs unitaires alignés "
+"perpendiculairement à une surface, définissant sa direction. Ils sont "
+"couramment utilisés pour l'éclairage, les collisions et d'autres opérations "
+"impliquant des surfaces."
 
 #: ../../docs/tutorials/math/vector_math.rst:233
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
 msgstr ""
+"Par exemple, imaginez que nous avons une balle en mouvement que nous voulons "
+"faire rebondir sur un mur ou un autre objet :"
 
 #: ../../docs/tutorials/math/vector_math.rst:238
 msgid ""
@@ -265,10 +352,17 @@ msgid ""
 "handle this. Here is a GDScript example of the diagram above using a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`:"
 msgstr ""
+"La normale de surface a une valeur de ``(0, -1)`` parce que c'est une "
+"surface horizontale. Lorsque la balle entre en collision, nous prenons son "
+"mouvement restant (la quantité restante lorsqu'elle touche la surface) et "
+"nous la réfléchissons en utilisant la normale. Dans Godot, la classe :ref:"
+"`Vector2 <class_Vector2> a une méthode ``bounce()`` pour gérer cela. Voici "
+"un exemple GDScript du diagramme ci-dessus utilisant un :ref:"
+"`KinematicBody2D <class_KinematicBody2D>` :"
 
 #: ../../docs/tutorials/math/vector_math.rst:268
 msgid "Dot product"
-msgstr ""
+msgstr "Produit scalaire"
 
 #: ../../docs/tutorials/math/vector_math.rst:270
 msgid ""
@@ -277,15 +371,21 @@ msgid ""
 "returns a **scalar**. Unlike a vector, which contains both magnitude and "
 "direction, a scalar value has only magnitude."
 msgstr ""
+"Le produit **produit scalaire** est l'un des concepts les plus importants en "
+"mathématiques vectorielles, mais il est souvent mal compris. Le produit "
+"scalaire est une opération sur deux vecteurs qui retourne un **scalaire**. "
+"Contrairement à un vecteur, qui contient à la fois la magnitude et la "
+"direction, une valeur scalaire n'a que la magnitude."
 
 #: ../../docs/tutorials/math/vector_math.rst:275
 msgid "The formula for dot product takes two common forms:"
-msgstr ""
+msgstr "La formule du produit scalaire prend deux formes courantes :"
 
 #: ../../docs/tutorials/math/vector_math.rst:277
 msgid ""
 "A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 msgstr ""
+"A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 
 #: ../../docs/tutorials/math/vector_math.rst:281
 msgid "and"
@@ -293,13 +393,15 @@ msgstr "et"
 
 #: ../../docs/tutorials/math/vector_math.rst:283
 msgid "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
-msgstr ""
+msgstr "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
 
 #: ../../docs/tutorials/math/vector_math.rst:287
 msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
 msgstr ""
+"Cependant, dans la plupart des cas, il est plus facile d'utiliser la méthode "
+"intégrée. Notez que l'ordre des deux vecteurs n'a pas d'importance :"
 
 #: ../../docs/tutorials/math/vector_math.rst:301
 msgid ""
@@ -307,16 +409,22 @@ msgid ""
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
 "tell us something about the angle between two vectors:"
 msgstr ""
+"Le produit scalaire est le plus utile lorsqu'il est utilisé avec des "
+"vecteurs unitaires, ce qui fait que la première formule est réduite à "
+"seulement ``cosθ``. Cela signifie que nous pouvons utiliser le produit "
+"scalaire pour nous dire quelque chose sur l'angle entre deux vecteurs :"
 
 #: ../../docs/tutorials/math/vector_math.rst:307
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
 msgstr ""
+"Lorsque vous utilisez des vecteurs unitaires, le résultat sera toujours "
+"compris entre ``-1`` (180°) et ``1`` (0°)."
 
 #: ../../docs/tutorials/math/vector_math.rst:311
 msgid "Facing"
-msgstr ""
+msgstr "Orienté vers"
 
 #: ../../docs/tutorials/math/vector_math.rst:313
 msgid ""
@@ -325,6 +433,10 @@ msgid ""
 "zombies ``A`` and ``B``. Assuming a zombie's field of view is **180°**, can "
 "they see the player?"
 msgstr ""
+"Nous pouvons utiliser ce fait pour détecter si un objet est orienté vers un "
+"autre objet. Dans le diagramme ci-dessous, le joueur ``P`` essaie d'éviter "
+"les zombies ``A`` et ``B``. En supposant que le champ de vision d'un zombie "
+"est de **180°**, peuvent-ils voir le joueur ?"
 
 #: ../../docs/tutorials/math/vector_math.rst:319
 msgid ""
@@ -334,14 +446,21 @@ msgid ""
 "player using ``P - A`` and normalize it. If the angle between this vector "
 "and the facing vector is less than 90°, then the zombie can see the player."
 msgstr ""
+"Les flèches vertes ``fA`` et ``fB`` sont des **vecteurs unitaires** "
+"représentant la direction dans laquelle les zombies sont orientés et le demi-"
+"cercle bleu représente leur champ de vision. Pour le zombie ``A``, nous "
+"trouvons le vecteur de direction ``AP`` pointant vers le lecteur en "
+"utilisant ``P - A`` et le normaliser. Si l'angle entre ce vecteur et le "
+"vecteur faisant face est inférieur à 90°, alors le zombie peut voir le "
+"joueur."
 
 #: ../../docs/tutorials/math/vector_math.rst:326
 msgid "In code it would look like this:"
-msgstr ""
+msgstr "En code, cela ressemblerait à ceci :"
 
 #: ../../docs/tutorials/math/vector_math.rst:344
 msgid "Cross product"
-msgstr ""
+msgstr "Produit Vectoriel"
 
 #: ../../docs/tutorials/math/vector_math.rst:346
 msgid ""
@@ -351,20 +470,27 @@ msgid ""
 "two vectors are parallel, the result of their cross product will be a null "
 "vector."
 msgstr ""
+"Comme le produit scalaire, le **produit vectoriel** est une opération sur "
+"deux vecteurs. Cependant, le résultat du produit vectoriel est un vecteur "
+"dont la direction est perpendiculaire aux deux. Son magnitude dépend de leur "
+"angle relatif. Si deux vecteurs sont parallèles, le résultat de leur produit "
+"vectoriel sera un vecteur nul."
 
 #: ../../docs/tutorials/math/vector_math.rst:351
 msgid ""
 "\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
 "\\right \\|\\ |\\sin(a,b)|"
 msgstr ""
+"\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
+"\\right \\|\\ |\\sin(a,b)|"
 
 #: ../../docs/tutorials/math/vector_math.rst:357
 msgid "The cross product is calculated like this:"
-msgstr ""
+msgstr "Le produit vectoriel est calculé de cette façon :"
 
 #: ../../docs/tutorials/math/vector_math.rst:376
 msgid "With Godot, you can use the built-in method:"
-msgstr ""
+msgstr "Avec Godot, vous pouvez utiliser la méthode intégrée :"
 
 #: ../../docs/tutorials/math/vector_math.rst:387
 msgid ""
@@ -372,6 +498,9 @@ msgid ""
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
 "directions."
 msgstr ""
+"Dans le produit vectoriel, l'ordre compte. ``a.cross(b)``ne donne pas le "
+"même résultat que ``b.cross(a)``. Les vecteurs résultants pointent dans des "
+"directions **contraires**."
 
 #: ../../docs/tutorials/math/vector_math.rst:392
 msgid "Calculating normals"
@@ -384,10 +513,15 @@ msgid ""
 "subtraction to find two edges ``AB`` and ``AC``. Using the cross product, "
 "``AB x AC`` produces a vector perpendicular to both: the surface normal."
 msgstr ""
+"Une utilisation courante des produits vectoriels est de trouver la normale "
+"de surface d'un plan ou d'une surface dans l'espace 3D. Si nous avons le "
+"triangle ``ABC``, nous pouvons utiliser la soustraction de vecteur pour "
+"trouver deux bords ``AB`` et ``AC``. En utilisant le produit vectoriel, ``AB "
+"x AC`` produit un vecteur perpendiculaire aux deux : la normale de surface."
 
 #: ../../docs/tutorials/math/vector_math.rst:399
 msgid "Here is a function to calculate a triangle's normal:"
-msgstr ""
+msgstr "Voici une fonction pour calculer la normale d'un triangle :"
 
 #: ../../docs/tutorials/math/vector_math.rst:423
 msgid "Pointing to a target"
@@ -401,6 +535,12 @@ msgid ""
 "calculating the cross product of the current facing direction and the target "
 "direction. The resulting perpendicular vector is the axis of rotation."
 msgstr ""
+"Dans la section sur le produit scalaire ci-dessus, nous avons vu comment il "
+"pouvait être utilisé pour trouver l'angle entre deux vecteurs. Cependant, en "
+"3D, cette information n'est pas suffisante. Il faut aussi savoir autour de "
+"quel axe tourner. On peut le trouver en calculant le produit vectoriel de la "
+"direction actuelle et de la direction cible. Le vecteur perpendiculaire "
+"résultant est l'axe de rotation."
 
 #: ../../docs/tutorials/math/vector_math.rst:433
 msgid "More information"
@@ -411,11 +551,13 @@ msgid ""
 "For more information on using vector math in Godot, see the following "
 "articles:"
 msgstr ""
+"Pour plus d'informations sur l'utilisation des mathématiques vectorielles "
+"dans Godot, voir les articles suivants :"
 
 #: ../../docs/tutorials/math/vector_math.rst:437
 msgid ":ref:`doc_vectors_advanced`"
-msgstr ""
+msgstr ":ref:`doc_vectors_advanced`"
 
 #: ../../docs/tutorials/math/vector_math.rst:438
 msgid ":ref:`doc_matrices_and_transforms`"
-msgstr ""
+msgstr ":ref:`doc_matrices_and_transforms`"

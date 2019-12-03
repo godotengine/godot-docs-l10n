@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr "シングルトン(自動ロード)"
+msgstr "シングルトン(自動読み込み)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:7
 msgid "Introduction"
@@ -31,17 +31,17 @@ msgid ""
 "no method for storing information (e.g. a player's score or inventory) that "
 "is needed by more than one scene."
 msgstr ""
-"Godotのシーンシステムは、強力で柔軟性がある一方、欠点があります:2つ以上のシー"
-"ンに必要とされる文字列情報の為のメソッドが存在しません(例えばプレイヤーのスコ"
-"アもしくはインベントリ)。"
+"Godotのシーンシステムは、強力で柔軟性がある一方、欠点があります: 複数のシーン"
+"に必要とされる文字列情報の為のメソッドが存在しません(例えばプレイヤーのスコア"
+"やインベントリ等)。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:13
 msgid ""
 "It's possible to address this with some workarounds, but they come with "
 "their own limitations:"
 msgstr ""
-"それはいくつかの回避策によって取り組むことが出来ます、しかしそれらは、それら"
-"自身の制限と共ににやって来ます:"
+"それを処理出来るにいくつかの代替方法がありますが、それらの方法はそれら自身の"
+"制限も伴います:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
 msgid ""
@@ -59,6 +59,8 @@ msgid ""
 "that require it, but frequently saving and loading data is cumbersome and "
 "may be slow."
 msgstr ""
+"情報はディスクの ``user://` に保存が可能で、シーンが必要とするならばロード出"
+"来ますが、頻繁にデータをセーブとロードする事は面倒でさらに遅くもなります。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
 msgid ""
@@ -68,32 +70,38 @@ msgid ""
 "same scene or class for multiple singletons, so long as they have different "
 "names."
 msgstr ""
+"`Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_\\ は"
+"シーン同士の絶え間ない情報の供給を必要とする一般的なユースケースを解決するた"
+"めにとても有用なツールです。我々のケースでは異なる名前を付けるならば、同じ"
+"シーンもしくはクラスを複数のシングルトンの為に再利用する事が可能です。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
-msgstr ""
+msgstr "このコンセプトを使うと、オブジェクトを以下のように作る事が出来ます:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
 msgid "Are always loaded, no matter which scene is currently running"
-msgstr ""
+msgstr "シーンが現在実行中でも問題なく、いつでもロードされます"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Can store global variables, such as player information"
-msgstr ""
+msgstr "プレイヤー情報のようなグローバル変数を保管できます"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
 msgid "Can handle switching scenes and between-scene transitions"
-msgstr ""
+msgstr "シーンの切り替えと、シーン遷移同士の切り替えを操作する事ができます"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
 msgid ""
 "Act like a singleton, since GDScript does not support global variables by "
 "design"
 msgstr ""
+"シングルトンのように動作します、デザインによりGDScript からはグローバル変数を"
+"サポートしません"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
-msgstr ""
+msgstr "自動読み込みされたノードとスクリプトは我々にこれらの特徴を与えます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
@@ -106,12 +114,18 @@ msgid ""
 "and the script will be attached to it. This node will be added to the root "
 "viewport before any other scenes are loaded."
 msgstr ""
+":ref:`Node <class_Node>`を継承したシーンもしくはスクリプトは自動読み込みに"
+"よってロードする事が出来ます。ノート:スクリプトを自動読み込みする時、ノードが"
+"作られそれにスクリプトがアタッチされます。このノードは他のシーンがロードされ"
+"る前にルートビューポートに追加されます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:48
 msgid ""
 "To autoload a scene or script, select ``Project -> Project Settings`` from "
 "the menu and switch to the \"AutoLoad\" tab."
 msgstr ""
+"シーンもしくはスクリプトを自動読み込みするには、メニューから``プロジェクト -"
+"> プロジェクト設定`` を選び\"自動読み込み\"タブに切り替えて下さい。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
 msgid ""
@@ -120,18 +134,26 @@ msgid ""
 "order of the entries as they are added to the global scene tree can be "
 "manipulated using the up/down arrow keys."
 msgstr ""
+"ここにシーンとスクリプト追加する事が出来ます。リストへの登録は名前を必要と"
+"し、それはノードの``name`` プロパティとして割り当てられます。登録の順序はグ"
+"ローバルシーンツリーに追加され、それは上下の矢印キーで操作できます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
 msgstr ""
+"これの意味する所は以下のようにすれば\"PlayerVariables\"と名付けられたシングル"
+"トンにアクセス出来るという事です:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
+#, fuzzy
 msgid ""
-"If the \"Enable\" column is checked (default true) then the singleton can "
-"simply be accessed directly:"
+"If the \"Enable\" column is checked (default ``true``) then the singleton "
+"can simply be accessed directly:"
 msgstr ""
+"もし\"有効\"チェックがオンなら(デフォルトでオン)シングルトンは単純に、直接ア"
+"クセス出来ます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -139,6 +161,9 @@ msgid ""
 "any other node in the scene tree. In fact, if you look at the running scene "
 "tree, you'll see the autoloaded nodes appear:"
 msgstr ""
+"自動読み込みオブジェクトはちょうどシーンツリーの中の他のノードの様にアクセス"
+"される事を心に留めて下さい。実際には、もし実行中のシーンツリーを見たら、自動"
+"読み込みされたノードが現れるでしょう:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid "Custom scene switcher"
@@ -152,12 +177,20 @@ msgid ""
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
+"このチュートリアルは自動読み込みを使ったシーンスイッチャーの構築を実演しま"
+"す。基本的なシーンの切り替えをする為に、\\ :ref:`SceneTree.change_scene() "
+"<class_SceneTree_method_change_scene>`\\ メソッドを使う事が出来ます(詳細は"
+"\\ :ref:`doc_scene_tree`\\ を見てください).。しかし、あなたがシーンの変更の"
+"際、より複雑なふるまいを必要としているならば、このメソッドはさらなる機能性を"
+"提供します。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
 msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
+"はじめに、ここ:\\ :download:`autoload.zip <files/autoload.zip>`\\ からテンプ"
+"レートをダウンロードしGodotで開いて下さい。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""
@@ -166,16 +199,22 @@ msgid ""
 "``pressed()`` signal connected. When you run the project, it starts in "
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
+"プロジェクトは2つのシーンを含みます:``Scene1.tscn`` と``Scene2.tscn``。それぞ"
+"れのシーンはラベル表示されたシーンの名前と``pressed()``シグナルを接続されたボ"
+"タンを含みます。プロジェクトを実行した時に、 ``Scene1.tscn``の中で開始されま"
+"す。しかし、押すためのボタンがありません。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid "Global.gd"
-msgstr ""
+msgstr "\\ Global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:112
 msgid ""
 "Switch to the \"Script\" tab and create a new script called Global.gd. Make "
 "sure it inherits from ``Node``:"
 msgstr ""
+"\"Script\" タブに切り替えGlobal.gdという新しいスクリプトを作成して下さい。 "
+"``Node`` が継承される事を確かめて下さい。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
 msgid ""
@@ -184,12 +223,18 @@ msgid ""
 "the script by clicking the browse button or typing its path: ``res://Global."
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
+"次のステップはスクリプトを自動読み込みリストに追加する事です。メニューから ``"
+"プロジェクト> プロジェクト設定``と開き、\"自動読み込み\"タブへ切り替えブラウ"
+"ズボタンをクリックするか次のようにパスを入力します: ``res://Global.gd`` 。追"
+"加をクリックし自動読み込みリストへ追加して下さい:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
 msgstr ""
+"これでスクリプトはプロジェクトのシーンを実行する時は、毎回ロードされる様にな"
+"りました。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
 msgid ""
@@ -198,12 +243,18 @@ msgid ""
 "``global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
+"スクリプトに戻り、 `_ready()` 関数内でカレントシーンを持って来る必要がありま"
+"す。両方のカレントシーン(片方はボタンを含む)と ``global.gd`` はルートの子供で"
+"す。しかし自動読み込みされたノードはいつも1番です。つまりルートの最後の子供は"
+"いつもロードされたシーンになります。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:158
 msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
 msgstr ""
+"今、我々はシーンを遷移させる為の関数を必要としています。この関数はカレント"
+"シーンを開放し、要求されたものに置き換える必要があります。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
 msgid ""
@@ -212,11 +263,15 @@ msgid ""
 "completed. Thus, the current scene will not be removed while it is still "
 "being used (i.e. its code is still running)."
 msgstr ""
+"\\ :ref:`Object.call_deferred() <class_Object_method_call_deferred>`\\ の使用"
+"時は、カレントシーンが完了してから、2つ目の関数のすべてのコードが1回だけ実行"
+"されます。従って、カレントシーンは使用されている間には削除されません (すなわ"
+"ち、カレントシーンのコードはまだ実行中です)。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
-msgstr ""
+msgstr "最後に、2つのシーンの空のコールバック関数を満たさなければなりません。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:252
 msgid "and"
@@ -227,6 +282,8 @@ msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button."
 msgstr ""
+"プロジェクトの実行とテストをするとボタンを押す事によりシーンの間を切り替えら"
+"れます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
 msgid ""
@@ -235,3 +292,7 @@ msgid ""
 "appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`"
 msgstr ""
+"ノート:シーンが小さい時この遷移は瞬時に行われます。しかし、シーンがより複雑な"
+"場合、表示されるのに大量の時間がかかります。これの操作を学ぶには、次のチュー"
+"トリアルを見て下さい:\n"
+"\\ :ref:ref:`doc_background_loading`\\"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -172,45 +172,41 @@ msgstr ""
 "d'exportation Android :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
-#, fuzzy
 msgid "**Release:** Enter the path to the keystore file you just generated."
 msgstr ""
-"Release : Entrez le chemin d'accès au fichier keystore que vous venez de "
+"**Release:** Entrez le chemin d'accès au fichier keystore que vous venez de "
 "générer."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
-#, fuzzy
 msgid "**Release User:** Replace with the key alias."
-msgstr "Release User : Remplacer par l'alias de la clé."
+msgstr "**Release User : ** Remplacer par l'alias de clé."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
-#, fuzzy
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
 "key password currently have to be the same."
 msgstr ""
-"Release Password : Mot de passe de la clé. Notez que le mot de passe du "
+"**Release Password : ** Mot de passe de la clé. Notez que le mot de passe du "
 "keystore et le mot de passe de la clé doivent actuellement être les mêmes."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
-#, fuzzy
 msgid ""
 "**Your export_presets.cfg file now contains sensitive information.** If you "
 "use a version control system, you should remove it from public repositories "
 "and add it to your ``.gitignore`` file or equivalent."
 msgstr ""
-"**Maintenant votre fichier export_presets.cfg contient des informations "
-"sensibles;** si vous utilisez un système de contrôle de version, c'est une "
-"bonne idée de le supprimer des dépôts publics."
+"**Votre fichier export_presets.cfg contient maintenant des informations "
+"sensibles.** Si vous utilisez un système de contrôle de version, vous devez "
+"le supprimer des dépôts publics et l'ajouter à votre fichier ``.gitignore`` "
+"ou équivalent."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
-#, fuzzy
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while choosing "
 "the APK's name."
 msgstr ""
-"N'oubliez pas de désactiver le bouton \"Exporter avec débogage\" lorsque "
-"vous choisissez le nom de l'APK."
+"N'oubliez pas de décocher la case **Exporter avec débogage** lorsque vous "
+"choisissez le nom de l'APK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:93
 msgid "Optimizing the APK size"

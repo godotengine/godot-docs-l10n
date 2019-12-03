@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:4
 msgid "Advanced vector math"
-msgstr ""
+msgstr "Mathématiques vectorielles avancées"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:7
 msgid "Planes"
-msgstr ""
+msgstr "Plans"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:9
 msgid ""
@@ -33,6 +33,11 @@ msgid ""
 "(under the plane), and (contrary to popular belief) you can also use their "
 "math in 2D:"
 msgstr ""
+"Le produit scalaire a une autre propriété intéressante avec les vecteurs "
+"unitaires. Imaginez que perpendiculairement à ce vecteur (et à travers "
+"l'origine) passe un plan. Les plans divisent tout l'espace en positif (au-"
+"dessus du plan) et négatif (sous le plan), et (contrairement à la croyance "
+"populaire) vous pouvez aussi utiliser leurs mathématiques en 2D :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:17
 msgid ""
@@ -43,6 +48,13 @@ msgid ""
 "**normal** *is* a **unit vector**, but it's called *normal* because of its "
 "usage. (Just like we call (0,0) the Origin!)."
 msgstr ""
+"Les vecteurs unitaires sont perpendiculaires à une surface (ils décrivent "
+"donc l'orientation de la surface) sont appelés **vecteurs unitaires "
+"normales**. Bien que, d'habitude, ils sont simplement abrégés comme "
+"*normales*. Les normales apparaissent dans les plans, la géométrie 3D (pour "
+"déterminer où chaque face ou sommet fait face), etc. Une **normale** *est* "
+"un **vecteur unitaire**, mais il est appelé *normale* à cause de son "
+"utilisation. (Tout comme nous appelons (0,0) l'Origine !)."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:24
 msgid ""
@@ -53,10 +65,17 @@ msgid ""
 "is an infinite surface (imagine an infinite, flat sheet of paper that you "
 "can orient and is pinned to the origin) instead of a line."
 msgstr ""
+"C'est aussi simple que ça en a l'air. Le plan passe par l'origine et sa "
+"surface est perpendiculaire au vecteur unitaire (ou *normale*). Le côté vers "
+"le vecteur pointe vers est le demi-espace positif, tandis que l'autre côté "
+"est le demi-espace négatif. En 3D, c'est exactement la même chose, sauf que "
+"le plan est une surface infinie (imaginez une feuille de papier plate et "
+"infinie que vous pouvez orienter et que vous pouvez fixer à l'origine) au "
+"lieu d'une ligne."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:33
 msgid "Distance to plane"
-msgstr ""
+msgstr "Distance par rapport au plan"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:35
 msgid ""
@@ -65,20 +84,26 @@ msgid ""
 "time we do dot product between vector and position), returns the **distance "
 "from the point to the plane**:"
 msgstr ""
+"Maintenant que ce qu'est un plan est clair, revenons au produit scalaire. Le "
+"produit scalaire entre un **vecteur unitaire** et n'importe quel **point "
+"dans l'espace** (oui, cette fois nous faisons le produit scalaire entre "
+"vecteur et position), renvoie la **distance du point au plan** :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:49
 msgid ""
 "But not just the absolute distance, if the point is in the negative half "
 "space the distance will be negative, too:"
 msgstr ""
+"Mais pas seulement la distance absolue, si le point se trouve dans le demi-"
+"espace négatif, la distance sera également négative :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:54
 msgid "This allows us to tell which side of the plane a point is."
-msgstr ""
+msgstr "Cela nous permet de savoir de quel côté du plan est un point."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:57
 msgid "Away from the origin"
-msgstr ""
+msgstr "Loin de l'origine"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:59
 msgid ""
@@ -86,6 +111,10 @@ msgid ""
 "everywhere in space, not only passing through the origin. You want real "
 "*plane* action and you want it *now*."
 msgstr ""
+"Je sais ce que vous pensez ! Jusqu'à présent, c'est bien beau, mais les "
+"*vrais* plans sont partout dans l'espace, ne passant pas seulement par "
+"l'origine. Vous voulez de l'action *plan* réelle et vous la voulez "
+"*maintenant*."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:63
 msgid ""
@@ -93,6 +122,10 @@ msgid ""
 "*polarity*. This means that it is possible to have perfectly overlapping "
 "planes, but their negative and positive half-spaces are swapped."
 msgstr ""
+"Rappelez-vous que les plans non seulement divisent l'espace en deux, mais "
+"qu'ils ont aussi une *polarité*. Cela signifie qu'il est possible d'avoir "
+"des plans qui se chevauchent parfaitement, mais que leurs demi-espaces "
+"négatifs et positifs sont inversés."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:67
 msgid ""
@@ -100,12 +133,17 @@ msgid ""
 "**distance from the origin** scalar *D*. Thus, our plane is represented by N "
 "and D. For example:"
 msgstr ""
+"Dans cette optique, décrivons un plan complet comme une **normale** *N* et "
+"une **distance de l'origine** scalaire *D*. Ainsi, notre plan est représenté "
+"par N et D. Par exemple :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:73
 msgid ""
 "For 3D math, Godot provides a :ref:`Plane <class_Plane>` built-in type that "
 "handles this."
 msgstr ""
+"Pour les mathématiques 3D, Godot fournit un type intégré :ref:`Plane "
+"<class_Plane>` qui gère cela."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:76
 msgid ""
@@ -115,6 +153,12 @@ msgid ""
 "plane, travelling in N direction. As an example, imagine you want to reach a "
 "point in the plane, you will just do:"
 msgstr ""
+"Fondamentalement, N et D peuvent représenter n'importe quel plan dans "
+"l'espace, que ce soit pour de la 2D ou de la 3D (selon le nombre de "
+"dimensions de N) et les mathématiques sont les mêmes pour les deux. C'est le "
+"même chose qu'avant, mais D est la distance entre l'origine et le plan, se "
+"déplaçant dans la direction N. Par exemple, imaginez que vous voulez "
+"atteindre un point dans le plan, vous n'aurez qu'à faire :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:91
 msgid ""
@@ -123,14 +167,19 @@ msgid ""
 "seems. If we want to tell, again, the distance from the point to the plane, "
 "we do the same but adjusting for distance:"
 msgstr ""
+"Ceci étirera (redimensionnera) le vecteur normale et le fera toucher le "
+"plan. Ce calcul peut sembler confus, mais c'est en fait beaucoup plus simple "
+"qu'il n'y paraît. Si nous voulons dire, encore une fois, la distance entre "
+"le point et le plan, nous faisons la même chose, mais en ajustant la "
+"distance :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:105
 msgid "The same thing, using a built-in function:"
-msgstr ""
+msgstr "La même chose, en utilisant une fonction intégrée :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:116
 msgid "This will, again, return either a positive or negative distance."
-msgstr ""
+msgstr "Encore une fois, cela donnera une distance positive ou négative."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:118
 msgid ""
@@ -138,16 +187,21 @@ msgid ""
 "This will result in a plane in the same position, but with inverted negative "
 "and positive half spaces:"
 msgstr ""
+"L'inversion de la polarité du plan peut se faire en rendant négatif N et D. "
+"Il en résultera un plan dans la même position, mais avec des demi-espaces "
+"négatifs et positifs inversés :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:133
 msgid ""
 "Of course, Godot also implements this operator in :ref:`Plane "
 "<class_Plane>`, so doing:"
 msgstr ""
+"Bien sûr, Godot implémente aussi cet opérateur dans :ref:`Plane "
+"<class_Plane>`, donc :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:145
 msgid "Will work as expected."
-msgstr ""
+msgstr "Fonctionnera comme prévu."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:147
 msgid ""
@@ -155,10 +209,14 @@ msgid ""
 "the distance to it. So, why is it useful to calculate the distance from a "
 "point to a plane? It's extremely useful! Let's see some simple examples.."
 msgstr ""
+"N'oubliez pas qu'un plan n'est que cela et que sa principale utilisation "
+"pratique est de calculer la distance par rapport à lui. Alors, pourquoi est-"
+"il utile de calculer la distance d'un point à un plan ? C'est extrêmement "
+"utile ! Voyons quelques exemples simples..."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:153
 msgid "Constructing a plane in 2D"
-msgstr ""
+msgstr "Construire un plan en 2D"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:155
 msgid ""
@@ -166,6 +224,10 @@ msgid ""
 "Constructing them in 2D is easy, this can be done from either a normal (unit "
 "vector) and a point, or from two points in space."
 msgstr ""
+"Il est clair que les plans ne sortent pas de nulle part, ils doivent donc "
+"être construits. Il est facile de les construire en 2D, soit à partir d'un "
+"vecteur normal (vecteur unitaire) et d'un point, soit à partir de deux "
+"points dans l'espace."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:159
 msgid ""
@@ -173,6 +235,9 @@ msgid ""
 "is already computed, so just calculate D from the dot product of the normal "
 "and the point."
 msgstr ""
+"Dans le cas d'une normale et d'un point, la plus grande partie du travail "
+"est effectuée, car la normale est déjà calculée, alors calculez simplement D "
+"à partir du produit scalaire de la normale et du point."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:174
 msgid ""
@@ -182,22 +247,31 @@ msgid ""
 "must be obtained first, and then it needs to be rotated 90° degrees to "
 "either side:"
 msgstr ""
+"Pour deux points dans l'espace, il y a en fait deux plans qui les "
+"traversent, partageant le même espace mais avec la normale pointant vers les "
+"directions opposées. Pour calculer la normale à partir des deux points, il "
+"faut d'abord obtenir le vecteur de direction, puis le faire pivoter de 90° "
+"de chaque côté :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:201
 msgid ""
 "The rest is the same as the previous example, either point_a or point_b will "
 "work since they are in the same plane:"
 msgstr ""
+"Le reste est la même chose que dans l'exemple précédent, le point_a ou le "
+"point_b fonctionnera puisqu'ils sont dans le même plan :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:219
 msgid ""
 "Doing the same in 3D is a little more complex and will be explained further "
 "down."
 msgstr ""
+"Faire la même chose en 3D est un peu plus complexe et sera expliqué plus "
+"loin."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:223
 msgid "Some examples of planes"
-msgstr ""
+msgstr "quelques exemples de plan"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:225
 msgid ""
@@ -206,6 +280,10 @@ msgid ""
 "example, a rectangle, a trapezoid, a triangle, or just any polygon where no "
 "faces bend inwards."
 msgstr ""
+"Voici un exemple simple de ce à quoi servent les plans. Imaginez que vous "
+"avez un polygone `convexe <https://www.mathsisfun.com/definitions/convex."
+"html>`__. Par exemple, un rectangle, un trapèze, un triangle ou n'importe "
+"quel polygone où aucune face ne se plie vers l'intérieur."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:230
 msgid ""
@@ -213,6 +291,10 @@ msgid ""
 "segment. Once we have the list of planes, we can do neat things, for example "
 "checking if a point is inside the polygon."
 msgstr ""
+"Pour chaque segment du polygone, nous calculons le plan qui passe par ce "
+"segment. Une fois que nous avons la liste des plans, nous pouvons faire des "
+"choses intéressantes, par exemple vérifier si un point est à l'intérieur du "
+"polygone."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:234
 msgid ""
@@ -220,11 +302,14 @@ msgid ""
 "point is positive, then the point is outside the polygon. If we can't, then "
 "the point is inside."
 msgstr ""
+"Nous passons par tous les plans, si nous pouvons trouver un plan où la "
+"distance au point est positive, alors le point est à l'extérieur du "
+"polygone. Si on ne peut pas, alors le point est à l'intérieur."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:240
 #: ../../docs/tutorials/math/vectors_advanced.rst:279
 msgid "Code should be something like this:"
-msgstr ""
+msgstr "Le code devrait ressembler à ceci :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:265
 msgid ""
@@ -233,6 +318,11 @@ msgid ""
 "This is called the Separating Axis Theorem (or SAT) and most physics engines "
 "use this to detect collision."
 msgstr ""
+"Plutôt cool, hein ? Mais encore mieux ! Avec un peu plus d'effort, une "
+"logique similaire nous permettra de savoir quand deux polygones convexes se "
+"chevauchent aussi. C'est ce qu'on appelle le théorème de l'axe de séparation "
+"(ou SAT) et la plupart des moteurs physiques l'utilisent pour détecter les "
+"collisions."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:270
 msgid ""
@@ -242,6 +332,12 @@ msgid ""
 "it. This check is performed with the planes of A against the points of B, "
 "and then with the planes of B against the points of A:"
 msgstr ""
+"Avec un point, il suffit de vérifier si un plan retourne une distance "
+"positive pour savoir si le point est à l'extérieur. Avec un autre polygone, "
+"nous devons trouver un plan où *tous* *les* *points* de l'*autre* *polygone* "
+"lui renvoient une distance positive. Ce contrôle s'effectue avec les plans "
+"de A contre les points de B, puis avec les plans de B contre les points de "
+"A :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:370
 msgid ""
@@ -250,10 +346,15 @@ msgid ""
 "usually just handled by splitting the concave polygon into smaller convex "
 "polygons, or using a technique such as BSP (which is not used much nowadays)."
 msgstr ""
+"Comme vous pouvez le constater, les plans sont très utiles, et ce n'est que "
+"la partie émergée de l'iceberg. Vous vous demandez peut-être ce qui se passe "
+"avec les polygones non convexes. Pour ce faire, il suffit généralement de "
+"diviser le polygone concave en polygones convexes plus petits ou d'utiliser "
+"une technique telle que le BSP (qui n'est pas très utilisé de nos jours)."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:377
 msgid "Collision detection in 3D"
-msgstr ""
+msgstr "Détection des collisions en 3D"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:379
 msgid ""
@@ -263,6 +364,11 @@ msgid ""
 "pretty well) but it's used by almost all physics engines and collision "
 "detection libraries :)"
 msgstr ""
+"C'est un autre bonus, une récompense pour avoir été patient et avoir suivi "
+"ce long tutoriel. Voici un autre morceau de sagesse. Ce n'est peut-être pas "
+"quelque chose avec un cas d'utilisation directe (Godot fait déjà assez bien "
+"la détection de collision) mais il est utilisé par presque tous les moteurs "
+"physiques et bibliothèques de détection de collision :)"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:385
 msgid ""
@@ -270,6 +376,10 @@ msgid ""
 "useful for collision detection? You could detect if a point was inside any "
 "convex shape, or if two 2D convex shapes were overlapping."
 msgstr ""
+"Rappelez-vous que la conversion d'une forme convexe en 2D en un tableau de "
+"plans 2D a été utile pour la détection des collisions ? Vous pouviez "
+"détecter si un point se trouvait à l'intérieur d'une forme convexe, ou si "
+"deux formes convexes 2D se chevauchaient."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:389
 msgid ""
@@ -277,6 +387,10 @@ msgid ""
 "won't be able to find a separating plane. If a separating plane is found, "
 "then the shapes are definitely not colliding."
 msgstr ""
+"Eh bien, cela fonctionne aussi en 3D, si deux formes polyédriques 3D entrent "
+"en collision, vous ne pourrez pas trouver de plan de séparation. Si un plan "
+"de séparation est trouvé, les formes n'entrent définitivement pas en "
+"collision."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:393
 msgid ""
@@ -285,6 +399,10 @@ msgid ""
 "side. This plane is always one of the face-planes of either polygon A or "
 "polygon B."
 msgstr ""
+"Rappelons-nous un peu, un plan de séparation signifie que tous les sommets "
+"du polygone A sont d'un côté du plan, et tous les sommets du polygone B sont "
+"de l'autre côté. Ce plan est toujours l'un des plans de face du polygone A "
+"ou du polygone B."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:398
 msgid ""
@@ -292,6 +410,9 @@ msgid ""
 "that, in some cases a separating plane can't be found. This is an example of "
 "such situation:"
 msgstr ""
+"En 3D cependant, il y a un problème avec cette approche, car il est possible "
+"que, dans certains cas, un plan de séparation ne puisse être trouvé. Ceci "
+"est un exemple d'une telle situation :"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:404
 msgid ""
@@ -299,7 +420,10 @@ msgid ""
 "are the cross product between the edges of polygon A and the edges of "
 "polygon B"
 msgstr ""
+"Pour éviter cela, certains plans supplémentaires doivent être testés comme "
+"séparateurs, ces plans sont le produit vectoriel entre les bords du polygone "
+"A et les bords du polygone B"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:410
 msgid "So the final algorithm is something like:"
-msgstr ""
+msgstr "L'algorithme final est quelque chose comme cela :"

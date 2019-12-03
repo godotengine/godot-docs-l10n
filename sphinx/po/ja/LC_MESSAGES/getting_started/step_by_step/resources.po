@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,10 @@ msgid ""
 "features rely on it. There is another datatype that is just as important: :"
 "ref:`Resource <class_Resource>`."
 msgstr ""
+"ここまでのチュートリアルではGodotの、エンジンのほとんどの機能が頼りにしてい"
+"る、:ref:`Node <class_Node>`\\ (ノード)クラスについて主に紹介してきました。も"
+"うひとつ、同じくらい重要なデータ型は:ref:`Resource <class_Resource>`\\ (リ"
+"ソース)です。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
 msgid ""
@@ -40,6 +44,10 @@ msgid ""
 "containers**. They don't do anything on their own: instead, nodes use the "
 "data contained in resources."
 msgstr ""
+"*Node* は、機能を提供します。例えばスプライトや3Dモデルの表示、物理演算、ユー"
+"ザーインターフェースの配置などです。一方、**Resource**は**データの格納**に使"
+"います。それ自身はなにもしませんが、代わりにノードが、データの入ったリソース"
+"を使用します。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 msgid ""
@@ -50,6 +58,12 @@ msgid ""
 "<class_AudioStream>`, :ref:`Font <class_Font>`, :ref:`Translation "
 "<class_Translation>`."
 msgstr ""
+"Godotが保存したり、ディスクから読み込んだりするものは、すべてリソースです。こ"
+"れは、シーン(.tscnや.scnファイル)や、画像、スクリプトなどが該当します。リソー"
+"スの例は、:ref:`Texture <class_Texture>`\\ 、:ref:`Script <class_Script>`"
+"\\ 、:ref:`Mesh <class_Mesh>`\\ 、:ref:`Animation <class_Animation>`\\ 、:"
+"ref:`AudioStream <class_AudioStream>`\\ 、:ref:`Font <class_Font>`\\ 、:ref:"
+"`Translation <class_Translation>`\\ などです。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
 msgid ""
@@ -58,6 +72,9 @@ msgid ""
 "again will return the same copy every time. As resources only contain data, "
 "there is no need to duplicate them."
 msgstr ""
+"エンジンがリソースをディスクから読み込む際に、**読み込むのは一度きり**です。"
+"もしメモリ上にすでにリソースのコピーがあれば、読み込む代わりに毎回そのコピー"
+"を返します。リソースはデータのみを含むので、重複させても意味はないのです。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
 msgid ""
@@ -66,6 +83,10 @@ msgid ""
 "these types can become a resource. This means that both nodes and resources "
 "can contain resources as properties:"
 msgstr ""
+"ノードとリソースにかかわらず、すべてのオブジェクトは、自身のプロパティをエク"
+"スポートできます。プロパティには、String、整数(int)、Vector2など、さまざまな"
+"種類がありますが、これらすべての型はリソースになることができます。つまり、"
+"ノードとリソースはいずれも、他のリソースをプロパティとして持てるのです。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:39
 msgid "External vs built-in"
@@ -73,17 +94,17 @@ msgstr "外部と組み込みの比較"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:41
 msgid "There are two ways to save resources. They can be:"
-msgstr ""
+msgstr "リソースを保存する方法はふたつあります。それは："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
 msgid "**External** to a scene, saved on the disk as individual files."
-msgstr ""
+msgstr "シーンの**外部**。個別のファイルとしてディスクに保存。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
 msgid ""
 "**Built-in**, saved inside the \\*.tscn or the \\*.scn file they're attached "
 "to."
-msgstr ""
+msgstr "**内蔵**。使用する\\*.tscnあるいは\\*.scnファイルの中に保存。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
 msgid ""
@@ -98,6 +119,8 @@ msgid ""
 "Clicking the resource preview allows us to view and edit the resource's "
 "properties."
 msgstr ""
+"リソースのプレビューをクリックすると、リソースのプロパティを表示して編集でき"
+"るようになります。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
 msgid ""
@@ -106,6 +129,10 @@ msgid ""
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes a built-in resource."
 msgstr ""
+"Pathプロパティはリソースの元々の場所を表しています。この例の場合は、元は"
+"``robi.png``と名付けられたPNG画像です。このように、元がファイルであれば、外部"
+"リソースになります。Pathを消去するか、あるいはこの場所にない場合は、内部リ"
+"ソースになります。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
 msgid ""
@@ -113,12 +140,17 @@ msgid ""
 "scene. In the example above, if you erase the path \\`\"res://robi.png\"\\` "
 "and save, Godot will save the image inside the .tscn scene file."
 msgstr ""
+"リソースの内部と外部の切り替えは、シーンを保存するときに行われます。上記の例"
+"の場合、もしパス\\`\"res://robi.png\"\\`を消去してから保存すると、Godotは画像"
+"を .tscn シーンファイルの内部に保存します。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
 msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
+"もし内部リソースを保存した場合でも、複数のシーンをインスタンス化したときは、"
+"エンジンがそのコピーを読み込むのは一度だけです。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
 msgid "Loading resources from code"
@@ -129,6 +161,8 @@ msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
 msgstr ""
+"コードにてリソースを読み込む方法は、ふたつあります。ひとつ目は ``load()`` 関"
+"数で、いつでも使えます："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
 msgid ""
@@ -136,6 +170,9 @@ msgid ""
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
+"もうひとつは ``preload()`` です。この関数は``load()``とは違い、コンパイル時に"
+"ファイルをディスクから読み込んでロードします。そのため、パスが変数の場合は"
+"preloadは呼べません。パスは定数の文字列である必要があります。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
@@ -147,12 +184,17 @@ msgid ""
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
 "packed inside a resource."
 msgstr ""
+"シーンもまたリソースですが、しかし注意点があります。シーンは、 :ref:"
+"`PackedScene <class_PackedScene>`\\ 型のリソースとしてディスクに保存されま"
+"す。リソースの内部にシーンが入れ込まれるのです。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instance() <class_PackedScene_method_instance>` method."
 msgstr ""
+"シーンのインスタンスを得るには、 :ref:`PackedScene.instance() "
+"class_PackedScene_method_instance>`\\ メソッドを使う必要があります。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
 msgid ""
@@ -160,6 +202,8 @@ msgid ""
 "returns the root node of the scene. You can then add it as a child of any "
 "other node."
 msgstr ""
+"このメソッドは、シーンの階層どおりにノードを作成し、それらを設定してから、そ"
+"のシーンのルートノードを返します。これは他のノードの子にすることができます。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
 msgid ""
@@ -169,6 +213,11 @@ msgid ""
 "each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
 msgstr ""
+"この方法には、いくつかの利点があります。 :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`\\ メソッドは高速なので、新しい敵、弾丸、"
+"エフェクトなどを、ディスクから再び読み出すことなく作成できます。覚えていただ"
+"きたいのは、ほとんどの場合、画像やメッシュなどは全て、シーンのインスタンス間"
+"で共有されます。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
 msgid "Freeing resources"
@@ -181,6 +230,10 @@ msgid ""
 "node, the engine frees all the resources it owns as well if no other node "
 "uses them."
 msgstr ""
+"``リソース(Resource)``が使われなくなったときは、自動的に解放されます。ほとん"
+"どの場合、リソースはノードに格納されているので、ノードを解放した際には、それ"
+"が持つリソースも同様に、他のノードに使用されていない限り、すべてエンジンに"
+"よって解放されます。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:151
 msgid "Creating your own resources"

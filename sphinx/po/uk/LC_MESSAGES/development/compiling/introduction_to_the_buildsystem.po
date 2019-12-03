@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,103 +182,103 @@ msgid ""
 "build targets, and which will be explained below."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:126
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:128
 msgid "Tools"
 msgstr "Інструменти"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:128
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
 msgid ""
 "Tools are enabled by default in all PC targets (Linux, Windows, macOS), "
 "disabled for everything else. Disabling tools produces a binary that can run "
 "projects but that does not include the editor or the project manager."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:138
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:142
 msgid "Target"
 msgstr "Призначення"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:140
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:142
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
 msgid ""
 "**release_debug**: Build without C++ debugging symbols and optimization, but "
 "keep the runtime checks (performs checks and reports errors). Official "
 "editor binaries use this configuration."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:147
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:151
 msgid ""
 "**release**: Build without symbols, with optimization and with little to no "
 "runtime checks. This target can't be used together with ``tools=yes``, as "
 "the editor requires some debug functionality and run-time checks to run."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:156
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:160
 msgid ""
 "This flag appends the ``.debug`` suffix (for debug), or ``.tools`` (for "
 "debug with tools enabled). When optimization is enabled (release), it "
 "appends the ``.opt`` suffix."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:161
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:165
 msgid "Bits"
 msgstr "Біти"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:163
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:171
 msgid "**32**: Build binaries for 32-bit platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:168
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:172
 msgid "**64**: Build binaries for 64-bit platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
 msgid "**default**: Build for the architecture that matches the host platform."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:179
 msgid ""
 "This flag appends ``.32`` or ``.64`` suffixes to resulting binaries when "
 "relevant. If ``bits=default`` is used, the suffix will match the detected "
 "architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:180
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:184
 msgid "Other build options"
 msgstr "Інші параметри збирання"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:182
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:186
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Godot should be built (compiler, debug options, etc.) as well as the "
 "features to include/disable."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:186
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:194
 msgid "Export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:192
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:196
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -286,20 +286,20 @@ msgid ""
 "modules, or simply don't trust your own shadow)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:197
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most files are optimized binaries or packages for each platform:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:220
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:224
 msgid ""
 "To create those yourself, follow the instructions detailed for each platform "
 "in this same tutorial section. Each platform explains how to create its own "
 "template."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:224
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
 msgid ""
 "The ``version.txt`` file should contain the corresponding Godot version "
 "identifier. This file is used to install export templates in a version-"
@@ -311,7 +311,7 @@ msgid ""
 "com/godotengine/godot/blob/master/version.py>`__."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:232
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:236
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross-compilation, since you can cross-compile "

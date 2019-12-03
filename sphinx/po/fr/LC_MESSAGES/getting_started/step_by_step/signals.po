@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,16 +71,15 @@ msgid "Timer example"
 msgstr "Exemple de minuterie"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
 "Pour voir comment fonctionnent les signaux, essayons d'utiliser un nœud :ref:"
-"`Timer <class_Timer>`. Créez une nouvelle scène avec un nœud et deux "
+"`Timer <class_Timer>`. Créez une nouvelle scène avec un nœud Node2D et deux "
 "enfants : un Timer et un :ref:`Sprite <class_Sprite>`. Dans le dock scène, "
-"renommez Node en TimerExample."
+"renommez Node2D en TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -122,7 +121,6 @@ msgstr ""
 "atteint ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
-#, fuzzy
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
 "the signals panel. You'll see the following window, where you can define how "
@@ -133,7 +131,6 @@ msgstr ""
 "voulez connecter le signal :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:55
-#, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is "
@@ -142,8 +139,8 @@ msgid ""
 msgstr ""
 "Sur le côté gauche, vous verrez les nœuds de votre scène et pourrez "
 "sélectionner le nœud que vous souhaitez \"écouter\" pour le signal. Notez "
-"que le nœud Timer est rouge - ce n'est *pas* une erreur, mais une indication "
-"visuelle que c'est le nœud qui émet le signal. Sélectionnez le nœud racine."
+"que le nœud Timer est bleu, c'est une indication visuelle que c'est le nœud "
+"qui émet le signal. Sélectionnez le nœud racine."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:60
 msgid ""
@@ -154,18 +151,17 @@ msgstr ""
 "d'erreur."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"Au bas de la fenêtre se trouve un champ intitulé \"Méthode en Noeud\". Il "
-"s'agit du nom de la fonction que vous souhaitez utiliser dans le script du "
-"nœud cible. Par défaut, Godot créera cette fonction en utilisant la "
-"convention de dénomination ``_on_<nom_nœud>_<nom_signal>`` mais vous pouvez "
-"la modifier si vous le souhaitez."
+"Au bas de la fenêtre se trouve un champ intitulé \"Méthode receveur\". Il "
+"s'agit du nom de la fonction dans le script du nœud cible que vous souhaitez "
+"utiliser. Par défaut, Godot créera cette fonction en utilisant la convention "
+"de dénomination ``_on_<nom_nœud>_<nom_signal>`` mais vous pouvez la modifier "
+"si vous le souhaitez."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:68
 msgid ""

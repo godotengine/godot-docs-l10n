@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr "프로젝트 조직"
 msgid "Introduction"
 msgstr "소개"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:8
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:9
 msgid ""
 "Since Godot has no restrictions on project structure or filesystem usage, "
 "organizing files when learning the engine can seem challenging. This "
@@ -37,11 +37,11 @@ msgstr ""
 "얼에서는 좋은 출발점이 될만한 워크플로를 제안합니다. 그리고 Godot로 버전 제어"
 "를 사용하는 것도 다룰 것입니다."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:14
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:15
 msgid "Organization"
 msgstr "구성"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:17
 msgid ""
 "Godot is scene-based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
@@ -49,7 +49,7 @@ msgstr ""
 "Godot는 본질적으로 씬 기반이고, 파일 시스템을 메타데이터나 애셋 데이터베이스"
 "가 아닌, 있는 그대로 사용합니다."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:19
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
 msgid ""
 "Unlike other engines, many resources are contained within the scene itself, "
 "so the amount of files in the filesystem is considerably lower."
@@ -57,7 +57,7 @@ msgstr ""
 "다른 엔진과 달리, 많은 리소스가 씬 자체에 내장되어 있기에, 파일 시스템에 있"
 "는 파일의 양은 상당히 적습니다."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:23
 msgid ""
 "Considering that, the most common approach is to group assets as close to "
 "scenes as possible; when a project grows, it makes it more maintainable."
@@ -65,7 +65,7 @@ msgstr ""
 "그것을 고려해보면, 가장 일반적인 접근법은 애셋들을 씬과 가능한 밀접하게 묶어"
 "내는 것입니다; 프로젝트가 커지다 보면, 프로젝트를 더 유지할 수 있게 만듭니다."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:26
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:27
 msgid ""
 "As an example, one can usually place into a single folder their basic "
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
@@ -75,11 +75,11 @@ msgstr ""
 "델 메시, 머티리얼, 그리고 음악 등이죠. 그런 다음 별도의 폴더를 사용하여 만든 "
 "레벨을 저장할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:47
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
 msgid "Importing"
 msgstr "가져오기"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:49
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
 msgid ""
 "Godot versions prior to 3.0 did the import process from files outside the "
 "project. While this can be useful in large projects, it resulted in an "
@@ -89,16 +89,39 @@ msgstr ""
 "다. 이것이 큰 규모의 프로젝트에는 유용하지만, 대부분의 개발자들에게는 조직의 "
 "번거로움을 초래했습니다."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:53
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:54
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
 msgstr "이 때문에, 애셋은 이제 프로젝트 폴더 내에서 투명하게 가져옵니다."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:56
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
+#, fuzzy
+msgid "Ignoring specific folders"
+msgstr "특정 객체를 비활성화하기"
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:60
 msgid ""
-"If a folder shouldn't be imported into Godot, an exception can be made with "
-"a .gdignore file."
+"To prevent Godot from importing files contained in a specific folder, create "
+"an empty file called ``.gdignore`` in the folder (the leading ``.`` is "
+"required). This can be useful to speed up the initial project importing."
 msgstr ""
-"Godot로 폴더를 가져오지 않는다면, .gdignore 파일과 함께 예외가 만들어질 수 있"
-"습니다."
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:66
+msgid ""
+"To create a file whose name starts with a dot on Windows, you can use a text "
+"editor such as Notepad++ or use the following command in a command prompt: "
+"``type nul > .gdignore``"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:70
+msgid ""
+"Once the folder is ignored, resources in that folder can't be loaded anymore "
+"using the ``load()`` and ``preload()`` methods."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:73
+msgid ""
+"Ignoring a folder will also automatically hide it from the FileSystem dock, "
+"which can be useful to reduce clutter."
+msgstr ""

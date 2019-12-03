@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -461,38 +461,18 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:204
 msgid ""
-"In the bottom-left are the key things you need to create a connection: a "
-"node which implements the method you want to trigger (represented here as a "
-"NodePath) and the name of the method to trigger."
+"The top of the dialogue displays a list of your scene's nodes with the "
+"emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
-"왼쪽 아래는 연결을 만들기 위한 핵심 사항이 있습니다: (노드 경로(NodePath)로 "
-"표현된) 조절하고 싶은 메서드가 있는 노드와 그 메서드의 이름입니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:208
+#: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
-"The top-left section displays a list of your scene's nodes with the emitting "
-"node's name highlighted in red. Select the \"Panel\" node here. When you "
-"select a node, the NodePath at the bottom will automatically update to point "
-"to a relative path from the emitting node to the selected node."
+"The bottom of the dialogue shows the name of the method that will be "
+"created. By default, the method name will contain the emitting node's name "
+"(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
-"왼쪽 위 구역은 씬 노드 목록을 보여주며 방출하는 노드의 이름은 빨갛게 강조됩니"
-"다. \"Panel\" 노드를 선택하세요. 노드를 선택하면 아래의 노드 경로(NodePath)"
-"가 자동으로 업데이트됩니다. 방출하는 노드부터 선택한 노드까지 상대적인 경로"
-"를 가리킵니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:213
-msgid ""
-"By default, the method name will contain the emitting node's name (\"Button"
-"\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``. If you "
-"do have the \"Make Function\" check button checked, then the editor will "
-"generate the function for you before setting up the connection."
-msgstr ""
-"기본적으로 메서드의 이름은 방출하는 노드의 이름을 포함합니다. "
-"``_on_[EmitterNode]_[signal_name]``\\ 으로 표시됩니다 (이 경우에 "
-"[EmitterNode]는 \"Button\"이죠). 만일 \"함수 만들기(Make Function)\" 버튼이 "
-"체크되어 있다면, 편집기는 연결을 설정하기 전에 함수를 만듭니다."
-
-#: ../../docs/getting_started/step_by_step/scripting.rst:218
+#: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
@@ -501,7 +481,7 @@ msgstr ""
 "그럼 이것으로 시각적 인터페이스를 사용하는 법에 관한 강좌를 마칩니다. 하지만 "
 "이것은 스크립팅 튜토리얼입니다. 학습을 위해 수작업 과정을 알아봅시다!"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:222
+#: ../../docs/getting_started/step_by_step/scripting.rst:215
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
@@ -513,7 +493,7 @@ msgstr ""
 "함수는 스크립트가 있는 노드 기준 상대적인 경로를 사용해서 씬에 있는 노드를 가"
 "져옵니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:227
+#: ../../docs/getting_started/step_by_step/scripting.rst:220
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
@@ -521,7 +501,7 @@ msgstr ""
 "편의상 ``extend Panel`` 아래에 있는 모든 것을 지우세요. 나머지는 수동으로 채"
 "울 것입니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:230
+#: ../../docs/getting_started/step_by_step/scripting.rst:223
 msgid ""
 "Because the Button and Label are siblings under the Panel where the script "
 "is attached, you can fetch the Button by typing the following underneath the "
@@ -530,11 +510,11 @@ msgstr ""
 "스크립트를 붙일 때 Button과 Label은 Panel 아래에 나란히 있습니다. 따라서 "
 "``_ready()`` 함수 아래에 다음과 같이 입력해서 Button을 가져올 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:247
+#: ../../docs/getting_started/step_by_step/scripting.rst:240
 msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "다음으로 버튼이 눌릴 때 호출하는 함수를 작성합니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:262
+#: ../../docs/getting_started/step_by_step/scripting.rst:255
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
@@ -542,20 +522,20 @@ msgstr ""
 "마지막으로 버튼의 \"pressed\" 시그널을 ``_ready()``\\ 에 연결하도록 :ref:"
 "`Object.connect() <class_Object_method_connect>`\\ 를 사용합니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:278
+#: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"
 msgstr "최종 스크립트는 다음과 같아야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:311
+#: ../../docs/getting_started/step_by_step/scripting.rst:304
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr "씬을 실행하고 버튼을 누르면 다음과 같은 결과를 얻을 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:315
+#: ../../docs/getting_started/step_by_step/scripting.rst:308
 msgid "Why, hello there! Congratulations on scripting your first scene."
 msgstr "어머, 안녕하세요! 첫번째 씬 스크립팅을 축하해요."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:319
+#: ../../docs/getting_started/step_by_step/scripting.rst:312
 msgid ""
 "A common misunderstanding regarding this tutorial is how ``get_node(path)`` "
 "works. For a given node, ``get_node(path)`` searches its immediate children. "
@@ -567,11 +547,11 @@ msgstr ""
 "위 코드에서 Button은 Panel의 자식이라는 것이죠. 만일 버튼이 Panel이 아니라 "
 "Label의 자식이었다면, 나오는 코드는 다음과 같을 것입니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:337
+#: ../../docs/getting_started/step_by_step/scripting.rst:330
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "또한 노드는 이름으로 참조됩니다. 유형이 아닙니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:341
+#: ../../docs/getting_started/step_by_step/scripting.rst:334
 msgid ""
 "The right-hand panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
@@ -580,7 +560,7 @@ msgstr ""
 "연결 대화 상자의 오른쪽 패널은 특정 값을 연결된 함수의 매개변수에 묶기 위한 "
 "것입니다. 다른 유형의 값을 추가하거나 제거할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:345
+#: ../../docs/getting_started/step_by_step/scripting.rst:338
 msgid ""
 "The code approach also enables this with a 4th ``Array`` parameter that is "
 "empty by default. Feel free to read up on the ``Object.connect`` method for "

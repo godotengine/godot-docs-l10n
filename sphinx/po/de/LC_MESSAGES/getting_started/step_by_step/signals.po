@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,6 @@ msgid "Timer example"
 msgstr "Timer Beispiel"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
@@ -80,9 +79,8 @@ msgid ""
 msgstr ""
 "Um zu sehen, wie Signale funktionieren, benutzen wir einen :ref:`Timer "
 "<class_Timer>` Node. Erstelle eine neue Szene mit einem Node und zwei "
-"Unterelementen: einem \"Timer\" und einem :ref:`Sprite <class_Sprite>`. Du "
-"kannst das Godot-Icon für die Sprite-Textur oder ein anderes Bild, das Dir "
-"gefällt, verwenden."
+"Unterelementen: einem \"Timer\" und einem :ref:`Sprite <class_Sprite>`. "
+"Bennen Node2D im Szenendock zu TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -124,32 +122,26 @@ msgstr ""
 "ausgegeben, wenn der Timer \"0\" erreicht."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
-#, fuzzy
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
 "the signals panel. You'll see the following window, where you can define how "
 "you want to connect the signal:"
 msgstr ""
-"Klick auf das \"timeout()\" Signal und danach auf \"Verbinden...\". Auf dem "
-"folgenden Fenster kannst du definieren wie das Signal verbunden werden "
-"soll:\n"
-"\n"
-"Klicke auf das Signal \"timeout()\" und klicke danach auf \"Verbinden...\". "
-"Im folgenden Fenster kannst Du definieren, wie Du das Signal verbinden "
-"möchtest:"
+"Klicke auf das Signal \"timeout()\" und klicke danach unten im Signalpanel "
+"auf \"Verbinden...\". Im folgenden Fenster kann definiert werden, wie das "
+"Signal verbunden werden soll:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:55
-#, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is "
 "blue, this is a visual indication that it's the node that is emitting the "
 "signal. Select the root node."
 msgstr ""
-"Auf der linken Seite siehst Du die Nodes in Deiner Szene. Du kannst den Node "
+"Auf der linken Seite sind die Nodes in Deiner Szene. Dort kannst du den Node "
 "auswählen, auf den das Signal \"hören\" soll. Beachte, dass der Timer-Node "
-"rot ist. Dies ist *kein* Fehler, sondern ein visueller Hinweis darauf, dass "
-"der Node das Signal aussendet. Wähle den Wurzel-Node aus."
+"blau ist. Dies ist ein visueller Hinweis darauf, dass der Node das Signal "
+"aussendet. Wähle den Wurzel-Node aus."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:60
 msgid ""
@@ -160,7 +152,6 @@ msgstr ""
 "Fehlermeldung angezeigt."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
@@ -169,7 +160,7 @@ msgid ""
 msgstr ""
 "Am unteren Rand des Fensters befindet sich ein Feld mit der Bezeichnung "
 "\"Methode im Node\". Dies ist der Name der Funktion im Skript des Ziel-"
-"Nodes, die Du verwenden möchten. Standardmäßig erstellt Godot diese Funktion "
+"Nodes, die verwendt werden soll. Standardmäßig erstellt Godot diese Funktion "
 "mit der Namenskonvention ``_on_<node_name>_<signal_name>``, aber Du kannst "
 "sie ändern, wenn Du möchtest."
 

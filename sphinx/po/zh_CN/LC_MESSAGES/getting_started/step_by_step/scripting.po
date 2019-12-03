@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -430,36 +430,18 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:204
 msgid ""
-"In the bottom-left are the key things you need to create a connection: a "
-"node which implements the method you want to trigger (represented here as a "
-"NodePath) and the name of the method to trigger."
+"The top of the dialogue displays a list of your scene's nodes with the "
+"emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
-"左下方是创建连接所需的关键内容：实现您想要触发方法的节点（在此用NodePath表"
-"示）以及要触发的方法的名字。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:208
+#: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
-"The top-left section displays a list of your scene's nodes with the emitting "
-"node's name highlighted in red. Select the \"Panel\" node here. When you "
-"select a node, the NodePath at the bottom will automatically update to point "
-"to a relative path from the emitting node to the selected node."
+"The bottom of the dialogue shows the name of the method that will be "
+"created. By default, the method name will contain the emitting node's name "
+"(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
-"左上部分显示场景节点的列表，并以红色突出显示发射节点的名称。在这里选择 "
-"``Panel`` 节点。选择一个节点时，底部的NodePath将自动更新，以指向从发射节点到"
-"所选节点的相对路径。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:213
-msgid ""
-"By default, the method name will contain the emitting node's name (\"Button"
-"\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``. If you "
-"do have the \"Make Function\" check button checked, then the editor will "
-"generate the function for you before setting up the connection."
-msgstr ""
-"默认情况下，方法名称将包含发射节点的名称（在这种情况下为 ``Button``），从而生"
-"成 ``_on_[EmitterNode]_[signal_name]``。如果选中了 ``Make Function`` 复选框，"
-"那么编辑器将在建立连接之前为您生成该函数。"
-
-#: ../../docs/getting_started/step_by_step/scripting.rst:218
+#: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
@@ -468,7 +450,7 @@ msgstr ""
 "至此，已经介绍了有关如何使用可视界面的指南。但是，这是一个脚本教程，因此，为"
 "了学习起见，让我们深入研究手动过程！"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:222
+#: ../../docs/getting_started/step_by_step/scripting.rst:215
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
@@ -479,7 +461,7 @@ msgstr ""
 "<class_Node_method_get_node>`。此函数使用场景中相对于拥有脚本的节点的节点路径"
 "来获取节点。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:227
+#: ../../docs/getting_started/step_by_step/scripting.rst:220
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
@@ -487,7 +469,7 @@ msgstr ""
 "为了方便起见，删除 ``extends Panel`` 下面的所有内容。您将手动填写脚本的其余部"
 "分。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:230
+#: ../../docs/getting_started/step_by_step/scripting.rst:223
 msgid ""
 "Because the Button and Label are siblings under the Panel where the script "
 "is attached, you can fetch the Button by typing the following underneath the "
@@ -496,11 +478,11 @@ msgstr ""
 "由于 ``Button`` 和 ``Label`` 是有脚本附加的 ``Panel`` 下的兄弟节点，因此可以"
 "通过在 ``_ready()`` 函数下输入以下内容来获取 ``Button`` 引用："
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:247
+#: ../../docs/getting_started/step_by_step/scripting.rst:240
 msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "接下来，编写一个在按下按钮时将被调用的函数："
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:262
+#: ../../docs/getting_started/step_by_step/scripting.rst:255
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
@@ -508,20 +490,20 @@ msgstr ""
 "最后，使用 :ref:`Object.connect() <class_Object_method_connect>` 将按钮的“按"
 "下”信号连接到 ``_ready()``。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:278
+#: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"
 msgstr "脚本最终看起来是这个样子："
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:311
+#: ../../docs/getting_started/step_by_step/scripting.rst:304
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr "运行场景并按下按钮，您应该得到以下结果："
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:315
+#: ../../docs/getting_started/step_by_step/scripting.rst:308
 msgid "Why, hello there! Congratulations on scripting your first scene."
 msgstr "您好啊！恭喜您完成了您的第一个场景脚本。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:319
+#: ../../docs/getting_started/step_by_step/scripting.rst:312
 msgid ""
 "A common misunderstanding regarding this tutorial is how ``get_node(path)`` "
 "works. For a given node, ``get_node(path)`` searches its immediate children. "
@@ -532,11 +514,11 @@ msgstr ""
 "``get_node(path)`` 搜索其直接子节点。在上面的代码中，这意味着 ``Button`` 必须"
 "是 ``Panel`` 的子项。如果 ``Button`` 是 ``Label`` 的子项，则获得它的代码是："
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:337
+#: ../../docs/getting_started/step_by_step/scripting.rst:330
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "另外，请记住，节点是通过名称而不是类型来引用的。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:341
+#: ../../docs/getting_started/step_by_step/scripting.rst:334
 msgid ""
 "The right-hand panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
@@ -545,7 +527,7 @@ msgstr ""
 "连接对话框的右侧面板用于将特定值绑定到所连接函数的参数。您可以添加和删除不同"
 "类型的值。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:345
+#: ../../docs/getting_started/step_by_step/scripting.rst:338
 msgid ""
 "The code approach also enables this with a 4th ``Array`` parameter that is "
 "empty by default. Feel free to read up on the ``Object.connect`` method for "

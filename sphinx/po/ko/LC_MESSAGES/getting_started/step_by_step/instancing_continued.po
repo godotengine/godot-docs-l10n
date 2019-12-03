@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
-msgstr "인스턴스(계속)"
+msgstr "인스턴스하기 (이어서)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
-msgstr "씬들을 여러 하위 객체로 나누어 관리하기 쉽게 하는 능력."
+msgstr "씬을 여러 하위 객체로 나누어 관리하기 쉽게 하는 기능."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
@@ -57,9 +57,9 @@ msgid ""
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
-"하지만 씬을 인스턴스하는 것의 가장 강력한 점은 인스턴스가 디자인 언어처럼 작"
-"동하는 것입니다. 이것이 Godot와 다른 알려진 엔진들을 구분되는 점입니다. Godot"
-"는 애초에 바닥부터 이러한 컨셉으로 설계되었습니다."
+"하지만 씬을 인스턴스하는 것의 가장 강력한 점은 인스턴스가 우수한 디자인 언어"
+"로써 작동하는 점입니다. 이것이 Godot와 다른 알려진 엔진들을 구분되는 특징입니"
+"다. Godot는 애초에 바닥부터 이러한 컨셉으로 설계되었습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -69,10 +69,10 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
-"Godot로 게임을 만들 때는 일반적으로 쓰이는 디자인 패턴들 (MVC 혹은 개체-관계 "
-"다이어그램 등)을 버리고 씬을 좀 더 자연스럽게 바라보기를 권장합니다. 게임에"
-"서 보이는 요소를 상상하는 것으로 시작하세요. 프로그래머가 아니라 다른 사람이 "
-"이름 지을 수 있는 것 말이에요."
+"Godot로 게임을 만들 때는, MVC나 개체-관계 다이어그램과 같이 일반적으로 쓰이"
+"는 디자인 패턴을 버리고, 씬을 좀 더 자연스럽게 바라보기를 권장합니다. 게임에"
+"서 보이는 요소를 상상하는 것으로 시작하세요. 그 요소가 프로그래머가 이야기 하"
+"는 요소가 아니라 누구나 부르는 것 말이죠."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:30
 msgid "For example, here's how a simple shooter game could be imagined:"
@@ -84,9 +84,9 @@ msgid ""
 "down the parts of the game that you can visualize, and then add arrows to "
 "represent ownership of one component by another."
 msgstr ""
-"거의 모든 종류의 게임이든 이런 다이어그램을 만들 수 있습니다. 게임에서 시각화"
-"할 수 있는 부분을 쭉 적어보고, 각 구성 요소의 소유권을 나타내기 위한 화살표"
-"를 추가합니다."
+"거의 모든 종류의 게임에서 이런 다이어그램을 상상해 볼 수 있습니다. 게임에서 "
+"시각화할 수 있는 부분을 쭉 적어보고, 각 구성 요소 간 소유권을 나타내기 위한 "
+"화살표를 추가합니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:38
 msgid ""
@@ -95,9 +95,9 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
-"이렇게 다이어그램이 만들었다면, 게임을 만들 때 다이어그램에 있는 각 요소를 씬"
-"으로 추가하는 것을 추천합니다. 소유권 관계를 위해 (코드에서 하거나 편집기에"
-"서 직접) 인스턴스를 사용합니다."
+"이렇게 다이어그램이 만들고 나서, 추천하는 게임 제작 과정은 다이어그램에 각 요"
+"소로 이루어진 씬을 만드는 것입니다.(코드 또는 편집기에서 직접) 인스턴스를 사"
+"용해서 소유권 관계를 만들게 됩니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
 msgid ""

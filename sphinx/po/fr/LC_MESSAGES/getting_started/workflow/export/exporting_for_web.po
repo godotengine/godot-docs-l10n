@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,15 +43,15 @@ msgstr ""
 "comme les erreurs JavaScript, moteur et WebGL."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
-#, fuzzy
 msgid ""
 "Many browsers, including Firefox and Chromium-based browsers, will not load "
 "exported projects when **opened locally** per ``file://`` protocol. To get "
 "around this, use a local server."
 msgstr ""
-"De nombreux navigateurs, spécifiquement les navigateurs basés sur Chromium, "
-"ne chargeront pas les projets exportés quand **ouvert localement ** par le "
-"protocole ``file: //``. Pour contourner cela, utilisez un serveur local."
+"De nombreux navigateurs, y compris les navigateurs Firefox et Chromium, ne "
+"chargent pas les projets exportés lorsqu'ils sont **ouverts localement** par "
+"le protocole ``file://``. Pour contourner ce problème, utilisez un serveur "
+"local."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
 msgid ""
@@ -69,14 +69,13 @@ msgid "WebGL 2"
 msgstr "WebGL 2"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
-#, fuzzy
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option is selected."
 msgstr ""
-"Jusqu'à ce que le rendu *OpenGL ES 3* soit supprimé de Godot en faveur de "
-"*Vulkan*, l'export HTML5 utilise *WebGL 2* lorsque l'option *GLES3* est "
-"sélectionnée."
+"Jusqu'à ce que le moteur de rendu *OpenGL ES 3* soit supprimé de Godot en "
+"faveur de *Vulkan*, l'exportation HTML5 utilise *WebGL 2* lorsque l'option "
+"*GLES3* est sélectionnée."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
 msgid ""
@@ -248,7 +247,6 @@ msgid "Exported ``.html`` file must not be reused"
 msgstr "Le fichier exporté ``.html`` ne doit pas être réutilisé"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
-#, fuzzy
 msgid ""
 "Each project must generate their own HTML file. On export, several text "
 "placeholders are replaced in the **generated HTML file** specifically for "
@@ -256,10 +254,12 @@ msgid ""
 "file** will be lost in future exports. To customize the generated file, see :"
 "ref:`doc_customizing_html5_shell`."
 msgstr ""
-"Lors de l'exportation, plusieurs espaces de textes réservés sont remplacés "
-"dans le **fichier HTML généré** spécifiquement selon les options "
-"d'exportation données. Il ne doit pas être réutilisé pour d'autres "
-"exportations."
+"Chaque projet doit générer son propre fichier HTML. Lors de l'exportation, "
+"plusieurs caractères génériques de texte sont remplacés dans le fichier HTML "
+"**généré** spécifiquement pour les options d'exportation données. Toute "
+"modification directe du fichier HTML **généré** sera perdue dans les "
+"exportations futures. Pour personnaliser le fichier généré, voir :ref:"
+"`doc_customizing_html5_shell`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid "Boot splash is not displayed"

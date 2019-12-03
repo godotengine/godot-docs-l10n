@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,28 +18,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
-#, fuzzy
 msgid "GDScript exports"
-msgstr "Type GDScript"
+msgstr "Exportations GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
-#, fuzzy
 msgid "Introduction to exports"
-msgstr "Introduction à la 3D"
+msgstr "Introduction à l'exportation"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
 "they're attached to. They will also be available for editing in the property "
 "editor. Exporting is done by using the ``export`` keyword::"
 msgstr ""
-"Les membres de classe peuvent être exportés. Cela signifie que leur valeur "
-"est sauvegardée avec la ressource (par exemple la :ref:`scène "
-"<class_PackedScene>`) à laquelle ils sont attachés. Ils seront également "
-"disponibles pour l'édition dans l'éditeur de propriétés. L'exportation se "
-"fait en utilisant le mot clé ``export`` :"
+"Dans Godot, les membres de classe peuvent être exportés. Cela signifie que "
+"leur valeur est sauvegardée avec la ressource (par exemple la :référence:"
+"`scène <class_PackedScene>`) à laquelle ils sont attachés. Ils seront "
+"également disponibles pour l'édition dans l'éditeur de propriétés. "
+"L'exportation se fait en utilisant le mot clé ``export`` :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
 msgid ""
@@ -77,15 +74,14 @@ msgid "Examples"
 msgstr "Exemples"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
-#, fuzzy
 msgid ""
 "It must be noted that even if the script is not being run while in the "
 "editor, the exported properties are still editable. This can be used in "
 "conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
-"Il faut noter que même si le script n'est pas exécuté alors qu'il est en "
-"cours d'édition, les propriétés exportées sont toujours modifiables (voir ci-"
-"dessous pour \"outil\")."
+"Il faut noter que même si le script n'est pas en cours d’exécution alors "
+"qu'il est en cours d'édition, les propriétés exportées sont toujours "
+"modifiables (voir ci-dessous pour \"outil\")."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
 msgid "Exporting bit flags"
@@ -103,7 +99,6 @@ msgstr ""
 "changés dans l'éditeur :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
-#, fuzzy
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax::"

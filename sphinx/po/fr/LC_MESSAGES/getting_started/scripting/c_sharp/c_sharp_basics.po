@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -319,7 +319,6 @@ msgstr ""
 "<class_@globalscope>`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
-#, fuzzy
 msgid ""
 "Keep in mind that the class you wish to attach to your node should have the "
 "same name as the ``.cs`` file. Otherwise, you will get the following error "
@@ -327,9 +326,9 @@ msgid ""
 "res://XXX.cs\"*"
 msgstr ""
 "Gardez à l'esprit que la classe que vous souhaitez attacher à votre nœud "
-"doit être nommée comme le fichier ``.cs``. Sinon, vous obtiendrez l'erreur "
-"suivante et vous ne pourrez pas exécuter la scène : *\"Class XXX pour le "
-"script res://XXX.cs introuvable\"*"
+"doit avoir le même nom que le fichier ``.cs``. Sinon, vous obtiendrez "
+"l'erreur suivante et vous ne pourrez pas exécuter la scène : *\"Cannot find "
+"class XXX for script res://XXX.cs\"*"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
 msgid "General differences between C# and GDScript"
@@ -420,11 +419,21 @@ msgstr ""
 "Les scripts C# joints doivent se référer à une classe dont le nom de classe "
 "correspond au nom du fichier."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:214
+msgid ""
+"There are some methods such as ``Get()``/``Set()``, ``Call()``/"
+"``CallDeferred()`` and signal connection method ``Connect()`` that rely on "
+"Godot's ``snake_case`` API naming conventions. So when using e.g. "
+"``CallDeferred(\"AddChild\")``, ``AddChild`` will not work because the API "
+"is expecting the original ``snake_case`` version ``add_child``. However, you "
+"can use any custom properties or methods without this limitation."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:222
 msgid "Performance of C# in Godot"
 msgstr "Performance du C# dans Godot"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:224
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
 "bunnymark>`_, the performance of C# in Godot — while generally in the same "
@@ -443,11 +452,11 @@ msgstr ""
 "script en général. C# est plus rapide, mais nécessite une transformation des "
 "objets coûteuse lorsqu'il parle à Godot."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:226
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:232
 msgid "Using NuGet packages in Godot"
 msgstr "Utilisation des packages Nuget dans Godot"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:234
 msgid ""
 "`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
 "Godot, as with any C# project. Many IDEs are able to add packages directly. "
@@ -460,7 +469,7 @@ msgstr ""
 "manuellement en ajoutant la référence du package dans le fichier ``.csproj`` "
 "situé à la racine du projet :"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:243
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:249
 msgid ""
 "Whenever packages are added or modified, run ``nuget restore`` in the root "
 "of the project directory. To ensure that NuGet packages will be available "

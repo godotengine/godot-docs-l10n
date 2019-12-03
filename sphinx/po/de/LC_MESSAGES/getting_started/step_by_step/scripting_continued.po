@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,16 +61,15 @@ msgstr ""
 "Diese Methode wird jedesmal aufgerufen, wenn ein Bild gezeichnet wurde:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
-#, fuzzy
 msgid ""
 "It's important to bear in mind that the frequency with which ``_process()`` "
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
 "Es ist wichtig im Hinterkopf zu behalten, dass die Häufigkeit in der die "
-"``_process()`` Methode aufgerufen wird, davon abhängt, mit wie vielen Frames "
-"pro Sekunde (FPS) die Anwendung läuft. Diese Rate kann auf verschiedenen "
-"Geräten oder auch über Zeit variieren."
+"``_process()`` Methode aufgerufen wird, davon abhängt, mit wie vielen "
+"Bildern pro Sekunde (FPS) die Anwendung läuft. Diese Rate kann auf "
+"verschiedenen Geräten oder auch über Zeit variieren."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -144,17 +143,17 @@ msgid "Groups"
 msgstr "Gruppen"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
-#, fuzzy
 msgid ""
 "Groups in Godot work like tags you might have come across in other software. "
 "A node can be added to as many groups as desired. This is a useful feature "
 "for organizing large scenes. There are two ways to add nodes to groups. The "
 "first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
-"Eine nützliche Funktion zur Organisation großer Szenen ist es, Nodes zu "
-"Gruppen zusammenzufassen. Ein Node kann beliebig vielen Gruppen hinzugefügt "
-"werden. Es gibt zwei Wege dies zu tun: Zum einen über die Benutzeroberfläche "
-"mit Hilfe der 'Gruppen'-Schaltfläche im Node Panel:"
+"Gruppen in Godot funktionieren wie Tags, auf die Sie in anderen Softwares "
+"gestoßen sein könnten. Ein Knoten kann beliebig vielen Gruppen hinzugefügt "
+"werden. Dies ist eine nützliche Funktion zum Organisieren großer Szenen. Es "
+"gibt zwei Möglichkeiten, Knoten zu Gruppen hinzuzufügen. Die erste ist über "
+"die Benutzeroberfläche über den Gruppenknopf unter dem Knotenpanel:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""

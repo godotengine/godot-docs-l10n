@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,9 +113,8 @@ msgid "Enabling distance or proximity fade"
 msgstr "Activer le fondu de distance ou de proximité"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:44
-#, fuzzy
 msgid "Use Shadow to Opacity"
-msgstr "Qualité du filtre d'ombre"
+msgstr "Utiliser l'ombre pour l'opacité"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:46
 msgid ""
@@ -123,6 +122,10 @@ msgid ""
 "areas are transparent. Useful for overlaying shadows onto a camera feed in "
 "AR."
 msgstr ""
+"L'éclairage modifie la transparence alpha de sorte que les zones ombrées "
+"soient opaques et les zones non ombrées soient transparentes. Cela peut "
+"servir à surimposer des ombres sur des images fournie par une caméra en "
+"réalité augmentée."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:50
 msgid "Unshaded"
@@ -279,15 +282,12 @@ msgid ""
 msgstr "L'objet ne reçoit aucun éclairage ambiant qui autrement l'éclairerait."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:126
-#, fuzzy
 msgid "Ensure Correct Normals"
 msgstr "Ensure Correct Normals"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:128
-#, fuzzy
 msgid "Fixes normals when non-uniform scaling is used."
-msgstr ""
-"Répare les normales quand une mise à l'échelle non uniforme est appliquée."
+msgstr "Corrige les normales lorsque la mise à l'échelle n'est pas uniforme."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:131
 msgid "Vertex Color"
@@ -605,13 +605,13 @@ msgstr ""
 "BillBoard."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:259
-#, fuzzy
 msgid "Billboard Keep Scale"
-msgstr "Mode Billboard"
+msgstr "Billboard Keep Scale"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:261
 msgid "Enables scaling a mesh in billboard mode."
 msgstr ""
+"Autorise la mise à l'échelle d'un maillage en mode \"panneau d'affichage\"."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:264
 msgid "Grow"

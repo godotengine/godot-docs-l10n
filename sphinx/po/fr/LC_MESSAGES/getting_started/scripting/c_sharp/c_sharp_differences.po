@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,6 +214,10 @@ msgid ""
 "`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
 "parameters. Default values can be set by assigning a value."
 msgstr ""
+"Utilisez l'attribut ``[Export]`` au lieu du mot-clé GDScript ``export``. Cet "
+"attribut peut aussi être complété de paramètres optionnels ref:"
+"`PropertyHint<enum_@GlobalScope_PropertyHint>` et ``hintString``. La valeur "
+"par défaut peut être réglée en assignant une valeur."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:114
 msgid "Signal keyword"
@@ -477,9 +481,8 @@ msgid "``Array``"
 msgstr "``Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
-#, fuzzy
 msgid "``Godot.Collections.Array``"
-msgstr "``Godot.Array``"
+msgstr "``Godot.Collections.Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
 msgid "``PoolIntArray``"

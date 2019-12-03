@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,6 +113,10 @@ msgid ""
 "mesh has a physics body and collision shape assigned, your mesh library is "
 "ready to be used."
 msgstr ""
+"シンプルなメッシュには『凸状』コリジョン ボディのほうが合うでしょう。より複雑"
+"な形なら『静的三角形メッシュの作成』を選択します。それぞれのメッシュに物理ボ"
+"ディとコリジョン シェイプが割り当てられたら、メッシュ ライブラリは使えるよう"
+"になります。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:60
 msgid "Materials"
@@ -123,10 +127,12 @@ msgid ""
 "Only the materials from within the meshes are used when generating the mesh "
 "library. Materials set on the node will be ignored."
 msgstr ""
+"メッシュライブラリの生成時には、メッシュ内にあるマテリアルのみが使用され、"
+"ノードに設定したマテリアルは無視されます。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:66
 msgid "Exporting the MeshLibrary"
-msgstr ""
+msgstr "MeshLibraryのエクスポート"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:68
 msgid ""

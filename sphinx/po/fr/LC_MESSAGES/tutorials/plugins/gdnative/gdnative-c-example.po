@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,42 +26,38 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:9
-#, fuzzy
 msgid ""
 "This tutorial will introduce you to the bare minimum required to create "
 "GDNative modules. This should be your starting point into the world of "
 "GDNative. Understanding the contents of this tutorial will help you in "
 "understanding all that is to come after this."
 msgstr ""
-"Ce tutoriel est une introduction aux bases nécessaires à la création de "
-"modules avec GDNative. Il sert de porte d'entrée dans l'univers de GDNative, "
-"et la compréhension du contenu de ce tutoriel vous permettra de mieux "
-"comprendre tout ce qui s'ensuit."
+"Ce tutoriel vous présentera le strict minimum requis pour créer des modules "
+"GDNative. Ceci devrait être votre point de départ dans le monde de GDNative. "
+"Comprendre le contenu de ce tutoriel vous aidera à comprendre tout ce qui va "
+"suivre."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:14
-#, fuzzy
 msgid ""
 "Before we begin, you can download the source code to the example object we "
 "describe below in the `GDNative-demos repository <https://github.com/"
 "GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo>`_."
 msgstr ""
 "Avant de commencer, vous pouvez télécharger le code source de l'objet "
-"exemple que nous décrivons ci-dessous en suivant ce lien : https://github."
-"com/GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo"
+"exemple décrit ci-dessous dans le dépôt `GDNative-demos repository <https://"
+"github.com/GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo>`_."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:18
-#, fuzzy
 msgid ""
 "This example project also contains a SConstruct file that makes compiling a "
 "little easier, but in this tutorial we'll be doing things by hand to "
 "understand the process."
 msgstr ""
-"Ce projet exemple contient entre autres un fichier SConstruct qui rend "
-"l'étape de compilation plus accessible, mais pour ce tutoriel nous ferons la "
-"compilation manuellement."
+"Cet exemple de projet contient également un fichier SConstruct qui rend la "
+"compilation un peu plus facile, mais dans ce tutoriel nous allons faire les "
+"choses à la main pour comprendre le processus."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:22
-#, fuzzy
 msgid ""
 ":ref:`GDNative <class_GDNative>` can be used to create several types of "
 "additions to Godot, using interfaces such as :ref:`PluginScript "
@@ -71,31 +67,30 @@ msgid ""
 "allows you to write logic in C or C++ in a similar fashion as you would "
 "write a GDScript file. We'll be creating the C equivalent of this GDScript:"
 msgstr ""
-":ref:`GDNative <class_GDNative>` peut être utilisé pour créer divers types "
-"de fonctionnalités supplémentaires pour Godot, allant de PluginScript aux "
-"interfaces ARVR. Dans ce tutoriel, nous nous intéressons à la création d'un "
-"module :ref:`NativeScript <class_NativeScript>`. NativeScript vous permet de "
-"décrire la logique d'un nœud en C ou C++ de la même manière que vous le "
-"feriez avec un fichier GDScript. Nous allons coder l'équivalent en C de ce "
-"GDScript :"
+":ref:`GDNative <class_GDNative>` peut être utilisé pour créer plusieurs "
+"types d'ajouts à Godot, en utilisant des interfaces telles que :ref:"
+"`PluginScript <class_PluginScript>` ou :ref:`ARVRInterfaceGDNative "
+"<class_ARVRInterfaceGDNative <RevrinterfaceGDNative>`. Dans ce tutoriel, "
+"nous allons voir comment créer un module :ref:`NativeScript "
+"<class_NativeScript>`. NativeScript vous permet d'écrire la logique en C ou C"
+"++ de la même manière que vous écrivez un fichier GDScript. Nous allons "
+"créer l'équivalent en C de ce GDScript :"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:43
-#, fuzzy
 msgid ""
 "Future tutorials will focus on the other types of GDNative modules and "
 "explain when and how to use each of them."
 msgstr ""
-"Des tutoriels sur les autres types de modules GDNative seront écrit "
-"prochainement pour expliquer leur intérêt et utilisation graduellement."
+"Les prochains tutoriels se concentreront sur les autres types de modules "
+"GDNative et expliqueront quand et comment les utiliser."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:47
 msgid "Prerequisites"
 msgstr "Prérequis"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:49
-#, fuzzy
 msgid "Before we start you'll need a few things:"
-msgstr "Avant de commencer, il vous faut un certain nombre de composants."
+msgstr "Avant de commencer, vous aurez besoin de quelques trucs :"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:51
 msgid "A Godot executable for your target version."
@@ -463,9 +458,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:421
-#, fuzzy
 msgid "General properties"
-msgstr "Propriétés d’un nœud"
+msgstr "Propriétés générales"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:423
 msgid ""
@@ -506,9 +500,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:447
-#, fuzzy
 msgid "Platform libraries"
-msgstr "Nom de la plate-forme."
+msgstr "Bibliothèques de plate-forme"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:449
 msgid ""
@@ -540,9 +533,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:469
-#, fuzzy
 msgid "Saving the resource"
-msgstr "Libérer des ressources"
+msgstr "Sauvegarder la ressource"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:471
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,7 +228,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:134
 msgid "Texture compression"
-msgstr ""
+msgstr "テクスチャ圧縮"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:136
 msgid ""
@@ -236,12 +236,17 @@ msgid ""
 "compression). Video RAM compression is not as efficient in size as PNG or "
 "JPG when stored, but increases performance enormously when drawing."
 msgstr ""
+"Godotは、3Dモデルをインポートする際にテクスチャを圧縮することができます(VRAM"
+"圧縮)。PNGやJPGとくらべると、Video RAM圧縮はサイズの点で及びませんが、しかし"
+"描写性能は非常に向上します。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:140
 msgid ""
 "This is because the main goal of texture compression is bandwidth reduction "
 "between memory and the GPU."
 msgstr ""
+"なぜならテクスチャ圧縮は、メモリとGPU間の帯域を減らすことを一番の目的としてい"
+"るからです。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:143
 msgid ""
@@ -250,12 +255,17 @@ msgid ""
 "on shapes inside the textures, so the artifacts resulting from 2D "
 "compression are more noticeable."
 msgstr ""
+"3Dでは、オブジェクトの形状は、テクスチャよりもジオメトリによるところが大きい"
+"ので、普通は圧縮しても見分けはつきません。2Dの場合、圧縮はテクスチャ内に描か"
+"れた形状も変化させてしまうため、違いがより目立つようになります。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:148
 msgid ""
 "As a warning, most Android devices do not support texture compression of "
 "textures with transparency (only opaque), so keep this in mind."
 msgstr ""
+"注意すべき点として、Androidデバイスでは透過のあるテクスチャの圧縮はサポートさ"
+"れていません (非透過のみ) ので、気をつけてください。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:152
 msgid "Transparent objects"

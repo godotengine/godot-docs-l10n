@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,11 +45,11 @@ msgstr "次の方法について学習します:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:20
 msgid "How to **connect** a character to a GUI with signals"
-msgstr "シグナルを使ってキャラクターをGUIに**接続**する方法"
+msgstr "シグナルを使ってキャラクターをGUIに **接続** する方法"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:21
 msgid "How to **control** a GUI with GDscript"
-msgstr "GDscriptを使用してGUIを**制御する**方法"
+msgstr "GDscriptを使用してGUIを **制御する** 方法"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
@@ -98,13 +98,13 @@ msgid ""
 "constant time intervals. We want the life bar to update when the Player "
 "takes damage."
 msgstr ""
-"中核となるゲームプレーとUIの準備ができたら、何らかの方法でそれらを接続する必"
-"要があります。この例では、一定の時間間隔でプレーヤーを攻撃する敵がいます。プ"
+"中核となるゲームプレイとUIの準備ができたら、何らかの方法でそれらを接続する必"
+"要があります。この例では、一定の時間間隔でプレイヤーを攻撃する敵がいます。プ"
 "レイヤーがダメージを受けたときにライフバーが更新されるようにします。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:45
 msgid "To do this, we will use **signals**."
-msgstr "これを行うには、**シグナル**を使用します。"
+msgstr "これを行うには、 **シグナル** を使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
 msgid ""
@@ -130,8 +130,8 @@ msgid ""
 msgstr ""
 "Godotプロジェクトをダウンロード(:download:`ui_code_life_bar.zip <files/"
 "ui_code_life_bar.zip>`)してください。チュートリアルに必要なすべての素材やスク"
-"リプトが入っています。zipアーカイブを解凍して、2つのフォルダー`start`と`end`"
-"を取得します。"
+"リプトが入っています。zipアーカイブを解凍して、2つのフォルダー `start` と "
+"`end` を取得します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
 msgid ""
@@ -153,7 +153,7 @@ msgid ""
 "have to re-create it from scratch."
 msgstr ""
 "これは、ゲームのコーディング方法の典型です。最初にコアゲームプレイを実装し、"
-"プレーヤーの死を処理してから、インターフェイスを追加します。それは、UIがゲー"
+"プレイヤーの死を処理してから、インターフェイスを追加します。それは、UIがゲー"
 "ム内で起こっていることに耳を傾けているからです。ゲームプレイのプロトタイプを"
 "作成してテストする前にUIを設計すると、うまく機能しない可能性があり、そうなる"
 "と最初から作成し直す必要がある場合があります。"
@@ -183,7 +183,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
 msgstr ""
-"``bar``はライフバーそのものです。 これは ``TextureProgress`` ノードです"
+"``bar`` はライフバーそのものです。 これは ``TextureProgress`` ノードです"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
 msgid ""
@@ -210,11 +210,12 @@ msgid ""
 "In the `scripts/` folder you will find the enemy, the player, and the GUI "
 "controller scripts."
 msgstr ""
-"プロジェクトのルートの`res ://`フォルダに`LevelMockup`があります。これがメイ"
-"ンのゲームシーンであり、ここで作業します。ゲームを構成するすべてのコンポーネ"
-"ントは、`scenes/`フォルダにあります。`assets/`フォルダには、ゲームのスプライ"
-"トとHPカウンタのフォントが含まれています。`scripts/`フォルダには、敵のスクリ"
-"プト、プレイヤーのスクリプト、GUIコントローラのスクリプトがあります。"
+"プロジェクトのルートの `res ://` フォルダに `LevelMockup` があります。これが"
+"メインのゲームシーンであり、ここで作業します。ゲームを構成するすべてのコン"
+"ポーネントは、 `scenes/` フォルダにあります。 `assets/` フォルダには、ゲーム"
+"のスプライトとHPカウンタのフォントが含まれています。 `scripts/` フォルダに"
+"は、敵のスクリプト、プレイヤーのスクリプト、GUIコントローラのスクリプトがあり"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:117
 msgid ""
@@ -231,7 +232,7 @@ msgstr "プレーヤシーンがその子を表示するように設定された
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:124
 msgid "Set up the Lifebar with the Player's max\\_health"
-msgstr "プレーヤーのmax\\_healthを使用してライフバーをセットアップする"
+msgstr "プレイヤーのmax\\_healthを使用してライフバーをセットアップする"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:126
 msgid ""
@@ -242,9 +243,9 @@ msgid ""
 "update the ``Lifebar`` and ``Number`` nodes with this value."
 msgstr ""
 "プレイヤーの現在の状態を何らかの方法でGUIに伝え、ライフバーのテクスチャを更新"
-"し、残りの状態を画面左上のHPカウンターに表示する必要があります。そのために、"
-"プレイヤーがダメージを受けるたびに、プレイヤーのヘルス情報をGUIに送信します。"
-"GUIは、この値で ``Lifebar`` ノードと ``Number`` ノードを更新します。"
+"し、残りの体力を画面左上のHPカウンターに表示する必要があります。そのために、"
+"プレイヤーがダメージを受けるたびに、プレイヤーの体力をGUIに送信します。GUI"
+"は、この値で ``Lifebar`` ノードと ``Number`` ノードを更新します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:132
 msgid ""
@@ -264,10 +265,10 @@ msgid ""
 "to change its `max_value` property. You send a percentage from the `Player` "
 "to the `GUI` instead:  `health / max_health * 100`."
 msgstr ""
-"バーの`TextureProgres`sでは、デフォルトで`max_value`が`100`になっています。 "
-"キャラクターの健康状態を数字で表示する必要がない場合は、その`max_value`プロパ"
-"ティを変更する必要はありません。代わりに、`プレーヤー`から`GUI`にパーセンテー"
-"ジを送信します。`health / max_health * 100`。"
+"バーの `TextureProgress` では、デフォルトで `max_value` が `100` になっていま"
+"す。 キャラクターの体力を数字で表示する必要がない場合は、その `max_value` プ"
+"ロパティを変更する必要はありません。代わりに、 `Player ` から `GUI` にパーセ"
+"ンテージを送信します。 `health / max_health * 100` 。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:143
 msgid ""
@@ -277,7 +278,7 @@ msgid ""
 "``bar``'s ``max_value``:"
 msgstr ""
 "シーンドックの ``GUI`` の右側にあるスクリプトアイコンをクリックしてスクリプト"
-"を開きます。 ``_ready`` 関数では、プレーヤーの ``max_health`` を新しい変数に"
+"を開きます。 ``_ready`` 関数では、プレイヤーの ``max_health`` を新しい変数に"
 "格納し、それを使って ``bar`` の ``max_value`` を設定します:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:164
@@ -319,8 +320,8 @@ msgid ""
 "player already lost some health."
 msgstr ""
 "``health`` が常に ``max_health`` と等しいという保証はありません。体力が回復し"
-"ないで次のステージに進むようなゲームでは、プレイヤーがすでに ``health`` を幾"
-"ばくか失った状態が読み込まれる可能性があります。"
+"ないで次のステージに進むようなゲームでは、プレイヤーがすでに体力をいくらか"
+"失った状態が読み込まれる可能性があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
 msgid ""
@@ -332,17 +333,17 @@ msgid ""
 "to set everything up and prepare the game session. Learn more about _ready: :"
 "doc:`scripting_continued`"
 msgstr ""
-"ゲームでシーンを開くと、Godotは [シーン](Scene) ドッキング内の順序に従って、"
-"上から下にノードを1つずつ作成します。`GUI`と`Player`は同じノードブランチの一"
-"部ではありません。相互にアクセスするときに両方が存在することを確認するには、"
-"`_ready`関数を使用する必要があります。Godotは、すべてのノードをロードした直"
-"後、ゲームを開始する前に`_ready`を呼び出します。すべてを設定してゲームセッ"
-"ションを準備するのに最適な機能です。_readyの詳細は:doc:`scripting_continued`"
-"を参照して下さい"
+"ゲームでシーンを開くと、Godotはシーン・ドック内の順序に従って、上から下にノー"
+"ドを1つずつ作成します。 `GUI` と `Player` は同じノードブランチの一部ではあり"
+"ません。相互にアクセスするときに両方が存在することを確認するには、 `_ready` "
+"関数を使用する必要があります。Godotは、すべてのノードをロードした直後、ゲーム"
+"を開始する前に `_ready` を呼び出します。すべてを設定してゲームセッションを準"
+"備するのに最適な機能です。_readyの詳細は:doc:`scripting_continued`を参照して"
+"下さい。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
 msgid "Update health with a signal when the player takes a hit"
-msgstr "プレーヤーがヒットしたときにシグナルでヘルスを更新する"
+msgstr "プレイヤーがヒットしたときにシグナルで体力を更新する"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:190
 msgid ""
@@ -387,8 +388,8 @@ msgid ""
 msgstr ""
 "特定のフレームで、更新「前」に別のノードのプロパティを参照すると、最後のフ"
 "レームから値が取得されます。これは、修正が難しい不明瞭なバグにつながります。"
-"一方、信号は変化が起こった直後に発せられます。新しい情報を**確実**に入手でき"
-"ます。また、変更が行われた「直後」に、接続されたノードの状態を更新します。"
+"一方、信号は変化が起こった直後に発せられます。新しい情報を **確実** に入手で"
+"きます。また、変更が行われた「直後」に、接続されたノードの状態を更新します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
 msgid ""
@@ -517,8 +518,8 @@ msgid ""
 "In Player.gd, when the Player emits the health\\_changed signal, it also "
 "sends its health value"
 msgstr ""
-"Player.gdでは、Playerがhealth\\_changedシグナルを放出すると、そのヘルス値も送"
-"信します"
+"Player.gdでは、Playerがhealth\\_changedシグナルを放出すると、その体力値も送信"
+"します"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
 msgid ""
@@ -531,8 +532,8 @@ msgid ""
 "We could directly update the health value on `LifeBar` and `Number`. There "
 "are two reasons to use this method instead:"
 msgstr ""
-"`LifeBar`と`Number`のヘルス値を直接更新できます。 代わりにこの方法を使用する"
-"理由は2つあります:"
+"`LifeBar`と`Number`の体力値を直接更新できます。 代わりにこの方法を使用する理"
+"由は2つあります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
 msgid ""
@@ -773,8 +774,8 @@ msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
 msgstr ""
-"`number_label`と`bar`は、`Number`ノードと`TextureProgress`ノードへの参照を格"
-"納する変数です。"
+"`number_label` と `bar` は、 `Number` ノードと `TextureProgress` ノードへの参"
+"照を格納する変数です。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
 msgid ""
@@ -898,9 +899,9 @@ msgid ""
 "from it. It lets you toggle the visibility of the node, assign a shader to "
 "it, and modify it using a color with `modulate`."
 msgstr ""
-"`modulate`は`CanvasItem`クラスから取得され、すべての2DノードとUIノードはこれ"
-"を継承します。ノードの表示/非表示を切り替え、シェーダを割り当て、 `modulate`"
-"で色を使用して修正することができます。"
+"`modulate` は `CanvasItem` クラスから取得され、すべての2DノードとUIノードはこ"
+"れを継承します。ノードの表示/非表示を切り替え、シェーダを割り当て、 "
+"`modulate` で色を使用して修正することができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
 msgid ""
@@ -932,16 +933,16 @@ msgid ""
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
 "the alpha channel."
 msgstr ""
-"``Color(1.0、1.0、1.0)``は白に対応します。 4番目の引数、``start_color``と"
-"``end_color``のそれぞれ``1.0``と``0.0``は、アルファチャンネルです。"
+"``Color(1.0、1.0、1.0)`` は白に対応します。 4番目の引数、 ``start_color`` と "
+"``end_color`` のそれぞれ ``1.0`` と ``0.0`` は、アルファチャンネルです。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
 msgstr ""
-"次に、``Tween``ノードの``interpolate_property``メソッドをもう一度呼び出す必要"
-"があります:"
+"次に、 ``Tween`` ノードの ``interpolate_property`` メソッドをもう一度呼び出す"
+"必要があります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
 msgid ""
@@ -957,11 +958,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
 msgid "And that is it. You may now play the game to see the final result!"
-msgstr "以上です。これでゲームをプレイして最終結果を確認できます!"
+msgstr "以上です。これでゲームをプレイして最終結果を確認できます！"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
 msgid "The final result. Congratulations for getting there!"
-msgstr "最終結果。上手くいきましたね!"
+msgstr "最終結果。上手くいきましたね！"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
 msgid ""

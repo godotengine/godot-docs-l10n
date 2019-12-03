@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,11 +31,17 @@ msgid ""
 "simulation to create realistic procedural animation. They are used for death "
 "animations in many games."
 msgstr ""
+"Depuis la version 3.1, Godot supporte la physique de ragdoll. Les Ragdolls "
+"se servent de la simulation physique pour créer une animation procédurale "
+"réaliste. Ils sont utilisés pour les animations de mort dans beaucoup de "
+"jeux."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:11
 msgid ""
 "In this tutorial, we will be using the Platformer3D demo to set up a ragdoll."
 msgstr ""
+"Dans ce tutoriel, nous allons utiliser la démo Platformer3D pour mettre en "
+"place un ragdoll."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:13
 msgid ""
@@ -43,6 +49,10 @@ msgid ""
 "godotengine/godot-demo-projects/tree/master/3d/platformer>`_ or using the "
 "`Asset Library <https://godotengine.org/asset-library/asset/125>`_."
 msgstr ""
+"Vous pouvez télécharger la démo Platformer3D sur `GitHub <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/3d/platformer>`_ ou en utilisant "
+"la `Bibliothèque d'assets <https://godotengine.org/asset-library/"
+"asset/125>`_."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:16
 msgid "Setting up the ragdoll"
@@ -59,12 +69,20 @@ msgid ""
 "you can generate ``PhysicalBone`` nodes with the \"Create physical skeleton"
 "\" feature in the skeleton node."
 msgstr ""
+"Comme beaucoup d'autres fonctionnalités du moteur, il y a un nœud pour "
+"mettre en place un ragdoll : le nœud `PhysicalBone <class_PhysicalBone>`. "
+"Pour simplifier le paramétrage, vous pouvez générer les nœuds "
+"``PhysicalBone`` avec la fonctionnalité \"Créer un squelette physique\" du "
+"nœud ``Skeleton``."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
 msgid ""
 "Open the platformer demo in Godot, and then the Robi scene. Select the "
 "``Skeleton`` node. A skeleton button appears on the top bar menu:"
 msgstr ""
+"Ouvrez la démo jeu de platforme dans Godot, et la scène de Robi. "
+"Sélectionnez le nœud ``Skeleton``. Un bouton squelette apparaît dans le menu "
+"en haut de la fenêtre d'affichage :"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:27
 msgid ""
@@ -72,12 +90,18 @@ msgid ""
 "generate ``PhysicalBone`` nodes and collision shapes for each bone in the "
 "skeleton and pin joints to connect them together:"
 msgstr ""
+"Cliquez dessus et sélectionnez l'option ``Créer un squelette physique``. "
+"Godot va générer des nœuds ``PhysicalBone`` et des formes de collision pour "
+"chaque os du squelette et des joints épingle (``PinJoint``) pour les "
+"connecter ensemble :"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:31
 msgid ""
 "Some of the generated bones aren't necessary: the ``MASTER`` bone for "
 "example. So we're going to clean up the skeleton by removing them."
 msgstr ""
+"Certains des os générés ne sont pas nécessaires : l'os ``MASTER`` par "
+"exemple. On va donc nettoyer le squelette en les enlevant."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:34
 msgid "Cleaning up the skeleton"
@@ -89,6 +113,10 @@ msgid ""
 "so you want to remove every bone that is too small to make a difference in "
 "the simulation, as well as all utility bones."
 msgstr ""
+"Chaque ``PhysicalBone`` que le moteur a besoin de simuler a un coût en terme "
+"de performance, il vaut donc mieux enlever tous les os qui sont trop petits "
+"pour faire une différence dans la simulation, ainsi que tous les os "
+"utilitaires."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:38
 msgid ""
@@ -97,6 +125,10 @@ msgid ""
 "one for the palm, one for the thumb, and a last one for the other four "
 "fingers."
 msgstr ""
+"Par exemple, si on prend un humanoïde, on ne veut pas avoir d'os physique "
+"pour chaque doigt. Vous pouvez utiliser juste un os pour l'ensemble de la "
+"main à la place, ou un pour la paume, un pour le pouce, et enfin un pour les "
+"quatre autres doigts."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:40
 msgid ""
@@ -104,6 +136,9 @@ msgid ""
 "``headtracker``. This gives us an optimized skeleton and makes it easier to "
 "control the ragdoll."
 msgstr ""
+"Enlevez ces os physiques : ``MASTER``, ``waist``, ``neck``, ``headtracker``. "
+"Cela nous donne un squelette optimisé et rend le contrôle du ragdoll plus "
+"aisé."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:43
 msgid "Collision shape adjustment"
@@ -114,10 +149,13 @@ msgid ""
 "The next task is adjusting the collision shape and the size of physical "
 "bones to match the part of the body that each bone should simulate."
 msgstr ""
+"La tâche suivante consiste à ajuster les formes de collisions et la taille "
+"des os physiques pour les faire correspondre à la partie du corps que chaque "
+"os doit simuler."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:50
 msgid "Joints adjustment"
-msgstr ""
+msgstr "Ajustement des joints"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:52
 msgid ""
@@ -128,6 +166,12 @@ msgid ""
 "constraint type in the ``Joint`` section. There, you can change the "
 "constraint's orientation and its limits."
 msgstr ""
+"Une fois les formes de collision ajustées, votre ragdoll est presque prêt. "
+"Vous devez juste ajuster les joints épingle pour obtenir une meilleure "
+"simulation. Les nœuds ``PhysicalBone`` ont un joint épingle sans contrainte "
+"assigné par défaut. Pour changer le joint, sélectionnez l'os et changez le "
+"type de contrainte dans la section ``Joint``. C'est là que vous pouvez "
+"changer l'orientation de la contrainte et ses limites."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:56
 msgid "This is the final result:"
@@ -135,7 +179,7 @@ msgstr "Ceci est le résultat final :"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:61
 msgid "Simulating the ragdoll"
-msgstr ""
+msgstr "Simuler le ragdoll"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:63
 msgid ""
@@ -144,17 +188,26 @@ msgid ""
 "method. Attach a script to the skeleton node and call the method in the "
 "``_ready`` method:"
 msgstr ""
+"Le ragdoll est maintenant prêt à être utilisé. Pour démarrer la simulation "
+"et jouer l'animation de ragdoll, vous devez appeler la méthode "
+"``physical_bones_start_simulation``. Attachez un script au nœud du squelette "
+"et appelez la méthode dans la méthode ``_ready`` :"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:71
 msgid ""
 "To stop the simulation, call the ``physical_bones_stop_simulation()`` method."
 msgstr ""
+"Pour arrêter la simulation, appeler la méthode "
+"``physical_bones_stop_simulation()``."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:75
 msgid ""
 "You can also limit the simulation to only a few bones. To do so, pass the "
 "bone names as a parameter. Here's an example of partial ragdoll simulation:"
 msgstr ""
+"Vous pouvez aussi limiter la simulation à seulement certains os. Pour faire "
+"cela, passez les noms des os comme paramètre. Voici un exemple de simulation "
+"de ragdoll partielle :"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:80
 msgid "Collision layer and mask"
@@ -165,7 +218,10 @@ msgid ""
 "Make sure to set up your collision layers and masks properly so the "
 "``KinematicBody``'s capsule doesn't get in the way of the physics simulation:"
 msgstr ""
+"Faites en sorte que le paramétrage de vos niveaux et masques de collision "
+"soit fait correctement pour que la capsule du ``KinematicBody`` n'interfère "
+"pas avec la simulation physique du ragdoll :"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
 msgid "For more information, read :ref:`doc_physics_introduction`"
-msgstr ""
+msgstr "Pour plus d'informations, lisez :ref:`doc_physics_introduction`"

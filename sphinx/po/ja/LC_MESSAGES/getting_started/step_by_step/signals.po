@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,10 +32,10 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
-"シグナルは、Godotの* observer *パターンのバージョンです。これにより、ノード"
-"は、他のノードがリッスンして応答できるメッセージを送信できます。たとえば、ボ"
-"タンが押されているかどうかを継続的に確認するのではなく、ボタンが押されたとき"
-"に信号を発することができます。"
+"シグナルは、* observer *パターンのGodotバージョンです。これにより、ノードは、"
+"他のノードが聞いて応答できるメッセージを送信できます。例えば、ボタンが押され"
+"ているかどうかを継続的に確認するのではなく、ボタンが押されたときに信号を発す"
+"ることができます。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
@@ -69,16 +69,15 @@ msgid "Timer example"
 msgstr "タイマーの例"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
-"シグナルがどのように機能するかを見るために、:ref: `Timer <class_Timer>`ノード"
-"を使用してみましょう。 Nodeと2つの子:Timerと:ref: `Sprite <class_Sprite>`で新"
-"しいシーンを作成します。 Sceneドックで、Nodeの名前をTimerExampleに変更しま"
-"す。"
+"シグナルがどのように機能するかを見るために、:ref: `Timer <class_Timer>`\\ "
+"ノードを使用してみましょう。 Node2Dと2つの子:Timerと:ref: `Sprite "
+"<class_Sprite>`\\ で新しいシーンを作成します。 Sceneドックで、Node2Dの名前を"
+"TimerExampleに変更します。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -88,13 +87,13 @@ msgid ""
 "yet."
 msgstr ""
 "スプライトのテクスチャには、Godotアイコン、またはその他の好きな画像を使用でき"
-"ます。そのためには、スプライトのテクスチャ属性ドロップダウンメニューで「ロー"
-"ド」を選択します。ルートノードにスクリプトを添付しますが、まだコードを追加し"
+"ます。そのためには、スプライトのテクスチャ属性ドロップダウンメニューで``ロー"
+"ド``を選択します。ルートノードにスクリプトを添付しますが、まだコードを追加し"
 "ないでください。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
-msgstr "シーンツリーは次のようになります。"
+msgstr "シーンツリーは次のようになります:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:38
 msgid ""
@@ -102,9 +101,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
-"Timerノードのプロパティで、* Autostart *の横にある[オン]ボックスをオンにしま"
-"す。これにより、シーンの実行時にタイマーが自動的に開始されます。 * Wait Time "
-"*は1秒のままにしておきましょう。"
+"Timerノードのプロパティで、* Autostart *の横にある「オン」ボックスをクリック"
+"します。これにより、シーンの実行時にタイマーが自動的に開始されます。 * Wait "
+"Time *は1秒のままにしておきましょう。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:42
 msgid ""
@@ -116,41 +115,37 @@ msgstr ""
 "「インスペクタ」タブの隣には、「ノード」というラベルの付いたタブがあります。 "
 "このタブをクリックすると、選択したノードが発信できるすべての信号が表示されま"
 "す。 Timerノードの場合、関係するのは「timeout」です。 このシグナルは、タイ"
-"マーが「0」に到達するたびに出力されます。"
+"マーが``0``に到達するたびに出力されます。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
-#, fuzzy
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
 "the signals panel. You'll see the following window, where you can define how "
 "you want to connect the signal:"
 msgstr ""
-"「timeout（）」シグナルをクリックし、「接続...」をクリックします。 次のウィン"
-"ドウが表示され、信号の接続方法を定義できます。"
+"シグナルパネルの下にある「timeout()」シグナルをクリックし、「接続...」をク"
+"リックします。 次のウィンドウが表示され、信号の接続方法を定義できます:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:55
-#, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is "
 "blue, this is a visual indication that it's the node that is emitting the "
 "signal. Select the root node."
 msgstr ""
-"左側でシーンのノードを見ることができます。信号として監視したいノードを選択で"
-"きます。\n"
-"タイマーノードは赤色です。エラーではありません。ノードが信号を発していること"
-"意味します。ルートノードを選択してください。"
+"左側でシーンのノードを見ることができます。信号として「監視」したいノードを選"
+"択できます。タイマーノードは青色で、ノードが信号を発していること意味します。"
+"ルートノードを選択してください。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:60
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
-"ターゲットノードにはスクリプトが添付されている必要があります。そうしないと、"
-"エラーメッセージが表示されます。"
+"ターゲットノードにはスクリプトが添付されている*必要*があります。そうしない"
+"と、エラーメッセージが表示されます。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
@@ -158,15 +153,16 @@ msgid ""
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
 "ウィンドウの下部には、「Method In Node」というラベルのフィールドがあります。 "
-"これは、使用するターゲットノードのスクリプト内の関数の名前です。 デフォルトで"
-"は、Godotは `` _on_ <node_name> _ <signal_name> ``という命名規則を使用してこ"
+"これは、使用したいターゲットノードのスクリプト内の関数の名前です。 デフォルト"
+"では、Godotは `` _on_ <ノード名> _ <シグナル名> ``という命名規則を使用してこ"
 "の関数を作成しますが、必要に応じて変更できます。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:68
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
-msgstr "[接続]をクリックすると、スクリプトで関数が作成されたことがわかります。"
+msgstr ""
+"「接続」をクリックすると、スクリプトで関数が作成されたことがわかります:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:88
 msgid ""
@@ -174,7 +170,7 @@ msgid ""
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
 "これで、仮置きのコードを、シグナルの受信時に実行したいコードに置き換えること"
-"ができます。 スプライトを点滅させましょう："
+"ができます。 スプライトを点滅させましょう:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:112
 msgid ""
@@ -215,9 +211,9 @@ msgid ""
 "connection:"
 msgstr ""
 "コードで接続するために、 `` connect``関数を使用できます。 接続が実行時に行わ"
-"れるように、その関数を_ready（）に入れます。 関数の構文は `` <source_node> ."
-"connect（<signal_name>、<target_node>、<target_function_name>） ``です。 タイ"
-"マー接続のコードは次のとおりです。"
+"れるように、その関数を_ready()に入れます。 関数の構文は `` <ソースノード> ."
+"connect(<シグナル名>、<ターゲットノード>、<ターゲット関数名>) ``です。 タイ"
+"マー接続のコードは次のとおりです:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:160
 msgid "Custom signals"
@@ -225,7 +221,7 @@ msgstr "カスタムシグナル"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:162
 msgid "You can also declare your own custom signals in Godot:"
-msgstr "Godotで独自のカスタムシグナルを宣言することもできます。"
+msgstr "Godotで独自のカスタムシグナルを宣言することもできます:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:180
 msgid ""
@@ -238,7 +234,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/signals.rst:183
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
 msgstr ""
-"コードを介してシグナルを発信するには、 `` emit_signal``関数を使用します："
+"コードを介してシグナルを発信するには、 `` emit_signal``関数を使用します:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:209
 msgid "Conclusion"
@@ -252,7 +248,7 @@ msgid ""
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
 "Godotの組み込みノードタイプの多くは、イベントの検出に使用できる信号を提供しま"
-"す。 たとえば、コインの見た目をした：ref： `Area2D <class_Area2D>`は、プレー"
+"す。 たとえば、コインの見た目をした :ref:`Area2D <class_Area2D>`\\ は、プレイ"
 "ヤーの物理ボディが衝突形状に入るたびに `` body_entered``シグナルを発し、プ"
 "レーヤーがそれを収集したタイミングを知ることができます。"
 
@@ -261,5 +257,5 @@ msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
-"次のセクション:ref: `doc_your_first_game`では、さまざまなゲームコンポーネント"
-"を接続するシグナルのいくつかの使用法を含む、完全なゲームを構築します。"
+"次のセクション:ref:`doc_your_first_game`\\ では、さまざまなゲームコンポーネン"
+"トを接続するシグナルのいくつかの使用法を含む、完全なゲームを構築します。"

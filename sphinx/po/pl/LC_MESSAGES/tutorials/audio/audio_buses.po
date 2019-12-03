@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -283,56 +283,66 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:166
-#, fuzzy
-msgid "EQ, EQ6, EQ10, EQ21"
-msgstr "EQ6, EQ10, EQ21"
+msgid "EQ"
+msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:168
 msgid ""
-"Godot provides four equalizers with different numbers of bands. An equalizer "
-"on the Master bus can be useful to cut frequencies that the device's "
-"speakers can't reproduce well (e.g. a mobile phone's speakers won't "
+"EQ is what all other equalizers inherit from. It can be extended with with "
+"Custom scripts to create an equalizer with a custom number of bands."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_buses.rst:172
+#, fuzzy
+msgid "EQ6, EQ10, EQ21"
+msgstr "EQ6, EQ10, EQ21"
+
+#: ../../docs/tutorials/audio/audio_buses.rst:174
+msgid ""
+"Godot provides three equalizers with different numbers of bands. An "
+"equalizer on the Master bus can be useful to cut frequencies that the "
+"device's speakers can't reproduce well (e.g. a mobile phone's speakers won't "
 "reproduce bass content well). The equalizer effect can be disabled when "
 "headphones are plugged in."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:174
+#: ../../docs/tutorials/audio/audio_buses.rst:180
 msgid "Filter"
 msgstr "Filtr"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:176
+#: ../../docs/tutorials/audio/audio_buses.rst:182
 msgid ""
-"Filter is what all other effects processors inherit from and should not be "
-"used directly."
+"Filter is what all other filters inherit from and should not be used "
+"directly."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:180
+#: ../../docs/tutorials/audio/audio_buses.rst:185
 msgid "HighPassFilter, HighShelfFilter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:182
+#: ../../docs/tutorials/audio/audio_buses.rst:187
 msgid ""
 "These are filters that cut frequencies below a specific *Cutoff* frequency. "
 "HighPassFilter and HighShelfFilter are used to reduce the bass content of a "
 "signal."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:189
+#: ../../docs/tutorials/audio/audio_buses.rst:194
 msgid "Limiter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:191
+#: ../../docs/tutorials/audio/audio_buses.rst:196
 msgid ""
 "A limiter is similar to a compressor, but it's less flexible and designed to "
 "prevent a signal's amplitude exceeding a given dB threshold. Adding a "
 "limiter to the Master bus is a safeguard against clipping."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:196
+#: ../../docs/tutorials/audio/audio_buses.rst:201
 msgid "LowPassFilter, LowShelfFilter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:198
+#: ../../docs/tutorials/audio/audio_buses.rst:203
 msgid ""
 "These are the most common filters, they cut frequencies above a specific "
 "*Cutoff* frequency and can also resonate (boost frequencies close to the "
@@ -341,63 +351,63 @@ msgid ""
 "sounds."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:204
+#: ../../docs/tutorials/audio/audio_buses.rst:209
 msgid "NotchFilter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:206
+#: ../../docs/tutorials/audio/audio_buses.rst:211
 msgid ""
 "The opposite of the BandPassFilter, it removes a band of sound from the "
 "frequency spectrum at a given *Cutoff* frequency."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:210
+#: ../../docs/tutorials/audio/audio_buses.rst:215
 msgid "Panner"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:212
+#: ../../docs/tutorials/audio/audio_buses.rst:217
 msgid ""
 "The Panner allows the stereo balance of a signal to be adjusted between the "
 "left and right channels (wear headphones to audition this effect)."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:216
+#: ../../docs/tutorials/audio/audio_buses.rst:221
 msgid "Phaser"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:218
+#: ../../docs/tutorials/audio/audio_buses.rst:223
 msgid ""
 "It probably does not make much sense to explain that this effect is formed "
 "by two signals being dephased and cancelling each other out. You can make a "
 "Darth Vader voice with it, or jet-like sounds."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:223
+#: ../../docs/tutorials/audio/audio_buses.rst:228
 msgid "PitchShift"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:225
+#: ../../docs/tutorials/audio/audio_buses.rst:230
 msgid ""
 "This effect allows the adjustment of the signal's pitch independently of its "
 "speed. All frequencies can be increased/decreased with minimal effect on "
 "transients. PitchShift can be useful to create unusually high or deep voices."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:230
+#: ../../docs/tutorials/audio/audio_buses.rst:235
 msgid "Record"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:232
+#: ../../docs/tutorials/audio/audio_buses.rst:237
 msgid ""
 "The Record effect allows audio passing through the bus to be written to a "
 "file."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:235
+#: ../../docs/tutorials/audio/audio_buses.rst:240
 msgid "Reverb"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:237
+#: ../../docs/tutorials/audio/audio_buses.rst:242
 msgid ""
 "Reverb simulates rooms of different sizes. It has adjustable parameters that "
 "can be tweaked to obtain the sound of a specific room. Reverb is commonly "
@@ -406,36 +416,48 @@ msgid ""
 "sounds."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:244
+#: ../../docs/tutorials/audio/audio_buses.rst:249
+msgid "SpectrumAnalyzer"
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_buses.rst:251
+msgid ""
+"This effect doesn't alter audio, instead, you add this effect to buses you "
+"want a spectrum analysis of. This would typically be used for audio "
+"visualization. A demo project using this can be found `here <https://github."
+"com/godotengine/godot-demo-projects/tree/master/audio/spectrum>`__."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_buses.rst:256
 msgid "StereoEnhance"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:246
+#: ../../docs/tutorials/audio/audio_buses.rst:258
 msgid ""
 "This effect uses a few algorithms to enhance a signal's stereo spectrum."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:249
+#: ../../docs/tutorials/audio/audio_buses.rst:261
 msgid "Automatic bus disabling"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:251
+#: ../../docs/tutorials/audio/audio_buses.rst:263
 msgid ""
 "There is no need to disable buses manually when not in use. Godot detects "
 "that the bus has been silent for a few seconds and disables it (including "
 "all effects)."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:257
+#: ../../docs/tutorials/audio/audio_buses.rst:269
 msgid "Disabled buses have a blue VU meter instead of a red-green one."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:260
+#: ../../docs/tutorials/audio/audio_buses.rst:272
 #, fuzzy
 msgid "Bus rearrangement"
 msgstr "Zarządzanie problemami"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:262
+#: ../../docs/tutorials/audio/audio_buses.rst:274
 msgid ""
 "Stream Players use bus names to identify a bus, which allows adding, "
 "removing and moving buses around while the reference to them is kept. "
@@ -444,12 +466,12 @@ msgid ""
 "buses is a more common process than renaming them."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_buses.rst:269
+#: ../../docs/tutorials/audio/audio_buses.rst:281
 #, fuzzy
 msgid "Default bus layout"
 msgstr "Domyślne zachowanie"
 
-#: ../../docs/tutorials/audio/audio_buses.rst:271
+#: ../../docs/tutorials/audio/audio_buses.rst:283
 msgid ""
 "The default bus layout is automatically saved to the ``res://"
 "default_bus_layout.tres`` file. Custom bus arrangements can be saved and "

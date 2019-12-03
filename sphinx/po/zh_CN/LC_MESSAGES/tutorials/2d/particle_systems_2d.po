@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -324,27 +324,29 @@ msgid "Spread"
 msgstr "传播"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:200
+#, fuzzy
 msgid ""
 "This parameter is the angle in degrees which will be randomly added in "
 "either direction to the base ``Direction``. A spread of ``180`` will emit in "
-"all directions (+/- 180)."
+"all directions (+/- 180). For spread to do anything the \"Initial Velocity\" "
+"parameter must be greater than 0."
 msgstr ""
 "此参数是以度为单位的角度，它将在任一方向上随机添加到基础 ``Direction`` 。 "
 "``180`` 的传播将向所有方向发射(+/- 180)。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:207
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:208
 msgid "Gravity"
 msgstr "重力"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:209
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:210
 msgid "The gravity applied to every particle."
 msgstr "重力应用于每个粒子。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:214
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:215
 msgid "Initial Velocity"
 msgstr "初始速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:216
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:217
 #, fuzzy
 msgid ""
 "Initial velocity is the speed at which particles will be emitted (in pixels/"
@@ -354,65 +356,65 @@ msgstr ""
 "线速度是粒子发射的速度(以像素/秒为单位)。 以后可以通过重力或其他加速度来修改"
 "速度(下面将进一步描述)。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:223
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:224
 msgid "Angular Velocity"
 msgstr "角速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:225
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:226
 msgid "Angular velocity is the initial angular velocity applied to particles."
 msgstr "角速度是应用于粒子的初始角速度。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:228
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:229
 msgid "Spin Velocity"
 msgstr "旋转速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:230
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:231
 msgid ""
 "Spin velocity is the speed at which particles turn around their center (in "
 "degrees/sec)."
 msgstr "旋转速度是粒子围绕其中心转动的速度(以度/秒为单位)。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:236
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:237
 msgid "Orbit Velocity"
 msgstr "轨道速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:238
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:239
 msgid "Orbit velocity is used to make particles turn around their center."
 msgstr "轨道速度用于使粒子绕它们的中心转动。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:243
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:244
 msgid "Linear Acceleration"
 msgstr "线性加速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:245
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:246
 msgid "The linear acceleration applied to each particle."
 msgstr "应用于每个粒子的线性加速度。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:248
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:249
 msgid "Radial Acceleration"
 msgstr "径向加速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:250
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:251
 msgid ""
 "If this acceleration is positive, particles are accelerated away from the "
 "center. If negative, they are absorbed towards it."
 msgstr "如果此加速度为正，则粒子会从发射中心加速。 如果是负的，他们会被吸收。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:256
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:257
 msgid "Tangential Acceleration"
 msgstr "切向加速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:258
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:259
 msgid ""
 "This acceleration will use the tangent vector to the center. Combining with "
 "radial acceleration can do nice effects."
 msgstr "该加速度会使用到中心点的切向量，结合径向加速度可以做出很酷炫的效果。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:264
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:265
 msgid "Damping"
 msgstr "衰减"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:266
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:267
 msgid ""
 "Damping applies friction to the particles, forcing them to stop. It is "
 "especially useful for sparks or explosions, which usually begin with a high "
@@ -421,38 +423,38 @@ msgstr ""
 "阻尼对颗粒施加摩擦力，迫使它们停止。 它特别适用于火花或爆炸，火花或爆炸通常以"
 "高线速度开始，然后在褪色时停止。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:273
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:274
 msgid "Angle"
 msgstr "角度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:275
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:276
 #, fuzzy
 msgid ""
 "Determines the initial angle of the particle (in degrees). This parameter is "
 "mostly useful randomized."
 msgstr "确定粒子的初始角度(以度为单位)。 该参数主要用于随机化。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:281
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:282
 msgid "Scale"
 msgstr "规模"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:283
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:284
 msgid "Determines the initial scale of the particles."
 msgstr "确定粒子的初始大小。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:288
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:289
 msgid "Color"
 msgstr "颜色"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:290
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:291
 msgid "Used to change the color of the particles being emitted."
 msgstr "用于改变发射中的粒子颜色。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:293
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:294
 msgid "Hue variation"
 msgstr "色调变化"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:295
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:296
 msgid ""
 "The ``Variation`` value sets the initial hue variation applied to each "
 "particle. The ``Variation Random`` value controls the hue variation "
@@ -461,12 +463,12 @@ msgstr ""
 "Variation值设置应用于每个粒子的初始色调变化。 Variation Rand值控制色调变化随"
 "机性比率。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:300
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:301
 #, fuzzy
 msgid "Emission Shapes"
 msgstr "碰撞形状"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:302
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:303
 msgid ""
 "ParticlesMaterials allow you to set an Emission Mask, which dictates the "
 "area and direction in which particles are emitted. These can be generated "
@@ -475,44 +477,44 @@ msgstr ""
 "粒子材质可以让你设置一个发射遮罩，它决定了粒子发射的区域和方向。这些可以从项"
 "目中的纹理产生。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:306
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:307
 msgid ""
 "Ensure that a ParticlesMaterial is set, and the Particles2D node is "
 "selected. A \"Particles\" menu should appear in the Toolbar:"
 msgstr "确保设置了粒子材质，选择二维粒子节点。工具栏中应显示“粒子”菜单："
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:311
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:312
 msgid "Open it and select \"Load Emission Mask\":"
 msgstr "打开它，选择“加载发射遮罩”："
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:315
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:316
 msgid "Then select which texture you want to use as your mask:"
 msgstr "然后选择你想要用作遮罩的纹理："
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:319
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:320
 msgid "A dialog box with several settings will appear."
 msgstr "将出现一个具有多个设置的对话框。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:322
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:323
 msgid "Emission Mask"
 msgstr "发射遮罩"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:324
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:325
 msgid "Three types of emission masks can be generated from a texture:"
 msgstr "纹理可以生成三种类型的发射遮罩："
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:326
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:327
 msgid ""
 "Solid Pixels: Particles will spawn from any area of the texture, excluding "
 "transparent areas."
 msgstr "实体像素：粒子将从纹理的任何区域产生，透明区域除外。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:331
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:332
 msgid ""
 "Border Pixels: Particles will spawn from the outer edges of the texture."
 msgstr "边界像素：粒子将从纹理的外边缘产生。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:335
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:336
 msgid ""
 "Directed Border Pixels: Similar to Border Pixels, but adds extra information "
 "to the mask to give particles the ability to emit away from the borders. "
@@ -522,30 +524,30 @@ msgstr ""
 "定向边界像素：类似于边界像素，在遮罩中添加额外的信息，使粒子能够从边缘发射出"
 "去。请注意，想要使用它，需要设置一个“初始速度”。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:343
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:344
 msgid "Emission Colors"
 msgstr "发光颜色"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:345
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:346
 msgid ""
 "``Capture from Pixel`` will cause the particles to inherit the color of the "
 "mask at their spawn points."
 msgstr "“从像素捕获”会使粒子在其产生点处继承遮罩的颜色。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:347
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:348
 msgid ""
 "Once you click \"OK\", the mask will be generated and set to the "
 "ParticlesMaterial, under the ``Emission Shape`` section:"
 msgstr "一旦你点击“确定”，将生成遮罩并设置为粒子材质，在“发射形状”部分："
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:351
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:352
 msgid ""
 "All of the values within this section have been automatically generated by "
 "the \"Load Emission Mask\" menu, so they should generally be left alone."
 msgstr ""
 "“加载发射遮罩”菜单在这个部分自动生成了所有的值，所以通常他们应该被单独留下。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:354
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:355
 msgid ""
 "An image should not be added to ``Point Texture`` or ``Color Texture`` "
 "directly. The \"Load Emission Mask\" menu should always be used instead."

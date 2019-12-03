@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -256,10 +256,40 @@ msgid "Press \"Play\" on the animation to see how it looks."
 msgstr "애니메이션에서 \"Play\" 를 누르고 어떻게 작동하는지 보세요."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:149
+#, fuzzy
+msgid "Controlling an AnimationPlayer animation"
+msgstr "애니메이션 제어하기"
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
+#, fuzzy
+msgid ""
+"Like with AnimatedSprite, you can control the animation via code using the "
+"``play()`` and ``stop()`` methods. Again, here is an example to play the "
+"animation while the right arrow key is held, and stop it when the key is "
+"released."
+msgstr ""
+"애니메이션을 완성하면 ``play()`` 와 ``stop()`` 메서드를 사용하여 코드로 애니"
+"메이션을 제어할 수 있습니다. 여기 오른쪽 화살표 키를 누르고 있으면 애니메이션"
+"을 재생하고 떼면 중지하는 간단한 예제가 있습니다."
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:168
+msgid ""
+"If updating both an animation and a separate property at once (for example, "
+"a platformer may update the sprite's ``h_flip``/``v_flip`` properties when a "
+"character turns while starting a 'turning' animation), it's important to "
+"keep in mind that ``play()`` isn't applied instantly. Instead, it's applied "
+"the next time the :ref:`AnimationPlayer <class_AnimationPlayer>` is "
+"processed. This may end up being on the next frame, causing a 'glitch' "
+"frame, where the property change was applied but the animation was not. If "
+"this turns out to be a problem, after calling ``play()``, you can call "
+"``advance(0)`` to update the animation immediately."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:179
 msgid "Summary"
 msgstr "요약"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:181
 #, fuzzy
 msgid ""
 "These examples illustrate the two most common situations you'll encounter in "

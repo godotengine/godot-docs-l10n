@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -223,10 +223,40 @@ msgid "Press \"Play\" on the animation to see how it looks."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:149
+#, fuzzy
+msgid "Controlling an AnimationPlayer animation"
+msgstr "アニメーションのコントロール"
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
+#, fuzzy
+msgid ""
+"Like with AnimatedSprite, you can control the animation via code using the "
+"``play()`` and ``stop()`` methods. Again, here is an example to play the "
+"animation while the right arrow key is held, and stop it when the key is "
+"released."
+msgstr ""
+"アニメーションが完了すると、play()メソッドとstop()メソッドを使用して、コード"
+"でアニメーションを制御できます。右矢印キーを押したままアニメーションを再生"
+"し、キーを放したときにアニメーションを停止する簡単な例を次に示します。"
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:168
+msgid ""
+"If updating both an animation and a separate property at once (for example, "
+"a platformer may update the sprite's ``h_flip``/``v_flip`` properties when a "
+"character turns while starting a 'turning' animation), it's important to "
+"keep in mind that ``play()`` isn't applied instantly. Instead, it's applied "
+"the next time the :ref:`AnimationPlayer <class_AnimationPlayer>` is "
+"processed. This may end up being on the next frame, causing a 'glitch' "
+"frame, where the property change was applied but the animation was not. If "
+"this turns out to be a problem, after calling ``play()``, you can call "
+"``advance(0)`` to update the animation immediately."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:179
 msgid "Summary"
 msgstr "概要"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:181
 msgid ""
 "These examples illustrate the two most common situations you'll encounter in "
 "2D animation. Each has its benefits. Working with ``AnimationPlayer`` is a "

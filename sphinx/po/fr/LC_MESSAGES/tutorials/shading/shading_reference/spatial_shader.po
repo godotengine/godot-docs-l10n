@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:21
 msgid "Subtractive blend mode."
-msgstr ""
+msgstr "Mode de mélange soustractif."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:23
 msgid "**blend_mul**"
@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:23
 msgid "Multiplicative blend mode."
-msgstr ""
+msgstr "Mode de mélange multiplicatif."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:25
 msgid "**depth_draw_opaque**"
@@ -85,6 +85,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:25
 msgid "Only draw depth for opaque geometry (not transparent)."
 msgstr ""
+"Rend seulement la profondeur pour la géométrie opaque (non-transparente)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:27
 msgid "**depth_draw_always**"
@@ -92,7 +93,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:27
 msgid "Always draw depth (opaque and transparent)."
-msgstr ""
+msgstr "Rend toujours la profondeur (opaque et transparent)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:29
 msgid "**depth_draw_never**"
@@ -100,7 +101,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:29
 msgid "Never draw depth."
-msgstr ""
+msgstr "Ne rend jamais la profondeur."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:31
 msgid "**depth_draw_alpha_prepass**"
@@ -116,7 +117,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:33
 msgid "Disable depth testing."
-msgstr ""
+msgstr "Désactive le test de profondeur."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:35
 msgid "**cull_front**"
@@ -144,11 +145,13 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:41
 msgid "**unshaded**"
-msgstr ""
+msgstr "**sans ombre**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:41
 msgid "Result is just albedo. No lighting/shading happens in material."
 msgstr ""
+"Le résultat est juste l'albedo. Pas d'éclairage/d'ombres n'a lieu dans le "
+"matériau."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:43
 msgid "**diffuse_lambert**"
@@ -164,7 +167,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:45
 msgid "Lambert wrapping (roughness dependent) for diffuse."
-msgstr ""
+msgstr "Emballage Lambert (dépendant de la rugosité) pour diffusion."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:47
 msgid "**diffuse_oren_nayar**"
@@ -288,6 +291,10 @@ msgid ""
 "areas are transparent. Useful for overlaying shadows onto a camera feed in "
 "AR."
 msgstr ""
+"L'éclairage modifie la transparence alpha de sorte que les zones ombrées "
+"soient opaques et les zones non ombrées soient transparentes. Cela peut "
+"servir à surimposer des ombres sur des images fournie par une caméra en "
+"réalité augmentée."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:81
 msgid "Vertex built-ins"
@@ -529,8 +536,8 @@ msgstr "in bool **OUTPUT_IS_SRGB**"
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:218
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:325
 msgid ""
-"True when calculations happen in sRGB color space (true in GLES2, false in "
-"GLES3)."
+"``true`` when calculations happen in sRGB color space (``true`` in GLES2, "
+"``false`` in GLES3)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:162
@@ -627,7 +634,7 @@ msgid "in bool **FRONT_FACING**"
 msgstr "in bool **FRONT_FACING**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
-msgid "True if current face is front face."
+msgid "``true`` if current face is front face."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
@@ -976,9 +983,8 @@ msgid "in vec3 **TRANSMISSION**"
 msgstr "in vec3 **TRANSMISSION**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:337
-#, fuzzy
 msgid "Transmission mask from fragment function."
-msgstr "Votre première fonction fragment"
+msgstr "Masque de transmission de la fonction fragment."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:339
 msgid "out vec3 **DIFFUSE_LIGHT**"

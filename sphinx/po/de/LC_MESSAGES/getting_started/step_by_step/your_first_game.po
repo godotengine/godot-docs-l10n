@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,7 +211,6 @@ msgid "Sprite animation"
 msgstr "Sprite-Animation"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -227,11 +226,9 @@ msgstr ""
 "übernimmt das Erscheinungsbild und die Animationen für unseren Spieler. "
 "Achte auf das Warnsymbol neben dem Node . Ein ``AnimatedSprite`` benötigt "
 "eine :ref:`SpriteFrames <class_SpriteFrames>` Ressource, eine Liste der "
-"Animationen, die angezeigt werden können. Um eine Animation zu erstellen "
-"suche die Eigenschaft ``Frames`` im Inspektor und klicke  \"<null>\" -> "
-"\"Neues SpriteFrames\". Nun klicke an der selben Stelle auf "
-"``<SpriteFrames>`` und dann auf \"Editor öffnen\", um das Fenster "
-"\"SpriteFrames\" zu öffnen:"
+"Animationen, die angezeigt werden können. Um eine zu erstellen suche die "
+"Eigenschaft ``Frames`` im Inspektor und klicke \"<null>\" -> \"Neue "
+"SpriteFrames\". Nun sollte sich automatisch das Animationspanel öffnen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
@@ -487,7 +484,6 @@ msgstr ""
 "play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position. "
 "We can also use ``clamp()`` to prevent it from leaving the screen. "
@@ -495,9 +491,8 @@ msgid ""
 "to the bottom of the ``_process`` function:"
 msgstr ""
 "Jetzt, da wir eine Bewegungsrichtung haben, können wir die Position des "
-"``Player``s aktualisieren und mit ``clamp()`` verhindern, dass er den "
-"Bildschirm verlässt, indem wir am Ende der ``_process`` Funktion folgendes "
-"hinzufügen:"
+"Spilers aktualisieren und mit ``clamp()`` verhindern, dass er den Bildschirm "
+"verlässt, indem wir am Ende der ``_process`` Funktion folgendes hinzufügen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:332
 msgid ""
@@ -506,6 +501,10 @@ msgid ""
 "this value ensures that your movement will remain consistent even if the "
 "frame rate changes."
 msgstr ""
+"Der Parameter `delta` in der Funktion `_process()` bezieht sich auf die "
+"*Frame-Länge* - die Zeit, die der vorherige Frame benötigt hat, um "
+"abzuschließen. Die Verwendung dieses Wertes stellt sicher, dass Ihre "
+"Bewegung auch bei einer Änderung der Bildrate konstant bleibt."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:337
 msgid ""
@@ -1061,20 +1060,7 @@ msgstr ""
 "Beachte, dass der Szene mit ``add_child()`` eine neue Instanz hinzugefügt "
 "werden muss."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:811
-msgid ""
-"Now click on ``MobTimer`` in the scene window then head to inspector window, "
-"switch to node view then click on ``timeout()`` and connect the signal."
-msgstr ""
-"Klicke nun auf ``MobTimer`` im Szenenfenster, dann gehe zum "
-"Inspektorfenster, wechsel zur Nose-Ansicht, klicke dann auf ``Timeout()`` "
-"und verbinde das Signal."
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:814
-msgid "Add the following code:"
-msgstr "Füge den folgenden Code hinzu:"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:862
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:857
 msgid ""
 "In functions requiring angles, GDScript uses *radians*, not degrees. If "
 "you're more comfortable working with degrees, you'll need to use the "
@@ -1085,11 +1071,11 @@ msgstr ""
 "Funktionen ``deg2rad()`` und ``rad2deg()`` verwenden, um zwischen den beiden "
 "zu konvertieren."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:868
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:863
 msgid "HUD"
 msgstr "HUD"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:870
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:865
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -1104,7 +1090,7 @@ msgstr ""
 "steht für \"Heads-up Display\", ein Informationsdisplay, das als Overlay "
 "über der Spielansicht erscheint."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:876
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:871
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
@@ -1115,23 +1101,23 @@ msgstr ""
 "dass die angezeigten Informationen nicht durch irgendwelche Spielelemente "
 "wie den Spieler oder Mobs verdeckt werden."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:880
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:875
 msgid "The HUD displays the following information:"
 msgstr "Das HUD zeigt die folgenden Informationen an:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:882
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:877
 msgid "Score, changed by ``ScoreTimer``."
 msgstr "Punktzahl, geändert durch ``ScoreTimer``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:883
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:878
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr "Eine Nachricht, wie z.B. \"Game Over\" oder \"Get Ready!\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:884
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:879
 msgid "A \"Start\" button to begin the game."
 msgstr "Eine \"Start\"-Taste, um das Spiel zu starten."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:886
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:881
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
@@ -1142,28 +1128,27 @@ msgstr ""
 "<class_Control>` Node: :ref:`Label <class_Label>` und :ref:`Button "
 "<class_Button>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:890
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:885
 msgid "Create the following as children of the ``HUD`` node:"
 msgstr "Erstelle das Folgende als Unterobjekte des ``HUD``-Nodes:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:892
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:887
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr ":ref:`Label <class_Label>` genannt ``ScoreLabel``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:893
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:888
 msgid ":ref:`Label <class_Label>` named ``MessageLabel``."
 msgstr ":ref:`Label <class_Label>` genannt ``MessageLabel``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:894
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:889
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
 msgstr ":ref:`Button <class_Button>` genannt ``StartButton``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:895
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:890
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` genannt ``MessageTimer``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:897
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:892
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the *Text* field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -1177,11 +1162,11 @@ msgstr ""
 "\"Xolonium-Regular.ttf\" enthalten. Um diese Schriftart zu verwenden, gehe "
 "für jeden der drei ``Control``-Nodes wie folgt vor:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:903
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:898
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr "Wähle unter \"Custom Fonts\" \"Neues DynamicFont\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:907
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:902
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -1192,7 +1177,7 @@ msgstr ""
 "auch die Schriftart-``Größe`` einstellen. Eine Einstellung von ``64`` "
 "funktioniert gut."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:913
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:908
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -1209,16 +1194,15 @@ msgstr ""
 "Anker dar. Siehe :ref:`doc_design_interfaces_with_the_control_nodes` für "
 "weitere Details."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:920
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
 msgstr ""
-"Ordne die Nodes wie unten gezeigt an. Klicke auf die Schaltfläche \"Anchor"
-"\", um den Anker eines Control-Nodes festzulegen:"
+"Ordne die Nodes wie unten gezeigt an. Klicke auf den \"Layout\"-Knopf, um "
+"das Layout eines Control-Nodes festzulegen:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:925
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:920
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
@@ -1226,68 +1210,68 @@ msgstr ""
 "Du kannst die Nodes manuell verschieben, um sie zu platzieren oder verwende "
 "die folgenden Einstellungen, für eine genauere Platzierung:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:929
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:924
 msgid "ScoreLabel"
 msgstr "ScoreLabel (HighScore)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:931
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:926
 msgid "*Text* : ``0``"
 msgstr "*Text* : ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:932
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:927
 msgid "*Layout* : \"Top Wide\""
-msgstr "*Layout* : \"Top Wide\""
+msgstr "*Layout* : \"vollständige Breite\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:940
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:928
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
 msgid "*Align* : \"Center\""
-msgstr "*Align* : \"Center\""
+msgstr "*Align* : \"Mittig\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:936
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:931
 msgid "MessageLabel"
 msgstr "MessageLabel (Nachrichten)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "*Text* : ``Dodge the Creeps!``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:939
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:934
 msgid "*Layout* : \"HCenter Wide\""
 msgstr "*Layout* : \"HCenter Wide\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:941
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:936
 msgid "*Autowrap* : \"On\""
-msgstr ""
+msgstr "*Autowrap* : \"An\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:944
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:939
 msgid "StartButton"
 msgstr "StartButton (Startknopf)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:946
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:941
 msgid "*Text* : ``Start``"
 msgstr "*Text* : ``Start``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:947
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:942
 msgid "*Layout* : \"Center Bottom\""
 msgstr "*Layout* : \"Center Bottom\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:948
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:943
 msgid "*Margin* :"
 msgstr "*Margin* :"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:950
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid "Top: ``-200``"
 msgstr "Top: ``-200``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:951
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Bottom: ``-100``"
 msgstr "Bottom: ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:953
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:948
 msgid "Now add this script to ``HUD``:"
 msgstr "Füge nun dieses Skript zu ``HUD`` hinzu:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:972
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:967
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
@@ -1295,7 +1279,7 @@ msgstr ""
 "Das Signal ``start_game`` signalisiert dem Node ``Main``, dass die Taste "
 "gedrückt wurde."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:994
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:989
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\". On the ``MessageTimer``, set the ``Wait Time`` to ``2`` "
@@ -1306,7 +1290,7 @@ msgstr ""
 "``Wartezeit`` auf ``2``` und stellen Sie die ``Einmalige Aufnahme`` "
 "Eigenschaft auf \"Ein\"."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1029
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
@@ -1316,25 +1300,25 @@ msgstr ""
 "wird für 2 Sekunden angezeigt und wechselt dann zum Titelbildschirm. Nach "
 "einer kurzen Pause wird die \"Start\"-Schaltfläche angezeigt."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1033
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1028
 msgid ""
 "When you need to pause for a brief time, an alternative to using a Timer "
 "node is to use the SceneTree's ``create_timer()`` function. This can be very "
 "useful to delay, such as in the above code, where we want to wait a little "
 "bit of time before showing the \"Start\" button."
 msgstr ""
-"Wenn Du eine Verzögerung benötigst, kannst Du als Timer-Node die Funktion "
-"``create_timer()`` von SceneTree verwenden. Dies kann sehr nützlich sein, um "
-"eine Verzögerung auszulösen, z. B. im obigen Code, wo wir ein wenig warten "
-"müssen, bevor die Schaltfläche \"Start\" angezeigt wird."
+"Falls eine Pause benötigt wird, kann die Timer-Node die Funktion "
+"``create_timer()`` von SceneTree verwenden werden. Das kann sehr nützlich "
+"sein, um eine Verzögerung auszulösen, z. B. im obigen Code, wo wir ein wenig "
+"warten müssen, bevor die Schaltfläche \"Start\" angezeigt wird."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1051
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1046
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr ""
 "Diese Funktion wird von ``Main`` aufgerufen, wenn sich der Punktestand "
 "ändert."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1053
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1048
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton``."
@@ -1342,11 +1326,11 @@ msgstr ""
 "Verbinde das Signal ``timeout()`` von ``MessageTimer`` mit dem Signal "
 "``pressed()`` von ``StartButton``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1080
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1075
 msgid "Connecting HUD to Main"
 msgstr "Verbinde das HUD mit Main"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1082
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1077
 msgid ""
 "Now that we're done creating the ``HUD`` scene, save it and go back to "
 "``Main``. Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` "
@@ -1358,7 +1342,7 @@ msgstr ""
 "``Player``-Szene und platziere sie unten im Baum. Der gesamte Baum sollte so "
 "aussehen, also stelle sicher, dass das nichts fehlt:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1089
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1084
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
@@ -1366,7 +1350,7 @@ msgstr ""
 "Nun müssen wir die ``HUD``-Funktionalität mit unserem ``Main``-Skript "
 "verbinden. Dies erfordert einige Ergänzungen in der ``Main``-Szene:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1092
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1087
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function."
@@ -1374,7 +1358,7 @@ msgstr ""
 "Verbinden Sie auf der Registerkarte Node das Signal ``start_game`` des HUD "
 "mit der Funktion ``new_game()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1095
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1090
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -1382,12 +1366,12 @@ msgstr ""
 "Aktualisiere in ``new_game()`` die Punkteanzeige und zeige die Meldung \"Get "
 "Ready\" an:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1110
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1105
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr ""
 "In ``game_over()`` müssen wir die entsprechende ``HUD`` Funktion aufrufen:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1121
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1116
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
@@ -1395,7 +1379,7 @@ msgstr ""
 "Abschließend füge nachfolgendes ``_on_ScoreTimer_timeout()`` hinzu, um die "
 "Anzeige mit den sich ändernden Punkten zu synchronisieren:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1128
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
@@ -1404,11 +1388,11 @@ msgstr ""
 "(F5)\". Du wirst aufgefordert, eine Hauptszene auszuwählen. Wähle dann "
 "``Main.tscn`` aus."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1137
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1132
 msgid "Removing old creeps"
 msgstr "Entfernen von alten Monstern"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1139
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1134
 msgid ""
 "If you play until \"Game Over\" and then start a new game the creeps from "
 "the previous game are still on screen. It would be better if they all "
@@ -1418,7 +1402,7 @@ msgstr ""
 "befinden sich die Monster des vorherigen Spiel noch auf dem Bildschirm. Es "
 "wäre besser, wenn diese beim Start eines neuen Spiels verschwinden würden."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1143
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1138
 msgid ""
 "We'll use the ``start_game`` signal that's already being emitted by the "
 "``HUD`` node to remove the remaining creeps. We can't use the editor to "
@@ -1432,7 +1416,7 @@ msgstr ""
 "verknüpfen, weil die ``Mob`` Knoten erst dann in der Szene ``Main`` "
 "erscheinen, wenn wir das Spiel starten. Stattdessen benutzen wir Code."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1148
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1143
 msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
@@ -1441,7 +1425,7 @@ msgstr ""
 "``queue_free()`` wird den aktuellen Knoten am Ende des aktuellen Frames "
 "löschen."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1159
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
@@ -1449,7 +1433,7 @@ msgstr ""
 "Dann füge eine neue Zeile in ``Main.gd`` Am Ende der "
 "``_on_MobTimer_timeout()`` Funktion ein."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1176
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1171
 msgid ""
 "This line tells the new Mob node (referenced by the ``mob`` variable) to "
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
@@ -1459,11 +1443,11 @@ msgstr ""
 "verweist),  dass er auf jedes ``start_game``-Signal vom ``HUD``-Knoten "
 "reagieren soll, indem der die ``_on_start_game()``-Funktion aktiviert."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1176
 msgid "Finishing up"
 msgstr "Fertigstellung"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1183
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1178
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -1474,11 +1458,11 @@ msgstr ""
 "Spielerlebnis verbessert. Zögere nicht, das Gameplay mit Deinen eigenen "
 "Ideen zu erweitern."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1183
 msgid "Background"
 msgstr "Hintergrund"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1190
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1494,7 +1478,7 @@ msgstr ""
 "hat nur eine Eigenschaft: ``Color``. Wähle eine Farbe aus, die Dir gefällt, "
 "und ziehe die Größe des ``ColorRect`` so, dass es den Bildschirm abdeckt."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1197
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1192
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."
@@ -1502,11 +1486,11 @@ msgstr ""
 "Wenn Du ein Hintergrundbild hast, kannst Du auch einen ``Sprite``-Node "
 "hinzufügen."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1201
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1196
 msgid "Sound effects"
 msgstr "Soundeffekte"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1203
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1198
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -1518,7 +1502,7 @@ msgstr ""
 "Sounddateien: „House in a Forest Loop.ogg“ für Hintergrundmusik und "
 "„gameover.wav“ für den Fall, dass der Spieler verliert."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1208
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1203
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -1530,7 +1514,7 @@ msgstr ""
 "``DeathSound``. Klicke bei jedem Node auf die Eigenschaft ``Stream``, klicke "
 "auf „Lade“ und wähle die entsprechende Audiodatei aus."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1213
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1208
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -1538,17 +1522,17 @@ msgstr ""
 "Um die Musik abzuspielen, füge ``$Music.play()`` in der ``new_game()`` "
 "Funktion und ``$Music.stop()`` in der ``game_over()`` Funktion hinzu."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1216
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1211
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr ""
 "Füge schließlich ``$DeathSound.play()`` in der ``game_over()`` Funktion "
 "hinzu."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1219
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1214
 msgid "Keyboard Shortcut"
 msgstr "Tastenkürzel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1216
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. One way to "
@@ -1559,8 +1543,7 @@ msgstr ""
 "könnten. Eine Möglichkeit hierzu ist die Verwendung der „Shortcut“ -"
 "Eigenschaft des ``Button``-Nodes."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1225
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1220
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1572,11 +1555,11 @@ msgstr ""
 "Wähle in der ``HUD``-Szene den ``StartButton`` aus, und suche im Inspektor "
 "nach seiner „Shortcut“-Eigenschaft. Wähle \"Neues Shortcut\" und klicke auf "
 "das „Shortcut“-Element. Eine zweite „Shortcut“-Eigenschaft wird angezeigt. "
-"Wähle „Neues InputEventAction“ und klicke auf das neue „InputEvent“-Element. "
+"Wähle „Neue InputEventAction“ und klicke auf das neue „InputEvent“-Element. "
 "Gib schließlich in der Eigenschaft „Action“ den Namen „ui_select“ ein. Dies "
 "ist das Standardeingabeereignis, das der Leertaste zugeordnet ist."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1233
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1228
 msgid ""
 "Now when the start button appears, you can either click it or press the "
 "spacebar to start the game."
@@ -1584,7 +1567,7 @@ msgstr ""
 "Wenn nun die Start-Schaltfläche angezeigt wird, kannst Du entweder darauf "
 "klicken oder die Leertaste drücken, um das Spiel zu starten."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1237
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1232
 msgid "Project files"
 msgstr "Projektdateien"
 
@@ -1592,10 +1575,10 @@ msgstr "Projektdateien"
 msgid "You can find a completed version of this project at these locations:"
 msgstr "Eine vollständige Version dieses Projekts findest Du unter:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1240
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1235
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1241
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1236
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"

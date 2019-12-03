@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,8 +113,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:43
 msgid ""
-"There is no way to convert between the two, so if you decide you want to "
-"change to a visual shader or vice versa, you will have to start from scratch."
+"If you need to you can convert a visual shader to a text shader. However you "
+"can't convert a text shader to a visual shader."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:46
@@ -134,11 +134,23 @@ msgid ""
 "automatically."
 msgstr "编辑新创建的着色器，着色器编辑器将打开:"
 
-#: ../../docs/tutorials/shading/shader_materials.rst:59
+#: ../../docs/tutorials/shading/shader_materials.rst:58
+msgid ""
+"In the visual shader editor you can click a button and see what your visual "
+"shader looks like as shader code. This can be useful if you're trying to "
+"replicate a text shader as nodes, or it can be used as a preview for "
+"converting your visual shader to a text shader."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shader_materials.rst:67
+msgid "To learn more about visual shaders, read :ref:`doc_visual_shaders`."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shader_materials.rst:70
 msgid "Converting to ShaderMaterial"
 msgstr "转换为ShaderMaterial"
 
-#: ../../docs/tutorials/shading/shader_materials.rst:61
+#: ../../docs/tutorials/shading/shader_materials.rst:72
 #, fuzzy
 msgid ""
 "It is possible to convert from SpatialMaterial, CanvasItemMaterial and "
@@ -148,7 +160,7 @@ msgstr ""
 "可以将SpatialMaterial，CanvasItemMaterial和ParticlesMaterial转换为"
 "ShaderMaterial。 要执行此操作，请转到材质属性并启用转换选项。"
 
-#: ../../docs/tutorials/shading/shader_materials.rst:69
+#: ../../docs/tutorials/shading/shader_materials.rst:80
 msgid ""
 "Using the convert option will turn the SpatialMaterial into a ShaderMaterial "
 "with a text shader, not a visual shader."

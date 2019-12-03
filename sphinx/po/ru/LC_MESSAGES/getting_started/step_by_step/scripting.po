@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -482,41 +482,18 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:204
 msgid ""
-"In the bottom-left are the key things you need to create a connection: a "
-"node which implements the method you want to trigger (represented here as a "
-"NodePath) and the name of the method to trigger."
+"The top of the dialogue displays a list of your scene's nodes with the "
+"emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
-"В левом нижнем углу находятся ключевые поля, необходимые для создания "
-"соединения: узел, реализующий метод, который вы хотите вызвать (представлен "
-"здесь как NodePath), и имя метода для запуска."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:208
+#: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
-"The top-left section displays a list of your scene's nodes with the emitting "
-"node's name highlighted in red. Select the \"Panel\" node here. When you "
-"select a node, the NodePath at the bottom will automatically update to point "
-"to a relative path from the emitting node to the selected node."
+"The bottom of the dialogue shows the name of the method that will be "
+"created. By default, the method name will contain the emitting node's name "
+"(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
-"В левом верхнем разделе отображается список узлов вашей сцены, где имя узла "
-"вызывающего событие выделено красным цветом. Выберите узел \"Panel\". Когда "
-"вы выбираете узел, путь внизу будет автоматически обновляться, указывая "
-"относительный путь от узла вызывающего событие к выбранному узлу."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:213
-#, fuzzy
-msgid ""
-"By default, the method name will contain the emitting node's name (\"Button"
-"\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``. If you "
-"do have the \"Make Function\" check button checked, then the editor will "
-"generate the function for you before setting up the connection."
-msgstr ""
-"По умолчанию имя метода будет содержать имя излучающего узла (\"Кнопка\" в "
-"данном случае), в результате чего получится "
-"``_on_[EmitterNode]_[signal_name]``. Если кнопка-галочка \"Make Function\" "
-"установлена, то перед настройкой соединения редактор сгенерирует для вас "
-"функцию."
-
-#: ../../docs/getting_started/step_by_step/scripting.rst:218
+#: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
@@ -526,7 +503,7 @@ msgstr ""
 "таки это урок по написанию скриптов. Поэтому, ради лучшего понимания, "
 "давайте писать код самостоятельно!"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:222
+#: ../../docs/getting_started/step_by_step/scripting.rst:215
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
@@ -538,7 +515,7 @@ msgstr ""
 "<class_Node_method_get_node>`. Эта функция использует пути для извлечения "
 "узлов из любого места сцены, относительно узла, которому принадлежит скрипт."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:227
+#: ../../docs/getting_started/step_by_step/scripting.rst:220
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
@@ -546,7 +523,7 @@ msgstr ""
 "Для удобства удалите все под ``extends Panel``. Вы заполните остальную часть "
 "сценария вручную."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:230
+#: ../../docs/getting_started/step_by_step/scripting.rst:223
 msgid ""
 "Because the Button and Label are siblings under the Panel where the script "
 "is attached, you can fetch the Button by typing the following underneath the "
@@ -556,11 +533,11 @@ msgstr ""
 "прикреплен скрипт, вы можете выбрать Button, написав следующее в функции "
 "``_ready()``:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:247
+#: ../../docs/getting_started/step_by_step/scripting.rst:240
 msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "Затем напишите функцию, которая будет вызываться при нажатии кнопки:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:262
+#: ../../docs/getting_started/step_by_step/scripting.rst:255
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
@@ -568,21 +545,21 @@ msgstr ""
 "И наконец, подключите сигнал \"pressed\" от кнопок к функции ``_ready()``, "
 "используя :ref:`Object.connect() <class_Object_method_connect>`."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:278
+#: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"
 msgstr "В итоге скрипт должен выглядеть так:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:311
+#: ../../docs/getting_started/step_by_step/scripting.rst:304
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr ""
 "Запустите сцену и нажмите кнопку. Вы должны получить следующий результат:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:315
+#: ../../docs/getting_started/step_by_step/scripting.rst:308
 msgid "Why, hello there! Congratulations on scripting your first scene."
 msgstr "Поздравляем с написанием сценария к вашей первой сцене."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:319
+#: ../../docs/getting_started/step_by_step/scripting.rst:312
 msgid ""
 "A common misunderstanding regarding this tutorial is how ``get_node(path)`` "
 "works. For a given node, ``get_node(path)`` searches its immediate children. "
@@ -595,11 +572,11 @@ msgstr ""
 "должен быть дочерним элементом Panel. Если бы Button был дочерним элементом "
 "Label, код для его получения выглядел бы так:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:337
+#: ../../docs/getting_started/step_by_step/scripting.rst:330
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "Кроме того, помните, что узлы ссылаются по имени, а не по типу."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:341
+#: ../../docs/getting_started/step_by_step/scripting.rst:334
 msgid ""
 "The right-hand panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
@@ -609,7 +586,7 @@ msgstr ""
 "значений к параметрам подключенной функции. Вы можете добавлять и удалять "
 "значения разных типов."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:345
+#: ../../docs/getting_started/step_by_step/scripting.rst:338
 msgid ""
 "The code approach also enables this with a 4th ``Array`` parameter that is "
 "empty by default. Feel free to read up on the ``Object.connect`` method for "

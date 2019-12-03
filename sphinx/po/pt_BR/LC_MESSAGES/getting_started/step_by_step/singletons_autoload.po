@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,6 @@ msgstr ""
 "continuamente esses dados ao alterar cenas é trabalhoso e pode ser lento."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
@@ -74,9 +73,10 @@ msgid ""
 "same scene or class for multiple singletons, so long as they have different "
 "names."
 msgstr ""
-"`Singletons <https://en.wikipedia.org/wiki/Singleton_pattern>`_ de cena são "
-"úteis, atendendo a um caso de uso comum em que você precisa armazenar "
-"informações persistentes entre as cenas."
+"O `Padrão Singleton <https://en.wikipedia.org/wiki/Singleton_pattern>`_ é "
+"uma ferramenta útil para se usar quando é necessário armazenar informações "
+"entre cenas. No nosso caso é possível reusar a mesma cena ou classe para "
+"múltiplos singletons, contanto que eles tenham diferentes nomes."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
@@ -105,13 +105,12 @@ msgstr ""
 "projeto"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
-#, fuzzy
 msgid "Autoloading nodes and scripts can give us these characteristics."
 msgstr "Carregamento automático de nós e scripts atendem a essa necessidade."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
-msgstr "AutoLoad"
+msgstr "Carregamento Automático"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:41
 msgid ""
@@ -153,9 +152,10 @@ msgstr ""
 "\"PlayerVariables\" com:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
+#, fuzzy
 msgid ""
-"If the \"Enable\" column is checked (default true) then the singleton can "
-"simply be accessed directly:"
+"If the \"Enable\" column is checked (default ``true``) then the singleton "
+"can simply be accessed directly:"
 msgstr ""
 "Se a coluna \"Enable\" estiver marcada (default true), então o singleton "
 "pode simplesmente ser acessado diretamente:"

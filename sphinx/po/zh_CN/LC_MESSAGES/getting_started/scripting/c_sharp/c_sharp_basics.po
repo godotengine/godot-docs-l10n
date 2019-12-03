@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -367,11 +367,21 @@ msgid ""
 "matches the file name."
 msgstr "附加C#脚本需要引用一个类，该类名需要匹配其文件名。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:216
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:214
+msgid ""
+"There are some methods such as ``Get()``/``Set()``, ``Call()``/"
+"``CallDeferred()`` and signal connection method ``Connect()`` that rely on "
+"Godot's ``snake_case`` API naming conventions. So when using e.g. "
+"``CallDeferred(\"AddChild\")``, ``AddChild`` will not work because the API "
+"is expecting the original ``snake_case`` version ``add_child``. However, you "
+"can use any custom properties or methods without this limitation."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:222
 msgid "Performance of C# in Godot"
 msgstr "在Godot中C#的性能"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:224
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
 "bunnymark>`_, the performance of C# in Godot — while generally in the same "
@@ -387,11 +397,11 @@ msgstr ""
 "大多数常规脚本工作负载而言，GDScript可能足够快。C#速度更快，但与Godot通信时需"
 "要进行一些昂贵的编组（marshalling）。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:226
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:232
 msgid "Using NuGet packages in Godot"
 msgstr "在Godot中使用NuGet包"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:234
 msgid ""
 "`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
 "Godot, as with any C# project. Many IDEs are able to add packages directly. "
@@ -402,7 +412,7 @@ msgstr ""
 "一样。许多IDE都可以直接添加软件包。也可以通过在项目根目录下的 ``.csproj`` 文"
 "件中添加软件包引用来手动添加它们："
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:243
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:249
 msgid ""
 "Whenever packages are added or modified, run ``nuget restore`` in the root "
 "of the project directory. To ensure that NuGet packages will be available "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:4
 msgid "Ray-casting"
-msgstr ""
+msgstr "Lancer de rayons"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:7
 msgid "Introduction"
@@ -32,6 +32,10 @@ msgid ""
 "AI, etc. to take place. This tutorial will explain how to do this in 2D and "
 "3D."
 msgstr ""
+"Une des tâches les plus courantes dans le développement de jeu est de lancer "
+"un rayon (ou un objet de forme personnalisée) et de vérifier ce qu'il "
+"touche. Cela permet de mettre en place des comportements complexes, de l'IA, "
+"etc... Ce tutoriel explique comment faire cela en 2D et en 3D."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:14
 msgid ""
@@ -41,16 +45,24 @@ msgid ""
 "`RayCast2D <class_RayCast2D>` will work, as they will return every frame "
 "what the result of a raycast is."
 msgstr ""
+"Godot stocke toutes les informations de jeu de bas niveau dans des serveurs, "
+"alors que la scène n'est qu'une interface. En tant que tel, le ray casting "
+"est généralement une tâche de niveau inférieur. Pour les raycasts simples, "
+"les nœuds tels que :ref:`RayCast <class_RayCast>` et :ref:`RayCast2D "
+"<class_RayCast2D>` fonctionneront, car ils retourneront à chaque image le "
+"résultat du raycast."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:21
 msgid ""
 "Many times, though, ray-casting needs to be a more interactive process so a "
 "way to do this by code must exist."
 msgstr ""
+"Souvent, cependant, le ray casting doit être un processus plus interactif, "
+"donc il doit exister un moyen de le faire par le code."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:25
 msgid "Space"
-msgstr ""
+msgstr "Espace"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:27
 msgid ""
@@ -60,6 +72,11 @@ msgid ""
 "<class_CanvasItem_method_get_world_2d>`. For 3D, it's :ref:`Spatial."
 "get_world().space <class_Spatial_method_get_world>`."
 msgstr ""
+"Dans le monde physique, Godot stocke toutes les informations de collision et "
+"de physique de bas niveau dans un *espace*. L'espace 2d actuel (pour la "
+"physique 2D) peut être obtenu en accédant à :ref:`CanvasItem.get_world_2d()."
+"space <class_CanvasItem_method_get_world_2d>`. Pour la 3D, c'est :ref:"
+"`Spatial.get_world().space <class_Spatial_method_get_world>`."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:33
 msgid ""
@@ -67,10 +84,13 @@ msgid ""
 "`PhysicsServer <class_PhysicsServer>` and :ref:`Physics2DServer "
 "<class_Physics2DServer>` respectively for 3D and 2D."
 msgstr ""
+"L'espace résultant :ref:`RID <class_RID>` peut être utilisé dans :ref:"
+"`PhysicsServer <class_PhysicsServer>` et :ref:`Physics2DServer "
+"<class_Physics2DServer>` respectivement pour 3D et 2D."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:38
 msgid "Accessing space"
-msgstr ""
+msgstr "Accéder à l'espace"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:40
 msgid ""
@@ -81,6 +101,12 @@ msgid ""
 "it from outside this function may result in an error due to space being "
 "*locked*."
 msgstr ""
+"La physique de Godot s'exécute par défaut dans le même thread que la logique "
+"du jeu, mais peut être définie pour fonctionner sur un thread séparé afin de "
+"fonctionner plus efficacement. De ce fait, le seul moment où l'accès à "
+"l'espace est sûr est pendant le :ref:`Node._physics_process() "
+"<class_Node_method__physics_process>` callback. L'accès depuis l'extérieur "
+"de cette fonction peut entraîner une erreur due à un espace *verrouillé*."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:47
 msgid ""
@@ -88,22 +114,25 @@ msgid ""
 "<class_Physics2DDirectSpaceState>` and :ref:`PhysicsDirectSpaceState "
 "<class_PhysicsDirectSpaceState>` must be used."
 msgstr ""
+"Pour effectuer des requêtes dans l'espace physique, il faut utiliser :ref:"
+"`Physics2DDirectSpaceState <class_Physics2DDirectSpaceState>` et :ref:"
+"`PhysicsDirectSpaceState <class_PhysicsDirectSpaceState>`."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:52
 msgid "Use the following code in 2D:"
-msgstr ""
+msgstr "Utilisez le code suivant en 2D :"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:69
 msgid "Or more directly:"
-msgstr ""
+msgstr "Ou plus directement :"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:84
 msgid "And in 3D:"
-msgstr ""
+msgstr "Et en 3D :"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:100
 msgid "Raycast query"
-msgstr ""
+msgstr "Requête Raycast"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:102
 msgid ""
@@ -112,6 +141,10 @@ msgid ""
 "<class_Physics2DDirectSpaceState_method_intersect_ray>` may be used. For "
 "example:"
 msgstr ""
+"Pour effectuer une requête 2D raycast, la méthode :ref:"
+"`Physics2DDirectSpaceState.intersect_ray() "
+"<class_Physics2DDirectSpaceState_method_intersect_ray>` peut être utilisée. "
+"Par exemple :"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:123
 msgid ""
@@ -119,20 +152,27 @@ msgid ""
 "will be empty. If it did hit something, it will contain collision "
 "information:"
 msgstr ""
+"Le résultat est un dictionnaire. Si le rayon n'a rien touché, le "
+"dictionnaire sera vide. S'il a heurté quelque chose, il contiendra des "
+"informations sur la collision :"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:137
 msgid ""
 "The ``result`` dictionary when a collision occurs contains the following "
 "data:"
 msgstr ""
+"Le dictionnaire ``result`` en cas de collision contient les données "
+"suivantes :"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:152
 msgid "The data is similar in 3D space, using Vector3 coordinates."
 msgstr ""
+"Les données sont similaires dans l'espace 3D, en utilisant les coordonnées "
+"Vector3."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:155
 msgid "Collision exceptions"
-msgstr ""
+msgstr "Exceptions de collision"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:157
 msgid ""
@@ -141,6 +181,11 @@ msgid ""
 "has a collider, so the ray will only detect its parent's collider, as shown "
 "in the following image:"
 msgstr ""
+"Un cas d'utilisation courant pour le ray casting est de permettre à un "
+"personnage de recueillir des données sur le monde qui l'entoure. Un problème "
+"avec cela est que ce même personnage a un collisionneur, donc le rayon ne "
+"détectera que le collisionneur de son parent, comme le montre l'image "
+"suivante :"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:164
 msgid ""
@@ -148,14 +193,18 @@ msgid ""
 "optional third parameter which is an array of exceptions. This is an example "
 "of how to use it from a KinematicBody2D or any other collision object node:"
 msgstr ""
+"Pour éviter l'auto-intersection, la fonction ``intersect_ray()`` peut "
+"prendre un troisième paramètre facultatif qui est un tableau d'exceptions. "
+"Voici un exemple d'utilisation à partir d'un nœud KinematicBody2D ou de tout "
+"autre nœud d'objet de collision :"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:189
 msgid "The exceptions array can contain objects or RIDs."
-msgstr ""
+msgstr "Le tableau des exceptions peut contenir des objets ou des RIDs."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
-msgstr ""
+msgstr "Masque de collision"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:194
 msgid ""
@@ -164,6 +213,10 @@ msgid ""
 "exceptions. In this case, it is much more efficient to use the collision "
 "layer/mask system."
 msgstr ""
+"Bien que la méthode des exceptions fonctionne bien pour exclure le corps "
+"parent, elle devient très peu pratique si vous avez besoin d'une liste large "
+"et/ou dynamique d'exceptions. Dans ce cas, il est beaucoup plus efficace "
+"d'utiliser le système de masques/couche de collision."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:198
 msgid ""
@@ -171,10 +224,13 @@ msgid ""
 "For example, to use the same mask as the parent body, use the "
 "``collision_mask`` member variable:"
 msgstr ""
+"Le quatrième argument facultatif de ``intersect_ray()`` est un masque de "
+"collision. Par exemple, pour utiliser le même masque que le corps parent, "
+"utilisez la variable membre ``collision_mask`` :"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:226
 msgid "3D ray casting from screen"
-msgstr ""
+msgstr "Ray casting 3D à partir de l'écran"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:228
 msgid ""
@@ -184,6 +240,11 @@ msgid ""
 "know when it was clicked, but in case there is any desire to do it manually, "
 "here's how."
 msgstr ""
+"Le Ray casting depuis l'écran vers l'espace physique 3D est utile pour la "
+"sélection d'objets. Il n'est pas nécessaire de le faire car :ref:"
+"`CollisionObject <class_CollisionObject>` a un signal \"input_event\" qui "
+"vous indiquera quand il a été cliqué, mais si vous souhaitez le faire "
+"manuellement, voici comment."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:234
 msgid ""
@@ -193,13 +254,21 @@ msgid ""
 "because ``origin`` changes in orthogonal mode, while ``normal`` changes in "
 "perspective mode:"
 msgstr ""
+"Pour lancer un rayon depuis l'écran, vous avez besoin d'un nœud :ref:`Camera "
+"<class_Camera>`. Une ``Camera'' peut être dans deux modes de projection : "
+"perspective et orthogonale. Pour cette raison, l'origine et la direction du "
+"rayon doivent être obtenues. Ceci est dû au fait que l'``origin`` change en "
+"mode orthogonal, alors que la ``normal`` change en mode perspective :"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:242
 msgid "To obtain it using a camera, the following code can be used:"
 msgstr ""
+"Pour l'obtenir à l'aide d'une caméra, le code suivant peut être utilisé :"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:270
 msgid ""
 "Remember that during ``_input()``, the space may be locked, so in practice "
 "this query should be run in ``_physics_process()``."
 msgstr ""
+"Rappelez-vous que pendant ``_input()``, l'espace peut être verrouillé, donc "
+"en pratique cette requête doit être exécutée dans ``_physics_process()``."

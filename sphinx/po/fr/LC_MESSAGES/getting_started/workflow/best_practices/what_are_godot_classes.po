@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
-#, fuzzy
 msgid "Godot scenes and scripts are classes"
-msgstr "Enregistrer des scripts en tant que classes"
+msgstr "Les scènes de Godot et les scripts sont des classes"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
@@ -59,25 +58,23 @@ msgstr ""
 "viennent certaines des meilleures pratiques de cette série."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:20
-#, fuzzy
 msgid "Making sense of classes in Godot"
-msgstr "Importer des ressources dans Godot 3.0+"
+msgstr "Donner un sens aux classes dans Godot"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:22
-#, fuzzy
 msgid ""
 "Godot Engine provides built-in classes like :ref:`Node <class_Node>`. User-"
 "created types are not technically classes. Instead, they are resources that "
 "tell the engine a sequence of initializations to perform on one of the "
 "engine's built-in classes."
 msgstr ""
-"Le moteur Godot fournit des classes prêtes à l'emploi (comme :ref:`Node "
-"<class_Node>`), mais les types créés par l'utilisateur ne sont pas "
-"réellement des classes. Ce sont plutôt des ressources qui indiquent au "
-"moteur une séquence d'initialisation à effectuer sur une classe de moteur."
+"Le moteur Godot fournit des classes intégrées comme :ref:`Node "
+"<class_Node>`. Les types créés par l'utilisateur ne sont pas techniquement "
+"des classes. Au lieu de cela, ce sont des ressources qui indiquent au moteur "
+"une séquence d'initialisation à exécuter sur l'une des classes intégrées du "
+"moteur."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
-#, fuzzy
 msgid ""
 "Godot's internal classes have methods that register a class's data with a :"
 "ref:`ClassDB <class_ClassDB>`. This database provides runtime access to "
@@ -85,9 +82,8 @@ msgid ""
 msgstr ""
 "Les classes internes de Godot ont des méthodes qui enregistrent les données "
 "d'une classe avec un :ref:`ClassDB <class_ClassDB>`. Cette base de données "
-"permet d'accéder en temps réel aux informations de la classe (aussi appelée "
-"\"reflection\"). Les choses stockées dans la ClassDB incluent, entre autres "
-"choses....."
+"fournit un accès runtime aux informations de classe. ``ClassDB`` contient "
+"des informations sur les classes comme :"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
 msgid "properties"
@@ -106,20 +102,16 @@ msgid "signals"
 msgstr "les signaux"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
-#, fuzzy
 msgid ""
 "This ``ClassDB`` is what Objects check against when performing an operation "
 "like accessing a property or calling a method. ``ClassDB`` checks the "
 "database's records and the records of the Object's base types to see if the "
 "Object supports the operation."
 msgstr ""
-"En outre, cette ClassDB est ce que les Objects vérifient lorsqu'ils "
-"exécutent n'importe quelle opération. Accéder à une propriété ? Appeler une "
-"méthode ? Émettre un signal ? Il vérifiera les enregistrements de la base de "
-"données (ainsi que les enregistrements du type de base de l'objet) afin de "
-"voir si l'Object supporte l'opération. Chaque Object C++ défini une fonction "
-"statique `_bind_methods()` qui décrit quel contenu C++ il enregistre dans la "
-"base de donnée et comment."
+"Cette ``ClassDB``` est ce que les Objets vérifient quand ils exécutent une "
+"opération comme accéder à une propriété ou appeler une méthode. ``ClassDB`` "
+"vérifie les enregistrements de la base de données et les enregistrements des "
+"types de base de l'objet pour voir si l'objet supporte l'opération."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
 msgid ""
@@ -136,7 +128,6 @@ msgstr ""
 "`Script <class_Script>` à votre noeud."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:46
-#, fuzzy
 msgid ""
 "Objects check their attached script before the database. This is why scripts "
 "can override built-in methods. If a script defines a "
@@ -144,12 +135,11 @@ msgid ""
 "properties the Object fetches from the ClassDB. The same is true for other "
 "declarative code."
 msgstr ""
-"*Ceci* est ce qu'est un :ref:`Script <class_Script>`. Les Objects vérifient "
-"d'abord leur script avant la base de donnée, donc les scripts peuvent même "
-"redéfinir des méthodes. Si un script défini une méthode "
-"`_get_property_list()`, la donnée est ajoutée à la liste des propriétés que "
-"l'Object récupère de la base de données. Cela est aussi vrai pour les autres "
-"codes déclaratifs."
+"Les objets vérifient leur script attaché avant la base de données. C'est "
+"pourquoi les scripts peuvent remplacer les méthodes intégrées. Si un script "
+"définit une méthode ``_get_property_list()``, Godot ajoute ces données à la "
+"liste des propriétés que l'objet récupère depuis la ClassDB. Il en va de "
+"même pour les autres codes déclaratifs."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:51
 msgid ""
@@ -179,17 +169,15 @@ msgid "Scripting performances and PackedScene"
 msgstr "Performances des scripts et PackedScene"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:65
-#, fuzzy
 msgid ""
 "As the size of Objects increases, the scripts' necessary size to create them "
 "grows much, much larger. Creating node hierarchies demonstrates this. Each "
 "individual Node's logic could be several hundred lines of code in length."
 msgstr ""
-"Un problème se présente cependant. Au fur et à mesure que la taille des "
-"objets augmente, la taille nécessaire aux scripts pour les créer devient "
-"beaucoup, beaucoup plus grande. La création de hiérarchies de nœuds en est "
-"la preuve. La logique de chaque Nœud individuel peut être longue de "
-"plusieurs centaines de lignes de code."
+"Au fur et à mesure que la taille des objets augmente, la taille nécessaire "
+"aux scripts pour les créer devient beaucoup, beaucoup plus grande. La "
+"création de hiérarchies de nœuds en est la preuve. La logique de chaque Nœud "
+"individuel pourrait être de plusieurs centaines de lignes de code."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:69
 msgid ""
@@ -229,41 +217,36 @@ msgstr ""
 "plan ce qui permet de bien meilleures performances qu'avec des scripts."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
-#, fuzzy
 msgid "Scenes and scripts are objects"
-msgstr "Objets transparents"
+msgstr "Scenes et scripts sont des objets"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
-#, fuzzy
 msgid ""
 "Why is any of this important to scene organization? Because scenes *are* "
 "objects. One often pairs a scene with a scripted root node that makes use of "
 "the sub-nodes. This means that the scene is often an extension of the "
 "script's declarative code."
 msgstr ""
-"Pourquoi tout cela est-il important pour l'organisation de scène ? Parce "
-"qu'il faut comprendre que les scènes *sont* des objets. On associe souvent "
-"une scène à un nœud racine scripté qui utilise les nœuds inférieurs. Cela "
-"signifie que la scène est souvent une extension du code déclaratif du script."
+"Pourquoi tout cela est-il important pour l'organisation de la scène ? Parce "
+"que les scènes *sont* des objets. On associe souvent une scène à un nœud "
+"racine scripté qui utilise les nœuds inférieurs. Cela signifie que la scène "
+"est souvent une extension du code déclaratif du script."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
 msgid "The content of a scene helps to define:"
-msgstr "Le contenu d'une scène aide à définir:"
+msgstr "Le contenu d'une scène aide à définir :"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
-#, fuzzy
 msgid "What nodes are available to the script"
-msgstr "quels objets sont accessibles par le script ?"
+msgstr "Quels nœuds sont disponibles pour le script"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
-#, fuzzy
 msgid "How they are organized"
-msgstr "comment sont-ils organisés ?"
+msgstr "Comment ils sont organisés"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
-#, fuzzy
 msgid "How are they initialized"
-msgstr "comment sont-ils initialisés ?"
+msgstr "Comment sont-ils initialisés"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:131
 msgid "What signal connections they have with each other"

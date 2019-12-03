@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-29 12:54+0100\n"
+"POT-Creation-Date: 2019-12-03 10:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -285,8 +285,8 @@ msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
 msgstr ""
-"シーンタブからアクセスする「子ノードの追加」ダイアログ(または ``Ctrl+A`` )を"
-"押して、次のノードを持つ階層を作成します:"
+"シーンタブから「子ノードの追加」ダイアログにアクセスし(または ``Ctrl+A``を押"
+"して )、次のノードを持つ階層を作成します:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
 msgid "Panel"
@@ -325,25 +325,24 @@ msgid ""
 "Right click on the Panel node, then select \"Attach Script\" from the "
 "context menu:"
 msgstr ""
-"パネルノードを右クリックし、コンテキストメニューから「スクリプトを添付」を選"
-"択します:"
+"パネルノードを右クリックし、コンテキストメニューから「スクリプトをアタッチ」"
+"を選択します:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:136
 msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
-"スクリプト作成ダイアログがポップアップ表示されます。このダイアログボックスを"
-"使用すると、スクリプトの言語、クラス名、およびその他の関連するオプションを設"
-"定できます。"
+"スクリプト作成ダイアログが表示されます。このダイアログボックスを使用すると、"
+"スクリプトの言語、クラス名、およびその他の関連するオプションを設定できます。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"GDScriptではファイルがクラスを表します。そのためクラス名のフィールドは編集で"
-"きません。"
+"GDScriptではファイル自身がクラスを表します。そのためクラス名のフィールドは編"
+"集できません。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
 msgid ""
@@ -377,7 +376,7 @@ msgid ""
 msgstr ""
 "スクリプトを編集するには、上の画像で強調表示されている2つのボタンのいずれかを"
 "選択します。これにより、スクリプトエディタにデフォルトのテンプレートが含まれ"
-"て表示されます。"
+"て表示されます:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -385,9 +384,10 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
-"それほど多くはありません。 ``_ready()`` 関数は、ノードとそのすべての子がアク"
-"ティブなシーンに入ると呼び出されます。\\ **注:**\\  ``_ready()`` はコンストラ"
-"クタではありません。コンストラクタは ``_init()`` です。"
+"テンプレートの内容はそれほど多くはありません。 ``_ready()`` 関数は、ノードと"
+"そのすべての子がアクティブなシーンに入ると呼び出されます。\\ **注:**\\ "
+"``_ready()`` はコンストラクタではありません。コンストラクタは ``_init()`` で"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:166
 msgid "The role of the script"
@@ -428,9 +428,9 @@ msgid ""
 "the second part. For the first part, Godot provides two ways to create "
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
-"このステップでは、「peressed」シグナルをカスタム関数に接続します。接続の形成"
-"は最初の部分であり、カスタム関数の定義は2番目の部分です。最初の部分では、"
-"Godotは接続を作成する2つの方法を提供します。エディタが提供するビジュアルイン"
+"このステップでは、「pressed」シグナルをカスタム関数に接続します。最初のパート"
+"は接続の形成で、2番目のパートはカスタム関数の定義です。最初のパートでは、"
+"Godotは接続を作成する2つの方法を提供します: エディタが提供するビジュアルイン"
 "タフェースを使用する方法と、コードを使用する方法です。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:191
@@ -460,39 +460,18 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:204
 msgid ""
-"In the bottom-left are the key things you need to create a connection: a "
-"node which implements the method you want to trigger (represented here as a "
-"NodePath) and the name of the method to trigger."
+"The top of the dialogue displays a list of your scene's nodes with the "
+"emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
-"左下には、接続を作成するために必要な重要な要素として、トリガーするメソッド(こ"
-"こではNodePathとして表される)とトリガーするメソッドの名前を実装するノードがあ"
-"ります。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:208
+#: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
-"The top-left section displays a list of your scene's nodes with the emitting "
-"node's name highlighted in red. Select the \"Panel\" node here. When you "
-"select a node, the NodePath at the bottom will automatically update to point "
-"to a relative path from the emitting node to the selected node."
+"The bottom of the dialogue shows the name of the method that will be "
+"created. By default, the method name will contain the emitting node's name "
+"(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
-"左上のセクションには、シーンのノードのリストが表示され、シグナルを出すノード"
-"の名前が赤で強調表示されます。ここで「パネル」ノードを選択します。ノードを選"
-"択すると、下部のNodePathが自動的に更新され、シグナルを出すノードから選択した"
-"ノードへの相対パスを指します。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:213
-msgid ""
-"By default, the method name will contain the emitting node's name (\"Button"
-"\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``. If you "
-"do have the \"Make Function\" check button checked, then the editor will "
-"generate the function for you before setting up the connection."
-msgstr ""
-"デフォルトでは、メソッド名にはシグナルを出すノードの名前（この場合は「ボタ"
-"ン」）が含まれ、_on_ [EmitterNode] _ [signal_name]になります。 [関数の作成]"
-"チェックボックスがオンになっている場合、エディターは接続を設定する前に関数を"
-"生成します。"
-
-#: ../../docs/getting_started/step_by_step/scripting.rst:218
+#: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
@@ -502,18 +481,19 @@ msgstr ""
 "し、これはスクリプトのチュートリアルなので、学習のために、手動で行う方法に飛"
 "び込みましょう!"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:222
+#: ../../docs/getting_started/step_by_step/scripting.rst:215
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
 "<class_Node_method_get_node>`. This function uses paths to fetch nodes "
 "anywhere in the scene, relative to the node that owns the script."
 msgstr ""
-"これを実現するために、おそらくGodotプログラマーが最も使用する関数Node."
-"get_node（）を導入します。この関数は、パスを使用して、スクリプトを持つノード"
-"に関連する、シーン内の任意の場所のノードを見つけます。"
+"これを実現するために、おそらくGodotプログラマーが最も使用する: :ref:`Node."
+"get_node() <class_Node_method_get_node>`\\ を導入します。この関数は、パスを使"
+"用して、スクリプトを持つノードに関連する、シーン内の任意の場所のノードを見つ"
+"けます。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:227
+#: ../../docs/getting_started/step_by_step/scripting.rst:220
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
@@ -521,7 +501,7 @@ msgstr ""
 "便宜上、 ``extends Panel`` の下にあるすべてのものを削除します。スクリプトの残"
 "りの部分を手動で入力します。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:230
+#: ../../docs/getting_started/step_by_step/scripting.rst:223
 msgid ""
 "Because the Button and Label are siblings under the Panel where the script "
 "is attached, you can fetch the Button by typing the following underneath the "
@@ -530,11 +510,11 @@ msgstr ""
 "ButtonとLabelはスクリプトがアタッチされているPanelの下の兄弟であるため、 "
 "``_ready()`` 関数の下に次のように入力するとButtonをフェッチできます:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:247
+#: ../../docs/getting_started/step_by_step/scripting.rst:240
 msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "次に、ボタンを押したときに呼び出される関数を書きます:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:262
+#: ../../docs/getting_started/step_by_step/scripting.rst:255
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
@@ -542,20 +522,20 @@ msgstr ""
 "最後に、Object.connect（）を使用して、ボタンの「pressed」シグナルを_ready（）"
 "に接続します。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:278
+#: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"
 msgstr "最後のスクリプトは次のようになります:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:311
+#: ../../docs/getting_started/step_by_step/scripting.rst:304
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr "シーンを実行し、ボタンを押します。次の結果が得られます:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:315
+#: ../../docs/getting_started/step_by_step/scripting.rst:308
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr "あら、こんにちは!最初のシーンのスクリプト作成、おめでとうございます。"
+msgstr "あら、hello!最初のシーンのスクリプト作成、おめでとうございます。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:319
+#: ../../docs/getting_started/step_by_step/scripting.rst:312
 msgid ""
 "A common misunderstanding regarding this tutorial is how ``get_node(path)`` "
 "works. For a given node, ``get_node(path)`` searches its immediate children. "
@@ -567,11 +547,11 @@ msgstr ""
 "コードでは、これはButtonがPanelの子でなければならないことを意味します。 "
 "ButtonがLabelの子である場合、取得するコードは次のようになります:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:337
+#: ../../docs/getting_started/step_by_step/scripting.rst:330
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "また、ノードは型ではなく名前で参照される点に注意してください。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:341
+#: ../../docs/getting_started/step_by_step/scripting.rst:334
 msgid ""
 "The right-hand panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
@@ -580,12 +560,12 @@ msgstr ""
 "接続ダイアログの右側のパネルは、接続された関数のパラメータに特定の値をバイン"
 "ドするためのものです。さまざまな型の値を追加および削除できます。"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:345
+#: ../../docs/getting_started/step_by_step/scripting.rst:338
 msgid ""
 "The code approach also enables this with a 4th ``Array`` parameter that is "
 "empty by default. Feel free to read up on the ``Object.connect`` method for "
 "more information."
 msgstr ""
-"コードアプローチでは、既定では空の4番目の ``Array`` パラメータを使用して、こ"
-"れも有効にします。詳細については、 ``Object.connect`` メソッドをお読みくださ"
-"い。"
+"コードアプローチでは、デフォルトでは空の、4番目の ``Array`` パラメータを使用"
+"して、これも有効にします。詳細については、 ``Object.connect`` メソッドをお読"
+"みください。"
