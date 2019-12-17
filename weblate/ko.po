@@ -25,6 +25,7 @@
 # Sun Kim <perplexingsun@gmail.com>, 2018.
 # Taehun Yun <yooontehoon@naver.com>, 2018.
 # Yeonho Jang <siabard@gmail.com>, 2018.
+# Yongsung Kang <yongsung.kang@gmail.com>, 2019.
 # 한상철 <hanburn@naver.com>, 2018.
 # 이용재 <lyj7339@gmail.com>, 2018.
 # 박한얼 <volzhs@gmail.com>, 2018.
@@ -35,7 +36,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-03 10:51+0100\n"
-"PO-Revision-Date: 2019-12-03 07:11+0000\n"
+"PO-Revision-Date: 2019-12-17 10:52+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -511,8 +512,8 @@ msgid ""
 msgstr ""
 "Godot는 `OSI가 인정한 <https://opensource.org/licenses/MIT>`_ MIT 라이선스로 "
 "사용할 수 있는 `무료이자 오픈 소스 소프트웨어 <https://ko.wikipedia.org/wiki/"
-"자유-오픈_소스_소프트웨어>`_\\ 입니다. \"무료 맥주\"일 뿐 아니라 \"자유 연설"
-"\" 수준의 자유라는 말입니다."
+"자유-오픈_소스_소프트웨어>`_\\ 입니다. 이 말인 즉, Godot는 \"언론의 자유"
+"(Free)\"라는 뜻과 \"무료(Free) 맥주\"라는 뜻을 모두 지니고 있다는 것이죠."
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -523,15 +524,15 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"개인적으로, 비영리로, 사업으로, 그 외 어떤 이유든지 자유롭게 Godot를 다운로드"
-"하고 사용할 수 있습니다."
+"개인적으로, 비영리로, 사업 목적으로, 그 외 어떤 이유든지 자유롭게 Godot를 다"
+"운로드하고 사용할 수 있습니다."
 
 #: ../../docs/about/faq.rst:14
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Godot를 마음대로 자유롭게 수정하고, 배포하고, 재배포하고 개조할 수 있습니다. "
+"Godot를 마음대로 자유롭게 수정하고, 배포하고, 재배포하고 수정할 수 있습니다. "
 "그 이유가 비상업적이든지 상업적이든지 말이죠."
 
 #: ../../docs/about/faq.rst:16
@@ -551,9 +552,9 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
-"로고와 아이콘은 일반적으로 동일한 크리에이티브 커먼스 라이선스로 사용할 수 있"
-"습니다. Godot의 소스 코드에 포함된 일부 제 3자 라이브러리는 라이선스가 다를 "
-"수 있으니 유의하세요."
+"로고와 아이콘은 일반적으로 동일한 크리에이티브 커먼스 라이선스 하에 속합니"
+"다. Godot의 소스 코드에 포함된 일부 제 3자 라이브러리는 다른 라이선스가 적용"
+"될 수 있으므로 유의하세요."
 
 #: ../../docs/about/faq.rst:24
 msgid ""
@@ -602,7 +603,7 @@ msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:39
 msgid "**For exporting your games:**"
-msgstr "**내보내는 게임들의 경우:**"
+msgstr "**내보내는 게임의 경우:**"
 
 #: ../../docs/about/faq.rst:41
 msgid "Windows (and UWP)"
@@ -635,8 +636,8 @@ msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
-"또한 Raspberry Pi와 같은 Linux의 ARM 기반 시스템에서도 Godot를 성공적으로 사"
-"용했다는 일부 사용자들의 보고가 있습니다."
+"일부 사용자들은 Linux로 Raspberry Pi와 같은 ARM 기반 시스템에 Godot를 성공적"
+"으로 빌드하고 사용했다고 말합니다."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
@@ -644,16 +645,16 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"추가적으로 콘솔로 빌드하기 위한 비공식적인 외부 작업이 있습니다. 하지만 아직 "
-"기본 빌드 스크립트나 내보내기 템플릿으로 포함된 것은 없습니다."
+"추가적으로 콘솔로 빌드하기 위한 비공식적인 제 3자의 작업이 있습니다. 하지만 "
+"아직 그 중 기본 빌드 스크립트나 내보내기 템플릿을 포함한 것은 없습니다."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
-"더 자세한 정보는 :ref:`내보내기 <toc-learn-workflow-export>`\\ 와 :ref:`Godot"
-"를 직접 컴파일하기 <toc-devel-compiling>`\\ 를 다루는 섹션을 참고하세요."
+"자세한 정보는 :ref:`내보내기 <toc-learn-workflow-export>`\\ 와 :ref:`Godot를 "
+"직접 컴파일하기 <toc-devel-compiling>`\\ 를 다루는 섹션을 참고하세요."
 
 #: ../../docs/about/faq.rst:62
 msgid "Which programming languages are supported in Godot?"
@@ -680,9 +681,10 @@ msgid ""
 msgstr ""
 "대개 Godot 개발이나 게임 개발을 목적으로 엔진을 켜게 된다면, Godot에 네이티브"
 "로 동작하는 GDScript를 배우고 사용하는데 추천하는 언어입니다. 스크립트 언어"
-"는 장기적인 면에서 다른 로우 레벨 언어보다 퍼포먼스가 떨어지는 경향이 있지"
-"만, 프로토타입이나 소규모 제품을 제작하거나 개발 시간에 중점을 둔다면, "
-"GDScript는 게임을 개발하는데 빠르고, 친절하고, 유능한 방법을 제공합니다."
+"는 장기적인 면에서 다른 로우 레벨 언어보다 퍼포먼스가 떨어지는 경향이 있습니"
+"다. 하지만 시제품 제작이나 최소 기능 제품(MVP)을 개발하기 위해서, 그리고 판매"
+"할 때까지 걸리는 시간(TTM)에 중점을 둔다면, GDScript는 게임을 개발하는데 빠르"
+"고, 친절하고, 유능한 방법을 제공할 것입니다."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -731,8 +733,8 @@ msgstr ""
 "GDScript는 Godot에 통합된 스크립트 언어입니다. 이것은 초심자와 전문 개발자가 "
 "동등하게 Godot의 강점을 가능한 빨리 활용할 수 있도록, 짧은 코드로도 Godot의 "
 "잠재력을 극대화할 수 있도록 바닥부터 지어졌습니다. 이전에 Python 비슷한 언어"
-"를 사용해 보신 적이 있다면 익숙할 것입니다. GDScript가 제공하는 예제, 역사, "
-"그리고 전체 개요는, :ref:`GDScript 스크립팅 가이드 <doc_gdscript>`\\ 를 참고"
+"를 사용해 보신 적이 있다면 익숙할 것입니다. 예제, 역사, 그리고 GDScript가 가"
+"진 힘의 전체 개요는 :ref:`GDScript 스크립팅 가이드 <doc_gdscript>`\\ 를 참고"
 "하세요."
 
 #: ../../docs/about/faq.rst:97
@@ -742,9 +744,10 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
-"GDScript를 사용하는 여러 이유가 있습니다--특히 프로젝트의 알파/베타 단계의 프"
-"로토타입을 만들 때나, AAA급의 게임을 만들려는 것이 아니라면 말이죠-- 그러나 "
-"전체적으로 가장 두드러진 이유는 **복잡성 감소**\\ 입니다"
+"GDScript를 사용하는 여러 이유가 있습니다--특히 프로토타입을 만드는 경우, 프로"
+"젝트의 알파/베타 수준의 스테이지를 만드는 경우에, 혹은 만드는 게임이 AAA급이 "
+"아니라면 말이죠--그러나 전체적으로 가장 두드러진 이유는 **복잡성 감소**\\ 입"
+"니다"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -762,8 +765,8 @@ msgstr ""
 "Godot를 켜고 실행하는 많은 시간을 줄입니다. 개발자는 생산성에 중점을 두고 엔"
 "진에 빠르게 접근할 수 있습니다; 두 번째로 전반적인 유지 보수의 부담을 줄여줍"
 "니다. 문제의 어려움을 줄이고 엔진 개발자는 엔진 핵심 버그를 없애고 기능을 개"
-"선하는데 집중할 수 있습니다--많은 언어에서 작동하는 작은 기능을 얻으려고 많"
-"은 시간을 소모하지 않게 됩니다."
+"선하는데 집중할 수 있습니다--많은 언어에서 작동하는 자잘한 기능들을 얻으려고 "
+"많은 시간을 소모하는 일이 없게 됩니다."
 
 #: ../../docs/about/faq.rst:109
 msgid ""
@@ -777,13 +780,13 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"Godot가 오픈 소스 프로젝트가 되면서 추가 사용자를 유치하기 위해 완벽한 경험"
-"을 제공하려면, 더 통합되고 더 친근한 프로그래밍 언어를 지원하는 것이 최우선이"
-"었습니다--특히 더 친근한 언어를 지원할 때 더 나쁜 결과로 이어질 때 그랬습니"
-"다. Godot에서 다른 언어를 사용하는 것을 이해합니다 (아래에 지원하는 옵션을 참"
-"고하세요). GDScript를 사용하지 않아봤다면, **3 일** 동안 한번 사용해보세요. "
-"Godot처럼 GDScript가 강력하고 개발하는 것을 빠르게 하는 것을 본다면, 우리는 "
-"GDScript가 당신을 키운다고 생각합니다."
+"Godot가 오픈 소스 프로젝트가 되면서 부터, 처음부터 더 통합되고 완벽한 경험까"
+"지 우선 순위를 정했을 때, 추가 사용자 유치를 위한 더 친근한 프로그래밍 언어"
+"를 지원하는 것이 최우선이었습니다--특히 더 친근한 언어를 지원하는 것이 더 나"
+"쁜 결과로 이어질 때 그랬습니다. Godot에서 다른 언어를 사용하는 것을 이해합니"
+"다 (아래에 지원하는 옵션을 참고하세요). GDScript를 사용하지 않아봤다면, **3 "
+"일** 동안 한번 사용해보세요. Godot처럼 GDScript가 강력하고 개발하는 것을 빠르"
+"게 하는 것을 보게 된다면, 우리는 GDScript가 성장할 것이라고 생각합니다."
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -791,7 +794,7 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
-"GDScript 또는 동적 타입 언어에 익숙해지고 싶다면 :ref:"
+"GDScript 또는 동적 타입 언어에 익숙해지는 더 자세한 정보는 :ref:"
 "`doc_gdscript_more_efficiently` 튜토리얼을 참고하세요."
 
 #: ../../docs/about/faq.rst:122
@@ -808,16 +811,16 @@ msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
-"대부분 스크립트 가상 머신에서 나쁜 스레드 지원이 있는데, Godot는 스레드를 사"
-"용합니다 (Lua, Python, Squirrel, JS, AS 등)."
+"대부분의 스크립트 가상 머신에서 스레드 지원이 좋지 않습니다. 하지만 Godot는 "
+"스레드를 사용합니다 (Lua, Python, Squirrel, JS, AS 등)."
 
 #: ../../docs/about/faq.rst:128
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
-"대부분 스크립트 가상 머신은 클래스 확장 지원이 부족하고 Godot의 작동 방식에 "
-"맞춰 변형하자면 너무 비효율적입니다 (Lua, Python, JS)."
+"대부분의 스크립트 가상 머신은 클래스 확장 지원이 부족하고 Godot의 작동 방식"
+"에 맞춰 변형하자면 너무 비효율적입니다 (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:130
 msgid ""
@@ -826,25 +829,25 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
-"많은 존재하는 언어들은 C++ 바인딩을 위한 끔찍한 인터페이스를 가지고 있습니"
-"다. 코드 양이 많아지고 버그, 병목, 그리고 전반적으로 비효율적입니다 (Lua, "
-"Python, Squirrel, JS 등.) 우리는 많은 통합이 아닌 좋은 엔진에 중점을 두었습니"
-"다."
+"많은 존재하는 언어들은 C++ 바인딩을 위한 끔찍한 인터페이스를 갖고 있습니다. "
+"코드 양이 많아지고 버그, 병목, 그리고 전반적으로 비효율적입니다 (Lua, "
+"Python, Squirrel, JS 등.) 우리는 많은 통합이 아닌 좋은 엔진에 중점을 두고 싶"
+"었습니다."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
-"자체적인 벡터 유형이 없어서 (vector3, matrix4 등) 맞춤 타입을 사용하게 되고 "
-"성능이 크게 줄어듭니다 (Lua, Python, Squirrel, JS, AS 등)."
+"자체적인 벡터 유형이 없어서 (vector3, matrix4 등) 맞춤 유형을 사용하게 되고 "
+"성능이 크게 감소합니다 (Lua, Python, Squirrel, JS, AS 등)."
 
 #: ../../docs/about/faq.rst:136
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
-"쓰레기 수집으로 처리 지연과 쓸데없이 큰 메모리 사용을 초래합니다 (Lua, "
+"가비지 컬렉터는 처리 지연과 쓸데없이 큰 메모리 사용을 초래합니다 (Lua, "
 "Python, JS, AS 등)."
 
 #: ../../docs/about/faq.rst:138
@@ -852,8 +855,8 @@ msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
-"코드 완성, 실시간 편집 등을 (이 전부를) 지원하기 위한 코드 편집기 통합이 까다"
-"롭습니다. GDScript는 이 부분을 잘 지원합니다."
+"코드 완성, 실시간 편집 등 (이 전부를) 지원하기 위한 코드 편집기 통합이 까다롭"
+"습니다. GDScript는 이 부분을 잘 지원합니다."
 
 #: ../../docs/about/faq.rst:142
 msgid "GDScript was designed to curtail the issues above and more."
@@ -861,7 +864,7 @@ msgstr "GDScript는 위와 같은 문제들을 줄이고자 설계되었습니�
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr "Godot에서는 무슨 유형의 3D 모델을 지원하나요?"
+msgstr "Godot는 무슨 유형의 3D 모델을 지원하나요?"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
@@ -876,8 +879,8 @@ msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
-"Blender를 사용한다면 `Better Collada Exporter <https://godotengine.org/"
-"download>`_\\ 를 참고하세요."
+"Blender를 사용한다면, 우리의 `Better Collada Exporter <https://godotengine."
+"org/download>`_\\ 를 참고하세요."
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
@@ -928,7 +931,8 @@ msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
-"선택한 SDK를 지원하도록 하는지 알아보려면 아래 플러그인 질문을 참고하세요."
+"선택한 SDK에 대한 지원이 어떻게 제공되는지 알아보려면 아래 플러그인 질문을 참"
+"고하세요."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -939,7 +943,7 @@ msgid ""
 msgstr ""
 "혹시 Godot가 지원하진 않지만 무료이고 오픈 소스로 제공하는 다른 SDK를 안다면 "
 "직접 통합 작업을 시작해보세요. Godot는 한 사람의 것이 아닙니다; 커뮤니티에 속"
-"해 있고 당신과 같은 야심 찬 커뮤니티 공헌자들과 함께 자랍니다."
+"해 있고 당신과 같은 야심 찬 커뮤니티 기여자들과 함께 자랍니다."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
@@ -997,7 +1001,7 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Godot에서 Stretch 옵션을 사용해보세요; 화면 비율을 유지하는 2D Stretch가 좋습"
+"Godot에서 Stretch 설정을 사용해보세요; 화면 비율을 유지하는 2D Stretch가 좋습"
 "니다. 사용하는 방법은 :ref:`doc_multiple_resolutions` 튜토리얼에서 확인해보세"
 "요."
 
@@ -1008,8 +1012,8 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
-"최소 해상도를 선택한 다음 게임의 화면을 다른 화면 비율에 맞게 수직이나 수평으"
-"로 펴낼 수 있습니다. 아니면 화면 비율을 유지하는 대신 검은 여백이 나타나게 "
+"최소 해상도를 선택한 다음, 게임의 화면을 다른 화면 비율에 맞게 수직이나 수평"
+"으로 펼칠 수 있습니다. 아니면 화면 비율을 유지하는 대신 검은 여백이 나타나게 "
 "할 수 있습니다. 이 또한 :ref:`doc_multiple_resolutions`\\ 에서 설명합니다."
 
 #: ../../docs/about/faq.rst:210
@@ -1018,8 +1022,8 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
-"사용자 인터페이스에 대해서는 :ref:`앵커하기 <doc_size_and_anchors>`\\ 를 사용"
-"해서 Control이 이동하거나 정지해야 할 위치를 결정하세요. UI가 더 복잡하다면 "
+"사용자 인터페이스에 대해서는 :ref:`앵커 <doc_size_and_anchors>`\\ 를 사용해"
+"서 Control이 이동하거나 정지해야 할 위치를 결정하세요. UI가 더 복잡하다면 "
 "Container 사용을 고려해보세요."
 
 #: ../../docs/about/faq.rst:214
@@ -3486,6 +3490,8 @@ msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
+"대화 상자 상단에서 당신의 씬에 있는 노드 목록을 보여줍니다. 그 중 방출하는 노"
+"드의 이름은 파란색으로 강조되어 있습니다. 여기서 \"Panel\" 노드를 선택하세요."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
@@ -3493,6 +3499,9 @@ msgid ""
 "created. By default, the method name will contain the emitting node's name "
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
+"대화 상자 하단에서 만들 메서드 이름을 보여줍니다. 기본적으로 메서드 이름은 방"
+"출하는 노드의 이름 (지금의 경우는 \"Button\")을 포함하고 있습니다. 즉, "
+"``_on_[방출하는노드]_[시그널이름]``\\ 입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
@@ -4385,7 +4394,6 @@ msgid "Sprite animation"
 msgstr "스프라이트 애니메이션"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -4397,13 +4405,13 @@ msgid ""
 "the SpriteFrames panel."
 msgstr ""
 "``Player`` 노드를 클릭하고 :ref:`AnimatedSprite <class_AnimatedSprite>` 노드"
-"를 하위 노드로 추가합니다. ``AnimatedSprite``\\ 는 플레이어를 위한 외모와 애"
-"니메이션을 다룰 것입니다. 노드 옆에 주의 표시가 있습니다. ``AnimatedSprite``"
-"\\ 는 표시할 수 있는 애니메이션 목록인 :ref:`SpriteFrames "
-"<class_SpriteFrames>` 리소스가 필요합니다. 만들려면 인스펙터에서 ``Frames`` "
-"속성을 찾아 \"[비었음]\" -> \"새 SpriteFrames\"를 클릭합니다. 그런 다음 같은 "
-"위치에서 ``<SpriteFrames>``\\ 를 클릭하고 \"편집기 열기\"를 클릭해 \"스프라이"
-"트 프레임\" 패널을 엽니다:"
+"를 자식으로 추가하세요. ``AnimatedSprite``\\ 는 플레이어의 외형과 애니메이션"
+"을 다루게 됩니다. 노드 옆을 보면 주의 표시가 있습니다. ``AnimatedSprite``\\ "
+"는 :ref:`SpriteFrames <class_SpriteFrames>` 리소스가 필요합니다. "
+"SpriteFrames 리소스는 보여줄 수 있는 애니메이션 목록을 보여줍니다. 리소스를 "
+"만들려면 인스펙터에서 ``Frames`` 속성을 찾아, \"[비었음]\" -> \"새 "
+"SpriteFrames\"를 클릭하세요. 이러면 자동으로 스프라이트 프레임(SpriteFrames) "
+"패널이 열릴 것입니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
@@ -4639,16 +4647,16 @@ msgstr ""
 "다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position. "
 "We can also use ``clamp()`` to prevent it from leaving the screen. "
 "*Clamping* a value means restricting it to a given range. Add the following "
 "to the bottom of the ``_process`` function:"
 msgstr ""
-"이제 우리는 이동 방향을 갖고 있으므로, ``Player`` 의 위치를 업데이트 할 수 있"
-"고 다음 코드를 ``_process`` 함수의 맨 아래에 추가하는데, ``clamp()``\\ 를 사"
-"용해서 플레이어가 화면에서 나가지 못하게 합니다:"
+"이제 우리에게는 이동 방향이 있습니다. 즉, 플레이어의 위치를 업데이트할 수 있"
+"습니다. 그리고 ``clamp()``\\ 를 사용해서 플레이어가 화면에서 나가는 것을 방지"
+"합니다. 값을 *죄다(Clamp)*\\ 라는 것은 주어진 범위로 값을 제한한다는 뜻입니"
+"다. 다음 함수를 ``_process`` 함수 아래에 추가하세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:332
 msgid ""
@@ -4657,6 +4665,9 @@ msgid ""
 "this value ensures that your movement will remain consistent even if the "
 "frame rate changes."
 msgstr ""
+"`_process()`함수에 있는 매개변수 `delta` 는 \"frame length\" (이전 프레임이 "
+"완료되는데 걸린 시간) 를 참조 합니다. 이 값을 사용하면 프레임 레이트가 변경되"
+"어도 당신의 이동속도를 항상 일정하게 유지 할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:337
 msgid ""
@@ -5262,7 +5273,6 @@ msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr "``MessageTimer`` 로 이름지은 :ref:`Timer <class_Timer>`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:892
-#, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the *Text* field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -5270,9 +5280,9 @@ msgid ""
 "Regular.ttf\". To use this font, do the following for each of the three "
 "``Control`` nodes:"
 msgstr ""
-"``ScoreLabel``\\ 을 클릭하고 인스펙터에서 _Text_ 영역에 숫자를 입력합니다. "
-"``Control`` 노드의 기본 폰트는 작고 잘 확장되지 않습니다. game assets에 포함"
-"된 \"Xolonium-Regular.ttf\"는 폰트 파일입니다. 이 폰트를 사용하기 위해 각 "
+"``ScoreLabel``\\ 을 클릭하고 인스펙터의 *Text* 영역에 숫자를 입력하세요. "
+"``Control`` 노드의 기본 폰트는 작고 크게 만들기 어렵습니다. game assets에는 "
+"\"Xolonium-Regular.ttf\"라는 폰트 파일이 있습니다. 이 폰트를 사용하려면, 각 "
 "``Control`` 노드마다 다음과 같이 하세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:898
@@ -5306,13 +5316,12 @@ msgstr ""
 "`doc_design_interfaces_with_the_control_nodes` 를 참고하세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:915
-#, fuzzy
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
 msgstr ""
-"하단에 보이는 대로 노드를 정렬하세요. \"Anchor\" 버튼을 클릭해 컨트롤 노드의 "
-"앵커를 설정하세요:"
+"아래에 보이는 대로 노드를 정렬하세요. \"레이아웃(Layout)\" 버튼을 클릭해서 "
+"Control 노드의 레이아웃을 설정하세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:920
 msgid ""
@@ -5353,7 +5362,7 @@ msgstr "*레이아웃* : \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
 msgid "*Autowrap* : \"On\""
-msgstr ""
+msgstr "*Autowrap* : \"On\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:939
 msgid "StartButton"
@@ -5643,7 +5652,6 @@ msgstr ""
 "\"Shortcut\" 속성을 사용하는 것이 있습니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1220
-#, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -5652,11 +5660,11 @@ msgid ""
 "*Action* property, type the name ``ui_select``. This is the default input "
 "event associated with the spacebar."
 msgstr ""
-"``HUD`` 씬에서, ``StartButton``\\ 을 선택하고 인스펙터에서 _Shortcut_ 속성을 "
-"찾습니다. \"새 Shortcut\"을 선택하고 \"Shortcut\" 항목을 클릭합니다. 두 번째 "
-"_Shortcut_ 속성이 나타날 것입니다. \"새 InputEventAction\"을 선택하고 새로운 "
-"\"InputEvent\"을 클릭합니다. 마지막으로 _Action_ 속성에서, 이름을 \"ui_select"
-"\"로 적습니다. 이것은 스페이스바로 지정된 기본 입력 이벤트입니다."
+"``HUD`` 씬에서 ``StartButton``\\ 을 선택하고 인스펙터에서 *Shortcut* 속성을 "
+"찾으세요. \"새 Shortcut\"을 선택하고 \"Shortcut\" 항목을 클릭하세요. 두 번째 "
+"*Shortcut* 속성이 나타날 것입니다. \"새 InputEventAction\"을 선택하고 새로운 "
+"\"InputEvent\"을 클릭하세요. 마지막으로 *Action* 속성에서 이름을 \"ui_select"
+"\"로 입력하세요. 이것은 스페이스바로 지정된 기본 입력 이벤트입니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1228
 msgid ""
@@ -6069,7 +6077,6 @@ msgid ""
 msgstr "내보내기가 끝나면, 다음의 파일이 들어있는 폴더를 찾으실 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:274
-#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
@@ -6077,9 +6084,9 @@ msgid ""
 "suggestions for your specific OS."
 msgstr ""
 "브라우저에 `.html` 파일을 열면 게임을 할 수 있습니다. 하지만 바로 파일을 열 "
-"수는 없습니다, 그것은 웹 서버에 의해 제공되어야 합니다. 당신의 컴퓨터에 웹서"
-"버가 없으면, 구글 검색을 하여 특정 OS에서 웹서버를 설치하는 방법을 찾으실 수 "
-"있습니다."
+"수는 없습니다. 파일을 열려면 웹 서버가 필요합니다. 컴퓨터에 웹 서버를 설치하"
+"지 않았다면, 인터넷에 검색하여 특정 OS에 대한 웹 서버 설치를 찾아볼 수 있습니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
 msgid ""
@@ -6100,7 +6107,6 @@ msgstr ""
 "\"Export With Debug\"를 꺼서 이것을 없앨 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:287
-#, fuzzy
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "
 "technology and you may find some things that don't work. Make sure you have "
@@ -6108,10 +6114,10 @@ msgid ""
 "find at the `Godot Github repository <https://github.com/godotengine/godot/"
 "issues>`_."
 msgstr ""
-"WASM 에 대한 브라우저 지원은 아직 확산되지 않았습니다. 파이어폭스와 크롬은 둘"
-"다 WASM을 지원하지만, 여전히 작동하지 않는 점들을 볼 수도 있습니다. 브라우저"
-"를 최신 버전으로 업데이트하고, `Godot Github repository <https://github.com/"
-"godotengine/godot/issues>`_ 에 발견한 버그를 신고해주세요."
+"WASM은 모든 주요 브라우저는 지원하지만, 아직 떠오르는 기술로써 작동하지 않는 "
+"점들을 찾을 수 있습니다. 브라우저를 최신 버전으로 업데이트하세요. 그리고 "
+"`Godot Github 저장소 <https://github.com/godotengine/godot/issues>`_\\ 로 발"
+"견한 버그를 신고해주세요."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
 msgid "Godot’s design philosophy"
@@ -6340,16 +6346,14 @@ msgstr ""
 "들은, 참여자들에 의해 기초부터 개발되었습니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
-#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won’t ship with the engine. This may include Google AdMob, or FMOD. Any "
 "of these can come as third-party plugins instead."
 msgstr ""
-"누구든지 프로젝트에 필요한 도구들을 연결할 수 있습니다 — 다만 그것들이 엔진"
-"과 함께 제공되지 않습니다. 이것들은 아마 NViDia PhysX나 구글 애드몹, 혹은 "
-"FBX 파일 importer일 것입니다. 이들은 대신 제 3자 플러그인으로서 넣을 수 있습"
-"니다."
+"누구나 프로젝트에 필요한 독점 도구를 연결할 수 있습니다 — 단지 그것이 엔진과 "
+"함께 제공되지 않습니다. Google AdMob, 혹은 FMOD도 이에 해당될 것입니다. 이들"
+"은 대신 제 3자 플러그인으로 넣을 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
 msgid ""
@@ -6467,7 +6471,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "컨트롤(Control) 노드로 인터페이스를 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screens come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -6475,11 +6478,11 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
-"컴퓨터 디스플레이, 모바일 폰, 그리고 TV 화면은 각자의 크기와 모양을 갖습니"
+"컴퓨터 디스플레이, 모바일 폰, 그리고 TV 화면은 각자의 크기와 모양이 있습니"
 "다. 게임을 출시하려면, 게임이 다양한 화면 비율과 해상도를 지원해야 할 것입니"
 "다. 모든 플랫폼에 적용되는 반응형 인터페이스를 만드는 것은 어려울 수 있습니"
-"다. 감사하게도, Godot의 든든한 도구들로 반응형 사용자 인터페이스를 제작하고 "
-"관리할 수 있습니다."
+"다. 감사하게도, Godot에는 반응형 사용자 인터페이스(UI)를 설계하고 관리할 수 "
+"있도록 든든한 도구가 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -6505,14 +6508,13 @@ msgstr ""
 "컨테이너를 사용해서 사용자 인터페이스를 효율적으로 배치하고 배열하는 방법"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
-#, fuzzy
 msgid ""
 "The five most common containers (you can learn more about containers in the :"
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
 msgstr ""
-"다섯 가지 가장 일반적인 컨테이너 (나중에 :ref:`GUI Containers "
-"<doc_gui_containers>` 문서 페이지에서 컨테이너에 대해 더 자세하게 배울 수 있"
-"습니다)."
+"다섯 가지 가장 일반적인 컨테이너(Container) (컨테이너에 대해서는 나중에 :ref:"
+"`GUI 컨테이너(Container) <doc_gui_containers>` 문서 페이지에서 더 자세하게 배"
+"울 수 있습니다)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -6769,7 +6771,6 @@ msgstr ""
 "Degrees``  속성으로 당신은 게이지의 범위를 제한할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
-#, fuzzy
 msgid ""
 "To animate the bar, you'll want to look at the Range section. Set the "
 "``Min`` and ``Max`` properties to define the range of the gauge. For "
@@ -6779,12 +6780,13 @@ msgid ""
 "the default of ``0`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
-"막대를 애니메이트 하기 위해, 당신은 Range 섹션을 확인해야 합니다. ``Min`` 과 "
+"막대에게 애니메이션을 주기 위해, Range 섹션을 확인해봐야 합니다. ``Min`` 과 "
 "``Max`` 속성으로 게이지의 범위를 설정하세요. 예를 들어, 캐릭터의 체력을 나타"
-"내려면, 당신은 ``Min`` 을 ``0`` 으로, ``Max`` 를 캐릭터의 최대 체력으로 설정"
-"해야 할 겁니다. ``Value`` 속성을 바꿔서 막대를 업데이트 하세요. 만약 ``Min`` "
-"과 ``Max`` 를 기본 값인 ``1`` 과 ``100`` 으로 두고, ``Value`` 속성을 ``40`` "
-"으로 하면, ``Progress`` 텍스처의 40%가 보여지고 60%는 계속 안 보일 겁니다."
+"내려면 ``Min``\\ 을 ``0``\\ 으로, ``Max``\\ 를 캐릭터의 최대 체력으로 설정해"
+"야 할 것입니다. ``Value`` 속성을 바꿔서 막대를 업데이트하세요. 만약 ``Min``"
+"\\ 과 ``Max``\\ 를 기본 값인 ``1``\\ 과 ``100``\\ 으로 두고, ``Value`` 속성"
+"을 ``40``\\ 으로 하면, ``Progress`` 텍스처의 40%가 보이고 60%는 계속 숨어 있"
+"습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"
@@ -7215,31 +7217,27 @@ msgstr ""
 "응 형 UI (사용자 인터페이스) 씬을 단계별로 만들게 될 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
-#, fuzzy
 msgid "A main menu."
-msgstr "메인 메뉴"
+msgstr "메인 메뉴."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
-#, fuzzy
 msgid "A game UI with a health bar, energy bar, bomb and money counters."
-msgstr "체력 막대, 에너지 막대, 폭탄과 돈의 수를 표시하는 게임 UI"
+msgstr "체력 막대, 에너지 막대, 폭탄과 돈 개수 카운터가 있는 게임 UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`."
 msgstr ""
-"어떻게 게임 UI를 효율적으로 설계하는지, 그리고 어떻게 Godot의 컨트롤 노드를 "
-"사용하는지 배울겁니다. 이 페이지에서는 시각적인 부분에 중점을 두겠습니다: 모"
-"든 것은 편집기에서 할 수 있습니다. 어떻게 체력 막대를 코딩하는지 배우려면 :"
-"doc:`ui_code_a_life_bar`\\ 를 읽어주세요"
+"게임 UI를 효율적으로 설계하는 법과 Godot의 Control 노드를 사용하는 방법에 대"
+"해 배울 것입니다. 이 페이지에서는 시각적인 부분에 중점을 두겠습니다: 편집기에"
+"서 모두 작업할 수 있습니다. 체력 막대를 코딩하는 법에 대해 알고 싶다면 :doc:"
+"`ui_code_a_life_bar`\\ 를 읽어주세요."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
-#, fuzzy
 msgid "The GUI you're going to create."
-msgstr "당신이 곧 만들게 될 GUI"
+msgstr "앞으로 만들게 될 GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -7259,6 +7257,8 @@ msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
 "UI system works."
 msgstr ""
+"godot의 UI 시스템이 어떻게 작동하는지 알아보려면 :"
+"doc:'ui_introduction_to_the_ui_system'를 먼저 읽어보세요."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
 msgid "How to design your game UI"
@@ -7296,20 +7296,18 @@ msgstr ""
 "고 구체적인 삽화는 피하세요. 그렇지 않으면:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
-#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
-"그래픽이 플레이어의 경험에 의한 인식에서 벗어나고 귀중한 피드백을 놓칠 수도 "
-"있습니다"
+"그래픽이 플레이어의 경험에 대한 인식을 왜곡하여, 소중한 피드백을 놓치게 될 것"
+"입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
-#, fuzzy
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
 msgstr ""
-"User Experience가 제대로 작동하지 않으면, 일부 스프라이트를 다시 실행해야 합"
-"니다"
+"사용자 경험이 잘 이루어지지 못하면, 일부 스프라이트는 다시 작업해야 할 것입니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:58
 msgid ""
@@ -7330,22 +7328,20 @@ msgid "There are two ways to design your UI in Godot. You can:"
 msgstr "Godot에는 UI를 디자인하는 두 가지 방법이 있습니다. 먼저 당신은:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
-#, fuzzy
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
-"하나의 씬에 모든 것들을 제작하여, 결국 몇 개의 분기를 재사용 가능한 씬으로 저"
-"장할 수 있습니다"
+"하나의 씬에서 전부 만들어 버리고, 다시 사용할 수 있는 씬으로 분기로 만들어 저"
+"장할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
-#, fuzzy
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
-"혹은 재사용 가능한 구성 요소들을 위한 템플릿 씬들을 만들고 메인 씬에 종속 시"
-"킬 특정 구성 요소들을 만들 수 있습니다"
+"다시 사용할 수 있는 구성 요소를 위한 템플릿 씬을 만들고, 기본 씬에서 상속되"
+"는 특정 구성 요소를 만들 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -7360,13 +7356,12 @@ msgstr ""
 "시는 바와 같이 일부분을 재사용 가능하게 만들기는 쉽습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
-#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
-"Godot에서 찾을 수 있는 파일들. 대략적인 디자인보다 더 깨끗해 보이지만, 그들"
-"은 여전히 플레이스 홀더입니다"
+"Godot에서 찾을 수 있는 파일. 그래픽은 대략적인 디자인보다 더 깔끔해 보이지"
+"만, 여전히 자리 표시자입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -7390,28 +7385,26 @@ msgid "Here are my three rules of thumb to find the right containers:"
 msgstr "적당한 컨테이너를 찾는 저의 세 가지 규칙이 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
-#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button."
 msgstr ""
-"UI를 모든 것을 포괄하는 가장 큰 것부터, 라벨을 가진 막대나 버튼을 가진 패널같"
-"이, 하나의 위젯을 포함하는 가장 작은 것까지 중첩된 상자로 분해해야 합니다"
+"UI를 중첩된 상자로 분류해봅시다. 모두를 포괄하는 가장 큰 상자에서, 가장 작은 "
+"상자까지 말이죠. 라벨이 있는 막대, 패널, 버튼과 같은, 하나의 위젯도 이 상자"
+"에 포함됩니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
-#, fuzzy
 msgid "If there's some padding around an area, use a ``MarginContainer``."
-msgstr "영역 주변을 메꾸어야 한다면, ``MarginContainer`` 를 사용해야 합니다"
+msgstr "영역 주변에 여백을 만들려면, ``MarginContainer``\\ 를 사용하세요."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
-#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
-"요소들을 열이나 행으로 배열한다면, ``HBoxContainer`` 나 ``VBoxContainer`` 를 "
-"사용해야 합니다"
+"요소를 행 또는 열로 배열한다면, ``HBoxContainer`` 또는 ``VBoxContainer``\\ "
+"를 사용하세요."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
@@ -7437,9 +7430,8 @@ msgstr ""
 "``CenterContainer`` 로 그림을 중앙에 위치하게 할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
-#, fuzzy
 msgid "Interface building blocks, broken down using the three rules of thumb."
-msgstr "세 가지 규칙을 사용하여 세분화된 인터페이스 건축 블록"
+msgstr "블록으로 만든 인터페이스. 세 가지 규칙을 사용하여 분류했습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -7456,13 +7448,12 @@ msgid "Prepare the Main Menu scene"
 msgstr "메인 메뉴 씬 준비하기"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
-#, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
-"메인 메뉴를 만들어 봅시다. 하나의 씬에 메뉴를 만들겠습니다. 아무것도 없는 씬"
-"을 생성하기 위해, 씬 메뉴 -> 새 씬을 클릭합니다."
+"메인 메뉴를 만들어봅시다. 하나의 씬에 메뉴를 만들 것입니다. 비어있는 씬을 만"
+"들려면, **씬(Scene) > 새 씬(New Scene)**\\ 을 클릭하세요."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
 msgid ""
@@ -7505,13 +7496,12 @@ msgid "Margin Bottom: *80*"
 msgstr "Margin Bottom: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
-#, fuzzy
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
-"컨테이너가 창에 알맞게 하고 싶습니다. 뷰포트 에서, ``레이아웃`` 메뉴를 열고 "
-"맨 끝의 옵션인, ``Full Rect`` 를 선택하세요."
+"컨테이너가 창에 맞도록 하고 싶습니다. 뷰포트 위의 툴바에서, **레이아웃"
+"(Layout)** 메뉴를 열고, 마지막 설정을 선택하세요, **Full Rect**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
 msgid "Add the UI sprites"
@@ -7522,60 +7512,52 @@ msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
 msgstr ""
-"``MarginContainer`` 를 선택하고, ``TextureRect``  노드와 같은 UI 요소들을 만"
-"드세요. 우리는 이것들이 필요합니다:"
+"``MarginContainer`` 를 선택하고, ``TextureRect`` 노드와 같은 UI 요소들을 만드"
+"세요. 우리는 이것들이 필요합니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
-#, fuzzy
 msgid "the title or logo,"
-msgstr "타이틀이나 로고"
+msgstr "타이틀이나 로고,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
-#, fuzzy
 msgid "the three text options as individual nodes,"
-msgstr "독립적인 노드로 된, 세 개의 문자 옵션"
+msgstr "세 개의 텍스트 설정. 개별의 노드로 됨,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
-#, fuzzy
 msgid "the version note,"
-msgstr "버전 노트"
+msgstr "버전 노트,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-#, fuzzy
 msgid "and the main menu’s illustration."
-msgstr "그리고 메인 메뉴의 삽화"
+msgstr "그리고 메인 메뉴의 삽화."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press ``Meta+A`` on your keyboard. Start to "
 "type ``TextureRect`` to find the corresponding node and press enter. With "
 "the new node selected, press ``Meta+D`` five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
-"``노드 추가`` 버튼을 누르거나 키보드의 ``Control+A`` 를 누르세요. "
-"``TextureRect`` 를 검색하고 일치하는 노드를 찾아서 엔터 키를 누르세요. 새로"
-"운 노드를 선택하고, ``Control+D`` 를 5 번 눌러 다섯 개의 ``TextureRect`` 인스"
+"**노드 추가(Add Node)** 버튼을 누르거나 키보드의 ``Meta+A``\\ 를 누르세요. "
+"``TextureRect``\\ 를 검색하고 일치하는 노드를 찾아서 엔터 키를 누르세요. 새로"
+"운 노드를 선택하고, ``Meta+D``\\ 를 5 번 눌러 다섯 개의 ``TextureRect`` 인스"
 "턴스를 만드세요."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
 "property and click **[empty] > Load**. A file browser opens and lets you "
 "pick a sprite to load into the texture slot."
 msgstr ""
-"각 노드를 선택하세요. 인스펙터에서, ``Texture`` 속성을 찾고 , ``[비었음]`` -"
-"> ``불러오기``\\ 를 클릭하세요. 파일 브라우저가 열리면 텍스처 슬롯 안에 있는 "
-"스프라이트를 불러올 수 있습니다."
+"각 노드를 선택하세요. 인스펙터에서 ``Texture`` 속성을 찾고, ``[비었음]"
+"([empty])`` -> ``불러오기(Load)``\\ 를 클릭하세요. 파일 브라우저가 열리면 텍"
+"스처 슬롯 안에 있는 스프라이트를 불러올 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
-#, fuzzy
 msgid "The file browser lets you find and load textures."
-msgstr "파일 브라우저에서 당신은 불러올 텍스처를 찾으실 수 있습니다"
+msgstr "파일 브라우저에서 불러올 텍스처를 찾을 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
-#, fuzzy
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
@@ -7583,14 +7565,14 @@ msgid ""
 "rename them. Nothing has been placed in containers yet so this should look "
 "messy."
 msgstr ""
-"이 작업을 모든 ``TextureRect`` 노드에 반복하세요. 당신은 각각의 노드에서 로"
-"고, 삽화, 세 개의 메뉴 옵션 그리고 버전 노트를 가져야 합니다. 그 후, 씬 탭에"
-"서 각 노드들을 더블 클릭하고 이름을 바꿉니다."
+"이 작업을 나머지 ``TextureRect`` 노드에서 반복하세요. 그러고 나면 각 노드마"
+"다 로고, 삽화, 세 개의 메뉴 옵션 그리고 버전 노트를 갖고 있을 것입니다. 그 "
+"후, 씬 탭에서 각 노드를 더블 클릭하고 이름을 바꾸세요. 컨테이너에 아직 아무 "
+"노드도 놓지 않아서 지금은 분명히 노드가 어질러져 있을 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
-#, fuzzy
 msgid "The six nodes with textures loaded."
-msgstr "텍스처가 로드된, 여섯 개의 노드들"
+msgstr "텍스처를 불러온 6 개의 노드."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
 msgid ""
@@ -7639,25 +7621,24 @@ msgstr ""
 "른쪽에 있어야 합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
-#, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr ""
-"네 개의 중첩된 컨테이너를 갖고 있어야 하고, TextureRect 노드가 밑에 있어야 합"
-"니다"
+"4 개의 중첩된 컨테이너가 있고, TextureRect 노드가 컨테이너 옆에 있어야 합니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
 "version note. Drag and drop them into the ``VBoxContainer``. The nodes "
 "should position automatically."
 msgstr ""
-"노드 트리에서, 왼쪽에 놓을 모든 ``TextureRect`` 노드를 선택하세요: 로고, 메"
-"뉴 옵션 그리고 버전 노트입니다. ``VBoxContainer``\\ 로 드래그 앤 드롭하세요. "
-"노드는 자동으로 위치가 맞춰집니다."
+"노드 트리에서, 왼쪽 측면에 있어야 할 모든 ``TextureRect`` 노드를 선택하세요: "
+"로고, 메뉴 설정 (Continue, NewGame, Options), 그리고 버전 노트. "
+"``VBoxContainer``\\ 로 드래그 앤 드롭하세요. 노드는 자동으로 위치가 맞춰질 것"
+"입다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "Containers automatically place and resize textures"
@@ -7668,17 +7649,14 @@ msgid "We're left with two problems to solve:"
 msgstr "우리는 해결해야 할 두 가지 문제가 남았습니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid "The characters on the right aren't centered."
-msgstr "오른쪽의 캐릭터가 중앙이 아닙니다"
+msgstr "오른쪽의 Characters가 중앙이 아닙니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-#, fuzzy
 msgid "There's no space between the logo and the other UI elements."
-msgstr "로고와 다른 UI 요소들 사이에 공간이 없습니다"
+msgstr "로고와 다른 UI 요소들 사이에 공간이 없습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "
@@ -7689,21 +7667,21 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
-"오른쪽에 캐릭터가 중앙에 오게 하려면, 먼저 ``CenterContainer``\\ 를  선택합니"
-"다. 그 후 인스펙터에서, ``Size Flags`` 카테고리로 내려가 ``Vertical`` 속성의 "
-"오른쪽에 있는 영역을 클릭하고, ``Expand``\\ 와 ``Fill``\\ 을 체크하세요. "
-"``Horizontal`` 속성에도 똑같이 적용합니다. 이렇게 하면 ``CenterContainer``\\ "
-"가 ``VBoxContainer``\\ 처럼 모든 이용 가능한 영역으로 펴집니다. 마지막으로 캐"
-"릭터를 ``CenterContainer``\\ 에 드래그 앤 드롭 하세요. 캐릭터 요소는 자동으"
-"로 중앙에 자리 잡을 것입니다."
+"오른쪽에 캐릭터가 중앙에 오게 하려면, 먼저 ``CenterContainer``\\ 를 선택하세"
+"요. 그 후 인스펙터에서, **Size Flags** 카테고리로 내려가서 **Vertical** 속성"
+"의 오른쪽에 있는 영역을 클릭하세요. 거기에서 **Expand**\\ 와 **Fill**\\ 을 체"
+"크하세요. **Horizontal** 속성에도 똑같이 적용하세요. 이렇게 하면 "
+"``CenterContainer``\\ 는 ``VBoxContainer``\\ 의 영역 안에서 사용 가능한 영역 "
+"전체로 펼쳐집니다. 마지막으로 Characters 노드를 ``CenterContainer``\\ 에 드래"
+"그 앤 드롭 하세요. Characters의 요소는 자동으로 중앙에 자리 잡을 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
-#, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer."
 msgstr ""
-"캐릭터 노드는 CenterContainer에 배치되자마자 화면의 오른쪽의 중앙에 있습니다"
+"Characers 노드는 CenterContainer에 배치하자마자 화면의 우측 중앙에 위치하게 "
+"됩니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
 #, fuzzy

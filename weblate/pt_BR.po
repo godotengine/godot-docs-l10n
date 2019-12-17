@@ -70,12 +70,14 @@
 # Lucas Vitor <lucasvitorifg@gmail.com>, 2018.
 # Luccas Brandão <srluccasbrandao@gmail.com>, 2018.
 # Luciano Pestana Santos <lucianopestana@hotmail.com>, 2018.
+# Luigi <luigimendeszanchett@gmail.com>, 2019.
 # Luiz Montevechio <montevechiol@gmail.com>, 2019.
 # Luk3M <luk3@hotmail.com.br>, 2018.
 # M4gma <lucboari@gmail.com>, 2018.
 # Marcelo de Farias <anjonegro2100@gmail.com>, 2019.
 # Marcus Correia <marknokalt@live.com>, 2018-2019.
 # Matheus <matheus.cumpian@hotmail.com>, 2018.
+# Matheus Moutinho Vieira <mmoutinhov@gmail.com>, 2019.
 # Matheus Paiva <matheus75679@gmail.com>, 2019.
 # Matheus Victor <matheusvictor870@gmail.com>, 2018.
 # Mauricio Luan Carneiro deSouza <newmailmlcs@gmail.com>, 2018.
@@ -128,8 +130,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-03 10:51+0100\n"
-"PO-Revision-Date: 2019-12-03 07:09+0000\n"
-"Last-Translator: Joaquim Ferreira <joaquimferreira1996@bol.com.br>\n"
+"PO-Revision-Date: 2019-12-16 23:50+0000\n"
+"Last-Translator: Lauan Souza <lauan.s.souza@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -148,7 +150,7 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"A documentação de Godot está disponível em vários idiomas e versões. Expanda "
+"A documentação do Godot está disponível em vários idiomas e versões. Expanda "
 "o painel \"Ler a Documentação\" na parte inferior da barra lateral para ver "
 "a lista."
 
@@ -2234,7 +2236,7 @@ msgid ""
 msgstr ""
 "No centro, você tem a **Barra de Ferramentas** no topo, onde você encontra "
 "as ferramentas para mover, redimensionar ou travar objetos da sua cena. A "
-"barra se altera conforme você alterna entre diferentes workspaces"
+"barra se altera conforme você alterna entre diferentes workspaces."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:168
@@ -3746,6 +3748,8 @@ msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
+"A parte superior da caixa de diálogo exibe uma lista dos nós da cena com o "
+"nome do nó emissor destacado em azul. Selecione o nó \"Painel\" aqui."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
@@ -3753,6 +3757,9 @@ msgid ""
 "created. By default, the method name will contain the emitting node's name "
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
+"A parte inferior da caixa de diálogo mostra o nome do método que será "
+"criado. Por padrão, o nome do método conterá o nome do nó emissor (\"Botão\" "
+"neste caso), resultando em `` _on_ [EmitterNode] _ [signal_name] ``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
@@ -4365,16 +4372,15 @@ msgstr ""
 "de erro."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"Em baixo da janela há um campo rotulado \"Método no nó\". Esse é o nome da "
-"função no roteiro do nó alvo que você quer usar. Por padrão, Godot vai criar "
-"essa função usando a convenção de nomenclatura "
+"Em baixo da janela há um campo rotulado \"Método Receptor\". Esse é o nome "
+"da função no script do nó alvo que você quer usar. Por padrão, a Godot "
+"criará essa função usando a convenção de nomenclatura "
 "``_on_<node_name>_<signal_name>`` mas você pode mudá-lo se desejar."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:68
@@ -4673,7 +4679,6 @@ msgid "Sprite animation"
 msgstr "Animação por Sprites"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:99
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -4690,9 +4695,9 @@ msgstr ""
 "um símbolo de alerta ao lado do nó. Um ``AnimatedSprite`` exige um recurso "
 "do tipo :ref:`SpriteFrames <class_SpriteFrames>` (quadros de sprite), que é "
 "uma lista das animações que ele pode mostrar. Para criar um, encontre a "
-"propriedade ``Frames`` no Inspetor e clique em \"<null>\" -> \"Novo "
-"SpriteFrames\". Em seguida, no mesmo local, clique em ``<SpriteFrames>``, "
-"para abrir o painel \"Animações\":"
+"propriedade ``Frames`` no Inspetor e clique em \"[empty]\" -> \"Novo "
+"SpriteFrames\". Isto deve abrir automaticamente o painel de Quadros de "
+"Sprite (SpriteFrames panel)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""

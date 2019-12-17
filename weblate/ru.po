@@ -78,6 +78,8 @@
 # Siarhei Mashkarniou <irondrain@gmail.com>, 2018.
 # stalker3204 <stalker3204@yandex.ru>, 2019.
 # S.traiker.D <l1evilone@gmail.com>, 2018.
+# Sub Atom <pavelotmorozik@gmail.com>, 2019.
+# sunlazor <alxpho@gmail.com>, 2019.
 # teriva <spirin.cos@yandex.ru>, 2018.
 # Vadim Ivshin <vadim.ivshin@gmail.com>, 2019.
 # Vladislav <onion.ring@mail.ru>, 2019.
@@ -96,6 +98,7 @@
 # Дарисон ДиДжей Младший <xd02-02@mail.ru>, 2019.
 # Дмитрий <Aress.87@mail.ru>, 2019.
 # Дмитрий Ефимов <daefimov@gmail.com>, 2018-2019.
+# Евгений <ge-rom@mail.ru>, 2019.
 # Егор Бураков <fend.q@mail.ru>, 2018.
 # Егор Рябуха (REgorion) <ryrgor@gmail.com>, 2018.
 # Игорь Д <protorian.di@gmail.com>, 2018-2019.
@@ -113,8 +116,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-03 10:51+0100\n"
-"PO-Revision-Date: 2019-12-03 07:09+0000\n"
-"Last-Translator: Rendjey <Viktor.ayfil@gmail.com>\n"
+"PO-Revision-Date: 2019-12-15 05:53+0000\n"
+"Last-Translator: Sub Atom <pavelotmorozik@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -1657,7 +1660,6 @@ msgid ":ref:`doc_inspector_plugins`"
 msgstr ":ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:67
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
 msgstr ":ref:`doc_visual_shader_plugins`"
 
@@ -1665,7 +1667,7 @@ msgstr ":ref:`doc_visual_shader_plugins`"
 #: ../../docs/about/docs_changelog.rst:193
 #: ../../docs/tutorials/threads/index.rst:2
 msgid "Multi-threading"
-msgstr "Много-поточность"
+msgstr "Многопоточность"
 
 #: ../../docs/about/docs_changelog.rst:72
 msgid ":ref:`doc_using_multiple_threads`"
@@ -3730,6 +3732,8 @@ msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
+"В верхней части диалогового окна отображается список узлов сцены(источник "
+"сигнала помечен синим цветом). Выберите здесь узел \"Panel\"."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
@@ -3737,6 +3741,10 @@ msgid ""
 "created. By default, the method name will contain the emitting node's name "
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
+"В низу диалогового окна указано имя метода, который будет создан. По "
+"умолчанию, имя будет содержать название узла “испускающего” сигнал (в данном "
+"случае “Button”). В результате мы получим "
+"``_on_[EmitterNode]_[signal_name]``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
@@ -4266,18 +4274,18 @@ msgid "Timer example"
 msgstr "Пример таймера"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
 "Чтобы увидеть, как работают сигналы, давайте попробуем использовать узел :"
-"ref:`Timer <class_Timer> . Создайте новую сцену с узлом Node и двумя "
-"дочерними узлами: таймер и :ref:`спрайт <class_Sprite>`. Вы можете "
-"использовать иконку Godot для текстуры спрайта или любое другое изображение, "
-"которое вам нравится. Присоедините скрипт к корневому узлу, но пока не "
-"добавляйте в него никакого кода."
+"ref:`Timer <class_Timer>  ноду. Создайте новую сцену с узлом Node2D и двумя "
+"дочерними узлами: таймер и :ref:`спрайт <class_Sprite>`. В структуре сцены "
+"переименуйте Node2D в TimerExample.  Вы можете использовать иконку Godot для "
+"текстуры спрайта или любое другое изображение, которое вам нравится. "
+"Присоедините скрипт к корневому узлу, но пока не добавляйте в него никакого "
+"кода."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -4318,14 +4326,14 @@ msgstr ""
 "генерируется каждый раз, когда таймер достигает ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
-#, fuzzy
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
 "the signals panel. You'll see the following window, where you can define how "
 "you want to connect the signal:"
 msgstr ""
-"Нажмите на сигнал  \"timeout()\" и после на кнопку \"Присоединить...\". Вы "
-"увидите окно, где вы можете определить, как вы хотите подключить сигнал:"
+"Нажмите на сигнал «timeout ()» и нажмите «Connect ...» в нижней части панели "
+"сигналов. Вы увидите следующее окно, где вы можете определить, как вы хотите "
+"подключить сигнал:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:55
 msgid ""
@@ -4348,17 +4356,17 @@ msgstr ""
 "сообщение об ошибке."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"В нижней части окна находится поле с надписью \"Method In Node\". Это имя "
+"В нижней части окна находится поле с надписью \"Receiver Method\". Это имя "
 "функции в скрипте данного узла, который требуется использовать. По умолчанию "
 "Godot создаст эту функцию, используя соглашение об именовании "
-"``_on_<node_name>_<signal_name>``, но вы можете изменить его, если хотите."
+"``_on_<node_name>_<signal_name>``, но вы можете изменить его по своему "
+"усмотрению."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:68
 msgid ""
@@ -4675,9 +4683,8 @@ msgstr ""
 "с узлом. ``AnimatedSprite`` требует ресурс :ref:`SpriteFrames "
 "<class_SpriteFrames>`, который представляет собой список отображаемых "
 "анимаций. Чтобы его создать, найдите свойство ``Frames`` в окне инспектора и "
-"кликните на «[пусто]»-> «Новый SpriteFrames». Далее, в том же месте, нажмите "
-"кнопку ``<SpriteFrames>``, а затем нажмите кнопку «Открыть редактор», чтобы "
-"открыть панель «SpriteFrames»:"
+"кликните на «[empty]»-> «New SpriteFrames». Далее, в том же месте, нажмите "
+"кнопку ``<SpriteFrames>``. Панель «SpriteFrames» откроется автоматически:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
@@ -4931,8 +4938,9 @@ msgid ""
 "to the bottom of the ``_process`` function:"
 msgstr ""
 "Теперь, когда у нас есть направление движения, мы можем обновить позицию "
-"``Player`` и использовать функцию ``clamp()``, чтобы он не выходил за "
-"границы экрана, добавив ее в нижнюю часть функции ``_process``:"
+"игрока. Мы также можем использовать ``clamp()``, чтобы предотвратить выход "
+"из экрана. *Clamping* означает ограничение движения данным диапазоном."
+"Добавьте следующее к нижней части функции ``_process``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:332
 msgid ""
@@ -5576,7 +5584,6 @@ msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` названный ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:892
-#, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the *Text* field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -5584,7 +5591,7 @@ msgid ""
 "Regular.ttf\". To use this font, do the following for each of the three "
 "``Control`` nodes:"
 msgstr ""
-"Нажмите на ``ScoreLabel`` и введите число в поле _Text_ в Инспекторе. "
+"Нажмите на ``ScoreLabel`` и введите число в поле *Text* в Инспекторе. "
 "Стандартный шрифт для узлов ``Control`` мал и плохо масштабируется. "
 "Существует файл шрифта, включенный в игровые ресурсы под названием "
 "\"Xolonium-Regular.ttf\". Чтобы использовать этот шрифт, выполните следующие "
@@ -5670,7 +5677,7 @@ msgstr "``Макет``: \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
 msgid "*Autowrap* : \"On\""
-msgstr ""
+msgstr "*Autowrap* : \"On\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:939
 msgid "StartButton"
@@ -5963,7 +5970,6 @@ msgstr ""
 "является использование свойства \"Shortcut\" узла ``Button``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1220
-#, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -5972,10 +5978,10 @@ msgid ""
 "*Action* property, type the name ``ui_select``. This is the default input "
 "event associated with the spacebar."
 msgstr ""
-"В сцене ``HUD`` выберите ``StartButton`` и найдите его свойство _Shortcut_ в "
+"В сцене ``HUD`` выберите ``StartButton`` и найдите его свойство *Shortcut* в "
 "инспекторе. Выберите \"New Shortcut\" и нажмите на пункт \"Shortcut\". "
-"Появится второе свойство _Shortcut_. Выберите \"New InputEventAction\" и "
-"нажмите на новый \"InputEvent\". Наконец, в свойстве _Action_ введите имя "
+"Появится второе свойство *Shortcut*. Выберите \"New InputEventAction\" и "
+"нажмите на новый \"InputEvent\". Наконец, в свойстве *Action* введите имя "
 "\"ui_select\". Это событие ввода по умолчанию, связанное с пробелом."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1228
@@ -6413,7 +6419,6 @@ msgstr ""
 "файлы:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:274
-#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
@@ -6423,7 +6428,8 @@ msgstr ""
 "Просмотр файла `.html` в браузере позволяет вам воспроизводить игру. Однако, "
 "вы не сможете открыть файл напрямую, т.к. он должен обслуживаться веб-"
 "сервером. Если у вас на компьютере нет такого сервера, вы можете "
-"использовать Google, чтобы найти варианты для вашей операционной системы."
+"использовать поисковые сервисы, чтобы найти варианты для вашей операционной "
+"системы."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
 msgid ""
@@ -6446,7 +6452,6 @@ msgstr ""
 "отладкой), когда экспортируете проект."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:287
-#, fuzzy
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "
 "technology and you may find some things that don't work. Make sure you have "
@@ -6454,11 +6459,11 @@ msgid ""
 "find at the `Godot Github repository <https://github.com/godotengine/godot/"
 "issues>`_."
 msgstr ""
-"Большинство браузеров не поддерживают WASM. Firefox и Chrome обладают такой "
-"поддержкой, но вы можете обнаружить некоторые вещи, которые все ещё не "
-"работают. Убедитесь, что ваш браузер обновлен до найсвежайшей версии и "
-"отправляйте отчет об ошибках, которые вы обнаружили, в репозиторий `Godot "
-"Github - <https://github.com/godotengine/godot/issues>`_."
+"Хотя WASM поддерживается во всех основных браузерах, это все еще "
+"развивающаяся технология, и вы можете обнаружить некоторые вещи, которые не "
+"работают. Убедитесь, что вы обновили браузер до последней версии и сообщите "
+"о любых обнаруженных ошибках в `репозитории Godot Github <https://github.com/"
+"godotengine/godot/issues>`_."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
 msgid "Godot’s design philosophy"
@@ -6697,16 +6702,14 @@ msgstr ""
 "бесплатными. По большей части, они разрабатываются авторами с нуля."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
-#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won’t ship with the engine. This may include Google AdMob, or FMOD. Any "
 "of these can come as third-party plugins instead."
 msgstr ""
 "Любой может подключить собственные инструменты для нужд своих проектов - они "
-"не будут поставляться с движком. Это может быть Nvidia PhysX, Google Admob "
-"или импортер файлов FBX. Любой из них может использоваться как сторонний "
-"плагин."
+"не будут поставляться с движком. Это может быть , например, Google Admob или "
+"FMOD . Любой из них может использоваться как сторонние плагины."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
 msgid ""
@@ -6872,13 +6875,12 @@ msgstr ""
 "использованием контейнеров"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
-#, fuzzy
 msgid ""
 "The five most common containers (you can learn more about containers in the :"
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
 msgstr ""
-"Пять самых используемых контейнеров (позже вы можете изучить больше о "
-"контейнерах на странице :ref:`GUI Containers <doc_gui_containers>`)."
+"Пять самых используемых контейнеров (больше информации о контейнерах на "
+"странице :ref:`GUI Containers <doc_gui_containers>`)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -7035,9 +7037,8 @@ msgstr ""
 "узла."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
-#, fuzzy
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr "``Tile`` повторяет текстуру, но не масштабируется"
+msgstr "``Tile`` повторяет текстуру, но не масштабирует."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
 msgid ""
@@ -7142,9 +7143,9 @@ msgid ""
 "the gauge."
 msgstr ""
 "``Mode`` контролирует направление, в котором расширяется шкала прогресса: "
-"горизонтально, вертикально или радиально. Если вы установите радиально, то "
-"``Initial Angle`` и ``Fill Degrees`` позволят ограничить диапазон заполнения "
-"бара."
+"горизонтальное, вертикальное или радиальное. Если вы установите радиальное, "
+"то ``Initial Angle`` и ``Fill Degrees`` позволят ограничить диапазон "
+"заполнения бара."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
 #, fuzzy
