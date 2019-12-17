@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -373,7 +373,6 @@ msgid "Spread"
 msgstr "Propagation"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:200
-#, fuzzy
 msgid ""
 "This parameter is the angle in degrees which will be randomly added in "
 "either direction to the base ``Direction``. A spread of ``180`` will emit in "
@@ -381,8 +380,9 @@ msgid ""
 "parameter must be greater than 0."
 msgstr ""
 "Ce paramètre est l'angle en degrés qui sera ajouté aléatoirement dans l'une "
-"ou l'autre direction à la base ``Direction``. Une propagation de ``180`` "
-"émettra dans toutes les directions (+/- 180)."
+"ou l'autre direction à la ``Direction`` de base. Une propagation de ``180`` "
+"émettra dans toutes les directions (+/- 180). Pour que la propagation fasse "
+"quoi que ce soit, le paramètre \"Initial Velocity\" doit être supérieur à 0."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:208
 msgid "Gravity"

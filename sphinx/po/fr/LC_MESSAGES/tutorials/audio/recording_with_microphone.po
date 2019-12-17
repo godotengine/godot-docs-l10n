@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:4
 msgid "Recording with microphone"
-msgstr ""
+msgstr "Enregistrement avec microphone"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:6
 msgid ""
 "Godot supports in-game audio recording for Windows, macOS, Linux, Android "
 "and iOS."
 msgstr ""
+"Godot prend en charge l'enregistrement audio en jeu pour Windows, MacOS, "
+"Linux, Android et iOS."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:9
 msgid ""
@@ -33,17 +35,21 @@ msgid ""
 "support for this tutorial: `<https://github.com/godotengine/godot-demo-"
 "projects/tree/master/audio/mic_record>`_."
 msgstr ""
+"Une démo simple est incluse dans les projets de démonstration officiels et "
+"sera utilisée comme support pour ce tutoriel : `<https://github.com/"
+"godotengine/godot-demo-projects/tree/master/audio/mic_record>`_."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:14
-#, fuzzy
 msgid "The structure of the demo"
-msgstr "L'échelle du nœud racine."
+msgstr "La structure de la démo"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:16
 msgid ""
 "The demo consists of a single scene. This scene includes two major parts: "
 "the GUI and the audio."
 msgstr ""
+"La démo consiste en une seule scène. Cette scène comprend deux parties "
+"principales : l'interface graphique et l'audio."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:19
 msgid ""
@@ -51,6 +57,10 @@ msgid ""
 "the effect ``Record`` is created to handle the audio recording. An "
 "``AudioStreamPlayer`` named ``AudioStreamRecord`` is used for recording."
 msgstr ""
+"Nous nous concentrerons sur la partie audio. Dans cette démo, un bus nommé "
+"``Record`` avec l'effet ``Record`` est créé pour gérer l'enregistrement "
+"audio. Un ``AudioStreamPlayer`` nommé ``AudioStreamRecord`` est utilisé pour "
+"l'enregistrement."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:40
 msgid ""
@@ -61,6 +71,12 @@ msgid ""
 "`set_recording_active() "
 "<class_AudioEffectRecord_method_set_recording_active>`."
 msgstr ""
+"L'enregistrement audio est géré par la ressource :ref:"
+"`class_AudioEffectRecord` qui possède trois méthodes : :ref:`get_recording() "
+"<class_AudioEffectRecord_method_get_recording>`, :ref:`is_recording_active() "
+"<class_AudioEffectRecord_method_is_recording_active>`, et :ref:"
+"`set_recording_active() "
+"<class_AudioEffectRecord_method_set_recording_active>`."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:64
 msgid ""
@@ -68,6 +84,9 @@ msgid ""
 "presses the ``RecordButton``, the effect is enabled with "
 "``set_recording_active(true)``."
 msgstr ""
+"Au début de la démo, l'effet d'enregistrement n'est pas actif. Lorsque "
+"l'utilisateur appuie sur le ``RecordButton``, l'effet est activé avec "
+"``set_recording_active(true)``."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:68
 msgid ""
@@ -75,15 +94,23 @@ msgid ""
 "the recorded stream can be stored into the ``recording`` variable by calling "
 "``effect.get_recording()``."
 msgstr ""
+"À la prochain pression sur le bouton, comme ``effect."
+"is_recording_active()``est ``true``, le flux enregistré peut être stocké "
+"dans la variable ``recording`` en appelant ``effect.get_recording()``."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:86
 msgid ""
 "To playback the recording, you assign the recording as the stream of the "
 "``AudioStreamPlayer`` and call ``play()``."
 msgstr ""
+"Pour lire l'enregistrement, vous affectez l'enregistrement comme le flux du "
+"``AudioStreamPlayer`` et appelez ``play()``."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:97
 msgid ""
 "To save the recording, you call ``save_to_wav()`` with the path to a file. "
 "In this demo, the path is defined by the user via a ``LineEdit`` input box."
 msgstr ""
+"Pour enregistrer l'enregistrement, vous appelez ``save_to_wav()`` avec le "
+"chemin vers un fichier. Dans cette démo, le chemin d'accès est défini par "
+"l'utilisateur via une zone de saisie ``LineEdit``."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,9 +67,9 @@ msgid ""
 "is running at. This rate can vary over time and devices."
 msgstr ""
 "La fréquence a laquelle la méthode ``_process()`` est appelée, est "
-"synchronisée avec le nombre d'image par seconde de votre application. Il est "
-"important de noter que le nombre d'image par seconde peut varier avec temps "
-"et selon les supports."
+"synchronisée avec le nombre d'images par seconde de votre application. Il "
+"est important de noter que le nombre d'images par seconde peut varier avec "
+"le temps et selon les supports."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -226,22 +226,25 @@ msgstr ""
 "<class_Object_method__notification__notification>` dans votre script :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
+#, fuzzy
 msgid ""
 "The documentation of each class in the :ref:`Class Reference <toc-class-"
 "ref>` shows the notifications it can receive. However, in most cases "
-"GDScript provides simpler overrideable functions."
+"GDScript provides simpler overridable functions."
 msgstr ""
 "La documentation de chaque classe dans la :ref:`Class Reference <toc-class-"
 "ref>` montre les notifications qu'elle peut recevoir. Cependant, dans la "
 "plupart des cas, GDScript fournit des fonctions de surcharge plus simples."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
-msgid "Overrideable functions"
+#, fuzzy
+msgid "Overridable functions"
 msgstr "Fonctions surchargeables"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
+#, fuzzy
 msgid ""
-"Such overrideable functions, which are described as follows, can be applied "
+"Such overridable functions, which are described as follows, can be applied "
 "to nodes:"
 msgstr ""
 "De telles fonctions surchargeables, décrites comme suit, peuvent être "

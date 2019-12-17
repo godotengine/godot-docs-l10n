@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -262,22 +262,20 @@ msgid "Press \"Play\" on the animation to see how it looks."
 msgstr "Appuyez sur \"Play\" pour voir à quoi ressembe l'animation."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:149
-#, fuzzy
 msgid "Controlling an AnimationPlayer animation"
-msgstr "Contrôle de l'animation"
+msgstr "Contrôle d'une animation AnimationPlayer"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
-#, fuzzy
 msgid ""
 "Like with AnimatedSprite, you can control the animation via code using the "
 "``play()`` and ``stop()`` methods. Again, here is an example to play the "
 "animation while the right arrow key is held, and stop it when the key is "
 "released."
 msgstr ""
-"Une fois l'animation terminée, vous pouvez contrôler l'animation via le code "
-"en utilisant les méthodes `` play () `` et `` stop () ``. Voici un bref "
-"exemple pour lire l'animation tant que la touche fléchée droite est "
-"maintenue enfoncée et l'arrêter lorsque vous la relâchez."
+"Comme avec AnimatedSprite, vous pouvez contrôler l'animation via le code en "
+"utilisant les méthodes ``play()`` et ``stop()``. Encore une fois, voici un "
+"exemple pour jouer l'animation pendant que la touche fléchée droite est "
+"maintenue enfoncée, et l'arrêter quand la touche est relâchée."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:168
 msgid ""
@@ -291,6 +289,16 @@ msgid ""
 "this turns out to be a problem, after calling ``play()``, you can call "
 "``advance(0)`` to update the animation immediately."
 msgstr ""
+"Si la mise à jour simultanée d'une animation et d'une propriété séparée (par "
+"exemple, un platformer peut mettre à jour les propriétés ``h_flip``/"
+"``v_flip`` du sprite lorsqu'un personnage tourne lorsqu'il lance une "
+"animation 'tourner'), il est important de se rappeler que ``play()`` ne sera "
+"pas appliqué immédiatement. Au lieu de cela, il est appliqué la prochaine "
+"fois que le :ref:`AnimationPlayer <class_AnimationPlayer>` est traité. Ceci "
+"peut finir par se retrouver sur l'image suivante, provoquant un 'glitch' où "
+"le changement de propriété a été appliqué mais l'animation ne l'a pas été. "
+"Si cela s'avère être un problème, après avoir appelé ``play()``, vous pouvez "
+"appeler ``advance(0)`` pour mettre à jour l'animation immédiatement."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:179
 msgid "Summary"

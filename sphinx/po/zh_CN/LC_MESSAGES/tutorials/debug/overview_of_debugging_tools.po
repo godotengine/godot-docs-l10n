@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,9 +29,9 @@ msgstr "简介"
 #, fuzzy
 msgid ""
 "When developing your game, you want to test your game and debug when "
-"problems occurr. Godot provides several debugging options and tools which "
-"aid your debugging process. There are the debug dropdown options, Script "
-"editor debug options, debug project settings, and the debugger."
+"problems occur. Godot provides several debugging options and tools which aid "
+"your debugging process. There are the debug dropdown options, Script editor "
+"debug options, debug project settings, and the debugger."
 msgstr ""
 "在游戏开发过程中时常需要对游戏进行调试来解决我们遇到的问题。 Godot 提供了一些"
 "调试选项和工具来帮助您进行调试工作。"
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
 msgid "Visible Collision Shapes"
-msgstr "可见碰撞区域"
+msgstr "显示碰撞区域"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:37
 msgid ""
@@ -93,7 +93,7 @@ msgstr "可以在运行游戏的时候看到碰撞区域和射线节点。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid "Visible Navigation"
-msgstr "可见导航"
+msgstr "显示导航"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:42
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -173,7 +173,7 @@ msgstr "字符串"
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:82
 msgid ""
 "These are some general settings such as printing the current FPS to the "
-"Output panel, the maximum ammount of functions when profiling and others."
+"Output panel, the maximum amount of functions when profiling and others."
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:86
@@ -268,18 +268,52 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:128
 msgid "Profiler"
-msgstr "性能分析"
+msgstr "性能分析器"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:130
-#, fuzzy
-msgid "Profiles the performance of any function call in the running game."
-msgstr "对正在运行中的游戏进行性能分析。"
+msgid ""
+"The profiler is used to show why individual frames take as long as they do "
+"to process and render."
+msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:132
+msgid ""
+"Unlike other debugging tools the profiler does not start automatically. It "
+"can be started at any time during gameplay by pressing the start button. You "
+"can even start the profiler before opening the game to profile start up "
+"performance. It can also be started and stopped while the game is running "
+"without losing information from when it was last running. The information it "
+"records won't go away unless you click clear, or close the game, reopen it "
+"and start the profiler again."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:138
+msgid ""
+"After starting and stopping the profiler you should see things being kept "
+"track of on the left and a graph on the right. The items listed on the left "
+"are everything that contributes to frame time, and they should each have a "
+"value for time and calls for the current frame you are looking at."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:142
+msgid ""
+"The frame number in the top right tells you which frame you are currently "
+"looking at. You can change this by using the up or down arrows, typing in "
+"the frame number, or clicking on the graph."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:145
+msgid ""
+"If you want to add something to your graph, or think it looks too cluttered, "
+"you can check and uncheck the box next to an item to add or remove it from "
+"the graph."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
 msgid "Network Profiler"
-msgstr "网络检视"
+msgstr "网络分析器"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:135
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:151
 msgid ""
 "The Network Profiler contains a list of all the nodes that communicate over "
 "the multiplayer API and, for each one, some counters on the amount of "
@@ -287,11 +321,11 @@ msgid ""
 "meter that displays the total bandwidth usage at any given moment"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:140
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:156
 msgid "Monitors"
-msgstr "显示"
+msgstr "监视"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:142
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:158
 msgid ""
 "The monitors are graphs of several aspects of the game while its running "
 "such as FPS, memory usage, how many nodes are in a scene and more. All "
@@ -300,30 +334,33 @@ msgid ""
 "changed."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:147
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:163
 msgid "Video Mem"
 msgstr "显存"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:165
 #, fuzzy
 msgid ""
 "Video Mem list the video memory usage of the running game and which resource "
 "is using it."
 msgstr "列出运行中的游戏所有的现存占用列表。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:152
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:168
 msgid "Misc"
 msgstr "其他"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:154
-msgid "Miscellaneous options for debug."
-msgstr "调试用的其他选项。"
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:170
+msgid ""
+"Misc is used to identify which control node you are clicking while the game "
+"is running. \"Clicked Control\" shows where on the scene tree the node is. "
+"\"Clicked Control Type\" tells you what type of node it is."
+msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:157
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:174
 msgid "Remote in Scene dock"
 msgstr "远程场景树"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:159
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:176
 #, fuzzy
 msgid ""
 "When running a game in the editor two options appear at the top of the "
@@ -333,7 +370,7 @@ msgstr ""
 "在启动游戏后，``场景 (Scene)`` 停靠窗的顶部会出现一条切页栏，您可以切换到 ``"
 "远程 (Remote) `` 然后检视运行中节点和他们属性的变化。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:165
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:182
 msgid ""
 "Some editor settings related to debugging can be found inside the ``Editor "
 "Settings``, under Network>Debug and Debugger sections."

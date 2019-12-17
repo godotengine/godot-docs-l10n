@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -433,13 +433,18 @@ msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
+"对话框的顶部显示了场景的节点列表，其中发射节点的名称会以蓝色突出显示。在这里"
+"选择“面板”节点。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
+#, fuzzy
 msgid ""
 "The bottom of the dialogue shows the name of the method that will be "
 "created. By default, the method name will contain the emitting node's name "
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
+"创建的方法的名字显示在对话框底部。方法名字默认包含发出该发方法的节点的名字"
+"（在当前例子中为“按钮”），即：“_on_[EmitterNode]_[signal_name]”"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""

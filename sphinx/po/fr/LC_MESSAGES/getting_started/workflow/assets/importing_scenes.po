@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,10 +49,11 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
 msgid "glTF 2.0. Godot has full support for text and binary formats."
 msgstr ""
+"glTF 2.0. Godot a un support complet pour les formats texte et binaire."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
 msgid "DAE (COLLADA), an older format that is fully supported."
-msgstr ""
+msgstr "DAE (COLLADA), un ancien format qui est entièrement supporté."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
 msgid ""
@@ -74,6 +75,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX, pris en charge via la bibliothèque Open Asset Import. Cependant, FBX "
+"est propriétaire, nous vous recommandons donc d'utiliser d'autres formats "
+"listés ci-dessus, si cela convient à votre flux de travail."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:23
 msgid ""
@@ -179,22 +183,21 @@ msgid "Exporting DAE files from Blender"
 msgstr "Exportation de fichiers DAE de Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
-#, fuzzy
 msgid ""
 "Blender has built-in COLLADA support, but it does not work properly for the "
 "needs of game engines and should not be used as is."
 msgstr ""
-"Blender a également un support COLLADA intégré, mais il est également bancal "
-"et ne devrait pas être utilisé."
+"Blender a un support COLLADA intégré, mais il ne fonctionne pas correctement "
+"pour les besoins des moteurs de jeu et ne devrait pas être utilisé tel quel."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
-#, fuzzy
 msgid ""
 "Godot provides a `Blender plugin <https://github.com/godotengine/collada-"
 "exporter>`_ that will correctly export COLLADA scenes for use in Godot."
 msgstr ""
-"Godot fournit une `extension Python <https://github.com/godotengine/collada-"
-"exporter>`__ qui fera un bien meilleur travail d'exportation des scènes."
+"Godot fournit un plugin `Blender <https://github.com/godotengine/collada-"
+"exporter>`_ qui exportera correctement les scènes COLLADA pour une "
+"utilisation dans Godot."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:67
 msgid "Exporting ESCN files from Blender"
@@ -680,14 +683,12 @@ msgid "Filter Script"
 msgstr "Script de filtrage"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:262
-#, fuzzy
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
 "which tracks from which animations should be kept."
 msgstr ""
 "Il est possible de spécifier un script de filtrage dans une syntaxe spéciale "
-"pour décider quelles pistes de quelles animations doivent être conservées. "
-"(@TODO ceci a besoin de documentation)"
+"pour décider quelles pistes de quelles animations doivent être conservées."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:265
 msgid ""
@@ -698,6 +699,13 @@ msgid ""
 "expression match, using ``?`` and ``*`` wildcards (using ``String.matchn()`` "
 "under the hood)."
 msgstr ""
+"Le script de filtrage est exécuté pour chaque animation importée. La syntaxe "
+"se compose de deux types d'instructions, la première pour choisir les "
+"animations à filtrer, et la seconde pour filtrer les pistes individuelles "
+"dans l'animation correspondante. Tous les modèles de noms sont exécutés à "
+"l'aide d'une correspondance d'expressions insensible à la casse, en "
+"utilisant les caractères génériques ``?``et ``*`` (en utilisant ``String."
+"matchn()`` sous le capot)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:271
 msgid ""
@@ -706,6 +714,10 @@ msgid ""
 "filters to all imported animations which have a name ending in ``\"_Loop"
 "\"``::"
 msgstr ""
+"Le script doit commencer par une instruction de filtre d'animation (comme "
+"indiqué par la ligne commençant par un ``@``). Par exemple, si nous voulons "
+"appliquer des filtres à toutes les animations importées dont le nom se "
+"termine par ``\"_Loop\"`` :"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:277
 msgid ""
@@ -714,6 +726,10 @@ msgid ""
 "with names that begin with ``\"Arm_Left\"``, but also *exclude* all "
 "animations which have names ending in ``\"Attack\"``::"
 msgstr ""
+"De même, des modèles supplémentaires peuvent être ajoutés à la même ligne, "
+"séparés par des virgules. Voici un exemple modifié pour ajouter *inclure* "
+"toutes les animations dont le nom commence par ``\"Arm_Left\"``, mais aussi "
+"*exclure* toutes les animations dont le nom se termine par ``\"Attack\"`` :"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:283
 msgid ""
@@ -722,6 +738,10 @@ msgid ""
 "no track filter patterns are specified, then all tracks within the matched "
 "animations will be discarded!"
 msgstr ""
+"Après l'énoncé du filtre de sélection d'animation, nous ajoutons des motifs "
+"de filtrage de pistes pour indiquer quelles pistes d'animation doivent être "
+"conservées ou supprimées. Si aucun motif de filtre de piste n'est spécifié, "
+"toutes les pistes des animations correspondantes seront supprimées !"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:287
 msgid ""
@@ -731,13 +751,24 @@ msgid ""
 "early rule may then be re-included once again by a filter rule further down "
 "in the filter script."
 msgstr ""
+"Il est important de noter que les instructions du filtre de piste sont "
+"appliquées dans l'ordre pour chaque piste de l'animation, ce qui signifie "
+"qu'une ligne peut inclure une piste, une règle ultérieure peut toujours la "
+"supprimer. De même, une piste exclue par une règle antérieure peut alors "
+"être à nouveau incluse par une règle de filtrage plus bas dans le script de "
+"filtrage."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:292
+#, fuzzy
 msgid ""
 "For example: include all tracks in animations with names ending in ``\"_Loop"
-"\"``, but discard any tracks affecting a `\"Skeleton\"`` which end in ``"
+"\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
 "\"Control\"``, unless they have ``\"Arm\"`` in their name::"
 msgstr ""
+"Par exemple : inclure toutes les pistes dans les animations dont les noms se "
+"terminent par ``\"_Loop\"``, mais supprimer toutes les pistes affectant un ``"
+"\"Skeleton\"`` qui se terminent par ``\"Control\"``, sauf si elles ont ``"
+"\"Arm\"`` dans leur nom :"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:301
 msgid ""
@@ -745,11 +776,16 @@ msgid ""
 "discarded, while tracks such as ``\"Skeleton:Head\"`` or ``\"Skeleton:"
 "Arm_Left_Control\"`` would be retained."
 msgstr ""
+"Dans l'exemple ci-dessus, des pistes comme ``\"Skeleton:Leg_Control\"`` "
+"seraient rejetées, alors que des pistes comme ``\"Skeleton:Head\"`` ou ``"
+"\"Skeleton:Arm_Left_Control\"`` seraient retenues."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:304
 msgid ""
 "Any track filter lines that do not begin with a ``+`` or ``-`` are ignored."
 msgstr ""
+"Toutes les lignes de filtre de piste qui ne commencent pas par un ``+`` ou "
+"``-`` sont ignorées."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:309
 msgid ""

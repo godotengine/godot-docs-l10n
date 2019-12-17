@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,9 +103,8 @@ msgstr ""
 "transparente à partir du dossier du projet."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
-#, fuzzy
 msgid "Ignoring specific folders"
-msgstr "Désactiver des objets spécifiques"
+msgstr "Ignorer des dossiers spécifiques"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:60
 msgid ""
@@ -113,6 +112,10 @@ msgid ""
 "an empty file called ``.gdignore`` in the folder (the leading ``.`` is "
 "required). This can be useful to speed up the initial project importing."
 msgstr ""
+"Pour empêcher Godot d'importer des fichiers contenus dans un dossier "
+"spécifique, créez un fichier vide appelé ``.gdignore``dans le dossier (le "
+"premier ``.``est requis). Ceci peut être utile pour accélérer l'importation "
+"initiale du projet."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:66
 msgid ""
@@ -120,15 +123,22 @@ msgid ""
 "editor such as Notepad++ or use the following command in a command prompt: "
 "``type nul > .gdignore``"
 msgstr ""
+"Pour créer un fichier dont le nom commence par un point sur Windows, vous "
+"pouvez utiliser un éditeur de texte tel que Notepad+++ ou utiliser la "
+"commande suivante dans une invite de commande : ``type nul > .gdignore``"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:70
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
 "using the ``load()`` and ``preload()`` methods."
 msgstr ""
+"Une fois le dossier ignoré, les ressources de ce dossier ne peuvent plus "
+"être chargées en utilisant les méthodes ``load()``et ``preload()``."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:73
 msgid ""
 "Ignoring a folder will also automatically hide it from the FileSystem dock, "
 "which can be useful to reduce clutter."
 msgstr ""
+"Ignorer un dossier le cachera aussi automatiquement du dock FileSystem, ce "
+"qui peut être utile pour réduire l'encombrement."

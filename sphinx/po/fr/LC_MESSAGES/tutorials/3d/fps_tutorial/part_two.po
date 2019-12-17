@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2109,7 +2109,6 @@ msgstr ""
 "``weapon_change_number`` vaut ``0`` ou plus."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1056
-#, fuzzy
 msgid ""
 "Then we check to make sure the player is not already changing weapons. If "
 "the player is not, we then check to see if the weapon the player wants to "
@@ -2119,11 +2118,11 @@ msgid ""
 "set ``changing_weapon`` to ``true``."
 msgstr ""
 "Ensuite, nous vérifions que le joueur ne change pas déjà d'arme. Si ce n'est "
-"pas le cas, nous vérifions si l'arme pour laquelle le  joueur veut changer "
+"pas le cas, nous vérifions si l'arme pour laquelle le joueur veut changer "
 "est une nouvelle arme et non celle qu'il utilise actuellement. Si l'arme "
-"pour laquelle le  joueur changer est une nouvelle arme, nous réglons alors "
-"``changing_weapon_name`` sur ``weapon_change_number`` et réglons "
-"``changing_weapon`` sur vrai."
+"pour laquelle le joueur changer est une nouvelle arme, nous réglons alors "
+"``changing_weapon_name`` sur l'arme à ``weapon_change_number`` et réglons "
+"``changing_weapon`` sur ``vrai``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1060
 msgid ""
@@ -2136,15 +2135,14 @@ msgstr ""
 "obtenons le nœud d'arme pour l'arme actuelle."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1064
-#, fuzzy
 msgid ""
 "If the current weapon node does not equal ``null``, and the player is in its "
 "``IDLE_ANIM_NAME`` state, we set the player's animation to the current "
 "weapon's ``FIRE_ANIM_NAME``."
 msgstr ""
-"Si le nœud d'arme courant n'est pas nul, et que le joueur est dans son état "
-"``IDLE_ANIM_NAME``, l'animation du joueur est définie sur ``FIRE_ANIM_NAME`` "
-"de l'arme courante."
+"Si le nœud d'arme courant n'est pas ``null``, et que le joueur est dans son "
+"état ``IDLE_ANIM_NAME``, l'animation du joueur est définie sur "
+"``FIRE_ANIM_NAME`` de l'arme courante."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1069
 msgid "Let's add ``process_changing_weapons`` next."

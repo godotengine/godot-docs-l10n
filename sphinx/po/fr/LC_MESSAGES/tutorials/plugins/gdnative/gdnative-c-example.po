@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,11 +90,11 @@ msgstr "Prérequis"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:49
 msgid "Before we start you'll need a few things:"
-msgstr "Avant de commencer, vous aurez besoin de quelques trucs :"
+msgstr "Voici les prérequis nécessaires :"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:51
 msgid "A Godot executable for your target version."
-msgstr ""
+msgstr "Un exécutable Godot pour votre version cible."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:52
 msgid ""
@@ -102,6 +102,10 @@ msgid ""
 "manager. On macOS, you can install Xcode from the Mac App Store. On Windows, "
 "you can use Visual Studio 2015 or later, or MinGW-w64."
 msgstr ""
+"Un compilateur C. Sur Linux, installez ``gcc`` ou ``clang`` depuis votre "
+"gestionnaire de paquets. Sur macOS, vous pouvez installer Xcode depuis le "
+"Mac App Store. Sur Windows, vous pouvez utiliser Visual Studio 2015 (ou plus "
+"récent) ou MinGW-w64."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
 msgid ""
@@ -109,22 +113,30 @@ msgid ""
 "GodotNativeTools/godot_headers>`_: these are the C headers for Godot's "
 "public API exposed to GDNative."
 msgstr ""
+"Avoir cloné le `dépôt des godo_headers <https://github.com/GodotNativeTools/"
+"godot_headers>`_ : ce sont des entêtes C pour l'API publique de Godot exposé "
+"à GDNative."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:59
 msgid ""
 "For the latter, we suggest that you create a dedicated folder for this "
 "GDNative example project, open a terminal in that folder and execute:"
 msgstr ""
+"Pour le dépôt des headers, il est suggéré de créer un dossier dédié pour cet "
+"exemple de projet GDNative. Ouvrez un terminal dans ce dossier et exécuter :"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:66
 msgid "This will download the required files into that folder."
 msgstr ""
+"Cette commande va télécharger les fichiers nécessaires dans le dossier."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:70
 msgid ""
 "If you plan to use Git for your GDNative project, you can also add "
 "``godot_headers`` as a Git submodule."
 msgstr ""
+"Si vous prévoyez d'utiliser Git pour votre projet GDNative, vous pouvez "
+"également ajouter le dépôt ``godot_headers`` comme un sous-module Git ."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:75
 msgid ""
@@ -136,6 +148,14 @@ msgid ""
 "Godot headers *may* work with newer versions of the engine, but not the "
 "other way around."
 msgstr ""
+"Le dépôt ``godot_headers`` a plusieurs branches. Puisque Godot évolue, "
+"GDNative en fait de même. Bien que nous essayons de préserver le "
+"compatibilité entre les versions, vous devez toujours générer votre module "
+"GDNative avec les entête qui correspondent à la branche stable de Godot (par "
+"exemple ``3.1``) et idéalement la version actuellement en release que vous "
+"utilisez (par exemple ``3.1.1-stable``). Les modules GDNative générés avec "
+"des versions plus vieilles que les entêtes Godot *peuvent* fonctionner avec "
+"les nouvelles version tu moteur. L'inverse est faux."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:83
 msgid ""
@@ -143,6 +163,10 @@ msgid ""
 "with the ``master`` branch of Godot and thus contains the GDNative class and "
 "structure definitions that will work with the latest development builds."
 msgstr ""
+"La branche ``master`` du dépôt ``godot_headers`` est en phase avec la "
+"branche ``master`` de Godot et de ce fait contient la classe GDNative et les "
+"définitions de structure qui fonctionneront avec le dernier code compilé en "
+"développement."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:87
 msgid ""
@@ -159,6 +183,9 @@ msgid ""
 "fall back to the matching stable branch (e.g. ``3.1``), which you would also "
 "check out with ``git checkout 3.1``."
 msgstr ""
+"Si, pour une raison quelconque, un tag de la version stable est manquant, "
+"vous pouvez vous rapatriez sur la branche stable correspondante (disons "
+"``3.1``) sur laquelle vous pouvez vous rendre avec ``git checkout 3.1``."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:101
 msgid ""
@@ -166,10 +193,13 @@ msgid ""
 "GDNative, you can find the updated class and structure definition in "
 "``<godotsource>/modules/gdnative/include``"
 msgstr ""
+"Si vous compilez Godot depuis les source avec des changements qui impactent "
+"GDNative, vous pouvez trouver la classe mise à jour et la définition de "
+"structure dans ``<godotsource>/modules/gdnative/include``"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:106
 msgid "Our C source"
-msgstr ""
+msgstr "Nos sources en C"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:108
 msgid ""

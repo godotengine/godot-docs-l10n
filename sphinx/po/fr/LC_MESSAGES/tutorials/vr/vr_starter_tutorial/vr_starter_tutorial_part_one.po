@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,8 +19,8 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:4
 #, fuzzy
-msgid "VR Starter Tutorial Part One"
-msgstr "Tutoriel pour commencer en VR"
+msgid "VR starter tutorial part 1"
+msgstr "Tutoriel pour commencer en VR première partie"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:7
 msgid "Introduction"
@@ -84,39 +84,36 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:26
-#, fuzzy
 msgid ""
 "How to create a :ref:`RigidBody <class_RigidBody>`-based system that allows "
 "for picking up, dropping, and throwing RigidBody nodes using the VR "
 "controllers."
 msgstr ""
-"Comment faire un système de ramassage et dépose basé sur un :ref:`RigidBody "
-"<class_RigidBody>` ."
+"Comment créer un système basé sur :ref:`RigidBody <class_RigidBody>` qui "
+"permet de ramasser, déposer et lancer des nœuds RigidBody en utilisant les "
+"contrôleurs VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:27
 msgid "How to create simple destroyable target."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:28
-#, fuzzy
 msgid ""
 "How to create some special :ref:`RigidBody <class_RigidBody>`-based objects "
 "that can destroy the targets."
 msgstr ""
-"Comment faire un système de ramassage et dépose basé sur un :ref:`RigidBody "
-"<class_RigidBody>` ."
+"Comment créer des objets spéciaux :ref:`RigidBody <class_RigidBody>`qui "
+"peuvent détruire les cibles."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:30
-#, fuzzy
 msgid ""
 "While this tutorial can be completed by beginners, it is highly advised to "
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development."
 msgstr ""
 "Bien que ce tutoriel puisse être complété par des débutants, il est "
-"fortement conseillé d'avoir fini  :ref:`doc_your_first_game`, si vous êtes "
-"nouveau dans Godot et/ou dans le développement de jeu **avant** de suivre ce "
-"tutoriel."
+"fortement conseillé d'avoir fini :ref:`doc_your_first_game`, si vous êtes "
+"nouveau dans Godot et/ou dans le développement de jeu."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:34
 msgid ""
@@ -157,11 +154,8 @@ msgid "The font used is Titillium-Regular"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:49
-#, fuzzy
 msgid "The font is licensed under the SIL Open Font License, Version 1.1"
-msgstr ""
-"La police utilisée est **Titillium-Regular**, et est sous licence ``SIL Open "
-"Font License, Version 1.1``."
+msgstr "La police est sous licence SIL Open Font License, Version 1.1"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:51
 msgid ""
@@ -193,13 +187,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:58
-#, fuzzy
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`_."
 msgstr ""
-"une copie du `dépôt godot-cpp <https://github.com/GodotNativeTools/godot-"
-"cpp>`__."
+"Vous pouvez trouver le projet fini sur le dépôt `OpenVR GitHub <https://"
+"github.com/GodotVR/godot_openvr_fps>`_."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:62
 msgid "Getting everything ready"
@@ -214,16 +207,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:67
-#, fuzzy
 msgid ""
 "The starter assets are not required to use the scripts provided in this "
 "tutorial. The starter assets include several premade scenes and scripts that "
 "will be used throughout the tutorial."
 msgstr ""
-"Bien que ces ressources ne soient pas nécessairement nécessaires pour "
-"utiliser les scripts fournis dans ce tutoriel, elles rendront le tutoriel "
-"beaucoup plus facile à suivre, car il y a plusieurs scènes pré-installées "
-"que nous utiliserons tout au long de la série de tutoriels."
+"Ces ressources de départ ne sont pas nécessaires pour utiliser les scripts "
+"fournis dans ce tutoriel. Les ressources de départ comprennent plusieurs "
+"scènes et scripts pré-faits qui seront utilisés tout au long du tutoriel."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:70
 msgid ""
@@ -255,13 +246,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:85
-#, fuzzy
 msgid ""
 "Before we jump into the tutorial, let's take a moment to talk about how the "
 "nodes used for VR work."
 msgstr ""
-"Avant de passer à l'éditeur, nous voulons planifier comment nous "
-"imbriquerons les conteneurs basés sur notre maquette."
+"Avant de passer au tutoriel, prenons un moment pour parler du fonctionnement "
+"des nœuds utilisés pour la VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:87
 msgid ""
@@ -323,7 +313,7 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:109
 msgid ""
 "If the VR system supports room tracking, then the :ref:`ARVRCamera "
-"<class_ARVRCamera>` node may be offset on the X and Z axises as the player "
+"<class_ARVRCamera>` node may be offset on the X and Z axes as the player "
 "moves."
 msgstr ""
 
@@ -338,20 +328,19 @@ msgid "Starting VR"
 msgstr "Commencer en VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:117
-#, fuzzy
 msgid ""
 "Now that we have gone over the VR nodes, let's start working on the project. "
 "While in ``Game.tscn``, select the ``Game`` node and make a new script "
 "called ``Game.gd``. In the ``Game.gd`` file, add the following code:"
 msgstr ""
-"Maintenant que nous avons vu comment la scène est mise en place, commençons "
-"à écrire le code pour la tourelle. Sélectionnez ``Turret`` et créez un "
-"nouveau script appelé ``Turret.gd``. Ajoutez ce qui suit dans ce script :"
+"Maintenant que nous avons passé en revue les nœuds VR, commençons à "
+"travailler sur le projet. Dans ``Game.tscn``, sélectionnez le nœud ``Game`` "
+"et créez un nouveau script appelé ``Game.gd``. Dans le fichier ``Game.gd``, "
+"ajoutez le code suivant :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:159
-#, fuzzy
 msgid "Let's go over what this code does."
-msgstr "Voyons ce que cela fait."
+msgstr "Voyons ce que fait ce code."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:163
 msgid ""
@@ -420,9 +409,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:191
-#, fuzzy
 msgid "Creating the controllers"
-msgstr "Coder les contrôleurs"
+msgstr "Création des contrôleurs"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:195
 msgid ""
@@ -539,9 +527,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:240
-#, fuzzy
 msgid "The code for the VR controllers"
-msgstr "Coder les contrôleurs"
+msgstr "Le code pour les contrôleurs VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:242
 msgid ""
@@ -552,13 +539,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:245
-#, fuzzy
 msgid ""
 "You can copy and paste the code from this page directly into the script "
 "editor."
 msgstr ""
-"Vous pouvez basculer et tourner vos tuiles en utilisant les icônes en haut à "
-"droite de l'éditeur."
+"Vous pouvez copier et coller le code de cette page directement dans "
+"l'éditeur de script."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:247
 msgid ""
@@ -568,7 +554,6 @@ msgstr ""
 "tabulations."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:249
-#, fuzzy
 msgid ""
 "To convert the spaces to tabs in the script editor, click the ``Edit`` menu "
 "and select ``Convert Indent To Tabs``. This will convert all the spaces into "
@@ -576,9 +561,9 @@ msgid ""
 "spaces."
 msgstr ""
 "Pour convertir les espaces en tabulations dans l'éditeur de script, cliquez "
-"sur le menu \"edit\" et sélectionnez \"Convert Indent To Tabs\". Ceci "
+"sur le menu ``Edit`` et sélectionnez ``Convert Indent To Tabs``. Ceci "
 "convertira tous les espaces en tabulations. Vous pouvez sélectionner "
-"\"Convert Indent To Spaces\" pour convertir les tabulations en espaces."
+"``Convert Indent To Spaces`` pour convertir les tabulations en espaces."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:540
 msgid ""
@@ -587,14 +572,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:543
-#, fuzzy
 msgid "Explaining the VR controller code"
-msgstr "Coder les contrôleurs"
+msgstr "Explication du code du contrôleur VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:545
-#, fuzzy
 msgid "First, let's go through all of the class variables in the script:"
-msgstr "Passons en revue chacune des variables de classe :"
+msgstr ""
+"Tout d'abord, passons en revue toutes les variables de classe dans le "
+"script :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:547
 msgid ""
@@ -603,13 +588,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:548
-#, fuzzy
 msgid ""
 "``prior_controller_position``: A variable to hold the VR controller's last "
 "position in 3D space."
 msgstr ""
-"``respawn_points``: Une variable utilisée pour stocker tous les points de "
-"réapparition du niveau"
+"``prior_controller_position`` : Une variable pour maintenir la dernière "
+"position du contrôleur VR dans l'espace 3D."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:549
 msgid ""
@@ -634,22 +618,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:552
-#, fuzzy
 msgid ""
 "``grab_area``: A variable to hold the :ref:`Area <class_Area>` node used to "
 "grab objects with the VR controller."
 msgstr ""
-"``node_raycast``: Une variable nous permettant de stocker le nœud :ref:"
-"`Raycast <class_Raycast>` attaché à la tête de la tourelle."
+"``grab_area`` : Une variable pour contenir le nœud :ref:`Area <class_Area>` "
+"utilisé pour saisir des objets avec le contrôleur VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:553
-#, fuzzy
 msgid ""
 "``grab_raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node "
 "used to grab objects with the VR controller."
 msgstr ""
-"``node_raycast``: Une variable nous permettant de stocker le nœud :ref:"
-"`Raycast <class_Raycast>` attaché à la tête de la tourelle."
+"``grab_raycast`` : Une variable pour contenir le nœud :ref:`Raycast "
+"<class_Raycast>` utilisé pour saisir des objets avec le contrôleur VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:554
 msgid ""
@@ -673,13 +655,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:557
-#, fuzzy
 msgid ""
 "``hand_pickup_drop_sound``: A variable to hold the :ref:`AudioStreamPlayer3D "
 "<class_AudioStreamPlayer3D>` node that contains the pickup/drop sound."
 msgstr ""
-"Enfin, nous disons au :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` de "
-"jouer."
+"``hand_pickup_drop_sound`` : Une variable pour contenir le nœud :ref:"
+"`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` qui contient le son pickup/"
+"drop."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:558
 msgid ""
@@ -688,13 +670,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:559
-#, fuzzy
 msgid ""
 "``teleport_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node used to show where the player is teleporting to."
 msgstr ""
-"``grenade_mesh``: La :ref:`MeshInstance <class_MeshInstance>` pour la "
-"grenade."
+"``teleport_mesh`` : Une variable pour contenir le nœud :ref:`MeshInstance "
+"<class_MeshInstance>` utilisé pour montrer où le lecteur se téléporte."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:560
 msgid ""
@@ -737,26 +718,25 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:567
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:708
-#, fuzzy
 msgid ""
 "You can find a great article explaining all about how to handle touchpad/"
 "joystick dead zones here: http://www.third-helix.com/2013/04/12/doing-"
 "thumbstick-dead-zones-right.html"
 msgstr ""
 "Vous pouvez trouver un bon article qui explique tout sur la façon de gérer "
-"les zones mortes des contrôleurs ici : http://www.third-helix.com/2013/04/12/"
-"doing-thumbstick-dead-zones-right.html"
+"les zones mortes des touchpad/joystick ici : http://www.third-helix."
+"com/2013/04/12/doing-thumbstick-dead-zones-right.html"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:569
-#, fuzzy
 msgid ""
 "We are using a translated version of the scaled radial dead zone code "
 "provided in that article for the VR controller's joystick/touchpad. The "
 "article is a great read, and I highly suggest giving it a look!"
 msgstr ""
-"Nous utilisons une translation du vecteur radial de zone morte mis à "
-"l'échelle fourni dans cet article. Celui-ci est très intéressant et je vous "
-"suggère d'aller y jeter un œil !"
+"Nous utilisons une version traduite du code de zone morte radiale mis à "
+"l'échelle fourni dans cet article pour le joystick/touchpad du contrôleur "
+"VR. L'article est une excellente lecture, et je vous conseille vivement d'y "
+"jeter un coup d'œil !"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:572
 msgid ""
@@ -822,13 +802,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:598
-#, fuzzy
 msgid ""
 "Then the ``hand_mesh`` and ``hand_pickup_drop_sound`` nodes are gotten and "
 "assigned them to their respective variables for use later."
 msgstr ""
-"Nous récupérons ensuite tous les nœuds et nous les assignons à leur "
-"variables respectives."
+"Ensuite, les nœuds ``hand_mesh`` et ``hand_pickup_drop_sound`` sont obtenus "
+"et assignés à leurs variables respectives pour une utilisation ultérieure."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:600
 msgid ""
@@ -876,7 +855,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:620
-#, fuzzy
 msgid ""
 "If ``teleport_button_down`` is equal to ``true``, we force the "
 "``teleport_raycast`` :ref:`Raycast <class_Raycast>` node to update using the "
@@ -884,11 +862,11 @@ msgid ""
 "will update the properties within the :ref:`Raycast <class_Raycast>` node "
 "with the latest version of the physics world."
 msgstr ""
-"Ensuite, nous forçons le :ref:`Raycast <class_Raycast>` à se mettre à jour "
-"en utilisant ``force_raycast_update``. Cela forcera le :ref:`Raycast "
-"<class_Raycast>` à détecter les collisions lorsque nous l'appelons, ce qui "
-"signifie que nous obtenons un contrôle parfait des collisions avec le monde "
-"physique 3D."
+"Si ``teleport_button_down`` est égal à ``true``, nous forçons le nœud "
+"``teleport_raycast`` :ref:`Raycast <class_Raycast>` à se mettre à jour en "
+"utilisant la fonction ``force_raycast_update``. La fonction "
+"``force_raycast_update`` met à jour les propriétés du nœud :ref:`Raycast "
+"<class_Raycast>` avec la dernière version du monde physique."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:623
 msgid ""
@@ -986,12 +964,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:663
-#, fuzzy
 msgid ""
 "First this function resets the ``controller_velocity`` variable to zero :ref:"
 "`Vector3 <class_Vector3>`."
 msgstr ""
-"Tout d'abord, nous réglons ``dir`` à une :ref:`Vector3 <class_Vector3>` vide."
+"Tout d'abord, cette fonction réinitialise la variable "
+"``controller_velocity`` à zéro :ref:`Vector3 <class_Vector3>`."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:667
 msgid ""
@@ -1070,7 +1048,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:700
 msgid ""
-"First this function gets the axises for the trackpad and the joystick and "
+"First this function gets the axes for the trackpad and the joystick and "
 "assigns them to :ref:`Vector2 <class_Vector2>` variables called "
 "``trackpad_vector`` and ``joystick_vector`` respectively."
 msgstr ""
@@ -1404,7 +1382,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:847
-#, fuzzy
 msgid ""
 "We then set the :ref:`RigidBody <class_RigidBody>`'s mode to "
 "``MODE_STATIC``, it's ``collision_layer`` to zero, and it's "
@@ -1412,10 +1389,11 @@ msgid ""
 "<class_RigidBody>` cannot interact with other objects in the physics world "
 "when held by the VR controller."
 msgstr ""
-"Enfin, nous assignons au collision layer et au collision mask du :ref:"
-"`RigidBody <class_RigidBody>` attrapé à ``0``. Cela fera en sorte que le :"
-"ref:`RigidBody <class_RigidBody>` n'ait pas de collision layer ou mask, ce "
-"qui veut dire qu'il ne pourra pas rentrer en collision tant qu'on le tiendra."
+"Nous réglons ensuite le mode du :ref:`RigidBody <class_RigidBody>` sur "
+"``MODE_STATIC``, son ``collision_layer`` à zéro, et son ``collision_mask``à "
+"zéro. Cela fera en sorte que le :ref:`RigidBody <class_RigidBody>` ne puisse "
+"pas interagir avec d'autres objets dans le monde physique lorsqu'il est tenu "
+"par le contrôleur VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:850
 msgid ""
@@ -1707,15 +1685,15 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:976
-#, fuzzy
 msgid ""
 "Once you have ``VR_Interactable_Rigidbody.gd`` open, add the following code:"
-msgstr "Ajoutez un script au kinematic body et ajoutez le code suivant :"
+msgstr ""
+"Une fois que vous avez ``VR_Interactable_Rigidbody.gd`` ouvert, ajoutez le "
+"code suivant :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1004
-#, fuzzy
 msgid "Let's quickly go through what this script."
-msgstr "Passons en revue rapidement son utilité."
+msgstr "Passons rapidement en revue ce qu'est ce script."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1008
 msgid ""
@@ -1833,14 +1811,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1056
-#, fuzzy
 msgid ""
 "Let's write the code that will make the vignette shader visible when the "
 "player is moving. Select the ``Movement_Vignette`` node and create a new "
 "script called ``Movement_Vignette.gd``. Add the following code:"
 msgstr ""
-"Écrivons le code nécessaire pour les grenades. Sélectionnez ``Grenade`` et "
-"créez un nouveau script appelé ``Grenade.gd``. Ajoutez ce qui suit :"
+"Écrivons le code qui rendra le shader vignette visible lorsque le joueur est "
+"en mouvement. Sélectionnez le nœud ``Movement_Vignette`` et créez un nouveau "
+"script appelé ``Movement_Vignette.gd``. Ajouter le code suivant :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1099
 msgid ""
@@ -1848,9 +1826,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1103
-#, fuzzy
 msgid "Explaining the vignette code"
-msgstr "Changer l'icône du fichier"
+msgstr "Explication du code de vignette"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1105
 msgid ""

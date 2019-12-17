@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:4
 msgid "Introduction to the buildsystem"
-msgstr ""
+msgstr "Introduction au buildsystem"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:9
 msgid "SCons"
-msgstr ""
+msgstr "SCons"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:11
 msgid ""
@@ -40,6 +40,9 @@ msgid ""
 "Godot can be compiled for a dozen different platforms: all PC platforms, all "
 "mobile platforms, many consoles, and WebAssembly."
 msgstr ""
+"Godot peut être compilé pour une douzaine de plates-formes différentes : "
+"toutes les plates-formes PC, toutes les plates-formes mobiles, de nombreuses "
+"consoles, et WebAssembly."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:20
 msgid ""
@@ -71,12 +74,18 @@ msgid ""
 "has a specific detection process, and all these must be handled as specific "
 "cases with special code written for each."
 msgstr ""
+"Le processus de construction Godot fait un usage intensif des outils de "
+"compilation croisée. Chaque plate-forme dispose d'un processus de détection "
+"spécifique, et tous ces éléments doivent être traités comme des cas "
+"spécifiques avec un code spécial écrit pour chacun."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:36
 msgid ""
 "So, please try to keep an open mind and get at least a little familiar with "
 "it if you are planning to build Godot yourself."
 msgstr ""
+"Donc, s'il vous plaît essayer de garder un esprit ouvert et soyez au moins "
+"un peu familier avec si vous envisagez de builder Godot vous-même."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:40
 msgid "Setup"
@@ -99,7 +108,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:52
 msgid "Platform selection"
-msgstr ""
+msgstr "Choix de la plate-forme"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:54
 msgid ""
@@ -119,6 +128,8 @@ msgstr ""
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:63
 msgid "To list the available target platforms, use ``scons platform=list``::"
 msgstr ""
+"Pour lister les plates-formes cibles disponibles, utilisez ``scons "
+"platform=list`` :"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:77
 msgid ""
@@ -136,11 +147,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:89
 msgid "Example for using 4 cores:"
-msgstr ""
+msgstr "Exemple pour l'utilisation de 4 cœurs :"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:96
 msgid "Resulting binary"
-msgstr ""
+msgstr "Binaire résultant"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:98
 msgid ""
@@ -177,6 +188,9 @@ msgid ""
 "Aside from that, there are a few standard options that can be set in all "
 "build targets, and which will be explained below."
 msgstr ""
+"En dehors de cela, il y a quelques options standard qui peuvent être "
+"définies dans toutes les cibles de build, et qui seront expliquées ci-"
+"dessous."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:128
 msgid "Tools"
@@ -188,6 +202,10 @@ msgid ""
 "disabled for everything else. Disabling tools produces a binary that can run "
 "projects but that does not include the editor or the project manager."
 msgstr ""
+"Les outils sont activés par défaut dans toutes les cibles PC (Linux, "
+"Windows, macOS), désactivés pour tout le reste. Désactiver les outils "
+"produit un binaire qui peut exécuter des projets, mais qui n'inclut pas "
+"l'éditeur ou le gestionnaire de projet."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:142
 msgid "Target"
@@ -196,6 +214,8 @@ msgstr "Cible"
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr ""
+"La cible contrôle l'optimisation et débogue les drapeaux. Chaque mode "
+"signifie :"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,7 +107,6 @@ msgstr ""
 "contiennent qu'une fonction vertex et aucune autre."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:61
-#, fuzzy
 msgid ""
 "First we will distinguish between code that needs to be run only when the "
 "particle system starts and code that should always run. We want to give each "
@@ -120,8 +119,8 @@ msgstr ""
 "uniquement au démarrage du système de particules et le code devant toujours "
 "être exécuté. Nous voulons attribuer à chaque poisson une position aléatoire "
 "et un décalage d'animation aléatoire lors de la première exécution du "
-"système. Nous encapsulons donc ce code dans une instruction `` if`` "
-"vérifiant la variable intégrée `` RESTART`` qui devient vraie pour une frame "
+"système nous encapsulons donc ce code dans une instruction `` if`` vérifiant "
+"la variable intégrée `` RESTART`` qui devient ``true`` pour une frame "
 "lorsque le système de particules est redémarré."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:66

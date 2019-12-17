@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,8 +19,8 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:4
 #, fuzzy
-msgid "VR Starter Tutorial Part Two"
-msgstr "Tutoriel pour commencer en VR"
+msgid "VR starter tutorial part 2"
+msgstr "Tutoriel pour commencer en VR première partie"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:7
 msgid "Introduction"
@@ -41,13 +41,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:16
-#, fuzzy
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`_."
 msgstr ""
-"une copie du `dépôt godot-cpp <https://github.com/GodotNativeTools/godot-"
-"cpp>`__."
+"Vous pouvez trouver le projet fini sur le dépôt `OpenVR GitHub <https://"
+"github.com/GodotVR/godot_openvr_fps>`_."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:20
 msgid "Adding destroyable targets"
@@ -79,18 +78,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:31
-#, fuzzy
 msgid ""
 "Select the ``Sphere_Target_Root`` node and make a new script called "
 "``Sphere_Target.gd``. Add the following code:"
 msgstr ""
-"Sélectionnez ``Sticky_Grenade`` et créez un nouveau script appelé "
-"``Sticky_Grenade.gd``. Ajoutez ce qui suit :"
+"Sélectionnez le nœud ``Sphere_Target_Root`` et créez un nouveau script "
+"appelé ``Sphere_Target.gd```. Ajouter le code suivant :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:79
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:263
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:658
-#, fuzzy
 msgid "Let's go over how this script works."
 msgstr "Voyons comment fonctionne le script."
 
@@ -99,27 +96,26 @@ msgid "Explaining the Sphere Target code"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:84
-#, fuzzy
 msgid "First, let's go through all of the class variables in the script:"
-msgstr "Passons en revue chacune des variables de classe :"
+msgstr ""
+"Tout d'abord, passons en revue toutes les variables de classe dans le "
+"script :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:86
-#, fuzzy
 msgid ""
 "``destroyed``: A variable to track whether the sphere target has been "
 "destroyed."
 msgstr ""
-"``destroyed_timer``: Une variable pour suivre le temps pendant lequel une "
-"tourelle a été détruite."
+"``destroyed`` : Variable permettant de savoir si la cible de la sphère a été "
+"détruite."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:87
-#, fuzzy
 msgid ""
 "``destroyed_timer``: A variable to track how long the sphere target has been "
 "destroyed."
 msgstr ""
-"``dead_time``: Une variable pour suivre depuis combien de temps le joueur "
-"est mort."
+"``destroyed_timer`` : Variable permettant de savoir depuis combien de temps "
+"la sphère cible a été détruite."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:88
 msgid ""
@@ -128,10 +124,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:89
-#, fuzzy
 msgid ""
 "``health``: A variable to store the amount of health the sphere target has."
-msgstr "``turret_health``: La santé actuelle de la tourelle."
+msgstr ""
+"``health`` : Une variable pour stocker la quantité de santé de la sphère "
+"cible."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:90
 msgid ""
@@ -242,14 +239,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:134
-#, fuzzy
 msgid ""
 "The function then gets the :ref:`AudioStreamPlayer3D "
 "<class_AudioStreamPlayer3D>` node and calls the ``play`` function so it "
 "plays its sound."
 msgstr ""
-"Enfin, nous disons au :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` de "
-"jouer."
+"La fonction obtient alors le nœud :ref:`AudioStreamPlayer3D "
+"<class_AudioStreamPlayer3D>` et appelle la fonction ``play`` pour qu'il joue "
+"son son."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:136
 msgid ""
@@ -263,16 +260,14 @@ msgid "Adding the ``remove_sphere`` function to ``Game.gd``"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:143
-#, fuzzy
 msgid ""
 "You may have noticed we are calling a function in ``Game.gd``, called "
 "``remove_sphere``, that we have not defined yet. Open up ``Game.gd`` and add "
 "the following additional class variables:"
 msgstr ""
-"Vous avez peut être remarqué que nous utilisons une nouvelle constante que "
-"nous n'avons pas encore définie, ``GRENADE_AMOUNTS``. Implémentons la ! "
-"Ajoutez les variables de classes suivantes dans ``AmmoPickup.gd`` avec les "
-"autres :"
+"Vous avez peut-être remarqué que nous appelons une fonction dans ``Game."
+"gd``, appelée ``remove_sphere``, que nous n'avons pas encore définie. Ouvrez "
+"``Game.gd`` et ajoutez les variables de classe supplémentaires suivantes :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:152
 msgid ""
@@ -288,18 +283,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:155
-#, fuzzy
 msgid ""
 "With these variables defined, we can now add the ``remove_sphere`` function. "
 "Add the following code to ``Game.gd``:"
 msgstr ""
-"Maintenant, nous devons ajouter la fonction ``add_health`` au joueur. "
-"Ajoutez ce qui suit au ``Player.gd`` :"
+"Avec ces variables définies, nous pouvons maintenant ajouter la fonction "
+"``remove_sphere``. Ajoutez le code suivant à ``Game.gd`` :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:167
-#, fuzzy
 msgid "Let's go through what this function does real quick:"
-msgstr "Passons en revue ce que cette fonction fait :"
+msgstr "Passons rapidement en revue ce que fait cette fonction :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:169
 msgid ""
@@ -369,9 +362,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:267
-#, fuzzy
 msgid "Explaining the pistol code"
-msgstr "Changer l'icône du fichier"
+msgstr "Explication du code du pistolet"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:269
 msgid ""
@@ -386,19 +378,18 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:273
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:667
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:849
-#, fuzzy
 msgid "Next, let's look at the class variables:"
-msgstr "Examinons d'abord les variables de classe."
+msgstr "Ensuite, regardons les variables de classe :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:275
-#, fuzzy
 msgid ""
 "``flash_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node that is used to simulate muzzle flash on the "
 "pistol."
 msgstr ""
-"``node_flash_one``: Une variable utilisée pour stocker le premier :ref:"
-"`MeshInstance <class_MeshInstance>`du flash du canon."
+"``flash_mesh`` : Une variable pour tenir le nœud :ref:`MeshInstance "
+"<class_MeshInstance>` qui est utilisé pour simuler le flash de la bouche du "
+"canon du pistolet."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:276
 msgid ""
@@ -407,48 +398,47 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:277
-#, fuzzy
 msgid ""
 "``flash_timer``: A variable to hold the amount of time the muzzle flash has "
 "been visible for."
 msgstr ""
-"``flash_timer``: Une variable utilisée pour savoir combien de temps a passé "
-"depuis qu'on a rendu visible le flash du canon."
+"``flash_timer`` : Variable permettant de contenir la durée pendant laquelle "
+"le flash de la bouche du canon a été visible."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:278
-#, fuzzy
 msgid ""
 "``laser_sight_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node that acts as the pistol's 'laser sight'."
 msgstr ""
-"``node_flash_one``: Une variable utilisée pour stocker le premier :ref:"
-"`MeshInstance <class_MeshInstance>`du flash du canon."
+"``laser_sight_mesh`` : Une variable pour contenir le nœud :ref:`MeshInstance "
+"<class_MeshInstance>` qui agit comme la 'visée laser' du pistolet."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:279
-#, fuzzy
 msgid ""
 "``pistol_fire_sound``: A variable to hold the :ref:`AudioStreamPlayer3D "
 "<class_AudioStreamPlayer3D>` node used for the pistol's firing sound."
 msgstr ""
-"Enfin, nous disons au :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` de "
-"jouer."
+"``pistol_fire_sound`` : Une variable pour contenir le nœud :ref:"
+"`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` utilisé pour le son de tir "
+"du pistolet."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:280
-#, fuzzy
 msgid ""
 "``raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node that "
 "is used for calculating the bullet's position and normal when the pistol is "
 "fired."
 msgstr ""
-"``node_raycast``: Une variable nous permettant de stocker le nœud :ref:"
-"`Raycast <class_Raycast>` attaché à la tête de la tourelle."
+"``raycast`` : Une variable pour contenir le nœud :ref:`Raycast "
+"<class_Raycast>` qui est utilisé pour calculer la position de la balle et "
+"normale lorsque le pistolet est tiré."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:281
-#, fuzzy
 msgid ""
 "``BULLET_DAMAGE``: A constant to define the amount of damage a single bullet "
 "from the pistol does."
-msgstr "``DAMAGE`` : L'ampleur des dommages causés par une seule balle."
+msgstr ""
+"``BULLET_DAMAGE`` : Une constante pour définir la quantité de dommages "
+"causés par une seule balle du pistolet."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:282
 msgid ""
@@ -633,9 +623,8 @@ msgid "Adding a shotgun"
 msgstr "Ajouter un fusil à pompe"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:367
-#, fuzzy
 msgid "Next let's add a shotgun to the VR project."
-msgstr "Créons une tourelle capable de tirer sur le joueur !"
+msgstr "Ensuite, ajoutons un fusil de chasse au projet VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:369
 msgid ""
@@ -662,14 +651,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:378
-#, fuzzy
 msgid ""
 "Let's write the code for the shotgun. Select the :ref:`RigidBody "
 "<class_RigidBody>` node called ``Shotgun`` and make a new script called "
 "``Shotgun.gd``. Add the following code:"
 msgstr ""
-"Écrivons le code nécessaire pour les grenades. Sélectionnez ``Grenade`` et "
-"créez un nouveau script appelé ``Grenade.gd``. Ajoutez ce qui suit :"
+"Écrivons le code du fusil de chasse. Sélectionnez le nœud :ref:`RigidBody "
+"<class_RigidBody>` appelé ``Shotgun`` et faites un nouveau script appelé "
+"``Shotgun.gd``. Ajouter le code suivant :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:456
 msgid ""
@@ -679,9 +668,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:460
-#, fuzzy
 msgid "Explaining the shotgun code"
-msgstr "Sauvegarder la ressource"
+msgstr "Explication du code du fusil de chasse"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:462
 msgid ""
@@ -691,18 +679,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:465
-#, fuzzy
 msgid "There is only one new class variable:"
-msgstr "Nous définissons d'abord quelques variables de classe :"
+msgstr "Il n'y a qu'une seule nouvelle variable de classe :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:467
-#, fuzzy
 msgid ""
 "``raycasts``: A variable to hold the node that has all of the :ref:`Raycast "
 "<class_Raycast>` nodes as its children."
 msgstr ""
-"``node_raycast``: Une variable nous permettant de stocker le nœud :ref:"
-"`Raycast <class_Raycast>` attaché à la tête de la tourelle."
+"``raycasts`` : Une variable pour contenir le nœud qui a tous les nœuds :ref:"
+"`Raycast <class_Raycast>` comme ses enfants."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:469
 msgid ""
@@ -762,14 +748,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:497
-#, fuzzy
 msgid ""
 "The rest of the code is exactly the same, but this process is repeated for "
 "each :ref:`Raycast <class_Raycast>` node that is a child of the ``raycasts`` "
 "variable."
 msgstr ""
-"La première chose que nous faisons est d'obtenir le nœud :ref:`Raycast "
-"<class_Raycast>`, qui est un enfant de ``Rifle_Point``."
+"Le reste du code est exactement le même, mais ce processus est répété pour "
+"chaque nœud :ref:`Raycast <class_Raycast>` qui est un enfant de la variable "
+"``raycasts``."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:504
 msgid ""
@@ -794,9 +780,9 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:526
 msgid ""
-"Once all of the :ref:`Raycast <class_Raycast>`s in the ``raycast`` variable "
-"have been iterated over, we then play the shotgun shot sound by calling the "
-"``play`` function on the ``shotgun_fire_sound`` variable."
+"Once all of the :ref:`Raycast <class_Raycast>`\\s in the ``raycast`` "
+"variable have been iterated over, we then play the shotgun shot sound by "
+"calling the ``play`` function on the ``shotgun_fire_sound`` variable."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:528
@@ -880,14 +866,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:562
-#, fuzzy
 msgid ""
 "Let's write the code for the bomb. Select the ``Bomb`` :ref:`RigidBody "
 "<class_RigidBody>` node and make a new script called ``Bomb.gd``. Add the "
 "following code:"
 msgstr ""
-"Écrivons le code nécessaire pour les grenades. Sélectionnez ``Grenade`` et "
-"créez un nouveau script appelé ``Grenade.gd``. Ajoutez ce qui suit :"
+"Écrivons le code de la bombe. Sélectionnez le nœud ``Bomb``` :ref:`RigidBody "
+"<class_RigidBody>` et créez un nouveau script appelé ``Bomb.gd``. Ajouter le "
+"code suivant :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:662
 msgid "Explaining the bomb code"
@@ -903,13 +889,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:669
-#, fuzzy
 msgid ""
 "``bomb_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node that is used for the non-exploded bomb."
 msgstr ""
-"``grenade_mesh``: La :ref:`MeshInstance <class_MeshInstance>` pour la "
-"grenade."
+"``bomb_mesh`` : Une variable pour tenir le nœud :ref:`MeshInstance "
+"<class_MeshInstance>` qui est utilisé pour la bombe non explosée."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:670
 msgid ""
@@ -918,22 +903,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:671
-#, fuzzy
 msgid ""
 "``fuse_timer``: A variable to hold the length of time that has passed since "
 "the bomb's fuse has started to burn."
 msgstr ""
-"``fire_timer``: Une variable utilisée pour savoir combien de temps a passé "
-"depuis qu'une balle a été tirée."
+"``fuse_timer`` : Une variable pour contenir le temps qui s'est écoulé depuis "
+"que l'amorce de la bombe a commencé à brûler."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:672
-#, fuzzy
 msgid ""
 "``explosion_area``: A variable to hold the :ref:`Area <class_Area>` node "
 "used to detect objects within the bomb's explosion."
 msgstr ""
-"``blast_area``: La :ref:`Area <class_Area>` de l'explosion utilisée pour "
-"faire des dégâts aux objets quand la grenade explose."
+"``explosion_area`` : Une variable pour contenir le nœud :ref:`Area "
+"<class_Area>` utilisé pour détecter les objets dans l'explosion de la bombe."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:673
 msgid ""
@@ -949,20 +932,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:675
-#, fuzzy
 msgid ""
 "``explosion_timer`` A variable to hold the length of time that has passed "
 "since the bomb exploded."
 msgstr ""
-"``explosion_wait_timer``: Une variable utilisée pour suivre le temps passé "
-"après que l'explosion soit arrivée."
+"``explosion_timer`` une variable qui indique le temps écoulé depuis "
+"l'explosion de la bombe."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:676
-#, fuzzy
 msgid "``exploded``: A variable to hold whether the bomb has exploded or not."
-msgstr ""
-"``is_ready`` : Une variable pour suivre si la fonction ``_ready`` a été "
-"appelée ou non."
+msgstr "``exploded`` : Une variable pour savoir si la bombe a explosé ou non."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:677
 msgid ""
@@ -971,41 +950,39 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:678
-#, fuzzy
 msgid ""
 "``fuse_particles``: A variable to hold a reference to the :ref:`Particles "
 "<class_Particles>` node used for the bomb's fuse."
 msgstr ""
-"``node_raycast``: Une variable nous permettant de stocker le nœud :ref:"
-"`Raycast <class_Raycast>` attaché à la tête de la tourelle."
+"``fuse_particles`` : Une variable pour contenir une référence au nœud :ref:"
+"`Particles <class_Particles>` utilisé pour l'amorce de la bombe."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:679
-#, fuzzy
 msgid ""
 "``explosion_particles``: A variable to hold a reference to the :ref:"
 "`Particles <class_Particles>` node used for the bomb's explosion."
 msgstr ""
-"``explosion_particles``: Les :ref:`Particles <class_Particles>` qui sortent "
-"quand les grenades explosent."
+"``explosion_particles`` : Une variable pour contenir une référence au nœud :"
+"ref:`Particles <class_Particles>` utilisé pour l'explosion de la bombe."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:680
-#, fuzzy
 msgid ""
 "``explosion_sound``: A variable to hold a reference to the :ref:"
 "`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` node used for the "
 "explosion sound."
 msgstr ""
-"Enfin, nous disons au :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` de "
-"jouer."
+"``explosion_sound`` : Une variable pour contenir une référence au nœud :ref:"
+"`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` utilisé pour le son de "
+"l'explosion."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:686
-#, fuzzy
 msgid ""
 "The ``_ready`` function first gets all of the nodes from the bomb scene and "
 "assigns them to their respective class variables for later use."
 msgstr ""
-"Nous récupérons ensuite tous les nœuds et nous les assignons à leur "
-"variables respectives."
+"La fonction ``_ready`` récupère d'abord tous les nœuds de la scène de la "
+"bombe et les affecte à leurs variables de classe respectives pour une "
+"utilisation ultérieure."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:688
 msgid ""
@@ -1148,14 +1125,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:747
-#, fuzzy
 msgid ""
 "If ``explosion_timer`` is greater than or equal to ``EXPLOSION_TIME`` after "
 "we added ``delta``, then the explosion timer just finished."
 msgstr ""
-"Nous vérifions ensuite si ``explosion_wait_timer`` est plus petit que "
-"``EXPLOSION_WAIT_TIME``. Si c'est le cas, on ajoute ``delta`` à "
-"``explosion_wait_timer``."
+"Si ``explosion_timer`` est supérieur ou égal à ``EXPLOSION_TIME`` après "
+"avoir ajouté ``delta``, alors le minuteur d'explosion vient de se terminer."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:749
 msgid ""
@@ -1270,24 +1245,22 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:799
-#, fuzzy
 msgid ""
 "That is really the only thing note worthy about the sword scene. Select the "
 "``Sword`` :ref:`RigidBody <class_RigidBody>` node and make a new script "
 "called ``Sword.gd``. Add the following code:"
 msgstr ""
-"Écrivons le code nécessaire pour les grenades. Sélectionnez ``Grenade`` et "
-"créez un nouveau script appelé ``Grenade.gd``. Ajoutez ce qui suit :"
+"C'est vraiment la seule chose digne d'intérêt sur la scène de l'épée. "
+"Sélectionnez le nœud ``Sword``:ref:`RigidBody <class_RigidBody>` et créez un "
+"nouveau script appelé ``Sword.gd``. Ajouter le code suivant :"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:840
-#, fuzzy
 msgid "Let's go over how this script works!"
-msgstr "Voyons comment fonctionne le script."
+msgstr "Voyons comment fonctionne ce script !"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:844
-#, fuzzy
 msgid "Explaining the sword code"
-msgstr "Sauvegarder la ressource"
+msgstr "Explication du code de l'épée"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:846
 msgid ""
@@ -1337,14 +1310,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:864
-#, fuzzy
 msgid ""
 "Finally, we get the :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` "
 "node for the sword collision sound and apply it to the ``sword_noise`` "
 "variable."
 msgstr ""
-"Enfin, nous disons au :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` de "
-"jouer."
+"Enfin, on obtient le nœud :ref:`AudioStreamPlayer3D "
+"<class_AudioStreamPlayer3D>` pour le son de collision d'épée et on "
+"l'applique à la variable ``sword_noise``."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:870
 msgid ""
@@ -1359,17 +1332,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:875
-#, fuzzy
 msgid ""
 "The ``move_and_collide`` function will return a :ref:`KinematicCollision "
 "<class_KinematicCollision>` class that has all of the information we need "
 "for detecting collisions on the sword. We assign the return value of "
 "``move_and_collide`` to a variable called ``collision_results``."
 msgstr ""
-"Lorsque vous utilisez ``move_and_collide()``, la fonction retourne un objet :"
-"ref:`KinematicCollision2D <class_KinematicCollision2D>`, qui contient des "
-"informations sur la collision et le corps en collision. Vous pouvez utiliser "
-"ces informations pour déterminer la réponse."
+"La fonction ``move_and_collide`` renverra un :ref:`KinematicCollision "
+"<class_KinematicCollision>` qui contient toutes les informations dont nous "
+"avons besoin pour détecter les collisions sur l'épée. Nous assignons la "
+"valeur de retour de ``move_and_collide``à une variable appelée "
+"``collision_results``."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:878
 msgid ""
@@ -1463,9 +1436,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:937
-#, fuzzy
 msgid "Let's go over how this script works real quick."
-msgstr "Voyons comment fonctionne le script."
+msgstr "Voyons comment ce script fonctionne très rapidement."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:939
 msgid ""
@@ -1501,14 +1473,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:990
-#, fuzzy
 msgid "Let's quickly go over how this script works."
-msgstr "Voyons comment fonctionne le script."
+msgstr "Passons rapidement en revue le fonctionnement de ce script."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:994
-#, fuzzy
 msgid "Explaining the reset box code"
-msgstr "Sauvegarder la ressource"
+msgstr "Explication du code de la boîte de réinitialisation"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:996
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -388,21 +388,22 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:166
 msgid "EQ"
-msgstr ""
+msgstr "EQ"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:168
 msgid ""
 "EQ is what all other equalizers inherit from. It can be extended with with "
 "Custom scripts to create an equalizer with a custom number of bands."
 msgstr ""
+"EQ est ce dont héritent tous les autres égaliseurs. Il peut être étendu avec "
+"des scripts personnalisés pour créer un égaliseur avec un nombre "
+"personnalisé de bandes."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:172
-#, fuzzy
 msgid "EQ6, EQ10, EQ21"
-msgstr "EQ, EQ6, EQ10, EQ21"
+msgstr "EQ6, EQ10, EQ21"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:174
-#, fuzzy
 msgid ""
 "Godot provides three equalizers with different numbers of bands. An "
 "equalizer on the Master bus can be useful to cut frequencies that the "
@@ -410,7 +411,7 @@ msgid ""
 "reproduce bass content well). The equalizer effect can be disabled when "
 "headphones are plugged in."
 msgstr ""
-"Godot fournit quatre égaliseurs avec différents nombres de bandes. Un "
+"Godot fournit trois égaliseurs avec différents nombres de bandes. Un "
 "égaliseur sur le bus maître peut être utile pour couper les fréquences que "
 "les haut-parleurs de l'appareil ne peuvent pas bien reproduire (par exemple, "
 "les haut-parleurs d'un téléphone mobile ne reproduiront pas bien le contenu "
@@ -422,13 +423,12 @@ msgid "Filter"
 msgstr "Filtre"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:182
-#, fuzzy
 msgid ""
 "Filter is what all other filters inherit from and should not be used "
 "directly."
 msgstr ""
-"Filtre (Filter) est ce dont héritent tous les autres processeurs d'effets et "
-"ne doit pas être utilisé directement."
+"Filter (filtre) est ce dont héritent tous les autres filtres et ne doit pas "
+"être utilisé directement."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:185
 msgid "HighPassFilter, HighShelfFilter"
@@ -562,7 +562,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:249
 msgid "SpectrumAnalyzer"
-msgstr ""
+msgstr "SpectrumAnalyzer"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:251
 msgid ""
@@ -571,6 +571,11 @@ msgid ""
 "visualization. A demo project using this can be found `here <https://github."
 "com/godotengine/godot-demo-projects/tree/master/audio/spectrum>`__."
 msgstr ""
+"Cet effet n'altère pas l'audio, au lieu de cela, vous ajoutez cet effet aux "
+"bus dont vous voulez une analyse de spectre. Ceci serait typiquement utilisé "
+"pour la visualisation audio. Un projet de démonstration l'utilisant peut "
+"être trouvé `ici <https://github.com/godotengine/godot-demo-projects/tree/"
+"master/audio/spectrum>`__."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:256
 msgid "StereoEnhance"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,9 +222,8 @@ msgstr ""
 "с узлом. ``AnimatedSprite`` требует ресурс :ref:`SpriteFrames "
 "<class_SpriteFrames>`, который представляет собой список отображаемых "
 "анимаций. Чтобы его создать, найдите свойство ``Frames`` в окне инспектора и "
-"кликните на «[пусто]»-> «Новый SpriteFrames». Далее, в том же месте, нажмите "
-"кнопку ``<SpriteFrames>``, а затем нажмите кнопку «Открыть редактор», чтобы "
-"открыть панель «SpriteFrames»:"
+"кликните на «[empty]»-> «New SpriteFrames». Далее, в том же месте, нажмите "
+"кнопку ``<SpriteFrames>``. Панель «SpriteFrames» откроется автоматически:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
@@ -478,8 +477,9 @@ msgid ""
 "to the bottom of the ``_process`` function:"
 msgstr ""
 "Теперь, когда у нас есть направление движения, мы можем обновить позицию "
-"``Player`` и использовать функцию ``clamp()``, чтобы он не выходил за "
-"границы экрана, добавив ее в нижнюю часть функции ``_process``:"
+"игрока. Мы также можем использовать ``clamp()``, чтобы предотвратить выход "
+"из экрана. *Clamping* означает ограничение движения данным диапазоном."
+"Добавьте следующее к нижней части функции ``_process``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:332
 msgid ""
@@ -1123,7 +1123,6 @@ msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` названный ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:892
-#, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the *Text* field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -1131,7 +1130,7 @@ msgid ""
 "Regular.ttf\". To use this font, do the following for each of the three "
 "``Control`` nodes:"
 msgstr ""
-"Нажмите на ``ScoreLabel`` и введите число в поле _Text_ в Инспекторе. "
+"Нажмите на ``ScoreLabel`` и введите число в поле *Text* в Инспекторе. "
 "Стандартный шрифт для узлов ``Control`` мал и плохо масштабируется. "
 "Существует файл шрифта, включенный в игровые ресурсы под названием "
 "\"Xolonium-Regular.ttf\". Чтобы использовать этот шрифт, выполните следующие "
@@ -1217,7 +1216,7 @@ msgstr "``Макет``: \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
 msgid "*Autowrap* : \"On\""
-msgstr ""
+msgstr "*Autowrap* : \"On\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:939
 msgid "StartButton"
@@ -1509,7 +1508,6 @@ msgstr ""
 "является использование свойства \"Shortcut\" узла ``Button``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1220
-#, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1518,10 +1516,10 @@ msgid ""
 "*Action* property, type the name ``ui_select``. This is the default input "
 "event associated with the spacebar."
 msgstr ""
-"В сцене ``HUD`` выберите ``StartButton`` и найдите его свойство _Shortcut_ в "
+"В сцене ``HUD`` выберите ``StartButton`` и найдите его свойство *Shortcut* в "
 "инспекторе. Выберите \"New Shortcut\" и нажмите на пункт \"Shortcut\". "
-"Появится второе свойство _Shortcut_. Выберите \"New InputEventAction\" и "
-"нажмите на новый \"InputEvent\". Наконец, в свойстве _Action_ введите имя "
+"Появится второе свойство *Shortcut*. Выберите \"New InputEventAction\" и "
+"нажмите на новый \"InputEvent\". Наконец, в свойстве *Action* введите имя "
 "\"ui_select\". Это событие ввода по умолчанию, связанное с пробелом."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1228

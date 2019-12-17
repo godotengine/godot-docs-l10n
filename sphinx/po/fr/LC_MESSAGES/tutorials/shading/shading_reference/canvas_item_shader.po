@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -475,6 +475,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:204
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
 msgstr ""
+"UV de la fonction vertex, équivalent à l'UV dans la fonction de fragment."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:206
 msgid "in vec4 **COLOR**"
@@ -485,6 +486,8 @@ msgid ""
 "Input Color. This is the output of the fragment function with final "
 "modulation applied."
 msgstr ""
+"Couleur d'entrée. Il s'agit de la sortie de la fonction fragment avec la "
+"modulation finale appliquée."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:209
 msgid "sampler2D **TEXTURE**"
@@ -492,7 +495,7 @@ msgstr "sampler2D **TEXTURE**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:209
 msgid "Current texture in use for CanvasItem."
-msgstr ""
+msgstr "Texture actuelle utilisée pour le CanvasItem."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
 msgid "**SCREEN_TEXTURE** Coordinate (for using with screen texture)."
@@ -529,6 +532,7 @@ msgstr "inout float **LIGHT_HEIGHT**"
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid "Height of Light. Only effective when normals are used."
 msgstr ""
+"Hauteur de lumière. Seulement efficace lorsque les normales sont utilisées."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
 msgid "inout vec4 **LIGHT_COLOR**"
@@ -536,7 +540,7 @@ msgstr "inout vec4 **LIGHT_COLOR**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
 msgid "Color of Light."
-msgstr ""
+msgstr "Couleur de la lumière."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
 msgid "in vec2 **LIGHT_UV**"
@@ -544,7 +548,7 @@ msgstr "in vec2 **LIGHT_UV**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
 msgid "UV for Light texture."
-msgstr ""
+msgstr "UV pour texture de lumière."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
 msgid "out vec4 **SHADOW_COLOR**"
@@ -552,7 +556,7 @@ msgstr "out vec4 **SHADOW_COLOR**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
 msgid "Shadow Color of Light."
-msgstr ""
+msgstr "Couleur de l'ombre de la lumière."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:235
 msgid "inout vec4 **LIGHT**"

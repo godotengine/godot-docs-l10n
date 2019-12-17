@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "컨트롤(Control) 노드로 인터페이스를 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screens come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -30,11 +29,11 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
-"컴퓨터 디스플레이, 모바일 폰, 그리고 TV 화면은 각자의 크기와 모양을 갖습니"
+"컴퓨터 디스플레이, 모바일 폰, 그리고 TV 화면은 각자의 크기와 모양이 있습니"
 "다. 게임을 출시하려면, 게임이 다양한 화면 비율과 해상도를 지원해야 할 것입니"
 "다. 모든 플랫폼에 적용되는 반응형 인터페이스를 만드는 것은 어려울 수 있습니"
-"다. 감사하게도, Godot의 든든한 도구들로 반응형 사용자 인터페이스를 제작하고 "
-"관리할 수 있습니다."
+"다. 감사하게도, Godot에는 반응형 사용자 인터페이스(UI)를 설계하고 관리할 수 "
+"있도록 든든한 도구가 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -60,14 +59,13 @@ msgstr ""
 "컨테이너를 사용해서 사용자 인터페이스를 효율적으로 배치하고 배열하는 방법"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
-#, fuzzy
 msgid ""
 "The five most common containers (you can learn more about containers in the :"
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
 msgstr ""
-"다섯 가지 가장 일반적인 컨테이너 (나중에 :ref:`GUI Containers "
-"<doc_gui_containers>` 문서 페이지에서 컨테이너에 대해 더 자세하게 배울 수 있"
-"습니다)."
+"다섯 가지 가장 일반적인 컨테이너(Container) (컨테이너에 대해서는 나중에 :ref:"
+"`GUI 컨테이너(Container) <doc_gui_containers>` 문서 페이지에서 더 자세하게 배"
+"울 수 있습니다)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -323,7 +321,6 @@ msgstr ""
 "Degrees``  속성으로 당신은 게이지의 범위를 제한할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
-#, fuzzy
 msgid ""
 "To animate the bar, you'll want to look at the Range section. Set the "
 "``Min`` and ``Max`` properties to define the range of the gauge. For "
@@ -333,12 +330,13 @@ msgid ""
 "the default of ``0`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
-"막대를 애니메이트 하기 위해, 당신은 Range 섹션을 확인해야 합니다. ``Min`` 과 "
+"막대에게 애니메이션을 주기 위해, Range 섹션을 확인해봐야 합니다. ``Min`` 과 "
 "``Max`` 속성으로 게이지의 범위를 설정하세요. 예를 들어, 캐릭터의 체력을 나타"
-"내려면, 당신은 ``Min`` 을 ``0`` 으로, ``Max`` 를 캐릭터의 최대 체력으로 설정"
-"해야 할 겁니다. ``Value`` 속성을 바꿔서 막대를 업데이트 하세요. 만약 ``Min`` "
-"과 ``Max`` 를 기본 값인 ``1`` 과 ``100`` 으로 두고, ``Value`` 속성을 ``40`` "
-"으로 하면, ``Progress`` 텍스처의 40%가 보여지고 60%는 계속 안 보일 겁니다."
+"내려면 ``Min``\\ 을 ``0``\\ 으로, ``Max``\\ 를 캐릭터의 최대 체력으로 설정해"
+"야 할 것입니다. ``Value`` 속성을 바꿔서 막대를 업데이트하세요. 만약 ``Min``"
+"\\ 과 ``Max``\\ 를 기본 값인 ``1``\\ 과 ``100``\\ 으로 두고, ``Value`` 속성"
+"을 ``40``\\ 으로 하면, ``Progress`` 텍스처의 40%가 보이고 60%는 계속 숨어 있"
+"습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"

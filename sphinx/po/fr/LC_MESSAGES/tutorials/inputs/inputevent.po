@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,8 @@ msgstr ""
 #: ../../docs/tutorials/inputs/inputevent.rst:15
 msgid "Here is a quick example, closing your game if the escape key is hit:"
 msgstr ""
+"Voici un exemple rapide, la fermeture de votre jeu si la touche quitter est "
+"appuyée :"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:34
 msgid ""
@@ -54,10 +56,12 @@ msgid ""
 "You can setup your InputMap under **Project > Project Settings > Input Map** "
 "and then use those actions like this:"
 msgstr ""
+"Vous pouvez configurer votre InputMap sous **Project > Project Settings > "
+"Input Map** et utiliser ces actions comme ceci :"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:60
 msgid "How does it work?"
-msgstr ""
+msgstr "Comment ça marche ?"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:62
 msgid ""
@@ -135,6 +139,8 @@ msgid ""
 "Finally, if the event was unhandled, it will be passed to the next Viewport "
 "in the tree, otherwise it will be ignored."
 msgstr ""
+"Enfin, si l'événement n'a pas été traité, il sera transmis au prochain "
+"Viewport dans l'arbre, sinon il sera ignoré."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:106
 msgid ""
@@ -159,7 +165,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:121
 msgid "Anatomy of an InputEvent"
-msgstr ""
+msgstr "Anatomie d'un InputEvent"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:123
 msgid ""
@@ -173,14 +179,16 @@ msgid ""
 "There are several specialised types of InputEvent, described in the table "
 "below:"
 msgstr ""
+"Il existe plusieurs types spécialisés d'InputEvent, décrits dans le tableau "
+"ci-dessous :"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 msgid "Event"
-msgstr ""
+msgstr "Évènement"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 msgid "Type Index"
-msgstr ""
+msgstr "Indice de type"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 msgid "Description"
@@ -188,7 +196,7 @@ msgstr "Description"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:132
 msgid ":ref:`InputEvent <class_InputEvent>`"
-msgstr ""
+msgstr ":ref:`InputEvent <class_InputEvent>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:132
 msgid "NONE"
@@ -196,19 +204,21 @@ msgstr "NONE"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:132
 msgid "Empty Input Event."
-msgstr ""
+msgstr "Évènement d'entrée vide."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
 msgid ":ref:`InputEventKey <class_InputEventKey>`"
-msgstr ""
+msgstr ":ref:`InputEventKey <class_InputEventKey>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
 msgid "KEY"
-msgstr ""
+msgstr "CLÉ"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
 msgid "Contains a scancode and unicode value, as well as modifiers."
 msgstr ""
+"Contient un code d'analyse et une valeur unicode, ainsi que des "
+"modificateurs."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:137
 msgid ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
@@ -221,6 +231,7 @@ msgstr "MOUSE_BUTTON"
 #: ../../docs/tutorials/inputs/inputevent.rst:137
 msgid "Contains click information, such as button, modifiers, etc."
 msgstr ""
+"Contient des informations de clic, telles que bouton, modificateurs, etc."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
 msgid ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
@@ -239,7 +250,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:143
 msgid ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
-msgstr ""
+msgstr ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:143
 msgid "JOYSTICK_MOTION"

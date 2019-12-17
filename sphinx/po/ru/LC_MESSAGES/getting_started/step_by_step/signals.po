@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,18 +71,18 @@ msgid "Timer example"
 msgstr "Пример таймера"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
 "Чтобы увидеть, как работают сигналы, давайте попробуем использовать узел :"
-"ref:`Timer <class_Timer> . Создайте новую сцену с узлом Node и двумя "
-"дочерними узлами: таймер и :ref:`спрайт <class_Sprite>`. Вы можете "
-"использовать иконку Godot для текстуры спрайта или любое другое изображение, "
-"которое вам нравится. Присоедините скрипт к корневому узлу, но пока не "
-"добавляйте в него никакого кода."
+"ref:`Timer <class_Timer>  ноду. Создайте новую сцену с узлом Node2D и двумя "
+"дочерними узлами: таймер и :ref:`спрайт <class_Sprite>`. В структуре сцены "
+"переименуйте Node2D в TimerExample.  Вы можете использовать иконку Godot для "
+"текстуры спрайта или любое другое изображение, которое вам нравится. "
+"Присоедините скрипт к корневому узлу, но пока не добавляйте в него никакого "
+"кода."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -123,14 +123,14 @@ msgstr ""
 "генерируется каждый раз, когда таймер достигает ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
-#, fuzzy
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
 "the signals panel. You'll see the following window, where you can define how "
 "you want to connect the signal:"
 msgstr ""
-"Нажмите на сигнал  \"timeout()\" и после на кнопку \"Присоединить...\". Вы "
-"увидите окно, где вы можете определить, как вы хотите подключить сигнал:"
+"Нажмите на сигнал «timeout ()» и нажмите «Connect ...» в нижней части панели "
+"сигналов. Вы увидите следующее окно, где вы можете определить, как вы хотите "
+"подключить сигнал:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:55
 msgid ""
@@ -153,17 +153,17 @@ msgstr ""
 "сообщение об ошибке."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"В нижней части окна находится поле с надписью \"Method In Node\". Это имя "
+"В нижней части окна находится поле с надписью \"Receiver Method\". Это имя "
 "функции в скрипте данного узла, который требуется использовать. По умолчанию "
 "Godot создаст эту функцию, используя соглашение об именовании "
-"``_on_<node_name>_<signal_name>``, но вы можете изменить его, если хотите."
+"``_on_<node_name>_<signal_name>``, но вы можете изменить его по своему "
+"усмотрению."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:68
 msgid ""

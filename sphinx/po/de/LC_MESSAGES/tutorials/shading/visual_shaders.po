@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,52 +58,51 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:29
 msgid ""
-"Then assign a :ref:`class_VisualShader` resource to the ``Shader`` property. "
-"Click on the new ``VisualShader`` resource and the Visual Shader Editor will "
-"open automatically."
+"Then assign a :ref:`class_VisualShader` resource to the ``Shader`` property."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:35
+#: ../../docs/tutorials/shading/visual_shaders.rst:33
 msgid ""
-"The layout of the Visual Shader Editor comprises two parts: the upper "
-"toolbar and the graph itself."
+"Click on the new ``VisualShader`` resource and the Visual Shader Editor will "
+"open automatically. The layout of the Visual Shader Editor comprises two "
+"parts: the upper toolbar and the graph itself."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:40
+#: ../../docs/tutorials/shading/visual_shaders.rst:39
 msgid "From left to right in the toolbar:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:42
+#: ../../docs/tutorials/shading/visual_shaders.rst:41
 msgid ""
 "The ``Add Node`` button displays a popup menu to let you add nodes to the "
 "shader graph."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:44
+#: ../../docs/tutorials/shading/visual_shaders.rst:43
 msgid ""
 "The drop-down menu is the shader type: Vertex, Fragment and Light. Like for "
 "script shaders, it defines what built-in nodes will be available."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:46
+#: ../../docs/tutorials/shading/visual_shaders.rst:45
 msgid ""
 "The following buttons and number input control the zooming level, grid "
 "snapping and distance between grid lines (in pixels)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:48
+#: ../../docs/tutorials/shading/visual_shaders.rst:47
 msgid ""
 "The last icon shows the generated shader code corresponding to your graph."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:52
+#: ../../docs/tutorials/shading/visual_shaders.rst:51
 msgid ""
 "Although VisualShaders do not require coding, they share the same logic with "
 "script shaders. It is advised to learn the basics of both to have a good "
 "understanding of the shading pipeline."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:56
+#: ../../docs/tutorials/shading/visual_shaders.rst:55
 msgid ""
 "The visual shader graph is converted to a script shader behind the scene, "
 "and you can see this code by pressing the last button in the toolbar. This "
@@ -111,11 +110,11 @@ msgid ""
 "it in scripts."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:62
+#: ../../docs/tutorials/shading/visual_shaders.rst:61
 msgid "Using the Visual Shader Editor"
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:64
+#: ../../docs/tutorials/shading/visual_shaders.rst:63
 msgid ""
 "By default, every new ``VisualShader`` will have an output node. Every node "
 "connection ends at one of the output node's sockets. A node is the basic "
@@ -124,19 +123,19 @@ msgid ""
 "graph, and a menu will pop up."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:72
+#: ../../docs/tutorials/shading/visual_shaders.rst:71
 #, fuzzy
 msgid "This popup has the following properties:"
 msgstr "Das HUD zeigt die folgenden Informationen an:"
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:74
+#: ../../docs/tutorials/shading/visual_shaders.rst:73
 msgid ""
 "If you right-click on the graph, this menu will be called at the cursor "
 "position and the created node, in that case, will also be placed under that "
 "position; otherwise, it will be created at the graph's center."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:77
+#: ../../docs/tutorials/shading/visual_shaders.rst:76
 msgid ""
 "It can be resized horizontally and vertically allowing more content to be "
 "shown. Size transform and tree content position are saved between the calls, "
@@ -144,52 +143,52 @@ msgid ""
 "state."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:80
+#: ../../docs/tutorials/shading/visual_shaders.rst:79
 msgid ""
 "The ``Expand All`` and ``Collapse All`` options in the drop-down option menu "
 "can be used to easily list the available nodes."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:82
+#: ../../docs/tutorials/shading/visual_shaders.rst:81
 msgid "You can also drag and drop nodes from the popup onto the graph."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:84
+#: ../../docs/tutorials/shading/visual_shaders.rst:83
 msgid ""
 "While the popup has nodes sorted in categories, it can seem overwhelming at "
 "first. Try to add some of the nodes, plug them in the output socket and "
 "observe what happens."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:88
+#: ../../docs/tutorials/shading/visual_shaders.rst:87
 msgid ""
 "When connecting any ``scalar`` output to a ``vector`` input, all components "
 "of the vector will take the value of the scalar."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:91
+#: ../../docs/tutorials/shading/visual_shaders.rst:90
 msgid ""
 "When connecting any ``vector`` output to a ``scalar`` input, the value of "
 "the scalar will be the average of the vector's components."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:95
+#: ../../docs/tutorials/shading/visual_shaders.rst:94
 #, fuzzy
 msgid "Visual Shader nodes"
 msgstr ":ref:`Spatial gizmo Plug-Ins <doc_spatial_gizmo_plugins>`"
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:97
+#: ../../docs/tutorials/shading/visual_shaders.rst:96
 msgid ""
 "Below are some special nodes that are worth knowing about. The list is not "
 "exhaustive and might be expanded with more nodes and examples."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:101
+#: ../../docs/tutorials/shading/visual_shaders.rst:100
 #, fuzzy
 msgid "Expression node"
 msgstr "Ablaufsteuerung"
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:103
+#: ../../docs/tutorials/shading/visual_shaders.rst:102
 msgid ""
 "The ``Expression`` node allows you to write Godot Shading Language (GLSL-"
 "like) expressions inside your visual shaders. The node has buttons to add "
@@ -201,19 +200,19 @@ msgid ""
 "located under the Special tab and can be used in all shader modes."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:114
+#: ../../docs/tutorials/shading/visual_shaders.rst:113
 msgid ""
 "The possibilities of this node are almost limitless – you can write complex "
 "procedures, and use all the power of text-based shaders, such as loops, the "
 "``discard`` keyword, extended types, etc. For example:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:121
+#: ../../docs/tutorials/shading/visual_shaders.rst:120
 #, fuzzy
 msgid "Fresnel node"
 msgstr "Nodes erstellen"
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:123
+#: ../../docs/tutorials/shading/visual_shaders.rst:122
 msgid ""
 "The ``Fresnel`` node is designed to accept normal and view vectors and "
 "produces a scalar which is the saturated dot product between them. "
@@ -221,12 +220,12 @@ msgid ""
 "``Fresnel`` node is great for adding a rim-like lighting effect to objects."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:131
+#: ../../docs/tutorials/shading/visual_shaders.rst:130
 #, fuzzy
 msgid "Boolean node"
 msgstr "Boolsches ODER"
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:133
+#: ../../docs/tutorials/shading/visual_shaders.rst:132
 msgid ""
 "The ``Boolean`` node can be converted to ``Scalar`` or ``Vector`` to "
 "represent ``0`` or ``1`` and ``(0, 0, 0)`` or ``(1, 1, 1)`` respectively. "
@@ -234,11 +233,11 @@ msgid ""
 "click."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:140
+#: ../../docs/tutorials/shading/visual_shaders.rst:139
 msgid "If node"
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:142
+#: ../../docs/tutorials/shading/visual_shaders.rst:141
 msgid ""
 "The ``If`` node allows you to setup a vector which will be returned the "
 "result of the comparison between ``a`` and ``b``. There are three vectors "
@@ -247,19 +246,19 @@ msgid ""
 "value, i.e. ``0.00001``), ``a > b`` and ``a < b``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:151
+#: ../../docs/tutorials/shading/visual_shaders.rst:150
 #, fuzzy
 msgid "Switch node"
 msgstr "Switch"
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:153
+#: ../../docs/tutorials/shading/visual_shaders.rst:152
 msgid ""
 "The ``Switch`` node returns a vector if the boolean condition is ``true`` or "
 "``false``. ``Boolean`` was introduced above. If you convert a vector to a "
 "true boolean, all components of the vector should be above zero."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:161
+#: ../../docs/tutorials/shading/visual_shaders.rst:160
 msgid ""
 "The ``Switch`` node is only available on the GLES3 backed. If you are "
 "targeting GLES2 devices, you cannot use ``switch`` statements."

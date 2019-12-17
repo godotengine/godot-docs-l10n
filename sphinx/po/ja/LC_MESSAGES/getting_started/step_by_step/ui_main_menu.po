@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,17 +30,14 @@ msgstr ""
 "UI(ユーザーインターフェイス)シーンを段階的に構築します:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
-#, fuzzy
 msgid "A main menu."
-msgstr "メインメニュー"
+msgstr "メインメニュー。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
-#, fuzzy
 msgid "A game UI with a health bar, energy bar, bomb and money counters."
-msgstr "体力バー、エネルギーバー、爆弾、マネーカウンターを備えたゲームUI"
+msgstr "体力バー、エネルギーバー、爆弾およびお金のカウンターからなるゲームUI。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
@@ -48,13 +45,12 @@ msgid ""
 msgstr ""
 "ここでは効率的にゲームUIをデザインする方法と、Godotのコントロールノードの使い"
 "方を紹介します。このページでは視覚面に主眼を置き、すべてエディタ操作のみで完"
-"結します。ライフバーのコードの書き方を知るには、次を見て下さい:doc:"
-"`ui_code_a_life_bar`\\"
+"結します。ライフバーのコードの書き方を知るには、次を見て下さい\\ :doc:"
+"`ui_code_a_life_bar`\\ 。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
-#, fuzzy
 msgid "The GUI you're going to create."
-msgstr "作成するGUI"
+msgstr "作成するGUI。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -64,20 +60,19 @@ msgid ""
 "final result. You'll find all the sprites in the ``start/assets/main_menu`` "
 "folder."
 msgstr ""
-"プロジェクト用ファイル :download:`ui_main_menu_design.zip <files/"
+"プロジェクト用ファイル\\ :download:`ui_main_menu_design.zip <files/"
 "ui_main_menu_design.zip>`\\ をダウンロードして、解凍してください。チュートリ"
-"アルのために、Godotで``start/``プロジェクトをインポートしてください。``end/``"
-"フォルダには最終結果が入っています。``start/assets/main_menu``フォルダにはす"
-"べてのスプライトがあります。"
+"アルのために、Godotで\\ ``start/``\\ プロジェクトをインポートしてくださ"
+"い。\\ ``end/``\\ フォルダには最終結果が入っています。\\ ``start/assets/"
+"main_menu``\\ フォルダにはすべてのスプライトがあります。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
-#, fuzzy
 msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
 "UI system works."
 msgstr ""
-"GodotのUIシステムの仕組みを知るには、まず:doc:"
-"`ui_introduction_to_the_ui_system`\\ を見て下さい"
+"GodotのUIシステムの仕組みを知るには、まず\\ :doc:"
+"`ui_introduction_to_the_ui_system`\\ を見て下さい。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
 msgid "How to design your game UI"
@@ -107,25 +102,23 @@ msgid ""
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
-"プレースホルダは醜くなければならない訳ではなく、シンプルかつクリーンなグラ"
-"フィックスが維持できます。プレイヤーがUIをテストプレイする前は、特別なエフェ"
-"クト、アニメーション、詳細なイラストは避けて下さい。でなければ:"
+"仮のUIであってもわざわざ醜くする必要はありませんが、少なくとも簡潔なグラ"
+"フィックスにしてください。プレイヤーがUIをテストプレイする前は、特別なエフェ"
+"クト、アニメーション、詳細なイラストは避けるべきです。でなければ:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
-#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
-"グラフィックがプレイヤーのエクスペリエンスの認識を歪め、貴重なフィードバック"
-"を見逃す可能性があります"
+"グラフィックがプレイヤーのエクスペリエンスへの認識を歪め、貴重なフィードバッ"
+"クを見逃す可能性があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
-#, fuzzy
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
 msgstr ""
-"ユーザーエクスペリエンスが機能しない時にいくつかのスプライトをやり直さないと"
-"いけなくなる場合があります"
+"ユーザーエクスペリエンスが機能しない時に、いくつかのスプライトをやり直さない"
+"といけなくなる場合があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:58
 msgid ""

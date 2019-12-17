@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -472,7 +472,6 @@ msgstr ""
 "play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position. "
 "We can also use ``clamp()`` to prevent it from leaving the screen. "
@@ -490,6 +489,10 @@ msgid ""
 "this value ensures that your movement will remain consistent even if the "
 "frame rate changes."
 msgstr ""
+"El parámetro `delta` en la función `_process()` se refiere al *frame length* "
+"-la cantidad de tiempo que le tomo al frame anterior para completarse.\n"
+"Usando este valor aseguras que tu movimiento sera consistente incluso si el "
+"frame rate cambia ."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:337
 msgid ""

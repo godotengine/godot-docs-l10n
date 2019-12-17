@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:4
 msgid "Introduction to the 2D animation features"
-msgstr ""
+msgstr "Introduction aux fonctions de l'animation 2D"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 msgid "Overview"
@@ -30,26 +30,29 @@ msgid ""
 "The :ref:`class_AnimationPlayer` node allows you to create anything from "
 "simple to complex animations."
 msgstr ""
+"Le nœud :ref:`class_AnimationPlayer` vous permet de créer des animations "
+"simples ou complexes."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:12
 msgid "In this guide you learn to:"
-msgstr ""
+msgstr "Dans ce guide, vous apprendrez à :"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:14
 msgid "Work with the Animation Panel"
-msgstr ""
+msgstr "Travailler avec le panneau d'animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:15
 msgid "Animate any property of any node"
-msgstr ""
+msgstr "Animer n'importe quelle propriété de n'importe quel nœud"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:16
 msgid "Create a simple animation"
-msgstr ""
+msgstr "Créer une animation simple"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:17
 msgid "Call functions with the powerful Call Function Tracks"
 msgstr ""
+"Appeler des fonctions avec la puissante fonction d'appel Call Function Tracks"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:19
 msgid ""
@@ -58,16 +61,23 @@ msgid ""
 "materials, and so on. You can also modify values of script variables and "
 "call any function."
 msgstr ""
+"Dans Godot, vous pouvez animer tout ce qui est disponible dans l'inspecteur, "
+"comme les transformations de nœuds, les sprites, les éléments d'interface "
+"utilisateur, les particules, la visibilité et la couleur des matériaux, etc. "
+"Vous pouvez également modifier les valeurs des variables de script et "
+"appeler n'importe quelle fonction."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:25
 msgid "Create an AnimationPlayer node"
-msgstr ""
+msgstr "Créer un nœud AnimationPlayer"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:27
 msgid ""
 "To use the animation tools we first have to create an :ref:"
 "`class_AnimationPlayer` node."
 msgstr ""
+"Pour utiliser les outils d'animation, nous devons d'abord créer un nœud :ref:"
+"`class_AnimationPlayer`."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:30
 msgid ""
@@ -75,52 +85,63 @@ msgid ""
 "AnimationPlayer node can hold multiple animations, that can automatically "
 "transition to one another."
 msgstr ""
+"Le type de nœud AnimationPlayer est le conteneur de données pour vos "
+"animations. Un nœud AnimationPlayer peut contenir plusieurs animations, qui "
+"peuvent passer automatiquement les unes aux autres."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:37
 msgid "The AnimationPlayer node"
-msgstr ""
+msgstr "Le nœud AnimationPlayer"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:39
 msgid ""
 "After creating one click on the AnimationPlayer node in the Node tab to open "
 "the Animation Panel at the bottom of the viewport."
 msgstr ""
+"Après avoir créé un clic sur le nœud AnimationPlayer dans l'onglet Nœud pour "
+"ouvrir le panneau Animation en bas de la fenêtre d'affichage."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:45
 msgid "The animation panel position"
-msgstr ""
+msgstr "La position du panneau d'animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:47
 msgid "It consists of four parts:"
-msgstr ""
+msgstr "Il se compose de quatre parties :"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:52
 msgid "The animation panel"
-msgstr ""
+msgstr "Le panneau d'animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:54
 msgid "Animation controls (i.e. add, load, save, and delete animations)"
 msgstr ""
+"Contrôles d'animation (c.-à-d. ajouter, charger, enregistrer et supprimer "
+"des animations)"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:55
 msgid "The tracks listing"
-msgstr ""
+msgstr "La liste des pistes"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:56
 msgid "The timeline with keyframes"
-msgstr ""
+msgstr "La timeline avec les clés-images"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:57
 msgid ""
 "The timeline and track controls, where you can zoom the timeline and edit "
 "tracks for example."
 msgstr ""
+"Les contrôles de timeline et de piste, où vous pouvez zoomer sur la timeline "
+"et éditer les pistes par exemple."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:60
 msgid ""
 "See the `animation panel reference <#animation-panel-reference>`__ below for "
 "details."
 msgstr ""
+"Pour plus de détails, reportez-vous à la section `référence panneau "
+"d'animation <#animation-panel-reference>`__ ci-dessous."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:64
 msgid "Computer animation relies on keyframes"
@@ -145,20 +166,25 @@ msgid ""
 "The engine interpolates values between keyframes, resulting in a gradual "
 "change in values over time."
 msgstr ""
+"Le moteur interpole les valeurs entre les images clés, résultant en un "
+"changement graduel des valeurs au cours du temps."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:82
 msgid "Two keyframes are all it takes to obtain a smooth motion"
 msgstr ""
+"Deux keyframes sont tout ce qu'il faut pour obtenir un mouvement fluide"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:84
 msgid ""
 "The timeline lets you insert keyframes and change their timing. It also "
 "defines how long the animation is."
 msgstr ""
+"La timeline vous permet d'insérer des images clés et de changer leur timing. "
+"Elle définit aussi la durée de l'animation."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:90
 msgid "The timeline in the animation panel"
-msgstr ""
+msgstr "La timeline dans le panel d'animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:92
 msgid ""
@@ -168,8 +194,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:99
+#, fuzzy
 msgid "Example of Normal animation tracks"
-msgstr ""
+msgstr "Exemple de pistes d'animation de normales"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:103
 msgid ""
@@ -181,7 +208,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:109
 msgid "Tutorial: Creating a simple animation"
-msgstr ""
+msgstr "Tutoriel : Création d'une animation simple"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:112
 msgid "Scene setup"
@@ -192,10 +219,12 @@ msgid ""
 "For this tutorial, we'll going to create an AnimationPlayer node and a "
 "sprite node as its child."
 msgstr ""
+"Pour ce tutoriel, nous allons créer un nœud d'AnimationPlayer et un "
+"nœudsprite de sprite et son enfant."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:120
 msgid "Our scene setup"
-msgstr ""
+msgstr "Notre configuration de scène"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:122
 msgid ""
@@ -225,11 +254,11 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:141
 msgid "Add a new animation"
-msgstr ""
+msgstr "Ajouter une nouvelle animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:144
 msgid "Adding a track"
-msgstr ""
+msgstr "Ajout d'une piste"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:146
 msgid ""
@@ -263,10 +292,12 @@ msgid ""
 "This creates a new track and our first keyframe at the beginning of the "
 "timeline:"
 msgstr ""
+"Cela crée une nouvelle piste et notre première image-clé au début de la "
+"timeline :"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:170
 msgid "The sprite track"
-msgstr ""
+msgstr "La piste de sprite"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:172
 msgid ""
@@ -279,6 +310,8 @@ msgid ""
 "In our example, the path is ``AnimationPlayer/Sprite`` and the property is "
 "``position``."
 msgstr ""
+"Dans notre exemple, le chemin est ``AnimationPlayer/Sprite`` et la propriété "
+"est ``position``."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:178
 msgid ""
@@ -291,10 +324,13 @@ msgid ""
 "Don't worry if you change the names of nodes in the Scene Tree, that you "
 "already have tracks for. Godot automatically updates the paths in the tracks."
 msgstr ""
+"Ne vous inquiétez pas si vous changez les noms des nœuds dans l'arbre de "
+"scène, que vous avez déjà des pistes pour. Godot met automatiquement à jour "
+"les chemins dans les pistes."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:188
 msgid "The second keyframe"
-msgstr ""
+msgstr "La deuxième image-clé"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:190
 msgid ""
@@ -311,7 +347,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:200
 msgid "Animation length"
-msgstr ""
+msgstr "Durée de l'animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:202
 msgid ""
@@ -323,22 +359,24 @@ msgstr ""
 msgid ""
 "Again, click the key button in the toolbar. This creates our second keyframe."
 msgstr ""
+"De nouveau, cliquez sur le bouton clé dans la barre d'outils. Ceci crée "
+"notre deuxième image-clé."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:209
 msgid "Run the animation"
-msgstr ""
+msgstr "Lancer l'animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:211
 msgid "Click on the \"Play from beginning\" (|Play from beginning|) button."
-msgstr ""
+msgstr "Cliquez sur le \"Play from beginning\" Jouer depuis le début) Bouton."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:213
 msgid "Yay! Our animation runs:"
-msgstr ""
+msgstr "Yeah ! Notre animation fonctionne :"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:218
 msgid "The animation"
-msgstr ""
+msgstr "L'animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:221
 msgid "Back and forth"
@@ -353,7 +391,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:231
 msgid "Animation loop"
-msgstr ""
+msgstr "Boucle d'animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:233
 msgid ""
@@ -365,7 +403,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/introduction_2d.rst:238
 #: ../../docs/tutorials/animation/introduction_2d.rst:246
 msgid "Track settings"
-msgstr ""
+msgstr "Paramètres de la piste"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:240
 msgid ""
@@ -381,11 +419,11 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:251
 msgid "Continuous: Update the property on each frame"
-msgstr ""
+msgstr "Continu : Mise à jour de la propriété sur chaque image"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:252
 msgid "Discrete: Only update the property on keyframes"
-msgstr ""
+msgstr "Discret : Mise à jour de la propriété uniquement sur les keyframes"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:253
 msgid "Trigger: Only update the property on keyframes or triggers"
@@ -406,12 +444,16 @@ msgid ""
 "In normal animations, you usually use \"Continuous\". The other types are "
 "used to script complex animations."
 msgstr ""
+"Dans les animations normales, vous utilisez généralement \"Continuous\". Les "
+"autres types sont utilisés pour scripter des animations complexes."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:264
 msgid ""
 "The interpolation tells Godot how to calculate the frame values between the "
 "keyframes. These interpolation modes are supported:"
 msgstr ""
+"L'interpolation indique à Godot comment calculer les valeurs d'image entre "
+"les images clés. Ces modes d'interpolation sont pris en charge :"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:267
 msgid "Nearest: Set the nearest keyframe value"
@@ -445,10 +487,12 @@ msgid ""
 "Godot supports two loop modes, which affect the animation if it's set to "
 "loop:"
 msgstr ""
+"Godot prend en charge deux modes de boucle, qui affectent l'animation si "
+"elle est réglée pour boucler :"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:289
 msgid "Loop modes"
-msgstr ""
+msgstr "Modes de boucle"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:291
 msgid ""
@@ -467,7 +511,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/introduction_2d.rst:299
 #: ../../docs/tutorials/animation/introduction_2d.rst:312
 msgid "Keyframes for other properties"
-msgstr ""
+msgstr "Images-clés pour d'autres propriétés"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:301
 msgid ""
@@ -485,7 +529,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:315
 msgid "Edit keyframes"
-msgstr ""
+msgstr "Modifier les images-clés"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:317
 msgid ""
@@ -496,7 +540,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:324
 msgid "Keyframe editor editing a key"
-msgstr ""
+msgstr "Éditeur keyframe éditant une keyframe"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:326
 msgid ""
@@ -513,7 +557,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:334
 msgid "Advanced: Call Method tracks"
-msgstr ""
+msgstr "Avancé : Pistes de la méthode d'appel"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:336
 msgid ""
