@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2019-12-03 10:51+0100\n"
+"POT-Creation-Date: 2019-12-17 12:01+0100\n"
 "PO-Revision-Date: 2019-12-03 07:11+0000\n"
 "Last-Translator: Rafael Dávila Mendoza <rafaeld_mendoza@hotmail.com>\n"
 "Language-Team: Spanish (Mexico) <https://hosted.weblate.org/projects/godot-"
@@ -1936,7 +1936,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:211
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:350
 #: ../../docs/development/compiling/index.rst:2
-#: ../../docs/development/compiling/compiling_for_windows.rst:84
+#: ../../docs/development/compiling/compiling_for_windows.rst:85
 #: ../../docs/development/compiling/compiling_for_x11.rst:85
 #: ../../docs/development/compiling/compiling_for_osx.rst:23
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
@@ -4029,22 +4029,25 @@ msgstr ""
 "<class_Object_method__notification>` en su script:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
+#, fuzzy
 msgid ""
 "The documentation of each class in the :ref:`Class Reference <toc-class-"
 "ref>` shows the notifications it can receive. However, in most cases "
-"GDScript provides simpler overrideable functions."
+"GDScript provides simpler overridable functions."
 msgstr ""
 "La documentación de cada clase en: :ref:`Class Reference <toc-class-ref>` "
 "muestra las notificaciones que puede recibir. Sin embargo, en la mayoría de "
 "los casos GDScript proporciona funciones anulables más simples."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
-msgid "Overrideable functions"
+#, fuzzy
+msgid "Overridable functions"
 msgstr "Funciones anulables"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
+#, fuzzy
 msgid ""
-"Such overrideable functions, which are described as follows, can be applied "
+"Such overridable functions, which are described as follows, can be applied "
 "to nodes:"
 msgstr ""
 "Estas funciones anulables, que se describen a continuación, se pueden "
@@ -9288,12 +9291,12 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 msgid ""
-"Anything Godot saves or loads from disk is a resource. Be it a scene (a ."
-"tscn or an .scn file), an image, a script... Here are some ``Resource`` "
-"examples: :ref:`Texture <class_Texture>`, :ref:`Script <class_Script>`, :ref:"
-"`Mesh <class_Mesh>`, :ref:`Animation <class_Animation>`, :ref:`AudioStream "
-"<class_AudioStream>`, :ref:`Font <class_Font>`, :ref:`Translation "
-"<class_Translation>`."
+"Anything Godot saves or loads from disk is a resource. Be it a scene (a ``."
+"tscn`` or an ``.scn`` file), an image, a script... Here are some "
+"``Resource`` examples: :ref:`Texture <class_Texture>`, :ref:`Script "
+"<class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
+"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
+"<class_Font>`, :ref:`Translation <class_Translation>`."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
@@ -9326,8 +9329,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
 msgid ""
-"**Built-in**, saved inside the \\*.tscn or the \\*.scn file they're attached "
-"to."
+"**Built-in**, saved inside the ``.tscn`` or the ``.scn`` file they're "
+"attached to."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
@@ -9353,8 +9356,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/resources.rst:60
 msgid ""
 "The switch between built-in and external resources happens when you save the "
-"scene. In the example above, if you erase the path \\`\"res://robi.png\"\\` "
-"and save, Godot will save the image inside the .tscn scene file."
+"scene. In the example above, if you erase the path ``\"res://robi.png\"`` "
+"and save, Godot will save the image inside the ``.tscn`` scene file."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
@@ -19421,7 +19424,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:292
 msgid ""
 "For example: include all tracks in animations with names ending in ``\"_Loop"
-"\"``, but discard any tracks affecting a `\"Skeleton\"`` which end in ``"
+"\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
 "\"Control\"``, unless they have ``\"Arm\"`` in their name::"
 msgstr ""
 
@@ -42806,7 +42809,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:183
 msgid ""
-"Before drawing Bezier curves, *tesselation* is required. This is often done "
+"Before drawing Bezier curves, *tessellation* is required. This is often done "
 "with a recursive or divide and conquer function that splits the curve until "
 "the curvature amount becomes less than a certain threshold."
 msgstr ""
@@ -49396,7 +49399,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/gui_skinning.rst:106
 msgid ""
 "In the inline help of Godot (in the script tab) you can check which theme "
-"options are overrideable, or check the :ref:`Control <class_Control>` class "
+"options are overridable, or check the :ref:`Control <class_Control>` class "
 "reference."
 msgstr ""
 
@@ -50403,7 +50406,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:174
 msgid ""
 "Rainbow gives the text a rainbow color that changes over time. Its tag "
-"format is ``[rainbow freq=0.2 sat=10 val=20][/rainbow]. ``freq`` is the "
+"format is ``[rainbow freq=0.2 sat=10 val=20][/rainbow]``. ``freq`` is the "
 "number of full rainbow cycles per second, ``sat`` is the saturation of the "
 "rainbow, ``val`` is the value of the rainbow."
 msgstr ""
@@ -50486,11 +50489,11 @@ msgstr ""
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:211
 msgid ""
 "Finally, ``env`` is a :ref:`class_Dictionary` of parameters assigned to a "
-"given custom effect. You can use `:ref:`class_Dictionary_method_get` with an "
-"optional default value to retrieve each parameter, if specified by the user. "
-"For example ``[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]`` would "
-"have a float ``spread`` and Color ``color`` parameters in its ` `env`` "
-"Dictionary. See below for more usage examples."
+"given custom effect. You can use :ref:`get() <class_Dictionary_method_get>` "
+"with an optional default value to retrieve each parameter, if specified by "
+"the user. For example ``[custom_fx spread=0.5 color=#FFFF00]test[/"
+"custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in "
+"its ` `env`` Dictionary. See below for more usage examples."
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:217
@@ -56801,52 +56804,51 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:29
 msgid ""
-"Then assign a :ref:`class_VisualShader` resource to the ``Shader`` property. "
-"Click on the new ``VisualShader`` resource and the Visual Shader Editor will "
-"open automatically."
+"Then assign a :ref:`class_VisualShader` resource to the ``Shader`` property."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:35
+#: ../../docs/tutorials/shading/visual_shaders.rst:33
 msgid ""
-"The layout of the Visual Shader Editor comprises two parts: the upper "
-"toolbar and the graph itself."
+"Click on the new ``VisualShader`` resource and the Visual Shader Editor will "
+"open automatically. The layout of the Visual Shader Editor comprises two "
+"parts: the upper toolbar and the graph itself."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:40
+#: ../../docs/tutorials/shading/visual_shaders.rst:39
 msgid "From left to right in the toolbar:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:42
+#: ../../docs/tutorials/shading/visual_shaders.rst:41
 msgid ""
 "The ``Add Node`` button displays a popup menu to let you add nodes to the "
 "shader graph."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:44
+#: ../../docs/tutorials/shading/visual_shaders.rst:43
 msgid ""
 "The drop-down menu is the shader type: Vertex, Fragment and Light. Like for "
 "script shaders, it defines what built-in nodes will be available."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:46
+#: ../../docs/tutorials/shading/visual_shaders.rst:45
 msgid ""
 "The following buttons and number input control the zooming level, grid "
 "snapping and distance between grid lines (in pixels)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:48
+#: ../../docs/tutorials/shading/visual_shaders.rst:47
 msgid ""
 "The last icon shows the generated shader code corresponding to your graph."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:52
+#: ../../docs/tutorials/shading/visual_shaders.rst:51
 msgid ""
 "Although VisualShaders do not require coding, they share the same logic with "
 "script shaders. It is advised to learn the basics of both to have a good "
 "understanding of the shading pipeline."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:56
+#: ../../docs/tutorials/shading/visual_shaders.rst:55
 msgid ""
 "The visual shader graph is converted to a script shader behind the scene, "
 "and you can see this code by pressing the last button in the toolbar. This "
@@ -56854,11 +56856,11 @@ msgid ""
 "it in scripts."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:62
+#: ../../docs/tutorials/shading/visual_shaders.rst:61
 msgid "Using the Visual Shader Editor"
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:64
+#: ../../docs/tutorials/shading/visual_shaders.rst:63
 msgid ""
 "By default, every new ``VisualShader`` will have an output node. Every node "
 "connection ends at one of the output node's sockets. A node is the basic "
@@ -56867,19 +56869,19 @@ msgid ""
 "graph, and a menu will pop up."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:72
+#: ../../docs/tutorials/shading/visual_shaders.rst:71
 #, fuzzy
 msgid "This popup has the following properties:"
 msgstr "La escena de la pandilla utilizará los siguientes nodos:"
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:74
+#: ../../docs/tutorials/shading/visual_shaders.rst:73
 msgid ""
 "If you right-click on the graph, this menu will be called at the cursor "
 "position and the created node, in that case, will also be placed under that "
 "position; otherwise, it will be created at the graph's center."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:77
+#: ../../docs/tutorials/shading/visual_shaders.rst:76
 msgid ""
 "It can be resized horizontally and vertically allowing more content to be "
 "shown. Size transform and tree content position are saved between the calls, "
@@ -56887,52 +56889,52 @@ msgid ""
 "state."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:80
+#: ../../docs/tutorials/shading/visual_shaders.rst:79
 msgid ""
 "The ``Expand All`` and ``Collapse All`` options in the drop-down option menu "
 "can be used to easily list the available nodes."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:82
+#: ../../docs/tutorials/shading/visual_shaders.rst:81
 msgid "You can also drag and drop nodes from the popup onto the graph."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:84
+#: ../../docs/tutorials/shading/visual_shaders.rst:83
 msgid ""
 "While the popup has nodes sorted in categories, it can seem overwhelming at "
 "first. Try to add some of the nodes, plug them in the output socket and "
 "observe what happens."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:88
+#: ../../docs/tutorials/shading/visual_shaders.rst:87
 msgid ""
 "When connecting any ``scalar`` output to a ``vector`` input, all components "
 "of the vector will take the value of the scalar."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:91
+#: ../../docs/tutorials/shading/visual_shaders.rst:90
 msgid ""
 "When connecting any ``vector`` output to a ``scalar`` input, the value of "
 "the scalar will be the average of the vector's components."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:95
+#: ../../docs/tutorials/shading/visual_shaders.rst:94
 #, fuzzy
 msgid "Visual Shader nodes"
 msgstr "Android"
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:97
+#: ../../docs/tutorials/shading/visual_shaders.rst:96
 msgid ""
 "Below are some special nodes that are worth knowing about. The list is not "
 "exhaustive and might be expanded with more nodes and examples."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:101
+#: ../../docs/tutorials/shading/visual_shaders.rst:100
 #, fuzzy
 msgid "Expression node"
 msgstr "Procesando"
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:103
+#: ../../docs/tutorials/shading/visual_shaders.rst:102
 msgid ""
 "The ``Expression`` node allows you to write Godot Shading Language (GLSL-"
 "like) expressions inside your visual shaders. The node has buttons to add "
@@ -56944,19 +56946,19 @@ msgid ""
 "located under the Special tab and can be used in all shader modes."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:114
+#: ../../docs/tutorials/shading/visual_shaders.rst:113
 msgid ""
 "The possibilities of this node are almost limitless – you can write complex "
 "procedures, and use all the power of text-based shaders, such as loops, the "
 "``discard`` keyword, extended types, etc. For example:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:121
+#: ../../docs/tutorials/shading/visual_shaders.rst:120
 #, fuzzy
 msgid "Fresnel node"
 msgstr "Crear nodos"
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:123
+#: ../../docs/tutorials/shading/visual_shaders.rst:122
 msgid ""
 "The ``Fresnel`` node is designed to accept normal and view vectors and "
 "produces a scalar which is the saturated dot product between them. "
@@ -56964,12 +56966,12 @@ msgid ""
 "``Fresnel`` node is great for adding a rim-like lighting effect to objects."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:131
+#: ../../docs/tutorials/shading/visual_shaders.rst:130
 #, fuzzy
 msgid "Boolean node"
 msgstr "Crear nodos"
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:133
+#: ../../docs/tutorials/shading/visual_shaders.rst:132
 msgid ""
 "The ``Boolean`` node can be converted to ``Scalar`` or ``Vector`` to "
 "represent ``0`` or ``1`` and ``(0, 0, 0)`` or ``(1, 1, 1)`` respectively. "
@@ -56977,11 +56979,11 @@ msgid ""
 "click."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:140
+#: ../../docs/tutorials/shading/visual_shaders.rst:139
 msgid "If node"
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:142
+#: ../../docs/tutorials/shading/visual_shaders.rst:141
 msgid ""
 "The ``If`` node allows you to setup a vector which will be returned the "
 "result of the comparison between ``a`` and ``b``. There are three vectors "
@@ -56990,18 +56992,18 @@ msgid ""
 "value, i.e. ``0.00001``), ``a > b`` and ``a < b``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:151
+#: ../../docs/tutorials/shading/visual_shaders.rst:150
 msgid "Switch node"
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:153
+#: ../../docs/tutorials/shading/visual_shaders.rst:152
 msgid ""
 "The ``Switch`` node returns a vector if the boolean condition is ``true`` or "
 "``false``. ``Boolean`` was introduced above. If you convert a vector to a "
 "true boolean, all components of the vector should be above zero."
 msgstr ""
 
-#: ../../docs/tutorials/shading/visual_shaders.rst:161
+#: ../../docs/tutorials/shading/visual_shaders.rst:160
 msgid ""
 "The ``Switch`` node is only available on the GLES3 backed. If you are "
 "targeting GLES2 devices, you cannot use ``switch`` statements."
@@ -59880,12 +59882,13 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/index.rst:2
 #, fuzzy
-msgid "VR Starer tutorial"
+msgid "VR starter tutorial"
 msgstr "Tutoriales Escritos"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:4
-msgid "VR Starter Tutorial Part One"
-msgstr ""
+#, fuzzy
+msgid "VR starter tutorial part 1"
+msgstr "Tutoriales Escritos"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:11
 msgid ""
@@ -60156,7 +60159,7 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:109
 msgid ""
 "If the VR system supports room tracking, then the :ref:`ARVRCamera "
-"<class_ARVRCamera>` node may be offset on the X and Z axises as the player "
+"<class_ARVRCamera>` node may be offset on the X and Z axes as the player "
 "moves."
 msgstr ""
 
@@ -60855,7 +60858,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:700
 msgid ""
-"First this function gets the axises for the trackpad and the joystick and "
+"First this function gets the axes for the trackpad and the joystick and "
 "assigns them to :ref:`Vector2 <class_Vector2>` variables called "
 "``trackpad_vector`` and ``joystick_vector`` respectively."
 msgstr ""
@@ -61717,8 +61720,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:4
-msgid "VR Starter Tutorial Part Two"
-msgstr ""
+#, fuzzy
+msgid "VR starter tutorial part 2"
+msgstr "Tutoriales Escritos"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:11
 msgid ""
@@ -62410,9 +62414,9 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:526
 msgid ""
-"Once all of the :ref:`Raycast <class_Raycast>`s in the ``raycast`` variable "
-"have been iterated over, we then play the shotgun shot sound by calling the "
-"``play`` function on the ``shotgun_fire_sound`` variable."
+"Once all of the :ref:`Raycast <class_Raycast>`\\s in the ``raycast`` "
+"variable have been iterated over, we then play the shotgun shot sound by "
+"calling the ``play`` function on the ``shotgun_fire_sound`` variable."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:528
@@ -65975,7 +65979,7 @@ msgid "Then, from your script:"
 msgstr "El papel o rol del script"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:274
-#: ../../docs/development/compiling/compiling_for_windows.rst:211
+#: ../../docs/development/compiling/compiling_for_windows.rst:212
 #: ../../docs/development/compiling/compiling_for_android.rst:195
 #: ../../docs/development/editor/creating_icons.rst:86
 msgid "Troubleshooting"
@@ -70419,9 +70423,9 @@ msgstr ""
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:9
 msgid ""
 "When developing your game, you want to test your game and debug when "
-"problems occurr. Godot provides several debugging options and tools which "
-"aid your debugging process. There are the debug dropdown options, Script "
-"editor debug options, debug project settings, and the debugger."
+"problems occur. Godot provides several debugging options and tools which aid "
+"your debugging process. There are the debug dropdown options, Script editor "
+"debug options, debug project settings, and the debugger."
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:14
@@ -70549,7 +70553,7 @@ msgstr "Múltiples instancias"
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:82
 msgid ""
 "These are some general settings such as printing the current FPS to the "
-"Output panel, the maximum ammount of functions when profiling and others."
+"Output panel, the maximum amount of functions when profiling and others."
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:88
@@ -70640,14 +70644,49 @@ msgid "Profiler"
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:130
-msgid "Profiles the performance of any function call in the running game."
+msgid ""
+"The profiler is used to show why individual frames take as long as they do "
+"to process and render."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:132
+msgid ""
+"Unlike other debugging tools the profiler does not start automatically. It "
+"can be started at any time during gameplay by pressing the start button. You "
+"can even start the profiler before opening the game to profile start up "
+"performance. It can also be started and stopped while the game is running "
+"without losing information from when it was last running. The information it "
+"records won't go away unless you click clear, or close the game, reopen it "
+"and start the profiler again."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:138
+msgid ""
+"After starting and stopping the profiler you should see things being kept "
+"track of on the left and a graph on the right. The items listed on the left "
+"are everything that contributes to frame time, and they should each have a "
+"value for time and calls for the current frame you are looking at."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:142
+msgid ""
+"The frame number in the top right tells you which frame you are currently "
+"looking at. You can change this by using the up or down arrows, typing in "
+"the frame number, or clicking on the graph."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:145
+msgid ""
+"If you want to add something to your graph, or think it looks too cluttered, "
+"you can check and uncheck the box next to an item to add or remove it from "
+"the graph."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
 msgid "Network Profiler"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:135
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:151
 msgid ""
 "The Network Profiler contains a list of all the nodes that communicate over "
 "the multiplayer API and, for each one, some counters on the amount of "
@@ -70655,11 +70694,11 @@ msgid ""
 "meter that displays the total bandwidth usage at any given moment"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:140
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:156
 msgid "Monitors"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:142
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:158
 msgid ""
 "The monitors are graphs of several aspects of the game while its running "
 "such as FPS, memory usage, how many nodes are in a scene and more. All "
@@ -70668,36 +70707,39 @@ msgid ""
 "changed."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:147
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:163
 msgid "Video Mem"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:165
 msgid ""
 "Video Mem list the video memory usage of the running game and which resource "
 "is using it."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:152
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:168
 msgid "Misc"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:154
-msgid "Miscellaneous options for debug."
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:170
+msgid ""
+"Misc is used to identify which control node you are clicking while the game "
+"is running. \"Clicked Control\" shows where on the scene tree the node is. "
+"\"Clicked Control Type\" tells you what type of node it is."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:157
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:174
 msgid "Remote in Scene dock"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:159
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:176
 msgid ""
 "When running a game in the editor two options appear at the top of the "
 "``Scene`` dock, ``Remote`` and ``Local``. While using ``Remote`` you can "
 "inspect or change the nodes' parameters in the running game."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:165
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:182
 msgid ""
 "Some editor settings related to debugging can be found inside the ``Editor "
 "Settings``, under Network>Debug and Debugger sections."
@@ -71303,45 +71345,48 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_windows.rst:13
 msgid ""
 "`Visual Studio Community <https://www.visualstudio.com/vs/community/>`_, "
-"version 2015 (14.0) or later. **Make sure to read \"Installing Visual Studio "
-"caveats\" below or you will have to run/download the installer again.**"
+"version 2015 (14.0) or later. VS 2019 is recommended. **Make sure to read "
+"\"Installing Visual Studio caveats\" below or you will have to run/download "
+"the installer again.**"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:17
-msgid "MinGW-w64 can be used as an alternative to Visual Studio."
+msgid ""
+"MinGW-w64 with GCC can be used as an alternative to Visual Studio. Be sure "
+"to install/configure it to use the ``posix`` thread model."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:18
+#: ../../docs/development/compiling/compiling_for_windows.rst:19
 msgid ""
 "`Python 3.5+ (recommended) or Python 2.7+. <https://www.python.org/downloads/"
 "windows/>`_"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:19
+#: ../../docs/development/compiling/compiling_for_windows.rst:20
 msgid ""
 "`SCons <https://www.scons.org>`_ build system. If using Visual Studio 2019, "
 "you *must* have SCons 3.1.1 or later."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:21
+#: ../../docs/development/compiling/compiling_for_windows.rst:22
 msgid ""
 "*Optional* - `yasm <https://yasm.tortall.net/>`_ (for WebM SIMD "
 "optimizations)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:23
+#: ../../docs/development/compiling/compiling_for_windows.rst:24
 msgid ""
 "If you have `Scoop <https://scoop.sh/>`_ installed, you can easily install "
 "MinGW and other dependencies using the following command::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:28
+#: ../../docs/development/compiling/compiling_for_windows.rst:29
 msgid ""
 "If you have `MSYS2 <https://www.msys2.org/>`_ installed, you can easily "
 "install MinGW and other dependencies using the following command::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:39
+#: ../../docs/development/compiling/compiling_for_windows.rst:40
 #: ../../docs/development/compiling/compiling_for_x11.rst:25
 #: ../../docs/development/compiling/compiling_for_osx.rst:19
 #: ../../docs/development/compiling/compiling_for_android.rst:37
@@ -71353,25 +71398,25 @@ msgid ""
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:43
+#: ../../docs/development/compiling/compiling_for_windows.rst:44
 msgid "Setting up SCons"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:45
+#: ../../docs/development/compiling/compiling_for_windows.rst:46
 msgid ""
 "First, make sure to enable the option to add Python to the ``PATH`` in the "
 "Python installer. The SCons installer should then detect and use the "
 "existing Python installation."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:49
+#: ../../docs/development/compiling/compiling_for_windows.rst:50
 msgid ""
 "To check whether you have installed Python and SCons correctly, you can type "
 "``python --version`` and ``scons --version`` into a command prompt (``cmd."
 "exe``)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:53
+#: ../../docs/development/compiling/compiling_for_windows.rst:54
 msgid ""
 "If the commands above don't work, make sure to add Python to your ``PATH`` "
 "environment variable after installing it, then check again. You can do so by "
@@ -71379,23 +71424,23 @@ msgid ""
 "the ``PATH``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:61
+#: ../../docs/development/compiling/compiling_for_windows.rst:62
 msgid "Installing Visual Studio caveats"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:63
+#: ../../docs/development/compiling/compiling_for_windows.rst:64
 msgid ""
 "If installing Visual Studio 2017 or 2019, make sure to enable **C++** in the "
 "list of workflows to install."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:66
+#: ../../docs/development/compiling/compiling_for_windows.rst:67
 msgid ""
 "If installing Visual Studio 2015, make sure to run a **Custom** installation "
 "instead of **Typical** and select **C++** as a language there."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:69
+#: ../../docs/development/compiling/compiling_for_windows.rst:70
 msgid ""
 "If you've already made the mistake of installing Visual Studio without C++ "
 "support, run the installer again; it should present you a **Modify** button. "
@@ -71403,29 +71448,29 @@ msgid ""
 "**Repair** option, which won't let you install C++ tools."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:75
+#: ../../docs/development/compiling/compiling_for_windows.rst:76
 msgid "Downloading Godot's source"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:77
+#: ../../docs/development/compiling/compiling_for_windows.rst:78
 msgid ""
 "Godot's source code is `hosted on GitHub <https://github.com/godotengine/"
 "godot>`_. Downloading it (cloning) using `Git <https://git-scm.com/>`_ is "
 "recommended."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:80
+#: ../../docs/development/compiling/compiling_for_windows.rst:81
 msgid ""
 "The tutorial will assume from now on that you placed the source code in ``C:"
 "\\godot``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:87
+#: ../../docs/development/compiling/compiling_for_windows.rst:88
 #, fuzzy
 msgid "Selecting a compiler"
 msgstr "Ejemplo de disparo continuo"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:89
+#: ../../docs/development/compiling/compiling_for_windows.rst:90
 msgid ""
 "SCons will automatically find and use an existing Visual Studio "
 "installation. If you do not have Visual Studio installed, it will attempt to "
@@ -71433,7 +71478,7 @@ msgid ""
 "use MinGW, pass ``use_mingw=yes`` to the SCons command line."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:94
+#: ../../docs/development/compiling/compiling_for_windows.rst:95
 msgid ""
 "During development, using the Visual Studio compiler is usually a better "
 "idea, as it links the Godot binary much faster than MinGW. However, MinGW "
@@ -71441,53 +71486,53 @@ msgid ""
 "below), making it a better choice for production use."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:100
+#: ../../docs/development/compiling/compiling_for_windows.rst:101
 msgid "Running SCons"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:102
+#: ../../docs/development/compiling/compiling_for_windows.rst:103
 msgid ""
 "After opening a command prompt, change to the root directory of the engine "
 "source code (using ``cd``) and type::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:107
+#: ../../docs/development/compiling/compiling_for_windows.rst:108
 msgid "You can specify a number of CPU threads to use to speed up the build::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:111
+#: ../../docs/development/compiling/compiling_for_windows.rst:112
 msgid ""
 "In general, it is OK to have at least as many threads compiling Godot as you "
 "have cores in your CPU, if not one or two more. Feel free to add the -j "
 "option to any SCons command you see below."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:115
+#: ../../docs/development/compiling/compiling_for_windows.rst:116
 msgid ""
 "When compiling with multiple CPU threads, SCons may warn about pywin32 being "
 "missing. You can safely ignore this warning."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:118
+#: ../../docs/development/compiling/compiling_for_windows.rst:119
 msgid ""
 "If all goes well, the resulting binary executable will be placed in ``C:"
 "\\godot\\bin\\`` with the name ``godot.windows.tools.32.exe`` or ``godot."
 "windows.tools.64.exe``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:122
+#: ../../docs/development/compiling/compiling_for_windows.rst:123
 msgid ""
 "By default, SCons will build a binary matching your CPU architecture, but "
 "this can be overridden using ``bits=64`` or ``bits=32``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:125
+#: ../../docs/development/compiling/compiling_for_windows.rst:126
 msgid ""
 "This executable file contains the whole engine and runs without any "
 "dependencies. Running it will bring up the Project Manager."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:128
+#: ../../docs/development/compiling/compiling_for_windows.rst:129
 #: ../../docs/development/compiling/compiling_for_x11.rst:113
 msgid ""
 "If you are compiling Godot for production use, then you can make the final "
@@ -71495,7 +71540,7 @@ msgid ""
 "``target=release_debug``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:132
+#: ../../docs/development/compiling/compiling_for_windows.rst:133
 msgid ""
 "If you are compiling Godot with MinGW, you can make the binary even smaller "
 "and faster by adding the SCons option ``use_lto=yes``. As link-time "
@@ -71503,30 +71548,30 @@ msgid ""
 "available RAM while compiling."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:138
+#: ../../docs/development/compiling/compiling_for_windows.rst:139
 msgid "Development in Visual Studio or other IDEs"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:140
+#: ../../docs/development/compiling/compiling_for_windows.rst:141
 msgid ""
 "For most projects, using only scripting is enough but when development in C+"
 "+ is needed, for creating modules or extending the engine, working with an "
 "IDE is usually desirable."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:144
+#: ../../docs/development/compiling/compiling_for_windows.rst:145
 msgid ""
 "You can create a Visual Studio solution via SCons by running SCons with the "
 "``vsproj=yes`` parameter, like this::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:149
+#: ../../docs/development/compiling/compiling_for_windows.rst:150
 msgid ""
 "You will be able to open Godot's source in a Visual Studio solution now, and "
 "able to build Godot using Visual Studio's **Build** button."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:152
+#: ../../docs/development/compiling/compiling_for_windows.rst:153
 msgid ""
 "If you need to edit the build commands, they are located in \"Godot\" "
 "project settings, NMAKE sheet. SCons is called at the end of the commands. "
@@ -71535,11 +71580,11 @@ msgid ""
 "they are equivalent."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:159
+#: ../../docs/development/compiling/compiling_for_windows.rst:160
 msgid "Cross-compiling for Windows from other operating systems"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:161
+#: ../../docs/development/compiling/compiling_for_windows.rst:162
 msgid ""
 "If you are a Linux or macOS user, you need to install `MinGW-w64 <https://"
 "mingw-w64.org/doku.php>`_, which typically comes in 32-bit and 64-bit "
@@ -71547,99 +71592,99 @@ msgid ""
 "some known ones:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:167
+#: ../../docs/development/compiling/compiling_for_windows.rst:168
 #: ../../docs/development/compiling/compiling_for_x11.rst:36
 msgid "**Arch Linux**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:167
+#: ../../docs/development/compiling/compiling_for_windows.rst:168
 msgid "Install `mingw-w64-gcc from the AUR`_."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:169
+#: ../../docs/development/compiling/compiling_for_windows.rst:170
 #: ../../docs/development/compiling/compiling_for_x11.rst:41
 msgid "**Debian** / **Ubuntu**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:173
+#: ../../docs/development/compiling/compiling_for_windows.rst:174
 #: ../../docs/development/compiling/compiling_for_x11.rst:46
 msgid "**Fedora**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:178
+#: ../../docs/development/compiling/compiling_for_windows.rst:179
 msgid "**macOS**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:182
+#: ../../docs/development/compiling/compiling_for_windows.rst:183
 #: ../../docs/development/compiling/compiling_for_x11.rst:63
 msgid "**Mageia**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:190
+#: ../../docs/development/compiling/compiling_for_windows.rst:191
 msgid ""
 "Before attempting the compilation, SCons will check for the following "
 "binaries in your ``PATH`` environment variable::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:196
+#: ../../docs/development/compiling/compiling_for_windows.rst:197
 msgid ""
 "If the binaries are not located in the ``PATH`` (e.g. ``/usr/bin``), you can "
 "define the following environment variables to give a hint to the build "
 "system::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:203
+#: ../../docs/development/compiling/compiling_for_windows.rst:204
 msgid ""
 "To make sure you are doing things correctly, executing the following in the "
 "shell should result in a working compiler (the version output may differ "
 "based on your system)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:213
+#: ../../docs/development/compiling/compiling_for_windows.rst:214
 msgid ""
 "Cross-compiling from some Ubuntu versions may lead to `this bug <https://"
 "github.com/godotengine/godot/issues/9258>`_, due to a default configuration "
 "lacking support for POSIX threading."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:217
+#: ../../docs/development/compiling/compiling_for_windows.rst:218
 msgid ""
 "You can change that configuration following those instructions, for 64-bit::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:225
+#: ../../docs/development/compiling/compiling_for_windows.rst:226
 msgid "And for 32-bit::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:233
+#: ../../docs/development/compiling/compiling_for_windows.rst:234
 msgid "Creating Windows export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:235
+#: ../../docs/development/compiling/compiling_for_windows.rst:236
 msgid ""
 "Windows export templates are created by compiling Godot without the editor, "
 "with the following flags::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:243
+#: ../../docs/development/compiling/compiling_for_windows.rst:244
 msgid ""
 "If you plan on replacing the standard export templates, copy these to the "
 "following location, replacing ``<version>`` with the version identifier "
 "(such as ``3.1.1.stable`` or ``3.2.dev``)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:249
+#: ../../docs/development/compiling/compiling_for_windows.rst:250
 #, fuzzy
 msgid "With the following names::"
 msgstr "La escena de la pandilla utilizará los siguientes nodos:"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:256
+#: ../../docs/development/compiling/compiling_for_windows.rst:257
 msgid ""
 "However, if you are using custom modules or custom engine code, you may "
 "instead want to configure your binaries as custom export templates here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:262
+#: ../../docs/development/compiling/compiling_for_windows.rst:263
 msgid ""
 "You don't need to copy them in this case, just reference the resulting files "
 "in the ``bin\\`` directory of your Godot source folder, so the next time you "
@@ -71698,7 +71743,7 @@ msgid "*Optional* - yasm (for WebM SIMD optimizations)"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:29
-msgid "Distro-specific oneliners"
+msgid "Distro-specific one-liners"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:31
