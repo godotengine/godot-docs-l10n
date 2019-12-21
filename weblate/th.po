@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: 2019-11-20 14:08+0000\n"
 "Last-Translator: Dreamknight7 <chalataom@gmail.com>\n"
 "Language-Team: Thai <https://hosted.weblate.org/projects/godot-engine/godot-"
@@ -2672,7 +2672,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:245
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:260
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:272
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:329
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:86
 msgid "GDScript"
 msgstr ""
@@ -3350,7 +3350,7 @@ msgid "Only GDScript creates global variables for each named script."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:4
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1280
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:236
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:694
@@ -10358,6 +10358,7 @@ msgid "``{file}:{line}``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:91
 msgid "JetBrains Rider"
 msgstr ""
 
@@ -10366,6 +10367,7 @@ msgid "``--line {line} {file}``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:88
 #: ../../docs/development/cpp/configuring_an_ide.rst:268
 msgid "Visual Studio Code"
 msgstr ""
@@ -12017,11 +12019,11 @@ msgid ""
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1165
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1167
 msgid "Classes as resources"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1167
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1169
 msgid ""
 "Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
 "They must be loaded from disk to access them in other classes. This is done "
@@ -12030,33 +12032,33 @@ msgid ""
 "class object::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1183
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1185
 msgid "Exports"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1187
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1189
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1190
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1192
 msgid "Setters/getters"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1192
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1194
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
 "way."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1195
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1197
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1202
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1204
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -12066,28 +12068,28 @@ msgid ""
 "``return`` the desired value. Below is an example::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1216
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1218
 msgid "Either of the *setter* or *getter* functions can be omitted::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1223
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1225
 msgid ""
 "Setters and getters are useful when :ref:`exporting variables "
 "<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
 "validating input."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1226
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1228
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1243
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1245
 msgid "Tool mode"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1245
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1247
 msgid ""
 "By default, scripts don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
@@ -12096,18 +12098,18 @@ msgid ""
 "top of the file::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1259
 msgid ""
 "Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
 "script (especially the script's owner itself). As tool scripts run their "
 "code in the editor, misusing them may lead to crashing the editor."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1263
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1265
 msgid "Memory management"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1265
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1267
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -12118,20 +12120,20 @@ msgid ""
 "weak references."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1273
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1275
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
 "freed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1284
 msgid ""
 "Signals are a tool to emit messages from an object that other objects can "
 "react to. To create custom signals for a class, use the ``signal`` keyword."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1294
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1296
 msgid ""
 "Signals are a `Callback <https://en.wikipedia.org/wiki/"
 "Callback_(computer_programming)>`_ mechanism. They also fill the role of "
@@ -12140,31 +12142,31 @@ msgid ""
 "the Game Programming Patterns ebook."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1301
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1303
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
 "signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1304
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
 msgid ""
 "In the example below, we connect the ``health_depleted`` signal from a "
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
 "signal, the game node's ``_on_Character_health_depleted`` is called::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1317
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
 msgid "You can emit as many arguments as you want along with a signal."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1321
 msgid ""
 "Here is an example where this is useful. Let's say we want a life bar on "
 "screen to react to health changes with an animation, but we want to keep the "
 "user interface separate from the player in our scene tree."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1323
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1325
 msgid ""
 "In our ``Character.gd`` script, we define a ``health_changed`` signal and "
 "emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
@@ -12173,32 +12175,32 @@ msgid ""
 "method::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1363
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1365
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1366
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1368
 msgid ""
 "In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
 "then connect the character, that emits the signal, to the receiver, the "
 "``Lifebar`` node in this case."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1380
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1383
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1385
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1389
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1391
 msgid ""
 "These arguments show up in the editor's node dock, and Godot can use them to "
 "generate callback functions for you. However, you can still emit any number "
@@ -12206,7 +12208,7 @@ msgid ""
 "values."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1395
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1397
 msgid ""
 "GDScript can bind an array of values to connections between a signal and a "
 "method. When the signal is emitted, the callback method receives the bound "
@@ -12214,14 +12216,14 @@ msgid ""
 "will stay the same."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1400
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1402
 msgid ""
 "You can use this array of values to add extra constant information to the "
 "connection if the emitted signal itself doesn't give you access to all the "
 "data that you need."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1406
 msgid ""
 "Building on the example above, let's say we want to display a log of the "
 "damage taken by each character on the screen, like ``Player1 took 22 damage."
@@ -12230,17 +12232,17 @@ msgid ""
 "can add the character's name in the binds array argument::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1418
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1420
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1430
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
 msgid "Coroutines with yield"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1434
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the :ref:`yield<class_@GDScript_method_yield>` built-in "
@@ -12251,44 +12253,44 @@ msgid ""
 "becomes invalid. Here is an example::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1452
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1472
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1454
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1474
 msgid "Will print::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1458
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1460
 msgid ""
 "It is also possible to pass values between ``yield()`` and ``resume()``, for "
 "example::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1479
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
 msgid "Coroutines & signals"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1483
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1494
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1496
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1505
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1507
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1508
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1510
 msgid "Onready keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1510
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1512
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -12296,7 +12298,7 @@ msgid ""
 "call to ``Node._ready()`` is made."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1522
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1524
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -12304,11 +12306,11 @@ msgid ""
 "can replace the above code with a single line::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1530
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1532
 msgid "Assert keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1532
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -12318,7 +12320,7 @@ msgid ""
 "depending on whether the project is run in a debug build."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1544
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1546
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."
@@ -14826,7 +14828,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:309
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:306
 msgid "Yield"
 msgstr ""
 
@@ -14915,7 +14917,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:245
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:260
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:272
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:329
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
 msgid "C#"
 msgstr ""
@@ -14942,8 +14944,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:21
 msgid ""
 "C# is a high-level programming language developed by Microsoft. In Godot, it "
-"is implemented with the Mono 5.x .NET framework, including full support for "
-"C# 7.0. Mono is an open source implementation of Microsoft's .NET Framework "
+"is implemented with the Mono 6.x .NET framework, including full support for "
+"C# 8.0. Mono is an open source implementation of Microsoft's .NET Framework "
 "based on the ECMA standards for C# and the Common Language Runtime. A good "
 "starting point for checking its capabilities is the `Compatibility <http://"
 "www.mono-project.com/docs/about-mono/compatibility/>`_ page in the Mono "
@@ -15024,28 +15026,37 @@ msgid ""
 ">`_ or MonoDevelop. These provide autocompletion, debugging, and other "
 "useful features for C#. To select an external editor in Godot, click on "
 "**Editor → Editor Settings** and scroll down to **Mono**. Under **Mono**, "
-"click on **Editor**, and select your external editor of choice."
+"click on **Editor**, and select your external editor of choice. Godot "
+"currently supports the following external editors:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:89
+msgid "MonoDevelop"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:90
+msgid "Visual Studio for Mac"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:93
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:98
 msgid "Creating a C# script"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:100
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting ``Attach script`` in the context menu of a node in "
 "your scene:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:105
 msgid ""
 "Note that while some specifics change, most concepts work the same when "
 "using C# for scripting. If you're new to Godot, you may want to follow the "
@@ -15054,11 +15065,11 @@ msgid ""
 "easily from GDScript."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:106
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:112
 msgid "Project setup and workflow"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:108
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:114
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
 "for your Godot project. This includes generating a C# solution (``.sln``) "
@@ -15070,7 +15081,7 @@ msgid ""
 "let it regenerate."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:117
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:123
 msgid ""
 "Note that currently, there are some issues where Godot and the C# project "
 "don't stay in sync; if you delete, rename or move a C# script, the change "
@@ -15078,7 +15089,7 @@ msgid ""
 "have to edit the C# project file manually."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:122
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
 msgid ""
 "For example, if you created a script (e.g. ``Test.cs``) and delete it in "
 "Godot, compilation will fail because the missing file is still expected to "
@@ -15087,25 +15098,25 @@ msgid ""
 "included like the following:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:142
 msgid ""
 "Simply remove that line and your project should build correctly again. Same "
 "for renaming and moving things, simply rename and move them in the project "
 "file if needed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
 #: ../../docs/tutorials/io/background_loading.rst:87
 #: ../../docs/tutorials/misc/pausing_games.rst:80
 msgid "Example"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:143
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:170
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:176
 msgid ""
 "As you can see, functions normally in global scope in GDScript like Godot's "
 "``print`` function are available in the ``GD`` class which is part of the "
@@ -15114,7 +15125,7 @@ msgid ""
 "`@GlobalScope <class_@globalscope>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
 msgid ""
 "Keep in mind that the class you wish to attach to your node should have the "
 "same name as the ``.cs`` file. Otherwise, you will get the following error "
@@ -15122,11 +15133,11 @@ msgid ""
 "res://XXX.cs\"*"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
 msgid "General differences between C# and GDScript"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:185
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:191
 msgid ""
 "The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++. "
 "Where possible, fields and getters/setters have been converted to "
@@ -15134,15 +15145,15 @@ msgid ""
 "reasonably possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:195
 msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:192
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:198
 msgid "Current gotchas and known issues"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
 msgid ""
 "As C# support is quite new in Godot, there are some growing pains and things "
 "that need to be ironed out. Below is a list of the most important issues you "
@@ -15151,25 +15162,25 @@ msgid ""
 "godotengine/godot/labels/topic%3Amono>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
 msgid ""
 "As explained above, the C# project isn't always kept in sync automatically "
 "when things are deleted, renamed or moved in Godot (`#12917 <https://github."
 "com/godotengine/godot/issues/12917>`_)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:203
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:209
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:210
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
 msgid ""
 "Exporting Mono projects is only supported for desktop platforms (Linux, "
 "Windows and macOS). Android, iOS, HTML5 and UWP are not currently supported "
@@ -15179,13 +15190,13 @@ msgid ""
 "godotengine/godot/issues/20271>`_)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:214
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:220
 msgid ""
 "There are some methods such as ``Get()``/``Set()``, ``Call()``/"
 "``CallDeferred()`` and signal connection method ``Connect()`` that rely on "
@@ -15195,11 +15206,11 @@ msgid ""
 "can use any custom properties or methods without this limitation."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:222
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
 msgid "Performance of C# in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:224
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:230
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
 "bunnymark>`_, the performance of C# in Godot — while generally in the same "
@@ -15210,11 +15221,11 @@ msgid ""
 "when talking to Godot."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:232
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:238
 msgid "Using NuGet packages in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:234
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:240
 msgid ""
 "`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
 "Godot, as with any C# project. Many IDEs are able to add packages directly. "
@@ -15222,7 +15233,7 @@ msgid ""
 "csproj`` file located in the project root:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:249
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:255
 msgid ""
 "Whenever packages are added or modified, run ``nuget restore`` in the root "
 "of the project directory. To ensure that NuGet packages will be available "
@@ -15239,124 +15250,124 @@ msgid ""
 "Godot and how they are used together."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:10
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
 msgid "Type conversion and casting"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:14
 msgid ""
 "C# is a statically typed language. Therefore, you can't do the following:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:19
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:21
 msgid ""
 "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
 "convert it to the desired derived type, ``Sprite`` in this case."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:22
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
 msgid "For this, you have various options in C#."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
 msgid "**Casting and Type Checking**"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:28
 msgid ""
 "Throws ``InvalidCastException`` if the returned node cannot be cast to "
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
 "sure it won't fail."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:34
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
 msgid "**Using the AS operator**"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:38
 msgid ""
 "The ``as`` operator returns ``null`` if the node cannot be cast to Sprite, "
 "and for that reason, it cannot be used with value types."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:45
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid "**Using the generic methods**"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
 msgid ""
 "Generic methods are also provided to make this type conversion transparent."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:51
 msgid ""
 "``GetNode<T>()`` casts the node before returning it. It will throw an "
 "``InvalidCastException`` if the node cannot be cast to the desired type."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:56
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:58
 msgid ""
 "``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
 "the node cannot be cast to the desired type."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:64
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
 msgid "**Type checking using the IS operator**"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:68
 msgid ""
 "To check if the node can be cast to Sprite, you can use the ``is`` operator. "
 "The ``is`` operator returns false if the node cannot be cast to Sprite, "
 "otherwise it returns true."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:77
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:79
 msgid ""
 "For more advanced type checking, you can look into `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:82
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
 #, fuzzy
 msgid "C# signals"
 msgstr "สัญญาณ"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:86
 msgid ""
 "For a complete C# example, see the **Handling a signal** section in the step "
 "by step :ref:`doc_scripting` tutorial."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:86
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:88
 msgid ""
 "Declaring a signal in C# is done with the ``[Signal]`` attribute on a "
 "delegate."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:96
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:98
 msgid ""
 "These signals can then be connected either in the editor or from code with "
 "``Connect``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:116
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:118
 msgid "Emitting signals is done with the ``EmitSignal`` method."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:126
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
 msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:130
 msgid ""
 "It is possible to bind values when establishing a connection by passing an "
 "object array."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:148
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:150
 msgid ""
 "Signals support parameters and bound values of all the `built-in types "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/"
@@ -15366,7 +15377,7 @@ msgid ""
 "`Godot.Object` or one of its subclasses."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:160
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:162
 msgid ""
 "Finally, signals can be created by calling ``AddUserSignal``, but be aware "
 "that it should be executed before any use of said signals (with ``Connect`` "
@@ -15504,7 +15515,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:132
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:143
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:316
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:313
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:467
 #: ../../docs/tutorials/io/background_loading.rst:268
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:90
@@ -15835,74 +15846,70 @@ msgid "Communicating with other scripting languages"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
-msgid ""
-"The methods ``object Object.Call(string method, params object[] args)``, "
-"``object Object.Get(string field)`` and ``object Object.Set(string field, "
-"object value)`` are provided to communicate with instances of other "
-"scripting languages via the Variant API."
+msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:311
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:308
 msgid ""
 "Something similar to GDScript's ``yield`` with a single parameter can be "
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:314
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:311
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:324
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:321
 msgid "Other differences"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
 msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:329
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
 msgid "Other differences:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 msgid "``Color8``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 msgid "``Color.Color8``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 msgid "``is_inf``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 msgid "``float.IsInfinity``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:336
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 msgid "``is_nan``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:336
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 msgid "``float.IsNaN``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:337
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
 msgid "``dict2inst``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:337
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:338
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 msgid "TODO"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:338
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 msgid "``inst2dict``"
 msgstr ""
 
@@ -16227,6 +16234,157 @@ msgstr ""
 msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:4
+#, fuzzy
+msgid "Cross-language scripting"
+msgstr "การใช้ใน GDScript"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:6
+msgid ""
+"Godot allows you to mix and match scripting languages to suit your needs. "
+"This means a single project can define nodes in both C# and GDScript. This "
+"page will go through the possible interactions between two nodes writen in "
+"different languages."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:11
+msgid ""
+"The following two scripts will be used as references throughout this page."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:66
+msgid "Instantiating nodes"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:68
+msgid ""
+"If you're not using nodes from the scene tree, you'll probably want to "
+"instantiate nodes directly from the code."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:72
+#, fuzzy
+msgid "Instantiating C# nodes from GDScript"
+msgstr "การใช้ใน GDScript"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:74
+msgid ""
+"Using C# from GDScript doesn't need much work. Once loaded (see :ref:"
+"`doc_gdscript_classes_as_resources`) the script can be instantiated with :"
+"ref:`new() <class_CSharpScript_method_new>`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:86
+msgid ""
+"When creating .cs scripts you should always keep in mind that the class "
+"Godot will use is the one named like the .cs file itself. If that class does "
+"not exist in the file, you'll see the following error: ``Invalid call. "
+"Nonexistent function `new` in base``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:91
+msgid "For example, MyCoolNode.cs should contain a class named MyCoolNode."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:93
+msgid ""
+"You also need to check your .cs file is referenced in the project's .csproj "
+"file. Otherwise, the same error will occur."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:97
+msgid "Instantiating GDScript nodes from C#"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:99
+msgid ""
+"From the C# side, everything work the same way. Once loaded, the GDScript "
+"can be instantiated with :ref:`GDScript.New() <class_GDScript_method_new>`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:107
+msgid ""
+"Here we are using an :ref:`class_Object` but you can use type convertion "
+"like explained in :ref:`doc_c_sharp_features_type_conversion_and_casting`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:111
+msgid "Accessing fields"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:114
+#, fuzzy
+msgid "Accessing C# fields from GDScript"
+msgstr "การใช้ใน GDScript"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:116
+msgid ""
+"Accessing C# fields from GDScript is straightforward, you shouldn't have "
+"anything to worry about."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:128
+msgid ""
+"Note that it doesn't matter if the field is defined as a property or an "
+"attribute, but trying to set a value on a property that does not define a "
+"setter will result in a crash."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:133
+msgid "Accessing GDScript fields from C#"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:135
+msgid ""
+"As C# is statically typed, accessing GDScript from C# is a bit more "
+"convoluted, you will have to use :ref:`Object.Get() "
+"<class_Object_method_get>` and :ref:`Object.Set() "
+"<class_Object_method_set>`. The first argument is the name of the field you "
+"want to access."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:148
+msgid ""
+"Keep in mind that when setting a field value you should only use types the "
+"GDScript side knows about. Essentially, you want to work with built-in types "
+"as described in :ref:`doc_gdscript` or classes extending :ref:`class_Object`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:153
+msgid "Calling methods"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:156
+#, fuzzy
+msgid "Calling C# methods from GDScript"
+msgstr "การใช้ใน GDScript"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:158
+msgid ""
+"Again, calling C# methods from GDScript should be straightforward. The "
+"marshalling process will do its best to cast your the arguments to match "
+"function signatures. If that's impossible you'll see the following error: "
+"``Invalid call. Nonexistent function `FunctionName```."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:174
+msgid "Calling GDScript methods from C#"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:176
+msgid ""
+"To call GDScript methods from C# you'll need to use :ref:`Object.Call() "
+"<class_Object_method_call>`. The first arguments is the name of the method "
+"you want to call. The following arguments will be passed to said method."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:198
+msgid ""
+"As you can see, if the first argument of the called method is an array, "
+"you'll need to cast it as ``object``. Otherwise each element of your array "
+"will be treated as a single argument and the function signature won't match."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:9
@@ -17228,7 +17386,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
-#: ../../docs/tutorials/3d/spatial_material.rst:19
+#: ../../docs/tutorials/3d/spatial_material.rst:30
 msgid "Flags"
 msgstr ""
 
@@ -26250,21 +26408,34 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:15
 msgid ""
-"You can add a ``SpatialMaterial`` to an object by choosing \"New "
-"SpatialMaterial\" in the *Material* property of the Inspector."
+"There are three ways to add a ``SpatialMaterial`` to an object. It can be "
+"added in the *Material* property of the mesh. It can be added in the "
+"*Material* property of the node using the mesh (such as a MeshInstance "
+"node), or in the *Material Override* property of the node using the mesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:21
+#: ../../docs/tutorials/3d/spatial_material.rst:22
+msgid ""
+"If you add a material to the mesh itself, every time that mesh is used it "
+"will have that material. If you add a material to the node using the mesh, "
+"the material will only be used by that node, it will also override the "
+"material property of the mesh. If a material is added in the *Material "
+"Overrive* property of the node, it will only be used by that node. It will "
+"also override the regular material property of the node and the material "
+"property of the mesh."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:32
 msgid ""
 "Spatial materials have many flags determining the general usage of a "
 "material."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:26
+#: ../../docs/tutorials/3d/spatial_material.rst:37
 msgid "Transparent"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:28
+#: ../../docs/tutorials/3d/spatial_material.rst:39
 msgid ""
 "In Godot, materials are not transparent unless specifically configured to "
 "be. The main reason behind this is that transparent materials are rendered "
@@ -26272,36 +26443,36 @@ msgid ""
 "order)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:32
+#: ../../docs/tutorials/3d/spatial_material.rst:43
 msgid ""
 "This technique is less efficient (many state changes happen) and makes the "
 "materials unusable with many mid- and post-processing effects (such as SSAO, "
 "SSR, etc.) that require perfectly opaque geometry."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:36
+#: ../../docs/tutorials/3d/spatial_material.rst:47
 msgid ""
 "For this reason, materials in Godot are assumed opaque unless specified "
 "otherwise. The main settings that enable transparency are:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:39
+#: ../../docs/tutorials/3d/spatial_material.rst:50
 msgid "Transparent flag (this one)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:40
+#: ../../docs/tutorials/3d/spatial_material.rst:51
 msgid "Blend mode set to other than \"Mix\""
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:41
+#: ../../docs/tutorials/3d/spatial_material.rst:52
 msgid "Enabling distance or proximity fade"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:44
+#: ../../docs/tutorials/3d/spatial_material.rst:55
 msgid "Use Shadow to Opacity"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:46
+#: ../../docs/tutorials/3d/spatial_material.rst:57
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:75
 msgid ""
 "Lighting modifies the alpha so shadowed areas are opaque and non-shadowed "
@@ -26309,34 +26480,34 @@ msgid ""
 "AR."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:50
+#: ../../docs/tutorials/3d/spatial_material.rst:61
 msgid "Unshaded"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:52
+#: ../../docs/tutorials/3d/spatial_material.rst:63
 msgid ""
 "In most cases it is common for materials to be affected by lighting (shaded)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:54
+#: ../../docs/tutorials/3d/spatial_material.rst:65
 msgid ""
 "However, in some cases you might want to show just the albedo (color) and "
 "ignore the rest. Toggling this flag on will remove all shading and display "
 "pure, unlit color."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:61
+#: ../../docs/tutorials/3d/spatial_material.rst:72
 msgid "Vertex Lighting"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:63
+#: ../../docs/tutorials/3d/spatial_material.rst:74
 msgid ""
 "Godot has a more or less uniform cost per pixel thanks to depth pre-pass. "
 "All lighting calculations are made by running the lighting shader on every "
 "pixel."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:66
+#: ../../docs/tutorials/3d/spatial_material.rst:77
 msgid ""
 "As these calculations are costly, performance can be brought down "
 "considerably in some corner cases such as drawing several layers of "
@@ -26344,126 +26515,126 @@ msgid ""
 "lighting may help in these cases."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:71
+#: ../../docs/tutorials/3d/spatial_material.rst:82
 msgid ""
 "Additionally, on low-end or mobile devices, switching to vertex lighting can "
 "considerably increase rendering performance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:76
+#: ../../docs/tutorials/3d/spatial_material.rst:87
 msgid ""
 "Keep in mind that when vertex lighting is enabled, only directional lighting "
 "can produce shadows (for performance reasons)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:80
+#: ../../docs/tutorials/3d/spatial_material.rst:91
 msgid "No Depth Test"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:82
+#: ../../docs/tutorials/3d/spatial_material.rst:93
 msgid ""
 "In order for close objects to appear over far away objects, depth testing is "
 "performed. Disabling it has the result of objects appearing over (or under) "
 "everything else."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:86
+#: ../../docs/tutorials/3d/spatial_material.rst:97
 msgid ""
 "Disabling this makes the most sense for drawing indicators in world space, "
 "and works very well with the *Render Priority* property of Material (see the "
 "bottom of this page)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:93
+#: ../../docs/tutorials/3d/spatial_material.rst:104
 msgid "Use Point Size"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:95
+#: ../../docs/tutorials/3d/spatial_material.rst:106
 msgid ""
 "This option is only effective when the geometry rendered is made of points "
 "(generally it's made of triangles when imported from 3D DCCs). If so, then "
 "those points can be resized (see below)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:100
+#: ../../docs/tutorials/3d/spatial_material.rst:111
 msgid "World Triplanar"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:102
+#: ../../docs/tutorials/3d/spatial_material.rst:113
 msgid ""
 "When using triplanar mapping (see below, in the UV1 and UV2 settings), "
 "triplanar is computed in object local space. This option makes triplanar "
 "work in world space."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:107
+#: ../../docs/tutorials/3d/spatial_material.rst:118
 msgid "Fixed Size"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:109
+#: ../../docs/tutorials/3d/spatial_material.rst:120
 msgid ""
 "This causes the object to be rendered at the same size no matter the "
 "distance. This is useful mostly for indicators (no depth test and high "
 "render priority) and some types of billboards."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:114
+#: ../../docs/tutorials/3d/spatial_material.rst:125
 msgid "Do Not Receive Shadows"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:116
+#: ../../docs/tutorials/3d/spatial_material.rst:127
 msgid ""
 "Makes the object not receive any kind of shadow that would otherwise be cast "
 "onto it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:120
+#: ../../docs/tutorials/3d/spatial_material.rst:131
 msgid "Disable Ambient Light"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:122
+#: ../../docs/tutorials/3d/spatial_material.rst:133
 msgid ""
 "Makes the object not receive any kind of ambient lighting that would "
 "otherwise light it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:126
+#: ../../docs/tutorials/3d/spatial_material.rst:137
 msgid "Ensure Correct Normals"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:128
+#: ../../docs/tutorials/3d/spatial_material.rst:139
 msgid "Fixes normals when non-uniform scaling is used."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:131
+#: ../../docs/tutorials/3d/spatial_material.rst:142
 msgid "Vertex Color"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:133
+#: ../../docs/tutorials/3d/spatial_material.rst:144
 msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
 "come from your 3D modelling application. By default they are ignored."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:139
+#: ../../docs/tutorials/3d/spatial_material.rst:150
 msgid "Use as Albedo"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:141
+#: ../../docs/tutorials/3d/spatial_material.rst:152
 msgid "Choosing this option means vertex color is used as albedo color."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:144
+#: ../../docs/tutorials/3d/spatial_material.rst:155
 msgid "Is sRGB"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:146
+#: ../../docs/tutorials/3d/spatial_material.rst:157
 msgid ""
 "Most 3D DCCs will likely export vertex colors as sRGB, so toggling this "
 "option on will help them look correct."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:150
+#: ../../docs/tutorials/3d/spatial_material.rst:161
 #: ../../docs/tutorials/platform/services_for_ios.rst:87
 #: ../../docs/tutorials/platform/services_for_ios.rst:127
 #: ../../docs/tutorials/platform/services_for_ios.rst:198
@@ -26472,46 +26643,46 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:152
+#: ../../docs/tutorials/3d/spatial_material.rst:163
 msgid ""
 "``SpatialMaterial`` also has several configurable parameters to tweak many "
 "aspects of the rendering:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:158
+#: ../../docs/tutorials/3d/spatial_material.rst:169
 msgid "Diffuse Mode"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:160
+#: ../../docs/tutorials/3d/spatial_material.rst:171
 msgid ""
 "Specifies the algorithm used by diffuse scattering of light when hitting the "
 "object. The default is *Burley*. Other modes are also available:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:163
+#: ../../docs/tutorials/3d/spatial_material.rst:174
 msgid ""
 "**Burley:** Default mode, the original Disney Principled PBS diffuse "
 "algorithm."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:164
+#: ../../docs/tutorials/3d/spatial_material.rst:175
 msgid "**Lambert:** Is not affected by roughness."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:165
+#: ../../docs/tutorials/3d/spatial_material.rst:176
 msgid ""
 "**Lambert Wrap:** Extends Lambert to cover more than 90 degrees when "
 "roughness increases. Works great for hair and simulating cheap subsurface "
 "scattering. This implementation is energy conserving."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:168
+#: ../../docs/tutorials/3d/spatial_material.rst:179
 msgid ""
 "**Oren Nayar:** This implementation aims to take microsurfacing into account "
 "(via roughness). Works well for clay-like materials and some types of cloth."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:170
+#: ../../docs/tutorials/3d/spatial_material.rst:181
 msgid ""
 "**Toon:** Provides a hard cut for lighting, with smoothing affected by "
 "roughness. It is recommended you disable sky contribution from your "
@@ -26519,228 +26690,228 @@ msgid ""
 "material to achieve a better effect."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:178
+#: ../../docs/tutorials/3d/spatial_material.rst:189
 msgid "Specular Mode"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:180
+#: ../../docs/tutorials/3d/spatial_material.rst:191
 msgid ""
 "Specifies how the specular blob will be rendered. The specular blob "
 "represents the shape of a light source reflected in the object."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:183
+#: ../../docs/tutorials/3d/spatial_material.rst:194
 msgid "**ShlickGGX:** The most common blob used by PBR 3D engines nowadays."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:184
+#: ../../docs/tutorials/3d/spatial_material.rst:195
 msgid ""
 "**Blinn:** Common in previous-generation engines. Not worth using nowadays, "
 "but left here for the sake of compatibility."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:186
+#: ../../docs/tutorials/3d/spatial_material.rst:197
 msgid "**Phong:** Same as above."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:187
+#: ../../docs/tutorials/3d/spatial_material.rst:198
 msgid ""
 "**Toon:** Creates a toon blob, which changes size depending on roughness."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:188
+#: ../../docs/tutorials/3d/spatial_material.rst:199
 msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:193
+#: ../../docs/tutorials/3d/spatial_material.rst:204
 msgid "Blend Mode"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:195
+#: ../../docs/tutorials/3d/spatial_material.rst:206
 msgid ""
 "Controls the blend mode for the material. Keep in mind that any mode other "
 "than *Mix* forces the object to go through the transparent pipeline."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:198
+#: ../../docs/tutorials/3d/spatial_material.rst:209
 msgid ""
 "**Mix:** Default blend mode, alpha controls how much the object is visible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:199
+#: ../../docs/tutorials/3d/spatial_material.rst:210
 msgid ""
 "**Add:** Object is blended additively, nice for flares or some fire-like "
 "effects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:201
+#: ../../docs/tutorials/3d/spatial_material.rst:212
 msgid "**Sub:** Object is subtracted."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:202
+#: ../../docs/tutorials/3d/spatial_material.rst:213
 msgid "**Mul:** Object is multiplied."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:207
+#: ../../docs/tutorials/3d/spatial_material.rst:218
 msgid "Cull Mode"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:209
+#: ../../docs/tutorials/3d/spatial_material.rst:220
 msgid ""
 "Determines which side of the object is not drawn when backfaces are rendered:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:211
+#: ../../docs/tutorials/3d/spatial_material.rst:222
 msgid "**Back:** The back of the object is culled when not visible (default)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:212
+#: ../../docs/tutorials/3d/spatial_material.rst:223
 msgid "**Front:** The front of the object is culled when not visible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:213
+#: ../../docs/tutorials/3d/spatial_material.rst:224
 msgid ""
 "**Disabled:** Used for objects that are double-sided (no culling is "
 "performed)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:216
+#: ../../docs/tutorials/3d/spatial_material.rst:227
 msgid "Depth Draw Mode"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:218
+#: ../../docs/tutorials/3d/spatial_material.rst:229
 msgid "Specifies when depth rendering must take place."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:220
+#: ../../docs/tutorials/3d/spatial_material.rst:231
 msgid "**Opaque Only (default):** Depth is only drawn for opaque objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:221
+#: ../../docs/tutorials/3d/spatial_material.rst:232
 msgid ""
 "**Always:** Depth draw is drawn for both opaque and transparent objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:222
+#: ../../docs/tutorials/3d/spatial_material.rst:233
 msgid ""
 "**Never:** No depth draw takes place (do not confuse this with the No Depth "
 "Test option above)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:224
+#: ../../docs/tutorials/3d/spatial_material.rst:235
 msgid ""
 "**Depth Pre-Pass:** For transparent objects, an opaque pass is made first "
 "with the opaque parts, then transparency is drawn above. Use this option "
 "with transparent grass or tree foliage."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:231
+#: ../../docs/tutorials/3d/spatial_material.rst:242
 msgid "Line Width"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:233
+#: ../../docs/tutorials/3d/spatial_material.rst:244
 msgid ""
 "When drawing lines, specify the width of the lines being drawn. This option "
 "is not available on most modern hardware."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:237
+#: ../../docs/tutorials/3d/spatial_material.rst:248
 msgid "Point Size"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:239
+#: ../../docs/tutorials/3d/spatial_material.rst:250
 msgid "When drawing points, specify the point size in pixels."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:242
+#: ../../docs/tutorials/3d/spatial_material.rst:253
 msgid "Billboard Mode"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:244
+#: ../../docs/tutorials/3d/spatial_material.rst:255
 msgid ""
 "Enables billboard mode for drawing materials. This controls how the object "
 "faces the camera:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:247
+#: ../../docs/tutorials/3d/spatial_material.rst:258
 msgid "**Disabled:** Billboard mode is disabled."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:248
+#: ../../docs/tutorials/3d/spatial_material.rst:259
 msgid ""
 "**Enabled:** Billboard mode is enabled, the object's -Z axis will always "
 "face the camera."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:250
+#: ../../docs/tutorials/3d/spatial_material.rst:261
 msgid ""
 "**Y-Billboard:** The object's X axis will always be aligned with the camera."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:251
+#: ../../docs/tutorials/3d/spatial_material.rst:262
 msgid ""
 "**Particles:** Most suited for particle systems, because it allows "
 "specifying animation options."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:256
+#: ../../docs/tutorials/3d/spatial_material.rst:267
 msgid "The above options are only enabled for Particle Billboard."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:259
+#: ../../docs/tutorials/3d/spatial_material.rst:270
 msgid "Billboard Keep Scale"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:261
+#: ../../docs/tutorials/3d/spatial_material.rst:272
 msgid "Enables scaling a mesh in billboard mode."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:264
+#: ../../docs/tutorials/3d/spatial_material.rst:275
 msgid "Grow"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:266
+#: ../../docs/tutorials/3d/spatial_material.rst:277
 msgid "Grows the object vertices in the direction pointed by their normals:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:270
+#: ../../docs/tutorials/3d/spatial_material.rst:281
 msgid ""
 "This is commonly used to create cheap outlines. Add a second material pass, "
 "make it black and unshaded, reverse culling (Cull Front), and add some grow:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:277
+#: ../../docs/tutorials/3d/spatial_material.rst:288
 msgid "Use Alpha Scissor"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:279
+#: ../../docs/tutorials/3d/spatial_material.rst:290
 msgid ""
 "When transparency other than ``0`` or ``1`` is not needed, it's possible to "
 "set a threshold to prevent the object from rendering semi-transparent pixels."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:284
+#: ../../docs/tutorials/3d/spatial_material.rst:295
 msgid ""
 "This renders the object via the opaque pipeline, which is faster and allows "
 "it to use mid- and post-process effects such as SSAO, SSR, etc."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:288
+#: ../../docs/tutorials/3d/spatial_material.rst:299
 msgid "Material colors, maps and channels"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:290
+#: ../../docs/tutorials/3d/spatial_material.rst:301
 msgid ""
 "Besides the parameters, what defines materials themselves are the colors, "
 "textures, and channels. Godot supports an extensive list of them. They are "
 "described in detail below:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:295
+#: ../../docs/tutorials/3d/spatial_material.rst:306
 msgid "Albedo"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:297
+#: ../../docs/tutorials/3d/spatial_material.rst:308
 msgid ""
 "*Albedo* is the base color for the material, on which all the other settings "
 "operate. When set to *Unshaded*, this is the only color that is visible. In "
@@ -26749,22 +26920,22 @@ msgid ""
 "color affects many more calculations than just the diffuse lighting path."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:303
+#: ../../docs/tutorials/3d/spatial_material.rst:314
 msgid "Albedo color and texture can be used together as they are multiplied."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:305
+#: ../../docs/tutorials/3d/spatial_material.rst:316
 msgid ""
 "*Alpha channel* in albedo color and texture is also used for the object "
 "transparency. If you use a color or texture with *alpha channel*, make sure "
 "to either enable transparency or *alpha scissoring* for it to work."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:310
+#: ../../docs/tutorials/3d/spatial_material.rst:321
 msgid "Metallic"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:312
+#: ../../docs/tutorials/3d/spatial_material.rst:323
 msgid ""
 "Godot uses a metallic model over competing models due to its simplicity. "
 "This parameter defines how reflective the material is. The more reflective, "
@@ -26772,24 +26943,24 @@ msgid ""
 "reflected. This model is called \"energy-conserving\"."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:317
+#: ../../docs/tutorials/3d/spatial_material.rst:328
 msgid ""
 "The *Specular* parameter is a general amount for the reflectivity (unlike "
 "*Metallic*, this is not energy-conserving, so leave it at ``0.5`` and don't "
 "touch it unless you need to)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:321
+#: ../../docs/tutorials/3d/spatial_material.rst:332
 msgid ""
 "The minimum internal reflectivity is ``0.04``, so it's impossible to make a "
 "material completely unreflective, just like in real life."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:327
+#: ../../docs/tutorials/3d/spatial_material.rst:338
 msgid "Roughness"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:329
+#: ../../docs/tutorials/3d/spatial_material.rst:340
 msgid ""
 "*Roughness* affects the way reflection happens. A value of ``0`` makes it a "
 "perfect mirror while a value of ``1`` completely blurs the reflection "
@@ -26797,11 +26968,11 @@ msgid ""
 "achieved with the right combination of *Metallic* and *Roughness*."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:337
+#: ../../docs/tutorials/3d/spatial_material.rst:348
 msgid "Emission"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:339
+#: ../../docs/tutorials/3d/spatial_material.rst:350
 msgid ""
 "*Emission* specifies how much light is emitted by the material (keep in mind "
 "this does not include light surrounding geometry unless :ref:`doc_gi_probes` "
@@ -26809,11 +26980,11 @@ msgid ""
 "affected by other lighting in the scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:347
+#: ../../docs/tutorials/3d/spatial_material.rst:358
 msgid "Normalmap"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:349
+#: ../../docs/tutorials/3d/spatial_material.rst:360
 msgid ""
 "Normal mapping allows you to set a texture that represents finer shape "
 "detail. This does not modify geometry, only the incident angle for light. In "
@@ -26821,11 +26992,11 @@ msgid ""
 "compatibility."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:356
+#: ../../docs/tutorials/3d/spatial_material.rst:367
 msgid "Rim"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:358
+#: ../../docs/tutorials/3d/spatial_material.rst:369
 msgid ""
 "Some fabrics have small micro-fur that causes light to scatter around it. "
 "Godot emulates this with the *Rim* parameter. Unlike other rim lighting "
@@ -26834,7 +27005,7 @@ msgid ""
 "considerably more believable."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:365
+#: ../../docs/tutorials/3d/spatial_material.rst:376
 msgid ""
 "Rim size depends on roughness, and there is a special parameter to specify "
 "how it must be colored. If *Tint* is ``0``, the color of the light is used "
@@ -26842,16 +27013,16 @@ msgid ""
 "Using intermediate values generally works best."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:371
+#: ../../docs/tutorials/3d/spatial_material.rst:382
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
 msgid "Clearcoat"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:373
-#: ../../docs/tutorials/3d/spatial_material.rst:382
-#: ../../docs/tutorials/3d/spatial_material.rst:404
-#: ../../docs/tutorials/3d/spatial_material.rst:417
-#: ../../docs/tutorials/3d/spatial_material.rst:437
+#: ../../docs/tutorials/3d/spatial_material.rst:384
+#: ../../docs/tutorials/3d/spatial_material.rst:393
+#: ../../docs/tutorials/3d/spatial_material.rst:415
+#: ../../docs/tutorials/3d/spatial_material.rst:428
+#: ../../docs/tutorials/3d/spatial_material.rst:448
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:139
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:153
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:195
@@ -26863,19 +27034,19 @@ msgstr ""
 msgid "*This feature is only available when using the GLES3 backend.*"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:375
+#: ../../docs/tutorials/3d/spatial_material.rst:386
 msgid ""
 "The *Clearcoat* parameter is used to add a secondary pass of transparent "
 "coat to the material. This is common in car paint and toys. In practice, "
 "it's a smaller specular blob added on top of the existing material."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:380
+#: ../../docs/tutorials/3d/spatial_material.rst:391
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:60
 msgid "Anisotropy"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:384
+#: ../../docs/tutorials/3d/spatial_material.rst:395
 msgid ""
 "This changes the shape of the specular blob and aligns it to tangent space. "
 "Anisotropy is commonly used with hair, or to make materials such as brushed "
@@ -26883,11 +27054,11 @@ msgid ""
 "flowmaps."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:391
+#: ../../docs/tutorials/3d/spatial_material.rst:402
 msgid "Ambient Occlusion"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:393
+#: ../../docs/tutorials/3d/spatial_material.rst:404
 msgid ""
 "It is possible to specify a baked ambient occlusion map. This map affects "
 "how much ambient light reaches each surface of the object (it does not "
@@ -26897,11 +27068,11 @@ msgid ""
 "whenever possible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:402
+#: ../../docs/tutorials/3d/spatial_material.rst:413
 msgid "Depth"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:406
+#: ../../docs/tutorials/3d/spatial_material.rst:417
 msgid ""
 "Setting a depth map on a material produces a ray-marched search to emulate "
 "the proper displacement of cavities along the view direction. This is not "
@@ -26910,34 +27081,34 @@ msgid ""
 "results, *Depth* should be used together with normal mapping."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:415
+#: ../../docs/tutorials/3d/spatial_material.rst:426
 msgid "Subsurface Scattering"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:419
+#: ../../docs/tutorials/3d/spatial_material.rst:430
 msgid ""
 "This effect emulates light that penetrates an object's surface, is "
 "scattered, and then comes out. It is useful to create realistic skin, "
 "marble, colored liquids, etc."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:426
+#: ../../docs/tutorials/3d/spatial_material.rst:437
 msgid "Transmission"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:428
+#: ../../docs/tutorials/3d/spatial_material.rst:439
 msgid ""
 "This controls how much light from the lit side (visible to light) is "
 "transferred to the dark side (opposite from the light). This works well for "
 "thin objects such as plant leaves, grass, human ears, etc."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:435
+#: ../../docs/tutorials/3d/spatial_material.rst:446
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:58
 msgid "Refraction"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:439
+#: ../../docs/tutorials/3d/spatial_material.rst:450
 msgid ""
 "When refraction is enabled, it supersedes alpha blending, and Godot attempts "
 "to fetch information from behind the object being rendered instead. This "
@@ -26945,33 +27116,33 @@ msgid ""
 "life."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:446
+#: ../../docs/tutorials/3d/spatial_material.rst:457
 msgid "Detail"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:448
+#: ../../docs/tutorials/3d/spatial_material.rst:459
 msgid ""
 "Godot allows using secondary albedo and normal maps to generate a detail "
 "texture, which can be blended in many ways. By combining this with secondary "
 "UV or triplanar modes, many interesting textures can be achieved."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:455
+#: ../../docs/tutorials/3d/spatial_material.rst:466
 msgid "UV1 and UV2"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:457
+#: ../../docs/tutorials/3d/spatial_material.rst:468
 msgid ""
 "Godot supports two UV channels per material. Secondary UV is often useful "
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
 "offset, which is useful when using repeating textures."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:462
+#: ../../docs/tutorials/3d/spatial_material.rst:473
 msgid "Triplanar Mapping"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:464
+#: ../../docs/tutorials/3d/spatial_material.rst:475
 msgid ""
 "Triplanar mapping is supported for both UV1 and UV2. This is an alternative "
 "way to obtain texture coordinates, sometimes called \"Autotexture\". "
@@ -26979,17 +27150,17 @@ msgid ""
 "mapping can be performed in either world space or object space."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:469
+#: ../../docs/tutorials/3d/spatial_material.rst:480
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:475
+#: ../../docs/tutorials/3d/spatial_material.rst:486
 msgid "Proximity and distance fade"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:477
+#: ../../docs/tutorials/3d/spatial_material.rst:488
 msgid ""
 "Godot allows materials to fade by proximity to each other as well as "
 "depending on the distance from the viewer. Proximity fade is useful for "
@@ -26998,17 +27169,17 @@ msgid ""
 "only present after a given distance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:483
+#: ../../docs/tutorials/3d/spatial_material.rst:494
 msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for an "
 "entire scene is usually not a good idea."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:489
+#: ../../docs/tutorials/3d/spatial_material.rst:500
 msgid "Render priority"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:491
+#: ../../docs/tutorials/3d/spatial_material.rst:502
 msgid ""
 "The rendering order of objects can be changed, although this is mostly "
 "useful for transparent objects (or opaque objects that perform depth draw "
@@ -27816,11 +27987,25 @@ msgid ""
 "with this one if regular bias does not work."
 msgstr ""
 
+#: ../../docs/tutorials/3d/gi_probes.rst:117
+msgid "**Interior** Allows mixing with lighting from the sky."
+msgstr ""
+
+#: ../../docs/tutorials/3d/gi_probes.rst:118
+msgid "**Compress** Currently broken. Do not use."
+msgstr ""
+
 #: ../../docs/tutorials/3d/gi_probes.rst:119
+msgid ""
+"**Data** Contains the light baked data after baking. If you are saving the "
+"data it should be saved as a .res file."
+msgstr ""
+
+#: ../../docs/tutorials/3d/gi_probes.rst:122
 msgid "Quality"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:121
+#: ../../docs/tutorials/3d/gi_probes.rst:124
 msgid ""
 "``GIProbe``\\ s are quite demanding. It is possible to use lower quality "
 "voxel cone tracing in exchange for more performance."
@@ -71028,24 +71213,24 @@ msgid ""
 "commands:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:56
+#: ../../docs/development/compiling/compiling_for_ios.rst:58
 msgid ""
 "If you also want to provide a simulator build (reduces the chance of any "
 "linker errors with dependencies), you'll need to build and lipo the "
 "``x86_64`` architecture as well."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:66
+#: ../../docs/development/compiling/compiling_for_ios.rst:70
 msgid "Run"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:68
+#: ../../docs/development/compiling/compiling_for_ios.rst:72
 msgid ""
 "To run on a device or simulator, follow these instructions: :ref:"
 "`doc_exporting_for_ios`."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:71
+#: ../../docs/development/compiling/compiling_for_ios.rst:75
 msgid ""
 "Replace or add your executable to the Xcode project, and change the "
 "\"executable name\" property on Info.plist accordingly if you use an "
@@ -71213,9 +71398,8 @@ msgid ""
 "directory:"
 msgstr ""
 
-#: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:159
-msgid ""
-"Then you will have an iOS fat binary in ``bin/godot.iphone.opt.debug.fat``."
+#: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:162
+msgid "Then you will have iOS fat binaries in ``bin`` directory."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:4
@@ -77953,47 +78137,75 @@ msgid "Other chats"
 msgstr ""
 
 #: ../../docs/community/channels.rst:31
+msgid "`Discord Server <https://discordapp.com/invite/zH7NUgz>`_"
+msgstr ""
+
+#: ../../docs/community/channels.rst:32
 msgid ""
 "`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
 msgstr ""
 
-#: ../../docs/community/channels.rst:32
-msgid "`Discord <https://discordapp.com/invite/zH7NUgz>`_"
-msgstr ""
-
 #: ../../docs/community/channels.rst:35
-msgid "Social networks"
+msgid "Language-based communities"
 msgstr ""
 
 #: ../../docs/community/channels.rst:37
-msgid "`GitHub <https://github.com/godotengine/>`_"
+msgid ""
+"Brazilian Portuguese: `Godot Brasil (Discord) <https://discord.gg/gWmQKBv>`_"
 msgstr ""
 
 #: ../../docs/community/channels.rst:38
-msgid "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
+msgid ""
+"French: `Godot Francophone Officiel (Discord) <https://discord.gg/3jvf3XN>`_"
 msgstr ""
 
 #: ../../docs/community/channels.rst:39
-msgid "`Twitter (also, #godotengine) <https://twitter.com/godotengine>`_"
+msgid "French: `SoloCode Godot (Discord) <https://discord.gg/gZ3QJ5T>`_"
 msgstr ""
 
 #: ../../docs/community/channels.rst:40
-msgid "`Reddit <https://www.reddit.com/r/godot>`_"
+msgid ""
+"German: `Deutsche Godot Community (Discord) <https://discord.gg/Tr7Ma6E>`_"
 msgstr ""
 
 #: ../../docs/community/channels.rst:41
-msgid "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
+msgid ""
+"Swedish: `Swedish Godot Community (Discord) <https://discord.gg/6ZsgWmH>`_"
 msgstr ""
 
-#: ../../docs/community/channels.rst:42
-msgid "`Steam <https://steamcommunity.com/app/404790>`_"
+#: ../../docs/community/channels.rst:44
+msgid "Social networks"
 msgstr ""
 
-#: ../../docs/community/channels.rst:45
-msgid "Forum"
+#: ../../docs/community/channels.rst:46
+msgid "`GitHub <https://github.com/godotengine/>`_"
 msgstr ""
 
 #: ../../docs/community/channels.rst:47
+msgid "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
+msgstr ""
+
+#: ../../docs/community/channels.rst:48
+msgid "`Twitter (also, #godotengine) <https://twitter.com/godotengine>`_"
+msgstr ""
+
+#: ../../docs/community/channels.rst:49
+msgid "`Reddit <https://www.reddit.com/r/godot>`_"
+msgstr ""
+
+#: ../../docs/community/channels.rst:50
+msgid "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
+msgstr ""
+
+#: ../../docs/community/channels.rst:51
+msgid "`Steam <https://steamcommunity.com/app/404790>`_"
+msgstr ""
+
+#: ../../docs/community/channels.rst:54
+msgid "Forum"
+msgstr ""
+
+#: ../../docs/community/channels.rst:56
 msgid "`Forum (godotforums.org) <https://godotforums.org/>`_"
 msgstr ""
 
