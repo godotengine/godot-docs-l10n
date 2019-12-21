@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Akihiro Ogoshi <technical@palsystem-game.com>, 2019.
 # burontsan <dullboy_375@yahoo.co.jp>, 2019.
 # Elmer Elmer <dendoupoppo@gmail.com>, 2019.
 # FourmiSushi <neko@fourmisushi.soy>, 2019.
@@ -26,8 +27,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-17 12:01+0100\n"
-"PO-Revision-Date: 2019-12-15 06:03+0000\n"
-"Last-Translator: Tarou Yamada <mizuningyou@yahoo.co.jp>\n"
+"PO-Revision-Date: 2019-12-21 08:38+0000\n"
+"Last-Translator: Akihiro Ogoshi <technical@palsystem-game.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
 "Language: ja\n"
@@ -35,7 +36,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.10\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -97,10 +98,10 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
-"フリーでオープンソースでコミュニティ駆動の2D/3Dゲームエンジン Godot Engine の"
-"公式ドキュメントへようこそ！このドキュメントが初めての方は、 このドキュメント"
-"の概要を知るために、\\ :ref:`導入 <doc_about_intro>`\\ を読むことをお勧めしま"
-"す。"
+"フリーでオープンソースでコミュニティで管理運用がなされる2D/3Dゲームエンジン "
+"Godot Engine の公式ドキュメントへようこそ！このドキュメントが初めての方は、 "
+"このドキュメントの概要を知るために、\\ :ref:`導入 <doc_about_intro>`\\ を読む"
+"ことをお勧めします。"
 
 #: ../../docs/index.rst:34
 msgid ""
@@ -449,9 +450,9 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
-"\\ :ref:`sec-devel`\\ セクションは、エンジンのコンパイル、C++モジュールまたは"
-"エディタプラグインの開発に関する情報とともに、高度なユーザーとエンジン開発者"
-"の貢献者を対象としています。"
+"\\ :ref:`sec-devel`\\ セクションは、高度なユーザーとエンジン開発への貢献者に"
+"対して、エンジンのコンパイルやC++モジュールまたはエディタプラグインの開発に関"
+"する情報を提供します。"
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -784,13 +785,13 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"Godotはオープンソースプロジェクトであるため、なじみのあるプログラミング言語を"
-"サポートすることで、より多くのユーザーを引きつけることよりも、より統合された"
-"シームレスなエクスペリエンスを優先することが最初から不可欠でした。あなたが"
-"Godotで別の言語(上記のサポートされるオプションのリストを参照してください。)を"
-"使用したいということは理解します。とはいえ、GDScriptをまだ試していない人"
-"は、\\ **3日間**\\ 試してみてください。Godotと同じように、GDScriptがいかに強"
-"力であり、開発が迅速になるかを見れば、GDScriptも成長すると思います。"
+"Godotはオープンソースプロジェクトであるため、より多くのユーザーを引きつける為"
+"になじみのあるプログラミング言語をサポートすることよりも、より統合されたシー"
+"ムレスなエクスペリエンスを優先することが最初から不可欠でした。あなたがGodotで"
+"別の言語(上記のサポートされるオプションのリストを参照してください。)を使用し"
+"たいということは理解します。とはいえ、GDScriptをまだ試していない人は、\\ **3"
+"日間**\\ 試してみてください。Godotと同じように、GDScriptがいかに強力であり、"
+"開発が迅速になるかを見れば、GDScriptも成長すると思います。"
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -815,16 +816,16 @@ msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
-"ほとんどのスクリプトVMではスレッドサポートが不十分で、Godotはスレッド（Lua、"
-"Python、Squirrel、JS、ASなど）を使用します。"
+"ほとんどのスクリプトVM（Lua、Python、Squirrel、JS、ASなど）ではスレッドサポー"
+"トが不十分ですが、Godotはスレッドを使用します。"
 
 #: ../../docs/about/faq.rst:128
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
-"ほとんどのスクリプトVMでのクラス拡張のサポートが不十分で、Godotの動作方法に適"
-"応することは非常に非効率的です(Lua、Python、JS)。"
+"ほとんどのスクリプトVM(Lua、Python、JS)ではクラス拡張のサポートが不十分で、"
+"Godotの動作方法に適応させる作業は非常に非効率的です。"
 
 #: ../../docs/about/faq.rst:130
 msgid ""
@@ -833,35 +834,35 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
-"既存の多くの言語には、C++にバインドするためのひどいインターフェイスがあり、大"
-"量のコード、バグ、ボトルネック、および一般的な非効率性 (Lua、Python、"
-"Squirrel、JS など)が発生します。私たちは、多くの統合ではなく、偉大なエンジン"
-"に焦点を当てたかったのです。"
+"既存の多くの言語(Lua、Python、Squirrel、JS など)には、C++にバインドするための"
+"出来の悪いインターフェイスがあり、大量のコード、バグ、ボトルネック、および一"
+"般的な非効率性 がそれによって発生します。なので私たちは、多くの言語との統合で"
+"はなく、偉大なエンジン（Godot）その物に焦点を当てたかったのです。"
 
 #: ../../docs/about/faq.rst:133
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
-"ネイティブなベクトルタイプ(vector3、matrix4など)がないため、カスタムタイプ"
-"(Lua、Python、Squirrel、JS、ASなど)を使用するとパフォーマンスが大幅に低下しま"
-"す。"
+"(Lua、Python、Squirrel、JS、ASなどには)ネイティブなベクトルタイプ(vector3、"
+"matrix4など)がないため、その代わりにカスタムタイプを使用する必要があります"
+"が、それによってパフォーマンスが大幅に低下します。"
 
 #: ../../docs/about/faq.rst:136
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
-"ガベージコレクタが原因で失速したり、不必要にメモリ使用量が増えたりします"
-"(Lua、Python、JS、ASなど)。"
+"(Lua、Python、JS、ASなどでは)ガベージコレクタが原因で速度低下が発生したり、不"
+"必要にメモリ使用量が増えたりします。"
 
 #: ../../docs/about/faq.rst:138
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
-"コード補完、ライブ編集などを提供するコードエディタとの統合が困難です。(それら"
-"すべて)これはGDScriptによってサポートされています。"
+"(前記の各種言語では)コード補完、ライブ編集などを提供するコードエディタとの統"
+"合が困難です。(それらすべて)これはGDScriptによってサポートされています。"
 
 #: ../../docs/about/faq.rst:142
 msgid "GDScript was designed to curtail the issues above and more."
@@ -909,7 +910,8 @@ msgstr ""
 #: ../../docs/about/faq.rst:159
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
-msgstr "Godotでは[FMODやGameWorksなどクローズドSDKを挿入]がサポートされますか?"
+msgstr ""
+"Godotでは(FMODやGameWorksなどの)クローズドSDKの組み込みがサポートされますか?"
 
 #: ../../docs/about/faq.rst:161
 msgid ""
@@ -929,8 +931,8 @@ msgid ""
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
-"つまり、Godot はオープンソースとモジュラーであるため、これらのライブラリをモ"
-"ジュールとして追加し、オープンソースまたはクローズドソースのいずれかとして"
+"とはいえ、Godot はオープンソースとモジュラーであるため、これらのライブラリを"
+"モジュールとして追加し、オープンソースまたはクローズドソースのいずれかとして"
 "ゲームを出荷することに興味を持つユーザーや他の誰かを妨げるものは何もありませ"
 "ん。"
 
@@ -952,7 +954,7 @@ msgstr ""
 "Godotではサポートされていないが、自由でオープン ソースの統合を提供するサード"
 "パーティ製のSDKがわかっている場合は、統合作業を自分で開始することを検討してく"
 "ださい。Godotは一人の人間が所有しているわけではありません。それはコミュニティ"
-"に属し、あなたのような野心的なコミュニティの貢献者と一緒に成長します。"
+"に属し、あなたのような野心的なコミュニティへの貢献者と一緒に成長します。"
 
 #: ../../docs/about/faq.rst:179
 msgid ""
@@ -1001,7 +1003,7 @@ msgid ""
 msgstr ""
 "ゲームの基本解像度を1つ選択します。2Kまでのデバイスや400pまでのデバイスがあっ"
 "ても、デバイスの通常のハードウェアスケーリングでは、パフォーマンスコストをほ"
-"とんどまたはまったくかけずに対応できます。最も一般的な選択肢は、約"
+"とんどまたはまったくかけずに対応できます。最も一般的な選択肢は、"
 "1080p(1920x1080)または720p(1280x720)です。解像度が高いほどアセットが大きくな"
 "り、メモリの使用量が多くなり、ロードに時間がかかることに注意してください。"
 
@@ -1011,7 +1013,7 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Godotのストレッチオプションの使用します。アスペクト比を維持したまま2Dストレッ"
+"Godotのストレッチオプションを使用します。アスペクト比を維持したまま2Dストレッ"
 "チを行うと、最適な結果が得られます。この方法については、チュートリアル\\ :"
 "ref:`doc_multiple_resolutions`\\ を参照してください。"
 
@@ -1023,8 +1025,8 @@ msgid ""
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
 "最小解像度を決定し、ゲームを縦横比ごとに垂直または水平に伸ばすかどうか、また"
-"は縦横比が1つあって黒いバーを表示するかどうかを決定します。これについては、:"
-"ref:`doc_multiple_resolutions`\\ でも説明されています。"
+"は縦横比を固定して余白に黒いバーを表示するかどうかを決定します。これについて"
+"は、:ref:`doc_multiple_resolutions`\\ でも説明されています。"
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -1049,7 +1051,7 @@ msgid ""
 msgstr ""
 "小さな画面(幅が300ピクセル未満)の古いデバイスでもゲームを動作させたい場合は、"
 "エクスポートオプションを使用して画像を縮小し、そのビルドをAppStoreまたは"
-"GooglePlayの特定の画面サイズに使用するように設定できます。"
+"GooglePlayの特定の画面サイズで使用するように設定できます。"
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
@@ -1094,15 +1096,15 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr "Godotにコントリビュートしたいのですが、どうすればよいですか？"
+msgstr "Godotに貢献したいのですが、どうすればよいですか？"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
-"素晴らしい！オープンソースプロジェクトとして、Godotは技術革新と、あなたのよう"
-"な開発者の野心によって支えられています。"
+"素晴らしい！オープンソースプロジェクトとして、Godotは、あなたのような開発者の"
+"技術革新と野心によって支えられています。"
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -1154,14 +1156,14 @@ msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
-"あなたがソフトウェアを使った経験とあなたが抱えている問題(私たちはそれをどう改"
-"善するかについての考えよりももっとずっと気にかけています)。"
+"あなたがソフトウェアを使って得た体験と問題（我々は改善のアイデアよりも、これ"
+"に重きをおいています）。"
 
 #: ../../docs/about/faq.rst:265
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
-msgstr "あなたのプロジェクトで必要としているため実装してほしい機能。"
+msgstr "あなたのプロジェクトで必要なので、新たに実装してほしい機能。"
 
 #: ../../docs/about/faq.rst:267
 msgid ""
@@ -1186,9 +1188,10 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
-"Godotに対するあなたのアイデアが歓迎されないとは思わないでください。代わりに、"
-"それらを最初に問題として再定式化してみてください。そうすれば、開発者とコミュ"
-"ニティは、あなたのアイデアを土台にするための機能的基盤を持ちます。"
+"Godotに対するあなたのアイデアが歓迎されないとは思わないでください。それより"
+"も、それらを最初に問題としてまとめ上げてみてください。そうすれば、それは開発"
+"者とコミュニティがあなたのアイデアを土台にした機能を実現する為の基礎になりま"
+"す。"
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -1210,7 +1213,7 @@ msgid ""
 "example projects (if applicable)."
 msgstr ""
 "スクリーンショット、具体的な数字、テストケース、またはサンプルプロジェクト"
-"（該当する場合）をもたらすボーナスポイント。"
+"（該当する場合）はボーナスポイントをもたらします。"
 
 #: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
@@ -1224,7 +1227,7 @@ msgid ""
 msgstr ""
 "他のライブラリのように(例えばQt)、GodotはSTLを使いません。私たちはSTLが素晴ら"
 "しい標準的な目的のためのライブラリだと信じています、しかし、私たちはGodotのた"
-"めに特別に必要とはしていません。"
+"めに特に必要とはしていません。"
 
 #: ../../docs/about/faq.rst:292
 msgid ""
@@ -1273,7 +1276,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
-msgstr "なぜGodotは例外を使わないのですか？"
+msgstr "なぜGodotは例外処理を使わないのですか？"
 
 #: ../../docs/about/faq.rst:301
 msgid ""
@@ -1290,11 +1293,13 @@ msgstr ""
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
-msgstr "さらに、例外により、実行ファイルのバイナリサイズが大幅に増加します。"
+msgstr ""
+"さらに、例外を処理する機能の分、実行ファイルのバイナリサイズが大幅に増加しま"
+"す。"
 
 #: ../../docs/about/faq.rst:310
 msgid "Why does Godot not enforce RTTI?"
-msgstr "GodotがRTTIを強制しないのはなぜですか？"
+msgstr "GodotがRTTI(実行時型情報)を強制しないのはなぜですか？"
 
 #: ../../docs/about/faq.rst:312
 msgid ""
@@ -1340,8 +1345,8 @@ msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
-"ゲームの大部分はこれを必要としません、そして、あなたがそうするとき、Dodotはほ"
-"とんどの場合仕事をするために便利なヘルパーを提供します。"
+"ゲームの大部分はこれを必要としません。そして、あなたがそのような仕事を必要と"
+"する時には、殆どの場合Godotは便利なヘルパーを提供します。"
 
 #: ../../docs/about/faq.rst:333
 msgid ""
@@ -2027,7 +2032,7 @@ msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
-"右側には、\\ **ファイルシステム・ドック**\\ があり、プロジェクトファイルやア"
+"左側には、\\ **ファイルシステム・ドック**\\ があり、プロジェクトファイルやア"
 "セットはこちらで管理します。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
@@ -2096,8 +2101,8 @@ msgid ""
 "access it."
 msgstr ""
 "**2Dワークスペース**\\ はすべての種類のゲームで使うことになります。2Dゲームの"
-"みならず、インターフェースの作成も2Dワークスペースで行います。F1キーで開けま"
-"す。"
+"みならず、ユーザーインターフェースの作成も2Dワークスペースで行います。F1キー"
+"で開けます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
 msgid "|image15|"
@@ -2311,9 +2316,9 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
-"これを次の何節かにわたって掘り下げていくので、まだうまく掴めなくても大丈夫で"
-"す。今はただ、ノードというものが存在し、このように配置できるという重要点のみ"
-"覚えておいてください。"
+"これについては次の何節かにわたって掘り下げていくので、まだうまく掴めなくても"
+"大丈夫です。今はただ、ノードというものが存在し、このように配置できるという重"
+"要点のみを覚えておいてください。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:75
@@ -2324,8 +2329,7 @@ msgstr "シーン"
 msgid ""
 "Now that the concept of nodes has been defined, the next logical step is to "
 "explain what a Scene is."
-msgstr ""
-"ノードの概念を定義したので、つぎはシーンについて説明するのが適当でしょう。"
+msgstr "ノードの概念を定義したので、つぎはシーンについて説明するべきでしょう。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
 msgid ""
@@ -2337,11 +2341,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has one root node."
-msgstr "常にルートノードをひとつ持つ。"
+msgstr "常にルートノードをひとつ持ちます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr "ディスクに保存し、また読み込める。"
+msgstr "ディスクに保存でき、それをまた読み込めます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
@@ -2353,8 +2357,8 @@ msgid ""
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
 "ゲームを走らせることは、シーンを走らせることです。プロジェクトは複数のシーン"
-"を持てますが、しかしゲームを開始するために、どれか一つをメインシーンに指定す"
-"る必要があります。"
+"を持てますが、ゲームを開始するためには、どれか一つをメインシーンに指定する必"
+"要があります。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -2363,8 +2367,8 @@ msgid ""
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
 "基本的に、Godotエディターは\\ **シーンエディター**\\ です。2Dおよび3Dのシーン"
-"や、ユーザーインターフェースを編集するツールを多く備えていますが、しかし基礎"
-"としているのは、シーンやそれを構成するノードを編集するという概念だけです。"
+"や、ユーザーインターフェースを編集するツールを多く備えていますが、基礎として"
+"いるのは、シーンやそれを構成するノードを編集するという概念だけです。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 msgid "Creating a new project"
@@ -2588,9 +2592,10 @@ msgid ""
 "one of your monitors, go to **Project → Project Settings → Display → "
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
-"これがすぐに機能せず、少なくとも1つのモニターに高DPIディスプレイがある場合"
-"は、**プロジェクト→プロジェクト設定→Display→Window*に進み、** Dpi **で** "
-"Allow Hidpi **をオンにします。"
+"これがすぐに機能せず、(マルチモニターまたはシングルモニターでの使用環境を問わ"
+"ず)少なくとも1つのモニターに高DPIディスプレイがある場合は、**プロジェクト→プ"
+"ロジェクト設定→Display→Window*に進み、** Dpi **で** Allow Hidpi **をオンにし"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
 msgid "Configuring the project"
@@ -2675,9 +2680,9 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
-"このチュートリアルはシーンとノードについて説明しました。ここまでは、まだ、一"
-"つのシーンと一つのノードだけですが。心配いりません。次のチュートリアルではこ"
-"れを拡張します。"
+"このチュートリアルはシーンとノードについて説明しました。ここまでは、まだ一つ"
+"のシーンと一つのノードだけしかありませんが、心配いりません。次のチュートリア"
+"ルではこれを拡張します。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
@@ -2693,9 +2698,9 @@ msgid ""
 msgstr ""
 "1つのシーンを作成してノードを追加すると、小規模なプロジェクトでは機能します"
 "が、プロジェクトのサイズと複雑さが増すにつれて、ノードの数がすぐに管理できな"
-"くなる可能性があります。これに対処するために、Godot はプロジェクトを任意の数"
-"のシーンに分割することを許可します。これにより、ゲームのさまざまなコンポーネ"
-"ントを整理するのに役立つ強力なツールが提供されます。"
+"くなる可能性があります。これに対処するために、Godot ではプロジェクトを任意の"
+"数のシーンに分割することが許されています。これにより、ゲームのさまざまなコン"
+"ポーネントを整理するのに役立つ強力なツールが提供されます。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
@@ -2765,8 +2770,8 @@ msgid ""
 msgstr ""
 "このプロジェクトには、「Ball.tscn」と「Main.tscn」の2つのシーンがあります。"
 "ボール シーンは\\ :ref:`RigidBody2D <class_RigidBody2D>`\\ を使用して物理動作"
-"を提供し、メイン シーンにはボールが衝突する障害物のセットがあります (\\ :ref:"
-"`StaticBody2D <class_StaticBody2D>`\\ を使用)。"
+"(のシミュレート)を提供し、メイン シーンにはボールが衝突する障害物のセットがあ"
+"ります (\\ :ref:`StaticBody2D <class_StaticBody2D>`\\ を使用)。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
@@ -2810,7 +2815,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr "シーンを再び実行し、ボールのすべてが落ちます。"
+msgstr "シーンを再び実行すると、ボールのすべてが落下します。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"
@@ -3039,7 +3044,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"
-msgstr "情報過多!"
+msgstr "情報が多すぎますね!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:75
 msgid ""
@@ -3057,9 +3062,9 @@ msgid ""
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and go on to the next tutorial!"
 msgstr ""
-"ゲームを作成し、これらの概念を実践し始めると、ここで説明したことにすぐ慣れま"
-"す。今のところ、あまり心配する必要はありません。次のチュートリアルに進んでく"
-"ださい!"
+"ゲームを作成し、これらの概念を実践し始めると、ここで説明したことにすぐに慣れ"
+"ます。なので今のところ、あまり心配する必要はありません。次のチュートリアルに"
+"進んでください!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
 msgid ""
@@ -3068,16 +3073,16 @@ msgid ""
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
 "Godot 3.0以前は、ゲームのスクリプトを作成するための唯一の選択肢はGDScriptを使"
-"用することだけでした。現在、Godotには4つの（ええ、4つ！）公式言語と、追加のス"
-"クリプト言語を動的に追加する機能があります！"
+"用することだけでした。現在、Godotには4つの（そうです、4つも！）公式言語と、追"
+"加のスクリプト言語を動的に追加する機能があります！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
-"これは素晴らしいことです。提供される柔軟性が大きいからこそです。しかし言語を"
-"サポートする作業がより困難になります。"
+"これは素晴らしいことです。提供される柔軟性が大きくなるからです。ですがその反"
+"面、それぞれの言語をサポートする作業がより困難になります。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
 msgid ""
@@ -3088,10 +3093,10 @@ msgid ""
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
 "ただし、Godotの「主要な」言語はGDScriptとVisualScriptです。それらを選択する主"
-"な理由は、Godotとの統合レベルです。これにより、よりスムーズになります。どちら"
-"も洗練されたエディターと統合されています。一方、C＃とC ++は別のIDEで編集する"
-"必要があります。静的に型付けされた言語の大ファンであれば、C＃とC ++を使用して"
-"ください。"
+"な理由は、Godotとの統合レベルが高いからです。これにより、開発作業がよりスムー"
+"ズになります。どちらも洗練されたエディターと統合されています。一方、C＃とC +"
+"+は別のIDEで編集する必要があります。もしもあなたが静的に型付けされた言語の大"
+"ファンであれば、C＃とC ++を使用してください。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 #: ../../docs/getting_started/scripting/gdscript/index.rst:2
@@ -3128,7 +3133,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
 msgid "Loads and compiles blazingly fast."
-msgstr "読み込みとコンパイルが非常に速い。"
+msgstr "読み込みとコンパイルが非常に高速です。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
@@ -3152,7 +3157,7 @@ msgid ""
 "of the limitations that made us avoid VMs such as Lua, Squirrel, etc."
 msgstr ""
 "静的に型指定された言語と同じくらい効率的に複数のスレッドをサポートします - "
-"Lua、SquirrelなどのVMを避けるための制限の1つです。"
+"Lua、SquirrelなどのVMを避けた理由のひとつはスレッド処理に制限があるからです。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:33
 msgid ""
@@ -3177,8 +3182,8 @@ msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
-"もしあなたがまだ決めておらず、プログラミング、特に動的型付け言語の経験がある"
-"なら、GDScriptを選んでください!"
+"もしあなたがどの言語を使用するかをまだ決めておらず、プログラミング、特に動的"
+"型付け言語の経験があるなら、GDScriptを選んでください!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 #: ../../docs/getting_started/scripting/visual_script/index.rst:2
@@ -3202,8 +3207,8 @@ msgid ""
 "others, like game designers or artists."
 msgstr ""
 "ビジュアルスクリプトは、プログラマ以外のユーザーや、ゲームデザイナーやアー"
-"ティストなど、コードの一部を他のユーザーがアクセスしやすくしたい経験豊富な開"
-"発者にとっても最適なツールです。"
+"ティストなどの他のユーザーに、コードの一部を容易にアクセスさせたい経験豊富な"
+"開発者にとっても最適なツールです。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:50
 msgid ""
@@ -3268,8 +3273,8 @@ msgid ""
 "C API Bridge."
 msgstr ""
 "内部C API Bridgeを使用しているため、任意のC++バージョンを使用することができ、"
-"生成された共有ライブラリ用のコンパイラブランドとバージョンの混在は完全に機能"
-"します。"
+"生成された共有ライブラリ用のコンパイラブランドとバージョンが混在していても完"
+"全に機能します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
 msgid ""
@@ -3279,16 +3284,17 @@ msgid ""
 "mostly, Godot's actual C++ API."
 msgstr ""
 "この言語はパフォーマンスに最適な選択肢であり、ゲーム全体で使用する必要はあり"
-"ません。他の部分はGDScriptまたはVisual Scriptで作成できるためです。 ただし、"
-"このAPIは、主にGodotの実際のC ++ APIに似ているため、明確で使いやすいです。"
+"ません。他の部分はGDScriptまたはVisual Scriptで作成できるためです。 とはい"
+"え、このAPIは、主にGodotの実際のC ++ APIに似ているため、明確で使いやすいで"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
 msgid ""
 "More languages can be made available through the GDNative interface, but "
 "keep in mind we don't have official support for them."
 msgstr ""
-"GDNativeインターフェイスを通じてより多くの言語を利用できますが、正式なサポー"
-"トはありません。"
+"GDNativeインターフェイスを通じて(C++以外の)より多くの言語を利用できますが、正"
+"式なサポートはありません。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
 msgid "Scripting a scene"
@@ -3301,7 +3307,7 @@ msgid ""
 "will demonstrate:"
 msgstr ""
 "このチュートリアルの残りの部分では、ボタンとラベルで構成されるGUI シーンを設"
-"定し、ボタンを押すとラベルが更新されます。これは、次のことを示します:"
+"定し、ボタンを押す事でラベルを更新してみます。これは、次のことを示します:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:96
 msgid "Writing a script and attaching it to a node."
@@ -3459,7 +3465,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:179
 msgid "Handling a signal"
-msgstr "信号の処理"
+msgstr "シグナルの処理"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:181
 msgid ""
@@ -3515,6 +3521,9 @@ msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
+"ダイアログの上部には、シーン中のノードの一覧が表示されており、シグナルを発す"
+"るノードの名前(今回はButton)が青色でハイライト表示されています。ここで"
+"「Panel」ノードを選択します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
@@ -3522,6 +3531,9 @@ msgid ""
 "created. By default, the method name will contain the emitting node's name "
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
+"ダイアログの下部には、作成されるメソッドの名前が表示されます。デフォルトで"
+"は、メソッド名には発信ノードの名前（この場合は「ボタン」）が含まれ、「_ on_ "
+"[シグナルを発するノード名] _ [シグナル名]」になります。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
@@ -3550,8 +3562,8 @@ msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
-"便宜上、 ``extends Panel`` の下にあるすべてのものを削除します。スクリプトの残"
-"りの部分を手動で入力します。"
+"便宜上、スクリプト内の ``extends Panel`` より下にあるすべてのものを削除しま"
+"す。そしてスクリプトの残りの部分を手動で入力します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:223
 msgid ""
@@ -3559,8 +3571,9 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
-"ButtonとLabelはスクリプトがアタッチされているPanelの下の兄弟であるため、 "
-"``_ready()`` 関数の下に次のように入力するとButtonをフェッチできます:"
+"ButtonとLabelはスクリプトがアタッチされているPanelの下の兄弟(同じ階層にある子"
+"要素)であるため、 ``_ready()`` 関数の下に次のように入力するとButtonをフェッチ"
+"できます:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:240
 msgid "Next, write a function which will be called when the button is pressed:"
@@ -3585,7 +3598,9 @@ msgstr "シーンを実行し、ボタンを押します。次の結果が得ら
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:308
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr "あら、hello!最初のシーンのスクリプト作成、おめでとうございます。"
+msgstr ""
+"あら、hello!と表示されました。最初のシーンのスクリプト作成、おめでとうござい"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:312
 msgid ""
@@ -3694,8 +3709,8 @@ msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
-"たとえば、移動速度を一定にし、フレームレートから独立させるために、移動が時間"
-"デルタで乗算されることがよくあります。"
+"たとえば、移動速度を一定にし、フレームレートから独立させるために、移動量が時"
+"間デルタで乗算されることがよくあります。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""
@@ -3813,7 +3828,7 @@ msgid ""
 "your script:"
 msgstr ""
 "Godotには通知システムがあります。これらは低レベルであり、それらのほとんどに仮"
-"想k関数が提供されているため、通常はスクリプトには必要ありません。それらが存在"
+"想関数が提供されているため、通常はスクリプトには必要ありません。それらが存在"
 "することを知っていれば良いのです。例えば、スクリプトに\\ :ref:`Object."
 "_notification() <class_Object_method__notification>` \\ 関数を追加できます:"
 
@@ -3829,12 +3844,10 @@ msgstr ""
 "オーバーライド可能な関数を提供します。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
-#, fuzzy
 msgid "Overridable functions"
 msgstr "オーバーライド可能な関数"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
-#, fuzzy
 msgid ""
 "Such overridable functions, which are described as follows, can be applied "
 "to nodes:"
@@ -4270,8 +4283,8 @@ msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
-"**なぜ2D？** 3Dゲームは2Dより複雑です。ゲーム開発のプロセスをよく理解するまで"
-"は2Dのほうが適しています。"
+"**なぜ2Dから始めるか？** 3Dゲームは2Dより複雑です。ゲーム開発のプロセスをよく"
+"理解するまでは2Dのほうが適しています。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
@@ -7383,13 +7396,12 @@ msgid "There are two ways to design your UI in Godot. You can:"
 msgstr "GodotでUIをデザインするには2つの方法があります。次のことができます:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
-#, fuzzy
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
 "すべてを1つのシーンに構築し、最終的にはいくつかのブランチを再利用可能なシーン"
-"として保存します"
+"として保存する方法。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
 #, fuzzy
@@ -7397,8 +7409,8 @@ msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
-".再利用可能なコンポーネントのテンプレートシーンを作成し、ベースシーンから継承"
-"する特定のコンポーネントを作成する"
+"再利用可能なコンポーネントのテンプレートシーンを作成し、ベースシーンから継承"
+"する特定のコンポーネントを作成する方法。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -7407,19 +7419,18 @@ msgid ""
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
-"最初の方法を使用します。最初のバージョンのUIが期待どおりに動作しない場合があ"
-"るためです。パーツを廃棄してコンポーネントを再設計することがあります。すべて"
-"が正常に機能していることが確認できたら、次に示すように、一部のパーツを再利用"
-"可能にすることは容易です。"
+"私たちは(大抵の場合)最初の方法を使用します。あなたが作る最初のバージョンのUI"
+"はあなたの期待どおりに動作しない場合があり、パーツを廃棄してコンポーネントを"
+"再度作り直すことがある為です。(最終的に)すべてが正常に機能していることが確認"
+"できたら、次に示すように、一部のパーツを再利用可能にすることは容易です。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
-#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
-"Godotにあるファイル グラフィックはラフデザインよりもきれいに見えますが、それ"
-"でもプレースホルダです"
+"Godotにあるファイル。このグラフィックはラフデザインよりもきれいに見えますが、"
+"まだその代替品にすぎません。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -7443,28 +7454,26 @@ msgid "Here are my three rules of thumb to find the right containers:"
 msgstr "適切なコンテナを見つけるための3つの経験則を以下に示します:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
-#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button."
 msgstr ""
-"UIを、すべてを含む最大のボックスから、ラベルの付いたバー、パネル、ボタンな"
-"ど、1つのウィジェットを含む最小のボックスまでネストされたボックスに分割します"
+"UIを、すべてを含む最大のボックスから、ラベルの付いたバー、パネル、ボタンなど"
+"の、1つのウィジェットを含む最小のボックスまで、ボックスに階層構造を持たせて分"
+"割します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
-#, fuzzy
 msgid "If there's some padding around an area, use a ``MarginContainer``."
-msgstr "領域の周囲に余白がある場合は、``MarginContainer`` を使用します"
+msgstr "領域の周囲に余白がある場合は、``MarginContainer`` を使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
-#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
 "要素が行または列に配置されている場合は、 ``HBoxContainer`` または "
-"``VBoxContainer`` を使用します"
+"``VBoxContainer`` を使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
@@ -7490,9 +7499,8 @@ msgstr ""
 "の列では、 ``CenterContainer`` を使用して図の中央に配置します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
-#, fuzzy
 msgid "Interface building blocks, broken down using the three rules of thumb."
-msgstr "3つの経験則に基づいて分類されたインタフェース構成要素"
+msgstr "3つの経験則に基づいて分類されたインタフェースの構成要素。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -7509,13 +7517,12 @@ msgid "Prepare the Main Menu scene"
 msgstr "メインメニューシーンの準備"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
-#, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
-"メインメニューを作りましょう。単一のシーンで構築します。空のシーンを作成する"
-"には、「シーンメニュー ->新規シーン」をクリックします。"
+"メインメニューを作成してみましょう。単一のシーンで構築します。空のシーンを作"
+"成するには「シーンメニュー」 の「新規シーン」をクリックします。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
 msgid ""
@@ -7564,8 +7571,8 @@ msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
-"コンテナをウィンドウに合わせます。 ビューポートの上のツールバーの中の ``で"
-"Layout`` メニューを開き、最後のオプション ``Full Rect`` を選択します。"
+"コンテナをウィンドウに合わせます。 ビューポートの上のツールバー中の**Layout**"
+"メニューを開き、最後のオプション**Full Rect**を選択します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
 msgid "Add the UI sprites"
@@ -7607,7 +7614,7 @@ msgid ""
 "the new node selected, press ``Meta+D`` five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
-"``Add Node`` ボタンをクリックするか、キーボードの ``Meta+A`` キーを押しま"
+"**Add Node** ボタンをクリックするか、キーボードの ``Meta+A`` キーを押しま"
 "す。 ``TextureRect`` と入力して対応するノードを検索し、Enterキーを押します。"
 "新しいノードを選択した状態で ``Meta+D`` を5回押して、追加の ``TextureRect`` "
 "インスタンスを5つ作成します。"
@@ -7620,10 +7627,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
-#, fuzzy
 msgid "The file browser lets you find and load textures."
 msgstr ""
-"ファイルブラウザを使用すると、テクスチャを検索してロードすることができます"
+"ファイルブラウザを使用すると、テクスチャを検索してロードすることができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
 msgid ""
@@ -7635,9 +7641,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
-#, fuzzy
 msgid "The six nodes with textures loaded."
-msgstr "テクスチャがロードされた6つのノード"
+msgstr "テクスチャがロードされた6つのノード。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
 msgid ""
@@ -7685,24 +7690,22 @@ msgstr ""
 "す。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
-#, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr ""
-"4つの入れ子になったコンテナと、それとは別にTextureRectノードがあるはずです"
+"4つの入れ子になったコンテナと、それとは別にTextureRectノードがあるはずです。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
 "version note. Drag and drop them into the ``VBoxContainer``. The nodes "
 "should position automatically."
 msgstr ""
-"ノードツリーで、左側にあるすべての `` TextureRect`` ノードを選択します：ロ"
+"ノードツリーで、左側にあるすべての `` TextureRect`` ノードを選択します。注:ロ"
 "ゴ、メニューオプション、バージョンノートです。それらを `` VBoxContainer`` に"
-"ドラッグアンドドロップします。ノードは自動的に配置されます。"
+"ドラッグアンドドロップします。これらのノードは自動的に配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "Containers automatically place and resize textures"
@@ -11761,6 +11764,8 @@ msgid ""
 "Unity supports C#. C# benefits from its integration with Visual Studio and "
 "has desirable features such as static typing."
 msgstr ""
+"Unity は C# をサポートしています。C# には Visual Studio と統合されているとい"
+"う利点があり、静的な型指定などの望ましい機能があります。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:199
 msgid ""
@@ -11773,6 +11778,13 @@ msgid ""
 "take long to learn: Between one evening for an experienced programmer and a "
 "week for a complete beginner."
 msgstr ""
+"Godot は独自のスクリプト言語 :ref:'GDScript <doc_scripting>' と、:ref:'ビジュ"
+"アル スクリプト <toc-learn-scripting-visual_script>' および :ref:'C# "
+"<doc_c_sharp>' のサポートを提供します。GDScript は Python から構文を借用しま"
+"したが直接的な関連はありません。カスタム スクリプト言語について不明な点があれ"
+"ば、:ref:'doc_gdscript' と :ref:'doc_faq' ページをお読みください。GDScript "
+"は Godot API に強く結び付けられており、学習に時間はかからません: 経験豊富なプ"
+"ログラマなら 1 晩から 1 週間で習得出来ます。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:205
 msgid ""
@@ -59933,9 +59945,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:120
-#, fuzzy
 msgid "Fresnel node"
-msgstr "ノード作成"
+msgstr "フレネルノード"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:122
 msgid ""
@@ -59944,11 +59955,14 @@ msgid ""
 "Additionally, you can setup the inversion and the power of equation. The "
 "``Fresnel`` node is great for adding a rim-like lighting effect to objects."
 msgstr ""
+"''フレネル(Fresnel)'' ノードは、法線ベクトルとビュー ベクトルを受け入れるよう"
+"に設計されており、それらの間の飽和ドット積であるスカラーを生成します。さら"
+"に、反転と方程式の強さを設定できます。''フレネル''ノードは、オブジェクトに縁"
+"取りのような照明効果を追加するのに最適です。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:130
-#, fuzzy
 msgid "Boolean node"
-msgstr "ブール型 OR"
+msgstr "ブール型ノード"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:132
 msgid ""
@@ -59957,10 +59971,14 @@ msgid ""
 "This property can be used to enable or disable some effect parts with one "
 "click."
 msgstr ""
+"''ブール型(Boolean)''ノードは、''Scalar''の場合は ''0'' または ''1'' を表すた"
+"めに、''Vector''の場合は''(0, 0, 0)''または''(1, 1, 1)''を表すために、それぞ"
+"れの値に変換できます。このプロパティを使用すると、一部のエフェクト パーツを "
+"1 回のクリックで有効または無効にできます。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:139
 msgid "If node"
-msgstr ""
+msgstr "ifノード"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:141
 msgid ""
@@ -63232,9 +63250,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:191
-#, fuzzy
 msgid "Creating the controllers"
-msgstr "ポリゴンの作成"
+msgstr "コントローラーの作成"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:195
 msgid ""
@@ -63363,12 +63380,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:245
-#, fuzzy
 msgid ""
 "You can copy and paste the code from this page directly into the script "
 "editor."
 msgstr ""
-"エディターの右上にあるアイコンを使用して、タイルを反転および回転できます。"
+"このページからコードをコピーして、スクリプト エディタに直接貼り付けることがで"
+"きます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:249
 msgid ""
@@ -64473,10 +64490,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:976
-#, fuzzy
 msgid ""
 "Once you have ``VR_Interactable_Rigidbody.gd`` open, add the following code:"
-msgstr "キネマティックボディにスクリプトを追加して、次のコードを追加します:"
+msgstr "``VR_Interactable_Rigidbody.gd`` を開いたら、次のコードを追加します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1004
 msgid "Let's quickly go through what this script."
@@ -64610,9 +64626,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1103
-#, fuzzy
 msgid "Explaining the vignette code"
-msgstr "ファイル・アイコンの変更"
+msgstr "ビネットのコードの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1105
 msgid ""
@@ -64704,9 +64719,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:4
-#, fuzzy
 msgid "VR starter tutorial part 2"
-msgstr "ビデオチュートリアル"
+msgstr "VRスターターチュートリアルのパート2"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:11
 msgid ""
@@ -65000,9 +65014,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:267
-#, fuzzy
 msgid "Explaining the pistol code"
-msgstr "リソースの取得"
+msgstr "ピストルのコードの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:269
 msgid ""
@@ -65289,9 +65302,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:460
-#, fuzzy
 msgid "Explaining the shotgun code"
-msgstr "リソースの取得"
+msgstr "ショットガンのコードの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:462
 msgid ""
@@ -65490,9 +65502,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:662
-#, fuzzy
 msgid "Explaining the bomb code"
-msgstr "リソースの取得"
+msgstr "爆弾のコードの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:664
 msgid ""
@@ -65851,9 +65862,8 @@ msgid "Let's go over how this script works!"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:844
-#, fuzzy
 msgid "Explaining the sword code"
-msgstr "リソースの取得"
+msgstr "剣のコードの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:846
 msgid ""
@@ -66062,9 +66072,8 @@ msgid "Let's quickly go over how this script works."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:994
-#, fuzzy
 msgid "Explaining the reset box code"
-msgstr "リソースの取得"
+msgstr "リセットボックスのコードの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:996
 msgid ""
@@ -74901,7 +74910,7 @@ msgstr "ALSA開発ライブラリ"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:21
 msgid "PulseAudio development libraries"
-msgstr ""
+msgstr "PulseAudio開発ライブラリ"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:22
 msgid "*Optional* - libudev (build with ``udev=yes``)"
@@ -74919,7 +74928,7 @@ msgstr "Distro-specificワンライナー"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:31
 msgid "**Alpine Linux**"
-msgstr ""
+msgstr "**Alpine Linux**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:52
 msgid "**FreeBSD**"

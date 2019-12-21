@@ -11,6 +11,7 @@
 # Gaetan Deglorie <sharkithepointed@gmail.com>, 2018-2019.
 # jaron maene <jaron.maene@gmail.com>, 2018.
 # jef dered <themen098s@vivaldi.net>, 2019.
+# Julian <jdhoogvorst@gmail.com>, 2019.
 # Laurent Windels <laurentwindels@yahoo.com>, 2018.
 # Melvin Louwerse <aterlamia@gmail.com>, 2018.
 # Peter <pshijma@gmail.com>, 2018.
@@ -26,8 +27,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-17 12:01+0100\n"
-"PO-Revision-Date: 2019-12-03 07:10+0000\n"
-"Last-Translator: Filip Van Raemdonck <arrawn@gmail.com>\n"
+"PO-Revision-Date: 2019-12-21 08:38+0000\n"
+"Last-Translator: Julian <jdhoogvorst@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/nl/>\n"
 "Language: nl\n"
@@ -35,7 +36,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.10\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -2790,7 +2791,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr ""
+msgstr "Instancing"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:9
 msgid ""
@@ -2806,6 +2807,9 @@ msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
+"In ref:`doc_scenes_and_nodes` heb je geleerd dat een scène een verzameling "
+"Knooppunt is die in een boomstructuur, met één Knooppunt als wortel, "
+"georganiseerd zijn."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -2813,20 +2817,25 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"Je kunt zoveel scène aanmaken en opslaan als je wilt. Opgeslagen Scène "
+"worden \"Packed Scenes\" genoemd en hebben ``.tscn`` als extensie."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
+"Wanneer een scène is opgeslagen kan deze in een andere scène worden "
+"toegevoegd alsof het een ander Knooppunt is."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
 msgstr ""
+"In bovenstaande afbeelding is scène B aan scène A toegevoegd als instantie."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
-msgstr ""
+msgstr "Instantie voorbeeld"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
@@ -15030,7 +15039,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr ""
+msgstr "Resource pad"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -17821,7 +17830,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "Format"
-msgstr ""
+msgstr "Formaat"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "1 second of audio"
@@ -67953,7 +67962,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 msgid "Value"
-msgstr ""
+msgstr "Waarde"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "0"
@@ -69749,7 +69758,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:128
 msgid "Profiler"
-msgstr ""
+msgstr "Profiler"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:130
 msgid ""
@@ -69804,7 +69813,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:156
 msgid "Monitors"
-msgstr ""
+msgstr "Monitors"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:158
 msgid ""
@@ -69817,7 +69826,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:163
 msgid "Video Mem"
-msgstr ""
+msgstr "Video Mem"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:165
 msgid ""
@@ -69827,7 +69836,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:168
 msgid "Misc"
-msgstr ""
+msgstr "Overig"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:170
 msgid ""
@@ -70320,7 +70329,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:142
 msgid "Target"
-msgstr ""
+msgstr "Doel"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target controls optimization and debug flags. Each mode means:"

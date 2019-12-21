@@ -56,6 +56,7 @@
 # João Victor Lima <victordevtb@outlook.com>, 2018.
 # Joaquim Ferreira <joaquimferreira1996@bol.com.br>, 2018-2019.
 # Joel Landgraf Filho <joel.landgraf@gmail.com>, 2019.
+# johnnybigoode <jamarson@gmail.com>, 2019.
 # José Leonardo Ayres Pereira <leonardo.ayres@gmail.com>, 2019.
 # Julio Yagami <juliohenrique31501234@hotmail.com>, 2018-2019.
 # ieleny filgueira <ielenyfilgueira@hotmail.com>, 2018.
@@ -130,8 +131,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-17 12:01+0100\n"
-"PO-Revision-Date: 2019-12-16 23:50+0000\n"
-"Last-Translator: Lauan Souza <lauan.s.souza@gmail.com>\n"
+"PO-Revision-Date: 2019-12-21 08:38+0000\n"
+"Last-Translator: johnnybigoode <jamarson@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -139,7 +140,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.10\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -4071,28 +4072,25 @@ msgstr ""
 "<class_Object_method__notification>` ao seu roteiro:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
-#, fuzzy
 msgid ""
 "The documentation of each class in the :ref:`Class Reference <toc-class-"
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overridable functions."
 msgstr ""
-"A documentação de cada classe na :ref:`Referência das Classes <toc-class-"
+"A documentação de cada classe em :ref:`Referência das Classes <toc-class-"
 "ref>` mostra as notificações que ela pode receber. No entanto, na maior "
-"parte dos casos, a GDScript fornece funções substituíveis mais simples."
+"parte dos casos, a GDScript fornece funções sobrescrevíveis mais simples."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
-#, fuzzy
 msgid "Overridable functions"
-msgstr "Funções substituíveis"
+msgstr "Funções sobrescrevíveis"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
-#, fuzzy
 msgid ""
 "Such overridable functions, which are described as follows, can be applied "
 "to nodes:"
 msgstr ""
-"Tais funções substituíveis, como descritas no código, podem ser aplicadas a "
+"Tais funções sobrescrevíveis, descritas em seguida, podem ser aplicadas a "
 "nós:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
@@ -4947,16 +4945,17 @@ msgstr ""
 "play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position. "
 "We can also use ``clamp()`` to prevent it from leaving the screen. "
 "*Clamping* a value means restricting it to a given range. Add the following "
 "to the bottom of the ``_process`` function:"
 msgstr ""
-"Agora que temos uma direção de movimento, podemos atualizar a posição de "
-"``Jogador`` e usar ``clamp()`` (limitar) para impedir que ele saia da tela. "
-"Fazemos isso adicionando o seguinte código ao final da função ``_process``:"
+"Agora que temos uma direção de movimento, podemos atualizar a posição do "
+"jogador. Podemos utilizar ``clamp()`` (segurar, como quando utilizamos uma "
+"braçadeira ou um torno) para impedir que ele saia da tela. *Segurar* um "
+"valor significa restringi-lo a um intervalo. Adicione o seguinte código no "
+"final da função ``_process``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:332
 msgid ""
@@ -5663,13 +5662,12 @@ msgstr ""
 "`doc_design_interfaces_with_the_control_nodes` para mais detalhes."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:915
-#, fuzzy
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
 msgstr ""
-"Organize os nós conforme mostrado abaixo. Clique no botão \"Âncora\" para "
-"definir a âncora para um nó Control:"
+"Organize os nós conforme indicado abaixo. Clique no botão \"Disposição "
+"(Layout)\" para definir a disposição de um nó de controle:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:920
 msgid ""
@@ -6461,18 +6459,17 @@ msgstr ""
 "seguintes arquivos:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:274
-#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
 "you don't have one set up on your computer, you can search online to find "
 "suggestions for your specific OS."
 msgstr ""
-"Visualizar o arquivo `.html` no seu navegador permite que você jogue o jogo. "
-"No entanto, você não pode abrir o arquivo diretamente, pois ele precisará "
-"ser servido por um servidor da web. Se você não tiver um configurado em seu "
-"computador, poderá usar o Google para encontrar sugestões para seu sistema "
-"operacional específico."
+"Visualizar o arquivo `.html` no seu navegador permite que você abra o jogo. "
+"No entanto, você não pode abrir o arquivo diretamente, é necessário que ele "
+"seja disponibilizado por um servidor web. Se você não tiver um em seu "
+"computador, pesquise na internet sugestões para seu sistema operacional "
+"específico."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
 msgid ""
@@ -6495,7 +6492,6 @@ msgstr ""
 "projeto."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:287
-#, fuzzy
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "
 "technology and you may find some things that don't work. Make sure you have "
@@ -6503,8 +6499,8 @@ msgid ""
 "find at the `Godot Github repository <https://github.com/godotengine/godot/"
 "issues>`_."
 msgstr ""
-"O suporte do navegador para o WASM não é muito difundido. O Firefox e o "
-"Chrome são compatíveis, mas você ainda pode encontrar algumas coisas que não "
+"Apesar de WASM ter suporte na maioria dos navegadores, ainda é uma "
+"tecnologia emergente e você pode encontrar algumas coisas que ainda não "
 "funcionam. Certifique-se de ter atualizado seu navegador para a versão mais "
 "recente, e relate quaisquer erros que você encontrar no repositório do "
 "`Godot no Github <https://github.com/godotengine/godot/issues>`_."
@@ -6746,16 +6742,15 @@ msgstr ""
 "zero pelos colaboradores."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
-#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won’t ship with the engine. This may include Google AdMob, or FMOD. Any "
 "of these can come as third-party plugins instead."
 msgstr ""
-"Qualquer um pode conectar ferramentas proprietárias para as necessidades de "
-"seus projetos - elas simplesmente não são enviadas com a engine. Isso pode "
-"incluir o NViDia PhysX, o Google Admob ou um importador de arquivos FBX. "
-"Qualquer um destes pode vir como plugins de terceiros."
+"Qualquer um pode conectar ferramentas proprietárias em seus projetos - elas "
+"apenas não estão disponíveis com a engine do Godot. Isso pode incluir NViDia "
+"PhysX, o Google Admob ou um importador de arquivos FBX. Qualquer um destes "
+"pode vir como plugins de terceiros."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
 msgid ""
@@ -6877,7 +6872,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Design de interfaces com os nós de Controle"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screens come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -6885,12 +6879,12 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
-"Monitores de computador, telefones celulares e tela de TV existem em todas "
-"as formas e tamanhos. Para enviar um jogo, você precisará suportar "
-"diferentes proporções e resoluções de tela. Pode ser difícil criar "
-"interfaces responsivas que se adaptem a todas as plataformas. Felizmente, o "
-"Godot vem com ferramentas robustas para projetar e gerenciar a interface de "
-"usuário responsiva."
+"Telas de computadores, celulares e TVs existem em todas as formas e "
+"tamanhos. Para enviar um jogo, será necessário suportar diferentes "
+"proporções e resoluções de tela. Pode ser difícil criar interfaces "
+"responsivas que se adaptem a todas as plataformas. Felizmente, o Godot vem "
+"com ferramentas robustas para projetar e gerenciar de forma responsiva a "
+"interface de usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"

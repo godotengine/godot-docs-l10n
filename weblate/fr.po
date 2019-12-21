@@ -123,7 +123,7 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-17 12:01+0100\n"
-"PO-Revision-Date: 2019-12-16 23:50+0000\n"
+"PO-Revision-Date: 2019-12-21 11:12+0000\n"
 "Last-Translator: Caye Pierre <pierrecaye@laposte.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
@@ -132,7 +132,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.10\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -4158,7 +4158,6 @@ msgstr ""
 "<class_Object_method__notification__notification>` dans votre script :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
-#, fuzzy
 msgid ""
 "The documentation of each class in the :ref:`Class Reference <toc-class-"
 "ref>` shows the notifications it can receive. However, in most cases "
@@ -4166,15 +4165,14 @@ msgid ""
 msgstr ""
 "La documentation de chaque classe dans la :ref:`Class Reference <toc-class-"
 "ref>` montre les notifications qu'elle peut recevoir. Cependant, dans la "
-"plupart des cas, GDScript fournit des fonctions de surcharge plus simples."
+"plupart des cas, GDScript fournit des fonctions de surchargeable plus "
+"simples."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
-#, fuzzy
 msgid "Overridable functions"
 msgstr "Fonctions surchargeables"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
-#, fuzzy
 msgid ""
 "Such overridable functions, which are described as follows, can be applied "
 "to nodes:"
@@ -11157,7 +11155,6 @@ msgstr ""
 "qu'elles contiennent."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
-#, fuzzy
 msgid ""
 "Anything Godot saves or loads from disk is a resource. Be it a scene (a ``."
 "tscn`` or an ``.scn`` file), an image, a script... Here are some "
@@ -11167,11 +11164,11 @@ msgid ""
 "<class_Font>`, :ref:`Translation <class_Translation>`."
 msgstr ""
 "Tout ce que Godot sauvegarde ou charge depuis le disque est une ressource. "
-"Que ce soit une scène(un .tscn ou un fichier .scn), une image, un script... "
-"Quelques exemples de ressources : :ref:`Texture <class_Texture>`, :ref:"
-"`Script <class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
-"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
-"<class_Font>`, :ref:`Translation <class_Translation>`, etc."
+"Que ce soit une scène(un fichier ``.tscn`` ou ``.scn``), une image, un "
+"script... Quelques exemples de ``Resource`` : :ref:`Texture "
+"<class_Texture>`, :ref:`Script <class_Script>`, :ref:`Mesh <class_Mesh>`, :"
+"ref:`Animation <class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :"
+"ref:`Font <class_Font>`, :ref:`Translation <class_Translation>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
 msgid ""
@@ -11215,13 +11212,12 @@ msgstr ""
 "individuels."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
-#, fuzzy
 msgid ""
 "**Built-in**, saved inside the ``.tscn`` or the ``.scn`` file they're "
 "attached to."
 msgstr ""
-"**Intégrés**, enregistrés dans le fichier \\*.tscn ou le fichier \\*.scn "
-"auquel ils sont attachés."
+"**Built-in** (intégrées), enregistrées dans le fichier ``.tscn`` ou le "
+"fichier ``.scn`` auquel elles sont attachés."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
 msgid ""
@@ -11253,7 +11249,6 @@ msgstr ""
 "intégrée."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
-#, fuzzy
 msgid ""
 "The switch between built-in and external resources happens when you save the "
 "scene. In the example above, if you erase the path ``\"res://robi.png\"`` "
@@ -11261,8 +11256,8 @@ msgid ""
 msgstr ""
 "Le basculement entre les ressources intégrées et externes se produit lorsque "
 "vous enregistrez la scène. Dans l'exemple ci-dessus, si vous effacez le "
-"chemin \\`\"res://robi.png\"\\`et que vous sauvegardez, Godot sauvegardera "
-"l'image dans le fichier de scène .tscn."
+"chemin``\"res://robi.png\"`` et que vous sauvegardez, Godot sauvegardera "
+"l'image dans le fichier de scène ``.tscn``."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
 msgid ""
@@ -13785,6 +13780,9 @@ msgid ""
 "existing files are found (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Écrire la référence de l'API du moteur vers le chemin <path> au format XML, "
+"fusionnant les fichiers s'ils existent (:ref:`les outils "
+"<doc_introduction_to_the_buildsystem_tools>` doivent être activés)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid "``--no-docbase``"
@@ -13795,6 +13793,9 @@ msgid ""
 "Disallow dumping the base types (used with ``--doctool``, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Ne pas écrire les références des types de base (utilisé avec``--doctool``, :"
+"ref:`les outils <doc_introduction_to_the_buildsystem_tools>` doivent être "
+"activés)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
 msgid "``--build-solutions``"
@@ -24302,7 +24303,6 @@ msgstr ""
 "filtrage."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:292
-#, fuzzy
 msgid ""
 "For example: include all tracks in animations with names ending in ``\"_Loop"
 "\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
@@ -56669,16 +56669,15 @@ msgstr ""
 "droite (donc dessiner un grand nombre de points serait un gaspillage)."
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:183
-#, fuzzy
 msgid ""
 "Before drawing Bezier curves, *tessellation* is required. This is often done "
 "with a recursive or divide and conquer function that splits the curve until "
 "the curvature amount becomes less than a certain threshold."
 msgstr ""
 "Avant de tracer les courbes de Bézier, une *tesselation* est nécessaire. "
-"Ceci est souvent fait avec une fonction récursive ou diviser pour régner qui "
-"divise la courbe jusqu'à ce que la valeur de courbure devienne inférieure à "
-"un certain seuil."
+"Ceci est souvent fait avec une fonction récursive ou une fonction diviser "
+"pour régner qui divise la courbe jusqu'à ce que la valeur de courbure "
+"devienne inférieure à un certain seuil."
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:185
 msgid ""
@@ -56919,6 +56918,10 @@ msgid ""
 "\"Play from beginning\" button |Play from beginning| (Default shortcut: Shift"
 "+D) to see the changes instantly."
 msgstr ""
+"Si vous animez la mauvaise propriété, vous pouvez éditer le chemin d'une "
+"piste à tout moment. Double-cliquez dessus et tapez le nouveau chemin. Lire "
+"l'animation à l'aide du bouton \"Lire du début\" |Lire du début| (Raccourci "
+"par défaut : Shift+D) pour voir les changements instantanément."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:109
 msgid "Tutorial: Creating a simple animation"
@@ -56943,6 +56946,10 @@ msgid ""
 "the sprites' texture. As a starting point, move the sprite to a left "
 "position on the screen."
 msgstr ""
+"Le sprite contient une texture d'image et nous animons ce sprite pour le "
+"déplacer entre deux points de l'écran. Pour ce tutoriel, utilisez l'icône "
+"Godot par défaut comme texture des sprites. Comme point de départ, déplacez "
+"le sprite vers la gauche sur l'écran."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:129
 msgid ""
@@ -56950,6 +56957,9 @@ msgid ""
 "required, but it is a nice way of distinguishing animated nodes from non-"
 "animated nodes in the Scene Tree."
 msgstr ""
+"Il n'est pas nécessaire d'ajouter les nœuds animés en tant qu'enfants au "
+"nœud AnimationPlayer, mais c'est un bon moyen de distinguer les nœuds animés "
+"des nœuds non animés dans l'arbre des scènes."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:133
 msgid ""
@@ -56974,6 +56984,8 @@ msgstr "Ajout d'une piste"
 msgid ""
 "To add a new track for our sprite, select it and take a look in the toolbar:"
 msgstr ""
+"Pour ajouter une nouvelle piste pour notre sprite, sélectionnez-le et "
+"regardez dans la barre d'outils :"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:152
 msgid "Convenience buttons"
@@ -56990,12 +57002,17 @@ msgid ""
 "Deselect rotation, because we are only interested in the location of our "
 "sprite for this tutorial and click on the key button."
 msgstr ""
+"Désélectionnez la rotation, car nous ne sommes intéressés que par "
+"l'emplacement de notre sprite pour ce tutoriel et cliquez sur le bouton clé."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:160
 msgid ""
 "As we don't have a track already set up for the transform/location property, "
 "Godot asks, whether it should set it up for us. Click on \"Create\"."
 msgstr ""
+"Comme nous n'avons pas de piste déjà configurée pour la propriété transform/"
+"location, Godot demande, si il doit la configurée pour nous. Cliquez sur "
+"\"Créer\"."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:164
 msgid ""
@@ -57014,6 +57031,8 @@ msgid ""
 "The track name consists of a Node Path, followed by a colon, followed by a "
 "reference to its property, that we would like to modify."
 msgstr ""
+"Le nom de la piste se compose d'un chemin du nœud, suivi de deux-points, "
+"suivi d'une référence à sa propriété, que nous aimerions modifier."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:175
 msgid ""
@@ -57028,6 +57047,8 @@ msgid ""
 "The path always starts at the AnimationPlayer node's parent (so paths always "
 "have to include the AnimationPlayer node itself)."
 msgstr ""
+"Le chemin commence toujours au niveau du nœud parent du nœud AnimationPlayer "
+"(les chemins doivent donc toujours inclure le nœud AnimationPlayer lui-même)."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:183
 msgid ""
@@ -57047,6 +57068,8 @@ msgid ""
 "Now we need to set the destination where our sprite should be headed and how "
 "much time it takes to get there."
 msgstr ""
+"Maintenant, nous devons définir la destination vers laquelle notre sprite "
+"doit se diriger et combien de temps il lui faut pour y arriver."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:193
 msgid ""
@@ -57064,6 +57087,8 @@ msgid ""
 "Click on the timeline header near the 2 second mark and move the sprite to "
 "the target destination on the right side."
 msgstr ""
+"Cliquez sur l'en-tête de la timeline près du repère de 2 secondes et "
+"déplacez le sprite vers la destination cible sur le côté droit."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:205
 msgid ""
@@ -57090,7 +57115,7 @@ msgstr "L'animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:221
 msgid "Back and forth"
-msgstr ""
+msgstr "Allers et retours"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:223
 msgid ""
@@ -57109,6 +57134,9 @@ msgid ""
 "and forth. You can change this behaviour if you change the track's loop "
 "mode. This is covered in the next chapter."
 msgstr ""
+"Si vous réglez la durée de l'animation à 4 secondes maintenant, l'animation "
+"se déplace d'avant en arrière. Vous pouvez modifier ce comportement si vous "
+"changez le mode boucle de la piste. Ceci est abordé dans le chapitre suivant."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:238
 #: ../../docs/tutorials/animation/introduction_2d.rst:246
@@ -57120,12 +57148,16 @@ msgid ""
 "Each track has a settings panel at the end, where you can set the update "
 "mode, the track interpolation, and the loop mode."
 msgstr ""
+"Chaque piste a un panneau de configuration à la fin, où vous pouvez définir "
+"le mode de mise à jour, l'interpolation de la piste et le mode boucle."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:248
 msgid ""
 "The update mode of a track tells Godot when to update the property values. "
 "This can be:"
 msgstr ""
+"Le mode de mise à jour d'une piste indique à Godot quand mettre à jour les "
+"valeurs des propriétés. Cela peut l'être :"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:251
 msgid "Continuous: Update the property on each frame"
@@ -57183,7 +57215,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:276
 msgid "Track interpolation"
-msgstr ""
+msgstr "Interpolation de piste"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:278
 msgid ""
@@ -57264,6 +57296,8 @@ msgid ""
 "You usually tweak your animations this way, when the movement doesn't \"look "
 "right\"."
 msgstr ""
+"Vous ajustez généralement vos animations de cette façon, lorsque le "
+"mouvement ne \"semble pas correct\"."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:334
 msgid "Advanced: Call Method tracks"
@@ -57354,7 +57388,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:7
 #: ../../docs/tutorials/inputs/inputevent.rst:7
 msgid "What is it?"
-msgstr ""
+msgstr "Qu'est-ce que c'est ?"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:9
 msgid ""
@@ -57383,6 +57417,10 @@ msgid ""
 "`Paper Mario <https://en.wikipedia.org/wiki/Super_Paper_Mario>`__ or `Rayman "
 "Origins <https://en.wikipedia.org/wiki/Rayman_Origins>`__ ."
 msgstr ""
+"Dans les jeux vidéo, cette technique est également devenue populaire. Des "
+"exemples de ceci sont `Paper Mario <https://en.wikipedia.org/wiki/"
+"Super_Paper_Mario>`__ ou `Rayman Origins <https://en.wikipedia.org/wiki/"
+"Rayman_Origins>`__ ."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:27
 msgid "Cutout animation in Godot"
@@ -57401,6 +57439,11 @@ msgid ""
 "sprite sizes, pivots, opacity, color modulation, and more, can all be "
 "animated and blended."
 msgstr ""
+"**Le système d'animation est entièrement intégré au moteur** : Cela signifie "
+"que les animations peuvent contrôler beaucoup plus que le simple mouvement "
+"des objets. Les textures, la taille des sprites, les pivots, l'opacité, la "
+"modulation des couleurs, et plus encore, peuvent tous être animés et "
+"mélangés."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:35
 msgid ""
@@ -57417,6 +57460,9 @@ msgid ""
 "**Custom Shaped Elements**: Custom shapes can be created with :ref:"
 "`Polygon2D <class_Polygon2D>` allowing UV animation, deformations, etc."
 msgstr ""
+"**Éléments sur mesure** : Des formes personnalisées peuvent être créées "
+"avec :ref:`Polygon2D <class_Polygon2D>` permettant l'animation UV, les "
+"déformations, etc."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:44
 msgid ""
@@ -57439,7 +57485,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:51
 #: ../../docs/tutorials/shading/shader_materials.rst:24
 msgid "And much more!"
-msgstr ""
+msgstr "Et bien plus encore !"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:54
 msgid "Making of GBot"
@@ -57457,6 +57503,8 @@ msgstr ""
 msgid ""
 "Get your assets: :download:`gbot_resources.zip <files/gbot_resources.zip>`."
 msgstr ""
+"Obtenez vos ressources : :download:`gbot_resources.zip <files/gbot_resources."
+"zip>`."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:65
 msgid "Setting up the rig"
@@ -57465,18 +57513,24 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:67
 msgid "Create an empty Node2D as root of the scene, we will work under it:"
 msgstr ""
+"Créer un node2d vide en tant que racine de la scène où nous travaillerons :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:71
 msgid ""
 "The first node of the model is the hip. Generally, both in 2D and 3D, the "
 "hip is the root of the skeleton. This makes it easier to animate:"
 msgstr ""
+"Le premier nœud du modèle est la hanche. Généralement, en 2D et 3D, la "
+"hanche est la racine du squelette. Cela facilite l'animation :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:77
 msgid ""
 "Next will be the torso. The torso needs to be a child of the hip, so create "
 "a child sprite and load the torso texture, later accommodate it properly:"
 msgstr ""
+"Le prochain sera le torse. Le torse doit être un enfant de la hanche, alors "
+"créez un sprite enfant et chargez la texture du torse, puis adaptez-le "
+"correctement :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:82
 msgid ""
@@ -57484,25 +57538,32 @@ msgid ""
 "the torso. We can do this be pressing ``E`` to enter rotate mode, and "
 "dragging with the left mouse button. To exit rotate mode hit ``ESC``."
 msgstr ""
+"Ça a l'air bon. Voyons si notre hiérarchie fonctionne comme un squelette en "
+"faisant tourner le torse. Nous pouvons faire cela en appuyant sur ``E`` pour "
+"entrer en mode de rotation, et en faisant glisser avec le bouton gauche de "
+"la souris. Pour quitter le mode de rotation, appuyez sur ``ESC``."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:88
 msgid "The rotation pivot is wrong and needs to be adjusted."
-msgstr ""
+msgstr "Le pivot de rotation est incorrect et doit être ajusté."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:90
 msgid ""
 "This small cross in the middle of the :ref:`Sprite <class_Sprite>` is the "
 "rotation pivot:"
 msgstr ""
+"Cette petite croix au milieu du :ref:`Sprite <class_Sprite>` est le pivot de "
+"rotation :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:96
 msgid "Adjusting the pivot"
-msgstr ""
+msgstr "Ajustement du pivot"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:98
 msgid ""
 "The pivot can be adjusted by changing the *offset* property in the Sprite:"
 msgstr ""
+"Le pivot peut être ajusté en modifiant la propriété *offset* du Sprite :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:103
 msgid ""
@@ -57510,6 +57571,10 @@ msgid ""
 "pivot point,  press the \"v\" key to move the pivot there for the selected "
 "Sprite. There is also a tool in the tool bar that has a similar function."
 msgstr ""
+"Le pivot peut également être ajusté *visuellement*. En survolant le point de "
+"pivot souhaité, appuyez sur la touche \"v\" pour y déplacer le pivot du "
+"Sprite sélectionné. Il y a également un outil dans la barre d'outils qui a "
+"une fonction similaire."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:110
 msgid ""
@@ -57517,12 +57582,17 @@ msgid ""
 "each sprite in its correct place in the hierarchy, so its rotations and "
 "translations are relative to its parent:"
 msgstr ""
+"Continuez à ajouter des morceaux de corps, en commençant par le bras droit. "
+"Assurez-vous de placer chaque sprite à sa place correcte dans la hiérarchie, "
+"afin que ses rotations et translations soient relatives à son parent :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:116
 msgid ""
 "With the left arm there's a problem. In 2D, child nodes appear in front of "
 "their parents:"
 msgstr ""
+"Avec le bras gauche, il y a un problème. En 2D, les nœuds enfants "
+"apparaissent devant leurs parents :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:121
 msgid ""
@@ -57532,16 +57602,24 @@ msgid ""
 "hierarchy. This means it wouldn't be affected the movement of the torso. "
 "We'll fix this problem with ``RemoteTransform2D`` nodes."
 msgstr ""
+"Nous voulons que le bras gauche apparaisse *derrière* la hanche et le torse. "
+"Nous pourrions déplacer les nœuds du bras gauche derrière la hanche (au-"
+"dessus du nœud de la hanche dans la hiérarchie de la scène), mais alors le "
+"bras gauche n'est plus à sa place dans la hiérarchie. Cela signifie qu'il ne "
+"serait pas affecté par le mouvement du torse. Nous allons corriger ce "
+"problème avec les nœuds ``RemoteTransform2D``."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:127
 msgid ""
 "You can also fix depth ordering problems by adjusting the Z property of any "
 "node inheriting from Node2D."
 msgstr ""
+"Vous pouvez également résoudre les problèmes d'ordonnancement de la "
+"profondeur en ajustant la propriété Z de tout nœud héritant de Node2D."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:131
 msgid "RemoteTransform2D node"
-msgstr ""
+msgstr "Nœud RemoteTransform2D"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:133
 msgid ""
@@ -57550,6 +57628,10 @@ msgid ""
 "(including any transformation it inherits from its parents) to the remote "
 "node it targets."
 msgstr ""
+"Le nœud :ref:`RemoteTransform2D <class_RemoteTransform2D>` transforme les "
+"nœuds quelque part ailleurs dans la hiérarchie. Ce nœud applique sa propre "
+"transformation (y compris toute transformation héritée de ses parents) au "
+"nœud distant qu'il cible."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:137
 msgid ""
@@ -57564,22 +57646,32 @@ msgid ""
 "call it ``remote_hand_l``. Use the ``Remote Path`` property of the two new "
 "nodes to target the ``arm_l`` and ``hand_l`` sprites respectively:"
 msgstr ""
+"Créez un nœud ``RemoteTransform2D`` en tant qu'enfant du torse. Appelez le "
+"``remote_arm_l``. Créez un autre nœud RemoteTransform2D à l'intérieur du "
+"premier et appelez le ``remote_hand_l``. Utilisez la propriété ``Remote "
+"Path`` des deux nouveaux nœuds pour cibler les sprites ``arm_l`` et "
+"``hand_l`` respectivement :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:147
 msgid ""
 "Moving the ``RemoteTransform2D`` nodes now moves the sprites. So we can "
 "create animations by adjusting the ``RemoteTransform2D`` transforms:"
 msgstr ""
+"Le déplacement des nœuds ``RemoteTransform2D`` déplace maintenant les "
+"sprites. Ainsi, nous pouvons créer des animations en ajustant les "
+"transformations ``RemoteTransform2D`` :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:153
 msgid "Completing the skeleton"
-msgstr ""
+msgstr "Compléter le squelette"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:155
 msgid ""
 "Complete the skeleton by following the same steps for the rest of the parts. "
 "The resulting scene should look similar to this:"
 msgstr ""
+"Complétez le squelette en suivant les mêmes étapes pour le reste des pièces. "
+"La scène qui en résulte devrait ressembler à celle-ci :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:160
 msgid ""
@@ -57606,31 +57698,36 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:170
 msgid "To solve these problems we'll use Godot's skeletons."
-msgstr ""
+msgstr "Pour résoudre ces problèmes, nous utiliserons les squelettes de Godot."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:173
 msgid "Skeletons"
-msgstr ""
+msgstr "Squelettes"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:175
 msgid ""
 "In Godot there is a helper to create \"bones\" between nodes. The bone-"
 "linked nodes are called skeletons."
 msgstr ""
+"Dans Godot, il y a une aide pour créer des \"os\" entre les nœuds. Les nœuds "
+"liés aux os sont appelés squelettes."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:178
 msgid ""
 "As an example, let's turn the right arm into a skeleton. To create a "
 "skeleton, a chain of nodes must be selected from top to bottom:"
 msgstr ""
+"A titre d'exemple, transformons le bras droit en squelette. Pour créer un "
+"squelette, une chaîne de nœuds doit être sélectionnée de haut en bas :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:183
 msgid "Then, click on the Skeleton menu and select ``Make Bones``."
-msgstr ""
+msgstr "Ensuite, cliquez sur le menu Squelette et sélectionnez ``Make Bones``."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:187
 msgid "This will add bones covering the arm, but the result may be surprising."
 msgstr ""
+"Cela ajoutera des os couvrant le bras, mais le résultat peut être surprenant."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:191
 msgid ""
@@ -57638,6 +57735,9 @@ msgid ""
 "parent. And there's currently no child of the hand node. With this knowledge "
 "let's try again."
 msgstr ""
+"Pourquoi la main n'a pas d'os ? Dans Godot, un os relie un nœud à son "
+"parent. Et il n'y a actuellement aucun enfant du nœud de la main. Sachant "
+"cela, essayons encore une fois."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:195
 msgid ""
@@ -57645,17 +57745,25 @@ msgid ""
 "ref:`Position2D <class_Position2D>` is preferred because it's visible in the "
 "editor. The endpoint node will ensure that the last bone has orientation."
 msgstr ""
+"La première étape consiste à créer un nœud d'extrémité. N'importe quel type "
+"de nœud fera l'affaire, mais :ref:`Position2D <class_Position2D>` est "
+"préféré car il est visible dans l'éditeur. Le nœud d'extrémité permet de "
+"s'assurer que le dernier os a une orientation."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:202
 msgid ""
 "Now select the whole chain, from the endpoint to the arm and create bones:"
 msgstr ""
+"Sélectionnez maintenant toute la chaîne, de l'extrémité au bras et créez des "
+"os :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:207
 msgid ""
 "The result resembles a skeleton a lot more, and now the arm and forearm can "
 "be selected and animated."
 msgstr ""
+"Le résultat ressemble beaucoup plus à un squelette, et maintenant le bras et "
+"l'avant-bras peuvent être sélectionnés et animés."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:210
 msgid ""
@@ -57671,6 +57779,11 @@ msgid ""
 "we don't want that. To fix this, select the root and hip node, open the "
 "Skeleton menu, click ``clear bones``."
 msgstr ""
+"Vous remarquerez peut-être qu'un os supplémentaire est créé lors de la "
+"connexion de la hanche et du torse. Godot a relié le nœud de la hanche à la "
+"racine de la scène avec un os, et nous ne voulons pas cela. Pour résoudre ce "
+"problème, sélectionnez le nœud racine et le nœud de hanche, ouvrez le menu "
+"Squelette, cliquez sur \" Effacer les os \"."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:221
 msgid "Your final skeleton should look something like this:"
@@ -57681,6 +57794,8 @@ msgid ""
 "You might have noticed a second set of endpoints in the hands. This will "
 "make sense soon."
 msgstr ""
+"Vous avez peut-être remarqué une deuxième série de points d'extrémité dans "
+"les mains. Cela aura bientôt un sens."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:228
 msgid ""
@@ -57690,7 +57805,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:232
 msgid "IK chains"
-msgstr ""
+msgstr "Chaînes IK"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:234
 msgid ""
@@ -57706,6 +57821,8 @@ msgstr ""
 msgid ""
 "IK allows us to move directly the foot while the shin and thigh self-adjust."
 msgstr ""
+"IK nous permet de déplacer directement le pied pendant que le tibia et la "
+"cuisse s'ajustent d'eux-mêmes."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:243
 msgid ""
@@ -57713,14 +57830,17 @@ msgid ""
 "the chain. For example, to create an IK chain for the right leg, select the "
 "following:"
 msgstr ""
+"Pour créer une chaîne IK, sélectionnez une chaîne d'os de l'extrémité à la "
+"base pour la chaîne. Par exemple, pour créer une chaîne IK pour la jambe "
+"droite, sélectionnez ce qui suit :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:249
 msgid "Then enable this chain for IK. Go to Edit > Make IK Chain."
-msgstr ""
+msgstr "Alors activez cette chaîne pour IK. Allez dans Edit > Make IK Chain."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:253
 msgid "As a result, the base of the chain will turn *Yellow*."
-msgstr ""
+msgstr "En conséquence, la base de la chaîne deviendra *Jaune*."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:257
 msgid ""
@@ -57728,6 +57848,10 @@ msgid ""
 "chain (e.g. a foot) and move it. You'll see the rest of the chain adjust as "
 "you adjust its position."
 msgstr ""
+"Une fois que la chaîne IK est mise en place, prenez un enfant ou un petit-"
+"enfant de la base de la chaîne (par exemple un pied) et déplacez-le. Vous "
+"verrez le reste de la chaîne s'ajuster au fur et à mesure que vous ajustez "
+"sa position."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:264
 msgid "Animation tips"
@@ -57749,6 +57873,8 @@ msgid ""
 "Special contextual elements appear in the top toolbar when the animation "
 "editor window is open:"
 msgstr ""
+"Des éléments contextuels spéciaux apparaissent dans la barre d'outils "
+"supérieure lorsque la fenêtre de l'éditeur d'animation est ouverte :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:278
 msgid ""
@@ -57813,7 +57939,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:316
 msgid "Modifying rotation only"
-msgstr ""
+msgstr "Modification de la rotation uniquement"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:318
 msgid ""
@@ -57832,6 +57958,8 @@ msgid ""
 "This will avoid the creation of unwanted animation tracks for position and "
 "scale."
 msgstr ""
+"Cela évitera la création de pistes d'animation non désirées pour la position "
+"et l'échelle."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:331
 msgid "Keyframing IK chains"
@@ -57846,7 +57974,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:338
 msgid "Visually move a sprite behind its parent"
-msgstr ""
+msgstr "Déplacer visuellement un sprite derrière son parent"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:340
 msgid ""
@@ -57856,6 +57984,12 @@ msgid ""
 "him. During this animation the whole arm and the object in his hand would "
 "need to change their visual depth relative to the body of the character."
 msgstr ""
+"Il est parfois nécessaire de faire changer la profondeur visuelle d'un nœud "
+"par rapport à son nœud parent pendant une animation. Pensez à un personnage "
+"face à la caméra, qui sort quelque chose de derrière son dos et le tient "
+"devant lui. Au cours de cette animation, le bras entier et l'objet dans sa "
+"main devraient changer leur profondeur visuelle par rapport au corps du "
+"personnage."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:346
 msgid ""
@@ -57868,7 +58002,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:354
 msgid "Setting easing curves for multiple keys"
-msgstr ""
+msgstr "Réglage des courbes de transition pour plusieurs clés"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:356
 msgid "To apply the same the easing curve to multiple keyframes at once:"
@@ -57883,14 +58017,18 @@ msgid ""
 "Click on the pencil icon in the bottom right of the animation panel, this "
 "will open the transition editor."
 msgstr ""
+"Cliquez sur l'icône du crayon en bas à droite du panneau d'animation, cela "
+"ouvrira l'éditeur de transition."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
 msgid "In the transition editor click on the desired curve to apply it."
 msgstr ""
+"Dans l'éditeur de transition, cliquez sur la courbe souhaitée pour "
+"l'appliquer."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:366
 msgid "2D Skeletal deform"
-msgstr ""
+msgstr "Déformation squelettique 2D"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:368
 msgid ""
@@ -57903,6 +58041,7 @@ msgstr ""
 msgid ""
 "This process is described in a :ref:`separate tutorial <doc_2d_skeletons>`."
 msgstr ""
+"Ce processus est décrit dans :ref:`un tutoriel séparé <doc_2d_skeletons>`."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:4
 msgid "2D skeletons"
@@ -57915,6 +58054,11 @@ msgid ""
 "function is not used as often, it's difficult to find mainstream software "
 "aimed for this."
 msgstr ""
+"Lorsque l'on travaille avec la 3D, les déformations du squelette sont "
+"courantes pour les personnages et les créatures et la plupart des "
+"applications de modélisation 3D les prennent en charge. Pour la 2D, comme "
+"cette fonction n'est pas utilisée aussi souvent, il est difficile de trouver "
+"des logiciels grand public qui s'y destinent."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:13
 msgid ""
@@ -57922,40 +58066,55 @@ msgid ""
 "Dragonbones. From Godot 3.1 onwards, though, this functionality is supported "
 "built-in."
 msgstr ""
+"Une option consiste à créer des animations dans des logiciels tiers tels que "
+"Spine ou Dragonbones. A partir de Godot 3.1, cependant, cette fonctionnalité "
+"est prise en charge de manière intégrée."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:16
 msgid ""
 "Why would you want to do skeletal animations directly in Godot? The answer "
 "is that there are many advantages to it:"
 msgstr ""
+"Pourquoi voudriez-vous faire des animations de squelettes directement dans "
+"Godot ? La réponse est qu'elle présente de nombreux avantages :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:18
 msgid ""
 "Better integration with the engine, so less hassle importing and editing "
 "from an external tool."
 msgstr ""
+"Meilleure intégration avec le moteur, donc moins de problèmes d'importation "
+"et d'édition depuis un outil externe."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:19
 msgid ""
 "Ability to control particle systems, shaders, sounds, call scripts, colors, "
 "transparency, etc. in animations."
 msgstr ""
+"Possibilité de contrôler les systèmes de particules, les shaders, les sons, "
+"les scripts d'appel, les couleurs, la transparence, etc. dans les animations."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:20
 msgid ""
 "The built-in skeletal system in Godot is very efficient and designed for "
 "performance."
 msgstr ""
+"Le système de squelette intégré dans Godot est très efficace et conçu pour "
+"la performance."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:22
 msgid "The following tutorial will, then, explain 2D skeletal deformations."
 msgstr ""
+"Le tutoriel suivant expliquera donc les déformations de squelette en 2D."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:27
 msgid ""
 "Before starting, it is advised to go through the :ref:`doc_cutout_animation` "
 "tutorial to gain a general understanding of animating within Godot."
 msgstr ""
+"Avant de commencer, il est conseillé de passer par le tutoriel :ref:"
+"`doc_cutout_animation` pour avoir une compréhension générale de l'animation "
+"dans Godot."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:30
 msgid ""
@@ -57963,6 +58122,9 @@ msgid ""
 "character. Download it from :download:`gBot_pieces.png <img/gBot_pieces."
 "png>` or save the image below."
 msgstr ""
+"Pour ce tutoriel, nous utiliserons une seule image pour construire notre "
+"personnage. Téléchargez-la à partir de :download:`gBot_pieces.png <img/"
+"gBot_pieces.png>` ou enregistrez l'image ci-dessous."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:35
 msgid ""
@@ -57970,6 +58132,9 @@ msgid ""
 "`gBot_complete.png <img/gBot_complete.png>` to have a good reference for "
 "putting the different pieces together."
 msgstr ""
+"Il est également conseillé de télécharger l'image finale du personnage : "
+"download:`gBot_complete.png <img/gBot_complete.png>` pour avoir une bonne "
+"référence pour assembler les différents morceaux."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:41
 msgid "Creating the polygons"
@@ -57981,40 +58146,56 @@ msgid ""
 "character, you may want to use a ``KinematicBody2D``). For ease of use, an "
 "empty 2D node is created as a root for the polygons."
 msgstr ""
+"Créez une nouvelle scène pour votre modèle (si c'est un personnage animé, "
+"vous pouvez utiliser un ``KinematicBody2D``). Pour faciliter l'utilisation, "
+"un nœud 2D vide est créé comme racine pour les polygones."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:46
 msgid ""
 "Begin with a ``Polygon2D`` node. There is no need to place it anywhere in "
 "the scene for now, so simply create it like this:"
 msgstr ""
+"Commencez par un nœud ``Polygon2D``. Il n'est pas nécessaire de le placer "
+"quelque part dans la scène pour l'instant, alors créez-le simplement comme "
+"ceci :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:50
 msgid ""
 "Select it and assign the texture with the character pieces you have "
 "downloaded before:"
 msgstr ""
+"Sélectionnez-le et assignez la texture avec les morceaux de personnage que "
+"vous avez téléchargés auparavant :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:54
 msgid ""
 "Drawing a polygon directly is not advised. Instead, open the \"UV\" dialog "
 "for the polygon:"
 msgstr ""
+"Il n'est pas conseillé de dessiner un polygone directement. Au lieu de cela, "
+"ouvrez la boîte de dialogue \"UV\" pour le polygone :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:58
 msgid ""
 "Head over to the *Points* mode, select the pencil and draw a polygon around "
 "the desired piece:"
 msgstr ""
+"Passez en mode *Points*, sélectionnez le crayon et dessinez un polygone "
+"autour de la pièce désirée :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:62
 msgid ""
 "Duplicate the polygon node, rename it properly, enter the \"UV\" dialog "
 "again and replace the old polygon with another one in the new desired piece."
 msgstr ""
+"Dupliquer le nœud polygone, renommer le correctement, entrer à nouveau dans "
+"le dialogue \"UV\" et remplacer l'ancien polygone par un autre dans la "
+"nouvelle pièce désirée."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:66
 msgid "Keep doing this until all pieces have been mapped."
 msgstr ""
+"Continuez à faire ça jusqu'à ce que tous les morceaux soient cartographiés."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:70
 msgid ""
@@ -58022,6 +58203,9 @@ msgid ""
 "in the original texture. This is because (by default) when you draw a "
 "polygon, the UV and points are the same."
 msgstr ""
+"Vous remarquerez que les pièces pour les nœuds apparaissent dans la même "
+"disposition que dans la texture originale. C'est parce que (par défaut) "
+"quand vous dessinez un polygone, les UV et les points sont les mêmes."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:73
 msgid ""
@@ -58029,12 +58213,19 @@ msgid ""
 "There is no need to change pivots, so don't bother making sure rotation "
 "pivots for each piece are right; you can leave them be for now."
 msgstr ""
+"Réorganisez les pièces et construisez le personnage. Ça devrait être assez "
+"rapide. Il n'est pas nécessaire de changer les pivots, donc ne vous embêtez "
+"pas à vous assurer que les pivots de rotation de chaque pièce sont "
+"corrects ; vous pouvez les laisser tels quels pour le moment."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:78
 msgid ""
 "Ah, the visual order of the pieces is not correct yet, as some are covering "
 "wrong pieces. Rearrange the order of the nodes to fix this:"
 msgstr ""
+"Ah, l'ordre visuel des pièces n'est pas encore correct, car certaines "
+"couvrent de mauvaises pièces. Réorganisez l'ordre des nœuds pour régler ce "
+"problème :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:82
 msgid ""
@@ -58050,6 +58241,8 @@ msgid ""
 "Create a ``Skeleton2D`` node as a child of the root node. This will be the "
 "base of our skeleton:"
 msgstr ""
+"Créez un nœud ``Skeleton2D`` en tant qu'enfant du nœud racine. Ce sera la "
+"base de notre squelette :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:91
 msgid ""
@@ -58057,10 +58250,14 @@ msgid ""
 "(usually skeletons start here). The bone will be pointing to the right, but "
 "you can ignore this for now."
 msgstr ""
+"Créez un nœud ``Bone2D`` en tant qu'enfant du squelette. Mettez-le sur la "
+"hanche (habituellement les squelettes commencent ici). L'os pointera vers la "
+"droite, mais vous pouvez l'ignorer pour l'instant."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:96
 msgid "Keep creating bones in hierarchy and naming them accordingly."
 msgstr ""
+"Continuez à créer des os dans la hiérarchie et à les nommer en conséquence."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:100
 msgid ""
@@ -58068,6 +58265,10 @@ msgid ""
 "short and pointing to the right. This is normal for bones without children. "
 "The length of *tip* bones can be changed with a property in the inspector:"
 msgstr ""
+"A la fin de cette chaîne, il y aura un nœud *jaw* (mâchoire). Il est, encore "
+"une fois, très court et pointe vers la droite. C'est normal pour des os sans "
+"enfants. La longueur des os de *pointe* peut être modifiée avec une "
+"propriété dans l'inspecteur :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:105
 msgid ""
@@ -73828,14 +74029,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/index.rst:2
-#, fuzzy
 msgid "VR starter tutorial"
 msgstr "Tutoriel pour commencer en VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:4
-#, fuzzy
 msgid "VR starter tutorial part 1"
-msgstr "Tutoriel pour commencer en VR première partie"
+msgstr "Tutoriel pour commencer en VR partie 1"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:11
 msgid ""
@@ -75729,9 +75928,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:4
-#, fuzzy
 msgid "VR starter tutorial part 2"
-msgstr "Tutoriel pour commencer en VR première partie"
+msgstr "Tutoriel pour commencer en VR partie 2"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:11
 msgid ""
