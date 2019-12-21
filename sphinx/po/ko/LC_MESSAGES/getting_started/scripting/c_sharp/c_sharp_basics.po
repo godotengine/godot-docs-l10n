@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,10 +51,11 @@ msgstr ""
 "션 <doc_scripting>`\\ 을 (다시) 확인하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:21
+#, fuzzy
 msgid ""
 "C# is a high-level programming language developed by Microsoft. In Godot, it "
-"is implemented with the Mono 5.x .NET framework, including full support for "
-"C# 7.0. Mono is an open source implementation of Microsoft's .NET Framework "
+"is implemented with the Mono 6.x .NET framework, including full support for "
+"C# 8.0. Mono is an open source implementation of Microsoft's .NET Framework "
 "based on the ECMA standards for C# and the Common Language Runtime. A good "
 "starting point for checking its capabilities is the `Compatibility <http://"
 "www.mono-project.com/docs/about-mono/compatibility/>`_ page in the Mono "
@@ -162,13 +163,15 @@ msgid "Configuring an external editor"
 msgstr "외부 편집기 구성하기"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:79
+#, fuzzy
 msgid ""
 "C# support in Godot's script editor is minimal. Consider using an external "
 "IDE or editor, such as  `Visual Studio Code <https://code.visualstudio.com/"
 ">`_ or MonoDevelop. These provide autocompletion, debugging, and other "
 "useful features for C#. To select an external editor in Godot, click on "
 "**Editor → Editor Settings** and scroll down to **Mono**. Under **Mono**, "
-"click on **Editor**, and select your external editor of choice."
+"click on **Editor**, and select your external editor of choice. Godot "
+"currently supports the following external editors:"
 msgstr ""
 "Godot의 스크립트 편집기에서 C# 지원은 최소한입니다. `Visual Studio Code "
 "<https://code.visualstudio.com/>`_\\ 나 MonoDevelop과 같은 외부 IDE나 편집기"
@@ -177,7 +180,25 @@ msgstr ""
 "**편집기 → 편집기 설정**\\ 으로 가서 **Mono**\\ 로 내려갑니다. **Mono**\\ 에"
 "서 **Editor**\\ 를 클릭하면 외부 편집기를 선택하는 페이지가 나타납니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:88
+msgid "Visual Studio Code"
+msgstr "Visual Studio Code"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:89
+#, fuzzy
+msgid "MonoDevelop"
+msgstr "KDevelop"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:90
+#, fuzzy
+msgid "Visual Studio for Mac"
+msgstr "Visual Studio Code"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:91
+msgid "JetBrains Rider"
+msgstr "JetBrains Rider"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:93
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
@@ -187,11 +208,11 @@ msgstr ""
 "marketplace.visualstudio.com/items?itemName=ms-vscode.csharp>`_\\ 을 설치하"
 "여 문법 하이라이트 효과와 IntelliSense같은 기능을 사용하는 것을 잊지마세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:98
 msgid "Creating a C# script"
 msgstr "C# 스크립트 만들기"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:100
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting ``Attach script`` in the context menu of a node in "
@@ -200,7 +221,7 @@ msgstr ""
 "Godot를 위한 C# 설정이 성공적으로 마친 후, 씬의 노드 메뉴에서 ``스크립트 붙이"
 "기``\\ 를 눌렀을 때, 다음 설정이 보여야 합니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:105
 msgid ""
 "Note that while some specifics change, most concepts work the same when "
 "using C# for scripting. If you're new to Godot, you may want to follow the "
@@ -213,11 +234,11 @@ msgstr ""
 "리얼을 정독하시는 것이 좋습니다. 문서의 일부는 C# 예제가 부족하지만, 대부분"
 "은 일찍이 GDScript에서 옮길 수 있습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:106
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:112
 msgid "Project setup and workflow"
 msgstr "프로젝트 설정과 작업 흐름"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:108
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:114
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
 "for your Godot project. This includes generating a C# solution (``.sln``) "
@@ -236,7 +257,7 @@ msgstr ""
 "리 시스템의 무시 목록에 쉽게 추가할 수 있습니다. 문제를 해결할 때, ``.mono`` "
 "폴더를 삭제하고 다시 만드는 것이 때로는 도움이 됩니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:117
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:123
 msgid ""
 "Note that currently, there are some issues where Godot and the C# project "
 "don't stay in sync; if you delete, rename or move a C# script, the change "
@@ -247,7 +268,7 @@ msgstr ""
 "제, 이름 변경, 이동을 한다면, 변경사항이 C# 프로젝트 파일에 반영되지 않을지"
 "도 모릅니다. 이 경우, 수동으로 C# 프로젝트 파일을 편집해야 할 것입니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:122
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
 msgid ""
 "For example, if you created a script (e.g. ``Test.cs``) and delete it in "
 "Godot, compilation will fail because the missing file is still expected to "
@@ -260,7 +281,7 @@ msgstr ""
 "순히 ``.csproj`` 파일을 열고 ``ItemGroup``\\ 을 볼수 있고, 다음과 같은 글이 "
 "있어야 합니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:142
 msgid ""
 "Simply remove that line and your project should build correctly again. Same "
 "for renaming and moving things, simply rename and move them in the project "
@@ -269,18 +290,18 @@ msgstr ""
 "단순히 이 줄을 삭제하면 프로젝트는 다시 올바르게 빌드됩니다. 이름 변경과 이동"
 "도 이와 마찬가지로, 필요에 따라 이름을 바꾸고 프로젝트 파일로 옮깁니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
 msgid "Example"
 msgstr "예제"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:143
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr ""
 "여기 몇 가지 주석으로 작업이 이루어지는 방법을 설명하는 공백 C# 스크립트가 있"
 "습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:170
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:176
 msgid ""
 "As you can see, functions normally in global scope in GDScript like Godot's "
 "``print`` function are available in the ``GD`` class which is part of the "
@@ -294,7 +315,7 @@ msgstr ""
 "`@GDScript <class_@gdscript>`\\ 와 :ref:`@GlobalScope <class_@globalscope>`"
 "\\ 에서 클래스 참조 페이지를 참고하세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
 #, fuzzy
 msgid ""
 "Keep in mind that the class you wish to attach to your node should have the "
@@ -306,11 +327,11 @@ msgstr ""
 "요. 그렇지 않으면, 다음과 같은 오류를 받게 되며 씬을 실행할 수 없을 것입니"
 "다: *\"스크립트 res://XXX.cs에서 클래스 XXX를 찾을 수 없음\"*"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
 msgid "General differences between C# and GDScript"
 msgstr "C#과 GDScript와의 일반적인 차이"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:185
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:191
 msgid ""
 "The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++. "
 "Where possible, fields and getters/setters have been converted to "
@@ -321,15 +342,15 @@ msgstr ""
 "니다. 가능하면 공백과 getters/setters이 속성으로 변환됩니다. 일반적으로 C# "
 "Godot API는 합리적으로 가능한 것처럼 관용적이도록 노력합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:195
 msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr "더 자세한 내용은, :ref:`doc_c_sharp_differences` 페이지를 참고하세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:192
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:198
 msgid "Current gotchas and known issues"
 msgstr "현재 문제와 알려진 문제"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
 msgid ""
 "As C# support is quite new in Godot, there are some growing pains and things "
 "that need to be ironed out. Below is a list of the most important issues you "
@@ -342,7 +363,7 @@ msgstr ""
 "합니다, 하지만 의심스러운 점이 있다면 공식 `Mono 이슈를 위한 이슈 트래커 "
 "<https://github.com/godotengine/godot/labels/topic%3Amono>`_\\ 를 살펴보세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
 msgid ""
 "As explained above, the C# project isn't always kept in sync automatically "
 "when things are deleted, renamed or moved in Godot (`#12917 <https://github."
@@ -352,13 +373,13 @@ msgstr ""
 "상 동기화를 자동으로 하지는 않습니다 (`#12917 <https://github.com/"
 "godotengine/godot/issues/12917>`_)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:203
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:209
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
 "편집기 플러그인을 작성하는 것은 가능하지만, 현재로썬 상당히 복잡합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:210
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
@@ -366,7 +387,7 @@ msgstr ""
 "내보낸 변수를 제외하고, 현재 상태는 핫 리로드 중일 때 저장되고 복원되지 않습"
 "니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
 msgid ""
 "Exporting Mono projects is only supported for desktop platforms (Linux, "
 "Windows and macOS). Android, iOS, HTML5 and UWP are not currently supported "
@@ -382,7 +403,7 @@ msgstr ""
 "github.com/godotengine/godot/issues/20270>`_ `#20271 <https://github.com/"
 "godotengine/godot/issues/20271>`_)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
@@ -390,7 +411,7 @@ msgstr ""
 "첨부된 C# 스크립트가 파일 이름과 일치하는 클래스 이름을 가진 클래스를 참조해"
 "야 합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:214
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:220
 msgid ""
 "There are some methods such as ``Get()``/``Set()``, ``Call()``/"
 "``CallDeferred()`` and signal connection method ``Connect()`` that rely on "
@@ -400,11 +421,11 @@ msgid ""
 "can use any custom properties or methods without this limitation."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:222
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
 msgid "Performance of C# in Godot"
 msgstr "Godot에서 C#의 퍼포먼스"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:224
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:230
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
 "bunnymark>`_, the performance of C# in Godot — while generally in the same "
@@ -421,11 +442,11 @@ msgstr ""
 "팅 작업에 충분히 빠릅니다. C#이 더 빠르지만, Godot에 대화하려면 마샬링이 필요"
 "합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:232
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:238
 msgid "Using NuGet packages in Godot"
 msgstr "Godot에서 NuGet 패키지 사용하기"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:234
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:240
 msgid ""
 "`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
 "Godot, as with any C# project. Many IDEs are able to add packages directly. "
@@ -436,7 +457,7 @@ msgstr ""
 "용할 수 있습니다. 많은 IDE는 직접 패키지를 추가할 수 있습니다. 또한 프로젝트 "
 "루트에 있는 ``.csproj`` 파일에 패키지 참조를 수동으로 추가할 수 있습니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:249
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:255
 msgid ""
 "Whenever packages are added or modified, run ``nuget restore`` in the root "
 "of the project directory. To ensure that NuGet packages will be available "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,16 +29,16 @@ msgstr ""
 "이 페이지는 C#과 Godot에서 일반적으로 사용되는 기능과 어떻게 이 둘이 함께 사"
 "용되는 지에 대한 개요입니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:10
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
 msgid "Type conversion and casting"
 msgstr "형 변환(Type conversion)과 캐스팅(casting)"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:14
 msgid ""
 "C# is a statically typed language. Therefore, you can't do the following:"
 msgstr "C#은 정적으로 타입형 언어입니다. 그러므로 다음을 할 수 없습니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:19
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:21
 msgid ""
 "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
 "convert it to the desired derived type, ``Sprite`` in this case."
@@ -46,15 +46,15 @@ msgstr ""
 "``Node`` 인스턴스를 반환하는 ``GetNode()`` 메서드. ``Sprite``\\ 의 경우, 원하"
 "는 파생 타입을 명시적으로 변환해야 합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:22
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
 msgid "For this, you have various options in C#."
 msgstr "이를 위해, C#에서는 다양한 설정이 있습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
 msgid "**Casting and Type Checking**"
 msgstr "**캐스트(Cast)와 타입 체크(Type Check)하기**"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:28
 msgid ""
 "Throws ``InvalidCastException`` if the returned node cannot be cast to "
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
@@ -64,11 +64,11 @@ msgstr ""
 "발생시킵니다. 실패하지 않는다고 확신하면 ``as`` 연산자 대신에 그것을 사용할 "
 "것입니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:34
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
 msgid "**Using the AS operator**"
 msgstr "**AS 연산자 사용하기**"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:38
 #, fuzzy
 msgid ""
 "The ``as`` operator returns ``null`` if the node cannot be cast to Sprite, "
@@ -77,16 +77,16 @@ msgstr ""
 "노드가 Sprite를 캐스트 하지 않는다면 ``as`` 연산자는 null을 반환합니다, 그리"
 "고 그 이유에서, 이것이 값 타입과 함께 사용될 수 없습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:45
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid "**Using the generic methods**"
 msgstr "**일반 메서드 사용하기**"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
 msgid ""
 "Generic methods are also provided to make this type conversion transparent."
 msgstr "일반 메서드는 이 타입 변환을 투명하게 만들기 위해 제공됩니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:51
 msgid ""
 "``GetNode<T>()`` casts the node before returning it. It will throw an "
 "``InvalidCastException`` if the node cannot be cast to the desired type."
@@ -94,7 +94,7 @@ msgstr ""
 "``GetNode<T>()``\\ 은 반환하기 전에 노드를 캐스트 합니다. 노드가 원하는 타입"
 "으로 캐스트 되지 않는다면 ``InvalidCastException``\\ 을 발생시킵니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:56
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:58
 msgid ""
 "``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
 "the node cannot be cast to the desired type."
@@ -102,11 +102,11 @@ msgstr ""
 "``GetNodeOrNull<T>()``\\ 는 ``as`` 연산자를 사용하고 노드가 원하는 타입으로 "
 "캐스트 되지 않는다면 ``null``\\ 을 반환합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:64
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
 msgid "**Type checking using the IS operator**"
 msgstr "**IS 연산자를 사용하여 타입 체크하기**"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:68
 msgid ""
 "To check if the node can be cast to Sprite, you can use the ``is`` operator. "
 "The ``is`` operator returns false if the node cannot be cast to Sprite, "
@@ -116,7 +116,7 @@ msgstr ""
 "다. Sprite가 캐스트 되지 않는다면 ``is`` 연산자는 거짓을 반환하고, 그렇지 않"
 "으면 참을 반환합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:77
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:79
 msgid ""
 "For more advanced type checking, you can look into `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
@@ -124,11 +124,11 @@ msgstr ""
 "더 많은 고급 타입 체크하기의 경우, `패턴 일치 <https://docs.microsoft.com/ko-"
 "kr/dotnet/csharp/pattern-matching>`_\\ 에서 찾아볼 수 있습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:82
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
 msgid "C# signals"
 msgstr "C# 시그널"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:86
 msgid ""
 "For a complete C# example, see the **Handling a signal** section in the step "
 "by step :ref:`doc_scripting` tutorial."
@@ -136,14 +136,14 @@ msgstr ""
 "완전한 C# 예제를 위해, 단계별 :ref:`doc_scripting` 튜토리얼에서 **시그널 다루"
 "기**\\ 를 참고하세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:86
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:88
 msgid ""
 "Declaring a signal in C# is done with the ``[Signal]`` attribute on a "
 "delegate."
 msgstr ""
 "C#에서 시그널 선언은 델리게이트(delegate)에서 ``[Signal]`` 속성으로 됩니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:96
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:98
 msgid ""
 "These signals can then be connected either in the editor or from code with "
 "``Connect``."
@@ -151,11 +151,11 @@ msgstr ""
 "이 시그널들은 ``Connect``\\ 로 코드나 편집기에서 한 쪽으로 연결될 수 있습니"
 "다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:116
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:118
 msgid "Emitting signals is done with the ``EmitSignal`` method."
 msgstr "``EmitSignal`` 메서드로 시그널을 방출할 수 있습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:126
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
 msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
@@ -163,13 +163,13 @@ msgstr ""
 "``nameof`` 키워드로 항상 시그널 이름을 참조할 수 있다는 것을 명심하세요 델리"
 "게이트 자체에 적용됨)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:130
 msgid ""
 "It is possible to bind values when establishing a connection by passing an "
 "object array."
 msgstr "객체 배열을 전달함으로써 연결을 지을 때 값들을 묶을 수 있습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:148
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:150
 msgid ""
 "Signals support parameters and bound values of all the `built-in types "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/"
@@ -185,7 +185,7 @@ msgstr ""
 "스텀 데이터 객체는 `Godot.Object`\\ 나 그 하위 클래스에서 확장해야 할 것입니"
 "다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:160
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:162
 msgid ""
 "Finally, signals can be created by calling ``AddUserSignal``, but be aware "
 "that it should be executed before any use of said signals (with ``Connect`` "

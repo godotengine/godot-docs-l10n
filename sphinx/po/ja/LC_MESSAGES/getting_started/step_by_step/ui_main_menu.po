@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,13 +139,12 @@ msgid "There are two ways to design your UI in Godot. You can:"
 msgstr "GodotでUIをデザインするには2つの方法があります。次のことができます:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
-#, fuzzy
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
 "すべてを1つのシーンに構築し、最終的にはいくつかのブランチを再利用可能なシーン"
-"として保存します"
+"として保存する方法。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
 #, fuzzy
@@ -153,8 +152,8 @@ msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
-".再利用可能なコンポーネントのテンプレートシーンを作成し、ベースシーンから継承"
-"する特定のコンポーネントを作成する"
+"再利用可能なコンポーネントのテンプレートシーンを作成し、ベースシーンから継承"
+"する特定のコンポーネントを作成する方法。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -163,19 +162,18 @@ msgid ""
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
-"最初の方法を使用します。最初のバージョンのUIが期待どおりに動作しない場合があ"
-"るためです。パーツを廃棄してコンポーネントを再設計することがあります。すべて"
-"が正常に機能していることが確認できたら、次に示すように、一部のパーツを再利用"
-"可能にすることは容易です。"
+"私たちは(大抵の場合)最初の方法を使用します。あなたが作る最初のバージョンのUI"
+"はあなたの期待どおりに動作しない場合があり、パーツを廃棄してコンポーネントを"
+"再度作り直すことがある為です。(最終的に)すべてが正常に機能していることが確認"
+"できたら、次に示すように、一部のパーツを再利用可能にすることは容易です。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
-#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
-"Godotにあるファイル グラフィックはラフデザインよりもきれいに見えますが、それ"
-"でもプレースホルダです"
+"Godotにあるファイル。このグラフィックはラフデザインよりもきれいに見えますが、"
+"まだその代替品にすぎません。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -199,28 +197,26 @@ msgid "Here are my three rules of thumb to find the right containers:"
 msgstr "適切なコンテナを見つけるための3つの経験則を以下に示します:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
-#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button."
 msgstr ""
-"UIを、すべてを含む最大のボックスから、ラベルの付いたバー、パネル、ボタンな"
-"ど、1つのウィジェットを含む最小のボックスまでネストされたボックスに分割します"
+"UIを、すべてを含む最大のボックスから、ラベルの付いたバー、パネル、ボタンなど"
+"の、1つのウィジェットを含む最小のボックスまで、ボックスに階層構造を持たせて分"
+"割します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
-#, fuzzy
 msgid "If there's some padding around an area, use a ``MarginContainer``."
-msgstr "領域の周囲に余白がある場合は、``MarginContainer`` を使用します"
+msgstr "領域の周囲に余白がある場合は、``MarginContainer`` を使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
-#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
 "要素が行または列に配置されている場合は、 ``HBoxContainer`` または "
-"``VBoxContainer`` を使用します"
+"``VBoxContainer`` を使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
@@ -246,9 +242,8 @@ msgstr ""
 "の列では、 ``CenterContainer`` を使用して図の中央に配置します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
-#, fuzzy
 msgid "Interface building blocks, broken down using the three rules of thumb."
-msgstr "3つの経験則に基づいて分類されたインタフェース構成要素"
+msgstr "3つの経験則に基づいて分類されたインタフェースの構成要素。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -265,13 +260,12 @@ msgid "Prepare the Main Menu scene"
 msgstr "メインメニューシーンの準備"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
-#, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
-"メインメニューを作りましょう。単一のシーンで構築します。空のシーンを作成する"
-"には、「シーンメニュー ->新規シーン」をクリックします。"
+"メインメニューを作成してみましょう。単一のシーンで構築します。空のシーンを作"
+"成するには「シーンメニュー」 の「新規シーン」をクリックします。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
 msgid ""
@@ -320,8 +314,8 @@ msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
-"コンテナをウィンドウに合わせます。 ビューポートの上のツールバーの中の ``で"
-"Layout`` メニューを開き、最後のオプション ``Full Rect`` を選択します。"
+"コンテナをウィンドウに合わせます。 ビューポートの上のツールバー中の**Layout**"
+"メニューを開き、最後のオプション**Full Rect**を選択します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
 msgid "Add the UI sprites"
@@ -363,7 +357,7 @@ msgid ""
 "the new node selected, press ``Meta+D`` five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
-"``Add Node`` ボタンをクリックするか、キーボードの ``Meta+A`` キーを押しま"
+"**Add Node** ボタンをクリックするか、キーボードの ``Meta+A`` キーを押しま"
 "す。 ``TextureRect`` と入力して対応するノードを検索し、Enterキーを押します。"
 "新しいノードを選択した状態で ``Meta+D`` を5回押して、追加の ``TextureRect`` "
 "インスタンスを5つ作成します。"
@@ -376,10 +370,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
-#, fuzzy
 msgid "The file browser lets you find and load textures."
 msgstr ""
-"ファイルブラウザを使用すると、テクスチャを検索してロードすることができます"
+"ファイルブラウザを使用すると、テクスチャを検索してロードすることができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
 msgid ""
@@ -391,9 +384,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
-#, fuzzy
 msgid "The six nodes with textures loaded."
-msgstr "テクスチャがロードされた6つのノード"
+msgstr "テクスチャがロードされた6つのノード。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
 msgid ""
@@ -441,24 +433,22 @@ msgstr ""
 "す。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
-#, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr ""
-"4つの入れ子になったコンテナと、それとは別にTextureRectノードがあるはずです"
+"4つの入れ子になったコンテナと、それとは別にTextureRectノードがあるはずです。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
 "version note. Drag and drop them into the ``VBoxContainer``. The nodes "
 "should position automatically."
 msgstr ""
-"ノードツリーで、左側にあるすべての `` TextureRect`` ノードを選択します：ロ"
+"ノードツリーで、左側にあるすべての `` TextureRect`` ノードを選択します。注:ロ"
 "ゴ、メニューオプション、バージョンノートです。それらを `` VBoxContainer`` に"
-"ドラッグアンドドロップします。ノードは自動的に配置されます。"
+"ドラッグアンドドロップします。これらのノードは自動的に配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "Containers automatically place and resize textures"

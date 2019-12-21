@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1940,11 +1940,11 @@ msgstr ""
 "internas se definen usando la palabra clave ``class``. Para instanciarlas se "
 "usa la función ``ClassName.new()``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1165
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1167
 msgid "Classes as resources"
 msgstr "Clases como recursos"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1167
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1169
 msgid ""
 "Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
 "They must be loaded from disk to access them in other classes. This is done "
@@ -1959,22 +1959,22 @@ msgstr ""
 "cargada como recurso se hace llamando a la función ``new`` en el objeto de "
 "dicha clase::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1183
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1185
 msgid "Exports"
 msgstr "Exports"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1187
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1189
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
 msgstr ""
 "La documentación sobre exportaciones está ahora en :ref:"
 "`doc_gdscript_exports`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1190
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1192
 msgid "Setters/getters"
 msgstr "Setters/getters"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1192
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1194
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
@@ -1984,7 +1984,7 @@ msgstr ""
 "También se puede querer encapsular para restringir su acceso de determinada "
 "manera."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1195
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1197
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
@@ -1993,7 +1993,7 @@ msgstr ""
 "palabra clave ``setget``. Esta palabra se usa directamente después de la "
 "definición de una variable:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1202
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1204
 #, fuzzy
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
@@ -2011,13 +2011,13 @@ msgstr ""
 "función *getter* (``getterfunc`` arriba) debe de retornar el valor deseado. "
 "A continuación tienes un ejemplo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1216
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1218
 #, fuzzy
 msgid "Either of the *setter* or *getter* functions can be omitted::"
 msgstr ""
 "Cualquiera de las dos funciones, *setter* o *getter*, se pueden omitir:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1223
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1225
 #, fuzzy
 msgid ""
 "Setters and getters are useful when :ref:`exporting variables "
@@ -2027,7 +2027,7 @@ msgstr ""
 "Los Get/Setter son especialmente útiles cuando se exportan variables al "
 "editor en scripts del editor o plugins, para validar la entrada de datos."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1226
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1228
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
@@ -2035,11 +2035,11 @@ msgstr ""
 "Como se ha indicado previamente, los accesos *locales* *no* ejecutan setter "
 "ni getter. Aquí hay una ilustración de esto:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1243
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1245
 msgid "Tool mode"
 msgstr "Modo Tool"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1245
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1247
 #, fuzzy
 msgid ""
 "By default, scripts don't run inside the editor and only the exported "
@@ -2055,7 +2055,7 @@ msgstr ""
 "palabra clave ``tool`` que se deberá escribir en la parte superior del "
 "archivo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1259
 msgid ""
 "Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
 "script (especially the script's owner itself). As tool scripts run their "
@@ -2066,11 +2066,11 @@ msgstr ""
 "que los scripts de herramientas ejecutan su código en el editor, usarlos "
 "incorrectamente puede provocar el bloqueo del editor."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1263
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1265
 msgid "Memory management"
 msgstr "Gestión de la memoria"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1265
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1267
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2088,7 +2088,7 @@ msgstr ""
 "free(). Para evitar ciclos de referencia que no puedan ser liberados, se "
 "proporciona una función ``weakref`` para crear referencias débiles."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1273
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1275
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
@@ -2098,11 +2098,11 @@ msgstr ""
 "``is_instance_valid(instance)`` puede usarse para comprobar si un objeto ha "
 "sido liberado."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1280
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
 msgid "Signals"
 msgstr "Señales"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1284
 #, fuzzy
 msgid ""
 "Signals are a tool to emit messages from an object that other objects can "
@@ -2112,7 +2112,7 @@ msgstr ""
 "desde un objeto que puede ser escuchado por otros de forma genérica. Crea "
 "señales personalizadas para una clase usando la palabra clave ``signal``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1294
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1296
 msgid ""
 "Signals are a `Callback <https://en.wikipedia.org/wiki/"
 "Callback_(computer_programming)>`_ mechanism. They also fill the role of "
@@ -2126,7 +2126,7 @@ msgstr ""
 "lea el `Tutorial del observador <https://gameprogrammingpatterns.com/"
 "observer.html>` _ en el libro electrónico Patrones de programación de juegos."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1301
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1303
 #, fuzzy
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
@@ -2136,7 +2136,7 @@ msgstr ""
 "conectas señales propias de nodos tales como :ref:`class_Button` o :ref:"
 "`class_RigidBody`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1304
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
 msgid ""
 "In the example below, we connect the ``health_depleted`` signal from a "
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
@@ -2146,11 +2146,11 @@ msgstr ""
 "``Character`` a un nodo ``Game``.  Cuando el nodo ``Character`` emite la "
 "señal, el nodo del juego ``_on_Character_health_depleted`` es llamado::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1317
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
 msgid "You can emit as many arguments as you want along with a signal."
 msgstr "Puedes emitir todos los argumentos que necesites con una señal."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1321
 msgid ""
 "Here is an example where this is useful. Let's say we want a life bar on "
 "screen to react to health changes with an animation, but we want to keep the "
@@ -2161,7 +2161,7 @@ msgstr ""
 "animación, pero queremos mantener la interfaz de usuario separada del "
 "jugador en nuestro árbol de escenas."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1323
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1325
 msgid ""
 "In our ``Character.gd`` script, we define a ``health_changed`` signal and "
 "emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
@@ -2170,7 +2170,7 @@ msgid ""
 "method::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1363
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1365
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
@@ -2179,7 +2179,7 @@ msgstr ""
 "los tipos que extienda de esta, como ``Node``, ``KinematicBody``, "
 "``Control``..."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1366
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1368
 msgid ""
 "In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
 "then connect the character, that emits the signal, to the receiver, the "
@@ -2189,7 +2189,7 @@ msgstr ""
 "``barra_de_vida``, los conectamos al personaje, que emite la señal, al "
 "recibidor, en este caso el nodo ``barra_de_vida``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1380
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
@@ -2197,7 +2197,7 @@ msgstr ""
 "Esto permite a la ``barra_de_vida`` reaccionar a los cambios de salud sin "
 "acoplarse al nodo ``personaje``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1383
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1385
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
@@ -2205,7 +2205,7 @@ msgstr ""
 "Puede escribir nombres de argumentos opcionales entre paréntesis después de "
 "la definición de la señal ::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1389
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1391
 msgid ""
 "These arguments show up in the editor's node dock, and Godot can use them to "
 "generate callback functions for you. However, you can still emit any number "
@@ -2217,7 +2217,7 @@ msgstr ""
 "embargo, usted puede seguir emitiendo cualquier número de argumentos cuando "
 "emite señales, está en sus manos emitir los valores correctos."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1395
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1397
 #, fuzzy
 msgid ""
 "GDScript can bind an array of values to connections between a signal and a "
@@ -2231,7 +2231,7 @@ msgstr ""
 "realidad específicos a la conexión, en vez de serlos para la señal o el "
 "método, queriendo decir que cada conexión tiene asociaciones únicas."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1400
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1402
 msgid ""
 "You can use this array of values to add extra constant information to the "
 "connection if the emitted signal itself doesn't give you access to all the "
@@ -2241,7 +2241,7 @@ msgstr ""
 "demás a la conexión si la señal emitida por sí misma no le da acceso a todos "
 "los datos que necesita."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1406
 msgid ""
 "Building on the example above, let's say we want to display a log of the "
 "damage taken by each character on the screen, like ``Player1 took 22 damage."
@@ -2250,17 +2250,17 @@ msgid ""
 "can add the character's name in the binds array argument::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1418
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1420
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1430
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
 msgid "Coroutines with yield"
 msgstr "Corrutinas con yield"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1434
 #, fuzzy
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
@@ -2279,13 +2279,13 @@ msgstr ""
 "retornará lo que sea que la función retorne. Una vez resumido, el estado del "
 "objeto se tornará inválido. Aquí hay un ejemplo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1452
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1472
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1454
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1474
 #, fuzzy
 msgid "Will print::"
 msgstr "Imprimirá:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1458
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1460
 #, fuzzy
 msgid ""
 "It is also possible to pass values between ``yield()`` and ``resume()``, for "
@@ -2293,11 +2293,11 @@ msgid ""
 msgstr ""
 "También es posible pasar valores entre yield() y resume(), por ejemplo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1479
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
 msgid "Coroutines & signals"
 msgstr "Corrutinas y Señales"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1483
 #, fuzzy
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
@@ -2309,7 +2309,7 @@ msgstr ""
 "Cuando la señal se recibe, la ejecución continuará. Aquí hay algunos "
 "ejemplos:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1494
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1496
 #, fuzzy
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
@@ -2318,18 +2318,18 @@ msgstr ""
 "Las corrutinas mismas usan la señal ``completed`` cuando pasan a un estado "
 "inválido, por ejemplo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1505
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1507
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr ""
 "``my_func`` sólo continuará la ejecución una vez que se hayan presionado "
 "ambos botones."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1508
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1510
 msgid "Onready keyword"
 msgstr "Palabra clave Onready"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1510
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1512
 #, fuzzy
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
@@ -2343,7 +2343,7 @@ msgstr ""
 "subnodos sólo se pueden obtener cuando se realiza la llamada a un Node."
 "_ready() se ha realizado."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1522
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1524
 #, fuzzy
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
@@ -2357,11 +2357,11 @@ msgstr ""
 "momento en que _ready es ejecutado. Esta palabra reemplaza el código de "
 "abajo en una sola línea:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1530
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1532
 msgid "Assert keyword"
 msgstr "Palabra clave Assert"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1532
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2371,7 +2371,7 @@ msgid ""
 "depending on whether the project is run in a debug build."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1544
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1546
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

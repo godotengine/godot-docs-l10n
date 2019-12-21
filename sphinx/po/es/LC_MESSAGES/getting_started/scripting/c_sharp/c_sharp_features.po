@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,18 +29,18 @@ msgstr ""
 "Esta página provee un resumen acerca de las características comunmente "
 "utilizadas en C# y Godot y cómo son usadas."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:10
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
 msgid "Type conversion and casting"
 msgstr "Conversión de tipo y casting"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:14
 msgid ""
 "C# is a statically typed language. Therefore, you can't do the following:"
 msgstr ""
 "C# es un lenguaje estáticamente tipado, por lo tanto, no puedes hacer lo "
 "siguiente:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:19
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:21
 msgid ""
 "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
 "convert it to the desired derived type, ``Sprite`` in this case."
@@ -48,15 +48,15 @@ msgstr ""
 "El método ``GetNode()`` retorna una instancia ``Node``. Se debe convertir "
 "explícitamente al tipo derivado deseado, ``Sprite`` en este caso."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:22
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
 msgid "For this, you have various options in C#."
 msgstr "Para esto, hay varias opciones en C#."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
 msgid "**Casting and Type Checking**"
 msgstr "**Casting & Chequeo de Tipo**"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:28
 msgid ""
 "Throws ``InvalidCastException`` if the returned node cannot be cast to "
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
@@ -66,11 +66,11 @@ msgstr ""
 "a Sprite. Se utiliza en lugar del operador ``as`` si se está seguro que no "
 "fallará."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:34
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
 msgid "**Using the AS operator**"
 msgstr "**Utilizando el operador AS**"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:38
 #, fuzzy
 msgid ""
 "The ``as`` operator returns ``null`` if the node cannot be cast to Sprite, "
@@ -79,18 +79,18 @@ msgstr ""
 "El operador ``as`` retorna null si el nodo no puede ser convertido a Sprite, "
 "y por esta razón no puede ser usado en tipos \"valor\"."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:45
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid "**Using the generic methods**"
 msgstr "**Utilizando métodos genéricos**"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
 msgid ""
 "Generic methods are also provided to make this type conversion transparent."
 msgstr ""
 "Los métodos genéricos se proveen para hacer la conversión de tipo "
 "transparente."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:51
 msgid ""
 "``GetNode<T>()`` casts the node before returning it. It will throw an "
 "``InvalidCastException`` if the node cannot be cast to the desired type."
@@ -99,7 +99,7 @@ msgstr ""
 "una ``InvalidCastException`` si el nodo no puede ser convertido al tipo "
 "deseado."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:56
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:58
 msgid ""
 "``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
 "the node cannot be cast to the desired type."
@@ -107,11 +107,11 @@ msgstr ""
 "``GetNodeOrNull<T>()`` usa el operador ``as`` y retornará ``null`` si el "
 "nodo no puede ser convertido al tipo deseado."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:64
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
 msgid "**Type checking using the IS operator**"
 msgstr "**Chequeo de tipo usando el operador IS**"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:68
 msgid ""
 "To check if the node can be cast to Sprite, you can use the ``is`` operator. "
 "The ``is`` operator returns false if the node cannot be cast to Sprite, "
@@ -121,7 +121,7 @@ msgstr ""
 "operador ``is``. Este operador retorna false si el nodo no puede ser "
 "convertido a Sprite, de otro modo, retorna true."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:77
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:79
 msgid ""
 "For more advanced type checking, you can look into `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
@@ -129,11 +129,11 @@ msgstr ""
 "Para tipos avanzados de comprobaciones, puedes mirar  `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:82
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
 msgid "C# signals"
 msgstr "Señales en C#"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:86
 msgid ""
 "For a complete C# example, see the **Handling a signal** section in the step "
 "by step :ref:`doc_scripting` tutorial."
@@ -141,14 +141,14 @@ msgstr ""
 "Para ejemplos completos de C#, ver la sección **Manipulando una señal** en "
 "el tutorial paso a paso :ref:`doc_scripting`."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:86
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:88
 msgid ""
 "Declaring a signal in C# is done with the ``[Signal]`` attribute on a "
 "delegate."
 msgstr ""
 "Una señal en C# se declara mediante el atributo ``[Signal]`` en un delegate."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:96
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:98
 msgid ""
 "These signals can then be connected either in the editor or from code with "
 "``Connect``."
@@ -156,11 +156,11 @@ msgstr ""
 "Esas señales pueden ser conectadas mediante el editor o por códibo con "
 "``Connect``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:116
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:118
 msgid "Emitting signals is done with the ``EmitSignal`` method."
 msgstr "Las señales se emiten con el método ``EmitSignal``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:126
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
 msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
@@ -168,7 +168,7 @@ msgstr ""
 "Tener en cuenta que se puede hacer referenciar a una señal con la palabra "
 "clave ``nameof`` (aplicado al delegate)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:130
 msgid ""
 "It is possible to bind values when establishing a connection by passing an "
 "object array."
@@ -176,7 +176,7 @@ msgstr ""
 "Es posible vincular valores al establecer una conexión pasando un objeto "
 "array."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:148
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:150
 msgid ""
 "Signals support parameters and bound values of all the `built-in types "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/"
@@ -192,7 +192,7 @@ msgstr ""
 "compatible automaticamente, pero objetos de datos personalizados deberán "
 "extender de `Godot.Object` o alguna de sus subclases."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:160
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:162
 msgid ""
 "Finally, signals can be created by calling ``AddUserSignal``, but be aware "
 "that it should be executed before any use of said signals (with ``Connect`` "

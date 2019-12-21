@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgstr "Utilize o tempo pretérito:"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:245
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:260
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:272
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:329
 msgid "GDScript"
 msgstr "GDScript"
 
@@ -95,7 +95,7 @@ msgstr "GDScript"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:245
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:260
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:272
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:329
 msgid "C#"
 msgstr "C#"
 
@@ -210,7 +210,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:132
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:143
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:316
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:313
 msgid "Example:"
 msgstr "Exemplo:"
 
@@ -635,23 +635,14 @@ msgid "Communicating with other scripting languages"
 msgstr "Comunicando com outras linguagens de script"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
-#, fuzzy
-msgid ""
-"The methods ``object Object.Call(string method, params object[] args)``, "
-"``object Object.Get(string field)`` and ``object Object.Set(string field, "
-"object value)`` are provided to communicate with instances of other "
-"scripting languages via the Variant API."
+msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
 msgstr ""
-"Os métodos ``object Object.call(string method, params object[] args)``, "
-"``object Object.get(string field)`` e ``object Object.set(string field, "
-"object value)`` são fornecidos para se comunicar com as instâncias de outras "
-"linguagens de script através da API Variant."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:309
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:306
 msgid "Yield"
 msgstr "Conceder"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:311
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:308
 #, fuzzy
 msgid ""
 "Something similar to GDScript's ``yield`` with a single parameter can be "
@@ -662,7 +653,7 @@ msgstr ""
 "obtido com a palavra-chave `yield <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield> `_ do C#."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:314
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:311
 #, fuzzy
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
@@ -671,11 +662,11 @@ msgstr ""
 "O equivalente a yield em um sinal pode ser obtido com async/await e ``Godot."
 "Object.ToSignal``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:324
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:321
 msgid "Other differences"
 msgstr "Outras diferenças"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
 #, fuzzy
 msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
@@ -684,52 +675,52 @@ msgstr ""
 "``pré-carregamento``, da forma que funciona no GDScript, não está disponível "
 "em C#. Ao invés disso, use ``GD.Load`` ou ``ResourceLoader.Load``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:329
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
 msgid "Other differences:"
 msgstr "Outras diferenças:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 #, fuzzy
 msgid "``Color8``"
 msgstr "Color8"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 #, fuzzy
 msgid "``Color.Color8``"
 msgstr "Color.Color8"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 #, fuzzy
 msgid "``is_inf``"
 msgstr "is_inf"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 #, fuzzy
 msgid "``float.IsInfinity``"
 msgstr "float.IsInfinity"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:336
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 #, fuzzy
 msgid "``is_nan``"
 msgstr "is_nan"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:336
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 #, fuzzy
 msgid "``float.IsNaN``"
 msgstr "float.IsNaN"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:337
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
 #, fuzzy
 msgid "``dict2inst``"
 msgstr "dict2inst"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:337
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:338
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 #, fuzzy
 msgid "TODO"
 msgstr "? TODO"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:338
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 #, fuzzy
 msgid "``inst2dict``"
 msgstr "inst2dict"

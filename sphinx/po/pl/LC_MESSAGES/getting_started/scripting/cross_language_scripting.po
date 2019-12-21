@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:4
+#, fuzzy
+msgid "Cross-language scripting"
+msgstr "Tworzenie skryptu"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:6
+msgid ""
+"Godot allows you to mix and match scripting languages to suit your needs. "
+"This means a single project can define nodes in both C# and GDScript. This "
+"page will go through the possible interactions between two nodes writen in "
+"different languages."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:11
+msgid ""
+"The following two scripts will be used as references throughout this page."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:66
+#, fuzzy
+msgid "Instantiating nodes"
+msgstr "Instancjowanie scen"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:68
+msgid ""
+"If you're not using nodes from the scene tree, you'll probably want to "
+"instantiate nodes directly from the code."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:72
+#, fuzzy
+msgid "Instantiating C# nodes from GDScript"
+msgstr "Ładowanie go do GDScript"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:74
+msgid ""
+"Using C# from GDScript doesn't need much work. Once loaded (see :ref:"
+"`doc_gdscript_classes_as_resources`) the script can be instantiated with :"
+"ref:`new() <class_CSharpScript_method_new>`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:86
+msgid ""
+"When creating .cs scripts you should always keep in mind that the class "
+"Godot will use is the one named like the .cs file itself. If that class does "
+"not exist in the file, you'll see the following error: ``Invalid call. "
+"Nonexistent function `new` in base``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:91
+msgid "For example, MyCoolNode.cs should contain a class named MyCoolNode."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:93
+msgid ""
+"You also need to check your .cs file is referenced in the project's .csproj "
+"file. Otherwise, the same error will occur."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:97
+#, fuzzy
+msgid "Instantiating GDScript nodes from C#"
+msgstr "Interpolacja"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:99
+msgid ""
+"From the C# side, everything work the same way. Once loaded, the GDScript "
+"can be instantiated with :ref:`GDScript.New() <class_GDScript_method_new>`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:107
+msgid ""
+"Here we are using an :ref:`class_Object` but you can use type convertion "
+"like explained in :ref:`doc_c_sharp_features_type_conversion_and_casting`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:111
+#, fuzzy
+msgid "Accessing fields"
+msgstr "Dostęp do węzłów sceny"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:114
+#, fuzzy
+msgid "Accessing C# fields from GDScript"
+msgstr "Ładowanie go do GDScript"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:116
+msgid ""
+"Accessing C# fields from GDScript is straightforward, you shouldn't have "
+"anything to worry about."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:128
+msgid ""
+"Note that it doesn't matter if the field is defined as a property or an "
+"attribute, but trying to set a value on a property that does not define a "
+"setter will result in a crash."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:133
+msgid "Accessing GDScript fields from C#"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:135
+msgid ""
+"As C# is statically typed, accessing GDScript from C# is a bit more "
+"convoluted, you will have to use :ref:`Object.Get() "
+"<class_Object_method_get>` and :ref:`Object.Set() "
+"<class_Object_method_set>`. The first argument is the name of the field you "
+"want to access."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:148
+msgid ""
+"Keep in mind that when setting a field value you should only use types the "
+"GDScript side knows about. Essentially, you want to work with built-in types "
+"as described in :ref:`doc_gdscript` or classes extending :ref:`class_Object`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:153
+#, fuzzy
+msgid "Calling methods"
+msgstr "Tworzenie węzłów"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:156
+#, fuzzy
+msgid "Calling C# methods from GDScript"
+msgstr "Ładowanie go do GDScript"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:158
+msgid ""
+"Again, calling C# methods from GDScript should be straightforward. The "
+"marshalling process will do its best to cast your the arguments to match "
+"function signatures. If that's impossible you'll see the following error: "
+"``Invalid call. Nonexistent function `FunctionName```."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:174
+#, fuzzy
+msgid "Calling GDScript methods from C#"
+msgstr "Wywoływanie JavaScript ze skryptu"
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:176
+msgid ""
+"To call GDScript methods from C# you'll need to use :ref:`Object.Call() "
+"<class_Object_method_call>`. The first arguments is the name of the method "
+"you want to call. The following arguments will be passed to said method."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:198
+msgid ""
+"As you can see, if the first argument of the called method is an array, "
+"you'll need to cast it as ``object``. Otherwise each element of your array "
+"will be treated as a single argument and the function signature won't match."
+msgstr ""

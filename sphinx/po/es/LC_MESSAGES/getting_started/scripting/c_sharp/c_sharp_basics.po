@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,10 +52,11 @@ msgstr ""
 "la sección :ref:`Scripting <doc_scripting>` del tutorial paso a paso."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:21
+#, fuzzy
 msgid ""
 "C# is a high-level programming language developed by Microsoft. In Godot, it "
-"is implemented with the Mono 5.x .NET framework, including full support for "
-"C# 7.0. Mono is an open source implementation of Microsoft's .NET Framework "
+"is implemented with the Mono 6.x .NET framework, including full support for "
+"C# 8.0. Mono is an open source implementation of Microsoft's .NET Framework "
 "based on the ECMA standards for C# and the Common Language Runtime. A good "
 "starting point for checking its capabilities is the `Compatibility <http://"
 "www.mono-project.com/docs/about-mono/compatibility/>`_ page in the Mono "
@@ -168,13 +169,15 @@ msgid "Configuring an external editor"
 msgstr "Configuración de un editor externo"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:79
+#, fuzzy
 msgid ""
 "C# support in Godot's script editor is minimal. Consider using an external "
 "IDE or editor, such as  `Visual Studio Code <https://code.visualstudio.com/"
 ">`_ or MonoDevelop. These provide autocompletion, debugging, and other "
 "useful features for C#. To select an external editor in Godot, click on "
 "**Editor → Editor Settings** and scroll down to **Mono**. Under **Mono**, "
-"click on **Editor**, and select your external editor of choice."
+"click on **Editor**, and select your external editor of choice. Godot "
+"currently supports the following external editors:"
 msgstr ""
 "El soporte de C# en el editor de scripts de Godot es mínimo. Considera la "
 "posibilidad de utilizar un IDE o editor externo, como `Visual Studio Code "
@@ -184,7 +187,25 @@ msgstr ""
 "Editor** y ve hacia abajo hasta **Mono**. En **Mono**, haz clic en "
 "**Editor** y selecciona el editor externo que desees."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:87
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:88
+msgid "Visual Studio Code"
+msgstr "Visual Studio Code"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:89
+#, fuzzy
+msgid "MonoDevelop"
+msgstr "KDevelop"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:90
+#, fuzzy
+msgid "Visual Studio for Mac"
+msgstr "Visual Studio Code"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:91
+msgid "JetBrains Rider"
+msgstr "JetBrains Rider"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:93
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
@@ -196,11 +217,11 @@ msgstr ""
 "para habilitar características como el resaltado de sintaxis y el "
 "autocompletado."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:98
 msgid "Creating a C# script"
 msgstr "Creando un script de C#"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:100
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting ``Attach script`` in the context menu of a node in "
@@ -210,7 +231,7 @@ msgstr ""
 "la siguiente opción cuando selecciones ``Añadir script`` en el menú "
 "contextual de los nodos en tu escena:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:105
 msgid ""
 "Note that while some specifics change, most concepts work the same when "
 "using C# for scripting. If you're new to Godot, you may want to follow the "
@@ -225,11 +246,11 @@ msgstr ""
 "la documentación no contiene ejemplos en C#, la mayoría de los ejemplos son "
 "fácilmente transferibles desde GDScript."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:106
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:112
 msgid "Project setup and workflow"
 msgstr "Ajustes del proyecto y flujo de trabajo"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:108
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:114
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
 "for your Godot project. This includes generating a C# solution (``.sln``) "
@@ -249,7 +270,7 @@ msgstr ""
 "ignorados de tu VCS. Cuando hay problemas, algunas veces ayuda borrar la "
 "carpeta ``.mono`` y dejar que se vuelva a generar."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:117
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:123
 msgid ""
 "Note that currently, there are some issues where Godot and the C# project "
 "don't stay in sync; if you delete, rename or move a C# script, the change "
@@ -261,7 +282,7 @@ msgstr ""
 "cosas como scripts o nodos, es posible que ya no coincidan. En este caso, "
 "puede ser útil editar los archivos de la solución manualmente."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:122
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
 msgid ""
 "For example, if you created a script (e.g. ``Test.cs``) and delete it in "
 "Godot, compilation will fail because the missing file is still expected to "
@@ -274,7 +295,7 @@ msgstr ""
 "encuentre en el proyecto CS. Para corregir, simplemente abre el ``.csproj`` "
 "y busca el ``ItemGroup``, debería haber una línea incluida como la siguiente:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:142
 msgid ""
 "Simply remove that line and your project should build correctly again. Same "
 "for renaming and moving things, simply rename and move them in the project "
@@ -284,18 +305,18 @@ msgstr ""
 "correctamente. Lo mismo para renombrar y mover cosas, simplemente "
 "renómbralas y muévelas en el archivo del proyecto si es necesario."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
 msgid "Example"
 msgstr "Ejemplo"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:143
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr ""
 "Aquí hay un script C# en blanco con algunos comentarios para demostrar cómo "
 "funciona."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:170
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:176
 msgid ""
 "As you can see, functions normally in global scope in GDScript like Godot's "
 "``print`` function are available in the ``GD`` class which is part of the "
@@ -309,7 +330,7 @@ msgstr ""
 "la clase ``GD``, consulta las páginas de referencia de la clase para :ref:"
 "`@GDScript <class_@gdscript>` y :ref:`@GlobalScope <class_@globalscope>`."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
 #, fuzzy
 msgid ""
 "Keep in mind that the class you wish to attach to your node should have the "
@@ -322,11 +343,11 @@ msgstr ""
 "no se podrá ejecutar la escena: *\"Cannot find class XXX for script res://"
 "XXX.cs\"*"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
 msgid "General differences between C# and GDScript"
 msgstr "Diferencias generales entre C# y GDScript"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:185
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:191
 msgid ""
 "The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++. "
 "Where possible, fields and getters/setters have been converted to "
@@ -338,16 +359,16 @@ msgstr ""
 "convertido en propiedades. En general, la API de C# Godot se esfuerza en ser "
 "idiomática dentro de lo razonable."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:195
 msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr ""
 "Para más información, consulta la página :ref:`doc_c_sharp_differences`."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:192
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:198
 msgid "Current gotchas and known issues"
 msgstr "Problemas actuales y problemas conocidos"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
 msgid ""
 "As C# support is quite new in Godot, there are some growing pains and things "
 "that need to be ironed out. Below is a list of the most important issues you "
@@ -362,7 +383,7 @@ msgstr ""
 "`rastreador oficial de incidencias de Mono <https://github.com/godotengine/"
 "godot/labels/topic%3Amono>`_."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
 msgid ""
 "As explained above, the C# project isn't always kept in sync automatically "
 "when things are deleted, renamed or moved in Godot (`#12917 <https://github."
@@ -373,14 +394,14 @@ msgstr ""
 "movidas en Godot (`#12917 <https://github.com/godotengine/godot/"
 "issues/12917>`_)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:203
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:209
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
 "Es posible crear plugins para el editor, pero actualmente es bastante "
 "complicado."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:210
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
@@ -388,7 +409,7 @@ msgstr ""
 "Actualmente, el estado no se está guardando y se restaura durante la recarga "
 "en caliente, con la excepción de las variables exportadas."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
 msgid ""
 "Exporting Mono projects is only supported for desktop platforms (Linux, "
 "Windows and macOS). Android, iOS, HTML5 and UWP are not currently supported "
@@ -405,7 +426,7 @@ msgstr ""
 "issues/20270>`_ `#20271 <https://github.com/godotengine/godot/"
 "issues/20271>`_)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
@@ -414,7 +435,7 @@ msgstr ""
 "nombre que el nombre del archivo. O lo que es lo mismo, el nombre de la "
 "clase que se declara en el script y el nombre del archivo deben ser igual."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:214
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:220
 msgid ""
 "There are some methods such as ``Get()``/``Set()``, ``Call()``/"
 "``CallDeferred()`` and signal connection method ``Connect()`` that rely on "
@@ -424,11 +445,11 @@ msgid ""
 "can use any custom properties or methods without this limitation."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:222
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
 msgid "Performance of C# in Godot"
 msgstr "Rendimiento de C# en Godot"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:224
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:230
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
 "bunnymark>`_, the performance of C# in Godot — while generally in the same "
@@ -447,11 +468,11 @@ msgstr ""
 "trabajo de scripting habituales. C# es más rápido, pero requiere de una "
 "organización más costosa cuando se comunica con Godot."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:232
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:238
 msgid "Using NuGet packages in Godot"
 msgstr "Uso de los paquetes NuGet en Godot"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:234
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:240
 msgid ""
 "`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
 "Godot, as with any C# project. Many IDEs are able to add packages directly. "
@@ -464,7 +485,7 @@ msgstr ""
 "referencia del paquete en el archivo ``.csproj`` ubicado en la raíz del "
 "proyecto:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:249
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:255
 msgid ""
 "Whenever packages are added or modified, run ``nuget restore`` in the root "
 "of the project directory. To ensure that NuGet packages will be available "

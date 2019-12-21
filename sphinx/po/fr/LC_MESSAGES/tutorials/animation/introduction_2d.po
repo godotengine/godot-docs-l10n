@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,6 +205,10 @@ msgid ""
 "\"Play from beginning\" button |Play from beginning| (Default shortcut: Shift"
 "+D) to see the changes instantly."
 msgstr ""
+"Si vous animez la mauvaise propriété, vous pouvez éditer le chemin d'une "
+"piste à tout moment. Double-cliquez dessus et tapez le nouveau chemin. Lire "
+"l'animation à l'aide du bouton \"Lire du début\" |Lire du début| (Raccourci "
+"par défaut : Shift+D) pour voir les changements instantanément."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:109
 msgid "Tutorial: Creating a simple animation"
@@ -233,6 +237,10 @@ msgid ""
 "the sprites' texture. As a starting point, move the sprite to a left "
 "position on the screen."
 msgstr ""
+"Le sprite contient une texture d'image et nous animons ce sprite pour le "
+"déplacer entre deux points de l'écran. Pour ce tutoriel, utilisez l'icône "
+"Godot par défaut comme texture des sprites. Comme point de départ, déplacez "
+"le sprite vers la gauche sur l'écran."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:129
 msgid ""
@@ -240,6 +248,9 @@ msgid ""
 "required, but it is a nice way of distinguishing animated nodes from non-"
 "animated nodes in the Scene Tree."
 msgstr ""
+"Il n'est pas nécessaire d'ajouter les nœuds animés en tant qu'enfants au "
+"nœud AnimationPlayer, mais c'est un bon moyen de distinguer les nœuds animés "
+"des nœuds non animés dans l'arbre des scènes."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:133
 msgid ""
@@ -264,6 +275,8 @@ msgstr "Ajout d'une piste"
 msgid ""
 "To add a new track for our sprite, select it and take a look in the toolbar:"
 msgstr ""
+"Pour ajouter une nouvelle piste pour notre sprite, sélectionnez-le et "
+"regardez dans la barre d'outils :"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:152
 msgid "Convenience buttons"
@@ -280,12 +293,17 @@ msgid ""
 "Deselect rotation, because we are only interested in the location of our "
 "sprite for this tutorial and click on the key button."
 msgstr ""
+"Désélectionnez la rotation, car nous ne sommes intéressés que par "
+"l'emplacement de notre sprite pour ce tutoriel et cliquez sur le bouton clé."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:160
 msgid ""
 "As we don't have a track already set up for the transform/location property, "
 "Godot asks, whether it should set it up for us. Click on \"Create\"."
 msgstr ""
+"Comme nous n'avons pas de piste déjà configurée pour la propriété transform/"
+"location, Godot demande, si il doit la configurée pour nous. Cliquez sur "
+"\"Créer\"."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:164
 msgid ""
@@ -304,6 +322,8 @@ msgid ""
 "The track name consists of a Node Path, followed by a colon, followed by a "
 "reference to its property, that we would like to modify."
 msgstr ""
+"Le nom de la piste se compose d'un chemin du nœud, suivi de deux-points, "
+"suivi d'une référence à sa propriété, que nous aimerions modifier."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:175
 msgid ""
@@ -318,6 +338,8 @@ msgid ""
 "The path always starts at the AnimationPlayer node's parent (so paths always "
 "have to include the AnimationPlayer node itself)."
 msgstr ""
+"Le chemin commence toujours au niveau du nœud parent du nœud AnimationPlayer "
+"(les chemins doivent donc toujours inclure le nœud AnimationPlayer lui-même)."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:183
 msgid ""
@@ -337,6 +359,8 @@ msgid ""
 "Now we need to set the destination where our sprite should be headed and how "
 "much time it takes to get there."
 msgstr ""
+"Maintenant, nous devons définir la destination vers laquelle notre sprite "
+"doit se diriger et combien de temps il lui faut pour y arriver."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:193
 msgid ""
@@ -354,6 +378,8 @@ msgid ""
 "Click on the timeline header near the 2 second mark and move the sprite to "
 "the target destination on the right side."
 msgstr ""
+"Cliquez sur l'en-tête de la timeline près du repère de 2 secondes et "
+"déplacez le sprite vers la destination cible sur le côté droit."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:205
 msgid ""
@@ -380,7 +406,7 @@ msgstr "L'animation"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:221
 msgid "Back and forth"
-msgstr ""
+msgstr "Allers et retours"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:223
 msgid ""
@@ -399,6 +425,9 @@ msgid ""
 "and forth. You can change this behaviour if you change the track's loop "
 "mode. This is covered in the next chapter."
 msgstr ""
+"Si vous réglez la durée de l'animation à 4 secondes maintenant, l'animation "
+"se déplace d'avant en arrière. Vous pouvez modifier ce comportement si vous "
+"changez le mode boucle de la piste. Ceci est abordé dans le chapitre suivant."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:238
 #: ../../docs/tutorials/animation/introduction_2d.rst:246
@@ -410,12 +439,16 @@ msgid ""
 "Each track has a settings panel at the end, where you can set the update "
 "mode, the track interpolation, and the loop mode."
 msgstr ""
+"Chaque piste a un panneau de configuration à la fin, où vous pouvez définir "
+"le mode de mise à jour, l'interpolation de la piste et le mode boucle."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:248
 msgid ""
 "The update mode of a track tells Godot when to update the property values. "
 "This can be:"
 msgstr ""
+"Le mode de mise à jour d'une piste indique à Godot quand mettre à jour les "
+"valeurs des propriétés. Cela peut l'être :"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:251
 msgid "Continuous: Update the property on each frame"
@@ -473,7 +506,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:276
 msgid "Track interpolation"
-msgstr ""
+msgstr "Interpolation de piste"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:278
 msgid ""
@@ -554,6 +587,8 @@ msgid ""
 "You usually tweak your animations this way, when the movement doesn't \"look "
 "right\"."
 msgstr ""
+"Vous ajustez généralement vos animations de cette façon, lorsque le "
+"mouvement ne \"semble pas correct\"."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:334
 msgid "Advanced: Call Method tracks"

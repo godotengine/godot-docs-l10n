@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,8 +89,8 @@ msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
-"たとえば、移動速度を一定にし、フレームレートから独立させるために、移動が時間"
-"デルタで乗算されることがよくあります。"
+"たとえば、移動速度を一定にし、フレームレートから独立させるために、移動量が時"
+"間デルタで乗算されることがよくあります。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""
@@ -207,7 +207,7 @@ msgid ""
 "your script:"
 msgstr ""
 "Godotには通知システムがあります。これらは低レベルであり、それらのほとんどに仮"
-"想k関数が提供されているため、通常はスクリプトには必要ありません。それらが存在"
+"想関数が提供されているため、通常はスクリプトには必要ありません。それらが存在"
 "することを知っていれば良いのです。例えば、スクリプトに\\ :ref:`Object."
 "_notification() <class_Object_method__notification>` \\ 関数を追加できます:"
 
@@ -223,12 +223,10 @@ msgstr ""
 "オーバーライド可能な関数を提供します。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
-#, fuzzy
 msgid "Overridable functions"
 msgstr "オーバーライド可能な関数"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
-#, fuzzy
 msgid ""
 "Such overridable functions, which are described as follows, can be applied "
 "to nodes:"

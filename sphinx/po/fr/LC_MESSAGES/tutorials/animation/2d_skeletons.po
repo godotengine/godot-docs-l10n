@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,11 @@ msgid ""
 "function is not used as often, it's difficult to find mainstream software "
 "aimed for this."
 msgstr ""
+"Lorsque l'on travaille avec la 3D, les déformations du squelette sont "
+"courantes pour les personnages et les créatures et la plupart des "
+"applications de modélisation 3D les prennent en charge. Pour la 2D, comme "
+"cette fonction n'est pas utilisée aussi souvent, il est difficile de trouver "
+"des logiciels grand public qui s'y destinent."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:13
 msgid ""
@@ -39,34 +44,46 @@ msgid ""
 "Dragonbones. From Godot 3.1 onwards, though, this functionality is supported "
 "built-in."
 msgstr ""
+"Une option consiste à créer des animations dans des logiciels tiers tels que "
+"Spine ou Dragonbones. A partir de Godot 3.1, cependant, cette fonctionnalité "
+"est prise en charge de manière intégrée."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:16
 msgid ""
 "Why would you want to do skeletal animations directly in Godot? The answer "
 "is that there are many advantages to it:"
 msgstr ""
+"Pourquoi voudriez-vous faire des animations de squelettes directement dans "
+"Godot ? La réponse est qu'elle présente de nombreux avantages :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:18
 msgid ""
 "Better integration with the engine, so less hassle importing and editing "
 "from an external tool."
 msgstr ""
+"Meilleure intégration avec le moteur, donc moins de problèmes d'importation "
+"et d'édition depuis un outil externe."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:19
 msgid ""
 "Ability to control particle systems, shaders, sounds, call scripts, colors, "
 "transparency, etc. in animations."
 msgstr ""
+"Possibilité de contrôler les systèmes de particules, les shaders, les sons, "
+"les scripts d'appel, les couleurs, la transparence, etc. dans les animations."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:20
 msgid ""
 "The built-in skeletal system in Godot is very efficient and designed for "
 "performance."
 msgstr ""
+"Le système de squelette intégré dans Godot est très efficace et conçu pour "
+"la performance."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:22
 msgid "The following tutorial will, then, explain 2D skeletal deformations."
 msgstr ""
+"Le tutoriel suivant expliquera donc les déformations de squelette en 2D."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:25
 msgid "Setup"
@@ -77,6 +94,9 @@ msgid ""
 "Before starting, it is advised to go through the :ref:`doc_cutout_animation` "
 "tutorial to gain a general understanding of animating within Godot."
 msgstr ""
+"Avant de commencer, il est conseillé de passer par le tutoriel :ref:"
+"`doc_cutout_animation` pour avoir une compréhension générale de l'animation "
+"dans Godot."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:30
 msgid ""
@@ -84,6 +104,9 @@ msgid ""
 "character. Download it from :download:`gBot_pieces.png <img/gBot_pieces."
 "png>` or save the image below."
 msgstr ""
+"Pour ce tutoriel, nous utiliserons une seule image pour construire notre "
+"personnage. Téléchargez-la à partir de :download:`gBot_pieces.png <img/"
+"gBot_pieces.png>` ou enregistrez l'image ci-dessous."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:35
 msgid ""
@@ -91,6 +114,9 @@ msgid ""
 "`gBot_complete.png <img/gBot_complete.png>` to have a good reference for "
 "putting the different pieces together."
 msgstr ""
+"Il est également conseillé de télécharger l'image finale du personnage : "
+"download:`gBot_complete.png <img/gBot_complete.png>` pour avoir une bonne "
+"référence pour assembler les différents morceaux."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:41
 msgid "Creating the polygons"
@@ -102,40 +128,56 @@ msgid ""
 "character, you may want to use a ``KinematicBody2D``). For ease of use, an "
 "empty 2D node is created as a root for the polygons."
 msgstr ""
+"Créez une nouvelle scène pour votre modèle (si c'est un personnage animé, "
+"vous pouvez utiliser un ``KinematicBody2D``). Pour faciliter l'utilisation, "
+"un nœud 2D vide est créé comme racine pour les polygones."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:46
 msgid ""
 "Begin with a ``Polygon2D`` node. There is no need to place it anywhere in "
 "the scene for now, so simply create it like this:"
 msgstr ""
+"Commencez par un nœud ``Polygon2D``. Il n'est pas nécessaire de le placer "
+"quelque part dans la scène pour l'instant, alors créez-le simplement comme "
+"ceci :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:50
 msgid ""
 "Select it and assign the texture with the character pieces you have "
 "downloaded before:"
 msgstr ""
+"Sélectionnez-le et assignez la texture avec les morceaux de personnage que "
+"vous avez téléchargés auparavant :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:54
 msgid ""
 "Drawing a polygon directly is not advised. Instead, open the \"UV\" dialog "
 "for the polygon:"
 msgstr ""
+"Il n'est pas conseillé de dessiner un polygone directement. Au lieu de cela, "
+"ouvrez la boîte de dialogue \"UV\" pour le polygone :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:58
 msgid ""
 "Head over to the *Points* mode, select the pencil and draw a polygon around "
 "the desired piece:"
 msgstr ""
+"Passez en mode *Points*, sélectionnez le crayon et dessinez un polygone "
+"autour de la pièce désirée :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:62
 msgid ""
 "Duplicate the polygon node, rename it properly, enter the \"UV\" dialog "
 "again and replace the old polygon with another one in the new desired piece."
 msgstr ""
+"Dupliquer le nœud polygone, renommer le correctement, entrer à nouveau dans "
+"le dialogue \"UV\" et remplacer l'ancien polygone par un autre dans la "
+"nouvelle pièce désirée."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:66
 msgid "Keep doing this until all pieces have been mapped."
 msgstr ""
+"Continuez à faire ça jusqu'à ce que tous les morceaux soient cartographiés."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:70
 msgid ""
@@ -143,6 +185,9 @@ msgid ""
 "in the original texture. This is because (by default) when you draw a "
 "polygon, the UV and points are the same."
 msgstr ""
+"Vous remarquerez que les pièces pour les nœuds apparaissent dans la même "
+"disposition que dans la texture originale. C'est parce que (par défaut) "
+"quand vous dessinez un polygone, les UV et les points sont les mêmes."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:73
 msgid ""
@@ -150,12 +195,19 @@ msgid ""
 "There is no need to change pivots, so don't bother making sure rotation "
 "pivots for each piece are right; you can leave them be for now."
 msgstr ""
+"Réorganisez les pièces et construisez le personnage. Ça devrait être assez "
+"rapide. Il n'est pas nécessaire de changer les pivots, donc ne vous embêtez "
+"pas à vous assurer que les pivots de rotation de chaque pièce sont "
+"corrects ; vous pouvez les laisser tels quels pour le moment."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:78
 msgid ""
 "Ah, the visual order of the pieces is not correct yet, as some are covering "
 "wrong pieces. Rearrange the order of the nodes to fix this:"
 msgstr ""
+"Ah, l'ordre visuel des pièces n'est pas encore correct, car certaines "
+"couvrent de mauvaises pièces. Réorganisez l'ordre des nœuds pour régler ce "
+"problème :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:82
 msgid ""
@@ -171,6 +223,8 @@ msgid ""
 "Create a ``Skeleton2D`` node as a child of the root node. This will be the "
 "base of our skeleton:"
 msgstr ""
+"Créez un nœud ``Skeleton2D`` en tant qu'enfant du nœud racine. Ce sera la "
+"base de notre squelette :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:91
 msgid ""
@@ -178,10 +232,14 @@ msgid ""
 "(usually skeletons start here). The bone will be pointing to the right, but "
 "you can ignore this for now."
 msgstr ""
+"Créez un nœud ``Bone2D`` en tant qu'enfant du squelette. Mettez-le sur la "
+"hanche (habituellement les squelettes commencent ici). L'os pointera vers la "
+"droite, mais vous pouvez l'ignorer pour l'instant."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:96
 msgid "Keep creating bones in hierarchy and naming them accordingly."
 msgstr ""
+"Continuez à créer des os dans la hiérarchie et à les nommer en conséquence."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:100
 msgid ""
@@ -189,6 +247,10 @@ msgid ""
 "short and pointing to the right. This is normal for bones without children. "
 "The length of *tip* bones can be changed with a property in the inspector:"
 msgstr ""
+"A la fin de cette chaîne, il y aura un nœud *jaw* (mâchoire). Il est, encore "
+"une fois, très court et pointe vers la droite. C'est normal pour des os sans "
+"enfants. La longueur des os de *pointe* peut être modifiée avec une "
+"propriété dans l'inspecteur :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:105
 msgid ""

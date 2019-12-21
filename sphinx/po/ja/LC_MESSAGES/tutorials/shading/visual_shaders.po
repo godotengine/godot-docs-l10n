@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -209,9 +209,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:120
-#, fuzzy
 msgid "Fresnel node"
-msgstr "ノード作成"
+msgstr "フレネルノード"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:122
 msgid ""
@@ -220,11 +219,14 @@ msgid ""
 "Additionally, you can setup the inversion and the power of equation. The "
 "``Fresnel`` node is great for adding a rim-like lighting effect to objects."
 msgstr ""
+"''フレネル(Fresnel)'' ノードは、法線ベクトルとビュー ベクトルを受け入れるよう"
+"に設計されており、それらの間の飽和ドット積であるスカラーを生成します。さら"
+"に、反転と方程式の強さを設定できます。''フレネル''ノードは、オブジェクトに縁"
+"取りのような照明効果を追加するのに最適です。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:130
-#, fuzzy
 msgid "Boolean node"
-msgstr "ブール型 OR"
+msgstr "ブール型ノード"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:132
 msgid ""
@@ -233,10 +235,14 @@ msgid ""
 "This property can be used to enable or disable some effect parts with one "
 "click."
 msgstr ""
+"''ブール型(Boolean)''ノードは、''Scalar''の場合は ''0'' または ''1'' を表すた"
+"めに、''Vector''の場合は''(0, 0, 0)''または''(1, 1, 1)''を表すために、それぞ"
+"れの値に変換できます。このプロパティを使用すると、一部のエフェクト パーツを "
+"1 回のクリックで有効または無効にできます。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:139
 msgid "If node"
-msgstr ""
+msgstr "ifノード"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:141
 msgid ""

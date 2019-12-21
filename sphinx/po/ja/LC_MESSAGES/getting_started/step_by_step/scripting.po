@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,16 +32,16 @@ msgid ""
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
 "Godot 3.0以前は、ゲームのスクリプトを作成するための唯一の選択肢はGDScriptを使"
-"用することだけでした。現在、Godotには4つの（ええ、4つ！）公式言語と、追加のス"
-"クリプト言語を動的に追加する機能があります！"
+"用することだけでした。現在、Godotには4つの（そうです、4つも！）公式言語と、追"
+"加のスクリプト言語を動的に追加する機能があります！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
-"これは素晴らしいことです。提供される柔軟性が大きいからこそです。しかし言語を"
-"サポートする作業がより困難になります。"
+"これは素晴らしいことです。提供される柔軟性が大きくなるからです。ですがその反"
+"面、それぞれの言語をサポートする作業がより困難になります。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
 msgid ""
@@ -52,10 +52,10 @@ msgid ""
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
 "ただし、Godotの「主要な」言語はGDScriptとVisualScriptです。それらを選択する主"
-"な理由は、Godotとの統合レベルです。これにより、よりスムーズになります。どちら"
-"も洗練されたエディターと統合されています。一方、C＃とC ++は別のIDEで編集する"
-"必要があります。静的に型付けされた言語の大ファンであれば、C＃とC ++を使用して"
-"ください。"
+"な理由は、Godotとの統合レベルが高いからです。これにより、開発作業がよりスムー"
+"ズになります。どちらも洗練されたエディターと統合されています。一方、C＃とC +"
+"+は別のIDEで編集する必要があります。もしもあなたが静的に型付けされた言語の大"
+"ファンであれば、C＃とC ++を使用してください。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
@@ -80,7 +80,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
 msgid "Loads and compiles blazingly fast."
-msgstr "読み込みとコンパイルが非常に速い。"
+msgstr "読み込みとコンパイルが非常に高速です。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
@@ -104,7 +104,7 @@ msgid ""
 "of the limitations that made us avoid VMs such as Lua, Squirrel, etc."
 msgstr ""
 "静的に型指定された言語と同じくらい効率的に複数のスレッドをサポートします - "
-"Lua、SquirrelなどのVMを避けるための制限の1つです。"
+"Lua、SquirrelなどのVMを避けた理由のひとつはスレッド処理に制限があるからです。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:33
 msgid ""
@@ -129,8 +129,8 @@ msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
-"もしあなたがまだ決めておらず、プログラミング、特に動的型付け言語の経験がある"
-"なら、GDScriptを選んでください!"
+"もしあなたがどの言語を使用するかをまだ決めておらず、プログラミング、特に動的"
+"型付け言語の経験があるなら、GDScriptを選んでください!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 msgid "VisualScript"
@@ -153,8 +153,8 @@ msgid ""
 "others, like game designers or artists."
 msgstr ""
 "ビジュアルスクリプトは、プログラマ以外のユーザーや、ゲームデザイナーやアー"
-"ティストなど、コードの一部を他のユーザーがアクセスしやすくしたい経験豊富な開"
-"発者にとっても最適なツールです。"
+"ティストなどの他のユーザーに、コードの一部を容易にアクセスさせたい経験豊富な"
+"開発者にとっても最適なツールです。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:50
 msgid ""
@@ -219,8 +219,8 @@ msgid ""
 "C API Bridge."
 msgstr ""
 "内部C API Bridgeを使用しているため、任意のC++バージョンを使用することができ、"
-"生成された共有ライブラリ用のコンパイラブランドとバージョンの混在は完全に機能"
-"します。"
+"生成された共有ライブラリ用のコンパイラブランドとバージョンが混在していても完"
+"全に機能します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
 msgid ""
@@ -230,16 +230,17 @@ msgid ""
 "mostly, Godot's actual C++ API."
 msgstr ""
 "この言語はパフォーマンスに最適な選択肢であり、ゲーム全体で使用する必要はあり"
-"ません。他の部分はGDScriptまたはVisual Scriptで作成できるためです。 ただし、"
-"このAPIは、主にGodotの実際のC ++ APIに似ているため、明確で使いやすいです。"
+"ません。他の部分はGDScriptまたはVisual Scriptで作成できるためです。 とはい"
+"え、このAPIは、主にGodotの実際のC ++ APIに似ているため、明確で使いやすいで"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
 msgid ""
 "More languages can be made available through the GDNative interface, but "
 "keep in mind we don't have official support for them."
 msgstr ""
-"GDNativeインターフェイスを通じてより多くの言語を利用できますが、正式なサポー"
-"トはありません。"
+"GDNativeインターフェイスを通じて(C++以外の)より多くの言語を利用できますが、正"
+"式なサポートはありません。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
 msgid "Scripting a scene"
@@ -252,7 +253,7 @@ msgid ""
 "will demonstrate:"
 msgstr ""
 "このチュートリアルの残りの部分では、ボタンとラベルで構成されるGUI シーンを設"
-"定し、ボタンを押すとラベルが更新されます。これは、次のことを示します:"
+"定し、ボタンを押す事でラベルを更新してみます。これは、次のことを示します:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:96
 msgid "Writing a script and attaching it to a node."
@@ -407,7 +408,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:179
 msgid "Handling a signal"
-msgstr "信号の処理"
+msgstr "シグナルの処理"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:181
 msgid ""
@@ -463,6 +464,9 @@ msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
+"ダイアログの上部には、シーン中のノードの一覧が表示されており、シグナルを発す"
+"るノードの名前(今回はButton)が青色でハイライト表示されています。ここで"
+"「Panel」ノードを選択します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
@@ -470,6 +474,9 @@ msgid ""
 "created. By default, the method name will contain the emitting node's name "
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
+"ダイアログの下部には、作成されるメソッドの名前が表示されます。デフォルトで"
+"は、メソッド名には発信ノードの名前（この場合は「ボタン」）が含まれ、「_ on_ "
+"[シグナルを発するノード名] _ [シグナル名]」になります。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
@@ -498,8 +505,8 @@ msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
-"便宜上、 ``extends Panel`` の下にあるすべてのものを削除します。スクリプトの残"
-"りの部分を手動で入力します。"
+"便宜上、スクリプト内の ``extends Panel`` より下にあるすべてのものを削除しま"
+"す。そしてスクリプトの残りの部分を手動で入力します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:223
 msgid ""
@@ -507,8 +514,9 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
-"ButtonとLabelはスクリプトがアタッチされているPanelの下の兄弟であるため、 "
-"``_ready()`` 関数の下に次のように入力するとButtonをフェッチできます:"
+"ButtonとLabelはスクリプトがアタッチされているPanelの下の兄弟(同じ階層にある子"
+"要素)であるため、 ``_ready()`` 関数の下に次のように入力するとButtonをフェッチ"
+"できます:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:240
 msgid "Next, write a function which will be called when the button is pressed:"
@@ -533,7 +541,9 @@ msgstr "シーンを実行し、ボタンを押します。次の結果が得ら
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:308
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr "あら、hello!最初のシーンのスクリプト作成、おめでとうございます。"
+msgstr ""
+"あら、hello!と表示されました。最初のシーンのスクリプト作成、おめでとうござい"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:312
 msgid ""

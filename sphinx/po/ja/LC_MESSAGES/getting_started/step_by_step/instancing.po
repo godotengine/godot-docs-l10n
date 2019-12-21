@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,9 +35,9 @@ msgid ""
 msgstr ""
 "1つのシーンを作成してノードを追加すると、小規模なプロジェクトでは機能します"
 "が、プロジェクトのサイズと複雑さが増すにつれて、ノードの数がすぐに管理できな"
-"くなる可能性があります。これに対処するために、Godot はプロジェクトを任意の数"
-"のシーンに分割することを許可します。これにより、ゲームのさまざまなコンポーネ"
-"ントを整理するのに役立つ強力なツールが提供されます。"
+"くなる可能性があります。これに対処するために、Godot ではプロジェクトを任意の"
+"数のシーンに分割することが許されています。これにより、ゲームのさまざまなコン"
+"ポーネントを整理するのに役立つ強力なツールが提供されます。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
@@ -107,8 +107,8 @@ msgid ""
 msgstr ""
 "このプロジェクトには、「Ball.tscn」と「Main.tscn」の2つのシーンがあります。"
 "ボール シーンは\\ :ref:`RigidBody2D <class_RigidBody2D>`\\ を使用して物理動作"
-"を提供し、メイン シーンにはボールが衝突する障害物のセットがあります (\\ :ref:"
-"`StaticBody2D <class_StaticBody2D>`\\ を使用)。"
+"(のシミュレート)を提供し、メイン シーンにはボールが衝突する障害物のセットがあ"
+"ります (\\ :ref:`StaticBody2D <class_StaticBody2D>`\\ を使用)。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
@@ -152,7 +152,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr "シーンを再び実行し、ボールのすべてが落ちます。"
+msgstr "シーンを再び実行すると、ボールのすべてが落下します。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"

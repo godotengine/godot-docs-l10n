@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -472,16 +472,17 @@ msgstr ""
 "play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position. "
 "We can also use ``clamp()`` to prevent it from leaving the screen. "
 "*Clamping* a value means restricting it to a given range. Add the following "
 "to the bottom of the ``_process`` function:"
 msgstr ""
-"Agora que temos uma direção de movimento, podemos atualizar a posição de "
-"``Jogador`` e usar ``clamp()`` (limitar) para impedir que ele saia da tela. "
-"Fazemos isso adicionando o seguinte código ao final da função ``_process``:"
+"Agora que temos uma direção de movimento, podemos atualizar a posição do "
+"jogador. Podemos utilizar ``clamp()`` (segurar, como quando utilizamos uma "
+"braçadeira ou um torno) para impedir que ele saia da tela. *Segurar* um "
+"valor significa restringi-lo a um intervalo. Adicione o seguinte código no "
+"final da função ``_process``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:332
 msgid ""
@@ -1188,13 +1189,12 @@ msgstr ""
 "`doc_design_interfaces_with_the_control_nodes` para mais detalhes."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:915
-#, fuzzy
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
 msgstr ""
-"Organize os nós conforme mostrado abaixo. Clique no botão \"Âncora\" para "
-"definir a âncora para um nó Control:"
+"Organize os nós conforme indicado abaixo. Clique no botão \"Disposição "
+"(Layout)\" para definir a disposição de um nó de controle:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:920
 msgid ""

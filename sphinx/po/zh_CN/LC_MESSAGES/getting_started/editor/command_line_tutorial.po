@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -244,7 +244,7 @@ msgstr "请求一个总在最顶的窗口。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "``--resolution <W>x<H>``"
-msgstr ""
+msgstr "``--resolution <W>x<H>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 #, fuzzy
@@ -253,7 +253,7 @@ msgstr "多分辨率"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "``--position <X>,<Y>``"
-msgstr ""
+msgstr "``--position <X>,<Y>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "Request window position."
@@ -270,7 +270,7 @@ msgstr "强制低解析度模式（仅在macOS 和 Windows 中可用）。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid "``--no-window``"
-msgstr ""
+msgstr "``--no-window``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid ""
@@ -313,7 +313,7 @@ msgstr "断点列表作为 source :: line 逗号分隔对时，没有空格（�
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "``--profiling``"
-msgstr ""
+msgstr "``--profiling``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Enable profiling in the script debugger."
@@ -329,7 +329,7 @@ msgstr "远程调试 (``<主机名/IP>:<端口号>`` 地址)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "``--debug-collisions``"
-msgstr ""
+msgstr "``--debug-collisions``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "Show collision shapes when running the scene."
@@ -337,7 +337,7 @@ msgstr "运行场景时显示碰撞框的形状。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 msgid "``--debug-navigation``"
-msgstr ""
+msgstr "``--debug-navigation``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 #, fuzzy
@@ -362,7 +362,7 @@ msgstr "强制时间缩放（值越大，速度越快，1.0是正常速度）。
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:108
 msgid "``--disable-render-loop``"
-msgstr ""
+msgstr "``--disable-render-loop``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:108
 msgid ""
@@ -372,7 +372,7 @@ msgstr "禁用渲染循环，以便仅在从脚本显式调用时才进行渲染
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "``--disable-crash-handler``"
-msgstr ""
+msgstr "``--disable-crash-handler``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "Disable crash handler when supported by the platform code."
@@ -390,7 +390,7 @@ msgstr "每秒强制固定数量的帧。 此设置禁用实时同步。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "``--print-fps``"
-msgstr ""
+msgstr "``--print-fps``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "Print the frames per second to the stdout."
@@ -412,7 +412,7 @@ msgstr "运行脚本"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "``--check-only``"
-msgstr ""
+msgstr "``--check-only``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "Only parse for errors and quit (use with ``--script``)."
@@ -458,7 +458,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid "``--no-docbase``"
-msgstr ""
+msgstr "``--no-docbase``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid ""
@@ -470,7 +470,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
 msgid "``--build-solutions``"
-msgstr ""
+msgstr "``--build-solutions``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
 msgid ""
@@ -487,6 +487,8 @@ msgid ""
 "Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"为GDNative绑定生成Godot API的JSON输出（必须启用 :ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>`）。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
 msgid "``--test <test>``"

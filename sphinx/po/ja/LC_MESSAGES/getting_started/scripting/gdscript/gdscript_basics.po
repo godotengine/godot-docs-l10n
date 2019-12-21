@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1882,11 +1882,11 @@ msgstr ""
 "キーワードを使用して定義されます。 ``ClassName.new()`` 関数を使用してインスタ"
 "ンス化されます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1165
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1167
 msgid "Classes as resources"
 msgstr "リソースとしてのクラス"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1167
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1169
 msgid ""
 "Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
 "They must be loaded from disk to access them in other classes. This is done "
@@ -1900,22 +1900,22 @@ msgstr ""
 "れます(下記参照)。ロードされたクラスリソースのインスタンス化は、クラスオブ"
 "ジェクトの新しい関数を呼び出すことによって行われます:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1183
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1185
 msgid "Exports"
 msgstr "エクスポート"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1187
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1189
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
 msgstr ""
 "エキスポートについてのドキュメントは :ref:`doc_gdscript_exports`に移動しまし"
 "た。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1190
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1192
 msgid "Setters/getters"
 msgstr "\\ Setters/getters"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1192
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1194
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
@@ -1925,7 +1925,7 @@ msgstr ""
 "また、何らかの方法でそのアクセスをカプセル化することが望ましい場合もあるかも"
 "しれません。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1195
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1197
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
@@ -1933,7 +1933,7 @@ msgstr ""
 "このため、GDScriptには ``setget`` キーワードを使用した *setter/getter* 構文が"
 "用意されています。変数定義の直後に使用されます:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1202
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1204
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -1949,11 +1949,11 @@ msgstr ""
 "と、*getter*関数(上記の ``getterfunc`` )は目的の値を ``return`` する必要があ"
 "ります。次に例を示します::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1216
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1218
 msgid "Either of the *setter* or *getter* functions can be omitted::"
 msgstr "*setter* または *getter* 関数のどちらかを省略することができます::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1223
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1225
 msgid ""
 "Setters and getters are useful when :ref:`exporting variables "
 "<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
@@ -1963,7 +1963,7 @@ msgstr ""
 "力をするために: ref:`変数を書き出す: <doc_gdscript_exports>`場合に特に便利で"
 "す。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1226
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1228
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
@@ -1971,11 +1971,11 @@ msgstr ""
 "前述したように、*ローカル*アクセスはsetter とgetterを*起動しません*。この例を"
 "次に示します:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1243
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1245
 msgid "Tool mode"
 msgstr "ツールモード"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1245
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1247
 msgid ""
 "By default, scripts don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
@@ -1989,18 +1989,18 @@ msgstr ""
 "す。これには、 ``tool`` キーワードが存在し、ファイルの先頭に配置する必要があ"
 "ります::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1259
 msgid ""
 "Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
 "script (especially the script's owner itself). As tool scripts run their "
 "code in the editor, misusing them may lead to crashing the editor."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1263
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1265
 msgid "Memory management"
 msgstr "メモリ管理"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1265
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1267
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2017,7 +2017,7 @@ msgstr ""
 "承し、instance.free() を呼び出す必要があります。解放できない参照サイクルを避"
 "けるために、弱い参照を作成するための ``weakref`` 関数が提供されています。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1273
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1275
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
@@ -2026,11 +2026,11 @@ msgstr ""
 "あるいは、参照を使用しない場合は、 ``is_instance_valid(instance)`` を使用して"
 "オブジェクトが解放されたかどうかを確認できます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1280
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
 msgid "Signals"
 msgstr "シグナル"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1284
 msgid ""
 "Signals are a tool to emit messages from an object that other objects can "
 "react to. To create custom signals for a class, use the ``signal`` keyword."
@@ -2039,7 +2039,7 @@ msgstr ""
 "それを受信することが出来ます。 クラスのカスタムシグナルを作るには``signal`` "
 "キーワードを使用します。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1294
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1296
 msgid ""
 "Signals are a `Callback <https://en.wikipedia.org/wiki/"
 "Callback_(computer_programming)>`_ mechanism. They also fill the role of "
@@ -2053,7 +2053,7 @@ msgstr ""
 "Programming Patterns ebookの `Observer tutorial <https://"
 "gameprogrammingpatterns.com/observer.html>`_\\ を見てください。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1301
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1303
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
 "signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
@@ -2061,7 +2061,7 @@ msgstr ""
 ":ref:`class_Button` や :ref:`class_RigidBody` の様ななノードの組み込みシグナ"
 "ルを接続するのと同じ方法で、これらのシグナルをメソッドに接続できます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1304
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
 msgid ""
 "In the example below, we connect the ``health_depleted`` signal from a "
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
@@ -2072,11 +2072,11 @@ msgstr ""
 "``Character``ノードがシグナルを送信したとき、gameノードの"
 "``_on_Character_health_depleted``が呼ばれます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1317
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
 msgid "You can emit as many arguments as you want along with a signal."
 msgstr "あなたが望むシグナルと一緒に多くの引数を送信することができます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1321
 msgid ""
 "Here is an example where this is useful. Let's say we want a life bar on "
 "screen to react to health changes with an animation, but we want to keep the "
@@ -2086,7 +2086,7 @@ msgstr ""
 "バーをスクリーン上に配置しようとしますが、シーンツリー上にあるプレイヤーから"
 "はそのユーザーインターフェースを分けたいします。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1323
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1325
 msgid ""
 "In our ``Character.gd`` script, we define a ``health_changed`` signal and "
 "emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
@@ -2099,7 +2099,7 @@ msgstr ""
 "をシーンツリーの上層の ``Game`` ノードから、 :ref:`Object.connect() "
 "<class_Object_method_connect>` メソッドを使って``Lifebar`` へ接続します::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1363
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1365
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
@@ -2108,7 +2108,7 @@ msgstr ""
 "`Node``、 ``KinematicBody``、``Control``... 等を通じて他の形式の``Object`` ク"
 "ラスの継承をする必要があります。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1366
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1368
 msgid ""
 "In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
 "then connect the character, that emits the signal, to the receiver, the "
@@ -2118,7 +2118,7 @@ msgstr ""
 "て character と受信者を接続し 、 character にシグナルを受信者へ送信させます、"
 "受信者はこのケースでは``Lifebar`` ノードです。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1380
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
@@ -2126,13 +2126,13 @@ msgstr ""
 "これは``Character`` ノードとのカップリングをせずに ``Lifebar`` に体力の変化を"
 "受信することを可能にします。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1383
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1385
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
 msgstr "signalを定義後の括弧内に追加の引数名を書くことが出来ます::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1389
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1391
 msgid ""
 "These arguments show up in the editor's node dock, and Godot can use them to "
 "generate callback functions for you. However, you can still emit any number "
@@ -2143,7 +2143,7 @@ msgstr ""
 "バック関数を生成します。しかし、シグナルを送信する際に、異なる個数の引数を送"
 "信することもできます。その上限は正しい値の個数までです。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1395
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1397
 msgid ""
 "GDScript can bind an array of values to connections between a signal and a "
 "method. When the signal is emitted, the callback method receives the bound "
@@ -2155,7 +2155,7 @@ msgstr ""
 "ます。これらのバインドされた引数は、それぞれの接続に固有のもので、同じ値が維"
 "持されます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1400
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1402
 msgid ""
 "You can use this array of values to add extra constant information to the "
 "connection if the emitted signal itself doesn't give you access to all the "
@@ -2165,7 +2165,7 @@ msgstr ""
 "かったとしても、決まった情報を接続に追加するために値の配列を使うことが出来ま"
 "す。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1406
 msgid ""
 "Building on the example above, let's say we want to display a log of the "
 "damage taken by each character on the screen, like ``Player1 took 22 damage."
@@ -2179,7 +2179,7 @@ msgstr ""
 "せん。その場合、ゲーム内のコンソールにシグナルを接続する事により、バインドさ"
 "れた引数の配列にあるキャラクターの名前を追加することができます::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1418
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1420
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
@@ -2187,11 +2187,11 @@ msgstr ""
 "``BattleLog`` ノードはバインドされた追加の引数の配列内の要素を、送信者ごとに"
 "受け取ります。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1430
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
 msgid "Coroutines with yield"
 msgstr "コルーチン(yield関数による)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1434
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the :ref:`yield<class_@GDScript_method_yield>` built-in "
@@ -2209,22 +2209,22 @@ msgstr ""
 "関数が返す内容が戻されます。１回resumeすると、状態オブジェクトは無効になりま"
 "す。次に例を示します::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1452
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1472
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1454
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1474
 msgid "Will print::"
 msgstr "以下のように表示されます::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1458
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1460
 msgid ""
 "It is also possible to pass values between ``yield()`` and ``resume()``, for "
 "example::"
 msgstr "次のように、yield()とresume()の間に値を渡すこともできます::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1479
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
 msgid "Coroutines & signals"
 msgstr "コルーチンとシグナル"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1483
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
@@ -2234,7 +2234,7 @@ msgstr ""
 "は、オブジェクトとシグナルの2つの引数を受け付けることができます。シグナルを受"
 "信すると、実行が再開されます。次に例を示します::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1494
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1496
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example::"
@@ -2242,16 +2242,16 @@ msgstr ""
 "コルーチン自体は、次のように無効な状態に遷移するときに ``completed`` シグナル"
 "を使用します。例::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1505
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1507
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr "``my_func`` は、両方のボタンを押した後でのみ実行を継続します。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1508
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1510
 msgid "Onready keyword"
 msgstr "Onreadyキーワード"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1510
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1512
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2262,7 +2262,7 @@ msgstr ""
 "シーンはアクティブなシーンツリーに入ったときにのみ設定されるので、サブノード"
 "は ``Node._ready()`` への呼び出しが行われた時にのみ取得できます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1522
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1524
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2274,11 +2274,11 @@ msgstr ""
 "までメンバー変数の初期化を遅らせるものです。 上記のコードを単一行に置き換える"
 "ことができます::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1530
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1532
 msgid "Assert keyword"
 msgstr "Assertキーワード"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1532
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2292,7 +2292,7 @@ msgstr ""
 "でのプロジェクトのエクスポートでは引数として渡された式が評価されない事を意味"
 "します。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1544
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1546
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."
