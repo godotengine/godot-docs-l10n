@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 12:01+0100\n"
+"POT-Creation-Date: 2019-12-21 12:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,11 +160,23 @@ msgstr ""
 msgid "**Normal Bias** Alternative type of bias useful for some scenes. Experiment with this one if regular bias does not work."
 msgstr ""
 
+#: ../../docs/tutorials/3d/gi_probes.rst:117
+msgid "**Interior** Allows mixing with lighting from the sky."
+msgstr ""
+
+#: ../../docs/tutorials/3d/gi_probes.rst:118
+msgid "**Compress** Currently broken. Do not use."
+msgstr ""
+
 #: ../../docs/tutorials/3d/gi_probes.rst:119
+msgid "**Data** Contains the light baked data after baking. If you are saving the data it should be saved as a .res file."
+msgstr ""
+
+#: ../../docs/tutorials/3d/gi_probes.rst:122
 msgid "Quality"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:121
+#: ../../docs/tutorials/3d/gi_probes.rst:124
 msgid "``GIProbe``\\ s are quite demanding. It is possible to use lower quality voxel cone tracing in exchange for more performance."
 msgstr ""
 
