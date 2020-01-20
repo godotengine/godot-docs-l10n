@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,11 +105,11 @@ msgid "This last example uses only the mouse to control the character. Clicking 
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:335
-msgid "Note the ``length()`` check we make prior to movement. Without this test, the body would \"jitter\" upon reaching the target position, as it moves slightly past the position and tries to move back, only to move too far and repeat."
+msgid "Note the ``distance_to()`` check we make prior to movement. Without this test, the body would \"jitter\" upon reaching the target position, as it moves slightly past the position and tries to move back, only to move too far and repeat."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:340
-msgid "Uncommenting the ``rotation`` line will also turn the body to point in its direction of motion if you prefer."
+msgid "Uncommenting the ``look_at()`` line will also turn the body to point in its direction of motion if you prefer."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:343
